@@ -1,0 +1,240 @@
+name: Mint AXN Identifier
+
+on:
+  issues:
+    types: [opened, labeled]
+
+jobs:
+  mint:
+    if: contains(github.event.issue.labels.*.name, 'deposit')
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Process deposit and mint AXN
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const crypto = require('crypto');
+            const fs = require('fs');
+            
+            // === AXN GLYPH TABLE ===
+            const AXN_GLYPHS = [
+              '🌑','🌒','🌓','🌔','🌕','🌖','🌗','🌘','⭐','🌟','💫','☀️','🌙','🪐','🌍','🌊',
+              '🔥','💧','🌪️','⚡','❄️','🌋','🏔️','🌿','🍃','🌱','🌾','🪨','💎','🧊','🌈','☁️',
+              '🏛️','🏗️','🧱','🪜','🚪','🪟','🏠','🏰','⛩️','🕌','🗼','🌉','⚓','🛡️','🔔','🏺',
+              '🔧','🔩','⚙️','🔗','🪝','🧲','⚖️','🔬','🔭','🧪','🧫','🧬','💡','🔮','🪄','🗝️',
+              '📜','📖','📝','✏️','🖊️','📋','📌','📎','🔖','📚','🗂️','📦','🏷️','🪧','📐','📏',
+              '🧭','🗺️','🏴','🚩','⛳','🎯','🔍','👁️','🔎','🪞','🗡️','🛤️','⛵','🚀','🛸','🌀',
+              '⏳','⏰','🕐','🕑','🕒','🕓','🕔','🕕','🕖','🕗','🕘','🕙','🕚','🕛','⌛','🔄',
+              '🌸','🌺','🌻','🌹','🍀','🌲','🌳','🍁','🍂','🍄','🐚','🪸','🦋','🐝','🕊️','🦅',
+              '♠️','♥️','♦️','♣️','🎭','🎪','🎨','🎵','🎶','🎹','🎻','🎺','🥁','🎲','🃏','🀄',
+              '➕','➖','✖️','➗','♾️','∮','⊕','⊗','△','▽','◇','○','●','□','■','▲',
+              '🜁','🝊','☿','♃','♄','♅','♆','☉','☽','♈','♉','♊','♋','♌','♍','♎',
+              '👁️‍🗨️','🤲','👐','🙏','✊','🤝','👆','👇','👈','👉','🫵','🖐️','✋','🫶','🤙','👋',
+              '🚨','🔴','🟠','🟡','🟢','🔵','🟣','⚪','⚫','🟤','💜','💙','💚','💛','🧡','❤️',
+              '🔺','🔻','◀️','▶️','🔼','🔽','⏩','⏪','⏫','⏬','↗️','↘️','↙️','↖️','🔃','🔀',
+              '🌅','🌄','🌃','🌆','🌇','🏙️','🌌','🎆','🎇','✨','🌠','💥','🔆','🔅','⭕','❌',
+              '🏁','🎬','🔚','🔙','🔛','🔝','🔜','⏹️','⏏️','🔒','🔓','🔐','🗿','🪦','♻️','∞'
+            ];
+            
+            // === PARSE ISSUE BODY ===
+            const issue = context.payload.issue;
+            const body = issue.body || '';
+            
+            function extractField(body, label) {
+              // GitHub issue forms use ### headers for each field
+              const regex = new RegExp(`### ${label}\\s*\\n\\s*([\\s\\S]*?)(?=\\n###|$)`, 'i');
+              const match = body.match(regex);
+              if (match) {
+                const val = match[1].trim();
+                if (val === '_No response_' || val === 'None') return '';
+                return val;
+              }
+              return '';
+            }
+            
+            const metadata = {
+              title: extractField(body, 'Title') || issue.title.replace('[DEPOSIT] ', ''),
+              creator: extractField(body, 'Creator'),
+              orcid: extractField(body, 'ORCID'),
+              date: extractField(body, 'Date') || new Date().toISOString().split('T')[0],
+              description: extractField(body, 'Description'),
+              content_type: extractField(body, 'Content Type'),
+              license: extractField(body, 'License'),
+              substrate: extractField(body, 'Substrate Disclosure'),
+              keywords: extractField(body, 'Keywords'),
+              related_ids: extractField(body, 'Related Identifiers'),
+              version: extractField(body, 'Version'),
+              methodology: extractField(body, 'Methodology'),
+              falsification: extractField(body, 'Falsification Conditions'),
+              files_text: extractField(body, 'Files')
+            };
+            
+            // === COMPUTE AXN ===
+            // Hash the full issue body as the content fingerprint
+            const contentForHash = `${metadata.title}\n${metadata.creator}\n${metadata.description}\n${body}`;
+            const hash = crypto.createHash('sha256').update(contentForHash).digest();
+            const hexHash = hash.toString('hex');
+            
+            // Map first 4 bytes to emoji
+            const emoji = [
+              AXN_GLYPHS[hash[0]],
+              AXN_GLYPHS[hash[1]],
+              AXN_GLYPHS[hash[2]],
+              AXN_GLYPHS[hash[3]]
+            ].join('');
+            
+            // Determine hex position (count existing deposits + 1)
+            const registryPath = 'data/registry.json';
+            const registryRaw = fs.readFileSync(registryPath, 'utf-8');
+            const registry = JSON.parse(registryRaw);
+            const depositNum = registry.total_deposits + 1;
+            const hexPos = depositNum.toString(16).padStart(2, '0').toUpperCase();
+            
+            // Determine semantic family
+            let family = 'UNCLASSIFIED';
+            const keywords = metadata.keywords.toLowerCase();
+            const desc = metadata.description.toLowerCase();
+            const familyMap = {
+              'LIMINAL': ['liminal', 'threshold', 'boundary', 'transition'],
+              'RECURSIVE': ['recursive', 'self-referential', 'feedback', 'loop'],
+              'PRISTINE': ['pristine', 'fallacy', 'substrate', 'bias'],
+              'OPERATIVE': ['operative', 'semiotics', 'operator', 'logotic'],
+              'ARCHIVAL': ['archive', 'preservation', 'registry', 'catalog'],
+              'EMPIRICAL': ['capture', 'dataset', 'observation', 'measurement'],
+              'PHILOLOGICAL': ['critical edition', 'philology', 'manuscript', 'collation'],
+              'HETERONYMIC': ['heteronym', 'pessoa', 'dodecad', 'persona'],
+              'COMPOSITIONAL': ['composition', 'layer', 'mediation', 'reception'],
+              'STRUCTURAL': ['architecture', 'structure', 'framework', 'specification'],
+              'GENERATIVE': ['generative', 'creative', 'literary', 'poetic'],
+              'GOVERNANCE': ['governance', 'policy', 'platform', 'moderation']
+            };
+            
+            for (const [fam, terms] of Object.entries(familyMap)) {
+              if (terms.some(t => keywords.includes(t) || desc.includes(t))) {
+                family = fam;
+                break;
+              }
+            }
+            
+            const axn = `AXN:${hexPos}.${family}.${emoji}`;
+            
+            // === CREATE DEPOSIT RECORD ===
+            const record = {
+              axn: axn,
+              hex: hexPos,
+              family: family,
+              emoji: emoji,
+              hash: hexHash,
+              title: metadata.title,
+              creator: metadata.creator,
+              orcid: metadata.orcid,
+              date: metadata.date,
+              description: metadata.description,
+              content_type: metadata.content_type,
+              license: metadata.license,
+              substrate: metadata.substrate,
+              keywords: metadata.keywords.split(',').map(k => k.trim()).filter(Boolean),
+              related_ids: metadata.related_ids,
+              version: metadata.version || 'v1.0',
+              methodology: metadata.methodology,
+              falsification: metadata.falsification,
+              issue_number: issue.number,
+              issue_url: issue.html_url,
+              minted_at: new Date().toISOString(),
+              status: 'ACTIVE'
+            };
+            
+            // === UPDATE REGISTRY ===
+            registry.deposits.push(record);
+            registry.total_deposits = registry.deposits.length;
+            
+            fs.writeFileSync(registryPath, JSON.stringify(registry, null, 2));
+            
+            // === COMMENT ON ISSUE WITH AXN ===
+            const commentBody = [
+              `## ✅ Deposit Minted`,
+              ``,
+              `### Alexanarch Identifier`,
+              ``,
+              `\`\`\``,
+              axn,
+              `\`\`\``,
+              ``,
+              `| Component | Value |`,
+              `|-----------|-------|`,
+              `| **Namespace** | AXN |`,
+              `| **Hex Position** | ${hexPos} |`,
+              `| **Semantic Family** | ${family} |`,
+              `| **Emoji Hash** | ${emoji} |`,
+              `| **SHA-256** | \`${hexHash.substring(0, 16)}...\` |`,
+              `| **Content Type** | ${metadata.content_type} |`,
+              `| **Substrate** | ${metadata.substrate} |`,
+              `| **License** | ${metadata.license} |`,
+              ``,
+              `### Verification`,
+              ``,
+              `Anyone can verify this identifier by computing the SHA-256 of the deposit content and mapping the first 4 bytes through the [AXN glyph table](https://github.com/leesharks000/alexanarch/blob/main/GLYPH_SPEC.md).`,
+              ``,
+              `### Record`,
+              ``,
+              `This deposit is now live in the [Alexanarch registry](https://alexanarch.org/data/registry.json).`,
+              ``,
+              `---`,
+              `*The obelus follows from reading. The identifier follows from the content.*`,
+              ``,
+              `∮ = 1`
+            ].join('\n');
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              body: commentBody
+            });
+            
+            // === ADD LABELS ===
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              labels: ['minted', `family:${family}`]
+            });
+            
+            // === REMOVE pending-review LABEL ===
+            try {
+              await github.rest.issues.removeLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                name: 'pending-review'
+              });
+            } catch (e) {
+              // Label might not exist
+            }
+            
+            console.log(`Minted: ${axn}`);
+            console.log(`Hash: ${hexHash}`);
+            console.log(`Family: ${family}`);
+            console.log(`Deposit #${depositNum}`);
+
+      - name: Commit registry update
+        run: |
+          git config user.name "Alexanarch Bot"
+          git config user.email "bot@alexanarch.org"
+          git add data/registry.json
+          git diff --cached --quiet || git commit -m "Mint AXN — deposit #$(cat data/registry.json | python3 -c 'import sys,json; print(json.load(sys.stdin)["total_deposits"])')"
+          git push
