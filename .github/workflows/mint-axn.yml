@@ -377,7 +377,7 @@ jobs:
           git config user.name "Alexanarch Bot"
           git config user.email "bot@alexanarch.org"
           git pull --rebase || true
-          git add data/registry.json
+          git add data/registry.json data/deposits/ s/records/
           if git diff --cached --quiet; then
             echo "Registry already up to date"
           else
