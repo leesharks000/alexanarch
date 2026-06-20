@@ -28,6 +28,10 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:8px}
 .relation{display:flex;gap:8px;padding:3px 0;font-size:0.85em}
 .rel-pred{color:var(--teal);font-family:var(--mono);font-size:0.82em;min-width:120px}
 .rel-obj{color:#444}
+.ev-observed{color:#0a7c6a;font-size:0.7em;font-family:var(--mono)}
+.ev-inferred{color:#d4a537;font-size:0.7em;font-family:var(--mono)}
+.ev-performative{color:#9966cc;font-size:0.7em;font-family:var(--mono)}
+.ev-unknown{color:#999;font-size:0.7em;font-family:var(--mono)}
 .footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--border);font-size:0.78em;color:var(--dim)}
 .glyph{margin-top:8px;color:var(--accent)}
 .filter-btns{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
@@ -76,7 +80,7 @@ fetch('/data/registry.json').then(function(r){return r.json()}).then(function(re
   var entityMap={};
   allTriples.forEach(function(t){
     if(!entityMap[t.subject]) entityMap[t.subject]={name:t.subject,type:t.type||'unknown',relations:[],sources:new Set()};
-    entityMap[t.subject].relations.push({predicate:t.predicate,object:t.object,source:t.source_axn});
+    entityMap[t.subject].relations.push({predicate:t.predicate,object:t.object,source:t.source_axn,evidence_status:t.evidence_status,note:t.note});
     entityMap[t.subject].sources.add(t.source_axn);
   });
   // Also index objects
@@ -122,7 +126,10 @@ fetch('/data/registry.json').then(function(r){return r.json()}).then(function(re
     
     document.getElementById('entities').innerHTML=filtered.slice(0,50).map(function(e){
       var rels=e.relations.map(function(r){
-        return '<div class="relation"><span class="rel-pred">'+r.predicate+'</span><span class="rel-obj">'+r.object+'</span></div>';
+        var evClass='ev-'+(r.evidence_status||'unknown');
+        var evLabel=r.evidence_status||'';
+        var note=r.note?' title="'+r.note+'"':'';
+        return '<div class="relation"'+note+'><span class="rel-pred">'+r.predicate+'</span><span class="rel-obj">'+r.object+'</span>'+(evLabel?' <span class="'+evClass+'">['+evLabel+']</span>':'')+'</div>';
       }).join('');
       return '<div class="entity-card">'+
         '<div><span class="entity-name">'+e.name+'</span><span class="entity-type">'+e.type+'</span></div>'+
