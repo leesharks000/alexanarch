@@ -80,163 +80,155 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:8px}
 <script>
 const W={Celestial:'Origin',Elemental:'Force',Architectural:'Foundation',Instrumental:'Method',Scriptural:'Text',Navigational:'Search',Temporal:'Duration',Organic:'Growth',Symbolic:'Play',Mathematical:'Proof',Alchemical:'Transmutation',Gestural:'Touch',Signal:'Alarm',Structural:'Direction',Liminal:'Threshold',Terminal:'Closure'};
 
-function getQuery(){
-  const params=new URLSearchParams(window.location.search);
-  return params.get('axn')||params.get('id')||params.get('issue')||decodeURIComponent(window.location.hash.slice(1))||'';
-}
+const params=new URLSearchParams(window.location.search);
+const q=params.get('axn')||params.get('id')||params.get('issue')||'';
+console.log('Record query:', q);
 
-function mdToHtml(md){
-  // Simple markdown renderer
-  let html=md
-    .replace(/^### (.+)$/gm,'<h3>$1</h3>')
-    .replace(/^## (.+)$/gm,'<h2>$1</h2>')
-    .replace(/^# (.+)$/gm,'<h1>$1</h1>')
-    .replace(/^\*\*(.+?)\*\*$/gm,'<p><strong>$1</strong></p>')
-    .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
-    .replace(/\*(.+?)\*/g,'<em>$1</em>')
-    .replace(/^> (.+)$/gm,'<blockquote>$1</blockquote>')
-    .replace(/^---$/gm,'<hr>')
-    .replace(/^\| (.+)$/gm,function(m){
-      const cells=m.split('|').filter(c=>c.trim());
-      if(cells.every(c=>/^[\s-:]+$/.test(c))) return '';
-      const tag=cells.some(c=>/\*\*/.test(c))?'th':'td';
-      return '<tr>'+cells.map(c=>'<'+tag+'>'+c.trim().replace(/\*\*/g,'')+'</'+tag+'>').join('')+'</tr>';
-    })
-    .replace(/(<tr>[\s\S]*?<\/tr>)/g,function(m,p1,offset,str){
-      if(offset===0||str[offset-1]==='
-') return '<table>'+m+'</table>';
-      return m;
-    });
-  // Wrap bare lines in <p>
-  html=html.split('
-').map(line=>{
-    line=line.trim();
-    if(!line) return '';
-    if(line.startsWith('<')) return line;
-    return '<p>'+line+'</p>';
-  }).join('
-');
-  // Clean up consecutive blockquotes and tables
-  html=html.replace(/<\/blockquote>
-<blockquote>/g,'
-')
-    .replace(/<\/table>
-<table>/g,'
-');
-  return html;
-}
+// Timeout fallback
+setTimeout(function(){
+  if(document.getElementById('loading').style.display!=='none'){
+    document.getElementById('loading').innerHTML='Loading timed out. <a href="/browse/">Browse deposits →</a>';
+  }
+}, 8000);
 
-fetch('/data/registry.json').then(r=>r.json()).then(reg=>{
-  const q=getQuery();
-  const deps=reg.deposits||[];
-  let d=null;
-  for(const dep of deps){
-    if(dep.axn===q||dep.axn==='AXN:'+q||dep.emoji===q||dep.hex===q||String(dep.issue_number)===q||dep.title.toLowerCase().includes(q.toLowerCase())){
-      d=dep;break;
+fetch('/data/registry.json')
+.then(function(r){
+  console.log('Registry fetch status:', r.status);
+  return r.json();
+})
+.then(function(reg){
+  console.log('Registry loaded, deposits:', reg.total_deposits);
+  var deps=reg.deposits||[];
+  var d=null;
+  
+  for(var i=0;i<deps.length;i++){
+    var dep=deps[i];
+    if(dep.axn===q || dep.axn==='AXN:'+q || dep.emoji===q || dep.hex===q || String(dep.issue_number)===q){
+      d=dep; break;
     }
   }
-  if(!d&&deps.length===1&&!q) d=deps[0];
+  
+  // If only one deposit and no specific query, show it
+  if(!d && deps.length===1) d=deps[0];
+  // Also try title match
+  if(!d && q){
+    for(var i=0;i<deps.length;i++){
+      if(deps[i].title.toLowerCase().indexOf(q.toLowerCase())!==-1){
+        d=deps[i]; break;
+      }
+    }
+  }
+  
+  console.log('Found deposit:', d ? d.axn : 'NONE');
+  
   document.getElementById('loading').style.display='none';
-  if(!d){document.getElementById('error').style.display='block';return;}
+  
+  if(!d){
+    document.getElementById('error').style.display='block';
+    return;
+  }
   
   document.title=d.title+' — Alexanarch';
-  const clusters=(d.clusters||[]).join(' · ');
-  const reading=(d.clusters||[]).map(c=>W[c]||c).join(' → ');
-  const kws=(d.keywords||[]).map(k=>'<span class="kw">'+k+'</span>').join('');
+  var clusters=(d.clusters||[]).join(' · ');
+  var reading=(d.clusters||[]).map(function(c){return W[c]||c}).join(' → ');
+  var kws=(d.keywords||[]).map(function(k){return '<span class="kw">'+k+'</span>'}).join('');
   
-  // Build mirror download buttons
-  let dlButtons='';
+  var dlButtons='';
   if(d.mirrors){
-    Object.entries(d.mirrors).forEach(([k,v])=>{
-      dlButtons+='<a class="dl-btn dl-btn-outline" href="'+v+'" target="_blank">'+k+' →</a>';
-    });
+    var keys=Object.keys(d.mirrors);
+    for(var i=0;i<keys.length;i++){
+      dlButtons+='<a class="dl-btn dl-btn-outline" href="'+d.mirrors[keys[i]]+'" target="_blank">'+keys[i]+' →</a> ';
+    }
   }
   if(d.issue_url){
     dlButtons+='<a class="dl-btn dl-btn-outline" href="'+d.issue_url+'" target="_blank">deposit record →</a>';
   }
   
-  const el=document.getElementById('record');
+  var el=document.getElementById('record');
   el.style.display='block';
-  el.innerHTML=`
-    <div class="axn-display">
-      ${d.axn}
-      <div class="axn-clusters">${clusters}</div>
-      <div class="axn-reading">${reading}</div>
-    </div>
-    <h1>${d.title}</h1>
-    <div style="font-size:0.88em;color:var(--dim);margin-bottom:16px">${d.creator}${d.orcid?' · <a href="https://orcid.org/'+d.orcid+'">ORCID</a>':''} · ${d.date} · ${d.content_type}</div>
-    
-    <div style="margin:16px 0">${dlButtons}</div>
-    
-    <div class="tab-bar">
-      <div class="tab active" onclick="showTab('full')">Full Text</div>
-      <div class="tab" onclick="showTab('meta')">Metadata</div>
-      <div class="tab" onclick="showTab('verify')">Verify</div>
-    </div>
-    
-    <div class="tab-content active" id="tab-full">
-      <div id="full-text-container" class="full-text" style="margin-top:0;border-top:none;border-radius:0 0 6px 6px">
-        <div style="color:var(--dim);padding:20px;text-align:center">Loading full text...</div>
-      </div>
-    </div>
-    
-    <div class="tab-content" id="tab-meta">
-      <div style="padding:20px 0">
-        <div class="meta-grid">
-          <div class="meta-label">AXN</div><div class="meta-value" style="font-family:var(--mono)">${d.axn}</div>
-          <div class="meta-label">Creator</div><div class="meta-value">${d.creator}${d.orcid?' · <a href="https://orcid.org/'+d.orcid+'">'+d.orcid+'</a>':''}</div>
-          <div class="meta-label">Date</div><div class="meta-value">${d.date}</div>
-          <div class="meta-label">Content Type</div><div class="meta-value">${d.content_type}</div>
-          <div class="meta-label">Substrate</div><div class="meta-value">${d.substrate}</div>
-          <div class="meta-label">License</div><div class="meta-value">${d.license}</div>
-          <div class="meta-label">Version</div><div class="meta-value">${d.version||'—'}</div>
-          <div class="meta-label">Status</div><div class="meta-value" style="color:var(--teal)">${d.status}</div>
-          <div class="meta-label">Minted</div><div class="meta-value">${d.minted_at?new Date(d.minted_at).toLocaleDateString():'—'}</div>
-          <div class="meta-label">SHA-256</div><div class="meta-value" style="font-family:var(--mono);font-size:0.82em;word-break:break-all">${d.hash||'—'}</div>
-        </div>
-        ${kws?'<div class="section-title">Keywords</div><div class="keywords">'+kws+'</div>':''}
-        ${d.methodology?'<div class="section-title">Methodology</div><div style="font-size:0.88em;color:#444;margin:8px 0">'+d.methodology+'</div>':''}
-        ${d.falsification?'<div class="section-title">Falsification Conditions</div><div style="font-size:0.88em;color:#444;margin:8px 0">'+d.falsification+'</div>':''}
-        ${d.related_ids?'<div class="section-title">Related</div><div style="font-size:0.85em"><a href="'+d.related_ids+'">'+d.related_ids+'</a></div>':''}
-      </div>
-    </div>
-    
-    <div class="tab-content" id="tab-verify">
-      <div class="verify" style="margin-top:0;border-top:none;border-radius:0 0 6px 6px">
-        <div class="section-title">Verify This Identifier</div>
-        <p>Compute the SHA-256 of the deposit content. Map the first 4 bytes through the <a href="https://github.com/leesharks000/alexanarch/blob/main/GLYPH_SPEC.md">AXN glyph table</a>. The result should be: <strong>${d.emoji}</strong></p>
-        <p>Full hash: <code>${d.hash||'—'}</code></p>
-        <p>Clusters: ${clusters}</p>
-        <p>Reading: <em>${reading}</em></p>
-      </div>
-    </div>
-  `;
   
-  // Fetch full text from mirrors
-  const mdUrl=d.mirrors&&d.mirrors.machinemediation;
+  var html='<div class="axn-display">'+d.axn;
+  html+='<div class="axn-clusters">'+clusters+'</div>';
+  html+='<div class="axn-reading">'+reading+'</div>';
+  html+='</div>';
+  html+='<h1>'+d.title+'</h1>';
+  html+='<div style="font-size:0.88em;color:var(--dim);margin-bottom:16px">'+d.creator+' · '+d.date+' · '+d.content_type+'</div>';
+  html+='<div style="margin:16px 0">'+dlButtons+'</div>';
+  
+  // Metadata
+  html+='<div class="meta-grid">';
+  html+='<div class="meta-label">AXN</div><div class="meta-value" style="font-family:var(--mono)">'+d.axn+'</div>';
+  html+='<div class="meta-label">Substrate</div><div class="meta-value">'+(d.substrate||'—')+'</div>';
+  html+='<div class="meta-label">License</div><div class="meta-value">'+(d.license||'—')+'</div>';
+  html+='<div class="meta-label">Version</div><div class="meta-value">'+(d.version||'—')+'</div>';
+  html+='<div class="meta-label">SHA-256</div><div class="meta-value" style="font-family:var(--mono);font-size:0.78em;word-break:break-all">'+(d.hash||'—')+'</div>';
+  html+='</div>';
+  
+  if(kws) html+='<div class="section-title">Keywords</div><div class="keywords">'+kws+'</div>';
+  
+  html+='<div class="section-title">Description</div>';
+  html+='<div style="color:#444;line-height:1.7;margin:8px 0">'+d.description+'</div>';
+  
+  if(d.methodology){
+    html+='<div class="section-title">Methodology</div>';
+    html+='<div style="font-size:0.88em;color:#444;margin:8px 0">'+d.methodology+'</div>';
+  }
+  
+  if(d.falsification){
+    html+='<div class="section-title">Falsification Conditions</div>';
+    html+='<div style="font-size:0.88em;color:#444;margin:8px 0">'+d.falsification+'</div>';
+  }
+  
+  // Full text section
+  html+='<div class="section-title">Full Text</div>';
+  html+='<div id="full-text-container" class="full-text"><div style="color:var(--dim);text-align:center;padding:20px">Loading full text...</div></div>';
+  
+  // Verify
+  html+='<div class="verify">';
+  html+='<div class="section-title">Verify This Identifier</div>';
+  html+='<p>SHA-256 first 4 bytes map to <strong>'+d.emoji+'</strong> via the <a href="https://github.com/leesharks000/alexanarch/blob/main/GLYPH_SPEC.md">glyph table</a>.</p>';
+  html+='</div>';
+  
+  el.innerHTML=html;
+  
+  // Fetch full text
+  var mdUrl=d.mirrors&&d.mirrors.machinemediation;
+  console.log('Fetching full text from:', mdUrl);
+  
   if(mdUrl){
-    fetch(mdUrl).then(r=>r.text()).then(md=>{
-      document.getElementById('full-text-container').innerHTML=mdToHtml(md);
-    }).catch(()=>{
-      // Try blog mirror
-      document.getElementById('full-text-container').innerHTML=
-        '<div style="color:var(--dim);padding:20px"><p>'+d.description+'</p><div style="margin-top:16px">'+dlButtons+'</div></div>';
+    fetch(mdUrl)
+    .then(function(r){return r.text()})
+    .then(function(md){
+      console.log('Full text loaded, length:', md.length);
+      var rendered=md
+        .replace(/^### (.+)$/gm,'<h3>$1</h3>')
+        .replace(/^## (.+)$/gm,'<h2>$1</h2>')
+        .replace(/^# (.+)$/gm,'<h1>$1</h1>')
+        .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
+        .replace(/\*(.+?)\*/g,'<em>$1</em>')
+        .replace(/^> (.+)$/gm,'<blockquote>$1</blockquote>')
+        .replace(/^---$/gm,'<hr>');
+      rendered=rendered.split('\n').map(function(line){
+        line=line.trim();
+        if(!line) return '<br>';
+        if(line.charAt(0)==='<') return line;
+        return '<p>'+line+'</p>';
+      }).join('\n');
+      document.getElementById('full-text-container').innerHTML=rendered;
+    })
+    .catch(function(e){
+      console.log('Full text fetch error:', e);
+      document.getElementById('full-text-container').innerHTML='<div style="padding:20px"><p>'+d.description+'</p><p style="margin-top:12px">'+dlButtons+'</p></div>';
     });
   } else {
-    document.getElementById('full-text-container').innerHTML=
-      '<div style="padding:20px"><p>'+d.description+'</p><div style="margin-top:16px">'+dlButtons+'</div></div>';
+    document.getElementById('full-text-container').innerHTML='<div style="padding:20px"><p>'+d.description+'</p></div>';
   }
-}).catch(e=>{
+})
+.catch(function(e){
+  console.log('Registry fetch error:', e);
   document.getElementById('loading').style.display='none';
   document.getElementById('error').style.display='block';
 });
-
-function showTab(id){
-  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
-  document.getElementById('tab-'+id).classList.add('active');
-  event.target.classList.add('active');
-}
 </script>
 </body>
 </html>
