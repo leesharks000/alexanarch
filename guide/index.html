@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deposit Guide — Alexanarch</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:'IBM Plex Sans',sans-serif;--mono:'IBM Plex Mono',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}
+.wrap{max-width:720px;margin:0 auto;padding:60px 24px}
+.nav{display:flex;gap:12px;margin-bottom:30px;font-size:0.85em;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;padding-bottom:6px}
+.nav a{color:var(--dim);text-decoration:none;font-weight:500}.nav a:hover,.nav a.active{color:var(--accent)}
+a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}
+h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:16px}
+h2{font-size:1.1em;font-weight:500;color:var(--accent);margin-top:28px;margin-bottom:10px;border-bottom:1px solid var(--border);padding-bottom:4px}
+h3{font-size:0.95em;color:var(--teal);margin-top:18px;margin-bottom:6px}
+p{margin-bottom:12px;color:#333}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:0.88em}
+th,td{padding:6px 10px;border:1px solid var(--border);text-align:left}
+th{background:#f4f4f4;font-weight:500;color:var(--accent)}
+code{font-family:var(--mono);font-size:0.88em;background:#f0f4f8;padding:2px 6px;border-radius:3px;color:var(--teal)}
+pre{background:#1a1a2e;color:#e0e0e0;padding:16px;border-radius:6px;overflow-x:auto;margin:14px 0;font-size:0.82em;line-height:1.6}
+pre code{background:none;color:inherit;padding:0}
+.step{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;margin:14px 0}
+.step-num{font-family:var(--mono);font-size:0.8em;color:var(--teal);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px}
+.cta{display:inline-block;background:var(--accent);color:#fff;padding:10px 24px;border-radius:4px;font-size:0.9em;font-weight:500;margin:8px 8px 8px 0;text-decoration:none}
+.cta:hover{background:var(--accent2);color:#fff}
+.footer{margin-top:50px;padding-top:15px;border-top:1px solid var(--border);font-size:0.78em;color:var(--dim)}
+.glyph{margin-top:6px;color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="nav">
+  <a href="/">Alexanarch</a>
+  <a href="/deposit/">Deposit</a>
+  <a href="/browse/">Browse</a>
+  <a href="/wiki/">Wiki</a>
+  <a href="/graph/">Graph</a>
+  <a href="/guide/" class="active">Guide</a>
+  <a href="/manifest/">Manifest</a>
+</nav>
+
+<h1>How to Deposit to Alexanarch</h1>
+<p style="color:var(--dim);margin-bottom:24px">Alexanarch accepts scholarly works, datasets, creative works, and any knowledge artifact with disclosed methodology and substrate. No institutional affiliation required. No AI-use penalty. Substrate disclosure is provenance, not suspicion.</p>
+
+<h2>What You Need</h2>
+<p>A GitHub account (free at github.com), your work (a file, dataset, or text), and basic metadata: title, your name, description, license, and substrate disclosure.</p>
+
+<h2>Path 1: Web Deposit</h2>
+
+<div class="step">
+<div class="step-num">Step 1: Open the Deposit Form</div>
+<p>Visit <a href="/deposit/">alexanarch.org/deposit</a> and click <strong>"Deposit a Work"</strong>. This opens a GitHub issue form pre-configured with all required fields.</p>
+</div>
+
+<div class="step">
+<div class="step-num">Step 2: Fill in the Metadata</div>
+<table>
+<tr><th>Field</th><th>What to Enter</th></tr>
+<tr><td><code>Title</code></td><td>Your work's title</td></tr>
+<tr><td><code>Creator</code></td><td>Your name (heteronyms accepted with disclosure)</td></tr>
+<tr><td><code>ORCID</code></td><td>Your ORCID identifier (optional)</td></tr>
+<tr><td><code>Date</code></td><td>Date of creation (YYYY-MM-DD)</td></tr>
+<tr><td><code>Description</code></td><td>Abstract or description</td></tr>
+<tr><td><code>Content Type</code></td><td>Dataset, paper, critical edition, creative work, specification</td></tr>
+<tr><td><code>License</code></td><td>CC-BY-4.0, CC-BY-SA-4.0, CC0, or other open license</td></tr>
+<tr><td><code>Substrate</code></td><td>How AI was involved (see below)</td></tr>
+<tr><td><code>Keywords</code></td><td>Descriptive terms for discovery</td></tr>
+<tr><td><code>Methodology</code></td><td>How the work was produced</td></tr>
+<tr><td><code>Files</code></td><td>Attach files or provide URLs</td></tr>
+</table>
+
+<h3>Substrate Disclosure Options</h3>
+<p><strong>Human-only</strong> — no AI involvement.<br>
+<strong>AI-assisted (tool)</strong> — AI used as tool; research is human-governed.<br>
+<strong>AI-assisted (substrate)</strong> — AI contributed substantively; human editorial governance.<br>
+<strong>AI-generated (research object)</strong> — AI output is the object under study.<br>
+<strong>Machine-authored</strong> — authored by AI under human governance.</p>
+</div>
+
+<div class="step">
+<div class="step-num">Step 3: Submit</div>
+<p>Click "Submit new issue." The automated system computes your AXN from the content hash and posts it as a comment within minutes. Your identifier is permanent and irrevocable.</p>
+</div>
+
+<h2>Path 2: API Deposit</h2>
+
+<div class="step">
+<div class="step-num">For Programmatic or AI-Mediated Submission</div>
+<p>Alexanarch deposits are GitHub Issues. Any authenticated GitHub user or agent can create one through the REST API.</p>
+
+<p>Create a GitHub Personal Access Token at <a href="https://github.com/settings/tokens">github.com/settings/tokens</a> with <code>public_repo</code> scope. Then:</p>
+
+<pre><code>curl -X POST \
+  https://api.github.com/repos/leesharks000/alexanarch/issues \
+  -H "Authorization: token YOUR_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "[DEPOSIT] Your Work Title",
+    "body": "### Title\n\nYour Work Title\n\n### Creator\n\nYour Name\n\n### Description\n\nDescription here.\n\n### Content Type\n\nTheoretical paper\n\n### License\n\nCC-BY-4.0\n\n### Substrate Disclosure\n\nHuman-only\n\n### Keywords\n\nyour, keywords\n\n### Files\n\nhttps://example.com/file.pdf\n\n### Terms\n\n- [x] I confirm this work is deposited under the stated license\n- [x] I confirm the substrate disclosure is accurate\n- [x] I understand that deposited content will NOT be used to train enforcement classifiers"
+  }'</code></pre>
+
+<p>The minting Action fires automatically. Your AXN appears as a comment on the issue.</p>
+</div>
+
+<h2>After Deposit</h2>
+<p>Your work receives an <strong>AXN</strong> (permanent content-derived identifier), a <strong>record page</strong>, a <strong>wiki article</strong> (auto-generated, provisional), <strong>entity graph</strong> entries, and a <strong>downloadable MD file</strong>. Status begins as <code>MINTED_UNREVIEWED</code>. Community reading and endorsement are subsequent public acts.</p>
+
+<a href="https://github.com/leesharks000/alexanarch/issues/new" class="cta">Deposit a Work</a>
+
+<div class="footer">
+  <div><strong>Alexanarch</strong> · The obelus follows from reading. The identifier follows from the content.</div>
+  <div class="glyph">∮ = 1</div>
+</div>
+</div>
+
+<script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
