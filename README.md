@@ -22,12 +22,13 @@ An open repository where AI-assisted research is not a flag. It is a feature.
 Each deposit receives a content-derived identifier:
 
 ```
-AXN:LIMINAL.a7f3e2d1
+AXN:06.LIMINAL.🏛️🌀🔧💎
 ```
 
 - **AXN** — Alexanarch namespace
-- **LIMINAL** — semantic family (from the Sémantique Potentielle mint)
-- **a7f3e2d1** — truncated SHA-256 of content
+- **06** — hex position (WHERE in the archive)
+- **LIMINAL** — semantic family (WHAT kind of work)
+- **🏛️🌀🔧💎** — emoji hash (WHICH specific text — first 4 bytes of SHA-256 mapped through 256 curated emoji)
 
 The identifier is computed from the content itself. It cannot be revoked. It belongs to the author.
 
