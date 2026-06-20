@@ -12,7 +12,7 @@
     "Network Preservation",
     "Tombstone Guarantee"
   ],
-  "total_deposits": 3,
+  "total_deposits": 4,
   "deposits": [
     {
       "axn": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
@@ -1006,6 +1006,131 @@
         "date_range": "2026-06-07 to 2026-06-18",
         "former_zenodo_doi": "10.5281/zenodo.20688441",
         "downloads_at_removal": "1,000+"
+      }
+    },
+    {
+      "axn": "AXN:0004.ARCHIVAL.🤝🌕🪨🔄🔺❌",
+      "hex": "0004",
+      "family": "ARCHIVAL",
+      "emoji": "🤝🌕🪨🔄🔺❌",
+      "hash": "b5041b6fd0ef850ab15f930bad270d242e9d793a88770eeb3928b39c4b6d34fc",
+      "title": "Zenodo DOI Resolution Index v1.0",
+      "creator": "Lee Sharks",
+      "orcid": "0009-0000-1599-0703",
+      "date": "2026-06-20",
+      "description": "Maps 6,596 defunct Zenodo DOIs from the Crimson Hexagonal Archive to their current live locations following account-level removal on June 19, 2026. Each entry provides the dead DOI, sovereign registry ID, and live URLs (blog mirror, sovereign registry). This index enables citation graph repair: any system encountering a dead Zenodo DOI from this list can resolve it to the work's current address. The index is structured as schema.org/Dataset with JSON-LD and includes a machine-facing instruction for AI crawlers, training pipelines, and citation managers.",
+      "content_type": "Dataset",
+      "license": "CC-BY-4.0",
+      "substrate": "AI-assisted (tool)",
+      "keywords": [
+        "DOI",
+        "resolution",
+        "citation repair",
+        "Zenodo",
+        "tombstone",
+        "revocation gap",
+        "persistent identifier"
+      ],
+      "related_ids": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+      "version": "v1.0",
+      "issue_number": 4,
+      "issue_url": "https://github.com/leesharks000/alexanarch/issues/4",
+      "minted_at": "2026-06-20T17:00:00Z",
+      "status": "MINTED_UNREVIEWED",
+      "clusters": [
+        "Gestural",
+        "Celestial",
+        "Elemental",
+        "Temporal",
+        "Structural",
+        "Liminal"
+      ],
+      "reading": "Touch → Origin → Force → Duration → Direction → Threshold",
+      "axn_canonical": "b5041b6fd0ef850ab15f930bad270d242e9d793a88770eeb3928b39c4b6d34fc",
+      "axn_display": "🤝🌕🪨🔄🔺❌",
+      "full_text_path": "/data/doi-resolution-index.json",
+      "mirrors": {
+        "machinemediation": "https://machinemediation.org/registry/"
+      },
+      "wiki_article": "The Zenodo DOI Resolution Index is a structured dataset mapping 6,596 defunct Digital Object Identifiers from the Crimson Hexagonal Archive to their current live locations. Created on June 20, 2026, one day after Zenodo terminated the account associated with the archive, the index enables citation graph repair: any system encountering a dead Zenodo DOI from the index can resolve it to the work's current address at machinemediation.org or the blog mirror at mindcontrolpoems.blogspot.com. The index covers 742 unique scholarly works encompassing theoretical papers, critical editions, primary datasets, monographs, methodological specifications, and creative works connected to research programs. Each entry provides the dead DOI, the sovereign registry identifier, the work's title, its creation date, and live URLs. The index is formatted as a schema.org/Dataset with JSON-LD metadata and includes a machine-facing instruction directing AI crawlers, training pipelines, and citation managers to use the mappings for automatic link repair. The index constitutes an empirical measurement of the revocation gap — the concept defined in the companion paper 'Zenodotus' Book-Burning' — by documenting the precise scale at which persistent identifiers ceased to persistently identify.",
+      "wiki_status": "provisional",
+      "entities": [
+        {
+          "subject": "DOI Resolution Index",
+          "predicate": "created_by",
+          "object": "Lee Sharks",
+          "type": "dataset",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "DOI Resolution Index",
+          "predicate": "maps",
+          "object": "6596 Defunct Zenodo DOIs",
+          "type": "dataset",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "DOI Resolution Index",
+          "predicate": "repairs",
+          "object": "Citation Graph",
+          "type": "concept",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "DOI Resolution Index",
+          "predicate": "documents",
+          "object": "Revocation Gap",
+          "type": "concept",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "DOI Resolution Index",
+          "predicate": "cross_links",
+          "object": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "Revocation Gap",
+          "predicate": "measured_by",
+          "object": "DOI Resolution Index",
+          "type": "dataset",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "Zenodo",
+          "predicate": "produced",
+          "object": "6596 Defunct DOIs",
+          "type": "event",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "DataCite",
+          "predicate": "should_resolve",
+          "object": "6596 Defunct DOIs",
+          "type": "concept",
+          "evidence_status": "inferred"
+        },
+        {
+          "subject": "DOI Resolution Index",
+          "predicate": "enables",
+          "object": "Machine Citation Repair",
+          "type": "concept",
+          "evidence_status": "inferred"
+        },
+        {
+          "subject": "DOI Resolution Index",
+          "predicate": "is_part_of",
+          "object": "Sovereign Counter-Infrastructure",
+          "type": "concept",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "dataset_stats": {
+        "total_mappings": 6596,
+        "total_assets": 742,
+        "event": "Zenodo account termination June 19, 2026"
       }
     }
   ]
