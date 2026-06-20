@@ -70,5 +70,17 @@ fetch('/data/registry.json').then(r=>r.json()).then(reg=>{
 </div>
 
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+function fetchBrowseCounters(){
+  document.querySelectorAll('.gc-count').forEach(function(el){
+    var path=el.getAttribute('data-path');
+    fetch('https://alexanarch.goatcounter.com/counter/'+encodeURIComponent(path)+'.json')
+    .then(function(r){return r.json()})
+    .then(function(d){el.textContent=(d.count||0)+' views'})
+    .catch(function(){el.textContent='0 views'});
+  });
+}
+setTimeout(fetchBrowseCounters,300);
+</script>
 </body>
 </html>
