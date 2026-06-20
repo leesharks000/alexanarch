@@ -1021,7 +1021,7 @@
       "creator": "Lee Sharks",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-06-20",
-      "description": "Maps 1,675 unique defunct Zenodo DOIs from the Crimson Hexagonal Archive to their current live locations. Deduplicated from v1.1 (which contained 7,278 inflated entries due to DOI registry documents embedding other works' DOIs as content). Each DOI appears exactly once. 1,270 DOIs directly mapped to parent works, 405 referenced in registry documents with parent unresolved. Documents attribution severance: 941+ DOIs invisible to DataCite creator search because author metadata was stripped during account termination.",
+      "description": "Maps 1,675 unique defunct Zenodo DOIs to current live locations and Alexanarch AXN addresses. 1415 mappings enriched with AXNs from batch assignment of 871 works. Documents attribution severance: 941+ DOIs invisible to DataCite creator search.",
       "content_type": "Dataset",
       "license": "CC-BY-4.0",
       "substrate": "AI-assisted (tool)",
@@ -1035,7 +1035,7 @@
         "persistent identifier"
       ],
       "related_ids": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
-      "version": "v2.0",
+      "version": "v2.1",
       "issue_number": 4,
       "issue_url": "https://github.com/leesharks000/alexanarch/issues/4",
       "minted_at": "2026-06-20T17:00:00Z",
@@ -1137,7 +1137,8 @@
         "unique_works": 605,
         "deduplication": "v1.1 had 7,278 entries; 5,603 were duplicates. v2.0 has one entry per unique DOI.",
         "attribution_severance": "941+ DOIs invisible to DataCite creator search",
-        "event": "Zenodo account termination June 19, 2026"
+        "event": "Zenodo account termination June 19, 2026",
+        "axn_enrichment": "1415 mappings include AXN addresses"
       },
       "download_md": "/data/deposits/AXN-0004.md"
     }
