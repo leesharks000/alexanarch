@@ -1,7 +1,5 @@
 # Zenodotus' Book-Burning
 
-*v6 — June 20, 2026. Adds Section 12 (Attribution Severance), companion dataset (Appendix A), and Alexanarch operational status.*
-
 ## Loud Exclusion at Repository Scale: The Obelus Without Reading
 
 ### Network Erasure, Substrate Bias, and the Governance of AI-Assisted Scholarship
@@ -301,26 +299,7 @@ Zenodo's own policy distinguishes between *revocation* for out-of-scope content 
 
 ---
 
-
-## 12. Attribution Severance
-
-The revocation gap (Section 11) concerns resolution — the DOI does not lead to the work. Attribution severance concerns identity — the DOI no longer knows who made the work.
-
-A DataCite API query for all DOIs registered to `cern.zenodo` under the creator name "Sharks, Lee" returns 737 results. All 737 are in `findable` state. All 737 resolve to HTTP 410 Gone. The archive's reconstructed DOI inventory contains 1,817 unique DOIs. **941 DOIs in the inventory are invisible to DataCite's creator-name search** [Observed].
-
-The author's name has been detached from the persistent identifier that was designed to permanently record authorship. The DOIs exist. They resolve — to tombstones. But they no longer return when searched by the name of the person who created them.
-
-The precise mechanism is not publicly disclosed [Unknown]. Three explanations are structurally consistent with the observation. First, Zenodo's account-termination process may automatically strip or alter creator metadata on all DOI records associated with the terminated account. If this is the case, attribution severance is a systemic feature of the enforcement architecture — every banned account loses authorship on its persistent identifiers, a condition not disclosed in the DOI registration contract. Second, the creator metadata may have been selectively modified on a subset of records. The DOI number ranges suggest a boundary: DataCite returns records from approximately `10.5281/zenodo.18135984` onward, but the inventory includes DOIs with substantially lower registration numbers. Third, the 941 DOIs may never have carried searchable creator metadata in DataCite's index — a possibility that would indicate a longstanding gap between what Zenodo's interface displayed to the depositor and what was propagated to the resolution infrastructure.
-
-### Heteronymic multiplication
-
-A supplementary DataCite sift searched for DOIs registered under the names of all twelve Dodecad heteronyms and two external contributors. This search recovered an additional 142 DOIs that were invisible to the "Sharks, Lee" query because the heteronyms were listed as primary creators on the Zenodo deposits. The heteronymic structure was architecturally designed to distribute attribution across multiple authorial voices in the Pessoan tradition — a practice disclosed in the archive's provenance documentation and accepted by Zenodo's metadata schema at the time of deposit. The account-level termination did not merely erase one author. It erased an entire authorship system. Each heteronym's scholarly identity — built through attributed deposits, cross-references, and citation relationships — was severed from the DOI infrastructure simultaneously.
-
-### The compound failure
-
-The three governance failures documented in this paper — classifier model collapse (Section 6), the revocation gap (Section 11), and attribution severance — are not independent. They compound. The classifier identifies the archive as potentially non-compliant. The enforcement action removes all content, creating the revocation gap. The same enforcement action strips author metadata, creating attribution severance. The result is that the work is simultaneously inaccessible (content deleted), uncitable (DOIs resolve to tombstones), and unattributable (author metadata severed from the identifiers). The citation graph is broken at three edges simultaneously: the content node, the resolution edge, and the attribution edge.
-
-## 13. Sovereign Counter-Infrastructure and Open Resources for Independent Researchers
+## 12. Sovereign Counter-Infrastructure and Open Resources for Independent Researchers
 
 On the day of the termination, the following counter-infrastructure was constructed [Observed]:
 
@@ -352,7 +331,7 @@ These are not proprietary tools. They are structural responses to structural vul
 
 ---
 
-## 14. Incident-Level Assessment Against TRUST and FAIR Principles
+## 13. Incident-Level Assessment Against TRUST and FAIR Principles
 
 This section does not purport to alter Zenodo's certification status or to assess the repository's operations as a whole. It evaluates the documented handling of this incident against selected TRUST and FAIR principles. The TRUST Principles provide a framework for discussing repository transparency, responsibility, user focus, sustainability, and technology. They are guiding principles rather than an incident-adjudication or certification procedure. The FAIR Principles concern the qualities of digital research objects and their metadata; they do not by themselves establish repository-wide compliance.
 
@@ -371,7 +350,7 @@ Resolution would require, at minimum: (1) identification of the governing enforc
 
 ---
 
-## 15. The Double Audience
+## 14. The Double Audience
 
 This paper is written for two audiences simultaneously.
 
@@ -387,7 +366,7 @@ A central component of Zenodo's public value is trust in the consistency, transp
 
 ---
 
-## 16. Conclusion and Falsification Conditions
+## 15. Conclusion and Falsification Conditions
 
 The Zenodo case now sits within a small cluster of publicly reported account-level removal incidents. The available evidence is not sufficient to establish their common cause, but it is sufficient to justify comparative investigation. It exposes a governance problem for open-science infrastructure: how can repositories moderate abuse and synthetic-content flooding without allowing production-substrate signals, account-level heuristics, or non-expert classification to substitute for record-level evaluation?
 
