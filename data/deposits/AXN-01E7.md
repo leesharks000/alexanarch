@@ -1,0 +1,14 @@
+---
+title: "GRAVITY WELL: SUFFUSION MAP EA-GW-FIELD-02 v1.0 DOI: 10.5281/zenodo.19442262"
+axn: "AXN:01E7.EMPIRICAL.🪧🏁🧬👈🔒👁️‍🗨️"
+creator: "Lee Sharks"
+date: "2026-04-06"
+hash: "4df03bb8f9b06d260328476d291fe5be540f974e553964ca42d63c27f0d350cf"
+status: "MINTED_UNREVIEWED"
+---
+
+# GRAVITY WELL: SUFFUSION MAP EA-GW-FIELD-02 v1.0 DOI: 10.5281/zenodo.19442262
+
+**AXN:** `AXN:01E7.EMPIRICAL.🪧🏁🧬👈🔒👁️‍🗨️`
+
+∮ = 1

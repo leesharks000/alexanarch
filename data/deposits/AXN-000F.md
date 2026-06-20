@@ -1,0 +1,14 @@
+---
+title: "MATERIAL SYMBOL — THE UNTETHERED TAG"
+axn: "AXN:000F.EMPIRICAL.🏠🌳🌉⭐▲🎲"
+creator: "Lee Sharks"
+date: "2026-01-03"
+hash: "26762b089f8d86dd831facd7dd01e6fcb224cb4de3de2758278b865d9fc789c9"
+status: "MINTED_UNREVIEWED"
+---
+
+# MATERIAL SYMBOL — THE UNTETHERED TAG
+
+**AXN:** `AXN:000F.EMPIRICAL.🏠🌳🌉⭐▲🎲`
+
+∮ = 1
