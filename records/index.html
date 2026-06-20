@@ -200,6 +200,27 @@ fetch('/data/registry.json')
   html+='<div class="section-title">Full Text</div>';
   html+='<div id="full-text-container" class="full-text"><div style="color:var(--dim);text-align:center;padding:20px">Loading full text...</div></div>';
   
+  // Citations
+  if(d.citations && d.citations.length){
+    html+='<div class="section-title">Citations ('+d.citations.length+')</div>';
+    html+='<div style="margin:8px 0">';
+    for(var i=0;i<d.citations.length;i++){
+      var c=d.citations[i];
+      html+='<div style="background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:14px 16px;margin-bottom:8px">';
+      html+='<div style="font-weight:500;font-size:0.9em">';
+      if(c.url) html+='<a href="'+c.url+'" target="_blank" style="color:var(--accent)">';
+      html+=c.title;
+      if(c.url) html+='</a>';
+      html+='</div>';
+      html+='<div style="font-size:0.82em;color:var(--dim);margin-top:2px">'+c.authors.join(', ')+' ('+c.year+')</div>';
+      if(c.journal) html+='<div style="font-size:0.78em;color:#888;font-style:italic">'+c.journal+(c.volume?' '+c.volume:'')+(c.pages?', '+c.pages:'')+'</div>';
+      if(c.doi) html+='<div style="font-size:0.75em;font-family:var(--mono);color:var(--teal);margin-top:3px">DOI: '+c.doi+'</div>';
+      if(c.role) html+='<div style="font-size:0.78em;color:#555;margin-top:4px;padding-top:4px;border-top:1px solid #f0f0f0"><em>Role:</em> '+c.role+'</div>';
+      html+='</div>';
+    }
+    html+='</div>';
+  }
+
   // Verify
   html+='<div class="verify">';
   html+='<div class="section-title">Verify This Identifier</div>';
