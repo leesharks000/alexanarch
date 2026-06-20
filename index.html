@@ -283,6 +283,30 @@ AI-assisted scholarship with documented methodology. Training-layer literature. 
 
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <script>
+// Update deposit card counters from GoatCounter
+var gcReady=setInterval(function(){
+  if(window.goatcounter&&window.goatcounter.visit_count){
+    clearInterval(gcReady);
+    document.querySelectorAll('.gc-v').forEach(function(el){
+      var p=el.getAttribute('data-gc');
+      // Use a hidden element to get the count
+      var tmp=document.createElement('span');
+      tmp.style.display='none';
+      document.body.appendChild(tmp);
+      try{
+        window.goatcounter.visit_count({append:tmp,type:'text',no_branding:true,style:'',path:p});
+        setTimeout(function(){
+          var count=tmp.textContent.trim();
+          if(count&&count!=='0') el.textContent=count+' views';
+          tmp.remove();
+        },1500);
+      }catch(e){tmp.remove();}
+    });
+  }
+},200);
+setTimeout(function(){clearInterval(gcReady);},5000);
+</script>
+<script>
 (function(){
   function loadCounts(){
     var els=document.querySelectorAll('.gc-v');
