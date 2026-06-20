@@ -131,6 +131,12 @@ fetch('/data/registry.json').then(function(r){return r.json()}).then(function(re
     }).join('');
   }
   
+  // Handle incoming search from wiki links
+  var params=new URLSearchParams(window.location.search);
+  var incomingSearch=params.get('search')||'';
+  if(incomingSearch){
+    document.getElementById('search').value=incomingSearch;
+  }
   render();
   document.getElementById('search').addEventListener('input',render);
 });
