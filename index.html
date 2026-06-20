@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alexanarch — The Self-Governing Library</title>
+<meta name="description" content="Open repository for machine-mediated scholarship. AI-assisted research is not a flag. It is a feature. Substrate disclosure is provenance, not suspicion.">
+<link rel="canonical" href="https://alexanarch.org">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ResearchProject",
+  "name": "Alexanarch",
+  "description": "Open repository for machine-mediated scholarship, training-layer literature, and substrate-documented research.",
+  "url": "https://alexanarch.org",
+  "founder": {
+    "@type": "Person",
+    "name": "Lee Sharks",
+    "identifier": "https://orcid.org/0009-0000-1599-0703"
+  }
+}
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--code:#f5f5f5;--sans:'IBM Plex Sans',sans-serif;--mono:'IBM Plex Mono',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.7;font-size:15px}
+.wrap{max-width:760px;margin:0 auto;padding:60px 24px}
+h1{font-size:2.2em;font-weight:600;color:var(--accent);letter-spacing:-0.02em;margin-bottom:4px}
+h2{font-size:1.1em;font-weight:500;color:var(--accent);margin-bottom:20px;margin-top:40px;padding-bottom:6px;border-bottom:2px solid var(--border)}
+.tagline{font-size:1.05em;color:var(--dim);font-weight:300;margin-bottom:8px}
+.sub{font-size:0.85em;color:var(--dim);margin-bottom:30px}
+a{color:var(--accent);text-decoration:none}
+a:hover{color:var(--accent2);text-decoration:underline}
+.principles{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:24px 0}
+.principle{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;transition:box-shadow 0.2s}
+.principle:hover{box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.principle-title{font-family:var(--mono);font-size:0.8em;font-weight:500;color:var(--teal);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px}
+.principle p{font-size:0.88em;color:#444;line-height:1.6}
+.id-demo{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;margin:20px 0}
+.id-example{font-family:var(--mono);font-size:1.1em;color:var(--accent);background:var(--code);padding:12px 16px;border-radius:4px;margin:12px 0;letter-spacing:0.02em;border-left:3px solid var(--teal)}
+.id-explain{font-size:0.82em;color:var(--dim);line-height:1.6}
+.stats{display:flex;gap:20px;margin:24px 0;flex-wrap:wrap}
+.stat{text-align:center}
+.stat-num{font-size:1.8em;font-weight:600;color:var(--accent)}
+.stat-label{font-size:0.72em;color:var(--dim);text-transform:uppercase;letter-spacing:0.08em}
+.cta{display:inline-block;background:var(--accent);color:#fff;padding:12px 28px;border-radius:4px;font-family:var(--sans);font-size:0.9em;font-weight:500;margin:8px 8px 8px 0;text-decoration:none;transition:background 0.2s}
+.cta:hover{background:var(--accent2);color:#fff;text-decoration:none}
+.cta-outline{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.cta-outline:hover{background:var(--accent);color:#fff}
+.deposit-fields{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;margin:20px 0}
+.field{display:flex;gap:12px;padding:6px 0;border-bottom:1px solid #f0f0f0;font-size:0.85em}
+.field:last-child{border-bottom:none}
+.field-name{font-family:var(--mono);font-weight:500;min-width:160px;color:var(--accent)}
+.field-desc{color:#555}
+.field-req{color:var(--accent2);font-size:0.75em}
+.comparison{width:100%;border-collapse:collapse;margin:20px 0;font-size:0.85em}
+.comparison th{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border);color:var(--accent);font-weight:500}
+.comparison td{padding:8px 12px;border-bottom:1px solid #f0f0f0}
+.comparison .yes{color:var(--teal)}
+.comparison .no{color:var(--accent2)}
+.footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--border);font-size:0.78em;color:var(--dim)}
+.footer a{color:var(--dim)}
+.glyph{margin-top:8px;color:var(--accent)}
+.nav{display:flex;gap:20px;margin-bottom:30px;font-size:0.85em}
+.nav a{color:var(--dim);text-decoration:none;font-weight:500}
+.nav a:hover,.nav a.active{color:var(--accent)}
+.notice{background:#f0f7f0;border:1px solid #c0d8c0;border-radius:6px;padding:16px 20px;margin:20px 0;font-size:0.85em;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Alexanarch</h1>
+<div class="tagline">The self-governing library for machine-mediated scholarship.</div>
+<div class="sub">An open repository where AI-assisted research is not a flag. It is a feature.</div>
+
+<nav class="nav">
+  <a href="/" class="active">Home</a>
+  <a href="/deposit/">Deposit</a>
+  <a href="/browse/">Browse</a>
+  <a href="/principles/">Principles</a>
+  <a href="/identifiers/">Identifiers</a>
+</nav>
+
+<div class="notice">
+Alexanarch was founded in response to the account-level removal of 870 scholarly works and 1,060+ DOIs from Zenodo on June 19, 2026. The incident is documented in <a href="https://machinemediation.org/data/EA-MMRS-LOUD-EXCLUSION-03.md"><em>Zenodotus' Book-Burning</em></a> and <a href="https://github.com/zenodo/zenodo/issues/2606">GitHub Issue #2606</a>.
+</div>
+
+<!-- PRINCIPLES -->
+<h2>Founding Principles</h2>
+
+<div class="principles">
+  <div class="principle">
+    <div class="principle-title">The Obelus Principle</div>
+    <p>Judgment follows from reading. Content is evaluated by what it contains, not by the tools used to produce it. The automated obelus — the mark placed without examination — is prohibited.</p>
+  </div>
+  <div class="principle">
+    <div class="principle-title">Substrate Disclosure</div>
+    <p>AI-assisted scholarship discloses its substrate. Disclosure is provenance, not suspicion. Repositories that treat substrate signals as spam signals have confused metadata with contraband.</p>
+  </div>
+  <div class="principle">
+    <div class="principle-title">No Classifier Training</div>
+    <p>Deposited content is never used to train enforcement classifiers without explicit opt-in. Enforcement decisions are never recycled as training data. The feedback loop is broken by design.</p>
+  </div>
+  <div class="principle">
+    <div class="principle-title">Sovereign Identity</div>
+    <p>Every deposit receives a content-derived identifier that no platform can revoke. The identifier is computed from the work itself. It travels with the content. It belongs to the author.</p>
+  </div>
+  <div class="principle">
+    <div class="principle-title">Network Preservation</div>
+    <p>Account-level enforcement never removes contributor-licensed work. Every listed contributor has independent standing. No account action affects another author's deposit without their consent.</p>
+  </div>
+  <div class="principle">
+    <div class="principle-title">Tombstone Guarantee</div>
+    <p>Nothing disappears without a trace. Withdrawn or removed records retain a permanent tombstone with bibliographic metadata, withdrawal reason, and provenance chain. The identifier never becomes a 410.</p>
+  </div>
+</div>
+
+<!-- IDENTIFIER SYSTEM -->
+<h2>The Alexanarch Identifier (AXN)</h2>
+
+<div class="id-demo">
+  <p>Every deposit receives an <strong>Alexanarch Identifier (AXN)</strong> — a content-derived address that is unique, verifiable, and irrevocable. The identifier is computed from the content itself using a cryptographic hash, prefixed with a semantic family from the <a href="https://machinemediation.org/mint/">Sémantique Potentielle</a>.</p>
+  
+  <div class="id-example">AXN:LIMINAL.a7f3e2d1</div>
+  
+  <div class="id-explain">
+    <strong>AXN</strong> — Alexanarch namespace<br>
+    <strong>LIMINAL</strong> — semantic family (from the SP mint, describing the work's conceptual domain)<br>
+    <strong>a7f3e2d1</strong> — truncated SHA-256 of the deposited content (first 8 hex characters)<br><br>
+    The full hash is stored in the deposit record. The truncated form is the citation identifier. Because the hash is derived from the content, two deposits of the same content produce the same identifier. Different versions produce different identifiers. The semantic family prefix makes the identifier human-readable and semantically navigable — not just an address but a description.
+  </div>
+</div>
+
+<p style="font-size:0.88em;color:#555;margin:12px 0">The AXN is not a DOI. It does not depend on DataCite, CERN, or any third party. It is computed locally, verified cryptographically, and resolved through alexanarch.org. When DOI access is available (through OSF, DataCite membership, or institutional partnership), DOIs will be issued alongside AXNs — never instead of them.</p>
+
+<!-- DEPOSIT METADATA -->
+<h2>Deposit Schema</h2>
+
+<div class="deposit-fields">
+  <div class="field"><span class="field-name">title</span><span class="field-desc">Title of the work</span><span class="field-req">required</span></div>
+  <div class="field"><span class="field-name">creator</span><span class="field-desc">Author name(s). Heteronyms accepted with disclosure.</span><span class="field-req">required</span></div>
+  <div class="field"><span class="field-name">orcid</span><span class="field-desc">ORCID identifier(s) for creator(s)</span></div>
+  <div class="field"><span class="field-name">date</span><span class="field-desc">Date of creation or deposit (ISO 8601)</span><span class="field-req">required</span></div>
+  <div class="field"><span class="field-name">description</span><span class="field-desc">Abstract or description of the work</span><span class="field-req">required</span></div>
+  <div class="field"><span class="field-name">content_type</span><span class="field-desc">Dataset, critical edition, theoretical paper, monograph, specification, creative work, mixed</span><span class="field-req">required</span></div>
+  <div class="field"><span class="field-name">license</span><span class="field-desc">CC-BY-4.0, CC-BY-SA-4.0, CC0, or other open license</span><span class="field-req">required</span></div>
+  <div class="field"><span class="field-name">substrate</span><span class="field-desc">Substrate disclosure: human-only, AI-assisted (tool), AI-assisted (substrate), AI-generated (research object)</span><span class="field-req">required</span></div>
+  <div class="field"><span class="field-name">keywords</span><span class="field-desc">Descriptive keywords for discovery</span></div>
+  <div class="field"><span class="field-name">semantic_family</span><span class="field-desc">SP mint family for AXN prefix (auto-assigned if not specified)</span></div>
+  <div class="field"><span class="field-name">related_ids</span><span class="field-desc">Related identifiers: DOIs, AXNs, ARKs, URLs</span></div>
+  <div class="field"><span class="field-name">version</span><span class="field-desc">Version string (e.g., v1.0, v2.1)</span></div>
+  <div class="field"><span class="field-name">contributors</span><span class="field-desc">Additional contributors with roles and licenses</span></div>
+  <div class="field"><span class="field-name">methodology</span><span class="field-desc">Research methodology description or link</span></div>
+  <div class="field"><span class="field-name">falsification</span><span class="field-desc">Conditions under which claims can be weakened or falsified</span></div>
+  <div class="field"><span class="field-name">spxi_block</span><span class="field-desc">Embedded SPXI provenance kernel (auto-generated if not provided)</span></div>
+</div>
+
+<!-- HOW TO DEPOSIT -->
+<h2>How to Deposit</h2>
+
+<p style="font-size:0.88em;color:#555;margin-bottom:16px">Deposits are submitted through GitHub. This ensures full version control, transparent review, public audit trail, and zero platform lock-in.</p>
+
+<div class="principles" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+  <div class="principle">
+    <div class="principle-title">1. Submit</div>
+    <p>Open an issue on the <a href="https://github.com/leesharks000/alexanarch/issues/new?template=deposit.yml">Alexanarch repository</a> using the deposit template. Attach your file and fill in the metadata fields.</p>
+  </div>
+  <div class="principle">
+    <div class="principle-title">2. Review</div>
+    <p>The deposit is reviewed for completeness, metadata accuracy, and substrate disclosure. Review is public. The Obelus Principle governs: content is read, not pattern-matched.</p>
+  </div>
+  <div class="principle">
+    <div class="principle-title">3. Mint</div>
+    <p>An AXN identifier is computed from the content hash. The deposit is added to the registry. The record page goes live. The identifier is permanent.</p>
+  </div>
+</div>
+
+<a href="https://github.com/leesharks000/alexanarch/issues/new" class="cta">Deposit a Work</a>
+<a href="/browse/" class="cta cta-outline">Browse the Collection</a>
+
+<!-- COMPARISON -->
+<h2>What Alexanarch Does Differently</h2>
+
+<table class="comparison">
+<tr><th>Feature</th><th>Zenodo</th><th>Alexanarch</th></tr>
+<tr><td>AI-assisted research</td><td class="no">Flagged by classifier</td><td class="yes">Welcomed with substrate disclosure</td></tr>
+<tr><td>Identifier persistence</td><td class="no">Revocable by platform</td><td class="yes">Content-derived, irrevocable</td></tr>
+<tr><td>Classifier training on deposits</td><td class="no">Yes, per FAQ</td><td class="yes">Never without opt-in</td></tr>
+<tr><td>Contributor standing</td><td class="no">Invisible to account-level action</td><td class="yes">Independent standing per deposit</td></tr>
+<tr><td>Tombstone on removal</td><td class="no">Inconsistent coverage</td><td class="yes">Guaranteed for every record</td></tr>
+<tr><td>Substrate disclosure</td><td>Not part of schema</td><td class="yes">Required metadata field</td></tr>
+<tr><td>Heteronymic authorship</td><td>Not supported</td><td class="yes">Accepted with disclosure</td></tr>
+<tr><td>Review process</td><td>Automated classifier + manual</td><td class="yes">Public, content-based, auditable</td></tr>
+<tr><td>Falsification conditions</td><td>Not part of schema</td><td class="yes">Optional metadata field</td></tr>
+<tr><td>Cost</td><td>Free</td><td class="yes">Free</td></tr>
+</table>
+
+<!-- SCOPE -->
+<h2>Scope</h2>
+
+<p style="font-size:0.88em;color:#555">Alexanarch accepts research artifacts in all fields where machine mediation is part of the scholarly process. This includes but is not limited to:</p>
+
+<div style="font-size:0.88em;color:#555;margin:12px 0;line-height:1.8">
+AI-assisted scholarship with documented methodology. Training-layer literature. Machine-mediated reception studies. Critical editions produced with AI tools. Empirical datasets documenting AI behavior. Methodological protocols for human-AI collaboration. Creative works connected to research programs. Heteronymic and experimental authorship. Multi-model verification studies. Capture registries. Provenance documentation. Platform governance research — including research about repositories.
+</div>
+
+<div class="footer">
+  <div><strong>Alexanarch</strong> · Founded June 2026 · Lee Sharks · <a href="https://orcid.org/0009-0000-1599-0703">ORCID 0009-0000-1599-0703</a></div>
+  <div style="margin-top:4px">The obelus follows from reading. The identifier follows from the content. The library governs itself.</div>
+  <div style="margin-top:4px"><a href="https://machinemediation.org">Machine-Mediated Reception Studies</a> · <a href="https://github.com/leesharks000/alexanarch">GitHub</a></div>
+  <div class="glyph">∮ = 1</div>
+</div>
+
+</div>
+</body>
+</html>
