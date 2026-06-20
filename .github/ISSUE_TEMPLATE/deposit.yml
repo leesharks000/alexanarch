@@ -1,0 +1,143 @@
+name: Deposit a Work
+description: Submit a research artifact to Alexanarch
+title: "[DEPOSIT] "
+labels: ["deposit", "pending-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Deposit a Work to Alexanarch
+        
+        Fill in the metadata below and attach your file(s) to this issue. 
+        Your deposit will be reviewed publicly under the Obelus Principle: 
+        content is evaluated by what it contains, not by the tools used to produce it.
+
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: Title of the work
+    validations:
+      required: true
+
+  - type: input
+    id: creator
+    attributes:
+      label: Creator
+      description: Author name(s). Heteronyms accepted with disclosure.
+    validations:
+      required: true
+
+  - type: input
+    id: orcid
+    attributes:
+      label: ORCID
+      description: ORCID identifier(s)
+
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: Date of creation (YYYY-MM-DD)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Abstract or description of the work
+    validations:
+      required: true
+
+  - type: dropdown
+    id: content_type
+    attributes:
+      label: Content Type
+      options:
+        - Dataset
+        - Critical edition
+        - Theoretical paper
+        - Monograph
+        - Methodological specification
+        - Creative work (connected to research)
+        - Mixed
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: license
+    attributes:
+      label: License
+      options:
+        - CC-BY-4.0
+        - CC-BY-SA-4.0
+        - CC0
+        - Other (specify in description)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: substrate
+    attributes:
+      label: Substrate Disclosure
+      description: How was AI involved in producing this work?
+      options:
+        - Human-only (no AI assistance)
+        - AI-assisted (tool) — AI used for editing, formatting, code generation
+        - AI-assisted (substrate) — AI used as drafting substrate under human editorial governance
+        - AI-generated (research object) — AI output is the object of study
+        - Mixed (specify in description)
+    validations:
+      required: true
+
+  - type: input
+    id: keywords
+    attributes:
+      label: Keywords
+      description: Comma-separated keywords for discovery
+
+  - type: input
+    id: related_ids
+    attributes:
+      label: Related Identifiers
+      description: DOIs, URLs, AXNs, or other identifiers of related works
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Version string (e.g., v1.0)
+
+  - type: textarea
+    id: methodology
+    attributes:
+      label: Methodology
+      description: Brief description of research methodology
+
+  - type: textarea
+    id: falsification
+    attributes:
+      label: Falsification Conditions
+      description: Under what conditions would the claims in this work be weakened or falsified?
+
+  - type: textarea
+    id: files
+    attributes:
+      label: Files
+      description: Attach files by dragging them into this field, or paste URLs to files hosted elsewhere.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Terms
+      options:
+        - label: I confirm this work is deposited under the stated license
+          required: true
+        - label: I confirm the substrate disclosure is accurate
+          required: true
+        - label: I understand that deposited content will NOT be used to train enforcement classifiers
+          required: true
