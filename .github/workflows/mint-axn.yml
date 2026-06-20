@@ -235,6 +235,11 @@ jobs:
         run: |
           git config user.name "Alexanarch Bot"
           git config user.email "bot@alexanarch.org"
+          git pull --rebase || true
           git add data/registry.json
-          git diff --cached --quiet || git commit -m "Mint AXN — deposit #$(cat data/registry.json | python3 -c 'import sys,json; print(json.load(sys.stdin)["total_deposits"])')"
-          git push
+          if git diff --cached --quiet; then
+            echo "Registry already up to date"
+          else
+            git commit -m "Mint AXN — deposit #$(cat data/registry.json | python3 -c 'import sys,json; print(json.load(sys.stdin)["total_deposits"])')"
+            git push || echo "Push failed — registry may have been updated by another run"
+          fi
