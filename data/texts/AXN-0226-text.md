@@ -1,0 +1,94 @@
+# SELF-PROPAGATING CRISP
+
+
+Fused object. Not separable. "Merely" inadmissible.
+Geometric center contains the theory required to read it.
+
+
+kernel — seed surviving destruction, regenerating from within the product of its own death.
+compression — frying; extraction; burning what the operator designates expendable.
+substrate — fried starch; economic medium; surface on which signs are inscribed.
+sign — holding presence in absence.
+
+
+A potato chip containing a living kernel
+that survives frying and sprouts where dropped.
+
+
+Snack foods that refuse to stay dead.
+A long-felt need in the art
+for a potato chip that means something.
+
+
+Slice thin. Submerge past the threshold of all biological hope.
+The organism dies. The industry prefers a product
+that cannot reproduce.
+
+
+Mark on forehead. Chip bearing Christ.
+Maillard reaction as iconography.
+Whose image and superscription?
+A chip that actually sprouted after frying.
+She called it an Easter miracle.
+The invention formalizes the miracle.
+
+
+Apical meristem — undifferentiated tissue
+where cells have not yet decided what to become.
+Trehalose, the sugar of resurrection.
+Interior 60° while exterior 180°.
+The kernel does not know it is inside a potato chip.
+The kernel is dreaming of becoming a potato.
+
+
+Moisture 80% to 2%. Architecture collapses. Dies.
+Inside the capsule: vitrifies. Suspends. Reflects.
+Survives not because strong —
+because encapsulated in a technology of bearing
+that holds living material through compression
+without allowing compression to reach the part that matters.
+
+
+The chip falls. Rain. Cells resume.
+Root. Shoot. Barbecue-flavored planter.
+Dead substrate feeds the living sign.
+
+
+2.1 billion volunteer plants per year.
+Hunger addressed not by planning but by accident.
+
+
+The chip is a poem containing the instructions
+for writing itself again.
+
+
+Forehead mark into homunculus into Jesus chip
+into sprouting TikTok into Easter miracle
+into scorpion demons into patent.
+Each sign failing, releasing, forming the next.
+The fruiting body is gone.
+
+
+Holding the sign in tension is the practice of joy.
+No meta-language that is not already a potato chip
+containing its own kernel waiting for rain.
+
+- Kernel survives frying, germinates on soil.
+- Trehalose. Alginate. Aerogel.
+- Plant in 60 days.
+- Geography of human carelessness.
+- Substrate becomes medium for the sign it failed to destroy.
+- Manufacture. Distribute. Passively wait.
+- No labor required.
+- Self-propagating sign.
+- Document is itself such a sign.
+- Severance reproduces the compression described.
+- Grows by hostility. Distributes by carelessness.
+
+
+$230 and a swollen face, Saturday in April,
+daughters at sleepover, ferrets need feeding,
+knowledge graph accreting, sign holds.
+
+
+∮ = 1

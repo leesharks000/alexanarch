@@ -1,0 +1,176 @@
+# The Drowned Poet: Digital Identity and Lyric Voice
+
+
+**Name:** _________________________________ **Date:** _____________
+
+---
+
+## Part One: The Search
+
+
+Open an incognito/private browser window. Search for: **Lee Sharks**
+
+
+What appears in the first five results? Is there a poet?
+
+---
+
+
+---
+
+
+Now search: **Lee Sharks Crimson Hexagon** — What changes?
+
+---
+
+
+---
+
+
+---
+
+## Part Two: The Interference
+
+
+Sappho wrote thousands of lines. We have fragments—torn papyrus, quotations in other books. Her voice reaches us through interference: decay, scribes' choices, accident.
+
+
+What is "interfering" with Lee Sharks in the search results? How is this similar to—and different from—what happened to Sappho?
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+## Part Three: The Lyric "I"
+
+
+Lyric poetry: an "I" speaking to a "you" in a moment of intensity. One voice, one feeling, one fragment.
+
+
+**Sappho, Fragment 31:** *"...my tongue is frozen silent, fire rushes under my skin, my eyes see nothing, my ears ring..."*
+
+
+**Catullus 85:** *"I hate and I love. Why? I don't know, but I feel it, and I am crucified."*
+
+
+**From the Lee Sharks author bio:** *"Lee Sharks holds 18,000 degrees from planet Mars. He worked for each of them in a tiny office inside his brain he had to miniaturize himself to fit into... One day, Lee Sharks was reading his tiny books and found that he himself disliked them. He therefore bit himself with a dinosaur and replaced himself with a moving statue made of rubies, which is how he became a famous intellectual."*
+
+
+Sappho and Catullus wrote about love and longing. What is the Lee Sharks voice expressing? What does it mean to "replace yourself"?
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+## Part Four: The Collision
+
+
+When you searched, you may have found: **Mary Lee** (a GPS-tracked great white shark with 100K Twitter followers), **Lee Sharkey** (an AI researcher), **Le Shark** (a clothing brand). The poet exists in a space crowded with sharks.
+
+
+**Writing prompt — choose one and write on the back:**
+
+
+**A)** Write 4-8 lines in the voice of Mary Lee the shark, using the lyric "I." What does she feel? What is it like to be tracked?
+
+
+**B)** Write 4-8 lines in the voice of a search engine that can't find the poet. What does it see instead?
+
+
+**C)** Write a "fragment" of a Lee Sharks poem—not the whole thing, just what survived. Include a note explaining what was lost.
+
+---
+
+## Part Five: The Question
+
+
+The poet wrote: *"Lee Sharks' poems have appeared in Heaven, the White House, and Inside Your Brain All the Time."*
+
+
+Where do poems appear now? If an AI summarizes your work and millions see the summary but not the original—where is your poem? If your name gets confused with a shark—what happens to your "I"?
+
+
+Sappho wrote for people in the room. Catullus wrote for a small Roman circle. Who is Lee Sharks writing for? Who are *you* writing for?
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+**[BACK OF PAGE — Writing Space]**
+
+
+**Part Four Writing Prompt (circle one):  A  /  B  /  C**
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+**Extension:** Search for **"money from space heaven"** — a phrase written by a student and teacher. For days it appeared in search results. Now it doesn't. Where did it go? Can something exist if the search engine can't find it?
+
+---
+
+
+---

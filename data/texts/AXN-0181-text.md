@@ -1,0 +1,4 @@
+# VISUAL SCHEMA — SPACE ARK
+
+
+[](https://blogger.googleusercontent.com/img/a/AVvXsEjW0waMT-6jZIGS6ZRDo33E6PvBcLH5LWI9KPx87j_OHMocqw8deLHg2DtQAzLIX47TA8bxcEIuwlBJrMxU9TceybnaNCMt1L8M1CLXNWm2skXtd3JX9JDriPlscatYpyfcIYwvjJjpAEzBSWIclVlclNVl0V4S0X_BMOPVga6YAixgqVUMbv1eqnOKYAoc)
