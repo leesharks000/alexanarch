@@ -54,7 +54,7 @@ Priority: works with dead Zenodo links on live site surfaces (222 works) go firs
 
 | Batch | Works | Range | Priority | Status |
 |-------|-------|-------|----------|--------|
-| 1 | 100 | MM-CHA-0045 – MM-CHA-0635 | Dead site links | ✅ Complete |
+| 1 | 100 | MM-CHA-0045 – MM-CHA-0635 | Dead site links | 🔄 Retrofitting (full text + citations) |
 | 2 | 100 | MM-CHA-0636 – MM-CHA-0840 | Dead site links | ☐ Not started |
 | 3 | 22 | MM-CHA-0841 – MM-CHA-0870 | Dead site links | ☐ Not started |
 | 4 | 100 | MM-CHA-0001 – MM-CHA-0101 | Archive fill | ☐ Not started |
@@ -80,29 +80,46 @@ For each batch, the session follows this pipeline:
 - Classify content_type from title + text preview
 - Identify creator attribution (heteronym routing)
 
-### Step 2: Generate Wiki Articles + Entities (30-45 min)
-- For each work, write a 150-300 word wiki article from the title and text preview
-- Generate 5-10 entity triples per work
-- Extract internal cross-references (DOIs, EA- designators, AXN links)
-- Build related_ids
+### Step 2: Fetch Full Text (20-30 min)
+- Fetch blog content from mindcontrolpoems.blogspot.com for each work
+- Convert HTML to clean markdown
+- Store as individual MD files in `data/texts/AXN-XXXX-text.md`
+- Set `full_text_path` in registry entry to the stored file path
+- This is the sovereignty step: the text lives on Alexanarch, not on Blogger
 
-### Step 3: Build Registry Entries (10 min)
+### Step 3: Extract Citations (10-15 min)
+- Parse full text for DOI references (`10.5281/zenodo.NNNNNNN`)
+- Parse for EA- designator cross-references (`EA-XXX-YY-NN`)
+- Parse for bibliographic entries (author, year, title patterns)
+- Map internal DOIs to AXN addresses via the resolution index
+- Build `citations` array in registry entry format: key, title, authors, year, DOI, role
+- Build `related_ids` with AXN cross-links
+
+### Step 4: Generate Wiki Articles + Entities (30-45 min)
+- For each work, write a 150-300 word wiki article from the title and full text
+- Generate 5-10 entity triples per work
+- Use full text (not just preview) for richer context
+
+### Step 5: Build Registry Entries (10 min)
 - Construct full registry entries merging:
   - Batch AXN data (hex, family, emoji, hash, clusters, reading)
-  - Sovereign registry data (title, date, blog_url, text_preview → description)
+  - Sovereign registry data (title, date, blog_url)
+  - Full text file path
+  - Citations array
   - Generated data (wiki_article, entities, content_type, keywords, related_ids)
 - Validate against deposit schema
 
-### Step 4: Generate Deposit MDs (5 min)
+### Step 6: Generate Deposit MDs (5 min)
 - Programmatic generation of AXN-XXXX.md files with YAML front matter
-- Include description, version, related deposits, provenance
+- Include description, citation count, version, related deposits, provenance
 
-### Step 5: Push (5-10 min)
+### Step 7: Push (5-10 min)
+- Push full text MD files to `data/texts/`
 - Push updated registry.json (incremental — carry forward all previous entries)
-- Push batch of deposit MDs to data/deposits/
+- Push batch of deposit MDs to `data/deposits/`
 - Verify file integrity
 
-### Step 6: Log Progress (2 min)
+### Step 8: Log Progress (2 min)
 - Update this work plan with batch status
 - Note any works that need special handling
 - Record session statistics
