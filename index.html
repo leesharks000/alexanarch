@@ -286,13 +286,21 @@ AI-assisted scholarship with documented methodology. Training-layer literature. 
 function fetchCounters(){
   document.querySelectorAll('.gc-count').forEach(function(el){
     var path=el.getAttribute('data-path');
-    fetch('https://alexanarch.goatcounter.com/counter/'+encodeURIComponent(path)+'.json')
-    .then(function(r){return r.json()})
-    .then(function(d){el.textContent=(d.count||0)+' views'})
-    .catch(function(){el.textContent='0 views'});
+    try{
+      var r=new XMLHttpRequest();
+      r.addEventListener('load',function(){
+        try{
+          var d=JSON.parse(this.responseText);
+          el.textContent=(d.count||'0')+' views';
+        }catch(e){el.textContent='0 views';}
+      });
+      r.addEventListener('error',function(){el.textContent='0 views';});
+      r.open('GET','https://alexanarch.goatcounter.com/counter/'+encodeURIComponent(path)+'.json');
+      r.send();
+    }catch(e){el.textContent='0 views';}
   });
 }
-setTimeout(fetchCounters,300);
+setTimeout(fetchCounters,1000);
 </script>
 
 </body>
