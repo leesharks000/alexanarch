@@ -268,6 +268,48 @@ jobs:
               console.log('API failed (likely no credits): ' + (e.message||e));
             }
 
+      - name: Generate deposit MD file
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const registry = JSON.parse(fs.readFileSync('data/registry.json', 'utf-8'));
+            const d = registry.deposits[registry.deposits.length - 1];
+            const n = String(d.issue_number).padStart(4, '0');
+            const mdPath = 'data/deposits/AXN-' + n + '.md';
+            
+            // Ensure directory exists
+            if (!fs.existsSync('data/deposits')) fs.mkdirSync('data/deposits', {recursive: true});
+            
+            let md = '---\n';
+            md += 'title: "' + (d.title||'').replace(/"/g, '\\"') + '"\n';
+            md += 'axn: "' + d.axn + '"\n';
+            md += 'creator: "' + (d.creator||'') + '"\n';
+            md += 'date: "' + (d.date||'') + '"\n';
+            md += 'content_type: "' + (d.content_type||'') + '"\n';
+            md += 'license: "' + (d.license||'') + '"\n';
+            md += 'substrate: "' + (d.substrate||'') + '"\n';
+            md += 'version: "' + (d.version||'v1.0') + '"\n';
+            md += 'hash: "' + (d.hash||'') + '"\n';
+            md += 'status: "' + (d.status||'') + '"\n';
+            md += '---\n\n';
+            md += '# ' + d.title + '\n\n';
+            md += '**' + d.creator + '** . ' + d.date + ' . ' + (d.content_type||'') + '\n\n';
+            md += '**AXN:** `' + d.axn + '`\n\n';
+            md += '## Description\n\n' + (d.description||'') + '\n';
+            if (d.methodology) md += '\n## Methodology\n\n' + d.methodology + '\n';
+            if (d.falsification) md += '\n## Falsification Conditions\n\n' + d.falsification + '\n';
+            md += '\n---\n\n*Minted ' + (d.minted_at||'') + '*\n';
+            
+            fs.writeFileSync(mdPath, md);
+            
+            // Update registry with download path
+            d.download_md = '/' + mdPath;
+            fs.writeFileSync('data/registry.json', JSON.stringify(registry, null, 2));
+            
+            console.log('MD generated: ' + mdPath + ' (' + md.length + ' chars)');
+
       - name: Commit registry update
         run: |
           git config user.name "Alexanarch Bot"
