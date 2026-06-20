@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Knowledge Graph — Alexanarch</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:'IBM Plex Sans',sans-serif;--mono:'IBM Plex Mono',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.7;font-size:15px}
+.wrap{max-width:900px;margin:0 auto;padding:60px 24px}
+.nav{display:flex;gap:20px;margin-bottom:30px;font-size:0.85em}
+.nav a{color:var(--dim);text-decoration:none;font-weight:500}.nav a:hover,.nav a.active{color:var(--accent)}
+a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}
+h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:8px}
+.sub{font-size:0.88em;color:var(--dim);margin-bottom:20px}
+.search{width:100%;padding:10px 14px;border:1px solid var(--border);border-radius:4px;font-family:var(--sans);font-size:0.88em;margin-bottom:16px}
+.search:focus{outline:none;border-color:var(--teal)}
+.stats{display:flex;gap:16px;margin-bottom:20px;flex-wrap:wrap}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:4px;padding:10px 16px;text-align:center}
+.stat-num{font-size:1.4em;font-weight:600;color:var(--teal)}
+.stat-label{font-size:0.7em;color:var(--dim);text-transform:uppercase}
+.entity-card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:16px;margin-bottom:8px;transition:border-color 0.2s}
+.entity-card:hover{border-color:var(--teal)}
+.entity-name{font-weight:600;color:var(--accent);font-size:1em}
+.entity-type{font-size:0.72em;color:var(--teal);font-family:var(--mono);text-transform:uppercase;margin-left:8px}
+.relation{display:flex;gap:8px;padding:3px 0;font-size:0.85em}
+.rel-pred{color:var(--teal);font-family:var(--mono);font-size:0.82em;min-width:120px}
+.rel-obj{color:#444}
+.footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--border);font-size:0.78em;color:var(--dim)}
+.glyph{margin-top:8px;color:var(--accent)}
+.filter-btns{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+.fbtn{background:var(--surface);border:1px solid var(--border);padding:4px 12px;border-radius:12px;font-size:0.78em;cursor:pointer;font-family:var(--sans)}
+.fbtn:hover,.fbtn.active{background:var(--teal);color:#fff;border-color:var(--teal)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="nav">
+  <a href="/">Alexanarch</a>
+  <a href="/deposit/">Deposit</a>
+  <a href="/browse/">Browse</a>
+  <a href="/wiki/">Wiki</a>
+  <a href="/graph/" class="active">Graph</a>
+  <a href="/manifest/">Manifest</a>
+</nav>
+
+<h1>Knowledge Graph</h1>
+<div class="sub">Entity relations extracted from all deposits. Each deposit compounds the graph.</div>
+
+<div class="stats" id="stats"></div>
+<input class="search" id="search" placeholder="Search entities...">
+<div class="filter-btns" id="filters"></div>
+<div id="entities">Loading...</div>
+
+<div class="footer">
+  <div><strong>Alexanarch</strong> · Auto-extracted entity graph from deposited scholarship</div>
+  <div class="glyph">∮ = 1</div>
+</div>
+</div>
+
+<script>
+fetch('/data/registry.json').then(function(r){return r.json()}).then(function(reg){
+  var allTriples=[];
+  var deps=reg.deposits||[];
+  deps.forEach(function(d){
+    (d.entities||[]).forEach(function(e){
+      e.source_axn=d.axn;
+      e.source_title=d.title;
+      allTriples.push(e);
+    });
+  });
+  
+  // Build entity index — group by subject
+  var entityMap={};
+  allTriples.forEach(function(t){
+    if(!entityMap[t.subject]) entityMap[t.subject]={name:t.subject,type:t.type||'unknown',relations:[],sources:new Set()};
+    entityMap[t.subject].relations.push({predicate:t.predicate,object:t.object,source:t.source_axn});
+    entityMap[t.subject].sources.add(t.source_axn);
+  });
+  // Also index objects
+  allTriples.forEach(function(t){
+    if(!entityMap[t.object]) entityMap[t.object]={name:t.object,type:'referenced',relations:[],sources:new Set()};
+  });
+  
+  var entities=Object.values(entityMap).sort(function(a,b){return b.relations.length-a.relations.length});
+  
+  // Stats
+  var types={};
+  entities.forEach(function(e){types[e.type]=(types[e.type]||0)+1});
+  document.getElementById('stats').innerHTML=
+    '<div class="stat"><div class="stat-num">'+entities.length+'</div><div class="stat-label">Entities</div></div>'+
+    '<div class="stat"><div class="stat-num">'+allTriples.length+'</div><div class="stat-label">Relations</div></div>'+
+    '<div class="stat"><div class="stat-num">'+deps.length+'</div><div class="stat-label">Sources</div></div>';
+  
+  // Type filters
+  var typeKeys=Object.keys(types).sort();
+  var activeType='all';
+  document.getElementById('filters').innerHTML=
+    '<div class="fbtn active" onclick="filterType('all')">All</div>'+
+    typeKeys.map(function(t){return '<div class="fbtn" onclick="filterType(''+t+'')">'+t+' ('+types[t]+')</div>'}).join('');
+  
+  window.filterType=function(t){
+    activeType=t;
+    document.querySelectorAll('.fbtn').forEach(function(b){b.classList.remove('active')});
+    event.target.classList.add('active');
+    render();
+  };
+  
+  function render(){
+    var q=document.getElementById('search').value.toLowerCase();
+    var filtered=entities.filter(function(e){
+      if(activeType!=='all'&&e.type!==activeType) return false;
+      if(q&&e.name.toLowerCase().indexOf(q)===-1) return false;
+      return true;
+    });
+    
+    document.getElementById('entities').innerHTML=filtered.slice(0,50).map(function(e){
+      var rels=e.relations.map(function(r){
+        return '<div class="relation"><span class="rel-pred">'+r.predicate+'</span><span class="rel-obj">'+r.object+'</span></div>';
+      }).join('');
+      return '<div class="entity-card">'+
+        '<div><span class="entity-name">'+e.name+'</span><span class="entity-type">'+e.type+'</span></div>'+
+        (e.relations.length?'<div style="margin-top:8px">'+rels+'</div>':'')+
+        '</div>';
+    }).join('');
+  }
+  
+  render();
+  document.getElementById('search').addEventListener('input',render);
+});
+</script>
+</body>
+</html>
