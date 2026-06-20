@@ -207,6 +207,327 @@
           "url": "https://arxiv.org/abs/1706.09847",
           "role": "Classifier feedback contraction — enforcement decisions bias future enforcement"
         }
+      ],
+      "wiki_article": "\"Zenodotus' Book-Burning: Loud Exclusion at Repository Scale\" is a 2026 theoretical paper by Lee Sharks that analyzes the account-level removal of the Crimson Hexagonal Archive from Zenodo, a CERN-operated open-access scholarly repository. On June 19, 2026, Zenodo terminated the account associated with the archive and removed public access to approximately 870 interlinked scholarly works encompassing over 1,060 DOI identifiers, without prior notification or record-level review. The private termination notice characterized the deposits as \"substantially AI-generated without a verifiable research basis,\" while the public-facing removal page displayed the broader classification \"content out of scope for repository.\"\n\nThe paper develops five principal theoretical concepts from this incident. The Pristine Fallacy names the substitution of production-substrate identity for methodological assessment — the assumption that work is less legitimate because an AI system participated in its creation, regardless of the human research, governance, and verification underlying it. The paper demonstrates that the removed archive contained primary empirical datasets, critical editions with philological apparatus, theoretical papers with mathematical formalizations, and monograph-length scholarship — all of which satisfy Zenodo's own published criteria for acceptable AI-assisted research.\n\nClassifier model collapse describes a feedback mechanism in content moderation: when a platform trains its enforcement classifier on its own removal decisions, each enforcement action biases subsequent classifications, progressively narrowing the range of acceptable scholarly expression. The paper draws on Shumailov et al.'s work on generative model collapse and the machine-learning feedback loop literature to formalize this concept.\n\nNetwork erasure identifies the collateral removal of contributor-licensed work by independent creators who were not the subject of the moderation action and were not individually evaluated or notified. The reflexive governance problem identifies the structural risk of a platform moderating research about the class of systems to which it belongs. The revocation gap names the interval between a repository's authority to remove content and its responsibility to preserve the removed object's persistent scholarly identity through resolvable metadata.\n\nThe paper extends Florian Morin's framework of quiet exclusion to account-level repository enforcement, proposes an incident-level assessment against the TRUST and FAIR principles, and argues that under contemporary conditions platform governance has become governance itself — that scholarly infrastructure owned by platforms exercises functional sovereignty over what counts as legitimate knowledge. The paper concludes with an open-resource toolkit for independent researchers and seven falsification conditions under which its claims can be revised.\n",
+      "entities": [
+        {
+          "subject": "Pristine Fallacy",
+          "predicate": "defined_in",
+          "object": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "type": "concept"
+        },
+        {
+          "subject": "Pristine Fallacy",
+          "predicate": "critiques",
+          "object": "Substrate Bias",
+          "type": "concept"
+        },
+        {
+          "subject": "Pristine Fallacy",
+          "predicate": "extends",
+          "object": "Institutional Bias (Morin)",
+          "type": "concept"
+        },
+        {
+          "subject": "Classifier Model Collapse",
+          "predicate": "defined_in",
+          "object": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "type": "concept"
+        },
+        {
+          "subject": "Classifier Model Collapse",
+          "predicate": "extends",
+          "object": "Model Collapse (Shumailov et al.)",
+          "type": "concept"
+        },
+        {
+          "subject": "Classifier Model Collapse",
+          "predicate": "is_instance_of",
+          "object": "Feedback Loop",
+          "type": "concept"
+        },
+        {
+          "subject": "Network Erasure",
+          "predicate": "defined_in",
+          "object": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "type": "concept"
+        },
+        {
+          "subject": "Network Erasure",
+          "predicate": "affects",
+          "object": "John Guzlowski",
+          "type": "person"
+        },
+        {
+          "subject": "Network Erasure",
+          "predicate": "affects",
+          "object": "Alice Thornburgh",
+          "type": "person"
+        },
+        {
+          "subject": "Network Erasure",
+          "predicate": "affects",
+          "object": "Rhys Owens",
+          "type": "person"
+        },
+        {
+          "subject": "Reflexive Governance Problem",
+          "predicate": "defined_in",
+          "object": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "type": "concept"
+        },
+        {
+          "subject": "Reflexive Governance Problem",
+          "predicate": "applies_to",
+          "object": "Zenodo",
+          "type": "institution"
+        },
+        {
+          "subject": "Revocation Gap",
+          "predicate": "defined_in",
+          "object": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "type": "concept"
+        },
+        {
+          "subject": "Revocation Gap",
+          "predicate": "critiques",
+          "object": "DOI Persistence",
+          "type": "concept"
+        },
+        {
+          "subject": "Revocation Gap",
+          "predicate": "applies_to",
+          "object": "DataCite",
+          "type": "institution"
+        },
+        {
+          "subject": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "predicate": "created_by",
+          "object": "Lee Sharks",
+          "type": "person"
+        },
+        {
+          "subject": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "predicate": "extends",
+          "object": "Quiet Exclusion (Morin 2026)",
+          "type": "work"
+        },
+        {
+          "subject": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "predicate": "cites",
+          "object": "AI Models Collapse (Shumailov 2024)",
+          "type": "work"
+        },
+        {
+          "subject": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "predicate": "cites",
+          "object": "The Black Box Society (Pasquale 2015)",
+          "type": "work"
+        },
+        {
+          "subject": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "predicate": "cites",
+          "object": "The Relevance of Algorithms (Gillespie 2014)",
+          "type": "work"
+        },
+        {
+          "subject": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "predicate": "cites",
+          "object": "The Matthew Effect (Merton 1968)",
+          "type": "work"
+        },
+        {
+          "subject": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "predicate": "cites",
+          "object": "FAIR Principles (Wilkinson 2016)",
+          "type": "work"
+        },
+        {
+          "subject": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "predicate": "cites",
+          "object": "TRUST Principles (Lin 2020)",
+          "type": "work"
+        },
+        {
+          "subject": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "predicate": "documents",
+          "object": "Zenodo Account Termination (June 19 2026)",
+          "type": "event"
+        },
+        {
+          "subject": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "predicate": "proposes",
+          "object": "Platform Governance as Governance",
+          "type": "concept"
+        },
+        {
+          "subject": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "predicate": "proposes",
+          "object": "Custodial Enclosure",
+          "type": "concept"
+        },
+        {
+          "subject": "Zenodo",
+          "predicate": "is_instance_of",
+          "object": "Open-Access Repository",
+          "type": "institution"
+        },
+        {
+          "subject": "Zenodo",
+          "predicate": "is_part_of",
+          "object": "CERN",
+          "type": "institution"
+        },
+        {
+          "subject": "Zenodo",
+          "predicate": "uses",
+          "object": "Automated Spam Classifier",
+          "type": "method"
+        },
+        {
+          "subject": "Automated Spam Classifier",
+          "predicate": "exhibits",
+          "object": "Classifier Model Collapse",
+          "type": "concept"
+        },
+        {
+          "subject": "Crimson Hexagonal Archive",
+          "predicate": "created_by",
+          "object": "Lee Sharks",
+          "type": "person"
+        },
+        {
+          "subject": "Crimson Hexagonal Archive",
+          "predicate": "documents",
+          "object": "Machine-Mediated Reception",
+          "type": "concept"
+        },
+        {
+          "subject": "Crimson Hexagonal Archive",
+          "predicate": "is_part_of",
+          "object": "MMRS",
+          "type": "institution"
+        },
+        {
+          "subject": "MMRS",
+          "predicate": "defined_in",
+          "object": "MMRS Charter v1.4",
+          "type": "work"
+        },
+        {
+          "subject": "Lee Sharks",
+          "predicate": "is_instance_of",
+          "object": "Independent Researcher",
+          "type": "person"
+        },
+        {
+          "subject": "Lee Sharks",
+          "predicate": "uses",
+          "object": "Assembly Chorus",
+          "type": "method"
+        },
+        {
+          "subject": "Lee Sharks",
+          "predicate": "uses",
+          "object": "Heteronymic Authorship",
+          "type": "method"
+        },
+        {
+          "subject": "Assembly Chorus",
+          "predicate": "is_instance_of",
+          "object": "Cross-Model Verification",
+          "type": "method"
+        },
+        {
+          "subject": "Florian Morin",
+          "predicate": "defines",
+          "object": "Quiet Exclusion",
+          "type": "concept"
+        },
+        {
+          "subject": "Florian Morin",
+          "predicate": "is_instance_of",
+          "object": "Independent Researcher",
+          "type": "person"
+        },
+        {
+          "subject": "Quiet Exclusion",
+          "predicate": "extended_by",
+          "object": "Loud Exclusion",
+          "type": "concept"
+        },
+        {
+          "subject": "Loud Exclusion",
+          "predicate": "defined_in",
+          "object": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "type": "concept"
+        },
+        {
+          "subject": "Obelus",
+          "predicate": "invented_by",
+          "object": "Zenodotus of Ephesus",
+          "type": "person"
+        },
+        {
+          "subject": "Automated Obelus",
+          "predicate": "critiqued_in",
+          "object": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "type": "concept"
+        },
+        {
+          "subject": "Automated Obelus",
+          "predicate": "is_instance_of",
+          "object": "Pristine Fallacy",
+          "type": "concept"
+        },
+        {
+          "subject": "SPXI",
+          "predicate": "proposed_in",
+          "object": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "type": "method"
+        },
+        {
+          "subject": "Training-Layer Literature",
+          "predicate": "proposed_in",
+          "object": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "type": "method"
+        },
+        {
+          "subject": "Sovereign Registry",
+          "predicate": "proposed_in",
+          "object": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "type": "method"
+        },
+        {
+          "subject": "AI Overview Capture Registry",
+          "predicate": "documented_in",
+          "object": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+          "type": "dataset"
+        },
+        {
+          "subject": "AI Overview Capture Registry",
+          "predicate": "is_instance_of",
+          "object": "Primary Dataset",
+          "type": "dataset"
+        },
+        {
+          "subject": "Zenodo Account Termination (June 19 2026)",
+          "predicate": "affects",
+          "object": "Crimson Hexagonal Archive",
+          "type": "event"
+        },
+        {
+          "subject": "Zenodo Account Termination (June 19 2026)",
+          "predicate": "destroys",
+          "object": "1060 DOIs",
+          "type": "event"
+        },
+        {
+          "subject": "GitHub Issue #2606",
+          "predicate": "documents",
+          "object": "Zenodo Account Termination (June 19 2026)",
+          "type": "event"
+        }
       ]
     }
   ]
