@@ -109,14 +109,14 @@ fetch('/data/registry.json').then(r=>r.json()).then(reg=>{
   el.innerHTML=recent.map(d=>{
     const reading=(d.clusters||[]).map(c=>W[c]||c).join(' \u2192 ');
     const clusterLine=(d.clusters||[]).join(' \u00b7 ');
-    return `<div style="background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;margin-bottom:12px">
+    return `<a href="/records/?axn=${encodeURIComponent(d.axn)}" style="display:block;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;margin-bottom:12px;text-decoration:none;color:inherit;transition:border-color 0.2s;cursor:pointer" onmouseover="this.style.borderColor='#0a7c6a'" onmouseout="this.style.borderColor='#e0e0e0'">
       <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px">
         <div style="font-family:var(--mono);font-size:0.88em;color:var(--teal);font-weight:500">${d.axn}</div>
         <div style="font-size:0.72em;color:var(--dim)">${d.date}</div>
       </div>
       <div style="font-size:0.72em;color:var(--dim);margin:2px 0">${clusterLine}</div>
       <div style="font-size:0.78em;color:#888;font-style:italic;margin-bottom:6px">${reading}</div>
-      <div style="font-weight:500;font-size:0.95em;margin-bottom:4px"><a href="/records/?axn=${encodeURIComponent(d.axn)}" style="color:var(--fg);text-decoration:none">${d.title}</a></div>
+      <div style="font-weight:500;font-size:0.95em;margin-bottom:4px">${d.title}</div>
       <div style="font-size:0.82em;color:var(--dim)">${d.creator} \u00b7 ${d.content_type} \u00b7 ${d.substrate}</div>
       <div style="font-size:0.82em;color:#999;margin-top:6px;line-height:1.5">${(d.description||'').substring(0,250)}${(d.description||'').length>250?'...':''}</div>
       ${d.mirrors?`<div style="font-size:0.75em;margin-top:8px">${Object.entries(d.mirrors).map(([k,v])=>`<a href="${v}" style="color:var(--teal);margin-right:12px">${k} \u2192</a>`).join('')}</div>`:''}
