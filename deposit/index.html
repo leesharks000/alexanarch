@@ -4,28 +4,40 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Deposit — Alexanarch</title>
-<link rel="canonical" href="https://alexanarch.org">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
-:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--mono:'IBM Plex Mono',monospace;--sans:'IBM Plex Sans',sans-serif}
+:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:'IBM Plex Sans',sans-serif;--mono:'IBM Plex Mono',monospace}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.7;font-size:15px}
-.wrap{max-width:760px;margin:0 auto;padding:60px 24px}
-h1{font-size:2.2em;font-weight:600;color:var(--accent);letter-spacing:-0.02em;margin-bottom:4px}
+.wrap{max-width:680px;margin:0 auto;padding:60px 24px}
+h1{font-size:2.2em;font-weight:600;color:var(--accent);margin-bottom:4px}
 h2{font-size:1.1em;font-weight:500;color:var(--accent);margin-bottom:16px;margin-top:32px;padding-bottom:6px;border-bottom:2px solid var(--border)}
-a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2);text-decoration:underline}
 .tagline{font-size:1.05em;color:var(--dim);font-weight:300;margin-bottom:30px}
 .nav{display:flex;gap:20px;margin-bottom:30px;font-size:0.85em}
 .nav a{color:var(--dim);text-decoration:none;font-weight:500}.nav a:hover,.nav a.active{color:var(--accent)}
-p{margin-bottom:14px;font-size:0.92em;color:#444;line-height:1.7}
+a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}
+label{display:block;font-weight:500;font-size:0.88em;margin-bottom:4px;margin-top:16px;color:var(--accent)}
+label .req{color:var(--accent2);font-size:0.8em}
+input,textarea,select{width:100%;padding:10px 14px;border:1px solid var(--border);border-radius:4px;font-family:var(--sans);font-size:0.9em;background:var(--surface);color:var(--fg)}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--teal)}
+textarea{min-height:100px;resize:vertical}
+select{appearance:auto}
+.hint{font-size:0.78em;color:var(--dim);margin-top:2px}
+.submit-btn{display:inline-block;background:var(--accent);color:#fff;padding:14px 32px;border:none;border-radius:4px;font-family:var(--sans);font-size:0.95em;font-weight:500;cursor:pointer;margin-top:24px}
+.submit-btn:hover{background:var(--accent2)}
+.preview{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;margin-top:24px;display:none}
+.preview-axn{font-family:var(--mono);font-size:1.1em;color:var(--accent);margin:8px 0}
 .footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--border);font-size:0.78em;color:var(--dim)}
 .glyph{margin-top:8px;color:var(--accent)}
+.note{background:#f0f7f0;border:1px solid #c0d8c0;border-radius:6px;padding:14px 18px;margin-bottom:20px;font-size:0.85em;line-height:1.6}
 </style>
 </head>
 <body>
 <div class="wrap">
+
 <h1>Alexanarch</h1>
-<div class="tagline">The self-governing library.</div>
+<div class="tagline">Deposit a work.</div>
+
 <nav class="nav">
   <a href="/">Home</a>
   <a href="/deposit/" class="active">Deposit</a>
@@ -35,20 +47,142 @@ p{margin-bottom:14px;font-size:0.92em;color:#444;line-height:1.7}
   <a href="/manifest/">Manifest</a>
 </nav>
 
-<h2>Deposit a Work</h2>
-<p>Deposits are submitted through GitHub Issues. Fill in the metadata form, attach your file(s), and an AXN identifier will be computed and minted automatically.</p>
-<p>The review process is public. The Obelus Principle governs: content is evaluated by what it contains, not by the tools used to produce it.</p>
-<p style="margin:24px 0"><a href="https://github.com/leesharks000/alexanarch/issues/new?template=deposit.yml" style="display:inline-block;background:var(--accent);color:#fff;padding:12px 28px;border-radius:4px;font-weight:500;text-decoration:none">Open Deposit Form →</a></p>
-<h2>Required Metadata</h2>
-<p><strong>Title, Creator, Date, Description, Content Type, License, Substrate Disclosure</strong> — all required. Optional: ORCID, keywords, related identifiers, version, methodology, falsification conditions, SPXI provenance block.</p>
-<p>Substrate disclosure is a required field with five levels: human-only, AI-assisted (tool), AI-assisted (substrate), AI-generated (research object), or mixed. Disclosure is provenance, not suspicion.</p>
-<h2>What Happens After Deposit</h2>
-<p>A GitHub Action computes the SHA-256 of your content, maps it through the 256-glyph table, assigns a semantic family, and mints your AXN identifier. The action comments on your issue with the full identifier, adds the record to the registry, and labels your deposit. The entire process is automated, auditable, and public.</p>
+<div class="note">
+Fill in the metadata below. When you click <strong>Submit Deposit</strong>, the form will open on GitHub with everything pre-filled. Attach your file(s) there and submit. An AXN identifier will be computed and minted automatically.
+</div>
+
+<div id="form-container">
+<label>Title <span class="req">required</span></label>
+<input id="f-title" placeholder="Title of the work">
+
+<label>Creator <span class="req">required</span></label>
+<input id="f-creator" placeholder="Author name(s). Heteronyms accepted with disclosure.">
+
+<label>ORCID</label>
+<input id="f-orcid" placeholder="e.g., 0009-0000-1599-0703">
+
+<label>Date <span class="req">required</span></label>
+<input id="f-date" type="date">
+
+<label>Description <span class="req">required</span></label>
+<textarea id="f-desc" placeholder="Abstract or description of the work"></textarea>
+
+<label>Content Type <span class="req">required</span></label>
+<select id="f-type">
+  <option value="">Select...</option>
+  <option>Dataset</option>
+  <option>Critical edition</option>
+  <option>Theoretical paper</option>
+  <option>Monograph</option>
+  <option>Methodological specification</option>
+  <option>Creative work (connected to research)</option>
+  <option>Mixed</option>
+  <option>Other</option>
+</select>
+
+<label>License <span class="req">required</span></label>
+<select id="f-license">
+  <option value="">Select...</option>
+  <option>CC-BY-4.0</option>
+  <option>CC-BY-SA-4.0</option>
+  <option>CC0</option>
+  <option>Other (specify in description)</option>
+</select>
+
+<label>Substrate Disclosure <span class="req">required</span></label>
+<select id="f-substrate">
+  <option value="">Select...</option>
+  <option>Human-only (no AI assistance)</option>
+  <option>AI-assisted (tool) — editing, formatting, code generation</option>
+  <option>AI-assisted (substrate) — drafting under human editorial governance</option>
+  <option>AI-generated (research object) — AI output is the object of study</option>
+  <option>Mixed (specify in description)</option>
+</select>
+<div class="hint">Disclosure is provenance, not suspicion.</div>
+
+<label>Keywords</label>
+<input id="f-keywords" placeholder="Comma-separated keywords">
+
+<label>Related Identifiers</label>
+<input id="f-related" placeholder="DOIs, AXNs, URLs">
+
+<label>Version</label>
+<input id="f-version" placeholder="e.g., v1.0">
+
+<label>Methodology</label>
+<textarea id="f-method" placeholder="Research methodology description" style="min-height:60px"></textarea>
+
+<label>Falsification Conditions</label>
+<textarea id="f-falsify" placeholder="Under what conditions would the claims be weakened?" style="min-height:60px"></textarea>
+
+<div id="preview" class="preview">
+  <div style="font-size:0.8em;color:var(--teal);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px">Preview: AXN Identifier</div>
+  <div class="preview-axn" id="preview-axn"></div>
+  <div id="preview-clusters" style="font-size:0.72em;color:var(--dim)"></div>
+  <div id="preview-reading" style="font-size:0.82em;color:#555;margin-top:6px;font-style:italic"></div>
+</div>
+
+<button class="submit-btn" onclick="submitDeposit()">Submit Deposit →</button>
+</div>
 
 <div class="footer">
-  <div><strong>Alexanarch</strong> · Founded June 2026 · Lee Sharks · <a href="https://orcid.org/0009-0000-1599-0703">ORCID 0009-0000-1599-0703</a></div>
+  <div><strong>Alexanarch</strong> · <a href="https://orcid.org/0009-0000-1599-0703">ORCID 0009-0000-1599-0703</a></div>
   <div class="glyph">∮ = 1</div>
 </div>
+
 </div>
+
+<script>
+const G=['🌑','🌒','🌓','🌔','🌕','🌖','🌗','🌘','⭐','🌟','💫','☀️','🌙','🪐','🌍','🌊','🔥','💧','🌪️','⚡','❄️','🌋','🏔️','🌿','🍃','🌱','🌾','🪨','💎','🧊','🌈','☁️','🏛️','🏗️','🧱','🪜','🚪','🪟','🏠','🏰','⛩️','🕌','🗼','🌉','⚓','🛡️','🔔','🏺','🔧','🔩','⚙️','🔗','🪝','🧲','⚖️','🔬','🔭','🧪','🧫','🧬','💡','🔮','🪄','🗝️','📜','📖','📝','✏️','🖊️','📋','📌','📎','🔖','📚','🗂️','📦','🏷️','🪧','📐','📏','🧭','🗺️','🏴','🚩','⛳','🎯','🔍','👁️','🔎','🪞','🗡️','🛤️','⛵','🚀','🛸','🌀','⏳','⏰','🕐','🕑','🕒','🕓','🕔','🕕','🕖','🕗','🕘','🕙','🕚','🕛','⌛','🔄','🌸','🌺','🌻','🌹','🍀','🌲','🌳','🍁','🍂','🍄','🐚','🪸','🦋','🐝','🕊️','🦅','♠️','♥️','♦️','♣️','🎭','🎪','🎨','🎵','🎶','🎹','🎻','🎺','🥁','🎲','🃏','🀄','➕','➖','✖️','➗','♾️','∮','⊕','⊗','△','▽','◇','○','●','□','■','▲','🜁','🝊','☿','♃','♄','♅','♆','☉','☽','♈','♉','♊','♋','♌','♍','♎','👁️‍🗨️','🤲','👐','🙏','✊','🤝','👆','👇','👈','👉','🫵','🖐️','✋','🫶','🤙','👋','🚨','🔴','🟠','🟡','🟢','🔵','🟣','⚪','⚫','🟤','💜','💙','💚','💛','🧡','❤️','🔺','🔻','◀️','▶️','🔼','🔽','⏩','⏪','⏫','⏬','↗️','↘️','↙️','↖️','🔃','🔀','🌅','🌄','🌃','🌆','🌇','🏙️','🌌','🎆','🎇','✨','🌠','💥','🔆','🔅','⭕','❌','🏁','🎬','🔚','🔙','🔛','🔝','🔜','⏹️','⏏️','🔒','🔓','🔐','🗿','🪦','♻️','∞'];
+const C=['Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Organic','Organic','Organic','Organic','Organic','Organic','Organic','Organic','Organic','Organic','Organic','Organic','Organic','Organic','Organic','Organic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Signal','Signal','Signal','Signal','Signal','Signal','Signal','Signal','Signal','Signal','Signal','Signal','Signal','Signal','Signal','Signal','Structural','Structural','Structural','Structural','Structural','Structural','Structural','Structural','Structural','Structural','Structural','Structural','Structural','Structural','Structural','Structural','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal'];
+const W={Celestial:'Origin',Elemental:'Force',Architectural:'Foundation',Instrumental:'Method',Scriptural:'Text',Navigational:'Search',Temporal:'Duration',Organic:'Growth',Symbolic:'Play',Mathematical:'Proof',Alchemical:'Transmutation',Gestural:'Touch',Signal:'Alarm',Structural:'Direction',Liminal:'Threshold',Terminal:'Closure'};
+
+async function computePreview(){
+  const title=document.getElementById('f-title').value;
+  const creator=document.getElementById('f-creator').value;
+  const desc=document.getElementById('f-desc').value;
+  if(!title||!desc) { document.getElementById('preview').style.display='none'; return; }
+  const content=title+'
+'+creator+'
+'+desc;
+  const enc=new TextEncoder();
+  const hash=new Uint8Array(await crypto.subtle.digest('SHA-256',enc.encode(content)));
+  const emoji=[G[hash[0]],G[hash[1]],G[hash[2]],G[hash[3]]].join('');
+  const clusters=[C[hash[0]],C[hash[1]],C[hash[2]],C[hash[3]]];
+  const reading=clusters.map(c=>W[c]).join(' → ');
+  document.getElementById('preview-axn').textContent='AXN:01.DRAFT.'+emoji;
+  document.getElementById('preview-clusters').textContent=clusters.join(' · ');
+  document.getElementById('preview-reading').textContent=reading;
+  document.getElementById('preview').style.display='block';
+}
+['f-title','f-creator','f-desc'].forEach(id=>
+  document.getElementById(id).addEventListener('input',computePreview));
+
+function submitDeposit(){
+  const fields={
+    title:document.getElementById('f-title').value,
+    creator:document.getElementById('f-creator').value,
+    orcid:document.getElementById('f-orcid').value,
+    date:document.getElementById('f-date').value,
+    desc:document.getElementById('f-desc').value,
+    type:document.getElementById('f-type').value,
+    license:document.getElementById('f-license').value,
+    substrate:document.getElementById('f-substrate').value,
+    keywords:document.getElementById('f-keywords').value,
+    related:document.getElementById('f-related').value,
+    version:document.getElementById('f-version').value,
+    method:document.getElementById('f-method').value,
+    falsify:document.getElementById('f-falsify').value,
+  };
+  if(!fields.title||!fields.creator||!fields.desc||!fields.type||!fields.license||!fields.substrate){
+    alert('Please fill in all required fields.');return;
+  }
+  const body=`### Title\n\n${fields.title}\n\n### Creator\n\n${fields.creator}\n\n### ORCID\n\n${fields.orcid||'_No response_'}\n\n### Date\n\n${fields.date||new Date().toISOString().split('T')[0]}\n\n### Description\n\n${fields.desc}\n\n### Content Type\n\n${fields.type}\n\n### License\n\n${fields.license}\n\n### Substrate Disclosure\n\n${fields.substrate}\n\n### Keywords\n\n${fields.keywords||'_No response_'}\n\n### Related Identifiers\n\n${fields.related||'_No response_'}\n\n### Version\n\n${fields.version||'_No response_'}\n\n### Methodology\n\n${fields.method||'_No response_'}\n\n### Falsification Conditions\n\n${fields.falsify||'_No response_'}\n\n### Files\n\n_Attach files below_\n\n### Terms\n\n- [x] I confirm this work is deposited under the stated license\n- [x] I confirm the substrate disclosure is accurate\n- [x] I understand that deposited content will NOT be used to train enforcement classifiers`;
+  const title=encodeURIComponent('[DEPOSIT] '+fields.title);
+  const bodyEnc=encodeURIComponent(body);
+  const labels=encodeURIComponent('deposit,pending-review');
+  window.open(`https://github.com/leesharks000/alexanarch/issues/new?title=${title}&body=${bodyEnc}&labels=${labels}`,'_blank');
+}
+</script>
 </body>
 </html>
