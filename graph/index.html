@@ -97,16 +97,20 @@ fetch('/data/registry.json').then(function(r){return r.json()}).then(function(re
   // Type filters
   var typeKeys=Object.keys(types).sort();
   var activeType='all';
-  document.getElementById('filters').innerHTML=
-    '<div class="fbtn active" onclick="filterType('all')">All</div>'+
-    typeKeys.map(function(t){return '<div class="fbtn" onclick="filterType(''+t+'')">'+t+' ('+types[t]+')</div>'}).join('');
+  var filterHtml='<div class="fbtn active" data-type="all">All</div>';
+  for(var i=0;i<typeKeys.length;i++){
+    filterHtml+='<div class="fbtn" data-type="'+typeKeys[i]+'">'+typeKeys[i]+' ('+types[typeKeys[i]]+')</div>';
+  }
+  document.getElementById('filters').innerHTML=filterHtml;
   
-  window.filterType=function(t){
-    activeType=t;
+  document.getElementById('filters').addEventListener('click',function(ev){
+    var btn=ev.target;
+    if(!btn.dataset.type) return;
+    activeType=btn.dataset.type;
     document.querySelectorAll('.fbtn').forEach(function(b){b.classList.remove('active')});
-    event.target.classList.add('active');
+    btn.classList.add('active');
     render();
-  };
+  });
   
   function render(){
     var q=document.getElementById('search').value.toLowerCase();
