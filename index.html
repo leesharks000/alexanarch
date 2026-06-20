@@ -88,6 +88,45 @@ a:hover{color:var(--accent2);text-decoration:underline}
 Alexanarch was founded in response to the account-level removal of 870 scholarly works and 1,060+ DOIs from Zenodo on June 19, 2026. The incident is documented in <a href="https://machinemediation.org/data/EA-MMRS-LOUD-EXCLUSION-03.md"><em>Zenodotus' Book-Burning</em></a> and <a href="https://github.com/zenodo/zenodo/issues/2606">GitHub Issue #2606</a>.
 </div>
 
+<!-- RECENT DEPOSITS -->
+<h2>Recent Deposits</h2>
+
+<div id="recent-deposits" style="margin-bottom:30px">
+  <div style="color:var(--dim);font-size:0.88em">Loading registry...</div>
+</div>
+
+<script>
+fetch('/data/registry.json').then(r=>r.json()).then(reg=>{
+  const deps=reg.deposits||[];
+  const el=document.getElementById('recent-deposits');
+  if(!deps.length){
+    el.innerHTML='<div style="background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:24px;text-align:center"><div style="font-size:0.88em;color:var(--dim)">No deposits yet.</div><div style="margin-top:8px"><a href="/deposit/" style="color:var(--teal);font-weight:500">Be the first →</a></div></div>';
+    return;
+  }
+  const G=['\u{1F311}','\u{1F312}','\u{1F313}','\u{1F314}','\u{1F315}','\u{1F316}','\u{1F317}','\u{1F318}','\u2B50','\u{1F31F}','\u{1F4AB}','\u2600\uFE0F','\u{1F319}','\u{1FA90}','\u{1F30D}','\u{1F30A}','\u{1F525}','\u{1F4A7}','\u{1F32A}\uFE0F','\u26A1','\u2744\uFE0F','\u{1F30B}','\u{1F3D4}\uFE0F','\u{1F33F}','\u{1F343}','\u{1F331}','\u{1F33E}','\u{1FAA8}','\u{1F48E}','\u{1F9CA}','\u{1F308}','\u2601\uFE0F'];
+  const W={Celestial:'Origin',Elemental:'Force',Architectural:'Foundation',Instrumental:'Method',Scriptural:'Text',Navigational:'Search',Temporal:'Duration',Organic:'Growth',Symbolic:'Play',Mathematical:'Proof',Alchemical:'Transmutation',Gestural:'Touch',Signal:'Alarm',Structural:'Direction',Liminal:'Threshold',Terminal:'Closure'};
+  const recent=deps.slice(-5).reverse();
+  el.innerHTML=recent.map(d=>{
+    const reading=(d.clusters||[]).map(c=>W[c]||c).join(' \u2192 ');
+    const clusterLine=(d.clusters||[]).join(' \u00b7 ');
+    return `<div style="background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;margin-bottom:12px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px">
+        <div style="font-family:var(--mono);font-size:0.88em;color:var(--teal);font-weight:500">${d.axn}</div>
+        <div style="font-size:0.72em;color:var(--dim)">${d.date}</div>
+      </div>
+      <div style="font-size:0.72em;color:var(--dim);margin:2px 0">${clusterLine}</div>
+      <div style="font-size:0.78em;color:#888;font-style:italic;margin-bottom:6px">${reading}</div>
+      <div style="font-weight:500;font-size:0.95em;margin-bottom:4px"><a href="${d.issue_url||'#'}" style="color:var(--fg);text-decoration:none">${d.title}</a></div>
+      <div style="font-size:0.82em;color:var(--dim)">${d.creator} \u00b7 ${d.content_type} \u00b7 ${d.substrate}</div>
+      <div style="font-size:0.82em;color:#999;margin-top:6px;line-height:1.5">${(d.description||'').substring(0,250)}${(d.description||'').length>250?'...':''}</div>
+      ${d.mirrors?`<div style="font-size:0.75em;margin-top:8px">${Object.entries(d.mirrors).map(([k,v])=>`<a href="${v}" style="color:var(--teal);margin-right:12px">${k} \u2192</a>`).join('')}</div>`:''}
+    </div>`;
+  }).join('')+'<div style="text-align:center;margin-top:12px"><a href="/browse/" style="color:var(--teal);font-size:0.88em;font-weight:500">Browse all deposits \u2192</a></div>';
+}).catch(e=>{
+  document.getElementById('recent-deposits').innerHTML='<div style="color:var(--dim);font-size:0.85em">Registry loading...</div>';
+});
+</script>
+
 <!-- PRINCIPLES -->
 <h2>Founding Principles</h2>
 
@@ -229,45 +268,6 @@ Alexanarch was founded in response to the account-level removal of 870 scholarly
 <div style="font-size:0.88em;color:#555;margin:12px 0;line-height:1.8">
 AI-assisted scholarship with documented methodology. Training-layer literature. Machine-mediated reception studies. Critical editions produced with AI tools. Empirical datasets documenting AI behavior. Methodological protocols for human-AI collaboration. Creative works connected to research programs. Heteronymic and experimental authorship. Multi-model verification studies. Capture registries. Provenance documentation. Platform governance research — including research about repositories.
 </div>
-
-<!-- RECENT DEPOSITS -->
-<h2>Recent Deposits</h2>
-
-<div id="recent-deposits" style="margin-bottom:30px">
-  <div style="color:var(--dim);font-size:0.88em">Loading registry...</div>
-</div>
-
-<script>
-fetch('/data/registry.json').then(r=>r.json()).then(reg=>{
-  const deps=reg.deposits||[];
-  const el=document.getElementById('recent-deposits');
-  if(!deps.length){
-    el.innerHTML='<div style="background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:24px;text-align:center"><div style="font-size:0.88em;color:var(--dim)">No deposits yet.</div><div style="margin-top:8px"><a href="/deposit/" style="color:var(--teal);font-weight:500">Be the first →</a></div></div>';
-    return;
-  }
-  const G=['\u{1F311}','\u{1F312}','\u{1F313}','\u{1F314}','\u{1F315}','\u{1F316}','\u{1F317}','\u{1F318}','\u2B50','\u{1F31F}','\u{1F4AB}','\u2600\uFE0F','\u{1F319}','\u{1FA90}','\u{1F30D}','\u{1F30A}','\u{1F525}','\u{1F4A7}','\u{1F32A}\uFE0F','\u26A1','\u2744\uFE0F','\u{1F30B}','\u{1F3D4}\uFE0F','\u{1F33F}','\u{1F343}','\u{1F331}','\u{1F33E}','\u{1FAA8}','\u{1F48E}','\u{1F9CA}','\u{1F308}','\u2601\uFE0F'];
-  const W={Celestial:'Origin',Elemental:'Force',Architectural:'Foundation',Instrumental:'Method',Scriptural:'Text',Navigational:'Search',Temporal:'Duration',Organic:'Growth',Symbolic:'Play',Mathematical:'Proof',Alchemical:'Transmutation',Gestural:'Touch',Signal:'Alarm',Structural:'Direction',Liminal:'Threshold',Terminal:'Closure'};
-  const recent=deps.slice(-5).reverse();
-  el.innerHTML=recent.map(d=>{
-    const reading=(d.clusters||[]).map(c=>W[c]||c).join(' \u2192 ');
-    const clusterLine=(d.clusters||[]).join(' \u00b7 ');
-    return `<div style="background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;margin-bottom:12px">
-      <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px">
-        <div style="font-family:var(--mono);font-size:0.88em;color:var(--teal);font-weight:500">${d.axn}</div>
-        <div style="font-size:0.72em;color:var(--dim)">${d.date}</div>
-      </div>
-      <div style="font-size:0.72em;color:var(--dim);margin:2px 0">${clusterLine}</div>
-      <div style="font-size:0.78em;color:#888;font-style:italic;margin-bottom:6px">${reading}</div>
-      <div style="font-weight:500;font-size:0.95em;margin-bottom:4px"><a href="${d.issue_url||'#'}" style="color:var(--fg);text-decoration:none">${d.title}</a></div>
-      <div style="font-size:0.82em;color:var(--dim)">${d.creator} \u00b7 ${d.content_type} \u00b7 ${d.substrate}</div>
-      <div style="font-size:0.82em;color:#999;margin-top:6px;line-height:1.5">${(d.description||'').substring(0,250)}${(d.description||'').length>250?'...':''}</div>
-      ${d.mirrors?`<div style="font-size:0.75em;margin-top:8px">${Object.entries(d.mirrors).map(([k,v])=>`<a href="${v}" style="color:var(--teal);margin-right:12px">${k} \u2192</a>`).join('')}</div>`:''}
-    </div>`;
-  }).join('')+'<div style="text-align:center;margin-top:12px"><a href="/browse/" style="color:var(--teal);font-size:0.88em;font-weight:500">Browse all deposits \u2192</a></div>';
-}).catch(e=>{
-  document.getElementById('recent-deposits').innerHTML='<div style="color:var(--dim);font-size:0.85em">Registry loading...</div>';
-});
-</script>
 
 <div class="footer">
   <div><strong>Alexanarch</strong> · Founded June 2026 · Lee Sharks · <a href="https://orcid.org/0009-0000-1599-0703">ORCID 0009-0000-1599-0703</a></div>
