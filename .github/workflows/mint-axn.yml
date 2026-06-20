@@ -2,11 +2,14 @@ name: Mint AXN Identifier
 
 on:
   issues:
-    types: [labeled]
+    types: [opened]
 
 jobs:
   mint:
-    if: contains(github.event.issue.labels.*.name, 'deposit')
+    if: startsWith(github.event.issue.title, '[DEPOSIT]')
+    concurrency:
+      group: mint-axn
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     permissions:
       issues: write
@@ -136,7 +139,7 @@ jobs:
               issue_number: issue.number,
               issue_url: issue.html_url,
               minted_at: new Date().toISOString(),
-              status: 'ACTIVE',
+              status: 'MINTED_UNREVIEWED',
               clusters, reading,
               axn_canonical: hexHash,
               axn_display: emoji,
@@ -275,5 +278,5 @@ jobs:
             echo "Registry already up to date"
           else
             git commit -m "Mint AXN - deposit #$(cat data/registry.json | python3 -c 'import sys,json; print(json.load(sys.stdin)["total_deposits"])')"
-            git push || echo "Push failed"
+            git push
           fi
