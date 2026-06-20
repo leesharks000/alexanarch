@@ -115,7 +115,7 @@ fetch('/data/registry.json').then(r=>r.json()).then(reg=>{
     var card='<a href="/records/?id='+(d.issue_number||d.hex)+'" style="display:block;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;margin-bottom:12px;text-decoration:none;color:inherit;cursor:pointer">';
     card+='<div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px">';
     card+='<div style="font-family:var(--mono);font-size:0.88em;color:var(--teal);font-weight:500">'+d.axn+'</div>';
-    card+='<div style="font-size:0.72em;color:var(--dim)">'+d.date+'</div>';
+    card+='<div style="font-size:0.72em;color:var(--dim)">'+d.date+' \u00b7 <span style="color:var(--teal)">0 views</span></div>';
     card+='</div>';
     card+='<div style="font-size:0.72em;color:var(--dim);margin:2px 0">'+clusterLine+'</div>';
     card+='<div style="font-size:0.78em;color:#888;font-style:italic;margin-bottom:6px">'+reading+'</div>';
@@ -282,26 +282,7 @@ AI-assisted scholarship with documented methodology. Training-layer literature. 
 </div>
 
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-<script>
-function fetchCounters(){
-  document.querySelectorAll('.gc-count').forEach(function(el){
-    var path=el.getAttribute('data-path');
-    try{
-      var r=new XMLHttpRequest();
-      r.addEventListener('load',function(){
-        try{
-          var d=JSON.parse(this.responseText);
-          el.textContent=(d.count||'0')+' views';
-        }catch(e){el.textContent='0 views';}
-      });
-      r.addEventListener('error',function(){el.textContent='0 views';});
-      r.open('GET','https://alexanarch.goatcounter.com/counter/'+encodeURIComponent(path)+'.json');
-      r.send();
-    }catch(e){el.textContent='0 views';}
-  });
-}
-setTimeout(fetchCounters,1000);
-</script>
+
 
 </body>
 </html>
