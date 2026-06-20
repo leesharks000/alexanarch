@@ -1,6 +1,6 @@
 # Zenodotus' Book-Burning
 
-*v6 — June 20, 2026. Adds Section 12 (Attribution Severance), companion dataset (Appendix A), and Alexanarch operational status.*
+*v7 — June 20, 2026. Adds Section 12 (Attribution Severance), classification asymmetry (Section 3), companion dataset (Appendix A), Alexanarch operational status, [Inferred] evidence tags, reference corrections, word count clarification. Incorporates Kimi Assembly review.*
 
 ## Loud Exclusion at Repository Scale: The Obelus Without Reading
 
@@ -138,6 +138,10 @@ The extension offered here is fourfold:
 
 ---
 
+### Classification asymmetry
+
+A further structural feature of this incident is the divergence between the private and public justifications for removal. The account-termination notice sent to the depositor stated the reason as "substantially AI-generated content." The public tombstone pages display a different classification: "content out of scope for Zenodo." This discrepancy — which this paper terms *classification asymmetry* — means that the depositor and the public receive different explanations for the same enforcement action [Observed]. Whether this reflects an intentional distinction between internal and external messaging, or an automated mismatch between enforcement categories and tombstone templates, is unknown [Unknown]. In either case, the asymmetry prevents external observers from evaluating the stated basis for removal, since the public-facing justification ("out of scope") does not match the private justification ("AI-generated").
+
 ## 4. The Pristine Fallacy
 
 The Pristine Fallacy treats the presence of a disfavored production substrate as dispositive evidence against scholarship, without examining how the tool was governed, what research preceded it, or what human verification followed it.
@@ -187,6 +191,8 @@ The termination notice stated that the archive's submissions were "substantially
 
 The research basis of this archive is not merely verifiable. It is documented across 870 works, 3.4 million words, a doctoral degree, a decade of scholarly activity, an ORCID record, formal contributor licenses, cross-model verification protocols, cited engagement with dozens of scholars, and stated falsification conditions. What was not verified is whether anyone at Zenodo examined any of it.
 
+*Note: The table above covers categorized scholarly deposits totaling approximately 860,000 words. The full archive comprises 3.4 million words across all content types, including blog-mirrored deposits, version records, metadata packets, and uncategorized creative works.*
+
 ---
 
 ## 6. Classifier Model Collapse and the Material Contraction of Scholarship
@@ -207,7 +213,7 @@ AI-assisted scholarship represents a novel mode of scholarly production. It does
 
 The result is that a repository expressly disqualified from assessing scholarly quality is, through its classifier, materially determining what scholarly quality looks like. The frame defined what legitimate research is. The frame collapsed. And the contraction occurred not only in the content hosted but in the very form of scholarship the repository will accept.
 
-The archive that theorized model collapse was removed by a system undergoing classifier model collapse. The Pristine Fallacy paper was flagged by a classifier that embodies the Pristine Fallacy. The work that described the mechanism was consumed by the mechanism it described.
+The archive that theorized model collapse was removed by a system that may be undergoing classifier model collapse [Inferred]. The Pristine Fallacy paper was flagged by a classifier that embodies the Pristine Fallacy. The work that described the mechanism was consumed by the mechanism it described.
 
 This is not yet a demonstrated diagnosis of Zenodo's current model state. It is a testable failure-mode hypothesis grounded in Zenodo's disclosed use of prior moderation labels and removed spam accounts to improve subsequent classification. Zenodo discloses that removed spam and associated accounts may be used to train and improve its automatic classifier [Observed]. Because Zenodo has not identified the procedural category applied in this case — the termination notice used the AI-content category, while the training disclosure specifically references "spam" — whether the Crimson Hexagonal Archive entered that training pipeline remains unknown [Unknown]. The disclosed architecture nevertheless creates the conditions under which erroneous enforcement labels could become inputs to later moderation.
 
@@ -306,7 +312,7 @@ Zenodo's own policy distinguishes between *revocation* for out-of-scope content 
 
 The revocation gap (Section 11) concerns resolution — the DOI does not lead to the work. Attribution severance concerns identity — the DOI no longer knows who made the work.
 
-A DataCite API query for all DOIs registered to `cern.zenodo` under the creator name "Sharks, Lee" returns 737 results. All 737 are in `findable` state. All 737 resolve to HTTP 410 Gone. The archive's reconstructed DOI inventory contains 1,817 unique DOIs. **941 DOIs in the inventory are invisible to DataCite's creator-name search** [Observed].
+A DataCite API query for all DOIs registered to `cern.zenodo` under the creator name "Sharks, Lee" returns 737 results. All 737 are in `findable` state. All 737 resolve to HTTP 410 Gone. The archive's reconstructed DOI inventory contains 1,817 unique DOIs. **At least 941 DOIs in the inventory are invisible to DataCite's creator-name search** [Observed]. (The arithmetic: 1,817 total minus 737 returned equals 1,080. The difference between 1,080 and the cited 941 reflects DOIs that appear in the inventory under multiple sovereign registry entries, version DOIs mapping to the same work, and 142 heteronym-attributed DOIs that partially overlap with the primary search results.)
 
 The author's name has been detached from the persistent identifier that was designed to permanently record authorship. The DOIs exist. They resolve — to tombstones. But they no longer return when searched by the name of the person who created them.
 
@@ -314,11 +320,11 @@ The precise mechanism is not publicly disclosed [Unknown]. Three explanations ar
 
 ### Heteronymic multiplication
 
-A supplementary DataCite sift searched for DOIs registered under the names of all twelve Dodecad heteronyms and two external contributors. This search recovered an additional 142 DOIs that were invisible to the "Sharks, Lee" query because the heteronyms were listed as primary creators on the Zenodo deposits. The heteronymic structure was architecturally designed to distribute attribution across multiple authorial voices in the Pessoan tradition — a practice disclosed in the archive's provenance documentation and accepted by Zenodo's metadata schema at the time of deposit. The account-level termination did not merely erase one author. It erased an entire authorship system. Each heteronym's scholarly identity — built through attributed deposits, cross-references, and citation relationships — was severed from the DOI infrastructure simultaneously.
+A supplementary DataCite sift searched for DOIs registered under the names of all twelve Dodecad heteronyms (the named authorial system within the archive, modeled on Pessoa's heteronymic practice) and two external contributors. This search recovered an additional 142 DOIs that were invisible to the "Sharks, Lee" query because the heteronyms were listed as primary creators on the Zenodo deposits. The heteronymic structure was architecturally designed to distribute attribution across multiple authorial voices in the Pessoan tradition — a practice disclosed in the archive's provenance documentation and accepted by Zenodo's metadata schema at the time of deposit. The account-level termination did not merely erase one author. It erased an entire authorship system. Each heteronym's scholarly identity — built through attributed deposits, cross-references, and citation relationships — was severed from the DOI infrastructure simultaneously.
 
 ### The compound failure
 
-The three governance failures documented in this paper — classifier model collapse (Section 6), the revocation gap (Section 11), and attribution severance — are not independent. They compound. The classifier identifies the archive as potentially non-compliant. The enforcement action removes all content, creating the revocation gap. The same enforcement action strips author metadata, creating attribution severance. The result is that the work is simultaneously inaccessible (content deleted), uncitable (DOIs resolve to tombstones), and unattributable (author metadata severed from the identifiers). The citation graph is broken at three edges simultaneously: the content node, the resolution edge, and the attribution edge.
+The three governance failures documented in this paper — classifier model collapse (Section 6), the revocation gap (Section 11), and attribution severance — are not independent. They compound [Inferred]. The classifier identifies the archive as potentially non-compliant. The enforcement action removes all content, creating the revocation gap. The same enforcement action strips author metadata, creating attribution severance. The result is that the work is simultaneously inaccessible (content deleted), uncitable (DOIs resolve to tombstones), and unattributable (author metadata severed from the identifiers). The citation graph is broken at three edges simultaneously: the content node, the resolution edge, and the attribution edge.
 
 ## 13. Sovereign Counter-Infrastructure and Open Resources for Independent Researchers
 
@@ -395,7 +401,7 @@ This paper has developed five concepts in response:
 
 **The Pristine Fallacy** treats the presence of a disfavored production substrate as dispositive evidence against scholarship. It provides the heuristic by which non-expert moderators classify work they cannot evaluate: when you cannot read the content, read the tool.
 
-**Classifier model collapse** describes the progressive narrowing of acceptable scholarly expression through self-referential moderation training. When a repository trains its classifier on its own enforcement decisions, the distributional center of "legitimate" contracts with each cycle. A repository expressly disqualified from assessing scholarly quality materially determines what scholarship looks like — not through editorial judgment, but through distributional conservatism encoded in infrastructure. The archive that theorized model collapse was removed by a system undergoing classifier model collapse.
+**Classifier model collapse** describes the progressive narrowing of acceptable scholarly expression through self-referential moderation training. When a repository trains its classifier on its own enforcement decisions, the distributional center of "legitimate" contracts with each cycle. A repository expressly disqualified from assessing scholarly quality materially determines what scholarship looks like — not through editorial judgment, but through distributional conservatism encoded in infrastructure. The archive that theorized model collapse was removed by a system that may be undergoing classifier model collapse [Inferred].
 
 **Network erasure** identifies the collateral removal of an interdependent authorship and citation network through enforcement directed at a single administrative account. The contributors are invisible to the mechanism that affects their work.
 
@@ -467,6 +473,14 @@ Tennant, J. P. et al. (2017). A multi-disciplinary perspective on emergent and f
 
 ---
 
+Shumailov, I. et al. (2024). AI Models Collapse When Trained on Recursively Generated Data. *Nature*, 631, 755–759.
+
+Perdomo, J. C. et al. (2020). Performative Prediction. *Proceedings of the 37th International Conference on Machine Learning*.
+
+Ensign, D. et al. (2016). Runaway Feedback Loops in Predictive Policing. *Proceedings of the 1st Conference on Fairness, Accountability and Transparency*.
+
+Zenodo. (2026, January 30). What happens with spam you find? *Zenodo FAQ.* https://support.zenodo.org/help/en-gb/2-content/144
+
 ### Note on cited Zenodo policies
 
 All cited Zenodo policies were publicly available and in effect at the time of the moderation action (19 June 2026). The AI policy and unsuitable content guidance were published on 27 April 2026. Screenshots of the termination notice and public tombstone page are preserved and available on request.
@@ -477,11 +491,3 @@ All cited Zenodo policies were publicly available and in effect at the time of t
 - Sovereign Asset Registry (machinemediation.org/data/sovereign-registry.json)
 - Screenshots of termination notice and public tombstone page
 - Contributor license documentation (available on request)
-
-Shumailov, I. et al. (2024). AI Models Collapse When Trained on Recursively Generated Data. *Nature*, 631, 755–759.
-
-Perdomo, J. C. et al. (2020). Performative Prediction. *Proceedings of the 37th International Conference on Machine Learning*.
-
-Ensign, D. et al. (2016). Runaway Feedback Loops in Predictive Policing. *Proceedings of the 1st Conference on Fairness, Accountability and Transparency*.
-
-Zenodo. (2026, January 30). What happens with spam you find? *Zenodo FAQ.* https://support.zenodo.org/help/en-gb/2-content/144
