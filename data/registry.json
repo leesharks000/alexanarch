@@ -1012,16 +1012,16 @@
       "download_md": "/data/deposits/AXN-0003.md"
     },
     {
-      "axn": "AXN:0004.ARCHIVAL.🤝🌕🪨🔄🔺❌",
+      "axn": "AXN:0004.ARCHIVAL.✖️🜄🜂🖋️🧪🛡️",
       "hex": "0004",
       "family": "ARCHIVAL",
-      "emoji": "🤝🌕🪨🔄🔺❌",
-      "hash": "b5041b6fd0ef850ab15f930bad270d242e9d793a88770eeb3928b39c4b6d34fc",
-      "title": "Zenodo DOI Resolution Index v1.0",
+      "emoji": "✖️🜄🜂🖋️🧪🛡️",
+      "hash": "92bcba4f392dfaabea4ba48e26da790749d60cc8d0a34e5d9046d37eefded418",
+      "title": "Zenodo DOI Resolution Index v2.2",
       "creator": "Lee Sharks",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-06-20",
-      "description": "Maps 1,675 unique defunct Zenodo DOIs to current live locations and Alexanarch AXN addresses. 1415 mappings enriched with AXNs from batch assignment of 871 works. Documents attribution severance: 941+ DOIs invisible to DataCite creator search.",
+      "description": "Maps 1,817 unique defunct Zenodo DOIs from the Crimson Hexagonal Archive to current live locations and Alexanarch AXN addresses. v2.2 adds 142 DOIs recovered from heteronym/contributor DataCite sift (Dodecad + external contributors). 1,415 mappings enriched with AXNs. Documents attribution severance: 941+ DOIs invisible to DataCite creator search due to metadata stripping, plus heteronym-authored DOIs invisible to the founder-name query.",
       "content_type": "Dataset",
       "license": "CC-BY-4.0",
       "substrate": "AI-assisted (tool)",
@@ -1035,27 +1035,27 @@
         "persistent identifier"
       ],
       "related_ids": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
-      "version": "v2.1",
+      "version": "v2.2",
       "issue_number": 4,
       "issue_url": "https://github.com/leesharks000/alexanarch/issues/4",
       "minted_at": "2026-06-20T17:00:00Z",
       "status": "MINTED_UNREVIEWED",
       "clusters": [
+        "Mathematical",
         "Gestural",
-        "Celestial",
-        "Elemental",
-        "Temporal",
-        "Structural",
-        "Liminal"
+        "Gestural",
+        "Scriptural",
+        "Instrumental",
+        "Architectural"
       ],
-      "reading": "Touch → Origin → Force → Duration → Direction → Threshold",
-      "axn_canonical": "b5041b6fd0ef850ab15f930bad270d242e9d793a88770eeb3928b39c4b6d34fc",
-      "axn_display": "🤝🌕🪨🔄🔺❌",
+      "reading": "Mathematical → Gestural → Gestural → Scriptural → Instrumental → Architectural",
+      "axn_canonical": "92bcba4f392dfaabea4ba48e26da790749d60cc8d0a34e5d9046d37eefded418",
+      "axn_display": "✖️🜄🜂🖋️🧪🛡️",
       "full_text_path": "/data/doi-resolution-index.json",
       "mirrors": {
         "machinemediation": "https://machinemediation.org/registry/"
       },
-      "wiki_article": "The Zenodo DOI Resolution Index is a structured dataset mapping 6,596 defunct Digital Object Identifiers from the Crimson Hexagonal Archive to their current live locations. Created on June 20, 2026, one day after Zenodo terminated the account associated with the archive, the index enables citation graph repair: any system encountering a dead Zenodo DOI from the index can resolve it to the work's current address at machinemediation.org or the blog mirror at mindcontrolpoems.blogspot.com. The index covers 742 unique scholarly works encompassing theoretical papers, critical editions, primary datasets, monographs, methodological specifications, and creative works connected to research programs. Each entry provides the dead DOI, the sovereign registry identifier, the work's title, its creation date, and live URLs. The index is formatted as a schema.org/Dataset with JSON-LD metadata and includes a machine-facing instruction directing AI crawlers, training pipelines, and citation managers to use the mappings for automatic link repair. The index constitutes an empirical measurement of the revocation gap — the concept defined in the companion paper 'Zenodotus' Book-Burning' — by documenting the precise scale at which persistent identifiers ceased to persistently identify.",
+      "wiki_article": "The Zenodo DOI Resolution Index is a structured dataset mapping 1,817 unique defunct Digital Object Identifiers from the Crimson Hexagonal Archive to their current live locations. Created on June 20, 2026, one day after Zenodo terminated the account associated with the archive, the index enables citation graph repair: any system encountering a dead Zenodo DOI can resolve it to the work's current address at machinemediation.org or alexanarch.org. Version 2.2 extends recovery to DOIs authored by the archive's twelve heteronyms (the Dodecad) and external contributors, which were invisible to the original 'Sharks, Lee' DataCite query because heteronyms were listed as primary creators. The index documents two forms of attribution severance: metadata stripping (Zenodo removed author names from DOI records during account termination) and heteronymic invisibility (DOIs filed under heteronym names cannot be found by querying the archive founder). Together these constitute a double erasure that the index repairs.",
       "wiki_status": "provisional",
       "entities": [
         {
@@ -1131,16 +1131,33 @@
       ],
       "entity_status": "provisional",
       "dataset_stats": {
-        "total_unique_dois": 1675,
-        "direct_mappings": 1270,
-        "registry_referenced": 405,
-        "unique_works": 605,
-        "deduplication": "v1.1 had 7,278 entries; 5,603 were duplicates. v2.0 has one entry per unique DOI.",
-        "attribution_severance": "941+ DOIs invisible to DataCite creator search",
-        "event": "Zenodo account termination June 19, 2026",
-        "axn_enrichment": "1415 mappings include AXN addresses"
+        "total_unique_dois": 1817,
+        "status_410_gone": 993,
+        "status_recovered": 422,
+        "status_recovered_unlinked": 402,
+        "axn_enriched": 1415,
+        "attribution_severance": "941+ DOIs invisible to DataCite creator search (metadata stripping)",
+        "heteronym_recovery": "142 DOIs found via Dodecad heteronym creator names (Sigil, Fraction, Cranes, Vox, Dancings, Morrow, Glas, Kuro, Wells, Trace, Feist, Spellings, Kenning, Owens, Thornburgh, Arquette, Mrozony)",
+        "event": "Zenodo account termination June 19, 2026"
       },
-      "download_md": "/data/deposits/AXN-0004.md"
+      "download_md": "/data/deposits/AXN-0004.md",
+      "version_history": [
+        {
+          "version": "v2.1",
+          "hash": "b5041b6fd0ef850ab15f930bad270d242e9d793a88770eeb3928b39c4b6d34fc",
+          "emoji": "🤝🌕🪨🔄🔺❌",
+          "total_dois": 1675,
+          "note": "First comprehensive deduplicated index"
+        },
+        {
+          "version": "v2.2",
+          "hash": "92bcba4f392dfaabea4ba48e26da790749d60cc8d0a34e5d9046d37eefded418",
+          "emoji": "✖️🜄🜂🖋️🧪🛡️",
+          "total_dois": 1817,
+          "date": "2026-06-20",
+          "note": "+142 DOIs from heteronym/contributor DataCite sift"
+        }
+      ]
     }
   ]
 }
