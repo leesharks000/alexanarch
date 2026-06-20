@@ -264,7 +264,27 @@ fetch('/data/registry.json')
 });
 </script>
 
-<script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://alexanarch.goatcounter.com/count"
+  async src="//gc.zgo.at/count.js"></script>
+<script>
+// Wait for GoatCounter to load, then show visit count
+var gcCheck=setInterval(function(){
+  if(window.goatcounter&&window.goatcounter.visit_count){
+    clearInterval(gcCheck);
+    // Add a counter element if it exists
+    var el=document.getElementById('rec-views');
+    if(el){
+      window.goatcounter.visit_count({append:el,type:'text',no_branding:true,style:'',path:window.location.pathname+window.location.search});
+    }
+  }
+},200);
+// Fallback after 3 seconds
+setTimeout(function(){
+  clearInterval(gcCheck);
+  var el=document.getElementById('rec-views');
+  if(el&&!el.textContent.trim()) el.textContent='0 views';
+},3000);
+</script>
 <script>
 function gcGet(path,el,label){
   try{
