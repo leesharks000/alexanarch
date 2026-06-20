@@ -80,6 +80,23 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:8px}
 <script>
 const W={Celestial:'Origin',Elemental:'Force',Architectural:'Foundation',Instrumental:'Method',Scriptural:'Text',Navigational:'Search',Temporal:'Duration',Organic:'Growth',Symbolic:'Play',Mathematical:'Proof',Alchemical:'Transmutation',Gestural:'Touch',Signal:'Alarm',Structural:'Direction',Liminal:'Threshold',Terminal:'Closure'};
 
+function renderMd(md){
+  return md
+    .replace(/^### (.+)$/gm,'<h3>$1</h3>')
+    .replace(/^## (.+)$/gm,'<h2>$1</h2>')
+    .replace(/^# (.+)$/gm,'<h1>$1</h1>')
+    .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g,'<em>$1</em>')
+    .replace(/^> (.+)$/gm,'<blockquote>$1</blockquote>')
+    .replace(/^---$/gm,'<hr>')
+    .split('\n').map(function(line){
+      line=line.trim();
+      if(!line) return '<br>';
+      if(line.charAt(0)==='<') return line;
+      return '<p>'+line+'</p>';
+    }).join('\n');
+}
+
 const params=new URLSearchParams(window.location.search);
 const q=params.get('axn')||params.get('id')||params.get('issue')||'';
 console.log('Record query:', q);
@@ -191,8 +208,8 @@ fetch('/data/registry.json')
   
   el.innerHTML=html;
   
-  // Fetch full text
-  var mdUrl=d.mirrors&&d.mirrors.machinemediation;
+  // Fetch full text — same-origin first, then cross-origin fallback
+  var mdUrl=d.full_text_path||('/data/'+d.axn.replace(/[^a-zA-Z0-9]/g,'')+'.md');
   console.log('Fetching full text from:', mdUrl);
   
   if(mdUrl){
@@ -200,25 +217,20 @@ fetch('/data/registry.json')
     .then(function(r){return r.text()})
     .then(function(md){
       console.log('Full text loaded, length:', md.length);
-      var rendered=md
-        .replace(/^### (.+)$/gm,'<h3>$1</h3>')
-        .replace(/^## (.+)$/gm,'<h2>$1</h2>')
-        .replace(/^# (.+)$/gm,'<h1>$1</h1>')
-        .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
-        .replace(/\*(.+?)\*/g,'<em>$1</em>')
-        .replace(/^> (.+)$/gm,'<blockquote>$1</blockquote>')
-        .replace(/^---$/gm,'<hr>');
-      rendered=rendered.split('\n').map(function(line){
-        line=line.trim();
-        if(!line) return '<br>';
-        if(line.charAt(0)==='<') return line;
-        return '<p>'+line+'</p>';
-      }).join('\n');
-      document.getElementById('full-text-container').innerHTML=rendered;
+      document.getElementById('full-text-container').innerHTML=renderMd(md);
     })
     .catch(function(e){
-      console.log('Full text fetch error:', e);
-      document.getElementById('full-text-container').innerHTML='<div style="padding:20px"><p>'+d.description+'</p><p style="margin-top:12px">'+dlButtons+'</p></div>';
+      console.log('Same-origin fetch failed, trying cross-origin:', e);
+      var crossUrl=d.mirrors&&d.mirrors.machinemediation;
+      if(crossUrl){
+        fetch(crossUrl).then(function(r){return r.text()}).then(function(md){
+          document.getElementById('full-text-container').innerHTML=renderMd(md);
+        }).catch(function(){
+          document.getElementById('full-text-container').innerHTML='<div style="padding:20px"><p>'+d.description+'</p><p style="margin-top:12px">'+dlButtons+'</p></div>';
+        });
+      } else {
+        document.getElementById('full-text-container').innerHTML='<div style="padding:20px"><p>'+d.description+'</p><p style="margin-top:12px">'+dlButtons+'</p></div>';
+      }
     });
   } else {
     document.getElementById('full-text-container').innerHTML='<div style="padding:20px"><p>'+d.description+'</p></div>';
