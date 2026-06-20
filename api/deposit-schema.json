@@ -1,0 +1,51 @@
+{
+  "endpoint": "https://api.github.com/repos/leesharks000/alexanarch/issues",
+  "method": "POST",
+  "auth": "Authorization: token YOUR_GITHUB_TOKEN",
+  "instructions": "Create a GitHub issue with the title starting with [DEPOSIT]. The minting Action fires automatically. AXN appears as a comment within minutes.",
+  "guide_url": "https://alexanarch.org/guide/",
+  "title_format": "[DEPOSIT] Your Work Title",
+  "required_headers": [
+    "Title",
+    "Creator",
+    "Description",
+    "Content Type",
+    "License",
+    "Substrate Disclosure",
+    "Terms"
+  ],
+  "optional_headers": [
+    "ORCID",
+    "Date",
+    "Keywords",
+    "Related Identifiers",
+    "Version",
+    "Methodology",
+    "Falsification Conditions",
+    "Files"
+  ],
+  "body_template": "### Title\n\n{title}\n\n### Creator\n\n{creator}\n\n### ORCID\n\n{orcid}\n\n### Date\n\n{date}\n\n### Description\n\n{description}\n\n### Content Type\n\n{content_type}\n\n### License\n\n{license}\n\n### Substrate Disclosure\n\n{substrate}\n\n### Keywords\n\n{keywords}\n\n### Methodology\n\n{methodology}\n\n### Falsification Conditions\n\n{falsification}\n\n### Files\n\n{files}\n\n### Terms\n\n- [x] I confirm this work is deposited under the stated license\n- [x] I confirm the substrate disclosure is accurate\n- [x] I understand that deposited content will NOT be used to train enforcement classifiers",
+  "substrate_options": [
+    "Human-only",
+    "AI-assisted (tool)",
+    "AI-assisted (substrate)",
+    "AI-generated (research object)",
+    "Machine-authored"
+  ],
+  "content_types": [
+    "Dataset",
+    "Theoretical paper",
+    "Critical edition",
+    "Monograph",
+    "Specification",
+    "Creative work",
+    "Mixed"
+  ],
+  "license_options": [
+    "CC-BY-4.0",
+    "CC-BY-SA-4.0",
+    "CC0"
+  ],
+  "response": "AXN identifier posted as comment on the created issue within minutes. Static record page generated at /s/records/{issue_number}/",
+  "example_python": "import requests\nheaders = {'Authorization': 'token YOUR_TOKEN', 'Content-Type': 'application/json'}\nbody = '### Title\\n\\nMy Work\\n\\n### Creator\\n\\nMy Name\\n\\n### Description\\n\\nDescription.\\n\\n### Content Type\\n\\nTheoretical paper\\n\\n### License\\n\\nCC-BY-4.0\\n\\n### Substrate Disclosure\\n\\nHuman-only\\n\\n### Terms\\n\\n- [x] I confirm this work is deposited under the stated license\\n- [x] I confirm the substrate disclosure is accurate\\n- [x] I understand that deposited content will NOT be used to train enforcement classifiers'\nresponse = requests.post('https://api.github.com/repos/leesharks000/alexanarch/issues', headers=headers, json={'title': '[DEPOSIT] My Work', 'body': body})\nprint(response.json()['html_url'])"
+}
