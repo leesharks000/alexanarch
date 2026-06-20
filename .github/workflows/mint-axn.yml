@@ -6,7 +6,7 @@ on:
 
 jobs:
   mint:
-    if: contains(github.event.issue.labels.*.name, 'mint-approved')
+    if: contains(github.event.issue.labels.*.name, 'deposit')
     runs-on: ubuntu-latest
     permissions:
       issues: write
