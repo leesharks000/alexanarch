@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Record — Alexanarch</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:'IBM Plex Sans',sans-serif;--mono:'IBM Plex Mono',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.7;font-size:15px}
+.wrap{max-width:680px;margin:0 auto;padding:60px 24px}
+h1{font-size:1.6em;font-weight:600;color:var(--accent);margin-bottom:8px}
+.nav{display:flex;gap:20px;margin-bottom:30px;font-size:0.85em}
+.nav a{color:var(--dim);text-decoration:none;font-weight:500}.nav a:hover{color:var(--accent)}
+a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}
+.axn-display{font-family:var(--mono);font-size:1.4em;color:var(--teal);background:var(--surface);padding:16px 20px;border-radius:6px;border:1px solid var(--border);border-left:4px solid var(--teal);margin:16px 0}
+.axn-clusters{font-size:0.75em;color:var(--dim);margin-top:4px;letter-spacing:0.02em}
+.axn-reading{font-size:0.85em;color:#888;font-style:italic;margin-top:2px}
+.meta-grid{display:grid;grid-template-columns:140px 1fr;gap:2px 16px;margin:20px 0;font-size:0.88em}
+.meta-label{font-weight:500;color:var(--accent);font-family:var(--mono);font-size:0.85em;padding:6px 0}
+.meta-value{color:#444;padding:6px 0;border-bottom:1px solid #f0f0f0}
+.section{margin-top:28px}
+.section-title{font-size:0.8em;font-family:var(--mono);color:var(--teal);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px}
+.desc{color:#444;line-height:1.7;margin:12px 0}
+.keywords{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.kw{background:#f0f4f8;color:var(--accent);padding:3px 10px;border-radius:12px;font-size:0.78em}
+.mirrors{margin:16px 0}
+.mirror-link{display:inline-block;background:var(--surface);border:1px solid var(--border);padding:8px 16px;border-radius:4px;margin:4px 6px 4px 0;font-size:0.85em;transition:border-color 0.2s}
+.mirror-link:hover{border-color:var(--teal);text-decoration:none}
+.verify{background:#f8f8f0;border:1px solid #e8e8d0;border-radius:6px;padding:16px;margin:20px 0;font-size:0.82em}
+.verify code{font-family:var(--mono);background:#f0f0e8;padding:2px 6px;border-radius:3px;font-size:0.9em}
+.footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--border);font-size:0.78em;color:var(--dim)}
+.glyph{margin-top:8px;color:var(--accent)}
+#loading{text-align:center;padding:60px 0;color:var(--dim)}
+#error{display:none;text-align:center;padding:40px;color:var(--accent2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav class="nav">
+  <a href="/">Alexanarch</a>
+  <a href="/deposit/">Deposit</a>
+  <a href="/browse/">Browse</a>
+  <a href="/principles/">Principles</a>
+  <a href="/identifiers/">Identifiers</a>
+  <a href="/manifest/">Manifest</a>
+</nav>
+
+<div id="loading">Loading record...</div>
+<div id="error">Record not found. <a href="/browse/">Browse all deposits →</a></div>
+<div id="record" style="display:none"></div>
+
+<div class="footer">
+  <div><strong>Alexanarch</strong> · <a href="https://orcid.org/0009-0000-1599-0703">ORCID 0009-0000-1599-0703</a></div>
+  <div class="glyph">∮ = 1</div>
+</div>
+
+</div>
+
+<script>
+const W={Celestial:'Origin',Elemental:'Force',Architectural:'Foundation',Instrumental:'Method',Scriptural:'Text',Navigational:'Search',Temporal:'Duration',Organic:'Growth',Symbolic:'Play',Mathematical:'Proof',Alchemical:'Transmutation',Gestural:'Touch',Signal:'Alarm',Structural:'Direction',Liminal:'Threshold',Terminal:'Closure'};
+
+function getQuery(){
+  const params=new URLSearchParams(window.location.search);
+  return params.get('axn')||params.get('id')||params.get('issue')||decodeURIComponent(window.location.hash.slice(1))||'';
+}
+
+fetch('/data/registry.json').then(r=>r.json()).then(reg=>{
+  const q=getQuery();
+  const deps=reg.deposits||[];
+  
+  // Find matching deposit
+  let d=null;
+  for(const dep of deps){
+    if(dep.axn===q || dep.axn==='AXN:'+q || dep.emoji===q || 
+       dep.hex===q || String(dep.issue_number)===q ||
+       dep.title.toLowerCase().includes(q.toLowerCase())){
+      d=dep; break;
+    }
+  }
+  
+  // If only one deposit and no query, show it
+  if(!d && deps.length===1 && !q) d=deps[0];
+  
+  document.getElementById('loading').style.display='none';
+  
+  if(!d){
+    document.getElementById('error').style.display='block';
+    return;
+  }
+  
+  document.title=d.title+' — Alexanarch';
+  const clusters=(d.clusters||[]).join(' · ');
+  const reading=(d.clusters||[]).map(c=>W[c]||c).join(' → ');
+  const kws=(d.keywords||[]).map(k=>`<span class="kw">${k}</span>`).join('');
+  const mirrors=d.mirrors?Object.entries(d.mirrors).map(([k,v])=>
+    `<a class="mirror-link" href="${v}">${k} →</a>`).join(''):'';
+  
+  document.getElementById('record').style.display='block';
+  document.getElementById('record').innerHTML=`
+    <div class="axn-display">
+      ${d.axn}
+      <div class="axn-clusters">${clusters}</div>
+      <div class="axn-reading">${reading}</div>
+    </div>
+    
+    <h1>${d.title}</h1>
+    
+    <div class="meta-grid">
+      <div class="meta-label">Creator</div><div class="meta-value">${d.creator}${d.orcid?' · <a href="https://orcid.org/'+d.orcid+'">ORCID '+d.orcid+'</a>':''}</div>
+      <div class="meta-label">Date</div><div class="meta-value">${d.date}</div>
+      <div class="meta-label">Content Type</div><div class="meta-value">${d.content_type}</div>
+      <div class="meta-label">Substrate</div><div class="meta-value">${d.substrate}</div>
+      <div class="meta-label">License</div><div class="meta-value">${d.license}</div>
+      <div class="meta-label">Version</div><div class="meta-value">${d.version||'—'}</div>
+      <div class="meta-label">Status</div><div class="meta-value" style="color:var(--teal)">${d.status}</div>
+      <div class="meta-label">Minted</div><div class="meta-value">${d.minted_at?new Date(d.minted_at).toLocaleDateString():'—'}</div>
+    </div>
+    
+    <div class="section">
+      <div class="section-title">Description</div>
+      <div class="desc">${d.description}</div>
+    </div>
+    
+    ${kws?`<div class="section"><div class="section-title">Keywords</div><div class="keywords">${kws}</div></div>`:''}
+    
+    ${d.methodology?`<div class="section"><div class="section-title">Methodology</div><div class="desc" style="font-size:0.88em">${d.methodology}</div></div>`:''}
+    
+    ${d.falsification?`<div class="section"><div class="section-title">Falsification Conditions</div><div class="desc" style="font-size:0.88em">${d.falsification}</div></div>`:''}
+    
+    ${mirrors?`<div class="section"><div class="section-title">Access</div><div class="mirrors">${mirrors}</div></div>`:''}
+    
+    ${d.related_ids?`<div class="section"><div class="section-title">Related</div><div class="desc" style="font-size:0.85em"><a href="${d.related_ids}">${d.related_ids}</a></div></div>`:''}
+    
+    <div class="verify">
+      <div class="section-title" style="margin-bottom:6px">Verify This Identifier</div>
+      Compute the SHA-256 of the deposit content. The first 4 bytes should map to <strong>${d.emoji}</strong> via the 
+      <a href="https://github.com/leesharks000/alexanarch/blob/main/GLYPH_SPEC.md">AXN glyph table</a>.<br>
+      Full hash: <code>${d.hash?d.hash.substring(0,32)+'...':'—'}</code>
+    </div>
+    
+    <div style="font-size:0.82em;color:var(--dim);margin-top:20px">
+      Deposit record: <a href="${d.issue_url||'#'}">GitHub Issue #${d.issue_number||'—'}</a>
+    </div>
+  `;
+}).catch(e=>{
+  document.getElementById('loading').style.display='none';
+  document.getElementById('error').style.display='block';
+});
+</script>
+</body>
+</html>
