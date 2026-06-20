@@ -49,7 +49,7 @@ fetch('/data/registry.json').then(r=>r.json()).then(reg=>{
     document.getElementById('deposits').innerHTML=list.length?
       list.map(d=>`<div style="background:#fff;border:1px solid #e0e0e0;border-radius:6px;padding:16px;margin-bottom:10px">
         <div style="font-family:var(--mono);font-size:0.82em;color:var(--teal)">${d.axn}</div>
-        <div style="font-weight:500;margin:4px 0"><a href="/records/?axn=${encodeURIComponent(d.axn)}" style="color:var(--fg)">${d.title}</a></div>
+        <div style="font-weight:500;margin:4px 0"><a href="/records/?id=${d.issue_number||d.hex}" style="color:var(--fg)">${d.title}</a></div>
         <div style="font-size:0.82em;color:#777">${d.creator} · ${d.date} · ${d.content_type} · ${d.substrate}</div>
         <div style="font-size:0.82em;color:#999;margin-top:4px">${(d.description||'').substring(0,200)}</div>
       </div>`).join(''):
