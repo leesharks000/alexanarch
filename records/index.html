@@ -121,7 +121,7 @@ fetch('/data/registry.json')
   
   for(var i=0;i<deps.length;i++){
     var dep=deps[i];
-    if(dep.axn===q || dep.axn==='AXN:'+q || dep.emoji===q || dep.hex===q || String(dep.issue_number)===q){
+    if(dep.axn===q || dep.axn==='AXN:'+q || dep.emoji===q || dep.hex===q || String(dep.issue_number)===q || String(dep.deposit_number)===q || dep.sovereign_id===q || dep.root_axn===q){
       d=dep; break;
     }
   }
