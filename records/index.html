@@ -265,6 +265,35 @@ fetch('/data/registry.json')
 </script>
 
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+function fetchRecordCounter(){
+  var path=window.location.pathname+window.location.search;
+  var dlPath='download:'+path;
+  var viewEl=document.getElementById('rec-views');
+  var dlEl=document.getElementById('rec-downloads');
+  if(viewEl){
+    fetch('https://alexanarch.goatcounter.com/counter/'+encodeURIComponent(path)+'.json')
+    .then(function(r){return r.json()})
+    .then(function(d){viewEl.textContent=(d.count||0)+' views'})
+    .catch(function(){viewEl.textContent='0 views'});
+  }
+  if(dlEl){
+    fetch('https://alexanarch.goatcounter.com/counter/'+encodeURIComponent(dlPath)+'.json')
+    .then(function(r){return r.json()})
+    .then(function(d){dlEl.textContent=(d.count||0)+' downloads'})
+    .catch(function(){dlEl.textContent='0 downloads'});
+  }
+  // Track download clicks
+  document.querySelectorAll('.dl-btn,.dl-btn-outline,.dl').forEach(function(link){
+    link.addEventListener('click',function(){
+      if(window.goatcounter&&window.goatcounter.count){
+        window.goatcounter.count({path:'download:'+path,event:true});
+      }
+    });
+  });
+}
+setTimeout(fetchRecordCounter,300);
+</script>
 
 </body>
 </html>
