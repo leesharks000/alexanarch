@@ -2,11 +2,11 @@ name: Mint AXN Identifier
 
 on:
   issues:
-    types: [opened, labeled]
+    types: [labeled]
 
 jobs:
   mint:
-    if: contains(github.event.issue.labels.*.name, 'deposit')
+    if: contains(github.event.issue.labels.*.name, 'mint-approved')
     runs-on: ubuntu-latest
     permissions:
       issues: write
@@ -30,33 +30,35 @@ jobs:
             const crypto = require('crypto');
             const fs = require('fs');
             
-            // === AXN GLYPH TABLE ===
             const AXN_GLYPHS = [
-              '🌑','🌒','🌓','🌔','🌕','🌖','🌗','🌘','⭐','🌟','💫','☀️','🌙','🪐','🌍','🌊',
-              '🔥','💧','🌪️','⚡','❄️','🌋','🏔️','🌿','🍃','🌱','🌾','🪨','💎','🧊','🌈','☁️',
-              '🏛️','🏗️','🧱','🪜','🚪','🪟','🏠','🏰','⛩️','🕌','🗼','🌉','⚓','🛡️','🔔','🏺',
-              '🔧','🔩','⚙️','🔗','🪝','🧲','⚖️','🔬','🔭','🧪','🧫','🧬','💡','🔮','🪄','🗝️',
-              '📜','📖','📝','✏️','🖊️','📋','📌','📎','🔖','📚','🗂️','📦','🏷️','🪧','📐','📏',
-              '🧭','🗺️','🏴','🚩','⛳','🎯','🔍','👁️','🔎','🪞','🗡️','🛤️','⛵','🚀','🛸','🌀',
-              '⏳','⏰','🕐','🕑','🕒','🕓','🕔','🕕','🕖','🕗','🕘','🕙','🕚','🕛','⌛','🔄',
-              '🌸','🌺','🌻','🌹','🍀','🌲','🌳','🍁','🍂','🍄','🐚','🪸','🦋','🐝','🕊️','🦅',
-              '♠️','♥️','♦️','♣️','🎭','🎪','🎨','🎵','🎶','🎹','🎻','🎺','🥁','🎲','🃏','🀄',
-              '➕','➖','✖️','➗','♾️','∮','⊕','⊗','△','▽','◇','○','●','□','■','▲',
-              '🜁','🝊','☿','♃','♄','♅','♆','☉','☽','♈','♉','♊','♋','♌','♍','♎',
-              '👁️‍🗨️','🤲','👐','🙏','✊','🤝','👆','👇','👈','👉','🫵','🖐️','✋','🫶','🤙','👋',
-              '🚨','🔴','🟠','🟡','🟢','🔵','🟣','⚪','⚫','🟤','💜','💙','💚','💛','🧡','❤️',
-              '🔺','🔻','◀️','▶️','🔼','🔽','⏩','⏪','⏫','⏬','↗️','↘️','↙️','↖️','🔃','🔀',
-              '🌅','🌄','🌃','🌆','🌇','🏙️','🌌','🎆','🎇','✨','🌠','💥','🔆','🔅','⭕','❌',
-              '🏁','🎬','🔚','🔙','🔛','🔝','🔜','⏹️','⏏️','🔒','🔓','🔐','🗿','🪦','♻️','∞'
+              '\u{1F311}','\u{1F312}','\u{1F313}','\u{1F314}','\u{1F315}','\u{1F316}','\u{1F317}','\u{1F318}','\u2B50','\u{1F31F}','\u{1F4AB}','\u2600\uFE0F','\u{1F319}','\u{1FA90}','\u{1F30D}','\u{1F30A}',
+              '\u{1F525}','\u{1F4A7}','\u{1F32A}\uFE0F','\u26A1','\u2744\uFE0F','\u{1F30B}','\u{1F3D4}\uFE0F','\u{1F33F}','\u{1F343}','\u{1F331}','\u{1F33E}','\u{1FAA8}','\u{1F48E}','\u{1F9CA}','\u{1F308}','\u2601\uFE0F',
+              '\u{1F3DB}\uFE0F','\u{1F3D7}\uFE0F','\u{1F9F1}','\u{1FA9C}','\u{1F6AA}','\u{1FA9F}','\u{1F3E0}','\u{1F3F0}','\u26E9\uFE0F','\u{1F54C}','\u{1F5FC}','\u{1F309}','\u2693','\u{1F6E1}\uFE0F','\u{1F514}','\u{1F3FA}',
+              '\u{1F527}','\u{1F529}','\u2699\uFE0F','\u{1F517}','\u{1FA9D}','\u{1F9F2}','\u2696\uFE0F','\u{1F52C}','\u{1F52D}','\u{1F9EA}','\u{1F9EB}','\u{1F9EC}','\u{1F4A1}','\u{1F52E}','\u{1FA84}','\u{1F5DD}\uFE0F',
+              '\u{1F4DC}','\u{1F4D6}','\u{1F4DD}','\u270F\uFE0F','\u{1F58A}\uFE0F','\u{1F4CB}','\u{1F4CC}','\u{1F4CE}','\u{1F516}','\u{1F4DA}','\u{1F5C2}\uFE0F','\u{1F4E6}','\u{1F3F7}\uFE0F','\u{1FAA7}','\u{1F4D0}','\u{1F4CF}',
+              '\u{1F9ED}','\u{1F5FA}\uFE0F','\u{1F3F4}','\u{1F6A9}','\u26F3','\u{1F3AF}','\u{1F50D}','\u{1F441}\uFE0F','\u{1F50E}','\u{1FA9E}','\u{1F5E1}\uFE0F','\u{1F6E4}\uFE0F','\u26F5','\u{1F680}','\u{1F6F8}','\u{1F300}',
+              '\u231B','\u23F0','\u{1F550}','\u{1F551}','\u{1F552}','\u{1F553}','\u{1F554}','\u{1F555}','\u{1F556}','\u{1F557}','\u{1F558}','\u{1F559}','\u{1F55A}','\u{1F55B}','\u231B','\u{1F504}',
+              '\u{1F338}','\u{1F33A}','\u{1F33B}','\u{1F339}','\u{1F340}','\u{1F332}','\u{1F333}','\u{1F341}','\u{1F342}','\u{1F344}','\u{1F41A}','\u{1FAB8}','\u{1F98B}','\u{1F41D}','\u{1F54A}\uFE0F','\u{1F985}',
+              '\u2660\uFE0F','\u2764\uFE0F','\u2666\uFE0F','\u2663\uFE0F','\u{1F3AD}','\u{1F3AA}','\u{1F3A8}','\u{1F3B5}','\u{1F3B6}','\u{1F3B9}','\u{1F3BB}','\u{1F3BA}','\u{1F941}','\u{1F3B2}','\u{1F0CF}','\u{1F004}',
+              '\u2795','\u2796','\u2716\uFE0F','\u2797','\u267E\uFE0F','\u222E','\u2295','\u2297','\u25B3','\u25BD','\u25C7','\u25CB','\u25CF','\u25A1','\u25A0','\u25B2',
+              '\u{1F701}','\u{1F74A}','\u263F','\u2643','\u2644','\u2645','\u2646','\u2609','\u263D','\u2648','\u2649','\u264A','\u264B','\u264C','\u264D','\u264E',
+              '\u{1F441}\u200D\u{1F5E8}','\u{1F932}','\u{1F450}','\u{1F64F}','\u270A','\u{1F91D}','\u{1F446}','\u{1F447}','\u{1F448}','\u{1F449}','\u{1FAF5}','\u{1F590}\uFE0F','\u270B','\u{1FAF6}','\u{1F919}','\u{1F44B}',
+              '\u{1F6A8}','\u{1F534}','\u{1F7E0}','\u{1F7E1}','\u{1F7E2}','\u{1F535}','\u{1F7E3}','\u26AA','\u26AB','\u{1F7E4}','\u{1F49C}','\u{1F499}','\u{1F49A}','\u{1F49B}','\u{1F9E1}','\u2764\uFE0F',
+              '\u{1F53A}','\u{1F53B}','\u25C0\uFE0F','\u25B6\uFE0F','\u{1F53C}','\u{1F53D}','\u23E9','\u23EA','\u23EB','\u23EC','\u2197\uFE0F','\u2198\uFE0F','\u2199\uFE0F','\u2196\uFE0F','\u{1F503}','\u{1F500}',
+              '\u{1F305}','\u{1F304}','\u{1F303}','\u{1F306}','\u{1F307}','\u{1F3D9}\uFE0F','\u{1F30C}','\u{1F386}','\u{1F387}','\u2728','\u{1F320}','\u{1F4A5}','\u{1F506}','\u{1F505}','\u2B55','\u274C',
+              '\u{1F3C1}','\u{1F3AC}','\u{1F51A}','\u{1F519}','\u{1F51B}','\u{1F51D}','\u{1F51C}','\u23F9\uFE0F','\u23CF\uFE0F','\u{1F512}','\u{1F513}','\u{1F510}','\u{1F5FF}','\u{1FAA6}','\u267B\uFE0F','\u221E'
             ];
             
-            // === PARSE ISSUE BODY ===
+            const CLUSTERS = ['Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Celestial','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Elemental','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Architectural','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Instrumental','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Scriptural','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Navigational','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Temporal','Organic','Organic','Organic','Organic','Organic','Organic','Organic','Organic','Organic','Organic','Organic','Organic','Organic','Organic','Organic','Organic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Symbolic','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Mathematical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Alchemical','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Gestural','Signal','Signal','Signal','Signal','Signal','Signal','Signal','Signal','Signal','Signal','Signal','Signal','Signal','Signal','Signal','Signal','Structural','Structural','Structural','Structural','Structural','Structural','Structural','Structural','Structural','Structural','Structural','Structural','Structural','Structural','Structural','Structural','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Liminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal','Terminal'];
+            
+            const W = {Celestial:'Origin',Elemental:'Force',Architectural:'Foundation',Instrumental:'Method',Scriptural:'Text',Navigational:'Search',Temporal:'Duration',Organic:'Growth',Symbolic:'Play',Mathematical:'Proof',Alchemical:'Transmutation',Gestural:'Touch',Signal:'Alarm',Structural:'Direction',Liminal:'Threshold',Terminal:'Closure'};
+            
+            // Parse issue
             const issue = context.payload.issue;
             const body = issue.body || '';
             
             function extractField(body, label) {
-              // GitHub issue forms use ### headers for each field
-              const regex = new RegExp(`### ${label}\\s*\\n\\s*([\\s\\S]*?)(?=\\n###|$)`, 'i');
+              const regex = new RegExp('### ' + label + '\\s*\\n\\s*([\\s\\S]*?)(?=\\n###|$)', 'i');
               const match = body.match(regex);
               if (match) {
                 const val = match[1].trim();
@@ -83,66 +85,45 @@ jobs:
               files_text: extractField(body, 'Files')
             };
             
-            // === COMPUTE AXN ===
-            // Hash the full issue body as the content fingerprint
-            const contentForHash = `${metadata.title}\n${metadata.creator}\n${metadata.description}\n${body}`;
+            // Compute AXN from content
+            const contentForHash = [metadata.title, metadata.creator, metadata.description, body].join('\n');
             const hash = crypto.createHash('sha256').update(contentForHash).digest();
             const hexHash = hash.toString('hex');
             
-            // Map first 4 bytes to emoji
-            const emoji = [
-              AXN_GLYPHS[hash[0]],
-              AXN_GLYPHS[hash[1]],
-              AXN_GLYPHS[hash[2]],
-              AXN_GLYPHS[hash[3]]
-            ].join('');
+            const emoji = [AXN_GLYPHS[hash[0]], AXN_GLYPHS[hash[1]], AXN_GLYPHS[hash[2]], AXN_GLYPHS[hash[3]]].join('');
+            const clusters = [CLUSTERS[hash[0]], CLUSTERS[hash[1]], CLUSTERS[hash[2]], CLUSTERS[hash[3]]];
+            const reading = clusters.map(c => W[c]).join(' \u2192 ');
             
-            // Determine hex position (count existing deposits + 1)
+            // Registry
             const registryPath = 'data/registry.json';
-            const registryRaw = fs.readFileSync(registryPath, 'utf-8');
-            const registry = JSON.parse(registryRaw);
+            const registry = JSON.parse(fs.readFileSync(registryPath, 'utf-8'));
             const depositNum = registry.total_deposits + 1;
             const hexPos = depositNum.toString(16).padStart(2, '0').toUpperCase();
             
-            // Determine semantic family
+            // Auto-detect family
             let family = 'UNCLASSIFIED';
-            const keywords = metadata.keywords.toLowerCase();
-            const desc = metadata.description.toLowerCase();
+            const kw = (metadata.keywords + ' ' + metadata.description).toLowerCase();
             const familyMap = {
-              'LIMINAL': ['liminal', 'threshold', 'boundary', 'transition'],
-              'RECURSIVE': ['recursive', 'self-referential', 'feedback', 'loop'],
-              'PRISTINE': ['pristine', 'fallacy', 'substrate', 'bias'],
-              'OPERATIVE': ['operative', 'semiotics', 'operator', 'logotic'],
-              'ARCHIVAL': ['archive', 'preservation', 'registry', 'catalog'],
-              'EMPIRICAL': ['capture', 'dataset', 'observation', 'measurement'],
-              'PHILOLOGICAL': ['critical edition', 'philology', 'manuscript', 'collation'],
-              'HETERONYMIC': ['heteronym', 'pessoa', 'dodecad', 'persona'],
-              'COMPOSITIONAL': ['composition', 'layer', 'mediation', 'reception'],
-              'STRUCTURAL': ['architecture', 'structure', 'framework', 'specification'],
-              'GENERATIVE': ['generative', 'creative', 'literary', 'poetic'],
-              'GOVERNANCE': ['governance', 'policy', 'platform', 'moderation']
+              GOVERNANCE: ['governance','policy','platform','moderation'],
+              EMPIRICAL: ['capture','dataset','observation','measurement'],
+              GENERATIVE: ['generative','creative','literary','poetic'],
+              ARCHIVAL: ['archive','preservation','registry','catalog'],
+              PHILOLOGICAL: ['critical edition','philology','manuscript'],
+              STRUCTURAL: ['architecture','structure','framework','specification'],
+              COMPOSITIONAL: ['composition','layer','mediation','reception'],
+              OPERATIVE: ['operative','semiotics','operator'],
+              HETERONYMIC: ['heteronym','pessoa','dodecad']
             };
-            
             for (const [fam, terms] of Object.entries(familyMap)) {
-              if (terms.some(t => keywords.includes(t) || desc.includes(t))) {
-                family = fam;
-                break;
-              }
+              if (terms.some(t => kw.includes(t))) { family = fam; break; }
             }
             
-            const axn = `AXN:${hexPos}.${family}.${emoji}`;
+            const axn = 'AXN:' + hexPos + '.' + family + '.' + emoji;
             
-            // === CREATE DEPOSIT RECORD ===
             const record = {
-              axn: axn,
-              hex: hexPos,
-              family: family,
-              emoji: emoji,
-              hash: hexHash,
-              title: metadata.title,
-              creator: metadata.creator,
-              orcid: metadata.orcid,
-              date: metadata.date,
+              axn, hex: hexPos, family, emoji, hash: hexHash,
+              title: metadata.title, creator: metadata.creator,
+              orcid: metadata.orcid, date: metadata.date,
               description: metadata.description,
               content_type: metadata.content_type,
               license: metadata.license,
@@ -155,83 +136,76 @@ jobs:
               issue_number: issue.number,
               issue_url: issue.html_url,
               minted_at: new Date().toISOString(),
-              status: 'ACTIVE'
+              status: 'ACTIVE',
+              clusters, reading,
+              axn_canonical: hexHash,
+              axn_display: emoji,
+              wiki_article: null,
+              wiki_status: 'provisional',
+              entities: [],
+              entity_status: 'provisional'
             };
             
-            // === UPDATE REGISTRY ===
             registry.deposits.push(record);
             registry.total_deposits = registry.deposits.length;
-            
             fs.writeFileSync(registryPath, JSON.stringify(registry, null, 2));
             
-            // === COMMENT ON ISSUE WITH AXN ===
-            const commentBody = [
-              `## ✅ Deposit Minted`,
-              ``,
-              `### Alexanarch Identifier`,
-              ``,
-              `\`\`\``,
+            // Build comment
+            const lines = [
+              '## \u2705 Deposit Minted',
+              '',
+              '### Alexanarch Identifier',
+              '',
+              '```',
               axn,
-              `\`\`\``,
-              ``,
-              `| Component | Value |`,
-              `|-----------|-------|`,
-              `| **Namespace** | AXN |`,
-              `| **Hex Position** | ${hexPos} |`,
-              `| **Semantic Family** | ${family} |`,
-              `| **Emoji Hash** | ${emoji} |`,
-              `| **SHA-256** | \`${hexHash.substring(0, 16)}...\` |`,
-              `| **Content Type** | ${metadata.content_type} |`,
-              `| **Substrate** | ${metadata.substrate} |`,
-              `| **License** | ${metadata.license} |`,
-              ``,
-              `### Verification`,
-              ``,
-              `Anyone can verify this identifier by computing the SHA-256 of the deposit content and mapping the first 4 bytes through the [AXN glyph table](https://github.com/leesharks000/alexanarch/blob/main/GLYPH_SPEC.md).`,
-              ``,
-              `### Record`,
-              ``,
-              `This deposit is now live in the [Alexanarch registry](https://alexanarch.org/data/registry.json).`,
-              ``,
-              `---`,
-              `*The obelus follows from reading. The identifier follows from the content.*`,
-              ``,
-              `∮ = 1`
-            ].join('\n');
+              '```',
+              '',
+              '| Component | Value |',
+              '|-----------|-------|',
+              '| **Hex Position** | ' + hexPos + ' |',
+              '| **Semantic Family** | ' + family + ' |',
+              '| **Emoji Hash** | ' + emoji + ' |',
+              '| **Clusters** | ' + clusters.join(' \u00B7 ') + ' |',
+              '| **Reading** | ' + reading + ' |',
+              '| **SHA-256** | `' + hexHash.substring(0, 24) + '...` |',
+              '| **Content Type** | ' + metadata.content_type + ' |',
+              '| **Substrate** | ' + metadata.substrate + ' |',
+              '| **License** | ' + metadata.license + ' |',
+              '| **Wiki/Graph** | Provisional (pending full-text review) |',
+              '',
+              '---',
+              '*The obelus follows from reading. The identifier follows from the content.*',
+              '',
+              '\u222E = 1'
+            ];
             
             await github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: issue.number,
-              body: commentBody
+              owner: context.repo.owner, repo: context.repo.repo,
+              issue_number: issue.number, body: lines.join('\n')
             });
             
-            // === ADD LABELS ===
             await github.rest.issues.addLabels({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: issue.number,
-              labels: ['minted', `family:${family}`]
+              owner: context.repo.owner, repo: context.repo.repo,
+              issue_number: issue.number, labels: ['minted', 'family:' + family]
             });
             
-            // === REMOVE pending-review LABEL ===
             try {
               await github.rest.issues.removeLabel({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: issue.number,
-                name: 'pending-review'
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: issue.number, name: 'pending-review'
               });
-            } catch (e) {
-              // Label might not exist
-            }
+            } catch (e) {}
             
-            console.log(`Minted: ${axn}`);
-            console.log(`Hash: ${hexHash}`);
-            console.log(`Family: ${family}`);
-            console.log(`Deposit #${depositNum}`);
+            try {
+              await github.rest.issues.removeLabel({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: issue.number, name: 'mint-approved'
+              });
+            } catch (e) {}
+            
+            console.log('Minted: ' + axn);
 
-      - name: Generate wiki article and extract entities
+      - name: Generate wiki and entities (optional)
         if: success()
         continue-on-error: true
         uses: actions/github-script@v7
@@ -239,51 +213,25 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         with:
           script: |
-            const fs = require('fs');
-            const https = require('https');
-            
             if (!process.env.ANTHROPIC_API_KEY) {
-              console.log('No API key — skipping wiki/entity generation');
+              console.log('No API key - skipping wiki/entity generation');
               return;
             }
-            
+            const fs = require('fs');
+            const https = require('https');
             const registry = JSON.parse(fs.readFileSync('data/registry.json', 'utf-8'));
             const deposit = registry.deposits[registry.deposits.length - 1];
             
-            if (deposit.wiki_article) {
-              console.log('Wiki already exists — skipping');
-              return;
-            }
-            
-            const desc = deposit.description || '';
-            const title = deposit.title || '';
-            const keywords = (deposit.keywords || []).join(', ');
-            
-            // Call Anthropic API for wiki article
-            function callAnthropic(prompt) {
+            function callAPI(prompt) {
               return new Promise((resolve, reject) => {
                 const data = JSON.stringify({
-                  model: 'claude-sonnet-4-6',
-                  max_tokens: 2000,
+                  model: 'claude-sonnet-4-6', max_tokens: 2000,
                   messages: [{role: 'user', content: prompt}]
                 });
                 const req = https.request({
-                  hostname: 'api.anthropic.com',
-                  path: '/v1/messages',
-                  method: 'POST',
-                  headers: {
-                    'Content-Type': 'application/json',
-                    'anthropic-version': '2023-06-01',
-                    'x-api-key': process.env.ANTHROPIC_API_KEY
-                  }
-                }, res => {
-                  let body = '';
-                  res.on('data', chunk => body += chunk);
-                  res.on('end', () => {
-                    try { resolve(JSON.parse(body)); }
-                    catch(e) { reject(e); }
-                  });
-                });
+                  hostname: 'api.anthropic.com', path: '/v1/messages', method: 'POST',
+                  headers: {'Content-Type': 'application/json', 'anthropic-version': '2023-06-01', 'x-api-key': process.env.ANTHROPIC_API_KEY}
+                }, res => { let b=''; res.on('data',c=>b+=c); res.on('end',()=>{try{resolve(JSON.parse(b))}catch(e){reject(e)}}); });
                 req.on('error', reject);
                 req.write(data);
                 req.end();
@@ -291,43 +239,30 @@ jobs:
             }
             
             try {
-              // Wiki article
-              console.log('Generating wiki article...');
-              const wikiResp = await callAnthropic(
-                `Generate a 300-500 word encyclopedia-style article about this scholarly work. Define key terms. State the core argument. Write in third person. No headers. No preamble. Just the article.
-
-Title: ${title}
-Description: ${desc}
-Keywords: ${keywords}`
-              );
-              const wiki = wikiResp.content?.[0]?.text || '';
+              const wikiPrompt = 'Generate a 300-500 word encyclopedia article about this scholarly work. No headers. Third person. Just the article text.\n\n' +
+                'Title - ' + deposit.title + '\n' +
+                'Description - ' + deposit.description + '\n' +
+                'Keywords - ' + (deposit.keywords||[]).join(', ');
+              const wr = await callAPI(wikiPrompt);
+              deposit.wiki_article = wr.content?.[0]?.text || '';
+              deposit.wiki_status = 'provisional-generated';
               
-              // Entity extraction
-              console.log('Extracting entities...');
-              const entityResp = await callAnthropic(
-                `Extract entities and relationships from this scholarly work as a JSON array of triples. Each triple: {"subject":"...","predicate":"...","object":"...","type":"..."}. Entity types: concept, person, institution, method, work, dataset, event. Predicates: defines, extends, critiques, uses, cites, documents, proposes, affects, is_instance_of, is_part_of, created_by. Extract 15-30 triples. Respond with ONLY valid JSON array.
-
-Title: ${title}
-Description: ${desc}
-Keywords: ${keywords}`
-              );
-              
+              const entityPrompt = 'Extract entities and relationships as a JSON array of triples. Each has subject, predicate, object, type, evidence_status. Types - concept, person, institution, method, work. Predicates - defines, extends, critiques, cites, documents, proposes, is_instance_of, created_by. 15-30 triples. ONLY valid JSON array.\n\n' +
+                'Title - ' + deposit.title + '\n' +
+                'Description - ' + deposit.description;
+              const er = await callAPI(entityPrompt);
               let entities = [];
               try {
-                const entityText = (entityResp.content?.[0]?.text || '').replace(/\`\`\`json/g,'').replace(/\`\`\`/g,'').trim();
-                entities = JSON.parse(entityText);
-              } catch(e) {
-                console.log('Entity parse error — skipping');
-              }
+                const et = (er.content?.[0]?.text||'').replace(/```json/g,'').replace(/```/g,'').trim();
+                entities = JSON.parse(et);
+              } catch(e) { console.log('Entity parse error'); }
+              deposit.entities = entities;
+              deposit.entity_status = 'provisional-generated';
               
-              // Update registry
-              deposit.wiki_article = wiki;
-              if (entities.length) deposit.entities = entities;
               fs.writeFileSync('data/registry.json', JSON.stringify(registry, null, 2));
-              console.log(`Wiki: ${wiki.length} chars, Entities: ${entities.length} triples`);
-              
+              console.log('Wiki: ' + (deposit.wiki_article||'').length + ' chars, Entities: ' + entities.length);
             } catch(e) {
-              console.log('API call failed (likely no credits) — deposit still minted:', e.message || e);
+              console.log('API failed (likely no credits): ' + (e.message||e));
             }
 
       - name: Commit registry update
@@ -339,6 +274,6 @@ Keywords: ${keywords}`
           if git diff --cached --quiet; then
             echo "Registry already up to date"
           else
-            git commit -m "Mint AXN — deposit #$(cat data/registry.json | python3 -c 'import sys,json; print(json.load(sys.stdin)["total_deposits"])')"
-            git push || echo "Push failed — registry may have been updated by another run"
+            git commit -m "Mint AXN - deposit #$(cat data/registry.json | python3 -c 'import sys,json; print(json.load(sys.stdin)["total_deposits"])')"
+            git push || echo "Push failed"
           fi
