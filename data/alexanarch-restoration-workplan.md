@@ -54,7 +54,7 @@ Priority: works with dead Zenodo links on live site surfaces (222 works) go firs
 
 | Batch | Works | Range | Priority | Status |
 |-------|-------|-------|----------|--------|
-| 1 | 100 | MM-CHA-0045 – MM-CHA-0635 | Dead site links | ☐ Not started |
+| 1 | 100 | MM-CHA-0045 – MM-CHA-0635 | Dead site links | ✅ Complete |
 | 2 | 100 | MM-CHA-0636 – MM-CHA-0840 | Dead site links | ☐ Not started |
 | 3 | 22 | MM-CHA-0841 – MM-CHA-0870 | Dead site links | ☐ Not started |
 | 4 | 100 | MM-CHA-0001 – MM-CHA-0101 | Archive fill | ☐ Not started |
@@ -182,6 +182,7 @@ The `zenodo-link-scan.json` already has the DOI-to-AXN mapping for each dead lin
 | Date | Session | Batch(es) | Works deposited | Running total | Notes |
 |------|---------|-----------|-----------------|---------------|-------|
 | 2026-06-20 | 1 | Pre-work | 4 (existing) | 4/875 | DataCite sift, AXN:0004 v2.2, work plan created |
+| 2026-06-20 | 1 | Batch 1 | 100 | 104/875 | Priority works (dead site links). Full buildout: wiki, entities, content types, creator attribution. 0 errors. |
 | | | | | | |
 
 ---
