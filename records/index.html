@@ -107,7 +107,10 @@ setTimeout(function(){
   if(document.getElementById('loading').style.display!=='none'){
     document.getElementById('loading').innerHTML='Loading timed out. <a href="/browse/">Browse deposits →</a>';
   }
-}, 30000);
+var q2=new URLSearchParams(window.location.search).get('id')||'';
+    if(q2) window.location.href='/s/records/'+q2+'/';
+    else window.location.href='/s/browse/';
+  }, 5000);
 
 fetch('/data/browse-index.json').then(function(r){return r.json()}).then(function(lite){
   // Build a registry-compatible object from lite index
