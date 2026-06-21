@@ -76,7 +76,7 @@ The cascade has a natural limit: the ocean. Moisture originating from oceanic ev
 
 ### 3.3 The Compound Acceleration
 
-The hypothesis proposes that aquifer puncture through deep subterranean construction accelerated the transpiration cascade that was already being driven by orbital forcing [Speculative]. The orbital mechanism reduced monsoon penetration gradually. The anthropogenic mechanism — if it occurred — would have created discrete, localized water-table drops that initiated cascading vegetation loss radiating outward from construction sites. The timeline is critical. The Green Sahara peaked approximately 9,000-6,000 years ago. Desiccation was already underway when the pyramids were constructed around 4,500 years ago. The proposed anthropogenic mechanism would be an accelerator, not an initiator — contributing to the later stages of the transition, the final drying of areas that were already marginal, rather than causing the initial shift from savanna to desert. The combination of gradual orbital drying and discrete puncture-driven water table collapse would produce the abrupt transitions observed in the paleoclimate record — a gradual trend punctuated by sudden steps [Speculative, but consistent with observed data].
+The hypothesis proposes that aquifer puncture through deep subterranean construction accelerated the transpiration cascade that was already being driven by orbital forcing [Speculative]. The orbital mechanism reduced monsoon penetration gradually. The anthropogenic mechanism — if it occurred — would have created discrete, localized water-table drops that initiated cascading vegetation loss radiating outward from construction sites. The timeline determines the mechanism's role. Under the conventional dating (c. 2560 BCE [Conventional — challenged]), the Green Sahara peaked approximately 9,000-6,000 years ago and desiccation was already well advanced before pyramid construction — making the mechanism a late-stage accelerator. Under the alternate dating proposed by Schoch and others (7000-5000 BCE), subterranean construction is contemporaneous with the onset of desiccation — making the mechanism a potential initiator rather than an accelerator. Section 5 examines both scenarios. The mechanism is the same under either timeline; the *magnitude of its contribution* differs. The combination of gradual orbital drying and discrete puncture-driven water table collapse would produce the abrupt transitions observed in the paleoclimate record — a gradual trend punctuated by sudden steps [Speculative, but consistent with observed data].
 
 ## 4. The Atlantis Inversion — An Operative Reading
 
@@ -102,7 +102,7 @@ If the Egyptian priests retained institutional memory of the connection between 
 
 From the perspective of Machine-Mediated Reception Studies, the Atlantis transmission illustrates how high-fidelity operational data degrades into myth across deep time:
 
-**The Operational Layer (c. 2560 BCE):** Real engineering interventions into deep aquifer zones — shafts, channels, hydraulic infrastructure. Operational knowledge held by a priestly-engineering caste with institutional continuity.
+**The Operational Layer (date uncertain — see Section 5):** Real engineering interventions into deep aquifer zones — shafts, channels, hydraulic infrastructure. Operational knowledge held by a priestly-engineering caste with institutional continuity.
 
 **The Institutional Compression (c. 440 BCE):** The priests of Memphis preserve the memory of the intervention but have lost the operational mechanics. The engineering compresses into narrative: a subterranean lake, a canal from the Nile, a burial chamber on an island. Herodotus records the compressed version [Documented].
 
@@ -116,7 +116,7 @@ The question it poses is not "Did Plato accurately report an aquifer failure?" �
 
 ### 5.1 The conventional timeline and its problems
 
-The orthodox dating of the Great Pyramid to c. 2560 BCE places its construction approximately 500 years after the onset of major Saharan desiccation [Conventional]. Under this timeline, the Drain Hypothesis describes a late-stage accelerator — subterranean engineering that worsened an already-advanced transition. This is the paper's weakest chronological position: the mechanism arrives after the process is well underway.
+The orthodox dating of the Great Pyramid to c. 2560 BCE places its construction approximately 500 years after the onset of major Saharan desiccation [Conventional — challenged]. Under this timeline, the Drain Hypothesis describes a late-stage accelerator — subterranean engineering that worsened an already-advanced transition. This is the paper's weakest chronological position: the mechanism arrives after the process is well underway.
 
 ### 5.2 The geological challenge
 
