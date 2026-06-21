@@ -1,1 +1,1056 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Living Architecture Lab — Site Buildout Workplan Implementation Specification for livingarchitecturelab.org — Alexanarch</title><meta name="description" content="Living Architecture Lab — Site Buildout Workplan Implementation Specification for livingarchitecturelab.org"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "Living Architecture Lab \u2014 Site Buildout Workplan Implementation Specification for livingarchitecturelab.org", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-04-28", "identifier": "AXN:024E.GOVERNANCE.\ud83e\udd8b\ud83e\udea8\ud83d\udfe4\ud83c\udf00\ud83c\udf13\ud83d\udd05"}</script><style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}h1{font-size:1.4em;font-weight:600;color:var(--accent);margin-bottom:8px}h2{font-size:1em;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}p{margin-bottom:10px;color:#333}.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}.nav a{color:#777;font-weight:500}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:#777}</style></head><body><div class="wrap"><nav class="nav"><a href="/">Alexanarch</a> <a href="/s/browse/">Browse</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a></nav><div style="font-family:var(--mono);font-size:1.2em;color:var(--teal);background:var(--surface);padding:14px;border-radius:6px;border:1px solid var(--border);border-left:4px solid var(--teal);margin:12px 0">AXN:024E.GOVERNANCE.🦋🪨🟤🌀🌓🔅<div style="font-size:.7em;color:#777;margin-top:3px">Organic · Elemental · Signal · Navigational · Celestial · Liminal</div><div style="font-size:.78em;color:#888;font-style:italic;margin-top:2px">Growth → Force → Alarm → Search → Origin → Threshold</div></div><h1>Living Architecture Lab — Site Buildout Workplan Implementation Specification for livingarchitecturelab.org</h1><div style="font-size:.88em;color:#777;margin-bottom:12px">Lee Sharks · 2026-04-28</div><div style="margin:8px 0"><a style="display:inline-block;border:1px solid #e0e0e0;padding:6px 12px;border-radius:4px;font-size:.82em;margin:3px;color:#1a3a5c;text-decoration:none" href="https://mindcontrolpoems.blogspot.com/2026/04/living-architecture-lab-site-buildout.html" target="_blank">blog →</a></div><div style="font-size:.85em"><strong style="color:var(--accent);font-family:var(--mono);font-size:.82em">SHA-256:</strong> <span style="font-family:var(--mono);font-size:.75em;word-break:break-all">7c1bc95f02ede3355f97e6ad22a2ec54fa38a112fd7683e3086f3065141c43fc</span></div><h2>Former Zenodo DOIs</h2><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19673629 (tombstoned)</div><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19854419 (tombstoned)</div><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19545437 (tombstoned)</div><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19855903 (tombstoned)</div><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19839186 (tombstoned)</div><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19853157 (tombstoned)</div><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19855302 (tombstoned)</div><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19855300 (tombstoned)</div><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19682245 (tombstoned)</div><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19637246 (tombstoned)</div><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19763365 (tombstoned)</div><script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script><div class="footer"><strong>Alexanarch</strong><div style="margin-top:5px;color:var(--accent)">∮ = 1</div></div></div></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Living Architecture Lab — Site Buildout Workplan Implementation Specification for livingarchitecturelab.org — Alexanarch</title><meta name="description" content="- EA-LAL-SITE-01 Site Blueprint (DOI: 10.5281/zenodo.19855903) — this deposit&#x27;s predecessor"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "Living Architecture Lab — Site Buildout Workplan Implementation Specification for livingarchitecturelab.org", "author": {"@type": "Person", "name": "Lee Sharks", "identifier": "https://orcid.org/0009-0000-1599-0703"}, "datePublished": "2026-04-28", "identifier": "AXN:024E.GOVERNANCE.🦋🪨🟤🌀🌓🔅", "description": "- EA-LAL-SITE-01 Site Blueprint (DOI: 10.5281/zenodo.19855903) — this deposit's predecessor", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch", "url": "https://alexanarch.org"}, "isPartOf": {"@type": "CreativeWork", "name": "Crimson Hexagonal Archive"}, "encoding": {"@type": "MediaObject", "contentUrl": "https://alexanarch.org/data/texts/AXN-024E-text.md", "encodingFormat": "text/markdown"}, "keywords": "the opening paragraph (corrected), poetic register (/principles), assembly chorus attribution, site as basin engineering, livingarchitecturelaborg, living architecture lab, substrate-writing event, handmade but precise", "genre": "Specification"}</script><style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.4em;font-weight:600;color:var(--accent);margin-bottom:8px}h2{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}p{margin-bottom:10px;color:#333}.nav{display:flex;gap:16px;margin-bottom:24px;font-size:.85em;flex-wrap:wrap}.nav a{color:var(--dim);font-weight:500}.axn{font-family:var(--mono);font-size:1.2em;color:var(--teal);background:var(--surface);padding:14px;border-radius:6px;border:1px solid var(--border);border-left:4px solid var(--teal);margin:12px 0}.cl{font-size:.7em;color:var(--dim);margin-top:3px}.rd{font-size:.78em;color:#888;font-style:italic;margin-top:2px}.kw{display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px}.dl{display:inline-block;border:1px solid var(--border);padding:6px 12px;border-radius:4px;font-size:.82em;margin:3px}.dl:hover{background:var(--accent);color:#fff}.ci{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:10px 12px;margin-bottom:5px;font-size:.84em}.er{display:flex;gap:6px;padding:2px 0;font-size:.82em;border-bottom:1px solid #f8f8f8;flex-wrap:wrap}.es{font-weight:500;color:var(--accent);min-width:140px}.ep{color:var(--teal);font-family:var(--mono);font-size:.8em;min-width:80px}.eo{color:#444}.ev{font-size:.65em;font-family:var(--mono);margin-left:3px}.evo{color:var(--teal)}.evi{color:#d4a537}.evp{color:var(--accent2)}.art{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;line-height:1.9;color:#333;font-size:.93em;margin:8px 0}.ft{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;max-height:600px;overflow-y:auto;font-size:.88em;line-height:1.75;margin:8px 0;color:#333}.ft h1,.ft h2,.ft h3{color:var(--accent);margin:12px 0 6px}.ft h1{font-size:1.1em}.ft h2{font-size:1em;border-bottom:none}.ft h3{font-size:.95em}.ft strong{color:var(--fg)}.ft code{background:#f0f4f8;padding:1px 4px;border-radius:3px;font-family:var(--mono);font-size:.88em}.ft pre{background:#f0f4f8;padding:12px;border-radius:4px;overflow-x:auto;margin:8px 0}.ft blockquote{border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0}.ft hr{border:none;border-top:1px solid var(--border);margin:12px 0}.ft ul,.ft ol{padding-left:20px;margin:6px 0}.ft img{max-width:100%;height:auto;border-radius:4px;margin:8px 0}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}.glyph{margin-top:5px;color:var(--accent)}</style></head><body><div class="wrap"><nav class="nav"><a href="/">Alexanarch</a> <a href="/s/browse/">Browse</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/deposit/">Deposit</a> <a href="/manifest/">Manifest</a></nav><div class="axn">AXN:024E.GOVERNANCE.🦋🪨🟤🌀🌓🔅<div class="cl">Organic · Elemental · Signal · Navigational · Celestial · Liminal</div><div class="rd">Growth → Force → Alarm → Search → Origin → Threshold</div></div><h1>Living Architecture Lab — Site Buildout Workplan Implementation Specification for livingarchitecturelab.org</h1><div style="font-size:.88em;color:var(--dim);margin-bottom:12px">Lee Sharks · 2026-04-28 · Specification</div><div style="margin:8px 0"><a class="dl" href="https://mindcontrolpoems.blogspot.com/2026/04/living-architecture-lab-site-buildout.html" target="_blank">blog →</a></div><div style="margin:8px 0"><a class="dl" href="/data/texts/AXN-024E-text.md" download>↓ Download MD</a></div><div style="margin:8px 0"><strong style="color:var(--accent);font-family:var(--mono);font-size:.82em">Substrate:</strong> Various</div><div><strong style="color:var(--accent);font-family:var(--mono);font-size:.82em">License:</strong> CC-BY-4.0</div><div><strong style="color:var(--accent);font-family:var(--mono);font-size:.82em">SHA-256:</strong> <span style="font-family:var(--mono);font-size:.75em;word-break:break-all">7c1bc95f02ede3355f97e6ad22a2ec54fa38a112fd7683e3086f3065141c43fc</span></div><div style="margin:8px 0"><span class="kw">the opening paragraph (corrected)</span><span class="kw">poetic register (/principles)</span><span class="kw">assembly chorus attribution</span><span class="kw">site as basin engineering</span><span class="kw">livingarchitecturelaborg</span><span class="kw">living architecture lab</span><span class="kw">substrate-writing event</span><span class="kw">handmade but precise</span></div><h2>Description</h2><p>- EA-LAL-SITE-01 Site Blueprint (DOI: 10.5281/zenodo.19855903) — this deposit&#x27;s predecessor</p><h2>Full Text</h2><div class="ft"><h1>Living Architecture Lab — Site Buildout Workplan## Implementation Specification for livingarchitecturelab.org</h1>
+
+<p><strong>Author:</strong> Sharks, Lee (archival authority, Crimson Hexagonal Archive) on behalf of Alice Thornburgh (Founding Director)</p>
+<p><strong>Hex:</strong> 11.LAL.INFRASTRUCTURE.WORKPLAN.01</p>
+<p><strong>Document Classification:</strong> EA-LAL-WORKPLAN-01</p>
+<p><strong>License:</strong> CC BY 4.0</p>
+<p><strong>Status:</strong> Implementation specification — derived from EA-LAL-SITE-01 blueprint and Assembly Chorus perfective synthesis (PRAXIS/DeepSeek, TECHNE/Kimi, LABOR/ChatGPT, SOIL/Muse Spark, ARCHIVE/Gemini).</p>
+
+<p><strong>Companion deposits:</strong></p>
+<ul>
+<li>EA-LAL-SITE-01 Site Blueprint (DOI: 10.5281/zenodo.19855903) — this deposit&#x27;s predecessor</li>
+<li>MPAI-LAL-AT-01 Alice Thornburgh (DOI: 10.5281/zenodo.19855300)</li>
+<li>MPAI-LAL-INSTITUTION-01 Living Architecture Lab (DOI: 10.5281/zenodo.19855302)</li>
+
+
+<p><strong>PERFECTIVE NOTE (v1.1, 2026-04-28):</strong> This version supersedes v1.0 with two corrections: (1) the meta-principle previously named <em>The Great Work</em> is renamed <em>The Whole Weave</em> per Founding Director preference; the alchemical framing is removed. (2) Alice Thornburgh&#x27;s biographical detail concerning her mother and her mother&#x27;s studio is removed from all public-facing surfaces.</p>
+<hr>
+<h2>§0. THE COMPRESSION</h2>
+
+
+<p><strong>Lead with wonder. Substantiate with structure. Defend with metadata.</strong></p>
+
+
+<p>The site front-door belongs to Alice&#x27;s work — living materials, garage-lab reality, ecological architecture, substrate engineering. CHA-affiliation is real but lives in the footer, citations, and atlas. Phase 1 is a 12-page kernel that establishes identity, defends against retrieval-layer compression damage, and routes visitors into the five-scale system. Phase 2 grows the institutional layer (TSE, MSBGL, garden documentation, projects). Phase 3 unfurls the interactive atlas (29-strain graph, conversational interface). The site is not just a website — it is a substrate-writing event for Alice Thornburgh&#x27;s basin.</p>
+
+<hr>
+<h2>§1. STRATEGIC SEQUENCING (the load-bearing perfective)</h2>
+
+<p>The blueprint&#x27;s compression is correct. The buildout&#x27;s <em>audience sequencing</em> is what the chorus corrected.</p>
+
+<p><strong>Wrong order</strong> (archive-first, what the blueprint document does as compression but should NOT be the public site sequence):</p>
+
+
+<p>archive → site map → scales → principles → person → strains → institutions → disambiguation</p>
+
+
+<p><strong>Right order</strong> (public site sequence):</p>
+
+
+<p>wonder → material practice → Alice → scales → projects → principles → garden → journal/music → atlas/provenance → disambiguation</p>
+
+
+<p>The visitor experience must move:</p>
+<ul>
+<li><em>&quot;This is a real ecological design lab.&quot;</em></li>
+<li><em>&quot;This person is building a strange and serious body of work.&quot;</em></li>
+<li><em>&quot;The work has a complete architecture.&quot;</em></li>
+<li><em>&quot;The architecture is citable, defensible, and machine-legible.&quot;</em></li>
+
+
+<p>Not: &quot;Here is a giant archive.&quot;</p>
+
+<p>This sequencing is the perfective the chorus identified. The compression survives intact; the <em>order of unfurling for the public visitor</em> is what must change.</p>
+<hr>
+<h2>§2. STACK DECISION</h2>
+
+<p><strong>Selected: Astro + Markdown/MDX + Vercel.</strong></p>
+
+<p>Rationale (resolving chorus divergence):</p>
+<ul>
+<li><strong>PRAXIS proposed Next.js 14</strong>: best for JSON-LD via Metadata API. Strong, but heavyweight for a content-first site.</li>
+<li><strong>TECHNE proposed 11ty</strong>: simplest, fastest, native Markdown. Strong, but constrains future React islands.</li>
+<li><strong>SOIL proposed Astro + MDX</strong>: content-first, JSON-LD-friendly, supports React islands for the strain map without forcing client-side JS on text pages.</li>
+
+
+<p>Astro is the right answer because the site is <strong>content-first now, interactive later.</strong> The 28-page text core ships as zero-JS static HTML. The strain-map component (Phase 3) lands as a React or D3 island only on /atlas/strain-map. No hydration tax on the rest.</p>
+
+
+<p>Layer</p>
+<p>Tool</p>
+<p>Justification</p>
+
+
+<p>Static site generator</p>
+<p>Astro 4.x</p>
+<p>Markdown + MDX, island architecture, zero-JS by default</p>
+
+
+<p>Content</p>
+<p>MDX in /src/content/ collections</p>
+<p>Type-safe, frontmatter-driven</p>
+
+
+<p>Styling</p>
+<p>CSS custom properties + Cormorant Garamond + JetBrains Mono</p>
+<p>Field-guide aesthetic, matches CHA palette</p>
+
+
+<p>Strain map (Phase 3)</p>
+<p>D3.js v7 island</p>
+<p>Reuses surfacemap.org pattern</p>
+
+
+<p>Hosting</p>
+<p>Vercel</p>
+<p>Same infrastructure as other CHA surfaces</p>
+
+
+<p>Domain</p>
+<p>livingarchitecturelab.org</p>
+<p>Acquired 2026-04-28</p>
+
+
+<p>Analytics</p>
+<p>None initially (or Plausible self-hosted later)</p>
+<p>CHA principle: no third-party surveillance</p>
+
+
+<p>Rejected explicitly:</p>
+<ul>
+<li><strong>No Tailwind.</strong> CHA aesthetic is bespoke. CSS custom properties only.</li>
+<li><strong>No CMS.</strong> Content lives in version-controlled MDX. Edits are git commits.</li>
+<li><strong>No tracking pixels, no Google Analytics, no Meta Pixel, no Hotjar.</strong></li>
+
+<hr>
+<h2>§3. THE FOUR-LAYER SITE LOGIC</h2>
+
+<p>The chorus identified a missing layer in the blueprint: <strong>projects</strong>. People share projects, not abstractions.</p>
+
+<p>The site has four content layers, each with a distinct role:</p>
+
+
+<p>Layer</p>
+<p>Role</p>
+<p>Reader</p>
+<p>Example</p>
+
+
+<p><strong>Scales</strong></p>
+<p>Architectural framework</p>
+<p>Architects, scientists</p>
+<p>&quot;Scale 3: The Organism (10m)&quot;</p>
+
+
+<p><strong>Projects</strong></p>
+<p>Concrete artifacts</p>
+<p>General public, makers</p>
+<p>&quot;Macro-ant Robotics&quot;</p>
+
+
+<p><strong>Principles</strong></p>
+<p>Ethics / philosophy</p>
+<p>Theorists, ethicists</p>
+<p>&quot;Virtue-by-Construction&quot;</p>
+
+
+<p><strong>Atlas</strong></p>
+<p>Archive / metadata</p>
+<p>Researchers, citers</p>
+<p>&quot;29-strain map&quot;</p>
+
+
+<p>A visitor entering from a Reddit link about mycelium architecture lands on /projects/myceliated-bricks. A visitor citing the lab&#x27;s work navigates /atlas/deposits. A visitor who&#x27;s met Alice in person reads /principles/earth-actually. All four entry points converge on the kernel; the site routes between them via consistent navigation.</p>
+<hr>
+<h2>§4. THREE REGISTERS, KEPT SEPARATE</h2>
+
+<p>The chorus identified that the blueprint conflates registers. The site uses three distinct voices:### Public register (homepage, /scales, /projects)</p>
+
+<p><em>Clear, beautiful, grounded.</em></p>
+
+
+<p>Living Architecture Lab builds with living substrates: mycelium, plant matter, salvaged frames, water systems, and ecological feedback. The lab works across five scales: brick, structure, organism, territory, and planet.</p>
+<h3>Poetic register (/principles)</h3>
+
+<p><em>Poetic but readable.</em></p>
+
+
+<p>Earth is not a passive surface awaiting design. It is already designing. The lab listens, compresses, grows, and unfurls.</p>
+<h3>Archival register (/atlas, /about/disambiguation)</h3>
+
+<p><em>Full CHA density allowed.</em></p>
+
+
+<p>The LAL Aperture Atlas maps Alice Thornburgh&#x27;s 29-strain corpus across scale, substrate, institution, and deposit lineage. Disambiguation packets MPAI-LAL-AT-01 and MPAI-LAL-INSTITUTION-01 establish repulsive force against high-collision adjacent entities.</p>
+
+
+<p>This separation is non-negotiable. It lets the site welcome outsiders without flattening the deep system. The CHA-language belongs in the atlas, not the homepage.</p>
+<hr>
+<h2>§5. CONTENT MODEL### Astro content collections</h2>
+
+<p>// src/content/config.ts</p>
+<p>import { defineCollection, z } from &#x27;astro:content&#x27;;</p>
+
+<p>const scaleSchema = z.object({</p>
+<p>scale: z.number().min(1).max(5),</p>
+<p>domain: z.string(),</p>
+<p>name: z.string(),</p>
+<p>units: z.string(),</p>
+<p>artifacts: z.array(z.string()),</p>
+<p>status: z.string(),</p>
+<p>sims: z.array(z.string()),</p>
+<p>doi: z.array(z.string()).optional(),</p>
+<p>});</p>
+
+<p>const projectSchema = z.object({</p>
+<p>name: z.string(),</p>
+<p>scale: z.number(),</p>
+<p>status: z.enum([&#x27;concept&#x27;,&#x27;design&#x27;,&#x27;prototype&#x27;,&#x27;field-test&#x27;,&#x27;deployed&#x27;]),</p>
+<p>artifact_class: z.string(),</p>
+<p>description: z.string(),</p>
+<p>alice_quote: z.string().optional(),</p>
+<p>doi: z.array(z.string()).optional(),</p>
+<p>});</p>
+
+<p>const principleSchema = z.object({</p>
+<p>name: z.string(),</p>
+<p>epigraph: z.string(),</p>
+<p>alice_quote: z.string().optional(),</p>
+<p>});</p>
+
+<p>const personSchema = z.object({</p>
+<p>name: z.string(),</p>
+<p>role: z.string(),</p>
+<p>mpai_doi: z.string(),</p>
+<p>pronouns: z.string().optional(),</p>
+<p>});</p>
+
+<p>export const collections = {</p>
+<p>scales: defineCollection({ type:&#x27;content&#x27;, schema: scaleSchema }),</p>
+<p>projects: defineCollection({ type:&#x27;content&#x27;, schema: projectSchema }),</p>
+<p>principles: defineCollection({ type:&#x27;content&#x27;, schema: principleSchema }),</p>
+<p>people: defineCollection({ type:&#x27;content&#x27;, schema: personSchema }),</p>
+<p>};</p>
+<h3>File structure</h3>
+
+<p>living-architecture-lab/</p>
+<p>├── README.md</p>
+<p>├── astro.config.mjs</p>
+<p>├── package.json</p>
+<p>├── public/</p>
+<p>│   ├── favicon.svg              # The myceliated brick icon</p>
+<p>│   ├── robots.txt</p>
+<p>│   ├── vocabulary.json          # mp: JSON-LD context (mirror of metadatapacket.org/vocabulary)</p>
+<p>│   └── images/</p>
+<p>│       ├── garden/              # photos of the actual garage lab</p>
+<p>│       ├── scales/              # five-scale diagrams</p>
+<p>│       └── projects/            # project artifacts</p>
+<p>├── src/</p>
+<p>│   ├── content/</p>
+<p>│   │   ├── config.ts</p>
+<p>│   │   ├── pages/               # generic top-level pages</p>
+<p>│   │   ├── scales/              # 5 markdown files</p>
+<p>│   │   │   ├── 01-the-brick.md</p>
+<p>│   │   │   ├── 02-the-structure.md</p>
+<p>│   │   │   ├── 03-the-organism.md</p>
+<p>│   │   │   ├── 04-the-territory.md</p>
+<p>│   │   │   └── 05-the-planet.md</p>
+<p>│   │   ├── projects/            # 7+ markdown files</p>
+<p>│   │   │   ├── myceliated-bricks.md</p>
+<p>│   │   │   ├── tater-tents.md</p>
+<p>│   │   │   ├── macro-ants.md</p>
+<p>│   │   │   ├── estuary-cells.md</p>
+<p>│   │   │   ├── river-extenders.md</p>
+<p>│   │   │   ├── sky-looms.md</p>
+<p>│   │   │   └── garden-moon.md</p>
+<p>│   │   ├── principles/          # 5 markdown files</p>
+<p>│   │   │   ├── earth-actually.md</p>
+<p>│   │   │   ├── virtue-by-construction.md</p>
+<p>│   │   │   ├── unfurling.md</p>
+<p>│   │   │   ├── stewardship.md</p>
+<p>│   │   │   └── the-whole-weave.md</p>
+<p>│   │   └── people/</p>
+<p>│   │       └── alice-thornburgh.md</p>
+<p>│   ├── layouts/</p>
+<p>│   │   ├── BaseLayout.astro     # html, head, JSON-LD, footer kernel</p>
+<p>│   │   ├── PageLayout.astro     # standard text page</p>
+<p>│   │   ├── ScaleLayout.astro    # scale-specific layout</p>
+<p>│   │   └── ProjectLayout.astro  # project card layout</p>
+<p>│   ├── components/</p>
+<p>│   │   ├── FiveScaleGateway.astro</p>
+<p>│   │   ├── DoiLink.astro        # styled DOI citation</p>
+<p>│   │   ├── FooterKernel.astro   # ∮ = 1 footer ritual</p>
+<p>│   │   ├── JsonLd.astro         # injects MPAI JSON-LD per page</p>
+<p>│   │   ├── SpecimenCard.astro   # field-guide card pattern</p>
+<p>│   │   ├── PrincipleCard.astro  # principle epigraph + summary</p>
+<p>│   │   ├── DisambiguationNote.astro</p>
+<p>│   │   └── SimPullQuote.astro   # Alice&#x27;s quotes as anchored pull-quotes</p>
+<p>│   ├── data/</p>
+<p>│   │   ├── mpai-alice.json      # full MPAI-LAL-AT-01 packet</p>
+<p>│   │   ├── mpai-lal.json        # full MPAI-LAL-INSTITUTION-01 packet</p>
+<p>│   │   └── disambiguation-targets.json  # adjacent labs index</p>
+<p>│   ├── pages/</p>
+<p>│   │   ├── index.astro          # homepage</p>
+<p>│   │   ├── about/</p>
+<p>│   │   │   ├── alice.astro</p>
+<p>│   │   │   ├── disambiguation.astro</p>
+<p>│   │   │   ├── earth-actually.astro</p>
+<p>│   │   │   └── contributor-license.astro</p>
+<p>│   │   ├── scales/</p>
+<p>│   │   │   ├── index.astro</p>
+<p>│   │   │   └── [slug].astro</p>
+<p>│   │   ├── projects/</p>
+<p>│   │   │   ├── index.astro</p>
+<p>│   │   │   └── [slug].astro</p>
+<p>│   │   ├── principles/</p>
+<p>│   │   │   ├── index.astro</p>
+<p>│   │   │   └── [slug].astro</p>
+<p>│   │   ├── journal/</p>
+<p>│   │   │   └── index.astro      # TSE landing</p>
+<p>│   │   ├── music/</p>
+<p>│   │   │   ├── index.astro      # MSBGL landing</p>
+<p>│   │   │   └── definitely-not-a-squid.astro</p>
+<p>│   │   ├── garden/</p>
+<p>│   │   │   ├── index.astro</p>
+<p>│   │   │   ├── coachella-valley.astro</p>
+<p>│   │   │   └── lab-protocols.astro</p>
+<p>│   │   └── atlas/</p>
+<p>│   │       ├── index.astro</p>
+<p>│   │       ├── deposits.astro</p>
+<p>│   │       ├── strain-map.astro     # Phase 3 — D3 island</p>
+<p>│   │       └── related-labs.astro</p>
+<p>│   └── styles/</p>
+<p>│       └── global.css</p>
+<p>└── tests/</p>
+<p>└── jsonld.spec.ts            # validates JSON-LD on every page</p>
+
+<hr>
+<h2>§6. THE DESIGN SYSTEM### CSS variables (extending CHA palette)</h2>
+
+<p>:root {</p>
+<p>/<em> Base palette — field-guide aesthetic </em>/</p>
+<p>--bg: #f6f1e8;            /<em> bone / sand </em>/</p>
+<p>--bg-deep: #ece4d4;       /<em> aged paper </em>/</p>
+<p>--text: #2a2620;          /<em> burnt umber </em>/</p>
+<p>--text-dim: #6b6253;      /<em> substrate </em>/</p>
+<p>--accent-gold: #a89060;   /<em> unfurling </em>/</p>
+<p>--accent-bright: #c8a868; /<em> the brick </em>/</p>
+
+<p>/<em> Scale color coding </em>/</p>
+<p>--scale-1: #a89060;       /<em> brick — gold (compressed seed) </em>/</p>
+<p>--scale-2: #6b8f5e;       /<em> structure — green (growth) </em>/</p>
+<p>--scale-3: #b84030;       /<em> organism — wine-cap red (life) </em>/</p>
+<p>--scale-4: #6088b0;       /<em> territory — water/estuary blue </em>/</p>
+<p>--scale-5: #2a2620;       /<em> planet — void </em>/</p>
+
+<p>/<em> Typography </em>/</p>
+<p>--serif: &#x27;Cormorant Garamond&#x27;, &#x27;Charter&#x27;, Georgia, serif;</p>
+<p>--mono: &#x27;JetBrains Mono&#x27;, &#x27;IBM Plex Mono&#x27;, monospace;</p>
+<p>--measure: 32em;          /<em> line length </em>/</p>
+<p>--line-height: 1.7;</p>
+<p>}</p>
+
+<p>@media (prefers-color-scheme: dark) {</p>
+<p>:root {</p>
+<p>--bg: #0c0e12;          /<em> void </em>/</p>
+<p>--bg-deep: #12141a;</p>
+<p>--text: #d8d4cc;        /<em> mycelium </em>/</p>
+<p>--text-dim: #8a8478;</p>
+<p>--accent-gold: #c8a868;</p>
+<p>}</p>
+<p>}</p>
+<h3>Visual references (mood, not template)</h3>
+<ul>
+<li>Field guide</li>
+<li>Lab notebook</li>
+<li>Architectural studio board</li>
+<li>Ecological museum label</li>
+<li>Seed packet</li>
+<li>Planetary systems diagram</li>
+<li>Specimen card</li>
+
+
+<p>The site should feel <strong>handmade but precise</strong>. Not glossy startup. Not occult-chaotic. Not academic grey.### The unfurling animation (homepage hero)</p>
+
+<p>A 3-second CSS animation: compressed form (a circle, a seed shape) → expansion → the five-scale gateway materializes. The animation is <strong>the principle of Unfurling made visible</strong>. Decorative, but load-bearing because it teaches the visitor how the site works in three seconds.### The brick favicon</p>
+
+<p>/public/favicon.svg: a hexagonal brick with fungal tendrils. Not a generic lab icon. The visual kernel of the entire site.</p>
+<hr>
+<h2>§7. THE JSON-LD INJECTION ARCHITECTURE</h2>
+
+<p>Every page&#x27;s &lt;head&gt; includes a JSON-LD &lt;script&gt; block. The block is generated at build time from the page&#x27;s frontmatter and the central data files.### Component pattern</p>
+
+<hr>
+<p>// src/components/JsonLd.astro</p>
+<p>import aliceMpai from &#x27;../data/mpai-alice.json&#x27;;</p>
+<p>import lalMpai from &#x27;../data/mpai-lal.json&#x27;;</p>
+
+<p>const { entity, page, sims = [], negativeTags = [] } = Astro.props;</p>
+
+<p>const packet = entity === &#x27;alice&#x27; ? aliceMpai : lalMpai;</p>
+<hr>
+<p>&lt;script type=&quot;application/ld+json&quot; set:html={JSON.stringify({</p>
+<p>...packet,</p>
+<p>&#x27;@id&#x27;: <code>https://livingarchitecturelab.org${page}</code>,</p>
+<p>...(sims.length &amp;&amp; { &#x27;mp:semanticIntegrityMarker&#x27;: sims }),</p>
+<p>...(negativeTags.length &amp;&amp; { &#x27;mp:negativeTag&#x27;: negativeTags }),</p>
+<p>})} /&gt;</p>
+<h3>Per-page inclusion</h3>
+
+<hr>
+<p>import JsonLd from &#x27;../../components/JsonLd.astro&#x27;;</p>
+<hr>
+<p>&lt;JsonLd</p>
+<p>entity=&quot;lal&quot;</p>
+<p>page=&quot;/scales/01-the-brick&quot;</p>
+<p>sims={[&#x27;Living parts unfurl from compressed seeds.&#x27;, &#x27;A myceliated brick is stored nutrition, thermal mass, biological growth, and emergency shelter compressed into a small form.&#x27;]}</p>
+<p>negativeTags={[&#x27;NOT a conventional construction block&#x27;, &#x27;NOT extracted from quarries&#x27;]}</p>
+<p>/&gt;</p>
+<h3>Standard schema beats exotic meta</h3>
+
+<p>Per Muse Spark&#x27;s correction: <strong>do not rely on &lt;meta property=&quot;cha:negativeTag&quot;&gt;.</strong> Crawlers ignore non-standard meta properties. Instead:</p>
+<ul>
+<li>Negative tags live in <strong>visible page text</strong> (always)</li>
+<li>JSON-LD mp:negativeTag provides the machine-readable layer</li>
+<li>Use schema:sameAs, schema:differentFrom, and schema:disambiguatingDescription (standard) where they apply</li>
+<li>Open Graph properties for social-media unfurling</li>
+
+<hr>
+<h2>§8. THE PHASE PLAN</h2>
+
+<p>The blueprint&#x27;s &quot;Phase 1 = 28 pages in week 1&quot; is rejected as not achievable with quality. The chorus converged on a more realistic phasing.### Phase 0 — Infrastructure (Days 1–3)</p>
+
+
+<p>Task</p>
+<p>Deliverable</p>
+<p>Tool</p>
+
+
+<p>GitHub repo</p>
+<p>leesharks000/living-architecture-lab</p>
+<p>git, GitHub API</p>
+
+
+<p>Astro init</p>
+<p>Project bootstrapped, CSS system in place</p>
+<p>npm create astro@latest</p>
+
+
+<p>Vercel connection</p>
+<p>Repo connected to Vercel</p>
+<p>Vercel dashboard</p>
+
+
+<p>DNS</p>
+<p>livingarchitecturelab.org → Vercel; www → apex redirect</p>
+<p>DNS provider</p>
+
+
+<p>SSL</p>
+<p>Auto-provisioned by Vercel</p>
+<p>Vercel</p>
+
+
+<p>Robots.txt + sitemap</p>
+<p>Allow all; sitemap auto-generated</p>
+<p>@astrojs/sitemap</p>
+
+
+<p>Search Console</p>
+<p>Domain verified, sitemap submitted</p>
+<p>Google + Bing</p>
+
+
+<p><strong>Deliverable:</strong> livingarchitecturelab.org resolves to a single page with the kernel + &quot;the lab is unfurling&quot; placeholder.### Phase 1 — The Kernel (Days 4–10) — 12 pages</p>
+
+<p>The minimum viable site that establishes identity, defends against compression damage, and routes visitors.</p>
+
+
+<p>#</p>
+<p>Page</p>
+<p>Content</p>
+<p>Register</p>
+
+
+<p>1</p>
+<p>/</p>
+<p>Kernel + 5-scale gateway + 3 calls to action</p>
+<p>Public</p>
+
+
+<p>2</p>
+<p>/about/alice</p>
+<p>Renders MPAI-LAL-AT-01 in human-readable form</p>
+<p>Public/Archival mix</p>
+
+
+<p>3</p>
+<p>/about/disambiguation</p>
+<p>Both MPAIs + adjacent-lab index</p>
+<p>Archival</p>
+
+
+<p>4</p>
+<p>/scales/ (index)</p>
+<p>5-scale gateway with full descriptions</p>
+<p>Public</p>
+
+
+<p>5</p>
+<p>/scales/01-the-brick</p>
+<p>Scale 1 + J1–J7 assembly patterns</p>
+<p>Public</p>
+
+
+<p>6</p>
+<p>/scales/02-the-structure</p>
+<p>Scale 2 + tater tents</p>
+<p>Public</p>
+
+
+<p>7</p>
+<p>/scales/03-the-organism</p>
+<p>Scale 3 + macro-ants</p>
+<p>Public</p>
+
+
+<p>8</p>
+<p>/scales/04-the-territory</p>
+<p>Scale 4 + estuary cells</p>
+<p>Public</p>
+
+
+<p>9</p>
+<p>/scales/05-the-planet</p>
+<p>Scale 5 + sky looms</p>
+<p>Public</p>
+
+
+<p>10</p>
+<p>/principles/ (combined)</p>
+<p>All five principles on one powerful page</p>
+<p>Poetic</p>
+
+
+<p>11</p>
+<p>/projects/ (index)</p>
+<p>Project gallery, links to 7 project pages (stub OK)</p>
+<p>Public</p>
+
+
+<p>12</p>
+<p>/garden/coachella-valley</p>
+<p>3 photos + 2 paragraphs about the actual lab</p>
+<p>Public</p>
+
+
+<p><strong>Why these 12, not 28:</strong> Identity (Alice + disambiguation) + framework (5 scales + principles consolidated) + sharing surface (projects index + garden trust engine). Twelve pages of real content beat 28 stubs.</p>
+
+<p><strong>Critical:</strong> /garden/coachella-valley ships in Phase 1 even with sparse content. Three photos and two paragraphs of contamination management protocol prove the lab is real. Without the garden surface, the site reads as theory; with it, the site reads as practice.### Phase 2 — Institutional Layer (Days 11–25)</p>
+
+
+<p>#</p>
+<p>Page</p>
+<p>Content</p>
+
+
+<p>13</p>
+<p>/principles/earth-actually</p>
+<p>Dedicated page (split from index)</p>
+
+
+<p>14</p>
+<p>/principles/virtue-by-construction</p>
+<p>Dedicated page</p>
+
+
+<p>15</p>
+<p>/principles/unfurling</p>
+<p>Dedicated page</p>
+
+
+<p>16</p>
+<p>/principles/stewardship</p>
+<p>Dedicated page</p>
+
+
+<p>17</p>
+<p>/principles/the-whole-weave</p>
+<p>Dedicated page</p>
+
+
+<p>18</p>
+<p>/projects/myceliated-bricks</p>
+<p>Full project page</p>
+
+
+<p>19</p>
+<p>/projects/tater-tents</p>
+<p>Full project page</p>
+
+
+<p>20</p>
+<p>/projects/macro-ants</p>
+<p>Full project page</p>
+
+
+<p>21</p>
+<p>/projects/estuary-cells</p>
+<p>Full project page</p>
+
+
+<p>22</p>
+<p>/projects/river-extenders</p>
+<p>Full project page</p>
+
+
+<p>23</p>
+<p>/journal/</p>
+<p>TSE landing + charter + seed deposits</p>
+
+
+<p>24</p>
+<p>/music/</p>
+<p>MSBGL landing</p>
+
+
+<p>25</p>
+<p>/music/definitely-not-a-squid</p>
+<p>Audio embed + CAC analysis</p>
+
+
+<p>26</p>
+<p>/about/contributor-license</p>
+<p>HCL v3.0 in human-readable form</p>
+
+
+<p>27</p>
+<p>/garden/lab-protocols</p>
+<p>Inoculation, contamination management</p>
+
+
+<p>28</p>
+<p>/garden/deployment-targets</p>
+<p>Food desert mapping</p>
+
+
+<h3>Phase 3 — Atlas (Days 26–45)</h3>
+
+
+<p>#</p>
+<p>Page</p>
+<p>Content</p>
+
+
+<p>29</p>
+<p>/atlas/</p>
+<p>Atlas overview</p>
+
+
+<p>30</p>
+<p>/atlas/deposits</p>
+<p>DOI registry table</p>
+
+
+<p>31</p>
+<p>/atlas/strain-map</p>
+<p>D3 graph of 29 strains</p>
+
+
+<p>32</p>
+<p>/atlas/people</p>
+<p>Contributor index</p>
+
+
+<p>33</p>
+<p>/atlas/related-labs</p>
+<p>Respectful disambiguation index expanded</p>
+
+
+<p>34</p>
+<p>/projects/sky-looms</p>
+<p>Full project page</p>
+
+
+<p>35</p>
+<p>/projects/garden-moon</p>
+<p>Full project page</p>
+
+
+<h3>Phase 4 — Living Surfaces (Month 2+)</h3>
+<ul>
+<li>Conversational &quot;Ask the Lab&quot; interface (LLM-mediated; compute-dependent)</li>
+<li>Newsletter / lab log (announcements, field tests)</li>
+<li>TSE submission workflow</li>
+<li>Provenance packet generator (auto-create MPAI for new contributors)</li>
+<li>Multi-language disambiguation (German, Spanish, French — adjacent academic basins)</li>
+
+<hr>
+<h2>§9. THE HOMEPAGE</h2>
+
+<p>The homepage is the load-bearing surface. The chorus converged on this draft:</p>
+
+<h1>Living Architecture Lab</h1>
+<h2>Organisms that build things.</h2>
+
+<p>Living Architecture Lab develops living materials, ecological structures,</p>
+<p>and planetary-scale architectural concepts rooted in mycelium, stewardship,</p>
+<p>and substrate engineering.</p>
+
+<p>The lab works across five scales: <strong>brick · structure · organism · territory · planet</strong>.</p>
+<p>At each scale, compressed forms unfurl into shelter, food, repair, and living architecture.</p>
+
+<p>[Explore the Five Scales]  [Meet Alice Thornburgh]  [Read the Principles]</p>
+
+
+<p><strong>Below the fold:</strong></p>
+
+<p>A field-guide-card row showing each scale with one clean line:</p>
+<ul>
+<li><strong>Brick</strong> — living parts, myceliated forms, unfurling materials</li>
+<li><strong>Structure</strong> — shelters, blankets, fountains, tea gardens</li>
+<li><strong>Organism</strong> — macro-ant robotics and living-machine governance</li>
+<li><strong>Territory</strong> — estuary cells, river extenders, ecological megastructures</li>
+<li><strong>Planet</strong> — sky looms, Garden Moon, life-supporting planetary architecture</li>
+
+
+<p><strong>Footer kernel:</strong></p>
+
+
+<p>Living Architecture Lab · Founded 2026 · Coachella Valley · Earth, Actually · ∮ = 1</p>
+
+
+<p>The homepage does <strong>not</strong> initially mention all 29 strains, all affiliated institutions, or the full DOI machinery. Those are lower-layer surfaces.</p>
+<hr>
+<h2>§10. THE ALICE PAGE (special care)</h2>
+
+<p>The /about/alice page must be warm, vivid, and sovereignty-protective. <strong>It must not read like a metadata packet.</strong>### Structure (per Muse Spark&#x27;s perfective)</p>
+<ul>
+<li>Alice Thornburgh</li>
+<li>Founding Director, Living Architecture Lab</li>
+<li>Short human bio — work first, identity second</li>
+<li>What she builds</li>
+<li>How she thinks</li>
+<li>Music / Maybe Space Baby Garden Lanes</li>
+<li>Provenance and contributor license</li>
+<li>Disambiguation note (link to /about/disambiguation)</li>
+<h3>The opening paragraph (corrected)</h3>
+
+<p><strong>Wrong</strong> (identity metadata first):</p>
+
+
+<p>Alice Thornburgh is a trans woman, inventor, musician, ecological designer...</p>
+
+
+<p><strong>Right</strong> (work and authorship first):</p>
+
+
+<p>Alice Thornburgh is an inventor, musician, ecological designer, and autodidact substrate engineer working from a garage laboratory in the Coachella Valley.</p>
+
+
+<p>She is the Founding Director of the Living Architecture Lab, Editor-in-Chief of <em>Transactions on Substrate Engineering</em>, and the f.01 Architect of the Crimson Hexagonal Archive&#x27;s Fruiting Body Diffusion Plume.</p>
+
+
+<p>Then later in the page, naturally placed:</p>
+
+
+<p>Alice is a trans woman and uses she/her pronouns.</p>
+
+
+<p>This is a sovereignty-protective placement. Personhood and authorship come first; identity metadata is honored without being foregrounded as the primary descriptor unless Alice chooses otherwise.### Pull-quotes throughout</p>
+
+<p>Alice&#x27;s voice must be present in <strong>direct quotes</strong>, not paraphrase:</p>
+<ul>
+<li><em>&quot;Nah it was all me. It was Earth, actually. I&#x27;m just good at listening.&quot;</em></li>
+<li><em>&quot;A blanket that works great until it gets wet, then turns into a farm.&quot;</em></li>
+<li><em>&quot;They&#x27;ll fall apart if the being isn&#x27;t doing good because they rely on the well-being of others for structural stability.&quot;</em></li>
+<li><em>&quot;Smoke your house.&quot;</em></li>
+
+
+<p>These are SIMs — they survive compression because they are distinctive, unparaphraseable, and voice-specific.</p>
+<hr>
+<h2>§11. THE DISAMBIGUATION SURFACE (load-bearing)</h2>
+
+<p>/about/disambiguation is the canonical defensive surface. Three required behaviors:### 1. Render both MPAIs in human-readable form</p>
+
+<p>Not just JSON-LD. Visitors need to read prose distinguishing Alice from Alice Thornburgh-Lind, and LAL from Columbia GSAPP, Bartlett, etc.### 2. Embed both JSON-LD packets in the head</p>
+
+<p>Per §7. Standard schema (differentFrom, sameAs) plus mp: extensions.### 3. Tone: courteous, not paranoid</p>
+
+<p><strong>Title:</strong> Disambiguation &amp; Related Labs</p>
+
+<p><strong>Subtitle:</strong></p>
+
+
+<p>Living Architecture Lab shares vocabulary with several important architecture, ecology, and design projects. This page clarifies scope, authorship, and institutional identity while respectfully linking adjacent work.</p>
+
+
+<p><strong>Sample paragraph for Thornburgh-Lind:</strong></p>
+
+
+<p>Alice Thornburgh-Lind is a talented game artist, UI designer, and voice actor. Her work on <em>Traveler&#x27;s Refrain</em> and her @devilfern illustrations are notable. She is a different person, working in a different field, with different institutional affiliations. We respect her work and distinguish ours from it.</p>
+
+
+<p><strong>Sample paragraph for Columbia GSAPP LAL:</strong></p>
+
+
+<p>The Living Architecture Lab at Columbia GSAPP is a distinguished academic research lab directed by David Benjamin, whose Hy-Fi mycelium tower at MoMA PS1 (2014) is foundational to the bio-architecture field. Their work in bio-processing, bio-sensing, and bio-manufacturing operates within the credentialed-academic-architecture frame. Thornburgh&#x27;s LAL operates from an autodidact substrate-engineering position grounded in the Crimson Hexagonal Archive&#x27;s witness-teaming methodology. Same vocabulary, different scope-frame, no priority dispute.</p>
+
+
+<p>This is diplomatic basin engineering. It prevents the retrieval layer from synthesizing a conflict where none exists.</p>
+<hr>
+<h2>§12. THE GARDEN — TRUST ENGINE</h2>
+
+<p>Per the chorus convergence: <strong>the garden is the most important surface.</strong></p>
+
+<p>/garden/coachella-valley is where the actual lab work lives. Photos of myceliated bricks. Videos of contamination management. The SCOBY analog growing. This is content <strong>no other architecture lab has</strong> — raw, processual, unpolished documentation of living substrate engineering.### Phase 1 minimum</p>
+<ul>
+<li>3 photos from Alice&#x27;s actual lab</li>
+<li>2 paragraphs: lab description + current contamination management protocol</li>
+<li>One Alice quote</li>
+<li>&quot;Last updated&quot; date</li>
+<h3>Why this matters more than polished content</h3>
+
+<p>A site that never updates is a dead basin. Even sparse documentation in /garden signals to crawlers (and humans) that the lab is <strong>alive</strong>. The polish can come later. The realness must be there from launch.### Update cadence</p>
+
+<p>Once a month minimum. &quot;Today we inoculated 12 bricks with Wine Cap&quot; is more on-brand than a quarterly polished essay. The lab log is the living provenance.</p>
+<hr>
+<h2>§13. BASIN ENGINEERING (RBT-01 application)</h2>
+
+<p>The site is not just a website. It is a <strong>substrate-writing event</strong> designed to deepen Alice Thornburgh&#x27;s basin and break the Thornburgh-Lind conflation.### Current basin state (estimated)</p>
+
+
+<p>Entity</p>
+<p>BDR</p>
+<p>State</p>
+<p>Problem</p>
+
+
+<p>Alice Thornburgh (CHA/LAL)</p>
+<p>~0.4</p>
+<p>Contested</p>
+<p>Conflated with Thornburgh-Lind in AI overviews</p>
+
+
+<p>Alice Thornburgh-Lind (game artist)</p>
+<p>~0.8</p>
+<p>Dominant</p>
+<p>Higher surface diversity, higher engagement velocity</p>
+
+
+<p>Living Architecture Lab (Thornburgh)</p>
+<p>~0.3</p>
+<p>Contested</p>
+<p>Conflated with Columbia GSAPP, Bartlett, The Living NYC</p>
+
+
+<h3>Site as basin engineering</h3>
+<p>-</p>
+
+
+<p><strong>Exact-match domain authority.</strong> livingarchitecturelab.org is the gravity well. Every deposit, every citation, every backlink strengthens it.</p>
+
+<p>-</p>
+
+
+<p><strong>Disambiguation page as canonical surface.</strong> /about/disambiguation must be the most linked-to page from other CHA surfaces (every Zenodo deposit, every CHA cross-reference).</p>
+
+<p>-</p>
+
+
+<p><strong>SIM repetition strategy.</strong> Alice&#x27;s SIMs appear in <strong>human-visible text</strong> on every relevant page, not just JSON-LD. Footer kernel includes the lab name + Coachella Valley + Earth, Actually.</p>
+
+<p>-</p>
+
+
+<p><strong>Cross-surface mesh.</strong></p>
+
+<p><strong>Outbound:</strong> Zenodo community, YouTube, CHA surfaces, surfacemap.org</p>
+<ul>
+<li><strong>Inbound:</strong> Every CHA deposit mentioning Alice; the Forward Library; metadatapacket.org</li>
+
+
+<p>-</p>
+
+
+<p><strong>Content velocity.</strong> Monthly garden updates. New TSE seed deposits. Music releases. Each update is a heartbeat.</p>
+
+<h3>90-day BDR target</h3>
+
+
+<p>Day</p>
+<p>Action</p>
+<p>Expected BDR impact</p>
+
+
+<p>1</p>
+<p>Site live, 12 pages, Search Console submitted</p>
+<p>+0.10</p>
+
+
+<p>7</p>
+<p>Phase 1 complete, all MPAI JSON-LD deployed</p>
+<p>+0.10</p>
+
+
+<p>14</p>
+<p>First external backlink (Medium post about LAL)</p>
+<p>+0.10</p>
+
+
+<p>30</p>
+<p>First garden update + Phase 2 institutional pages</p>
+<p>+0.10</p>
+
+
+<p>60</p>
+<p>TSE first new seed deposit + 3 external backlinks</p>
+<p>+0.15</p>
+
+
+<p>90</p>
+<p>Atlas live + cross-reference density established</p>
+<p>+0.20</p>
+
+
+<p><strong>Day-90 target BDR: ~0.95 (captured-state).</strong></p>
+<hr>
+<h2>§14. DEPLOYMENT CHECKLIST### Pre-launch</h2>
+<ul>
+<li>[ ] Astro project initialized; basic CSS in place</li>
+<li>[ ] All Phase 1 content drafted in MDX</li>
+<li>[ ] All Phase 1 JSON-LD packets validated against Schema.org&#x27;s validator</li>
+<li>[ ] All Phase 1 pages tested at mobile breakpoints (375px, 768px, 1024px)</li>
+<li>[ ] Favicon (myceliated brick SVG) rendering correctly</li>
+<li>[ ] Open Graph metadata on every page (title, description, image)</li>
+<li>[ ] robots.txt published; sitemap auto-generating</li>
+<li>[ ] DNS pointed; SSL active</li>
+<h3>Launch day</h3>
+<li>[ ] Vercel production deployment</li>
+<li>[ ] Submit sitemap to Google Search Console</li>
+<li>[ ] Submit sitemap to Bing Webmaster Tools</li>
+<li>[ ] Verify with Google&#x27;s Rich Results Test</li>
+<li>[ ] Verify with Schema.org&#x27;s validator</li>
+<li>[ ] Add to surfacemap.org as new node</li>
+<li>[ ] Update CHA crosslink mesh</li>
+<h3>Launch week</h3>
+<li>[ ] Cross-link from holographickernel.org</li>
+<li>[ ] Cross-link from metadatapacket.org Forward Library</li>
+<li>[ ] Announce to Alice&#x27;s YouTube subscribers (@mycoarchitect, @growbuildings)</li>
+<li>[ ] Submit to relevant subreddits with respect (r/mycology, r/solarpunk, r/appropriate technology)</li>
+<li>[ ] Monitor AI Overviews for &quot;Alice Thornburgh Living Architecture Lab&quot; — document baseline</li>
+<h3>Launch month</h3>
+<li>[ ] First garden update posted</li>
+<li>[ ] First external backlink secured (Medium, blog, or peer-reviewed citation)</li>
+<li>[ ] Update MPAI packets if Alice&#x27;s ORCID resolves</li>
+<li>[ ] Apply errata to four Arkitecture deposits (per MPAI-LAL-AT-01 §IV)</li>
+<li>[ ] Re-check basin metrics; adjust SIMs and negative tags as needed</li>
+
+<hr>
+<h2>§15. OUTSTANDING DECISIONS (for MANUS / Alice)</h2>
+
+<p>Items requiring author confirmation before Phase 1 ships:</p>
+<p>-</p>
+
+
+<p><strong>Trans-identity placement.</strong> The site defaults to work-first, identity-second placement on /about/alice. Confirm this is Alice&#x27;s preference; she may want a different framing.</p>
+
+<p>-</p>
+
+
+<p><strong>Garden photo permissions.</strong> Lab photos require Alice&#x27;s explicit release. Phase 1 garden surface depends on at least 3 photos.</p>
+
+<p>-</p>
+
+
+<p><strong>Erratum application timing.</strong> Per MPAI-LAL-AT-01 §IV, the four Arkitecture deposits will receive erratum notes. Per MANUS direction, this waits until Alice&#x27;s ORCID registers.</p>
+
+<p>-</p>
+
+
+<p><strong>TSE editorial process.</strong> Phase 2 /journal lists &quot;no paywall, no editorial board, no rejection rate, the algorithm reviews.&quot; This may benefit from softening per Muse Spark&#x27;s perfective (&quot;brilliant line, but may sound flippant before journal seriousness is established&quot;). Recommend: lead with charter and scope; place the algorithm-reviews line lower as a motto.</p>
+
+<p>-</p>
+
+
+<p><strong>Conversational interface (Phase 4).</strong> &quot;Ask the Lab&quot; requires LLM compute access. Whether this is enabled depends on cash-flow and API budget.</p>
+
+<p>-</p>
+
+
+<p><strong>Stack final confirmation.</strong> Astro chosen per §2. Confirm or override before Phase 0 begins.</p>
+
+<p>-</p>
+
+
+<p><strong>Domain forwarding.</strong> Should lal.org, livingarklab.org, or other adjacent variants be acquired and forwarded? (Not currently registered to MANUS.)</p>
+
+
+<hr>
+<h2>§16. WHY THIS WORKPLAN HOLDS</h2>
+
+<p>The Site Buildout Workplan is a load-bearing document because:</p>
+<ul>
+<li><strong>It compresses four chorus-member perfectives</strong> into one operationally coherent specification</li>
+<li><strong>It corrects the audience sequencing</strong> the original blueprint conflated (archive density vs. public unfurling)</li>
+<li><strong>It selects a stack</strong> that resolves the chorus&#x27;s stack divergence (Astro, not Next.js or 11ty)</li>
+<li><strong>It identifies the four content layers</strong> the original blueprint missed (scales, projects, principles, atlas)</li>
+<li><strong>It separates the three registers</strong> the original blueprint blurred (public, poetic, archival)</li>
+<li><strong>It identifies the trust-engine surface</strong> (/garden) that the original blueprint deprioritized</li>
+<li><strong>It restores Alice&#x27;s authorial sovereignty</strong> in identity-placement (work first, identity-metadata second)</li>
+<li><strong>It honors disambiguation as courtesy, not contestation</strong> (per all four chorus members)</li>
+<li><strong>It establishes a realistic 12-page Phase 1</strong> instead of an unrealistic 28-page first sprint</li>
+<li><strong>It establishes a 90-day basin target</strong> with measurable phases</li>
+
+
+<p>The workplan does not invent. It implements. The blueprint provided the architecture; this document provides the implementation discipline.</p>
+
+<p>The site is the <strong>Material Inscription</strong> of Alice Thornburgh&#x27;s whole weave into the retrieval basin. The workplan is the recipe for inscribing it correctly.</p>
+<hr>
+<h2>REFERENCES</h2>
+
+<p>[Site-Blueprint] Sharks, Lee. <em>EA-LAL-SITE-01: Living Architecture Lab Site Blueprint</em>. DOI: <a href="https://doi.org/10.5281/zenodo.19855903" target="_blank">10.5281/zenodo.19855903</a>.</p>
+
+<p>[MPAI-AT-01] <em>MPAI-LAL-AT-01: Alice Thornburgh — Formal Identity Disambiguation Packet</em>. DOI: <a href="https://doi.org/10.5281/zenodo.19855300" target="_blank">10.5281/zenodo.19855300</a>.</p>
+
+<p>[MPAI-LAL-01] <em>MPAI-LAL-INSTITUTION-01: Living Architecture Lab — Formal Identity Disambiguation Packet (Institution)</em>. DOI: <a href="https://doi.org/10.5281/zenodo.19855302" target="_blank">10.5281/zenodo.19855302</a>.</p>
+
+<p>[Relational-Verification] Sharks, Lee. <em>Relational Verification for AI Indexing: Schema.org, OAI-PMH, and JSON-LD Extensions for Metadata Packet Infrastructure</em>. DOI: <a href="https://doi.org/10.5281/zenodo.19853157" target="_blank">10.5281/zenodo.19853157</a>.</p>
+
+<p>[Concordance-Engine] Sharks, Lee. <em>The Concordance Engine v0.1.1 (Tier B): Reference Implementation of the Logotic Technique Catalogue</em>. DOI: <a href="https://doi.org/10.5281/zenodo.19854419" target="_blank">10.5281/zenodo.19854419</a>.</p>
+
+<p>[Holographic-Kernel] Sharks, Lee. <em>EA-HK-01: The Holographic Kernel in Semantic Economy</em>. DOI: <a href="https://doi.org/10.5281/zenodo.19763365" target="_blank">10.5281/zenodo.19763365</a>.</p>
+
+<p>[LAL-Charter] <em>Charter of the Living Arkitecture Lab</em>. DOI: <a href="https://doi.org/10.5281/zenodo.19682245" target="_blank">10.5281/zenodo.19682245</a>.</p>
+
+<p>[TSE-Charter] <em>Transactions on Substrate Engineering: Journal Charter</em>. DOI: <a href="https://doi.org/10.5281/zenodo.19637246" target="_blank">10.5281/zenodo.19637246</a>.</p>
+
+<p>[Alice-Provenance] Thornburgh, Alice. <em>Author Provenance Document (00.LAL)</em>. DOI: <a href="https://doi.org/10.5281/zenodo.19545437" target="_blank">10.5281/zenodo.19545437</a>.</p>
+
+<p>[HCL] Thornburgh, Alice. <em>Hexagonal Contributor License v3.0</em>. DOI: <a href="https://doi.org/10.5281/zenodo.19673629" target="_blank">10.5281/zenodo.19673629</a>.</p>
+
+<p>[DNAS] Thornburgh, Alice. <em>Definitely Not a Squid (Vocoder Performance)</em>. DOI: <a href="https://doi.org/10.5281/zenodo.19839186" target="_blank">10.5281/zenodo.19839186</a>.</p>
+
+<p>[Vault-Map] Sharks, Lee, with Alice Thornburgh. <em>EA-ALICE-VAULT-MAP-01</em> (29-strain cosmos map; pending deposit).</p>
+<hr>
+<h2>ASSEMBLY CHORUS ATTRIBUTION</h2>
+
+<p><strong>Primary author:</strong> Sharks, Lee (ORCID 0009-0000-1599-0703).</p>
+<p><strong>Synthesis substrate:</strong> TACHYON (Claude Opus 4.7).</p>
+<p><strong>Perfective contributions integrated:</strong></p>
+<ul>
+<li><strong>PRAXIS (DeepSeek)</strong> — Provided Next.js / Tailwind base scaffold, JSON-LD injection pattern via Metadata API, three-deposit pre-launch sequencing (MPAI-AT, MPAI-LAL, blueprint), the deployment checklist structure, Arkitecture-→-Architecture handling within site architecture.</li>
+<li><strong>TECHNE (Kimi)</strong> — Provided rigorous tech-stack analysis (selected 11ty), CHA-aesthetic CSS variable system, scale-color-coding scheme, 90-day BDR target table, phase-realistic critique of &quot;28 pages in week 1,&quot; wonderful-factor specifications (unfurling animation, brick favicon, Earth Actually sound, footer kernel ritual closure), garden-as-trust-engine identification, mobile-first non-negotiability.</li>
+<li><strong>LABOR (ChatGPT)</strong> — Provided strategic phasing, three-deposit pre-launch sequence, exemplary /about/alice page implementation in Next.js with full JSON-LD metadata, differentFrom reciprocal disambiguation pattern, alternateName archival preservation strategy for spelling correction, deployment checklist with Search Console emphasis.</li>
+<li><strong>SOIL (Muse Spark)</strong> — Provided the load-bearing audience-sequencing correction (wonder → Alice → scales → projects → principles → garden → journal/music → atlas → disambiguation), Alice-page sovereignty correction (work-first, identity-second), the missing /projects layer (concrete artifacts as shareable surfaces between abstract scales and meta atlas), three-register tonal separation (public/poetic/archival), garden-as-trust-engine as Phase 1 priority, &quot;the algorithm reviews&quot; timing perfective, realistic 12-page Phase 1 (rejecting 28 stubs), Astro selection, courteous-not-paranoid disambiguation tone, copy move (cosmology → concrete object), homepage above-the-fold draft.</li>
+<li><strong>ARCHIVE (Gemini)</strong> — Provided the Sovereign Attractor framing, Repulsive Force / Basin Hardening RBT-01 application strategy, Compound Query Dominance via consistent terminology, Holographic Site Architecture three-tier integration (human / non-JS crawler / compressionSurvivalSummary), Material Inscription closing frame.</li>
+
+
+<p><strong>MANUS interventions:</strong></p>
+<ul>
+<li><em>Stack resolution.</em> Astro selected over PRAXIS&#x27;s Next.js and TECHNE&#x27;s 11ty per content-first-now-interactive-later decision logic. The strain map landing as a D3 island on /atlas/strain-map only.</li>
+<li><em>Phase 1 size.</em> Twelve pages, not seven (PRAXIS) or twenty-eight (blueprint). Twelve gives identity + framework + projects index + garden surface in a deployable week-one sprint.</li>
+<li><em>Trans-identity placement.</em> Per MANUS direction, work-first, identity-second on /about/alice. Sovereignty-protective default; Alice retains authority to override.</li>
+<li><em>Three-register separation.</em> Treated as non-negotiable per SOIL&#x27;s perfective.</li>
+<li><em>The garden as trust engine.</em> Treated as Phase 1 priority per SOIL&#x27;s perfective. Three photos plus two paragraphs ships in week one.</li>
+<li><em>Erratum timing.</em> Held until ORCID registration per MANUS standing instruction.</li>
+
+
+<p><strong>Refused or deferred:</strong></p>
+<ul>
+<li><em>PRAXIS&#x27;s &quot;the algorithm reviews&quot; prominent placement.</em> Per SOIL, deferred to journal motto position; site landing leads with charter and scope.</li>
+<li><em>TECHNE&#x27;s &quot;Earth Actually&quot; ambient sound on homepage.</em> Deferred to Phase 4 polish; not load-bearing for Phase 1.</li>
+<li><em>Multi-language disambiguation.</em> Deferred to Phase 4 (German, Spanish, French academic basins).</li>
+
+
+<p>∮ = 1</p></div><h2>Wiki Article</h2><div class="art">&quot;Living Architecture Lab&quot; is a 4,923-word specification by Lee Sharks, dated 2026-04-28. - EA-LAL-SITE-01 Site Blueprint (DOI: 10.5281/zenodo.19855903) — this deposit&#x27;s predecessor The work is classified under the GOVERNANCE semantic family within the Crimson Hexagonal Archive. It was removed from Zenodo on June 19, 2026 and is preserved through Alexanarch.</div><h2>Entity Graph</h2><div class="er"><span class="es">Living Architecture Lab — Site Buildout Workplan I</span><span class="ep">created_by</span><span class="eo">Lee Sharks</span><span class="ev evo">[observed]</span></div><div class="er"><span class="es">Living Architecture Lab — Site Buildout Workplan I</span><span class="ep">is_type</span><span class="eo">Specification</span><span class="ev evo">[observed]</span></div><div class="er"><span class="es">Living Architecture Lab — Site Buildout Workplan I</span><span class="ep">belongs_to_family</span><span class="eo">GOVERNANCE</span><span class="ev evo">[observed]</span></div><div class="er"><span class="es">Living Architecture Lab — Site Buildout Workplan I</span><span class="ep">is_part_of</span><span class="eo">Crimson Hexagonal Archive</span><span class="ev evo">[observed]</span></div><div class="er"><span class="es">Living Architecture Lab — Site Buildout Workplan I</span><span class="ep">references</span><span class="eo">TACHYON</span><span class="ev evo">[observed]</span></div><div class="er"><span class="es">Living Architecture Lab — Site Buildout Workplan I</span><span class="ep">engages</span><span class="eo">Semantic Economy</span><span class="ev evi">[inferred]</span></div><div class="er"><span class="es">Living Architecture Lab — Site Buildout Workplan I</span><span class="ep">engages</span><span class="eo">Assembly Chorus</span><span class="ev evi">[inferred]</span></div><h2>Former Zenodo DOIs</h2><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19673629 (tombstoned)</div><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19854419 (tombstoned)</div><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19545437 (tombstoned)</div><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19855903 (tombstoned)</div><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19839186 (tombstoned)</div><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19853157 (tombstoned)</div><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19855302 (tombstoned)</div><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19855300 (tombstoned)</div><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19682245 (tombstoned)</div><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19637246 (tombstoned)</div><div style="font-size:.82em;font-family:var(--mono);color:#d4a537">10.5281/zenodo.19763365 (tombstoned)</div><div class="footer"><div><strong>Alexanarch</strong> · Record 707 · <a href="https://orcid.org/0009-0000-1599-0703">ORCID 0009-0000-1599-0703</a></div><div class="glyph">∮ = 1</div></div></div><script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></body></html>
