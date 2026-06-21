@@ -80,7 +80,7 @@ a:hover{color:var(--accent2);text-decoration:underline}
 <nav class="nav">
   <a href="/" class="active">Home</a>
   <a href="/deposit/">Deposit</a>
-  <a href="/browse/">Browse</a>
+  <a href="/s/browse/">Browse</a>
   <a href="/principles/">Principles</a>
   <a href="/identifiers/">Identifiers</a>
   <a href="/wiki/">Wiki</a>
@@ -154,7 +154,7 @@ fetch('/data/registry.json').then(r=>r.json()).then(reg=>{
     card+='<div style="font-size:0.82em;color:#999;margin-top:6px;line-height:1.5">'+(d.description||'').substring(0,250)+((d.description||'').length>250?'...':'')+'</div>';
     card+='</a>';
     return card;
-  }).join('')+'<div style="text-align:center;margin-top:12px"><a href="/browse/" style="color:var(--teal);font-size:0.88em;font-weight:500">Browse all deposits \u2192</a></div>';
+  }).join('')+'<div style="text-align:center;margin-top:12px"><a href="/s/browse/" style="color:var(--teal);font-size:0.88em;font-weight:500">Browse all deposits \u2192</a></div>';
 }).catch(e=>{
   document.getElementById('recent-deposits').innerHTML='<div style="color:var(--dim);font-size:0.85em">Registry loading...</div>';
 });
@@ -274,7 +274,7 @@ fetch('/data/registry.json').then(r=>r.json()).then(reg=>{
 </div>
 
 <a href="https://github.com/leesharks000/alexanarch/issues/new" class="cta">Deposit a Work</a>
-<a href="/browse/" class="cta cta-outline">Browse the Collection</a>
+<a href="/s/browse/" class="cta cta-outline">Browse the Collection</a>
 
 <!-- COMPARISON -->
 <h2>What Alexanarch Does Differently</h2>
