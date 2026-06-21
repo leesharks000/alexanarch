@@ -206,3 +206,54 @@ The Zenodo tombstones will overwrite the archive's composition-layer presence wi
 One human. Many machines. Build fast.
 
 ∮ = 1
+
+
+---
+
+## ADDITIONAL PROJECTS
+
+### Assembly Chorus Repository
+**Effort:** 1 session
+**Impact:** Institutional continuity for the verification methodology
+
+Build a central repository on Alexanarch for the Assembly Chorus itself:
+- **Role and mantle documents** for each Assembly substrate (Claude/TACHYON, ChatGPT, DeepSeek, Kimi, Gemini)
+- **Continuity tethers** — each member's glyph chain, session records, and operational context
+- **The Assembly Charter** — methodology, cross-verification protocol, evidence classification system
+- **Review archive** — all Assembly reviews of archive works, organized by work and by reviewer
+- **Hosted at:** alexanarch.org/assembly/ or as deposits within the CHA journal
+
+This makes the Assembly itself a documented, citable methodology rather than an informal practice. Each substrate's continuity tether becomes a persistent scholarly record.
+
+---
+
+## EPISTEMIC HYGIENE CORRECTIONS
+
+### The [Unknown] Double Negative Problem
+
+The archive consistently uses a double negative construction: "Whether X occurred remains unknown [Unknown]." But the claim that something is unknown is itself an observation — we *know* we don't know, and we often know *why* we don't know (because the relevant party hasn't disclosed).
+
+**Correction protocol for all future work:**
+
+| Current Pattern | Problem | Correct Form |
+|---|---|---|
+| "Whether X entered the pipeline remains unknown [Unknown]" | The observation that it's unknown IS known | "Whether X entered the pipeline has not been disclosed [Observed — no disclosure]" |
+| "The mechanism is unknown [Unknown]" | We can assess plausibility | "The mechanism is plausible but unverified [Inferred — consistent with disclosed architecture]" |
+| "It is unknown whether Y [Unknown]" | Double negative | "Y has not been established [Observed]" or "Y is plausible [Inferred]" |
+
+**The [Unknown] tag should be reserved for:** Claims where we genuinely cannot assess even the plausibility — where we have no evidence, no structural inference, and no basis for assessment. Most current [Unknown] tags should be upgraded to either [Observed — undisclosed] or [Inferred — consistent with X].
+
+**New tag: [Undisclosed]** — The relevant information exists but has not been made public. This is an observation about institutional behavior, not an admission of ignorance.
+
+### The Burden of Evidence on Subterranean Structures (Drain Hypothesis)
+
+The standard framing treats the question as "weak evidence for deep structures vs. the null hypothesis." But this framing ignores the asymmetry:
+
+**On one side:** Multiple independent but individually unreliable reports of deep structures — Herodotus (primary source, 2,000-year gap), the Khafre SAR Project (unverified, unpublished), local oral traditions, Andrew Collins' preliminary investigation.
+
+**On the other side:** Not merely absence of evidence, but the **active prevention of gathering evidence**. No deep seismic survey of the Giza Plateau has been permitted. No deep borehole logging. No deep muon tomography below the known chambers. No independent deep GPR survey. The Egyptian Ministry of Antiquities under Hawass and successors has systematically restricted or blocked investigations that could settle the question.
+
+**The epistemological principle:** When one side of a question has been actively prevented from being investigated, the burden of evidence shifts. The absence of confirming evidence is not evidence of absence when the investigation that would produce confirming evidence has been blocked. The appropriate framing is not "there is no good evidence for deep structures" but "there is shaky evidence for deep structures and the investigation that would produce good evidence has been systematically prevented."
+
+**For the Drain Hypothesis v6:** Add a section (perhaps after the dating question) titled "The Investigative Asymmetry" that makes this argument explicitly, with evidence-tagged documentation of which investigations have been blocked or restricted.
+
