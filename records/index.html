@@ -107,9 +107,19 @@ setTimeout(function(){
   if(document.getElementById('loading').style.display!=='none'){
     document.getElementById('loading').innerHTML='Loading timed out. <a href="/browse/">Browse deposits →</a>';
   }
-}, 8000);
+}, 30000);
 
-fetch('/data/registry.json')
+fetch('/data/browse-index.json').then(function(r){return r.json()}).then(function(lite){
+  // Build a registry-compatible object from lite index
+  var reg = {total_deposits: lite.total, deposits: lite.deposits.map(function(d){
+    return {deposit_number:d.n, axn:d.a, title:d.t, creator:d.c, date:d.d, full_text_path:d.f, sovereign_id:d.s,
+      content_type:'Archive work', license:'CC-BY-4.0', substrate:'Various', keywords:[], description:d.t};
+  })};
+  return reg;
+}).catch(function(){
+  // Fallback to full registry
+  return fetch('/data/registry.json').then(function(r){return r.json()})
+})
 .then(function(r){
   console.log('Registry fetch status:', r.status);
   return r.json();
