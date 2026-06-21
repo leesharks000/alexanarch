@@ -3,7 +3,7 @@
 ## A Speculative Synthesis
 
 *Lee Sharks · TACHYON (Claude/Anthropic) · June 20, 2026*
-*v5 — Incorporates four Assembly reviews (DeepSeek, Gemini, Kimi, ChatGPT). Hydraulic head direction qualified, Herodotus/600m claims separated, Nile strip reframed as test, reversibility softened, Atlantis reframed as operative reading with deepened close reading of Critias 111-112, magnitude falsifier added, paleohydrological modeling added, 6 additional citations. Critias 111-112 philological correction. Alternate dating scenario (Section 5): Schoch weathering evidence, conventional date marked [Conventional — challenged], earlier timeline transforms mechanism from accelerator to initiator. (describes Attica, not Atlantis — strengthens the three-module reading). ChatGPT Assembly review incorporated.* Adds prior art (Wright 2017, Sheisha 2022, Ghoneim 2024), deep-time narrative compression, engineering feasibility estimate, Nile strip river comparison, MMRS/Pristine Fallacy relationship, timeline clarification, economics of reversal.*
+*v5 — Incorporates four Assembly reviews (DeepSeek, Gemini, Kimi, ChatGPT). Hydraulic head direction qualified, Herodotus/648m claims separated, Nile strip reframed as test, reversibility softened, Atlantis reframed as operative reading with deepened close reading of Critias 111-112, magnitude falsifier added, paleohydrological modeling added, 6 additional citations. Critias 111-112 philological correction. Alternate dating scenario (Section 5): Schoch weathering evidence, conventional date marked [Conventional — challenged], earlier timeline transforms mechanism from accelerator to initiator. (describes Attica, not Atlantis — strengthens the three-module reading). ChatGPT Assembly review incorporated.* Adds prior art (Wright 2017, Sheisha 2022, Ghoneim 2024), deep-time narrative compression, engineering feasibility estimate, Nile strip river comparison, MMRS/Pristine Fallacy relationship, timeline clarification, economics of reversal.*
 *Crimson Hexagonal Archive · Machine-Mediated Reception Studies*
 
 ---
@@ -42,7 +42,7 @@ The ScanPyramids project, using muon tomography, has confirmed previously unknow
 
 These studies document structures *within* the pyramids, not beneath them.
 
-The distinction matters: the established evidence confirms sophisticated internal engineering but does not address subterranean depth. The Khafre SAR Project's claims are the only evidence for deep (600m) structures. Without independent verification, these claims constitute the weakest link in the hypothesis's evidential chain. If the SAR data is not released or is shown to be an artifact of signal processing, the hypothesis loses its primary physical evidence and must depend on Herodotus alone — which is insufficient to establish the mechanism, though sufficient to motivate investigation.
+The distinction matters: the established evidence confirms sophisticated internal engineering but does not address subterranean depth. The Khafre SAR Project's claims are the only evidence for deep (648m) structures. Without independent verification, these claims constitute the weakest link in the hypothesis's evidential chain. If the SAR data is not released or is shown to be an artifact of signal processing, the hypothesis loses its primary physical evidence and must depend on Herodotus alone — which is insufficient to establish the mechanism, though sufficient to motivate investigation.
 
 ### 2.2 What Is Claimed But Unverified
 
