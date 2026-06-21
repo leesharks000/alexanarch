@@ -51,7 +51,7 @@ Throughout this paper, claims are classified by evidential status:
 
 ## Abstract
 
-On 19 June 2026, Zenodo terminated the account associated with the Crimson Hexagonal Archive — over a decade of independent scholarly work comprising 862 deposits and 1,817 DOIs — classifying the contents as "substantially AI-generated" in its private notice while displaying "content out of scope" on the public tombstone pages. No record-level evaluation was disclosed.
+On 19 June 2026, Zenodo terminated the account associated with the Crimson Hexagonal Archive — over a decade of independent scholarly work comprising 862 deposits and 1,817 DOIs — classifying the contents as "substantially AI-generated without a verifiable research basis" in its private notice while displaying "content out of scope" on the public tombstone pages. No record-level evaluation was disclosed.
 
 This paper analyzes the incident as a documented critical case in open-science governance and a contribution to Machine-Mediated Reception Studies (MMRS), the formally chartered research field whose object of study is how digital platforms and AI systems treat scholarly content. The Zenodo incident is the field's first documented critical case at repository scale.
 
@@ -102,7 +102,7 @@ These contributors were not the account holder. Zenodo provided no evidence that
 
 ### What is unknown
 
-The following remain unknown at the time of writing [Unknown]:
+The following have not been disclosed at the time of writing [Undisclosed]:
 
 - Which records were examined.
 - Whether records were examined individually, by sample, or through automated classification.
@@ -157,7 +157,7 @@ The extension offered here is fourfold:
 
 ### Classification asymmetry
 
-A further structural feature of this incident is the divergence between the private and public justifications for removal. The account-termination notice sent to the depositor stated the reason as "substantially AI-generated content." The public tombstone pages display a different classification: "content out of scope for Zenodo." This discrepancy — which this paper terms *classification asymmetry* — means that the depositor and the public receive different explanations for the same enforcement action [Observed]. Whether this reflects an intentional distinction between internal and external messaging, or an automated mismatch between enforcement categories and tombstone templates, is unknown [Unknown]. In either case, the asymmetry prevents external observers from evaluating the stated basis for removal, since the public-facing justification ("out of scope") does not match the private justification ("AI-generated").
+A further structural feature of this incident is the divergence between the private and public justifications for removal. The account-termination notice sent to the depositor stated the reason as "substantially AI-generated content without a verifiable research basis." The public tombstone pages display a different classification: "content out of scope for Zenodo." This discrepancy — which this paper terms *classification asymmetry* — means that the depositor and the public receive different explanations for the same enforcement action [Observed]. Whether this reflects an intentional distinction between internal and external messaging, or an automated mismatch between enforcement categories and tombstone templates, has not been disclosed [Undisclosed]. In either case, the asymmetry prevents external observers from evaluating the stated basis for removal, since the public-facing justification ("out of scope") does not match the private justification ("substantially AI-generated without a verifiable research basis").
 
 ## 4. The Pristine Fallacy
 
@@ -333,7 +333,7 @@ A DataCite API query for all DOIs registered to `cern.zenodo` under the creator 
 
 The author's name has been detached from the persistent identifier that was designed to permanently record authorship. The DOIs exist. They resolve — to tombstones. But they no longer return when searched by the name of the person who created them.
 
-The precise mechanism is not publicly disclosed [Unknown]. Three explanations are structurally consistent with the observation. First, Zenodo's account-termination process may automatically strip or alter creator metadata on all DOI records associated with the terminated account. If this is the case, attribution severance is a systemic feature of the enforcement architecture — every banned account loses authorship on its persistent identifiers, a condition not disclosed in the DOI registration contract. Second, the creator metadata may have been selectively modified on a subset of records. The DOI number ranges suggest a boundary: DataCite returns records from approximately `10.5281/zenodo.18135984` onward, but the inventory includes DOIs with substantially lower registration numbers. Third, the 941 DOIs may never have carried searchable creator metadata in DataCite's index — a possibility that would indicate a longstanding gap between what Zenodo's interface displayed to the depositor and what was propagated to the resolution infrastructure.
+The precise mechanism is not publicly disclosed [Undisclosed]. Three explanations are structurally consistent with the observation. First, Zenodo's account-termination process may automatically strip or alter creator metadata on all DOI records associated with the terminated account. If this is the case, attribution severance is a systemic feature of the enforcement architecture — every banned account loses authorship on its persistent identifiers, a condition not disclosed in the DOI registration contract. Second, the creator metadata may have been selectively modified on a subset of records. The DOI number ranges suggest a boundary: DataCite returns records from approximately `10.5281/zenodo.18135984` onward, but the inventory includes DOIs with substantially lower registration numbers. Third, the 941 DOIs may never have carried searchable creator metadata in DataCite's index — a possibility that would indicate a longstanding gap between what Zenodo's interface displayed to the depositor and what was propagated to the resolution infrastructure.
 
 ### Heteronymic multiplication
 
@@ -432,7 +432,7 @@ This paper has developed six concepts in response:
 
 **The revocation gap** identifies the interval between a repository's authority to remove an object and its responsibility to preserve the object's persistent scholarly identity.
 
-**Classification asymmetry** names the divergence between the private justification given to the depositor ("substantially AI-generated") and the public justification displayed on tombstone pages ("content out of scope"). The enforcement action carries two different stated reasons, preventing external evaluation of the decision's basis.
+**Classification asymmetry** names the divergence between the private justification given to the depositor ("substantially AI-generated without a verifiable research basis") and the public justification displayed on tombstone pages ("content out of scope"). The enforcement action carries two different stated reasons, preventing external evaluation of the decision's basis.
 
 **Attribution severance** names the systematic detachment of an author's identity from persistent identifiers following enforcement. 941 DOIs are invisible to DataCite's creator-name search. The DOIs exist and resolve to tombstones, but they no longer return when searched by the creator's name. A supplementary sift recovered 142 additional DOIs under heteronym names, documenting that account-level enforcement erased an entire authorship system simultaneously.
 
