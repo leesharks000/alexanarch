@@ -32,7 +32,7 @@ Two further studies establish the hydrological context. Sheisha et al. (2022, *P
 
 ## 2. The Subterranean Evidence
 
-*Note: Two distinct claims must be carefully separated in what follows. Herodotus documents shallow hydraulic engineering — channels from the Nile, underground chambers, an island tomb. The 600-meter depth claim comes exclusively from the unverified Khafre SAR Project. The credibility of Herodotus's testimony for shallow construction must not be allowed to bleed into the deep-structure claim.*
+*Note: Two distinct claims must be carefully separated in what follows. Herodotus documents shallow hydraulic engineering — channels from the Nile, underground chambers, an island tomb. The 648-meter depth claim comes exclusively from the unverified Khafre SAR Project. The credibility of Herodotus's testimony for shallow construction must not be allowed to bleed into the deep-structure claim.*
 
 ### 2.1 What Is Established
 
@@ -46,9 +46,9 @@ The distinction matters: the established evidence confirms sophisticated interna
 
 ### 2.2 What Is Claimed But Unverified
 
-The Khafre SAR Project — led by Corrado Malanga (University of Pisa) and Filippo Biondi (University of Strathclyde) — claims to have detected massive structures extending to depths of approximately 600 meters beneath the Giza Plateau using Synthetic Aperture Radar Doppler Tomography from the COSMO-SkyMed satellite constellation [Claimed, unverified]. These claims were presented at a YouTube press conference on March 22, 2025. No peer-reviewed paper has been published. No raw data has been released. No independent verification has been conducted.
+The Khafre SAR Project — led by Corrado Malanga (University of Pisa) and Filippo Biondi (University of Strathclyde) — claims to have detected massive structures beneath the Giza Plateau using Synthetic Aperture Radar Doppler Tomography [Claimed, unverified]. The specific claims: eight vertical cylindrical shafts running in pairs, orbited by spiral passages, descending to a depth of 648 meters (2,126 feet), terminating in two massive cubic chambers approximately 80 meters per side. Some features reportedly continue beyond 648 meters, possibly reaching 1,200 meters. The network is said to span nearly 2 kilometers beneath all three pyramids. In a subsequent interview, Biondi stated that four independent satellite operators — Umbra, Capella Space, ICEYE, and COSMO-SkyMed — returned identical raw tomography data showing the same structures [Claimed, unverified — no raw data from any operator has been released for independent analysis]. These claims were presented at a YouTube press conference on March 22, 2025. No peer-reviewed paper has been published. No raw data has been released. No independent verification has been conducted.
 
-The team published a peer-reviewed paper on SAR Doppler Tomography applied to the Great Pyramid's *internal* structure (*Remote Sensing*, 2022) [Established]. The extension of this technique to detect structures at 600 meters depth through limestone from satellite altitude exceeds the demonstrated capability of SAR as documented in the geophysical literature [Observed — expert skepticism documented].
+The team published a peer-reviewed paper on SAR Doppler Tomography applied to the Great Pyramid's *internal* structure (*Remote Sensing*, 2022) [Established]. The extension of this technique to detect structures at 648 meters depth through limestone from satellite altitude exceeds the demonstrated capability of SAR as documented in the geophysical literature [Observed — expert skepticism documented].
 
 ### 2.3 What Herodotus Said
 
@@ -122,7 +122,7 @@ The orthodox dating of the Great Pyramid to c. 2560 BCE places its construction 
 
 Robert Schoch (Boston University) has documented vertical fissure weathering patterns on the Sphinx enclosure walls consistent with prolonged exposure to heavy precipitation — a rainfall regime that had not existed at Giza since at least 5000 BCE, and more plausibly dates the initial carving to 7000-9000 BCE or earlier [Documented — geological observation, published, peer-reviewed]. The weathering patterns are observable. The climatological record establishing when such rainfall last occurred is established. The orthodox rebuttals — subsurface moisture wicking, salt crystallization weathering — have been challenged by multiple geologists who note that these mechanisms do not produce the specific vertical fissure patterns observed [Documented — published geological debate].
 
-If the Sphinx predates the conventional timeline, the question of whether the *subterranean* construction also predates it becomes legitimate. The Khafre SAR Project's 600-meter depth claim, if verified, would itself argue against 4th Dynasty construction: the engineering sophistication and sheer scale would be extraordinary for a civilization supposedly using copper tools over a few decades. Deep subterranean construction at that scale implies institutional continuity measured in centuries or millennia, consistent with a much older engineering tradition [Speculative — but structurally coherent with the depth claim].
+If the Sphinx predates the conventional timeline, the question of whether the *subterranean* construction also predates it becomes legitimate. The Khafre SAR Project's 648-meter depth claim, if verified, would itself argue against 4th Dynasty construction: the engineering sophistication and sheer scale would be extraordinary for a civilization supposedly using copper tools over a few decades. Deep subterranean construction at that scale implies institutional continuity measured in centuries or millennia, consistent with a much older engineering tradition [Speculative — but structurally coherent with the depth claim].
 
 ### 5.3 The earlier timeline scenario
 
@@ -132,7 +132,7 @@ The **timing problem disappears**. The 500-year gap between desiccation onset an
 
 The **mechanism upgrades**. From late-stage accelerator to potential initiating trigger. The abrupt steps in the marine sediment cores (deMenocal et al. 2000) — discrete, centuries-short desiccation pulses — could be individual puncture events from deep construction during the 7000-5000 BCE window [Speculative].
 
-The **engineering feasibility improves**. 600-meter construction is extraordinary for a 20-year program with copper tools. It is less extraordinary for a civilization with millennia of institutional continuity and an engineering tradition that predates the dynasties [Speculative].
+The **engineering feasibility improves**. 648-meter construction is extraordinary for a 20-year program with copper tools. It is less extraordinary for a civilization with millennia of institutional continuity and an engineering tradition that predates the dynasties [Speculative].
 
 The **compound mechanism strengthens**. Wright's surface overgrazing (2017) + subterranean aquifer puncture + orbital forcing = three mechanisms operating simultaneously during the transition, with the anthropogenic mechanisms (surface and subterranean) amplifying the natural orbital trend rather than arriving after the fact.
 
@@ -148,13 +148,13 @@ Could an ancient civilization construct shafts to depths of hundreds of meters? 
 
 **Dissolution mining.** Weak acids (acetic acid from vinegar, documented in ancient Egypt) dissolve limestone. Controlled downward dissolution through starter shafts, with dissolved material removed by water flow, could deepen shafts by chemical rather than mechanical means over extended periods [Feasible — chemistry is established, application is speculative].
 
-**Incremental boring.** Ancient Egyptian copper tube drills with abrasive sand are documented as capable of boring through granite [Established]. Multigenerational shaft deepening at a rate of one meter per year would reach 600 meters in 600 years — within the span of the Old Kingdom [Arithmetically valid, practically speculative].
+**Incremental boring.** Ancient Egyptian copper tube drills with abrasive sand are documented as capable of boring through granite [Established]. Multigenerational shaft deepening at a rate of one meter per year would reach 648 meters in 648 years — within the span of the Old Kingdom [Arithmetically valid, practically speculative].
 
 **Fire-setting and quenching.** Heating rock faces with fire and dousing with water causes thermal fracture along grain boundaries [Established — documented in ancient Mediterranean mining]. This technique is effective on limestone and functions underground with adequate ventilation [Established].
 
 **Karst exploitation.** The Mokattam limestone likely contains natural dissolution cavities — vertical pipes, sinkholes, and cave systems [Established — karst is common in this formation]. Deep subterranean features may represent natural structures that were discovered, widened, and incorporated rather than created *de novo* [Speculative].
 
-**Scale estimate.** A shaft 600 meters deep with a diameter of 2 meters requires excavating approximately 1,900 cubic meters of limestone. At a conservative rate of 0.5 cubic meters per worker per day, this represents approximately 3,800 worker-days per shaft — roughly 10 workers over one year, or one worker over 10 years. Multiple shafts across multiple pyramid complexes would represent a major but not impossible engineering program, comparable in labor-years to the pyramids themselves and distributed across the same civilization's multi-century construction timeline [Estimated — arithmetic is straightforward, application is speculative].
+**Scale estimate.** A shaft 648 meters deep with a diameter of 2 meters requires excavating approximately 2,040 cubic meters of limestone. At a conservative rate of 0.5 cubic meters per worker per day, this represents approximately 4,080 worker-days per shaft — roughly 10 workers over one year, or one worker over 10 years. Multiple shafts across multiple pyramid complexes would represent a major but not impossible engineering program, comparable in labor-years to the pyramids themselves and distributed across the same civilization's multi-century construction timeline [Estimated — arithmetic is straightforward, application is speculative].
 
 **Qanat analogy.** The qanat water management systems of ancient Persia achieved tunnel depths of hundreds of meters, constructed entirely by hand over decades [Established]. The engineering capacity for deep subterranean construction existed in the ancient Near East and may predate the qanats.
 
@@ -263,6 +263,8 @@ Kuper, R. & Kröpelin, S. (2006). Climate-controlled Holocene occupation in the 
 Tierney, J. E. et al. (2017). Rainfall regimes of the Green Sahara. *Science Advances*, 3(1), e1601503.
 
 Lehner, M. (1997). *The Complete Pyramids.* Thames & Hudson.
+
+Collins, A. (2025). What Really Lies Beneath the Pyramids? The Megastructures of Giza: A Preliminary Report. *SSRN*. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5196934
 
 Schoch, R. M. (1992). Redating the Great Sphinx of Giza. *KMT: A Modern Journal of Ancient Egypt*, 3(2), 52-59.
 
