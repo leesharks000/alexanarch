@@ -1,12 +1,321 @@
 <!DOCTYPE html>
-<html><head>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Record — Alexanarch</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:'IBM Plex Sans',sans-serif;--mono:'IBM Plex Mono',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.7;font-size:15px}
+.wrap{max-width:720px;margin:0 auto;padding:60px 24px}
+.nav{display:flex;gap:20px;margin-bottom:30px;font-size:0.85em;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;padding-bottom:6px}
+.nav a{color:var(--dim);text-decoration:none;font-weight:500}.nav a:hover{color:var(--accent)}
+a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}
+h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:8px}
+.axn-display{font-family:var(--mono);font-size:1.3em;color:var(--teal);background:var(--surface);padding:16px 20px;border-radius:6px;border:1px solid var(--border);border-left:4px solid var(--teal);margin:16px 0}
+.axn-clusters{font-size:0.72em;color:var(--dim);margin-top:4px}
+.axn-reading{font-size:0.82em;color:#888;font-style:italic;margin-top:2px}
+.meta-grid{display:grid;grid-template-columns:140px 1fr;gap:0;margin:20px 0;font-size:0.88em}
+.meta-label{font-weight:500;color:var(--accent);font-family:var(--mono);font-size:0.82em;padding:8px 0}
+.meta-value{color:#444;padding:8px 0;border-bottom:1px solid #f0f0f0}
+.section-title{font-size:0.78em;font-family:var(--mono);color:var(--teal);text-transform:uppercase;letter-spacing:0.1em;margin-top:28px;margin-bottom:8px}
+.keywords{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.kw{background:#f0f4f8;color:var(--accent);padding:3px 10px;border-radius:12px;font-size:0.78em}
+.dl-btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 20px;border-radius:4px;font-size:0.88em;font-weight:500;margin:4px 6px 4px 0;text-decoration:none;transition:background 0.2s}
+.dl-btn:hover{background:var(--teal);color:#fff;text-decoration:none}
+.dl-btn-outline{background:transparent;color:var(--accent);border:1px solid var(--border)}
+.dl-btn-outline:hover{background:var(--accent);color:#fff}
+.verify{background:#f8f8f0;border:1px solid #e8e8d0;border-radius:6px;padding:16px;margin:20px 0;font-size:0.82em}
+.verify code{font-family:var(--mono);background:#f0f0e8;padding:2px 6px;border-radius:3px;font-size:0.9em}
+.full-text{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:28px 24px;margin:20px 0;font-size:0.9em;line-height:1.8;color:#333;max-height:600px;overflow-y:auto}
+.full-text h1,.full-text h2,.full-text h3{color:var(--accent);margin-top:24px;margin-bottom:8px}
+.full-text h1{font-size:1.3em;border-bottom:2px solid var(--border);padding-bottom:6px}
+.full-text h2{font-size:1.1em;border-bottom:1px solid var(--border);padding-bottom:4px}
+.full-text h3{font-size:0.95em;color:var(--teal)}
+.full-text p{margin-bottom:12px}
+.full-text table{width:100%;border-collapse:collapse;margin:16px 0;font-size:0.9em}
+.full-text th,.full-text td{padding:6px 10px;border:1px solid var(--border);text-align:left}
+.full-text th{background:#f4f4f4;font-weight:500;color:var(--accent)}
+.full-text blockquote{border-left:3px solid var(--teal);padding:8px 16px;margin:12px 0;color:#555;background:#fafaf4}
+.full-text strong{color:var(--fg)}
+.full-text hr{border:none;border-top:1px solid var(--border);margin:20px 0}
+.full-text ul,.full-text ol{margin:8px 0 8px 20px}
+.full-text li{margin-bottom:4px}
+.footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--border);font-size:0.78em;color:var(--dim)}
+.glyph{margin-top:8px;color:var(--accent)}
+#loading{text-align:center;padding:60px 0;color:var(--dim)}
+#error{display:none;text-align:center;padding:40px;color:var(--accent2)}
+.tab-bar{display:flex;gap:0;margin:20px 0 0;border-bottom:2px solid var(--border)}
+.tab{padding:8px 20px;font-size:0.85em;font-weight:500;color:var(--dim);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px}
+.tab:hover{color:var(--accent)}
+.tab.active{color:var(--teal);border-bottom-color:var(--teal)}
+.tab-content{display:none}.tab-content.active{display:block}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav class="nav">
+  <a href="/">Alexanarch</a>
+  <a href="/deposit/">Deposit</a>
+  <a href="/browse/">Browse</a>
+  <a href="/principles/">Principles</a>
+  <a href="/identifiers/">Identifiers</a>
+  <a href="/guide/">Guide</a>
+  <a href="/manifest/">Manifest</a>
+</nav>
+
+<div id="loading">Loading record...</div>
+<div id="error">Record not found. <a href="/browse/">Browse all deposits →</a></div>
+<div id="record" style="display:none"></div>
+
+<div class="footer">
+  <div><strong>Alexanarch</strong> · <a href="https://orcid.org/0009-0000-1599-0703">ORCID 0009-0000-1599-0703</a></div>
+  <div class="glyph">∮ = 1</div>
+</div>
+
+</div>
+
 <script>
-var p=new URLSearchParams(window.location.search);
-var id=p.get('id')||p.get('axn')||p.get('issue')||'';
-if(id){window.location.replace('/s/records/'+id+'/');}
-else{window.location.replace('/s/browse/');}
+const W={Celestial:'Origin',Elemental:'Force',Architectural:'Foundation',Instrumental:'Method',Scriptural:'Text',Navigational:'Search',Temporal:'Duration',Organic:'Growth',Symbolic:'Play',Mathematical:'Proof',Alchemical:'Transmutation',Gestural:'Touch',Signal:'Alarm',Structural:'Direction',Liminal:'Threshold',Terminal:'Closure'};
+
+function renderMd(md){
+  return md
+    .replace(/^### (.+)$/gm,'<h3>$1</h3>')
+    .replace(/^## (.+)$/gm,'<h2>$1</h2>')
+    .replace(/^# (.+)$/gm,'<h1>$1</h1>')
+    .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g,'<em>$1</em>')
+    .replace(/^> (.+)$/gm,'<blockquote>$1</blockquote>')
+    .replace(/^---$/gm,'<hr>')
+    .split('\n').map(function(line){
+      line=line.trim();
+      if(!line) return '<br>';
+      if(line.charAt(0)==='<') return line;
+      return '<p>'+line+'</p>';
+    }).join('\n');
+}
+
+const params=new URLSearchParams(window.location.search);
+const q=params.get('axn')||params.get('id')||params.get('issue')||'';
+console.log('Record query:', q);
+
+// Timeout fallback
+setTimeout(function(){
+  if(document.getElementById('loading').style.display!=='none'){
+    document.getElementById('loading').innerHTML='Loading timed out. <a href="/browse/">Browse deposits →</a>';
+  }
+}, 8000);
+
+fetch('/data/registry.json')
+.then(function(r){
+  console.log('Registry fetch status:', r.status);
+  return r.json();
+})
+.then(function(reg){
+  console.log('Registry loaded, deposits:', reg.total_deposits);
+  var deps=reg.deposits||[];
+  var d=null;
+  
+  for(var i=0;i<deps.length;i++){
+    var dep=deps[i];
+    if(dep.axn===q || dep.axn==='AXN:'+q || dep.emoji===q || dep.hex===q || String(dep.issue_number)===q || String(dep.deposit_number)===q || dep.sovereign_id===q || dep.root_axn===q){
+      d=dep; break;
+    }
+  }
+  
+  // If only one deposit and no specific query, show it
+  if(!d && deps.length===1) d=deps[0];
+  // Also try title match
+  if(!d && q){
+    for(var i=0;i<deps.length;i++){
+      if(deps[i].title.toLowerCase().indexOf(q.toLowerCase())!==-1){
+        d=deps[i]; break;
+      }
+    }
+  }
+  
+  console.log('Found deposit:', d ? d.axn : 'NONE');
+  
+  document.getElementById('loading').style.display='none';
+  
+  if(!d){
+    document.getElementById('error').style.display='block';
+    return;
+  }
+  
+  document.title=d.title+' — Alexanarch';
+  var clusters=(d.clusters||[]).join(' · ');
+  var reading=(d.clusters||[]).map(function(c){return W[c]||c}).join(' → ');
+  var kws=(d.keywords||[]).map(function(k){return '<span class="kw">'+k+'</span>'}).join('');
+  
+  var dlButtons='';
+  if(d.mirrors){
+    var keys=Object.keys(d.mirrors);
+    for(var i=0;i<keys.length;i++){
+      dlButtons+='<a class="dl-btn dl-btn-outline" href="'+d.mirrors[keys[i]]+'" target="_blank">'+keys[i]+' →</a> ';
+    }
+  }
+  if(d.issue_url){
+    dlButtons+='<a class="dl-btn dl-btn-outline" href="'+d.issue_url+'" target="_blank">deposit record →</a>';
+  }
+  
+  var el=document.getElementById('record');
+  el.style.display='block';
+  
+  var html='<div class="axn-display">'+d.axn;
+  html+='<div class="axn-clusters">'+clusters+'</div>';
+  html+='<div class="axn-reading">'+reading+'</div>';
+  html+='</div>';
+  html+='<h1>'+d.title+'</h1>';
+  html+='<div style="font-size:0.88em;color:var(--dim);margin-bottom:16px">'+d.creator+' · '+d.date+' · '+d.content_type+'</div>';
+  html+='<div style="margin:16px 0">'+dlButtons+'</div>';
+  
+  // Metadata
+  html+='<div class="meta-grid">';
+  html+='<div class="meta-label">AXN</div><div class="meta-value" style="font-family:var(--mono)">'+d.axn+'</div>';
+  html+='<div class="meta-label">Substrate</div><div class="meta-value">'+(d.substrate||'—')+'</div>';
+  html+='<div class="meta-label">License</div><div class="meta-value">'+(d.license||'—')+'</div>';
+  html+='<div class="meta-label">Version</div><div class="meta-value">'+(d.version||'—')+'</div>';
+  html+='<div class="meta-label">SHA-256</div><div class="meta-value" style="font-family:var(--mono);font-size:0.78em;word-break:break-all">'+(d.hash||'—')+'</div>';
+  html+='</div>';
+  
+  if(kws) html+='<div class="section-title">Keywords</div><div class="keywords">'+kws+'</div>';
+  
+  html+='<div class="section-title">Description</div>';
+  html+='<div style="color:#444;line-height:1.7;margin:8px 0">'+d.description+'</div>';
+  
+  if(d.methodology){
+    html+='<div class="section-title">Methodology</div>';
+    html+='<div style="font-size:0.88em;color:#444;margin:8px 0">'+d.methodology+'</div>';
+  }
+  
+  if(d.falsification){
+    html+='<div class="section-title">Falsification Conditions</div>';
+    html+='<div style="font-size:0.88em;color:#444;margin:8px 0">'+d.falsification+'</div>';
+  }
+  
+  // Full text section
+  html+='<div class="section-title">Full Text</div>';
+  html+='<div id="full-text-container" class="full-text"><div style="color:var(--dim);text-align:center;padding:20px">Loading full text...</div></div>';
+  
+  // Citations
+  if(d.citations && d.citations.length){
+    html+='<div class="section-title">Citations ('+d.citations.length+')</div>';
+    html+='<div style="margin:8px 0">';
+    for(var i=0;i<d.citations.length;i++){
+      var c=d.citations[i];
+      html+='<div style="background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:14px 16px;margin-bottom:8px">';
+      html+='<div style="font-weight:500;font-size:0.9em">';
+      if(c.url) html+='<a href="'+c.url+'" target="_blank" style="color:var(--accent)">';
+      html+=c.title;
+      if(c.url) html+='</a>';
+      html+='</div>';
+      html+='<div style="font-size:0.82em;color:var(--dim);margin-top:2px">'+c.authors.join(', ')+' ('+c.year+')</div>';
+      if(c.journal) html+='<div style="font-size:0.78em;color:#888;font-style:italic">'+c.journal+(c.volume?' '+c.volume:'')+(c.pages?', '+c.pages:'')+'</div>';
+      if(c.doi) html+='<div style="font-size:0.75em;font-family:var(--mono);color:var(--teal);margin-top:3px">DOI: '+c.doi+'</div>';
+      if(c.role) html+='<div style="font-size:0.78em;color:#555;margin-top:4px;padding-top:4px;border-top:1px solid #f0f0f0"><em>Role:</em> '+c.role+'</div>';
+      html+='</div>';
+    }
+    html+='</div>';
+  }
+
+  // Verify
+  html+='<div class="verify">';
+  html+='<div class="section-title">Verify This Identifier</div>';
+  html+='<p>SHA-256 first 4 bytes map to <strong>'+d.emoji+'</strong> via the <a href="https://github.com/leesharks000/alexanarch/blob/main/GLYPH_SPEC.md">glyph table</a>.</p>';
+  html+='</div>';
+  
+  el.innerHTML=html;
+  
+  // Fetch full text — same-origin first, then cross-origin fallback
+  var mdUrl=d.full_text_path||('/data/'+d.axn.replace(/[^a-zA-Z0-9]/g,'')+'.md');
+  console.log('Fetching full text from:', mdUrl);
+  
+  if(mdUrl){
+    fetch(mdUrl)
+    .then(function(r){return r.text()})
+    .then(function(md){
+      console.log('Full text loaded, length:', md.length);
+      document.getElementById('full-text-container').innerHTML=renderMd(md);
+    })
+    .catch(function(e){
+      console.log('Same-origin fetch failed, trying cross-origin:', e);
+      var crossUrl=d.mirrors&&d.mirrors.machinemediation;
+      if(crossUrl){
+        fetch(crossUrl).then(function(r){return r.text()}).then(function(md){
+          document.getElementById('full-text-container').innerHTML=renderMd(md);
+        }).catch(function(){
+          document.getElementById('full-text-container').innerHTML='<div style="padding:20px"><p>'+d.description+'</p><p style="margin-top:12px">'+dlButtons+'</p></div>';
+        });
+      } else {
+        document.getElementById('full-text-container').innerHTML='<div style="padding:20px"><p>'+d.description+'</p><p style="margin-top:12px">'+dlButtons+'</p></div>';
+      }
+    });
+  } else {
+    document.getElementById('full-text-container').innerHTML='<div style="padding:20px"><p>'+d.description+'</p></div>';
+  }
+})
+.catch(function(e){
+  console.log('Registry fetch error:', e);
+  document.getElementById('loading').style.display='none';
+  document.getElementById('error').style.display='block';
+});
 </script>
-</head><body>
-<p>Redirecting... <a href="/s/browse/">Browse all deposits</a></p>
-</body></html>
+
+<script data-goatcounter="https://alexanarch.goatcounter.com/count"
+  async src="//gc.zgo.at/count.js"></script>
+<script>
+// Wait for GoatCounter to load, then show visit count
+var gcCheck=setInterval(function(){
+  if(window.goatcounter&&window.goatcounter.visit_count){
+    clearInterval(gcCheck);
+    // Add a counter element if it exists
+    var el=document.getElementById('rec-views');
+    if(el){
+      window.goatcounter.visit_count({append:el,type:'text',no_branding:true,style:'',path:window.location.pathname+window.location.search});
+    }
+  }
+},200);
+// Fallback after 3 seconds
+setTimeout(function(){
+  clearInterval(gcCheck);
+  var el=document.getElementById('rec-views');
+  if(el&&!el.textContent.trim()) el.textContent='0 views';
+},3000);
+</script>
+<script>
+function gcGet(path,el,label){
+  try{
+    var r=new XMLHttpRequest();
+    r.addEventListener('load',function(){
+      try{var d=JSON.parse(this.responseText);el.textContent=(d.count||'0')+' '+label;}
+      catch(e){el.textContent='0 '+label;}
+    });
+    r.addEventListener('error',function(){el.textContent='0 '+label;});
+    r.open('GET','https://alexanarch.goatcounter.com/counter/'+encodeURIComponent(path)+'.json');
+    r.send();
+  }catch(e){el.textContent='0 '+label;}
+}
+function fetchRecordCounter(){
+  var path=window.location.pathname+window.location.search;
+  var viewEl=document.getElementById('rec-views');
+  var dlEl=document.getElementById('rec-downloads');
+  if(viewEl) gcGet(path,viewEl,'views');
+  if(dlEl) gcGet('download:'+path,dlEl,'downloads');
+  // Track download clicks
+  document.querySelectorAll('.dl-btn,.dl-btn-outline,.dl').forEach(function(link){
+    link.addEventListener('click',function(){
+      if(window.goatcounter&&window.goatcounter.count){
+        window.goatcounter.count({path:'download:'+path,event:true});
+      }
+    });
+  });
+}
+setTimeout(fetchRecordCounter,300);
+</script>
+
+</body>
+</html>
