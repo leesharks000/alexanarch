@@ -142,10 +142,10 @@ fetch('/data/registry.json').then(r=>r.json()).then(reg=>{
   el.innerHTML=recent.map(function(d){
     var reading=(d.clusters||[]).map(function(c){return W[c]||c}).join(' \u2192 ');
     var clusterLine=(d.clusters||[]).join(' \u00b7 ');
-    var card='<a href="/records/?id='+(d.issue_number||d.hex)+'" style="display:block;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;margin-bottom:12px;text-decoration:none;color:inherit;cursor:pointer">';
+    var card='<a href="/s/records/'+(d.deposit_number||d.issue_number||1)+'/" style="display:block;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;margin-bottom:12px;text-decoration:none;color:inherit;cursor:pointer">';
     card+='<div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px">';
     card+='<div style="font-family:var(--mono);font-size:0.88em;color:var(--teal);font-weight:500">'+d.axn+'</div>';
-    card+='<div style="font-size:0.72em;color:var(--dim)">'+d.date+' \u00b7 <span class="gc-v" data-gc="/records/?id='+(d.issue_number||d.hex)+'" style="color:var(--teal)">0 views</span></div>';
+    card+='<div style="font-size:0.72em;color:var(--dim)">'+d.date+' \u00b7 <span class="gc-v" data-gc="/s/records/'+(d.deposit_number||d.issue_number||1)+'/" style="color:var(--teal)">0 views</span></div>';
     card+='</div>';
     card+='<div style="font-size:0.72em;color:var(--dim);margin:2px 0">'+clusterLine+'</div>';
     card+='<div style="font-size:0.78em;color:#888;font-style:italic;margin-bottom:6px">'+reading+'</div>';
