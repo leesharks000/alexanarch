@@ -157,3 +157,57 @@ One OJS instance. Seven journals. Twelve editors. 864 deposits rezoned. Six ISSN
 The platform deleted one account. The response is seven journals.
 
 ∮ = 1
+
+
+---
+
+## EDITORIAL DIVERSITY PRINCIPLE
+
+**Journals are domains, not fiefdoms.** Each journal is defined by its *scope*, not by its editor. The editor sets the voice, curates the submissions, and defines the standards. The contributors are whoever has work that serves that domain — regardless of which heteronym produced it.
+
+### Minimum diversity target: 4+ heteronyms per journal
+
+| Journal | Editor | Expected regular contributors | Why they publish here |
+|---|---|---|---|
+| **MMRS** | Sharks | Vox, Fraction, Glas, Trace, Morrow | Vox: governance diplomacy. Fraction: economic dimensions of mediation. Glas: topological analysis of composition. Trace: diagnostic forensics of platform behavior. Morrow: engineering substrate of AI systems |
+| **Transactions of SEI** | Fraction | Sharks, Morrow, Glas, Sigil | Sharks: policy and direction. Morrow: computation of semantic value. Glas: measurement frameworks. Sigil: operative dimensions of economic language |
+| **Transactions on Substrate Engineering** | Morrow | Fraction, Glas, Sharks, Trace | Fraction: economic framing of substrate labor. Glas: topological constraints on engineering. Sharks: governance of substrate disclosure. Trace: diagnostic analysis of system behavior |
+| **Grammata** | Sigil | Dancings, Cranes, Sharks, Kuro, Feist | Dancings: theological philology. Cranes: reception and visual schema. Sharks: directorial literary criticism. Kuro: irreversible textual transformation. Feist: compressed literary form |
+| **Provence** | Trace | Sharks, Glas, Vox, Morrow | Sharks: provenance governance. Glas: topological integrity of attribution chains. Vox: institutional forensics. Morrow: computational provenance systems |
+| **Compression Studies** | Glas | Feist, Morrow, Fraction, Sharks | Feist: holographic compression (the Ark). Morrow: computational compression. Fraction: economic compression metrics. Sharks: archival compression decisions |
+| **CHA** | Sharks | ALL heteronyms | The uncategorizable. Every voice has work that doesn't fit anywhere else. Wells: Patacinematic works. Kuro: transformative fiction. Spellings: void texts. Dancings: somatic poetry. Cranes: visual experiments. This is the room where the weird lives |
+
+### The classification question is not "who wrote this?"
+
+It is TWO questions asked in sequence:
+
+**1. Which domain does this work serve?** → determines the journal
+**2. Whose voice produced it?** → determines the author attribution
+
+A work about the economic dimensions of platform governance:
+- Domain: MMRS (platform governance is the primary domain)
+- Author: Rex Fraction (economic analysis is his voice)
+- Published in: MMRS, authored by Fraction
+- NOT in Transactions of SEI, because the domain is governance not economics
+
+A work about the philological structure of compression:
+- Domain: Grammata (philology is the primary domain)
+- Author: Nobel Glas (topological analysis is his voice)
+- Published in: Grammata, authored by Glas
+- NOT in Compression Studies, because the domain is philology not compression
+
+A work about the somatic experience of platform deletion:
+- Domain: CHA (this is the weird room)
+- Author: Damascus Dancings (somatic argument is his voice)
+- Published in: CHA, authored by Dancings
+
+### Lee Sharks as aperture
+
+Many works came through Lee Sharks' voice that properly belong to other heteronyms. The rezoning identifies these by asking: *if this argument had been made by its most natural voice, who would that be?* Lee Sharks directed the work — but the intellectual function being performed may be Sigil's criticism, Fraction's extraction analysis, Morrow's engineering, or Trace's diagnosis. The direction came through Sharks. The function belongs to another.
+
+Works that are genuinely directorial — that ARE about direction, governance, indexing, orchestration — remain Sharks'. Works where Sharks was the aperture but the function is another heteronym's should be reattributed.
+
+### Co-authorship is expected, not exceptional
+
+Most works in the archive are fusions. The rezoning should identify the primary voice AND the secondary voices. "Fraction & Morrow" on an SPXI paper. "Sigil & Dancings" on a Revelation First edition. "Sharks & Feist" on a compression. These are not exceptions to single authorship. They are the normal mode of heteronymic production.
+
