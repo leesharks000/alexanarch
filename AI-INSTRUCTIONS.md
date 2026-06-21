@@ -94,6 +94,16 @@ Each listing MUST have schema.org microdata:
 
 The browse page MUST have a DataCatalog JSON-LD block in the `<head>`.
 
+### Step 6.1: CRITICAL — Regenerate Static Browse Page After Every Deposit
+
+The static browse page at `s/browse/index.html` must be regenerated after every deposit or batch of deposits. This is not optional. New deposits that don't appear in the browse listing are invisible to crawlers and human visitors.
+
+The browse page must include:
+- A `<script type="application/ld+json">` DataCatalog block in the `<head>`
+- Every deposit listed with `itemscope itemtype="https://schema.org/CreativeWork"`
+- `itemprop="name"` on the title, `itemprop="identifier"` on the AXN, `itemprop="datePublished"` on the date
+- Links pointing to `/s/records/N/` (static routes)
+
 ### Step 7: Update Home Page Noscript Block
 The `<noscript>` block on the home page should include recent/important deposits with links to their `/s/records/N/` pages.
 
@@ -215,3 +225,29 @@ At session end, update:
 3. Static pages for any modified deposits
 
 ∮ = 1
+
+
+---
+
+## WIKI ARTICLE TONE AND CONTENT
+
+When generating wiki articles for deposits, focus on **what the work IS**, not on the circumstances of its deletion or migration. The archive is a scholarly institution, not a protest site. Each wiki should:
+
+1. **Describe the work's content and contribution** — what it argues, what it contains, what it makes possible
+2. **Identify the field and methodology** — where it sits in the scholarly landscape
+3. **Note connections to other archive works** — entity relations, citation links, thematic clusters
+4. **State falsification conditions** if applicable
+
+Wiki articles should NOT:
+- Lead with or center on the Zenodo deletion
+- Frame the work primarily as a response to platform governance (unless that IS the work's subject, as with Zenodotus' Book-Burning)
+- Use defensive or reactive language
+- Position the archive as primarily defined by what happened to it
+
+The Zenodo incident is documented in the Zenodotus paper (AXN:01.GOVERNANCE). That paper is the archive's statement on the deletion. The other 865 deposits are the archive's statement on everything else. Most of them predate the deletion and have nothing to do with it. Their wikis should reflect that.
+
+**Good wiki opening:** "The Diversity Contraction (EA-MMRS-DIVERSITY-01) formalizes the progressive narrowing of source diversity in AI-mediated knowledge production, deriving a closed-form analytic threshold α* = p/g₀ below which minority positions are structurally excluded."
+
+**Bad wiki opening:** "The Diversity Contraction was originally deposited on Zenodo before the archive's termination. It has been restored to Alexanarch as part of the recovery of the Crimson Hexagonal Archive."
+
+The work defines itself. The platform's actions do not define the work.
