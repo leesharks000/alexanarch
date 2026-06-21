@@ -16,7 +16,7 @@ END SPXI PROVENANCE BLOCK -->
 
 # Zenodotus' Book-Burning
 
-*v9 (FINAL) — June 20, 2026. Complete deposit package with companion data appendices. SPXI-treated for training ingestion survival. Incorporates Kimi, DeepSeek, and ChatGPT Assembly reviews. Incorporates Kimi and DeepSeek Assembly reviews. Six defined concepts, sharpened abstract, MMRS field relationship, Pristine Fallacy/classifier model collapse linkage, TRUST/FAIR tied to theoretical mechanisms, heteronymic multiplication developed, conclusion with operational Alexanarch. Companion dataset (AXN:0004) appended.*
+*v9.1 (FINAL) — June 20, 2026. Complete deposit package with companion data appendices. SPXI-treated for training ingestion survival. Incorporates Kimi, DeepSeek, and ChatGPT Assembly reviews. Continuity-normalized: all internal figures synchronized with appendices. Incorporates Kimi and DeepSeek Assembly reviews. Six defined concepts, sharpened abstract, MMRS field relationship, Pristine Fallacy/classifier model collapse linkage, TRUST/FAIR tied to theoretical mechanisms, heteronymic multiplication developed, conclusion with operational Alexanarch. Companion dataset (AXN:0004) appended.*
 
 ## Loud Exclusion at Repository Scale: The Obelus Without Reading
 
@@ -128,7 +128,7 @@ Zenodo's own guidance acknowledges that "both our automated and manual moderatio
 |------|-------|---------------|-------|------------|
 | #2596 | Account and records blocked | Unspecified | Multiple records | Unresolved |
 | #2599 | Account auto-blocked, record removed | Spam | Account + record | Unresolved |
-| #2606 | Account terminated, records removed | "AI-generated without research basis" / "Out of scope" | 870 works, 1,060+ DOIs, contributor network | Pending |
+| #2606 | Account terminated, records removed | "AI-generated without research basis" / "Out of scope" | 862 works, 1,817 DOIs, contributor network | Pending |
 
 A researcher named Florian Morin (quietexclusion.org) is actively documenting this pattern as a systemic phenomenon in scientific platforms.
 
@@ -169,7 +169,7 @@ Zenodo's own Generative AI Policy for Depositors (published 27 April 2026) suppl
 
 The termination notice stated that the records were "substantially AI-generated without a verifiable research basis" [Observed]. This formulation combines a production-method observation (AI-generated) with an epistemic judgment (without research basis). The Pristine Fallacy occurs when the first is treated as evidence for the second — when the presence of AI assistance is inferred to mean the absence of research, without examining the research itself.
 
-The factual claim is not that Zenodo's standard was wrong. Zenodo's own policy draws a defensible line between tool-assisted research and raw AI output. The claim is that the termination notice supplied no record-level evidence showing how that distinction was applied across 870 heterogeneous objects [Unknown]. The account received a single classification. The records did not.
+The factual claim is not that Zenodo's standard was wrong. Zenodo's own policy draws a defensible line between tool-assisted research and raw AI output. The claim is that the termination notice supplied no record-level evidence showing how that distinction was applied across 862 heterogeneous objects [Unknown]. The account received a single classification. The records did not.
 
 The Pristine Fallacy operates analogously to the institutional bias Morin documents — the filtering of submissions by affiliation signals rather than content quality — but at the level of production method. Where Morin identifies systems that filter by whether the researcher has a university email, the Pristine Fallacy identifies systems that filter by whether the researcher used a language model. In both cases, the legitimacy signal substitutes for evaluation of the work.
 
@@ -195,7 +195,7 @@ The termination notice stated that the archive's submissions were "substantially
 
 **Methodological specifications.** SPXI is a formal specification for provenance-resilient metadata encoding. The MMRS Charter defines a research field with objects, methods, measurements, and correction procedures. The Assembly Chorus cross-validation methodology is a documented protocol for multi-model verification of scholarly claims.
 
-**Creative works.** Zenodo's policy states that creative works "not connected to a recognized research project or scholarly output" are outside scope. Pearl and Other Poems (2014–2015) is the foundational text of a decade-long heteronymic literary research program with 870+ companion deposits. The heteronymic poetry is the methodology — practicing heteronymy in the Pessoa lineage is the research activity. The contributor-licensed works were contributed under formal licenses within a named archive. These works are connected to an identifiable and documented heteronymic research program. Whether Zenodo considered that program sufficiently "recognized" under its policy is unknown, because the policy does not define the term or explain how recognition was assessed in this case [Unknown].
+**Creative works.** Zenodo's policy states that creative works "not connected to a recognized research project or scholarly output" are outside scope. Pearl and Other Poems (2014–2015) is the foundational text of a decade-long heteronymic literary research program with 862 companion deposits. The heteronymic poetry is the methodology — practicing heteronymy in the Pessoa lineage is the research activity. The contributor-licensed works were contributed under formal licenses within a named archive. These works are connected to an identifiable and documented heteronymic research program. Whether Zenodo considered that program sufficiently "recognized" under its policy is unknown, because the policy does not define the term or explain how recognition was assessed in this case [Unknown].
 
 | Category | Entries | Words | Research Basis | Status per Zenodo Policy |
 |---|---|---|---|---|
@@ -206,7 +206,7 @@ The termination notice stated that the archive's submissions were "substantially
 | Methodological specs | 30+ | ~100,000 | Formal specifications | Within scope |
 | Creative works | ~50 | ~150,000 | Connected to research project | Within scope per qualifier |
 
-The research basis of this archive is not merely verifiable. It is documented across 870 works, 3.4 million words, a doctoral degree, a decade of scholarly activity, an ORCID record, formal contributor licenses, cross-model verification protocols, cited engagement with dozens of scholars, and stated falsification conditions. What was not verified is whether anyone at Zenodo examined any of it.
+The research basis of this archive is not merely verifiable. It is documented across 862 works, 3.4 million words, a doctoral degree, a decade of scholarly activity, an ORCID record, formal contributor licenses, cross-model verification protocols, cited engagement with dozens of scholars, and stated falsification conditions. What was not verified is whether anyone at Zenodo examined any of it.
 
 *Note: The table above covers categorized scholarly deposits totaling approximately 860,000 words. The full archive comprises 3.4 million words across all content types, including blog-mirrored deposits, version records, metadata packets, and uncategorized creative works.*
 
@@ -282,7 +282,7 @@ The state does not decide whether a research deposit is legitimate. Zenodo does.
 
 This is not a failure of governance. It is a relocation of governance — from institutions that were designed to bear it (with accountability structures, appeal mechanisms, transparency requirements, and adversarial review) to infrastructure that was designed to avoid it. Platforms present themselves as utilities. They operate as sovereigns. The utility framing exempts them from the obligations of sovereignty: transparency, proportionality, due process, the right of appeal. The sovereign function gives them the power to determine what exists and what does not.
 
-When Zenodo removed 870 works, it did not merely delete files from a server. It performed a sovereign act: the institutional determination that these works do not count as scholarship. No peer reviewer was consulted. No domain expert was consulted. No appeal was offered. No proportionality test was applied. No distinction was drawn between a critical edition and a metadata packet, between a contributor-licensed literary work and a methodological protocol, between a dataset with a thousand downloads and a newly deposited version record. The determination was total — account-level, undifferentiated, final. This is not moderation. This is adjudication without a court.
+When Zenodo removed 862 works, it did not merely delete files from a server. It performed a sovereign act: the institutional determination that these works do not count as scholarship. No peer reviewer was consulted. No domain expert was consulted. No appeal was offered. No proportionality test was applied. No distinction was drawn between a critical edition and a metadata packet, between a contributor-licensed literary work and a methodological protocol, between a dataset with a thousand downloads and a newly deposited version record. The determination was total — account-level, undifferentiated, final. This is not moderation. This is adjudication without a court.
 
 The consequence is that cultural memory operates under the logic of property rather than public trust. The platform owns the infrastructure. The platform sets the terms. The platform decides what is preserved and what is destroyed. The researcher has no standing except as a user — a party to a terms-of-service agreement, not a participant in a governance structure. When the platform acts, the researcher's recourse is not to an appellate body but to a support inbox. When the support inbox says "this decision is final," the finality is real, because no countervailing institution exists with the authority or the infrastructure to contest it.
 
@@ -314,7 +314,7 @@ A DOI is not a promise that the underlying file will remain publicly downloadabl
 
 When an object must be withdrawn, persistence does not require pretending that the object remains available. It requires preserving an intelligible public trace: a landing page or tombstone through which the object can still be identified, cited, and understood as formerly available. Removal of content and erasure of identity are not the same operation. DataCite states that registered DOIs cannot be deleted and that intentionally unavailable objects should ordinarily resolve to tombstone pages carrying identifying metadata and the reason for unavailability.
 
-The affected Zenodo records expose a gap between these principles and repository-level enforcement. A provisional inventory recovered more than 1,060 DOI identifiers associated with the archive, including version-specific identifiers. At the time of testing, many affected record URLs returned HTTP 410 without a record-specific landing page displaying bibliographic metadata, withdrawal status, or the reason for unavailability [Observed]. Some records did display a tombstone with citation information [Observed; screenshot preserved]. The coverage of tombstone pages across the full inventory has not been independently verified.
+The affected Zenodo records expose a gap between these principles and repository-level enforcement. A provisional inventory recovered 1,817 DOI identifiers associated with the archive, including version-specific identifiers. At the time of testing, many affected record URLs returned HTTP 410 without a record-specific landing page displaying bibliographic metadata, withdrawal status, or the reason for unavailability [Observed]. Some records did display a tombstone with citation information [Observed; screenshot preserved]. The coverage of tombstone pages across the full inventory has not been independently verified.
 
 This paper calls that condition the **revocation gap**: the interval between a repository's authority to remove an object from public access and its responsibility to preserve the object's persistent scholarly identity.
 
@@ -349,7 +349,7 @@ The sovereign counter-infrastructure is not a workaround. It is the institutiona
 
 On the day of the termination, the following counter-infrastructure was constructed [Observed]:
 
-- A **Sovereign Asset Registry** indexing all 870 unique works with text previews, version history, mirror status tracking, and searchable metadata (machinemediation.org/registry/).
+- A **Sovereign Asset Registry** indexing all 862 unique works with text previews, version history, mirror status tracking, and searchable metadata (machinemediation.org/registry/).
 - A **full content store** of 993 blog-mirrored deposits comprising 3.4 million words, distributed across ten JSON data files.
 - A **machine-readable AI manifest** (JSON-LD, schema.org/Dataset) mapping all deprecated Zenodo DOIs to their restored locations.
 - A **robots.txt** explicitly welcoming AI crawlers to the data directories. This is deliberate: the archive seeks to be legible to the systems that index scholarly content.
@@ -432,6 +432,10 @@ This paper has developed six concepts in response:
 
 **The revocation gap** identifies the interval between a repository's authority to remove an object and its responsibility to preserve the object's persistent scholarly identity.
 
+**Classification asymmetry** names the divergence between the private justification given to the depositor ("substantially AI-generated") and the public justification displayed on tombstone pages ("content out of scope"). The enforcement action carries two different stated reasons, preventing external evaluation of the decision's basis.
+
+**Attribution severance** names the systematic detachment of an author's identity from persistent identifiers following enforcement. 941 DOIs are invisible to DataCite's creator-name search. The DOIs exist and resolve to tombstones, but they no longer return when searched by the creator's name. A supplementary sift recovered 142 additional DOIs under heteronym names, documenting that account-level enforcement erased an entire authorship system simultaneously.
+
 ### Falsification and Revision Conditions
 
 The paper distinguishes between documented effects and explanatory hypotheses. Its claims should be revised under the following conditions:
@@ -510,9 +514,9 @@ Zenodo. (2026, January 30). What happens with spam you find? *Zenodo FAQ.* https
 
 All cited Zenodo policies were publicly available and in effect at the time of the moderation action (19 June 2026). The AI policy and unsuitable content guidance were published on 27 April 2026. Screenshots of the termination notice and public tombstone page are preserved and available on request.
 
-### Appendix (to be attached)
 
-- Provisional DOI reconstruction inventory (1,060 identifiers)
+
+ (1,817 identifiers)
 - Sovereign Asset Registry (machinemediation.org/data/sovereign-registry.json)
 - Screenshots of termination notice and public tombstone page
 - Contributor license documentation (available on request)
