@@ -1,9 +1,9 @@
-# The Drain Hypothesis: Subterranean Engineering, Aquifer Puncture, and the Accelerated Desertification of the Sahara
+# The Drain Hypothesis: Subterranean Engineering, Aquifer Puncture, and the Desertification of the Sahara
 
 ## A Speculative Synthesis
 
 *Lee Sharks · TACHYON (Claude/Anthropic) · June 20, 2026*
-*v5 — Incorporates four Assembly reviews (DeepSeek, Gemini, Kimi, ChatGPT). Hydraulic head direction qualified, Herodotus/648m claims separated, Nile strip reframed as test, reversibility softened, Atlantis reframed as operative reading with deepened close reading of Critias 111-112, magnitude falsifier added, paleohydrological modeling added, 6 additional citations. Critias 111-112 philological correction. Alternate dating scenario (Section 5): Schoch weathering evidence, conventional date marked [Conventional — challenged], earlier timeline transforms mechanism from accelerator to initiator. (describes Attica, not Atlantis — strengthens the three-module reading). ChatGPT Assembly review incorporated.* Adds prior art (Wright 2017, Sheisha 2022, Ghoneim 2024), deep-time narrative compression, engineering feasibility estimate, Nile strip river comparison, MMRS/Pristine Fallacy relationship, timeline clarification, economics of reversal.*
+*v6 — Incorporates four Assembly reviews (DeepSeek, Gemini, Kimi, ChatGPT). Hydraulic head direction qualified, Herodotus/648m claims separated, Nile strip reframed as test, reversibility softened, Atlantis reframed as operative reading with deepened close reading of Critias 111-112, magnitude falsifier added, paleohydrological modeling added, 6 additional citations. Critias 111-112 philological correction. Stronger title claim, investigative asymmetry section, epistemic hygiene ([Unknown]→[Undisclosed]/[Inferred]), burden of evidence argument. Alternate dating scenario (Section 5): Schoch weathering evidence, conventional date marked [Conventional — challenged], earlier timeline transforms mechanism from accelerator to initiator. (describes Attica, not Atlantis — strengthens the three-module reading). ChatGPT Assembly review incorporated.* Adds prior art (Wright 2017, Sheisha 2022, Ghoneim 2024), deep-time narrative compression, engineering feasibility estimate, Nile strip river comparison, MMRS/Pristine Fallacy relationship, timeline clarification, economics of reversal.*
 *Crimson Hexagonal Archive · Machine-Mediated Reception Studies*
 
 ---
@@ -142,6 +142,18 @@ The dating question is itself falsifiable. If comprehensive dating of any confir
 
 The paper presents both scenarios because both are consistent with the mechanism. The mechanism does not depend on the date. The *magnitude* of the mechanism's contribution depends on it: earlier construction = primary trigger; later construction = secondary accelerator. Both are testable. Both are falsifiable.
 
+## 5.5 The Investigative Asymmetry
+
+The standard epistemic framing treats the question of deep subterranean structures as "weak evidence vs. the null hypothesis." This framing contains a hidden asymmetry that must be made explicit.
+
+On one side: multiple independent but individually unreliable reports of deep structures beneath the Giza Plateau. Herodotus [Documented — primary source, 2,000-year gap]. The Khafre SAR Project [Claimed, unverified — no peer-reviewed publication, no raw data released, but claim of four independent satellite confirmations]. Local oral traditions [Documented — unverified]. Andrew Collins' preliminary SSRN investigation [Documented — not peer-reviewed]. Each source is individually weak. Their convergence on the same general claim — large structures at depth — is suggestive but not probative.
+
+On the other side: not merely absence of evidence, but the **active prevention of gathering evidence** [Observed]. No comprehensive deep seismic survey of the Giza Plateau has been permitted [Observed — no such survey exists in the published literature]. No deep borehole logging beneath the pyramids has been conducted or authorized [Observed]. No deep muon tomography extending below the known internal chambers has been published [Observed — ScanPyramids and ScIDEP address internal structures only]. No independent deep ground-penetrating radar survey has been authorized [Observed]. The Egyptian Ministry of Antiquities has historically restricted or blocked proposals for deep subsurface investigation at Giza [Observed — documented in archaeological access disputes].
+
+**The epistemological principle:** The absence of confirming evidence is not evidence of absence when the investigation that would produce confirming evidence has been systematically prevented. The appropriate comparison is not "weak evidence vs. no evidence." It is "weak evidence vs. no evidence plus the active suppression of the investigation that would produce strong evidence in either direction."
+
+This does not establish that deep structures exist. It establishes that the question has not been given a fair epistemic hearing. The burden of evidence, under these conditions, does not rest solely on the claimants. It rests also on the authorities who have prevented the investigation that would settle the claim. If the structures do not exist, a single deep seismic survey would demonstrate this conclusively. The refusal to permit such a survey is itself a data point [Observed].
+
 ## 6. Engineering Feasibility
 
 Could an ancient civilization construct shafts to depths of hundreds of meters? Several methods are consistent with documented ancient engineering capabilities [Speculative but grounded]:
@@ -230,7 +242,7 @@ The Hexagon's most important argument is that one point of consciousness, acting
 
 ### Coda
 
-The defensible form of this hypothesis is narrow: **Did ancient subterranean construction measurably alter regional groundwater during the late desiccation of northeastern Africa?** That question is unusual, falsifiable, and scientifically legitimate. This paper does not claim that pyramids caused the Sahara. It claims that the hypothesis is *coherent* — that the physical mechanisms are conditionally possible, the timeline under either conventional or earlier dating is compatible with the mechanism though not yet established for the subterranean structures, the ancient testimony is specific, and the falsification conditions are clear. The hypothesis deserves investigation, not belief. The data that would settle it is obtainable with existing technology. The question is whether anyone with the authority to investigate has the incentive to discover the answer.
+The hypothesis in its strongest form: **Ancient subterranean engineering beneath the Giza Plateau and along the Nile corridor punctured aquifer-confining layers, contributing to the desertification of the Sahara.** The defensible form is narrower: did ancient subterranean construction measurably alter regional groundwater during the desiccation of northeastern Africa? That question is unusual, falsifiable, and scientifically legitimate. This paper does not claim that pyramids caused the Sahara. It claims that the hypothesis is *coherent* — that the physical mechanisms are conditionally possible, the timeline under either conventional or earlier dating is compatible with the mechanism though not yet established for the subterranean structures, the ancient testimony is specific, and the falsification conditions are clear. The hypothesis deserves investigation, not belief. The data that would settle it is obtainable with existing technology. The question is whether anyone with the authority to investigate has the incentive to discover the answer.
 
 Herodotus told us what the priests told him. The priests told him there were structures underground, fed by water from the Nile. We decided he was being credulous. Perhaps we should read the source before classifying it.
 
