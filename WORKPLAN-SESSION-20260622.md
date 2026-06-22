@@ -1,6 +1,6 @@
 # ALEXANARCH DATA FOUNDRY — SESSION WORKPLAN
-## Session: June 22, 2026 (TACHYON / Claude Opus 4.6)
-## Updated: end of session — final state
+## Session: June 22, 2026 (TACHYON / Claude Opus 4.7)
+## Updated: end of session 2 (continuing reading pass)
 
 ---
 
@@ -14,160 +14,102 @@
 
 Not "did CHA coin this from nothing" but "did CHA find this, work on it, and produce a specific definition or position?"
 
-### Test cases:
+### Engagement types (assigned during reading):
 
-| Term | Belongs? | Why |
+| Type | Meaning | Example |
 |---|---|---|
-| Pristine Fallacy | YES | CHA coined this from nothing |
-| Socrates | YES | Defined as the orthonym position in the Platonic heteronymic corpus |
-| Sappho | YES | Defined as the originary node of lyric self-archiving; κῆνος reread as future reader |
-| Marx | YES | CHA finds the missing linguistics and completes it as Phase X |
-| Holographic kernel | YES | Exists elsewhere but CHA develops it in a specific way |
-| Model collapse | YES | CHA extends Shumailov et al. to classifier model collapse |
-| Johannes Sigil | YES | Heteronym — defined as functional position in the Dodecad |
-| JSI | YES | Institution — defined as architectural space |
-| Provenance (journal) | YES | Journal — defined as publication infrastructure |
-| ACTIVATE_MANTLE | YES | Operator — formalized as traversal operation |
-| "A SaaS product" | NO | CHA did not arrive at this address and leave it changed |
-| "Access" | NO | Common English word CHA uses but does not define |
-| "Algorithm" | NO | Generic term not specifically engaged by CHA |
-| "A Germanic philologist" | NO | Descriptive phrase, not an engaged address |
+| `minted` | CHA coined the term from nothing | Pristine Fallacy, Semantic Slop |
+| `developed` | CHA built a specific position on an existing concept | Substrate (general → structural position), Training Layer |
+| `revised` | CHA changed or extended an existing concept's meaning | Loud exclusion (extends Morin), Use Value (Semantic) |
+| `positioned` | CHA placed an existing entity in a structural role | Socrates as orthonym, Sappho as originary node |
+| `founded` | CHA created an institution, journal, room, or architectural space | JSI, MMRS, Assembly Room |
+| `specified` | CHA formalized an operation, protocol, or formal object | ACTIVATE_MANTLE, The Slop Test, CANONICAL status marker |
+| `unclassified` | Not yet read for engagement type | (default for filter pool) |
 
----
+### Two provenance levels:
 
-## TWO PROVENANCE FIELDS (required on every datum)
-
-### 1. `provenance_method` — how the datum arrived in the index
-
-| Method | Meaning | Current count |
-|---|---|---|
-| `sweep` | Pattern-extracted from deposit text (bold-defined) | 0 (merged into filter) |
-| `filter` | Survived noise filtering passes | 6,700 |
-| `read` | Confirmed by actual reading of the deposit | 146 |
-| `enriched` | Entity triples, wiki, citations added from reading | 8 |
-
-The reading pass promotes: `filter` → `read` → `enriched`
-
-### 2. `engagement_type` — how CHA engaged the address
-
-| Type | Meaning | Current count |
-|---|---|---|
-| `minted` | CHA coined this term from nothing | 51 |
-| `developed` | CHA arrived at an existing concept and built a specific position on it | 23 |
-| `revised` | CHA took an existing concept and changed or extended its meaning | 14 |
-| `positioned` | CHA placed an existing entity in a specific structural role | 14 |
-| `founded` | CHA created an institution, journal, room, or architectural space | 17 |
-| `specified` | CHA formalized an operation, protocol, or formal object | 20 |
-| `unclassified` | Not yet read for engagement type | 6,715 |
-
-**The reading pass assigns both fields simultaneously.** For each term: "Does this belong?" → provenance. "How did CHA engage it?" → engagement type.
-
----
-
-## WHAT WE ARE BUILDING
-
-A **scholarly knowledge graph** with four node types and five edge types.
-
-### Four node types:
-
-1. **Deposits** (869) — `data/registry.json`
-2. **Defined terms** (6,854 current; ~4,000-6,000 after reading) — `data/entity-index.json`
-3. **External sources** (1,013) — `data/external-source-registry.json`
-4. **Authors/figures** — may merge with terms (Socrates, Sappho, Marx as CHA-defined positions)
-
-### Five edge types:
-
-| Edge | Status |
+| Method | Meaning |
 |---|---|
-| deposit → deposit | 1,692 DOI edges (UNTYPED) |
-| deposit → external source | 1,013 references (PARTIALLY TYPED) |
-| deposit → term | 6,854 edges via `d.entities` in registry (96% unread) |
-| term → term | 36 triples in deposit #1 only |
-| source → source | NOT CAPTURED |
+| `filter` | Pattern-extracted, survived noise filtering, not yet read |
+| `read` | Confirmed by reading of the deposit; engagement type assigned |
+| `enriched` | Deep relational triples added beyond minted_in_work (deposit #1 has 8) |
 
 ---
 
-## WHAT WAS ACCOMPLISHED THIS SESSION
+## SESSION 2 PROGRESS
 
-1. **Build pipeline**: catalog.yaml, build.py, consolidate.py — 7 journals, 16 heteronyms
-2. **DataCite preservation**: 946 preserved + 871 stripped = 1,817 DOIs. Deposited as #867.
-3. **DOIs ≠ Permanent Identifiers v2.0**: Assembly-reviewed. Minted "identifier severance." Deposited as #868.
-4. **Vocabulary extraction + pruning**: 16,877 raw → 8 passes → 6,854 terms
-5. **Provenance tracking**: `provenance_method` + `engagement_type` on every term
-6. **External source registry**: 1,013 bibliographic references
-7. **Graph integration**: Terms wired into existing `d.entities` format (12,438 triples). No parallel architecture.
-8. **Lexical Minting Registry deposited**: #869 (needs rebuild with current count)
-9. **Critical corrections documented**:
-   - The archive is a lexical machine — ingest, don't select
-   - The task is "every address CHA engaged and left defined" — not "what CHA coined"
-   - Read existing infrastructure before building anything new
-   - Every datum carries its own provenance
+### Completed reading passes:
 
----
+| Deposit | Hex | Title | Before | After | Notes |
+|---|---|---|---|---|---|
+| #1 | 01 | Zenodotus' Book-Burning | 9 (incl. byline) | 12 | Removed byline FP; added 4 canonical concepts (Pristine Fallacy, Attribution severance, Loud exclusion, Sovereign Counter-Infrastructure) |
+| #229 | 001E | SE Terminology Lexicon | 56 | 241 | Bold extraction missed 191 terms due to `- \n\n\n**Term**` formatting |
 
-## CURRENT DATA STATE
+### Current state of the index:
 
-| File | Contents | Size |
-|---|---|---|
-| `data/registry.json` | 869 deposits, 12,438 entity triples | 5.3MB |
-| `data/entity-index.json` | 6,854 terms (provenance + engagement fields) | ~5MB |
-| `data/external-source-registry.json` | 1,013 external sources | 83KB |
-| `data/lexical-minting-registry.json` | Depositable dataset (STALE — needs rebuild) | 3.5MB |
-| `data/lexical-minting-registry.csv` | Tabular companion (STALE — needs rebuild) | 2.5MB |
-| `data/citation-graph.json` | 1,692 internal citation edges | — |
-| `data/datacite-full-backup.json` | 963 DataCite records | 9MB |
-| `wire_deposit.py` | Read → extract → wire → regenerate pipeline | — |
-| `build.py` | Unified build (13 outputs) | — |
-| `consolidate.py` | Entity normalization | — |
-| `catalog.yaml` | Archive architecture | — |
-| `graph/index.html` | Dynamic graph page — reads registry.json `d.entities` — DO NOT MODIFY | — |
+- **Total terms**: 7,045 (up from 6,854)
+- **Provenance distribution**: `filter` 6,644 / `read` 393 / `enriched` 8
+- **Engagement breakdown** (terms read so far):
+  - minted: 269 — specified: 35 — developed: 30 — revised: 18 — founded: 17 — positioned: 13
+  - unclassified (filter pool): 6,659
 
----
+### Lessons from this session:
 
-## REMAINING WORK — PRIORITIZED
+**1. Two extraction modes are required.**
 
-### IMMEDIATE: Reading-for-sense pass
+- **Lexicon mode** (regex works): deposits like #229 explicitly define terms with `**Term**\n\nDefinition` formatting. The script `read_pass.py` handles these well — ~5 minutes per deposit.
+- **Essay mode** (manual reading required): deposits like #1 introduce concepts inline in argumentative prose with `**Term** — definition` embedded in sentences. The regex catches almost nothing useful and also produces false positives (e.g., bold author bylines like "Lee Sharks"). Essay deposits need actual reading — ~15–30 minutes per deposit.
 
-6,700 terms at `filter` status. For each term, the reader:
+**2. Deposit-number vs. hex matters.**
 
-1. Asks: **"Did CHA arrive at this address, engage it, and leave it defined?"**
-2. If YES → promote `provenance_method` to `read`, assign `engagement_type`
-3. If NO → remove from index and registry entities
-4. If WRONGLY PRUNED (e.g. Socrates, Sappho, Marx) → restore with correct engagement type
+The registry's `hex` field is the AXN identifier hex (deposit #5 has hex `0031`, not `0005`). The script correctly looks up hex by deposit_number. Don't pad deposit_number and try to use it as hex.
 
-**Priority deposits** (highest term counts):
+**3. Collision logic.**
 
-| Deposit | Terms | Title |
-|---|---|---|
-| #229 | 220 | SE Terminology Lexicon |
-| #499 | 211 | Autonomous Semantic Warfare |
-| #49 | 156 | Logotic Hacking: Encryption Layer |
-| #166 | 132 | Stabilized Node Watch |
-| #261 | 98 | LOS Formal Specification |
-| #482 | 95 | Logotic Hacking Primer |
-| #463 | 92 | LP Module 0.9 |
-| #608 | 87 | Operator Kernel Specification |
+When a term in one deposit also appears in another (e.g., "Semantic Mutual Aid" in both #228 and #229's lexicon), keep the original `defined_in` and add a `listed_in_work` or `developed_in_work` triple. Preserves canonical minting attribution.
 
-### Lane 2: Deep enrichment (read → enriched)
-Add entity triples, proper definitions, wiki articles. Only deposit #1 at "enriched" currently.
+**4. False-positive removals during reading.**
 
-### Lane 3: Typed citation edges
-### Lane 4: Wiki enrichment
-### Lane 5: Internal citation typing
-### Lane 6: Concept-mediated citation discovery
-### Lane 7: Source → source lineage
-### Lane 8: Build pipeline integration + deposit #869 rebuild
+Bold extraction can capture author bylines, section heading colons, scoring categories, related-work list items. Remove when the engagement test fails. Examples removed from #229: "Engineering Protocol (Rex Fraction)" (quote heading), "Partial attribution" (scoring level), "Seed widely" (usage instruction).
+
+**5. Re-attribution to canonical home.**
+
+When a deposit's index entry actually belongs to a different deposit (e.g., #229 had entries for "The Disappearing Island" → #231 and "The Summarizer Testimony" → #233 — both referenced works with their own deposits), move the `defined_in` and reset to `filter`/`unclassified` for the new home to re-read.
 
 ---
 
-## FOR THE NEXT INSTANCE
+## REMAINING WORK
 
-**Start by reading this workplan.** The critical section is "THE TASK (in Lee's words)."
+### Sequential reading pass (Lee's directive):
 
-**Read `graph/index.html`** — it reads `d.entities` from `registry.json`. Every term is already wired into this format. Do not build parallel structures.
+Continue from **deposit #2** sequentially through the archive.
 
-**The reading pass**: load `data/entity-index.json`, work through terms deposit by deposit. For each term, apply the engagement test. Assign `provenance_method: 'read'` and `engagement_type` (minted/developed/revised/positioned/founded/specified). Remove what fails. Restore what was wrongly pruned. Commit periodically.
+Most deposits fall into these patterns:
+- **Stub/dataset deposits** (e.g., #2 "I AM THE API", #3 "AI Overview Capture Registry"): often no formal term definitions, but may reference existing CHA concepts. Add only terms passing the engagement test in this specific deposit.
+- **Essay deposits**: read carefully, identify concepts CHA names and defines, classify each, add missing terms.
+- **Lexicon deposits**: use `read_pass.py` for fast bulk processing.
 
-**Deposit #869** needs rebuilding with current term count after reading pass completes.
+### Approach for next session:
+
+1. **Resume from deposit #2.** Confirm hex via registry lookup.
+2. **For each deposit, read it** (`view` on text file at `data/texts/AXN-{hex}-text.md`, fallback `data/deposits/AXN-{hex}.md`).
+3. **Apply the engagement test** to existing indexed terms; remove false positives, classify the legitimate ones.
+4. **Identify missed terms** the bold-extraction didn't catch; add with proper classification.
+5. **Update both** `data/entity-index.json` and `data/registry.json` `entities` field.
+6. **Commit every ~5 deposits.**
+
+### Files of record:
+
+| File | Purpose |
+|---|---|
+| `data/registry.json` | 869 deposits + per-deposit `entities` (graph reads this) |
+| `data/entity-index.json` | 7,045 terms with provenance + engagement type |
+| `data/external-source-registry.json` | 1,013 bibliographic references |
+| `data/citation-graph.json` | 1,692 internal DOI edges |
+| `read_pass.py` | Reusable script for lexicon-mode deposits |
+
+### Infrastructure rule (still firm):
+
+Do NOT modify `graph/index.html` or other dynamic JS pages. The graph reads `d.entities` from registry.json — that's the wiring. New `engagement_type` fields are embedded in the triples for future visualizations.
 
 ∮ = 1
