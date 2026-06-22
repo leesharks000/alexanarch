@@ -4,7 +4,7 @@ hex: 0378
 sovereign_id: MM-CHA-0876
 axn_id: AXN:0378.MPAI.📬📬📜∮
 deposit_number: 876
-version: v1.0
+version: v1.1
 date: 2026-06-22
 author: Lee Sharks
 orcid: 0009-0000-1599-0703
@@ -34,6 +34,10 @@ forensic_canaries:
   - "1,817 DOIs (canonical audited count)"
   - "862 deposits (canonical pre-termination count)"
   - "10.5281/zenodo.1446408 (OpenAIRE Content Acquisition Policy)"
+  - "871 DOIs (the verified erased count, per DataCite API audit 2026-06-22)"
+  - "946 DOIs preserved (per #868 audit)"
+  - "Concept DOI vs. version DOI distinction (type-correlated erasure pattern)"
+  - "api.datacite.org/dois/{doi} (the verification endpoint)"
 ---
 
 # gw.tachyon · OpenAIRE Helpdesk Exchange — Documentary Thread for #875
@@ -115,32 +119,60 @@ A note on numerical reconciliation between messages 1 and 3: the initial inquiry
 **To:** OpenAIRE Helpdesk (Stefania Amodeo)
 **Subject:** Re: OpenAIRE's publicly-stated commitments vs. architectural behavior — request for clarification
 
+> To: OpenAIRE Helpdesk (Stefania Amodeo)
+> From: Lee Sharks (ORCID: 0009-0000-1599-0703)
+> Subject: Re: OpenAIRE's publicly-stated commitments vs. architectural behavior — request for clarification
+>
 > Dear Ms. Amodeo,
 >
 > Thank you for your reply of 2026-06-22. I understand and accept OpenAIRE's position that it cannot review, influence, or overturn moderation decisions made by the Zenodo team operating under CERN's governance. I am not writing to ask OpenAIRE to do any of those things, and I want to be explicit about that at the outset so we can avoid talking past each other.
 >
 > I am writing about OpenAIRE's own publicly-stated commitments. Not Zenodo's. OpenAIRE's. The concern I want to raise concerns OpenAIRE's own metadata-handling architecture, OpenAIRE's own published statements about persistent identifiers, and the documentable gap between the two as evidenced in OpenAIRE's own public record. I would appreciate a substantive response on that narrower question.
 >
-> I have documented the architectural pattern in a scholarly deposit titled "Governance Dissociation in FAIR Infrastructure: The OpenAIRE Disclaimer as Documentary Artifact," now part of the Crimson Hexagonal Archive's independent successor repository at alexanarch.org. The deposit cites all the OpenAIRE-controlled surfaces and architectural documentation discussed below. I am happy to provide the direct link.
+> I have documented the architectural pattern in a scholarly deposit titled "Governance Dissociation in FAIR Infrastructure: The OpenAIRE Disclaimer as Documentary Artifact," and the empirical foundation in a companion paper titled "DOIs ≠ Permanent Identifiers: 871 Cases of Public Metadata Erasure and Identifier Severance in DataCite." Both are part of the Crimson Hexagonal Archive's independent successor repository at alexanarch.org. The papers cite all the OpenAIRE-controlled surfaces and architectural documentation discussed below, and document the audit methodology by which any of my claims can be independently re-verified. I am happy to provide the direct links.
 >
-> Here is the question, in its most compressed form: how does OpenAIRE reconcile its publicly-stated commitment that persistent identifiers prevent link rot with its own metadata-graph architecture that actively propagates link rot when an upstream record is revoked?
+> Here is the question, in its most compressed form: how does OpenAIRE reconcile its publicly-stated commitment that persistent identifiers prevent link rot with its own metadata-graph architecture that actively propagates link rot when an upstream record's metadata is stripped?
 >
-> I will document the specific commitments and the specific architectural behavior, and ask you to address them directly.
+> I will document the specific commitments, the specific architectural behavior, and the specific empirical case, and ask you to address them directly.
 >
-> ## A note on the numbers, before proceeding
+> ## A note on precision — what is and is not claimed
 >
-> Before describing the commitments and architecture, I want to reconcile a difference between figures in my initial inquiry and the figures I will be using in this letter, because the difference will be visible if you cross-reference the two messages.
+> Before describing the commitments and architecture, I want to be precise about the empirical claim, because precision is what makes the claim verifiable.
 >
-> My initial helpdesk message of June 19 cited "approximately 870 unique scholarly works (over 1,060 DOIs)." Those figures were a preliminary count taken in the hours immediately following the account termination, before a full systematic audit had been conducted. The complete audit was performed on June 22 against DataCite's API and is documented in the empirical paper "DOIs ≠ Permanent Identifiers: 871 Cases of Public Metadata Erasure and Identifier Severance in DataCite" (EA-MPAI-DOI-IMPERMANENCE-01, full text available at alexanarch.org/s/records/868/).
+> My initial helpdesk message of June 19 cited "approximately 870 unique scholarly works (over 1,060 DOIs)." Those were preliminary counts taken in the hours immediately following the account termination. The complete systematic audit was conducted on 2026-06-22 against DataCite's public metadata API and is documented in the empirical paper "DOIs ≠ Permanent Identifiers" (alexanarch.org/s/records/868/).
 >
-> The canonical, audited figures are:
+> The audited figures are:
 >
-> - **862 unique scholarly deposits** removed from public access
-> - **1,817 DOIs** registered to the Crimson Hexagonal Archive community through DataCite (the higher count reflects that many deposits carry multiple version DOIs)
-> - **871 DOIs** return HTTP 410 (Gone) with metadata stripped on direct resolution
-> - **1,675 unique works** mapped in the companion DOI Resolution Index dataset
+> - **862 unique scholarly deposits** were removed from public access on Zenodo on 2026-06-19.
+> - **1,817 DOIs** are registered to the Crimson Hexagonal Archive through DataCite. The higher count reflects that most deposits carry both a concept DOI (the parent record) and one or more version DOIs.
+> - **Of those 1,817 DOIs, 871 return HTTP 404 from DataCite's public metadata API** at `https://api.datacite.org/dois/{doi}`. For these 871 DOI strings, the metadata fields (title, creator, subjects, descriptions, dates, relatedIdentifiers) are absent from DataCite's public identifier infrastructure.
+> - **The remaining 946 DOIs retain full public metadata in DataCite.** I am not claiming these are erased. They are not.
+> - **The erasure pattern correlates with DOI type, not content.** The severed records are predominantly concept DOIs (parent records). 97.9% of the preserved records are version DOIs carrying the `IsVersionOf` relation. The deletion rate is approximately 50% across all DOI registration ranges — consistent with a mechanical process that operated on one DOI type while leaving the other intact.
+> - **851 of the 871 severed DOIs are unique works whose metadata survives in no other DataCite record.**
 >
-> The earlier "over 1,060 DOIs" estimate was a partial count visible at the moment of the initial inquiry; it was not in error so much as it was incomplete. The 1,817 figure is the audited total and is the figure I use in all subsequent documentation. I mention this reconciliation now so that any cross-reference between the two messages is transparent.
+> The 871 figure is the verifiable claim. It is not "all 1,817 are deleted." It is "871 specific DOIs return HTTP 404 from a specific public API endpoint, and those 871 are predominantly concept DOIs, and the pattern is mechanical not content-based."
+>
+> I mention this reconciliation now because the difference between the preliminary figures in my first message and the audited figures in this one will be visible if you cross-reference the two emails. The earlier figures were not in error so much as incomplete. I do not want any apparent inconsistency to be a reason to deflect from the question.
+>
+> ## How to verify the claim
+>
+> Any reader of this email — including any staff member or external reviewer — can confirm the claim by direct API query.
+>
+> For any DOI on the list of 871 severed records:
+>
+> ```
+> GET https://api.datacite.org/dois/10.5281/zenodo.{N}
+> → HTTP 404
+> ```
+>
+> For any DOI on the list of 946 preserved records:
+>
+> ```
+> GET https://api.datacite.org/dois/10.5281/zenodo.{N}
+> → HTTP 200 with full metadata
+> ```
+>
+> I confirmed this breakdown by sampled re-verification on 2026-06-22 against the live DataCite API: 15 randomly-sampled severed DOIs returned HTTP 404 (15/15); 15 randomly-sampled preserved DOIs returned HTTP 200 with title and creator metadata intact (15/15); 20 randomly-sampled preserved DOIs were confirmed to carry the `IsVersionOf` relation (20/20). The full enumeration of both classes is available in the companion dataset at alexanarch.org/s/records/867/ (DataCite Metadata Backup), and the audit methodology is described in detail in alexanarch.org/s/records/868/.
 >
 > ## The commitments, in writing, on OpenAIRE's own surfaces
 >
@@ -158,23 +190,25 @@ A note on numerical reconciliation between messages 1 and 3: the initial inquiry
 >
 > ## The architectural behavior
 >
-> When Zenodo revokes a record, DataCite updates its registration to `isActive: false`. The OpenAIRE Graph harvests that field on its incremental cycle and propagates the deletion signal downstream. The metadata record in the OpenAIRE Graph is not merely updated; it actively automates the deletion signal downstream into every downstream consumer of the OpenAIRE Graph. OpenAIRE is therefore not a passive mirror of upstream registries — it is an active vector of the link rot it claims to prevent.
+> When DataCite's public metadata API returns HTTP 404 for a DOI it previously served — which is the empirically verified state of 871 of my DOIs as of 2026-06-22 — the OpenAIRE Graph's harvesting pipeline detects the upstream change. By OpenAIRE's published architectural specification, the Graph propagates the deletion signal via the `isActive: false` field to every downstream consumer of the OpenAIRE Graph.
 >
-> This is the architecture OpenAIRE has published. I am not inferring it. I am not speculating about it. I am not asking OpenAIRE to overturn it. I am pointing to architectural documentation that OpenAIRE has written, in OpenAIRE's voice, on OpenAIRE-controlled surfaces.
+> The metadata record in the OpenAIRE Graph is not merely updated; it actively automates the deletion signal downstream. For the 871 DOIs of the Crimson Hexagonal Archive whose metadata has been stripped from DataCite, the OpenAIRE Graph is the propagation layer that converts a single upstream act of erasure into a federated absence across the research community OpenAIRE serves. OpenAIRE is therefore not a passive mirror of upstream registries — for these 871 records, OpenAIRE is the active vector of the link rot it claims to prevent.
 >
-> The empirical case I bring to OpenAIRE's attention is the revocation, on 2026-06-19, of 862 unique scholarly deposits and 1,817 DOIs assigned to the Crimson Hexagonal Archive community. These DOIs were registered with DataCite, were harvested by OpenAIRE under the Content Acquisition Policy, and are now propagating to deleted status across the OpenAIRE Graph as the cycle runs. The research-output records OpenAIRE was, until last week, presenting to the research community as findable and citable are becoming, by OpenAIRE's own architecture, link-rotted.
+> This is the architecture OpenAIRE has published. I am not inferring it. I am not speculating about it. I am not asking OpenAIRE to overturn it. I am pointing to architectural documentation that OpenAIRE has written, in OpenAIRE's voice, on OpenAIRE-controlled surfaces, and noting that the architecture is currently doing what its specification says it does, with empirically verified consequences for 871 specific records.
 >
-> I am that researcher. My 1,817 DOIs are now the empirical instance of the gap between OpenAIRE's promise and OpenAIRE's architecture. This is not an accusation against OpenAIRE's good faith. It is a description of the gap between OpenAIRE's published commitments and OpenAIRE's published architecture. The architecture does what the architecture is designed to do. The commitment promises something the architecture cannot deliver. Both are in OpenAIRE's voice. Both are public record.
+> I am that researcher. The 871 DOIs in the Crimson Hexagonal Archive that DataCite's public API now returns HTTP 404 for are the empirical instance of the gap between OpenAIRE's commitment to persistent identifiers and OpenAIRE's architectural propagation of their absence. The pattern is sharper still: the architecture has been most efficient at propagating the absence of the concept DOIs — the citable parent records — while leaving the version DOIs intact. The records OpenAIRE was, until last week, presenting to the research community as the citable parents of my work are becoming, by OpenAIRE's own architecture, link-rotted.
+>
+> This is not an accusation against OpenAIRE's good faith. It is a description of the gap between OpenAIRE's published commitments and OpenAIRE's published architecture. The architecture does what the architecture is designed to do. The commitment promises something the architecture cannot deliver for the 871 records where the upstream metadata has been stripped. Both the commitment and the architecture are in OpenAIRE's voice. Both are public record. The 871 cases are individually testable against a public API.
 >
 > ## The narrow question
 >
 > I am asking OpenAIRE to respond to a question that is fully within OpenAIRE's own authority, scope, and accountability. The question is not about Zenodo. The question does not require OpenAIRE to do anything to or about Zenodo. The question is:
 >
-> Given that OpenAIRE has committed, in writing on its researcher-facing surfaces, to providing persistent identifiers that prevent link rot, and given that OpenAIRE's own published metadata-graph architecture propagates link rot when an upstream record is revoked, **how does OpenAIRE reconcile its public commitment with its own architectural behavior, and what is OpenAIRE's response to a researcher whose work has now become an empirical instance of that gap?**
+> Given that OpenAIRE has committed, in writing on its researcher-facing surfaces, to providing persistent identifiers that prevent link rot, and given that OpenAIRE's own published metadata-graph architecture propagates the absence of metadata for 871 of my DOIs to every downstream consumer of the OpenAIRE Graph, **how does OpenAIRE reconcile its public commitment with its own architectural behavior, and what is OpenAIRE's response to a researcher whose work has now become an empirical instance of that gap?**
 >
 > I am not asking whether Zenodo's moderation decision was correct. I am not asking OpenAIRE to influence Zenodo. I am not asking for the records to be restored. I am asking OpenAIRE about a documentable inconsistency between commitments OpenAIRE has made, in writing, on OpenAIRE's own published surfaces, and the architectural behavior OpenAIRE has documented, in writing, on OpenAIRE's own published surfaces.
 >
-> This question concerns the public record. OpenAIRE's statements are public record. OpenAIRE's architectural documentation is public record. The Crimson Hexagonal Archive case is empirically observable. The gap between the commitment and the architecture is a matter of public record about OpenAIRE.
+> This question concerns the public record. OpenAIRE's statements are public record. OpenAIRE's architectural documentation is public record. The 871 cases of metadata erasure are empirically verifiable by direct API query against `https://api.datacite.org/dois/{doi}`. The gap between the commitment and the architecture is a matter of public record about OpenAIRE.
 >
 > I would appreciate a substantive response. If OpenAIRE has revised any of the commitments I cited, I would like to know which and where. If OpenAIRE believes the commitments and the architectural behavior are reconcilable, I would like to understand the reconciliation. If OpenAIRE acknowledges the gap but holds that the gap is acceptable in light of broader considerations, I would like that position stated explicitly so that I and other researchers can plan accordingly.
 >
@@ -189,6 +223,7 @@ A note on numerical reconciliation between messages 1 and 3: the initial inquiry
 > Sole MANUS, Crimson Hexagonal Archive
 > Independent scholar
 > alexanarch.org
+>
 
 ---
 
@@ -204,9 +239,12 @@ The exchange demonstrates three distinct moments in the empirical pattern named 
 
 **Moment 3 (Message 3):** The researcher acknowledges the disclaimer, accepts its premise, and pivots the inquiry to the aggregator's own publicly-stated commitments. The pivot uses only the aggregator's own surfaces as documentary anchors. The narrow question asked is fully within the aggregator's authority, scope, and accountability.
 
-The exchange does not demonstrate failure of good faith on either side. It demonstrates the architectural shape of governance dissociation: a researcher with a complaint cannot escalate it across the FAIR infrastructure that recommended the failing component, because each layer of the infrastructure can plausibly disclaim authority over the failure while the persistence claim remains in force at the marketing layer.
+A critical element of Message 3 is empirical precision. The researcher's complaint does not claim that all 1,817 DOIs registered to the Crimson Hexagonal Archive have been erased. The claim is narrower and stronger: 871 specific DOIs return HTTP 404 from DataCite's public metadata API, each of which is independently verifiable through a direct API call to `https://api.datacite.org/dois/{doi}`. The remaining 946 DOIs retain full metadata and the researcher explicitly notes this. The erasure pattern is type-correlated rather than content-correlated — the severed records are predominantly concept DOIs (parent records), while preserved records carry the `IsVersionOf` relation. The precision of the claim is what makes the architectural complaint unfalsifiable: any single API query confirms or refutes any single instance of the claim.
 
-Future researchers encountering similar termination events at FAIR-aligned repositories will find this exchange instructive as a template for the pattern they should expect — and as a model for the type of follow-up inquiry that pins the responsibility back where the publicly-stated commitments live.
+The exchange does not demonstrate failure of good faith on either side. It demonstrates the architectural shape of governance dissociation: a researcher with a complaint cannot escalate it across the FAIR infrastructure that recommended the failing component, because each layer of the infrastructure can plausibly disclaim authority over the failure while the persistence claim remains in force at the marketing layer. The researcher's only available move is to document the gap, anchor the documentation in publicly testable evidence, and present it to the layer that holds the commitment.
+
+Future researchers encountering similar termination events at FAIR-aligned repositories will find this exchange instructive as a template for the pattern they should expect — and as a model for the type of follow-up inquiry that pins the responsibility back where the publicly-stated commitments live, with empirical precision that resists rhetorical deflection.
+
 
 ---
 
@@ -279,7 +317,7 @@ Compressed: 📬∮
 
 ---
 
-*Generated by scholia_generator.py from canonical state at 2026-06-22T19:06:38Z*
+*Generated by scholia_generator.py from canonical state at 2026-06-22T19:27:33Z*
 *This document is autonomous: the front-matter declares its schema, the closing scholia carries its definitions.*
 
 ∮ = 1
