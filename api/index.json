@@ -1,0 +1,218 @@
+{
+  "$schema": "https://alexanarch.org/api/schemas/index.schema.json",
+  "$id": "https://alexanarch.org/api/index.json",
+  "title": "Alexanarch Protocol Index",
+  "purpose": "Central machine-readable catalog of all Alexanarch protocols, schemas, and data registries. Single source of truth — every other document (AGENTS.md, DEPOSIT-FLOW.md, scripts, workflows) MUST pull from this index, not duplicate it. If this file disagrees with any other surface, this file wins and the other surface is wrong.",
+  "index_version": "v1.0",
+  "last_updated": "2026-06-22",
+  "operator_directive": {
+    "for_new_instances": [
+      "STOP before any action.",
+      "1. Fetch this file (GET https://alexanarch.org/api/index.json).",
+      "2. For every protocol governing your intended action, fetch its canonical_path and verify content_sha256 matches what's listed here. If hashes disagree: the protocol was modified out-of-band; do not proceed; flag and ask.",
+      "3. Run `python3 scripts/bootstrap_familiarization.py` to produce a familiarization receipt. The receipt records what versions and hashes you operated against.",
+      "4. Include the receipt in any commit message, deposit body, or PR you create. Workflows MECHANICALLY ENFORCE this — missing receipt = rejected.",
+      "5. If you are about to MODIFY a protocol JSON or a schema: do NOT hand-edit. Use `python3 scripts/protocol_update.py --protocol <name> --description '...'`. This tool atomically bumps version, recomputes hash, updates this index, and propagates to dependent docs.",
+      "6. Hand-editing a protocol without running the update tool is the single largest source of regressions in this infrastructure. Every prior 'instance made autonomous changes without familiarization' incident was an instance skipping step 1."
+    ],
+    "for_workflows": "Both mint-axn.yml and validate-registry.yml read this index at run time, fetch the protocols it lists, and verify their content_sha256 before acting. If verification fails, the workflow fails closed (no changes commit).",
+    "for_extension": "Adding a new protocol means: (a) write the protocol JSON in /api/, (b) add a new entry under `protocols` here, (c) compute content_sha256 of the new file, (d) add it to this file with all its referenced_by and enforced_by lists, (e) run `scripts/protocol_update.py --verify-index` to confirm everything reconciles."
+  },
+  "protocols": {
+    "deposit": {
+      "name": "Alexanarch Deposit Protocol",
+      "current_version": "alexanarch-deposit-protocol/v1",
+      "schema_version": "2026-06-22-axn-v2",
+      "canonical_path": "/api/deposit-protocol.json",
+      "content_sha256": "02b12a034099302e6b31ed2651caa3e4db3308b4397ed4b27bbd0eba9f5a6ef2",
+      "governs": "What a deposit is, what fields it requires, how it's submitted (Path A auto-mint, Path B canonical rich), how it's validated, what enrichment runs.",
+      "depends_on": [
+        "axn",
+        "validation"
+      ],
+      "referenced_by": [
+        "AGENTS.md",
+        "DEPOSIT-FLOW.md",
+        "DEPOSIT-GUIDE.md",
+        ".github/ISSUE_TEMPLATE/deposit.yml",
+        "/api/deposit-schema.json"
+      ],
+      "enforced_by": [
+        ".github/workflows/mint-axn.yml",
+        ".github/workflows/validate-registry.yml",
+        "scripts/validate_deposit.py"
+      ],
+      "last_updated": "2026-06-22"
+    },
+    "axn": {
+      "name": "AXN Identifier Protocol",
+      "current_version": "axn/v2",
+      "schema_version": "2026-06-22-axn-v2",
+      "canonical_path": "/api/axn-protocol.json",
+      "content_sha256": "fc44e9537f23ce626a08c04a23818ed58d1bf35f1a901daaa5e84be754c72ad9",
+      "governs": "AXN format, AXN_GLYPHS table (256 entries), CLUSTERS table (256 entries), generation algorithm, legacy resolution (v1 → v2), substrate-chosen glyph preservation in glyphic_canary, recognition-vs-identity principle.",
+      "depends_on": [],
+      "referenced_by": [
+        "scripts/axn_lib.py",
+        ".github/workflows/mint-axn.yml",
+        "/api/deposit-protocol.json",
+        "AGENTS.md",
+        "DEPOSIT-FLOW.md"
+      ],
+      "enforced_by": [
+        "scripts/validate_deposit.py",
+        ".github/workflows/validate-registry.yml"
+      ],
+      "canonical_implementations": {
+        "python": "scripts/axn_lib.py",
+        "javascript_embedded": ".github/workflows/mint-axn.yml"
+      },
+      "last_updated": "2026-06-22"
+    }
+  },
+  "schemas": {
+    "deposit_entry": {
+      "name": "Deposit Entry Schema",
+      "canonical_path": "/api/schemas/deposit-entry.schema.json",
+      "content_sha256": "3b65aac46d6f75b3ede6edcdf3cca66e4e75bef4dd20fb9af283ebba7684577a",
+      "validates": "Individual entries in /data/registry.json deposits array.",
+      "used_by": [
+        "scripts/validate_deposit.py",
+        ".github/workflows/validate-registry.yml"
+      ],
+      "last_updated": "2026-06-22"
+    },
+    "deposit_submission": {
+      "name": "Deposit Submission Schema (Issue Body Template)",
+      "canonical_path": "/api/deposit-schema.json",
+      "content_sha256": "885befef99a0eeb3cff072ec1be82f14cea627ee845045d8dd440439169c7e64",
+      "validates": "GitHub Issue bodies submitted as [DEPOSIT] for Path A auto-mint.",
+      "used_by": [
+        ".github/workflows/mint-axn.yml",
+        ".github/ISSUE_TEMPLATE/deposit.yml"
+      ],
+      "last_updated": "2026-06-22"
+    }
+  },
+  "registries": {
+    "deposits": {
+      "name": "Deposit Registry (the AXN registry)",
+      "canonical_path": "/data/registry.json",
+      "purpose": "Canonical list of every deposit. Drives home-page Recent Deposits, browse page, sitemap, chunks. THE source of truth — all other surfaces are derived.",
+      "current_count": 879,
+      "validates_against": [
+        "/api/schemas/deposit-entry.schema.json"
+      ],
+      "regenerated_by_change": "scripts/regenerate_surfaces.py must run after every change. Mint workflow does this automatically; manual edits must do it explicitly.",
+      "last_updated": "2026-06-22"
+    },
+    "entities": {
+      "name": "Entity / Concept Index",
+      "canonical_path": "/data/entity-index.json",
+      "purpose": "Concepts defined or referenced by deposits. Updated by reading-pass enrichment.",
+      "owner_scripts": [
+        "read_pass.py",
+        "consolidate.py",
+        "wire_deposit.py"
+      ]
+    },
+    "dois": {
+      "name": "DOI Resolution Index",
+      "canonical_path": "/data/doi-resolution-index.json",
+      "purpose": "Maps legacy Zenodo DOIs (post-termination) to current AXN identifiers on alexanarch.org."
+    }
+  },
+  "derived_surfaces": {
+    "browse_html": {
+      "canonical_path": "/s/browse/index.html",
+      "derived_from": "/data/registry.json",
+      "regenerated_by": "scripts/regenerate_surfaces.py"
+    },
+    "browse_index_json": {
+      "canonical_path": "/data/browse-index.json",
+      "derived_from": "/data/registry.json",
+      "regenerated_by": "scripts/regenerate_surfaces.py"
+    },
+    "chunks": {
+      "canonical_path": "/data/chunks/registry/",
+      "index_file": "/data/chunks/registry/_index.json",
+      "derived_from": "/data/registry.json",
+      "regenerated_by": "scripts/regenerate_surfaces.py",
+      "purpose": "~1MB chunks of registry for streaming readers"
+    },
+    "sitemap": {
+      "canonical_path": "/sitemap.xml",
+      "derived_from": "/data/registry.json + static URL list",
+      "regenerated_by": "scripts/regenerate_surfaces.py"
+    },
+    "sha256sums": {
+      "canonical_path": "/SHA256SUMS.txt",
+      "derived_from": "/data/registry.json hash fields",
+      "regenerated_by": "scripts/regenerate_surfaces.py"
+    },
+    "record_pages": {
+      "canonical_path_pattern": "/s/records/<deposit_number>/index.html",
+      "derived_from": "/data/registry.json + /data/texts/AXN-<HEX>-text.md",
+      "regenerated_by": "wire_deposit.py(N)"
+    }
+  },
+  "scripts": {
+    "bootstrap_familiarization": {
+      "canonical_path": "scripts/bootstrap_familiarization.py",
+      "purpose": "What new instances run FIRST. Verifies content-hashes of every protocol/schema listed in this index. Produces a familiarization receipt to attach to commits.",
+      "invocation": "python3 scripts/bootstrap_familiarization.py [--receipt-file RECEIPT.txt]"
+    },
+    "protocol_update": {
+      "canonical_path": "scripts/protocol_update.py",
+      "purpose": "Atomic protocol update. Modifying a protocol means: edit JSON, then run this tool, which bumps version, recomputes content_sha256, updates this index, appends change_log, and propagates version strings to dependent docs. NEVER hand-edit protocol JSONs without running this.",
+      "invocation": "python3 scripts/protocol_update.py --protocol <name> --description '...'"
+    },
+    "axn_lib": {
+      "canonical_path": "scripts/axn_lib.py",
+      "purpose": "Canonical Python AXN generation. AXN_GLYPHS and CLUSTERS tables, axn_glyph_from_hash(), axn_clusters_from_hash(), derive_axn(). Imported by validate_deposit.py and backfill_axn_compliance.py."
+    },
+    "validate_deposit": {
+      "canonical_path": "scripts/validate_deposit.py",
+      "purpose": "Validates issue bodies, single registry entries, or full registry against the deposit and axn protocols. Used by mint-axn.yml and validate-registry.yml CI workflows."
+    },
+    "regenerate_surfaces": {
+      "canonical_path": "scripts/regenerate_surfaces.py",
+      "purpose": "Idempotent regeneration of all derived surfaces from /data/registry.json. Run after every registry change."
+    },
+    "backfill_axn_compliance": {
+      "canonical_path": "scripts/backfill_axn_compliance.py",
+      "purpose": "One-shot historical: brings non-v2 AXNs to v2 compliance. Used 2026-06-22 for the 13 v1 deposits. Idempotent."
+    }
+  },
+  "instance_familiarization_log": {
+    "purpose": "Audit trail of which agents operated against which protocol versions. Every familiarization receipt is also recorded here.",
+    "log_location": "/data/instance-familiarization.log",
+    "log_format": "JSONL, one receipt per line: {timestamp, instance_label, registry_version, protocol_versions_read: {name: version}, content_sha256_verified: {name: sha}, action_summary}",
+    "writer": "scripts/bootstrap_familiarization.py with --append-log flag"
+  },
+  "ci_enforcement": {
+    "mint_workflow": {
+      "path": ".github/workflows/mint-axn.yml",
+      "fires_on": "New GitHub Issue with [DEPOSIT] title prefix",
+      "validates": "Issue body against deposit-protocol.json and deposit-schema.json. Rejects with rule IDs on failure."
+    },
+    "validate_workflow": {
+      "path": ".github/workflows/validate-registry.yml",
+      "fires_on": "Push/PR touching /data/registry.json, /api/, scripts/, or /data/texts/",
+      "validates": "Full registry against all protocols + consistency invariants. Comments on PR with specific rule IDs. Blocks merge on failure."
+    }
+  },
+  "change_log": [
+    {
+      "index_version": "v1.0",
+      "date": "2026-06-22",
+      "changes": [
+        "Established /api/index.json as the central protocol registry.",
+        "Split AXN identifier protocol out of deposit-protocol.json into /api/axn-protocol.json.",
+        "Added /api/schemas/deposit-entry.schema.json as the formal JSON Schema for deposit entries.",
+        "Documented the operator_directive — what new instances must do before any action.",
+        "Bound bootstrap_familiarization.py and protocol_update.py as the two scripts that mediate all protocol interaction."
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@
 
 **Status:** authoritative. If you are about to deposit, read this file first. If anything in `AGENTS.md`, `DEPOSIT-GUIDE.md`, `README.md`, or the GitHub Actions workflow disagrees with this file, this file wins.
 
-**The canonical machine-readable protocol is `api/deposit-protocol.json`.** That JSON is the single source of truth. This Markdown is a human-readable companion; if the two disagree, the JSON wins. Mint and validation workflows read the JSON, not this file.
+**The central protocol catalog is [`api/index.json`](./api/index.json).** It lists every protocol (deposit, AXN), schema, registry, and derived surface with current version and content_sha256. Any new agent operating on this infrastructure MUST start with `python3 scripts/bootstrap_familiarization.py` to verify the index, produce a familiarization receipt, and learn what versions are currently authoritative. The Markdown docs (this file, AGENTS.md, DEPOSIT-GUIDE.md) are human-readable companions; the index JSON is canonical. If they disagree, the JSON wins.
 
 **One-line summary:** `data/registry.json` is canonical; every other surface is derived from it; if you change the registry, you must regenerate the derived surfaces in the same commit, or the archive will be internally inconsistent. The deposit-validation workflow enforces this on every push and PR.
 

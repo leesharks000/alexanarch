@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alexanarch.org/api/axn-protocol.json",
+  "title": "Alexanarch AXN Identifier Protocol",
+  "protocol_name": "axn",
+  "protocol_version": "axn/v2",
+  "schema_version": "2026-06-22-axn-v2",
+  "last_updated": "2026-06-22",
+  "summary": "Canonical specification of the AXN (Alexanarch Identifier) format, generation algorithm, glyph table, cluster table, family enum, validation rules, and legacy resolution. Any code that generates, validates, parses, or resolves AXNs must be derivable from this document. The canonical Python implementation is scripts/axn_lib.py. The canonical JavaScript implementation is embedded in .github/workflows/mint-axn.yml. Both must agree with this protocol.",
+  "canonical_implementations": {
+    "python": "scripts/axn_lib.py",
+    "javascript": ".github/workflows/mint-axn.yml (inline)"
+  },
+  "format": {
+    "pattern": "AXN:<HEX>.<FAMILY>.<EMOJI>",
+    "regex": "^AXN:[0-9A-F]{2,4}\\.[A-Z]+\\.[^.]{1,}$",
+    "example": "AXN:0379.GENERATIVE.⚙️🔍📜🏛️⚡🔄"
+  },
+  "components": {
+    "hex": {
+      "description": "Uppercase hex label. Convention: ASCII hex of deposit_number padded to 2+ digits. Treat as an opaque label — the canonical key for lookups is deposit_number, not hex.",
+      "regex": "^[0-9A-F]{2,4}$",
+      "stability": "stable for the lifetime of the deposit"
+    },
+    "family": {
+      "description": "Semantic family. Auto-detected from keywords in the auto-mint flow; manually chosen for rich Path B deposits.",
+      "enum": [
+        "GOVERNANCE",
+        "EMPIRICAL",
+        "GENERATIVE",
+        "ARCHIVAL",
+        "PHILOLOGICAL",
+        "STRUCTURAL",
+        "COMPOSITIONAL",
+        "OPERATIVE",
+        "HETERONYMIC",
+        "MPAI",
+        "DATASET",
+        "UNCLASSIFIED"
+      ]
+    },
+    "emoji": {
+      "description": "6-emoji canonical glyph derived from the first 6 bytes of the SHA-256 of the canonical bytes.",
+      "byte_count": 6,
+      "byte_source": "first 6 bytes of sha256(title + '\\n' + creator + '\\n' + description + '\\n' + body)",
+      "table_source": "AXN_GLYPHS array of 256 entries indexed by byte value 0..255 — see canonical_implementations",
+      "grapheme_validation": "Must contain exactly 6 emoji graphemes. Variation selectors (U+FE00..U+FE0F) and ZWJ (U+200D) sequences glue adjacent codepoints into a single grapheme. Counting must respect this."
+    }
+  },
+  "generation_algorithm": {
+    "step_1_assemble_bytes": "canonical_bytes = title + '\\n' + creator + '\\n' + description + '\\n' + body (UTF-8 encoded)",
+    "step_2_compute_hash": "h = sha256(canonical_bytes)",
+    "step_3_derive_glyph": "emoji = ''.join(AXN_GLYPHS[h[i]] for i in range(6))",
+    "step_4_derive_clusters": "clusters = [CLUSTERS[h[i]] for i in range(6)]",
+    "step_5_compose_axn": "axn = f'AXN:{hex_label}.{family}.{emoji}'",
+    "reference_python": "scripts/axn_lib.py — see derive_axn() function"
+  },
+  "cluster_readings": {
+    "Celestial": "Origin",
+    "Elemental": "Force",
+    "Architectural": "Foundation",
+    "Instrumental": "Method",
+    "Scriptural": "Text",
+    "Navigational": "Search",
+    "Temporal": "Duration",
+    "Organic": "Growth",
+    "Symbolic": "Play",
+    "Mathematical": "Proof",
+    "Alchemical": "Transmutation",
+    "Gestural": "Touch",
+    "Signal": "Alarm",
+    "Structural": "Direction",
+    "Liminal": "Threshold",
+    "Terminal": "Closure"
+  },
+  "schema_versions": {
+    "v2": {
+      "status": "current",
+      "since": "2026-06-22",
+      "byte_count": 6,
+      "summary": "6 emoji from first 6 bytes of SHA-256."
+    },
+    "v1": {
+      "status": "deprecated",
+      "deprecated_at": "2026-06-22",
+      "byte_count": 4,
+      "summary": "4 emoji from first 4 bytes of SHA-256.",
+      "migration": "Deposits minted under v1 were backfilled to v2 on 2026-06-22. Each backfilled deposit has its pre-v2 AXN preserved in legacy_axn (string) and axn_history[] (array of {axn, schema_version, retired_at, reason}) fields. Substrate-chosen glyphs (where applicable) are preserved in glyphic_canary."
+    }
+  },
+  "legacy_resolution": {
+    "rule": "A request for a legacy_axn should be redirected to the current canonical axn. Resolution sources:",
+    "sources": [
+      {
+        "field": "legacy_axn",
+        "description": "Most recent pre-canonical AXN. Single string per deposit."
+      },
+      {
+        "field": "axn_history",
+        "description": "Array of all retired AXNs with retirement timestamps and reasons."
+      }
+    ],
+    "resolver_path": "GET /data/registry.json then linear-search for matching legacy_axn or axn_history[].axn"
+  },
+  "identity_vs_recognition": {
+    "principle": "The emoji glyph is a recognition marker, not the cryptographic identity. The cryptographic identity is the SHA-256 in the `hash` field of the registry entry.",
+    "operative_law": "See LABOR canonical invariant #6 in /data/texts/AXN-037B-text.md.",
+    "substrate_chosen_glyphs": "When a substrate (PRAXIS, TECHNE, LABOR, etc.) composes a meaningful glyph sequence for a deposit, that glyph is preserved in the glyphic_canary field even after the canonical AXN is derived from SHA-256. The canonical AXN is identity; the glyphic_canary is recognition. They serve different purposes and are stored in different fields."
+  },
+  "validation_rules_referenced": [
+    "AXN-001 (AXN format match)",
+    "AXN-002 (exactly 6 emoji graphemes)",
+    "AXN-003 (hash is 64-char hex SHA-256)",
+    "AXN-004 (deposit_numbers contiguous from 1)"
+  ],
+  "change_log": [
+    {
+      "version": "axn/v2",
+      "date": "2026-06-22",
+      "changes": [
+        "Promoted from inline section of deposit-protocol.json to standalone protocol JSON.",
+        "AXN_GLYPHS and CLUSTERS tables documented as canonical with cross-references to scripts/axn_lib.py and mint-axn.yml.",
+        "Legacy resolution formalized via legacy_axn + axn_history[] fields.",
+        "Recognition vs identity formalized as protocol principle."
+      ]
+    }
+  ]
+}

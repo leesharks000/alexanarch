@@ -68,6 +68,45 @@ def count_emoji_graphemes(s):
     return out
 
 
+def load_index():
+    """Load the central protocol index. Returns None if it doesn't exist
+    (allows backwards compatibility with environments that haven't deployed
+    the index yet)."""
+    idx_path = REPO_ROOT / "api" / "index.json"
+    if not idx_path.exists():
+        return None
+    with open(idx_path) as f:
+        return json.load(f)
+
+
+def verify_index_consistency(idx):
+    """Check that every protocol/schema entry in the index matches its file's
+    actual content_sha256. Returns list of (rule_id, msg)."""
+    import hashlib
+    failures = []
+    if not idx:
+        return failures
+    for section_name in ("protocols", "schemas"):
+        for key, entry in idx.get(section_name, {}).items():
+            path = entry.get("canonical_path", "")
+            claimed = entry.get("content_sha256")
+            if not claimed or not path:
+                continue
+            file_path = REPO_ROOT / path.lstrip("/")
+            if not file_path.exists():
+                failures.append(("IDX-001",
+                                 f"index references {path} ({section_name}/{key}) but file is missing"))
+                continue
+            actual = hashlib.sha256(file_path.read_bytes()).hexdigest()
+            if actual != claimed:
+                failures.append(("IDX-002",
+                                 f"content_sha256 mismatch for {path} ({section_name}/{key}): "
+                                 f"index claims {claimed[:16]}…, actual is {actual[:16]}…. "
+                                 f"Run `python3 scripts/protocol_update.py --protocol {key} "
+                                 f"--description '...'` to reconcile."))
+    return failures
+
+
 def load_protocol():
     with open(PROTOCOL_PATH) as f:
         return json.load(f)
@@ -186,8 +225,19 @@ def main():
     args = parser.parse_args()
 
     protocol = load_protocol()
+    idx = load_index()
     all_failures = []
     targets_validated = 0
+
+    # Index consistency is checked every time — if the central index disagrees
+    # with the protocol files on disk, the whole validation chain is suspect.
+    if idx:
+        idx_failures = verify_index_consistency(idx)
+        if idx_failures:
+            all_failures.extend(idx_failures)
+            print(f"Index consistency check: {len(idx_failures)} failure(s)")
+        else:
+            print(f"Index consistency check: OK ({idx.get('index_version')})")
 
     if args.issue_body:
         with open(args.issue_body) as f:
