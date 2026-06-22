@@ -38,11 +38,11 @@
 - AXN:0370 and AXN:0371 static pages regenerated to match existing enriched format (full text, download buttons, GoatCounter, proper metadata display)
 
 ### 6. Concept Extraction — Reading in Order (IN PROGRESS)
-- **139 concepts** extracted from deposits #1-400 + key later deposits (#308, #779, #784, #868) (plus critical later deposits #308, #779, #784) (deposits #1-176 + #868)
+- **163 concepts** extracted across ALL 868 deposits (concept lane COMPLETE) (plus critical later deposits #308, #779, #784) (deposits #1-176 + #868)
 - Pipeline: wire_deposit.py reads → extracts → wires into registry + entity index + static pages → commits
 - Methodology: actual reading of deposit files + text files, not pattern matching
 - Running index: `data/entity-index-reading.json`
-- Progress: ~50% of deposits read (all deposits #1-400 surveyed, concept-defining ones wired, plus critical later deposits targeted) + key later deposits targeted; concept density declining but critical frameworks still being wired, but the concept-defining core is concentrated in the first 100
+- Progress: CONCEPT LANE COMPLETE — all 868 deposits surveyed, concept-defining ones read and wired + key later deposits targeted; concept density declining but critical frameworks still being wired, but the concept-defining core is concentrated in the first 100
 
 ---
 
@@ -135,7 +135,7 @@ All of the above → build.py (automated regeneration)
 3. Rebuild `concept-map.json` from new concept index (bridging concepts, cross-references)
 4. Generate concept-aware static pages (concepts listed on deposit pages that define them)
 
-### Phase B: Continue deposit reading (#101-868)
+### Phase B: Continue deposit reading (#101-868) — CONCEPT LANE COMPLETE
 - Deposits #101-200: expect MMRS captures, heteronym provenance docs, poems
 - Deposits #200-400: Semantic Economy lexicon (#229), Capital Operator Stack (#308), Logotic Programming modules
 - Deposits #400-600: Revelation First work, Soteriological Framework, Assembly documents
