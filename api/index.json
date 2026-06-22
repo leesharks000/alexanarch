@@ -68,6 +68,31 @@
         "javascript_embedded": ".github/workflows/mint-axn.yml"
       },
       "last_updated": "2026-06-22"
+    },
+    "enrichment": {
+      "name": "enrichment",
+      "current_version": "enrichment/v1",
+      "canonical_path": "/api/enrichment-protocol.json",
+      "content_sha256": "fb6734aec43fbc6c4cab20c244ebadd5ce3a8f8b4ebcbc6a10366815bfcd0e62",
+      "governs": "Three-stage enrichment pipeline (mint-time / reading-pass / build-time) + canonical citation extraction mechanism with five via types",
+      "depends_on": [
+        "axn",
+        "deposit"
+      ],
+      "referenced_by": [
+        "scripts/citation_extractor.py",
+        "scripts/regenerate_surfaces.py",
+        "consolidate.py",
+        "read_pass.py",
+        "wire_deposit.py",
+        "scholia_generator.py",
+        "AGENTS.md",
+        "/api/deposit-protocol.json"
+      ],
+      "enforced_by": [
+        ".github/workflows/validate-registry.yml"
+      ],
+      "last_updated": "2026-06-22"
     }
   },
   "schemas": {
@@ -182,6 +207,10 @@
     "backfill_axn_compliance": {
       "canonical_path": "scripts/backfill_axn_compliance.py",
       "purpose": "One-shot historical: brings non-v2 AXNs to v2 compliance. Used 2026-06-22 for the 13 v1 deposits. Idempotent."
+    },
+    "citation_extractor": {
+      "canonical_path": "scripts/citation_extractor.py",
+      "purpose": "Extracts citation edges from deposit texts. Five via types: axn_reference, axn_hex_reference, ea_id_reference, deposit_number_reference, doi_resolution. Idempotent — re-running produces the same result."
     }
   },
   "instance_familiarization_log": {
@@ -212,6 +241,20 @@
         "Added /api/schemas/deposit-entry.schema.json as the formal JSON Schema for deposit entries.",
         "Documented the operator_directive — what new instances must do before any action.",
         "Bound bootstrap_familiarization.py and protocol_update.py as the two scripts that mediate all protocol interaction."
+      ]
+    },
+    {
+      "index_version": "v1.0",
+      "date": "2026-06-22",
+      "changes": [
+        "Added new protocol 'enrichment' at /api/enrichment-protocol.json: Initial protocol creation — formalizes the enrichment pipeline that was previously implicit across multiple scripts"
+      ]
+    },
+    {
+      "index_version": "v1.0",
+      "date": "2026-06-22",
+      "changes": [
+        "Updated protocol 'enrichment': Filled referenced_by/enforced_by lists"
       ]
     }
   ]
