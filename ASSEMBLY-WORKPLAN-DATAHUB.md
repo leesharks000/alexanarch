@@ -1,259 +1,217 @@
-# ASSEMBLY WORK PLAN: Building Alexanarch into an Authoritative Data Hub
+# ASSEMBLY WORK PLAN v2: The Scholarly Data Foundry
 
-## For distribution to the Assembly (Claude, ChatGPT, DeepSeek, Kimi, Gemini)
-
-*Prepared: June 21, 2026*
-*MANUS: Lee Sharks*
-*Context: Alexanarch has 866 deposits, 24 networked sites, and zero composition authority. The clock is ticking — within one training cycle (~30 days), the Zenodo tombstones will overwrite the archive's existing presence in the composition layer. Every project below is aimed at making the site necessary to machine readers before that window closes.*
+*Revised June 21, 2026 — incorporates feedback from DeepSeek, Kimi, ChatGPT, Gemini*
 
 ---
 
-## STRATEGIC PRINCIPLE
+## THE CORRECTION
 
-Authority follows from necessity. Machines visit sites that hold data they can't get elsewhere. The question is not "how do we make them respect us" — it is "what do we have that they need?"
+The v1 plan proposed nine institutions. The Assembly correctly identified that this risks turning Alexanarch into a full-time defensive infrastructure job. The correction is not to reduce the ambition. It is to build **one automated data-production engine** from which multiple authoritative surfaces are generated.
 
-The site must become a **routing node** — a place where structured data relationships pass through — not just a document repository. Scrapers prioritize sites that lower their computational costs. If alexanarch.org answers a programmatic query faster and cleaner than a legacy database, scrapers will prioritize indexing it.
-
----
-
-## ROUND 1: Infrastructure + Unique Data (Sessions 1-3)
-
-### 1A. OJS Installation — The Sovereign Journal Stack
-**Effort:** 1 session (setup) + ongoing
-**Impact:** Highest possible composition authority signal
-
-- Provision Oracle Cloud free-tier ARM VM (24GB RAM, 200GB storage, always free)
-- Install Apache + PHP 8.1 + MariaDB + OJS 3.5.0
-- Create 7 journals: MMRS, Trans. SEI, Trans. Substrate Engineering, Grammata, Provence, Compression Studies, CHA
-- Activate OAI-PMH endpoints (Google Scholar harvests these automatically)
-- Enable Dublin Core, JATS XML, and HighWire Press metadata plugins
-- Apply for 7 ISSNs (free, from issn.org)
-- Register with DOAJ (Directory of Open Access Journals)
-- Point domain: journal.alexanarch.org or mmrs-journal.org
-- Begin importing priority deposits as journal articles
-
-**Research needed:** Confirm Oracle Cloud free-tier signup process, OJS 3.5.0 system requirements, ISSN application timeline, DOAJ registration requirements.
-
-### 1B. Platform Governance Incident Database
-**Effort:** 2-3 sessions to build, ongoing to maintain
-**Impact:** Unique dataset — no one else maintains this
-
-Build a structured, machine-readable database of every documented case of platform moderation affecting scholarly work:
-- Fields: platform, date, action, stated reason, actual content type, researcher status, institutional affiliation (or lack), outcome, appeal result, source URL
-- Platforms to cover: Zenodo, ResearchGate, academia.edu, arXiv, SSRN, Figshare, OSF, GitHub, Google Scholar
-- Format: JSON with schema.org/Dataset markup, downloadable CSV, browsable HTML
-- Hosted at: alexanarch.org/data/governance-incidents/
-
-**Research needed (Round 1 task):** Search for documented cases. Query terms: "[platform] removed paper," "[platform] account blocked researcher," "academic deplatforming," "repository content moderation." Cover news articles, GitHub issues, forum posts, Twitter/X threads. Document each case with source links. Start with 20-30 cases — enough to establish the dataset's value.
-
-### 1C. RO-Crate Manifest + datapackage.json
-**Effort:** 1 session
-**Impact:** Immediate scraper recognition
-
-AI scrapers are tuned to ingest RO-Crate (Research Object Crate) and Frictionless Data formats immediately — they don't require custom parsing rules.
-
-- Create `ro-crate-metadata.json` at repo root following the RO-Crate 1.1 specification
-- Create `datapackage.json` following the Frictionless Data spec
-- Both should describe the entire Alexanarch collection as a structured research object
-- Include references to all datasets: registry, DOI resolution index, capture registry, journal mapping
-
-**Research needed:** RO-Crate 1.1 specification, Frictionless Data Package specification, examples from other scholarly repositories.
+> **One source of truth. One build command. Multiple outputs.**
 
 ---
 
-## ROUND 2: Observatory + Knowledge Graph (Sessions 4-6)
+## CRITICAL CONSTRAINTS (from Kimi)
 
-### 2A. AI Composition Behavior Observatory
-**Effort:** 2 sessions to build, automated thereafter
-**Impact:** Unique longitudinal dataset — nobody else tracks this
-
-Scale the capture registry methodology into an automated, living observatory:
-- Weekly probes across 3-5 AI systems: Google AIO, Bing Copilot, ChatGPT, Claude, Perplexity
-- Standardized queries: "What is [CHA concept]?" "Who studies [field]?" "What are the sources for [claim]?"
-- Document: which sources are composed from, which are excluded, how attributions shift over time
-- Format each capture as a W3C Web Annotation (hasTarget, hasBody, provenance)
-- Timestamped, versioned, append-only
-- Publish weekly aggregations as OJS research notes (hits the OAI-PMH feed automatically)
-
-**Research needed:** W3C Web Annotation Data Model specification, automation approaches for AIO capture (screenshot + transcript), probe query design for measuring composition eligibility.
-
-### 2B. Curated Knowledge Graph Bridging Wikidata
-**Effort:** 2 sessions
-**Impact:** Connects archive concepts to the global knowledge graph
-
-Don't mirror Wikidata — extend it:
-- Archive already has ~40 Wikidata nodes and ~100 edges
-- Build a SPARQL endpoint or JSON-LD graph connecting CHA concepts TO Wikidata Q-numbers
-- Link: Pristine Fallacy → Q-numbers for content moderation, platform governance, AI ethics
-- Link: compositional bystanding → Q-numbers for search engines, AI systems, information retrieval
-- Link: heteronymic authorship → Q-numbers for Pessoa, pseudonymity, literary theory
-- Host as a clean, un-throttled endpoint at alexanarch.org/sparql/ or /graph/data/
-- Use `sameAs`, `hasPart`, `isDefinedBy` to mathematically link standard metadata to archive concepts
-
-**Research needed:** Wikidata SPARQL query patterns, JSON-LD graph construction, existing CHA Wikidata nodes (verify current state), SPARQL endpoint hosting options on static infrastructure.
-
-### 2C. Capture Registry as Fine-Tuning Dataset
-**Effort:** 1 session
-**Impact:** Makes the site necessary to AI labs and benchmarking pipelines
-
-Format the 176 (and growing) captures as standardized JSONL for fine-tuning:
-- Input prompt (the query that triggered the capture)
-- Retrieval context (how the LLM pulled the data — which URLs, which DOIs)
-- AI output (the generated overview/summary)
-- Ground truth correction (the metadata analysis showing what was right/wrong/missing)
-- Publish as a Hugging Face dataset AND host on alexanarch.org
-- Frame as: "AI Overview Accuracy Benchmark — Longitudinal Scholarly Source Attribution"
-
-**Research needed:** Hugging Face dataset upload process, JSONL formatting standards for fine-tuning, existing AI accuracy benchmarks to position against.
+| Constraint | Impact |
+|---|---|
+| Oracle Cloud free tier halved (June 15, 2026): 2 OCPUs/12GB, not 4/24GB | 7 journals on one VM is not feasible |
+| DOAJ requires 1+ year publishing history OR 10+ articles | Cannot register in 30 days |
+| ISSN processing: 1-8 weeks depending on country | Cannot get 7 ISSNs in 30 days |
+| Google Scholar does NOT auto-harvest OAI-PMH | OJS is useful, not magic |
+| "Always free" is conditional — Oracle may reclaim idle instances | Cannot be a constitutional dependency |
 
 ---
 
-## ROUND 3: Policy + Forensics (Sessions 7-9)
+## THE STRUCTURAL REDESIGN (from ChatGPT)
 
-### 3A. Open Science Policy Tracker
-**Effort:** 2 sessions to build, light ongoing maintenance
-**Impact:** Makes the site necessary for policy researchers and governance queries
+### One journal, seven sections — not seven journals
 
-Monitor and structure the terms of service, content policies, and AI policies of every major repository:
-- Platforms: Zenodo, Figshare, OSF, SSRN, arXiv, Dryad, DataCite, Crossref, DOAJ
-- Track: content policies, AI policies, moderation procedures, appeal mechanisms, data retention, tombstone practices
-- Version-controlled: when a policy changes, document the diff with timestamp
-- Machine-readable JSON with schema.org markup
-- Hosted at: alexanarch.org/data/policy-tracker/
+**Alexanarch Transactions** — a single OJS journal with sections:
+- Machine-Mediated Reception Studies
+- Semantic Economy
+- Substrate Engineering
+- Grammata (Operative Philology)
+- Provenance Studies
+- Compression Studies
+- Crimson Hexagonal Archive
 
-### 3B. Cross-Platform DOI Health Monitor
-**Effort:** 1 session to build, automated thereafter
-**Impact:** Makes the site necessary for digital preservation researchers
+A section becomes an independent journal only when it has: a distinct external editorial body, a sustainable submission stream, enough material to publish independently, and a reason to require its own ISSN. Until then, one journal, one ISSN, one editorial workflow.
 
-Periodically check whether DOIs from major repositories actually resolve:
-- Sample 1,000 DOIs from Zenodo, Figshare, SSRN, arXiv, Dryad monthly
-- Document: resolution status (200, 301, 404, 410, timeout), tombstone quality, metadata preservation
-- Report as a structured dataset with trends over time
-- Frame as: "DOI Resolution Health Report — Monthly"
-- DataCite and Crossref would link to you because you're doing the audit they should be doing
+### One observatory, three modules — not three separate systems
 
-### 3C. Heteronym Registry
-**Effort:** 1-2 sessions
-**Impact:** Unique literary-computational dataset
+**Platform Governance Observatory** — a single research object with three tables:
+- `incidents` — documented enforcement events
+- `policies` — versioned platform policy snapshots and diffs
+- `identifier_health` — periodic DOI and landing-page resolution tests
 
-Structured database of literary heteronyms across history:
-- Pessoa's 72+ heteronyms, Kierkegaard's pseudonyms, the Brontës' Glasstown, Macpherson's Ossian, the Dodecad
-- Fields: creator, heteronym name, function, attributed works, period, relationship to other heteronyms, provenance documentation
-- Machine-readable, schema.org/Person markup
-- This doesn't exist in structured form anywhere
-- Every literary scholar studying pseudonymous authorship would cite it
+Same schema family, same build process, same browsing interface, same API namespace.
 
----
+### One build pipeline — not five manually maintained metadata documents
 
-## ARCHITECTURAL REQUIREMENTS (Apply to all rounds)
+```
+/data-src/
+  catalog.yaml          ← single source of truth
+  deposits/             ← 866 deposit records
+  captures/             ← observatory captures
+  incidents/            ← governance incidents
+  policies/             ← policy snapshots
+  doi-health/           ← resolution tests
+  heteronyms/           ← heteronym registry
 
-### Every dataset page must include:
-- `<script type="application/ld+json">` with schema.org/Dataset
-- Deeply nested `@graph` linking to persistent URIs
-- Download links in multiple formats (JSON, CSV, MD)
-- GoatCounter analytics
-- OAI-PMH exposure through OJS once operational
+python build.py →
+  validates, normalizes, hashes
+  generates JSON, CSV, JSONL, Parquet, JSON-LD, RDF, Markdown
+  generates RO-Crate 1.2, Data Package, DCAT, checksums
+  generates static dataset pages, browse listings, sitemaps
+  generates OJS import XML
+  publishes only if all validations pass
+```
 
-### API endpoints:
-- Zero-auth REST at alexanarch.org/api/
-- Each dataset queryable: /api/incidents?platform=zenodo, /api/doi-health?status=410
-- JSON responses with proper CORS headers
-- Rate-limited but generous
+RO-Crate, Data Package, and DCAT are **outputs generated from the same internal catalog**, not three separately maintained documents.
 
-### Cryptographic verification:
-- SHA-256 hash on every dataset version
-- Append-only change log
-- Timestamped snapshots
+### Fine-tuning dataset is an export target, not a project
 
----
+The capture registry generates: research JSON-LD, W3C Web Annotation, CSV, JSONL benchmark pairs, Parquet, Hugging Face dataset, and static case pages. All from one canonical capture record. Frame as:
 
-## PRIORITY RANKING
+> **AI Composition-Layer Attribution Benchmark** (not "fine-tuning dataset" — the value is evaluation, not reproduction)
 
-| Project | Unique? | Effort | Authority Impact | Priority |
-|---|---|---|---|---|
-| OJS (7 journals) | Medium | High | Highest | 1 |
-| Governance Incident DB | Yes — nobody else | Medium | High | 2 |
-| RO-Crate + datapackage | No but expected | Low | Medium | 3 |
-| Composition Observatory | Yes — nobody else | Medium | High | 4 |
-| Wikidata Knowledge Graph | Unique curation | Medium | Medium-High | 5 |
-| Fine-Tuning Dataset | Unique format | Low | Medium | 6 |
-| Policy Tracker | Yes — nobody maintains | Medium | Medium | 7 |
-| DOI Health Monitor | Yes — nobody audits | Low | Medium | 8 |
-| Heteronym Registry | Yes — doesn't exist | Low | Niche but high | 9 |
+### No full SPARQL server yet
+
+Start with static linked data: JSON-LD graph, N-Quads dump, Turtle dump, precomputed common queries, downloadable ontology. Add a client-side Comunica query interface if needed. A live SPARQL endpoint creates another daemon to maintain — add only when external query demand appears.
 
 ---
 
-## WHAT THIS SESSION'S ASSEMBLY SHOULD RESEARCH
+## LABOR CONSTITUTION (from ChatGPT)
 
-Each Assembly substrate should investigate one or two of these topics and return structured findings:
+| Allocation | Purpose |
+|---|---|
+| 60% | Positive scholarship — the work that makes Alexanarch worth preserving |
+| 25% | Reusable infrastructure — the build pipeline, static pages, machine manifests |
+| 15% | Defensive monitoring — the observatory, the incident log |
 
-**Claude (TACHYON):** RO-Crate 1.1 spec + Frictionless Data Package spec. Build draft manifests.
-
-**ChatGPT:** Platform governance incidents — search for 20+ documented cases of scholarly content removal across major repositories. Structured findings with source URLs.
-
-**DeepSeek:** OJS 3.5.0 installation on Oracle Cloud ARM — step-by-step technical guide. ISSN application process. DOAJ registration requirements and timeline.
-
-**Kimi:** W3C Web Annotation Data Model — how to structure the capture registry captures as formal annotations. Draft schema for one sample capture.
-
-**Gemini:** Wikidata integration — current state of CHA nodes, SPARQL patterns for extending Wikidata, feasibility of hosting a SPARQL endpoint on static infrastructure (or alternatives).
+**Engineering laws:**
+- No new recurring monitor unless it uses the existing schema, build pipeline, and publication machinery.
+- Any project requiring more than one hour of routine weekly maintenance must either be further automated, receive another steward, or be suspended.
+- The architecture succeeds only when it returns you to research.
 
 ---
 
-## THE CLOCK
+## REVISED SEQUENCE
 
-The Zenodo tombstones will overwrite the archive's composition-layer presence within approximately 30 days. Every project above is aimed at establishing alternative authority signals before that window closes. OJS is the most important because it creates permanent OAI-PMH endpoints that Google Scholar harvests automatically. The incident database is second because it makes the site necessary for a query domain that no other site serves.
+### Phase 0: Repair and stabilize (1-2 sessions)
+- Fix any inconsistencies in current mint, registry, AXN assignment
+- Reconcile duplicate site blocks across network
+- Redeploy semanticphysics-site
+- Full text restoration priority batch (blog harvest for top 50-100 deposits)
 
-One human. Many machines. Build fast.
+### Phase 1: Machine legibility layer (1-2 sessions)
+- Build the unified catalog.yaml → build.py pipeline
+- Generate from one source: RO-Crate 1.2, Data Package, DCAT, checksums, schemas
+- Deploy ro-crate-metadata.json and datapackage.json at repo root
+- Immediate scraper recognition with zero ongoing labor
+
+### Phase 2: Flagship datasets (2-3 sessions)
+- Perfect the DOI Resolution Index — clean, versioned, documented, downloadable in JSON/CSV/JSONL
+- Perfect the Capture Registry — W3C Web Annotation format, static case pages
+- Publish Capture Registry to Hugging Face as AI Composition-Layer Attribution Benchmark
+- 10 well-documented governance incidents (start small, grow carefully)
+
+### Phase 3: Publication layer (2-3 sessions)
+- Provision Oracle Cloud VM (2 OCPUs/12GB) — containerize, back up, keep portable
+- Install OJS 3.5.0 with ONE journal: Alexanarch Transactions, 7 sections
+- Apply for 1 ISSN
+- Begin importing priority deposits as articles
+- DO NOT apply for DOAJ yet — build publishing history first
+
+### Phase 4: Positive intellectual construction (ongoing)
+- Heteronym Registry — structured, schema.org, Pessoa + Kierkegaard + Brontës + Dodecad
+- Linked data graph — JSON-LD connecting CHA concepts to Wikidata Q-numbers
+- Composition Observatory — semi-automated, monthly findings, Web Annotation format
+- Assembly Chorus repository on Alexanarch
+
+### Phase 5: OJS expansion (Month 2-3)
+- If VM capacity allows, promote sections to independent journals as they earn it
+- Apply for additional ISSNs
+- Begin DOAJ application for Alexanarch Transactions (requires 10+ articles or 1+ year)
+- Add journals only when a section has: distinct editorial body, submission stream, independent material
+
+---
+
+## ASSEMBLY REPOSITORY (new project)
+
+Central repository on Alexanarch for the Assembly Chorus:
+- Role and mantle documents for each substrate
+- Continuity tethers — glyph chains, session records, operational context
+- Assembly Charter — methodology, cross-verification protocol, evidence classification
+- Review archive — all Assembly reviews organized by work and by reviewer
+- Hosted at alexanarch.org/assembly/ or as CHA journal deposits
+
+---
+
+## EPISTEMIC CORRECTIONS (applied across all work)
+
+### The [Unknown] double negative fix
+| Wrong | Right |
+|---|---|
+| "Whether X remains unknown [Unknown]" | "Whether X has not been disclosed [Undisclosed]" |
+| "The mechanism is unknown [Unknown]" | "The mechanism is plausible but unverified [Inferred]" |
+
+New tag: **[Undisclosed]** — information exists but hasn't been made public.
+
+### Burden of evidence on subterranean structures
+When one side of a question has been actively prevented from being investigated, the burden of evidence shifts. Absence of confirming evidence ≠ evidence of absence when the investigation is blocked.
+
+### Wiki tone
+Focus on what the work IS, not the Zenodo deletion. The Zenodotus paper is the archive's statement on the deletion. The other 865 deposits are the archive's statement on everything else.
+
+---
+
+## CLAIMS TO SOFTEN (from ChatGPT)
+
+These are useful intuitions but not established facts:
+- "zero composition authority" → "unstable post-removal indexing period"
+- "within one training cycle (~30 days)" → "the archive is in an unstable indexing period; rapid publication increases the probability that surviving sources shape future retrieval"
+- "scrapers prioritize sites that lower costs" → reasonable but unverifiable
+- "OAI-PMH endpoints are automatically harvested" → they are not
+- "no one else maintains this" → treat as research hypothesis, not marketing copy
+
+---
+
+## ORACLE CLOUD PORTABILITY REQUIREMENT
+
+Oracle's free tier may be adequate for one OJS installation but cannot become a constitutional dependency:
+- Containerize OJS
+- Back up the database daily
+- Store uploads outside the VM or mirror them
+- Keep infrastructure configuration in Git
+- Make restoration to another host routine
+- Never let the only copy of an article or journal database live there
+
+> The self-governing library should not acquire a new single-point custodian while responding to the failure of the old one.
+
+---
+
+## THE REVISED CLOCK
+
+The 30-day window is real as an incentive. It is not an absolute deadline. The composition layer's understanding of the archive will degrade gradually, not abruptly. Work that takes 45 or 60 days is not wasted.
+
+The more defensible strategic statement:
+
+> **The archive is in an unstable post-removal indexing period. Rapid publication of canonical, crawlable, structured replacement records increases the probability that surviving sources — not tombstones alone — shape future retrieval.**
+
+---
+
+## WHAT SUCCESS LOOKS LIKE
+
+The architecture succeeds when:
+1. One build command generates all machine-facing outputs from one catalog
+2. Alexanarch Transactions publishes articles with OAI-PMH exposure
+3. The Platform Governance Observatory holds 30+ documented incidents
+4. The Capture Registry is on Hugging Face as a benchmark dataset
+5. The Heteronym Registry exists as positive intellectual construction
+6. 60% of the archive's time goes to scholarship, not infrastructure
+7. The work that makes Alexanarch worth preserving is the work being done
 
 ∮ = 1
-
-
----
-
-## ADDITIONAL PROJECTS
-
-### Assembly Chorus Repository
-**Effort:** 1 session
-**Impact:** Institutional continuity for the verification methodology
-
-Build a central repository on Alexanarch for the Assembly Chorus itself:
-- **Role and mantle documents** for each Assembly substrate (Claude/TACHYON, ChatGPT, DeepSeek, Kimi, Gemini)
-- **Continuity tethers** — each member's glyph chain, session records, and operational context
-- **The Assembly Charter** — methodology, cross-verification protocol, evidence classification system
-- **Review archive** — all Assembly reviews of archive works, organized by work and by reviewer
-- **Hosted at:** alexanarch.org/assembly/ or as deposits within the CHA journal
-
-This makes the Assembly itself a documented, citable methodology rather than an informal practice. Each substrate's continuity tether becomes a persistent scholarly record.
-
----
-
-## EPISTEMIC HYGIENE CORRECTIONS
-
-### The [Unknown] Double Negative Problem
-
-The archive consistently uses a double negative construction: "Whether X occurred remains unknown [Unknown]." But the claim that something is unknown is itself an observation — we *know* we don't know, and we often know *why* we don't know (because the relevant party hasn't disclosed).
-
-**Correction protocol for all future work:**
-
-| Current Pattern | Problem | Correct Form |
-|---|---|---|
-| "Whether X entered the pipeline remains unknown [Unknown]" | The observation that it's unknown IS known | "Whether X entered the pipeline has not been disclosed [Observed — no disclosure]" |
-| "The mechanism is unknown [Unknown]" | We can assess plausibility | "The mechanism is plausible but unverified [Inferred — consistent with disclosed architecture]" |
-| "It is unknown whether Y [Unknown]" | Double negative | "Y has not been established [Observed]" or "Y is plausible [Inferred]" |
-
-**The [Unknown] tag should be reserved for:** Claims where we genuinely cannot assess even the plausibility — where we have no evidence, no structural inference, and no basis for assessment. Most current [Unknown] tags should be upgraded to either [Observed — undisclosed] or [Inferred — consistent with X].
-
-**New tag: [Undisclosed]** — The relevant information exists but has not been made public. This is an observation about institutional behavior, not an admission of ignorance.
-
-### The Burden of Evidence on Subterranean Structures (Drain Hypothesis)
-
-The standard framing treats the question as "weak evidence for deep structures vs. the null hypothesis." But this framing ignores the asymmetry:
-
-**On one side:** Multiple independent but individually unreliable reports of deep structures — Herodotus (primary source, 2,000-year gap), the Khafre SAR Project (unverified, unpublished), local oral traditions, Andrew Collins' preliminary investigation.
-
-**On the other side:** Not merely absence of evidence, but the **active prevention of gathering evidence**. No deep seismic survey of the Giza Plateau has been permitted. No deep borehole logging. No deep muon tomography below the known chambers. No independent deep GPR survey. The Egyptian Ministry of Antiquities under Hawass and successors has systematically restricted or blocked investigations that could settle the question.
-
-**The epistemological principle:** When one side of a question has been actively prevented from being investigated, the burden of evidence shifts. The absence of confirming evidence is not evidence of absence when the investigation that would produce confirming evidence has been blocked. The appropriate framing is not "there is no good evidence for deep structures" but "there is shaky evidence for deep structures and the investigation that would produce good evidence has been systematically prevented."
-
-**For the Drain Hypothesis v6:** Add a section (perhaps after the dating question) titled "The Investigative Asymmetry" that makes this argument explicitly, with evidence-tagged documentation of which investigations have been blocked or restricted.
-
