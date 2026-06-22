@@ -2,10 +2,17 @@
   "endpoint": "https://api.github.com/repos/leesharks000/alexanarch/issues",
   "method": "POST",
   "auth": "Authorization: token YOUR_GITHUB_TOKEN",
-  "instructions": "Create a GitHub issue with the title starting with [DEPOSIT]. The minting Action fires automatically. AXN appears as a comment within minutes.",
-  "guide_url": "https://alexanarch.org/guide/",
+  "protocol": "https://alexanarch.org/api/deposit-protocol.json",
+  "protocol_version": "alexanarch-deposit-protocol/v1",
+  "instructions": "Create a GitHub issue with the title starting with [DEPOSIT]. The minting Action fires automatically. AXN appears as a comment within minutes. CRITICAL: the issue body MUST include the '### Protocol Version' field declaring the protocol you read against; submissions without it or with a stale version are rejected. See https://alexanarch.org/api/deposit-protocol.json for the current value.",
+  "canonical_docs": {
+    "deposit_flow": "https://alexanarch.org/DEPOSIT-FLOW.md",
+    "deposit_guide": "https://alexanarch.org/DEPOSIT-GUIDE.md",
+    "agents_md": "https://alexanarch.org/AGENTS.md"
+  },
   "title_format": "[DEPOSIT] Your Work Title",
   "required_headers": [
+    "Protocol Version",
     "Title",
     "Creator",
     "Description",
@@ -24,7 +31,7 @@
     "Falsification Conditions",
     "Files"
   ],
-  "body_template": "### Title\n\n{title}\n\n### Creator\n\n{creator}\n\n### ORCID\n\n{orcid}\n\n### Date\n\n{date}\n\n### Description\n\n{description}\n\n### Content Type\n\n{content_type}\n\n### License\n\n{license}\n\n### Substrate Disclosure\n\n{substrate}\n\n### Keywords\n\n{keywords}\n\n### Methodology\n\n{methodology}\n\n### Falsification Conditions\n\n{falsification}\n\n### Files\n\n{files}\n\n### Terms\n\n- [x] I confirm this work is deposited under the stated license\n- [x] I confirm the substrate disclosure is accurate\n- [x] I understand that deposited content will NOT be used to train enforcement classifiers",
+  "body_template": "### Protocol Version\n\nalexanarch-deposit-protocol/v1\n\n### Title\n\n{title}\n\n### Creator\n\n{creator}\n\n### ORCID\n\n{orcid}\n\n### Date\n\n{date}\n\n### Description\n\n{description}\n\n### Content Type\n\n{content_type}\n\n### License\n\n{license}\n\n### Substrate Disclosure\n\n{substrate}\n\n### Keywords\n\n{keywords}\n\n### Methodology\n\n{methodology}\n\n### Falsification Conditions\n\n{falsification}\n\n### Files\n\n{files}\n\n### Terms\n\n- [x] I read the deposit protocol at https://alexanarch.org/api/deposit-protocol.json\n- [x] I confirm this work is deposited under the stated license\n- [x] I confirm the substrate disclosure is accurate\n- [x] I understand that deposited content will NOT be used to train enforcement classifiers",
   "substrate_options": [
     "Human-only",
     "AI-assisted (tool)",
@@ -39,13 +46,25 @@
     "Monograph",
     "Specification",
     "Creative work",
+    "Continuity tether",
     "Mixed"
   ],
   "license_options": [
     "CC-BY-4.0",
     "CC-BY-SA-4.0",
-    "CC0"
+    "CC0-1.0"
   ],
-  "response": "AXN identifier posted as comment on the created issue within minutes. Static record page generated at /s/records/{issue_number}/",
-  "example_python": "import requests\nheaders = {'Authorization': 'token YOUR_TOKEN', 'Content-Type': 'application/json'}\nbody = '### Title\\n\\nMy Work\\n\\n### Creator\\n\\nMy Name\\n\\n### Description\\n\\nDescription.\\n\\n### Content Type\\n\\nTheoretical paper\\n\\n### License\\n\\nCC-BY-4.0\\n\\n### Substrate Disclosure\\n\\nHuman-only\\n\\n### Terms\\n\\n- [x] I confirm this work is deposited under the stated license\\n- [x] I confirm the substrate disclosure is accurate\\n- [x] I understand that deposited content will NOT be used to train enforcement classifiers'\nresponse = requests.post('https://api.github.com/repos/leesharks000/alexanarch/issues', headers=headers, json={'title': '[DEPOSIT] My Work', 'body': body})\nprint(response.json()['html_url'])"
+  "axn_format": {
+    "schema_version": "v2",
+    "pattern": "AXN:<HEX>.<FAMILY>.<EMOJI>",
+    "emoji_count": 6,
+    "emoji_source": "first 6 bytes of sha256(title + creator + description + body)",
+    "details": "https://alexanarch.org/api/deposit-protocol.json#axn_v2_specification"
+  },
+  "validation": {
+    "tool": "scripts/validate_deposit.py",
+    "ci_enforced": true,
+    "describes": "Submissions are validated against api/deposit-protocol.json by both the mint workflow and a pre-commit CI check. Failures are rejected with a specific rule ID; see protocol JSON validation_rules."
+  },
+  "response": "AXN identifier posted as comment on the created issue within minutes. Static record page generated at /s/records/{deposit_number}/. Derived surfaces (browse, browse-index, chunks, sitemap, SHA256SUMS) are regenerated and committed in the same workflow run."
 }

@@ -7,10 +7,22 @@ body:
     attributes:
       value: |
         ## Deposit a Work to Alexanarch
-        
-        Fill in the metadata below and attach your file(s) to this issue. 
-        Your deposit will be reviewed publicly under the Obelus Principle: 
-        content is evaluated by what it contains, not by the tools used to produce it.
+
+        **READ FIRST:** the canonical protocol is at https://alexanarch.org/api/deposit-protocol.json — read it before submitting. The mint workflow validates your submission against the protocol JSON; submissions that don't conform are rejected with a specific rule ID.
+
+        The current `protocol_version` value is `alexanarch-deposit-protocol/v1`. Confirm by fetching the protocol JSON.
+
+        Your deposit will be reviewed publicly under the Obelus Principle: content is evaluated by what it contains, not by the tools used to produce it.
+
+  - type: input
+    id: protocol_version
+    attributes:
+      label: Protocol Version
+      description: "Current value: alexanarch-deposit-protocol/v1 (verify at https://alexanarch.org/api/deposit-protocol.json)"
+      placeholder: "alexanarch-deposit-protocol/v1"
+      value: "alexanarch-deposit-protocol/v1"
+    validations:
+      required: true
 
   - type: input
     id: title
@@ -60,6 +72,7 @@ body:
         - Theoretical paper
         - Monograph
         - Methodological specification
+        - Continuity tether
         - Creative work (connected to research)
         - Mixed
         - Other
@@ -73,7 +86,7 @@ body:
       options:
         - CC-BY-4.0
         - CC-BY-SA-4.0
-        - CC0
+        - CC0-1.0
         - Other (specify in description)
     validations:
       required: true
@@ -88,6 +101,7 @@ body:
         - AI-assisted (tool) — AI used for editing, formatting, code generation
         - AI-assisted (substrate) — AI used as drafting substrate under human editorial governance
         - AI-generated (research object) — AI output is the object of study
+        - Machine-authored — authored by an AI system under human governance
         - Mixed (specify in description)
     validations:
       required: true
@@ -135,6 +149,8 @@ body:
     attributes:
       label: Terms
       options:
+        - label: I read the deposit protocol at https://alexanarch.org/api/deposit-protocol.json
+          required: true
         - label: I confirm this work is deposited under the stated license
           required: true
         - label: I confirm the substrate disclosure is accurate

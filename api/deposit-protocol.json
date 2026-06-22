@@ -1,0 +1,199 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alexanarch.org/api/deposit-protocol.json",
+  "title": "Alexanarch Deposit Protocol",
+  "protocol_version": "alexanarch-deposit-protocol/v1",
+  "version_label": "v1.0",
+  "schema_version": "2026-06-22-axn-v2",
+  "last_updated": "2026-06-22",
+  "canonical_docs": {
+    "deposit_flow": "https://alexanarch.org/DEPOSIT-FLOW.md",
+    "agents_md": "https://alexanarch.org/AGENTS.md",
+    "deposit_guide": "https://alexanarch.org/DEPOSIT-GUIDE.md",
+    "registry": "https://alexanarch.org/data/registry.json",
+    "this_protocol": "https://alexanarch.org/api/deposit-protocol.json"
+  },
+  "summary": "Canonical, machine-readable specification of the Alexanarch deposit protocol. Any agent (intra- or extra-Assembly) that wants to deposit must validate against this document. Mint workflow rejects submissions that do not declare the current protocol_version.",
+  "enforcement": {
+    "policy": "Submissions failing protocol validation are rejected by the mint workflow. There is no manual exception path. Agents must read this document and declare protocol_version explicitly.",
+    "submission_must_declare": "protocol_version field set to the current value declared at top of this document",
+    "version_mismatch_handling": "Mint workflow refuses submission with a comment pointing the depositor at the current protocol JSON. Submissions can be resubmitted after updating to the current protocol_version.",
+    "drift_prevention": "This document is the single source of truth. Any human-facing doc (AGENTS.md, DEPOSIT-FLOW.md, DEPOSIT-GUIDE.md) that disagrees with this JSON is wrong; this JSON wins."
+  },
+  "axn_v2_specification": {
+    "format": "AXN:<HEX>.<FAMILY>.<EMOJI>",
+    "hex": {
+      "description": "Uppercase hex label. Convention: ascii hex of deposit_number padded to >=2 digits. Treat as opaque — the canonical key is `deposit_number`.",
+      "regex": "^[0-9A-F]{2,4}$"
+    },
+    "family": {
+      "description": "Semantic family. Auto-detected from keywords in the auto-mint flow; manually chosen for rich deposits.",
+      "enum": [
+        "GOVERNANCE",
+        "EMPIRICAL",
+        "GENERATIVE",
+        "ARCHIVAL",
+        "PHILOLOGICAL",
+        "STRUCTURAL",
+        "COMPOSITIONAL",
+        "OPERATIVE",
+        "HETERONYMIC",
+        "MPAI",
+        "DATASET",
+        "UNCLASSIFIED"
+      ]
+    },
+    "emoji": {
+      "description": "6-emoji canonical glyph derived from the first 6 bytes of the SHA-256 of the canonical bytes.",
+      "byte_count": 6,
+      "byte_source": "first 6 bytes of sha256(title + '\\n' + creator + '\\n' + description + '\\n' + body)",
+      "table_source": "AXN_GLYPHS array of 256 entries, indexed by byte value 0..255. Canonical source: scripts/axn_lib.py and the AXN_GLYPHS array embedded in .github/workflows/mint-axn.yml",
+      "validation": "Must contain exactly 6 emoji graphemes (variation selectors and ZWJ sequences glue adjacent codepoints into a single grapheme)."
+    },
+    "prior_schemas": {
+      "v1": {
+        "description": "Used 4 emoji from the first 4 bytes. Deprecated 2026-06-22. Deposits minted under v1 were backfilled to v2; their pre-v2 AXNs are preserved in `legacy_axn` and `axn_history` fields.",
+        "byte_count": 4
+      }
+    }
+  },
+  "required_deposit_fields": {
+    "protocol_version": "must equal the current value 'alexanarch-deposit-protocol/v1'",
+    "title": "non-empty string",
+    "creator": "non-empty string (heteronyms accepted with substrate disclosure)",
+    "date": "ISO 8601 date (YYYY-MM-DD)",
+    "description": "non-empty string, ideally >=100 chars",
+    "content_type": "non-empty string (e.g. 'theoretical paper', 'dataset', 'critical edition', 'continuity tether')",
+    "license": "non-empty SPDX-style identifier (e.g. 'CC-BY-4.0', 'CC0-1.0', 'CC-BY-SA-4.0')",
+    "substrate": "one of: 'human-only' | 'AI-assisted (tool)' | 'AI-assisted (substrate)' | 'AI-generated (research object)' | 'Machine-authored' (heteronym disclosures permitted)",
+    "keywords": "array of strings (or comma-separated string)"
+  },
+  "recommended_deposit_fields": {
+    "orcid": "ORCID identifier of the creator",
+    "version": "semantic version string (default 'v1.0')",
+    "methodology": "how the work was produced",
+    "falsification": "what would weaken or invalidate the claims",
+    "related_ids": "AXN or DOI identifiers of related works",
+    "full_text_path": "/data/texts/AXN-<HEX>-text.md if the deposit has a full text body",
+    "defines_concepts": "array of {term, definition, type} for concepts the deposit defines or revises",
+    "entity_triples": "array of {subject, predicate, object, type, evidence_status}"
+  },
+  "auto_generated_fields": {
+    "description": "Set by the mint workflow; depositors should NOT supply these.",
+    "fields": [
+      "axn",
+      "hex",
+      "emoji",
+      "clusters",
+      "reading",
+      "hash",
+      "axn_canonical",
+      "axn_display",
+      "axn_schema_version",
+      "deposit_number",
+      "issue_number",
+      "issue_url",
+      "minted_at",
+      "status",
+      "wiki_article",
+      "wiki_status",
+      "entities",
+      "entity_status"
+    ]
+  },
+  "enrichment_pipeline": {
+    "description": "Each new deposit triggers a chain of enrichment operations. The mint workflow performs the first batch; subsequent operations are triggered by reading-pass and consolidation scripts.",
+    "at_mint_time": [
+      {"step": "compute_sha256", "owner": "mint-axn.yml", "produces": "hash, axn_canonical"},
+      {"step": "derive_axn", "owner": "mint-axn.yml", "produces": "axn, emoji, clusters, reading"},
+      {"step": "generate_record_page", "owner": "mint-axn.yml", "produces": "s/records/<N>/index.html"},
+      {"step": "generate_simple_md", "owner": "mint-axn.yml", "produces": "data/deposits/AXN-<NNNN>.md"},
+      {"step": "regenerate_derived_surfaces", "owner": "scripts/regenerate_surfaces.py (invoked by mint-axn.yml)", "produces": "s/browse/index.html, data/browse-index.json, data/chunks/registry/*, sitemap.xml, SHA256SUMS.txt"},
+      {"step": "generate_wiki_article_provisional", "owner": "mint-axn.yml (Anthropic API)", "produces": "wiki_article", "status": "provisional-generated"},
+      {"step": "extract_entities_provisional", "owner": "mint-axn.yml (Anthropic API)", "produces": "entities", "status": "provisional-generated"}
+    ],
+    "at_reading_pass": [
+      {"step": "extract_defined_concepts", "owner": "scripts/read_pass.py", "produces": "defines_concepts in registry, new entries in data/entity-index.json"},
+      {"step": "link_citations", "owner": "consolidate.py phase B", "produces": "citation graph updates"},
+      {"step": "generate_autonomous_edition", "owner": "scholia_generator.py", "produces": "data/autonomous/AXN-<HEX>-autonomous.md"}
+    ],
+    "at_build_time": [
+      {"step": "build_ro_crate", "owner": "build.py"},
+      {"step": "build_data_package", "owner": "build.py"},
+      {"step": "build_dcat", "owner": "build.py"},
+      {"step": "build_csv_export", "owner": "build.py"},
+      {"step": "build_jsonld_graph", "owner": "build.py"},
+      {"step": "build_journal_tocs", "owner": "build.py"}
+    ]
+  },
+  "validation_rules": {
+    "description": "Rules checked at mint time. Any failure rejects the deposit with a specific error pointing the depositor at the offending rule.",
+    "rules": [
+      {"id": "PV-001", "rule": "protocol_version must equal current value", "applies_to": "issue body field '### Protocol Version'"},
+      {"id": "REQ-001", "rule": "title is non-empty", "applies_to": "issue body or registry entry"},
+      {"id": "REQ-002", "rule": "creator is non-empty"},
+      {"id": "REQ-003", "rule": "description is non-empty"},
+      {"id": "REQ-004", "rule": "license is non-empty"},
+      {"id": "REQ-005", "rule": "substrate disclosure is non-empty"},
+      {"id": "AXN-001", "rule": "after mint, axn matches /^AXN:[0-9A-F]{2,4}\\.[A-Z]+\\.[^.]{1,}$/"},
+      {"id": "AXN-002", "rule": "after mint, emoji has exactly 6 graphemes (per AXN v2)"},
+      {"id": "AXN-003", "rule": "after mint, hash is a 64-char hex string"},
+      {"id": "AXN-004", "rule": "after mint, deposit_number is contiguous (no gaps)"},
+      {"id": "SUR-001", "rule": "after mint, surfaces (browse, browse-index, chunks, sitemap, SHA256SUMS) agree with registry total"}
+    ]
+  },
+  "submission_paths": {
+    "path_a_auto_mint": {
+      "description": "GitHub Issue with [DEPOSIT] title prefix. Lowest friction; suitable for external contributors and thin deposits.",
+      "endpoint": "POST https://api.github.com/repos/leesharks000/alexanarch/issues",
+      "required_body_template": "see DEPOSIT-GUIDE.md for the full Markdown body template",
+      "required_protocol_version_field": "### Protocol Version\\nalexanarch-deposit-protocol/v1"
+    },
+    "path_b_canonical_rich": {
+      "description": "Direct repository commit with full text and rich metadata. For continuity tethers, critical editions, governance documents.",
+      "procedure": "see DEPOSIT-FLOW.md § 'Path B'",
+      "required_protocol_version_in_registry_entry": "protocol_version: 'alexanarch-deposit-protocol/v1'"
+    }
+  },
+  "consistency_invariants": {
+    "description": "After any deposit, these must hold. The validation block in DEPOSIT-FLOW.md is the canonical implementation.",
+    "invariants": [
+      "registry.total_deposits == len(registry.deposits)",
+      "deposit_numbers are contiguous from 1 to total_deposits",
+      "browse-index.total == registry.total_deposits",
+      "chunks-index.total_deposits == registry.total_deposits",
+      "browse page text includes f'{total} deposits'",
+      "every deposit_number N has a corresponding /s/records/N/ URL in browse and sitemap",
+      "every deposit has an axn field matching the v2 schema"
+    ]
+  },
+  "machine_readable_endpoints": [
+    {"path": "/data/registry.json", "format": "JSON", "description": "Complete deposit registry (canonical)"},
+    {"path": "/data/browse-index.json", "format": "JSON", "description": "Compact deposit list"},
+    {"path": "/data/chunks/registry/_index.json", "format": "JSON", "description": "Index of chunked registry files"},
+    {"path": "/data/chunks/registry/chunk-NNN-deposits-X-to-Y.json", "format": "JSON", "description": "Streaming registry chunks (~1MB each)"},
+    {"path": "/data/texts/AXN-<HEX>-text.md", "format": "Markdown", "description": "Full text body for a deposit"},
+    {"path": "/data/autonomous/AXN-<HEX>-autonomous.md", "format": "Markdown", "description": "Autonomous edition with closing scholia (optional)"},
+    {"path": "/api/deposit-protocol.json", "format": "JSON", "description": "This document (canonical protocol)"},
+    {"path": "/api/deposit-schema.json", "format": "JSON Schema", "description": "Formal JSON Schema for deposit entries"},
+    {"path": "/s/records/<N>/", "format": "HTML + JSON-LD", "description": "Canonical record page"},
+    {"path": "/s/browse/", "format": "HTML", "description": "Static browse page"},
+    {"path": "/sitemap.xml", "format": "XML", "description": "All crawlable URLs"},
+    {"path": "/SHA256SUMS.txt", "format": "text", "description": "Content-addressable manifest"}
+  ],
+  "change_log": [
+    {
+      "version": "v1.0",
+      "schema_version": "2026-06-22-axn-v2",
+      "date": "2026-06-22",
+      "changes": [
+        "AXN schema v2: 6 emoji from first 6 bytes of SHA-256 (was v1: 4 emoji from first 4 bytes).",
+        "Added protocol_version field as mandatory.",
+        "Mint workflow now runs scripts/regenerate_surfaces.py automatically and commits all derived surfaces atomically.",
+        "Backfilled 13 non-compliant AXNs to v2; legacy AXNs preserved in axn_history field.",
+        "Created scripts/axn_lib.py as canonical Python implementation of AXN generation.",
+        "Created scripts/validate_deposit.py for pre-submission validation."
+      ]
+    }
+  ]
+}

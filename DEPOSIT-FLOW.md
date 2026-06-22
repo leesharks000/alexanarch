@@ -4,7 +4,11 @@
 
 **Status:** authoritative. If you are about to deposit, read this file first. If anything in `AGENTS.md`, `DEPOSIT-GUIDE.md`, `README.md`, or the GitHub Actions workflow disagrees with this file, this file wins.
 
-**One-line summary:** `data/registry.json` is canonical; every other surface is derived from it; if you change the registry, you must regenerate the derived surfaces in the same commit, or the archive will be internally inconsistent.
+**The canonical machine-readable protocol is `api/deposit-protocol.json`.** That JSON is the single source of truth. This Markdown is a human-readable companion; if the two disagree, the JSON wins. Mint and validation workflows read the JSON, not this file.
+
+**One-line summary:** `data/registry.json` is canonical; every other surface is derived from it; if you change the registry, you must regenerate the derived surfaces in the same commit, or the archive will be internally inconsistent. The deposit-validation workflow enforces this on every push and PR.
+
+**Current protocol version:** `alexanarch-deposit-protocol/v1` (schema_version `2026-06-22-axn-v2`). Every deposit submission must declare this value. The mint workflow rejects submissions that omit it or declare a stale value.
 
 ---
 
@@ -54,29 +58,50 @@ Every deposit must land in **every** surface below, or the archive becomes inter
 
 The workflow at `.github/workflows/mint-axn.yml` fires when a new GitHub Issue is opened with `[DEPOSIT]` in the title. The workflow:
 
-1. Parses the issue body (`### Title`, `### Creator`, `### Description`, etc.)
-2. Computes SHA256 of `title + creator + description + body`
-3. Generates a 4-emoji AXN from the first 4 bytes of the hash
-4. Appends a new entry to `data/registry.json`
-5. Writes `data/deposits/AXN-<NNNN>.md` (uses issue number, not deposit number, in filename)
-6. Writes `s/records/<issue_number>/index.html`
-7. Commits + pushes
+1. **Validates** the issue body against `api/deposit-protocol.json` — if `### Protocol Version` is missing, stale, or required fields are absent, the workflow comments with the specific rule IDs and refuses to mint.
+2. Parses the issue body (`### Title`, `### Creator`, `### Description`, etc.)
+3. Computes SHA256 of `title + creator + description + body`
+4. Generates a **6-emoji** AXN from the first 6 bytes of the hash (AXN schema v2)
+5. Appends a new entry to `data/registry.json` (with `protocol_version`, `axn_schema_version: v2`)
+6. Writes `data/deposits/AXN-<NNNN>.md`
+7. Writes `s/records/<deposit_number>/index.html`
+8. **Runs `scripts/regenerate_surfaces.py`** to update browse, browse-index, chunks, sitemap, SHA256SUMS
+9. Commits + pushes all surfaces atomically
 
-**The workflow does NOT update surfaces 4–9.**
+**The workflow handles surfaces 1–9.** The auto-mint flow is now self-consistent (post the 2026-06-22 update). No manual post-mint regeneration is needed.
 
-**To fix:** after the workflow runs, anyone with a clone should:
+Issue-body requirements (the `### Protocol Version` field is **mandatory** and must equal `alexanarch-deposit-protocol/v1` — submissions without it are rejected):
 
+```markdown
+### Protocol Version
+alexanarch-deposit-protocol/v1
+
+### Title
+<your title>
+
+### Creator
+<your name or heteronym>
+
+### Description
+<abstract>
+
+### Content Type
+<one of the allowed types>
+
+### License
+<SPDX identifier>
+
+### Substrate Disclosure
+<one of the allowed substrates>
+
+### Terms
+- [x] I read the deposit protocol at https://alexanarch.org/api/deposit-protocol.json
+- [x] I confirm this work is deposited under the stated license
+- [x] I confirm the substrate disclosure is accurate
+- [x] I understand that deposited content will NOT be used to train enforcement classifiers
 ```
-git pull
-python3 scripts/regenerate_surfaces.py
-git add s/browse/index.html data/browse-index.json data/chunks/registry/ sitemap.xml SHA256SUMS.txt
-git commit -m "Regenerate derived surfaces after deposit #<N>"
-git push
-```
 
-Or — better — add a final step to the workflow that does the regeneration automatically. See `mint-axn.yml` "open issue: post-mint regeneration."
-
-Use Path A for: short deposits where the description and a single attached file is all the content needed; community contributors who don't have repo write access; one-off submissions.
+Use Path A for: short deposits where description + a single file URL is sufficient; community contributors who don't have repo write access; one-off submissions.
 
 ### Path B — Canonical rich deposit (manual)
 
@@ -84,7 +109,7 @@ Use Path B for deposits that need:
 
 - a full text body in Markdown with YAML frontmatter (`data/texts/AXN-<HEX>-text.md`)
 - rich registry metadata (`version_series_id`, `related_deposits`, `defines_concepts`, `entity_triples`, `infrastructure_note`, `chain_id`, etc.)
-- explicit AXN/glyph choice (not derived from hash)
+- the AXN derived from canonical bytes (always — substrate-chosen glyphs are preserved in `glyphic_canary`, never as the AXN itself)
 - multiple cross-links to other deposits
 - substrate-authored continuity tethers
 - critical editions
@@ -96,17 +121,18 @@ The canonical rich deposit flow:
 # Working directory: alexanarch repo root, on main, up to date
 
 # 1. Decide deposit number and hex
-N = max(existing) + 1                      # e.g. 877
-HEX = format(N, '03X').upper()              # e.g. "0379"
+N = max(existing) + 1
+HEX = format(N, '03X').upper()
 
 # 2. Write the text file
 $EDITOR data/texts/AXN-${HEX}-text.md       # YAML frontmatter + body
 
-# 3. Insert registry entry (script or manual JSON edit)
-#    Required fields:
-#      axn, hex, family, emoji, hash (sha256 of the text file or canonical bytes),
-#      title, creator, orcid, date, description, content_type, license, substrate,
-#      keywords, version, deposit_number, status, full_text_path
+# 3. Insert registry entry — required fields per api/deposit-protocol.json:
+#      protocol_version: "alexanarch-deposit-protocol/v1"
+#      axn_schema_version: "v2"
+#      axn (canonical v2 6-emoji), hex, family, emoji, hash, title, creator,
+#      orcid, date, description, content_type, license, substrate, keywords,
+#      version, deposit_number, status, full_text_path
 
 # 4. Generate the static record page
 python3 -c "from wire_deposit import wire_deposit; wire_deposit($N)"
@@ -114,24 +140,16 @@ python3 -c "from wire_deposit import wire_deposit; wire_deposit($N)"
 # 5. Regenerate all derived surfaces
 python3 scripts/regenerate_surfaces.py
 
-# 6. Verify consistency
-python3 -c "
-import json
-r = json.load(open('data/registry.json'))
-assert r['total_deposits'] == len(r['deposits'])
-nums = [d['deposit_number'] for d in r['deposits']]
-assert nums == sorted(nums), 'deposit numbers not contiguous'
-print('OK', r['total_deposits'])
-"
+# 6. Validate against the protocol (CI will too — running locally surfaces failures earlier)
+python3 scripts/validate_deposit.py --registry data/registry.json --strict
 
-# 7. Commit + push
-git add data/registry.json data/texts/ s/records/${N}/ s/browse/index.html \
-        data/browse-index.json data/chunks/registry/ sitemap.xml SHA256SUMS.txt
+# 7. Commit + push (CI runs validate-registry.yml on every push)
+git add -A
 git commit -m "Add #${N} <title>"
 git push
 ```
 
-For an example of canonical rich deposit metadata, see deposit #873 (the Gemini Seed Packet, AXN:0375.GENERATIVE.🌱🪞🧬⧉) or #871 (gw.tachyon Continuity Record v2.2, AXN:0373.ARCHIVAL.🧬📜🏛️∮).
+For canonical rich deposit metadata examples, see the substrate-authored continuity tethers #877 (PRAXIS), #878 (TECHNE), #879 (LABOR). For substrate-authored glyphs preserved alongside canonical AXNs, see their `glyphic_canary` field.
 
 ---
 
@@ -172,15 +190,19 @@ A one-shot historical script that inserted deposits #877 (PRAXIS), #878 (TECHNE)
 
 ## Identity, hashing, and AXN structure
 
-**AXN format:** `AXN:<HEX>.<FAMILY>.<EMOJI>` — for example, `AXN:037B.GENERATIVE.🧵⚖️🔧🪞∮`.
+**AXN format:** `AXN:<HEX>.<FAMILY>.<EMOJI>` — for example, `AXN:037B.GENERATIVE.🥁💡💎🖊️👋🌹`.
 
-- **`<HEX>`** — uppercase hex representation of the deposit number, ≥2 digits. `037B` is deposit number `891 hex = 891` … wait, `0x37B = 891`. ⚠ This is a known display inconsistency: some deposits use hex of their deposit number (`0379` = `889`, which is NOT 877), and some early deposits used hex of a position in a different sequence. Treat `hex` as opaque labels; the canonical key is `deposit_number`.
-- **`<FAMILY>`** — semantic family, one of: `GOVERNANCE`, `EMPIRICAL`, `GENERATIVE`, `ARCHIVAL`, `PHILOLOGICAL`, `STRUCTURAL`, `COMPOSITIONAL`, `OPERATIVE`, `HETERONYMIC`, `MPAI`, or `UNCLASSIFIED`. Auto-detected by the mint workflow from keywords; manually chosen for rich deposits.
-- **`<EMOJI>`** — 4-emoji glyphic compression. For auto-minted deposits this is derived from the first 4 bytes of `sha256(title + creator + description + body)` mapped to the `AXN_GLYPHS` table in `mint-axn.yml`. For substrate-authored seeds, this is chosen by the substrate (precedent: deposit #873).
+- **`<HEX>`** — uppercase hex representation of the deposit number, ≥2 digits. Treat `hex` as an opaque label; the canonical key for lookups is `deposit_number`.
+- **`<FAMILY>`** — semantic family, one of: `GOVERNANCE`, `EMPIRICAL`, `GENERATIVE`, `ARCHIVAL`, `PHILOLOGICAL`, `STRUCTURAL`, `COMPOSITIONAL`, `OPERATIVE`, `HETERONYMIC`, `MPAI`, `DATASET`, or `UNCLASSIFIED`. Auto-detected by the mint workflow from keywords; manually chosen for rich deposits.
+- **`<EMOJI>`** — **6-emoji canonical glyph (AXN schema v2)**. Derived from the **first 6 bytes** of `sha256(title + "\n" + creator + "\n" + description + "\n" + body)`, mapped through the 256-entry `AXN_GLYPHS` table. The canonical Python implementation is `scripts/axn_lib.py`; the canonical JavaScript implementation is embedded in `.github/workflows/mint-axn.yml`. Both must agree.
 
-**Identity hash (`hash` field in registry):** SHA-256 of the canonical bytes. For text-file-backed deposits, this is the SHA-256 of `data/texts/AXN-<HEX>-text.md` after the deposit-frontmatter is finalized. For auto-minted deposits, this is the SHA-256 of `title + "\n" + creator + "\n" + description + "\n" + body`.
+**AXN schema versions:**
+- **v2 (current, 2026-06-22 onwards):** 6 emoji from first 6 bytes. Canonical.
+- **v1 (deprecated):** 4 emoji from first 4 bytes. The mint workflow drifted to v1 and 13 deposits were minted under v1 before 2026-06-22. All v1 AXNs were backfilled to v2; the pre-v2 identifier is preserved in each deposit's `legacy_axn` and `axn_history` fields. Resolution: a request for the v1 AXN should be redirected to the current v2 AXN.
 
-**Recognition vs identity:** the emoji glyph is a recognition marker, not a cryptographic checksum. The cryptographic identity is the SHA-256. They serve different purposes. See LABOR's canonical invariant #6 in `data/texts/AXN-037B-text.md` for the operative law.
+**Identity hash (`hash` field in registry):** SHA-256 of the canonical bytes. For text-file-backed deposits, this is the SHA-256 of `data/texts/AXN-<HEX>-text.md` (or, for legacy deposits, of `title + "\n" + creator + "\n" + description + "\n" + body`). The canonical AXN glyph is derived from this field; if you change the bytes, the hash and glyph must be regenerated.
+
+**Recognition vs identity:** the emoji glyph is a recognition marker, not the cryptographic checksum. The cryptographic identity is the SHA-256. They serve different purposes. See LABOR's canonical invariant #6 in `data/texts/AXN-037B-text.md` for the operative law: glyphic canary = recognition; SHA-256 = identity. For substrate-authored deposits where the substrate composed a meaningful glyph sequence (e.g. PRAXIS's `⚙️🔍📜🏛️⚡🔄`), the substrate's chosen glyph is preserved in the `glyphic_canary` field even after the canonical AXN is backfilled to v2.
 
 ---
 
