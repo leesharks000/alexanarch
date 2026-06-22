@@ -8,7 +8,7 @@ For a given deposit number:
    - Apply the engagement test ("did CHA arrive, engage, leave defined?")
    - Assign engagement_type: minted | developed | revised | positioned | founded | specified
    - Mark provenance_method: read
-   - If term appears in Capture Registry, add external_surfaces.capture_registry
+   - If term has semantic addresses, link them via semantic_addresses field
 4. Reconcile with current entity-index.json
 5. Update registry.json d.entities for the deposit
 6. Print stats
@@ -23,30 +23,27 @@ from pathlib import Path
 from collections import Counter
 
 
-# Load capture registry once (cross-reference source)
-_CAPTURES = None
-def _load_captures():
-    global _CAPTURES
-    if _CAPTURES is None:
+# Load semantic addresses once (cross-reference source)
+_ADDRESSES = None
+def _load_addresses():
+    global _ADDRESSES
+    if _ADDRESSES is None:
         try:
-            with open('data/EA-WG-CAPTURES-01-v8.3.json') as f:
+            with open('data/semantic-addresses.json') as f:
                 data = json.load(f)
-            _CAPTURES = {}
-            for e in data.get('entries', []):
-                q = e.get('q', '').strip()
-                if q:
-                    n = re.sub(r'[^a-z0-9]', '', q.lower())
-                    _CAPTURES[n] = e
+            # Build concept→address-slugs reverse index
+            _ADDRESSES = {}
+            for slug, a in data.get('addresses', {}).items():
+                for ref in a.get('refers_to', []):
+                    _ADDRESSES.setdefault(ref, []).append(slug)
         except FileNotFoundError:
-            _CAPTURES = {}
-    return _CAPTURES
+            _ADDRESSES = {}
+    return _ADDRESSES
 
 
-def capture_for(term):
-    """Return capture entry for a term if exists, else None."""
-    caps = _load_captures()
-    n = re.sub(r'[^a-z0-9]', '', term.lower())
-    return caps.get(n)
+def addresses_for(term):
+    """Return list of semantic-address slugs that refer to this term."""
+    return _load_addresses().get(term, [])
 
 
 # Engagement-type classifiers — generic, but lexicon-aware patterns
@@ -203,15 +200,10 @@ def read_deposit(deposit_number, classify_fn=default_classify,
             existing['classified'] = True
             if 'entity_triples' not in existing or not existing['entity_triples']:
                 existing['entity_triples'] = [triple_mint]
-            # Add capture-registry cross-reference if available
-            cap = capture_for(existing_key)
-            if cap:
-                existing.setdefault('external_surfaces', {})['capture_registry'] = {
-                    'slug': cap.get('slug'),
-                    'query': cap.get('q'),
-                    'match_type': cap.get('mt'),
-                    'gallery_url': f"https://godkinggoogle.vercel.app/captures/#{cap.get('slug')}"
-                }
+            # Link semantic addresses if any
+            slugs = addresses_for(existing_key)
+            if slugs:
+                existing['semantic_addresses'] = sorted(set(existing.get('semantic_addresses', []) + slugs))
             stats['classified_existing'] += 1
         elif term in concepts:
             # Collision with another deposit
@@ -226,14 +218,9 @@ def read_deposit(deposit_number, classify_fn=default_classify,
             existing['entity_triples'] = triples
             if len(defn) > len(existing.get('definition', '')) + 30:
                 existing['definition'] = defn[:300]
-            cap = capture_for(term)
-            if cap:
-                existing.setdefault('external_surfaces', {})['capture_registry'] = {
-                    'slug': cap.get('slug'),
-                    'query': cap.get('q'),
-                    'match_type': cap.get('mt'),
-                    'gallery_url': f"https://godkinggoogle.vercel.app/captures/#{cap.get('slug')}"
-                }
+            slugs = addresses_for(term)
+            if slugs:
+                existing['semantic_addresses'] = sorted(set(existing.get('semantic_addresses', []) + slugs))
             stats['collision_logged'] += 1
         else:
             entry = {
@@ -241,16 +228,9 @@ def read_deposit(deposit_number, classify_fn=default_classify,
                 'type': type_label, 'entity_triples': [triple_mint],
                 'classified': True, 'provenance_method': 'read', 'engagement_type': eng_type
             }
-            cap = capture_for(term)
-            if cap:
-                entry['external_surfaces'] = {
-                    'capture_registry': {
-                        'slug': cap.get('slug'),
-                        'query': cap.get('q'),
-                        'match_type': cap.get('mt'),
-                        'gallery_url': f"https://godkinggoogle.vercel.app/captures/#{cap.get('slug')}"
-                    }
-                }
+            slugs = addresses_for(term)
+            if slugs:
+                entry['semantic_addresses'] = slugs
             concepts[term] = entry
             stats['added'] += 1
 
