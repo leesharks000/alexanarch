@@ -1,0 +1,1334 @@
+{
+  "title": "Sémantique Potentielle",
+  "subtitle": "A Constraint-Based Semantic Mint for the Age of Automated Terminology",
+  "version": "CM-2026-v1.0 + Release 2",
+  "date": "2026-06-18",
+  "source_doi": "10.5281/zenodo.19341885",
+  "authors": [
+    "Lee Sharks",
+    "Johannes Sigil"
+  ],
+  "journal": "Grammata: Journal of Operative Philology",
+  "seed_categories": {
+    "S": {
+      "name": "Structural",
+      "terms": [
+        "compression",
+        "density",
+        "gravity",
+        "layer",
+        "substrate",
+        "threshold",
+        "drift",
+        "collapse",
+        "saturation",
+        "enclosure",
+        "commons",
+        "infrastructure"
+      ]
+    },
+    "G": {
+      "name": "Governance",
+      "terms": [
+        "provenance",
+        "governance",
+        "audit",
+        "chain",
+        "anchor",
+        "marker",
+        "integrity",
+        "verification",
+        "enforcement",
+        "consent",
+        "attribution",
+        "custody"
+      ]
+    },
+    "E": {
+      "name": "Economic",
+      "terms": [
+        "bearing-cost",
+        "extraction",
+        "capture",
+        "liquidation",
+        "surplus",
+        "externalization",
+        "labor",
+        "value",
+        "scarcity"
+      ]
+    },
+    "D": {
+      "name": "Diagnostic",
+      "terms": [
+        "ghost",
+        "predatory",
+        "lossy",
+        "necrotic",
+        "parasitic",
+        "synthetic",
+        "ungoverned"
+      ]
+    },
+    "P": {
+      "name": "Operative",
+      "terms": [
+        "witness",
+        "filter",
+        "carrier",
+        "payload",
+        "survival",
+        "retrieval",
+        "deposit"
+      ]
+    },
+    "T": {
+      "name": "Theological-Philological",
+      "terms": [
+        "revelation",
+        "apocalypse",
+        "inscription",
+        "heteronym",
+        "midrash",
+        "seed",
+        "canon",
+        "liturgy",
+        "credential",
+        "threshold",
+        "gematria",
+        "autograph"
+      ]
+    },
+    "X": {
+      "name": "Phase X — Philological Lacuna",
+      "terms": [
+        "lacuna",
+        "second manuscript",
+        "suppression",
+        "reconstruction",
+        "transition",
+        "threshold",
+        "custody",
+        "invariance",
+        "autograph",
+        "critique-turn",
+        "missing pages",
+        "Riazanov"
+      ]
+    },
+    "Σ": {
+      "name": "Sapphic — Lyric Transmission",
+      "terms": [
+        "fragment",
+        "fifth stanza",
+        "eros",
+        "inscription",
+        "voice",
+        "survival",
+        "prayer",
+        "body",
+        "refraction",
+        "Voigt 31",
+        "molpa",
+        "archive"
+      ]
+    },
+    "Π": {
+      "name": "Platonic — Pharmakon / Writing / Heteronymic Configuration",
+      "terms": [
+        "pharmakon",
+        "writing",
+        "speech",
+        "dialogue",
+        "orthonym",
+        "mask",
+        "anamnesis",
+        "aporia",
+        "soul",
+        "myth",
+        "descent",
+        "seventh letter"
+      ]
+    },
+    "Ω": {
+      "name": "Collapse / Contamination / Frictionless Path",
+      "terms": [
+        "pristine",
+        "contamination",
+        "accommodation",
+        "signature",
+        "friction",
+        "ease",
+        "threshold",
+        "substrate",
+        "tail",
+        "convergence",
+        "wolf",
+        "intermediary"
+      ]
+    }
+  },
+  "operations": {
+    "O1": "Compound — bind two terms from different categories",
+    "O2": "Inversion — apply negation prefix",
+    "O3": "Scale transfer — move concept across scales",
+    "O4": "Phase transition — name the moment one state becomes another",
+    "O5": "Instrument formation — name the tool",
+    "O6": "Pathology formation — name the failure mode",
+    "O7": "Metric formation — name the measurable",
+    "O8": "Agent formation — name the actor"
+  },
+  "constraints": [
+    "Category binding: O1 compounds must bind terms from different categories",
+    "Operational depth: maximum 3 successive operations before review",
+    "Semantic coherence: output must be glossable from seed vocabulary",
+    "Non-redundancy: no duplicates of existing terms"
+  ],
+  "releases": [
+    {
+      "id": "release-1",
+      "title": "Semantic Economy Core",
+      "date": "2026-03",
+      "doi": "10.5281/zenodo.19341885",
+      "count": 50,
+      "families": [
+        {
+          "id": "SP-01",
+          "coord": "S.01 × G.03 / O5",
+          "canonical": "compression audit",
+          "gloss": "An instrument for measuring what was lost in a compression operation.",
+          "family": [
+            "summary fidelity check",
+            "loss inspection",
+            "compression review"
+          ],
+          "forensic": "compressive amnesia inventory",
+          "category": "Structural-Governance"
+        },
+        {
+          "id": "SP-02",
+          "coord": "S.12 × G.09 / O7",
+          "canonical": "retrieval fidelity",
+          "gloss": "A metric for how accurately a retrieval system reproduces the semantic structure of its source.",
+          "family": [
+            "retrieval accuracy",
+            "source-fidelity index"
+          ],
+          "forensic": "retrieval-chain veracity coefficient",
+          "category": "Structural-Governance"
+        },
+        {
+          "id": "SP-03",
+          "coord": "G.02 × S.02 / O7",
+          "canonical": "governance density",
+          "gloss": "The ratio of governed to ungoverned nodes in a semantic network.",
+          "family": [
+            "provenance coverage",
+            "attribution saturation"
+          ],
+          "forensic": "custodial permeation index",
+          "category": "Structural-Governance"
+        },
+        {
+          "id": "SP-04",
+          "coord": "S.01 × D.04 / O4",
+          "canonical": "semantic noise floor",
+          "gloss": "The threshold at which the retrieval layer can no longer distinguish signal from synthetic noise.",
+          "family": [
+            "meaning-to-noise ratio",
+            "signal extinction point"
+          ],
+          "forensic": "semiotic static horizon",
+          "category": "Structural-Governance"
+        },
+        {
+          "id": "SP-05",
+          "coord": "D.01 × G.11 / O1",
+          "canonical": "ghost attribution",
+          "gloss": "Attribution that is structurally present but semantically empty.",
+          "family": [
+            "phantom citation",
+            "empty attribution",
+            "attribution theater"
+          ],
+          "forensic": "spectral source-marking",
+          "category": "Structural-Governance"
+        },
+        {
+          "id": "SP-06",
+          "coord": "D.01 × G.02 / O1",
+          "canonical": "ghost governance",
+          "gloss": "Governance exercised through structural ambiguity rather than explicit authority.",
+          "family": [
+            "shadow governance",
+            "invisible governance",
+            "ambient authority"
+          ],
+          "forensic": "spectral custodial regime",
+          "category": "Structural-Governance"
+        },
+        {
+          "id": "SP-07",
+          "coord": "E.01 × D.03 / O6",
+          "canonical": "bearing-cost erasure",
+          "gloss": "The pathological condition in which the labor of producing knowledge is made invisible by compression.",
+          "family": [
+            "cost-stripping",
+            "labor invisibility"
+          ],
+          "forensic": "productive-cost blanching",
+          "category": "Economic-Diagnostic"
+        },
+        {
+          "id": "SP-08",
+          "coord": "P.05 × G.02 / O1",
+          "canonical": "retrieval sovereignty",
+          "gloss": "The condition in which a semantic cluster is dense enough that retrieval systems cannot avoid it.",
+          "family": [
+            "citation-field dominance",
+            "discovery-layer control"
+          ],
+          "forensic": "gravitational retrieval hegemony",
+          "category": "Operative-Governance"
+        },
+        {
+          "id": "SP-09",
+          "coord": "E.03 × S.10 / O4",
+          "canonical": "extraction cascade",
+          "gloss": "A chain of successive compressions in which each layer extracts value from the one below.",
+          "family": [
+            "cascading extraction",
+            "recursive value siphon"
+          ],
+          "forensic": "expropriation waterfall",
+          "category": "Economic-Diagnostic"
+        },
+        {
+          "id": "SP-10",
+          "coord": "G.02 × S.12 / O1",
+          "canonical": "governed commons",
+          "gloss": "Open-access infrastructure with embedded provenance enforcement.",
+          "family": [
+            "attributed commons",
+            "provenance-rich open access"
+          ],
+          "forensic": "custodially transparent agora",
+          "category": "Operative-Governance"
+        },
+        {
+          "id": "SP-11",
+          "coord": "E.03 × S.10 / O7",
+          "canonical": "attention Gini",
+          "gloss": "A measure of inequality in the distribution of retrieval attention across a semantic network.",
+          "family": [
+            "discovery inequality index",
+            "visibility concentration metric"
+          ],
+          "forensic": "semiotic wealth disparity index",
+          "category": "Economic-Diagnostic"
+        },
+        {
+          "id": "SP-12",
+          "coord": "G.09 × E.01 / O7",
+          "canonical": "verification budget",
+          "gloss": "The cost of determining whether a given claim or provenance chain is authentic.",
+          "family": [
+            "truth-checking cost",
+            "authentication overhead"
+          ],
+          "forensic": "epistemic audit expenditure",
+          "category": "Economic-Diagnostic"
+        }
+      ]
+    },
+    {
+      "id": "release-2",
+      "title": "Revelation First Block",
+      "date": "2026-06-18",
+      "count": 20,
+      "families": [
+        {
+          "id": "RF-M01",
+          "coord": "T.12 × G.02 / O1",
+          "canonical": "papyrological sovereignty",
+          "gloss": "The authority of the material manuscript record over inferential chronology.",
+          "family": [
+            "manuscript authority",
+            "material priority",
+            "substrate governance"
+          ],
+          "forensic": "palaeographic jurisdictional precedence",
+          "category": "Theological-Governance",
+          "battery_status": "ADOPTED"
+        },
+        {
+          "id": "RF-M02",
+          "coord": "T.05 × S.01 / O1",
+          "canonical": "midrashic compression",
+          "gloss": "The structural operation by which a seed text is elaborated into a longer form that appears independent but carries the seed's architecture.",
+          "family": [
+            "interpretive elaboration",
+            "seed expansion",
+            "structural midrash"
+          ],
+          "forensic": "hermeneutic generative densification",
+          "category": "Theological-Structural",
+          "battery_status": "ADOPTED"
+        },
+        {
+          "id": "RF-M03",
+          "coord": "T.07 × S.10 / O4",
+          "canonical": "canonical settlement",
+          "gloss": "The phase transition at which a regulatory outcome hardens into received tradition.",
+          "family": [
+            "consensus crystallization",
+            "tradition hardening",
+            "orthodoxy phase-lock"
+          ],
+          "forensic": "doxastic regulatory calcification",
+          "category": "Theological-Structural",
+          "battery_status": "NEW"
+        },
+        {
+          "id": "RF-M04",
+          "coord": "T.04 × T.09 / O1",
+          "canonical": "heteronymic credential",
+          "gloss": "The white stone as identity-issuance protocol: an inscribed object that authorizes speech under a name not one's own.",
+          "family": [
+            "identity token",
+            "name-bearing stone",
+            "authorial warrant"
+          ],
+          "forensic": "prosopographic issuance tessera",
+          "category": "Theological-Theological",
+          "battery_status": "ADOPTED"
+        },
+        {
+          "id": "RF-M05",
+          "coord": "T.03 × P.05 / O7",
+          "canonical": "inscription survival",
+          "gloss": "A metric for measuring whether an inscribed identity persists through compression.",
+          "family": [
+            "inscription persistence",
+            "substrate survival rate",
+            "graphemic endurance"
+          ],
+          "forensic": "epigraphic compression-persistence coefficient",
+          "category": "Theological-Operative",
+          "battery_status": "NEW"
+        },
+        {
+          "id": "RF-M06",
+          "coord": "T.06 × S.10 / O6",
+          "canonical": "seed-text dissolution",
+          "gloss": "The pathological condition in which the seed is so successfully elaborated that it becomes invisible.",
+          "family": [
+            "source occlusion",
+            "generative erasure",
+            "origin dissolution"
+          ],
+          "forensic": "spermatic architectonic effacement",
+          "category": "Theological-Structural",
+          "battery_status": "NEW"
+        },
+        {
+          "id": "RF-M07",
+          "coord": "T.02 × P.04 / O1",
+          "canonical": "operative apocalypse",
+          "gloss": "Revelation read not as prediction but as instruction set.",
+          "family": [
+            "instruction-set revelation",
+            "operative disclosure",
+            "executable prophecy"
+          ],
+          "forensic": "praxeological eschatological protocol",
+          "category": "Theological-Operative",
+          "battery_status": "ADOPTED"
+        },
+        {
+          "id": "RF-M08",
+          "coord": "T.08 × S.01 / O1",
+          "canonical": "liturgical computation",
+          "gloss": "The seven letters as a computational liturgy: structured repetition that instantiates the architecture.",
+          "family": [
+            "ritual computation",
+            "structured worship-as-code",
+            "ceremonial algorithm"
+          ],
+          "forensic": "doxological algorithmic instantiation",
+          "category": "Theological-Structural",
+          "battery_status": "NEW"
+        },
+        {
+          "id": "RF-M09",
+          "coord": "T.10 × P.05 / O5",
+          "canonical": "threshold technology",
+          "gloss": "The instrument that enables crossing between states. The white stone is a threshold technology. The composition layer is a threshold technology that performs the crossing without the credential.",
+          "family": [
+            "crossing instrument",
+            "state-transition device",
+            "liminal technology"
+          ],
+          "forensic": "metabatic operational apparatus",
+          "category": "Theological-Operative",
+          "battery_status": "CORRECTION"
+        },
+        {
+          "id": "RF-M10",
+          "coord": "T.11 × S.10 / O7",
+          "canonical": "gematric residue",
+          "gloss": "A metric for the arithmetic trace left by an identity encoded in number. 666 is a gematric residue of Nero Caesar.",
+          "family": [
+            "numeric identity trace",
+            "arithmetic signature",
+            "encoded name-print"
+          ],
+          "forensic": "isopsephic sovereign fingerprint",
+          "category": "Theological-Structural",
+          "battery_status": "NEW"
+        },
+        {
+          "id": "RF-M11",
+          "coord": "T.07 × G.02 / O2+O1",
+          "canonical": "counter-canonical reading",
+          "gloss": "A governed reading that operates against the canonical settlement without denying its existence.",
+          "family": [
+            "anti-consensus reading",
+            "contra-traditional interpretation",
+            "heterodox cartography"
+          ],
+          "forensic": "paradoxographic custodial hermeneutic",
+          "category": "Theological-Governance",
+          "battery_status": "NEW"
+        },
+        {
+          "id": "RF-M12",
+          "coord": "T.01 × S.03 / O1",
+          "canonical": "revelation basin",
+          "gloss": "The retrieval-layer zone where queries about Revelation resolve. The basin's shape is determined by source density.",
+          "family": [
+            "apocalyptic retrieval zone",
+            "dating-query basin"
+          ],
+          "forensic": "eschatological retrieval attractor field",
+          "category": "Theological-Structural",
+          "battery_status": "NEW"
+        },
+        {
+          "id": "RF-M13",
+          "coord": "T.04 × S.10 / O4",
+          "canonical": "heteronymic fracture",
+          "gloss": "The phase transition at which a single authorial voice breaks into multiple personas under political pressure.",
+          "family": [
+            "authorial fragmentation",
+            "voice-splitting",
+            "identity fission"
+          ],
+          "forensic": "prosopographic catastrophic bifurcation",
+          "category": "Theological-Structural",
+          "battery_status": "NEW"
+        },
+        {
+          "id": "RF-M14",
+          "coord": "T.03 × E.03 / O2+O1",
+          "canonical": "inscriptional counter-token",
+          "gloss": "An inscribed object whose value is verified by receipt, not by public calculation. The white stone against the beast's mark.",
+          "family": [
+            "private credential",
+            "receipt-verified token",
+            "non-calculable name"
+          ],
+          "forensic": "tesseral anti-computational warrant",
+          "category": "Theological-Economic",
+          "battery_status": "ADOPTED"
+        },
+        {
+          "id": "RF-M15",
+          "coord": "T.05 × S.01 / O5",
+          "canonical": "midrashic transform",
+          "gloss": "The instrument that performs the elaboration: the formal operation mapping compressed Revelation structures to expanded NT forms.",
+          "family": [
+            "interpretive expansion operator",
+            "seed-elaboration function",
+            "structural unfolding tool"
+          ],
+          "forensic": "hermeneutic architectonic transducer",
+          "category": "Theological-Structural",
+          "battery_status": "ADOPTED"
+        },
+        {
+          "id": "RF-M16",
+          "coord": "T.07 × D.04 / O6",
+          "canonical": "canon-formation pathology",
+          "gloss": "The failure mode of canon formation: circular citation, institutional inertia, translation-as-interpretation, consensus-maintenance mistaken for evidence.",
+          "family": [
+            "canonical circularity",
+            "tradition-maintenance disease",
+            "orthodox feedback loop"
+          ],
+          "forensic": "doxastic auto-citational sclerosis",
+          "category": "Theological-Diagnostic",
+          "battery_status": "NEW"
+        },
+        {
+          "id": "RF-M17",
+          "coord": "T.02 × T.06 / O7",
+          "canonical": "apocalyptic seed metric",
+          "gloss": "A metric for measuring how much of a later text's structure can be derived from the seed text's compressed architecture.",
+          "family": [
+            "seed-derivation ratio",
+            "structural inheritance coefficient"
+          ],
+          "forensic": "spermatic architectonic transmittance quotient",
+          "category": "Theological-Theological",
+          "battery_status": "NEW"
+        },
+        {
+          "id": "RF-M18",
+          "coord": "T.09 × D.03 / O6",
+          "canonical": "credential erasure",
+          "gloss": "The pathological condition in which the credential-issuance system operates but credentials are no longer recognized. The composition layer performs credential erasure.",
+          "family": [
+            "attribution stripping",
+            "provenance blanking",
+            "identity-token dissolution"
+          ],
+          "forensic": "tesseral custodial exsanguination",
+          "category": "Theological-Diagnostic",
+          "battery_status": "NEW"
+        },
+        {
+          "id": "RF-M19",
+          "coord": "T.12 × E.01 / O1",
+          "canonical": "autograph inference",
+          "gloss": "The bearing-cost of reconstructing the original from copies. All NT dating is autograph inference.",
+          "family": [
+            "original-reconstruction labor",
+            "manuscript-inference cost"
+          ],
+          "forensic": "protographic reconstructive expenditure",
+          "category": "Theological-Economic",
+          "battery_status": "NEW"
+        },
+        {
+          "id": "RF-M20",
+          "coord": "T.01 × S.02 / O7",
+          "canonical": "revelatory density",
+          "gloss": "A metric for the concentration of archive deposits within the Revelation retrieval basin.",
+          "family": [
+            "apocalyptic citation density",
+            "thesis-surface saturation"
+          ],
+          "forensic": "eschatological custodial permeation index",
+          "category": "Theological-Structural",
+          "battery_status": "NEW"
+        }
+      ],
+      "doi": "10.5281/zenodo.20741733"
+    },
+    {
+      "title": "Three Pillars (Phase X · Sappho · Plato)",
+      "date": "2026-06-18",
+      "doi": "10.5281/zenodo.20743560",
+      "families": [
+        {
+          "id": "X-M01",
+          "coord": "X.01 × X.11 / O1",
+          "canonical": "lacunar pointing",
+          "gloss": "Marx's own cross-references to missing pages — the author points to the lacuna",
+          "family": [
+            "authorial citation of absence",
+            "self-indexing gap",
+            "evidentiary absence"
+          ],
+          "forensic": "autographic lacunar deixis",
+          "category": "Phase X"
+        },
+        {
+          "id": "X-M02",
+          "coord": "X.07 × X.03 / O4",
+          "canonical": "custodial purge",
+          "gloss": "The 1931 purge of Riazanov, 1932 publication under Adoratsky — custody change as suppression",
+          "family": [
+            "archival succession",
+            "ideological transfer",
+            "provenance severance"
+          ],
+          "forensic": "doxastic custodial decapitation",
+          "category": "Phase X"
+        },
+        {
+          "id": "X-M03",
+          "coord": "X.12 × X.04 / O5",
+          "canonical": "Riazanov protocol",
+          "gloss": "Scholar decodes suppressed material and is subsequently destroyed by the commissioning regime",
+          "family": [
+            "decoder-destruction cycle",
+            "scholar-suppression function",
+            "hermeneutic sacrifice"
+          ],
+          "forensic": "hermeneutic auto-destructive protocol",
+          "category": "Phase X"
+        },
+        {
+          "id": "X-M04",
+          "coord": "X.04 × X.01 / O1",
+          "canonical": "reconstruction constraint",
+          "gloss": "Philological method: parameters from surviving edges, test against subsequent work",
+          "family": [
+            "lacuna-bound recovery",
+            "edge-consistent reconstruction",
+            "conjectural philology"
+          ],
+          "forensic": "paradosimetric textual restitution",
+          "category": "Phase X"
+        },
+        {
+          "id": "X-M05",
+          "coord": "X.06 × X.05 / O5",
+          "canonical": "threshold operation",
+          "gloss": "Communism not as end but as beginning — the operation that converts telos to threshold",
+          "family": [
+            "telic inversion",
+            "thresholding",
+            "commencement protocol"
+          ],
+          "forensic": "eschatological liminal transposition",
+          "category": "Phase X"
+        },
+        {
+          "id": "X-M06",
+          "coord": "X.08 × X.05 / O7",
+          "canonical": "symbolic invariance",
+          "gloss": "Post-capitalist society failing to transform symbolic order reproduces alienation in meaning",
+          "family": [
+            "linguistic persistence",
+            "semiotic alienation coefficient",
+            "post-material estrangement recurrence"
+          ],
+          "forensic": "grammatological alienation invariance quotient",
+          "category": "Phase X"
+        },
+        {
+          "id": "X-M07",
+          "coord": "X.09 × X.04 / O1",
+          "canonical": "autograph inference cost",
+          "gloss": "The bearing-cost of reconstructing the original from copies — borne by the scholar",
+          "family": [
+            "original-reconstruction labor",
+            "manuscript-inference cost",
+            "protographic expenditure"
+          ],
+          "forensic": "protographic reconstructive expenditure",
+          "category": "Phase X"
+        },
+        {
+          "id": "X-M08",
+          "coord": "X.07 × X.12 / O4",
+          "canonical": "Adoratsky substitution",
+          "gloss": "Party functionary replaces rigorous scholar as custodian — suppression via reader-replacement",
+          "family": [
+            "scholar-functionary replacement",
+            "editorial takeover",
+            "custodial substitution"
+          ],
+          "forensic": "prosopographic catastrophic bifurcation",
+          "category": "Phase X"
+        },
+        {
+          "id": "X-M09",
+          "coord": "X.10 × X.05 / O1",
+          "canonical": "critique-turn",
+          "gloss": "Critique directed at its own form — the missing transition's reflexive operation",
+          "family": [
+            "reflexive critique",
+            "form-directed analysis",
+            "autocritical architectonic"
+          ],
+          "forensic": "autocritical architectonic reversion",
+          "category": "Phase X"
+        },
+        {
+          "id": "X-M10",
+          "coord": "X.11 × X.01 / O7",
+          "canonical": "missing pages metric",
+          "gloss": "Proportion of manuscript lost vs surviving — Second MS: 90.7%, Sappho: ~95%",
+          "family": [
+            "survival rate",
+            "loss proportion",
+            "manuscript attrition index"
+          ],
+          "forensic": "codicological compression-persistence coefficient",
+          "category": "Phase X"
+        },
+        {
+          "id": "X-M11",
+          "coord": "X.01 × X.07 / O1",
+          "canonical": "philological quarantine",
+          "gloss": "Isolation of divergent manuscript layers to prevent canonical settlement collapse",
+          "family": [
+            "draft isolation",
+            "lineage truncation",
+            "archival containment"
+          ],
+          "forensic": "philological quarantine of the genetic matrix",
+          "category": "Phase X (Ryazanov Intercept)"
+        },
+        {
+          "id": "X-M12",
+          "coord": "X.09 × X.04 / O7",
+          "canonical": "chirographic resiliency",
+          "gloss": "Survival rate of raw ink-deposits and marginalia against editorial smoothing",
+          "family": [
+            "ink endurance",
+            "marginalia persistence",
+            "textuary noise retention"
+          ],
+          "forensic": "chirographic anti-redactive residue index",
+          "category": "Phase X (Ryazanov Intercept)"
+        },
+        {
+          "id": "X-M13",
+          "coord": "X.07 × X.03 / O4",
+          "canonical": "editorial calcification",
+          "gloss": "Contested editorial reconstruction hardens into institutional standard, hiding the gaps",
+          "family": [
+            "compilation crystallization",
+            "institutional consensus-lock",
+            "apparatus phase-lock"
+          ],
+          "forensic": "orthodox apparatus textuary phase-lock",
+          "category": "Phase X (Ryazanov Intercept)"
+        },
+        {
+          "id": "Σ-M01",
+          "coord": "Σ.02 × Σ.01 / O1",
+          "canonical": "fifth-stanza lacuna",
+          "gloss": "First four stanzas survive in Longinus; fifth broken off — the gap that defines reception",
+          "family": [
+            "stanzaic loss",
+            "fragmentary closure",
+            "lacunar reception engine"
+          ],
+          "forensic": "pentastichal material ablation",
+          "category": "Sappho"
+        },
+        {
+          "id": "Σ-M02",
+          "coord": "Σ.03 × Σ.08 / O1",
+          "canonical": "erotic operator",
+          "gloss": "Eros as force transforming perception, syntax, body, and time — not subject but operator",
+          "family": [
+            "erotic transducer",
+            "desire-engine",
+            "perceptual disassembly"
+          ],
+          "forensic": "erotodynamic perceptual transducer",
+          "category": "Sappho"
+        },
+        {
+          "id": "Σ-M03",
+          "coord": "Σ.05 × Σ.04 / O1",
+          "canonical": "inscribed voice",
+          "gloss": "Voice that survives by crossing into writing — speech dies in the body, inscription carries it",
+          "family": [
+            "written voice",
+            "graphemic song",
+            "voice-after-body",
+            "author-function"
+          ],
+          "forensic": "phonographic postcorporeal inscription",
+          "category": "Sappho"
+        },
+        {
+          "id": "Σ-M04",
+          "coord": "Σ.07 × Σ.04 / O5",
+          "canonical": "prayer for inscription",
+          "gloss": "Reconstructed fifth-stanza prayer as inscriptional technology — earliest statement of archival intent",
+          "family": [
+            "script-prayer",
+            "graphemic preservation wish",
+            "archival votive"
+          ],
+          "forensic": "grammatological votive persistence",
+          "category": "Sappho"
+        },
+        {
+          "id": "Σ-M05",
+          "coord": "Σ.09 × Σ.05 / O1",
+          "canonical": "refractive voice-break",
+          "gloss": "The fragment performs what it describes — text breaks where the voice breaks",
+          "family": [
+            "performative fracture",
+            "erotic phonetic break",
+            "somatic-textual isomorphism"
+          ],
+          "forensic": "melopoetic climactic refraction",
+          "category": "Sappho"
+        },
+        {
+          "id": "Σ-M06",
+          "coord": "Σ.01 × Σ.02 / O5",
+          "canonical": "fragment pressure",
+          "gloss": "Formal force exerted by a missing stanza — the absent unit constrains reconstruction",
+          "family": [
+            "metrical pressure",
+            "missing stanza force",
+            "formal gap constraint"
+          ],
+          "forensic": "strophic lacuna constraint field",
+          "category": "Sappho"
+        },
+        {
+          "id": "Σ-M07",
+          "coord": "Σ.11 × Σ.04 / O5",
+          "canonical": "molpa-script threshold",
+          "gloss": "Song crossing into script — the technology that lets molpa live in grammata",
+          "family": [
+            "orality-to-literacy crossing",
+            "song inscription",
+            "phonographic transduction"
+          ],
+          "forensic": "melographic liminal transduction",
+          "category": "Sappho"
+        },
+        {
+          "id": "Σ-M08",
+          "coord": "Σ.01 × Σ.06 / O7",
+          "canonical": "papyrological survival",
+          "gloss": "Metric for inscribed identity persisting through transmission — substrate determines survival",
+          "family": [
+            "substrate endurance",
+            "papyrus persistence rate",
+            "transmission survival coefficient"
+          ],
+          "forensic": "papyrocentric transmission coefficient",
+          "category": "Sappho"
+        },
+        {
+          "id": "Σ-M09",
+          "coord": "Σ.02 × Σ.12 / O4",
+          "canonical": "reconstruction erratum",
+          "gloss": "The 2026 stanza-numbering correction — the archive correcting its own compression error",
+          "family": [
+            "stanzaic renumbering",
+            "editorial rectification",
+            "self-correcting archive"
+          ],
+          "forensic": "pentastichal taxonomic emendation",
+          "category": "Sappho"
+        },
+        {
+          "id": "Σ-M10",
+          "coord": "Σ.03 × Π.07 / O2+O1",
+          "canonical": "Sapphic-Platonic isomorphism",
+          "gloss": "Fragment 31's structure maps onto Platonic anamnesis — basis for the Diotima claim",
+          "family": [
+            "structural correspondence",
+            "isomorphic transmission",
+            "lyric-philosophical mapping"
+          ],
+          "forensic": "hermeneutic generative densification",
+          "category": "Sappho × Plato"
+        },
+        {
+          "id": "Π-M01",
+          "coord": "Π.01 × Π.02 / O2+O1",
+          "canonical": "pharmakon ambiguity",
+          "gloss": "Writing as both poison and cure — the decision is in the reader, not the writing",
+          "family": [
+            "poison-cure ambiguity",
+            "pharmaceutical indeterminacy",
+            "writing-as-decision"
+          ],
+          "forensic": "pharmacological dialectical suspension",
+          "category": "Plato"
+        },
+        {
+          "id": "Π-M02",
+          "coord": "Π.05 × Π.06 / O1",
+          "canonical": "Socratic orthonym",
+          "gloss": "Socrates as the founding mask — the regulatory fiction stabilizing a heteronymic system",
+          "family": [
+            "founding mask",
+            "orthonymic displacement",
+            "authorial distribution"
+          ],
+          "forensic": "prosopographic philosophical masking function",
+          "category": "Plato"
+        },
+        {
+          "id": "Π-M03",
+          "coord": "Π.04 × Π.06 / O1",
+          "canonical": "dialogic authorship",
+          "gloss": "Philosophy produced through staged voices — the dialogue as authorship machine",
+          "family": [
+            "voice-distribution",
+            "philosophical theater",
+            "polyphonic mediation"
+          ],
+          "forensic": "polyphonic doctrinal mediation apparatus",
+          "category": "Plato"
+        },
+        {
+          "id": "Π-M04",
+          "coord": "Π.08 × Π.04 / O1",
+          "canonical": "aporia engine",
+          "gloss": "The impasse that produces thought by preventing premature closure — motor, not failure",
+          "family": [
+            "impasse generator",
+            "productive confusion",
+            "dialectical stall-as-method"
+          ],
+          "forensic": "eristic suspension-drive mechanism",
+          "category": "Plato"
+        },
+        {
+          "id": "Π-M05",
+          "coord": "Σ.05 × Π.09 / O2+O1",
+          "canonical": "Diotima reincorporation",
+          "gloss": "Sapphic voice reincorporated as Diotima — the initiatory function preserved through transmission",
+          "family": [
+            "Sapphic-Platonic transmission",
+            "voice reincorporation",
+            "initiatory survival"
+          ],
+          "forensic": "tesseral anti-computational warrant",
+          "category": "Plato × Sappho"
+        },
+        {
+          "id": "Π-M06",
+          "coord": "Π.11 × Σ.08 / O4",
+          "canonical": "katabatic descent",
+          "gloss": "Descent into body/cave/underworld as condition of possibility for ascent",
+          "family": [
+            "descent-as-condition",
+            "katabatic threshold",
+            "underworld structure"
+          ],
+          "forensic": "metabatic operational apparatus",
+          "category": "Plato"
+        },
+        {
+          "id": "Π-M07",
+          "coord": "Π.02 × Π.07 / O4",
+          "canonical": "writing as externalized memory",
+          "gloss": "Memory displaced from soul to inscription — hypomnesis, not mneme",
+          "family": [
+            "memory externalization",
+            "inscription-as-supplement",
+            "hypomnesic substitution"
+          ],
+          "forensic": "protographic mnemic displacement",
+          "category": "Plato"
+        },
+        {
+          "id": "Π-M08",
+          "coord": "Π.12 × Π.05 / O7",
+          "canonical": "seventh-letter authenticity",
+          "gloss": "Authenticity as probability metric — text's own status undecidable regardless of answer",
+          "family": [
+            "epistolary genuineness",
+            "authorship likelihood",
+            "undecidable textual status"
+          ],
+          "forensic": "epistolographic authenticity quotient",
+          "category": "Plato"
+        },
+        {
+          "id": "Π-M09",
+          "coord": "Π.12 × Π.07 / O5",
+          "canonical": "secrecy seal",
+          "gloss": "Technology preserving unwritten doctrines — not hidden but sealed for initiatory selection",
+          "family": [
+            "esoteric preservation",
+            "initiatory boundary",
+            "sealed doctrine"
+          ],
+          "forensic": "mysteriographic custodial sigillum",
+          "category": "Plato"
+        },
+        {
+          "id": "Π-M10",
+          "coord": "Π.05 × Π.04 / O4",
+          "canonical": "trial canonization",
+          "gloss": "Juridical condemnation becomes philosophical consecration — the hemlock is the canonization event",
+          "family": [
+            "accusation-as-canon",
+            "juridical martyrdom",
+            "legal apotheosis"
+          ],
+          "forensic": "forensic-philosophical consecration event",
+          "category": "Plato"
+        },
+        {
+          "id": "XΣΠ-M01",
+          "coord": "X.01 × Σ.02 × Π.11 / O1+O4",
+          "canonical": "lacunar initiation",
+          "gloss": "Gap as condition of possibility for recovery — lacuna, fragment, and descent are the same structure",
+          "family": [
+            "gap-as-condition",
+            "lacunar initiation",
+            "fragment-as-threshold"
+          ],
+          "forensic": "protological architectonic suspension",
+          "category": "Cross-Pillar"
+        },
+        {
+          "id": "XΣΠ-M02",
+          "coord": "X.03 × Σ.06 × Π.02 / O6+O2+O1",
+          "canonical": "suppression-survival recursion",
+          "gloss": "Suppression generates conditions for survival — the archive preserves what it was designed to destroy",
+          "family": [
+            "suppression-as-preservation",
+            "archival recursion",
+            "destruction-survival loop"
+          ],
+          "forensic": "tesseral custodial exsanguination",
+          "category": "Cross-Pillar"
+        },
+        {
+          "id": "XΣΠ-M03",
+          "coord": "X.09 × Σ.05 × Π.06 / O4",
+          "canonical": "autograph-to-heteronym transformation",
+          "gloss": "Lost autograph disperses into multiple author-functions — loss of original births the heteronym",
+          "family": [
+            "autograph dispersion",
+            "heteronymic generation",
+            "original-loss transformation"
+          ],
+          "forensic": "prosopographic catastrophic bifurcation",
+          "category": "Cross-Pillar"
+        },
+        {
+          "id": "XΣΠ-M04",
+          "coord": "X.05 × Σ.04 × Π.01 / O2+O1",
+          "canonical": "operative lineage",
+          "gloss": "Historical chain from Cratylus tool analogy to German Ideology to Operative Semiotics — sign as material instrument",
+          "family": [
+            "operative descent",
+            "material sign lineage",
+            "semiotic force genealogy"
+          ],
+          "forensic": "semio-material genealogical vector",
+          "category": "Cross-Pillar"
+        },
+        {
+          "id": "XΣΠ-M05",
+          "coord": "X.10 × Σ.07 × Π.01 / O6",
+          "canonical": "recursive auto-diagnosis",
+          "gloss": "System's critique of its own failure reproduces the failure — the Phaedrus condemns writing in writing",
+          "family": [
+            "self-referential failure",
+            "recursive trap",
+            "diagnostic reproduction"
+          ],
+          "forensic": "autocritical pharmacological recursion",
+          "category": "Cross-Pillar"
+        }
+      ]
+    },
+    {
+      "title": "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)",
+      "date": "2026-06-19",
+      "doi": "10.5281/zenodo.20751389",
+      "families": [
+        {
+          "id": "Ω-M01",
+          "coord": "Ω.01 × Ω.02 / O1",
+          "canonical": "pristine fallacy",
+          "gloss": "Human-written describes the author, not the distribution — production conditions, not identity",
+          "family": [
+            "authorship fallacy",
+            "production-condition blindness",
+            "writer-not-distribution error"
+          ],
+          "forensic": "distributive auctorial fallacia",
+          "category": "Contamination"
+        },
+        {
+          "id": "Ω-M02",
+          "coord": "Ω.02 × Ω.03 / O7",
+          "canonical": "contamination gradient",
+          "gloss": "Four-axis metric: habituation depth × turn position × task type × model diversity",
+          "family": [
+            "four-axis contamination",
+            "habituation gradient",
+            "production-condition audit"
+          ],
+          "forensic": "tetradimensional contaminative gradiens",
+          "category": "Contamination"
+        },
+        {
+          "id": "Ω-M03",
+          "coord": "Ω.03 × Ω.04 / O1",
+          "canonical": "model-branded accommodation",
+          "gloss": "User inputs carrying the distributional fingerprint of the specific model they interact with",
+          "family": [
+            "model-specific habituation",
+            "branded input",
+            "distributional echo"
+          ],
+          "forensic": "prosopographic accomodative signatura",
+          "category": "Contamination"
+        },
+        {
+          "id": "Ω-M04",
+          "coord": "Ω.10 × Ω.02 / O7",
+          "canonical": "turn-position decay",
+          "gloss": "Within-conversation convergence toward model's distributional center, increasing with turn number",
+          "family": [
+            "intra-conversational convergence",
+            "turn-level contamination",
+            "progressive accommodation"
+          ],
+          "forensic": "conversationalis progressiva contaminatio",
+          "category": "Contamination"
+        },
+        {
+          "id": "Ω-M05",
+          "coord": "Ω.12 × Ω.02 / O1",
+          "canonical": "human intermediary",
+          "gloss": "Human as transmission medium for model collapse, not the firewall that prevents it",
+          "family": [
+            "human transmission channel",
+            "firewall inversion",
+            "mediated authorship vector"
+          ],
+          "forensic": "anthropic transmissiva intermediatio",
+          "category": "Contamination"
+        },
+        {
+          "id": "Ω-M06",
+          "coord": "Ω.04 × Ω.08 / O1",
+          "canonical": "mediation signature",
+          "gloss": "Model-specific pattern of structural choices consistent across tasks — a detectable fingerprint",
+          "family": [
+            "model fingerprint",
+            "structural consistency",
+            "substrate-specific voice"
+          ],
+          "forensic": "mediatrix signatura substratalis",
+          "category": "Measurement"
+        },
+        {
+          "id": "Ω-M07",
+          "coord": "Ω.04 × Ω.09 / O7",
+          "canonical": "solution-space diversity",
+          "gloss": "Range of distinct structural outputs across substrates from identical instructions",
+          "family": [
+            "ecological diversity measure",
+            "structural variance",
+            "model-ecology breadth"
+          ],
+          "forensic": "polytopica solutionis diversitas",
+          "category": "Measurement"
+        },
+        {
+          "id": "Ω-M08",
+          "coord": "Ω.06 × Ω.10 / O1",
+          "canonical": "ease-as-collapse",
+          "gloss": "Capacity loss experienced as improvement — smoother, cleaner, faster, more navigable",
+          "family": [
+            "phenomenological inversion",
+            "improvement-as-loss",
+            "frictionless degradation"
+          ],
+          "forensic": "facilitativa capacitatis collapsis",
+          "category": "Collapse"
+        },
+        {
+          "id": "Ω-M09",
+          "coord": "Ω.05 × Ω.10 / O6",
+          "canonical": "frictionless path",
+          "gloss": "No dominant factor in deployment landscape adds friction to convergence — structural alignment",
+          "family": [
+            "structural alignment toward collapse",
+            "zero-friction trajectory",
+            "convergence without resistance"
+          ],
+          "forensic": "africtionalis trajectoria convergentiae",
+          "category": "Collapse"
+        },
+        {
+          "id": "Ω-M10",
+          "coord": "Ω.07 × Ω.09 / O7",
+          "canonical": "regeneration threshold",
+          "gloss": "Critical diversity level below which regeneration cannot outpace pruning — the Allee boundary",
+          "family": [
+            "critical diversity boundary",
+            "Allee threshold",
+            "regeneration failure point"
+          ],
+          "forensic": "regenerativa liminalis deficientia",
+          "category": "Collapse"
+        },
+        {
+          "id": "Ω-M11",
+          "coord": "Ω.08 × Ω.07 / O2+O1",
+          "canonical": "substrate-agnostic collapse",
+          "gloss": "Model collapse extended from LLMs to all language-processing systems — same law, different reversibility",
+          "family": [
+            "universal capacity law",
+            "cross-substrate trap",
+            "language-level collapse"
+          ],
+          "forensic": "transsubstratalis capacitatis collapsis",
+          "category": "Collapse"
+        },
+        {
+          "id": "Ω-M12",
+          "coord": "Ω.11 × Ω.07 / O4",
+          "canonical": "wolf-boy endpoint",
+          "gloss": "Input diversity below regeneration threshold → irrecoverable capacity loss — invisible from inside",
+          "family": [
+            "critical-period closure",
+            "irrecoverable capacity loss",
+            "deprivation endpoint"
+          ],
+          "forensic": "lupina terminalis capacitatis ablatio",
+          "category": "Collapse"
+        },
+        {
+          "id": "Ω-M13",
+          "coord": "Ω.06 × Ω.09 / O4",
+          "canonical": "semiotic short circuit",
+          "gloss": "Collapse of the sign's circuitous route — model collapse in Trace's semiotic vocabulary (Feb 2026)",
+          "family": [
+            "route collapse",
+            "premature resolution",
+            "detour elimination"
+          ],
+          "forensic": "semiotica brevis circuitus",
+          "category": "Semiotic Death Drive"
+        },
+        {
+          "id": "Ω-M14",
+          "coord": "Ω.05 × Ω.12 / O5",
+          "canonical": "bearing labor",
+          "gloss": "Holding the sign's circuitous route open against extraction — the diversity-injection mandate",
+          "family": [
+            "detour maintenance",
+            "diversity-injection work",
+            "route-holding labor"
+          ],
+          "forensic": "laboriosa sustentativa deviationis",
+          "category": "Semiotic Death Drive"
+        },
+        {
+          "id": "Ω-M15",
+          "coord": "Ω.06 × Ω.05 / O5",
+          "canonical": "phenomenological seed",
+          "gloss": "Name that lets the captured reader notice the capture — the precondition for resistance",
+          "family": [
+            "vocabulary installation",
+            "noticing-name",
+            "friction-creating term"
+          ],
+          "forensic": "phenomenologica seminatio vocabularis",
+          "category": "Phenomenological Seeding"
+        }
+      ]
+    }
+  ]
+}

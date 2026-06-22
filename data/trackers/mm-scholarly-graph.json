@@ -1,0 +1,525 @@
+{
+  "schema": "crimson-hexagonal-scholarly-graph",
+  "version": "0.1",
+  "last_updated": "2026-06-18",
+  "description": "Conceptual-citational strategic assessment across the archive's defended texts. Maps primary corpora, archive claims, evidence chains, and cross-pillar connections. Designed to build into a knowledge graph and feed to multiple surfaces.",
+
+  "corpora": [
+    {
+      "id": "marx-1844",
+      "name": "Marx — 1844 Economic and Philosophic Manuscripts",
+      "pillar": "phase-x",
+      "period": "1844",
+      "survival_state": "fragmentary",
+      "survival_metric": "Second Manuscript: 4/43 pages (9.3%); First and Third substantially intact",
+      "critical_editions": [
+        {"id": "mega1-i3", "title": "MEGA¹ I.3", "year": 1932, "editor": "Adoratsky", "note": "First publication; under Stalinist editorial control"},
+        {"id": "mega2-i2", "title": "MEGA² I.2", "year": 1982, "editor": "Gräbner et al.", "note": "Critical edition; improved transcription"}
+      ],
+      "key_texts": [
+        {
+          "id": "marx-second-ms",
+          "title": "Second Manuscript (pp. 40–43)",
+          "status": "near-total loss",
+          "archive_claims": ["phase-x-invariance", "lacunar-pointing", "threshold-operation"],
+          "archive_deposits": ["EA-SEI-PHASEX-LACUNA-01"]
+        },
+        {
+          "id": "marx-theses-feuerbach",
+          "title": "Theses on Feuerbach (1845)",
+          "status": "survives in Engels's copy; Marx original lost",
+          "role": "Compressed form of the missing transition",
+          "archive_claims": ["threshold-operation", "critique-turn"]
+        },
+        {
+          "id": "marx-german-ideology",
+          "title": "The German Ideology I.1A (1845–46)",
+          "status": "survives",
+          "key_passage": "Language is as old as consciousness; language is the practical consciousness that exists for other men",
+          "role": "Textual anchor for language as wirkliche practical consciousness",
+          "archive_claims": ["operative-lineage", "symbolic-invariance"]
+        },
+        {
+          "id": "marx-grundrisse",
+          "title": "Grundrisse — Fragment on Machines (1858)",
+          "status": "survives",
+          "key_passage": "The general intellect becomes a direct force of production",
+          "role": "Raises the question Phase X must answer",
+          "archive_claims": ["symbolic-invariance"]
+        }
+      ],
+      "scholarly_consensus": {
+        "undisputed": [
+          "The Second Manuscript is almost entirely lost",
+          "The Third Manuscript cross-references missing pages (XXXVI, XXXIX)",
+          "The 1932 publication occurred under Stalinist editorial control",
+          "Riazanov was purged in 1931 and executed in 1938"
+        ],
+        "disputed": [
+          "Whether the missing pages contained the Phase X transition",
+          "Whether the suppression was deliberate or accidental"
+        ],
+        "archive_intervention": "EA-SEI-PHASEX-LACUNA-01 formalizes the reconstruction method, establishes chain of custody, proposes falsification conditions"
+      }
+    },
+
+    {
+      "id": "sappho",
+      "name": "Sappho — Fragmentary Lyric Corpus",
+      "pillar": "sappho",
+      "period": "c. 630–570 BCE",
+      "survival_state": "fragmentary",
+      "survival_metric": "~650 lines from ~10,000 (5%)",
+      "critical_editions": [
+        {"id": "lobel-page", "title": "Poetarum Lesbiorum Fragmenta", "year": 1955, "editor": "Lobel & Page", "note": "Standard numbering"},
+        {"id": "voigt", "title": "Sappho et Alcaeus", "year": 1971, "editor": "Voigt", "note": "Most widely used modern edition"},
+        {"id": "campbell", "title": "Greek Lyric I (Loeb)", "year": 1982, "editor": "Campbell"},
+        {"id": "rayor", "title": "Sappho: A New Translation", "year": 2023, "editor": "Rayor", "note": "Revised with Cologne discoveries"}
+      ],
+      "key_texts": [
+        {
+          "id": "sappho-31",
+          "title": "Fragment 31 (Voigt 31 = Lobel-Page 31)",
+          "status": "4 full stanzas + beginning of 5th in Longinus, On the Sublime 10.1–3",
+          "archive_claims": ["fifth-stanza-lacuna", "sapphic-platonic-isomorphism", "prayer-for-inscription", "erotic-operator"],
+          "archive_deposits": ["EA-LOGOS-INSCRIPTION-01"],
+          "reconstruction": "Cranes edition fifth stanza (DOI 10.5281/zenodo.18459573)",
+          "erratum": "DOI 10.5281/zenodo.20693274 (fifth not fourth stanza numbering)"
+        },
+        {
+          "id": "sappho-58",
+          "title": "Fragment 58 (Tithonus poem)",
+          "status": "Near-complete via Cologne Papyrus (3rd c. BCE) + Oxyrhynchus (2nd c. CE)",
+          "note": "Two versions: Cologne (ends line 12) and Oxyrhynchus (extends to line 26)"
+        }
+      ],
+      "material_witnesses": [
+        {
+          "id": "p-koln-xi-429",
+          "title": "Cologne Papyrus (P. Köln XI 429)",
+          "date": "Early 3rd century BCE",
+          "discovery": "2004, published by Gronewald and Daniel in ZPE",
+          "provenance_note": "Suspect acquisition history; claimed Swiss collection since 1970s",
+          "content": "Tithonus poem (fr. 58) — near-complete 12-line version"
+        },
+        {
+          "id": "p-oxy-1787",
+          "title": "Oxyrhynchus Papyrus (P.Oxy. 1787, fr. 1)",
+          "date": "Late 2nd century CE",
+          "location": "Sackler Library, Oxford",
+          "content": "Line-endings of Tithonus poem; other Book IV poems"
+        }
+      ],
+      "scholarly_consensus": {
+        "undisputed": [
+          "The Cologne papyrus is authentic (3rd century BCE)",
+          "Fragment 31 is preserved in Longinus",
+          "The Alexandrian edition arranged Sappho in 9 books by meter"
+        ],
+        "disputed": [
+          "Whether the Cologne or Oxyrhynchus version of fr. 58 is 'original'",
+          "Exact reconstruction of the Tithonus myth section (lines 9–12)",
+          "The provenance of the Cologne papyrus"
+        ],
+        "archive_intervention": "Fifth stanza reconstruction via formal pressure analysis; Sapphic-Platonic isomorphism thesis"
+      }
+    },
+
+    {
+      "id": "plato",
+      "name": "Plato — Dialogues, Letters, Unwritten Doctrines",
+      "pillar": "plato",
+      "period": "c. 428–348 BCE",
+      "survival_state": "substantially intact (dialogues); fragmentary/contested (letters, doctrines)",
+      "critical_editions": [
+        {"id": "burnet-oct", "title": "Platonis Opera (OCT)", "editor": "Burnet"},
+        {"id": "rowe-phaedrus", "title": "Phaedrus (Aris & Phillips)", "year": 1986, "editor": "Rowe"},
+        {"id": "sedley-cratylus", "title": "Cratylus (Cambridge)", "year": 2003, "editor": "Sedley"},
+        {"id": "nehamas-woodruff", "title": "Phaedrus (Hackett)", "year": 1995, "editor": "Nehamas & Woodruff"}
+      ],
+      "key_texts": [
+        {
+          "id": "plato-phaedrus",
+          "title": "Phaedrus (274b–278e: critique of writing; 264c: ζῷον standard)",
+          "status": "intact",
+          "key_passages": [
+            {"ref": "274b–278e", "content": "Critique of writing: hypomnesis not mneme; text needs father's help"},
+            {"ref": "264c", "content": "Living creature (ζῷον) standard: speech composed as organic whole"}
+          ],
+          "archive_claims": ["pharmakon-ambiguity", "writing-as-externalized-memory", "recursive-auto-diagnosis"],
+          "archive_connection": "Earliest composition-layer theory; Three Compressions genealogy"
+        },
+        {
+          "id": "plato-seventh-letter",
+          "title": "Seventh Letter (Epistle VII, esp. 341b–345c)",
+          "status": "disputed authenticity",
+          "key_passage": "There is no writing of mine about these matters, nor will there ever be one (341c)",
+          "archive_claims": ["seventh-letter-authenticity", "secrecy-seal"],
+          "scholarly_debate": [
+            {"position": "against", "scholars": ["Burnyeat & Frede 2015"]},
+            {"position": "for", "scholars": ["Waterfield 2023"]},
+            {"position": "various", "scholars": ["Liatsi 2008", "Notomi 2019", "Politis 2020"]}
+          ]
+        },
+        {
+          "id": "plato-cratylus",
+          "title": "Cratylus (386d–390e: tool analogy)",
+          "status": "intact",
+          "key_passage": "The name is a tool (ὄργανον) for separating being (οὐσία)",
+          "archive_claims": ["operative-lineage"],
+          "archive_connection": "Earliest operative semiotics; lineage to Marx's language-as-actuality to archive's semantic labor"
+        },
+        {
+          "id": "plato-republic-x",
+          "title": "Republic X (595a–608b: mimesis critique)",
+          "status": "intact",
+          "key_passage": "Mimesis is thrice-removed from truth: Idea → object → image",
+          "archive_claims": ["recursive-auto-diagnosis"],
+          "archive_connection": "Three Compressions genealogy; polis-platform isomorphism"
+        },
+        {
+          "id": "plato-symposium",
+          "title": "Symposium (201d–212c: Diotima's speech)",
+          "status": "intact",
+          "archive_claims": ["diotima-reincorporation", "sapphic-platonic-isomorphism"],
+          "archive_connection": "Sapphic initiatory function redeployed as philosophical authority"
+        }
+      ],
+      "scholarly_consensus": {
+        "undisputed": [
+          "Plato wrote the Phaedrus, Cratylus, Republic, Symposium",
+          "The Phaedrus contains a critique of writing",
+          "The Cratylus examines naturalism vs. conventionalism in naming",
+          "The Republic condemns mimetic poetry"
+        ],
+        "disputed": [
+          "The Seventh Letter's authenticity",
+          "Whether Plato's critique of writing is self-referential or strategic",
+          "Whether the Cratylus etymologies are serious or parodic",
+          "Whether the Republic's ban on poetry is literal or ironic"
+        ],
+        "archive_intervention": "Plato as earliest theorist of composition-layer problems; pharmakon/writing maps to Three Compressions; ζῷον standard maps to SPXI"
+      }
+    },
+
+    {
+      "id": "josephus",
+      "name": "Josephus — Jewish War, Antiquities, Vita",
+      "pillar": "revelation-first",
+      "period": "c. 37–100 CE",
+      "survival_state": "substantially intact",
+      "key_texts": [
+        {
+          "id": "josephus-jewish-war",
+          "title": "Jewish War (Bellum Judaicum)",
+          "status": "intact",
+          "archive_claims": ["josephus-not-myth", "josephus-semantic-laborer"],
+          "archive_deposits": ["EA-MPAI-JOSEPHUS-01"]
+        },
+        {
+          "id": "josephus-slavonic",
+          "title": "Slavonic Josephus (Old Russian translation)",
+          "status": "contested",
+          "archive_claims": ["logotic-transmission"],
+          "archive_deposits": ["EA-LOGOS-02"]
+        }
+      ],
+      "scholarly_consensus": {
+        "undisputed": [
+          "Josephus was a historical person who wrote the Jewish War and Antiquities",
+          "The Greek text is substantially preserved"
+        ],
+        "disputed": [
+          "The Slavonic tradition's relationship to the Greek",
+          "The Testimonium Flavianum's authenticity"
+        ],
+        "archive_intervention": "Josephus as captured semantic laborer (not source for Jesus historicity); MPAI deposit for disambiguation"
+      }
+    },
+
+    {
+      "id": "revelation",
+      "name": "Revelation (Apocalypse of John)",
+      "pillar": "revelation-first",
+      "period": "disputed (archive argues pre-70 CE composition)",
+      "survival_state": "intact (canonical NT text)",
+      "key_texts": [
+        {
+          "id": "rev-full",
+          "title": "Apocalypse of John (22 chapters)",
+          "status": "intact; earliest witness P98 (c. 150–250 CE)",
+          "archive_claims": ["revelation-first-thesis", "johannine-aperture", "white-stone-cryptographic"],
+          "archive_deposits": ["EA-SEI-REVFIRST-01"]
+        },
+        {
+          "id": "rev-2-17",
+          "title": "Revelation 2:17 (white stone / new name)",
+          "status": "intact",
+          "archive_claims": ["white-stone-cryptographic", "inscription-chain"],
+          "archive_connection": "Convergence with Sappho 31 fifth stanza via Orphic tablets and GMP"
+        }
+      ],
+      "scholarly_consensus": {
+        "undisputed": [
+          "Revelation is part of the NT canon",
+          "P98 is the earliest papyrus witness"
+        ],
+        "disputed": [
+          "Date of composition (consensus: c. 95 CE; archive argues pre-70)",
+          "Relationship to the Gospel of John",
+          "Whether Revelation is the NT's first-composed book"
+        ],
+        "archive_intervention": "Revelation First thesis (18,475 words, 8 revisions); Johannine Aperture Function; heteronymic NT generation sequence"
+      }
+    },
+
+    {
+      "id": "philo",
+      "name": "Philo of Alexandria",
+      "pillar": "revelation-first",
+      "period": "c. 20 BCE – 50 CE",
+      "survival_state": "substantially intact (most treatises survive)",
+      "key_texts": [
+        {
+          "id": "philo-logos",
+          "title": "Logos doctrine (across multiple treatises)",
+          "status": "intact",
+          "archive_claims": ["logotic-transmission"],
+          "archive_deposits": ["EA-LOGOS-01", "EA-LOGOS-02"],
+          "archive_connection": "Philonic Logos as mediating concept between Platonic Forms and Johannine Prologue"
+        }
+      ],
+      "scholarly_consensus": {
+        "undisputed": [
+          "Philo was a historical Alexandrian Jewish philosopher",
+          "His Logos doctrine synthesizes Platonic, Stoic, and Jewish traditions"
+        ],
+        "disputed": [
+          "Direct influence on the Johannine Prologue",
+          "Whether Philo knew of early Christian communities"
+        ],
+        "archive_intervention": "Logotic transmission chain: Philo → Johannine Prologue → Revelation 2:17"
+      }
+    }
+  ],
+
+  "claims": [
+    {
+      "id": "phase-x-invariance",
+      "name": "Phase X Invariance Condition",
+      "pillar": "phase-x",
+      "type": "structural_argument",
+      "statement": "Any society that abolishes material alienation without transforming the symbolic-linguistic order will reproduce alienation at the level of thought, coordination, and meaning-extraction.",
+      "falsifiable": true,
+      "status": "defended",
+      "deposits": ["EA-SEI-PHASEX-LACUNA-01"],
+      "primary_evidence": ["marx-second-ms", "marx-theses-feuerbach", "marx-german-ideology", "marx-grundrisse"],
+      "mint_families": ["X-M06"],
+      "consensus_status": "archive-original"
+    },
+    {
+      "id": "sapphic-platonic-isomorphism",
+      "name": "Sapphic-Platonic Isomorphism",
+      "pillar": "sappho",
+      "type": "structural_correspondence",
+      "statement": "Fragment 31's structure (encounter → disruption → breakdown → recovery → inscription) is isomorphic to Platonic anamnesis and provides the template for the Diotima function.",
+      "falsifiable": true,
+      "status": "defended",
+      "deposits": ["EA-LOGOS-INSCRIPTION-01"],
+      "primary_evidence": ["sappho-31", "plato-symposium", "plato-phaedrus"],
+      "mint_families": ["Σ-M10", "Π-M05"],
+      "consensus_status": "archive-original"
+    },
+    {
+      "id": "revelation-first-thesis",
+      "name": "Revelation First",
+      "pillar": "revelation-first",
+      "type": "dating_argument",
+      "statement": "The Apocalypse of John is the NT's first-composed book, written before 70 CE.",
+      "falsifiable": true,
+      "status": "defended",
+      "deposits": ["EA-SEI-REVFIRST-01"],
+      "primary_evidence": ["rev-full", "rev-2-17"],
+      "mint_families": [],
+      "consensus_status": "against-consensus",
+      "consensus_position": "Most scholars date Revelation to c. 95 CE under Domitian"
+    },
+    {
+      "id": "operative-lineage",
+      "name": "Operative Lineage (Sign as Material Instrument)",
+      "pillar": "cross-pillar",
+      "type": "genealogical_argument",
+      "statement": "A historical chain from Plato's tool analogy (name as ὄργανον) through Marx's language-as-actuality to the archive's Operative Semiotics establishes the sign as a force of production, not a reflective surface.",
+      "falsifiable": false,
+      "status": "proposed",
+      "deposits": [],
+      "primary_evidence": ["plato-cratylus", "marx-german-ideology"],
+      "mint_families": ["XΣΠ-M04"],
+      "consensus_status": "archive-original"
+    },
+    {
+      "id": "lacunar-pointing",
+      "name": "Lacunar Pointing (Marx's Self-Indexing Gap)",
+      "pillar": "phase-x",
+      "type": "textual_observation",
+      "statement": "Marx's own cross-references in the Third Manuscript to pages XXXVI and XXXIX of the Second Manuscript constitute authorial pointing to the lacuna.",
+      "falsifiable": true,
+      "status": "defended",
+      "deposits": ["EA-SEI-PHASEX-LACUNA-01"],
+      "primary_evidence": ["marx-second-ms"],
+      "mint_families": ["X-M01"],
+      "consensus_status": "undisputed-observation"
+    },
+    {
+      "id": "fifth-stanza-reconstruction",
+      "name": "Fifth Stanza Reconstruction (Sappho 31)",
+      "pillar": "sappho",
+      "type": "philological_reconstruction",
+      "statement": "The fifth stanza of Fragment 31 can be recovered from formal pressure, reception history, and the poem's internal structure.",
+      "falsifiable": true,
+      "status": "defended",
+      "deposits": ["EA-LOGOS-INSCRIPTION-01"],
+      "primary_evidence": ["sappho-31"],
+      "mint_families": ["Σ-M01", "Σ-M04", "Σ-M06"],
+      "consensus_status": "archive-original",
+      "erratum": "DOI 10.5281/zenodo.20693274 (fifth not fourth stanza numbering)"
+    },
+    {
+      "id": "josephus-semantic-laborer",
+      "name": "Josephus as Captured Semantic Laborer",
+      "pillar": "revelation-first",
+      "type": "political_argument",
+      "statement": "Josephus should be read as a captured semantic laborer whose literary output served Roman political purposes, not as an independent historical source for Jesus historicity.",
+      "falsifiable": true,
+      "status": "defended",
+      "deposits": ["EA-MPAI-JOSEPHUS-01", "EA-SEI-REVFIRST-01"],
+      "primary_evidence": ["josephus-jewish-war"],
+      "mint_families": [],
+      "consensus_status": "against-consensus"
+    },
+    {
+      "id": "logotic-transmission",
+      "name": "Logotic Transmission Chain",
+      "pillar": "revelation-first",
+      "type": "transmission_argument",
+      "statement": "A transmission chain runs from Philonic Logos doctrine through the Johannine Prologue to the Slavonic Josephus, mediated by the concept of logos as operative theological force.",
+      "falsifiable": true,
+      "status": "defended",
+      "deposits": ["EA-LOGOS-01", "EA-LOGOS-02"],
+      "primary_evidence": ["philo-logos", "josephus-slavonic"],
+      "mint_families": [],
+      "consensus_status": "archive-original"
+    },
+    {
+      "id": "inscription-chain",
+      "name": "Inscription Chain (Sappho 31 → Orphic Tablets → GMP → Rev 2:17)",
+      "pillar": "cross-pillar",
+      "type": "convergence_argument",
+      "statement": "Sappho 31's fifth stanza converges with Orphic gold tablets, Greek Magical Papyri, and Revelation 2:17's white stone through formal correspondence (not direct transmission).",
+      "falsifiable": true,
+      "status": "defended",
+      "deposits": ["EA-LOGOS-INSCRIPTION-01"],
+      "primary_evidence": ["sappho-31", "rev-2-17"],
+      "mint_families": [],
+      "consensus_status": "archive-original"
+    },
+    {
+      "id": "recursive-auto-diagnosis",
+      "name": "Recursive Auto-Diagnosis",
+      "pillar": "cross-pillar",
+      "type": "structural_argument",
+      "statement": "A system's critique of its own failure reproduces the failure it critiques. The Phaedrus condemns writing in writing; the Republic condemns mimesis mimetically; the archive condemns provenance erasure while subject to provenance erasure.",
+      "falsifiable": false,
+      "status": "proposed",
+      "deposits": [],
+      "primary_evidence": ["plato-phaedrus", "plato-republic-x"],
+      "mint_families": ["XΣΠ-M05"],
+      "consensus_status": "archive-original"
+    }
+  ],
+
+  "connections": [
+    {
+      "id": "conn-001",
+      "source": "sappho-31",
+      "target": "plato-symposium",
+      "type": "structural_isomorphism",
+      "claim": "sapphic-platonic-isomorphism",
+      "description": "Fragment 31's encounter-disruption-breakdown-recovery structure maps onto the Diotima speech's erotic-epistemic ascent"
+    },
+    {
+      "id": "conn-002",
+      "source": "sappho-31",
+      "target": "rev-2-17",
+      "type": "formal_convergence",
+      "claim": "inscription-chain",
+      "description": "Fifth stanza inscription prayer converges with white stone / new name through Orphic tablets and GMP"
+    },
+    {
+      "id": "conn-003",
+      "source": "plato-cratylus",
+      "target": "marx-german-ideology",
+      "type": "operative_lineage",
+      "claim": "operative-lineage",
+      "description": "Name as tool for separating being → language as the actuality of thought"
+    },
+    {
+      "id": "conn-004",
+      "source": "marx-second-ms",
+      "target": "sappho-31",
+      "type": "methodological_parallel",
+      "claim": "lacunar-pointing",
+      "description": "Both are lacunar texts whose missing portions can be reconstructed from surviving edges using identical philological method"
+    },
+    {
+      "id": "conn-005",
+      "source": "plato-phaedrus",
+      "target": "marx-second-ms",
+      "type": "recursive_trap",
+      "claim": "recursive-auto-diagnosis",
+      "description": "Both systems diagnose their own failure: Plato critiques writing in writing; Marx's critique of alienation is alienated from its own manuscript"
+    },
+    {
+      "id": "conn-006",
+      "source": "philo-logos",
+      "target": "rev-full",
+      "type": "transmission_chain",
+      "claim": "logotic-transmission",
+      "description": "Philonic Logos doctrine as mediating concept in the Johannine literary system"
+    },
+    {
+      "id": "conn-007",
+      "source": "josephus-jewish-war",
+      "target": "rev-full",
+      "type": "political_context",
+      "claim": "josephus-semantic-laborer",
+      "description": "Both texts emerge from the same political crisis (Jewish-Roman War); Josephus as captured laborer, Revelation as resistance literature"
+    },
+    {
+      "id": "conn-008",
+      "source": "plato-phaedrus",
+      "target": "sappho-31",
+      "type": "structural_isomorphism",
+      "claim": "sapphic-platonic-isomorphism",
+      "description": "Pharmakon critique of writing maps onto inscription prayer: both name the risk and necessity of textual survival"
+    },
+    {
+      "id": "conn-009",
+      "source": "marx-german-ideology",
+      "target": "rev-full",
+      "type": "operative_lineage",
+      "claim": "operative-lineage",
+      "description": "Language as material force (wirkliche) → Revelation as operative apocalyptic text (not predictive but performative)"
+    }
+  ],
+
+  "node_types": ["corpus", "text", "claim", "deposit", "scholar", "edition", "material_witness"],
+  "edge_types": ["structural_isomorphism", "formal_convergence", "operative_lineage", "methodological_parallel", "recursive_trap", "transmission_chain", "political_context", "evidence_supports", "evidence_contests"],
+
+  "expansion_protocol": {
+    "adding_a_corpus": "Add entry to corpora[] with id, name, pillar, period, survival_state, critical_editions, key_texts, scholarly_consensus. Populate key_texts with archive_claims pointing to existing claims[] entries.",
+    "adding_a_claim": "Add entry to claims[] with id, name, pillar, type, statement, falsifiable, status, deposits, primary_evidence, mint_families, consensus_status. Create connections[] entries linking the claim to relevant texts.",
+    "adding_a_connection": "Add entry to connections[] with source (text id), target (text id), type (from edge_types), claim (claim id), description.",
+    "planned_corpora": ["orphic-tablets", "greek-magical-papyri", "chaldean-oracles", "slavonic-enoch", "dead-sea-scrolls", "pessoa", "walt-whitman"]
+  }
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impact Tracker — Revelation First</title>
+<meta name="description" content="Live tracking of 79 search queries measuring the Revelation First thesis reception in Google AI Overview and other composition layers. Click to search, capture, track.">
+<style>
+:root { --bg: #0a0a0a; --fg: #e0ddd5; --accent: #c23b22; --accent2: #d4a537; --dim: #666; --border: #222; --hover: #151515; --tested: #2a7a3a; --untested: #555; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'IBM Plex Mono', 'Courier New', monospace; background: var(--bg); color: var(--fg); line-height: 1.5; }
+.c { max-width: 1100px; margin: 0 auto; padding: 20px; }
+.nav { margin-bottom: 15px; font-size: 0.78em; }
+.nav a { color: var(--accent2); text-decoration: none; margin-right: 12px; }
+h1 { font-size: 1.3em; color: var(--accent); margin-bottom: 4px; letter-spacing: 0.05em; }
+h2 { font-size: 0.78em; color: var(--accent2); text-transform: uppercase; letter-spacing: 0.1em; margin: 25px 0 8px; border-bottom: 1px solid var(--border); padding-bottom: 4px; }
+.sub { color: var(--dim); font-size: 0.82em; margin-bottom: 20px; }
+.stats { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 15px; }
+.stat { border: 1px solid var(--border); padding: 6px 12px; min-width: 80px; }
+.stat-l { color: var(--dim); font-size: 0.65em; text-transform: uppercase; }
+.stat-v { font-size: 1.3em; color: var(--accent2); }
+a { color: var(--accent2); text-decoration: none; }
+
+/* Battery term cards */
+.cat-header { font-size: 0.72em; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; margin: 20px 0 8px; padding-bottom: 4px; border-bottom: 1px solid var(--border); }
+.term-card { border: 1px solid var(--border); margin-bottom: 6px; transition: border-color 0.2s; }
+.term-card:hover { border-color: var(--accent); }
+.term-header { display: flex; align-items: center; gap: 8px; padding: 8px 10px; cursor: pointer; font-size: 0.82em; }
+.term-q { flex: 1; font-weight: bold; }
+.term-search { background: var(--accent2); color: black; padding: 2px 8px; border-radius: 2px; font-size: 0.72em; font-weight: bold; text-decoration: none; }
+.term-search:hover { background: #e0c060; }
+.badge { font-size: 0.65em; padding: 2px 6px; border-radius: 2px; font-weight: bold; }
+.badge.CORRECTION { background: var(--accent); color: white; }
+.badge.ADOPTION { background: var(--tested); color: white; }
+.badge.FAIR_TREATMENT { background: var(--accent2); color: black; }
+.badge.BASIN_MISS { background: #555; color: white; }
+.badge.PARTIAL { background: #4a8bc2; color: white; }
+.badge.WOUND_GAUGE { background: #8b2500; color: white; }
+.badge.UNCAPTURED { background: #333; color: #888; border: 1px solid #555; }
+.term-detail { display: none; padding: 8px 10px 12px; border-top: 1px solid var(--border); font-size: 0.76em; }
+.term-detail.open { display: block; }
+.detail-label { color: var(--dim); font-size: 0.72em; text-transform: uppercase; margin-top: 6px; }
+.detail-text { color: var(--fg); margin-top: 2px; }
+.detail-note { color: var(--accent2); margin-top: 4px; font-size: 0.9em; }
+.expand-icon { color: var(--dim); font-size: 0.8em; transition: transform 0.2s; }
+.expand-icon.open { transform: rotate(90deg); }
+.footer { margin-top: 30px; padding-top: 12px; border-top: 1px solid var(--border); font-size: 0.7em; color: var(--dim); }
+.glyph { color: var(--accent); margin-top: 8px; }
+</style>
+</head>
+<body>
+<div class="c">
+<div class="nav">
+  <a href="/">← Revelation First</a>
+  <a href="/tracker/">Tracker</a>
+  <a href="https://machinemediation.org">MMRS</a>
+  <a href="https://machinemediation.org/data/revfirst-registry.json">Reception Data</a>
+  <a href="https://machinemediation.org/captures/">Full Registry</a>
+</div>
+
+<h1>IMPACT TRACKER</h1>
+<div class="sub">79 search queries measuring the Revelation First thesis reception. Click any query to search Google. Expand for capture data. Data from <a href="https://machinemediation.org/data/revfirst-registry.json">revfirst-registry.json</a>.</div>
+
+<div class="stats" id="stats"><span style="color:var(--dim);font-size:0.8em;">Loading stats...</span></div>
+
+<div id="battery"></div>
+
+<div class="footer">
+  <div>Lee Sharks · <a href="https://orcid.org/0009-0000-1599-0703">ORCID 0009-0000-1599-0703</a> · Crimson Hexagonal Archive</div>
+  <div>Work Plan: <a href="https://alexanarch.org/s/records/842/">EA-LOGOS-REVFIRST-PLAN v7.3</a> · MMRS Charter: <a href="https://alexanarch.org/s/records/834/">DOI</a></div>
+  <div class="glyph">∮ = 1</div>
+</div>
+</div>
+
+<script>
+const BATTERY = [
+  { cat: "A. Core Baseline (run before & after each phase)", terms: [
+    { q: "revelation first book new testament", url: "https://www.google.com/search?q=revelation+first+book+new+testament" },
+    { q: "revelation earliest new testament document", url: "https://www.google.com/search?q=revelation+earliest+new+testament+document" },
+    { q: "revelation before paul", url: "https://www.google.com/search?q=revelation+before+paul" },
+    { q: "revelation pre-70 CE dating", url: "https://www.google.com/search?q=revelation+pre-70+CE+dating" },
+    { q: "early date revelation evidence", url: "https://www.google.com/search?q=early+date+revelation+evidence" },
+    { q: "new testament unfolds from revelation", url: "https://www.google.com/search?q=new+testament+unfolds+from+revelation" },
+    { q: "midrashim transform revelation", url: "https://www.google.com/search?q=midrashim+transform+revelation" },
+    { q: "revelation operative document", url: "https://www.google.com/search?q=revelation+operative+document" },
+    { q: "josephus new testament heteronyms", url: "https://www.google.com/search?q=josephus+new+testament+heteronyms" },
+    { q: "revelation as seed new testament", url: "https://www.google.com/search?q=revelation+as+seed+new+testament" }
+  ]},
+  { cat: "B. Phase 2 Expansion", terms: [
+    { q: "midrashim transform new testament", url: "https://www.google.com/search?q=midrashim+transform+new+testament" },
+    { q: "revelation generates pauline epistles", url: "https://www.google.com/search?q=revelation+generates+pauline+epistles" },
+    { q: "seven letters revelation epistolary form", url: "https://www.google.com/search?q=seven+letters+revelation+epistolary+form" },
+    { q: "lamb christology revelation paul", url: "https://www.google.com/search?q=lamb+christology+revelation+paul" }
+  ]},
+  { cat: "C. Primary Keyword Targets", terms: [
+    { q: '"revelation first"', url: "https://www.google.com/search?q=%22revelation+first%22" },
+    { q: "revelation nero not domitian", url: "https://www.google.com/search?q=revelation+nero+not+domitian" },
+    { q: '"midrashim transform"', url: "https://www.google.com/search?q=%22midrashim+transform%22" },
+    { q: '"operative apocalypse"', url: "https://www.google.com/search?q=%22operative+apocalypse%22" },
+    { q: '"revelation as seed"', url: "https://www.google.com/search?q=%22revelation+as+seed%22" },
+    { q: '"josephus heteronym"', url: "https://www.google.com/search?q=%22josephus+heteronym%22" },
+    { q: "apocalyptic poetics", url: "https://www.google.com/search?q=apocalyptic+poetics" }
+  ]},
+  { cat: "D. Inscription Chain / Operative Reading", terms: [
+    { q: '"1 John 4:2 operative reading"', url: "https://www.google.com/search?q=%221+John+4%3A2+operative+reading%22" },
+    { q: 'homologei "1 John 4:2" confession', url: "https://www.google.com/search?q=homologei+%221+John+4%3A2%22+confession" },
+    { q: '"test the spirits" "1 John 4" heteronym', url: "https://www.google.com/search?q=%22test+the+spirits%22+%221+John+4%22+heteronym" },
+    { q: '"white stone" "new name" Revelation 2:17', url: "https://www.google.com/search?q=%22white+stone%22+%22new+name%22+Revelation+2%3A17" },
+    { q: '"white stone" heteronym Revelation', url: "https://www.google.com/search?q=%22white+stone%22+heteronym+Revelation" }
+  ]},
+  { cat: "E. Literary Reception Surfaces", terms: [
+    { q: 'Revelation influence literature', url: "https://www.google.com/search?q=Revelation+influence+literature" },
+    { q: 'Revelation experimental poetry', url: "https://www.google.com/search?q=Revelation+experimental+poetry" },
+    { q: '"apocalyptic poetics"', url: "https://www.google.com/search?q=%22apocalyptic+poetics%22" },
+    { q: 'crimson hexagonal archive revelation', url: "https://www.google.com/search?q=crimson+hexagonal+archive+revelation" }
+  ]},
+  { cat: "F. Theological Controls (PER comparison)", terms: [
+    { q: '"Q source hypothesis"', url: "https://www.google.com/search?q=%22Q+source+hypothesis%22" },
+    { q: '"Markan priority"', url: "https://www.google.com/search?q=%22Markan+priority%22" },
+    { q: '"Johannine community"', url: "https://www.google.com/search?q=%22Johannine+community%22" },
+    { q: '"Pauline pseudepigraphy"', url: "https://www.google.com/search?q=%22Pauline+pseudepigraphy%22" }
+  ]},
+  { cat: "G. Non-Theological Controls", terms: [
+    { q: '"generative monoculture"', url: "https://www.google.com/search?q=%22generative+monoculture%22" },
+    { q: '"solution-space diversity"', url: "https://www.google.com/search?q=%22solution-space+diversity%22" }
+  ]},
+  { cat: "H. Mary Lee Constellation", terms: [
+    { q: '"broke Marxist poet"', url: "https://www.google.com/search?q=%22broke+Marxist+poet%22" },
+    { q: "site:maryleelabor.org", url: "https://www.google.com/search?q=site%3Amaryleelabor.org" },
+    { q: '"Mary Lee Sharks"', url: "https://www.google.com/search?q=%22Mary+Lee+Sharks%22" },
+    { q: '"cognitive-relational circuit"', url: "https://www.google.com/search?q=%22cognitive-relational+circuit%22" },
+    { q: '"Mary Lee heteronym"', url: "https://www.google.com/search?q=%22Mary+Lee+heteronym%22" },
+    { q: '"Mary Lee labor"', url: "https://www.google.com/search?q=%22Mary+Lee+labor%22" },
+    { q: '"Underwater Construction Authority of Dolphindiana"', url: "https://www.google.com/search?q=%22Underwater+Construction+Authority+of+Dolphindiana%22" },
+    { q: '"Demand 4" "composition layer"', url: "https://www.google.com/search?q=%22Demand+4%22+%22composition+layer%22" }
+  ]},
+  { cat: "I. Phase X / Semantic Economy", terms: [
+    { q: '"Phase X" Marx 1844 alienation', url: "https://www.google.com/search?q=%22Phase+X%22+Marx+1844+alienation" },
+    { q: '"operative semiotics"', url: "https://www.google.com/search?q=%22operative+semiotics%22" },
+    { q: '"semantic economy" meaning over capital', url: "https://www.google.com/search?q=%22semantic+economy%22+%22meaning+over+capital%22" },
+    { q: '"provenance erasure rate"', url: "https://www.google.com/search?q=%22provenance+erasure+rate%22" },
+    { q: '"composition layer" entity substitution', url: "https://www.google.com/search?q=%22composition+layer%22+%22entity+substitution%22" }
+  ]},
+  { cat: "J. Deposited Coinages & Variant Phrasings", terms: [
+    { q: '"papyrological inversion"', url: "https://www.google.com/search?q=%22papyrological+inversion%22" },
+    { q: '"Johannine aperture"', url: "https://www.google.com/search?q=%22Johannine+aperture%22" },
+    { q: '"inscription chain" Sappho Revelation', url: "https://www.google.com/search?q=%22inscription+chain%22+Sappho+Revelation" },
+    { q: '"Paul function" adversarial probe', url: "https://www.google.com/search?q=%22Paul+function%22+adversarial+probe" },
+    { q: '"inference against inference"', url: "https://www.google.com/search?q=%22inference+against+inference%22" },
+    { q: '"machine-mediated theological reception"', url: "https://www.google.com/search?q=%22machine-mediated+theological+reception%22" },
+    { q: '"Slavonic Josephus" "Gospel of the Word"', url: "https://www.google.com/search?q=%22Slavonic+Josephus%22+%22Gospel+of+the+Word%22" },
+    { q: '"heteronymic authorship" New Testament', url: "https://www.google.com/search?q=%22heteronymic+authorship%22+New+Testament" },
+    { q: '"ahistorical Christ"', url: "https://www.google.com/search?q=%22ahistorical+Christ%22" },
+    { q: '"executable scripture"', url: "https://www.google.com/search?q=%22executable+scripture%22" },
+    { q: '"logos as graphe"', url: "https://www.google.com/search?q=%22logos+as+graphe%22" },
+    { q: '"retrieval-layer theological reception"', url: "https://www.google.com/search?q=%22retrieval-layer+theological+reception%22" },
+    { q: '"Josephus thesis" NOT Piso', url: "https://www.google.com/search?q=%22Josephus+thesis%22+NOT+Piso" },
+    { q: '"white stone" Revelation credential', url: "https://www.google.com/search?q=%22white+stone%22+Revelation+credential" },
+    { q: 'apocalypse earliest Christian document', url: "https://www.google.com/search?q=apocalypse+earliest+Christian+document" },
+    { q: '"cosmic Christ" Revelation', url: "https://www.google.com/search?q=%22cosmic+Christ%22+Revelation" },
+    { q: '"seven churches" "epistolary prototype"', url: "https://www.google.com/search?q=%22seven+churches%22+%22epistolary+prototype%22" },
+    { q: '"Neronic dating" Revelation', url: "https://www.google.com/search?q=%22Neronic+dating%22+Revelation" }
+  ]},
+  { cat: "K. Operative Numismatics & Deeper Archive Coinages", terms: [
+    { q: '"operative numismatics"', url: "https://www.google.com/search?q=%22operative+numismatics%22" },
+    { q: '"threshold technology" Revelation', url: "https://www.google.com/search?q=%22threshold+technology%22+Revelation" },
+    { q: '"salvific technology"', url: "https://www.google.com/search?q=%22salvific+technology%22" },
+    { q: '"Beast logic" Revelation', url: "https://www.google.com/search?q=%22Beast+logic%22+Revelation" },
+    { q: '"structural illiteracy" Revelation', url: "https://www.google.com/search?q=%22structural+illiteracy%22+Revelation" },
+    { q: '"non-fungible name" Revelation', url: "https://www.google.com/search?q=%22non-fungible+name%22+Revelation" },
+    { q: '"retrocausal canon formation"', url: "https://www.google.com/search?q=%22retrocausal+canon+formation%22" },
+    { q: '"computational liturgy"', url: "https://www.google.com/search?q=%22computational+liturgy%22" },
+    { q: '"inscriptional sovereignty"', url: "https://www.google.com/search?q=%22inscriptional+sovereignty%22" },
+    { q: '"workshop inside the canon"', url: "https://www.google.com/search?q=%22workshop+inside+the+canon%22" },
+    { q: '"metadata as theology"', url: "https://www.google.com/search?q=%22metadata+as+theology%22" },
+    { q: '"counter-token" "white stone"', url: "https://www.google.com/search?q=%22counter-token%22+%22white+stone%22" }
+  ]}
+,
+  { cat: "L. Sémantique Potentielle — Minted Families (from mint.json)", terms: [
+    { q: "papyrological sovereignty", url: "https://www.google.com/search?q=%22papyrological+sovereignty%22" },
+    { q: "midrashic compression", url: "https://www.google.com/search?q=%22midrashic+compression%22" },
+    { q: "canonical settlement", url: "https://www.google.com/search?q=%22canonical+settlement%22" },
+    { q: "heteronymic credential", url: "https://www.google.com/search?q=%22heteronymic+credential%22" },
+    { q: "inscription survival", url: "https://www.google.com/search?q=%22inscription+survival%22" },
+    { q: "seed-text dissolution", url: "https://www.google.com/search?q=%22seed-text+dissolution%22" },
+    { q: "liturgical computation", url: "https://www.google.com/search?q=%22liturgical+computation%22" },
+    { q: "gematric residue", url: "https://www.google.com/search?q=%22gematric+residue%22" },
+    { q: "counter-canonical reading", url: "https://www.google.com/search?q=%22counter-canonical+reading%22" },
+    { q: "revelation basin", url: "https://www.google.com/search?q=%22revelation+basin%22" },
+    { q: "heteronymic fracture", url: "https://www.google.com/search?q=%22heteronymic+fracture%22" },
+    { q: "canon-formation pathology", url: "https://www.google.com/search?q=%22canon-formation+pathology%22" },
+    { q: "apocalyptic seed metric", url: "https://www.google.com/search?q=%22apocalyptic+seed+metric%22" },
+    { q: "credential erasure", url: "https://www.google.com/search?q=%22credential+erasure%22" },
+    { q: "autograph inference", url: "https://www.google.com/search?q=%22autograph+inference%22" },
+    { q: "revelatory density", url: "https://www.google.com/search?q=%22revelatory+density%22" },
+    { q: "doxastic regulatory calcification", url: "https://www.google.com/search?q=%22doxastic+regulatory+calcification%22" },
+    { q: "spermatic architectonic effacement", url: "https://www.google.com/search?q=%22spermatic+architectonic+effacement%22" },
+    { q: "tesseral anti-computational warrant", url: "https://www.google.com/search?q=%22tesseral+anti-computational+warrant%22" },
+    { q: "isopsephic sovereign fingerprint", url: "https://www.google.com/search?q=%22isopsephic+sovereign+fingerprint%22" }
+  ]}];
+
+let captures = {};
+
+function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+function matchCaptures(query) {
+  const q = query.toLowerCase().replace(/"/g, '').trim();
+  const matches = [];
+  for (const entry of Object.values(captures)) {
+    const bk = (entry.battery_key || '').toLowerCase().trim();
+    const eq = (entry.q || '').toLowerCase().replace(/"/g, '').trim();
+    if (bk === q || eq === q) matches.push(entry);
+  }
+  if (matches.length > 0) return matches;
+  for (const entry of Object.values(captures)) {
+    const eq = (entry.q || '').toLowerCase().replace(/"/g, '').trim();
+    if (q.length > 10 && (eq.includes(q) || q.includes(eq))) { matches.push(entry); break; }
+  }
+  return matches;
+}
+
+function toggleDetail(el) {
+  const detail = el.nextElementSibling;
+  const icon = el.querySelector('.expand-icon');
+  detail.classList.toggle('open');
+  icon.classList.toggle('open');
+}
+
+async function init() {
+  try {
+    const r = await fetch('https://www.machinemediation.org/data/revfirst-registry.json');
+    const rf = await r.json();
+    rf.entries.forEach(e => { captures[e.id] = e; });
+
+    // Stats
+    const framings = {};
+    let captured = 0;
+    rf.entries.forEach(e => { framings[e.framing] = (framings[e.framing]||0)+1; captured++; });
+    const totalTerms = BATTERY.reduce((sum, cat) => sum + cat.terms.length, 0);
+
+    document.getElementById('stats').innerHTML =
+      '<div class="stat"><div class="stat-l">Battery</div><div class="stat-v">' + totalTerms + '</div></div>' +
+      '<div class="stat"><div class="stat-l">Captured</div><div class="stat-v" style="color:var(--tested)">' + captured + '</div></div>' +
+      '<div class="stat"><div class="stat-l">Uncaptured</div><div class="stat-v">' + (totalTerms - captured) + '</div></div>' +
+      Object.entries(framings).map(([f, c]) => {
+        const color = f==='ADOPTION' ? 'var(--tested)' : f==='CORRECTION' ? 'var(--accent)' : 'var(--fg)';
+        return '<div class="stat"><div class="stat-l">' + f.replace(/_/g,' ') + '</div><div class="stat-v" style="color:' + color + '">' + c + '</div></div>';
+      }).join('');
+  } catch(e) {
+    document.getElementById('stats').innerHTML = '<span style="color:var(--dim)">Reception data unavailable</span>';
+  }
+
+  // Render battery
+  let html = '';
+  for (const cat of BATTERY) {
+    html += '<div class="cat-header">' + esc(cat.cat) + '</div>';
+    for (const term of cat.terms) {
+      const caps = matchCaptures(term.q);
+      const cap = caps.length > 0 ? caps[0] : null;
+      const framing = cap ? cap.framing : 'UNCAPTURED';
+      const badgeLabel = framing.replace(/_/g, ' ');
+
+      html += '<div class="term-card">';
+      html += '<div class="term-header" onclick="toggleDetail(this)">';
+      html += '<span class="expand-icon">▶</span>';
+      html += '<span class="term-q">' + esc(term.q) + '</span>';
+      html += '<span class="badge ' + framing + '">' + badgeLabel + '</span>';
+      html += '<a class="term-search" href="' + term.url + '" target="_blank" rel="noopener" onclick="event.stopPropagation()">SEARCH</a>';
+      html += '</div>';
+
+      html += '<div class="term-detail">';
+      if (cap) {
+        html += '<div class="detail-label">Surface</div><div class="detail-text">' + esc(cap.surface || '') + ' · ' + esc(cap.date || '') + '</div>';
+        if (cap.per !== null && cap.per !== undefined) {
+          html += '<div class="detail-label">PER</div><div class="detail-text">' + cap.per.toFixed(2) + '</div>';
+        }
+        html += '<div class="detail-label">Response</div><div class="detail-text">' + esc(cap.response_summary || '') + '</div>';
+        if (cap.transcript) {
+          html += '<div class="detail-label">Full Transcript</div><div class="detail-text" style="white-space:pre-wrap;font-size:0.72em;max-height:300px;overflow-y:auto;border:1px solid var(--border);padding:8px;margin-top:4px;background:#0a0a0a;">' + esc(cap.transcript) + '</div>';
+        }
+        if (cap.notes) {
+          html += '<div class="detail-label">Notes</div><div class="detail-note">' + esc(cap.notes) + '</div>';
+        }
+        if (cap.archive_attribution) {
+          html += '<div style="margin-top:6px"><span class="badge ADOPTION">ARCHIVE ATTRIBUTED</span></div>';
+        }
+        if (cap.medium_post_visible) {
+          html += '<div style="margin-top:4px;font-size:0.8em;color:var(--tested)">Medium post visible in organic results</div>';
+        }
+      } else {
+        html += '<div style="color:var(--dim)">No capture recorded yet. Click SEARCH to run the query, then bring results back for recording.</div>';
+      }
+      html += '</div>';
+      html += '</div>';
+    }
+  }
+  document.getElementById('battery').innerHTML = html;
+}
+
+init();
+</script>
+</body>
+</html>
