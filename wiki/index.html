@@ -37,6 +37,8 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:16px}
   <a href="/browse/">Browse</a>
   <a href="/wiki/" class="active">Wiki</a>
   <a href="/graph/">Graph</a>
+  <a href="/lexical/">Lexical</a>
+  <a href="/citations/">Citations</a>
   <a href="/principles/">Principles</a>
   <a href="/guide/">Guide</a>
   <a href="/manifest/">Manifest</a>
@@ -53,7 +55,15 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:16px}
 </div>
 
 <script>
-fetch('/data/registry.json').then(function(r){return r.json()}).then(function(reg){
+// Wire-in (Phase E): use Phase C concept↔deposit backlinks alongside the
+// classical d.entities[] source. Two fetches in parallel — registry + entity-index.
+Promise.all([
+  fetch('/data/registry.json').then(function(r){return r.json()}),
+  fetch('/data/entity-index.json').then(function(r){return r.json()}).catch(function(){return {concepts:{}}})
+]).then(function(results){
+  var reg = results[0];
+  var eidx = results[1] || {concepts:{}};
+  var conceptIndex = eidx.concepts || {};  // term -> {defined_in, referenced_in, reference_count, ...}
   var deps=reg.deposits||[];
   var el=document.getElementById('articles');
   
@@ -67,6 +77,14 @@ fetch('/data/registry.json').then(function(r){return r.json()}).then(function(re
       }
       if(!entityIndex[e.object]){
         entityIndex[e.object]={name:e.object,type:'referenced'};
+      }
+    });
+    // Wire-in: also add references_concepts (Phase C field) — these are
+    // terms KNOWN to appear in this deposit's text (case-sensitive substring
+    // match across the corpus). They guarantee linkable strings.
+    (d.references_concepts||[]).forEach(function(term){
+      if(!entityIndex[term]){
+        entityIndex[term]={name:term,type:'concept'};
       }
     });
   });
@@ -140,12 +158,42 @@ fetch('/data/registry.json').then(function(r){return r.json()}).then(function(re
         return '<a href="/graph/?search='+encodeURIComponent(c)+'">'+c+'</a>';
       }).join('');
       
+      // Wire-in: "Referenced concepts" — Phase C field on the deposit. These are
+      // concept names known to appear in this deposit's text but defined elsewhere.
+      // Cap visible to keep cards readable; tail link goes to graph filtered.
+      var refConcepts = (d.references_concepts||[]);
+      var refConceptsShown = refConcepts.slice(0, 24);
+      var refConceptsHtml = '';
+      if(refConcepts.length){
+        refConceptsHtml = '<div class="defines" style="margin-top:6px">'+
+          '<strong style="color:var(--teal)">References:</strong> '+
+          refConceptsShown.map(function(c){
+            return '<a href="/graph/?search='+encodeURIComponent(c)+'">'+c+'</a>';
+          }).join('') +
+          (refConcepts.length>24 ? ' <span style="color:var(--dim);font-size:0.85em">+'+(refConcepts.length-24)+' more</span>' : '') +
+          '</div>';
+      }
+      
+      // Wire-in: reference-count summary across concepts defined here
+      var refTotal = 0;
+      concepts.forEach(function(c){
+        var ci = conceptIndex[c];
+        if(ci && ci.reference_count) refTotal += ci.reference_count;
+      });
+      var refTotalHtml = '';
+      if(refTotal > 0){
+        refTotalHtml = '<div style="margin-top:4px;font-size:0.78em;color:var(--dim)">'+
+          'Concepts defined here referenced across <strong>'+refTotal+'</strong> other-deposit citations.</div>';
+      }
+      
       return '<div style="margin-bottom:32px">'+
         '<div class="axn-badge">'+d.axn+'</div>'+
         '<h1 style="font-size:1.3em;margin-bottom:4px"><a href="/records/?id='+d.issue_number+'" style="color:var(--accent)">'+d.title+'</a></h1>'+
         '<div class="meta">'+d.creator+' · '+d.date+' · '+d.content_type+'</div>'+
         '<div class="article">'+articleHtml+'</div>'+
         (concepts.length?'<div class="defines"><strong style="color:var(--teal)">Defines:</strong> '+conceptLinks+'</div>':'')+
+        refConceptsHtml +
+        refTotalHtml +
         '<div style="margin-top:8px;font-size:0.82em"><a href="/records/?id='+d.issue_number+'">Full record →</a></div>'+
         '</div>';
     }).join('');

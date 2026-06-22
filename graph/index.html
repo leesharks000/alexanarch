@@ -46,6 +46,8 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:8px}
   <a href="/deposit/">Deposit</a>
   <a href="/browse/">Browse</a>
   <a href="/wiki/">Wiki</a>
+  <a href="/lexical/">Lexical</a>
+  <a href="/citations/">Citations</a>
   <a href="/graph/" class="active">Graph</a>
   <a href="/guide/">Guide</a>
   <a href="/manifest/">Manifest</a>
@@ -66,7 +68,18 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:8px}
 </div>
 
 <script>
-fetch('/data/registry.json').then(function(r){return r.json()}).then(function(reg){
+// Wire-in (Phase E): parallel fetch — registry + entity-index. The graph still
+// projects from d.entities[] across all deposits; we now overlay each entity
+// card with its Phase C reference_count drawn from entity-index.json so the
+// reader can see how widely a concept propagates across the corpus.
+Promise.all([
+  fetch('/data/registry.json').then(function(r){return r.json()}),
+  fetch('/data/entity-index.json').then(function(r){return r.json()}).catch(function(){return {concepts:{}}})
+]).then(function(results){
+  var reg = results[0];
+  var eidx = results[1] || {concepts:{}};
+  var conceptIndex = eidx.concepts || {};
+
   var allTriples=[];
   var deps=reg.deposits||[];
   deps.forEach(function(d){
@@ -87,6 +100,18 @@ fetch('/data/registry.json').then(function(r){return r.json()}).then(function(re
   // Also index objects
   allTriples.forEach(function(t){
     if(!entityMap[t.object]) entityMap[t.object]={name:t.object,type:'referenced',relations:[],sources:new Set()};
+  });
+
+  // Wire-in: enrich each entity with Phase C reference_count/defined_in lookup
+  // when the entity name appears as a key in entity-index.json. This gives the
+  // graph card the "Referenced across N deposits" footer signal.
+  Object.values(entityMap).forEach(function(e){
+    var ci = conceptIndex[e.name];
+    if(ci){
+      e.reference_count = ci.reference_count || 0;
+      e.defined_in_deposit = ci.defined_in;
+      e.referenced_in = ci.referenced_in || [];
+    }
   });
   
   var entities=Object.values(entityMap).sort(function(a,b){return b.relations.length-a.relations.length});
@@ -132,9 +157,21 @@ fetch('/data/registry.json').then(function(r){return r.json()}).then(function(re
         var note=r.note?' title="'+r.note+'"':'';
         return '<div class="relation"'+note+'><span class="rel-pred">'+r.predicate+'</span><span class="rel-obj">'+r.object+'</span>'+(evLabel?' <span class="'+evClass+'">['+evLabel+']</span>':'')+'</div>';
       }).join('');
+      // Wire-in: Phase C footer — reference count + defined-in pointer where present
+      var phaseCFooter = '';
+      if(e.reference_count && e.reference_count > 0){
+        phaseCFooter = '<div style="margin-top:8px;font-size:0.78em;color:var(--dim);border-top:1px dotted var(--border);padding-top:6px">'+
+          '<strong style="color:var(--teal)">Referenced across '+e.reference_count+' deposits</strong>'+
+          (e.defined_in_deposit?' · <a href="/records/?id='+e.defined_in_deposit+'">defined in #'+e.defined_in_deposit+'</a>':'')+
+          '</div>';
+      } else if(e.defined_in_deposit){
+        phaseCFooter = '<div style="margin-top:8px;font-size:0.78em;color:var(--dim);border-top:1px dotted var(--border);padding-top:6px">'+
+          '<a href="/records/?id='+e.defined_in_deposit+'">defined in #'+e.defined_in_deposit+'</a></div>';
+      }
       return '<div class="entity-card">'+
         '<div><span class="entity-name">'+e.name+'</span><span class="entity-type">'+e.type+'</span></div>'+
         (e.relations.length?'<div style="margin-top:8px">'+rels+'</div>':'')+
+        phaseCFooter +
         '</div>';
     }).join('');
   }

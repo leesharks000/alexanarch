@@ -184,13 +184,56 @@
       "canonical_path": "/s/wiki/index.html",
       "derived_from": "/data/registry.json wiki_article fields + /data/entity-index.json defined_in + reference_count fields",
       "regenerated_by": "scripts/regenerate_surfaces.py (regenerate_wiki)",
-      "shows": "auto-projected wiki entries for every deposit with non-empty wiki_article; canonical v2 AXN; Defines list from entity-index; reference-count summary"
+      "shows": "auto-projected wiki entries for every deposit with non-empty wiki_article; canonical v2 AXN; Defines list from entity-index; reference-count summary",
+      "role": "static_fallback",
+      "note": "Static crawler-readable projection. The primary surface is the dynamic /wiki/ page (see wiki_dynamic)."
     },
     "graph_html": {
       "canonical_path": "/s/graph/index.html",
       "derived_from": "/data/entity-index.json entity_triples + /data/citation-graph.json edges",
       "regenerated_by": "scripts/regenerate_surfaces.py (regenerate_graph)",
-      "shows": "concept relations (subject-predicate-object with evidence_status badges) + deposit citation edges (capped at 1500 + 500 respectively for page size)"
+      "shows": "concept relations (subject-predicate-object with evidence_status badges) + deposit citation edges (capped at 1500 + 500 respectively for page size)",
+      "role": "static_fallback",
+      "note": "Static crawler-readable projection. The primary surface is the dynamic /graph/ page (see graph_dynamic)."
+    },
+    "wiki_dynamic": {
+      "canonical_path": "/wiki/index.html",
+      "role": "primary",
+      "type": "dynamic_js",
+      "reads": [
+        "/data/registry.json",
+        "/data/entity-index.json"
+      ],
+      "features": "auto-linking of entity names, AXNs, and references_concepts (Phase C) within article text; search; Defines + References + reference-count footer per article"
+    },
+    "graph_dynamic": {
+      "canonical_path": "/graph/index.html",
+      "role": "primary",
+      "type": "dynamic_js",
+      "reads": [
+        "/data/registry.json",
+        "/data/entity-index.json"
+      ],
+      "features": "entity cards grouped by subject; type filter chips computed at run time; search; Phase C reference_count + defined_in_deposit overlay per card"
+    },
+    "lexical": {
+      "canonical_path": "/lexical/index.html",
+      "role": "primary",
+      "type": "dynamic_js",
+      "reads": [
+        "/data/lexical-minting-registry.json"
+      ],
+      "features": "paginated alphabetical view of 12,032 minted terms; search; per-term type and defining-deposit link; alpha jump bar"
+    },
+    "citations": {
+      "canonical_path": "/citations/index.html",
+      "role": "primary",
+      "type": "dynamic_js",
+      "reads": [
+        "/data/citation-graph.json",
+        "/data/registry.json"
+      ],
+      "features": "paginated citation edges grouped by source deposit; via-type filter chips with counts; search; AXN-resolved target links"
     }
   },
   "scripts": {
