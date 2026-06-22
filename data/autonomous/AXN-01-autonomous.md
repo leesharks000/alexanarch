@@ -50,7 +50,7 @@ data_sources:
   - data/registry.json
   - data/entity-index.json
   - data/semantic-addresses.json
-generated_at: "2026-06-22T09:26:14Z"
+generated_at: "2026-06-22T10:02:06Z"
 autonomous_doc_version: 1.0
 ---
 
@@ -834,20 +834,20 @@ Every factual claim in this paper is tagged. Claims without tags are structural 
 
 ### Citations
 
-- {'key': 'shumailov2024', 'title': 'AI Models Collapse When Trained on Recursively Generated Data', 'authors': ['Shumailov, I.', 'Shumaylov, Z.', 'Zhao, Y.', 'Papernot, N.', 'Anderson, R.', 'Gal, Y.'], 'year': 2024, 'journal': 'Nature', 'volume': '631', 'pages': '755–759', 'doi': '10.1038/s41586-024-07566-y', 'url': 'https://doi.org/10.1038/s41586-024-07566-y', 'role': 'Foundational — defines model collapse in generative systems; extended here to moderation classifiers'}
-- {'key': 'morin2026', 'title': 'The Quiet Exclusion of Independent Researchers', 'authors': ['Morin, F.'], 'year': 2026, 'journal': 'quietexclusion.org / SSRN', 'doi': '10.2139/ssrn.6722491', 'url': 'https://quietexclusion.org', 'role': 'Framework — quiet/loud exclusion distinction; extended to repository-scale enforcement'}
-- {'key': 'gillespie2014', 'title': 'The Relevance of Algorithms', 'authors': ['Gillespie, T.'], 'year': 2014, 'journal': 'Media Technologies (MIT Press)', 'doi': '10.7551/mitpress/9780262525374.003.0009', 'url': 'https://doi.org/10.7551/mitpress/9780262525374.003.0009', 'role': 'Platform governance — algorithms as editorial systems'}
-- {'key': 'pasquale2015', 'title': 'The Black Box Society: The Secret Algorithms That Control Money and Information', 'authors': ['Pasquale, F.'], 'year': 2015, 'journal': 'Harvard University Press', 'url': 'https://www.hup.harvard.edu/books/9780674970847', 'role': 'Platform opacity — accountability gaps in algorithmic governance'}
-- {'key': 'merton1968', 'title': 'The Matthew Effect in Science', 'authors': ['Merton, R. K.'], 'year': 1968, 'journal': 'Science', 'volume': '159', 'issue': '3810', 'pages': '56–63', 'doi': '10.1126/science.159.3810.56', 'url': 'https://doi.org/10.1126/science.159.3810.56', 'role': 'Cumulative advantage — institutional recognition compounds independent of merit'}
-- {'key': 'wilkinson2016', 'title': 'The FAIR Guiding Principles for Scientific Data Management and Stewardship', 'authors': ['Wilkinson, M. D.', 'Dumontier, M.', 'Aalbersberg, I. J.', 'et al.'], 'year': 2016, 'journal': 'Scientific Data', 'volume': '3', 'pages': '160018', 'doi': '10.1038/sdata.2016.18', 'url': 'https://doi.org/10.1038/sdata.2016.18', 'role': 'FAIR Principles — metadata persistence standard applied in incident assessment'}
-- {'key': 'lin2020', 'title': 'The TRUST Principles for Digital Repositories', 'authors': ['Lin, D.', 'Crabtree, J.', 'Dillo, I.', 'et al.'], 'year': 2020, 'journal': 'Scientific Data', 'volume': '7', 'pages': '144', 'doi': '10.1038/s41597-020-0486-7', 'url': 'https://doi.org/10.1038/s41597-020-0486-7', 'role': 'TRUST Principles — transparency and responsibility framework for incident assessment'}
-- {'key': 'tennant2017', 'title': 'A Multi-Disciplinary Perspective on Emergent and Future Innovations in Peer Review', 'authors': ['Tennant, J. P.', 'Dugan, J. M.', 'Graziotin, D.', 'et al.'], 'year': 2017, 'journal': 'F1000Research', 'volume': '6', 'pages': '1151', 'doi': '10.12688/f1000research.12037.3', 'url': 'https://doi.org/10.12688/f1000research.12037.3', 'role': 'Peer review innovation — alternatives to traditional gatekeeping'}
-- {'key': 'perdomo2020', 'title': 'Performative Prediction', 'authors': ['Perdomo, J. C.', 'Zrnic, T.', 'Mendler-Dünner, C.', 'Hardt, M.'], 'year': 2020, 'journal': 'Proceedings of the 37th International Conference on Machine Learning', 'url': 'https://arxiv.org/abs/2002.06673', 'role': 'Feedback loops — deployed decisions reshape training distributions'}
-- {'key': 'ensign2016', 'title': 'Runaway Feedback Loops in Predictive Policing', 'authors': ['Ensign, D.', 'Friedler, S. A.', 'Neville, S.', 'Scheidegger, C.', 'Venkatasubramanian, S.'], 'year': 2016, 'journal': 'Proceedings of the 1st Conference on Fairness, Accountability and Transparency', 'url': 'https://arxiv.org/abs/1706.09847', 'role': 'Classifier feedback contraction — enforcement decisions bias future enforcement'}
+- Shumailov, I., Shumaylov, Z., Zhao, Y., et al. (2024) *AI Models Collapse When Trained on Recursively Generated Data*. Nature. DOI: [10.1038/s41586-024-07566-y](https://doi.org/10.1038/s41586-024-07566-y) — *Foundational — defines model collapse in generative systems; extended here to moderation classifiers*
+- Morin, F. (2026) *The Quiet Exclusion of Independent Researchers*. quietexclusion.org / SSRN. DOI: [10.2139/ssrn.6722491](https://doi.org/10.2139/ssrn.6722491) — *Framework — quiet/loud exclusion distinction; extended to repository-scale enforcement*
+- Gillespie, T. (2014) *The Relevance of Algorithms*. Media Technologies (MIT Press). DOI: [10.7551/mitpress/9780262525374.003.0009](https://doi.org/10.7551/mitpress/9780262525374.003.0009) — *Platform governance — algorithms as editorial systems*
+- Pasquale, F. (2015) *The Black Box Society: The Secret Algorithms That Control Money and Information*. Harvard University Press. [link](https://www.hup.harvard.edu/books/9780674970847) — *Platform opacity — accountability gaps in algorithmic governance*
+- Merton, R. K. (1968) *The Matthew Effect in Science*. Science. DOI: [10.1126/science.159.3810.56](https://doi.org/10.1126/science.159.3810.56) — *Cumulative advantage — institutional recognition compounds independent of merit*
+- Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., et al. (2016) *The FAIR Guiding Principles for Scientific Data Management and Stewardship*. Scientific Data. DOI: [10.1038/sdata.2016.18](https://doi.org/10.1038/sdata.2016.18) — *FAIR Principles — metadata persistence standard applied in incident assessment*
+- Lin, D., Crabtree, J., Dillo, I., et al. (2020) *The TRUST Principles for Digital Repositories*. Scientific Data. DOI: [10.1038/s41597-020-0486-7](https://doi.org/10.1038/s41597-020-0486-7) — *TRUST Principles — transparency and responsibility framework for incident assessment*
+- Tennant, J. P., Dugan, J. M., Graziotin, D., et al. (2017) *A Multi-Disciplinary Perspective on Emergent and Future Innovations in Peer Review*. F1000Research. DOI: [10.12688/f1000research.12037.3](https://doi.org/10.12688/f1000research.12037.3) — *Peer review innovation — alternatives to traditional gatekeeping*
+- Perdomo, J. C., Zrnic, T., Mendler-Dünner, C., et al. (2020) *Performative Prediction*. Proceedings of the 37th International Conference on Machine Learning. [link](https://arxiv.org/abs/2002.06673) — *Feedback loops — deployed decisions reshape training distributions*
+- Ensign, D., Friedler, S. A., Neville, S., et al. (2016) *Runaway Feedback Loops in Predictive Policing*. Proceedings of the 1st Conference on Fairness, Accountability and Transparency. [link](https://arxiv.org/abs/1706.09847) — *Classifier feedback contraction — enforcement decisions bias future enforcement*
 
 ---
 
-*Generated by scholia_generator.py from canonical state at 2026-06-22T09:26:14Z*
+*Generated by scholia_generator.py from canonical state at 2026-06-22T10:02:06Z*
 *This document is autonomous: the front-matter declares its schema, the closing scholia carries its definitions.*
 
 ∮ = 1

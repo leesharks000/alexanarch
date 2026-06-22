@@ -331,19 +331,31 @@ In current term count order (excluding completed):
 | Phase 3 — Inline markers retro | Not started | Low priority; markers cleanly parseable when authored |
 | Phase 4 — Author workflow | Not started | Activates with first new deposit composed under the protocol |
 
-#### Proof-of-concept run (4 deposits)
+#### Bulk run across whole archive (end of session 3)
 
 ```
-#870 workplan:        5 TX_MINT       (the 5 concepts minted by this very doc)
-#1   Zenodotus:      12 TX            (11 MINT + 1 REVISE)
-#229 SE Lexicon:    247 TX            (214 MINT + 15 SPECIFY + 8 DEVELOP + 4 REVISE + 6 INVOKE)
-#499 ASW monograph: 212 TX            (164 MINT + 28 SPECIFY + 3 DEVELOP + 17 INVOKE)
-Cold-start ephemeral: 1 TX_HASH      (raw text without front-matter → SHA-256 anchor)
+870 deposits → 870 autonomous docs in data/autonomous/  (3 seconds, 29 MB)
+869 docs ingested → 669 transactions in data/ledger/cha.ledger (1 second, 142 KB)
 
-Total: 477 transactions across 5 nodes in data/ledger/cha.ledger
+3 ephemeral hash anchors (deposits using non-standard YAML field names —
+  correctly anchored by TX_HASH for downstream reconstruction)
+
+TX type breakdown:
+  TX_MINT     464   (concepts coined)
+  TX_SPECIFY   71   (formal operators)
+  TX_INVOKE    51   (semantic addresses claimed)
+  TX_DEVELOP   28   (existing concepts built up)
+  TX_FOUND     21   (institutions, journals, rooms)
+  TX_REVISE    19   (meanings extended)
+  TX_POSITION  12   (entities placed in roles)
+  TX_HASH       3   (ephemeral SHA-256 anchors)
 ```
 
-The ledger is plaintext, pipe-delimited, one-line-per-transaction. Truncation at any byte boundary leaves all preceding lines valid. No JSON brackets to break. New TX types extend transparently — old readers ignore unknown types instead of crashing.
+Most deposits show low transaction counts because the reading pass has
+only processed ~10 deposits in depth. As reading progresses, the ledger
+grows organically — each new concept's `defined_in` field translates
+into a TX on the next bulk regenerate. The infrastructure is built once;
+the corpus density accrues as scholarly work proceeds.
 
 ### Credentials rotation queue (urgent)
 

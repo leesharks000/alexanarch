@@ -194,6 +194,46 @@ def slugify(s):
     return re.sub(r'[^a-z0-9]+', '_', s.lower()).strip('_')
 
 
+def has_real_yaml_frontmatter(text):
+    """
+    Strict detection: a doc has real YAML front-matter if and only if
+    (a) it starts with '---' on its own line
+    (b) within the next 30 lines, at least one 'key: value' pattern appears
+        BEFORE any markdown content (heading, bold line) or closing '---'
+    (c) the closing '---' appears within the first 100 lines
+
+    Distinguishes real front-matter from prose that happens to start with
+    '---' as a markdown horizontal rule.
+    """
+    lines = text.lstrip().split('\n')
+    if not lines or lines[0].strip() != '---':
+        return False
+    found_kv = False
+    closed = False
+    for i, line in enumerate(lines[1:101], start=1):
+        stripped = line.strip()
+        if stripped == '---':
+            closed = True
+            break
+        if not stripped or stripped.startswith('#'):
+            # Empty line: ok in YAML. Heading: not in YAML.
+            if stripped.startswith('#'):
+                return False
+            continue
+        # Look for key: value pattern (allowing nested lists `  - foo`)
+        if re.match(r'^[a-zA-Z_][a-zA-Z0-9_]*\s*:\s*\S', line) or \
+           re.match(r'^[a-zA-Z_][a-zA-Z0-9_]*\s*:\s*$', line):
+            found_kv = True
+        elif re.match(r'^\s+-\s+\S', line):
+            continue  # list item
+        elif re.match(r'^\s+[a-zA-Z_][a-zA-Z0-9_]*\s*:', line):
+            continue  # nested key
+        else:
+            # Some other content — probably not YAML
+            return False
+    return found_kv and closed
+
+
 def closing_scholia(deposit, minted, addresses_for_deposit):
     """Render the prose-formatted closing scholia."""
     lines = ['', '---', '', '## SCHOLIA', '']
@@ -259,11 +299,47 @@ def closing_scholia(deposit, minted, addresses_for_deposit):
         lines.append('')
 
     # Citations from deposit
-    if deposit.get('references') or deposit.get('citations'):
+    deposit_refs = deposit.get('references') or deposit.get('citations') or []
+    if deposit_refs:
         lines.append('### Citations')
         lines.append('')
-        for ref in deposit.get('references', []) or deposit.get('citations', []):
-            lines.append(f'- {ref}')
+        for ref in deposit_refs:
+            if isinstance(ref, dict):
+                # Render as prose
+                authors = ref.get('authors', [])
+                if isinstance(authors, list) and authors:
+                    author_str = ', '.join(authors[:3])
+                    if len(authors) > 3:
+                        author_str += ', et al.'
+                else:
+                    author_str = str(authors) if authors else ''
+                year = ref.get('year', '')
+                title = ref.get('title', '')
+                journal = ref.get('journal', '')
+                doi = ref.get('doi', '')
+                url = ref.get('url', '')
+                role = ref.get('role', '')
+
+                parts = []
+                if author_str:
+                    parts.append(author_str)
+                if year:
+                    parts.append(f"({year})")
+                if title:
+                    parts.append(f'*{title}*.')
+                if journal:
+                    parts.append(f"{journal}.")
+                if doi:
+                    parts.append(f"DOI: [{doi}](https://doi.org/{doi})")
+                elif url:
+                    parts.append(f"[link]({url})")
+
+                citation_str = ' '.join(parts)
+                if role:
+                    citation_str += f' — *{role}*'
+                lines.append(f'- {citation_str}')
+            else:
+                lines.append(f'- {ref}')
         lines.append('')
 
     # Closing colophon
@@ -296,7 +372,7 @@ def generate_autonomous_doc(deposit_number, output_dir=Path('data/autonomous')):
 
     # If prose already has its own front-matter (like the workplan), preserve it as-is
     # but still append closing scholia for the generated index.
-    has_existing_frontmatter = prose.lstrip().startswith('---\n')
+    has_existing_frontmatter = has_real_yaml_frontmatter(prose)
 
     if has_existing_frontmatter:
         # Keep original front-matter, just append scholia at end if not already there
