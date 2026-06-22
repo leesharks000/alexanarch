@@ -90,7 +90,7 @@ The numbers below are double-checked and verified against the DataCite API on 20
 - Severed DOIs → HTTP 404 (no metadata)
 - Preserved DOIs → HTTP 200 (full metadata: title, creator, subjects, descriptions, dates, relatedIdentifiers)
 - Companion dataset: `alexanarch.org/s/records/867/` (DataCite Metadata Backup) — full enumeration of both classes
-- Empirical paper: `alexanarch.org/s/records/868/` (DOIs ≠ Permanent Identifiers)
+- Empirical paper: `alexanarch.org/s/records/868/` (DOIs ≠ Persistent Identifiers)
 - Sampled re-verification on 2026-06-22: 15/15 severed returned 404; 15/15 preserved returned 200; 20/20 preserved carry IsVersionOf
 
 ### 3.4 Number-discrepancy reconciliation
@@ -200,7 +200,7 @@ All new deposits (#870 – #876) carry both new-schema (`axn_id`, `author`, `typ
 
 ### 6.2 Companion deposits
 
-- **#868** EA-MPAI-DOI-IMPERMANENCE-01 (DOIs ≠ Permanent Identifiers) — the empirical foundation
+- **#868** EA-MPAI-DOI-IMPERMANENCE-01 (DOIs ≠ Persistent Identifiers) — the empirical foundation
 - **#875** EA-MPAI-OPENAIRE-DISSOCIATION-01 (Governance Dissociation in FAIR Infrastructure) — the analytical paper
 - **#876** EA-MPAI-OPENAIRE-THREAD-01 v1.1 (OpenAIRE Helpdesk Exchange — Documentary Thread for #875) — preserves the three messages verbatim with empirically precise embedded follow-up letter
 
