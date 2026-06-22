@@ -383,7 +383,18 @@ def emit_hash_anchor(node_id, doc_hash, length, source_file):
 
 
 def append_to_ledger(transactions, ledger_path=LEDGER_PATH):
-    """Append transactions to ledger. Create parent dir if needed."""
+    """
+    Append transactions to ledger via the file_rhizome — automatic chunking
+    when size thresholds are exceeded.
+
+    When the active cha.ledger reaches the configured threshold (default 10 MB
+    or 50,000 lines), file_rhizome moves it to
+    data/ledger/chunks/cha.{timestamp}-{hash8}.ledger and catalogues it in
+    data/ledger/index.json. A fresh active file is created (with header
+    preserved) and appending continues. Readers using rh.read_all() see all
+    transactions transparently across chunks. The rhizome solves the
+    infinite-append problem at scale.
+    """
     ledger_path.parent.mkdir(parents=True, exist_ok=True)
     # If ledger doesn't exist, write a header
     if not ledger_path.exists():
@@ -393,14 +404,26 @@ def append_to_ledger(transactions, ledger_path=LEDGER_PATH):
             '# Each line is a standalone transaction. Truncation safe — no nested structures.',
             '# Schema versions transparently. New TX types are added without breaking old readers.',
             '# Replay: bottom-up reverse chronological. Fuzzy fallback: semantic proximity.',
+            '# Chunked via file_rhizome: see data/ledger/index.json for chunk catalog.',
             f'# Initialized: {now_iso()}',
             '',
         ]
         ledger_path.write_text('\n'.join(header_lines), encoding='utf-8')
 
-    with ledger_path.open('a', encoding='utf-8') as f:
+    # Route through file_rhizome (rotates if threshold exceeded)
+    try:
+        from file_rhizome import FileRhizome
+        rh = FileRhizome(active_path=ledger_path)
+        rh.append_lines([t.rstrip('\n') for t in transactions])
+        return
+    except ImportError:
+        pass
+    # Fallback if rhizome unavailable: direct append
+    with open(ledger_path, 'a') as f:
         for tx in transactions:
-            f.write(tx + '\n')
+            if not tx.endswith('\n'):
+                tx += '\n'
+            f.write(tx)
 
 
 # -------------------------- Phase 4: Fuzzy Hash Verification (replay) --------------------------
