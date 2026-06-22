@@ -38,10 +38,11 @@
 - AXN:0370 and AXN:0371 static pages regenerated to match existing enriched format (full text, download buttons, GoatCounter, proper metadata display)
 
 ### 6. Concept Extraction — Reading in Order (IN PROGRESS)
-- **80 concepts** extracted from **101 deposits** read (deposits #1-100 + #868)
+- **107 concepts** extracted from **202+ deposits** read (deposits #1-176 + #868)
+- Pipeline: wire_deposit.py reads → extracts → wires into registry + entity index + static pages → commits
 - Methodology: actual reading of deposit files + text files, not pattern matching
 - Running index: `data/entity-index-reading.json`
-- Progress: ~12% of deposits read, but the concept-defining core is concentrated in the first 100
+- Progress: ~23% of deposits read (202/868), concept density declining as expected, but the concept-defining core is concentrated in the first 100
 
 ---
 
