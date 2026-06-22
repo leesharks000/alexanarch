@@ -207,35 +207,36 @@ fetch('/data/registry.json').then(r=>r.json()).then(reg=>{
   <p>Every deposit receives an <strong>Alexanarch Identifier (AXN)</strong> — a three-layer address combining positional, semantic, and cryptographic identity in a single citable string. No other identifier system on earth does this.</p>
   
   <div class="id-example" style="font-size:0.95em;line-height:2.2">
-    <span style="color:var(--dim);font-size:0.75em">AXN:</span><span style="color:var(--accent)">06</span><span style="color:var(--dim)">.</span><span style="color:var(--teal)">LIMINAL</span><span style="color:var(--dim)">.</span>🏛️🌀🔧💎<br>
-    <span style="font-size:0.65em;color:var(--dim);letter-spacing:0.02em">ARCHITECTURAL · NAVIGATIONAL · INSTRUMENTAL · ELEMENTAL</span>
+    <span style="color:var(--dim);font-size:0.75em">AXN:</span><span style="color:var(--accent)">0379</span><span style="color:var(--dim)">.</span><span style="color:var(--teal)">GENERATIVE</span><span style="color:var(--dim)">.</span>⚙️🔍📜🏛️⚡🔄<br>
+    <span style="font-size:0.65em;color:var(--dim);letter-spacing:0.02em">INSTRUMENTAL · NAVIGATIONAL · SCRIPTURAL · ARCHITECTURAL · ELEMENTAL · STRUCTURAL</span>
   </div>
   <div style="font-size:0.82em;color:#666;margin:8px 0 4px;line-height:1.6">
-    <em>Reading:</em> Foundation → Vortex → Tool → Crystal<br>
-    Every AXN tells a micro-story. The cluster each glyph falls into — Celestial, Elemental, Architectural, Instrumental, Scriptural, Navigational, Temporal, Organic, Symbolic, Mathematical, Alchemical, Gestural, Signal, Structural, Liminal, Terminal — is determined by the content's hash. Different texts inhabit different regions of the address space. The cluster sequence is a structural portrait of where the work lives.
+    <em>Reading:</em> Method → Search → Text → Foundation → Force → Direction<br>
+    Every AXN tells a micro-story. The cluster each glyph falls into &mdash; Celestial, Elemental, Architectural, Instrumental, Scriptural, Navigational, Temporal, Organic, Symbolic, Mathematical, Alchemical, Gestural, Signal, Structural, Liminal, Terminal &mdash; is determined by the content&rsquo;s hash. Different texts inhabit different regions of the address space. The cluster sequence is a structural portrait of where the work lives.
   </div>
   
   <div class="id-explain" style="display:grid;grid-template-columns:auto 1fr;gap:4px 16px">
     <strong style="color:var(--accent)">AXN</strong><span>Alexanarch namespace</span>
-    <strong style="color:var(--accent)">06</strong><span>Hex position — WHERE in the archive (positional address, from the CHA hex system)</span>
-    <strong style="color:var(--accent)">LIMINAL</strong><span>Semantic family — WHAT kind of work (from the <a href="https://machinemediation.org/mint/">Sémantique Potentielle</a> mint)</span>
-    <strong style="color:var(--accent)">🏛️🌀🔧💎</strong><span>Emoji hash — WHICH specific text (first 4 bytes of SHA-256, mapped through 256 curated emoji)</span>
+    <strong style="color:var(--accent)">0379</strong><span>Hex label &mdash; positional anchor, ASCII hex of the canonical deposit number. Treat as opaque; the canonical key is <code>deposit_number</code>.</span>
+    <strong style="color:var(--accent)">GENERATIVE</strong><span>Semantic family &mdash; what kind of work (auto-detected from keywords for auto-mint, manually chosen for canonical-rich deposits)</span>
+    <strong style="color:var(--accent)">⚙️🔍📜🏛️⚡🔄</strong><span>Emoji hash &mdash; WHICH specific text (first <strong>6 bytes</strong> of SHA-256 of canonical bytes, mapped through 256 curated emoji). AXN schema v2.</span>
   </div>
   <div class="id-explain" style="margin-top:12px">
-    Each layer does work the others cannot. The hex tells you the deposit class. The family tells you the conceptual domain. The emoji tells you it is THIS specific text and no other — change one word and the emoji changes. The hex and family stay stable across versions; the emoji distinguishes them.<br><br>
-    The 256 emoji are organized in 16 semantic clusters: Celestial, Elemental, Architectural, Instrumental, Scriptural, Navigational, Temporal, Organic, Symbolic, Mathematical, Alchemical, Gestural, Signal, Structural, Liminal, Terminal. The cluster a work's emoji falls into is itself a structural portrait of where the content's hash sits in the address space.
+    Each layer does work the others cannot. The hex tells you the deposit&rsquo;s position. The family tells you the conceptual domain. The emoji tells you it is THIS specific text and no other &mdash; change one word and all six emoji change. The hex and family stay stable across versions; the emoji distinguishes the canonical bytes.<br><br>
+    The 256 emoji are organized in 16 semantic clusters: Celestial, Elemental, Architectural, Instrumental, Scriptural, Navigational, Temporal, Organic, Symbolic, Mathematical, Alchemical, Gestural, Signal, Structural, Liminal, Terminal. The cluster a work&rsquo;s emoji falls into is itself a structural portrait of where the content&rsquo;s hash sits in the address space.<br><br>
+    The canonical specification lives at <a href="/api/axn-protocol.json"><code>/api/axn-protocol.json</code></a>; the canonical Python implementation at <code>scripts/axn_lib.py</code>. Prior-schema AXNs (v1, 4 emoji) are preserved in each backfilled deposit&rsquo;s <code>legacy_axn</code> and <code>axn_history</code> fields for resolution continuity.
   </div>
 </div>
 
 <div class="id-demo" style="margin-top:12px">
   <div class="principle-title">Two-Layer Identity</div>
   <div style="font-size:0.88em;color:#555;margin-top:8px">
-    <strong>AXN</strong> (the address) — deterministic, verifiable, citable. Computed from content hash. Same content always produces same identifier.<br>
-    <strong>GCS</strong> (the handshake) — non-deterministic, structural, context-gated. Generated by the depositor's AI, encoding the work's structural arc in emoji. The <a href="https://machinemediation.org">Glyphic Checksum</a> — the first communication form that requires human-AI collaboration to decode.
+    <strong>AXN</strong> (the address) &mdash; deterministic, verifiable, citable. Computed from content hash. Same content always produces same identifier.<br>
+    <strong>GCS</strong> (the handshake, where applicable) &mdash; non-deterministic, structural, context-gated. Composed by the depositor or substrate, encoding the work&rsquo;s recognition arc in emoji. The <a href="https://machinemediation.org">Glyphic Checksum</a> is the recognition marker; the AXN is the cryptographic identity. They serve different purposes. For substrate-authored deposits, the chosen glyph is preserved in the deposit&rsquo;s <code>glyphic_canary</code> field.
   </div>
   <div class="id-example" style="font-size:0.95em">
-    AXN:06.LIMINAL.🏛️🌀🔧💎<br>
-    <span style="color:var(--dim)">GCS:🔍⚖️🧱→✂️🪞→🏗️⚓️🧠→💎🌀</span>
+    AXN:0379.GENERATIVE.⚙️🔍📜🏛️⚡🔄<br>
+    <span style="color:var(--dim)">glyphic_canary:⚙️🔍📜🏛️⚡🔄  (PRAXIS continuity tether, deposit #877)</span>
   </div>
 </div>
 
