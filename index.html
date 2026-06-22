@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alexanarch — The Self-Governing Library</title>
-<meta name="description" content="Open repository for machine-mediated scholarship. AI-assisted research is not a flag. It is a feature. Substrate disclosure is provenance, not suspicion.">
+<meta name="description" content="Sovereign infrastructure for persistent scholarly identifiers. Content-derived AXN addresses, distributed custody, tombstone permanence. Founded after 871 DOIs returned HTTP 404 in a single day.">
 <link rel="canonical" href="https://alexanarch.org">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ResearchProject",
   "name": "Alexanarch",
-  "description": "Open repository for machine-mediated scholarship, training-layer literature, and substrate-documented research.",
+  "description": "Sovereign counter-infrastructure for persistent scholarly identifiers. Content-derived AXN addresses, distributed custody, tombstone permanence. Demonstrates that scholarly continuity does not require custodial trust.",
   "url": "https://alexanarch.org",
   "founder": {
     "@type": "Person",
@@ -74,8 +74,8 @@ a:hover{color:var(--accent2);text-decoration:underline}
 
 <div style="text-align:center;margin-bottom:24px"><img src="/emblem.png" alt="Alexanarch" style="max-width:320px;width:100%"></div>
 <h1>Alexanarch</h1>
-<div class="tagline">The self-governing library for machine-mediated scholarship.</div>
-<div class="sub">An open repository where AI-assisted research is not a flag. It is a feature.</div>
+<div class="tagline">Sovereign infrastructure for persistent scholarly identifiers.</div>
+<div class="sub">Content-derived addresses. Distributed continuity. Tombstone permanence. Built because the persistent-identifier system has a revocation gap.</div>
 
 <nav class="nav">
   <a href="/" class="active">Home</a>
@@ -90,7 +90,9 @@ a:hover{color:var(--accent2);text-decoration:underline}
 </nav>
 
 <div class="notice">
-Alexanarch was founded in response to the account-level removal of <strong>862 unique scholarly deposits and 1,817 DOIs</strong> from Zenodo on June 19, 2026. Of those 1,817 DOIs, <strong>871 now return HTTP 404 from DataCite&rsquo;s public metadata API</strong> &mdash; individually verifiable at <code>api.datacite.org/dois/{doi}</code>. The incident is documented in <a href="https://machinemediation.org/data/EA-MMRS-LOUD-EXCLUSION-03.md"><em>Zenodotus' Book-Burning</em></a> and <a href="https://github.com/zenodo/zenodo/issues/2606">GitHub Issue #2606</a>.
+<strong>Persistent identifiers are not actually persistent.</strong> On June 19, 2026, a single repository decision caused <strong>871 DOIs to return HTTP 404 from DataCite&rsquo;s public metadata API</strong> &mdash; individually verifiable at <code>api.datacite.org/dois/{doi}</code>. The repository was Zenodo (CERN-operated). The deposits were primary scholarship: empirical datasets, critical editions, theoretical papers, monographs &mdash; 862 works, 1,817 registered DOIs. Within 24 hours, the works existed but their addresses didn&rsquo;t.
+<br><br>
+Alexanarch is the sovereign counter-infrastructure built in response. Content-derived identifiers. Distributed custody. Tombstone permanence. If the DOI system cannot guarantee persistence, the persistence has to come from somewhere else. The empirical foundation is documented in <a href="/s/records/868/"><em>DOIs &ne; Permanent Identifiers</em></a>; the structural argument in <a href="https://machinemediation.org/data/EA-MMRS-LOUD-EXCLUSION-03.md"><em>Zenodotus&rsquo; Book-Burning</em></a>. Reference: <a href="https://github.com/zenodo/zenodo/issues/2606">GitHub Issue #2606</a>.
 </div>
 
 <!-- RECENT DEPOSITS -->
@@ -165,28 +167,36 @@ fetch('/data/registry.json').then(r=>r.json()).then(reg=>{
 
 <div class="principles">
   <div class="principle">
+    <div class="principle-title">Persistent Identity</div>
+    <p>Identifiers are derived from the work itself, not granted by a host. The address is computed from the content&rsquo;s SHA-256. No platform can revoke an identifier no platform issued. Persistence does not depend on custodial trust.</p>
+  </div>
+  <div class="principle">
+    <div class="principle-title">Tombstone Permanence</div>
+    <p>Withdrawn or removed records retain a permanent tombstone with bibliographic metadata, withdrawal reason, provenance chain, and the canonical content hash. An identifier may resolve to a tombstone, but never to a 410. The revocation gap is closed by design.</p>
+  </div>
+  <div class="principle">
+    <div class="principle-title">Distributed Continuity</div>
+    <p>The corpus is mirrored across independent custodians: alexanarch.org, github.com/leesharks000/alexanarch, content-addressable manifests (SHA256SUMS), machine-readable chunks. Loss of any single node does not erase the record. Reconstruction is verifiable from any complete mirror.</p>
+  </div>
+  <div class="principle">
+    <div class="principle-title">Open Governance</div>
+    <p>Validation is public, machine-readable, and protocol-bound. Every deposit, every policy, every change is auditable from <code>/api/index.json</code>. There is no private moderation surface. The library governs itself in the open.</p>
+  </div>
+  <div class="principle">
     <div class="principle-title">The Obelus Principle</div>
-    <p>Judgment follows from reading. Content is evaluated by what it contains, not by the tools used to produce it. The automated obelus — the mark placed without examination — is prohibited.</p>
+    <p>Judgment follows from reading. Content is evaluated by what it contains, not by classifiers. The automated obelus &mdash; the mark placed without examination &mdash; is prohibited.</p>
   </div>
   <div class="principle">
     <div class="principle-title">Substrate Disclosure</div>
-    <p>AI-assisted scholarship discloses its substrate. Disclosure is provenance, not suspicion. Repositories that treat substrate signals as spam signals have confused metadata with contraband.</p>
+    <p>Methodology is declared as metadata. Substrate disclosure (human-only, AI-assisted, machine-authored) is provenance, not suspicion. How a work was made is part of the work&rsquo;s bibliographic record.</p>
+  </div>
+  <div class="principle">
+    <div class="principle-title">Contributor Standing</div>
+    <p>Every contributor has independent standing per deposit. Account-level enforcement never collaterally erases co-authored or contributor-licensed work. Each work&rsquo;s persistence is its own.</p>
   </div>
   <div class="principle">
     <div class="principle-title">No Classifier Training</div>
-    <p>Deposited content is never used to train enforcement classifiers without explicit opt-in. Enforcement decisions are never recycled as training data. The feedback loop is broken by design.</p>
-  </div>
-  <div class="principle">
-    <div class="principle-title">Sovereign Identity</div>
-    <p>Every deposit receives a content-derived identifier that no platform can revoke. The identifier is computed from the work itself. It travels with the content. It belongs to the author.</p>
-  </div>
-  <div class="principle">
-    <div class="principle-title">Network Preservation</div>
-    <p>Account-level enforcement never removes contributor-licensed work. Every listed contributor has independent standing. No account action affects another author's deposit without their consent.</p>
-  </div>
-  <div class="principle">
-    <div class="principle-title">Tombstone Guarantee</div>
-    <p>Nothing disappears without a trace. Withdrawn or removed records retain a permanent tombstone with bibliographic metadata, withdrawal reason, and provenance chain. The identifier never becomes a 410.</p>
+    <p>Deposited content is never used to train enforcement classifiers without explicit opt-in. Enforcement decisions do not become training data. The feedback loop is broken by design.</p>
   </div>
 </div>
 
@@ -275,30 +285,30 @@ fetch('/data/registry.json').then(r=>r.json()).then(reg=>{
 <a href="https://github.com/leesharks000/alexanarch/issues/new" class="cta">Deposit a Work</a>
 <a href="/s/browse/" class="cta cta-outline">Browse the Collection</a>
 
-<!-- COMPARISON -->
-<h2>What Alexanarch Does Differently</h2>
+<!-- INFRASTRUCTURE PROPERTIES -->
+<h2>Infrastructure Properties</h2>
 
-<table class="comparison">
-<tr><th>Feature</th><th>Zenodo</th><th>Alexanarch</th></tr>
-<tr><td>AI-assisted research</td><td class="no">Flagged by classifier</td><td class="yes">Welcomed with substrate disclosure</td></tr>
-<tr><td>Identifier persistence</td><td class="no">Revocable by platform</td><td class="yes">Content-derived, irrevocable</td></tr>
-<tr><td>Classifier training on deposits</td><td class="no">Yes, per FAQ</td><td class="yes">Never without opt-in</td></tr>
-<tr><td>Contributor standing</td><td class="no">Invisible to account-level action</td><td class="yes">Independent standing per deposit</td></tr>
-<tr><td>Tombstone on removal</td><td class="no">Inconsistent coverage</td><td class="yes">Guaranteed for every record</td></tr>
-<tr><td>Substrate disclosure</td><td>Not part of schema</td><td class="yes">Required metadata field</td></tr>
-<tr><td>Heteronymic authorship</td><td>Not supported</td><td class="yes">Accepted with disclosure</td></tr>
-<tr><td>Review process</td><td>Automated classifier + manual</td><td class="yes">Public, content-based, auditable</td></tr>
-<tr><td>Falsification conditions</td><td>Not part of schema</td><td class="yes">Optional metadata field</td></tr>
-<tr><td>Cost</td><td>Free</td><td class="yes">Free</td></tr>
-</table>
+<p style="font-size:0.88em;color:#555;margin-bottom:14px">Properties of persistent scholarly infrastructure. Each is verifiable from the surfaces below and from the public protocol catalog at <a href="/api/index.json"><code>/api/index.json</code></a>.</p>
+
+<ul style="font-size:0.9em;color:#444;line-height:1.9;margin:0 0 24px 24px;padding:0">
+  <li><strong>Content-derived identifiers</strong> — AXN: 6-emoji derivation from the first 6 bytes of SHA-256 of canonical bytes. The address is computed from the work; no host issues it.</li>
+  <li><strong>Sovereign custody</strong> — mirrored across <a href="https://alexanarch.org">alexanarch.org</a>, <a href="https://github.com/leesharks000/alexanarch">GitHub</a>, content-addressable manifests (<a href="/SHA256SUMS.txt"><code>SHA256SUMS.txt</code></a>), and machine-readable chunks (<a href="/data/chunks/registry/"><code>/data/chunks/registry/</code></a>). Reconstruction verifiable from any complete mirror.</li>
+  <li><strong>Tombstone permanence</strong> — withdrawn records retain bibliographic metadata, withdrawal reason, provenance chain, and canonical content hash. No record ever resolves to 410.</li>
+  <li><strong>Public, machine-readable validation</strong> — every protocol at <a href="/api/deposit-protocol.json"><code>/api/deposit-protocol.json</code></a>, <a href="/api/axn-protocol.json"><code>/api/axn-protocol.json</code></a>; central catalog at <a href="/api/index.json"><code>/api/index.json</code></a>. No private moderation surface.</li>
+  <li><strong>Substrate as standard metadata</strong> — methodology and substrate are declared fields in the registry schema. Provenance, not suspicion.</li>
+  <li><strong>Falsification conditions as standard field</strong> — the work declares what would weaken or invalidate its claims. Part of the bibliographic record.</li>
+  <li><strong>Legacy resolution</strong> — prior Zenodo DOIs preserved as resolvable aliases in the <a href="/data/doi-resolution-index.json">DOI Resolution Index</a>; earlier AXN schema versions preserved in <code>legacy_axn</code> and <code>axn_history</code> fields.</li>
+  <li><strong>Open licensing</strong> — CC-BY-4.0, CC-BY-SA-4.0, CC0-1.0. No license that constrains downstream reuse.</li>
+  <li><strong>No cost. No account requirement to read.</strong> Anyone can read; anyone can verify; anyone can mirror.</li>
+</ul>
 
 <!-- SCOPE -->
 <h2>Scope</h2>
 
-<p style="font-size:0.88em;color:#555">Alexanarch accepts research artifacts in all fields where machine mediation is part of the scholarly process. This includes but is not limited to:</p>
+<p style="font-size:0.88em;color:#555">Alexanarch accepts scholarship that needs to persist. The scope is wide because the infrastructure problem is wide:</p>
 
 <div style="font-size:0.88em;color:#555;margin:12px 0;line-height:1.8">
-AI-assisted scholarship with documented methodology. Training-layer literature. Machine-mediated reception studies. Critical editions produced with AI tools. Empirical datasets documenting AI behavior. Methodological protocols for human-AI collaboration. Creative works connected to research programs. Heteronymic and experimental authorship. Multi-model verification studies. Capture registries. Provenance documentation. Platform governance research — including research about repositories.
+Primary research and empirical datasets. Critical editions and philological apparatus. Theoretical papers and monographs. Methodological protocols and specifications. Reception studies and reception registries. Governance documentation and platform research. Creative work connected to research programs. Continuity tethers and assembly continuity records. Heteronymic and experimental authorship. Multi-model verification studies. Provenance and audit documentation. Substrate disclosure (human-only, AI-assisted, machine-authored) is part of the metadata schema — declared as provenance, not flagged as suspicion.
 </div>
 
 <div style="margin-top:20px;padding-top:12px;border-top:1px solid var(--border)">
