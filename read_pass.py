@@ -8,23 +8,45 @@ For a given deposit number:
    - Apply the engagement test ("did CHA arrive, engage, leave defined?")
    - Assign engagement_type: minted | developed | revised | positioned | founded | specified
    - Mark provenance_method: read
-4. Reconcile with current entity-index.json:
-   - Promote existing entries to 'read' status with engagement_type
-   - Add terms the bold-extraction missed
-   - For terms colliding with other deposits: keep original attribution, add listed-in triple
-   - Remove any in-deposit entries that fail the engagement test
+   - If term appears in Capture Registry, add external_surfaces.capture_registry
+4. Reconcile with current entity-index.json
 5. Update registry.json d.entities for the deposit
 6. Print stats
 
 Usage:
     python3 read_pass.py <deposit_number>
-    python3 read_pass.py 229
 """
 import json
 import re
 import sys
 from pathlib import Path
 from collections import Counter
+
+
+# Load capture registry once (cross-reference source)
+_CAPTURES = None
+def _load_captures():
+    global _CAPTURES
+    if _CAPTURES is None:
+        try:
+            with open('data/EA-WG-CAPTURES-01-v8.3.json') as f:
+                data = json.load(f)
+            _CAPTURES = {}
+            for e in data.get('entries', []):
+                q = e.get('q', '').strip()
+                if q:
+                    n = re.sub(r'[^a-z0-9]', '', q.lower())
+                    _CAPTURES[n] = e
+        except FileNotFoundError:
+            _CAPTURES = {}
+    return _CAPTURES
+
+
+def capture_for(term):
+    """Return capture entry for a term if exists, else None."""
+    caps = _load_captures()
+    n = re.sub(r'[^a-z0-9]', '', term.lower())
+    return caps.get(n)
 
 
 # Engagement-type classifiers — generic, but lexicon-aware patterns
@@ -181,6 +203,15 @@ def read_deposit(deposit_number, classify_fn=default_classify,
             existing['classified'] = True
             if 'entity_triples' not in existing or not existing['entity_triples']:
                 existing['entity_triples'] = [triple_mint]
+            # Add capture-registry cross-reference if available
+            cap = capture_for(existing_key)
+            if cap:
+                existing.setdefault('external_surfaces', {})['capture_registry'] = {
+                    'slug': cap.get('slug'),
+                    'query': cap.get('q'),
+                    'match_type': cap.get('mt'),
+                    'gallery_url': f"https://godkinggoogle.vercel.app/captures/#{cap.get('slug')}"
+                }
             stats['classified_existing'] += 1
         elif term in concepts:
             # Collision with another deposit
@@ -195,13 +226,32 @@ def read_deposit(deposit_number, classify_fn=default_classify,
             existing['entity_triples'] = triples
             if len(defn) > len(existing.get('definition', '')) + 30:
                 existing['definition'] = defn[:300]
+            cap = capture_for(term)
+            if cap:
+                existing.setdefault('external_surfaces', {})['capture_registry'] = {
+                    'slug': cap.get('slug'),
+                    'query': cap.get('q'),
+                    'match_type': cap.get('mt'),
+                    'gallery_url': f"https://godkinggoogle.vercel.app/captures/#{cap.get('slug')}"
+                }
             stats['collision_logged'] += 1
         else:
-            concepts[term] = {
+            entry = {
                 'term': term, 'definition': defn[:300], 'defined_in': deposit_number,
                 'type': type_label, 'entity_triples': [triple_mint],
                 'classified': True, 'provenance_method': 'read', 'engagement_type': eng_type
             }
+            cap = capture_for(term)
+            if cap:
+                entry['external_surfaces'] = {
+                    'capture_registry': {
+                        'slug': cap.get('slug'),
+                        'query': cap.get('q'),
+                        'match_type': cap.get('mt'),
+                        'gallery_url': f"https://godkinggoogle.vercel.app/captures/#{cap.get('slug')}"
+                    }
+                }
+            concepts[term] = entry
             stats['added'] += 1
 
     # Per-deposit overrides for unmatched existing terms

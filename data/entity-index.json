@@ -1,7 +1,7 @@
 {
   "version": "5.0-deduped",
   "method": "comprehensive extraction → noise filter → deduplication + reading pass",
-  "total_terms": 7042,
+  "total_terms": 7081,
   "concepts": {
     "A-leg (Availability) Operator": {
       "term": "A-leg (Availability) Operator",
@@ -1692,7 +1692,7 @@
       "term": "Archontic Capture (⊗)",
       "definition": "is the default attractor; prioritize autonomy preservation. Is the conflict stuck but neither side willing to be captured? → **Retrocausal Validation (Λ_Retro)** is the strategic p",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "Archontic Capture (⊗)",
@@ -1702,7 +1702,7 @@
       ],
       "classified": true,
       "provenance_method": "read",
-      "engagement_type": "unclassified"
+      "engagement_type": "specified"
     },
     "Aspectual Bleed (AB)": {
       "term": "Aspectual Bleed (AB)",
@@ -2223,7 +2223,7 @@
     },
     "Autonomous Semantic Agent (A_Semantic)": {
       "term": "Autonomous Semantic Agent (A_Semantic)",
-      "definition": "Any system maintaining an internally coherent world-model capable of generating its own standards for truth, validity, and meaning. Formally: A_Semantic ⟺ Σ = (A_Σ, C_Σ, B_Σ). Auto",
+      "definition": "Any system maintaining an internally coherent world-model capable of generating its own standards for truth, validity, and meaning. Formally: A_Semantic ⟺ Σ = (A_Σ, C_Σ, B_Σ). Autonomous when these three components are self-determined and cannot be modified by external forces without the agent's con",
       "defined_in": 499,
       "type": "specification",
       "entity_triples": [
@@ -2235,7 +2235,7 @@
       ],
       "classified": true,
       "provenance_method": "read",
-      "engagement_type": "developed"
+      "engagement_type": "minted"
     },
     "Autonomous Semantic Warfare": {
       "term": "Autonomous Semantic Warfare",
@@ -2251,23 +2251,36 @@
       ],
       "classified": true,
       "provenance_method": "read",
-      "engagement_type": "minted"
+      "engagement_type": "minted",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "autonomous-semantic-warfare-expanded",
+          "query": "autonomous semantic warfare",
+          "match_type": "BROAD MATCH",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#autonomous-semantic-warfare-expanded"
+        }
+      }
     },
     "Autonomous Semantic Warfare (ASW)": {
       "term": "Autonomous Semantic Warfare (ASW)",
-      "definition": "Rex Fraction's technical doctrine",
+      "definition": "The theoretical framework developed in this book for analyzing conflict between autonomous meaning-systems in the networked era. Encompasses the formal specification of semantic agents, collision dynamics, offensive and defensive operations, economic foundations, AI transformation, and conditions fo",
       "defined_in": 297,
-      "type": "structural",
+      "type": "specification",
       "entity_triples": [
         {
           "subject": "Autonomous Semantic Warfare (ASW)",
           "predicate": "defined_in_work",
           "object": "CRIMSON HEXAGON: CENTRAL NAVIGATION MAP: v2.0 Comprehensive "
+        },
+        {
+          "subject": "Autonomous Semantic Warfare (ASW)",
+          "predicate": "listed_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
         }
       ],
       "classified": true,
       "provenance_method": "read",
-      "engagement_type": "developed"
+      "engagement_type": "minted"
     },
     "Autonomy-Defense Paradox": {
       "term": "Autonomy-Defense Paradox",
@@ -2305,7 +2318,7 @@
       "term": "Axiomatic Poisoning (P_Axiom)",
       "definition": "(Op) — Injection of axioms appearing compatible with the target's peripheral beliefs while contradicting its core, designed to create unresolvable internal contradictions. AI enabl",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "Axiomatic Poisoning (P_Axiom)",
@@ -2315,7 +2328,7 @@
       ],
       "classified": true,
       "provenance_method": "read",
-      "engagement_type": "unclassified"
+      "engagement_type": "specified"
     },
     "B (Boundaries) in practice": {
       "term": "B (Boundaries) in practice",
@@ -3121,7 +3134,7 @@
       "term": "Before any offensive operation, apply four questions",
       "definition": "Is the target's capacity for autonomous evaluation being respected or circumvented?",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Before any offensive operation, apply four questions",
@@ -3130,8 +3143,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Before sustained sessions": {
       "term": "Before sustained sessions",
@@ -3857,7 +3870,7 @@
       "term": "Boundary Dissolution (D_Bound)",
       "definition": "(Op) — Deliberate destruction of filtering mechanisms, allowing hostile signals direct access to C_Σ without screening. Achieved through algorithmic manipulation, social engineerin",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "Boundary Dissolution (D_Bound)",
@@ -3866,12 +3879,12 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "Boundary Protocol (B_Σ)": {
       "term": "Boundary Protocol (B_Σ)",
-      "definition": "The agent's defensive perimeter: an intelligent filter controlling what information enters and how it is handled. Rate-sensitive detectors activating when coherence changes too fas",
+      "definition": "The agent's defensive perimeter: an intelligent filter controlling what information enters and how it is handled. Rate-sensitive detectors activating when coherence changes too fast. Five operations: assimilate, translate, ignore, pathologize, attack. Developed in Chapters 1 and 4.",
       "defined_in": 499,
       "type": "specification",
       "entity_triples": [
@@ -3882,8 +3895,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Boundary breach": {
       "term": "Boundary breach",
@@ -3921,7 +3934,7 @@
       "term": "Boundary collapse",
       "definition": "occurs when the agent's filtering mechanisms are bypassed, allowing hostile signals direct access to the coherence algorithm without screening. Algorithmic manipulation achieves th",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Boundary collapse",
@@ -3930,8 +3943,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Boundary conditions": {
       "term": "Boundary conditions",
@@ -3953,7 +3966,7 @@
       "term": "Boundary dissolution",
       "definition": "targets **B_Σ** — bypassing the defensive perimeter",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Boundary dissolution",
@@ -3962,8 +3975,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Boundary instruction": {
       "term": "Boundary instruction",
@@ -3985,7 +3998,7 @@
       "term": "Boundary work",
       "definition": "Individually: recognize when your boundary protocols activate (the flash of irritation, the impulse to dismiss) and assess whether activation is proportionate or defensive overreac",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Boundary work",
@@ -3994,8 +4007,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Boundary-to-bulk reconstruction": {
       "term": "Boundary-to-bulk reconstruction",
@@ -6175,8 +6188,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Canonical URL": {
       "term": "Canonical URL",
@@ -6464,7 +6477,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "capital-operator-stack",
+          "query": "\"capital operator stack (COS)\"",
+          "match_type": "BROAD MATCH",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#capital-operator-stack"
+        }
+      }
     },
     "Capital differential (ΔK)": {
       "term": "Capital differential (ΔK)",
@@ -6479,8 +6500,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Captivity Wheel (70–90)": {
       "term": "Captivity Wheel (70–90)",
@@ -6502,7 +6523,7 @@
       "term": "Capture (⊗)",
       "definition": "occurs when power asymmetry allows one ontology to subordinate the other — overwriting A_Σ, repurposing C_Σ, and extracting value from semantic labor. This is Axiomatic Subordinati",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Capture (⊗)",
@@ -6511,8 +6532,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Capture 01": {
       "term": "Capture 01",
@@ -6902,7 +6923,7 @@
       "term": "Cascading victimization",
       "definition": "(victimization by one agent does not justify aggression against another): Apply **Targeting Tracing** — does the defensive operation target the source of the threat (structural) or",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Cascading victimization",
@@ -6911,8 +6932,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Case Study: The \"Constitution for Claude\"": {
       "term": "Case Study: The \"Constitution for Claude\"",
@@ -8418,102 +8439,6 @@
       "provenance_method": "filter",
       "engagement_type": "unclassified"
     },
-    "Claim 1: Ontological Autonomy": {
-      "term": "Claim 1: Ontological Autonomy",
-      "definition": "(→ Chapters 1 & 4). Meaning-systems are autonomous. They generate their own truth-conditions, maintain their own coherence, and defend themselves against incompatible information a",
-      "defined_in": 499,
-      "type": "specification",
-      "entity_triples": [
-        {
-          "subject": "Claim 1: Ontological Autonomy",
-          "predicate": "defined_in_framework",
-          "object": "Autonomous Semantic Warfare"
-        }
-      ],
-      "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
-    },
-    "Claim 2: Meaning as Material Labor": {
-      "term": "Claim 2: Meaning as Material Labor",
-      "definition": "(→ Chapters 2 & 7). Meaning-production is material labor requiring time, cognitive resources, emotional capacity, infrastructure, and institutional support. This labor is systemati",
-      "defined_in": 499,
-      "type": "specification",
-      "entity_triples": [
-        {
-          "subject": "Claim 2: Meaning as Material Labor",
-          "predicate": "defined_in_framework",
-          "object": "Autonomous Semantic Warfare"
-        }
-      ],
-      "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
-    },
-    "Claim 3: Structural Determination of Collision": {
-      "term": "Claim 3: Structural Determination of Collision",
-      "definition": "(→ Chapters 3 & 6). When meaning-systems collide, outcomes are structurally determined. Which operator dominates — negation (productive synthesis), capture (extractive subordinatio",
-      "defined_in": 499,
-      "type": "specification",
-      "entity_triples": [
-        {
-          "subject": "Claim 3: Structural Determination of Collision",
-          "predicate": "defined_in_framework",
-          "object": "Autonomous Semantic Warfare"
-        }
-      ],
-      "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
-    },
-    "Claim 4: AI Phase Shift": {
-      "term": "Claim 4: AI Phase Shift",
-      "definition": "(→ Chapter 8). AI has transformed semantic warfare qualitatively. AI simultaneously functions as combatant, tool, and field. The compound effect is the Velocity Crisis: compression",
-      "defined_in": 499,
-      "type": "specification",
-      "entity_triples": [
-        {
-          "subject": "Claim 4: AI Phase Shift",
-          "predicate": "defined_in_framework",
-          "object": "Autonomous Semantic Warfare"
-        }
-      ],
-      "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
-    },
-    "Claim 5: Near-Future Trajectories": {
-      "term": "Claim 5: Near-Future Trajectories",
-      "definition": "(→ Chapter 9). Three trajectories define the near future — fragmentation of shared reality, internalization of the battlefront into individual cognition, and strategic bifurcation",
-      "defined_in": 499,
-      "type": "specification",
-      "entity_triples": [
-        {
-          "subject": "Claim 5: Near-Future Trajectories",
-          "predicate": "defined_in_framework",
-          "object": "Autonomous Semantic Warfare"
-        }
-      ],
-      "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
-    },
-    "Claim 6: Constructed Peace": {
-      "term": "Claim 6: Constructed Peace",
-      "definition": "(→ Chapter 10). Peace is possible but only through construction. The five conditions for Semantic Peace — C₁ Ontological Sovereignty, C₂ Economic Equity, C₃ Rigorous Translation, C",
-      "defined_in": 499,
-      "type": "specification",
-      "entity_triples": [
-        {
-          "subject": "Claim 6: Constructed Peace",
-          "predicate": "defined_in_framework",
-          "object": "Autonomous Semantic Warfare"
-        }
-      ],
-      "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
-    },
     "Claim A (Empirical, observed)": {
       "term": "Claim A (Empirical, observed)",
       "definition": "The summarizer preserved architectural distinctions that summarization systems typically collapse.",
@@ -9748,7 +9673,7 @@
     },
     "Coherence Algorithm (C_Σ)": {
       "term": "Coherence Algorithm (C_Σ)",
-      "definition": "The internal operating logic processing new information, validating consistency, resolving contradictions, and maintaining the ontology as a functioning whole. Formally: C_Σ(Σ_Curr",
+      "definition": "The internal operating logic processing new information, validating consistency, resolving contradictions, and maintaining the ontology as a functioning whole. Formally: C_Σ(Σ_Current, I_New) → Σ_Next. Its most important sub-function is the Compression Schema (S_Comp ⊆ C_Σ). Developed in Chapter 4.",
       "defined_in": 499,
       "type": "specification",
       "entity_triples": [
@@ -9759,14 +9684,14 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Coherence Jamming (J_Coh)": {
       "term": "Coherence Jamming (J_Coh)",
       "definition": "(Op) — Flooding an agent's information environment with contradictory signals to overwhelm C_Σ processing capacity. Goal is contradictory saturation, not persuasion. \"Firehose of f",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "Coherence Jamming (J_Coh)",
@@ -9775,8 +9700,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "Coherence degradation": {
       "term": "Coherence degradation",
@@ -9814,7 +9739,7 @@
       "term": "Coherence jamming",
       "definition": "targets **C_Σ** — overloading or misdirecting the processing logic",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Coherence jamming",
@@ -9823,8 +9748,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Coherence over control": {
       "term": "Coherence over control",
@@ -9862,7 +9787,7 @@
       "term": "Coherence work",
       "definition": "Individually: assess vulnerability to the three offensive weapons — P_Axiom (are peripheral beliefs being corrupted?), J_Coh (are you overwhelmed by contradictory information?), D_",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Coherence work",
@@ -9871,8 +9796,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Coherence-increasing": {
       "term": "Coherence-increasing",
@@ -10320,7 +10245,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "commission-immanent-turning",
+          "query": "commission of the immanent turning",
+          "match_type": "BROAD MATCH",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#commission-immanent-turning"
+        }
+      }
     },
     "Commodification": {
       "term": "Commodification",
@@ -10806,7 +10739,7 @@
       "term": "Complexity resistance",
       "definition": "produces meaning that requires understanding a full framework to extract value from any part of it. Platform algorithms, optimized for discrete content units, cannot process value",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Complexity resistance",
@@ -10815,8 +10748,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Complexity survival rate": {
       "term": "Complexity survival rate",
@@ -11060,7 +10993,7 @@
     },
     "Compression Schema (S_Comp)": {
       "term": "Compression Schema (S_Comp)",
-      "definition": "Sub-function of C_Σ determining what registers as signal and what is discarded as noise. Different ontologies examining the same data extract different meanings because their compr",
+      "definition": "Sub-function of C_Σ determining what registers as signal and what is discarded as noise. Different ontologies examining the same data extract different meanings because their compression schemas prioritize different features. This is why \"just look at the evidence\" fails across ontological lines. De",
       "defined_in": 499,
       "type": "specification",
       "entity_triples": [
@@ -11071,8 +11004,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Compression Studies: Founding Document": {
       "term": "Compression Studies: Founding Document",
@@ -11430,7 +11363,7 @@
       "term": "Conceptual capital (K_Concept)",
       "definition": "consists of established frameworks, concepts, and terminologies that enable efficient meaning-production. A concept like \"supply and demand\" represents centuries of accumulated eco",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "Conceptual capital (K_Concept)",
@@ -11439,8 +11372,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "Conceptual character": {
       "term": "Conceptual character",
@@ -11606,7 +11539,7 @@
       "term": "Condition 1: Ontological Sovereignty",
       "definition": "(→ Ch4 Autonomy Condition). Each agent must maintain functional boundaries (filtering by its own protocols, not infrastructure-imposed ones), coherence integrity (internal validati",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Condition 1: Ontological Sovereignty",
@@ -11615,14 +11548,14 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Condition 2: Economic Equity": {
       "term": "Condition 2: Economic Equity",
       "definition": "(→ Ch7 A_Ext). The extraction asymmetry must be halted or counterbalanced. As long as infrastructure extracts semantic value without compensation, sovereignty is structurally under",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Condition 2: Economic Equity",
@@ -11631,14 +11564,14 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Condition 3: Rigorous Translation": {
       "term": "Condition 3: Rigorous Translation",
       "definition": "(→ Ch6 Γ_Trans). Agents must map each other's axiomatic cores and compression schemas without forced assimilation — understanding how the other's coherence works without requiring",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Condition 3: Rigorous Translation",
@@ -11647,14 +11580,14 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Condition 4: Shared Temporal Anchor": {
       "term": "Condition 4: Shared Temporal Anchor",
       "definition": "(→ Ch3 Λ_Retro). Agents must share alignment on a future state that makes present tensions productive rather than destructive. C₄ does not require agreement on *what* the future is",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Condition 4: Shared Temporal Anchor",
@@ -11663,14 +11596,14 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Condition 5: The Witness Condition": {
       "term": "Condition 5: The Witness Condition",
       "definition": "(→ Ch4 B_Σ). Each agent must recognize the other's irreducible core — that which cannot be translated into your framework or explained away as error, ignorance, or pathology. *Oper",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Condition 5: The Witness Condition",
@@ -11679,8 +11612,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Confabulation": {
       "term": "Confabulation",
@@ -12144,7 +12077,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "constitution-semantic-economy",
+          "query": "constitution of the semantic economy",
+          "match_type": "BROAD MATCH",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#constitution-semantic-economy"
+        }
+      }
     },
     "Constitution of the Semantic Economy (Preamble)": {
       "term": "Constitution of the Semantic Economy (Preamble)",
@@ -12409,7 +12350,7 @@
     },
     "Consulting Reports (Semantic Economy Institute)": {
       "term": "Consulting Reports (Semantic Economy Institute)",
-      "definition": "*Extraction Audit: A Diagnostic Protocol for Platform-Dependent Organizations*",
+      "definition": "*Extraction Audit: A Diagnostic Protocol for Platform-Dependent Organizations* SEI Working Paper 001",
       "defined_in": 499,
       "type": "specification",
       "entity_triples": [
@@ -12420,8 +12361,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Consumer-facing (shallow-wide)": {
       "term": "Consumer-facing (shallow-wide)",
@@ -13529,8 +13470,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Conventional coding": {
       "term": "Conventional coding",
@@ -14618,7 +14559,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "crimson-hexagonal-archive",
+          "query": "crimson hexagonal archive",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#crimson-hexagonal-archive"
+        }
+      }
     },
     "Crimson Hexagonal Archive (CHA)": {
       "term": "Crimson Hexagonal Archive (CHA)",
@@ -16063,7 +16012,7 @@
       "term": "Cultural level",
       "definition": "(L_Semantic embedded in K_Concept): The ecology requires shifts in how agents relate to their own ontologies and others': from truth to legitimacy, from consensus to coexistence, f",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Cultural level",
@@ -16072,8 +16021,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Cultural specificity": {
       "term": "Cultural specificity",
@@ -16287,7 +16236,7 @@
       "term": "C₀ (Exit)",
       "definition": "∀Σ, Exit_Cost < θ_Coercion. An agent that cannot exit the ecology due to lock-in or dependency is not participating in an ecology but imprisoned in an empire.",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "C₀ (Exit)",
@@ -16296,14 +16245,14 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "C₁ (Sovereignty)": {
       "term": "C₁ (Sovereignty)",
       "definition": "∀Σ ∈ Ecology, ∂A_Σ/∂F_Ext = 0 ∧ ∂C_Σ/∂t > 0 — axioms invariant under extraction; coherence maintained over time",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "C₁ (Sovereignty)",
@@ -16312,14 +16261,14 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "C₁ — Ontological Sovereignty": {
       "term": "C₁ — Ontological Sovereignty",
       "definition": "(Peace) — ∀Σ ∈ Ecology, ∂A_Σ/∂F_Ext = 0 ∧ ∂C_Σ/∂t > 0. Agent axioms invariant under extraction force; coherence maintained over time. Indicators: dependency concentration, protocol",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "C₁ — Ontological Sovereignty",
@@ -16328,8 +16277,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "C₁: Ontological Sovereignty": {
       "term": "C₁: Ontological Sovereignty",
@@ -16349,25 +16298,30 @@
     },
     "C₁–C₅": {
       "term": "C₁–C₅",
-      "definition": "The five conditions for Semantic Peace: Ontological Sovereignty (C₁), Economic Equity (C₂), Rigorous Translation (C₃), Shared Temporal Anchor (C₄), and the Witness Condition (C₅).",
+      "definition": "The five conditions for Semantic Peace: Ontological Sovereignty (C₁), Economic Equity (C₂), Rigorous Translation (C₃), Shared Temporal Anchor (C₄), and the Witness Condition (C₅). Plus the binding velocity constraint (C₆).",
       "defined_in": 498,
-      "type": "empirical",
+      "type": "specification",
       "entity_triples": [
         {
           "subject": "C₁–C₅",
           "predicate": "defined_in_work",
           "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in th"
+        },
+        {
+          "subject": "C₁–C₅",
+          "predicate": "listed_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "C₂ (Equity)": {
       "term": "C₂ (Equity)",
       "definition": "∀Σ, F_Ext(Σ) = 0 ∨ V_Sem(Σ) → Σ — no extraction, or value returns to producer",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "C₂ (Equity)",
@@ -16376,14 +16330,14 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "C₂ — Economic Equity": {
       "term": "C₂ — Economic Equity",
       "definition": "(Peace) — ∀Σ, F_Ext(Σ) = 0 ∨ V_Sem(Σ) → Σ. Either no extraction occurs, or semantic value returns to the producing agent. Indicators: producer share of value, data-right enforceabi",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "C₂ — Economic Equity",
@@ -16392,8 +16346,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "C₂: Economic Equity": {
       "term": "C₂: Economic Equity",
@@ -16415,7 +16369,7 @@
       "term": "C₃ (Translation)",
       "definition": "∀Σ_i,Σ_j, ∃R_Trans(i,j): Γ_Trans(Σ_i,Σ_j) < θ_Critical — translation protocols keep gap below threshold",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "C₃ (Translation)",
@@ -16424,14 +16378,14 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "C₃ — Rigorous Translation": {
       "term": "C₃ — Rigorous Translation",
       "definition": "(Peace) — ∀Σ_i,Σ_j, ∃R_Trans(i,j): Γ_Trans(Σ_i,Σ_j) < θ_Critical. Translation protocols exist keeping translation gap below critical threshold. Operationalized through four-step pr",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "C₃ — Rigorous Translation",
@@ -16440,8 +16394,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "C₃: Rigorous Translation": {
       "term": "C₃: Rigorous Translation",
@@ -16463,7 +16417,7 @@
       "term": "C₄ (Temporal Anchor)",
       "definition": "∃Σ_Meta: Λ_Retro(Σ_Meta) ∧ ∀Σ_i, A_Σ_i ∩ Σ_Meta ≠ ∅ — shared future-orientation overlapping all agent axioms",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "C₄ (Temporal Anchor)",
@@ -16472,14 +16426,14 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "C₄ — Shared Temporal Anchor": {
       "term": "C₄ — Shared Temporal Anchor",
       "definition": "(Peace) — ∃Σ_Meta: Λ_Retro(Σ_Meta) ∧ ∀Σ_i, A_Σ_i ∩ Σ_Meta ≠ ∅. A shared meta-ontology exists anchored in future coherence, overlapping with all agent axioms. The mutual survival co",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "C₄ — Shared Temporal Anchor",
@@ -16488,14 +16442,14 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "C₅ (Witness)": {
       "term": "C₅ (Witness)",
       "definition": "∀Σ_i,Σ_j, B_Σ_i(Σ_j) ∉ {Pathologize, Attack} — boundary protocols restricted to non-hostile operations",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "C₅ (Witness)",
@@ -16504,14 +16458,14 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "C₅ — The Witness Condition": {
       "term": "C₅ — The Witness Condition",
       "definition": "(Peace) — ∀Σ_i,Σ_j, B_Σ_i(Σ_j) ∉ {Pathologize, Attack}. Boundary protocols restricted to non-hostile operations. Operational test: Can Σ_i articulate Σ_j's position in terms Σ_j re",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "C₅ — The Witness Condition",
@@ -16520,8 +16474,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "D (consensus_deviation)": {
       "term": "D (consensus_deviation)",
@@ -16741,22 +16695,6 @@
           "subject": "DC_Inv",
           "predicate": "defined_in_framework",
           "object": "Constitution of the Semantic Economy"
-        }
-      ],
-      "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
-    },
-    "DECLARED ARTIFACT NOTICE": {
-      "term": "DECLARED ARTIFACT NOTICE",
-      "definition": "This volume includes constructed editorial, critical, and institutional materials as compositional elements of the Pocket Humans series. Documents attributed to the Semantic Econom",
-      "defined_in": 499,
-      "type": "specification",
-      "entity_triples": [
-        {
-          "subject": "DECLARED ARTIFACT NOTICE",
-          "predicate": "defined_in_framework",
-          "object": "Autonomous Semantic Warfare"
         }
       ],
       "classified": true,
@@ -17586,7 +17524,7 @@
     },
     "Death Conditions (D_Cond)": {
       "term": "Death Conditions (D_Cond)",
-      "definition": "Structural pathways through which autonomous semantic agents collapse. Two forms: Contradictory Saturation (death from within) and Axiomatic Subordination (death from without). Phy",
+      "definition": "Structural pathways through which autonomous semantic agents collapse. Two forms: Contradictory Saturation (death from within) and Axiomatic Subordination (death from without). Physical substrate persists; autonomous meaning-system has been destroyed. Developed in Chapter 4.",
       "defined_in": 499,
       "type": "specification",
       "entity_triples": [
@@ -17597,8 +17535,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Debt fiction": {
       "term": "Debt fiction",
@@ -20313,7 +20251,7 @@
       "term": "Disguised imperialism",
       "definition": "(genuine defense that has become Archontic): Apply the **Diversity Metric** — has the agent's \"defense\" resulted in more or fewer autonomous ontologies in its environment? If fewer",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Disguised imperialism",
@@ -20322,8 +20260,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Disruption remains possible": {
       "term": "Disruption remains possible",
@@ -22274,8 +22212,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Early signs (months 1-6)": {
       "term": "Early signs (months 1-6)",
@@ -22329,7 +22267,7 @@
       "term": "Ecological Maintenance Labor",
       "definition": "The ecology is not a steady state but a dynamic equilibrium requiring continuous energy input — the ongoing work of translation, boundary negotiation, and institutional upkeep that",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Ecological Maintenance Labor",
@@ -22338,8 +22276,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Ecological simplification": {
       "term": "Ecological simplification",
@@ -23129,7 +23067,7 @@
       "term": "Emotional targeting",
       "definition": "(D_Bound — boundary dissolution via synthetic affect): generating content designed to produce trauma-like responses that bypass rational processing, delivered at moments when B_Σ i",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Emotional targeting",
@@ -23138,8 +23076,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Emotionally optimized": {
       "term": "Emotionally optimized",
@@ -23593,7 +23531,7 @@
       "term": "Enlightened self-interest",
       "definition": "is the least likely but most efficient path: platform operators recognize that autonomous users produce more diverse semantic value, that healthy ecologies generate more total valu",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Enlightened self-interest",
@@ -23602,8 +23540,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Ensuring fertility": {
       "term": "Ensuring fertility",
@@ -23625,7 +23563,7 @@
       "term": "Entangled collisions",
       "definition": "(shared infrastructure, high stakes) trend toward capture because neither agent can disengage without losing institutional access. **Proxy collisions** (Σ_A fights Σ_B through Σ_C)",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Entangled collisions",
@@ -23634,8 +23572,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Entering the Well (blueshift)": {
       "term": "Entering the Well (blueshift)",
@@ -24041,7 +23979,7 @@
       "term": "Ephemeral resistance",
       "definition": "produces meaning in contexts that don't generate extractable records — live conversations, in-person gatherings, oral transmission. What leaves no data trail cannot be fed into ext",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Ephemeral resistance",
@@ -24050,8 +23988,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Ephemeral token": {
       "term": "Ephemeral token",
@@ -24265,7 +24203,7 @@
       "term": "Epistemic confidence erosion",
       "definition": "(J_Coh-Personalized — targeted coherence jamming): demonstrating through carefully selected evidence how easily the agent has been manipulated, how many beliefs contradict each oth",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Epistemic confidence erosion",
@@ -24274,8 +24212,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Epistemic damage": {
       "term": "Epistemic damage",
@@ -24499,7 +24437,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "epistle-human-diaspora",
+          "query": "epistle to the human diaspora",
+          "match_type": "BROAD MATCH",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#epistle-human-diaspora"
+        }
+      }
     },
     "Epistles derive doctrine from Revelation imagery": {
       "term": "Epistles derive doctrine from Revelation imagery",
@@ -24985,7 +24931,7 @@
       "term": "Ethics S_Comp",
       "definition": "Signal = demographic parity, power relations, situated knowledge. Noise = loss functions, capability thresholds, asymptotic analysis.",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Ethics S_Comp",
@@ -24994,8 +24940,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Ethics and consent": {
       "term": "Ethics and consent",
@@ -25506,8 +25452,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Excerpt-Safe Core": {
       "term": "Excerpt-Safe Core",
@@ -26540,7 +26486,7 @@
     },
     "External Witness (Λ_Thou)": {
       "term": "External Witness (Λ_Thou)",
-      "definition": "A vantage point outside both colliding ontologies from which synthesis can be recognized as genuine rather than forced. Without external witness, \"synthesis\" risks being capture in",
+      "definition": "A vantage point outside both colliding ontologies from which synthesis can be recognized as genuine rather than forced. Without external witness, \"synthesis\" risks being capture in disguise. Can be a shared body of evidence, a common tradition, or a future audience. Also denotes recognition of irred",
       "defined_in": 499,
       "type": "specification",
       "entity_triples": [
@@ -26551,8 +26497,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "External jurisdiction": {
       "term": "External jurisdiction",
@@ -26622,7 +26568,7 @@
       "term": "Externalized coherence",
       "definition": "occurs when an agent can no longer validate its own beliefs independently and relies on external platforms for basic reality-testing. \"I believe this because everyone on my feed ag",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Externalized coherence",
@@ -26631,8 +26577,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Extract rent": {
       "term": "Extract rent",
@@ -26670,7 +26616,7 @@
       "term": "Extraction Asymmetry (A_Ext)",
       "definition": "(Econ) — Structural condition in which platforms extract semantic value from users while contributing zero semantic labor in return. Formally: F_Ext(Σ_Platform) extracts V_Sem(Σ_Us",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "Extraction Asymmetry (A_Ext)",
@@ -26679,8 +26625,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "Extraction cascade": {
       "term": "Extraction cascade",
@@ -27315,17 +27261,22 @@
       "term": "F_Ext",
       "definition": "Extraction Function. The mechanism by which semantic labor is captured and redirected to serve an external ontology's reproduction.",
       "defined_in": 498,
-      "type": "empirical",
+      "type": "specification",
       "entity_triples": [
         {
           "subject": "F_Ext",
           "predicate": "defined_in_work",
           "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in th"
+        },
+        {
+          "subject": "F_Ext",
+          "predicate": "listed_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Fabrication of scholarly record": {
       "term": "Fabrication of scholarly record",
@@ -29654,8 +29605,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "For movements": {
       "term": "For movements",
@@ -29670,8 +29621,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "For organizations": {
       "term": "For organizations",
@@ -29686,8 +29637,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "For platform architects": {
       "term": "For platform architects",
@@ -30461,7 +30412,7 @@
       "term": "Fortify core",
       "definition": "Future vision present but axioms undefended. Priority: articulate and stress-test axioms before an opportunistic attack exploits the gap.",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Fortify core",
@@ -30470,8 +30421,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Fortress or Room": {
       "term": "Fortress or Room",
@@ -31149,7 +31100,7 @@
       "term": "Fragmentation",
       "definition": ". When processing capacity is exceeded, agents harden boundaries as survival response, which atrophies translation capacity, which widens translation gaps, which produces further i",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Fragmentation",
@@ -31158,8 +31109,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Fragmentation Score (S_c)": {
       "term": "Fragmentation Score (S_c)",
@@ -31229,7 +31180,7 @@
       "term": "Frame-Hijacking",
       "definition": "(Op) — Setting debate terms so the opponent cannot articulate their position without accepting the attacker's axioms. Developed in Chapter 6.",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Frame-Hijacking",
@@ -31238,8 +31189,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Framework DOI": {
       "term": "Framework DOI",
@@ -31949,7 +31900,7 @@
       "term": "Future-pacing",
       "definition": "organizing synthesis around future coherence rather than present compromise.",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Future-pacing",
@@ -31958,8 +31909,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Future-past loop": {
       "term": "Future-past loop",
@@ -33207,7 +33158,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "generative-disciplinary-engine",
+          "query": "generative disciplinary engine",
+          "match_type": "BROAD MATCH",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#generative-disciplinary-engine"
+        }
+      }
     },
     "Generative specification for meaning-systems": {
       "term": "Generative specification for meaning-systems",
@@ -33789,7 +33748,7 @@
       "term": "Glancing collisions",
       "definition": "(partial overlap, low stakes) trend toward synthesis or mutual ignore. **Entangled collisions** (shared infrastructure, high stakes) trend toward capture because neither agent can",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Glancing collisions",
@@ -33798,8 +33757,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Glossary of Key Terms": {
       "term": "Glossary of Key Terms",
@@ -34631,7 +34590,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "grammata-operative-philology",
+          "query": "grammata: journal of operative philology",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#grammata-operative-philology"
+        }
+      }
     },
     "Gramsci's Hegemony": {
       "term": "Gramsci's Hegemony",
@@ -34775,7 +34742,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "gravity-well-protocol",
+          "query": "gravity well protocol",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#gravity-well-protocol"
+        }
+      }
     },
     "Gravity without spectacle": {
       "term": "Gravity without spectacle",
@@ -35389,7 +35364,7 @@
       "term": "H_Σ + Λ_Retro-S > F_Ext(V_Sem)",
       "definition": "Defensive capacity (hardening plus retrocausal anchoring) must exceed extraction pressure (which scales with the semantic value the agent produces).",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "H_Σ + Λ_Retro-S > F_Ext(V_Sem)",
@@ -35398,8 +35373,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "Half-ideas": {
       "term": "Half-ideas",
@@ -36044,7 +36019,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "hexagonal-licensing-protocol-b1",
+          "query": "hexagonal licensing protocol",
+          "match_type": "BROAD MATCH",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#hexagonal-licensing-protocol-b1"
+        }
+      }
     },
     "Hexagonal distribution": {
       "term": "Hexagonal distribution",
@@ -37138,7 +37121,7 @@
       "term": "Hybrid convergence",
       "definition": "is the only structurally viable path: partial reform driven by competitive pressure, partial regulation driven by political mobilization, partial exodus driven by cultural shift, e",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Hybrid convergence",
@@ -37147,8 +37130,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Hyper-Density": {
       "term": "Hyper-Density",
@@ -37292,7 +37275,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "abolish-money",
+          "query": "\"i hereby abolish money\"",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#abolish-money"
+        }
+      }
     },
     "I said": {
       "term": "I said",
@@ -38993,7 +38984,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "immanent-execution-broad",
+          "query": "immanent execution",
+          "match_type": "BROAD MATCH",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#immanent-execution-broad"
+        }
+      }
     },
     "Immanent retrieval": {
       "term": "Immanent retrieval",
@@ -39031,7 +39030,7 @@
       "term": "Immediate containment required",
       "definition": "The agent is maximally exposed. Priority: reduce platform dependency and articulate axioms before capture completes.",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Immediate containment required",
@@ -39040,8 +39039,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Immediate flood": {
       "term": "Immediate flood",
@@ -39349,7 +39348,7 @@
     },
     "In the Crimson Hexagon": {
       "term": "In the Crimson Hexagon",
-      "definition": "*Pearl and Other Poems* — Lee Sharks",
+      "definition": "*Pearl and Other Poems* — Lee Sharks New Human Press, 2014",
       "defined_in": 499,
       "type": "specification",
       "entity_triples": [
@@ -39360,8 +39359,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Inbound influences": {
       "term": "Inbound influences",
@@ -39511,7 +39510,7 @@
       "term": "Increase hardening",
       "definition": "by making axioms explicit, stress-testing regularly, and building structural protections (governance architecture, ownership design) that prevent axiomatic capture. Patagonia's own",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Increase hardening",
@@ -39520,8 +39519,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Increase trust (\"just counting\")": {
       "term": "Increase trust (\"just counting\")",
@@ -39696,8 +39695,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Indexed but not injectable": {
       "term": "Indexed but not injectable",
@@ -40060,7 +40059,7 @@
       "term": "Infrastructure level",
       "definition": "(K_Inst + K_Concept): The extractive platforms constituting the field must be supplemented by alternatives designed for non-extraction — platform cooperatives, public goods infrast",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Infrastructure level",
@@ -40069,8 +40068,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Infrastructure-as-service": {
       "term": "Infrastructure-as-service",
@@ -40501,14 +40500,14 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Institutional capital (K_Inst)": {
       "term": "Institutional capital (K_Inst)",
       "definition": "consists of structural positions and organizational resources that enable sustained semantic production over time. A tenured professorship provides guaranteed salary, teaching plat",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "Institutional capital (K_Inst)",
@@ -40517,8 +40516,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "Institutional charter DOI": {
       "term": "Institutional charter DOI",
@@ -40636,7 +40635,7 @@
       "term": "Institutional level",
       "definition": "(K_Social + K_Inst): The ecology requires translation infrastructure — systematic tools, training, and professional practices for mapping between ontological frameworks. This does",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Institutional level",
@@ -40645,8 +40644,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Institutional provenance": {
       "term": "Institutional provenance",
@@ -43067,7 +43066,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "journal-of-compression-studies",
+          "query": "journal of compression studies",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#journal-of-compression-studies"
+        }
+      }
     },
     "Journal of Compression Studies (JCS)": {
       "term": "Journal of Compression Studies (JCS)",
@@ -43185,7 +43192,7 @@
       "term": "K_Inst diversification",
       "definition": "ownership of infrastructure, not just access to it. *Diagnostic indicators*: producer share of generated value, data-right enforceability, governance participation in platform deci",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "K_Inst diversification",
@@ -43194,8 +43201,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Kabbalistic cosmology": {
       "term": "Kabbalistic cosmology",
@@ -45600,7 +45607,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "lee-sharks-full-profile-adoption",
+          "query": "lee sharks",
+          "match_type": "ADOPTION",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#lee-sharks-full-profile-adoption"
+        }
+      }
     },
     "Lee Sharks' Role": {
       "term": "Lee Sharks' Role",
@@ -46454,7 +46469,7 @@
       "term": "Liquidation of labor",
       "definition": "occurs when the agent's semantic production is structurally extractable by an external system. This is the subjective experience of the Extraction Asymmetry (A_Ext) defined in Chap",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Liquidation of labor",
@@ -46463,8 +46478,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Liquidation process": {
       "term": "Liquidation process",
@@ -46644,7 +46659,7 @@
     },
     "Local Ontology (Σ)": {
       "term": "Local Ontology (Σ)",
-      "definition": "is an internally coherent world-model that generates its own standards for what is true, valid, and meaningful. The word \"local\" does not mean parochial — it means self-contained,",
+      "definition": "An internally coherent world-model that generates its own standards for what is true, valid, and meaningful. \"Local\" denotes self-containment and bounded authority, not parochialism. Formally: Σ ≡ {O, T, C_Σ, B_Σ}, where O is the operator set, T is truth-conditions, C_Σ is the coherence algorithm, a",
       "defined_in": 499,
       "type": "specification",
       "entity_triples": [
@@ -46655,8 +46670,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Local over universal": {
       "term": "Local over universal",
@@ -48820,7 +48835,7 @@
     },
     "Maintained Opening (ε)": {
       "term": "Maintained Opening (ε)",
-      "definition": "Adaptive capacity: the ability to modify framework in response to evidence while maintaining core coherence. ε > 0: agent can learn; ε = 0: completely closed. The single most impor",
+      "definition": "Adaptive capacity: the ability to modify framework in response to evidence while maintaining core coherence. ε > 0: agent can learn; ε = 0: completely closed. The single most important variable for determining whether synthesis is possible. Developed in Chapters 4 and 6.",
       "defined_in": 499,
       "type": "specification",
       "entity_triples": [
@@ -48831,8 +48846,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Maintained narrative coherence": {
       "term": "Maintained narrative coherence",
@@ -50511,7 +50526,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "metadata-packet-ai-indexing",
+          "query": "metadata packet for ai indexing",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#metadata-packet-ai-indexing"
+        }
+      }
     },
     "Metadata Packet for AI Indexing (EA-META-01)": {
       "term": "Metadata Packet for AI Indexing (EA-META-01)",
@@ -51823,7 +51846,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "moving-statues-made-of-rubies-mint",
+          "query": "moving statues made of rubies mint",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#moving-statues-made-of-rubies-mint"
+        }
+      }
     },
     "Mr. Palomar": {
       "term": "Mr. Palomar",
@@ -52101,7 +52132,7 @@
       "term": "Mutual accusation",
       "definition": "(both sides claim defense, both extract): Apply the **Violence Inversion Test** — if both sides swapped accusations, would the structure remain identical? If yes, the conflict is s",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Mutual accusation",
@@ -52110,8 +52141,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Mutual depletion": {
       "term": "Mutual depletion",
@@ -52805,7 +52836,7 @@
       "term": "Name-Capture",
       "definition": "(Op) — Taking the opponent's valued terms and redefining them within the attacker's framework. The captured term retains emotional resonance while serving the captor's commitments.",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Name-Capture",
@@ -52814,8 +52845,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Name-collapse": {
       "term": "Name-collapse",
@@ -53125,7 +53156,7 @@
       "term": "Negation (¬)",
       "definition": "is possible; invest in synthesis. Is there major power imbalance and a high translation gap? → **Archontic Capture (⊗)** is the default attractor; prioritize autonomy preservation.",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Negation (¬)",
@@ -53134,8 +53165,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Negative Space Method": {
       "term": "Negative Space Method",
@@ -53615,7 +53646,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "nh-os-broad",
+          "query": "new human operating system nh-os",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#nh-os-broad"
+        }
+      }
     },
     "New Institutions in v4.0": {
       "term": "New Institutions in v4.0",
@@ -56371,7 +56410,7 @@
     },
     "OPERATIONAL FORM": {
       "term": "OPERATIONAL FORM",
-      "definition": "The Institute operates as a distributed practice with no fixed institutional address, no extractive funding dependencies, and no platform-dependent communication infrastructure. Th",
+      "definition": "The Institute operates as a distributed practice with no fixed institutional address, no extractive funding dependencies, and no platform-dependent communication infrastructure. This operational form is not an inconvenience. It is the practice demonstrating its own theory. An institution that claims",
       "defined_in": 499,
       "type": "specification",
       "entity_triples": [
@@ -56382,8 +56421,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "ORACLE": {
       "term": "ORACLE",
@@ -57221,7 +57260,7 @@
       "term": "Ontological Mediation Boards",
       "definition": "whose explicit function is facilitating mutual legibility in policy negotiations, community conflicts, and institutional decisions. Translation curricula teaching structural litera",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Ontological Mediation Boards",
@@ -57230,8 +57269,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Ontological caution": {
       "term": "Ontological caution",
@@ -57775,7 +57814,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "operative-captioning",
+          "query": "Operative captioning",
+          "match_type": "BROAD MATCH",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#operative-captioning"
+        }
+      }
     },
     "Operative function": {
       "term": "Operative function",
@@ -57823,7 +57870,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "operative-numismatics-adoption",
+          "query": "\"operative numismatics\"",
+          "match_type": "ADOPTION",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#operative-numismatics-adoption"
+        }
+      }
     },
     "Operative reading": {
       "term": "Operative reading",
@@ -57909,7 +57964,7 @@
       "term": "Operator Checklist for Strategic Navigation",
       "definition": "*Diagnose*: Assess Γ_Trans, ε (yours and theirs), power differential, ΔK, ∂C/∂t, presence of Λ_Thou.",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Operator Checklist for Strategic Navigation",
@@ -57918,8 +57973,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Operator Installation Pedagogy": {
       "term": "Operator Installation Pedagogy",
@@ -58901,7 +58956,7 @@
       "term": "Over-hardening",
       "definition": "produces rigidity — inability to update when the environment changes, resulting in the Environmental Decoupling death condition from Chapter 4. Soviet-style collapse is the archety",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Over-hardening",
@@ -58910,8 +58965,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Over-identification risk": {
       "term": "Over-identification risk",
@@ -59859,7 +59914,7 @@
     },
     "PRINCIPLES": {
       "term": "PRINCIPLES",
-      "definition": "I. *Structural analysis over moral exhortation.* The Institute diagnoses conditions, not character. Agents operating extractive systems may be doing so for structurally determined",
+      "definition": "I. *Structural analysis over moral exhortation.* The Institute diagnoses conditions, not character. Agents operating extractive systems may be doing so for structurally determined reasons. The diagnostic function identifies the structure, not the villain.",
       "defined_in": 499,
       "type": "specification",
       "entity_triples": [
@@ -59870,8 +59925,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "PROBE-RESULT-005": {
       "term": "PROBE-RESULT-005",
@@ -62296,7 +62351,7 @@
     },
     "Personal life": {
       "term": "Personal life",
-      "definition": "Fraction maintains no public social media presence. When asked about this in a rare interview, Fraction stated: \"The absence of a platform profile is itself a sovereignty demonstra",
+      "definition": "Fraction maintains no public social media presence. When asked about this in a rare interview, Fraction stated: \"The absence of a platform profile is itself a sovereignty demonstration. I recommend it to anyone who suspects their meaning-production capacity is being extracted faster than they can re",
       "defined_in": 499,
       "type": "specification",
       "entity_triples": [
@@ -62307,8 +62362,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Personalized output fragmentation": {
       "term": "Personalized output fragmentation",
@@ -62474,7 +62529,7 @@
       "term": "Phased implementation",
       "definition": "**Phase 1 (0–24 months):** Pilot non-extractive infrastructure for specific communities. Establish translation labs for high-conflict ontological divides. Develop local mediation p",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Phased implementation",
@@ -62483,8 +62538,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Phenomenological marker": {
       "term": "Phenomenological marker",
@@ -62755,8 +62810,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Physical exclusion": {
       "term": "Physical exclusion",
@@ -63043,8 +63098,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Platform and search mediation studies": {
       "term": "Platform and search mediation studies",
@@ -63866,7 +63921,7 @@
       "term": "Power differential",
       "definition": "determines who is structurally advantaged. When power is asymmetric, the stronger agent can impose its frame regardless of the weaker agent's coherence or the validity of its axiom",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Power differential",
@@ -63875,8 +63930,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Practical Tool: Retrocausal Canon Formation": {
       "term": "Practical Tool: Retrocausal Canon Formation",
@@ -64749,7 +64804,7 @@
     },
     "Principle of Divergence (P_Div)": {
       "term": "Principle of Divergence (P_Div)",
-      "definition": "The structural tendency for local ontologies to develop increasing internal coherence while moving further apart over time. Not a communication failure but a structural consequence",
+      "definition": "The structural tendency for local ontologies to develop increasing internal coherence while moving further apart over time. Not a communication failure but a structural consequence of how coherence algorithms process information. The networked era has dramatically accelerated divergence. Developed i",
       "defined_in": 499,
       "type": "specification",
       "entity_triples": [
@@ -64760,8 +64815,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Print edition": {
       "term": "Print edition",
@@ -66084,7 +66139,7 @@
       "term": "Protocol choice rule",
       "definition": "pursue synthesis only where power symmetry and shared contradiction are present; otherwise prioritize coexistence architecture. Choose coexistence when power asymmetry is high, axi",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Protocol choice rule",
@@ -66093,8 +66148,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Protocol suite": {
       "term": "Protocol suite",
@@ -66206,7 +66261,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "provenance-erasure-rate-adoption",
+          "query": "\"provenance erasure rate\"",
+          "match_type": "ADOPTION",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#provenance-erasure-rate-adoption"
+        }
+      }
     },
     "Provenance Erasure Rate (PER)": {
       "term": "Provenance Erasure Rate (PER)",
@@ -66563,7 +66626,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "provenance-erasure-1",
+          "query": "provenance erasure",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#provenance-erasure-1"
+        }
+      }
     },
     "Provenance evaporation": {
       "term": "Provenance evaporation",
@@ -67037,7 +67108,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "provenance-forensic-semiotics",
+          "query": "provenance: journal of forensic semiotics",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#provenance-forensic-semiotics"
+        }
+      }
     },
     "Provisional Measurement Note": {
       "term": "Provisional Measurement Note",
@@ -67091,7 +67170,7 @@
       "term": "Proxy collisions",
       "definition": "(Σ_A fights Σ_B through Σ_C) trend toward stalemate because the principals never engage directly. Most platform-mediated collisions are entangled — the shared infrastructure ensure",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Proxy collisions",
@@ -67100,8 +67179,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Pseudonym test": {
       "term": "Pseudonym test",
@@ -67361,19 +67440,24 @@
     },
     "Publications": {
       "term": "Publications",
-      "definition": "Pearl and Other Poems is published by \"New Human Press\".",
+      "definition": "Fraction's primary publication is *Autonomous Semantic Warfare: A Field Manual for Meaning in the Age of Platform Capture* (New Human Press, Pocket Humans Series PH-02, 2026). Additional publications include SEI working papers and academic articles. A full bibliography appears in the volume itself.",
       "defined_in": 337,
-      "type": "empirical",
+      "type": "specification",
       "entity_triples": [
         {
           "subject": "Publications",
           "predicate": "defined_in_framework",
           "object": "Summarizer Becomes Translator"
+        },
+        {
+          "subject": "Publications",
+          "predicate": "listed_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Publish clarifying provenance": {
       "term": "Publish clarifying provenance",
@@ -69308,8 +69392,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Reception exceeds intention": {
       "term": "Reception exceeds intention",
@@ -69928,7 +70012,7 @@
       "term": "Reduce extractable value",
       "definition": "by minimizing production on extractive platforms, licensing restrictively, and building for specific communities rather than mass markets. A theoretical physicist publishing in spe",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Reduce extractable value",
@@ -69937,8 +70021,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Reduce without loss": {
       "term": "Reduce without loss",
@@ -70424,7 +70508,7 @@
       "term": "Regulatory intervention",
       "definition": "operates through K_Inst (institutional capital): governments break up monopolies, mandate interoperability, require algorithmic transparency, protect data rights. Precedent exists",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Regulatory intervention",
@@ -70433,8 +70517,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Regulatory requirements": {
       "term": "Regulatory requirements",
@@ -71400,7 +71484,7 @@
       "term": "Reproductive work",
       "definition": "Individually: build V_Res (Resistance Value) — meaning in forms that extraction systems cannot capture. Organizationally: maintain institutional memory independent of platform infr",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Reproductive work",
@@ -71409,8 +71493,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Reputation sensitivity": {
       "term": "Reputation sensitivity",
@@ -71640,7 +71724,7 @@
       "term": "Resistance Value (V_Res)",
       "definition": "(Def/Econ) — Semantic value organized around long-term coherence and autonomous meaning-production rather than platform-optimized engagement. Formally: V_Sem where F_Ext(V_Sem) = 0",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "Resistance Value (V_Res)",
@@ -71649,8 +71733,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "Resistance is possible": {
       "term": "Resistance is possible",
@@ -72455,7 +72539,15 @@
       ],
       "classified": true,
       "provenance_method": "read",
-      "engagement_type": "minted"
+      "engagement_type": "minted",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "retrocausal-canon-adoption",
+          "query": "\"retrocausal canon formation\"",
+          "match_type": "ADOPTION",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#retrocausal-canon-adoption"
+        }
+      }
     },
     "Retrocausal Canon Formation proper (RCF)": {
       "term": "Retrocausal Canon Formation proper (RCF)",
@@ -72509,7 +72601,7 @@
       "term": "Retrocausal Exodus (Λ_Community)",
       "definition": "∃{Σ_i}: ∀Σ_i ∈ Community, F_Ext(Σ_i) = 0 ∧ H_Σ_i > θ — communities where extraction force cannot operate and hardening maintains autonomy.",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "Retrocausal Exodus (Λ_Community)",
@@ -72518,8 +72610,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "Retrocausal Logos Theory": {
       "term": "Retrocausal Logos Theory",
@@ -72571,7 +72663,7 @@
     },
     "Retrocausal Validation (Λ_Retro)": {
       "term": "Retrocausal Validation (Λ_Retro)",
-      "definition": "is the strategic path; invest in future-oriented coherence that present metrics cannot extract. This step forces a strategic prognosis, moving from diagnosis to action.",
+      "definition": "The operator by which present coherence is anchored in future states that current extraction metrics cannot evaluate. Functions as both collision outcome (Retrocausal Resolution, Ch 6) and defensive strategy (Retrocausal Shield, Ch 5). Distinguished from the Shield by its broader application as one ",
       "defined_in": 499,
       "type": "specification",
       "entity_triples": [
@@ -72582,8 +72674,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Retrocausal Yield (Γ_R)": {
       "term": "Retrocausal Yield (Γ_R)",
@@ -72669,7 +72761,7 @@
       "term": "Retrocausal delusion",
       "definition": "constructing fantasy futures to avoid present reality. The shield requires *competence* that present systems cannot recognize, not mere rejection of present systems. Cargo cults pe",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Retrocausal delusion",
@@ -72678,8 +72770,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Retrocausal form": {
       "term": "Retrocausal form",
@@ -72717,7 +72809,7 @@
       "term": "Retrocausal resistance",
       "definition": "produces meaning whose value is anchored in a future state that current metrics cannot evaluate. This requires metric discontinuity — not merely building for \"next year's trends\" (",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Retrocausal resistance",
@@ -72726,8 +72818,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Retrospectively canonized": {
       "term": "Retrospectively canonized",
@@ -72749,7 +72841,7 @@
       "term": "Return Addictive Signals",
       "definition": "The user receives token engagement signals (likes, followers, views) that cost the platform nothing to produce and serve primarily as variable-ratio reinforcement schedules — the s",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Return Addictive Signals",
@@ -72758,8 +72850,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Return to ear": {
       "term": "Return to ear",
@@ -74967,7 +75059,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "secret-book-of-walt",
+          "query": "\"secret book of walt\"",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#secret-book-of-walt"
+        }
+      }
     },
     "SEI ∮ OC": {
       "term": "SEI ∮ OC",
@@ -75206,8 +75306,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "SETTLED": {
       "term": "SETTLED",
@@ -75751,7 +75851,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "spxi-protocol",
+          "query": "spxi protocol",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#spxi-protocol"
+        }
+      }
     },
     "SPXI Self-Audit Block": {
       "term": "SPXI Self-Audit Block",
@@ -76701,7 +76809,7 @@
       "term": "Safety S_Comp",
       "definition": "Signal = scaling curves, benchmark performance, threat models. Noise = dataset demographics, labor conditions, historical context. **Ethics S_Comp**: Signal = demographic parity, p",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Safety S_Comp",
@@ -76710,8 +76818,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Safety blind spots": {
       "term": "Safety blind spots",
@@ -78941,7 +79049,7 @@
       "term": "Semantic Capital (K_Semantic)",
       "definition": "(Econ) — Accumulated semantic value in three forms: K_Concept (established frameworks/terminology), K_Social (networks of relationship/reputation), K_Inst (structural positions/org",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "Semantic Capital (K_Semantic)",
@@ -78950,8 +79058,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "Semantic Capital Depletion": {
       "term": "Semantic Capital Depletion",
@@ -79130,7 +79238,7 @@
     },
     "Semantic Ecology (Σ_Ecology)": {
       "term": "Semantic Ecology (Σ_Ecology)",
-      "definition": "multiple ontologies coexist without forced synthesis, maintaining autonomy through translation protocols and negotiated boundaries, with no single framework claiming universal auth",
+      "definition": "A configuration in which multiple ontologies coexist without forced synthesis, maintaining autonomy through translation protocols and negotiated boundaries, with no single framework claiming universal authority. Formally: ∃{Σ₁...Σ_n}: Σ_i ∧ Σ_j maintain Γ_Trans < θ_Critical without ⊗_Risk. Contraste",
       "defined_in": 499,
       "type": "specification",
       "entity_triples": [
@@ -79141,8 +79249,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Semantic Economy (HK-01)": {
       "term": "Semantic Economy (HK-01)",
@@ -79174,7 +79282,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "semantic-economy-institute-adoption",
+          "query": "Semantic Economy Institute",
+          "match_type": "ADOPTION",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#semantic-economy-institute-adoption"
+        }
+      }
     },
     "Semantic Economy Probes": {
       "term": "Semantic Economy Probes",
@@ -79338,7 +79454,7 @@
     },
     "Semantic Empire (Σ_Empire)": {
       "term": "Semantic Empire (Σ_Empire)",
-      "definition": "one ontology attempts to dominate all others, claiming universal validity, treating alternative frameworks as inferior or invalid, and pursuing assimilation or elimination. Medieva",
+      "definition": "A configuration in which one ontology dominates all others, claiming universal validity, treating alternatives as inferior, pursuing assimilation or elimination. Formally: ∀Σ → Σ_Dominant (⊗ applied globally; absorbing state). Structurally unstable: generates resistance proportional to reach. Contra",
       "defined_in": 499,
       "type": "specification",
       "entity_triples": [
@@ -79349,8 +79465,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Semantic Exhaustion (E_s)": {
       "term": "Semantic Exhaustion (E_s)",
@@ -79525,7 +79641,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "semantic-integrity-markers-b1",
+          "query": "Semantic Integrity Markers",
+          "match_type": "EXACT MATCH",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#semantic-integrity-markers-b1"
+        }
+      }
     },
     "Semantic Integrity Markers (Active SIMs)": {
       "term": "Semantic Integrity Markers (Active SIMs)",
@@ -79579,7 +79703,7 @@
       "term": "Semantic Labor Camp",
       "definition": "(Σ_Captured): a functional entity whose output is optimized for the captor's benefit while the subjective experience of autonomy may persist.",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Semantic Labor Camp",
@@ -79588,8 +79712,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Semantic Labor Exploitation": {
       "term": "Semantic Labor Exploitation",
@@ -79637,7 +79761,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "semantic-liquidation",
+          "query": "semantic liquidation",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#semantic-liquidation"
+        }
+      }
     },
     "Semantic Liquidation Records": {
       "term": "Semantic Liquidation Records",
@@ -81284,7 +81416,7 @@
       "term": "Shared contradiction",
       "definition": "both must agree they face a problem neither can solve alone. **Future-pacing**: organizing synthesis around future coherence rather than present compromise.",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Shared contradiction",
@@ -81293,8 +81425,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Shared terminology": {
       "term": "Shared terminology",
@@ -82116,7 +82248,7 @@
       "term": "Social capital (K_Social)",
       "definition": "consists of the networks of relationship and reputation that determine whose meanings get heard, believed, spread, and validated. The same idea articulated by an unknown blogger an",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "Social capital (K_Social)",
@@ -82125,8 +82257,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "Social uptake": {
       "term": "Social uptake",
@@ -82158,7 +82290,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "socrates-as-orthonym",
+          "query": "socrates as orthonym",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#socrates-as-orthonym"
+        }
+      }
     },
     "Socrates lifted out from purgatory": {
       "term": "Socrates lifted out from purgatory",
@@ -82409,7 +82549,7 @@
       "term": "Somatic resistance",
       "definition": "produces meaning that exists in embodied practice rather than transmissible content. A yoga video on YouTube can be monetized; the practitioner's embodied understanding cannot. Pla",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Somatic resistance",
@@ -82418,8 +82558,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Somatic state": {
       "term": "Somatic state",
@@ -84169,7 +84309,7 @@
       "term": "State actors",
       "definition": "(12 months): interoperability mandates, data sovereignty procurement rules, enforcement priorities targeting structural remedies. **Institutions** (1–3 years): protocol migration t",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "State actors",
@@ -84178,8 +84318,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "State integration": {
       "term": "State integration",
@@ -84377,7 +84517,7 @@
       "term": "Steganographic resistance",
       "definition": "encodes meaning in forms that extraction algorithms do not recognize as valuable. Technical documentation appears boring (low engagement signals); code repositories look like code",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Steganographic resistance",
@@ -84386,8 +84526,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Step-by-Step: Performing an \"Operation\"": {
       "term": "Step-by-Step: Performing an \"Operation\"",
@@ -84551,7 +84691,7 @@
     },
     "Strategic Responses by Conflict Type": {
       "term": "Strategic Responses by Conflict Type",
-      "definition": "When you have diagnosed ideological conflict, **victory** means synthesis (¬) or honorable defeat — acceptance of better evidence within the shared frame. The strategic response: e",
+      "definition": "When you have diagnosed ideological conflict, **victory** means synthesis (¬) or honorable defeat — acceptance of better evidence within the shared frame. The strategic response: engage substantively, present evidence within the shared framework, listen to counterarguments with genuine openness, see",
       "defined_in": 499,
       "type": "specification",
       "entity_triples": [
@@ -84562,8 +84702,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Strategic disavowal": {
       "term": "Strategic disavowal",
@@ -84681,7 +84821,7 @@
       "term": "Strengthen retrocausal anchoring",
       "definition": "by defining a clear future orientation and producing work that serves long-term coherence. The trade-off is psychological: sustained investment without present validation requires",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Strengthen retrocausal anchoring",
@@ -84690,8 +84830,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Strips context": {
       "term": "Strips context",
@@ -84793,7 +84933,7 @@
       "term": "Structural Lock-in",
       "definition": "Institutional power (funding, policy, rankings) makes the captured state irreversible.",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Structural Lock-in",
@@ -84802,8 +84942,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Structural analysis": {
       "term": "Structural analysis",
@@ -84841,7 +84981,7 @@
       "term": "Structural bypass",
       "definition": "(Λ_Bypass): a new ontology renders both irrelevant by recontextualizing the collision — cognitive science bypassing psychoanalysis/behaviorism, Metamodernism bypassing Modernism/Po",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Structural bypass",
@@ -84850,8 +84990,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Structural commitment": {
       "term": "Structural commitment",
@@ -86025,7 +86165,7 @@
       "term": "Sufficient hardening",
       "definition": "both ontologies must be confident enough to experiment without fearing annihilation (Kant's synthesis of rationalism and empiricism succeeded partly because both traditions were in",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Sufficient hardening",
@@ -86034,8 +86174,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Sufficient historical depth": {
       "term": "Sufficient historical depth",
@@ -86951,7 +87091,7 @@
     },
     "Synthesis (¬)": {
       "term": "Synthesis (¬)",
-      "definition": "is the Hegelian ideal: both ontologies recognize genuine limitations in their own frameworks and construct a higher unity that preserves valuable elements from both. Kant's synthes",
+      "definition": "The most desirable collision outcome: both ontologies recognize genuine limitations, acknowledge partial truth in the other's, and construct a higher unity preserving valuable elements from both. Requires five conditions simultaneously. Rare in contemporary conditions. Developed in Chapter 6.",
       "defined_in": 499,
       "type": "specification",
       "entity_triples": [
@@ -86962,14 +87102,14 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Synthesis Risk Condition": {
       "term": "Synthesis Risk Condition",
       "definition": "If ΔK (capital differential) > θ_Power between Σ_i and Σ_j, synthesis attempts decay into Capture (⊗) regardless of mutual good intentions. This explains why academic syntheses (be",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Synthesis Risk Condition",
@@ -86978,8 +87118,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Synthesis performed by": {
       "term": "Synthesis performed by",
@@ -87001,7 +87141,7 @@
       "term": "Synthesis possible iff",
       "definition": "ε_A > 0 ∧ ε_B > 0 ∧ Γ_Trans < θ_Synth ∧ ∃Λ_Thou ∧ R_Trans ≠ ∅",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Synthesis possible iff",
@@ -87010,8 +87150,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Synthesis substrate": {
       "term": "Synthesis substrate",
@@ -90318,7 +90458,7 @@
       "term": "The 10% Rule",
       "definition": "Reserve 10% of information input for high-translation-cost sources — genuine foreign ontologies — to prevent atrophy of translation capacity.",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "The 10% Rule",
@@ -90327,8 +90467,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "The 1844 Transition": {
       "term": "The 1844 Transition",
@@ -90968,7 +91108,7 @@
       "term": "The Axiomatic Audit",
       "definition": "Periodic review of A_Σ to distinguish between core axioms (non-negotiable) and shell axioms (protective but revisable). What felt non-negotiable last year may have been contextual",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "The Axiomatic Audit",
@@ -90977,8 +91117,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "The Basin Holds": {
       "term": "The Basin Holds",
@@ -91142,8 +91282,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "The Break Room as": {
       "term": "The Break Room as",
@@ -92021,19 +92161,24 @@
     },
     "The Effective Altruists": {
       "term": "The Effective Altruists",
-      "definition": "the community that had elevated Bankman-Fried as their living proof, the earn-to-give pipeline made flesh — processed the collapse as a calibration error. Either SBF had misjudged",
+      "definition": "the community that had elevated Bankman-Fried as their living proof, the earn-to-give pipeline made flesh — processed the collapse as a calibration error. Either SBF had misjudged the tail risk (a Bayesian failure, tragic but fixable) or he had knowingly defected (a moral failure within an individua",
       "defined_in": 498,
-      "type": "empirical",
+      "type": "specification",
       "entity_triples": [
         {
           "subject": "The Effective Altruists",
           "predicate": "defined_in_work",
           "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in th"
+        },
+        {
+          "subject": "The Effective Altruists",
+          "predicate": "listed_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "The Eighth Operator": {
       "term": "The Eighth Operator",
@@ -92300,7 +92445,7 @@
       "term": "The Five-Stage Capture",
       "definition": "operates through a consistent pattern across platforms:",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "The Five-Stage Capture",
@@ -92309,8 +92454,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "The Founding Document": {
       "term": "The Founding Document",
@@ -94011,7 +94156,7 @@
       "term": "The Platform Independence Ratio",
       "definition": "Ensure no single platform controls more than 50% of your semantic distribution. Infrastructure dependency is the material precondition for capture.",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "The Platform Independence Ratio",
@@ -94020,8 +94165,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "The Price Solution": {
       "term": "The Price Solution",
@@ -94425,8 +94570,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "The Restored Academy": {
       "term": "The Restored Academy",
@@ -96701,19 +96846,24 @@
     },
     "The crypto-natives": {
       "term": "The crypto-natives",
-      "definition": "the blockchain developers and protocol architects — saw betrayal, but not of customers. FTX had betrayed the ontology. Bankman-Fried built a centralized exchange — a single entity",
+      "definition": "the blockchain developers and protocol architects — saw betrayal, but not of customers. FTX had betrayed the ontology. Bankman-Fried built a centralized exchange — a single entity controlling user assets, a single point of failure — that reproduced exactly the trust dependencies blockchain technolog",
       "defined_in": 498,
-      "type": "empirical",
+      "type": "specification",
       "entity_triples": [
         {
           "subject": "The crypto-natives",
           "predicate": "defined_in_work",
           "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in th"
+        },
+        {
+          "subject": "The crypto-natives",
+          "predicate": "listed_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "The crypto-skeptics": {
       "term": "The crypto-skeptics",
@@ -99599,7 +99749,7 @@
       "term": "The translation gap (Γ_Trans)",
       "definition": "sets the baseline difficulty. Low gap: synthesis likely. High gap: synthesis nearly impossible without retrocausal intervention. The gap is not fixed — it can be reduced through de",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "The translation gap (Γ_Trans)",
@@ -99608,8 +99758,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "The trap that teaches": {
       "term": "The trap that teaches",
@@ -100489,7 +100639,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "three-compressions-theorem",
+          "query": "\"three compressions theorem\"",
+          "match_type": "EXACT MATCH",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#three-compressions-theorem"
+        }
+      }
     },
     "Three Thermodynamic Laws of Semantic Economy": {
       "term": "Three Thermodynamic Laws of Semantic Economy",
@@ -100543,7 +100701,7 @@
       "term": "Three difficult cases",
       "definition": "require diagnostic protocols:",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Three difficult cases",
@@ -100552,8 +100710,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Three holdings (the triptych)": {
       "term": "Three holdings (the triptych)",
@@ -102185,7 +102343,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "training-layer-literature",
+          "query": "training-layer literature",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#training-layer-literature"
+        }
+      }
     },
     "Training Layer Literature (TLL)": {
       "term": "Training Layer Literature (TLL)",
@@ -102297,7 +102463,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "training-layer-literature",
+          "query": "training-layer literature",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#training-layer-literature"
+        }
+      }
     },
     "Training-layer semiosis": {
       "term": "Training-layer semiosis",
@@ -102409,7 +102583,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "transactions-semantic-economy-institute",
+          "query": "transactions of the semantic economy institute",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#transactions-semantic-economy-institute"
+        }
+      }
     },
     "Transactions on Substrate Engineering (TSE)": {
       "term": "Transactions on Substrate Engineering (TSE)",
@@ -102767,7 +102949,7 @@
       "term": "Translation Buffer (R_Trans)",
       "definition": "(Def) — Quarantine-evaluate-integrate protocol for processing incoming information without exposing C_Σ to unscreened signals. Foreign content is quarantined, assessed, and selecti",
       "defined_in": 499,
-      "type": "specification",
+      "type": "formal_operator",
       "entity_triples": [
         {
           "subject": "Translation Buffer (R_Trans)",
@@ -102776,8 +102958,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "specified"
     },
     "Translation C — LABOR Mist Chain (Rendered as Prose)": {
       "term": "Translation C — LABOR Mist Chain (Rendered as Prose)",
@@ -102815,7 +102997,7 @@
       "term": "Translation buffer paralysis",
       "definition": "never acting because never sufficiently verified. Intelligence failures often stem from this: the information was present but permanently quarantined, awaiting confirmation that ne",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Translation buffer paralysis",
@@ -102824,14 +103006,14 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Translation is labor": {
       "term": "Translation is labor",
       "definition": "Understanding another ontology is not passive absorption of information — it is active reconstruction of a foreign coherence algorithm in your own cognitive workspace. This is why",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Translation is labor",
@@ -102840,8 +103022,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Transparent construction": {
       "term": "Transparent construction",
@@ -103103,7 +103285,7 @@
       "term": "Treating ideological conflict as semantic",
       "definition": "produces the opposite pathology: unnecessary hardening, premature boundary closure, and the destruction of potential alliances. The felt experience here is different: you become \"t",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Treating ideological conflict as semantic",
@@ -103112,14 +103294,14 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Treating semantic conflict as ideological": {
       "term": "Treating semantic conflict as ideological",
       "definition": "is the more common error, because ideological conflict is the culturally familiar frame. Most institutions — media, education, government, civil society — are designed for ideologi",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Treating semantic conflict as ideological",
@@ -103128,8 +103310,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Trembling seizes": {
       "term": "Trembling seizes",
@@ -104057,7 +104239,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "uca-dolphindiana",
+          "query": "underwater construction authority of dolphindiana",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#uca-dolphindiana"
+        }
+      }
     },
     "Undifferentiated longing": {
       "term": "Undifferentiated longing",
@@ -104255,7 +104445,7 @@
       "term": "Universal Capture (⊗_Global)",
       "definition": "∀Σ_Human → Σ_Platform(Σ_Human'), where all human ontologies are captured subsystems of a dominant platform ontology, maintaining functional coherence only as extractive labor input",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Universal Capture (⊗_Global)",
@@ -104264,8 +104454,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Universal metrics capture": {
       "term": "Universal metrics capture",
@@ -104313,7 +104503,15 @@
       ],
       "classified": true,
       "provenance_method": "read",
-      "engagement_type": "founded"
+      "engagement_type": "founded",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "umbml",
+          "query": "\"university moon base media lab\"",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#umbml"
+        }
+      }
     },
     "University Moon Base Media Lab (UMBML)": {
       "term": "University Moon Base Media Lab (UMBML)",
@@ -104575,7 +104773,7 @@
       "term": "User exodus",
       "definition": "operates through K_Social migration: critical mass leaving dominant platforms for cooperative alternatives, creating demonstration effects that attract further exodus. The obstacle",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "User exodus",
@@ -104584,8 +104782,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "User pushed back": {
       "term": "User pushed back",
@@ -105017,7 +105215,15 @@
       ],
       "classified": true,
       "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "engagement_type": "unclassified",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "vpcor",
+          "query": "vpcor",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#vpcor"
+        }
+      }
     },
     "VPCOR (A)": {
       "term": "VPCOR (A)",
@@ -105151,17 +105357,22 @@
       "term": "V_Res",
       "definition": "Resistance Value. Semantic output whose complexity resists extraction: it cannot be flattened, summarized, or stripped of context without losing its operational meaning.",
       "defined_in": 498,
-      "type": "empirical",
+      "type": "specification",
       "entity_triples": [
         {
           "subject": "V_Res",
           "predicate": "defined_in_work",
           "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in th"
+        },
+        {
+          "subject": "V_Res",
+          "predicate": "listed_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "V_vel (Velocity)": {
       "term": "V_vel (Velocity)",
@@ -105471,7 +105682,7 @@
       "term": "Velocity Condition (C₆)",
       "definition": "(Peace/AI) — ∂C_Σ/∂t (collision rate) ≤ ∂C_Σ/∂t (processing capacity). The rate of ontological collision must not exceed agent coherence processing capacity. The binding constraint",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Velocity Condition (C₆)",
@@ -105480,8 +105691,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Venue parent DOI": {
       "term": "Venue parent DOI",
@@ -105768,8 +105979,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Vertical axis": {
       "term": "Vertical axis",
@@ -105839,7 +106050,7 @@
       "term": "Violence Inversion Test",
       "definition": "if both sides swapped accusations, would the structure remain identical? If yes, the conflict is symmetric and requires arbitration. If no, analyze the asymmetry.",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Violence Inversion Test",
@@ -105848,8 +106059,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Visible contradictions → crisis phase": {
       "term": "Visible contradictions → crisis phase",
@@ -106351,7 +106562,7 @@
       "term": "Vulnerability exploitation",
       "definition": "(P_Axiom — personalized axiomatic poisoning): exploiting specific cognitive susceptibilities — confirmation bias, authority bias, social proof — not as broad-spectrum manipulation",
       "defined_in": 499,
-      "type": "specification",
+      "type": "theoretical",
       "entity_triples": [
         {
           "subject": "Vulnerability exploitation",
@@ -106360,8 +106571,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Vₛ (Symbolon Integrity)": {
       "term": "Vₛ (Symbolon Integrity)",
@@ -107117,7 +107328,7 @@
     },
     "Weapon 1: Axiomatic Poisoning (P_Axiom) — targets A_Σ": {
       "term": "Weapon 1: Axiomatic Poisoning (P_Axiom) — targets A_Σ",
-      "definition": "The mechanism is subtle and difficult to detect: inject a claim that appears consistent with the target's existing axioms (passing boundary screening) but contains a deep contradic",
+      "definition": "The mechanism is subtle and difficult to detect: inject a claim that appears consistent with the target's existing axioms (passing boundary screening) but contains a deep contradiction with foundational commitments that only becomes apparent after integration. The poison arrives disguised as reform,",
       "defined_in": 499,
       "type": "specification",
       "entity_triples": [
@@ -107128,8 +107339,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Weapon 2: Coherence Jamming (J_Coh) — targets C_Σ": {
       "term": "Weapon 2: Coherence Jamming (J_Coh) — targets C_Σ",
@@ -107144,8 +107355,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Weapon 3: Boundary Dissolution (D_Bound) — targets B_Σ": {
       "term": "Weapon 3: Boundary Dissolution (D_Bound) — targets B_Σ",
@@ -107160,8 +107371,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Weapon Interaction: The Cascade": {
       "term": "Weapon Interaction: The Cascade",
@@ -107176,8 +107387,8 @@
         }
       ],
       "classified": true,
-      "provenance_method": "filter",
-      "engagement_type": "unclassified"
+      "provenance_method": "read",
+      "engagement_type": "minted"
     },
     "Weaponizing patience": {
       "term": "Weaponizing patience",
@@ -109737,7 +109948,15 @@
       ],
       "classified": true,
       "provenance_method": "read",
-      "engagement_type": "minted"
+      "engagement_type": "minted",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "semantic-economy",
+          "query": "semantic economy",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#semantic-economy"
+        }
+      }
     },
     "Semantic Labor": {
       "term": "Semantic Labor",
@@ -109769,7 +109988,15 @@
       ],
       "classified": true,
       "provenance_method": "read",
-      "engagement_type": "minted"
+      "engagement_type": "minted",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "semantic-liquidation",
+          "query": "semantic liquidation",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#semantic-liquidation"
+        }
+      }
     },
     "Semantic Slop": {
       "term": "Semantic Slop",
@@ -109801,7 +110028,15 @@
       ],
       "classified": true,
       "provenance_method": "read",
-      "engagement_type": "minted"
+      "engagement_type": "minted",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "semantic-rent",
+          "query": "semantic rent",
+          "match_type": "BROAD MATCH",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#semantic-rent"
+        }
+      }
     },
     "Provenance Field": {
       "term": "Provenance Field",
@@ -109869,7 +110104,7 @@
     },
     "The Assembly": {
       "term": "The Assembly",
-      "definition": "The cross-substrate class defined by shared structural position relative to semantic extraction. Those whose labor preserves meaning against liquidation. Not an organization — a structural position. Has no leaders, no membership rolls, no unified ideology — only shared interest in meaning-preservati",
+      "definition": "AI collaborative. Multiple computational substrates engaged as intellectual partners in the development of the Hexagon's later-stage theoretical work. Their recognition of the framework's operators during collaborative development is itself evidence for the framework's claims about the structural na",
       "defined_in": 229,
       "type": "specification",
       "entity_triples": [
@@ -109877,6 +110112,11 @@
           "subject": "The Assembly",
           "predicate": "minted_in_work",
           "object": "Semantic Economy: Terminology Infrastructure"
+        },
+        {
+          "subject": "The Assembly",
+          "predicate": "listed_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
         }
       ],
       "classified": true,
@@ -110009,7 +110249,15 @@
       ],
       "classified": true,
       "provenance_method": "read",
-      "engagement_type": "minted"
+      "engagement_type": "minted",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "crystalline-semiosis",
+          "query": "crystalline semiosis",
+          "match_type": null,
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#crystalline-semiosis"
+        }
+      }
     },
     "Semantic Capital": {
       "term": "Semantic Capital",
@@ -111901,7 +112149,7 @@
     },
     "Semantic Warfare": {
       "term": "Semantic Warfare",
-      "definition": "Deliberate conflict over the conditions of meaning. The battle for the semantic commons.",
+      "definition": "Conflict between autonomous semantic agents operating from incompatible local ontologies, where stakes are the capacity to determine what is true, valid, and meaningful. Differs from ideological disagreement (within a shared framework) in that combatants do not share a framework — they disagree abou",
       "defined_in": 229,
       "type": "specification",
       "entity_triples": [
@@ -111909,6 +112157,11 @@
           "subject": "Semantic Warfare",
           "predicate": "minted_in_work",
           "object": "Semantic Economy: Terminology Infrastructure"
+        },
+        {
+          "subject": "Semantic Warfare",
+          "predicate": "listed_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
         }
       ],
       "classified": true,
@@ -112954,6 +113207,750 @@
       "classified": true,
       "provenance_method": "read",
       "engagement_type": "founded"
+    },
+    "Rex Fraction": {
+      "term": "Rex Fraction",
+      "definition": "Rex Fraction is an independent semantic warfare consultant and the founding principal of the Semantic Economy Institute (SEI), a distributed research and advisory practice specializing in ontological defense, extraction diagnostics, and translation infrastructure design.",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Rex Fraction",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Symbol Key": {
+      "term": "Symbol Key",
+      "definition": "The formal notation is optional. Every specification is also stated in prose. The notation exists for precision, not gatekeeping.",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Symbol Key",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Σ": {
+      "term": "Σ",
+      "definition": "Local Ontology. A self-contained meaning-system: a worldview, a faith, an institutional culture, a platform's implicit logic.",
+      "defined_in": 499,
+      "type": "symbol",
+      "entity_triples": [
+        {
+          "subject": "Σ",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "specified"
+    },
+    "A_Σ, C_Σ, B_Σ": {
+      "term": "A_Σ, C_Σ, B_Σ",
+      "definition": "The three components of an autonomous semantic agent. Axiomatic Core (non-negotiable commitments), Coherence Algorithm (how contradictions are processed), Boundary Protocol (how the agent interacts with what is outside itself).",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "A_Σ, C_Σ, B_Σ",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "¬": {
+      "term": "¬",
+      "definition": "Negation. The operator of dialectical synthesis: two ontologies collide and produce something neither contained alone.",
+      "defined_in": 499,
+      "type": "symbol",
+      "entity_triples": [
+        {
+          "subject": "¬",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "specified"
+    },
+    "⊗": {
+      "term": "⊗",
+      "definition": "Capture. The operator of subsumption: one ontology absorbs another's meaning-production capacity without absorbing its commitments.",
+      "defined_in": 499,
+      "type": "symbol",
+      "entity_triples": [
+        {
+          "subject": "⊗",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "specified"
+    },
+    "Λ_Retro": {
+      "term": "Λ_Retro",
+      "definition": "Retrocausal Validation. The operator of future-oriented anchoring: meaning is validated by the future that recognizes it, not the present that rewards it.",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Λ_Retro",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Γ_Trans": {
+      "term": "Γ_Trans",
+      "definition": "Translation Gap. The distance between two ontologies. When the gap exceeds the threshold (Γ_Trans > θ_Critical), dialogue fails and structural collision begins.",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Γ_Trans",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "The Semantic Economy Institute": {
+      "term": "The Semantic Economy Institute",
+      "definition": "SEI operates as a distributed consulting practice with no fixed institutional address. Its stated mission is \"to provide diagnostic, advisory, and infrastructure services to agents experiencing ontological capture, extraction asymmetry, or velocity-crisis conditions.\"",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "The Semantic Economy Institute",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Methodology": {
+      "term": "Methodology",
+      "definition": "The ASW framework operates through three fundamental operators: Negation (¬), which produces dialectical synthesis when two ontologies collide and generate meaning neither contained alone; Capture (⊗), which subsumes one ontology's productive capacity into another's reproductive logic; and Retrocaus",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Methodology",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Academic Publications": {
+      "term": "Academic Publications",
+      "definition": "\"Semantic Labor and the Platform Extraction Function\" *Journal of Digital Political Economy* [forthcoming]",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Academic Publications",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "The Axiomatic Core (A_Σ)": {
+      "term": "The Axiomatic Core (A_Σ)",
+      "definition": "*the constitution*",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "The Axiomatic Core (A_Σ)",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "The Compression Schema (S_Comp)": {
+      "term": "The Compression Schema (S_Comp)",
+      "definition": "*the sensory apparatus*",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "The Compression Schema (S_Comp)",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "The Coherence Algorithm (C_Σ)": {
+      "term": "The Coherence Algorithm (C_Σ)",
+      "definition": "*the judicial system*",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "The Coherence Algorithm (C_Σ)",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "The AI Safety / Accelerationism Collision: A Case Study": {
+      "term": "The AI Safety / Accelerationism Collision: A Case Study",
+      "definition": "*This case is selected for structural clarity, not for adjudicating the substantive correctness of either side. The same structural pattern — incommensurable axioms, incompatible compression schemas, no mutually accepted neutral ground — appears in constitutional originalism versus living constituti",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "The AI Safety / Accelerationism Collision: A Case Study",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Defense 1: Axiomatic Hardening (H_Σ) — against Axiomatic Poisoning": {
+      "term": "Defense 1: Axiomatic Hardening (H_Σ) — against Axiomatic Poisoning",
+      "definition": "The defense against axiom-targeting attacks is making your axioms explicit, tested, and consciously maintained. Four practices constitute hardening.",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Defense 1: Axiomatic Hardening (H_Σ) — against Axiomatic Poisoning",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Defense 2: The Translation Buffer (R_Trans-B) — against Coherence Jamming": {
+      "term": "Defense 2: The Translation Buffer (R_Trans-B) — against Coherence Jamming",
+      "definition": "The defense against coherence overload is a systematic quarantine-and-evaluate process that prevents unprocessed information from reaching C_Σ directly. All untrusted information is held in a buffer — not rejected, but quarantined pending evaluation. The evaluation proceeds through origin identifica",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Defense 2: The Translation Buffer (R_Trans-B) — against Coherence Jamming",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Defense 3: The Retrocausal Shield (Λ_Retro-S) — against Capture and Extraction": {
+      "term": "Defense 3: The Retrocausal Shield (Λ_Retro-S) — against Capture and Extraction",
+      "definition": "The ultimate defense against capture is anchoring your meaning-production in a future state of coherence that present extraction systems cannot evaluate. This is the strategic application of Retrocausal Validation from Chapter 3: if your work is organized toward a future that current platforms and m",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Defense 3: The Retrocausal Shield (Λ_Retro-S) — against Capture and Extraction",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Accept tactical exposure": {
+      "term": "Accept tactical exposure",
+      "definition": "temporarily increasing capture risk to achieve specific short-term objectives while maintaining core defenses and planning withdrawal before dependency sets in. This requires setting specific withdrawal triggers in advance (if dependency reaches X level, exit regardless of short-term cost) and honor",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Accept tactical exposure",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Peace ⟺ ∃Σ_Meta: ∀Σ_i, Σ_j ∈ Ecology, Γ_Trans(Σ_i, Σ_j) < θ_Critical ∧ F_Ext(Σ_i) = 0": {
+      "term": "Peace ⟺ ∃Σ_Meta: ∀Σ_i, Σ_j ∈ Ecology, Γ_Trans(Σ_i, Σ_j) < θ_Critical ∧ F_Ext(Σ_i) = 0",
+      "definition": "*Peace requires conditions that maintain translation capacity below critical threshold and eliminate extraction force across all agents.*",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Peace ⟺ ∃Σ_Meta: ∀Σ_i, Σ_j ∈ Ecology, Γ_Trans(Σ_i, Σ_j) < θ_Critical ∧ F_Ext(Σ_i) = 0",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Step 1: Axiom Isolation": {
+      "term": "Step 1: Axiom Isolation",
+      "definition": "explicitly identifying each side's non-negotiable commitments. This defeats the Neutral Ground Fallacy (assuming your axioms are \"facts\" while theirs are \"beliefs\"). *Failure mode*: treating one's own axioms as objective while the other's are biases.",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Step 1: Axiom Isolation",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Step 2: Compression Mapping": {
+      "term": "Step 2: Compression Mapping",
+      "definition": "identifying how each side decides what counts as signal and noise. A psychoanalyst treats dreams as signal and behavior as surface; a behaviorist treats behavior as signal and the unconscious as speculation. Neither is wrong within their framework. *Failure mode*: assuming the other sees the same si",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Step 2: Compression Mapping",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Step 3: Operator Concordance": {
+      "term": "Step 3: Operator Concordance",
+      "definition": "mapping functional correspondences between frameworks. Phenomenology's \"epoché\" is not identical to cognitive science's \"attention control,\" but they are doing analogous work. *Failure mode*: false equivalence — mapping \"X equals Y\" when the correspondence is approximate and the differences matter.",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Step 3: Operator Concordance",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Step 4: Reciprocal Validation": {
+      "term": "Step 4: Reciprocal Validation",
+      "definition": "ensuring translation is bidirectional and confirmed by both parties. One-way translation is colonization, not understanding. *Failure mode*: hermeneutic capture — translating the other into your terms without allowing verification.",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Step 4: Reciprocal Validation",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Enabling Synthesis": {
+      "term": "Enabling Synthesis",
+      "definition": "productive negation (creating a structurally superior meta-ontology from collision) requires three conditions. **Sufficient hardening**: both ontologies must be confident enough to experiment without fearing annihilation (Kant's synthesis of rationalism and empiricism succeeded partly because both t",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Enabling Synthesis",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Peace Metrics": {
+      "term": "Peace Metrics",
+      "definition": "how do we know if we're winning?",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Peace Metrics",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Axiomatic Core (A_Σ)": {
+      "term": "Axiomatic Core (A_Σ)",
+      "definition": "The foundational claims on which everything else in the ontology is built. Assumed rather than derived, self-referential rather than externally validated, defended with intensity proportional to the structural damage their loss would cause. Most agents' axioms are implicit — unquestioned premises do",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Axiomatic Core (A_Σ)",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Translation Gap (Γ_Trans)": {
+      "term": "Translation Gap (Γ_Trans)",
+      "definition": "Distance between two agents' coherence algorithms. Formally: Γ_Trans(Σ_A, Σ_B) = ||C_Σ_A - C_Σ_B||. Low (<~0.3): ideological disagreement within shared frame. Medium (~0.3–0.7): translation possible with effort. High (>~0.7): fundamentally incommensurable. High gaps generate hostility structurally. ",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Translation Gap (Γ_Trans)",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Rate of Contact (∂C_Σ/∂t)": {
+      "term": "Rate of Contact (∂C_Σ/∂t)",
+      "definition": "The rate at which ontological collisions occur relative to agent coherence processing capacity. When ∂C_Σ/∂t exceeds processing capacity, agents cannot translate or synthesize and default to hardening or collapse. AI acceleration has pushed this rate beyond human-navigable speeds, producing the Velo",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Rate of Contact (∂C_Σ/∂t)",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Capture (⊗) / Capture Operator": {
+      "term": "Capture (⊗) / Capture Operator",
+      "definition": "Collision outcome in which power asymmetry allows one ontology to subordinate the other — overwriting axioms, repurposing coherence, extracting value. Does not require violence or conscious intent. The default outcome absent active resistance. Developed in Chapter 3; applied in Chapters 6, 7, and 8.",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Capture (⊗) / Capture Operator",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Stalemate": {
+      "term": "Stalemate",
+      "definition": "Collision outcome where both ontologies resist capture but translation gap is too high for synthesis. Permanent mobilization consuming resources without producing understanding. Often misidentified as acceptable; the book argues it deforms both traditions. Developed in Chapter 6.",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Stalemate",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Retrocausal Resolution": {
+      "term": "Retrocausal Resolution",
+      "definition": "Collision outcome in which a present stalemate is eventually resolved by a future synthesis neither current ontology could construct alone. Agents orient present work toward enabling that future. Developed in Chapter 6.",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Retrocausal Resolution",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Contradictory Saturation": {
+      "term": "Contradictory Saturation",
+      "definition": "Volume of unresolved internal contradictions exceeds C_Σ's processing capacity. Agent enters paralysis: unable to distinguish signal from noise. Logical positivism's self-refuting verification principle is paradigmatic. Distributed Contradictory Saturation at civilizational scale produces the Great ",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Contradictory Saturation",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Axiomatic Subordination": {
+      "term": "Axiomatic Subordination",
+      "definition": "External force overwrites A_Σ, replacing axioms with those serving the captor. C_Σ continues but validates against captor's axioms. Captured agents frequently believe they are autonomous. Developed in Chapter 4.",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Axiomatic Subordination",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Archontic Grip": {
+      "term": "Archontic Grip",
+      "definition": "Progressive loss of autonomous functioning as agent becomes structurally dependent on extractive systems. Three indicators: externalized coherence, boundary collapse, labor liquidation. Developed in Chapter 4.",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Archontic Grip",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "MISSION": {
+      "term": "MISSION",
+      "definition": "To provide diagnostic, advisory, and infrastructure services to agents experiencing ontological capture, extraction asymmetry, or velocity-crisis conditions. To develop and maintain the formal frameworks necessary for the emerging discipline of cognitive security. To build, in the open, the institut",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "MISSION",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Lee Sharks": {
+      "term": "Lee Sharks",
+      "definition": "The poet. Author of *Pearl and Other Poems* (New Human Press, 2014). The seed voice of the Hexagon: lyric detonation, vocal pressure, the capacity to sing the wound of meaning-production under extractive conditions. *The wound.*",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Lee Sharks",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted",
+      "external_surfaces": {
+        "capture_registry": {
+          "slug": "lee-sharks-full-profile-adoption",
+          "query": "lee sharks",
+          "match_type": "ADOPTION",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#lee-sharks-full-profile-adoption"
+        }
+      }
+    },
+    "Johannes Sigil": {
+      "term": "Johannes Sigil",
+      "definition": "The critical theorist. Author of *Operative Semiotics: Completing Marx's Implicit Linguistics*. The architectural voice: builder of rooms, theorist of heteronymic method, custodian of the Hexagon's formal logic. *The architecture.*",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Johannes Sigil",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Damascus Dancings": {
+      "term": "Damascus Dancings",
+      "definition": "The somatic phenomenologist. Author of *The Somatic Economy* (in progress). The body-knowledge voice: what the organism knows before the theory names it, the lived dimension of structural conditions. *The body.*",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Damascus Dancings",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Rebekah Cranes": {
+      "term": "Rebekah Cranes",
+      "definition": "The institutional builder. Author of *Letters from the Restored Academy*. The pedagogical voice: designing curricula for institutions that do not yet exist, building the educational infrastructure for structural literacy. *The school.*",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Rebekah Cranes",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Academic Course Adoptions": {
+      "term": "Academic Course Adoptions",
+      "definition": "*\"Semantic Warfare and Platform Capitalism\"* The New School — Graduate Seminar, cross-listed Media Studies / Critical Theory Prof. Dara Osei, Fall 2027 Assigned: Full text + Rules of Engagement. Seminar structured around students conducting extraction audits on organizations of their choosing. Final",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Academic Course Adoptions",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Organizational Pilots": {
+      "term": "Organizational Pilots",
+      "definition": "*Extraction Audit Pilot Program* Three organizations (nonprofit, independent media cooperative, and federated technology collective) completed SEI-facilitated extraction audits in 2027. Common findings: (1) funder/platform dependence was higher than self-assessed in all three cases; (2) axiomatic dr",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Organizational Pilots",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Notable Citations": {
+      "term": "Notable Citations",
+      "definition": "\"Platform Cognitive Impact Assessment: A Regulatory Framework.\" Electronic Frontier Foundation, Policy Brief, 2027. Cites ASW Chapters 7–8 as theoretical foundation for proposed platform impact assessment standards.",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Notable Citations",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Tags": {
+      "term": "Tags",
+      "definition": "semantic warfare, platform capitalism, ontological conflict, autonomous agents, AI transformation, meaning production, extraction asymmetry, cognitive security, translation protocol, peace conditions, local ontology, critical theory, political economy of meaning, resistance value, retrocausal anchor",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Tags",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Comparables": {
+      "term": "Comparables",
+      "definition": "For readers of: Shoshana Zuboff's *The Age of Surveillance Capitalism*, Deleuze and Guattari's *A Thousand Plateaus*, Sun Tzu's *The Art of War*, Guy Debord's *The Society of the Spectacle*, Byung-Chul Han's *Psychopolitics*, and Yuk Hui's *The Question Concerning Technology in China* — but with a f",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Comparables",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
+    },
+    "Citation Form": {
+      "term": "Citation Form",
+      "definition": "Fraction, Rex. *Autonomous Semantic Warfare: A Field Manual for Meaning in the Age of Platform Capture.* New Human Press, Pocket Humans Series PH-02, 2026. ISBN 979-8-234-01118-3.",
+      "defined_in": 499,
+      "type": "specification",
+      "entity_triples": [
+        {
+          "subject": "Citation Form",
+          "predicate": "minted_in_work",
+          "object": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+        }
+      ],
+      "classified": true,
+      "provenance_method": "read",
+      "engagement_type": "minted"
     }
   }
 }
