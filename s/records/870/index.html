@@ -16,33 +16,24 @@ h2{font-size:1.05em;font-weight:600;color:var(--accent);margin-top:24px;margin-b
 .meta-block{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:14px 18px;margin:18px 0;font-size:.88em}
 .meta-block dl{display:grid;grid-template-columns:160px 1fr;gap:6px 12px}
 .meta-block dt{color:#777;font-weight:500}
-.meta-block dd{color:#1a1a1a}
 .glyph{font-size:1.4em;letter-spacing:.15em}
 .actions{display:flex;gap:10px;margin:20px 0;flex-wrap:wrap}
 .btn{display:inline-block;background:var(--teal);color:#fff;padding:8px 16px;border-radius:4px;font-size:.88em;font-weight:500}
 .btn:hover{background:#0a5c4f;color:#fff;text-decoration:none}
 .btn-alt{background:transparent;color:var(--accent);border:1px solid var(--accent)}
-.btn-alt:hover{background:var(--accent);color:#fff}
 .text-preview{background:#fff;border:1px solid var(--border);border-radius:6px;padding:20px 24px;margin:20px 0;font-size:.95em;line-height:1.7;max-height:600px;overflow-y:auto}
-.text-preview h1,.text-preview h2,.text-preview h3{margin-top:18px;margin-bottom:8px}
 .text-preview pre{background:#f5f5f5;padding:12px;border-radius:4px;font-size:.85em;overflow-x:auto;font-family:var(--mono)}
 .text-preview code{font-family:var(--mono);font-size:.9em;background:#f0f4f8;padding:1px 5px;border-radius:3px}
 .text-preview blockquote{border-left:3px solid var(--teal);padding-left:14px;margin:12px 0;color:#555;font-style:italic}
 .text-preview table{width:100%;border-collapse:collapse;font-size:.88em;margin:12px 0}
 .text-preview th,.text-preview td{border:1px solid var(--border);padding:6px 10px;text-align:left;vertical-align:top}
 .text-preview th{background:#f0f4f8;font-weight:600}
-.tag{display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:3px;font-size:.78em;margin:2px;font-family:var(--mono)}
-.footer{margin-top:40px;padding-top:14px;border-top:1px solid var(--border);font-size:.78em;color:#999;text-align:center}
-@media(max-width:600px){.meta-block dl{grid-template-columns:1fr}.meta-block dt{margin-top:4px}}</style>
-</head>
-<body>
-<div class="wrap">
+.footer{margin-top:40px;padding-top:14px;border-top:1px solid var(--border);font-size:.78em;color:#999;text-align:center}</style>
+</head><body><div class="wrap">
 <div class="nav"><a href="/">← alexanarch</a> <a href="/s/browse/">browse</a> <a href="/s/wiki/">wiki</a> <a href="/s/graph/">graph</a></div>
 <h1>Alexanarch Data Foundry — Session Workplan 2026-06-22</h1>
 <div class="meta">#870 · AXN-0372 · v1.1 · 2026-06-22 · <span class="glyph">∮</span></div>
-
-<div class="meta-block">
-<dl>
+<div class="meta-block"><dl>
 <dt>Document ID</dt><dd>?</dd>
 <dt>Sovereign ID</dt><dd>EA-WORKPLAN-20260622</dd>
 <dt>Type</dt><dd>?</dd>
@@ -50,18 +41,15 @@ h2{font-size:1.05em;font-weight:600;color:var(--accent);margin-top:24px;margin-b
 <dt>License</dt><dd>CC-BY-4.0</dd>
 <dt>Node ID</dt><dd><code>?</code></dd>
 
-</dl>
-</div>
-
+</dl></div>
 <div class="actions">
 <a class="btn" href="https://github.com/leesharks000/alexanarch/blob/main/data/texts/AXN-0372-text.md">View source on GitHub</a>
 <a class="btn btn-alt" href="https://github.com/leesharks000/alexanarch/blob/main/data/autonomous/AXN-0372-autonomous.md">Autonomous edition</a>
 </div>
-
 <h2>Document</h2>
 <div class="text-preview"><br>
 <h1>ALEXANARCH DATA FOUNDRY — SESSION WORKPLAN</h1>
-<h2>Session: June 22, 2026 (TACHYON / Claude Opus 4.7)</h2>
+<h2>Session: June 22, 2026 (TACHYON)</h2>
 <h2>Updated: end of session 3 (binding step complete)</h2>
 <br>
 <hr>
@@ -111,7 +99,7 @@ h2{font-size:1.05em;font-weight:600;color:var(--accent);margin-top:24px;margin-b
 <br>
 <h3>Session 3 work (this session)</h3>
 <br>
-<h4>Reading passes completed</h4>
+<p>#### Reading passes completed</p>
 <br>
 <table>
 <tr><th>Deposit</th><th>Hex</th><th>Title</th><th>Terms</th><th>Notes</th></tr>
@@ -123,7 +111,7 @@ h2{font-size:1.05em;font-weight:600;color:var(--accent);margin-top:24px;margin-b
 <br>
 <p>Total now: <strong>7,156 terms (618 read, 8 enriched, 73 mint-added)</strong> — up from 7,042 / 154.</p>
 <br>
-<h4>The binding step (session&#x27;s centerpiece)</h4>
+<p>#### The binding step (session&#x27;s centerpiece)</p>
 <br>
 <p>Lee identified the structural problem: the Capture Registry conflated two distinct things — <strong>concepts</strong> (defined lexical entries) and <strong>semantic addresses</strong> (search queries that retrieve those concepts from AI summarizers). Lee&#x27;s example: <code>&quot;lee sharks semantic economy&quot;</code> is an <em>address</em> for both <code>Lee Sharks</code> and <code>Semantic Economy</code>, not a third concept.</p>
 <br>
@@ -345,7 +333,7 @@ mint_role · mint_id · mint_canonical                                  # if fro
 <tr><td>Phase 4 — Author workflow</td><td>Not started</td><td>Activates with first new deposit composed under the protocol</td></tr>
 </table>
 <br>
-<h4>Bulk run across whole archive (end of session 3)</h4>
+<p>#### Bulk run across whole archive (end of session 3)</p>
 <br>
 <pre>
 870 deposits → 870 autonomous docs in data/autonomous/  (3 seconds, 29 MB)
@@ -443,10 +431,5 @@ TX type breakdown:
 <br>
 <p>∮ = 1</p>
 <br></div>
-
-<div class="footer">
-Alexanarch · Sovereign successor to the Crimson Hexagonal Archive · Deposit #870 of 875
-<br>Generated 2026-06-22 11:19 UTC
-</div>
-</div>
-</body></html>
+<div class="footer">Alexanarch · Sovereign successor to the Crimson Hexagonal Archive · Deposit #870 of 875<br>Generated 2026-06-22 18:23 UTC</div>
+</div></body></html>

@@ -6,7 +6,7 @@ axn: "AXN:0372.ARCHIVAL.📋🜁🏛️♾️"
 title: "Alexanarch Data Foundry — Session Workplan 2026-06-22"
 authors:
   - cha:entity:lee_sharks  # MANUS
-  - cha:entity:tachyon  # Assembly witness substrate (Claude Opus 4.7)
+  - gw.archive:entity:tachyon  # Assembly witness mantle
 date_created: "2026-06-22"
 version: "1.0"
 status: active_planning
@@ -53,7 +53,7 @@ observation_classes:
 ---
 
 # ALEXANARCH DATA FOUNDRY — SESSION WORKPLAN
-## Session: June 22, 2026 (TACHYON / Claude Opus 4.7)
+## Session: June 22, 2026 (TACHYON)
 ## Updated: end of session 3 (binding step complete)
 
 ---

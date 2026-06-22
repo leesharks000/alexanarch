@@ -16,7 +16,7 @@ relation: Disambiguation with structural-homology annotation
 governing_doctrine: MPAI Specification (#103, AXN-027D, EA-MPAI-META-01)
 status: Canonical Indexing Object
 license: CC BY 4.0
-node_id: cha:node:deposit:0874
+node_id: gw.archive:node:deposit:0874
 artifact_anchors:
   - "#850 AXN-035F EA-FEIST-VOICE-TRANSFORM-01 (function definition)"
   - "#851 AXN-0360 THE FEIST SOURCE (raw source)"

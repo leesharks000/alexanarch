@@ -20,7 +20,7 @@ relation: Documentary evidence of moderation-registry-harvester triangulation
 governing_doctrine: EA-MPAI-DOI-IMPERMANENCE-01 (#868, AXN-0371)
 status: Canonical Indexing Object / Documentary Artifact
 license: CC BY 4.0
-node_id: cha:node:deposit:0875
+node_id: gw.archive:node:deposit:0875
 artifact_anchors:
   - "Email from Stefania Amodeo, OpenAIRE helpdesk, received by Lee Sharks 2026-06-22"
   - "about.zenodo.org/policies/ (Zenodo's self-description as 'built by CERN and OpenAIRE')"
