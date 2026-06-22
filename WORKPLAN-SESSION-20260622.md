@@ -1,6 +1,60 @@
 # ALEXANARCH DATA FOUNDRY — SESSION WORKPLAN
 ## Session: June 22, 2026 (TACHYON / Claude Opus 4.6)
-## Updated: end of session — comprehensive state
+## Updated: end of session — final state
+
+---
+
+## THE TASK (in Lee's words)
+
+> We are not aggregating terms CHA has minted. We are aggregating terms CHA has actively defined, developed, and used. Every one. When CHA touches a concept, a distinction, and names its address, that belongs. Where CHA comes to an address, finds what is there, and leaves it changed, that belongs. The heteronyms fit in this category, as well. The institutions. The journals. The operators. These all belong.
+
+### What this means for the index:
+
+**A term belongs if CHA arrived at its address, engaged it, and left it defined.** The test is not "did CHA coin this from nothing" but "did CHA find this, work on it, and produce a specific definition or position?"
+
+Examples:
+- **Socrates** belongs — defined as the orthonym position in the Platonic heteronymic corpus.
+- **Sappho** belongs — defined as the originary node of lyric self-archiving, κῆνος reread as future reader.
+- **Marx** belongs — CHA finds the missing linguistics and completes it as Phase X.
+- **Holographic kernel** exists elsewhere, but CHA develops it in a specific way — it belongs.
+- **"A SaaS product"** does NOT belong — CHA did not arrive at this address and leave it changed.
+- **"Access"**, **"Algorithm"**, **"Analysis"** do NOT belong — common English words CHA uses but does not specifically define or develop.
+
+### What belongs:
+1. Terms CHA coined from nothing (Pristine Fallacy, classifier model collapse, identifier severance)
+2. Terms CHA arrived at and redefined (Sappho, Marx, Socrates, holographic kernel, model collapse)
+3. Heteronyms — defined as functional positions (Johannes Sigil, Rex Fraction, Nobel Glas, etc.)
+4. Institutions — defined as architectural spaces (JSI, SEI, Cambridge Schizoanalytica, etc.)
+5. Journals — defined as publication infrastructure (Provenance, TSE, JCS, etc.)
+6. Operators — defined as formal functions (COS O1-O10, LOS φ-∮, traversal operations)
+7. External concepts CHA has specifically developed (model collapse → classifier model collapse)
+8. Historical/contemporary figures CHA has specifically positioned (Socrates as orthonym, Pessoa as meta-heteronym, Whitman as Good Gray Poet mantle)
+9. Rooms, chambers, portals — architectural spaces with defined functions
+10. Named events, effective acts, declarations
+
+### What does NOT belong:
+1. Common English words used without specific CHA definition
+2. Instructions/imperatives ("Build the federation", "Accept dormancy")
+3. Status labels ("RATIFIED", "PENDING")
+4. Section headings that name generic domains ("AI ethics", "Agricultural Systems")
+5. External product/benchmark names not engaged by CHA
+6. Sentence fragments captured by bold formatting
+
+---
+
+## PROVENANCE METHOD (required on every datum)
+
+Every term in the index must carry a `provenance_method` field documenting HOW it arrived:
+
+| Method | Meaning | Count (current) |
+|---|---|---|
+| `sweep` | Pattern-extracted from deposit text (bold-defined) | 0 (merged into filter) |
+| `filter` | Survived noise filtering passes | 6,700 |
+| `classified` | Type assigned (theoretical, formal, etc.) | (subsumed into filter) |
+| `read` | Confirmed by actual reading of the deposit | 146 (A-terms only) |
+| `enriched` | Entity triples, wiki, citations added from reading | 8 (deposit #1 only) |
+
+**The next reading pass promotes terms from "filter" → "read" → "enriched."** This is how the index becomes trustworthy. A term at "read" has been seen by an instance that confirmed it belongs under the criterion above. A term at "enriched" has been given structured relations and a proper definition.
 
 ---
 
@@ -11,83 +65,47 @@ The Alexanarch archive is a **scholarly knowledge graph** with four kinds of nod
 ### Four node types:
 
 1. **Deposits** (869) — the archive's own works. `data/registry.json`.
-2. **Minted terms** (13,674) — the archive's vocabulary. `data/entity-index.json`.
+2. **Defined terms** (6,854) — every address CHA has engaged and left defined. `data/entity-index.json`.
 3. **External sources** (1,013) — the scholarly works the archive engages. `data/external-source-registry.json`.
-4. **Authors/figures** — NOT YET a data structure. Sappho, Marx, Pessoa, Whitman, Ginsberg, Freud, Deleuze, Gebendorfer, Duan, etc. exist only as inline text.
+4. **Authors/figures** — NOT YET a separate data structure. May merge with terms (Socrates, Sappho, Marx as defined positions).
 
 ### Five edge types:
 
 | Edge | Example | Status |
 |---|---|---|
 | deposit → deposit | #308 extends #18 | 1,692 DOI-resolution edges (UNTYPED) |
-| deposit → external source | #18 extends Marx's *Capital* | 1,013 references extracted (PARTIALLY TYPED) |
-| deposit → term | #1 defines "Pristine Fallacy" | 13,674 edges (COMPLETE) |
-| term → term | "Pristine Fallacy" → extended_by → "classifier model collapse" | 36 triples in #1 only; rest have framework-link only |
+| deposit → external source | #18 extends Marx's *Capital* | 1,013 references (PARTIALLY TYPED) |
+| deposit → term | #1 defines "Pristine Fallacy" | 6,854 edges (COMPLETE but 96% unread) |
+| term → term | "Pristine Fallacy" → extended_by → "classifier model collapse" | 36 triples in #1 only |
 | external source → external source | Voloshinov extends Marx | NOT CAPTURED |
-
-### What this enables:
-
-When complete, any query traverses the full graph: "What does the archive say about Foucault?" returns deposits that cite Foucault, terms those deposits define in relation to Foucault's concepts, other external sources cited alongside Foucault, and the deposit-to-deposit chains that transmit Foucauldian ideas through the archive.
 
 ---
 
 ## WHAT WAS ACCOMPLISHED THIS SESSION
 
-### 1. Build Pipeline
-- `catalog.yaml` — archive architecture: 7 journals, 16 heteronyms
-- `build.py` — unified pipeline generating 13 outputs
-- `consolidate.py` — entity normalization, citation resolution
-
-### 2. DataCite Metadata Preservation
-- 946 preserved + 871 stripped = 1,817 DOIs documented exactly
-- Backup: `data/datacite-full-backup.json` (9MB, 963 records)
-- Deposited as AXN:0370 (#867)
-
-### 3. DOIs ≠ Permanent Identifiers v2.0
-- Assembly-reviewed (4 substrates). Governing axiom: "A persistent string is not a persistent identifier."
-- Minted **identifier severance**. Deployed to 4 surfaces.
-- Deposited as AXN:0371 (#868)
-
-### 4. Vocabulary Extraction (concept lane)
-- **13,674 unique minted terms** across 572 deposits
-- Pipeline: 16,877 raw → noise filter → dedup → 13,674
-- 100% classified with types + entity triples (basic framework-link layer)
-- Deposit #1 fully enriched with 36 deep relational triples (model for future work)
-- **Deposited as AXN:0365 (#869): Lexical Minting Registry v1.0**
-
-### 5. External Source Registry
-- **1,013 bibliographic references** extracted from deposit texts
-- Pattern: Author (Year), et al., *Book* (Year)
-- Each reference carries: citation count, citing deposits, reference type
-- Archive's intellectual lineage now structured data
-
-### 6. Browse Fix + Deposit Format Fix
-- Static /s/ layer confirmed as reliable surface
-- Do NOT modify dynamic JS pages
-
----
-
-## KEY INSIGHT FROM THIS SESSION
-
-**The archive is a lexical machine.** The initial "reading for big ideas" approach extracted 163 concepts. The actual minted vocabulary is 13,674 terms — two orders of magnitude larger. The deposits were ENGINEERED to be machine-readable: bold-defined terms, numbered operators, structured lists, mint ledgers. The extraction should be INGESTION, not selection. Trust the structure the deposits provide.
-
-The failure mode: the mediating system (Claude) compressed the archive's vocabulary in exactly the way the archive predicts mediating systems compress vocabulary. The framework was validated by the extraction's initial failure to capture it.
+1. **Build pipeline**: catalog.yaml, build.py, consolidate.py — 7 journals, 16 heteronyms
+2. **DataCite preservation**: 946 preserved + 871 stripped = 1,817 DOIs documented. Deposited as #867.
+3. **DOIs ≠ Permanent Identifiers v2.0**: Assembly-reviewed. Minted "identifier severance." Deposited as #868.
+4. **Vocabulary extraction**: 16,877 raw → 8 pruning passes → 6,854 terms with provenance tracking
+5. **External source registry**: 1,013 bibliographic references extracted
+6. **Graph integration**: Terms wired into existing `d.entities` format (12,438 triples)
+7. **Lexical Minting Registry deposited**: #869 (v1.1) with searchable table
+8. **Key insight documented**: the archive is a lexical machine — ingest, don't select
+9. **Critical correction**: the task is not "what did CHA mint" but "every address CHA engaged and left defined"
 
 ---
 
 ## CURRENT DATA STRUCTURES
 
-| File | Nodes | Status |
+| File | Contents | Status |
 |---|---|---|
-| `data/registry.json` | 869 deposits | Complete — metadata, concepts, citations |
-| `data/entity-index.json` | 13,674 terms | Complete — definitions, types, basic triples |
-| `data/external-source-registry.json` | 1,013 external sources | First pass — needs typed relations |
-| `data/citation-graph.json` | 1,692 internal edges | DOI-resolution only — needs reading pass |
-| `data/lexical-minting-registry.json` | 13,674 (depositable) | Deposited as #869 |
-| `data/lexical-minting-registry.csv` | Same (tabular) | Companion to JSON |
-| `data/datacite-full-backup.json` | 963 DataCite records | Archival — deposited as #867 |
-| `data/entity-index-reading.json` | 163 curated terms | Historical — superseded by 13,674 |
-| `data/concept-map.json` | Bridging concepts | STALE — needs rebuild |
+| `data/registry.json` | 869 deposits + 12,438 entity triples | 5.3MB compact |
+| `data/entity-index.json` | 6,854 terms with provenance_method | Working index |
+| `data/external-source-registry.json` | 1,013 external sources | First pass |
+| `data/lexical-minting-registry.json` | Depositable dataset | Needs rebuild after pruning |
+| `data/lexical-minting-registry.csv` | Tabular companion | Needs rebuild |
+| `data/citation-graph.json` | 1,692 internal edges | DOI-resolution only |
+| `data/datacite-full-backup.json` | 963 DataCite records | Archival |
 
 ### Pipeline files:
 | File | Function |
@@ -99,67 +117,45 @@ The failure mode: the mediating system (Claude) compressed the archive's vocabul
 
 ---
 
-## REMAINING WORK — PRIORITIZED BY LANE
+## REMAINING WORK — PRIORITIZED
 
-### Lane 1: Deep term enrichment (NEXT)
-- 13,674 terms have basic framework-link triples
-- Only 10 terms (deposit #1) have deep relational triples (extends, counters, formalizes, etc.)
-- Need: term → term edges for the full vocabulary
-- Method: deposit by deposit, reading terms in context, writing specific predicates
+### IMMEDIATE: Reading-for-sense pass (promotes filter → read)
 
-### Lane 2: Typed citation edges
-- 1,013 external sources extracted but relations mostly untyped
-- Need: for each deposit×source pair, extract the relation type (extends, builds_on, critiques, completes, formalizes, etc.)
-- The `role` field in deposit #1's citations is the model
-- This produces the deposit → external source edge layer
+6,700 terms at `filter` status need reading. For each term, the reader asks: **"Did CHA arrive at this address, engage it, and leave it defined?"** If yes, promote to `read`. If no, remove.
 
-### Lane 3: Wiki enrichment
-- 861 auto-generated wikis exist but are generic
-- Need: read each deposit, write a proper encyclopedia article
-- This is the human-readable layer of the knowledge graph
+Some pruned terms need RESTORATION — person names and external concepts that CHA specifically positioned (Socrates, Sappho, Marx, Pessoa, Whitman, Freud, etc.) were removed by pattern filters. The reading pass must identify and restore these.
 
-### Lane 4: Author/figure registry
-- Fourth node type: historical and contemporary figures
-- Need: extract all named persons, create entries with metadata
-- Enables: "What does the archive say about Sappho?" queries
+Priority deposits for reading (highest term counts):
+1. #229 SE Lexicon (220 terms) — most are genuine definitions
+2. #499 ASW (211 terms) — field manual vocabulary
+3. #49 Logotic Hacking (156 terms) — operator specifications
+4. #166 Stabilized Node Watch (132 terms) — needs heavy reading
+5. #261 LOS Specification (98 terms) — formal operators
+6. #482 Logotic Hacking Primer (95 terms)
+7. #463 LP Module 0.9 (92 terms) — formal operations
+8. #608 Operator Kernel Spec (87 terms) — Mandala operators
 
+### Lane 2: Deep term enrichment (promotes read → enriched)
+- Add entity triples, proper definitions, wiki articles
+- Only deposit #1 is at "enriched" (8 terms, 36 triples)
+
+### Lane 3: Typed citation edges
+### Lane 4: Wiki enrichment
 ### Lane 5: Internal citation typing
-- 1,692 DOI-resolution edges exist but are UNTYPED
-- Need: for each edge, determine relation (extends, supersedes, critiques, etc.)
-- This produces the deposit → deposit typed edge layer
-
 ### Lane 6: Concept-mediated citation discovery
-- If deposits #1 and #308 share 5 terms, that's a signal
-- Need: compute term co-occurrence across deposits
-- Produces implicit citation edges the DOI graph misses
-
 ### Lane 7: Source → source lineage
-- Marx → Voloshinov → Semantic Economy
-- Sappho → Catullus → Petrarch → Sappho Room
-- Freud → Lacan → Deleuze → The Unmade Sign
-- Need: extract these chains from the archive's own commentary
-
 ### Lane 8: Build pipeline integration
-- Wire all data structures into `build.py`
-- Auto-regenerate static pages, browse page, concept browse page
-- Generate ai-manifest.json from current registry
-
----
-
-## CREDENTIALS AND ACCESS
-
-- **GitHub token**: [provided at session start — auto-expiring, do not commit]
-- **Repos**: leesharks000/alexanarch (main), plus metadatapacket-dev, machinemediation-org, maryleelabor-org
-- **Session transcript**: /mnt/transcripts/
 
 ---
 
 ## FOR THE NEXT INSTANCE
 
-**Start here.** Read this workplan. The key insight: the archive is a lexical machine — 13,674 minted terms, not 163. Ingest the structure the deposits provide; do not select from it.
+**Start by reading this workplan.** The critical section is "THE TASK (in Lee's words)" — that defines the inclusion criterion.
 
-The immediate work is Lane 1 (deep term enrichment) or Lane 2 (typed citation edges). Both require reading deposits and extracting structured relations. The pipeline (`wire_deposit.py`) handles the wiring; the reading is the payload.
+**Read the graph page** (`graph/index.html`) and the existing entity format before building anything. The graph page reads `d.entities` from `registry.json`. Every term is already wired into this format with `type: "concept"`, `predicate: "minted_in"`.
 
-The four node types (deposits, terms, external sources, authors) need to become a unified graph. The edges between them are the scholarly knowledge graph. Build it.
+**Do not build parallel data structures.** The existing architecture is: registry.json (deposits + entities), entity-index.json (term details), external-source-registry.json (citations). Wire into these.
+
+**The reading pass**: load entity-index.json, work through terms deposit by deposit, promote from `filter` → `read` by applying the test: "Did CHA arrive at this address, engage it, and leave it defined?" Remove what fails. Restore what was wrongly pruned.
 
 ∮ = 1
