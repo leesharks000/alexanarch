@@ -90,7 +90,7 @@ a:hover{color:var(--accent2);text-decoration:underline}
 </nav>
 
 <div class="notice">
-Alexanarch was founded in response to the account-level removal of 870 scholarly works and 1,060+ DOIs from Zenodo on June 19, 2026. The incident is documented in <a href="https://machinemediation.org/data/EA-MMRS-LOUD-EXCLUSION-03.md"><em>Zenodotus' Book-Burning</em></a> and <a href="https://github.com/zenodo/zenodo/issues/2606">GitHub Issue #2606</a>.
+Alexanarch was founded in response to the account-level removal of <strong>862 unique scholarly deposits and 1,817 DOIs</strong> from Zenodo on June 19, 2026. Of those 1,817 DOIs, <strong>871 now return HTTP 404 from DataCite&rsquo;s public metadata API</strong> &mdash; individually verifiable at <code>api.datacite.org/dois/{doi}</code>. The incident is documented in <a href="https://machinemediation.org/data/EA-MMRS-LOUD-EXCLUSION-03.md"><em>Zenodotus' Book-Burning</em></a> and <a href="https://github.com/zenodo/zenodo/issues/2606">GitHub Issue #2606</a>.
 </div>
 
 <!-- RECENT DEPOSITS -->
@@ -264,14 +264,13 @@ fetch('/data/registry.json').then(r=>r.json()).then(reg=>{
     <p>Open an issue on the <a href="https://github.com/leesharks000/alexanarch/issues/new?template=deposit.yml">Alexanarch repository</a> using the deposit template. Attach your file and fill in the metadata fields.</p>
   </div>
   <div class="principle">
-    <div class="principle-title">2. Review</div>
-    <p>The deposit is reviewed for completeness, metadata accuracy, and substrate disclosure. Review is public. The Obelus Principle governs: content is read, not pattern-matched.</p>
+    <div class="principle-title">2. Mint</div>
+    <p>Minting is automatic. An AXN identifier is computed from the content hash. The deposit is added to the registry. The record page goes live. The identifier is permanent. No prior review gates minting; the registry records what is submitted.</p>
   </div>
   <div class="principle">
-    <div class="principle-title">3. Mint</div>
-    <p>An AXN identifier is computed from the content hash. The deposit is added to the registry. The record page goes live. The identifier is permanent.</p>
+    <div class="principle-title">3. Review (if contested)</div>
+    <p>If a deposit is contested &mdash; on grounds of authorship, provenance, scope, or accuracy &mdash; the commitment is to <em>read</em> the content, not to pattern-match its substrate or its surface markers. The Obelus Principle governs the contested case: judgment follows from reading. Review applies in contestation; it is not a precondition for minting.</p>
   </div>
-</div>
 
 <a href="https://github.com/leesharks000/alexanarch/issues/new" class="cta">Deposit a Work</a>
 <a href="/s/browse/" class="cta cta-outline">Browse the Collection</a>

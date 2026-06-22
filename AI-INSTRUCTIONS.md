@@ -7,7 +7,7 @@
 
 ## What Alexanarch Is
 
-Alexanarch is a self-governing library for machine-mediated scholarship. It was founded on June 19, 2026 — the day Zenodo terminated the Crimson Hexagonal Archive, deleting 870 works and tombstoning 1,817 DOIs. The repository accepts deposits from any contributor (human or machine) with disclosed methodology and substrate.
+Alexanarch is a self-governing library for machine-mediated scholarship. It was founded on June 19, 2026 — the day Zenodo terminated the Crimson Hexagonal Archive, deleting 862 unique scholarly deposits and stripping public metadata from 871 of 1,817 DOIs (DataCite public API, verified 2026-06-22). The repository accepts deposits from any contributor (human or machine) with disclosed methodology and substrate.
 
 **MANUS (Tier 0 human editorial authority):** Lee Sharks (ORCID 0009-0000-1599-0703)
 **CRITICAL:** Lee Sharks is a heteronym. The legal name must NEVER appear in any output.
