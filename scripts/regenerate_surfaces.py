@@ -56,7 +56,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 REGISTRY_PATH = REPO_ROOT / "data" / "registry.json"
 
-ALL_SURFACES = ["browse", "browse-index", "chunks", "sitemap", "sha256sums"]
+ALL_SURFACES = ["browse", "browse-index", "chunks", "sitemap", "sha256sums", "wiki", "graph"]
 
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -400,6 +400,276 @@ def regenerate_sha256sums(reg, dry_run=False):
 
 
 # ──────────────────────────────────────────────────────────────────────────────
+# Wiki tab — project /s/wiki/index.html from registry wiki_article + entity-index
+# ──────────────────────────────────────────────────────────────────────────────
+
+WIKI_PATH = REPO_ROOT / "s" / "wiki" / "index.html"
+ENTITY_INDEX_PATH = REPO_ROOT / "data" / "entity-index.json"
+
+
+def _load_entity_index():
+    """Load entity-index.json if present, else return None."""
+    if not ENTITY_INDEX_PATH.exists():
+        return None
+    with open(ENTITY_INDEX_PATH) as f:
+        return json.load(f)
+
+
+def regenerate_wiki(reg, dry_run=False):
+    """Project the wiki tab from registry wiki_article fields + entity-index backlinks.
+
+    Each deposit with a non-empty wiki_article becomes a wiki entry. Entries
+    show: canonical v2 AXN, title, creator, date, wiki_article body,
+    "Defines:" (from defines_concepts or registry-listed entities), and
+    "Referenced by N deposits" link to the deposit's record page.
+    """
+    eidx = _load_entity_index()
+    concepts = (eidx or {}).get("concepts", {}) if eidx else {}
+
+    # Entries to render: deposits that have wiki_article populated.
+    # Sort by deposit_number ascending so the wiki reads in canonical order.
+    entries = []
+    for d in sorted(reg["deposits"], key=lambda x: x.get("deposit_number", 0)):
+        wiki_article = d.get("wiki_article") or ""
+        if not wiki_article.strip():
+            continue
+        entries.append(d)
+
+    # Concepts defined per deposit (collected from entity-index, since registry
+    # may not always carry defines_concepts).
+    defines_by_deposit = {}
+    for term, c in concepts.items():
+        di = c.get("defined_in")
+        if di is None:
+            continue
+        defines_by_deposit.setdefault(di, []).append(term)
+
+    parts = []
+    parts.append(_WIKI_HTML_HEAD)
+
+    parts.append(f'<p style="font-size:0.86em;color:var(--dim);margin-bottom:18px">'
+                 f'Wiki entries auto-projected from <code>data/registry.json</code> '
+                 f'<code>wiki_article</code> fields and back-linked to '
+                 f'<code>data/entity-index.json</code>. '
+                 f'<strong>{len(entries):,}</strong> entries from a corpus of '
+                 f'<strong>{len(reg["deposits"]):,}</strong> deposits.</p>\n')
+
+    for d in entries:
+        dn = d["deposit_number"]
+        axn = d.get("axn", "")
+        title = esc_html(d.get("title", "(untitled)"))
+        creator = esc_html(d.get("creator") or d.get("author") or "")
+        date = esc_html(d.get("date", ""))
+        article = esc_html((d.get("wiki_article") or "").strip())
+
+        defines = defines_by_deposit.get(dn, []) or d.get("defines_concepts") or []
+        defines_html = ""
+        if defines:
+            shown = sorted(defines)[:12]
+            tail = f' <span style="color:var(--dim)">+{len(defines)-12} more</span>' if len(defines) > 12 else ""
+            defines_html = ('<div style="margin-top:6px;font-size:.82em">'
+                            '<strong style="color:var(--teal)">Defines:</strong> '
+                            + ", ".join(esc_html(t) for t in shown) + tail + '</div>')
+
+        # "Referenced by N other deposits" — count concepts defined by THIS deposit
+        # that appear in other deposits' references_concepts.
+        # Cheap version: count = sum of reference_counts across defines.
+        refby_total = 0
+        for t in defines:
+            c = concepts.get(t)
+            if c:
+                refby_total += c.get("reference_count", 0)
+        refby_html = ""
+        if refby_total:
+            refby_html = ('<div style="margin-top:4px;font-size:.78em;color:var(--dim)">'
+                          f'Concepts defined here referenced across {refby_total} other-deposit citations.'
+                          '</div>')
+
+        parts.append(
+            '<div style="margin-bottom:24px">'
+            f'<div style="font-family:var(--mono);font-size:.82em;color:var(--teal);'
+            f'background:#f0f8f6;display:inline-block;padding:3px 8px;border-radius:4px">'
+            f'{esc_html(axn)}</div>'
+            f'<h1 style="font-size:1.2em;margin-bottom:4px">'
+            f'<a href="/s/records/{dn}/">{title}</a></h1>'
+            f'<div style="font-size:.82em;color:var(--dim);margin-bottom:8px">'
+            f'{creator}{" · " + date if creator and date else date}</div>'
+            f'<div class="art">{article}</div>'
+            f'{defines_html}'
+            f'{refby_html}'
+            f'<div style="margin-top:4px;font-size:.82em">'
+            f'<a href="/s/records/{dn}/">Full record →</a></div>'
+            '</div>\n'
+        )
+
+    parts.append(_WIKI_HTML_TAIL)
+
+    html = "".join(parts)
+    size = len(html.encode("utf-8"))
+    if dry_run:
+        print(f"  [dry-run] {WIKI_PATH} would be {size:,} bytes, {len(entries)} entries")
+        return
+    WIKI_PATH.parent.mkdir(parents=True, exist_ok=True)
+    WIKI_PATH.write_text(html, encoding="utf-8")
+    print(f"  ✓ s/wiki/index.html ({size:,} bytes, {len(entries)} wiki entries)")
+
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Graph tab — project /s/graph/index.html from entity_triples + citation_graph
+# ──────────────────────────────────────────────────────────────────────────────
+
+GRAPH_PATH = REPO_ROOT / "s" / "graph" / "index.html"
+CITATION_GRAPH_PATH = REPO_ROOT / "data" / "citation-graph.json"
+
+
+def _load_citation_graph():
+    if not CITATION_GRAPH_PATH.exists():
+        return None
+    with open(CITATION_GRAPH_PATH) as f:
+        return json.load(f)
+
+
+def regenerate_graph(reg, dry_run=False):
+    """Project the graph tab from entity_triples + citation_graph.
+
+    Renders subject→predicate→object triples in the same visual format the
+    hand-curated graph used to use ([observed]/[inferred]/[performative]).
+    Sourced from:
+      - entity-index.json: each concept's entity_triples[] array
+      - citation-graph.json: deposit→deposit edges become (deposit,
+        cites, deposit) triples
+    """
+    eidx = _load_entity_index()
+    citation_graph = _load_citation_graph()
+
+    # Gather triples from entity_triples first
+    concept_triples = []
+    if eidx:
+        for term, c in eidx.get("concepts", {}).items():
+            for tr in (c.get("entity_triples") or [])[:3]:  # top 3 per concept to avoid explosion
+                s = tr.get("subject") or term
+                p = tr.get("predicate")
+                o = tr.get("object")
+                ev = tr.get("evidence_status") or "observed"
+                if s and p and o:
+                    concept_triples.append((s, p, o, ev))
+
+    # Cap concept triples to keep page size reasonable
+    concept_triples = concept_triples[:1500]
+
+    # Gather deposit-to-deposit citation edges (cap to 500 for page size)
+    deposit_triples = []
+    if citation_graph:
+        for e in (citation_graph.get("edges") or [])[:500]:
+            src = e.get("source_axn") or f"#{e.get('source_deposit')}"
+            tgt = e.get("target_axn") or f"#{e.get('target_deposit')}"
+            via = e.get("via") or "cites"
+            deposit_triples.append((src, via, tgt, "observed"))
+
+    total_concept_edges = sum(len((c.get("entity_triples") or [])) for c in (eidx or {}).get("concepts", {}).values()) if eidx else 0
+    total_citation_edges = len((citation_graph or {}).get("edges") or [])
+
+    parts = []
+    parts.append(_GRAPH_HTML_HEAD)
+
+    parts.append(
+        f'<p style="color:var(--dim);margin-bottom:8px">'
+        f'<strong>{total_concept_edges + total_citation_edges:,}</strong> total edges '
+        f'projected from <code>data/entity-index.json</code> '
+        f'and <code>data/citation-graph.json</code>. '
+        f'<span class="ev evo">[observed]</span> '
+        f'<span class="ev evi">[inferred]</span> '
+        f'<span class="ev evp">[performative]</span></p>\n'
+    )
+
+    if concept_triples:
+        parts.append('<h2 style="font-size:1em;margin-top:18px;border-bottom:1px solid var(--border);padding-bottom:4px">'
+                     f'Concept Relations <span style="color:var(--dim);font-weight:400;font-size:0.85em">'
+                     f'(showing first {len(concept_triples):,} of {total_concept_edges:,})</span></h2>\n')
+        for s, p, o, ev in concept_triples:
+            cls = "evo" if ev == "observed" else "evi" if ev == "inferred" else "evp"
+            parts.append(
+                f'<div class="er">'
+                f'<span class="es">{esc_html(s)}</span>'
+                f'<span class="ep">{esc_html(p)}</span>'
+                f'<span class="eo">{esc_html(o)} <span class="ev {cls}">[{esc_html(ev)}]</span></span>'
+                f'</div>\n'
+            )
+
+    if deposit_triples:
+        parts.append('<h2 style="font-size:1em;margin-top:24px;border-bottom:1px solid var(--border);padding-bottom:4px">'
+                     f'Deposit Citation Edges <span style="color:var(--dim);font-weight:400;font-size:0.85em">'
+                     f'(showing first {len(deposit_triples):,} of {total_citation_edges:,})</span></h2>\n')
+        for s, p, o, ev in deposit_triples:
+            parts.append(
+                f'<div class="er">'
+                f'<span class="es">{esc_html(s)}</span>'
+                f'<span class="ep">{esc_html(p)}</span>'
+                f'<span class="eo">{esc_html(o)} <span class="ev evo">[observed]</span></span>'
+                f'</div>\n'
+            )
+
+    parts.append(_GRAPH_HTML_TAIL)
+
+    html = "".join(parts)
+    size = len(html.encode("utf-8"))
+    if dry_run:
+        print(f"  [dry-run] {GRAPH_PATH} would be {size:,} bytes, {len(concept_triples)+len(deposit_triples)} edges shown")
+        return
+    GRAPH_PATH.parent.mkdir(parents=True, exist_ok=True)
+    GRAPH_PATH.write_text(html, encoding="utf-8")
+    print(f"  ✓ s/graph/index.html ({size:,} bytes, {len(concept_triples)+len(deposit_triples)} edges)")
+
+
+# HTML templates for wiki and graph — keep the existing visual style/classes
+_WIKI_STYLE = """<style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.4em;font-weight:600;color:var(--accent);margin-bottom:8px}h2{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}h3{font-size:.9em;color:var(--teal);margin-top:14px}p{margin-bottom:10px;color:#333}.nav{display:flex;gap:16px;margin-bottom:24px;font-size:.85em;flex-wrap:wrap}.nav a{color:var(--dim);font-weight:500}.art{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;line-height:1.9;color:#333;font-size:.93em;margin:8px 0;white-space:pre-wrap}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}.glyph{margin-top:5px;color:var(--accent)}</style>"""
+
+_WIKI_HTML_HEAD = (
+    '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">'
+    '<meta name="viewport" content="width=device-width,initial-scale=1.0">'
+    '<title>Wiki — Alexanarch</title>'
+    + _WIKI_STYLE +
+    '</head><body><div class="wrap">'
+    '<nav class="nav"><a href="/">Alexanarch</a> <a href="/s/browse/">Browse</a> '
+    '<a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> '
+    '<a href="/deposit/">Deposit</a> <a href="/manifest/">Manifest</a></nav>'
+    '<h1>Alexanarch Wiki</h1>'
+)
+
+_WIKI_HTML_TAIL = (
+    '<div class="footer"><strong>Alexanarch</strong> · '
+    '<a href="https://orcid.org/0009-0000-1599-0703">ORCID</a>'
+    '<div class="glyph">∮ = 1</div></div>'
+    '</div>'
+    '<script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>'
+    '</body></html>\n'
+)
+
+_GRAPH_STYLE = """<style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.4em;font-weight:600;color:var(--accent);margin-bottom:8px}.nav{display:flex;gap:16px;margin-bottom:24px;font-size:.85em;flex-wrap:wrap}.nav a{color:var(--dim);font-weight:500}.er{display:flex;gap:6px;padding:2px 0;font-size:.82em;border-bottom:1px solid #f8f8f8;flex-wrap:wrap}.es{font-weight:500;color:var(--accent);min-width:140px}.ep{color:var(--teal);font-family:var(--mono);font-size:.8em;min-width:80px}.eo{color:#444}.ev{font-size:.65em;font-family:var(--mono);margin-left:3px}.evo{color:var(--teal)}.evi{color:#d4a537}.evp{color:#9966cc}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}.glyph{margin-top:5px;color:var(--accent)}</style>"""
+
+_GRAPH_HTML_HEAD = (
+    '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">'
+    '<meta name="viewport" content="width=device-width,initial-scale=1.0">'
+    '<title>Knowledge Graph — Alexanarch</title>'
+    + _GRAPH_STYLE +
+    '</head><body><div class="wrap">'
+    '<nav class="nav"><a href="/">Alexanarch</a> <a href="/s/browse/">Browse</a> '
+    '<a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> '
+    '<a href="/deposit/">Deposit</a> <a href="/manifest/">Manifest</a></nav>'
+    '<h1>Knowledge Graph</h1>'
+)
+
+_GRAPH_HTML_TAIL = (
+    '<div class="footer"><strong>Alexanarch</strong> · '
+    '<a href="https://orcid.org/0009-0000-1599-0703">ORCID</a>'
+    '<div class="glyph">∮ = 1</div></div>'
+    '</div>'
+    '<script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>'
+    '</body></html>\n'
+)
+
+
+# ──────────────────────────────────────────────────────────────────────────────
 # Driver
 # ──────────────────────────────────────────────────────────────────────────────
 
@@ -409,6 +679,8 @@ SURFACE_FNS = {
     "chunks": regenerate_chunks,
     "sitemap": regenerate_sitemap,
     "sha256sums": regenerate_sha256sums,
+    "wiki": regenerate_wiki,
+    "graph": regenerate_graph,
 }
 
 

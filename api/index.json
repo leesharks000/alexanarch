@@ -179,6 +179,18 @@
       "canonical_path_pattern": "/s/records/<deposit_number>/index.html",
       "derived_from": "/data/registry.json + /data/texts/AXN-<HEX>-text.md",
       "regenerated_by": "wire_deposit.py(N)"
+    },
+    "wiki_html": {
+      "canonical_path": "/s/wiki/index.html",
+      "derived_from": "/data/registry.json wiki_article fields + /data/entity-index.json defined_in + reference_count fields",
+      "regenerated_by": "scripts/regenerate_surfaces.py (regenerate_wiki)",
+      "shows": "auto-projected wiki entries for every deposit with non-empty wiki_article; canonical v2 AXN; Defines list from entity-index; reference-count summary"
+    },
+    "graph_html": {
+      "canonical_path": "/s/graph/index.html",
+      "derived_from": "/data/entity-index.json entity_triples + /data/citation-graph.json edges",
+      "regenerated_by": "scripts/regenerate_surfaces.py (regenerate_graph)",
+      "shows": "concept relations (subject-predicate-object with evidence_status badges) + deposit citation edges (capped at 1500 + 500 respectively for page size)"
     }
   },
   "scripts": {
