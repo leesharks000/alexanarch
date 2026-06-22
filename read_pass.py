@@ -128,11 +128,25 @@ def read_deposit(deposit_number, classify_fn=default_classify,
 
     hex_id = deposit.get('hex')
     title = deposit.get('title', '')
-    text_path = Path(f'data/texts/AXN-{hex_id}-text.md')
-    if not text_path.exists():
-        text_path = Path(f'data/deposits/AXN-{hex_id}.md')
-    if not text_path.exists():
-        print(f"No text file for #{deposit_number} (hex {hex_id})")
+    # Try various hex paddings since registry uses inconsistent format
+    candidates = [hex_id]
+    if hex_id and not hex_id.startswith('0'):
+        candidates.append(hex_id.zfill(4))
+    elif hex_id:
+        candidates.append(hex_id.zfill(4))
+    candidates = list(dict.fromkeys(candidates))  # dedupe
+
+    text_path = None
+    for h in candidates:
+        for pattern in [f'data/texts/AXN-{h}-text.md', f'data/deposits/AXN-{h}.md']:
+            p = Path(pattern)
+            if p.exists():
+                text_path = p
+                break
+        if text_path:
+            break
+    if not text_path:
+        print(f"No text file for #{deposit_number} (hex {hex_id}, tried {candidates})")
         return
 
     text = text_path.read_text()
