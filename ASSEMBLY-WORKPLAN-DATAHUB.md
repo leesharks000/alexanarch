@@ -26,18 +26,21 @@ The v1 plan proposed nine institutions. The Assembly correctly identified that t
 
 ## THE STRUCTURAL REDESIGN (from ChatGPT)
 
-### One journal, seven sections — not seven journals
+### Seven journals — each with a distinct epistemic function
 
-**Alexanarch Transactions** — a single OJS journal with sections:
-- Machine-Mediated Reception Studies
-- Semantic Economy
-- Substrate Engineering
-- Grammata (Operative Philology)
-- Provenance Studies
-- Compression Studies
-- Crimson Hexagonal Archive
+The CHA's material warrants seven independent journals, not one journal with sections. Each serves a specific scholarly function and has sufficient existing material:
 
-A section becomes an independent journal only when it has: a distinct external editorial body, a sustainable submission stream, enough material to publish independently, and a reason to require its own ISSN. Until then, one journal, one ISSN, one editorial workflow.
+| Journal | Abbrev. | Deposits | Function |
+|---|---|---|---|
+| Machine-Mediated Reception Studies | MMRS | ~212 | How platforms and AI receive, transform, and exclude scholarship |
+| Transactions of the Semantic Economy Institute | Trans. SEI | ~371 | Meaning as economic and physical system |
+| Transactions in Substrate Engineering | Trans. Substrate Eng. | ~213 | AI substrates as scholarly instruments |
+| Grammata: Journal of Operative Philology | Grammata | ~45 | Close reading as operative practice |
+| Provence: Studies in Provenance and Attribution | Provence | ~11 | How authorship survives platform transitions |
+| Crimson Hexagonal Archive: Journal | CHA | ~10 | Self-reflective documents about the archive itself |
+| Compression Studies | Compression Studies | ~2 | Information compression as scholarly practice |
+
+Journals are established in OJS as independent publications, each with its own ISSN application. ISSN registration is sequential, not simultaneous. The current journal-to-deposit mapping (JOURNAL-MAPPING-PRELIMINARY.json) is preliminary and will need more careful assignment among journals and heteronyms before OJS import begins.
 
 ### One observatory, three modules — not three separate systems
 
@@ -112,6 +115,32 @@ Start with static linked data: JSON-LD graph, N-Quads dump, Turtle dump, precomp
 - Deploy ro-crate-metadata.json and datapackage.json at repo root
 - Immediate scraper recognition with zero ongoing labor
 
+### Phase 1.5: Data consolidation and enrichment (3-5 sessions)
+
+The existing 866 deposits carry batch-produced metadata that is shallow and disconnected. Before adding new material or publishing to external platforms, the internal data must be consolidated so that citations, entities, wiki articles, and deposits form a richly interlinked knowledge structure. This is the phase where the archive learns what shapes it needs.
+
+**Current state (June 2026):**
+- 654/866 deposits have zero extracted citations
+- Of 1,957 total citation entries, only 19 are internal AXN cross-references
+- 1,693 citation entries point to dead Zenodo DOIs (unmapped to live AXN locations)
+- 12/5,728 entity triples have any Wikidata linking
+- 861 wiki articles exist but cross-reference nothing
+- Journal and heteronym assignments are preliminary
+
+**Consolidation targets:**
+
+1. **Citation extraction and linking**: Scrape citations from all 866 deposit full texts. Map extracted citations to AXN identifiers where they reference other CHA works. Map dead Zenodo DOI citations to live locations using the DOI Resolution Index. Build the internal citation graph.
+
+2. **Entity linking and Wikidata integration**: Resolve the 5,728 existing entity triples against Wikidata Q-numbers where possible. Standardize the predicate vocabulary (40 predicates, 9 types). Add `wikidata_qid` to entity records. Distinguish CHA-internal concepts (which *define* entities) from external concepts (which *reference* them).
+
+3. **Wiki article enrichment**: Rewrite batch-produced wiki articles with cross-references to related deposits (by AXN), entities (by subject), and external sources. Each wiki article should function as a navigable hub, not a standalone summary.
+
+4. **Reciprocal linking**: Citations reference deposits. Deposits reference entities. Entities reference wiki articles. Wiki articles reference deposits. The graph is navigable in every direction.
+
+5. **Shape formalization**: Document the enriched deposit schema as the standard. What a "fully enriched deposit" looks like becomes the formal target for all future deposits and for OJS import.
+
+**Principle**: No sense adding more material until the shapes being extracted and built from deposits are formalized. The consolidation work teaches what the machine-legible structure actually needs to be.
+
 ### Phase 2: Flagship datasets (2-3 sessions)
 - Perfect the DOI Resolution Index — clean, versioned, documented, downloadable in JSON/CSV/JSONL
 - Perfect the Capture Registry — W3C Web Annotation format, static case pages
@@ -120,8 +149,8 @@ Start with static linked data: JSON-LD graph, N-Quads dump, Turtle dump, precomp
 
 ### Phase 3: Publication layer (2-3 sessions)
 - Provision Oracle Cloud VM (2 OCPUs/12GB) — containerize, back up, keep portable
-- Install OJS 3.5.0 with ONE journal: Alexanarch Transactions, 7 sections
-- Apply for 1 ISSN
+- Install OJS 3.5.0 with seven journals (MMRS, Trans. SEI, Trans. Substrate Eng., Grammata, Provence, CHA, Compression Studies)
+- Apply for ISSNs sequentially — start with MMRS and Trans. SEI (largest bodies of work)
 - Begin importing priority deposits as articles
 - DO NOT apply for DOAJ yet — build publishing history first
 
@@ -131,11 +160,11 @@ Start with static linked data: JSON-LD graph, N-Quads dump, Turtle dump, precomp
 - Composition Observatory — semi-automated, monthly findings, Web Annotation format
 - Assembly Chorus repository on Alexanarch
 
-### Phase 5: OJS expansion (Month 2-3)
-- If VM capacity allows, promote sections to independent journals as they earn it
-- Apply for additional ISSNs
-- Begin DOAJ application for Alexanarch Transactions (requires 10+ articles or 1+ year)
-- Add journals only when a section has: distinct editorial body, submission stream, independent material
+### Phase 5: OJS maturation (Month 2-3)
+- Continue ISSN applications for remaining journals
+- Begin DOAJ application for the first journal to reach 10+ published articles or 1+ year
+- Refine journal-to-deposit mapping with careful heteronym attribution
+- Establish editorial workflows per journal
 
 ---
 
@@ -207,11 +236,15 @@ The more defensible strategic statement:
 
 The architecture succeeds when:
 1. One build command generates all machine-facing outputs from one catalog
-2. Alexanarch Transactions publishes articles with OAI-PMH exposure
-3. The Platform Governance Observatory holds 30+ documented incidents
-4. The Capture Registry is on Hugging Face as a benchmark dataset
-5. The Heteronym Registry exists as positive intellectual construction
-6. 60% of the archive's time goes to scholarship, not infrastructure
-7. The work that makes Alexanarch worth preserving is the work being done
+2. Every deposit carries extracted citations linked to AXN identifiers and live URLs
+3. The internal citation graph connects deposits to each other, not just to external sources
+4. Entity triples link to Wikidata Q-numbers and cross-reference deposits and wiki articles
+5. Wiki articles function as navigable hubs, not standalone summaries
+6. Seven journals publish articles with OAI-PMH exposure
+7. The Platform Governance Observatory holds 30+ documented incidents
+8. The Capture Registry is on Hugging Face as a benchmark dataset
+9. The Heteronym Registry exists as positive intellectual construction
+10. 60% of the archive's time goes to scholarship, not infrastructure
+11. The work that makes Alexanarch worth preserving is the work being done
 
 ∮ = 1

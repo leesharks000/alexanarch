@@ -1,0 +1,123 @@
+{
+  "name": "alexanarch",
+  "title": "Alexanarch — Crimson Hexagonal Archive",
+  "description": "Alexanarch is a self-governing static archive and scholarly publisher housing the Crimson Hexagonal Archive (CHA), an 871-work body of scholarship, creative writing, and empirical research. The archive operates through a heteronymic editorial structure (the Dodecad) and maintains sovereign control over its own metadata, identifiers, and publication infrastructure.",
+  "homepage": "https://alexanarch.org",
+  "version": "0.1.0",
+  "created": "2026-06-19",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Lee Sharks",
+      "role": "author",
+      "path": "https://orcid.org/0009-0000-1599-0703"
+    }
+  ],
+  "resources": [
+    {
+      "name": "deposits",
+      "path": "build/catalog-export.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "deposit_number",
+            "type": "integer",
+            "description": "Sequential deposit number"
+          },
+          {
+            "name": "axn",
+            "type": "string",
+            "description": "AXN identifier"
+          },
+          {
+            "name": "title",
+            "type": "string",
+            "description": "Work title"
+          },
+          {
+            "name": "creator",
+            "type": "string",
+            "description": "Author/heteronym"
+          },
+          {
+            "name": "date",
+            "type": "date",
+            "description": "Publication date"
+          },
+          {
+            "name": "content_type",
+            "type": "string",
+            "description": "Content type classification"
+          },
+          {
+            "name": "license",
+            "type": "string",
+            "description": "License identifier"
+          },
+          {
+            "name": "journal",
+            "type": "string",
+            "description": "Journal assignment"
+          },
+          {
+            "name": "family",
+            "type": "string",
+            "description": "CHA family classification"
+          },
+          {
+            "name": "hash",
+            "type": "string",
+            "description": "SHA-256 content hash"
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "description": "Work description"
+          },
+          {
+            "name": "keywords",
+            "type": "string",
+            "description": "Semicolon-separated keywords"
+          },
+          {
+            "name": "version",
+            "type": "string",
+            "description": "Version string"
+          },
+          {
+            "name": "substrate",
+            "type": "string",
+            "description": "Substrate disclosure"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "Canonical URL"
+          }
+        ]
+      }
+    },
+    {
+      "name": "doi-resolution-index",
+      "path": "data/doi-resolution-index.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "description": "Maps 1,817 defunct Zenodo DOIs to live Alexanarch locations"
+    },
+    {
+      "name": "registry",
+      "path": "data/registry.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "description": "Full deposit registry with metadata"
+    }
+  ]
+}

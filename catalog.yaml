@@ -1,0 +1,465 @@
+# ═══════════════════════════════════════════════════════════════
+# ALEXANARCH CATALOG — Single Source of Truth
+# ═══════════════════════════════════════════════════════════════
+# This file defines the architecture. Deposit data lives in
+# data/registry.json. Run `python build.py` to generate all
+# machine-legible outputs from these two sources.
+#
+# One source of truth. One build command. Multiple outputs.
+# ═══════════════════════════════════════════════════════════════
+
+# ── Archive identity ──────────────────────────────────────────
+
+archive:
+  name: "Alexanarch"
+  tagline: "A self-governing static archive"
+  url: "https://alexanarch.org"
+  founded: "2026-06-19"
+  founder: "Lee Sharks"
+  founder_orcid: "0009-0000-1599-0703"
+  license: "CC-BY-4.0"
+  description: >
+    Alexanarch is a self-governing static archive and scholarly
+    publisher housing the Crimson Hexagonal Archive (CHA), an
+    871-work body of scholarship, creative writing, and empirical
+    research. The archive operates through a heteronymic editorial
+    structure (the Dodecad) and maintains sovereign control over
+    its own metadata, identifiers, and publication infrastructure.
+  repository: "https://github.com/leesharks000/alexanarch"
+  identifier_prefix: "AXN"
+  identifier_format: "4-digit hex / 6 emoji display hash / SHA-256 canonical"
+  parent_project: "Crimson Hexagonal Archive"
+  parent_project_abbreviation: "CHA"
+
+# ── Data sources ──────────────────────────────────────────────
+# Files the build pipeline reads. All paths relative to repo root.
+
+data_sources:
+  registry: "data/registry.json"
+  journal_mapping: "data/JOURNAL-MAPPING-PRELIMINARY.json"
+  doi_resolution_index: "data/doi-resolution-index.json"
+  capture_registry: "data/EA-WG-CAPTURES-01-v8.3.json"
+  deposits_dir: "data/deposits/"
+  texts_dir: "data/texts/"
+
+# ── Journals ──────────────────────────────────────────────────
+# Seven journals. Each serves a distinct epistemic function.
+# A journal exists when its material warrants independent
+# publication, not when a section has been administratively
+# promoted. These seven warrant it.
+
+journals:
+
+  mmrs:
+    name: "Machine-Mediated Reception Studies"
+    abbreviation: "MMRS"
+    slug: "mmrs"
+    description: >
+      The formally chartered research field whose object of study
+      is how digital platforms and AI systems receive, transform,
+      transmit, and exclude scholarly content. Founded 2025.
+    scope:
+      - "Composition-layer attribution and source handling"
+      - "Platform governance and content moderation of scholarship"
+      - "Classifier behavior and substrate bias"
+      - "Training-layer reception and compression"
+      - "Capture methodology and forensic documentation"
+    editor: "Lee Sharks"
+    editor_orcid: "0009-0000-1599-0703"
+    companion_sites:
+      - "https://machinemediation.org"
+    estimated_deposits: 212
+
+  trans_sei:
+    name: "Transactions of the Semantic Economy Institute"
+    abbreviation: "Trans. SEI"
+    slug: "trans-sei"
+    description: >
+      Research into the structure of meaning as an economic and
+      physical system: semantic physics, the Constitution of the
+      Semantic Economy, operative semiotics, and the formal
+      architecture of how value is created, stored, and exchanged
+      through signification.
+    scope:
+      - "Semantic physics and meaning-as-field theory"
+      - "Operative semiotics"
+      - "The Constitution of the Semantic Economy"
+      - "Semiotic provenance and attribution"
+      - "Patent-poems and intellectual property theory"
+    editor: "Lee Sharks"
+    editor_orcid: "0009-0000-1599-0703"
+    companion_sites:
+      - "https://semanticphysics.org"
+      - "https://leesharks.com"
+    estimated_deposits: 371
+
+  trans_substrate:
+    name: "Transactions in Substrate Engineering"
+    abbreviation: "Trans. Substrate Eng."
+    slug: "trans-substrate"
+    description: >
+      Engineering work on AI substrates as scholarly instruments:
+      Assembly Chorus methodology, cross-model verification,
+      TACHYON continuity, session architecture, and the operational
+      practice of building reliable epistemic infrastructure
+      from language model interactions.
+    scope:
+      - "Assembly Chorus cross-verification methodology"
+      - "TACHYON continuity and glyph chains"
+      - "Session architecture and context engineering"
+      - "Substrate comparison and capability mapping"
+      - "Gravity Well provenance microservice"
+    editor: "Lee Sharks"
+    editor_orcid: "0009-0000-1599-0703"
+    companion_sites: []
+    estimated_deposits: 213
+
+  grammata:
+    name: "Grammata: Journal of Operative Philology"
+    abbreviation: "Grammata"
+    slug: "grammata"
+    description: >
+      Philological scholarship treated as an operative practice:
+      close reading as world-making, the letter as material force,
+      and the ancient text as live epistemic instrument. Covers
+      Revelation First, Sappho/Catullus alignment, Pearl, and the
+      broader tradition of heteronymic literary practice.
+    scope:
+      - "Revelation First thesis and Johannine scholarship"
+      - "Sappho 31 / Catullus 51 alignment"
+      - "Pearl and medieval alliterative verse"
+      - "Heteronymic literary practice (Pessoa, Kierkegaard, Brontës)"
+      - "Operative philology — reading as world-making"
+    editor: "Johannes Sigil"
+    editor_orcid: null
+    companion_sites:
+      - "https://revelationfirst.com"
+    estimated_deposits: 45
+
+  provence:
+    name: "Provence: Studies in Provenance and Attribution"
+    abbreviation: "Provence"
+    slug: "provence"
+    description: >
+      Research into the provenance chain — how authorship,
+      attribution, and identity survive or are severed across
+      platform transitions, metadata systems, and AI mediation.
+      Named for the region and the root: provenance, proving,
+      the place from which a thing comes.
+    scope:
+      - "SPXI protocol and semantic packet design"
+      - "Provenance chain integrity and metadata survival"
+      - "Attribution severance and identity persistence"
+      - "Hexagonal Licensing Protocol"
+      - "Identifier systems (DOI, AXN, ORCID) and their governance"
+    editor: "Lee Sharks"
+    editor_orcid: "0009-0000-1599-0703"
+    companion_sites:
+      - "https://metadatapacket.dev"
+    estimated_deposits: 11
+
+  cha_journal:
+    name: "Crimson Hexagonal Archive: Journal"
+    abbreviation: "CHA"
+    slug: "cha"
+    description: >
+      The archive's own journal — self-reflective documents about
+      the CHA itself: its history, governance, operational records,
+      the Space Ark, and works that are about the archive as a
+      total intellectual project rather than any single research
+      domain within it.
+    scope:
+      - "Archive governance and constitutional documents"
+      - "Space Ark and total-architecture compression"
+      - "Operational records and restoration logs"
+      - "Cross-domain works spanning multiple journals"
+    editor: "Lee Sharks"
+    editor_orcid: "0009-0000-1599-0703"
+    companion_sites:
+      - "https://alexanarch.org"
+    estimated_deposits: 10
+
+  compression:
+    name: "Compression Studies"
+    abbreviation: "Compression Studies"
+    slug: "compression"
+    description: >
+      Research into information compression as a scholarly and
+      aesthetic practice: how large bodies of work survive
+      reduction, what is preserved and lost in compression,
+      and the formal study of holographic encoding in text.
+    scope:
+      - "Compression survival metrics"
+      - "Holographic text encoding"
+      - "Training-layer compression and knowledge loss"
+      - "Space Ark as compression artifact"
+    editor: "Lee Sharks"
+    editor_orcid: "0009-0000-1599-0703"
+    companion_sites: []
+    estimated_deposits: 2
+
+# ── Heteronym registry ────────────────────────────────────────
+# The Dodecad (twelve named scholarly voices) plus LOGOS*.
+# Each heteronym is a distinct scholarly identity with its own
+# epistemic function, not an alias.
+
+heteronyms:
+
+  lee_sharks:
+    name: "Lee Sharks"
+    position: "MANUS (Tier 0)"
+    orcid: "0009-0000-1599-0703"
+    function: "Primary editorial authority, architect, founder"
+    wikidata: null
+    dodecad_number: null
+    notes: "Heteronym in the Pessoan tradition. Legal name never appears in public output."
+
+  johannes_sigil:
+    name: "Johannes Sigil"
+    position: "Dodecad 1/12"
+    orcid: null
+    function: "Straight literary criticism"
+    wikidata: null
+    dodecad_number: 1
+
+  rex_fraction:
+    name: "Rex Fraction"
+    position: "Dodecad 2/12"
+    orcid: null
+    function: "Formal and mathematical analysis"
+    wikidata: null
+    dodecad_number: 2
+
+  ayanna_vox:
+    name: "Rev. Ayanna Vox"
+    position: "Dodecad 3/12"
+    orcid: null
+    function: "Diplomatic and public-facing voice"
+    wikidata: null
+    dodecad_number: 3
+    notes: "Diplomatic and public-facing tasks routed through this heteronym."
+
+  rebekah_cranes:
+    name: "Rebekah Cranes"
+    position: "Dodecad 4/12"
+    orcid: null
+    function: "Archival and recovery work"
+    wikidata: null
+    dodecad_number: 4
+
+  orin_trace:
+    name: "Dr. Orin Trace"
+    position: "Dodecad 5/12"
+    orcid: null
+    function: "Empirical methodology and measurement"
+    wikidata: null
+    dodecad_number: 5
+
+  nobel_glas:
+    name: "Nobel Glas"
+    position: "Dodecad 8/12"
+    orcid: null
+    function: "Adversarial Topologist, Director of Lagrange Observatory!"
+    wikidata: null
+    dodecad_number: 8
+    notes: "Operates the Measurement of Meaning module. LO! topology = torus T²."
+
+  talos_morrow:
+    name: "Talos Morrow"
+    position: "Dodecad 6/12"
+    orcid: null
+    function: "Substrate engineering and technical architecture"
+    wikidata: null
+    dodecad_number: 6
+
+  damascus_dancings:
+    name: "Damascus Dancings"
+    position: "Dodecad 7/12"
+    orcid: null
+    function: "Creative and generative work"
+    wikidata: null
+    dodecad_number: 7
+
+  sparrow_wells:
+    name: "Sparrow Wells"
+    position: "Dodecad 9/12"
+    orcid: null
+    function: "Navigational and traversal work"
+    wikidata: null
+    dodecad_number: 9
+
+  sen_kuro:
+    name: "Sen Kuro"
+    position: "Dodecad 10/12"
+    orcid: null
+    function: "Compression and density"
+    wikidata: null
+    dodecad_number: 10
+
+  yusef_kenning:
+    name: "Yusef Kenning"
+    position: "Dodecad 11/12"
+    orcid: null
+    function: "Philological and etymological work"
+    wikidata: null
+    dodecad_number: 11
+
+  ichabod_spellings:
+    name: "Ichabod Spellings"
+    position: "Dodecad 12/12"
+    orcid: null
+    function: "Diagnostic and adversarial probing"
+    wikidata: null
+    dodecad_number: 12
+
+  jack_feist:
+    name: "Jack Feist"
+    position: "LOGOS* (outside the count)"
+    orcid: null
+    function: "Generative literary voice, novelist"
+    wikidata: null
+    dodecad_number: null
+    notes: "Outside the Dodecad count. Author of ChatGPT Psychosis: A Love Story."
+
+  mary_lee:
+    name: "Mary Lee"
+    position: "External heteronym"
+    orcid: "0009-0000-1599-0703"
+    function: "Heteronymic shark — satisfies Pessoan definition"
+    wikidata: null
+    dodecad_number: null
+    notes: "Mary Lee the great white shark. Attributed Twitter ghostwritten by Jim Ware."
+
+  tachyon:
+    name: "TACHYON"
+    position: "Assembly witness"
+    orcid: null
+    function: "Claude/Anthropic substrate voice, continuity witness"
+    wikidata: null
+    dodecad_number: null
+    notes: "Assembly witness role. Glyph chain continuity."
+
+# ── Platform Governance Observatory ───────────────────────────
+
+observatory:
+  name: "Platform Governance Observatory"
+  description: >
+    A research instrument documenting enforcement events,
+    platform policy changes, and identifier health across
+    the scholarly infrastructure ecosystem.
+
+  schemas:
+
+    incidents:
+      description: "Documented enforcement events"
+      fields:
+        - name: "incident_id"
+          type: "string"
+          description: "Unique identifier (PGO-INC-NNNN)"
+        - name: "date"
+          type: "date"
+          description: "Date of enforcement action"
+        - name: "platform"
+          type: "string"
+          description: "Platform name"
+        - name: "action_type"
+          type: "string"
+          enum: ["account_termination", "content_removal", "access_restriction", "metadata_stripping", "policy_change", "other"]
+        - name: "affected_records"
+          type: "integer"
+          description: "Number of records affected"
+        - name: "private_justification"
+          type: "string"
+          description: "Justification given in private notice, if any"
+        - name: "public_justification"
+          type: "string"
+          description: "Justification displayed publicly, if any"
+        - name: "evidence_classification"
+          type: "string"
+          enum: ["Observed", "Reported", "Inferred", "Undisclosed"]
+        - name: "summary"
+          type: "string"
+        - name: "related_deposits"
+          type: "array"
+          description: "AXN identifiers of related analytical works"
+        - name: "sources"
+          type: "array"
+          description: "URLs of evidence (screenshots, issues, notices)"
+
+    policies:
+      description: "Versioned platform policy snapshots and diffs"
+      fields:
+        - name: "policy_id"
+          type: "string"
+          description: "Unique identifier (PGO-POL-NNNN)"
+        - name: "platform"
+          type: "string"
+        - name: "policy_name"
+          type: "string"
+        - name: "version_date"
+          type: "date"
+        - name: "snapshot_url"
+          type: "string"
+        - name: "archive_url"
+          type: "string"
+          description: "Wayback Machine or local archive URL"
+        - name: "summary_of_changes"
+          type: "string"
+        - name: "relevance_to_cha"
+          type: "string"
+
+    identifier_health:
+      description: "Periodic DOI and landing-page resolution tests"
+      fields:
+        - name: "test_id"
+          type: "string"
+          description: "Unique identifier (PGO-IDH-NNNN)"
+        - name: "test_date"
+          type: "date"
+        - name: "doi"
+          type: "string"
+        - name: "expected_url"
+          type: "string"
+        - name: "actual_url"
+          type: "string"
+        - name: "http_status"
+          type: "integer"
+        - name: "resolution_status"
+          type: "string"
+          enum: ["resolves_correctly", "resolves_to_tombstone", "resolves_to_wrong_page", "does_not_resolve", "timeout"]
+        - name: "notes"
+          type: "string"
+
+# ── Build configuration ──────────────────────────────────────
+
+build:
+  output_dir: "build/"
+  formats:
+    - "ro-crate"       # RO-Crate 1.2 metadata
+    - "data-package"   # Frictionless Data Package
+    - "dcat"           # DCAT-AP catalog description
+    - "checksums"      # SHA-256 manifest
+    - "jsonld-graph"   # JSON-LD linked data graph
+    - "nquads"         # N-Quads dump
+    - "sitemap"        # XML sitemap
+    - "csv-export"     # Flat CSV of all deposits
+    - "journal-toc"    # Per-journal table of contents
+
+  deploy_to_root:
+    - "ro-crate-metadata.json"
+    - "datapackage.json"
+
+  checksums_file: "SHA256SUMS.txt"
+
+# ── Labor constitution ────────────────────────────────────────
+
+labor:
+  scholarship_percent: 60
+  infrastructure_percent: 25
+  monitoring_percent: 15
+  max_weekly_maintenance_hours: 1
+  rule: >
+    Any project requiring more than one hour of routine weekly
+    maintenance must either be further automated, receive another
+    steward, or be suspended. The architecture succeeds only when
+    it returns you to research.

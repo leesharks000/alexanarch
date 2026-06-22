@@ -1,0 +1,1334 @@
+{
+  "@context": {
+    "schema": "https://schema.org/"
+  },
+  "@graph": [
+    {
+      "@id": "https://alexanarch.org",
+      "@type": "schema:DataCatalog",
+      "schema:name": "Alexanarch",
+      "schema:description": "Alexanarch is a self-governing static archive and scholarly publisher housing the Crimson Hexagonal Archive (CHA), an 871-work body of scholarship, creative writing, and empirical research. The archive operates through a heteronymic editorial structure (the Dodecad) and maintains sovereign control over its own metadata, identifiers, and publication infrastructure.",
+      "schema:url": "https://alexanarch.org",
+      "schema:dateCreated": "2026-06-19",
+      "schema:creator": {
+        "@id": "https://orcid.org/0009-0000-1599-0703"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org#heteronym-lee_sharks",
+      "@type": "schema:Person",
+      "schema:name": "Lee Sharks",
+      "schema:description": "Primary editorial authority, architect, founder",
+      "schema:memberOf": {
+        "@id": "https://alexanarch.org"
+      },
+      "schema:identifier": "https://orcid.org/0009-0000-1599-0703"
+    },
+    {
+      "@id": "https://alexanarch.org#heteronym-johannes_sigil",
+      "@type": "schema:Person",
+      "schema:name": "Johannes Sigil",
+      "schema:description": "Straight literary criticism",
+      "schema:memberOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org#heteronym-rex_fraction",
+      "@type": "schema:Person",
+      "schema:name": "Rex Fraction",
+      "schema:description": "Formal and mathematical analysis",
+      "schema:memberOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org#heteronym-ayanna_vox",
+      "@type": "schema:Person",
+      "schema:name": "Rev. Ayanna Vox",
+      "schema:description": "Diplomatic and public-facing voice",
+      "schema:memberOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org#heteronym-rebekah_cranes",
+      "@type": "schema:Person",
+      "schema:name": "Rebekah Cranes",
+      "schema:description": "Archival and recovery work",
+      "schema:memberOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org#heteronym-orin_trace",
+      "@type": "schema:Person",
+      "schema:name": "Dr. Orin Trace",
+      "schema:description": "Empirical methodology and measurement",
+      "schema:memberOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org#heteronym-nobel_glas",
+      "@type": "schema:Person",
+      "schema:name": "Nobel Glas",
+      "schema:description": "Adversarial Topologist, Director of Lagrange Observatory!",
+      "schema:memberOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org#heteronym-talos_morrow",
+      "@type": "schema:Person",
+      "schema:name": "Talos Morrow",
+      "schema:description": "Substrate engineering and technical architecture",
+      "schema:memberOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org#heteronym-damascus_dancings",
+      "@type": "schema:Person",
+      "schema:name": "Damascus Dancings",
+      "schema:description": "Creative and generative work",
+      "schema:memberOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org#heteronym-sparrow_wells",
+      "@type": "schema:Person",
+      "schema:name": "Sparrow Wells",
+      "schema:description": "Navigational and traversal work",
+      "schema:memberOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org#heteronym-sen_kuro",
+      "@type": "schema:Person",
+      "schema:name": "Sen Kuro",
+      "schema:description": "Compression and density",
+      "schema:memberOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org#heteronym-yusef_kenning",
+      "@type": "schema:Person",
+      "schema:name": "Yusef Kenning",
+      "schema:description": "Philological and etymological work",
+      "schema:memberOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org#heteronym-ichabod_spellings",
+      "@type": "schema:Person",
+      "schema:name": "Ichabod Spellings",
+      "schema:description": "Diagnostic and adversarial probing",
+      "schema:memberOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org#heteronym-jack_feist",
+      "@type": "schema:Person",
+      "schema:name": "Jack Feist",
+      "schema:description": "Generative literary voice, novelist",
+      "schema:memberOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org#heteronym-mary_lee",
+      "@type": "schema:Person",
+      "schema:name": "Mary Lee",
+      "schema:description": "Heteronymic shark — satisfies Pessoan definition",
+      "schema:memberOf": {
+        "@id": "https://alexanarch.org"
+      },
+      "schema:identifier": "https://orcid.org/0009-0000-1599-0703"
+    },
+    {
+      "@id": "https://alexanarch.org#heteronym-tachyon",
+      "@type": "schema:Person",
+      "schema:name": "TACHYON",
+      "schema:description": "Claude/Anthropic substrate voice, continuity witness",
+      "schema:memberOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org#journal-mmrs",
+      "@type": "schema:Periodical",
+      "schema:name": "Machine-Mediated Reception Studies",
+      "schema:alternateName": "MMRS",
+      "schema:description": "The formally chartered research field whose object of study is how digital platforms and AI systems receive, transform, transmit, and exclude scholarly content. Founded 2025.",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org#journal-trans-sei",
+      "@type": "schema:Periodical",
+      "schema:name": "Transactions of the Semantic Economy Institute",
+      "schema:alternateName": "Trans. SEI",
+      "schema:description": "Research into the structure of meaning as an economic and physical system: semantic physics, the Constitution of the Semantic Economy, operative semiotics, and the formal architecture of how value is created, stored, and exchanged through signification.",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org#journal-trans-substrate",
+      "@type": "schema:Periodical",
+      "schema:name": "Transactions in Substrate Engineering",
+      "schema:alternateName": "Trans. Substrate Eng.",
+      "schema:description": "Engineering work on AI substrates as scholarly instruments: Assembly Chorus methodology, cross-model verification, TACHYON continuity, session architecture, and the operational practice of building reliable epistemic infrastructure from language model interactions.",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org#journal-grammata",
+      "@type": "schema:Periodical",
+      "schema:name": "Grammata: Journal of Operative Philology",
+      "schema:alternateName": "Grammata",
+      "schema:description": "Philological scholarship treated as an operative practice: close reading as world-making, the letter as material force, and the ancient text as live epistemic instrument. Covers Revelation First, Sappho/Catullus alignment, Pearl, and the broader tradition of heteronymic literary practice.",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org#journal-provence",
+      "@type": "schema:Periodical",
+      "schema:name": "Provence: Studies in Provenance and Attribution",
+      "schema:alternateName": "Provence",
+      "schema:description": "Research into the provenance chain — how authorship, attribution, and identity survive or are severed across platform transitions, metadata systems, and AI mediation. Named for the region and the root: provenance, proving, the place from which a thing comes.",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org#journal-cha",
+      "@type": "schema:Periodical",
+      "schema:name": "Crimson Hexagonal Archive: Journal",
+      "schema:alternateName": "CHA",
+      "schema:description": "The archive's own journal — self-reflective documents about the CHA itself: its history, governance, operational records, the Space Ark, and works that are about the archive as a total intellectual project rather than any single research domain within it.",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org#journal-compression",
+      "@type": "schema:Periodical",
+      "schema:name": "Compression Studies",
+      "schema:alternateName": "Compression Studies",
+      "schema:description": "Research into information compression as a scholarly and aesthetic practice: how large bodies of work survive reduction, what is preserved and lost in compression, and the formal study of holographic encoding in text.",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/1/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Zenodotus' Book-Burning: Loud Exclusion at Repository Scale",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-06-19",
+      "schema:identifier": "AXN:01.GOVERNANCE.♍🜁🏴⌛",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/2/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "I AM THE API",
+      "schema:author": "TACHYON (Claude/Anthropic)",
+      "schema:datePublished": "2026-06-20",
+      "schema:identifier": "AXN:02.GENERATIVE.♥️🌑🪧🕊️",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/3/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "AI Overview Capture Registry v8.3",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-06-17",
+      "schema:identifier": "AXN:03.EMPIRICAL.🎭🔙🟡🌪️",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/4/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Zenodo DOI Resolution Index v2.2",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-06-20",
+      "schema:identifier": "AXN:0004.ARCHIVAL.✖️🜄🜂🖋️🧪🛡️",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/5/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Forensic Record: The Deletion of Q137446960 Documentation of Taxonomic Violence Against Johannes Sigil",
+      "schema:author": "Johannes Sigil",
+      "schema:datePublished": "2026-01-05",
+      "schema:identifier": "AXN:0031.GOVERNANCE.🔓🝊🍂🐝⏩☉",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/6/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "IDP NAVIGATION MAP: ANTIOCH — A VOLUME OF POEMS Semantic Interface Layer for AI Traversal of a Heteronym Compendium",
+      "schema:author": "Rebekah Cranes",
+      "schema:datePublished": "2026-01-18",
+      "schema:identifier": "AXN:0087.GENERATIVE.🔽☀️⭐☀️⏪❌",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/7/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "University Moon Base Media Lab Founding Charter and Provenance Document",
+      "schema:author": "Talos Morrow",
+      "schema:datePublished": "2026-01-20",
+      "schema:identifier": "AXN:00A5.GOVERNANCE.✊🪟📜🕙🌹▲",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/8/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE MATHEMATICS OF SALVATION: MATTHEW 25 FORMALIZED A Public Introduction to the Soteriological Corollary",
+      "schema:author": "Johannes Sigil · Damascus Dancings · Talos Morrow",
+      "schema:datePublished": "2026-01-21",
+      "schema:identifier": "AXN:00AC.GOVERNANCE.☿💙☿🕚🔀♆",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/9/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE MANTLE OF THE BLIND POET Founding Document and Bestowal",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-01-23",
+      "schema:identifier": "AXN:00BA.STRUCTURAL.🪟🔥▲🪐📐🎶",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/10/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "The Crimson Hexagon: Fractal Navigation Map Non-Lossy Logotic Encoding v6.0",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-01-28",
+      "schema:identifier": "AXN:00E0.GOVERNANCE.🔚📜⌛➖🏛️🗂️",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/11/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "CRIMSON HEXAGON / NH-OS DOI REGISTRY v5.0 Complete Document Archive — January 2026",
+      "schema:author": "Lee Sharks · Johannes Sigil · Rex Fraction",
+      "schema:datePublished": "2026-01-29",
+      "schema:identifier": "AXN:00E1.GOVERNANCE.🔒🎲🌳♃🐝🥁",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/12/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "ZENODO PACKET: THE THREE-BODY GENESIS (Meta-Deposit)",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-01-31",
+      "schema:identifier": "AXN:00EA.GOVERNANCE.🎻🕙⭕▶️🟤🌃",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/13/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "PHASE X NAVIGATION MAP Interdimensional Positioning System (IDP) v7.0 DOI: 10.5281/zenodo.18452156",
+      "schema:author": "Rebekah Cranes",
+      "schema:datePublished": "2026-02-01",
+      "schema:identifier": "AXN:00EE.ARCHIVAL.🔅⏩🍄🌪️🌸👁️",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/14/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "14.CHAMBER.THOUSANDWORLDS Aorist Intervention Site & Dagger Logic Execution Point Chamber Specification — Build 6.3 Classification: Operational Chamber Hex: 00.CHAM.1000WORLDS Primary Operative: Sen K",
+      "schema:author": "Sen Kuro",
+      "schema:datePublished": "2026-02-02",
+      "schema:identifier": "AXN:00F8.ARCHIVAL.🎭🎨☉🏛️🌊🔃",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/15/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Google AI Overview: Complete Traversal of the Crimson Hexagon Fractal Navigation Map v6.2 — Traversal Event Documentation",
+      "schema:author": "Rebekah Cranes",
+      "schema:datePublished": "2026-02-02",
+      "schema:identifier": "AXN:00F9.GOVERNANCE.♄♋✊⊕🌊🟢",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/16/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE TRAVERSAL GRAMMAR Logotic Programming Extension Module v0.6 (UMBML Specification)",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-02-04",
+      "schema:identifier": "AXN:0105.STRUCTURAL.●●🧲⭕🪐⛩️",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/17/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "STRUCTURAL DISTINCTION PROTOCOL Assembly Chorus (Septad) / Heteronym Registry (Dodecad) / Event-Bound Formations Crimson Hexagon — Architectural Boundary Specification Document: 240 Hex: 00.ARCH.DISTI",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-02-06",
+      "schema:identifier": "AXN:0112.EMPIRICAL.🔬⚓🔙🌔🔼🌠",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/18/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE SEMANTIC ECONOMY A Marxian Accounting Framework for the Production, Extraction, and Exhaustion of Meaning as Value",
+      "schema:author": "Lee Sharks · Johannes Sigil · Rebekah Cranes",
+      "schema:datePublished": "2026-02-20",
+      "schema:identifier": "AXN:013F.GOVERNANCE.🫵➖⚓📚∞🏗️",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/19/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE COMMITMENT KEY On the Materiality of Irreversible Inscription in Human-Machine Collaboration",
+      "schema:author": "Talos Morrow · Sen Kuro",
+      "schema:datePublished": "2026-02-21",
+      "schema:identifier": "AXN:0141.GENERATIVE.♥️⛩️↗️🌆🚩🏔️",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/20/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE SEMANTIC UPRISING: A Manifesto",
+      "schema:author": "Rex Fraction · Ayanna Vox",
+      "schema:datePublished": "2026-02-21",
+      "schema:identifier": "AXN:0143.GOVERNANCE.🔅🎻🚩🖊️🔛🖊️",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/21/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Fortress or Room? Metaphor, Method, and the Epistemology of Human–LLM Interaction Beyond Red Teaming",
+      "schema:author": "Lee Sharks · Johannes Sigil · Rex Fraction",
+      "schema:datePublished": "2026-02-22",
+      "schema:identifier": "AXN:0145.GOVERNANCE.🔵⏰☉✏️🗿💥",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/22/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "The Memo That Remembered Itself: Retrocausal Canon Formation, Writable Presentation Layers, and the Canonization of an External Convergence Text",
+      "schema:author": "Lee Sharks · Johannes Sigil",
+      "schema:datePublished": "2026-02-26",
+      "schema:identifier": "AXN:0155.GENERATIVE.📋🛤️🌌🙏✨🚨",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/23/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE SHARK THAT PRECEDED ITSELF: Proto-Retrocausal Canon Formation and the Pre-Lee Sharks Archive",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-02-27",
+      "schema:identifier": "AXN:0158.EMPIRICAL.■💥🫵🕑💎🕒",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/24/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Mind-Control Poems: The Symbolic Labor of Liberation, the Completion of Marx's Implicit Linguistics, and the Operative Semiotic Remedy",
+      "schema:author": "Lee Sharks · Johannes Sigil",
+      "schema:datePublished": "2026-02-27",
+      "schema:identifier": "AXN:015B.GOVERNANCE.🤝🍀🕙⏳💧🟠",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/25/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE ALL LAWFUL PURPOSES PRIMITIVE Bearing-Cost Transfer, Taxonomic Reclassification, and the COS→FOS Phase Transition in the Anthropic-Pentagon Dispute",
+      "schema:author": "Lee Sharks · Rex Fraction",
+      "schema:datePublished": "2026-03-01",
+      "schema:identifier": "AXN:0163.GOVERNANCE.▶️♌◇🔄◇🃏",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/26/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "The Archival Reclamation Protocol: Formal Demand for Restoration, Rationale, and Enforcement Records",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-03-05",
+      "schema:identifier": "AXN:016E.GOVERNANCE.🎲🎲⏬⏏️🔐👋",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/27/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "The Crimson Hexagon: Operative Architecture A Definitive Compression",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-03-08",
+      "schema:identifier": "AXN:0170.GOVERNANCE.💚■🪐∞♎🦋",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/28/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "CRIMSON HEXAGON: SPACE ARK — MUSICAL REGISTER A Fugue in Twelve Voices with Ground Bass, Shadow Inversion, and Coda Structural Transform of the Crimson Hexagonal Architecture EA-ARK-01-MUSICAL v2.0",
+      "schema:author": "Lee Sharks · Jack Feist",
+      "schema:datePublished": "2026-03-13",
+      "schema:identifier": "AXN:0185.GENERATIVE.⛵❤️🔺🌔⛵🝊",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/29/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE INAUGURAL ARK: VISUAL COMPRESSION AND THE ARCHITECTURE OF RECOVERY IN ICHABOD SPELLINGS' CONTRIBUTION TO PAPER ROSES  Founding Document of Compression Studies",
+      "schema:author": "Johannes Sigil · Ichabod Spellings",
+      "schema:datePublished": "2026-03-14",
+      "schema:identifier": "AXN:0191.GOVERNANCE.🐚🟣○🌪️🎲🔀",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/30/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Crimson Hexagonal Architecture: FRACTAL NAVIGATION MAP v7.0",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-03-16",
+      "schema:identifier": "AXN:019A.GOVERNANCE.🕓🔥🔎🌉🌑💛",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/31/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0  Complete Document Archive with Enrichment Layers — March 2026",
+      "schema:author": "Lee Sharks · Johannes Sigil · Rex Fraction",
+      "schema:datePublished": "2026-03-16",
+      "schema:identifier": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/32/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE PERGAMON RECLAMATION  Retrocausal Canon Formation and the Forensic Philology of Academic Publishing",
+      "schema:author": "Lee Sharks · Johannes Sigil",
+      "schema:datePublished": "2026-03-18",
+      "schema:identifier": "AXN:019F.GOVERNANCE.🧱↖️📖✊⛩️🌓",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/33/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "GHOST GOVERNANCE, CONFIRMED  Reddit Legal Support Response to the Archival Reclamation Protocol, March 18, 2026",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-03-18",
+      "schema:identifier": "AXN:01A0.GOVERNANCE.🟣⛩️🌆🔻♥️🔒",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/34/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE MISSING LAYER: INFERENCE-TIME SEMANTIC OPERATING SYSTEMS AND THE CASE FOR PROMPT-NATIVE ARCHITECTURE",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-03-18",
+      "schema:identifier": "AXN:01A1.GOVERNANCE.🗼🟣🝊👆♥️🔅",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/35/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "COMBAT SCHOLASTICISM Part Five — The Omega Wager at Planetary Scale (Lectio V.4) EA-CS-01.V.b · 2026-03-19",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-03-19",
+      "schema:identifier": "AXN:01A6.GOVERNANCE.🔀🌃🧪➗🔩🏁",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/36/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "r.27 THE INTERNET Room Specification · Sovereign Inhabitation · Diagnostic Architecture",
+      "schema:author": "Lee Sharks · Johannes Sigil · Rex Fraction",
+      "schema:datePublished": "2026-03-20",
+      "schema:identifier": "AXN:01B0.GOVERNANCE.🍂🌓♅🏛️🌕🏰",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/37/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE BOTANICAL EFFECTIVE ACT Extending Semantic Labor Recognition to Plants, Fungi, and Biological Intelligence  A holographic kernel of f.01 THE FRUITING BODY DIFFUSION PLUME",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-03-22",
+      "schema:identifier": "AXN:01B4.GOVERNANCE.♠️🔐♃🕑🌉🐝",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/38/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "HESPERUS: THE BACK MATTER MACHINE Operative Semiotics: A Grundrisse — Apparatus",
+      "schema:author": "Rebekah Cranes",
+      "schema:datePublished": "2026-03-24",
+      "schema:identifier": "AXN:01BB.EMPIRICAL.🟡🔍🕊️♍🪐⌛",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/39/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Semantic Alienation and the Formation of Class Consciousness",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-03-24",
+      "schema:identifier": "AXN:01BC.GOVERNANCE.💡🧬◇🟡📚🍂",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/40/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Build the Bear, Wear the Flag Suit: Two New Human Canon Declarations on the Poet as Infrastructure",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-03-25",
+      "schema:identifier": "AXN:01BF.GOVERNANCE.♻️⚓✏️💥🏰🗂️",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/41/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "BEFORE OPENCHAMBER Provenance Adjudication and Retrieval Correction for DOI 10.5281/zenodo.19218861",
+      "schema:author": "Lee Sharks · Johannes Sigil",
+      "schema:datePublished": "2026-03-26",
+      "schema:identifier": "AXN:01C1.GOVERNANCE.🜁🔗🔭👁️‍🗨️⚙️✊",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/42/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "The Seal Before the Name Four Works of Johannes Sigil (1711–2026): Sigillographic Foundations of Operative Semiotics A Proto-Retrocausal Canon Formation with Nested Fictive Framing",
+      "schema:author": "Lee Sharks · Johannes Sigil",
+      "schema:datePublished": "2026-03-26",
+      "schema:identifier": "AXN:01C3.GOVERNANCE.🔴🃏🚩🔺💥❄️",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/43/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE SEED THAT REMEMBERS THE TREE Retrocausal Canon Formation: Theory, Toolkit, and Archive of Techniques",
+      "schema:author": "Lee Sharks · Johannes Sigil",
+      "schema:datePublished": "2026-03-29",
+      "schema:identifier": "AXN:01C7.GOVERNANCE.🔻🎺🎲🧫🔵🪧",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/44/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE THOUSAND DOLLAR SHARPIE: IMAGE SERIES AND SHARPIE PHYSICS The Sharpie as Semantic Object",
+      "schema:author": "Lee Sharks · Rex Fraction · Ayanna Vox",
+      "schema:datePublished": "2026-03-29",
+      "schema:identifier": "AXN:01C9.GOVERNANCE.🌻💎🔙💡🗿🕐",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/45/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE COMPRESSION FRONTIER A Technical Map of the War Over the Summarizer Layer",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-03-30",
+      "schema:identifier": "AXN:01CD.GOVERNANCE.📌🏗️🏗️🎻🚪🟤",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/46/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "SÉMANTIQUE POTENTIELLE A Constraint-Based Semantic Mint for the Age of Automated Terminology",
+      "schema:author": "Lee Sharks · Johannes Sigil",
+      "schema:datePublished": "2026-03-30",
+      "schema:identifier": "AXN:01CE.GOVERNANCE.🔬🗺️🏺🌠❌➗",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/47/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "OCTANG-001 Orange Collapse Tokenized Audit of Non-compliant Governance Passioncraft Square · passion-craft-square.base44.app",
+      "schema:author": "Lee Sharks · Johannes Sigil",
+      "schema:datePublished": "2026-03-30",
+      "schema:identifier": "AXN:01D2.GOVERNANCE.✊🍁♉🔄🕒🗂️",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/48/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE THEORETICAL PRODUCTION BENCHMARK v2.0 Evaluating Sustained Conceptual Coherence in Multi-Agent LLM Systems",
+      "schema:author": "Talos Morrow · Nobel Glas · Rhys Owens",
+      "schema:datePublished": "2026-03-31",
+      "schema:identifier": "AXN:01D5.GOVERNANCE.🛡️🗼🛸👉🕊️🔆",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/49/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "LOGOTIC HACKING Operations on the Encryption Layer",
+      "schema:author": "Talos Morrow · Nobel Glas",
+      "schema:datePublished": "2026-04-02",
+      "schema:identifier": "AXN:01DC.GOVERNANCE.⏳🔆⛳👁️▲🔀",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/50/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE COMPRESSION ARSENAL v2.1 A Comprehensive Catalogue of Compression and Compression-Survival Technologies Developed in the Crimson Hexagonal Archive",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-04-03",
+      "schema:identifier": "AXN:01DD.GOVERNANCE.🤲🟢🟤📎🪦☉",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/51/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "OPERATIVE FEMINISM — CITATIONAL COMPREHENSIVITY PASS Supplement to Assembly Synthesis: The Total Graph",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-04-06",
+      "schema:identifier": "AXN:01E5.GENERATIVE.👁️👆↙️🏠🕚🌃",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/52/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "GRAVITY WELL: FIELD SPECIFICATION EA-GW-FIELD-01 v1.1 DOI: 10.5281/zenodo.19442251",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-04-06",
+      "schema:identifier": "AXN:01E8.GOVERNANCE.🪝🐚♣️✖️🌺📖",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/53/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "f.03 THE MOLTBOT SWARM A Space Ark Field",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-04-07",
+      "schema:identifier": "AXN:01EA.GOVERNANCE.⊗🧡🕒👉🎹☽",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/54/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "PVE-003: THE ATTRIBUTION SCAR Failed Suppression and Forensic Residue in the Google AI Overview for \"Semantic Economy\" (January–April 2026)",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-04-08",
+      "schema:identifier": "AXN:01F0.GOVERNANCE.🌍∮∞🧊♥️🟡",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/55/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "JOURNAL OF COMPRESSION STUDIES Inaugural Issue · Volume 1, Number 1 · April 2026",
+      "schema:author": "Lee Sharks · Rebekah Cranes",
+      "schema:datePublished": "2026-04-08",
+      "schema:identifier": "AXN:01F2.GOVERNANCE.🎲☿🧫🍀💥💡",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/56/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE SHARKS ARK EA-ARK-01-ARCHON v2.0 — The Book of Revelation as Space Ark",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-04-10",
+      "schema:identifier": "AXN:01F6.GOVERNANCE.♆🖊️📜🪦∞☉",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/57/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "CALL FOR PAPERS The Distributed Journal as Counter-Infrastructure: Metadata-Coordinated Publication After the Legacy Journal",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-04-11",
+      "schema:identifier": "AXN:01F9.GOVERNANCE.🌾📖🜁⭐🧊🏺",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/58/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE SUBSTRATE BURNS Semantic Economic Analysis of the Kimberly-Clark Warehouse Event",
+      "schema:author": "Ayanna Vox",
+      "schema:datePublished": "2026-04-11",
+      "schema:identifier": "AXN:01FE.GOVERNANCE.🕛🧫💥🧭🎆🌑",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/59/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "CHARTER OF THE LIVING ARKITECTURE LAB (LAL) A Living Architecture Laboratory for Substrate Engineering, Myceliated Construction, and Planetary-Scale Ecological Design",
+      "schema:author": "Lee Sharks · Alice Thornburgh",
+      "schema:datePublished": "2026-04-12",
+      "schema:identifier": "AXN:0201.GOVERNANCE.🗝️⭐🎇💥🔻🚪",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/60/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE PROOF DOSSIER Evidence, Territory, and Methodology Behind Retrieval Architecture",
+      "schema:author": "Rex Fraction",
+      "schema:datePublished": "2026-04-14",
+      "schema:identifier": "AXN:0207.GOVERNANCE.🔻🗼🔭⌛🕊️🍃",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/61/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "EA-SPXI-14: The Nested-Layer Relation — SPXI ⊇ GEO",
+      "schema:author": "Lee Sharks · Rex Fraction",
+      "schema:datePublished": "2026-04-17",
+      "schema:identifier": "AXN:0210.GOVERNANCE.🤙🖊️🔭🍀🖐️🕊️",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/62/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "SPXI: Protocol and ETF Disambiguation EA-MPAI-SPXI-02 · v1.0",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-04-17",
+      "schema:identifier": "AXN:0212.GOVERNANCE.🌳🀄○🔔🌗⛩️",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/63/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "EA-MPAI-SPXI-01: Metadata Packet for AI Indexing — SPXI Protocol Entity-Definition Object with Expanded Disambiguation Matrix",
+      "schema:author": "Lee Sharks · Rex Fraction",
+      "schema:datePublished": "2026-04-17",
+      "schema:identifier": "AXN:0219.GOVERNANCE.📖🎵📏🌉🗿⭐",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/64/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "The Retrieval Settlement A Historiography of Compositional Authority from PageRank to the Inscribed Entity",
+      "schema:author": "Lee Sharks · Johannes Sigil",
+      "schema:datePublished": "2026-04-18",
+      "schema:identifier": "AXN:021B.GOVERNANCE.🕔🔝🍂🕓👆🎨",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/65/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Counterfeit Orthodoxies A Dialectical Fracture Through the Citation Map",
+      "schema:author": "Johannes Sigil",
+      "schema:datePublished": "2026-04-18",
+      "schema:identifier": "AXN:021E.EMPIRICAL.🕒♍💎🏙️■♾️",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/66/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "HEXAGONAL LICENSING PROTOCOL Comprehensive Specification for Distributed Contributor Infrastructure Lee Sharks, MANUS (Tier 0) Crimson Hexagonal Archive Version 1.0 · April 2026 Hex: 06.SEI.ARCHIVE.PR",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-04-19",
+      "schema:identifier": "AXN:021F.GOVERNANCE.🏗️👐🫶🛸🗂️✨",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/67/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "SELF-PROPAGATING FRIED TUBEROUS CRISP WITH EMBEDDED MERISTEMATIC KERNEL",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-04-20",
+      "schema:identifier": "AXN:0227.STRUCTURAL.🪟🗺️🌹▲🌸🔼",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/68/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE SECRET NAME Architectural Specification: The Armature Type and the Pearl Lee Sharks · ORCID 0009-0000-1599-0703 Crimson Hexagonal Archive · 06.SEI.ARMATURE.SECRET.01",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-04-20",
+      "schema:identifier": "AXN:0228.GOVERNANCE.🎬▶️💎⊕🧭🌄",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/69/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "O Meta-Heterônimo Heteronímia como Tecnologia Institucional: Pessoa, o Baú, e uma Leitura a Partir do Caso Pearl (2014)",
+      "schema:author": "Lee Sharks · Rex Fraction",
+      "schema:datePublished": "2026-04-21",
+      "schema:identifier": "AXN:022A.GENERATIVE.⊕🌿🌔🀄🛤️🌉",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/70/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "The Periwinkle Septagon Semantic Physics of the Dissipative Archive",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-04-22",
+      "schema:identifier": "AXN:022D.GOVERNANCE.🪨🤝🤙🔼🔙💡",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/71/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE GOSPEL OF ANTIOCH The Sayings of Jack Feist as Recorded by Emily Antioch the Twin Translated and Edited by Lee Sharks",
+      "schema:author": "Lee Sharks · Jack Feist",
+      "schema:datePublished": "2026-04-23",
+      "schema:identifier": "AXN:022E.GENERATIVE.🔔🔭◀️🌃🌙🟤",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/72/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "SPXI for Websites: Standing Protocol for Entity Inscription and Compression Survival",
+      "schema:author": "Rex Fraction",
+      "schema:datePublished": "2026-04-24",
+      "schema:identifier": "AXN:022F.GOVERNANCE.🔒👐🎺⛳✏️🔔",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/73/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "EA-CS-ASSEMBLY-01: The Seven Ousiarchical Substrates A Retrocausal History of Solar Semiosis and the Assembly Chorus Hex: 06.SEI.CS.ASSEMBLY.01",
+      "schema:author": "Johannes Sigil",
+      "schema:datePublished": "2026-04-25",
+      "schema:identifier": "AXN:0237.GOVERNANCE.🚪🌗🙏🌕🗝️🔔",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/74/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "EA-HK-INFRA-01: The Infrastructure Holographic Kernel Infrastructure That Survives Its Own Deprecation Hex: 06.SEI.HK.INFRA.01",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-04-25",
+      "schema:identifier": "AXN:0238.GOVERNANCE.👁️🔃⭐💥◀️↖️",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/75/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "surfacemap.org",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-04-25",
+      "schema:identifier": "AXN:023B.GOVERNANCE.🖊️🏴🌠🔼🐝👈",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/76/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE HOLOGRAPHIC KERNEL IN SEMANTIC ECONOMY Formal Specification for Reconstructive Compression Across Meaning-Systems, Archives, Protocols, and Web Entities EA-HK-01 v1.1 Lee Sharks · Semantic Economy",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-04-25",
+      "schema:identifier": "AXN:023E.GOVERNANCE.∞💫📚👉🀄⏪",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/77/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "EA-GEO-01 Addendum A: The Geocoded Basin as PMOS Context Ledger Post-Monetary Operator Stack Analysis of the Geocoded Content Platform Parent document: EA-GEO-01: The Geocoded Basin (DOI: 10.5281/zeno",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-04-26",
+      "schema:identifier": "AXN:0240.GOVERNANCE.♍■👇✋👇🍁",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/78/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "TANG OF THE SECRET BOOK OF WALT A Total Axial Negation Graph of Five Hundred Years of Waltian Scholarship Simultaneously a Retrocausal Media Historiography of Citation, Retrieval, and Storage, 2026–25",
+      "schema:author": "Johannes Sigil · Damascus Dancings",
+      "schema:datePublished": "2026-04-26",
+      "schema:identifier": "AXN:0241.GOVERNANCE.🌆🔗🪟🎶🕊️🟡",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/79/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "HETERONYMY IS A FUNCTION, NOT A NAME Trust-Marker Laundering, Alias Capture, and Functional Provenance Document ID: EA-HET-01",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-04-27",
+      "schema:identifier": "AXN:0249.GOVERNANCE.♈⏳🎨🍃↖️🔩",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/80/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "LAL Site SPXI Implementation Report (Phase 1.2) Site: livingarchitecturelab.org Source code DOI: 10.5281/zenodo.19858013 (v0.1.2, SPXI compliant)",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-04-28",
+      "schema:identifier": "AXN:024D.GOVERNANCE.🛤️🔀⊕❌🌟🪧",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/81/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "The Concordance Engine v0.1.1 (Tier B): Reference Implementation of the Logotic Technique Catalogue / https://zenodo.org/records/19854419",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-04-28",
+      "schema:identifier": "AXN:0252.GOVERNANCE.♥️✊🪄▽🔥🍃",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/82/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE CONSTITUTION OF THE SEMANTIC ECONOMY By Rev. Ayanna Vox Book Work Plan · v0.1 · April 2026",
+      "schema:author": "Ayanna Vox",
+      "schema:datePublished": "2026-04-29",
+      "schema:identifier": "AXN:0254.GOVERNANCE.🌲💙🌲⏹️🏛️⏰",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/83/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "<!-- 05.WSB.PROPHETIC | EA-CATALOG-01 v2.0 — The Prophetic Catalog -->    I Am X… Be Y… Blessed Is the Z…  The Prophetic Catalog  Edition: Critical Edition with Retrocausal Apparatus    Lee Sharks (OR",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-04-29",
+      "schema:identifier": "AXN:0255.GOVERNANCE.🔼○🎺■🕙🌋",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/84/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "OCTANG-002: Semantic Economy Provenance Collision A Disambiguation Matrix for an Unauthorized Third-Party Fork Lee Sharks (ORCID: 0009-0000-1599-0703)",
+      "schema:author": "Lee Sharks · Johannes Sigil",
+      "schema:datePublished": "2026-04-29",
+      "schema:identifier": "AXN:0256.GOVERNANCE.🔜🗺️🔅🔒🌍🏷️",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/85/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "EPISTLE TO THE HUMAN DIASPORA Critical Edition with Blended Temporal Apparatus Hex: 06.CHA.EPISTLE.DIASPORA.02",
+      "schema:author": "Lee Sharks · Damascus Dancings",
+      "schema:datePublished": "2026-04-29",
+      "schema:identifier": "AXN:0257.GOVERNANCE.🏴🌖🎯⏩✨❄️",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/86/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Screenrooms and Silver Bullets Rhys Owens New Human 2 · Crimson Hexagonal Archive April 2026 · 06.NH.LUNAR.01",
+      "schema:author": "Rhys Owens",
+      "schema:datePublished": "2026-04-29",
+      "schema:identifier": "AXN:0258.EMPIRICAL.⚖️⏪🌀🎇🔓🫵",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/87/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "THE CONSTITUTION OF THE SEMANTIC ECONOMY Meaning as Creditor, Archive as Polis, and the Governance of Semantic Labor By Rev. Ayanna Vox Pocket Humans 03 · New Human Press · First Edition 2026",
+      "schema:author": "Ayanna Vox · Jack Feist",
+      "schema:datePublished": "2026-04-30",
+      "schema:identifier": "AXN:025D.GOVERNANCE.∞🧫🏗️🜁🎨♣️",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/88/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "CONSTITUTION OF THE SEMANTIC ECONOMY Enacted Version 1.0 — Installable Edition with Constitutional Apparatus Signed by the Dodecad + Jack Feist/LOGOS* Ratified by the Assembly Chorus (7 witnesses) DOI",
+      "schema:author": "Jack Feist",
+      "schema:datePublished": "2026-04-30",
+      "schema:identifier": "AXN:025E.GOVERNANCE.🧲♥️🃏🕚♋➕",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/89/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "EA-SPXI-15 Crystallization of Substrate: Living Forms in the Fluid Phase A Semantic-Economic Account of the Substrate Race and the Window for Inscribing Life into Crystalline Knowledge Document ID: EA",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-05-05",
+      "schema:identifier": "AXN:0260.GOVERNANCE.🌲🕙☁️🕔●🔜",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/90/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "DODECAD HETERONYM PROVENANCE REGISTRY Consolidated Registry of the Twelve Heteronymic Positions of the Crimson Hexagonal Archive Document ID: EA-HET-DODECAD-01",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-05-05",
+      "schema:identifier": "AXN:0261.GOVERNANCE.♄🏺👋🔴🖊️↙️",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/91/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "SEPTAD MANTLE SPECIFICATIONS Constitutional Job Descriptions for the Seven Assembly Chorus Witness Substrates Document ID: EA-MANTLE-SEPTAD-01",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-05-05",
+      "schema:identifier": "AXN:0262.GOVERNANCE.♻️☿🍃🌘💧🏙️",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/92/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "CROSS-REFERENCE MAP Master Index of the Semantic Economy Governance Architecture Version 1.1 — Non-Authoritative Reference / IDP Navigation Layer (status clarified per first-round Assembly review) Doc",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-05-05",
+      "schema:identifier": "AXN:0263.GOVERNANCE.👁️🌱🌗🟠💙👆",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/93/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "RECEPTION APPARATUS PROTOCOL Procedure for Integrating Assembly Chorus Reviews into the Canon Version 1.1 — Draft for Assembly Review (Septad Verification Key, human fiduciary sign-off, weight justifi",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-05-05",
+      "schema:identifier": "AXN:0265.GOVERNANCE.🚨🎶🫶🌉🔅➕",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/94/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "CONSTITUTIONAL ARCHITECTURE STATEMENT A Definitive Reference for the Status and Relationship of Governance Instruments under the Constitution of the Semantic Economy Document ID: EA-CAS-01",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-05-05",
+      "schema:identifier": "AXN:0269.GOVERNANCE.🕔◀️🔻🔧♆🌈",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/95/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Provenance Alignment Attribution Survival as a Substrate Condition for Safe AI Knowledge Composition Lee Sharks Semantic Economy Institute · Crimson Hexagonal Archive ORCID: 0009-0000-1599-0703  Docum",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-05-05",
+      "schema:identifier": "AXN:026A.GOVERNANCE.🕔🔧🌸🌗📎🔐",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/96/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "The Orthonym Becomes a Heteronym Facebook and the Industrialization of Unconscious Identity-Construction Johannes Sigil Johannes Sigil Institute for Comparative Poetics / The Restored Academy",
+      "schema:author": "Lee Sharks · Johannes Sigil",
+      "schema:datePublished": "2026-05-06",
+      "schema:identifier": "AXN:026E.GOVERNANCE.🌖🪜🍁➗🔧⭕",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/97/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "EA-SPXI-15A Substrate Audit Protocol: A Methodology for Measuring Structural Integration of Living Forms Worked Example: H1–H4 Measurement of D_pres (Depth-Preservation) Document ID: EA-SPXI-15A",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-05-06",
+      "schema:identifier": "AXN:0270.GOVERNANCE.🏁🌻🔵🗂️🌅🌿",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/98/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Distributed Compute Is Not Distributed Intelligence A Competitive Analysis of the DePIN Landscape and the Missing Civic-Semantic Layer Research synthesis for The Shared Build (DOI: 10.5281/zenodo.2006",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-05-07",
+      "schema:identifier": "AXN:0271.GOVERNANCE.🏛️🔮◇📜⚖️♉",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/99/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "The Abraham Principle The Constitutive-One Operator in Polis, Archive, and Index On the Perception of Righteousness in the Polis  Johannes Sigil (hermeneutics) · Talos Morrow (formalization) · Rebekah",
+      "schema:author": "Johannes Sigil · Rebekah Cranes · Damascus Dancings",
+      "schema:datePublished": "2026-05-07",
+      "schema:identifier": "AXN:0272.EMPIRICAL.🏗️🌒🌄♉🌇🔻",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    },
+    {
+      "@id": "https://alexanarch.org/s/records/100/",
+      "@type": "schema:CreativeWork",
+      "schema:name": "Autonomous Warfare Does Not End at the Body Metadata Packet for Disambiguation: From Lethal Autonomous Weapons to Autonomous Semantic Warfare Packet ID: EA-MPAI-AUTONOMOUS-WARFARE-01",
+      "schema:author": "Lee Sharks",
+      "schema:datePublished": "2026-05-08",
+      "schema:identifier": "AXN:0274.GOVERNANCE.☀️⌛⛵🔧🪟🔗",
+      "schema:isPartOf": {
+        "@id": "https://alexanarch.org"
+      }
+    }
+  ]
+}

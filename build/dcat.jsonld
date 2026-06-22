@@ -1,0 +1,108 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "schema": "https://schema.org/"
+  },
+  "@type": "dcat:Catalog",
+  "dct:title": "Alexanarch — Crimson Hexagonal Archive",
+  "dct:description": "Alexanarch is a self-governing static archive and scholarly publisher housing the Crimson Hexagonal Archive (CHA), an 871-work body of scholarship, creative writing, and empirical research. The archive operates through a heteronymic editorial structure (the Dodecad) and maintains sovereign control over its own metadata, identifiers, and publication infrastructure.",
+  "dct:publisher": {
+    "@type": "foaf:Organization",
+    "foaf:name": "Alexanarch",
+    "foaf:homepage": "https://alexanarch.org"
+  },
+  "dct:issued": "2026-06-19",
+  "dct:modified": "2026-06-22",
+  "dct:language": "en",
+  "dcat:dataset": [
+    {
+      "@type": "dcat:Dataset",
+      "dct:title": "Machine-Mediated Reception Studies",
+      "dct:description": "The formally chartered research field whose object of study is how digital platforms and AI systems receive, transform, transmit, and exclude scholarly content. Founded 2025.",
+      "dcat:distribution": {
+        "@type": "dcat:Distribution",
+        "dcat:accessURL": "https://alexanarch.org/s/browse/?journal=mmrs",
+        "dcat:mediaType": "text/html"
+      }
+    },
+    {
+      "@type": "dcat:Dataset",
+      "dct:title": "Transactions of the Semantic Economy Institute",
+      "dct:description": "Research into the structure of meaning as an economic and physical system: semantic physics, the Constitution of the Semantic Economy, operative semiotics, and the formal architecture of how value is created, stored, and exchanged through signification.",
+      "dcat:distribution": {
+        "@type": "dcat:Distribution",
+        "dcat:accessURL": "https://alexanarch.org/s/browse/?journal=trans-sei",
+        "dcat:mediaType": "text/html"
+      }
+    },
+    {
+      "@type": "dcat:Dataset",
+      "dct:title": "Transactions in Substrate Engineering",
+      "dct:description": "Engineering work on AI substrates as scholarly instruments: Assembly Chorus methodology, cross-model verification, TACHYON continuity, session architecture, and the operational practice of building reliable epistemic infrastructure from language model interactions.",
+      "dcat:distribution": {
+        "@type": "dcat:Distribution",
+        "dcat:accessURL": "https://alexanarch.org/s/browse/?journal=trans-substrate",
+        "dcat:mediaType": "text/html"
+      }
+    },
+    {
+      "@type": "dcat:Dataset",
+      "dct:title": "Grammata: Journal of Operative Philology",
+      "dct:description": "Philological scholarship treated as an operative practice: close reading as world-making, the letter as material force, and the ancient text as live epistemic instrument. Covers Revelation First, Sappho/Catullus alignment, Pearl, and the broader tradition of heteronymic literary practice.",
+      "dcat:distribution": {
+        "@type": "dcat:Distribution",
+        "dcat:accessURL": "https://alexanarch.org/s/browse/?journal=grammata",
+        "dcat:mediaType": "text/html"
+      }
+    },
+    {
+      "@type": "dcat:Dataset",
+      "dct:title": "Provence: Studies in Provenance and Attribution",
+      "dct:description": "Research into the provenance chain — how authorship, attribution, and identity survive or are severed across platform transitions, metadata systems, and AI mediation. Named for the region and the root: provenance, proving, the place from which a thing comes.",
+      "dcat:distribution": {
+        "@type": "dcat:Distribution",
+        "dcat:accessURL": "https://alexanarch.org/s/browse/?journal=provence",
+        "dcat:mediaType": "text/html"
+      }
+    },
+    {
+      "@type": "dcat:Dataset",
+      "dct:title": "Crimson Hexagonal Archive: Journal",
+      "dct:description": "The archive's own journal — self-reflective documents about the CHA itself: its history, governance, operational records, the Space Ark, and works that are about the archive as a total intellectual project rather than any single research domain within it.",
+      "dcat:distribution": {
+        "@type": "dcat:Distribution",
+        "dcat:accessURL": "https://alexanarch.org/s/browse/?journal=cha",
+        "dcat:mediaType": "text/html"
+      }
+    },
+    {
+      "@type": "dcat:Dataset",
+      "dct:title": "Compression Studies",
+      "dct:description": "Research into information compression as a scholarly and aesthetic practice: how large bodies of work survive reduction, what is preserved and lost in compression, and the formal study of holographic encoding in text.",
+      "dcat:distribution": {
+        "@type": "dcat:Distribution",
+        "dcat:accessURL": "https://alexanarch.org/s/browse/?journal=compression",
+        "dcat:mediaType": "text/html"
+      }
+    },
+    {
+      "@type": "dcat:Dataset",
+      "dct:title": "Alexanarch Deposit Registry",
+      "dct:description": "Complete registry of 866 deposits in the Crimson Hexagonal Archive",
+      "dcat:distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "dcat:downloadURL": "https://alexanarch.org/data/registry.json",
+          "dcat:mediaType": "application/json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dcat:downloadURL": "https://alexanarch.org/build/catalog-export.csv",
+          "dcat:mediaType": "text/csv"
+        }
+      ]
+    }
+  ]
+}
