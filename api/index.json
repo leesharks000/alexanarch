@@ -211,6 +211,10 @@
     "citation_extractor": {
       "canonical_path": "scripts/citation_extractor.py",
       "purpose": "Extracts citation edges from deposit texts. Five via types: axn_reference, axn_hex_reference, ea_id_reference, deposit_number_reference, doi_resolution. Idempotent — re-running produces the same result."
+    },
+    "concept_backlink": {
+      "canonical_path": "scripts/concept_backlink.py",
+      "purpose": "Bidirectional concept-deposit indexing. Scans data/texts/AXN-*-text.md for each concept in entity-index; writes referenced_in[] (with reference_count) onto each concept and references_concepts[] onto each registry deposit. Idempotent. Phase C of data-structure interlinking workplan."
     }
   },
   "instance_familiarization_log": {
@@ -255,6 +259,13 @@
       "date": "2026-06-22",
       "changes": [
         "Updated protocol 'enrichment': Filled referenced_by/enforced_by lists"
+      ]
+    },
+    {
+      "index_version": "v1.0",
+      "date": "2026-06-22",
+      "changes": [
+        "Updated protocol 'enrichment': Phase C complete: concept↔deposit bidirectional indexing landed. Each entity-index concept now carries referenced_in[] and reference_count fields; each registry deposit now carries references_concepts[] and references_concept_count. 24,777 raw matches across 7,076 concepts × 865 texts; 2,120 concepts have ≥1 reference beyond defined_in; 846 deposits link to ≥1 concept. Top-referenced: Lee Sharks (709), Semantic Economy (492), Crimson Hexagonal Archive (478)."
       ]
     }
   ]
