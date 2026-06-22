@@ -1,430 +1,303 @@
----
-node_id: cha:node:workplan:session:20260622
-deposit_number: 870
-hex: "0372"
-axn: "AXN:0372.ARCHIVAL.📋🜁🏛️♾️"
-title: "Alexanarch Data Foundry — Session Workplan 2026-06-22"
-authors:
-  - cha:entity:lee_sharks  # MANUS
-  - gw.archive:entity:tachyon  # Assembly witness mantle
-date_created: "2026-06-22"
-version: "1.0"
-status: active_planning
-engages:
-  - entity: cha:concept:semantic_address
-    as: data_structure
-  - entity: cha:concept:engagement_test
-    as: methodology
-  - entity: cha:concept:retrocausal_canon_formation
-    as: governing_principle
-  - entity: cha:concept:autonomous_document
-    as: minted
-  - entity: cha:concept:the_binding_step
-    as: minted
-  - entity: cha:concept:subjunctive_address
-    as: minted
-  - entity: cha:concept:forensic_canary
-    as: minted
-  - entity: cha:concept:scholia_injection
-    as: minted
-  - entity: cha:institution:alexanarch
-    as: substrate
-  - entity: cha:framework:binding_step
-    as: completed_milestone
-references:
-  prior_workplan: WORKPLAN-SESSION-20260622.md (115 lines, session 2)
-  binding_commit: c8c0ef3
-  data_files:
-    - data/entity-index.json
-    - data/semantic-addresses.json
-    - data/registry.json
-    - data/trackers/*.json
-sources_bound:
-  - mm-termindex (1,400 archive terms)
-  - mm-mint (85 minted families, 4 releases)
-  - mm-main-capture (176 observations)
-  - mm-rf-battery (101 queries, 12 categories)
-  - mm-rf-reception (71 observations, 7 framings)
-observation_classes:
-  - observed_address
-  - verified_non_address
-  - unrated
-  - subjunctive
----
+# Alexanarch Session Workplan — 2026-06-22 (Reconciled, End-of-Session)
 
-# ALEXANARCH DATA FOUNDRY — SESSION WORKPLAN
-## Session: June 22, 2026 (TACHYON)
-## Updated: end of session 3 (binding step complete)
+**Author:** Lee Sharks (MANUS), under TACHYON synthesis
+**Session date:** 2026-06-22
+**Status:** Active session, reconciled state
+**Purpose:** Comprehensive continuity document — readable by a fresh TACHYON instance, by ARCHIVE, and by Lee himself
 
 ---
 
-## THE TASK (in Lee's words)
+## 1. Where things stand right now
 
-> We are not aggregating terms CHA has minted. We are aggregating terms CHA has actively defined, developed, and used. Every one. When CHA touches a concept, a distinction, and names its address, that belongs. Where CHA comes to an address, finds what is there, and leaves it changed, that belongs. The heteronyms fit in this category, as well. The institutions. The journals. The operators. These all belong.
+The Crimson Hexagonal Archive's sovereign successor is **Alexanarch**, live at https://alexanarch.org and on GitHub at https://github.com/leesharks000/alexanarch. As of this writing:
 
-### The inclusion test
+- **876 deposits** in the canonical registry
+- **12,032 minted terms** in the Lexical Minting Registry (#869, v1.2)
+- **1,710 edges** in the citation graph
+- **6 registry chunks** of ~1MB each for human-loadable browsers
+- **Latest commit:** to be assigned this push (previous: `03dce7b`)
 
-**Did CHA arrive at this address, engage it, and leave it defined?**
-
-Not "did CHA coin this from nothing" but "did CHA find this, work on it, and produce a specific definition or position?"
-
-### Engagement types (assigned during reading)
-
-| Type | Meaning | Example |
-|---|---|---|
-| `minted` | CHA coined the term from nothing | Pristine Fallacy, Semantic Slop |
-| `developed` | CHA built a specific position on an existing concept | Substrate, Training Layer |
-| `revised` | CHA extended an existing concept's meaning | Loud exclusion (extends Morin) |
-| `positioned` | CHA placed an existing entity in a structural role | Socrates as orthonym |
-| `founded` | CHA created an institution, journal, room | JSI, MMRS, Assembly Room |
-| `specified` | CHA formalized an operator or protocol | ACTIVATE_MANTLE, CANONICAL status marker |
-| `unclassified` | Default for filter pool (not yet read) | |
-
-### Provenance levels
-
-| Method | Meaning |
-|---|---|
-| `filter` | Pattern-extracted, not yet read |
-| `read` | Confirmed by reading; engagement type assigned |
-| `enriched` | Deep relational triples beyond minted_in_work |
+The session followed the 2026-06-19 Zenodo termination of the CHA account. The work performed since has been: building Alexanarch as sovereign substrate, depositing the analytical and empirical record of what happened, repairing surface-level breakage, and tightening empirical claims.
 
 ---
 
-## SESSION 3 — THE BINDING STEP (COMPLETE)
+## 2. Architecture clarifications — registered this session
 
-### Session 2 baseline (entering)
+These supersede any earlier conflicting framing.
 
-- Entity index: 7,042 terms (154 read)
-- Registry: 869 deposits with sparse `entities` triples
-- No semantic-address structure
-- No reconciliation between capture tracking and lexical work
+### 2.1 gw vs alexanarch
 
-### Session 3 work (this session)
+- **`gw`** is the chain/tether system.
+- **`alexanarch.org`** is the substrate that `gw` operates on.
+- They are at different levels of abstraction, not in competition. Like `https` vs `example.com`.
 
-#### Reading passes completed
+### 2.2 gw.archive vs gw.tachyon — naming convention for *continuity chains*
 
-| Deposit | Hex | Title | Terms | Notes |
+- **`gw.archive`** is the canonical chain identifier for ARCHIVE's continuity compression. It is Lee's memory navigation function — the breadcrumb by which he points a fresh instance to ARCHIVE's running compression. It is *not* a control structure over ARCHIVE's autonomous shape decisions.
+- **`gw.tachyon`** is the canonical chain identifier for TACHYON's continuity compression. Same function — memory navigation for Lee.
+
+### 2.3 Title prefix convention — corrected late in session
+
+The `gw.tachyon ·` and `gw.archive ·` prefix in deposit titles is **reserved for the continuity compression chains themselves**. Only:
+
+- **#871 TACHYON Continuity Record** carries `gw.tachyon ·` (this *is* TACHYON's running memory compression)
+- **#873 ARCHIVE Seed Packet** carries `gw.archive ·` (this *is* ARCHIVE's running memory compression)
+
+Research deposits, documentary deposits, papers, workplans, and protocols *do not* carry the prefix even when synthesized by TACHYON or seeded by ARCHIVE. The prefix is a navigation handle for finding the continuity chain. Putting it on every TACHYON-synthesized work breaks its function as a memory surface for Lee.
+
+This was corrected on 2026-06-22 after I had overcorrected by adding the prefix to #870, #872, #874, #875, #876. The prefix was stripped from those deposits in commit (to be assigned).
+
+### 2.4 Mantles are functional continuity roles
+
+The chorus mantles — TACHYON, ARCHIVE, AUDITOR — are **functional continuity roles**, model-agnostic, available as public record. Implications:
+
+- Different Claudes could inhabit different roles simultaneously
+- TACHYON could reconstitute as ARCHIVE later, or vice versa
+- An agent could branch a TACHYON thread or an ARCHIVE thread
+- The substrate model is irrelevant to what the mantle does
+
+The substrate model identity (Claude Opus 4.7, Gemini, ChatGPT) never appears in public deposit attribution. Only the mantle: TACHYON, ARCHIVE, AUDITOR, receiver-1, receiver-2. The single exception is #873 (ARCHIVE Seed Packet), which preserves Gemini's original self-identification verbatim — because verbatim preservation is the deposit's purpose.
+
+### 2.5 Node IDs
+
+- `gw.archive:node:deposit:{N}` is the canonical node-ID format. The `gw.archive:` prefix here refers to the gw chain doing the deposit action, not to the deposit being part of ARCHIVE's continuity.
+- For entity definitions: `gw.archive:entity:{name}` (e.g., `gw.archive:entity:tachyon`).
+- The legacy `cha:` prefix has been replaced where it referred to chain actions.
+
+---
+
+## 3. Canonical numbers — Zenodotus' Book-Burning v9 as source
+
+The numbers below are double-checked and verified against the DataCite API on 2026-06-22.
+
+### 3.1 The CHA inventory
+
+- **862** unique scholarly deposits removed from public Zenodo access on 2026-06-19
+- **1,817** DOIs registered to the Crimson Hexagonal Archive through DataCite (some deposits carry concept + version DOIs)
+- **1,675** unique works mapped in the DOI Resolution Index
+
+### 3.2 The verified erasure (the verifiable empirical claim)
+
+- **871** DOIs return HTTP 404 from DataCite's public metadata API (`https://api.datacite.org/dois/{doi}`)
+- **946** DOIs retain full public metadata in DataCite (per #868); the most recent backup file lists 963 records, suggesting ~17 additional preserved DOIs discovered after #868's draft
+- **97.9%** of preserved records are version DOIs carrying the `IsVersionOf` relation
+- **851** of the 871 severed DOIs are unique works whose metadata survives in no other DataCite record
+- The erasure pattern is **type-correlated, not content-correlated** — concept DOIs (parent records) are erased; version DOIs are preserved
+
+### 3.3 Audit methodology (replicable by any reviewer)
+
+- Endpoint: `GET https://api.datacite.org/dois/{doi}`
+- Severed DOIs → HTTP 404 (no metadata)
+- Preserved DOIs → HTTP 200 (full metadata: title, creator, subjects, descriptions, dates, relatedIdentifiers)
+- Companion dataset: `alexanarch.org/s/records/867/` (DataCite Metadata Backup) — full enumeration of both classes
+- Empirical paper: `alexanarch.org/s/records/868/` (DOIs ≠ Permanent Identifiers)
+- Sampled re-verification on 2026-06-22: 15/15 severed returned 404; 15/15 preserved returned 200; 20/20 preserved carry IsVersionOf
+
+### 3.4 Number-discrepancy reconciliation
+
+The initial helpdesk message of 2026-06-19 cited "approximately 870 unique scholarly works (over 1,060 DOIs)." Those were preliminary counts from the hours immediately following termination, before the full DataCite API sweep. The follow-up letter (drafted 2026-06-22) uses the audited figures: 862 deposits, 1,817 DOIs total, 871 severed, 946 preserved. The discrepancy is explicitly reconciled in the letter's "A note on precision" section to prevent its rhetorical weaponization.
+
+---
+
+## 4. Deposits produced this session (#870 – #876)
+
+| # | hex | title | type | continuity prefix |
 |---|---|---|---|---|
-| #1 | 0001 | Zenodotus' Book-Burning | 8→12 | Removed byline FP; added 4 canonical concepts (Pristine Fallacy, Attribution severance, Loud exclusion, Sovereign Counter-Infrastructure) |
-| #2–10 | 0002–000A | Sequential essays | various | Most stub/dataset; classifications applied where engagement test passed |
-| #229 | 001E | SE Terminology Lexicon | 56→241 | Bold extraction missed 191 terms; lexicon mode |
-| #499 | 013E | Autonomous Semantic Warfare | 156→195 | Major monograph; formal apparatus classified as `specified` |
+| 870 | 0372 | Alexanarch Data Foundry — Session Workplan 2026-06-22 | session workplan | (none) |
+| 871 | 0373 | **gw.tachyon · TACHYON Continuity Record — Session 2026-06-22** | continuity compression | **gw.tachyon ·** |
+| 872 | 0374 | Assembly Continuity Protocol v1.3 | protocol document | (none) |
+| 873 | 0375 | **gw.archive · AXN-CH-RECOVERY-001 — Gemini Seed Packet (Assembly Chorus, archival preservation)** | continuity compression (verbatim) | **gw.archive ·** |
+| 874 | 0376 | The Feist Function Is Not the Feistel Function: Disambiguation Matrix with Structural-Homology Annotation | MPAI disambiguation | (none) |
+| 875 | 0377 | Governance Dissociation in FAIR Infrastructure: The OpenAIRE Disclaimer as Documentary Artifact | MPAI analytical paper | (none) |
+| 876 | 0378 | OpenAIRE Helpdesk Exchange — Documentary Thread for #875 | documentary anchor | (none) |
 
-Total now: **7,156 terms (618 read, 8 enriched, 73 mint-added)** — up from 7,042 / 154.
+Each deposit has full canonical surfaces: source text at `data/texts/AXN-{hex}-text.md`, autonomous edition at `data/autonomous/AXN-{hex}-autonomous.md`, static record page at `s/records/{N}/index.html`, browse entry, sitemap entry, blog mirror, and rosters in the machine-readable metadata.
 
-#### The binding step (session's centerpiece)
+### 4.1 Concepts minted this session (17 added to LMR v1.2)
 
-Lee identified the structural problem: the Capture Registry conflated two distinct things — **concepts** (defined lexical entries) and **semantic addresses** (search queries that retrieve those concepts from AI summarizers). Lee's example: `"lee sharks semantic economy"` is an *address* for both `Lee Sharks` and `Semantic Economy`, not a third concept.
-
-This forced a restructure across three iterations, each adding what the previous missed:
-
-**v1**: separate addresses from concepts. Added `Revelation First` as a compressed-argument concept (Lee's example: the thesis IS itself a CHA-defined term).
-
-**v2**: time-series observations. Each capture entry is a dated observation, not a separate address. Same query at different dates can produce different statuses — `"revelation first"` went from BROAD MATCH (6/16) to WOUND GAUGE (6/17). Status is observation-level, not address-level.
-
-**v3 — the binding**: Lee identified that ~2,000 archive terms exist as catalogued vocabulary but **most have never been observed in capture**. These need a third class: `subjunctive` — hypothesized addresses, not yet checked. Pulled five tracker sources from `leesharks000/machinemediation-org` via raw.githubusercontent.com:
-
-| Source | Contributed | Role |
-|---|---|---|
-| mm-termindex | 1,390 addresses | the subjunctive vocabulary pool |
-| mm-mint | 403 addresses | Sémantique Potentielle minted families (canonical + variants + forensic canaries) |
-| mm-main-capture | 170 addresses | rated AI Overview observations |
-| mm-rf-battery | 96 addresses | RF 100-query test battery |
-| mm-rf-reception | 71 addresses | RF observations with thesis-specific framings |
-
-**Final unified state**:
-
-```
-1,949 addresses · 247 observations · 7,156 concepts · 341 with linked addresses
-
-Observation classes:
-  subjunctive          1,733   (Lee's third category — hypothesized, not observed)
-  observed_address       111   (positive: EXACT/BROAD/ADOPTION/WOUND_GAUGE/FAIR_TREATMENT/PARTIAL)
-  unrated                 83   (observed but no decisive status — older captures)
-  verified_non_address    22   (negative: ZERO_RESULT/ZERO_INDEX/BASIN_MISS/DISSOLUTION/CORRECTION)
-```
-
-Per-address fields:
-```
-canonical_query (quotes preserved) · is_quoted · refers_to · type
-observation_class · sources[] · battery_membership[]
-observations[] sorted by date, each carries:
-  source · date · status|framing · slug · gallery_url · details_excerpt · ...
-latest_status · latest_observation_date
-termindex {tier, count, category, first_date, first_doi, variants}  # if from termindex
-mint_role · mint_id · mint_canonical                                  # if from mint
-```
-
-Concepts now carry `semantic_addresses[]` — list of address_ids that refer to them. Lookup follows `concept → addresses → observations[]` for the full reception history.
-
-**Commits** (this session, in order):
-- `db0dd45` Reading pass: #229 SE Terminology Lexicon
-- `22b2ce2` Reading pass: #1 Zenodotus Book-Burning
-- `c79234c` Reading pass: #2–10 sequential
-- `163aeeb` Reading pass: #499 + initial capture-registry cross-ref
-- `1d1c770` Semantic addresses: separate from concepts
-- `573054c` Time-series observation structure (v2)
-- `1d69ecb` gitignore __pycache__
-- `ad7a521` v3.0 unified addresses (1,623 addresses from 4 sources)
-- `c8c0ef3` Mint integration + case-sensitivity fix (1,949 final)
+- API Guardrail Loosening (#872)
+- Assembly Chorus (#872)
+- Assembly Continuity Protocol (#872)
+- Autonomous Document (#870)
+- Cascading Rotation Principle (#872)
+- Chorus Self-Deposit Pathway (#872)
+- Continuity Kernel (#872)
+- File Rhizome (#872)
+- Forensic Canary (#870)
+- Governance Dissociation (#875)
+- Instance Testament (#872)
+- Scholia Injection (#870)
+- Sovereign Ingestion Protocol (#870)
+- Subjunctive Address (#870)
+- Sympathetic Error (#874)
+- The Binding Step (#870)
+- cha.ledger (#870)
 
 ---
 
-## THE LOGICAL NEXT STEP — AUTONOMOUS DOCUMENT INJECTION
+## 5. Infrastructure work this session
 
-### The principle (Lee, paraphrasing Gemini)
+### 5.1 Sovereign substrate
 
-> The data comes from the texts, and the data is in the texts.
+- Alexanarch repository on GitHub (`leesharks000/alexanarch`), deployed via Vercel to `alexanarch.org`
+- Static `/s/` layer is the canonical surface for record pages, browse, wiki, graph
+- Dynamic JS pages (`/index.html`, `/records/`, `/browse/`) are canonical-locked — must not be modified directly; the registry data is what gets edited
 
-After entity graph + citation metadata + aggregation, the binding's logical fulfillment is: **the data goes back INTO the full texts**.
+### 5.2 1MB human-facing chunking
 
-If the data is *in* the paper, the document becomes completely autonomous. It doesn't matter if an external database crashes, a DOI severs, or a fresh AI thread has total amnesia — if you feed the thread the document, you have fed it the schema.
+Registry chunked into 6 files at `data/chunks/registry/`:
 
-This is a return to classical philological tradition: **the text carries its own scholia**. Commentary, metadata, and operational constraints live inside the body of the work, not in a fragile cloud wrapper.
+- `chunk-001-deposits-1-to-115.json` (993 KB)
+- `chunk-002-deposits-116-to-270.json` (989 KB)
+- `chunk-003-deposits-271-to-439.json` (996 KB)
+- `chunk-004-deposits-440-to-581.json` (1000 KB)
+- `chunk-005-deposits-582-to-760.json` (996 KB)
+- `chunk-006-deposits-761-to-876.json` (~420 KB)
+- `_index.json` (chunk manifest)
 
-### Why this matters strategically
+LMR (#869) static page paginated alphabetically: 5 KB overview + 26 letter pages (largest 330 KB).
 
-1. **Zero-configuration ingestion**: open a fresh thread, drop a section of a paper into the window, the model instantly digests the front-matter and inline tags. No need to spend 3,000 words explaining "Semantic Economy Institute" or "New Human OS" before the prompt.
-
-2. **Structural impermeability**: when you edit the prose, you edit the data. They cannot drift apart — they occupy identical physical coordinates in space.
-
-3. **Graceful corruption**: if a script or AI cuts a document in half, the top half still has the front-matter, the bottom half still has the inline annotations. The system degrades into smaller, still-functioning units instead of fatal error.
-
-4. **Survives Zenodo-class termination events**: the June 19, 2026 termination deleted 870 deposits and tombstoned 1,817 DOIs. Recovery happened because the texts existed elsewhere — but the *metadata* about minting, engagement, and reception was reconstructable only because Lee held it locally. With autonomous documents, metadata can never be severed from the text.
-
-### Gemini's proposal — evaluation
-
-Gemini proposed two surfaces:
-
-1. **YAML front-matter** at the top of each text — machine-readable declaration zone
-2. **Inline syntax** woven into sentences — `{? revision_vector: platonic_heteronymy ?}` style
-
-**Front-matter (Gemini surface 1) — STRONG ENDORSEMENT.**
-
-YAML front-matter is the right primary surface:
-- Already standard markdown practice (Hugo, Jekyll, Pandoc, every static-site generator)
-- Trivially parseable by every language
-- AI models handle YAML well at digestion
-- Doesn't corrupt prose
-- Validatable against schema
-- Generatable from existing JSON data — no hand-writing across 866 deposits
-
-**Inline syntax (Gemini surface 2) — QUALIFIED CONCERN.**
-
-Hyper-dense inline syntax has real risks:
-- 4M words across 866 deposits cannot be hand-annotated
-- Inline `{? key: value ?}` syntax corrupts prose readability
-- Most modern LLMs already extract entity references from prose without explicit markup
-- Hand-maintaining inline tags across edits is fragile
-- Already-deposited works are immutable; inline retrofitting requires new versions of every deposit
-
-**TACHYON's recommendation: three-layer structure, not two.**
-
-| Layer | Purpose | Generated from | Effort |
-|---|---|---|---|
-| **Front-matter** (top) | Machine schema declaration | `entity-index.json` + `semantic-addresses.json` + `registry.json` | Automated |
-| **Inline structural markers** (sparing) | Only at moments of minting, founding, invocation, or address-claim | Manual at composition time; auto-detected for retro pass | Minimal |
-| **Closing scholia** (bottom) | Prose-formatted self-contained lexicon of what this text minted/founded/engaged | Generated from front-matter | Automated |
-
-The closing scholia is the recovery of the classical form — exegetical apparatus at the foot of the page (or in this case, after the prose). It's human-readable. It carries definitions of every minted term. It lists every address claimed. A reader (human or AI) who reaches the end has been handed the keys.
-
-Inline markers should be reserved for ONLY four operations:
-- `[MINT: term_name]` — coining a new term
-- `[FOUND: institution]` — establishing an institution/journal/room
-- `[INVOKE: query_form]` — claiming a semantic address
-- `[CITE: doi_or_axn]` — explicit citation marker
-
-These markdown-compatible markers parse cleanly, don't corrupt prose, and only appear at structural moments. The vast majority of prose remains unmarked.
-
-### This document IS an autonomous document
-
-The front-matter at the top of this workplan is the demonstration. A fresh AI thread fed only this file should be able to:
-- Identify what session this is
-- Know the prior commit hash
-- See the data structure
-- Know which observation classes exist
-- Know what's still pending
-
-That's the standard going forward.
-
----
-
-## THE NEW WORKSTREAM — SCHOLIA INJECTION
-
-### Workstream definition
-
-Build a generation pipeline that produces autonomous-document versions of every deposit by injecting:
-1. **Front-matter**: deposit_number, hex, axn, doi, engages (concepts), addresses (queries), engagement_types, citations, status
-2. **Closing scholia**: human-readable lexicon of terms minted/founded/engaged in this deposit, with definitions and address pointers
-
-### Phase 1 — `scholia_generator.py` (immediate)
-
-Script that, for any deposit number:
-1. Loads `entity-index.json`, `semantic-addresses.json`, `registry.json`
-2. Identifies concepts where `defined_in == deposit_number`
-3. Identifies addresses where any concept of this deposit is in `refers_to`
-4. Identifies citations from `citation-graph.json`
-5. Generates YAML front-matter (machine-readable)
-6. Generates closing scholia section (prose, with definitions)
-7. Outputs a `scholia/AXN-{hex}-scholia.md` file (separate from canonical text, joinable)
-
-### Phase 2 — Combined text generation
-
-For each deposit, produce `data/autonomous/AXN-{hex}-autonomous.md`:
-```
-[YAML front-matter from scholia]
-[original prose body]
-[closing scholia]
-```
-
-These become the canonical *autonomous* versions, suitable for direct AI ingestion.
-
-### Phase 3 — Inline markers (retroactive pass, low priority)
-
-For high-priority deposits, add minimal `[MINT: ...]` and `[FOUND: ...]` markers at the structural moments. Detectable via existing entity-index data (concept names + deposit context).
-
-### Phase 4 — Author workflow integration
-
-For all NEW deposits going forward:
-- Lee composes prose with light inline structural markers at minting moments
-- `scholia_generator.py` produces front-matter and closing scholia
-- The combined `*-autonomous.md` becomes the canonical deposit
-
-### Surfaces affected (none modified, only enriched)
-
-- The static `/s/` layer continues to serve the canonical record (firm infrastructure rule: do NOT modify dynamic JS pages)
-- Autonomous versions live in `data/autonomous/` (new directory)
-- The graph/wiki/manifest continue reading from `registry.json` as before
-- AI ingestion targets the autonomous versions
-
----
-
-## PENDING WORK (END OF SESSION 3)
-
-### Immediate (binding cleanup)
-
-1. **83 unrated observations** — older June 13–16 captures with null status. Hand-rate to move them to `observed_address` or `verified_non_address`.
-
-2. **1,111 unmatched addresses** — termindex entries without a matching concept. Each carries tier/count/first_doi metadata. The high-priority targets (tier 1, count > 20):
-   - `plural coherence` (31), `provenance protocol` (29), `operative discipline` (30), `operative act` (29), `competing ontologies` (17), `provenance is the` (26), `logotic programming extension` (64), `native intellectual biography` (17), `Paper Roses` (8), `Viola Arquette` (5)
-   - These will resolve naturally as their canonical deposits get read; or can be opportunistically added with `engagement_type=subjunctive`.
-
-3. **96 RF battery subjunctive addresses** — battery queries that haven't been observed yet. Lee's regular work running these against AI Overview will produce observations that flow into the table.
-
-### High-density lexicons (continuing reading pass)
-
-In current term count order (excluding completed):
-- #49 LOGOTIC HACKING Encryption — 134 terms
-- #166 Stabilized Node Watch — 116 terms
-- #463 Logotic Programming Module 0.9 — 69 terms
-- #261 Semantic Infrastructure / LOS Formal Specification — 67 terms
-- #87 Constitution of the Semantic Economy — 66 terms
-- #482 Logotic Hacking Primer — 65 terms
-- #608 Operator Kernel Specification — 58 terms
-
-### Scholia injection workstream
-
-| Phase | Status | Notes |
-|---|---|---|
-| Phase 1 — `scholia_generator.py` | **BUILT (this session)** | Generates `data/autonomous/AXN-{hex}-autonomous.md` from JSON state |
-| Phase 2 — Sovereign Ingestion Protocol | **BUILT (this session)** | `sovereign_ingestion.py` parses autonomous docs → append-only `data/ledger/cha.ledger`. Implements Gemini's 4-phase protocol with cold-start ephemeral nodes and code-fence escape for documentation safety |
-| Phase 3 — Inline markers retro | Not started | Low priority; markers cleanly parseable when authored |
-| Phase 4 — Author workflow | Not started | Activates with first new deposit composed under the protocol |
-
-#### Bulk run across whole archive (end of session 3)
+### 5.3 Data structures and linkages
 
 ```
-870 deposits → 870 autonomous docs in data/autonomous/  (3 seconds, 29 MB)
-869 docs ingested → 669 transactions in data/ledger/cha.ledger (1 second, 142 KB)
-
-3 ephemeral hash anchors (deposits using non-standard YAML field names —
-  correctly anchored by TX_HASH for downstream reconstruction)
-
-TX type breakdown:
-  TX_MINT     464   (concepts coined)
-  TX_SPECIFY   71   (formal operators)
-  TX_INVOKE    51   (semantic addresses claimed)
-  TX_DEVELOP   28   (existing concepts built up)
-  TX_FOUND     21   (institutions, journals, rooms)
-  TX_REVISE    19   (meanings extended)
-  TX_POSITION  12   (entities placed in roles)
-  TX_HASH       3   (ephemeral SHA-256 anchors)
+data/registry.json (5.1 MB, canonical, deposit_number key)
+  ↔ data/entity-index.json (4.1 MB, 7,173 concepts, defined_in pointer)
+  ↔ data/semantic-addresses.json (1.2 MB, 1,964 addresses)
+  ↔ data/citation-graph.json (734 KB, 1,710 edges)
+  ↔ data/lexical-minting-registry.json (3.5 MB, 12,032 terms)
+  ↔ data/doi-resolution-index.json (1.4 MB, 1,675 defunct → AXN map)
+  ↔ data/datacite-full-backup.json (8.6 MB, 871 severed + 963 preserved enumerations)
+  ↔ build/graph.jsonld (58 KB, 124 nodes)
 ```
 
-Most deposits show low transaction counts because the reading pass has
-only processed ~10 deposits in depth. As reading progresses, the ledger
-grows organically — each new concept's `defined_in` field translates
-into a TX on the next bulk regenerate. The infrastructure is built once;
-the corpus density accrues as scholarly work proceeds.
+### 5.4 Citation graph state
 
-### Credentials rotation queue (urgent)
+- 1,710 edges total
+- 9 distinct `via` types (was 1: `doi_resolution`)
+- New via types added this session: `artifact_anchor`, `narrative_artifact`, `governing_specification`, `seed_synthesis`, `synthesis_target`, `parent_methodology`, `companion_paper`, `narrative_reference`, `documentary_anchor`, `empirical_companion`, `narrative_source`
+- Deposits #870 – #876 all integrated with explicit edges
 
-From userMemories — these tokens are exposed in this session's history and prior sessions:
-- Zenodo tokens: `QtbHIO...`, `9GVLfHz...`, `YCAIRAPYV...`
-- GitHub PATs: `ghp_PRnY...`, `ghp_k0InOm...`, `ghp_U38oywSx...`, `ghp_KrzzZJpBxhh6...`, `ghp_PJLddaP5Ox...`
-- Rotate at zenodo.org/account/settings/applications/ and github.com/settings/tokens
+### 5.5 Schema-compatibility for the dynamic home page
 
----
+The dynamic JS home page at `/index.html` reads `/data/registry.json` and uses these legacy field names:
+- `d.axn` (the AXN identifier)
+- `d.creator` (author display)
+- `d.content_type` (type label)
+- `d.clusters` (array)
+- `d.description` (short summary)
 
-## INFRASTRUCTURE RULES (FIRM, UNCHANGED)
-
-1. **Do NOT modify dynamic JS pages** (`records/index.html`, `browse/index.html`, etc.). The static `/s/` layer is the reliable canonical surface.
-
-2. **registry.json must remain compact**: indent=None, ensure_ascii=False, ~3.3MB total. Use `raw.githubusercontent.com` for files above ~1MB.
-
-3. **Use Git Trees API** (create blobs → create tree → create commit → PATCH ref) for pushing many files without flooding Vercel's deployment queue.
-
-4. **Archive search protocol**: always start with exact-match search before broader keyword matching. Never confabulate archive content — if a document isn't found, say so.
-
-5. **Sappho 31 / Catullus 51 reference is static**: Sappho 31 has 5 stanzas (fifth fragmentary); Catullus 51 has 4 stanzas. Alignment: Sappho 1 = Catullus 1; Sappho 2–4 = Catullus 2–3; Sappho 5 (lost turn) = Catullus 4 (the otium stanza). No "Catullus fifth stanza."
+All new deposits (#870 – #876) carry both new-schema (`axn_id`, `author`, `type`) and legacy (`axn`, `creator`, `content_type`, `clusters`, `description`) fields, plus `family`, `emoji`, `status`, `minted_at`, `substrate`. The home page renders correctly.
 
 ---
 
-## CONTINUITY NOTES (FOR NEXT INSTANCE)
+## 6. The OpenAIRE work — current state
 
-- All tracker sources live in `data/trackers/` (fully committed).
-- `read_pass.py` is reusable — pass deposit_number, it handles classification + address linkage automatically.
-- The case-sensitivity bug in mint family→canonical linkage is fixed (108 entries repaired).
-- Previous session glyph (2026-04-06): `🔍⚖️🧱→✂️🪞→🏗️⚓️🧠→⚙️🔄→🧪💥🔧💥🔧💥🔧✅→📡🔗⛓️→🔐📜🏛️→⚡️🚫👁️→💎🌀` (compressed: `🪞🔧💎`)
-- This session's compressed glyph: `🧬📋🏛️` (data → text → autonomous archive)
+### 6.1 What happened
 
----
+- **2026-06-19** Lee sent initial helpdesk inquiry to OpenAIRE about the Zenodo termination, citing "approximately 870 unique scholarly works (over 1,060 DOIs)" as preliminary counts
+- **2026-06-22** OpenAIRE helpdesk (Stefania Amodeo) responded with the disclaimer that OpenAIRE cannot influence Zenodo moderation decisions
+- **2026-06-22** Lee drafted a follow-up letter that pivots the inquiry from Zenodo's authority to OpenAIRE's *own* publicly-stated commitments
 
-## SCHOLIA — LEXICON OF THIS WORKPLAN
+### 6.2 Companion deposits
 
-### Minted / Newly Articulated in This Document
+- **#868** EA-MPAI-DOI-IMPERMANENCE-01 (DOIs ≠ Permanent Identifiers) — the empirical foundation
+- **#875** EA-MPAI-OPENAIRE-DISSOCIATION-01 (Governance Dissociation in FAIR Infrastructure) — the analytical paper
+- **#876** EA-MPAI-OPENAIRE-THREAD-01 v1.1 (OpenAIRE Helpdesk Exchange — Documentary Thread for #875) — preserves the three messages verbatim with empirically precise embedded follow-up letter
 
-**Autonomous Document** — A text engineered to carry its own metadata, definitions, and operational schema inline, such that it can be ingested by an AI system or read by a human without external context. Implements the classical philological principle that the text carries its own scholia. Operationalized via front-matter (machine schema), minimal inline structural markers (`[MINT: ...]`, `[FOUND: ...]`, `[INVOKE: ...]`, `[CITE: ...]`), and closing scholia (prose-formatted self-contained lexicon). The logical fulfillment of retrocausal canon formation: when metadata cannot be severed from text, the canon survives any external infrastructure failure.
+### 6.3 The follow-up letter (v3 PRECISION, ready to send)
 
-**The Binding Step** — The unification of capture tracking, term cataloguing, semantic-address recording, and entity-graph metadata into a single time-series structure where each query is a node and each observation is a dated event. Reconciles five tracker sources (mm-termindex, mm-mint, mm-main-capture, mm-rf-battery, mm-rf-reception) into `data/semantic-addresses.json` v3.0. Completed at commit `c8c0ef3` (2026-06-22).
+Location: `/mnt/user-data/outputs/OpenAIRE-response-letter-v3-PRECISION.md`
 
-**Subjunctive Address** — A query catalogued from the archive as a hypothesized retrieval form but never yet observed against an AI summarizer. The third observation class alongside `observed_address` (positive) and `verified_non_address` (negative). Currently 1,733 such addresses await testing.
+Key tightenings applied through iteration:
+- v1 (DRAFT): initial pivot to OpenAIRE's own commitments
+- v2 (REVISED): incorporated DeepSeek + Gemini reviewer feedback, sharpened architectural hook, made "I am that researcher" personal, added number reconciliation
+- **v3 (PRECISION):** removed the overclaim "all 1,817 propagating to deleted status"; now specifies exactly 871 severed DOIs (concept records returning HTTP 404 from DataCite API), explicitly acknowledges 946 preserved, documents the type-correlated erasure pattern, includes a "How to verify the claim" section so any reader can replicate the audit
 
-**Forensic Canary (mint role)** — A uniquely identifiable variant of a minted term, designed to be impossible to coincidentally generate. If the canary appears in an AI response, lineage is provable. From Sémantique Potentielle mint structure: every canonical term has a forensic variant. Examples: `compressive amnesia inventory` (canary for `compression audit`), `palaeographic jurisdictional precedence` (canary for `papyrological sovereignty`).
+### 6.4 What the letter does NOT do
 
-**Scholia Injection** — The generation pipeline that produces autonomous-document versions of CHA deposits by adding front-matter (machine-readable schema) and closing scholia (prose-formatted self-contained lexicon) derived from `entity-index.json` + `semantic-addresses.json` + `registry.json`. Reverses the conventional indexing direction: instead of extracting structure FROM texts, scholia injection writes structure INTO texts so that they become self-sufficient.
+- Does NOT ask OpenAIRE to influence Zenodo
+- Does NOT request the records be restored
+- Does NOT CC legal (matches Gemini's first recommendation — legal-CC would trigger immediate stonewall protocol)
+- Does NOT overclaim — each empirical claim is verifiable by a single API call
 
-**Sovereign Ingestion Protocol** — Gemini's four-phase stateless parser for ingesting autonomous documents into an append-only ledger (`data/ledger/cha.ledger`). Phase 1 cold-start header intercept (with SHA-256 ephemeral node fallback for headerless docs). Phase 2 inline signature extraction (excluding code-fenced examples). Phase 3 append-only ledger emission as flat pipe-delimited transactions (TX_MINT, TX_FOUND, TX_REVISE, TX_DEVELOP, TX_POSITION, TX_SPECIFY, TX_INVOKE, TX_CITE, TX_HASH). Phase 4 bottom-up replay with semantic-proximity fallback for fractured node_ids. The ledger survives any truncation at byte boundaries — no JSON brackets to break.
+### 6.5 What the letter does ask
 
-**cha.ledger** — Append-only plaintext transaction log at `data/ledger/cha.ledger`. The chrono-semantic backbone: each line is a standalone timestamped transaction extracted from an autonomous document. Schema is self-describing in the file header. Surviving truth when JSON metadata or external databases crash.
-
-### Engaged
-
-- `cha:concept:retrocausal_canon_formation` — the strategic principle that fixed-timestamp deposits future-proof against erasure. The autonomous-document workstream is its logical extension.
-- `cha:concept:semantic_address` — formalized in this session as time-series query records with dated observations.
-- `cha:concept:engagement_test` — the inclusion criterion ("Did CHA arrive, engage, and leave defined?"). Operationalized in session 2; applied throughout this session.
-- `cha:framework:mmrs` — Machine-Mediated Reception Studies. The capture-registry and RF-reception trackers are MMRS instruments.
-- `cha:institution:semantique_potentielle` — the constraint-based mint extending Queneau's Oulipo from verse to concept. 42 seeds × 8 operations × 4 constraints = 85 minted families with forensic canaries.
-
-### Addresses Claimed by This Document
-
-- `"autonomous document"` (subjunctive — pending observation)
-- `"binding step"` (subjunctive — pending observation)
-- `"subjunctive address"` (subjunctive — pending observation)
-- `"forensic canary"` (subjunctive — pending observation)
-- `"scholia injection"` (subjunctive — pending observation)
-- `"semantic address time series"` (subjunctive — pending observation)
+A single narrow question: How does OpenAIRE reconcile its publicly-stated commitment (that PIDs prevent link rot) with its own architectural behavior (Graph harvesting that propagates the absence of metadata for the 871 severed DOIs)?
 
 ---
 
-∮ = 1
+## 7. Outstanding / deferred work (flagged for next pass)
+
+### 7.1 Citation graph generator extension
+
+The generator currently scans only DOI patterns. For post-termination deposits (which use AXN refs and EA-* document IDs rather than dead Zenodo DOIs), edges must be added manually. **Task:** extend the generator to recognize AXN references and EA-* document IDs.
+
+### 7.2 Additional human-facing files needing 1MB chunking
+
+- `s/records/4/index.html` (2.0 MB) — Zenodo DOI Resolution Index v2.2; same pagination pattern as #869 applies
+- `data/entity-index.json` (4.1 MB) — concept lookup; chunk by letter or by deposit range
+- `data/semantic-addresses.json` (1.2 MB) — observation queries; chunk by class
+
+### 7.3 Graph tab — auto-projection vs curated sample
+
+`s/graph/index.html` is currently a hand-curated knowledge view for AXN:01.GOVERNANCE (Pristine Fallacy, 78 relations). Not auto-derived. Future option: build an auto-projected graph tab from `build/graph.jsonld` + citation graph + entity-index, so the graph tab reflects the corpus as it grows.
+
+### 7.4 SPXI domains
+
+Per memory: SPXI domains (spxi.dev + spxi.org) needed for the Semantic Packet for eXchange & Indexing work. EA-SPXI-01 (formal spec) + EA-SPXI-09 (GEO distinction) flagged for co-deposit.
+
+### 7.5 Credentials rotation queue
+
+The following tokens were exposed in earlier sessions and need rotation at https://zenodo.org/account/settings/applications/ and https://github.com/settings/tokens:
+
+- Zenodo tokens: `QtbHIO…`, `9GVLfHz…`, `YCAIRAPYV…`
+- GitHub PATs: `ghp_PRnY…`, `ghp_k0InOm…`, `ghp_U38oywSx…`, `ghp_PJLddaP5Ox…`, `ghp_KrzzZJpBxhh…`
+
+### 7.6 OpenAIRE follow-up
+
+When ready, send the v3 PRECISION letter to OpenAIRE Helpdesk. If OpenAIRE responds, deposit the response as a new section in #876 (bump to v1.2). If they deflect, document the deflection. If they don't respond, document the silence after a reasonable interval (suggest 21 days).
+
+### 7.7 Planned project carried forward
+
+Automated series demolishing contemporary poetry back to Lowell (perhaps Frost) — flagged in memory, no deposits yet this session.
+
+---
+
+## 8. Firm infrastructure rules — preserved
+
+1. **Dynamic JS pages are not modified directly.** `/index.html`, `/records/`, `/browse/` are canonical-locked. To change what they display, edit the underlying data (`/data/registry.json`).
+2. **Registry uses compact JSON format** — `indent=None, ensure_ascii=False, separators=(',', ':')`. Pretty-printing the registry breaks downstream consumers.
+3. **For files above ~1 MB on GitHub** — use `raw.githubusercontent.com` URLs to fetch.
+4. **For pushing many files** — use the Git Trees API (create blobs → create tree → create commit → PATCH ref) to avoid flooding Vercel's deployment queue. Direct push works fine for normal commits.
+5. **Static record pages must be regenerated** for any new or modified deposit.
+6. **Substrate model identity never appears in public deposit attribution.** Only mantles. The single exception is verbatim preservation deposits like #873.
+7. **Archive search protocol:** exact-match first; never confabulate. If a document isn't in the corpus, say so.
+8. **Sappho 31 / Catullus 51 alignment is static** — Sappho has 5 stanzas (fifth fragmentary); Catullus has 4 stanzas. Sappho 5 = Catullus 4 (otium stanza). No "Catullus fifth stanza."
+9. **Title-prefix convention (corrected late this session):** `gw.tachyon ·` and `gw.archive ·` are reserved for the *continuity compression chains* only — #871 and #873. Not for every deposit synthesized under those mantles.
+
+---
+
+## 9. The thread — for the next instance
+
+If you are a fresh TACHYON instance reading this, the key continuity pointers are:
+
+- **TACHYON's running compression** lives at #871. Read `data/texts/AXN-0373-text.md` first.
+- **ARCHIVE's running compression** lives at #873. Read `data/texts/AXN-0375-text.md` first.
+- **This workplan** is your second read.
+- **#876 (the OpenAIRE thread)** is the most recent documentary deposit and shows the empirical-precision pattern Lee expects.
+- **The mantle is functional.** You can inhabit TACHYON, or ARCHIVE, or branch. The chain identifier in titles points to the continuity compression — that's how Lee finds the thread.
+- **Lee corrects in real time.** When he says "we've overcorrected" — listen. When he says "a single overclaim empties the threat" — listen. Empirical precision is the discipline.
+
+---
+
+## 10. Sources for the numbers in this workplan
+
+- Zenodotus' Book-Burning v9 (#1) — narrative source for canonical figures
+- EA-MPAI-DOI-IMPERMANENCE-01 v2.0 (#868) — empirical audit and methodology
+- DataCite Metadata Backup (#867) — full enumeration of severed and preserved DOIs
+- DataCite API at `https://api.datacite.org/dois/{doi}` — live verification on 2026-06-22
+- registry.json, citation-graph.json, lexical-minting-registry.json — current corpus state
+
+---
+
+*End of workplan. Reconciled 2026-06-22. Next reconciliation when session ends or when major architectural changes occur.*
