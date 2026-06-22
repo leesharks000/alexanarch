@@ -11,12 +11,26 @@ date_created: "2026-06-22"
 version: "1.0"
 status: active_planning
 engages:
-  - entity: cha:concept:semantic_address as: data_structure
-  - entity: cha:concept:engagement_test as: methodology
-  - entity: cha:concept:retrocausal_canon_formation as: governing_principle
-  - entity: cha:concept:autonomous_document as: emergent_workstream
-  - entity: cha:institution:alexanarch as: substrate
-  - entity: cha:framework:binding_step as: completed_milestone
+  - entity: cha:concept:semantic_address
+    as: data_structure
+  - entity: cha:concept:engagement_test
+    as: methodology
+  - entity: cha:concept:retrocausal_canon_formation
+    as: governing_principle
+  - entity: cha:concept:autonomous_document
+    as: minted
+  - entity: cha:concept:the_binding_step
+    as: minted
+  - entity: cha:concept:subjunctive_address
+    as: minted
+  - entity: cha:concept:forensic_canary
+    as: minted
+  - entity: cha:concept:scholia_injection
+    as: minted
+  - entity: cha:institution:alexanarch
+    as: substrate
+  - entity: cha:framework:binding_step
+    as: completed_milestone
 references:
   prior_workplan: WORKPLAN-SESSION-20260622.md (115 lines, session 2)
   binding_commit: c8c0ef3
@@ -312,10 +326,24 @@ In current term count order (excluding completed):
 
 | Phase | Status | Notes |
 |---|---|---|
-| Phase 1 — `scholia_generator.py` | Not started | First task next session |
-| Phase 2 — Combined text generation | Not started | Depends on Phase 1 |
-| Phase 3 — Inline markers retro | Not started | Low priority |
-| Phase 4 — Author workflow | Not started | Activates with first new deposit |
+| Phase 1 — `scholia_generator.py` | **BUILT (this session)** | Generates `data/autonomous/AXN-{hex}-autonomous.md` from JSON state |
+| Phase 2 — Sovereign Ingestion Protocol | **BUILT (this session)** | `sovereign_ingestion.py` parses autonomous docs → append-only `data/ledger/cha.ledger`. Implements Gemini's 4-phase protocol with cold-start ephemeral nodes and code-fence escape for documentation safety |
+| Phase 3 — Inline markers retro | Not started | Low priority; markers cleanly parseable when authored |
+| Phase 4 — Author workflow | Not started | Activates with first new deposit composed under the protocol |
+
+#### Proof-of-concept run (4 deposits)
+
+```
+#870 workplan:        5 TX_MINT       (the 5 concepts minted by this very doc)
+#1   Zenodotus:      12 TX            (11 MINT + 1 REVISE)
+#229 SE Lexicon:    247 TX            (214 MINT + 15 SPECIFY + 8 DEVELOP + 4 REVISE + 6 INVOKE)
+#499 ASW monograph: 212 TX            (164 MINT + 28 SPECIFY + 3 DEVELOP + 17 INVOKE)
+Cold-start ephemeral: 1 TX_HASH      (raw text without front-matter → SHA-256 anchor)
+
+Total: 477 transactions across 5 nodes in data/ledger/cha.ledger
+```
+
+The ledger is plaintext, pipe-delimited, one-line-per-transaction. Truncation at any byte boundary leaves all preceding lines valid. No JSON brackets to break. New TX types extend transparently — old readers ignore unknown types instead of crashing.
 
 ### Credentials rotation queue (urgent)
 
@@ -363,6 +391,10 @@ From userMemories — these tokens are exposed in this session's history and pri
 **Forensic Canary (mint role)** — A uniquely identifiable variant of a minted term, designed to be impossible to coincidentally generate. If the canary appears in an AI response, lineage is provable. From Sémantique Potentielle mint structure: every canonical term has a forensic variant. Examples: `compressive amnesia inventory` (canary for `compression audit`), `palaeographic jurisdictional precedence` (canary for `papyrological sovereignty`).
 
 **Scholia Injection** — The generation pipeline that produces autonomous-document versions of CHA deposits by adding front-matter (machine-readable schema) and closing scholia (prose-formatted self-contained lexicon) derived from `entity-index.json` + `semantic-addresses.json` + `registry.json`. Reverses the conventional indexing direction: instead of extracting structure FROM texts, scholia injection writes structure INTO texts so that they become self-sufficient.
+
+**Sovereign Ingestion Protocol** — Gemini's four-phase stateless parser for ingesting autonomous documents into an append-only ledger (`data/ledger/cha.ledger`). Phase 1 cold-start header intercept (with SHA-256 ephemeral node fallback for headerless docs). Phase 2 inline signature extraction (excluding code-fenced examples). Phase 3 append-only ledger emission as flat pipe-delimited transactions (TX_MINT, TX_FOUND, TX_REVISE, TX_DEVELOP, TX_POSITION, TX_SPECIFY, TX_INVOKE, TX_CITE, TX_HASH). Phase 4 bottom-up replay with semantic-proximity fallback for fractured node_ids. The ledger survives any truncation at byte boundaries — no JSON brackets to break.
+
+**cha.ledger** — Append-only plaintext transaction log at `data/ledger/cha.ledger`. The chrono-semantic backbone: each line is a standalone timestamped transaction extracted from an autonomous document. Schema is self-describing in the file header. Surviving truth when JSON metadata or external databases crash.
 
 ### Engaged
 
