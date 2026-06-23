@@ -1,0 +1,58 @@
+{
+  "scan_id": "scan-2026-06-22-chatgpt-001",
+  "scan_completed_utc": "2026-06-22T00:00:00Z",
+  "methodology_version": "EA-MMRS-SURFACE-VISIBILITY-01/v1.0",
+  "methodology_version_note": "v1.0 — pre-v1.1 calibration. Scoring is continuous (e.g. 0.05, 0.45, 0.75) per v1.0, not yet ordinal-locked. R_s was not computed in v1.0.",
+  "deposit_reference": "EA-MMRS-SURFACE-VISIBILITY-BASELINE-01 (#881, AXN:037D.EMPIRICAL.🗺️🗡️🪨🔎🙏🧭)",
+  "source": "Extracted from #881 (#881 v1.0 baseline deposit body)",
+  "substrate": {
+    "provider": "OpenAI",
+    "model_name": "ChatGPT",
+    "model_version": "unspecified",
+    "register": "critical-reader",
+    "interface": "ChatGPT web UI",
+    "retrieval_backend": "ChatGPT default web search",
+    "retrieval_resources_self_reported": "Text-only public-search scan",
+    "training_cutoff_disclosed": "unknown",
+    "scan_curator": "Lee Sharks (MANUS) (ORCID 0009-0000-1599-0703)"
+  },
+  "battery_coverage": "9 objects (v1.0 battery). The 12-object expansion in v1.1 §7 was not yet operationalized at scan time. The objects Semantic Economy Institute, Zenodotus' Book-Burning, I AM THE API, and Assembly Continuity Protocol were not in this scan; Feist Function and 'New Alexanarch-native works (aggregate)' were retired in v1.1.",
+  "calibration_note": "Pre-cleanup snapshot. The Dodecad-wide cleanup pass on 2026-06-23 modified 137 files; this reading is the methodologically-fair pre-intervention reference point.",
+  "observations": [
+    {"object": "Alexanarch", "object_class": "institutional_root", "V": 0.05, "A": 0.00, "F": null, "C": 0.00, "R_s": null,
+     "diagnostic_note": "Successor indexing latency; AlexAnarcho podcast occupies the namespace"},
+    {"object": "Lee Sharks / Crimson Hexagonal Archive", "object_class": "institutional_root", "V": 0.95, "A": 0.45, "F": 0.75, "C": 0.70, "R_s": null,
+     "diagnostic_note": "Chronological smear; SDI = 0.395 from 532-vs-879 ratio at scan time"},
+    {"object": "Provenance Erasure Rate", "object_class": "mature_concept", "V": 0.95, "A": 0.75, "F": 0.90, "C": 0.55, "R_s": null,
+     "diagnostic_note": "Strong single; eligible but not yet generic-field dominant"},
+    {"object": "SPXI", "object_class": "mature_concept", "V": 0.90, "A": 0.80, "F": 0.85, "C": 0.75, "R_s": null,
+     "diagnostic_note": "Strongest composition-eligible technical object"},
+    {"object": "Writable Retrieval Basin", "object_class": "mature_concept", "V": 0.70, "A": 0.45, "F": 0.75, "C": 0.40, "R_s": null,
+     "diagnostic_note": "Distributed survival; moderate bystanding"},
+    {"object": "Semantic Commodity Form", "object_class": "emerging_concept", "V": 0.65, "A": 0.20, "F": 0.65, "C": 0.35, "R_s": null,
+     "diagnostic_note": "Ghost-composed through secondary surfaces"},
+    {"object": "Revelation First", "object_class": "emerging_concept", "V": 0.85, "A": 0.75, "F": 0.90, "C": 0.15, "R_s": null,
+     "diagnostic_note": "Exact-query success; severe topic-level bystanding"},
+    {"object": "Feist Function", "object_class": "alexanarch_native_control", "V": 0.05, "A": 0.00, "F": null, "C": 0.00, "R_s": null,
+     "diagnostic_note": "Occluded, not yet defigured; retired in v1.1 battery"},
+    {"object": "New Alexanarch-native works (aggregate)", "object_class": "alexanarch_native_control", "V": 0.05, "A": 0.00, "F": null, "C": 0.00, "R_s": null,
+     "diagnostic_note": "Indexing latency; successor invisibility; replaced in v1.1 by specific objects Zenodotus' Book-Burning, I AM THE API, Assembly Continuity Protocol"}
+  ],
+  "corpus_aggregates": {
+    "V_mean": 0.53,
+    "A_mean": 0.38,
+    "F_mean": 0.80,
+    "C_mean": 0.32,
+    "SDI": 0.395,
+    "SDI_source": "1 − (532 / 879) where 532 was a visible indexed count and 879 was canonical at scan time"
+  },
+  "diagnostic_flags": {
+    "successor_anchor_lag": "DOMINANT",
+    "chronological_smear": "PRESENT (SDI ≈ 0.395)",
+    "ghost_survival": "DOMINANT for mature concepts",
+    "compositional_bystanding": "HIGH for PER, SPXI, Revelation First",
+    "total_occlusion": "HIGH for Alexanarch and Alexanarch-native"
+  },
+  "governance_state_v1.0_unspecified": "Not assigned in v1.0; v1.1 governance protocol would assign YELLOW based on the score profile",
+  "interpretation": "The search layer presently knows the archive's semantic organs better than it knows their new body. Lee Sharks and CHA highly retrievable via Medium/Zenodo/Academia/PhilPapers/Pessoagraph; Alexanarch as institutional successor invisible. Ghost-survival pattern dominant. Pre-cleanup baseline."
+}

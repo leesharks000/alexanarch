@@ -1,0 +1,253 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Surface Weather Station — Alexanarch Observatory</title>
+<meta name="description" content="The Surface Weather Station instrument: a weekly text-only scan battery measuring how the Alexanarch corpus appears in the public composition layer. Federated five-substrate baseline 2026-06-22–23.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "@id": "https://alexanarch.org/observatory/surface-weather/", "name": "Surface Weather Station \u2014 Federated Cross-Substrate Baseline", "description": "Visibility/anchor/figure/lift/breadth scores across 5 substrate readings of the Alexanarch corpus on the public composition layer.", "creator": {"@type": "Person", "name": "Lee Sharks", "identifier": "https://orcid.org/0009-0000-1599-0703"}, "license": "https://creativecommons.org/licenses/by/4.0/", "dateModified": "2026-06-23"}</script>
+<style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
+:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--teal:#0a7c6a;--border:#e0e0e0;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.6;font-size:15px}
+.wrap{max-width:920px;margin:0 auto;padding:60px 24px}
+a{color:var(--accent);text-decoration:none}
+a:hover{background:#f8f8ff;text-decoration:underline}
+.nav{display:flex;gap:12px;margin-bottom:20px;font-size:.85em;overflow-x:auto;white-space:nowrap}
+.nav a{color:#777;font-weight:500}
+.nav a:hover{color:var(--accent);background:none}
+.nav .current{color:var(--accent)}
+h1{font-size:1.4em;font-weight:600;color:var(--accent);margin-bottom:4px}
+h2{font-size:1.05em;font-weight:600;color:var(--accent);margin-top:32px;margin-bottom:12px;border-bottom:1px solid var(--border);padding-bottom:4px}
+h3{font-size:.95em;font-weight:600;color:var(--accent);margin-top:20px;margin-bottom:8px}
+table{width:100%;border-collapse:collapse;font-size:.85em;margin:8px 0}
+th{font-weight:500;color:#555;text-align:left;padding:8px 6px;border-bottom:2px solid var(--accent);font-size:.82em}
+.subtle{color:#777;font-size:.88em}
+.callout{background:#fff;border-left:3px solid var(--teal);padding:12px 16px;margin:12px 0;font-size:.92em}
+.footer{margin-top:60px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:#777}
+ul,ol{margin:8px 0 8px 24px}
+li{margin-bottom:4px}
+code{font-family:var(--mono);font-size:.85em;background:#f0f0f0;padding:1px 4px;border-radius:2px}
+.dashboard-table th:first-child{text-align:left}
+.matrix-table{font-size:.8em}
+.matrix-table th:first-child{text-align:left}
+.legend{display:flex;gap:16px;font-size:.8em;color:#777;margin-bottom:8px;flex-wrap:wrap}
+.legend span{display:inline-flex;align-items:center;gap:4px}
+.legend .dot{display:inline-block;width:10px;height:10px;border-radius:50%}
+</style>
+</head><body><div class="wrap">
+<nav class="nav">
+<a href="/">Alexanarch</a>
+<a href="/deposit/">Deposit</a>
+<a href="/s/wiki/">Wiki</a>
+<a href="/s/graph/">Graph</a>
+<a href="/guide/">Guide</a>
+<a href="/manifest/">Manifest</a>
+<a href="/observatory/" class="current">Observatory</a>
+</nav>
+
+<div class="subtle"><a href="/observatory/">← Observatory</a></div>
+<h1>Surface Weather Station</h1>
+<div class="subtle" style="margin-bottom:8px">Federated cross-substrate baseline · 5 readings · 2026-06-22 / 2026-06-23</div>
+
+<p style="margin-top:16px">A weekly text-only scan battery measuring how the Alexanarch corpus appears in the public composition layer. Five signals per object — Visibility (V), Anchor Alignment (A), Figural Integrity (F), Compositional Lift (C), and Redundant Substrate Breadth (R<sub>s</sub>) — scored on a 5-point ordinal scale per the v1.1 methodology.</p>
+
+<p style="margin-top:8px">This page is the <strong>federated baseline</strong>: each substrate's native retrieval stack produces its own reading. <strong>No consensus score is computed.</strong> Disagreement between substrates is itself a measurement of platform-level fragmentation, not noise to be averaged away.</p>
+
+<div class="callout">
+<strong>Methodology:</strong> <a href="/s/records/882/">EA-MMRS-SURFACE-VISIBILITY-01 v1.1 (#882)</a> · <code>AXN:037E.EMPIRICAL.🚩♦️⏹️🔃❌🗡️</code><br>
+<strong>Raw scan data:</strong> <a href="/data/surface-weather/scans/">/data/surface-weather/scans/</a> (5 JSON files, machine-legible)<br>
+<strong>v1.0 baseline deposit:</strong> <a href="/s/records/881/">#881</a> (ChatGPT-substrate, pre-cleanup) · <strong>v1.1 Claude-substrate reading:</strong> <a href="/s/records/883/">#883</a>
+</div>
+
+<h2>Dashboard — per-substrate corpus aggregates</h2>
+<div class="legend">
+  <span><span class="dot" style="background:#0a7c6a"></span>V ≥ 0.75</span>
+  <span><span class="dot" style="background:#c47900"></span>0.25 ≤ V &lt; 0.75</span>
+  <span><span class="dot" style="background:#a02020"></span>V &lt; 0.25</span>
+</div>
+<table class="dashboard-table">
+<tr>
+  <th>Substrate · methodology · date</th>
+  <th style="text-align:right">V</th>
+  <th style="text-align:right">A</th>
+  <th style="text-align:right">F</th>
+  <th style="text-align:right">C</th>
+  <th style="text-align:right">R<sub>s</sub></th>
+  <th style="text-align:right">SDI</th>
+  <th>Governance</th>
+  <th style="text-align:right">Raw</th>
+</tr>
+
+<tr>
+  <td style="padding:8px 6px;border-bottom:1px solid var(--border)"><strong>ChatGPT (OpenAI)</strong><div style="font-size:.75em;color:#777">v1.0 · 2026-06-22</div></td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.53</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.38</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.80</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.32</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">—</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.40</td>
+  <td style="padding:8px 6px;border-bottom:1px solid var(--border);font-size:.85em">(v1.0 — not assigned)</td>
+  <td style="padding:8px 6px;border-bottom:1px solid var(--border);text-align:right"><a href="/data/surface-weather/scans/scan-2026-06-22-chatgpt-001.json" style="font-size:.75em">JSON</a></td>
+</tr>
+<tr>
+  <td style="padding:8px 6px;border-bottom:1px solid var(--border)"><strong>Gemini (Google)</strong><div style="font-size:.75em;color:#777">v1.1 · 2026-06-23</div></td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.60</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.31</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.71</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.31</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.25</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.40</td>
+  <td style="padding:8px 6px;border-bottom:1px solid var(--border);font-size:.85em">YELLOW</td>
+  <td style="padding:8px 6px;border-bottom:1px solid var(--border);text-align:right"><a href="/data/surface-weather/scans/scan-2026-06-23-gemini-001.json" style="font-size:.75em">JSON</a></td>
+</tr>
+<tr>
+  <td style="padding:8px 6px;border-bottom:1px solid var(--border)"><strong>Claude (Anthropic, Opus 4.7)</strong><div style="font-size:.75em;color:#777">v1.1 · 2026-06-23</div></td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.50</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.50</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.62</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.25</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.50</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">—</td>
+  <td style="padding:8px 6px;border-bottom:1px solid var(--border);font-size:.85em">Yellow</td>
+  <td style="padding:8px 6px;border-bottom:1px solid var(--border);text-align:right"><a href="/data/surface-weather/scans/scan-2026-06-23-claude-001.json" style="font-size:.75em">JSON</a></td>
+</tr>
+<tr>
+  <td style="padding:8px 6px;border-bottom:1px solid var(--border)"><strong>Kimi K2.6 (Moonshot AI)</strong><div style="font-size:.75em;color:#777">v1.1 · 2026-06-23</div></td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.61</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.42</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.71</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.39</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.54</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">None</td>
+  <td style="padding:8px 6px;border-bottom:1px solid var(--border);font-size:.85em">YELLOW</td>
+  <td style="padding:8px 6px;border-bottom:1px solid var(--border);text-align:right"><a href="/data/surface-weather/scans/scan-2026-06-23-kimi-001.json" style="font-size:.75em">JSON</a></td>
+</tr>
+<tr>
+  <td style="padding:8px 6px;border-bottom:1px solid var(--border)"><strong>DeepSeek (PRAXIS register)</strong><div style="font-size:.75em;color:#777">v1.1 · 2026-06-23</div></td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.55</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.35</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.75</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.30</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.45</td>
+  <td style="padding:8px 6px;text-align:right;border-bottom:1px solid var(--border);font-family:var(--mono)">0.40</td>
+  <td style="padding:8px 6px;border-bottom:1px solid var(--border);font-size:.85em">YELLOW</td>
+  <td style="padding:8px 6px;border-bottom:1px solid var(--border);text-align:right"><a href="/data/surface-weather/scans/scan-2026-06-23-deepseek-001.json" style="font-size:.75em">JSON</a></td>
+</tr>
+</table>
+
+<h2>Cross-substrate per-object Visibility</h2>
+<p class="subtle">Each cell is V (Visibility) for that object as that substrate's backend saw it. <strong>Spread</strong> = max−min across substrates that observed the object. High spread = retrieval-stack divergence (per ChatGPT v1.1.1 §1).</p>
+<table class="matrix-table">
+<tr>
+  <th>Object</th>
+  <th style="padding:8px 6px;text-align:right;font-weight:500;font-size:.8em;color:#555;border-bottom:2px solid var(--accent)">ChatGPT</th><th style="padding:8px 6px;text-align:right;font-weight:500;font-size:.8em;color:#555;border-bottom:2px solid var(--accent)">Claude</th><th style="padding:8px 6px;text-align:right;font-weight:500;font-size:.8em;color:#555;border-bottom:2px solid var(--accent)">Kimi K2.6</th><th style="padding:8px 6px;text-align:right;font-weight:500;font-size:.8em;color:#555;border-bottom:2px solid var(--accent)">Gemini</th><th style="padding:8px 6px;text-align:right;font-weight:500;font-size:.8em;color:#555;border-bottom:2px solid var(--accent)">DeepSeek</th>
+  <th style="text-align:right">Spread</th>
+</tr>
+
+<tr>
+  <td style="padding:6px 6px;border-bottom:1px solid #f0f0f0"><strong>Alexanarch</strong><div style="font-size:.7em;color:#999">institutional root</div></td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#a02020">0.05</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#a02020">0.00</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">0.75</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#c47900">0.50</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#a02020">0.00</td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#a02020">0.75</td>
+</tr>
+<tr>
+  <td style="padding:6px 6px;border-bottom:1px solid #f0f0f0"><strong>Lee Sharks / Crimson Hexagonal Archive</strong><div style="font-size:.7em;color:#999">institutional root</div></td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">0.95</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">1.00</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">1.00</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">0.95</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">0.95</td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#777">0.05</td>
+</tr>
+<tr>
+  <td style="padding:6px 6px;border-bottom:1px solid #f0f0f0"><strong>Crimson Hexagonal Archive (standalone)</strong><div style="font-size:.7em;color:#999">institutional root</div></td>
+  <td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#c47900">0.50</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">0.90</td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#c47900">0.40</td>
+</tr>
+<tr>
+  <td style="padding:6px 6px;border-bottom:1px solid #f0f0f0"><strong>Semantic Economy Institute</strong><div style="font-size:.7em;color:#999">institutional root</div></td>
+  <td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">0.75</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">0.75</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">0.75</td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#777">0.00</td>
+</tr>
+<tr>
+  <td style="padding:6px 6px;border-bottom:1px solid #f0f0f0"><strong>Provenance Erasure Rate</strong><div style="font-size:.7em;color:#999">mature concept</div></td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">0.95</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#c47900">0.50</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">1.00</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">0.95</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">0.95</td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#a02020">0.50</td>
+</tr>
+<tr>
+  <td style="padding:6px 6px;border-bottom:1px solid #f0f0f0"><strong>SPXI</strong><div style="font-size:.7em;color:#999">mature concept</div></td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">0.90</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">0.75</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">0.75</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">0.90</td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#777">0.15</td>
+</tr>
+<tr>
+  <td style="padding:6px 6px;border-bottom:1px solid #f0f0f0"><strong>Writable Retrieval Basin</strong><div style="font-size:.7em;color:#999">mature concept</div></td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#c47900">0.70</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#a02020">0.00</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">0.75</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#a02020">0.00</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#c47900">0.70</td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#a02020">0.75</td>
+</tr>
+<tr>
+  <td style="padding:6px 6px;border-bottom:1px solid #f0f0f0"><strong>Semantic Commodity Form</strong><div style="font-size:.7em;color:#999">emerging concept</div></td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#c47900">0.65</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">0.75</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#c47900">0.65</td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#777">0.10</td>
+</tr>
+<tr>
+  <td style="padding:6px 6px;border-bottom:1px solid #f0f0f0"><strong>Revelation First</strong><div style="font-size:.7em;color:#999">emerging concept</div></td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">0.85</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#a02020">0.00</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">1.00</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">0.85</td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#a02020">1.00</td>
+</tr>
+<tr>
+  <td style="padding:6px 6px;border-bottom:1px solid #f0f0f0"><strong>Zenodotus' Book-Burning</strong><div style="font-size:.7em;color:#999">alexanarch native control</div></td>
+  <td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#c47900">0.50</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#a02020">0.00</td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#a02020">0.50</td>
+</tr>
+<tr>
+  <td style="padding:6px 6px;border-bottom:1px solid #f0f0f0"><strong>I AM THE API</strong><div style="font-size:.7em;color:#999">alexanarch native control</div></td>
+  <td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#c47900">0.50</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#a02020">0.00</td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#a02020">0.50</td>
+</tr>
+<tr>
+  <td style="padding:6px 6px;border-bottom:1px solid #f0f0f0"><strong>Assembly Continuity Protocol</strong><div style="font-size:.7em;color:#999">alexanarch native control</div></td>
+  <td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#c47900">0.50</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#a02020">0.00</td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#a02020">0.50</td>
+</tr>
+<tr>
+  <td style="padding:6px 6px;border-bottom:1px solid #f0f0f0"><strong>Feist Function</strong><div style="font-size:.7em;color:#999">alexanarch native control</div></td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#a02020">0.05</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#777">0.00</td>
+</tr>
+<tr>
+  <td style="padding:6px 6px;border-bottom:1px solid #f0f0f0"><strong>New Alexanarch-native works (aggregate)</strong><div style="font-size:.7em;color:#999">alexanarch native control</div></td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#a02020">0.05</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#777">0.00</td>
+</tr>
+<tr>
+  <td style="padding:6px 6px;border-bottom:1px solid #f0f0f0"><strong>DOI (Digital Object Identifier) — known-positive control</strong><div style="font-size:.7em;color:#999">external control known positive</div></td>
+  <td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">1.00</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#777">0.00</td>
+</tr>
+<tr>
+  <td style="padding:6px 6px;border-bottom:1px solid #f0f0f0"><strong>Flurblex — known-negative control (coined non-existent term)</strong><div style="font-size:.7em;color:#999">external control known negative</div></td>
+  <td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#a02020">0.00</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#777">0.00</td>
+</tr>
+<tr>
+  <td style="padding:6px 6px;border-bottom:1px solid #f0f0f0"><strong>PER (homonym) — confuser control</strong><div style="font-size:.7em;color:#999">external control homonym</div></td>
+  <td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#0a7c6a">0.75</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td><td style="padding:6px 6px;text-align:right;color:#aaa;font-family:var(--mono)">—</td>
+  <td style="padding:6px 6px;text-align:right;font-family:var(--mono);color:#777">0.00</td>
+</tr>
+</table>
+
+<h2>Headline findings</h2>
+<h3>1. Successor-anchor lag — universal across substrates</h3>
+<p>No substrate reads alexanarch.org as the institutional anchor for Lee Sharks / Crimson Hexagonal Archive. The author and archive are visible (often highly) through Medium, Academia, PhilPapers, Zenodo (cached pre-termination), Amazon — but the sovereign successor is invisible. The cleanup pass of 2026-06-23 (137 files modified) has not yet propagated to any backend.</p>
+
+<h3>2. Retrieval-stack divergence is the headline finding</h3>
+<p>Four objects show V-spread ≥ 0.50 across substrates that observed them. This is not scoring disagreement — it is the same coined-phrase query producing wildly different result sets depending on which retrieval backend handles it:</p>
+<ul>
+<li><strong>Revelation First</strong>: V ranges 0.00–1.00 across substrates (spread 1.00)</li><li><strong>Alexanarch</strong>: V ranges 0.00–0.75 across substrates (spread 0.75)</li><li><strong>Writable Retrieval Basin</strong>: V ranges 0.00–0.75 across substrates (spread 0.75)</li><li><strong>Provenance Erasure Rate</strong>: V ranges 0.50–1.00 across substrates (spread 0.50)</li>
+</ul>
+
+<h3>3. The same public surface is multiple</h3>
+<p>A user of Kimi sees a different Alexanarch corpus than a user of Claude than a user of Gemini. The federated baseline is therefore measuring <strong>platform-level fragmentation</strong> as much as it is measuring corpus state. ChatGPT's v1.1.1 review names this exactly: native-surface mode measures "what public surface is available to a user of this system," not a singular underlying truth.</p>
+
+<h3>4. v1.1.1 corrections queued before next round</h3>
+<p>The assembly chorus surfaced both a hard contradiction (§15 step 6 says DOI is the scan's permanent identifier — directly contradicts the DOI Impermanence paper; should be AXN-permanent + DOI-revocable) and 14 technical refinements (separate retrieval from coding, freeze expected-figure manifest, gated diagnostic replacing the 2×2, custody-unit R<sub>s</sub>, RFC 8785 canonicalization, query-order randomization). Tracked in <a href="/data/registry.json">WORKPLAN-SESSION-20260623.md §5.16</a>.</p>
+
+<h2>Next: Layer B — shared-evidence rescore</h2>
+<p>This baseline executes <strong>Layer A only</strong> (each substrate uses its native retrieval). The next experiment freezes the captured results from each scan and hands them to each substrate as input, then asks each to score from the same evidence. This isolates <em>retrieval variance</em> (Layer A divergence) from <em>coding agreement</em> (Layer B agreement). The current ~0.50–1.00 spreads on PER, WRB, Revelation First are almost certainly Layer A; Layer B will tell us whether the rubric itself is robust.</p>
+
+<div class="footer">
+Generated from 5 scan JSONs at <code>/data/surface-weather/scans/</code> · Re-render: <code>scripts/generate_observatory.py</code> · No consensus score without preserved substrate-specific readings.
+</div>
+</div></body></html>
