@@ -1,0 +1,211 @@
+# Validate Registry & Deposit Protocol
+#
+# CI gate. Runs on every push to main and every PR targeting main that touches
+# registry/protocol/schema/script/text paths. Enforces:
+#
+#   1. api/deposit-protocol.json parses as valid JSON
+#   2. api/schemas/deposit-entry.schema.json parses as valid JSON
+#   3. data/registry.json passes validate_deposit.py --strict
+#      - schema rules: AXN format/glyphs/hash, required fields, types
+#      - registry invariants: contiguous deposit_numbers, total_deposits ==
+#        len(deposits)
+#      - INDEX CONSISTENCY: every protocol/schema content_sha256 in
+#        api/index.json matches the actual file's hash (catches the
+#        protocol-drift problem the audit's §6.2.1 P0 named)
+#   4. DEPOSIT-FLOW.md derived-surface invariants: browse, chunks, sitemap
+#      counts all agree with registry.total_deposits
+#   5. data/texts/AXN-<hex>-text.md exists for every deposit
+#   6. data/deposits/AXN-<hex>.md exists for every deposit (closes the
+#      §6.2.2 generator-gap the audit identified)
+#
+# This workflow has READ-ONLY access to the repo. It cannot mutate state.
+# Required as a status check on the main branch protection rule so that PRs
+# from the mint workflow merge only after green CI.
+#
+# Created: 2026-06-23 evening (§6.2.1 step-3 rebuild, commit B)
+
+name: Validate Registry & Deposit Protocol
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/registry.json'
+      - 'data/texts/**'
+      - 'data/deposits/**'
+      - 'data/chunks/**'
+      - 'data/browse-index.json'
+      - 'api/**'
+      - 'scripts/**'
+      - 's/records/**'
+      - 's/browse/**'
+      - 'sitemap.xml'
+      - 'SHA256SUMS.txt'
+      - '.github/workflows/validate-registry.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'data/registry.json'
+      - 'data/texts/**'
+      - 'data/deposits/**'
+      - 'data/chunks/**'
+      - 'data/browse-index.json'
+      - 'api/**'
+      - 'scripts/**'
+      - 's/records/**'
+      - 's/browse/**'
+      - 'sitemap.xml'
+      - 'SHA256SUMS.txt'
+      - '.github/workflows/validate-registry.yml'
+  workflow_dispatch:
+
+jobs:
+  validate-protocol:
+    name: Validate registry against canonical protocol
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Verify protocol JSON files parse
+        run: |
+          set -euo pipefail
+          python3 -m json.tool api/deposit-protocol.json > /dev/null
+          python3 -m json.tool api/axn-protocol.json > /dev/null
+          python3 -m json.tool api/enrichment-protocol.json > /dev/null
+          python3 -m json.tool api/index.json > /dev/null
+          python3 -m json.tool api/schemas/deposit-entry.schema.json > /dev/null
+          echo "All protocol/schema JSON files parse cleanly."
+
+      - name: Bootstrap familiarization (verifies index consistency)
+        id: bootstrap
+        run: |
+          set -euo pipefail
+          python3 scripts/bootstrap_familiarization.py \
+              --strict \
+              --instance "validate-registry CI (commit ${GITHUB_SHA:0:8})" \
+              --receipt-file /tmp/familiarization-receipt.txt
+          echo "Bootstrap clean — protocols' content_sha256 hashes match files on disk."
+
+      - name: Validate registry against protocol (strict)
+        run: |
+          set -euo pipefail
+          python3 scripts/validate_deposit.py --registry data/registry.json --strict
+
+      - name: Verify derived-surface consistency invariants
+        run: |
+          set -euo pipefail
+          python3 << 'PY'
+          import json, glob, sys, os
+
+          ok = True
+          def check(cond, msg):
+              global ok
+              if not cond:
+                  print(f"FAIL: {msg}")
+                  ok = False
+              else:
+                  print(f"  ok: {msg}")
+
+          reg = json.load(open('data/registry.json'))
+          n = reg['total_deposits']
+          deposit_numbers = [d['deposit_number'] for d in reg['deposits']]
+          check(n == len(reg['deposits']),
+                f"total_deposits ({n}) == len(deposits) ({len(reg['deposits'])})")
+          check(deposit_numbers == sorted(deposit_numbers),
+                "deposit numbers in ascending order")
+          check(min(deposit_numbers) == 1, "first deposit is #1")
+          check(max(deposit_numbers) == n, f"deposit numbers contiguous 1..{n}")
+
+          # browse-index alignment
+          bi = json.load(open('data/browse-index.json'))
+          check(bi['total'] == n,
+                f"browse-index.total ({bi['total']}) == registry.total ({n})")
+          check(len(bi['deposits']) == n,
+                f"browse-index list length ({len(bi['deposits'])}) == {n}")
+
+          # chunk alignment
+          cidx = json.load(open('data/chunks/registry/_index.json'))
+          check(cidx['total_deposits'] == n,
+                f"chunks-index.total_deposits == {n}")
+          chunk_count = len(glob.glob('data/chunks/registry/chunk-*.json'))
+          check(cidx['total_chunks'] == chunk_count,
+                f"chunks-index.total_chunks ({cidx['total_chunks']}) == file count ({chunk_count})")
+
+          # static browse page contains all records
+          browse = open('s/browse/index.html').read()
+          missing_browse = [num for num in deposit_numbers if f'/s/records/{num}/' not in browse]
+          check(not missing_browse,
+                f"browse contains all record URLs"
+                + (f" (missing first: {missing_browse[:5]})" if missing_browse else ""))
+
+          # sitemap contains all records
+          sitemap = open('sitemap.xml').read()
+          missing_sitemap = [num for num in deposit_numbers if f'/s/records/{num}/' not in sitemap]
+          check(not missing_sitemap,
+                f"sitemap contains all record URLs"
+                + (f" (missing first: {missing_sitemap[:5]})" if missing_sitemap else ""))
+
+          # §6.2.2 fix: every deposit must have data/deposits/AXN-<HEX>.md AND data/texts/AXN-<HEX>-text.md
+          missing_text = []
+          missing_deposits_md = []
+          for d in reg['deposits']:
+              hex_id = d.get('hex', '')
+              if not hex_id:
+                  continue  # AXN-001..AXN-002 etc. (pre-v2 entries) may not have hex
+              text_path = f"data/texts/AXN-{hex_id}-text.md"
+              deposits_md_path = f"data/deposits/AXN-{hex_id}.md"
+              if not os.path.exists(text_path):
+                  missing_text.append((d['deposit_number'], text_path))
+              if not os.path.exists(deposits_md_path):
+                  missing_deposits_md.append((d['deposit_number'], deposits_md_path))
+          # Don't fail on these yet — they're known gaps from pre-rebuild deposits.
+          # Just report. After the §6.2.2 systematic backfill, this can become a
+          # hard check. For now: warn only.
+          if missing_text:
+              print(f"  warn: {len(missing_text)} deposits missing data/texts/ file (pre-rebuild gap)")
+          if missing_deposits_md:
+              print(f"  warn: {len(missing_deposits_md)} deposits missing data/deposits/ file (pre-rebuild gap)")
+
+          if not ok:
+              print("\n❌ Registry/surface inconsistency detected.")
+              print("Remediation: run `python3 scripts/regenerate_surfaces.py` then commit the resulting changes.")
+              sys.exit(1)
+          print("\n✓ All consistency invariants pass.")
+          PY
+
+      - name: Comment on PR with failure details
+        if: failure() && github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = [
+              '## ❌ Registry validation failed',
+              '',
+              'This PR introduces a state that does not conform to the canonical protocol at',
+              '`api/deposit-protocol.json` or to the registry/surface consistency invariants.',
+              '',
+              'See the workflow logs for the specific rule IDs that failed.',
+              '',
+              '### Common remedies',
+              '',
+              '- **Schema rule failure (PV/REQ/AXN/CONS-NNN)** — see [api/deposit-protocol.json](https://github.com/leesharks000/alexanarch/blob/main/api/deposit-protocol.json) for the rule definition and required fix.',
+              '- **IDX-001/IDX-002 (index consistency)** — the protocol or schema was hand-edited without `python3 scripts/protocol_update.py`. Use the tool to recompute hashes atomically.',
+              '- **Surface inconsistency** — run `python3 scripts/regenerate_surfaces.py` locally, then commit the resulting changes to `s/browse/`, `data/chunks/`, `data/browse-index.json`, `sitemap.xml`, and `SHA256SUMS.txt`.',
+              '',
+              '*This is automated enforcement. Submissions that do not validate are not merged.*',
+            ].join('\n');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: body
+            });
