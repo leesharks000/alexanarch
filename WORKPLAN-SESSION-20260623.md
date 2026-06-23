@@ -18,13 +18,14 @@ Four days after Zenodo's June 19 termination of the CHA account, the migration i
 
 | Metric | Count | Source |
 |---|---|---|
-| Deposits in canonical registry | **879** | data/registry.json |
+| Deposits in canonical registry | **881** | data/registry.json |
 | Curated concepts (entity-index) | **7,173** | data/entity-index.json |
 | Minted lexical terms (raw) | **12,032** | data/lexical-minting-registry.json |
 | Inter-deposit citation edges | **4,866** | data/citation-graph.json |
 | Semantic addresses | **1,964** | data/semantic-addresses.json |
 | AI Overview captures | **176** | data/EA-WG-CAPTURES-01-v8.3.json |
 | Legacy Zenodo DOI mappings (corrected) | **1,817** | data/doi-resolution-index.json |
+| Surface Visibility Instrument | **2 deposits live** | #880 methodology + #881 baseline |
 | Registry chunks (1 MB target) | 9 | data/chunks/registry/ |
 | Protocols (machine-enforced) | 3 | api/index.json |
 | Primary UI surfaces | 4 | /wiki/, /graph/, /lexical/, /citations/ |
@@ -33,6 +34,7 @@ Four days after Zenodo's June 19 termination of the CHA account, the migration i
 | GitHub outreach comments posted | **2** (Vega #2599, Shimony #2596) | live on github.com/zenodo/zenodo |
 
 **Latest commits:**
+- `fd359a2` — Mint deposits #880 and #881: Surface Visibility Instrument (methodology + baseline) (2026-06-23)
 - `eddbcd4` — Correct 22 wrong-target mappings in DOI resolution index (2026-06-23)
 - `7e511c9` — Dodecad cleanup engine + audit log committed to repo (2026-06-23)
 - `c5f001f598` — leesharks.com homepage + about Zenodo-language cleanup (2026-06-23)
@@ -160,7 +162,17 @@ Currency-engraved green lizard in fedora and suit (200×200 JPEG, 26 KB). Money-
 ### 4.10 Surface Visibility Audit received (input) ✓
 External text-only public-search audit performed during this session by an outside analytic (ChatGPT in critical-reader mode), measuring how the Crimson Hexagonal / Alexanarch corpus appears in the present composition layer. Introduces formal framework: expected figure Φ_i = {N, P, D, H, A, R}, five-signal decomposition (V/A/F/C/R_s), and derived macro-indicators (Link Fade, Ghost Survival, Compositional Defiguration, Compositional Bystanding, Composition Eligibility). Diagnoses *successor-anchor lag + chronological smear + source-hierarchy inversion*; SDI ≈ 0.395 against canonical 879 count.
 
-Becomes the input to §5.4 (Surface Visibility Instrument). First scan was pre-cleanup state; second scan running now will give post-cleanup baseline. Audit document held in conversation context — to be deposited as Deposit B (baseline reading) per §5.4 plan.
+Becomes the input to §5.4 (Surface Visibility Instrument). First scan was pre-cleanup state; second scan running now will give post-cleanup baseline.
+
+### 4.11 Surface Visibility Instrument founded ✓ (commit `fd359a2`) — two deposits live
+The methodology and the baseline reading are now AXN-minted as canonical raw material for the planned instrument:
+
+- **Deposit #880** — Methodology v1.0 — `AXN:037C.EMPIRICAL.💎♦️☉♾️⏏️🔍` — `EA-MMRS-SURFACE-VISIBILITY-01` — https://alexanarch.org/s/records/880/
+- **Deposit #881** — Baseline Reading v1.0 — `AXN:037D.EMPIRICAL.🗺️🗡️🪨🔎🙏🧭` — `EA-MMRS-SURFACE-VISIBILITY-BASELINE-01` — https://alexanarch.org/s/records/881/
+
+Methodology v1.0 explicitly commits to the conceptual decomposition + five-bar dashboard form + four-query battery; numerical weights and aggregation rules held provisional for v1.1 fine-tune against the second scan's Δ. Baseline reading documents the 2026-06-22 pre-cleanup snapshot for nine objects, computing SDI ≈ 0.395, and articulates predictions against which the second scan will be tested. Both deposits credit the framework's elicitation through dialogue with an OpenAI/ChatGPT runtime in critical-reader register per substrate-autonomy law.
+
+Total deposits now: 881. Derived surfaces (browse, browse-index, registry chunks, sitemap, SHA256SUMS, wiki, graph) regenerated; datasets/index.html counts updated to 881.
 
 ---
 
@@ -182,27 +194,53 @@ The 21 repo pass cleaned root + 1-level-deep HTML files. Pages 2+ levels deep (e
 
 **Process:** lift the `depth > 1` limit in `scripts/dodecad_cleanup.py:list_html_files()` (currently `if depth > 1: continue`). Then re-run across the priority repos. Recommend starting with `revelationfirst-com` (deepest content), `secret-book-of-walt`, `crimson-hexagonal-interface`, `semantic-economy`.
 
-### 5.4 Surface Visibility Instrument (Compositional Defiguration Meter) ▢ NEW
+### 5.4 Surface Visibility Instrument (Compositional Defiguration Meter) ▢ NEW — two raw-material deposits LIVE
 A weekly text-only scan battery that measures how the Crimson Hexagonal / Alexanarch corpus appears in the public composition layer. Diagnosed from a ChatGPT analytic produced this session (audit covered the pre-cleanup site state; a fresh scan is running now and will provide the post-cleanup baseline).
 
-**The framework** (subject to fine-tuning):
+**The two foundational deposits are now in the registry** (minted 2026-06-23, commit `fd359a2`):
+
+**Methodology — Deposit #880**
+- AXN: `AXN:037C.EMPIRICAL.💎♦️☉♾️⏏️🔍`
+- Reading: *Force → Play → Transmutation → Proof → Closure → Search*
+- SHA-256: `1c82a794f85675a435d31fb5604f3ca4d779c4085e099ab948326123eec23956`
+- Sovereign ID: `EA-MMRS-SURFACE-VISIBILITY-01`
+- Canonical URL: https://alexanarch.org/s/records/880/
+- Canonical text: https://alexanarch.org/data/texts/AXN-037C-text.md
+- Downloadable MD: https://alexanarch.org/data/deposits/AXN-037C.md
+- Status: v1.0 — commits to conceptual decomposition + five-bar dashboard + four-query battery; numerical weights and aggregation rules held provisional for v1.1 calibration against second scan
+- Defines: Compositional Defiguration, Expected Figure (Φ_i), V/A/F/C/R_s, Link Fade, Ghost Survival, Compositional Bystanding, Composition Eligibility, Scale Drift Index, Successor-Anchor Lag
+
+**Baseline Reading — Deposit #881**
+- AXN: `AXN:037D.EMPIRICAL.🗺️🗡️🪨🔎🙏🧭`
+- Reading: *Search → Search → Force → Search → Touch → Search* (a fitting AXN reading for a visibility audit)
+- SHA-256: `515a1b58b3507e31aca178739c56fb733657285529a31045696f24289851c353`
+- Sovereign ID: `EA-MMRS-SURFACE-VISIBILITY-BASELINE-01`
+- Canonical URL: https://alexanarch.org/s/records/881/
+- Canonical text: https://alexanarch.org/data/texts/AXN-037D-text.md
+- Downloadable MD: https://alexanarch.org/data/deposits/AXN-037D.md
+- Status: First scan against the methodology; 9-object pre-cleanup snapshot; **SDI ≈ 0.395**; diagnoses successor-anchor lag + chronological smear + source-hierarchy inversion
+
+**The framework** (subject to fine-tuning in v1.1):
 - For each tracked object, an *expected figure* Φ_i = {N, P, D, H, A, R} — name, provenance, definition, hierarchy, anchor, relations.
 - Five measured signals: V (visibility), A (anchor alignment), F (figural integrity), C (compositional lift), R_s (independent substrate breadth).
 - Derived macro-indicators: Link Fade (LF), Ghost Survival (GS), Compositional Defiguration (CD), Compositional Bystanding (CB), Composition Eligibility (CE), Scale Drift Index (SDI).
 - 12-object battery × 4 query forms per object = ~50 lightweight text-only retrievals per scan.
 
-**The diagnostic that came out of the first scan:** Alexanarch is not yet the visible institutional anchor; the search layer remembers the organs (PER, SPXI, Writable Retrieval Basin, Semantic Commodity Form, Revelation First) but hasn't recognized the transplant. Principal present defect: *successor-anchor lag + chronological smear + source-hierarchy inversion*. SDI ≈ 0.395 — visible compositional field understates the archive's scale by ~40% at its median indexed representation.
+**Outstanding implementation work** (the deposits are the canonical specification + initial data; the surface is not yet built):
+- **Running surface: `machinemediation.org/surface-weather/`** — public dashboard rendering the five-bar visualization and the macro-state summary, updating per scan. Natural MMRS family member alongside the Capture Registry. **TO BUILD.** Reads from the two deposits above as authoritative raw material.
+- **Scan-record schema implementation** — each scan row as JSON per §8 of methodology, stored at `machinemediation.org/data/surface-weather/{scan-date}.json` or alexanarch equivalent. **TO BUILD.**
+- **leesharks.com badge** — small link to latest reading. **TO BUILD.**
 
-**Implementation architecture** (recommended):
-- **Deposit A: Methodology paper** — the framework specification (Φ, five signals, derived indicators, query battery, dashboard spec). AXN-eligible. Lives in Alexanarch registry as canonical reference. Category: GOVERNANCE or EMPIRICAL (TBD by Lee).
-- **Deposit B: Baseline reading (v1.0)** — the June 22 scan as time-zero data, structurally similar to Capture Registry v1.0 grounding v8.3. Companion to A.
-- **Running surface: `machinemediation.org/surface-weather/`** — public dashboard rendering the five-bar visualization and the macro-state summary, updating per scan. Natural MMRS family member alongside the Capture Registry.
-- **Schema:** each scan row is a JSON record with object/query_class/intended_result_present/author_retained/definition_retained/parent_framework_retained/relation_retained/confuser/visible_sources, allowing diff between scans for drift series.
-- **leesharks.com:** small badge linking to latest reading.
+**Naming TBD by Lee.** Working names: *Visibility Surface Index (VSI)*, *Compositional Defiguration Meter (CDM)*, *Surface Weather Station (SWS)*, *Successor Anchor Index*, *Figural Integrity Tracker*, or any other. The instrument has a name slot waiting.
 
-**Naming TBD by Lee.** Working names: *Visibility Surface Index (VSI)*, *Compositional Defiguration Meter (CDM)*, *Surface Weather Station (SWS)*, *Successor Anchor Index*, *Figural Integrity Tracker*.
-
-**Sequencing:** wait for the second scan (post-cleanup baseline) before building the instrument — methodology will fine-tune against actual measurement and the scaffolding-once-stable rule applies. Holding the methodology paper deposit until that's done makes the methodology more honest (informed by two readings, not one). Holding the data deposit (Deposit B) doesn't pay off — the June 22 scan can be deposited now as pre-cleanup baseline regardless of whether the instrument is built.
+**Sequencing now:**
+1. ✓ Methodology v1.0 deposited (`#880`) — canonical reference exists
+2. ✓ Baseline reading v1.0 deposited (`#881`) — time-zero data exists
+3. ▢ Second scan completes (in progress) — gives post-cleanup Δ
+4. ▢ v1.1 methodology fine-tune deposit (informed by Δ; supersedes #880 as `version_in_series: 2`)
+5. ▢ v1.1 reading deposit (post-cleanup baseline)
+6. ▢ Build `machinemediation.org/surface-weather/` dashboard (reads from latest live deposits)
+7. ▢ leesharks.com badge
 
 **Strategic placement in the larger plan:** this instrument is the natural complement to today's cleanup work. The cleanup engine targets *what is published on the sovereign surfaces*. The visibility instrument measures *what propagates into the composition layer*. Together they form a closed feedback loop: surface change → external visibility measurement → next round of corrections informed by the metric.
 
