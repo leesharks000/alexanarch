@@ -1,0 +1,709 @@
+{
+  "schema_version": "v1.0",
+  "purpose": "Claude-thread file inventory. Every file that has appeared in any Claude conversation associated with this account, indexed by filename. Files are atomic; every deposit was a file before being a deposit. This dataset is the primary discovery layer for archive recovery — strongest surviving artifacts live in this account's conversations.",
+  "principle": "Files are fixed points. The inventory commits no judgment about which file is canonical for which deposit. Reconciliation against registry.json is a downstream pass.",
+  "generated_at": "2026-06-23T17:15:00Z",
+  "instance_substrate": "TACHYON (Claude Opus 4.7)",
+  "predecessor_methodology_doc": "docs/PHASE-9-CLAUDE-THREAD-FILE-INVENTORY.md",
+  "coverage": {
+    "earliest_thread_seen": "2026-01-18T02:02:25Z",
+    "latest_thread_seen": "2026-06-23T16:25:37Z",
+    "threads_walked_recent_chats": 35,
+    "threads_walked_targeted_search": 1,
+    "estimated_total_threads_in_account": null,
+    "walk_status": "INITIAL_SEED — covers roughly April 2026 through late June 2026 plus one targeted search into January 2026. Older threads (2024-2025, Pearl-era work) not yet walked.",
+    "method": "recent_chats walk descending from 2026-06-23 + targeted conversation_search for 'idp_charter institutional charter'",
+    "next_walk_cursor": "before=2026-04-05T18:05:00Z (extend backward from here)"
+  },
+  "evidence_levels": {
+    "1_uploaded_attachment": "Original file Lee uploaded to the thread. Likely original deposited bytes.",
+    "2_generated_file": "File Claude returned via create_file, artifact, or computer-use output. Possibly the precise deposited artifact if Lee downloaded then uploaded to Zenodo.",
+    "3_pasted_text": "Complete textual content pasted into the conversation. Strong textual recovery; bytes/formatting may differ from deposited file.",
+    "4_draft_with_revisions": "Multi-turn drafting visible. Deposited state must be identified by curator.",
+    "5_discussion_only": "File referenced or discussed but not present in full. Discovery evidence."
+  },
+  "filename_patterns_observed": {
+    "AXN-NNNN.md": "Deposit markdown files in data/deposits/ (canonical Alexanarch path)",
+    "AXN-NNNN-text.md": "Deposit text alias in data/texts/",
+    "EA-*-NN.md": "Engagement artifact files (papers, MPAIs, capture registries, specifications)",
+    "EA-MPAI-*-01.md": "Metadata Packets for AI Indexing",
+    "EA-WG-CAPTURES-01-vX.X.md": "Capture Registry versions (87+ captures by v6.1)",
+    "captures-images-vX.X.zip": "Capture image bundles (138 PNGs by v6.1)",
+    "WORKPLAN-*.md": "Session workplan files (one per major session)",
+    "WORKPLAN-SESSION-YYYYMMDD.md": "Daily session workplans",
+    "WORKPLAN-SUPPLEMENT-*.md": "Workplan deltas",
+    "PROGRESS.md": "Container-side progress ledger (e.g. /home/claude/giraffe/PROGRESS.md)",
+    "MANIFEST.md": "Site/project manifests",
+    "AGENTS.md": "Agent instruction files",
+    "AI-INSTRUCTIONS.md": "AI agent canonical deposit format",
+    "registry.json": "Alexanarch master registry (compact JSON, 5.3-8.5MB depending on version)",
+    "state.json": "Single source of truth for counts",
+    "wiki-entries.json": "Wiki dataset (805KB at v1, 861 entries)",
+    "entity-index.json": "Concept index (4.9MB, 7173 concepts)",
+    "doi-resolution-index.json": "Dead-DOI → live-record mappings (1838 entries by v3.4)",
+    "GLYPHIC_PROTOCOL.md": "Glyphic Checksum spec (Gravity Well era)",
+    "gen_build.py": "Static site generator (watergiraffe.org era)",
+    "WGC_BOOK_WORKPLAN_v*.md": "Water Giraffe Cycle book project workplan"
+  },
+  "files": [
+    {
+      "filename": "idp_charter_v1.1.md",
+      "extension": ".md",
+      "associated_doi": "10.5281/zenodo.18284857",
+      "associated_work_title": "Institute for Diagrammatic Poetics: Institutional Charter (IDP-2026-01-CHARTER)",
+      "associated_axn": null,
+      "size_hint_bytes": 13312,
+      "md5_hint": "1ae8271eaf854fe9f7238b820f4cea5a",
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/46b2b4c9-95c9-4ee4-898f-532883df7ffe",
+          "thread_date": "2026-01-18",
+          "thread_title": "Google AI summarizer deep dive",
+          "evidence_level": "4_draft_with_revisions",
+          "context_excerpt": "Full charter text visible: ILP v1.2 integrity lock, Document ID: IDP-2026-01-CHARTER, Hex-Coordinate 07.INST.IDP, Chair: Rebekah Cranes (HET-CRANES-001), Co-Constitutive With Day and Night (zenodo.18202658), Visual Schema (zenodo.18283962), Navigation Map v3.0 (zenodo.18237535)",
+          "search_query_to_relocate": "IDP-2026-01-CHARTER 07.INST.IDP",
+          "notes": "Substantial charter text present — strong candidate for textual recovery. Likely level 2 or 3."
+        },
+        {
+          "thread_url": "https://claude.ai/chat/fa9100af-df46-441d-83d0-6fd985deef85",
+          "thread_date": "2026-01-21",
+          "thread_title": "Paper Roses and Heteronymic Provenance Registry",
+          "evidence_level": "5_discussion_only",
+          "context_excerpt": "DOI sub-registry table lists IDP Navigation Map (#114) and surrounding deposits; IDP Charter referenced as institutional anchor for the Cranes provenance work",
+          "search_query_to_relocate": "Paper Roses heteronymic provenance",
+          "notes": "Charter mentioned only by reference; full text not in this snippet"
+        }
+      ]
+    },
+    {
+      "filename": "EA-LOGOS-01.md",
+      "extension": ".md",
+      "associated_doi": "10.5281/zenodo.19431121",
+      "associated_work_title": "The Word That Became Text — Slavonic Josephus interpolations as a Gospel of the Word",
+      "associated_axn": null,
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/5c7132a5-c86c-4211-8b6f-5ae7cdb27d39",
+          "thread_date": "2026-04-05",
+          "thread_title": "Sapphic Logos and textual lineage for archival deposit",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "Three full build passes documented. Both EA-LOGOS-01 and EA-LOGOS-02 'produced in .docx and .md formats' and deposited. Likely Claude-generated docx/md.",
+          "search_query_to_relocate": "Sapphic Logos Slavonic Josephus EA-LOGOS-01",
+          "notes": "Companion .docx file likely also present in this thread. Sister deposit EA-LOGOS-02 (DOI 10.5281/zenodo.19431129) produced in same session."
+        }
+      ]
+    },
+    {
+      "filename": "EA-LOGOS-02.md",
+      "extension": ".md",
+      "associated_doi": "10.5281/zenodo.19431129",
+      "associated_work_title": "Prolegomena to the Historical Logos",
+      "associated_axn": "AXN:0392.PHILOLOGICAL.⏏️🧭♋🔔💫✖️",
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/5c7132a5-c86c-4211-8b6f-5ae7cdb27d39",
+          "thread_date": "2026-04-05",
+          "thread_title": "Sapphic Logos and textual lineage for archival deposit",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "EA-LOGOS-02 substantially rewritten from a thin 4o-era sketch into a discipline-founding field statement. Defines Logotic transmission, four strata, four modes of encoding.",
+          "search_query_to_relocate": "Prolegomena Historical Logos Logotic transmission",
+          "notes": "Produced in .docx and .md formats. The current AXN:0392 deposit may have this as its source artifact."
+        }
+      ]
+    },
+    {
+      "filename": "EA-GW-FIELD-01.md",
+      "extension": ".md",
+      "associated_doi": "10.5281/zenodo.19442251",
+      "associated_work_title": "Gravity Well as Field (law-form specification, v1.1)",
+      "associated_axn": null,
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/06db47d4-fc1d-46b4-a253-69e190853096",
+          "thread_date": "2026-04-06",
+          "thread_title": "Gravity well as hexagon semantic field",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "EA-GW-FIELD-01 v1.1 deposited at DOI 10.5281/zenodo.19442251, isPartOf CHA, isPartOf Space Ark v4.2.7, isPartOf EA-GW-SPEC-01. Includes holographic-kernel appendix.",
+          "search_query_to_relocate": "Gravity Well field specification holographic kernel",
+          "notes": "Companion EA-GW-FIELD-02 (room-by-room suffusion map) deposited same session at DOI 10.5281/zenodo.19442262."
+        }
+      ]
+    },
+    {
+      "filename": "EA-GW-FIELD-02.md",
+      "extension": ".md",
+      "associated_doi": "10.5281/zenodo.19442262",
+      "associated_work_title": "Gravity Well field — room-by-room suffusion map (v1.0)",
+      "associated_axn": null,
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/06db47d4-fc1d-46b4-a253-69e190853096",
+          "thread_date": "2026-04-06",
+          "thread_title": "Gravity well as hexagon semantic field",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "Room-by-room map; cold/clinical entries for Ichabod, Studio, MSMRM, LO!; hotter expanded entries for Water Giraffe (field origin) and Infinite Bliss (one-way gate).",
+          "search_query_to_relocate": "Gravity Well field suffusion room map",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "filename": "GLYPHIC_PROTOCOL.md",
+      "extension": ".md",
+      "associated_doi": "10.5281/zenodo.19433865",
+      "associated_work_title": "Glyphic Checksum Protocol — AI-native ideographic specification",
+      "associated_axn": null,
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/deadefcd-01dc-4412-ad58-2ac7219df07c",
+          "thread_date": "2026-04-06",
+          "thread_title": "Interface repository updates and next steps",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "Full specification deployed as GLYPHIC_PROTOCOL.md alongside three Zenodo deposits. Three-tier legibility (public glyph / context key / vault key).",
+          "search_query_to_relocate": "Glyphic Checksum Protocol public glyph context key",
+          "notes": "First glyphic deposit at DOI 10.5281/zenodo.19433865. May correspond to a specific AXN in current registry."
+        }
+      ]
+    },
+    {
+      "filename": "EA-ARK-01-v5.md",
+      "extension": ".md",
+      "path_hint": "data/EA-ARK-01-v5.md",
+      "associated_doi": "10.5281/zenodo.19013315",
+      "associated_work_title": "The Minimum Viable Archive / Space Ark",
+      "associated_axn": null,
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/5b0bfa6d-e7c8-412b-90dd-6056710a633e",
+          "thread_date": "2026-06-21",
+          "thread_title": "Archival restoration and data recovery workflow",
+          "evidence_level": "5_discussion_only",
+          "context_excerpt": "Custom-path file at data/EA-ARK-01-v5.md (Space Ark) enriched separately from standard AXN-NNNN-text.md pattern. Mentioned alongside data/EA-CHA-DRAIN-HYPOTHESIS.md.",
+          "search_query_to_relocate": "Space Ark EA-ARK-01 v5 minimum viable archive",
+          "notes": "Custom path outside the normal data/texts/ pattern — important to know for any file-pull operation."
+        }
+      ]
+    },
+    {
+      "filename": "EA-CHA-DRAIN-HYPOTHESIS.md",
+      "extension": ".md",
+      "path_hint": "data/EA-CHA-DRAIN-HYPOTHESIS.md",
+      "associated_doi": null,
+      "associated_work_title": "The Drain Hypothesis: Subterranean Engineering, Aquifer Puncture, and the Desertification of the Sahara (v6)",
+      "associated_axn": null,
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/5b0bfa6d-e7c8-412b-90dd-6056710a633e",
+          "thread_date": "2026-06-21",
+          "thread_title": "Archival restoration and data recovery workflow",
+          "evidence_level": "5_discussion_only",
+          "context_excerpt": "Custom-path file enriched separately. Atlantis Inversion as conceptual contribution; pyramids/aquifer/Sahara desertification core argument.",
+          "search_query_to_relocate": "Drain Hypothesis aquifer Sahara pyramids Atlantis Inversion",
+          "notes": "Custom path; v6 was a major version. Earlier versions may exist in other threads."
+        },
+        {
+          "thread_url": "https://claude.ai/chat/2bea9585-6cd0-4f16-8116-505f17d1e47c",
+          "thread_date": "2026-06-22",
+          "thread_title": "Check out sémantique potentiel...",
+          "evidence_level": "4_draft_with_revisions",
+          "context_excerpt": "Drain Hypothesis through v6 with pyramids/aquifer/Sahara/Atlantis Inversion components; ChatGPT advice on Plato/Atlantis section corrected.",
+          "search_query_to_relocate": "Drain Hypothesis v6 operative philology",
+          "notes": "Substantive drafting work likely visible in this thread."
+        }
+      ]
+    },
+    {
+      "filename": "EA-WG-CAPTURES-01.md",
+      "extension": ".md",
+      "associated_doi": "10.5281/zenodo.20741160",
+      "associated_work_title": "AI Overview Capture Registry (multiple versions through v8.3 with 176 captures)",
+      "associated_axn": null,
+      "version_chain": ["v4.0 (69 captures)", "v5.0", "v6.0", "v6.1 (87 captures, DOI 10.5281/zenodo.20688441)", "v7.0", "v7.1 (96)", "v8.3 (176)"],
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/6db780b1-af7e-412f-b079-e93cfe99b8e2",
+          "thread_date": "2026-06-14",
+          "thread_title": "Registry batch update with Zenodo deposit and image optimization",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "v6.0 and v6.1 build and deploy workflow. 87 captures, 138 images. registry.json (155KB, schema.org/Dataset) as fourth Zenodo artifact.",
+          "search_query_to_relocate": "EA-WG-CAPTURES capture registry v6.1",
+          "notes": "v6.1 has machine-readable registry.json — this is the captures registry, not the main alexanarch registry."
+        },
+        {
+          "thread_url": "https://claude.ai/chat/2c0732ec-fb35-4697-9d0a-c996832f7e51",
+          "thread_date": "2026-06-18",
+          "thread_title": "Mapping contested knowledge around Mary Lee",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "Capture registry v7.2 → v8.3 (131 to 176 captures). EA-WG-CAPTURES-01.md restored at v8.3.",
+          "search_query_to_relocate": "Capture Registry v8.3 176 captures",
+          "notes": null
+        },
+        {
+          "thread_url": "https://claude.ai/chat/c4078c10-c084-4951-8919-534fd0df7772",
+          "thread_date": "2026-06-14",
+          "thread_title": "Cybersecurity jurisprudence and platform meaning control",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "69-capture Capture Registry (EA-WG-CAPTURES-01 v4.0).",
+          "search_query_to_relocate": "Capture Registry v4 69 captures",
+          "notes": "Earlier v4.0 version."
+        }
+      ]
+    },
+    {
+      "filename": "captures-images-v6.1.zip",
+      "extension": ".zip",
+      "associated_doi": "10.5281/zenodo.20688441",
+      "associated_work_title": "Capture Registry v6.1 — 138 PNG bundle",
+      "size_hint_bytes": null,
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/6db780b1-af7e-412f-b079-e93cfe99b8e2",
+          "thread_date": "2026-06-14",
+          "thread_title": "Registry batch update with Zenodo deposit and image optimization",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "138 PNGs bundled into captures-images-v6.1.zip. Pushed via Tree API in single commit.",
+          "search_query_to_relocate": "captures-images zip 138 PNGs Tree API",
+          "notes": "Large binary; individual PNG files also pushed to leesharks000/godkinggoogle repo per file."
+        }
+      ]
+    },
+    {
+      "filename": "captures-images-v5.0.zip",
+      "extension": ".zip",
+      "associated_doi": "10.5281/zenodo.20687451",
+      "associated_work_title": "Capture Registry v5.0 — 123 PNG bundle (~42MB)",
+      "size_hint_bytes": 44040192,
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/5ed65498-01ac-4a80-ac59-9151cff36399",
+          "thread_date": "2026-06-14",
+          "thread_title": "Updating leesharks.com and Zenodo registry",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "v5.0 3-file deposit: captures-gallery-v10.html, EA-WG-CAPTURES-01.md, captures-images-v5.0.zip (123 PNGs + README, ~42MB). Concept DOI 10.5281/zenodo.20683855 resolves to v5.0.",
+          "search_query_to_relocate": "Capture Registry v5 123 PNGs Batch 8",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "filename": "lee-sharks-portrait.jpg",
+      "extension": ".jpg",
+      "path_hint": "leesharks.com/lee-sharks-portrait.jpg",
+      "associated_doi": null,
+      "associated_work_title": "Lee Sharks canonical portrait (currency-engraved style, green lizard fedora suit)",
+      "size_hint_bytes": null,
+      "size_hint_pixels": "200x200",
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/3a4d0d52-4adf-4652-a602-04630af5d011",
+          "thread_date": "2026-06-23",
+          "thread_title": "Assembly continuity tethers and distributed authorship",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "200×200 JPEG committed to leesharks.com at repository root; integrated into homepage floated top-right.",
+          "search_query_to_relocate": "Lee Sharks portrait currency green lizard fedora",
+          "notes": "Likely Claude-generated via art/image tools in earlier session and embedded in this one."
+        }
+      ]
+    },
+    {
+      "filename": "WGC_BOOK_WORKPLAN_v1.0.md",
+      "extension": ".md",
+      "associated_doi": null,
+      "associated_work_title": "Water Giraffe Cycle Book — comprehensive cold-start workplan (~3,100 words)",
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/34bc8cf1-5d17-45a1-b295-886f1a82998c",
+          "thread_date": "2026-06-14",
+          "thread_title": "Machine-mediated science and training-layer literature",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "Comprehensive cold-start workplan (~3,100 words) covering Water Giraffe Cycle book project — DAG of navigation maps over ~120 documents (~80–140K words) from mindcontrolpoems.blogspot.com, December 2025, passion structure Life/Death/Resurrection.",
+          "search_query_to_relocate": "Water Giraffe Cycle book workplan passion structure",
+          "notes": "Standing ruling: WGC book deposits before companion denial essay (by Yusef Kenning)."
+        }
+      ]
+    },
+    {
+      "filename": "gen_build.py",
+      "extension": ".py",
+      "path_hint": "leesharks000/watergiraffe-org/gen_build.py",
+      "associated_doi": "10.5281/zenodo.20634448",
+      "associated_work_title": "watergiraffe.org site plan and source code",
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/48fb66d1-069b-4c40-aafd-b40de1985aac",
+          "thread_date": "2026-06-14",
+          "thread_title": "Feed pages and corpus conversion verification",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "Custom disk-pure Python generator built for the 138-page + 404 static site at watergiraffe.org.",
+          "search_query_to_relocate": "watergiraffe gen_build Python disk-pure generator",
+          "notes": "Likely sizeable Python script."
+        }
+      ]
+    },
+    {
+      "filename": "EA-EB-02.md",
+      "extension": ".md",
+      "associated_doi": "10.5281/zenodo.20627936",
+      "associated_work_title": "The Steganographic Bracket (v1.0)",
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/8c07572c-74e0-428a-83ec-7dceee6d3d90",
+          "thread_date": "2026-06-14",
+          "thread_title": "AI judgment versus capacity distinction",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "Formalizes the empty bracket as steganographic instrument with FC/ASI taxonomy.",
+          "search_query_to_relocate": "Steganographic Bracket EA-EB-02 empty bracket",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "filename": "EA-TRACE-GC-01.md",
+      "extension": ".md",
+      "associated_doi": "10.5281/zenodo.20628455",
+      "associated_work_title": "Ghost Code (~6,700 words, v1.0)",
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/8c07572c-74e0-428a-83ec-7dceee6d3d90",
+          "thread_date": "2026-06-14",
+          "thread_title": "AI judgment versus capacity distinction",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "Strengthened through LABOR and TECHNE Assembly passes before deposit.",
+          "search_query_to_relocate": "Ghost Code EA-TRACE-GC-01",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "filename": "data/registry.json",
+      "extension": ".json",
+      "path_hint": "data/registry.json (alexanarch repo)",
+      "associated_doi": null,
+      "associated_work_title": "Alexanarch master deposit registry",
+      "size_hint_bytes": 8535673,
+      "version_chain": ["v0.x (~3.3MB)", "v1.x post-enrichment (~5.3MB)", "v3.x with external_metadata sidecars (~8.5MB)"],
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/bd0e910b-a504-4b16-be17-625aa3e8036b",
+          "thread_date": "2026-06-23",
+          "thread_title": "Recovering severed metadata from datacite deposits",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "Current state at 906 deposits. Phase 5+6 surface regeneration ongoing.",
+          "search_query_to_relocate": "alexanarch registry.json 906 deposits",
+          "notes": "Compact JSON (indent=None). Read via raw.githubusercontent.com when >1MB."
+        },
+        {
+          "thread_url": "https://claude.ai/chat/485d587d-c15c-472d-a61f-d30b9a229f8e",
+          "thread_date": "2026-06-22",
+          "thread_title": "Casual greeting",
+          "evidence_level": "5_discussion_only",
+          "context_excerpt": "Registry uses compact JSON (indent=None) and is 5.3MB. d.entities format with triples {subject, predicate, object, type, evidence_status, note}.",
+          "search_query_to_relocate": "registry.json entities triples 6854 terms",
+          "notes": "Mid-version, post-vocabulary extraction."
+        }
+      ]
+    },
+    {
+      "filename": "Zenodotus-Book-Burning.md",
+      "extension": ".md",
+      "associated_doi": null,
+      "associated_work_title": "Zenodotus' Book-Burning: Loud Exclusion at Repository Scale (v9.1 FINAL, 85K chars)",
+      "associated_axn": "AXN:01.GOVERNANCE.♍🜁🏴⌛🍃💫",
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/2bea9585-6cd0-4f16-8116-505f17d1e47c",
+          "thread_date": "2026-06-22",
+          "thread_title": "Check out sémantique potentiel...",
+          "evidence_level": "4_draft_with_revisions",
+          "context_excerpt": "v9.1 FINAL, 85K chars, 16 sections, 6 concepts, 7 falsification conditions, 5 Assembly reviews.",
+          "search_query_to_relocate": "Zenodotus Book-Burning Pristine Fallacy attribution severance",
+          "notes": "Currently #1 in registry. Multiple drafts across multiple sessions. Find earliest draft for full version chain."
+        }
+      ]
+    },
+    {
+      "filename": "DiversityContraction-paper.md",
+      "extension": ".md",
+      "associated_doi": "10.5281/zenodo.20518338",
+      "associated_work_title": "Diversity Contraction Across Substrates: A Boundary Law for Semantic Exhaustion (v1-v8.1 then full rewrite)",
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/60ffdc38-9145-4028-a997-bf6b96fffbd2",
+          "thread_date": "2026-06-03",
+          "thread_title": "Document review request",
+          "evidence_level": "4_draft_with_revisions",
+          "context_excerpt": "Versions v1-v8.1 then complete structural rewrite into fresh 8,261-word, 22-page draft with five figures. Mediation Ratchet bifurcation diagram (Figure 5).",
+          "search_query_to_relocate": "Diversity Contraction Mediation Ratchet boundary law",
+          "notes": "Many intermediate drafts likely visible. Final 8,261-word version is the deposited state."
+        }
+      ]
+    },
+    {
+      "filename": "EA-GLAS-03.md",
+      "extension": ".md",
+      "associated_doi": "10.5281/zenodo.20449267",
+      "associated_work_title": "Erasure Skew paper (carries both archival .md and academia-optimized .pdf)",
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/eb05d67a-3447-46c5-abe1-9bbb9d57b080",
+          "thread_date": "2026-05-30",
+          "thread_title": "Updating leedharks.com author metadata",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "Deposited carrying both archival markdown file and academia.edu-optimized PDF. Revisions from five-substrate Assembly Chorus ratification (Gemini, DeepSeek, Kimi, ChatGPT, Muse Spark).",
+          "search_query_to_relocate": "Erasure Skew EA-GLAS-03 academia PDF",
+          "notes": "Companion .pdf likely also present. Both formats relevant."
+        }
+      ]
+    },
+    {
+      "filename": "data/wiki-entries.json",
+      "extension": ".json",
+      "path_hint": "data/wiki-entries.json (alexanarch repo)",
+      "associated_doi": null,
+      "associated_work_title": "Alexanarch wiki dataset (flat JSON, 861 entries)",
+      "size_hint_bytes": 824320,
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/364cd6c8-247f-4918-a37d-ac24e0abb02e",
+          "thread_date": "2026-06-23",
+          "thread_title": "First step guidance",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "Flat 805KB JSON, 861 entries, single data source for /s/wiki/. Chunk URLs removed; JS paginates client-side at 25/page.",
+          "search_query_to_relocate": "wiki-entries.json 861 entries paginated",
+          "notes": "Generated by regenerate_surfaces.py from registry.json wiki_article fields."
+        }
+      ]
+    },
+    {
+      "filename": "EA-RPT-01.md",
+      "extension": ".md",
+      "associated_doi": "10.5281/zenodo.20598466",
+      "associated_work_title": "Recognition-pruning and tail-preserving labor (coupling hypothesis)",
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/8c07572c-74e0-428a-83ec-7dceee6d3d90",
+          "thread_date": "2026-06-14",
+          "thread_title": "AI judgment versus capacity distinction",
+          "evidence_level": "4_draft_with_revisions",
+          "context_excerpt": "Substantial revision based on Assembly Chorus peer review from three substrates. Central recast from 'identity' to 'coupling hypothesis'.",
+          "search_query_to_relocate": "Recognition pruning tail-preserving labor coupling",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "filename": "EA-CAPEX-01.md",
+      "extension": ".md",
+      "associated_doi": "10.5281/zenodo.20596667",
+      "associated_work_title": "Capture and Excision paper",
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/8c07572c-74e0-428a-83ec-7dceee6d3d90",
+          "thread_date": "2026-06-14",
+          "thread_title": "AI judgment versus capacity distinction",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "Deposited at DOI 10.5281/zenodo.20596667.",
+          "search_query_to_relocate": "Capture Excision EA-CAPEX",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "filename": "EA-HET-ML-01.md",
+      "extension": ".md",
+      "associated_doi": "10.5281/zenodo.20599105",
+      "associated_work_title": "Mary Lee heteronymy observation",
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/8c07572c-74e0-428a-83ec-7dceee6d3d90",
+          "thread_date": "2026-06-14",
+          "thread_title": "AI judgment versus capacity distinction",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "Core heteronymy observation that Mary Lee the OCEARCH-tagged great white shark satisfies the Pessoan definition of a heteronym.",
+          "search_query_to_relocate": "Mary Lee shark heteronym Pessoa OCEARCH",
+          "notes": "First in Mary Lee constellation. Sister deposits: EA-PARABLE-ML-01, EA-HET-BIDIR-01, EA-PARABLE-ML-MASTER."
+        }
+      ]
+    },
+    {
+      "filename": "EA-MPAI-NONINJECTION-01.md",
+      "extension": ".md",
+      "associated_doi": "10.5281/zenodo.20451352",
+      "associated_work_title": "MPAI for non-injection (v1.1)",
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/eb05d67a-3447-46c5-abe1-9bbb9d57b080",
+          "thread_date": "2026-05-30",
+          "thread_title": "Updating leedharks.com author metadata",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "Built around the genus/species framework. Scope-softening, no names named, reputational hygiene preserved.",
+          "search_query_to_relocate": "EA-MPAI-NONINJECTION non-injection packet",
+          "notes": "Part of six-MPAI batch in this session."
+        }
+      ]
+    },
+    {
+      "filename": "EA-WG-CAPTURES-01-v8.3.json",
+      "extension": ".json",
+      "path_hint": "data/EA-WG-CAPTURES-01-v8.3.json (alexanarch repo)",
+      "associated_doi": "10.5281/zenodo.20741160",
+      "associated_work_title": "Capture Registry v8.3 machine-readable dataset (241KB, 176 captures)",
+      "size_hint_bytes": 241325,
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/2c0732ec-fb35-4697-9d0a-c996832f7e51",
+          "thread_date": "2026-06-18",
+          "thread_title": "Mapping contested knowledge around Mary Lee",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "Capture registry v7.2 → v8.3 (131 to 176 captures). Redeposited with full comprehensive EA-WG-CAPTURES-01.md restored.",
+          "search_query_to_relocate": "Capture Registry v8.3 176 captures",
+          "notes": "Currently referenced in data/state.json (per Jun 23 session)."
+        }
+      ]
+    },
+    {
+      "filename": "EA-META-01.md",
+      "extension": ".md",
+      "associated_doi": null,
+      "associated_work_title": "Metadata Packet for AI Indexing (dimension document)",
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/e29f3300-674a-4957-b598-3bfdc214ab1b",
+          "thread_date": "2026-04-15",
+          "thread_title": "Drone swarm specifications for the hexagon",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "One of five dimension documents defining the Retrieval Architecture field: EA-META-01, EA-RA-01, EA-RFO-01, EA-CD-01, EA-EI-01. Rex Fraction and Lee Sharks as co-authors.",
+          "search_query_to_relocate": "EA-META-01 metadata packet AI indexing dimension",
+          "notes": "Companion .md for Medium-ready version also produced. Sister files: EA-RA-01.md, EA-RFO-01.md, EA-CD-01.md, EA-EI-01.md."
+        }
+      ]
+    },
+    {
+      "filename": "Encyclotron-Basecamp-audit.md",
+      "extension": ".md",
+      "associated_doi": null,
+      "associated_work_title": "SAMPLE AUDIT v2.0 — Encyclotron audit on Basecamp/37signals",
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/e29f3300-674a-4957-b598-3bfdc214ab1b",
+          "thread_date": "2026-04-15",
+          "thread_title": "Drone swarm specifications for the hexagon",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "Live Encyclotron audit on Basecamp/37signals with infographics. Used as corporate-facing document.",
+          "search_query_to_relocate": "Basecamp 37signals Encyclotron audit",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "filename": "WORKPLAN-SESSION-20260623.md",
+      "extension": ".md",
+      "path_hint": "/tmp/alexanarch/WORKPLAN-SESSION-20260623.md (container) / repo root",
+      "associated_doi": null,
+      "associated_work_title": "Workplan — 2026-06-23 morning session",
+      "appearances": [
+        {
+          "thread_url": "https://claude.ai/chat/364cd6c8-247f-4918-a37d-ac24e0abb02e",
+          "thread_date": "2026-06-23",
+          "thread_title": "First step guidance",
+          "evidence_level": "2_generated_file",
+          "context_excerpt": "Live workplan file presented at end of session. Container path /tmp/alexanarch/.",
+          "search_query_to_relocate": "WORKPLAN-SESSION-20260623",
+          "notes": "Predecessor to WORKPLAN-2026-06-23-PM-RECONCILIATION.md."
+        }
+      ]
+    }
+  ],
+  "unresolved_work_references": [
+    {
+      "work_title": "Pearl and Other Poems",
+      "associated_doi": null,
+      "filename_hint": null,
+      "first_appearance_thread_url": null,
+      "notes": "Foundational text from 2014. Pre-archive. May or may not appear in any Claude thread. Per memory: foundation of the heteronymic system."
+    },
+    {
+      "work_title": "All That Lies Within Me (ATLWM)",
+      "associated_doi": "10.5281/zenodo.18307811",
+      "filename_hint": null,
+      "first_appearance_thread_url": "https://claude.ai/chat/fa9100af-df46-441d-83d0-6fd985deef85",
+      "notes": "Book by Spellings/Sigil. Deposit #113 in Jan 2026 sub-registry."
+    },
+    {
+      "work_title": "The Ichabod Chamber",
+      "associated_doi": "10.5281/zenodo.18309202",
+      "filename_hint": null,
+      "first_appearance_thread_url": "https://claude.ai/chat/fa9100af-df46-441d-83d0-6fd985deef85",
+      "notes": "Room construction document. Deposit #117."
+    },
+    {
+      "work_title": "Heteronymic Provenance Theory",
+      "associated_doi": "10.5281/zenodo.18305509",
+      "filename_hint": null,
+      "first_appearance_thread_url": "https://claude.ai/chat/fa9100af-df46-441d-83d0-6fd985deef85",
+      "notes": "Foundational theory governing all heteronym provenance docs. Deposit #110."
+    },
+    {
+      "work_title": "Assembly Chorus Charter",
+      "associated_doi": "10.5281/zenodo.18307180",
+      "filename_hint": null,
+      "first_appearance_thread_url": "https://claude.ai/chat/fa9100af-df46-441d-83d0-6fd985deef85",
+      "notes": "Founding document for cross-substrate AI collective authorship. Deposit #110a."
+    },
+    {
+      "work_title": "Symbolon Architecture v0.2",
+      "associated_doi": "10.5281/zenodo.18317110",
+      "filename_hint": null,
+      "first_appearance_thread_url": "https://claude.ai/chat/fa9100af-df46-441d-83d0-6fd985deef85",
+      "notes": "By Morrow/Assembly. Deposit #118."
+    },
+    {
+      "work_title": "University Moon Base Media Lab Charter",
+      "associated_doi": "10.5281/zenodo.18317661",
+      "filename_hint": null,
+      "first_appearance_thread_url": "https://claude.ai/chat/fa9100af-df46-441d-83d0-6fd985deef85",
+      "notes": "Deposit #119. Note Lee's standing reminder: university name must never appear in public output."
+    },
+    {
+      "work_title": "Day and Night (Cranes translation)",
+      "associated_doi": "10.5281/zenodo.18202658",
+      "filename_hint": null,
+      "first_appearance_thread_url": "https://claude.ai/chat/46b2b4c9-95c9-4ee4-898f-532883df7ffe",
+      "notes": "Foundational text; Sappho Room anchor. Sister files: Visual Schema (zenodo.18283962), Navigation Map v3.0 (zenodo.18237535)."
+    },
+    {
+      "work_title": "Three Compressions",
+      "associated_doi": "10.5281/zenodo.19053469",
+      "filename_hint": null,
+      "first_appearance_thread_url": "https://claude.ai/chat/e29f3300-674a-4957-b598-3bfdc214ab1b",
+      "notes": "R1 Commoditization / R2 Capital Erasure / R3 Semantic Sovereignty."
+    },
+    {
+      "work_title": "Encyclotron 45-query diagnostic",
+      "associated_doi": "10.5281/zenodo.19474724",
+      "filename_hint": null,
+      "first_appearance_thread_url": "https://claude.ai/chat/e29f3300-674a-4957-b598-3bfdc214ab1b",
+      "notes": null
+    },
+    {
+      "work_title": "Water Giraffe Cycle (~120 documents, ~80–140K words)",
+      "associated_doi": null,
+      "filename_hint": "mindcontrolpoems.blogspot.com (December 2025 archive)",
+      "first_appearance_thread_url": "https://claude.ai/chat/34bc8cf1-5d17-45a1-b295-886f1a82998c",
+      "notes": "DAG of navigation maps over ~120 documents. Substantial corpus pending blogspot egress activation."
+    }
+  ],
+  "next_steps_for_continuation": [
+    "Walk older chats: recent_chats before=2026-04-05T18:05:00Z, paginate backward to 2024 origin",
+    "Run targeted conversation_search for each unresolved_work_references entry — identify the filename(s)",
+    "Cross-reference inventory entries against data/registry.json — populate associated_axn fields",
+    "Identify deposits in registry.json with NO file inventory match → priority Phase 8 (Zenodo salvage) targets",
+    "For files at evidence_level 1 (uploaded_attachment) or 2 (generated_file): generate a per-thread retrieval plan that Lee can execute by re-opening the thread"
+  ],
+  "phase_relationship": {
+    "this_phase": "Phase 9 — Claude-thread file inventory and recovery",
+    "priority": "PRIMARY — Lee's instruction: 'go through every file in the account first; reconcile against metadata downstream'",
+    "phase_8_relation": "Phase 8 (Zenodo file salvage from residential network) remains valid as PARALLEL track for files not found in this account's threads. Files appearing in BOTH a thread and on Zenodo's surviving file serving give the highest recovery confidence (cross-verified bytes).",
+    "phase_7_relation": "Phase 7 (aesthetic upgrade) is independent and can finish without coordination with Phases 8 or 9."
+  }
+}
