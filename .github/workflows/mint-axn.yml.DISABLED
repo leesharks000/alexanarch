@@ -1,3 +1,105 @@
+# ════════════════════════════════════════════════════════════════════════════
+# AUDIT-DISABLED — DO NOT RE-ENABLE WITHOUT FULFILLING §6.2.1 CONDITIONS
+# ════════════════════════════════════════════════════════════════════════════
+#
+# Disabled:           2026-06-23 (evening, Detroit time)
+# Disable reason:     P0 finding from external audit 2026-06-23 PM
+# Audit reference:    WORKPLAN-SESSION-20260623.md §6.2.1 + Appendix A §2
+# Workplan baseline:  commit 6fa8ea5 (audit incorporation)
+# Pre-disable hash:   SHA-256 d520b5de69ea8282be566d490630f4b4cfb5514c1452b9f2ef881ca8f5a35671
+# Pre-disable size:   386 lines, 27,936 bytes
+#
+# WHY THIS WORKFLOW WAS DISABLED
+# ──────────────────────────────
+# The audit verified, against the actually-installed workflow body below,
+# that this workflow:
+#
+#   1. Triggers on `issues: types: [opened]` — any public issue opening can
+#      initiate execution.
+#   2. Holds `permissions: contents: write` — write authority over `main`.
+#   3. Computes its AXN from title+creator+description+full-issue-body using
+#      4-glyph v1 logic, NOT the canonical v2 6-glyph derivation defined in
+#      scripts/axn_lib.py.
+#   4. Does not validate against api/deposit-entry-schema.json.
+#   5. Does not verify declared artifact paths exist.
+#   6. Does not call scripts/regenerate_surfaces.py — so static records,
+#      browse, chunks, sitemap, sums, wiki, and graph all silently desync
+#      from the registry it pushes.
+#   7. Closes with `git push` direct to the default branch — no PR review
+#      boundary, no required CI status between mint and deployment.
+#
+# In short: a public issue-opening event could initiate an unvalidated
+# mutation of `main`, written through an obsolete identifier protocol,
+# and that mutation would then flow downstream into Vercel deployment
+# without intermediate review.
+#
+# This is the audit's central diagnosis: "the declared control plane is
+# not the executable control plane." Multiple substrate documents
+# (AGENTS.md, the public issue-form copy, api/index.json's operator
+# directive) describe enforcement that this workflow does not perform.
+#
+# RE-ENABLEMENT CONDITIONS
+# ────────────────────────
+# This workflow may not be returned to `.yml` extension until ALL THREE
+# of §6.2.1's sequenced steps are complete:
+#
+#   Step 1 (DONE — this disable):
+#     Workflow is removed from GitHub Actions' trigger set by renaming
+#     out of *.yml / *.yaml.
+#
+#   Step 2 (PENDING — next session):
+#     Trigger is changed from `issues: types: [opened]` to a maintainer-
+#     applied `mint-approved` label (i.e. `issues: types: [labeled]`
+#     gated on the label name). Issues remain open for submission and
+#     conversation, but no automation fires until a curator applies
+#     the label.
+#
+#   Step 3 (PENDING — next session, before re-enablement):
+#     Workflow body is rebuilt to:
+#       a. call scripts/axn_lib.py for AXN derivation (single source of
+#          truth — must produce the same glyphs as the homepage, web
+#          deposit preview, and any other surface deriving an AXN);
+#       b. validate the submission against api/deposit-entry-schema.json
+#          and reject with stable rule IDs on failure;
+#       c. recompute the AXN from canonical bytes (not from the GitHub
+#          issue envelope);
+#       d. verify every declared artifact path resolves to an existing
+#          file in the repository or attached blob;
+#       e. run scripts/regenerate_surfaces.py and assert all derived
+#          surfaces (browse, chunks, sitemap, sums, wiki, graph) update
+#          coherently;
+#       f. open a pull request rather than pushing to `main` directly —
+#          merge requires green required status checks (see audit P0 #2).
+#
+# Until steps 2 and 3 are in place, all new deposits MUST flow through
+# curator-controlled scripts. The canonical pattern is the
+# scripts/insert_seed_deposits.py path used for deposits #877/#878/#879
+# (continuity tethers) and the direct curator script used for deposits
+# #880/#881 this session (Surface Visibility Instrument methodology +
+# baseline). External `[DEPOSIT]` issues should not be accepted until
+# this workflow is rebuilt.
+#
+# OPERATIONAL EFFECT OF THIS DISABLE
+# ──────────────────────────────────
+# GitHub Actions discovers workflows by reading `.yml` and `.yaml` files
+# in `.github/workflows/`. By renaming this file to `.yml.DISABLED`, it
+# leaves the trigger set entirely. The file remains in the repository
+# for diff-against during rebuild (step 3 above). Its content is
+# preserved verbatim below this header.
+#
+# DO NOT re-enable by stripping the `.DISABLED` suffix. The verbatim
+# content below describes the broken pre-audit state; restoring it to
+# the active workflow set would re-open the public-mutation path the
+# audit identified as P0.
+#
+# Firm rule reference: WORKPLAN-SESSION-20260623.md §7 rule #19.
+# Audit's operative instruction: "Do not build another major surface
+# before installing the transaction boundary." (§6.5 / Appendix A §22)
+#
+# ════════════════════════════════════════════════════════════════════════════
+# BEGIN VERBATIM PRE-DISABLE WORKFLOW BODY (preserved for step-3 rebuild diff)
+# ════════════════════════════════════════════════════════════════════════════
+
 name: Mint AXN Identifier
 
 on:
