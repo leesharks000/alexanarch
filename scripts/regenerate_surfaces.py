@@ -126,7 +126,7 @@ BROWSE_HEADER = """<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><m
 <script type="application/ld+json">{jsonld}</script>
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--teal:#0a7c6a;--border:#e0e0e0;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}}*{{margin:0;padding:0;box-sizing:border-box}}body{{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.6;font-size:15px}}.wrap{{max-width:720px;margin:0 auto;padding:60px 24px}}a:hover{{background:#f8f8ff}}.nav{{display:flex;gap:12px;margin-bottom:20px;font-size:.85em;overflow-x:auto;white-space:nowrap}}.nav a{{color:#777;font-weight:500;text-decoration:none}}.nav a:hover{{color:var(--accent);background:none}}.footer{{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:#777}}</style>
 </head><body><div class="wrap">
-<nav class="nav"><a href="/">Alexanarch</a> <a href="/deposit/">Deposit</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a></nav>
+<nav class="nav"><a href="/">Alexanarch</a> <a href="/s/browse/">Browse</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/observatory/">Observatory</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a></nav>
 <h1 style="font-size:1.4em;font-weight:600;color:var(--accent);margin-bottom:4px">Complete Deposit Registry</h1>
 <div style="color:#777;font-size:.88em;margin-bottom:16px">{total} deposits · sorted by deposit number, oldest first · for newest see <a href="/">home page</a></div>
 """
@@ -667,7 +667,8 @@ _WIKI_HTML_HEAD = (
     '</head><body><div class="wrap">'
     '<nav class="nav"><a href="/">Alexanarch</a> <a href="/s/browse/">Browse</a> '
     '<a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> '
-    '<a href="/deposit/">Deposit</a> <a href="/manifest/">Manifest</a></nav>'
+    '<a href="/observatory/">Observatory</a> '
+    '<a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a></nav>'
     '<h1>Alexanarch Wiki</h1>'
 )
 
@@ -690,7 +691,8 @@ _GRAPH_HTML_HEAD = (
     '</head><body><div class="wrap">'
     '<nav class="nav"><a href="/">Alexanarch</a> <a href="/s/browse/">Browse</a> '
     '<a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> '
-    '<a href="/deposit/">Deposit</a> <a href="/manifest/">Manifest</a></nav>'
+    '<a href="/observatory/">Observatory</a> '
+    '<a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a></nav>'
     '<h1>Knowledge Graph</h1>'
 )
 
