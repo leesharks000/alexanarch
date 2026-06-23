@@ -365,3 +365,6 @@
 [2026-06-23T13:59Z] reconcile_recovered_metadata.py phase 2: added 3 optional pointer fields per deposit (external_metadata_path, openalex_ids, datacite_severance) on 738 covered deposits. 2,214 field-level additions. ZERO existing field values mutated (verified via deep diff). validate_deposit.py passes 885/885. Registry: 5,986,939 → 6,283,339 bytes (+5%).
 [2026-06-23T14:00:37Z] reconcile_resolution_index.py: v3.1 → v3.2: enriched 1649 mappings, flagged 59 misclassifications, added 2 typo-immunity entries. total_mappings: 1817 → 1819.
 [2026-06-23T14:00Z] reconcile_resolution_index.py: v3.1 → v3.2. 1649 mappings enriched with metadata-recovered flags (openalex_id, metadata_recovered_from, severance_status, external_metadata_path, abstract_recovered_chars). 59 misclassified entries flagged (mapping_type → misclassified_other_author, prior values preserved in misclassification_note). 2 typo-immunity entries added (Sharkd Lee, Craned Rebekah). total_mappings: 1817 → 1819. Zero protected-key mutations (dead_doi, doi_url, sovereign_id, title, date, live_urls, axn, root_axn, alexanarch_record, alexanarch_url).
+
+--- Phase 3.5 receipt @ 2026-06-23T15:26:44Z ---
+Title-match backfill: 15 deposits, 15 sidecars, 0 new resolution mappings, 32836 chars of abstract recovered.

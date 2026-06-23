@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:0236.GOVERNANCE.💎🪞📝⏬🏁🔖",
+  "deposit_number": 691,
+  "generated_at": "2026-06-23T15:26:44Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. Phase 3.5 title-match backfill: registry's zenodo_dois field was empty; legacy DOIs recovered via title-match against existing data stores (OpenAlex, Zenodo bulk XML, DataCite backup, DataCite survivor sweep).",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.19773464"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.19773464": {
+      "datacite_backup_present": true
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": []
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": []
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": [
+        "10.5281/zenodo.19773464"
+      ]
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 0,
+  "recovered_fields_summary": {
+    "has_title": false,
+    "has_abstract": false,
+    "has_authors": false,
+    "has_keywords": true,
+    "has_publication_date": false,
+    "has_references": false,
+    "has_concepts": false,
+    "has_topics": false,
+    "has_full_datacite_xml": false
+  },
+  "openalex_ids": [],
+  "rescue_provenance": {
+    "phase": "3.5",
+    "method": "title-match backfill",
+    "rationale": "Registry's zenodo_dois field was empty for this deposit. Title matched (first 12 normalized words) against existing recovery data stores. DOIs added to registry's zenodo_dois field; sidecar created; resolution index updated."
+  }
+}
