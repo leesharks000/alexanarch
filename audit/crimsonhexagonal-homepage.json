@@ -1,0 +1,15 @@
+{
+  "site": "crimsonhexagonal.org",
+  "page": "/",
+  "audit_date": "2026-06-23",
+  "status": "3 fixes — 1 dead direct Zenodo link, 1 wrong-target alexanarch link, 2 stale counts",
+  "link_repoints": [
+    {"display": "Zenodo community", "current_url": "https://zenodo.org/communities/leesharks000", "new_url": "https://alexanarch.org/s/browse/", "new_display_text": "Alexanarch (sovereign successor archive)", "note": "DIRECT zenodo.org link — DEAD since 2026-06-19"},
+    {"display": "Space Ark (DOI: 10.5281/zenodo.19013315)", "current_url": "https://alexanarch.org/s/records/561/", "current_target_was": "THE SPLICE Operation Epic Fury", "new_url": "https://alexanarch.org/s/records/549/", "new_target": "THE SPACE ARK What the Mathematical and Formal Symbolic Compression of...", "confidence": "high"}
+  ],
+  "prose_fixes": [
+    {"old": "29 rooms, 455 DOI-anchored deposits, 39 operators", "new": "29 rooms, 879 AXN-anchored deposits, 39 operators", "location": "intro paragraph + meta description"},
+    {"old": "455+ deposits with DOIs", "new": "879+ deposits with AXN identifiers (legacy Zenodo DOIs resolvable via /resolve/)", "location": "Archive section"},
+    {"old": "alexanarch.org — self-governing library, 866 deposits", "new": "alexanarch.org — self-governing library, 879 deposits", "location": "footer Network list"}
+  ]
+}
