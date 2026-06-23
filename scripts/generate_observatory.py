@@ -14,6 +14,10 @@ import json
 import os
 import sys
 from pathlib import Path
+
+# Import canonical navbar renderer
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from scripts.render_navbar import render_navbar
 from datetime import datetime
 
 
@@ -277,15 +281,7 @@ code{{font-family:var(--mono);font-size:.85em;background:#f0f0f0;padding:1px 4px
 .legend .dot{{display:inline-block;width:10px;height:10px;border-radius:50%}}
 </style>
 </head><body><div class="wrap">
-<nav class="nav">
-<a href="/">Alexanarch</a>
-<a href="/deposit/">Deposit</a>
-<a href="/s/wiki/">Wiki</a>
-<a href="/s/graph/">Graph</a>
-<a href="/guide/">Guide</a>
-<a href="/manifest/">Manifest</a>
-<a href="/observatory/" class="current">Observatory</a>
-</nav>
+{render_navbar(active='/observatory/')}
 
 <div class="subtle"><a href="/">Alexanarch</a> · Observatory</div>
 <h1>Surface Weather Station</h1>

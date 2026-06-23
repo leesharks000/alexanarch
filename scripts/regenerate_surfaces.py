@@ -53,6 +53,10 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+# Import canonical navbar renderer
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from scripts.render_navbar import render_navbar
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 REGISTRY_PATH = REPO_ROOT / "data" / "registry.json"
 
@@ -126,7 +130,7 @@ BROWSE_HEADER = """<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><m
 <script type="application/ld+json">{jsonld}</script>
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--teal:#0a7c6a;--border:#e0e0e0;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}}*{{margin:0;padding:0;box-sizing:border-box}}body{{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.6;font-size:15px}}.wrap{{max-width:720px;margin:0 auto;padding:60px 24px}}a:hover{{background:#f8f8ff}}.nav{{display:flex;gap:12px;margin-bottom:20px;font-size:.85em;overflow-x:auto;white-space:nowrap}}.nav a{{color:#777;font-weight:500;text-decoration:none}}.nav a:hover{{color:var(--accent);background:none}}.footer{{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:#777}}</style>
 </head><body><div class="wrap">
-<nav class="nav"><a href="/">Alexanarch</a> <a href="/s/browse/">Browse</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/observatory/">Observatory</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a></nav>
+<nav class="nav">__NAVBAR_TOKEN__</nav>
 <h1 style="font-size:1.4em;font-weight:600;color:var(--accent);margin-bottom:4px">Complete Deposit Registry</h1>
 <div style="color:#777;font-size:.88em;margin-bottom:16px">{total} deposits · sorted by deposit number, oldest first · for newest see <a href="/">home page</a></div>
 """
@@ -177,7 +181,7 @@ def regenerate_browse(reg, dry_run=False):
         "numberOfItems": total,
     })
 
-    parts = [BROWSE_HEADER.format(total=total, jsonld=jsonld)]
+    parts = [BROWSE_HEADER.format(total=total, jsonld=jsonld).replace('__NAVBAR_TOKEN__', render_navbar()[len('<nav class="nav">'):-len('</nav>')])]
     for d in sorted_deps:
         n = d.get("deposit_number") or d.get("issue_number") or 0
         if n == 0:
@@ -470,16 +474,218 @@ def _load_entity_index():
 def regenerate_wiki(reg, dry_run=False):
     """Project the wiki tab from registry wiki_article fields + entity-index backlinks.
 
-    Each deposit with a non-empty wiki_article becomes a wiki entry. Entries
-    show: canonical v2 AXN, title, creator, date, wiki_article body,
-    "Defines:" (from defines_concepts or registry-listed entities), and
-    "Referenced by N deposits" link to the deposit's record page.
+    Output structure (mirrors data/chunks/registry/):
+      s/wiki/index.html                                  — overview index page (~30KB)
+      s/wiki/chunk-001-deposits-1-to-73/index.html       — chunk 1 entries
+      s/wiki/chunk-002-deposits-74-to-167/index.html     — chunk 2 entries
+      ... etc, one per registry chunk
+
+    Each chunk page has prev/next navigation. The top-level index lists all
+    chunks with deposit ranges + entry counts.
+
+    Previously a single 1.2 MB page; now ~100-150 KB per chunk.
     """
     eidx = _load_entity_index()
     concepts = (eidx or {}).get("concepts", {}) if eidx else {}
 
-    # Entries to render: deposits that have wiki_article populated.
-    # Sort by deposit_number ascending so the wiki reads in canonical order.
+    # Load the registry chunk index — defines deposit ranges per chunk
+    chunk_index_path = REPO_ROOT / "data" / "chunks" / "registry" / "_index.json"
+    if not chunk_index_path.exists():
+        # Fall back to single-page wiki if no chunk index exists
+        return _regenerate_wiki_single_page(reg, dry_run)
+    with open(chunk_index_path) as f:
+        chunk_index = json.load(f)
+
+    # Entries to render: deposits with wiki_article populated, sorted by deposit_number
+    entries = [
+        d for d in sorted(reg["deposits"], key=lambda x: x.get("deposit_number", 0))
+        if (d.get("wiki_article") or "").strip()
+    ]
+    by_n = {d["deposit_number"]: d for d in entries}
+
+    # Concepts defined per deposit (from entity-index)
+    defines_by_deposit = {}
+    for term, c in concepts.items():
+        di = c.get("defined_in")
+        if di is None:
+            continue
+        defines_by_deposit.setdefault(di, []).append(term)
+
+    # Helper: render a single wiki entry div (same shape as before)
+    def render_entry_html(d):
+        dn = d["deposit_number"]
+        axn = d.get("axn", "")
+        title = esc_html(d.get("title", "(untitled)"))
+        creator = esc_html(d.get("creator") or d.get("author") or "")
+        date = esc_html(d.get("date", ""))
+        article = esc_html((d.get("wiki_article") or "").strip())
+
+        defines = defines_by_deposit.get(dn, []) or d.get("defines_concepts") or []
+        defines_html = ""
+        if defines:
+            shown = sorted(defines)[:12]
+            tail = f' <span style="color:var(--dim)">+{len(defines)-12} more</span>' if len(defines) > 12 else ""
+            defines_html = ('<div style="margin-top:6px;font-size:.82em">'
+                            '<strong style="color:var(--teal)">Defines:</strong> '
+                            + ", ".join(esc_html(t) for t in shown) + tail + '</div>')
+
+        refby_total = sum(concepts.get(t, {}).get("reference_count", 0) for t in defines)
+        refby_html = ""
+        if refby_total:
+            refby_html = ('<div style="margin-top:4px;font-size:.78em;color:var(--dim)">'
+                          f'Concepts defined here referenced across {refby_total} other-deposit citations.'
+                          '</div>')
+
+        return (
+            f'<div style="margin-bottom:24px" id="d{dn}">'
+            f'<div style="font-family:var(--mono);font-size:.82em;color:var(--teal);'
+            f'background:#f0f8f6;display:inline-block;padding:3px 8px;border-radius:4px">'
+            f'{esc_html(axn)}</div>'
+            f'<h1 style="font-size:1.2em;margin-bottom:4px">'
+            f'<a href="/s/records/{dn}/">{title}</a></h1>'
+            f'<div style="font-size:.82em;color:var(--dim);margin-bottom:8px">'
+            f'{creator}{" · " + date if creator and date else date}</div>'
+            f'<div class="art">{article}</div>'
+            f'{defines_html}'
+            f'{refby_html}'
+            f'<div style="margin-top:4px;font-size:.82em">'
+            f'<a href="/s/records/{dn}/">Full record →</a></div>'
+            '</div>\n'
+        )
+
+    chunks = chunk_index.get("chunks", [])
+    chunk_summaries = []  # for the index page
+
+    # Per-chunk pages
+    for i, chunk in enumerate(chunks):
+        first_n = chunk["first_deposit"]
+        last_n = chunk["last_deposit"]
+        chunk_num = chunk["chunk_number"]
+        chunk_slug = f"chunk-{chunk_num:03d}-deposits-{first_n}-to-{last_n}"
+
+        # Collect entries in this chunk's deposit-number range
+        chunk_entries = [d for d in entries if first_n <= d["deposit_number"] <= last_n]
+        chunk_summaries.append({
+            "chunk_num": chunk_num,
+            "slug": chunk_slug,
+            "first_n": first_n,
+            "last_n": last_n,
+            "wiki_count": len(chunk_entries),
+            "total_count": chunk["count"],
+        })
+
+        # Prev/next navigation
+        prev_link = ""
+        if i > 0:
+            prev_chunk = chunks[i - 1]
+            prev_slug = f"chunk-{prev_chunk['chunk_number']:03d}-deposits-{prev_chunk['first_deposit']}-to-{prev_chunk['last_deposit']}"
+            prev_link = (
+                f'<a href="/s/wiki/{prev_slug}/" style="color:var(--accent);font-weight:500">'
+                f'← Chunk {prev_chunk["chunk_number"]} (#{prev_chunk["first_deposit"]}–{prev_chunk["last_deposit"]})</a>'
+            )
+        next_link = ""
+        if i < len(chunks) - 1:
+            next_chunk = chunks[i + 1]
+            next_slug = f"chunk-{next_chunk['chunk_number']:03d}-deposits-{next_chunk['first_deposit']}-to-{next_chunk['last_deposit']}"
+            next_link = (
+                f'<a href="/s/wiki/{next_slug}/" style="color:var(--accent);font-weight:500">'
+                f'Chunk {next_chunk["chunk_number"]} (#{next_chunk["first_deposit"]}–{next_chunk["last_deposit"]}) →</a>'
+            )
+
+        # Build chunk page
+        parts = [_WIKI_HTML_HEAD]
+        parts.append(f'<div style="font-size:.85em;color:var(--dim);margin-bottom:8px">'
+                     f'<a href="/s/wiki/" style="color:var(--accent)">← All chunks</a></div>')
+        parts.append(f'<h2 style="font-size:1.05em;margin-bottom:6px">'
+                     f'Chunk {chunk_num} of {len(chunks)}: deposits #{first_n}–#{last_n}</h2>')
+        parts.append(f'<p style="font-size:0.86em;color:var(--dim);margin-bottom:18px">'
+                     f'<strong>{len(chunk_entries)}</strong> wiki entries in this chunk '
+                     f'(of <strong>{chunk["count"]}</strong> deposits in the range).</p>\n')
+
+        nav_strip = (
+            '<div style="display:flex;justify-content:space-between;align-items:center;'
+            'margin:18px 0;padding:10px 0;border-bottom:1px solid var(--border);font-size:.88em">'
+            f'<div>{prev_link or "&nbsp;"}</div>'
+            f'<div>{next_link or "&nbsp;"}</div>'
+            '</div>'
+        )
+        parts.append(nav_strip)
+
+        for d in chunk_entries:
+            parts.append(render_entry_html(d))
+
+        # Repeat navigation at the bottom
+        parts.append(nav_strip)
+        parts.append(_WIKI_HTML_TAIL)
+
+        chunk_html = "".join(parts)
+        chunk_dir = REPO_ROOT / "s" / "wiki" / chunk_slug
+        chunk_path = chunk_dir / "index.html"
+        chunk_size = len(chunk_html.encode("utf-8"))
+        if dry_run:
+            print(f"  [dry-run] {chunk_path} would be {chunk_size:,} bytes, {len(chunk_entries)} entries")
+        else:
+            chunk_dir.mkdir(parents=True, exist_ok=True)
+            _receipt(chunk_path)
+            chunk_path.write_text(chunk_html, encoding="utf-8")
+
+    # Build the wiki index page
+    total_wiki = sum(c["wiki_count"] for c in chunk_summaries)
+    index_parts = [_WIKI_HTML_HEAD]
+    index_parts.append(
+        f'<p style="font-size:0.86em;color:var(--dim);margin-bottom:18px">'
+        f'Wiki entries auto-projected from <code>data/registry.json</code> '
+        f'<code>wiki_article</code> fields and back-linked to '
+        f'<code>data/entity-index.json</code>. '
+        f'<strong>{total_wiki:,}</strong> entries from a corpus of '
+        f'<strong>{len(reg["deposits"]):,}</strong> deposits, '
+        f'split across <strong>{len(chunks)}</strong> chunks matching the registry '
+        f'chunk structure (see <a href="/api/index.json">/api/index.json</a> and '
+        f'<a href="/data/chunks/registry/_index.json">/data/chunks/registry/_index.json</a>).</p>\n'
+    )
+    index_parts.append('<div style="margin-top:16px">')
+    for cs in chunk_summaries:
+        index_parts.append(
+            f'<a href="/s/wiki/{cs["slug"]}/" '
+            f'style="display:block;padding:10px 0;border-bottom:1px solid var(--border);text-decoration:none">'
+            f'<div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap">'
+            f'<span style="font-weight:500;color:var(--accent)">Chunk {cs["chunk_num"]}</span>'
+            f'<span style="color:var(--dim);font-size:.85em">'
+            f'deposits #{cs["first_n"]}–#{cs["last_n"]}'
+            f'</span>'
+            f'</div>'
+            f'<div style="color:var(--dim);font-size:.82em;margin-top:2px">'
+            f'{cs["wiki_count"]} wiki entries (of {cs["total_count"]} deposits)'
+            f'</div>'
+            f'</a>'
+        )
+    index_parts.append('</div>')
+    index_parts.append(_WIKI_HTML_TAIL)
+
+    index_html = "".join(index_parts)
+    index_size = len(index_html.encode("utf-8"))
+    if dry_run:
+        print(f"  [dry-run] {WIKI_PATH} would be {index_size:,} bytes (chunk index)")
+        return
+    WIKI_PATH.parent.mkdir(parents=True, exist_ok=True)
+    _receipt(WIKI_PATH)
+    WIKI_PATH.write_text(index_html, encoding="utf-8")
+
+    chunk_sizes = []
+    for cs in chunk_summaries:
+        chunk_path = REPO_ROOT / "s" / "wiki" / cs["slug"] / "index.html"
+        if chunk_path.exists():
+            chunk_sizes.append(chunk_path.stat().st_size)
+    print(f"  ✓ s/wiki/index.html ({index_size:,} bytes, chunk index)")
+    print(f"  ✓ s/wiki/chunk-NNN/ ({len(chunks)} chunks, "
+          f"sizes {min(chunk_sizes):,}–{max(chunk_sizes):,} bytes, {total_wiki} total wiki entries)")
+
+
+def _regenerate_wiki_single_page(reg, dry_run=False):
+    """Fallback single-page wiki (used when chunk index is unavailable)."""
+    eidx = _load_entity_index()
+    concepts = (eidx or {}).get("concepts", {}) if eidx else {}
+
     entries = []
     for d in sorted(reg["deposits"], key=lambda x: x.get("deposit_number", 0)):
         wiki_article = d.get("wiki_article") or ""
@@ -487,8 +693,6 @@ def regenerate_wiki(reg, dry_run=False):
             continue
         entries.append(d)
 
-    # Concepts defined per deposit (collected from entity-index, since registry
-    # may not always carry defines_concepts).
     defines_by_deposit = {}
     for term, c in concepts.items():
         di = c.get("defined_in")
@@ -523,9 +727,6 @@ def regenerate_wiki(reg, dry_run=False):
                             '<strong style="color:var(--teal)">Defines:</strong> '
                             + ", ".join(esc_html(t) for t in shown) + tail + '</div>')
 
-        # "Referenced by N other deposits" — count concepts defined by THIS deposit
-        # that appear in other deposits' references_concepts.
-        # Cheap version: count = sum of reference_counts across defines.
         refby_total = 0
         for t in defines:
             c = concepts.get(t)
@@ -564,7 +765,7 @@ def regenerate_wiki(reg, dry_run=False):
     WIKI_PATH.parent.mkdir(parents=True, exist_ok=True)
     _receipt(WIKI_PATH)
     WIKI_PATH.write_text(html, encoding="utf-8")
-    print(f"  ✓ s/wiki/index.html ({size:,} bytes, {len(entries)} wiki entries)")
+    print(f"  ✓ s/wiki/index.html ({size:,} bytes, {len(entries)} wiki entries — single-page fallback)")
 
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -684,10 +885,7 @@ _WIKI_HTML_HEAD = (
     '<title>Wiki — Alexanarch</title>'
     + _WIKI_STYLE +
     '</head><body><div class="wrap">'
-    '<nav class="nav"><a href="/">Alexanarch</a> <a href="/s/browse/">Browse</a> '
-    '<a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> '
-    '<a href="/observatory/">Observatory</a> '
-    '<a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a></nav>'
+    + render_navbar(active='/s/wiki/') +
     '<h1>Alexanarch Wiki</h1>'
 )
 
@@ -708,10 +906,7 @@ _GRAPH_HTML_HEAD = (
     '<title>Knowledge Graph — Alexanarch</title>'
     + _GRAPH_STYLE +
     '</head><body><div class="wrap">'
-    '<nav class="nav"><a href="/">Alexanarch</a> <a href="/s/browse/">Browse</a> '
-    '<a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> '
-    '<a href="/observatory/">Observatory</a> '
-    '<a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a></nav>'
+    + render_navbar(active='/s/graph/') +
     '<h1>Knowledge Graph</h1>'
 )
 

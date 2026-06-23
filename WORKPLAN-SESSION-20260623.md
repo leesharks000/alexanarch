@@ -211,6 +211,44 @@ Both methodology and baseline-reading deposits credit the framework's elicitatio
 
 **Total deposits now: 884.** Derived surfaces (browse, browse-index, registry chunks, sitemap, SHA256SUMS, wiki, graph) regenerated; observatory page regenerated; record pages re-rendered. Five-substrate federated Layer A baseline complete; Layer B and v1.2 calibration deferred to accumulated multi-scan data.
 
+### 4.12 Corpus integrity sweep + versioning protocol + nav consolidation + wiki split ✓ — 2026-06-23 PM
+
+A continuous arc of seven commits between the v1.1.1 mint and the end of the working session. Eight substantive issues landed.
+
+**Stub-alias corpus repair (commit `1651130`)** — 832 of 884 deposits (94%) had stub aliases at `data/deposits/AXN-*.md` (450–1500b) shadowing populated full text in `data/texts/AXN-*-text.md` (7–123 KB). Root cause: `wire_deposit.py:116` checked `len(raw) > 200` and used the first-found alias — old stubs all passed that threshold. Fix: renderer hardened to prefer the registry's declared `full_text_path`, then fall back to whichever existing file is largest. 832 aliases repopulated by copying their text files. 832 record pages re-rendered. 1666 files changed, 907K insertions. Lee's flagged examples (Three Compressions, Writable Retrieval Basin, Encyclotron, Sample Encyclotron Audit) went from ~500-byte stub renders to 16–28 KB full text renders.
+
+**Missing-file deposits located + JSON-source handling (commit `89b869a`)** — 13 deposits had truly-missing files (separate from the stub problem). Investigation revealed the data lived under sovereign-id-named paths in `/data/` (e.g. `/data/EA-MMRS-LOUD-EXCLUSION-03.md`, `/data/EA-CHA-DRAIN-HYPOTHESIS.md`) — declared correctly in registry's `full_text_path` field but outside the AXN-NNNN convention my initial audit assumed.
+
+- ✓ Restored 10 deposits to full text: #1 Zenodotus' Book-Burning (page 113 KB), #2 I AM THE API, #863 Minimum Viable Archive, #864 Drain Hypothesis, #865 TACHYON Continuity Record, #867 DataCite Metadata Backup, #868 DOIs ≠ Persistent Identifiers (already OK)
+- ✓ Renderer extended to detect `.json` sources and emit a dataset callout (file path, size, license, download link) instead of inlining JSON-as-prose. Previously #3, #4, #866 were 0.3–2.3 MB pages of paragraph-per-JSON-key gibberish; now 6–9 KB clean dataset cards
+- ⏳ #446 (`⏳❌`), #532 (Magic as Symbolic Engineering), #760 (AI Training Rights) confirmed-placeholder — never written, status set to DRAFT_PENDING later
+
+**Homepage banner repointed (commit `d5ed24f`)** — the Zenodotus' Book-Burning link in the homepage banner was pointing at the raw `EA-MMRS-LOUD-EXCLUSION-03.md` on machinemediation.org; repointed to `/s/records/1/` (the polished Alexanarch record now that #1 renders the full v8.1 paper). Single-line fix in `index.html`.
+
+**Versioning protocol rolled out (commit `55893e2`)** — full data model + display layer. Documented at `/api/lifecycle-protocol.json` (registered in `/api/index.json` under `protocols.lifecycle`). See §6.3.9 (now marked ✅) for the full specification. Status vocabulary: ACTIVE / SUPERSEDED / WITHDRAWN / DRAFT_PENDING. New fields: `superseded_by_deposit_number`, `superseded_by_axn`, `superseded_at`, `superseded_reason`, `draft_pending_reason`. Series taxonomy: supersession series (one ACTIVE at a time) vs. sequential series (many ACTIVE coexist, e.g. TACHYON Continuity).
+
+Backfilled: #880 SUPERSEDED → #882, #882 SUPERSEDED → #884 (Surface Weather methodology chain); #446, #532, #760 DRAFT_PENDING; #865 + #871 (TACHYON Continuity) both ACTIVE (sequential series, not supersession). Display: record-page supersession banner + version history block; browse-card version chip + status badge; homepage Recent Deposits muting at opacity 0.65 for superseded/draft. Eight affected deposits re-rendered with registry context.
+
+**Navbar consolidation (this commit)** — Lee surfaced 16-link nav on home vs. 8 on dynamic vs. 7–13 on middle pages with `/wiki/` (broken) vs `/s/wiki/` (correct) inconsistencies. Single source of truth at `data/navigation.json` listing all 16 canonical surfaces. Helper `scripts/render_navbar.py` reads it. Wire-up:
+
+- `wire_deposit.py` — `<nav>` now `{render_navbar()}` (f-string substitution); all 884 record pages re-rendered
+- `scripts/regenerate_surfaces.py` — three navbar locations (browse, wiki, graph) all use `render_navbar()`; browse uses a `__NAVBAR_TOKEN__` placeholder because the surrounding template is `.format()`-based
+- `scripts/generate_observatory.py` — observatory regenerated with canonical nav
+- `scripts/sync_navbars.py` — one-shot pass over 12 authored static pages (index.html, deposit/, guide/, manifest/, captures/, resolve/, principles/, identifiers/, lexical/, citations/, addresses/, datasets/). Adds `<!-- NAV-START -->...<!-- NAV-END -->` markers + injects canonical nav on first pass; idempotent on subsequent runs
+
+Verified: 13 sampled surfaces all show 16 canonical links — home, deposit, guide, manifest, lexical, captures, resolve, observatory, record page, browse, wiki index, wiki chunk page, graph.
+
+**Wiki splitting (this commit)** — Lee surfaced that `s/wiki/index.html` was 1.2 MB and slow to load. Rewrote `regenerate_wiki()` to mirror the registry chunk structure at `data/chunks/registry/`. Output:
+
+- `s/wiki/index.html` — slim 7.4 KB index page listing all 9 chunks with deposit ranges + entry counts
+- `s/wiki/chunk-NNN-deposits-X-to-Y/index.html` — 9 chunk pages, 12–212 KB each
+- Each chunk has prev/next chunk navigation at top + bottom
+- Falls back to single-page rendering if the chunk index isn't available (defensive)
+
+Page weight dropped 1.2 MB → ~150 KB per chunk on average (8x median improvement). Wiki entries unchanged in count (861) — only the file distribution changed.
+
+**Workplan refreshed (this commit)** — this very §4.12 entry; §6.3.9 marked ✅ with full versioning rollout details; new pending items added under §6.
+
 ---
 
 ## 5. Outstanding items (priority order for next session)
@@ -741,6 +779,60 @@ Display in every surface:
 - Browse list: numbers visible in row
 
 Moderate-to-substantial work — depends on which analytics path is chosen. The download-counter Edge Function is the most novel piece.
+
+#### 6.3.11 ✅ Navbar single-source consolidation (rolled out 2026-06-23 PM)
+
+Lee surfaced massive nav inconsistency across surfaces: homepage carried 16 links, dynamic record/browse/wiki/graph pages 8 (different set), middle pages 7–13. Some pages linked `/wiki/` (broken) vs `/s/wiki/` (correct). Cleaned up:
+
+**Canonical source**: `data/navigation.json` — 16 surfaces in canonical order with paths, labels, descriptions, fallback spec.
+
+**Renderer**: `scripts/render_navbar.py` exposes `render_navbar(active=None)`. Returns `<nav class="nav">…</nav>` HTML. Accepts optional `active` path argument to bold the current page. In-process cache to avoid repeated JSON loads.
+
+**Wired into all generators**:
+- `wire_deposit.py` — record page template uses `{render_navbar()}` (f-string substitution); all 884 record pages re-rendered
+- `scripts/regenerate_surfaces.py` — three navbar locations: browse uses a `__NAVBAR_TOKEN__` placeholder (because `BROWSE_HEADER` is a `.format()` template with braces); wiki + graph use `render_navbar(active='/s/wiki/')` and `render_navbar(active='/s/graph/')` inline (plain string concatenation, no escaping needed)
+- `scripts/generate_observatory.py` — uses `render_navbar(active='/observatory/')` directly (f-string template)
+
+**Authored static pages**: `scripts/sync_navbars.py` does a one-shot pass across 12 hand-authored pages (`index.html`, `deposit/`, `guide/`, `manifest/`, `captures/`, `resolve/`, `principles/`, `identifiers/`, `lexical/`, `citations/`, `addresses/`, `datasets/`). Two-mode behavior: (a) if `<!-- NAV-START -->...<!-- NAV-END -->` markers exist, replaces content between them; (b) if no markers, finds the first `<nav class="nav">…</nav>` and wraps it with markers + canonical nav. Idempotent — running twice in a row is a no-op on the second pass. Initial pass added markers to all 12 pages.
+
+**Verification**: 13 sampled surfaces all show 16 canonical links — home, deposit, guide, manifest, lexical, captures, resolve, observatory, record page (#884), browse, wiki index, wiki chunk page, graph.
+
+**To change the nav going forward**: edit `data/navigation.json`, then run `scripts/sync_navbars.py` (for authored pages) + `scripts/regenerate_surfaces.py` (for dynamic surfaces) + re-render record pages if appropriate. No more hunting for nav HTML across multiple files.
+
+#### 6.3.12 ✅ Wiki page chunk-splitting (rolled out 2026-06-23 PM)
+
+Lee surfaced that `s/wiki/index.html` was 1,195,536 bytes (~1.2 MB) and slow to load. Rewrote `regenerate_wiki()` in `scripts/regenerate_surfaces.py` to mirror the registry chunk structure already established at `data/chunks/registry/`.
+
+**Output structure**:
+```
+s/wiki/index.html                                  — slim 7.4 KB chunk index
+s/wiki/chunk-001-deposits-1-to-73/index.html       — 107 KB
+s/wiki/chunk-002-deposits-74-to-167/index.html     — 126 KB
+s/wiki/chunk-003-deposits-168-to-270/index.html    — 148 KB
+s/wiki/chunk-004-deposits-271-to-382/index.html    — 165 KB
+s/wiki/chunk-005-deposits-383-to-477/index.html    — 147 KB
+s/wiki/chunk-006-deposits-478-to-577/index.html    — 146 KB
+s/wiki/chunk-007-deposits-578-to-688/index.html    — 167 KB
+s/wiki/chunk-008-deposits-689-to-857/index.html    — 212 KB
+s/wiki/chunk-009-deposits-858-to-884/index.html    —  12 KB
+```
+
+Page weight: 1.2 MB → median 147 KB per chunk (≈8x improvement). Largest chunk (008) is 212 KB.
+
+**Each chunk page has**:
+- Canonical navbar (16 links, via `render_navbar(active='/s/wiki/')`)
+- "← All chunks" breadcrumb to wiki index
+- Chunk title: "Chunk N of 9: deposits #X–#Y"
+- Prev/next chunk navigation strip at top **and** bottom (allows reading through the corpus linearly)
+- All wiki entries for that range, sorted by deposit_number ascending
+- Standard wiki entry shape preserved (AXN chip, title with link, creator/date, wiki article prose, "Defines:" concept list, "Referenced by N citations" tail, "Full record →" link)
+- `id="dN"` anchor on each entry div for deep-linking from outside
+
+**The wiki index page lists** all 9 chunks with deposit ranges + entry counts; brief explanation of the chunk structure linking to `/api/index.json` and `/data/chunks/registry/_index.json`.
+
+**Fallback**: `_regenerate_wiki_single_page()` preserved as a defensive fallback if the chunk index is unavailable (chunks file deleted or unreadable).
+
+**Wiki entries unchanged in count**: 861 entries total — same as before, just distributed across 9 chunks instead of one monolithic file.
 
 ### 6.4 P2 — become a strong rhizome (audit §23.15–18)
 
