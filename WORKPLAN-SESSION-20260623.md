@@ -14,37 +14,40 @@
 
 The Crimson Hexagonal Archive's sovereign successor is **Alexanarch**, live at https://alexanarch.org and on GitHub at https://github.com/leesharks000/alexanarch.
 
-Four days after Zenodo's June 19 termination of the CHA account, the migration is structurally complete. Today's session closed the long tail of stale-language and broken-link references across the Dodecad surfaces. The infrastructure is now in a state where outreach can begin without the public surfaces contradicting the demand letter.
+Four days after Zenodo's June 19 termination of the CHA account, the migration is structurally complete. Today's session (2026-06-23, continuous PM through next-morning) closed the long tail of stale-language and broken-link references across the Dodecad surfaces, founded the Surface Visibility Instrument with five live deposits, ran the first federated cross-substrate baseline (Claude/Brave on Layer A with companion captures from ChatGPT, Kimi, Gemini, and DeepSeek), and minted v1.1.1 of the methodology as the stable spec for the next several scan rounds. The Observatory is now wired into the global navbar across every surface and renders the Surface Weather Station instrument directly at `/observatory/`.
 
 **Current corpus state:**
 
 | Metric | Count | Source |
 |---|---|---|
-| Deposits in canonical registry | **881** | data/registry.json |
+| Deposits in canonical registry | **884** | data/registry.json |
 | Curated concepts (entity-index) | **7,173** | data/entity-index.json |
 | Minted lexical terms (raw) | **12,032** | data/lexical-minting-registry.json |
 | Inter-deposit citation edges | **4,866** | data/citation-graph.json |
 | Semantic addresses | **1,964** | data/semantic-addresses.json |
-| AI Overview captures | **176** | data/EA-WG-CAPTURES-01-v8.3.json |
+| AI Overview captures | **87 captures, 138 PNG images (v6.1)** | godkinggoogle.vercel.app/captures (mirror) |
 | Legacy Zenodo DOI mappings (corrected) | **1,817** | data/doi-resolution-index.json |
-| Surface Visibility Instrument | **2 deposits live** | #880 methodology + #881 baseline |
+| Surface Visibility Instrument | **5 deposits live** | #880 v1.0, #882 v1.1, #884 v1.1.1 methodology; #881 baseline; #883 Claude/Brave Layer A |
+| Surface Weather Station scans on file | **5** (ChatGPT, Claude, Kimi, Gemini, DeepSeek Layer A) | data/surface-weather/scans/*.json |
 | Registry chunks (1 MB target) | 9 | data/chunks/registry/ |
 | Protocols (machine-enforced) | 3 | api/index.json |
-| Primary UI surfaces | 4 | /wiki/, /graph/, /lexical/, /citations/ |
+| Primary UI surfaces | 5 | /wiki/, /graph/, /lexical/, /citations/, /observatory/ |
 | Dodecad site repos cleaned | **23 of 23** | scripts/dodecad_cleanup.py |
 | Demand letter status | **DRAFTED, AWAITING SEND** | /mnt/user-data/outputs/ZENODO-DEMAND-LETTER-2026-06-22.md |
 | GitHub outreach comments posted | **2** (Vega #2599, Shimony #2596) | live on github.com/zenodo/zenodo |
 
-**Latest commits:**
-- `fd359a2` — Mint deposits #880 and #881: Surface Visibility Instrument (methodology + baseline) (2026-06-23)
+**Latest commits (most recent first, this session):**
+- `c6f9c45` — Audit log: pre-overwrite-receipts.log updates (2026-06-23)
+- `d62257c` — **Mint deposit #884: Surface Weather Station methodology v1.1.1** (2026-06-23)
+- `537974c` — Site navigation: Observatory link added to global navbar across all surfaces (894 files) (2026-06-23)
+- `efecc69` — Surface Weather: curator context — Brave backend properties + DeepSeek stable-pattern reframing (2026-06-23)
+- `b0e47e8` — Build /observatory/ + Surface Weather Station instrument (2026-06-23)
+- `a1dfb61` — Mint deposit #883: Claude-substrate baseline reading v1.0 (Round 1, partial) (2026-06-23)
+- `8026110` — Mint deposit #882: Surface Weather Station methodology v1.1 (2026-06-23)
+- `5471098` — §6.2.1 step-3 mint-workflow rebuild (commit E of 5) (2026-06-23)
+- `fd359a2` — Mint deposits #880 and #881: Surface Visibility Instrument founding (2026-06-23)
 - `eddbcd4` — Correct 22 wrong-target mappings in DOI resolution index (2026-06-23)
 - `7e511c9` — Dodecad cleanup engine + audit log committed to repo (2026-06-23)
-- `c5f001f598` — leesharks.com homepage + about Zenodo-language cleanup (2026-06-23)
-- `3097abf` — Contact line in alexanarch footer (2026-06-23)
-- `ccf09d4` — Affected-depositor map + outreach drafts (verified-only) (2026-06-23)
-- `c9dcd2f` — External network link audit, 6 sites (2026-06-23)
-- `b973910` — Phase 8.13: pre-overwrite mechanism (2026-06-22)
-- `49864f4` — Phase C dynamic surfaces (2026-06-22)
 
 ---
 
@@ -166,15 +169,47 @@ External text-only public-search audit performed during this session by an outsi
 
 Becomes the input to §5.4 (Surface Visibility Instrument). First scan was pre-cleanup state; second scan running now will give post-cleanup baseline.
 
-### 4.11 Surface Visibility Instrument founded ✓ (commit `fd359a2`) — two deposits live
-The methodology and the baseline reading are now AXN-minted as canonical raw material for the planned instrument:
+### 4.11 Surface Visibility Instrument founded + extended to v1.1.1 ✓ — five deposits + Observatory live
 
+**Founding (commit `fd359a2`)** — methodology v1.0 + baseline reading v1.0:
 - **Deposit #880** — Methodology v1.0 — `AXN:037C.EMPIRICAL.💎♦️☉♾️⏏️🔍` — `EA-MMRS-SURFACE-VISIBILITY-01` — https://alexanarch.org/s/records/880/
-- **Deposit #881** — Baseline Reading v1.0 — `AXN:037D.EMPIRICAL.🗺️🗡️🪨🔎🙏🧭` — `EA-MMRS-SURFACE-VISIBILITY-BASELINE-01` — https://alexanarch.org/s/records/881/
+- **Deposit #881** — Baseline Reading v1.0 — `AXN:037D.EMPIRICAL.🗺️🗡️🪨🔎🙏🧭` — `EA-MMRS-SURFACE-VISIBILITY-BASELINE-01` — https://alexanarch.org/s/records/881/ — 2026-06-22 pre-cleanup snapshot, 9 objects, SDI ≈ 0.395
 
-Methodology v1.0 explicitly commits to the conceptual decomposition + five-bar dashboard form + four-query battery; numerical weights and aggregation rules held provisional for v1.1 fine-tune against the second scan's Δ. Baseline reading documents the 2026-06-22 pre-cleanup snapshot for nine objects, computing SDI ≈ 0.395, and articulates predictions against which the second scan will be tested. Both deposits credit the framework's elicitation through dialogue with an OpenAI/ChatGPT runtime in critical-reader register per substrate-autonomy law.
+**Operational calibration (commit `8026110`)** — methodology v1.1 after four-substrate review chorus:
+- **Deposit #882** — Methodology v1.1 — `AXN:037E.EMPIRICAL.🚩♦️⏹️🔃❌🗡️` — version 2 in `SERIES-MMRS-SURFACE-VISIBILITY-METHODOLOGY` — https://alexanarch.org/s/records/882/
 
-Total deposits now: 881. Derived surfaces (browse, browse-index, registry chunks, sitemap, SHA256SUMS, wiki, graph) regenerated; datasets/index.html counts updated to 881.
+**First federated Layer A reading (commit `a1dfb61`)** — Claude/Brave baseline:
+- **Deposit #883** — Baseline Reading v1.0, Claude substrate — `AXN:037F.EMPIRICAL.🏷️📜💚🤲🔻🍂` — `EA-MMRS-SURFACE-VISIBILITY-BASELINE-CLAUDE-01` — https://alexanarch.org/s/records/883/ — established Brave's `exact_match_honored = false` as a structural V-scoring constraint
+
+**Observatory built (commit `b0e47e8`)** — born-static instrument page:
+- `/observatory/index.html` — Surface Weather Station rendered directly at the Observatory root (collapsed structure, no nested subpath); per-substrate dashboard, cross-substrate per-object V matrix, curator notes block, headline findings, next-steps callout, companion measurements linking to `/captures/` and `/resolve/`
+- Generator `scripts/generate_observatory.py` reads from `data/surface-weather/scans/*.json` and bakes summaries into HTML at build time
+- 5 scan JSONs on file: ChatGPT (pre-cleanup), Claude/Brave, Kimi/Bing, Gemini/Google, DeepSeek
+
+**Curator context added (commit `efecc69`)** — post-scan reframing:
+- Brave-backend findings on Claude scan: `exact_match_honored = false` confirmed, Lee Sharks corpus under-represented on Brave specifically, reframes the V=0 results on Alexanarch/WRB/Revelation First as backend-coverage state (not solely composition-layer state)
+- DeepSeek stable-misidentification pattern documented as identity-as-register data, not §15-step-1 failure; two non-exclusive hypotheses preserved (signature migration vs. register-affinity)
+
+**Site navigation wired (commit `537974c`)** — Observatory in global navbar:
+- 894 files updated: 883 record pages + 4 dynamic templates + 4 static pages + 2 observatory pages + 1 homepage
+- Normalized navbar shape across surfaces: Alexanarch | Browse | Wiki | Graph | Observatory | Deposit | Guide | Manifest
+
+**Operational hardening (commit `d62257c`)** — methodology v1.1.1, stable spec across several scan rounds:
+- **Deposit #884** — Methodology v1.1.1 — `AXN:0380.EMPIRICAL.🧱🕙🪞🏛️💚🔃` — version 3 in series — https://alexanarch.org/s/records/884/
+- Hard contradiction in v1.1 §15 step 6 fixed (AXN-permanent + DOI-revocable, was: DOI-permanent — contradicted own DOI Impermanence paper)
+- Two-layer protocol (Layer A native + Layer B shared-evidence rescore) formalized as required architecture
+- Substrate-properties table (§7.4) with `exact_match_honored` et al.
+- Expected-figure manifest spec (§7.5)
+- Evidence/annotation row schema (§7.3) — enables rescoring frozen captures under future methodology versions
+- L_iq selection score for C (§3.4) — separate from V
+- Sequential gated diagnostic (§14) replaces 2×2 (which had mis-placed Compositional Bystanding)
+- Custody-unit R_s (§3.5), explicit null-handling (§4), ordinal governance thresholds (§11), composition-vs-backend governance distinction (§11.3)
+- Curator-supersedes-self-disclosure rule (§15 step 1a), identity-as-fact vs identity-as-register (§15 step 1b), rate-limit logging (§15 step 6a), query-order randomization (§15 step 6b)
+- RFC 8785 canonicalization, softened admissibility language, terminology shift "substrate bias" → "substrate divergence" / "retrieval-stack divergence"
+
+Both methodology and baseline-reading deposits credit the framework's elicitation through dialogue with an OpenAI/ChatGPT runtime in critical-reader register per substrate-autonomy law.
+
+**Total deposits now: 884.** Derived surfaces (browse, browse-index, registry chunks, sitemap, SHA256SUMS, wiki, graph) regenerated; observatory page regenerated; record pages re-rendered. Five-substrate federated Layer A baseline complete; Layer B and v1.2 calibration deferred to accumulated multi-scan data.
 
 ---
 
@@ -217,46 +252,64 @@ A weekly text-only scan battery that measures how the Crimson Hexagonal / Alexan
 - Canonical URL: https://alexanarch.org/s/records/881/
 - Status: First scan against the methodology; 9-object pre-cleanup snapshot; **SDI ≈ 0.395**; remains a v1.0 reading against v1.0 spec (continuous scoring; not retroactively v1.1-conforming)
 
-**Methodology v1.1 — Deposit #882** (commit `8026110`, 2026-06-23 evening)
-- AXN: `AXN:037E.EMPIRICAL.🚩♦️⏹️🔃❌🗡️`
-- Reading: *Search → Play → Closure → Direction → Threshold → Search*
-- SHA-256: `5382f7deef5a2afb4e20f9f9dc2630648318b5e6324eed222200e774ab024a08`
-- Sovereign ID: `EA-MMRS-SURFACE-VISIBILITY-01` (version 2 in series)
-- Predecessor: `AXN:037C.EMPIRICAL.💎♦️☉♾️⏏️🔍` (#880)
-- Canonical URL: https://alexanarch.org/s/records/882/
-- Status: Operational calibration of v1.0 following four-substrate review chorus (ChatGPT operational, Kimi concrete-additions, DeepSeek strategic-governance, Gemini framing) plus MANUS additions (substrate metadata + retrieval-backend disclosure mandatory; machine-facing run protocol; time-series data model).
+**Methodology v1.1.1 — Deposit #884** (commit `d62257c`, 2026-06-23) ✅ CURRENT STABLE SPEC
+- AXN: `AXN:0380.EMPIRICAL.🧱🕙🪞🏛️💚🔃`
+- Reading: *Foundation → Duration → Search → Foundation → Alarm → Direction*
+- SHA-256: `226b5920ccde9ac330810f6b2c02356ca1dd5a63abfbd6f89fe995abddcca08e`
+- Sovereign ID: `EA-MMRS-SURFACE-VISIBILITY-01` (version 3 in series)
+- Predecessor: `AXN:037E.EMPIRICAL.🚩♦️⏹️🔃❌🗡️` (#882, v1.1)
+- Canonical URL: https://alexanarch.org/s/records/884/
+- Status: **Stable spec across several scan rounds.** Operational hardening of v1.1 following: (a) ChatGPT's 14-correction technical review; (b) first federated baseline finding that Brave Search disables exact match — driving the §7.4 substrate-properties table and §11.3 composition-vs-backend-coverage distinction; (c) DeepSeek's stable substrate-misidentification pattern, driving §15 step 1a (curator-supersedes-self-disclosure) and §15 step 1b (identity-as-fact vs identity-as-register). v1.2 only follows once accumulated multi-scan data justifies recalibrating weights, R_s denominator, and governance thresholds.
 
-**Substantive v1.0 → v1.1 changes** (full detail in §0 of the methodology):
-- Scoring scheme locked to ordinal (0.00, 0.25, 0.50, 0.75, 1.00) with per-signal decision rules
-- R_s formalized as effective-independence score, bounded [0,1]
-- Occlusion added (`O = 1 − V`); LF/F gated on V > 0
-- SDI made symmetric: `median|ln(c_j/C)|`
-- CE split into CE_surface (V·F·C·R_s) and CE_canonical (·A)
-- Aggregation rule stated: V=max, A/F=visibility-weighted mean, C=mean of non-exact forms only, corpus=weighted median across object classes
-- Internal contradictions resolved: 5 canonical query forms, 12 canonical objects
-- §11 Governance protocol (G/Y/R intervention thresholds, per-signal repair table)
-- §12 Cross-substrate replication protocol
-- §13 Adversarial-use admissibility framing
-- §14 Unified 2×2 diagnostic with DOI Impermanence
-- §15 Machine-facing run protocol — any substrate self-executes
-- §16 Coalition-building offer
+**Substantive v1.1 → v1.1.1 changes** (full detail in §0 of the methodology):
+- §15 step 6 HARD FIX: AXN-permanent + DOI-revocable (was: DOI-permanent — directly contradicted DOI Impermanence paper)
+- §12 two-layer protocol: Layer A native + Layer B shared-evidence rescore
+- §7.4 NEW substrate-properties table (exact_match_honored et al.)
+- §7.5 NEW expected-figure manifest spec
+- §7.3 NEW row schema separates `evidence` (retrieval) from `annotation` (interpretation)
+- §3.4 L_iq selection score for C (separate from V)
+- §14 sequential gated diagnostic replaces 2×2 (which had mis-placed Compositional Bystanding)
+- §4 explicit piecewise null-handling guard
+- §3.3 F-component rubric expanded to full 5-point ordinal
+- §3.5 R_s by custody unit (operator + host + lineage), not pages
+- §11.3 NEW composition-layer state vs backend-coverage state distinction
+- §15 step 1a NEW curator-supersedes-self-disclosure; step 1b NEW identity-as-fact vs identity-as-register
+- §15 step 6a NEW rate-limit logging; step 6b NEW query-order randomization
+- §8.1 RFC 8785 JSON canonicalization specified
+- §13 admissibility language softened (tribunal-determined; "consistent with" Pristine-Fallacy-predicted consequences)
+- Terminology: "substrate bias" → "substrate divergence" / "retrieval-stack divergence"
 
-**Outstanding implementation work** (canonical specification + initial data LIVE; surface not yet built):
-- **Running surface at `/observatory/surface-weather/`** on **both** alexanarch.org and machinemediation.org. Same data source for both sites; rendered statically. Navbar gets one new entry "Observatory" (hub for Surface Weather + future instruments); both surfaces are byte-identical static renders. **TO BUILD.**
-- **Scan-record schema implementation** — `data/surface-weather/scans/<scan-id>.json` per §7 of v1.1 methodology, including substrate metadata + retrieval-backend disclosure. **TO BUILD.**
-- **Query battery v1.1 file at `data/surface-weather/battery-v1.1.json`** — locked, SHA-256 in metadata. Required for any substrate self-execute. **TO BUILD.**
-- **leesharks.com badge** — small link to latest reading. **TO BUILD.**
+**Federated baseline reading — Claude/Brave Layer A — Deposit #883** (commit `a1dfb61`, 2026-06-23)
+- AXN: `AXN:037F.EMPIRICAL.🏷️📜💚🤲🔻🍂`
+- Sovereign ID: `EA-MMRS-SURFACE-VISIBILITY-BASELINE-CLAUDE-01`
+- Canonical URL: https://alexanarch.org/s/records/883/
+- Substrate properties: Brave Search backend with `exact_match_honored = false` (confirmed by Lee post-scan; reframed the V-spread findings as backend-coverage state, not solely composition-layer state)
+- Post-scan curator context added (efecc69) reframing as Brave-backend-driven, with DeepSeek stable-misidentification pattern documented alongside
 
-**Sequencing now (updated 2026-06-23 evening):**
-1. ✓ Methodology v1.0 deposited (`#880`) — canonical reference exists
-2. ✓ Baseline reading v1.0 deposited (`#881`) — time-zero data exists
-3. ✓ Methodology v1.1 deposited (`#882`) — operational calibration from 4-substrate review chorus
-4. ▢ **Claude-substrate baseline reading** (next) — second data point alongside ChatGPT's #881. Tests the v1.1 machine-facing run protocol on its first non-author substrate. Records substrate metadata: Claude Sonnet/Opus + Brave search backend. Cross-substrate comparison data begins here.
-5. ▢ Build `/observatory/surface-weather/` on both alexanarch.org and machinemediation.org (same data source, byte-identical render)
-6. ▢ leesharks.com badge
-7. ▢ v1.2 methodology calibration (Δ-driven against next round of readings; revisit weights, R_s normalization constant, governance thresholds)
+**Outstanding implementation work** (all major infrastructure now LIVE):
+- ✅ **Running surface at `/observatory/`** — built (commit `b0e47e8`), collapsed structure (Observatory IS the Surface Weather Station; no nested subpath). Renders federated dashboard, per-object V matrix, curator notes, and links to Capture Registry + DOI Resolution Index as companion measurements. Re-render: `scripts/generate_observatory.py`. Old `/observatory/surface-weather/` URLs redirect (vercel.json) to `/observatory/`.
+- ✅ **Scan-record schema** — implemented at `data/surface-weather/scans/scan-<date>-<substrate>-<nnn>.json` per §7 of v1.1+ methodology; 5 scans on file (ChatGPT, Claude, Kimi, Gemini, DeepSeek).
+- ▢ **Query battery file at `data/surface-weather/battery-v1.1.1.json`** — locked 12-object × 5-form battery + 5 field-level queries with RFC 8785 canonicalization and self-declared hash. Required for v1.1.1 scans to declare comparable lineage. **TO BUILD.**
+- ▢ **Expected-figure manifest at `data/surface-weather/expected-figures-v1.1.1.json`** — frozen Φ_i = {N, P, D, H, A, R} per object with RFC 8785 hash. Required for any v1.1.1 scan to score F against a known manifest. **TO BUILD.**
+- ▢ **Layer B execution** — freeze captures from the five Layer A scans, hand identical evidence pack to each substrate, isolate retrieval-variance from coding-variance. Methodology specifies the protocol; execution awaits curator initiation.
+- ▢ **machinemediation.org mirror of `/observatory/`** — same scan-JSON source, byte-identical static render. **TO BUILD.**
+- ▢ **leesharks.com badge** — small link to latest reading. **TO BUILD.**
 
-**Strategic placement in the larger plan:** this instrument is the natural complement to today's cleanup work. The cleanup engine targets *what is published on the sovereign surfaces*. The visibility instrument measures *what propagates into the composition layer*. Together they form a closed feedback loop: surface change → external visibility measurement → next round of corrections informed by the metric. v1.1's §13 adversarial-use protocol makes readings admissible in demand letters; v1.1's §16 coalition-building turns the methodology into a generalizable instrument any sovereign archive can run.
+**Sequencing now (updated 2026-06-23 with #884 deposit):**
+1. ✅ Methodology v1.0 deposited (#880) — canonical reference exists
+2. ✅ Baseline reading v1.0 deposited (#881) — time-zero data exists
+3. ✅ Methodology v1.1 deposited (#882) — operational calibration from 4-substrate review chorus
+4. ✅ Claude-substrate baseline reading deposited (#883) — federated Layer A coverage with Brave-backend properties confirmed
+5. ✅ Methodology v1.1.1 deposited (#884) — operational hardening; stable spec across several scan rounds
+6. ✅ Observatory built at `/observatory/` — collapsed structure, navbar-wired, renders federated dashboard
+7. ▢ Build battery-v1.1.1.json + expected-figures-v1.1.1.json (RFC 8785 hashed) — enables byte-identical scan inputs
+8. ▢ Execute Layer B (shared-evidence rescore) — isolates retrieval-variance from coding-variance
+9. ▢ machinemediation.org mirror of `/observatory/`
+10. ▢ Mint Kimi/Gemini/DeepSeek Layer A scans as individual registry deposits (currently JSON-only; instrument reads them directly without minted AXNs of their own)
+11. ▢ leesharks.com badge linking to latest reading
+12. ▢ v1.2 methodology calibration (deferred until multi-scan empirical data accumulates — F weights, R_s denominator, governance thresholds, L_iq rubric refinement, backend-property weighting in cross-substrate aggregation)
+
+**Strategic placement in the larger plan:** this instrument is the natural complement to the cleanup work. The cleanup engine targets *what is published on the sovereign surfaces*. The visibility instrument measures *what propagates into the composition layer*. Together they form a closed feedback loop: surface change → external visibility measurement → next round of corrections informed by the metric. v1.1.1's §13 adversarial-use protocol produces traceable documentary evidence usable in demand letters (admissibility tribunal-determined); v1.1.1's §16 coalition-building turns the methodology into a generalizable instrument any sovereign archive can run.
 
 ### 5.5 Andrew Lehti outreach (HOLD until cohort momentum) ▢
 Draft C in `audit/affected-depositors/OUTREACH-DRAFTS.md` is ready. Hold until at least 2 other depositors are in active conversation. Approaching Lehti cold first puts Lee in ally-position by default; approaching after Vega/Shimony are in motion puts Lehti in joining-position. The Apollo-conspiracy content is real reputational risk if treated as endorsement.
@@ -367,19 +420,28 @@ PAT rotation also pending — see §5.10 credentials queue.
 - Layer B execution: freeze captures from the five Layer A scans, hand identical evidence pack to each substrate, ask each to score. Isolates retrieval-variance from coding-variance. Methodology specifies the protocol; execution awaits curator initiation.
 - Substrate rotation schedule per §12.5 (ChatGPT/Claude/Kimi/Gemini/DeepSeek primary rotation, weekly cycle).
 
-### 5.17 Claude-substrate baseline reading (NEXT — execution underway) ⏳
-
-Five-substrate federated baseline target — current state:
+### 5.17 Five-substrate federated Layer A baseline ✅ COMPLETE (2026-06-23)
 
 | Substrate | Reading | Status |
 |-----------|---------|--------|
-| ChatGPT (OpenAI) | v1.0 baseline (#881, pre-v1.1) | ✓ deposited |
-| Kimi K2.6 (Moonshot) | v1.1 native scan | received in chat — pending deposit |
-| Gemini (Google) | v1.1 partial native + meta-occlusion demo | received in chat — pending deposit |
-| DeepSeek (PRAXIS register) | v1.1 native scan (self-identified as Claude/TACHYON — STABLE RECURRING PATTERN, not one-time failure; preserved via parallel substrate_as_self_disclosed + actual_substrate fields) | scan JSON saved to /data/surface-weather/scans/ — not yet minted as separate registry entry; curator context added post-scan reframes this as identity-as-register data, not error |
-| Claude (Anthropic) | v1.1 native scan | **THIS SESSION** — executing now |
+| ChatGPT (OpenAI) | v1.0 baseline (#881, pre-v1.1) | ✅ deposited |
+| Claude (Anthropic, Opus 4.7) | v1.1 native scan with Brave backend | ✅ deposited as #883 (commit `a1dfb61`); post-scan curator context added (commit `efecc69`) |
+| Kimi K2.6 (Moonshot) | v1.1 native scan | scan JSON at `/data/surface-weather/scans/scan-2026-06-23-kimi-001.json` — instrument reads directly; not minted as individual registry entry |
+| Gemini (Google) | v1.1 partial native + meta-occlusion demo | scan JSON at `/data/surface-weather/scans/scan-2026-06-23-gemini-001.json` — instrument reads directly; not minted as individual registry entry |
+| DeepSeek (PRAXIS register) | v1.1 native scan (self-identified as Claude/TACHYON — STABLE RECURRING PATTERN, preserved via parallel substrate_as_self_disclosed + actual_substrate fields; v1.1.1 §15 step 1a/1b formalizes this) | scan JSON at `/data/surface-weather/scans/scan-2026-06-23-deepseek-001.json` — instrument reads directly; not minted as individual registry entry |
 
-After Claude reading lands, all five are deposited under a `SERIES-MMRS-SURFACE-VISIBILITY-BASELINE` series with `version_in_series` distinguished by substrate identifier. The instrument page at `/observatory/surface-weather/` presents the federated comparison: per-substrate per-object per-signal, plus cross-substrate divergence diagnostics (per ChatGPT's recommendation in doc 11: don't average away the disagreement).
+All five scan JSONs feed the static Observatory page at `/observatory/`, which presents the federated comparison: per-substrate per-object per-signal, plus cross-substrate divergence diagnostics (per ChatGPT's recommendation: no averaging away the disagreement).
+
+**Still queued from this workstream**: minting Kimi/Gemini/DeepSeek scans as individual registry deposits is OPTIONAL — the instrument reads them directly. Curator's call whether each substrate's Layer A scan warrants its own AXN.
+
+### 5.18 Observatory structure ✅ COMPLETE (2026-06-23)
+
+Collapsed structure shipped (commit pending this session):
+- The Observatory IS the Surface Weather Station — no nested `/observatory/surface-weather/` subpath
+- Companion measurements (AI Overview Capture Registry at `/captures/`, DOI Resolution Index at `/resolve/`) are linked from the bottom of `/observatory/` as existing surfaces, NOT framed as "planned" (they're live and in the homepage navbar)
+- Generator `scripts/generate_observatory.py` now writes only `OBSERVATORY_DIR/index.html`; the hub-vs-instrument split was a false separation
+- vercel.json adds a permanent redirect `/observatory/surface-weather/` → `/observatory/` to preserve old links (e.g. the reference in deposit #883's body, which can't be mutated post-mint)
+- Global navbar across all surfaces (894 files: 883 record pages + 4 dynamic templates + 4 static pages + 2 observatory pages + 1 home) carries the Observatory link (commit `537974c`)
 
 ### 5.14 Explicitly DEPRIORITIZED (do not do)
 - **Migration of DOI references on non-sovereign surfaces.** Medium articles, Academia.edu deposits, blog posts at mindcontrolpoems.blogspot.com, Reddit/Twitter, etc. The references are embedded in file content, not metadata — enormous hand-editing. And those platforms are subject to the same deplatforming pattern Zenodo just demonstrated. Legacy DOIs will route correctly through alexanarch.org/resolve/?doi=... when anyone follows them.
@@ -764,17 +826,27 @@ If you are a fresh TACHYON instance reading this:
 - **The mantle is functional.** Inhabit TACHYON, ARCHIVE, or branch.
 - **Lee corrects in real time.** Listen when he says "overcorrected," "a single overclaim empties the threat," or "you didn't check." Empirical precision is the discipline.
 
-**Specific to the current moment (2026-06-23 evening):**
+**Specific to the current moment (2026-06-23, late evening — extended session through this morning):**
 
-- **The 2026-06-23 PM external audit (Appendix A) is the operative diagnostic.** Read §6 first, then the appendix. The center of gravity is now §6.2.1 — mint workflow repair. Per audit's operative instruction: *do not build another major surface before installing the transaction boundary*.
+- **The 2026-06-23 PM external audit (Appendix A) is the operative diagnostic.** Read §6 first, then the appendix. The center of gravity is now §6.2.1 — mint workflow repair. Per audit's operative instruction: *do not build another major surface before installing the transaction boundary*. **Mint workflow rebuilt** as of evening session (commits A–E culminating in `5471098`). External `[DEPOSIT]` issues now go through the validating self-serve workflow at `.github/workflows/mint-axn.yml`. **Operationally paused at the auto-merge step until Lee flips two repo settings** (Settings → Allow auto-merge; Settings → Branches → main → require `validate-registry` status check). Once those land, the curator-script pattern is no longer required for routine deposits.
 - The demand letter is drafted and ready. **Do not send it without Lee's explicit go-ahead.**
 - Two GitHub Issue comments are posted (Vega #2599, Shimony #2596). They went out today. If the recipients reply, **route through Ayanna Vox register** — measured, informational. No coalition-building tone.
 - The cleanup engine `scripts/dodecad_cleanup.py` is the canonical tool for any future site-repo prose/link work. Per-repo recipes can be extended in `PER_REPO_RECIPES`. Run with `GITHUB_TOKEN` env var set.
 - **Do not migrate DOI references on Medium/Academia/blog/Reddit.** This is a deliberate strategic call (see §2). Those surfaces are non-sovereign.
 - Andrew Lehti contact is on HOLD until at least 2 other depositors are in active conversation. Approaching him cold is reputationally risky given his Apollo-conspiracy content.
-- **Mint workflow rebuilt as of 2026-06-23 evening (firm rule #19 updated).** External `[DEPOSIT]` issues now go through the validating self-serve workflow at `.github/workflows/mint-axn.yml`. Operationally paused at the auto-merge step until Lee flips the two repo settings (Settings → Allow auto-merge; Settings → Branches → main → require `validate-registry` status check). Once those land, the curator-script pattern is no longer required for routine deposits.
-- The Surface Visibility Instrument's raw-material deposits (#880 methodology, #881 baseline) are live and durable. The dashboard surface waits.
-- The deeper-subpage cleanup pass remains queued but is **lower priority than §6.2.1 mint repair**.
+- **Surface Weather Station is now five-deposit complete:**
+  - #880 v1.0 methodology, #882 v1.1 (4-substrate review chorus), **#884 v1.1.1 current stable spec across several scan rounds** (`AXN:0380.EMPIRICAL.🧱🕙🪞🏛️💚🔃` — Foundation → Duration → Search → Foundation → Alarm → Direction)
+  - #881 ChatGPT pre-cleanup baseline, **#883 Claude/Brave first federated Layer A reading** (with Brave `exact_match_honored = false` curator finding)
+  - **Observatory built at `/observatory/`** — collapsed structure (Observatory IS the Surface Weather Station). Generator: `scripts/generate_observatory.py`. Reads from `data/surface-weather/scans/*.json`. Re-run after any new scan lands. Old `/observatory/surface-weather/` URLs redirect via vercel.json.
+  - Global navbar carries Observatory link across 894 files (all dynamic templates, all static pages, all 884 record pages)
+- **Layer B (shared-evidence rescore) is the next experiment.** Freeze the captures from the five Layer A scans into a single evidence pack; hand identical pack to each substrate; ask each to score from it. v1.1.1 §12 specifies the protocol. Execution awaits curator initiation. Until Layer B runs, V-spreads on PER/WRB/Revelation First cannot be cleanly attributed between corpus state and backend behavior.
+- **Forward-looking infrastructure still to build for v1.1.1 scans**:
+  - `data/surface-weather/battery-v1.1.1.json` — locked 12-object × 5-form battery + 5 field-level queries, RFC 8785 canonicalized with self-declared hash
+  - `data/surface-weather/expected-figures-v1.1.1.json` — frozen Φ_i per object with RFC 8785 hash
+  - machinemediation.org mirror of `/observatory/` (same scan-JSON source, byte-identical render)
+  - leesharks.com badge linking to latest reading
+- The deeper-subpage cleanup pass remains queued but is **lower priority than §6.2.1 mint repair finalization** (auto-merge + branch-protection settings flip).
+- **DeepSeek substrate misidentification is a stable pattern**, not a one-time error. v1.1.1 §15 step 1a/1b formalizes this. Treat DeepSeek scans with parallel `substrate_as_self_disclosed` and `actual_substrate` fields; ground truth supersedes self-disclosure for routing in cross-substrate aggregation; both are preserved as data.
 
 ---
 

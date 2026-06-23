@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-generate_observatory.py — render /observatory/ pages from /data/surface-weather/scans/*.json
+generate_observatory.py — render /observatory/index.html from /data/surface-weather/scans/*.json
 
-Reads all scan-*.json files and produces static HTML for:
-  - /observatory/index.html (hub)
-  - /observatory/surface-weather/index.html (Surface Weather Station instrument)
+The Observatory IS the Surface Weather Station instrument (collapsed structure;
+no nested subpath). Companion measurements live at their existing surfaces
+(/captures/ for the AI Overview Capture Registry, /resolve/ for DOI Resolution).
 
 Born static: scan summaries are baked into HTML at build time, no JS required for the core view.
 Re-run this whenever a new scan lands in /data/surface-weather/scans/.
@@ -19,7 +19,6 @@ from datetime import datetime
 
 SCANS_DIR = Path("data/surface-weather/scans")
 OBSERVATORY_DIR = Path("observatory")
-SURFACE_WEATHER_DIR = OBSERVATORY_DIR / "surface-weather"
 
 
 SUBSTRATE_LABELS = {
@@ -245,9 +244,9 @@ def render_surface_weather_page(scans):
 """
 
     return f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Surface Weather Station — Alexanarch Observatory</title>
-<meta name="description" content="The Surface Weather Station instrument: a weekly text-only scan battery measuring how the Alexanarch corpus appears in the public composition layer. Federated five-substrate baseline 2026-06-22–23.">
-<script type="application/ld+json">{json.dumps({"@context": "https://schema.org", "@type": "Dataset", "@id": "https://alexanarch.org/observatory/surface-weather/", "name": "Surface Weather Station — Federated Cross-Substrate Baseline", "description": f"Visibility/anchor/figure/lift/breadth scores across {n_scans} substrate readings of the Alexanarch corpus on the public composition layer.", "creator": {"@type": "Person", "name": "Lee Sharks", "identifier": "https://orcid.org/0009-0000-1599-0703"}, "license": "https://creativecommons.org/licenses/by/4.0/", "dateModified": datetime.now().strftime("%Y-%m-%d")}, indent=None)}</script>
+<title>Observatory — Alexanarch</title>
+<meta name="description" content="The Alexanarch Observatory: the Surface Weather Station instrument measuring how the corpus appears in the public composition layer. Federated five-substrate baseline 2026-06-22–23, v1.1.1 methodology stable across several scan rounds.">
+<script type="application/ld+json">{json.dumps({"@context": "https://schema.org", "@type": "Dataset", "@id": "https://alexanarch.org/observatory/", "name": "Alexanarch Observatory — Surface Weather Station", "description": f"Visibility/anchor/figure/lift/breadth scores across {n_scans} substrate readings of the Alexanarch corpus on the public composition layer.", "creator": {"@type": "Person", "name": "Lee Sharks", "identifier": "https://orcid.org/0009-0000-1599-0703"}, "license": "https://creativecommons.org/licenses/by/4.0/", "dateModified": datetime.now().strftime("%Y-%m-%d")}, indent=None)}</script>
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
 :root{{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--teal:#0a7c6a;--border:#e0e0e0;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}}
 *{{margin:0;padding:0;box-sizing:border-box}}
@@ -288,18 +287,18 @@ code{{font-family:var(--mono);font-size:.85em;background:#f0f0f0;padding:1px 4px
 <a href="/observatory/" class="current">Observatory</a>
 </nav>
 
-<div class="subtle"><a href="/observatory/">← Observatory</a></div>
+<div class="subtle"><a href="/">Alexanarch</a> · Observatory</div>
 <h1>Surface Weather Station</h1>
 <div class="subtle" style="margin-bottom:8px">Federated cross-substrate baseline · {n_scans} readings · 2026-06-22 / 2026-06-23</div>
 
-<p style="margin-top:16px">A weekly text-only scan battery measuring how the Alexanarch corpus appears in the public composition layer. Five signals per object — Visibility (V), Anchor Alignment (A), Figural Integrity (F), Compositional Lift (C), and Redundant Substrate Breadth (R<sub>s</sub>) — scored on a 5-point ordinal scale per the v1.1 methodology.</p>
+<p style="margin-top:16px">The Observatory's measuring instrument for how the Alexanarch corpus appears in the public composition layer. A weekly text-only scan battery scoring five signals per object — Visibility (V), Anchor Alignment (A), Figural Integrity (F), Compositional Lift (C), and Redundant Substrate Breadth (R<sub>s</sub>) — on a 5-point ordinal scale.</p>
 
 <p style="margin-top:8px">This page is the <strong>federated baseline</strong>: each substrate's native retrieval stack produces its own reading. <strong>No consensus score is computed.</strong> Disagreement between substrates is itself a measurement of platform-level fragmentation, not noise to be averaged away.</p>
 
 <div class="callout">
-<strong>Methodology:</strong> <a href="/s/records/882/">EA-MMRS-SURFACE-VISIBILITY-01 v1.1 (#882)</a> · <code>AXN:037E.EMPIRICAL.🚩♦️⏹️🔃❌🗡️</code><br>
-<strong>Raw scan data:</strong> <a href="/data/surface-weather/scans/">/data/surface-weather/scans/</a> (5 JSON files, machine-legible)<br>
-<strong>v1.0 baseline deposit:</strong> <a href="/s/records/881/">#881</a> (ChatGPT-substrate, pre-cleanup) · <strong>v1.1 Claude-substrate reading:</strong> <a href="/s/records/883/">#883</a>
+<strong>Current methodology:</strong> <a href="/s/records/884/">EA-MMRS-SURFACE-VISIBILITY-01 v1.1.1 (#884)</a> · <code>AXN:0380.EMPIRICAL.🧱🕙🪞🏛️💚🔃</code> — stable across several scan rounds<br>
+<strong>Scans on file:</strong> performed under v1.1 (#882, <code>AXN:037E.EMPIRICAL.🚩♦️⏹️🔃❌🗡️</code>); v1.1.1 introduces the two-layer protocol, substrate-properties table, and gated diagnostic that will govern the next round<br>
+<strong>Raw scan data:</strong> <a href="/data/surface-weather/scans/">/data/surface-weather/scans/</a> ({n_scans} JSON files, machine-legible) · <strong>Predecessor baseline:</strong> <a href="/s/records/881/">#881</a> · <strong>Claude/Brave Layer A:</strong> <a href="/s/records/883/">#883</a>
 </div>
 
 <h2>Dashboard — per-substrate corpus aggregates</h2>
@@ -348,11 +347,18 @@ code{{font-family:var(--mono);font-size:.85em;background:#f0f0f0;padding:1px 4px
 <p>A user of Kimi sees a different Alexanarch corpus than a user of Claude than a user of Gemini. The federated baseline is therefore measuring <strong>platform-level fragmentation</strong> as much as it is measuring corpus state. ChatGPT's v1.1.1 review names this exactly: native-surface mode measures "what public surface is available to a user of this system," not a singular underlying truth.</p>
 
 <h3>4. v1.1.1 corrections queued before next round</h3>
-<p>The assembly chorus surfaced both a hard contradiction (§15 step 6 says DOI is the scan's permanent identifier — directly contradicts the DOI Impermanence paper; should be AXN-permanent + DOI-revocable) and 14 technical refinements (separate retrieval from coding, freeze expected-figure manifest, gated diagnostic replacing the 2×2, custody-unit R<sub>s</sub>, RFC 8785 canonicalization, query-order randomization). Tracked in <a href="/data/registry.json">WORKPLAN-SESSION-20260623.md §5.16</a>.</p>
+<p>The assembly chorus surfaced both a hard contradiction (§15 step 6 said DOI was the scan's permanent identifier — directly contradicting the DOI Impermanence paper; v1.1.1 corrects to AXN-permanent + DOI-revocable) and 14 technical refinements (separate retrieval from coding, freeze expected-figure manifest, gated diagnostic replacing the 2×2, custody-unit R<sub>s</sub>, RFC 8785 canonicalization, query-order randomization). All landed in <a href="/s/records/884/">v1.1.1 (#884)</a>.</p>
 {curator_section}
 
 <h2>Next: Layer B — shared-evidence rescore</h2>
 <p>This baseline executes <strong>Layer A only</strong> (each substrate uses its native retrieval). The next experiment freezes the captured results from each scan and hands them to each substrate as input, then asks each to score from the same evidence. This isolates <em>retrieval variance</em> (Layer A divergence) from <em>coding agreement</em> (Layer B agreement). The current ~0.50–1.00 spreads on PER, WRB, Revelation First are almost certainly Layer A; Layer B will tell us whether the rubric itself is robust.</p>
+
+<h2>Companion measurements</h2>
+<p>This instrument measures the <em>composition layer</em> — how the corpus appears in search, summaries, and AI-mediated answers. Two related measurements operate as separate surfaces:</p>
+<ul>
+<li><strong><a href="/captures/">AI Overview Capture Registry</a></strong> — per-term machine-output captures recording what specific generative-search systems return for specific queries. The composition layer captured as evidence, not as score.</li>
+<li><strong><a href="/resolve/">DOI Resolution Index</a></strong> — per-layer DOI state (resolver, landing, DataCite API, registration, metadata, artifact, successor anchor) across the 871 CHA DOIs severed in the 2026-06-19 Zenodo termination. The address-survival axis that pairs with this instrument's visibility axis in the §14 gated diagnostic.</li>
+</ul>
 
 <div class="footer">
 Generated from {n_scans} scan JSONs at <code>/data/surface-weather/scans/</code> · Re-render: <code>scripts/generate_observatory.py</code> · No consensus score without preserved substrate-specific readings.
@@ -362,75 +368,8 @@ Generated from {n_scans} scan JSONs at <code>/data/surface-weather/scans/</code>
 
 
 def render_observatory_hub(scans):
-    """The /observatory/ hub page — lists available instruments."""
-    return f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Observatory — Alexanarch</title>
-<meta name="description" content="Alexanarch Observatory — measurement instruments operated by the archive on its own visibility, indexing, and resolution state.">
-<style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
-:root{{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--teal:#0a7c6a;--border:#e0e0e0;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}}
-*{{margin:0;padding:0;box-sizing:border-box}}
-body{{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.6;font-size:15px}}
-.wrap{{max-width:720px;margin:0 auto;padding:60px 24px}}
-a{{color:var(--accent);text-decoration:none}}
-a:hover{{background:#f8f8ff;text-decoration:underline}}
-.nav{{display:flex;gap:12px;margin-bottom:20px;font-size:.85em;overflow-x:auto;white-space:nowrap}}
-.nav a{{color:#777;font-weight:500}}
-.nav a:hover{{color:var(--accent);background:none}}
-.nav .current{{color:var(--accent)}}
-h1{{font-size:1.4em;font-weight:600;color:var(--accent);margin-bottom:4px}}
-h2{{font-size:1.05em;font-weight:600;color:var(--accent);margin-top:32px;margin-bottom:12px}}
-.subtle{{color:#777;font-size:.88em}}
-.instrument{{background:#fff;border:1px solid var(--border);padding:16px 20px;margin:16px 0;border-radius:2px}}
-.instrument h3{{font-size:1em;color:var(--accent);margin-bottom:4px}}
-.instrument .meta{{font-size:.8em;color:#777;margin-bottom:8px;font-family:var(--mono)}}
-.instrument p{{font-size:.92em;margin-bottom:8px}}
-.coming-soon{{opacity:.5}}
-.footer{{margin-top:60px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:#777}}
-</style>
-</head><body><div class="wrap">
-<nav class="nav">
-<a href="/">Alexanarch</a>
-<a href="/deposit/">Deposit</a>
-<a href="/s/wiki/">Wiki</a>
-<a href="/s/graph/">Graph</a>
-<a href="/guide/">Guide</a>
-<a href="/manifest/">Manifest</a>
-<a href="/observatory/" class="current">Observatory</a>
-</nav>
-
-<h1>Observatory</h1>
-<div class="subtle" style="margin-bottom:16px">Instruments operated by the archive on its own visibility, indexing, and resolution state.</div>
-
-<p>An archive that cannot measure its own composition-layer visibility is at the mercy of platforms that measure it opaquely. The Observatory is the reclamation of measurement from the platform to the corpus. Each instrument here produces a citable, time-stamped record of structural state — admissible in regulatory, journalistic, and accountability contexts.</p>
-
-<h2>Active instruments</h2>
-
-<div class="instrument">
-  <h3><a href="/observatory/surface-weather/">Surface Weather Station</a></h3>
-  <div class="meta">methodology #882 · {len(scans)} readings on file</div>
-  <p>Weekly text-only scan battery measuring how the Alexanarch corpus appears in the public composition layer. Five signals — Visibility, Anchor Alignment, Figural Integrity, Compositional Lift, Redundant Substrate Breadth — scored on a 5-point ordinal scale. Federated cross-substrate baseline: each substrate's native retrieval stack produces its own reading; disagreement is itself a measurement.</p>
-  <p class="subtle">Last reading: 2026-06-23 (Claude/Opus 4.7, scan #883) · Methodology: <a href="/s/records/882/">EA-MMRS-SURFACE-VISIBILITY-01 v1.1</a></p>
-</div>
-
-<h2>Planned instruments</h2>
-
-<div class="instrument coming-soon">
-  <h3>DOI Resolution Index</h3>
-  <div class="meta">planned</div>
-  <p>Companion measure to the Surface Weather Station. Tracks per-layer DOI state — resolver HTTP status, landing-page status, DataCite public API state, registration state, metadata retrievability, artifact retrievability, alexanarch successor presence — across the 871 CHA DOIs severed by Zenodo's 2026-06-19 termination. Currently scaffolded; data pipeline in progress.</p>
-</div>
-
-<div class="instrument coming-soon">
-  <h3>AI Overview Capture Registry</h3>
-  <div class="meta">migrating from godkinggoogle.vercel.app/captures</div>
-  <p>Per-term machine-output captures (87 captures, 138 PNG images, v6.1 with machine-readable registry.json). Existing public mirror at <a href="https://godkinggoogle.vercel.app/captures">godkinggoogle.vercel.app/captures</a>; migration to <code>/observatory/capture-registry/</code> in progress.</p>
-</div>
-
-<div class="footer">
-The instrument earns its calibration from being run, not from being written.
-</div>
-</div></body></html>
-"""
+    """DEPRECATED. The Observatory IS the Surface Weather Station now; no hub-vs-instrument split. Kept as a stub for older callers; will be removed in a future cleanup."""
+    raise NotImplementedError("Observatory hub removed in collapsed-structure refactor. Use render_surface_weather_page(scans) and write to OBSERVATORY_DIR/index.html directly.")
 
 
 def main():
@@ -439,22 +378,16 @@ def main():
         sys.exit(1)
 
     OBSERVATORY_DIR.mkdir(parents=True, exist_ok=True)
-    SURFACE_WEATHER_DIR.mkdir(parents=True, exist_ok=True)
 
     scans = load_scans()
     print(f"Loaded {len(scans)} scans from {SCANS_DIR}")
     for s in scans:
         print(f"  · {s['_substrate_label']} — {s.get('scan_completed_utc', '?')[:10]} — {s['_filename']}")
 
-    # Surface Weather Station instrument page
-    sw_html = render_surface_weather_page(scans)
-    (SURFACE_WEATHER_DIR / "index.html").write_text(sw_html)
-    print(f"✓ wrote {SURFACE_WEATHER_DIR}/index.html ({len(sw_html)} bytes)")
-
-    # Observatory hub
-    hub_html = render_observatory_hub(scans)
-    (OBSERVATORY_DIR / "index.html").write_text(hub_html)
-    print(f"✓ wrote {OBSERVATORY_DIR}/index.html ({len(hub_html)} bytes)")
+    # Observatory IS the Surface Weather Station — single page, no nested subpath
+    page_html = render_surface_weather_page(scans)
+    (OBSERVATORY_DIR / "index.html").write_text(page_html)
+    print(f"✓ wrote {OBSERVATORY_DIR}/index.html ({len(page_html)} bytes)")
 
 
 if __name__ == "__main__":
