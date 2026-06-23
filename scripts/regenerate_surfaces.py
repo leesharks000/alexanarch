@@ -636,23 +636,21 @@ def regenerate_wiki(reg, dry_run=False):
             "total_count": chunk["count"],
         })
 
-        # Prev/next navigation
-        prev_link = ""
+        # Prev/next navigation — matches the addresses-page pager pattern
+        # (← Previous · Page N of M · count · Next →) so all paginated surfaces
+        # behave the same way.
         if i > 0:
             prev_chunk = chunks[i - 1]
             prev_slug = f"chunk-{prev_chunk['chunk_number']:03d}-deposits-{prev_chunk['first_deposit']}-to-{prev_chunk['last_deposit']}"
-            prev_link = (
-                f'<a href="/s/wiki/{prev_slug}/" style="color:var(--accent);font-weight:500">'
-                f'← Chunk {prev_chunk["chunk_number"]} (#{prev_chunk["first_deposit"]}–{prev_chunk["last_deposit"]})</a>'
-            )
-        next_link = ""
+            prev_link = f'<a href="/s/wiki/{prev_slug}/">← Previous</a>'
+        else:
+            prev_link = '<span class="disabled">← Previous</span>'
         if i < len(chunks) - 1:
             next_chunk = chunks[i + 1]
             next_slug = f"chunk-{next_chunk['chunk_number']:03d}-deposits-{next_chunk['first_deposit']}-to-{next_chunk['last_deposit']}"
-            next_link = (
-                f'<a href="/s/wiki/{next_slug}/" style="color:var(--accent);font-weight:500">'
-                f'Chunk {next_chunk["chunk_number"]} (#{next_chunk["first_deposit"]}–{next_chunk["last_deposit"]}) →</a>'
-            )
+            next_link = f'<a href="/s/wiki/{next_slug}/">Next →</a>'
+        else:
+            next_link = '<span class="disabled">Next →</span>'
 
         # Build chunk page
         parts = [_WIKI_HTML_HEAD]
@@ -665,10 +663,10 @@ def regenerate_wiki(reg, dry_run=False):
                      f'(of <strong>{chunk["count"]}</strong> deposits in the range).</p>\n')
 
         nav_strip = (
-            '<div style="display:flex;justify-content:space-between;align-items:center;'
-            'margin:18px 0;padding:10px 0;border-bottom:1px solid var(--border);font-size:.88em">'
-            f'<div>{prev_link or "&nbsp;"}</div>'
-            f'<div>{next_link or "&nbsp;"}</div>'
+            '<div class="pager">'
+            f'{prev_link}'
+            f'<span class="center">Chunk {chunk_num} of {len(chunks)} · {len(chunk_entries)} wiki entries</span>'
+            f'{next_link}'
             '</div>'
         )
         parts.append(nav_strip)
@@ -676,7 +674,7 @@ def regenerate_wiki(reg, dry_run=False):
         for d in chunk_entries:
             parts.append(render_entry_html(d))
 
-        # Repeat navigation at the bottom
+        # Repeat the same pager at the bottom for long pages.
         parts.append(nav_strip)
         parts.append(_WIKI_HTML_TAIL)
 
@@ -939,7 +937,7 @@ def regenerate_graph(reg, dry_run=False):
 
 
 # HTML templates for wiki and graph — keep the existing visual style/classes
-_WIKI_STYLE = """<style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.4em;font-weight:600;color:var(--accent);margin-bottom:8px}h2{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}h3{font-size:.9em;color:var(--teal);margin-top:14px}p{margin-bottom:10px;color:#333}.nav{display:flex;gap:16px;margin-bottom:24px;font-size:.85em;flex-wrap:wrap}.nav a{color:var(--dim);font-weight:500}.art{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;line-height:1.9;color:#333;font-size:.93em;margin:8px 0;white-space:pre-wrap}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}.glyph{margin-top:5px;color:var(--accent)}</style>"""
+_WIKI_STYLE = """<style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.4em;font-weight:600;color:var(--accent);margin-bottom:8px}h2{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}h3{font-size:.9em;color:var(--teal);margin-top:14px}p{margin-bottom:10px;color:#333}.nav{display:flex;gap:16px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;padding-bottom:6px}.nav a{color:var(--dim);font-weight:500}.nav a:hover{color:var(--accent)}.pager{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:18px 0;padding:12px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);font-size:.88em;flex-wrap:wrap}.pager a{color:var(--accent);font-weight:500;padding:6px 12px;border:1px solid var(--border);border-radius:4px;background:var(--surface);text-decoration:none}.pager a:hover{background:#f8f8ff}.pager .disabled{color:var(--dim);padding:6px 12px;border:1px solid var(--border);border-radius:4px;opacity:.4;background:transparent}.pager .center{color:var(--dim);font-size:.88em;text-align:center;flex:1}.art{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;line-height:1.9;color:#333;font-size:.93em;margin:8px 0;white-space:pre-wrap}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}.glyph{margin-top:5px;color:var(--accent)}</style>"""
 
 _WIKI_HTML_HEAD = (
     '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">'
@@ -960,7 +958,7 @@ _WIKI_HTML_TAIL = (
     '</body></html>\n'
 )
 
-_GRAPH_STYLE = """<style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.4em;font-weight:600;color:var(--accent);margin-bottom:8px}.nav{display:flex;gap:16px;margin-bottom:24px;font-size:.85em;flex-wrap:wrap}.nav a{color:var(--dim);font-weight:500}.er{display:flex;gap:6px;padding:2px 0;font-size:.82em;border-bottom:1px solid #f8f8f8;flex-wrap:wrap}.es{font-weight:500;color:var(--accent);min-width:140px}.ep{color:var(--teal);font-family:var(--mono);font-size:.8em;min-width:80px}.eo{color:#444}.ev{font-size:.65em;font-family:var(--mono);margin-left:3px}.evo{color:var(--teal)}.evi{color:#d4a537}.evp{color:#9966cc}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}.glyph{margin-top:5px;color:var(--accent)}</style>"""
+_GRAPH_STYLE = """<style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.4em;font-weight:600;color:var(--accent);margin-bottom:8px}.nav{display:flex;gap:16px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;padding-bottom:6px}.nav a{color:var(--dim);font-weight:500}.nav a:hover{color:var(--accent)}.er{display:flex;gap:6px;padding:2px 0;font-size:.82em;border-bottom:1px solid #f8f8f8;flex-wrap:wrap}.es{font-weight:500;color:var(--accent);min-width:140px}.ep{color:var(--teal);font-family:var(--mono);font-size:.8em;min-width:80px}.eo{color:#444}.ev{font-size:.65em;font-family:var(--mono);margin-left:3px}.evo{color:var(--teal)}.evi{color:#d4a537}.evp{color:#9966cc}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}.glyph{margin-top:5px;color:var(--accent)}</style>"""
 
 _GRAPH_HTML_HEAD = (
     '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">'

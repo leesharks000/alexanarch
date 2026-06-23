@@ -321,6 +321,36 @@ All four files at repo root; visible in standard GitHub navigation; canonical fo
 
 ## 5. Outstanding items (priority order for next session)
 
+### 4.15 Surface-consistency pass: nav scroll + wiki chunk pagers + observatory trim ✓ — 2026-06-23 evening
+
+Lee surfaced three inconsistencies discovered on mobile screenshots — they map to the same underlying principle as §4.13 (JS/static parity, single source of truth): **every public-navigation surface should behave the same way; surface-specific drift is anti-pattern**.
+
+**Nav-bar consistency — all surfaces now scroll horizontally**
+
+Audit pass across 17 surfaces revealed two outliers using `flex-wrap: wrap` (the wiki index + chunk pages, and the graph page) while every other surface used the canonical `overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;padding-bottom:6px` pattern. On mobile the wrap version stacked the 16-link nav onto three rows; the canonical pattern keeps it as a single scrolling strip.
+
+Fix in `scripts/regenerate_surfaces.py`: `_WIKI_STYLE` and `_GRAPH_STYLE` both updated to the canonical nav CSS. The bad surfaces are generated, so the fix lives in the generator — no per-page edits needed.
+
+**Wiki chunk pages now have addresses-style pagers (top + bottom)**
+
+The chunk pages had asymmetric prev/next anchors (`← Chunk 1 (#A-B)` / `Chunk 3 (#C-D) →`) without a centerpiece. The addresses page's pattern is cleaner: `← Previous · Page N of M · count · Next →`, with disabled-state styling for boundary chunks, identical at top and bottom of long pages.
+
+Added a `.pager` class to `_WIKI_STYLE` (`display:flex;justify-content:space-between` with proper button styling for prev/next and a center label slot). Refactored the chunk-page generator to use this class and emit `Chunk N of 9 · X wiki entries` as the centerpiece. Same strip rendered at top AND bottom. Disabled state shows greyed `← Previous` / `Next →` on boundary chunks (#1 has no prev; #9 has no next).
+
+**Observatory trim — public navigation surface, not working notes**
+
+The observatory page had accumulated working-notes content that belonged in deposits or in the workplan, not on a public discovery surface:
+
+- §4 "v1.1.1 corrections queued before next round" — workplan material describing what's coming in the next methodology version. The methodology deposit (#884) itself is the right home.
+- "Curator context" section — substrate-specific reframings (Claude/Brave backend properties, DeepSeek register-affinity hypotheses, methodology implications for v1.1.1). Working notes about substrate-to-metric relationships at the methodology level — important data, but a deposit's job to carry, not a public navigation page.
+- Substrate-internal attribution removed from §3 finding ("ChatGPT's v1.1.1 review names this exactly: ..." → just states the finding cleanly).
+
+The underlying data (post_hoc_curator_context fields on each scan JSON) remains preserved in `/data/surface-weather/scans/`. Public surface keeps: instrument description, methodology callout, dashboard, per-object visibility matrix, three headline findings (successor-anchor lag, retrieval-stack divergence, public-surface-is-multiple), forward-looking Layer B description, companion-measurements navigation aid. Dropped 17 lines / ~6 KB of working-notes content.
+
+Files touched: `scripts/regenerate_surfaces.py` (nav CSS for wiki + graph; pager class + chunk-page generator), `scripts/generate_observatory.py` (curator_section + §4 paragraph removed). All affected surfaces re-rendered cleanly: 17 wiki pages (1 index + 9 chunks plus the scroll-only changes propagated to existing pages), 1 graph page, 1 observatory page.
+
+
+
 ### 4.14 Versioning UX fix + gw.tachyon continuity record minted ✓ — 2026-06-23 late PM (post-audit)
 
 Lee surfaced a one-symptom observation that mapped to a deeper principle, plus an invitation to compress session state into a continuity record. Both landed in this round.

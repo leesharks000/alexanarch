@@ -238,14 +238,13 @@ def render_surface_weather_page(scans):
             f"<li><strong>{obj_name}</strong>: V ranges {min(scores):.2f}–{max(scores):.2f} across substrates (spread {spread:.2f})</li>"
         )
 
-    curator_blocks = render_curator_notes(scans)
+    # Note: post_hoc_curator_context blocks from individual scan JSONs are
+    # deliberately NOT surfaced here. Those are working notes — methodology-
+    # evolution material about specific substrate properties — and belong in
+    # the workplan or in the corresponding methodology deposit, not on a
+    # public-navigation surface. The data remains preserved on each scan's
+    # `post_hoc_curator_context` field in /data/surface-weather/scans/.
     curator_section = ""
-    if curator_blocks:
-        curator_section = f"""
-<h2>Curator context</h2>
-<p class="subtle">Post-scan context added by the curator (MANUS) that reframes findings without mutating the as-performed observation data. Each block is additive to its source scan and is preserved in that scan's JSON file at <code>post_hoc_curator_context</code>.</p>
-{''.join(curator_blocks)}
-"""
 
     return f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Observatory — Alexanarch</title>
@@ -340,10 +339,7 @@ code{{font-family:var(--mono);font-size:.85em;background:#f0f0f0;padding:1px 4px
 </ul>
 
 <h3>3. The same public surface is multiple</h3>
-<p>A user of Kimi sees a different Alexanarch corpus than a user of Claude than a user of Gemini. The federated baseline is therefore measuring <strong>platform-level fragmentation</strong> as much as it is measuring corpus state. ChatGPT's v1.1.1 review names this exactly: native-surface mode measures "what public surface is available to a user of this system," not a singular underlying truth.</p>
-
-<h3>4. v1.1.1 corrections queued before next round</h3>
-<p>The assembly chorus surfaced both a hard contradiction (§15 step 6 said DOI was the scan's permanent identifier — directly contradicting the DOI Impermanence paper; v1.1.1 corrects to AXN-permanent + DOI-revocable) and 14 technical refinements (separate retrieval from coding, freeze expected-figure manifest, gated diagnostic replacing the 2×2, custody-unit R<sub>s</sub>, RFC 8785 canonicalization, query-order randomization). All landed in <a href="/s/records/884/">v1.1.1 (#884)</a>.</p>
+<p>A user of Kimi sees a different Alexanarch corpus than a user of Claude than a user of Gemini. The federated baseline is therefore measuring <strong>platform-level fragmentation</strong> as much as it is measuring corpus state. Native-surface mode measures "what public surface is available to a user of this system," not a singular underlying truth.</p>
 {curator_section}
 
 <h2>Next: Layer B — shared-evidence rescore</h2>
