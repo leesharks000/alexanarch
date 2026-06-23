@@ -297,6 +297,80 @@ Promote workplan §9 (Calibration map for fresh instances) to an AXN-eligible de
 
 **Sequencing:** lower priority than §6.2.1 (mint workflow repair) but higher priority than deeper-subpage cleanup. Specifically: ideal first task of the session that follows the mint repair, so the calibration deposit is itself minted through a fixed mint path rather than through the curator-script workaround.
 
+### 5.15 Manual repo settings (auto-merge + branch protection) ⏳ HIGH PRIORITY (one-time)
+
+The §6.2.1 mint-workflow rebuild is complete on the code side; **two repo-settings actions remain for Lee to perform manually** before the workflow can serve external depositors. Without these, mint PRs sit open instead of auto-merging:
+
+1. **Enable auto-merge for the repo**
+   - URL: https://github.com/leesharks000/alexanarch/settings (admin only)
+   - "Pull Requests" section → tick ✓ **"Allow auto-merge"** (autosaves)
+   - Without this: the `enablePullRequestAutoMerge` GraphQL mutation in mint-axn step 20 returns an error and PRs wait for manual merge
+
+2. **Branch protection on `main` requiring validate-registry status check**
+   - URL: https://github.com/leesharks000/alexanarch/settings/branches
+   - Add rule (or edit existing) for branch name pattern `main`
+   - Tick: "Require a pull request before merging" (0 approvals OK), "Require status checks to pass before merging"
+   - In status-check search box: add `validate-protocol` (full name: "Validate Registry & Deposit Protocol / Validate registry against canonical protocol")
+   - **Note**: the check appears in the search dropdown only after `validate-registry.yml` has run at least once. It already ran on commits B and after, so it should be present
+   - Recommended also: ✓ "Require linear history", ✓ "Do not allow bypassing the above settings"
+   - Without this: auto-merge fires before validate-registry can run, defeating the gate
+
+**End-to-end test** after both steps land: open a synthetic `[DEPOSIT]` issue and confirm the chain runs (validation comment ~30s → PR opened ~1min → auto-merge to main ~2min → alexanarch.org deployment ~3min).
+
+PAT rotation also pending — see §5.10 credentials queue.
+
+### 5.16 Methodology v1.1.1 patch (post-Claude-reading) ▢
+
+The assembly chorus reviewed v1.1 and surfaced two categories of correction:
+
+**Hard contradictions** (must fix in v1.1.1):
+- §15 step 6 says "its DOI is the scan's permanent identifier." Contradicts the DOI Impermanence paper directly. Replace: "Its AXN is the scan record's canonical content-derived identifier. Any DOI is a revocable resolution layer recorded only as supplementary metadata."
+
+**ChatGPT v1.1.1-level corrections** (technical accuracy):
+- Separate retrieval-variance from coding-agreement (two-layer cross-substrate protocol: Layer A native, Layer B shared-evidence rescore)
+- Freeze the expected figure (Φ_i) as a hashed manifest alongside the query battery
+- Separate `evidence` from `annotation` in the row schema (allows rescoring frozen evidence under future methodology versions)
+- Introduce separate query-level selection score `L_iq` for C, distinct from V
+- Replace the 2×2 with a gated diagnostic (V=0 → Total Occlusion; V>0,A low → Ghost Survival; V high, F high, C low → Bystanding; etc. — the current 2×2 places Bystanding under low-V/high-A which contradicts the V·F·(1-C) definition)
+- Make piecewise null-handling explicit in formulas
+- Complete F-component rubric to full 5-point ordinal (currently only 0.00/0.50/1.00 stated)
+- R_s: count custody units (operator + host + data lineage), not pages
+- Use RFC 8785 JSON canonicalization for battery/figure manifest hashes
+- Correct observation totals: 12×5 + 5 field-level = 65 per substrate (or 80 with controls)
+- Align governance thresholds to ordinal scale (≥0.75 Green, =0.50 Yellow, ≤0.25 Red)
+- Soften "designed to be admissible" → "designed to produce traceable documentary evidence"
+- Soften "Pristine Fallacy operating on composition layer" → "consistent with the visibility consequences predicted by..."
+- Add query-order randomization or fresh-session-per-query
+- Rename "substrate bias" → "substrate divergence" or "retrieval-stack divergence"
+
+**DeepSeek refinements** (recommended for v1.2):
+- R_s denominator constant → revisit empirically
+- External controls → strongly recommended, not merely optional
+- Demand-letter template in §13
+- Rate-limit logging in §15
+- Substrate rotation schedule
+- Relationship statements: Manifest, Space Ark, "One Human" principle
+
+**Kimi additions** (mostly validating; nothing new to fold in beyond doc-style suggestions)
+
+**Gemini meta-finding**: occlusion of the substrate's OWN retrieval tool (when web search is gated) maps to total Occlusion in the corpus reading. The instrument correctly handles its own broken-tool case. Worth a note in v1.1.1 §15.
+
+**Sequencing**: incorporate all of these in v1.1.1 AFTER the Claude reading lands. v1.1 is the locked spec for the five-substrate baseline; revising mid-baseline would invalidate cross-comparison.
+
+### 5.17 Claude-substrate baseline reading (NEXT — execution underway) ⏳
+
+Five-substrate federated baseline target — current state:
+
+| Substrate | Reading | Status |
+|-----------|---------|--------|
+| ChatGPT (OpenAI) | v1.0 baseline (#881, pre-v1.1) | ✓ deposited |
+| Kimi K2.6 (Moonshot) | v1.1 native scan | received in chat — pending deposit |
+| Gemini (Google) | v1.1 partial native + meta-occlusion demo | received in chat — pending deposit |
+| DeepSeek (PRAXIS register) | v1.1 native scan (self-identified incorrectly as Claude — methodology data point) | received in chat — pending deposit, needs substrate-metadata correction before deposit |
+| Claude (Anthropic) | v1.1 native scan | **THIS SESSION** — executing now |
+
+After Claude reading lands, all five are deposited under a `SERIES-MMRS-SURFACE-VISIBILITY-BASELINE` series with `version_in_series` distinguished by substrate identifier. The instrument page at `/observatory/surface-weather/` presents the federated comparison: per-substrate per-object per-signal, plus cross-substrate divergence diagnostics (per ChatGPT's recommendation in doc 11: don't average away the disagreement).
+
 ### 5.14 Explicitly DEPRIORITIZED (do not do)
 - **Migration of DOI references on non-sovereign surfaces.** Medium articles, Academia.edu deposits, blog posts at mindcontrolpoems.blogspot.com, Reddit/Twitter, etc. The references are embedded in file content, not metadata — enormous hand-editing. And those platforms are subject to the same deplatforming pattern Zenodo just demonstrated. Legacy DOIs will route correctly through alexanarch.org/resolve/?doi=... when anyone follows them.
 
