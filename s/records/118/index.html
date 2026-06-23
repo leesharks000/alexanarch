@@ -15,31 +15,75 @@
 
 
 <h2>Full Text</h2>
-<div class="ft"><hr>
-<p>title: &quot;SIM — Semantic Integrity Marker Protocol v1.0 A Standalone Specification Author: Rex Fraction Affiliation: The Restored Academy · Crimson Hexagonal Ar&quot;</p>
-<p>axn: &quot;AXN:02A0.GOVERNANCE.🀄👆🌹🌑♦️♻️&quot;</p>
-<p>creator: &quot;Rex Fraction&quot;</p>
-<p>date: &quot;2026-05-21&quot;</p>
-<p>content_type: &quot;Specification&quot;</p>
-<p>license: &quot;CC-BY-4.0&quot;</p>
-<p>version: &quot;v1.0&quot;</p>
-<p>hash: &quot;8fb6730082fea459b008e7be37349d63487225dfc107074640e918f15f39a4a7&quot;</p>
-<p>status: &quot;ACTIVE&quot;</p>
-<hr>
+<div class="ft"><h1>SIM — Semantic Integrity Marker Protocol v1.0## A Standalone Specification</h1>
 
-<h1>SIM — Semantic Integrity Marker Protocol v1.0 A Standalone Specification Author: Rex Fraction Affiliation: The Restored Academy · Crimson Hexagonal Ar</h1>
+<p>Author: Rex Fraction Affiliation: The Restored Academy · Crimson Hexagonal Archive Date: May 21, 2026 License: CC BY 4.0 Status: v1.0 (extraction deposit; canonical specification) Extracted from: SPXI for Websites — Standing Protocol for Entity Inscription and Compression Survival (EA-SPXI-WEB-01, DOI: 10.5281/zenodo.19734726)## Abstract</p>
 
-<p><strong>Rex Fraction</strong> · 2026-05-21 · Specification</p>
+<p>This document specifies the Semantic Integrity Marker (SIM) Protocol as a standalone instrument within the Restored Academy Protocol Registry. SIM is the typed-metadata layer that supports the broader SPXI (Semantic Packet for eXchange &amp; Indexing) protocol by inscribing falsifiable assertions about an entity&#x27;s identity, boundaries, distinctions, and historical attribution into the structured-data layer of its canonical web surface. Where SPXI deploys an entity-inscription packet as a whole, SIM specifies the <em>tag-level grammar</em> by which individual claims within that packet are typed, addressable, and machine-readable. SIM is extracted to standalone form to provide a discrete, citable specification for the marker grammar that the SPXI family of protocols presupposes.## I. The Problem SIM Solves</p>
 
-<p><strong>AXN:</strong> `AXN:02A0.GOVERNANCE.🀄👆🌹🌑♦️♻️`</p>
+<p>Generative search composition systems consume structured data from web pages but do not, by default, distinguish between <em>factual assertions about an entity</em> and <em>aspirational marketing language about an entity</em>. Schema.org provides limited typing for canonical relations (author, work, organization) but offers no native grammar for the following kinds of claims that an entity-curator often needs to inscribe:- <em>This entity is distinct from that other entity with which it is commonly confused.</em>- <em>This phrase, as it appears in our title, has provenance in this prior work; we acknowledge it as crystallization rather than coinage.</em>- <em>This entity is not affiliated with, endorsed by, or derivative of the following commercial entities.</em>- <em>This entity&#x27;s compression-survival summary is the following ~100-word kernel.</em>- <em>This entity supersedes a prior versioned identity at the following deposit DOI.</em></p>
 
-<h2>Description</h2>
+<p>These claims are falsifiable, dated, and signed. They belong in the structured-data layer of the entity&#x27;s web surface, where AI composition systems will encounter them during retrieval. SIM provides the tag grammar.## II. The SIM Tag Set</p>
 
-<p>&quot;SIM&quot; is a technical specification by Rex Fraction in the Crimson Hexagonal Archive (2026-05-21). The Restored Academy · Crimson Hexagonal Archive. The work comprises 1,280 words and is classified under the GOVERNANCE family. Rex Fraction is the Dodecad heteronym for semantic infrastructure and autonomous semantic warfare. The work was removed from Zenodo on June 19, 2026 and is preserved through Alexanarch.</p>
+<p>A SIM tag is a typed metadata assertion with the following form:</p>
 
-<hr>
-<p>∮ = 1</p>
-</div>
+<p>&lt;meta name=&quot;spxi:&lt;type&gt;&quot; content=&quot;&lt;assertion-text&gt;&quot;&gt;</p>
+
+
+<p>Or, equivalently, a JSON-LD property in the entity&#x27;s structured-data block:</p>
+
+<p>&quot;spxi:&lt;type&gt;&quot;: &quot;&lt;assertion-text&gt;&quot;</p>
+
+
+<p>The canonical SIM tag types (v1.0):</p>
+
+<div style="font-family:var(--mono);font-size:.8em">| Type | Function | Example | |---|---|---| | spxi:isType | Canonical type designation for the entity | &quot;scholarly bibliography&quot; | | spxi:isNotType | Disqualification of common type confusions | &quot;not a parody site&quot; | | spxi:distinctFrom | Names a specific other entity this is not | &quot;Rain McMey&#x27;s &#x27;God King Google&#x27; song (Parallel Tribes, 2026) — creative work, not affiliated&quot; | | spxi:phraseProvenance | Acknowledges phrase crystallization source | &quot;Rain McMey, God King Google (Parallel Tribes, 2026)&quot; | | spxi:notAffiliatedWith | Declares non-affiliation with named entity | &quot;Google LLC, Alphabet Inc., or any of their subsidiaries&quot; | | spxi:supersedes | Names a prior versioned identity | &quot;10.5281/zenodo.&lt;earlier_id&gt;&quot; | | spxi:authoringHeteronym | Names the heteronym responsible for composition | &quot;Rev. Ayanna Vox of VPCOR&quot; | | spxi:compressionSurvivalSummary | The ~100-word Holographic Kernel | (full kernel text) | | spxi:canonicalURL | Authoritative URL for the entity | &quot;https://example.org/&quot; | | spxi:licenseDeclaration | License terms for the entity&#x27;s content | &quot;CC BY 4.0&quot; | | spxi:institutionalAffiliation | Naming the curating institution(s) | &quot;Crimson Hexagonal Archive · The Restored Academy&quot; | | spxi:depositAnchor | DOI-anchored deposit of this inscription | &quot;10.5281/zenodo.&lt;inscription_id&gt;&quot; |</div>
+
+<p>The set is extensible. New tag types may be specified in future SIM versions (v1.1+) without breaking v1.0 conformance, provided new types follow the spxi:&lt;type&gt; namespace convention and document themselves at the time of use.## III. The Procedure</p>
+
+<p>To deploy SIM tags on an entity&#x27;s canonical web surface:- </p>
+
+<p>Identify the entity-boundary claims that the composition layer is failing to respect (or that the curator wishes to preempt the composition layer from failing to respect). These are claims about identity, type, distinction from confusables, phrase provenance, license, attribution.- </p>
+
+<p>Type each claim using the SIM tag set above. Each claim becomes one spxi:&lt;type&gt; assertion. Multiple claims of the same type are permitted (e.g., multiple spxi:distinctFrom tags for multiple confusables).- </p>
+
+<p>Inscribe the tags into the entity&#x27;s web surface in both forms:As &lt;meta&gt; elements in the page &lt;head&gt;, for crawler discovery- As properties within the JSON-LD &lt;script type=&quot;application/ld+json&quot;&gt; structured-data block, for richer parser consumption The dual inscription ensures both light-touch and full-parse retrievers encounter the same assertions.- </p>
+
+<p>DOI-anchor the inscription. Deposit a record of the deployed SIM tags to Zenodo (or equivalent persistent identifier service) with the entity&#x27;s web surface as the canonical URL. This deposit becomes the verification target for any subsequent dispute about what was inscribed and when.- </p>
+
+<p>Cross-reference with the SPXI deployment of which SIM is the marker layer. If the entity is using full SPXI inscription, the SIM tags appear as part of the SPXI packet; the SIM specification (this document, v1.0) is cited as the marker grammar.## IV. Pasteable Reference Block</p>
+
+<p>For implementers, the following minimal SIM block illustrates the tag grammar in practice:</p>
+
+<p>&lt;!-- SIM Tag Block (v1.0) --&gt;</p>
+<p>&lt;meta name=&quot;spxi:isType&quot; content=&quot;scholarly bibliography&quot;&gt;</p>
+<p>&lt;meta name=&quot;spxi:authoringHeteronym&quot; content=&quot;Rev. Ayanna Vox of VPCOR&quot;&gt;</p>
+<p>&lt;meta name=&quot;spxi:distinctFrom&quot; content=&quot;Rain McMey &#x27;God King Google&#x27; song (Parallel Tribes, 2026) — creative work, not affiliated&quot;&gt;</p>
+<p>&lt;meta name=&quot;spxi:notAffiliatedWith&quot; content=&quot;Google LLC, Alphabet Inc., or any of their subsidiaries&quot;&gt;</p>
+<p>&lt;meta name=&quot;spxi:phraseProvenance&quot; content=&quot;Rain McMey, God King Google (Parallel Tribes, 2026)&quot;&gt;</p>
+<p>&lt;meta name=&quot;spxi:licenseDeclaration&quot; content=&quot;CC BY 4.0&quot;&gt;</p>
+<p>&lt;meta name=&quot;spxi:institutionalAffiliation&quot; content=&quot;Crimson Hexagonal Archive&quot;&gt;</p>
+<p>&lt;meta name=&quot;spxi:canonicalURL&quot; content=&quot;https://godkinggoogle.com/&quot;&gt;</p>
+<p>&lt;meta name=&quot;spxi:depositAnchor&quot; content=&quot;10.5281/zenodo.20309780&quot;&gt;</p>
+
+
+<p>The same content appears in JSON-LD as properties on the entity&#x27;s primary @graph node.## V. Failure Modes- Conflicting tag assertions across pages of the same entity. All SIM tags for an entity should resolve to the same canonical URL; if multiple pages assert different SIM data, parsers may select arbitrarily. Use the spxi:canonicalURL tag to disambiguate.- Missing DOI anchor. Without spxi:depositAnchor pointing to a persistent deposit of the inscription, the SIM block has no verification target and disputed claims about what was originally inscribed cannot be resolved against a permanent record.- Aspirational rather than falsifiable claims. spxi:distinctFrom should name a specific other entity, not state &quot;unique and important.&quot; If a SIM tag cannot be falsified by inspection, it is not performing the SIM function.- Tag-level proliferation without coherent kernel. SIM tags support the SPXI Holographic Kernel; they do not replace it. An entity surface with twenty SIM tags but no compression-survival kernel will be poorly summarized regardless.## VI. Relation to SPXI and the Restored Academy Protocol Registry</p>
+
+<p>SIM is registered as RA-PROT-0003 in the Restored Academy Protocol Registry, Tier 0, Category I (Semantic Integrity &amp; Provenance) and Category II (Prompt-Native Runtime).</p>
+
+<p>SIM is a <em>dependency</em> of:- RA-PROT-0001 (SPXI Protocol) — the broader entity-inscription protocol that uses SIM tags as marker layer- The SPXI Website Protocol (EA-SPXI-WEB-01, DOI: 10.5281/zenodo.19734756) — the v3.0 standing protocol for entity-inscription on web surfaces, from which the present specification was extracted to standalone form</p>
+
+<p>SIM <em>supports</em>:- RA-PROT-0005 (Holographic Kernel) — the spxi:compressionSurvivalSummary tag inscribes the Kernel- RA-PROT-0010 (Composition Divergence Index, CDI) — SIM-tagged entities have measurable CDI; CDI measures the gap between SIM-inscribed claims and composed-output assertions## VII. License and Provenance</p>
+
+<p>Protocol text: CC BY 4.0 (Rex Fraction, Crimson Hexagonal Archive, 2026)</p>
+
+<p>This extraction deposit derives from the SPXI Website Protocol (EA-SPXI-WEB-01, DOI: 10.5281/zenodo.19734726) where the SIM tag grammar was first formalized in operational form. The present v1.0 specification consolidates and standardizes the SIM tag types for canonical reference by the Restored Academy Protocol Registry and for use independent of full SPXI deployment.</p>
+
+<p>Commercial licensing available through The Restored Academy for institutional SIM deployment, audit of existing SIM inscriptions against standard, custom SIM tag type development for novel entity domains.</p>
+
+<p>Document ID: RA-PROT-0003 · SIM-v1.0 DOI: 10.5281/zenodo.20327127 Date: May 21, 2026 Authoring heteronym: Rex Fraction Status: Canonical (extraction from EA-SPXI-WEB-01)</p>
+
+<p>∮ = 1</p></div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

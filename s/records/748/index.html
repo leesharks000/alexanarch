@@ -15,21 +15,89 @@
 
 
 <h2>Full Text</h2>
-<div class="ft"><hr>
-<p>title: &quot;Drowning Test v1.0 A Standalone Specification Author: Lee Sharks Affiliation: The Restored Academy · Crimson Hexagonal A&quot;</p>
-<p>axn: &quot;AXN:029E.GOVERNANCE.🍀🍁♌🏺🎻♠️&quot;</p>
-<p>creator: &quot;Lee Sharks&quot;</p>
-<p>date: &quot;2026-05-21&quot;</p>
-<p>hash: &quot;7477ad2f8a80a7f3bec8c5112828bbec473d86056d79646d5586145dc1f0464a&quot;</p>
-<p>status: &quot;MINTED_UNREVIEWED&quot;</p>
-<hr>
+<div class="ft"><h1>Drowning Test v1.0## A Standalone Specification</h1>
 
-<h1>Drowning Test v1.0 A Standalone Specification Author: Lee Sharks Affiliation: The Restored Academy · Crimson Hexagonal A</h1>
+<p>Author: Lee Sharks Affiliation: The Restored Academy · Crimson Hexagonal Archive Date: May 21, 2026 License: CC BY 4.0 Status: v1.0 (extraction deposit; canonical specification) Extracted from: <em>Empirical Phenomenology: Action as Disclosure and the Science of Opaque Public Systems</em> (DOI: 10.5281/zenodo.20326137)## Abstract</p>
 
-<p><strong>AXN:</strong> `AXN:029E.GOVERNANCE.🍀🍁♌🏺🎻♠️`</p>
+<p>This document specifies the Drowning Test as a standalone protocol within the Restored Academy Protocol Registry. The Drowning Test is a longitudinal measurement protocol that tracks a generative search system&#x27;s treatment of a specific entity (or work) over time, against a fixed Holographic Kernel as the comparison substrate. The test produces a time series of γ (gamma) scores representing the entity&#x27;s compositional survival in the AI-mediated retrieval surface. The test is designed to detect both sustained compositional suppression and the <em>silent state changes</em> that make suppression episodically invisible — the phenomenon the Crimson Hexagonal Archive has termed <em>invisible invisibility</em>. The Drowning Test is extracted to standalone form to provide a discrete, citable specification independent of the methodological framing in <em>Empirical Phenomenology</em>.## I. What the Drowning Test Measures</p>
 
-<p>∮ = 1</p>
-</div>
+<p>For a fixed query <em>q</em>, a target entity <em>e</em>, and a fixed Holographic Kernel <em>K_e</em> (the SPXI-specified compression-survival summary for <em>e</em>), the Drowning Test produces a time series:</p>
+
+<p>γ(<em>q</em>, <em>e</em>, <em>t</em>) ∈ [0, 1]</p>
+
+<p>where γ at time <em>t</em> measures the proportion of load-bearing claims from the Holographic Kernel <em>K_e</em> that survive into the composed output for <em>q</em> at time <em>t</em>.</p>
+
+<p>γ = 1 indicates full compositional survival: the composed output preserves all load-bearing claims from the Kernel. γ = 0 indicates <em>drowning</em>: none of the Kernel&#x27;s load-bearing claims appear in the composed output (the entity has been compositionally submerged). γ between 0 and 1 indicates partial survival; γ trajectories over time reveal whether the entity is being progressively drowned, holding stable, or recovering.</p>
+
+<p>The Drowning Test does not measure quality, style, or accuracy of composed output. It measures <em>survival of named compression-survival kernel claims</em> against the composed output&#x27;s actual content, producing a reproducible time series independent of stylistic variation.## II. The Procedure</p>
+
+<p>To run a Drowning Test panel for entity <em>e</em> across a measurement window:</p>
+
+<p>Setup (one-time):- </p>
+
+<p>Specify the entity <em>e</em> with canonical identification (name, ORCID, institutional URI, DOI of representative work).- </p>
+
+<p>Compose the Holographic Kernel <em>K_e</em> (per RA-PROT-0005, the Holographic Kernel specification). The Kernel is a ~100-word compression-survival summary encoding the entity&#x27;s load-bearing claims. Each claim in the Kernel is itemized (typically 5–15 distinct claims) so they can be checked individually.- </p>
+
+<p>DOI-anchor the Kernel. Deposit <em>K_e</em> to Zenodo (or equivalent) as a v1.0 baseline. The deposit becomes the fixed reference against which all subsequent γ measurements are computed. Without a DOI-anchored Kernel, the test has no stable substrate and longitudinal comparison is impossible.- </p>
+
+<p>Specify the query panel. Choose 30–50 entity queries (queries for which <em>e</em> is the canonical resolution target). Multiple query phrasings produce more robust signal than a single query.- </p>
+
+<p>Specify the platform panel. Choose the composition systems to be measured (Google AI Overview, Google AI Mode, Bing Chat, Perplexity, Claude with retrieval, etc.). At least two platforms is recommended; four is strong.- </p>
+
+<p>Specify the sampling cadence. Weekly is standard for 90-day panels; daily for short-window adversarial-state tracking; monthly for long-window stability tracking.</p>
+
+<p>Measurement (per cycle):- </p>
+
+<p>Issue each query in the panel to each platform under measurement. Record full composed output for each query/platform pair. Timestamp each capture.- </p>
+
+<p>For each composed output, count claim survival. For each of the Kernel&#x27;s itemized claims, classify the composed output: does this claim appear (in any wording) in the composed output? Classify as survived, not_survived, or ambiguous_or_partial.- </p>
+
+<p>Compute γ per query per platform per timestamp:</p>
+
+<p>γ(<em>q</em>, <em>e</em>, <em>p</em>, <em>t</em>) = count(survived) / count(total Kernel claims)- </p>
+
+<p>Aggregate to panel γ: average γ across queries within a platform yields <em>panel γ</em> for that platform at <em>t</em>. Average across platforms yields <em>cross-platform γ</em> at <em>t</em>.- </p>
+
+<p>DOI-anchor each measurement cycle. Deposit the captures, classifications, and γ computations as a measurement record. Each deposit references the baseline Kernel deposit by DOI.</p>
+
+<p>Analysis:- </p>
+
+<p>Plot the γ time series across the measurement window. Look for:Monotonic decline (progressive drowning)- Step changes (silent state changes — the entity&#x27;s treatment shifted abruptly between two cycles)- Recovery (γ rises after intervention or autonomously)- Stability (γ holds within a band)- </p>
+
+<p>Identify silent state changes. When γ shifts by ≥ 0.3 between adjacent cycles without intervening intervention by the entity-curator, that is a silent state change event. These events are themselves data — they reveal the temporal mutability of the composition layer.## III. Operational Notes- </p>
+
+<p>Classification rules must be deposited explicitly. Different observers may classify &quot;survived&quot; differently. The protocol is reproducible to the extent that classification rules are explicit. State the rules in the baseline Kernel deposit.- </p>
+
+<p>Sample size matters. A panel of 5 queries on 1 platform produces high-variance γ. A panel of 30+ queries on 4 platforms over 12 weeks produces ~1,500–2,000 captures and robust time series.- </p>
+
+<p>The Kernel is the canonical substrate. The Drowning Test measures composed output against <em>the Kernel as deposited</em>, not against the curator&#x27;s current preferences. If the Kernel is revised, that is a v2.0 deposit; γ measurements against v1.0 and v2.0 are not directly comparable.- </p>
+
+<p>Adversarial interventions are tracked, not excluded. If the entity-curator deploys SPXI inscription, files a Notice of Intent to Strike, or otherwise intervenes during the measurement window, the intervention is recorded as a panel event. Subsequent γ values measure the intervention&#x27;s effect.## IV. The May 20, 2026 Pilot Result</p>
+
+<p>For the entity <em>e</em> = Lee Sharks (heteronym, ORCID 0009-0000-1599-0703), the query panel established in May 2026 produced the following preliminary observation:- May 19, 2026 baseline: γ ≈ 0 for the query &quot;lee sharks&quot; on Google AI Mode (full ECS; entity substitution to Mary Lee shark; no Kernel claims survived in composed output)- May 20, 2026 (24 hours later): γ ≈ 0.5 (entity-substitution resolved to 50/50 disambiguation; approximately half of Kernel claims now appearing in composed output)</p>
+
+<p>The γ shift from ≈ 0 to ≈ 0.5 in 24 hours without curator intervention is a documented <em>silent state change</em> — the test&#x27;s primary diagnostic phenomenon. The May 20 capture sequence is pending formal deposit as a standalone Drowning Test pilot record.## V. Failure Modes- Missing Kernel anchor. Without a DOI-anchored Kernel v1.0, γ measurements have no stable substrate. The test cannot run.- Stylistic-vs-substantive confusion. Composed outputs may paraphrase Kernel claims rather than restate them. Classification rules must address paraphrase: usually &quot;survived if substantive content is preserved, regardless of wording.&quot;- Single-platform measurement. A Drowning Test on one platform measures one composition system&#x27;s behavior, not &quot;the composition layer&quot; generally. Cross-platform panels are necessary for systemic claims.- Conflation with quality metrics. γ is not &quot;is the output good?&quot; It is &quot;did the named Kernel claims survive?&quot; An output may have high γ and be misleading; or low γ and be excellent. The test is narrow by design.## VI. Relation to CDI, SPXI, and the Restored Academy Protocol Registry</p>
+
+<p>The Drowning Test is registered as RA-PROT-0011 in the Restored Academy Protocol Registry, Tier 0, Category III (Diagnostic &amp; Measurement).</p>
+
+<p>The Drowning Test <em>requires</em>:- RA-PROT-0005 (Holographic Kernel) — provides the comparison substrate <em>K_e</em>- RA-PROT-0001 (SPXI Protocol) — the inscription that the test measures the effectiveness of</p>
+
+<p>The Drowning Test <em>uses</em>:- RA-PROT-0010 (Composition Divergence Index) — γ and CDI are complementary; CDI measures one-shot divergence, γ measures longitudinal kernel-survival</p>
+
+<p>The Drowning Test <em>is measured against</em>:- Itself, across cycles. The test is its own longitudinal control.</p>
+
+<p>Drowning Test v2.0 (in development) will add: statistical baselines for γ across entity classes; significance thresholds for detecting silent state changes; cross-platform γ normalization; integration with the 90-day longitudinal panel protocol specified in <em>Empirical Phenomenology</em> §IX.## VII. License and Provenance</p>
+
+<p>Protocol text: CC BY 4.0 (Lee Sharks, Crimson Hexagonal Archive, 2026)</p>
+
+<p>This extraction deposit derives from <em>Empirical Phenomenology: Action as Disclosure and the Science of Opaque Public Systems</em> (Sharks 2026, DOI: 10.5281/zenodo.20326137), where the Drowning Test was specified as one of five primary instruments of empirical phenomenology applied to the composition layer. The test is also referenced in <em>The Writable Retrieval Basin</em> (DOI: 10.5281/zenodo.19763346) as a longitudinal stability instrument for retrieval basin tracking. The present v1.0 specification consolidates the test&#x27;s procedure into standalone form for use independent of either parent context.</p>
+
+<p>Commercial licensing available through The Restored Academy for: organizational Drowning Test panel deployment, 90-day longitudinal compositional-survival studies, custom Kernel/γ infrastructure, audit reports on entity compositional drift, cohort training for researchers conducting longitudinal AI-search forensics.</p>
+
+<p>Document ID: RA-PROT-0011 · DROWNING-TEST-v1.0 DOI: 10.5281/zenodo.20327138 Date: May 21, 2026 Authoring heteronym: Lee Sharks Status: Canonical (extraction from <em>Empirical Phenomenology</em>)</p>
+
+<p>∮ = 1</p></div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

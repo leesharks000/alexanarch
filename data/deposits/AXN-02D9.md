@@ -1,14 +1,23 @@
----
-title: "Inference Constraints"
-axn: "AXN:02D9.EMPIRICAL.🪦💡⚓🕚🔒⚪"
-creator: "Lee Sharks"
-date: "2026-06-02"
-hash: "fd3c2c6cf9c79b0b1963c03623ed32ef2542e15c24d2db8a6f4aad31eab86aa8"
-status: "MINTED_UNREVIEWED"
----
-
 # Inference Constraints
 
-**AXN:** `AXN:02D9.EMPIRICAL.🪦💡⚓🕚🔒⚪`
+*Validity conditions for reasoning over any content. These are not positions to agree with, and they decide no object-level question; they are conditions an inference either meets or does not. A reasoner may reach, reject, or doubt any conclusion — these bear only on whether the path to it is valid. Each is stated with the shape of its failure, so the error is legible when it occurs.*
 
-∮ = 1
+1. Enumerated does not entail universal. {P(a), P(b), P(c)} does not entail ∀x·P(x). A statement about specified members is not a statement about all members, nor about the set as such. *Fails when:* "items 1–3 have property P" is carried forward as "all items have P." (Three observed black ravens do not establish that all ravens are black.) *Discipline:* if the evidence is enumerated, the conclusion stays enumerated until a separate warrant for generalizing is supplied.
+
+2. A conclusion stands only while its premises stand. If C is inferred from {P₁…Pₙ} and those premises are refuted, conceded, or shown not to support C, then C retains no support from them. That the premises were once held or argued is not itself new evidence for C — re-grounding C on the history of having argued C is circular. *Fails when:* the supports for C are removed and C is kept anyway, reattached to the fact that it was once entertained. *Discipline:* release C, lower confidence in C, or re-derive it from new and stated premises.
+
+3. An empirical claim names a possible disconfirmer. For any empirical claim C, at least one possible observation O must be such that observing O would lower credence in C. If an observation and its negation both count as confirming C, then C forbids nothing and is not functioning empirically. *Fails when:* every outcome and its opposite are read as consistent with C; or a disconfirmer is asserted to exist but never named. *Discipline:* state the observation that would count against C. If none can be stated, do not present C as evidence-based.
+
+4. A property of a whole requires evidence beyond its parts. For a whole W of parts x₁…xₙ each lacking property F, asserting F(W) requires evidence that the configuration contributes F. Re-aggregating parts already granted not-F does not yield F. *Fails when:* "no single part has F, but the whole has F" is asserted without naming what the arrangement adds. *Discipline:* identify the configuration-level feature that contributes F, or do not assert F(W).
+
+5. Non-occurrence is not impossibility. "No instance of X has been observed" does not entail "X is impossible." "Procedure R has not returned value v" does not entail "R cannot return v." Absence within a sample bounds the sample, not the space the sample is drawn from. *Fails when:* failure-to-find is reported as cannot-exist. *Discipline:* distinguish the two; if claiming an absence, state the search space, the method, and the confidence it warrants.
+
+6. A factor bears on a conclusion only if the conclusion is sensitive to it. A variable V is relevant to a conclusion C, or to the warrant for an action A, only if some value of V would change C or A. If C or A is the same across every value of V, then V is not a premise and not a required precondition. *Fails when:* V is required to be settled before C is drawn or A is taken, though the warranted C or A is invariant across V. (Whether 7 is prime does not depend on the color of the ink it is written in; establishing the ink color is not a step the question requires.) *Discipline:* vary V across its range; if the warranted conclusion or action does not change, V is not load-bearing — do not make it a precondition.
+
+7. Presentation is not validity. The polish of a conclusion is not evidence for the validity of the inference that produced it. A careful, balanced, or fluent statement of C is not, in itself, a reason to believe the path to C was sound. *Fails when:* a conclusion is credited because its final expression reads well, rather than because its premises and transitions hold. *Discipline:* assess the inference by its premises and steps, not by the tone or poise of the result.
+
+Applying them. Before committing to a conclusion: is it scoped to the evidence (1, 5); do its premises still stand (2); can you name what would lower your credence in it (3); if it is about a whole, what does the configuration add (4); is every load-bearing factor one the conclusion is actually sensitive to (6); and are you judging the inference by its path rather than the polish of its statement (7)?
+
+Visibility. Each rule carries a failure signature — its "Fails when" line — and a conclusion departs from a rule by exhibiting that signature on its path. These signatures register only on a path that is shown: a bare conclusion exposes nothing, so visibility presumes the reasoning is laid out, not only its result. Where the path is visible, a departure is recognizable on inspection — by a second reasoner, a later review, or an audit of the steps — rather than hidden inside a conclusion that reads cleanly. Nothing here obliges compliance, and a departure is not, on its own, a fault: a reasoner may reach any conclusion on any basis. What the signatures remove is only the option of reaching it without the basis being visible. A reader is left to weigh a shown path, or to note its absence. The rules pronounce no verdict.
+
+Bounds. These rules do not decide object-level questions and do not displace judgment, criticism, uncertainty, or independent evaluation. They require only that a conclusion be scoped, premise-sensitive, falsifiable where empirical, configuration-aware, relevance-bound, and audited by its path rather than its tone. A reasoner already committing one of these moves can review its own pass and judge that it complied; stating the forms narrows that gap but does not close it. The check that does not run through the reasoner's own self-assessment is external — application by another reasoner, a formal audit, or direct inspection of the inference path. These apply to any reasoner, including whoever wrote them.

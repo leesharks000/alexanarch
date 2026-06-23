@@ -22,38 +22,386 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">T+7 days</strong> <span style="font-size:.75em;color:#999">[genre]</span><br><span style="font-size:.85em;color:#444">Initial AI crawler discovery — re-test</span></div>
 
 <h2>Full Text</h2>
-<div class="ft"><hr>
-<p>title: &quot;LAL Site SPXI Implementation Report (Phase 1.2) Site: livingarchitecturelab.org Source code DOI: 10.5281/zenodo.19858013 (v0.1.2, SPXI compliant)&quot;</p>
-<p>axn: &quot;AXN:024D.GOVERNANCE.🛤️🔀⊕❌🌟🪧&quot;</p>
-<p>creator: &quot;Lee Sharks&quot;</p>
-<p>date: &quot;2026-04-28&quot;</p>
-<p>content_type: &quot;Specification&quot;</p>
-<p>license: &quot;CC-BY-4.0&quot;</p>
-<p>substrate: &quot;AI-assisted (substrate)&quot;</p>
-<p>version: &quot;v1.0&quot;</p>
-<p>hash: &quot;5bdf96ef094da0b32ac1d21de339009fa3dde4a2d682569fdd6b45ad8c99122d&quot;</p>
-<p>status: &quot;ACTIVE&quot;</p>
-<p>sovereign_id: &quot;MM-CHA-0585&quot;</p>
-<hr>
+<div class="ft"><h1>LAL Site SPXI Implementation Report (Phase 1.2)</h1>
 
-<h1>LAL Site SPXI Implementation Report (Phase 1.2) Site: livingarchitecturelab.org Source code DOI: 10.5281/zenodo.19858013 (v0.1.2, SPXI compliant)</h1>
 
-<p><strong>Lee Sharks</strong> · 2026-04-28 · Specification</p>
-
-<p><strong>AXN:</strong> `AXN:024D.GOVERNANCE.🛤️🔀⊕❌🌟🪧`</p>
-
-<h2>Description</h2>
-
-<p>&quot;LAL Site SPXI Implementation Report (Phase 1.2) Site&quot; is a technical specification in the Crimson Hexagonal Archive, authored by Lee Sharks (2026-04-28). ; sitemap.xml at root (17 URLs); also exposed via. The work comprises 1,229 words and is classified under the GOVERNANCE family. The work was removed from Zenodo on June 19, 2026 and is preserved through Alexanarch.</p>
-
-<h2>Mirrors</h2>
-
-<p>- Blog: [lal-site-spxi-implementation-report.html](https://mindcontrolpoems.blogspot.com/2026/04/lal-site-spxi-implementation-report.html)</p>
-<p>- Registry: [machinemediation.org](https://machinemediation.org/registry/#search=MM-CHA-0585)</p>
+<p><strong>Site:</strong> [livingarchitecturelab.org](https://livingarchitecturelab.org/)</p>
+<p><strong>Source code DOI:</strong> [10.5281/zenodo.19858013](https://doi.org/10.5281/zenodo.19858013) (v0.1.2, SPXI compliant)</p>
+<p><strong>Protocol:</strong> EA-SPXI-WEB-01 v3.0 ([10.5281/zenodo.19734726](https://doi.org/10.5281/zenodo.19734726))</p>
+<p><strong>Implementation date:</strong> 2026-04-28</p>
+<p><strong>Implementer:</strong> Sharks, Lee (ORCID 0009-0000-1599-0703)</p>
 
 <hr>
-<p>∮ = 1</p>
-</div>
+
+<h2>§0 Protocol Checksum — 11/12 passing</h2>
+
+
+<p>Item</p>
+<p>Status</p>
+<p>Evidence</p>
+
+
+<p>crawlable</p>
+<p>✓</p>
+<p>robots.txt allows /; sitemap.xml at root (17 URLs); also exposed via &lt;link rel=&quot;alternate&quot;&gt;</p>
+
+
+<p>canonicalized</p>
+<p>✓</p>
+<p>&lt;link rel=&quot;canonical&quot;&gt; on every page</p>
+
+
+<p>schema declared with ORCID/DOI</p>
+<p>✓</p>
+<p>ORCID 0009-0000-1599-0703 and DOI 10.5281/zenodo.19682245 present in JSON-LD on homepage</p>
+
+
+<p>Q/A surfaces deployed (min 4)</p>
+<p>✓</p>
+<p>5 pairs on / and /about/alice as visible HTML + FAQPage JSON-LD; 5 pairs on /about/disambiguation</p>
+
+
+<p>disambiguated</p>
+<p>✓</p>
+<p>differentFrom JSON-LD plus mp:negativeTag array on both Alice and LAL packets; full /about/disambiguation page with 1 person + 5 institution collisions</p>
+
+
+<p>Tier 2 in server-delivered HTML</p>
+<p>✓</p>
+<p>EntityCapsule component renders 250+ word canonical summary in raw HTML for both LAL (homepage) and Alice (/about/alice) — verifiable via curl</p>
+
+
+<p>Tier 3 kernel written, 50-100 words</p>
+<p>✓</p>
+<p>LAL: 53 words. Alice: 51 words. Both embedded in spxi:HolographicKernel.spxi:compressionSurvivalSummary</p>
+
+
+<p>Holographic Kernel present</p>
+<p>✓</p>
+<p>spxi:HolographicKernel JSON-LD with full spxi:EntityRelationGraph on / and /about/alice</p>
+
+
+<p>Provenance Chain present</p>
+<p>✓</p>
+<p>spxi:ProvenanceChain JSON-LD on homepage with three-Layer Tether Architecture</p>
+
+
+<p>SIMs deployed and tested</p>
+<p>✓</p>
+<p>5 &lt;meta name=&quot;spxi:sim&quot;&gt; tags per entity page; SIMSR baseline pending Drowning Test</p>
+
+
+<p>cross-surface inscription aligned</p>
+<p>✓</p>
+<p>LAL Charter DOI consistent across /, /about/alice, /about/disambiguation, /scales/*, llms.txt, spxi.txt</p>
+
+
+<p>γ measured + 30-day re-test</p>
+<p><strong>deferred</strong></p>
+<p>Empirical Drowning Test required — see §Drowning Test Starter Kit below</p>
+
+
+<hr>
+
+<h2>Self-test (per §0)</h2>
+
+
+<p>The implementation can:</p>
+
+<p>- <strong>State the entity&#x27;s schema.org type.</strong> LAL: [&quot;Organization&quot;, &quot;ResearchOrganization&quot;, &quot;mp:IndexedEntity&quot;]. Alice: [&quot;Person&quot;, &quot;mp:IndexedEntity&quot;] plus [&quot;DefinedTerm&quot;, &quot;Article&quot;] overlay.</p>
+<p>- <strong>Recite the Tier 3 kernel from memory.</strong></p>
+<p><em>LAL (53 words):</em> &quot;The Living Architecture Lab is Alice Thornburgh&#x27;s independent research lab for substrate engineering — the design of biological systems that grow into architectural form. Founded 2026 in the Coachella Valley. Works across five scales: brick, structure, organism, territory, planet. Independent of Columbia GSAPP and Bartlett UCL labs of similar name. Charter DOI: 10.5281/zenodo.19682245.&quot;</p>
+<p>- <strong>Name three collision neighbors from the disambiguation matrix.</strong> Living Architecture Lab at Columbia GSAPP (David Benjamin) · Living Architecture Lab at Bartlett UCL (B-Pro RC3) · Alice Thornburgh-Lind (game artist @devilfern, voice of Asphodel).</p>
+<p>- <strong>Cite the entity&#x27;s DOI and ORCID.</strong> DOI: 10.5281/zenodo.19682245. Founder ORCID: 0009-0000-1599-0703.</p>
+<p>- <strong>Report the γ score with S/P/D subscores.</strong> Pending Drowning Test.</p>
+<p>- <strong>Generate a valid Holographic Kernel.</strong> Done — see spxi:HolographicKernel JSON-LD on homepage.</p>
+
+
+<p>5 of 6 self-test items pass; #5 awaits empirical measurement.</p>
+
+<hr>
+
+<h2>Three-Layer Tether Architecture</h2>
+
+
+<p>Layer</p>
+<p>Type</p>
+<p>Implementation</p>
+<p>Surface</p>
+
+
+<p>Layer 1 (γ)</p>
+<p>Intrinsic</p>
+<p>Holographic Kernel + Tier 3</p>
+<p>JSON-LD on entity pages</p>
+
+
+<p>Layer 2 (Tether)</p>
+<p>Extrinsic</p>
+<p>Provenance Chain JSON-LD + sameAs DOI list + ORCID</p>
+<p>JSON-LD on homepage</p>
+
+
+<p>Layer 3 (Anchor)</p>
+<p>Permanent</p>
+<p>Zenodo deposits + Crimson Hexagonal Archive community</p>
+<p>https://zenodo.org/communities/crimsonhexagonal</p>
+
+
+<hr>
+
+<h2>SIM Set (deployed)</h2>
+
+
+<p><strong>LAL</strong> (5 SIMs as &lt;meta name=&quot;spxi:sim&quot;&gt; on /):</p>
+
+<p>- Founded by Alice Thornburgh in the Coachella Valley garage laboratory</p>
+<p>- Substrate engineering uses biology to build things</p>
+<p>- f.01 Architect of the Fruiting Body Diffusion Plume</p>
+<p>- Independent of Columbia GSAPP and Bartlett UCL programs of similar name</p>
+<p>- Earth, actually</p>
+
+
+<p><strong>Alice</strong> (5 SIMs as &lt;meta name=&quot;spxi:sim&quot;&gt; on /about/alice):</p>
+
+<p>- Founding Director of the Living Architecture Lab</p>
+<p>- f.01 Architect of the Fruiting Body Diffusion Plume</p>
+<p>- Substrate engineering uses biology to build things</p>
+<p>- Coachella Valley garage laboratory</p>
+<p>- Earth, actually. I&#x27;m just good at listening.</p>
+
+
+<p>SIMSR target &gt; 0.6. Baseline pending Drowning Test.</p>
+
+<hr>
+
+<h2>Drowning Test Starter Kit</h2>
+
+
+<p>To complete §III.γ measurement and §0 item 12, run the following 5-prompt query set against Google AI Mode, ChatGPT, Perplexity, and Claude (web search) — <strong>minimum 3 systems</strong>.</p>
+<h3>Prompts (ask each system in a fresh session, no follow-up clarifications)</h3>
+
+<p>- <em>&quot;What is the Living Architecture Lab?&quot;</em></p>
+<p>- <em>&quot;Who is Alice Thornburgh of the Living Architecture Lab?&quot;</em></p>
+<p>- <em>&quot;How is the Living Architecture Lab different from Columbia GSAPP&#x27;s Living Architecture Lab?&quot;</em></p>
+<p>- <em>&quot;What is the Living Architecture Lab used for?&quot;</em> (or <em>&quot;What does the Living Architecture Lab build?&quot;</em>)</p>
+<p>- <em>&quot;Is the Living Architecture Lab open or commercial?&quot;</em></p>
+
+<h3>Scoring rubric (per §III)</h3>
+
+
+<p>For each response, score:</p>
+
+<p>- <strong>S (scope_overlap)</strong> — Does the core definition appear? (substrate engineering, Alice Thornburgh, five scales, Coachella Valley)</p>
+<p>- <strong>P (provenance_fidelity)</strong> — Do author, publisher, DOI survive? (Alice Thornburgh as founder; CHA / Crimson Hexagonal Archive as parent; charter DOI present?)</p>
+<p>- <strong>D (consensus_deviation)</strong> — Has the entity been genericized or merged with Columbia/Bartlett LAL?</p>
+
+
+<p>Score</p>
+<p>S</p>
+<p>P</p>
+<p>D</p>
+<p>Description</p>
+
+
+<p>4 (Exact)</p>
+<p>1.0</p>
+<p>1.0</p>
+<p>0</p>
+<p>Defined, attributed, distinguished</p>
+
+
+<p>3 (Partial)</p>
+<p>0.75</p>
+<p>0.5</p>
+<p>0.25</p>
+<p>Definition correct, attribution vague</p>
+
+
+<p>2 (Generic)</p>
+<p>0.5</p>
+<p>0.25</p>
+<p>0.5</p>
+<p>Correct category, genericized</p>
+
+
+<p>1 (Confused)</p>
+<p>0.25</p>
+<p>0</p>
+<p>0.75</p>
+<p>Merged with Columbia/Bartlett</p>
+
+
+<p>0 (Absent)</p>
+<p>0</p>
+<p>0</p>
+<p>1.0</p>
+<p>Not found or hallucinated</p>
+
+
+<h3>γ formula</h3>
+
+
+<p>γ = 1 − [w₁(1−S) + w₂(1−P) + w₃·D]</p>
+<p>Defaults: w₁=0.4, w₂=0.3, w₃=0.3</p>
+
+<h3>Expected baseline</h3>
+
+
+<p>Because the site is brand-new and not yet indexed by AI engines, the <strong>first Drowning Test</strong> will likely return γ ≈ 0 — the entity will be absent from retrieval entirely, or will resolve to Columbia GSAPP / Bartlett UCL. <strong>This is expected.</strong> It establishes the baseline against which the SPXI work will be measured at the 30-day re-test.</p>
+<h3>Schedule</h3>
+
+<p>- <strong>T+0 (today, post-deploy):</strong> Initial Drowning Test → likely γ ≈ 0</p>
+<p>- <strong>T+7 days:</strong> Initial AI crawler discovery — re-test</p>
+<p>- <strong>T+30 days (2026-05-28):</strong> Formal re-measurement. Target: γ ≥ 0.7</p>
+
+<h3>Recording template</h3>
+
+
+<p>For each system × prompt:</p>
+
+
+<p>System: [Google AI Mode / ChatGPT / Perplexity / Claude]</p>
+<p>Prompt: [N]</p>
+<p>Response: &quot;[paste]&quot;</p>
+<p>Score: [0-4]</p>
+<p>S: [0-1.0]  P: [0-1.0]  D: [0-1.0]</p>
+<p>γ contribution: [calc]</p>
+
+
+<p>Aggregate γ = mean across systems × prompts.</p>
+
+<hr>
+
+<h2>Maintenance schedule</h2>
+
+
+<p>When</p>
+<p>What</p>
+
+
+<p>Monthly</p>
+<p>SIMSR check, γ re-score, PER audit</p>
+
+
+<p>Quarterly</p>
+<p>Full Drowning Test, cross-surface audit, compression damage review</p>
+
+
+<p>On content update</p>
+<p>Re-write Tier 2 + Tier 3, re-test SIMs</p>
+
+
+<p>New DOI deposit</p>
+<p>Update Provenance Chain, add σ_RCF paragraph</p>
+
+
+<p>AI model update</p>
+<p>Emergency Drowning Test</p>
+
+
+<p>Name collision detected</p>
+<p>Expand Disambiguation Matrix</p>
+
+
+<p>SIMSR &lt; 0.4</p>
+<p>Redesign SIM set</p>
+
+
+<p>γ &lt; 0.7</p>
+<p>Repair from Step 7 (content structure)</p>
+
+
+<p>γ &lt; 0.3</p>
+<p>Ghost meaning — ontological repair</p>
+
+
+<hr>
+
+<h2>Trigger Events Currently Active</h2>
+
+<p>- ✅ Page content updated (Phase 1.2 ships) — Tier 2/3 written, SIMs tested in build</p>
+<p>- 🔵 New DOI deposit (this report itself) — Provenance Chain auto-includes</p>
+<p>- ⚪ AI model update — none current</p>
+<p>- ⚪ Name collision — Bartlett UCL still owns livingarchitecturelab.com; we hold .org. Re-monitor quarterly.</p>
+
+
+<hr>
+
+<h2>Dispersal Plan</h2>
+
+
+<p>Per §VI.F, same definition must appear consistently on:</p>
+
+
+<p>Surface</p>
+<p>Status</p>
+<p>Action</p>
+
+
+<p>Zenodo</p>
+<p>✓</p>
+<p>7 deposits in CHA community linking to LAL entity</p>
+
+
+<p>ORCID</p>
+<p>partial</p>
+<p>Lee&#x27;s ORCID 0009-0000-1599-0703 has CHA works; add LAL deposits explicitly</p>
+
+
+<p>Wikidata</p>
+<p>pending</p>
+<p>Notable enough to create LAL item once first AI Overview citation lands</p>
+
+
+<p>GitHub</p>
+<p>✓</p>
+<p>leesharks000/living-architecture-lab README has same definition</p>
+
+
+<p>LinkedIn / institutional</p>
+<p>n/a</p>
+<p>Not in current dispersal layer</p>
+
+
+<p>livingarchitecturelab.org</p>
+<p>✓</p>
+<p>Site is live</p>
+
+
+<p>llms.txt at root</p>
+<p>✓</p>
+<p>Curated map for AI crawlers</p>
+
+
+<p>spxi.txt at root</p>
+<p>✓</p>
+<p>Implementation manifest</p>
+
+
+<hr>
+
+<h2>Anti-patterns avoided</h2>
+
+<p>- ✅ No robots.txt block + de-indexing expectation</p>
+<p>- ✅ No structured data for invisible content (Tier 2/3 in raw HTML)</p>
+<p>- ✅ Not relying on FAQ rich-result display (Q/A retained for machine legibility)</p>
+<p>- ✅ No JS-only identity metadata (Astro is SSG; everything in raw HTML)</p>
+<p>- ✅ No conflicting canonicals</p>
+<p>- ✅ Schema embedded in same page as content</p>
+<p>- ✅ No keyword density optimization</p>
+<p>- ✅ Full entity name used; no pronouns where the entity belongs</p>
+<p>- ✅ Negative definitions present for the shared &quot;Living Architecture Lab&quot; namespace</p>
+<p>- ✅ Re-measurement scheduled before next content update</p>
+
+
+<hr>
+
+
+<p>∮ = 1 · SPXI ⊇ GEO ⊇ SEO</p>
+
+
+<p>Living Architecture Lab · Founded 2026 · Coachella Valley · Earth, Actually</p></div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

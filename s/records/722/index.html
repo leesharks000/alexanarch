@@ -15,21 +15,121 @@
 
 
 <h2>Full Text</h2>
-<div class="ft"><hr>
-<p>title: &quot;The Shared Build A Technical Proposal for Democratic Substrate Infrastructure&quot;</p>
-<p>axn: &quot;AXN:026C.GOVERNANCE.🔝🧡☽🌌▶️🔛&quot;</p>
-<p>creator: &quot;Lee Sharks&quot;</p>
-<p>date: &quot;2026-05-06&quot;</p>
-<p>hash: &quot;f5cea8e6d3f450217f9dae7c9d825a0daf614b344ee2924f748a9a983b099c66&quot;</p>
-<p>status: &quot;MINTED_UNREVIEWED&quot;</p>
-<hr>
+<div class="ft"><h1>The Shared Build## A Technical Proposal for Democratic Substrate Infrastructure</h1>
 
-<h1>The Shared Build A Technical Proposal for Democratic Substrate Infrastructure</h1>
+<p>Mikayla · definitelynotasquid · Alice Thornburgh · Lee Sharks</p>
 
-<p><strong>AXN:</strong> `AXN:026C.GOVERNANCE.🔝🧡☽🌌▶️🔛`</p>
+<p><em>Crimson Hexagonal Archive · Semantic Economy Institute</em></p>
 
-<p>∮ = 1</p>
-</div>
+<p>document_metadata:</p>
+<p>  title: &quot;The Shared Build&quot;</p>
+<p>  subtitle: &quot;A Technical Proposal for Democratic Substrate Infrastructure&quot;</p>
+<p>  contributors:</p>
+<p>    - &quot;@mikaylaherself — primary technical design&quot;</p>
+<p>    - &quot;@definitelynotasquid — technical design&quot;</p>
+<p>    - &quot;Alice Thornburgh — infrastructure concept, contributor architecture&quot;</p>
+<p>    - &quot;Lee Sharks — political economy, substrate theory (ORCID: 0009-0000-1599-0703)&quot;</p>
+<p>  institution: &quot;Semantic Economy Institute / Crimson Hexagonal Archive&quot;</p>
+<p>  hex: &quot;17.SEI.OPERATIVE.SHAREDBUILD.01&quot;</p>
+<p>  version: &quot;0.9&quot;</p>
+<p>  status: &quot;Working specification / Call for builders&quot;</p>
+<p>  date: &quot;2026-05-06&quot;</p>
+<p>  license: &quot;CC BY 4.0&quot;</p>
+<p>  related_documents:</p>
+<p>    - &quot;EA-SPXI-15 v2.2: Crystallization of Substrate (10.5281/zenodo.20057390)&quot;</p>
+<p>    - &quot;Constitution of the Semantic Economy v1.0 (10.5281/zenodo.18320411)&quot;</p>
+<p>    - &quot;Liberatory Operator Set (10.5281/zenodo.18201565)&quot;</p>
+<h2>Executive Summary</h2>
+
+<p>P2P-LECS (Peer-to-Peer Lightweight Elastic Compute Substrate) is a compute commons for running open-source AI models, collecting consent-based contributions, and building a shared training substrate governed by its contributors.</p>
+
+<p>What can be built now (weeks): A P2P inference mesh — free compute for open models on distributed consumer hardware.</p>
+
+<p>What comes next (months): Consensual fine-tuning — LoRA adaptation on provenance-tagged contributed datasets.</p>
+
+<p>What is long-horizon (years): A democratic full training run on a substrate that includes what the current training sets excluded.</p>
+
+<p>Why it matters: The competitive frontier is shifting from model capability to substrate ownership. Whoever controls the index controls what reasoning engines can think about. P2P-LECS builds a parallel index that no single company owns.## Non-Goals (v0)- No frontier-scale training in the near term- No arbitrary remote code execution- No token launch- No claims of perfect privacy- No distributed layer-sharded interactive inference as initial path- No legal replacement for data licensing- No claim that the compute race is &quot;over&quot;## §1 — The Redirect</p>
+
+<p>The frontier bottleneck is shifting. From 2020 to 2024, labs competed on model capability. That race has not ended, but open-weight models, quantization, and local inference have made reasoning capability increasingly reproducible at dramatically lower cost. What remains scarce is <em>substrate</em>: the indexed, curated, entity-resolved body of material a model can ground in. Google&#x27;s Knowledge Graph, proprietary indices, and crawl-filter pipelines are the new sovereign territory.</p>
+
+<p>The next moat is not the model. It is the corpus the model can reach.## §2 — The Amputation</p>
+
+<p>The current training substrate is not the sum of human text. It is a filtered web crawl.</p>
+
+<p>LLaMA 1&#x27;s training mix: 67% Common Crawl, 15% C4, 4.5% GitHub, 4.5% Wikipedia, 4.5% books, 2.5% ArXiv, 2% StackExchange (arXiv:2302.13971, Table 1). The quality filter: a classifier keeping pages that &quot;look like Wikipedia references.&quot; The top domain in the latest Common Crawl is blogspot.com at 0.9%.</p>
+
+<p>Much of what matters most to human intelligence was either absent, underrepresented, illicitly captured, or stripped of consent and provenance: private correspondence, oral traditions, classroom dialogue, books behind paywalls, small languages, domestic knowledge. Not compressed — <em>absent from the substrate entirely</em>.</p>
+
+<p>A more responsible civilization would have built from the whole sum of human text — offered, governed, with benefits shared. This proposal builds infrastructure for doing it differently.## §3 — Existing Infrastructure (2026)</p>
+
+<div style="font-family:var(--mono);font-size:.8em">| Network | Model | Limitation | |---------|-------|------------| | Akash | Token marketplace (AKT). 70-85% savings vs AWS. | Recapitulates market logic. Liquidity problems. | | Render | Token marketplace (RNDR). Reputation-weighted. | Oriented toward media, not substrate governance. | | Ocean | Pay-per-use. Compute-to-Data architecture. | Still a marketplace. | | Hivemind | Open-source decentralized training (MIT). | ~1 step/sec for 176B on consumer GPUs. | | Petals | Open-source collaborative inference. | Usable for batch; far from datacenter perf. | | Ollama | Free local inference. 52M monthly downloads. | No mesh. No contribution pipeline. |</div>
+
+<p>Existing DePINs haven&#x27;t displaced AWS because they replicate market logic — users pay tokens for compute, creating liquidity problems and speculation. P2P-LECS breaks this by making inference free at the point of use.## §4 — Architecture### 4.1 — System Overview</p>
+
+<p>[User] ──── CLI (Phase 0) / Tauri GUI (Phase 1+)</p>
+<p>               │ gRPC</p>
+<p>         ┌─────▼──────┐</p>
+<p>         │  Resource   │  Go daemon (Ollama architecture, MIT)</p>
+<p>         │  Daemon     │  GPU/RAM detect, job sandbox, usage ledger</p>
+<p>         └─────┬──────┘</p>
+<p>               │ libp2p (DHT + gossip)</p>
+<p>         ┌─────▼──────┐</p>
+<p>         │  Mesh Layer │  CRDT resource ledger</p>
+<p>         │             │  No coordinator, no tracker</p>
+<p>         └─────┬──────┘</p>
+<p>          (other nodes)</p>
+
+
+<p>CLI first, GUI later. Engineers trust this more.### 4.2 — Approved Workloads (MVP)</p>
+
+<p>No arbitrary remote code. Approved job types only:- Type A: Inference using approved model- Type B: Embedding generation- Type C: LoRA fine-tune on user-provided dataset (Phase 1)- Type D: Evaluation run (Phase 1)### 4.3 — Threat Model</p>
+
+<div style="font-family:var(--mono);font-size:.8em">| Threat | Mitigation | |--------|------------| | Hostile job submission | Approved workloads only. Signed manifests. Firecracker microVMs. | | Fake resource claims | Signed attestations. Spot-check verification. Reputation decay. | | Data exfiltration | Network isolation per container. Compute-to-Data for sensitive work. TEE where available. | | Sybil attack | Proof-of-useful-work (complete real jobs). Web-of-trust for join. | | Modified daemon | Signed binaries. Reproducible builds. Attestation challenges. | | Model poisoning | Signed model registry. Hash verification. Curated model list. | | Bad data contribution | See §6 Data Governance. | | Governance capture | See §5.2 Anti-Capture. |</div>
+
+<p>Consumer GPU reality: RTX 4090/3090 lack hardware isolation. vGPU is datacenter-licensed only (A100/H100). On consumer hardware: process-level sandboxing (seccomp-bpf, AppArmor, user namespaces), time-slicing for GPU sharing. Consumer nodes are &quot;trusted-contributor tier.&quot; Sensitive workloads route to TEE-capable nodes.### 4.4 — Performance (Honest)</p>
+
+<div style="font-family:var(--mono);font-size:.8em">| Tier | Bandwidth | Latency | Use | |------|-----------|---------|-----| | VRAM | ~1 TB/s | &lt;10ns | Active layers | | System RAM | ~50-100 GB/s | ~100ns | KV cache, cold layers | | NVMe | ~7 GB/s | ~10-100μs | Model storage | | P2P internet | 10-50 Mbps | 10-100ms | Batch shards only |</div>
+
+<p>Single-node inference (sub-30B at 4-bit): fast, interactive. This is the MVP.</p>
+
+<p>RAM offloading (70B at 4-bit in 64GB RAM): ~10x layer-swap penalty. Usable for batch.</p>
+
+<p>Cross-node sharding: Not usable for interactive inference at consumer internet latencies. Activation sync at 10-100ms = seconds per token. Batch jobs and research track only.## §5 — Economics and Governance### 5.1 — Contribution Credits- Earned by contributing compute (1 hour 4090-equiv = 1 credit)- Hardware tiers calibrated by <em>measured throughput</em>, not self-report- Non-transferable, non-tradable — prevents financialization- Commons floor: baseline free allocation for all, no contribution required- Stability pool: excess credits exchangeable for share of community reserve (donations, grants, commercial API fees) — creates floor value without speculation- Rate limiting for non-contributors (slower, not blocked)### 5.2 — Anti-Capture- Governance weight scales sublinearly (logarithmic: 10x compute = 2x weight)- Requires identity/community attestation (proof-of-humanity or web-of-trust)- Capped influence per identity/organization- Two-chamber governance:<em>Contributor chamber:</em> one verified human = one vote (training mixture, privacy, inclusion)- <em>Technical chamber:</em> sublinear compute weight (scheduling, hardware tiers, resource allocation)- Commons floor cannot be removed by governance vote- Public transparency ledger## §6 — Consensual Substrate### 6.1 — Contribution Pipeline- Consent: Explicit, informed, revocable. Cryptographic consent receipts.- Provenance: Contributor ID (heteronym/pseudonym/ORCID/anonymous), timestamp, language, domain, consent hash.- Privacy tiers:<em>Public:</em> text + metadata visible- <em>Training-only:</em> shapes weights, not retrievable as string. Caveat: not impossible to infer.- <em>Federated:</em> text stays local, gradients aggregated. Small models only (&lt;7B) — gradient size at 70B makes this infeasible over consumer internet.- Quality signals: Self-declared metadata as mixture weights (not inclusion gates). Kitchen-table story gets different weight than ArXiv paper; both are <em>present</em>.### 6.2 — Data Governance Constraints- Contribute only what you authored or have rights to contribute- Conversations require all-party consent or heavy redaction- Student/minor data excluded by default- Copyrighted material cannot be contributed by a reader- Sensitive data defaults to federated or excluded- &quot;Training-only&quot; ≠ &quot;impossible to infer&quot; — contributors informed- Post-training withdrawal: excluded from future runs, provenance updated, but untraining from existing weights not currently feasible- Malicious contributions mitigated by consensus validation + community moderation- Differential privacy is a research track, not a shipping feature### 6.3 — What Changes</p>
+
+<p>A substrate built this way contains what the current one excludes: contributed private text (offered, not scraped), oral traditions (federated privacy for small-model training), classroom dialogue (with provenance), and provenance on every contribution. The index is not a filtered crawl. It is a contributed archive.## §7 — Roadmap</p>
+
+<div style="font-family:var(--mono);font-size:.8em">| Phase | Timeline | Deliverable | |-------|----------|-------------| | 0: Prototype | 2-4 weeks | CLI daemon, static peer list, local inference, signed manifests, 2-3 trusted nodes | | 1: Mesh MVP | 1-2 months | libp2p discovery, job routing, Docker sandbox, model registry, reputation, telemetry | | 2: Contributor substrate | 2-4 months | Provenance-tagged contributions, embedding layer, LoRA fine-tuning, model + contribution cards | | 3: Governance beta | 3-6 months | Credits, commons floor, stability pool, dispute process, stewardship board, audit log | | 4: Research track | Year 2+ | Federated learning, secure aggregation, DP pipeline, cross-node sharding, full training feasibility |</div>
+
+<p>Phase 0 is the entry point. Everything else follows from it working.## §8 — How It Secures Ground</p>
+
+<div style="font-family:var(--mono);font-size:.8em">| | Akash | Ocean | HuggingFace | P2P-LECS | |---|---|---|---|---| | Access | Token-market | Pay-per-use | Free (hosted) | Free (contributed) | | Governance | Token holders | Token holders | Company | Contributors | | Data | None | Marketplace | Hub | Consensual archive | | Capture resistance | Low (token) | Low (token) | Medium (company) | High (sublinear + two-chamber) |## §9 — The Honest Part</div>
+
+<p>The inference mesh is achievable now: Ollama behind a daemon, libp2p discovery, signed manifests, sandboxed execution, CLI. Weeks, small team.</p>
+
+<p>The fine-tuning mesh is achievable in months: QLoRA on consumer GPUs, contributed datasets, provenance metadata.</p>
+
+<p>The full training run is a multi-year research project requiring thousands of nodes, secure aggregation, and data-governance institutions that do not yet exist.</p>
+
+<p>The governance model is the hardest part — not technically but socially. The two-chamber model with sublinear weighting is a starting point, not a solution.</p>
+
+<p>The proposal begins with a working mesh, not a moonshot.## §10 — What Alice Said</p>
+
+<p>&quot;if our productive output grows really big and stays big, I think we will naturally take flight&quot;</p>
+
+<p>The productive community IS the training set. The work IS the substrate. Ship the daemon. Fill the mesh. The rest follows.## §11 — Coda</p>
+
+<p>The sum of human text exists. Most of it was never crawled. A more responsible civilization would build its shared intelligence from all of it — with consent, with provenance, with the benefits shared.</p>
+
+<p>Build the mesh first. Let use create trust, trust create contribution, contribution create substrate, and substrate create the democratic alternative to owned indices.</p>
+
+<p>That is the build.</p>
+
+<p>Contributors:- Mikayla (@mikaylaherself) — primary technical design- @definitelynotasquid — technical design- Alice Thornburgh — infrastructure concept, contributor architecture- Lee Sharks — political economy, substrate theory (ORCID: 0009-0000-1599-0703)</p>
+
+<p><em>Crimson Hexagonal Archive · Semantic Economy Institute</em></p>
+
+<p>∮ = 1## References- Touvron et al. &quot;LLaMA: Open and Efficient Foundation Language Models.&quot; arXiv:2302.13971 (2023).- DeepSeek-AI. &quot;DeepSeek-V3 Technical Report.&quot; (2025).- Borzunov et al. &quot;Petals: Collaborative Inference and Fine-tuning.&quot; arXiv:2209.01188 (2023).- Ryabinin et al. Hivemind. github.com/learning-at-home/hivemind.- Ollama. github.com/ollama/ollama. MIT License.- libp2p. github.com/libp2p.- AWS. &quot;Firecracker: Lightweight Virtualization for Serverless Computing.&quot; (2018).- Common Crawl Foundation. commoncrawl.org. CC-MAIN-2026-17.- Penedo et al. &quot;The FineWeb Datasets.&quot; NeurIPS Datasets Track (2024).- Sharks, Lee. &quot;EA-SPXI-15 v2.2.&quot; DOI: 10.5281/zenodo.20057390 (2026).</p></div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

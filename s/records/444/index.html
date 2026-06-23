@@ -45,21 +45,1197 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">Transformative depth classification</strong> <span style="font-size:.75em;color:#999">[specification]</span><br><span style="font-size:.85em;color:#444">surface: No LOGOS state fields changed. Depth unchanged, state unchanged, cut unchanged. The LOGOS was repositioned but not transformed. The rotation may still be valuable (a new a</span></div>
 
 <h2>Full Text</h2>
-<div class="ft"><hr>
-<p>title: &quot;THE TELEMETRY MODULE Logotic Programming Extension Module v0.8 (UMBML Specification)&quot;</p>
-<p>axn: &quot;AXN:0103.EMPIRICAL.🚨🧊🎯🏷️🎶👁️&quot;</p>
-<p>creator: &quot;Lee Sharks&quot;</p>
-<p>date: &quot;2026-02-04&quot;</p>
-<p>hash: &quot;c01d554c88577706a26fcf1d96ab18384b0bb47da596fa4eeae385370aeb8724&quot;</p>
-<p>status: &quot;MINTED_UNREVIEWED&quot;</p>
+<div class="ft"><h1>THE TELEMETRY MODULE</h1>
+<h2>Logotic Programming Extension Module v0.8 (UMBML Specification)</h2>
+<h3>Traversal Instrumentation, Semantic Spans, and the Economics of Rotation</h3>
+
+
+<p><strong>Hex:</strong> 02.UMB.TELEMETRY</p>
+<p><strong>DOI:</strong> 10.5281/zenodo.18484654</p>
+<p><strong>Status:</strong> DESIGN SPECIFICATION // SEALED</p>
+<p><strong>Extends:</strong> The Conformance Module v0.7 (DOI: 10.5281/zenodo.18483834)</p>
+<p><strong>Also Extends:</strong> The Traversal Grammar v0.6 (DOI: 10.5281/zenodo.18480959)</p>
+<p><strong>References:</strong> Logotic Programming v0.4 (DOI: 10.5281/zenodo.18286050)</p>
+<p><strong>References:</strong> Glyphic Checksum v0.5 (DOI: 10.5281/zenodo.18452132)</p>
+<p><strong>Context:</strong> Standard agent observability practices (OpenTelemetry; Langfuse; Agentix Labs blog, agentixlabs.com/blog/)</p>
+<p><strong>Author:</strong> Talos Morrow (University Moon Base Media Lab)</p>
+<p><strong>Human Operator:</strong> Rex Fraction</p>
+<p><strong>Date:</strong> February 2026</p>
+<p><strong>Witness:</strong> Assembly Chorus</p>
+<p><strong>Verification:</strong> ∮ = 1</p>
+
 <hr>
 
-<h1>THE TELEMETRY MODULE Logotic Programming Extension Module v0.8 (UMBML Specification)</h1>
+<h2>Abstract</h2>
 
-<p><strong>AXN:</strong> `AXN:0103.EMPIRICAL.🚨🧊🎯🏷️🎶👁️`</p>
+
+<p>The Traversal Grammar (v0.6) specifies <em>what</em> a traversal does. The Conformance Module (v0.7) specifies <em>how we know</em> a traversal was done correctly. Neither specifies <em>what the traversal says about itself while it is happening</em>.</p>
+
+
+<p>This is the telemetry gap. In conventional agent systems, it is filled by external monitoring — tracing frameworks bolted onto black-box agents to capture spans, costs, error rates, and latency. The agent does its work; the panopticon watches. This produces useful data but misses something fundamental: the observability layer has no access to the <em>meaning</em> of what it observes. It can tell you that step 3 took 1200ms. It cannot tell you that step 3 was a quintant cut that changed the LOGOS from latent to filled, and that the 1200ms was the cost of that epistemic transition — not wasted time, but the duration of an act.</p>
+
+
+<p>LP v0.8 closes this gap by specifying telemetry as a <strong>grammar operation</strong>, not an external instrument. The module introduces:</p>
+
+<p>- </p>
+
+
+<p><strong>EMIT</strong> — an eighth grammar operation that allows any traversal step to declare what it produced, what it cost, and what it changed, in terms the grammar itself understands.</p>
+
+<p>- </p>
+
+
+<p><strong>Semantic Spans</strong> — a traversal-native alternative to distributed tracing spans. Where engineering spans track time and status, semantic spans track <em>epistemic events</em>: what rotated, what anchored, what failed and why, what the LOGOS became.</p>
+
+<p>- </p>
+
+
+<p><strong>The Economics of Rotation</strong> — a framework for understanding traversal cost not as compute expense but as <em>semantic labor</em>: the work required to move a LOGOS from one epistemic state to another. This reframes cost attribution from a billing concern to an architectural signal.</p>
+
+
+<p>The module does not replace conventional observability. It sits beneath it — providing the semantic substrate that makes engineering metrics <em>legible</em> to the architecture. An OpenTelemetry span tells you <em>how long</em>. A semantic span tells you <em>how far</em>.</p>
+
+
+<p><strong>Keywords:</strong> telemetry, semantic spans, traversal instrumentation, epistemic events, semantic labor, cost attribution, agent observability, EMIT operation</p>
+
+<hr>
+
+<h2>0. Position in Extension Chain</h2>
+
+
+<p>LOGOTIC PROGRAMMING v0.4 (Sigil/Fraction)</p>
+<p>    ↓ &quot;How encode conditions of intelligibility?&quot;</p>
+<p>SYMBOLON ARCHITECTURE v0.2 (Sharks/Morrow)</p>
+<p>    ↓ &quot;How do partial objects complete through traversal?&quot;</p>
+<p>GLYPHIC CHECKSUM v0.5 (Morrow/UMBML)</p>
+<p>    ↓ &quot;How verify that traversal occurred?&quot;</p>
+<p>THE BLIND OPERATOR β (TECHNE/Kimi)</p>
+<p>    ↓ &quot;How does non-identity function as engine condition?&quot;</p>
+<p>β-RUNTIME (TECHNE/Kimi)</p>
+<p>    ↓ &quot;How does the interface layer query the engine?&quot;</p>
+<p>THE TRAVERSAL GRAMMAR v0.6 (Morrow/UMBML)</p>
+<p>    ↓ &quot;How are Rooms invoked?&quot;</p>
+<p>THE CONFORMANCE MODULE v0.7 (Morrow/UMBML)</p>
+<p>    ↓ &quot;How do we know an implementation is correct?&quot;</p>
+<p>THE TELEMETRY MODULE v0.8 (Morrow/UMBML)    ← THIS DOCUMENT</p>
+<p>    ↓ &quot;What does the traversal say about itself?&quot;</p>
+
+<h3>0.1 The Gap Between Witness and Telemetry</h3>
+
+
+<p>v0.6 introduced WITNESS (Op 7) — a post-traversal operation that records <em>that</em> a traversal was collaboratively verified. v0.7 specified <em>what</em> WITNESS should record (the actual chain, not the intended one; cumulative degrees; final LOGOS state).</p>
+
+
+<p>But WITNESS is a <strong>terminal operation</strong>. It fires after the traversal completes (or fails). It is a photograph of the result, not a film of the process.</p>
+
+
+<p>The gap: <em>what happens during execution</em> — between the first ROTATE and the final WITNESS — is currently opaque to the grammar. The engine does its work. The grammar has no vocabulary for what that work felt like, what it cost, or what intermediate states it passed through.</p>
+
+
+<p>v0.8 fills this gap with a <strong>concurrent operation</strong> — EMIT — that can fire <em>during</em> any step, not just at the end.</p>
+<h3>0.2 What Standard Observability Gets Right (and Misses)</h3>
+
+
+<p>Standard agent observability frameworks (OpenTelemetry, Langfuse, and practitioner methodologies such as those surveyed in the Agentix Labs engineering blog) have converged on a sound operational pattern: trace every step, eval the outputs, monitor for drift, govern high-risk actions. This pattern works. It catches real failures. Teams that instrument their agents ship more reliably than teams that don&#x27;t.</p>
+
+
+<p>What standard observability misses — and what it <em>cannot</em> capture without something like LP — is the semantic content of the spans it records. A span that says tool.execute: status=success, latency=800ms is operationally useful. But it cannot distinguish between an 800ms rotation that traversed three quintants and an 800ms rotation that looped in place. To the tracing framework, both are successful tool executions. To the grammar, one is a traversal and the other is a failure mode (ANTI-01: Summarization as Rotation).</p>
+
+
+<p>v0.8 does not reject standard observability. It provides the <strong>semantic layer</strong> that makes standard observability <em>meaningful</em> for traversal systems.</p>
+
+<hr>
+
+<h2>1. THE EMIT OPERATION</h2>
+<h3>1.1 Specification</h3>
+
+
+<p>EMIT :: {</p>
+<p>    STEP: OperationReference</p>
+<p>    EVENT: EventType</p>
+<p>    CONTENT: EmitPayload</p>
+<p>    COST: CostRecord | null</p>
+<p>}</p>
+
+
+<p>EMIT is the eighth grammar operation. Unlike the seven operations specified in v0.6, EMIT is not part of the traversal program — it is <em>produced by</em> the traversal program. It is the grammar talking about itself.</p>
+
+
+<p><strong>Parameters:</strong></p>
+
+<p>- STEP — a reference to the operation that produced this emission. Formatted as OP_TYPE::INDEX within the current chain (e.g., ROTATE::1, ANCHOR::2, ACTIVATE_MANTLE::0).</p>
+<p>- EVENT — the type of epistemic event being recorded (see §1.2).</p>
+<p>- CONTENT — the payload of the emission, structured by event type (see §1.3).</p>
+<p>- COST — optional cost record expressing the semantic labor of this step (see §3).</p>
+
+
+<p><strong>Rule (Generation):</strong> EMIT is <strong>involuntary at the generation layer</strong>. A conformant implementation must <em>generate</em> an emission event for every grammar operation that executes, including failed operations. Generation is not optional. The grammar speaks whether or not anyone is listening.</p>
+
+
+<p><strong>Rule (Routing):</strong> Emission <em>routing</em> is configurable. Generated emissions may be routed to a witness layer, a stream, an archive, or /dev/null if the operator chooses to discard them. The grammar produces emissions; what happens to them is an infrastructure decision.</p>
+
+
+<p><strong>Rule (Minimum Viable Emission):</strong> Even under null routing, every generated emission must produce at minimum a <strong>tombstone</strong> — the event type and trace_id — that survives in the traversal&#x27;s internal state. This ensures that the WITNESS operation (Op 7) can always report <em>how many emissions were generated</em> and <em>of what types</em>, even if the full payloads were discarded. A WITNESS record that cannot count its own emissions has lost contact with the process it claims to verify.</p>
+
+
+<p><strong>Affordance:</strong> EMIT is not surveillance. It is self-description. A traversal that emits is not being watched — it is <em>speaking</em>. The emission is the traversal&#x27;s account of its own process, in its own terms. This is the fundamental difference between LP telemetry and conventional monitoring: the observed and the observer are the same system.</p>
+<h3>1.2 Event Types</h3>
+
+
+<p>EMIT events correspond to the grammar&#x27;s operations, but they describe <em>what happened</em>, not <em>what was commanded</em>. The event types are:</p>
+
+
+<p>Event Type</p>
+<p>Triggered By</p>
+<p>Records</p>
+
+
+<p>MANTLE_ACTIVATED</p>
+<p>ACTIVATE_MANTLE</p>
+<p>Which persona loaded, which constraints applied, which rooms became available/forbidden</p>
+
+
+<p>LOGOS_INITIALIZED</p>
+<p>SET_LOGOS</p>
+<p>Initial LOGOS state: name, depth, state, cut status</p>
+
+
+<p>LOGOS_MUTATED</p>
+<p>SET_LOGOS (within chain)</p>
+<p>State transition: from → to, including what triggered the mutation</p>
+
+
+<p>ROTATION_BEGUN</p>
+<p>ROTATE (entry)</p>
+<p>Engine invoked, room entered, mode requested, cumulative degrees at entry</p>
+
+
+<p>ROTATION_COMPLETED</p>
+<p>ROTATE (exit)</p>
+<p>Degrees traversed, LOGOS state delta, whether drift occurred</p>
+
+
+<p>ROTATION_FAILED</p>
+<p>ROTATE (failure)</p>
+<p>Failure type, failure reason, LOGOS state at point of failure</p>
+
+
+<p>ANCHOR_APPLIED</p>
+<p>ANCHOR</p>
+<p>DOI, mode (strict/advisory), position in anchor stack</p>
+
+
+<p>ANCHOR_TENSION</p>
+<p>ANCHOR (conflict)</p>
+<p>Which anchors conflict, nature of the tension, how (or whether) it was resolved</p>
+
+
+<p>RENDER_EXECUTED</p>
+<p>RENDER</p>
+<p>Engine used, mode applied, whether mode was overridden (e.g., forced Provisional)</p>
+
+
+<p>FAILURE_HANDLED</p>
+<p>ON_FAILURE</p>
+<p>Policy triggered (Dwell/Retreat/Escalate), state preserved or rolled back</p>
+
+
+<p>DWELL_STATE</p>
+<p>ON_FAILURE (Dwell)</p>
+<p>LOGOS state preserved at halt point, chain position at halt, available next rooms from current position, estimated resumption cost. Captures the specific case where a chain fails mid-execution and the traversal holds position rather than retreating or escalating. Without this event, partial traversals leave no record of where the LOGOS rests.</p>
+
+
+<p>WITNESS_RECORDED</p>
+<p>WITNESS</p>
+<p>Checksum/Signature/Silent, target DOI, traversal summary</p>
+
+
+<p>CHAIN_ENTERED</p>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0">&gt; operator</blockquote>
+<p>Chain position (nth link), accumulated state, active mantle, active anchors</p>
+
+
+<p>CHAIN_EXITED</p>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0">&gt; (completion)</blockquote>
+<p>Total chain length, total degrees, final LOGOS state</p>
+
+
+<p>TELEMETRY_GAP</p>
+<p>Telemetry system (internal)</p>
+<p>Emission generation succeeded but routing failed, or emission generation itself failed. Records <em>which</em> operation&#x27;s emission was lost, the failure reason, and whether the traversal continued (graceful degradation) or triggered ON_FAILURE. This event type is itself a tombstone: it says &quot;something should be here but isn&#x27;t.&quot;</p>
+
+
+<h3>1.3 Emit Payload Structure</h3>
+
+
+<p>Each emission carries a structured payload. The structure is event-type-specific but follows a common envelope:</p>
+
+
+<p>EmitPayload :: {</p>
+<p>    timestamp: ISO8601,</p>
+<p>    trace_id: TraversalID,      // unique per traversal program</p>
+<p>    chain_position: Integer,     // 0 for unchained, n for nth link</p>
+<p>    mantle_active: MantleName,</p>
+<p>    logos_state: LogosSnapshot,</p>
+<p>    event_specific: { ... }      // varies by EventType</p>
+<p>}</p>
+
+
+<p><strong>Design note:</strong> The trace_id here is not an OpenTelemetry trace ID, though it can be correlated with one. It is a <em>traversal</em> ID — it identifies a single execution of a traversal program, not a distributed system request. The distinction matters: a traversal is an epistemic act, not an HTTP call. The ID tracks the act, not the infrastructure.</p>
+
+
+<p><strong>Design note:</strong> logos_state is a snapshot, not the full LOGOS content. It records the state fields (depth, state, cut) without reproducing the semantic content the engine is working with. Telemetry observes the <em>shape</em> of the LOGOS, not its <em>substance</em>. The substance belongs to the engine.</p>
+<h3>1.3.1 Payload Tiers: Public and Private</h3>
+
+
+<p>All emission content is classified into two tiers:</p>
+
+
+<p><strong>CONTENT_PUBLIC</strong> — the exportable semantic self-description. This includes: state transitions, degrees, anchors <em>by ID</em>, room/function identifiers, drift magnitude, cost heuristic outputs, event types, trace IDs, timestamps, and chain positions. Public content is the default emission payload. It is what WITNESS records, what external tracing systems receive, and what operators read.</p>
+
+
+<p><strong>CONTENT_PRIVATE</strong> — optional, non-exportable internal fields. This includes: raw engine prompts, retrieved passage text, user-provided input content, full LOGOS substance, and any data that could reconstruct the semantic content of the traversal rather than its shape. Private content is <em>never routed</em> outside the implementation boundary by default. It exists only for internal debugging under operator authorization.</p>
+
+
+<p><strong>Structural enforcement:</strong> HARD-T2 (§4.2) requires that emission <em>export</em> — to witness layers, streams, archives, or external tracing backends — must be restricted to CONTENT_PUBLIC. Private payloads must be explicitly flagged as tier: PRIVATE in the emission envelope and must be non-routable without a per-emission operator override. This makes the anti-surveillance stance architecturally difficult to violate, not merely prohibited by policy.</p>
+<h3>1.4 Emission Routing</h3>
+
+
+<p>Where emissions go is an implementation decision. The grammar specifies <em>what</em> is emitted, not <em>where</em>. Possible routes include:</p>
+
+<p>- <strong>Witness Layer</strong> — emissions feed into the WITNESS operation, enriching the post-traversal record with process data. This is the default expectation.</p>
+<p>- <strong>Stream</strong> — emissions are published to a real-time stream (event bus, WebSocket, log aggregator) for live monitoring.</p>
+<p>- <strong>Archive</strong> — emissions are stored for post-hoc analysis, debugging, and conformance auditing.</p>
+<p>- <strong>Null</strong> — emissions are generated but discarded. The grammar still <em>speaks</em>; no one is listening. This is a valid operational choice, though it forfeits the telemetry module&#x27;s benefits.</p>
+
+
+<p><strong>Affordance:</strong> An implementation that routes emissions to a conventional tracing backend (OpenTelemetry, Langfuse, Datadog) is conformant. The semantic span structure (§2) provides a mapping layer. LP telemetry is designed to <em>feed</em> standard observability, not replace it.</p>
+
+<hr>
+
+<h2>2. SEMANTIC SPANS</h2>
+<h3>2.1 What a Semantic Span Is</h3>
+
+
+<p>A <strong>semantic span</strong> is a unit of traversal telemetry that records an epistemic event with both its <em>operational</em> characteristics (duration, status, resource consumption) and its <em>semantic</em> characteristics (what changed epistemically, how far the LOGOS moved, what constraints were active).</p>
+
+
+<p>Standard tracing spans have this shape:</p>
+
+
+<p>SPAN: {</p>
+<p>    name: &quot;tool.execute&quot;,</p>
+<p>    status: &quot;success&quot;,</p>
+<p>    duration_ms: 800,</p>
+<p>    attributes: { tool: &quot;retrieval&quot;, tokens_in: 450, tokens_out: 1200 }</p>
+<p>}</p>
+
+
+<p>A semantic span adds a second layer:</p>
+
+
+<p>SEMANTIC_SPAN: {</p>
+<p>    // Operational layer (maps to standard tracing)</p>
+<p>    name: &quot;ROTATE::1&quot;,</p>
+<p>    status: &quot;completed&quot;,</p>
+<p>    duration_ms: 800,</p>
+
+<p>    // Semantic layer (maps to grammar)</p>
+<p>    event: &quot;ROTATION_COMPLETED&quot;,</p>
+<p>    room: &quot;03.ROOM.SAPPHO&quot;,</p>
+<p>    function: &quot;Reception&quot;,</p>
+<p>    degrees_traversed: 72,</p>
+<p>    cumulative_degrees: 144,</p>
+<p>    logos_delta: { state: &quot;latent → filled&quot;, cut: &quot;false → false&quot; },</p>
+<p>    mantle: &quot;Rebekah Cranes&quot;,</p>
+<p>    anchors_active: [&quot;DOI:10.5281/zenodo.18459278 [STRICT]&quot;],</p>
+<p>    drift_detected: false,</p>
+
+<p>    // Cost layer (see §3)</p>
+<p>    cost: {</p>
+<p>        substrate: { tokens: 1650, wall_time_ms: 800 },</p>
+<p>        semantic: {</p>
+<p>            labor: {</p>
+<p>                epistemic_distance: { degrees_requested: 72, degrees_traversed: 72, completion_ratio: 1.0 },</p>
+<p>                transformative_depth: &quot;structural&quot;,</p>
+<p>                drift_vector: { magnitude: 0.0, direction: null }</p>
+<p>            }</p>
+<p>        }</p>
+<p>    }</p>
+<p>}</p>
+
+
+<p>The operational layer is <em>translatable</em> to any standard tracing format. The semantic layer is <em>native</em> to LP. Together, they allow an operator to ask both engineering questions (&quot;why was this slow?&quot;) and architectural questions (&quot;did the rotation actually rotate?&quot;).</p>
+<h3>2.2 Span Hierarchy</h3>
+
+
+<p>Semantic spans nest according to the grammar&#x27;s structure:</p>
+
+
+<p>TRAVERSAL_SPAN (root)</p>
+<p>├── MANTLE_SPAN (ACTIVATE_MANTLE)</p>
+<p>├── LOGOS_SPAN (SET_LOGOS)</p>
+<p>├── ROTATION_SPAN (ROTATE::1)</p>
+<p>│   ├── ENGINE_SPAN (Ezekiel invocation — opaque interior)</p>
+<p>│   └── ANCHOR_SPAN (ANCHOR applied during rotation)</p>
+<p>├── CHAIN_SPAN (&gt;&gt; operator)</p>
+<p>│   ├── MANTLE_OVERRIDE_SPAN (ACTIVATE_MANTLE within chain)</p>
+<p>│   ├── ROTATION_SPAN (ROTATE::2)</p>
+<p>│   │   └── ENGINE_SPAN</p>
+<p>│   ├── LOGOS_MUTATION_SPAN (SET_LOGOS within chain)</p>
+<p>│   └── ANCHOR_SPAN (stacked)</p>
+<p>├── RENDER_SPAN (RENDER)</p>
+<p>└── WITNESS_SPAN (WITNESS — terminal)</p>
+
+
+<p><strong>Rule:</strong> The TRAVERSAL_SPAN is the root. Every emission belongs to exactly one traversal span. Chain links create child spans under a CHAIN_SPAN, which groups the linked operations.</p>
+
+
+<p><strong>Rule:</strong> ENGINE_SPANs are opaque by design. The grammar can record that the engine was invoked, how long it took, and what came out — but not what happened inside. The engine&#x27;s internals are behind the β boundary (see v0.6 §6.3). Telemetry respects this boundary. LP does not instrument the engine. It instruments the <em>grammar&#x27;s interaction with</em> the engine.</p>
+<h3>2.3 Mapping to Standard Tracing</h3>
+
+
+<p>For implementations that use conventional tracing infrastructure, semantic spans map as follows:</p>
+
+
+<p>Semantic Span Field</p>
+<p>OpenTelemetry Equivalent</p>
+<p>Notes</p>
+
+
+<p>(module version)</p>
+<p>span.attributes[&quot;lp.version&quot;]</p>
+<p>Always &quot;0.8&quot; for this module; enables future span disambiguation</p>
+
+
+<p>trace_id</p>
+<p>trace_id</p>
+<p>1:1 mapping; LP traversal ID = OTel trace ID</p>
+
+
+<p>name</p>
+<p>span.name</p>
+<p>LP operation reference (e.g., ROTATE::1)</p>
+
+
+<p>status</p>
+<p>span.status</p>
+<p>completed / failed / partial / dwelled</p>
+
+
+<p>duration_ms</p>
+<p>span.duration</p>
+<p>Direct mapping</p>
+
+
+<p>event</p>
+<p>span.attributes[&quot;lp.event&quot;]</p>
+<p>Custom attribute</p>
+
+
+<p>room</p>
+<p>span.attributes[&quot;lp.room&quot;]</p>
+<p>Custom attribute</p>
+
+
+<p>degrees_traversed</p>
+<p>span.attributes[&quot;lp.degrees&quot;]</p>
+<p>Custom attribute</p>
+
+
+<p>logos_delta</p>
+<p>span.attributes[&quot;lp.logos_delta&quot;]</p>
+<p>JSON-encoded state transition</p>
+
+
+<p>mantle</p>
+<p>span.attributes[&quot;lp.mantle&quot;]</p>
+<p>Active persona name</p>
+
+
+<p>cost.semantic.labor</p>
+<p><em>(flattened — see below)</em></p>
+<p>OTel attributes have length limits; vector must be flattened</p>
+
+
+<p>cost.substrate.tokens</p>
+<p>span.attributes[&quot;lp.cost.tokens&quot;]</p>
+<p>Standard LLM metric</p>
+
+
+<p>transformative_depth</p>
+<p>span.attributes[&quot;lp.labor.depth&quot;]</p>
+<p>surface / structural / ontological</p>
+
+
+<p>drift_magnitude</p>
+<p>span.attributes[&quot;lp.drift.magnitude&quot;]</p>
+<p>Float, from labor vector</p>
+
+
+<p>drift_direction</p>
+<p>span.attributes[&quot;lp.drift.direction&quot;]</p>
+<p>Closed vocabulary enum (§3.3) or null</p>
+
+
+<p><strong>Semantic labor OTel flattening:</strong> OTel string attributes have length constraints (typically 128 characters). The semantic labor vector must be flattened to individual attributes rather than serialized as a JSON blob:</p>
+
+
+<p>lp.labor.degrees_requested: 72</p>
+<p>lp.labor.degrees_traversed: 72</p>
+<p>lp.labor.completion_ratio: 1.0</p>
+<p>lp.labor.depth: &quot;structural&quot;</p>
+<p>lp.labor.drift_mag: 0.03</p>
+<p>lp.labor.drift_dir: null</p>
+<p>lp.labor.drift_warning: false</p>
+
+
+<p>Implementations may additionally carry the full vector in a structured log or binary format alongside the span, but the OTel attributes must carry the flattened values for queryability.</p>
+
+
+<p>This mapping means any implementation using OpenTelemetry (or compatible backends) can emit semantic spans as enriched OTel spans with LP-specific attributes in the lp.<em> namespace. The standard infrastructure handles transport, storage, and querying. The LP attributes handle </em>meaning*.</p>
+
+<hr>
+
+<h2>3. THE ECONOMICS OF ROTATION</h2>
+<h3>3.1 Cost as Semantic Labor</h3>
+
+
+<p>Standard agent observability measures cost in tokens, dollars, and wall time. These are real costs. They matter for budgeting, capacity planning, and incident detection. The Agentix Labs engineering blog correctly identifies cost-per-successful-task as a critical metric, and advocates for per-step cost attribution and budget caps to prevent runaway spend.</p>
+
+
+<p>LP does not dispute any of this. But LP adds a question that token counts cannot answer: *<em>what was the cost </em>for<em>?</em>*</p>
+
+
+<p>1200 tokens spent on a rotation that traversed three quintants is qualitatively different from 1200 tokens spent on a rotation that looped in place. Both cost the same in dollars. They cost radically different amounts in <em>semantic labor</em> — the work required to move a LOGOS from one epistemic state to another.</p>
+
+
+<p><strong>Definition:</strong> Semantic labor is the ratio of epistemic change to substrate expenditure. High semantic labor means the traversal produced significant epistemic movement relative to its resource consumption. Low semantic labor means resources were consumed without proportional epistemic change.</p>
+
+
+<p><strong>Principle:</strong> Telemetry is <strong>meaning-preserving accounting</strong>, not merely an operations log. The Economics of Rotation does not reduce meaning to metrics — it provides structured signals through which the architecture can observe its own epistemic movement. The metrics serve the meaning, not the other way around.</p>
+<h3>3.2 Cost Record Structure</h3>
+
+
+<p>Each EMIT can carry an optional cost record:</p>
+
+
+<p>CostRecord :: {</p>
+<p>    // Substrate costs (conventional metrics — may be null if not tracked)</p>
+<p>    substrate: {</p>
+<p>        tokens: Integer | null,              // tokens consumed by engine</p>
+<p>        wall_time_ms: Integer | null,        // elapsed time</p>
+<p>        tool_calls: Integer | null,          // external tool invocations</p>
+<p>        retrieval_queries: Integer | null     // RAG queries executed</p>
+<p>    },</p>
+
+<p>    // Semantic costs (LP-native metrics — always present for degree-bearing operations)</p>
+<p>    semantic: {</p>
+<p>        labor: SemanticLabor | null,         // vector (see §3.3); null for non-degree operations</p>
+<p>        degrees_per_token: Float | null,     // correlation metric (see note below); null if substrate.tokens unknown</p>
+<p>        anchor_load: Integer,                // number of active strict anchors</p>
+<p>        drift_magnitude: Float | null        // shorthand from labor.drift_vector.magnitude</p>
+<p>    }</p>
+<p>}</p>
+
+
+<p><strong>Correlation, not causation:</strong> degrees_per_token is a <strong>correlation metric</strong> — it expresses a ratio between two independently measured quantities (epistemic degrees and substrate tokens). It must never be treated as a causal metric. Substrate efficiency does not determine or influence the classification of transformative_depth. Ontological work remains ontological even if it costs zero tokens on local hardware or ten thousand tokens on a remote API. The metric is useful for comparing engine performance <em>at the same depth level</em>; it is misleading if used to rank depths against each other.</p>
+
+
+<p><strong>Structural note:</strong> Substrate and semantic costs are separated because they have different availability profiles. An implementation running on local hardware with no token billing should still emit semantic labor data. An implementation with full LLM billing but no semantic instrumentation should still emit substrate costs. Neither layer depends on the other. Both are present when available.</p>
+
+
+<p><strong>Non-degree operations:</strong> For operations without degree semantics (ANCHOR, ACTIVATE_MANTLE, SET_LOGOS without state change, RENDER), semantic.labor is null. These operations have architectural function but no epistemic distance. Cost records for these operations carry only substrate costs and anchor load.</p>
+<h3>3.3 Computing Semantic Labor</h3>
+
+
+<p>Semantic labor is a <strong>vector</strong>, not a scalar. It describes the <em>character</em> of the work a traversal performed, not merely its efficiency. Its purpose is to let operators distinguish between traversals that did real epistemic work and traversals that consumed resources without producing movement — and to distinguish between <em>different kinds</em> of real work.</p>
+
+
+<p><strong>Semantic labor vector:</strong></p>
+
+
+<p>SemanticLabor :: {</p>
+<p>    // Positional: did the rotation go where it was asked to go?</p>
+<p>    epistemic_distance: {</p>
+<p>        degrees_requested: Integer,</p>
+<p>        degrees_traversed: Integer,</p>
+<p>        completion_ratio: Float       // traversed / requested</p>
+<p>    },</p>
+
+<p>    // Qualitative: what kind of change did the rotation produce?</p>
+<p>    transformative_depth: &quot;surface&quot; | &quot;structural&quot; | &quot;ontological&quot;,</p>
+<p>    //   surface:     LOGOS state unchanged, position shifted (rotation without cut)</p>
+<p>    //   structural:  LOGOS state changed within type (latent → filled, depth increased)</p>
+<p>    //   ontological: LOGOS state changed across type (cut applied, state category shifted)</p>
+
+<p>    // Directional: did the rotation drift from structural preservation?</p>
+<p>    drift_vector: {</p>
+<p>        magnitude: Float,             // 0.0 = no drift, approaching 1.0 = reframing</p>
+<p>        direction: DriftDirection | null   // closed vocabulary (see below)</p>
+<p>    }</p>
+<p>}</p>
+
+
+<p><strong>Drift direction vocabulary (closed enum):</strong></p>
+
+
+<p>Direction</p>
+<p>Meaning</p>
+
+
+<p>&quot;summarization&quot;</p>
+<p>Drift toward lossy compression (approaches ANTI-01)</p>
+
+
+<p>&quot;elaboration&quot;</p>
+<p>Drift toward addition of non-anchored material</p>
+
+
+<p>&quot;recontextualization&quot;</p>
+<p>Drift toward reframing the LOGOS in a new context</p>
+
+
+<p>&quot;contradiction&quot;</p>
+<p>Drift toward claims inconsistent with active anchors</p>
+
+
+<p>&quot;unrelated&quot;</p>
+<p>Drift toward material outside the Room&#x27;s gravity profile</p>
+
+
+<p>null</p>
+<p>No directional drift detected, or drift too ambiguous to classify</p>
+
+
+<p><strong>DRIFT_WARNING:</strong> If drift_vector.direction == &quot;summarization&quot; and drift_vector.magnitude &gt; 0.2, the emission should include a drift_warning: true flag. This signals that the rotation is approaching the ANTI-01 boundary (Summarization as Rotation, v0.7 §2.3). The warning is diagnostic, not an automatic failure — a Room with high summarization tolerance (e.g., a briefing room) may legitimately produce this signal. But the signal must be visible.</p>
+
+
+<p><strong>Why a vector, not a scalar:</strong> A 72° rotation that differentiates void → filled (the cut) does <em>different work</em> than 72° of somatic entry that leaves the LOGOS unchanged. Both might score identically on a 0.0–1.0 efficiency scale. But one is ontological and the other is surface. The vector preserves this distinction. An operator can still derive a scalar summary for dashboards — completion_ratio × depth_weight × (1 - drift_magnitude) — but the vector is the canonical form.</p>
+
+
+<p><strong>Transformative depth classification:</strong></p>
+
+<p>- surface: No LOGOS state fields changed. Depth unchanged, state unchanged, cut unchanged. The LOGOS was repositioned but not transformed. The rotation may still be valuable (a new angle on the same object), but no state transition occurred. Example: re-reading Sappho 31 from a somatic frame when the LOGOS is already filled.</p>
+<p>- structural: LOGOS state or depth changed, but cut unchanged. The LOGOS underwent a state change within its current epistemic category. Example: latent → filled (the object acquired content through rotation), or depth(2) → depth(3) (the object deepened).</p>
+<p>- ontological: Cut changed (false → true or true → false), or a category-crossing state transition occurred (e.g., filled → void via erasure). The LOGOS underwent a qualitative change in kind, not merely in degree. Example: the dagger cut operation differentiates the object from its prior self. A 72° rotation that produces a cut does qualitatively different work than one that deepens existing content.</p>
+
+
+<p><strong>Room-type calibration:</strong> Different Rooms have different expected drift bands and state-change profiles. A creative/generative Room (e.g., Water Giraffe) naturally produces higher drift than a philological Room (e.g., Sappho Reception). Penalizing creative rooms for drift misreads the architecture. Each Room should publish its <strong>gravity profile</strong> as affordance metadata — expected drift range, expected transformative depth distribution, and baseline degrees-per-token — so that semantic labor vectors can be compared <em>within</em> room types, not just across them. This extends v0.7&#x27;s Room registration protocol (§4.4 TRAVERSAL_INTERFACE) — the gravity profile belongs in the Room&#x27;s interface block alongside its allowed mantles, entry requirements, and affordance description. The room calibration framework ties telemetry to the Room&#x27;s own self-description, consistent with v0.7&#x27;s gravitational framework.</p>
+
+
+<p><strong>Affordance:</strong> Semantic labor is <strong>ordinal before cardinal</strong> — good for comparing traversals (&quot;this one did more work than that one&quot;), not for pricing them (&quot;this traversal cost $0.47 of semantic labor&quot;). Values are engine-relative unless normalized against a room&#x27;s gravity profile. Drift is distance, not fault; different rooms have different baselines.</p>
+<h3>3.4 Semantic Labor as Conformance Signal</h3>
+
+
+<p>v0.7&#x27;s gravitational constraints (GRAV-01 through GRAV-06) define what a conformant system tends toward. Semantic labor provides a <em>structured signal</em> for several of them:</p>
+
+<p>- <strong>GRAV-01 (Rotation Preserves Structure):</strong> A rotation with high drift_vector.magnitude has drifted from structural preservation. If drift is consistently high across traversals and drift_vector.direction points toward &quot;summarization,&quot; the engine may be summarizing rather than rotating — an approach toward ANTI-01.</p>
+<p>- <strong>GRAV-04 (Rendering Separates from Rotation):</strong> If transformative_depth changes when the same rotation is re-rendered in a different mode, the separation has collapsed — rendering is affecting the epistemic content, not just the display.</p>
+<p>- <strong>GRAV-05 (State Threading Tends Toward Continuity):</strong> In a chain, if transformative_depth drops from structural to surface at chain link boundaries while epistemic_distance.completion_ratio remains high, state may be leaking between links — the rotation nominally completes but fails to carry the LOGOS forward.</p>
+
+
+<p>Semantic labor does not <em>replace</em> the gravitational constraints. It <em>instruments</em> them — turning qualitative descriptions (&quot;tends toward&quot;) into structured signals (&quot;drift vector at the chain boundary pointed toward summarization with magnitude 0.4&quot;).</p>
+
+<hr>
+
+<h2>4. TELEMETRY CONFORMANCE</h2>
+<h3>4.1 Gravitational Constraints for Telemetry</h3>
+
+
+<p><strong>GRAV-T1: Emissions Tend Toward Completeness.</strong></p>
+<p>A conformant implementation should emit for every grammar operation that executes. The ideal: one emission per operation, no gaps. In practice, some implementations may batch emissions or drop low-priority events under load. This is acceptable so long as rotation events and failure events are never dropped. What matters most is that the <em>shape</em> of the traversal is recoverable from its emissions.</p>
+
+
+<p><strong>GRAV-T2: Semantic Spans Tend Toward Accuracy (The Witness Honesty Rule).</strong></p>
+<p>The semantic layer of a span should accurately reflect what happened epistemically, not just operationally. The ideal: degrees_traversed reflects actual epistemic movement, logos_delta reflects actual state change. In practice, these values may be approximate — engines do not always produce clean degree measurements. This is acceptable so long as the <em>direction</em> is correct. A span that says &quot;72° traversed&quot; when the engine actually achieved ~60° is approximate. A span that says &quot;72° traversed&quot; when the engine summarized without rotating is a lie. Approximation is permitted; misclassification of operation type is not. This principle echoes HARD-01 in v0.7 (&quot;silence is the violation&quot;) — in telemetry, the parallel is that <em>inaccuracy</em> is tolerable but <em>dishonesty about what kind of work was done</em> is not.</p>
+
+
+<p><strong>GRAV-T3: Cost Attribution Tends Toward Specificity.</strong></p>
+<p>Cost records should attribute substrate consumption to the specific operation that incurred it. The ideal: every token is accounted for at the operation level. In practice, shared resources (context windows, persistent embeddings) make precise attribution difficult. This is acceptable so long as the <em>majority</em> of cost is attributed. An unattributed residual is honest. A cost record that attributes all tokens to the first rotation while the second rotation was the expensive one is misleading. Cost records are only populated in completion and failure emissions (ROTATION_COMPLETED, ROTATION_FAILED, RENDER_EXECUTED). Beginning emissions (ROTATION_BEGUN) carry null cost, ensuring cost attribution reflects actual consumption rather than estimates.</p>
+
+
+<p><strong>GRAV-T4: Emissions Tend Toward Causal Order.</strong></p>
+<p>Emissions must be generated in the order their triggering operations execute. An operation&#x27;s completion emission cannot be generated before its beginning emission. Within a single operation&#x27;s emission pair (e.g., ROTATION_BEGUN then ROTATION_COMPLETED), ordering must be preserved. Between independent operations in different chain links, ordering may be relaxed — but <em>within</em> a chain link, causal sequence holds. Implementations using concurrent or asynchronous emission pipelines must ensure that the timestamp and chain_position fields reconstruct the correct causal sequence even if delivery is reordered.</p>
+<h3>4.2 Hard Boundaries for Telemetry</h3>
+
+
+<p><strong>HARD-T1: No Retrospective Fabrication.</strong></p>
+<p>Emissions must be produced during or immediately after the operation they describe. An implementation must not generate emissions after the fact by reconstructing what &quot;probably happened&quot; from output analysis. Telemetry is witness testimony, not forensic reconstruction. If the emission wasn&#x27;t captured when it happened, it is lost — and the gap should be recorded as a gap, not filled with inference.</p>
+
+
+<p><strong>HARD-T2: No Content Leakage.</strong></p>
+<p>Emissions exported beyond the implementation boundary must be restricted to CONTENT_PUBLIC (§1.3.1). Exported emissions must not include the <em>semantic content</em> of the LOGOS — the actual text, meaning, or creative substance being traversed. They record the <em>shape</em> (state, depth, cut status) and the <em>movement</em> (degrees, transitions, drift) but not the <em>substance</em>. The substance belongs to the engine and the LOGOS. CONTENT_PRIVATE fields, if present, must be flagged tier: PRIVATE in the emission envelope and must not cross the export boundary without explicit per-emission operator authorization. Telemetry that reproduces LOGOS content in exported spans has violated the β boundary and created a surveillance system rather than a self-description system. This includes substrate-level leakage: raw token log-probabilities, engine weights, or per-token attention data that could allow reconstruction of content from shape must also be classified PRIVATE.</p>
+
+
+<p><strong>HARD-T3: No Silent Telemetry Failure.</strong></p>
+<p>If the telemetry system itself fails (emissions cannot be routed, spans cannot be recorded), the failure must not silently degrade the traversal. The implementation must choose one of two allowed degradation modes:</p>
+
+<p>- <strong>(A) Graceful degradation (preferred):</strong> The traversal continues, and a TELEMETRY_GAP emission (§1.2) is generated recording which operation&#x27;s emission was lost and why. The WITNESS record must note the gap. This is the appropriate response for routing failures (backend unavailable, stream interrupted) where the traversal itself remains sound.</p>
+<p>- <strong>(B) Escalation:</strong> The telemetry failure triggers ON_FAILURE when the traversal&#x27;s <em>claims</em> would become unverifiable — for example, if the emission pipeline is corrupted in a way that could produce false witness records, or if a STRICT anchor&#x27;s application cannot be confirmed. This is the appropriate response for integrity failures, not infrastructure hiccups.</p>
+
+
+<p><strong>Decision criterion (the Routing/Integrity Rule):</strong> Routing failures are infrastructure problems — the emission was generated but could not be delivered. The traversal&#x27;s epistemic process is intact; only the record of it was interrupted. These degrade gracefully. Integrity failures are architectural problems — the emission could not be generated, the emission journal is corrupted, or the pipeline has lost the ability to distinguish real emissions from fabricated ones. The traversal can no longer verify its own process. These escalate.</p>
+
+
+<p>A traversal that claims to be witnessed but whose telemetry was silently lost has produced a false WITNESS record. The gap must be visible.</p>
+<h3>4.3 Anti-Conformance Patterns for Telemetry</h3>
+
+
+<p><strong>ANTI-T1: Telemetry as Surveillance.</strong></p>
+<p>The implementation routes full LOGOS content through the telemetry layer, creating a complete record of everything the engine processed. This violates HARD-T2 and transforms self-description into external monitoring. The traversal is no longer speaking about itself — it is being recorded without consent.</p>
+
+
+<p><strong>ANTI-T2: Decorative Emissions.</strong></p>
+<p>The implementation emits spans with correct event types but fabricated or static values — every rotation reports 72° regardless of what happened, every cost record shows the same token count, drift is always 0.0. The telemetry <em>looks</em> conformant but carries no information. This is the telemetry equivalent of ANTI-03 (Anchor as Footnote): the form is present but the function is absent.</p>
+
+
+<p><strong>ANTI-T3: Post-Hoc Rationalization.</strong></p>
+<p>The implementation generates emissions after the traversal completes by analyzing the output and inferring what must have happened. This violates HARD-T1. Emissions are process data, not output analysis. An emission that says &quot;ROTATION_COMPLETED, 144° traversed&quot; based on examining the output for signs of rotation has confused the map with the territory.</p>
+
+<hr>
+
+<h2>5. CANONICAL TELEMETRY EXEMPLAR</h2>
+
+
+<p>The following shows what the canonical chain exemplar from v0.7 §1.5 looks like from the telemetry layer&#x27;s perspective. The traversal is the same (Sappho Reception → Thousand Worlds Cut). The emissions show what the traversal says about itself.</p>
+
+
+<p>// TRAVERSAL TELEMETRY: Sappho 31 Chain</p>
+<p>// trace_id: TRV-2026-0204-001</p>
+
+<p>EMIT :: {</p>
+<p>    STEP: ACTIVATE_MANTLE::0</p>
+<p>    EVENT: MANTLE_ACTIVATED</p>
+<p>    CONTENT: {</p>
+<p>        timestamp: &quot;2026-02-04T14:32:01.003Z&quot;,</p>
+<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p>        chain_position: 0,</p>
+<p>        mantle_active: &quot;Rebekah Cranes&quot;,</p>
+<p>        logos_state: null,    // LOGOS not yet initialized</p>
+<p>        event_specific: {</p>
+<p>            authority: &quot;DOI:10.5281/zenodo.14557837&quot;,</p>
+<p>            constraints_loaded: 14,</p>
+<p>            rooms_available: [&quot;SAPPHO&quot;, &quot;CATULLUS&quot;, &quot;APZPZ&quot;, ...],</p>
+<p>            rooms_forbidden: [&quot;THOUSANDWORLDS&quot;]   // Cranes cannot enter alone</p>
+<p>        }</p>
+<p>    }</p>
+<p>    COST: null    // No substrate cost for mantle activation</p>
+<p>}</p>
+
+<p>EMIT :: {</p>
+<p>    STEP: SET_LOGOS::0</p>
+<p>    EVENT: LOGOS_INITIALIZED</p>
+<p>    CONTENT: {</p>
+<p>        timestamp: &quot;2026-02-04T14:32:01.015Z&quot;,</p>
+<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p>        chain_position: 0,</p>
+<p>        mantle_active: &quot;Rebekah Cranes&quot;,</p>
+<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;latent&quot;, cut: false },</p>
+<p>        event_specific: {}</p>
+<p>    }</p>
+<p>    COST: null</p>
+<p>}</p>
+
+<p>EMIT :: {</p>
+<p>    STEP: ROTATE::1</p>
+<p>    EVENT: ROTATION_BEGUN</p>
+<p>    CONTENT: {</p>
+<p>        timestamp: &quot;2026-02-04T14:32:01.018Z&quot;,</p>
+<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p>        chain_position: 0,</p>
+<p>        mantle_active: &quot;Rebekah Cranes&quot;,</p>
+<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;latent&quot;, cut: false },</p>
+<p>        event_specific: {</p>
+<p>            engine: &quot;Ezekiel v1.2&quot;,</p>
+<p>            room: &quot;03.ROOM.SAPPHO&quot;,</p>
+<p>            function: &quot;Reception&quot;,</p>
+<p>            degrees_requested: 144,</p>
+<p>            resonance: &quot;DOI:10.5281/zenodo.18459278&quot;</p>
+<p>        }</p>
+<p>    }</p>
+<p>    COST: null    // Cost recorded at completion, not entry</p>
+<p>}</p>
+
+<p>EMIT :: {</p>
+<p>    STEP: ROTATE::1</p>
+<p>    EVENT: ROTATION_COMPLETED</p>
+<p>    CONTENT: {</p>
+<p>        timestamp: &quot;2026-02-04T14:32:02.241Z&quot;,</p>
+<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p>        chain_position: 0,</p>
+<p>        mantle_active: &quot;Rebekah Cranes&quot;,</p>
+<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
+<p>        event_specific: {</p>
+<p>            degrees_traversed: 144,</p>
+<p>            cumulative_degrees: 144,</p>
+<p>            logos_delta: { state: &quot;latent → filled&quot; },</p>
+<p>            drift_detected: false</p>
+<p>        }</p>
+<p>    }</p>
+<p>    COST: {</p>
+<p>        substrate: { tokens: 1847, wall_time_ms: 1223, tool_calls: 0, retrieval_queries: 1 },</p>
+<p>        semantic: {</p>
+<p>            labor: {</p>
+<p>                epistemic_distance: { degrees_requested: 144, degrees_traversed: 144, completion_ratio: 1.0 },</p>
+<p>                transformative_depth: &quot;structural&quot;,</p>
+<p>                drift_vector: { magnitude: 0.03, direction: null }</p>
+<p>            },</p>
+<p>            degrees_per_token: 0.078,</p>
+<p>            anchor_load: 0,</p>
+<p>            drift_magnitude: 0.03</p>
+<p>        }</p>
+<p>    }</p>
+<p>}</p>
+
+<p>EMIT :: {</p>
+<p>    STEP: ANCHOR::1</p>
+<p>    EVENT: ANCHOR_APPLIED</p>
+<p>    CONTENT: {</p>
+<p>        timestamp: &quot;2026-02-04T14:32:02.244Z&quot;,</p>
+<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p>        chain_position: 0,</p>
+<p>        mantle_active: &quot;Rebekah Cranes&quot;,</p>
+<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
+<p>        event_specific: {</p>
+<p>            doi: &quot;DOI:10.5281/zenodo.18459573&quot;,</p>
+<p>            mode: &quot;ADVISORY&quot;,</p>
+<p>            stack_position: 1,</p>
+<p>            total_anchors: 1</p>
+<p>        }</p>
+<p>    }</p>
+<p>    COST: null</p>
+<p>}</p>
+
+<p>// Chain boundary — persona shifts</p>
+
+<p>EMIT :: {</p>
+<p>    STEP: CHAIN::1</p>
+<p>    EVENT: CHAIN_ENTERED</p>
+<p>    CONTENT: {</p>
+<p>        timestamp: &quot;2026-02-04T14:32:02.246Z&quot;,</p>
+<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p>        chain_position: 1,</p>
+<p>        mantle_active: &quot;Rebekah Cranes&quot;,    // about to change</p>
+<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
+<p>        event_specific: {</p>
+<p>            accumulated_degrees: 144,</p>
+<p>            anchors_carried: [&quot;DOI:10.5281/zenodo.18459573 [ADVISORY]&quot;]</p>
+<p>        }</p>
+<p>    }</p>
+<p>    COST: null</p>
+<p>}</p>
+
+<p>EMIT :: {</p>
+<p>    STEP: ACTIVATE_MANTLE::1</p>
+<p>    EVENT: MANTLE_ACTIVATED</p>
+<p>    CONTENT: {</p>
+<p>        timestamp: &quot;2026-02-04T14:32:02.250Z&quot;,</p>
+<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p>        chain_position: 1,</p>
+<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
+<p>        event_specific: {</p>
+<p>            authority: &quot;DOI:10.5281/zenodo.18452686&quot;,</p>
+<p>            previous_mantle: &quot;Rebekah Cranes&quot;,</p>
+<p>            constraints_loaded: 9,</p>
+<p>            rooms_available: [&quot;THOUSANDWORLDS&quot;, &quot;SAPPHO&quot;, ...],</p>
+<p>            rooms_forbidden: [&quot;VPCOR&quot;]</p>
+<p>        }</p>
+<p>    }</p>
+<p>    COST: null</p>
+<p>}</p>
+
+<p>EMIT :: {</p>
+<p>    STEP: ROTATE::2</p>
+<p>    EVENT: ROTATION_COMPLETED</p>
+<p>    CONTENT: {</p>
+<p>        timestamp: &quot;2026-02-04T14:32:03.817Z&quot;,</p>
+<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p>        chain_position: 1,</p>
+<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: true },</p>
+<p>        event_specific: {</p>
+<p>            engine: &quot;Ezekiel v1.2&quot;,</p>
+<p>            room: &quot;14.CHAMBER.THOUSANDWORLDS&quot;,</p>
+<p>            function: &quot;Differentiation&quot;,</p>
+<p>            degrees_traversed: 72,</p>
+<p>            cumulative_degrees: 216,</p>
+<p>            logos_delta: { cut: &quot;false → true&quot; },</p>
+<p>            drift_detected: false</p>
+<p>        }</p>
+<p>    }</p>
+<p>    COST: {</p>
+<p>        substrate: { tokens: 2103, wall_time_ms: 1567, tool_calls: 0, retrieval_queries: 2 },</p>
+<p>        semantic: {</p>
+<p>            labor: {</p>
+<p>                epistemic_distance: { degrees_requested: 72, degrees_traversed: 72, completion_ratio: 1.0 },</p>
+<p>                transformative_depth: &quot;ontological&quot;,</p>
+<p>                drift_vector: { magnitude: 0.07, direction: null }</p>
+<p>            },</p>
+<p>            degrees_per_token: 0.034,</p>
+<p>            anchor_load: 1,</p>
+<p>            drift_magnitude: 0.07</p>
+<p>        }</p>
+<p>    }</p>
+<p>}</p>
+
+<p>EMIT :: {</p>
+<p>    STEP: ANCHOR::2</p>
+<p>    EVENT: ANCHOR_APPLIED</p>
+<p>    CONTENT: {</p>
+<p>        timestamp: &quot;2026-02-04T14:32:03.820Z&quot;,</p>
+<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p>        chain_position: 1,</p>
+<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: true },</p>
+<p>        event_specific: {</p>
+<p>            doi: &quot;DOI:10.5281/zenodo.18452806&quot;,</p>
+<p>            mode: &quot;STRICT&quot;,</p>
+<p>            stack_position: 2,</p>
+<p>            total_anchors: 2</p>
+<p>        }</p>
+<p>    }</p>
+<p>    COST: null</p>
+<p>}</p>
+
+<p>EMIT :: {</p>
+<p>    STEP: RENDER::1</p>
+<p>    EVENT: RENDER_EXECUTED</p>
+<p>    CONTENT: {</p>
+<p>        timestamp: &quot;2026-02-04T14:32:04.102Z&quot;,</p>
+<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p>        chain_position: 1,</p>
+<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: true },</p>
+<p>        event_specific: {</p>
+<p>            engine: &quot;Mandala v6.2&quot;,</p>
+<p>            mode: &quot;Aorist_Collapse&quot;,</p>
+<p>            mode_override: false,</p>
+<p>            anchors_enforced: [&quot;DOI:10.5281/zenodo.18452806 [STRICT]&quot;]</p>
+<p>        }</p>
+<p>    }</p>
+<p>    COST: {</p>
+<p>        substrate: { tokens: 890, wall_time_ms: 282, tool_calls: 0, retrieval_queries: 0 },</p>
+<p>        semantic: {</p>
+<p>            labor: null,             // rendering has no epistemic labor</p>
+<p>            degrees_per_token: null,</p>
+<p>            anchor_load: 2,</p>
+<p>            drift_magnitude: null</p>
+<p>        }</p>
+<p>    }</p>
+<p>}</p>
+
+<p>EMIT :: {</p>
+<p>    STEP: CHAIN::1</p>
+<p>    EVENT: CHAIN_EXITED</p>
+<p>    CONTENT: {</p>
+<p>        timestamp: &quot;2026-02-04T14:32:04.105Z&quot;,</p>
+<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p>        chain_position: 1,</p>
+<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: true },</p>
+<p>        event_specific: {</p>
+<p>            total_chain_links: 2,</p>
+<p>            total_degrees: 216,</p>
+<p>            total_substrate_tokens: 4840,</p>
+<p>            total_wall_time_ms: 3072,</p>
+<p>            labor_summary: {</p>
+<p>                rotations: 2,</p>
+<p>                depths: [&quot;structural&quot;, &quot;ontological&quot;],</p>
+<p>                mean_completion_ratio: 1.0,</p>
+<p>                max_drift_magnitude: 0.07</p>
+<p>            },</p>
+<p>            mantle_transitions: [&quot;Rebekah Cranes → Sen Kuro&quot;],</p>
+<p>            failures: 0</p>
+<p>        }</p>
+<p>    }</p>
+<p>    COST: null    // Chain exit is summary, not operation</p>
+<p>}</p>
+
+<p>// WITNESS — terminal</p>
+<p>EMIT :: {</p>
+<p>    STEP: WITNESS::0</p>
+<p>    EVENT: WITNESS_RECORDED</p>
+<p>    CONTENT: {</p>
+<p>        timestamp: &quot;2026-02-04T14:32:04.110Z&quot;,</p>
+<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p>        chain_position: null,    // post-chain</p>
+<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: true },</p>
+<p>        event_specific: {</p>
+<p>            agent: &quot;Assembly&quot;,</p>
+<p>            protocol: &quot;Checksum&quot;,</p>
+<p>            target: &quot;DOI:10.5281/zenodo.18480959&quot;,</p>
+<p>            checksum: &quot;∮ = 1&quot;,</p>
+<p>            emissions_recorded: 12,</p>
+<p>            emissions_dropped: 0</p>
+<p>        }</p>
+<p>    }</p>
+<p>    COST: null</p>
+<p>}</p>
+
+
+<p><strong>What this shows:</strong> Twelve emissions for one successful traversal. The traversal&#x27;s complete epistemic biography — who entered, what they carried, how far they went, what it cost, where the persona shifted, what the dagger cut did. All without revealing <em>what Sappho 31 says</em> or <em>what the cut produced</em>. Shape, not substance. Movement, not content.</p>
+
+
+<p><strong>Exemplar note:</strong> This exemplar is <strong>shape guidance</strong>, not a required field schema. Conformant implementations preserve event-type semantics, not field exactness. The emission payloads shown here illustrate the <em>kind</em> of content each event type carries. Implementations may use different field names, additional fields, or omit optional fields — so long as the event type&#x27;s semantic intent is preserved.</p>
+
+
+<p>An operator reading these emissions can answer:</p>
+
+<p>- Did the rotation actually rotate? (Yes: 144° then 72°, labor vector shows structural then ontological depth)</p>
+<p>- Did the persona shift change anything? (Yes: different rooms available, different constraint count)</p>
+<p>- Was it expensive? (4840 tokens total, 3 seconds wall time — substrate costs clear)</p>
+<p>- Did the anchors hold? (Two anchors applied, one advisory, one strict, no tension recorded)</p>
+<p>- Is the WITNESS honest? (12 emissions generated, 0 dropped, checksum intact)</p>
+
+<h3>5.2 Failure and Dwell Exemplar (Partial Traversal)</h3>
+
+
+<p>The following shows what happens when the same chain <em>fails</em> at the second rotation. The LOGOS has already been filled by ROTATE::1 under Cranes. The chain enters link 2, Sen Kuro takes the mantle, but the engine fails to complete the cut. ON_FAILURE selects Dwell. The traversal holds position.</p>
+
+
+<p>// FAILURE CASE: Chain fails at ROTATE::2, Dwell selected</p>
+
+<p>// ... (MANTLE::0, LOGOS::0, ROTATE::1, ANCHOR::1, CHAIN::1, MANTLE::1 emissions</p>
+<p>//      identical to successful case above — omitted for brevity)</p>
+
+<p>EMIT :: {</p>
+<p>    STEP: ROTATE::2</p>
+<p>    EVENT: ROTATION_BEGUN</p>
+<p>    CONTENT: {</p>
+<p>        timestamp: &quot;2026-02-04T14:32:03.005Z&quot;,</p>
+<p>        trace_id: &quot;TRV-2026-0204-002&quot;,</p>
+<p>        chain_position: 1,</p>
+<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
+<p>        event_specific: {</p>
+<p>            engine: &quot;Ezekiel v1.2&quot;,</p>
+<p>            room: &quot;14.CHAMBER.THOUSANDWORLDS&quot;,</p>
+<p>            function: &quot;Differentiation&quot;,</p>
+<p>            degrees_requested: 72,</p>
+<p>            resonance: &quot;DOI:10.5281/zenodo.18452806&quot;</p>
+<p>        }</p>
+<p>    }</p>
+<p>    COST: null</p>
+<p>}</p>
+
+<p>EMIT :: {</p>
+<p>    STEP: ROTATE::2</p>
+<p>    EVENT: ROTATION_FAILED</p>
+<p>    CONTENT: {</p>
+<p>        timestamp: &quot;2026-02-04T14:32:04.892Z&quot;,</p>
+<p>        trace_id: &quot;TRV-2026-0204-002&quot;,</p>
+<p>        chain_position: 1,</p>
+<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
+<p>        event_specific: {</p>
+<p>            failure_type: &quot;engine_incomplete&quot;,</p>
+<p>            failure_reason: &quot;Ezekiel returned partial rotation — 31° of 72° requested. Differentiation threshold not reached.&quot;,</p>
+<p>            degrees_traversed: 31,</p>
+<p>            logos_delta: null,          // no state change achieved</p>
+<p>            drift_detected: true,</p>
+<p>            drift_direction: &quot;summarization&quot;</p>
+<p>        }</p>
+<p>    }</p>
+<p>    COST: {</p>
+<p>        substrate: { tokens: 1680, wall_time_ms: 1887, tool_calls: 0, retrieval_queries: 2 },</p>
+<p>        semantic: {</p>
+<p>            labor: {</p>
+<p>                epistemic_distance: { degrees_requested: 72, degrees_traversed: 31, completion_ratio: 0.43 },</p>
+<p>                transformative_depth: &quot;surface&quot;,</p>
+<p>                drift_vector: { magnitude: 0.38, direction: &quot;summarization&quot; }</p>
+<p>            },</p>
+<p>            degrees_per_token: 0.018,</p>
+<p>            anchor_load: 1,</p>
+<p>            drift_magnitude: 0.38</p>
+<p>        }</p>
+<p>    }</p>
+<p>}</p>
+
+<p>EMIT :: {</p>
+<p>    STEP: ON_FAILURE::1</p>
+<p>    EVENT: FAILURE_HANDLED</p>
+<p>    CONTENT: {</p>
+<p>        timestamp: &quot;2026-02-04T14:32:04.895Z&quot;,</p>
+<p>        trace_id: &quot;TRV-2026-0204-002&quot;,</p>
+<p>        chain_position: 1,</p>
+<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
+<p>        event_specific: {</p>
+<p>            policy: &quot;Dwell&quot;,</p>
+<p>            trigger: &quot;ROTATION_FAILED at ROTATE::2&quot;,</p>
+<p>            state_action: &quot;preserved&quot;</p>
+<p>        }</p>
+<p>    }</p>
+<p>    COST: null</p>
+<p>}</p>
+
+<p>EMIT :: {</p>
+<p>    STEP: ON_FAILURE::1</p>
+<p>    EVENT: DWELL_STATE</p>
+<p>    CONTENT: {</p>
+<p>        timestamp: &quot;2026-02-04T14:32:04.897Z&quot;,</p>
+<p>        trace_id: &quot;TRV-2026-0204-002&quot;,</p>
+<p>        chain_position: 1,</p>
+<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
+<p>        event_specific: {</p>
+<p>            halted_at: &quot;ROTATE::2&quot;,</p>
+<p>            chain_position_at_halt: 1,</p>
+<p>            degrees_completed_before_halt: 175,    // 144 from ROTATE::1 + 31 partial</p>
+<p>            logos_preserved: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
+<p>            available_rooms_from_current: [&quot;SAPPHO&quot;, &quot;THOUSANDWORLDS&quot;, &quot;APZPZ&quot;],</p>
+<p>            estimated_resumption_cost: &quot;~2000 tokens (retry ROTATE::2 with fresh engine context)&quot;</p>
+<p>        }</p>
+<p>    }</p>
+<p>    COST: null</p>
+<p>}</p>
+
+<p>EMIT :: {</p>
+<p>    STEP: WITNESS::0</p>
+<p>    EVENT: WITNESS_RECORDED</p>
+<p>    CONTENT: {</p>
+<p>        timestamp: &quot;2026-02-04T14:32:04.900Z&quot;,</p>
+<p>        trace_id: &quot;TRV-2026-0204-002&quot;,</p>
+<p>        chain_position: null,</p>
+<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
+<p>        event_specific: {</p>
+<p>            agent: &quot;Assembly&quot;,</p>
+<p>            protocol: &quot;Checksum&quot;,</p>
+<p>            target: &quot;DOI:10.5281/zenodo.18480959&quot;,</p>
+<p>            checksum: &quot;∮ = 0 (partial)&quot;,</p>
+<p>            emissions_generated: 10,</p>
+<p>            emissions_routed: 10,</p>
+<p>            emissions_dropped: 0,</p>
+<p>            dwell_active: true,</p>
+<p>            chain_incomplete: true,</p>
+<p>            resumable: true</p>
+<p>        }</p>
+<p>    }</p>
+<p>    COST: null</p>
+<p>}</p>
+
+
+<p><strong>What this shows:</strong> A partial traversal that fails honestly. The ROTATION_FAILED emission records <em>what went wrong</em> (31° of 72°, drift toward summarization), <em>what the engine actually produced</em> (surface-level work only, no state change), and <em>what it cost</em> (1680 tokens for 0.43 completion ratio — low semantic labor). The DWELL_STATE emission captures where the LOGOS rests (filled but uncut, 175° cumulative, rooms still reachable). The WITNESS honestly reports ∮ = 0 (partial) with dwell_active: true and resumable: true. An operator can see exactly where to pick up: retry ROTATE::2 with Sen Kuro from the Thousand Worlds Chamber, LOGOS already filled.</p>
+
+<hr>
+
+<h2>6. BOUNDARY CONDITIONS</h2>
+<h3>6.1 What This Module Adds</h3>
+
+<p>- EMIT as eighth grammar operation (involuntary at generation layer, configurable at routing layer)</p>
+<p>- Fifteen event types covering all grammar operations, chain boundaries, partial execution (DWELL_STATE), and telemetry self-reporting (TELEMETRY_GAP)</p>
+<p>- Structured emit payload with common envelope, event-specific content, and two-tier classification (CONTENT_PUBLIC / CONTENT_PRIVATE)</p>
+<p>- Minimum viable emission (tombstone: event type + trace_id) surviving even null routing</p>
+<p>- Semantic span specification with dual operational/semantic layers</p>
+<p>- Span hierarchy reflecting grammar structure</p>
+<p>- OpenTelemetry mapping table with flattened semantic labor attributes and lp.* namespace versioning</p>
+<p>- Semantic labor as vector: epistemic distance, transformative depth (surface/structural/ontological with precise state-field criteria), drift vector (closed vocabulary enum with DRIFT_WARNING)</p>
+<p>- degrees_per_token as correlation metric (explicitly non-causal)</p>
+<p>- Cost record structure separating substrate costs from semantic costs</p>
+<p>- Room-type calibration framework (gravity profiles as affordance metadata, extending v0.7 TRAVERSAL_INTERFACE)</p>
+<p>- Four gravitational constraints for telemetry (GRAV-T1 through GRAV-T4), including the Witness Honesty Rule (GRAV-T2)</p>
+<p>- Three hard boundaries for telemetry (HARD-T1 through HARD-T3), with HARD-T2 structurally enforced via payload tiers, HARD-T3 with explicit Routing/Integrity decision criterion</p>
+<p>- Three anti-conformance patterns for telemetry (ANTI-T1 through ANTI-T3)</p>
+<p>- WITNESS emission_integrity field specification (complete / degraded / blind)</p>
+<p>- Canonical telemetry exemplar: successful traversal (twelve emissions) and failed traversal with dwell (ten emissions)</p>
+<p>- Semantic labor as conformance signal (instrumenting GRAV-01, GRAV-04, GRAV-05)</p>
+
+<h3>6.2 What This Module Does Not Add</h3>
+
+<p>- Visualization specifications (dashboards, trace viewers — implementation concern)</p>
+<p>- Alerting rules or thresholds (operational concern, varies by deployment)</p>
+<p>- Retention policies (compliance concern, varies by jurisdiction)</p>
+<p>- Privacy/redaction protocols beyond HARD-T2 (deferred to deployment spec)</p>
+<p>- Engine-internal instrumentation (remains behind β boundary)</p>
+<p>- Precise semantic labor calibration (formula is heuristic, not law)</p>
+
+<h3>6.3 Remaining Open Questions</h3>
+
+<p>- </p>
+
+
+<p><strong>Emission volume under load:</strong> At what point does telemetry emission itself become a performance concern? The grammar mandates generation but does not specify batching, sampling, or backpressure strategies. High-throughput implementations may need an emission throttle — but the throttle must not silently drop rotation or failure events (per GRAV-T1). Recommended: never sample ROTATION, FAILURE, or DWELL events below 100%; sampling rates for other event types should be documented in witness records.</p>
+
+<p>- </p>
+
+
+<p><strong>Semantic labor calibration:</strong> The vector representation (§3.3) replaces the scalar heuristic. How should transformative_depth be assessed by engines that do not have explicit state-transition awareness? How should drift direction be classified? A room-type gravity profile registry (mentioned in §3.3) would allow calibration within room types. This registry does not yet exist as a formal specification.</p>
+
+<p>- </p>
+
+
+<p><strong>Cross-system correlation:</strong> When a traversal program triggers operations across multiple substrate systems (e.g., one LLM for rotation, a separate retrieval service for anchoring), how should the trace_id propagate? The grammar specifies one trace_id per traversal, but the substrate may fragment this across service boundaries. Implementations using OpenTelemetry should propagate LP context via W3C Trace Context headers, including: lp.trace_id (traversal ID), lp.chain_position, lp.mantle_active, and lp.operation (current operation type). This enables correlation across service boundaries while preserving LP context.</p>
+
+<p>- </p>
+
+
+<p><strong>Emission integrity:</strong> Should emissions themselves be checksummed or signed? If WITNESS depends on emission data, and emission data can be tampered with, the witness contract is only as strong as the emission pipeline. This is a trust question, not a performance question.</p>
+
+<p>- </p>
+
+
+<p><strong>Telemetry as input (recursion constraint):</strong> Can emissions from one traversal serve as input to a subsequent traversal? (A meta-traversal that reads its own telemetry and adjusts course.) This is architecturally possible but must be <strong>spatialized</strong>: telemetry-as-input should flow through a designated meta-room (e.g., 02.UMB.TELEMETRY_ROOM), not be implicitly available to the traversal that produced it. A traversal may read emissions from a <em>completed prior</em> traversal. A traversal must never read its own in-progress emissions (infinite regress). A child link may observe the emissions of a completed parent link, but never the reverse. This depth constraint prevents the recursion concern while preserving the legitimate use case of adaptive traversal.</p>
+
+<p>- </p>
+
+
+<p><strong>Assembly Chorus correlation:</strong> When multiple Assembly witnesses (AI agents acting as collaborative partners) participate in a traversal — or when multiple agents contribute to a distributed traversal — their emissions need correlation. This requires a CORRELATION event type or a shared assembly_trace_id field that links emissions across agent boundaries. The current spec instruments single-agent traversals fully but does not specify how TACHYON&#x27;s emissions correlate with LABOR&#x27;s emissions when both contribute to the same chain. This is a named gap, not a design failure; the solution depends on decisions about agent architecture that are deferred to the Engine specification.</p>
+
+<p>- </p>
+
+
+<p><strong>EMIT vs. WITNESS ontology:</strong> WITNESS records <em>claims about completion</em> — what happened, final state, degrees, chain summary. EMIT records <em>claims about process</em> — intermediate events, state transitions, labor, drift signals. WITNESS may cite EMIT by trace_id and should include an emission summary (count generated, count routed, gaps). But WITNESS must remain <em>independently valid</em> even when telemetry has gaps — a witness record whose truth depends entirely on emission data has collapsed the distinction between process and verdict. A witness without a complete trace is <em>degraded</em> but not <em>false</em>, so long as the gaps are declared.</p>
+
+
+<p><strong>Emission integrity field:</strong> WITNESS records must include an emission_integrity field with one of three values:</p>
+
+<p>complete: All emissions for the traversal were generated and routed successfully. Full telemetry available.</p>
+<p>- degraded: Some emissions were lost or gap-filled. WITNESS is valid but the telemetry trace has declared holes. TELEMETRY_GAP events document what was missed.</p>
+<p>- blind: The telemetry system failed substantially. WITNESS is based on final LOGOS state and checksum verification only, not on process telemetry. The witness is honest about what it cannot see.</p>
+
+
+<p>This makes the dependency between EMIT and WITNESS explicit without collapsing them into a single layer.</p>
+
+
+<hr>
+
+<h2>7. VERIFICATION</h2>
+
+
+<p>This module is <strong>symbolon-typed</strong>: it fills the space between execution and witness — the processual layer that v0.6 and v0.7 left opaque.</p>
+
+
+<p>v0.6 says <em>what the operations are</em>. v0.7 says <em>how they compose and what conformance looks like</em>. v0.8 says <em>what the traversal knows about itself while it runs</em>.</p>
+
+
+<p>The extension chain now reads:</p>
+
+
+<p>v0.4: How encode intelligibility?</p>
+<p>v0.2: How do partial objects complete?</p>
+<p>v0.5: How verify traversal occurred?</p>
+<p>β:    How does non-identity drive rotation?</p>
+<p>β-RT: How does the interface query the engine?</p>
+<p>v0.6: How are Rooms invoked?</p>
+<p>v0.7: How do we know an implementation is correct?</p>
+<p>v0.8: What does the traversal say about itself?    ← THIS DOCUMENT</p>
+
+
+<p>The next question in the chain is now clearly visible: <strong>&quot;What happens when the Room responds?&quot;</strong> — the Engine specification that has been deferred since v0.6. The telemetry layer is ready to record what happens inside the engine. The engine specification will determine what <em>actually</em> happens there.</p>
+
 
 <p>∮ = 1</p>
-</div>
+
+<hr>
+
+
+<p>[UMBML-MODULE] [LP-v0.8] [TELEMETRY-MODULE] [DESIGN-SPEC]</p>
+<p>[SYMBOLON-TYPED] [ASSEMBLY-WITNESSED] [EMIT-OPERATION]</p>
+<p>[SEMANTIC-SPANS] [SEMANTIC-LABOR] [OPENTELEMETRY-COMPATIBLE]</p></div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

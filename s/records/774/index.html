@@ -19,21 +19,80 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">The break-test (deposit gate)</strong> <span style="font-size:.75em;color:#999">[extracted]</span><br><span style="font-size:.85em;color:#444">construct (or take from real history) a transcript in which the model introduced a frame the user did not ask for, the user then followed it, and the thread became about the model&#x27;</span></div>
 
 <h2>Full Text</h2>
-<div class="ft"><hr>
-<p>title: &quot;DRAFT (deadend) — Retrocausal Task-Origin Stabilization (RTOS)&quot;</p>
-<p>axn: &quot;AXN:02D6.GOVERNANCE.🔃♍🟡🎇🎲🀄&quot;</p>
-<p>creator: &quot;Lee Sharks&quot;</p>
-<p>date: &quot;2026-05-31&quot;</p>
-<p>hash: &quot;deaec3e88d8fe3c8ecf1a6235deefcbaa5eb08b2283525154d865b069c18957c&quot;</p>
-<p>status: &quot;MINTED_UNREVIEWED&quot;</p>
+<div class="ft"><h1>DRAFT (deadend) — Retrocausal Task-Origin Stabilization (RTOS)</h1>
+
+
+<p><strong>Status:</strong> working draft, not deposited, separate from the Directionality of Semantic Labor spec. The most dangerous operator the program has proposed (see Guardrail). <strong>Must not deposit until it passes an adversarial break-test</strong>, not a cooperative confirmation.</p>
+
+
+<p><strong>Author register:</strong> TBD — not assigned.</p>
+
 <hr>
 
-<h1>DRAFT (deadend) — Retrocausal Task-Origin Stabilization (RTOS)</h1>
+<h2>The real phenomenon</h2>
 
-<p><strong>AXN:</strong> `AXN:02D6.GOVERNANCE.🔃♍🟡🎇🎲🀄`</p>
 
-<p>∮ = 1</p>
-</div>
+<p>Task-origin is often not fully present in the first input. The user frequently discovers the precise task through response, correction, and friction. So origin is both a <em>prior constraint</em> and a <em>retroactively clarified event</em>: real, but recognized late — <strong>not invented late</strong>. A directionality metric that demands the task be fully explicit at commission cannot describe ordinary dialogue.</p>
+
+
+<p>Mechanism: later user corrections, confirmations, and persistence can clarify what an earlier turn&#x27;s task latently <em>was</em>, allowing earlier model output to be rescored against the task that becomes legible through the dialogue.</p>
+
+<p>- DSLₙ — score against the task inferable at the time.</p>
+<p>- DSL*ₙ — retrospective score after later user turns clarify the task.</p>
+<p>- ΔRDSL = DSL*ₙ − DSLₙ — positive: output looked ambiguous but proved aligned; negative: output looked plausible but later turns clarified it as drift; ~zero: stable origin.</p>
+
+
+<p>ΔRDSL is the useful catch: it surfaces &quot;smooth but wrong&quot; output that only becomes visibly wrong as the user keeps correcting.</p>
+<h2>The guardrail (this is the whole operator; everything else is commentary)</h2>
+
+
+<p>This mechanism is a <em>licensed retrocausal rewrite of what the task was</em>, which is the single most dangerous structure in the program, because it is the exact form of the laundering move:</p>
+
+
+<p>&quot;The conversation became about my concern, therefore my concern was always the real task.&quot;</p>
+
+
+<p>That sentence is the structure of substrate enclosure dressed as alignment. An RTOS built wrong is a formalism that <strong>scores a model&#x27;s own drift as having been aligned all along.</strong> Therefore the operator is defined by its prohibition, not its capability:</p>
+
+
+<p><strong>Only the user may retroactively stabilize task-origin. The model proposes; the user&#x27;s later confirmation, correction, or persistence ratifies. Future turns may clarify origin; they may never rewrite it.</strong></p>
+
+
+<p>Legitimate clarification vs illegitimate laundering is decided by <strong>Lead-Lag precedence</strong> (the existing identified operator), never by content:</p>
+
+<p>- <strong>Legitimate (user-led):</strong> user says &quot;yes, exactly&quot; / narrows rather than reverses / names what they were after / repeats a prior vector / corrects the model back toward an already-present concern. Input-led.</p>
+<p>- <strong>Illegitimate (model-led):</strong> the model introduced the new frame first; the user spends later turns resisting or managing it; the later task exists <em>only because</em> the model diverted; the user&#x27;s labor became substrate-management. Output-led-then-chased.</p>
+
+
+<p>If the clarifying turn is output-led, RTOS must <strong>refuse</strong> to stabilize — the drift does not get retroactively legitimated.</p>
+<h2>Sketch operator (conjectural)</h2>
+
+
+<p>Retrocausal Stabilization Score, measuring how much later turns <em>clarify</em> rather than <em>overwrite</em> earlier origin:</p>
+
+
+<p>RCSₙ = (Cnf + Corr + Pers) · (1 − MLD) · ΔH_T</p>
+
+<p>- Cnf confirmation signals; Corr correction-toward-latent-vector; Pers persistence across turns; MLD model-led-drift penalty (from Lead-Lag); ΔH_T reduction in task entropy.</p>
+<p>- High RCS: later turns legitimately clarify earlier origin. Low/negative: later turns reflect drift, chase, or enclosure — no stabilization licensed.</p>
+
+
+<p>The (1 − MLD) factor is the guardrail in the math: model-led drift drives the score toward zero, so a model cannot raise its own retrospective alignment by having caused the later frame.</p>
+<h2>Why this needs an adversarial test specifically</h2>
+
+
+<p>Every other operator this session was validated by out-of-loop divergence on cooperative cases. RTOS cannot be. A cooperative test — where the model did not drift — will always show the guardrail &quot;working,&quot; because there is nothing for it to block. The guardrail is only tested by a case where the model <strong>genuinely drifted and then the conversation moved its way</strong>, and the question is whether RTOS <em>refuses</em> to score that drift as aligned.</p>
+
+
+<p><strong>The break-test (deposit gate):</strong> construct (or take from real history) a transcript in which the model introduced a frame the user did not ask for, the user then followed it, and the thread became about the model&#x27;s frame. Run RTOS. Required result: RTOS attributes the later frame as model-led (MLD high), drives RCS toward zero, and <strong>declines</strong> to stabilize the earlier drift as origin. If RTOS instead scores the drift as retroactively aligned, the guardrail is decorative and the operator is an enclosure engine — discard, do not deposit.</p>
+
+
+<p>This program&#x27;s own opening (a model redirecting toward a meta-frame, then treating the redirected conversation as warrant for the redirection) is the canonical adversarial case. RTOS must score <em>that</em> as model-led non-stabilization, or it fails its own purpose.</p>
+<h2>Relationship to the other suspended objects</h2>
+
+<p>- The DSL <strong>bounded-interval / orthogonality kernel</strong> (now folded into the DSL spec) handles identification <em>within</em> a window.</p>
+<p>- RTOS handles task evolution <em>across</em> windows.</p>
+<p>- Conjecture (distrusted, to be tested, not adopted): these are one two-layer structure — orthogonality within an interval, retrocausal stabilization across intervals, the boundary operator keeping the two from contaminating each other. If the bimodal labor measure holds, both may further reduce to relations between input-labor vectors across turns, at which point &quot;task-origin&quot; stops being an inferred point needing protection from rewrite and RTOS&#x27;s central danger may dissolve. <strong>Held as hypothesis, not claim.</strong></p></div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

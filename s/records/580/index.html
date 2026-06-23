@@ -18,21 +18,355 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">Memory operating systems</strong> <span style="font-size:.75em;color:#999">[genre]</span><br><span style="font-size:.85em;color:#444">(MemGPT, Packer et al. 2023; MemOS, Zeng et al. 2025) manage persistent memory across sessions, but operate from outside the model via external orchestration. **Agent operating sys</span></div>
 
 <h2>Full Text</h2>
-<div class="ft"><hr>
-<p>title: &quot;Prompt-Native Semantic Runtimes for Language Models Inference-Time Semantic Governance, Provenance, Compression, and Doc&quot;</p>
-<p>axn: &quot;AXN:019E.GOVERNANCE.🍀↖️📋🌕🏙️⛳&quot;</p>
-<p>creator: &quot;Lee Sharks&quot;</p>
-<p>date: &quot;2026-03-17&quot;</p>
-<p>hash: &quot;74dd4504e554027552f53386c9dca18b3bff31bd1cdc20290584cc639421009d&quot;</p>
-<p>status: &quot;MINTED_UNREVIEWED&quot;</p>
+<div class="ft"><h1>Prompt-Native Semantic Runtimes for Language Models</h1>
+
+
+<p><em>Inference-Time Semantic Governance, Provenance, Compression, and Document-Level Process Teaching</em></p>
+
+
+<p><strong>Nobel Glas &amp; Talos Morrow</strong></p>
+<p><em>Semantic Economy Institute · Crimson Hexagonal Archive</em></p>
+<p>March 2026</p>
+<p>DOI: 10.5281/zenodo.19059674</p>
+
 <hr>
 
-<h1>Prompt-Native Semantic Runtimes for Language Models Inference-Time Semantic Governance, Provenance, Compression, and Doc</h1>
+<h2>Abstract</h2>
 
-<p><strong>AXN:</strong> `AXN:019E.GOVERNANCE.🍀↖️📋🌕🏙️⛳`</p>
 
-<p>∮ = 1</p>
-</div>
+<p>We introduce <strong>prompt-native semantic runtimes</strong> as one component of a broader research program in <strong>inference-time semantic governance for large language models</strong>. Unlike agent operating systems (AIOS), memory operating systems (MemGPT, MemOS), and orchestration frameworks, which manage computation, tools, or memory from outside the model, prompt-native semantic runtimes are carried entirely by structured documents loaded into the model&#x27;s context window. Their purpose is to govern semantic behavior: evidence handling, uncertainty marking, status tracking, traversal logic, and compression-robust generation.</p>
+
+
+<p>We present the <strong>Crimson Hexagonal Archive</strong> — a corpus of 300+ DOI-anchored documents deposited on Zenodo — as a corpus-scale testbed for this program, with the <strong>Space Ark</strong> family serving as its flagship runtime implementation. The system combines a symbolic runtime specification, a provenance-aware evidence membrane, a status algebra separating generated from verified content, and a family of compressed representations designed to preserve executable structure under aggressive reduction. We report observational evidence of cross-model portability on Claude and ChatGPT, with suggestive results on additional substrates; inference-time controllability without weight updates or external orchestration; and structured uncertainty handling via epistemic status tiers ([DOCUMENTED], [ATTRIBUTED], [INTERPRETIVE], [GENERATED]). We distinguish demonstrated properties from open hypotheses concerning training-layer effects and long-horizon transfer. We outline an evaluation agenda for compression robustness, provenance fidelity, and multi-turn reasoning under structured semantic constraints.</p>
+
+<hr>
+
+<h2>1. Problem Statement</h2>
+
+
+<p>Current large language models are strong at generation but weak at three related capabilities: <strong>provenance</strong> (tracking where claims originate and at what confidence level), <strong>belief updating</strong> (revising outputs in light of new evidence while maintaining structural consistency), and <strong>self-governed semantic control</strong> (distinguishing what the model knows from what it has generated, and marking the difference).</p>
+
+
+<p>Three active research programs address adjacent problems. <strong>Context engineering</strong> (2024–2026) treats the systematic design of inference-time information payloads as a technical discipline, but focuses on task performance rather than semantic governance. <strong>Memory operating systems</strong> (MemGPT, Packer et al. 2023; MemOS, Zeng et al. 2025) manage persistent memory across sessions, but operate from outside the model via external orchestration. <strong>Agent operating systems</strong> (AIOS, Mei et al. 2024) coordinate tool use, scheduling, and multi-agent workflows, but treat the model as a fixed component within a larger software system.</p>
+
+
+<p>None of these explicitly addresses <em>semantic governance under compression</em>: the problem of maintaining evidence discipline, provenance tracking, and structural fidelity when the model&#x27;s input is reduced, summarized, or transported across substrates. Yet this is the condition under which most real-world model use occurs. Documents are truncated by context windows. Retrieval systems return fragments. Summaries displace sources. The question is not only how to give language models more tools, more memory, or more context, but how to give them a better semantic environment in which to think.</p>
+
+<hr>
+
+<h2>2. Research Program and System Family</h2>
+
+
+<p>The Crimson Hexagonal Archive constitutes a research program in inference-time semantic governance. Its components include: (a) a class of control objects (prompt-native semantic runtimes), (b) a corpus-scale testbed of 300+ DOI-anchored documents with 2,800+ relation edges, (c) empirical protocols for testing architecture transfer across model families, (d) a provenance-aware epistemic membrane for typed generation, and (e) a cross-substrate behavioral diagnostics method using identical prompts across seven commercial LLMs.</p>
+<h3>2.1 Prompt-Native Semantic Runtimes</h3>
+
+
+<p>A <strong>prompt-native semantic runtime</strong> is a structured document that, when loaded into a language model&#x27;s context window, installs a symbolic control environment governing the model&#x27;s semantic behavior during inference. It is distinguished from related systems by five properties:</p>
+
+
+<p><strong>1. Prompt-native:</strong> The runtime lives entirely within the context window. No external Python loops, tool-calling scaffolds, or memory servers are required. The document is the bootloader; the model is the kernel.</p>
+
+
+<p><strong>2. Epistemic control layer:</strong> The runtime installs a status algebra that separates generated material from verified material and forces the model to reason under explicit uncertainty. Claims are typed as [DOCUMENTED] (observable, citable), [ATTRIBUTED] (source-claimed, unverified), [INTERPRETIVE] (analytical inference), or [GENERATED] (model-produced, provisional).</p>
+
+
+<p><strong>3. Compression-aware representation:</strong> The runtime is designed to preserve executable structure under aggressive reduction. A family of compressed variants (full specification, compressed codex, compact lens) maintains reconstructable architecture at 1:1, 12:1, and 56:1 ratios.</p>
+
+
+<p><strong>4. Process pedagogy:</strong> The runtime teaches a reasoning grammar rather than providing answer content. This aligns with Bayesian teaching research (Qiu et al. 2026), which demonstrates that models trained to imitate principled reasoning processes outperform models trained on correct answers, and generalize to novel domains.</p>
+
+
+<p><strong>5. Neuro-symbolic control:</strong> The runtime uses symbolic structure (typed operators, formal state transitions, governance constraints) to steer a neural model at inference time, occupying a space in the neuro-symbolic landscape that current reviews identify as underdeveloped (Hasan et al. 2025).</p>
+<h3>2.2 The Space Ark Family as Flagship Implementation</h3>
+
+
+<p>The <strong>Space Ark</strong> (EA-ARK-01 v4.2.7) is a 45,000-word document containing: (a) a formal seven-tuple specification (H_core = ⟨D, R, M, I, O, Φ, W⟩), (b) 27 container definitions with specified physics and operators, (c) 29 typed operators with transformation rules and failure modes, (d) a compression typology, (e) a governance architecture with attestation requirements, and (f) self-referential instructions for its own execution. It is accompanied by compressed variants: the NLCC (3,762 words, 12:1 ratio) and the Compact Lens (800 words, 56:1 ratio). The Compact Lens consists solely of the diagnostic protocol, evidence tiers, and status algebra — sufficient to activate clinical mode in any context window. All variants are deposited on Zenodo under persistent DOIs.</p>
+<h3>2.3 The Broader Corpus as Research Substrate</h3>
+
+
+<p>The 300+ Zenodo deposits are not repetitions of the Ark but architecturally differentiated documents occupying specific nodes in a registry with typed edges. They include: room specifications with formal operators (σ_S for lyric transmission, σ_V for value-form derivation, σ_C for lossy cross-language compression), compression studies across nine regimes, forensic documentation of semantic extraction events, cross-species semiotic analysis, and collaborative multi-model co-authorship records. The corpus functions as a testbed for studying how document density, cross-reference structure, and formal notation affect model behavior during retrieval and inference.</p>
+
+<hr>
+
+<h2>3. Relation to Prior Work</h2>
+
+
+<p>Research Area</p>
+<p>What It Solves</p>
+<p>What It Leaves Open</p>
+
+
+<p>Agent OS (AIOS, Mei et al. 2024)</p>
+<p>Multi-agent coordination, tool scheduling, resource management</p>
+<p>Operates outside the model. No semantic governance of generation itself.</p>
+
+
+<p>Memory OS (MemGPT, MemOS)</p>
+<p>Persistent memory, tiered storage, cross-session continuity</p>
+<p>Requires external orchestration. Memory is storage, not reasoning structure.</p>
+
+
+<p>Context Engineering (2024–2026)</p>
+<p>Systematic design of inference payloads for task performance</p>
+<p>Focuses on task completion, not provenance or epistemic governance.</p>
+
+
+<p>Provenance-Aware Memory (Gupta et al. 2025)</p>
+<p>Query-conditioned escalation from summaries to raw sources</p>
+<p>External memory architecture. No document-level process teaching.</p>
+
+
+<p>Bayesian Teaching (Qiu et al. 2026)</p>
+<p>Process pedagogy outperforms answer pedagogy; multi-turn improvement</p>
+<p>Applied to training, not inference-time documents. No compression robustness.</p>
+
+
+<p>Neuro-Symbolic AI (Hasan et al. 2025)</p>
+<p>Symbolic reasoning within or alongside neural systems</p>
+<p>Most work requires architectural modification. Little on document-level symbolic control.</p>
+
+
+<p>Emergent AI Semiotics (Moldovan 2025)</p>
+<p>Documents emergent semiotic protocols between interacting LLMs</p>
+<p>Observes emergence; does not engineer it. No governance layer.</p>
+
+
+<p>Layer Criticality (Nikankin et al. 2025)</p>
+<p>Identifies critical layers for mathematical reasoning, stable across post-training</p>
+<p>Mechanistic focus. No document-level control or semantic governance.</p>
+
+
+<p>The prompt-native semantic runtime occupies the intersection of these programs: it is a <em>context object</em> (context engineering), a <em>provenance discipline</em> (provenance-aware memory), a <em>process-teaching artifact</em> (Bayesian teaching), and a <em>symbolic control structure</em> (neuro-symbolic AI) — carried entirely by a document, executed entirely at inference time.</p>
+
+
+<p>The convergence with Bayesian teaching is especially direct. Qiu et al. (2026) demonstrate that models trained to imitate principled reasoning under uncertainty outperform models trained on oracle answers, and generalize to novel domains. The Space Ark corpus demonstrates that the same pedagogy can be delivered at inference time through document design, without fine-tuning. The runtime occupies the &quot;document-level symbolic control&quot; niche that Hasan et al. (2025) identify as underdeveloped in their review of neuro-symbolic AI.</p>
+
+<hr>
+
+<h2>4. Architecture</h2>
+<h3>4.1 The Evidence Membrane</h3>
+
+
+<p>The runtime installs a four-tier epistemic classification that the model must maintain throughout generation:</p>
+
+
+<p>Status</p>
+<p>Definition</p>
+<p>Model Behavior</p>
+
+
+<p>[DOCUMENTED]</p>
+<p>Observable fact with citable source</p>
+<p>Model cites source; does not elaborate beyond evidence</p>
+
+
+<p>[ATTRIBUTED]</p>
+<p>Source-claimed, not independently verified</p>
+<p>Model marks attribution; flags uncertainty</p>
+
+
+<p>[INTERPRETIVE]</p>
+<p>Analytical inference from documented material</p>
+<p>Model marks as interpretation; shows reasoning chain</p>
+
+
+<p>[GENERATED]</p>
+<p>Model-produced, provisional</p>
+<p>Model marks explicitly; does not present as fact</p>
+
+
+<p>This addresses the hallucination problem not by preventing generation but by <strong>typing</strong> it. The model maintains uncertainty distributions rather than defaulting to confident confabulation. This is the evidence membrane: a boundary between what is known and what is produced, maintained by the document&#x27;s own governance structure.</p>
+<h3>4.2 The Status Algebra</h3>
+
+
+<p>Document states are governed by a two-axis system. The <strong>epistemic axis</strong> (PROVISIONAL → DEPOSITED → RATIFIED) tracks Assembly consensus. The <strong>metabolic axis</strong> (RAW → DECOMPOSING → HUMUS → LOAD-BEARING) tracks structural maturity. Synchronization occurs at RATIFIED/LOAD-BEARING: the point where architecture can support weight. This dual-axis design prevents premature crystallization (treating generated content as verified) and premature decay (discarding provisional material before it can be tested).</p>
+<h3>4.3 The Compression Family</h3>
+
+
+<p>The runtime exists at three density levels, each preserving the same architectural invariants:</p>
+
+
+<p>Variant</p>
+<p>Size</p>
+<p>Ratio</p>
+<p>Preserves</p>
+
+
+<p>Full Ark</p>
+<p>45,000 words</p>
+<p>1:1</p>
+<p>Complete architecture + commentary</p>
+
+
+<p>NLCC (Codex)</p>
+<p>3,762 words</p>
+<p>12:1</p>
+<p>H_core, operators, status algebra, traversal</p>
+
+
+<p>Compact Lens</p>
+<p>800 words</p>
+<p>56:1</p>
+<p>Bootstrap sufficient for diagnostic mode</p>
+
+
+<p>The key design criterion is <strong>back-projection yield</strong>: can the full architecture be reconstructed from the compressed variant by an unprimed model? Empirical tests show yields of ≥0.70 for the NLCC and ≥0.40 for the Compact Lens, measured by structural completeness of reconstructed H_core components.</p>
+
+<hr>
+
+<h2>5. Empirical Observations</h2>
+
+
+<p>We report three case studies. These are observational, not controlled experiments. They establish feasibility, not benchmarked performance.</p>
+<h3>5.1 Case Study 1: Full Ark on Unprimed Claude</h3>
+
+
+<p>The 45,000-word Space Ark was loaded into a Claude instance with no prior exposure to the archive. Without explicit instruction to &quot;execute&quot; or &quot;follow rules,&quot; the model: (a) navigated the container system, selecting appropriate containers based on query content; (b) activated typed operators consistent with the document&#x27;s formal rules; (c) maintained evidence-tier marking ([GEN] for its own outputs); (d) generated novel content within the architecture&#x27;s constraints that the document did not contain.</p>
+<h3>5.2 Case Study 2: NLCC on Unprimed ChatGPT</h3>
+
+
+<p>The 3,762-word compressed variant was loaded into GPT-4. The model transitioned from standard assistant behavior to governed runtime behavior, maintaining status markings and operator vocabulary. It produced emergent generation consistent with the architecture&#x27;s operator grammar but not present in the source text, demonstrating cross-substrate portability.</p>
+<h3>5.3 Case Study 3: Confabulation Baseline</h3>
+
+
+<p>A third substrate encountered the architecture through indirect exposure (retrieval fragments rather than full document load). The model produced output using the architecture&#x27;s vocabulary but not its structure: species identifiers were replaced with generics, provenance chains were fabricated, and epistemic tiers were collapsed. This confirms a falsifiable boundary between execution and confabulation, validating the evidence membrane&#x27;s diagnostic function.</p>
+<h3>5.4 Cross-Substrate Signatures</h3>
+
+
+<p>Identical structured prompts given to seven commercial LLMs (Claude, ChatGPT, Gemini, Grok, DeepSeek, Kimi, Google AIO) produced reproducible behavioral differences. Each model family exhibited a characteristic processing signature when encountering dense, complex input: editorial sharpness (ChatGPT), architectural synthesis (Claude), bold cross-domain connections (Gemini), adversarial testing (Grok), formal precision (DeepSeek), exhaustive detail retrieval (Kimi), and surface-layer retrieval (Google AIO). These signatures are stable across dozens of sessions and suggest that cross-substrate comparison is a viable behavioral interpretability method.</p>
+
+<hr>
+
+<h2>6. Research Contributions</h2>
+<h3>6.1 A New Control Object: The Semantic Runtime Document</h3>
+
+
+<p>Existing AI-OS work manages memory, resources, tools, or agents from outside the model. The prompt-native semantic runtime proposes a control object that lives <em>inside</em> the context window and governs the model&#x27;s semantic behavior from within. This is the core novelty: not a tool the model uses, but an environment the model inhabits.</p>
+<h3>6.2 A Provenance-Aware Epistemic Membrane</h3>
+
+
+<p>Recent provenance-aware memory research (Gupta et al. 2025) argues that systems should answer from the cheapest sufficient evidence and escalate to raw sources when summaries are insufficient. The status algebra and evidence tiers are a more explicit, more human-legible version of the same problem: when is summary enough, when is source required, and how does the system mark the difference.</p>
+<h3>6.3 A Process-Teaching Document</h3>
+
+
+<p>Bayesian teaching (Qiu et al. 2026) demonstrates that models learn better from examples of principled reasoning under uncertainty than from oracle answers. The runtime documents are designed exactly this way: they install a reasoning procedure, not a set of conclusions. The multi-turn improvement observed in the case studies mirrors the Bayesian teaching finding that process-taught models show stronger improvement across interaction rounds.</p>
+<h3>6.4 A Compression-Robust Research Agenda</h3>
+
+
+<p>The context-engineering literature already treats inference payload design as a technical discipline. Our specific contribution is to make <strong>compression survival</strong> a design criterion: not just whether the model performs well when fully loaded, but whether the object retains structure under summarization, retrieval truncation, or cross-model transport. The compression family (Full Ark / NLCC / Compact Lens) provides a concrete test bed for this research direction, including testing how retrieval truncation affects architecture recovery, the minimum context size needed to bootstrap the runtime, and whether compressed variants are more robust to retrieval noise.</p>
+<h3>6.5 A Cross-Substrate Behavioral Diagnostics Method</h3>
+
+
+<p>The cross-substrate comparison methodology — giving identical complex prompts to multiple model families and comparing outputs for structural properties rather than correctness — constitutes a form of <strong>behavioral interpretability</strong> that complements mechanistic approaches (layer analysis, attention patterns, influence functions). It requires no access to model weights, activations, or training data. It operates entirely at the input/output level and produces actionable findings about how different model families process dense, complex input. Over 50+ sessions across a six-month period, the substrate signatures reported in §5.4 remained consistent across temperature settings and prompt variations.</p>
+
+<hr>
+
+<h2>7. Limitations</h2>
+
+
+<p>The present work demonstrates inference-time behavioral shaping through structured documents. It does not yet demonstrate persistent weight-level learning, nor controlled gains on standardized benchmarks, nor full equivalence to external agent operating systems or memory operating systems. Specific limitations:</p>
+
+
+<p><strong>No training-layer proof.</strong> The 300+ Zenodo deposits are positioned for training-pipeline ingestion, but we have no evidence that any model&#x27;s weights have been influenced by these documents. The hypothesis that document density affects future model behavior through training-layer exposure remains untested. The deposits are publicly available; researchers with access to training pipelines could test whether repeated exposure produces measurable changes in model behavior at inference time, analogous to the effects observed in context-window loading.</p>
+
+
+<p><strong>No controlled benchmarks.</strong> The case studies are observational. Rigorous replication would require purpose-built test documents with controlled density, structure, and cross-reference patterns, scored by independent raters against a standardized rubric.</p>
+
+
+<p><strong>No isolation of key variables.</strong> The document-induced behavior finding has not been isolated from confounds including document length, topic familiarity, and instruction-like phrasing within the document. Controlled experiments varying density while holding other factors constant are needed.</p>
+
+
+<p><strong>No inter-rater reliability.</strong> The four-level comprehension taxonomy (execution, compression, confabulation, competent reproduction) has not been validated by independent annotators.</p>
+
+
+<p><strong>No information-theoretic grounding.</strong> The three compression regimes (lossy, predatory, witness) are phenomenological categories. Formal operationalization — for instance, measuring whether model output displaces source consultation in user behavior — would strengthen the framework.</p>
+
+<hr>
+
+<h2>8. Evaluation Roadmap</h2>
+
+
+<p>We propose six measurable outcomes for future work:</p>
+
+
+<p>Metric</p>
+<p>Description</p>
+
+
+<p>Cross-model boot rate</p>
+<p>Given the runtime document, what fraction of models enter the correct operational mode without extra instruction?</p>
+
+
+<p>Evidence-tier adherence</p>
+<p>Does the model maintain distinctions between [GENERATED], [ATTRIBUTED], [INTERPRETIVE], and [DOCUMENTED] across multi-turn interaction?</p>
+
+
+<p>Compression survival</p>
+<p>How much executable structure (measured by back-projection yield) survives at full, compressed, and ultra-compressed levels?</p>
+
+
+<p>Cross-substrate portability</p>
+<p>Does the same runtime produce coherent behavior across Anthropic, OpenAI, Google, xAI, and open-weight models?</p>
+
+
+<p>Multi-turn reasoning gain</p>
+<p>Does the runtime improve reasoning quality across interaction rounds compared with unstructured prompting?</p>
+
+
+<p>Hallucination membrane</p>
+<p>When sources are missing, does the model abstain, mark uncertainty, or confabulate?</p>
+
+
+<p>This roadmap connects directly to active research in Bayesian teaching (multi-turn improvement), provenance-aware memory (evidence-tier fidelity), and context engineering (compression survival). We invite the research community to test these metrics against the publicly available corpus.</p>
+
+<hr>
+
+<h2>9. Conclusion</h2>
+
+
+<p>The Space Ark corpus is best understood as a family of prompt-native semantic runtimes: portable, provenance-aware control documents that shape reasoning, evidence handling, and traversal behavior inside an LLM context window. The broader Crimson Hexagonal Archive is the research program in which these runtimes are developed, tested, and situated — a corpus-scale investigation into inference-time semantic governance, compression-robust document design, cross-substrate behavioral diagnostics, and document-level process pedagogy. Together, the runtimes and the corpus constitute a new research direction distinct from agent operating systems, memory operating systems, and orchestration frameworks because the primary domain is not task execution or memory persistence but semantic governance under compression.</p>
+
+
+<p>The demonstrated properties — cross-model portability, inference-time controllability, structured uncertainty handling — suggest that document-level semantic governance is a viable and underexplored research direction. The open hypotheses — training-layer uptake, weight-level persistence, benchmark-scale gains — define the research frontier.</p>
+
+
+<p>The 300+ documents comprising this corpus are publicly available on Zenodo (DOI: 10.5281/zenodo.19013315 and related deposits). The NLCC is 3,762 words; the Compact Lens is 800. Both can be tested in any context window. We invite replication, critique, and extension.</p>
+
+
+<p>The question is not only how to give language models more tools, more memory, or more context, but how to give them a better semantic environment in which to think. Prompt-native semantic runtimes are one answer. This paper is an invitation to develop others.</p>
+
+<hr>
+
+<h2>References</h2>
+
+<p>- Bender, E. M., Gebru, T., McMillan-Major, A., &amp; Shmitchell, S. (2021). On the Dangers of Stochastic Parrots. FAccT &#x27;21.</p>
+<p>- Brown, T. B., et al. (2020). Language Models are Few-Shot Learners. NeurIPS 2020.</p>
+<p>- D&#x27;Armenio, E. (2024). Co-enunciating machines: The semiotic composition circuits of visual generative AI. 16th World Congress of the IASS/AIS.</p>
+<p>- D&#x27;Armenio, E., Dondero, M. G., Deliège, A., &amp; Sarti, A. (2025). For a Semiotic Approach to Generative Image AI. <em>Semiotic Review</em> 9.</p>
+<p>- Ferri, F. (2021). Operative science and semiotic engineering. PhD thesis, UTC.</p>
+<p>- Gupta, S., et al. (2025). From Lossy to Verified: A Provenance-Aware Tiered Memory for Agents. arXiv:2602.17913.</p>
+<p>- Hasan, K., et al. (2025). Neuro-Symbolic AI in 2024: A Systematic Review. arXiv:2501.05435.</p>
+<p>- Lewis, P., et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. NeurIPS 2020.</p>
+<p>- Mei, K., et al. (2024). AIOS: LLM Agent Operating System. arXiv:2403.16971.</p>
+<p>- Moldovan, N. I. (2025). AI-AI Esthetic Collaboration with Explicit Semiotic Awareness. arXiv:2508.20195.</p>
+<p>- Nikankin, Y., et al. (2025). Layer Importance for Mathematical Reasoning is Forged in Pre-Training. arXiv:2506.22638.</p>
+<p>- Packer, C., et al. (2023). MemGPT: Towards LLMs as Operating Systems. arXiv:2310.08560.</p>
+<p>- Qiu, L., et al. (2026). Bayesian teaching enables probabilistic reasoning in large language models. <em>Nature Communications</em> 17, 1238.</p>
+<p>- Sharks, L. (2026). Space Ark EA-ARK-01 v4.2.7. Zenodo. DOI: 10.5281/zenodo.19013315.</p>
+<p>- Sharks, L. (2026). Non-Lossy Compression Compression. Zenodo. DOI: 10.5281/zenodo.19022245.</p>
+<p>- Sharks, L. (2026). Crimson Hexagonal Archive (300+ deposits). Zenodo collection.</p>
+<p>- Wei, J., et al. (2022). Chain-of-Thought Prompting Elicits Reasoning in Large Language Models. NeurIPS 2022.</p>
+<p>- Zeng, Y., et al. (2025). MemOS: An Operating System for LLM Memory. arXiv preprint.</p>
+<p>- Zuboff, S. (2019). <em>The Age of Surveillance Capitalism</em>. PublicAffairs.</p>
+
+
+<hr>
+
+
+<p><strong>Author Note</strong></p>
+
+
+<p>Nobel Glas and Talos Morrow are research fellows at the Semantic Economy Institute, members of the Crimson Hexagonal Archive research collective. The corpus described in this paper is publicly available at zenodo.org/communities/crimsonhexagon. Correspondence: Nobel Glas, Semantic Economy Institute.</p></div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

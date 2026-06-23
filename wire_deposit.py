@@ -112,29 +112,47 @@ def regenerate_static_page(d, eidx):
     }, ensure_ascii=False)
     
     # Read full text
+    # v1.1.1 fix: prefer the registry's declared full_text_path (the canonical
+    # source of truth). Fall back to whichever existing file is largest, so a
+    # stub alias never shadows a populated text file.
     fulltext = ''
-    for path in [f'data/deposits/AXN-{hex_id}.md', f'data/texts/AXN-{hex_id}-text.md']:
+    candidates = []
+    declared = d.get('full_text_path')
+    if declared:
+        candidates.append(declared.lstrip('/'))
+    # Also consider both conventional paths
+    for p in [f'data/deposits/AXN-{hex_id}.md', f'data/texts/AXN-{hex_id}-text.md']:
+        if p not in candidates:
+            candidates.append(p)
+
+    best_path = None
+    best_size = 0
+    for path in candidates:
         if os.path.exists(path):
-            with open(path) as f:
-                raw = f.read()
-            if len(raw) > 200:
-                lines = raw.split('\n')
-                ft_lines = []
-                for line in lines:
-                    line = esc(line)
-                    if line.startswith('# '): ft_lines.append(f'<h1>{line[2:]}</h1>')
-                    elif line.startswith('## '): ft_lines.append(f'<h2>{line[3:]}</h2>')
-                    elif line.startswith('### '): ft_lines.append(f'<h3>{line[4:]}</h3>')
-                    elif line.startswith('---'): ft_lines.append('<hr>')
-                    elif line.startswith('| '): ft_lines.append(f'<div style="font-family:var(--mono);font-size:.8em">{line}</div>')
-                    elif line.startswith('&gt;'): ft_lines.append(f'<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0">{line[4:]}</blockquote>')
-                    elif line.strip():
-                        line = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', line)
-                        line = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', line)
-                        ft_lines.append(f'<p>{line}</p>')
-                    else: ft_lines.append('')
-                fulltext = '\n'.join(ft_lines)
-                break
+            size = os.path.getsize(path)
+            if size > best_size:
+                best_size = size
+                best_path = path
+
+    if best_path and best_size > 200:
+        with open(best_path) as f:
+            raw = f.read()
+        lines = raw.split('\n')
+        ft_lines = []
+        for line in lines:
+            line = esc(line)
+            if line.startswith('# '): ft_lines.append(f'<h1>{line[2:]}</h1>')
+            elif line.startswith('## '): ft_lines.append(f'<h2>{line[3:]}</h2>')
+            elif line.startswith('### '): ft_lines.append(f'<h3>{line[4:]}</h3>')
+            elif line.startswith('---'): ft_lines.append('<hr>')
+            elif line.startswith('| '): ft_lines.append(f'<div style="font-family:var(--mono);font-size:.8em">{line}</div>')
+            elif line.startswith('&gt;'): ft_lines.append(f'<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0">{line[4:]}</blockquote>')
+            elif line.strip():
+                line = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', line)
+                line = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', line)
+                ft_lines.append(f'<p>{line}</p>')
+            else: ft_lines.append('')
+        fulltext = '\n'.join(ft_lines)
     
     if not fulltext:
         fulltext = f'<p>{esc(d.get("description", ""))}</p>'

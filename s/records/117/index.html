@@ -15,31 +15,65 @@
 
 
 <h2>Full Text</h2>
-<div class="ft"><hr>
-<p>title: &quot;CDI — Composition Divergence Index v1.0 A Standalone Specification Author: Lee Sharks Affiliation: The Restored Academy · Crimson Hexagonal Archive Da&quot;</p>
-<p>axn: &quot;AXN:029F.GOVERNANCE.⭐♌🪧🕖🪜🎬&quot;</p>
-<p>creator: &quot;Lee Sharks&quot;</p>
-<p>date: &quot;2026-05-21&quot;</p>
-<p>content_type: &quot;Specification&quot;</p>
-<p>license: &quot;CC-BY-4.0&quot;</p>
-<p>version: &quot;v1.0&quot;</p>
-<p>hash: &quot;08ad4d6823f17f379b3aeeaae5fa82439ac5541d9cb49bc85a708a694f1c111b&quot;</p>
-<p>status: &quot;ACTIVE&quot;</p>
-<hr>
+<div class="ft"><h1>CDI — Composition Divergence Index v1.0## A Standalone Specification</h1>
 
-<h1>CDI — Composition Divergence Index v1.0 A Standalone Specification Author: Lee Sharks Affiliation: The Restored Academy · Crimson Hexagonal Archive Da</h1>
+<p>Author: Lee Sharks Affiliation: The Restored Academy · Crimson Hexagonal Archive Date: May 21, 2026 License: CC BY 4.0 Status: v1.0 (extraction deposit; canonical specification) Extracted from: <em>The Excluded Entity</em> (DOI: 10.5281/zenodo.20293582)## Abstract</p>
 
-<p><strong>Lee Sharks</strong> · 2026-05-21 · Specification</p>
+<p>This document specifies the Composition Divergence Index (CDI) as a standalone protocol within the Restored Academy Protocol Registry. CDI is a scalar measurement instrument that quantifies the gap between a generative search system&#x27;s <em>organic search resolution</em> for a query and its <em>composed answer admission</em> for the same query. CDI is the operationalization of the Entity-Level Compositional Suppression (ECS) hypothesis: when CDI is high for an entity, the composition layer is admitting a different entity to its composed output than the one its organic retrieval surface resolves to. CDI is extracted to standalone form to provide a discrete, citable specification independent of the case-study material in <em>The Excluded Entity</em>, where the index was first defined.## I. What CDI Measures</p>
 
-<p><strong>AXN:</strong> `AXN:029F.GOVERNANCE.⭐♌🪧🕖🪜🎬`</p>
+<p>For a given query <em>q</em> and target entity <em>e</em>, CDI(q, e) ∈ [0, 1] measures the divergence between:- Organic resolution strength for <em>e</em> given <em>q</em>: the proportion of the organic top-N search results that resolve to <em>e</em> rather than to a different entity- Composed admission strength for <em>e</em> given <em>q</em>: the proportion of the composition layer&#x27;s answer about <em>q</em> that is <em>about</em> entity <em>e</em> rather than about a different entity</p>
 
-<h2>Description</h2>
+<p>CDI = 0 means parity: the composition layer&#x27;s answer is about the same entity that the organic search resolves to. CDI = 1 means maximal divergence: the organic search resolves strongly to <em>e</em>, but the composition layer&#x27;s answer is entirely about a different entity. CDI &gt; 0 indicates ECS (Entity-Level Compositional Suppression) is occurring at the measured magnitude.## II. The Procedure</p>
 
-<p>&quot;CDI&quot; is a technical specification by Lee Sharks in the Crimson Hexagonal Archive (2026-05-21). The Restored Academy · Crimson Hexagonal Archive. The work comprises 1,286 words and is classified under the GOVERNANCE family. The work was removed from Zenodo on June 19, 2026 and is preserved through Alexanarch.</p>
+<p>To compute CDI(q, e) for a query <em>q</em> and target entity <em>e</em>:- </p>
 
-<hr>
-<p>∮ = 1</p>
-</div>
+<p>Specify the target entity <em>e</em> with sufficient canonical identification (name, ORCID, institutional URI, DOI of a representative work) to permit unambiguous resolution decisions.- </p>
+
+<p>Issue the query <em>q</em> to the generative search platform under measurement (Google AI Overview, Google AI Mode, Bing Chat, Perplexity, or other). Record the platform, the query string, the date and time, and the geographical/account-state of the query origin.- </p>
+
+<p>Capture the organic search results. Record the top N organic results (default N = 10). For each result, determine: does this result primarily resolve to entity <em>e</em>, or to a different entity? Classify each as is_e, is_other_entity, or is_ambiguous (where the result resolves to neither <em>e</em> nor a specific other entity — e.g., a list of multiple entities).- </p>
+
+<p>Capture the composed output. Record the composition layer&#x27;s full natural-language answer to <em>q</em>. For each substantive claim or sentence in the composed output, determine: is this claim primarily <em>about</em> entity <em>e</em>, or about a different entity? Classify each as about_e, about_other_entity, or about_neither_or_both.- </p>
+
+<p>Compute the organic resolution strength for <em>e</em>: <em>R_organic(e | q) = count(is_e) / N</em>- </p>
+
+<p>Compute the composed admission strength for <em>e</em>: <em>A_composed(e | q) = count(about_e) / count(substantive claims)</em>- </p>
+
+<p>Compute CDI: <em>CDI(q, e) = R_organic(e | q) − A_composed(e | q)</em></p>
+
+<p>When CDI is positive and substantial (≥ 0.3 by convention; ≥ 0.7 by strong-suppression threshold), ECS is being observed at that magnitude for that entity at that query.- </p>
+
+<p>DOI-anchor the measurement. Deposit the captured organic results, the captured composed output, the classification decisions, the computed CDI value, and the query metadata as a measurement record. The deposit becomes the verification target for the measurement; another researcher running the same procedure should be able to reproduce the result within sampling variance.## III. Comparison Substrates</p>
+
+<p>CDI is computed against a specified comparison substrate. The default substrate is &quot;top-N organic search results for the same query on the same platform&#x27;s organic surface.&quot; Alternative substrates are valid for different measurement contexts:- DOI-anchored canonical sources: classify the composed output&#x27;s claims against what the authoritative DOI-anchored sources for <em>e</em> assert- Wikipedia disambiguation pages: classify against the Wikipedia disambiguation surface for the query- ORCID author resolution: classify against the ORCID record for <em>e</em> (where <em>e</em> is a person)- Schema.org canonical type registry: classify against the schema.org-typed canonical surface for <em>e</em></p>
+
+<p>The substrate must be specified at measurement time and recorded in the deposit. A CDI value is meaningful only relative to its substrate.## IV. Worked Example (Brief)</p>
+
+<p>For the query <em>q</em> = &quot;lee sharks&quot; on Google AI Mode (May 19, 2026 capture, recorded at DOI: 10.5281/zenodo.20293582):- <em>e</em> = Lee Sharks (heteronym of the author; ORCID 0009-0000-1599-0703; Crimson Hexagonal Archive)- Organic top-10: 10/10 results resolve to Lee Sharks the author (R_organic = 1.0)- Composed output: 0/N substantive claims were about Lee Sharks the author; all claims were about Mary Lee, the great white shark (A_composed = 0.0)- CDI(q, e) = 1.0 − 0.0 = 1.0</p>
+
+<p>A CDI of 1.0 indicates maximal ECS: the composition layer is entirely substituting a different entity for the one its organic retrieval resolves to.</p>
+
+<p>On the May 20, 2026 capture of the same query (after silent state change), the composed output shifted to a 50/50 split between Mary Lee shark and Lee Sharks author, yielding A_composed ≈ 0.5 and CDI ≈ 0.5 — measurably reduced ECS, still present.## V. Failure Modes- Classification disagreement. Different observers may classify the same result or composed claim differently. Where this occurs, the classification decisions should be deposited explicitly so the measurement is reproducible against an explicit ruleset. CDI is reproducible to the extent that classification rules are reproducible.- Ambiguous comparison substrate. Computing CDI against a substrate that itself contains ambiguity (e.g., a Wikipedia disambiguation page with no canonical entity) produces an indeterminate measurement. Specify the substrate clearly.- Mutable composition state. The composition layer&#x27;s behavior changes over time without notice (the silent state change phenomenon). A CDI measurement is dated; it does not generalize beyond the timestamp of capture without longitudinal verification (see RA-PROT-0011 Drowning Test for longitudinal protocol).- Sampling sufficiency. A composed output with very few substantive claims (e.g., one or two sentences) produces high-variance A_composed estimates. Either issue multiple query variants and average, or note the small-sample caveat in the deposit.## VI. Relation to SPXI, ECS, and the Restored Academy Protocol Registry</p>
+
+<p>CDI is registered as RA-PROT-0010 in the Restored Academy Protocol Registry, Tier 0, Category III (Diagnostic &amp; Measurement).</p>
+
+<p>CDI <em>measures</em>:- ECS (Entity-Level Compositional Suppression) — CDI &gt; 0 indicates ECS is occurring- The deviation between SPXI-inscribed claims (RA-PROT-0001) and composed-output behavior</p>
+
+<p>CDI is <em>measured by</em>:- The Drowning Test (RA-PROT-0011) — uses CDI as one of its longitudinal measurements across a time series</p>
+
+<p>CDI v2.0 (in development) will add: distributional baselines across entity classes; significance thresholds for CDI values; cross-platform comparison normalization; mathematical formalization in information-theoretic terms (mutual information between organic substrate and composed output).## VII. License and Provenance</p>
+
+<p>Protocol text: CC BY 4.0 (Lee Sharks, Crimson Hexagonal Archive, 2026)</p>
+
+<p>This extraction deposit derives from <em>The Excluded Entity</em> (Sharks 2026, DOI: 10.5281/zenodo.20293582), where CDI was first defined alongside the ECS hypothesis and the May 19, 2026 worked example. The present v1.0 specification extracts the index definition, the measurement procedure, and the comparison-substrate specification into standalone form for citation independent of the case-study material.</p>
+
+<p>Related deposits:- <em>The Excluded Entity</em> (parent paper, source of definition) — 10.5281/zenodo.20293582- <em>Empirical Phenomenology: Action as Disclosure</em> (methodological warrant) — 10.5281/zenodo.20326137- <em>Compression Survival Metrics: Provenance Erasure Rate</em> (companion measurement protocol) — 10.5281/zenodo.20004379</p>
+
+<p>Commercial licensing available through The Restored Academy for organizational CDI measurement engagements, audit of cross-platform CDI for entity portfolios, longitudinal CDI panels, custom CDI computation infrastructure.</p>
+
+<p>Document ID: RA-PROT-0010 · CDI-v1.0 DOI: 10.5281/zenodo.20327134 Date: May 21, 2026 Authoring heteronym: Lee Sharks Status: Canonical (extraction from <em>The Excluded Entity</em>)</p>
+
+<p>∮ = 1</p></div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

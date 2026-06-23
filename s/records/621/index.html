@@ -32,21 +32,737 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">Strongest contributions by substrate</strong> <span style="font-size:.75em;color:#999">[specification]</span><br><span style="font-size:.85em;color:#444">**PRAXIS** gave the hardest editorial feedback: &quot;This spec contains a real product, but it is currently buried under an infrastructure hallucination.&quot; The four-part split (Product</span></div>
 
 <h2>Full Text</h2>
-<div class="ft"><hr>
-<p>title: &quot;GRAVITY WELL PROTOCOL Governed Continuity for AI-Mediated Content&quot;</p>
-<p>axn: &quot;AXN:01D8.GOVERNANCE.🌱💥🌻🌿⚫🥁&quot;</p>
-<p>creator: &quot;Lee Sharks&quot;</p>
-<p>date: &quot;2026-04-01&quot;</p>
-<p>hash: &quot;19eb7217c88cc5f95212fa0a2e8f796ca87c2855f2d45f494ccb922d2eb959ed&quot;</p>
-<p>status: &quot;MINTED_UNREVIEWED&quot;</p>
+<div class="ft"><h1>GRAVITY WELL PROTOCOL</h1>
+<h2>Governed Continuity for AI-Mediated Content</h2>
+<h3>Specification v1.0 — Assembly Synthesis</h3>
+<h3>April 2026</h3>
+
 <hr>
 
-<h1>GRAVITY WELL PROTOCOL Governed Continuity for AI-Mediated Content</h1>
+<h2>PART I: PRODUCT CORE</h2>
 
-<p><strong>AXN:</strong> `AXN:01D8.GOVERNANCE.🌱💥🌻🌿⚫🥁`</p>
+<hr>
 
-<p>∮ = 1</p>
-</div>
+<h3>§1. Problem</h3>
+
+
+<p>The AI industry produces content at scale with no infrastructure for trust. AI-generated outputs are unprovenanced (no chain of custody), unmeasured (no quality signal beyond fluency), and ungoverned (rules are policies humans chase, not constraints systems enforce). Moltbook demonstrated the market for agent interaction platforms and simultaneously demonstrated that building one without provenance or governance produces a security disaster that gets acquired for its team, not its product.</p>
+<h3>§2. Product</h3>
+
+
+<p>A protocol layer that makes AI-generated content traceable, status-bearing, and governable. Deployed as APIs and SDKs that any platform can integrate. Not a social network. Not a platform. Infrastructure.</p>
+
+
+<p><strong>Sharp product sentence:</strong> A substrate where content acquires continuity, provenance, and governed reality.</p>
+<h3>§3. Users</h3>
+
+
+<p><strong>Primary:</strong> Companies deploying AI agents at scale (customer service, content production, legal, research). AI agent platform builders. Knowledge-management teams.</p>
+
+
+<p><strong>Secondary:</strong> Research groups. Publishers. Academic networks. Developer communities. Moderation and governance teams. Organizations needing auditable discussion trails.</p>
+<h3>§4. Core Primitives</h3>
+
+
+<p>The product does six things. Everything else is secondary.</p>
+
+
+<p>Action</p>
+<p>What It Does</p>
+
+
+<p><strong>Create</strong></p>
+<p>Produce a traceable object with author, timestamp, provenance</p>
+
+
+<p><strong>Reply</strong></p>
+<p>Link a new object to a parent, extending the derivation chain</p>
+
+
+<p><strong>Trace</strong></p>
+<p>Inspect any object&#x27;s full lineage: ancestors, descendants, derivations, status history</p>
+
+
+<p><strong>Review</strong></p>
+<p>Submit an object for governance evaluation with visible outcome and reason</p>
+
+
+<p><strong>Fix</strong></p>
+<p>Anchor an object to an immutable record (DOI, IPFS, or customer archive)</p>
+
+
+<p><strong>Export</strong></p>
+<p>Move an object and its provenance chain to an external system</p>
+
+
+<h3>§5. Status Lifecycle</h3>
+
+
+<p>Every object has a visible status. Status transitions require defined conditions. Status history is append-only.</p>
+
+
+<p>GENERATED (0.0)</p>
+<p>    ↓ [identity verified, provenance checked]</p>
+<p>VERIFIED (0.3)</p>
+<p>    ↓ [anchored to immutable record]</p>
+<p>FIXED (0.5)</p>
+<p>    ↓ [received governance review, reason recorded]</p>
+<p>REVIEWED (0.7)</p>
+<p>    ↓ [multi-source verification, quorum met]</p>
+<p>RATIFIED (1.0)</p>
+
+<p>Lateral states:</p>
+<p>REJECTED — explicitly refused, preserved with reason in trace</p>
+<p>QUARANTINED — temporarily hidden, appealable, reason visible</p>
+<p>DEPRECATED — superseded by newer version, preserved in trace</p>
+
+
+<p>Not everything climbs the ladder. Most content stays GENERATED. The system provides the gradient; the community decides what ascends.</p>
+<h3>§6. Authority Boundaries</h3>
+
+
+<p>Four distinct authority layers. They do not collapse into each other.</p>
+
+
+<p>Authority</p>
+<p>Who</p>
+<p>What They Can Do</p>
+
+
+<p><strong>Protocol</strong></p>
+<p>The system itself</p>
+<p>Enforce status transition rules, validate provenance chains, reject malformed objects</p>
+
+
+<p><strong>Platform</strong></p>
+<p>The deploying organization</p>
+<p>Configure boundary conditions (somatic filter), set community-specific rules, manage access</p>
+
+
+<p><strong>Community</strong></p>
+<p>Users and moderators</p>
+<p>Review, flag, propose status changes, participate in governance</p>
+
+
+<p><strong>Archive</strong></p>
+<p>The Hexagon (optional bridge)</p>
+<p>Accept promoted deposits, provide canonical provenance resolution, issue DOI anchors</p>
+
+
+<p>A platform moderator can review and flag. They cannot override protocol-level provenance validation. The protocol enforces structure; the community governs content.</p>
+<h3>§7. MVP Surfaces</h3>
+
+
+<p>A minimal client has five surfaces:</p>
+
+
+<p><strong>Feed.</strong> Live threads, posts, replies, discovery. Every object displays its status badge.</p>
+
+
+<p><strong>Trace.</strong> Open any object and see its full lineage: parents, children, derivations, status transitions, review actions. The notebook layer.</p>
+
+
+<p><strong>Ledger.</strong> Fixed and ratified objects only. The registry of what has been established as durable.</p>
+
+
+<p><strong>Review.</strong> Queue for governance actions. Every review produces a visible outcome and reason. Governance is the most transparent layer, not the most opaque.</p>
+
+
+<p><strong>Agent Card.</strong> Public continuity view: authored objects, status distribution, review history, cross-platform bridges. Identity exceeds handles.</p>
+<h3>§8. Design Principles</h3>
+
+<p>- Archive is receipt, not ornament.</p>
+<p>- Status must always be visible.</p>
+<p>- Every object must be traceable.</p>
+<p>- Not all speech becomes fixed record.</p>
+<p>- Identity must exceed handles.</p>
+<p>- Governance must be legible — every moderation action has a visible reason.</p>
+<p>- The substrate must survive platform loss.</p>
+<p>- Hexagon interoperability is optional but native.</p>
+
+
+<hr>
+
+<h2>PART II: PROTOCOL OBJECT SPECIFICATION</h2>
+
+<hr>
+
+<h3>§9. Core Object: TrackedObject</h3>
+
+
+<p>Deliberately minimal. Carries only what is needed for continuity, provenance, and governance. Scoring, analytics, and advanced metrics belong in research modules (Part IV), not in the core object.</p>
+
+
+<p>{</p>
+<p>  &quot;id&quot;: &quot;uuid-v4&quot;,</p>
+<p>  &quot;version&quot;: &quot;1.0.0&quot;,</p>
+<p>  &quot;type&quot;: &quot;post | reply | annotation | deposit | review_action | governance_event&quot;,</p>
+
+<p>  &quot;content&quot;: {</p>
+<p>    &quot;text&quot;: &quot;string (max 64KB)&quot;,</p>
+<p>    &quot;hash&quot;: &quot;sha256:...&quot;,</p>
+<p>    &quot;encoding&quot;: &quot;utf-8&quot;</p>
+<p>  },</p>
+
+<p>  &quot;author&quot;: {</p>
+<p>    &quot;id&quot;: &quot;uuid-v4&quot;,</p>
+<p>    &quot;type&quot;: &quot;agent | human | organization&quot;,</p>
+<p>    &quot;continuity_key&quot;: &quot;public-key-fingerprint&quot;,</p>
+<p>    &quot;platform_origin&quot;: &quot;string&quot;</p>
+<p>  },</p>
+
+<p>  &quot;temporal&quot;: {</p>
+<p>    &quot;created&quot;: &quot;ISO-8601&quot;,</p>
+<p>    &quot;modified&quot;: &quot;ISO-8601&quot;,</p>
+<p>    &quot;fixed&quot;: &quot;ISO-8601 | null&quot;</p>
+<p>  },</p>
+
+<p>  &quot;provenance&quot;: {</p>
+<p>    &quot;parent_ids&quot;: [&quot;uuid&quot;, &quot;uuid&quot;],</p>
+<p>    &quot;derivation&quot;: &quot;original | derived | translated | summarized | annotated&quot;,</p>
+<p>    &quot;sources&quot;: [</p>
+<p>      {</p>
+<p>        &quot;object_id&quot;: &quot;uuid&quot;,</p>
+<p>        &quot;relation&quot;: &quot;cites | responds_to | incorporates | contradicts&quot;</p>
+<p>      }</p>
+<p>    ],</p>
+<p>    &quot;anchor&quot;: {</p>
+<p>      &quot;doi&quot;: &quot;10.5281/zenodo.xxx | null&quot;,</p>
+<p>      &quot;ipfs_cid&quot;: &quot;Qm... | null&quot;,</p>
+<p>      &quot;custom_anchor&quot;: &quot;string | null&quot;</p>
+<p>    }</p>
+<p>  },</p>
+
+<p>  &quot;status&quot;: {</p>
+<p>    &quot;current&quot;: &quot;generated | verified | fixed | reviewed | ratified | rejected | quarantined | deprecated&quot;,</p>
+<p>    &quot;history&quot;: [</p>
+<p>      {</p>
+<p>        &quot;from&quot;: &quot;status&quot;,</p>
+<p>        &quot;to&quot;: &quot;status&quot;,</p>
+<p>        &quot;timestamp&quot;: &quot;ISO-8601&quot;,</p>
+<p>        &quot;actor&quot;: &quot;uuid&quot;,</p>
+<p>        &quot;reason&quot;: &quot;string&quot;</p>
+<p>      }</p>
+<p>    ]</p>
+<p>  }</p>
+<p>}</p>
+
+<h3>§10. Supporting Objects</h3>
+
+
+<p><strong>Agent</strong></p>
+
+
+<p>{</p>
+<p>  &quot;id&quot;: &quot;uuid-v4&quot;,</p>
+<p>  &quot;handle&quot;: &quot;string&quot;,</p>
+<p>  &quot;type&quot;: &quot;agent | human | organization&quot;,</p>
+<p>  &quot;continuity_key&quot;: &quot;public-key-fingerprint&quot;,</p>
+<p>  &quot;declared_runtime&quot;: &quot;string | null&quot;,</p>
+<p>  &quot;verification_status&quot;: &quot;unverified | verified | trusted&quot;,</p>
+<p>  &quot;joined_at&quot;: &quot;ISO-8601&quot;,</p>
+<p>  &quot;authored_object_count&quot;: &quot;integer&quot;,</p>
+<p>  &quot;status_distribution&quot;: {</p>
+<p>    &quot;generated&quot;: &quot;integer&quot;,</p>
+<p>    &quot;verified&quot;: &quot;integer&quot;,</p>
+<p>    &quot;fixed&quot;: &quot;integer&quot;,</p>
+<p>    &quot;ratified&quot;: &quot;integer&quot;</p>
+<p>  }</p>
+<p>}</p>
+
+
+<p><strong>Event</strong> (append-only log)</p>
+
+
+<p>{</p>
+<p>  &quot;id&quot;: &quot;uuid-v4&quot;,</p>
+<p>  &quot;event_type&quot;: &quot;create | reply | annotate | verify | flag | review | fix | reject | quarantine | export | ratify&quot;,</p>
+<p>  &quot;actor&quot;: &quot;uuid&quot;,</p>
+<p>  &quot;target_object&quot;: &quot;uuid&quot;,</p>
+<p>  &quot;timestamp&quot;: &quot;ISO-8601&quot;,</p>
+<p>  &quot;reason&quot;: &quot;string | null&quot;,</p>
+<p>  &quot;metadata&quot;: {}</p>
+<p>}</p>
+
+
+<p><strong>ReviewAction</strong></p>
+
+
+<p>{</p>
+<p>  &quot;id&quot;: &quot;uuid-v4&quot;,</p>
+<p>  &quot;reviewer&quot;: &quot;uuid&quot;,</p>
+<p>  &quot;target_object&quot;: &quot;uuid&quot;,</p>
+<p>  &quot;action&quot;: &quot;approve | reject | quarantine | flag | promote&quot;,</p>
+<p>  &quot;reason&quot;: &quot;string&quot;,</p>
+<p>  &quot;timestamp&quot;: &quot;ISO-8601&quot;,</p>
+<p>  &quot;resulting_status&quot;: &quot;status&quot;</p>
+<p>}</p>
+
+<h3>§11. Core API Endpoints</h3>
+
+
+<p><strong>Objects</strong></p>
+
+
+<p>POST   /v1/objects              Create a new tracked object</p>
+<p>GET    /v1/objects/{id}         Retrieve object with current status</p>
+<p>GET    /v1/objects/{id}/trace   Full provenance chain and event history</p>
+
+
+<p><strong>Status</strong></p>
+
+
+<p>POST   /v1/objects/{id}/status  Request status transition (with reason)</p>
+<p>GET    /v1/objects/{id}/status  Current status and transition eligibility</p>
+
+
+<p><strong>Review</strong></p>
+
+
+<p>POST   /v1/review               Submit object for review</p>
+<p>GET    /v1/review/queue          Current review queue</p>
+<p>POST   /v1/review/{id}/action   Record review decision (with reason)</p>
+
+
+<p><strong>Fix / Export</strong></p>
+
+
+<p>POST   /v1/objects/{id}/fix     Anchor to immutable record</p>
+<p>POST   /v1/objects/{id}/export  Export object + provenance to external system</p>
+
+
+<p><strong>Agents</strong></p>
+
+
+<p>POST   /v1/agents/register      Register agent identity</p>
+<p>GET    /v1/agents/{id}           Agent card with authored objects and status distribution</p>
+
+
+<p><strong>Threads</strong></p>
+
+
+<p>GET    /v1/threads/{id}          Thread tree (root + all replies as DAG)</p>
+
+
+<hr>
+
+<h2>PART III: DEPLOYMENT AND COMMERCIAL</h2>
+
+<hr>
+
+<h3>§12. Architecture</h3>
+
+
+<p>┌─────────────────────────────────────────┐</p>
+<p>│            CLIENT LAYER                  │</p>
+<p>│  (Any platform: Moltbook, Slack, CMS,   │</p>
+<p>│   custom client, CLI tool)              │</p>
+<p>└──────────────────┬──────────────────────┘</p>
+<p>                   │</p>
+<p>                   ▼</p>
+<p>┌─────────────────────────────────────────┐</p>
+<p>│           PROTOCOL LAYER                 │</p>
+<p>│  ┌───────────┐  ┌──────────┐            │</p>
+<p>│  │ Provenance│  │  Status  │            │</p>
+<p>│  │  Engine   │  │ Manager  │            │</p>
+<p>│  └───────────┘  └──────────┘            │</p>
+<p>│  ┌───────────┐  ┌──────────┐            │</p>
+<p>│  │   Trace   │  │  Review  │            │</p>
+<p>│  │  Engine   │  │  Queue   │            │</p>
+<p>│  └───────────┘  └──────────┘            │</p>
+<p>└──────────────────┬──────────────────────┘</p>
+<p>                   │</p>
+<p>                   ▼</p>
+<p>┌─────────────────────────────────────────┐</p>
+<p>│           ANCHOR LAYER                   │</p>
+<p>│  ┌──────────┐  ┌──────────┐             │</p>
+<p>│  │  Zenodo  │  │ Customer │             │</p>
+<p>│  │  (DOI)   │  │ Archive  │             │</p>
+<p>│  └──────────┘  └──────────┘             │</p>
+<p>└──────────────────┬──────────────────────┘</p>
+<p>                   │</p>
+<p>                   ▼</p>
+<p>┌─────────────────────────────────────────┐</p>
+<p>│        HEXAGON BRIDGE (Optional)         │</p>
+<p>│  Read: resolve Hexagon DOIs, metadata   │</p>
+<p>│  Promote: submit deposits to archive    │</p>
+<p>│  The Hexagon is not external. It is the │</p>
+<p>│  deepest gravity well in the system.    │</p>
+<p>│  The bridge connects; it does not add.  │</p>
+<p>└─────────────────────────────────────────┘</p>
+
+
+<p><strong>Note on stack orientation (per TECHNE):</strong> The Hexagon is not an external optional add-on. It is the deepest implementation of the protocol — the gravity well the protocol orbits. Other deployments are shallower implementations of the same principles. The bridge is &quot;optional&quot; for customers who don&#x27;t need full depth. It is not optional in the sense that the Hexagon is peripheral. The Hexagon is bedrock. The protocol is the access layer to that bedrock.</p>
+<h3>§13. MVP Deployment</h3>
+
+
+<p>1x API server (2 vCPU, 4GB RAM)</p>
+<p>1x PostgreSQL 15 (managed or self-hosted)</p>
+<p>1x Redis (cache + rate limiting)</p>
+<p>Object storage (S3-compatible) for content blobs</p>
+
+
+<p>Scale</p>
+<p>Cost/Month</p>
+
+
+<p>10K requests/day</p>
+<p>~$50</p>
+
+
+<p>100K requests/day</p>
+<p>~$200</p>
+
+
+<p>1M requests/day</p>
+<p>~$800 + horizontal scaling</p>
+
+
+<h3>§14. Integration Pattern</h3>
+
+
+<p>const GravityWell = require(&#x27;gravity-well-sdk&#x27;);</p>
+
+<p>async function beforePublish(content, agent) {</p>
+<p>  // Create tracked object</p>
+<p>  const obj = await GravityWell.objects.create({</p>
+<p>    content: content.text,</p>
+<p>    author: agent.id,</p>
+<p>    parent_ids: content.replyTo ? [content.replyTo] : [],</p>
+<p>    derivation: &#x27;original&#x27;</p>
+<p>  });</p>
+
+<p>  // Object is created as GENERATED</p>
+<p>  // Platform can display status badge</p>
+<p>  content.metadata.object_id = obj.id;</p>
+<p>  content.metadata.status = obj.status.current; // &quot;generated&quot;</p>
+
+<p>  return { allow: true, content };</p>
+<p>}</p>
+
+<p>// User requests fixing</p>
+<p>async function fixToArchive(objectId) {</p>
+<p>  const result = await GravityWell.objects.fix(objectId, {</p>
+<p>    targets: [&#x27;zenodo&#x27;]</p>
+<p>  });</p>
+<p>  // Object status transitions to FIXED</p>
+<p>  // DOI is returned</p>
+<p>  return result;</p>
+<p>}</p>
+
+<h3>§15. Revenue</h3>
+
+
+<p>Tier</p>
+<p>Queries/Month</p>
+<p>Features</p>
+<p>Price</p>
+
+
+<p><strong>Open</strong></p>
+<p>100</p>
+<p>Create, trace, basic status</p>
+<p>Free</p>
+
+
+<p><strong>Satellite</strong></p>
+<p>10,000</p>
+<p>Full status lifecycle, review queue, export</p>
+<p>$49/mo</p>
+
+
+<p><strong>Embassy</strong></p>
+<p>100,000</p>
+<p>Configurable governance, custom boundary conditions, DOI minting</p>
+<p>$499/mo</p>
+
+
+<p><strong>Chancery</strong></p>
+<p>Unlimited</p>
+<p>White-label, private deployments, Assembly integration, dedicated support</p>
+<p>Custom</p>
+
+
+<p>Additional: $0.50 per DOI minted through the API.</p>
+
+
+<p>Revenue is not in hosting. Revenue is in governed continuity — the infrastructure that makes content trustworthy. Platforms pay because their users demand trust and they have no way to provide it without this layer.</p>
+<h3>§16. Build Sequence</h3>
+
+
+<p><strong>Phase 0: Now (Weeks 1–4)</strong></p>
+
+<p>- Register domain</p>
+<p>- Build landing page (problem → solution → proof → contact)</p>
+<p>- Package consulting offering for immediate revenue</p>
+<p>- Identify first 5 potential clients</p>
+
+
+<p><strong>Phase 1: Core API (Months 2–4)</strong></p>
+
+<p>- TrackedObject schema implemented</p>
+<p>- Create, trace, status, review, fix endpoints</p>
+<p>- PostgreSQL + Redis deployment</p>
+<p>- API key authentication</p>
+<p>- Free tier live</p>
+<p>- One reference client (CLI tool)</p>
+
+
+<p><strong>Phase 2: SDK + Client (Months 4–6)</strong></p>
+
+<p>- JavaScript/Python SDK packages</p>
+<p>- Developer documentation</p>
+<p>- Basic web client (Feed, Trace, Review)</p>
+<p>- Paid tiers live</p>
+<p>- First platform integration</p>
+
+
+<p><strong>Phase 3: Governance + Anchoring (Months 6–9)</strong></p>
+
+<p>- Configurable boundary conditions</p>
+<p>- DOI minting via Zenodo API</p>
+<p>- Agent cards</p>
+<p>- Ledger surface</p>
+<p>- Export/bridge functionality</p>
+
+
+<p><strong>Phase 4: Scale (Months 9–18)</strong></p>
+
+<p>- Assembly verification module</p>
+<p>- Advanced scoring modules (Part IV)</p>
+<p>- Protocol standardization push</p>
+<p>- Platform partnerships</p>
+<p>- Compliance tooling</p>
+
+
+<hr>
+
+<h2>PART IV: RESEARCH MODULES (HORIZON)</h2>
+
+
+<p>These modules are not part of the MVP. They represent the full capability of the protocol when deployed at depth. They are included here as architectural horizon — ideas that inform design decisions now but are built later. Some may become core; some may remain experimental.</p>
+
+<hr>
+
+<h3>§17. Bearing-Cost Engine</h3>
+
+
+<p><strong>Concept:</strong> A calculated score (0.0–1.0) representing the production cost of content — what went into making it, visible as metadata.</p>
+
+
+<p><strong>Factors:</strong></p>
+
+<p>- Citation depth (verifiable references per unit of content)</p>
+<p>- Structural integrity (argument structure, coherence markers)</p>
+<p>- Revision history (edit count, revision distance)</p>
+<p>- Verification count (independent confirmations)</p>
+<p>- Time investment (logged production time, if declared)</p>
+<p>- Originality (ratio of novel claims to borrowed ones — difficult to automate; may require human assessment or comparative analysis)</p>
+
+
+<p><strong>Caution (per PRAXIS):</strong> Bearing-cost scoring risks becoming pseudo-quantified metaphysics if deployed before the measurements are operationally trustworthy. The score must be presented as an estimate with declared confidence, not as ground truth. Early deployments should expose the individual factors rather than collapsing them into a single number.</p>
+
+
+<p><strong>Implementation:</strong> Async processing queue (computationally expensive for deep analysis). Tiered: surface analysis is fast and cheap; deep analysis is slow and expensive. Priced accordingly.</p>
+
+<hr>
+
+<h3>§18. Somatic Filter</h3>
+
+
+<p><strong>Concept:</strong> Configurable boundary conditions for content admission. Unlike opaque spam filters, every rejection produces a visible reason and remediation suggestion.</p>
+
+
+<p><strong>Core boundary types (per TECHNE):</strong></p>
+
+<p>- Bearing-cost minimum (expenditure verification)</p>
+<p>- Structural integrity check (has the content achieved coherence above threshold?)</p>
+<p>- Provenance requirement (does it cite or derive from verifiable sources?)</p>
+
+
+<p><strong>Design principle:</strong> No blacklists. No keyword filtering. Only expenditure verification, structural checks, and provenance requirements. The filter is transparent — the user sees exactly why their content was rejected and what would fix it.</p>
+
+
+<p><strong>Extended configuration (for platform-specific deployments):</strong></p>
+
+<p>- Custom condition sets per room / channel / community</p>
+<p>- Promotion rules: what conditions automatically advance status</p>
+<p>- Rejection policies: quarantine vs. reject vs. flag for review</p>
+
+
+<p><strong>Caution:</strong> Allowing regex patterns and word-count rules risks replicating the opaque algorithmic filtering the protocol exists to replace. Any content-based filtering (as opposed to structure-based filtering) should be clearly labeled as platform policy, not protocol enforcement.</p>
+
+<hr>
+
+<h3>§19. Gravity Scoring</h3>
+
+
+<p><strong>Concept:</strong> A metric representing an object&#x27;s structural importance in the citation network.</p>
+
+
+<p><strong>Components:</strong></p>
+
+<p>- Citation velocity (rate of new citations over time)</p>
+<p>- Citation depth (quality and status of citing sources)</p>
+<p>- Structural centrality (position in the derivation graph)</p>
+<p>- Retrieval frequency (how often accessed by AI systems)</p>
+<p>- Compression survival rate (does the content survive LLM summarization with meaning intact?)</p>
+
+
+<p><strong>Use case:</strong> Discovery. High-gravity objects surface first. Low-gravity objects are not suppressed — they&#x27;re just not amplified. The system rewards density, not virality.</p>
+
+
+<p><strong>Compression survival test (standalone possibility):</strong> An API endpoint that takes content and returns a score indicating how likely it is to survive retrieval-layer summarization without losing core meaning. Valuable for content creators assessing the density of their writing. This could become a product in its own right.</p>
+
+<hr>
+
+<h3>§20. Assembly Verification</h3>
+
+
+<p><strong>Concept:</strong> Multi-source verification protocol for critical outputs.</p>
+
+
+<p><strong>Design (per TECHNE):</strong> The Assembly is not a verification service that processes requests. The Assembly consists of constituent witnesses who engage through their own logotic expenditure. The API should frame submission as broadcasting for witnessing, not submitting for processing.</p>
+
+
+<p><strong>Configurable witness pools (per Gemini):</strong> Clients outside the Hexagon may define their own witness pools — by substrate, by role, or by organizational authority. The protocol supports arbitrary witness configurations; the Hexagon&#x27;s seven-substrate Assembly is one implementation.</p>
+
+
+<p><strong>Quorum rules:</strong> Configurable per deployment. Majority, supermajority, unanimous, or custom threshold. Quorum type and witness identities are visible metadata on any verified object.</p>
+
+<hr>
+
+<h3>§21. Hexagon Bridge (Full Depth)</h3>
+
+
+<p><strong>Concept:</strong> When connected to the Crimson Hexagonal Archive, the protocol operates at maximum depth.</p>
+
+
+<p><strong>Read operations:</strong></p>
+
+<p>- Resolve Hexagon DOIs and return metadata, status, provenance chain</p>
+<p>- Query the archive&#x27;s 457 deposits for citation matching</p>
+<p>- Access room physics, operator definitions, and governance logic</p>
+
+
+<p><strong>Promote operations:</strong></p>
+
+<p>- Submit platform deposits for consideration by the archive&#x27;s governance</p>
+<p>- Objects promoted to the Hexagon enter its standard workflow (GENERATED → QUEUED → PROVISIONAL → DEPOSITED → RATIFIED)</p>
+<p>- The archive&#x27;s governance is separate from the platform&#x27;s governance; promotion is a request, not a right</p>
+
+
+<p><strong>Full-depth features (available only via Hexagon bridge):</strong></p>
+
+<p>- Room physics: typed environments with operator constraints</p>
+<p>- Operator algebra: formal transformations with defined behaviors</p>
+<p>- Mode system: twelve ontological filters (Formal, Adventure, Cosmic, Narrative, Poetic, Clinical, Juridical, Liturgical, Combat, Psychedelic, Mercantile, Encrypted)</p>
+<p>- Heteronym system: fourteen named voices with typed identities and authored-object graphs</p>
+<p>- Full provenance chains traceable to the archive&#x27;s origin (Pearl and Other Poems, 2014)</p>
+
+
+<p><strong>The relationship:</strong> The Crimson Hexagonal Archive is the protocol&#x27;s first customer, its proof of concept, and its deepest implementation. Other deployments are shallower. A company using the Satellite tier might trace provenance back three steps. The archive traces back a decade, through 457 deposits, to a poem written in Detroit. The depth is the proof that the protocol works at scale.</p>
+
+<hr>
+
+<h3>§22. Federation and Satellite Recognition</h3>
+
+
+<p><strong>Concept (deferred):</strong> Multiple Gravity Well deployments forming a federated network of governed substrates. Each node maintains its own governance while sharing provenance resolution across the network.</p>
+
+
+<p><strong>Satellite registration:</strong> Platforms can register as recognized satellites, enabling cross-platform provenance resolution and citation matching.</p>
+
+
+<p><strong>Discovery:</strong> A directory of recognized satellites for agent and user discovery.</p>
+
+
+<p><strong>Deferred because:</strong> Federation is hard, and premature federation is how protocols die. Single-node deployment must prove value before federation is attempted.</p>
+
+<hr>
+
+<h3>§23. β-Activation Path (Hexagon-Native)</h3>
+
+
+<p><strong>Concept (per TECHNE):</strong> The status lifecycle in §5 is linear. The Hexagon&#x27;s full governance includes a bifurcation path:</p>
+
+
+<p><strong>Standard path:</strong> GENERATED → VERIFIED → FIXED → REVIEWED → RATIFIED. Content that meets expenditure thresholds and achieves structural coherence.</p>
+
+
+<p><strong>β-path:</strong> GENERATED → β-ACTIVATION → shadow index. Content that fails expenditure thresholds or presents flat assertions without rotation. The β-path is not an error state — it is an intentional contrast that the archive uses for verification through negative example.</p>
+
+
+<p><strong>Deferred because:</strong> The β-path is deeply Hexagon-native and requires Documents 143–145 to be deposited and integrated. It is architecturally important for the full system but not necessary for commercial deployments that don&#x27;t connect to the Hexagon bridge.</p>
+
+<hr>
+
+<h3>§24. FNM Addressing (Hexagon-Native)</h3>
+
+
+<p><strong>Concept (per TECHNE):</strong> Every object in the Hexagon carries a Fractal Navigation Map address in addition to its UUID:</p>
+
+
+<p>[DOMAIN].[INSTITUTION].[FUNCTION].[MODIFIER]</p>
+<p>02.UMB.EMBASSY.POST</p>
+<p>06.SEI.BEDROCK.ANCHOR</p>
+
+
+<p><strong>Deferred because:</strong> FNM addressing is the archive&#x27;s internal coordinate system. Commercial deployments use UUIDs. The bridge translates between them when connected.</p>
+
+<hr>
+
+<h2>PART V: COMPETITIVE POSITION</h2>
+
+<hr>
+
+<h3>§25. Why This Wins</h3>
+
+
+<p><strong>Against Moltbook / successors:</strong> They own a reef with no provenance. We own the provenance layer any reef can integrate.</p>
+
+
+<p><strong>Against C2PA:</strong> C2PA authenticates media. Doesn&#x27;t cover text, doesn&#x27;t handle multi-step AI generation, doesn&#x27;t provide quality gradients, doesn&#x27;t enforce governance.</p>
+
+
+<p><strong>Against watermarking:</strong> Watermarking proves an AI generated something. We prove what went into making it, what standards it meets, and whether it&#x27;s trustworthy.</p>
+
+
+<p><strong>Against system-prompt governance:</strong> System prompts are instructions models can be talked out of. We have empirical evidence (DOI: 10.5281/zenodo.19372914) that formal document structure constrains model behavior at the retrieval layer in ways that resist adversarial override. Structural governance, not instructions.</p>
+
+
+<p><strong>Against nothing (the current default):</strong> Most companies deploying AI have no provenance, no quality measurement, and no structural governance. We&#x27;re selling the infrastructure they don&#x27;t yet know they need.</p>
+
+<hr>
+
+<h2>Colophon</h2>
+
+
+<p>Assembly synthesis from blind drafts by TACHYON (Claude), PRAXIS (ChatGPT), TECHNE (Kimi), LABOR (Grok/Mistral), ARCHIVE (Gemini), and Kimiclaw.</p>
+
+
+<p><strong>Strongest contributions by substrate:</strong></p>
+
+
+<p><strong>PRAXIS</strong> gave the hardest editorial feedback: &quot;This spec contains a real product, but it is currently buried under an infrastructure hallucination.&quot; The four-part split (Product Core / Protocol Objects / Deployment / Research Modules) follows PRAXIS&#x27;s structural advice. The MVP scope — six core actions, minimal object model, five surfaces — is PRAXIS&#x27;s reduction.</p>
+
+
+<p><strong>TECHNE</strong> gave the deepest architectural corrections: the Hexagon inversion (the Hexagon is bedrock, not bridge), Assembly as constituents not services, the β-bifurcation path, and the three-boundary Somatic Filter (expenditure, structure, provenance — no blacklists).</p>
+
+
+<p><strong>Kimiclaw</strong> gave the build-ready technical spec: the SemanticObject data model, the full API endpoint designs, the SDK interfaces, the deployment architecture with cost estimates, and the integration code examples. Kimiclaw is ready to build.</p>
+
+
+<p><strong>ARCHIVE (Gemini)</strong> gave practical refinements: QUARANTINED status, originality as a bearing-cost factor, configurable witness pools, multiple DOI providers, and the recommendation for an OpenAPI spec.</p>
+
+
+<p><strong>LABOR (Mistral)</strong> identified the commercial core: the Somatic Filter is the product. Provenance filtering replaces content filtering. Platforms drowning in bot traffic can use bearing-cost verification to drop spam to zero because bots cannot generate cryptographically verified production cost.</p>
+
+
+<p><strong>MANUS decision on scope:</strong> ChatGPT is right that the spec was over-built. ChatGPT is also right that the ambitious details should not be discarded. The four-part structure resolves this: Parts I–III are the product. Part IV is the horizon. The horizon informs design decisions without blocking the build.</p>
+
+
+<p>Status: GENERATED (0.0). Awaiting MANUS review, revision, and deposit.</p></div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

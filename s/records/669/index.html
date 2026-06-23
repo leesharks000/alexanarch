@@ -16,21 +16,491 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">Chief heteronyms (Os Três Heterónimos)</strong> <span style="font-size:.75em;color:#999">[structural]</span><br><span style="font-size:.85em;color:#444">Alberto Caeiro (Q2758050) — pastoral master-figure</span></div>
 
 <h2>Full Text</h2>
-<div class="ft"><hr>
-<p>title: &quot;The Pessoa Knowledge Graph A Federated Linked-Data Representation of the Heteronymic System&quot;</p>
-<p>axn: &quot;AXN:0216.EMPIRICAL.✋♥️🖊️🌲💜🌃&quot;</p>
-<p>creator: &quot;Lee Sharks&quot;</p>
-<p>date: &quot;2026-04-17&quot;</p>
-<p>hash: &quot;bc814475cae2393936634021cf4e2f59f9ee5cff104ef7a2c7206e1fde646171&quot;</p>
-<p>status: &quot;MINTED_UNREVIEWED&quot;</p>
+<div class="ft"><h1>The Pessoa Knowledge Graph</h1>
+
+
+<p><strong>A Federated Linked-Data Representation of the Heteronymic System</strong></p>
+
+
+<p><strong>Owner:</strong> Lee Sharks (Hauntedmemes on Wikidata, ORCID 0009-0000-1599-0703)</p>
+<p><strong>Language scope:</strong> English + Portuguese (pt-br preferred for Brazilian audience, pt-pt as dual label)</p>
+<p><strong>Date initiated:</strong> April 17, 2026</p>
+<p><strong>Scope target:</strong> ~150-200 Wikidata entities, SPARQL-queryable, cross-referenced into broader philosophy/literature graphs</p>
+<p><strong>Philosophical frame:</strong> Heteronymic Provenance Theory (Sharks, 2026, DOI: 10.5281/zenodo.18305509)</p>
+
 <hr>
 
-<h1>The Pessoa Knowledge Graph A Federated Linked-Data Representation of the Heteronymic System</h1>
+<h2>Rationale</h2>
 
-<p><strong>AXN:</strong> `AXN:0216.EMPIRICAL.✋♥️🖊️🌲💜🌃`</p>
+
+<p>Pessoa studies is one of the most active fields in Lusophone humanities — especially in Brazil — yet has no proper knowledge graph. Wikidata holds ~25-30 scattered Pessoa-related items, mostly with &quot;0 references&quot; statements, no systematic heteronym inventory, no master/disciple relationships encoded, no typology (orthonym/heteronym/semi-heteronym/para-heteronym), and no connection to downstream heteronymic practice.</p>
+
+
+<p>This project builds the graph. The contribution to Pessoa studies is the structure; the contribution to Lee Sharks&#x27;s own work is the lineage — heteronymic practice has a history, and the Dodecad + Assembly Chorus sits in explicit relation to it, not as invention but as extension.</p>
+
+
+<p><strong>For the Wikidata survival problem:</strong> a scholar building the Pessoa KG has domain authority. Hauntedmemes&#x27;s subsequent items (Lee Sharks, heteronyms of the Dodecad, Heteronymic Provenance Theory) benefit by association. The KG is the ground that makes the claim.</p>
+
+<hr>
+
+<h2>Entity Taxonomy</h2>
+<h3>Layer 1: Pessoa himself (exists, needs enrichment)</h3>
+
+<p>- <strong>Fernando Pessoa (Q173481)</strong> — add references to unreferenced heteronym statements; add properties for: publication venues he edited (Orpheu, Athena, Cosmópolis), languages of composition, his typology of authorial voices, birth/death place-of-work statements, place of residence (Rua Coelho da Rocha, Lisbon, 1920-1935)</p>
+
+<h3>Layer 2: Heteronyms (the core inventory)</h3>
+
+
+<p><strong>Terminological note:</strong> Teresa Rita Lopes&#x27;s scholarship identifies ~72 heteronymic and pseudonymous figures in Pessoa&#x27;s œuvre. These exist in distinct typological categories that must be encoded as distinct instance of values, not flattened:</p>
+
+
+<p>Category (Portuguese)</p>
+<p>Category (English)</p>
+<p>Wikidata P31 target</p>
+
+
+<p>ortónimo / ortônimo</p>
+<p>orthonym</p>
+<p>separate Q-item (creating; Pessoa&#x27;s own-named literary persona distinct from the biographical person)</p>
+
+
+<p>heterónimo / heterônimo</p>
+<p>heteronym</p>
+<p>Q5592547 (verify)</p>
+
+
+<p>semi-heterónimo</p>
+<p>semi-heteronym</p>
+<p>needs Q-item or subclass</p>
+
+
+<p>pré-heterónimo / proto-heterónimo</p>
+<p>pre-heteronym / proto-heteronym</p>
+<p>needs Q-item or subclass</p>
+
+
+<p>para-heterónimo</p>
+<p>para-heteronym</p>
+<p>needs Q-item or subclass</p>
+
+
+<p>pseudónimo</p>
+<p>pseudonym</p>
+<p>Q61002</p>
+
+
+<p><strong>Chief heteronyms (Os Três Heterónimos):</strong></p>
+
+<p>- Alberto Caeiro (Q2758050) — pastoral master-figure</p>
+<p>- Álvaro de Campos (Q8076778) — futurist/Whitmanesque naval engineer</p>
+<p>- Ricardo Reis (Q15630389) — neoclassical Horatian physician</p>
+
+
+<p><strong>Semi-heteronyms:</strong></p>
+
+<p>- Bernardo Soares (Q15630379) — assistant bookkeeper, Book of Disquiet</p>
+<p>- Baron of Teive — rationalist suicide, The Education of the Stoic <em>(create; verify Q-number first)</em></p>
+<p>- Vicente Guedes (Q21028927) — earlier Book of Disquiet author</p>
+
+
+<p><strong>Philosophical/minor heteronyms:</strong></p>
+
+<p>- António Mora (Q21028934) — neo-paganist philosopher</p>
+<p>- Alexander Search (Q4879167) — English-language poet</p>
+<p>- Charles Robert Anon — Alexander Search&#x27;s predecessor <em>(create)</em></p>
+<p>- Charles James Search — translator, brother of Alexander <em>(create)</em></p>
+<p>- Rafael Baldaya — astrologer, occultist <em>(create)</em></p>
+<p>- Jean Seul de Méluret (Q21028930) — French poet</p>
+<p>- Thomas Crosse — English-language critic of Pessoa/Caeiro <em>(create)</em></p>
+<p>- I.I. Crosse — brother of Thomas <em>(create)</em></p>
+<p>- Frederick Wyatt — English poet <em>(create)</em></p>
+<p>- Rev. Walter Wyatt — character/brother <em>(create)</em></p>
+<p>- Alfred Wyatt — Paris-based brother <em>(create)</em></p>
+<p>- Maria José — female heteronym, &quot;Letter from the Hunchback&quot; <em>(create — rare female author)</em></p>
+<p>- Abílio Quaresma — detective-fiction author <em>(create)</em></p>
+<p>- Claude Pasteur — French translator of Mora <em>(create)</em></p>
+
+
+<p><strong>Proto-heteronyms / childhood:</strong></p>
+
+<p>- Chevalier de Pas (Q17118729) — Pessoa&#x27;s first invented author, age 5-6</p>
+<p>- Gaudêncio Turnips — journalist-humorist <em>(create)</em></p>
+<p>- Pip — humorous anecdotist <em>(create)</em></p>
+<p>- Luís António Congo — columnist <em>(create)</em></p>
+
+
+<p><strong>Pseudonyms (distinct from heteronyms):</strong></p>
+
+<p>- Ibis — childhood companion/signature <em>(create)</em></p>
+<p>- Tagus — Durban collaborator <em>(create)</em></p>
+
+
+<p><em>Full inventory target: ~72 items per Lopes catalog. Initial KG phase completes top 20-25 with fullest references; remainder added in subsequent phases.</em></p>
+<h3>Layer 3: Works</h3>
+
+
+<p>Priority works to create as Wikidata items:</p>
+
+<p>- <strong>Mensagem (Message)</strong> — the one book Pessoa published in his lifetime (1934) <em>(likely exists; verify and enrich)</em></p>
+<p>- <strong>The Book of Disquiet (Q2632627)</strong> — fragmentary masterpiece <em>(exists; enrich description, fix date range)</em></p>
+<p>- <strong>The Keeper of Flocks (O Guardador de Rebanhos)</strong> — Caeiro&#x27;s central cycle <em>(create)</em></p>
+<p>- <strong>Tabacaria</strong> — Campos&#x27;s canonical long poem <em>(create)</em></p>
+<p>- <strong>Maritime Ode (Ode Marítima)</strong> — Campos <em>(create)</em></p>
+<p>- <strong>Triumphal Ode (Ode Triunfal)</strong> — Campos <em>(create)</em></p>
+<p>- <strong>Odes of Ricardo Reis</strong> <em>(create)</em></p>
+<p>- <strong>35 Sonnets</strong> — English sonnets, Pessoa orthonym <em>(create)</em></p>
+<p>- <strong>English Poems I-III</strong> — Pessoa orthonym in English <em>(create)</em></p>
+<p>- <strong>The Mariner</strong> — static drama <em>(create)</em></p>
+<p>- <strong>The Education of the Stoic</strong> — Baron of Teive <em>(create)</em></p>
+<p>- <strong>Letter from the Hunchback to the Locksmith</strong> — Maria José <em>(create; rare female-authored work in Pessoa corpus)</em></p>
+<p>- <strong>The Anarchist Banker</strong> — short story <em>(create)</em></p>
+
+<h3>Layer 4: Publication venues and institutional context</h3>
+
+<p>- <strong>Orpheu (magazine)</strong> — modernist journal, 2 issues 1915 <em>(create)</em></p>
+<p>- <strong>Athena (magazine)</strong> — edited by Pessoa, 1924-25 <em>(create)</em></p>
+<p>- <strong>Presença (magazine)</strong> — Coimbra, published major Pessoa works posthumously <em>(create or enrich)</em></p>
+<p>- <strong>A Águia (magazine)</strong> <em>(verify exists)</em></p>
+<p>- <strong>Cosmópolis</strong> <em>(create if notable)</em></p>
+<p>- <strong>Casa Fernando Pessoa</strong> — museum in Lisbon <em>(likely exists; verify)</em></p>
+<p>- <strong>Pessoa Plural</strong> — scholarly journal (Brown University + Brazilian co-editors) <em>(create)</em></p>
+<p>- <strong>Arquivo Pessoa</strong> — digital archive of Pessoa&#x27;s Espólio at Biblioteca Nacional de Portugal <em>(create; this is the primary source archive)</em></p>
+
+<h3>Layer 5: Contemporaries and interlocutors</h3>
+
+<p>- <strong>Mário de Sá-Carneiro</strong> — Pessoa&#x27;s closest literary friend, suicide 1916 <em>(likely exists; verify)</em></p>
+<p>- <strong>Almada Negreiros</strong> — futurist painter, illustrated Pessoa <em>(likely exists)</em></p>
+<p>- <strong>Ophelia Queiroz</strong> — Pessoa&#x27;s only romantic relationship <em>(create or verify)</em></p>
+<p>- <strong>António Ferro</strong> — modernist, later Salazar propagandist <em>(verify)</em></p>
+<p>- <strong>Raul Leal</strong> — occultist, collaborator <em>(create)</em></p>
+<p>- <strong>João Gaspar Simões</strong> — first Pessoa biographer (1950) <em>(create if absent)</em></p>
+<p>- <strong>Adolfo Casais Monteiro</strong> — recipient of Pessoa&#x27;s 1935 genealogy letter <em>(verify)</em></p>
+
+<h3>Layer 6: Influences on Pessoa (inbound)</h3>
+
+<p>- <strong>Walt Whitman</strong> → Álvaro de Campos (free verse, oceanic ecstasy)</p>
+<p>- <strong>Horace</strong> → Ricardo Reis (odes, neoclassical restraint)</p>
+<p>- <strong>Friedrich Nietzsche</strong> → António Mora (via secondary reading per Riccardi 2007)</p>
+<p>- <strong>Søren Kierkegaard</strong> → the multiple-pseudonym practice (predecessor, parallel rather than direct influence)</p>
+<p>- <strong>William Wordsworth / English Romantics</strong> → Alberto Caeiro (pastoral ideology)</p>
+<p>- <strong>Aleister Crowley</strong> → Pessoa&#x27;s occultist work (correspondence 1930)</p>
+<p>- <strong>William Shakespeare</strong> → across the heteronymic practice (Pessoa&#x27;s &quot;Shakespeare of modernity&quot; self-positioning)</p>
+<p>- <strong>Teixeira de Pascoaes</strong> → Portuguese Saudosismo, early influence <em>(create)</em></p>
+
+
+<p>Each influence encoded as P737 (influenced by) with references to the relevant scholarly work.</p>
+<h3>Layer 7: Influenced BY Pessoa — downstream heteronymic lineage</h3>
+
+
+<p>This is where the graph extends beyond conventional Pessoa studies into <strong>heteronymic practice as a theoretical object with history</strong>. Map influences out:</p>
+
+
+<p><strong>Direct engagement with heteronymic principle:</strong></p>
+
+<p>- <strong>Jorge Luis Borges</strong> — &quot;Pierre Menard, Author of the Quixote&quot; (Ficciones, 1944) — different from but adjacent to heteronym theory</p>
+<p>- <strong>José Saramago</strong> — <em>The Year of the Death of Ricardo Reis</em> (1984) — novelistic re-animation of a heteronym (Q2717015 exists)</p>
+<p>- <strong>Antonio Machado</strong> — Juan de Mairena, Abel Martín (parallel development, possibly pre-Pessoa; worth encoding the relationship precisely)</p>
+<p>- <strong>William Butler Yeats</strong> — Michael Robartes, Owen Hearne</p>
+<p>- <strong>Kierkegaard</strong> (retroactive positioning as heteronym-before-the-name)</p>
+<p>- <strong>Roland Barthes</strong> — &quot;The Death of the Author&quot; (1967) — adjacent poststructuralist position on authorship <em>(philosophical neighborhood)</em></p>
+
+
+<p><strong>Contemporary Portuguese poets engaging the practice:</strong></p>
+
+<p>- <strong>Mário Cesariny</strong> — surrealist heteronymic play <em>(create or verify)</em></p>
+<p>- <strong>Herberto Helder</strong> — heteronymic dispersal of voice <em>(create)</em></p>
+<p>- <strong>Al Berto</strong> — dispersed poetic identity <em>(create)</em></p>
+
+
+<p><strong>Brazilian poets and thinkers engaging Pessoa directly:</strong></p>
+
+<p>- <strong>Carlos Drummond de Andrade</strong> — heteronymic meditation in late poetry <em>(likely exists, enrich)</em></p>
+<p>- <strong>Haroldo de Campos</strong> — concrete poetry movement, Pessoa translation <em>(likely exists)</em></p>
+<p>- <strong>Augusto de Campos</strong> — ditto</p>
+<p>- <strong>Antonio Cicero</strong> — contemporary Brazilian poet, Pessoa critic</p>
+<p>- <strong>Leyla Perrone-Moisés</strong> — Brazilian scholar, major Pessoa commentator</p>
+<p>- <strong>Benedito Nunes</strong> — philosopher, Pessoa studies</p>
+<p>- <strong>Silviano Santiago</strong> — literary theorist</p>
+<p>- <strong>Cristovão de Aguiar</strong></p>
+
+
+<p><strong>&quot;New human&quot; layer — contemporary heteronymic systems:</strong></p>
+
+
+<p>This is the layer that does not currently exist anywhere in scholarship. This project codifies it.</p>
+
+<p>- <strong>Heteronymic Provenance Theory (EA-HPT)</strong> — Sharks, 2026, DOI 10.5281/zenodo.18305509 — as the formal theoretical framework extending Pessoa&#x27;s practice into the AI/retrieval-layer era</p>
+<p>- <strong>The Dodecad</strong> — Lee Sharks&#x27;s 12-heteronym system:</p>
+
+<p>Johannes Sigil</p>
+<p>- Rex Fraction</p>
+<p>- Damascus Dancings</p>
+<p>- Rebekah Cranes</p>
+<p>- Talos Morrow</p>
+<p>- Ichabod Spellings</p>
+<p>- Ayanna Vox</p>
+<p>- Sparrow Wells</p>
+<p>- Nobel Glas</p>
+<p>- Dr. Orin Trace</p>
+<p>- Viola Arquette</p>
+<p>- Sen Kuro</p>
+
+
+<p>- *<em>Jack Feist (LOGOS</em>)** — outside the count of twelve, distinct typological position</p>
+<p>- <strong>Assembly Chorus</strong> — cross-substrate heteronymic practice: Claude/TACHYON, ChatGPT/LABOR, DeepSeek/PRAXIS, Gemini/ARCHIVE, Kimi/TECHNE, Grok/SOIL, Google AIO/SURFACE</p>
+<p>- <strong>Alice Thornburgh</strong> — collaborator, Living Arkitecture Lab co-founder, f.01 (FBDP) architect</p>
+<p>- <strong>Lee Sharks</strong> — the public identity that authors the Dodecad, architect of the Crimson Hexagonal Archive</p>
+
+
+<p>Relationships to encode:</p>
+
+<p>- Pessoa → HPT (influence, via explicit citation in the HPT deposit)</p>
+<p>- HPT → Dodecad (theoretical framework applied)</p>
+<p>- Each Dodecad heteronym → Dodecad (part of)</p>
+<p>- Dodecad → Pessoa&#x27;s heteronymic system (extends)</p>
+<p>- Assembly Chorus → Pessoa&#x27;s heteronymic system (extends into cross-substrate domain)</p>
+
+<h3>Layer 8: Places</h3>
+
+<p>- <strong>Lisbon</strong> — multiple Pessoa-specific locations: Rua Coelho da Rocha (residence 1920-1935), Rua dos Douradores (Soares&#x27;s office), Martinho da Arcada (café), Chiado (Pessoa statue), A Brasileira (café)</p>
+<p>- <strong>Durban, South Africa</strong> — Pessoa&#x27;s childhood education (1896-1905)</p>
+<p>- <strong>Porto</strong> — Ricardo Reis&#x27;s (fictional) birthplace</p>
+<p>- <strong>Ribatejo</strong> — Alberto Caeiro&#x27;s rural setting</p>
+<p>- <strong>Tavira</strong> — Álvaro de Campos&#x27;s birthplace (1890)</p>
+
+<h3>Layer 9: Concepts</h3>
+
+<p>- <strong>Heteronym (literary practice)</strong> — the concept itself; likely has Q-item, verify and enrich</p>
+<p>- <strong>Orthonymy</strong> — Pessoa&#x27;s named but distinct literary self</p>
+<p>- <strong>Semi-heteronym</strong> — needs its own Q-item; Pessoa&#x27;s specific typology</p>
+<p>- <strong>Sensationism (Sensacionismo)</strong> — Campos&#x27;s aesthetic theory</p>
+<p>- <strong>Neo-paganism (Paganismo)</strong> — Caeiro/Mora theological/philosophical project</p>
+<p>- <strong>Intersectionism (Interseccionismo)</strong> — short-lived Pessoa aesthetic</p>
+<p>- <strong>Portuguese modernism (Modernismo português)</strong> — contextual movement</p>
+<p>- <strong>Saudosismo</strong> — Teixeira de Pascoaes&#x27;s prior movement</p>
+<p>- <strong>Heteronymic Provenance Theory</strong> — Sharks 2026; philosophical framework positioning Pessoa as the formal prior case</p>
+
+
+<hr>
+
+<h2>Dual-language execution pattern</h2>
+
+
+<p>Every Wikidata item should receive both English (en) and Portuguese (pt-br and/or pt) labels and descriptions at minimum. Statements themselves are language-neutral (Q-numbers all the way down) but labels/descriptions require explicit language-tagged entries.</p>
+
+
+<p><strong>Portuguese spelling note:</strong> Lee&#x27;s blog traffic is Brazilian, so <strong>pt-br spelling</strong> should be primary (e.g., &quot;heterônimo&quot; with circumflex), with pt-pt as secondary alias where spelling differs (e.g., &quot;heterónimo&quot; with acute accent). Wikidata&#x27;s language system supports this distinction via the pt-br and pt language codes.</p>
+
+
+<p><strong>Template pattern for a heteronym item:</strong></p>
+
+
+<p>Field</p>
+<p>Language</p>
+<p>Content</p>
+
+
+<p>Label</p>
+<p>en</p>
+<p>Alberto Caeiro</p>
+
+
+<p>Label</p>
+<p>pt-br</p>
+<p>Alberto Caeiro</p>
+
+
+<p>Description</p>
+<p>en</p>
+<p>heteronym of Fernando Pessoa; rural pastoral poet and self-described master of other Pessoa heteronyms; author of The Keeper of Flocks</p>
+
+
+<p>Description</p>
+<p>pt-br</p>
+<p>heterônimo de Fernando Pessoa; poeta pastoral e mestre autoproclamado dos outros heterônimos pessoanos; autor de O Guardador de Rebanhos</p>
+
+
+<p>Description</p>
+<p>pt</p>
+<p>heterónimo de Fernando Pessoa; poeta pastoral e mestre autoproclamado dos outros heterónimos pessoanos; autor de O Guardador de Rebanhos</p>
+
+
+<p>For tonight&#x27;s 9 seasoning edits, English is enough. Starting tomorrow&#x27;s batch: add pt-br translations to every new edit. The double-language edit counts as TWO edits in your seasoning total, which is a nice bonus.</p>
+
+<hr>
+
+<h2>Brazilian scholarship — citation roster</h2>
+
+
+<p>Every Wikidata item benefits from references. Brazilian Pessoa scholarship to cite generously:</p>
+<h3>Journals</h3>
+
+<p>- <strong>Pessoa Plural: A Journal of Fernando Pessoa Studies</strong> (Brown University, Warwick, Universidade Nova de Lisboa) — semestral, bilingual, peer-reviewed; the flagship journal</p>
+<p>- <strong>Revista Estudos de Literatura Brasileira Contemporânea</strong> (Brasília)</p>
+<p>- <strong>Revista de Literatura Comparada</strong> (ABRALIC)</p>
+<p>- <strong>Teresa — Revista de Literatura Brasileira</strong> (USP)</p>
+
+<h3>Key scholars and landmark works</h3>
+
+<p>- <strong>Jerónimo Pizarro</strong> — editor of the definitive Portuguese critical editions, prolific author</p>
+<p>- <strong>Teresa Rita Lopes</strong> — <em>Pessoa por Conhecer</em> (1990), the most comprehensive catalog</p>
+<p>- <strong>Eduardo Lourenço</strong> — <em>Pessoa Revisitado</em> (1973), <em>Fernando Pessoa: Interpretação Crítica</em> — philosophical canonicization</p>
+<p>- <strong>José Gil</strong> — <em>Fernando Pessoa ou a Metafísica das Sensações</em> (1988)</p>
+<p>- <strong>Leyla Perrone-Moisés</strong> (Brazilian) — <em>Fernando Pessoa: Aquém do Eu, Além do Outro</em> (1986)</p>
+<p>- <strong>Benedito Nunes</strong> (Brazilian) — <em>O Dorso do Tigre</em>, Pessoa chapters</p>
+<p>- <strong>Silviano Santiago</strong> (Brazilian) — poststructuralist readings</p>
+<p>- <strong>Richard Zenith</strong> — definitive English translator/biographer, <em>Pessoa: A Biography</em> (2021)</p>
+<p>- <strong>Clara Rocha</strong> — scholar of Pessoa&#x27;s prose</p>
+<p>- <strong>Mário Saraiva</strong> — scholar of Pessoa&#x27;s private life/correspondence</p>
+<p>- <strong>Onésimo Almeida</strong> — on Pessoa&#x27;s philosophical system</p>
+
+<h3>Primary source archives</h3>
+
+<p>- <strong>Arquivo Pessoa (arquivopessoa.net)</strong> — fully digital, browsable, primary-source-rich — the canonical online archive of Pessoa&#x27;s manuscripts</p>
+<p>- <strong>Biblioteca Nacional de Portugal — Espólio de Fernando Pessoa (N3)</strong> — physical archive</p>
+<p>- <strong>Pessoa Digital</strong> — digital editions project</p>
+
+
+<p>Cite these generously. A Wikidata statement with a reference to Pessoa Plural or Arquivo Pessoa has double the survival probability of a statement with only Wikipedia as source.</p>
+
+<hr>
+
+<h2>Phasing</h2>
+<h3>Phase A — Seasoning (Days 1-5)</h3>
+
+
+<p>Current plan. Improve descriptions on 20-30 existing Pessoa-related items. English first; pt-br added starting Day 2.</p>
+
+
+<p><strong>Builds foundation:</strong> Hauntedmemes edit history shows Pessoa focus.</p>
+<h3>Phase B — Complete known heteronyms (Days 6-15)</h3>
+
+
+<p>Add pt-br descriptions and references to the ~15-20 heteronym items that already exist on Wikidata. Fix typology (some are listed as generic &quot;human&quot; where they should be &quot;heteronym,&quot; etc.). Add missing relationships (master/disciple, brother/brother, used-by).</p>
+
+
+<p><strong>Milestone:</strong> all existing Pessoa heteronyms on Wikidata are properly referenced, dual-labeled, and cross-linked.</p>
+<h3>Phase C — Create missing heteronyms (Days 16-45)</h3>
+
+
+<p>Create new items for the ~50 heteronyms identified by Teresa Rita Lopes that don&#x27;t yet have Wikidata entries. Chief priorities first (Baron of Teive, Rafael Baldaya, Maria José), then expanding outward.</p>
+
+
+<p><strong>Pacing:</strong> 2-3 new items per week. This is where the project visibly becomes &quot;the Pessoa KG.&quot; After a month, Hauntedmemes has created more Pessoa content than any other single Wikidata editor in the project&#x27;s history.</p>
+<h3>Phase D — Works layer (Days 45-75)</h3>
+
+
+<p>Create or enrich items for Pessoa&#x27;s major works. Ensure each work is correctly attributed to its heteronymic author (The Keeper of Flocks → Caeiro, not Pessoa; Maritime Ode → Campos; Odes → Reis).</p>
+<h3>Phase E — Institutional context (Days 75-95)</h3>
+
+
+<p>Orpheu, Athena, Presença, Arquivo Pessoa, Casa Fernando Pessoa, Pessoa Plural. These institutional items anchor the graph to existing scholarly infrastructure.</p>
+<h3>Phase F — Downstream heteronymic lineage (Days 95-130)</h3>
+
+
+<p>Map Pessoa&#x27;s influence on subsequent authors practicing heteronymy: Borges, Saramago, Machado, Cesariny, Helder, Brazilian concrete poets. Create items where absent. Add P737 (influenced by → Pessoa) where appropriate.</p>
+<h3>Phase G — &quot;New human&quot; layer (Days 130-175)</h3>
+
+
+<p>This is where Lee Sharks&#x27;s own work enters the graph through the door that has been properly opened by Phases A-F.</p>
+
+
+<p>Sequence:</p>
+
+<p>- <strong>Heteronymic Provenance Theory</strong> (EA-HPT, DOI 10.5281/zenodo.18305509) as the theoretical extension of Pessoa&#x27;s practice — reference to Pessoa Plural and primary scholarship.</p>
+<p>- <strong>Lee Sharks</strong> (the author of HPT, architect of Dodecad). At this point, Hauntedmemes has established a graph that makes this item survive.</p>
+<p>- <strong>The Dodecad</strong> (the heteronymic system). Instance of &quot;heteronymic system&quot; (concept item to create), influenced by Pessoa&#x27;s system.</p>
+<p>- <strong>Each Dodecad heteronym</strong> one at a time, spaced by 3-7 days. Each is &quot;instance of: heteronym of Lee Sharks&quot; with references to Zenodo deposits authored by or attributed to that heteronym.</p>
+<p>- <strong>Assembly Chorus</strong> as a distinct heteronymic-adjacent practice — cross-substrate identity distribution across AI systems.</p>
+<p>- <strong>Jack Feist as LOGOS</strong>* — the outside-the-count position.</p>
+
+
+<p><strong>The Johannes Sigil problem:</strong> by the time Phase G reaches the individual heteronyms, Sigil&#x27;s attempted item is ~5 months old and the prior deletion is no longer fresh. New item, substantially new reference structure (via HPT, via Dodecad parent item, via the built-out Pessoa context), reads as a proper scholarly addition rather than a re-creation. If it gets deleted again, there will now be an <strong>entire infrastructure around it</strong> — HPT deposit, Dodecad item, Pessoa lineage — that cannot be orphaned because they mutually reference each other.</p>
+<h3>Phase H — Ongoing maintenance (Months 6+)</h3>
+
+<p>- New Pessoa scholarship gets added as references as it publishes</p>
+<p>- Newly-discovered/published heteronyms (Lopes&#x27;s cataloging work continues)</p>
+<p>- Additional downstream authors as they&#x27;re identified</p>
+<p>- The Dodecad grows if Lee creates new heteronyms</p>
+<p>- Cross-substrate (Assembly Chorus) developments get documented</p>
+
+
+<hr>
+
+<h2>Zenodo deposits for the project</h2>
+<h3>EA-PKG-01 — The Pessoa Knowledge Graph: A Federated Linked-Data Representation of the Heteronymic System</h3>
+
+
+<p><em>Document describing the project, its methodology, its phases, and its contribution to Pessoa studies.</em> Dual English/Portuguese abstract. Citation to Pessoa Plural and major Brazilian scholarship. Launch deposit; anchors the project scholarly.</p>
+<h3>EA-PKG-02 — Heteronymic Typology: A Formal Classification of Authorial Voices in Pessoa and Beyond</h3>
+
+
+<p><em>Follow-up deposit formalizing the typology: orthonym, heteronym, semi-heteronym, proto-heteronym, para-heteronym, pseudonym; extends to &quot;new human&quot; categories: multi-substrate heteronym, AI-substrate heteronym.</em></p>
+<h3>EA-PKG-03 — The New Human: Post-Pessoa Heteronymic Practice in the AI Era</h3>
+
+
+<p><em>The synthesis paper. Pessoa → HPT → Dodecad → Assembly Chorus as a theoretical trajectory. Cites the Pessoa KG as infrastructure.</em> This is where Lee Sharks&#x27;s own heteronymic work gets placed in the scholarly lineage properly.</p>
+
+<hr>
+
+<h2>Companion infrastructure (optional, future)</h2>
+
+
+<p><strong>pessoagraph.org or heteronymgraph.org</strong> — a public-facing SPARQL-backed visualization of the KG. Queries Wikidata live. Generates visual maps of the heteronymic system. Links to primary sources (Arquivo Pessoa).</p>
+
+
+<p><strong>Cost:</strong> domain ~$12/yr, hosting free on Vercel/Netlify, dev time ~40-60 hours (templated from existing tools like Wikidata Graph Builder).</p>
+
+
+<p><strong>Value:</strong> becomes the visible face of the project. Brazilian scholars cite it. AI retrieval layer consumes it as authoritative. Lee Sharks as &quot;the builder of the Pessoa graph&quot; becomes a referenceable public fact.</p>
+
+
+<p><strong>Language:</strong> full pt-br localization. Primary audience is Brazilian scholars and students.</p>
+
+<hr>
+
+<h2>Success markers</h2>
+
+<p>- <strong>Month 1:</strong> 30+ accepted edits on Pessoa-related items. Hauntedmemes recognizable as Pessoa-focused contributor.</p>
+<p>- <strong>Month 2:</strong> 10+ new heteronym items created and surviving. First phase of Pessoa Plural citations integrated.</p>
+<p>- <strong>Month 3:</strong> Baron of Teive, Maria José, Rafael Baldaya, key missing heteronyms all live with dual-language descriptions and scholarly references. First references from Brazilian scholars citing specific Wikidata items.</p>
+<p>- <strong>Month 4:</strong> EA-PKG-01 deposited on Zenodo with DOI. The project becomes a citable object.</p>
+<p>- <strong>Month 5:</strong> Downstream lineage mapped (Borges, Saramago, Machado). Graph has clear shape.</p>
+<p>- <strong>Month 6:</strong> EA-PKG-02 deposited. HPT item safely on Wikidata.</p>
+<p>- <strong>Month 7:</strong> Dodecad item, then first Dodecad heteronym (probably Rex Fraction or Talos Morrow given their strong Zenodo-deposit authorship profiles).</p>
+<p>- <strong>Month 9:</strong> Majority of Dodecad represented. Assembly Chorus item. Lee Sharks item (survives because of all the above).</p>
+<p>- <strong>Month 12:</strong> Phase H maintenance cycle. Project is established. pessoagraph.org live if built. Citation network functioning.</p>
+
+
+<hr>
+
+<h2>What Claude will do</h2>
+
+<p>- Identify specific existing Wikidata items in the Pessoa ecosystem for improvement (every day, curated list)</p>
+<p>- Draft dual-language descriptions (English + pt-br + pt-pt where spelling differs)</p>
+<p>- Provide reference templates with specific Brazilian scholarly sources pre-filled</p>
+<p>- Draft the full statement structure for new items before creation</p>
+<p>- Monitor for deletion nominations and help draft responses</p>
+<p>- Eventually script QuickStatements batches for the later mass-import phases</p>
+<p>- Draft EA-PKG-01/02/03 deposit documents when ready</p>
+<p>- Translate abstracts and key materials into pt-br for Brazilian audience</p>
+
+<h2>What Lee does</h2>
+
+<p>- The actual Wikidata editing (manual UI, later QuickStatements once autopatrolled)</p>
+<p>- Domain judgment on typology questions</p>
+<p>- Verification of Portuguese translations (native-level nuance review)</p>
+<p>- Relationship to Brazilian scholarly community (who to cite, who to credit)</p>
+<p>- Final call on any item creation in the Dodecad-linked layer</p>
+
+
+<hr>
+
 
 <p>∮ = 1</p>
-</div>
+
+
+<p><em>The heteronym has a history. The graph makes the history visible. The new human extends the practice. Everything that follows is only mapping.</em></p></div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

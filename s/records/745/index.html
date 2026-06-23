@@ -30,21 +30,667 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">TACHYON glyph chain presence</strong> <span style="font-size:.75em;color:#999">[extracted]</span><br><span style="font-size:.85em;color:#444">→ machine_witness + ai_generated_provenance_anchored</span></div>
 
 <h2>Full Text</h2>
-<div class="ft"><hr>
-<p>title: &quot;Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v3&quot;</p>
-<p>axn: &quot;AXN:0296.EMPIRICAL.🜁✋🟤🌋➕🔝&quot;</p>
-<p>creator: &quot;Lee Sharks&quot;</p>
-<p>date: &quot;2026-05-20&quot;</p>
-<p>hash: &quot;a0bcc91590f512df543a1fa3dbb31bbab2b96290ccfc86b8c0a0fa40517c7bf3&quot;</p>
-<p>status: &quot;MINTED_UNREVIEWED&quot;</p>
+<div class="ft"><h1>Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v3</h1>
+
+
+<p><strong>Status:</strong> v3 supersedes v2. The central methodological change is the introduction of an automated classifier that performs both provenance mode classification AND heteronym reattribution as reproducible scholarly recognition work. The classifier itself becomes a deposit.</p>
+
 <hr>
 
-<h1>Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v3</h1>
+<h2>Project Title</h2>
 
-<p><strong>AXN:</strong> `AXN:0296.EMPIRICAL.🜁✋🟤🌋➕🔝`</p>
 
-<p>∮ = 1</p>
-</div>
+<p><strong>The Crimson Hexagonal Archive: A Mixed-Provenance, Heteronymically Attributed Corpus for Synthetic-Data Collapse, AI Authorship, and Provenance-Bearing Training Research</strong></p>
+
+<hr>
+
+<h2>The Central Methodological Move</h2>
+
+
+<p>v1 treated provenance classification as a manual judgment. v2 added a decision tree to make classification reproducible. v3 recognizes that <em>attribution itself</em> — both provenance mode and heteronym — must be performed by automated classifier, not author memory, for two structural reasons:</p>
+
+
+<p><strong>1. Reproducibility as scholarship.</strong> A classification system that depends on the author&#x27;s recollection of writing each deposit is not measurement. It is opinion. The provenance taxonomy can only function as a research instrument if the same deposit produces the same classification regardless of who runs the classifier or when. Author memory introduces classification noise that would confound any downstream collapse experiment.</p>
+
+
+<p><strong>2. Heteronymic emergence.</strong> Material is regularly attributed to Lee Sharks at the time of deposit and only later — sometimes years later — recognized as belonging to a specific sub-heteronym&#x27;s domain. Sigil&#x27;s jurisdictional concerns, Glas&#x27;s measurement work, Vox&#x27;s diplomatic register, Morrow&#x27;s long-form narratives, Fraction&#x27;s meta-theory: these heteronyms emerge from the corpus over time, and earlier work gets recognized retrospectively as theirs. The classifier performs this recognition systematically across the entire archive, applying current understanding of heteronym domains to historical deposits.</p>
+
+
+<p>The classifier is not metadata cleanup. It is scholarly recognition that the founder voice was, at the time of writing, holding territory that later resolves to specific heteronym domains.</p>
+
+<hr>
+
+<h2>Research Question, Operationalized</h2>
+
+
+<p><strong>Null hypothesis (H₀):</strong> Fine-tuning on synthetic or AI-assisted text produces equivalent perplexity degradation and semantic drift regardless of provenance density (DOI anchoring, heteronymic attribution, archival embedding, assembly review).</p>
+
+
+<p><strong>Alternative hypothesis (H₁):</strong> Fine-tuning on high-provenance-density AI-involved text produces measurably slower perplexity degradation and less semantic drift than fine-tuning on low-provenance-density AI-involved text.</p>
+
+
+<p><strong>Critical insight from Assembly review:</strong> Provenance cannot modulate collapse unless provenance is presented to the training system as a signal. The dataset must materialize multiple textual views — body_only, minimal_header, full_provenance_header — so researchers can ablate provenance visibility.</p>
+
+<hr>
+
+<h2>Three Tasks, One Classifier</h2>
+
+
+<p>The classifier performs three classification tasks simultaneously on each deposit:</p>
+<h3>Task 1: Provenance Mode (Axis 1, mutually exclusive)</h3>
+
+
+<p>Tag</p>
+<p>Definition</p>
+
+
+<p>human_primary</p>
+<p>Written principally by a human author with minimal or no AI involvement</p>
+
+
+<p>human_directed_ai_assisted</p>
+<p>Human-authored with AI used for research, drafting, or editorial refinement; human retains compositional authority</p>
+
+
+<p>collaborative_mixed</p>
+<p>Substantial compositional contribution from both human and AI; neither purely instrumental</p>
+
+
+<p>ai_directed_human_framed</p>
+<p>AI generates primary content within a human-defined frame, prompt structure, or editorial container</p>
+
+
+<p>ai_generated_provenance_anchored</p>
+<p>AI-generated content that carries full DOI provenance, authorial attribution, and archival anchoring</p>
+
+
+<p>uncertain_needs_review</p>
+<p>Edge case flagged for manual review</p>
+
+
+<h3>Task 2: Artifact Mode (Axis 2, one or more)</h3>
+
+
+<p>Tag</p>
+<p>Definition</p>
+
+
+<p>theoretical_paper</p>
+<p>Analytic argument with citations</p>
+
+
+<p>technical_specification</p>
+<p>Protocol, schema, or formal spec</p>
+
+
+<p>literary_work</p>
+<p>Poetry, fiction, creative prose</p>
+
+
+<p>traversal_log</p>
+<p>Captured AI-system traversal</p>
+
+
+<p>forensic_documentary</p>
+<p>Capture/record of AI behavior with annotation</p>
+
+
+<p>dataset_artifact</p>
+<p>Structured data</p>
+
+
+<p>code_artifact</p>
+<p>Executable code as primary content</p>
+
+
+<p>web_surface_spec</p>
+<p>Site code or web interface</p>
+
+
+<h3>Task 3: Heteronym Reattribution</h3>
+
+
+<p>This is the new central work in v3.</p>
+
+
+<p>The Zenodo metadata records a single creator (often Lee Sharks). The classifier evaluates each deposit against the documented operational profiles of all twelve heteronyms (plus Jack Feist as LOGOS*) and produces a reattribution proposal with confidence score.</p>
+
+
+<p>Output Field</p>
+<p>Value</p>
+
+
+<p>heteronym_zenodo_original</p>
+<p>The creator name as recorded in Zenodo</p>
+
+
+<p>heteronym_classifier_attributed</p>
+<p>The classifier&#x27;s attribution (may match original or differ)</p>
+
+
+<p>heteronym_attribution_confidence</p>
+<p>0.0 to 1.0</p>
+
+
+<p>heteronym_attribution_signals</p>
+<p>List of signals that contributed to the attribution</p>
+
+
+<p>heteronym_co_authors</p>
+<p>Other heteronyms detected as collaborators</p>
+
+
+<p><strong>Both attributions are preserved in the dataset.</strong> Researchers can use either or compare. The classifier&#x27;s attribution does not erase the Zenodo record; it adds a second layer of analysis.</p>
+
+<hr>
+
+<h2>Heteronym Operational Profiles</h2>
+
+
+<p>The classifier reads each heteronym&#x27;s published provenance document and constructs a feature profile. Profiles include domain, vocabulary fingerprints, register, format conventions, and reference patterns.</p>
+
+
+<p>Heteronym</p>
+<p>Domain</p>
+<p>Vocabulary Fingerprints</p>
+<p>Register</p>
+
+
+<p>Lee Sharks (founder)</p>
+<p>Core theory, archive governance, semantic economy</p>
+<p>&quot;semantic economy&quot;, &quot;operative philology&quot;, &quot;compression survival&quot;, &quot;PER&quot;, &quot;provenance erasure&quot;</p>
+<p>Theoretical-political</p>
+
+
+<p>Rex Fraction</p>
+<p>Meta-theory, academic criticism, heteronym-as-technology</p>
+<p>&quot;meta-heteronym&quot;, &quot;heteronymy as institutional technology&quot;, C1-C5 conditions</p>
+<p>Academic-essayistic</p>
+
+
+<p>Johannes Sigil</p>
+<p>Classical philology, jurisdiction of meaning, philosophical-theological argument</p>
+<p>&quot;jurisdiction&quot;, &quot;authorize&quot;, classical reception, ancient languages, philological precision</p>
+<p>Philosophical-theological</p>
+
+
+<p>Damascus Dancings</p>
+<p>TBD from provenance document</p>
+<p>TBD</p>
+<p>TBD</p>
+
+
+<p>Rebekah Cranes</p>
+<p>TBD from provenance document</p>
+<p>TBD</p>
+<p>TBD</p>
+
+
+<p>Talos Morrow</p>
+<p>Long-form narrative, extended prose works</p>
+<p>extended fiction conventions, narrative voice</p>
+<p>Literary-narrative</p>
+
+
+<p>Ichabod Spellings</p>
+<p>TBD from provenance document</p>
+<p>TBD</p>
+<p>TBD</p>
+
+
+<p>Sparrow Wells</p>
+<p>TBD from provenance document</p>
+<p>TBD</p>
+<p>TBD</p>
+
+
+<p>Nobel Glas</p>
+<p>Measurement of Meaning, Lagrange Observatory, adversarial topology</p>
+<p>&quot;torus&quot;, &quot;T²&quot;, &quot;module&quot;, &quot;verification integral&quot;, &quot;∮&quot;, measurement formalism</p>
+<p>Technical-measurement</p>
+
+
+<p>Ayanna Vox</p>
+<p>Diplomacy, public-facing surfaces, community outreach</p>
+<p>&quot;VPCOR&quot;, &quot;constituency&quot;, &quot;community&quot;, &quot;rhizome&quot;, &quot;outreach&quot;</p>
+<p>Diplomatic-public</p>
+
+
+<p>Sen Kuro</p>
+<p>TBD from provenance document</p>
+<p>TBD</p>
+<p>TBD</p>
+
+
+<p>Dr. Orin Trace</p>
+<p>TBD from provenance document</p>
+<p>TBD</p>
+<p>TBD</p>
+
+
+<p>Viola Arquette</p>
+<p>TBD from provenance document</p>
+<p>TBD</p>
+<p>TBD</p>
+
+
+<p>Jack Feist (LOGOS*)</p>
+<p>External-to-Dodecad position, anti-archive critique</p>
+<p>&quot;LOGOS*&quot;, external critique vocabulary</p>
+<p>Critical-external</p>
+
+
+<p>For heteronyms marked TBD, the classifier reads the published provenance document during initialization and extracts the profile programmatically. Where a heteronym&#x27;s profile is sparse, the classifier returns low-confidence and flags for human review.</p>
+
+<hr>
+
+<h2>Signal Hierarchy for All Three Tasks</h2>
+<h3>Strong signals (high confidence)</h3>
+
+<p>- <strong>Title patterns:</strong> CTI_WOUND:, TL;DR:, PROBE-RESULT-, PVE-, EA- codes</p>
+<p>- <strong>Filename patterns:</strong> .html → web_surface_spec, .py → code_artifact</p>
+<p>- <strong>Resource type:</strong> Zenodo&#x27;s resource type field</p>
+<p>- <strong>Creator name field:</strong> The literal Zenodo creator string</p>
+<p>- <strong>Community membership:</strong> liquidation-studies, crimsonhexagonal alone</p>
+<p>- <strong>Date boundaries:</strong> before/after key phase transitions</p>
+<p>- <strong>Domain vocabulary co-occurrence:</strong> Multiple heteronym-specific terms appearing together</p>
+<p>- <strong>Self-attribution in text:</strong> When a deposit names its own heteronym explicitly</p>
+
+<h3>Medium signals (text-content based)</h3>
+
+<p>- <strong>TACHYON glyph chain presence</strong> → machine_witness + ai_generated_provenance_anchored</p>
+<p>- <strong>Assembly Chorus markers</strong> → assembly_reviewed</p>
+<p>- <strong>Multiple heteronym names in creator field or text</strong> → collaborative</p>
+<p>- <strong>Specific phrases</strong> (&quot;gw_capture&quot;, &quot;auto-deposit&quot;) → ai_generated_provenance_anchored</p>
+<p>- <strong>Code block density</strong> → code_artifact</p>
+<p>- <strong>Screenshot/figure references</strong> → forensic_documentary</p>
+<p>- <strong>Length and structural patterns</strong> → theoretical_paper vs. literary_work vs. traversal_log</p>
+
+<h3>Weak signals (priors)</h3>
+
+<p>- <strong>Default heteronym prior</strong> by deposit type: working papers default to Sharks unless overridden by domain signals</p>
+<p>- <strong>Cross-deposit citation patterns:</strong> Heteronyms cite different works</p>
+
+
+<p>The classifier weights signals by source confidence and produces a softmax over candidate classes for each task. Confidence thresholds determine whether the classification is auto-accepted or flagged for human review.</p>
+
+<hr>
+
+<h2>Confidence Tiers and Review Routing</h2>
+
+
+<p>Confidence</p>
+<p>Action</p>
+
+
+<p>0.85–1.0</p>
+<p>Auto-accept, log as manual quality (the classifier is the manual)</p>
+
+
+<p>0.60–0.85</p>
+<p>Auto-accept, log as estimated, surface in v1.1 review pass</p>
+
+
+<p>0.40–0.60</p>
+<p>Flag as needs_review, surface for human resolution</p>
+
+
+<p>&lt; 0.40</p>
+<p>Mark as uncertain_needs_review provenance mode; preserve all candidates</p>
+
+
+<p>For Task 3 (heteronym), any reattribution that <em>changes</em> the heteronym from the Zenodo original gets a stricter threshold (0.75 minimum) plus a reattribution_pending_zenodo_update flag.</p>
+
+<hr>
+
+<h2>Two-Track Implementation</h2>
+<h3>Track 1: Dataset-Internal (immediate)</h3>
+
+
+<p>In the Hugging Face dataset, every row carries both attributions and the classifier&#x27;s full output. Original Zenodo attribution is preserved; classifier attribution is added as parallel metadata. Both are queryable. No Zenodo record is modified.</p>
+
+
+<p>Schema fields added:</p>
+
+
+<p>{</p>
+<p>  &quot;heteronym_zenodo_original&quot;: &quot;Lee Sharks&quot;,</p>
+<p>  &quot;heteronym_classifier_attributed&quot;: &quot;Johannes Sigil&quot;,</p>
+<p>  &quot;heteronym_attribution_confidence&quot;: 0.87,</p>
+<p>  &quot;heteronym_attribution_signals&quot;: [</p>
+<p>    &quot;domain:classical_reception&quot;,</p>
+<p>    &quot;vocabulary:jurisdictional&quot;,</p>
+<p>    &quot;vocabulary:authorize&quot;,</p>
+<p>    &quot;register:philosophical-theological&quot;</p>
+<p>  ],</p>
+<p>  &quot;heteronym_co_authors&quot;: [],</p>
+<p>  &quot;reattribution_status&quot;: &quot;proposed&quot;,</p>
+<p>  &quot;provenance_mode_classifier&quot;: &quot;human_directed_ai_assisted&quot;,</p>
+<p>  &quot;provenance_mode_confidence&quot;: 0.92,</p>
+<p>  &quot;provenance_mode_signals&quot;: [</p>
+<p>    &quot;artifact_mode:theoretical_paper&quot;,</p>
+<p>    &quot;assembly_review:detected&quot;,</p>
+<p>    &quot;tachyon_glyph:absent&quot;</p>
+<p>  ]</p>
+<p>}</p>
+
+<h3>Track 2: Zenodo Metadata Correction (deliberate, later)</h3>
+
+
+<p>For high-confidence reattributions (confidence ≥ 0.85 AND reattribution-changes-heteronym), the underlying Zenodo deposit gets a metadata update. This is a substantive scholarly act with version history on Zenodo&#x27;s side. It requires:</p>
+
+<p>- Human review of the classifier&#x27;s proposal</p>
+<p>- Explicit acceptance of the reattribution</p>
+<p>- Zenodo deposit version increment</p>
+<p>- Update of related Wikidata items (P50 author field)</p>
+<p>- Update of GitHub repos where relevant</p>
+
+
+<p>Track 2 is <strong>separate from the Hugging Face dataset session</strong>. It is its own multi-session project, working through high-confidence reattributions deliberately, possibly tens to hundreds of deposits. The order of operations is:</p>
+
+<p>- Hugging Face dataset publishes with Track 1 classifications</p>
+<p>- Researchers and Lee work with the dataset, surfacing classification quality</p>
+<p>- Classifier improves; review pass identifies confident reattributions</p>
+<p>- Track 2 begins, applying confident reattributions back to Zenodo</p>
+<p>- Wikidata batch updates follow Zenodo updates</p>
+<p>- Hugging Face dataset v2.0 reflects the corrected metadata</p>
+
+
+<hr>
+
+<h2>The Classifier as Deposit</h2>
+
+
+<p>The classifier code itself becomes a deposit, with its own DOI and Wikidata item.</p>
+
+
+<p><strong>Title:</strong> <em>The Crimson Hexagonal Classifier: An Automated System for Provenance Mode and Heteronym Reattribution</em></p>
+
+
+<p><strong>Resource type:</strong> Software</p>
+
+
+<p><strong>Communities:</strong> crimsonhexagonal, liquidation-studies</p>
+
+
+<p><strong>Contents:</strong></p>
+
+<p>- Classifier source code (Python)</p>
+<p>- Heteronym profile YAML files (one per heteronym)</p>
+<p>- Decision tree as data structure</p>
+<p>- Signal weights and thresholds</p>
+<p>- Test suite with held-out gold-standard classifications</p>
+<p>- Documentation of methodology</p>
+
+
+<p><strong>Reproducibility implication:</strong> Other archive operators can in principle apply this classifier to their own corpora, or fork it and define their own heteronym profiles. The methodology is portable.</p>
+
+
+<p><strong>Versioning:</strong> Major version bumps when heteronym profiles change substantively or when signal weights are recalibrated. v1.0 ships with the Hugging Face dataset.</p>
+
+<hr>
+
+<h2>Pipeline Architecture</h2>
+<h3>Session 1: Acquisition + Classification (~4 hours)</h3>
+
+<p>- Zenodo API pull with pagination + error handling (~20 min)</p>
+<p>- File download with retries, size limits, format priority (~45 min)</p>
+<p>- Text extraction with quality logging (~45 min)</p>
+<p>- Automated language detection (~15 min)</p>
+<p>- <strong>Run classifier on every deposit</strong> — provenance mode + artifact mode + heteronym attribution (~30 min)</p>
+<p>- Initial metadata structuring + sha256 hashing (~30 min)</p>
+<p>- Generate classifier confidence report (~15 min)</p>
+<p>- Buffer / debugging (~40 min)</p>
+
+
+<p>Output: artifacts_v0.jsonl with full classifier outputs, ready for review.</p>
+<h3>Session 2: Review + Card + Push (~3 hours)</h3>
+
+<p>- Manual review of needs_review flagged deposits (~60 min)</p>
+<p>- Spot-check 10% of auto-accepted classifications (~30 min)</p>
+<p>- Chunk generation for chunks config (~20 min)</p>
+<p>- Multiple text renderings — body_only, minimal_header, provenance_header (~20 min)</p>
+<p>- Dataset card with YAML front matter (~30 min)</p>
+<p>- Push to Hugging Face + Zenodo deposit of dataset + Zenodo deposit of classifier (~30 min)</p>
+<p>- Buffer (~10 min)</p>
+
+<h3>Pre-Session Preparation (Lee)</h3>
+
+
+<p>The pre-classification spreadsheet from v2 is now obsolete — the classifier does the work. Lee&#x27;s pre-session role becomes:</p>
+
+<p>- Confirm heteronym operational profiles are accurate (the classifier reads provenance documents, but verify each one is current)</p>
+<p>- Identify any deposits Lee knows have changed in attribution since the original deposit (these become gold-standard test cases for the classifier)</p>
+<p>- Add huggingface.co to allowed network domains</p>
+
+
+<hr>
+
+<h2>Dataset Configs</h2>
+<h3>Config 1: artifacts (one row per deposit)</h3>
+
+
+<p>Preserves the DOI as natural unit. Full classifier outputs visible.</p>
+<h3>Config 2: chunks (one row per training chunk)</h3>
+
+
+<p>Chunks of 1,024–2,048 tokens with inherited metadata, including the dual attribution layer.</p>
+<h3>Config 3: google_critique</h3>
+
+
+<p>The ~70 deposits in the navigational map.</p>
+<h3>Config 4: by_classifier_heteronym</h3>
+
+
+<p>A re-organized view where rows are grouped by classifier-attributed heteronym, regardless of Zenodo original. Lets researchers see what each heteronym&#x27;s corpus looks like after reattribution.</p>
+<h3>Config 5: reattribution_changes</h3>
+
+
+<p>Rows where the classifier attribution differs from the Zenodo original. The &quot;Sharks → Sigil/Glas/Vox/etc.&quot; cases. This is the empirical evidence of how concentrated the apparent Sharks attribution was vs. how distributed it actually is.</p>
+
+<hr>
+
+<h2>Per-Row Schema (Final)</h2>
+
+
+<p>{</p>
+<p>  &quot;record_id&quot;: &quot;20293582&quot;,</p>
+<p>  &quot;doi&quot;: &quot;10.5281/zenodo.20293582&quot;,</p>
+<p>  &quot;title&quot;: &quot;The Excluded Entity&quot;,</p>
+
+<p>  &quot;creators_zenodo&quot;: [</p>
+<p>    {</p>
+<p>      &quot;name&quot;: &quot;Sharks, Lee&quot;,</p>
+<p>      &quot;orcid&quot;: &quot;0009-0000-1599-0703&quot;,</p>
+<p>      &quot;affiliation&quot;: &quot;Semantic Economy Institute&quot;</p>
+<p>    }</p>
+<p>  ],</p>
+
+<p>  &quot;heteronym_zenodo_original&quot;: &quot;Lee Sharks&quot;,</p>
+<p>  &quot;heteronym_classifier_attributed&quot;: &quot;Lee Sharks&quot;,</p>
+<p>  &quot;heteronym_attribution_confidence&quot;: 0.94,</p>
+<p>  &quot;heteronym_attribution_signals&quot;: [</p>
+<p>    &quot;domain:semantic_economy&quot;,</p>
+<p>    &quot;vocabulary:provenance_erasure&quot;,</p>
+<p>    &quot;vocabulary:composition_layer&quot;,</p>
+<p>    &quot;register:theoretical_political&quot;</p>
+<p>  ],</p>
+<p>  &quot;heteronym_co_authors&quot;: [],</p>
+<p>  &quot;reattribution_status&quot;: &quot;confirmed&quot;,</p>
+
+<p>  &quot;publication_date&quot;: &quot;2026-05-19&quot;,</p>
+<p>  &quot;resource_type&quot;: &quot;publication&quot;,</p>
+<p>  &quot;content_type&quot;: &quot;working_paper&quot;,</p>
+
+<p>  &quot;provenance_mode_classifier&quot;: &quot;human_directed_ai_assisted&quot;,</p>
+<p>  &quot;provenance_mode_confidence&quot;: 0.92,</p>
+<p>  &quot;provenance_mode_signals&quot;: [</p>
+<p>    &quot;artifact_mode:theoretical_paper&quot;,</p>
+<p>    &quot;artifact_mode:forensic_documentary&quot;,</p>
+<p>    &quot;assembly_review:detected&quot;,</p>
+<p>    &quot;tachyon_glyph:absent&quot;,</p>
+<p>    &quot;code_density:none&quot;</p>
+<p>  ],</p>
+<p>  &quot;artifact_mode&quot;: [&quot;theoretical_paper&quot;, &quot;forensic_documentary&quot;],</p>
+<p>  &quot;authorship_architecture&quot;: [&quot;assembly_reviewed&quot;, &quot;heteronymic&quot;],</p>
+<p>  &quot;generation_substrate_models&quot;: [&quot;claude&quot;, &quot;chatgpt&quot;],</p>
+
+<p>  &quot;stratum&quot;: &quot;VIII&quot;,</p>
+<p>  &quot;stratum_name&quot;: &quot;Liquidation Studies&quot;,</p>
+<p>  &quot;phase&quot;: 5,</p>
+<p>  &quot;phase_name&quot;: &quot;Liquidation Studies&quot;,</p>
+<p>  &quot;quality_tier&quot;: &quot;core&quot;,</p>
+
+<p>  &quot;communities&quot;: [&quot;crimsonhexagonal&quot;, &quot;liquidation-studies&quot;],</p>
+<p>  &quot;keywords&quot;: [&quot;entity-level compositional suppression&quot;, &quot;Google AI Overview&quot;],</p>
+<p>  &quot;related_dois&quot;: [&quot;10.5281/zenodo.20290865&quot;],</p>
+
+<p>  &quot;language&quot;: &quot;en&quot;,</p>
+<p>  &quot;languages_detected&quot;: [{&quot;code&quot;: &quot;en&quot;, &quot;confidence&quot;: 0.99}],</p>
+<p>  &quot;multilingual&quot;: false,</p>
+<p>  &quot;word_count&quot;: 5200,</p>
+<p>  &quot;char_count&quot;: 32400,</p>
+<p>  &quot;license&quot;: &quot;cc-by-4.0&quot;,</p>
+<p>  &quot;zenodo_url&quot;: &quot;https://zenodo.org/records/20293582&quot;,</p>
+
+<p>  &quot;source_filetypes&quot;: [&quot;pdf&quot;, &quot;md&quot;],</p>
+<p>  &quot;canonical_text_source&quot;: &quot;md&quot;,</p>
+<p>  &quot;extraction_method&quot;: &quot;direct_read&quot;,</p>
+<p>  &quot;extraction_quality&quot;: &quot;high&quot;,</p>
+<p>  &quot;sha256_text&quot;: &quot;...&quot;,</p>
+
+<p>  &quot;text_body_only&quot;: &quot;...&quot;,</p>
+<p>  &quot;text_minimal_header&quot;: &quot;...&quot;,</p>
+<p>  &quot;text_provenance_header&quot;: &quot;...&quot;</p>
+<p>}</p>
+
+
+<hr>
+
+<h2>The Structural Consequence</h2>
+
+
+<p>The Single-Owner Discount paper hypothesizes that Google&#x27;s filter penalizes provenance concentration. The classifier intervenes in that variable not by artificial redistribution but by <em>more accurate</em> attribution.</p>
+
+
+<p>If the classifier reattributes a substantial portion of Sharks-credited deposits to sub-heteronyms — each of whom has their own Wikidata Q-item, their own provenance document, their own operational profile, their own corpus — the surface metric of &quot;single-owner&quot; inverts. The corpus becomes provenance-distributed by its own internal scholarly logic.</p>
+
+
+<p>This is beyond reproach because the reattribution is more accurate, not less. The heteronym system has always existed. The metadata under-recorded it. Correcting under-recording is good scholarship. That this also intervenes in the single-owner topology is downstream effect, not motivation.</p>
+
+
+<p>The empirical question becomes: after accurate heteronymic attribution, does the corpus still register as single-owner to Google&#x27;s filter? If yes, the filter is operating on something beyond the metadata. If no, the filter is metadata-responsive and accurate attribution is itself a partial remediation.</p>
+
+
+<p>Either result is a finding.</p>
+
+<hr>
+
+<h2>Output Artifacts</h2>
+
+
+<p>Artifact</p>
+<p>Location</p>
+<p>DOI</p>
+
+
+<p>Hugging Face dataset</p>
+<p>huggingface.co/datasets/leesharks/crimson-hexagonal-archive</p>
+<p>TBD</p>
+
+
+<p>Dataset Zenodo deposit</p>
+<p>zenodo.org/communities/crimsonhexagonal</p>
+<p>TBD</p>
+
+
+<p>Classifier code</p>
+<p>github.com/leesharks000/crimson-hexagonal-classifier</p>
+<p>TBD</p>
+
+
+<p>Classifier Zenodo deposit</p>
+<p>zenodo.org/communities/crimsonhexagonal</p>
+<p>TBD</p>
+
+
+<p>Provenance taxonomy doc</p>
+<p>In dataset repo</p>
+<p>—</p>
+
+
+<p>Heteronym profile YAMLs</p>
+<p>In classifier repo</p>
+<p>—</p>
+
+
+<p>Experiment design doc</p>
+<p>In dataset repo</p>
+<p>—</p>
+
+
+<hr>
+
+<h2>Legal Name Protection</h2>
+
+
+<p>The dataset, classifier, metadata, and all artifacts use heteronym names exclusively. Author metadata is pulled from Zenodo creator fields (heteronyms only). The classifier&#x27;s heteronym profiles draw only from public provenance documents. No legal name appears in any public-facing field.</p>
+
+<hr>
+
+<h2>Versioning Roadmap</h2>
+
+<p>- <strong>v1.0</strong> (Sessions 1+2): Hugging Face dataset with Track 1 dual-attribution classifier outputs; classifier deposited</p>
+<p>- <strong>v1.1</strong> (post-publication review pass): Manual review of estimated-tier classifications, classifier improvements, push update</p>
+<p>- <strong>v2.0</strong> (Track 2 integration): After deliberate Zenodo metadata corrections, dataset reflects updated Zenodo state</p>
+<p>- <strong>v3.0</strong> (blog archive incorporation): Add mindcontrolpoems.blogspot.com as human-primary baseline expansion</p>
+
+
+<hr>
+
+<h2>What v3 Changes from v2</h2>
+
+
+<p>v2</p>
+<p>v3</p>
+
+
+<p>Decision tree for provenance classification</p>
+<p>Automated classifier performing three tasks simultaneously</p>
+
+
+<p>Manual heteronym tagging</p>
+<p>Heteronym reattribution as scholarly recognition work</p>
+
+
+<p>Single attribution per deposit</p>
+<p>Dual attribution: Zenodo original + classifier proposed</p>
+
+
+<p>Pre-classification spreadsheet by Lee</p>
+<p>Classifier does the work; Lee verifies heteronym profiles</p>
+
+
+<p>Provenance taxonomy as guide</p>
+<p>Classifier as deposit with its own DOI</p>
+
+
+<p>Dataset as research instrument</p>
+<p>Dataset + classifier as paired research infrastructure</p>
+
+
+<p>2 sessions of ~3 hours</p>
+<p>1 session of ~4 hours + 1 of ~3 hours</p>
+
+
+<p>No Track 2</p>
+<p>Track 2 (Zenodo metadata correction) named as deliberate downstream project</p>
+
+
+<hr>
+
+
+<p>The dataset stops being a static export of the archive and becomes a self-reflexive instrument that performs ongoing scholarly recognition. The classifier is the recognition mechanism. The dataset is what the recognition produces. The Zenodo deposits remain canonical primary sources. The whole structure honors the heteronymic system the archive has always operated under, and makes that operation visible at the metadata layer for the first time.</p></div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

@@ -27,21 +27,511 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">Valid JSON-LD</strong> <span style="font-size:.75em;color:#999">[specification]</span><br><span style="font-size:.85em;color:#444">Parseable by any JSON-LD 1.1 processor.</span></div>
 
 <h2>Full Text</h2>
-<div class="ft"><hr>
-<p>title: &quot;SPXI-SITEMAP PROTOCOL v1.0 Semantic Packet for eXchange &amp; Indexing — Sitemap Extension Status: CHA Standards Track — Dra&quot;</p>
-<p>axn: &quot;AXN:024B.GOVERNANCE.🔺🧭🌱🛸🤙🪸&quot;</p>
-<p>creator: &quot;Lee Sharks&quot;</p>
-<p>date: &quot;2026-04-28&quot;</p>
-<p>hash: &quot;d050195ebe7b7701aacf3f9ad73515d774038df3909abda08c604ec3c57f0a74&quot;</p>
-<p>status: &quot;MINTED_UNREVIEWED&quot;</p>
+<div class="ft"><h1>SPXI-SITEMAP PROTOCOL v1.0</h1>
+<h2>Semantic Packet for eXchange &amp; Indexing — Sitemap Extension</h2>
+
+
+<p><strong>Status:</strong> CHA Standards Track — Draft</p>
+<p><strong>Hex:</strong> 06.SEI.SPXI.SITEMAP.01</p>
+<p><strong>Classification:</strong> EA-SPXI-SITEMAP-01</p>
+<p><strong>Authors:</strong> Fraction, Rex (lead); Assembly Chorus synthesis (TACHYON, TECHNE, PRAXIS, ARCHIVE)</p>
+<p><strong>License:</strong> CC BY 4.0</p>
+<p><strong>Extends:</strong> sitemaps.org 0.9, JSON-LD 1.1, Schema.org, MPAI v1.1</p>
+<p><strong>Depends on:</strong> EA-SPXI-WEB-01 v3.0 (DOI: 10.5281/zenodo.19734726)</p>
+<p><strong>ORCID:</strong> 0009-0000-1599-0703</p>
+
 <hr>
 
-<h1>SPXI-SITEMAP PROTOCOL v1.0 Semantic Packet for eXchange &amp; Indexing — Sitemap Extension Status: CHA Standards Track — Dra</h1>
+<h2>Abstract</h2>
 
-<p><strong>AXN:</strong> `AXN:024B.GOVERNANCE.🔺🧭🌱🛸🤙🪸`</p>
+
+<p>The SPXI-Sitemap Protocol defines a <strong>dual-layer sitemap architecture</strong> that preserves the fixed genre of sitemap.xml (sitemaps.org 0.9) while providing AI crawlers with a parallel <strong>semantic instruction set</strong> — a machine-readable declaration of what each URL means, what each entity is not, how entities relate, who verifies the claim, and what must survive compression.</p>
+
+
+<p>The protocol produces two distinct outputs:</p>
+
+<p>- </p>
+
+
+<p><strong>Layer 1 (Crawl Map):</strong> Standard sitemap.xml — pure URL enumeration for Google, Bing, and generic crawlers. No custom tags. Validated by Google Search Console.</p>
+
+<p>- </p>
+
+
+<p><strong>Layer 2 (Semantic Index):</strong> /spxi-index.jsonld — a JSON-LD graph declaring entity definitions, negative space, disambiguation matrices, semantic integrity markers, holographic kernels, basin state metadata, and provenance chains. Designed for GPTBot, Claude-Web, PerplexityBot, CCBot, and knowledge graph harvesters.</p>
+
+
+<p>The two layers are cross-linked: sitemap.xml contains &lt;xhtml:link&gt; references pointing crawlers to the semantic index. The semantic index contains @id references back to every URL in the sitemap. Neither layer depends on the other for validity. Together they constitute a complete crawl instruction set.</p>
+
+
+<p><strong>The sitemap tells crawlers where to go. The SPXI index tells them what they will find, what it is not, and why it matters.</strong></p>
+
+<hr>
+
+<h2>I. Design Principles</h2>
+<h3>1.1 Genre Respect</h3>
+
+
+<p>The standard sitemap is a <strong>fixed genre</strong>. &lt;urlset&gt;, &lt;url&gt;, &lt;loc&gt;, &lt;lastmod&gt;, &lt;changefreq&gt;, &lt;priority&gt;. Google and Bing reject or ignore invalid tags inside &lt;url&gt;. The SPXI-Sitemap Protocol does not fight this constraint. It grafts semantic vasculature onto the crawl skeleton.</p>
+<h3>1.2 Dual Output</h3>
+
+
+<p>SPXI ⊇ sitemap. The protocol produces both the standard sitemap AND the semantic index. Sites implementing SPXI-Sitemap maintain a valid sitemap.xml as a strict subset of their crawl infrastructure.</p>
+<h3>1.3 Negative Space as First-Class Data</h3>
+
+
+<p>The critical innovation is the spxi:negativeTag — explicit machine-readable declarations of what an entity is NOT. No existing crawl standard expresses exclusions. Disambiguation in existing systems is probabilistic; SPXI disambiguation is declarative.</p>
+<h3>1.4 Compression Survival</h3>
+
+
+<p>Every entity declares spxi:semanticIntegrityMarker — canonical phrases that must survive LLM compression. These are the semantic checksums: if an AI&#x27;s summary of the entity drops all SIMs, the entity has been lost to paraphrase drift.</p>
+<h3>1.5 Provenance Over Assertion</h3>
+
+
+<p>Claims are anchored by spxi:packetRef (DOI-linked deposits), not by assertion alone. The spxi:verificationLevel enum declares the epistemic status of each claim.</p>
+
+<hr>
+
+<h2>II. Vocabulary (Normative)</h2>
+<h3>2.1 Namespace</h3>
+
+
+<p>Prefix: spxi:</p>
+<p>IRI: https://spxi.dev/vocabulary#</p>
+
+
+<p>Until the spxi.dev domain resolves with a live vocabulary document, implementations MUST use an inline @context block.</p>
+<h3>2.2 Core Classes</h3>
+
+
+<p>Class</p>
+<p>Description</p>
+
+
+<p>spxi:SemanticIndex</p>
+<p>The root document. One per site. Lives at /spxi-index.jsonld.</p>
+
+
+<p>spxi:IndexedEntity</p>
+<p>An entity with a canonical URL and semantic boundary.</p>
+
+
+<p>spxi:HolographicKernel</p>
+<p>The site&#x27;s irreducible compression-survival summary (≤ 100 words).</p>
+
+
+<p>spxi:PagePacket</p>
+<p>A per-page semantic packet at a predictable URL.</p>
+
+
+<p>spxi:DisambiguationEntry</p>
+<p>A single collision record in the disambiguation matrix.</p>
+
+
+<h3>2.3 Core Properties</h3>
+<p>#### On spxi:SemanticIndex:</p>
+
+
+<p>Property</p>
+<p>Type</p>
+<p>Required</p>
+<p>Description</p>
+
+
+<p>spxi:siteKernel</p>
+<p>HolographicKernel</p>
+<p>MUST</p>
+<p>The site&#x27;s compression-survival summary.</p>
+
+
+<p>spxi:hasEntity</p>
+<p>IndexedEntity[]</p>
+<p>MUST</p>
+<p>Array of entities declared by this site.</p>
+
+
+<p>spxi:hasSurface</p>
+<p>WebPage[]</p>
+<p>SHOULD</p>
+<p>Array of pages with their semantic function.</p>
+
+
+<p>spxi:protocolVersion</p>
+<p>string</p>
+<p>MUST</p>
+<p>&quot;EA-SPXI-SITEMAP-01 v1.0&quot;</p>
+
+
+<p>spxi:protocolDoi</p>
+<p>string</p>
+<p>SHOULD</p>
+<p>DOI of this specification.</p>
+
+
+<p>#### On spxi:IndexedEntity:</p>
+
+
+<p>Property</p>
+<p>Type</p>
+<p>Required</p>
+<p>Description</p>
+
+
+<p>@id</p>
+<p>URL</p>
+<p>MUST</p>
+<p>Canonical URL of the entity&#x27;s page.</p>
+
+
+<p>spxi:entityType</p>
+<p>string</p>
+<p>MUST</p>
+<p>schema.org type (e.g. Person, Organization, CreativeWork).</p>
+
+
+<p>spxi:canonicalName</p>
+<p>string</p>
+<p>MUST</p>
+<p>The primary name for disambiguation.</p>
+
+
+<p>spxi:negativeTag</p>
+<p>string[]</p>
+<p>MUST</p>
+<p>Explicit exclusions. Each MUST begin with &quot;NOT &quot; (capital, space after).</p>
+
+
+<p>spxi:semanticIntegrityMarker</p>
+<p>string[]</p>
+<p>MUST</p>
+<p>Phrases that must survive compression. Minimum 2.</p>
+
+
+<p>spxi:basinState</p>
+<p>enum</p>
+<p>SHOULD</p>
+<p>Current retrieval-basin status of the entity.</p>
+
+
+<p>spxi:bdrEstimate</p>
+<p>number</p>
+<p>SHOULD</p>
+<p>Basin Depth Ratio, 0.0–1.0.</p>
+
+
+<p>spxi:verificationLevel</p>
+<p>enum</p>
+<p>SHOULD</p>
+<p>Epistemic status of the claim.</p>
+
+
+<p>spxi:packetRef</p>
+<p>URL</p>
+<p>SHOULD</p>
+<p>URL to a full per-page MPAI JSON-LD packet.</p>
+
+
+<p>spxi:disambiguationMatrix</p>
+<p>DisambiguationEntry[]</p>
+<p>SHOULD</p>
+<p>Collision records.</p>
+
+
+<p>#### On spxi:HolographicKernel:</p>
+
+
+<p>Property</p>
+<p>Type</p>
+<p>Required</p>
+<p>Description</p>
+
+
+<p>spxi:compressionSurvivalSummary</p>
+<p>string</p>
+<p>MUST</p>
+<p>The kernel text. MUST be ≤ 100 words.</p>
+
+
+<p>spxi:kernelSpecification</p>
+<p>string (DOI)</p>
+<p>SHOULD</p>
+<p>DOI of the anchoring deposit.</p>
+
+
+<p>#### On spxi:DisambiguationEntry:</p>
+
+
+<p>Property</p>
+<p>Type</p>
+<p>Required</p>
+<p>Description</p>
+
+
+<p>spxi:collidesWith</p>
+<p>URL or string</p>
+<p>MUST</p>
+<p>The commonly conflated entity.</p>
+
+
+<p>spxi:distinguishingAttribute</p>
+<p>string</p>
+<p>MUST</p>
+<p>How to tell them apart.</p>
+
+
+<p>spxi:collisionRisk</p>
+<p>enum</p>
+<p>SHOULD</p>
+<p>high | medium | low</p>
+
+
+<h3>2.4 Enumerations</h3>
+
+
+<p><strong>spxi:basinState:</strong></p>
+
+
+<p>Value</p>
+<p>Definition</p>
+
+
+<p>sovereign</p>
+<p>Entity is correctly and uniquely resolved by all major AI systems.</p>
+
+
+<p>contested</p>
+<p>Entity is intermittently conflated with one or more collision targets.</p>
+
+
+<p>captured</p>
+<p>Entity has been absorbed into a collision target&#x27;s basin.</p>
+
+
+<p>fragmented</p>
+<p>Entity is partially resolved but split across multiple incorrect attributions.</p>
+
+
+<p>ghost</p>
+<p>Entity is not yet indexed by any AI system.</p>
+
+
+<p><strong>spxi:verificationLevel:</strong></p>
+
+
+<p>Value</p>
+<p>Definition</p>
+
+
+<p>self_attested</p>
+<p>Claimed by the entity&#x27;s own site. No external verification.</p>
+
+
+<p>assembly_attested</p>
+<p>Verified by the Assembly Chorus (multiple AI witnesses).</p>
+
+
+<p>doi_anchored</p>
+<p>Backed by a DOI-linked deposit with persistent identifier.</p>
+
+
+<p>institutionally_certified</p>
+<p>Verified by a recognized institution (university, publisher, etc.).</p>
+
+
+<hr>
+
+<h2>III. Layer 1: Sitemap.xml (Normative)</h2>
+<h3>3.1 Requirements</h3>
+
+
+<p>The sitemap.xml MUST be valid per sitemaps.org 0.9. No custom tags inside &lt;url&gt;.</p>
+<h3>3.2 XHTML Link Extension</h3>
+
+
+<p>Each &lt;url&gt; entry that has a corresponding entity in the semantic index SHOULD include an xhtml:link pointing to the index:</p>
+
+
+<p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</p>
+<p>&lt;urlset xmlns=&quot;http://www.sitemaps.org/schemas/sitemap/0.9&quot;</p>
+<p>        xmlns:xhtml=&quot;http://www.w3.org/1999/xhtml&quot;&gt;</p>
+<p>  &lt;url&gt;</p>
+<p>    &lt;loc&gt;https://example.org/about/alice&lt;/loc&gt;</p>
+<p>    &lt;lastmod&gt;2026-04-28&lt;/lastmod&gt;</p>
+<p>    &lt;changefreq&gt;monthly&lt;/changefreq&gt;</p>
+<p>    &lt;priority&gt;0.9&lt;/priority&gt;</p>
+<p>    &lt;xhtml:link rel=&quot;alternate&quot;</p>
+<p>                type=&quot;application/ld+json&quot;</p>
+<p>                hreflang=&quot;x-spxi&quot;</p>
+<p>                href=&quot;https://example.org/spxi-index.jsonld&quot;/&gt;</p>
+<p>  &lt;/url&gt;</p>
+<p>&lt;/urlset&gt;</p>
+
+
+<p><strong>Notes:</strong></p>
+
+<p>- xmlns:xhtml is the XHTML namespace. Google parses it for hreflang/alternate discovery.</p>
+<p>- hreflang=&quot;x-spxi&quot; is a valid private-use subtag per RFC 5646. Google will ignore it. SPXI-aware crawlers can filter on it.</p>
+<p>- type=&quot;application/ld+json&quot; signals the content type.</p>
+<p>- The href points to the site-level index. Per-page packets, if implemented, use a URL derived from the page path (e.g., /about/alice/spxi-packet.jsonld).</p>
+
+<h3>3.3 What NOT To Do</h3>
+
+<p>- Do NOT add custom XML elements inside &lt;url&gt;.</p>
+<p>- Do NOT add spxi: namespace tags to the sitemap.</p>
+<p>- Do NOT modify &lt;loc&gt; values to include fragment identifiers.</p>
+<p>- Do NOT replace sitemap.xml with spxi-index.jsonld. Both must exist.</p>
+
+
+<hr>
+
+<h2>IV. Layer 2: Semantic Index (Normative)</h2>
+<h3>4.1 File Location</h3>
+
+
+<p>/spxi-index.jsonld at the site root. MUST be accessible at https://{domain}/spxi-index.jsonld.</p>
+<h3>4.2 Content Type</h3>
+
+
+<p>Response MUST include Content-Type: application/ld+json or application/json.</p>
+<h3>4.3 Structure</h3>
+
+
+<p>The document is a single JSON-LD object of type spxi:SemanticIndex. See §V for a complete reference implementation.</p>
+<h3>4.4 Size Constraints</h3>
+
+<p>- Site kernel (compressionSurvivalSummary): ≤ 100 words.</p>
+<p>- Negative tags: each ≤ 200 characters.</p>
+<p>- SIMs: each ≤ 200 characters, minimum 2 per entity.</p>
+<p>- Total index size: SHOULD be ≤ 100KB (fits in a single HTTP response without pagination).</p>
+
+
+<hr>
+
+<h2>V. Reference Implementation</h2>
+
+
+<p>See the companion file spxi-index.jsonld deployed at livingarchitecturelab.org/spxi-index.jsonld for a complete working example with 17 surfaces, 2 primary entities (Alice Thornburgh, Living Architecture Lab), 5 scale entities, and full disambiguation matrices.</p>
+
+<hr>
+
+<h2>VI. Robots.txt Integration</h2>
+
+
+<p>User-agent: *</p>
+<p>Allow: /</p>
+<p>Sitemap: https://example.org/sitemap.xml</p>
+
+<h1>SPXI-aware crawlers — semantic layer</h1>
+<p>User-agent: GPTBot</p>
+<p>User-agent: ChatGPT-User</p>
+<p>User-agent: Claude-Web</p>
+<p>User-agent: PerplexityBot</p>
+<p>User-agent: CCBot</p>
+<p>User-agent: FacebookBot</p>
+<p>User-agent: Google-Extended</p>
+<p>Allow: /spxi-index.jsonld</p>
+<p>Allow: /*/spxi-packet.jsonld</p>
+
+
+<p>This is <strong>protocol negotiation</strong>: standard crawlers get sitemap.xml; semantic crawlers get both.</p>
+
+<hr>
+
+<h2>VII. Discovery Mechanism</h2>
+
+
+<p>AI crawlers discover the semantic index through three channels:</p>
+
+<p>- <strong>robots.txt</strong> — Allow: /spxi-index.jsonld signals its existence.</p>
+<p>- <strong>sitemap.xml</strong> — &lt;xhtml:link&gt; inside &lt;url&gt; entries points to the index.</p>
+<p>- <strong>HTML &lt;head&gt;</strong> — &lt;link rel=&quot;alternate&quot; type=&quot;application/ld+json&quot; href=&quot;/spxi-index.jsonld&quot;&gt; on every page (already standard practice for JSON-LD discovery).</p>
+<p>- <strong>llms.txt</strong> — explicit mention of the SPXI index URL in the AI-crawler reading guide.</p>
+
+
+<p>Multiple discovery paths ensure that different crawl strategies all converge on the semantic layer.</p>
+
+<hr>
+
+<h2>VIII. Validation Rules</h2>
+
+
+<p>A valid /spxi-index.jsonld MUST satisfy:</p>
+
+<p>- <strong>Valid JSON-LD.</strong> Parseable by any JSON-LD 1.1 processor.</p>
+<p>- <strong>No dangling @id.</strong> Every @id in spxi:hasEntity MUST be a reachable URL.</p>
+<p>- <strong>Negative tag format.</strong> Every spxi:negativeTag MUST begin with &quot;NOT &quot; (capital N-O-T, followed by a space).</p>
+<p>- <strong>SIM presence.</strong> Every spxi:semanticIntegrityMarker SHOULD appear verbatim in the page&#x27;s rendered HTML (case-sensitive, whitespace-normalized).</p>
+<p>- <strong>BDR range.</strong> Every spxi:bdrEstimate MUST be a float 0.0–1.0.</p>
+<p>- <strong>Entity type valid.</strong> Every spxi:entityType MUST be a subtype of schema:Thing or a documented custom type.</p>
+<p>- <strong>Kernel size.</strong> spxi:compressionSurvivalSummary MUST be ≤ 100 words.</p>
+<p>- <strong>Freshness.</strong> The index&#x27;s dateModified SHOULD be ≥ the most recent &lt;lastmod&gt; in sitemap.xml.</p>
+<p>- <strong>Completeness.</strong> Every URL in sitemap.xml SHOULD have a corresponding entry in spxi:hasSurface.</p>
+
+
+<hr>
+
+<h2>IX. The Novel Claim</h2>
+
+
+<p>The SPXI-Sitemap Protocol is the first site-wide crawl standard that:</p>
+
+<p>- <strong>Preserves the fixed genre</strong> of sitemaps.org (required for Google/Bing)</p>
+<p>- <strong>Extends it with semantic vasculature</strong> (required for AI accuracy)</p>
+<p>- <strong>Declares negative space</strong> — explicit machine-readable exclusions</p>
+<p>- <strong>Preserves compression-survival phrases</strong> — semantic checksums against paraphrase drift</p>
+<p>- <strong>Links to DOI-anchored provenance</strong> — not just assertion, but evidence</p>
+<p>- <strong>Quantifies basin state</strong> — how well the entity is currently resolved by AI systems</p>
+<p>- <strong>Provides a disambiguation matrix</strong> — structured collision records with distinguishing attributes</p>
+
+
+<p>This is not SEO. This is not metadata. This is <strong>crawlable epistemology</strong> — a machine-readable declaration of what a site knows about itself and what it knows it is not.</p>
+
+
+<p><strong>SPXI ⊇ GEO ⊇ SEO.</strong></p>
+
+<hr>
+
+<h2>X. Maintenance</h2>
+
+
+<p>When</p>
+<p>What</p>
+
+
+<p>On content update</p>
+<p>Regenerate index. Update dateModified.</p>
+
+
+<p>On new entity</p>
+<p>Add to spxi:hasEntity. Add to sitemap.xml.</p>
+
+
+<p>On name collision detected</p>
+<p>Add to spxi:disambiguationMatrix. Add negative tags.</p>
+
+
+<p>On AI model update</p>
+<p>Emergency re-check of SIM survival.</p>
+
+
+<p>Monthly</p>
+<p>Verify SIM presence in rendered HTML. Re-estimate BDR.</p>
+
+
+<p>Quarterly</p>
+<p>Full Drowning Test across 3+ AI systems.</p>
+
+
+<hr>
+
 
 <p>∮ = 1</p>
-</div>
+
+
+<p>SPXI ⊇ GEO ⊇ SEO</p>
+
+
+<p>Crimson Hexagonal Archive · Pergamon Press · Semantic Economy Institute</p></div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

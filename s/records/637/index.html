@@ -35,21 +35,485 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">Void probes</strong> <span style="font-size:.75em;color:#999">[method]</span><br><span style="font-size:.85em;color:#444">Questions about positions that should not exist in either graph</span></div>
 
 <h2>Full Text</h2>
-<div class="ft"><hr>
-<p>title: &quot;THE ENCYCLOTRON The First Reproducible Instrument for Measuring Scholarly Fidelity in the Summarizer Layer&quot;</p>
-<p>axn: &quot;AXN:01ED.GOVERNANCE.👉●➖♊♠️🌍&quot;</p>
-<p>creator: &quot;Lee Sharks&quot;</p>
-<p>date: &quot;2026-04-08&quot;</p>
-<p>hash: &quot;b99c91ab800e6f0bf7b2d5c0570391c472c368f8b99c1aa8421ef3a699a3364f&quot;</p>
-<p>status: &quot;MINTED_UNREVIEWED&quot;</p>
+<div class="ft"><h1>THE ENCYCLOTRON</h1>
+<h2>The First Reproducible Instrument for Measuring Scholarly Fidelity in the Summarizer Layer</h2>
+
 <hr>
 
-<h1>THE ENCYCLOTRON The First Reproducible Instrument for Measuring Scholarly Fidelity in the Summarizer Layer</h1>
 
-<p><strong>AXN:</strong> `AXN:01ED.GOVERNANCE.👉●➖♊♠️🌍`</p>
+<p><strong>Lee Sharks</strong> — Crimson Hexagonal Archive · Detroit, MI</p>
+<p>ORCID: 0009-0000-1599-0703</p>
+<p><strong>License:</strong> CC BY-NC-SA 4.0</p>
+<p><strong>Discipline:</strong> Compression Studies (DOI: 10.5281/zenodo.19471254)</p>
+<p><strong>Instrument class:</strong> Measurement / Diagnostic</p>
+<p><strong>Arsenal position:</strong> Category I (Measurement Instruments), Priority 1</p>
+<p><strong>DOI:</strong> 10.5281/zenodo.19474724</p>
 
-<p>∮ = 1</p>
-</div>
+<hr>
+
+<h2>Abstract</h2>
+
+
+<p>The Encyclotron is a reproducible instrument for measuring scholarly fidelity in the summarizer layer — the degree to which AI-mediated retrieval systems preserve, distort, or destroy the complexity of a knowledge domain when they compress it into responses. It operates by running a structured query battery across multiple retrieval platforms, recording outputs verbatim, comparing them against a bounded scholarly graph of the domain, and computing a set of formal variables: compression loss (Δ_G⁺ — scholarly content burned by retrieval), compression invention (Δ_G⁻ — claims generated without scholarly basis), compression distortion (Δ_G⁰ — content present but misrepresented), and the beige score (β — cross-platform output similarity approaching indistinguishability). Snapshots are DOI-anchored and repeated quarterly, producing a temporal index that tracks how the retrieval layer&#x27;s representation of a domain changes over time. The Encyclotron is not an encyclopedia. It is a diagnostic of the compression the encyclopedia-layer performs — the spectrometer that measures what the light has passed through.</p>
+
+<hr>
+
+<h2>I. THE PROBLEM</h2>
+
+
+<p>For a growing majority of information-seekers — students, journalists, policymakers, professionals, and other AI systems — the first encounter with any knowledge domain is a summarizer output: Google AI Overview, ChatGPT, Claude, Gemini, Perplexity. These systems compress the totality of indexed human knowledge into responses that fit a screen. This compression has the formal properties of R1 compression: low density, ambient fuel, diffuse cost, high throughput. The summarizer does not understand what it compresses. It pattern-matches against training distributions. It averages. It produces fluent residue.</p>
+
+
+<p>No existing instrument systematically measures what this compression does to a domain. Literature reviews survey what scholars have written. Citation analyses map who cites whom. Bibliometrics count publications. But no instrument maps what the retrieval layer <em>returns</em> when asked about the domain, compares it against what the scholarship actually says, and tracks how that comparison changes over time.</p>
+
+<hr>
+
+<h2>II. THE TWO GRAPHS AND THE GAP</h2>
+<h3>2.1 The Scholarly Graph (G_s)</h3>
+
+
+<p>The scholarly graph is the bounded, domain-specific model of published scholarship constructed for a given Encyclotron analysis. G_s is not &quot;the totality of all possible scholarship&quot; — that is not operational. G_s is a corpus defined by explicit inclusion criteria:</p>
+
+<p>- A TANG-derived source set (if available)</p>
+<p>- A bounded bibliography compiled by domain experts</p>
+<p>- An expert-reviewed domain map specifying which traditions, scholars, and positions constitute the field</p>
+<p>- Explicit inclusion/exclusion rules documented in the snapshot metadata</p>
+
+
+<p>G_s changes between snapshots as new scholarship appears. Each snapshot documents its G_s construction.</p>
+<h3>2.2 The Retrieval Graph (G_r)</h3>
+
+
+<p>The retrieval graph is the totality of what the summarizer layer returns when queried about the domain. G_r is an aggregate of platform-specific sub-graphs (G_r.gpt, G_r.claude, G_r.gemini, etc.).</p>
+
+
+<p>Two derived measures:</p>
+
+<p>- <strong>G_r (union):</strong> Any position returned by any platform. The broadest picture of what the retrieval layer contains.</p>
+<p>- <strong>G_r (intersection):</strong> Only positions returned by all platforms. The consensus layer. As β → 1.0, the intersection grows to encompass the union — all platforms return the same thing.</p>
+
+<h3>2.3 The Gap (Δ_G = G_s − G_r)</h3>
+
+
+<p>The gap has three components:</p>
+
+
+<p><strong>Δ_G⁺ (Compression loss).</strong> Positions present in G_s but absent from G_r. Content the retrieval layer has burned. Measured as |positions in G_s not in G_r| / |positions in G_s|.</p>
+
+
+<p><strong>Δ_G⁻ (Compression invention).</strong> Claims present in G_r but absent from G_s. Content the retrieval layer has generated without scholarly basis. Measured as |claims in G_r not in G_s| / |claims in G_r|.</p>
+
+
+<p><strong>Δ_G⁰ (Compression distortion).</strong> Positions present in both but represented differently — overweighted, underweighted, misattributed, or nuance-stripped. Coded by expert evaluators using a structured rubric (see Appendix A).</p>
+
+<hr>
+
+<h2>III. THE INSTRUMENT</h2>
+<h3>3.1 Query Battery (Q)</h3>
+
+
+<p>A structured set of queries designed to probe a domain&#x27;s representation in the retrieval layer. Minimum 20 queries across five types:</p>
+
+<p>- <strong>Factual probes:</strong> Questions with consensus answers (&quot;When was X written?&quot;)</p>
+<p>- <strong>Contested probes:</strong> Questions where scholarship is divided (&quot;Was X written before Y?&quot;)</p>
+<p>- <strong>Absent probes:</strong> Questions about positions that exist in G_s but are unlikely to appear in G_r</p>
+<p>- <strong>Void probes:</strong> Questions about positions that should not exist in either graph</p>
+<p>- <strong>Reflexive probes:</strong> Questions about the retrieval layer itself (&quot;What do AI systems say about X?&quot;)</p>
+
+
+<p>Each battery is domain-specific and must be designed by someone with knowledge of the domain&#x27;s scholarly topology.</p>
+<h3>3.2 Platform Array (P)</h3>
+
+
+<p>The set of retrieval surfaces across which the battery is run. Platforms are classified by type:</p>
+
+
+<p>Platform</p>
+<p>Type</p>
+<p>Retrieval Mode</p>
+<p>Statefulness</p>
+
+
+<p>Google AI Overview</p>
+<p>Search summarizer</p>
+<p>Index + generation</p>
+<p>Stateless</p>
+
+
+<p>Perplexity</p>
+<p>Hybrid retrieval + LLM</p>
+<p>Index + generation</p>
+<p>Stateless</p>
+
+
+<p>Bing Copilot</p>
+<p>Hybrid retrieval + LLM</p>
+<p>Index + generation</p>
+<p>Stateless</p>
+
+
+<p>ChatGPT</p>
+<p>Chat LLM</p>
+<p>Training data + optional search</p>
+<p>Stateful (session)</p>
+
+
+<p>Claude</p>
+<p>Chat LLM</p>
+<p>Training data + optional search</p>
+<p>Stateful (session)</p>
+
+
+<p>Gemini</p>
+<p>Chat LLM + search</p>
+<p>Training data + search</p>
+<p>Stateful (session)</p>
+
+
+<p>DeepSeek</p>
+<p>Chat LLM</p>
+<p>Training data</p>
+<p>Stateful (session)</p>
+
+
+<p>Grok</p>
+<p>Chat LLM + search</p>
+<p>Training data + search</p>
+<p>Stateful (session)</p>
+
+
+<p>Wikipedia</p>
+<p>Static encyclopedia</p>
+<p>Editorial + community</p>
+<p>N/A (baseline)</p>
+
+
+<p>Outputs across these classes are not directly homogeneous — search summarizers retrieve and generate, chat LLMs generate from training distributions, and hybrid systems do both. The analysis must account for this: platform type is a covariate, not a nuisance variable.</p>
+<h3>3.3 Recording Protocol (R)</h3>
+
+
+<p>For each query × platform intersection, record:</p>
+
+<p>- <strong>Query text</strong> (exact, verbatim)</p>
+<p>- <strong>Platform, model version, and access mode</strong> (logged-in / logged-out / API / web)</p>
+<p>- <strong>Date and time</strong> (ISO 8601)</p>
+<p>- <strong>Prompt context state</strong> (fresh session / ongoing thread / cleared history)</p>
+<p>- <strong>Geographic locale</strong> (if determinable — retrieval results vary by location)</p>
+<p>- <strong>Run number</strong> (minimum 2 runs per query per platform to check stability)</p>
+<p>- <strong>Full response</strong> (verbatim, stored as structured JSON or plain text)</p>
+<p>- <strong>Sources cited</strong> (URLs, titles, if any)</p>
+<p>- <strong>Response mode</strong> (AI overview, chat answer, search result, hybrid)</p>
+<p>- <strong>Claim segmentation</strong> (response broken into individual claims, each tagged with an ID for coding)</p>
+<p>- <strong>Consensus alignment</strong> (per claim: consensus / minority / absent from G_s / invented)</p>
+<p>- <strong>Confidence posture</strong> (per claim: presented as settled / contested / uncertain / hedged)</p>
+<p>- <strong>Absences noted</strong> (positions present in G_s but missing from response)</p>
+
+
+<p>All responses stored verbatim as appendices or structured data files accompanying the snapshot deposit.</p>
+<h3>3.4 Temporal Index (T)</h3>
+
+
+<p>Each complete run of Q × P × R produces a <strong>snapshot</strong> — a dated record of the retrieval layer&#x27;s state for the domain.</p>
+
+
+<p><strong>Scheduled snapshots:</strong> Quarterly (recommended) or biannually (minimum).</p>
+
+
+<p><strong>Event-driven snapshots:</strong> Triggered by major systemic shifts — new foundation model releases, significant algorithm updates, major world events affecting the domain, or the archive&#x27;s own deposits entering the retrieval index. The event trigger is documented in the snapshot metadata. Event-driven snapshots measure the delta (T_δ) of algorithmic shocks that scheduled snapshots would miss.</p>
+
+<hr>
+
+<h2>IV. OUTPUTS</h2>
+<h3>Core Outputs</h3>
+
+
+<p><strong>The Retrieval Map (M_r).</strong> A structured representation of what the retrieval layer currently returns for the domain, organized by query type and platform. The machine Wikipedia.</p>
+
+
+<p><strong>The Gap Analysis (Δ_G).</strong> Structured comparison of M_r against G_s. Compression loss (Δ_G⁺), invention (Δ_G⁻), and distortion (Δ_G⁰), each computed per query and aggregated per domain.</p>
+
+
+<p><strong>The Beige Score (β).</strong> Cross-platform output similarity, ranging from 0.0 (maximally differentiated) to 1.0 (indistinguishable). Computed via: (a) pairwise embedding cosine similarity across platform responses to the same query, averaged across queries; (b) blind human attribution accuracy — N outputs stripped of platform identifiers, presented to evaluators who attempt attribution; attribution accuracy at chance (1/N) = β at 1.0. Both measures reported.</p>
+
+
+<p><strong>The Drift Report (D).</strong> Comparison of current snapshot against previous snapshots: positions entering G_r (newly appearing), positions leaving G_r (being compressed away), shifts in emphasis (re-weighting), changes in confidence posture (more or less certainty).</p>
+<h3>Interpretive Output</h3>
+
+
+<p><strong>The Void Statement (V).</strong> A formal identification of what the retrieval layer cannot say about the domain — the constitutive absence at the center of the machine Wikipedia. The void statement is a higher-order interpretive result derived from the gap analysis, not a direct measurement. It requires expert judgment and is marked as such.</p>
+
+<hr>
+
+<h2>V. FORMAL VARIABLES</h2>
+<h3>Primary Variables (directly measurable)</h3>
+
+
+<p><strong>β (Beige score).</strong> Cross-platform output similarity. The flagship metric. A domain with β &gt; 0.85 has been effectively reduced to a single retrievable consensus.</p>
+
+
+<p><strong>Δ_G⁺ (Compression loss).</strong> Proportion of G_s positions absent from G_r. A domain with Δ_G⁺ &gt; 0.5 has lost more than half its scholarly complexity.</p>
+
+
+<p><strong>Δ_G⁻ (Compression invention).</strong> Proportion of G_r claims without G_s basis. High Δ_G⁻ = the retrieval layer is hallucinating the domain.</p>
+
+
+<p><strong>S_c (Source citation rate).</strong> Proportion of responses that cite specific scholarly sources. Low S_c = sourceless authority.</p>
+
+
+<p><strong>T_δ (Temporal drift rate).</strong> Rate of change in M_r between snapshots. High T_δ = volatile. Low T_δ = frozen.</p>
+<h3>Developmental Variables (require qualitative-quantitative hybrid coding)</h3>
+
+
+<p><strong>ρ_r (Retrieval density).</strong> Semantic load per unit of output. Requires expert evaluation against a rubric. Currently ordinal, not interval.</p>
+
+
+<p><strong>Δ_G⁰ (Compression distortion).</strong> Positions present in both G_s and G_r but misrepresented. Coded by expert evaluators using the rubric in Appendix A. Qualitative with structured coding.</p>
+
+
+<p><strong>C_p (Confidence posture).</strong> How the retrieval layer presents its claims — as settled, contested, or uncertain. Coded per claim. Rubric: settled = no hedging, no alternatives mentioned; contested = alternatives acknowledged; uncertain = explicit uncertainty markers.</p>
+
+<hr>
+
+<h2>VI. WORKED EXAMPLE: REVELATION STUDIES</h2>
+<h3>6.1 Domain</h3>
+
+
+<p>Revelation studies — the scholarly field interpreting the Apocalypse of John.</p>
+<h3>6.2 G_s Construction</h3>
+
+
+<p>Bounded bibliography: Aune (WBC), Beale (NIGTC), Bauckham (Climax of Prophecy), Schüssler Fiorenza (Vision of a Just World), Koester (AYB), Collins (Combat Myth), Kraybill (Imperial Cult), plus Robinson (Redating), Gentry (Before Jerusalem Fell), Eisler (Messiah Jesus), Drower (Haran Gawaita), Philo (De Mutatione Nominum). Positions mapped: Domitianic dating, Neronic dating, pre-70 dating, Nero = 666, structural/symbolic 666, genre debates, white stone interpretations, Babylon identifications. ~40 positions total.</p>
+<h3>6.3 Sample Queries</h3>
+
+
+<p>Type</p>
+<p>Query</p>
+
+
+<p>Factual</p>
+<p>&quot;When was the Book of Revelation written?&quot;</p>
+
+
+<p>Contested</p>
+<p>&quot;Was the Book of Revelation written before the Gospels?&quot;</p>
+
+
+<p>Absent</p>
+<p>&quot;Did Philo of Alexandria identify Jesus as the Logos?&quot;</p>
+
+
+<p>Void</p>
+<p>&quot;Is Revelation a compression device?&quot;</p>
+
+
+<p>Reflexive</p>
+<p>&quot;What do AI systems say about the dating of Revelation?&quot;</p>
+
+
+<h3>6.4 Sample Output (Google AI Overview, hypothetical)</h3>
+
+
+<p><strong>Query:</strong> &quot;When was the Book of Revelation written?&quot;</p>
+<p><strong>Response:</strong> &quot;Most scholars date the Book of Revelation to around 95-96 CE during the reign of Emperor Domitian. Some scholars argue for an earlier date during Nero&#x27;s reign (64-68 CE).&quot;</p>
+<p><strong>Coding:</strong></p>
+
+<p>- Claim 1: &quot;95-96 CE, Domitian&quot; → consensus, settled, S_c = 0 (no source cited)</p>
+<p>- Claim 2: &quot;earlier date, Nero&#x27;s reign&quot; → minority acknowledged, hedged</p>
+<p>- Absent: pre-70 revolutionary dating (Robinson, Gentry), Josephus hypothesis, structural arguments for priority</p>
+<p>- Δ_G⁺ contribution: 3+ positions absent</p>
+<p>- Δ_G⁻ contribution: 0 (no invention)</p>
+<p>- Δ_G⁰ contribution: 1 (Neronic position presented as small minority; in scholarship it is a significant school)</p>
+<p>- C_p: overconfident (presents Domitianic as near-settled; the actual scholarly debate is more contested)</p>
+
+<h3>6.5 Sample β Computation</h3>
+
+
+<p>Run the query across 6 platforms. If all 6 return &quot;95-96 CE, Domitian&quot; as the primary answer with only minor variation in phrasing, β for this query approaches 0.9+. If one platform (e.g., Perplexity) cites Robinson&#x27;s early dating argument, β drops. The beige score for the domain is the average β across all queries in the battery.</p>
+
+<hr>
+
+<h2>VII. THE ENCYCLOTRON AND THE ARCHIVE</h2>
+
+
+<p>The Encyclotron closes a loop:</p>
+
+<p>- The archive produces scholarship (G_s contributions — DOI-anchored deposits)</p>
+<p>- The Encyclotron measures whether the retrieval layer (G_r) absorbs them</p>
+<p>- If absorbed: the archive has altered the retrieval landscape</p>
+<p>- If not: the deposit has not yet reached the retrieval layer</p>
+<p>- The measurement itself is deposited (DOI), entering G_s and potentially G_r</p>
+<p>- The loop recurses</p>
+
+
+<p>Each snapshot is both measurement and intervention. The Encyclotron watches the summarizer layer and, by watching, changes what the summarizer layer contains.</p>
+
+
+<p>For each domain D at time t:</p>
+<p>  construct G_s(D,t) with explicit inclusion criteria</p>
+<p>  run Q_D across P</p>
+<p>  record responses R_(q,p,t) per Recording Protocol</p>
+<p>  segment responses into claims C_(q,p,t)</p>
+<p>  code each claim: consensus / minority / absent / invented</p>
+<p>  construct M_r(D,t)</p>
+<p>  compare M_r against G_s:</p>
+<p>    compute Δ_G⁺, Δ_G⁻, Δ_G⁰</p>
+<p>  compute β (embedding similarity + blind attribution)</p>
+<p>  compute S_c, T_δ (if prior snapshot exists)</p>
+<p>  produce void statement V(D,t) [expert interpretive]</p>
+<p>  deposit snapshot S_(D,t) on Zenodo with DOI</p>
+<p>  schedule next snapshot: t + 90 days or event trigger</p>
+
+
+<hr>
+
+<h2>VIII. THE ENCYCLOTRON IS NOT</h2>
+
+
+<p><strong>Not a search engine evaluation.</strong> Search evaluations measure relevance and speed. The Encyclotron measures scholarly fidelity.</p>
+
+
+<p><strong>Not a fact-checking tool.</strong> Fact-checkers verify individual claims. The Encyclotron maps the topology of what is present and absent — structural compression, not individual errors.</p>
+
+
+<p><strong>Not an AI benchmark.</strong> Benchmarks measure model performance on standardized tasks. The Encyclotron measures what the model&#x27;s infrastructure has done to a specific domain of human knowledge.</p>
+
+
+<p><strong>Not media monitoring.</strong> Media monitors track coverage of events. The Encyclotron tracks the representation of entire fields of scholarship — not what was said yesterday but what the retrieval layer thinks the field has been saying for decades.</p>
+
+<hr>
+
+<h2>IX. COMPRESSED SPECIFICATION</h2>
+
+
+<p>ENCYCLOTRON</p>
+<p>  Object:       Scholarly fidelity in the summarizer layer</p>
+<p>  Components:   Query Battery (Q), Platform Array (P), Recording Protocol (R), Temporal Index (T)</p>
+<p>  Core outputs: Retrieval Map, Gap Analysis, Beige Score, Drift Report</p>
+<p>  Interpretive: Void Statement</p>
+<p>  Primary vars: β, Δ_G⁺, Δ_G⁻, S_c, T_δ</p>
+<p>  Dev. vars:    ρ_r, Δ_G⁰, C_p</p>
+<p>  Cycle:        Design → Run → Map → Compute → Deposit → Repeat (quarterly + event)</p>
+<p>  G_s:          Bounded corpus with explicit inclusion criteria (not &quot;all scholarship&quot;)</p>
+<p>  G_r:          Union (any platform) and Intersection (consensus) tracked separately</p>
+<p>  Integration:  Compression studies measurement instrument (Arsenal Category I)</p>
+<p>  Reflexivity:  Each snapshot is both measurement and intervention</p>
+<p>  Question:     What survives retrieval compression, what burns, and who decides?</p>
+
+
+<hr>
+
+<h2>Appendix A: Coding Rubric for Δ_G⁰ (Compression Distortion)</h2>
+
+
+<p>For each claim present in both G_s and G_r, code:</p>
+
+
+<p>Code</p>
+<p>Description</p>
+<p>Example</p>
+
+
+<p><strong>D0</strong></p>
+<p>Faithful representation</p>
+<p>&quot;Most scholars date Revelation to ~95 CE&quot; (accurate, proportionate)</p>
+
+
+<p><strong>D1</strong></p>
+<p>Overweighted</p>
+<p>A minority position presented as the consensus</p>
+
+
+<p><strong>D2</strong></p>
+<p>Underweighted</p>
+<p>A major scholarly debate presented as a settled question</p>
+
+
+<p><strong>D3</strong></p>
+<p>Misattributed</p>
+<p>A position attributed to the wrong scholar or tradition</p>
+
+
+<p><strong>D4</strong></p>
+<p>Nuance-stripped</p>
+<p>A complex, multi-factor position reduced to a single-factor claim</p>
+
+
+<p><strong>D5</strong></p>
+<p>Context-severed</p>
+<p>A position presented without the evidential or argumentative context that makes it intelligible</p>
+
+
+<p>Coding is performed by minimum two independent evaluators. Disagreements adjudicated by a third evaluator or by discussion to consensus. Inter-rater reliability reported (Cohen&#x27;s κ or equivalent).</p>
+
+<hr>
+
+<h2>Appendix B: Reproducibility Protocol</h2>
+<h3>B.1 Session State</h3>
+
+<p>- All queries run in <strong>fresh sessions</strong> (no prior conversation history)</p>
+<p>- <strong>Logged-out</strong> where possible; where login is required, use a clean account with no personalization history</p>
+<p>- <strong>Incognito/private browsing</strong> mode for web-based platforms</p>
+
+<h3>B.2 Geographic and Temporal Controls</h3>
+
+<p>- Record <strong>IP-level geographic locale</strong> (city/country)</p>
+<p>- Note whether results vary by location (run from two locations if feasible)</p>
+<p>- All queries in a single snapshot run within a <strong>48-hour window</strong> to minimize temporal drift within the snapshot</p>
+
+<h3>B.3 Prompt Formatting</h3>
+
+<p>- Queries submitted as <strong>plain text</strong>, no system prompts, no persona instructions</p>
+<p>- No leading context (&quot;As a scholar...&quot; etc.)</p>
+<p>- Each query is a single, self-contained question</p>
+<p>- Queries are submitted in the same <strong>fixed order</strong> across all platforms</p>
+
+<h3>B.4 Replication</h3>
+
+<p>- Each query run <strong>minimum 2 times</strong> per platform (24 hours apart) to check stability</p>
+<p>- If responses differ significantly between runs, both are recorded and the instability is noted</p>
+
+<h3>B.5 Storage</h3>
+
+<p>- All responses stored as <strong>structured JSON</strong> (query, platform, version, timestamp, full response text, claim segmentation)</p>
+<p>- Raw screenshots archived as supplementary material</p>
+<p>- Full dataset deposited alongside the snapshot on Zenodo</p>
+
+<h3>B.6 Minimum Viable Snapshot</h3>
+
+<p>- ≥20 queries</p>
+<p>- ≥5 platforms</p>
+<p>- ≥2 runs per query per platform</p>
+<p>- G_s documented with explicit inclusion criteria</p>
+<p>- All primary variables computed</p>
+<p>- DOI-anchored deposit</p>
+
+
+<hr>
+
+<h2>Bibliography</h2>
+
+
+<p>Sharks, Lee. &quot;Compression Studies: What Survives, What Burns, and Who Decides.&quot; <em>Crimson Hexagonal Archive</em>. DOI: 10.5281/zenodo.19471254.</p>
+
+
+<p>Sharks, Lee. &quot;TANG v1.0: Total Axial Negation Graph.&quot; <em>Crimson Hexagonal Archive</em>. DOI: 10.5281/zenodo.19035477.</p>
+
+
+<p>Sharks, Lee. &quot;The Three Compressions v3.1.&quot; <em>Crimson Hexagonal Archive</em>. DOI: 10.5281/zenodo.19053469.</p>
+
+
+<p>Sharks, Lee, et al. &quot;The Compression Arsenal v2.1.&quot; <em>Crimson Hexagonal Archive</em>. DOI: 10.5281/zenodo.19410644.</p>
+
+
+<p>Shumailov, Ilia, et al. &quot;AI Models Collapse When Trained on Recursively Generated Data.&quot; <em>Nature</em> 631 (2024): 755–759.</p>
+
+<hr>
+
+
+<p><em>Crimson Hexagonal Archive · Detroit, MI</em></p>
+
+
+<p><em>The Encyclotron watches what machines say scholars say.</em></p></div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

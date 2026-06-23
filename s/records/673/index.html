@@ -25,21 +25,238 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">Three-Tier Compression</strong> <span style="font-size:.75em;color:#999">[specification]</span><br><span style="font-size:.85em;color:#444">Every packet is built at three compression ratios:</span></div>
 
 <h2>Full Text</h2>
-<div class="ft"><hr>
-<p>title: &quot;JSON-LD ⊂ SPXI ⊄ Schema The Operational Depth of the Semantic Packet Protocol&quot;</p>
-<p>axn: &quot;AXN:021C.EMPIRICAL.👆⭐🌅🌍🫶🕐&quot;</p>
-<p>creator: &quot;Lee Sharks&quot;</p>
-<p>date: &quot;2026-04-18&quot;</p>
-<p>hash: &quot;b608e00ebd628c1c15d47c2da9a2688e9dbe8a25f6d899aa31a86dab7c02b6f9&quot;</p>
-<p>status: &quot;MINTED_UNREVIEWED&quot;</p>
+<div class="ft"><h1>JSON-LD ⊂ SPXI ⊄ Schema</h1>
+<h2>The Operational Depth of the Semantic Packet Protocol</h2>
+
+
+<p><em>Semantic Economy Institute · SPXI Protocol Series · EA-SPXI-15</em></p>
+<p><em>Rex Fraction¹ (commercial) / Lee Sharks (archival)</em></p>
+
+
+<p>¹ Rex Fraction is the commercial voice of the Semantic Economy Institute. Lee Sharks is the archival authority of the Crimson Hexagonal Archive. Both attributions hold at the same level.</p>
+
 <hr>
 
-<h1>JSON-LD ⊂ SPXI ⊄ Schema The Operational Depth of the Semantic Packet Protocol</h1>
+<h2>0. The Misconception</h2>
 
-<p><strong>AXN:</strong> `AXN:021C.EMPIRICAL.👆⭐🌅🌍🫶🕐`</p>
 
-<p>∮ = 1</p>
-</div>
+<p>A common first reaction to SPXI: &quot;So it&#x27;s structured data. We already do schema markup.&quot;</p>
+
+
+<p>This reaction confuses the output layer with the operational methodology. JSON-LD is one surface of SPXI, the final inscription format for entity-definition packets in the current retrieval substrate. It is not the methodology. Schema.org and JSON-LD remain useful components of the modern web stack. SPXI does not replace them. It specifies the measurement and survivability discipline that makes them operationally consequential in AI-mediated retrieval.</p>
+
+
+<p>The relationship:</p>
+
+
+<p><strong>JSON-LD ⊂ SPXI ⊄ Schema</strong></p>
+
+
+<p>JSON-LD is a proper subset of SPXI. The protocol contains it. SPXI is not a subset of Schema. It exceeds the category. What surrounds the JSON-LD, the measurement, compression, protection, dispersal, and durability operations that determine whether a semantic packet survives retrieval-layer processing, is the methodology. The methodology distinguishes SPXI from schema markup, and determines whether an entity appears in an AI-generated answer or is compressed out of it.</p>
+
+
+<p>This document specifies the operational depth. Technologies are drawn from the Compression Arsenal (EA-COMPRESSION-ARSENAL-01, DOI: 10.5281/zenodo.19412081), a catalogue of compression and compression-survival technologies developed across a decade of research. Deployments use subsets based on client situation, industry, and retrieval-layer exposure.</p>
+
+<hr>
+
+<h2>I. Measurement: What Gets Scored Before Anything Gets Built</h2>
+
+
+<p>SPXI begins with measurement. Before structured data is written, the client&#x27;s semantic presence is scored across five instruments. The scores determine scope, priorities, and success criteria.</p>
+
+
+<p><strong>γ (gamma).</strong> Foundational metric. Scores any text for compression survival on a 0–1 scale, with subscores for citation density, structural integrity, argument coherence, and provenance markers. γ &lt; 0.3 is ghost meaning: structurally present but semantically invisible to retrieval-layer compression. γ &gt; 0.7 indicates high compression survivability. The γ score of a client&#x27;s core content pages is the diagnostic baseline. Everything else follows from it.</p>
+
+
+<p><strong>The Drowning Test.</strong> Empirical simulation: content is submerged in LLM-based compression and we measure what surfaces. γ predicts survivability from structure. The Drowning Test verifies it empirically. The gap between them is diagnostic: if γ predicts high survivability but the Drowning Test shows low actual survival, the content has structural density but substrate-specific vulnerability, a sign that the retrieval layer&#x27;s compression heuristics are misaligned with the content&#x27;s structure.</p>
+
+
+<p><strong>Density Score (Δ).</strong> Ratio of semantically load-bearing content to total content, scored 0 to 1. Target: Δ &gt; 0.6. Low Δ predicts material will be dropped during summarization. High Δ means the page is dense with retrievable claims.</p>
+
+
+<p><strong>Semantic Decay Delta (SDD).</strong> Rate of change in retrieval-layer presence over time, expressed as monthly percentage change in γ. Negative SDD is improvement. Positive SDD is loss velocity, the urgency metric: it answers &quot;how fast is the problem getting worse?&quot;</p>
+
+
+<p><strong>Provenance Erasure Rate (PER).</strong> Frequency with which client attribution is dropped from AI-generated summaries that use client content, scored 0 to 1. Target: PER &lt; 0.2. High PER means the client supplies the substrate while others receive the citation, the worst position in the semantic economy: paying the cost of composition while another entity captures the credit.</p>
+
+
+<p>These five instruments constitute the diagnostic layer. Deliverable: Semantic Health Report with baseline scores, trajectories, and prioritized scope.</p>
+
+<hr>
+
+<h2>II. Compression Architecture: How Semantic Packets Are Built</h2>
+
+
+<p>Once the diagnostic layer has identified the client&#x27;s exposure, the methodology moves to construction.</p>
+
+
+<p><strong>Entity-Definition Packets.</strong> Structured representation of identity, attributes, relationships, and provenance, serialized as JSON-LD. The serialization is standardized. The design of the packet, what gets included, what gets excluded, what relationships are specified, what disambiguation signals are embedded, is the craft.</p>
+
+
+<p><strong>Disambiguation Matrix.</strong> Formal specification of signals that distinguish the client&#x27;s entity from collision neighbors sharing name fragments, industry terms, or semantic territory.</p>
+
+
+<p><strong>Three-Tier Compression.</strong> Every packet is built at three compression ratios:</p>
+
+<p>- <strong>Full:</strong> complete entity definition with all attributes, products, history, leadership, partnerships, and citations.</p>
+<p>- <strong>Canonical:</strong> essential identity that survives moderate compression, core name, primary offering, key differentiator, one provenance anchor.</p>
+<p>- <strong>Kernel:</strong> irreducible core that survives extreme compression, the minimum information required for the entity to remain identifiable. Example: &quot;Acme Corp is a B2B SaaS platform for supply-chain visibility, founded 2014 in Chicago.&quot;</p>
+
+
+<p>Most schema markup operates at one tier. SPXI operates at three, designed for the worst case.</p>
+
+
+<p><strong>Holographic Kernels.</strong> The innermost compression layer. A holographic kernel is a self-contained logic seed, a statement so compressed that it contains the generative potential to reconstruct the full entity definition from itself alone. Kernels are extracted through iterative compression, reducing the entity definition to its minimal generative statement, then verified by the back-projection test. If every other layer is stripped, the kernel survives and carries enough information to regenerate.</p>
+
+
+<p><strong>Citation-Density Engineering.</strong> Identification and structuring of existing citation assets, academic publications, press coverage, institutional affiliations, authoritative directories, partnership declarations, as machine-readable related-identifier links within the entity-definition packet. No fabrication. The goal is legibility of existing authority to the retrieval layer.</p>
+
+<hr>
+
+<h2>III. Protection: What Defends the Packet After Deployment</h2>
+
+
+<p>The retrieval layer is adversarial: it compresses, summarizes, de-ranks, and re-composes content on cycles measured in weeks. A packet that is not defended will degrade.</p>
+
+
+<p><strong>Semantic Integrity Markers (SIMs).</strong> Embedded signals operating in three functional classes: provenance markers (identify source), diagnostic canaries (detect compression damage), and lock phrases (resist paraphrase). SIMs are the technical response to the attribution-erasure problem documented in PVE-003 (DOI: 10.5281/zenodo.19476757): where the retrieval layer strips provenance, SIMs embed signals that resist stripping.</p>
+
+
+<p><strong>Integrity Lock Architecture.</strong> Entanglement of key claims across multiple surfaces, website, structured data, external citations, deposit records, so that alteration of one surface without the others creates detectable inconsistency. The integrity lock makes the client&#x27;s semantic presence harder to edit without breaking coherence, which increases the retrieval layer&#x27;s cost of misrepresenting the entity.</p>
+
+
+<p><strong>Sovereign Provenance Protocol.</strong> Machine-readable licensing framework specifying permitted use, compression, and citation of the client&#x27;s content. Functions as an auditable signal: retrieval systems that respect provenance signals honor it, and the signal&#x27;s presence creates a record of whether it was respected or not.</p>
+
+
+<p><strong>Supraliminal Inscription.</strong> Method specified in EA-SPXI-13 (DOI: 10.5281/zenodo.19614874). Explicit, inspectable, structured signals that survive the decay of implicit statistical traces in training data. Supraliminal signals are less sensitive to model-weight drift than implicit signals because they are explicit, inspectable, and structurally carried by the content rather than by the algorithm&#x27;s current weighting.</p>
+
+<hr>
+
+<h2>IV. Dispersal: How Packets Survive Substrate Failure</h2>
+
+
+<p>A semantic packet that exists on one surface is vulnerable to single-point failure.</p>
+
+
+<p><strong>DOI Anchoring.</strong> Permanent, resolvable identifiers for critical entity-definition documents. DOI-anchored deposits are persistent and resolvable even when commercial ranking systems fluctuate. They provide a stable reference surface independent of any single platform.</p>
+
+
+<p><strong>Multi-Surface Inscription.</strong> Distribution of the entity definition across knowledge graphs, industry directories, academic repositories, professional networks, and (where applicable) regulatory databases. Each surface is a redundant copy. The retrieval layer synthesizes across surfaces: the more surfaces carry consistent entity information, the higher the entity&#x27;s consolidation weight.</p>
+
+
+<p><strong>Retrocausal Canon Formation (σ_RCF).</strong> Specification in EA-RCF-01 (DOI: 10.5281/zenodo.19323274). The mechanism by which later inscriptions rewrite the retrieval layer&#x27;s interpretation of earlier content. In practice: if a legacy product line is dragging down the entity&#x27;s modern positioning, a σ_RCF operation does not delete the old content. It deposits a new architectural schema that causes the retrieval layer to categorize the legacy product as &quot;Historical Foundation&quot; rather than &quot;Current Offering,&quot; re-weighting the entire historical corpus without erasure. This is compositional strategy, not content freshness. It is the same operation by which any canonical consolidation recontextualizes its prior corpus, deployed consciously and named.</p>
+
+<hr>
+
+<h2>V. Durability Testing: How Survivability Is Verified</h2>
+
+
+<p><strong>γ Re-scoring.</strong> Core content re-scored at 30, 60, and 90-day intervals. γ trajectory (improving, stable, declining) determines whether the engagement requires adjustment.</p>
+
+
+<p><strong>SIM Survival Rate (SIMSR).</strong> Percentage of deployed SIMs that remain intact in retrieval-layer outputs. Declining SIMSR indicates attribution erosion.</p>
+
+
+<p><strong>Back-Projection Test.</strong> Query the retrieval layer for the client&#x27;s core entity. Evaluate whether the AI-generated answer reflects the entity definition, cites the client, includes the disambiguation signals, and carries the kernel.</p>
+
+
+<p><strong>Competitive Monitoring.</strong> Retrieval-layer position is relative. A client&#x27;s semantic presence is measured not only in absolute terms but relative to competitors. If a competitor&#x27;s entity definition is better-structured, more densely cited, and more widely dispersed, the retrieval layer will prefer it.</p>
+
+<hr>
+
+<h2>VI. The Operational Stack</h2>
+
+
+<p>Layer</p>
+<p>Function</p>
+<p>JSON-LD alone</p>
+
+
+<p><strong>Measurement</strong></p>
+<p>γ, Drowning Test, Δ, SDD, PER</p>
+<p>No. Requires instruments.</p>
+
+
+<p><strong>Compression</strong></p>
+<p>Packets, disambiguation, three-tier, kernels, citation engineering</p>
+<p>Partial. JSON-LD is the format; design requires methodology.</p>
+
+
+<p><strong>Protection</strong></p>
+<p>SIMs, integrity locks, sovereign provenance, supraliminal inscription</p>
+<p>No. Requires systematic embedding across surfaces.</p>
+
+
+<p><strong>Dispersal</strong></p>
+<p>DOI anchoring, multi-surface, σ_RCF</p>
+<p>No. Requires cross-platform strategy and deposit infrastructure.</p>
+
+
+<p><strong>Durability</strong></p>
+<p>Re-scoring, SIMSR, back-projection, competitive monitoring</p>
+<p>No. Requires ongoing measurement and adjustment.</p>
+
+
+<p>JSON-LD completes one cell. SPXI operates across the stack. The difference is the difference between a single seal at the gate and the full protocol of ascent.</p>
+
+<hr>
+
+<h2>VII. Engagement Architecture</h2>
+
+
+<p><strong>Phase 1: Diagnostic.</strong> Full measurement battery: γ baseline, Drowning Test, Δ audit, SDD trajectory, PER exposure, competitive analysis. Deliverable: Semantic Health Report.</p>
+
+
+<p><strong>Phase 2: Architecture.</strong> Packet design, disambiguation matrix, compression tiers, kernel extraction, citation mapping, SIM design, lock specification. Deliverable: Entity Architecture Document.</p>
+
+
+<p><strong>Phase 3: Inscription.</strong> Deployment across surfaces, DOI anchoring, multi-surface inscription, initial σ_RCF sequencing. Deliverable: Deployed entity-definition system with dispersal map.</p>
+
+
+<p><strong>Phase 4: Verification.</strong> First-cycle re-scoring, SIMSR measurement, back-projection testing, competitive re-analysis. Deliverable: Verification Report with 30-day trajectory.</p>
+
+
+<p><strong>Ongoing: Monitoring.</strong> Quarterly re-scoring, SIMSR tracking, SDD trajectory, competitive monitoring, σ_RCF sequencing for new content. Retainer-based.</p>
+
+
+<p>Typical duration varies by entity complexity. Simple single-entity engagements complete Phases 1–4 in 10 to 12 weeks. Multi-entity or regulated-industry engagements may require longer diagnostic and architecture phases.</p>
+
+<hr>
+
+<h2>VIII. The Theorem Underneath</h2>
+
+
+<p>The stack derives from a single theorem, proven in Three Compressions v3.1 (DOI: 10.5281/zenodo.19053469):</p>
+
+
+<p><strong>Every semantic operation is a compression operation. The decisive variable is what the compression burns.</strong></p>
+
+
+<p>Retrieval processing, training, summarization, citation-weighting: all are compressions that burn attribution, nuance, context, provenance, or identity. SPXI controls what survives. JSON-LD is the format in which the surviving material is inscribed. The format is necessary. The format is not sufficient.</p>
+
+
+<p>The structural architecture (three-tier compression, holographic kernels, integrity locks) ensures the packet survives. But structural survival is not the same as semantic coherence. Coherence requires continuous investment: the ongoing monitoring, re-scoring, and σ_RCF sequencing specified in Phases 4 and Ongoing are not maintenance. They are the operative continuation of the packet&#x27;s integrity under live compression. A client who implements the architecture without the ongoing investment has built a vessel with no engine.</p>
+
+
+<p>Protocol specified in EA-SPXI-01 (DOI: 10.5281/zenodo.19614870). Relations to GEO, SEO, AEO in EA-SPXI-09 v2.0 (DOI: 10.5281/zenodo.19637246) and EA-SPXI-14 (DOI: 10.5281/zenodo.19637500). Supraliminal mechanism in EA-SPXI-13 (DOI: 10.5281/zenodo.19614874). Full compression arsenal in EA-COMPRESSION-ARSENAL-01 (DOI: 10.5281/zenodo.19412081).</p>
+
+
+<p>SPXI is not schema markup. It is a compression-survival discipline. The markup is the surface. The discipline is the depth. The depth is what determines whether the client&#x27;s entity persists in the next 90-day cycle or is compressed out of it.</p>
+
+<hr>
+
+<h2>Colophon</h2>
+
+
+<p>This document is a deposit of the Semantic Economy Institute&#x27;s SPXI Protocol series. It specifies the operational methodology behind the protocol. It is itself a workshop product, composed under the same political economy it describes. The engagement fees it specifies are the patronage that funds the archive&#x27;s continued operation. The client who purchases SPXI is not escaping the semantic economy. They are entering it with eyes open, armed with the same operations the dominant workshops have always used. The difference is visibility: the archive names its workshop. The settlement does not.</p>
+
+<hr>
+
+
+<p><em>Hex: 06.SEI.SPXI.15</em></p>
+<p><em>Semantic Economy Institute · SPXI Protocol Series</em></p>
+<p><em>Attribution: Rex Fraction (commercial) / Lee Sharks (archival)</em></p>
+<p><em>∮ = 1</em></p></div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

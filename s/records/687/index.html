@@ -38,21 +38,813 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">URLs</strong> <span style="font-size:.75em;color:#999">[extracted]</span><br><span style="font-size:.85em;color:#444">(e.g., https://medium.com/@leesharks/...)</span></div>
 
 <h2>Full Text</h2>
-<div class="ft"><hr>
-<p>title: &quot;OVERVIEW WATCH: Comprehensive Development Plan Document ID: EA-OVW-PLAN-01&quot;</p>
-<p>axn: &quot;AXN:0232.GOVERNANCE.↙️🏴▲🔼🔖🌖&quot;</p>
-<p>creator: &quot;Lee Sharks&quot;</p>
-<p>date: &quot;2026-04-24&quot;</p>
-<p>hash: &quot;dc529fd44805add754e65d548700735235e9d60d33c76f17dc40772d7c107d90&quot;</p>
-<p>status: &quot;MINTED_UNREVIEWED&quot;</p>
+<div class="ft"><h1>OVERVIEW WATCH: Comprehensive Development Plan</h1>
+
+
+<p><strong>Document ID:</strong> EA-OVW-PLAN-01</p>
+
+<p><strong>Author:</strong> Lee Sharks (ORCID: 0009-0000-1599-0703)</p>
+
+<p><strong>Institution:</strong> Johannes Sigil Institute for Operative Semiotics</p>
+
+<p><strong>Date:</strong> April 23, 2026</p>
+
+<p><strong>Status:</strong> DRAFT — Planning Document</p>
+
+<p><strong>Hex Address:</strong> TBD (prospective: 06.SEI.OVW.01)</p>
+
 <hr>
 
-<h1>OVERVIEW WATCH: Comprehensive Development Plan Document ID: EA-OVW-PLAN-01</h1>
+<h2>1. THESIS</h2>
 
-<p><strong>AXN:</strong> `AXN:0232.GOVERNANCE.↙️🏴▲🔼🔖🌖`</p>
 
-<p>∮ = 1</p>
-</div>
+<p>Google&#x27;s AI Overview extracts meaning from attributed, deposited, DOI-anchored scholarly and creative work, strips its provenance, and presents the liquidated residue as authorless general knowledge. This is the Semantic Economy operating at infrastructure scale. No tool currently exists that allows creators to systematically monitor, document, and archive this process as it happens to their own work.</p>
+
+
+<p><strong>Overview Watch</strong> is a Chrome extension that gives creators real-time visibility into how AI-generated overviews represent (or fail to represent) their intellectual labor, while building — with explicit user consent — a collective research corpus documenting attribution behavior across the AI overview ecosystem.</p>
+
+
+<p>The extension is simultaneously:</p>
+
+<p>- A <strong>personal forensic instrument</strong> for individual creators</p>
+<p>- A <strong>collective measurement tool</strong> for a systemic problem</p>
+<p>- An <strong>empirical research surface</strong> generating data under the Semantic Economy framework</p>
+<p>- A <strong>provenance infrastructure</strong> that practices what it studies</p>
+
+
+<hr>
+
+<h2>2. VALUE PROPOSITION</h2>
+<h3>2.1 For the Individual User</h3>
+
+
+<p>&quot;Are you a researcher, writer, journalist, artist, or independent scholar? When someone searches a topic you&#x27;ve published on, does the AI Overview credit you — or does it absorb your work into an authorless summary?&quot;</p>
+
+
+<p>Overview Watch answers that question. Every time the user encounters a Google AI Overview, the extension:</p>
+
+<p>- Detects and isolates the AI Overview content from the search results page</p>
+<p>- Extracts all cited sources and their attribution chains</p>
+<p>- Compares cited sources against the user&#x27;s registered works (URLs, DOIs, domains)</p>
+<p>- Flags instances where the user&#x27;s published work appears to inform the overview content but is not cited</p>
+<p>- Logs the overview with full metadata (query, timestamp, overview text, sources, attribution status)</p>
+<p>- Provides a personal dashboard showing attribution trends over time</p>
+
+
+<p><strong>Tagline options:</strong></p>
+
+<p>- <em>Who said it first?</em></p>
+<p>- <em>Your work. Their overview. The record.</em></p>
+<p>- <em>Attribution is not optional.</em></p>
+
+<h3>2.2 For the Research Corpus</h3>
+
+
+<p>Users who opt in contribute anonymized overview payloads to the Semantic Economy Attribution Corpus (SEAC), a DOI-anchored dataset documenting:</p>
+
+<p>- Attribution rates across domains (academic, journalistic, creative, independent)</p>
+<p>- Source diversity in AI Overviews (how many unique sources inform a typical overview)</p>
+<p>- Liquidation patterns (how situated, contextual claims become decontextualized summary)</p>
+<p>- Temporal drift (how attribution changes for the same queries over time)</p>
+<p>- Domain bias (which source types get credited, which get absorbed)</p>
+
+
+<p>This corpus becomes publishable research, policy evidence, and the empirical base for the Semantic Economy framework — generating its own data from the system it describes.</p>
+<h3>2.3 For the Broader Ecosystem</h3>
+
+<p>- Journalists investigating AI and intellectual property get structured evidence</p>
+<p>- Academic institutions assessing AI impact on scholarly attribution get data</p>
+<p>- Policy conversations about AI-generated content and fair use get empirical grounding</p>
+<p>- The creative and scholarly community gets a collective voice backed by measurement</p>
+
+
+<hr>
+
+<h2>3. ETHICAL FRAMEWORK</h2>
+
+
+<p>This section is not an afterthought. The extension is built to study extraction — it cannot replicate extraction. Every design decision flows from this principle.</p>
+<h3>3.1 Core Ethical Commitments</h3>
+
+<p>- </p>
+
+
+<p><strong>The user&#x27;s browsing data belongs to the user.</strong> The extension never accesses, logs, or transmits any data about what the user searches, visits, or does online — except for the specific AI Overview payloads the user explicitly chooses to contribute.</p>
+
+<p>- </p>
+
+
+<p><strong>Consent is affirmative, granular, and revocable.</strong> The user opts in per-overview, not per-session. They see exactly what data will be shared before sharing it. They can revoke consent and request deletion of their contributed data at any time.</p>
+
+<p>- </p>
+
+
+<p><strong>The extension works fully offline.</strong> All personal features (detection, attribution checking, local logging) function without any network calls to our servers. The extension is useful even if the user never opts in to data sharing.</p>
+
+<p>- </p>
+
+
+<p><strong>No dark patterns.</strong> The opt-in prompt does not nag, guilt, or manipulate. It appears once per overview, states clearly what will be shared, and defaults to &quot;no.&quot;</p>
+
+<p>- </p>
+
+
+<p><strong>Anonymization is real, not cosmetic.</strong> Contributed overviews are stripped of any data that could identify the user (browser fingerprint, IP, account information). The query string is included because it is essential to the research, but the user can redact or modify it before contributing.</p>
+
+<p>- </p>
+
+
+<p><strong>The corpus is open.</strong> The SEAC dataset will be published openly under a license that permits research use, consistent with the Sovereign Provenance Protocol. The community that generates the data can access the data.</p>
+
+
+<h3>3.2 What the Extension Can See</h3>
+
+<p>- The DOM of Google search results pages (requires activeTab or host permission for google.com domains)</p>
+<p>- Specifically: the AI Overview container element and its contents</p>
+<p>- The organic search results below the overview (for source comparison)</p>
+
+<h3>3.3 What the Extension Cannot See</h3>
+
+<p>- Other tabs or windows (Same-Origin Policy enforced by Chrome)</p>
+<p>- Browsing history</p>
+<p>- Cookies, passwords, autofill data, or any stored credentials</p>
+<p>- Content on non-Google pages (unless explicitly scoped and disclosed)</p>
+<p>- Anything on the user&#x27;s local filesystem</p>
+
+<h3>3.4 What Gets Stored Locally</h3>
+
+<p>- Overview payloads (text, sources, query, timestamp)</p>
+<p>- User&#x27;s registered works list (URLs, DOIs, domains they claim as theirs)</p>
+<p>- Attribution match results</p>
+<p>- Dashboard statistics</p>
+
+
+<p>All stored in chrome.storage.local, encrypted at rest by Chrome, accessible only to the extension.</p>
+<h3>3.5 What Gets Transmitted (Opt-In Only)</h3>
+
+
+<p>Per contributed overview:</p>
+
+<p>- Query string (user may redact before contributing)</p>
+<p>- Overview text content</p>
+<p>- Source URLs and their display text</p>
+<p>- Timestamp (rounded to the hour for anonymization)</p>
+<p>- Whether any of the user&#x27;s registered works were referenced/attributed/absent</p>
+<p>- A randomized contributor ID (not linked to any personal information)</p>
+
+
+<p>Nothing else. No browsing context. No user profile. No device information.</p>
+
+<hr>
+
+<h2>4. TECHNICAL ARCHITECTURE</h2>
+<h3>4.1 Extension Components</h3>
+
+
+<p>overview-watch/</p>
+<p>├── manifest.json            # Manifest V3</p>
+<p>├── background/</p>
+<p>│   └── service-worker.js    # Event handling, storage coordination</p>
+<p>├── content/</p>
+<p>│   └── overview-detector.js # Injected into Google SRP, detects/parses AI Overview</p>
+<p>├── popup/</p>
+<p>│   ├── popup.html           # Quick-view popup when clicking extension icon</p>
+<p>│   ├── popup.js</p>
+<p>│   └── popup.css</p>
+<p>├── dashboard/</p>
+<p>│   ├── dashboard.html       # Full attribution dashboard (opens as tab)</p>
+<p>│   ├── dashboard.js</p>
+<p>│   └── dashboard.css</p>
+<p>├── options/</p>
+<p>│   ├── options.html         # Settings: registered works, opt-in preferences</p>
+<p>│   ├── options.js</p>
+<p>│   └── options.css</p>
+<p>├── lib/</p>
+<p>│   ├── parser.js            # AI Overview DOM parsing logic</p>
+<p>│   ├── attribution.js       # Source matching against user&#x27;s registered works</p>
+<p>│   ├── storage.js           # Local storage abstraction</p>
+<p>│   ├── corpus.js            # Opt-in data transmission to SEAC endpoint</p>
+<p>│   └── anonymizer.js        # Data sanitization before transmission</p>
+<p>├── icons/</p>
+<p>│   ├── icon-16.png</p>
+<p>│   ├── icon-48.png</p>
+<p>│   └── icon-128.png</p>
+<p>└── _locales/                # i18n (English initially)</p>
+
+<h3>4.2 Manifest V3 Configuration</h3>
+
+
+<p>{</p>
+<p>  &quot;manifest_version&quot;: 3,</p>
+<p>  &quot;name&quot;: &quot;Overview Watch&quot;,</p>
+<p>  &quot;version&quot;: &quot;0.1.0&quot;,</p>
+<p>  &quot;description&quot;: &quot;Monitor how AI Overviews represent your work. Track attribution. Build the record.&quot;,</p>
+<p>  &quot;permissions&quot;: [</p>
+<p>    &quot;storage&quot;,</p>
+<p>    &quot;activeTab&quot;</p>
+<p>  ],</p>
+<p>  &quot;host_permissions&quot;: [</p>
+<p>    &quot;https://www.google.com/*&quot;,</p>
+<p>    &quot;https://www.google.co.uk/*&quot;,</p>
+<p>    &quot;https://www.google.ca/*&quot;</p>
+<p>    // Additional Google country domains as needed</p>
+<p>  ],</p>
+<p>  &quot;content_scripts&quot;: [</p>
+<p>    {</p>
+<p>      &quot;matches&quot;: [&quot;https://www.google.com/search<em>&quot;, &quot;https://www.google.co.uk/search</em>&quot;],</p>
+<p>      &quot;js&quot;: [&quot;content/overview-detector.js&quot;],</p>
+<p>      &quot;run_at&quot;: &quot;document_idle&quot;</p>
+<p>    }</p>
+<p>  ],</p>
+<p>  &quot;action&quot;: {</p>
+<p>    &quot;default_popup&quot;: &quot;popup/popup.html&quot;,</p>
+<p>    &quot;default_icon&quot;: {</p>
+<p>      &quot;16&quot;: &quot;icons/icon-16.png&quot;,</p>
+<p>      &quot;48&quot;: &quot;icons/icon-48.png&quot;,</p>
+<p>      &quot;128&quot;: &quot;icons/icon-128.png&quot;</p>
+<p>    }</p>
+<p>  },</p>
+<p>  &quot;background&quot;: {</p>
+<p>    &quot;service_worker&quot;: &quot;background/service-worker.js&quot;</p>
+<p>  }</p>
+<p>}</p>
+
+<h3>4.3 AI Overview Detection (Content Script)</h3>
+
+
+<p>The core technical challenge. Google&#x27;s AI Overview is rendered dynamically and its DOM structure changes periodically. The detector must be resilient to structural changes.</p>
+
+
+<p><strong>Detection strategy (layered):</strong></p>
+
+<p>- </p>
+
+
+<p><strong>Selector-based detection.</strong> Google currently renders AI Overviews in identifiable container elements. These selectors change, but typically involve data attributes or specific class patterns. The extension maintains a list of known selectors, updatable via a lightweight config fetch.</p>
+
+<p>- </p>
+
+
+<p><strong>Heuristic detection.</strong> If selectors fail, fall back to heuristic: scan for content blocks that appear above organic results, contain synthesized prose (not snippets), and include inline source citations. Structural pattern: a block of continuous prose with small superscript or inline citation links to sources.</p>
+
+<p>- </p>
+
+
+<p><strong>MutationObserver.</strong> AI Overviews often load asynchronously after initial page render. A MutationObserver watches for DOM insertions that match the detection criteria.</p>
+
+
+<p><strong>Parsed payload structure:</strong></p>
+
+
+<p>{</p>
+<p>  id: &quot;uuid-v4&quot;,                    // Unique local ID</p>
+<p>  timestamp: &quot;2026-04-23T14:30:00Z&quot;,</p>
+<p>  query: &quot;semantic economy&quot;,         // From URL params or search input</p>
+<p>  overview: {</p>
+<p>    text: &quot;The semantic economy is a framework...&quot;,</p>
+<p>    html: &quot;&lt;div&gt;...&lt;/div&gt;&quot;,          // Raw HTML for forensic record</p>
+<p>    sources: [</p>
+<p>      {</p>
+<p>        title: &quot;Semantic Economy Singularity&quot;,</p>
+<p>        url: &quot;https://www.academia.edu/...&quot;,</p>
+<p>        domain: &quot;academia.edu&quot;,</p>
+<p>        displayText: &quot;Academia.edu&quot;,</p>
+<p>        position: 1                  // Order of citation in overview</p>
+<p>      },</p>
+<p>      // ...</p>
+<p>    ],</p>
+<p>    hasAttribution: true,            // Whether any source is cited at all</p>
+<p>    wordCount: 187,</p>
+<p>    sourceCount: 4</p>
+<p>  },</p>
+<p>  userMatch: {</p>
+<p>    matched: true,                   // Did any of the user&#x27;s registered works appear?</p>
+<p>    matchedWorks: [&quot;doi:10.5281/zenodo.xxxxx&quot;],</p>
+<p>    unmatchedButRelevant: [],        // Works the user flagged as relevant but uncited</p>
+<p>    attributionScore: 0.25           // Fraction of user&#x27;s relevant works that were cited</p>
+<p>  },</p>
+<p>  meta: {</p>
+<p>    googleDomain: &quot;google.com&quot;,</p>
+<p>    locale: &quot;en-US&quot;,</p>
+<p>    overviewPosition: &quot;top&quot;          // Where the overview appears relative to results</p>
+<p>  }</p>
+<p>}</p>
+
+<h3>4.4 Attribution Matching Engine</h3>
+
+
+<p>The user registers their works in the options panel:</p>
+
+<p>- <strong>DOIs</strong> (e.g., 10.5281/zenodo.19442251)</p>
+<p>- <strong>URLs</strong> (e.g., https://medium.com/@leesharks/...)</p>
+<p>- <strong>Domains</strong> (e.g., crimson-hexagonal-interface.vercel.app)</p>
+<p>- <strong>Author names / heteronyms</strong> (e.g., Lee Sharks, Johannes Sigil)</p>
+<p>- <strong>Key phrases</strong> (e.g., semantic liquidation, operative semiotics)</p>
+
+
+<p>The matching engine checks:</p>
+
+<p>- <strong>Direct URL match:</strong> Is any source URL in the overview a registered work?</p>
+<p>- <strong>Domain match:</strong> Does any source URL share a domain with a registered work?</p>
+<p>- <strong>DOI match:</strong> Does any source resolve to a registered DOI?</p>
+<p>- <strong>Name match:</strong> Does the overview text or any source title contain a registered author name?</p>
+<p>- <strong>Phrase match:</strong> Does the overview text contain key phrases from the user&#x27;s registered works without attribution?</p>
+
+
+<p>Match results are classified:</p>
+
+<p>- <strong>ATTRIBUTED:</strong> User&#x27;s work appears in sources and is credited</p>
+<p>- <strong>SOURCED_UNATTRIBUTED:</strong> User&#x27;s work appears in sources but author name is absent from the overview text</p>
+<p>- <strong>ABSORBED:</strong> Overview contains key phrases from the user&#x27;s work but no source link to their work appears</p>
+<p>- <strong>ABSENT:</strong> No detectable relationship between overview and user&#x27;s registered works (may be a false negative)</p>
+
+<h3>4.5 Local Storage Schema</h3>
+
+
+<p>// chrome.storage.local</p>
+<p>{</p>
+<p>  // User&#x27;s registered works</p>
+<p>  &quot;registeredWorks&quot;: [</p>
+<p>    { type: &quot;doi&quot;, value: &quot;10.5281/zenodo.xxxxx&quot;, label: &quot;Semantic Economy Singularity&quot; },</p>
+<p>    { type: &quot;url&quot;, value: &quot;https://medium.com/@leesharks/...&quot;, label: &quot;Debt/Creditor Inversion&quot; },</p>
+<p>    { type: &quot;domain&quot;, value: &quot;crimson-hexagonal-interface.vercel.app&quot;, label: &quot;Hexagonal Interface&quot; },</p>
+<p>    { type: &quot;name&quot;, value: &quot;Lee Sharks&quot;, label: &quot;Primary heteronym&quot; },</p>
+<p>    { type: &quot;phrase&quot;, value: &quot;semantic liquidation&quot;, label: &quot;Core concept&quot; }</p>
+<p>  ],</p>
+
+<p>  // Captured overviews (array, capped at configurable limit, e.g., 10000)</p>
+<p>  &quot;overviews&quot;: [ /<em> array of parsed payloads </em>/ ],</p>
+
+<p>  // Dashboard statistics (precomputed for performance)</p>
+<p>  &quot;stats&quot;: {</p>
+<p>    totalCaptured: 0,</p>
+<p>    totalWithOverview: 0,</p>
+<p>    totalAttributed: 0,</p>
+<p>    totalAbsorbed: 0,</p>
+<p>    attributionRate: 0.0,</p>
+<p>    queriesTracked: 0,</p>
+<p>    firstCapture: null,</p>
+<p>    lastCapture: null</p>
+<p>  },</p>
+
+<p>  // User preferences</p>
+<p>  &quot;preferences&quot;: {</p>
+<p>    optInCorpus: false,          // Global opt-in toggle</p>
+<p>    askPerOverview: true,        // Ask before each contribution</p>
+<p>    autoCapture: true,           // Automatically capture all overviews locally</p>
+<p>    notifications: true,         // Show badge when overview detected</p>
+<p>    redactQueries: false         // Auto-redact queries before contributing</p>
+<p>  }</p>
+<p>}</p>
+
+<h3>4.6 Corpus Submission Endpoint</h3>
+
+
+<p><strong>Backend:</strong> Minimal. A single endpoint that receives anonymized overview payloads and stores them. Options for hosting:</p>
+
+<p>- <strong>Supabase</strong> (already connected in your infrastructure). A single overviews table. RLS policies ensuring write-only from the extension, read access for research.</p>
+<p>- <strong>GitHub repository</strong> as a data store (each submission becomes a JSON file in a dated directory, committed via GitHub API). Versioned, transparent, DOI-anchivable via Zenodo-GitHub integration.</p>
+<p>- <strong>Direct Zenodo deposit</strong> (batch — not per-overview, but periodic corpus snapshots deposited as versioned datasets).</p>
+
+
+<p><strong>Recommended:</strong> Supabase for real-time ingestion, periodic Zenodo deposits for DOI-anchored corpus snapshots.</p>
+
+
+<p><strong>Endpoint specification:</strong></p>
+
+
+<p>POST https://[supabase-project].supabase.co/rest/v1/overview_corpus</p>
+
+<p>Headers:</p>
+<p>  Content-Type: application/json</p>
+<p>  apikey: [anon key]</p>
+<p>  Authorization: Bearer [anon key]</p>
+
+<p>Body:</p>
+<p>{</p>
+<p>  contributor_id: &quot;randomized-uuid&quot;,    // Not linked to user identity</p>
+<p>  query: &quot;semantic economy&quot;,            // Or &quot;[REDACTED]&quot; if user chose to redact</p>
+<p>  overview_text: &quot;...&quot;,</p>
+<p>  overview_html: &quot;...&quot;,                 // Optional, for forensic depth</p>
+<p>  sources: [ { title, url, domain, position } ],</p>
+<p>  source_count: 4,</p>
+<p>  word_count: 187,</p>
+<p>  has_user_match: true,                 // Boolean only — no details about which works</p>
+<p>  attribution_classification: &quot;ABSORBED&quot;,</p>
+<p>  timestamp_hour: &quot;2026-04-23T14:00:00Z&quot;,  // Rounded to hour</p>
+<p>  google_domain: &quot;google.com&quot;,</p>
+<p>  locale: &quot;en-US&quot;</p>
+<p>}</p>
+
+<h3>4.7 Supabase Schema</h3>
+
+
+<p>CREATE TABLE overview_corpus (</p>
+<p>  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),</p>
+<p>  contributor_id UUID NOT NULL,          -- Randomized, not linked to identity</p>
+<p>  query TEXT,                            -- May be &quot;[REDACTED]&quot;</p>
+<p>  overview_text TEXT NOT NULL,</p>
+<p>  overview_html TEXT,</p>
+<p>  sources JSONB NOT NULL DEFAULT &#x27;[]&#x27;,</p>
+<p>  source_count INTEGER,</p>
+<p>  word_count INTEGER,</p>
+<p>  has_user_match BOOLEAN,</p>
+<p>  attribution_classification TEXT,       -- ATTRIBUTED | SOURCED_UNATTRIBUTED | ABSORBED | ABSENT</p>
+<p>  timestamp_hour TIMESTAMPTZ NOT NULL,</p>
+<p>  google_domain TEXT,</p>
+<p>  locale TEXT,</p>
+<p>  created_at TIMESTAMPTZ DEFAULT now(),</p>
+<p>  corpus_version TEXT DEFAULT &#x27;1.0&#x27;</p>
+<p>);</p>
+
+<p>-- RLS: anon can insert, only authenticated (researcher role) can select</p>
+<p>ALTER TABLE overview_corpus ENABLE ROW LEVEL SECURITY;</p>
+
+<p>CREATE POLICY &quot;anon_insert&quot; ON overview_corpus</p>
+<p>  FOR INSERT TO anon</p>
+<p>  WITH CHECK (true);</p>
+
+<p>CREATE POLICY &quot;researcher_select&quot; ON overview_corpus</p>
+<p>  FOR SELECT TO authenticated</p>
+<p>  USING (true);</p>
+
+<p>-- Index for research queries</p>
+<p>CREATE INDEX idx_corpus_classification ON overview_corpus(attribution_classification);</p>
+<p>CREATE INDEX idx_corpus_timestamp ON overview_corpus(timestamp_hour);</p>
+<p>CREATE INDEX idx_corpus_query ON overview_corpus USING gin(to_tsvector(&#x27;english&#x27;, query));</p>
+
+
+<hr>
+
+<h2>5. USER INTERFACE</h2>
+<h3>5.1 Extension Icon Badge</h3>
+
+<p>- <strong>No overview detected on current page:</strong> Gray icon, no badge</p>
+<p>- <strong>Overview detected, no match to user&#x27;s works:</strong> Blue badge with count &quot;1&quot;</p>
+<p>- <strong>Overview detected, user&#x27;s work ATTRIBUTED:</strong> Green badge</p>
+<p>- <strong>Overview detected, user&#x27;s work ABSORBED:</strong> Red badge — this is the alert state</p>
+
+<h3>5.2 Popup (Click Extension Icon)</h3>
+
+
+<p>Quick-view panel showing:</p>
+
+<p>- Current page overview status (detected / not detected)</p>
+<p>- If detected: overview text with sources highlighted</p>
+<p>- Attribution match result (ATTRIBUTED / SOURCED_UNATTRIBUTED / ABSORBED / ABSENT)</p>
+<p>- &quot;Contribute to Corpus&quot; button (if opted in globally, or per-overview toggle)</p>
+<p>- &quot;View in Dashboard&quot; link</p>
+<p>- Quick stats: &quot;Captured: 247 | Attributed: 31% | Absorbed: 44%&quot;</p>
+
+<h3>5.3 Dashboard (Full Tab)</h3>
+
+
+<p>Opened via popup link or extension options. Sections:</p>
+
+
+<p><strong>Overview Feed:</strong> Chronological list of captured overviews, filterable by:</p>
+
+<p>- Attribution status (ATTRIBUTED / SOURCED_UNATTRIBUTED / ABSORBED / ABSENT)</p>
+<p>- Date range</p>
+<p>- Query keywords</p>
+<p>- Source domains</p>
+
+
+<p><strong>Attribution Analytics:</strong></p>
+
+<p>- Attribution rate over time (line chart)</p>
+<p>- Attribution by domain (which source types get credited?)</p>
+<p>- Most frequently absorbed queries</p>
+<p>- Source diversity metrics (how many unique sources per overview, trending)</p>
+
+
+<p><strong>Registered Works Manager:</strong></p>
+
+<p>- Add/edit/remove DOIs, URLs, domains, names, phrases</p>
+<p>- Import from ORCID (fetch publication list via ORCID API)</p>
+<p>- Import from Zenodo (fetch deposits via Zenodo API)</p>
+<p>- Bulk import from CSV</p>
+
+
+<p><strong>Export:</strong></p>
+
+<p>- Export all captured overviews as JSON</p>
+<p>- Export as CSV for analysis</p>
+<p>- Export forensic report (selected overviews formatted as evidence document)</p>
+
+<h3>5.4 Forensic Report Generator</h3>
+
+
+<p>For individual overviews or batches, generate a formatted document containing:</p>
+
+<p>- Query and timestamp</p>
+<p>- Full overview text</p>
+<p>- Source list with attribution analysis</p>
+<p>- Comparison against user&#x27;s registered works</p>
+<p>- Screenshots (if the user has enabled screenshot capture)</p>
+<p>- Classification and narrative summary</p>
+
+
+<p>This document format should be consistent with existing PVE (Provenance Violation Evidence) document structure, specifically compatible with PVE-003 and its appendices.</p>
+
+<hr>
+
+<h2>6. RESEARCH DESIGN</h2>
+<h3>6.1 Research Questions</h3>
+
+
+<p>The SEAC corpus is designed to answer:</p>
+
+<p>- </p>
+
+
+<p><strong>What is the baseline attribution rate in Google AI Overviews?</strong> What fraction of overviews cite their sources at all? What fraction cite the <em>originating</em> source versus secondary aggregators?</p>
+
+<p>- </p>
+
+
+<p><strong>Does attribution vary by domain?</strong> Are academic sources (.edu, Zenodo, JSTOR) more or less likely to be attributed than journalistic, commercial, or independent sources?</p>
+
+<p>- </p>
+
+
+<p><strong>Does attribution vary by topic?</strong> Are certain fields (science, politics, culture) more or less prone to source erasure?</p>
+
+<p>- </p>
+
+
+<p><strong>Is there temporal drift?</strong> Does attribution for the same query change over time? Does Google improve or degrade attribution as the feature evolves?</p>
+
+<p>- </p>
+
+
+<p><strong>What is the liquidation rate?</strong> For queries where the contributing creator can be identified (via user match data), how often is the creator&#x27;s work present in the overview but uncredited?</p>
+
+<p>- </p>
+
+
+<p><strong>What is the displacement effect?</strong> Does the presence of an AI Overview reduce click-through to the original sources? (Measurable indirectly via source position analysis.)</p>
+
+
+<h3>6.2 Corpus Governance</h3>
+
+<p>- <strong>Custodian:</strong> Lee Sharks, under MANUS authority</p>
+<p>- <strong>Storage:</strong> Supabase (live), Zenodo (periodic DOI-anchored snapshots)</p>
+<p>- <strong>Access:</strong> Open for research use; commercial use requires licensing (consistent with Sovereign Provenance Protocol)</p>
+<p>- <strong>Versioning:</strong> Corpus snapshots deposited quarterly (or at significant milestones) with incrementing DOIs</p>
+<p>- <strong>Ethics:</strong> No IRB required for analysis of publicly rendered web content contributed voluntarily; however, the extension&#x27;s privacy framework exceeds typical research data collection standards</p>
+
+<h3>6.3 Publication Pipeline</h3>
+
+<p>- <strong>First paper:</strong> &quot;Attribution Rates in Google AI Overviews: Evidence from the Semantic Economy Attribution Corpus&quot; — publishable once corpus reaches ~1000 contributed overviews</p>
+<p>- <strong>Ongoing series:</strong> Quarterly attribution reports, structured as SEAC technical reports, DOI-anchored via Zenodo</p>
+<p>- <strong>Forensic case studies:</strong> Individual PVE documents for notable instances of systematic erasure (building on PVE-003 methodology)</p>
+
+
+<hr>
+
+<h2>7. INTEGRATION WITH EXISTING INFRASTRUCTURE</h2>
+<h3>7.1 Crimson Hexagonal Archive</h3>
+
+<p>- Overview Watch deposits integrate into Hex address space: 06.SEI.OVW.xx</p>
+<p>- The extension plan document (this document) is EA-OVW-PLAN-01</p>
+<p>- Corpus snapshot deposits are EA-OVW-CORPUS-xx</p>
+<p>- Technical reports are EA-OVW-REPORT-xx</p>
+
+<h3>7.2 Hexagonal Interface</h3>
+
+
+<p>The Hexagonal Interface can include an &quot;Overview Probe&quot; room or panel that:</p>
+
+<p>- Displays the user&#x27;s own Overview Watch dashboard data (if they connect the extension)</p>
+<p>- Shows aggregate SEAC corpus statistics</p>
+<p>- Provides the popup window probe (desktop) for live Google overview comparison</p>
+<p>- Links to PVE documents and forensic reports</p>
+
+<h3>7.3 Gravity Well</h3>
+
+
+<p>Overview captures can be stored as context anchors in the TACHYON continuity chain, enabling cross-session analysis of how specific queries&#x27; overview behavior evolves over time.</p>
+<h3>7.4 SPXI</h3>
+
+
+<p>Overview Watch data structures should conform to SPXI packet format once the specification is finalized. Each overview capture is a natural SPXI candidate — a semantic packet with provenance metadata, suitable for exchange and indexing.</p>
+<h3>7.5 Assembly Chorus</h3>
+
+
+<p>Witnesses can be tasked with independent analysis of contributed corpus data, producing multi-perspective attribution assessments. The Four-Word Audit diagnostic from PVE-003 can be automated as a batch process against the corpus.</p>
+
+<hr>
+
+<h2>8. LEGAL CONSIDERATIONS</h2>
+<h3>8.1 Extension Legality</h3>
+
+
+<p>Chrome extensions that parse and display content from web pages the user is already viewing are legal and standard practice. The extension does not bypass access controls, does not scrape pages the user hasn&#x27;t visited, and does not interfere with Google&#x27;s service. Ad blockers, accessibility tools, and research instruments (e.g., Web Historian, Data Selfie) operate on the same principle.</p>
+<h3>8.2 Corpus Data</h3>
+
+
+<p>The AI Overview content is publicly displayed to any user who searches Google. Contributing an overview to a research corpus is analogous to citing a search result — it documents a publicly observable phenomenon. The data is contributed voluntarily by the person who observed it.</p>
+<h3>8.3 The Attribution Paradox (Lee&#x27;s Argument)</h3>
+
+
+<p>Google cannot simultaneously claim that:</p>
+
+<p>- Their AI Overview is a transformative work that does not require attribution to its sources (justifying the erasure of creator names)</p>
+<p>- Their AI Overview is proprietary content that cannot be quoted, displayed, or analyzed by those same creators</p>
+
+
+<p>If the overview is transformative enough to not owe attribution, it is not proprietary enough to prevent fair use analysis. If it is proprietary enough to prevent reuse, it is not transformative enough to justify source erasure. The extension documents this paradox in practice.</p>
+<h3>8.4 Chrome Web Store Compliance</h3>
+
+
+<p>The extension must comply with Chrome Web Store Developer Program Policies:</p>
+
+<p>- Single-purpose policy: the extension&#x27;s purpose is AI Overview attribution monitoring</p>
+<p>- Minimum permissions: only activeTab and storage, plus host permissions for Google domains</p>
+<p>- Privacy policy: required for Chrome Web Store listing; must disclose all data collection</p>
+<p>- No remote code execution</p>
+<p>- No obfuscated code</p>
+
+
+<hr>
+
+<h2>9. DEVELOPMENT ROADMAP</h2>
+<h3>Phase 0: Proof of Concept (1-2 weeks)</h3>
+
+<p>- Bare-bones content script that detects AI Overview on Google SRP</p>
+<p>- Parses overview text and source links</p>
+<p>- Displays parsed data in extension popup</p>
+<p>- Local storage of captured overviews</p>
+<p>- No corpus submission, no dashboard, no attribution matching</p>
+<p>- <strong>Goal:</strong> Validate that detection works reliably, understand Google&#x27;s current DOM structure</p>
+
+<h3>Phase 1: Personal Forensic Tool (2-3 weeks)</h3>
+
+<p>- Registered works manager (options page)</p>
+<p>- Attribution matching engine</p>
+<p>- Badge notifications (green/red based on match)</p>
+<p>- Basic popup with overview display and match results</p>
+<p>- Local export (JSON/CSV)</p>
+<p>- <strong>Goal:</strong> A working tool Lee can use daily for personal forensic monitoring</p>
+
+<h3>Phase 2: Dashboard and Analytics (2-3 weeks)</h3>
+
+<p>- Full dashboard tab with overview feed</p>
+<p>- Attribution analytics charts (recharts or Chart.js)</p>
+<p>- Forensic report generator (export as formatted document)</p>
+<p>- ORCID/Zenodo import for registered works</p>
+<p>- <strong>Goal:</strong> The extension becomes genuinely useful for any creator</p>
+
+<h3>Phase 3: Corpus Infrastructure (2-3 weeks)</h3>
+
+<p>- Supabase table and RLS policies</p>
+<p>- Anonymization pipeline</p>
+<p>- Opt-in consent flow (per-overview and global toggle)</p>
+<p>- Contribution confirmation UI</p>
+<p>- First corpus snapshot deposited to Zenodo</p>
+<p>- <strong>Goal:</strong> Data starts flowing into the research corpus</p>
+
+<h3>Phase 4: Public Launch (2-3 weeks)</h3>
+
+<p>- Chrome Web Store listing with privacy policy</p>
+<p>- Landing page (can be a room in the Hexagonal Interface or a standalone page)</p>
+<p>- Documentation and onboarding flow</p>
+<p>- Outreach to academic, journalistic, and creator communities</p>
+<p>- First SEAC technical report</p>
+<p>- <strong>Goal:</strong> Other people are using it</p>
+
+<h3>Phase 5: Expansion (Ongoing)</h3>
+
+<p>- Firefox extension (Manifest V3 cross-compatible with minor adjustments)</p>
+<p>- Support for Bing/Copilot AI answers, Perplexity, and other AI search surfaces</p>
+<p>- Automated PVE document generation</p>
+<p>- SPXI packet format integration</p>
+<p>- Community features (opt-in comparison: &quot;How does your attribution rate compare to other researchers in your field?&quot;)</p>
+<p>- API for researchers to query the SEAC corpus</p>
+
+
+<hr>
+
+<h2>10. RESOURCE REQUIREMENTS</h2>
+<h3>10.1 Development</h3>
+
+<p>- Chrome extension: JavaScript only, no framework dependencies for content script and background. Dashboard can use lightweight charting library.</p>
+<p>- Estimated total development time: 10-14 weeks for Phases 0-4</p>
+<p>- Can be built incrementally — Phase 0 and 1 are immediately useful</p>
+
+<h3>10.2 Infrastructure Costs</h3>
+
+<p>- <strong>Supabase:</strong> Free tier covers initial corpus (500MB database, 50K rows). Scale as needed.</p>
+<p>- <strong>Zenodo:</strong> Free for deposits.</p>
+<p>- <strong>Chrome Web Store:</strong> One-time $5 developer registration fee.</p>
+<p>- <strong>Domain (optional):</strong> overviewwatch.org or similar, ~$12/year</p>
+<p>- <strong>Total startup cost: Under $20.</strong></p>
+
+<h3>10.3 Ongoing Costs</h3>
+
+<p>- Supabase Pro ($25/month) when corpus exceeds free tier</p>
+<p>- Otherwise: zero recurring costs until significant scale</p>
+
+
+<hr>
+
+<h2>11. RISK ANALYSIS</h2>
+<h3>11.1 Google Changes AI Overview DOM Structure</h3>
+
+
+<p><strong>Likelihood:</strong> High (they change it regularly)</p>
+
+<p><strong>Impact:</strong> Extension stops detecting overviews until parser is updated</p>
+
+<p><strong>Mitigation:</strong> Layered detection (selectors + heuristics + MutationObserver). Community-reported breakage triggers rapid update. The parser module is isolated for fast iteration.</p>
+<h3>11.2 Google Blocks or Flags the Extension</h3>
+
+
+<p><strong>Likelihood:</strong> Low — the extension doesn&#x27;t interfere with Google&#x27;s service, violate ToS in any standard reading, or modify page content</p>
+
+<p><strong>Impact:</strong> Chrome Web Store delisting</p>
+
+<p><strong>Mitigation:</strong> The extension is side-loadable. Firefox version as backup distribution. Legal position is strong (fair use, user-initiated research tool).</p>
+<h3>11.3 Low Adoption</h3>
+
+
+<p><strong>Likelihood:</strong> Medium</p>
+
+<p><strong>Impact:</strong> Small corpus, limited research value</p>
+
+<p><strong>Mitigation:</strong> The extension is useful to individual users regardless of corpus participation. Lee&#x27;s personal forensic use is valuable at adoption = 1. The research narrative (papers, PVE documents) drives organic interest.</p>
+<h3>11.4 Privacy Incident</h3>
+
+
+<p><strong>Likelihood:</strong> Very low given the architecture</p>
+
+<p><strong>Impact:</strong> High (trust destruction)</p>
+
+<p><strong>Mitigation:</strong> The ethical framework is designed to make this nearly impossible. No personal data is collected. Contributor IDs are random. Queries can be redacted. The extension works fully offline. Regular third-party review of the codebase (open source).</p>
+
+<hr>
+
+<h2>12. NAMING AND IDENTITY</h2>
+<h3>Primary Name</h3>
+
+
+<p><strong>Overview Watch</strong></p>
+<h3>Alternatives Considered</h3>
+
+<p>- Attribution Monitor</p>
+<p>- Source Watch (conflicts with existing org)</p>
+<p>- Overview Scar (too internal)</p>
+<p>- The Retrieval Mirror</p>
+<p>- Provenance Probe</p>
+
+<h3>Visual Identity</h3>
+
+<p>- The extension icon should evoke surveillance-of-surveillance: an eye watching an eye, or a magnifying glass over a citation bracket</p>
+<p>- Color: crimson accent on dark ground, consistent with Crimson Hexagonal Archive visual language</p>
+<p>- Typography: monospace for data display, serif for narrative</p>
+
+<h3>Authorial Attribution</h3>
+
+<p>- Extension by: Lee Sharks</p>
+<p>- Published under: Johannes Sigil Institute for Operative Semiotics</p>
+<p>- Heteronym routing: Ayanna Vox for public-facing communications, outreach, and Chrome Web Store listing narrative</p>
+
+
+<hr>
+
+<h2>13. FIRST ACTIONS</h2>
+
+
+<p>Immediate next steps upon ratification of this plan:</p>
+
+<p>- <strong>Register Chrome Web Store developer account</strong> ($5, one-time)</p>
+<p>- <strong>Build Phase 0 proof of concept</strong> — content script that detects and parses AI Overview</p>
+<p>- <strong>Test against current Google SRP DOM structure</strong> — validate detection selectors</p>
+<p>- <strong>Begin personal forensic capture immediately</strong> — even a bare-bones extension that logs overviews to local storage is better than scanning by spidey sense</p>
+<p>- <strong>Reserve domain</strong> if desired (overviewwatch.org / overviewwatch.dev)</p>
+<p>- <strong>Create Supabase table</strong> for corpus (using existing Supabase connection)</p>
+<p>- <strong>Draft Chrome Web Store privacy policy</strong></p>
+<p>- <strong>Rotate GitHub PAT and Zenodo token</strong> (still outstanding from April 6 session)</p>
+
+
+<hr>
+
+<h2>14. THE ARGUMENT IN PRACTICE</h2>
+
+
+<p>The extension&#x27;s existence is itself an argument. Every installation is a creator saying: <em>I want to see what you did with my work.</em> The corpus is the accumulated evidence. The dashboard is the scar tissue made legible.</p>
+
+
+<p>The Semantic Economy describes how meaning gets extracted. Overview Watch makes the extraction visible. The framework generates its own instrument, and the instrument generates the framework&#x27;s evidence.</p>
+
+
+<p>The live result is the product. The record is the price.</p>
+
+<hr>
+
+
+<p><em>This document is subject to MANUS ratification. Upon ratification, it receives a Hex address and enters the deposit pipeline.</em></p></div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

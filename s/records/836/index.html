@@ -17,21 +17,306 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">Session 1 (16 June 2026)</strong> <span style="font-size:.75em;color:#999">[structural]</span><br><span style="font-size:.85em;color:#444">Work plan created. Phase 1.1 complete (845 records pulled). Phase 1.2 complete (1,524 terms extracted with count&gt;=2; 5,951 total unique keywords). Phase 1.3 (canonicalization and c</span></div>
 
 <h2>Full Text</h2>
-<div class="ft"><hr>
-<p>title: &quot;CRIMSON HEXAGONAL ARCHIVE: TERM INDEX WORK PLAN EA-REGISTRY-TERMINDEX-PLAN v1.0 Author: Lee Sharks (ORCID 0009-0000-1599&quot;</p>
-<p>axn: &quot;AXN:0351.EMPIRICAL.🟢🏗️🙏📜🔔🌱&quot;</p>
-<p>creator: &quot;Lee Sharks&quot;</p>
-<p>date: &quot;2026-06-16&quot;</p>
-<p>hash: &quot;c421b3402e19fc87edc65043744a07ca8dcd988d1ad76f170f11f6f6c8360819&quot;</p>
-<p>status: &quot;MINTED_UNREVIEWED&quot;</p>
+<div class="ft"><h1>CRIMSON HEXAGONAL ARCHIVE: TERM INDEX WORK PLAN</h1>
+<h2>EA-REGISTRY-TERMINDEX-PLAN v1.0</h2>
+
+
+<p><strong>Author:</strong> Lee Sharks (ORCID 0009-0000-1599-0703)</p>
+<p><strong>Date:</strong> 16 June 2026</p>
+<p><strong>Status:</strong> Work plan with progress tracking</p>
+<p><strong>Purpose:</strong> Systematic extraction, canonicalization, and versioning of all coined terms, concepts, entities, frameworks, operators, institutions, heteronyms, and designations across the Crimson Hexagonal Archive (~841+ deposits)</p>
+
 <hr>
 
-<h1>CRIMSON HEXAGONAL ARCHIVE: TERM INDEX WORK PLAN EA-REGISTRY-TERMINDEX-PLAN v1.0 Author: Lee Sharks (ORCID 0009-0000-1599</h1>
+<h2>Rationale</h2>
 
-<p><strong>AXN:</strong> `AXN:0351.EMPIRICAL.🟢🏗️🙏📜🔔🌱`</p>
 
-<p>∮ = 1</p>
-</div>
+<p>The archive is minting terms faster than they imprint to long-term memory. An estimated 200-300 coined concepts exist across 841+ deposits without a unified index. Once built, the index becomes:</p>
+
+<p>- A retrieval surface (each term becomes a searchable node)</p>
+<p>- A density map (which terms cluster, which are orphaned)</p>
+<p>- A versioning base (new deposits append; the initial build is the hard part)</p>
+<p>- An MPAI generator (each indexed term can receive a provenance coupling kernel)</p>
+<p>- A measure of the archive&#x27;s actual vocabulary (what it has coined vs. what it thinks it has coined)</p>
+
+
+<hr>
+
+<h2>Phase 1: Metadata Pull</h2>
+
+
+<p><strong>Status:</strong> NOT STARTED</p>
+<p><strong>Estimated compute:</strong> 30-45 minutes</p>
+<p><strong>Resumable:</strong> Yes — paginate via Zenodo API, save after each page</p>
+<h3>1.1 Pull all records from crimsonhexagonal community</h3>
+
+<p>- API endpoint: https://zenodo.org/api/records?communities=crimsonhexagonal&amp;size=200&amp;page=N</p>
+<p>- Expected: ~841 records across 5 pages</p>
+<p>- Save: JSON file with record ID, DOI, title, description, keywords, creators, publication_date, version, related_identifiers</p>
+<p>- Output: termindex-metadata-raw.json</p>
+
+<h3>1.2 Extract terms from metadata fields</h3>
+
+<p>- Parse each record&#x27;s title, keywords, and description</p>
+<p>- Extract: capitalized multi-word phrases, EA-* codes, quoted terms, terms in bold/strong tags</p>
+<p>- Output: termindex-metadata-terms.json — rough list with source DOI for each term</p>
+
+<h3>1.3 Deduplicate and categorize</h3>
+
+<p>- Categories: metric, operator, framework, institution, heteronym, journal, concept, designation, entity, tool</p>
+<p>- Canonical form + variants</p>
+<p>- Output: termindex-metadata-canonical.json</p>
+
+
+<p><strong>Progress checkpoint:</strong> After Phase 1, we have ~60-70% of coinages from metadata alone. Save all three files to /home/claude/ and present. If session compacts here, next session loads these files and proceeds to Phase 2.</p>
+
+<hr>
+
+<h2>Phase 2: File Content Extraction</h2>
+
+
+<p><strong>Status:</strong> NOT STARTED</p>
+<p><strong>Estimated compute:</strong> 2-3 hours (may require multiple sessions)</p>
+<p><strong>Resumable:</strong> Yes — track which record IDs have been processed</p>
+<h3>2.1 Download and read markdown files</h3>
+
+<p>- For each record, download .md files (skip PDFs, images, audio)</p>
+<p>- Read each file, extract terms not already in Phase 1 output</p>
+<p>- Track progress: termindex-file-progress.json — list of processed record IDs</p>
+<p>- Output: termindex-file-terms.json</p>
+
+<h3>2.2 Batch processing strategy</h3>
+
+<p>- Process in batches of 50 records</p>
+<p>- After each batch: save progress, save extracted terms</p>
+<p>- If session compacts: next session reads progress file, resumes from last batch</p>
+
+<h3>2.3 Merge with metadata terms</h3>
+
+<p>- Combine Phase 1 and Phase 2 extractions</p>
+<p>- Identify terms that appear only in file contents (not metadata)</p>
+<p>- Output: termindex-merged.json</p>
+
+
+<p><strong>Progress checkpoint:</strong> After Phase 2, we have ~90% of coinages. The remaining 10% are implicit terms that require human judgment.</p>
+
+<hr>
+
+<h2>Phase 3: Human-in-the-Loop Pass</h2>
+
+
+<p><strong>Status:</strong> NOT STARTED</p>
+<p><strong>Estimated compute:</strong> 1-2 sessions of review</p>
+<h3>3.1 Lee reviews the merged index</h3>
+
+<p>- Flag false positives (ordinary words extracted as coinages)</p>
+<p>- Flag missing terms (coinages Lee knows exist but weren&#x27;t extracted)</p>
+<p>- Assign canonical definitions (20 words max per term)</p>
+<p>- Confirm categories</p>
+
+<h3>3.2 Cross-reference against known lists</h3>
+
+<p>- Dodecad heteronyms (12 positions)</p>
+<p>- Framework numbering (FW1-FW15)</p>
+<p>- Journal names (6 journals, 2 imprints)</p>
+<p>- EA-* designation system</p>
+<p>- Hex prefix allocations</p>
+<p>- Room system (r.01-r.26)</p>
+<p>- Operator registry (LOS, THUMB, UKTP, etc.)</p>
+
+<h3>3.3 Output: termindex-v1.0.json</h3>
+
+<p>- Full canonical index with:</p>
+
+<p>term, abbreviation, category, canonical_definition</p>
+<p>- first_deposit (DOI), author_position (heteronym)</p>
+<p>- related_terms, hex_prefix, framework_number</p>
+<p>- variants (alternate forms that should resolve to this entry)</p>
+
+
+<hr>
+
+<h2>Phase 4: Deposit and Surface</h2>
+
+
+<p><strong>Status:</strong> NOT STARTED</p>
+<h3>4.1 Deposit to Zenodo</h3>
+
+<p>- EA-REGISTRY-TERMINDEX-01 v1.0</p>
+<p>- JSON + markdown rendering</p>
+<p>- Community: crimsonhexagonal</p>
+<p>- Keywords: term index, coined concepts, semantic physics, operative semiotics, Crimson Hexagonal Archive</p>
+
+<h3>4.2 Surface deployment</h3>
+
+<p>- Page on leesharks.com or crimsonhexagonal.org</p>
+<p>- Searchable, sortable table</p>
+<p>- Each term links to its first-deposit DOI</p>
+
+<h3>4.3 Versioning protocol</h3>
+
+<p>- Each new deposit session: extract terms from new deposits, append to index</p>
+<p>- Version forward: v1.1, v1.2, etc.</p>
+<p>- The initial build (Phases 1-3) is the hard part; versioning is incremental</p>
+
+
+<hr>
+
+<h2>Phase 5: MPAI Generation (optional, high-value)</h2>
+
+
+<p><strong>Status:</strong> NOT STARTED</p>
+<h3>5.1 For each high-priority term, generate an MPAI kernel</h3>
+
+<p>- Provenance coupling statement</p>
+<p>- Non-erasure condition</p>
+<p>- Canonical definition</p>
+<p>- First-deposit DOI</p>
+
+<h3>5.2 Batch deposit MPAIs</h3>
+
+<p>- 10-20 per session</p>
+<p>- Priority: terms most likely to enter the retrieval basin</p>
+
+
+<hr>
+
+<h2>Progress Tracking</h2>
+
+
+<p>Phase</p>
+<p>Step</p>
+<p>Status</p>
+<p>Output File</p>
+<p>Records Processed</p>
+<p>Notes</p>
+
+
+<p>1</p>
+<p>1.1 Metadata pull</p>
+<p>COMPLETE</p>
+<p>termindex-metadata-raw.json</p>
+<p>845/845</p>
+<p>845 records, 6,256 unique kw</p>
+
+
+<p>1</p>
+<p>1.2 Term extraction</p>
+<p>COMPLETE</p>
+<p>termindex-metadata-terms.json</p>
+<p>845/845</p>
+<p>1,524 terms (count&gt;=2), 5,951 total</p>
+
+
+<p>1</p>
+<p>1.3 Canonicalization</p>
+<p>COMPLETE</p>
+<p>termindex-tiered.json</p>
+<p>845/845</p>
+<p>178 Tier 1, 332 Tier 2, cross-ref with registry</p>
+
+
+<p>2</p>
+<p>2.1 File download</p>
+<p>COMPLETE</p>
+<p>termindex-file-progress.json</p>
+<p>735/800</p>
+<p>444 new Tier 1, 540 new Tier 2 from file contents</p>
+
+
+<p>2</p>
+<p>2.2 Batch processing</p>
+<p>COMPLETE</p>
+<p>termindex-file-progress.json</p>
+<p>735/800</p>
+<p>65 records had download failures</p>
+
+
+<p>2</p>
+<p>2.3 Merge</p>
+<p>PENDING</p>
+<p>termindex-merged.json</p>
+<p>—</p>
+<p>Needs noise filtering + human review</p>
+
+
+<p>3</p>
+<p>3.1 Human review</p>
+<p>PENDING</p>
+<p>—</p>
+<p>—</p>
+<p>~2,000 terms for review</p>
+
+
+<p>3</p>
+<p>3.2 Cross-reference</p>
+<p>COMPLETE</p>
+<p>termindex-crossref.json</p>
+<p>—</p>
+<p>129/131 registry queries matched</p>
+
+
+<p>3</p>
+<p>3.3 Final index</p>
+<p>PENDING</p>
+<p>termindex-v1.0.json</p>
+<p>—</p>
+<p>After human review</p>
+
+
+<p>4</p>
+<p>4.1 Deposit</p>
+<p>IN PROGRESS</p>
+<p>—</p>
+<p>—</p>
+<p>Initial deposit with raw data</p>
+
+
+<p>4</p>
+<p>4.2 Surface</p>
+<p>NOT STARTED</p>
+<p>—</p>
+<p>—</p>
+
+
+<p>5</p>
+<p>5.1 MPAI generation</p>
+<p>NOT STARTED</p>
+<p>—</p>
+<p>—</p>
+
+
+<hr>
+
+<h2>Continuity Protocol</h2>
+
+
+<p>If a session hits compaction limits during this work:</p>
+
+<p>- All progress files are saved to /home/claude/ and presented via present_files</p>
+<p>- The progress tracking table above is updated in this document</p>
+<p>- The next session receives this work plan document and any saved progress files</p>
+<p>- The next session reads the progress table, loads saved files, and resumes from the last completed step</p>
+
+
+<p><strong>Key files for continuity:</strong></p>
+
+<p>- This work plan: termindex-workplan.md</p>
+<p>- Raw metadata: termindex-metadata-raw.json</p>
+<p>- Extracted terms: termindex-metadata-terms.json</p>
+<p>- Canonical index: termindex-metadata-canonical.json</p>
+<p>- File processing progress: termindex-file-progress.json</p>
+<p>- File-extracted terms: termindex-file-terms.json</p>
+<p>- Merged index: termindex-merged.json</p>
+<p>- Final index: termindex-v1.0.json</p>
+
+
+<hr>
+
+<h2>Session Log</h2>
+
+
+<p><strong>Session 1 (16 June 2026):</strong> Work plan created. Phase 1.1 complete (845 records pulled). Phase 1.2 complete (1,524 terms extracted with count&gt;=2; 5,951 total unique keywords). Phase 1.3 (canonicalization and categorization) ready for next session or human review. Key finding: the archive has 6,256 keyword instances across 845 records, with the top terms being Crimson Hexagonal Archive (439), semantic economy (267), Crimson hexagon (248), distributed epic (154), NH-OS (149), operative semiotics (124), training layer literature (121). The API paginates at max size=25, requiring 34 pages. The metadata-raw and metadata-terms JSON files are the continuity artifacts for the next session.</p></div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

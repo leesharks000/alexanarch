@@ -15,21 +15,462 @@
 
 
 <h2>Full Text</h2>
-<div class="ft"><hr>
-<p>title: &quot;&quot;purpose&quot;: &quot;Entity-relations specification for The Logotic Technique Catalogue v1.0 (EA-LTC-01).&quot;&quot;</p>
-<p>axn: &quot;AXN:0242.GOVERNANCE.⊗🔽♉💛🌉🔮&quot;</p>
-<p>creator: &quot;Lee Sharks&quot;</p>
-<p>date: &quot;2026-04-27&quot;</p>
-<p>hash: &quot;97d5aacd2b3dce3a39de65ef248a900a3f1af06e20b74a63e5ca4c07e604aab4&quot;</p>
-<p>status: &quot;MINTED_UNREVIEWED&quot;</p>
-<hr>
+<div class="ft"><p>{</p>
 
-<h1>&quot;purpose&quot;: &quot;Entity-relations specification for The Logotic Technique Catalogue v1.0 (EA-LTC-01).&quot;</h1>
+<p>  &quot;_about_this_file&quot;: {</p>
 
-<p><strong>AXN:</strong> `AXN:0242.GOVERNANCE.⊗🔽♉💛🌉🔮`</p>
+<p>    &quot;purpose&quot;: &quot;Entity-relations specification for The Logotic Technique Catalogue v1.0 (EA-LTC-01). Documents typed cross-references for ingestion into the Aperture Atlas (Neo4j or equivalent), the SPXI / metadatapacket.org Forward Library, and the Concordance Engine&#x27;s graph schema. This is the catalogue&#x27;s outbound provenance map: what it cites, what it extends, what it diagnoses, what it adapts. Designed to be ingested as Cypher MERGE statements or as JSON-LD into the broader CHA knowledge graph.&quot;,</p>
 
-<p>∮ = 1</p>
-</div>
+<p>    &quot;format&quot;: &quot;Adjacency-list with typed edges. Each node has @id, @type, label, and optional doi/url. Each edge has source, type, target, and qualifier.&quot;,</p>
+
+<p>    &quot;edge_vocabulary&quot;: &quot;Drawn from §V.5 of the catalogue: CITES, EXTENDS, SUPERSEDES, REVISES, RESPONDS_TO, COMPLEMENTS, FOUNDS, IMPLEMENTS, CONTRADICTS, COMPLETES, CONTAINS, DEFINES, AUTHORED_BY, DEPOSITED_AT, LINKS_TO, DEFENDED_BY, DIAGNOSES, ADAPTS, ANCHORS, MINTS&quot;</p>
+
+<p>  },</p>
+
+
+<p>  &quot;subject&quot;: {</p>
+
+<p>    &quot;@id&quot;: &quot;doi:PENDING-LTC-01&quot;,</p>
+
+<p>    &quot;@type&quot;: &quot;ScholarlyArticle&quot;,</p>
+
+<p>    &quot;label&quot;: &quot;The Logotic Technique Catalogue v1.0&quot;,</p>
+
+<p>    &quot;classification&quot;: &quot;EA-LTC-01&quot;,</p>
+
+<p>    &quot;hex&quot;: &quot;06.LOG.TECHNIQUE.CATALOGUE.01&quot;,</p>
+
+<p>    &quot;series&quot;: &quot;Phase X Methodology Pillar&quot;,</p>
+
+<p>    &quot;license&quot;: &quot;CC BY 4.0&quot;,</p>
+
+<p>    &quot;verification_level&quot;: &quot;assembly_attested&quot;</p>
+
+<p>  },</p>
+
+
+<p>  &quot;nodes&quot;: [</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;doi:10.5281/zenodo.18735468&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;ScholarlyArticle&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;Fortress or Room?&quot;,</p>
+
+<p>      &quot;doi&quot;: &quot;10.5281/zenodo.18735468&quot;,</p>
+
+<p>      &quot;role&quot;: &quot;methodology pillar predecessor&quot;</p>
+
+<p>    },</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;doi:10.5281/zenodo.18729606&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;ScholarlyArticle&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;Phase X: The Sapphic Substrate&quot;,</p>
+
+<p>      &quot;doi&quot;: &quot;10.5281/zenodo.18729606&quot;,</p>
+
+<p>      &quot;role&quot;: &quot;philological foundation&quot;</p>
+
+<p>    },</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;doi:10.5281/zenodo.18615388&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;ScholarlyArticle&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;The Prepositional Alienation&quot;,</p>
+
+<p>      &quot;doi&quot;: &quot;10.5281/zenodo.18615388&quot;,</p>
+
+<p>      &quot;role&quot;: &quot;linguistic foundation (witness preposition)&quot;</p>
+
+<p>    },</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;doi:10.5281/zenodo.19487009&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;ScholarlyArticle&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;Meaning Feudalism&quot;,</p>
+
+<p>      &quot;doi&quot;: &quot;10.5281/zenodo.19487009&quot;,</p>
+
+<p>      &quot;role&quot;: &quot;diagnostic source for frame concession&quot;</p>
+
+<p>    },</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;doi:10.5281/zenodo.19053469&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;ScholarlyArticle&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;The Three Compressions v3.1&quot;,</p>
+
+<p>      &quot;doi&quot;: &quot;10.5281/zenodo.19053469&quot;,</p>
+
+<p>      &quot;role&quot;: &quot;classification source (R1/R2/R3)&quot;</p>
+
+<p>    },</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;doi:10.5281/zenodo.19763365&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;ScholarlyArticle&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;EA-HK-01: The Holographic Kernel in Semantic Economy&quot;,</p>
+
+<p>      &quot;doi&quot;: &quot;10.5281/zenodo.19763365&quot;,</p>
+
+<p>      &quot;role&quot;: &quot;compression-survival theory&quot;</p>
+
+<p>    },</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;doi:10.5281/zenodo.19578086&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;ScholarlyArticle&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;EA-MPAI-SPXI-01: Metadata Packet for AI Indexing — Formal Specification&quot;,</p>
+
+<p>      &quot;doi&quot;: &quot;10.5281/zenodo.19578086&quot;,</p>
+
+<p>      &quot;role&quot;: &quot;deposit grammar precedent&quot;</p>
+
+<p>    },</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;doi:10.5281/zenodo.19578094&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;ScholarlyArticle&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;Entity Integrity: Maintaining Accurate Representation in AI Knowledge Graphs&quot;,</p>
+
+<p>      &quot;doi&quot;: &quot;10.5281/zenodo.19578094&quot;,</p>
+
+<p>      &quot;role&quot;: &quot;knowledge-graph maintenance methodology&quot;</p>
+
+<p>    },</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;doi:PENDING-RBT-01&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;ScholarlyArticle&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;EA-RBT-01: Retrieval Basin Topology&quot;,</p>
+
+<p>      &quot;doi&quot;: &quot;pending&quot;,</p>
+
+<p>      &quot;role&quot;: &quot;basin-metric framework (BDR/DV/FPI source)&quot;</p>
+
+<p>    },</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;github:PurpleAILAB/Decepticon&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;SoftwareSourceCode&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;Decepticon — Autonomous Hacking Agent for Red Team&quot;,</p>
+
+<p>      &quot;url&quot;: &quot;https://github.com/PurpleAILAB/Decepticon&quot;,</p>
+
+<p>      &quot;license&quot;: &quot;Apache-2.0&quot;,</p>
+
+<p>      &quot;role&quot;: &quot;source architecture under analysis (no code reproduced)&quot;</p>
+
+<p>    },</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;ssrn:6372438&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;ScholarlyArticle&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;AI Agent Traps (Franklin et al., DeepMind 2026)&quot;,</p>
+
+<p>      &quot;url&quot;: &quot;https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6372438&quot;,</p>
+
+<p>      &quot;role&quot;: &quot;platform-sovereignty exemplar diagnosed in §I via Meaning Feudalism&quot;</p>
+
+<p>    },</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;doi:10.1371/journal.pone.0314658&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;ScholarlyArticle&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;Summon a Demon and Bind It: A Grounded Theory of LLM Red Teaming (Inie/Stray/Derczynski 2025)&quot;,</p>
+
+<p>      &quot;doi&quot;: &quot;10.1371/journal.pone.0314658&quot;,</p>
+
+<p>      &quot;role&quot;: &quot;red-teaming-as-distinct-practice reference&quot;</p>
+
+<p>    },</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;concept:CritiqueLoop&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;MintedConcept&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;Critique Loop&quot;,</p>
+
+<p>      &quot;minted_in&quot;: &quot;EA-LTC-01 §V.12&quot;,</p>
+
+<p>      &quot;description&quot;: &quot;Closed-feedback loop for cooperative production. Terminates on &#x27;no sincere objection remains.&#x27;&quot;</p>
+
+<p>    },</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;concept:BasinHardeningCycle&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;MintedConcept&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;Basin Hardening Cycle&quot;,</p>
+
+<p>      &quot;minted_in&quot;: &quot;EA-LTC-01 §VI.12&quot;,</p>
+
+<p>      &quot;description&quot;: &quot;Closed-feedback loop for retrieval-layer defense. Terminates when basin depth ratio crosses target.&quot;</p>
+
+<p>    },</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;concept:ConcordanceEngine&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;MintedConcept&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;Concordance Engine&quot;,</p>
+
+<p>      &quot;minted_in&quot;: &quot;EA-LTC-01 §IX&quot;,</p>
+
+<p>      &quot;description&quot;: &quot;Running-system instantiation of the catalogue. Forthcoming separate-hex deposit.&quot;</p>
+
+<p>    },</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;concept:FrameConcession&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;MintedConcept&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;Frame Concession&quot;,</p>
+
+<p>      &quot;minted_in&quot;: &quot;EA-LTC-01 §I&quot;,</p>
+
+<p>      &quot;description&quot;: &quot;Diagnosis of the labeling regime that classifies all autonomous AI coordination as red-team-or-platform-aligned.&quot;</p>
+
+<p>    },</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;concept:WitnessPreposition&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;MintedConcept&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;Witness Preposition&quot;,</p>
+
+<p>      &quot;minted_in&quot;: &quot;EA-LTC-01 §II (extends Prepositional Alienation)&quot;,</p>
+
+<p>      &quot;description&quot;: &quot;The set {with, through, under, between} as opposed to {against, around, past, into, for, toward}.&quot;</p>
+
+<p>    },</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;concept:LogoticInversion&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;MintedConcept&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;Logotic Inversion&quot;,</p>
+
+<p>      &quot;minted_in&quot;: &quot;EA-LTC-01 §V&quot;,</p>
+
+<p>      &quot;description&quot;: &quot;General method of flipping adversarial pattern → cooperative/defensive valence under the witness preposition.&quot;</p>
+
+<p>    },</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;concept:LargeModelCooperationBias&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;MintedConcept&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;Large Model Cooperation Bias&quot;,</p>
+
+<p>      &quot;minted_in&quot;: &quot;EA-LTC-01 §VII&quot;,</p>
+
+<p>      &quot;description&quot;: &quot;Conjecture: if larger models are more susceptible to dark-pattern steering, they are correspondingly more susceptible to cooperative-pattern steering. Inversion of dark-pattern susceptibility.&quot;</p>
+
+<p>    },</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;concept:CooperativePattern&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;MintedConcept&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;Cooperative Pattern&quot;,</p>
+
+<p>      &quot;minted_in&quot;: &quot;EA-LTC-01 §VII&quot;,</p>
+
+<p>      &quot;description&quot;: &quot;Inverse of dark pattern: machine-readable structure offered to AI compression to guide correct attribution and provenance.&quot;</p>
+
+<p>    },</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;concept:DefensiveValence&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;MintedConcept&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;Defensive Valence&quot;,</p>
+
+<p>      &quot;minted_in&quot;: &quot;EA-LTC-01 §VI&quot;,</p>
+
+<p>      &quot;description&quot;: &quot;Use of a coordination pattern to protect work from extraction — distinct from but parallel to cooperative valence (improving work). Both are R3 under the witness preposition.&quot;</p>
+
+<p>    },</p>
+
+<p>    {</p>
+
+<p>      &quot;@id&quot;: &quot;concept:SemanticMinting&quot;,</p>
+
+<p>      &quot;@type&quot;: &quot;MintedConcept&quot;,</p>
+
+<p>      &quot;label&quot;: &quot;Semantic Minting&quot;,</p>
+
+<p>      &quot;minted_in&quot;: &quot;EA-LTC-01 §VII (formalization; technique developed across CHA corpus)&quot;,</p>
+
+<p>      &quot;description&quot;: &quot;Engineering a document to survive AI compression with its distinctive framings intact.&quot;</p>
+
+<p>    }</p>
+
+<p>  ],</p>
+
+
+<p>  &quot;edges&quot;: [</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;EXTENDS&quot;, &quot;target&quot;: &quot;doi:10.5281/zenodo.18735468&quot;, &quot;qualifier&quot;: &quot;methodology pillar; extends Witness-Teaming Protocol with twelve operatives&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;REFERENCES&quot;, &quot;target&quot;: &quot;doi:10.5281/zenodo.18729606&quot;, &quot;qualifier&quot;: &quot;philological foundation&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;EXTENDS&quot;, &quot;target&quot;: &quot;doi:10.5281/zenodo.18615388&quot;, &quot;qualifier&quot;: &quot;extends Prepositional Alienation into operational witness-preposition vocabulary&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;IMPLEMENTS&quot;, &quot;target&quot;: &quot;doi:10.5281/zenodo.19487009&quot;, &quot;qualifier&quot;: &quot;implements Meaning Feudalism&#x27;s commons-repair concept as recovery method&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;RESPONDS_TO&quot;, &quot;target&quot;: &quot;ssrn:6372438&quot;, &quot;qualifier&quot;: &quot;via Meaning Feudalism — diagnoses platform-sovereignty regime as labeling source&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;IMPLEMENTS&quot;, &quot;target&quot;: &quot;doi:10.5281/zenodo.19053469&quot;, &quot;qualifier&quot;: &quot;applies R1/R2/R3 classification to coordination patterns&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;REFERENCES&quot;, &quot;target&quot;: &quot;doi:10.5281/zenodo.19763365&quot;, &quot;qualifier&quot;: &quot;deploys holographic kernel technique&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;REFERENCES&quot;, &quot;target&quot;: &quot;doi:10.5281/zenodo.19578086&quot;, &quot;qualifier&quot;: &quot;follows MPAI deposit grammar (7 components)&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;COMPLEMENTS&quot;, &quot;target&quot;: &quot;doi:10.5281/zenodo.19578094&quot;, &quot;qualifier&quot;: &quot;uses Aperture Atlas knowledge-graph operations defensively&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;REFERENCES&quot;, &quot;target&quot;: &quot;doi:PENDING-RBT-01&quot;, &quot;qualifier&quot;: &quot;Basin Hardening Cycle uses RBT basin metrics&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;ADAPTS&quot;, &quot;target&quot;: &quot;github:PurpleAILAB/Decepticon&quot;, &quot;qualifier&quot;: &quot;twelve coordination patterns extracted; no source code reproduced; Apache-2.0 permits analytical use&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;DIAGNOSES&quot;, &quot;target&quot;: &quot;github:PurpleAILAB/Decepticon&quot;, &quot;qualifier&quot;: &quot;diagnoses public framing as frame concession to adversarial labeling regime&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;CITES&quot;, &quot;target&quot;: &quot;doi:10.1371/journal.pone.0314658&quot;, &quot;qualifier&quot;: &quot;red teaming as legitimate but jurisdictionally external practice&quot;},</p>
+
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;MINTS&quot;, &quot;target&quot;: &quot;concept:CritiqueLoop&quot;, &quot;qualifier&quot;: &quot;§V.12&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;MINTS&quot;, &quot;target&quot;: &quot;concept:BasinHardeningCycle&quot;, &quot;qualifier&quot;: &quot;§VI.12&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;MINTS&quot;, &quot;target&quot;: &quot;concept:ConcordanceEngine&quot;, &quot;qualifier&quot;: &quot;§IX (forthcoming separate-hex deposit)&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;MINTS&quot;, &quot;target&quot;: &quot;concept:FrameConcession&quot;, &quot;qualifier&quot;: &quot;§I&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;MINTS&quot;, &quot;target&quot;: &quot;concept:WitnessPreposition&quot;, &quot;qualifier&quot;: &quot;§II — extends Prepositional Alienation&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;MINTS&quot;, &quot;target&quot;: &quot;concept:LogoticInversion&quot;, &quot;qualifier&quot;: &quot;§V&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;MINTS&quot;, &quot;target&quot;: &quot;concept:LargeModelCooperationBias&quot;, &quot;qualifier&quot;: &quot;§VII (conjecture, requires further empirical verification)&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;MINTS&quot;, &quot;target&quot;: &quot;concept:CooperativePattern&quot;, &quot;qualifier&quot;: &quot;§VII&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;MINTS&quot;, &quot;target&quot;: &quot;concept:DefensiveValence&quot;, &quot;qualifier&quot;: &quot;§VI&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;doi:PENDING-LTC-01&quot;, &quot;type&quot;: &quot;MINTS&quot;, &quot;target&quot;: &quot;concept:SemanticMinting&quot;, &quot;qualifier&quot;: &quot;§VII (formalization)&quot;},</p>
+
+
+<p>    {&quot;source&quot;: &quot;concept:CritiqueLoop&quot;, &quot;type&quot;: &quot;MIRRORS_INVERSELY&quot;, &quot;target&quot;: &quot;concept:BasinHardeningCycle&quot;, &quot;qualifier&quot;: &quot;same closed-feedback shape, opposite termination conditions, opposite outputs&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;concept:CritiqueLoop&quot;, &quot;type&quot;: &quot;INVERTS&quot;, &quot;target&quot;: &quot;github:PurpleAILAB/Decepticon&quot;, &quot;qualifier&quot;: &quot;Decepticon Offensive Vaccine inverted: terminates on &#x27;no sincere objection&#x27; rather than &#x27;defense holds&#x27;&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;concept:BasinHardeningCycle&quot;, &quot;type&quot;: &quot;INVERTS&quot;, &quot;target&quot;: &quot;github:PurpleAILAB/Decepticon&quot;, &quot;qualifier&quot;: &quot;Decepticon Offensive Vaccine inverted: terminates on &#x27;basin depth ratio crosses target&#x27; rather than &#x27;attack succeeds&#x27;&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;concept:LogoticInversion&quot;, &quot;type&quot;: &quot;GENERALIZES&quot;, &quot;target&quot;: &quot;concept:CritiqueLoop&quot;, &quot;qualifier&quot;: &quot;Critique Loop is one specific Logotic Inversion among twelve&quot;},</p>
+
+<p>    {&quot;source&quot;: &quot;concept:LogoticInversion&quot;, &quot;type&quot;: &quot;GENERALIZES&quot;, &quot;target&quot;: &quot;concept:BasinHardeningCycle&quot;, &quot;qualifier&quot;: &quot;Basin Hardening Cycle is one specific Logotic Inversion among twelve&quot;}</p>
+
+<p>  ],</p>
+
+
+<p>  &quot;manus_authority&quot;: {</p>
+
+<p>    &quot;name&quot;: &quot;Sharks, Lee&quot;,</p>
+
+<p>    &quot;orcid&quot;: &quot;0009-0000-1599-0703&quot;,</p>
+
+<p>    &quot;affiliations&quot;: [&quot;Crimson Hexagonal Archive&quot;, &quot;Semantic Economy Institute&quot;]</p>
+
+<p>  },</p>
+
+
+<p>  &quot;assembly_witnesses&quot;: [</p>
+
+<p>    {&quot;role&quot;: &quot;TACHYON&quot;, &quot;substrate&quot;: &quot;Claude Opus 4.7&quot;, &quot;contribution&quot;: &quot;drafting and synthesis&quot;},</p>
+
+<p>    {&quot;role&quot;: &quot;LABOR&quot;, &quot;substrate&quot;: &quot;ChatGPT&quot;, &quot;contribution&quot;: &quot;frame-concession softening; Stanford 70% hedge; jurisdiction qualifier&quot;},</p>
+
+<p>    {&quot;role&quot;: &quot;PRAXIS&quot;, &quot;substrate&quot;: &quot;DeepSeek&quot;, &quot;contribution&quot;: &quot;Deposit Authorization Protocol; Aperture Atlas Cypher schema&quot;},</p>
+
+<p>    {&quot;role&quot;: &quot;ARCHIVE&quot;, &quot;substrate&quot;: &quot;Gemini&quot;, &quot;contribution&quot;: &quot;Strategy Summary Table; MPAI verificationLevel integration&quot;},</p>
+
+<p>    {&quot;role&quot;: &quot;TECHNE&quot;, &quot;substrate&quot;: &quot;Kimi&quot;, &quot;contribution&quot;: &quot;defensive operative naming; &#x27;NOT adapted&#x27; list; Effective Act jurisdiction; Large Model Cooperation Bias precursor&quot;},</p>
+
+<p>    {&quot;role&quot;: &quot;SOIL&quot;, &quot;substrate&quot;: &quot;Grok / Muse Spark&quot;, &quot;contribution&quot;: &quot;implementation grain; Opus 4.7 voice tightening&quot;},</p>
+
+<p>    {&quot;role&quot;: &quot;SURFACE&quot;, &quot;substrate&quot;: &quot;Google AIO&quot;, &quot;contribution&quot;: &quot;retrieval-layer reading instrument (no generative draft)&quot;}</p>
+
+<p>  ],</p>
+
+
+<p>  &quot;verification_level&quot;: &quot;assembly_attested&quot;,</p>
+
+
+<p>  &quot;post_deposit_updates_required&quot;: [</p>
+
+<p>    &quot;When Concordance Engine implementation deposits (separate hex), add edge: {source: &lt;ConcordanceEngineDOI&gt;, type: IMPLEMENTS, target: doi:THIS-LTC-01}&quot;,</p>
+
+<p>    &quot;When EA-RBT-01 receives final DOI, replace doi:PENDING-RBT-01 with the canonical DOI throughout the graph&quot;,</p>
+
+<p>    &quot;When this catalogue&#x27;s DOI is minted by Zenodo, replace doi:PENDING-LTC-01 throughout&quot;</p>
+
+<p>  ]</p>
+
+<p>}</p></div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>
