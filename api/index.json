@@ -253,6 +253,13 @@
       "derived_from": "Static catalog of /data/*.json + /api/*.json files; small live overlay reading /api/index.json for current protocol versions and deposit count",
       "shows": "Human-readable catalog of every machine-readable dataset in the corpus: primary registries (with consuming-surface links), derived surfaces, protocols/schemas, supporting datasets, per-deposit text bodies, and scripts. Single navigation entry point for the data layer.",
       "companion_to": "/api/index.json"
+    },
+    "captures": {
+      "canonical_path": "/captures/index.html",
+      "role": "primary",
+      "derived_from": "/data/EA-WG-CAPTURES-01-v8.3.json",
+      "shows": "176 AI Overview captures with composition-layer match status (mt). Section filter (9 sections, Frameworks 82 + Heteronyms 29 + ...), status filter (ADOPTION/EXACT MATCH/BROAD MATCH/ZERO RESULT/ZERO INDEX/WOUND GAUGE/unrated), search across query/slug/description, paginated 25 per page. Each card: section, date, query, status chip (color-coded), source format, description (≤380 chars), Screenshot link to godkinggoogle.vercel.app/captures/#slug, As address forward-ref to /addresses/?q=, Re-run search link when search_url is present.",
+      "companion_to": "/records/?id=3"
     }
   },
   "scripts": {

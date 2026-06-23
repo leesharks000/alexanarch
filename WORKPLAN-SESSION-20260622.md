@@ -235,19 +235,23 @@ Live checklist. Items marked ✓ as they ship. Open items prioritized for this s
 - [x] 32 dataset entries cataloged total; markup validated (142/142 div, 6/6 h2)
 - [x] Workplan item updated with completion record (this line)
 
-### 8.2 Captures surface ▢
+### 8.2 Captures surface ✓ (commit pending this push)
 
 **Goal:** `/captures/index.html` — 176 AI Overview captures browseable by section/status. Currently only visible as deposit #3's wiki entry.
 
 **Steps:**
 
-- [ ] Build `/captures/index.html` — fetch `EA-WG-CAPTURES-01-v8.3.json`
-- [ ] Section filter chips (s = Frameworks / Mary Lee Constellation / etc.)
-- [ ] Status (`mt`) filter chips (EXACT MATCH / BROAD MATCH / ADOPTION / ZERO RESULT / null)
-- [ ] Per-capture: slug, query, date, source-format, status, description, gallery link to `godkinggoogle.vercel.app`
-- [ ] Paginated by section
-- [ ] Add to home nav
-- [ ] Register in `/api/index.json`
+- [x] Build `/captures/index.html` (13.2 KB dynamic) — fetches `EA-WG-CAPTURES-01-v8.3.json`
+- [x] Section filter chips — all 9 sections with counts: Frameworks 82, Heteronyms 29, Sites & Surfaces 16, Revelation First 14, Revelation First / Semantic Economy 13, Books & Projects 10, Identity 8, Mary Lee Constellation 2, Semantic Economy 2
+- [x] Status (`mt`) filter chips with intent ordering: ADOPTION (32, green), EXACT MATCH (14, teal), BROAD MATCH (40, yellow), ZERO RESULT (1, red), ZERO INDEX (1, red), WOUND GAUGE (1, purple), unrated (87, gray) — each chip color-coded
+- [x] Search across query / slug / description
+- [x] Per-capture card: section badge, date, query, status chip + source format, description (≤380 chars), action row
+- [x] Action row: "Screenshot →" deep link to `godkinggoogle.vercel.app/captures/#<slug>`, "As address →" forward-ref to `/addresses/?q=`, "Re-run search →" where `search_url` present
+- [x] Paginated 25/page
+- [x] Deep-linking: `?slug=<slug>` and `?q=<query>` populate search on load
+- [x] Four stats cards: Captures / Sections / Status types / Capture days
+- [x] Added `/captures/` to home nav AND added missing `/datasets/` to existing surface navs (wiki, graph, lexical, citations) for cross-surface nav consistency
+- [x] Register in `/api/index.json` as `role: primary` (companion_to deposit #3 record)
 
 ### 8.3 Semantic addresses surface ▢
 
