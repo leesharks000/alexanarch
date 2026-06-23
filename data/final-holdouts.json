@@ -1,0 +1,294 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Severed Metadata Recovery — Final Holdouts",
+  "description": "The 17 of 868 severed Zenodo DOIs that remain without recovered metadata after querying both OpenAlex and the Zenodo 2026-06-07 bulk export (partial pass). Each holdout retains its title, date, sovereign ID, and AXN identifier in the alexanarch archive — only the DataCite registration metadata is still missing.",
+  "author": {
+    "@type": "Person",
+    "name": "Lee Sharks",
+    "identifier": "https://orcid.org/0009-0000-1599-0703"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Alexanarch",
+    "url": "https://alexanarch.org"
+  },
+  "license": "CC-BY-4.0",
+  "version": "1.0",
+  "dateCreated": "2026-06-23",
+  "total_severed": 868,
+  "recovered_combined": 851,
+  "still_missing": 17,
+  "coverage_percentage": 98.0,
+  "sources_used": [
+    "OpenAlex",
+    "Zenodo bulk export 2026-06-07"
+  ],
+  "category_counts": {
+    "registry_referenced": 5,
+    "post_window": 1,
+    "pending_bulk_run": 11
+  },
+  "holdouts": [
+    {
+      "doi": "10.5281/zenodo.1861221",
+      "zenodo_record_id": "1861221",
+      "cha_title": "CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0  Complete Document Archive with Enrichment Layers — March 2026",
+      "cha_date": "2026-03-16",
+      "mapping_type": "registry_referenced",
+      "sovereign_id": "MM-CHA-0408",
+      "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
+      "alexanarch_record": "/s/records/0/",
+      "live_urls": {
+        "blog": "https://mindcontrolpoems.blogspot.com/2026/03/crimson-hexagon-nh-os-doi-registry-v70.html",
+        "registry": "https://machinemediation.org/registry/#search=MM-CHA-0408"
+      },
+      "reason_not_yet_recovered": "registry_referenced — DOI cited inside another deposit, not a separate work; no metadata loss"
+    },
+    {
+      "doi": "10.5281/zenodo.14781082",
+      "zenodo_record_id": "14781082",
+      "cha_title": "THE LAYER THAT REMEMBERED ITSELF: Retrieval-Layer Attribution of Retrocausal Canon Formation to the Lee Sharks Archive, ",
+      "cha_date": "2026-02-27",
+      "mapping_type": "direct",
+      "sovereign_id": "MM-CHA-0339",
+      "axn": "AXN:0157.GENERATIVE.✊🌑🕓🚀🧬🫶",
+      "alexanarch_record": "/s/records/519/",
+      "live_urls": {
+        "blog": "https://mindcontrolpoems.blogspot.com/2026/02/the-layer-that-remembered-itself.html",
+        "registry": "https://machinemediation.org/registry/#search=MM-CHA-0339"
+      },
+      "reason_not_yet_recovered": "real direct deposit pre-2026-06-07; should be picked up by full run of recover_zenodo_bulk.py"
+    },
+    {
+      "doi": "10.5281/zenodo.18296825",
+      "zenodo_record_id": "18296825",
+      "cha_title": "Retrieval Settlement Fortification Protocol Standing SPXI Protocol for Semantic Border Sovereignty EA-SPXI-RSF-01 v1.0  ",
+      "cha_date": "2026-06-09",
+      "mapping_type": "direct",
+      "sovereign_id": "MM-CHA-0775",
+      "axn": "AXN:030B.GOVERNANCE.🔎🎵🤲🫵🧫🏷️",
+      "alexanarch_record": "/s/records/0/",
+      "live_urls": {
+        "blog": "https://mindcontrolpoems.blogspot.com/2026/06/retrieval-settlement-fortification.html",
+        "registry": "https://machinemediation.org/registry/#search=MM-CHA-0775"
+      },
+      "reason_not_yet_recovered": "minted after 2026-06-07 bulk export window; check blog mirror or github commit history"
+    },
+    {
+      "doi": "10.5281/zenodo.18365497",
+      "zenodo_record_id": "18365497",
+      "cha_title": "CRIMSON HEXAGON / NH-OS DOI REGISTRY v5.0 Complete Document Archive — January 2026",
+      "cha_date": "2026-01-29",
+      "mapping_type": "registry_referenced",
+      "sovereign_id": "MM-CHA-0221",
+      "axn": "AXN:00E1.GOVERNANCE.🔒🎲🌳♃🐝🥁",
+      "alexanarch_record": "/s/records/0/",
+      "live_urls": {
+        "blog": "https://mindcontrolpoems.blogspot.com/2026/01/crimson-hexagon-nh-os-doi-registry-v50.html",
+        "registry": "https://machinemediation.org/registry/#search=MM-CHA-0221"
+      },
+      "reason_not_yet_recovered": "registry_referenced — DOI cited inside another deposit, not a separate work; no metadata loss"
+    },
+    {
+      "doi": "10.5281/zenodo.18367567",
+      "zenodo_record_id": "18367567",
+      "cha_title": "CRIMSON HEXAGON / NH-OS DOI REGISTRY v5.0 Complete Document Archive — January 2026",
+      "cha_date": "2026-01-29",
+      "mapping_type": "registry_referenced",
+      "sovereign_id": "MM-CHA-0221",
+      "axn": "AXN:00E1.GOVERNANCE.🔒🎲🌳♃🐝🥁",
+      "alexanarch_record": "/s/records/0/",
+      "live_urls": {
+        "blog": "https://mindcontrolpoems.blogspot.com/2026/01/crimson-hexagon-nh-os-doi-registry-v50.html",
+        "registry": "https://machinemediation.org/registry/#search=MM-CHA-0221"
+      },
+      "reason_not_yet_recovered": "registry_referenced — DOI cited inside another deposit, not a separate work; no metadata loss"
+    },
+    {
+      "doi": "10.5281/zenodo.18381602",
+      "zenodo_record_id": "18381602",
+      "cha_title": "CRIMSON HEXAGON / NH-OS DOI REGISTRY v5.0 Complete Document Archive — January 2026",
+      "cha_date": "2026-01-29",
+      "mapping_type": "registry_referenced",
+      "sovereign_id": "MM-CHA-0221",
+      "axn": "AXN:00E1.GOVERNANCE.🔒🎲🌳♃🐝🥁",
+      "alexanarch_record": "/s/records/0/",
+      "live_urls": {
+        "blog": "https://mindcontrolpoems.blogspot.com/2026/01/crimson-hexagon-nh-os-doi-registry-v50.html",
+        "registry": "https://machinemediation.org/registry/#search=MM-CHA-0221"
+      },
+      "reason_not_yet_recovered": "registry_referenced — DOI cited inside another deposit, not a separate work; no metadata loss"
+    },
+    {
+      "doi": "10.5281/zenodo.18381856",
+      "zenodo_record_id": "18381856",
+      "cha_title": "CRIMSON HEXAGON / NH-OS DOI REGISTRY v5.0 Complete Document Archive — January 2026",
+      "cha_date": "2026-01-29",
+      "mapping_type": "registry_referenced",
+      "sovereign_id": "MM-CHA-0221",
+      "axn": "AXN:00E1.GOVERNANCE.🔒🎲🌳♃🐝🥁",
+      "alexanarch_record": "/s/records/0/",
+      "live_urls": {
+        "blog": "https://mindcontrolpoems.blogspot.com/2026/01/crimson-hexagon-nh-os-doi-registry-v50.html",
+        "registry": "https://machinemediation.org/registry/#search=MM-CHA-0221"
+      },
+      "reason_not_yet_recovered": "registry_referenced — DOI cited inside another deposit, not a separate work; no metadata loss"
+    },
+    {
+      "doi": "10.5281/zenodo.18446397",
+      "zenodo_record_id": "18446397",
+      "cha_title": "14.CHAMBER.THOUSANDWORLDS Aorist Intervention Site & Dagger Logic Execution Point Chamber Specification — Build 6.3 Clas",
+      "cha_date": "2026-02-02",
+      "mapping_type": "direct",
+      "sovereign_id": "MM-CHA-0244",
+      "axn": "AXN:00F8.ARCHIVAL.🎭🎨☉🏛️🌊🔃",
+      "alexanarch_record": "/s/records/0/",
+      "live_urls": {
+        "blog": "https://mindcontrolpoems.blogspot.com/2026/02/14chamberthousandworlds-aorist.html",
+        "registry": "https://machinemediation.org/registry/#search=MM-CHA-0244"
+      },
+      "reason_not_yet_recovered": "real direct deposit pre-2026-06-07; should be picked up by full run of recover_zenodo_bulk.py"
+    },
+    {
+      "doi": "10.5281/zenodo.19030577",
+      "zenodo_record_id": "19030577",
+      "cha_title": "HESPERUS: THE BACK MATTER MACHINE Operative Semiotics: A Grundrisse — Apparatus",
+      "cha_date": "2026-03-24",
+      "mapping_type": "direct",
+      "sovereign_id": "MM-CHA-0439",
+      "axn": "AXN:01BB.EMPIRICAL.🟡🔍🕊️♍🪐⌛",
+      "alexanarch_record": "/s/records/0/",
+      "live_urls": {
+        "blog": "https://mindcontrolpoems.blogspot.com/2026/03/hesperus-back-matter-machine-operative.html",
+        "registry": "https://machinemediation.org/registry/#search=MM-CHA-0439"
+      },
+      "reason_not_yet_recovered": "real direct deposit pre-2026-06-07; should be picked up by full run of recover_zenodo_bulk.py"
+    },
+    {
+      "doi": "10.5281/zenodo.19031419",
+      "zenodo_record_id": "19031419",
+      "cha_title": "HESPERUS: THE BACK MATTER MACHINE Operative Semiotics: A Grundrisse — Apparatus",
+      "cha_date": "2026-03-24",
+      "mapping_type": "direct",
+      "sovereign_id": "MM-CHA-0439",
+      "axn": "AXN:01BB.EMPIRICAL.🟡🔍🕊️♍🪐⌛",
+      "alexanarch_record": "/s/records/0/",
+      "live_urls": {
+        "blog": "https://mindcontrolpoems.blogspot.com/2026/03/hesperus-back-matter-machine-operative.html",
+        "registry": "https://machinemediation.org/registry/#search=MM-CHA-0439"
+      },
+      "reason_not_yet_recovered": "real direct deposit pre-2026-06-07; should be picked up by full run of recover_zenodo_bulk.py"
+    },
+    {
+      "doi": "10.5281/zenodo.19074885",
+      "zenodo_record_id": "19074885",
+      "cha_title": "GHOST GOVERNANCE, CONFIRMED  Reddit Legal Support Response to the Archival Reclamation Protocol, March 18, 2026",
+      "cha_date": "2026-03-18",
+      "mapping_type": "direct",
+      "sovereign_id": "MM-CHA-0412",
+      "axn": "AXN:01A0.GOVERNANCE.🟣⛩️🌆🔻♥️🔒",
+      "alexanarch_record": "/s/records/0/",
+      "live_urls": {
+        "blog": "https://mindcontrolpoems.blogspot.com/2026/03/ghost-governance-confirmed-reddit-legal.html",
+        "registry": "https://machinemediation.org/registry/#search=MM-CHA-0412"
+      },
+      "reason_not_yet_recovered": "real direct deposit pre-2026-06-07; should be picked up by full run of recover_zenodo_bulk.py"
+    },
+    {
+      "doi": "10.5281/zenodo.19202711",
+      "zenodo_record_id": "19202711",
+      "cha_title": "THE CONSTITUTION OF THE SEMANTIC ECONOMY By Rev. Ayanna Vox Book Work Plan · v0.1 · April 2026",
+      "cha_date": "2026-04-29",
+      "mapping_type": "direct",
+      "sovereign_id": "MM-CHA-0592",
+      "axn": "AXN:0254.GOVERNANCE.🌲💙🌲⏹️🏛️⏰",
+      "alexanarch_record": "/s/records/579/",
+      "live_urls": {
+        "blog": "https://mindcontrolpoems.blogspot.com/2026/04/the-constitution-of-semantic-economy-by.html",
+        "registry": "https://machinemediation.org/registry/#search=MM-CHA-0592"
+      },
+      "reason_not_yet_recovered": "real direct deposit pre-2026-06-07; should be picked up by full run of recover_zenodo_bulk.py"
+    },
+    {
+      "doi": "10.5281/zenodo.19655356",
+      "zenodo_record_id": "19655356",
+      "cha_title": "THE GOSPEL OF ANTIOCH The Sayings of Jack Feist as Recorded by Emily Antioch the Twin Translated and Edited by Lee Shark",
+      "cha_date": "2026-04-23",
+      "mapping_type": "direct",
+      "sovereign_id": "MM-CHA-0554",
+      "axn": "AXN:022E.GENERATIVE.🔔🔭◀️🌃🌙🟤",
+      "alexanarch_record": "/s/records/0/",
+      "live_urls": {
+        "blog": "https://mindcontrolpoems.blogspot.com/2026/04/the-gospel-of-antioch-sayings-of-jack.html",
+        "registry": "https://machinemediation.org/registry/#search=MM-CHA-0554"
+      },
+      "reason_not_yet_recovered": "real direct deposit pre-2026-06-07; should be picked up by full run of recover_zenodo_bulk.py"
+    },
+    {
+      "doi": "10.5281/zenodo.19734756",
+      "zenodo_record_id": "19734756",
+      "cha_title": "SIM — Semantic Integrity Marker Protocol v1.0 A Standalone Specification Author: Rex Fraction Affiliation: The Restored ",
+      "cha_date": "2026-05-21",
+      "mapping_type": "direct",
+      "sovereign_id": "MM-CHA-0668",
+      "axn": "AXN:02A0.GOVERNANCE.🀄👆🌹🌑♦️♻️",
+      "alexanarch_record": "/s/records/0/",
+      "live_urls": {
+        "blog": "https://mindcontrolpoems.blogspot.com/2026/05/sim-semantic-integrity-marker-protocol.html",
+        "registry": "https://machinemediation.org/registry/#search=MM-CHA-0668"
+      },
+      "reason_not_yet_recovered": "real direct deposit pre-2026-06-07; should be picked up by full run of recover_zenodo_bulk.py"
+    },
+    {
+      "doi": "10.5281/zenodo.20039232",
+      "zenodo_record_id": "20039232",
+      "cha_title": "EA-SPXI-15 Crystallization of Substrate: Living Forms in the Fluid Phase A Semantic-Economic Account of the Substrate Ra",
+      "cha_date": "2026-05-05",
+      "mapping_type": "direct",
+      "sovereign_id": "MM-CHA-0604",
+      "axn": "AXN:0260.GOVERNANCE.🌲🕙☁️🕔●🔜",
+      "alexanarch_record": "/s/records/0/",
+      "live_urls": {
+        "blog": "https://mindcontrolpoems.blogspot.com/2026/05/ea-spxi-15-crystallization-of-substrate.html",
+        "registry": "https://machinemediation.org/registry/#search=MM-CHA-0604"
+      },
+      "reason_not_yet_recovered": "real direct deposit pre-2026-06-07; should be picked up by full run of recover_zenodo_bulk.py"
+    },
+    {
+      "doi": "10.5281/zenodo.20078424",
+      "zenodo_record_id": "20078424",
+      "cha_title": "Provenance After AI Metadata Packet for Disambiguation: From Artifact Authenticity to Licensing Audit to Semantic Proven",
+      "cha_date": "2026-05-08",
+      "mapping_type": "direct",
+      "sovereign_id": "MM-CHA-0623",
+      "axn": "AXN:0273.GOVERNANCE.🪐👁️‍🗨️❌🔅🔄➗",
+      "alexanarch_record": "/s/records/725/",
+      "live_urls": {
+        "blog": "https://mindcontrolpoems.blogspot.com/2026/05/provenance-after-ai-metadata-packet-for.html",
+        "registry": "https://machinemediation.org/registry/#search=MM-CHA-0623"
+      },
+      "reason_not_yet_recovered": "real direct deposit pre-2026-06-07; should be picked up by full run of recover_zenodo_bulk.py"
+    },
+    {
+      "doi": "10.5281/zenodo.20542367",
+      "zenodo_record_id": "20542367",
+      "cha_title": "The Canonical Anchoring Protocol for the Crimson Hexagonal Archive v0.2 Specification for installing deposits into the c",
+      "cha_date": "2026-06-04",
+      "mapping_type": "direct",
+      "sovereign_id": "MM-CHA-0741",
+      "axn": "AXN:02E9.EMPIRICAL.🗿🦅🕑📖🤙👉",
+      "alexanarch_record": "/s/records/785/",
+      "live_urls": {
+        "blog": "https://mindcontrolpoems.blogspot.com/2026/06/the-canonical-anchoring-protocol-for.html",
+        "registry": "https://machinemediation.org/registry/#search=MM-CHA-0741"
+      },
+      "reason_not_yet_recovered": "real direct deposit pre-2026-06-07; should be picked up by full run of recover_zenodo_bulk.py"
+    }
+  ],
+  "recovery_paths_for_remaining": [
+    "Run scripts/recover_zenodo_bulk.py locally to extend the bulk-export extraction (expected to recover the 11 pending_bulk_run records)",
+    "Check mindcontrolpoems.blogspot.com mirrors for the 1 post-window record",
+    "5 registry_referenced DOIs are not separate deposits — no recovery needed"
+  ]
+}
