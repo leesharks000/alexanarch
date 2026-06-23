@@ -336,6 +336,26 @@ All four files at repo root; visible in standard GitHub navigation; canonical fo
 
 ## 5. Outstanding items (priority order for next session)
 
+### 4.16 Wiki: chunk URLs removed, paginated like addresses ✓ — 2026-06-23 evening (second pass)
+
+§4.15 added prev/next chunk pagers to the wiki chunk pages, but Lee clarified the intent: he didn't want the chunk *structure* exposed to the reader at all. The wiki should display a fixed number of entries per page (like the addresses page) and paginate by entry count — not by chunk.
+
+**The misread**: the registry chunks (`data/chunks/registry/`) are an internal performance-splitting layer for the monolithic registry JSON. The wiki had inherited that chunk structure as URL-visible navigation (`/s/wiki/chunk-001-deposits-1-to-73/`), which exposed repository internals to readers who only want to see wiki entries.
+
+**The fix**: replaced the chunked wiki with the addresses-page pattern.
+
+- **NEW**: `data/wiki-entries.json` (805 KB, 861 entries) — flat array generated from registry `wiki_article` fields with entity-index backlinks (`defines`, `refby_total`). The single source of truth for both the JS view and any machine consumer.
+- **REWRITTEN**: `/s/wiki/index.html` — single page, 8 KB. Fetches `wiki-entries.json` at runtime, paginates 25 entries per page in JS, includes a search bar (matches title / creator / wiki text / defined concepts). Pagers at top and bottom with disabled state on boundary pages. Identical visual + behavioral pattern to `/addresses/`.
+- **DELETED**: 10 obsolete chunk directories under `s/wiki/chunk-NNN-deposits-X-to-Y/`. The data is in `wiki-entries.json` now; the chunked URL layout is gone.
+- **Generator simplified**: `scripts/regenerate_surfaces.py` `regenerate_wiki` rewritten — was ~300 lines of per-chunk page assembly + nav strips + an unused single-page fallback; now ~100 lines that emit the flat JSON + the JS-paginated index, then delete obsolete chunk dirs.
+- **Sitemap**: zero chunk URLs (was always zero — we'd never added them, but worth confirming).
+
+The §4.15 pager-class CSS still lives in `_WIKI_STYLE` and is now consumed by JS-generated pagination at runtime rather than by static chunk pages. The CSS work wasn't wasted; the deployment surface for it just shifted.
+
+**Why this matches the architectural principle better than §4.15 did**: every paginated public surface (`/addresses/`, now `/s/wiki/`) reads from a flat JSON dataset and paginates JS-side. The wiki has the same "data source ↔ surface" relationship as addresses does. The chunk layout was a parallel structure that exposed how the data happened to be stored internally — a leak of implementation into the UI.
+
+
+
 ### 4.15 Surface-consistency pass: nav scroll + wiki chunk pagers + observatory trim ✓ — 2026-06-23 evening
 
 Lee surfaced three inconsistencies discovered on mobile screenshots — they map to the same underlying principle as §4.13 (JS/static parity, single source of truth): **every public-navigation surface should behave the same way; surface-specific drift is anti-pattern**.

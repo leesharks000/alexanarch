@@ -534,222 +534,25 @@ def _load_entity_index():
 
 
 def regenerate_wiki(reg, dry_run=False):
-    """Project the wiki tab from registry wiki_article fields + entity-index backlinks.
+    """Regenerate the wiki surface as a paginated single page.
 
-    Output structure (mirrors data/chunks/registry/):
-      s/wiki/index.html                                  — overview index page (~30KB)
-      s/wiki/chunk-001-deposits-1-to-73/index.html       — chunk 1 entries
-      s/wiki/chunk-002-deposits-74-to-167/index.html     — chunk 2 entries
-      ... etc, one per registry chunk
+    Architecture mirrors /addresses/: one HTML file, fetches a flat JSON,
+    JS paginates 25 entries per page with search. The previous chunked URL
+    layout (/s/wiki/chunk-NNN-deposits-X-to-Y/) is removed -- those URLs
+    exposed repository internals to readers who only want to see wikis.
 
-    Each chunk page has prev/next navigation. The top-level index lists all
-    chunks with deposit ranges + entry counts.
-
-    Previously a single 1.2 MB page; now ~100-150 KB per chunk.
+    Outputs:
+      data/wiki-entries.json  -- flat array consumed by JS; also a
+                                 machine-readable wiki dataset
+      s/wiki/index.html       -- single-page paginated view
     """
-    eidx = _load_entity_index()
-    concepts = (eidx or {}).get("concepts", {}) if eidx else {}
-
-    # Load the registry chunk index — defines deposit ranges per chunk
-    chunk_index_path = REPO_ROOT / "data" / "chunks" / "registry" / "_index.json"
-    if not chunk_index_path.exists():
-        # Fall back to single-page wiki if no chunk index exists
-        return _regenerate_wiki_single_page(reg, dry_run)
-    with open(chunk_index_path) as f:
-        chunk_index = json.load(f)
-
-    # Entries to render: deposits with wiki_article populated, sorted by deposit_number
-    entries = [
-        d for d in sorted(reg["deposits"], key=lambda x: x.get("deposit_number", 0))
-        if (d.get("wiki_article") or "").strip()
-    ]
-    by_n = {d["deposit_number"]: d for d in entries}
-
-    # Concepts defined per deposit (from entity-index)
-    defines_by_deposit = {}
-    for term, c in concepts.items():
-        di = c.get("defined_in")
-        if di is None:
-            continue
-        defines_by_deposit.setdefault(di, []).append(term)
-
-    # Helper: render a single wiki entry div (same shape as before)
-    def render_entry_html(d):
-        dn = d["deposit_number"]
-        axn = d.get("axn", "")
-        title = esc_html(d.get("title", "(untitled)"))
-        creator = esc_html(d.get("creator") or d.get("author") or "")
-        date = esc_html(d.get("date", ""))
-        article = esc_html((d.get("wiki_article") or "").strip())
-
-        defines = defines_by_deposit.get(dn, []) or d.get("defines_concepts") or []
-        defines_html = ""
-        if defines:
-            shown = sorted(defines)[:12]
-            tail = f' <span style="color:var(--dim)">+{len(defines)-12} more</span>' if len(defines) > 12 else ""
-            defines_html = ('<div style="margin-top:6px;font-size:.82em">'
-                            '<strong style="color:var(--teal)">Defines:</strong> '
-                            + ", ".join(esc_html(t) for t in shown) + tail + '</div>')
-
-        refby_total = sum(concepts.get(t, {}).get("reference_count", 0) for t in defines)
-        refby_html = ""
-        if refby_total:
-            refby_html = ('<div style="margin-top:4px;font-size:.78em;color:var(--dim)">'
-                          f'Concepts defined here referenced across {refby_total} other-deposit citations.'
-                          '</div>')
-
-        return (
-            f'<div style="margin-bottom:24px" id="d{dn}">'
-            f'<div style="font-family:var(--mono);font-size:.82em;color:var(--teal);'
-            f'background:#f0f8f6;display:inline-block;padding:3px 8px;border-radius:4px">'
-            f'{esc_html(axn)}</div>'
-            f'<h1 style="font-size:1.2em;margin-bottom:4px">'
-            f'<a href="/s/records/{dn}/">{title}</a></h1>'
-            f'<div style="font-size:.82em;color:var(--dim);margin-bottom:8px">'
-            f'{creator}{" · " + date if creator and date else date}</div>'
-            f'<div class="art">{article}</div>'
-            f'{defines_html}'
-            f'{refby_html}'
-            f'<div style="margin-top:4px;font-size:.82em">'
-            f'<a href="/s/records/{dn}/">Full record →</a></div>'
-            '</div>\n'
-        )
-
-    chunks = chunk_index.get("chunks", [])
-    chunk_summaries = []  # for the index page
-
-    # Per-chunk pages
-    for i, chunk in enumerate(chunks):
-        first_n = chunk["first_deposit"]
-        last_n = chunk["last_deposit"]
-        chunk_num = chunk["chunk_number"]
-        chunk_slug = f"chunk-{chunk_num:03d}-deposits-{first_n}-to-{last_n}"
-
-        # Collect entries in this chunk's deposit-number range
-        chunk_entries = [d for d in entries if first_n <= d["deposit_number"] <= last_n]
-        chunk_summaries.append({
-            "chunk_num": chunk_num,
-            "slug": chunk_slug,
-            "first_n": first_n,
-            "last_n": last_n,
-            "wiki_count": len(chunk_entries),
-            "total_count": chunk["count"],
-        })
-
-        # Prev/next navigation — matches the addresses-page pager pattern
-        # (← Previous · Page N of M · count · Next →) so all paginated surfaces
-        # behave the same way.
-        if i > 0:
-            prev_chunk = chunks[i - 1]
-            prev_slug = f"chunk-{prev_chunk['chunk_number']:03d}-deposits-{prev_chunk['first_deposit']}-to-{prev_chunk['last_deposit']}"
-            prev_link = f'<a href="/s/wiki/{prev_slug}/">← Previous</a>'
-        else:
-            prev_link = '<span class="disabled">← Previous</span>'
-        if i < len(chunks) - 1:
-            next_chunk = chunks[i + 1]
-            next_slug = f"chunk-{next_chunk['chunk_number']:03d}-deposits-{next_chunk['first_deposit']}-to-{next_chunk['last_deposit']}"
-            next_link = f'<a href="/s/wiki/{next_slug}/">Next →</a>'
-        else:
-            next_link = '<span class="disabled">Next →</span>'
-
-        # Build chunk page
-        parts = [_WIKI_HTML_HEAD]
-        parts.append(f'<div style="font-size:.85em;color:var(--dim);margin-bottom:8px">'
-                     f'<a href="/s/wiki/" style="color:var(--accent)">← All chunks</a></div>')
-        parts.append(f'<h2 style="font-size:1.05em;margin-bottom:6px">'
-                     f'Chunk {chunk_num} of {len(chunks)}: deposits #{first_n}–#{last_n}</h2>')
-        parts.append(f'<p style="font-size:0.86em;color:var(--dim);margin-bottom:18px">'
-                     f'<strong>{len(chunk_entries)}</strong> wiki entries in this chunk '
-                     f'(of <strong>{chunk["count"]}</strong> deposits in the range).</p>\n')
-
-        nav_strip = (
-            '<div class="pager">'
-            f'{prev_link}'
-            f'<span class="center">Chunk {chunk_num} of {len(chunks)} · {len(chunk_entries)} wiki entries</span>'
-            f'{next_link}'
-            '</div>'
-        )
-        parts.append(nav_strip)
-
-        for d in chunk_entries:
-            parts.append(render_entry_html(d))
-
-        # Repeat the same pager at the bottom for long pages.
-        parts.append(nav_strip)
-        parts.append(_WIKI_HTML_TAIL)
-
-        chunk_html = "".join(parts)
-        chunk_dir = REPO_ROOT / "s" / "wiki" / chunk_slug
-        chunk_path = chunk_dir / "index.html"
-        chunk_size = len(chunk_html.encode("utf-8"))
-        if dry_run:
-            print(f"  [dry-run] {chunk_path} would be {chunk_size:,} bytes, {len(chunk_entries)} entries")
-        else:
-            chunk_dir.mkdir(parents=True, exist_ok=True)
-            _receipt(chunk_path)
-            chunk_path.write_text(chunk_html, encoding="utf-8")
-
-    # Build the wiki index page
-    total_wiki = sum(c["wiki_count"] for c in chunk_summaries)
-    index_parts = [_WIKI_HTML_HEAD]
-    index_parts.append(
-        f'<p style="font-size:0.86em;color:var(--dim);margin-bottom:18px">'
-        f'Wiki entries auto-projected from <code>data/registry.json</code> '
-        f'<code>wiki_article</code> fields and back-linked to '
-        f'<code>data/entity-index.json</code>. '
-        f'<strong>{total_wiki:,}</strong> entries from a corpus of '
-        f'<strong>{len(reg["deposits"]):,}</strong> deposits, '
-        f'split across <strong>{len(chunks)}</strong> chunks matching the registry '
-        f'chunk structure (see <a href="/api/index.json">/api/index.json</a> and '
-        f'<a href="/data/chunks/registry/_index.json">/data/chunks/registry/_index.json</a>).</p>\n'
-    )
-    index_parts.append('<div style="margin-top:16px">')
-    for cs in chunk_summaries:
-        index_parts.append(
-            f'<a href="/s/wiki/{cs["slug"]}/" '
-            f'style="display:block;padding:10px 0;border-bottom:1px solid var(--border);text-decoration:none">'
-            f'<div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap">'
-            f'<span style="font-weight:500;color:var(--accent)">Chunk {cs["chunk_num"]}</span>'
-            f'<span style="color:var(--dim);font-size:.85em">'
-            f'deposits #{cs["first_n"]}–#{cs["last_n"]}'
-            f'</span>'
-            f'</div>'
-            f'<div style="color:var(--dim);font-size:.82em;margin-top:2px">'
-            f'{cs["wiki_count"]} wiki entries (of {cs["total_count"]} deposits)'
-            f'</div>'
-            f'</a>'
-        )
-    index_parts.append('</div>')
-    index_parts.append(_WIKI_HTML_TAIL)
-
-    index_html = "".join(index_parts)
-    index_size = len(index_html.encode("utf-8"))
-    if dry_run:
-        print(f"  [dry-run] {WIKI_PATH} would be {index_size:,} bytes (chunk index)")
-        return
-    WIKI_PATH.parent.mkdir(parents=True, exist_ok=True)
-    _receipt(WIKI_PATH)
-    WIKI_PATH.write_text(index_html, encoding="utf-8")
-
-    chunk_sizes = []
-    for cs in chunk_summaries:
-        chunk_path = REPO_ROOT / "s" / "wiki" / cs["slug"] / "index.html"
-        if chunk_path.exists():
-            chunk_sizes.append(chunk_path.stat().st_size)
-    print(f"  ✓ s/wiki/index.html ({index_size:,} bytes, chunk index)")
-    print(f"  ✓ s/wiki/chunk-NNN/ ({len(chunks)} chunks, "
-          f"sizes {min(chunk_sizes):,}–{max(chunk_sizes):,} bytes, {total_wiki} total wiki entries)")
-
-
-def _regenerate_wiki_single_page(reg, dry_run=False):
-    """Fallback single-page wiki (used when chunk index is unavailable)."""
     eidx = _load_entity_index()
     concepts = (eidx or {}).get("concepts", {}) if eidx else {}
 
     entries = []
     for d in sorted(reg["deposits"], key=lambda x: x.get("deposit_number", 0)):
-        wiki_article = d.get("wiki_article") or ""
-        if not wiki_article.strip():
+        wiki_article = (d.get("wiki_article") or "").strip()
+        if not wiki_article:
             continue
         entries.append(d)
 
@@ -760,80 +563,175 @@ def _regenerate_wiki_single_page(reg, dry_run=False):
             continue
         defines_by_deposit.setdefault(di, []).append(term)
 
-    parts = []
-    parts.append(_WIKI_HTML_HEAD)
-
-    parts.append(f'<p style="font-size:0.86em;color:var(--dim);margin-bottom:18px">'
-                 f'Wiki entries auto-projected from <code>data/registry.json</code> '
-                 f'<code>wiki_article</code> fields and back-linked to '
-                 f'<code>data/entity-index.json</code>. '
-                 f'<strong>{len(entries):,}</strong> entries from a corpus of '
-                 f'<strong>{len(reg["deposits"]):,}</strong> deposits.</p>\n')
-
+    flat = []
     for d in entries:
         dn = d["deposit_number"]
-        axn = d.get("axn", "")
-        title = esc_html(d.get("title", "(untitled)"))
-        creator = esc_html(d.get("creator") or d.get("author") or "")
-        date = esc_html(d.get("date", ""))
-        article = esc_html((d.get("wiki_article") or "").strip())
+        defines = sorted(defines_by_deposit.get(dn, []) or d.get("defines_concepts") or [])
+        refby_total = sum(concepts.get(t, {}).get("reference_count", 0) for t in defines)
+        flat.append({
+            "n": dn,
+            "axn": d.get("axn", ""),
+            "title": d.get("title") or "(untitled)",
+            "creator": d.get("creator") or d.get("author") or "",
+            "date": d.get("date", ""),
+            "wiki": (d.get("wiki_article") or "").strip(),
+            "defines": defines,
+            "refby_total": refby_total,
+        })
 
-        defines = defines_by_deposit.get(dn, []) or d.get("defines_concepts") or []
-        defines_html = ""
-        if defines:
-            shown = sorted(defines)[:12]
-            tail = f' <span style="color:var(--dim)">+{len(defines)-12} more</span>' if len(defines) > 12 else ""
-            defines_html = ('<div style="margin-top:6px;font-size:.82em">'
-                            '<strong style="color:var(--teal)">Defines:</strong> '
-                            + ", ".join(esc_html(t) for t in shown) + tail + '</div>')
+    json_payload = {
+        "schema_version": "v1.0",
+        "purpose": "Flat wiki-entries dataset projected from data/registry.json wiki_article fields and back-linked to data/entity-index.json. Source for /s/wiki/ paginated view; also a machine-readable wiki dataset.",
+        "count": len(flat),
+        "corpus_size": len(reg["deposits"]),
+        "entries": flat,
+    }
+    json_str = json.dumps(json_payload, ensure_ascii=False, indent=None, separators=(",", ":"))
 
-        refby_total = 0
-        for t in defines:
-            c = concepts.get(t)
-            if c:
-                refby_total += c.get("reference_count", 0)
-        refby_html = ""
-        if refby_total:
-            refby_html = ('<div style="margin-top:4px;font-size:.78em;color:var(--dim)">'
-                          f'Concepts defined here referenced across {refby_total} other-deposit citations.'
-                          '</div>')
+    # Static header + page-content prefix
+    body_pre = (
+        f'<p style="font-size:0.86em;color:var(--dim);margin-bottom:18px">'
+        f'Wiki entries auto-projected from <code>data/registry.json</code> '
+        f'<code>wiki_article</code> fields and back-linked to '
+        f'<code>data/entity-index.json</code>. '
+        f'<strong>{len(flat):,}</strong> entries from a corpus of '
+        f'<strong>{len(reg["deposits"]):,}</strong> deposits. '
+        f'Read from <a href="/data/wiki-entries.json"><code>data/wiki-entries.json</code></a>.'
+        f'</p>\n'
+        f'<input type="search" id="search" placeholder="Search title, creator, or wiki text..." '
+        f'style="width:100%;padding:10px 12px;font-size:.95em;border:1px solid var(--border);'
+        f'border-radius:6px;font-family:var(--sans);background:var(--surface);margin-bottom:16px">\n'
+        f'<div class="pager" id="pager-top"></div>\n'
+        f'<div id="entries">Loading...</div>\n'
+        f'<div class="pager" id="pager-bot"></div>\n'
+    )
 
-        parts.append(
-            '<div style="margin-bottom:24px">'
-            f'<div style="font-family:var(--mono);font-size:.82em;color:var(--teal);'
-            f'background:#f0f8f6;display:inline-block;padding:3px 8px;border-radius:4px">'
-            f'{esc_html(axn)}</div>'
-            f'<h1 style="font-size:1.2em;margin-bottom:4px">'
-            f'<a href="/s/records/{dn}/">{title}</a></h1>'
-            f'<div style="font-size:.82em;color:var(--dim);margin-bottom:8px">'
-            f'{creator}{" · " + date if creator and date else date}</div>'
-            f'<div class="art">{article}</div>'
-            f'{defines_html}'
-            f'{refby_html}'
-            f'<div style="margin-top:4px;font-size:.82em">'
-            f'<a href="/s/records/{dn}/">Full record →</a></div>'
-            '</div>\n'
-        )
+    # JS pagination — clean raw triple-string, no Python-string escape gymnastics
+    js = r"""<script>
+fetch("/data/wiki-entries.json").then(function(r){return r.json()}).then(function(data){
+  var pageSize = 25;
+  var page = 0;
+  var query = "";
+  var pool = data.entries || [];
+  var ESC_MAP = {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"};
+  function esc(s){ return String(s == null ? "" : s).replace(/[&<>"']/g, function(c){ return ESC_MAP[c]; }); }
+  function nl2br(s){ return esc(s).replace(/\n/g, "<br>"); }
 
-    parts.append(_WIKI_HTML_TAIL)
+  function filtered(){
+    if(!query) return pool;
+    var q = query.toLowerCase();
+    return pool.filter(function(e){
+      return (e.title || "").toLowerCase().indexOf(q) >= 0
+          || (e.creator || "").toLowerCase().indexOf(q) >= 0
+          || (e.wiki || "").toLowerCase().indexOf(q) >= 0
+          || (e.defines || []).join(" ").toLowerCase().indexOf(q) >= 0;
+    });
+  }
 
-    html = "".join(parts)
-    size = len(html.encode("utf-8"))
+  function renderEntry(e){
+    var definesHtml = "";
+    if(e.defines && e.defines.length){
+      var shown = e.defines.slice(0, 12).map(esc).join(", ");
+      var tail = e.defines.length > 12
+        ? ' <span style="color:var(--dim)">+' + (e.defines.length - 12) + ' more</span>'
+        : "";
+      definesHtml = '<div style="margin-top:6px;font-size:.82em"><strong style="color:var(--teal)">Defines:</strong> ' + shown + tail + '</div>';
+    }
+    var refbyHtml = "";
+    if(e.refby_total){
+      refbyHtml = '<div style="margin-top:4px;font-size:.78em;color:var(--dim)">Concepts defined here referenced across ' + e.refby_total + ' other-deposit citations.</div>';
+    }
+    var creatorLine = esc(e.creator) + ((e.creator && e.date) ? " &middot; " : "") + esc(e.date);
+    return '<div style="margin-bottom:24px" id="d' + e.n + '">' +
+      '<div style="font-family:var(--mono);font-size:.82em;color:var(--teal);background:#f0f8f6;display:inline-block;padding:3px 8px;border-radius:4px">' + esc(e.axn) + '</div>' +
+      '<h1 style="font-size:1.2em;margin-bottom:4px"><a href="/s/records/' + e.n + '/">' + esc(e.title) + '</a></h1>' +
+      '<div style="font-size:.82em;color:var(--dim);margin-bottom:8px">' + creatorLine + '</div>' +
+      '<div class="art">' + nl2br(e.wiki) + '</div>' +
+      definesHtml + refbyHtml +
+      '<div style="margin-top:4px;font-size:.82em"><a href="/s/records/' + e.n + '/">Full record &rarr;</a></div>' +
+      '</div>';
+  }
+
+  function pagerHtml(suffix, total){
+    var totalPages = Math.max(1, Math.ceil(total / pageSize));
+    var label = "Page " + (page + 1) + " of " + totalPages + " &middot; " + total.toLocaleString() + " wiki entr" + (total === 1 ? "y" : "ies");
+    var prev = page <= 0
+      ? '<span class="disabled">&larr; Previous</span>'
+      : '<a href="#" id="prev-' + suffix + '">&larr; Previous</a>';
+    var next = page >= totalPages - 1
+      ? '<span class="disabled">Next &rarr;</span>'
+      : '<a href="#" id="next-' + suffix + '">Next &rarr;</a>';
+    return prev + '<span class="center">' + label + '</span>' + next;
+  }
+
+  function bindPager(suffix, totalPages){
+    var p = document.getElementById('prev-' + suffix);
+    var n = document.getElementById('next-' + suffix);
+    if(p) p.onclick = function(ev){ ev.preventDefault(); if(page > 0){ page--; render(); window.scrollTo(0, 0); } };
+    if(n) n.onclick = function(ev){ ev.preventDefault(); if(page < totalPages - 1){ page++; render(); window.scrollTo(0, 0); } };
+  }
+
+  function render(){
+    var pool2 = filtered();
+    var totalPages = Math.max(1, Math.ceil(pool2.length / pageSize));
+    if(page >= totalPages) page = totalPages - 1;
+    if(page < 0) page = 0;
+    var slice = pool2.slice(page * pageSize, (page + 1) * pageSize);
+    document.getElementById('entries').innerHTML = slice.map(renderEntry).join('') ||
+      '<p style="color:var(--dim);padding:20px 0">No matches.</p>';
+    document.getElementById('pager-top').innerHTML = pagerHtml('t', pool2.length);
+    document.getElementById('pager-bot').innerHTML = pagerHtml('b', pool2.length);
+    bindPager('t', totalPages);
+    bindPager('b', totalPages);
+  }
+
+  document.getElementById('search').addEventListener('input', function(ev){
+    query = ev.target.value;
+    page = 0;
+    render();
+  });
+
+  render();
+});
+</script>"""
+
+    html = _WIKI_HTML_HEAD + body_pre + js + _WIKI_HTML_TAIL
+
+    json_path = REPO_ROOT / "data" / "wiki-entries.json"
+    html_path = WIKI_PATH
+
     if dry_run:
-        print(f"  [dry-run] {WIKI_PATH} would be {size:,} bytes, {len(entries)} entries")
+        print(f"  [dry-run] data/wiki-entries.json would be {len(json_str):,} bytes ({len(flat)} entries)")
+        print(f"  [dry-run] s/wiki/index.html would be {len(html):,} bytes (JS-paginated, 25 per page)")
+        chunk_dirs = list((REPO_ROOT / "s" / "wiki").glob("chunk-*"))
+        if chunk_dirs:
+            print(f"  [dry-run] would delete {len(chunk_dirs)} chunk dir(s)")
         return
-    WIKI_PATH.parent.mkdir(parents=True, exist_ok=True)
-    _receipt(WIKI_PATH)
-    WIKI_PATH.write_text(html, encoding="utf-8")
-    print(f"  ✓ s/wiki/index.html ({size:,} bytes, {len(entries)} wiki entries — single-page fallback)")
+
+    json_path.parent.mkdir(parents=True, exist_ok=True)
+    _receipt(json_path)
+    with open(json_path, "w", encoding="utf-8") as f:
+        f.write(json_str + "\n")
+
+    html_path.parent.mkdir(parents=True, exist_ok=True)
+    _receipt(html_path)
+    html_path.write_text(html, encoding="utf-8")
+
+    # Remove obsolete chunk directories
+    import shutil
+    chunk_dirs = list((REPO_ROOT / "s" / "wiki").glob("chunk-*"))
+    for cdir in chunk_dirs:
+        if cdir.is_dir():
+            shutil.rmtree(cdir)
+
+    print(f"  ✓ data/wiki-entries.json ({len(json_str):,} bytes, {len(flat)} entries)")
+    print(f"  ✓ s/wiki/index.html ({len(html):,} bytes, JS-paginated 25 per page)")
+    if chunk_dirs:
+        print(f"  ✓ removed {len(chunk_dirs)} obsolete chunk director{'y' if len(chunk_dirs)==1 else 'ies'}")
 
 
-# ──────────────────────────────────────────────────────────────────────────────
-# Graph tab — project /s/graph/index.html from entity_triples + citation_graph
-# ──────────────────────────────────────────────────────────────────────────────
-
-GRAPH_PATH = REPO_ROOT / "s" / "graph" / "index.html"
 CITATION_GRAPH_PATH = REPO_ROOT / "data" / "citation-graph.json"
+GRAPH_PATH = REPO_ROOT / "s" / "graph" / "index.html"
 
 
 def _load_citation_graph():
