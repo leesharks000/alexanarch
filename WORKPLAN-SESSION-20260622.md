@@ -262,16 +262,21 @@ Live checklist. Items marked ✓ as they ship. Open items prioritized for this s
 - [ ] Add to home nav
 - [ ] Register in `/api/index.json`
 
-### 8.4 Entity ↔ semantic-address bidirectional link in /graph/ ▢
+### 8.4 Entity ↔ semantic-address bidirectional link in /graph/ ✓ (commit pending this push)
 
-**Goal:** Surface the address↔entity bridge on `/graph/` entity cards. Each entity whose name matches a `refers_to` target shows its capture status inline.
+**Goal:** Surface the address↔entity bridge on `/graph/` entity cards. Each entity whose name matches a `refers_to` target shows its canonical-query status inline.
 
 **Steps:**
 
-- [ ] Extend `/graph/index.html` to fetch `semantic-addresses.json` in parallel
-- [ ] Build reverse-index: `concept_name → [addresses]`
-- [ ] On each entity card, when `addressedAs[]` is non-empty, append a row: "Tested as query: <canonical_query> [class] (N observations)"
-- [ ] Link each query through to `/addresses/?q=<canonical_query>`
+- [x] Extend `/graph/index.html` to fetch `semantic-addresses.json` in parallel (3-way Promise.all)
+- [x] Build reverse-index: `concept_name → [{q, cls, obs, type}]`
+- [x] Attach `e.addresses[]` to each entity card whose name is a `refers_to` target
+- [x] Render address-chip row below the Phase C footer: "Tested as query: `<query>` `[class]` (N obs)" with up to 6 chips + `+N more` tail
+- [x] Add CSS class chips per observation class (observed/subjunctive/unrated/verified-non) with color coding matching `/lexical/` convention
+- [x] Add "Tested as queries" stat card showing count of entities with at least one address
+- [x] Address chip URL points to `/addresses/?q=<query>` (forward-reference; lives once item 8.3 ships /addresses/)
+
+**Coverage:** 273 of ~8,468 graph entities receive the overlay. Top by address row count: Lee Sharks (23, 11 observed), Substrate (21, 20 subjunctive), CANONICAL (20, all subjunctive), Semantic Economy (12, mixed). The subjunctive dominance on key concepts makes the catalogued-but-untested gap visible at the card level.
 
 ### 8.5 Lexical → engagement bridge in /lexical/ ✓ (commit pending this push)
 

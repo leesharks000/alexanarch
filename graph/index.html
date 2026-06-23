@@ -37,6 +37,13 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:8px}
 .filter-btns{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
 .fbtn{background:var(--surface);border:1px solid var(--border);padding:4px 12px;border-radius:12px;font-size:0.78em;cursor:pointer;font-family:var(--sans)}
 .fbtn:hover,.fbtn.active{background:var(--teal);color:#fff;border-color:var(--teal)}
+.addr-q{display:inline-block;background:#f7f3fb;color:#7344a6;padding:2px 8px;border-radius:10px;margin:2px 4px 2px 0;font-size:0.94em;text-decoration:none;border-bottom:none}
+.addr-q:hover{background:#7344a6;color:#fff}
+.addr-q .addr-observed-address{color:var(--teal);font-family:var(--mono);font-size:0.85em;font-weight:500}
+.addr-q .addr-subjunctive{color:#9966cc;font-family:var(--mono);font-size:0.85em}
+.addr-q .addr-unrated{color:#d4a537;font-family:var(--mono);font-size:0.85em}
+.addr-q .addr-verified-non-address{color:var(--accent2);font-family:var(--mono);font-size:0.85em}
+.addr-q:hover .addr-observed-address,.addr-q:hover .addr-subjunctive,.addr-q:hover .addr-unrated,.addr-q:hover .addr-verified-non-address{color:#fff}
 </style>
 </head>
 <body>
@@ -68,17 +75,38 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:8px}
 </div>
 
 <script>
-// Wire-in (Phase E): parallel fetch — registry + entity-index. The graph still
-// projects from d.entities[] across all deposits; we now overlay each entity
-// card with its Phase C reference_count drawn from entity-index.json so the
-// reader can see how widely a concept propagates across the corpus.
+// Wire-in (Phase E + 8.4): parallel fetch — registry + entity-index + semantic-addresses.
+// The graph projects entity cards from d.entities[] across all deposits;
+// overlays each entity with:
+//   - Phase C reference_count + defined_in (from entity-index)
+//   - Semantic-address bridge: which canonical queries point at this entity,
+//     with observation-class chips (subjunctive / observed / unrated / verified-non)
 Promise.all([
   fetch('/data/registry.json').then(function(r){return r.json()}),
-  fetch('/data/entity-index.json').then(function(r){return r.json()}).catch(function(){return {concepts:{}}})
+  fetch('/data/entity-index.json').then(function(r){return r.json()}).catch(function(){return {concepts:{}}}),
+  fetch('/data/semantic-addresses.json').then(function(r){return r.json()}).catch(function(){return {addresses:{}}})
 ]).then(function(results){
   var reg = results[0];
   var eidx = results[1] || {concepts:{}};
+  var sa = results[2] || {addresses:{}};
   var conceptIndex = eidx.concepts || {};
+
+  // Build reverse-index: concept_name -> [address rows]
+  // Each row: {q (canonical_query), class (observation_class), obs (count)}
+  var addressByConcept = {};
+  var addressesObj = sa.addresses || {};
+  Object.keys(addressesObj).forEach(function(key){
+    var a = addressesObj[key];
+    (a.refers_to || []).forEach(function(ref){
+      if(!addressByConcept[ref]) addressByConcept[ref] = [];
+      addressByConcept[ref].push({
+        q: a.canonical_query || key,
+        cls: a.observation_class || 'unrated',
+        obs: (a.observations || []).length,
+        type: a.type
+      });
+    });
+  });
 
   var allTriples=[];
   var deps=reg.deposits||[];
@@ -102,15 +130,17 @@ Promise.all([
     if(!entityMap[t.object]) entityMap[t.object]={name:t.object,type:'referenced',relations:[],sources:new Set()};
   });
 
-  // Wire-in: enrich each entity with Phase C reference_count/defined_in lookup
-  // when the entity name appears as a key in entity-index.json. This gives the
-  // graph card the "Referenced across N deposits" footer signal.
+  // Wire-in (Phase C): enrich each entity with reference_count + defined_in
+  // Wire-in (8.4): enrich each entity with addresses[] when it's a refers_to target
   Object.values(entityMap).forEach(function(e){
     var ci = conceptIndex[e.name];
     if(ci){
       e.reference_count = ci.reference_count || 0;
       e.defined_in_deposit = ci.defined_in;
       e.referenced_in = ci.referenced_in || [];
+    }
+    if(addressByConcept[e.name]){
+      e.addresses = addressByConcept[e.name];
     }
   });
   
@@ -119,10 +149,12 @@ Promise.all([
   // Stats
   var types={};
   entities.forEach(function(e){types[e.type]=(types[e.type]||0)+1});
+  var addressedCount = entities.filter(function(e){return e.addresses && e.addresses.length;}).length;
   document.getElementById('stats').innerHTML=
     '<div class="stat"><div class="stat-num">'+entities.length+'</div><div class="stat-label">Entities</div></div>'+
     '<div class="stat"><div class="stat-num">'+allTriples.length+'</div><div class="stat-label">Relations</div></div>'+
-    '<div class="stat"><div class="stat-num">'+deps.length+'</div><div class="stat-label">Sources</div></div>';
+    '<div class="stat"><div class="stat-num">'+deps.length+'</div><div class="stat-label">Sources</div></div>'+
+    (addressedCount?'<div class="stat"><div class="stat-num">'+addressedCount+'</div><div class="stat-label">Tested as queries</div></div>':'');
   
   // Type filters
   var typeKeys=Object.keys(types).sort();
@@ -168,10 +200,30 @@ Promise.all([
         phaseCFooter = '<div style="margin-top:8px;font-size:0.78em;color:var(--dim);border-top:1px dotted var(--border);padding-top:6px">'+
           '<a href="/records/?id='+e.defined_in_deposit+'">defined in #'+e.defined_in_deposit+'</a></div>';
       }
+      // Wire-in (8.4): semantic-address overlay — when this entity is the
+      // refers_to target of one or more canonical queries, show them with
+      // observation-class chips. Queries link to /addresses/?q= (the page
+      // is planned at item 8.3; until then the links are forward-references).
+      var addressOverlay = '';
+      if(e.addresses && e.addresses.length){
+        var addrChips = e.addresses.slice(0, 6).map(function(a){
+          var cls = a.cls || 'unrated';
+          var clsClass = 'addr-' + cls.replace(/_/g, '-');
+          var obsLabel = a.obs ? ' ('+a.obs+' obs)' : '';
+          return '<a class="addr-q" href="/addresses/?q='+encodeURIComponent(a.q)+'">'+
+                 a.q + ' <span class="'+clsClass+'">['+cls+']</span>'+obsLabel+
+                 '</a>';
+        }).join('');
+        var tail = e.addresses.length > 6 ? ' <span style="color:var(--dim)">+'+(e.addresses.length-6)+' more</span>' : '';
+        addressOverlay = '<div style="margin-top:6px;font-size:0.78em;color:#444">'+
+          '<strong style="color:#7344a6">Tested as query:</strong> '+addrChips+tail+
+          '</div>';
+      }
       return '<div class="entity-card">'+
         '<div><span class="entity-name">'+e.name+'</span><span class="entity-type">'+e.type+'</span></div>'+
         (e.relations.length?'<div style="margin-top:8px">'+rels+'</div>':'')+
         phaseCFooter +
+        addressOverlay +
         '</div>';
     }).join('');
   }
