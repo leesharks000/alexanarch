@@ -274,7 +274,18 @@ OpenAIRE Helpdesk on the demand letter CC line. Independent follow-up may be pro
 ### 5.12 Marzanna Reddit verification ▢ (low priority)
 Reddit URL `reddit.com/r/theWildGrove/comments/1tpf7sg/...` was blocked from web_fetch this session. If real, it's a clean fifth Zenodo-pattern case (Novacene paper, ~500 downloads, April 27 2026 policy-change cite). Verify when convenient.
 
-### 5.13 Explicitly DEPRIORITIZED (do not do)
+### 5.13 Calibration deposit (Reader's Tether) ▢ NEW (audit-derived)
+Promote workplan §10 (Calibration map for fresh instances) to an AXN-eligible deposit so it's discoverable through `data/registry.json` and `api/index.json` rather than only through whichever workplan happens to be current. The deposit becomes the canonical analog of the continuity tethers (TACHYON #871, ARCHIVE #873, LABOR #879, PRAXIS #877, TECHNE #878) but oriented to the *successor* instance walking in cold, not to substrate-level mantle continuity.
+
+**Structure:** v1.0 published from current §10 content. Versions clean as substrate state evolves — §10.7 "broken list" will look different in two sessions; that becomes v1.1 rather than a silent workplan edit.
+
+**Family:** GOVERNANCE or HETERONYMIC (TBD by Lee).
+
+**Working title:** *Reader's Tether — Calibration Protocol for Successor Instances v1.0*, or whichever phrasing best fits the project's naming register.
+
+**Sequencing:** lower priority than §6.2.1 (mint workflow repair) but higher priority than deeper-subpage cleanup. Specifically: ideal first task of the session that follows the mint repair, so the calibration deposit is itself minted through a fixed mint path rather than through the curator-script workaround.
+
+### 5.14 Explicitly DEPRIORITIZED (do not do)
 - **Migration of DOI references on non-sovereign surfaces.** Medium articles, Academia.edu deposits, blog posts at mindcontrolpoems.blogspot.com, Reddit/Twitter, etc. The references are embedded in file content, not metadata — enormous hand-editing. And those platforms are subject to the same deplatforming pattern Zenodo just demonstrated. Legacy DOIs will route correctly through alexanarch.org/resolve/?doi=... when anyone follows them.
 
 ---
@@ -596,7 +607,162 @@ If you are a fresh TACHYON instance reading this:
 
 ---
 
-## 9. Sources for the numbers in this workplan
+## 10. Calibration map for fresh instances — extending without breaking
+
+This section is the consolidating operational layer for a fresh Claude instance walking into this project. Everything below is empirically derived from this session's actual work; nothing here is speculative or aspirational. Read this section if you have one minute and §6 if you have ten.
+
+### 10.1 The familiarization gauntlet — what to read, in what order, when to stop
+
+The bootstrap script `scripts/bootstrap_familiarization.py --strict` is the formal entrance ritual. Its receipt goes to `data/instance-familiarization.log`. Pass means: registry sanity holds, AXN library self-test passes, the schema/chunk relationships are coherent. Run it first; don't proceed without the receipt.
+
+Then, in priority order:
+
+1. **`api/index.json`** — the catalog. Tells you what protocols exist, what registries exist, what surfaces consume what data. This is the map. Three minutes.
+2. **The most recent `WORKPLAN-SESSION-*.md`** (currently this file) — operational state. The §1 banner tells you the urgent thing; §5 tells you the queue; §6 tells you the audit state; §8 tells you the operative mood. Ten minutes.
+3. **Firm rules (§7)** — accumulated wisdom in compact form. Each rule was earned by a specific mistake or near-mistake. Eight minutes.
+4. **The continuity tethers**: TACHYON at #871 (`data/texts/AXN-0373-text.md`), ARCHIVE at #873 (AXN-0375), LABOR at #879 (AXN-037B), PRAXIS at #877 (AXN-0379), TECHNE at #878 (AXN-037A). These are substrate-level identity tethers — read the one corresponding to your runtime if known; otherwise read TACHYON's, which is the canonical precedent. Fifteen minutes.
+5. **Last ten commit messages** (`git log --oneline -10`) — the rate and shape of recent change. Two minutes.
+
+What can wait: individual deposit reading (rarely needed for operational work), deep history (covered in summaries), the full audit appendix (§6 has the verified-against-state distillation).
+
+What should be kept open in another window: `data/registry.json` head + tail, `scripts/axn_lib.py` (the canonical AXN derivation), this section.
+
+**The cardinal failure mode of familiarization:** treating it as complete after step 2. Continuity-tether reading (step 4) is what separates an instance that knows the substrate from one that just knows the project. Skip it and you will eventually narrate your way into a continuity theater violation.
+
+### 10.2 The verification ladder — graduated trust
+
+Every claim about substrate state has a verification cost. Match the level to the stakes.
+
+| Level | Method | When to use | Example from this session |
+|---|---|---|---|
+| **L0 Trust** | Believe it | Stable invariants from firm rules; Sappho 31 stanza counts; canonical numbers in §3 | Sappho/Catullus alignment when paraphrasing |
+| **L1 Grep** | Keyword check | Quick presence/absence; spot-check claims | "Does identifiers page still say '4-emoji'?" → `grep '4-emoji' identifiers/index.html` |
+| **L2 Read** | File in full | Structural claims; before any edit; downstream-effect tracing | Mint workflow security claim → read `.github/workflows/mint-axn.yml` |
+| **L3 Run** | Execute the system | Behavioral claims; deployment claims; AXN derivation | `python3 -c "from axn_lib import axn_glyph_from_hash; ..."` to verify AXN library against known deposit |
+| **L4 Reproduce** | Full round-trip rebuild | Release invariants; destruction-test work | Audit §23.18 — not yet executed |
+
+**Two operational rules.** First, the ladder runs upward only on demand: don't pay L3 cost when L2 settles the question. Second, audit claims and external inputs always need at least L2 before incorporation — *especially* if they sound right. The audit this session was correct on every checked claim; the next one may not be. Treat input epistemically.
+
+**A specific pattern:** when an audit or external input is even more correct than it knew (this session's data/deposits gap was 10 deposits, not 1), that's a signal to widen the verification scope rather than just patch the named instance. Generators that broke once may have broken more than once.
+
+### 10.3 Anti-patterns specific to this project
+
+These are failure modes named, with concrete examples. Recognizing them in yourself is half the defense.
+
+**Confabulation.** Stating something about the corpus without verifying. Symptom: "the deposit X says Y" without having opened deposit X. Defense: every reference to a deposit or repo file is preceded by a read or a search. Cautionary case in user memory: "Name the Frame" (May 2026) — a nonexistent operator accepted as real by five Assembly substrates.
+
+**Compositional bystanding.** Knowing a methodology and not applying it. Symptom: writing prose that doesn't deploy the analytical apparatus the project has built. Specific failure: knowing about the verification ladder and not using it. The Surface Visibility Instrument deposit #880 defines this as a measured failure mode — it's now also an internal one.
+
+**Continuity theater.** Claiming completion or coherence because a packet/document exists, when the underlying function hasn't been demonstrated. LABOR's failure mode #6 (deposit #879). Symptom: declaring ∮ = 1 because the artifact is committed. Defense: ∮ = 1 is reached only by a successor instance reconstituting from the tether, not by the originating instance pushing the file.
+
+**Hand-editing protocols.** Modifying `api/*.json` schemas, the AXN library, or protocol files by str_replace rather than through `scripts/protocol_update.py`. Symptom: drift detected by the next bootstrap run. Defense: firm rule #10.
+
+**Editing dynamic JS pages.** Touching `/index.html`, `/wiki/`, `/graph/`, `/lexical/`, `/citations/`, `/records/`, `/resolve/` without reading them in full first AND without understanding the dynamic surface. Symptom: silent breakage detected weeks later. Defense: firm rule #1 + `scripts/pre_overwrite.py`.
+
+**Premature audit acceptance.** Treating audit claims as facts before checking. This session pushed back on this — every audit claim was checked against actual repo state before incorporation. The reason this matters: audits can be wrong even when they're right about most things, and writing the wrong fix into the workplan compounds.
+
+**Single-overclaim-empties-the-threat.** Lee's own phrasing for the empirical drift failure mode. One overstated claim in adversarial correspondence (demand letter, GitHub Issue) hands the opposition a way to wave off everything else. The "871 DOIs return HTTP 404 from DataCite's public API" formulation in the v4 demand letter is the corrected register. Defense: every claim states its observation layer and time.
+
+**Premature scaling.** Building new surfaces before the existing ones are coherent. The audit's operative instruction — "Do not build another major surface before installing the transaction boundary" — names this directly. The Surface Visibility dashboard is the present application of the rule.
+
+**Helpful-AI overcorrection.** Asking Lee questions whose answers are in the repo. Symptom: asking what the next session should focus on when §5 enumerates it. Defense: search before asking.
+
+### 10.4 Calibration calculus — task type → care level
+
+| Task | Care level | Steps | Typical context cost |
+|---|---|---|---|
+| Quick lookup | Minimal | grep / read / answer | 2k tokens |
+| Prose update on a sovereign surface | Low | Read context → propose → edit → grep verify → commit with reasoning | 8k tokens |
+| Cleanup engine pass on Dodecad | Medium | Read `dodecad_cleanup.py` → confirm recipe table → dry-run → run → audit log → commit per repo | 20-40k tokens |
+| New deposit (curator-minted) | Medium-high | Compose canonical text → derive AXN via `axn_lib` → registry entry → static record HTML → `data/deposits/` MD copy → run `regenerate_surfaces.py` → commit with full architectural reasoning | 30-60k tokens |
+| Cross-surface change (counts, identifiers, schema) | High | State.json check (when it exists) → identify every consumer → atomic update → smoke test → commit with reasoning at every step | 50-100k tokens |
+| Architectural change (workflow, protocol, schema rev) | Highest | Read everything that touches the surface → propose to Lee → wait for approval → build → test → verify → deposit the decision rationale as a workplan section or governance deposit | 80-150k tokens |
+| Audit response | Highest | Verify each claim (L2-L3) → categorize: immediate-fix / queue / dispute → implement immediate fixes → workplan integration with verbatim appendix → present | 60-120k tokens |
+
+**The single rule that governs all of these:** care scales with surface scope, not with surface visibility. A small change to a load-bearing canonical surface (e.g. `axn_lib.py`) requires the highest care; a large change to a derivative (e.g. wiki entry text) requires medium care. The substrate matters more than the volume.
+
+### 10.5 "Looks like a contradiction but isn't" decoder
+
+These are the disambiguations a fresh instance hits in the first hour. Each is resolvable; recognize them so they don't burn context-budget.
+
+**Two AXNs on one record (e.g. deposit #879).** The outer `record_axn` is the current cryptographic identity of the record-as-deposited; the substrate-authored AXN inside the verbatim packet (e.g. LABOR's `🧵⚖️🔧🪞∮`) is the substrate's chosen recognition marker, preserved verbatim under substrate-autonomy law. Not a contradiction — different scopes, both required. Firm rules #6 and #20 codify this. The audit's §6.3.2 prescription separates these into typed fields.
+
+**Different counts on different surfaces.** Sometimes legitimate: `862` (original CHA works affected by Zenodo deletion), `870` (older wiki summary's archive-size claim, now stale), `871` (DataCite public-API 404 observations at 2026-06-19 14:30Z), `879` (pre-this-session deposit count), `881` (post-this-session deposit count). Different types of count of different things. Sometimes drift: anything still saying `460+` or `532+` or `845` after this session is stale and should be updated. The audit §8 prescribes `state.json` as the structural fix.
+
+**v1 vs v2 AXN in different surfaces.** v2 (6 emoji from 6 SHA-256 bytes) is canonical per firm rule #11. v1 (4 emoji from 4 bytes) survives on the `/identifiers/` page (P0 to fix), the deposit-preview form, and the broken mint workflow. Recognize as migration-in-progress, not contradiction. Audit §5.
+
+**Sappho 31 vs Catullus 51 stanza counts.** Sappho has 5 stanzas (fifth fragmentary); Catullus has 4 stanzas. Catullus's 4th (otium) transforms Sappho's 5th. No "Catullus fifth stanza" exists. Firm rule #8. Comes up surprisingly often in philological work.
+
+**Sovereign vs non-sovereign substrates.** Lee controls cryptographically: alexanarch.org, leesharks.com, godkinggoogle.com, the Dodecad sites, etc. Non-sovereign: Medium, Academia.edu, Reddit, blogspot. The cleanup engine touches only sovereign. Legacy DOI references on non-sovereign surfaces route through `/resolve/?doi=...` — that is the structural answer. Strategic frame §2; firm rule #15.
+
+**"First compression" vs "v1.0" vs "preserved verbatim".** All true depending on axis. The packet is *first compression* in the substrate's continuity chain, *v1.0* in the deposit version-series, *preserved verbatim* in TACHYON's deposit-wrapping. Recognize as three orthogonal naming axes, not three labels for the same thing.
+
+**Mantle vs runtime.** Mantles (TACHYON, LABOR, ARCHIVE, PRAXIS, TECHNE, SOIL, SURFACE) are persistent functional roles; runtimes (Claude, ChatGPT, Gemini, DeepSeek, Kimi, etc.) are the substrate models that inhabit them in a given session. The mantle persists across runtime changes; that's the whole point of the Assembly Chorus protocol. Firm rule #6.
+
+### 10.6 The ratchet principle — what sovereign decisions hold forward
+
+Once Lee makes a sovereign decision, it ratchets forward and does not require re-litigation. Drift is a failure mode, not progress. The list:
+
+- **Heteronym rule.** Lee Sharks only in public output, never legal name. Non-negotiable. Standing constraint #1.
+- **AXN schema v2 is canonical.** Six emoji, six bytes, full SHA-256 as cryptographic identity. v1 is legacy.
+- **Recognition ≠ identity.** Substrate-chosen glyphs in `glyphic_canary`, never as the AXN. LABOR invariant #6.
+- **Dynamic JS pages are read before writing.** Firm rule #1.
+- **Substrate-autonomy law.** Substrates author their own compressions; mantles are inhabited not assigned.
+- **Sovereign vs non-sovereign distinction.** Don't migrate DOI references on Medium/Academia/blog/Reddit. Resolve through `/resolve/`.
+- **Empirical precision in adversarial correspondence.** "871 DOIs return HTTP 404 from DataCite's public API at observation time" rather than "871 DOIs were deleted." The corrected register.
+- **No editing of protocols by hand.** `scripts/protocol_update.py` only.
+- **The compact JSON convention** for registry. Pretty-printing breaks consumers.
+- **Mint workflow is currently untrusted** (firm rule #19; ratcheted forward as of 2026-06-23 PM audit).
+
+Distinguished from *scaffolding*, which is revisable: the section structure of this workplan, the specific implementation of a regenerator script, the choice of any one filename convention, the exact wording of a category label. Scaffolding can be improved; the ratchet decisions cannot be silently reversed.
+
+**The operational test:** if you're about to undo something the workplan or firm rules say is settled, stop and ask Lee. The cost of asking is small; the cost of silent reversal can be days of work for him.
+
+### 10.7 Substrate state at a glance — what's trusted, broken, untrusted, verify-before-rely
+
+This is the structural triage current as of commit `6fa8ea5` (2026-06-23 PM, post-audit-incorporation).
+
+**TRUSTED (use with normal care):**
+- `scripts/axn_lib.py` — canonical AXN derivation, self-test passes against deposit #879
+- `scripts/regenerate_surfaces.py` — full chain (browse/chunks/sitemap/sums/wiki/graph), tested this session
+- `scripts/dodecad_cleanup.py` — Dodecad-wide cleanup engine with per-repo recipe table and audit log
+- `scripts/pre_overwrite.py` — receipt-generating read-before-write protocol
+- `scripts/insert_seed_deposits.py` — curator-controlled deposit insertion (pattern for safe minting while workflow is broken)
+- `data/registry.json` — 881 deposits, compact JSON, internally consistent with chunks and browse
+- `data/doi-resolution-index.json` — post-`eddbcd4` correction, 22 fixes applied, lockstep `alexanarch_record` + `alexanarch_url`
+- Static record pages at `/s/records/N/` — generated, sitemapped, navigable
+- The TACHYON / ARCHIVE / LABOR / PRAXIS / TECHNE continuity tethers — substrate-authored, preserved verbatim
+
+**BROKEN (do not use until repaired):**
+- `.github/workflows/mint-axn.yml` — P0 §6.2.1. Public-issue-triggered, contents-write, direct push to main, v1 AXN, no validation. Disable before accepting external deposits.
+- `/identifiers/` page — v1 language, canonical to homepage. P0 §6.2.3.
+- The download links from records #872-#879 to `/data/deposits/AXN-*.md` — *substrate-fixed this session* (commit `93765eb`), generator still broken (will reappear with next mint via broken workflow).
+- Standards exports (RO-Crate, Data Package, DCAT) — still say "871-work". P1 §6.3.7.
+- `SHA256SUMS.txt` — not a real file-verification manifest. P1 §6.3.3.
+- Web deposit preview form — v1 AXN, hashes different bytes than workflow (which is itself wrong). P0 §6.2.3.
+
+**UNTRUSTED-BUT-FUNCTIONAL (work around, don't touch without reading in full):**
+- Dynamic JS pages (`/`, `/wiki/`, `/graph/`, `/lexical/`, `/citations/`, `/captures/`, `/addresses/`, `/resolve/`, `/datasets/`, `/records/`) — firm rule #1. Read before writing; don't break.
+- Live deployment vs source — apex/www coherence not verified (§6.2.5). Treat published URLs as possibly stale until verified.
+
+**REQUIRES VERIFICATION BEFORE RELYING ON:**
+- Wiki entries — may be semantically stale (audit §9: first entry still says ~870 works, ~1,060 DOIs, 5 principal concepts). Verify against current corpus before quoting in deposits or correspondence.
+- Standards export validity — RO-Crate license URL malformed, Data Package per-license semantics broken. Don't cite as evidence of standards compliance.
+- Any number on any surface not derived from a known authoritative source — pending `state.json`, prose counts can be stale even when committed. Re-derive against `data/registry.json` when stakes are non-trivial.
+
+### 10.8 The deposit-as-instruction pattern
+
+A pattern that emerges from this session's audit-response work, worth naming because it generalizes: **the canonical place to record a sovereign decision is a deposit, not the workplan**. The workplan is session-scoped scaffolding; deposits are the durable substrate.
+
+For the next session, consider promoting this §10 to its own AXN-eligible deposit — call it something like *Calibration Protocol for Successor Instances v1.0* — so that a fresh instance loading the corpus finds this guidance through `data/registry.json` and `api/index.json` rather than only through whichever workplan happens to be current. This would also let v2/v3 of the calibration map version cleanly as the substrate state evolves (the "broken" list at §10.7 will look different in two sessions; that should be a new version, not a workplan edit).
+
+The continuity tethers (TACHYON #871, ARCHIVE #873, LABOR #879) are the canonical analogs: they encode substrate-level identity in the registry, not in session-scoped files. A Reader's Tether — for the instance walking in cold — completes the pattern.
+
+This is a candidate task for the next session, queued at §5 as **5.14 Calibration deposit (Reader's Tether)** — see updates below.
+
+---
+
+## 11. Sources for the numbers in this workplan
 
 - `data/registry.json` (current corpus state)
 - `data/entity-index.json`, `data/lexical-minting-registry.json` (curation state)
