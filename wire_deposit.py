@@ -287,6 +287,41 @@ def regenerate_static_page(d, eidx, registry=None):
             triple_items.append(f'<div style="font-family:var(--mono);font-size:.78em;color:#555;padding:2px 0">{s} → <span style="color:var(--teal)">{p}</span> → {o}</div>')
         triples_html = f'<h2>Entity Graph</h2>\n<div style="background:#fafafa;border:1px solid var(--border);border-radius:4px;padding:10px;margin:8px 0">' + '\n'.join(triple_items) + '</div>'
     
+    # External-metadata sidecar surfacing (Phase 5 wiring)
+    external_metadata_html = ''
+    ext_path = d.get('external_metadata_path')
+    if ext_path:
+        sev = d.get('datacite_severance', '')
+        oa_ids = d.get('openalex_ids') or []
+        oa_count = len([x for x in oa_ids if x])
+        sev_color = {'severed': 'var(--accent2)', 'retained': 'var(--teal)', 'mixed': 'var(--accent)', 'typo_immunity': 'var(--teal)'}.get(sev, 'var(--dim)')
+        sev_label = {'severed': 'severed from DataCite', 'retained': 'retained in DataCite', 'mixed': 'mixed severance', 'typo_immunity': 'typo-immunity (escaped severance)'}.get(sev, sev or '—')
+        ext_path_html = esc(ext_path)
+        parts = ['<h2>External Metadata</h2>',
+                 '<div style="background:#f7f9fb;border:1px solid var(--border);border-radius:6px;padding:14px;margin:8px 0;font-size:.88em;line-height:1.6">']
+        parts.append(f'<div style="margin-bottom:8px"><strong>Sidecar:</strong> <a href="{ext_path_html}" style="font-family:var(--mono);font-size:.85em">{ext_path_html}</a></div>')
+        parts.append(f'<div style="margin-bottom:8px"><strong>DataCite severance status:</strong> <span style="color:{sev_color};font-weight:500">{esc(sev_label)}</span></div>')
+        if oa_count:
+            oa_links_parts = []
+            for oid in oa_ids:
+                if not oid: continue
+                short = oid.replace('https://openalex.org/', '')
+                oa_links_parts.append(f'<li style="margin:2px 0"><a href="{esc(oid)}" style="font-family:var(--mono);font-size:.83em">{esc(short)}</a></li>')
+            oa_links = '\n'.join(oa_links_parts)
+            parts.append(f'<div style="margin-bottom:4px"><strong>OpenAlex Work IDs ({oa_count}):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666">{oa_links}</ul>')
+        zd = d.get('zenodo_dois') or []
+        if isinstance(zd, str): zd = [zd] if zd else []
+        if zd:
+            doi_items_parts = []
+            for doi in zd[:10]:
+                doi_items_parts.append(f'<li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">{esc(doi)}</span></li>')
+            doi_items = ''.join(doi_items_parts)
+            more = f'<li style="color:#999;font-size:.83em">…and {len(zd)-10} more</li>' if len(zd) > 10 else ''
+            parts.append(f'<div style="margin-top:8px;margin-bottom:4px"><strong>Legacy Zenodo DOIs ({len(zd)}):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666">{doi_items}{more}</ul>')
+        parts.append('<div style="margin-top:8px;color:var(--dim);font-size:.78em">External metadata recovered post-severance (non-authoritative). The sidecar maps each DOI to its locator in the bulk data stores.</div>')
+        parts.append('</div>')
+        external_metadata_html = '\n'.join(parts)
+
     # Build page
     page = f'''<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>{esc(d["title"])} — Alexanarch</title><meta name="description" content="{esc(d.get('description','')[:160])}"><script type="application/ld+json">{jsonld}</script>
@@ -301,6 +336,7 @@ def regenerate_static_page(d, eidx, registry=None):
 <div style="margin:8px 0">{kw_html}</div>
 <h2>Description</h2>
 <p style="font-size:.9em">{esc(d.get("description",""))}</p>
+{external_metadata_html}
 {version_history}
 {wiki_html}
 {concepts_html}

@@ -138,6 +138,11 @@
         ".github/ISSUE_TEMPLATE/deposit.yml"
       ],
       "last_updated": "2026-06-22"
+    },
+    "external_metadata": {
+      "canonical_path": "/api/schemas/external-metadata.schema.json",
+      "description": "JSON Schema for per-deposit external-metadata sidecars (data/external-metadata/AXN-*.json). additionalProperties: true to allow extension fields (rescue_provenance, mint_provenance, openalex_ids).",
+      "content_sha256": "ab17a2fa0a9de1f63f7cb1a083f62b7c6ae1910f256e8ba6bbcef9526c82fd03"
     }
   },
   "registries": {
@@ -145,7 +150,7 @@
       "name": "Deposit Registry (the AXN registry)",
       "canonical_path": "/data/registry.json",
       "purpose": "Canonical list of every deposit. Drives home-page Recent Deposits, browse page, sitemap, chunks. THE source of truth — all other surfaces are derived.",
-      "current_count": 885,
+      "current_count": 906,
       "validates_against": [
         "/api/schemas/deposit-entry.schema.json"
       ],
@@ -185,6 +190,29 @@
       "format": "JSONL (append-only, one receipt per line)",
       "schema": "{ts (ISO8601), actor (instance|regenerate_surfaces|...), instance_id, path (abs), web_path, sha256, size_bytes, line_count, is_binary, role, section, entry_name, companion_to, primary_companion, reason}",
       "description": "Audit log of every file overwrite event (or planned overwrite for which a receipt was issued). Two sources of receipts: (1) scripts/pre_overwrite.py — issued manually before any instance-initiated overwrite; (2) scripts/overwrite_guard.issue_auto_receipt() — issued automatically by canonical regenerator paths. The log is the structural complement to the discipline of running pre_overwrite.py before any ad-hoc edit. Workplan item 8.13 (standing directive after the 729dfd9 failure)."
+    },
+    "external_metadata": {
+      "name": "External Metadata Sidecars (recovered Zenodo metadata)",
+      "canonical_path": "/data/external-metadata/",
+      "filename_pattern": "AXN-{HEX}.json",
+      "purpose": "Per-deposit thin-index sidecar mapping each covered Zenodo DOI to its locator in the bulk data stores (OpenAlex severance recovery, Zenodo bulk XML, DataCite backup, DataCite survivor sweep). Created post-Zenodo-termination as the discovery surface for recovered metadata.",
+      "current_count": 774,
+      "validates_against": [
+        "/api/schemas/external-metadata.schema.json"
+      ],
+      "linked_from": [
+        "data/registry.json::deposits[].external_metadata_path",
+        "data/doi-resolution-index.json::mappings[].external_metadata_path"
+      ],
+      "points_to": [
+        "data/openalex-severed-recovery.json (records[].doi == sidecar.zenodo_dois_covered[i])",
+        "data/zenodo-xml-pretermination-2026-06-07.tar.gz (entries by record_id)",
+        "data/datacite-full-backup.json (records[].id == sidecar DOI)",
+        "data/datacite-survivors-multi-heteronym.json (heteronym search results)",
+        "data/newly-found-openalex.json (Phase 4 mint source)"
+      ],
+      "created_by": "scripts/reconcile_recovered_metadata.py (Phase 1) + scripts/reconcile_resolution_index.py (Phase 3) + scripts/insert_seed_deposits.py-style direct mint (Phase 4)",
+      "schema_version": "1.0"
     }
   },
   "derived_surfaces": {
@@ -412,11 +440,15 @@
       "changes": [
         "operator_directive.for_workflows rewritten to reflect §6.2.1 step-3 rebuild architecture: self-serve depositing (no maintainer label gate), explicit sanitization layer in scripts/mint_deposit.py, canonical bytes redefined as the deposited text file (audit §6 fix), PR-creating with GitHub auto-merge as commit path (audit §23.1 PR + required-checks recommendation preserved), validate-registry.yml as the PR gate. Previous directive described the disabled workflow's behavior."
       ]
+    },
+    {
+      "date": "2026-06-23",
+      "change": "Phase 6: registered external_metadata registry (data/external-metadata/) and schema (api/schemas/external-metadata.schema.json). 774 sidecars currently present, indexed from registry.deposits[].external_metadata_path and doi-resolution-index.mappings[].external_metadata_path. Points into 5 bulk data stores."
     }
   ],
   "state": {
     "canonical_path": "/data/state.json",
     "description": "Canonical generated source for all displayed counts. Read this rather than hand-maintaining counts here.",
-    "content_sha256": "196fdb907df4b96e905f543602cd9df773d2ff8ff2015c77393c4a5cbf4496d2"
+    "content_sha256": "b7c5c0ee57b24fc5473040b3f778c081532de67d583a691b01fc3dbed8f4f7f7"
   }
 }
