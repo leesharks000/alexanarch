@@ -13,7 +13,9 @@
       "3. Run `python3 scripts/bootstrap_familiarization.py` to produce a familiarization receipt. The receipt records what versions and hashes you operated against.",
       "4. Include the receipt in any commit message, deposit body, or PR you create. Workflows MECHANICALLY ENFORCE this — missing receipt = rejected.",
       "5. If you are about to MODIFY a protocol JSON or a schema: do NOT hand-edit. Use `python3 scripts/protocol_update.py --protocol <name> --description '...'`. This tool atomically bumps version, recomputes hash, updates this index, and propagates to dependent docs.",
-      "6. Hand-editing a protocol without running the update tool is the single largest source of regressions in this infrastructure. Every prior 'instance made autonomous changes without familiarization' incident was an instance skipping step 1."
+      "6. Hand-editing a protocol without running the update tool is the single largest source of regressions in this infrastructure. Every prior 'instance made autonomous changes without familiarization' incident was an instance skipping step 1.",
+      "7. STANDING DIRECTIVE (post-729dfd9): Before ANY str_replace, create_file, or other overwrite of an existing file, run `python3 scripts/pre_overwrite.py <path>`. This appends a structural-inventory receipt to /data/pre-overwrite-receipts.log AND surfaces role-aware warnings (in particular, an unmissable red alert if the target is a static_fallback whose canonical primary lives elsewhere). The 729dfd9 commit overwrote /s/wiki/ and /s/graph/ static fallbacks without realizing the canonical primaries at /wiki/ and /graph/ existed. This protocol prevents recurrence at the file-system level rather than as a discipline that has to hold across instances.",
+      "8. CREATE operations are exempt from #7 — if the target file does not yet exist, pre_overwrite.py exits silently and no receipt is needed. The check only fires on overwrites."
     ],
     "for_workflows": "Both mint-axn.yml and validate-registry.yml read this index at run time, fetch the protocols it lists, and verify their content_sha256 before acting. If verification fails, the workflow fails closed (no changes commit).",
     "for_extension": "Adding a new protocol means: (a) write the protocol JSON in /api/, (b) add a new entry under `protocols` here, (c) compute content_sha256 of the new file, (d) add it to this file with all its referenced_by and enforced_by lists, (e) run `scripts/protocol_update.py --verify-index` to confirm everything reconciles."
@@ -157,6 +159,13 @@
       "generated_by": "scripts/build_lexical_overlay.py",
       "current_count": 7045,
       "description": "Per-LMR-term engagement overlay. 7,045 of 12,032 LMR terms are also in entity-index (the engaged set); 255 of those are also semantic-address targets. The overlay surfaces both bridges so /lexical/ can show engagement state and query-test status per term."
+    },
+    "overwrite_receipts": {
+      "canonical_path": "/data/pre-overwrite-receipts.log",
+      "role": "audit_log",
+      "format": "JSONL (append-only, one receipt per line)",
+      "schema": "{ts (ISO8601), actor (instance|regenerate_surfaces|...), instance_id, path (abs), web_path, sha256, size_bytes, line_count, is_binary, role, section, entry_name, companion_to, primary_companion, reason}",
+      "description": "Audit log of every file overwrite event (or planned overwrite for which a receipt was issued). Two sources of receipts: (1) scripts/pre_overwrite.py — issued manually before any instance-initiated overwrite; (2) scripts/overwrite_guard.issue_auto_receipt() — issued automatically by canonical regenerator paths. The log is the structural complement to the discipline of running pre_overwrite.py before any ad-hoc edit. Workplan item 8.13 (standing directive after the 729dfd9 failure)."
     }
   },
   "derived_surfaces": {
@@ -314,6 +323,17 @@
     "build_lexical_overlay": {
       "canonical_path": "scripts/build_lexical_overlay.py",
       "purpose": "Build data/lexical-overlay.json — a derived enrichment file mapping each LMR term to its entity-index engagement state (engagement_type, reference_count, entity_triples_count, classified, type, defined_in) and any semantic-address bridge (address_count + observation-class distribution). Consumed by /lexical/ in parallel with LMR."
+    },
+    "pre_overwrite": {
+      "canonical_path": "scripts/pre_overwrite.py",
+      "purpose": "Standing-directive guard against the 729dfd9 failure pattern. CLI tool an instance MUST run before any ad-hoc file overwrite: produces a structural inventory receipt (sha256, size, role lookup in api/index.json, companion warnings for static_fallback surfaces), appends to data/pre-overwrite-receipts.log. The act of running it surfaces role-aware metadata that the instance might have missed — for static_fallback surfaces, an unmissable red-bordered warning points at the canonical primary. Receipts are JSONL append-only with {ts, actor, instance_id, path, web_path, sha256, size, role, companion_to, reason}.",
+      "required_before": "Any str_replace/create_file/edit on an existing file by an instance (Claude/TACHYON).",
+      "invocation": "python3 scripts/pre_overwrite.py <path> [--reason \"...\"] [--instance \"TACHYON ...\"]"
+    },
+    "overwrite_guard": {
+      "canonical_path": "scripts/overwrite_guard.py",
+      "purpose": "Importable module for auto-flow write paths. Exposes issue_auto_receipt(path, actor) for canonical regenerators to self-receipt every write (full audit trail) and require_receipt(path) for paths that should HARD-FAIL absent a fresh matching receipt. Also exposes find_recent_receipts() and tail_receipts() for diagnostics. Used by scripts/regenerate_surfaces.py — every regenerator write since this commit appends an audit entry.",
+      "invocation": "from overwrite_guard import issue_auto_receipt, require_receipt  (in scripts/)"
     }
   },
   "instance_familiarization_log": {

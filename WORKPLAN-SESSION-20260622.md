@@ -394,15 +394,24 @@ Tokens exposed in prior sessions, pending rotation:
 
 When ready, send the v3 PRECISION letter to OpenAIRE Helpdesk. Document response or silence in #876 (bump version on update).
 
-### 8.13 Pre-overwrite mechanism ▢ (process)
+### 8.13 Pre-overwrite mechanism ✓ (commit pending this push)
 
-Per the session's standing directive: build a file-system-level guard so writing to an existing file requires first producing a describe-current-state receipt. Specifically:
+**Goal:** Per the session's standing directive: build a file-system-level guard so writing to an existing file requires first producing a describe-current-state receipt. This is the structural fix that prevents the `729dfd9` failure pattern.
 
-- `scripts/pre_overwrite.py <path>` — reads file (and live URL when reachable), writes structural inventory to `data/pre-overwrite-receipts.log`
-- `regenerate_surfaces.py` and other write-path scripts refuse to write when current sha256 has no recent receipt
-- Receipt log goes into `api/index.json` as a required-read
+**Steps:**
 
-This mechanism is what prevents the `729dfd9` failure pattern. First task for next thread per Lee's directive.
+- [x] Build `scripts/pre_overwrite.py` — CLI tool an instance runs before any ad-hoc overwrite. Reads file, computes sha256+size+line_count, looks up role in `/api/index.json`, appends receipt to `data/pre-overwrite-receipts.log`. For static_fallback paths, displays an unmissable red-bordered warning surfacing the canonical primary's path.
+- [x] Build `scripts/overwrite_guard.py` — importable module exposing `issue_auto_receipt(path, actor)` (for canonical regenerators to self-receipt every write) and `require_receipt(path, max_age_seconds)` (for paths that should hard-fail without a fresh matching receipt).
+- [x] Integrate `_receipt()` calls at all 8 write sites in `regenerate_surfaces.py` (browse, browse-index, chunks loop, chunks _index, sitemap, sha256sums, wiki static fallback, graph static fallback). Every regenerator write now appends to the audit log.
+- [x] Register `pre_overwrite.py` and `overwrite_guard.py` in `/api/index.json` scripts section.
+- [x] Register `/data/pre-overwrite-receipts.log` in `/api/index.json` registries section as `role: audit_log`.
+- [x] Add the standing directive (steps 7 and 8) to `/api/index.json` `operator_directive.for_new_instances`. Bootstrap now prints it every session-start: future TACHYON instances see "Run pre_overwrite.py before any str_replace/create_file on an existing file" every time they bootstrap.
+- [x] Test on a primary surface (clean receipt, no alarm) and on a static_fallback path (red 729dfd9 alarm fires correctly, surfaces companion `/wiki/index.html` primary).
+- [x] Test regenerator dry-run: no breakage.
+
+**Scope note on enforcement vs discipline:** The receipt log is a STRUCTURAL TRACE, not a hard gate. An instance that skips `pre_overwrite.py` and edits a file directly will not be blocked — the harness doesn't wrap `str_replace`/`create_file` with the guard. What it WILL do is leave a missing-receipt signature in the audit log, detectable by any subsequent audit. Combined with the bootstrap callout and the unmissable static_fallback alarm when the script IS run, this raises the bar substantially without claiming a hard mechanical enforcement that the harness doesn't support. The 729dfd9 pattern (instance overwrites without inspecting) is now visible at three points: bootstrap (directive), pre_overwrite.py (alarm), receipt log (audit). The future TACHYON instance running bootstrap will be told this is binding before any action.
+
+**Audit trail format:** JSONL append-only, one receipt per line. Fields: ts, actor (`instance`/`regenerate_surfaces`/...), instance_id, path, web_path, sha256, size_bytes, line_count, is_binary, role, section, entry_name, companion_to, primary_companion, reason. Diagnostics via `python3 scripts/overwrite_guard.py --tail 20` or `--path /wiki/index.html`.
 
 ### 8.14 Reading pass continuation: 340 unread deposits ▢
 

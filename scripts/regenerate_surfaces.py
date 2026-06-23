@@ -56,7 +56,34 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 REGISTRY_PATH = REPO_ROOT / "data" / "registry.json"
 
+# Pre-overwrite receipt mechanism (workplan item 8.13).
+# Each regenerator write logs an auto-receipt to data/pre-overwrite-receipts.log
+# so the audit trail captures EVERY surface-overwrite event, regardless of
+# whether the write came from an instance or from the regenerator. The
+# receipt log is the structural complement to the discipline of running
+# scripts/pre_overwrite.py before any ad-hoc edit.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    from overwrite_guard import issue_auto_receipt
+    _OVERWRITE_GUARD_AVAILABLE = True
+except ImportError:
+    _OVERWRITE_GUARD_AVAILABLE = False
+
 ALL_SURFACES = ["browse", "browse-index", "chunks", "sitemap", "sha256sums", "wiki", "graph"]
+
+
+def _receipt(path, reason: str = "regenerate_surfaces write"):
+    """Issue an auto-receipt for a regenerator write. No-op if guard module
+    isn't importable (defensive — the script should still work even if the
+    guard module is missing or temporarily broken)."""
+    if not _OVERWRITE_GUARD_AVAILABLE:
+        return
+    try:
+        issue_auto_receipt(path, actor="regenerate_surfaces", reason=reason,
+                           instance_id=os.environ.get("ALEXANARCH_INSTANCE_ID", "regenerator"))
+    except Exception as e:
+        # Don't let receipt failure block a regenerator run; log and continue.
+        print(f"[regenerate_surfaces] warning: receipt failed for {path}: {e}", file=sys.stderr)
 
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -169,6 +196,7 @@ def regenerate_browse(reg, dry_run=False):
         print(f"  [DRY] would write {target} ({len(out):,} bytes, {total} deposits)")
         return
     target.parent.mkdir(parents=True, exist_ok=True)
+    _receipt(target)
     with open(target, "w", encoding="utf-8") as f:
         f.write(out)
     print(f"  ✓ s/browse/index.html ({len(out):,} bytes, {total} deposits)")
@@ -210,6 +238,7 @@ def regenerate_browse_index(reg, dry_run=False):
     if dry_run:
         print(f"  [DRY] would write {target} ({len(payload):,} bytes)")
         return
+    _receipt(target)
     with open(target, "w", encoding="utf-8") as f:
         f.write(payload)
     print(f"  ✓ data/browse-index.json ({len(payload):,} bytes, {len(out['deposits'])} deposits)")
@@ -262,6 +291,7 @@ def regenerate_chunks(reg, dry_run=False, chunk_target_bytes=1_000_000):
         if dry_run:
             print(f"  [DRY] would write {path.name} (#{first}-#{last}, {len(payload):,} bytes)")
         else:
+            _receipt(path)
             with open(path, "w", encoding="utf-8") as f:
                 f.write(payload)
         return {
@@ -305,6 +335,7 @@ def regenerate_chunks(reg, dry_run=False, chunk_target_bytes=1_000_000):
     if dry_run:
         print(f"  [DRY] would write {index_path} ({len(chunks)} chunks, {len(deposits)} deposits)")
     else:
+        _receipt(index_path)
         with open(index_path, "w", encoding="utf-8") as f:
             f.write(payload)
         print(f"  ✓ data/chunks/registry/ ({len(chunks)} chunks, {len(deposits)} deposits)")
@@ -365,6 +396,7 @@ def regenerate_sitemap(reg, dry_run=False):
     if dry_run:
         print(f"  [DRY] would write {target} ({len(out):,} bytes, {len(deposits)} deposit URLs)")
         return
+    _receipt(target)
     with open(target, "w", encoding="utf-8") as f:
         f.write(out)
     print(f"  ✓ sitemap.xml ({len(out):,} bytes, {len(deposits)} deposit URLs)")
@@ -394,6 +426,7 @@ def regenerate_sha256sums(reg, dry_run=False):
     if dry_run:
         print(f"  [DRY] would write {target} ({len(lines)} lines, {len(out):,} bytes)")
         return
+    _receipt(target)
     with open(target, "w", encoding="utf-8") as f:
         f.write(out)
     print(f"  ✓ SHA256SUMS.txt ({len(lines)} lines, {len(out):,} bytes)")
@@ -510,6 +543,7 @@ def regenerate_wiki(reg, dry_run=False):
         print(f"  [dry-run] {WIKI_PATH} would be {size:,} bytes, {len(entries)} entries")
         return
     WIKI_PATH.parent.mkdir(parents=True, exist_ok=True)
+    _receipt(WIKI_PATH)
     WIKI_PATH.write_text(html, encoding="utf-8")
     print(f"  ✓ s/wiki/index.html ({size:,} bytes, {len(entries)} wiki entries)")
 
@@ -617,6 +651,7 @@ def regenerate_graph(reg, dry_run=False):
         print(f"  [dry-run] {GRAPH_PATH} would be {size:,} bytes, {len(concept_triples)+len(deposit_triples)} edges shown")
         return
     GRAPH_PATH.parent.mkdir(parents=True, exist_ok=True)
+    _receipt(GRAPH_PATH)
     GRAPH_PATH.write_text(html, encoding="utf-8")
     print(f"  ✓ s/graph/index.html ({size:,} bytes, {len(concept_triples)+len(deposit_triples)} edges)")
 
