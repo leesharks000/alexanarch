@@ -1020,9 +1020,14 @@ def regenerate_homepage_noscript(reg, dry_run=False):
         print(f"  ⚠ {index_path} not found — skipping")
         return
 
-    # Match the JS slice: take the last 5 deposits by deposit_number, reverse for newest-first
+    # Match the JS slice: filter SUPERSEDED out (canonical reference for an
+    # older version is the Version history on the current version's page,
+    # not a separate card here), then take the last 5 by deposit_number,
+    # reverse for newest-first. Keeps the static fallback in parity with
+    # the runtime JS view.
     deposits = sorted(reg['deposits'], key=lambda d: d.get('deposit_number', 0))
-    recent = list(reversed(deposits[-5:]))
+    active_deposits = [d for d in deposits if d.get('status', 'ACTIVE') != 'SUPERSEDED']
+    recent = list(reversed(active_deposits[-5:]))
 
     cards = []
     for d in recent:

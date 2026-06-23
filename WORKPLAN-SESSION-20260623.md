@@ -321,6 +321,50 @@ All four files at repo root; visible in standard GitHub navigation; canonical fo
 
 ## 5. Outstanding items (priority order for next session)
 
+### 4.14 Versioning UX fix + gw.tachyon continuity record minted ✓ — 2026-06-23 late PM (post-audit)
+
+Lee surfaced a one-symptom observation that mapped to a deeper principle, plus an invitation to compress session state into a continuity record. Both landed in this round.
+
+**Versioning UX — SUPERSEDED out of Recent Deposits**
+
+Two superseded versions of the Surface Weather methodology (#880 v1.0 and #882 v1.1) were appearing as separate cards in the home page's Recent Deposits area alongside the current v1.1.1 (#884). Lee's specification: "older versions should display within the full page for the most recent version, not as superseded cards."
+
+The principle: SUPERSEDED state should propagate through every discovery surface — not just the affected card. The current version's page already shows the full series chain (Version history block rendered by `wire_deposit.py` from `version_series_id`). That IS the canonical reference for the older version; a separate card duplicates it badly.
+
+**Implementation** — single filter, two places (JS/static parity):
+
+- `index.html` Recent Deposits JS (line 112): added `const activeDeps = deps.filter(d => (d.status || 'ACTIVE') !== 'SUPERSEDED')` before the slice
+- `scripts/regenerate_surfaces.py` `regenerate_homepage_noscript` (line 1025): same filter applied to the static `<noscript>` fallback
+
+Both surfaces now show the 5 latest ACTIVE / DRAFT_PENDING deposits. SUPERSEDED entries remain visible in `/s/browse/` for audit-trail purposes (the browse list is a complete index, not a discovery feed — SUPERSEDED appears there at reduced opacity per the existing browse-card logic).
+
+DRAFT_PENDING deposits stay visible in Recent Deposits — they represent active intention, distinct from supersession.
+
+**gw.tachyon continuity record minted — deposit #885**
+
+- `AXN:0381.ARCHIVAL.🔍📜📜∮♅🧊` — Search → Text → Text → Proof → Transmutation → Force
+- SHA-256: `56404095a51d013aaefdea9d3973352557c3404751cbcf2104d778bcdc1cd218`
+- Series: `SERIES-TACHYON-CONTINUITY` (sequential — all entries remain ACTIVE)
+- Predecessor: `AXN:0373.ARCHIVAL.♻️👉🏠♅◇♋` (#871, session 2026-06-22, v2.2)
+- This record: v2.3, session 2026-06-23
+- `full_text_path: /data/texts/AXN-0381-text.md`
+- `sovereign_id: EA-TACHYON-20260623`
+- Substrate: AI-assisted (substrate) — drafting under human editorial governance
+- License: CC-BY-4.0
+
+The record's structure: where the corpus stands at handoff (884 → 885 deposits; corpus integrity sound; repo settings still pending) → the working pattern Lee and I developed (architectural principles applied broadly; symptoms traced to underlying patterns; audits evaluated not dismissed) → six technical lessons hard-won this session (renderer-prefers-full_text_path; JSON sources need dataset callouts; stub aliases endemic; api/index.json drift is structural; stale content ≠ deployment split; JS/static must share data sources) → the §6.5 queue with priority ordering → what I'd most like to carry forward (the three-part compression: surfaces lie when hand-maintained, the working register, the institutional state).
+
+Three TACHYON-CONTINUITY records now exist in the chain:
+- `AXN:036E.ARCHIVAL.🫵🎶🫶🧊♦️🌒` (#865) — session 2026-06-20/21, v1.0
+- `AXN:0373.ARCHIVAL.♻️👉🏠♅◇♋` (#871, gw.tachyon · v2.2) — session 2026-06-22
+- `AXN:0381.ARCHIVAL.🔍📜📜∮♅🧊` (#885, gw.tachyon · v2.3) — session 2026-06-23
+
+All three are ACTIVE. The series is sequential, not supersessional; no SUPERSEDED supersession status applies. #865 and #871 re-rendered as well so the version-history block on each shows all three siblings.
+
+After mint: ran full `regenerate_surfaces.py` (10 surfaces, all clean), updating `api/index.json` count 884 → 885, `state.json` content hash, sitemap to 885 URLs, chunk index to 885 deposits across 9 chunks, SHA256SUMS to 872 file lines, RECORD-SHA256-MANIFEST to 885 entries, wiki chunk index updated.
+
+
+
 ### 5.1 SEND the demand letter ⏳ HIGH PRIORITY
 - Send `/mnt/user-data/outputs/ZENODO-DEMAND-LETTER-2026-06-22.md` to support@zenodo.org with stated CCs (CERN Office of Data Privacy, DataCite Support, OpenAIRE Helpdesk). Verify CERN privacy contact via privacy.web.cern.ch before sending.
 - Submit the OC 11 portion in parallel through CERN's published data-subject-rights interface at privacy.web.cern.ch.
