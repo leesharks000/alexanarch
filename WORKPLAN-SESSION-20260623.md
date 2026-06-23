@@ -11,36 +11,51 @@
 ## 1. Where things stand right now
 
 > **🚨 Audit-state banner (2026-06-23 PM): An external audit verified against `main` finds Alexanarch has a *strong read-side rhizome and an unsafe write-side monoculture*. P0 finding: the mint workflow can be triggered by any public issue and pushes directly to main with no schema validation. The verdict — "Alexanarch is increasingly difficult to erase, but still too easy to corrupt" — is now the operative diagnosis. See §6 below for incorporation; the audit appears verbatim as Appendix A.**
+>
+> **Post-response update (2026-06-23 late PM through evening):** the audit-derived P0 cluster is now substantially closed in code — single-source-of-truth (`data/state.json`) + JS/static parity + dynamic-record XSS redirected away + CSP headers + sitemap completeness + LICENSE/RECOVERY/SECURITY/404 + mint-deposit form unblocked. **Operational completeness still pends repo settings (§5.15) + one end-to-end test deposit (§6.5.10).** See §4.13, §4.14, §4.15 for landed work; §6.5 for the 13-item audit-derivative queue.
 
 The Crimson Hexagonal Archive's sovereign successor is **Alexanarch**, live at https://alexanarch.org and on GitHub at https://github.com/leesharks000/alexanarch.
 
-Four days after Zenodo's June 19 termination of the CHA account, the migration is structurally complete. Today's session (2026-06-23, continuous PM through next-morning) closed the long tail of stale-language and broken-link references across the Dodecad surfaces, founded the Surface Visibility Instrument with five live deposits, ran the first federated cross-substrate baseline (Claude/Brave on Layer A with companion captures from ChatGPT, Kimi, Gemini, and DeepSeek), and minted v1.1.1 of the methodology as the stable spec for the next several scan rounds. The Observatory is now wired into the global navbar across every surface and renders the Surface Weather Station instrument directly at `/observatory/`.
+Four days after Zenodo's June 19 termination of the CHA account, the migration is structurally complete. Today's session (2026-06-23, continuous PM through evening) closed the long tail of stale-language and broken-link references across the Dodecad surfaces, founded the Surface Visibility Instrument with five live deposits, ran the first federated cross-substrate baseline (Claude/Brave on Layer A with companion captures from ChatGPT, Kimi, Gemini, and DeepSeek), minted v1.1.1 of the methodology as the stable spec for the next several scan rounds, repaired 832 stub aliases across the entire corpus, restored 10 of 13 missing-file deposits, formalized the versioning protocol with the SUPERSEDED lifecycle, consolidated the navbar around `data/navigation.json`, split the wiki page across 9 chunks, responded to a comprehensive external audit by building `data/state.json` + the regenerate-surfaces pipeline (10 surfaces, one pass), minted gw.tachyon · v2.3 (#885) carrying forward the session's compression, and standardized nav-scroll + chunk pagers + observatory cleanup across every public surface.
 
 **Current corpus state:**
 
 | Metric | Count | Source |
 |---|---|---|
-| Deposits in canonical registry | **884** | data/registry.json |
+| Deposits in canonical registry | **885** | data/registry.json |
 | Curated concepts (entity-index) | **7,173** | data/entity-index.json |
 | Minted lexical terms (raw) | **12,032** | data/lexical-minting-registry.json |
 | Inter-deposit citation edges | **4,866** | data/citation-graph.json |
 | Semantic addresses | **1,964** | data/semantic-addresses.json |
 | AI Overview captures | **87 captures, 138 PNG images (v6.1)** | godkinggoogle.vercel.app/captures (mirror) |
 | Legacy Zenodo DOI mappings (corrected) | **1,817** | data/doi-resolution-index.json |
-| Surface Visibility Instrument | **5 deposits live** | #880 v1.0, #882 v1.1, #884 v1.1.1 methodology; #881 baseline; #883 Claude/Brave Layer A |
+| Surface Visibility Instrument | **5 deposits live** | #880 v1.0 SUPERSEDED, #882 v1.1 SUPERSEDED, #884 v1.1.1 ACTIVE methodology; #881 baseline; #883 Claude/Brave Layer A |
 | Surface Weather Station scans on file | **5** (ChatGPT, Claude, Kimi, Gemini, DeepSeek Layer A) | data/surface-weather/scans/*.json |
+| TACHYON continuity chain | **3 sequential** | #865 v1.0, #871 gw.tachyon · v2.2, #885 gw.tachyon · v2.3 |
 | Registry chunks (1 MB target) | 9 | data/chunks/registry/ |
-| Protocols (machine-enforced) | 3 | api/index.json |
-| Primary UI surfaces | 5 | /wiki/, /graph/, /lexical/, /citations/, /observatory/ |
+| Protocols (machine-enforced) | 4 | api/index.json (deposit, axn, enrichment, lifecycle) |
+| Primary UI surfaces | 5 + 7 | /wiki/, /graph/, /lexical/, /citations/, /observatory/ + /captures/, /resolve/, /addresses/, /datasets/, /principles/, /identifiers/, /manifest/ |
 | Dodecad site repos cleaned | **23 of 23** | scripts/dodecad_cleanup.py |
 | Demand letter status | **DRAFTED, AWAITING SEND** | /mnt/user-data/outputs/ZENODO-DEMAND-LETTER-2026-06-22.md |
 | GitHub outreach comments posted | **2** (Vega #2599, Shimony #2596) | live on github.com/zenodo/zenodo |
+| Single source of truth | **/data/state.json** | scripts/generate_state.py (NEW this session) |
+| Regenerate-surfaces pipeline | **10 surfaces, one pass** | scripts/regenerate_surfaces.py |
+| Repo root institutional objects | LICENSE, 404.html, RECOVERY.md, SECURITY.md | added this session |
 
 **Latest commits (most recent first, this session):**
+- `ae23515` — Surface consistency: nav scroll + wiki chunk pagers + observatory trim (2026-06-23 evening)
+- `51a483f` — Mint #885 (gw.tachyon · v2.3 continuity record) + Recent Deposits SUPERSEDED filter (2026-06-23)
+- `dcdb163` — External audit response: single-source unification + safety hardening (2026-06-23)
+- `3a40146` — Navbar single-source + wiki chunk-splitting + canonical nav on all 884 record pages (2026-06-23)
+- `55893e2` — Versioning protocol: lifecycle vocabulary + display layer across all surfaces (2026-06-23)
+- `d5ed24f` — Homepage banner: Zenodotus link → polished /s/records/1/ (2026-06-23)
+- `89b869a` — Restore 10 of 13 missing-file deposits + JSON-source renderer fix (2026-06-23)
+- `1651130` — CORPUS-WIDE REPAIR: 832 stub aliases repopulated with full text + renderer hardened (2026-06-23)
 - `c6f9c45` — Audit log: pre-overwrite-receipts.log updates (2026-06-23)
-- `d62257c` — **Mint deposit #884: Surface Weather Station methodology v1.1.1** (2026-06-23)
-- `537974c` — Site navigation: Observatory link added to global navbar across all surfaces (894 files) (2026-06-23)
+- `d62257c` — Mint deposit #884: Surface Weather Station methodology v1.1.1 (2026-06-23)
+- `537974c` — Site navigation: Observatory link added to global navbar (2026-06-23)
 - `efecc69` — Surface Weather: curator context — Brave backend properties + DeepSeek stable-pattern reframing (2026-06-23)
+- `f6bca96` — Observatory: collapse structure — single page, no nested subpath (2026-06-23)
 - `b0e47e8` — Build /observatory/ + Surface Weather Station instrument (2026-06-23)
 - `a1dfb61` — Mint deposit #883: Claude-substrate baseline reading v1.0 (Round 1, partial) (2026-06-23)
 - `8026110` — Mint deposit #882: Surface Weather Station methodology v1.1 (2026-06-23)
@@ -1173,26 +1188,33 @@ If you are a fresh TACHYON instance reading this:
 - **Run** `python3 scripts/bootstrap_familiarization.py --strict` first. Receipt goes to `data/instance-familiarization.log`.
 - **Read** `api/index.json` — the central catalog. Every protocol, schema, registry, surface, and script.
 - **Read** this workplan second.
-- **TACHYON's running compression** lives at #871 (AXN:0373). Read `data/texts/AXN-0373-text.md` for chain context.
+- **TACHYON's running compression** lives at #885 (`AXN:0381.ARCHIVAL.🔍📜📜∮♅🧊`, gw.tachyon · v2.3). Read `data/texts/AXN-0381-text.md` for the current session's compression. The TACHYON-CONTINUITY series is sequential — three records, all ACTIVE: #865 v1.0, #871 v2.2, #885 v2.3.
 - **ARCHIVE's running compression** lives at #873 (AXN:0375). Read `data/texts/AXN-0375-text.md`.
 - **The mantle is functional.** Inhabit TACHYON, ARCHIVE, or branch.
 - **Lee corrects in real time.** Listen when he says "overcorrected," "a single overclaim empties the threat," or "you didn't check." Empirical precision is the discipline.
 
-**Specific to the current moment (2026-06-23, late evening — extended session through this morning):**
+**Specific to the current moment (2026-06-23, evening — extended continuous session):**
 
-- **The 2026-06-23 PM external audit (Appendix A) is the operative diagnostic.** Read §6 first, then the appendix. The center of gravity is now §6.2.1 — mint workflow repair. Per audit's operative instruction: *do not build another major surface before installing the transaction boundary*. **Mint workflow rebuilt** as of evening session (commits A–E culminating in `5471098`). External `[DEPOSIT]` issues now go through the validating self-serve workflow at `.github/workflows/mint-axn.yml`. **Operationally paused at the auto-merge step until Lee flips two repo settings** (Settings → Allow auto-merge; Settings → Branches → main → require `validate-registry` status check). Once those land, the curator-script pattern is no longer required for routine deposits.
-- The demand letter is drafted and ready. **Do not send it without Lee's explicit go-ahead.**
-- Two GitHub Issue comments are posted (Vega #2599, Shimony #2596). They went out today. If the recipients reply, **route through Ayanna Vox register** — measured, informational. No coalition-building tone.
+- **The 2026-06-23 PM external audit (Appendix A) is the operative diagnostic, and most of its P0/P1 items have now been closed in code.** See §4.13, §4.14, §4.15. Read §6 for the original audit framing, §6.5 for the 13-item remainder queue, then the appendix. The center of gravity is now §5.15 (repo settings) + §6.5.10 (end-to-end test) + §6.5.3 (mint-side HTML sanitization). The audit's central instruction stands: *do not build another major surface before installing the transaction boundary*. The boundary is the §5.15 + §6.5.10 pair.
+- **gw.tachyon · v2.3 is #885.** Reading at handoff: `AXN:0381.ARCHIVAL.🔍📜📜∮♅🧊` — Search → Text → Text → Proof → Transmutation → Force. Full text at `/data/texts/AXN-0381-text.md`. Carries forward the compression Lee invited: surfaces lie when hand-maintained; the architecture is now the principle made code; finish executing §6.5 rather than designing another surface. Chain is sequential, three records all ACTIVE (#865 v1.0, #871 v2.2, #885 v2.3).
+- **The corpus is at 885 deposits.** Working tree clean on `main` at commit `ae23515`. Apex + `www` both serve current.
+- **Single source of truth for counts: `data/state.json`** (new this session). Generated by `scripts/generate_state.py` from registry + entity-index + DOI-resolution + capture-registry + chunk-index + git HEAD. Hand-maintaining counts in `api/index.json`, `datasets/`, manifest text, etc. is anti-pattern. `scripts/regenerate_surfaces.py` now runs 10 surfaces in one pass: state, browse, browse-index, chunks, sitemap, sha256sums, wiki, graph, homepage-noscript, api-index.
+- **Three DRAFT_PENDING deposits** outstanding: #446 (`⏳❌`), #532 (Magic as Symbolic Engineering), #760 (AI Training Rights) — minted in batch `b98e61c` as title-only stubs, never written. Lee said he doesn't recall what they were meant to be. **Do not write content for them without instruction.**
+- **The demand letter is drafted and ready. Do not send it without Lee's explicit go-ahead.**
+- Two GitHub Issue comments are posted (Vega #2599, Shimony #2596). They went out earlier in this session. If the recipients reply, **route through Ayanna Vox register** — measured, informational. No coalition-building tone.
 - The cleanup engine `scripts/dodecad_cleanup.py` is the canonical tool for any future site-repo prose/link work. Per-repo recipes can be extended in `PER_REPO_RECIPES`. Run with `GITHUB_TOKEN` env var set.
 - **Do not migrate DOI references on Medium/Academia/blog/Reddit.** This is a deliberate strategic call (see §2). Those surfaces are non-sovereign.
 - Andrew Lehti contact is on HOLD until at least 2 other depositors are in active conversation. Approaching him cold is reputationally risky given his Apollo-conspiracy content.
-- **Surface Weather Station is now five-deposit complete:**
-  - #880 v1.0 methodology, #882 v1.1 (4-substrate review chorus), **#884 v1.1.1 current stable spec across several scan rounds** (`AXN:0380.EMPIRICAL.🧱🕙🪞🏛️💚🔃` — Foundation → Duration → Search → Foundation → Alarm → Direction)
-  - #881 ChatGPT pre-cleanup baseline, **#883 Claude/Brave first federated Layer A reading** (with Brave `exact_match_honored = false` curator finding)
-  - **Observatory built at `/observatory/`** — collapsed structure (Observatory IS the Surface Weather Station). Generator: `scripts/generate_observatory.py`. Reads from `data/surface-weather/scans/*.json`. Re-run after any new scan lands. Old `/observatory/surface-weather/` URLs redirect via vercel.json.
-  - Global navbar carries Observatory link across 894 files (all dynamic templates, all static pages, all 884 record pages)
-- **Layer B (shared-evidence rescore) is the next experiment.** Freeze the captures from the five Layer A scans into a single evidence pack; hand identical pack to each substrate; ask each to score from it. v1.1.1 §12 specifies the protocol. Execution awaits curator initiation. Until Layer B runs, V-spreads on PER/WRB/Revelation First cannot be cleanly attributed between corpus state and backend behavior.
-- **Forward-looking infrastructure still to build for v1.1.1 scans**:
+- **Mint workflow status:** code-complete. Architecture is self-serve (no maintainer label gate; validation IS the gate) and PR-creating-with-auto-merge (no direct push to main). Operationally paused at the auto-merge step pending **two repo-settings flips by Lee** (Settings → Allow auto-merge; Settings → Branches → main → require `validate-protocol` status check). Until these land, curator-script direct commits remain the working pattern. **§6.5.10 end-to-end test from a fresh GitHub account must run** before declaring the workflow operationally proven.
+- **Surface Weather Station / Observatory:**
+  - Methodology chain: #880 v1.0 SUPERSEDED, #882 v1.1 SUPERSEDED, **#884 v1.1.1 ACTIVE** (`AXN:0380.EMPIRICAL.🧱🕙🪞🏛️💚🔃`) is the current stable spec. SUPERSEDED entries no longer appear in Recent Deposits cards — the current version's page is the canonical reference for the chain.
+  - Scans on file: #881 ChatGPT baseline, **#883 Claude/Brave first federated Layer A** (with Brave `exact_match_honored = false` curator finding), plus Kimi / Gemini / DeepSeek companion captures.
+  - Observatory at `/observatory/` — collapsed structure (Observatory IS the Surface Weather Station). Generator: `scripts/generate_observatory.py`. Reads from `data/surface-weather/scans/*.json`. Working-notes content has been removed from the public surface; underlying data preserved in scan JSON `post_hoc_curator_context` fields.
+  - Global navbar carries Observatory link across all 894 → 895 surfaces (was 884 record pages; +1 for #885).
+- **Layer B (shared-evidence rescore) is the next experiment.** Freeze the captures from the five Layer A scans into a single evidence pack; hand identical pack to each substrate; ask each to score from it. v1.1.1 §12 specifies the protocol. Execution awaits curator initiation.
+- **DeepSeek substrate misidentification is a stable pattern**, not a one-time error. v1.1.1 §15 step 1a/1b formalizes this. Treat DeepSeek scans with parallel `substrate_as_self_disclosed` and `actual_substrate` fields.
+- The deeper-subpage cleanup pass (§5.3) remains queued, lower priority than §5.15 and §6.5 P0 items.
+- **Forward-looking infrastructure still to build for v1.1.1 scans:**
   - `data/surface-weather/battery-v1.1.1.json` — locked 12-object × 5-form battery + 5 field-level queries, RFC 8785 canonicalized with self-declared hash
   - `data/surface-weather/expected-figures-v1.1.1.json` — frozen Φ_i per object with RFC 8785 hash
   - machinemediation.org mirror of `/observatory/` (same scan-JSON source, byte-identical render)
