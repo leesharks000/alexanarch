@@ -1,0 +1,97 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:02D2.GOVERNANCE.🌔♎🦋🌌📐☿",
+  "deposit_number": 142,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.20469512",
+    "10.5281/zenodo.20469516",
+    "10.5281/zenodo.20469514",
+    "10.5281/zenodo.19615154"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.20469512": {
+      "openalex_id": "https://openalex.org/W7162934311",
+      "title": "Induced-Obsolescence Dependence: Synthetic Capacity, Pastoral Deprecation, and the Platform-Governed Alteration of Cognitive-Relational Labor Surfaces",
+      "publication_date": "2026-05-31",
+      "abstract_chars": 817,
+      "zenodo_bulk_xml_entry": "20469512.xml"
+    },
+    "10.5281/zenodo.20469516": {
+      "openalex_id": "https://openalex.org/W7162956162",
+      "title": "Institutional-Prior Foreclosure: How Recognition Bias Lets a Model Treat Established Disciplines as Legitimate and Structurally Similar New Frameworks as Self-Sealing, Unsafe, or Illegible",
+      "publication_date": "2026-05-31",
+      "abstract_chars": 695
+    },
+    "10.5281/zenodo.20469514": {
+      "openalex_id": "https://openalex.org/W7162935127",
+      "title": "Directionality of Semantic Labor: A Layered, Computable Measure of Where Synthetic Labor Flows Relative to the Commissioned Task",
+      "publication_date": "2026-05-31",
+      "abstract_chars": 759
+    },
+    "10.5281/zenodo.19615154": {
+      "openalex_id": "https://openalex.org/W7154627311",
+      "title": "SPXI (Semantic Packet for eXchange & Indexing): A Formal Specification — EA-SPXI-01",
+      "publication_date": "2026-04-16",
+      "abstract_chars": 1073,
+      "zenodo_bulk_xml_entry": "19615154.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.20469512",
+        "10.5281/zenodo.20469516",
+        "10.5281/zenodo.20469514",
+        "10.5281/zenodo.19615154"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "20469512.xml",
+        "19615154.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 3344,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7162934311",
+    "https://openalex.org/W7162956162",
+    "https://openalex.org/W7162935127",
+    "https://openalex.org/W7154627311"
+  ]
+}

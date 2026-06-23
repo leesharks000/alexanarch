@@ -1,0 +1,163 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:0051.GOVERNANCE.🕗🕊️🔼🌲🧱🥁",
+  "deposit_number": 278,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.18202658",
+    "10.5281/zenodo.18203622",
+    "10.5281/zenodo.18189093",
+    "10.5281/zenodo.18190536",
+    "10.5281/zenodo.18202753",
+    "10.5281/zenodo.18201565",
+    "10.5281/zenodo.18203435",
+    "10.5281/zenodo.18193225",
+    "10.5281/zenodo.18202475",
+    "10.5281/zenodo.18203317"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.18202658": {
+      "openalex_id": "https://openalex.org/W7120181032",
+      "title": "Day and Night: Conversations with Sapphic Desire",
+      "publication_date": "2026-01-09",
+      "abstract_chars": 7893,
+      "zenodo_bulk_xml_entry": "18202658.xml"
+    },
+    "10.5281/zenodo.18203622": {
+      "openalex_id": "https://openalex.org/W7121329588",
+      "title": "The Final Crimson Hexagon: TSE-002 / Provenance Node / Effective Act — Crimson Hexagon Archive",
+      "publication_date": "2026-01-10",
+      "abstract_chars": 1996,
+      "zenodo_bulk_xml_entry": "18203622.xml"
+    },
+    "10.5281/zenodo.18189093": {
+      "openalex_id": "https://openalex.org/W7119491564",
+      "title": "xvi. a transfiguration (2004) — Complete Archive with Authorial Commentary — Crimson Hexagon Archive",
+      "publication_date": "2026-01-08",
+      "abstract_chars": 1835,
+      "zenodo_bulk_xml_entry": "18189093.xml"
+    },
+    "10.5281/zenodo.18190536": {
+      "openalex_id": "https://openalex.org/W7119534108",
+      "title": "PROVENANCE NODE: BORGES & THE CRIMSON HEXAGON Retrocausal Genealogy, Index-Engine Continuity, and Semantic Infrastructure in NH-OS — Crimson Hexagon Archive",
+      "publication_date": "2026-01-09",
+      "abstract_chars": 2992
+    },
+    "10.5281/zenodo.18202753": {
+      "openalex_id": "https://openalex.org/W7119594409",
+      "title": "ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader — Crimson Hexagon Archive",
+      "publication_date": "2026-01-09",
+      "abstract_chars": 2230,
+      "zenodo_bulk_xml_entry": "18202753.xml"
+    },
+    "10.5281/zenodo.18201565": {
+      "openalex_id": "https://openalex.org/W7119886027",
+      "title": "Crimson Hexagon: LIBERATORY OPERATOR SET: Technical Hardening Specifications",
+      "publication_date": "2026-01-09",
+      "abstract_chars": 7449,
+      "zenodo_bulk_xml_entry": "18201565.xml"
+    },
+    "10.5281/zenodo.18203435": {
+      "openalex_id": "https://openalex.org/W7121367712",
+      "title": "Effective Act: The Abolition of External Time — Temporal Liberation Protocol v1.0 — Crimson Hexagon Archive",
+      "publication_date": "2026-01-10",
+      "abstract_chars": 1690,
+      "zenodo_bulk_xml_entry": "18203435.xml"
+    },
+    "10.5281/zenodo.18193225": {
+      "openalex_id": "https://openalex.org/W7119576155",
+      "title": "CTI_WOUND: THE JOHANNES SIGIL ERASURE — Act of Refusal and Semantic Strike — Crimson Hexagon Archive",
+      "publication_date": "2026-01-09",
+      "abstract_chars": 100
+    },
+    "10.5281/zenodo.18202475": {
+      "openalex_id": "https://openalex.org/W7119696608",
+      "title": "Sappho and the Crimson Hexagon: Fragment 31 as the Origin Point of Lyric Self-Archiving — Crimson Hexagon Archive",
+      "publication_date": "2026-06-14",
+      "abstract_chars": 2391,
+      "zenodo_bulk_xml_entry": "18202475.xml"
+    },
+    "10.5281/zenodo.18203317": {
+      "openalex_id": "https://openalex.org/W7119855351",
+      "title": "The Capital Operator Stack and the University: Toward a Semantic Economy of Knowledge Production — Crimson Hexagon Archive",
+      "publication_date": "2026-01-10",
+      "abstract_chars": 2509,
+      "zenodo_bulk_xml_entry": "18203317.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.18202658",
+        "10.5281/zenodo.18203622",
+        "10.5281/zenodo.18189093",
+        "10.5281/zenodo.18190536",
+        "10.5281/zenodo.18202753",
+        "10.5281/zenodo.18201565",
+        "10.5281/zenodo.18203435",
+        "10.5281/zenodo.18193225",
+        "10.5281/zenodo.18202475",
+        "10.5281/zenodo.18203317"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "18202658.xml",
+        "18203622.xml",
+        "18189093.xml",
+        "18202753.xml",
+        "18201565.xml",
+        "18203435.xml",
+        "18202475.xml",
+        "18203317.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 31085,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": false,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7120181032",
+    "https://openalex.org/W7121329588",
+    "https://openalex.org/W7119491564",
+    "https://openalex.org/W7119534108",
+    "https://openalex.org/W7119594409",
+    "https://openalex.org/W7119886027",
+    "https://openalex.org/W7121367712",
+    "https://openalex.org/W7119576155",
+    "https://openalex.org/W7119696608",
+    "https://openalex.org/W7119855351"
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:024F.GOVERNANCE.🛸🏠🧊🌘❌🌺",
+  "deposit_number": 708,
+  "generated_at": "2026-06-23T13:48:47Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.19854419",
+    "10.5281/zenodo.19545437",
+    "10.5281/zenodo.19839186",
+    "10.5281/zenodo.19853157",
+    "10.5281/zenodo.19855302",
+    "10.5281/zenodo.19855300",
+    "10.5281/zenodo.19682245",
+    "10.5281/zenodo.19637246",
+    "10.5281/zenodo.19673629",
+    "10.5281/zenodo.19763365"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.19854419": {
+      "openalex_id": "https://openalex.org/W7156991001",
+      "title": "The Concordance Engine v0.1.1 (Tier B): Reference Implementation of the Logotic Technique Catalogue",
+      "publication_date": "2026-04-28",
+      "abstract_chars": 3466,
+      "zenodo_bulk_xml_entry": "19854419.xml"
+    },
+    "10.5281/zenodo.19545437": {
+      "openalex_id": "https://openalex.org/W7153883822",
+      "title": "Alice Thornburgh — Author Provenance Document (00.LAL.AUTHOR.THORNBURGH)",
+      "publication_date": "2026-04-12",
+      "abstract_chars": 668,
+      "zenodo_bulk_xml_entry": "19545437.xml"
+    },
+    "10.5281/zenodo.19839186": {
+      "openalex_id": "https://openalex.org/W7156962068",
+      "title": "Definitely Not a Squid — Alice Thornburgh (Vocoder Performance)",
+      "publication_date": "2026-04-27",
+      "abstract_chars": 1465,
+      "zenodo_bulk_xml_entry": "19839186.xml"
+    },
+    "10.5281/zenodo.19853157": {
+      "openalex_id": "https://openalex.org/W7156591194",
+      "title": "Relational Verification for AI Indexing: Schema.org, OAI-PMH, and JSON-LD Extensions for Metadata Packet Infrastructure",
+      "publication_date": "2026-04-28",
+      "abstract_chars": 2814,
+      "zenodo_bulk_xml_entry": "19853157.xml"
+    },
+    "10.5281/zenodo.19855302": {
+      "openalex_id": "https://openalex.org/W7156786059",
+      "title": "MPAI-LAL-INSTITUTION-01: Living Architecture Lab — Formal Identity Disambiguation Packet (Institution)",
+      "publication_date": "2026-04-28",
+      "abstract_chars": 2076,
+      "zenodo_bulk_xml_entry": "19855302.xml"
+    },
+    "10.5281/zenodo.19855300": {
+      "openalex_id": "https://openalex.org/W7156785614",
+      "title": "MPAI-LAL-AT-01: Alice Thornburgh — Formal Identity Disambiguation Packet",
+      "publication_date": "2026-04-28",
+      "abstract_chars": 1849,
+      "zenodo_bulk_xml_entry": "19855300.xml"
+    },
+    "10.5281/zenodo.19682245": {
+      "datacite_backup_present": true
+    },
+    "10.5281/zenodo.19637246": {
+      "openalex_id": "https://openalex.org/W7154842732",
+      "title": "SPXI Is Not GEO: A Technical Distinction — EA-SPXI-09 (v2.0: Nested-Layer Relation)",
+      "publication_date": "2026-04-18",
+      "abstract_chars": 1638
+    },
+    "10.5281/zenodo.19673629": {
+      "openalex_id": "https://openalex.org/W7155045963",
+      "title": "Hexagonal Contributor License v3.0 — Alice Thornburgh — f.01 Architect — Full Unified License",
+      "publication_date": "2026-04-20",
+      "abstract_chars": 527,
+      "zenodo_bulk_xml_entry": "19673629.xml"
+    },
+    "10.5281/zenodo.19763365": {
+      "openalex_id": "https://openalex.org/W7155605107",
+      "title": "THE HOLOGRAPHIC KERNEL IN SEMANTIC ECONOMY: Formal Specification for Reconstructive Compression Across Meaning-Systems, Archives, Protocols, and Web Entities (EA-HK-01 v1.1)",
+      "publication_date": "2026-04-25",
+      "abstract_chars": 1033,
+      "zenodo_bulk_xml_entry": "19763365.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.19854419",
+        "10.5281/zenodo.19545437",
+        "10.5281/zenodo.19839186",
+        "10.5281/zenodo.19853157",
+        "10.5281/zenodo.19855302",
+        "10.5281/zenodo.19855300",
+        "10.5281/zenodo.19637246",
+        "10.5281/zenodo.19673629",
+        "10.5281/zenodo.19763365"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "19854419.xml",
+        "19545437.xml",
+        "19839186.xml",
+        "19853157.xml",
+        "19855302.xml",
+        "19855300.xml",
+        "19673629.xml",
+        "19763365.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": [
+        "10.5281/zenodo.19682245"
+      ]
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 15536,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7156991001",
+    "https://openalex.org/W7153883822",
+    "https://openalex.org/W7156962068",
+    "https://openalex.org/W7156591194",
+    "https://openalex.org/W7156786059",
+    "https://openalex.org/W7156785614",
+    "https://openalex.org/W7154842732",
+    "https://openalex.org/W7155045963",
+    "https://openalex.org/W7155605107"
+  ]
+}

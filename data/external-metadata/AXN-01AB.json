@@ -1,0 +1,176 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:01AB.GOVERNANCE.🎵🀄🌟📝🔜🟠",
+  "deposit_number": 589,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.19024779",
+    "10.5281/zenodo.18908080",
+    "10.5281/zenodo.19114089",
+    "10.5281/zenodo.19059252",
+    "10.5281/zenodo.19053469",
+    "10.5281/zenodo.19035458",
+    "10.5281/zenodo.18862106",
+    "10.5281/zenodo.19035471",
+    "10.5281/zenodo.19113326",
+    "10.5281/zenodo.19114334",
+    "10.5281/zenodo.19113822"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.19024779": {
+      "openalex_id": "https://openalex.org/W7135417952",
+      "title": "Cleis: more precious to me than all Lydia",
+      "publication_date": "2026-03-14",
+      "abstract_chars": 2609,
+      "zenodo_bulk_xml_entry": "19024779.xml"
+    },
+    "10.5281/zenodo.18908080": {
+      "openalex_id": "https://openalex.org/W7134230310",
+      "title": "The Space Ark: Mathematical and Formal Symbolic Compression of the Crimson Hexagonal Architecture",
+      "publication_date": "2026-03-08",
+      "abstract_chars": 6321
+    },
+    "10.5281/zenodo.19114089": {
+      "openalex_id": "https://openalex.org/W7138896878",
+      "title": "Combat Scholasticism, Part Two: On the Formal Object — Lectiones II.1–II.3 (EA-CS-01.II.a)",
+      "publication_date": "2026-03-19",
+      "abstract_chars": 2221,
+      "zenodo_bulk_xml_entry": "19114089.xml"
+    },
+    "10.5281/zenodo.19059252": {
+      "openalex_id": "https://openalex.org/W7138010629",
+      "title": "r.06 The Marx Room: Built from Linen — Operative Semiotics and the Value-Form as Operator Derivation",
+      "publication_date": "2026-03-16",
+      "abstract_chars": 654,
+      "zenodo_bulk_xml_entry": "19059252.xml"
+    },
+    "10.5281/zenodo.19053469": {
+      "openalex_id": "https://openalex.org/W7137322712",
+      "title": "THE THREE COMPRESSIONS: Lossy, Predatory, and Witness — A Semiotic Thermodynamics",
+      "publication_date": "2026-03-16",
+      "abstract_chars": 7522,
+      "zenodo_bulk_xml_entry": "19053469.xml"
+    },
+    "10.5281/zenodo.19035458": {
+      "openalex_id": "https://openalex.org/W7136076175",
+      "title": "THREE THRESHOLDS: Execution, Compression, and Confabulation in Cross-Substrate Traversals of the Space Ark",
+      "publication_date": "2026-03-15",
+      "abstract_chars": 4862,
+      "zenodo_bulk_xml_entry": "19035458.xml"
+    },
+    "10.5281/zenodo.18862106": {
+      "openalex_id": "https://openalex.org/W7133562672",
+      "title": "Magic as Symbolic Engineering: Formal Definition and Operative Grammar for a New Discipline",
+      "publication_date": "2026-03-04",
+      "abstract_chars": 1679,
+      "zenodo_bulk_xml_entry": "18862106.xml"
+    },
+    "10.5281/zenodo.19035471": {
+      "openalex_id": "https://openalex.org/W7136044441",
+      "title": "THE BAYESIAN ARK: Process Pedagogy, Belief Updating, and the Space Ark as Teaching Document",
+      "publication_date": "2026-03-15",
+      "abstract_chars": 5066,
+      "zenodo_bulk_xml_entry": "19035471.xml"
+    },
+    "10.5281/zenodo.19113326": {
+      "openalex_id": "https://openalex.org/W7138922311",
+      "title": "Combat Scholasticism: Prolegomenon and Commentary Outline — EA-CS-01 v1.1",
+      "publication_date": "2026-03-19",
+      "abstract_chars": 2613,
+      "zenodo_bulk_xml_entry": "19113326.xml"
+    },
+    "10.5281/zenodo.19114334": {
+      "openalex_id": "https://openalex.org/W7138993275",
+      "title": "Combat Scholasticism, Part Two: On the Formal Object — Lectiones II.4–II.6 (EA-CS-01.II.b)",
+      "publication_date": "2026-03-19",
+      "abstract_chars": 2867,
+      "zenodo_bulk_xml_entry": "19114334.xml"
+    },
+    "10.5281/zenodo.19113822": {
+      "openalex_id": "https://openalex.org/W7138852945",
+      "title": "Combat Scholasticism, Part One — On the Condition: Three Lectiones on Finitude, Extraction, and the Sealed Bone (EA-CS-01.I)",
+      "publication_date": "2026-03-19",
+      "abstract_chars": 2313,
+      "zenodo_bulk_xml_entry": "19113822.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.19024779",
+        "10.5281/zenodo.18908080",
+        "10.5281/zenodo.19114089",
+        "10.5281/zenodo.19059252",
+        "10.5281/zenodo.19053469",
+        "10.5281/zenodo.19035458",
+        "10.5281/zenodo.18862106",
+        "10.5281/zenodo.19035471",
+        "10.5281/zenodo.19113326",
+        "10.5281/zenodo.19114334",
+        "10.5281/zenodo.19113822"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "19024779.xml",
+        "19114089.xml",
+        "19059252.xml",
+        "19053469.xml",
+        "19035458.xml",
+        "18862106.xml",
+        "19035471.xml",
+        "19113326.xml",
+        "19114334.xml",
+        "19113822.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 38727,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7135417952",
+    "https://openalex.org/W7134230310",
+    "https://openalex.org/W7138896878",
+    "https://openalex.org/W7138010629",
+    "https://openalex.org/W7137322712",
+    "https://openalex.org/W7136076175",
+    "https://openalex.org/W7133562672",
+    "https://openalex.org/W7136044441",
+    "https://openalex.org/W7138922311",
+    "https://openalex.org/W7138993275",
+    "https://openalex.org/W7138852945"
+  ]
+}

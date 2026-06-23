@@ -1,0 +1,141 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:02DB.EMPIRICAL.🍂🤲◀️🗺️📖🕖",
+  "deposit_number": 144,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.20413757",
+    "10.5281/zenodo.19035477",
+    "10.5281/zenodo.19779493",
+    "10.5281/zenodo.20004379",
+    "10.5281/zenodo.20469516",
+    "10.5281/zenodo.20469514",
+    "10.5281/zenodo.20358816",
+    "10.5281/zenodo.18203317"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.20413757": {
+      "openalex_id": "https://openalex.org/W7162498664",
+      "title": "The Anthropological Limit: Semantic Exhaustion and the Enclosure of Meaning-Making",
+      "publication_date": "2026-05-27",
+      "abstract_chars": 1888,
+      "zenodo_bulk_xml_entry": "20413757.xml"
+    },
+    "10.5281/zenodo.19035477": {
+      "openalex_id": "https://openalex.org/W7136072008",
+      "title": "THE WAR FOR THE COMPRESSION LAYER: A Total Axial Negation Graph",
+      "publication_date": "2026-03-15",
+      "abstract_chars": 8352,
+      "zenodo_bulk_xml_entry": "19035477.xml"
+    },
+    "10.5281/zenodo.19779493": {
+      "openalex_id": "https://openalex.org/W7155694972",
+      "title": "TANG of the Secret Book of Walt: A Total Axial Negation Graph of Five Hundred Years of Waltian Scholarship (Assembly-Revised Edition)",
+      "publication_date": "2026-04-26",
+      "abstract_chars": 1266,
+      "zenodo_bulk_xml_entry": "19779493.xml"
+    },
+    "10.5281/zenodo.20004379": {
+      "openalex_id": "https://openalex.org/W7159958584",
+      "title": "Provenance Erasure Rate: A Compression-Survival Metric for Attribution Loss in AI-Composed Search Outputs",
+      "publication_date": "2026-05-03",
+      "abstract_chars": 1573,
+      "zenodo_bulk_xml_entry": "20004379.xml"
+    },
+    "10.5281/zenodo.20469516": {
+      "openalex_id": "https://openalex.org/W7162956162",
+      "title": "Institutional-Prior Foreclosure: How Recognition Bias Lets a Model Treat Established Disciplines as Legitimate and Structurally Similar New Frameworks as Self-Sealing, Unsafe, or Illegible",
+      "publication_date": "2026-05-31",
+      "abstract_chars": 695
+    },
+    "10.5281/zenodo.20469514": {
+      "openalex_id": "https://openalex.org/W7162935127",
+      "title": "Directionality of Semantic Labor: A Layered, Computable Measure of Where Synthetic Labor Flows Relative to the Commissioned Task",
+      "publication_date": "2026-05-31",
+      "abstract_chars": 759
+    },
+    "10.5281/zenodo.20358816": {
+      "openalex_id": "https://openalex.org/W7162195951",
+      "title": "Socially Necessary Scholarly Labor: A Critique of the Labor-Knowledge Ratio in Contemporary Depth-Architecture Scholarship",
+      "publication_date": "2026-05-23",
+      "abstract_chars": 5427,
+      "zenodo_bulk_xml_entry": "20358816.xml"
+    },
+    "10.5281/zenodo.18203317": {
+      "openalex_id": "https://openalex.org/W7119855351",
+      "title": "The Capital Operator Stack and the University: Toward a Semantic Economy of Knowledge Production — Crimson Hexagon Archive",
+      "publication_date": "2026-01-10",
+      "abstract_chars": 2509,
+      "zenodo_bulk_xml_entry": "18203317.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.20413757",
+        "10.5281/zenodo.19035477",
+        "10.5281/zenodo.19779493",
+        "10.5281/zenodo.20004379",
+        "10.5281/zenodo.20469516",
+        "10.5281/zenodo.20469514",
+        "10.5281/zenodo.20358816",
+        "10.5281/zenodo.18203317"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "20413757.xml",
+        "19035477.xml",
+        "19779493.xml",
+        "20004379.xml",
+        "20358816.xml",
+        "18203317.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 22469,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7162498664",
+    "https://openalex.org/W7136072008",
+    "https://openalex.org/W7155694972",
+    "https://openalex.org/W7159958584",
+    "https://openalex.org/W7162956162",
+    "https://openalex.org/W7162935127",
+    "https://openalex.org/W7162195951",
+    "https://openalex.org/W7119855351"
+  ]
+}

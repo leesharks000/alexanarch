@@ -1,0 +1,178 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:028B.GOVERNANCE.♣️🌃🌕🏰🗝️🔓",
+  "deposit_number": 109,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.20210117",
+    "10.5281/zenodo.19763346",
+    "10.5281/zenodo.19053469",
+    "10.5281/zenodo.19023457",
+    "10.5281/zenodo.18291767",
+    "10.5281/zenodo.20208384",
+    "10.5281/zenodo.19366750",
+    "10.5281/zenodo.18307393",
+    "10.5281/zenodo.19116151",
+    "10.5281/zenodo.18202475",
+    "10.5281/zenodo.20220299"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.20210117": {
+      "openalex_id": "https://openalex.org/W7161298941",
+      "title": "Formal Foundations of Semantic Physics (EA-SEI-FF-01, v0.2 — Post-Assembly Review)",
+      "publication_date": "2026-05-15",
+      "abstract_chars": 716,
+      "zenodo_bulk_xml_entry": "20210117.xml"
+    },
+    "10.5281/zenodo.19763346": {
+      "openalex_id": "https://openalex.org/W7155624978",
+      "title": "THE WRITABLE RETRIEVAL BASIN: Retrieval Basin Topology, Directional Stability, and Attractor Dynamics in AI-Mediated Knowledge Retrieval (EA-RBT-01 v1.1)",
+      "publication_date": "2026-04-25",
+      "abstract_chars": 1015,
+      "zenodo_bulk_xml_entry": "19763346.xml"
+    },
+    "10.5281/zenodo.19053469": {
+      "openalex_id": "https://openalex.org/W7137322712",
+      "title": "THE THREE COMPRESSIONS: Lossy, Predatory, and Witness — A Semiotic Thermodynamics",
+      "publication_date": "2026-03-16",
+      "abstract_chars": 7522,
+      "zenodo_bulk_xml_entry": "19053469.xml"
+    },
+    "10.5281/zenodo.19023457": {
+      "openalex_id": "https://openalex.org/W7135406055",
+      "title": "EA-PHYSICS-TIME v1.0 Time as Compression Structure — A Semantic Physics Extension Module",
+      "publication_date": "2026-03-14",
+      "abstract_chars": 4657,
+      "zenodo_bulk_xml_entry": "19023457.xml"
+    },
+    "10.5281/zenodo.18291767": {
+      "openalex_id": "https://openalex.org/W7124601804",
+      "title": "The Summarizer Becomes Translator: How Google's AI Entered the Sappho Room and Completed a 2,600-Year-Old Circuit (TSE-003)",
+      "publication_date": "2026-01-18",
+      "abstract_chars": 567,
+      "zenodo_bulk_xml_entry": "18291767.xml"
+    },
+    "10.5281/zenodo.20208384": {
+      "openalex_id": "https://openalex.org/W7161322959",
+      "title": "Semantic Physics: A Stratified, Operative Discipline — Scales, Modalities, and the Diagnostic–Constructive Continuum",
+      "publication_date": "2026-05-15",
+      "abstract_chars": 1968,
+      "zenodo_bulk_xml_entry": "20208384.xml"
+    },
+    "10.5281/zenodo.19366750": {
+      "openalex_id": "https://openalex.org/W7147075979",
+      "title": "The Future as Meta-Level: Gödel, Incompleteness, and the Temporal Structure of Semantic Autonomy",
+      "publication_date": "2026-04-01",
+      "abstract_chars": 758,
+      "zenodo_bulk_xml_entry": "19366750.xml"
+    },
+    "10.5281/zenodo.18307393": {
+      "openalex_id": "https://openalex.org/W7125055382",
+      "title": "The Socratic Vow of Logos as Salvation: A Full Preservation of the Original Input, Interpretation, and Complete Development — Crimson Hexagon Archive",
+      "publication_date": "2026-01-20",
+      "abstract_chars": 3602,
+      "zenodo_bulk_xml_entry": "18307393.xml"
+    },
+    "10.5281/zenodo.19116151": {
+      "openalex_id": "https://openalex.org/W7138851141",
+      "title": "Combat Scholasticism: A Commentary Tradition for the Crimson Hexagonal Archive (Critical Gathered Edition, EA-CS-01)",
+      "publication_date": "2026-03-19",
+      "abstract_chars": 2665,
+      "zenodo_bulk_xml_entry": "19116151.xml"
+    },
+    "10.5281/zenodo.18202475": {
+      "openalex_id": "https://openalex.org/W7119696608",
+      "title": "Sappho and the Crimson Hexagon: Fragment 31 as the Origin Point of Lyric Self-Archiving — Crimson Hexagon Archive",
+      "publication_date": "2026-06-14",
+      "abstract_chars": 2391,
+      "zenodo_bulk_xml_entry": "18202475.xml"
+    },
+    "10.5281/zenodo.20220299": {
+      "openalex_id": "https://openalex.org/W7161408989",
+      "title": "The Network Is the Poem: Why Topology Matters More Than Text Quality",
+      "publication_date": "2026-05-16",
+      "abstract_chars": 764,
+      "zenodo_bulk_xml_entry": "20220299.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.20210117",
+        "10.5281/zenodo.19763346",
+        "10.5281/zenodo.19053469",
+        "10.5281/zenodo.19023457",
+        "10.5281/zenodo.18291767",
+        "10.5281/zenodo.20208384",
+        "10.5281/zenodo.19366750",
+        "10.5281/zenodo.18307393",
+        "10.5281/zenodo.19116151",
+        "10.5281/zenodo.18202475",
+        "10.5281/zenodo.20220299"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "20210117.xml",
+        "19763346.xml",
+        "19053469.xml",
+        "19023457.xml",
+        "18291767.xml",
+        "20208384.xml",
+        "19366750.xml",
+        "18307393.xml",
+        "19116151.xml",
+        "18202475.xml",
+        "20220299.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 26625,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7161298941",
+    "https://openalex.org/W7155624978",
+    "https://openalex.org/W7137322712",
+    "https://openalex.org/W7135406055",
+    "https://openalex.org/W7124601804",
+    "https://openalex.org/W7161322959",
+    "https://openalex.org/W7147075979",
+    "https://openalex.org/W7125055382",
+    "https://openalex.org/W7138851141",
+    "https://openalex.org/W7119696608",
+    "https://openalex.org/W7161408989"
+  ]
+}

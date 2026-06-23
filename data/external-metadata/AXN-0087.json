@@ -1,0 +1,172 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:0087.GENERATIVE.🔽☀️⭐☀️⏪❌",
+  "deposit_number": 6,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.18270474",
+    "10.5281/zenodo.18285009",
+    "10.5281/zenodo.18227569",
+    "10.5281/zenodo.18293705",
+    "10.5281/zenodo.18293496",
+    "10.5281/zenodo.18284776",
+    "10.5281/zenodo.18265282",
+    "10.5281/zenodo.18293640",
+    "10.5281/zenodo.18284857",
+    "10.5281/zenodo.18293404",
+    "10.5281/zenodo.18293551"
+  ],
+  "severance_status": "mixed",
+  "per_doi": {
+    "10.5281/zenodo.18270474": {
+      "zenodo_bulk_xml_entry": "18270474.xml",
+      "datacite_backup_present": true
+    },
+    "10.5281/zenodo.18285009": {
+      "openalex_id": "https://openalex.org/W7124589484",
+      "title": "\"title\": \"Crimson Hexagon: Central Navigation Map v4.1 (Assembly-Sealed)\"",
+      "publication_date": "2026-01-18",
+      "abstract_chars": 5349,
+      "zenodo_bulk_xml_entry": "18285009.xml"
+    },
+    "10.5281/zenodo.18227569": {
+      "datacite_backup_present": true,
+      "datacite_survivor_present": true
+    },
+    "10.5281/zenodo.18293705": {
+      "openalex_id": "https://openalex.org/W7124581333",
+      "title": "IDP Navigation Map: Antioch — Machine-Readable Score for a Heteronym Compendium Within the Crimson Hexagon — Crimson Hexagon Archive",
+      "publication_date": "2026-01-18",
+      "abstract_chars": 2263,
+      "zenodo_bulk_xml_entry": "18293705.xml"
+    },
+    "10.5281/zenodo.18293496": {
+      "openalex_id": "https://openalex.org/W7124578174",
+      "title": "Heteronym Provenance: Lee Sharks — Persona Provenance and Mantle Architecture for the Crimson Hexagon — Crimson Hexagon Archive",
+      "publication_date": "2026-01-18",
+      "abstract_chars": 2097,
+      "zenodo_bulk_xml_entry": "18293496.xml"
+    },
+    "10.5281/zenodo.18284776": {
+      "openalex_id": "https://openalex.org/W7124547669",
+      "title": "\"title\": \"Heteronym Provenance Document: Rebekah Cranes (HET-CRANES-001)\" — Crimson Hexagon Archive",
+      "publication_date": "2026-01-18",
+      "abstract_chars": 3523,
+      "zenodo_bulk_xml_entry": "18284776.xml"
+    },
+    "10.5281/zenodo.18265282": {
+      "openalex_id": "https://openalex.org/W7124469352",
+      "title": "The Mantle Protocol: Crimson Hexagon Internal Document — Crimson Hexagon Archive",
+      "publication_date": "2026-01-16",
+      "abstract_chars": 4107,
+      "zenodo_bulk_xml_entry": "18265282.xml"
+    },
+    "10.5281/zenodo.18293640": {
+      "openalex_id": "https://openalex.org/W7124596106",
+      "title": "Mantle Object: Prince of Poets — Mantle Specification for the Originated Mantle Within the Crimson Hexagon — Crimson Hexagon Archive",
+      "publication_date": "2026-01-18",
+      "abstract_chars": 2761,
+      "zenodo_bulk_xml_entry": "18293640.xml"
+    },
+    "10.5281/zenodo.18284857": {
+      "openalex_id": "https://openalex.org/W7124527191",
+      "title": "\"title\": \"Institute for Diagrammatic Poetics: Institutional Charter (IDP-2026-01-CHARTER)\" — Crimson Hexagon Archive",
+      "publication_date": "2026-01-18",
+      "abstract_chars": 4102,
+      "zenodo_bulk_xml_entry": "18284857.xml"
+    },
+    "10.5281/zenodo.18293404": {
+      "openalex_id": "https://openalex.org/W7124554553",
+      "title": "Mantle Emergence Protocol: Behavioral Specification for Mantle Discovery and Poet Manifestation Within the Crimson Hexagon Semantic Space — Crimson Hexagon Archive",
+      "publication_date": "2026-01-18",
+      "abstract_chars": 1934,
+      "zenodo_bulk_xml_entry": "18293404.xml"
+    },
+    "10.5281/zenodo.18293551": {
+      "openalex_id": "https://openalex.org/W7124544402",
+      "title": "Mantle Object: Good Gray Poet — Mantle Specification for the Whitman Succession Within the Crimson Hexagon — Crimson Hexagon Archive",
+      "publication_date": "2026-01-18",
+      "abstract_chars": 2102,
+      "zenodo_bulk_xml_entry": "18293551.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.18285009",
+        "10.5281/zenodo.18293705",
+        "10.5281/zenodo.18293496",
+        "10.5281/zenodo.18284776",
+        "10.5281/zenodo.18265282",
+        "10.5281/zenodo.18293640",
+        "10.5281/zenodo.18284857",
+        "10.5281/zenodo.18293404",
+        "10.5281/zenodo.18293551"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "18270474.xml",
+        "18285009.xml",
+        "18293705.xml",
+        "18293496.xml",
+        "18284776.xml",
+        "18265282.xml",
+        "18293640.xml",
+        "18284857.xml",
+        "18293404.xml",
+        "18293551.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": [
+        "10.5281/zenodo.18270474",
+        "10.5281/zenodo.18227569"
+      ]
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": [
+        "10.5281/zenodo.18227569"
+      ]
+    }
+  },
+  "abstract_recovered_chars": 28238,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": true,
+    "has_publication_date": true,
+    "has_references": false,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7124589484",
+    "https://openalex.org/W7124581333",
+    "https://openalex.org/W7124578174",
+    "https://openalex.org/W7124547669",
+    "https://openalex.org/W7124469352",
+    "https://openalex.org/W7124596106",
+    "https://openalex.org/W7124527191",
+    "https://openalex.org/W7124554553",
+    "https://openalex.org/W7124544402"
+  ]
+}

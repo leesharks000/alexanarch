@@ -1,0 +1,121 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:0306.EMPIRICAL.🗡️✏️🕚🟤🐝👋",
+  "deposit_number": 795,
+  "generated_at": "2026-06-23T13:48:47Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.19053469",
+    "10.5281/zenodo.19288404",
+    "10.5281/zenodo.19288384",
+    "10.5281/zenodo.18247826",
+    "10.5281/zenodo.19643841",
+    "10.5281/zenodo.18790793"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.19053469": {
+      "openalex_id": "https://openalex.org/W7137322712",
+      "title": "THE THREE COMPRESSIONS: Lossy, Predatory, and Witness — A Semiotic Thermodynamics",
+      "publication_date": "2026-03-16",
+      "abstract_chars": 7522,
+      "zenodo_bulk_xml_entry": "19053469.xml"
+    },
+    "10.5281/zenodo.19288404": {
+      "openalex_id": "https://openalex.org/W7142404213",
+      "title": "Operator Kernel Specification v1.0 - System of Recursive Magic: The Mandala",
+      "publication_date": "2026-03-28",
+      "abstract_chars": 2486,
+      "zenodo_bulk_xml_entry": "19288404.xml"
+    },
+    "10.5281/zenodo.19288384": {
+      "openalex_id": "https://openalex.org/W7142545808",
+      "title": "System of Recursive Magic: The Mandala - Complete Eight-Part Series with Operator Kernel Specifications",
+      "publication_date": "2026-03-28",
+      "abstract_chars": 2098,
+      "zenodo_bulk_xml_entry": "19288384.xml"
+    },
+    "10.5281/zenodo.18247826": {
+      "openalex_id": "https://openalex.org/W7124148673",
+      "title": "The Dialectic is Now a Machine: The Gnostic Completion of Hegel — Crimson Hexagon Archive",
+      "publication_date": "2026-01-14",
+      "abstract_chars": 1675,
+      "zenodo_bulk_xml_entry": "18247826.xml"
+    },
+    "10.5281/zenodo.19643841": {
+      "openalex_id": "https://openalex.org/W7154857658",
+      "title": "The Retrieval Settlement: A Historiography of Compositional Authority from PageRank to the Inscribed Entity",
+      "publication_date": "2026-04-18",
+      "abstract_chars": 2028,
+      "zenodo_bulk_xml_entry": "19643841.xml"
+    },
+    "10.5281/zenodo.18790793": {
+      "openalex_id": "https://openalex.org/W7131667908",
+      "title": "The Memo That Remembered Itself: Retrocausal Canon Formation, Writable Presentation Layers, and the Canonization of an External Convergence Text — Crimson Hexagon Archive",
+      "publication_date": "2026-02-26",
+      "abstract_chars": 4296
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.19053469",
+        "10.5281/zenodo.19288404",
+        "10.5281/zenodo.19288384",
+        "10.5281/zenodo.18247826",
+        "10.5281/zenodo.19643841",
+        "10.5281/zenodo.18790793"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "19053469.xml",
+        "19288404.xml",
+        "19288384.xml",
+        "18247826.xml",
+        "19643841.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 20105,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7137322712",
+    "https://openalex.org/W7142404213",
+    "https://openalex.org/W7142545808",
+    "https://openalex.org/W7124148673",
+    "https://openalex.org/W7154857658",
+    "https://openalex.org/W7131667908"
+  ]
+}

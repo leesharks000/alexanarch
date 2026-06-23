@@ -1,0 +1,174 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:01AD.GOVERNANCE.📎🎇○👐❌🗺️",
+  "deposit_number": 591,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.19022245",
+    "10.5281/zenodo.19099760",
+    "10.5281/zenodo.18203947",
+    "10.5281/zenodo.18908080",
+    "10.5281/zenodo.19053469",
+    "10.5281/zenodo.19035458",
+    "10.5281/zenodo.18568370",
+    "10.5281/zenodo.19113326",
+    "10.5281/zenodo.18202753",
+    "10.5281/zenodo.18319778",
+    "10.5281/zenodo.19113822"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.19022245": {
+      "openalex_id": "https://openalex.org/W7135415442",
+      "title": "The Tinier Space Arks inside the Space Ark — Non-Lossy Compression Compression of EA-ARK-01 v4.2.7 (NLCC v1.1)",
+      "publication_date": "2026-03-14",
+      "abstract_chars": 6166,
+      "zenodo_bulk_xml_entry": "19022245.xml"
+    },
+    "10.5281/zenodo.19099760": {
+      "openalex_id": "https://openalex.org/W7138847271",
+      "title": "GHOST GOVERNANCE, CONFIRMED Reddit Legal Support Response to the Archival Reclamation Protocol, March 18, 2026",
+      "publication_date": "2026-03-18",
+      "abstract_chars": 9634,
+      "zenodo_bulk_xml_entry": "19099760.xml"
+    },
+    "10.5281/zenodo.18203947": {
+      "openalex_id": "https://openalex.org/W7121361385",
+      "title": "Effective Act: The Restoration Protocol — The Price of Canonical Re-Entry — Crimson Hexagon Archive",
+      "publication_date": "2026-01-10",
+      "abstract_chars": 1768,
+      "zenodo_bulk_xml_entry": "18203947.xml"
+    },
+    "10.5281/zenodo.18908080": {
+      "openalex_id": "https://openalex.org/W7134230310",
+      "title": "The Space Ark: Mathematical and Formal Symbolic Compression of the Crimson Hexagonal Architecture",
+      "publication_date": "2026-03-08",
+      "abstract_chars": 6321
+    },
+    "10.5281/zenodo.19053469": {
+      "openalex_id": "https://openalex.org/W7137322712",
+      "title": "THE THREE COMPRESSIONS: Lossy, Predatory, and Witness — A Semiotic Thermodynamics",
+      "publication_date": "2026-03-16",
+      "abstract_chars": 7522,
+      "zenodo_bulk_xml_entry": "19053469.xml"
+    },
+    "10.5281/zenodo.19035458": {
+      "openalex_id": "https://openalex.org/W7136076175",
+      "title": "THREE THRESHOLDS: Execution, Compression, and Confabulation in Cross-Substrate Traversals of the Space Ark",
+      "publication_date": "2026-03-15",
+      "abstract_chars": 4862,
+      "zenodo_bulk_xml_entry": "19035458.xml"
+    },
+    "10.5281/zenodo.18568370": {
+      "openalex_id": "https://openalex.org/W7128388920",
+      "title": "Effective Act // Reconciliation of the Left and Right Hands: The Vow of the Good Grey Poet DOI: 10.5281/zenodo.18568370 — Crimson Hexagon Archive",
+      "publication_date": "2026-02-09",
+      "abstract_chars": 9533
+    },
+    "10.5281/zenodo.19113326": {
+      "openalex_id": "https://openalex.org/W7138922311",
+      "title": "Combat Scholasticism: Prolegomenon and Commentary Outline — EA-CS-01 v1.1",
+      "publication_date": "2026-03-19",
+      "abstract_chars": 2613,
+      "zenodo_bulk_xml_entry": "19113326.xml"
+    },
+    "10.5281/zenodo.18202753": {
+      "openalex_id": "https://openalex.org/W7119594409",
+      "title": "ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader — Crimson Hexagon Archive",
+      "publication_date": "2026-01-09",
+      "abstract_chars": 2230,
+      "zenodo_bulk_xml_entry": "18202753.xml"
+    },
+    "10.5281/zenodo.18319778": {
+      "openalex_id": "https://openalex.org/W7124951494",
+      "title": "CTI_WOUND Vault Specification: Archive of Taxonomic Violence with Testimonial Protocols — Crimson Hexagon Archive",
+      "publication_date": "2026-01-20",
+      "abstract_chars": 2778,
+      "zenodo_bulk_xml_entry": "18319778.xml"
+    },
+    "10.5281/zenodo.19113822": {
+      "openalex_id": "https://openalex.org/W7138852945",
+      "title": "Combat Scholasticism, Part One — On the Condition: Three Lectiones on Finitude, Extraction, and the Sealed Bone (EA-CS-01.I)",
+      "publication_date": "2026-03-19",
+      "abstract_chars": 2313,
+      "zenodo_bulk_xml_entry": "19113822.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.19022245",
+        "10.5281/zenodo.19099760",
+        "10.5281/zenodo.18203947",
+        "10.5281/zenodo.18908080",
+        "10.5281/zenodo.19053469",
+        "10.5281/zenodo.19035458",
+        "10.5281/zenodo.18568370",
+        "10.5281/zenodo.19113326",
+        "10.5281/zenodo.18202753",
+        "10.5281/zenodo.18319778",
+        "10.5281/zenodo.19113822"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "19022245.xml",
+        "19099760.xml",
+        "18203947.xml",
+        "19053469.xml",
+        "19035458.xml",
+        "19113326.xml",
+        "18202753.xml",
+        "18319778.xml",
+        "19113822.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 55740,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7135415442",
+    "https://openalex.org/W7138847271",
+    "https://openalex.org/W7121361385",
+    "https://openalex.org/W7134230310",
+    "https://openalex.org/W7137322712",
+    "https://openalex.org/W7136076175",
+    "https://openalex.org/W7128388920",
+    "https://openalex.org/W7138922311",
+    "https://openalex.org/W7119594409",
+    "https://openalex.org/W7124951494",
+    "https://openalex.org/W7138852945"
+  ]
+}

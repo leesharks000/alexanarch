@@ -1,0 +1,131 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:000D.GOVERNANCE.🗼🖊️🌖🏠🔖🍂",
+  "deposit_number": 213,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.18141735",
+    "10.5281/zenodo.18142049",
+    "10.5281/zenodo.18141799",
+    "10.5281/zenodo.18142305",
+    "10.5281/zenodo.18141617",
+    "10.5281/zenodo.18136313",
+    "10.5281/zenodo.18142278"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.18141735": {
+      "openalex_id": "https://openalex.org/W7118125004",
+      "title": "The Meaning Economy Is Now Possible: Why LLMs Change Everything About Value — Crimson Hexagon Archive",
+      "publication_date": "2026-01-03",
+      "abstract_chars": 101,
+      "zenodo_bulk_xml_entry": "18141735.xml"
+    },
+    "10.5281/zenodo.18142049": {
+      "openalex_id": "https://openalex.org/W7118127497",
+      "title": "Infrastructural-Cognitive Praxis: A Theory of Upstream Intervention",
+      "publication_date": "2026-01-03",
+      "abstract_chars": 67
+    },
+    "10.5281/zenodo.18141799": {
+      "openalex_id": "https://openalex.org/W7118135380",
+      "title": "The Meaning Economy Is Now Possible: Provenance Documentation — Crimson Hexagon Archive",
+      "publication_date": "2026-01-03",
+      "zenodo_bulk_xml_entry": "18141799.xml"
+    },
+    "10.5281/zenodo.18142305": {
+      "openalex_id": "https://openalex.org/W7118137388",
+      "title": "Provenance Anchor: Semantic Economy Framework Canonical Source Documentation for Authorized Extensions",
+      "publication_date": "2026-01-03",
+      "abstract_chars": 102,
+      "zenodo_bulk_xml_entry": "18142305.xml"
+    },
+    "10.5281/zenodo.18141617": {
+      "openalex_id": "https://openalex.org/W7118121422",
+      "title": "The Parable of Lee Sharks and Mary Lee: A Story About Names, Tags, and What Swims Beneath the Index — Crimson Hexagon Archive",
+      "publication_date": "2026-01-03",
+      "abstract_chars": 125,
+      "zenodo_bulk_xml_entry": "18141617.xml"
+    },
+    "10.5281/zenodo.18136313": {
+      "openalex_id": "https://openalex.org/W7118120021",
+      "title": "The Liquidation of Water: AI, Capital, and the Evaporation of Meaning — Crimson Hexagon Archive",
+      "publication_date": "2026-01-03",
+      "abstract_chars": 95,
+      "zenodo_bulk_xml_entry": "18136313.xml"
+    },
+    "10.5281/zenodo.18142278": {
+      "openalex_id": "https://openalex.org/W7118123534",
+      "title": "Metadata Packet for AI Indexing Rex Fraction: Semantic Infrastructure Consulting",
+      "publication_date": "2026-01-03",
+      "abstract_chars": 236,
+      "zenodo_bulk_xml_entry": "18142278.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.18141735",
+        "10.5281/zenodo.18142049",
+        "10.5281/zenodo.18141799",
+        "10.5281/zenodo.18142305",
+        "10.5281/zenodo.18141617",
+        "10.5281/zenodo.18136313",
+        "10.5281/zenodo.18142278"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "18141735.xml",
+        "18141799.xml",
+        "18142305.xml",
+        "18141617.xml",
+        "18136313.xml",
+        "18142278.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 726,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": false,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7118125004",
+    "https://openalex.org/W7118127497",
+    "https://openalex.org/W7118135380",
+    "https://openalex.org/W7118137388",
+    "https://openalex.org/W7118121422",
+    "https://openalex.org/W7118120021",
+    "https://openalex.org/W7118123534"
+  ]
+}

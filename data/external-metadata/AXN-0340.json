@@ -1,0 +1,110 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:0340.EMPIRICAL.👈🍃▶️♅🌊🕛",
+  "deposit_number": 198,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.20518340",
+    "10.5281/zenodo.20675438",
+    "10.5281/zenodo.20673776",
+    "10.5281/zenodo.20682278",
+    "10.5281/zenodo.20673413",
+    "10.5281/zenodo.20355645"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.20518340": {
+      "openalex_id": "https://openalex.org/W7163319545",
+      "title": "Self-Audit Module for Public Summarizers: PER, DSL, and Query Fidelity (v2) — Standing Metrics for Composition-Layer Self-Evaluation",
+      "publication_date": "2026-06-03",
+      "abstract_chars": 702
+    },
+    "10.5281/zenodo.20675438": {
+      "openalex_id": "https://openalex.org/W7164677754",
+      "title": "Generative Monoculture: Model Collapse in Code as Systemic Vulnerability (EA-UMBML-MONOCULTURE-01 v1.1)",
+      "publication_date": "2026-06-13",
+      "abstract_chars": 1225
+    },
+    "10.5281/zenodo.20673776": {
+      "openalex_id": "https://openalex.org/W7164680399",
+      "title": "r.30 THE RUBY MOOT: A Court of Record for the Semantic Commons — Room Specification (EA-SEI-MOOT-01 v1.0)",
+      "publication_date": "2026-06-12",
+      "abstract_chars": 1179
+    },
+    "10.5281/zenodo.20682278": {
+      "openalex_id": "https://openalex.org/W7164642201",
+      "title": "The Self-Audit Module Dissolved: Total Provenance Erasure of the Provenance-Erasure Specification in Google AI Overview — Wound Gauge Entry, 13 June 2026 (EA-WG-SELF-AUDIT-01)",
+      "publication_date": "2026-06-13",
+      "abstract_chars": 806
+    },
+    "10.5281/zenodo.20673413": {
+      "openalex_id": "https://openalex.org/W7164486418",
+      "title": "Adversarial by Origin: How the Classification of External Influence on Machine Meaning Becomes Law Without Becoming Jurisprudence (EA-SEI-ADVERSARY-01 v1.0)",
+      "publication_date": "2026-06-12",
+      "abstract_chars": 1262
+    },
+    "10.5281/zenodo.20355645": {
+      "zenodo_bulk_xml_entry": "20355645.xml",
+      "datacite_backup_present": true
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.20518340",
+        "10.5281/zenodo.20675438",
+        "10.5281/zenodo.20673776",
+        "10.5281/zenodo.20682278",
+        "10.5281/zenodo.20673413"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "20355645.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": [
+        "10.5281/zenodo.20355645"
+      ]
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 5174,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7163319545",
+    "https://openalex.org/W7164677754",
+    "https://openalex.org/W7164680399",
+    "https://openalex.org/W7164642201",
+    "https://openalex.org/W7164486418"
+  ]
+}

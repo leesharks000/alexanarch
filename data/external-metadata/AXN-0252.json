@@ -1,0 +1,154 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:0252.GOVERNANCE.♥️✊🪄▽🔥🍃",
+  "deposit_number": 81,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.19854419",
+    "10.5281/zenodo.19053469",
+    "10.5281/zenodo.19578086",
+    "10.5281/zenodo.18735468",
+    "10.5281/zenodo.19831619",
+    "10.5281/zenodo.19854418",
+    "10.5281/zenodo.19853157",
+    "10.5281/zenodo.19487009",
+    "10.5281/zenodo.19763365"
+  ],
+  "severance_status": "mixed",
+  "per_doi": {
+    "10.5281/zenodo.19854419": {
+      "openalex_id": "https://openalex.org/W7156991001",
+      "title": "The Concordance Engine v0.1.1 (Tier B): Reference Implementation of the Logotic Technique Catalogue",
+      "publication_date": "2026-04-28",
+      "abstract_chars": 3466,
+      "zenodo_bulk_xml_entry": "19854419.xml"
+    },
+    "10.5281/zenodo.19053469": {
+      "openalex_id": "https://openalex.org/W7137322712",
+      "title": "THE THREE COMPRESSIONS: Lossy, Predatory, and Witness — A Semiotic Thermodynamics",
+      "publication_date": "2026-03-16",
+      "abstract_chars": 7522,
+      "zenodo_bulk_xml_entry": "19053469.xml"
+    },
+    "10.5281/zenodo.19578086": {
+      "openalex_id": "https://openalex.org/W7154222968",
+      "title": "Metadata Packet for AI Indexing: A Formal Specification for Entity-Level Retrieval Architecture",
+      "publication_date": "2026-04-14",
+      "abstract_chars": 622,
+      "zenodo_bulk_xml_entry": "19578086.xml"
+    },
+    "10.5281/zenodo.18735468": {
+      "openalex_id": "https://openalex.org/W7130943043",
+      "title": "Fortress or Room? Metaphor, Method, and the Epistemology of Human–LLM Interaction Beyond Red Teaming DOI: 10.5281/zenodo.18735468 — Crimson Hexagon Archive",
+      "publication_date": "2026-02-22",
+      "abstract_chars": 4892,
+      "zenodo_bulk_xml_entry": "18735468.xml"
+    },
+    "10.5281/zenodo.19831619": {
+      "openalex_id": "https://openalex.org/W7155975266",
+      "title": "The Logotic Technique Catalogue: Recovering Cooperative and Defensive Coordination Patterns from Adversarial AI Agent Architecture",
+      "publication_date": "2026-04-27",
+      "abstract_chars": 2502,
+      "zenodo_bulk_xml_entry": "19831619.xml"
+    },
+    "10.5281/zenodo.19854418": {
+      "datacite_backup_present": true,
+      "datacite_survivor_present": true
+    },
+    "10.5281/zenodo.19853157": {
+      "openalex_id": "https://openalex.org/W7156591194",
+      "title": "Relational Verification for AI Indexing: Schema.org, OAI-PMH, and JSON-LD Extensions for Metadata Packet Infrastructure",
+      "publication_date": "2026-04-28",
+      "abstract_chars": 2814,
+      "zenodo_bulk_xml_entry": "19853157.xml"
+    },
+    "10.5281/zenodo.19487009": {
+      "openalex_id": "https://openalex.org/W7152526477",
+      "title": "Meaning Feudalism: A Semantic Economic Analysis of 'AI Agent Traps' (Franklin et al., Google DeepMind, 2026)",
+      "publication_date": "2026-04-09",
+      "abstract_chars": 944,
+      "zenodo_bulk_xml_entry": "19487009.xml"
+    },
+    "10.5281/zenodo.19763365": {
+      "openalex_id": "https://openalex.org/W7155605107",
+      "title": "THE HOLOGRAPHIC KERNEL IN SEMANTIC ECONOMY: Formal Specification for Reconstructive Compression Across Meaning-Systems, Archives, Protocols, and Web Entities (EA-HK-01 v1.1)",
+      "publication_date": "2026-04-25",
+      "abstract_chars": 1033,
+      "zenodo_bulk_xml_entry": "19763365.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.19854419",
+        "10.5281/zenodo.19053469",
+        "10.5281/zenodo.19578086",
+        "10.5281/zenodo.18735468",
+        "10.5281/zenodo.19831619",
+        "10.5281/zenodo.19853157",
+        "10.5281/zenodo.19487009",
+        "10.5281/zenodo.19763365"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "19854419.xml",
+        "19053469.xml",
+        "19578086.xml",
+        "18735468.xml",
+        "19831619.xml",
+        "19853157.xml",
+        "19487009.xml",
+        "19763365.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": [
+        "10.5281/zenodo.19854418"
+      ]
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": [
+        "10.5281/zenodo.19854418"
+      ]
+    }
+  },
+  "abstract_recovered_chars": 23795,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": true,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7156991001",
+    "https://openalex.org/W7137322712",
+    "https://openalex.org/W7154222968",
+    "https://openalex.org/W7130943043",
+    "https://openalex.org/W7155975266",
+    "https://openalex.org/W7156591194",
+    "https://openalex.org/W7152526477",
+    "https://openalex.org/W7155605107"
+  ]
+}

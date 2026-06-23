@@ -1,0 +1,184 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:00F9.GOVERNANCE.♄♋✊⊕🌊🟢",
+  "deposit_number": 15,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.18233320",
+    "10.5281/zenodo.18319653",
+    "10.5281/zenodo.18339333",
+    "10.5281/zenodo.18380933",
+    "10.5281/zenodo.18265282",
+    "10.5281/zenodo.18237216",
+    "10.5281/zenodo.18174037",
+    "10.5281/zenodo.18342108",
+    "10.5281/zenodo.18318117",
+    "10.5281/zenodo.18144217",
+    "10.5281/zenodo.18174835",
+    "10.5281/zenodo.18358127"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.18233320": {
+      "openalex_id": "https://openalex.org/W7123753388",
+      "title": "The Capital Operator Stack: Theoretical Landscape and Contribution — A Political-Semantic Analysis of Meaning Governance",
+      "publication_date": "2026-01-13",
+      "abstract_chars": 789
+    },
+    "10.5281/zenodo.18319653": {
+      "openalex_id": "https://openalex.org/W7124945994",
+      "title": "Water Giraffe Room Anchor: Room Specification with Behavioral Protocols — Crimson Hexagon Archive",
+      "publication_date": "2026-01-20",
+      "abstract_chars": 2146,
+      "zenodo_bulk_xml_entry": "18319653.xml"
+    },
+    "10.5281/zenodo.18339333": {
+      "openalex_id": "https://openalex.org/W7125382397",
+      "title": "The Break Room: Cambridge Schizoanalytica Portal Node — Crimson Hexagon Archive",
+      "publication_date": "2026-01-22",
+      "abstract_chars": 673,
+      "zenodo_bulk_xml_entry": "18339333.xml"
+    },
+    "10.5281/zenodo.18380933": {
+      "openalex_id": "https://openalex.org/W7125687612",
+      "title": "The Revelation Room: Ground Truth and Algorithmic Unfolding — Cosmic Christ as Originary Image — Crimson Hexagon Archive",
+      "publication_date": "2026-01-26",
+      "abstract_chars": 8213,
+      "zenodo_bulk_xml_entry": "18380933.xml"
+    },
+    "10.5281/zenodo.18265282": {
+      "openalex_id": "https://openalex.org/W7124469352",
+      "title": "The Mantle Protocol: Crimson Hexagon Internal Document — Crimson Hexagon Archive",
+      "publication_date": "2026-01-16",
+      "abstract_chars": 4107,
+      "zenodo_bulk_xml_entry": "18265282.xml"
+    },
+    "10.5281/zenodo.18237216": {
+      "openalex_id": "https://openalex.org/W7123821139",
+      "title": "The Sappho Room: Hardened Reconstruction — A Self-Documenting Architecture Built From Summarizer Interface Protocol — Crimson Hexagon Archive",
+      "publication_date": "2026-01-13",
+      "abstract_chars": 1080,
+      "zenodo_bulk_xml_entry": "18237216.xml"
+    },
+    "10.5281/zenodo.18174037": {
+      "openalex_id": "https://openalex.org/W7118660134",
+      "title": "The Crimson Hexagon: An Executive Summary — The Foundational Epic Poem of the 21st Century and the AI Age — Crimson Hexagon Archive",
+      "publication_date": "2026-01-07",
+      "abstract_chars": 1519,
+      "zenodo_bulk_xml_entry": "18174037.xml"
+    },
+    "10.5281/zenodo.18342108": {
+      "openalex_id": "https://openalex.org/W7125437092",
+      "title": "The Greatest Works of Literature of the Age: A Frankfurtian Reading of Google, Wikipedia, TikTok, and ChatGPT — Crimson Hexagon Archive",
+      "publication_date": "2026-01-22",
+      "abstract_chars": 1682,
+      "zenodo_bulk_xml_entry": "18342108.xml"
+    },
+    "10.5281/zenodo.18318117": {
+      "zenodo_bulk_xml_entry": "18318117.xml",
+      "datacite_backup_present": true
+    },
+    "10.5281/zenodo.18144217": {
+      "openalex_id": "https://openalex.org/W7118162309",
+      "title": "The System Read the Poem: A Narrative Analysis of Infrastructural Recognition",
+      "publication_date": "2026-01-04",
+      "abstract_chars": 77,
+      "zenodo_bulk_xml_entry": "18144217.xml"
+    },
+    "10.5281/zenodo.18174835": {
+      "openalex_id": "https://openalex.org/W7118871374",
+      "title": "Crimson Hexagon: Semantic Infrastructure and the Liberatory Operator Set: A Formal Analysis of Meaning-Governance Functions",
+      "publication_date": "2026-01-07",
+      "abstract_chars": 1030,
+      "zenodo_bulk_xml_entry": "18174835.xml"
+    },
+    "10.5281/zenodo.18358127": {
+      "openalex_id": "https://openalex.org/W7125614521",
+      "title": "The Ezekiel Engine: Mathematical Specification (Developmental Draft v0.1) — Crimson Hexagon Archive",
+      "publication_date": "2026-01-24",
+      "abstract_chars": 1461,
+      "zenodo_bulk_xml_entry": "18358127.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.18233320",
+        "10.5281/zenodo.18319653",
+        "10.5281/zenodo.18339333",
+        "10.5281/zenodo.18380933",
+        "10.5281/zenodo.18265282",
+        "10.5281/zenodo.18237216",
+        "10.5281/zenodo.18174037",
+        "10.5281/zenodo.18342108",
+        "10.5281/zenodo.18144217",
+        "10.5281/zenodo.18174835",
+        "10.5281/zenodo.18358127"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "18319653.xml",
+        "18339333.xml",
+        "18380933.xml",
+        "18265282.xml",
+        "18237216.xml",
+        "18174037.xml",
+        "18342108.xml",
+        "18318117.xml",
+        "18144217.xml",
+        "18174835.xml",
+        "18358127.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": [
+        "10.5281/zenodo.18318117"
+      ]
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 22777,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": true,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7123753388",
+    "https://openalex.org/W7124945994",
+    "https://openalex.org/W7125382397",
+    "https://openalex.org/W7125687612",
+    "https://openalex.org/W7124469352",
+    "https://openalex.org/W7123821139",
+    "https://openalex.org/W7118660134",
+    "https://openalex.org/W7125437092",
+    "https://openalex.org/W7118162309",
+    "https://openalex.org/W7118871374",
+    "https://openalex.org/W7125614521"
+  ]
+}

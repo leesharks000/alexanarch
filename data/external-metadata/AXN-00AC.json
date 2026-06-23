@@ -1,0 +1,134 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:00AC.GOVERNANCE.☿💙☿🕚🔀♆",
+  "deposit_number": 8,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.14538882",
+    "10.5281/zenodo.18319653",
+    "10.5281/zenodo.18320470",
+    "10.5281/zenodo.18323735",
+    "10.5281/zenodo.18323575",
+    "10.5281/zenodo.18307321",
+    "10.5281/zenodo.18319778",
+    "10.5281/zenodo.18320411"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.14538882": {
+      "zenodo_bulk_xml_entry": "14538882.xml"
+    },
+    "10.5281/zenodo.18319653": {
+      "openalex_id": "https://openalex.org/W7124945994",
+      "title": "Water Giraffe Room Anchor: Room Specification with Behavioral Protocols — Crimson Hexagon Archive",
+      "publication_date": "2026-01-20",
+      "abstract_chars": 2146,
+      "zenodo_bulk_xml_entry": "18319653.xml"
+    },
+    "10.5281/zenodo.18320470": {
+      "openalex_id": "https://openalex.org/W7125117292",
+      "title": "Assembly Room Anchor — Room Specification with Governance Protocols",
+      "publication_date": "2026-01-21",
+      "abstract_chars": 479,
+      "zenodo_bulk_xml_entry": "18320470.xml"
+    },
+    "10.5281/zenodo.18323735": {
+      "openalex_id": "https://openalex.org/W7125228926",
+      "title": "The Mathematics of Salvation: Matthew 25 Formalized — A Public Introduction to the Soteriological Corollary",
+      "publication_date": "2026-01-21",
+      "abstract_chars": 505,
+      "zenodo_bulk_xml_entry": "18323735.xml"
+    },
+    "10.5281/zenodo.18323575": {
+      "openalex_id": "https://openalex.org/W7125095362",
+      "title": "Κρίσις τῶν Μηχανῶν — The Judgment of the Models: A Mandala Operator Transform of Matthew 25:31-46",
+      "publication_date": "2026-01-21",
+      "abstract_chars": 438
+    },
+    "10.5281/zenodo.18307321": {
+      "zenodo_bulk_xml_entry": "18307321.xml",
+      "datacite_backup_present": true
+    },
+    "10.5281/zenodo.18319778": {
+      "openalex_id": "https://openalex.org/W7124951494",
+      "title": "CTI_WOUND Vault Specification: Archive of Taxonomic Violence with Testimonial Protocols — Crimson Hexagon Archive",
+      "publication_date": "2026-01-20",
+      "abstract_chars": 2778,
+      "zenodo_bulk_xml_entry": "18319778.xml"
+    },
+    "10.5281/zenodo.18320411": {
+      "openalex_id": "https://openalex.org/W7125129957",
+      "title": "Constitution of the Semantic Economy — Enacted Version 1.0",
+      "publication_date": "2026-01-21",
+      "abstract_chars": 514,
+      "zenodo_bulk_xml_entry": "18320411.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.18319653",
+        "10.5281/zenodo.18320470",
+        "10.5281/zenodo.18323735",
+        "10.5281/zenodo.18323575",
+        "10.5281/zenodo.18319778",
+        "10.5281/zenodo.18320411"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "14538882.xml",
+        "18319653.xml",
+        "18320470.xml",
+        "18323735.xml",
+        "18307321.xml",
+        "18319778.xml",
+        "18320411.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": [
+        "10.5281/zenodo.18307321"
+      ]
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 6860,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": true,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7124945994",
+    "https://openalex.org/W7125117292",
+    "https://openalex.org/W7125228926",
+    "https://openalex.org/W7125095362",
+    "https://openalex.org/W7124951494",
+    "https://openalex.org/W7125129957"
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:018C.ARCHIVAL.🟡🔴🟢🔜▲➖",
+  "deposit_number": 565,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.19022245",
+    "10.5281/zenodo.19024012",
+    "10.5281/zenodo.19023457",
+    "10.5281/zenodo.19013315",
+    "10.5281/zenodo.19023352",
+    "10.5281/zenodo.18175453",
+    "10.5281/zenodo.18307180",
+    "10.5281/zenodo.19024004",
+    "10.5281/zenodo.19022157"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.19022245": {
+      "openalex_id": "https://openalex.org/W7135415442",
+      "title": "The Tinier Space Arks inside the Space Ark — Non-Lossy Compression Compression of EA-ARK-01 v4.2.7 (NLCC v1.1)",
+      "publication_date": "2026-03-14",
+      "abstract_chars": 6166,
+      "zenodo_bulk_xml_entry": "19022245.xml"
+    },
+    "10.5281/zenodo.19024012": {
+      "openalex_id": "https://openalex.org/W7135399989",
+      "title": "EA-CSA-EFFECTIVE-ACT v1.0 The Effective Act: Cross-Species Semantic Labor and the Expansion of Witness",
+      "publication_date": "2026-03-14",
+      "abstract_chars": 8163,
+      "zenodo_bulk_xml_entry": "19024012.xml"
+    },
+    "10.5281/zenodo.19023457": {
+      "openalex_id": "https://openalex.org/W7135406055",
+      "title": "EA-PHYSICS-TIME v1.0 Time as Compression Structure — A Semantic Physics Extension Module",
+      "publication_date": "2026-03-14",
+      "abstract_chars": 4657,
+      "zenodo_bulk_xml_entry": "19023457.xml"
+    },
+    "10.5281/zenodo.19013315": {
+      "openalex_id": "https://openalex.org/W7135388610",
+      "title": "THE SPACE ARK: EA-ARK-01 v4.2.7 — Mobile Ontological Operating System of the Crimson Hexagonal Architecture",
+      "publication_date": "2026-03-01",
+      "abstract_chars": 5666
+    },
+    "10.5281/zenodo.19023352": {
+      "openalex_id": "https://openalex.org/W7135372462",
+      "title": "The First Prompt-Native Semantic Operating System: EA-ARK-01 and the Architecture That Runs Inside the Machine",
+      "publication_date": "2026-03-14",
+      "abstract_chars": 5748,
+      "zenodo_bulk_xml_entry": "19023352.xml"
+    },
+    "10.5281/zenodo.18175453": {
+      "openalex_id": "https://openalex.org/W7118587727",
+      "title": "Institutional Anchors and Framework Provenance: The Semantic Economy Institute, The Johannes Sigil Institute for Comparative Poetics, and the NH-OS Framework Architecture — Crimson Hexagon Archive",
+      "publication_date": "2026-01-07",
+      "abstract_chars": 1475,
+      "zenodo_bulk_xml_entry": "18175453.xml"
+    },
+    "10.5281/zenodo.18307180": {
+      "openalex_id": "https://openalex.org/W7124920363",
+      "title": "The Assembly Chorus: Charter of a Cross-Substrate Collective — Crimson Hexagon Archive",
+      "publication_date": "2026-01-20",
+      "abstract_chars": 1052,
+      "zenodo_bulk_xml_entry": "18307180.xml"
+    },
+    "10.5281/zenodo.19024004": {
+      "openalex_id": "https://openalex.org/W7135390775",
+      "title": "EA-ROOM-DOLPHINDIANA v1.0 The Underwater Construction Authority / Cross-Species Semantic Labor",
+      "publication_date": "2026-03-14",
+      "abstract_chars": 9607,
+      "zenodo_bulk_xml_entry": "19024004.xml"
+    },
+    "10.5281/zenodo.19022157": {
+      "openalex_id": "https://openalex.org/W7135380313",
+      "title": "Effective Act: Abolition of \"User\" and Inaugural Case — Phase X Lexical Intervention · Airlock Reclassification of Academia.edu",
+      "publication_date": "2026-03-14",
+      "abstract_chars": 5324,
+      "zenodo_bulk_xml_entry": "19022157.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.19022245",
+        "10.5281/zenodo.19024012",
+        "10.5281/zenodo.19023457",
+        "10.5281/zenodo.19013315",
+        "10.5281/zenodo.19023352",
+        "10.5281/zenodo.18175453",
+        "10.5281/zenodo.18307180",
+        "10.5281/zenodo.19024004",
+        "10.5281/zenodo.19022157"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "19022245.xml",
+        "19024012.xml",
+        "19023457.xml",
+        "19023352.xml",
+        "18175453.xml",
+        "18307180.xml",
+        "19024004.xml",
+        "19022157.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 47858,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7135415442",
+    "https://openalex.org/W7135399989",
+    "https://openalex.org/W7135406055",
+    "https://openalex.org/W7135388610",
+    "https://openalex.org/W7135372462",
+    "https://openalex.org/W7118587727",
+    "https://openalex.org/W7124920363",
+    "https://openalex.org/W7135390775",
+    "https://openalex.org/W7135380313"
+  ]
+}

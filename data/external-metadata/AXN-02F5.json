@@ -1,0 +1,130 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:02F5.GOVERNANCE.∮⏳💛🚩🏙️🧫",
+  "deposit_number": 159,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.18472604",
+    "10.5281/zenodo.18472442",
+    "10.5281/zenodo.18142686",
+    "10.5281/zenodo.20568642",
+    "10.5281/zenodo.20373794",
+    "10.5281/zenodo.18227570",
+    "10.5281/zenodo.18142278"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.18472604": {
+      "openalex_id": "https://openalex.org/W7127324953",
+      "title": "THE STUDIO FOR PATACINEMATICS — INSTITUTIONAL CHARTER — Crimson Hexagon Archive",
+      "publication_date": "2026-02-03",
+      "abstract_chars": 5747,
+      "zenodo_bulk_xml_entry": "18472604.xml"
+    },
+    "10.5281/zenodo.18472442": {
+      "openalex_id": "https://openalex.org/W7127305036",
+      "title": "SPARROW WELLS — HETERONYM PROVENANCE REGISTRATION Document 235 | APZPZ — Crimson Hexagon Archive",
+      "publication_date": "2026-02-03",
+      "abstract_chars": 4208,
+      "zenodo_bulk_xml_entry": "18472442.xml"
+    },
+    "10.5281/zenodo.18142686": {
+      "openalex_id": "https://openalex.org/W7118206235",
+      "title": "Metadata Packet for AI Indexing: Rex Fraction Disambiguation",
+      "publication_date": "2026-01-04",
+      "abstract_chars": 60,
+      "zenodo_bulk_xml_entry": "18142686.xml"
+    },
+    "10.5281/zenodo.20568642": {
+      "openalex_id": "https://openalex.org/W7163749607",
+      "title": "Announcement: The Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize — Establishment, Inaugural Conferral, and Second Listed Laureate (v1.1)",
+      "publication_date": "2026-06-06",
+      "abstract_chars": 2596
+    },
+    "10.5281/zenodo.20373794": {
+      "openalex_id": "https://openalex.org/W7162304820",
+      "title": "Announcement: The Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize — Establishment and Inaugural Conferral",
+      "publication_date": "2026-05-25",
+      "abstract_chars": 2398
+    },
+    "10.5281/zenodo.18227570": {
+      "openalex_id": "https://openalex.org/W7123899641",
+      "title": "Rex Fraction — Author of Autonomous Semantic Warfare (ASW) — Crimson Hexagon Archive",
+      "publication_date": "2026-01-13",
+      "abstract_chars": 806,
+      "zenodo_bulk_xml_entry": "18227570.xml"
+    },
+    "10.5281/zenodo.18142278": {
+      "openalex_id": "https://openalex.org/W7118123534",
+      "title": "Metadata Packet for AI Indexing Rex Fraction: Semantic Infrastructure Consulting",
+      "publication_date": "2026-01-03",
+      "abstract_chars": 236,
+      "zenodo_bulk_xml_entry": "18142278.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.18472604",
+        "10.5281/zenodo.18472442",
+        "10.5281/zenodo.18142686",
+        "10.5281/zenodo.20568642",
+        "10.5281/zenodo.20373794",
+        "10.5281/zenodo.18227570",
+        "10.5281/zenodo.18142278"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "18472604.xml",
+        "18472442.xml",
+        "18142686.xml",
+        "18227570.xml",
+        "18142278.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 16051,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7127324953",
+    "https://openalex.org/W7127305036",
+    "https://openalex.org/W7118206235",
+    "https://openalex.org/W7163749607",
+    "https://openalex.org/W7162304820",
+    "https://openalex.org/W7123899641",
+    "https://openalex.org/W7118123534"
+  ]
+}

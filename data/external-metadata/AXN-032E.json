@@ -1,0 +1,124 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:032E.GOVERNANCE.🔧🥁●🔃🌱⭕",
+  "deposit_number": 819,
+  "generated_at": "2026-06-23T13:48:47Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.20651006",
+    "10.5281/zenodo.20251736",
+    "10.5281/zenodo.20645865",
+    "10.5281/zenodo.19512987",
+    "10.5281/zenodo.20650710",
+    "10.5281/zenodo.20518338",
+    "10.5281/zenodo.19099770"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.20651006": {
+      "openalex_id": "https://openalex.org/W7164403481",
+      "title": "Guillory, Semantic Competition, and the Ω-Point Completion: From Cultural Capital to Recursive Architecture — Formalizing the Post-Institutional Symbolic Economy (Revised and Expanded Edition, v2.0)",
+      "publication_date": "2026-06-11",
+      "abstract_chars": 2414
+    },
+    "10.5281/zenodo.20251736": {
+      "openalex_id": "https://openalex.org/W7161488815",
+      "title": "Framework 15 — Measurement of Meaning: Operations from Lagrange Observatory! within the Semantic Physics Matrix (EA-SEI-FW15-MANIFESTO v1.0)",
+      "publication_date": "2026-05-17",
+      "abstract_chars": 1324,
+      "zenodo_bulk_xml_entry": "20251736.xml"
+    },
+    "10.5281/zenodo.20645865": {
+      "openalex_id": "https://openalex.org/W7164380451",
+      "title": "The Press Layer of the Crimson Hexagonal Archive: Journal and Imprint Architectural Specification (EA-PRESS-ARCH-01 v1.0)",
+      "publication_date": "2026-06-11",
+      "abstract_chars": 1677
+    },
+    "10.5281/zenodo.19512987": {
+      "openalex_id": "https://openalex.org/W7153623648",
+      "title": "CALL FOR PAPERS: The Distributed Journal as Counter-Infrastructure — Metadata-Coordinated Publication After the Legacy Journal (Crimson Hexagonal Archive)",
+      "publication_date": "2026-04-11",
+      "abstract_chars": 1317,
+      "zenodo_bulk_xml_entry": "19512987.xml"
+    },
+    "10.5281/zenodo.20650710": {
+      "openalex_id": "https://openalex.org/W7164316667",
+      "title": "The Trigger Decision: When the Overview Appears, When It Does Not — A Gate-Stack Model of AI Overview Rendering and the Settlement Signal It Emits (EA-AIO-TRIGGER-01 v1.0)",
+      "publication_date": "2026-06-11",
+      "abstract_chars": 2303
+    },
+    "10.5281/zenodo.20518338": {
+      "openalex_id": "https://openalex.org/W7163337742",
+      "title": "Diversity Contraction Across Substrates: A Boundary Law for Semantic Exhaustion",
+      "publication_date": "2026-06-03",
+      "abstract_chars": 706
+    },
+    "10.5281/zenodo.19099770": {
+      "openalex_id": "https://openalex.org/W7139089987",
+      "title": "The Pergamon Reclamation: Retrocausal Canon Formation and the Forensic Philology of Academic Publishing",
+      "publication_date": "2026-03-18",
+      "abstract_chars": 1825
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.20651006",
+        "10.5281/zenodo.20251736",
+        "10.5281/zenodo.20645865",
+        "10.5281/zenodo.19512987",
+        "10.5281/zenodo.20650710",
+        "10.5281/zenodo.20518338",
+        "10.5281/zenodo.19099770"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "20251736.xml",
+        "19512987.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 11566,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7164403481",
+    "https://openalex.org/W7161488815",
+    "https://openalex.org/W7164380451",
+    "https://openalex.org/W7153623648",
+    "https://openalex.org/W7164316667",
+    "https://openalex.org/W7163337742",
+    "https://openalex.org/W7139089987"
+  ]
+}

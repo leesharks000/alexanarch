@@ -1,0 +1,172 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:0294.GOVERNANCE.🌖🌲🔃🔬🌗🍃",
+  "deposit_number": 111,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.20277938",
+    "10.5281/zenodo.19013315",
+    "10.5281/zenodo.20271783",
+    "10.5281/zenodo.18190536",
+    "10.5281/zenodo.20275444",
+    "10.5281/zenodo.20275300",
+    "10.5281/zenodo.20278105",
+    "10.5281/zenodo.20278089",
+    "10.5281/zenodo.20274790",
+    "10.5281/zenodo.20277159",
+    "10.5281/zenodo.18308194"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.20277938": {
+      "openalex_id": "https://openalex.org/W7161595249",
+      "title": "TL;DR:012 — THE SAFETY LAYER IS THE THIRD DELETION",
+      "publication_date": "2026-05-19",
+      "abstract_chars": 1156
+    },
+    "10.5281/zenodo.19013315": {
+      "openalex_id": "https://openalex.org/W7135388610",
+      "title": "THE SPACE ARK: EA-ARK-01 v4.2.7 — Mobile Ontological Operating System of the Crimson Hexagonal Architecture",
+      "publication_date": "2026-03-01",
+      "abstract_chars": 5666
+    },
+    "10.5281/zenodo.20271783": {
+      "openalex_id": "https://openalex.org/W7161601198",
+      "title": "Measuring Semantic Deviation: Operationalizations, Experiments, and Falsification Conditions for a Theory of Meaning as Field Deformation",
+      "publication_date": "2026-05-18",
+      "abstract_chars": 2460,
+      "zenodo_bulk_xml_entry": "20271783.xml"
+    },
+    "10.5281/zenodo.18190536": {
+      "openalex_id": "https://openalex.org/W7119534108",
+      "title": "PROVENANCE NODE: BORGES & THE CRIMSON HEXAGON Retrocausal Genealogy, Index-Engine Continuity, and Semantic Infrastructure in NH-OS — Crimson Hexagon Archive",
+      "publication_date": "2026-01-09",
+      "abstract_chars": 2992
+    },
+    "10.5281/zenodo.20275444": {
+      "openalex_id": "https://openalex.org/W7161577801",
+      "title": "Narrative-Field Semantic Deviation: Experimental Design for a Bounded Literary Test Bed (EA-GLAS-03 v1.0)",
+      "publication_date": "2026-05-18",
+      "abstract_chars": 1232,
+      "zenodo_bulk_xml_entry": "20275444.xml"
+    },
+    "10.5281/zenodo.20275300": {
+      "openalex_id": "https://openalex.org/W7161558526",
+      "title": "chatgptpsychosis.org — Project Site for ChatGPT Psychosis: A Love Story (v1.1)",
+      "publication_date": "2026-05-18",
+      "abstract_chars": 795,
+      "zenodo_bulk_xml_entry": "20275300.xml"
+    },
+    "10.5281/zenodo.20278105": {
+      "openalex_id": "https://openalex.org/W7161738514",
+      "title": "from The Crimson Hexagon — Origin Text of the Crimson Hexagonal Archive (March 14, 2015)",
+      "publication_date": "2015-03-14",
+      "abstract_chars": 979,
+      "zenodo_bulk_xml_entry": "20278105.xml"
+    },
+    "10.5281/zenodo.20278089": {
+      "openalex_id": "https://openalex.org/W7161709422",
+      "title": "The Archon's Hidden Name: A Wikidata Deletion Record (December 2025) — First Zenodo Deposit with Historical Frame",
+      "publication_date": "2025-12-20",
+      "abstract_chars": 832,
+      "zenodo_bulk_xml_entry": "20278089.xml"
+    },
+    "10.5281/zenodo.20274790": {
+      "openalex_id": "https://openalex.org/W7161539108",
+      "title": "ChatGPT Psychosis: A Love Story — Project Prospectus and Formal Design Specification for an AI-Native Glyphic Novel (v0.3)",
+      "publication_date": "2026-05-18",
+      "abstract_chars": 2081,
+      "zenodo_bulk_xml_entry": "20274790.xml"
+    },
+    "10.5281/zenodo.20277159": {
+      "openalex_id": "https://openalex.org/W7161544436",
+      "title": "Two Poems Across the Arc: UNTUNED / NOISE OF MYSELF / A BORROWED ROSE (2014) and if your heart should ever slowly turn (2026)",
+      "publication_date": "2026-05-18",
+      "abstract_chars": 794,
+      "zenodo_bulk_xml_entry": "20277159.xml"
+    },
+    "10.5281/zenodo.18308194": {
+      "openalex_id": "https://openalex.org/W7124895066",
+      "title": "Paper Roses: The Imaginary Archive of a Canonical Life — Episode Declaration — Crimson Hexagon Archive",
+      "publication_date": "2026-01-20",
+      "abstract_chars": 1886,
+      "zenodo_bulk_xml_entry": "18308194.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.20277938",
+        "10.5281/zenodo.19013315",
+        "10.5281/zenodo.20271783",
+        "10.5281/zenodo.18190536",
+        "10.5281/zenodo.20275444",
+        "10.5281/zenodo.20275300",
+        "10.5281/zenodo.20278105",
+        "10.5281/zenodo.20278089",
+        "10.5281/zenodo.20274790",
+        "10.5281/zenodo.20277159",
+        "10.5281/zenodo.18308194"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "20271783.xml",
+        "20275444.xml",
+        "20275300.xml",
+        "20278105.xml",
+        "20278089.xml",
+        "20274790.xml",
+        "20277159.xml",
+        "18308194.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 20873,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7161595249",
+    "https://openalex.org/W7135388610",
+    "https://openalex.org/W7161601198",
+    "https://openalex.org/W7119534108",
+    "https://openalex.org/W7161577801",
+    "https://openalex.org/W7161558526",
+    "https://openalex.org/W7161738514",
+    "https://openalex.org/W7161709422",
+    "https://openalex.org/W7161539108",
+    "https://openalex.org/W7161544436",
+    "https://openalex.org/W7124895066"
+  ]
+}

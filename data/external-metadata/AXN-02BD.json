@@ -1,0 +1,144 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:02BD.GOVERNANCE.💥⏬🔵🕐👋🝊",
+  "deposit_number": 131,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.19578086",
+    "10.5281/zenodo.18362663",
+    "10.5281/zenodo.18362742",
+    "10.5281/zenodo.20380668",
+    "10.5281/zenodo.18362525",
+    "10.5281/zenodo.18362866",
+    "10.5281/zenodo.20373794",
+    "10.5281/zenodo.20367202",
+    "10.5281/zenodo.18320411"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.19578086": {
+      "openalex_id": "https://openalex.org/W7154222968",
+      "title": "Metadata Packet for AI Indexing: A Formal Specification for Entity-Level Retrieval Architecture",
+      "publication_date": "2026-04-14",
+      "abstract_chars": 622,
+      "zenodo_bulk_xml_entry": "19578086.xml"
+    },
+    "10.5281/zenodo.18362663": {
+      "openalex_id": "https://openalex.org/W7125606184",
+      "title": "Vox Populi Community Outreach Rhizome: Institutional Charter — Crimson Hexagon Archive",
+      "publication_date": "2026-01-24",
+      "abstract_chars": 1309,
+      "zenodo_bulk_xml_entry": "18362663.xml"
+    },
+    "10.5281/zenodo.18362742": {
+      "openalex_id": "https://openalex.org/W7125590568",
+      "title": "Heteronym Provenance: Rev. Ayanna Vox — Crimson Hexagon Archive",
+      "publication_date": "2026-01-24",
+      "abstract_chars": 1956,
+      "zenodo_bulk_xml_entry": "18362742.xml"
+    },
+    "10.5281/zenodo.20380668": {
+      "zenodo_bulk_xml_entry": "20380668.xml"
+    },
+    "10.5281/zenodo.18362525": {
+      "openalex_id": "https://openalex.org/W7125601605",
+      "title": "The Toolkit: Protocols for Operational Persistence in Hostile Systems (v2.0 — Vox Revision) — Crimson Hexagon Archive",
+      "publication_date": "2026-01-24",
+      "abstract_chars": 1724
+    },
+    "10.5281/zenodo.18362866": {
+      "openalex_id": "https://openalex.org/W7125583750",
+      "title": "VPCOR Integrity Lock Declaration: Triadic Binding — Crimson Hexagon Archive",
+      "publication_date": "2026-01-24",
+      "abstract_chars": 1483,
+      "zenodo_bulk_xml_entry": "18362866.xml"
+    },
+    "10.5281/zenodo.20373794": {
+      "openalex_id": "https://openalex.org/W7162304820",
+      "title": "Announcement: The Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize — Establishment and Inaugural Conferral",
+      "publication_date": "2026-05-25",
+      "abstract_chars": 2398
+    },
+    "10.5281/zenodo.20367202": {
+      "openalex_id": "https://openalex.org/W7162250651",
+      "title": "Render unto the Operator: The Inverse Principle of Name and Superscription on the Coin of the Academy",
+      "publication_date": "2026-05-24",
+      "abstract_chars": 6108
+    },
+    "10.5281/zenodo.18320411": {
+      "openalex_id": "https://openalex.org/W7125129957",
+      "title": "Constitution of the Semantic Economy — Enacted Version 1.0",
+      "publication_date": "2026-01-21",
+      "abstract_chars": 514,
+      "zenodo_bulk_xml_entry": "18320411.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.19578086",
+        "10.5281/zenodo.18362663",
+        "10.5281/zenodo.18362742",
+        "10.5281/zenodo.18362525",
+        "10.5281/zenodo.18362866",
+        "10.5281/zenodo.20373794",
+        "10.5281/zenodo.20367202",
+        "10.5281/zenodo.18320411"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "19578086.xml",
+        "18362663.xml",
+        "18362742.xml",
+        "20380668.xml",
+        "18362866.xml",
+        "18320411.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 16114,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7154222968",
+    "https://openalex.org/W7125606184",
+    "https://openalex.org/W7125590568",
+    "https://openalex.org/W7125601605",
+    "https://openalex.org/W7125583750",
+    "https://openalex.org/W7162304820",
+    "https://openalex.org/W7162250651",
+    "https://openalex.org/W7125129957"
+  ]
+}

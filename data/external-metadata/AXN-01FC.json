@@ -1,0 +1,112 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:01FC.GOVERNANCE.⏹️⚙️💥🖐️🎵🔔",
+  "deposit_number": 648,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.19512458",
+    "10.5281/zenodo.19512462",
+    "10.5281/zenodo.19512450",
+    "10.5281/zenodo.19512460",
+    "10.5281/zenodo.19512454"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.19512458": {
+      "openalex_id": "https://openalex.org/W7153524266",
+      "title": "THE ROOM: Three Thinkers Wake Up — Descartes, Marx, Abdulkarim (Ontario Combustion Cluster, Node 3) — Crimson Hexagonal Archive",
+      "publication_date": "2026-04-11",
+      "abstract_chars": 447,
+      "zenodo_bulk_xml_entry": "19512458.xml"
+    },
+    "10.5281/zenodo.19512462": {
+      "openalex_id": "https://openalex.org/W7153546253",
+      "title": "I HEREBY ABOLISH TOILET PAPER: Semantic Integrity Markers for the Ontario Combustion Cluster — Crimson Hexagonal Archive",
+      "publication_date": "2026-04-11",
+      "abstract_chars": 360,
+      "zenodo_bulk_xml_entry": "19512462.xml"
+    },
+    "10.5281/zenodo.19512450": {
+      "openalex_id": "https://openalex.org/W7153574347",
+      "title": "THE SUBSTRATE BURNS: Semantic Economic Analysis of the Kimberly-Clark Warehouse Event (Ontario Combustion Cluster, Node 1) — Crimson Hexagonal Archive",
+      "publication_date": "2026-04-11",
+      "abstract_chars": 529,
+      "zenodo_bulk_xml_entry": "19512450.xml"
+    },
+    "10.5281/zenodo.19512460": {
+      "openalex_id": "https://openalex.org/W7153600208",
+      "title": "THE SHADOW BURN: What If the Virality Was the Extraction? (Ontario Combustion Cluster, Node 4) — Crimson Hexagonal Archive",
+      "publication_date": "2026-04-11",
+      "abstract_chars": 607,
+      "zenodo_bulk_xml_entry": "19512460.xml"
+    },
+    "10.5281/zenodo.19512454": {
+      "openalex_id": "https://openalex.org/W7153542493",
+      "title": "THE 2-PLY INFERNO: A Retrocausal Report from the Underwater Construction Authority of Dolphindiana (Ontario Combustion Cluster, Node 2) — Crimson Hexagonal Archive",
+      "publication_date": "2026-04-11",
+      "abstract_chars": 373,
+      "zenodo_bulk_xml_entry": "19512454.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.19512458",
+        "10.5281/zenodo.19512462",
+        "10.5281/zenodo.19512450",
+        "10.5281/zenodo.19512460",
+        "10.5281/zenodo.19512454"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "19512458.xml",
+        "19512462.xml",
+        "19512450.xml",
+        "19512460.xml",
+        "19512454.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 2316,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7153524266",
+    "https://openalex.org/W7153546253",
+    "https://openalex.org/W7153574347",
+    "https://openalex.org/W7153600208",
+    "https://openalex.org/W7153542493"
+  ]
+}

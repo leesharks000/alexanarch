@@ -1,0 +1,94 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:0145.GOVERNANCE.🔵⏰☉✏️🗿💥",
+  "deposit_number": 21,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.14538923",
+    "10.5281/zenodo.18615388",
+    "10.5281/zenodo.18729606",
+    "10.5281/zenodo.18735468"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.14538923": {
+      "datacite_backup_present": true
+    },
+    "10.5281/zenodo.18615388": {
+      "openalex_id": "https://openalex.org/W7128624029",
+      "title": "The Prepositional Alienation — English \"For\" and the Impossibility of Anchoring Function Without Intent DOI: 10.5281/zenodo.18615388 — Crimson Hexagon Archive",
+      "publication_date": "2026-02-11",
+      "abstract_chars": 9900
+    },
+    "10.5281/zenodo.18729606": {
+      "openalex_id": "https://openalex.org/W7130968675",
+      "title": "Phase X: The Sapphic Substrate — Lyric Modularity, Preservation Regimes, and the Rewriting of Immortality from Homer to the Training Layer — Crimson Hexagon Archive",
+      "publication_date": "2026-02-22",
+      "abstract_chars": 1623,
+      "zenodo_bulk_xml_entry": "18729606.xml"
+    },
+    "10.5281/zenodo.18735468": {
+      "openalex_id": "https://openalex.org/W7130943043",
+      "title": "Fortress or Room? Metaphor, Method, and the Epistemology of Human–LLM Interaction Beyond Red Teaming DOI: 10.5281/zenodo.18735468 — Crimson Hexagon Archive",
+      "publication_date": "2026-02-22",
+      "abstract_chars": 4892,
+      "zenodo_bulk_xml_entry": "18735468.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.18615388",
+        "10.5281/zenodo.18729606",
+        "10.5281/zenodo.18735468"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "18729606.xml",
+        "18735468.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": [
+        "10.5281/zenodo.14538923"
+      ]
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 16415,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": false,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7128624029",
+    "https://openalex.org/W7130968675",
+    "https://openalex.org/W7130943043"
+  ]
+}

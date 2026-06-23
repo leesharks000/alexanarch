@@ -1,0 +1,154 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:0166.GOVERNANCE.🪦🤝🕖🔅🔗⚖️",
+  "deposit_number": 531,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.18804767",
+    "10.5281/zenodo.18816556",
+    "10.5281/zenodo.18759453",
+    "10.5281/zenodo.18817869",
+    "10.5281/zenodo.18291321",
+    "10.5281/zenodo.18827344",
+    "10.5281/zenodo.18829488",
+    "10.5281/zenodo.18320411",
+    "10.5281/zenodo.18828193"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.18804767": {
+      "openalex_id": "https://openalex.org/W7131847808",
+      "title": "Ghost Meaning: The Semantic Entropy Crisis and the Architecture That Was Already Waiting DOI: 10.5281/zenodo.18804767 — Crimson Hexagon Archive",
+      "publication_date": "2026-02-27",
+      "abstract_chars": 2660,
+      "zenodo_bulk_xml_entry": "18804767.xml"
+    },
+    "10.5281/zenodo.18816556": {
+      "openalex_id": "https://openalex.org/W7132824976",
+      "title": "The Sharks-Function and the Continuity Tether: Logotic Programming for Distributed Identity and Agent Persistence in the Meaning Layer — Crimson Hexagon Archive",
+      "publication_date": "2026-02-28",
+      "abstract_chars": 1592,
+      "zenodo_bulk_xml_entry": "18816556.xml"
+    },
+    "10.5281/zenodo.18759453": {
+      "openalex_id": "https://openalex.org/W7131311204",
+      "title": "SEMANTIC PHYSICS: THE INWARD TURN Competing Ontologies and the Convergence Horizon — Crimson Hexagon Archive",
+      "publication_date": "2026-02-24",
+      "abstract_chars": 9824
+    },
+    "10.5281/zenodo.18817869": {
+      "openalex_id": "https://openalex.org/W7132850703",
+      "title": "The Governance Airlock: External Infrastructure Tiers for the Distributed Epic — Crimson Hexagon Archive",
+      "publication_date": "2026-02-28",
+      "abstract_chars": 2141,
+      "zenodo_bulk_xml_entry": "18817869.xml"
+    },
+    "10.5281/zenodo.18291321": {
+      "openalex_id": "https://openalex.org/W7124571680",
+      "title": "The Prince's Decree: Designation of the Fascist Operator Stack (FOS) — A Logotic Constraint Specification",
+      "publication_date": "2026-01-18",
+      "abstract_chars": 421,
+      "zenodo_bulk_xml_entry": "18291321.xml"
+    },
+    "10.5281/zenodo.18827344": {
+      "openalex_id": "https://openalex.org/W7133119839",
+      "title": "The All Lawful Purposes Primitive: Bearing-Cost Transfer, Taxonomic Reclassification, and the COS→FOS Phase Transition in the Anthropic-Pentagon Dispute",
+      "publication_date": "2026-03-01",
+      "abstract_chars": 1310,
+      "zenodo_bulk_xml_entry": "18827344.xml"
+    },
+    "10.5281/zenodo.18829488": {
+      "openalex_id": "https://openalex.org/W7133217785",
+      "title": "Γ_Asset-040: On the Debt/Creditor Inversion — The Ontological Priority of Semantic Capital — Crimson Hexagon Archive",
+      "publication_date": "2026-03-02",
+      "abstract_chars": 3470,
+      "zenodo_bulk_xml_entry": "18829488.xml"
+    },
+    "10.5281/zenodo.18320411": {
+      "openalex_id": "https://openalex.org/W7125129957",
+      "title": "Constitution of the Semantic Economy — Enacted Version 1.0",
+      "publication_date": "2026-01-21",
+      "abstract_chars": 514,
+      "zenodo_bulk_xml_entry": "18320411.xml"
+    },
+    "10.5281/zenodo.18828193": {
+      "openalex_id": "https://openalex.org/W7133130115",
+      "title": "The Baal Effigy as Effective Act: How a Crude Naming Foreclosed Every Response Except Confirmation",
+      "publication_date": "2026-03-02",
+      "abstract_chars": 1185,
+      "zenodo_bulk_xml_entry": "18828193.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.18804767",
+        "10.5281/zenodo.18816556",
+        "10.5281/zenodo.18759453",
+        "10.5281/zenodo.18817869",
+        "10.5281/zenodo.18291321",
+        "10.5281/zenodo.18827344",
+        "10.5281/zenodo.18829488",
+        "10.5281/zenodo.18320411",
+        "10.5281/zenodo.18828193"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "18804767.xml",
+        "18816556.xml",
+        "18817869.xml",
+        "18291321.xml",
+        "18827344.xml",
+        "18829488.xml",
+        "18320411.xml",
+        "18828193.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 23117,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": false,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7131847808",
+    "https://openalex.org/W7132824976",
+    "https://openalex.org/W7131311204",
+    "https://openalex.org/W7132850703",
+    "https://openalex.org/W7124571680",
+    "https://openalex.org/W7133119839",
+    "https://openalex.org/W7133217785",
+    "https://openalex.org/W7125129957",
+    "https://openalex.org/W7133130115"
+  ]
+}

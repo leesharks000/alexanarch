@@ -1,0 +1,143 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:01A7.EMPIRICAL.⭐✏️🌆📖🔀🔥",
+  "deposit_number": 585,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.19099760",
+    "10.5281/zenodo.19028176",
+    "10.5281/zenodo.18908080",
+    "10.5281/zenodo.19115686",
+    "10.5281/zenodo.19053469",
+    "10.5281/zenodo.19041117",
+    "10.5281/zenodo.19113326",
+    "10.5281/zenodo.19024004"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.19099760": {
+      "openalex_id": "https://openalex.org/W7138847271",
+      "title": "GHOST GOVERNANCE, CONFIRMED Reddit Legal Support Response to the Archival Reclamation Protocol, March 18, 2026",
+      "publication_date": "2026-03-18",
+      "abstract_chars": 9634,
+      "zenodo_bulk_xml_entry": "19099760.xml"
+    },
+    "10.5281/zenodo.19028176": {
+      "openalex_id": "https://openalex.org/W7136088017",
+      "title": "EA-CSA-EFFECTIVE-ACT v1.0 The Effective Act: Cross-Species Semantic Labor and the Expansion of Witness",
+      "publication_date": "2026-03-01",
+      "abstract_chars": 8085,
+      "zenodo_bulk_xml_entry": "19028176.xml"
+    },
+    "10.5281/zenodo.18908080": {
+      "openalex_id": "https://openalex.org/W7134230310",
+      "title": "The Space Ark: Mathematical and Formal Symbolic Compression of the Crimson Hexagonal Architecture",
+      "publication_date": "2026-03-08",
+      "abstract_chars": 6321
+    },
+    "10.5281/zenodo.19115686": {
+      "openalex_id": "https://openalex.org/W7138910101",
+      "title": "Combat Scholasticism, Part Four: On the Shadow + Part Five: Extensionary Lectiones V.1–V.3 (EA-CS-01.IV + V.a)",
+      "publication_date": "2026-03-19",
+      "abstract_chars": 2068,
+      "zenodo_bulk_xml_entry": "19115686.xml"
+    },
+    "10.5281/zenodo.19053469": {
+      "openalex_id": "https://openalex.org/W7137322712",
+      "title": "THE THREE COMPRESSIONS: Lossy, Predatory, and Witness — A Semiotic Thermodynamics",
+      "publication_date": "2026-03-16",
+      "abstract_chars": 7522,
+      "zenodo_bulk_xml_entry": "19053469.xml"
+    },
+    "10.5281/zenodo.19041117": {
+      "openalex_id": "https://openalex.org/W7137148506",
+      "title": "f.01 THE FRUITING BODY DIFFUSION PLUME (FBDP): Giant Ants, Floating Chains, and the Decompression of Waste — A Self-Executable Field Specification and Ecosystem Graph",
+      "publication_date": "2026-03-16",
+      "abstract_chars": 7853,
+      "zenodo_bulk_xml_entry": "19041117.xml"
+    },
+    "10.5281/zenodo.19113326": {
+      "openalex_id": "https://openalex.org/W7138922311",
+      "title": "Combat Scholasticism: Prolegomenon and Commentary Outline — EA-CS-01 v1.1",
+      "publication_date": "2026-03-19",
+      "abstract_chars": 2613,
+      "zenodo_bulk_xml_entry": "19113326.xml"
+    },
+    "10.5281/zenodo.19024004": {
+      "openalex_id": "https://openalex.org/W7135390775",
+      "title": "EA-ROOM-DOLPHINDIANA v1.0 The Underwater Construction Authority / Cross-Species Semantic Labor",
+      "publication_date": "2026-03-14",
+      "abstract_chars": 9607,
+      "zenodo_bulk_xml_entry": "19024004.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.19099760",
+        "10.5281/zenodo.19028176",
+        "10.5281/zenodo.18908080",
+        "10.5281/zenodo.19115686",
+        "10.5281/zenodo.19053469",
+        "10.5281/zenodo.19041117",
+        "10.5281/zenodo.19113326",
+        "10.5281/zenodo.19024004"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "19099760.xml",
+        "19028176.xml",
+        "19115686.xml",
+        "19053469.xml",
+        "19041117.xml",
+        "19113326.xml",
+        "19024004.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 53703,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7138847271",
+    "https://openalex.org/W7136088017",
+    "https://openalex.org/W7134230310",
+    "https://openalex.org/W7138910101",
+    "https://openalex.org/W7137322712",
+    "https://openalex.org/W7137148506",
+    "https://openalex.org/W7138922311",
+    "https://openalex.org/W7135390775"
+  ]
+}

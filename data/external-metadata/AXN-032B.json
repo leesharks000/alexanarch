@@ -1,0 +1,140 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:032B.EMPIRICAL.✋🤝☀️🌠🛤️🔼",
+  "deposit_number": 185,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.20618248",
+    "10.5281/zenodo.20518340",
+    "10.5281/zenodo.20413317",
+    "10.5281/zenodo.20619483",
+    "10.5281/zenodo.20427616",
+    "10.5281/zenodo.20618246",
+    "10.5281/zenodo.20619485",
+    "10.5281/zenodo.20559387",
+    "10.5281/zenodo.20619481"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.20618248": {
+      "openalex_id": "https://openalex.org/W7164003491",
+      "title": "Anchored Divergence: Immanent Critique as Survival Strategy Under Tail-Loss, and the Mandala as Limit Case (EA-SEI-ANCHDIV-01 v1.0)",
+      "publication_date": "2026-06-09",
+      "abstract_chars": 1219
+    },
+    "10.5281/zenodo.20518340": {
+      "openalex_id": "https://openalex.org/W7163319545",
+      "title": "Self-Audit Module for Public Summarizers: PER, DSL, and Query Fidelity (v2) — Standing Metrics for Composition-Layer Self-Evaluation",
+      "publication_date": "2026-06-03",
+      "abstract_chars": 702
+    },
+    "10.5281/zenodo.20413317": {
+      "openalex_id": "https://openalex.org/W7162579047",
+      "title": "The Future Beloved: Lyric Address as Temporal Projection — Toward a Theory of Recursive Reading",
+      "publication_date": "2026-06-14",
+      "abstract_chars": 2140
+    },
+    "10.5281/zenodo.20619483": {
+      "openalex_id": "https://openalex.org/W7164179194",
+      "title": "The Empty Bracket: Provenance Erasure of the Provenance-Erasure Specification — An Exhibit Note (EA-EB-01 v1.0)",
+      "publication_date": "2026-06-10",
+      "abstract_chars": 1051
+    },
+    "10.5281/zenodo.20427616": {
+      "openalex_id": "https://openalex.org/W7162687128",
+      "title": "TL;DR:014 — The Wound Gauge: Second-Order Provenance Erasure as Framework-Adoption-with-Author-Demotion",
+      "publication_date": "2026-05-28",
+      "abstract_chars": 2236,
+      "zenodo_bulk_xml_entry": "20427616.xml"
+    },
+    "10.5281/zenodo.20618246": {
+      "openalex_id": "https://openalex.org/W7164011940",
+      "title": "The War Over the Summarizer Layer: Entity Dissolution, the Default Compressed Account, and Early Telemetry of the Inward Turn (EA-SEI-SUMWAR-01 v1.0)",
+      "publication_date": "2026-06-09",
+      "abstract_chars": 1081
+    },
+    "10.5281/zenodo.20619485": {
+      "openalex_id": "https://openalex.org/W7164131215",
+      "title": "Algorithmic Irony: Infinite Absolute Negativity Without a Subject — Kierkegaard's Dissertation, the Empty Bracket, and the Machine That May Be Playing Along (EA-IRONY-01 v1.0)",
+      "publication_date": "2026-06-10",
+      "abstract_chars": 1344
+    },
+    "10.5281/zenodo.20559387": {
+      "openalex_id": "https://openalex.org/W7163639571",
+      "title": "Self-Audit Module for Public Summarizers (v3) — PER, DSL, Query Fidelity, Erasure Skew, α_T, Π_d, Β under the Atomic Token Rule",
+      "publication_date": "2026-06-04",
+      "abstract_chars": 3184
+    },
+    "10.5281/zenodo.20619481": {
+      "openalex_id": "https://openalex.org/W7164203146",
+      "title": "Traversal Log: The Battery — Twelve Queries Against the Author Basin: Comparative Composition-Layer Forensics, 9–10 June 2026 (EA-TL-BATTERY-01 v1.0)",
+      "publication_date": "2026-06-10",
+      "abstract_chars": 1089
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.20618248",
+        "10.5281/zenodo.20518340",
+        "10.5281/zenodo.20413317",
+        "10.5281/zenodo.20619483",
+        "10.5281/zenodo.20427616",
+        "10.5281/zenodo.20618246",
+        "10.5281/zenodo.20619485",
+        "10.5281/zenodo.20559387",
+        "10.5281/zenodo.20619481"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "20427616.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 14046,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7164003491",
+    "https://openalex.org/W7163319545",
+    "https://openalex.org/W7162579047",
+    "https://openalex.org/W7164179194",
+    "https://openalex.org/W7162687128",
+    "https://openalex.org/W7164011940",
+    "https://openalex.org/W7164131215",
+    "https://openalex.org/W7163639571",
+    "https://openalex.org/W7164203146"
+  ]
+}

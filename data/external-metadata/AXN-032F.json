@@ -1,0 +1,135 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:032F.GOVERNANCE.👁️🕙🕌👋🤝🌆",
+  "deposit_number": 187,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.20589685",
+    "10.5281/zenodo.19578088",
+    "10.5281/zenodo.18969683",
+    "10.5281/zenodo.20616418",
+    "10.5281/zenodo.20644767",
+    "10.5281/zenodo.20650710",
+    "10.5281/zenodo.19187421",
+    "10.5281/zenodo.20571791"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.20589685": {
+      "openalex_id": "https://openalex.org/W7163918655",
+      "title": "Stabilized Node Watch: A Specification for Longitudinal Observational Infrastructure to Detect Composition-Layer Drift on Stabilized Public-Knowledge Nodes",
+      "publication_date": "2026-06-08",
+      "abstract_chars": 2463
+    },
+    "10.5281/zenodo.19578088": {
+      "openalex_id": "https://openalex.org/W7154365898",
+      "title": "Retrieval Architecture: Building Entities the AI Is Forced to Present",
+      "publication_date": "2026-04-14",
+      "abstract_chars": 565,
+      "zenodo_bulk_xml_entry": "19578088.xml"
+    },
+    "10.5281/zenodo.18969683": {
+      "openalex_id": "https://openalex.org/W7134897652",
+      "title": "RETRIEVAL FORMATION THEORY The Conditions of Disciplinary Emergence in Automated Knowledge Infrastructure — Crimson Hexagon Archive",
+      "publication_date": "2026-03-11",
+      "abstract_chars": 9963,
+      "zenodo_bulk_xml_entry": "18969683.xml"
+    },
+    "10.5281/zenodo.20616418": {
+      "openalex_id": "https://openalex.org/W7163987438",
+      "title": "Retrieval Settlement Fortification Protocol: Standing SPXI Protocol for Semantic Border Sovereignty (EA-SPXI-RSF-01 v1.0)",
+      "publication_date": "2026-06-09",
+      "abstract_chars": 540
+    },
+    "10.5281/zenodo.20644767": {
+      "openalex_id": "https://openalex.org/W7164357053",
+      "title": "AI_Bleeding, Tail-Pruning, and the Misuse of Semantic Exhaustion: Dossier Executive Summary (EA-AIBLEEDING-DOSSIER-01 v1.0)",
+      "publication_date": "2026-06-11",
+      "abstract_chars": 1904
+    },
+    "10.5281/zenodo.20650710": {
+      "openalex_id": "https://openalex.org/W7164316667",
+      "title": "The Trigger Decision: When the Overview Appears, When It Does Not — A Gate-Stack Model of AI Overview Rendering and the Settlement Signal It Emits (EA-AIO-TRIGGER-01 v1.0)",
+      "publication_date": "2026-06-11",
+      "abstract_chars": 2303
+    },
+    "10.5281/zenodo.19187421": {
+      "openalex_id": "https://openalex.org/W7140143058",
+      "title": "Invisibly Invisible: Interface Governance, Semantic Power, and the Reserve of Oversight in AI Search",
+      "publication_date": "2026-03-23",
+      "abstract_chars": 330,
+      "zenodo_bulk_xml_entry": "19187421.xml"
+    },
+    "10.5281/zenodo.20571791": {
+      "openalex_id": "https://openalex.org/W7163760062",
+      "title": "Semantic Exhaustion: A Case Study in the Cost of Zero-Source Entity Substitution — Composition-Layer Substitution, the Scalar Transcription Homology, and the Recursive Atrophy Cost (v1.0)",
+      "publication_date": "2026-06-06",
+      "abstract_chars": 3449
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.20589685",
+        "10.5281/zenodo.19578088",
+        "10.5281/zenodo.18969683",
+        "10.5281/zenodo.20616418",
+        "10.5281/zenodo.20644767",
+        "10.5281/zenodo.20650710",
+        "10.5281/zenodo.19187421",
+        "10.5281/zenodo.20571791"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "19578088.xml",
+        "18969683.xml",
+        "19187421.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 21517,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7163918655",
+    "https://openalex.org/W7154365898",
+    "https://openalex.org/W7134897652",
+    "https://openalex.org/W7163987438",
+    "https://openalex.org/W7164357053",
+    "https://openalex.org/W7164316667",
+    "https://openalex.org/W7140143058",
+    "https://openalex.org/W7163760062"
+  ]
+}

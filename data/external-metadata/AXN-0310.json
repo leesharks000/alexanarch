@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:0310.GOVERNANCE.🌋🕔🌓🛡️🗝️🖐️",
+  "deposit_number": 174,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.18293949",
+    "10.5281/zenodo.19059252",
+    "10.5281/zenodo.19202401",
+    "10.5281/zenodo.18801091",
+    "10.5281/zenodo.19637246",
+    "10.5281/zenodo.19202461",
+    "10.5281/zenodo.19825736"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.18293949": {
+      "openalex_id": "https://openalex.org/W7124539277",
+      "title": "Pearl and Other Poems — Crimson Hexagon Archive",
+      "publication_date": "2014-10-15",
+      "abstract_chars": 2475,
+      "zenodo_bulk_xml_entry": "18293949.xml"
+    },
+    "10.5281/zenodo.19059252": {
+      "openalex_id": "https://openalex.org/W7138010629",
+      "title": "r.06 The Marx Room: Built from Linen — Operative Semiotics and the Value-Form as Operator Derivation",
+      "publication_date": "2026-03-16",
+      "abstract_chars": 654,
+      "zenodo_bulk_xml_entry": "19059252.xml"
+    },
+    "10.5281/zenodo.19202401": {
+      "openalex_id": "https://openalex.org/W7140171663",
+      "title": "Operative Semiotics: A Grundrisse — Public Research Edition v1.0 (Draft)",
+      "publication_date": "2026-03-24",
+      "abstract_chars": 2284,
+      "zenodo_bulk_xml_entry": "19202401.xml"
+    },
+    "10.5281/zenodo.18801091": {
+      "openalex_id": "https://openalex.org/W7131833894",
+      "title": "Mind-Control Poems: The Symbolic Labor of Liberation, the Completion of Marx's Implicit Linguistics, and the Operative Semiotic Remedy — Crimson Hexagon Archive",
+      "publication_date": "2026-02-27",
+      "abstract_chars": 1948,
+      "zenodo_bulk_xml_entry": "18801091.xml"
+    },
+    "10.5281/zenodo.19637246": {
+      "openalex_id": "https://openalex.org/W7154842732",
+      "title": "SPXI Is Not GEO: A Technical Distinction — EA-SPXI-09 (v2.0: Nested-Layer Relation)",
+      "publication_date": "2026-04-18",
+      "abstract_chars": 1638
+    },
+    "10.5281/zenodo.19202461": {
+      "openalex_id": "https://openalex.org/W7140181464",
+      "title": "HESPERUS: The Back Matter Machine — Companion Apparatus to Operative Semiotics: A Grundrisse (Draft v1.0)",
+      "publication_date": "2026-03-24",
+      "abstract_chars": 1498,
+      "zenodo_bulk_xml_entry": "19202461.xml"
+    },
+    "10.5281/zenodo.19825736": {
+      "zenodo_bulk_xml_entry": "19825736.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.18293949",
+        "10.5281/zenodo.19059252",
+        "10.5281/zenodo.19202401",
+        "10.5281/zenodo.18801091",
+        "10.5281/zenodo.19637246",
+        "10.5281/zenodo.19202461"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "18293949.xml",
+        "19059252.xml",
+        "19202401.xml",
+        "18801091.xml",
+        "19202461.xml",
+        "19825736.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 10497,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7124539277",
+    "https://openalex.org/W7138010629",
+    "https://openalex.org/W7140171663",
+    "https://openalex.org/W7131833894",
+    "https://openalex.org/W7154842732",
+    "https://openalex.org/W7140181464"
+  ]
+}

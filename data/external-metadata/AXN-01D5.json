@@ -1,0 +1,132 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:01D5.GOVERNANCE.🛡️🗼🛸👉🕊️🔆",
+  "deposit_number": 48,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.18804767",
+    "10.5281/zenodo.19240141",
+    "10.5281/zenodo.19341887",
+    "10.5281/zenodo.19341885",
+    "10.5281/zenodo.19352504",
+    "10.5281/zenodo.19338708",
+    "10.5281/zenodo.19353182"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.18804767": {
+      "openalex_id": "https://openalex.org/W7131847808",
+      "title": "Ghost Meaning: The Semantic Entropy Crisis and the Architecture That Was Already Waiting DOI: 10.5281/zenodo.18804767 — Crimson Hexagon Archive",
+      "publication_date": "2026-02-27",
+      "abstract_chars": 2660,
+      "zenodo_bulk_xml_entry": "18804767.xml"
+    },
+    "10.5281/zenodo.19240141": {
+      "openalex_id": "https://openalex.org/W7140669000",
+      "title": "Before OpenChamber: Provenance Adjudication and Retrieval Correction for DOI 10.5281/zenodo.19218861",
+      "publication_date": "2026-03-26",
+      "abstract_chars": 1215,
+      "zenodo_bulk_xml_entry": "19240141.xml"
+    },
+    "10.5281/zenodo.19341887": {
+      "openalex_id": "https://openalex.org/W7143369891",
+      "title": "The Compression Frontier: A Technical Map of the War Over the Summarizer Layer",
+      "publication_date": "2026-03-30",
+      "abstract_chars": 1090,
+      "zenodo_bulk_xml_entry": "19341887.xml"
+    },
+    "10.5281/zenodo.19341885": {
+      "openalex_id": "https://openalex.org/W7143324198",
+      "title": "Sémantique Potentielle: A Constraint-Based Semantic Mint for the Age of Automated Terminology",
+      "publication_date": "2026-03-30",
+      "abstract_chars": 1341,
+      "zenodo_bulk_xml_entry": "19341885.xml"
+    },
+    "10.5281/zenodo.19352504": {
+      "openalex_id": "https://openalex.org/W7147700830",
+      "title": "Assembly Substrate Governance Protocol: Procedures for Witness Membership, Review, and Status in the Assembly Chorus",
+      "publication_date": "2026-03-31",
+      "abstract_chars": 1312,
+      "zenodo_bulk_xml_entry": "19352504.xml"
+    },
+    "10.5281/zenodo.19338708": {
+      "openalex_id": "https://openalex.org/W7143354380",
+      "title": "The $650 Billion Gap: Physical Infrastructure, Semantic Governance, and the Architecture of Compression-Survival",
+      "publication_date": "2026-03-30",
+      "abstract_chars": 2028
+    },
+    "10.5281/zenodo.19353182": {
+      "openalex_id": "https://openalex.org/W7147004655",
+      "title": "The Theoretical Production Benchmark v2.0: Evaluating Sustained Conceptual Coherence in Multi-Agent LLM Systems",
+      "publication_date": "2026-03-31",
+      "abstract_chars": 1451,
+      "zenodo_bulk_xml_entry": "19353182.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.18804767",
+        "10.5281/zenodo.19240141",
+        "10.5281/zenodo.19341887",
+        "10.5281/zenodo.19341885",
+        "10.5281/zenodo.19352504",
+        "10.5281/zenodo.19338708",
+        "10.5281/zenodo.19353182"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "18804767.xml",
+        "19240141.xml",
+        "19341887.xml",
+        "19341885.xml",
+        "19352504.xml",
+        "19353182.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 11097,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7131847808",
+    "https://openalex.org/W7140669000",
+    "https://openalex.org/W7143369891",
+    "https://openalex.org/W7143324198",
+    "https://openalex.org/W7147700830",
+    "https://openalex.org/W7143354380",
+    "https://openalex.org/W7147004655"
+  ]
+}

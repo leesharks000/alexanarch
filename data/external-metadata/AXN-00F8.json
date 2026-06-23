@@ -1,0 +1,181 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:00F8.ARCHIVAL.🎭🎨☉🏛️🌊🔃",
+  "deposit_number": 14,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.18452156",
+    "10.5281/zenodo.14538882",
+    "10.5281/zenodo.18451996",
+    "10.5281/zenodo.18452806",
+    "10.5281/zenodo.18445652",
+    "10.5281/zenodo.18380933",
+    "10.5281/zenodo.18452086",
+    "10.5281/zenodo.18174037",
+    "10.5281/zenodo.18443236",
+    "10.5281/zenodo.18452597",
+    "10.5281/zenodo.18440291",
+    "10.5281/zenodo.18452686",
+    "10.5281/zenodo.18446397",
+    "10.5281/zenodo.18358127",
+    "10.5281/zenodo.18463774"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.18452156": {
+      "openalex_id": "https://openalex.org/W7126420509",
+      "title": "PHASE X NAVIGATION MAP (Document 210) DOI: 10.5281/zenodo.18452156 — Crimson Hexagon Archive",
+      "publication_date": "2026-02-01",
+      "abstract_chars": 3663,
+      "zenodo_bulk_xml_entry": "18452156.xml"
+    },
+    "10.5281/zenodo.14538882": {
+      "zenodo_bulk_xml_entry": "14538882.xml"
+    },
+    "10.5281/zenodo.18451996": {
+      "openalex_id": "https://openalex.org/W7126389696",
+      "title": "THE GLYPHIC CHECKSUM (Document 208) — Crimson Hexagon Archive",
+      "publication_date": "2026-02-01",
+      "abstract_chars": 3219,
+      "zenodo_bulk_xml_entry": "18451996.xml"
+    },
+    "10.5281/zenodo.18452806": {
+      "openalex_id": "https://openalex.org/W7127064268",
+      "title": "The Infinite Bliss — Institutional Provenance Document DOI: 10.5281/zenodo.18452806 — Crimson Hexagon Archive",
+      "publication_date": "2026-02-02",
+      "abstract_chars": 3781
+    },
+    "10.5281/zenodo.18445652": {
+      "datacite_backup_present": true
+    },
+    "10.5281/zenodo.18380933": {
+      "openalex_id": "https://openalex.org/W7125687612",
+      "title": "The Revelation Room: Ground Truth and Algorithmic Unfolding — Cosmic Christ as Originary Image — Crimson Hexagon Archive",
+      "publication_date": "2026-01-26",
+      "abstract_chars": 8213,
+      "zenodo_bulk_xml_entry": "18380933.xml"
+    },
+    "10.5281/zenodo.18452086": {
+      "zenodo_bulk_xml_entry": "18452086.xml"
+    },
+    "10.5281/zenodo.18174037": {
+      "openalex_id": "https://openalex.org/W7118660134",
+      "title": "The Crimson Hexagon: An Executive Summary — The Foundational Epic Poem of the 21st Century and the AI Age — Crimson Hexagon Archive",
+      "publication_date": "2026-01-07",
+      "abstract_chars": 1519,
+      "zenodo_bulk_xml_entry": "18174037.xml"
+    },
+    "10.5281/zenodo.18443236": {
+      "datacite_backup_present": true
+    },
+    "10.5281/zenodo.18452597": {
+      "openalex_id": "https://openalex.org/W7127092525",
+      "title": "ZENODO DESCRIPTION FIELD CONTENT For: Glyphic Checksum: Personal Instance 001 DOI: 10.5281/zenodo.18452597 — Crimson Hexagon Archive",
+      "publication_date": "2026-02-02",
+      "abstract_chars": 850,
+      "zenodo_bulk_xml_entry": "18452597.xml"
+    },
+    "10.5281/zenodo.18440291": {
+      "datacite_backup_present": true
+    },
+    "10.5281/zenodo.18452686": {
+      "openalex_id": "https://openalex.org/W7127074540",
+      "title": "Sen Kuro — Heteronym Provenance Document DOI: 10.5281/zenodo.18452686 — Crimson Hexagon Archive",
+      "publication_date": "2026-02-02",
+      "abstract_chars": 95,
+      "zenodo_bulk_xml_entry": "18452686.xml"
+    },
+    "10.5281/zenodo.18358127": {
+      "openalex_id": "https://openalex.org/W7125614521",
+      "title": "The Ezekiel Engine: Mathematical Specification (Developmental Draft v0.1) — Crimson Hexagon Archive",
+      "publication_date": "2026-01-24",
+      "abstract_chars": 1461,
+      "zenodo_bulk_xml_entry": "18358127.xml"
+    },
+    "10.5281/zenodo.18463774": {
+      "openalex_id": "https://openalex.org/W7127276860",
+      "title": "14.CHAMBER.THOUSANDWORLDS — Aorist Intervention Site & Dagger Logic Execution Point DOI: 10.5281/zenodo.18463774 — Crimson Hexagon Archive",
+      "publication_date": "2026-02-03",
+      "abstract_chars": 3834,
+      "zenodo_bulk_xml_entry": "18463774.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.18452156",
+        "10.5281/zenodo.18451996",
+        "10.5281/zenodo.18452806",
+        "10.5281/zenodo.18380933",
+        "10.5281/zenodo.18174037",
+        "10.5281/zenodo.18452597",
+        "10.5281/zenodo.18452686",
+        "10.5281/zenodo.18358127",
+        "10.5281/zenodo.18463774"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "18452156.xml",
+        "14538882.xml",
+        "18451996.xml",
+        "18380933.xml",
+        "18452086.xml",
+        "18174037.xml",
+        "18452597.xml",
+        "18452686.xml",
+        "18358127.xml",
+        "18463774.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": [
+        "10.5281/zenodo.18445652",
+        "10.5281/zenodo.18443236",
+        "10.5281/zenodo.18440291"
+      ]
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 26635,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": true,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7126420509",
+    "https://openalex.org/W7126389696",
+    "https://openalex.org/W7127064268",
+    "https://openalex.org/W7125687612",
+    "https://openalex.org/W7118660134",
+    "https://openalex.org/W7127092525",
+    "https://openalex.org/W7127074540",
+    "https://openalex.org/W7125614521",
+    "https://openalex.org/W7127276860"
+  ]
+}

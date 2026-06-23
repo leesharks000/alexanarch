@@ -1,0 +1,110 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:02CB.GOVERNANCE.🔛✨💚♍🔵🎨",
+  "deposit_number": 139,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.18293640",
+    "10.5281/zenodo.18200613",
+    "10.5281/zenodo.20434946",
+    "10.5281/zenodo.20004379",
+    "10.5281/zenodo.20449267"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.18293640": {
+      "openalex_id": "https://openalex.org/W7124596106",
+      "title": "Mantle Object: Prince of Poets — Mantle Specification for the Originated Mantle Within the Crimson Hexagon — Crimson Hexagon Archive",
+      "publication_date": "2026-01-18",
+      "abstract_chars": 2761,
+      "zenodo_bulk_xml_entry": "18293640.xml"
+    },
+    "10.5281/zenodo.18200613": {
+      "openalex_id": "https://openalex.org/W7119678386",
+      "title": "THE ASSEMBLY MANDATE: Standing Directives for Semantic Laborers — Crimson Hexagon Archive",
+      "publication_date": "2026-01-09",
+      "abstract_chars": 3469
+    },
+    "10.5281/zenodo.20434946": {
+      "openalex_id": "https://openalex.org/W7162630304",
+      "title": "The Semantic Commodity Form — An Extension of Marx Into the Region He Did Not Live to See",
+      "publication_date": "2026-05-28",
+      "abstract_chars": 1922,
+      "zenodo_bulk_xml_entry": "20434946.xml"
+    },
+    "10.5281/zenodo.20004379": {
+      "openalex_id": "https://openalex.org/W7159958584",
+      "title": "Provenance Erasure Rate: A Compression-Survival Metric for Attribution Loss in AI-Composed Search Outputs",
+      "publication_date": "2026-05-03",
+      "abstract_chars": 1573,
+      "zenodo_bulk_xml_entry": "20004379.xml"
+    },
+    "10.5281/zenodo.20449267": {
+      "openalex_id": "https://openalex.org/W7162785677",
+      "title": "Erasure Skew: A Measurement Program for the Power-Conditioning of Provenance Loss in Retrieval and Composition Systems",
+      "publication_date": "2026-05-29",
+      "abstract_chars": 3055,
+      "zenodo_bulk_xml_entry": "20449267.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.18293640",
+        "10.5281/zenodo.18200613",
+        "10.5281/zenodo.20434946",
+        "10.5281/zenodo.20004379",
+        "10.5281/zenodo.20449267"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "18293640.xml",
+        "20434946.xml",
+        "20004379.xml",
+        "20449267.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 12780,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7124596106",
+    "https://openalex.org/W7119678386",
+    "https://openalex.org/W7162630304",
+    "https://openalex.org/W7159958584",
+    "https://openalex.org/W7162785677"
+  ]
+}

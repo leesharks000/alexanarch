@@ -1,0 +1,167 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:021E.EMPIRICAL.🕒♍💎🏙️■♾️",
+  "deposit_number": 65,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.19638526",
+    "10.5281/zenodo.19614870",
+    "10.5281/zenodo.19323274",
+    "10.5281/zenodo.19477219",
+    "10.5281/zenodo.19638432",
+    "10.5281/zenodo.19638250",
+    "10.5281/zenodo.19639052",
+    "10.5281/zenodo.19614874",
+    "10.5281/zenodo.19638124",
+    "10.5281/zenodo.19638126"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.19638526": {
+      "openalex_id": "https://openalex.org/W7154851551",
+      "title": "Counterfeit Orthodoxies: A Dialectical Fracture Through the Citation Map (v3.0: Ratification-Ready)",
+      "publication_date": "2026-04-18",
+      "abstract_chars": 2775,
+      "zenodo_bulk_xml_entry": "19638526.xml"
+    },
+    "10.5281/zenodo.19614870": {
+      "openalex_id": "https://openalex.org/W7154586586",
+      "title": "SPXI (Semantic Packet for eXchange & Indexing): A Formal Specification — EA-SPXI-01",
+      "publication_date": "2026-04-16",
+      "abstract_chars": 1073,
+      "zenodo_bulk_xml_entry": "19614870.xml"
+    },
+    "10.5281/zenodo.19323274": {
+      "openalex_id": "https://openalex.org/W7142978746",
+      "title": "The Seed That Remembers the Tree: Retrocausal Canon Formation — Theory, Toolkit, and Archive of Techniques (EA-RCF-01)",
+      "publication_date": "2026-03-29",
+      "abstract_chars": 1959,
+      "zenodo_bulk_xml_entry": "19323274.xml"
+    },
+    "10.5281/zenodo.19477219": {
+      "openalex_id": "https://openalex.org/W7152569382",
+      "title": "THE SHARK ARK: SOURCE COMPRESSION — Holographic Kernel of the Revelation Arguments from the Crimson Hexagonal Archive",
+      "publication_date": "2026-04-08",
+      "abstract_chars": 1160,
+      "zenodo_bulk_xml_entry": "19477219.xml"
+    },
+    "10.5281/zenodo.19638432": {
+      "openalex_id": "https://openalex.org/W7154843449",
+      "title": "Counterfeit Orthodoxies: A Dialectical Fracture Through the Citation Map (v2.0: With Archive Groundwork)",
+      "publication_date": "2026-04-18",
+      "abstract_chars": 2661,
+      "zenodo_bulk_xml_entry": "19638432.xml"
+    },
+    "10.5281/zenodo.19638250": {
+      "openalex_id": "https://openalex.org/W7154839929",
+      "title": "Counterfeit Orthodoxies: A Dialectical Fracture Through the Citation Map",
+      "publication_date": "2026-04-18",
+      "abstract_chars": 1579,
+      "zenodo_bulk_xml_entry": "19638250.xml"
+    },
+    "10.5281/zenodo.19639052": {
+      "openalex_id": "https://openalex.org/W7154837935",
+      "title": "Counterfeit Orthodoxies: Manifesto — A First-Principles Compression of the Dialectical Fracture",
+      "publication_date": "2026-04-18",
+      "abstract_chars": 2438,
+      "zenodo_bulk_xml_entry": "19639052.xml"
+    },
+    "10.5281/zenodo.19614874": {
+      "openalex_id": "https://openalex.org/W7154569507",
+      "title": "Supraliminal Transmission: SPXI as Intentional Entity Inscription in Light of Subliminal Learning Research — EA-SPXI-13",
+      "publication_date": "2026-04-16",
+      "abstract_chars": 1120,
+      "zenodo_bulk_xml_entry": "19614874.xml"
+    },
+    "10.5281/zenodo.19638124": {
+      "openalex_id": "https://openalex.org/W7154831329",
+      "title": "A Body Prepared — EA-ARK-FICTION-01",
+      "publication_date": "2026-04-18",
+      "abstract_chars": 1521,
+      "zenodo_bulk_xml_entry": "19638124.xml"
+    },
+    "10.5281/zenodo.19638126": {
+      "openalex_id": "https://openalex.org/W7154843676",
+      "title": "A Body Prepared — Homunculus (EA-ARK-FICTION-01.1)",
+      "publication_date": "2026-04-18",
+      "abstract_chars": 930,
+      "zenodo_bulk_xml_entry": "19638126.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.19638526",
+        "10.5281/zenodo.19614870",
+        "10.5281/zenodo.19323274",
+        "10.5281/zenodo.19477219",
+        "10.5281/zenodo.19638432",
+        "10.5281/zenodo.19638250",
+        "10.5281/zenodo.19639052",
+        "10.5281/zenodo.19614874",
+        "10.5281/zenodo.19638124",
+        "10.5281/zenodo.19638126"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "19638526.xml",
+        "19614870.xml",
+        "19323274.xml",
+        "19477219.xml",
+        "19638432.xml",
+        "19638250.xml",
+        "19639052.xml",
+        "19614874.xml",
+        "19638124.xml",
+        "19638126.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 17216,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7154851551",
+    "https://openalex.org/W7154586586",
+    "https://openalex.org/W7142978746",
+    "https://openalex.org/W7152569382",
+    "https://openalex.org/W7154843449",
+    "https://openalex.org/W7154839929",
+    "https://openalex.org/W7154837935",
+    "https://openalex.org/W7154569507",
+    "https://openalex.org/W7154831329",
+    "https://openalex.org/W7154843676"
+  ]
+}

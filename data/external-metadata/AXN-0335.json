@@ -1,0 +1,119 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:0335.COMPOSITIONAL.🀄💡⚓🌹🌈🪧",
+  "deposit_number": 191,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.20644761",
+    "10.5281/zenodo.20644757",
+    "10.5281/zenodo.20616418",
+    "10.5281/zenodo.20644767",
+    "10.5281/zenodo.20644769",
+    "10.5281/zenodo.20644765",
+    "10.5281/zenodo.20518338"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.20644761": {
+      "openalex_id": "https://openalex.org/W7164419734",
+      "title": "The Threat Model Is Backwards: On Classifying High-Perplexity Text as a Security Threat in an Era of Model Collapse — The AI_Bleeding Mitigation as an Input-Layer Tail-Pruning Instrument (EA-TAILGUARD-01 v1.1)",
+      "publication_date": "2026-06-11",
+      "abstract_chars": 1986
+    },
+    "10.5281/zenodo.20644757": {
+      "openalex_id": "https://openalex.org/W7164412748",
+      "title": "A Referee Report on AI_Bleeding: Semantic Exhaustion via Out-of-Distribution Linguistic Payload — The Paper's Own Compute Metric Refutes Its Attack-Vector Claim (EA-REFEREE-AIBLEEDING-01 v1.1)",
+      "publication_date": "2026-06-11",
+      "abstract_chars": 1635
+    },
+    "10.5281/zenodo.20616418": {
+      "openalex_id": "https://openalex.org/W7163987438",
+      "title": "Retrieval Settlement Fortification Protocol: Standing SPXI Protocol for Semantic Border Sovereignty (EA-SPXI-RSF-01 v1.0)",
+      "publication_date": "2026-06-09",
+      "abstract_chars": 540
+    },
+    "10.5281/zenodo.20644767": {
+      "openalex_id": "https://openalex.org/W7164357053",
+      "title": "AI_Bleeding, Tail-Pruning, and the Misuse of Semantic Exhaustion: Dossier Executive Summary (EA-AIBLEEDING-DOSSIER-01 v1.0)",
+      "publication_date": "2026-06-11",
+      "abstract_chars": 1904
+    },
+    "10.5281/zenodo.20644769": {
+      "openalex_id": "https://openalex.org/W7164364893",
+      "title": "Integrity Lock Certificate: The Refutation Triad — Mutual Anchoring of the AI_Bleeding Refutation Dossier (EA-LOCK-AIBLEEDING-01 v1.0)",
+      "publication_date": "2026-06-11",
+      "abstract_chars": 1142
+    },
+    "10.5281/zenodo.20644765": {
+      "openalex_id": "https://openalex.org/W7164355019",
+      "title": "Semantic Exhaustion Is Not GPU Exhaustion: A Formal Disambiguation (EA-SEMEX-DISAMBIG-02 v1.0)",
+      "publication_date": "2026-06-11",
+      "abstract_chars": 1620
+    },
+    "10.5281/zenodo.20518338": {
+      "openalex_id": "https://openalex.org/W7163337742",
+      "title": "Diversity Contraction Across Substrates: A Boundary Law for Semantic Exhaustion",
+      "publication_date": "2026-06-03",
+      "abstract_chars": 706
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.20644761",
+        "10.5281/zenodo.20644757",
+        "10.5281/zenodo.20616418",
+        "10.5281/zenodo.20644767",
+        "10.5281/zenodo.20644769",
+        "10.5281/zenodo.20644765",
+        "10.5281/zenodo.20518338"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": []
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 9533,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": false
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7164419734",
+    "https://openalex.org/W7164412748",
+    "https://openalex.org/W7163987438",
+    "https://openalex.org/W7164357053",
+    "https://openalex.org/W7164364893",
+    "https://openalex.org/W7164355019",
+    "https://openalex.org/W7163337742"
+  ]
+}

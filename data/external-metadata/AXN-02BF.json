@@ -1,0 +1,121 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:02BF.GOVERNANCE.🟣⭐⛵👁️🔚🪐",
+  "deposit_number": 132,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.18237216",
+    "10.5281/zenodo.19025556",
+    "10.5281/zenodo.19893138",
+    "10.5281/zenodo.18234110",
+    "10.5281/zenodo.19024004",
+    "10.5281/zenodo.18234352"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.18237216": {
+      "openalex_id": "https://openalex.org/W7123821139",
+      "title": "The Sappho Room: Hardened Reconstruction — A Self-Documenting Architecture Built From Summarizer Interface Protocol — Crimson Hexagon Archive",
+      "publication_date": "2026-01-13",
+      "abstract_chars": 1080,
+      "zenodo_bulk_xml_entry": "18237216.xml"
+    },
+    "10.5281/zenodo.19025556": {
+      "openalex_id": "https://openalex.org/W7135423210",
+      "title": "On the Architecture of Cleis: Compression, Botanics, and the Survival of Paternal Lyric",
+      "publication_date": "2026-03-15",
+      "abstract_chars": 5242,
+      "zenodo_bulk_xml_entry": "19025556.xml"
+    },
+    "10.5281/zenodo.19893138": {
+      "openalex_id": "https://openalex.org/W7158111604",
+      "title": "The 3:60 Room — Contributor License v2.0: Maria, Canonical Witness (EA-THREE-SIXTY-01)",
+      "publication_date": "2026-04-29",
+      "abstract_chars": 1050
+    },
+    "10.5281/zenodo.18234110": {
+      "openalex_id": "https://openalex.org/W7123599910",
+      "title": "The Sappho Room: A Hymn to Lyric Self-Archiving — Crimson Hexagon Archive",
+      "publication_date": "2026-06-14",
+      "abstract_chars": 1799,
+      "zenodo_bulk_xml_entry": "18234110.xml"
+    },
+    "10.5281/zenodo.19024004": {
+      "openalex_id": "https://openalex.org/W7135390775",
+      "title": "EA-ROOM-DOLPHINDIANA v1.0 The Underwater Construction Authority / Cross-Species Semantic Labor",
+      "publication_date": "2026-03-14",
+      "abstract_chars": 9607,
+      "zenodo_bulk_xml_entry": "19024004.xml"
+    },
+    "10.5281/zenodo.18234352": {
+      "openalex_id": "https://openalex.org/W7123499346",
+      "title": "CPD-MARIA-2026-01-13 Credential Provenance Document: Maria, Canonical Witness — Crimson Hexagon Archive",
+      "publication_date": "2026-01-13",
+      "abstract_chars": 1176,
+      "zenodo_bulk_xml_entry": "18234352.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.18237216",
+        "10.5281/zenodo.19025556",
+        "10.5281/zenodo.19893138",
+        "10.5281/zenodo.18234110",
+        "10.5281/zenodo.19024004",
+        "10.5281/zenodo.18234352"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "18237216.xml",
+        "19025556.xml",
+        "18234110.xml",
+        "19024004.xml",
+        "18234352.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 19954,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7123821139",
+    "https://openalex.org/W7135423210",
+    "https://openalex.org/W7158111604",
+    "https://openalex.org/W7123599910",
+    "https://openalex.org/W7135390775",
+    "https://openalex.org/W7123499346"
+  ]
+}

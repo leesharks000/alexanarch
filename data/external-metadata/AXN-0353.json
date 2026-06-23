@@ -1,0 +1,86 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:0353.GOVERNANCE.🛤️💙🌌⭕🛸🚀",
+  "deposit_number": 838,
+  "generated_at": "2026-06-23T13:48:47Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.20707509",
+    "10.5281/zenodo.20709373",
+    "10.5281/zenodo.19923120"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.20707509": {
+      "openalex_id": "https://openalex.org/W7164924048",
+      "title": "AI Overview Capture Registry — June 2026 (EA-WG-CAPTURES-01 v7.2, 131 captures sorted by category, 221 images)",
+      "publication_date": "2026-06-15",
+      "abstract_chars": 350
+    },
+    "10.5281/zenodo.20709373": {
+      "openalex_id": "https://openalex.org/W7164938210",
+      "title": "The Summarizer as Horizon of Reception: The AI Overview Capture Registry as a Founding Dataset for Machine-Mediated Reception Studies (EA-SEI-MMRS-DATASET-01 v1.2)",
+      "publication_date": "2026-06-15",
+      "abstract_chars": 1529
+    },
+    "10.5281/zenodo.19923120": {
+      "openalex_id": "https://openalex.org/W7158620832",
+      "title": "Constitution of the Semantic Economy — Enacted Version 1.0: Installable Edition with Constitutional Apparatus",
+      "publication_date": "2026-04-30",
+      "abstract_chars": 952,
+      "zenodo_bulk_xml_entry": "19923120.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.20707509",
+        "10.5281/zenodo.20709373",
+        "10.5281/zenodo.19923120"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "19923120.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 2831,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7164924048",
+    "https://openalex.org/W7164938210",
+    "https://openalex.org/W7158620832"
+  ]
+}

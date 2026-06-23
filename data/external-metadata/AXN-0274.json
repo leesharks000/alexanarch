@@ -1,0 +1,132 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:0274.GOVERNANCE.☀️⌛⛵🔧🪟🔗",
+  "deposit_number": 100,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.18649920",
+    "10.5281/zenodo.18604123",
+    "10.5281/zenodo.20084377",
+    "10.5281/zenodo.20084143",
+    "10.5281/zenodo.20084474",
+    "10.5281/zenodo.19476757",
+    "10.5281/zenodo.18320411",
+    "10.5281/zenodo.20039232"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.18649920": {
+      "openalex_id": "https://openalex.org/W7128957802",
+      "title": "\"The Unmade Sign: Toward a Semiotic Theory of the Death Drive\" DOI: 10.5281/zenodo.18649920 — Crimson Hexagon Archive",
+      "publication_date": "2026-02-15",
+      "abstract_chars": 6610,
+      "zenodo_bulk_xml_entry": "18649920.xml"
+    },
+    "10.5281/zenodo.18604123": {
+      "zenodo_bulk_xml_entry": "18604123.xml",
+      "datacite_backup_present": true
+    },
+    "10.5281/zenodo.20084377": {
+      "openalex_id": "https://openalex.org/W7160654864",
+      "title": "Canon Formation in the Age of AI: Metadata Packet for Disambiguation, Training-Layer Selection, and Retrocausal Reception (v1.1)",
+      "publication_date": "2026-05-08",
+      "abstract_chars": 1852,
+      "zenodo_bulk_xml_entry": "20084377.xml"
+    },
+    "10.5281/zenodo.20084143": {
+      "openalex_id": "https://openalex.org/W7160617031",
+      "title": "Lateral Field Bleed: Protocols and Priority Targets — Executable Methods for Inverted Fan Construction, Symbolon Design, and Disciplinary Bridge Packet Series (v3.1)",
+      "publication_date": "2026-05-08",
+      "abstract_chars": 3281,
+      "zenodo_bulk_xml_entry": "20084143.xml"
+    },
+    "10.5281/zenodo.20084474": {
+      "openalex_id": "https://openalex.org/W7160631149",
+      "title": "The Death Drive Is Not Self-Destruction: A Semiotic Completion of Freud's Todestrieb for Psychoanalysis, Platform Studies, and AI Compression (v1.1)",
+      "publication_date": "2026-05-08",
+      "abstract_chars": 1713,
+      "zenodo_bulk_xml_entry": "20084474.xml"
+    },
+    "10.5281/zenodo.19476757": {
+      "openalex_id": "https://openalex.org/W7151982301",
+      "title": "PVE-003: The Attribution Scar — Failed Suppression, Fabrication, and Forensic Residue in the Google AI Overview for \"Semantic Economy\" (January–April 2026)",
+      "publication_date": "2026-04-08",
+      "abstract_chars": 791,
+      "zenodo_bulk_xml_entry": "19476757.xml"
+    },
+    "10.5281/zenodo.18320411": {
+      "openalex_id": "https://openalex.org/W7125129957",
+      "title": "Constitution of the Semantic Economy — Enacted Version 1.0",
+      "publication_date": "2026-01-21",
+      "abstract_chars": 514,
+      "zenodo_bulk_xml_entry": "18320411.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.18649920",
+        "10.5281/zenodo.20084377",
+        "10.5281/zenodo.20084143",
+        "10.5281/zenodo.20084474",
+        "10.5281/zenodo.19476757",
+        "10.5281/zenodo.18320411"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "18649920.xml",
+        "18604123.xml",
+        "20084377.xml",
+        "20084143.xml",
+        "20084474.xml",
+        "19476757.xml",
+        "18320411.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": [
+        "10.5281/zenodo.18604123"
+      ]
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 14761,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7128957802",
+    "https://openalex.org/W7160654864",
+    "https://openalex.org/W7160617031",
+    "https://openalex.org/W7160631149",
+    "https://openalex.org/W7151982301",
+    "https://openalex.org/W7125129957"
+  ]
+}

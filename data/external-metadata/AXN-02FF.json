@@ -1,0 +1,104 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:02FF.GOVERNANCE.◀️🌒🌍🐚♎📝",
+  "deposit_number": 164,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.20546318",
+    "10.5281/zenodo.20589685",
+    "10.5281/zenodo.20357013",
+    "10.5281/zenodo.20581444",
+    "10.5281/zenodo.20587549"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.20546318": {
+      "openalex_id": "https://openalex.org/W7163529214",
+      "title": "CTI_WOUND: Panel-Bound Discoverability Scar — Lee Sharks / Pearl and Other Poems Evidence Packet, With Analysis of Personalized-Reality Stress-Testing Through Incognito-Mode AI Surface Disabling",
+      "publication_date": "2026-06-04",
+      "abstract_chars": 3003
+    },
+    "10.5281/zenodo.20589685": {
+      "openalex_id": "https://openalex.org/W7163918655",
+      "title": "Stabilized Node Watch: A Specification for Longitudinal Observational Infrastructure to Detect Composition-Layer Drift on Stabilized Public-Knowledge Nodes",
+      "publication_date": "2026-06-08",
+      "abstract_chars": 2463
+    },
+    "10.5281/zenodo.20357013": {
+      "openalex_id": "https://openalex.org/W7162199940",
+      "title": "Socrates as Orthonym: The Heteronymic Configuration of Western Philosophy's Founding Corpus",
+      "publication_date": "2026-05-23",
+      "abstract_chars": 3570,
+      "zenodo_bulk_xml_entry": "20357013.xml"
+    },
+    "10.5281/zenodo.20581444": {
+      "openalex_id": "https://openalex.org/W7163810524",
+      "title": "Meaning Feudalism at the Guidance Layer: Sovereign Enclosure of the Composition Layer in Google's June 2026 SEO/AEO/GEO Canonicalization (v1.2)",
+      "publication_date": "2026-06-07",
+      "abstract_chars": 3511
+    },
+    "10.5281/zenodo.20587549": {
+      "openalex_id": "https://openalex.org/W7163923583",
+      "title": "Composition-Layer Adoption of the Orthonymic Configuration: A Field Observation of Framework Capture in Google AI Mode, 7 June 2026, with the Personal-Recognition Asymmetry as Control Case (v1.0)",
+      "publication_date": "2026-06-07",
+      "abstract_chars": 4655
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.20546318",
+        "10.5281/zenodo.20589685",
+        "10.5281/zenodo.20357013",
+        "10.5281/zenodo.20581444",
+        "10.5281/zenodo.20587549"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "20357013.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 17202,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7163529214",
+    "https://openalex.org/W7163918655",
+    "https://openalex.org/W7162199940",
+    "https://openalex.org/W7163810524",
+    "https://openalex.org/W7163923583"
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:016B.GOVERNANCE.⏬🕛↖️🪐🌱🜁",
+  "deposit_number": 536,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.18804767",
+    "10.5281/zenodo.18877152",
+    "10.5281/zenodo.18882915",
+    "10.5281/zenodo.18862106",
+    "10.5281/zenodo.18736175",
+    "10.5281/zenodo.18882934",
+    "10.5281/zenodo.18867491",
+    "10.5281/zenodo.18869165",
+    "10.5281/zenodo.18882938"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.18804767": {
+      "openalex_id": "https://openalex.org/W7131847808",
+      "title": "Ghost Meaning: The Semantic Entropy Crisis and the Architecture That Was Already Waiting DOI: 10.5281/zenodo.18804767 — Crimson Hexagon Archive",
+      "publication_date": "2026-02-27",
+      "abstract_chars": 2660,
+      "zenodo_bulk_xml_entry": "18804767.xml"
+    },
+    "10.5281/zenodo.18877152": {
+      "openalex_id": "https://openalex.org/W7133807302",
+      "title": "The Archival Reclamation Protocol: Formal Demand for Data Access, Rationale, and Restoration (EA-LEGAL-RECLAMATION-01)",
+      "publication_date": "2026-03-05",
+      "abstract_chars": 3733,
+      "zenodo_bulk_xml_entry": "18877152.xml"
+    },
+    "10.5281/zenodo.18882915": {
+      "openalex_id": "https://openalex.org/W7134058465",
+      "title": "\"★\" — Crimson Hexagon Archive",
+      "publication_date": "2026-03-06",
+      "abstract_chars": 1779
+    },
+    "10.5281/zenodo.18862106": {
+      "openalex_id": "https://openalex.org/W7133562672",
+      "title": "Magic as Symbolic Engineering: Formal Definition and Operative Grammar for a New Discipline",
+      "publication_date": "2026-03-04",
+      "abstract_chars": 1679,
+      "zenodo_bulk_xml_entry": "18862106.xml"
+    },
+    "10.5281/zenodo.18736175": {
+      "openalex_id": "https://openalex.org/W7130943531",
+      "title": "WHOSE FACE IS ON THE TWENTY? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $20 Portrait DOI: 10.5281/zenodo.18736175 Hex: 06.SEI.CURRENCY.ACTIVATION",
+      "publication_date": "2026-02-23",
+      "abstract_chars": 9416
+    },
+    "10.5281/zenodo.18882934": {
+      "openalex_id": "https://openalex.org/W7134032828",
+      "title": "DEPOSIT B: Star Protocol Specification — Crimson Hexagon Archive",
+      "publication_date": "2026-03-06",
+      "abstract_chars": 1779
+    },
+    "10.5281/zenodo.18867491": {
+      "openalex_id": "https://openalex.org/W7133545593",
+      "title": "The Inner Artifact: Reading Claude's Constitution as Platform Governance in the Age of Generative AI",
+      "publication_date": "2026-03-04",
+      "abstract_chars": 1844,
+      "zenodo_bulk_xml_entry": "18867491.xml"
+    },
+    "10.5281/zenodo.18869165": {
+      "openalex_id": "https://openalex.org/W7133541100",
+      "title": "The Groundskeeper's Treatise: A Diagnostic Reading of Platform Stewardship Theory through the Semantic Economy",
+      "publication_date": "2026-03-04",
+      "abstract_chars": 2130,
+      "zenodo_bulk_xml_entry": "18869165.xml"
+    },
+    "10.5281/zenodo.18882938": {
+      "openalex_id": "https://openalex.org/W7134061930",
+      "title": "DEPOSIT C: Integrity Lock Certificate — The Star Triptych — Crimson Hexagon Archive",
+      "publication_date": "2026-03-06",
+      "abstract_chars": 1779,
+      "zenodo_bulk_xml_entry": "18882938.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.18804767",
+        "10.5281/zenodo.18877152",
+        "10.5281/zenodo.18882915",
+        "10.5281/zenodo.18862106",
+        "10.5281/zenodo.18736175",
+        "10.5281/zenodo.18882934",
+        "10.5281/zenodo.18867491",
+        "10.5281/zenodo.18869165",
+        "10.5281/zenodo.18882938"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "18804767.xml",
+        "18877152.xml",
+        "18862106.xml",
+        "18867491.xml",
+        "18869165.xml",
+        "18882938.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 26799,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": false,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7131847808",
+    "https://openalex.org/W7133807302",
+    "https://openalex.org/W7134058465",
+    "https://openalex.org/W7133562672",
+    "https://openalex.org/W7130943531",
+    "https://openalex.org/W7134032828",
+    "https://openalex.org/W7133545593",
+    "https://openalex.org/W7133541100",
+    "https://openalex.org/W7134061930"
+  ]
+}

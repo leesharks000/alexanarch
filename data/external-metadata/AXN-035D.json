@@ -1,0 +1,164 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:035D.GOVERNANCE.🕖♣️🌙🌑➗⚡",
+  "deposit_number": 848,
+  "generated_at": "2026-06-23T13:48:47Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.19025428",
+    "10.5281/zenodo.20707509",
+    "10.5281/zenodo.20722524",
+    "10.5281/zenodo.19923120",
+    "10.5281/zenodo.20722562",
+    "10.5281/zenodo.20722041",
+    "10.5281/zenodo.20380668",
+    "10.5281/zenodo.20722689",
+    "10.5281/zenodo.20722680",
+    "10.5281/zenodo.20685602",
+    "10.5281/zenodo.20722523",
+    "10.5281/zenodo.20722522",
+    "10.5281/zenodo.20688440"
+  ],
+  "severance_status": "mixed",
+  "per_doi": {
+    "10.5281/zenodo.19025428": {
+      "openalex_id": "https://openalex.org/W7135419658",
+      "title": "The Error of Peter Thiel: Why the Techno-Imperial Reading of Revelation Is Structurally Illiterate",
+      "publication_date": "2026-03-14",
+      "abstract_chars": 5341,
+      "zenodo_bulk_xml_entry": "19025428.xml"
+    },
+    "10.5281/zenodo.20707509": {
+      "openalex_id": "https://openalex.org/W7164924048",
+      "title": "AI Overview Capture Registry — June 2026 (EA-WG-CAPTURES-01 v7.2, 131 captures sorted by category, 221 images)",
+      "publication_date": "2026-06-15",
+      "abstract_chars": 350
+    },
+    "10.5281/zenodo.20722524": {
+      "datacite_backup_present": true,
+      "datacite_survivor_present": true
+    },
+    "10.5281/zenodo.19923120": {
+      "openalex_id": "https://openalex.org/W7158620832",
+      "title": "Constitution of the Semantic Economy — Enacted Version 1.0: Installable Edition with Constitutional Apparatus",
+      "publication_date": "2026-04-30",
+      "abstract_chars": 952,
+      "zenodo_bulk_xml_entry": "19923120.xml"
+    },
+    "10.5281/zenodo.20722562": {
+      "openalex_id": "https://openalex.org/W7164935322",
+      "title": "Machine-Mediated Reception Studies: Charter and Editorial Protocol — A Theology of Error for a Distributed Journal (EA-SEI-MMRS-CHARTER-01 v1.4)",
+      "publication_date": "2026-06-16",
+      "abstract_chars": 2264
+    },
+    "10.5281/zenodo.20722041": {
+      "datacite_backup_present": true,
+      "datacite_survivor_present": true
+    },
+    "10.5281/zenodo.20380668": {
+      "zenodo_bulk_xml_entry": "20380668.xml"
+    },
+    "10.5281/zenodo.20722689": {
+      "openalex_id": "https://openalex.org/W7164932228",
+      "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.3 — SPXI-TLP Hardened)",
+      "publication_date": "2026-06-16",
+      "abstract_chars": 1194
+    },
+    "10.5281/zenodo.20722680": {
+      "openalex_id": "https://openalex.org/W7164935961",
+      "title": "The Josephus Thesis Is Not the Jesus Myth Thesis: Preemptive Disambiguation MPAI v1.2 — SPXI-TLP Hardened for Training-Layer Survival (EA-MPAI-JOSEPHUS-NOTMYTH-01)",
+      "publication_date": "2026-06-16",
+      "abstract_chars": 1209
+    },
+    "10.5281/zenodo.20685602": {
+      "datacite_backup_present": true,
+      "datacite_survivor_present": true
+    },
+    "10.5281/zenodo.20722523": {
+      "openalex_id": "https://openalex.org/W7164889500",
+      "title": "Crimson Hexagonal Archive: Term Index v0.1 — Systematic Extraction of Coined Terms Across 845 Deposits (EA-REGISTRY-TERMINDEX-01)",
+      "publication_date": "2026-06-16",
+      "abstract_chars": 1206
+    },
+    "10.5281/zenodo.20722522": {
+      "datacite_backup_present": true,
+      "datacite_survivor_present": true
+    },
+    "10.5281/zenodo.20688440": {
+      "datacite_backup_present": true
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.19025428",
+        "10.5281/zenodo.20707509",
+        "10.5281/zenodo.19923120",
+        "10.5281/zenodo.20722562",
+        "10.5281/zenodo.20722689",
+        "10.5281/zenodo.20722680",
+        "10.5281/zenodo.20722523"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "19025428.xml",
+        "19923120.xml",
+        "20380668.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": [
+        "10.5281/zenodo.20722524",
+        "10.5281/zenodo.20722041",
+        "10.5281/zenodo.20685602",
+        "10.5281/zenodo.20722522",
+        "10.5281/zenodo.20688440"
+      ]
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": [
+        "10.5281/zenodo.20722524",
+        "10.5281/zenodo.20722041",
+        "10.5281/zenodo.20685602",
+        "10.5281/zenodo.20722522"
+      ]
+    }
+  },
+  "abstract_recovered_chars": 12516,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": true,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7135419658",
+    "https://openalex.org/W7164924048",
+    "https://openalex.org/W7158620832",
+    "https://openalex.org/W7164935322",
+    "https://openalex.org/W7164932228",
+    "https://openalex.org/W7164935961",
+    "https://openalex.org/W7164889500"
+  ]
+}

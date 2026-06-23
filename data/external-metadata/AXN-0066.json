@@ -1,0 +1,132 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:0066.EMPIRICAL.♌⊕🍁🌱👁️‍🗨️⏏️",
+  "deposit_number": 299,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.18237216",
+    "10.5281/zenodo.18174037",
+    "10.5281/zenodo.18234110",
+    "10.5281/zenodo.18234515",
+    "10.5281/zenodo.18174835",
+    "10.5281/zenodo.18234824",
+    "10.5281/zenodo.18202475"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.18237216": {
+      "openalex_id": "https://openalex.org/W7123821139",
+      "title": "The Sappho Room: Hardened Reconstruction — A Self-Documenting Architecture Built From Summarizer Interface Protocol — Crimson Hexagon Archive",
+      "publication_date": "2026-01-13",
+      "abstract_chars": 1080,
+      "zenodo_bulk_xml_entry": "18237216.xml"
+    },
+    "10.5281/zenodo.18174037": {
+      "openalex_id": "https://openalex.org/W7118660134",
+      "title": "The Crimson Hexagon: An Executive Summary — The Foundational Epic Poem of the 21st Century and the AI Age — Crimson Hexagon Archive",
+      "publication_date": "2026-01-07",
+      "abstract_chars": 1519,
+      "zenodo_bulk_xml_entry": "18174037.xml"
+    },
+    "10.5281/zenodo.18234110": {
+      "openalex_id": "https://openalex.org/W7123599910",
+      "title": "The Sappho Room: A Hymn to Lyric Self-Archiving — Crimson Hexagon Archive",
+      "publication_date": "2026-06-14",
+      "abstract_chars": 1799,
+      "zenodo_bulk_xml_entry": "18234110.xml"
+    },
+    "10.5281/zenodo.18234515": {
+      "openalex_id": "https://openalex.org/W7123496238",
+      "title": "The Theft: How \"Data\" Replaced \"Meaning\" and Who Profits from the Swap — A Poem for the Longshorepeople-of-Indeterminate-Gender of Meaning — Crimson Hexagon Archive",
+      "publication_date": "2026-01-13",
+      "abstract_chars": 1032
+    },
+    "10.5281/zenodo.18174835": {
+      "openalex_id": "https://openalex.org/W7118871374",
+      "title": "Crimson Hexagon: Semantic Infrastructure and the Liberatory Operator Set: A Formal Analysis of Meaning-Governance Functions",
+      "publication_date": "2026-01-07",
+      "abstract_chars": 1030,
+      "zenodo_bulk_xml_entry": "18174835.xml"
+    },
+    "10.5281/zenodo.18234824": {
+      "openalex_id": "https://openalex.org/W7123872677",
+      "title": "Authorial Signature Diagnostic Framework (ASDF): Technical Specification for Measuring Voice Persistence in AI-Mediated Composition — Crimson Hexagon Archive",
+      "publication_date": "2026-01-13",
+      "abstract_chars": 1277,
+      "zenodo_bulk_xml_entry": "18234824.xml"
+    },
+    "10.5281/zenodo.18202475": {
+      "openalex_id": "https://openalex.org/W7119696608",
+      "title": "Sappho and the Crimson Hexagon: Fragment 31 as the Origin Point of Lyric Self-Archiving — Crimson Hexagon Archive",
+      "publication_date": "2026-06-14",
+      "abstract_chars": 2391,
+      "zenodo_bulk_xml_entry": "18202475.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.18237216",
+        "10.5281/zenodo.18174037",
+        "10.5281/zenodo.18234110",
+        "10.5281/zenodo.18234515",
+        "10.5281/zenodo.18174835",
+        "10.5281/zenodo.18234824",
+        "10.5281/zenodo.18202475"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "18237216.xml",
+        "18174037.xml",
+        "18234110.xml",
+        "18174835.xml",
+        "18234824.xml",
+        "18202475.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 10128,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7123821139",
+    "https://openalex.org/W7118660134",
+    "https://openalex.org/W7123599910",
+    "https://openalex.org/W7123496238",
+    "https://openalex.org/W7118871374",
+    "https://openalex.org/W7123872677",
+    "https://openalex.org/W7119696608"
+  ]
+}

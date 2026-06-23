@@ -1,0 +1,161 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:0210.GOVERNANCE.🤙🖊️🔭🍀🖐️🕊️",
+  "deposit_number": 61,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.19614870",
+    "10.5281/zenodo.19637488",
+    "10.5281/zenodo.19633305",
+    "10.5281/zenodo.19618085",
+    "10.5281/zenodo.19637482",
+    "10.5281/zenodo.19578100",
+    "10.5281/zenodo.19614874",
+    "10.5281/zenodo.19637246",
+    "10.5281/zenodo.19614872",
+    "10.5281/zenodo.19474724"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.19614870": {
+      "openalex_id": "https://openalex.org/W7154586586",
+      "title": "SPXI (Semantic Packet for eXchange & Indexing): A Formal Specification — EA-SPXI-01",
+      "publication_date": "2026-04-16",
+      "abstract_chars": 1073,
+      "zenodo_bulk_xml_entry": "19614870.xml"
+    },
+    "10.5281/zenodo.19637488": {
+      "openalex_id": "https://openalex.org/W7154825390",
+      "title": "SPXI ROI: Operational and Visibility Returns — EA-SPXI-09.1 (Nested-Layer Returns Bonsai)",
+      "publication_date": "2026-04-18",
+      "abstract_chars": 889
+    },
+    "10.5281/zenodo.19633305": {
+      "openalex_id": "https://openalex.org/W7154742762",
+      "title": "SPXI: Protocol and ETF Disambiguation (EA-MPAI-SPXI-02) v1.0",
+      "publication_date": "2026-04-17",
+      "abstract_chars": 1011,
+      "zenodo_bulk_xml_entry": "19633305.xml"
+    },
+    "10.5281/zenodo.19618085": {
+      "openalex_id": "https://openalex.org/W7154717758",
+      "title": "SPXI as Concept: A Plateau on Search, Creation, and the Virtual Retrieval Layer (EA-SPXI-05)",
+      "publication_date": "2026-04-17",
+      "abstract_chars": 2740
+    },
+    "10.5281/zenodo.19637482": {
+      "openalex_id": "https://openalex.org/W7154835204",
+      "title": "EA-MPAI-SPXI-01: Metadata Packet for AI Indexing — SPXI Protocol Entity (v1.2: Nested-Layer Correction)",
+      "publication_date": "2026-04-18",
+      "abstract_chars": 1196,
+      "zenodo_bulk_xml_entry": "19637482.xml"
+    },
+    "10.5281/zenodo.19578100": {
+      "openalex_id": "https://openalex.org/W7154342038",
+      "title": "Retrieval Architecture: Service Definition and Proof of Method",
+      "publication_date": "2026-04-14",
+      "abstract_chars": 405,
+      "zenodo_bulk_xml_entry": "19578100.xml"
+    },
+    "10.5281/zenodo.19614874": {
+      "openalex_id": "https://openalex.org/W7154569507",
+      "title": "Supraliminal Transmission: SPXI as Intentional Entity Inscription in Light of Subliminal Learning Research — EA-SPXI-13",
+      "publication_date": "2026-04-16",
+      "abstract_chars": 1120,
+      "zenodo_bulk_xml_entry": "19614874.xml"
+    },
+    "10.5281/zenodo.19637246": {
+      "openalex_id": "https://openalex.org/W7154842732",
+      "title": "SPXI Is Not GEO: A Technical Distinction — EA-SPXI-09 (v2.0: Nested-Layer Relation)",
+      "publication_date": "2026-04-18",
+      "abstract_chars": 1638
+    },
+    "10.5281/zenodo.19614872": {
+      "openalex_id": "https://openalex.org/W7154607135",
+      "title": "PLACEHOLDER",
+      "publication_date": "2026-04-16",
+      "abstract_chars": 11,
+      "zenodo_bulk_xml_entry": "19614872.xml"
+    },
+    "10.5281/zenodo.19474724": {
+      "openalex_id": "https://openalex.org/W7151856442",
+      "title": "The Encyclotron: The First Reproducible Instrument for Measuring Scholarly Fidelity in the Summarizer Layer (EA-ENCYCLOTRON-01)",
+      "publication_date": "2026-04-08",
+      "abstract_chars": 684,
+      "zenodo_bulk_xml_entry": "19474724.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.19614870",
+        "10.5281/zenodo.19637488",
+        "10.5281/zenodo.19633305",
+        "10.5281/zenodo.19618085",
+        "10.5281/zenodo.19637482",
+        "10.5281/zenodo.19578100",
+        "10.5281/zenodo.19614874",
+        "10.5281/zenodo.19637246",
+        "10.5281/zenodo.19614872",
+        "10.5281/zenodo.19474724"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "19614870.xml",
+        "19633305.xml",
+        "19637482.xml",
+        "19578100.xml",
+        "19614874.xml",
+        "19614872.xml",
+        "19474724.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 10767,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7154586586",
+    "https://openalex.org/W7154825390",
+    "https://openalex.org/W7154742762",
+    "https://openalex.org/W7154717758",
+    "https://openalex.org/W7154835204",
+    "https://openalex.org/W7154342038",
+    "https://openalex.org/W7154569507",
+    "https://openalex.org/W7154842732",
+    "https://openalex.org/W7154607135",
+    "https://openalex.org/W7151856442"
+  ]
+}

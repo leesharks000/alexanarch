@@ -1,0 +1,104 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:02F8.GOVERNANCE.🧬□▶️⚫👉🌆",
+  "deposit_number": 161,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.20586831",
+    "10.5281/zenodo.20571132",
+    "10.5281/zenodo.19487009",
+    "10.5281/zenodo.20581444",
+    "10.5281/zenodo.20571791"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.20586831": {
+      "openalex_id": "https://openalex.org/W7163892615",
+      "title": "The Reverse Turing Test: A Three-Stage Protocol for Detecting AI-Mediation Signatures in Human Text and Their Propagation to Model Training (v1.1)",
+      "publication_date": "2026-06-07",
+      "abstract_chars": 4800
+    },
+    "10.5281/zenodo.20571132": {
+      "openalex_id": "https://openalex.org/W7163775094",
+      "title": "The Semantic Economy Institute Prize in Operative Critique (SEIPOC): Charter and Specifications v1.0",
+      "publication_date": "2026-06-06",
+      "abstract_chars": 2639
+    },
+    "10.5281/zenodo.19487009": {
+      "openalex_id": "https://openalex.org/W7152526477",
+      "title": "Meaning Feudalism: A Semantic Economic Analysis of 'AI Agent Traps' (Franklin et al., Google DeepMind, 2026)",
+      "publication_date": "2026-04-09",
+      "abstract_chars": 944,
+      "zenodo_bulk_xml_entry": "19487009.xml"
+    },
+    "10.5281/zenodo.20581444": {
+      "openalex_id": "https://openalex.org/W7163810524",
+      "title": "Meaning Feudalism at the Guidance Layer: Sovereign Enclosure of the Composition Layer in Google's June 2026 SEO/AEO/GEO Canonicalization (v1.2)",
+      "publication_date": "2026-06-07",
+      "abstract_chars": 3511
+    },
+    "10.5281/zenodo.20571791": {
+      "openalex_id": "https://openalex.org/W7163760062",
+      "title": "Semantic Exhaustion: A Case Study in the Cost of Zero-Source Entity Substitution — Composition-Layer Substitution, the Scalar Transcription Homology, and the Recursive Atrophy Cost (v1.0)",
+      "publication_date": "2026-06-06",
+      "abstract_chars": 3449
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.20586831",
+        "10.5281/zenodo.20571132",
+        "10.5281/zenodo.19487009",
+        "10.5281/zenodo.20581444",
+        "10.5281/zenodo.20571791"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "19487009.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 15343,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7163892615",
+    "https://openalex.org/W7163775094",
+    "https://openalex.org/W7152526477",
+    "https://openalex.org/W7163810524",
+    "https://openalex.org/W7163760062"
+  ]
+}

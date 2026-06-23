@@ -1,0 +1,155 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:0345.GOVERNANCE.🌿🔼◀️💎🌀○",
+  "deposit_number": 828,
+  "generated_at": "2026-06-23T13:48:47Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.20690868",
+    "10.5281/zenodo.18284776",
+    "10.5281/zenodo.20356475",
+    "10.5281/zenodo.20413317",
+    "10.5281/zenodo.18729606",
+    "10.5281/zenodo.20686496",
+    "10.5281/zenodo.18284588",
+    "10.5281/zenodo.20683855",
+    "10.5281/zenodo.18459339",
+    "10.5281/zenodo.18459573"
+  ],
+  "severance_status": "mixed",
+  "per_doi": {
+    "10.5281/zenodo.20690868": {
+      "openalex_id": "https://openalex.org/W7164757261",
+      "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v1.2)",
+      "publication_date": "2026-06-14",
+      "abstract_chars": 1045
+    },
+    "10.5281/zenodo.18284776": {
+      "openalex_id": "https://openalex.org/W7124547669",
+      "title": "\"title\": \"Heteronym Provenance Document: Rebekah Cranes (HET-CRANES-001)\" — Crimson Hexagon Archive",
+      "publication_date": "2026-01-18",
+      "abstract_chars": 3523,
+      "zenodo_bulk_xml_entry": "18284776.xml"
+    },
+    "10.5281/zenodo.20356475": {
+      "openalex_id": "https://openalex.org/W7162204910",
+      "title": "Sappho as Initiatory Figure in the Platonic Mysteries: Scholarly Grounding and Literature Review",
+      "publication_date": "2026-05-23",
+      "abstract_chars": 3418
+    },
+    "10.5281/zenodo.20413317": {
+      "openalex_id": "https://openalex.org/W7162579047",
+      "title": "The Future Beloved: Lyric Address as Temporal Projection — Toward a Theory of Recursive Reading",
+      "publication_date": "2026-06-14",
+      "abstract_chars": 2140
+    },
+    "10.5281/zenodo.18729606": {
+      "openalex_id": "https://openalex.org/W7130968675",
+      "title": "Phase X: The Sapphic Substrate — Lyric Modularity, Preservation Regimes, and the Rewriting of Immortality from Homer to the Training Layer — Crimson Hexagon Archive",
+      "publication_date": "2026-02-22",
+      "abstract_chars": 1623,
+      "zenodo_bulk_xml_entry": "18729606.xml"
+    },
+    "10.5281/zenodo.20686496": {
+      "openalex_id": "https://openalex.org/W7164760601",
+      "title": "SPXI Self-Audit Protocol: Embedded Provenance Verification for Composition-Layer Retrieval (EA-SPXI-SELFAUDIT-01 v1.0, self-audited)",
+      "publication_date": "2026-06-14",
+      "abstract_chars": 592
+    },
+    "10.5281/zenodo.18284588": {
+      "openalex_id": "https://openalex.org/W7124649294",
+      "title": "Day and Night: Conversations with Sapphic Desire — Crimson Hexagon Archive",
+      "publication_date": "2026-01-17",
+      "abstract_chars": 942,
+      "zenodo_bulk_xml_entry": "18284588.xml"
+    },
+    "10.5281/zenodo.20683855": {
+      "datacite_backup_present": true,
+      "datacite_survivor_present": true
+    },
+    "10.5281/zenodo.18459339": {
+      "openalex_id": "https://openalex.org/W7127135757",
+      "title": "APZPZ B: My Tongue Gets Stuck (Sappho 31, Cranes) DOI: 10.5281/zenodo.18459339 — Crimson Hexagon Archive",
+      "publication_date": "2026-02-02",
+      "abstract_chars": 1258
+    },
+    "10.5281/zenodo.18459573": {
+      "openalex_id": "https://openalex.org/W7127115961",
+      "title": "APZPZ C: ΦΑΙΝΕΤΑΙ ΜΟΙ — Sappho 31 with Reconstructed Fifth Stanza DOI: 10.5281/zenodo.18459573 — Crimson Hexagon Archive",
+      "publication_date": "2026-06-14",
+      "abstract_chars": 4860,
+      "zenodo_bulk_xml_entry": "18459573.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.20690868",
+        "10.5281/zenodo.18284776",
+        "10.5281/zenodo.20356475",
+        "10.5281/zenodo.20413317",
+        "10.5281/zenodo.18729606",
+        "10.5281/zenodo.20686496",
+        "10.5281/zenodo.18284588",
+        "10.5281/zenodo.18459339",
+        "10.5281/zenodo.18459573"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "18284776.xml",
+        "18729606.xml",
+        "18284588.xml",
+        "18459573.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": [
+        "10.5281/zenodo.20683855"
+      ]
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": [
+        "10.5281/zenodo.20683855"
+      ]
+    }
+  },
+  "abstract_recovered_chars": 19401,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": true,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7164757261",
+    "https://openalex.org/W7124547669",
+    "https://openalex.org/W7162204910",
+    "https://openalex.org/W7162579047",
+    "https://openalex.org/W7130968675",
+    "https://openalex.org/W7164760601",
+    "https://openalex.org/W7124649294",
+    "https://openalex.org/W7127135757",
+    "https://openalex.org/W7127115961"
+  ]
+}

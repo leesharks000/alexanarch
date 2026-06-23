@@ -1,0 +1,122 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:01E7.EMPIRICAL.🪧🏁🧬👈🔒👁️‍🗨️",
+  "deposit_number": 633,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.18713917",
+    "10.5281/zenodo.14538882",
+    "10.5281/zenodo.19442251",
+    "10.5281/zenodo.19013315",
+    "10.5281/zenodo.19442262",
+    "10.5281/zenodo.18726807",
+    "10.5281/zenodo.18615388"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.18713917": {
+      "openalex_id": "https://openalex.org/W7130726350",
+      "title": "The Semantic Economy: A Marxian Accounting Framework for the Production, Extraction, and Exhaustion of Meaning as Value — Crimson Hexagon Archive",
+      "publication_date": "2026-02-20",
+      "abstract_chars": 3960,
+      "zenodo_bulk_xml_entry": "18713917.xml"
+    },
+    "10.5281/zenodo.14538882": {
+      "zenodo_bulk_xml_entry": "14538882.xml"
+    },
+    "10.5281/zenodo.19442251": {
+      "openalex_id": "https://openalex.org/W7150846243",
+      "title": "Gravity Well: Field Specification for Retentive Citational Curvature in the Crimson Hexagonal Archive (EA-GW-FIELD-01 v1.1)",
+      "publication_date": "2026-04-06",
+      "abstract_chars": 1169,
+      "zenodo_bulk_xml_entry": "19442251.xml"
+    },
+    "10.5281/zenodo.19013315": {
+      "openalex_id": "https://openalex.org/W7135388610",
+      "title": "THE SPACE ARK: EA-ARK-01 v4.2.7 — Mobile Ontological Operating System of the Crimson Hexagonal Architecture",
+      "publication_date": "2026-03-01",
+      "abstract_chars": 5666
+    },
+    "10.5281/zenodo.19442262": {
+      "openalex_id": "https://openalex.org/W7150802086",
+      "title": "Gravity Well: Suffusion Map — Room-by-Room Field Behavior in the Crimson Hexagonal Archive (EA-GW-FIELD-02 v1.0)",
+      "publication_date": "2026-04-06",
+      "abstract_chars": 778,
+      "zenodo_bulk_xml_entry": "19442262.xml"
+    },
+    "10.5281/zenodo.18726807": {
+      "openalex_id": "https://openalex.org/W7130856655",
+      "title": "The Liquidation of Method: A Liberation Philology of the Sign \"Marx\" Document 164 Hex: 16.LIBRARY.PERGAMUM.MARX.LIQUIDATION — Crimson Hexagon Archive",
+      "publication_date": "2026-02-21",
+      "abstract_chars": 5063
+    },
+    "10.5281/zenodo.18615388": {
+      "openalex_id": "https://openalex.org/W7128624029",
+      "title": "The Prepositional Alienation — English \"For\" and the Impossibility of Anchoring Function Without Intent DOI: 10.5281/zenodo.18615388 — Crimson Hexagon Archive",
+      "publication_date": "2026-02-11",
+      "abstract_chars": 9900
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.18713917",
+        "10.5281/zenodo.19442251",
+        "10.5281/zenodo.19013315",
+        "10.5281/zenodo.19442262",
+        "10.5281/zenodo.18726807",
+        "10.5281/zenodo.18615388"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "18713917.xml",
+        "14538882.xml",
+        "19442251.xml",
+        "19442262.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 26536,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7130726350",
+    "https://openalex.org/W7150846243",
+    "https://openalex.org/W7135388610",
+    "https://openalex.org/W7150802086",
+    "https://openalex.org/W7130856655",
+    "https://openalex.org/W7128624029"
+  ]
+}

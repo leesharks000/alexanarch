@@ -1,0 +1,173 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:02F1.EMPIRICAL.🏠🝊♄📜💜🎺",
+  "deposit_number": 788,
+  "generated_at": "2026-06-23T13:48:47Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.20546930",
+    "10.5281/zenodo.20558196",
+    "10.5281/zenodo.20518340",
+    "10.5281/zenodo.20546318",
+    "10.5281/zenodo.20518338",
+    "10.5281/zenodo.20558672",
+    "10.5281/zenodo.20004379",
+    "10.5281/zenodo.20290865",
+    "10.5281/zenodo.20293582",
+    "10.5281/zenodo.20529142",
+    "10.5281/zenodo.18203317",
+    "10.5281/zenodo.20449267"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.20546930": {
+      "openalex_id": "https://openalex.org/W7163513244",
+      "title": "Semantic Technique and Collective Ownership: From Recognition to Reclamation (v2.0)",
+      "publication_date": "2026-06-04",
+      "abstract_chars": 4025
+    },
+    "10.5281/zenodo.20558196": {
+      "openalex_id": "https://openalex.org/W7163714843",
+      "title": "Erasure Skew: A Measurement Program for the Power-Conditioning of Provenance Retention (v3) — Hardened against substrate co-option, with the Atomic Token Rule and two new operators (Π_d, α_T)",
+      "publication_date": "2026-06-04",
+      "abstract_chars": 2888
+    },
+    "10.5281/zenodo.20518340": {
+      "openalex_id": "https://openalex.org/W7163319545",
+      "title": "Self-Audit Module for Public Summarizers: PER, DSL, and Query Fidelity (v2) — Standing Metrics for Composition-Layer Self-Evaluation",
+      "publication_date": "2026-06-03",
+      "abstract_chars": 702
+    },
+    "10.5281/zenodo.20546318": {
+      "openalex_id": "https://openalex.org/W7163529214",
+      "title": "CTI_WOUND: Panel-Bound Discoverability Scar — Lee Sharks / Pearl and Other Poems Evidence Packet, With Analysis of Personalized-Reality Stress-Testing Through Incognito-Mode AI Surface Disabling",
+      "publication_date": "2026-06-04",
+      "abstract_chars": 3003
+    },
+    "10.5281/zenodo.20518338": {
+      "openalex_id": "https://openalex.org/W7163337742",
+      "title": "Diversity Contraction Across Substrates: A Boundary Law for Semantic Exhaustion",
+      "publication_date": "2026-06-03",
+      "abstract_chars": 706
+    },
+    "10.5281/zenodo.20558672": {
+      "openalex_id": "https://openalex.org/W7163646506",
+      "title": "Provenance Erasure Rate Under the Atomic Token Rule: A Companion Hardening to PER v1",
+      "publication_date": "2026-06-04",
+      "abstract_chars": 1903
+    },
+    "10.5281/zenodo.20004379": {
+      "openalex_id": "https://openalex.org/W7159958584",
+      "title": "Provenance Erasure Rate: A Compression-Survival Metric for Attribution Loss in AI-Composed Search Outputs",
+      "publication_date": "2026-05-03",
+      "abstract_chars": 1573,
+      "zenodo_bulk_xml_entry": "20004379.xml"
+    },
+    "10.5281/zenodo.20290865": {
+      "openalex_id": "https://openalex.org/W7161695087",
+      "title": "The Single-Owner Discount: Provenance Concentration and Epistemic Class Reproduction in Generative Search",
+      "publication_date": "2026-05-19",
+      "abstract_chars": 1644,
+      "zenodo_bulk_xml_entry": "20290865.xml"
+    },
+    "10.5281/zenodo.20293582": {
+      "openalex_id": "https://openalex.org/W7161679090",
+      "title": "The Excluded Entity: Organic Resolution and Compositional Suppression in Google AI Overview",
+      "publication_date": "2026-05-19",
+      "abstract_chars": 1114
+    },
+    "10.5281/zenodo.20529142": {
+      "openalex_id": "https://openalex.org/W7163413421",
+      "title": "The Meaning Caste: Trump's AI Executive Order and the Security Grammar of Industrial Cognition",
+      "publication_date": "2026-06-03",
+      "abstract_chars": 1903
+    },
+    "10.5281/zenodo.18203317": {
+      "openalex_id": "https://openalex.org/W7119855351",
+      "title": "The Capital Operator Stack and the University: Toward a Semantic Economy of Knowledge Production — Crimson Hexagon Archive",
+      "publication_date": "2026-01-10",
+      "abstract_chars": 2509,
+      "zenodo_bulk_xml_entry": "18203317.xml"
+    },
+    "10.5281/zenodo.20449267": {
+      "openalex_id": "https://openalex.org/W7162785677",
+      "title": "Erasure Skew: A Measurement Program for the Power-Conditioning of Provenance Loss in Retrieval and Composition Systems",
+      "publication_date": "2026-05-29",
+      "abstract_chars": 3055,
+      "zenodo_bulk_xml_entry": "20449267.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.20546930",
+        "10.5281/zenodo.20558196",
+        "10.5281/zenodo.20518340",
+        "10.5281/zenodo.20546318",
+        "10.5281/zenodo.20518338",
+        "10.5281/zenodo.20558672",
+        "10.5281/zenodo.20004379",
+        "10.5281/zenodo.20290865",
+        "10.5281/zenodo.20293582",
+        "10.5281/zenodo.20529142",
+        "10.5281/zenodo.18203317",
+        "10.5281/zenodo.20449267"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "20004379.xml",
+        "20290865.xml",
+        "18203317.xml",
+        "20449267.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 25025,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7163513244",
+    "https://openalex.org/W7163714843",
+    "https://openalex.org/W7163319545",
+    "https://openalex.org/W7163529214",
+    "https://openalex.org/W7163337742",
+    "https://openalex.org/W7163646506",
+    "https://openalex.org/W7159958584",
+    "https://openalex.org/W7161695087",
+    "https://openalex.org/W7161679090",
+    "https://openalex.org/W7163413421",
+    "https://openalex.org/W7119855351",
+    "https://openalex.org/W7162785677"
+  ]
+}

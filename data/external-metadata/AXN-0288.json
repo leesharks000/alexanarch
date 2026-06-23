@@ -1,0 +1,121 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:0288.GOVERNANCE.🌺♋🌲∮🖊️♄",
+  "deposit_number": 736,
+  "generated_at": "2026-06-23T13:48:47Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.20210117",
+    "10.5281/zenodo.19763346",
+    "10.5281/zenodo.20208384",
+    "10.5281/zenodo.18507849",
+    "10.5281/zenodo.20250736",
+    "10.5281/zenodo.18507840"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.20210117": {
+      "openalex_id": "https://openalex.org/W7161298941",
+      "title": "Formal Foundations of Semantic Physics (EA-SEI-FF-01, v0.2 — Post-Assembly Review)",
+      "publication_date": "2026-05-15",
+      "abstract_chars": 716,
+      "zenodo_bulk_xml_entry": "20210117.xml"
+    },
+    "10.5281/zenodo.19763346": {
+      "openalex_id": "https://openalex.org/W7155624978",
+      "title": "THE WRITABLE RETRIEVAL BASIN: Retrieval Basin Topology, Directional Stability, and Attractor Dynamics in AI-Mediated Knowledge Retrieval (EA-RBT-01 v1.1)",
+      "publication_date": "2026-04-25",
+      "abstract_chars": 1015,
+      "zenodo_bulk_xml_entry": "19763346.xml"
+    },
+    "10.5281/zenodo.20208384": {
+      "openalex_id": "https://openalex.org/W7161322959",
+      "title": "Semantic Physics: A Stratified, Operative Discipline — Scales, Modalities, and the Diagnostic–Constructive Continuum",
+      "publication_date": "2026-05-15",
+      "abstract_chars": 1968,
+      "zenodo_bulk_xml_entry": "20208384.xml"
+    },
+    "10.5281/zenodo.18507849": {
+      "openalex_id": "https://openalex.org/W7127943667",
+      "title": "LAGRANGE OBSERVATORY! (LO!) Chamber Specification & Nobel Glas Provenance Crimson Hexagon Extension — Semantic Torus Field Hex: 15.OBS.LAGRANGE DOI: 10.5281/zenodo.18507849 — Crimson Hexagon Archive",
+      "publication_date": "2026-02-06",
+      "abstract_chars": 9796,
+      "zenodo_bulk_xml_entry": "18507849.xml"
+    },
+    "10.5281/zenodo.20250736": {
+      "openalex_id": "https://openalex.org/W7161497382",
+      "title": "The Semantic Deviation Principle (v0.2 Final): A Measurement Primitive for Semantic Physics",
+      "publication_date": "2026-05-17",
+      "abstract_chars": 2032
+    },
+    "10.5281/zenodo.18507840": {
+      "openalex_id": "https://openalex.org/W7127902453",
+      "title": "NOBEL GLAS — PROVENANCE PACKET Heteronym Registry Position 8 of 12 Crimson Hexagon — Authorial Persona Registration Document: 241 Hex: 00.PROV.GLAS DOI: 10.5281/zenodo.18507840 — Crimson Hexagon Archive",
+      "publication_date": "2026-02-06",
+      "abstract_chars": 9805,
+      "zenodo_bulk_xml_entry": "18507840.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.20210117",
+        "10.5281/zenodo.19763346",
+        "10.5281/zenodo.20208384",
+        "10.5281/zenodo.18507849",
+        "10.5281/zenodo.20250736",
+        "10.5281/zenodo.18507840"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "20210117.xml",
+        "19763346.xml",
+        "20208384.xml",
+        "18507849.xml",
+        "18507840.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 25332,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7161298941",
+    "https://openalex.org/W7155624978",
+    "https://openalex.org/W7161322959",
+    "https://openalex.org/W7127943667",
+    "https://openalex.org/W7161497382",
+    "https://openalex.org/W7127902453"
+  ]
+}

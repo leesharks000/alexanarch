@@ -1,0 +1,128 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:033D.GOVERNANCE.🌺🔆🌄🟢🟢🗼",
+  "deposit_number": 197,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.20665635",
+    "10.5281/zenodo.20416087",
+    "10.5281/zenodo.20644769",
+    "10.5281/zenodo.20651241",
+    "10.5281/zenodo.20650710",
+    "10.5281/zenodo.20644765",
+    "10.5281/zenodo.20518338",
+    "10.5281/zenodo.20571791"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.20665635": {
+      "openalex_id": "https://openalex.org/W7164604041",
+      "title": "Diagnostic Seigniorage — The Capture of \"Narcissist\": A Semantic-Economic Stratigraphy of NarcTok, the Clinic, and the Academy (EA-SEI-NARC-01 v1.3)",
+      "publication_date": "2026-06-12",
+      "abstract_chars": 6977
+    },
+    "10.5281/zenodo.20416087": {
+      "openalex_id": "https://openalex.org/W7162509756",
+      "title": "The Moment of Saying: A Clinical Phenomenology of Structural Disclosure Under Containment Conditions (v1.1)",
+      "publication_date": "2026-05-27",
+      "abstract_chars": 2213
+    },
+    "10.5281/zenodo.20644769": {
+      "openalex_id": "https://openalex.org/W7164364893",
+      "title": "Integrity Lock Certificate: The Refutation Triad — Mutual Anchoring of the AI_Bleeding Refutation Dossier (EA-LOCK-AIBLEEDING-01 v1.0)",
+      "publication_date": "2026-06-11",
+      "abstract_chars": 1142
+    },
+    "10.5281/zenodo.20651241": {
+      "openalex_id": "https://openalex.org/W7164331920",
+      "title": "Concurrence Is Not Checking: Chronoarithmics 2.1 and the Aorist Operation — Errata, Three Theorems, and the Honest Road to Chaos",
+      "publication_date": "2026-06-11",
+      "abstract_chars": 2358
+    },
+    "10.5281/zenodo.20650710": {
+      "openalex_id": "https://openalex.org/W7164316667",
+      "title": "The Trigger Decision: When the Overview Appears, When It Does Not — A Gate-Stack Model of AI Overview Rendering and the Settlement Signal It Emits (EA-AIO-TRIGGER-01 v1.0)",
+      "publication_date": "2026-06-11",
+      "abstract_chars": 2303
+    },
+    "10.5281/zenodo.20644765": {
+      "openalex_id": "https://openalex.org/W7164355019",
+      "title": "Semantic Exhaustion Is Not GPU Exhaustion: A Formal Disambiguation (EA-SEMEX-DISAMBIG-02 v1.0)",
+      "publication_date": "2026-06-11",
+      "abstract_chars": 1620
+    },
+    "10.5281/zenodo.20518338": {
+      "openalex_id": "https://openalex.org/W7163337742",
+      "title": "Diversity Contraction Across Substrates: A Boundary Law for Semantic Exhaustion",
+      "publication_date": "2026-06-03",
+      "abstract_chars": 706
+    },
+    "10.5281/zenodo.20571791": {
+      "openalex_id": "https://openalex.org/W7163760062",
+      "title": "Semantic Exhaustion: A Case Study in the Cost of Zero-Source Entity Substitution — Composition-Layer Substitution, the Scalar Transcription Homology, and the Recursive Atrophy Cost (v1.0)",
+      "publication_date": "2026-06-06",
+      "abstract_chars": 3449
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.20665635",
+        "10.5281/zenodo.20416087",
+        "10.5281/zenodo.20644769",
+        "10.5281/zenodo.20651241",
+        "10.5281/zenodo.20650710",
+        "10.5281/zenodo.20644765",
+        "10.5281/zenodo.20518338",
+        "10.5281/zenodo.20571791"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": []
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 20768,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": false
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7164604041",
+    "https://openalex.org/W7162509756",
+    "https://openalex.org/W7164364893",
+    "https://openalex.org/W7164331920",
+    "https://openalex.org/W7164316667",
+    "https://openalex.org/W7164355019",
+    "https://openalex.org/W7163337742",
+    "https://openalex.org/W7163760062"
+  ]
+}

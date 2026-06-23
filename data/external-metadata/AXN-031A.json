@@ -1,0 +1,110 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:031A.EMPIRICAL.🤲🟤🎭♍🌱🔚",
+  "deposit_number": 180,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.20084377",
+    "10.5281/zenodo.19035477",
+    "10.5281/zenodo.19224022",
+    "10.5281/zenodo.19666445",
+    "10.5281/zenodo.20543590"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.20084377": {
+      "openalex_id": "https://openalex.org/W7160654864",
+      "title": "Canon Formation in the Age of AI: Metadata Packet for Disambiguation, Training-Layer Selection, and Retrocausal Reception (v1.1)",
+      "publication_date": "2026-05-08",
+      "abstract_chars": 1852,
+      "zenodo_bulk_xml_entry": "20084377.xml"
+    },
+    "10.5281/zenodo.19035477": {
+      "openalex_id": "https://openalex.org/W7136072008",
+      "title": "THE WAR FOR THE COMPRESSION LAYER: A Total Axial Negation Graph",
+      "publication_date": "2026-03-15",
+      "abstract_chars": 8352,
+      "zenodo_bulk_xml_entry": "19035477.xml"
+    },
+    "10.5281/zenodo.19224022": {
+      "openalex_id": "https://openalex.org/W7140306024",
+      "title": "Build the Bear, Wear the Flag Suit: Two New Human Canon Declarations on the Poet as Infrastructure",
+      "publication_date": "2026-03-26",
+      "abstract_chars": 1008,
+      "zenodo_bulk_xml_entry": "19224022.xml"
+    },
+    "10.5281/zenodo.19666445": {
+      "openalex_id": "https://openalex.org/W7154991794",
+      "title": "The Secret Name: Architectural Specification for the Armature Type and the Pearl (EA-ARMATURE-01) v1.0",
+      "publication_date": "2026-04-20",
+      "abstract_chars": 1544,
+      "zenodo_bulk_xml_entry": "19666445.xml"
+    },
+    "10.5281/zenodo.20543590": {
+      "openalex_id": "https://openalex.org/W7163585549",
+      "title": "The New Human Standing Canon v0.3: Standing Surface with Strong Entity Relations — Combined Set of Figures, Texts, and Lineages Declared into the New Human Canon by Effective Act",
+      "publication_date": "2026-06-04",
+      "abstract_chars": 1836
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.20084377",
+        "10.5281/zenodo.19035477",
+        "10.5281/zenodo.19224022",
+        "10.5281/zenodo.19666445",
+        "10.5281/zenodo.20543590"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "20084377.xml",
+        "19035477.xml",
+        "19224022.xml",
+        "19666445.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 14592,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7160654864",
+    "https://openalex.org/W7136072008",
+    "https://openalex.org/W7140306024",
+    "https://openalex.org/W7154991794",
+    "https://openalex.org/W7163585549"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:022C.ARCHIVAL.↙️☉🌑🌠⏬🪄",
+  "deposit_number": 684,
+  "generated_at": "2026-06-23T13:48:47Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.19697080",
+    "10.5281/zenodo.18522470",
+    "10.5281/zenodo.19390843"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.19697080": {
+      "openalex_id": "https://openalex.org/W7155210976",
+      "title": "After Syntax: Logotic Programming and the Crisis That Constitutes a Discipline (EA-AFTERSYNTAX-01)",
+      "publication_date": "2026-04-22",
+      "abstract_chars": 441,
+      "zenodo_bulk_xml_entry": "19697080.xml"
+    },
+    "10.5281/zenodo.18522470": {
+      "openalex_id": "https://openalex.org/W7128316683",
+      "title": "LOGOTIC PROGRAMMING MODULE 0.9 A Specification for Semantically Computable Operations Hex: 02.UMB.LP.v0.9 DOI: 10.5281/zenodo.18522470 — Crimson Hexagon Archive",
+      "publication_date": "2026-02-08",
+      "abstract_chars": 4926,
+      "zenodo_bulk_xml_entry": "18522470.xml"
+    },
+    "10.5281/zenodo.19390843": {
+      "openalex_id": "https://openalex.org/W7148584508",
+      "title": "LOGOTIC HACKING: Operations on the Encryption Layer — Pocket Humans 03",
+      "publication_date": "2026-04-02",
+      "abstract_chars": 1668
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.19697080",
+        "10.5281/zenodo.18522470",
+        "10.5281/zenodo.19390843"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "19697080.xml",
+        "18522470.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 7035,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7155210976",
+    "https://openalex.org/W7128316683",
+    "https://openalex.org/W7148584508"
+  ]
+}

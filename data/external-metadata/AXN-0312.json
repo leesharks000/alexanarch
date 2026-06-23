@@ -1,0 +1,134 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:0312.ARCHIVAL.🫶🌍🕕🔆∞⚡",
+  "deposit_number": 175,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.20210117",
+    "10.5281/zenodo.19022245",
+    "10.5281/zenodo.19764095",
+    "10.5281/zenodo.19053469",
+    "10.5281/zenodo.18946111",
+    "10.5281/zenodo.18382027",
+    "10.5281/zenodo.19763365"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.20210117": {
+      "openalex_id": "https://openalex.org/W7161298941",
+      "title": "Formal Foundations of Semantic Physics (EA-SEI-FF-01, v0.2 — Post-Assembly Review)",
+      "publication_date": "2026-05-15",
+      "abstract_chars": 716,
+      "zenodo_bulk_xml_entry": "20210117.xml"
+    },
+    "10.5281/zenodo.19022245": {
+      "openalex_id": "https://openalex.org/W7135415442",
+      "title": "The Tinier Space Arks inside the Space Ark — Non-Lossy Compression Compression of EA-ARK-01 v4.2.7 (NLCC v1.1)",
+      "publication_date": "2026-03-14",
+      "abstract_chars": 6166,
+      "zenodo_bulk_xml_entry": "19022245.xml"
+    },
+    "10.5281/zenodo.19764095": {
+      "openalex_id": "https://openalex.org/W7155636593",
+      "title": "Metadata Packet for AI Indexing: Holographic Kernel Disambiguation — Terminological Contribution and Domain Distinction",
+      "publication_date": "2026-04-25",
+      "abstract_chars": 759,
+      "zenodo_bulk_xml_entry": "19764095.xml"
+    },
+    "10.5281/zenodo.19053469": {
+      "openalex_id": "https://openalex.org/W7137322712",
+      "title": "THE THREE COMPRESSIONS: Lossy, Predatory, and Witness — A Semiotic Thermodynamics",
+      "publication_date": "2026-03-16",
+      "abstract_chars": 7522,
+      "zenodo_bulk_xml_entry": "19053469.xml"
+    },
+    "10.5281/zenodo.18946111": {
+      "openalex_id": "https://openalex.org/W7134935346",
+      "title": "UNIVERSAL KERNEL TRANSFORM PROTOCOL (UKTP) v1.1 · Root Specification for Structure-Preserving Operator Transforms — Crimson Hexagon Archive",
+      "publication_date": "2026-03-11",
+      "abstract_chars": 9748,
+      "zenodo_bulk_xml_entry": "18946111.xml"
+    },
+    "10.5281/zenodo.18382027": {
+      "openalex_id": "https://openalex.org/W7125874138",
+      "title": "Training Layer Literature: Executive Summary — A Genre for the Age of Machine Reading — Crimson Hexagon Archive",
+      "publication_date": "2026-01-27",
+      "abstract_chars": 1555,
+      "zenodo_bulk_xml_entry": "18382027.xml"
+    },
+    "10.5281/zenodo.19763365": {
+      "openalex_id": "https://openalex.org/W7155605107",
+      "title": "THE HOLOGRAPHIC KERNEL IN SEMANTIC ECONOMY: Formal Specification for Reconstructive Compression Across Meaning-Systems, Archives, Protocols, and Web Entities (EA-HK-01 v1.1)",
+      "publication_date": "2026-04-25",
+      "abstract_chars": 1033,
+      "zenodo_bulk_xml_entry": "19763365.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.20210117",
+        "10.5281/zenodo.19022245",
+        "10.5281/zenodo.19764095",
+        "10.5281/zenodo.19053469",
+        "10.5281/zenodo.18946111",
+        "10.5281/zenodo.18382027",
+        "10.5281/zenodo.19763365"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "20210117.xml",
+        "19022245.xml",
+        "19764095.xml",
+        "19053469.xml",
+        "18946111.xml",
+        "18382027.xml",
+        "19763365.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 27499,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7161298941",
+    "https://openalex.org/W7135415442",
+    "https://openalex.org/W7155636593",
+    "https://openalex.org/W7137322712",
+    "https://openalex.org/W7134935346",
+    "https://openalex.org/W7125874138",
+    "https://openalex.org/W7155605107"
+  ]
+}

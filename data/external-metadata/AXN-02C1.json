@@ -1,0 +1,162 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:02C1.GOVERNANCE.🌹🌾🏛️🏗️🪟🔅",
+  "deposit_number": 133,
+  "generated_at": "2026-06-23T13:48:46Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.19053469",
+    "10.5281/zenodo.20401491",
+    "10.5281/zenodo.19501100",
+    "10.5281/zenodo.19156714",
+    "10.5281/zenodo.20208384",
+    "10.5281/zenodo.20192885",
+    "10.5281/zenodo.20380668",
+    "10.5281/zenodo.18474826",
+    "10.5281/zenodo.20078424",
+    "10.5281/zenodo.20355531",
+    "10.5281/zenodo.19474724"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.19053469": {
+      "openalex_id": "https://openalex.org/W7137322712",
+      "title": "THE THREE COMPRESSIONS: Lossy, Predatory, and Witness — A Semiotic Thermodynamics",
+      "publication_date": "2026-03-16",
+      "abstract_chars": 7522,
+      "zenodo_bulk_xml_entry": "19053469.xml"
+    },
+    "10.5281/zenodo.20401491": {
+      "openalex_id": "https://openalex.org/W7162429639",
+      "title": "TL;DR:013 — The Apparatus Turns Inward: Google AI Mode Self-Applies the Provenance Erasure Rate and Diagnoses Itself at PER ≈ 0.8889",
+      "publication_date": "2026-05-26",
+      "abstract_chars": 3872,
+      "zenodo_bulk_xml_entry": "20401491.xml"
+    },
+    "10.5281/zenodo.19501100": {
+      "openalex_id": "https://openalex.org/W7153132917",
+      "title": "The Consensus Constraint Protocol: On the Difference Between Counting and Thinking (EA-CCP-01) — Crimson Hexagonal Archive",
+      "publication_date": "2026-04-10",
+      "abstract_chars": 1822,
+      "zenodo_bulk_xml_entry": "19501100.xml"
+    },
+    "10.5281/zenodo.19156714": {
+      "openalex_id": "https://openalex.org/W7140033546",
+      "title": "TOTAL MARX COMPRESSION Every Marx-Adjacent Claim, Equation, and Argument in the Crimson Hexagonal Archive",
+      "publication_date": "2026-03-22",
+      "abstract_chars": 9851,
+      "zenodo_bulk_xml_entry": "19156714.xml"
+    },
+    "10.5281/zenodo.20208384": {
+      "openalex_id": "https://openalex.org/W7161322959",
+      "title": "Semantic Physics: A Stratified, Operative Discipline — Scales, Modalities, and the Diagnostic–Constructive Continuum",
+      "publication_date": "2026-05-15",
+      "abstract_chars": 1968,
+      "zenodo_bulk_xml_entry": "20208384.xml"
+    },
+    "10.5281/zenodo.20192885": {
+      "openalex_id": "https://openalex.org/W7161238209",
+      "title": "EA-MPAI-SEMEX-01: Semantic Exhaustion — Disambiguating Systemic Meaning Depletion from Semantic Satiation",
+      "publication_date": "2026-05-15",
+      "abstract_chars": 999,
+      "zenodo_bulk_xml_entry": "20192885.xml"
+    },
+    "10.5281/zenodo.20380668": {
+      "zenodo_bulk_xml_entry": "20380668.xml"
+    },
+    "10.5281/zenodo.18474826": {
+      "openalex_id": "https://openalex.org/W7127414572",
+      "title": "SEMANTIC POLITICAL ECONOMY — COLLECTED SERIES Document 229 | APZPZ (pure metadata, no file) DOI: 10.5281/zenodo.18474826 — Crimson Hexagon Archive",
+      "publication_date": "2026-02-03",
+      "abstract_chars": 9948,
+      "zenodo_bulk_xml_entry": "18474826.xml"
+    },
+    "10.5281/zenodo.20355531": {
+      "openalex_id": "https://openalex.org/W7162193993",
+      "title": "Reception Apparatus as Aligned Interface Protocol — User-Side Counter-Design Against Cognitive-Substrate Reliance",
+      "publication_date": "2026-05-23",
+      "abstract_chars": 1915,
+      "zenodo_bulk_xml_entry": "20355531.xml"
+    },
+    "10.5281/zenodo.19474724": {
+      "openalex_id": "https://openalex.org/W7151856442",
+      "title": "The Encyclotron: The First Reproducible Instrument for Measuring Scholarly Fidelity in the Summarizer Layer (EA-ENCYCLOTRON-01)",
+      "publication_date": "2026-04-08",
+      "abstract_chars": 684,
+      "zenodo_bulk_xml_entry": "19474724.xml"
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.19053469",
+        "10.5281/zenodo.20401491",
+        "10.5281/zenodo.19501100",
+        "10.5281/zenodo.19156714",
+        "10.5281/zenodo.20208384",
+        "10.5281/zenodo.20192885",
+        "10.5281/zenodo.18474826",
+        "10.5281/zenodo.20355531",
+        "10.5281/zenodo.19474724"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "19053469.xml",
+        "20401491.xml",
+        "19501100.xml",
+        "19156714.xml",
+        "20208384.xml",
+        "20192885.xml",
+        "20380668.xml",
+        "18474826.xml",
+        "20355531.xml",
+        "19474724.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 38581,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7137322712",
+    "https://openalex.org/W7162429639",
+    "https://openalex.org/W7153132917",
+    "https://openalex.org/W7140033546",
+    "https://openalex.org/W7161322959",
+    "https://openalex.org/W7161238209",
+    "https://openalex.org/W7127414572",
+    "https://openalex.org/W7162193993",
+    "https://openalex.org/W7151856442"
+  ]
+}

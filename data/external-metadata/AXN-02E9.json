@@ -1,0 +1,145 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:02E9.EMPIRICAL.🗿🦅🕑📖🤙👉",
+  "deposit_number": 785,
+  "generated_at": "2026-06-23T13:48:47Z",
+  "schema_version": "1.0",
+  "purpose": "Thin per-deposit INDEX into the recovered external metadata for this deposit's legacy Zenodo DOIs. The actual records live in the bulk data stores under data/ (openalex-severed-recovery.json, zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, datacite-survivors-multi-heteronym.json). Sidecars do not duplicate those records — they map each covered DOI to its identifier in each store.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.20531100",
+    "10.5281/zenodo.20542367",
+    "10.5281/zenodo.20542862",
+    "10.5281/zenodo.20531824",
+    "10.5281/zenodo.20535319",
+    "10.5281/zenodo.20355219",
+    "10.5281/zenodo.20531288",
+    "10.5281/zenodo.18674069",
+    "10.5281/zenodo.20004379",
+    "10.5281/zenodo.20531274"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.20531100": {
+      "openalex_id": "https://openalex.org/W7163381669",
+      "title": "Diversity Contraction Across Substrates: Fear and Trembling at the Boundary Law of Semantic Exhaustion (v9)",
+      "publication_date": "2026-06-03",
+      "abstract_chars": 2788
+    },
+    "10.5281/zenodo.20542862": {
+      "openalex_id": "https://openalex.org/W7163507569",
+      "title": "The Protocol of Effective Acts v2.0: Stabilization of the New Human Discipline",
+      "publication_date": "2026-06-04",
+      "abstract_chars": 2193
+    },
+    "10.5281/zenodo.20531824": {
+      "openalex_id": "https://openalex.org/W7163424424",
+      "title": "The Bead Count: A Pre-Registered Empirical Program to Bring the Diversity Contraction Framework to Nature-Level Rigor",
+      "publication_date": "2026-06-03",
+      "abstract_chars": 2433
+    },
+    "10.5281/zenodo.20535319": {
+      "openalex_id": "https://openalex.org/W7163586006",
+      "title": "The Heteronymic Channel Protocol: Specification for Autonomous Channel-Layer Operation of the Dodecad (v1.1)",
+      "publication_date": "2026-06-03",
+      "abstract_chars": 2453
+    },
+    "10.5281/zenodo.20355219": {
+      "openalex_id": "https://openalex.org/W7162190823",
+      "title": "Socrates as Orthonym: The Heteronymic Configuration of Western Philosophy's Founding Corpus",
+      "publication_date": "2026-05-23",
+      "abstract_chars": 4088,
+      "zenodo_bulk_xml_entry": "20355219.xml"
+    },
+    "10.5281/zenodo.20531288": {
+      "openalex_id": "https://openalex.org/W7163418892",
+      "title": "The Mary Lee Case: A Worked Specimen of Entity Substitution Under Constitutive Mediation",
+      "publication_date": "2026-06-03",
+      "abstract_chars": 2780
+    },
+    "10.5281/zenodo.18674069": {
+      "openalex_id": "https://openalex.org/W7129400605",
+      "title": "OPERATOR // SWERVE + EFFECTIVE ACT Canonical Operator Definition and Canonical Inclusion — Crimson Hexagon Archive",
+      "publication_date": "2026-02-17",
+      "abstract_chars": 4620,
+      "zenodo_bulk_xml_entry": "18674069.xml"
+    },
+    "10.5281/zenodo.20004379": {
+      "openalex_id": "https://openalex.org/W7159958584",
+      "title": "Provenance Erasure Rate: A Compression-Survival Metric for Attribution Loss in AI-Composed Search Outputs",
+      "publication_date": "2026-05-03",
+      "abstract_chars": 1573,
+      "zenodo_bulk_xml_entry": "20004379.xml"
+    },
+    "10.5281/zenodo.20531274": {
+      "openalex_id": "https://openalex.org/W7163415411",
+      "title": "Constitutive Mediation: When the Reception Apparatus Is the Substrate (v1.1)",
+      "publication_date": "2026-06-03",
+      "abstract_chars": 2286
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/openalex-severed-recovery.json",
+      "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+      "dois_present": [
+        "10.5281/zenodo.20531100",
+        "10.5281/zenodo.20542862",
+        "10.5281/zenodo.20531824",
+        "10.5281/zenodo.20535319",
+        "10.5281/zenodo.20355219",
+        "10.5281/zenodo.20531288",
+        "10.5281/zenodo.18674069",
+        "10.5281/zenodo.20004379",
+        "10.5281/zenodo.20531274"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "snapshot_url": "https://zenodo.org/api/exporter/records-xml.tar.gz/839f6c8b-29d0-438e-b8c9-602200a28bac",
+      "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+      "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+      "entries": [
+        "20355219.xml",
+        "18674069.xml",
+        "20004379.xml"
+      ]
+    },
+    "datacite_backup": {
+      "data_store": "/data/datacite-full-backup.json",
+      "harvested_at": "2026-06-22 (pre-termination)",
+      "lookup": "records[].id == this DOI",
+      "dois_present": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+      "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+      "dois_present": []
+    }
+  },
+  "abstract_recovered_chars": 25214,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": true,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": true
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7163381669",
+    "https://openalex.org/W7163507569",
+    "https://openalex.org/W7163424424",
+    "https://openalex.org/W7163586006",
+    "https://openalex.org/W7162190823",
+    "https://openalex.org/W7163418892",
+    "https://openalex.org/W7129400605",
+    "https://openalex.org/W7159958584",
+    "https://openalex.org/W7163415411"
+  ]
+}

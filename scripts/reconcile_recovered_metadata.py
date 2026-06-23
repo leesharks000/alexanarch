@@ -282,6 +282,51 @@ def build_sidecar(deposit, sources):
 
     severance = classify_severance(dois, sources)
 
+    # ARCHITECTURE: sidecars are thin INDEX files pointing into bulk data stores.
+    # The actual records live in (already-committed):
+    #   - data/openalex-severed-recovery.json  (OpenAlex DATA STORE)
+    #   - data/zenodo-xml-pretermination-2026-06-07.tar.gz  (Zenodo XML DATA STORE)
+    #   - data/datacite-full-backup.json  (pre-termination DataCite snapshot)
+    #   - data/datacite-survivors-multi-heteronym.json  (current DataCite survivors)
+    #
+    # Sidecars do NOT duplicate those records. They tell consumers:
+    #   "deposit #N covers these DOIs; for each DOI's OpenAlex record,
+    #    look up its openalex_id in data/openalex-severed-recovery.json"
+    #
+    # This keeps each sidecar ~2-5 KB instead of 100+ KB, and the total
+    # data/external-metadata/ directory ~2-5 MB instead of 100+ MB.
+
+    # Build per-DOI dereferenceable map
+    per_doi = {}
+    for doi in dois:
+        if not doi or not doi.startswith("10.5281/zenodo."):
+            continue
+        entry = {}
+        if doi in sources["openalex"]:
+            rec = sources["openalex"][doi]
+            entry["openalex_id"] = rec.get("openalex_id")
+            # Inline only the most-useful small fields for quick rendering
+            # without forcing a dereference to the bulk file:
+            t = rec.get("title")
+            if t:
+                entry["title"] = t
+            pd = rec.get("publication_date")
+            if pd:
+                entry["publication_date"] = pd
+            # Abstract length without inlining the abstract itself
+            ab = rec.get("abstract")
+            if ab:
+                entry["abstract_chars"] = len(ab)
+        rid = doi.split("zenodo.")[1]
+        if rid in sources["zenodo_xml_ids"]:
+            entry["zenodo_bulk_xml_entry"] = f"{rid}.xml"
+        if doi in sources["datacite_backup"]:
+            entry["datacite_backup_present"] = True
+        if doi in sources["datacite_survivor"]:
+            entry["datacite_survivor_present"] = True
+        if entry:
+            per_doi[doi] = entry
+
     sidecar = {
         "@context": "https://schema.org",
         "@type": "Dataset",
@@ -290,12 +335,46 @@ def build_sidecar(deposit, sources):
         "generated_at": now_iso(),
         "schema_version": "1.0",
         "purpose": (
-            "Per-deposit recovered external metadata after the 2026-06-19 "
-            "Zenodo account termination. Sources joined by Zenodo DOI."
+            "Thin per-deposit INDEX into the recovered external metadata "
+            "for this deposit's legacy Zenodo DOIs. The actual records live "
+            "in the bulk data stores under data/ (openalex-severed-recovery.json, "
+            "zenodo-xml-pretermination-2026-06-07.tar.gz, datacite-full-backup.json, "
+            "datacite-survivors-multi-heteronym.json). Sidecars do not duplicate "
+            "those records — they map each covered DOI to its identifier in each store."
         ),
         "zenodo_dois_covered": [d for d in dois if d and d.startswith("10.5281/zenodo.")],
         "severance_status": severance,
-        "sources": {},
+        "per_doi": per_doi,
+        "sources": {
+            "openalex": {
+                "data_store": "/data/openalex-severed-recovery.json",
+                "lookup": "records[].doi == this DOI; openalex_id is the W-prefixed OpenAlex Work ID",
+                "dois_present": [doi for doi in dois if doi in sources["openalex"]],
+            },
+            "zenodo_bulk_xml": {
+                "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+                "snapshot_date": "2026-06-07",
+                "snapshot_url": (
+                    "https://zenodo.org/api/exporter/records-xml.tar.gz/"
+                    "839f6c8b-29d0-438e-b8c9-602200a28bac"
+                ),
+                "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
+                "lookup": "extract <record_id>.xml from the tarball where record_id is the digits after 'zenodo.'",
+                "entries": xml_entries,
+            },
+            "datacite_backup": {
+                "data_store": "/data/datacite-full-backup.json",
+                "harvested_at": "2026-06-22 (pre-termination)",
+                "lookup": "records[].id == this DOI",
+                "dois_present": [doi for doi in dois if doi in sources["datacite_backup"]],
+            },
+            "datacite_survivor_sweep": {
+                "data_store": "/data/datacite-survivors-multi-heteronym.json",
+                "harvested_at": "2026-06-23 (post-termination, multi-heteronym query)",
+                "lookup": "search records[].attributes.doi == this DOI across orcid_records, name_records, sigil_records, vox_records, feist_records",
+                "dois_present": [doi for doi in dois if doi in sources["datacite_survivor"]],
+            },
+        },
         "abstract_recovered_chars": abstract_chars,
         "recovered_fields_summary": {
             "has_title": has_title,
@@ -308,56 +387,8 @@ def build_sidecar(deposit, sources):
             "has_topics": has_topics,
             "has_full_datacite_xml": len(xml_entries) > 0,
         },
+        "openalex_ids": openalex_ids,
     }
-
-    if oa_recs:
-        sidecar["sources"]["openalex"] = {
-            "harvested_at": "2026-06-23T11:40Z",
-            "endpoint": "https://api.openalex.org/works/doi:{doi}",
-            "abstract_inverted_index_decoded": True,
-            "records": oa_recs,
-        }
-
-    if xml_entries:
-        sidecar["sources"]["zenodo_bulk_xml"] = {
-            "snapshot_date": "2026-06-07",
-            "snapshot_url": (
-                "https://zenodo.org/api/exporter/records-xml.tar.gz/"
-                "839f6c8b-29d0-438e-b8c9-602200a28bac"
-            ),
-            "tarball_path": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
-            "entries": xml_entries,
-            "schema": "oai_datacite kernel-4.5 (CERN.ZENODO datacenter)",
-        }
-
-    if dc_backup_recs:
-        sidecar["sources"]["datacite_backup"] = {
-            "harvested_at": "2026-06-22",
-            "source_path": "/data/datacite-full-backup.json",
-            "note": "Pre-termination DataCite REST API harvest under Lee Sharks ORCID + heteronyms.",
-            "records": dc_backup_recs,
-        }
-
-    if dc_surv_recs:
-        sidecar["sources"]["datacite_survivor_sweep"] = {
-            "harvested_at": "2026-06-23",
-            "queries": [
-                "ORCID 0009-0000-1599-0703",
-                "creators.name:'Sharks,Lee'", "creators.name:'Sigil,Johannes'",
-                "creators.name:'Vox,Ayanna'", "creators.name:'Feist,Jack'",
-                "creators.name:'Morrow,Talos'", "creators.name:'Glas,Nobel'",
-                "creators.name:'Trace,Orin'", "creators.name:'Dancings,Damascus'",
-                "creators.name:'Cranes,Rebekah'", "creators.name:'Kuro,Sen'",
-                "creators.name:'Wells,Sparrow'", "creators.name:'Spellings,Ichabod'",
-                "creators.name:'Fraction,Rex'",
-                "publisher:Zenodo AND 'Crimson Hexagonal'",
-                "publisher:Zenodo AND 'Crimson Hexagon'",
-                "publisher:Zenodo AND 'Lee Sharks'",
-            ],
-            "records": dc_surv_recs,
-        }
-
-    sidecar["openalex_ids"] = openalex_ids
 
     return sidecar
 
