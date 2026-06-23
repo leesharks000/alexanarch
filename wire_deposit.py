@@ -135,24 +135,43 @@ def regenerate_static_page(d, eidx):
                 best_path = path
 
     if best_path and best_size > 200:
-        with open(best_path) as f:
-            raw = f.read()
-        lines = raw.split('\n')
-        ft_lines = []
-        for line in lines:
-            line = esc(line)
-            if line.startswith('# '): ft_lines.append(f'<h1>{line[2:]}</h1>')
-            elif line.startswith('## '): ft_lines.append(f'<h2>{line[3:]}</h2>')
-            elif line.startswith('### '): ft_lines.append(f'<h3>{line[4:]}</h3>')
-            elif line.startswith('---'): ft_lines.append('<hr>')
-            elif line.startswith('| '): ft_lines.append(f'<div style="font-family:var(--mono);font-size:.8em">{line}</div>')
-            elif line.startswith('&gt;'): ft_lines.append(f'<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0">{line[4:]}</blockquote>')
-            elif line.strip():
-                line = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', line)
-                line = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', line)
-                ft_lines.append(f'<p>{line}</p>')
-            else: ft_lines.append('')
-        fulltext = '\n'.join(ft_lines)
+        # JSON source: render a dataset callout + download link, NOT inline-as-prose
+        # (treating JSON as markdown turns every line into a <p>, producing
+        #  unreadable multi-MB pages)
+        if best_path.endswith('.json'):
+            json_size_kb = best_size // 1024
+            json_size_mb = best_size / (1024 * 1024)
+            size_label = f"{json_size_mb:.1f} MB" if best_size > 1024 * 1024 else f"{json_size_kb} KB"
+            desc = esc(d.get('description', '').strip()) or 'Machine-readable dataset.'
+            fulltext = (
+                f'<p>{desc}</p>'
+                f'<div style="background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:14px 18px;margin:16px 0">'
+                f'<div style="font-size:.78em;color:#777;margin-bottom:4px">DATASET · machine-readable</div>'
+                f'<div style="font-family:var(--mono);font-size:.88em;margin-bottom:8px">{esc(best_path)}</div>'
+                f'<div style="font-size:.85em;color:#555;margin-bottom:10px">{size_label} · JSON · {esc(d.get("license", "CC-BY-4.0"))}</div>'
+                f'<a href="/{esc(best_path)}" style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none">↓ Download JSON</a>'
+                f'</div>'
+                f'<p style="font-size:.85em;color:#777">The full dataset is the canonical artifact for this deposit. The Markdown download button above provides metadata only.</p>'
+            )
+        else:
+            with open(best_path) as f:
+                raw = f.read()
+            lines = raw.split('\n')
+            ft_lines = []
+            for line in lines:
+                line = esc(line)
+                if line.startswith('# '): ft_lines.append(f'<h1>{line[2:]}</h1>')
+                elif line.startswith('## '): ft_lines.append(f'<h2>{line[3:]}</h2>')
+                elif line.startswith('### '): ft_lines.append(f'<h3>{line[4:]}</h3>')
+                elif line.startswith('---'): ft_lines.append('<hr>')
+                elif line.startswith('| '): ft_lines.append(f'<div style="font-family:var(--mono);font-size:.8em">{line}</div>')
+                elif line.startswith('&gt;'): ft_lines.append(f'<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0">{line[4:]}</blockquote>')
+                elif line.strip():
+                    line = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', line)
+                    line = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', line)
+                    ft_lines.append(f'<p>{line}</p>')
+                else: ft_lines.append('')
+            fulltext = '\n'.join(ft_lines)
     
     if not fulltext:
         fulltext = f'<p>{esc(d.get("description", ""))}</p>'
