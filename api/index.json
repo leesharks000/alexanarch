@@ -234,6 +234,13 @@
         "/data/registry.json"
       ],
       "features": "paginated citation edges grouped by source deposit; via-type filter chips with counts; search; AXN-resolved target links"
+    },
+    "datasets": {
+      "canonical_path": "/datasets/index.html",
+      "role": "primary",
+      "derived_from": "Static catalog of /data/*.json + /api/*.json files; small live overlay reading /api/index.json for current protocol versions and deposit count",
+      "shows": "Human-readable catalog of every machine-readable dataset in the corpus: primary registries (with consuming-surface links), derived surfaces, protocols/schemas, supporting datasets, per-deposit text bodies, and scripts. Single navigation entry point for the data layer.",
+      "companion_to": "/api/index.json"
     }
   },
   "scripts": {
