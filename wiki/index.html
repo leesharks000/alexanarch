@@ -111,7 +111,9 @@ Promise.all([
     Object.keys(recordLinks).forEach(function(name){
       if(name.length<4) return;
       var escaped=name.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-      var regex=new RegExp('(?<!<[^>]*)\\b'+escaped+'\\b','g');
+      // Case-insensitive (mirrors entity-pass below); fixed-length lookbehind/
+      // lookahead protect against matching INSIDE an existing <a class="entity-link">
+      var regex=new RegExp('(?<![>"\/])\\b'+escaped+'\\b(?![<"\/])','gi');
       placeholder_text=placeholder_text.replace(regex,function(match){
         return '<a class="entity-link" href="'+recordLinks[name]+'">'+match+'</a>';
       });

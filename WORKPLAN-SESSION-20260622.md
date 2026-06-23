@@ -305,14 +305,19 @@ Live checklist. Items marked ✓ as they ship. Open items prioritized for this s
 - [ ] Browseable list view when no `?doi=` param
 - [ ] Register in `/api/index.json`
 
-### 8.7 Wiki autoLink case-insensitivity ▢
+### 8.7 Wiki autoLink case-insensitivity ✓ (commit pending this push)
 
-**Goal:** Wiki article links should match casing variants. Currently case-sensitive — "lee sharks" lowercase doesn't link.
+**Goal:** Wiki article links should match casing variants. Currently case-sensitive — "lee sharks" lowercase or "LEE SHARKS" uppercase doesn't link.
 
 **Steps:**
 
-- [ ] Extend `autoLink()` in `/wiki/index.html` to use case-insensitive regex with case-preserving replacement
-- [ ] Validate on representative articles that the change doesn't introduce false matches (e.g. "Address" in prose vs the technical term)
+- [x] Confirm bug with audit: **92 of 879** wiki_articles contain at least one case-variant of a canonical term across 9 sampled canonical terms (Lee Sharks, Semantic Economy, Crimson Hexagon, etc.)
+- [x] Common pattern: ALL-CAPS titles quoted in body prose (e.g., "WHO IS LEE SHARKS, TO FORGIVE EZRA POUND?")
+- [x] Patch `/wiki/index.html` autoLink: title-pass regex aligned to entity-pass — `gi` flag, fixed-length lookbehind `(?<![>"\/])` and lookahead `(?![<"\/])` (mirrors entity regex)
+- [x] Python simulation against 50 sample articles confirms: 3 of 4 ALL-CAPS variants now link correctly; **0 nested `<a>` tag regressions**
+- [x] One trade-off documented: quoted prose like `"Crimson Hexagon"` doesn't link because the leading `"` triggers the protective lookbehind (the same protection that prevents matching inside HTML attributes). Unquoted ALL-CAPS / lowercase / mixed-case prose still links. Acceptable for now.
+
+**Trade-off accepted:** the protective lookbehind that prevents `<a class="entity-link">` from matching inside attribute values also excludes terms preceded by a `"` in prose. Refining this to context-aware tokenization is deferred (would be a substantive parser rewrite, not a one-line fix).
 
 ### 8.8 Reading-pass continuation ▢
 
