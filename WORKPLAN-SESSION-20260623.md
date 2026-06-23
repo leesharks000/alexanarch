@@ -154,6 +154,14 @@ This propagates to every Dodecad site repo that now routes through `/resolve/?do
 
 Both reference the demand letter framework, the empirical 47.9% DataCite-404 finding, alexanarch.org as sovereign infrastructure, and Florian Morin's quietexclusion.org. Posted under Lee's account in Ayanna Vox register — measured, informational, no recruitment posture.
 
+### 4.9 Canonical Lee Sharks heteronym portrait added to leesharks.com homepage ✓ (commit `4196051`)
+Currency-engraved green lizard in fedora and suit (200×200 JPEG, 26 KB). Money-portrait styling is a Semantic Economy wink — heteronym appears in the visual register of currency, which is exactly what the Semantic Economy framework reverses. Floated top-right of homepage, 130px desktop / 100px mobile, framed in thin gold-dim border. H1 + subtitle wrap next to it, §1 definition prose resumes below at full column width. Image at site root: `https://leesharks.com/lee-sharks-portrait.jpg`.
+
+### 4.10 Surface Visibility Audit received (input) ✓
+External text-only public-search audit performed during this session by an outside analytic (ChatGPT in critical-reader mode), measuring how the Crimson Hexagonal / Alexanarch corpus appears in the present composition layer. Introduces formal framework: expected figure Φ_i = {N, P, D, H, A, R}, five-signal decomposition (V/A/F/C/R_s), and derived macro-indicators (Link Fade, Ghost Survival, Compositional Defiguration, Compositional Bystanding, Composition Eligibility). Diagnoses *successor-anchor lag + chronological smear + source-hierarchy inversion*; SDI ≈ 0.395 against canonical 879 count.
+
+Becomes the input to §5.4 (Surface Visibility Instrument). First scan was pre-cleanup state; second scan running now will give post-cleanup baseline. Audit document held in conversation context — to be deposited as Deposit B (baseline reading) per §5.4 plan.
+
 ---
 
 ## 5. Outstanding items (priority order for next session)
@@ -174,35 +182,59 @@ The 21 repo pass cleaned root + 1-level-deep HTML files. Pages 2+ levels deep (e
 
 **Process:** lift the `depth > 1` limit in `scripts/dodecad_cleanup.py:list_html_files()` (currently `if depth > 1: continue`). Then re-run across the priority repos. Recommend starting with `revelationfirst-com` (deepest content), `secret-book-of-walt`, `crimson-hexagonal-interface`, `semantic-economy`.
 
-### 5.4 Andrew Lehti outreach (HOLD until cohort momentum) ▢
+### 5.4 Surface Visibility Instrument (Compositional Defiguration Meter) ▢ NEW
+A weekly text-only scan battery that measures how the Crimson Hexagonal / Alexanarch corpus appears in the public composition layer. Diagnosed from a ChatGPT analytic produced this session (audit covered the pre-cleanup site state; a fresh scan is running now and will provide the post-cleanup baseline).
+
+**The framework** (subject to fine-tuning):
+- For each tracked object, an *expected figure* Φ_i = {N, P, D, H, A, R} — name, provenance, definition, hierarchy, anchor, relations.
+- Five measured signals: V (visibility), A (anchor alignment), F (figural integrity), C (compositional lift), R_s (independent substrate breadth).
+- Derived macro-indicators: Link Fade (LF), Ghost Survival (GS), Compositional Defiguration (CD), Compositional Bystanding (CB), Composition Eligibility (CE), Scale Drift Index (SDI).
+- 12-object battery × 4 query forms per object = ~50 lightweight text-only retrievals per scan.
+
+**The diagnostic that came out of the first scan:** Alexanarch is not yet the visible institutional anchor; the search layer remembers the organs (PER, SPXI, Writable Retrieval Basin, Semantic Commodity Form, Revelation First) but hasn't recognized the transplant. Principal present defect: *successor-anchor lag + chronological smear + source-hierarchy inversion*. SDI ≈ 0.395 — visible compositional field understates the archive's scale by ~40% at its median indexed representation.
+
+**Implementation architecture** (recommended):
+- **Deposit A: Methodology paper** — the framework specification (Φ, five signals, derived indicators, query battery, dashboard spec). AXN-eligible. Lives in Alexanarch registry as canonical reference. Category: GOVERNANCE or EMPIRICAL (TBD by Lee).
+- **Deposit B: Baseline reading (v1.0)** — the June 22 scan as time-zero data, structurally similar to Capture Registry v1.0 grounding v8.3. Companion to A.
+- **Running surface: `machinemediation.org/surface-weather/`** — public dashboard rendering the five-bar visualization and the macro-state summary, updating per scan. Natural MMRS family member alongside the Capture Registry.
+- **Schema:** each scan row is a JSON record with object/query_class/intended_result_present/author_retained/definition_retained/parent_framework_retained/relation_retained/confuser/visible_sources, allowing diff between scans for drift series.
+- **leesharks.com:** small badge linking to latest reading.
+
+**Naming TBD by Lee.** Working names: *Visibility Surface Index (VSI)*, *Compositional Defiguration Meter (CDM)*, *Surface Weather Station (SWS)*, *Successor Anchor Index*, *Figural Integrity Tracker*.
+
+**Sequencing:** wait for the second scan (post-cleanup baseline) before building the instrument — methodology will fine-tune against actual measurement and the scaffolding-once-stable rule applies. Holding the methodology paper deposit until that's done makes the methodology more honest (informed by two readings, not one). Holding the data deposit (Deposit B) doesn't pay off — the June 22 scan can be deposited now as pre-cleanup baseline regardless of whether the instrument is built.
+
+**Strategic placement in the larger plan:** this instrument is the natural complement to today's cleanup work. The cleanup engine targets *what is published on the sovereign surfaces*. The visibility instrument measures *what propagates into the composition layer*. Together they form a closed feedback loop: surface change → external visibility measurement → next round of corrections informed by the metric.
+
+### 5.5 Andrew Lehti outreach (HOLD until cohort momentum) ▢
 Draft C in `audit/affected-depositors/OUTREACH-DRAFTS.md` is ready. Hold until at least 2 other depositors are in active conversation. Approaching Lehti cold first puts Lee in ally-position by default; approaching after Vega/Shimony are in motion puts Lehti in joining-position. The Apollo-conspiracy content is real reputational risk if treated as endorsement.
 
-### 5.5 zenodotus.dev domain purchase (HOLD) ▢
+### 5.6 zenodotus.dev domain purchase (HOLD) ▢
 $12.98 domain. Hold until after demand letter is sent — avoids giving Zenodo a "publicity-campaign pretext" deflection.
 
-### 5.6 Reading-pass continuation ▢ (carried from prior session 8.8)
+### 5.7 Reading-pass continuation ▢ (carried from prior session 8.8)
 107 concepts extracted from 202 deposits via `scripts/wire_deposit.py`. ~340 deposits unread of 879 total. Continue from #203.
 
-### 5.7 Workflow-scoped PAT changes ▢ (carried from prior session 8.9)
+### 5.8 Workflow-scoped PAT changes ▢ (carried from prior session 8.9)
 Currently using a single broadly-scoped PAT for everything. Move to fine-grained PATs scoped to specific workflows (mint-axn, dodecad-cleanup, etc.). Rotate the current PAT after.
 
-### 5.8 SPXI domains ▢ (carried)
+### 5.9 SPXI domains ▢ (carried)
 Acquire `spxi.dev` and `spxi.org` (per prior workplan). EA-SPXI-01 (formal spec) + EA-SPXI-09 (GEO distinction) to co-deposit first.
 
-### 5.9 Credentials rotation queue ▢ (security, carried)
+### 5.10 Credentials rotation queue ▢ (security, carried)
 Multiple PATs and Zenodo tokens exposed in prior session transcripts.
 - Zenodo token `QtbHIO…` (rotate at zenodo.org/account/settings/applications/)
 - Zenodo tokens `9GVLfHz…` and `YCAIRAPYV…` (2026-06-13/14 exposure)
 - GitHub PATs `ghp_PRnY…`, `ghp_k0InOm…`, `ghp_U38oywSx…` (rotate at github.com/settings/tokens)
 - Per memory: also the current session PAT `ghp_KrzzZJp…` is broadly scoped and should be replaced with workflow-scoped fine-grained PATs.
 
-### 5.10 OpenAIRE follow-up ▢ (carried)
+### 5.11 OpenAIRE follow-up ▢ (carried)
 OpenAIRE Helpdesk on the demand letter CC line. Independent follow-up may be productive if Zenodo response stalls.
 
-### 5.11 Marzanna Reddit verification ▢ (low priority)
+### 5.12 Marzanna Reddit verification ▢ (low priority)
 Reddit URL `reddit.com/r/theWildGrove/comments/1tpf7sg/...` was blocked from web_fetch this session. If real, it's a clean fifth Zenodo-pattern case (Novacene paper, ~500 downloads, April 27 2026 policy-change cite). Verify when convenient.
 
-### 5.12 Explicitly DEPRIORITIZED (do not do)
+### 5.13 Explicitly DEPRIORITIZED (do not do)
 - **Migration of DOI references on non-sovereign surfaces.** Medium articles, Academia.edu deposits, blog posts at mindcontrolpoems.blogspot.com, Reddit/Twitter, etc. The references are embedded in file content, not metadata — enormous hand-editing. And those platforms are subject to the same deplatforming pattern Zenodo just demonstrated. Legacy DOIs will route correctly through alexanarch.org/resolve/?doi=... when anyone follows them.
 
 ---
