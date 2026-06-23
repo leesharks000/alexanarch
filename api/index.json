@@ -145,6 +145,18 @@
       "name": "DOI Resolution Index",
       "canonical_path": "/data/doi-resolution-index.json",
       "purpose": "Maps legacy Zenodo DOIs (post-termination) to current AXN identifiers on alexanarch.org."
+    },
+    "lexical_overlay": {
+      "canonical_path": "/data/lexical-overlay.json",
+      "role": "derived_enrichment",
+      "derived_from": [
+        "/data/lexical-minting-registry.json",
+        "/data/entity-index.json",
+        "/data/semantic-addresses.json"
+      ],
+      "generated_by": "scripts/build_lexical_overlay.py",
+      "current_count": 7045,
+      "description": "Per-LMR-term engagement overlay. 7,045 of 12,032 LMR terms are also in entity-index (the engaged set); 255 of those are also semantic-address targets. The overlay surfaces both bridges so /lexical/ can show engagement state and query-test status per term."
     }
   },
   "derived_surfaces": {
@@ -277,6 +289,10 @@
     "concept_backlink": {
       "canonical_path": "scripts/concept_backlink.py",
       "purpose": "Bidirectional concept-deposit indexing. Scans data/texts/AXN-*-text.md for each concept in entity-index; writes referenced_in[] (with reference_count) onto each concept and references_concepts[] onto each registry deposit. Idempotent. Phase C of data-structure interlinking workplan."
+    },
+    "build_lexical_overlay": {
+      "canonical_path": "scripts/build_lexical_overlay.py",
+      "purpose": "Build data/lexical-overlay.json — a derived enrichment file mapping each LMR term to its entity-index engagement state (engagement_type, reference_count, entity_triples_count, classified, type, defined_in) and any semantic-address bridge (address_count + observation-class distribution). Consumed by /lexical/ in parallel with LMR."
     }
   },
   "instance_familiarization_log": {

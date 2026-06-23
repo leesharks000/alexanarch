@@ -27,7 +27,23 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
 .term-card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:14px;margin-bottom:6px}
 .term-card:hover{border-color:var(--teal)}
 .term-name{font-weight:600;color:var(--accent);font-size:1em}
+.term-name-link{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)}
+.term-name-link:hover{color:var(--accent2);border-bottom-color:var(--accent2)}
 .term-type{font-size:0.7em;color:var(--teal);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.06em;margin-left:8px}
+.term-eng{margin-top:6px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-family:var(--mono);font-size:0.72em}
+.eng-badge{padding:2px 8px;border-radius:10px;font-weight:500}
+.eng-raw{background:#fafafa;color:var(--dim);border:1px solid var(--border)}
+.eng-uncls{background:#f4f4f4;color:#555}
+.eng-active{background:#e8f4ef;color:var(--teal)}
+.eng-meta{color:var(--dim);font-size:0.95em}
+.addr-badge{background:#f3eef9;color:#7344a6;padding:2px 8px;border-radius:10px;font-weight:500;font-size:0.95em}
+.addr-obs{color:var(--teal);font-weight:500}
+.addr-subj{color:#9966cc}
+.addr-un{color:#d4a537}
+.addr-vna{color:var(--accent2)}
+.filter-btns{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px;font-family:var(--sans);font-size:0.78em}
+.fbtn{background:var(--surface);border:1px solid var(--border);padding:4px 12px;border-radius:12px;cursor:pointer;color:var(--accent)}
+.fbtn:hover,.fbtn.active{background:var(--teal);color:#fff;border-color:var(--teal)}
 .term-def{color:#444;font-size:0.88em;margin-top:4px;line-height:1.6}
 .term-meta{font-size:0.75em;color:var(--dim);margin-top:4px;font-family:var(--mono)}
 .pager{display:flex;justify-content:space-between;align-items:center;margin:18px 0;font-size:0.85em}
@@ -57,6 +73,7 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
 
 <div class="stats" id="stats"></div>
 <input class="search" id="search" placeholder="Search terms or definitions...">
+<div class="filter-btns" id="engagement-filter"></div>
 <div class="alpha" id="alpha"></div>
 <div id="terms">Loading…</div>
 <div class="pager" id="pager"></div>
@@ -68,7 +85,19 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
 </div>
 
 <script>
-fetch('/data/lexical-minting-registry.json').then(function(r){return r.json()}).then(function(lmr){
+// Wire-in: fetch LMR + lexical-overlay in parallel. The overlay is a small
+// derived file (~1.3 MB) that maps each engaged term to its entity-index
+// engagement_type, reference_count, entity_triples_count, and (where present)
+// semantic-address bridge: address_count + address_classes distribution.
+// LMR-only terms (4,987 of 12,032) appear without an overlay row.
+Promise.all([
+  fetch('/data/lexical-minting-registry.json').then(function(r){return r.json()}),
+  fetch('/data/lexical-overlay.json').then(function(r){return r.json()}).catch(function(){return {overlay:{}, stats:{}}})
+]).then(function(results){
+  var lmr = results[0];
+  var ov = results[1] || {overlay:{}, stats:{}};
+  var overlay = ov.overlay || {};
+  var ovStats = ov.stats || {};
   var allTerms = lmr.terms || [];
   // Index terms by first letter
   var byLetter = {};
@@ -85,10 +114,17 @@ fetch('/data/lexical-minting-registry.json').then(function(r){return r.json()}).
   allTerms.forEach(function(t){ typeCount[t.type||'unknown'] = (typeCount[t.type||'unknown']||0)+1; });
   var sources = new Set();
   allTerms.forEach(function(t){ if(t.defined_in_deposit) sources.add(t.defined_in_deposit); });
-  document.getElementById('stats').innerHTML =
-    '<div class="stat"><div class="stat-num">'+allTerms.length.toLocaleString()+'</div><div class="stat-label">Terms</div></div>'+
+  var statsHtml = '<div class="stat"><div class="stat-num">'+allTerms.length.toLocaleString()+'</div><div class="stat-label">Terms</div></div>'+
     '<div class="stat"><div class="stat-num">'+sources.size+'</div><div class="stat-label">Defining deposits</div></div>'+
     '<div class="stat"><div class="stat-num">'+Object.keys(typeCount).length+'</div><div class="stat-label">Types</div></div>';
+  // Wire-in stats from overlay
+  if(ovStats.engaged){
+    statsHtml += '<div class="stat"><div class="stat-num">'+ovStats.engaged.toLocaleString()+'</div><div class="stat-label">Engaged in concept layer</div></div>';
+  }
+  if(ovStats.addressed){
+    statsHtml += '<div class="stat"><div class="stat-num">'+ovStats.addressed.toLocaleString()+'</div><div class="stat-label">Tested as queries</div></div>';
+  }
+  document.getElementById('stats').innerHTML = statsHtml;
   
   // Alpha jump bar
   var alphaHtml = '<a href="#" data-letter="all" class="active">All</a>';
@@ -97,13 +133,31 @@ fetch('/data/lexical-minting-registry.json').then(function(r){return r.json()}).
   });
   document.getElementById('alpha').innerHTML = alphaHtml;
   
+  // Engagement filter chips
+  var engChipHtml = '<div class="fbtn active" data-eng="all">All</div>'+
+                    '<div class="fbtn" data-eng="engaged">Engaged ('+(ovStats.engaged||0).toLocaleString()+')</div>'+
+                    '<div class="fbtn" data-eng="raw">LMR-only / raw ('+(ovStats.raw_only||0).toLocaleString()+')</div>'+
+                    '<div class="fbtn" data-eng="addressed">Tested as queries ('+(ovStats.addressed||0).toLocaleString()+')</div>';
+  var fbox = document.getElementById('engagement-filter');
+  if(fbox) fbox.innerHTML = engChipHtml;
+  
   var activeLetter = 'all';
+  var activeEng = 'all';
   var page = 0;
   var pageSize = 100;
   var query = '';
   
   function filtered(){
     var pool = (activeLetter==='all') ? allTerms : (byLetter[activeLetter]||[]);
+    if(activeEng !== 'all'){
+      pool = pool.filter(function(t){
+        var ovRow = overlay[t.term];
+        if(activeEng === 'engaged') return !!ovRow;
+        if(activeEng === 'raw') return !ovRow;
+        if(activeEng === 'addressed') return ovRow && ovRow.address_count;
+        return true;
+      });
+    }
     if(query){
       var q = query.toLowerCase();
       pool = pool.filter(function(t){
@@ -114,6 +168,33 @@ fetch('/data/lexical-minting-registry.json').then(function(r){return r.json()}).
     return pool;
   }
   
+  function renderEngagementBadge(ovRow){
+    if(!ovRow) {
+      return '<span class="eng-badge eng-raw" title="LMR-only — not curated into the concept layer">raw</span>';
+    }
+    var bits = [];
+    var et = ovRow.engagement_type || 'unclassified';
+    var etClass = (et === 'unclassified') ? 'eng-uncls' : 'eng-active';
+    bits.push('<span class="eng-badge '+etClass+'" title="entity-index engagement_type">'+et+'</span>');
+    if(ovRow.reference_count){
+      bits.push('<span class="eng-meta">'+ovRow.reference_count+' refs</span>');
+    }
+    if(ovRow.entity_triples_count){
+      bits.push('<span class="eng-meta">'+ovRow.entity_triples_count+' triples</span>');
+    }
+    if(ovRow.address_count){
+      var ac = ovRow.address_classes || {};
+      var classBits = [];
+      if(ac.observed_address) classBits.push('<span class="addr-obs">'+ac.observed_address+' obs</span>');
+      if(ac.subjunctive) classBits.push('<span class="addr-subj">'+ac.subjunctive+' subj</span>');
+      if(ac.unrated) classBits.push('<span class="addr-un">'+ac.unrated+' unr</span>');
+      if(ac.verified_non_address) classBits.push('<span class="addr-vna">'+ac.verified_non_address+' vna</span>');
+      bits.push('<span class="addr-badge" title="Tested as canonical query — observation classes">'+
+                ovRow.address_count+' addr ['+classBits.join(' ')+']</span>');
+    }
+    return bits.join(' ');
+  }
+  
   function render(){
     var pool = filtered();
     var slice = pool.slice(page*pageSize, (page+1)*pageSize);
@@ -121,9 +202,15 @@ fetch('/data/lexical-minting-registry.json').then(function(r){return r.json()}).
       var dn = t.defined_in_deposit;
       var dnLink = dn ? '<a href="/records/?id='+dn+'">#'+dn+'</a>' : '';
       var title = t.defined_in_title ? ' · '+t.defined_in_title.substring(0, 60) : '';
+      var ovRow = overlay[t.term];
+      var engBadge = renderEngagementBadge(ovRow);
+      // Wire-in: if engaged, the term name links to /graph/?search= so the
+      // user can pivot from lexical view to concept-relation view
+      var termHtml = ovRow ? '<a href="/graph/?search='+encodeURIComponent(t.term)+'" class="term-name-link">'+t.term+'</a>' : t.term;
       return '<div class="term-card">'+
-        '<div><span class="term-name">'+t.term+'</span><span class="term-type">'+(t.type||'')+'</span></div>'+
+        '<div><span class="term-name">'+termHtml+'</span><span class="term-type">'+(t.type||'')+'</span></div>'+
         (t.definition?'<div class="term-def">'+t.definition+'</div>':'')+
+        '<div class="term-eng">'+engBadge+'</div>'+
         (dn?'<div class="term-meta">defined in '+dnLink+title+'</div>':'')+
         '</div>';
     }).join('') || '<p style="color:var(--dim)">No matches.</p>';
@@ -147,6 +234,18 @@ fetch('/data/lexical-minting-registry.json').then(function(r){return r.json()}).
     page = 0;
     render();
   });
+  
+  if(fbox){
+    fbox.addEventListener('click', function(ev){
+      var b = ev.target;
+      if(!b.dataset.eng) return;
+      activeEng = b.dataset.eng;
+      fbox.querySelectorAll('.fbtn').forEach(function(x){x.classList.remove('active')});
+      b.classList.add('active');
+      page = 0;
+      render();
+    });
+  }
   
   document.getElementById('search').addEventListener('input', function(ev){
     query = ev.target.value;

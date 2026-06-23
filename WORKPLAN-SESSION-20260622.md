@@ -273,15 +273,27 @@ Live checklist. Items marked ✓ as they ship. Open items prioritized for this s
 - [ ] On each entity card, when `addressedAs[]` is non-empty, append a row: "Tested as query: <canonical_query> [class] (N observations)"
 - [ ] Link each query through to `/addresses/?q=<canonical_query>`
 
-### 8.5 Lexical → engagement bridge in /lexical/ ▢
+### 8.5 Lexical → engagement bridge in /lexical/ ✓ (commit pending this push)
 
 **Goal:** Surface entity-index engagement state on LMR term cards. Currently `/lexical/` shows raw LMR only.
 
 **Steps:**
 
-- [ ] Extend `/lexical/index.html` to fetch entity-index.json in parallel
-- [ ] For each LMR term that exact-matches an entity-index key, overlay: engagement_type, reference_count, entity_triples count, semantic-address class if any
-- [ ] Add filter chip "Engaged" vs "LMR-only" (4,987 terms are LMR-only)
+- [x] Build `scripts/build_lexical_overlay.py` — derives `data/lexical-overlay.json` (1.30 MB compact) from LMR + entity-index + semantic-addresses
+- [x] Overlay carries per-engaged-term: engagement_type, reference_count, entity_triples_count, classified, concept_type, defined_in, and (where present) address_count + address_classes distribution
+- [x] Extend `/lexical/index.html` to fetch LMR + overlay in parallel
+- [x] Each term card gains an engagement badge row: `raw` (LMR-only) / `<engagement_type>` (entity-index) / refs N / triples N / addr N [obs/subj/unr/vna]
+- [x] Engaged terms (in entity-index) get clickable name linking to `/graph/?search=`
+- [x] New filter chips: All / Engaged / LMR-only / Tested as queries
+- [x] Two new stats cards: "Engaged in concept layer" (7,045) and "Tested as queries" (255)
+- [x] Register `build_lexical_overlay.py` in `/api/index.json` scripts
+- [x] Register `lexical_overlay` in `/api/index.json` registries with `role: derived_enrichment`
+
+**Notable findings from the build:**
+- 7,045 LMR terms engaged (also in entity-index); 4,987 LMR-only (raw)
+- Only **575 of 7,045** engaged terms have deliberate engagement_type (8%); the rest (6,470) are unclassified — significant gap surface for reading-pass work
+- 255 terms are also semantic-address targets; address-class distribution across those: subjunctive 370 / unrated 36 / observed 32 / verified_non 1
+- Engagement type distribution: minted 436 / specified 64 / developed 26 / founded 20 / revised 17 / positioned 12
 
 ### 8.6 DOI Resolution surface ▢
 
