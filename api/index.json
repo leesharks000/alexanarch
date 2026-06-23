@@ -260,6 +260,13 @@
       "derived_from": "/data/EA-WG-CAPTURES-01-v8.3.json",
       "shows": "176 AI Overview captures with composition-layer match status (mt). Section filter (9 sections, Frameworks 82 + Heteronyms 29 + ...), status filter (ADOPTION/EXACT MATCH/BROAD MATCH/ZERO RESULT/ZERO INDEX/WOUND GAUGE/unrated), search across query/slug/description, paginated 25 per page. Each card: section, date, query, status chip (color-coded), source format, description (≤380 chars), Screenshot link to godkinggoogle.vercel.app/captures/#slug, As address forward-ref to /addresses/?q=, Re-run search link when search_url is present.",
       "companion_to": "/records/?id=3"
+    },
+    "addresses": {
+      "canonical_path": "/addresses/index.html",
+      "role": "primary",
+      "derived_from": "/data/semantic-addresses.json",
+      "shows": "1,964 canonical queries (semantic addresses) with four-class observation status (observed_address 111, subjunctive 1,748, unrated 83, verified_non_address 22). Four filter dimensions: observation_class, type (single_concept/unmatched/compressed_argument/multi_concept/site_query/diagnostic_test), source (mm-main-capture/mm-rf-battery/mm-termindex/mm-mint/mm-rf-reception/cha-workplan-870), entity-bridge (all/bound-to-entity/unmatched/quoted). Each card: canonical query (with quote indicator), class chip, type chip, refers_to chips → /graph/?search=, battery_membership chips, mint metadata, termindex tier/count, sources list, observations[] (up to 3 with date/status/format/screenshot/excerpt), actions (re-run on Google, view in captures). Deep links: ?q= (search) and ?class= (class filter). Paginated 25/page.",
+      "companion_to": "/captures/"
     }
   },
   "scripts": {

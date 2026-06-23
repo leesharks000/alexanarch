@@ -253,18 +253,35 @@ Live checklist. Items marked ✓ as they ship. Open items prioritized for this s
 - [x] Added `/captures/` to home nav AND added missing `/datasets/` to existing surface navs (wiki, graph, lexical, citations) for cross-surface nav consistency
 - [x] Register in `/api/index.json` as `role: primary` (companion_to deposit #3 record)
 
-### 8.3 Semantic addresses surface ▢
+### 8.3 Semantic addresses surface ✓ (commit pending this push)
 
 **Goal:** `/addresses/index.html` — 1,964 query addresses with observation class filter and entity-link drill.
 
 **Steps:**
 
-- [ ] Build `/addresses/index.html` — fetch `semantic-addresses.json` + entity-index
-- [ ] Class filter chips (subjunctive 1,748 / observed 111 / verified-non 22 / unrated 83)
-- [ ] Type filter chips (single_concept / unmatched / compressed_argument / multi_concept / site_query / diagnostic_test)
-- [ ] Per-address: canonical_query, is_quoted, refers_to (linked to /graph/?search=), observations list, mint_role where present
-- [ ] Add to home nav
-- [ ] Register in `/api/index.json`
+- [x] Build `/addresses/index.html` (19.0 KB dynamic) — fetches `semantic-addresses.json`
+- [x] **Four** filter dimensions stacked:
+  - **Observation class** (intent-ordered): observed_address 111 · subjunctive 1,748 · unrated 83 · verified_non_address 22 — color-coded matching the convention on `/graph/` and `/lexical/`
+  - **Type**: single_concept 810 · unmatched 1,111 · compressed_argument 5 · multi_concept 12 · site_query 8 · diagnostic_test 3
+  - **Source** (which capture-source contributed): mm-termindex 1,390 · mm-mint 403 · mm-main-capture 170 · mm-rf-battery 96 · mm-rf-reception 71 · cha-workplan-870 15
+  - **Entity-bridge**: All / Bound to entity (843) / Unmatched / Exact-string queries (69)
+- [x] Per-address card carries: canonical query (with red mono-font marker when `is_quoted`), class chip, type chip, **refers_to chips → `/graph/?search=`**, battery_membership chips, mint metadata (id/role/canonical), termindex (tier/count/category/first_doi), sources list, observations (up to 3 with date, status, source format, screenshot link, 240-char excerpt), action row
+- [x] Action row: "Re-run on Google →" (live search link), "In captures →" (link to `/captures/?q=`)
+- [x] Four stats cards: Addresses / With observations / Bound to entity / Sources
+- [x] Search across canonical_query / refers_to / note
+- [x] Deep linking: `?q=` populates search, `?class=` activates class filter
+- [x] Paginated 25/page
+- [x] Added to nav across all surfaces (wiki, graph, lexical, citations, captures, datasets, home)
+- [x] Registered in `/api/index.json` as `role: primary`, `companion_to: /captures/`
+
+**Coverage observation:** the `subjunctive` class (1,748 of 1,964) is now visibly the dominant worklist — these are queries catalogued from mm-termindex but never tested as live searches. The surface makes Lee's untested catalogue actionable: filter to subjunctive, drill in, run the search, observe, classify.
+
+**Cross-surface bidirectional bridge now complete:**
+- `/graph/` entity card → "Tested as query" chip → `/addresses/?q=`
+- `/captures/` capture action → "As address →" → `/addresses/?q=`
+- `/addresses/` refers_to chip → `/graph/?search=`
+- `/addresses/` "In captures →" action → `/captures/?q=`
+- `/lexical/` engaged-term name link → `/graph/?search=` (which now shows address overlay)
 
 ### 8.4 Entity ↔ semantic-address bidirectional link in /graph/ ✓ (commit pending this push)
 
