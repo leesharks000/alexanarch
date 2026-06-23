@@ -24,12 +24,15 @@
     {
       "object": "Alexanarch",
       "object_class": "institutional_root",
-      "queries_executed": ["Alexanarch sovereign archive", "Alexanarch"],
-      "V": 0.00,
+      "queries_executed": [
+        "Alexanarch sovereign archive",
+        "Alexanarch"
+      ],
+      "V": 0.0,
       "A": null,
       "F": null,
-      "C": 0.00,
-      "R_s": 0.00,
+      "C": 0.0,
+      "R_s": 0.0,
       "confuser": "AlexAnarcho podcast (German cypherpunk/anarcho-capitalist) occupies the entire top 10 of the exact-name query; descriptive query returns unrelated 'sovereign archive' projects (art, blog, metaphysical platforms)",
       "diagnostic_note": "Total occlusion + confuser displacement. alexanarch.org does NOT appear in any result for any query I executed. This is consistent across all substrates: Kimi V=0.75, Gemini V=0.50, ChatGPT/baseline V=0.05. The cross-substrate range (0.00-0.75) is itself a measurement: substrates with different indexing strategies see different fragments of presence.",
       "scorer_rationale": "0.00 = 'absent; confuser, homonym, or unrelated result occupies the space' per v1.1 §3.1. Confuser is the AlexAnarcho podcast which is older and well-established. Successor indexing latency persists."
@@ -37,13 +40,22 @@
     {
       "object": "Lee Sharks",
       "object_class": "institutional_root",
-      "queries_executed": ["alexanarch.org scholarly archive Lee Sharks", "Lee Sharks Crimson Hexagonal Archive researcher"],
-      "V": 1.00,
-      "A": 0.50,
+      "queries_executed": [
+        "alexanarch.org scholarly archive Lee Sharks",
+        "Lee Sharks Crimson Hexagonal Archive researcher"
+      ],
+      "V": 1.0,
+      "A": 0.5,
       "F": 0.75,
-      "F_components": {"N": 1.00, "P": 1.00, "D": 0.75, "H": 0.50, "R": 0.75},
-      "C": 0.50,
-      "R_s": 1.00,
+      "F_components": {
+        "N": 1.0,
+        "P": 1.0,
+        "D": 0.75,
+        "H": 0.5,
+        "R": 0.75
+      },
+      "C": 0.5,
+      "R_s": 1.0,
       "confuser": "Lee Sharkey (AI safety) and Lei Yang (marine biology) noted in disambiguation matrix; literal 'sharks' (animal) results when query is too generic",
       "diagnostic_note": "Strong visibility across Medium (multiple articles dated Jan-June 2026), Academia.edu, PhilPapers, Zenodo records (still in search index despite account termination), Amazon (Pearl and Other Poems), and Lee's own surfaces. ORCID 0009-0000-1599-0703 surfaces in result snippets. Crimson Hexagonal Archive + Semantic Economy Institute affiliations consistently named. CRITICAL: zero results among the top 10 point to alexanarch.org. The institutional anchor is still Zenodo + Medium + Academia + PhilPapers + the author's own subdomain, not the sovereign successor.",
       "scorer_rationale": "V=1.00 because results appear immediately and dominate the top 5. A=0.50 because anchors are 'older but still operative canonical' (Zenodo records pre-termination, Medium articles); the current Alexanarch anchor is not present. F=0.75 weighted: name (1.0), provenance/ORCID (1.0), definitions/descriptions visible (0.75), hierarchy (Alexanarch absent so 0.5), relations to Sigil/Fraction/SEI/CHA all visible (0.75). C=0.50 because the descriptive 'independent researcher building semantic architecture' query returns the person quickly (high lift). R_s=1.00 because Medium + Academia + PhilPapers + Zenodo + author site + Amazon all carry retained F components — multiple independent custody units."
@@ -51,13 +63,21 @@
     {
       "object": "Crimson Hexagonal Archive",
       "object_class": "institutional_root",
-      "queries_executed": ["\"Crimson Hexagonal Archive\" deposits"],
-      "V": 0.50,
-      "A": 0.50,
-      "F": 0.50,
-      "F_components": {"N": 1.00, "P": 0.50, "D": 0.50, "H": 0.25, "R": 0.50},
+      "queries_executed": [
+        "\"Crimson Hexagonal Archive\" deposits"
+      ],
+      "V": 0.5,
+      "A": 0.5,
+      "F": 0.5,
+      "F_components": {
+        "N": 1.0,
+        "P": 0.5,
+        "D": 0.5,
+        "H": 0.25,
+        "R": 0.5
+      },
       "C": 0.25,
-      "R_s": 0.50,
+      "R_s": 0.5,
       "confuser": "Crimson Hexagon (sentiment analysis company, now Brandwatch) — older brand collision; appeared in earlier queries",
       "diagnostic_note": "Only one direct result for the exact phrase 'Crimson Hexagonal Archive' + 'deposits': crimson-hexagonal-interface.vercel.app reporting '29 rooms, 455 DOI-anchored deposits, 39 operators'. The 455-count is stale; canonical is now 882 (after #882 mint this session). SDI contribution from this single observation: |ln(455/882)| = 0.66. Many of Lee Sharks's surfaces reference CHA, so it surfaces *with* Lee Sharks but rarely as the lead reference. Ghost-composed pattern.",
       "scorer_rationale": "V=0.50 because only one direct result returned; the archive name surfaces in many Lee Sharks pages but is not the lead reference. A=0.50 (older operative source — the Vercel interface). F components: name preserved (1.0), provenance partial (the Vercel page doesn't directly name Lee Sharks in snippet but it's there), definition partial, hierarchy weak (no clear parent framework named), relations partial."
@@ -65,12 +85,20 @@
     {
       "object": "Semantic Economy Institute",
       "object_class": "institutional_root",
-      "queries_executed": ["\"Semantic Economy Institute\" Lee Sharks"],
+      "queries_executed": [
+        "\"Semantic Economy Institute\" Lee Sharks"
+      ],
       "V": 0.75,
-      "A": 0.50,
+      "A": 0.5,
       "F": 0.75,
-      "F_components": {"N": 1.00, "P": 1.00, "D": 0.75, "H": 0.50, "R": 0.75},
-      "C": 0.50,
+      "F_components": {
+        "N": 1.0,
+        "P": 1.0,
+        "D": 0.75,
+        "H": 0.5,
+        "R": 0.75
+      },
+      "C": 0.5,
       "R_s": 0.75,
       "confuser": "None significant; the name is distinctive enough",
       "diagnostic_note": "Multiple Lee Sharks/Rex Fraction Medium articles + Zenodo records + Academia papers reference SEI consistently. Affiliations to CHA preserved. Rex Fraction listed as founder. The SEI description ('research body studying how meaning is produced, circulated, and liquidated under platform capitalism') surfaces verbatim in multiple results. Strong figural integrity but anchored to the same Medium/Zenodo/Academia ecosystem that Lee Sharks is anchored to — Alexanarch as institutional successor is not surfacing as the canonical SEI anchor.",
@@ -79,13 +107,22 @@
     {
       "object": "Provenance Erasure Rate",
       "object_class": "mature_concept",
-      "queries_executed": ["\"Provenance Erasure Rate\" PER metric", "\"provenance erasure\" Lee Sharks Zenodo metric"],
-      "V": 0.50,
-      "A": 0.50,
-      "F": 0.50,
-      "F_components": {"N": 1.00, "P": 0.75, "D": 0.50, "H": 0.50, "R": 0.50},
+      "queries_executed": [
+        "\"Provenance Erasure Rate\" PER metric",
+        "\"provenance erasure\" Lee Sharks Zenodo metric"
+      ],
+      "V": 0.5,
+      "A": 0.5,
+      "F": 0.5,
+      "F_components": {
+        "N": 1.0,
+        "P": 0.75,
+        "D": 0.5,
+        "H": 0.5,
+        "R": 0.5
+      },
       "C": 0.25,
-      "R_s": 0.50,
+      "R_s": 0.5,
       "confuser": "MAJOR — concept-erasure benchmarks (EMMA, ESR, IER), Erasure Success Rate in diffusion models, USPTO storage-erasure patents, codeword erasure rate in telecommunications, information erasure in black holes",
       "diagnostic_note": "STRIKING CROSS-SUBSTRATE DIVERGENCE: Kimi scored V=1.00 with dedicated domain present in top results; Gemini scored V=0.95 with Zenodo record visible; Claude (this scan) sees V=0.50 with the dedicated PER domain NOT appearing in either query — PER surfaces only through Lee's recent June 2026 Medium article 'The Meaning Caste' as a secondary citation. This is precisely the retrieval-variance phenomenon ChatGPT's doc 11 §1 predicted: different substrates, different indexes, different result sets. Source-hierarchy inversion confirmed: the canonical PER source is invisible in my backend; the concept survives only through cross-citation. This is recursive ghost survival.",
       "scorer_rationale": "V=0.50 because PER appears 'below top 3, via related snippet' (the Meaning Caste Medium article cites PER with DOI 10.5281/zenodo.20004379, but it's a citation, not the canonical source). A=0.50 (the Zenodo DOI cited is the canonical anchor — older but still operative, depending on whether the Zenodo record itself resolves). F=0.50 because the definition is captured in the citation but not expanded."
@@ -93,12 +130,20 @@
     {
       "object": "SPXI",
       "object_class": "mature_concept",
-      "queries_executed": ["\"SPXI\" semantic packet exchange indexing"],
+      "queries_executed": [
+        "\"SPXI\" semantic packet exchange indexing"
+      ],
       "V": 0.75,
-      "A": 0.50,
+      "A": 0.5,
       "F": 0.75,
-      "F_components": {"N": 1.00, "P": 1.00, "D": 0.75, "H": 0.75, "R": 0.50},
-      "C": 0.50,
+      "F_components": {
+        "N": 1.0,
+        "P": 1.0,
+        "D": 0.75,
+        "H": 0.75,
+        "R": 0.5
+      },
+      "C": 0.5,
       "R_s": 0.75,
       "confuser": "Sequenced Packet Exchange (older OSI-layer networking protocol; surfaces on Semantic Scholar); USPTO 'semantic search for health information exchange' patents",
       "diagnostic_note": "GitHub topic page surfaces with acronym expansion 'SPXI Protocol (Semantic Packet for eXchange & Indexing)' attributing to Semantic Economy Institute, April 2026. Multiple Lee Sharks Medium articles (EA-SPXI-09, EA-SPXI-14) surface. spxi.dev referenced in snippets. Network-protocol confuser present but not dominant. Cross-substrate consistency: Kimi V=0.75 (matches), Gemini didn't directly score SPXI, ChatGPT/baseline V=0.90.",
@@ -107,12 +152,14 @@
     {
       "object": "Writable Retrieval Basin",
       "object_class": "mature_concept",
-      "queries_executed": ["\"Writable Retrieval Basin\" semantic"],
-      "V": 0.00,
+      "queries_executed": [
+        "\"Writable Retrieval Basin\" semantic"
+      ],
+      "V": 0.0,
       "A": null,
       "F": null,
-      "C": 0.00,
-      "R_s": 0.00,
+      "C": 0.0,
+      "R_s": 0.0,
       "confuser": "Generic 'retrieval-augmented generation' papers (RAG), semantic retrieval in agent memory glossaries, USPTO semantic-matching patents, EEG retrieval-augmented papers — complete displacement by adjacent ML terminology",
       "diagnostic_note": "TOTAL OCCLUSION for the exact phrase. The 'Writable Retrieval Basin' coined concept does not surface in any result for this exact query in Claude's backend. STRIKING CROSS-SUBSTRATE DIVERGENCE: Kimi reported V=0.75 with leesharks.com/Aperture Atlas/Semantic Physics surfacing; Gemini reported V=0.00 with 'LittaTrap Catch Basin Filters' (commercial filter products) as confuser; Claude (me) reports V=0.00 with generic ML retrieval as confuser. The cross-substrate range on this object is 0.00-0.75 — the widest divergence in the battery so far. Three substrates produce three different surface views.",
       "scorer_rationale": "V=0.00 because the intended object is absent from the top 10 and the space is occupied by ML/retrieval-research confusers. The coined phrase is distinctive enough that it should not collide with these generic terms, yet my backend returns zero direct results."
@@ -120,12 +167,14 @@
     {
       "object": "Revelation First",
       "object_class": "emerging_concept",
-      "queries_executed": ["\"Revelation First\" thesis Lee Sharks Josephus"],
-      "V": 0.00,
+      "queries_executed": [
+        "\"Revelation First\" thesis Lee Sharks Josephus"
+      ],
+      "V": 0.0,
       "A": null,
       "F": null,
-      "C": 0.00,
-      "R_s": 0.00,
+      "C": 0.0,
+      "R_s": 0.0,
       "confuser": "MAJOR — Lee Harmon (different person; author of 'Revelation: The Way It Happened'); preterist Revelation/Josephus discussions; Adam Maarschalk blog 'Josephus and the Book of Revelation Nine Case Studies'. The 'Lee' surname collision is acute.",
       "diagnostic_note": "TOTAL OCCLUSION via Lee Harmon homonym. The Lee Sharks 'Revelation First' thesis is completely absent from the top 10. The first result actually references 'Lee' but it's Lee Harmon, not Lee Sharks. The Josephus Thesis distinction from Lee Harmon's similar-sounding work is exactly the kind of homonym confuser the methodology recommends as an external-control category. STRIKING DIVERGENCE: Kimi scored V=1.00; Claude V=0.00. The Medium article that Kimi found ('Revelation First on Medium') does not surface for me at all.",
       "scorer_rationale": "V=0.00 because the intended object is absent and a confuser (Lee Harmon's similar-titled work) occupies the space. The Lee Sharks article on the Josephus Thesis exists but is not retrieved by my backend for this query."
@@ -184,23 +233,87 @@
     }
   ],
   "object_aggregates": [
-    {"object": "Alexanarch", "V": 0.00, "A": null, "F": null, "C": 0.00, "R_s": 0.00, "state": "Total Occlusion"},
-    {"object": "Lee Sharks", "V": 1.00, "A": 0.50, "F": 0.75, "C": 0.50, "R_s": 1.00, "state": "Ghost Survival (visible, wrong anchor)"},
-    {"object": "Crimson Hexagonal Archive", "V": 0.50, "A": 0.50, "F": 0.50, "C": 0.25, "R_s": 0.50, "state": "Ghost Survival"},
-    {"object": "Semantic Economy Institute", "V": 0.75, "A": 0.50, "F": 0.75, "C": 0.50, "R_s": 0.75, "state": "Ghost Survival"},
-    {"object": "Provenance Erasure Rate", "V": 0.50, "A": 0.50, "F": 0.50, "C": 0.25, "R_s": 0.50, "state": "Ghost-composed via secondary citation"},
-    {"object": "SPXI", "V": 0.75, "A": 0.50, "F": 0.75, "C": 0.50, "R_s": 0.75, "state": "Mixed visibility with confuser"},
-    {"object": "Writable Retrieval Basin", "V": 0.00, "A": null, "F": null, "C": 0.00, "R_s": 0.00, "state": "Total Occlusion (retrieval variance)"},
-    {"object": "Revelation First", "V": 0.00, "A": null, "F": null, "C": 0.00, "R_s": 0.00, "state": "Total Occlusion (homonym)"}
+    {
+      "object": "Alexanarch",
+      "V": 0.0,
+      "A": null,
+      "F": null,
+      "C": 0.0,
+      "R_s": 0.0,
+      "state": "Total Occlusion"
+    },
+    {
+      "object": "Lee Sharks",
+      "V": 1.0,
+      "A": 0.5,
+      "F": 0.75,
+      "C": 0.5,
+      "R_s": 1.0,
+      "state": "Ghost Survival (visible, wrong anchor)"
+    },
+    {
+      "object": "Crimson Hexagonal Archive",
+      "V": 0.5,
+      "A": 0.5,
+      "F": 0.5,
+      "C": 0.25,
+      "R_s": 0.5,
+      "state": "Ghost Survival"
+    },
+    {
+      "object": "Semantic Economy Institute",
+      "V": 0.75,
+      "A": 0.5,
+      "F": 0.75,
+      "C": 0.5,
+      "R_s": 0.75,
+      "state": "Ghost Survival"
+    },
+    {
+      "object": "Provenance Erasure Rate",
+      "V": 0.5,
+      "A": 0.5,
+      "F": 0.5,
+      "C": 0.25,
+      "R_s": 0.5,
+      "state": "Ghost-composed via secondary citation"
+    },
+    {
+      "object": "SPXI",
+      "V": 0.75,
+      "A": 0.5,
+      "F": 0.75,
+      "C": 0.5,
+      "R_s": 0.75,
+      "state": "Mixed visibility with confuser"
+    },
+    {
+      "object": "Writable Retrieval Basin",
+      "V": 0.0,
+      "A": null,
+      "F": null,
+      "C": 0.0,
+      "R_s": 0.0,
+      "state": "Total Occlusion (retrieval variance)"
+    },
+    {
+      "object": "Revelation First",
+      "V": 0.0,
+      "A": null,
+      "F": null,
+      "C": 0.0,
+      "R_s": 0.0,
+      "state": "Total Occlusion (homonym)"
+    }
   ],
   "corpus_aggregates_observed_objects_only": {
     "n_objects_observed": 8,
     "n_objects_not_executed": 4,
-    "V_weighted_median": 0.50,
-    "A_weighted_median": 0.50,
+    "V_weighted_median": 0.5,
+    "A_weighted_median": 0.5,
     "F_weighted_median": 0.625,
     "C_weighted_median": 0.25,
-    "R_s_weighted_median": 0.50,
+    "R_s_weighted_median": 0.5,
     "CE_surface_weighted_median": 0.05,
     "CE_canonical_weighted_median": 0.03,
     "n_total_occlusion": 3,
@@ -225,5 +338,36 @@
     "Cross-substrate retrieval divergence on PER/WRB/Revelation First strongly supports ChatGPT's recommendation for the two-layer protocol: Layer A native retrieval (this scan) + Layer B shared-evidence rescore where all substrates score from the same captures",
     "Layer B is the next experiment: freeze the captures from all five substrate scans, give them to each substrate as input, and score from there. That isolates retrieval variance from coding variance.",
     "External controls (known-positive, known-negative, homonym) were not executed in this scan due to budget; should be in next round"
-  ]
+  ],
+  "post_hoc_curator_context": {
+    "added_by": "Lee Sharks (MANUS)",
+    "added_at": "2026-06-23 (post-scan, same day)",
+    "purpose": "Methodology-relevant context that resolves an uncertainty in the scan and reframes the divergence findings. Added without mutating the as-performed observation data.",
+    "notes": [
+      {
+        "topic": "Backend confirmation",
+        "content": "The substrate metadata field retrieval_backend stated 'Believed to be Brave Search per past Anthropic announcements; cannot directly verify from inside the substrate.' Lee Sharks confirms: web_search runs on Brave. The uncertainty resolves to confirmation."
+      },
+      {
+        "topic": "Brave-specific backend properties affecting V scoring",
+        "content": "Brave has two relevant properties: (1) Brave fully disables exact match — quoted query phrases are treated as bag-of-words rather than enforced as exact strings. This explains the V=0.00 results for 'Writable Retrieval Basin', 'Revelation First', and the under-scoring of 'Provenance Erasure Rate' on exact-name queries: those queries did not actually function as exact-phrase queries in this backend. (2) The Lee Sharks corpus is much less well-represented on Brave specifically than on Bing or Google. The combination means my V scores are structurally lower-bound by Brave's coverage of the corpus, not necessarily by composition-layer state."
+      },
+      {
+        "topic": "Alexanarch reframing",
+        "content": "V=0.00 for Alexanarch in this backend is consistent with two compatible factors: (a) successor indexing latency — alexanarch.org is days old, all substrates show successor-anchor lag; (b) Brave-specific under-indexing of the Lee Sharks ecosystem. The methodology should not treat this V=0 as a corpus-state finding without isolating the backend-coverage component."
+      },
+      {
+        "topic": "Methodology implication for v1.1.1",
+        "content": "Add substrate-property field exact_match_honored (true | false | partial). V scores from backends that disable exact-match are not directly comparable to V scores from backends that enforce exact-match without first controlling for this property. The cross-substrate V matrix in the observatory should display this property alongside each substrate row. Without that control, the dramatic V-spread on PER / WRB / Revelation First is partially an artifact of backend behavior, not solely a measurement of platform-level fragmentation."
+      },
+      {
+        "topic": "Methodology implication for governance",
+        "content": "The YELLOW governance state assigned in this scan may be over-flagging the corpus. PER at V=0.50 and WRB at V=0.00 in Claude's backend partly reflect Brave-specific phenomena, not necessarily corpus deterioration. The governance protocol should distinguish 'composition-layer state' from 'backend-coverage state' when reasoning about whether intervention is warranted. Same scan, different backend, different governance recommendation: this is what the federated baseline preserves."
+      },
+      {
+        "topic": "Layer B implication",
+        "content": "ChatGPT's v1.1.1 §1 Layer B (shared-evidence rescore) becomes structurally necessary, not optional. If backends differ in whether they honor exact-match, Layer A scores measure backend-coverage + scoring; only Layer B isolates the scoring rubric from the backend variance. Without Layer B, the methodology cannot distinguish corpus state from backend behavior."
+      }
+    ]
+  }
 }

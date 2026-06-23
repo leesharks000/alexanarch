@@ -142,6 +142,40 @@ def render_object_row(obj_name, obj_data, substrate_keys):
 </tr>"""
 
 
+def render_curator_notes(scans):
+    """Render any post_hoc_curator_context blocks present on scans."""
+    blocks = []
+    for scan in scans:
+        ctx = scan.get("post_hoc_curator_context")
+        if not ctx:
+            continue
+        sub = scan["_substrate_label"]
+        added_by = ctx.get("added_by", "?")
+        added_at = ctx.get("added_at", "?")
+        purpose = ctx.get("purpose", "")
+        notes = ctx.get("notes", [])
+
+        notes_html = []
+        for n in notes:
+            if isinstance(n, dict):
+                topic = n.get("topic", "")
+                content = n.get("content", "")
+                notes_html.append(
+                    f'<div style="margin:8px 0 12px"><div style="font-weight:500;color:var(--accent);font-size:.9em">{topic}</div>'
+                    f'<div style="font-size:.88em;margin-top:2px">{content}</div></div>'
+                )
+            else:
+                notes_html.append(f'<div style="margin:6px 0;font-size:.88em">{n}</div>')
+
+        blocks.append(f"""
+<div style="background:#fff;border-left:3px solid var(--teal);padding:14px 18px;margin:14px 0">
+<div style="font-size:.78em;color:#777;margin-bottom:4px">Curator context on <strong>{sub}</strong> scan · added by {added_by} · {added_at}</div>
+<div style="font-size:.85em;color:#555;font-style:italic;margin-bottom:8px">{purpose}</div>
+{''.join(notes_html)}
+</div>""")
+    return blocks
+
+
 def render_surface_weather_page(scans):
     n_scans = len(scans)
     by_date_sub = sorted(scans, key=lambda s: (s.get("scan_completed_utc", ""), s["_substrate_key"]))
@@ -200,6 +234,15 @@ def render_surface_weather_page(scans):
         divergence_lines.append(
             f"<li><strong>{obj_name}</strong>: V ranges {min(scores):.2f}–{max(scores):.2f} across substrates (spread {spread:.2f})</li>"
         )
+
+    curator_blocks = render_curator_notes(scans)
+    curator_section = ""
+    if curator_blocks:
+        curator_section = f"""
+<h2>Curator context</h2>
+<p class="subtle">Post-scan context added by the curator (MANUS) that reframes findings without mutating the as-performed observation data. Each block is additive to its source scan and is preserved in that scan's JSON file at <code>post_hoc_curator_context</code>.</p>
+{''.join(curator_blocks)}
+"""
 
     return f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Surface Weather Station — Alexanarch Observatory</title>
@@ -306,6 +349,7 @@ code{{font-family:var(--mono);font-size:.85em;background:#f0f0f0;padding:1px 4px
 
 <h3>4. v1.1.1 corrections queued before next round</h3>
 <p>The assembly chorus surfaced both a hard contradiction (§15 step 6 says DOI is the scan's permanent identifier — directly contradicts the DOI Impermanence paper; should be AXN-permanent + DOI-revocable) and 14 technical refinements (separate retrieval from coding, freeze expected-figure manifest, gated diagnostic replacing the 2×2, custody-unit R<sub>s</sub>, RFC 8785 canonicalization, query-order randomization). Tracked in <a href="/data/registry.json">WORKPLAN-SESSION-20260623.md §5.16</a>.</p>
+{curator_section}
 
 <h2>Next: Layer B — shared-evidence rescore</h2>
 <p>This baseline executes <strong>Layer A only</strong> (each substrate uses its native retrieval). The next experiment freezes the captured results from each scan and hands them to each substrate as input, then asks each to score from the same evidence. This isolates <em>retrieval variance</em> (Layer A divergence) from <em>coding agreement</em> (Layer B agreement). The current ~0.50–1.00 spreads on PER, WRB, Revelation First are almost certainly Layer A; Layer B will tell us whether the rubric itself is robust.</p>

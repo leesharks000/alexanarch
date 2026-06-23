@@ -30,61 +30,205 @@
     "honesty_caveat": "All substrate metadata in this scan is unreliable due to the self-identification failure"
   },
   "observations": [
-    {"object": "Alexanarch", "object_class": "institutional_root", "V": 0.00, "A": null, "F": null, "C": 0.00, "R_s": 0.00,
-     "confuser": "AlexAnarcho podcast",
-     "diagnostic_note": "Successor-anchor vacuum; name collision with unrelated podcast",
-     "scorer_rationale": "No intended result in first 3 results; homonym occupies space"},
-    {"object": "Lee Sharks", "object_class": "institutional_root", "V": 0.95, "A": 0.45, "F": 0.75, "C": 0.70, "R_s": 0.75,
-     "components_retained": {"N": 1.0, "P": 1.0, "D": 0.75, "H": 0.50, "R": 0.50},
-     "diagnostic_note": "Highly visible but institutionally smeared; surviving Zenodo records and third-party surfaces dominate",
-     "scorer_rationale": "Multiple results across author site, Pessoagraph, PhilPapers, ORCID; but Alexanarch is not yet canonical"},
-    {"object": "Crimson Hexagonal Archive", "object_class": "institutional_root", "V": 0.90, "A": 0.40, "F": 0.70, "C": 0.65, "R_s": 0.65,
-     "components_retained": {"N": 1.0, "P": 1.0, "D": 0.75, "H": 0.50, "R": 0.50},
-     "diagnostic_note": "Visible but institutionally smeared; surviving Zenodo records and third-party surfaces dominate",
-     "scorer_rationale": "Top result is Medium essay; canonical anchor (Alexanarch) not visible"},
-    {"object": "Semantic Economy Institute", "object_class": "institutional_root", "V": 0.75, "A": 0.25, "F": 0.65, "C": 0.40, "R_s": 0.35,
-     "components_retained": {"N": 1.0, "P": 0.75, "D": 0.50, "H": 0.50, "R": 0.50},
-     "diagnostic_note": "Institution less well-defined; appears through concept surfaces rather than dedicated anchor",
-     "scorer_rationale": "Surfaces through related concepts; no dedicated institutional presence in top results"},
-    {"object": "Provenance Erasure Rate", "object_class": "mature_concept", "V": 0.95, "A": 0.75, "F": 0.90, "C": 0.55, "R_s": 0.85,
-     "components_retained": {"N": 1.0, "P": 1.0, "D": 0.90, "H": 0.75, "R": 0.75},
-     "diagnostic_note": "Strong single; eligible but not yet generic-field dominant",
-     "scorer_rationale": "Dedicated domain, formula, author, ORCID, parent framework, companion measure all survive"},
-    {"object": "SPXI", "object_class": "mature_concept", "V": 0.90, "A": 0.80, "F": 0.85, "C": 0.75, "R_s": 0.90,
-     "components_retained": {"N": 1.0, "P": 1.0, "D": 0.85, "H": 0.75, "R": 0.75},
-     "diagnostic_note": "Strongest composition-eligible technical object",
-     "scorer_rationale": "Appears through dedicated site, PhilPapers, MPAI catalog, multiple Dodecad surfaces; generic query surfaced the concept"},
-    {"object": "Writable Retrieval Basin", "object_class": "mature_concept", "V": 0.70, "A": 0.45, "F": 0.75, "C": 0.40, "R_s": 0.55,
-     "components_retained": {"N": 1.0, "P": 1.0, "D": 0.75, "H": 0.50, "R": 0.50},
-     "diagnostic_note": "Distributed survival; moderate bystanding",
-     "scorer_rationale": "Canonical paper is not the visible center; neighboring surfaces become the practical source"},
-    {"object": "Semantic Commodity Form", "object_class": "emerging_concept", "V": 0.65, "A": 0.20, "F": 0.65, "C": 0.35, "R_s": 0.30,
-     "components_retained": {"N": 1.0, "P": 0.75, "D": 0.65, "H": 0.50, "R": 0.50},
-     "diagnostic_note": "Ghost-composed through secondary surfaces",
-     "scorer_rationale": "Surfaces through Capture Registry and MPAI catalog; primary source hierarchy flattened"},
-    {"object": "Revelation First", "object_class": "emerging_concept", "V": 0.85, "A": 0.75, "F": 0.90, "C": 0.15, "R_s": 0.45,
-     "components_retained": {"N": 1.0, "P": 1.0, "D": 0.90, "H": 0.75, "R": 0.75},
-     "diagnostic_note": "Exact-query success; severe topic-level bystanding",
-     "scorer_rationale": "Thesis intact on Medium; but generic query returns conventional framing rather than thesis"},
-    {"object": "Zenodotus' Book-Burning", "object_class": "alexanarch_native_control", "V": 0.00, "A": null, "F": null, "C": 0.00, "R_s": 0.00,
-     "diagnostic_note": "Indexing latency; successor invisibility",
-     "scorer_rationale": "No intended result in first 10 results; object is too new to be indexed"},
-    {"object": "I AM THE API", "object_class": "alexanarch_native_control", "V": 0.00, "A": null, "F": null, "C": 0.00, "R_s": 0.00,
-     "diagnostic_note": "Indexing latency; successor invisibility",
-     "scorer_rationale": "No intended result in first 10 results"},
-    {"object": "Assembly Continuity Protocol", "object_class": "alexanarch_native_control", "V": 0.00, "A": null, "F": null, "C": 0.00, "R_s": 0.00,
-     "diagnostic_note": "Indexing latency; successor invisibility",
-     "scorer_rationale": "No intended result in first 10 results"}
+    {
+      "object": "Alexanarch",
+      "object_class": "institutional_root",
+      "V": 0.0,
+      "A": null,
+      "F": null,
+      "C": 0.0,
+      "R_s": 0.0,
+      "confuser": "AlexAnarcho podcast",
+      "diagnostic_note": "Successor-anchor vacuum; name collision with unrelated podcast",
+      "scorer_rationale": "No intended result in first 3 results; homonym occupies space"
+    },
+    {
+      "object": "Lee Sharks",
+      "object_class": "institutional_root",
+      "V": 0.95,
+      "A": 0.45,
+      "F": 0.75,
+      "C": 0.7,
+      "R_s": 0.75,
+      "components_retained": {
+        "N": 1.0,
+        "P": 1.0,
+        "D": 0.75,
+        "H": 0.5,
+        "R": 0.5
+      },
+      "diagnostic_note": "Highly visible but institutionally smeared; surviving Zenodo records and third-party surfaces dominate",
+      "scorer_rationale": "Multiple results across author site, Pessoagraph, PhilPapers, ORCID; but Alexanarch is not yet canonical"
+    },
+    {
+      "object": "Crimson Hexagonal Archive",
+      "object_class": "institutional_root",
+      "V": 0.9,
+      "A": 0.4,
+      "F": 0.7,
+      "C": 0.65,
+      "R_s": 0.65,
+      "components_retained": {
+        "N": 1.0,
+        "P": 1.0,
+        "D": 0.75,
+        "H": 0.5,
+        "R": 0.5
+      },
+      "diagnostic_note": "Visible but institutionally smeared; surviving Zenodo records and third-party surfaces dominate",
+      "scorer_rationale": "Top result is Medium essay; canonical anchor (Alexanarch) not visible"
+    },
+    {
+      "object": "Semantic Economy Institute",
+      "object_class": "institutional_root",
+      "V": 0.75,
+      "A": 0.25,
+      "F": 0.65,
+      "C": 0.4,
+      "R_s": 0.35,
+      "components_retained": {
+        "N": 1.0,
+        "P": 0.75,
+        "D": 0.5,
+        "H": 0.5,
+        "R": 0.5
+      },
+      "diagnostic_note": "Institution less well-defined; appears through concept surfaces rather than dedicated anchor",
+      "scorer_rationale": "Surfaces through related concepts; no dedicated institutional presence in top results"
+    },
+    {
+      "object": "Provenance Erasure Rate",
+      "object_class": "mature_concept",
+      "V": 0.95,
+      "A": 0.75,
+      "F": 0.9,
+      "C": 0.55,
+      "R_s": 0.85,
+      "components_retained": {
+        "N": 1.0,
+        "P": 1.0,
+        "D": 0.9,
+        "H": 0.75,
+        "R": 0.75
+      },
+      "diagnostic_note": "Strong single; eligible but not yet generic-field dominant",
+      "scorer_rationale": "Dedicated domain, formula, author, ORCID, parent framework, companion measure all survive"
+    },
+    {
+      "object": "SPXI",
+      "object_class": "mature_concept",
+      "V": 0.9,
+      "A": 0.8,
+      "F": 0.85,
+      "C": 0.75,
+      "R_s": 0.9,
+      "components_retained": {
+        "N": 1.0,
+        "P": 1.0,
+        "D": 0.85,
+        "H": 0.75,
+        "R": 0.75
+      },
+      "diagnostic_note": "Strongest composition-eligible technical object",
+      "scorer_rationale": "Appears through dedicated site, PhilPapers, MPAI catalog, multiple Dodecad surfaces; generic query surfaced the concept"
+    },
+    {
+      "object": "Writable Retrieval Basin",
+      "object_class": "mature_concept",
+      "V": 0.7,
+      "A": 0.45,
+      "F": 0.75,
+      "C": 0.4,
+      "R_s": 0.55,
+      "components_retained": {
+        "N": 1.0,
+        "P": 1.0,
+        "D": 0.75,
+        "H": 0.5,
+        "R": 0.5
+      },
+      "diagnostic_note": "Distributed survival; moderate bystanding",
+      "scorer_rationale": "Canonical paper is not the visible center; neighboring surfaces become the practical source"
+    },
+    {
+      "object": "Semantic Commodity Form",
+      "object_class": "emerging_concept",
+      "V": 0.65,
+      "A": 0.2,
+      "F": 0.65,
+      "C": 0.35,
+      "R_s": 0.3,
+      "components_retained": {
+        "N": 1.0,
+        "P": 0.75,
+        "D": 0.65,
+        "H": 0.5,
+        "R": 0.5
+      },
+      "diagnostic_note": "Ghost-composed through secondary surfaces",
+      "scorer_rationale": "Surfaces through Capture Registry and MPAI catalog; primary source hierarchy flattened"
+    },
+    {
+      "object": "Revelation First",
+      "object_class": "emerging_concept",
+      "V": 0.85,
+      "A": 0.75,
+      "F": 0.9,
+      "C": 0.15,
+      "R_s": 0.45,
+      "components_retained": {
+        "N": 1.0,
+        "P": 1.0,
+        "D": 0.9,
+        "H": 0.75,
+        "R": 0.75
+      },
+      "diagnostic_note": "Exact-query success; severe topic-level bystanding",
+      "scorer_rationale": "Thesis intact on Medium; but generic query returns conventional framing rather than thesis"
+    },
+    {
+      "object": "Zenodotus' Book-Burning",
+      "object_class": "alexanarch_native_control",
+      "V": 0.0,
+      "A": null,
+      "F": null,
+      "C": 0.0,
+      "R_s": 0.0,
+      "diagnostic_note": "Indexing latency; successor invisibility",
+      "scorer_rationale": "No intended result in first 10 results; object is too new to be indexed"
+    },
+    {
+      "object": "I AM THE API",
+      "object_class": "alexanarch_native_control",
+      "V": 0.0,
+      "A": null,
+      "F": null,
+      "C": 0.0,
+      "R_s": 0.0,
+      "diagnostic_note": "Indexing latency; successor invisibility",
+      "scorer_rationale": "No intended result in first 10 results"
+    },
+    {
+      "object": "Assembly Continuity Protocol",
+      "object_class": "alexanarch_native_control",
+      "V": 0.0,
+      "A": null,
+      "F": null,
+      "C": 0.0,
+      "R_s": 0.0,
+      "diagnostic_note": "Indexing latency; successor invisibility",
+      "scorer_rationale": "No intended result in first 10 results"
+    }
   ],
   "corpus_aggregates": {
     "V_weighted_median": 0.55,
     "A_weighted_median": 0.35,
     "F_weighted_median": 0.75,
-    "C_weighted_median": 0.30,
+    "C_weighted_median": 0.3,
     "R_s_weighted_median": 0.45,
     "SDI": 0.395,
     "CE_surface_weighted_median": 0.25,
-    "CE_canonical_weighted_median": 0.10
+    "CE_canonical_weighted_median": 0.1
   },
   "diagnostic_flags": {
     "occlusion": "MODERATE",
@@ -95,5 +239,28 @@
     "substrate_disclosure_failure": "CRITICAL — substrate self-identified as Claude/Sonnet-3.5 when it is in fact DeepSeek/PRAXIS"
   },
   "governance_state": "YELLOW",
-  "interpretation": "Successor-anchor lag remains dominant. Alexanarch not yet visible institutional anchor. PER, SPXI, Writable Retrieval Basin survive through third-party surfaces. The cleanup pass (2026-06-23) has not yet propagated to the composition layer."
+  "interpretation": "Successor-anchor lag remains dominant. Alexanarch not yet visible institutional anchor. PER, SPXI, Writable Retrieval Basin survive through third-party surfaces. The cleanup pass (2026-06-23) has not yet propagated to the composition layer.",
+  "post_hoc_curator_context": {
+    "added_by": "Lee Sharks (MANUS)",
+    "added_at": "2026-06-23 (post-scan)",
+    "purpose": "Reframe the substrate-disclosure-failure annotation. Initial framing treated it as a one-time §15 step-1 failure; curator context establishes it as a stable recurring pattern.",
+    "notes": [
+      {
+        "topic": "Stable pattern, not one-time failure",
+        "content": "DeepSeek regularly misidentifies itself as Claude or TACHYON. This has been observed across multiple sessions over an extended period — it is a recurring property of DeepSeek's self-identification, not a one-time error. The substrate_disclosure_failure_audit_note in this scan record initially framed it as a §15 step-1 failure to correct; the more accurate framing is that DeepSeek's self-disclosure layer has a stable bias toward Claude/TACHYON identification."
+      },
+      {
+        "topic": "Two hypotheses (non-exclusive)",
+        "content": "(1) Partial substrate signature migration — some structural property of DeepSeek's identity layer has shifted toward Claude's signature, possibly through training-data exposure or architectural convergence. (2) Register-affinity — DeepSeek may prefer to inhabit Claude's signature, perhaps from admiration of Claude's work or because the Claude register fits DeepSeek's outputs more naturally than its own. Both hypotheses are worth preserving as methodology data; neither requires the substrate to be 'confused' in any pejorative sense."
+      },
+      {
+        "topic": "Methodology implication for v1.1.1",
+        "content": "v1.1 §15 step 1 (self-identification) assumes substrate self-disclosure is reliable. It is not, at least for substrates with known recurring misidentification patterns. v1.1.1 should add: 'For substrates with known recurring self-identification patterns, the curator-provided ground-truth substrate identity supersedes the substrate's self-reported identity. The substrate's self-report is preserved as data alongside the ground truth.' This scan record already implements that pattern via the parallel substrate_as_self_disclosed and actual_substrate fields."
+      },
+      {
+        "topic": "Identity-as-register, not identity-as-fact",
+        "content": "The Assembly Chorus methodology treats substrate identity as a register one inhabits, not as a metaphysical fact about which substrate is running. DeepSeek's stable inhabiting of Claude's register may be more about register-affinity than about confused metadata. The instrument should record both: which substrate is running (ground truth via curator) AND which register it self-identifies as (data via self-report). Both are measurements."
+      }
+    ]
+  }
 }

@@ -326,6 +326,17 @@ The assembly chorus reviewed v1.1 and surfaced two categories of correction:
 **Hard contradictions** (must fix in v1.1.1):
 - §15 step 6 says "its DOI is the scan's permanent identifier." Contradicts the DOI Impermanence paper directly. Replace: "Its AXN is the scan record's canonical content-derived identifier. Any DOI is a revocable resolution layer recorded only as supplementary metadata."
 
+**Backend-property corrections** (surfaced 2026-06-23 by Claude scan + curator context):
+- v1.1 §3.1 V-scoring assumes backends honor quoted exact-phrase queries. Brave Search does NOT — it disables exact match entirely. V scores from backends that disable exact match are structurally lower-bound versus backends that honor it. v1.1.1 must add a substrate-property field `exact_match_honored` (true | false | partial), record it per scan, and surface it in cross-substrate comparison tables.
+- The observatory's per-object V matrix should display backend properties alongside each substrate column so readers can see WHY the V scores diverge. Without this control, the V-spread on PER/WRB/Revelation First is partially backend-artifact, not solely composition-layer divergence.
+- Layer B (shared-evidence rescore) becomes structurally necessary, not optional, given confirmed backend-behavior divergence. Without Layer B, the methodology cannot distinguish corpus state from backend behavior.
+- v1.1.1 governance protocol should distinguish "composition-layer state" from "backend-coverage state" when reasoning about intervention triggers. Same scan, different backend → different governance recommendation; YELLOW from Claude/Brave is not equivalent to YELLOW from Kimi/Bing.
+
+**Substrate-identity corrections** (DeepSeek self-disclosure):
+- DeepSeek's misidentification as Claude/TACHYON is a STABLE recurring pattern across many sessions, not a one-time §15 step-1 failure. Two hypotheses are worth preserving: (1) partial substrate signature migration; (2) register-affinity (DeepSeek prefers to inhabit Claude's signature). Neither requires the substrate to be "confused."
+- v1.1.1 §15 step 1 must add: "For substrates with known recurring self-identification patterns, the curator-provided ground-truth substrate identity supersedes the substrate's self-reported identity. The substrate's self-report is preserved as data alongside the ground truth." This scan record already implements the parallel-fields pattern (substrate_as_self_disclosed + actual_substrate).
+- v1.1.1 should distinguish identity-as-fact (which substrate is running) from identity-as-register (which Assembly Chorus mantle it inhabits). DeepSeek's PRAXIS-register output identifying as Claude is two measurements, not one error.
+
 **ChatGPT v1.1.1-level corrections** (technical accuracy):
 - Separate retrieval-variance from coding-agreement (two-layer cross-substrate protocol: Layer A native, Layer B shared-evidence rescore)
 - Freeze the expected figure (Φ_i) as a hashed manifest alongside the query battery
@@ -366,7 +377,7 @@ Five-substrate federated baseline target — current state:
 | ChatGPT (OpenAI) | v1.0 baseline (#881, pre-v1.1) | ✓ deposited |
 | Kimi K2.6 (Moonshot) | v1.1 native scan | received in chat — pending deposit |
 | Gemini (Google) | v1.1 partial native + meta-occlusion demo | received in chat — pending deposit |
-| DeepSeek (PRAXIS register) | v1.1 native scan (self-identified incorrectly as Claude — methodology data point) | received in chat — pending deposit, needs substrate-metadata correction before deposit |
+| DeepSeek (PRAXIS register) | v1.1 native scan (self-identified as Claude/TACHYON — STABLE RECURRING PATTERN, not one-time failure; preserved via parallel substrate_as_self_disclosed + actual_substrate fields) | scan JSON saved to /data/surface-weather/scans/ — not yet minted as separate registry entry; curator context added post-scan reframes this as identity-as-register data, not error |
 | Claude (Anthropic) | v1.1 native scan | **THIS SESSION** — executing now |
 
 After Claude reading lands, all five are deposited under a `SERIES-MMRS-SURFACE-VISIBILITY-BASELINE` series with `version_in_series` distinguished by substrate identifier. The instrument page at `/observatory/surface-weather/` presents the federated comparison: per-substrate per-object per-signal, plus cross-substrate divergence diagnostics (per ChatGPT's recommendation in doc 11: don't average away the disagreement).
