@@ -267,6 +267,13 @@
       "derived_from": "/data/semantic-addresses.json",
       "shows": "1,964 canonical queries (semantic addresses) with four-class observation status (observed_address 111, subjunctive 1,748, unrated 83, verified_non_address 22). Four filter dimensions: observation_class, type (single_concept/unmatched/compressed_argument/multi_concept/site_query/diagnostic_test), source (mm-main-capture/mm-rf-battery/mm-termindex/mm-mint/mm-rf-reception/cha-workplan-870), entity-bridge (all/bound-to-entity/unmatched/quoted). Each card: canonical query (with quote indicator), class chip, type chip, refers_to chips → /graph/?search=, battery_membership chips, mint metadata, termindex tier/count, sources list, observations[] (up to 3 with date/status/format/screenshot/excerpt), actions (re-run on Google, view in captures). Deep links: ?q= (search) and ?class= (class filter). Paginated 25/page.",
       "companion_to": "/captures/"
+    },
+    "resolve": {
+      "canonical_path": "/resolve/index.html",
+      "role": "primary",
+      "derived_from": "/data/doi-resolution-index.json",
+      "shows": "1,817 legacy CHA DOI → sovereign-successor mappings. Accepts ?doi= URL param (with full URL or just suffix; auto-normalizes); surfaces a focused resolution card with AXN, status, title, blog/registry mirrors, record link. Browse view paginated 25/page with two filter dimensions: status (RECOVERED 422 / RECOVERED_UNLINKED 402 / 410_GONE 993) and match_type (NONE/version_doi_title_match/no_registry_match/heteronym_creator_search/title_match_score_*). Search across DOI suffix / title / sovereign_id / AXN. Per-entry card: legacy DOI, status chip (color-coded), title, AXN/id/date/mapping_type meta, note, actions row (Record, Blog mirror, Registry mirror, Resolve deep link). For unknown DOIs the focused view degrades gracefully with a DataCite API link.",
+      "companion_to": "/records/?id=868"
     }
   },
   "scripts": {

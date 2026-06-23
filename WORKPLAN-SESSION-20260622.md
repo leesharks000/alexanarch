@@ -321,15 +321,29 @@ Live checklist. Items marked ✓ as they ship. Open items prioritized for this s
 - 255 terms are also semantic-address targets; address-class distribution across those: subjunctive 370 / unrated 36 / observed 32 / verified_non 1
 - Engagement type distribution: minted 436 / specified 64 / developed 26 / founded 20 / revised 17 / positioned 12
 
-### 8.6 DOI Resolution surface ▢
+### 8.6 DOI Resolution surface ✓ (commit pending this push)
 
 **Goal:** `/resolve/?doi=...` route that maps legacy Zenodo DOIs to current AXN/record. Either a JS page that reads `doi-resolution-index.json` or a dedicated browseable list.
 
 **Steps:**
 
-- [ ] Build `/resolve/index.html` — accepts URL `?doi=10.5281/zenodo.XXXX` and maps to AXN
-- [ ] Browseable list view when no `?doi=` param
-- [ ] Register in `/api/index.json`
+- [x] Build `/resolve/index.html` (21.7 KB dynamic) — fetches `data/doi-resolution-index.json` v3.1 (1,817 mappings, 1,675 unique DOIs)
+- [x] Lookup form: accepts full URL `https://doi.org/10.5281/zenodo.XXXX` OR bare `10.5281/zenodo.XXXX` OR just the numeric suffix; `normalizeDoi()` rewrites all to canonical form
+- [x] Deep-link: `?doi=` URL param triggers focused resolution view; URL updates on lookup (bookmarkable)
+- [x] Focused result card: legacy DOI, status chip, title, sovereign AXN, CHA-era sovereign_id, note, actions row (Open record / Blog mirror / Registry mirror / DataCite metadata)
+- [x] Graceful fallback for unknown DOIs: "Not found in resolution index" message with live DOI link + DataCite API link
+- [x] Browse view paginated 25/page with two filter dimensions:
+  - **Recovery status** (color-coded chips): RECOVERED 422 (teal) / RECOVERED_UNLINKED 402 (yellow) / 410_GONE 993 (red)
+  - **Match type**: NONE 993 / version_doi_title_match 359 / no_registry_match 260 / heteronym_creator_search 142 / title_match_score_* (collapsed) 62
+- [x] Search across DOI suffix / title / sovereign_id / AXN
+- [x] Per-entry card: DOI, status, title, AXN/id/date/mapping_type meta line, optional note, actions (Record / Blog / Registry / Resolve)
+- [x] Four stats cards: Mappings / With sovereign AXN / With record page / Unique DOIs
+- [x] Added to nav across all 9 surfaces (wiki, graph, lexical, citations, captures, addresses, datasets, resolve, home); same-pass fixed `/graph/` and `/captures/` and `/datasets/` which were missing earlier-shipped surfaces from their nav rows
+- [x] Registered in `/api/index.json` as `role: primary`, `companion_to: /records/?id=868`
+
+**User journey closed:** A reader who clicks a citation to `10.5281/zenodo.XXXX` from any pre-termination paper, finds it returns 410 GONE from Zenodo, can now arrive at `https://alexanarch.org/resolve/?doi=10.5281/zenodo.XXXX` and be shown: the canonical AXN successor, the record page, the live blog mirror, and the registry mirror, in a single focused card.
+
+**Nav consistency restored:** During this item I caught that `/graph/`, `/captures/`, and `/datasets/` had been missing `/addresses/` and `/resolve/` from their nav rows (only had them in chip URLs inside script content, which the earlier audit confused with nav presence). All 9 surfaces now show 4/4 for `addresses + resolve + captures + datasets` in nav.
 
 ### 8.7 Wiki autoLink case-insensitivity ✓ (commit pending this push)
 
