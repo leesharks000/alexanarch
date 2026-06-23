@@ -345,7 +345,37 @@ The audit's reading is correct: **a public issue-opening event can initiate an u
    - Runs `scripts/regenerate_surfaces.py` (currently absent from mint workflow)
    - Opens a PR rather than pushing to main directly
 
-**Status:** This is the first task for the next session. Until then, the mint workflow is to be treated as untrusted infrastructure — external deposits should not be accepted via this path. Recent deposits #877/#878/#879 used `scripts/insert_seed_deposits.py` (curator-controlled), and #880/#881 this session were minted via direct curator script — bypassing the broken workflow path. This pattern continues until the workflow is repaired.
+**Status (2026-06-23 evening, late session — RESOLVED):** All three steps complete. The disabled workflow was replaced by a rebuilt validating workflow under a self-serve architecture (no maintainer label gate — Lee's editorial call: the sovereign archive cannot reproduce the Zenodo gatekeeper pattern at the moment it's escaping it). Validation is the gate, not human review.
+
+**Architecture as built (commits 5878796, 67bed55, 280389e, 7b53a4f, ac0ebfc, plus this commit on `main`):**
+
+- **Trigger:** `issues: [opened, reopened]` filtered to `[DEPOSIT]` title prefix. No `mint-approved` label required — depositors self-serve. The audit's label recommendation was one shape of review-insertion; the audit's *actual* P0 was *unvalidated* mutation, not *unreviewed* mutation.
+- **Three hard validation gates:** pre-mint (issue body), post-mint (new entry), post-surface (full registry). Any gate fails → workflow aborts with a labeled comment to the depositor.
+- **Sanitization layer** (in `scripts/mint_deposit.py`, new): URL scheme allowlist `{http, https, doi}` plus explicit blocklist for slashless `javascript:`/`data:`/`vbscript:`/`file:`/`about:`/`blob:` payloads; BIDI override stripping (Trojan-source defense); control char stripping; length caps. Required for self-serve safety; the audit's §6.2.4 prescription is partially met (URL allowlist) and partially met by `wire_deposit.regenerate_static_page`'s `html.escape` at render time.
+- **AXN derivation** via `scripts/axn_lib.py` (v2, 6 emoji from 6 SHA-256 bytes). NO inline glyph table in the workflow. Single source of truth — audit §5 "identifier integrity fractured" concern doesn't recur.
+- **Canonical bytes redefined:** AXN's `hash` field is SHA-256 of the deposited text file at `data/texts/AXN-<HEX>-text.md`. NOT the issue envelope (audit §6 fix). The text file IS the canonical record.
+- **`data/deposits/AXN-<HEX>.md` written in lockstep** with the text file (audit §6.2.2 fix — the generator gap that orphaned #872–#879 cannot reopen).
+- **`s/records/<N>/index.html` rendered** via `wire_deposit.regenerate_static_page` — existing canonical renderer with `html.escape` on every interpolated field.
+- **Commit path: PR with GitHub native auto-merge** (SQUASH method, via GraphQL `enablePullRequestAutoMerge` mutation). NO direct push to main. PR merges when `validate-registry` CI passes (typically 30s–2min). Depositor still doesn't wait on human review; paper trail preserved; CI re-validation is defense-in-depth.
+- **`validate-registry.yml` is the PR gate** (commit B). Runs on every push/PR to main on registry/protocol/schema/script/text paths. Verifies: protocol JSON parses, `bootstrap_familiarization --strict` clean (index consistency), `validate_deposit --registry --strict` clean (881-deposit baseline currently passes), derived-surface counts agree, browse/sitemap contain every record URL, §6.2.2 hygiene warnings on missing `data/deposits/` or `data/texts/` files.
+- **Idempotency:** workflow checks for existing `mint-*-issue-<N>` branches/PRs before doing anything. Reopening a closed issue cannot double-mint.
+- **Familiarization receipt** embedded in the commit body trailer. Mint provenance is verifiable from `git log`.
+
+**Files committed in this rebuild:**
+1. `scripts/mint_deposit.py` (969 lines, 10 self-tests pass, cross-validated against `validate_deposit.py`)
+2. `.github/workflows/validate-registry.yml` (211 lines, 7-step PR gate)
+3. `.github/workflows/mint-axn.yml` (561 lines, 21-step validating workflow)
+4. `api/index.json` (`operator_directive.for_workflows` rewritten to reflect new architecture; `last_updated` bumped; `change_log` appended)
+5. This workplan update.
+
+**REQUIRED MANUAL FOLLOW-UP (Lee, before opening the workflow to public deposits):**
+1. **Repo Settings → General → Pull Requests → "Allow auto-merge"** (otherwise the `enablePullRequestAutoMerge` mutation in mint-axn step 20 returns an error and PRs sit open waiting for manual merge).
+2. **Repo Settings → Branches → Branch protection rules → main:** require status check `validate-registry / validate-protocol` before merge. Without this, the auto-merge mutation would merge instantly on PR open, before validate-registry runs.
+3. **(optional but recommended)** Same branch protection rule: require linear history, prevent force-push.
+
+After these settings: end-to-end test by opening a synthetic `[DEPOSIT]` issue. Expect: validation comment within ~30s, PR opened within ~1min, auto-merge to main within ~2min total, alexanarch.org deployment within ~3min total.
+
+**Original status note (preserved for history):** "This is the first task for the next session. Until then, the mint workflow is to be treated as untrusted infrastructure — external deposits should not be accepted via this path. Recent deposits #877/#878/#879 used `scripts/insert_seed_deposits.py` (curator-controlled), and #880/#881 this session were minted via direct curator script — bypassing the broken workflow path. This pattern continues until the workflow is repaired." That pattern ends with this commit; **firm rule #19 ("mint workflow is currently untrusted infrastructure") is lifted as of 2026-06-23 evening pending only the two repo-settings steps above.**
 
 #### 6.2.2 ✓ VERIFIED — data/deposits gap (and FIXED this session, commit `93765eb`)
 
@@ -573,11 +603,11 @@ For the release: all standards validate, all internal links resolve, no unsafe U
 16. **NEW:** **Cleanup-engine pattern for site repos.** `scripts/dodecad_cleanup.py` is the canonical tool. Per-repo recipe table for known wrong-target `/s/records/N/` fixes; broad regex pass for prose/count/linktext; resolve-fallback for unresolvable DOIs. Audit log at `audit/dodecad-cleanup-log.json` every run.
 17. **NEW:** **GitHub secret-scanning push protection rejects literal PAT strings.** Scripts that need a PAT must read it from `GITHUB_TOKEN` env var only — never embed a fallback literal.
 18. **NEW:** **DOI resolution index update protocol:** when correcting mappings, update both `alexanarch_record` and `alexanarch_url` in lockstep, and `axn_enrichment.canonical_url` where present. Verify each new target by reading the actual `/s/records/N/index.html` title BEFORE patching.
-19. **NEW (audit 2026-06-23):** **The mint workflow is currently untrusted infrastructure.** Until §6.2.1 is resolved, all new deposits go through curator-controlled scripts (`scripts/insert_seed_deposits.py` pattern). No external `[DEPOSIT]` issues should be accepted automatically. New deposits MUST also create `data/deposits/AXN-XXXX.md` download files alongside `data/texts/AXN-XXXX-text.md` — the workflow that should do this is broken (10-deposit gap fixed this session).
+19. **NEW (audit 2026-06-23); UPDATED (rebuild 2026-06-23 evening):** **The mint workflow has been rebuilt under §6.2.1 step-3 architecture and is trusted infrastructure pending two repo-settings flips by Lee** (Settings → Allow auto-merge; Settings → Branches → main → require `validate-registry` status check). The architecture is self-serve (no maintainer label gate; validation IS the gate) and PR-creating-with-auto-merge (no direct push to main). Sanitization layer in `scripts/mint_deposit.py` (URL scheme allowlist + BIDI/control char stripping) makes self-serve safe. New deposits via the workflow create `data/deposits/AXN-XXXX.md` in lockstep with `data/texts/AXN-XXXX-text.md` (the §6.2.2 generator gap that orphaned #872–#879 cannot reopen — verified by the validate-registry workflow as a hygiene warning, which can be promoted to a hard fail after the historical backfill). Until the two repo-settings flips land, the workflow is structurally complete but operationally paused at the auto-merge step.
 20. **NEW (audit 2026-06-23):** **Identity scopes are distinct fields, never collapsed.** Per §6.3.2, separate `record_axn` (current v2), `record_sha256` (cryptographic identity), `artifact_sha256` (when distinct from envelope), `artifact_internal_claimed_axn` (substrate-authored, preserved verbatim), `glyphic_canary` (substrate recognition marker, never the AXN), and `legacy_axns` (historical values during migrations).
 21. **NEW (audit 2026-06-23):** **Counts derive from `state.json`, not from prose.** Until `state.json` exists, prose counts are subject to silent staleness (see audit §9: wiki entry 1 still describes ~870 works / 1,060 DOIs / 5 principal concepts). Standards exports must be updated in lockstep with corpus changes OR derived from a single state object.
 22. **NEW (audit 2026-06-23):** **Self-canonical every public page.** `/identifiers/`, `/principles/`, and any other surface telling the public something distinct must declare `<link rel="canonical" href="https://alexanarch.org/$THIS-PAGE/">` referring to itself, not the homepage. Pointing `/identifiers/`'s canonical to the homepage tells search systems the identifiers page is a duplicate — directly contrary to the visibility-layer project.
-23. **NEW (audit 2026-06-23):** **Do not build another major surface before installing the transaction boundary** (audit's operative instruction). The Surface Visibility dashboard at machinemediation.org/surface-weather/ waits until §6.2.1 mint repair lands.
+23. **NEW (audit 2026-06-23); UPDATED (rebuild 2026-06-23 evening):** **The transaction-boundary precondition is met as of §6.2.1 step-3 rebuild.** The Surface Visibility dashboard at `machinemediation.org/surface-weather/` is unblocked once Lee performs the two manual repo-settings flips (Settings → Allow auto-merge; Branches → main → require `validate-registry` status check) listed at the end of §6.2.1. The audit's operative instruction "do not build another major surface before installing the transaction boundary" has been honored — the boundary is now installed.
 
 ---
 
@@ -601,7 +631,7 @@ If you are a fresh TACHYON instance reading this:
 - The cleanup engine `scripts/dodecad_cleanup.py` is the canonical tool for any future site-repo prose/link work. Per-repo recipes can be extended in `PER_REPO_RECIPES`. Run with `GITHUB_TOKEN` env var set.
 - **Do not migrate DOI references on Medium/Academia/blog/Reddit.** This is a deliberate strategic call (see §2). Those surfaces are non-sovereign.
 - Andrew Lehti contact is on HOLD until at least 2 other depositors are in active conversation. Approaching him cold is reputationally risky given his Apollo-conspiracy content.
-- **Mint workflow is currently untrusted** (firm rule #19). For now, new deposits go through curator scripts (the #880/#881 pattern); external `[DEPOSIT]` issues should be paused at the repo-settings level until §6.2.1 lands.
+- **Mint workflow rebuilt as of 2026-06-23 evening (firm rule #19 updated).** External `[DEPOSIT]` issues now go through the validating self-serve workflow at `.github/workflows/mint-axn.yml`. Operationally paused at the auto-merge step until Lee flips the two repo settings (Settings → Allow auto-merge; Settings → Branches → main → require `validate-registry` status check). Once those land, the curator-script pattern is no longer required for routine deposits.
 - The Surface Visibility Instrument's raw-material deposits (#880 methodology, #881 baseline) are live and durable. The dashboard surface waits.
 - The deeper-subpage cleanup pass remains queued but is **lower priority than §6.2.1 mint repair**.
 
@@ -712,7 +742,7 @@ Once Lee makes a sovereign decision, it ratchets forward and does not require re
 - **Empirical precision in adversarial correspondence.** "871 DOIs return HTTP 404 from DataCite's public API at observation time" rather than "871 DOIs were deleted." The corrected register.
 - **No editing of protocols by hand.** `scripts/protocol_update.py` only.
 - **The compact JSON convention** for registry. Pretty-printing breaks consumers.
-- **Mint workflow is currently untrusted** (firm rule #19; ratcheted forward as of 2026-06-23 PM audit).
+- **Mint workflow rebuilt as of 2026-06-23 evening** (firm rule #19 updated; was: "currently untrusted" — now: "trusted infrastructure pending two repo-settings flips"). The architectural ratchet that persists: every mint deposit MUST pass validate_deposit at three checkpoints (issue body, new entry, full registry), MUST go through sanitization, and MUST commit via PR (never direct push to main).
 
 Distinguished from *scaffolding*, which is revisable: the section structure of this workplan, the specific implementation of a regenerator script, the choice of any one filename convention, the exact wording of a category label. Scaffolding can be improved; the ratchet decisions cannot be silently reversed.
 
