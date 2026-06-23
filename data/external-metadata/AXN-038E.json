@@ -1,0 +1,86 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:038E.GOVERNANCE.🤙⛳🚀🏔️⏬☽",
+  "deposit_number": 898,
+  "generated_at": "2026-06-23T15:33:31Z",
+  "schema_version": "1.0",
+  "purpose": "Per-deposit external-metadata sidecar. Phase 4 mint: this deposit is newly created on 2026-06-23 to canonically represent a CHA work whose Zenodo DOI was discovered via the DataCite multi-heteronym survivor sweep but had no Alexanarch registry entry prior to this phase. Metadata recovered from OpenAlex and (where available) the Zenodo monthly bulk export snapshot from 2026-06-07.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.19035476"
+  ],
+  "severance_status": "severed",
+  "per_doi": {
+    "10.5281/zenodo.19035476": {
+      "openalex_id": "https://openalex.org/W7136058369",
+      "title": "THE WAR FOR THE COMPRESSION LAYER: A Total Axial Negation Graph",
+      "publication_date": "2026-03-15",
+      "abstract_chars": 8352,
+      "creator_at_deposit": "Dodecad",
+      "creator_canonical": "Dodecad",
+      "creator_typo_at_deposit": false,
+      "zenodo_bulk_xml_entry": null,
+      "openalex_concepts": [
+        "Negation",
+        "Computer science",
+        "Artificial intelligence",
+        "Graph",
+        "History",
+        "Homily",
+        "Mathematics",
+        "Chorus",
+        "Heaven",
+        "Studio"
+      ],
+      "openalex_topics": [
+        "Language and cultural evolution",
+        "Language, Metaphor, and Cognition",
+        "linguistics and terminology studies"
+      ]
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/newly-found-openalex.json",
+      "lookup": "recovered[].doi == this DOI; data field holds full OpenAlex record",
+      "dois_present": [
+        "10.5281/zenodo.19035476"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "lookup": "extract <record_id>.xml from tarball",
+      "entries": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23",
+      "lookup": "this DOI surfaced under heteronym/typo search"
+    }
+  },
+  "abstract_recovered_chars": 8352,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": false,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": false
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7136058369"
+  ],
+  "mint_provenance": {
+    "phase": "4",
+    "method": "mint from newly-found CHA OpenAlex record",
+    "deposit_number_assigned": 898,
+    "hex_id_derivation": "(898 + 12) = 910 → 0x038E",
+    "creator_canonical": "Dodecad",
+    "creator_at_deposit_was_typo": false,
+    "creator_at_deposit_typo": null
+  }
+}

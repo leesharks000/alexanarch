@@ -1,0 +1,86 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "axn": "AXN:0395.GOVERNANCE.🕛🙏🌈➖🔀♦️",
+  "deposit_number": 905,
+  "generated_at": "2026-06-23T15:33:31Z",
+  "schema_version": "1.0",
+  "purpose": "Per-deposit external-metadata sidecar. Phase 4 mint: this deposit is newly created on 2026-06-23 to canonically represent a CHA work whose Zenodo DOI was discovered via the DataCite multi-heteronym survivor sweep but had no Alexanarch registry entry prior to this phase. Metadata recovered from OpenAlex and (where available) the Zenodo monthly bulk export snapshot from 2026-06-07.",
+  "zenodo_dois_covered": [
+    "10.5281/zenodo.18357446"
+  ],
+  "severance_status": "typo_immunity",
+  "per_doi": {
+    "10.5281/zenodo.18357446": {
+      "openalex_id": "https://openalex.org/W7125581628",
+      "title": "The Mantle of the Blind Poet: Founding Document and Bestowal — Crimson Hexagon Archive",
+      "publication_date": "2026-01-24",
+      "abstract_chars": 2113,
+      "creator_at_deposit": "Lee Sharkd",
+      "creator_canonical": "Lee Sharks",
+      "creator_typo_at_deposit": true,
+      "zenodo_bulk_xml_entry": null,
+      "openalex_concepts": [
+        "Mantle (geology)",
+        "Blindness",
+        "Geology",
+        "Morse code",
+        "Hotspot (geology)",
+        "Monster",
+        "Techne",
+        "History",
+        "Paleontology",
+        "Mantle plume"
+      ],
+      "openalex_topics": [
+        "Sound Studies and Aurality",
+        "Musicology and Musical Analysis",
+        "Theater, Performance, and Music History"
+      ]
+    }
+  },
+  "sources": {
+    "openalex": {
+      "data_store": "/data/newly-found-openalex.json",
+      "lookup": "recovered[].doi == this DOI; data field holds full OpenAlex record",
+      "dois_present": [
+        "10.5281/zenodo.18357446"
+      ]
+    },
+    "zenodo_bulk_xml": {
+      "data_store": "/data/zenodo-xml-pretermination-2026-06-07.tar.gz",
+      "snapshot_date": "2026-06-07",
+      "lookup": "extract <record_id>.xml from tarball",
+      "entries": []
+    },
+    "datacite_survivor_sweep": {
+      "data_store": "/data/datacite-survivors-multi-heteronym.json",
+      "harvested_at": "2026-06-23",
+      "lookup": "this DOI surfaced under heteronym/typo search"
+    }
+  },
+  "abstract_recovered_chars": 2113,
+  "recovered_fields_summary": {
+    "has_title": true,
+    "has_abstract": true,
+    "has_authors": true,
+    "has_keywords": false,
+    "has_publication_date": true,
+    "has_references": false,
+    "has_concepts": true,
+    "has_topics": true,
+    "has_full_datacite_xml": false
+  },
+  "openalex_ids": [
+    "https://openalex.org/W7125581628"
+  ],
+  "mint_provenance": {
+    "phase": "4",
+    "method": "mint from newly-found CHA OpenAlex record",
+    "deposit_number_assigned": 905,
+    "hex_id_derivation": "(905 + 12) = 917 → 0x0395",
+    "creator_canonical": "Lee Sharks",
+    "creator_at_deposit_was_typo": true,
+    "creator_at_deposit_typo": "Lee Sharkd"
+  }
+}
