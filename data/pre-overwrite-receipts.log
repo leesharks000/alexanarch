@@ -361,3 +361,5 @@
 [2026-06-23T13:46:55Z] reconcile_recovered_metadata.py: Phase 1 wrote 738 sidecars under data/external-metadata/
 [2026-06-23T13:48:47Z] reconcile_recovered_metadata.py: Phase 1 wrote 738 sidecars under data/external-metadata/
 [2026-06-23T13:48Z] reconcile_recovered_metadata.py phase 1: wrote 738 sidecars under data/external-metadata/ (4.4 MB total). Thin-index format pointing into bulk data stores; no inlined record duplication. Schema at api/schemas/external-metadata.schema.json. Validator passes 738/738.
+[2026-06-23T13:59:38Z] reconcile_recovered_metadata.py: Phase 2 added pointer fields to 738 deposits (2214 field additions). No existing field values mutated.
+[2026-06-23T13:59Z] reconcile_recovered_metadata.py phase 2: added 3 optional pointer fields per deposit (external_metadata_path, openalex_ids, datacite_severance) on 738 covered deposits. 2,214 field-level additions. ZERO existing field values mutated (verified via deep diff). validate_deposit.py passes 885/885. Registry: 5,986,939 → 6,283,339 bytes (+5%).
