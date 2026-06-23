@@ -319,54 +319,53 @@ The §6.2.1 mint-workflow rebuild is complete on the code side; **two repo-setti
 
 PAT rotation also pending — see §5.10 credentials queue.
 
-### 5.16 Methodology v1.1.1 patch (post-Claude-reading) ▢
+### 5.16 Methodology v1.1.1 patch (post-Claude-reading) ✅ DEPOSITED as #884 (2026-06-23)
 
-The assembly chorus reviewed v1.1 and surfaced two categories of correction:
+**Deposit minted**: #884, AXN:0380.EMPIRICAL.🧱🕙🪞🏛️💚🔃, predecessor #882 (v1.1), version_in_series=3.
+- Full text: /data/texts/AXN-0380-text.md (1148 lines, 84KB)
+- Static page: /s/records/884/
+- SHA-256: 226b5920ccde9ac330810f6b2c02356ca1dd5a63abfbd6f89fe995abddcca08e
+- Glyphic reading: Foundation → Duration → Search → Foundation → Alarm → Direction
 
-**Hard contradictions** (must fix in v1.1.1):
-- §15 step 6 says "its DOI is the scan's permanent identifier." Contradicts the DOI Impermanence paper directly. Replace: "Its AXN is the scan record's canonical content-derived identifier. Any DOI is a revocable resolution layer recorded only as supplementary metadata."
+**v1.1.1 changeset shipped:**
 
-**Backend-property corrections** (surfaced 2026-06-23 by Claude scan + curator context):
-- v1.1 §3.1 V-scoring assumes backends honor quoted exact-phrase queries. Brave Search does NOT — it disables exact match entirely. V scores from backends that disable exact match are structurally lower-bound versus backends that honor it. v1.1.1 must add a substrate-property field `exact_match_honored` (true | false | partial), record it per scan, and surface it in cross-substrate comparison tables.
-- The observatory's per-object V matrix should display backend properties alongside each substrate column so readers can see WHY the V scores diverge. Without this control, the V-spread on PER/WRB/Revelation First is partially backend-artifact, not solely composition-layer divergence.
-- Layer B (shared-evidence rescore) becomes structurally necessary, not optional, given confirmed backend-behavior divergence. Without Layer B, the methodology cannot distinguish corpus state from backend behavior.
-- v1.1.1 governance protocol should distinguish "composition-layer state" from "backend-coverage state" when reasoning about intervention triggers. Same scan, different backend → different governance recommendation; YELLOW from Claude/Brave is not equivalent to YELLOW from Kimi/Bing.
+**Hard contradiction fixed** (single most-critical edit):
+- §15 step 6: "DOI is the scan's permanent identifier" → "AXN is the scan record's canonical content-derived identifier; any DOI is a revocable resolution layer recorded as supplementary metadata." This was a direct contradiction with the project's own DOI Impermanence paper.
 
-**Substrate-identity corrections** (DeepSeek self-disclosure):
-- DeepSeek's misidentification as Claude/TACHYON is a STABLE recurring pattern across many sessions, not a one-time §15 step-1 failure. Two hypotheses are worth preserving: (1) partial substrate signature migration; (2) register-affinity (DeepSeek prefers to inhabit Claude's signature). Neither requires the substrate to be "confused."
-- v1.1.1 §15 step 1 must add: "For substrates with known recurring self-identification patterns, the curator-provided ground-truth substrate identity supersedes the substrate's self-reported identity. The substrate's self-report is preserved as data alongside the ground truth." This scan record already implements the parallel-fields pattern (substrate_as_self_disclosed + actual_substrate).
-- v1.1.1 should distinguish identity-as-fact (which substrate is running) from identity-as-register (which Assembly Chorus mantle it inhabits). DeepSeek's PRAXIS-register output identifying as Claude is two measurements, not one error.
+**Hard contradiction fixed** (single most-critical edit):
+- §15 step 6: "DOI is the scan's permanent identifier" → "AXN is the scan record's canonical content-derived identifier; any DOI is a revocable resolution layer recorded as supplementary metadata." This was a direct contradiction with the project's own DOI Impermanence paper.
 
-**ChatGPT v1.1.1-level corrections** (technical accuracy):
-- Separate retrieval-variance from coding-agreement (two-layer cross-substrate protocol: Layer A native, Layer B shared-evidence rescore)
-- Freeze the expected figure (Φ_i) as a hashed manifest alongside the query battery
-- Separate `evidence` from `annotation` in the row schema (allows rescoring frozen evidence under future methodology versions)
-- Introduce separate query-level selection score `L_iq` for C, distinct from V
-- Replace the 2×2 with a gated diagnostic (V=0 → Total Occlusion; V>0,A low → Ghost Survival; V high, F high, C low → Bystanding; etc. — the current 2×2 places Bystanding under low-V/high-A which contradicts the V·F·(1-C) definition)
-- Make piecewise null-handling explicit in formulas
-- Complete F-component rubric to full 5-point ordinal (currently only 0.00/0.50/1.00 stated)
-- R_s: count custody units (operator + host + data lineage), not pages
-- Use RFC 8785 JSON canonicalization for battery/figure manifest hashes
-- Correct observation totals: 12×5 + 5 field-level = 65 per substrate (or 80 with controls)
-- Align governance thresholds to ordinal scale (≥0.75 Green, =0.50 Yellow, ≤0.25 Red)
-- Soften "designed to be admissible" → "designed to produce traceable documentary evidence"
-- Soften "Pristine Fallacy operating on composition layer" → "consistent with the visibility consequences predicted by..."
-- Add query-order randomization or fresh-session-per-query
-- Rename "substrate bias" → "substrate divergence" or "retrieval-stack divergence"
+**Backend-property corrections shipped** (from first federated baseline + curator context):
+- §7.4 NEW: full substrate-properties table — `exact_match_honored`, `search_engine`, `autocomplete_active`, `location_personalization`, `safe_search_state`, `freshness_bias`, `proprietary_indexes_available`, `top_k_examined`. Brave finding (exact match disabled, Lee Sharks under-represented) was the empirical trigger; the table generalizes the lesson.
+- §11.3 NEW: composition-layer state vs backend-coverage state distinction in governance protocol. Same scan / different backend → different governance recommendation. Layer B is the only path that isolates composition-layer state from backend behavior.
 
-**DeepSeek refinements** (recommended for v1.2):
-- R_s denominator constant → revisit empirically
-- External controls → strongly recommended, not merely optional
-- Demand-letter template in §13
-- Rate-limit logging in §15
-- Substrate rotation schedule
-- Relationship statements: Manifest, Space Ark, "One Human" principle
+**Substrate-identity corrections shipped** (DeepSeek pattern):
+- §15 step 1a NEW: curator-supersedes-self-disclosure rule. Parallel `substrate_as_self_disclosed` and `actual_substrate` fields.
+- §15 step 1b NEW: identity-as-fact vs identity-as-register distinction. Both DeepSeek hypotheses (partial signature migration vs register-affinity) preserved as live methodology data.
 
-**Kimi additions** (mostly validating; nothing new to fold in beyond doc-style suggestions)
+**ChatGPT 14-correction technical review folded in**:
+- §12 two-layer protocol (Layer A native + Layer B shared-evidence rescore)
+- §7.5 NEW: expected-figure manifest spec; §8.1 RFC 8785 canonicalization
+- §7.3 NEW: row schema separates `evidence` (retrieval) from `annotation` (interpretation)
+- §3.4 L_iq selection score for C (separate from V)
+- §14 sequential gated diagnostic replaces the 2×2 (which mis-placed Compositional Bystanding)
+- §4 explicit piecewise null-handling guard
+- §3.3 F-component rubric expanded to full 5-point ordinal
+- §3.5 R_s counts custody units (operator + host + data lineage), not pages
+- §5 observation counts corrected (60→65 per substrate, 75→80 with controls)
+- §11 governance thresholds aligned to ordinal scale (≥0.75 / 0.50 / ≤0.25)
+- §13 admissibility language softened — "designed to produce traceable documentary evidence" with admissibility-determined-by-tribunal note; "consistent with" Pristine-Fallacy-predicted consequences (not "operating")
+- §15 step 6a (rate-limit logging), §15 step 6b (query-order randomization + session isolation)
 
-**Gemini meta-finding**: occlusion of the substrate's OWN retrieval tool (when web search is gated) maps to total Occlusion in the corpus reading. The instrument correctly handles its own broken-tool case. Worth a note in v1.1.1 §15.
+**Terminology**: "substrate bias" → "substrate divergence" / "retrieval-stack divergence" throughout.
 
-**Sequencing**: incorporate all of these in v1.1.1 AFTER the Claude reading lands. v1.1 is the locked spec for the five-substrate baseline; revising mid-baseline would invalidate cross-comparison.
+**What v1.1.1 explicitly defers to v1.2** (§17): F-component weights, R_s denominator (4), governance threshold values, L_iq rubric refinement, backend-property weighting in cross-substrate aggregation. All require accumulated multi-scan empirical data to revisit responsibly.
+
+**Forward-looking infrastructure still to build**:
+- `/data/surface-weather/battery-v1.1.1.json` — locked 12-object × 5-query battery + 5 field-level generic queries with RFC 8785 hash. v1.1 inherits the object list unchanged; v1.1.1 adds canonicalization-rule declaration.
+- `/data/surface-weather/expected-figures-v1.1.1.json` — frozen Φ_i = {N, P, D, H, A, R} per object with RFC 8785 hash. Required for any v1.1.1 scan to score F.
+- Layer B execution: freeze captures from the five Layer A scans, hand identical evidence pack to each substrate, ask each to score. Isolates retrieval-variance from coding-variance. Methodology specifies the protocol; execution awaits curator initiation.
+- Substrate rotation schedule per §12.5 (ChatGPT/Claude/Kimi/Gemini/DeepSeek primary rotation, weekly cycle).
 
 ### 5.17 Claude-substrate baseline reading (NEXT — execution underway) ⏳
 
