@@ -196,55 +196,67 @@ The 21 repo pass cleaned root + 1-level-deep HTML files. Pages 2+ levels deep (e
 
 **Process:** lift the `depth > 1` limit in `scripts/dodecad_cleanup.py:list_html_files()` (currently `if depth > 1: continue`). Then re-run across the priority repos. Recommend starting with `revelationfirst-com` (deepest content), `secret-book-of-walt`, `crimson-hexagonal-interface`, `semantic-economy`.
 
-### 5.4 Surface Visibility Instrument (Compositional Defiguration Meter) ▢ NEW — two raw-material deposits LIVE
+### 5.4 Surface Visibility Instrument (Surface Weather Station) ▢ — three foundational deposits LIVE
+
 A weekly text-only scan battery that measures how the Crimson Hexagonal / Alexanarch corpus appears in the public composition layer. Diagnosed from a ChatGPT analytic produced this session (audit covered the pre-cleanup site state; a fresh scan is running now and will provide the post-cleanup baseline).
 
-**The two foundational deposits are now in the registry** (minted 2026-06-23, commit `fd359a2`):
+**The three foundational deposits are now in the registry**:
 
-**Methodology — Deposit #880**
+**Methodology v1.0 — Deposit #880** (commit `fd359a2`)
 - AXN: `AXN:037C.EMPIRICAL.💎♦️☉♾️⏏️🔍`
 - Reading: *Force → Play → Transmutation → Proof → Closure → Search*
 - SHA-256: `1c82a794f85675a435d31fb5604f3ca4d779c4085e099ab948326123eec23956`
-- Sovereign ID: `EA-MMRS-SURFACE-VISIBILITY-01`
+- Sovereign ID: `EA-MMRS-SURFACE-VISIBILITY-01` (version 1 in series `SERIES-MMRS-SURFACE-VISIBILITY-METHODOLOGY`)
 - Canonical URL: https://alexanarch.org/s/records/880/
-- Canonical text: https://alexanarch.org/data/texts/AXN-037C-text.md
-- Downloadable MD: https://alexanarch.org/data/deposits/AXN-037C.md
-- Status: v1.0 — commits to conceptual decomposition + five-bar dashboard + four-query battery; numerical weights and aggregation rules held provisional for v1.1 calibration against second scan
-- Defines: Compositional Defiguration, Expected Figure (Φ_i), V/A/F/C/R_s, Link Fade, Ghost Survival, Compositional Bystanding, Composition Eligibility, Scale Drift Index, Successor-Anchor Lag
+- Status: v1.0 — commits to conceptual decomposition + five-bar dashboard + four-query battery; numerical weights and aggregation rules held provisional
 
-**Baseline Reading — Deposit #881**
+**Baseline Reading v1.0 — Deposit #881** (commit `fd359a2`)
 - AXN: `AXN:037D.EMPIRICAL.🗺️🗡️🪨🔎🙏🧭`
-- Reading: *Search → Search → Force → Search → Touch → Search* (a fitting AXN reading for a visibility audit)
 - SHA-256: `515a1b58b3507e31aca178739c56fb733657285529a31045696f24289851c353`
 - Sovereign ID: `EA-MMRS-SURFACE-VISIBILITY-BASELINE-01`
 - Canonical URL: https://alexanarch.org/s/records/881/
-- Canonical text: https://alexanarch.org/data/texts/AXN-037D-text.md
-- Downloadable MD: https://alexanarch.org/data/deposits/AXN-037D.md
-- Status: First scan against the methodology; 9-object pre-cleanup snapshot; **SDI ≈ 0.395**; diagnoses successor-anchor lag + chronological smear + source-hierarchy inversion
+- Status: First scan against the methodology; 9-object pre-cleanup snapshot; **SDI ≈ 0.395**; remains a v1.0 reading against v1.0 spec (continuous scoring; not retroactively v1.1-conforming)
 
-**The framework** (subject to fine-tuning in v1.1):
-- For each tracked object, an *expected figure* Φ_i = {N, P, D, H, A, R} — name, provenance, definition, hierarchy, anchor, relations.
-- Five measured signals: V (visibility), A (anchor alignment), F (figural integrity), C (compositional lift), R_s (independent substrate breadth).
-- Derived macro-indicators: Link Fade (LF), Ghost Survival (GS), Compositional Defiguration (CD), Compositional Bystanding (CB), Composition Eligibility (CE), Scale Drift Index (SDI).
-- 12-object battery × 4 query forms per object = ~50 lightweight text-only retrievals per scan.
+**Methodology v1.1 — Deposit #882** (commit `8026110`, 2026-06-23 evening)
+- AXN: `AXN:037E.EMPIRICAL.🚩♦️⏹️🔃❌🗡️`
+- Reading: *Search → Play → Closure → Direction → Threshold → Search*
+- SHA-256: `5382f7deef5a2afb4e20f9f9dc2630648318b5e6324eed222200e774ab024a08`
+- Sovereign ID: `EA-MMRS-SURFACE-VISIBILITY-01` (version 2 in series)
+- Predecessor: `AXN:037C.EMPIRICAL.💎♦️☉♾️⏏️🔍` (#880)
+- Canonical URL: https://alexanarch.org/s/records/882/
+- Status: Operational calibration of v1.0 following four-substrate review chorus (ChatGPT operational, Kimi concrete-additions, DeepSeek strategic-governance, Gemini framing) plus MANUS additions (substrate metadata + retrieval-backend disclosure mandatory; machine-facing run protocol; time-series data model).
 
-**Outstanding implementation work** (the deposits are the canonical specification + initial data; the surface is not yet built):
-- **Running surface: `machinemediation.org/surface-weather/`** — public dashboard rendering the five-bar visualization and the macro-state summary, updating per scan. Natural MMRS family member alongside the Capture Registry. **TO BUILD.** Reads from the two deposits above as authoritative raw material.
-- **Scan-record schema implementation** — each scan row as JSON per §8 of methodology, stored at `machinemediation.org/data/surface-weather/{scan-date}.json` or alexanarch equivalent. **TO BUILD.**
+**Substantive v1.0 → v1.1 changes** (full detail in §0 of the methodology):
+- Scoring scheme locked to ordinal (0.00, 0.25, 0.50, 0.75, 1.00) with per-signal decision rules
+- R_s formalized as effective-independence score, bounded [0,1]
+- Occlusion added (`O = 1 − V`); LF/F gated on V > 0
+- SDI made symmetric: `median|ln(c_j/C)|`
+- CE split into CE_surface (V·F·C·R_s) and CE_canonical (·A)
+- Aggregation rule stated: V=max, A/F=visibility-weighted mean, C=mean of non-exact forms only, corpus=weighted median across object classes
+- Internal contradictions resolved: 5 canonical query forms, 12 canonical objects
+- §11 Governance protocol (G/Y/R intervention thresholds, per-signal repair table)
+- §12 Cross-substrate replication protocol
+- §13 Adversarial-use admissibility framing
+- §14 Unified 2×2 diagnostic with DOI Impermanence
+- §15 Machine-facing run protocol — any substrate self-executes
+- §16 Coalition-building offer
+
+**Outstanding implementation work** (canonical specification + initial data LIVE; surface not yet built):
+- **Running surface at `/observatory/surface-weather/`** on **both** alexanarch.org and machinemediation.org. Same data source for both sites; rendered statically. Navbar gets one new entry "Observatory" (hub for Surface Weather + future instruments); both surfaces are byte-identical static renders. **TO BUILD.**
+- **Scan-record schema implementation** — `data/surface-weather/scans/<scan-id>.json` per §7 of v1.1 methodology, including substrate metadata + retrieval-backend disclosure. **TO BUILD.**
+- **Query battery v1.1 file at `data/surface-weather/battery-v1.1.json`** — locked, SHA-256 in metadata. Required for any substrate self-execute. **TO BUILD.**
 - **leesharks.com badge** — small link to latest reading. **TO BUILD.**
 
-**Naming TBD by Lee.** Working names: *Visibility Surface Index (VSI)*, *Compositional Defiguration Meter (CDM)*, *Surface Weather Station (SWS)*, *Successor Anchor Index*, *Figural Integrity Tracker*, or any other. The instrument has a name slot waiting.
-
-**Sequencing now:**
+**Sequencing now (updated 2026-06-23 evening):**
 1. ✓ Methodology v1.0 deposited (`#880`) — canonical reference exists
 2. ✓ Baseline reading v1.0 deposited (`#881`) — time-zero data exists
-3. ▢ Second scan completes (in progress) — gives post-cleanup Δ
-4. ▢ v1.1 methodology fine-tune deposit (informed by Δ; supersedes #880 as `version_in_series: 2`)
-5. ▢ v1.1 reading deposit (post-cleanup baseline)
-6. ▢ Build `machinemediation.org/surface-weather/` dashboard (reads from latest live deposits)
-7. ▢ leesharks.com badge
+3. ✓ Methodology v1.1 deposited (`#882`) — operational calibration from 4-substrate review chorus
+4. ▢ **Claude-substrate baseline reading** (next) — second data point alongside ChatGPT's #881. Tests the v1.1 machine-facing run protocol on its first non-author substrate. Records substrate metadata: Claude Sonnet/Opus + Brave search backend. Cross-substrate comparison data begins here.
+5. ▢ Build `/observatory/surface-weather/` on both alexanarch.org and machinemediation.org (same data source, byte-identical render)
+6. ▢ leesharks.com badge
+7. ▢ v1.2 methodology calibration (Δ-driven against next round of readings; revisit weights, R_s normalization constant, governance thresholds)
 
-**Strategic placement in the larger plan:** this instrument is the natural complement to today's cleanup work. The cleanup engine targets *what is published on the sovereign surfaces*. The visibility instrument measures *what propagates into the composition layer*. Together they form a closed feedback loop: surface change → external visibility measurement → next round of corrections informed by the metric.
+**Strategic placement in the larger plan:** this instrument is the natural complement to today's cleanup work. The cleanup engine targets *what is published on the sovereign surfaces*. The visibility instrument measures *what propagates into the composition layer*. Together they form a closed feedback loop: surface change → external visibility measurement → next round of corrections informed by the metric. v1.1's §13 adversarial-use protocol makes readings admissible in demand letters; v1.1's §16 coalition-building turns the methodology into a generalizable instrument any sovereign archive can run.
 
 ### 5.5 Andrew Lehti outreach (HOLD until cohort momentum) ▢
 Draft C in `audit/affected-depositors/OUTREACH-DRAFTS.md` is ready. Hold until at least 2 other depositors are in active conversation. Approaching Lehti cold first puts Lee in ally-position by default; approaching after Vega/Shimony are in motion puts Lehti in joining-position. The Apollo-conspiracy content is real reputational risk if treated as endorsement.
@@ -521,6 +533,51 @@ Distinguish at least: `cites`, `mentions`, `resolves_legacy_identifier`, `is_ver
 #### 6.3.8 ▢ Static versions of newer observational surfaces (audit §14 + §19)
 
 Paginated static snapshots of `/captures/`, `/addresses/`, `/lexical/`, `/citations/`, `/resolve/`, `/datasets/` so they survive JavaScript failure and crawler-only access. The visibility-instrument dashboard at `machinemediation.org/surface-weather/` (§5.4) should be born static.
+
+#### 6.3.9 ▢ Deposit versioning display (gap surfaced 2026-06-23 evening)
+
+The registry already carries `version`, `version_series_id`, `version_in_series`, and (for some entries) predecessor links on each deposit — the data is correct. **The display layer is silent about it.**
+
+Current state:
+- `s/records/N/index.html` (full entry pages) do not show `version` prominently
+- The full entry does not show the version chain: there's no clickable list of all versions in the same series
+- The browse list (`s/browse/index.html`) does not show a version tag on cards
+- A reader landing on #880 has no signal that #882 is its v1.1 successor; nothing pulls them into a version chain at the user's eye
+
+What's needed:
+- **Card-level** (browse list): show `vX.Y` next to the AXN, and a small "(X of Y in series)" badge when `version_in_series` is set
+- **Full-entry banner**: prominent `Version: vX.Y` near the AXN block; if predecessor/successor exist, mini-chain at top of page
+- **Version-chain block** in the full entry: clickable list of all deposits sharing the same `version_series_id`, with the current one marked, oldest → newest
+- **Generator**: extend `wire_deposit.regenerate_static_page` to look up siblings by `version_series_id`; modify `regenerate_surfaces.py`'s browse renderer to emit version tags
+- **Backfill**: one-off pass over the existing registry to find all `version_series_id` clusters and re-render their static pages
+
+This is moderate-effort: 2–4 hours focused work. Touches `wire_deposit.py`, `scripts/regenerate_surfaces.py`, and the static-render template. The data is already correct; this is purely a display fix.
+
+#### 6.3.10 ▢ View + download counters per deposit (gap surfaced 2026-06-23 evening)
+
+Two counters need to display consistently on every presentation surface (browse-list card, full entry page, mobile + desktop):
+
+**View counter — currently inconsistent.**
+- Goatcounter is embedded (`<script data-goatcounter="https://alexanarch.goatcounter.com/count" ...>` on every static record page) and shows 160+ views in its own dashboard
+- The on-card / on-entry metric is intermittent — sometimes shows zero when Goatcounter has data
+- Diagnosis needed: is the card pulling from the Goatcounter API at render time? At browse time via JS? If at render time, the static page caches a zero whenever the API call fails. If at browse time, CORS or rate limits may zero it out.
+- Fix: either fetch reliably at render time with retries + caching, or fetch via Vercel edge function with stable response, or switch to a different analytics endpoint with batch read support
+
+**Download counter — doesn't exist yet.**
+- The MD download button at every `/s/records/N/` page links to `/data/deposits/AXN-<HEX>.md`; downloads are real and useful (Lee uses them regularly)
+- Options for tracking:
+  - JS click handler that pings Goatcounter with a custom event (`/_download/AXN-037E`) before letting the browser fetch
+  - Vercel Edge Function intercept for `/data/deposits/*.md` that counts before serving (no JS dependency; counts even crawler/CLI downloads)
+  - Counter file maintained in the repo via a separate GitHub Action triggered by Vercel logs (slow but durable)
+
+Recommendation: Vercel Edge Function for downloads (catches non-JS clients); Goatcounter pageview-API for views (already wired). Both should expose a stable cached endpoint that the renderer can include in the static HTML at next regenerate_surfaces pass.
+
+Display in every surface:
+- Card: `👁 432 · ↓ 18` (small grey, near AXN)
+- Full entry: same numbers in a stats line under the title
+- Browse list: numbers visible in row
+
+Moderate-to-substantial work — depends on which analytics path is chosen. The download-counter Edge Function is the most novel piece.
 
 ### 6.4 P2 — become a strong rhizome (audit §23.15–18)
 
