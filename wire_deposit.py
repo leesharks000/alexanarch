@@ -91,8 +91,13 @@ def wire_deposit(deposit_number, concepts=None, wiki_article=None, entity_triple
         print(f"    triples: {len(entity_triples)}")
 
 
-def regenerate_static_page(d, eidx):
-    """Regenerate the static HTML page for a deposit with full enrichment."""
+def regenerate_static_page(d, eidx, registry=None):
+    """Regenerate the static HTML page for a deposit with full enrichment.
+
+    registry: optional full registry dict. If provided, enables version-chain
+    blocks (banner for superseded/draft, version history list for series).
+    If None, version blocks are omitted (faster but less informative).
+    """
     esc = lambda s: htmlmod.escape(str(s)) if s else ''
     dn = d['deposit_number']
     hex_id = d.get('hex', '')
@@ -177,6 +182,76 @@ def regenerate_static_page(d, eidx):
         fulltext = f'<p>{esc(d.get("description", ""))}</p>'
     
     # Keywords
+    # Version chain blocks (banner for superseded/draft, history list for series)
+    version_banner = ''
+    version_history = ''
+    status = d.get('status', 'ACTIVE')
+    version = d.get('version', '')
+    series_id = d.get('version_series_id')
+    superseded_by_n = d.get('superseded_by_deposit_number')
+    superseded_reason = d.get('superseded_reason', '')
+
+    if registry and status == 'SUPERSEDED' and superseded_by_n:
+        by_v = ''
+        for sib in registry.get('deposits', []):
+            if sib.get('deposit_number') == superseded_by_n:
+                by_v = sib.get('version', '')
+                break
+        version_banner = (
+            '<div style="background:#fef3c7;border-left:4px solid #d97706;padding:12px 16px;'
+            'border-radius:6px;margin:12px 0;font-size:.92em">'
+            f'<div style="font-weight:600;color:#92400e;margin-bottom:4px">⚠ Superseded — this is version {esc(version)}</div>'
+            f'<div style="color:#78350f">Current version: <a href="/s/records/{superseded_by_n}/" '
+            f'style="color:var(--accent);font-weight:500">#{superseded_by_n} {esc(by_v)}</a></div>'
+            + (f'<div style="color:#78350f;font-size:.88em;margin-top:6px">{esc(superseded_reason)}</div>' if superseded_reason else '')
+            + '</div>'
+        )
+    elif status == 'DRAFT_PENDING':
+        reason = d.get('draft_pending_reason', '')
+        version_banner = (
+            '<div style="background:#f3f4f6;border-left:4px solid #6b7280;padding:12px 16px;'
+            'border-radius:6px;margin:12px 0;font-size:.92em">'
+            '<div style="font-weight:600;color:#374151;margin-bottom:4px">⏳ Draft — body not yet written</div>'
+            f'<div style="color:#4b5563">This deposit\'s identifier and metadata are minted, but the body has not been written.'
+            + (f' {esc(reason)}' if reason else '')
+            + '</div></div>'
+        )
+
+    if registry and series_id:
+        siblings = sorted(
+            (s for s in registry.get('deposits', []) if s.get('version_series_id') == series_id),
+            key=lambda x: x.get('deposit_number', 0)
+        )
+        if len(siblings) > 1:
+            is_supersession_series = any(s.get('superseded_by_deposit_number') for s in siblings)
+            label = 'Version history' if is_supersession_series else 'Series entries'
+            items = []
+            for sib in siblings:
+                sib_n = sib.get('deposit_number')
+                sib_v = sib.get('version', '')
+                sib_status = sib.get('status', 'ACTIVE')
+                is_current = (sib_n == dn)
+                bullet = '●' if is_current else '○'
+                tail = ''
+                if sib_status == 'SUPERSEDED':
+                    tail = ' <span style="color:#999;font-size:.85em">(superseded)</span>'
+                elif sib_status == 'ACTIVE' and is_supersession_series:
+                    tail = ' <span style="color:var(--teal);font-size:.85em">— current</span>'
+                if is_current:
+                    items.append(
+                        f'<li style="font-weight:500">{bullet} #{sib_n} {esc(sib_v)}{tail} '
+                        f'<span style="color:#777;font-weight:normal">← this deposit</span></li>'
+                    )
+                else:
+                    items.append(f'<li>{bullet} <a href="/s/records/{sib_n}/">#{sib_n} {esc(sib_v)}</a>{tail}</li>')
+            version_history = (
+                f'<h2>{label}</h2>'
+                f'<p class="subtle" style="color:#777;font-size:.85em;margin-bottom:8px">'
+                f'Series: <code style="font-family:var(--mono);font-size:.85em">{esc(series_id)}</code></p>'
+                f'<ul style="list-style:none;padding-left:0;font-size:.92em;line-height:1.8">'
+                + ''.join(items) + '</ul>'
+            )
+
     kw_html = ''.join(f'<span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">{esc(k)}</span>' for k in d.get('keywords', []))
     
     # Wiki article section
@@ -215,12 +290,14 @@ def regenerate_static_page(d, eidx):
 </head><body><div class="wrap">
 <nav class="nav"><a href="/">Alexanarch</a> <a href="/s/browse/">Browse</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/observatory/">Observatory</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a></nav>
 <div style="font-family:var(--mono);font-size:1.1em;color:var(--teal);background:var(--surface);padding:12px;border-radius:6px;border-left:4px solid var(--teal);margin:12px 0">{esc(d["axn"])}</div>
+{version_banner}
 <h1>{esc(d["title"])}</h1>
-<div style="font-size:.85em;color:#777;margin-bottom:10px">{esc(d["creator"])} · {esc(d["date"])} · {esc(d.get("content_type",""))}</div>
+<div style="font-size:.85em;color:#777;margin-bottom:10px">{esc(d["creator"])} · {esc(d["date"])} · {esc(d.get("content_type",""))}{f' · <span style="color:var(--accent);font-weight:500">{esc(version)}</span>' if (version and (version != 'v1.0' or series_id)) else ''}</div>
 <a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-{hex_id}.md" download>↓ Download MD</a>
 <div style="margin:8px 0">{kw_html}</div>
 <h2>Description</h2>
 <p style="font-size:.9em">{esc(d.get("description",""))}</p>
+{version_history}
 {wiki_html}
 {concepts_html}
 {triples_html}

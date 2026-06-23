@@ -95,6 +95,26 @@
         ".github/workflows/validate-registry.yml"
       ],
       "last_updated": "2026-06-22"
+    },
+    "lifecycle": {
+      "name": "Alexanarch Lifecycle Protocol",
+      "current_version": "alexanarch-lifecycle-protocol/v1.0",
+      "schema_version": "2026-06-23-v1",
+      "canonical_path": "/api/lifecycle-protocol.json",
+      "content_sha256": "42fb844476df669150898bc91695cfc802e09abbdf70a3df3d6f6e2b7177385e",
+      "governs": "Status vocabulary (ACTIVE/SUPERSEDED/WITHDRAWN/DRAFT_PENDING) and version-chain data model for deposits. Specifies how supersession, draft state, and series membership are recorded and rendered. Invariants: at most one ACTIVE in a supersession series; sequential series may have many ACTIVE entries; bidirectional consistency between predecessor and superseded_by fields.",
+      "referenced_by": [
+        "/api/deposit-schema.json (optional version-chain fields)",
+        "/wire_deposit.py (record-page version banner + history block)",
+        "/scripts/regenerate_surfaces.py (browse-card version chip + status badge)",
+        "/index.html (Recent Deposits JS — supersession styling)"
+      ],
+      "enforced_by": [
+        "Manual data-entry until mint-workflow integration lands",
+        "validate-registry CI invariants (bidirectional consistency check — TODO)"
+      ],
+      "added": "2026-06-23",
+      "added_in_session": "versioning-protocol-rollout"
     }
   },
   "schemas": {

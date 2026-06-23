@@ -131,13 +131,13 @@ BROWSE_HEADER = """<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><m
 <div style="color:#777;font-size:.88em;margin-bottom:16px">{total} deposits · sorted by deposit number, oldest first · for newest see <a href="/">home page</a></div>
 """
 
-BROWSE_CARD = """<a href="/s/records/{n}/" itemscope itemtype="https://schema.org/CreativeWork" style="display:block;padding:6px 0;border-bottom:1px solid #f0f0f0;text-decoration:none;color:var(--fg)">
+BROWSE_CARD = """<a href="/s/records/{n}/" itemscope itemtype="https://schema.org/CreativeWork" style="display:block;padding:6px 0;border-bottom:1px solid #f0f0f0;text-decoration:none;color:var(--fg){card_opacity}">
 <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap">
 <span style="font-family:var(--mono);font-size:.72em;color:var(--teal);min-width:40px">#{n}</span>
-<span itemprop="name" style="font-weight:500;color:var(--accent);font-size:.9em;flex:1">{title}</span>
+<span itemprop="name" style="font-weight:500;color:var(--accent);font-size:.9em;flex:1">{title}{version_chip}</span>
 <time itemprop="datePublished" datetime="{date}" style="font-size:.72em;color:#999;white-space:nowrap">{date}</time>
 </div>
-<div style="font-size:.7em;color:#aaa;margin-top:1px;padding-left:48px"><code itemprop="identifier">{axn}</code></div>
+<div style="font-size:.7em;color:#aaa;margin-top:1px;padding-left:48px"><code itemprop="identifier">{axn}</code>{status_badge}</div>
 </a>
 """
 
@@ -182,11 +182,30 @@ def regenerate_browse(reg, dry_run=False):
         n = d.get("deposit_number") or d.get("issue_number") or 0
         if n == 0:
             continue
+        # Version / status chips
+        version = d.get("version", "")
+        status = d.get("status", "ACTIVE")
+        superseded_by_n = d.get("superseded_by_deposit_number")
+        in_real_series = bool(d.get("version_series_id"))
+        version_chip = ''
+        if version and (version != 'v1.0' or in_real_series):
+            version_chip = f' <span style="font-family:var(--mono);font-size:.78em;color:var(--teal);font-weight:500;background:#f0f4f8;padding:1px 6px;border-radius:8px;margin-left:4px">{esc_html(version)}</span>'
+        status_badge = ''
+        card_opacity = ''
+        if status == 'SUPERSEDED' and superseded_by_n:
+            status_badge = f' · <span style="color:#92400e;font-size:.85em">superseded by <a href="/s/records/{superseded_by_n}/" style="color:#92400e;text-decoration:underline">#{superseded_by_n}</a></span>'
+            card_opacity = ';opacity:.65'
+        elif status == 'DRAFT_PENDING':
+            status_badge = ' · <span style="color:#6b7280;font-size:.85em;font-style:italic">draft pending</span>'
+            card_opacity = ';opacity:.65'
         parts.append(BROWSE_CARD.format(
             n=n,
             title=esc_html(d.get("title", "(untitled)")),
             date=esc_html(d.get("date", "")),
             axn=esc_html(d.get("axn", "")),
+            version_chip=version_chip,
+            status_badge=status_badge,
+            card_opacity=card_opacity,
         ))
     parts.append(BROWSE_FOOTER)
 

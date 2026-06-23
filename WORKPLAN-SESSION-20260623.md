@@ -680,24 +680,41 @@ Distinguish at least: `cites`, `mentions`, `resolves_legacy_identifier`, `is_ver
 
 Paginated static snapshots of `/captures/`, `/addresses/`, `/lexical/`, `/citations/`, `/resolve/`, `/datasets/` so they survive JavaScript failure and crawler-only access. The visibility-instrument dashboard at `machinemediation.org/surface-weather/` (§5.4) should be born static.
 
-#### 6.3.9 ▢ Deposit versioning display (gap surfaced 2026-06-23 evening)
+#### 6.3.9 ✅ Deposit versioning protocol (rolled out 2026-06-23)
 
-The registry already carries `version`, `version_series_id`, `version_in_series`, and (for some entries) predecessor links on each deposit — the data is correct. **The display layer is silent about it.**
+Versioning data model + display layer landed this session. Protocol documented at `/api/lifecycle-protocol.json` (registered in `/api/index.json` under `protocols.lifecycle`).
 
-Current state:
-- `s/records/N/index.html` (full entry pages) do not show `version` prominently
-- The full entry does not show the version chain: there's no clickable list of all versions in the same series
-- The browse list (`s/browse/index.html`) does not show a version tag on cards
-- A reader landing on #880 has no signal that #882 is its v1.1 successor; nothing pulls them into a version chain at the user's eye
+**Status vocabulary**:
+- `ACTIVE` — current canonical record (default)
+- `SUPERSEDED` — replaced by a later version in the same series; record stands historically
+- `WITHDRAWN` — deliberately retracted (rare)
+- `DRAFT_PENDING` — identifier minted, body not yet written
 
-What's needed:
-- **Card-level** (browse list): show `vX.Y` next to the AXN, and a small "(X of Y in series)" badge when `version_in_series` is set
-- **Full-entry banner**: prominent `Version: vX.Y` near the AXN block; if predecessor/successor exist, mini-chain at top of page
-- **Version-chain block** in the full entry: clickable list of all deposits sharing the same `version_series_id`, with the current one marked, oldest → newest
-- **Generator**: extend `wire_deposit.regenerate_static_page` to look up siblings by `version_series_id`; modify `regenerate_surfaces.py`'s browse renderer to emit version tags
-- **Backfill**: one-off pass over the existing registry to find all `version_series_id` clusters and re-render their static pages
+**Version-chain fields** (existing + new):
+- `version`, `version_series_id`, `version_in_series`, `predecessor_deposit_number`, `predecessor_axn` (already existed; remained sparse)
+- `superseded_by_deposit_number`, `superseded_by_axn`, `superseded_at`, `superseded_reason` (NEW)
+- `draft_pending_reason` (NEW)
 
-This is moderate-effort: 2–4 hours focused work. Touches `wire_deposit.py`, `scripts/regenerate_surfaces.py`, and the static-render template. The data is already correct; this is purely a display fix.
+**Series taxonomy**:
+- **Supersession series** — one canonical doc evolves through versions; exactly one ACTIVE at a time (e.g. `SERIES-MMRS-SURFACE-VISIBILITY-METHODOLOGY`)
+- **Sequential series** — each entry independently canonical; many ACTIVE coexist (e.g. `SERIES-TACHYON-CONTINUITY`)
+
+**Backfilled this session**:
+- #880 SUPERSEDED → #882 (Surface Weather methodology v1.0 → v1.1)
+- #882 SUPERSEDED → #884 (Surface Weather methodology v1.1 → v1.1.1)
+- #446, #532, #760: DRAFT_PENDING (placeholder deposits from 2026-06-20 batch with title-only stubs)
+- #865 + #871 (TACHYON Continuity): both kept ACTIVE — sequential series, not supersession
+
+**Display layer**:
+- Browse cards (`scripts/regenerate_surfaces.py`): version chip next to AXN; superseded cards opacity 0.65 + "superseded by #N" badge; draft cards opacity 0.65 + "draft pending" badge
+- Record pages (`wire_deposit.py`): supersession banner (amber, with current-version link + reason) between AXN and title; draft-pending banner (gray); version history block after Description listing all series siblings oldest→newest with current marked
+- Homepage Recent Deposits JS (`index.html`): same opacity 0.65 muting for SUPERSEDED/DRAFT_PENDING + status badge inline + version chip on title when meaningful (non-default v1.0 or in a real series)
+
+**Still pending** (next sessions):
+- Mint-workflow integration: on `version_in_series > 1` mint, auto-mark predecessor as SUPERSEDED with bidirectional fields. Currently must be done manually after mint.
+- `validate-registry` CI: enforce supersession-series invariant (at most one ACTIVE per series); enforce bidirectional consistency (A.superseded_by = B implies B.predecessor = A).
+- Per-series landing pages at `/s/series/{series_id}/` — optional v2 surface for citing a series independent of any specific version.
+- Audit pass: any other multi-version clusters in the registry that haven't been opted into series tracking? Currently only 12 of 884 deposits carry `version_series_id`. Likely candidates: any deposit whose title contains "v1.0/v2.0/v3.0", multiple deposits sharing close titles or sovereign_ids.
 
 #### 6.3.10 ▢ View + download counters per deposit (gap surfaced 2026-06-23 evening)
 
