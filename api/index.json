@@ -4,7 +4,7 @@
   "title": "Alexanarch Protocol Index",
   "purpose": "Central machine-readable catalog of all Alexanarch protocols, schemas, and data registries. Single source of truth — every other document (AGENTS.md, DEPOSIT-FLOW.md, scripts, workflows) MUST pull from this index, not duplicate it. If this file disagrees with any other surface, this file wins and the other surface is wrong.",
   "index_version": "v1.0",
-  "last_updated": "2026-06-22",
+  "last_updated": "2026-06-23",
   "operator_directive": {
     "for_new_instances": [
       "STOP before any action.",
@@ -17,7 +17,7 @@
       "7. STANDING DIRECTIVE (post-729dfd9): Before ANY str_replace, create_file, or other overwrite of an existing file, run `python3 scripts/pre_overwrite.py <path>`. This appends a structural-inventory receipt to /data/pre-overwrite-receipts.log AND surfaces role-aware warnings (in particular, an unmissable red alert if the target is a static_fallback whose canonical primary lives elsewhere). The 729dfd9 commit overwrote /s/wiki/ and /s/graph/ static fallbacks without realizing the canonical primaries at /wiki/ and /graph/ existed. This protocol prevents recurrence at the file-system level rather than as a discipline that has to hold across instances.",
       "8. CREATE operations are exempt from #7 — if the target file does not yet exist, pre_overwrite.py exits silently and no receipt is needed. The check only fires on overwrites."
     ],
-    "for_workflows": "Both mint-axn.yml and validate-registry.yml read this index at run time, fetch the protocols it lists, and verify their content_sha256 before acting. If verification fails, the workflow fails closed (no changes commit).",
+    "for_workflows": "Two workflows act on this index. (1) mint-axn.yml triggers on issues opened/reopened with a [DEPOSIT] title prefix — no maintainer label required. It runs bootstrap_familiarization.py --strict against this index, then validates the issue body against api/deposit-protocol.json via scripts/validate_deposit.py --strict. On pass, scripts/mint_deposit.py sanitizes user input (URL scheme allowlist {http,https,doi} plus explicit blocklist for slashless javascript:/data:/vbscript:/file:/about:/blob: payloads; BIDI override stripping; control character stripping; length caps), constructs the canonical text file, derives the AXN via scripts/axn_lib.py from the file's SHA-256 (canonical bytes = artifact, not issue envelope), writes the deposit, and re-validates the new entry. After regenerate_surfaces.py and a final full-registry validation pass, the workflow opens a PR with GitHub native auto-merge enabled (SQUASH). No direct push to main. (2) validate-registry.yml is the PR gate: it re-runs the full validation chain (bootstrap, registry --strict, derived-surface consistency invariants) on the PR's head before merge is permitted. Self-serve depositing — depositors do not require maintainer review; validation IS the gate. Both workflows fail closed (no commit, no merge) on any verification failure. The mint workflow comments back to the issue with rule IDs on failure; depositors close/reopen the issue to retry after fixing.",
     "for_extension": "Adding a new protocol means: (a) write the protocol JSON in /api/, (b) add a new entry under `protocols` here, (c) compute content_sha256 of the new file, (d) add it to this file with all its referenced_by and enforced_by lists, (e) run `scripts/protocol_update.py --verify-index` to confirm everything reconciles."
   },
   "protocols": {
@@ -385,6 +385,13 @@
       "date": "2026-06-22",
       "changes": [
         "Updated protocol 'enrichment': Phase C complete: concept↔deposit bidirectional indexing landed. Each entity-index concept now carries referenced_in[] and reference_count fields; each registry deposit now carries references_concepts[] and references_concept_count. 24,777 raw matches across 7,076 concepts × 865 texts; 2,120 concepts have ≥1 reference beyond defined_in; 846 deposits link to ≥1 concept. Top-referenced: Lee Sharks (709), Semantic Economy (492), Crimson Hexagonal Archive (478)."
+      ]
+    },
+    {
+      "index_version": "v1.0",
+      "date": "2026-06-23",
+      "changes": [
+        "operator_directive.for_workflows rewritten to reflect §6.2.1 step-3 rebuild architecture: self-serve depositing (no maintainer label gate), explicit sanitization layer in scripts/mint_deposit.py, canonical bytes redefined as the deposited text file (audit §6 fix), PR-creating with GitHub auto-merge as commit path (audit §23.1 PR + required-checks recommendation preserved), validate-registry.yml as the PR gate. Previous directive described the disabled workflow's behavior."
       ]
     }
   ]
