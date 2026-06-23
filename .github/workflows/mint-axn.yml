@@ -1,0 +1,561 @@
+# Mint AXN Identifier (rebuilt under §6.2.1 step 3)
+#
+# Replaces the disabled .github/workflows/mint-axn.yml.DISABLED which the
+# 2026-06-23 PM audit identified as P0 (Appendix A of WORKPLAN-SESSION-20260623.md):
+# public-issue-opening could initiate an unvalidated mutation of `main`.
+#
+# This rebuilt workflow:
+#
+#   - Triggers on issue opened/reopened with title starting "[DEPOSIT]"
+#     (NO maintainer label gate — depositors self-serve)
+#   - Validates submission via scripts/validate_deposit.py BEFORE any mutation
+#   - Calls scripts/mint_deposit.py which:
+#       * sanitizes user input (URL allowlist, BIDI strip, control chars)
+#       * computes AXN via scripts/axn_lib.py (single source of truth, v2)
+#       * anchors AXN to canonical text file bytes (audit §6 fix)
+#       * writes data/deposits/AXN-<HEX>.md in lockstep (audit §6.2.2 fix)
+#       * renders s/records/<N>/ via wire_deposit
+#   - Re-validates AFTER state mutation (defense in depth)
+#   - Runs scripts/regenerate_surfaces.py
+#   - Validates THIRD time (post-surface)
+#   - Opens a PR — does NOT push to main
+#   - Enables auto-merge on the PR; merges when validate-registry CI passes
+#
+# Rationale for self-serve + auto-merge (decision 2026-06-23, session
+# with Lee): the audit's "maintainer label" recommendation was one shape
+# of insertion-point for review, not the only one. Lee's editorial call
+# is that validation IS the gate — the sovereign archive cannot reproduce
+# the Zenodo gatekeeper pattern at exactly the moment it's escaping it.
+# Self-serve with validation+sanitization+PR-paper-trail+CI-defense is
+# audit-aligned (the audit's PR-creating + required-checks recommendation
+# is preserved). The depositor doesn't wait on human review.
+#
+# Idempotency: if the same issue triggers twice (close → reopen), the
+# workflow checks for an existing mint-* branch referencing the issue
+# number and exits without creating a duplicate PR.
+#
+# Identifier integrity: the AXN derived here uses scripts/axn_lib.py.
+# There is no inline glyph table in this workflow. Single source of truth.
+#
+# Created: 2026-06-23 evening (§6.2.1 step-3 rebuild, commit C)
+
+name: Mint AXN Identifier
+
+on:
+  issues:
+    types: [opened, reopened]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: 'Issue number to mint (manual trigger)'
+        required: true
+        type: number
+
+# Prevent racing on registry edits. If two issues fire near-simultaneously,
+# the second waits for the first to complete (or fail). Without this,
+# both could see the same `total_deposits` value and assign the same
+# deposit_number.
+concurrency:
+  group: mint-axn
+  cancel-in-progress: false
+
+jobs:
+  mint:
+    name: Validate and mint deposit
+    # Filter at job level so workflow_dispatch can run for any issue
+    if: |
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'issues' && startsWith(github.event.issue.title, '[DEPOSIT]'))
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # full history needed for rebase
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # ───────────────────────────────────────────────────────────────────
+      # PHASE 1 — FAMILIARIZATION (required by Operator Directive #4)
+      # ───────────────────────────────────────────────────────────────────
+
+      - name: Bootstrap familiarization
+        id: bootstrap
+        run: |
+          set -euo pipefail
+          python3 scripts/bootstrap_familiarization.py \
+              --strict \
+              --instance "mint-axn workflow run ${{ github.run_id }}" \
+              --receipt-file /tmp/familiarization-receipt.txt
+          echo "Bootstrap clean."
+
+      # ───────────────────────────────────────────────────────────────────
+      # PHASE 2 — RESOLVE ISSUE NUMBER & FETCH BODY
+      # ───────────────────────────────────────────────────────────────────
+
+      - name: Resolve issue number
+        id: issue_meta
+        uses: actions/github-script@v7
+        with:
+          script: |
+            let issueNumber;
+            if (context.eventName === 'workflow_dispatch') {
+              issueNumber = parseInt(context.payload.inputs.issue_number, 10);
+            } else {
+              issueNumber = context.payload.issue.number;
+            }
+            const { data: issue } = await github.rest.issues.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+            });
+            core.setOutput('issue_number', String(issueNumber));
+            core.setOutput('issue_title', issue.title);
+            core.setOutput('issue_author', issue.user.login);
+            core.setOutput('issue_body', issue.body || '');
+            return { issueNumber, title: issue.title, author: issue.user.login };
+
+      - name: Check for existing mint PR (idempotency guard)
+        id: existing_pr
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issueNumber = ${{ steps.issue_meta.outputs.issue_number }};
+            // Search for any PR that references this issue in its title or body
+            const { data: prs } = await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'all',
+              per_page: 100,
+            });
+            const tag = `mint: #${issueNumber} —`;
+            const branchTag = `-issue-${issueNumber}`;
+            const match = prs.find(p =>
+              (p.title && p.title.startsWith(tag)) ||
+              (p.head && p.head.ref && p.head.ref.includes(branchTag))
+            );
+            if (match) {
+              core.setOutput('exists', 'true');
+              core.setOutput('pr_number', String(match.number));
+              core.setOutput('pr_url', match.html_url);
+              core.setOutput('pr_state', match.state);
+              return { exists: true, pr_number: match.number, pr_url: match.html_url };
+            }
+            core.setOutput('exists', 'false');
+            return { exists: false };
+
+      - name: Comment if mint PR already exists
+        if: steps.existing_pr.outputs.exists == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issueNumber = ${{ steps.issue_meta.outputs.issue_number }};
+            const prUrl = "${{ steps.existing_pr.outputs.pr_url }}";
+            const prState = "${{ steps.existing_pr.outputs.pr_state }}";
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body: [
+                `## Mint already initiated`,
+                ``,
+                `A mint PR for this issue already exists: ${prUrl} (state: ${prState}).`,
+                ``,
+                `If that PR was closed without merging and you want to retry, please open a new issue rather than reopening this one — the workflow detects existing PRs by issue number.`,
+              ].join('\n'),
+            });
+            core.notice('Existing mint PR found; skipping new mint.');
+
+      - name: Stop if PR exists
+        if: steps.existing_pr.outputs.exists == 'true'
+        run: |
+          echo "Mint PR already exists; nothing to do."
+          exit 0
+
+      - name: Write issue body to file
+        if: steps.existing_pr.outputs.exists != 'true'
+        env:
+          ISSUE_BODY: ${{ steps.issue_meta.outputs.issue_body }}
+        run: |
+          set -euo pipefail
+          printf '%s' "$ISSUE_BODY" > /tmp/issue-body.md
+          echo "Issue body written ($(wc -c < /tmp/issue-body.md) bytes)"
+
+      # ───────────────────────────────────────────────────────────────────
+      # PHASE 3 — VALIDATE ISSUE BODY (HARD GATE #1)
+      # ───────────────────────────────────────────────────────────────────
+
+      - name: Validate issue body against deposit protocol
+        if: steps.existing_pr.outputs.exists != 'true'
+        id: validate_body
+        run: |
+          set +e
+          python3 scripts/validate_deposit.py \
+              --issue-body /tmp/issue-body.md \
+              --strict > /tmp/validate-body-output.txt 2>&1
+          ec=$?
+          set -e
+          cat /tmp/validate-body-output.txt
+          echo "validate_body_exit_code=$ec" >> "$GITHUB_OUTPUT"
+          if [ $ec -ne 0 ]; then
+            echo "validate_body_passed=false" >> "$GITHUB_OUTPUT"
+            exit 0  # don't fail the whole job; the next step posts the comment
+          fi
+          echo "validate_body_passed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Comment + label on validation failure
+        if: |
+          steps.existing_pr.outputs.exists != 'true' &&
+          steps.validate_body.outputs.validate_body_passed == 'false'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const issueNumber = ${{ steps.issue_meta.outputs.issue_number }};
+            const output = fs.readFileSync('/tmp/validate-body-output.txt', 'utf-8');
+            const body = [
+              `## ❌ Deposit validation failed`,
+              ``,
+              `Your submission did not pass validation against the canonical deposit protocol at \`api/deposit-protocol.json\`. The specific rule failures are listed below.`,
+              ``,
+              `### Validation output`,
+              ``,
+              '```',
+              output.trim(),
+              '```',
+              ``,
+              `### What to do`,
+              ``,
+              `1. Edit this issue's body to fix the listed failures (use the "Edit" pencil in the issue header).`,
+              `2. Once corrected, **close and reopen** this issue. The workflow will run validation again.`,
+              ``,
+              `Need help reading the rule IDs? See [api/deposit-protocol.json](https://github.com/${context.repo.owner}/${context.repo.repo}/blob/main/api/deposit-protocol.json) for each rule's definition.`,
+              ``,
+              `*This is automated validation. The deposit is not minted until all rules pass.*`,
+            ].join('\n');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body: body,
+            });
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              labels: ['deposit:needs-fixes'],
+            });
+
+      - name: Stop on validation failure
+        if: |
+          steps.existing_pr.outputs.exists != 'true' &&
+          steps.validate_body.outputs.validate_body_passed == 'false'
+        run: |
+          echo "Issue body failed validation. Comment posted; workflow exiting cleanly."
+          exit 1  # mark the run failed so it shows red
+
+      # ───────────────────────────────────────────────────────────────────
+      # PHASE 4 — MINT (sanitize + construct + write)
+      # ───────────────────────────────────────────────────────────────────
+
+      - name: Mint deposit (sanitize, derive AXN, write files)
+        if: steps.existing_pr.outputs.exists != 'true'
+        id: mint
+        run: |
+          set +e
+          python3 scripts/mint_deposit.py \
+              --issue-body /tmp/issue-body.md \
+              --issue-number ${{ steps.issue_meta.outputs.issue_number }} \
+              --output /tmp/mint-result.json 2> /tmp/mint-stderr.txt
+          ec=$?
+          set -e
+          echo "mint_exit_code=$ec" >> "$GITHUB_OUTPUT"
+          if [ $ec -ne 0 ]; then
+            echo "mint_passed=false" >> "$GITHUB_OUTPUT"
+            # Capture stderr for the comment
+            cat /tmp/mint-stderr.txt
+            exit 0
+          fi
+          echo "mint_passed=true" >> "$GITHUB_OUTPUT"
+          # Extract identifiers for downstream steps
+          python3 << 'PY' >> "$GITHUB_OUTPUT"
+          import json
+          r = json.load(open('/tmp/mint-result.json'))
+          print(f"deposit_number={r['deposit_number']}")
+          print(f"hex={r['hex']}")
+          print(f"family={r['family']}")
+          print(f"axn={r['axn']}")
+          print(f"hash={r['hash']}")
+          PY
+          # Write the new entry to a file for validate_deposit
+          python3 -c "
+          import json
+          r = json.load(open('/tmp/mint-result.json'))
+          json.dump(r['registry_entry'], open('/tmp/new-entry.json','w'),
+                    indent=2, ensure_ascii=False)
+          "
+          echo "Minted deposit #$(jq -r .deposit_number /tmp/mint-result.json)"
+
+      - name: Comment on mint failure (sanitization or internal)
+        if: |
+          steps.existing_pr.outputs.exists != 'true' &&
+          steps.mint.outputs.mint_passed == 'false'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const issueNumber = ${{ steps.issue_meta.outputs.issue_number }};
+            const stderr = fs.existsSync('/tmp/mint-stderr.txt')
+                            ? fs.readFileSync('/tmp/mint-stderr.txt', 'utf-8')
+                            : '(no stderr captured)';
+            const ec = "${{ steps.mint.outputs.mint_exit_code }}";
+            const kind = ec === '1' ? 'sanitization rejection' :
+                         ec === '3' ? 'internal mint error' : 'mint failure';
+            const body = [
+              `## ❌ Mint ${kind}`,
+              ``,
+              `Your submission passed initial schema validation but failed at the mint stage.`,
+              ``,
+              `### Details`,
+              ``,
+              '```',
+              stderr.trim() || '(no details)',
+              '```',
+              ``,
+              ec === '1'
+                ? [
+                    `### What this means`,
+                    ``,
+                    `The sanitizer rejected one of your submission's fields. Common causes:`,
+                    `- A URL in description/files/related_ids uses a non-allowlisted scheme (only http, https, and doi are permitted)`,
+                    `- A field contains BIDI override characters or other control characters`,
+                    `- A field exceeds the maximum length`,
+                    ``,
+                    `Fix the listed issue, then close and reopen this issue to retry.`,
+                  ].join('\n')
+                : [
+                    `### What this means`,
+                    ``,
+                    `An internal error occurred during minting. This is a workflow bug, not a submission problem.`,
+                    `Lee Sharks (MANUS) has been pinged via this comment; please leave the issue open.`,
+                  ].join('\n'),
+            ].join('\n');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body: body,
+            });
+
+      - name: Stop on mint failure
+        if: |
+          steps.existing_pr.outputs.exists != 'true' &&
+          steps.mint.outputs.mint_passed == 'false'
+        run: |
+          echo "Mint failed. Comment posted; workflow exiting."
+          exit 1
+
+      # ───────────────────────────────────────────────────────────────────
+      # PHASE 5 — VALIDATE NEW ENTRY (HARD GATE #2)
+      # ───────────────────────────────────────────────────────────────────
+
+      - name: Validate new registry entry
+        if: steps.existing_pr.outputs.exists != 'true'
+        run: |
+          python3 scripts/validate_deposit.py \
+              --registry-entry /tmp/new-entry.json \
+              --strict
+
+      # ───────────────────────────────────────────────────────────────────
+      # PHASE 6 — REGENERATE DERIVED SURFACES
+      # ───────────────────────────────────────────────────────────────────
+
+      - name: Regenerate derived surfaces (browse, chunks, sitemap, sums)
+        if: steps.existing_pr.outputs.exists != 'true'
+        run: |
+          python3 scripts/regenerate_surfaces.py
+
+      # ───────────────────────────────────────────────────────────────────
+      # PHASE 7 — POST-STATE FULL VALIDATION (HARD GATE #3)
+      # ───────────────────────────────────────────────────────────────────
+
+      - name: Validate full registry post-mint
+        if: steps.existing_pr.outputs.exists != 'true'
+        run: |
+          python3 scripts/validate_deposit.py \
+              --registry data/registry.json \
+              --strict
+
+      # ───────────────────────────────────────────────────────────────────
+      # PHASE 8 — BRANCH, COMMIT, PR (no direct push to main)
+      # ───────────────────────────────────────────────────────────────────
+
+      - name: Create branch and commit
+        if: steps.existing_pr.outputs.exists != 'true'
+        id: branch_commit
+        env:
+          DEPOSIT_NUMBER: ${{ steps.mint.outputs.deposit_number }}
+          HEX: ${{ steps.mint.outputs.hex }}
+          ISSUE_NUMBER: ${{ steps.issue_meta.outputs.issue_number }}
+          AXN: ${{ steps.mint.outputs.axn }}
+          ISSUE_TITLE: ${{ steps.issue_meta.outputs.issue_title }}
+        run: |
+          set -euo pipefail
+          BRANCH="mint/${HEX}-issue-${ISSUE_NUMBER}"
+          echo "branch=${BRANCH}" >> "$GITHUB_OUTPUT"
+          git config user.name "Alexanarch Bot"
+          git config user.email "bot@alexanarch.org"
+          git checkout -b "${BRANCH}"
+          git add data/registry.json \
+                  data/texts/ \
+                  data/deposits/ \
+                  data/chunks/ \
+                  data/browse-index.json \
+                  s/records/ \
+                  s/browse/ \
+                  sitemap.xml \
+                  SHA256SUMS.txt
+          # Strip the [DEPOSIT] prefix from the title for the commit subject
+          CLEAN_TITLE="${ISSUE_TITLE#"[DEPOSIT]"}"
+          CLEAN_TITLE="${CLEAN_TITLE# }"  # strip leading space
+          # Write the full commit message to a file (heredoc + git commit -F
+          # avoids the multi-`-m`/nested-heredoc fragility)
+          {
+            echo "Mint deposit #${DEPOSIT_NUMBER}: ${CLEAN_TITLE}"
+            echo
+            echo "AXN: ${AXN}"
+            echo "Hex: ${HEX}"
+            echo "Source: issue #${ISSUE_NUMBER}"
+            echo "Workflow: .github/workflows/mint-axn.yml (run ${{ github.run_id }})"
+            echo "Minted via self-serve validating workflow under §6.2.1 step-3 architecture."
+            echo
+            echo "Validation chain that passed before this commit:"
+            echo "  1. bootstrap_familiarization.py --strict"
+            echo "  2. validate_deposit.py --issue-body --strict"
+            echo "  3. mint_deposit.py (sanitization + canonical bytes + AXN derivation)"
+            echo "  4. validate_deposit.py --registry-entry --strict"
+            echo "  5. regenerate_surfaces.py"
+            echo "  6. validate_deposit.py --registry --strict (full post-state)"
+            echo
+            if [ -f /tmp/familiarization-receipt.txt ]; then
+              cat /tmp/familiarization-receipt.txt
+            else
+              echo "(familiarization receipt not captured)"
+            fi
+          } > /tmp/mint-commit-msg.txt
+          git commit -F /tmp/mint-commit-msg.txt
+
+      - name: Push branch
+        if: steps.existing_pr.outputs.exists != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git push origin "${{ steps.branch_commit.outputs.branch }}"
+
+      - name: Create PR with auto-merge enabled
+        if: steps.existing_pr.outputs.exists != 'true'
+        id: create_pr
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const branch = "${{ steps.branch_commit.outputs.branch }}";
+            const depositNumber = "${{ steps.mint.outputs.deposit_number }}";
+            const axn = "${{ steps.mint.outputs.axn }}";
+            const issueNumber = ${{ steps.issue_meta.outputs.issue_number }};
+            const issueTitle = `${{ steps.issue_meta.outputs.issue_title }}`;
+            const cleanTitle = issueTitle.replace(/^\[DEPOSIT\]\s*/, '').trim();
+
+            // Create the PR
+            const { data: pr } = await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `mint: #${issueNumber} — ${cleanTitle}`.slice(0, 256),
+              head: branch,
+              base: 'main',
+              body: [
+                `## Auto-minted deposit #${depositNumber}`,
+                ``,
+                `**AXN:** \`${axn}\``,
+                `**Source issue:** #${issueNumber}`,
+                `**Workflow run:** [${context.runId}](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})`,
+                ``,
+                `This PR was opened automatically by the self-serve mint workflow. The submission passed:`,
+                ``,
+                `- ✅ Bootstrap familiarization (api/index.json content_sha256 verification)`,
+                `- ✅ Issue-body validation against \`api/deposit-protocol.json\` rules`,
+                `- ✅ Sanitization (URL scheme allowlist, BIDI char stripping, length caps)`,
+                `- ✅ Schema validation of new registry entry`,
+                `- ✅ Surface regeneration (browse, chunks, sitemap, SHA256SUMS)`,
+                `- ✅ Full post-mint registry validation`,
+                ``,
+                `**Auto-merge:** enabled. This PR will merge automatically when the \`validate-registry\` CI status check passes.`,
+                ``,
+                `**To intervene before merge:** disable auto-merge via the PR's controls. The PR will then wait for manual review.`,
+                ``,
+                `Closes #${issueNumber}.`,
+              ].join('\n'),
+              maintainer_can_modify: true,
+            });
+
+            core.setOutput('pr_number', String(pr.number));
+            core.setOutput('pr_url', pr.html_url);
+            core.setOutput('pr_node_id', pr.node_id);
+
+            // Enable auto-merge via GraphQL
+            try {
+              await github.graphql(`
+                mutation($pullRequestId: ID!) {
+                  enablePullRequestAutoMerge(input: {
+                    pullRequestId: $pullRequestId,
+                    mergeMethod: SQUASH
+                  }) {
+                    pullRequest { number autoMergeRequest { enabledAt } }
+                  }
+                }
+              `, { pullRequestId: pr.node_id });
+              core.notice(`Auto-merge enabled on PR #${pr.number}`);
+            } catch (e) {
+              core.warning(`Could not enable auto-merge (${e.message}). PR is open and ready for manual merge once CI passes.`);
+            }
+
+            return { pr_number: pr.number, pr_url: pr.html_url };
+
+      # ───────────────────────────────────────────────────────────────────
+      # PHASE 9 — NOTIFY DEPOSITOR
+      # ───────────────────────────────────────────────────────────────────
+
+      - name: Comment on issue with PR link
+        if: steps.existing_pr.outputs.exists != 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issueNumber = ${{ steps.issue_meta.outputs.issue_number }};
+            const depositNumber = "${{ steps.mint.outputs.deposit_number }}";
+            const axn = "${{ steps.mint.outputs.axn }}";
+            const prUrl = "${{ steps.create_pr.outputs.pr_url }}";
+            const body = [
+              `## ✅ Deposit minted as #${depositNumber}`,
+              ``,
+              `**AXN:** \`${axn}\``,
+              `**Pull request:** ${prUrl}`,
+              `**Future location:** https://alexanarch.org/s/records/${depositNumber}/`,
+              ``,
+              `The PR has auto-merge enabled. It will merge automatically once the \`validate-registry\` CI check passes — usually within 1–2 minutes. Once merged, your deposit will deploy to alexanarch.org on Vercel's next build (typically another minute).`,
+              ``,
+              `If you spot anything that needs correction before merge, comment on the PR or contact leesharks00@gmail.com.`,
+              ``,
+              `Thanks for depositing.`,
+            ].join('\n');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body: body,
+            });
