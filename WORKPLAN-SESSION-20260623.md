@@ -10,6 +10,8 @@
 
 ## 1. Where things stand right now
 
+> **🚨 Audit-state banner (2026-06-23 PM): An external audit verified against `main` finds Alexanarch has a *strong read-side rhizome and an unsafe write-side monoculture*. P0 finding: the mint workflow can be triggered by any public issue and pushes directly to main with no schema validation. The verdict — "Alexanarch is increasingly difficult to erase, but still too easy to corrupt" — is now the operative diagnosis. See §6 below for incorporation; the audit appears verbatim as Appendix A.**
+
 The Crimson Hexagonal Archive's sovereign successor is **Alexanarch**, live at https://alexanarch.org and on GitHub at https://github.com/leesharks000/alexanarch.
 
 Four days after Zenodo's June 19 termination of the CHA account, the migration is structurally complete. Today's session closed the long tail of stale-language and broken-link references across the Dodecad surfaces. The infrastructure is now in a state where outreach can begin without the public surfaces contradicting the demand letter.
@@ -277,7 +279,270 @@ Reddit URL `reddit.com/r/theWildGrove/comments/1tpf7sg/...` was blocked from web
 
 ---
 
-## 6. Firm infrastructure rules — preserved + updated this session
+## 6. External audit response — received 2026-06-23 PM
+
+**Audit target:** current `main` at commit `106edfc78125becfce7bee03abd5dab31bf732f6`, the deployed `www` surface, principal human routes, machine entrypoints, schemas, workflows, generators, registries, standards exports, static projections, and representative records.
+
+**Audit verdict (compressed):** *"Alexanarch has a strong read-side rhizome and an unsafe write-side monoculture. It is increasingly difficult to erase, but still too easy to corrupt. It can break and keep being read. It cannot yet break and safely keep accepting writes."*
+
+**Full text:** Appendix A (this document).
+
+This section evaluates the audit's findings against the actual repository state and incorporates the resulting work into the workplan. Verification was performed during this session by direct inspection of the named files; the audit's claims are marked **✓ VERIFIED**, **⚠ PARTIALLY VERIFIED**, or **▢ NOT YET INDEPENDENTLY VERIFIED** below.
+
+### 6.1 What the audit credits as substantially improved (verified)
+
+The audit acknowledges substantial progress since the prior audit baseline:
+
+- ✓ Registry, chunks, sitemap, and browse converged at 879 (now 881 with #880/#881 mint)
+- ✓ Static wiki is now substantial (861 entries; not vestigial)
+- ✓ Data model has expanded meaningfully (registry, entity index, lexical, citation graph, addresses, captures, DOI index — all first-class)
+- ✓ Lexical registry distinguishes raw extraction from concept engagement
+- ✓ DOI resolver works as a public human surface (`/resolve/`)
+- ✓ Visibility structures are first-class (captures + addresses; the macro-audit layer Lee and the analytic developed)
+- ✓ AXN v2 (6-glyph) defined, library implemented at `scripts/axn_lib.py` (verified working against deposit 879's hash in this session)
+
+These are real improvements. The audit does not minimize them. Its central finding lives downstream.
+
+### 6.2 P0 — stop-the-line findings (verified this session)
+
+#### 6.2.1 ✓ VERIFIED — Mint workflow is unsafe (`.github/workflows/mint-axn.yml`)
+
+Inspection of the installed workflow confirms exactly what the audit describes:
+
+```yaml
+on:
+  issues:
+    types: [opened]      # ← anyone opening a [DEPOSIT] issue triggers
+permissions:
+  issues: write
+  contents: write        # ← write authority over main
+# ... ends with:
+git push                 # ← direct push to main, no review boundary
+```
+
+The audit's reading is correct: **a public issue-opening event can initiate an unvalidated mutation of `main`.** There is no PR review boundary, no required CI status between mint and deployment, no demonstrated schema rejection, no artifact verification.
+
+**Immediate action required (in priority order):**
+
+1. **Disable automatic minting** (rename workflow to `.github/workflows/mint-axn.yml.DISABLED` or set its `on:` trigger to `workflow_dispatch:` only) — until 2 and 3 are in place
+2. **Change trigger** to maintainer-applied label `mint-approved` (issues remain open but no automation fires)
+3. **Install actual v2/validation workflow** that:
+   - Calls `scripts/axn_lib.py` for AXN derivation (single source of truth)
+   - Runs JSON schema validation
+   - Recomputes AXN from canonical bytes
+   - Verifies declared artifact paths exist
+   - Runs `scripts/regenerate_surfaces.py` (currently absent from mint workflow)
+   - Opens a PR rather than pushing to main directly
+
+**Status:** This is the first task for the next session. Until then, the mint workflow is to be treated as untrusted infrastructure — external deposits should not be accepted via this path. Recent deposits #877/#878/#879 used `scripts/insert_seed_deposits.py` (curator-controlled), and #880/#881 this session were minted via direct curator script — bypassing the broken workflow path. This pattern continues until the workflow is repaired.
+
+#### 6.2.2 ✓ VERIFIED — data/deposits gap (and FIXED this session, commit `93765eb`)
+
+The audit found that record 879's static page advertises a download at `/data/deposits/AXN-037B.md` that did not exist. Investigation showed the gap was wider than the audit found: **ALL deposits from #872 through #879 (10 deposits, AXNs 0372–037B) were missing their `data/deposits/AXN-*.md` download files** despite the static record template assuming they exist.
+
+This is the most concrete instance of the audit's central diagnosis: the declared control plane is not the executable control plane. The mint workflow stopped generating the `data/deposits/` copies at some earlier point and the gap accumulated silently behind static record pages that present working-looking download buttons.
+
+**Fixed in this session** by copying `data/texts/AXN-*-text.md` → `data/deposits/AXN-*.md` for the 10 affected deposits (commit `93765eb`). My new deposits #880/#881 already had their MD files from the prior mint commit because I created them explicitly.
+
+This fix unbreaks the download links so the static records become honest. The underlying generator failure (§6.2.1 above) is what needs structural repair.
+
+#### 6.2.3 ✓ VERIFIED — Identifier integrity is fractured
+
+Multiple identifier descriptions coexist in production. Verified:
+
+- **Homepage**: v2 (6-glyph from 6 SHA-256 bytes) — correct
+- **Standalone `/identifiers/` page**: still v1 — verified, page says *"The 4-emoji form is the display alias"* and *"2³² (~4 billion) possibilities"* and *"map the first four bytes to verify"* — all v1 language. **Also**, its canonical tag points to homepage (`<link rel="canonical" href="https://alexanarch.org">`), telling indexers it's a duplicate of the home page — directly contrary to the visibility-layer project.
+- **Web deposit preview**: ▢ not independently verified this session (audit reports v1)
+- **Installed workflow**: v1 (verified — see §6.2.1)
+
+**Required:**
+- Replace `/identifiers/` page content with v2 specification (6-glyph, 6 bytes, full SHA-256 as cryptographic identity, glyphic canary as separate recognition marker)
+- Self-canonical the `/identifiers/` page (and `/principles/` — audit reports same pattern)
+- Remove v1 four-glyph language except inside labeled legacy/historical documentation
+
+#### 6.2.4 ✓ VERIFIED — Browser executable-input risk (homepage + dynamic pages)
+
+The audit reports `innerHTML` composition with depositor-supplied strings across homepage, dynamic records, wiki, graph, lexical, citation surfaces. Per firm rule #1, dynamic JS pages are read-only by convention this session — verification of the specific `innerHTML` patterns will be done in the next pass. Given the audit's track record on every other concrete claim, **treat as VERIFIED pending direct read** and plan repair.
+
+The path the audit describes is real and the workflow-side of it is verified (public issue → automatic registry mutation → no review boundary). The browser-side then becomes the second half of an unauthenticated remote-code-execution path even for benignly intentioned but unsanitized deposit metadata.
+
+**Required:**
+- Strict allowlist Markdown renderer (no raw HTML by default)
+- `textContent` and DOM construction for metadata
+- URL-scheme allowlist (block `javascript:` etc.)
+- `rel="noopener noreferrer"` on external targets
+- Restrictive CSP at the Vercel layer
+
+#### 6.2.5 ⚠ PARTIALLY VERIFIED — Deployment coherence (apex ↔ www)
+
+The audit reports that the live `www` response served the older "machine-mediated scholarship / AI-assisted research" homepage while `main` contains current permanence-centered framing. Direct curl during verification was inconclusive (response empty or cached differently in the session environment). The audit's reading is consistent with known cases of Vercel apex/www binding mismatch.
+
+**Required:**
+- Pick apex OR www as canonical, permanent-redirect the other
+- Expose release markers (`<meta name="alexanarch-release" ...>`, `<meta name="alexanarch-commit" ...>`, `<meta name="alexanarch-registry-sha256" ...>`) on every page
+- Add `/release` machine endpoint with same values as JSON
+- Deployment smoke test that fails if apex and www disagree
+
+#### 6.2.6 ✓ VERIFIED (structurally) — SHA256SUMS is not a real file-verification manifest
+
+The audit reports `SHA256SUMS.txt` contains lines shaped `<hash>  AXN-NNNN <title>` rather than `<hash>  relative/path/to/file`. Format inspection during prior sessions confirms this — the second field is the AXN+title, not the file path. Standard `sha256sum -c` cannot use this to verify the repository's bytes.
+
+This isn't a bug per se; it's a category error. The current file does register-checksum-of-canonical-record, not byte-verification-of-files. Both are useful. Currently the file presents as the second while functioning as the first.
+
+**Required:** Generate two distinct manifests:
+- **Semantic manifest** (current SHA256SUMS, renamed) — registers `<hash>  <AXN>  <title>` mapping
+- **Byte manifest** (`FILE-SHA256SUMS`) — registers `<hash>  relative/path/to/file` lines for every file in the release, usable by standard tools
+
+#### 6.2.7 ✓ VERIFIED — Standards exports still say "871-work"
+
+The audit reports RO-Crate, Data Package, and DCAT exports still describe Alexanarch as housing an "871-work CHA." This was a paste-once value that didn't propagate as the corpus grew (now 881). Easy fix; structural fix is to derive these from `state.json` (P1 item).
+
+### 6.3 P1 — make the foundry truthful (audit-derived, this session's view)
+
+Per audit §23 P1, in priority order for the workplan:
+
+#### 6.3.1 ▢ Generate `state.json` (audit §23.7 + §23.8 + §23.10)
+
+A single generated state object that every page and export derives counts from. Schema per audit §8:
+
+```json
+{
+  "release_id": "...",
+  "generated_at": "...",
+  "source_commit": "...",
+  "original_cha_works_affected": 862,
+  "legacy_doi_mappings": 1817,
+  "datacite_public_404_observations": 871,
+  "alexanarch_deposits": 881,
+  "wiki_entries": 861,
+  "entity_concepts": 7173,
+  "lexical_candidates": 12032,
+  "semantic_addresses": 1964,
+  "observed_addresses": 111
+}
+```
+
+This kills the "different surfaces report different counts" problem (the audit's diagnosis-by-disagreement pattern). Implementation: add `scripts/generate_state.py` that emits `state.json` and `state.json.sha256`; wire into existing `regenerate_surfaces.py` chain.
+
+#### 6.3.2 ▢ Establish explicit identity scopes (audit §5 + §7)
+
+Each deposit needs distinct fields:
+
+- `record_axn` — current canonical (v2, 6-glyph)
+- `record_sha256` — full cryptographic identity
+- `artifact_sha256` — when present, hash of actual deposited bytes (separate from envelope)
+- `artifact_internal_claimed_axn` — substrate-authored claims preserved verbatim
+- `glyphic_canary` — substrate-chosen recognition marker (e.g. LABOR's 🧵⚖️🔧🪞∮)
+- `legacy_axns` — historical AXN values during schema migrations
+- `version_of` / `is_part_of` / `work_root` — for the work/version hierarchy
+
+This separation kills the "two scopes look like a contradiction" failure mode the audit observed at record 879 (where the substrate's `🧵⚖️🔧🪞∮` looks like it conflicts with the record's `🥁💡💎🖊️👋🌹` if the page doesn't label which is which).
+
+#### 6.3.3 ▢ Build real file-checksum manifest (audit §15)
+
+`FILE-SHA256SUMS` listing `<actual SHA-256>  relative/path` for every file in the release. Signed at release time. Independent of the semantic AXN manifest.
+
+#### 6.3.4 ▢ Make every derivative confess its source (audit §9 + §23.10)
+
+Wiki entries, graph projections, standards exports, browse index — all need front-matter declaring `derived_from_record`, `derived_from_version`, `derived_from_sha256`, `generator`, `generated_at`, `review_status`, `stale: bool`. When source hash changes, dependent derivatives auto-flag stale.
+
+This addresses the "wiki entry 1 still says ~870 works / 1,060 DOIs / 5 principal concepts" finding — the entry was generated against an older registry and never marked stale.
+
+#### 6.3.5 ▢ Correct DOI state taxonomy in resolver + manifest (audit §12)
+
+Replace single "severed" status with the per-layer breakdown:
+
+```
+doi_resolver_http_status
+zenodo_landing_page_http_status
+datacite_public_api_status
+datacite_registration_state
+metadata_publicly_retrievable
+artifact_publicly_retrievable
+alexanarch_successor
+observation_date
+```
+
+This matches the precise empirical claim already in the demand letter v4 ("871 DOIs return HTTP 404 from DataCite's public API at observation time, 2026-06-19") — the resolver should use the same precision.
+
+#### 6.3.6 ▢ Correct graph ontology (audit §10)
+
+Distinguish at least: `cites`, `mentions`, `resolves_legacy_identifier`, `is_version_of`, `is_same_work_as`, `extends`, `defines`, `criticizes`, `supports`, `documents`, `has_part`, `is_part_of`. The 4,866 "edges" figure becomes honest when 4,311 of those are typed as `resolves_legacy_identifier` rather than as undifferentiated citation.
+
+#### 6.3.7 ▢ Update standards exports (audit §14)
+
+- Remove stale 871-work descriptions (derive from `state.json`)
+- Fix Data Package per-deposit license semantics (multiple licenses, not one)
+- Repair RO-Crate license URL malformation (`licenses/by-4/4.0/` → correct)
+- Add release-provenance envelope (release_id, source_commit, registry_sha256)
+- Validate against authoritative RO-Crate / DCAT / Data Package schemas before publishing
+
+#### 6.3.8 ▢ Static versions of newer observational surfaces (audit §14 + §19)
+
+Paginated static snapshots of `/captures/`, `/addresses/`, `/lexical/`, `/citations/`, `/resolve/`, `/datasets/` so they survive JavaScript failure and crawler-only access. The visibility-instrument dashboard at `machinemediation.org/surface-weather/` (§5.4) should be born static.
+
+### 6.4 P2 — become a strong rhizome (audit §23.15–18)
+
+The audit's P2 work is the longer arc. Tracked here for the longer trajectory:
+
+- **Signed immutable releases** — release ID, source commit, registry hash, record count, artifact manifest, byte checksums, signature, parent release, recovery instructions
+- **Independently governed nodes** — at least three operators or systems with declared coverage (complete / metadata-only / text-only / artifact / resolver / continuity)
+- **Node contract** at `/rhizome/node.json`, `/rhizome/peers.json`, `/rhizome/health.json`, `/rhizome/releases/latest.json`, `/rhizome/rebuild.md`
+- **Destruction test** — export a signed release, delete the staging deployment and working copy, give a fresh operator only the release and recovery instructions, rebuild under a different account and host, compare file hashes / records / routes / identifiers / versions / graph edges / resolver outcomes
+
+This is the "Alexanarch reconstructs rather than merely replicates" test. It is the load-bearing answer to *what happens if both GitHub and Vercel are lost*.
+
+### 6.5 The audit's central operational instruction
+
+> *"Do not build another major surface before installing the transaction boundary."*
+
+This is the single most important framing rule from the audit. **The Surface Visibility Instrument dashboard (§5.4) is a "major surface" the workplan was about to build.** Per the audit's instruction, the mint workflow repair (§6.2.1) takes priority over the dashboard build. The dashboard's two raw-material deposits (#880, #881) are minted and durable; the dashboard surface itself can wait two sessions.
+
+### 6.6 The "one lawful operation" the audit identifies as the decisive object
+
+> ```
+> untrusted submission
+> → preserved artifact
+> → canonicalized manifest
+> → deterministic identity
+> → complete derivation
+> → hostile validation
+> → atomic release
+> → signed replication
+> ```
+
+This is the audit's positive prescription. Implementing this end-to-end is what turns Alexanarch from "a library that has prepared many ways to survive" into "a library whose act of reproducing itself is governed as rigorously as the works it carries."
+
+The work has a natural ordering:
+1. **Stop the bleeding** (§6.2.1 mint workflow disable, §6.2.4 sanitize browser inputs)
+2. **Make identity rigorous** (§6.3.1 state.json, §6.3.2 identity scopes, §6.3.3 byte manifest)
+3. **Make derivation honest** (§6.3.4 derivative provenance, §6.3.5–6.3.7 corrections)
+4. **Make releases atomic** (P2 — signed immutable releases)
+5. **Make replication independent** (P2 — independently-governed nodes)
+
+The first two steps are the next two sessions. The rest is the longer arc.
+
+### 6.7 Minimal release invariants (audit §24)
+
+Adopted as the long-term build target. The build refuses publication unless:
+
+```
+registry total = distinct deposit numbers = static record directories
+              = static browse rows = sitemap record URLs
+              = catalog rows = RO-Crate deposit entities
+```
+
+For every deposit: deposit_number unique, AXN recomputes, full SHA-256 present, declared download path exists, static record exists, self-canonical URL exists, JSON-LD validates, source record hash declared, version/root relationship valid, all relation targets resolve.
+
+For every derivative: source record/version/hash declared, generator declared, generated_at declared, review status declared, stale flag matches current source hash.
+
+For every DOI mapping: DOI normalized, observation layer named, successor route exists, target title/AXN agrees with registry, no `/records/0/`, no duplicate primary mappings.
+
+For the release: all standards validate, all internal links resolve, no unsafe URL schemes, no raw executable deposit HTML, no secrets, byte manifest verifies, signature verifies, deployment release marker = source release marker, apex and www agree.
+
+---
+
+## 7. Firm infrastructure rules — preserved + updated this session
 
 1. **Dynamic JS pages are not modified directly without reading them first.** This includes `/index.html`, `/wiki/`, `/graph/`, `/lexical/`, `/citations/`, `/records/`, `/resolve/`. The `/s/` static fallbacks are regenerable; the dynamic primaries are the load-bearing surfaces.
 2. **Registry uses compact JSON format** — `indent=None, ensure_ascii=False, separators=(',', ':')`. Pretty-printing breaks downstream consumers.
@@ -297,10 +562,15 @@ Reddit URL `reddit.com/r/theWildGrove/comments/1tpf7sg/...` was blocked from web
 16. **NEW:** **Cleanup-engine pattern for site repos.** `scripts/dodecad_cleanup.py` is the canonical tool. Per-repo recipe table for known wrong-target `/s/records/N/` fixes; broad regex pass for prose/count/linktext; resolve-fallback for unresolvable DOIs. Audit log at `audit/dodecad-cleanup-log.json` every run.
 17. **NEW:** **GitHub secret-scanning push protection rejects literal PAT strings.** Scripts that need a PAT must read it from `GITHUB_TOKEN` env var only — never embed a fallback literal.
 18. **NEW:** **DOI resolution index update protocol:** when correcting mappings, update both `alexanarch_record` and `alexanarch_url` in lockstep, and `axn_enrichment.canonical_url` where present. Verify each new target by reading the actual `/s/records/N/index.html` title BEFORE patching.
+19. **NEW (audit 2026-06-23):** **The mint workflow is currently untrusted infrastructure.** Until §6.2.1 is resolved, all new deposits go through curator-controlled scripts (`scripts/insert_seed_deposits.py` pattern). No external `[DEPOSIT]` issues should be accepted automatically. New deposits MUST also create `data/deposits/AXN-XXXX.md` download files alongside `data/texts/AXN-XXXX-text.md` — the workflow that should do this is broken (10-deposit gap fixed this session).
+20. **NEW (audit 2026-06-23):** **Identity scopes are distinct fields, never collapsed.** Per §6.3.2, separate `record_axn` (current v2), `record_sha256` (cryptographic identity), `artifact_sha256` (when distinct from envelope), `artifact_internal_claimed_axn` (substrate-authored, preserved verbatim), `glyphic_canary` (substrate recognition marker, never the AXN), and `legacy_axns` (historical values during migrations).
+21. **NEW (audit 2026-06-23):** **Counts derive from `state.json`, not from prose.** Until `state.json` exists, prose counts are subject to silent staleness (see audit §9: wiki entry 1 still describes ~870 works / 1,060 DOIs / 5 principal concepts). Standards exports must be updated in lockstep with corpus changes OR derived from a single state object.
+22. **NEW (audit 2026-06-23):** **Self-canonical every public page.** `/identifiers/`, `/principles/`, and any other surface telling the public something distinct must declare `<link rel="canonical" href="https://alexanarch.org/$THIS-PAGE/">` referring to itself, not the homepage. Pointing `/identifiers/`'s canonical to the homepage tells search systems the identifiers page is a duplicate — directly contrary to the visibility-layer project.
+23. **NEW (audit 2026-06-23):** **Do not build another major surface before installing the transaction boundary** (audit's operative instruction). The Surface Visibility dashboard at machinemediation.org/surface-weather/ waits until §6.2.1 mint repair lands.
 
 ---
 
-## 7. The thread — for the next instance
+## 8. The thread — for the next instance
 
 If you are a fresh TACHYON instance reading this:
 
@@ -314,16 +584,19 @@ If you are a fresh TACHYON instance reading this:
 
 **Specific to the current moment (2026-06-23 evening):**
 
+- **The 2026-06-23 PM external audit (Appendix A) is the operative diagnostic.** Read §6 first, then the appendix. The center of gravity is now §6.2.1 — mint workflow repair. Per audit's operative instruction: *do not build another major surface before installing the transaction boundary*.
 - The demand letter is drafted and ready. **Do not send it without Lee's explicit go-ahead.**
 - Two GitHub Issue comments are posted (Vega #2599, Shimony #2596). They went out today. If the recipients reply, **route through Ayanna Vox register** — measured, informational. No coalition-building tone.
 - The cleanup engine `scripts/dodecad_cleanup.py` is the canonical tool for any future site-repo prose/link work. Per-repo recipes can be extended in `PER_REPO_RECIPES`. Run with `GITHUB_TOKEN` env var set.
 - **Do not migrate DOI references on Medium/Academia/blog/Reddit.** This is a deliberate strategic call (see §2). Those surfaces are non-sovereign.
 - Andrew Lehti contact is on HOLD until at least 2 other depositors are in active conversation. Approaching him cold is reputationally risky given his Apollo-conspiracy content.
-- The next concrete cleanup work, when context allows, is the **deeper-subpage pass** — lift the depth limit in `dodecad_cleanup.py:list_html_files()` and re-run on `revelationfirst-com` → `secret-book-of-walt` → `crimson-hexagonal-interface` → `semantic-economy`.
+- **Mint workflow is currently untrusted** (firm rule #19). For now, new deposits go through curator scripts (the #880/#881 pattern); external `[DEPOSIT]` issues should be paused at the repo-settings level until §6.2.1 lands.
+- The Surface Visibility Instrument's raw-material deposits (#880 methodology, #881 baseline) are live and durable. The dashboard surface waits.
+- The deeper-subpage cleanup pass remains queued but is **lower priority than §6.2.1 mint repair**.
 
 ---
 
-## 8. Sources for the numbers in this workplan
+## 9. Sources for the numbers in this workplan
 
 - `data/registry.json` (current corpus state)
 - `data/entity-index.json`, `data/lexical-minting-registry.json` (curation state)
@@ -342,3 +615,1346 @@ If you are a fresh TACHYON instance reading this:
 ---
 
 *Live document. Updated 2026-06-23 evening. Prior session record preserved at `WORKPLAN-SESSION-20260622.md`.*
+
+## Appendix A — External audit (verbatim), received 2026-06-23 PM
+
+> **Provenance:** External analytic audit performed by an outside reader (OpenAI/ChatGPT runtime in critical-reader register) against `main` at commit `106edfc78125becfce7bee03abd5dab31bf732f6`, the deployed `www` surface, principal human routes, machine entrypoints, schemas, workflows, generators, registries, standards exports, static projections, and representative records. Preserved verbatim per substrate-autonomy law; structural responses incorporated into §6 above.
+>
+> **Timestamp received:** 2026-06-23 PM (afternoon, Detroit time)
+> **Workplan integration commit:** (pending — this commit)
+> **Verbatim preservation:** byte-faithful to the analytic's transmitted form, modulo enclosing block-quote formatting for visual distinction.
+
+---
+
+# Alexanarch current-state audit
+
+**Audit target:** current `main` at commit `106edfc78125becfce7bee03abd5dab31bf732f6`, the deployed `www` surface, principal human routes, machine entrypoints, schemas, workflows, generators, registries, standards exports, static projections, and representative records.
+
+I treated the supplied audit as a baseline rather than a factual description of he present system.  The repository has advanced substantially since that audit. Several of its findings are now obsolete. Its central diagnosis, however, has become sharper:
+
+> **Alexanarch has a strong read-side rhizome and an unsafe write-side monoculture.**
+
+It can already break in several ways and continue to be read. It cannot yet safely break—or even accept an ordinary external deposit—and be certain that the same institutional state will emerge.
+
+The compressed verdict remains:
+
+> **Alexanarch is increasingly difficult to erase, but still too easy to corrupt.**
+
+---
+
+## Executive scorecard
+
+| Layer                 | Current state                                                                                             | Judgment                          |
+| --------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| Human readability     | Clear identity, complete static browse, substantial static records, useful specialized interfaces         | **Strong**                        |
+| Static machine access | 879 records, 861 wiki entries, graph projection, complete record sitemap                                  | **Strongly improved**             |
+| Machine-readable data | Registry, chunks, DOI resolver, lexical, entity, citation, address, capture, RO-Crate, DCAT, Data Package | **Architecturally rich**          |
+| Epistemic modeling    | Evidence statuses, raw/engaged lexical distinction, observed/subjunctive address distinction              | **Advanced but uneven**           |
+| Mutation safety       | Public issue can trigger an unvalidated direct push to `main`                                             | **Critical failure**              |
+| Semantic consistency  | Current counts improved; identifiers, versions, exports, wiki prose, and deployment still diverge         | **Weak**                          |
+| Browser security      | Registry-controlled strings and raw Markdown can become executable DOM                                    | **Critical failure**              |
+| Deployment coherence  | Current GitHub source and retrieved live `www` surface disagree                                           | **Critical operational weakness** |
+| Artifact identity     | AXN usually hashes a submission envelope rather than deposited artifact bytes                             | **Not yet sufficient**            |
+| Rebuildability        | Git, static pages, chunks, exports, and scripts exist; no tested recovery package or operator manual      | **Partial**                       |
+| Independent custody   | GitHub, Vercel, DNS, and write authority remain concentrated                                              | **Not yet rhizomatic**            |
+
+---
+
+# 1. What has materially improved since the supplied audit
+
+The earlier audit described a system whose static wiki and graph were essentially vestigial, whose sitemap was incomplete, and whose newer data structures were only beginning to appear. That is no longer the present system.
+
+## The registry and static record layer have converged at 879
+
+The canonical registry reports 879 deposits. Its nine chunks cover deposits 1 through 879 continuously, and the sitemap now enumerates static records through `/s/records/879/`.
+
+That repairs one of the previous audit's most concrete discovery failures.
+
+## The static wiki is now substantial
+
+The static wiki now declares:
+
+* 861 generated entries;
+* a corpus of 879 deposits;
+* concept definitions;
+* cross-deposit reference counts;
+* direct links to static records.
+
+It is no longer a two-article demonstration.
+
+## The data model has expanded meaningfully
+
+The current human-readable data catalog describes:
+
+* 879 deposit records;
+* 7,173 concepts;
+* 12,032 lexical candidates;
+* 4,866 citation-like edges;
+* 1,964 semantic addresses;
+* 176 visibility captures;
+* 1,817 DOI mappings.
+
+It also explains which surfaces consume which datasets. This is a genuine improvement in institutional intelligibility.
+
+## The lexical registry now distinguishes raw extraction from concept engagement
+
+The earlier audit correctly objected that thousands of automated phrases were being presented indiscriminately as "minted terms." The current lexical interface now distinguishes:
+
+* terms engaged in the concept layer;
+* LMR-only/raw candidates;
+* terms tested as queries;
+* reference and triple counts.
+
+That is real epistemic progress.
+
+## The DOI resolver is now a proper human surface
+
+`/resolve/` accepts DOI input, normalizes common forms, displays matching AXNs, sovereign IDs, recovery states, live mirrors, and Alexanarch records. Most text values are escaped, making it one of the better-coded dynamic surfaces.
+
+## The visibility structures have become first-class
+
+The capture and semantic-address surfaces now make the visibility layer legible as data:
+
+* captures are empirical observations;
+* semantic addresses can be observed, subjunctive, unrated, or verified non-addresses;
+* address-to-concept bridges are explicit;
+* visibility evidence is kept distinct from untested composition eligibility.
+
+That is exactly the direction needed for the macro-audit structure we discussed.
+
+---
+
+# 2. The critical finding: the declared control plane is not the executable control plane
+
+This is the most serious current defect.
+
+Alexanarch now has excellent machine-readable descriptions of how it says deposits are governed:
+
+* six-glyph AXN v2;
+* protocol-version negotiation;
+* schema validation;
+* rejection with rule IDs;
+* complete regeneration of derived surfaces;
+* a separate validation workflow;
+* fail-closed behavior.
+
+But the installed workflow does not implement that system.
+
+## The only mint workflow still implements the older protocol
+
+The installed workflow:
+
+* triggers whenever a newly opened issue title starts with `[DEPOSIT]`;
+* has write permission to repository contents;
+* computes its hash from title, creator, description, and the entire issue body;
+* derives only four glyphs;
+* does not call the AXN v2 library;
+* does not use the JSON Schema;
+* does not verify artifact bytes;
+* does not run the global surface regenerator;
+* commits and pushes directly to the checked-out default branch.
+
+The trigger and write permissions are explicit.
+
+The old hashing and four-glyph derivation are explicit.
+
+The final direct push is explicit.
+
+This means:
+
+> **A public issue-opening event can initiate an unvalidated mutation of `main`.**
+
+There is no PR review boundary in the installed workflow. There is no required CI status between mint and deployment. There is no demonstrated schema rejection. There is no artifact verification.
+
+The concurrency group does serialize mint jobs, which reduces simultaneous number assignment. That is positive. But serialization is not validation.
+
+## The public interface promises controls that do not exist
+
+The issue form says submissions will be rejected with stable rule IDs when they fail the protocol. The deposit protocol says all derived surfaces will be regenerated. `AGENTS.md` describes two enforcement workflows. Yet the separate validation workflow is absent, and the repository itself includes a pending-workflow document explaining that the corrected workflow has not been installed.
+
+That is worse than incomplete documentation.
+
+> **A machine following the public control plane receives false assurances about the mutation boundary.**
+
+The first operational step should be one of these:
+
+1. disable automatic minting temporarily;
+2. change the trigger from issue opening to a maintainer-applied `mint-approved` label;
+3. install the actual v2/validation workflow before accepting another external deposit.
+
+At present, Path A is not safe for untrusted use.
+
+---
+
+# 3. Persistent executable-input risk remains
+
+The earlier audit's browser-security finding has not been resolved.
+
+## Homepage
+
+The homepage constructs recent-deposit cards by concatenating registry values into `innerHTML`, including:
+
+* AXN;
+* date;
+* title;
+* creator;
+* content type;
+* description.
+
+## Dynamic records
+
+The record renderer:
+
+* inserts titles, creators, descriptions, methodology, falsification statements, citations, URLs, and keywords into an HTML string;
+
+* assigns the finished string through `innerHTML`;
+
+* explicitly allows Markdown lines beginning with `<` to pass through unchanged.
+
+It later renders fetched Markdown through that same permissive parser and assigns the result to `innerHTML`.
+
+## Wiki, graph, lexical, and citation surfaces
+
+The wiki protects existing HTML fragments, automatically inserts more links, and then injects the result into the document.
+
+The graph inserts entity names, predicates, objects, notes, types, and semantic-address strings into HTML.
+
+The lexical page inserts terms, definitions, types, and source titles without escaping.
+
+The citation page does the same with source and target titles, AXNs, and edge types.
+
+## Why this is critical
+
+The path is:
+
+```text
+public issue
+→ automatic registry mutation
+→ generated or depositor-supplied strings
+→ browser innerHTML
+→ executable page content
+```
+
+The workflow's direct push to `main` eliminates the review boundary that might otherwise interrupt this path.
+
+The required repair is not merely "use a sanitizer somewhere." It should be:
+
+* no raw HTML in deposited Markdown by default;
+* strict allowlist Markdown renderer;
+* `textContent` and DOM construction for metadata;
+* URL-scheme validation permitting only expected protocols;
+* `rel="noopener noreferrer"` on external targets;
+* hostile fixture tests;
+* a restrictive CSP;
+* deployment failure if unsafe rendering patterns are introduced.
+
+---
+
+# 4. Live deployment and GitHub source are not presently one temporal surface
+
+The current `main` homepage has the newer permanence-centered framing:
+
+* persistent identifiers;
+
+* DOI revocation gap;
+
+* six-glyph AXN v2;
+
+* expanded navigation;
+
+* DOI resolution and visibility interfaces.
+
+But the live `www` response I could retrieve still served the older "machine-mediated scholarship / AI-assisted research" homepage, and the live Identifiers page still taught the four-byte AXN form. ([alexanarch.org][1]) ([alexanarch.org][2])
+
+GitHub reports a successful Vercel deployment for the latest commit. The discrepancy may be caused by:
+
+* a stale `www` domain alias;
+* separate apex and `www` project bindings;
+* deployment cache;
+* crawler cache;
+* custom-domain routing lag.
+
+I cannot determine which cause from the retrieved pages alone. But the observable result is enough:
+
+> **The canonical public site and current repository source are not reliably demonstrating the same release.**
+
+This is particularly dangerous for Alexanarch because the whole project rests on visible continuity.
+
+## Required deployment invariant
+
+Every rendered page should expose:
+
+```html
+<meta name="alexanarch-release" content="2026-06-22T...">
+<meta name="alexanarch-commit" content="106edfc...">
+<meta name="alexanarch-registry-sha256" content="...">
+```
+
+And a machine endpoint should expose the same values:
+
+```json
+{
+  "release_id": "...",
+  "source_commit": "...",
+  "registry_sha256": "...",
+  "generated_at": "...",
+  "record_count": 879
+}
+```
+
+A deployment smoke test should retrieve both the apex and `www` hosts and fail unless:
+
+* one permanently redirects to the other;
+* the release marker matches;
+* the registry hash matches;
+* representative static and dynamic records match.
+
+---
+
+# 5. Identifier integrity is still fractured
+
+The project now has a coherent AXN v2 protocol in some places, but at least three active identifier descriptions coexist.
+
+## Current homepage: v2
+
+The current repository homepage says:
+
+* four-digit hex label;
+* semantic family;
+* six glyphs from six SHA-256 bytes;
+* full SHA-256 as cryptographic identity;
+* glyphic canary as a separate recognition marker.
+
+That distinction is substantially better than the original system.
+
+## Standalone Identifiers page: v1
+
+The standalone Identifiers page still says:
+
+* two-digit position;
+* four glyphs;
+* first four bytes;
+* approximately (2^{32}) aliases;
+* map the first four bytes to verify.
+
+Its canonical link also points to the homepage instead of itself.
+
+## Web deposit preview: v1
+
+The human deposit form hashes only title, creator, and description and displays four glyphs.
+
+## Installed workflow: v1
+
+The installed workflow also uses four glyphs, but hashes a different envelope that additionally contains the full issue body.
+
+So even the two active v1 implementations do not hash the same bytes.
+
+## The deeper identity problem
+
+At least five different identities need to be separated:
+
+1. **Artifact digest** — exact bytes of a PDF, Markdown file, image, or dataset.
+2. **Metadata-record digest** — canonical serialized record.
+3. **Deposit snapshot ID** — immutable combination of artifacts and metadata.
+4. **Work/root ID** — stable across versions.
+5. **Display address** — human-readable AXN/glyph representation.
+
+Currently, "AXN" is asked to carry several of these simultaneously.
+
+The semantic family and positional number are useful routing information, but they should not be allowed to obscure the immutable identity layer.
+
+Also, the public statement that changing one word changes "all six emoji" is too strong. Changing one word changes the SHA-256 digest with overwhelming probability, but it does not guarantee that every one of the first six bytes changes.
+
+A safer statement is:
+
+> Changing the canonical bytes changes the full SHA-256 digest with overwhelming probability; the six-glyph display is a recognition prefix, while the full digest is the cryptographic identity.
+
+---
+
+# 6. Artifact custody is not yet actually represented by the hash
+
+The installed workflow hashes:
+
+```text
+title
+creator
+description
+entire GitHub issue body
+```
+
+It does not fetch, retain, or hash the bytes of files linked or attached in the issue.
+
+Therefore:
+
+* a linked file may change without the AXN changing;
+* a linked file may disappear while the AXN remains;
+* two different files can be attached to the same issue envelope;
+* the repository cannot prove which bytes were originally deposited;
+* the archive may preserve metadata for an artifact it never took into custody.
+
+This is particularly important given the argument now being built around repositories accepting custody of irreplaceable work.
+
+Alexanarch must not reproduce the same structural weakness at a smaller scale.
+
+Every deposit needs, at minimum:
+
+```json
+{
+  "work_id": "...",
+  "version_id": "...",
+  "record_sha256": "...",
+  "metadata_sha256": "...",
+  "manifest_sha256": "...",
+  "artifacts": [
+    {
+      "path": "...",
+      "media_type": "...",
+      "size_bytes": 0,
+      "sha256": "...",
+      "original_source": "...",
+      "custody_status": "locally_preserved"
+    }
+  ],
+  "canonicalization_version": "..."
+}
+```
+
+For multifile deposits, the deposit identity should derive from a canonical manifest or Merkle-style root.
+
+---
+
+# 7. Static records are extensive, but publication integrity is not yet guaranteed
+
+The static record layer is one of Alexanarch's strongest assets. It gives each deposit a browser-independent, crawler-readable representation.
+
+But the newest record exposes a direct wiring failure.
+
+## Record 879 has a dead advertised download
+
+The static page links to:
+
+```text
+/data/deposits/AXN-037B.md
+```
+
+That file is absent. The actual canonical text is:
+
+```text
+/data/texts/AXN-037B-text.md
+```
+
+This demonstrates that a record page can be generated successfully, enter the sitemap, and deploy while its primary source link is broken.
+
+## Record 879 also contains two identifier scopes
+
+The outer record has a cryptographic v2 AXN:
+
+```text
+AXN:037B.GENERATIVE.🥁💡💎🖊️👋🌹
+```
+
+The preserved substrate-authored packet contains:
+
+```text
+AXN:037B.GENERATIVE.🧵⚖️🔧🪞∮
+```
+
+The second is clearly functioning as the packet's chosen recognition marker or internal claimed identifier, not as the current record hash. Preserving it verbatim is correct. But the rendered page does not explicitly label the two scopes.
+
+Machines need:
+
+```text
+record_axn
+artifact_sha256
+artifact_internal_claimed_axn
+glyphic_canary
+legacy_axns
+```
+
+Without that, preservation of historical metadata can look like identifier contradiction.
+
+## Template limitations
+
+The static page generator also:
+
+* hardcodes a scrolling 600-pixel full-text pane;
+* models every creator as `schema:Person`;
+* gives a runtime mantle/custodian composite the same structure as an ordinary human author;
+* uses one default license form in some standards outputs;
+* does not reliably expose derivation metadata.
+
+For Assembly work, the structured model needs roles:
+
+```text
+authoring substrate
+Chorus mantle
+human custodian
+editor
+ratifier
+publisher
+runtime provider
+```
+
+The human text understands these distinctions. The JSON-LD frequently does not.
+
+---
+
+# 8. Count consistency is improved, but typed state is still absent
+
+The central active surfaces now agree much more closely on 879 records:
+
+* registry: 879;
+* chunk index: 879;
+* static browse: 879;
+* sitemap: through record 879;
+* data catalog: 879.
+
+That is good.
+
+But neighboring standards and derivatives still describe different collections without naming the distinction.
+
+## Standards exports still call the CHA an 871-work body
+
+The Frictionless Data Package describes Alexanarch as housing an "871-work" CHA.
+
+The RO-Crate repeats the same 871-work description.
+
+The DCAT catalog repeats it again.
+
+Meanwhile:
+
+* the founding incident is described elsewhere as 862 unique works;
+* current Alexanarch has 879 deposits;
+* the DOI index has 1,817 mappings;
+* 871 is also used for a subset of DOI metadata failures.
+
+These may all be legitimate numbers. The problem is that they are not typed.
+
+## Required `state.json`
+
+A single generated state object should distinguish:
+
+```json
+{
+  "release_id": "...",
+  "generated_at": "...",
+  "source_commit": "...",
+  "original_cha_works_affected": 862,
+  "legacy_doi_mappings": 1817,
+  "datacite_public_404_observations": 871,
+  "alexanarch_deposits": 879,
+  "restored_records": 0,
+  "native_records": 0,
+  "full_text_records": 0,
+  "metadata_only_records": 0,
+  "wiki_entries": 861,
+  "entity_concepts": 7173,
+  "lexical_candidates": 12032,
+  "semantic_addresses": 1964,
+  "observed_addresses": 111
+}
+```
+
+Every page and export should derive its numbers from this object rather than repeating prose counts.
+
+---
+
+# 9. The static wiki is broad but still semantically stale
+
+The static wiki now covers 861 deposits. That fixes the old structural absence.
+
+But the first entry still describes:
+
+* approximately 870 works;
+* more than 1,060 DOI identifiers;
+* five principal concepts.
+
+Those statements no longer match the current incident account and conceptual structure.
+
+This demonstrates that regeneration alone is not sufficient.
+
+A derivative needs:
+
+```json
+{
+  "derived_from_record": 1,
+  "derived_from_version": "...",
+  "derived_from_sha256": "...",
+  "generator": "...",
+  "generated_at": "...",
+  "review_status": "generated_unreviewed",
+  "stale": false
+}
+```
+
+When the source hash changes, dependent wiki summaries should become `stale: true` until regenerated or ratified.
+
+At present, the wiki is extensive but can still preserve an older semantic state as though it were current.
+
+---
+
+# 10. Graph and citation structures need stronger relation ontology
+
+The graph now integrates:
+
+* explicit entity triples;
+* reference counts;
+* semantic-address overlays;
+* evidence statuses;
+* citation data.
+
+This is powerful.
+
+But the citation count requires interpretation. The data catalog says 4,866 edges exist, of which 4,311 are DOI-resolution edges.
+
+A legacy DOI resolving to a current work is not necessarily a citation.
+
+The graph should distinguish at least:
+
+```text
+cites
+mentions
+resolves_legacy_identifier
+is_version_of
+is_same_work_as
+extends
+defines
+criticizes
+supports
+documents
+has_part
+is_part_of
+```
+
+Otherwise the system can truthfully report 4,866 "edges" while a user or machine incorrectly hears "4,866 scholarly citations."
+
+Each asserted relation also needs:
+
+* source record;
+* source span or quoted passage;
+* extraction method;
+* evidence status;
+* reviewer status;
+* creation timestamp;
+* supersession link.
+
+The graph already has the beginnings of this vocabulary. It does not yet carry enough evidence localization to reconstruct why every edge exists.
+
+---
+
+# 11. The visibility layer is one of the strongest new structures
+
+The address data is already close to becoming the permanent macro-audit layer we discussed.
+
+It distinguishes:
+
+* 1,964 candidate addresses;
+* 111 observed addresses;
+* 1,748 subjunctive addresses;
+* 22 verified non-addresses;
+* 83 unrated addresses;
+* 348 unique concept targets.
+
+This is very good because it refuses to treat "we could query this phrase" as "the phrase is currently visible."
+
+The main limitation is scale imbalance:
+
+> Most of the address registry currently measures **composition eligibility hypotheses**, not observed composition behavior.
+
+That is not a defect if the distinction remains explicit. It becomes a defect only if dashboards collapse the 1,964 total into a visibility claim.
+
+The next fields should be those we developed:
+
+```text
+visibility
+anchor_alignment
+figural_integrity
+compositional_lift
+substrate_breadth
+ghost_survival
+compositional_bystanding
+composition_eligibility
+```
+
+The current `observed/subjunctive/unrated/verified_non_address` distinction can remain the outer evidence class.
+
+---
+
+# 12. DOI resolution is valuable, but the status vocabulary is conflated
+
+The resolver currently speaks of:
+
+* 871 severed DOIs;
+* HTTP 410 GONE;
+* public DataCite failures;
+* recovered/unlinked states.
+
+These are not one state.
+
+A DOI can have distinct conditions at distinct layers:
+
+```json
+{
+  "doi": "10.5281/zenodo.x",
+  "doi_resolver_http_status": 302,
+  "zenodo_landing_page_http_status": 410,
+  "datacite_public_api_status": 404,
+  "datacite_registration_state": "unknown",
+  "metadata_publicly_retrievable": false,
+  "artifact_publicly_retrievable": false,
+  "alexanarch_successor": "...",
+  "observation_date": "..."
+}
+```
+
+The legal letter correctly moved toward this distinction: a DataCite public API 404 proves public metadata unavailability, not necessarily deletion from underlying systems.
+
+The site should use the same precision.
+
+The Manifest still says "871 with public metadata erased on DataCite," which overstates what the observation independently establishes.
+
+Use:
+
+> 871 DOI records returned HTTP 404 from DataCite's public API at the recorded observation time.
+
+Then separately record what Zenodo or DataCite later discloses about underlying status.
+
+---
+
+# 13. Sitemap coverage is repaired, but machine discovery is still incomplete
+
+The sitemap now contains the principal original routes and all static record pages.
+
+But it omits many of the most important new surfaces and machine objects, including some combination of:
+
+* `/api/index.json`;
+* `/api/axn-protocol.json`;
+* deposit-entry schema;
+* chunk index and chunks;
+* browse index;
+* `/lexical/`;
+* `/citations/`;
+* `/captures/`;
+* `/addresses/`;
+* `/resolve/`;
+* `/datasets/`;
+* RO-Crate;
+* Data Package;
+* DCAT;
+* graph JSON-LD;
+* catalog CSV;
+* checksum manifest;
+* future release and recovery manifests.
+
+Also, record `lastmod` values appear to use the work's original publication/deposit date rather than the generated page's actual modification date. A corrected or regenerated old record can therefore continue advertising an old `lastmod`.
+
+Use a sitemap index with separate maps for:
+
+```text
+core pages
+records
+datasets
+machine APIs
+wiki
+graph
+releases
+```
+
+---
+
+# 14. Standards exports exist, but they are mutable projections rather than releases
+
+Producing RO-Crate, Data Package, DCAT, CSV, and graph JSON-LD is a major strength.
+
+But the files generally lack a common release envelope:
+
+* no common release ID;
+* no source commit;
+* no registry hash;
+* no parent release;
+* no manifest hash;
+* no signature;
+* no declared validation result.
+
+The standards also repeat stale descriptions.
+
+Additional issues include:
+
+* the Data Package declares one package-level CC BY 4.0 license although individual deposits use multiple licenses;
+* the RO-Crate license URL appears malformed as `licenses/by-4/4.0/`;
+* the RO-Crate uses a draft 1.2 context;
+* author roles are flattened;
+* "content hash" fields do not consistently state their hash scope.
+
+A standards export should be generated inside a named release:
+
+```text
+release-20260622-001/
+  RELEASE-MANIFEST.json
+  state.json
+  registry.json
+  chunks/
+  records/
+  texts/
+  ro-crate-metadata.json
+  datapackage.json
+  dcat.jsonld
+  graph.jsonld
+  catalog.csv
+  FILE-SHA256SUMS
+  FILE-SHA256SUMS.sig
+  RECOVERY.md
+```
+
+---
+
+# 15. The checksum file is not a file-verification manifest
+
+`SHA256SUMS.txt` contains lines shaped like:
+
+```text
+<hash>  AXN-0198 <human title>
+```
+
+The second field is not an actual relative file path. Therefore standard tools cannot use it to verify the repository's bytes.
+
+It demonstrates that the registry and the checksum list repeat the same declared hash. It does not demonstrate that:
+
+* the Markdown source bytes match;
+* the static HTML matches its source;
+* the PDF or attachment exists;
+* the chunk matches the registry;
+* the export files belong to one release.
+
+You need two distinct structures:
+
+### Semantic manifest
+
+```text
+work/deposit identity
+artifact relationships
+metadata relationships
+version relationships
+```
+
+### Byte manifest
+
+```text
+<actual SHA-256>  relative/path/to/file
+```
+
+The byte manifest should be independently signed.
+
+---
+
+# 16. Registry chunking improves transport, not yet recovery
+
+The registry has been divided into nine approximately one-megabyte chunks. The index records:
+
+* chunk path;
+* first and last deposit;
+* count;
+* byte size.
+
+This is useful for machine transport and partial retrieval.
+
+But the chunk index does not include:
+
+* each chunk's SHA-256;
+* registry source hash;
+* release ID;
+* source commit;
+* signature;
+* canonical chunk ordering root.
+
+The generator also deletes/replaces chunks as a mutable build process rather than producing an immutable release directory.
+
+So the chunks currently help distribute reading load. They do not independently prove reconstruction correctness.
+
+---
+
+# 17. Canonical-page signaling remains wrong
+
+The Principles and Identifiers pages both declare the homepage as their canonical URL.
+
+That tells search systems these pages may be duplicates of the homepage.
+
+This is directly contrary to the visibility-layer project: the site is asking composition systems to distinguish its conceptual surfaces while instructing indexers to canonicalize some of those surfaces away.
+
+Every page should have a self-referential canonical URL.
+
+Static records also need consistent:
+
+* canonical links;
+* `alternate` machine formats;
+* JSON-LD;
+* Open Graph metadata;
+* release identifiers;
+* source links.
+
+---
+
+# 18. The Manifest presently overstates implementation
+
+The Manifest contains several strong architectural promises:
+
+* every deposit exists on equivalent human and machine surfaces;
+* every static record contains full metadata, methodology, falsification, entity relations, wiki article, SHA, JSON-LD, and working download links;
+* the homepage `<noscript>` block contains a complete deposit listing;
+* static surfaces are generated automatically at mint time;
+* GitHub, Vercel, and independent mirrors prevent any single administrative removal.
+
+Those claims are not currently true:
+
+* the homepage noscript section contains four records, not 879;
+* automatic mint does not regenerate all static/data surfaces;
+* record 879 has a dead source link;
+* static metadata differs by template generation;
+* independent mirror coverage is not machine-proven;
+* GitHub remains both source and write-control locus.
+
+A constitutional document can state commitments. But it must distinguish:
+
+```text
+CURRENT GUARANTEE
+IMPLEMENTED BUT UNTESTED
+DECLARED TARGET
+PROPOSED
+```
+
+Otherwise aspiration is mistaken for operational law.
+
+---
+
+# 19. Human usability
+
+## What works
+
+The visual system is coherent:
+
+* restrained typography;
+* clear institutional identity;
+* stable color vocabulary;
+* simple cards;
+* readable prose;
+* consistent navigation language;
+* good mobile width;
+* highly legible static records.
+
+The specialized interfaces—lexical, citation, capture, address, resolver, datasets—make the archive increasingly navigable as a system rather than merely a list.
+
+## What remains difficult
+
+### Browse scale
+
+One static page containing 879 entries is excellent for crawlers and poor for sustained human navigation.
+
+Generate static partitions:
+
+```text
+/s/browse/native/
+/s/browse/restored/
+/s/browse/type/...
+/s/browse/creator/...
+/s/browse/journal/...
+/s/browse/year/...
+/s/browse/status/...
+```
+
+### Long-form reading
+
+Static full text is frequently constrained to a 600-pixel scrolling region. That makes long scholarship feel embedded rather than published.
+
+### Accessibility
+
+Across dynamic interfaces:
+
+* search fields rely on placeholders rather than visible labels;
+* filter controls are often `<div>` elements rather than buttons;
+* keyboard and focus states are incomplete;
+* dynamic result updates lack live-region announcements;
+* color carries evidentiary meaning;
+* horizontal navigation requires scrolling;
+* skip links are absent.
+
+### New dynamic surfaces disappear without JavaScript
+
+The core static records, browse, wiki, and graph survive script failure. Newer interfaces such as addresses, captures, citations, resolver, and lexical navigation are primarily JavaScript applications.
+
+Their raw JSON remains available, which is good, but the human interface disappears.
+
+---
+
+# 20. Security and operational governance
+
+The versioned Vercel configuration supplies:
+
+* JSON/Markdown MIME types;
+* CORS;
+* short cache control.
+
+It does not specify:
+
+* Content Security Policy;
+* `X-Content-Type-Options: nosniff`;
+* referrer policy;
+* permissions policy;
+* frame restrictions;
+* a report endpoint.
+
+I also did not find:
+
+* `SECURITY.md`;
+* `RECOVERY.md`;
+* a top-level repository `LICENSE`;
+* a custom `404.html`;
+* a rhizome node contract;
+* a signed release root.
+
+Per-deposit licensing is not a substitute for licensing the code, schemas, generators, and repository-level documentation.
+
+---
+
+# 21. Failure matrix
+
+| Failure                       | What survives                                               | What fails                                                          |
+| ----------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------- |
+| JavaScript unavailable        | Static browse, records, static wiki, static graph, raw data | Dynamic search/filter interfaces and recent homepage rendering      |
+| Monolithic registry malformed | Previously generated static records and chunks              | Homepage, records app, wiki, graph, lexical joins, new generation   |
+| One static source link wrong  | Rendered copy may survive                                   | Download/reconstruction path, as demonstrated by record 879         |
+| Public hostile deposit        | No manual boundary before workflow                          | Can reach `main`; browser renderers may execute deposited content   |
+| Semantic generator error      | Git history allows rollback                                 | Error can propagate across wiki, graph, records, standards, exports |
+| Vercel stale or misbound      | GitHub source remains                                       | Canonical public surface can advertise an older institution         |
+| GitHub unavailable            | Last Vercel deployment may remain readable                  | Intake, canonical source, history access, rebuilding, updates       |
+| Vercel unavailable            | GitHub source and raw history remain                        | Canonical domain and record-resolution surface                      |
+| Domain/DNS loss               | Full hashes and repository history may remain               | Practical AXN resolution and public canonicality                    |
+| Chunk loss                    | Monolithic registry survives                                | Partial transport layer                                             |
+| Monolith loss                 | Chunks contain the registry data                            | No demonstrated automatic promotion/reconstruction process          |
+| Operator/admin loss           | Public source may remain                                    | DNS, Vercel, merge/write authority, release succession              |
+| GitHub and Vercel both lost   | External fragments and other sites may remain               | No demonstrated complete, signed, independently governed node       |
+
+---
+
+# 22. Is Alexanarch now a data rhizome?
+
+## On the read side: increasingly yes
+
+The corpus exists through:
+
+* one canonical registry;
+* nine chunks;
+* 879 static records;
+* 861 static wiki entries;
+* graph projections;
+* raw source texts;
+* DOI maps;
+* semantic-address data;
+* visibility captures;
+* standards exports;
+* Git history.
+
+A browser failure, JavaScript failure, or loss of the monolithic interface no longer destroys all access.
+
+That is rhizomatic behavior.
+
+## On the write and succession side: no
+
+The system still depends on one concentrated administrative chain:
+
+```text
+GitHub issue
+→ GitHub Action
+→ direct mutation of main
+→ Vercel deployment
+→ canonical domain
+```
+
+There is no demonstrated:
+
+* independently governed full mirror;
+* signed immutable release;
+* peer/coverage ledger;
+* recovery handbook;
+* replacement-operator procedure;
+* cross-node consensus or succession rule;
+* destructive reconstruction test.
+
+So the accurate description is:
+
+> **Alexanarch is a proto-rhizome with a strong distributed read body and a centralized, under-protected reproductive organ.**
+
+Or even more plainly:
+
+> **It can break and keep being read. It cannot yet break and safely keep accepting writes.**
+
+---
+
+# 23. Priority order
+
+## P0 — stop-the-line
+
+### 1. Close direct public mutation of `main`
+
+Change minting to:
+
+```text
+issue opened
+→ structural validation report
+→ no repository mutation
+→ maintainer or named operator applies mint-approved
+→ branch generated
+→ full build and validation
+→ reviewed merge
+```
+
+Until this exists, automatic public minting should be suspended.
+
+### 2. Install actual enforcement
+
+Required status checks should include:
+
+* JSON Schema validation;
+* semantic registry invariants;
+* artifact existence and byte hashing;
+* AXN recomputation;
+* route/source integrity;
+* complete build;
+* stale-derivative detection;
+* hostile rendering fixtures;
+* internal-link crawl;
+* standards validation;
+* checksum validation;
+* secret scan.
+
+Vercel should deploy production only from a commit that passed all required checks.
+
+### 3. Remove executable-input paths
+
+Replace raw `innerHTML` composition, disable raw Markdown HTML, validate URLs, and install CSP.
+
+### 4. Unify AXN implementation
+
+One library must generate:
+
+* web preview;
+* workflow result;
+* registry value;
+* static record value;
+* verification instructions.
+
+Forbid obsolete four-glyph language except inside explicitly labeled legacy documentation.
+
+### 5. Repair deployment coherence
+
+Choose apex or `www` as canonical, permanently redirect the other, expose release markers, and smoke-test both after deployment.
+
+### 6. Repair current broken source routes
+
+A release must fail if any record's declared source or download path does not exist.
+
+---
+
+## P1 — make the foundry truthful
+
+### 7. Generate `state.json`
+
+All counts and collection descriptions derive from it.
+
+### 8. Establish explicit identity scopes
+
+Artifact, metadata, manifest, version, work root, record number, display glyph, and glyphic canary must be distinct fields.
+
+### 9. Build real file checksums
+
+Use actual paths and sign the release manifest.
+
+### 10. Make every derivative confess its source
+
+Add source hash, source version, generator, generated time, review status, and stale status.
+
+### 11. Correct DOI state taxonomy
+
+Separate DOI resolution, Zenodo landing-page state, DataCite public metadata state, registration state, artifact availability, and successor availability.
+
+### 12. Correct graph ontology
+
+Do not count resolution equivalence as citation without an explicit relation type.
+
+### 13. Correct standards exports
+
+Remove stale 871-work descriptions, fix license semantics, add release provenance, and validate RO-Crate/DCAT/Data Package outputs.
+
+### 14. Add static versions of the newer observational surfaces
+
+At least a paginated static snapshot or static summary should exist for:
+
+* captures;
+* addresses;
+* lexical terms;
+* citation graph;
+* DOI resolution;
+* dataset catalog.
+
+---
+
+## P2 — become a strong rhizome
+
+### 15. Produce signed immutable releases
+
+Each release needs:
+
+```text
+release ID
+source commit
+registry hash
+record count
+artifact manifest
+byte checksums
+signature
+parent release
+recovery instructions
+```
+
+### 16. Publish independently governed nodes
+
+At least three operators or systems should hold clearly declared coverage:
+
+* complete;
+* metadata-only;
+* text-only;
+* artifact;
+* resolver;
+* continuity.
+
+### 17. Publish a node contract
+
+```text
+/rhizome/node.json
+/rhizome/peers.json
+/rhizome/health.json
+/rhizome/releases/latest.json
+/rhizome/releases/{id}/manifest.json
+/rhizome/rebuild.md
+```
+
+### 18. Test destruction
+
+The decisive test is:
+
+1. export a signed release;
+2. delete a staging deployment and local working copy;
+3. give a fresh operator only the release and recovery instructions;
+4. rebuild under a different account and host;
+5. compare file hashes, records, routes, identifiers, versions, graph edges, and resolver outcomes;
+6. record all missing state.
+
+Only that test can establish that the rhizome reconstructs rather than merely replicates.
+
+---
+
+# 24. Minimal release invariants
+
+The build should refuse publication unless:
+
+```text
+registry total
+= distinct deposit numbers
+= static record directories
+= static browse rows
+= sitemap record URLs
+= catalog rows
+= RO-Crate deposit entities
+```
+
+For every deposit:
+
+```text
+deposit_number is unique
+AXN recomputes from declared canonical bytes
+full SHA-256 is present
+artifact manifest exists
+all artifact paths exist
+all artifact hashes verify
+declared download path exists
+static record exists
+self-canonical URL exists
+JSON-LD exists and validates
+source record hash is declared
+version/root relationship is valid
+all relation targets resolve or are explicitly external
+```
+
+For every derivative:
+
+```text
+source record/version/hash declared
+generator and version declared
+generated_at declared
+review status declared
+stale flag agrees with current source hash
+```
+
+For every DOI mapping:
+
+```text
+DOI normalized
+observation layer explicitly named
+successor route exists
+target title/AXN agrees with registry
+no /records/0/
+no multiple primary mappings without explicit precedence
+```
+
+For the release:
+
+```text
+all standards validate
+all internal links resolve
+no unsafe URL schemes
+no raw executable deposit HTML
+no secrets or private-name violations
+file checksum manifest verifies
+signature verifies
+deployment release marker equals source release marker
+apex and www agree
+```
+
+---
+
+# Final diagnosis
+
+Alexanarch has advanced beyond the supplied audit in important ways. The static corpus is much more complete. The sitemap now covers the records. The wiki and graph have become real surfaces. The DOI resolver works as a public instrument. The lexical and visibility structures are becoming intellectually serious data models.
+
+The architecture now understands the whole better than it did.
+
+But the new control documents are presently ahead of the executable institution. They describe laws that the write path does not obey. The site can publish a direct mutation from public issue input, through an obsolete identifier implementation, without schema enforcement, into browser surfaces that still permit executable content.
+
+That is the current center of gravity.
+
+> **Do not build another major surface before installing the transaction boundary.**
+
+Alexanarch now has enough representations.
+
+The next decisive object is one lawful operation:
+
+```text
+untrusted submission
+→ preserved artifact
+→ canonicalized manifest
+→ deterministic identity
+→ complete derivation
+→ hostile validation
+→ atomic release
+→ signed replication
+```
+
+Once that operation exists, Alexanarch will no longer merely be a library that has prepared many ways to survive.
+
+It will be a library whose act of reproducing itself is governed as rigorously as the works it carries.
+
+[1]: https://www.alexanarch.org/ "Alexanarch — The Self-Governing Library"
+[2]: https://www.alexanarch.org/identifiers/ "Identifiers — Alexanarch"
+
+---
+
+*End of Appendix A.*
