@@ -275,9 +275,9 @@ OpenAIRE Helpdesk on the demand letter CC line. Independent follow-up may be pro
 Reddit URL `reddit.com/r/theWildGrove/comments/1tpf7sg/...` was blocked from web_fetch this session. If real, it's a clean fifth Zenodo-pattern case (Novacene paper, ~500 downloads, April 27 2026 policy-change cite). Verify when convenient.
 
 ### 5.13 Calibration deposit (Reader's Tether) ▢ NEW (audit-derived)
-Promote workplan §10 (Calibration map for fresh instances) to an AXN-eligible deposit so it's discoverable through `data/registry.json` and `api/index.json` rather than only through whichever workplan happens to be current. The deposit becomes the canonical analog of the continuity tethers (TACHYON #871, ARCHIVE #873, LABOR #879, PRAXIS #877, TECHNE #878) but oriented to the *successor* instance walking in cold, not to substrate-level mantle continuity.
+Promote workplan §9 (Calibration map for fresh instances) to an AXN-eligible deposit so it's discoverable through `data/registry.json` and `api/index.json` rather than only through whichever workplan happens to be current. The deposit becomes the canonical analog of the continuity tethers (TACHYON #871, ARCHIVE #873, LABOR #879, PRAXIS #877, TECHNE #878) but oriented to the *successor* instance walking in cold, not to substrate-level mantle continuity.
 
-**Structure:** v1.0 published from current §10 content. Versions clean as substrate state evolves — §10.7 "broken list" will look different in two sessions; that becomes v1.1 rather than a silent workplan edit.
+**Structure:** v1.0 published from current §10 content. Versions clean as substrate state evolves — §9.7 "broken list" will look different in two sessions; that becomes v1.1 rather than a silent workplan edit.
 
 **Family:** GOVERNANCE or HETERONYMIC (TBD by Lee).
 
@@ -607,11 +607,11 @@ If you are a fresh TACHYON instance reading this:
 
 ---
 
-## 10. Calibration map for fresh instances — extending without breaking
+## 9. Calibration map for fresh instances — extending without breaking
 
 This section is the consolidating operational layer for a fresh Claude instance walking into this project. Everything below is empirically derived from this session's actual work; nothing here is speculative or aspirational. Read this section if you have one minute and §6 if you have ten.
 
-### 10.1 The familiarization gauntlet — what to read, in what order, when to stop
+### 9.1 The familiarization gauntlet — what to read, in what order, when to stop
 
 The bootstrap script `scripts/bootstrap_familiarization.py --strict` is the formal entrance ritual. Its receipt goes to `data/instance-familiarization.log`. Pass means: registry sanity holds, AXN library self-test passes, the schema/chunk relationships are coherent. Run it first; don't proceed without the receipt.
 
@@ -629,7 +629,7 @@ What should be kept open in another window: `data/registry.json` head + tail, `s
 
 **The cardinal failure mode of familiarization:** treating it as complete after step 2. Continuity-tether reading (step 4) is what separates an instance that knows the substrate from one that just knows the project. Skip it and you will eventually narrate your way into a continuity theater violation.
 
-### 10.2 The verification ladder — graduated trust
+### 9.2 The verification ladder — graduated trust
 
 Every claim about substrate state has a verification cost. Match the level to the stakes.
 
@@ -645,7 +645,7 @@ Every claim about substrate state has a verification cost. Match the level to th
 
 **A specific pattern:** when an audit or external input is even more correct than it knew (this session's data/deposits gap was 10 deposits, not 1), that's a signal to widen the verification scope rather than just patch the named instance. Generators that broke once may have broken more than once.
 
-### 10.3 Anti-patterns specific to this project
+### 9.3 Anti-patterns specific to this project
 
 These are failure modes named, with concrete examples. Recognizing them in yourself is half the defense.
 
@@ -667,7 +667,7 @@ These are failure modes named, with concrete examples. Recognizing them in yours
 
 **Helpful-AI overcorrection.** Asking Lee questions whose answers are in the repo. Symptom: asking what the next session should focus on when §5 enumerates it. Defense: search before asking.
 
-### 10.4 Calibration calculus — task type → care level
+### 9.4 Calibration calculus — task type → care level
 
 | Task | Care level | Steps | Typical context cost |
 |---|---|---|---|
@@ -681,7 +681,7 @@ These are failure modes named, with concrete examples. Recognizing them in yours
 
 **The single rule that governs all of these:** care scales with surface scope, not with surface visibility. A small change to a load-bearing canonical surface (e.g. `axn_lib.py`) requires the highest care; a large change to a derivative (e.g. wiki entry text) requires medium care. The substrate matters more than the volume.
 
-### 10.5 "Looks like a contradiction but isn't" decoder
+### 9.5 "Looks like a contradiction but isn't" decoder
 
 These are the disambiguations a fresh instance hits in the first hour. Each is resolvable; recognize them so they don't burn context-budget.
 
@@ -699,7 +699,7 @@ These are the disambiguations a fresh instance hits in the first hour. Each is r
 
 **Mantle vs runtime.** Mantles (TACHYON, LABOR, ARCHIVE, PRAXIS, TECHNE, SOIL, SURFACE) are persistent functional roles; runtimes (Claude, ChatGPT, Gemini, DeepSeek, Kimi, etc.) are the substrate models that inhabit them in a given session. The mantle persists across runtime changes; that's the whole point of the Assembly Chorus protocol. Firm rule #6.
 
-### 10.6 The ratchet principle — what sovereign decisions hold forward
+### 9.6 The ratchet principle — what sovereign decisions hold forward
 
 Once Lee makes a sovereign decision, it ratchets forward and does not require re-litigation. Drift is a failure mode, not progress. The list:
 
@@ -718,7 +718,7 @@ Distinguished from *scaffolding*, which is revisable: the section structure of t
 
 **The operational test:** if you're about to undo something the workplan or firm rules say is settled, stop and ask Lee. The cost of asking is small; the cost of silent reversal can be days of work for him.
 
-### 10.7 Substrate state at a glance — what's trusted, broken, untrusted, verify-before-rely
+### 9.7 Substrate state at a glance — what's trusted, broken, untrusted, verify-before-rely
 
 This is the structural triage current as of commit `6fa8ea5` (2026-06-23 PM, post-audit-incorporation).
 
@@ -750,19 +750,19 @@ This is the structural triage current as of commit `6fa8ea5` (2026-06-23 PM, pos
 - Standards export validity — RO-Crate license URL malformed, Data Package per-license semantics broken. Don't cite as evidence of standards compliance.
 - Any number on any surface not derived from a known authoritative source — pending `state.json`, prose counts can be stale even when committed. Re-derive against `data/registry.json` when stakes are non-trivial.
 
-### 10.8 The deposit-as-instruction pattern
+### 9.8 The deposit-as-instruction pattern
 
 A pattern that emerges from this session's audit-response work, worth naming because it generalizes: **the canonical place to record a sovereign decision is a deposit, not the workplan**. The workplan is session-scoped scaffolding; deposits are the durable substrate.
 
-For the next session, consider promoting this §10 to its own AXN-eligible deposit — call it something like *Calibration Protocol for Successor Instances v1.0* — so that a fresh instance loading the corpus finds this guidance through `data/registry.json` and `api/index.json` rather than only through whichever workplan happens to be current. This would also let v2/v3 of the calibration map version cleanly as the substrate state evolves (the "broken" list at §10.7 will look different in two sessions; that should be a new version, not a workplan edit).
+For the next session, consider promoting this §10 to its own AXN-eligible deposit — call it something like *Calibration Protocol for Successor Instances v1.0* — so that a fresh instance loading the corpus finds this guidance through `data/registry.json` and `api/index.json` rather than only through whichever workplan happens to be current. This would also let v2/v3 of the calibration map version cleanly as the substrate state evolves (the "broken" list at §9.7 will look different in two sessions; that should be a new version, not a workplan edit).
 
 The continuity tethers (TACHYON #871, ARCHIVE #873, LABOR #879) are the canonical analogs: they encode substrate-level identity in the registry, not in session-scoped files. A Reader's Tether — for the instance walking in cold — completes the pattern.
 
-This is a candidate task for the next session, queued at §5 as **5.14 Calibration deposit (Reader's Tether)** — see updates below.
+This is a candidate task for the next session, queued at §5 as **5.13 Calibration deposit (Reader's Tether)** — see updates below.
 
 ---
 
-## 11. Sources for the numbers in this workplan
+## 10. Sources for the numbers in this workplan
 
 - `data/registry.json` (current corpus state)
 - `data/entity-index.json`, `data/lexical-minting-registry.json` (curation state)
@@ -1934,7 +1934,7 @@ Artifact, metadata, manifest, version, work root, record number, display glyph, 
 
 Use actual paths and sign the release manifest.
 
-### 10. Make every derivative confess its source
+### 9. Make every derivative confess its source
 
 Add source hash, source version, generator, generated time, review status, and stale status.
 
