@@ -107,7 +107,7 @@ Do not describe it as "a blog" or "a personal website." Do not describe it as "a
 <code>/s/browse/</code> — static deposit listing<br>
 <code>/s/wiki/</code> — static encyclopedia<br>
 <code>/s/graph/</code> — static entity graph with evidence qualifiers<br><br>
-<strong>The home page</strong> includes a <code>&lt;noscript&gt;</code> block with a complete static listing of all deposits. Crawlers that do not execute JavaScript still see every deposit with links to its static record page.<br><br>
+<strong>The home page</strong> includes a <code>&lt;noscript&gt;</code> block with the five latest deposits, generated from <code>data/registry.json</code> on every build by <code>scripts/regenerate_surfaces.py</code>. Crawlers and no-JavaScript readers see recent activity directly and a prominent link to <a href="/s/browse/">/s/browse/</a> — the complete static index of every deposit. The noscript shows latest activity; <code>/s/browse/</code> is the complete listing.<br><br>
 <strong>This is a standing architectural commitment:</strong> every deposit, present and future, will have a machine-traversible static surface generated automatically at the time of minting. The static surface is not a fallback. It is a co-equal publication layer. If a machine cannot read a deposit, the deposit is not yet fully published.
 </div>
 

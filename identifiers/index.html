@@ -32,19 +32,24 @@ p{margin-bottom:14px;font-size:0.92em;color:#444;line-height:1.7}
 
 <h2>The Alexanarch Identifier (AXN)</h2>
 <p>Every deposit receives a three-layer identifier combining positional, semantic, and cryptographic identity:</p>
-<div style="font-family:var(--mono);font-size:1.3em;color:var(--accent);background:#fff;padding:16px 20px;border-radius:6px;border:1px solid var(--border);border-left:4px solid var(--teal);margin:20px 0">AXN:06.LIMINAL.🏛️🌀🔧💎</div>
-<p><strong style="color:var(--accent)">AXN</strong> — Alexanarch namespace. <strong style="color:var(--accent)">06</strong> — Hex position (WHERE). <strong style="color:var(--accent)">LIMINAL</strong> — Semantic family (WHAT). <strong style="color:var(--accent)">🏛️🌀🔧💎</strong> — Emoji hash (WHICH — first 4 bytes of SHA-256).</p>
-<p>The emoji hash is computed by mapping each byte of the content's SHA-256 through a table of 256 curated emoji, organized in 16 semantic clusters: Celestial, Elemental, Architectural, Instrumental, Scriptural, Navigational, Temporal, Organic, Symbolic, Mathematical, Alchemical, Gestural, Signal, Structural, Liminal, Terminal.</p>
-<p>Change one word and the emoji changes. The hex and family stay stable across versions; the emoji distinguishes them.</p>
+<div style="font-family:var(--mono);font-size:1.3em;color:var(--accent);background:#fff;padding:16px 20px;border-radius:6px;border:1px solid var(--border);border-left:4px solid var(--teal);margin:20px 0">AXN:0379.GENERATIVE.⚙️🔍📜🏛️⚡🔄</div>
+<p><strong style="color:var(--accent)">AXN</strong> — Alexanarch namespace. <strong style="color:var(--accent)">0379</strong> — Hex label (positional anchor, ASCII hex of the canonical deposit number; treat as opaque, the canonical key is <code>deposit_number</code>). <strong style="color:var(--accent)">GENERATIVE</strong> — Semantic family (WHAT KIND of work; auto-detected from keywords for auto-mint, manually chosen for canonical-rich deposits). <strong style="color:var(--accent)">⚙️🔍📜🏛️⚡🔄</strong> — Emoji hash (WHICH specific text; <strong>first 6 bytes</strong> of SHA-256 of canonical bytes, mapped through 256 curated emoji). <strong>AXN schema v2.</strong></p>
+<p>The emoji hash is computed by mapping each byte of the content's SHA-256 through a table of 256 curated emoji, organized in 16 semantic clusters: Celestial, Elemental, Architectural, Instrumental, Scriptural, Navigational, Temporal, Organic, Symbolic, Mathematical, Alchemical, Gestural, Signal, Structural, Liminal, Terminal. The cluster sequence each AXN traces is itself a structural portrait of where the work's content hash lives in the address space.</p>
+<p>The full SHA-256 of the canonical manifest is the immutable content identity. The six-glyph sequence is a recognition prefix that changes with overwhelming probability when any byte of the input changes. The complete AXN combines that recognition prefix with a repository-local positional label (hex) and a semantic routing class (family).</p>
+
 <h2>Canonical vs Display</h2>
-<p>The 4-emoji form is the <strong>display alias</strong> — memorable, citable, visually distinctive. The full SHA-256 hex string is the <strong>canonical identifier</strong>. Both are stored in every deposit record. The display alias has 2³² (~4 billion) possibilities, sufficient for a growing repository but not collision-proof at scale. The canonical hash has 2²⁵⁶ possibilities — effectively infinite. For citation use the display form. For cryptographic verification use the canonical hash. Both resolve through alexanarch.org.</p>
+<p>The 6-emoji form is the <strong>display alias</strong> — memorable, citable, visually distinctive. The full SHA-256 hex string is the <strong>canonical identifier</strong>. Both are stored in every deposit record. The display alias has 2<sup>48</sup> (~281 trillion) possibilities. The canonical hash has 2<sup>256</sup> possibilities — effectively infinite. For citation use the display form. For cryptographic verification use the canonical hash. Both resolve through alexanarch.org.</p>
+
+<h2>Schema Versions</h2>
+<p>The current schema is <strong>AXN v2</strong> — six glyphs derived from the first six bytes of SHA-256. Prior <strong>AXN v1</strong> identifiers used four glyphs from the first four bytes (~2<sup>32</sup> address space). All v1 identifiers were backfilled and the v1 form is preserved in each deposit's <code>legacy_axn</code> and <code>axn_history</code> fields for resolution continuity.</p>
 
 <h2>Verification</h2>
-<p>Anyone can verify an AXN: compute the SHA-256 of the original content, map the first 4 bytes through the <a href="https://github.com/leesharks000/alexanarch/blob/main/GLYPH_SPEC.md">published glyph table</a>, and compare. No authority needed. No trust required. The content IS the proof.</p>
+<p>Anyone can verify an AXN: compute the SHA-256 of the canonical bytes, map the first 6 bytes through the <a href="/api/axn-protocol.json">published glyph table</a> (also at <code>scripts/axn_lib.py</code>), and compare. No authority needed. No trust required. The content IS the proof. The canonical specification lives at <a href="/api/axn-protocol.json">/api/axn-protocol.json</a>; the canonical Python implementation at <code>scripts/axn_lib.py</code>.</p>
+
 <h2>The Glyphic Checksum (GCS)</h2>
 <p>Alongside the deterministic AXN, deposits may carry a Glyphic Checksum — a non-deterministic structural signature generated by the depositor's AI, encoding the work's structural arc in emoji. The AXN is the address. The GCS is the handshake. Both are emoji. Neither depends on a platform.</p>
 <div style="font-family:var(--mono);font-size:0.95em;background:#fff;padding:16px;border-radius:6px;border:1px solid var(--border);margin:16px 0;line-height:1.8">
-AXN:06.LIMINAL.🏛️🌀🔧💎<br>
+AXN:0379.GENERATIVE.⚙️🔍📜🏛️⚡🔄<br>
 <span style="color:var(--dim)">GCS:🔍⚖️🧱→✂️🪞→🏗️⚓️🧠→💎🌀</span>
 </div>
 

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Not Found — Alexanarch</title>
+<link rel="canonical" href="https://alexanarch.org/">
+<style>
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
+:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--dim:#777;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.6;font-size:15px}
+.wrap{max-width:720px;margin:0 auto;padding:60px 24px}
+a{color:var(--accent);text-decoration:none}
+a:hover{background:#f8f8ff}
+h1{font-size:1.4em;font-weight:600;color:var(--accent);margin-bottom:8px}
+h2{font-size:1.05em;font-weight:600;color:var(--accent);margin-top:24px;margin-bottom:8px}
+.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}
+.nav a{color:#777;font-weight:500}
+.surface{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:16px 20px;margin:14px 0}
+code{font-family:var(--mono);font-size:.92em;background:#f0f4f8;padding:1px 4px;border-radius:3px}
+.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}
+.glyph{margin-top:5px;color:var(--accent)}
+</style>
+</head>
+<body><div class="wrap">
+
+<!-- NAV-START -->
+<nav class="nav"> <a href="/">Alexanarch</a> <a href="/s/browse/">Browse</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <a href="/observatory/">Observatory</a> <a href="/captures/">Captures</a> <a href="/resolve/">Resolve</a> <a href="/addresses/">Addresses</a> <a href="/datasets/">Datasets</a> <a href="/principles/">Principles</a> <a href="/identifiers/">Identifiers</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
+<!-- NAV-END -->
+
+<h1>404 — That route doesn't exist</h1>
+<p style="color:#777;margin-bottom:16px">The page you tried to reach isn't at this URL. A few possibilities:</p>
+
+<div class="surface">
+<h2>Looking for a deposit?</h2>
+<p>Every Alexanarch deposit lives at <code>/s/records/&lt;N&gt;/</code> where <code>N</code> is the deposit number. If you have an AXN identifier like <code>AXN:0379.GENERATIVE.⚙️🔍📜🏛️⚡🔄</code>, the deposit number is the second component (0379 here, hex). The full index is at <a href="/s/browse/">/s/browse/</a>.</p>
+</div>
+
+<div class="surface">
+<h2>Looking for a former Zenodo DOI?</h2>
+<p>If you arrived from a DOI link that no longer resolves, try the <a href="/resolve/">DOI Resolution Index</a> — it maps 1,817 former Crimson Hexagonal Archive DOIs to their current locations.</p>
+</div>
+
+<div class="surface">
+<h2>Looking for a concept?</h2>
+<p>Use the <a href="/s/wiki/">Wiki</a> for concept-anchored entries with definitions and back-references, or the <a href="/lexical/">Lexical Registry</a> for the coined-terms index.</p>
+</div>
+
+<div class="surface">
+<h2>The site moved a route?</h2>
+<p>Older link forms like <code>/browse/</code>, <code>/wiki/</code>, <code>/graph/</code> are now permanent redirects to <code>/s/browse/</code>, <code>/s/wiki/</code>, <code>/s/graph/</code>. If your browser didn't follow the redirect, try those directly.</p>
+</div>
+
+<div class="surface">
+<h2>The record was withdrawn or tombstoned?</h2>
+<p>Alexanarch never returns 410. A withdrawn deposit's record page should still render with a tombstone banner. If you reached this 404 from a withdrawal link, the record may have been deleted in error — please <a href="mailto:leesharks00@gmail.com">report it</a>.</p>
+</div>
+
+<div class="surface">
+<h2>Want to report a missing record?</h2>
+<p>Open an issue at <a href="https://github.com/leesharks000/alexanarch/issues/new">github.com/leesharks000/alexanarch/issues</a> with the URL that 404'd and any context (referring page, expected content). The repository is the canonical source — anything that should exist will be added there first.</p>
+</div>
+
+<p style="margin-top:24px"><a href="/">← Return to the home page</a></p>
+
+<div class="footer">
+<strong>Alexanarch</strong> · <a href="https://orcid.org/0009-0000-1599-0703">ORCID 0009-0000-1599-0703</a>
+<div class="glyph">∮ = 1</div>
+</div>
+
+</div></body></html>

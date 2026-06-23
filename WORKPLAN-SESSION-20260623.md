@@ -249,6 +249,74 @@ Page weight dropped 1.2 MB → ~150 KB per chunk on average (8x median improveme
 
 **Workplan refreshed (this commit)** — this very §4.12 entry; §6.3.9 marked ✅ with full versioning rollout details; new pending items added under §6.
 
+### 4.13 External audit response — single-source unification + safety hardening ✓ — 2026-06-23 late PM
+
+An external auditor (ChatGPT-class instance) walked the entire archive against current source and produced a comprehensive findings document. The audit's headline framing — "the live www host is serving an older institutional generation than current main" — turned out to be **wrong** (the live home page is current — 16-link nav, AXN v2, 884 deposits, Observatory all present), but **most of the substantive sub-findings were accurate**, identifying genuine drift, stale content, safety gaps, and missing institutional objects. See §6.4 for the full adjudication map.
+
+Lee's response was an architectural principle: **JS and static must pull from the same data sources; every human-facing JS element must have a static machine-facing counterpart.** This round implements that principle broadly + closes the audit's P0 items in code.
+
+**Single source of truth for counts** — `data/state.json` (NEW):
+
+- `scripts/generate_state.py` reads registry + entity-index + DOI-resolution + capture-registry + chunk-index + git HEAD, emits canonical state.json with: total deposits, by-status breakdown (ACTIVE/SUPERSEDED/WITHDRAWN/DRAFT_PENDING), concept index size, DOI resolution count, capture count, chunk count, wiki entry count, source commit, file SHA-256s for every input
+- Registered in `api/index.json` under a new `state` key with `canonical_path` and `content_sha256`
+- Future surfaces displaying counts must read state.json (build-time) or fetch it (runtime JS) — never hand-maintain count fields
+
+**Generator pipeline expanded** — `scripts/regenerate_surfaces.py` now runs 10 surfaces in one pass (was 7):
+
+```
+✓ data/state.json
+✓ s/browse/index.html
+✓ data/browse-index.json
+✓ data/chunks/registry/ (now with per-chunk sha256)
+✓ sitemap.xml (now includes 7 previously-missing surfaces + all protocols)
+✓ SHA256SUMS.txt (now real file paths in `sha256sum -c` format)
+✓ RECORD-SHA256-MANIFEST.txt (NEW — preserves the semantic AXN→hash mapping)
+✓ s/wiki/index.html + 9 chunk pages
+✓ s/graph/index.html
+✓ index.html <noscript> (NEW — auto-rewrites from registry, matches JS slice)
+✓ api/index.json (NEW — drift corrections: counts, content_sha256, stale claims)
+```
+
+**Audit P0 items closed:**
+
+- **Deposit form fixed**: `### Protocol Version` field added (was missing — would have failed PV-001 validator); license enum `CC0` → `CC0-1.0`; preview computes 6 emoji (AXN v2) not 4 (v1); label `pending-review` dropped; `Machine-authored` substrate option added
+- **Identifiers page rewritten to AXN v2**: was teaching "first 4 bytes of SHA-256", 4-emoji form, 2³² collision space; now teaches the current 6-emoji / 6-byte / 2⁴⁸ form with prior-schema (v1) preservation note
+- **Dynamic record XSS closed**: `/records/?id=N` page replaced with a 30-line redirect-only stub (JS + `<meta refresh>` + `<noscript>` fallback) that redirects to `/s/records/N/`; removed all `innerHTML` calls and the markdown renderer's permissive raw-HTML pass-through (`if(line.charAt(0)==='<') return line;`)
+- **Content Security Policy added**: `vercel.json` now sets CSP on all routes (`default-src 'self'`; allowed inline-scripts only because static record pages use them for JSON-LD; allowed external script/img/connect for GoatCounter analytics, Google Fonts, and raw.githubusercontent.com for the chunk JSON fetch); also added `X-Content-Type-Options: nosniff`, `X-Frame-Options: DENY`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Policy` denying device sensors
+- **Path aliases**: `/browse/`, `/wiki/`, `/graph/` now 308-redirect to their `/s/` static counterparts (audit noted some pages link to the bare forms)
+
+**Audit P1 items closed:**
+
+- **`api/index.json` drift corrections**: `registries.deposits.current_count` 879 → 884; `protocols.axn.canonical_implementations.javascript_embedded` removed (workflow no longer embeds JS — uses `scripts/axn_lib.py`); `state` reference added pointing to `/data/state.json`
+- **Homepage `<noscript>` regenerated from registry**: was 4 hardcoded records (#1-#4) carrying the Manifest's false "complete static listing" claim; now generated from the same `registry.json` the JS reads, contains the 5 latest deposits (matching the JS slice), with proper version chips + supersession banners + draft-pending badges
+- **Manifest claim corrected**: "noscript block with a complete static listing of all deposits" → "noscript block with the five latest deposits, generated from registry on every build; complete listing at /s/browse/"
+- **Sitemap completeness**: added `/observatory/`, `/lexical/`, `/citations/`, `/captures/`, `/addresses/`, `/resolve/`, `/datasets/`, `/api/index.json`, `/api/axn-protocol.json`, `/api/enrichment-protocol.json`, `/api/lifecycle-protocol.json`, `/data/state.json`, `/data/navigation.json`, `/data/chunks/registry/_index.json` — was missing all of these
+- **SHA256SUMS.txt now usable with `sha256sum -c`**: each line is `<sha>  data/texts/AXN-NNNN-text.md` — real file path format. The previous semantic format (`<sha>  AXN-NNNN <title>`) preserved under new name `RECORD-SHA256-MANIFEST.txt`. Both regenerate together.
+- **Chunk index includes per-chunk hashes**: `data/chunks/registry/_index.json` chunks now carry `sha256` field alongside path/range/count/size. Closes the audit §17 gap.
+
+**Audit institutional objects added:**
+
+- `LICENSE` — dual-license: CC-BY-4.0 for content, MIT for code; deposit-level license declarations override the content default per-deposit
+- `404.html` — informative not-found page with 6 categorized "looking for X?" sections (deposit, DOI, concept, moved route, withdrawn record, missing record); 16-link canonical nav
+- `RECOVERY.md` — full reconstruction procedure: verify bytes via SHA256SUMS, regenerate derived surfaces, deploy as static, restore deposit capability, mirror sources, identity continuity statement
+- `SECURITY.md` — disclosure policy + reporting route (`[ALEXANARCH SECURITY]` subject line at `leesharks00@gmail.com`); known-categories-of-concern listed transparently; emergency mint suspension procedure documented
+
+All four files at repo root; visible in standard GitHub navigation; canonical for the institution.
+
+**What's still queued** (see §6.4 for the full audit-derived task list):
+
+- Mint-side HTML sanitization (currently URL/control/BIDI only; needs HTML stripping)
+- `api/deposit-protocol.json` `byte_source` description correction (says `sha256(title + creator + description + body)`; actual is generated canonical Markdown file SHA-256)
+- `api/deposit-protocol.json` hex-offset clarification (`deposit_number + 12` vs unoffset)
+- Artifact ingestion in `mint_deposit.py` (uploaded files currently URL-only)
+- Per-scan conformance labels on the Observatory page
+- `/citations/` graph-edge predicate disambiguation (DOI-resolution vs scholarly citation)
+- Repo settings: auto-merge + branch protection + required validator status check (manual)
+- End-to-end test deposit through the workflow
+- Signed immutable releases, node contract, destruction test (P2)
+- Sitemap `lastmod` should use regeneration date, not deposit date (small)
+- Datasets page should fetch from `state.json` not `api/index.json` for counts (small)
+
 ---
 
 ## 5. Outstanding items (priority order for next session)
@@ -834,6 +902,107 @@ Page weight: 1.2 MB → median 147 KB per chunk (≈8x improvement). Largest chu
 
 **Wiki entries unchanged in count**: 861 entries total — same as before, just distributed across 9 chunks instead of one monolithic file.
 
+### 6.5 External audit derivative — remaining items (queued 2026-06-23 late PM)
+
+This section catalogs the audit findings NOT closed in §4.13. Each item has a priority and a sketch of the fix.
+
+#### 6.5.1 ▢ Protocol JSON byte_source description correction — P1
+
+`api/deposit-protocol.json` currently says:
+
+```
+"byte_source": "first 6 bytes of sha256(title + '\\n' + creator + '\\n' + description + '\\n' + body)"
+```
+
+But `scripts/mint_deposit.py` actually generates a canonical Markdown file (with frontmatter + SPXI provenance block + body sections) and computes SHA-256 over those bytes. The protocol description doesn't describe what the executable does.
+
+**Fix**: update `byte_source` to: `"SHA-256 of the canonical Markdown file generated by scripts/mint_deposit.py — see mint_deposit.py:build_canonical_text() for the exact construction. First 6 bytes of that SHA-256 are mapped through the 256-emoji table in scripts/axn_lib.py to produce the display glyphs."`
+
+Touches: `api/deposit-protocol.json`. Tiny edit; just needs documentation accuracy. Run `regenerate_surfaces.py` after to update `api/index.json` content_sha256.
+
+#### 6.5.2 ▢ Hex offset documentation — P1
+
+Audit §8 noted `mint_deposit.py` uses `hex_id = (deposit_number + 12)` formatted as 4-char hex, while the protocol describes unoffset deposit-number hex. The offset has a historical reason (the first 12 hex positions were reserved for pre-protocol seed identifiers) but isn't documented.
+
+**Fix**: add a `hex_id_construction` field to `api/axn-protocol.json` explaining the +12 offset and why. Or remove the offset entirely and re-mint affected AXNs — but that's a larger surgery; the documentation fix is the minimum.
+
+#### 6.5.3 ▢ Mint-side HTML sanitization — P0
+
+Audit §6 / §20: the sanitizer in `scripts/mint_deposit.py` strips control chars, BIDI overrides, normalizes NFC, blocks dangerous URL schemes, and imposes length limits — but does NOT strip or encode HTML. A payload like `<img src=x onerror=alert(1)>` can pass.
+
+Now that:
+- The dynamic `/records/?id=N` page is gone (redirects to static)
+- The static record renderer uses `htmlmod.escape()` for the title/creator/description/keywords
+- CSP is on (`script-src 'self' 'unsafe-inline'`)
+
+The risk surface has narrowed but isn't zero. The full-text rendering in `wire_deposit.regenerate_static_page` passes Markdown through a custom renderer that does `esc()` line-by-line — so HTML in registry fields shouldn't reach `<script>` execution. But defense-in-depth: the mint sanitizer should still encode HTML.
+
+**Fix**: in `scripts/mint_deposit.py`, add an `html_escape` pass to all free-text fields after sanitization. Or invert: sanitize-on-write, render-on-read with explicit escape. Audit said "Disallow raw Markdown HTML" — the cheap version is the mint-side encoding; the principled version is rewriting the Markdown renderer to be allowlist-based.
+
+#### 6.5.4 ▢ Artifact ingestion — P1 (heavier)
+
+Audit §5: deposits attach files (PDFs, datasets, images) as GitHub-hosted URLs in the `Files` field. `mint_deposit.py` extracts these as text and embeds them in the canonical Markdown. The actual bytes are not ingested. The "canonical artifact" is the deposit record, not the work itself.
+
+**Fix** (in order of effort):
+
+1. **Document accurately**: name what AXN actually identifies — the deposit record, not the artifact. Add a separate `artifact_manifest` field to the deposit schema that lists attached files with their URLs, declared media types, sizes, and (if downloaded) SHA-256s. Keep AXN tied to the record's bytes. Two identities, both honest. — **Quick win, do this first.**
+
+2. **Implement ingestion**: extend `mint_deposit.py` to download attached files from GitHub, store them under `data/artifacts/AXN-NNNN/<filename>`, compute SHA-256s, populate the artifact_manifest. Provides actual byte custody.
+
+3. **Manifest hashing**: compute a deterministic Merkle root over the manifest (sorted by filename, hash, size triples) and store it as the deposit's `artifact_manifest_sha256`. Allows verifying that an external mirror has the artifact correctly.
+
+#### 6.5.5 ▢ Datasets page reads from state.json — P1
+
+Audit §10: `/datasets/` page shows stale counts (881 deposits, 1,675 DOIs) because it currently fetches from `/api/index.json` (which had drift, now corrected to 884 / state.json). It should read directly from `/data/state.json`.
+
+**Fix**: edit `datasets/index.html` JS fetch from `/api/index.json` → `/data/state.json`. Update field accessors to match state.json's shape (`deposits.total` not `registries.deposits.current_count`). Verify all displayed counts now derive from state.json.
+
+#### 6.5.6 ▢ Observatory per-scan conformance labels — P1
+
+Audit §11: the Observatory aggregates 5 scans with materially different methodologies (ChatGPT v1.0 nine-object pilot; Claude partial v1.1; Gemini partial; Kimi & DeepSeek different depth). The page is honest about avoiding a consensus score but doesn't label each row's conformance.
+
+**Fix**: in `scripts/generate_observatory.py`, read a `conformance_label` field from each scan JSON (one of: `pilot`, `partial`, `retrospectively_converted`, `battery_unlocked`, `methodology_nonconformant`, `full_native_layer_a`, `full_shared_evidence_layer_b`). Render the label as a small chip next to each scan row. Backfill the label into each existing scan JSON.
+
+#### 6.5.7 ▢ Citations page predicate disambiguation — P1
+
+Audit §19: `/citations/` reports 4,866 edges, of which 4,311 are DOI-resolution relations (not scholarly citations). Calling them all "citations" overstates citation density.
+
+**Fix**: in the citations renderer + graph generator, split edges by predicate (`cites`, `mentions`, `resolves_legacy_identifier`, `is_version_of`, etc.). Display counts per predicate. The 555 non-DOI-resolution edges are the actual scholarly citation count.
+
+#### 6.5.8 ▢ Sitemap lastmod uses regeneration date — P2 (cosmetic)
+
+Audit §15: the current sitemap's per-record `lastmod` uses the deposit's `date` (its historical creation date), not the date the static record was last regenerated. Crawlers may underweight the page.
+
+**Fix**: in `regenerate_surfaces.regenerate_sitemap`, change the per-record line to use today's date for `lastmod` if the record's regeneration timestamp is more recent. Or maintain a per-record regeneration timestamp on `_receipt` writes.
+
+#### 6.5.9 ▢ Repo settings: auto-merge + branch protection — P0 (manual)
+
+Still pending from §5.15: enable "Allow auto-merge" in repo Settings; add a branch protection rule on `main` requiring `validate-registry / validate-protocol` status check; disable direct push to `main`; disable force-push. Until done, the mint workflow can complete its full pathway in CI but can't actually merge. Audit §3 named this as the missing step.
+
+#### 6.5.10 ▢ End-to-end test deposit — P0
+
+Once §6.5.9 is done, open one `[DEPOSIT]`-prefixed issue from a fresh GitHub account and verify: validation passes, sanitization runs, AXN mints, registry updates, surfaces regenerate, PR opens, auto-merge fires when CI passes, merge commits to `main`, Vercel deploys, new record visible at `/s/records/<N>/`. Audit §3 named this as the operational proof.
+
+#### 6.5.11 ▢ Signed immutable releases — P2
+
+Audit §13: each "release" should be a signed manifest carrying: release ID, source commit, registry SHA-256, file checksum manifest hash, record count, generated_at, signature, parent release ID, recovery instructions reference.
+
+**Fix sketch**: `scripts/cut_release.py` that takes a version label, computes all the relevant hashes from current state, writes `/releases/v<N>/release.json`, signs it with a GPG key, updates `/releases/latest.json`.
+
+#### 6.5.12 ▢ Node contract + peers ledger — P2
+
+Audit §14: publish `/rhizome/node.json` (this node's coverage), `/rhizome/peers.json` (declared mirror nodes), `/rhizome/health.json` (last-checked status), `/rhizome/releases/latest.json` (the canonical-release pointer).
+
+**Fix sketch**: write the four schemas. Begin with one declared peer (`github.com/leesharks000/alexanarch` itself as the canonical source). Add nodes as independent operators come on.
+
+#### 6.5.13 ▢ Destruction test — P2
+
+Audit §16: take a signed release, delete a staging copy entirely, reconstruct from the release alone under a different account/host, compare byte-by-byte. This is the actual proof that Alexanarch can survive operator loss. RECOVERY.md documents the procedure; the test exercises it.
+
+
+
+The audit's P2 work is the longer arc. Tracked here for the longer trajectory:
+
 ### 6.4 P2 — become a strong rhizome (audit §23.15–18)
 
 The audit's P2 work is the longer arc. Tracked here for the longer trajectory:
@@ -845,13 +1014,13 @@ The audit's P2 work is the longer arc. Tracked here for the longer trajectory:
 
 This is the "Alexanarch reconstructs rather than merely replicates" test. It is the load-bearing answer to *what happens if both GitHub and Vercel are lost*.
 
-### 6.5 The audit's central operational instruction
+### 6.6 The audit's central operational instruction
 
 > *"Do not build another major surface before installing the transaction boundary."*
 
 This is the single most important framing rule from the audit. **The Surface Visibility Instrument dashboard (§5.4) is a "major surface" the workplan was about to build.** Per the audit's instruction, the mint workflow repair (§6.2.1) takes priority over the dashboard build. The dashboard's two raw-material deposits (#880, #881) are minted and durable; the dashboard surface itself can wait two sessions.
 
-### 6.6 The "one lawful operation" the audit identifies as the decisive object
+### 6.7 The "one lawful operation" the audit identifies as the decisive object
 
 > ```
 > untrusted submission
@@ -875,7 +1044,7 @@ The work has a natural ordering:
 
 The first two steps are the next two sessions. The rest is the longer arc.
 
-### 6.7 Minimal release invariants (audit §24)
+### 6.8 Minimal release invariants (audit §24)
 
 Adopted as the long-term build target. The build refuses publication unless:
 

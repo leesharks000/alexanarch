@@ -66,8 +66,7 @@
         ".github/workflows/validate-registry.yml"
       ],
       "canonical_implementations": {
-        "python": "scripts/axn_lib.py",
-        "javascript_embedded": ".github/workflows/mint-axn.yml"
+        "python": "scripts/axn_lib.py"
       },
       "last_updated": "2026-06-22"
     },
@@ -146,7 +145,7 @@
       "name": "Deposit Registry (the AXN registry)",
       "canonical_path": "/data/registry.json",
       "purpose": "Canonical list of every deposit. Drives home-page Recent Deposits, browse page, sitemap, chunks. THE source of truth — all other surfaces are derived.",
-      "current_count": 879,
+      "current_count": 884,
       "validates_against": [
         "/api/schemas/deposit-entry.schema.json"
       ],
@@ -414,5 +413,10 @@
         "operator_directive.for_workflows rewritten to reflect §6.2.1 step-3 rebuild architecture: self-serve depositing (no maintainer label gate), explicit sanitization layer in scripts/mint_deposit.py, canonical bytes redefined as the deposited text file (audit §6 fix), PR-creating with GitHub auto-merge as commit path (audit §23.1 PR + required-checks recommendation preserved), validate-registry.yml as the PR gate. Previous directive described the disabled workflow's behavior."
       ]
     }
-  ]
+  ],
+  "state": {
+    "canonical_path": "/data/state.json",
+    "description": "Canonical generated source for all displayed counts. Read this rather than hand-maintaining counts here.",
+    "content_sha256": "2afc6d00215e0ccbcdd9acdf8b85dad1478db0961fc5749c96db6267cd4350e3"
+  }
 }

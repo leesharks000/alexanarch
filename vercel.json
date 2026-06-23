@@ -9,9 +9,49 @@
       "source": "/observatory/surface-weather/",
       "destination": "/observatory/",
       "permanent": true
+    },
+    {
+      "source": "/browse/",
+      "destination": "/s/browse/",
+      "permanent": true
+    },
+    {
+      "source": "/wiki/",
+      "destination": "/s/wiki/",
+      "permanent": true
+    },
+    {
+      "source": "/graph/",
+      "destination": "/s/graph/",
+      "permanent": true
     }
   ],
   "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://gc.zgo.at; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://gc.zgo.at https://alexanarch.goatcounter.com https://raw.githubusercontent.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://github.com"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+        }
+      ]
+    },
     {
       "source": "/data/(.*).json",
       "headers": [

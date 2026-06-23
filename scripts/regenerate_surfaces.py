@@ -73,7 +73,7 @@ try:
 except ImportError:
     _OVERWRITE_GUARD_AVAILABLE = False
 
-ALL_SURFACES = ["browse", "browse-index", "chunks", "sitemap", "sha256sums", "wiki", "graph"]
+ALL_SURFACES = ["state", "browse", "browse-index", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index"]
 
 
 def _receipt(path, reason: str = "regenerate_surfaces write"):
@@ -311,8 +311,10 @@ def regenerate_chunks(reg, dry_run=False, chunk_target_bytes=1_000_000):
         obj, payload = serialize_chunk(deps_in_chunk, num)
         first, last = obj["first_deposit"], obj["last_deposit"]
         path = chunks_dir / f"chunk-{num:03d}-deposits-{first}-to-{last}.json"
+        payload_bytes = payload.encode("utf-8")
+        chunk_sha = hashlib.sha256(payload_bytes).hexdigest()
         if dry_run:
-            print(f"  [DRY] would write {path.name} (#{first}-#{last}, {len(payload):,} bytes)")
+            print(f"  [DRY] would write {path.name} (#{first}-#{last}, {len(payload):,} bytes, sha256 {chunk_sha[:16]}…)")
         else:
             _receipt(path)
             with open(path, "w", encoding="utf-8") as f:
@@ -323,7 +325,8 @@ def regenerate_chunks(reg, dry_run=False, chunk_target_bytes=1_000_000):
             "first_deposit": first,
             "last_deposit": last,
             "count": len(deps_in_chunk),
-            "size_bytes": len(payload.encode("utf-8")),
+            "size_bytes": len(payload_bytes),
+            "sha256": chunk_sha,
         }
 
     # Remove existing chunk files (recreate fresh from current registry)
@@ -370,24 +373,42 @@ def regenerate_chunks(reg, dry_run=False, chunk_target_bytes=1_000_000):
 
 # Static (non-deposit) URLs the sitemap must always include
 STATIC_URLS = [
+    # Core
     ("https://alexanarch.org/", 1.0),
     ("https://alexanarch.org/deposit/", 0.8),
-    ("https://alexanarch.org/browse/", 0.8),
-    ("https://alexanarch.org/principles/", 0.8),
-    ("https://alexanarch.org/identifiers/", 0.8),
-    ("https://alexanarch.org/wiki/", 0.8),
-    ("https://alexanarch.org/graph/", 0.8),
     ("https://alexanarch.org/guide/", 0.8),
     ("https://alexanarch.org/manifest/", 0.8),
+    ("https://alexanarch.org/principles/", 0.8),
+    ("https://alexanarch.org/identifiers/", 0.8),
+    # Discovery surfaces (the 7 the audit flagged as missing)
+    ("https://alexanarch.org/observatory/", 0.9),
+    ("https://alexanarch.org/lexical/", 0.8),
+    ("https://alexanarch.org/citations/", 0.8),
+    ("https://alexanarch.org/captures/", 0.8),
+    ("https://alexanarch.org/addresses/", 0.7),
+    ("https://alexanarch.org/resolve/", 0.7),
+    ("https://alexanarch.org/datasets/", 0.7),
+    # Generated surfaces
     ("https://alexanarch.org/s/browse/", 0.7),
     ("https://alexanarch.org/s/wiki/", 0.6),
     ("https://alexanarch.org/s/graph/", 0.6),
+    # Canonical data
     ("https://alexanarch.org/data/registry.json", 0.5),
+    ("https://alexanarch.org/data/state.json", 0.6),
+    ("https://alexanarch.org/data/navigation.json", 0.4),
     ("https://alexanarch.org/data/doi-resolution-index.json", 0.5),
-    ("https://alexanarch.org/data/batch-axn-assignment.json", 0.5),
+    ("https://alexanarch.org/data/batch-axn-assignment.json", 0.4),
+    ("https://alexanarch.org/data/chunks/registry/_index.json", 0.4),
+    # Protocols
+    ("https://alexanarch.org/api/index.json", 0.6),
+    ("https://alexanarch.org/api/deposit-protocol.json", 0.5),
     ("https://alexanarch.org/api/deposit-schema.json", 0.5),
-    ("https://alexanarch.org/AGENTS.md", 0.5),
-    ("https://alexanarch.org/DEPOSIT-FLOW.md", 0.5),
+    ("https://alexanarch.org/api/axn-protocol.json", 0.5),
+    ("https://alexanarch.org/api/enrichment-protocol.json", 0.4),
+    ("https://alexanarch.org/api/lifecycle-protocol.json", 0.5),
+    # Documents
+    ("https://alexanarch.org/AGENTS.md", 0.4),
+    ("https://alexanarch.org/DEPOSIT-FLOW.md", 0.4),
 ]
 
 
@@ -430,29 +451,70 @@ def regenerate_sitemap(reg, dry_run=False):
 # ──────────────────────────────────────────────────────────────────────────────
 
 def regenerate_sha256sums(reg, dry_run=False):
-    """Rebuild SHA256SUMS.txt — one line per deposit with hash + AXN-hex + title."""
+    """Rebuild two complementary integrity manifests.
+
+    The audit (§16) correctly noted that the historical SHA256SUMS.txt used
+    semantic labels rather than file paths, which standard verification tools
+    can't use. Fix: emit two files.
+
+    1. SHA256SUMS.txt — real-file-path manifest in `sha256sum -c` format.
+       Lists data/texts/AXN-NNNN-text.md paths with the actual sha256 of the
+       file bytes. Standard tools verify byte integrity directly.
+
+    2. RECORD-SHA256-MANIFEST.txt — semantic-label manifest (the old format,
+       kept under a clearer name). Lists registry-declared content hashes
+       against AXN identities. Useful for verifying that a deposit's
+       registry-declared hash matches what was minted.
+
+    Both regenerate together; the audit's complaint is closed by having
+    real-file checksums alongside the semantic ones.
+    """
     deposits = reg["deposits"]
-    lines = []
+
+    # SHA256SUMS.txt — real file paths, hashes computed from disk
+    file_lines = []
+    semantic_lines = []
     for d in deposits:
-        h = d.get("hash") or d.get("content_sha256")
-        if not h:
-            continue
         hex_id = d.get("hex", "")
         title = (d.get("title") or "").strip()
-        # The conventional format is: <sha>  AXN-<hex> <title>
-        lines.append(f"{h}  AXN-{hex_id} {title}")
 
-    lines.sort()
-    out = "\n".join(lines) + "\n"
+        # Semantic manifest
+        h = d.get("hash") or d.get("content_sha256")
+        if h:
+            semantic_lines.append(f"{h}  AXN-{hex_id} {title}")
 
-    target = REPO_ROOT / "SHA256SUMS.txt"
+        # Real-file manifest — only for deposits that have an on-disk text file
+        text_rel = f"data/texts/AXN-{hex_id}-text.md"
+        text_path = REPO_ROOT / text_rel
+        if text_path.exists():
+            try:
+                file_h = hashlib.sha256(text_path.read_bytes()).hexdigest()
+                file_lines.append(f"{file_h}  {text_rel}")
+            except Exception:
+                pass
+
+    file_lines.sort()
+    semantic_lines.sort()
+    file_out = "\n".join(file_lines) + "\n"
+    semantic_out = "\n".join(semantic_lines) + "\n"
+
+    sha_target = REPO_ROOT / "SHA256SUMS.txt"
+    rec_target = REPO_ROOT / "RECORD-SHA256-MANIFEST.txt"
+
     if dry_run:
-        print(f"  [DRY] would write {target} ({len(lines)} lines, {len(out):,} bytes)")
+        print(f"  [DRY] would write {sha_target} ({len(file_lines)} file lines, {len(file_out):,} bytes)")
+        print(f"  [DRY] would write {rec_target} ({len(semantic_lines)} record lines, {len(semantic_out):,} bytes)")
         return
-    _receipt(target)
-    with open(target, "w", encoding="utf-8") as f:
-        f.write(out)
-    print(f"  ✓ SHA256SUMS.txt ({len(lines)} lines, {len(out):,} bytes)")
+
+    _receipt(sha_target)
+    with open(sha_target, "w", encoding="utf-8") as f:
+        f.write(file_out)
+    print(f"  ✓ SHA256SUMS.txt ({len(file_lines)} file lines, real paths, sha256sum -c verifiable)")
+
+    _receipt(rec_target)
+    with open(rec_target, "w", encoding="utf-8") as f:
+        f.write(semantic_out)
+    print(f"  ✓ RECORD-SHA256-MANIFEST.txt ({len(semantic_lines)} record lines, semantic AXN→hash mapping)")
 
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -924,7 +986,207 @@ _GRAPH_HTML_TAIL = (
 # Driver
 # ──────────────────────────────────────────────────────────────────────────────
 
+# ──────────────────────────────────────────────────────────────────────────────
+# state.json + homepage noscript fallback + api/index.json — single-source-of-truth
+# ──────────────────────────────────────────────────────────────────────────────
+
+def regenerate_state(reg, dry_run=False):
+    """Wraps scripts/generate_state.py — produces data/state.json as the
+    canonical generated source for all displayed counts.
+    """
+    # Defer to the standalone module so it can also be run directly
+    sys.path.insert(0, str(REPO_ROOT / 'scripts'))
+    import generate_state as _gs
+    if dry_run:
+        st = _gs.build_state()
+        print(f"  [dry-run] data/state.json would be regenerated "
+              f"(deposits={st['deposits']['total']}, captures={st['corpus']['captures']})")
+        return
+    _gs.main()
+
+
+def regenerate_homepage_noscript(reg, dry_run=False):
+    """Rewrite the <noscript>...</noscript> block in index.html so it shows
+    the same N latest deposits the JavaScript renders. Previously hand-maintained
+    with 4 hardcoded records; now generated from registry on every regen so
+    no-JS readers and crawlers see actual current state.
+
+    The contract: the static fallback must equal what JS would render for the
+    'Recent Deposits' section. Both pull from data/registry.json — JS at
+    runtime, this generator at build time.
+    """
+    index_path = REPO_ROOT / 'index.html'
+    if not index_path.exists():
+        print(f"  ⚠ {index_path} not found — skipping")
+        return
+
+    # Match the JS slice: take the last 5 deposits by deposit_number, reverse for newest-first
+    deposits = sorted(reg['deposits'], key=lambda d: d.get('deposit_number', 0))
+    recent = list(reversed(deposits[-5:]))
+
+    cards = []
+    for d in recent:
+        n = d.get('deposit_number', 0)
+        axn = esc_html(d.get('axn', ''))
+        title = esc_html(d.get('title', '(untitled)'))
+        creator = esc_html(d.get('creator', ''))
+        date = esc_html(d.get('date', ''))
+        content_type = esc_html(d.get('content_type', ''))
+        desc = esc_html((d.get('description', '') or '')[:250])
+        if len(d.get('description', '') or '') > 250:
+            desc = desc + '...'
+        # Version chip + status badge (mirrors browse-card logic)
+        version = d.get('version', '')
+        status = d.get('status', 'ACTIVE')
+        superseded_by_n = d.get('superseded_by_deposit_number')
+        in_real_series = bool(d.get('version_series_id'))
+        version_chip = ''
+        if version and (version != 'v1.0' or in_real_series):
+            version_chip = (f' <span style="font-family:monospace;font-size:.8em;color:#0a7c6a;'
+                            f'background:#f0f4f8;padding:1px 6px;border-radius:8px;margin-left:4px;'
+                            f'font-weight:500">{esc_html(version)}</span>')
+        status_banner = ''
+        opacity = '1'
+        if status == 'SUPERSEDED' and superseded_by_n:
+            opacity = '0.65'
+            status_banner = (f'<div style="font-size:0.78em;color:#92400e;background:#fef3c7;'
+                             f'padding:4px 10px;border-radius:4px;margin:6px 0;display:inline-block">'
+                             f'⚠ Superseded by <strong>#{superseded_by_n}</strong></div>')
+        elif status == 'DRAFT_PENDING':
+            opacity = '0.65'
+            status_banner = ('<div style="font-size:0.78em;color:#6b7280;background:#f3f4f6;'
+                             'padding:4px 10px;border-radius:4px;margin:6px 0;display:inline-block;'
+                             'font-style:italic">⏳ Draft — body not yet written</div>')
+
+        card = (
+            f'<a href="/s/records/{n}/" style="display:block;background:#fff;border:1px solid #e0e0e0;'
+            f'border-radius:6px;padding:20px;margin-bottom:12px;text-decoration:none;color:inherit;opacity:{opacity}">'
+            f'<div style="font-family:monospace;font-size:0.88em;color:#0a7c6a;font-weight:500">{axn}</div>'
+            f'{status_banner}'
+            f'<div style="font-weight:500;font-size:0.95em;margin:4px 0">{title}{version_chip}</div>'
+            f'<div style="font-size:0.82em;color:#777">{creator} · {date} · {content_type}</div>'
+            f'<div style="font-size:0.82em;color:#999;margin-top:6px;line-height:1.5">{desc}</div>'
+            f'</a>'
+        )
+        cards.append(card)
+
+    new_noscript = (
+        '<noscript>\n'
+        f'<!-- Generated from data/registry.json by scripts/regenerate_surfaces.py on '
+        f'{datetime.now(timezone.utc).strftime("%Y-%m-%d")}. Latest {len(recent)} deposits, '
+        f'matching the JavaScript Recent Deposits slice. -->\n'
+        + ''.join(cards) +
+        '<div style="text-align:center;margin-top:12px"><a href="/s/browse/" style="color:#0a7c6a">Browse all deposits →</a></div>\n'
+        '</noscript>'
+    )
+
+    html = index_path.read_text()
+    # Replace the existing noscript block
+    import re
+    noscript_pattern = re.compile(r'<noscript>.*?</noscript>', re.DOTALL)
+    if not noscript_pattern.search(html):
+        print(f"  ⚠ index.html has no <noscript> block — skipping")
+        return
+    new_html = noscript_pattern.sub(new_noscript, html, count=1)
+
+    if dry_run:
+        print(f"  [dry-run] index.html <noscript> would be updated to {len(recent)} latest deposits")
+        return
+    _receipt(index_path, reason="regenerate_surfaces homepage-noscript")
+    index_path.write_text(new_html, encoding='utf-8')
+    print(f"  ✓ index.html <noscript> updated ({len(recent)} latest deposits, matching JS slice)")
+
+
+def regenerate_api_index(reg, dry_run=False):
+    """Update api/index.json's drift-prone fields from authoritative sources.
+
+    Specifically: current_count fields should equal what data/state.json says,
+    and protocol content_sha256 fields should match the actual file SHA-256s.
+    Anything outside these regenerable fields is left untouched.
+
+    This does NOT regenerate the whole file from scratch — that would lose
+    hand-curated descriptive content. It updates only the fields that have
+    documented, derivable values.
+    """
+    idx_path = REPO_ROOT / 'api' / 'index.json'
+    if not idx_path.exists():
+        print(f"  ⚠ {idx_path} not found — skipping")
+        return
+    with open(idx_path) as f:
+        idx = json.load(f)
+
+    changes = []
+
+    # Update deposit count
+    if 'registries' in idx and 'deposits' in idx['registries']:
+        old = idx['registries']['deposits'].get('current_count')
+        new = len(reg['deposits'])
+        if old != new:
+            idx['registries']['deposits']['current_count'] = new
+            changes.append(f"registries.deposits.current_count: {old} → {new}")
+
+    # Update protocol content_sha256 fields
+    for proto_key in ('deposit', 'axn', 'enrichment', 'lifecycle'):
+        if 'protocols' not in idx or proto_key not in idx['protocols']:
+            continue
+        canonical = idx['protocols'][proto_key].get('canonical_path', '')
+        if not canonical:
+            continue
+        file_path = REPO_ROOT / canonical.lstrip('/')
+        if not file_path.exists():
+            continue
+        actual_sha = hashlib.sha256(file_path.read_bytes()).hexdigest()
+        old_sha = idx['protocols'][proto_key].get('content_sha256')
+        if old_sha != actual_sha:
+            idx['protocols'][proto_key]['content_sha256'] = actual_sha
+            changes.append(f"protocols.{proto_key}.content_sha256: {(old_sha or 'none')[:16]}… → {actual_sha[:16]}…")
+
+    # Remove stale 'javascript_embedded' claim (workflow no longer embeds JS;
+    # it invokes Python via axn_lib.py)
+    axn_proto = idx.get('protocols', {}).get('axn', {})
+    canonical_impls = axn_proto.get('canonical_implementations', {})
+    if canonical_impls.get('javascript_embedded'):
+        del canonical_impls['javascript_embedded']
+        changes.append("protocols.axn.canonical_implementations.javascript_embedded: REMOVED (stale claim — workflow uses scripts/axn_lib.py)")
+
+    # Add or update state_reference
+    state_path = REPO_ROOT / 'data' / 'state.json'
+    if state_path.exists():
+        state_sha = hashlib.sha256(state_path.read_bytes()).hexdigest()
+        if 'state' not in idx:
+            idx['state'] = {
+                'canonical_path': '/data/state.json',
+                'description': 'Canonical generated source for all displayed counts. Read this rather than hand-maintaining counts here.',
+                'content_sha256': state_sha,
+            }
+            changes.append("Added 'state' reference pointing to /data/state.json")
+        elif idx['state'].get('content_sha256') != state_sha:
+            idx['state']['content_sha256'] = state_sha
+            changes.append(f"state.content_sha256 updated to {state_sha[:16]}…")
+
+    if dry_run:
+        if changes:
+            print(f"  [dry-run] api/index.json: {len(changes)} field(s) would update")
+            for c in changes:
+                print(f"      {c}")
+        else:
+            print(f"  [dry-run] api/index.json: in sync with data sources")
+        return
+
+    if changes:
+        _receipt(idx_path, reason="regenerate_surfaces api-index")
+        with open(idx_path, 'w') as f:
+            json.dump(idx, f, indent=2, ensure_ascii=False)
+            f.write('\n')
+        print(f"  ✓ api/index.json updated ({len(changes)} drift correction(s))")
+        for c in changes:
+            print(f"      {c}")
+    else:
+        print(f"  ✓ api/index.json (already in sync)")
+
+
 SURFACE_FNS = {
+    "state": regenerate_state,
     "browse": regenerate_browse,
     "browse-index": regenerate_browse_index,
     "chunks": regenerate_chunks,
@@ -932,6 +1194,8 @@ SURFACE_FNS = {
     "sha256sums": regenerate_sha256sums,
     "wiki": regenerate_wiki,
     "graph": regenerate_graph,
+    "homepage-noscript": regenerate_homepage_noscript,
+    "api-index": regenerate_api_index,
 }
 
 

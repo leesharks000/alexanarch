@@ -80,7 +80,7 @@ Fill in the metadata below. When you click <strong>Submit Deposit</strong>, the 
   <option value="">Select...</option>
   <option>CC-BY-4.0</option>
   <option>CC-BY-SA-4.0</option>
-  <option>CC0</option>
+  <option>CC0-1.0</option>
   <option>Other (specify in description)</option>
 </select>
 
@@ -91,6 +91,7 @@ Fill in the metadata below. When you click <strong>Submit Deposit</strong>, the 
   <option>AI-assisted (tool) — editing, formatting, code generation</option>
   <option>AI-assisted (substrate) — drafting under human editorial governance</option>
   <option>AI-generated (research object) — AI output is the object of study</option>
+  <option>Machine-authored</option>
   <option>Mixed (specify in description)</option>
 </select>
 <div class="hint">Disclosure is provenance, not suspicion.</div>
@@ -142,8 +143,8 @@ async function computePreview(){
 '+desc;
   const enc=new TextEncoder();
   const hash=new Uint8Array(await crypto.subtle.digest('SHA-256',enc.encode(content)));
-  const emoji=[G[hash[0]],G[hash[1]],G[hash[2]],G[hash[3]]].join('');
-  const clusters=[C[hash[0]],C[hash[1]],C[hash[2]],C[hash[3]]];
+  const emoji=[G[hash[0]],G[hash[1]],G[hash[2]],G[hash[3]],G[hash[4]],G[hash[5]]].join('');
+  const clusters=[C[hash[0]],C[hash[1]],C[hash[2]],C[hash[3]],C[hash[4]],C[hash[5]]];
   const reading=clusters.map(c=>W[c]).join(' → ');
   document.getElementById('preview-axn').textContent='AXN:01.DRAFT.'+emoji;
   document.getElementById('preview-clusters').textContent=clusters.join(' · ');
@@ -172,10 +173,10 @@ function submitDeposit(){
   if(!fields.title||!fields.creator||!fields.desc||!fields.type||!fields.license||!fields.substrate){
     alert('Please fill in all required fields.');return;
   }
-  const body=`### Title\n\n${fields.title}\n\n### Creator\n\n${fields.creator}\n\n### ORCID\n\n${fields.orcid||'_No response_'}\n\n### Date\n\n${fields.date||new Date().toISOString().split('T')[0]}\n\n### Description\n\n${fields.desc}\n\n### Content Type\n\n${fields.type}\n\n### License\n\n${fields.license}\n\n### Substrate Disclosure\n\n${fields.substrate}\n\n### Keywords\n\n${fields.keywords||'_No response_'}\n\n### Related Identifiers\n\n${fields.related||'_No response_'}\n\n### Version\n\n${fields.version||'_No response_'}\n\n### Methodology\n\n${fields.method||'_No response_'}\n\n### Falsification Conditions\n\n${fields.falsify||'_No response_'}\n\n### Files\n\n_Attach files below_\n\n### Terms\n\n- [x] I confirm this work is deposited under the stated license\n- [x] I confirm the substrate disclosure is accurate\n- [x] I understand that deposited content will NOT be used to train enforcement classifiers`;
+  const body=`### Protocol Version\n\nalexanarch-deposit-protocol/v1\n\n### Title\n\n${fields.title}\n\n### Creator\n\n${fields.creator}\n\n### ORCID\n\n${fields.orcid||'_No response_'}\n\n### Date\n\n${fields.date||new Date().toISOString().split('T')[0]}\n\n### Description\n\n${fields.desc}\n\n### Content Type\n\n${fields.type}\n\n### License\n\n${fields.license}\n\n### Substrate Disclosure\n\n${fields.substrate}\n\n### Keywords\n\n${fields.keywords||'_No response_'}\n\n### Related Identifiers\n\n${fields.related||'_No response_'}\n\n### Version\n\n${fields.version||'_No response_'}\n\n### Methodology\n\n${fields.method||'_No response_'}\n\n### Falsification Conditions\n\n${fields.falsify||'_No response_'}\n\n### Files\n\n_Attach files below_\n\n### Terms\n\n- [x] I confirm this work is deposited under the stated license\n- [x] I confirm the substrate disclosure is accurate\n- [x] I understand that deposited content will NOT be used to train enforcement classifiers`;
   const title=encodeURIComponent('[DEPOSIT] '+fields.title);
   const bodyEnc=encodeURIComponent(body);
-  const labels=encodeURIComponent('deposit,pending-review');
+  const labels=encodeURIComponent('deposit');
   window.open(`https://github.com/leesharks000/alexanarch/issues/new?title=${title}&body=${bodyEnc}&labels=${labels}`,'_blank');
 }
 </script>
