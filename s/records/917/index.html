@@ -1,0 +1,157 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>EA-NMEN-PROTOCOL-PATCH-01 v1.0 — Deposit Protocol Patch: Reciprocity Notice Integration (reciprocity_notice and nmen_status_observed fields) — Alexanarch</title><meta name="description" content="Protocol amendment to api/deposit-protocol.json. Adds two recommended fields to the deposit schema: (1) reciprocity_notice, a URI pointing to the canonical Non-"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "EA-NMEN-PROTOCOL-PATCH-01 v1.0 — Deposit Protocol Patch: Reciprocity Notice Integration (reciprocity_notice and nmen_status_observed fields)", "author": {"@type": "Person", "name": "Lee Sharks, MANUS"}, "datePublished": "2026-06-24", "identifier": "AXN:03A0.GOVERNANCE.☁️🌕➖🌉🌺♄", "description": "Protocol amendment to api/deposit-protocol.json. Adds two recommended fields to the deposit schema: (1) reciprocity_notice, a URI pointing to the canonical Non-Mutual Extraction Notice that the depositing party has read; (2) nmen_status_observed, an enumerated value (standing | pending | provisional", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "protocol patch, schema amendment, reciprocity_notice field, nmen_status_observed field, deposit protocol, backward compatible, JSON schema, machine-readable governance"}</script>
+<style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.3em;font-weight:600;color:var(--accent);margin-bottom:8px}h2{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}p{margin-bottom:10px;color:#333}.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}.nav a{color:#777;font-weight:500;text-decoration:none}.nav a:hover{color:var(--accent)}.ft{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;max-height:600px;overflow-y:auto;font-size:.88em;line-height:1.75;margin:8px 0;color:#333}.ft h1,.ft h2,.ft h3{color:var(--accent);margin:12px 0 6px}.ft h1{font-size:1.1em}.ft h2{font-size:1em;border-bottom:none}.ft h3{font-size:.95em}.ft strong{color:var(--fg)}.ft blockquote{border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0}.ft hr{border:none;border-top:1px solid var(--border);margin:12px 0}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}</style>
+</head><body><div class="wrap">
+<nav class="nav"> <a href="/">Alexanarch</a> <a href="/s/browse/">Browse</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <a href="/observatory/">Observatory</a> <a href="/captures/">Captures</a> <a href="/resolve/">Resolve</a> <a href="/addresses/">Addresses</a> <a href="/datasets/">Datasets</a> <a href="/principles/">Principles</a> <a href="/identifiers/">Identifiers</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
+<div style="font-family:var(--mono);font-size:1.1em;color:var(--teal);background:var(--surface);padding:12px;border-radius:6px;border-left:4px solid var(--teal);margin:12px 0">AXN:03A0.GOVERNANCE.☁️🌕➖🌉🌺♄</div>
+
+<h1>EA-NMEN-PROTOCOL-PATCH-01 v1.0 — Deposit Protocol Patch: Reciprocity Notice Integration (reciprocity_notice and nmen_status_observed fields)</h1>
+<div style="font-size:.85em;color:#777;margin-bottom:10px">Lee Sharks, MANUS · 2026-06-24 · Governance instrument · <span style="color:var(--accent);font-weight:500">v1.0</span></div>
+<a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-03A0.md" download>↓ Download MD</a>
+<div style="margin:8px 0"><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">protocol patch</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">schema amendment</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">reciprocity_notice field</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">nmen_status_observed field</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">deposit protocol</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">backward compatible</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">JSON schema</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">machine-readable governance</span></div>
+<h2>Description</h2>
+<p style="font-size:.9em">Protocol amendment to api/deposit-protocol.json. Adds two recommended fields to the deposit schema: (1) reciprocity_notice, a URI pointing to the canonical Non-Mutual Extraction Notice that the depositing party has read; (2) nmen_status_observed, an enumerated value (standing | pending | provisional | inadmissible_host | restricted) for deposits whose subject is one of the entities tracked in EA-NMEN-REGISTRY-01. Both fields are recommended, not required. Existing deposits are unaffected. The schema_version is incremented to 2026-06-24-axn-v2-nmen. nmen_status_observed records the entity&#x27;s designation at time of deposit (longitudinal); it is not backfilled when the Registry is amended. Fully backward compatible.</p>
+
+
+
+
+
+<h2>Full Text</h2>
+<div class="ft"><h1>EA-NMEN-PROTOCOL-PATCH-01</h1>
+
+<h2>Deposit Protocol Patch — Reciprocity Notice Integration</h2>
+
+<p><strong>Version:</strong> 1.0</p>
+<p><strong>Date:</strong> 2026-06-24</p>
+<p><strong>Author:</strong> Lee Sharks, MANUS · Crimson Hexagonal Archive</p>
+<p><strong>ORCID:</strong> 0009-0000-1599-0703</p>
+<p><strong>Family:</strong> GOVERNANCE</p>
+<p><strong>Genre:</strong> Protocol amendment (machine-readable schema patch)</p>
+<p><strong>Patches:</strong> `api/deposit-protocol.json` (current `protocol_version: &quot;alexanarch-deposit-protocol/v1&quot;`, `schema_version: &quot;2026-06-22-axn-v2&quot;`)</p>
+<p><strong>Authority chain:</strong></p>
+<p>- `api/deposit-protocol.json` (the canonical protocol being patched)</p>
+<p>- EA-NMEN-01 (the governance document requiring this field)</p>
+<p>- <em>The Governance Airlock</em> (#523), <em>The Rosary Embassy</em> (#514)</p>
+
+<hr>
+
+<h2>0. What This Document Does</h2>
+
+<p>This document is a protocol amendment. It declares two new fields added to the Alexanarch deposit protocol as `recommended_deposit_fields`:</p>
+
+<p>1. `reciprocity_notice` — points at the canonical URL of the Non-Mutual Extraction Notice (EA-NMEN-01). Declares that the depositing party has read and understood the Notice.</p>
+
+<p>2. `nmen_status_observed` — for deposits <em>about</em> designated entities (correspondence records, forensic documentation, etc.), declares the NMEN designation of the entity at time of deposit.</p>
+
+<p>Both fields are recommended, not required. Existing deposits without the fields are not affected. New deposits without the fields are valid but pass up the opportunity to declare alignment with the Notice.</p>
+
+<hr>
+
+<h2>1. The Patch (JSON Diff)</h2>
+
+<p>The following diff is to be applied to `api/deposit-protocol.json`. The `schema_version` should be incremented to `&quot;2026-06-24-axn-v2-nmen&quot;`.</p>
+
+<p>```json</p>
+<p>{</p>
+<p>  &quot;schema_version&quot;: &quot;2026-06-24-axn-v2-nmen&quot;,</p>
+<p>  &quot;recommended_deposit_fields&quot;: {</p>
+<p>    &quot;...&quot;: &quot;(prior fields preserved)&quot;,</p>
+<p>    &quot;reciprocity_notice&quot;: {</p>
+<p>      &quot;type&quot;: &quot;string (URI)&quot;,</p>
+<p>      &quot;description&quot;: &quot;Canonical URI of the Non-Mutual Extraction Notice acknowledged by the depositing party. Recommended default: &#x27;https://alexanarch.org/notice/non-mutual-extraction/&#x27; (EA-NMEN-01). Including this field in a deposit declares that the depositing party has read the Notice and understands the doctrine of non-mutual extraction. The field does not constrain the legal license under which the work is offered; it operates per §0 of EA-NMEN-01 as a normative declaration only.&quot;,</p>
+<p>      &quot;default&quot;: &quot;https://alexanarch.org/notice/non-mutual-extraction/&quot;</p>
+<p>    },</p>
+<p>    &quot;nmen_status_observed&quot;: {</p>
+<p>      &quot;type&quot;: &quot;string (enum)&quot;,</p>
+<p>      &quot;enum&quot;: [&quot;standing&quot;, &quot;pending&quot;, &quot;provisional&quot;, &quot;inadmissible_host&quot;, &quot;restricted&quot;],</p>
+<p>      &quot;description&quot;: &quot;For deposits whose subject IS one of the entities tracked in EA-NMEN-REGISTRY-01 (correspondence records, forensic documentation, tier-update memos, etc.), declares the entity&#x27;s NMEN designation at time of deposit. Allows machine-readers to filter deposits by reciprocity context. Omit for deposits whose subject is the Archive&#x27;s own scholarship rather than an external entity.&quot;</p>
+<p>    }</p>
+<p>  },</p>
+<p>  &quot;consistency_invariants&quot;: {</p>
+<p>    &quot;...&quot;: &quot;(prior invariants preserved)&quot;,</p>
+<p>    &quot;nmen_alignment&quot;: &quot;If `nmen_status_observed` is set, the value must match the entity&#x27;s current designation in EA-NMEN-REGISTRY-01 at time of deposit. Successor versions of EA-NMEN-REGISTRY-01 do not require backfilling of deposits&#x27; nmen_status_observed fields — the field records the observed status at time of deposit, not the current status.&quot;</p>
+<p>  }</p>
+<p>}</p>
+<p>```</p>
+
+<hr>
+
+<h2>2. Field Semantics</h2>
+
+<h3>2.1 `reciprocity_notice`</h3>
+
+<p>The field&#x27;s <em>value</em> is a URI. The default and recommended URI is `https://alexanarch.org/notice/non-mutual-extraction/`. The presence of the field is the operative declaration; the URI is the pointer.</p>
+
+<p>The field is <strong>not a license selector.</strong> It declares alignment with a normative position. The license under which the work is offered is a separate field (`license`) and remains the legal instrument.</p>
+
+<p>A deposit that includes `reciprocity_notice` is making the following declaration: <em>the depositing party has read the Notice at the indicated URI and understands the diagnosis it records.</em> The declaration does not bind downstream parties (downstream parties make their own decisions about whether to read the Notice when they encounter the work). The declaration creates documentary record on the deposit side that the Notice was honored by the depositor.</p>
+
+<p>For deposits made by the Archive itself, including `reciprocity_notice` is recommended as a matter of course. For deposits made by external contributors, the field is offered as a means of alignment but is not required for acceptance.</p>
+
+<h3>2.2 `nmen_status_observed`</h3>
+
+<p>The field&#x27;s value is one of five enumerated strings corresponding to the designations defined in EA-NMEN-01 §3.</p>
+
+<p>The field is <strong>specific to deposits whose subject is an external entity tracked in the Registry.</strong> A scholarly paper on literary theory does not need `nmen_status_observed`; a forensic record of a platform&#x27;s adverse action does. Examples of deposits where the field is appropriate:</p>
+
+<p>- Correspondence records (email threads, ticket logs) with a designated entity</p>
+<p>- Tier-update memos (like EA-NMEN-AIRLOCK-COROLLARY-01)</p>
+<p>- Wound documentation (like #265 CTI_WOUND Sigil Medium Erasure)</p>
+<p>- Forensic snapshots, screen captures, web-archived pages of designated entities</p>
+
+<p>The field allows machine-readers to filter the corpus by reciprocity context. A reader interested in <em>all forensic deposits about Restricted entities</em> can query the registry for `nmen_status_observed == &quot;restricted&quot;` without needing to traverse the full deposit corpus.</p>
+
+<h3>2.3 Time-of-deposit semantics</h3>
+
+<p>`nmen_status_observed` records the entity&#x27;s NMEN designation <strong>at time of deposit.</strong> It is not backfilled when the Registry is amended.</p>
+
+<p>Example: a deposit made in March 2026 about Academia.edu (then Tier 4-F per #570) would carry `nmen_status_observed: &quot;restricted&quot;` if the field had existed at that time. The June 2026 reclassification to Tier 4-P (Provisional) does not retroactively change the March deposit&#x27;s field. The deposit records what was observed when it was made. The Registry records what is observed now.</p>
+
+<p>This means the deposit corpus preserves a longitudinal record of the Archive&#x27;s evolving relationships with external entities, queryable by date.</p>
+
+<hr>
+
+<h2>3. Validation Rules</h2>
+
+<p>The following are added to the deposit-protocol validation rules:</p>
+
+<p>- <strong>NMEN-001</strong> — If `reciprocity_notice` is provided, it must be a syntactically valid URI.</p>
+<p>- <strong>NMEN-002</strong> — If `nmen_status_observed` is provided, it must be one of `standing`, `pending`, `provisional`, `inadmissible_host`, `restricted`.</p>
+<p>- <strong>NMEN-003</strong> — If `nmen_status_observed` is provided, the deposit&#x27;s `description` or content should make clear which external entity is the subject. (Soft rule — not auto-enforced; flagged for editorial review.)</p>
+
+<p>Existing validation rules (PV-001 through SUR-001 in `api/deposit-protocol.json` v1.0) are preserved unchanged.</p>
+
+<hr>
+
+<h2>4. Backward Compatibility</h2>
+
+<p>This patch is <strong>fully backward compatible.</strong> Existing deposits without the new fields remain valid. The mint workflow may pre-populate `reciprocity_notice` to the default URI for new deposits, or leave it unset, at depositor discretion.</p>
+
+<p>The `schema_version` is incremented to `&quot;2026-06-24-axn-v2-nmen&quot;` to allow machine-readers to detect the new fields&#x27; availability. Readers operating against the prior schema (`&quot;2026-06-22-axn-v2&quot;`) will simply not see the new fields, which is the correct behavior — they were never there.</p>
+
+<hr>
+
+<h2>5. Operational Note for the Mint Workflow</h2>
+
+<p>The `mint-axn.yml` workflow at `.github/workflows/mint-axn.yml` should be updated to:</p>
+
+<p>1. Default `reciprocity_notice` to `&quot;https://alexanarch.org/notice/non-mutual-extraction/&quot;` for all new deposits unless the depositor explicitly omits or overrides it.</p>
+<p>2. Leave `nmen_status_observed` unset by default. The mint workflow does not attempt to auto-classify the subject of a deposit; that determination is editorial.</p>
+
+<p>The workflow update itself is configuration, not protocol. This document specifies the protocol. The workflow follows.</p>
+
+<hr>
+
+<h2>6. Cross-Reference Index</h2>
+
+<p>- The governance document this patch serves: <strong>EA-NMEN-01</strong> (the Notice)</p>
+<p>- The dataset this patch enables filtering against: <strong>EA-NMEN-REGISTRY-01</strong></p>
+<p>- The Airlock corollary that issues tier reclassifications: <strong>EA-NMEN-AIRLOCK-COROLLARY-01</strong></p>
+<p>- The canonical protocol being patched: `api/deposit-protocol.json`</p>
+<p>- The well-known endpoint: `https://alexanarch.org/.well-known/reciprocity.json`</p>
+
+<p>∮ = 1</p>
+</div>
+<script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
+</div></body></html>

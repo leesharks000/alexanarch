@@ -4,8 +4,8 @@
   "title": "Alexanarch Deposit Protocol",
   "protocol_version": "alexanarch-deposit-protocol/v1",
   "version_label": "v1.0",
-  "schema_version": "2026-06-22-axn-v2",
-  "last_updated": "2026-06-22",
+  "schema_version": "2026-06-24-axn-v2-nmen",
+  "last_updated": "2026-06-24",
   "canonical_docs": {
     "deposit_flow": "https://alexanarch.org/DEPOSIT-FLOW.md",
     "agents_md": "https://alexanarch.org/AGENTS.md",
@@ -76,7 +76,9 @@
     "related_ids": "AXN or DOI identifiers of related works",
     "full_text_path": "/data/texts/AXN-<HEX>-text.md if the deposit has a full text body",
     "defines_concepts": "array of {term, definition, type} for concepts the deposit defines or revises",
-    "entity_triples": "array of {subject, predicate, object, type, evidence_status}"
+    "entity_triples": "array of {subject, predicate, object, type, evidence_status}",
+    "reciprocity_notice": "Canonical URI of the Non-Mutual Extraction Notice acknowledged by the depositing party. Recommended default: https://alexanarch.org/notice/non-mutual-extraction/ (EA-NMEN-01). Including this field declares that the depositing party has read the Notice and understands the doctrine of non-mutual extraction. Does NOT constrain the legal license — operates per §0 of EA-NMEN-01 as a normative declaration only.",
+    "nmen_status_observed": "For deposits whose subject IS an entity tracked in EA-NMEN-REGISTRY-01 (correspondence records, forensic documentation, tier-update memos, etc.), declares the entity's NMEN designation at time of deposit. Enum: standing | pending | provisional | inadmissible_host | restricted. Time-of-deposit semantics: NOT backfilled when the Registry is amended."
   },
   "auto_generated_fields": {
     "description": "Set by the mint workflow; depositors should NOT supply these.",
@@ -104,42 +106,137 @@
   "enrichment_pipeline": {
     "description": "Each new deposit triggers a chain of enrichment operations. The mint workflow performs the first batch; subsequent operations are triggered by reading-pass and consolidation scripts.",
     "at_mint_time": [
-      {"step": "compute_sha256", "owner": "mint-axn.yml", "produces": "hash, axn_canonical"},
-      {"step": "derive_axn", "owner": "mint-axn.yml", "produces": "axn, emoji, clusters, reading"},
-      {"step": "generate_record_page", "owner": "mint-axn.yml", "produces": "s/records/<N>/index.html"},
-      {"step": "generate_simple_md", "owner": "mint-axn.yml", "produces": "data/deposits/AXN-<NNNN>.md"},
-      {"step": "regenerate_derived_surfaces", "owner": "scripts/regenerate_surfaces.py (invoked by mint-axn.yml)", "produces": "s/browse/index.html, data/browse-index.json, data/chunks/registry/*, sitemap.xml, SHA256SUMS.txt"},
-      {"step": "generate_wiki_article_provisional", "owner": "mint-axn.yml (Anthropic API)", "produces": "wiki_article", "status": "provisional-generated"},
-      {"step": "extract_entities_provisional", "owner": "mint-axn.yml (Anthropic API)", "produces": "entities", "status": "provisional-generated"}
+      {
+        "step": "compute_sha256",
+        "owner": "mint-axn.yml",
+        "produces": "hash, axn_canonical"
+      },
+      {
+        "step": "derive_axn",
+        "owner": "mint-axn.yml",
+        "produces": "axn, emoji, clusters, reading"
+      },
+      {
+        "step": "generate_record_page",
+        "owner": "mint-axn.yml",
+        "produces": "s/records/<N>/index.html"
+      },
+      {
+        "step": "generate_simple_md",
+        "owner": "mint-axn.yml",
+        "produces": "data/deposits/AXN-<NNNN>.md"
+      },
+      {
+        "step": "regenerate_derived_surfaces",
+        "owner": "scripts/regenerate_surfaces.py (invoked by mint-axn.yml)",
+        "produces": "s/browse/index.html, data/browse-index.json, data/chunks/registry/*, sitemap.xml, SHA256SUMS.txt"
+      },
+      {
+        "step": "generate_wiki_article_provisional",
+        "owner": "mint-axn.yml (Anthropic API)",
+        "produces": "wiki_article",
+        "status": "provisional-generated"
+      },
+      {
+        "step": "extract_entities_provisional",
+        "owner": "mint-axn.yml (Anthropic API)",
+        "produces": "entities",
+        "status": "provisional-generated"
+      }
     ],
     "at_reading_pass": [
-      {"step": "extract_defined_concepts", "owner": "scripts/read_pass.py", "produces": "defines_concepts in registry, new entries in data/entity-index.json"},
-      {"step": "link_citations", "owner": "consolidate.py phase B", "produces": "citation graph updates"},
-      {"step": "generate_autonomous_edition", "owner": "scholia_generator.py", "produces": "data/autonomous/AXN-<HEX>-autonomous.md"}
+      {
+        "step": "extract_defined_concepts",
+        "owner": "scripts/read_pass.py",
+        "produces": "defines_concepts in registry, new entries in data/entity-index.json"
+      },
+      {
+        "step": "link_citations",
+        "owner": "consolidate.py phase B",
+        "produces": "citation graph updates"
+      },
+      {
+        "step": "generate_autonomous_edition",
+        "owner": "scholia_generator.py",
+        "produces": "data/autonomous/AXN-<HEX>-autonomous.md"
+      }
     ],
     "at_build_time": [
-      {"step": "build_ro_crate", "owner": "build.py"},
-      {"step": "build_data_package", "owner": "build.py"},
-      {"step": "build_dcat", "owner": "build.py"},
-      {"step": "build_csv_export", "owner": "build.py"},
-      {"step": "build_jsonld_graph", "owner": "build.py"},
-      {"step": "build_journal_tocs", "owner": "build.py"}
+      {
+        "step": "build_ro_crate",
+        "owner": "build.py"
+      },
+      {
+        "step": "build_data_package",
+        "owner": "build.py"
+      },
+      {
+        "step": "build_dcat",
+        "owner": "build.py"
+      },
+      {
+        "step": "build_csv_export",
+        "owner": "build.py"
+      },
+      {
+        "step": "build_jsonld_graph",
+        "owner": "build.py"
+      },
+      {
+        "step": "build_journal_tocs",
+        "owner": "build.py"
+      }
     ]
   },
   "validation_rules": {
     "description": "Rules checked at mint time. Any failure rejects the deposit with a specific error pointing the depositor at the offending rule.",
     "rules": [
-      {"id": "PV-001", "rule": "protocol_version must equal current value", "applies_to": "issue body field '### Protocol Version'"},
-      {"id": "REQ-001", "rule": "title is non-empty", "applies_to": "issue body or registry entry"},
-      {"id": "REQ-002", "rule": "creator is non-empty"},
-      {"id": "REQ-003", "rule": "description is non-empty"},
-      {"id": "REQ-004", "rule": "license is non-empty"},
-      {"id": "REQ-005", "rule": "substrate disclosure is non-empty"},
-      {"id": "AXN-001", "rule": "after mint, axn matches /^AXN:[0-9A-F]{2,4}\\.[A-Z]+\\.[^.]{1,}$/"},
-      {"id": "AXN-002", "rule": "after mint, emoji has exactly 6 graphemes (per AXN v2)"},
-      {"id": "AXN-003", "rule": "after mint, hash is a 64-char hex string"},
-      {"id": "AXN-004", "rule": "after mint, deposit_number is contiguous (no gaps)"},
-      {"id": "SUR-001", "rule": "after mint, surfaces (browse, browse-index, chunks, sitemap, SHA256SUMS) agree with registry total"}
+      {
+        "id": "PV-001",
+        "rule": "protocol_version must equal current value",
+        "applies_to": "issue body field '### Protocol Version'"
+      },
+      {
+        "id": "REQ-001",
+        "rule": "title is non-empty",
+        "applies_to": "issue body or registry entry"
+      },
+      {
+        "id": "REQ-002",
+        "rule": "creator is non-empty"
+      },
+      {
+        "id": "REQ-003",
+        "rule": "description is non-empty"
+      },
+      {
+        "id": "REQ-004",
+        "rule": "license is non-empty"
+      },
+      {
+        "id": "REQ-005",
+        "rule": "substrate disclosure is non-empty"
+      },
+      {
+        "id": "AXN-001",
+        "rule": "after mint, axn matches /^AXN:[0-9A-F]{2,4}\\.[A-Z]+\\.[^.]{1,}$/"
+      },
+      {
+        "id": "AXN-002",
+        "rule": "after mint, emoji has exactly 6 graphemes (per AXN v2)"
+      },
+      {
+        "id": "AXN-003",
+        "rule": "after mint, hash is a 64-char hex string"
+      },
+      {
+        "id": "AXN-004",
+        "rule": "after mint, deposit_number is contiguous (no gaps)"
+      },
+      {
+        "id": "SUR-001",
+        "rule": "after mint, surfaces (browse, browse-index, chunks, sitemap, SHA256SUMS) agree with registry total"
+      }
     ]
   },
   "submission_paths": {
@@ -165,21 +262,70 @@
       "browse page text includes f'{total} deposits'",
       "every deposit_number N has a corresponding /s/records/N/ URL in browse and sitemap",
       "every deposit has an axn field matching the v2 schema"
-    ]
+    ],
+    "nmen_alignment": "If nmen_status_observed is set, its value must match the entity's current designation in EA-NMEN-REGISTRY-01 at time of deposit. Successor versions of the registry do not require backfilling the field — it records observed status at deposit time, not current status."
   },
   "machine_readable_endpoints": [
-    {"path": "/data/registry.json", "format": "JSON", "description": "Complete deposit registry (canonical)"},
-    {"path": "/data/browse-index.json", "format": "JSON", "description": "Compact deposit list"},
-    {"path": "/data/chunks/registry/_index.json", "format": "JSON", "description": "Index of chunked registry files"},
-    {"path": "/data/chunks/registry/chunk-NNN-deposits-X-to-Y.json", "format": "JSON", "description": "Streaming registry chunks (~1MB each)"},
-    {"path": "/data/texts/AXN-<HEX>-text.md", "format": "Markdown", "description": "Full text body for a deposit"},
-    {"path": "/data/autonomous/AXN-<HEX>-autonomous.md", "format": "Markdown", "description": "Autonomous edition with closing scholia (optional)"},
-    {"path": "/api/deposit-protocol.json", "format": "JSON", "description": "This document (canonical protocol)"},
-    {"path": "/api/deposit-schema.json", "format": "JSON Schema", "description": "Formal JSON Schema for deposit entries"},
-    {"path": "/s/records/<N>/", "format": "HTML + JSON-LD", "description": "Canonical record page"},
-    {"path": "/s/browse/", "format": "HTML", "description": "Static browse page"},
-    {"path": "/sitemap.xml", "format": "XML", "description": "All crawlable URLs"},
-    {"path": "/SHA256SUMS.txt", "format": "text", "description": "Content-addressable manifest"}
+    {
+      "path": "/data/registry.json",
+      "format": "JSON",
+      "description": "Complete deposit registry (canonical)"
+    },
+    {
+      "path": "/data/browse-index.json",
+      "format": "JSON",
+      "description": "Compact deposit list"
+    },
+    {
+      "path": "/data/chunks/registry/_index.json",
+      "format": "JSON",
+      "description": "Index of chunked registry files"
+    },
+    {
+      "path": "/data/chunks/registry/chunk-NNN-deposits-X-to-Y.json",
+      "format": "JSON",
+      "description": "Streaming registry chunks (~1MB each)"
+    },
+    {
+      "path": "/data/texts/AXN-<HEX>-text.md",
+      "format": "Markdown",
+      "description": "Full text body for a deposit"
+    },
+    {
+      "path": "/data/autonomous/AXN-<HEX>-autonomous.md",
+      "format": "Markdown",
+      "description": "Autonomous edition with closing scholia (optional)"
+    },
+    {
+      "path": "/api/deposit-protocol.json",
+      "format": "JSON",
+      "description": "This document (canonical protocol)"
+    },
+    {
+      "path": "/api/deposit-schema.json",
+      "format": "JSON Schema",
+      "description": "Formal JSON Schema for deposit entries"
+    },
+    {
+      "path": "/s/records/<N>/",
+      "format": "HTML + JSON-LD",
+      "description": "Canonical record page"
+    },
+    {
+      "path": "/s/browse/",
+      "format": "HTML",
+      "description": "Static browse page"
+    },
+    {
+      "path": "/sitemap.xml",
+      "format": "XML",
+      "description": "All crawlable URLs"
+    },
+    {
+      "path": "/SHA256SUMS.txt",
+      "format": "text",
+      "description": "Content-addressable manifest"
+    }
   ],
   "change_log": [
     {

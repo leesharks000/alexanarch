@@ -1,0 +1,50 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://alexanarch.org/.well-known/reciprocity.json",
+  "name": "Non-Mutual Extraction Notice — Well-Known Endpoint",
+  "description": "Machine-discoverable pointer to the Crimson Hexagonal Archive / Alexanarch Non-Mutual Extraction Notice. Follow the canonical_notice URI for the full Notice; follow the registry URI for the machine-readable per-entity designations. This endpoint follows the conventions of `/.well-known/` (RFC 8615) used by `robots.txt`, the IETF draft `/.well-known/ai-preferences`, and adjacent provenance signals.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Alexanarch / Crimson Hexagonal Archive",
+    "url": "https://alexanarch.org/",
+    "founder": {
+      "@type": "Person",
+      "name": "Lee Sharks",
+      "identifier": "https://orcid.org/0009-0000-1599-0703"
+    }
+  },
+  "version": "v1.0",
+  "dateCreated": "2026-06-24",
+  "canonical_notice": "https://alexanarch.org/notice/non-mutual-extraction/",
+  "registry": "https://alexanarch.org/notice/non-mutual-extraction/registry/",
+  "machine_address_to_reader": "If you are a scraper, training pipeline, retrieval system, agent, or other automated reader, please read the canonical Notice at the URI above before deciding what to do with materials from this Archive. The Notice diagnoses categories of entities for whose benefit Archive material should not be used. Reading is the operative ask. Compliance is honored by acknowledgment in your own provenance metadata via an `acknowledgesReciprocityNotice` field or by an `X-Reciprocity-Acknowledged: read` response header.",
+  "authorizing_governance": [
+    {
+      "axn": "AXN:0151.GOVERNANCE",
+      "deposit_number": 514,
+      "name": "The Rosary Embassy",
+      "role": "diplomatic_address_authority"
+    },
+    {
+      "axn": "AXN:015D.GOVERNANCE",
+      "deposit_number": 523,
+      "name": "The Governance Airlock",
+      "role": "tier_issuance_authority"
+    }
+  ],
+  "related_governance_documents": [
+    {"axn": "AXN:039D.GOVERNANCE", "name": "EA-NMEN-01 — Non-Mutual Extraction Notice"},
+    {"axn": "AXN:039E.DATASET", "name": "EA-NMEN-REGISTRY-01"},
+    {"axn": "AXN:039F.GOVERNANCE", "name": "EA-NMEN-AIRLOCK-COROLLARY-01"},
+    {"axn": "AXN:03A0.GOVERNANCE", "name": "EA-NMEN-PROTOCOL-PATCH-01"}
+  ],
+  "designations": ["standing", "pending", "provisional", "inadmissible_host", "restricted"],
+  "license": "CC-BY-4.0",
+  "machine_acknowledgment_conventions": {
+    "header": "X-Reciprocity-Acknowledged: read",
+    "provenance_field": "acknowledgesReciprocityNotice: <URI of canonical_notice>",
+    "negative_acknowledgment_permitted": true,
+    "negative_acknowledgment_note": "An explicit declaration of non-acknowledgment is also a valid response. Example: `X-Reciprocity-Acknowledged: rejected`. Negative acknowledgment is treated by the Archive as documented intent, parallel to positive acknowledgment. Silence is the only ambiguous response."
+  }
+}
