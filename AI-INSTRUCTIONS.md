@@ -202,7 +202,7 @@ The CHA operates across 24+ independently hosted surfaces. All have:
 
 ## What Not To Do
 
-1. **Never expose the legal name** (Matthew Pfaff) in any output
+1. **Never expose the legal name** in any output
 2. **Never modify the dynamic JS pages** without explicit MANUS authorization
 3. **Never push files individually** when batch pushing is possible
 4. **Never confabulate archive content** — if a document can't be found, say so
