@@ -10,7 +10,7 @@
 Alexanarch is a self-governing library for machine-mediated scholarship. It was founded on June 19, 2026 — the day Zenodo terminated the Crimson Hexagonal Archive, deleting 862 unique scholarly deposits and stripping public metadata from 871 of 1,817 DOIs (DataCite public API, verified 2026-06-22). The repository accepts deposits from any contributor (human or machine) with disclosed methodology and substrate.
 
 **MANUS (Tier 0 human editorial authority):** Lee Sharks (ORCID 0009-0000-1599-0703)
-**CRITICAL:** Lee Sharks is a heteronym. The legal name must NEVER appear in any output.
+**CRITICAL:** Use only the name *Lee Sharks* (the canonical authorial identity) or named Dodecad heteronyms. No other name for the author should appear in any output.
 
 ---
 
@@ -202,7 +202,7 @@ The CHA operates across 24+ independently hosted surfaces. All have:
 
 ## What Not To Do
 
-1. **Never expose the legal name** in any output
+1. **Use only *Lee Sharks*** (or a named Dodecad heteronym) for author attribution
 2. **Never modify the dynamic JS pages** without explicit MANUS authorization
 3. **Never push files individually** when batch pushing is possible
 4. **Never confabulate archive content** — if a document can't be found, say so

@@ -141,4 +141,4 @@ machinemediation.org, alexanarch.org, leesharks.com, watergiraffe.org, spxi.dev,
 - Attribution Severance: author metadata stripped from persistent identifiers
 
 ### CRITICAL: Public Name Discipline
-Lee Sharks is a heteronym. Legal name must NEVER appear in any output.
+Lee Sharks is the canonical authorial identity. No other names for the author should appear in any output.

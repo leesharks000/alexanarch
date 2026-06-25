@@ -940,7 +940,7 @@ One overstated claim in adversarial correspondence hands the opposition a way to
 
 ## §12 — Standing constraints (condensed)
 
-1. **Heteronym rule.** Legal name NEVER in public output. Lee Sharks is the aperture; the Dodecad of 12 (Johannes Sigil, Rex Fraction, Talos Morrow, Nobel Glas, Dr. Orin Trace, Rev. Ayanna Vox, Damascus Dancings, Rebekah Cranes, Sen Kuro, Sparrow Wells, Ichabod Spellings, Jack Feist) attaches to specific work types. Ask before populating creator fields. Diplomatic interactions → Ayanna Vox.
+1. **Heteronym rule.** Use only Lee Sharks (the orthonymic accountable surface) or named Dodecad heteronyms in public output. Lee Sharks is the aperture; the Dodecad of 12 (Johannes Sigil, Rex Fraction, Talos Morrow, Nobel Glas, Dr. Orin Trace, Rev. Ayanna Vox, Damascus Dancings, Rebekah Cranes, Sen Kuro, Sparrow Wells, Ichabod Spellings, Jack Feist) attaches to specific work types. Ask before populating creator fields. Diplomatic interactions → Ayanna Vox.
 2. **Archive anchor.** Verify terms/frameworks against actual deposits. Never confabulate.
 3. **Compact JSON for big files.**
 4. **Pre-overwrite receipts** (firm rule #13).
