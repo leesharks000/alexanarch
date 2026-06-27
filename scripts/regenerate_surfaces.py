@@ -73,7 +73,7 @@ try:
 except ImportError:
     _OVERWRITE_GUARD_AVAILABLE = False
 
-ALL_SURFACES = ["state", "browse", "browse-index", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index"]
+ALL_SURFACES = ["state", "browse", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index"]
 
 
 def _receipt(path, reason: str = "regenerate_surfaces write"):
@@ -265,6 +265,45 @@ def regenerate_browse_index(reg, dry_run=False):
     with open(target, "w", encoding="utf-8") as f:
         f.write(payload)
     print(f"  ✓ data/browse-index.json ({len(payload):,} bytes, {len(out['deposits'])} deposits)")
+
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Surface 2.5: data/hex-to-deposit.json — used by /records/?id= redirect
+# ──────────────────────────────────────────────────────────────────────────────
+
+def regenerate_hex_to_deposit(reg, dry_run=False):
+    """Rebuild data/hex-to-deposit.json — hex AXN identifier → deposit number.
+
+    Used by /records/index.html to handle legacy URLs indexed by search
+    engines and AI overviews using ?id=<hex> (e.g. ?id=0143) rather than
+    ?id=<deposit_number>. The hex/deposit relationship is content-derived
+    for early deposits, so a static formula is insufficient; a lookup
+    table is required.
+    """
+    deposits = reg["deposits"]
+    mapping = {}
+    for d in deposits:
+        h = d.get("hex")
+        n = d.get("deposit_number")
+        if not h or n is None:
+            continue
+        key = str(h).upper()
+        mapping[key] = n
+        # Also expose 4-digit zero-padded variant for early "01"/"02"/"03"
+        padded = key.zfill(4)
+        if padded != key:
+            mapping[padded] = n
+
+    target = REPO_ROOT / "data" / "hex-to-deposit.json"
+    # Sort keys for stable diffs; compact JSON (small file)
+    payload = json.dumps(mapping, ensure_ascii=False, separators=(",", ":"), sort_keys=True)
+    if dry_run:
+        print(f"  [DRY] would write {target} ({len(payload):,} bytes)")
+        return
+    _receipt(target)
+    with open(target, "w", encoding="utf-8") as f:
+        f.write(payload)
+    print(f"  ✓ data/hex-to-deposit.json ({len(payload):,} bytes, {len(mapping)} hex→deposit entries)")
 
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -1090,6 +1129,7 @@ SURFACE_FNS = {
     "state": regenerate_state,
     "browse": regenerate_browse,
     "browse-index": regenerate_browse_index,
+    "hex-to-deposit": regenerate_hex_to_deposit,
     "chunks": regenerate_chunks,
     "sitemap": regenerate_sitemap,
     "sha256sums": regenerate_sha256sums,

@@ -4,22 +4,73 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Redirecting — Alexanarch</title>
-<meta http-equiv="refresh" content="0; url=/s/browse/">
+<meta http-equiv="refresh" content="2; url=/s/browse/">
 <script>
-// Redirect /records/?id=N → /s/records/N/ — the static counterpart.
-// The dynamic page previously rendered Markdown with a permissive raw-HTML
-// pass-through (XSS risk per audit §6, §20). The static record at
-// /s/records/N/ is safe, has full content, JSON-LD metadata, and supports
-// linear / no-JS reading.
+// Redirect /records/?id=N → /s/records/<deposit_number>/
+//
+// Input forms supported:
+//   - Decimal deposit number: ?id=311  → /s/records/311/
+//   - Hex AXN identifier:     ?id=0143 → look up → /s/records/20/
+//
+// Hex form is detected by leading zero (e.g. "0143", "0004", "01") or by
+// presence of A-F characters. This matters because the hex / deposit-number
+// relationship is content-derived, not formulaic. Older URLs indexed by
+// search engines and AI overviews used hex AXN identifiers as the ?id=
+// value; current sovereign URLs use decimal deposit numbers.
+//
+// The lookup table /data/hex-to-deposit.json contains 924 mappings.
 (function(){
   try {
     var p = new URLSearchParams(window.location.search);
     var id = p.get('id');
-    if (id && /^\d+$/.test(id)) {
-      window.location.replace('/s/records/' + id + '/');
-    } else {
+    if (!id) {
       window.location.replace('/s/browse/');
+      return;
     }
+    var trimmed = id.trim();
+    var looksLikeHex = /[A-Fa-f]/.test(trimmed) ||
+                       (/^0\d/.test(trimmed) && trimmed.length >= 2);
+
+    var goToDeposit = function(n) {
+      window.location.replace('/s/records/' + n + '/');
+    };
+    var fallback = function() {
+      window.location.replace('/s/browse/');
+    };
+
+    if (!looksLikeHex && /^[1-9]\d*$/.test(trimmed)) {
+      // Pure decimal deposit number, no leading zero
+      var n = parseInt(trimmed, 10);
+      if (n >= 1 && n <= 9999) {
+        goToDeposit(n);
+        return;
+      }
+      fallback();
+      return;
+    }
+
+    // Hex AXN identifier — needs lookup
+    fetch('/data/hex-to-deposit.json', { cache: 'force-cache' })
+      .then(function(r) { return r.ok ? r.json() : null; })
+      .then(function(map) {
+        if (!map) { fallback(); return; }
+        var key = trimmed.toUpperCase();
+        var dn = map[key];
+        if (!dn) {
+          // Try 4-digit zero-padded variant
+          dn = map[key.padStart(4, '0')];
+        }
+        if (!dn) {
+          // Try stripping leading zeros
+          dn = map[key.replace(/^0+/, '') || '0'];
+        }
+        if (dn) {
+          goToDeposit(dn);
+        } else {
+          fallback();
+        }
+      })
+      .catch(fallback);
   } catch (e) {
     window.location.href = '/s/browse/';
   }
@@ -35,7 +86,7 @@ a{color:#1a3a5c}
 <noscript>
 <h1>Redirecting…</h1>
 <p>The dynamic record path has moved. Static record pages with full content live at <code>/s/records/&lt;N&gt;/</code> where <code>N</code> is the deposit number.</p>
-<p><a href="/s/browse/">Browse all deposits →</a></p>
+<p>If you arrived from a citation using an AXN identifier (e.g. <code>0143</code> for <em>The Semantic Uprising</em>) and JavaScript is disabled, you can <a href="/s/browse/">browse all deposits</a> or use the <a href="/resolve/">Resolution Index</a>.</p>
 </noscript>
 <p>Redirecting to the static record page… If you aren't redirected automatically, <a href="/s/browse/">browse all deposits</a>.</p>
 </body>
