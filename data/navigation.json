@@ -1,24 +1,93 @@
 {
   "schema_version": "v1.0",
   "purpose": "Canonical source of truth for the Alexanarch top-of-page navigation bar. Every renderer (wire_deposit.py, regenerate_surfaces.py, generate_observatory.py) reads this file. Authored static pages get synced via scripts/sync_navbars.py. To change the nav: edit this file, then run scripts/sync_navbars.py and regenerate_surfaces.py.",
-  "effective_date": "2026-06-23",
+  "effective_date": "2026-06-28",
   "items": [
-    {"path": "/",              "label": "Alexanarch", "description": "Home — newest deposits, the corpus orientation"},
-    {"path": "/s/browse/",     "label": "Browse",     "description": "Full deposit index, sortable, all 884 entries"},
-    {"path": "/s/wiki/",       "label": "Wiki",       "description": "Deposit summaries with concept definitions"},
-    {"path": "/s/graph/",      "label": "Graph",      "description": "Citation graph between deposits"},
-    {"path": "/lexical/",      "label": "Lexical",    "description": "Lexical Minting Registry — coined terms"},
-    {"path": "/citations/",    "label": "Citations",  "description": "Citation index across the corpus"},
-    {"path": "/observatory/",  "label": "Observatory", "description": "Surface Weather Station — public-surface visibility measurements"},
-    {"path": "/captures/",     "label": "Captures",   "description": "AI Overview Capture Registry — 176 captures"},
-    {"path": "/resolve/",      "label": "Resolve",    "description": "Zenodo DOI Resolution Index — 1,817 DOIs"},
-    {"path": "/addresses/",    "label": "Addresses",  "description": "Author and institutional address registry"},
-    {"path": "/datasets/",     "label": "Datasets",   "description": "Machine-readable datasets index"},
-    {"path": "/principles/",   "label": "Principles", "description": "Founding principles of Alexanarch"},
-    {"path": "/identifiers/",  "label": "Identifiers", "description": "AXN protocol — content-derived identifiers"},
-    {"path": "/deposit/",      "label": "Deposit",    "description": "How to deposit — self-serve [DEPOSIT] issue path"},
-    {"path": "/guide/",        "label": "Guide",      "description": "Reading guide — entry points into the corpus"},
-    {"path": "/manifest/",     "label": "Manifest",   "description": "Operating manifest — current state of the archive"}
+    {
+      "path": "/",
+      "label": "Alexanarch",
+      "description": "Home — newest deposits, the corpus orientation"
+    },
+    {
+      "path": "/s/browse/",
+      "label": "Browse",
+      "description": "Full deposit index, sortable, all 884 entries"
+    },
+    {
+      "path": "/s/wiki/",
+      "label": "Wiki",
+      "description": "Deposit summaries with concept definitions"
+    },
+    {
+      "path": "/s/graph/",
+      "label": "Graph",
+      "description": "Citation graph between deposits"
+    },
+    {
+      "path": "/lexical/",
+      "label": "Lexical",
+      "description": "Lexical Minting Registry — coined terms"
+    },
+    {
+      "path": "/citations/",
+      "label": "Citations",
+      "description": "Citation index across the corpus"
+    },
+    {
+      "path": "/observatory/",
+      "label": "Observatory",
+      "description": "Surface Weather Station — public-surface visibility measurements"
+    },
+    {
+      "path": "/captures/",
+      "label": "Captures",
+      "description": "AI Overview Capture Registry — 176 captures"
+    },
+    {
+      "path": "/book/",
+      "label": "Book",
+      "description": "Auto-appended Mandala Oracle conversations — public-API readings with AXN provenance"
+    },
+    {
+      "path": "/resolve/",
+      "label": "Resolve",
+      "description": "Zenodo DOI Resolution Index — 1,817 DOIs"
+    },
+    {
+      "path": "/addresses/",
+      "label": "Addresses",
+      "description": "Author and institutional address registry"
+    },
+    {
+      "path": "/datasets/",
+      "label": "Datasets",
+      "description": "Machine-readable datasets index"
+    },
+    {
+      "path": "/principles/",
+      "label": "Principles",
+      "description": "Founding principles of Alexanarch"
+    },
+    {
+      "path": "/identifiers/",
+      "label": "Identifiers",
+      "description": "AXN protocol — content-derived identifiers"
+    },
+    {
+      "path": "/deposit/",
+      "label": "Deposit",
+      "description": "How to deposit — self-serve [DEPOSIT] issue path"
+    },
+    {
+      "path": "/guide/",
+      "label": "Guide",
+      "description": "Reading guide — entry points into the corpus"
+    },
+    {
+      "path": "/manifest/",
+      "label": "Manifest",
+      "description": "Operating manifest — current state of the archive"
+    }
   ],
   "render_specification": {
     "html_structure": "Single <nav class=\"nav\">...</nav> element. Each item rendered as <a href=\"...\">label</a> separated by spaces. The renderer may mark the active item via class=\"active\".",
