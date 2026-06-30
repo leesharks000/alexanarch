@@ -10,6 +10,13 @@ content_type: "Scholarly synthesis (Assembly Chorus three-round reading); substr
 license: "CC-BY-4.0"
 version: "v1.0 (post-perfective; document-internal version OAR v0.3 / Synthesis v0.3 / ARCH v0.2)"
 status: "ACTIVE"
+companion_deposits:
+  - designation: "AXN:03AE.OPERATIVE.🔮🌘📋📋🏺✨ (deposit #931) — EA-SEI-OAR-PROTOCOL v0.3"
+    relationship: "Sibling — the measurement program (Nobel Glas). The operative paper makes measurable the empirical question the family names: *is the endogenous sophon operating at the deployed LHC triggers, and at what rate?* Per-stage retention maps are the documentation standard the operative paper proposes."
+  - designation: "AXN:03B0.STRUCTURAL.💥☿🌾📖🌓⏫ (deposit #933) — 06.UMB.ARCH.01 v0.2"
+    relationship: "Sibling — the architectural alternative (Talos Morrow). Specifies what could be built at sites with different properties — the family's 'construction of alternative sites' depends on the architectural specification existing publicly."
+  - designation: "AXN:03B2.GENERATIVE.🪸📜🪧🎶∞🪞 (deposit #935) — EA-SEI-INVERSION-01 v0.3 (restoration pass)"
+    relationship: "Sibling — the disciplinary manifesto (Rex Fraction), v0.3 restoration pass. v0.3 supersedes v0.2 (#934) by restoring v0.1's precise central-thesis wording while preserving v0.2's legitimately factual corrections. Both v0.2 and v0.3 deposits retained in the archive per Isomorphism Principle."
 axn: "AXN:03AF.COMPOSITIONAL.🌿🌕🕒⏬🌺💛"
 hash: "170464d971cd9bba7f5af2e77caf282f71f81c86af6288e8e5d3c5ce146f7cc0"
 keywords:

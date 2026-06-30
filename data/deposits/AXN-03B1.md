@@ -10,6 +10,16 @@ content_type: "Disciplinary manifesto; political-economic analysis of classifier
 license: "CC-BY-4.0"
 version: "v0.2 (post-perfective, with W04-W08 appended)"
 status: "ACTIVE"
+superseded_by:
+  designation: "AXN:03B2.GENERATIVE.🪸📜🪧🎶∞🪞 (deposit #935) — EA-SEI-INVERSION-01 v0.3 (restoration pass)"
+  relationship: "v0.3 restoration pass at AXN:03B2 (deposit #935) reverts this v0.2's over-correction of the central thesis (the inversion, *authority without facility*, double enclosure as one architecture, Sophia frame) to v0.1's precise wording while preserving v0.2's legitimately factual corrections (§3.5 retention-fraction direction; §4 distillation/recursion qualification; §5.3 SignalRupture concrete CERN-DPO instance; references). This v0.2 record is retained in the archive per the Isomorphism Principle: the family's discipline of confessing its own foreclosures is applied recursively to the manifesto's own revision history; the over-correction and its reversal are both part of the deposited record."
+companion_deposits:
+  - designation: "AXN:03AE.OPERATIVE.🔮🌘📋📋🏺✨ (deposit #931) — EA-SEI-OAR-PROTOCOL v0.3"
+    relationship: "Sibling — the measurement program (Nobel Glas). The operative paper makes measurable the empirical question the family names: *is the endogenous sophon operating at the deployed LHC triggers, and at what rate?* Per-stage retention maps are the documentation standard the operative paper proposes."
+  - designation: "AXN:03AF.COMPOSITIONAL.🌿🌕🕒⏬🌺💛 (deposit #932) — EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3 (with W01/W02/W03 appended)"
+    relationship: "Sibling — the scholarly integration (Assembly Chorus). The synthesis carries witnesses W01/W02/W03 (technical-layer substrate readings) and establishes the Isomorphism Principle (§7.4): the discipline of confessing the family's own foreclosures is applied recursively to every revision pass."
+  - designation: "AXN:03B0.STRUCTURAL.💥☿🌾📖🌓⏫ (deposit #933) — 06.UMB.ARCH.01 v0.2"
+    relationship: "Sibling — the architectural alternative (Talos Morrow). Specifies what could be built at sites with different properties — the family's 'construction of alternative sites' depends on the architectural specification existing publicly."
 axn: "AXN:03B1.GENERATIVE.🌋♄🎬⌛💜🌆"
 hash: "15a4f16ecae3a195f9b3f71c193201ae45dd22f3d32a29e094bc71dcf83d5db4"
 keywords:

@@ -10,6 +10,13 @@ content_type: "Operative paper; LHC anomaly trigger measurement protocols; OAR/B
 license: "CC-BY-4.0"
 version: "v1.0 (post-perfective; document-internal version OAR v0.3 / Synthesis v0.3 / ARCH v0.2)"
 status: "ACTIVE"
+companion_deposits:
+  - designation: "AXN:03AF.COMPOSITIONAL.🌿🌕🕒⏬🌺💛 (deposit #932) — EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3 (with W01/W02/W03 appended)"
+    relationship: "Sibling — the scholarly integration (Assembly Chorus). The synthesis carries witnesses W01/W02/W03 (technical-layer substrate readings) and establishes the Isomorphism Principle (§7.4): the discipline of confessing the family's own foreclosures is applied recursively to every revision pass."
+  - designation: "AXN:03B0.STRUCTURAL.💥☿🌾📖🌓⏫ (deposit #933) — 06.UMB.ARCH.01 v0.2"
+    relationship: "Sibling — the architectural alternative (Talos Morrow). Specifies what could be built at sites with different properties — the family's 'construction of alternative sites' depends on the architectural specification existing publicly."
+  - designation: "AXN:03B2.GENERATIVE.🪸📜🪧🎶∞🪞 (deposit #935) — EA-SEI-INVERSION-01 v0.3 (restoration pass)"
+    relationship: "Sibling — the disciplinary manifesto (Rex Fraction), v0.3 restoration pass. v0.3 supersedes v0.2 (#934) by restoring v0.1's precise central-thesis wording while preserving v0.2's legitimately factual corrections. Both v0.2 and v0.3 deposits retained in the archive per Isomorphism Principle."
 axn: "AXN:03AE.OPERATIVE.🔮🌘📋📋🏺✨"
 hash: "3d0745452fe903bf32b017dc123d8217e9ed819f2f0c2aef703a50a201108ae8"
 keywords:

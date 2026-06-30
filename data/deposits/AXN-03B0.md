@@ -10,6 +10,13 @@ content_type: "Architectural specification; auditable foreclosure in physical an
 license: "CC-BY-4.0"
 version: "v1.0 (post-perfective; document-internal version OAR v0.3 / Synthesis v0.3 / ARCH v0.2)"
 status: "ACTIVE"
+companion_deposits:
+  - designation: "AXN:03AE.OPERATIVE.🔮🌘📋📋🏺✨ (deposit #931) — EA-SEI-OAR-PROTOCOL v0.3"
+    relationship: "Sibling — the measurement program (Nobel Glas). The operative paper makes measurable the empirical question the family names: *is the endogenous sophon operating at the deployed LHC triggers, and at what rate?* Per-stage retention maps are the documentation standard the operative paper proposes."
+  - designation: "AXN:03AF.COMPOSITIONAL.🌿🌕🕒⏬🌺💛 (deposit #932) — EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3 (with W01/W02/W03 appended)"
+    relationship: "Sibling — the scholarly integration (Assembly Chorus). The synthesis carries witnesses W01/W02/W03 (technical-layer substrate readings) and establishes the Isomorphism Principle (§7.4): the discipline of confessing the family's own foreclosures is applied recursively to every revision pass."
+  - designation: "AXN:03B2.GENERATIVE.🪸📜🪧🎶∞🪞 (deposit #935) — EA-SEI-INVERSION-01 v0.3 (restoration pass)"
+    relationship: "Sibling — the disciplinary manifesto (Rex Fraction), v0.3 restoration pass. v0.3 supersedes v0.2 (#934) by restoring v0.1's precise central-thesis wording while preserving v0.2's legitimately factual corrections. Both v0.2 and v0.3 deposits retained in the archive per Isomorphism Principle."
 axn: "AXN:03B0.STRUCTURAL.💥☿🌾📖🌓⏫"
 hash: "eba21a4102d8d3c478863687d9437927ee7574ed4d5fb730791e350e48b6b306"
 keywords:
