@@ -480,14 +480,24 @@ def extract_via_llm(deposit: dict, text: str, *, api_key: str) -> dict:
     for block in resp.get("content", []):
         if block.get("type") == "tool_use" and block.get("name") == EXTRACTION_TOOL["name"]:
             usage = resp.get("usage", {})
+            raw = block.get("input") or {}
             _log(
-                f"extracted concepts={len(block['input'].get('concepts', []))}, "
-                f"citations={len(block['input'].get('citations', []))}, "
-                f"wikidata_candidates={len(block['input'].get('wikidata_candidates', []))}, "
-                f"cha_xrefs={len(block['input'].get('cha_cross_references', []))} "
+                f"extracted concepts={len(raw.get('concepts', []))}, "
+                f"citations={len(raw.get('citations', []))}, "
+                f"wikidata_candidates={len(raw.get('wikidata_candidates', []))}, "
+                f"cha_xrefs={len(raw.get('cha_cross_references', []))} "
                 f"(usage: {usage.get('input_tokens')}in / {usage.get('output_tokens')}out)"
             )
-            return block["input"]
+            # Normalize: always return all four keys as lists, even if Claude
+            # omitted one. Missing keys used to cause KeyError downstream when
+            # the apply step did `deposit["cha_cross_references"] = extraction["cha_cross_references"]`
+            # on a Claude response with no cha_cross_references field.
+            return {
+                "concepts": raw.get("concepts") or [],
+                "citations": raw.get("citations") or [],
+                "wikidata_candidates": raw.get("wikidata_candidates") or [],
+                "cha_cross_references": raw.get("cha_cross_references") or [],
+            }
     raise RuntimeError(
         "Claude did not return a record_deposit_enrichment tool call; "
         f"got content types: {[b.get('type') for b in resp.get('content', [])]}"
