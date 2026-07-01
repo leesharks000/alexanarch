@@ -1122,8 +1122,15 @@ def enrich(
                 "cha_cross_references": len(extraction["cha_cross_references"]),
             }
         except Exception as e:  # noqa: BLE001
-            _log(f"ERROR in extract step: {e}")
-            receipt["steps"]["extract"] = {"error": str(e)}
+            import traceback
+            tb = traceback.format_exc()
+            _log(f"ERROR in extract step: {type(e).__name__}: {e}")
+            _log(tb)
+            receipt["steps"]["extract"] = {
+                "error": str(e),
+                "error_type": type(e).__name__,
+                "traceback_tail": tb.splitlines()[-15:],
+            }
     else:
         # load prior extraction from deposit if present
         extraction["citations"] = deposit.get("citations") or []

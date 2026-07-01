@@ -415,6 +415,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           DEPOSIT_NUMBER: ${{ steps.mint.outputs.deposit_number }}
+          HEX: ${{ steps.mint.outputs.hex }}
         run: |
           set -euo pipefail
           # Instrumentation: report whether the secret propagated to env
@@ -439,6 +440,11 @@ jobs:
           if [ -f /tmp/enrichment-receipt.json ]; then
             echo "=== enrichment receipt ==="
             cat /tmp/enrichment-receipt.json
+            # Also commit the receipt to the branch so it's visible outside
+            # the workflow log (which requires log-download permissions the
+            # dev may not have from their local environment).
+            mkdir -p data/enrichment-receipts
+            cp /tmp/enrichment-receipt.json "data/enrichment-receipts/AXN-${HEX}.json"
           fi
 
       - name: Regenerate surfaces (post-enrichment projection)
@@ -483,6 +489,7 @@ jobs:
                   data/browse-index.json \
                   data/wiki-entries.json \
                   data/external-metadata/ \
+                  data/enrichment-receipts/ \
                   s/records/ \
                   s/browse/ \
                   s/wiki/ \
