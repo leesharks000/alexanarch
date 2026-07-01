@@ -106,6 +106,8 @@ import os
 import re
 import sys
 import unicodedata
+import urllib.error
+import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
@@ -408,7 +410,179 @@ def family_for_content_type(content_type: str) -> str:
 # CANONICAL TEXT FILE
 # ─────────────────────────────────────────────────────────────────────────────
 
-def build_canonical_text(fields: dict, deposit_number: int, hex_id: str) -> str:
+# ─────────────────────────────────────────────────────────────────────────────
+# ATTACHMENT INGESTION
+# ─────────────────────────────────────────────────────────────────────────────
+#
+# GitHub issues store file attachments at user-attachments URLs that appear
+# inline in the raw issue body (usually at the very top, above the first
+# `### Section` header, wherever the user dropped them). These URLs are
+# stable and public (no auth token needed to fetch).
+#
+# On mint, we detect these URLs, fetch each one, and include the content in
+# the canonical deposit text. Text files are ingested INLINE — the full body
+# of the attachment appears in the deposit's canonical .md so it's covered
+# by the SHA-256 hash (SPXI Layer 3) and by all downstream enrichment
+# (concept extraction, SPXI audits, wiki generation). Binary files are
+# recorded BY REFERENCE — filename + size + URL — because inlining opaque
+# bytes into a text deposit is not useful.
+#
+# Failure mode: if a fetch fails (transient network issue), we still land
+# the deposit but record a reference-only section pointing at the URL, so
+# the mint remains deterministic (the URL, not the transient error text,
+# is what gets canonicalized). Retrying the mint via close+reopen will
+# ingest the content on the next pass, changing the hash — this is the
+# right behavior because the FULL deposit is a different artifact.
+
+ATTACHMENT_URL_PATTERN = re.compile(
+    r'https://github\.com/user-attachments/'
+    r'(?:files/\d+/[^\s)>\]"\']+|assets/[A-Za-z0-9\-]+(?:[^\s)>\]"\']*)?)'
+)
+
+# Text-like file extensions we're willing to ingest inline. Anything not on
+# this list is recorded by reference (URL + size).
+TEXT_ATTACHMENT_EXTENSIONS = {
+    ".md", ".markdown", ".txt", ".text", ".json", ".jsonl", ".csv", ".tsv",
+    ".yaml", ".yml", ".xml", ".html", ".htm", ".rst", ".tex", ".bib",
+    ".py", ".js", ".ts", ".sh", ".log", ".ini", ".toml", ".cfg",
+}
+
+MAX_ATTACHMENT_BYTES = 10 * 1024 * 1024  # 10 MB per attachment, cap
+ATTACHMENT_FETCH_TIMEOUT = 30  # seconds
+
+
+def extract_attachment_urls(body: str) -> list:
+    """Find distinct GitHub user-attachments URLs in the raw issue body.
+
+    Returns URLs in first-appearance order, deduplicated.
+    """
+    urls = []
+    seen = set()
+    for m in ATTACHMENT_URL_PATTERN.finditer(body):
+        u = m.group(0)
+        if u not in seen:
+            seen.add(u)
+            urls.append(u)
+    return urls
+
+
+def _attachment_filename(url: str) -> str:
+    """Extract the filename component from an attachment URL.
+
+    For .../files/{id}/{filename} — the filename.
+    For .../assets/{uuid} — the uuid (no meaningful filename; treated as
+    binary reference).
+    """
+    tail = url.rsplit("/", 1)[-1]
+    # Handle URL-encoded characters in filename
+    from urllib.parse import unquote
+    return unquote(tail)
+
+
+def _is_text_extension(filename: str) -> bool:
+    if "." not in filename:
+        return False
+    ext = "." + filename.rsplit(".", 1)[-1].lower()
+    return ext in TEXT_ATTACHMENT_EXTENSIONS
+
+
+def _format_size(n: int) -> str:
+    if n >= 1024 * 1024:
+        return f"{n / (1024 * 1024):.1f} MB"
+    if n >= 1024:
+        return f"{n // 1024} KB"
+    return f"{n} bytes"
+
+
+def fetch_attachment(url: str) -> dict:
+    """Fetch a single attachment URL. Returns a dict describing the result.
+
+    Keys:
+        url: the original URL (verbatim)
+        filename: filename component of the URL
+        size: bytes fetched (0 if fetch failed)
+        as_text: decoded UTF-8 text if this is a text-extension file and
+                 decoded cleanly; None otherwise
+        is_text: True if we consider this an inline-ingest text attachment
+        error: short error label if fetch failed, else None
+    """
+    filename = _attachment_filename(url)
+    result = {
+        "url": url,
+        "filename": filename,
+        "size": 0,
+        "as_text": None,
+        "is_text": False,
+        "error": None,
+    }
+    try:
+        req = urllib.request.Request(url, headers={
+            "User-Agent": "Alexanarch-Mint/1.0 (deposit ingestion)",
+        })
+        with urllib.request.urlopen(req, timeout=ATTACHMENT_FETCH_TIMEOUT) as r:
+            content = r.read(MAX_ATTACHMENT_BYTES + 1)
+        if len(content) > MAX_ATTACHMENT_BYTES:
+            result["error"] = f"attachment exceeds {MAX_ATTACHMENT_BYTES // (1024*1024)}MB cap"
+            return result
+        result["size"] = len(content)
+        if _is_text_extension(filename):
+            try:
+                result["as_text"] = content.decode("utf-8")
+                result["is_text"] = True
+            except UnicodeDecodeError:
+                result["error"] = "text-extension file not valid UTF-8"
+    except (urllib.error.URLError, TimeoutError, OSError) as e:
+        # Any network-level error. Keep the label short + deterministic:
+        # just "fetch_error" so retries produce identical canonical text.
+        result["error"] = "fetch_error"
+    return result
+
+
+def fetch_all_attachments(body: str) -> list:
+    """Extract URLs from raw issue body, fetch each. Returns list of results."""
+    return [fetch_attachment(u) for u in extract_attachment_urls(body)]
+
+
+def render_attachment_section(att: dict) -> str:
+    """Render a single attachment as a markdown section for canonical text.
+
+    Deterministic — no timestamps, no error details that could vary
+    between fetch attempts. Only URL, filename, size, and (for text) the
+    verbatim content.
+    """
+    fname = att.get("filename", "unknown")
+    url = att.get("url", "")
+    if att.get("is_text") and att.get("as_text") is not None:
+        # Inline the full text content
+        return (
+            f"## Attached File: {fname}\n\n"
+            f"Source URL: {url}\n\n"
+            f"{att['as_text']}\n"
+        )
+    if att.get("error"):
+        # Reference-only fallback. Error label is deterministic ('fetch_error'
+        # or 'text-extension file not valid UTF-8' etc — see fetch_attachment).
+        return (
+            f"## Attached File: {fname}\n\n"
+            f"Attachment could not be ingested at mint time. "
+            f"Reason: {att['error']}. Original URL: {url}\n"
+        )
+    # Binary attachment fetched successfully but not inlined
+    size_label = _format_size(att.get("size", 0))
+    return (
+        f"## Attached File: {fname}\n\n"
+        f"Binary attachment ({size_label}) preserved at deposit time. "
+        f"Original URL: {url}\n"
+    )
+
+
+def build_canonical_text(
+    fields: dict,
+    deposit_number: int,
+    hex_id: str,
+    *,
+    attachments: list = None,
+) -> str:
     """Construct the canonical text file content (frontmatter + body).
 
     The resulting string IS the canonical bytes. SHA-256 of this becomes
@@ -416,8 +590,14 @@ def build_canonical_text(fields: dict, deposit_number: int, hex_id: str) -> str:
 
     The frontmatter is YAML-safe (no embedded HTML, no markdown rendering
     until s/records/ is generated). The body section is the depositor's
-    submitted content (description + methodology + falsification + files
-    listing), preserved verbatim — this is the canonical record.
+    submitted content (description + methodology + falsification + attached
+    file content + files listing), preserved verbatim — this is the
+    canonical record.
+
+    Attachments (from GitHub issue user-attachments URLs) are rendered
+    into the body: text files inlined verbatim, binary files by reference.
+    This means the SPXI Layer 3 hash covers the FULL deposit content
+    including any attached materials.
 
     IMPORTANT: this function does NOT include the AXN value in the
     frontmatter. The AXN is derived FROM the file's hash, so including
@@ -474,6 +654,10 @@ def build_canonical_text(fields: dict, deposit_number: int, hex_id: str) -> str:
         body_sections.append(f"## Methodology\n\n{fields['methodology']}\n")
     if fields.get("falsification"):
         body_sections.append(f"## Falsification Conditions\n\n{fields['falsification']}\n")
+    # Attached file content (text ingested inline, binary by reference)
+    if attachments:
+        for att in attachments:
+            body_sections.append(render_attachment_section(att))
     if fields.get("files"):
         body_sections.append(f"## Files\n\n{fields['files']}\n")
 
@@ -619,6 +803,12 @@ def mint_from_issue_body(body: str, issue_number: int, *, dry_run: bool = False)
     keywords_list = sanitize_keywords(fields.get("keywords", ""))
     fields["keywords_list"] = keywords_list
 
+    # Fetch any GitHub user-attachments URLs found in the RAW issue body
+    # (before extract_field carved fields out of it — attachments typically
+    # appear at the top of the body, outside any labeled section, wherever
+    # the user pasted or drag-dropped them).
+    attachments = fetch_all_attachments(body)
+
     # Load current registry — needed for deposit_number computation
     registry_path = REPO_ROOT / "data" / "registry.json"
     with open(registry_path) as f:
@@ -628,8 +818,11 @@ def mint_from_issue_body(body: str, issue_number: int, *, dry_run: bool = False)
     hex_id = next_hex_id(deposit_number)
     family = family_for_content_type(fields["content_type"])
 
-    # Build canonical text content
-    canonical_text = build_canonical_text(fields, deposit_number, hex_id)
+    # Build canonical text content — attachments included so SPXI Layer 3
+    # hash covers the full deposit content.
+    canonical_text = build_canonical_text(
+        fields, deposit_number, hex_id, attachments=attachments,
+    )
     canonical_bytes = canonical_text.encode("utf-8")
     file_sha256 = hashlib.sha256(canonical_bytes).hexdigest()
 
@@ -643,6 +836,22 @@ def mint_from_issue_body(body: str, issue_number: int, *, dry_run: bool = False)
         keywords_list=keywords_list,
         issue_number=issue_number,
     )
+
+    # Record attachment metadata on the registry entry — filename, URL,
+    # size, ingestion status. Content is NOT duplicated here (it's already
+    # in the canonical text). This is metadata for record pages and
+    # provenance.
+    if attachments:
+        entry["attachments"] = [
+            {
+                "filename": att["filename"],
+                "url": att["url"],
+                "size": att["size"],
+                "ingested_inline": bool(att.get("is_text") and att.get("as_text") is not None),
+                "ingestion_error": att.get("error"),
+            }
+            for att in attachments
+        ]
 
     # Compose paths
     texts_path = REPO_ROOT / "data" / "texts" / f"AXN-{hex_id}-text.md"
