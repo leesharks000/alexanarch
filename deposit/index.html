@@ -138,9 +138,7 @@ async function computePreview(){
   const creator=document.getElementById('f-creator').value;
   const desc=document.getElementById('f-desc').value;
   if(!title||!desc) { document.getElementById('preview').style.display='none'; return; }
-  const content=title+'
-'+creator+'
-'+desc;
+  const content=[title,creator,desc].join('\n');
   const enc=new TextEncoder();
   const hash=new Uint8Array(await crypto.subtle.digest('SHA-256',enc.encode(content)));
   const emoji=[G[hash[0]],G[hash[1]],G[hash[2]],G[hash[3]],G[hash[4]],G[hash[5]]].join('');
@@ -170,8 +168,8 @@ function submitDeposit(){
     method:document.getElementById('f-method').value,
     falsify:document.getElementById('f-falsify').value,
   };
-  if(!fields.title||!fields.creator||!fields.desc||!fields.type||!fields.license||!fields.substrate){
-    alert('Please fill in all required fields.');return;
+  if(!fields.title||!fields.creator||!fields.date||!fields.desc||!fields.type||!fields.license||!fields.substrate){
+    alert('Please fill in all required fields (title, creator, date, description, content type, license, substrate disclosure).');return;
   }
   const body=`### Protocol Version\n\nalexanarch-deposit-protocol/v1\n\n### Title\n\n${fields.title}\n\n### Creator\n\n${fields.creator}\n\n### ORCID\n\n${fields.orcid||'_No response_'}\n\n### Date\n\n${fields.date||new Date().toISOString().split('T')[0]}\n\n### Description\n\n${fields.desc}\n\n### Content Type\n\n${fields.type}\n\n### License\n\n${fields.license}\n\n### Substrate Disclosure\n\n${fields.substrate}\n\n### Keywords\n\n${fields.keywords||'_No response_'}\n\n### Related Identifiers\n\n${fields.related||'_No response_'}\n\n### Version\n\n${fields.version||'_No response_'}\n\n### Methodology\n\n${fields.method||'_No response_'}\n\n### Falsification Conditions\n\n${fields.falsify||'_No response_'}\n\n### Files\n\n_Attach files below_\n\n### Terms\n\n- [x] I confirm this work is deposited under the stated license\n- [x] I confirm the substrate disclosure is accurate\n- [x] I understand that deposited content will NOT be used to train enforcement classifiers`;
   const title=encodeURIComponent('[DEPOSIT] '+fields.title);
