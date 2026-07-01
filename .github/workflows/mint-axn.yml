@@ -137,15 +137,20 @@ jobs:
             });
             const tag = `mint: #${issueNumber} —`;
             const branchTag = `-issue-${issueNumber}`;
+            // Only OPEN or MERGED PRs block a new mint attempt. A CLOSED
+            // unmerged PR represents an abandoned earlier attempt (e.g., a
+            // mint that failed on first pass and was closed before retry)
+            // and must not block close+reopen retriggering.
             const match = prs.find(p =>
-              (p.title && p.title.startsWith(tag)) ||
-              (p.head && p.head.ref && p.head.ref.includes(branchTag))
+              ((p.title && p.title.startsWith(tag)) ||
+               (p.head && p.head.ref && p.head.ref.includes(branchTag))) &&
+              (p.state === 'open' || p.merged_at !== null)
             );
             if (match) {
               core.setOutput('exists', 'true');
               core.setOutput('pr_number', String(match.number));
               core.setOutput('pr_url', match.html_url);
-              core.setOutput('pr_state', match.state);
+              core.setOutput('pr_state', match.merged_at ? 'merged' : match.state);
               return { exists: true, pr_number: match.number, pr_url: match.html_url };
             }
             core.setOutput('exists', 'false');
@@ -168,7 +173,7 @@ jobs:
                 ``,
                 `A mint PR for this issue already exists: ${prUrl} (state: ${prState}).`,
                 ``,
-                `If that PR was closed without merging and you want to retry, please open a new issue rather than reopening this one — the workflow detects existing PRs by issue number.`,
+                `If you need to retry the mint, close that PR first — the workflow will proceed on the next close+reopen of this issue.`,
               ].join('\n'),
             });
             core.notice('Existing mint PR found; skipping new mint.');
