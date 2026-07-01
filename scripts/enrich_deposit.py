@@ -1169,15 +1169,24 @@ def enrich(
     # step 2: Wikidata resolution
     wikidata_resolved: list[dict] = []
     if do_wikidata and extraction["wikidata_candidates"]:
-        wikidata_resolved = resolve_wikidata(extraction["wikidata_candidates"])
-        confident = sum(1 for c in wikidata_resolved if c.get("resolution") == "confident")
-        receipt["steps"]["wikidata"] = {
-            "candidates": len(wikidata_resolved),
-            "confident_qids": confident,
-            "tentative_qids": sum(
-                1 for c in wikidata_resolved if c.get("resolution") == "tentative"
-            ),
-        }
+        try:
+            wikidata_resolved = resolve_wikidata(extraction["wikidata_candidates"])
+            confident = sum(1 for c in wikidata_resolved if c.get("resolution") == "confident")
+            receipt["steps"]["wikidata"] = {
+                "candidates": len(wikidata_resolved),
+                "confident_qids": confident,
+                "tentative_qids": sum(
+                    1 for c in wikidata_resolved if c.get("resolution") == "tentative"
+                ),
+            }
+        except Exception as e:  # noqa: BLE001
+            import traceback
+            _log(f"ERROR in wikidata step: {type(e).__name__}: {e}")
+            receipt["steps"]["wikidata"] = {
+                "error": str(e), "error_type": type(e).__name__,
+                "traceback_tail": traceback.format_exc().splitlines()[-10:],
+            }
+            wikidata_resolved = deposit.get("wikidata_candidates") or []
     else:
         wikidata_resolved = deposit.get("wikidata_candidates") or []
         receipt["steps"]["wikidata"] = {"skipped": True}
@@ -1185,40 +1194,76 @@ def enrich(
     # step 3: OpenAlex enrichment
     openalex_result: dict = {"openalex_ids_for_deposit": [], "openalex_ids_for_citations": {}}
     if do_openalex:
-        openalex_result = fetch_openalex(deposit, extraction["citations"])
-        receipt["steps"]["openalex"] = {
-            "deposit_matches": len(openalex_result["openalex_ids_for_deposit"]),
-            "citation_matches": len(openalex_result["openalex_ids_for_citations"]),
-        }
+        try:
+            openalex_result = fetch_openalex(deposit, extraction["citations"])
+            receipt["steps"]["openalex"] = {
+                "deposit_matches": len(openalex_result["openalex_ids_for_deposit"]),
+                "citation_matches": len(openalex_result["openalex_ids_for_citations"]),
+            }
+        except Exception as e:  # noqa: BLE001
+            import traceback
+            _log(f"ERROR in openalex step: {type(e).__name__}: {e}")
+            receipt["steps"]["openalex"] = {
+                "error": str(e), "error_type": type(e).__name__,
+                "traceback_tail": traceback.format_exc().splitlines()[-10:],
+            }
     else:
         receipt["steps"]["openalex"] = {"skipped": True}
 
     # step 4: DataCite severance
     datacite_result: dict = {"live_dois": [], "severed_dois": [], "unchecked": []}
     if do_datacite:
-        datacite_result = check_datacite_severance(extraction["citations"])
-        receipt["steps"]["datacite"] = {
-            "live": len(datacite_result["live_dois"]),
-            "severed": len(datacite_result["severed_dois"]),
-        }
+        try:
+            datacite_result = check_datacite_severance(extraction["citations"])
+            receipt["steps"]["datacite"] = {
+                "live": len(datacite_result["live_dois"]),
+                "severed": len(datacite_result["severed_dois"]),
+            }
+        except Exception as e:  # noqa: BLE001
+            import traceback
+            _log(f"ERROR in datacite step: {type(e).__name__}: {e}")
+            receipt["steps"]["datacite"] = {
+                "error": str(e), "error_type": type(e).__name__,
+                "traceback_tail": traceback.format_exc().splitlines()[-10:],
+            }
     else:
         receipt["steps"]["datacite"] = {"skipped": True}
 
-    # step 5: SPXI validation
+    # step 5: SPXI validation (pure computation, no network)
     spxi_audit: dict = {}
     if do_spxi:
-        spxi_audit = validate_spxi(deposit, text)
-        receipt["steps"]["spxi"] = {
-            "conformance": spxi_audit.get("overall_conformance"),
-            "canonical_hash": spxi_audit["layers"]["layer_3_content_hash"]["canonical_hash"],
-        }
+        try:
+            spxi_audit = validate_spxi(deposit, text)
+            receipt["steps"]["spxi"] = {
+                "conformance": spxi_audit.get("overall_conformance"),
+                "canonical_hash": spxi_audit["layers"]["layer_3_content_hash"]["canonical_hash"],
+            }
+        except Exception as e:  # noqa: BLE001
+            import traceback
+            _log(f"ERROR in spxi step: {type(e).__name__}: {e}")
+            receipt["steps"]["spxi"] = {
+                "error": str(e), "error_type": type(e).__name__,
+                "traceback_tail": traceback.format_exc().splitlines()[-10:],
+            }
     else:
         receipt["steps"]["spxi"] = {"skipped": True}
 
-    # step 6: assemble registry fields
-    entities, defines_concepts = build_entities(deposit, extraction)
-    references_concepts, references_count = build_references_concepts(text)
-    wiki_article = build_wiki_article(deposit, text, extraction.get("concepts", []))
+    # step 6: assemble registry fields (pure computation)
+    try:
+        entities, defines_concepts = build_entities(deposit, extraction)
+        references_concepts, references_count = build_references_concepts(text)
+        wiki_article = build_wiki_article(deposit, text, extraction.get("concepts", []))
+    except Exception as e:  # noqa: BLE001
+        import traceback
+        _log(f"ERROR in assemble step: {type(e).__name__}: {e}")
+        _log(traceback.format_exc())
+        receipt["steps"]["assemble"] = {
+            "error": str(e), "error_type": type(e).__name__,
+            "traceback_tail": traceback.format_exc().splitlines()[-15:],
+        }
+        entities, defines_concepts = [], []
+        references_concepts, references_count = [], 0
+        wiki_article = None
 
     # step 7: apply to deposit
     if not dry_run:
@@ -1240,24 +1285,49 @@ def enrich(
             deposit["datacite_severance"] = "intact"
         if spxi_audit:
             deposit["spxi_audit"] = spxi_audit
-        # sidecar path (external metadata)
-        sidecar_path = write_external_metadata_sidecar(
-            deposit, wikidata_resolved, openalex_result, datacite_result, extraction,
-        )
-        deposit["external_metadata_path"] = f"/{sidecar_path.relative_to(REPO_ROOT)}"
+        # sidecar path (external metadata) — wrapped because file I/O
+        try:
+            sidecar_path = write_external_metadata_sidecar(
+                deposit, wikidata_resolved, openalex_result, datacite_result, extraction,
+            )
+            deposit["external_metadata_path"] = f"/{sidecar_path.relative_to(REPO_ROOT)}"
+        except Exception as e:  # noqa: BLE001
+            import traceback
+            _log(f"ERROR in sidecar step: {type(e).__name__}: {e}")
+            receipt["steps"]["sidecar"] = {
+                "error": str(e), "error_type": type(e).__name__,
+                "traceback_tail": traceback.format_exc().splitlines()[-10:],
+            }
 
     # step 8: backlinks
     backlinks_updated = 0
     if do_backlinks and not dry_run:
-        backlinks_updated = update_backlinks(deposit, reg, extraction)
-        receipt["steps"]["backlinks"] = {"deposits_backlinked": backlinks_updated}
+        try:
+            backlinks_updated = update_backlinks(deposit, reg, extraction)
+            receipt["steps"]["backlinks"] = {"deposits_backlinked": backlinks_updated}
+        except Exception as e:  # noqa: BLE001
+            import traceback
+            _log(f"ERROR in backlinks step: {type(e).__name__}: {e}")
+            receipt["steps"]["backlinks"] = {
+                "error": str(e), "error_type": type(e).__name__,
+                "traceback_tail": traceback.format_exc().splitlines()[-10:],
+            }
     else:
         receipt["steps"]["backlinks"] = {"skipped": True}
 
-    # step 9: save registry
+    # step 9: save registry (ALWAYS reached if we got past step 1 load)
     if not dry_run:
-        _save_registry(reg)
-        _log(f"saved registry with enrichment for AXN:{deposit['hex']} (#{deposit_number})")
+        try:
+            _save_registry(reg)
+            _log(f"saved registry with enrichment for AXN:{deposit['hex']} (#{deposit_number})")
+            receipt["steps"]["save"] = {"ok": True}
+        except Exception as e:  # noqa: BLE001
+            import traceback
+            _log(f"ERROR saving registry: {type(e).__name__}: {e}")
+            receipt["steps"]["save"] = {
+                "error": str(e), "error_type": type(e).__name__,
+                "traceback_tail": traceback.format_exc().splitlines()[-10:],
+            }
     else:
         _log(f"DRY RUN: would have enriched AXN:{deposit['hex']} (#{deposit_number})")
 
@@ -1310,7 +1380,23 @@ def main() -> int:
             dry_run=args.dry_run,
         )
     except Exception as e:  # noqa: BLE001
-        _log(f"FATAL: {e}")
+        import traceback
+        tb = traceback.format_exc()
+        _log(f"FATAL: {type(e).__name__}: {e}")
+        _log(tb)
+        # Write a minimal receipt so the debug info survives — otherwise
+        # the workflow shows step-success (courtesy of `|| echo ...`) and
+        # we lose all trace of why enrichment produced nothing.
+        if args.receipt_path:
+            Path(args.receipt_path).write_text(json.dumps({
+                "deposit_number": args.deposit_number,
+                "run_at": datetime.now(timezone.utc).isoformat(),
+                "fatal": {
+                    "error": str(e),
+                    "error_type": type(e).__name__,
+                    "traceback_tail": tb.splitlines()[-20:],
+                },
+            }, indent=2) + "\n")
         return 2
 
     if args.receipt_path:
