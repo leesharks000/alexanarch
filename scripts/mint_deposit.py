@@ -703,12 +703,14 @@ def mint_from_issue_body(body: str, issue_number: int, *, dry_run: bool = False)
             "This means the workflow environment is missing wire_deposit.py at repo root."
         )
     static_record_dir.mkdir(parents=True, exist_ok=True)
-    # wire_deposit.regenerate_static_page expects the deposit dict + entity index
+    # wire_deposit.regenerate_static_page reads deposit dict + entity index
+    # and writes s/records/{deposit_number}/index.html directly. It returns
+    # None; the file is the artifact. Do NOT try to capture and re-write
+    # its return value.
     eidx_path = REPO_ROOT / "data" / "entity-index.json"
     with open(eidx_path) as f:
         eidx = json.load(f)
-    html_content = wire_deposit.regenerate_static_page(entry, eidx)
-    static_record_path.write_text(html_content)
+    wire_deposit.regenerate_static_page(entry, eidx)
 
     result["wrote_files"] = True
     return result
