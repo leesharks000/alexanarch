@@ -178,12 +178,21 @@ function submitDeposit(){
   const bodyEnc=encodeURIComponent(body);
   const labels=encodeURIComponent('deposit');
   const url=`https://github.com/leesharks000/alexanarch/issues/new?title=${title}&body=${bodyEnc}&labels=${labels}`;
-  // Try new tab first; if popup blocker suppresses it, fall back to
-  // same-window navigation so the submission still reaches GitHub. Both
-  // paths carry the full pre-filled issue via the URL, so no form data
-  // is lost.
-  const w=window.open(url,'_blank','noopener');
-  if(!w||w.closed||typeof w.closed==='undefined'){
+  // Use the anchor-click pattern: browsers treat clicks on real anchor
+  // elements with target=_blank as user-initiated navigations and don't
+  // apply popup blockers to them. This is more reliable than
+  // window.open. If for any reason the anchor click doesn't cause a
+  // navigation, fall back to same-window navigation.
+  try{
+    const a=document.createElement('a');
+    a.href=url;
+    a.target='_blank';
+    a.rel='noopener noreferrer';
+    a.style.display='none';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }catch(e){
     window.location.href=url;
   }
 }
