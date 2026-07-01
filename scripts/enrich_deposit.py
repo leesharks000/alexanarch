@@ -450,8 +450,31 @@ def extract_via_llm(deposit: dict, text: str, *, api_key: str) -> dict:
         },
     )
     _log(f"calling Claude {CLAUDE_MODEL} for extraction (~{len(body)//4} input tokens)")
-    with urllib.request.urlopen(req, timeout=120) as r:
-        resp = json.load(r)
+
+    # Retry on transient network / timeout failures. Long-form structured
+    # extraction on a ~10K-token input can take 60-120s under normal load
+    # and longer under contention; we allow up to 3 attempts with
+    # exponential backoff so a single transient slowdown doesn't lose the
+    # entire extraction pass.
+    resp = None
+    last_error = None
+    for attempt in range(1, 4):
+        try:
+            with urllib.request.urlopen(req, timeout=300) as r:
+                resp = json.load(r)
+            break
+        except (urllib.error.URLError, TimeoutError, OSError) as e:
+            last_error = e
+            _log(f"attempt {attempt}/3 failed: {type(e).__name__}: {e}")
+            if attempt < 3:
+                backoff = 5 * (2 ** (attempt - 1))  # 5s, 10s
+                _log(f"retrying in {backoff}s")
+                time.sleep(backoff)
+    if resp is None:
+        raise RuntimeError(
+            f"Claude API call failed after 3 attempts. "
+            f"Last error: {type(last_error).__name__}: {last_error}"
+        )
 
     # find the tool_use block
     for block in resp.get("content", []):
