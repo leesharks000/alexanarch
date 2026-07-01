@@ -417,14 +417,19 @@ jobs:
           DEPOSIT_NUMBER: ${{ steps.mint.outputs.deposit_number }}
         run: |
           set -euo pipefail
+          # Instrumentation: report whether the secret propagated to env
+          # WITHOUT printing the value itself. Length only.
+          KEY_LEN="${#ANTHROPIC_API_KEY}"
+          echo "[enrich] ANTHROPIC_API_KEY length in env: ${KEY_LEN}"
           if [ -z "${ANTHROPIC_API_KEY:-}" ]; then
-            echo "ANTHROPIC_API_KEY not set — running enrichment in non-LLM mode"
+            echo "[enrich] Path: NON-LLM (secret is empty or missing in env)"
             python3 scripts/enrich_deposit.py \
               --deposit-number "${DEPOSIT_NUMBER}" \
               --wikidata --openalex --datacite --spxi --backlinks \
               --receipt-path /tmp/enrichment-receipt.json \
               || echo "enrichment (non-LLM) failed — deposit still minted, will re-run offline"
           else
+            echo "[enrich] Path: FULL LLM (--all)"
             python3 scripts/enrich_deposit.py \
               --deposit-number "${DEPOSIT_NUMBER}" \
               --all \
