@@ -482,20 +482,29 @@ jobs:
           git config user.name "Alexanarch Bot"
           git config user.email "bot@alexanarch.org"
           git checkout -b "${BRANCH}"
-          git add data/registry.json \
-                  data/texts/ \
-                  data/deposits/ \
-                  data/chunks/ \
-                  data/browse-index.json \
-                  data/wiki-entries.json \
-                  data/external-metadata/ \
-                  data/enrichment-receipts/ \
-                  s/records/ \
-                  s/browse/ \
-                  s/wiki/ \
-                  s/graph/ \
-                  sitemap.xml \
-                  SHA256SUMS.txt
+          # Only add paths that actually exist. If enrichment failed to write
+          # a sidecar or receipt, we still want to commit the base mint.
+          for p in \
+              data/registry.json \
+              data/texts \
+              data/deposits \
+              data/chunks \
+              data/browse-index.json \
+              data/wiki-entries.json \
+              data/external-metadata \
+              data/enrichment-receipts \
+              s/records \
+              s/browse \
+              s/wiki \
+              s/graph \
+              sitemap.xml \
+              SHA256SUMS.txt; do
+            if [ -e "${p}" ]; then
+              git add "${p}"
+            else
+              echo "skip missing: ${p}"
+            fi
+          done
           # Strip the [DEPOSIT] prefix from the title for the commit subject
           CLEAN_TITLE="${ISSUE_TITLE#"[DEPOSIT]"}"
           CLEAN_TITLE="${CLEAN_TITLE# }"  # strip leading space
