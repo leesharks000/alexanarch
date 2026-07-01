@@ -394,6 +394,59 @@ jobs:
               --strict
 
       # ───────────────────────────────────────────────────────────────────
+      # PHASE 7.5 — ENRICHMENT (LLM extraction + external metadata + SPXI)
+      # ───────────────────────────────────────────────────────────────────
+      #
+      # Populates wiki_article, entities, defines_concepts, references_concepts,
+      # citations (broadened past DOIs), wikidata_candidates (with QID
+      # resolution via SPARQL), openalex_ids, datacite_severance, SPXI Protocol
+      # v0.2 five-layer audit, cross-reference backlinks, and per-deposit
+      # external-metadata sidecar. Fail-open by design: any step failure is
+      # logged and skipped — the deposit still lands with base fields. Costs
+      # ~$0.05 per deposit on Sonnet 4.6, ~$0.02 on Haiku 4.5.
+
+      - name: Enrich deposit (LLM + external metadata + SPXI)
+        if: steps.existing_pr.outputs.exists != 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DEPOSIT_NUMBER: ${{ steps.mint.outputs.deposit_number }}
+        run: |
+          set -euo pipefail
+          if [ -z "${ANTHROPIC_API_KEY:-}" ]; then
+            echo "ANTHROPIC_API_KEY not set — running enrichment in non-LLM mode"
+            python3 scripts/enrich_deposit.py \
+              --deposit-number "${DEPOSIT_NUMBER}" \
+              --wikidata --openalex --datacite --spxi --backlinks \
+              --receipt-path /tmp/enrichment-receipt.json \
+              || echo "enrichment (non-LLM) failed — deposit still minted, will re-run offline"
+          else
+            python3 scripts/enrich_deposit.py \
+              --deposit-number "${DEPOSIT_NUMBER}" \
+              --all \
+              --receipt-path /tmp/enrichment-receipt.json \
+              || echo "enrichment failed — deposit still minted, will re-run offline"
+          fi
+          if [ -f /tmp/enrichment-receipt.json ]; then
+            echo "=== enrichment receipt ==="
+            cat /tmp/enrichment-receipt.json
+          fi
+
+      - name: Regenerate surfaces (post-enrichment projection)
+        if: steps.existing_pr.outputs.exists != 'true'
+        run: |
+          # Project the enriched registry state into static surfaces so
+          # wiki, graph, browse, and record pages reflect the enrichment
+          # atomically with the mint commit.
+          python3 scripts/regenerate_surfaces.py
+
+      - name: Validate full registry post-enrichment
+        if: steps.existing_pr.outputs.exists != 'true'
+        run: |
+          python3 scripts/validate_deposit.py \
+              --registry data/registry.json \
+              --strict
+
+      # ───────────────────────────────────────────────────────────────────
       # PHASE 8 — BRANCH, COMMIT, PR (no direct push to main)
       # ───────────────────────────────────────────────────────────────────
 
@@ -418,8 +471,12 @@ jobs:
                   data/deposits/ \
                   data/chunks/ \
                   data/browse-index.json \
+                  data/wiki-entries.json \
+                  data/external-metadata/ \
                   s/records/ \
                   s/browse/ \
+                  s/wiki/ \
+                  s/graph/ \
                   sitemap.xml \
                   SHA256SUMS.txt
           # Strip the [DEPOSIT] prefix from the title for the commit subject
@@ -442,7 +499,10 @@ jobs:
             echo "  3. mint_deposit.py (sanitization + canonical bytes + AXN derivation)"
             echo "  4. validate_deposit.py --registry-entry --strict"
             echo "  5. regenerate_surfaces.py"
-            echo "  6. validate_deposit.py --registry --strict (full post-state)"
+            echo "  6. validate_deposit.py --registry --strict (post-mint)"
+            echo "  7. enrich_deposit.py --all (LLM concepts/citations, Wikidata, OpenAlex, DataCite, SPXI, backlinks)"
+            echo "  8. regenerate_surfaces.py (post-enrichment projection)"
+            echo "  9. validate_deposit.py --registry --strict (post-enrichment)"
             echo
             if [ -f /tmp/familiarization-receipt.txt ]; then
               cat /tmp/familiarization-receipt.txt
