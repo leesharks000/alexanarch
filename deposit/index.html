@@ -177,7 +177,15 @@ function submitDeposit(){
   const title=encodeURIComponent('[DEPOSIT] '+fields.title);
   const bodyEnc=encodeURIComponent(body);
   const labels=encodeURIComponent('deposit');
-  window.open(`https://github.com/leesharks000/alexanarch/issues/new?title=${title}&body=${bodyEnc}&labels=${labels}`,'_blank');
+  const url=`https://github.com/leesharks000/alexanarch/issues/new?title=${title}&body=${bodyEnc}&labels=${labels}`;
+  // Try new tab first; if popup blocker suppresses it, fall back to
+  // same-window navigation so the submission still reaches GitHub. Both
+  // paths carry the full pre-filled issue via the URL, so no form data
+  // is lost.
+  const w=window.open(url,'_blank','noopener');
+  if(!w||w.closed||typeof w.closed==='undefined'){
+    window.location.href=url;
+  }
 }
 </script>
 
