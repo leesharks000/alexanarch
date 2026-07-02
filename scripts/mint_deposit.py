@@ -165,7 +165,12 @@ DANGEROUS_SCHEMES_NAMED = frozenset({
 # but bounded; legitimate submissions fit comfortably.
 MAX_TITLE_CHARS = 500
 MAX_CREATOR_CHARS = 500
-MAX_DESCRIPTION_CHARS = 50_000
+# Raised 50_000 → 100_000 (= MAX_FIELD_CHARS) 2026-07-02: the description
+# field carries full deposit documents per SPXI full-content-hash discipline;
+# a 58K theoretical paper (deposit #943) is normal scholarship. The old 50K
+# cap had never fired only because the field-boundary defect (fixed above)
+# truncated embedded documents before the cap was checked.
+MAX_DESCRIPTION_CHARS = 100_000
 MAX_FIELD_CHARS = 100_000
 MAX_KEYWORDS = 50
 
@@ -207,7 +212,18 @@ def extract_field(body: str, label: str) -> str:
 
     Returns empty string for missing or "_No response_" fields.
     """
-    pattern = rf"###\s+{re.escape(label)}\s*\n\s*(.*?)(?=\n###|\Z)"
+    # Field boundary is the NEXT KNOWN FORM LABEL, not any "###" — deposits
+    # legitimately embed markdown documents whose level-3 headings must not
+    # terminate the field. (Post-mortem: deposits #942/#943, 2026-07-02,
+    # minted with canonical text truncated at the first embedded "### ".)
+    _KNOWN_LABELS = (
+        "Protocol Version", "Title", "Creator", "ORCID", "Date", "Description",
+        "Content Type", "License", "Substrate Disclosure", "Keywords",
+        "Related Identifiers", "Version", "Methodology",
+        "Falsification Conditions", "Files", "Terms",
+    )
+    _label_alt = "|".join(re.escape(l) for l in _KNOWN_LABELS)
+    pattern = rf"###\s+{re.escape(label)}\s*\n\s*(.*?)(?=\n###\s+(?:{_label_alt})\s*\n|\Z)"
     m = re.search(pattern, body, re.DOTALL | re.IGNORECASE)
     if not m:
         return ""
