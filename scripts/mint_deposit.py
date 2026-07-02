@@ -689,6 +689,26 @@ def build_canonical_text(
 # REGISTRY ENTRY CONSTRUCTION
 # ─────────────────────────────────────────────────────────────────────────────
 
+# Registry descriptions are abstract-scale metadata, not document storage.
+# The CANONICAL TEXT keeps the depositor's full Description field (it is part
+# of the hashed bytes); the REGISTRY entry gets a bounded abstract so that
+# every description-consuming surface (main page entries, browse index,
+# chunks, JSON-LD, meta tags) behaves identically across deposits.
+# (Post-mortem: #942/#943, 2026-07-02 — full documents rode in the registry
+# description field, producing 32K/58K entries beside 792-char siblings.)
+REGISTRY_DESCRIPTION_MAX = 2400
+
+def _registry_description(desc: str) -> str:
+    """Bound a description to abstract scale at a paragraph boundary."""
+    if len(desc) <= REGISTRY_DESCRIPTION_MAX:
+        return desc
+    cut = desc.rfind("\n\n", 0, REGISTRY_DESCRIPTION_MAX)
+    if cut < 200:  # no usable paragraph boundary — cut at sentence end
+        cut = desc.rfind(". ", 0, REGISTRY_DESCRIPTION_MAX)
+        cut = cut + 1 if cut > 200 else REGISTRY_DESCRIPTION_MAX
+    return desc[:cut].rstrip() + " […full text at full_text_path]"
+
+
 def build_registry_entry(
     fields: dict,
     deposit_number: int,
@@ -724,7 +744,7 @@ def build_registry_entry(
         "title": fields["title"],
         "creator": fields["creator"],
         "date": fields["date"],
-        "description": fields["description"],
+        "description": _registry_description(fields["description"]),
         "content_type": fields["content_type"],
         "license": fields["license"],
         "substrate": fields["substrate"],
