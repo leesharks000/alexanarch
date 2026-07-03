@@ -1,0 +1,73 @@
+{
+ "@context": "https://schema.org",
+ "@type": "Dataset",
+ "name": "Provenance Chain — The 871 DataCite Severance Count",
+ "description": "Complete, independently verifiable provenance chain for the published claim that 871 DOIs of the Crimson Hexagonal Archive were absent from DataCite public findability at the 2026-06-22 capture, with explicit disambiguation of an unrelated same-repository counting artifact of 2026-07-03. Prepared in view of pending proceedings (OC 11 §104.1 referral, Alexanarch record #948) in which this count is cited as evidence.",
+ "author": {
+  "@type": "Person",
+  "name": "Lee Sharks",
+  "identifier": "https://orcid.org/0009-0000-1599-0703"
+ },
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "dateCreated": "2026-07-03T21:29:18Z",
+ "the_claim_as_published": "At the 2026-06-22 DataCite capture, 871 DOIs of the archive were not returned by DataCite's public API — a pattern consistent with the records having been moved to 'registered' state (withdrawn from public findability). The claim is state-bounded and time-stamped. It was never an assertion that metadata had been deleted. Raw API responses were captured at observation time and govern.",
+ "chain": [
+  {
+   "link": 1,
+   "what": "First-epoch raw evidence: complete DataCite API sweep (ORCID + per-heteronym creator queries)",
+   "artifact": "data/datacite-full-backup.json",
+   "fetched": "2026-06-22",
+   "sha256": "a93fe5bfa7bda5fdfbd27088ff75a40d617a82d35154055f3f6489a5ef757d92",
+   "contains": "records: 963 findable at capture; not_found_dois: 871"
+  },
+  {
+   "link": 2,
+   "what": "Contemporaneous inscription: the count entered version control on the day of capture, pre-publication",
+   "git_commits": [
+    {
+     "sha": "4101070",
+     "date": "2026-06-22",
+     "note": "file introduced"
+    },
+    {
+     "sha": "f8ad0b1",
+     "date": "2026-06-22",
+     "note": "commit message states '963 recovered, 871 stripped'"
+    }
+   ]
+  },
+  {
+   "link": 3,
+   "what": "Canonical severed-DOI list: sorted unique not_found_dois, independently re-derivable from link 1",
+   "count": 871,
+   "unique": 871,
+   "canonical_list_sha256": "88f64389d0985089c31ad8a4b80f57bbec2a85cf675fbf5be093bf4d4a7cef06",
+   "reproduce": "python3 -c \"import json,hashlib; d=json.load(open('data/datacite-full-backup.json')); l=sorted(set(d['not_found_dois'])); print(len(l), hashlib.sha256('\\n'.join(l).encode()).hexdigest())\""
+  },
+  {
+   "link": 4,
+   "what": "Publication: the empirical paper, content-hashed at deposit",
+   "deposit": "Alexanarch #868",
+   "axn": "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝",
+   "deposit_hash": "ba04230bbf477398…",
+   "record": "https://alexanarch.org/s/records/868/"
+  },
+  {
+   "link": 5,
+   "what": "Second-epoch confirmation: all 871 re-queried live against DataCite",
+   "date": "2026-07-03",
+   "artifact": "data/datacite-recapture-2026-07-03.json",
+   "git_commit": "d3bcb07",
+   "finding": "queried 871; restored_to_findable 0; still_absent 871 — continuous severed state across epochs"
+  },
+  {
+   "link": 6,
+   "what": "Citation in pending proceedings",
+   "cited_in": "OC 11 §104.1 referral dossier, Annex 4 (Alexanarch record #948, AXN:03C0.GOVERNANCE.🕑➕➕👋🚀🗝️)"
+  }
+ ],
+ "disambiguation_of_the_2026-07-03_artifact": {
+  "statement": "On 2026-07-03, during cross-site propagation work, an interim figure of '809' was produced by an automated join and described in a commit message (5864088) as tombstoned DOIs 'with no surviving successor deposit.' That figure measured a DIFFERENT OBJECT: the internal mapping completeness of the Alexanarch doi-resolution-index data file, using a single-source join whose misses were miscounted as unmapped entries. It was identified as erroneous and corrected the same day (commits 2b095aa, e961d28). It did not measure DataCite state. It did not reference, derive from, revise, or correct the 871 count. No correction has ever been issued to the 871 count, which has remained constant from the day of capture through second-epoch confirmation. The corrected measurement of the different object (index completeness) yielded: 400 entries then unmapped, of which 308 concept-family roots and 5 versions were resolved to surviving deposits on 2026-07-03, leaving 87 index-side orphans — a population disjoint from the 871."
+ },
+ "verification_procedure": "Any party may verify independently: (1) obtain data/datacite-full-backup.json from the public repository at commit 4101070 or later; confirm its sha256; (2) count not_found_dois and confirm 871; (3) confirm the canonical list hash per link 3; (4) re-query any or all of the 871 against api.datacite.org and observe current state; (5) confirm the git dates precede publication and proceedings."
+}
