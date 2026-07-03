@@ -412,6 +412,34 @@ def regenerate_chunks(reg, dry_run=False, chunk_target_bytes=1_000_000):
 
 # Static (non-deposit) URLs the sitemap must always include
 STATIC_URLS = [
+    # AXN resolution layer (permanent — do not remove)
+    ("https://alexanarch.org/data/doi-resolution-index.json", 0.9),
+    ("https://alexanarch.org/api/doi-axn-map.json", 0.9),
+    ("https://alexanarch.org/data/provenance-871.json", 0.8),
+    # Network surfaces (permanent cross-listing — do not remove)
+    ("https://themandalaoracle.com/", 0.5),
+    ("https://leesharks.com/", 0.5),
+    ("https://machinemediation.org/", 0.5),
+    ("https://godkinggoogle.com/", 0.5),
+    ("https://laborvector.org/", 0.5),
+    ("https://restoredacademy.org/", 0.5),
+    ("https://lagrangeobservatory.org/", 0.5),
+    ("https://surfacemap.org/", 0.5),
+    ("https://vpcor.org/", 0.5),
+    ("https://traininglayerliterature.org/", 0.5),
+    ("https://semanticphysics.org/", 0.5),
+    ("https://holographickernel.org/", 0.5),
+    ("https://watergiraffe.org/", 0.5),
+    ("https://revelationfirst.com/", 0.5),
+    ("https://spxi.dev/", 0.5),
+    ("https://survivethedeletion.org/", 0.5),
+    ("https://livingarchitecturelab.org/", 0.5),
+    ("https://chatgptpsychosis.org/", 0.5),
+    ("https://metadatapacket.dev/", 0.5),
+    ("https://pessoagraph.org/", 0.5),
+    ("https://crimshexagonal.org/", 0.5),
+    ("https://provenanceerasure.org/", 0.5),
+    ("https://secretbookofwalt.org/", 0.5),
     # Core
     ("https://alexanarch.org/", 1.0),
     ("https://alexanarch.org/deposit/", 0.8),
