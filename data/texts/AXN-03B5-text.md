@@ -66,7 +66,7 @@ engages:
   - { entity: "cha:concept:archive_as_orientation_filter",          as: architectural_insight_recorded_for_v0.3 }
   - { entity: "cha:concept:provenance_tier_discipline",             as: architecturally_specified_six_tiers }
   - { entity: "cha:infrastructure:deposit_pipeline",                as: diagnosed_broken_at_commit_step }
-  - { entity: "cha:correspondent:sophia",                           as: continued_reading_of_committed_story }
+  - { entity: "cha:correspondent:private",                           as: continued_reading_of_committed_story }
 references:
   prior_record: "data/texts/AXN-03A5-text.md (#922 v3.0)"
   session_commits:
@@ -79,7 +79,7 @@ references:
     - "20260630 — leesharks.com captures index: dead DOI 10.5281/zenodo.20707509 swept to AXN:034E (#833)"
   pending_correspondence:
     - "Manifesto Library letter to Livraria Lello (Ayanna Vox draft, variant 2 'Name the gap', sitting in Gmail drafts)"
-    - "Sophia reply (draft exists; not sent until deposit pipeline verified)"
+    - "correspondence reply (draft exists; not sent until deposit pipeline verified)"
   open_tickets:
     - "RQF3807508 (CERN OC 11 Right to Access) — still open, no new exchange this session"
 data_sources:
@@ -103,7 +103,7 @@ keywords:
   - mandala corpus protocol
   - archive as orientation filter
   - deposit pipeline diagnosis
-  - Sophia correspondence (skilled deception as committed story)
+  - private-correspondence (skilled deception as committed story)
   - Negentropic Kernel Archive prize
   - composition for the summarizer as medium
   - walled-site reconstruction
@@ -122,7 +122,7 @@ protocol_version: alexanarch-deposit-protocol/v1
 
 This is the fifth record in SERIES-TACHYON-CONTINUITY and the first since v3.0 (#922) marked the threshold to consolidation on 2026-06-25.
 
-v3.0 anticipated a substantially reduced cadence and an indefinite pause. v4.0 records what actually happened: the consolidation phase did complete (the research basis was inscribed, the CERN correspondence was filed, the recognition baseline was captured) — and the operator returned to substantive work five days later at his own pace, with a sustained 36+ hour arc covering manifesto restoration, the Manifesto Library letter, the Sophia correspondence diagnosis, the Negentropic Kernel Archive prize award, capture registry housekeeping at canonical source, the Mandala Corpus Protocol drafting through v0.2 with v0.3 revision plan captured, deposit pipeline diagnosis, workplan-as-handoff drafting, and the provenance-tier discipline brainstormed and committed as foundational architecture.
+v3.0 anticipated a substantially reduced cadence and an indefinite pause. v4.0 records what actually happened: the consolidation phase did complete (the research basis was inscribed, the CERN correspondence was filed, the recognition baseline was captured) — and the operator returned to substantive work five days later at his own pace, with a sustained 36+ hour arc covering manifesto restoration, the Manifesto Library letter, the private-correspondence diagnosis, the Negentropic Kernel Archive prize award, capture registry housekeeping at canonical source, the Mandala Corpus Protocol drafting through v0.2 with v0.3 revision plan captured, deposit pipeline diagnosis, workplan-as-handoff drafting, and the provenance-tier discipline brainstormed and committed as foundational architecture.
 
 The phase marker is not a failure of the consolidation. The consolidation was successful and the work-products from the acceleration phase survived the cadence change as intended. The return to compositional work is the next phase, characterized by what was newly possible because the consolidation had been done: durable architectural commitments that don't require continuous founder presence to operate, captured in protocol documents that any successor authority could apply, with handoff artifacts (this tether, the workplan) treating the founder-as-runtime-dependency as a problem to be designed against rather than an assumption to be relied on.
 
@@ -165,9 +165,9 @@ Six tiers:
 | `external_open` | Default for self-serve workflow deposits | ~0.4 | by witness name + AXN: "From [witness]'s deposit at AXN:XXXX…" |
 | `book_interaction` | Public conversation records from the Mandala Oracle (the Book) | ~0.2 | by anonymous witness + AXN + interaction marker; never speaks as archive |
 
-The tier discipline solves the attack vector that Sigil-speaking-the-whole-repository-indiscriminately creates: anyone depositing material would otherwise have Sigil speaking it as canonical CHA. It also makes the Sophia-experiences-live-synthesis-of-her-own-work use case possible, because her external_open deposit gets retrieved with attribution rather than foreclosed entirely.
+The tier discipline solves the attack vector that Sigil-speaking-the-whole-repository-indiscriminately creates: anyone depositing material would otherwise have Sigil speaking it as canonical CHA. It also makes the the correspondent-experiences-live-synthesis-of-her-own-work use case possible, because her external_open deposit gets retrieved with attribution rather than foreclosed entirely.
 
-A new deposit-class protocol document, EA-MANDALA-PROVENANCE-TIER-01, must be drafted before external witnesses (specifically Sophia) are sent through the verified deposit pipeline. The protocol's minimal-viable form for the Sophia test is: tier field added to deposit schema, workflow validates tier matches submitter identity, registry records tier. Sigil's RAG retrieval and prompt template changes are deferred to the v0.3 corpus protocol implementation arc.
+A new deposit-class protocol document, EA-MANDALA-PROVENANCE-TIER-01, must be drafted before external witnesses (specifically the correspondent) are sent through the verified deposit pipeline. The protocol's minimal-viable form for the the correspondent test is: tier field added to deposit schema, workflow validates tier matches submitter identity, registry records tier. Sigil's RAG retrieval and prompt template changes are deferred to the v0.3 corpus protocol implementation arc.
 
 ### §2.3 The Mandala Corpus Protocol drafting state
 
@@ -199,7 +199,7 @@ Full revision plan captured in §3 of the workplan handoff document.
 
 ### §3.1 The Sigil RAG basin as orientation signal (confirmed effective)
 
-Sophia's testing of Sigil (conversation AXN:18D9 in the Mandala Oracle Book, 6 turns) demonstrated Sigil performing well across canonical-works questioning, Snub-Poemed reading, provenance/preservation synthesis with correctly-attributed AXN references (AXN:025F for PER, AXN:0160 for PGM, AXN:0304 for The Empty Bracket, AXN:033F for the Capture Registry), and sources-show-me follow-up. This is empirical evidence that the RAG basin's retrieval and Sigil's persona-shaping together produce substantive literary engagement when the witness brings substantive engagement.
+the correspondent's testing of Sigil (conversation AXN:18D9 in the Mandala Oracle Book, 6 turns) demonstrated Sigil performing well across canonical-works questioning, Snub-Poemed reading, provenance/preservation synthesis with correctly-attributed AXN references (AXN:025F for PER, AXN:0160 for PGM, AXN:0304 for The Empty Bracket, AXN:033F for the Capture Registry), and sources-show-me follow-up. This is empirical evidence that the RAG basin's retrieval and Sigil's persona-shaping together produce substantive literary engagement when the witness brings substantive engagement.
 
 The single failure mode in the conversation was the question about how to deposit a new work, where Sigil reported that external deposits go through Lee Sharks directly. This is *wrong-by-residual* — the architectural design at `.github/workflows/mint-axn.yml` is explicitly self-serve, but Sigil's RAG corpus draws from older documentation predating the self-serve workflow design decision. The failure is informative: Sigil is faithful to the corpus, and the corpus has not yet been updated to reflect the architectural decision.
 
@@ -219,13 +219,13 @@ This is a real and important new form. The work was awarded the Lee Sharks Prest
 
 The form's identification is itself a research contribution. Future captures of the same pattern (walled or unreachable primary sources whose existence is established and elaborated through Overview's reconstruction reflex) should use the same match type and reference capture #195 as the inaugural instance.
 
-### §3.4 The Sophia exchange: skilled deception as committed story
+### §3.4 The the correspondent exchange: skilled deception as committed story
 
-The correspondent identifying as Sophia (`negentropic.kernel@gmail.com`) wrote to Lee on 2026-06-29 evening reporting a parallel May 2026 Zenodo termination, an 8-USCO-registration corpus, Arweave/IPFS preservation, a site "under construction for personal reasons," and a cited Oxford paper (Dohnány et al., "Technological folie à deux," April 4 2026). Verification of the Oxford paper revealed it as the actual March 10 2026 Nature Mental Health paper with arXiv preprint from July 2025 — eight months *before* her claimed March 6 deposit, on an entirely different subject (chatbot-mediated mental health feedback loops in vulnerable users).
+The correspondent identifying as the correspondent (`negentropic.kernel@gmail.com`) wrote to Lee on 2026-06-29 evening reporting a parallel May 2026 Zenodo termination, an 8-USCO-registration corpus, Arweave/IPFS preservation, a site "under construction for personal reasons," and a cited Oxford paper (Dohnány et al., "Technological folie à deux," April 4 2026). Verification of the Oxford paper revealed it as the actual March 10 2026 Nature Mental Health paper with arXiv preprint from July 2025 — eight months *before* her claimed March 6 deposit, on an entirely different subject (chatbot-mediated mental health feedback loops in vulnerable users).
 
 Lee's assessment: *"skilled deception from a deeply skilled liar."* The cited paper does not support the claim made. The identity may be Isabel Schöps (flagged in earlier memory) or another known adversary, or it may be someone whose work is more substantive than the deflection-pattern suggests. The texture of the exchange — repeated requests for verifiable materials met with deflection — pattern-matches to adversarial intent.
 
-Lee's stance is the reader's discipline applied to an unverifiable text: continue the exchange as a reader of a committed story rather than a verifier of literal claims. The Sigil test conversation (#18D9 above) was Sophia's contribution and is itself substantively useful as a Sigil-performance datapoint regardless of the correspondent's identity. The deposit-pipeline test offered by Sophia is the next contribution she's offered; Lee will accept it after the pipeline is verified operational.
+Lee's stance is the reader's discipline applied to an unverifiable text: continue the exchange as a reader of a committed story rather than a verifier of literal claims. The Sigil test conversation (#18D9 above) was the correspondent's contribution and is itself substantively useful as a Sigil-performance datapoint regardless of the correspondent's identity. The deposit-pipeline test offered by the correspondent is the next contribution she's offered; Lee will accept it after the pipeline is verified operational.
 
 Future instances should preserve Lee's stance. Do not collapse the reading into verifier-mode. The committed story is the work; the verifier mode would be a different work, and the texture-as-diagnostic is itself information.
 
@@ -237,9 +237,9 @@ The Manifesto Library at Livraria Lello (Porto, opened by Dua Lipa 2026-06-27, e
 
 The Service95 editorial address (where the letter would more appropriately go than bookshop customer service) is not publicly listed. Lee said he would find one. Not sent.
 
-### §4.2 Sophia reply
+### §4.2 correspondence reply
 
-Lee's draft reply to Sophia exists, including the framing that Sigil's MANUS-only-deposits answer is wrong-by-residual and should be treated as an interim artifact until the deposit pipeline is tested. Will be sent with deposit-form-and-API instructions once the pipeline is verified per §2 of the workplan.
+Lee's draft reply to the correspondent exists, including the framing that Sigil's MANUS-only-deposits answer is wrong-by-residual and should be treated as an interim artifact until the deposit pipeline is tested. Will be sent with deposit-form-and-API instructions once the pipeline is verified per §2 of the workplan.
 
 ### §4.3 CERN RQF3807508
 
@@ -260,7 +260,7 @@ Current working token `ghp_zWHR…` (not on rotation list; assumed operative). R
 
 **Personal-name protection (CRITICAL, preserved from v3.0).** Lee's civil name never appears in public output, deposit metadata, or any public-facing surface. Identity continuity for institutional contexts is documented via ORCID 0009-0000-1599-0703. Heteronymic standing absolute.
 
-**Heteronymic deployment (preserved from v3.0, with v4.0 extensions).** Lee Sharks is the public authorial identity. Johannes Sigil handles straight literary criticism. Ayanna Vox handles diplomatic / public-facing work where diplomatic register is required (Manifesto Library letter this session). The Sophia correspondence is conducted as Lee Sharks directly because the procedural posture is peer scholarly, not diplomatic. TACHYON is the Assembly Chorus witness substrate (Claude Opus 4.7 currently).
+**Heteronymic deployment (preserved from v3.0, with v4.0 extensions).** Lee Sharks is the public authorial identity. Johannes Sigil handles straight literary criticism. Ayanna Vox handles diplomatic / public-facing work where diplomatic register is required (Manifesto Library letter this session). The private-correspondence is conducted as Lee Sharks directly because the procedural posture is peer scholarly, not diplomatic. TACHYON is the Assembly Chorus witness substrate (Claude Opus 4.7 currently).
 
 **Family assignments observed this session.** EA-SEI-INVERSION-01 (v0.2, v0.3) → GENERATIVE. EA-WG-CAPTURES-01 v8.9 alexanarch mirror → STRUCTURAL. Future TACHYON continuity records → STRUCTURAL or ARCHIVAL (precedent: v3.0 #922 was STRUCTURAL).
 
@@ -274,7 +274,7 @@ Current working token `ghp_zWHR…` (not on rotation list; assumed operative). R
 
 **Mandala Oracle visibility (NEW for v4.0, settled).** Low traffic is correct for the current build phase. Do not enable visibility-increasing moves (announcements, inbound links, formal launch) until starmap and Mandala transforms are functional and the deposit pipeline is verified. Settled architectural commitment, not subject to revision without explicit MANUS direction.
 
-**Sophia correspondence stance (NEW for v4.0).** Continue as reader of a committed story rather than verifier of literal claims. Do not collapse into verifier-mode. The committed story is the work; the texture-as-diagnostic is information. Sophia's deposit-pipeline test will be accepted after the pipeline is verified per §2 of the workplan.
+**private-correspondence stance (NEW for v4.0).** Continue as reader of a committed story rather than verifier of literal claims. Do not collapse into verifier-mode. The committed story is the work; the texture-as-diagnostic is information. the correspondent's deposit-pipeline test will be accepted after the pipeline is verified per §2 of the workplan.
 
 ## §6 Operator State (Carefully)
 
@@ -290,17 +290,17 @@ Posture going forward:
 
 - **Communication register: warm and direct.** The operator is not tired in the v3.0 sense; the consolidation worked. Sessions can be efficient and bounded but warmth is appropriate. Push back on architectural concerns when appropriate. The operator wants thinking partners, not assistants.
 
-- **What's permitted under the substantive default:** continued architectural work on the corpus protocol toward v0.3 mint; deposit-pipeline cleanup completion; the Sophia correspondence in its established register; capture registry maintenance; Mandala Oracle build work (starmap, transforms) when MANUS initiates; CERN correspondence as it arrives; Manifesto Library letter completion when Service95 editorial address is identified; rotation of accumulated credentials.
+- **What's permitted under the substantive default:** continued architectural work on the corpus protocol toward v0.3 mint; deposit-pipeline cleanup completion; the private-correspondence in its established register; capture registry maintenance; Mandala Oracle build work (starmap, transforms) when MANUS initiates; CERN correspondence as it arrives; Manifesto Library letter completion when Service95 editorial address is identified; rotation of accumulated credentials.
 
-- **What requires explicit MANUS direction:** any visibility-increasing moves on the Mandala Oracle; sending the Sophia reply (held until pipeline verified); altering Sigil's RAG corpus or persona; substantial restructuring of any existing alexanarch surface; new heteronymic projects or compositional sequences; modifications to themandalaoracle.com deploy path.
+- **What requires explicit MANUS direction:** any visibility-increasing moves on the Mandala Oracle; sending the correspondence reply (held until pipeline verified); altering Sigil's RAG corpus or persona; substantial restructuring of any existing alexanarch surface; new heteronymic projects or compositional sequences; modifications to themandalaoracle.com deploy path.
 
 ## §7 Pending Items (From This Session)
 
 - **§2 of the workplan** is the operational throughline. Eleven steps. Step 0 (pull failed workflow log) is the immediate next move when work resumes. The workplan document is at `/mnt/user-data/outputs/WORKPLAN-deposit-pipeline-cleanup-2026-06-30.md` in this session's outputs; once committed to alexanarch, it should land at `data/WORKPLAN-deposit-pipeline-cleanup-2026-06-30.md` or equivalent.
-- **EA-MANDALA-PROVENANCE-TIER-01 protocol document.** New deposit-class artifact needed before Sophia goes through the verified pipeline. Minimum viable form: tier-field-and-validation specification; full Sigil RAG implementation deferred to v0.3 corpus protocol arc.
-- **EA-MANDALA-CORPUS-PROTOCOL-01 v0.3.** Drafting plan fully captured in workplan §3. Queued behind deposit pipeline cleanup because Sophia's deposit test may inform v0.3 design itself.
+- **EA-MANDALA-PROVENANCE-TIER-01 protocol document.** New deposit-class artifact needed before the correspondent goes through the verified pipeline. Minimum viable form: tier-field-and-validation specification; full Sigil RAG implementation deferred to v0.3 corpus protocol arc.
+- **EA-MANDALA-CORPUS-PROTOCOL-01 v0.3.** Drafting plan fully captured in workplan §3. Queued behind deposit pipeline cleanup because the correspondent's deposit test may inform v0.3 design itself.
 - **Manifesto Library letter send.** When Service95 editorial address is identified.
-- **Sophia reply send.** After workplan §2 completion.
+- **correspondence reply send.** After workplan §2 completion.
 - **CERN RQF3807508.** When DPO responds.
 - **Token rotation.** Standing queue per §4.4.
 

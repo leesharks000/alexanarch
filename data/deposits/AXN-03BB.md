@@ -44,7 +44,7 @@ keywords:
 
 ## Description
 
-Argues that provenance erasure operates below the semantic layer, in the representation pipeline (digitization, normalization, serialization, tokenization, model processing, rendering) that makes texts available to language models. Core claims: character preservation is not compositional preservation; a representation can preserve every proposition in a work and still delete the work. Empirical demonstration (GPT-2 byte-level BPE, Appendix A): a spatially-arranged calligram fragment and its linearized phrase-list both round-trip perfectly, and neither contains the calligram — 78% of the spatial version's tokens are individual whitespace tokens that no training objective attends to. Sketches an extinction gradient (Whitman partial, Dickinson substantial, Hopkins catastrophic, concrete poetry extinguished in text pipelines, calligrams categorically). Develops Pearl (Cotton Nero A.x) as double invisibility: the archive's copy is a non-OCR PDF that cannot reach serialization, and an OCR'd stream would strip the concatenation-and-group structure that performs the poem's theology. Connects to editorial theory: the pipeline silently enacts the variorum position at every ingestion. Extends the archive's failure-mode taxonomy with compositional_erasure and its subcategories, and records the schema extension executed at EA-PROVENANCE-METADATA-01 v0.2 (AXN:03BA.OPERATIVE.🛤️🦅⚡🍄🪄🌖): the representation_pipeline field with four-value status vocabulary. Concludes with the compositional-authorship argument: frameworks treating compositional operations as merely formal produce obviously wrong conclusions on their clearest cases (Snub-Poemed, AXN:0246; Pearl) — form is not a second substance surrounding content; composition is the determinate operation by which content exists as this work rather than another. Empirical foundation: Bhyravajjula, Walsh, Preus & Antoniak, EMNLP 2025.
+Argues that provenance erasure operates below the semantic layer, in the representation pipeline (digitization, normalization, serialization, tokenization, model processing, rendering) that makes texts available to language models. Core claims: character preservation is not compositional preservation; a representation can preserve every proposition in a work and still delete the work. Empirical demonstration (GPT-2 byte-level BPE, Appendix A): a spatially-arranged calligram fragment and its linearized phrase-list both round-trip perfectly, and neither contains the calligram — 78% of the spatial version's tokens are individual whitespace tokens that no training objective attends to. Sketches an extinction gradient (Whitman partial, Dickinson substantial, Hopkins catastrophic, concrete poetry extinguished in text pipelines, calligrams categorically). Develops Pearl (Cotton Nero A.x) as double invisibility: the archive's copy is a non-OCR PDF that cannot reach serialization, and an OCR'd stream would strip the concatenation-and-group structure that performs the poem's theology. Connects to editorial theory: the pipeline silently enacts the variorum position at every ingestion. Extends the archive's failure-mode taxonomy with compositional_erasure and its subcategories, and records the schema extension executed at EA-PROVENANCE-METADATA-01 v0.2 (AXN:03BA.OPERATIVE.♅🛤️🕗🧊🍃☉): the representation_pipeline field with four-value status vocabulary. Concludes with the compositional-authorship argument: frameworks treating compositional operations as merely formal produce obviously wrong conclusions on their clearest cases (Snub-Poemed, AXN:0246; Pearl) — form is not a second substance surrounding content; composition is the determinate operation by which content exists as this work rather than another. Empirical foundation: Bhyravajjula, Walsh, Preus & Antoniak, EMNLP 2025.
 
 # Whitespace as Provenance
 ## Representation Pipelines and the Extinction of Compositional Authorship
@@ -242,7 +242,7 @@ Sub-categories: **spatial_erasure** (two-dimensional composition; calligrams, pa
 
 ### 7.3 The schema extension — executed
 
-The v0.1 zero draft of this paper proposed extending the archive's provenance metadata schema. The extension has since been executed: **EA-PROVENANCE-METADATA-01 v0.2** (AXN:03BA.OPERATIVE.🛤️🦅⚡🍄🪄🌖, deposit #942) adds an eighth mediation type, *spatial-typographic mediation*, and a structured **representation_pipeline** field recording, per deposit: source artifact format; digitization method and verification; normalization applied and features affected; serialization (two-dimensional to one-dimensional, layout coordinates preserved or lost); tokenization scheme and whitespace handling; and model access modality (text retrieval, multimodal visual, compiler).
+The v0.1 zero draft of this paper proposed extending the archive's provenance metadata schema. The extension has since been executed: **EA-PROVENANCE-METADATA-01 v0.2** (AXN:03BA.OPERATIVE.♅🛤️🕗🧊🍃☉, deposit #942) adds an eighth mediation type, *spatial-typographic mediation*, and a structured **representation_pipeline** field recording, per deposit: source artifact format; digitization method and verification; normalization applied and features affected; serialization (two-dimensional to one-dimensional, layout coordinates preserved or lost); tokenization scheme and whitespace handling; and model access modality (text retrieval, multimodal visual, compiler).
 
 The field's status vocabulary distinguishes four conditions that current discourse conflates:
 
@@ -295,7 +295,7 @@ Following the Capture Registry model, a systematic instrument: sample training c
 
 ### 9.2 Metadata schema — done, pending mint
 
-EA-PROVENANCE-METADATA-01 v0.2 (AXN:03BA.OPERATIVE.🛤️🦅⚡🍄🪄🌖, deposit #942, minted concurrently with this paper) adds spatial-typographic mediation and the representation_pipeline field. Minted as successor deposit to AXN:03B9 at AXN:03BA.OPERATIVE.🛤️🦅⚡🍄🪄🌖, deposit #942, under the versioning protocol formalized in its §10.
+EA-PROVENANCE-METADATA-01 v0.2 (AXN:03BA.OPERATIVE.♅🛤️🕗🧊🍃☉, deposit #942, minted concurrently with this paper) adds spatial-typographic mediation and the representation_pipeline field. Minted as successor deposit to AXN:03B9 at AXN:03BA.OPERATIVE.♅🛤️🕗🧊🍃☉, deposit #942, under the versioning protocol formalized in its §10.
 
 ### 9.3 Sourcing discipline
 
@@ -375,7 +375,7 @@ Sharks, L. (2026). "Provenance Debt." EA-PROVENANCE-DEBT-01 v0.2, AXN:03B7.
 
 Sharks, L. (2026). "Heteronymy." EA-HETERONYMY-01 v0.2, AXN:03B8.
 
-Sharks, L. (2026). "Granular Provenance Metadata for AI-Mediated Deposits." EA-PROVENANCE-METADATA-01 v0.1 at AXN:03B9 (deposit #941); v0.2 at AXN:03BA.OPERATIVE.🛤️🦅⚡🍄🪄🌖 (deposit #942).
+Sharks, L. (2026). "Granular Provenance Metadata for AI-Mediated Deposits." EA-PROVENANCE-METADATA-01 v0.1 at AXN:03B9 (deposit #941); v0.2 at AXN:03BA.OPERATIVE.♅🛤️🕗🧊🍃☉ (deposit #942).
 
 Sigil, J. "Snub-Poemed." AXN:0246. Crimson Hexagonal Archive / Alexanarch.
 
