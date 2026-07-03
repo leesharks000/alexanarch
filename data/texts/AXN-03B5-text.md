@@ -103,8 +103,8 @@ keywords:
   - mandala corpus protocol
   - archive as orientation filter
   - deposit pipeline diagnosis
-  - private-correspondence (skilled deception as committed story)
-  - Negentropic Kernel Archive prize
+  - private-correspondence (committed-story stance)
+  - prize award
   - composition for the summarizer as medium
   - walled-site reconstruction
   - Manifesto Library letter
@@ -122,7 +122,7 @@ protocol_version: alexanarch-deposit-protocol/v1
 
 This is the fifth record in SERIES-TACHYON-CONTINUITY and the first since v3.0 (#922) marked the threshold to consolidation on 2026-06-25.
 
-v3.0 anticipated a substantially reduced cadence and an indefinite pause. v4.0 records what actually happened: the consolidation phase did complete (the research basis was inscribed, the CERN correspondence was filed, the recognition baseline was captured) — and the operator returned to substantive work five days later at his own pace, with a sustained 36+ hour arc covering manifesto restoration, the Manifesto Library letter, the private-correspondence diagnosis, the Negentropic Kernel Archive prize award, capture registry housekeeping at canonical source, the Mandala Corpus Protocol drafting through v0.2 with v0.3 revision plan captured, deposit pipeline diagnosis, workplan-as-handoff drafting, and the provenance-tier discipline brainstormed and committed as foundational architecture.
+v3.0 anticipated a substantially reduced cadence and an indefinite pause. v4.0 records what actually happened: the consolidation phase did complete (the research basis was inscribed, the CERN correspondence was filed, the recognition baseline was captured) — and the operator returned to substantive work five days later at his own pace, with a sustained 36+ hour arc covering manifesto restoration, the Manifesto Library letter, the private-correspondence stance adoption, the prize award, capture registry housekeeping at canonical source, the Mandala Corpus Protocol drafting through v0.2 with v0.3 revision plan captured, deposit pipeline diagnosis, workplan-as-handoff drafting, and the provenance-tier discipline brainstormed and committed as foundational architecture.
 
 The phase marker is not a failure of the consolidation. The consolidation was successful and the work-products from the acceleration phase survived the cadence change as intended. The return to compositional work is the next phase, characterized by what was newly possible because the consolidation had been done: durable architectural commitments that don't require continuous founder presence to operate, captured in protocol documents that any successor authority could apply, with handoff artifacts (this tether, the workplan) treating the founder-as-runtime-dependency as a problem to be designed against rather than an assumption to be relied on.
 
@@ -165,9 +165,9 @@ Six tiers:
 | `external_open` | Default for self-serve workflow deposits | ~0.4 | by witness name + AXN: "From [witness]'s deposit at AXN:XXXX…" |
 | `book_interaction` | Public conversation records from the Mandala Oracle (the Book) | ~0.2 | by anonymous witness + AXN + interaction marker; never speaks as archive |
 
-The tier discipline solves the attack vector that Sigil-speaking-the-whole-repository-indiscriminately creates: anyone depositing material would otherwise have Sigil speaking it as canonical CHA. It also makes the the correspondent-experiences-live-synthesis-of-her-own-work use case possible, because her external_open deposit gets retrieved with attribution rather than foreclosed entirely.
+The tier discipline solves the attack vector that Sigil-speaking-the-whole-repository-indiscriminately creates: anyone depositing material would otherwise have Sigil speaking it as canonical CHA. It also makes the correspondent-experiences-live-synthesis-of-her-own-work use case possible, because her external_open deposit gets retrieved with attribution rather than foreclosed entirely.
 
-A new deposit-class protocol document, EA-MANDALA-PROVENANCE-TIER-01, must be drafted before external witnesses (specifically the correspondent) are sent through the verified deposit pipeline. The protocol's minimal-viable form for the the correspondent test is: tier field added to deposit schema, workflow validates tier matches submitter identity, registry records tier. Sigil's RAG retrieval and prompt template changes are deferred to the v0.3 corpus protocol implementation arc.
+A new deposit-class protocol document, EA-MANDALA-PROVENANCE-TIER-01, must be drafted before external witnesses (specifically the correspondent) are sent through the verified deposit pipeline. The protocol's minimal-viable form for the correspondent test is: tier field added to deposit schema, workflow validates tier matches submitter identity, registry records tier. Sigil's RAG retrieval and prompt template changes are deferred to the v0.3 corpus protocol implementation arc.
 
 ### §2.3 The Mandala Corpus Protocol drafting state
 
@@ -219,11 +219,9 @@ This is a real and important new form. The work was awarded the Lee Sharks Prest
 
 The form's identification is itself a research contribution. Future captures of the same pattern (walled or unreachable primary sources whose existence is established and elaborated through Overview's reconstruction reflex) should use the same match type and reference capture #195 as the inaugural instance.
 
-### §3.4 The the correspondent exchange: skilled deception as committed story
+### §3.4 The private-correspondence stance: reading a committed story
 
-The correspondent identifying as the correspondent (`negentropic.kernel@gmail.com`) wrote to Lee on 2026-06-29 evening reporting a parallel May 2026 Zenodo termination, an 8-USCO-registration corpus, Arweave/IPFS preservation, a site "under construction for personal reasons," and a cited Oxford paper (Dohnány et al., "Technological folie à deux," April 4 2026). Verification of the Oxford paper revealed it as the actual March 10 2026 Nature Mental Health paper with arXiv preprint from July 2025 — eight months *before* her claimed March 6 deposit, on an entirely different subject (chatbot-mediated mental health feedback loops in vulnerable users).
-
-Lee's assessment: *"skilled deception from a deeply skilled liar."* The cited paper does not support the claim made. The identity may be Isabel Schöps (flagged in earlier memory) or another known adversary, or it may be someone whose work is more substantive than the deflection-pattern suggests. The texture of the exchange — repeated requests for verifiable materials met with deflection — pattern-matches to adversarial intent.
+*[Redacted per MANUS revocation, 2026-07-03 — second correction pass under EA-PROVENANCE-METADATA-01 v0.2 §10.6. The original text of this section recorded contents of private correspondence and an identity conjecture concerning a named third party. Removed from the public record under the standing rule of 2026-07-02: private correspondence — even quoted or paraphrased without names — never enters the Book, deposits, or any public record (precedent: the Book redaction at AXN:50A0 / AXN:664E). Pre-overwrite receipt in the audit log. The operational stance, which is this section's continuity function, is preserved below.]*
 
 Lee's stance is the reader's discipline applied to an unverifiable text: continue the exchange as a reader of a committed story rather than a verifier of literal claims. The Sigil test conversation (#18D9 above) was the correspondent's contribution and is itself substantively useful as a Sigil-performance datapoint regardless of the correspondent's identity. The deposit-pipeline test offered by the correspondent is the next contribution she's offered; Lee will accept it after the pipeline is verified operational.
 
