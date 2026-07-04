@@ -83,6 +83,7 @@ def s_ia_items(st, reg):
     if not acc: print("  ia-items: dark (IA_ACCESS unset)"); return
     new = new_for(st, reg, 'ia_items')
     if not new: print("  ia-items: nothing new"); return
+    allok = True
     for e in new:
         hx = e['hex']; p = ROOT/f"data/texts/AXN-{hx}-text.md"
         if not p.exists(): continue
@@ -98,8 +99,10 @@ def s_ia_items(st, reg):
         code,_ = http(f"https://s3.us.archive.org/{ident}/AXN-{hx}-text.md",
                       data=p.read_bytes(), headers=hdr, method="PUT")
         print(f"  ia-item {ident}: {code}")
+        if code not in (200, 201): allok = False
         time.sleep(2)
-    st['ia_items'] = max(e['deposit_number'] for e in new)
+    if allok: st['ia_items'] = max(e['deposit_number'] for e in new)
+    else: print("  ia-items: not all succeeded — state not advanced")
 
 def s_gh_releases(st, reg):
     tok = os.environ.get('GH_TOKEN') or os.environ.get('GITHUB_TOKEN','')
