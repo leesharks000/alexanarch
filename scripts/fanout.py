@@ -108,11 +108,15 @@ def s_gh_releases(st, reg):
     if not new: print("  gh-releases: nothing new"); return
     for e in new:
         hx, n = e['hex'], e['deposit_number']
-        body = json.dumps({"tag_name": f"axn-{hx}", "name": e['axn'],
-          "body": f"Deposit #{n}: {e.get('title','')}\n\nsha256 {e.get('hash','')}\nrecord: {SITE}/s/records/{n}/"}).encode()
+        rbody = (f"Deposit #{n}: {e.get('title','')}\n\n**{e['axn']}**\n\n"
+                 f"canonical-text sha256 `{e.get('hash','')}`\n\n"
+                 f"record: {SITE}/s/records/{n}/\nresolver: {SITE}/s/axn/{hx}/\n"
+                 f"canonical text (raw): https://raw.githubusercontent.com/leesharks000/alexanarch/main/data/texts/AXN-{hx}-text.md")
+        body = json.dumps({"tag_name": f"axn-{hx}", "name": e['axn'], "body": rbody}).encode()
         code, resp = http("https://api.github.com/repos/leesharks000/alexanarch/releases",
                           data=body, headers={"Authorization": f"Bearer {tok}",
                           "Accept":"application/vnd.github+json"})
+        if code == 422: print(f"  gh-release axn-{hx}: already exists (ok)"); continue
         rid = json.loads(resp).get('id') if code == 201 else None
         if rid:
             p = ROOT/f"data/texts/AXN-{hx}-text.md"
