@@ -1199,3 +1199,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# AXN resolution layer — regenerate on every surface pass (added 2026-07-04)
+import generate_axn_resolver as _axn
+_axn.main()
