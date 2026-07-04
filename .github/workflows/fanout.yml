@@ -1,0 +1,39 @@
+name: Deposit fan-out
+on:
+  push:
+    branches: [main]
+    paths: ["data/registry.json"]
+  schedule:
+    - cron: "23 3 * * *"
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: fanout
+  cancel-in-progress: false
+jobs:
+  fanout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run fan-out
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+          IA_ACCESS: ${{ secrets.IA_ACCESS }}
+          IA_SECRET: ${{ secrets.IA_SECRET }}
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+          HASHNODE_TOKEN: ${{ secrets.HASHNODE_TOKEN }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+          BLOGGER_TOKEN: ${{ secrets.BLOGGER_TOKEN }}
+        run: python3 scripts/fanout.py
+      - name: Persist state
+        run: |
+          if ! git diff --quiet data/fanout-state.json 2>/dev/null; then
+            git config user.name "fanout"
+            git config user.email "fanout@alexanarch.org"
+            git add data/fanout-state.json
+            git commit -m "fanout state ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+          fi
