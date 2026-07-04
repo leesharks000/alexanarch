@@ -22,9 +22,9 @@ def http(url, data=None, headers=None, method=None):
     req = urllib.request.Request(url, data=data, headers=headers or {}, method=method)
     try:
         with urllib.request.urlopen(req, timeout=45) as r:
-            return r.status, r.read()[:400]
+            return r.status, r.read()[:20000]
     except urllib.error.HTTPError as e:
-        return e.code, e.read()[:400]
+        return e.code, e.read()[:20000]
     except Exception as e:
         return 0, str(e).encode()[:400]
 
