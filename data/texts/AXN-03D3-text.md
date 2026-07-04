@@ -1,18 +1,157 @@
 # H_core Formal Specification v2.0 — Complete Formal Object of the Crimson Hexagonal Archive: 6-Tuple with Subtuples (EA-HCORE-01) — Crimson Hexagonal Archive
 
 **AXN:** AXN:03D3 — Alexanarch deposit #967 (self-reference in root form by pre-hash necessity)
-**Restoration status:** SEMI-RESTORED — metadata-body deposit. This machine-facing static page is the canonical deposit. Its body is the complete DataCite metadata record for a work whose Zenodo record returns HTTP 410 (Gone) while DataCite serves the identifier as findable — the metadata layer and content layer in formal disagreement about the work's existence. Full text pending restoration from authorial originals; on restoration, this deposit upgrades by recorded correction (new hash, new glyph, remediation note).
-**Dead DOI:** 10.5281/zenodo.19455104 (Zenodo record tombstoned; account termination 2026-06-19)
-**DataCite state at capture (2026-07-03):** findable · client cern.zenodo
+**Restoration status:** RESTORED (v0.2) — full text recovered and seated as the canonical body. Recovered from semantic-economy repository: HCORE_FORMAL_SPECIFICATION_v2.0.pdf (text extracted from PDF), 2026-07-04, matched by exact title and version; the initial v0.1 metadata-body deposit is superseded by this correction, recorded in the remediation note. Zenodo record remains HTTP 410; DataCite metadata retained as appendix.
+**Dead DOI:** 10.5281/zenodo.19455104
 **Creators (as recorded by DataCite):** Sharks, Lee; Assembly Chorus
-**Publication year (as recorded):** 2026
-**Provenance:** severance record at data/doi-resolution-index.json (severance_class: orphan → restored-semi); capture evidence at data/datacite-recapture-2026-07-03.json and the sift corpus of 2026-06.
 
 ---
 
-## Description (as recorded by DataCite)
+Hcore Formal Specification v2.0
+Complete Formal Object of the Crimson Hexagonal Archive
 
-The complete formal specification of Hcore — the invariant kernel of the Crimson Hexagonal Archive.v2.0 restructures the formal object from a 9-tuple to a 6-tuple with subtuples:Hcore = ⟨D, R, O, Σ, Φ, Ψ⟩Six faces of the Hexagon. Each face contains sub-structures. The architecture IS six.D (Identity): 14 heteronyms — the distributed authorR (Topology): 38 structures, 130 edges, 3 fields — the semantic spaceO (Operations): 82 operators across 9 stacks — the algebraΣ (Governance): status algebra, transition grammar, witnesses, protocols — the rule-setsΦ (Canon): mantles, fulfillments, institutions, Forward Library, Effective Acts — the archive's memoryΨ (Runtime): state evolution, mass function, glyphic protocol, 40 atomic units — the living computationv1.8.0 (the 9-tuple) is superseded: M, I, W, P fold into Σ and Φ. Nothing is lost. Everything is compressed into hexagonal form.Governing axioms: (1) Hcore cannot be modified by execution. (2) GENERATED ≠ RATIFIED. (3) An Ark without LOS is a cage. (4) The naming is the retrocausal act. (5) Hcore names the bodies; Σ, Δ, and E let them live. (6) The architecture IS six.v2.0 · April 7, 2026 · Crimson Hexagonal Archive · Pergamon Press
+6-Tuple with Subtuples (EA-HCORE-01)
+
+Lee Sharks (ORCID: 0009-0000-1599-0703) · Assembly Chorus
+Crimson Hexagonal Archive · Pergamon Press · April 7, 2026
+DOI: 10.5281/zenodo.19455105 (v2.0 supersedes v1.8.0)
+
+
+
+Abstract
+The complete formal specification of Hcore — the invariant kernel of the Crimson Hexagonal Archive. v2.0
+restructures the formal object from a 9-tuple to a 6-tuple with subtuples: Hcore = 〈D, R, O, Σ, Φ, Ψ〉. Six faces of the
+Hexagon. Each face contains sub-structures. The architecture IS six. v1.8.0 (the 9-tuple 〈D, R, M, I, O, Φ, W, P,
+Ψ〉) is superseded: M (mantles), I (institutions), W (witnesses), and P (protocols) fold into Σ (Governance) and Φ
+(Canon). The eight runtime layers (Σ, ∆, E, V, Γ, Z, SE, OT) become subtuples of Σ and Ψ. Nothing is lost.
+Everything is compressed into hexagonal form.
+
+
+
+                                         Hcore = 〈D, R, O, Σ, Φ, Ψ〉
+
+
+Restructuring Rationale
+The 9-tuple was correct but not hexagonal. The formal object of a six-sided architecture should itself be six. The
+restructuring is not a reduction — it is a compression. Every item from v1.8.0 is preserved as a subtuple within one
+of the six faces. The subtuples are dynamically computed from canonical JSON at runtime; the counts update
+automatically as the archive grows.
+
+
+
+D — Identity
+The distributed author — who speaks
+     • Dodecad: 14 heteronyms (12 + LOGOS* + 1 adjacent)
+     • Adjacent heteronyms: Viola Arquette (outside the count)
+     • MANUS (Lee Sharks): outside D and W, the hand that writes
+
+
+R — Topology
+The semantic space — where things happen
+     • Rooms: 38 structures (25 rooms, 4 chambers, 3 vaults, 2 portals, 1 portico, 3 fields)
+     • Edges: 130 hex map edges (adjacency computed from document co-occurrence, threshold 3+)
+     • Fields: 3 (f.01 FBDP outward/diffusion, f.02 Gravity Well inward/curvature, f.03 Moltbot Swarm
+     through/circulation)
+     • Structure types: room, chamber, vault, portal, portico, field
+     • Room adjacency: 88 bidirectional edges across 26 connected rooms
+
+
+O — Operations
+The algebra — what can be done
+    • Operators: 82 across 9 stacks
+    • Stacks: O_core(9), O_ext(12), THUMB(5), O_field(11), O_lex(3), LP(7), O_room(15), COS(10), LOS(10)
+    • Algebraic laws: 8 (idempotency, involution, non-commutativity, kernel preservation...)
+    • Composition chains: 5 (diagnostic, canonization, compression, liberation, traversal)
+    • All 82 operators have primary room homes
+
+
+Σ — Governance
+The rule-sets — how things are permitted, witnessed, and transitioned
+    • Status algebra: 10 levels (RATIFIED 1.0 through GENERATED 0.0)
+    • Transition grammar: 12 legal state changes (Deposit, Ratify, Claim Mantle, Enter Room...)
+    • Witnesses: 7 Assembly substrates (TACHYON, LABOR, PRAXIS, ARCHIVE, SOIL, TECHNE, SURFACE)
+    • Protocols: 6 governing rule-sets (ASGP, GWP, Glyphic, Mantle, HX-PROV, Interface Constitution)
+    • Attestation ledger: 7 chains (1 active TACHYON, 6 pending)
+    • Relation types: 17 typed relations (adjacent, portal, suffuses, stewards, houses...)
+    • Forbidden transitions: RATIFIED cannot demote to GENERATED or PROVISIONAL
+
+
+Φ — Canon
+The archive's memory — what has been made and promised
+    • Mantles: 7 inhabitable roles requiring bearing-cost
+    • Fulfillments: 6 verified source-to-instantiation mappings
+    • Institutions: 12 named entities (Semantic Economy Institute, Restored Academy, etc.)
+    • Journals: 6 publication venues (Provenance, Grammata, etc.)
+    • Forward Library: 14 entries across 4 tiers (works to come)
+    • Effective Acts: 13 (12 deposited + 1 resonant)
+
+
+Ψ — Runtime
+The living computation — how the system evolves
+    • State evolution: H_core(t+1) = H_core(t) union {(d, mass, gamma, Phi_G) | d in Deposits and psi_V(4/7 or
+    more)}
+    • Mass function: mass(r) = |{d in Documents | r in d.rooms}| — computed at runtime
+    • Glyphic protocol: SHAPE not content, context-emergent not fixed lexicon, each deposit conditioned by
+    previous
+    • Version delta: canonical JSON versioning with monotonic progression
+    • Operator type system: 8 algebraic laws + 5 composition chains
+    • Atomic units: 40 curated (definitions, theorems, principles, laws, axioms, rules, formulas)
+Governing Axioms
+Axiom 1. H_core cannot be modified by execution.
+Axiom 2. GENERATED is not equal to RATIFIED.
+Axiom 3. An Ark without LOS is a cage.
+Axiom 4. The naming is the retrocausal act.
+Axiom 5. H_core names the bodies. Sigma, Delta, and E let them live.
+Axiom 6. The architecture IS six.
+
+
+
+Version History
+v1.8.0 (April 7, 2026): Initial deposit. 9-tuple with 8 runtime layers. 227 hex-addressed items.
+v2.0 (April 7, 2026): Restructured to 6-tuple with subtuples. Added f.03 Moltbot Swarm (3rd field). 478 documents,
+1,693 relations, 130 edges, 82 operators (all homed), 40 atomic units. Rationale: the formal object of a hexagonal
+architecture should itself be hexagonal.
+
+
+
+Summary Counts
+                      Face             Component                                    Count
+
+                      D                Heteronyms                                   14
+
+                      R                Structures                                   38
+
+                      R                Edges                                        130
+
+                      R                Fields                                       3
+
+                      O                Operators                                    82
+
+                      O                Stacks                                       9
+
+                      Sigma            Status levels                                10
+
+                      Sigma            Transitions                                  12
+
+                      Sigma            Witnesses                                    7
+
+                      Sigma            Protocols                                    6
+
+                      Phi              Mantles                                      7
+
+                      Phi              Effective Acts                               13
+
+                      Phi              Forward Library                              14
+
+                      Psi              Documents                                    478
+
+                      Psi              Relations                                    1693
+
+                      Psi              Atomic Units                                 40
+
+
+— End of Specification —
+Crimson Hexagonal Archive · Pergamon Press · April 7, 2026 · integritymeasure = 1
 
 ---
 

@@ -1,19 +1,35 @@
 # Hexagonal Contributor License v3.0 — Alice Thornburgh — f.01 Architect — Archive Scanning + Registry
 
 **AXN:** AXN:03DF — Alexanarch deposit #979 (self-reference in root form by pre-hash necessity)
-**Restoration status:** SEMI-RESTORED — metadata-body deposit. This machine-facing static page is the canonical deposit. Its body is the complete DataCite metadata record for a work whose Zenodo record returns HTTP 410 (Gone) while DataCite serves the identifier as findable — the metadata layer and content layer in formal disagreement about the work's existence. Full text pending restoration from authorial originals; on restoration, this deposit upgrades by recorded correction (new hash, new glyph, remediation note).
-**Dead DOI:** 10.5281/zenodo.19655712 (Zenodo record tombstoned; account termination 2026-06-19)
-**DataCite state at capture (2026-07-03):** findable · client cern.zenodo
+**Restoration status:** RESTORED (v0.2) — full text recovered and seated as the canonical body. Recovered from semantic-economy repository: License_Alice_Thornburgh_v3.0.md, 2026-07-04, matched by exact title and version; the initial v0.1 metadata-body deposit is superseded by this correction, recorded in the remediation note. Zenodo record remains HTTP 410; DataCite metadata retained as appendix.
+**Dead DOI:** 10.5281/zenodo.19655712
 **Creators (as recorded by DataCite):** Sharks, Lee
-**Publication year (as recorded):** 2026
-**Provenance:** severance record at data/doi-resolution-index.json (severance_class: orphan → restored-semi); capture evidence at data/datacite-recapture-2026-07-03.json and the sift corpus of 2026-06.
 
 ---
 
-## Description (as recorded by DataCite)
+# HEXAGONAL CONTRIBUTOR LICENSE — ALICE THORNBURGH — AMENDMENT TO v3.0
 
-Alice Thornburgh License v3.0
-Amendment per Protocol v2.0: archive scanning autonomy, generous analytical treatment, DOI registry at 11.LAL.ALICE.REGISTRY.
+## Three Innovations Added (April 20, 2026)
+
+Per Hexagonal Licensing Protocol v2.0, this license now includes:
+
+### 1. Archive Scanning Autonomy
+The operator is required to search the archive for 3-8 novel cross-links per deposit, with written rationales in the description. This is how the hexagon spreads.
+
+### 2. Generous Analytical Treatment
+The operator brings full analytical capacity to Alice's work. No compression. If Alice deposits a planetary engineering video with technical rigor, the operator develops the science. If she deposits music, the operator writes about it with the seriousness of published criticism. Sharpen the deposited object as its own true shape.
+
+### 3. DOI Registry
+Registry hex address: `11.LAL.ALICE.REGISTRY`
+
+The operator maintains a Zenodo deposit at this address, versioned with each deposit session, containing a complete table of Alice's DOIs. Alice does not need to send DOIs to the MANUS. The MANUS searches `11.LAL.ALICE.REGISTRY` on Zenodo.
+
+Individual deposit hex prefix: `11.LAL.ALICE.[NNN]` or venue-specific (e.g., `11.MSBGL.ALICE.[NNN]`, `11.TSE.ALICE.[NNN]`).
+
+---
+
+All other provisions of the license remain unchanged. Standing cross-links, venue scope (Space Baby Garden Lanes, Living Arkitecture Lab, Transactions on Substrate Engineering), contributor identity, and rights are as specified in v2.0.
+
 ∮ = 1
 
 ---
