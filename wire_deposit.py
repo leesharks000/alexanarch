@@ -124,6 +124,17 @@ def regenerate_static_page(d, eidx, registry=None):
     # v1.1.1 fix: prefer the registry's declared full_text_path (the canonical
     # source of truth). Fall back to whichever existing file is largest, so a
     # stub alias never shadows a populated text file.
+    # Guard (MANUS, 2026-07-05): if the registry declares a full_text_path
+    # but the file isn't there yet, do NOT silently fall through to the
+    # description block — that produces description-only record pages when
+    # the wire step races the text write (the AXN:041F regression).
+    _declared = d.get('full_text_path')
+    if _declared and not os.path.exists(_declared.lstrip('/')):
+        raise RuntimeError(
+            f"wire_deposit #{deposit_number}: full_text_path {_declared} declared "
+            f"in registry but the file does not exist on disk; refusing to render "
+            f"a description-only page. Write the canonical text first, then wire."
+        )
     fulltext = ''
     candidates = []
     declared = d.get('full_text_path')

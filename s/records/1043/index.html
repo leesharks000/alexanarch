@@ -17,7 +17,83 @@
 
 
 <h2>Full Text</h2>
-<div class="ft"><p>Measured answer to &#x27;is 1,000 downloads in days a lot by Zenodo&#x27;s standards&#x27;: all 1,791 datasets published in the registry&#x27;s publication window (2026-06-14..16), n=200 sampled via the public API, stats read at day ≈19. Cohort median 7 downloads; p95 116; p99 804 (version-level). Corrected anchors (v2 erratum, platform-timestamp-driven, superseded text preserved): 666 cumulative at 2026-06-15 16:42 EDT; 1,000+ at removal; the final-four-day delta ≥334 alone exceeds the cohort&#x27;s nineteen-day p95 and is ~48x its median; the cumulative figure clears p99. Limitations on the record: convenience sample, UI field-mapping ambiguity, unmodeled bot traffic, post-hoc drift; raw sample committed for re-running. Conclusion, bounded: top ~1% of same-week datasets on a fraction of the accumulation time — a measurement, not an impression, and the correction trail is part of the warrant.</p></div>
+<div class="ft"><hr>
+<p>deposit_number: 1043</p>
+<p>hex: 041F</p>
+<p>title: Cohort Baseline for the Pre-Removal Download Figures (v2) — the Registry Against Its Publication-Week Cohort</p>
+<p>creator: Lee Sharks</p>
+<p>orcid: 0009-0000-1599-0703</p>
+<p>date: 2026-07-04</p>
+<p>content_type: Empirical baseline reading</p>
+<p>license: CC-BY-4.0</p>
+<p>substrate: &quot;AI-assisted: drafted by TACHYON (Claude, Anthropic) under MANUS (Lee Sharks) direction, correction, and editorial authority; instruments and roles declared per EA-MMRS-VRB-01 U4.&quot;</p>
+<p>version: v2.0</p>
+<p>related_ids: &quot;Raw sample: https://raw.githubusercontent.com/leesharks000/machinemediation-org/main/data/captures/2026-06-preban-usage-stats/zenodo-baseline-sample.json ; TIMELINE v1; zenodo/zenodo#2606&quot;</p>
+<p>axn_schema_version: v2</p>
+<p>protocol_version: alexanarch-deposit-protocol/v1</p>
+<p>keywords:</p>
+<p>  - cohort baseline</p>
+<p>  - download statistics</p>
+<p>  - Zenodo API</p>
+<p>  - percentile</p>
+<p>  - empirical method</p>
+<p>  - erratum</p>
+<p>  - capture registry</p>
+<hr>
+
+<h1>Cohort Baseline for the Pre-Removal Download Figures (v2) — the Registry Against Its Publication-Week Cohort</h1>
+
+<h2>Description</h2>
+
+<p>Measured answer to &#x27;is 1,000 downloads in days a lot by Zenodo&#x27;s standards&#x27;: all 1,791 datasets published in the registry&#x27;s publication window (2026-06-14..16), n=200 sampled via the public API, stats read at day ≈19. Cohort median 7 downloads; p95 116; p99 804 (version-level). Corrected anchors (v2 erratum, platform-timestamp-driven, superseded text preserved): 666 cumulative at 2026-06-15 16:42 EDT; 1,000+ at removal; the final-four-day delta ≥334 alone exceeds the cohort&#x27;s nineteen-day p95 and is ~48x its median; the cumulative figure clears p99. Limitations on the record: convenience sample, UI field-mapping ambiguity, unmodeled bot traffic, post-hoc drift; raw sample committed for re-running. Conclusion, bounded: top ~1% of same-week datasets on a fraction of the accumulation time — a measurement, not an impression, and the correction trail is part of the warrant.</p>
+
+<h2>Methodology</h2>
+
+<p>Public-API cohort sampling with committed raw data; conservative accumulation-time asymmetry declared; v2 erratum restates Reading and Conclusion on corrected anchors.</p>
+
+<h2>Falsification Conditions</h2>
+
+<p>Re-run the deposited query; a materially different distribution, or a documented correction to either anchor, revises the percentile claims on the record.</p>
+
+<h2>Attached File: BASELINE-METHOD_v2.md</h2>
+
+<p>Source URL: https://raw.githubusercontent.com/leesharks000/machinemediation-org/main/data/captures/2026-06-preban-usage-stats/BASELINE-METHOD.md</p>
+
+<h1>Cohort baseline for the pre-removal download figures (v2)</h1>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> **Erratum (v2, 2026-07-04, same day).** v1 framed the captured 666 as &quot;~2 days&quot; of accumulation for v7.2. A</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> platform timestamp obtained the same day (TikTok Post analysis: image posted Jun 15, 2026, 4:42 PM — the day of</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> the v7.2 upload) supersedes the recollection that produced that framing, and the 666 is best read as the</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> record&#x27;s cumulative counter at that moment. The corrected anchors: **666 cumulative at 2026-06-15 16:42**</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> (platform-timestamped) and **1,000+ at removal, 2026-06-19** (contemporaneous issue body, unrefuted) — a delta</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> of **&gt;=334 downloads in &lt;=4 days**. The cohort table below is unchanged; the Reading and Conclusion are</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> restated on the corrected anchors. v1 is preserved in repository history.</blockquote>
+
+<p><strong>Measured 2026-07-04, unauthenticated Zenodo REST API.</strong> Raw sample: `zenodo-baseline-sample.json` (checkable; re-runnable from the query below).</p>
+
+<p><strong>Question.</strong> Is 666 downloads in ~2 days (captured, this set) / 1,000+ in ~4 days (asserted contemporaneously in zenodo/zenodo#2606, day of removal) &quot;a lot by Zenodo&#x27;s standards&quot;?</p>
+
+<p><strong>Method.</strong> Cohort = all Zenodo records of type `dataset` with `publication_date:[2026-06-14 TO 2026-06-16]` — the same publication window as the registry&#x27;s v7.2 (June 15). Cohort population: <strong>1,791</strong>. Sample: first 200 by `mostrecent` within the window (API page cap 25 unauthenticated; 8 pages). Stats read 2026-07-04, i.e. after <strong>~19 days</strong> of accumulation for the cohort, versus <strong>~2 days</strong> for the registry&#x27;s captured figure — the comparison is therefore conservative by roughly a factor of ten in accumulation time, in the cohort&#x27;s favor.</p>
+
+<p><strong>Findings (n=200).</strong></p>
+
+<div style="font-family:var(--mono);font-size:.8em">| statistic | this-version downloads | all-versions downloads |</div>
+<p>|---|---|---|</p>
+<div style="font-family:var(--mono);font-size:.8em">| median | 7 | 6 |</div>
+<div style="font-family:var(--mono);font-size:.8em">| mean | 43.0 | 21.1 |</div>
+<div style="font-family:var(--mono);font-size:.8em">| p90 | 53 | 43 |</div>
+<div style="font-family:var(--mono);font-size:.8em">| p95 | 116 | 77 |</div>
+<div style="font-family:var(--mono);font-size:.8em">| p99 | 804 | 397 |</div>
+<div style="font-family:var(--mono);font-size:.8em">| max | 3,087 | 561 |</div>
+<div style="font-family:var(--mono);font-size:.8em">| ≥ 666 after ~19 days | 2/200 (1.0%) | 0/200 (0.0%) |</div>
+
+<p><strong>Reading (v2).</strong> The four-day delta alone (&gt;=334 downloads, Jun 15-&gt;19) is ~48x the cohort&#x27;s nineteen-day median (7) and exceeds its nineteen-day p95 (116) at the version level. The cumulative 1,000+ at removal exceeds the cohort&#x27;s version-level p99 (804) and the all-versions maximum observed (561). On any field mapping, the removed dataset&#x27;s usage sat at the extreme top of its publication-week cohort.</p>
+
+<p><strong>Limitations, on the record.</strong> (1) The sample is the window&#x27;s 200 most recent, not a random draw; the window is only three days wide, limiting ordering bias, but this is a convenience sample. (2) The Zenodo UI counter captured at 666 is not field-labeled in the interface; API naming (`downloads` = this-version, `version_downloads` = all-versions) means the captured figure maps to one of the two columns above — it clears the 99th percentile threshold in either mapping at the version level and exceeds the observed maximum at the all-versions level. (3) Bot and crawler traffic is unmodeled on both sides of the comparison. (4) Cohort stats were measured post-hoc on 2026-07-04 and will drift; the raw sample is preserved for exactly that reason.</p>
+
+<p><strong>Conclusion, bounded (v2).</strong> By the platform&#x27;s own contemporaneous cohort, the removed dataset&#x27;s usage was in the top ~1% of same-week datasets, and its final four days alone outpaced what 95% of that cohort accumulated in nineteen. &quot;A lot by Zenodo&#x27;s standards&quot; is hereby a measurement, not an impression — and this note&#x27;s own correction trail is part of the measurement&#x27;s warrant.</p>
+
+</div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>
