@@ -85,7 +85,7 @@ def build_state() -> dict:
                     break
 
     # Capture registry
-    captures_path = ROOT / 'data' / 'EA-WG-CAPTURES-01-v8.3.json'
+    captures_path = ROOT / 'data' / 'EA-WG-CAPTURES-01-v8.11.json'
     capture_count = 0
     if captures_path.exists():
         with open(captures_path) as f:
@@ -142,7 +142,7 @@ def build_state() -> dict:
             'registry': file_info('data/registry.json'),
             'entity_index': file_info('data/entity-index.json'),
             'doi_resolution_index': file_info('data/doi-resolution-index.json'),
-            'capture_registry': file_info('data/EA-WG-CAPTURES-01-v8.3.json'),
+            'capture_registry': file_info('data/EA-WG-CAPTURES-01-v8.11.json'),
             'navigation': file_info('data/navigation.json'),
             'browse_index': file_info('data/browse-index.json'),
         },
