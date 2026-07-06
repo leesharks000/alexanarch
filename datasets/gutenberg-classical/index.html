@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gutenberg Classical — Datasets — Alexanarch</title>
+<meta name="description" content="Project Gutenberg catalog snapshot + classical-translations pilot subset. 24 canonical Victorian public-domain translations mirrored; 972 additional targets identified.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:'IBM Plex Sans',sans-serif;--mono:'IBM Plex Mono',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.7;font-size:15px}
+.wrap{max-width:900px;margin:0 auto;padding:60px 24px}
+.nav{display:flex;gap:20px;margin-bottom:30px;font-size:0.85em;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;padding-bottom:6px}
+.nav a{color:var(--dim);text-decoration:none;font-weight:500}.nav a:hover,.nav a.active{color:var(--accent)}
+a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}
+h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
+.sub{font-size:0.88em;color:var(--dim);margin-bottom:24px;line-height:1.6}
+h2{font-size:0.85em;font-weight:600;color:var(--teal);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.1em;margin-top:32px;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+h2:first-of-type{margin-top:0}
+.summary{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px 22px;margin-bottom:20px}
+.summary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin-top:14px}
+.stat{font-family:var(--mono)}
+.stat-num{font-size:1.4em;font-weight:600;color:var(--accent2)}
+.stat-lab{font-size:0.75em;color:var(--dim);text-transform:uppercase;letter-spacing:0.05em}
+.pilot-table{width:100%;border-collapse:collapse;font-size:0.85em;background:var(--surface);border:1px solid var(--border);border-radius:6px;overflow:hidden}
+.pilot-table th{background:#f0f4f8;text-align:left;padding:8px 12px;font-weight:600;color:var(--accent);font-family:var(--mono);font-size:0.78em;text-transform:uppercase;letter-spacing:0.05em}
+.pilot-table td{padding:8px 12px;border-top:1px solid #f0f0f0;vertical-align:top}
+.pilot-table td.mono{font-family:var(--mono);color:var(--dim);font-size:0.85em;white-space:nowrap}
+.pilot-table td.sha{font-family:var(--mono);color:#aaa;font-size:0.72em}
+.filter-controls{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:12px 16px;margin-bottom:14px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;font-size:0.85em}
+.filter-controls input,.filter-controls select{font-family:var(--sans);padding:5px 10px;border:1px solid var(--border);border-radius:4px;font-size:0.9em}
+.filter-controls input{flex:1;min-width:180px}
+.identified-list{font-family:var(--mono);font-size:0.82em;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:10px 14px;max-height:600px;overflow-y:auto}
+.item{padding:6px 4px;border-bottom:1px solid #f0f0f0;display:grid;grid-template-columns:60px 1fr auto;gap:12px;align-items:baseline}
+.item:last-child{border-bottom:none}
+.item-id{color:var(--dim)}
+.item-title{color:var(--fg)}
+.item-bucket{color:var(--teal);font-size:0.82em}
+.count-note{text-align:right;font-size:0.78em;color:var(--dim);font-family:var(--mono);margin-top:8px}
+.footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--border);font-size:0.78em;color:var(--dim)}
+code{font-family:var(--mono);background:#f0f4f8;padding:1px 5px;border-radius:3px;font-size:0.9em}
+</style>
+</head>
+<body>
+<div class="wrap">
+<!-- NAV-START -->
+<nav class="nav"> <a href="/">Alexanarch</a> <a href="/s/browse/">Browse</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <a href="/observatory/">Observatory</a> <a href="/captures/">Captures</a> <a href="/book/">Book</a> <a href="/resolve/">Resolve</a> <a href="/addresses/">Addresses</a> <a href="/datasets/" class="active">Datasets</a> <a href="/principles/">Principles</a> <a href="/identifiers/">Identifiers</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
+<!-- NAV-END -->
+
+<h1>Gutenberg Classical</h1>
+<p class="sub">
+Project Gutenberg catalog snapshot + a pilot mirror of canonical Victorian and Edwardian public-domain translations of classical works. Coverage beyond Perseus: Chapman's Homer, Longfellow's Dante, Ormsby's Cervantes, Rawlinson's Herodotus, Jowett's Thucydides, and the Beowulf translations that don't sit in classicist canonical repos.
+</p>
+
+<div class="summary">
+<h2 style="margin-top:0">Snapshot summary</h2>
+<div class="summary-grid">
+<div class="stat"><div class="stat-num">90,252</div><div class="stat-lab">catalog rows</div></div>
+<div class="stat"><div class="stat-num">972</div><div class="stat-lab">identified targets</div></div>
+<div class="stat"><div class="stat-num">24</div><div class="stat-lab">pilot mirrored</div></div>
+<div class="stat"><div class="stat-num">~14 MB</div><div class="stat-lab">pilot bytes</div></div>
+</div>
+</div>
+
+<h2>Pilot subset (mirrored)</h2>
+<p style="font-size:0.85em;color:var(--dim);margin-bottom:12px">24 canonical Victorian public-domain translations fetched at 1 req/s with identifying User-Agent. Full byte-preservation in data-rhizome; alexanarch surfaces the manifest and per-file SHAs.</p>
+
+<div id="pilot-container" style="overflow-x:auto">
+<div style="text-align:center;color:var(--dim);padding:24px">loading pilot manifest…</div>
+</div>
+
+<h2>Identified but not yet mirrored (972 texts)</h2>
+<p style="font-size:0.85em;color:var(--dim);margin-bottom:12px">Targets matched from the Gutenberg catalog by author-name substring across 35 canonical-author buckets. Some false positives expected (name collisions on authors like "Horace"); the pilot subset above is manually curated. This list is the to-do surface for the broader batch.</p>
+
+<div class="filter-controls">
+<input type="text" id="filter" placeholder="Filter by title, author, bucket, or Gutenberg ID..." oninput="applyFilter()">
+<select id="bucket" onchange="applyFilter()">
+<option value="all">All buckets</option>
+</select>
+<select id="lang" onchange="applyFilter()">
+<option value="all">All languages</option>
+</select>
+</div>
+
+<div id="identified-container" class="identified-list">
+<div style="text-align:center;color:var(--dim);padding:24px">loading identified list…</div>
+</div>
+<div id="count-note" class="count-note"></div>
+
+<h2>Catalog snapshot</h2>
+<p style="font-size:0.88em;color:#333;line-height:1.7">
+The full Gutenberg catalog (<code>pg_catalog.csv.gz</code>, 5.5 MB, 90,252 rows, updated daily by Gutenberg) is preserved in data-rhizome at <code>datasets/corpora/gutenberg/snapshots/2026-07-06/</code>. Schema: <code>Text#, Type, Issued, Title, Language, Authors, Subjects, LoCC, Bookshelves</code>. SHA-256: <code>6c80446b74d750e4</code>…
+</p>
+
+<h2>Fetch protocol</h2>
+<p style="font-size:0.88em;color:#333;line-height:1.7">
+Individual texts fetched from <code>https://www.gutenberg.org/cache/epub/{id}/pg{id}.txt.utf8</code> (primary) or <code>https://www.gutenberg.org/files/{id}/{id}-0.txt</code> (fallback), at 1 request per second, with User-Agent <code>Alexanarch-corpus-mirror/1.0 (research)</code>. Every fetched file's SHA-256 is recorded in <code>classical/MANIFEST.json</code> alongside its source URL for verification.
+</p>
+
+<h2>Substrate</h2>
+<p style="font-size:0.88em;color:#333;line-height:1.7">
+Bytes preserved in <code>data-rhizome/datasets/corpora/gutenberg/</code>. This landing page surfaces the manifests and indexes; the .txt content itself is not mirrored here to keep alexanarch lightweight. Full corpus re-fetchable from the recorded source URLs, verifiable against the recorded SHAs.
+</p>
+
+<h2>Source</h2>
+<p style="font-size:0.88em;color:#333;line-height:1.7">
+<a href="https://www.gutenberg.org/">Project Gutenberg</a> · Catalog: <a href="https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz">pg_catalog.csv.gz</a><br>
+License: Gutenberg content is public domain (per U.S. copyright status at time of Gutenberg release).
+</p>
+
+<div class="footer">
+Snapshot 2026-07-06 · data-rhizome commit <code>288f882d</code> · Gutenberg catalog updated daily; re-mirror periodically.
+</div>
+
+</div>
+
+<script>
+let ALL_ITEMS = [];
+
+async function loadPilot() {
+  try {
+    const r = await fetch('pilot-manifest.json');
+    const m = await r.json();
+    const rows = m.texts.map(t => `
+      <tr>
+        <td class="mono">#${t.gutenberg_id}</td>
+        <td>${escapeHtml(t.name_hint.replace(/_/g, ' '))}</td>
+        <td class="mono">${(t.bytes/1024).toFixed(0)} KB</td>
+        <td class="sha" title="${t.sha256}">${t.sha256.substr(0,12)}…</td>
+        <td><a href="${t.source_url}" target="_blank">source</a></td>
+      </tr>
+    `).join('');
+    document.getElementById('pilot-container').innerHTML = `
+      <table class="pilot-table">
+        <thead><tr><th>ID</th><th>Translation</th><th>Size</th><th>SHA-256</th><th></th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>`;
+  } catch (e) {
+    document.getElementById('pilot-container').innerHTML = '<div style="color:var(--dim)">could not load pilot manifest</div>';
+  }
+}
+
+async function loadIdentified() {
+  try {
+    const r = await fetch('identified.jsonl');
+    const text = await r.text();
+    ALL_ITEMS = text.split('\n').filter(l => l.trim()).map(l => JSON.parse(l));
+    // populate bucket dropdown
+    const buckets = [...new Set(ALL_ITEMS.map(i => i.target_author_bucket))].sort();
+    const bucketSel = document.getElementById('bucket');
+    buckets.forEach(b => {
+      const o = document.createElement('option');
+      o.value = b;
+      o.textContent = b;
+      bucketSel.appendChild(o);
+    });
+    // populate lang dropdown
+    const langs = [...new Set(ALL_ITEMS.map(i => i.language))].sort();
+    const langSel = document.getElementById('lang');
+    langs.forEach(l => {
+      const o = document.createElement('option');
+      o.value = l;
+      o.textContent = l;
+      langSel.appendChild(o);
+    });
+    applyFilter();
+  } catch (e) {
+    document.getElementById('identified-container').innerHTML = '<div style="color:var(--dim)">could not load identified list</div>';
+  }
+}
+
+function applyFilter() {
+  const f = document.getElementById('filter').value.toLowerCase();
+  const b = document.getElementById('bucket').value;
+  const l = document.getElementById('lang').value;
+  const filtered = ALL_ITEMS.filter(i => {
+    if (b !== 'all' && i.target_author_bucket !== b) return false;
+    if (l !== 'all' && i.language !== l) return false;
+    if (f) {
+      const s = `${i.title} ${i.author} ${i.gutenberg_id} ${i.target_author_bucket}`.toLowerCase();
+      if (!s.includes(f)) return false;
+    }
+    return true;
+  });
+  const container = document.getElementById('identified-container');
+  const countNote = document.getElementById('count-note');
+  if (filtered.length === 0) {
+    container.innerHTML = '<div style="text-align:center;color:var(--dim);padding:24px">no matches</div>';
+    countNote.textContent = '';
+    return;
+  }
+  const display = filtered.slice(0, 200);
+  container.innerHTML = display.map(i => `
+    <div class="item">
+      <span class="item-id">#${i.gutenberg_id}</span>
+      <span class="item-title">${escapeHtml(i.title)} <span style="color:var(--dim);font-size:0.85em">— ${escapeHtml(i.author || '')} [${i.language}]</span></span>
+      <span class="item-bucket">${escapeHtml(i.target_author_bucket)}</span>
+    </div>
+  `).join('');
+  countNote.textContent = `showing ${display.length} of ${filtered.length} matched (of ${ALL_ITEMS.length} identified)`;
+}
+
+function escapeHtml(s) {
+  const d = document.createElement('div');
+  d.textContent = s || '';
+  return d.innerHTML;
+}
+
+loadPilot();
+loadIdentified();
+</script>
+</body>
+</html>

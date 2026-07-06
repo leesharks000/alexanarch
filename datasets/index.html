@@ -336,6 +336,41 @@ h2:first-of-type{margin-top:0}
 </div>
 
 <!-- ─────────────────────────────────────────────────────────── -->
+<h2>External corpora</h2>
+<p class="section-intro">Public-domain literary corpora mirrored for the L1/L2 transform pipeline. Source-of-truth bytes preserved in data-rhizome; alexanarch surfaces the indexes and browseable landing pages.</p>
+
+<div class="ds">
+  <div class="ds-head">
+    <span class="ds-name">datasets/perseus-classical/</span>
+    <span class="ds-meta">804 KB &middot; <strong>1,161</strong> works &middot; <strong>764</strong> aligned</span>
+  </div>
+  <div class="ds-desc">Mirror of PerseusDL canonical TEI-XML: <strong>canonical-greekLit</strong> (100 authors, 826 works, 648 with English translation), <strong>canonical-latinLit</strong> (54 authors, 334 works, 115 English), <strong>canonical-farsiLit</strong> (Hafez <em>Divan</em> with Persian/English/German). Every work addressable by canonical URN — e.g. Homer's <em>Iliad</em> is <code>urn:cts:greekLit:tlg0012.tlg001.perseus-grc2</code> (Greek) with Murray 1924 (<code>perseus-eng3</code>) and Butler 1898 (<code>perseus-eng4</code>) in the same directory.</div>
+  <div class="ds-row"><strong>Substrate:</strong> data-rhizome/datasets/corpora/perseus/ (474 MB, snapshot 2026-07-06, tarball SHAs in MANIFEST.json)</div>
+  <div class="ds-row"><strong>Purpose:</strong> aligned substrate for L1 (source→clarity translation) and L2 (voice restoration) transform pipeline</div>
+  <div class="ds-actions">
+    <a href="/datasets/perseus-classical/">Browse works</a>
+    <a href="/datasets/perseus-classical/canonical-greekLit.jsonl">Greek index (jsonl)</a>
+    <a href="/datasets/perseus-classical/canonical-latinLit.jsonl">Latin index (jsonl)</a>
+    <a href="/datasets/perseus-classical/canonical-farsiLit.jsonl">Farsi index (jsonl)</a>
+  </div>
+</div>
+
+<div class="ds">
+  <div class="ds-head">
+    <span class="ds-name">datasets/gutenberg-classical/</span>
+    <span class="ds-meta">272 KB &middot; <strong>972</strong> identified &middot; <strong>24</strong> mirrored</span>
+  </div>
+  <div class="ds-desc">Project Gutenberg catalog snapshot (90,252 rows) plus a pilot of 24 canonical Victorian public-domain translations: Chapman &amp; Butler Homer, Dryden Vergil, Longfellow Dante, Jowett Plato/Thucydides, Rawlinson Herodotus, Ormsby &amp; Motteux Cervantes, Gummere &amp; Hall Beowulf, Marcus Aurelius, and others. 972 additional target texts identified in the catalog but not yet fetched.</div>
+  <div class="ds-row"><strong>Substrate:</strong> data-rhizome/datasets/corpora/gutenberg/ (20 MB, snapshot 2026-07-06, per-file SHAs in classical/MANIFEST.json)</div>
+  <div class="ds-row"><strong>Purpose:</strong> coverage beyond Perseus — alternative translations and canonical works Perseus doesn't index (Beowulf, Cervantes, Marcus Aurelius, etc.)</div>
+  <div class="ds-actions">
+    <a href="/datasets/gutenberg-classical/">Browse pilot &amp; identified</a>
+    <a href="/datasets/gutenberg-classical/pilot-manifest.json">Pilot manifest</a>
+    <a href="/datasets/gutenberg-classical/identified.jsonl">Identified index (jsonl)</a>
+  </div>
+</div>
+
+<!-- ─────────────────────────────────────────────────────────── -->
 <h2>Per-deposit text bodies</h2>
 <p class="section-intro">Every deposit's canonical text is stored at <span class="kbd">data/texts/AXN-&lt;HEX&gt;-text.md</span>. The hex maps via the registry's <code>hex</code> field to a canonical deposit_number. Body SHA-256 anchors each text into the AXN.</p>
 
