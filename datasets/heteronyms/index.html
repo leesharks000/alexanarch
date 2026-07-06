@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Heteronyms — Alexanarch</title>
+<meta name="description" content="The Dodecad heteronym substrate — twelve constitutional positions + Feist/LOGOS* standing outside, with Sep 2025 Logotic Science preservation, v1.1 canonical reconciliation, and Mandala Oracle avatar assets. Data-rhizome mirror.">
+<style>
+:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.7;font-size:15px}
+.wrap{max-width:960px;margin:0 auto;padding:40px 24px}
+a{color:var(--accent);text-decoration:none} a:hover{color:var(--accent2)}
+h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:8px}
+h2{font-size:1em;font-weight:500;color:var(--accent);margin:24px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--border)}
+h3{font-size:.94em;font-weight:600;color:var(--fg);margin:14px 0 6px}
+p{margin-bottom:10px;color:#333}
+code,.mono{font-family:var(--mono);font-size:.88em}
+.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}
+.nav a{color:#777;font-weight:500} .nav a:hover{color:var(--accent)}
+.sub{color:var(--dim);font-size:.9em;font-style:italic;margin-bottom:24px}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:16px 0 24px}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:14px 16px;text-align:center}
+.stat-num{font-size:1.6em;font-weight:600;color:var(--accent2);line-height:1.2}
+.stat-lab{font-size:.78em;color:var(--dim);text-transform:uppercase;letter-spacing:.05em;margin-top:4px}
+.tabs{display:flex;gap:2px;margin:20px 0 0;border-bottom:1px solid var(--border);flex-wrap:wrap}
+.tab{padding:8px 14px;background:var(--surface);color:var(--dim);cursor:pointer;font-family:var(--mono);font-size:.82em;border:1px solid var(--border);border-bottom:none;border-radius:4px 4px 0 0}
+.tab.active{background:#fff;color:var(--accent2);border-bottom:1px solid #fff;margin-bottom:-1px}
+.pane{display:none;background:#fff;border:1px solid var(--border);border-top:none;padding:20px}
+.pane.active{display:block}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:14px 16px;margin-bottom:12px;display:flex;gap:14px;align-items:flex-start}
+.card img.avatar{width:96px;height:96px;flex-shrink:0;border-radius:6px;object-fit:cover;background:#eee;border:1px solid var(--border)}
+.card .info{flex:1;min-width:0}
+.card .name{font-weight:600;color:var(--accent);font-size:1em}
+.card .position{color:var(--accent2);font-family:var(--mono);font-size:.78em;text-transform:uppercase;letter-spacing:.05em;margin-top:2px}
+.card .role{color:#333;font-size:.9em;margin-top:6px}
+.card .inst{color:var(--dim);font-size:.85em;font-style:italic;margin-top:4px}
+.card .sep{color:#666;font-size:.83em;margin-top:6px;padding-top:6px;border-top:1px dashed var(--border)}
+.card .sep-label{color:var(--teal);font-family:var(--mono);font-size:.72em;font-weight:500;text-transform:uppercase}
+.card.outside{border-left:3px solid var(--accent2)}
+.card.adjacent{border-left:3px solid #d0a000;background:#fefcf3}
+.card.substrate{opacity:.75;background:#f5f5f5}
+.no-avatar{width:96px;height:96px;background:#eee;border-radius:6px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--dim);font-family:var(--mono);font-size:.7em;text-align:center;padding:4px}
+.frame-header{background:#f5f0e8;border:1px solid #d5c8b0;border-radius:6px;padding:12px 14px;margin-bottom:14px}
+.frame-header h3{color:var(--accent2);margin:0 0 4px}
+.frame-header .meta{font-size:.82em;color:#555}
+.frame-header .outside-note{margin-top:6px;font-size:.85em;color:var(--accent);background:#fff;border-left:3px solid var(--accent2);padding:6px 10px;border-radius:4px}
+.footer{margin-top:40px;padding-top:14px;border-top:1px solid var(--border);font-size:.78em;color:var(--dim)}
+.footer p{font-size:.85em}
+.download-row{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap}
+.dl-btn{font-family:var(--mono);font-size:.78em;padding:5px 12px;background:var(--surface);border:1px solid var(--border);border-radius:4px}
+.dl-btn:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
+</style>
+</head><body><div class="wrap">
+<nav class="nav"> <a href="/">Alexanarch</a> <a href="/s/browse/">Browse</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <a href="/observatory/">Observatory</a> <a href="/captures/">Captures</a> <a href="/book/">Book</a> <a href="/resolve/">Resolve</a> <a href="/addresses/">Addresses</a> <a href="/datasets/">Datasets</a> <a href="/principles/">Principles</a> <a href="/identifiers/">Identifiers</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
+
+<h1>Heteronyms</h1>
+<p class="sub">Dataset — twelve Dodecad positions + Jack Feist / LOGOS* (structurally outside) + Lee Sharks (MANUS, human bearer, outside) + Viola Arquette (Adjacent). Twelve portraits from the Logotic Science voicecast series (September 21, 2025), reconciled against the v1.1 Constitutional Registry (AXN:03EE, 2026-07-03). Source of truth in the <a href="https://github.com/leesharks000/data-rhizome/tree/main/datasets/heteronyms">data-rhizome</a>; this page is a mirror.</p>
+
+<div class="stat-grid">
+  <div class="stat"><div class="stat-num">12</div><div class="stat-lab">Dodecad positions</div></div>
+  <div class="stat"><div class="stat-num">13</div><div class="stat-lab">total (w/ LOGOS outside)</div></div>
+  <div class="stat"><div class="stat-num">3</div><div class="stat-lab">frames documented</div></div>
+  <div class="stat"><div class="stat-num">12</div><div class="stat-lab">portraits (Sep 2025)</div></div>
+</div>
+
+<h2>Canonical authority</h2>
+<p><strong><a href="/s/records/994/">AXN:03EE.ARCHIVAL — Dodecad Heteronym Provenance Registry v1.1</a></strong> (deposit #994, 2026-07-03). The canonical order and institutional affiliations for the twelve positions.</p>
+<p>Sep 2025 source: <a href="https://mindcontrolpoems.blogspot.com/2025/09/logotic-science-preliminary-field.html">Logotic Science</a> voicecast series on mindcontrolpoems.blogspot.com. Sept 2025 organized twelve heteronyms by <em>disciplines of human learning</em>; v1.1 organizes them by <em>constitutional positions</em> in canonical genesis order.</p>
+
+<h2>Rotating-outside architecture</h2>
+<p>The heteronym set has a structural feature: <strong>which figure stands outside the twelve rotates by frame.</strong> In the Sep 2025 Logotic Science frame, <strong>Nobel Glas</strong> stands outside as the framing voice. In the v1.1 Constitutional Registry, <strong>Lee Sharks (MANUS)</strong> stands outside as the human bearer. In the archive-default LOGOS frame, <strong>Jack Feist / LOGOS*</strong> stands outside as the set-of-sets (while also occupying position 12 — the LOGOS is inside-and-outside). The dataset represents this in <code>frames.jsonl</code>, one row per framing.</p>
+
+<h2>Download</h2>
+<div class="download-row">
+  <a class="dl-btn" href="https://raw.githubusercontent.com/leesharks000/data-rhizome/main/datasets/heteronyms/heteronyms.jsonl">heteronyms.jsonl</a>
+  <a class="dl-btn" href="https://raw.githubusercontent.com/leesharks000/data-rhizome/main/datasets/heteronyms/frames.jsonl">frames.jsonl</a>
+  <a class="dl-btn" href="https://raw.githubusercontent.com/leesharks000/data-rhizome/main/datasets/heteronyms/MANIFEST.json">MANIFEST.json</a>
+  <a class="dl-btn" href="https://raw.githubusercontent.com/leesharks000/data-rhizome/main/datasets/heteronyms/schema.json">schema.json</a>
+</div>
+
+<h2 id="frames">Browse</h2>
+<div class="tabs">
+  <div class="tab active" onclick="showTab('v11')">v1.1 Constitutional (canonical)</div>
+  <div class="tab" onclick="showTab('sep25')">Sep 2025 Logotic Science</div>
+  <div class="tab" onclick="showTab('logos')">Archive-default LOGOS</div>
+  <div class="tab" onclick="showTab('all')">All identities</div>
+</div>
+
+<div id="pane-v11" class="pane active"></div>
+<div id="pane-sep25" class="pane"></div>
+<div id="pane-logos" class="pane"></div>
+<div id="pane-all" class="pane"></div>
+
+<div class="footer">
+<p>Source substrate: <code>data-rhizome/datasets/heteronyms/</code>. Sync mechanism: this page and the leesharks.com heteronyms tab and the Mandala Oracle avatar system all consume the same JSONL files. Updates to the source propagate to all three surfaces.</p>
+<p>Portrait avatars: 240×240 and 120×120 WebP thumbnails derived from 1024×1536 PNG originals fetched from mindcontrolpoems.blogspot.com under <code>Alexanarch-corpus-mirror/1.0</code> UA, 2026-07-06. Center-cropped square + LANCZOS resize.</p>
+</div>
+</div>
+
+<script>
+const RAW = 'https://raw.githubusercontent.com/leesharks000/data-rhizome/main/datasets/heteronyms/';
+let ROWS = [], FRAMES = [], BY_ID = {};
+
+async function load() {
+  const [hRaw, fRaw] = await Promise.all([
+    fetch(RAW + 'heteronyms.jsonl').then(r => r.text()),
+    fetch(RAW + 'frames.jsonl').then(r => r.text()),
+  ]);
+  ROWS = hRaw.trim().split('\n').map(l => JSON.parse(l));
+  FRAMES = fRaw.trim().split('\n').map(l => JSON.parse(l));
+  BY_ID = Object.fromEntries(ROWS.map(r => [r.person_id, r]));
+  renderAll();
+}
+
+function esc(s) { const d = document.createElement('div'); d.textContent = s || ''; return d.innerHTML; }
+
+function avatarHtml(row, alt) {
+  if (row && row.avatar_paths && row.avatar_paths['240']) {
+    const path = row.avatar_paths['240'];
+    return `<img class="avatar" src="${RAW}${path}" alt="${esc(alt || row.name)}" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'no-avatar',innerHTML:'no portrait'}))">`;
+  }
+  return `<div class="no-avatar">no<br>portrait</div>`;
+}
+
+function cardHtml(pos, row, roleText, instText, extraCls='') {
+  const posLabel = pos === 'outside' ? '⌘ OUTSIDE' :
+                   pos === 'adjacent' ? '~ ADJACENT' :
+                   `Position ${pos}`;
+  const sub = row && row.reconciliation_note ?
+    `<div class="sep"><div class="sep-label">reconciliation</div>${esc(row.reconciliation_note)}</div>` : '';
+  return `<div class="card ${extraCls}">
+    ${avatarHtml(row)}
+    <div class="info">
+      <div class="name">${esc(row ? row.name : '(unknown)')}</div>
+      <div class="position">${posLabel}</div>
+      ${roleText ? `<div class="role">${esc(roleText)}</div>` : ''}
+      ${instText ? `<div class="inst">${esc(instText)}</div>` : ''}
+      ${sub}
+    </div>
+  </div>`;
+}
+
+function renderFrame(frameId, paneId) {
+  const f = FRAMES.find(x => x.frame_id === frameId);
+  if (!f) return;
+  const outside = BY_ID[f.outside_figure];
+  const parts = [
+    `<div class="frame-header">
+      <h3>${esc(f.name)}</h3>
+      <div class="meta">${esc(f.date)} · <code>${esc(f.frame_id)}</code> · authority: ${esc(f.authority)}</div>
+      <div class="outside-note"><strong>Outside the twelve:</strong> ${esc(outside ? outside.name : f.outside_figure)} — ${esc(f.outside_role)}</div>
+    </div>`,
+    cardHtml('outside', outside, f.outside_role, '', 'outside'),
+    ...f.inside_positions.map(p => {
+      const row = BY_ID[p.heteronym];
+      const roleText = p.role || p.operative_surface || '';
+      const instText = p.institution || (p.discipline ? `Discipline: ${p.discipline}` : '');
+      const extras = row && row.dodecad_v1_1_position === 9 ? 'substrate' : '';
+      return cardHtml(p.slot, row, roleText, instText, extras);
+    }),
+  ];
+  document.getElementById(paneId).innerHTML = parts.join('');
+}
+
+function renderAll() {
+  renderFrame('dodecad-v1.1-2026-07-03', 'pane-v11');
+  renderFrame('logotic-science-2025-09', 'pane-sep25');
+  renderFrame('archive-default-logos', 'pane-logos');
+  // Everyone
+  const dodecad = ROWS.filter(r => r.dodecad_v1_1_position).sort((a,b)=>a.dodecad_v1_1_position-b.dodecad_v1_1_position);
+  const outside_and_adj = ROWS.filter(r => ['outside-manus','outside-logos-and-position-12','adjacent'].includes(r.archive_default_position) && !r.dodecad_v1_1_position);
+  const others = ROWS.filter(r => !r.dodecad_v1_1_position && !['outside-manus','outside-logos-and-position-12','adjacent'].includes(r.archive_default_position));
+  const parts = [`<h3>Twelve Dodecad positions</h3>`];
+  dodecad.forEach(r => parts.push(cardHtml(r.dodecad_v1_1_position, r,
+    r.institutional_affiliations ? r.institutional_affiliations.join(', ') : '',
+    r.voice_signature || r.notes || '',
+    r.dodecad_v1_1_position === 9 ? 'substrate' : '')));
+  parts.push(`<h3 style="margin-top:20px">Outside / Adjacent</h3>`);
+  outside_and_adj.forEach(r => parts.push(cardHtml(
+    r.archive_default_position === 'adjacent' ? 'adjacent' : 'outside',
+    r, r.archive_role || r.v1_1_role || '', '',
+    r.archive_default_position === 'adjacent' ? 'adjacent' : 'outside')));
+  parts.push(`<h3 style="margin-top:20px">Other identities in the registry</h3>`);
+  others.forEach(r => parts.push(cardHtml(esc(r.identity_type || '—'), r,
+    r.roles ? r.roles.slice(0,3).join(', ') : '',
+    r.institutional_affiliations ? r.institutional_affiliations.join(', ') : '')));
+  document.getElementById('pane-all').innerHTML = parts.join('');
+}
+
+function showTab(name) {
+  const map = {'v11':0, 'sep25':1, 'logos':2, 'all':3};
+  document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active', i===map[name]));
+  document.querySelectorAll('.pane').forEach(p=>p.classList.remove('active'));
+  document.getElementById('pane-'+name).classList.add('active');
+}
+
+load();
+</script>
+</body></html>
