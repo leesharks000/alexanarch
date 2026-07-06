@@ -58,23 +58,28 @@ Project Gutenberg catalog snapshot + a pilot mirror of canonical Victorian and E
 <div class="summary-grid">
 <div class="stat"><div class="stat-num">90,252</div><div class="stat-lab">catalog rows</div></div>
 <div class="stat"><div class="stat-num">972</div><div class="stat-lab">identified targets</div></div>
-<div class="stat"><div class="stat-num">24</div><div class="stat-lab">pilot mirrored</div></div>
-<div class="stat"><div class="stat-num">~14 MB</div><div class="stat-lab">pilot bytes</div></div>
+<div class="stat"><div class="stat-num">640</div><div class="stat-lab">curated</div></div>
+<div class="stat"><div class="stat-num">206</div><div class="stat-lab">mirrored</div></div>
+<div class="stat"><div class="stat-num">~97 MB</div><div class="stat-lab">bytes</div></div>
 </div>
 </div>
 
 <h2>Pilot subset (mirrored)</h2>
-<p style="font-size:0.85em;color:var(--dim);margin-bottom:12px">24 canonical Victorian public-domain translations fetched at 1 req/s with identifying User-Agent. Full byte-preservation in data-rhizome; alexanarch surfaces the manifest and per-file SHAs.</p>
+<p style="font-size:0.85em;color:var(--dim);margin-bottom:12px">206 canonical public-domain classical translations fetched at 1 req/s with identifying User-Agent. Full byte-preservation in data-rhizome; alexanarch surfaces the manifest and per-file SHAs.</p>
 
 <div id="pilot-container" style="overflow-x:auto">
 <div style="text-align:center;color:var(--dim);padding:24px">loading pilot manifest…</div>
 </div>
 
-<h2>Identified but not yet mirrored (972 texts)</h2>
-<p style="font-size:0.85em;color:var(--dim);margin-bottom:12px">Targets matched from the Gutenberg catalog by author-name substring across 35 canonical-author buckets. Some false positives expected (name collisions on authors like "Horace"); the pilot subset above is manually curated. This list is the to-do surface for the broader batch.</p>
+<h2>Broader identified set (972 raw / 640 curated / 206 mirrored)</h2>
+<p style="font-size:0.85em;color:var(--dim);margin-bottom:12px">Targets matched from the Gutenberg catalog by author-name substring across 35 canonical-author buckets. The <code>identified.jsonl</code> is the raw match set (972 items, includes false positives). The <code>curated.jsonl</code> applies canonical-author matchers to strip name collisions (640 items). The 206 currently mirrored are the top-N per bucket from the curated set; the remaining ~434 curated targets are queued for future batches.</p>
 
 <div class="filter-controls">
 <input type="text" id="filter" placeholder="Filter by title, author, bucket, or Gutenberg ID..." oninput="applyFilter()">
+<select id="dataset" onchange="loadIdentified()">
+<option value="identified.jsonl">Raw identified (972)</option>
+<option value="curated.jsonl">Curated (640)</option>
+</select>
 <select id="bucket" onchange="applyFilter()">
 <option value="all">All buckets</option>
 </select>
@@ -143,12 +148,16 @@ async function loadPilot() {
 
 async function loadIdentified() {
   try {
-    const r = await fetch('identified.jsonl');
+    const which = document.getElementById('dataset') ? document.getElementById('dataset').value : 'identified.jsonl';
+    const r = await fetch(which);
     const text = await r.text();
     ALL_ITEMS = text.split('\n').filter(l => l.trim()).map(l => JSON.parse(l));
-    // populate bucket dropdown
-    const buckets = [...new Set(ALL_ITEMS.map(i => i.target_author_bucket))].sort();
+    // populate bucket dropdown (reset first for idempotency)
     const bucketSel = document.getElementById('bucket');
+    while (bucketSel.options.length > 1) bucketSel.remove(1);
+    const langSelReset = document.getElementById('lang');
+    while (langSelReset.options.length > 1) langSelReset.remove(1);
+    const buckets = [...new Set(ALL_ITEMS.map(i => i.target_author_bucket))].sort();
     buckets.forEach(b => {
       const o = document.createElement('option');
       o.value = b;
