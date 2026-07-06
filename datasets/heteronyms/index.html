@@ -72,10 +72,12 @@ code,.mono{font-family:var(--mono);font-size:.88em}
 
 <h2>Download</h2>
 <div class="download-row">
-  <a class="dl-btn" href="https://raw.githubusercontent.com/leesharks000/data-rhizome/main/datasets/heteronyms/heteronyms.jsonl">heteronyms.jsonl</a>
-  <a class="dl-btn" href="https://raw.githubusercontent.com/leesharks000/data-rhizome/main/datasets/heteronyms/frames.jsonl">frames.jsonl</a>
-  <a class="dl-btn" href="https://raw.githubusercontent.com/leesharks000/data-rhizome/main/datasets/heteronyms/MANIFEST.json">MANIFEST.json</a>
-  <a class="dl-btn" href="https://raw.githubusercontent.com/leesharks000/data-rhizome/main/datasets/heteronyms/schema.json">schema.json</a>
+  <a class="dl-btn" href="./heteronyms.jsonl">heteronyms.jsonl</a>
+  <a class="dl-btn" href="./frames.jsonl">frames.jsonl</a>
+  <a class="dl-btn" href="./MANIFEST.json">MANIFEST.json</a>
+  <a class="dl-btn" href="./schema.json">schema.json</a>
+  <a class="dl-btn" href="./mapping.json">mapping.json</a>
+  <a class="dl-btn" href="./reconciliation/">reconciliation notes</a>
 </div>
 
 <h2 id="frames">Browse</h2>
@@ -98,7 +100,7 @@ code,.mono{font-family:var(--mono);font-size:.88em}
 </div>
 
 <script>
-const RAW = 'https://raw.githubusercontent.com/leesharks000/data-rhizome/main/datasets/heteronyms/';
+const RAW = './';
 let ROWS = [], FRAMES = [], BY_ID = {};
 
 async function load() {

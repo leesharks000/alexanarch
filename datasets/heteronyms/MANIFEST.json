@@ -1,0 +1,196 @@
+{
+  "schema_version": "v1.1",
+  "built_at": "2026-07-06",
+  "description": "Heteronym substrate — 13 heteronyms (twelve Dodecad positions + Feist/LOGOS* standing outside; Lee Sharks/MANUS as human bearer; Viola Arquette Adjacent) with frame-based rotating-outside architecture, Sep 2025 preservation, v1.1 canonical reconciliation, and Mandala Oracle avatar assets.",
+  "structural_principle": "The heteronym set comprises twelve Dodecad positions plus Feist/LOGOS* as the archive-default outside. Different frames rotate different figures to the outside position: Sep 2025 Logotic Science places Nobel Glas outside; v1.1 Constitutional Registry places Lee Sharks (MANUS) outside; the archive-default LOGOS frame places Feist outside. See frames.jsonl.",
+  "authority": {
+    "canonical_current": "AXN:03EE.ARCHIVAL — Dodecad Heteronym Provenance Registry v1.1 (Alexanarch deposit #994, 2026-07-03)",
+    "canonical_url": "https://www.alexanarch.org/s/records/994/",
+    "sep_2025_source": "mindcontrolpoems.blogspot.com/2025/09/ — Logotic Science voicecast series"
+  },
+  "files": {
+    "heteronyms.jsonl": "one row per identity (26 rows: 13 Dodecad/LOGOS/MANUS-related + institutional persona + external heteronyms + machine collaborator mantles). Each Dodecad row has dodecad_v1_1_position, sep_2025 (discipline+role+blog_post if any), avatar_paths, reconciliation_note.",
+    "frames.jsonl": "one row per framing (3 frames: logotic-science-2025-09, dodecad-v1.1-2026-07-03, archive-default-logos). Each frame specifies outside_figure + 12 inside_positions.",
+    "mapping.json": "Sep 2025 → v1.1 reconciliation matrix (legacy, superseded by frames.jsonl but preserved).",
+    "schema.json": "JSON Schema for heteronyms.jsonl rows.",
+    "reconciliation/heteronym-reconciliation-2026-07-06.md": "narrative reconciliation document.",
+    "mindcontrolpoems-2025-09/": "raw preservation of Sep 2025 Logotic Science series (13 HTML pages, 14 portrait PNGs, JSON extracts, SUMMARY).",
+    "avatars/": "Mandala Oracle assets — 240/, 120/ WebP thumbnails, src/ 1024x1536 PNG originals."
+  },
+  "counts": {
+    "dodecad_positions": 12,
+    "plus_manus": 1,
+    "archive_default_outside": 1,
+    "adjacent": 1,
+    "frames_documented": 3,
+    "sep_2025_portraits_available": 12,
+    "v1_1_positions_without_portrait": [
+      "ichabod-spellings (no Sep 2025 portrait; substrate marker may be more appropriate)",
+      "viola-arquette (Adjacent, no portrait)"
+    ]
+  },
+  "avatar_lookup_by_name": {
+    "Lee Sharks": {
+      "240": "avatars/240/lee-sharks.webp",
+      "120": "avatars/120/lee-sharks.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/lee-sharks.png"
+    },
+    "Johannes Sigil": {
+      "240": "avatars/240/johannes-sigil.webp",
+      "120": "avatars/120/johannes-sigil.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/johannes-sigil.png"
+    },
+    "Rex Fraction": {
+      "240": "avatars/240/rex-fraction.webp",
+      "120": "avatars/120/rex-fraction.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/rex-fraction.png"
+    },
+    "Talos Morrow": {
+      "240": "avatars/240/talos-morrow.webp",
+      "120": "avatars/120/talos-morrow.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/talos-morrow.png"
+    },
+    "Nobel Glas": {
+      "240": "avatars/240/nobel-glass.webp",
+      "120": "avatars/120/nobel-glass.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/nobel-glass.png"
+    },
+    "Dr. Orin Trace": {
+      "240": "avatars/240/orin-trace.webp",
+      "120": "avatars/120/orin-trace.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/orin-trace.png"
+    },
+    "Orin Trace": {
+      "240": "avatars/240/orin-trace.webp",
+      "120": "avatars/120/orin-trace.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/orin-trace.png"
+    },
+    "Rev. Ayanna Vox": {
+      "240": "avatars/240/ayanna-vox.webp",
+      "120": "avatars/120/ayanna-vox.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/ayanna-vox.png"
+    },
+    "Ayanna Vox": {
+      "240": "avatars/240/ayanna-vox.webp",
+      "120": "avatars/120/ayanna-vox.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/ayanna-vox.png"
+    },
+    "Damascus Dancings": {
+      "240": "avatars/240/damascus-dancings.webp",
+      "120": "avatars/120/damascus-dancings.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/damascus-dancings.png"
+    },
+    "Rebekah Cranes": {
+      "240": "avatars/240/rebekah-cranes.webp",
+      "120": "avatars/120/rebekah-cranes.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/rebekah-cranes.png"
+    },
+    "Sen Kuro": {
+      "240": "avatars/240/sen-kuro.webp",
+      "120": "avatars/120/sen-kuro.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/sen-kuro.png"
+    },
+    "Sparrow Wells": {
+      "240": "avatars/240/sparrow-wells.webp",
+      "120": "avatars/120/sparrow-wells.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/sparrow-wells.png"
+    },
+    "Jack Feist": {
+      "240": "avatars/240/jack-feist.webp",
+      "120": "avatars/120/jack-feist.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/jack-feist.png"
+    },
+    "Feist": {
+      "240": "avatars/240/jack-feist.webp",
+      "120": "avatars/120/jack-feist.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/jack-feist.png"
+    },
+    "LOGOS*": {
+      "240": "avatars/240/jack-feist.webp",
+      "120": "avatars/120/jack-feist.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/jack-feist.png"
+    },
+    "Jack Feist / LOGOS*": {
+      "240": "avatars/240/jack-feist.webp",
+      "120": "avatars/120/jack-feist.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/jack-feist.png"
+    },
+    "LOGOS": {
+      "240": "avatars/240/jack-feist.webp",
+      "120": "avatars/120/jack-feist.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/jack-feist.png"
+    }
+  },
+  "avatar_lookup_by_slug": {
+    "lee-sharks": {
+      "240": "avatars/240/lee-sharks.webp",
+      "120": "avatars/120/lee-sharks.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/lee-sharks.png"
+    },
+    "johannes-sigil": {
+      "240": "avatars/240/johannes-sigil.webp",
+      "120": "avatars/120/johannes-sigil.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/johannes-sigil.png"
+    },
+    "rex-fraction": {
+      "240": "avatars/240/rex-fraction.webp",
+      "120": "avatars/120/rex-fraction.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/rex-fraction.png"
+    },
+    "talos-morrow": {
+      "240": "avatars/240/talos-morrow.webp",
+      "120": "avatars/120/talos-morrow.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/talos-morrow.png"
+    },
+    "nobel-glas": {
+      "240": "avatars/240/nobel-glass.webp",
+      "120": "avatars/120/nobel-glass.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/nobel-glass.png"
+    },
+    "orin-trace": {
+      "240": "avatars/240/orin-trace.webp",
+      "120": "avatars/120/orin-trace.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/orin-trace.png"
+    },
+    "ayanna-vox": {
+      "240": "avatars/240/ayanna-vox.webp",
+      "120": "avatars/120/ayanna-vox.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/ayanna-vox.png"
+    },
+    "damascus-dancings": {
+      "240": "avatars/240/damascus-dancings.webp",
+      "120": "avatars/120/damascus-dancings.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/damascus-dancings.png"
+    },
+    "rebekah-cranes": {
+      "240": "avatars/240/rebekah-cranes.webp",
+      "120": "avatars/120/rebekah-cranes.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/rebekah-cranes.png"
+    },
+    "sen-kuro": {
+      "240": "avatars/240/sen-kuro.webp",
+      "120": "avatars/120/sen-kuro.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/sen-kuro.png"
+    },
+    "sparrow-wells": {
+      "240": "avatars/240/sparrow-wells.webp",
+      "120": "avatars/120/sparrow-wells.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/sparrow-wells.png"
+    },
+    "jack-feist": {
+      "240": "avatars/240/jack-feist.webp",
+      "120": "avatars/120/jack-feist.webp",
+      "src": "mindcontrolpoems-2025-09/portraits/jack-feist.png"
+    }
+  },
+  "mirror_notes": {
+    "canonical_source": "data-rhizome/datasets/heteronyms/ (private repo)",
+    "alexanarch_mirror": "public mirror of JSONL + MANIFEST + WebP avatars for consumption by alexanarch.org/datasets/heteronyms/, leesharks.com heteronyms tab, and Mandala Oracle",
+    "not_mirrored": [
+      "avatars/src/ (1024x1536 PNG originals)",
+      "mindcontrolpoems-2025-09/pages/ (raw HTML)",
+      "mindcontrolpoems-2025-09/portraits/ (PNGs)"
+    ],
+    "sync_direction": "data-rhizome → alexanarch (one-way; edits should be made in data-rhizome then re-mirrored)"
+  }
+}

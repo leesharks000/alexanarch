@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Heteronym / agent row",
+  "description": "Voices in the Dodecad, Assembly mantles, institutional personas, and collaborators. Identity_type distinguishes orthonym vs heteronym vs mantle vs institutional persona vs machine collaborator.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "person_id",
+    "name",
+    "identity_type"
+  ],
+  "properties": {
+    "person_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "identity_type": {
+      "type": "string",
+      "enum": [
+        "orthonym",
+        "heteronym",
+        "heteronym_aperture",
+        "pseudonym",
+        "avatar",
+        "institutional_persona",
+        "named_position",
+        "external_heteronym",
+        "machine_collaborator_mantle",
+        "collective_author_function"
+      ]
+    },
+    "orthonym_relation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "domains": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "voice_signature": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "associated_works": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "associated_terms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "institutional_affiliations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "active_period": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "orcid": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}
