@@ -1,0 +1,84 @@
+{
+  "dataset": "zenodo-datacite-batch",
+  "version": "v0.1",
+  "date": "2026-07-07",
+  "description": "Zenodo DOI Resolver + DataCite pre-severance metadata batch. Packages the DOI Resolution Index v3.7.2 (AXN:0004, deposit #4) alongside the DataCite metadata backup captured before the 2026-06-19 Zenodo termination. Together these two instruments constitute the empirical foundation for EA-EROSION-01 v1.0 (AXN:0421, deposit #1045) and EA-REMEDIATION-01 v0.2 (pre-mint whitepaper, forthcoming).",
+  "total_files": 9,
+  "total_bytes": 22317124,
+  "total_size_human": "22.32 MB",
+  "captured_before_severance": "2026-06-19",
+  "records": [
+    {
+      "name": "doi-resolution-index.json",
+      "path": "/data/doi-resolution-index.json",
+      "size_bytes": 2427515,
+      "size_human": "2.43 MB",
+      "sha256": "1f8bc575e270a260c0800ecfaf2f64fe1dd15f7ae2ea85c4b3342cc3265ff440",
+      "description": "Canonical DOI resolution index v3.7.2 — 1,838 severed Zenodo DOIs mapped to 1,778 valid Alexanarch resolution targets (96%), with structured fallback paths for the remainder. Method A/F/G/B/H/I/J/K/L/N/O recovery methodology preserved in correction_log."
+    },
+    {
+      "name": "api/doi-axn-map.json",
+      "path": "/api/doi-axn-map.json",
+      "size_bytes": 241407,
+      "size_human": "235.7 KB",
+      "sha256": "459ba74a5d0590844e3f7947179c9b916820bb28257afa0b90ed2a067f7745e5",
+      "description": "Simplified DOI → [AXN, alexanarch_url] map extracted from doi-resolution-index.json for programmatic redirect."
+    },
+    {
+      "name": "datacite-full-backup.json",
+      "path": "/data/datacite-full-backup.json",
+      "size_bytes": 9060866,
+      "size_human": "9.06 MB",
+      "sha256": "a93fe5bfa7bda5fdfbd27088ff75a40d617a82d35154055f3f6489a5ef757d92",
+      "description": "Full DataCite metadata backup captured 2026-07-03 across the Sharks/heteronym ORCID cluster. Preserved before the 2026-06-19 severance affected downstream metadata state. Approximately 1,817 records with full metadata graphs."
+    },
+    {
+      "name": "datacite-survivors-multi-heteronym.json",
+      "path": "/data/datacite-survivors-multi-heteronym.json",
+      "size_bytes": 8550095,
+      "size_human": "8.55 MB",
+      "sha256": "31e9bfa691f6f1e693fd2cb08b9fddabadc8edb1acf09e4a1c4be48d7c37e4e7",
+      "description": "Multi-heteronym DataCite survivor snapshot — records that continue to resolve at DataCite despite the Zenodo severance, across the Dodecad heteronym set."
+    },
+    {
+      "name": "datacite-metadata-page1.json",
+      "path": "/data/datacite-metadata-page1.json",
+      "size_bytes": 530927,
+      "size_human": "518.5 KB",
+      "sha256": "a83ba8389f88949914bb5efc6320608c6043e46a2871eec4ea5f76d37448da64",
+      "description": "DataCite API page 1 metadata capture."
+    },
+    {
+      "name": "datacite-page2.json",
+      "path": "/data/datacite-page2.json",
+      "size_bytes": 491128,
+      "size_human": "479.6 KB",
+      "sha256": "a90cec68a21987a1a2ab4c358a7b082fcf819df3a731cdabc84e110ab159d0ec",
+      "description": "DataCite API page 2 metadata capture."
+    },
+    {
+      "name": "datacite-page3.json",
+      "path": "/data/datacite-page3.json",
+      "size_bytes": 503779,
+      "size_human": "492.0 KB",
+      "sha256": "e163a950a1256baeb5b1ead5bdaec739d4f565a5c8c9f634ce2f2846241869bf",
+      "description": "DataCite API page 3 metadata capture."
+    },
+    {
+      "name": "datacite-page4.json",
+      "path": "/data/datacite-page4.json",
+      "size_bytes": 461939,
+      "size_human": "451.1 KB",
+      "sha256": "4c6075ebbf007e0de78c3b93bb8298a7b3313e3997fc9bd299dc7e31dfa483b2",
+      "description": "DataCite API page 4 metadata capture."
+    },
+    {
+      "name": "datacite-recapture-2026-07-03.json",
+      "path": "/data/datacite-recapture-2026-07-03.json",
+      "size_bytes": 49468,
+      "size_human": "48.3 KB",
+      "sha256": "90007e992eea2bf2bf6dcd6b6fbe366185d80916f9b4570223c7759c1b9f9630",
+      "description": "DataCite recapture pass 2026-07-03 — targeted second-pass recovery for high-value severed DOIs."
+    }
+  ]
+}
