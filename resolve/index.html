@@ -78,7 +78,7 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
 <!-- NAV-END -->
 
 <h1>DOI Resolution</h1>
-<p class="sub">If you landed here from a citation to a Crimson Hexagonal Archive DOI &mdash; <code>10.5281/zenodo.<em>XXXX</em></code> &mdash; that came back HTTP 410 GONE: that's because <a href="/records/?id=868">Zenodo terminated the CHA account on 2026-06-19</a>, severing 871 DOIs in a single day. This page resolves each legacy DOI to its <strong>sovereign successor</strong> in Alexanarch: the canonical AXN, the record page, and the live blog/registry mirrors. 1,838 mappings indexed, 1,778 resolve to valid alexanarch URLs (95%), 60 without alexanarch equivalent (42 severed at Zenodo termination + 19 other-author + 18 registry-catalogued) (severed at Zenodo termination).</p>
+<p class="sub">If you landed here from a citation to a Crimson Hexagonal Archive DOI &mdash; <code>10.5281/zenodo.<em>XXXX</em></code> &mdash; that came back HTTP 410 GONE: that's because <a href="/records/?id=868">Zenodo terminated the CHA account on 2026-06-19</a>, severing 871 DOIs in a single day. This page resolves each legacy DOI to its <strong>sovereign successor</strong> in Alexanarch: the canonical AXN, the record page, and the live blog/registry mirrors. 1,838 mappings indexed, 1,778 alexanarch + 27 blog/repo sources (95%), 60 without alexanarch equivalent (11 truly-severed (all others have blog/repo sources) + 19 other-author + 18 registry-catalogued) (severed at Zenodo termination).</p>
 
 <!-- Focused lookup (responds to ?doi= URL param) -->
 <div id="focus-area"></div>
@@ -195,7 +195,7 @@ fetch('/data/doi-resolution-index.json').then(function(r){return r.json()}).then
         '<div class="resolve-focus-doi">'+escapeHtml(doi)+'</div>'+
         '<div class="resolve-focus-result unmatched">'+
           '<div class="resolve-focus-result-label">Not found in resolution index</div>'+
-          '<div style="font-size:0.92em;color:#444;line-height:1.5">This DOI is not among the 1,838 indexed CHA mappings (v3.7.1, 96% resolve to valid alexanarch). It may not have originated from the Crimson Hexagonal Archive, or it may be from a Zenodo record outside CHA. The general Zenodo termination on 2026-06-19 affected only the CHA account.</div>'+
+          '<div style="font-size:0.92em;color:#444;line-height:1.5">This DOI is not among the 1,838 indexed CHA mappings (v3.8, 96% resolve to valid alexanarch). It may not have originated from the Crimson Hexagonal Archive, or it may be from a Zenodo record outside CHA. The general Zenodo termination on 2026-06-19 affected only the CHA account.</div>'+
         '</div>'+
         '<div class="resolve-focus-actions">'+
           '<a href="https://doi.org/'+encodeURIComponent(doi)+'" target="_blank" rel="noopener">Try the live DOI →</a>'+
