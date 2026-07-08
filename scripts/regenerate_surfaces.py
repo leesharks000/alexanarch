@@ -999,7 +999,15 @@ def regenerate_homepage_noscript(reg, dry_run=False):
         title = esc_html(d.get('title', '(untitled)'))
         creator = esc_html(d.get('creator', ''))
         date = esc_html(d.get('date', ''))
-        content_type = esc_html(d.get('content_type', ''))
+        content_type_raw = d.get('content_type', '') or ''
+        # Card-hardening (MANUS, 2026-07-08): content_type is a category label
+        # (like "Philological erratum"), not a specification paragraph. Clip
+        # defensively so an accidentally-long entry cannot balloon the card
+        # vertically. The full content_type remains in the deposit record page.
+        if len(content_type_raw) > 140:
+            content_type = esc_html(content_type_raw[:140].rsplit(' ', 1)[0] + '…')
+        else:
+            content_type = esc_html(content_type_raw)
         desc = esc_html((d.get('description', '') or '')[:250])
         if len(d.get('description', '') or '') > 250:
             desc = desc + '...'
