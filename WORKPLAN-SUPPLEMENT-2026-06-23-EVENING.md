@@ -20,7 +20,7 @@ The archive has been treating **recovery of textual content** as equivalent to *
 
 Zenodo defines a record as three things: metadata, files (the actual digital research object), and an identifier. A `description` field containing the whole text preserves *words*; it does not recover the original `.md`, `.pdf`, `.docx`, `.json`, image, archive — the original filename, MIME type, paratext, embedded assets, formatting, or exact bytes. The previous reconciliation passes (Phase 1, 3.5, 4) operated at the metadata layer: they tell us what was deposited, by whom, when, under what DOI. They do not return the artifacts.
 
-**Empirical anchor (2026-06-23):** the IDP Charter record `10.5281/zenodo.18284856` is still publicly served by Zenodo. Its landing page exposes `idp_charter_v1.1.md`, `idp_charter_zenodo_metadata.json`, sizes, original MD5s, individual download links, and a download-all endpoint. Zenodo's own policy says retraction preserves files in storage. This means the salvage window is open *right now* — and may close.
+**Empirical anchor (2026-06-23):** the IDP Charter record `10.5281/zenodo.18284857` is still publicly served by Zenodo. Its landing page exposes `idp_charter_v1.1.md`, `idp_charter_zenodo_metadata.json`, sizes, original MD5s, individual download links, and a download-all endpoint. Zenodo's own policy says retraction preserves files in storage. This means the salvage window is open *right now* — and may close.
 
 **Revised central objective:**
 > Recover every original artifact byte that Zenodo accepted into custody; identify every artifact that remains missing; and prevent reconstructed text from being mistaken for the deposited object.
@@ -346,7 +346,7 @@ Drafting structure (Ayanna Vox register):
   "records": [
     {
       "record_id": "18284857",
-      "doi": "10.5281/zenodo.18284856",
+      "doi": "10.5281/zenodo.18284857",
       "deposit_number": 0,
       "axn": "AXN:...",
       "probed_at": "ISO-8601",

@@ -45,7 +45,7 @@ DOI_OVERRIDES = {
     '10.5281/zenodo.19864158': ('/s/records/705/', 'SPXI-Sitemap Protocol'),
     '10.5281/zenodo.19578086': ('/s/records/103/', 'Metadata Packet for AI Indexing'),
     '10.5281/zenodo.19412081': ('/s/records/76/',  'Holographic Kernel'),
-    '10.5281/zenodo.18811938': ('/s/records/526/', 'Provenance Gravity Markers'),
+    '10.5281/zenodo.18811939': ('/s/records/526/', 'Provenance Gravity Markers'),
     '10.5281/zenodo.19923120': ('/s/records/88/',  'Constitution of the Semantic Economy'),
     '10.5281/zenodo.19923143': ('/s/records/87/',  'Companion Guide (PH-03)'),
     '10.5281/zenodo.18946111': ('/s/records/547/', 'UKTP'),

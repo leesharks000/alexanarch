@@ -65,7 +65,7 @@ Levels 1–2 are the rescue priority. Level 3 is often the textual canonical ver
     {
       "filename": "idp_charter_v1.1.md",
       "extension": ".md",
-      "associated_doi": "10.5281/zenodo.18284856",
+      "associated_doi": "10.5281/zenodo.18284857",
       "associated_work_title": "Institute for Diagrammatic Poetics: Institutional Charter",
       "associated_axn": null,
       "size_hint_bytes": 13312,
