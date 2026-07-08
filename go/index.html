@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alexanarch DOI/AXN Resolver — Redirect</title>
+<meta name="description" content="Resolves a DOI or AXN via the current alexanarch resolution map and redirects to the live target. Any resolver-map update propagates instantly on the next click.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://www.alexanarch.org/resolve/">
+<style>
+body{font-family:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#fafafa;color:#1a1a1a;padding:60px 24px;max-width:640px;margin:0 auto;line-height:1.6}
+h1{font-size:1.2em;color:#1a3a5c;font-weight:600;margin-bottom:12px}
+.mono{font-family:'IBM Plex Mono',monospace;font-size:0.9em;color:#c23b22;word-break:break-all}
+.dim{color:#777;font-size:0.9em;margin-top:14px}
+a{color:#0a7c6a}
+.spinner{display:inline-block;width:14px;height:14px;border:2px solid #ccc;border-top-color:#0a7c6a;border-radius:50%;animation:s 0.8s linear infinite;vertical-align:middle;margin-right:6px}
+@keyframes s{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<h1><span class="spinner"></span> Resolving <span id="target" class="mono"></span>&hellip;</h1>
+<p class="dim">Redirecting to the current live target via the alexanarch resolution map (v3.11.0+).
+If nothing happens in a moment, you'll be sent to the <a href="/resolve/">resolver info page</a> where you can inspect what's known about this identifier.</p>
+<noscript>
+<p class="dim"><strong>JavaScript required.</strong> Go to the <a href="/resolve/">resolver info page</a> and paste the identifier there.</p>
+</noscript>
+
+<script>
+(async function(){
+  var params = new URLSearchParams(window.location.search);
+  var doi = params.get('doi');
+  var axn = params.get('axn');
+  var target = doi ? doi.replace(/^https?:\/\/(www\.|dx\.)?doi\.org\//i,'').replace(/^doi:/i,'').trim() : (axn ? axn.trim() : '');
+  document.getElementById('target').textContent = target || '(no identifier)';
+
+  function bail(url){ window.location.replace(url); }
+
+  if(!doi && !axn){ return bail('/resolve/'); }
+
+  try{
+    if(doi){
+      // Normalize to canonical form '10.5281/zenodo.<N>'
+      var key = target;
+      if(/^\d+$/.test(key)) key = '10.5281/zenodo.' + key;
+      if(!/^10\.5281\/zenodo\./.test(key)) key = '10.5281/zenodo.' + key.split('.').pop();
+      var r = await fetch('/api/doi-axn-map.json', {cache: 'no-cache'});
+      var map = (await r.json()).map;
+      var entry = map[key];
+      if(entry && entry[1]){
+        return bail(entry[1]);   // live target
+      }
+      return bail('/resolve/?doi=' + encodeURIComponent(key));
+    }
+    if(axn){
+      // AXN hex path — /axn/<hex>/ is a stable route
+      var hex = target.toUpperCase().replace(/^AXN:/,'').split('.')[0];
+      if(/^[0-9A-F]{4}$/.test(hex)){
+        return bail('/axn/' + hex.toLowerCase() + '/');
+      }
+      return bail('/resolve/');
+    }
+  } catch(e){
+    return bail('/resolve/?doi=' + encodeURIComponent(target));
+  }
+})();
+</script>
+</body>
+</html>
