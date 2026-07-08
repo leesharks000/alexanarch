@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DOI Resolution — Alexanarch</title>
-<meta name="description" content="Resolve legacy Crimson Hexagonal Archive DOIs (10.5281/zenodo.*) to their sovereign successors in Alexanarch. 1,838 mappings, 1,748 resolve to valid URLs + 629 catalogued.">
+<meta name="description" content="Resolve legacy Crimson Hexagonal Archive DOIs (10.5281/zenodo.*) to their sovereign successors in Alexanarch. 1,838 mappings: 1,777 resolve to alexanarch records (97%), 37 to live blog/repo sources, 19 other-author, 5 severed with no known live target.">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
 :root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:'IBM Plex Sans',sans-serif;--mono:'IBM Plex Mono',monospace;--purple:#7344a6;--yellow:#9c7a17}
@@ -78,7 +78,7 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
 <!-- NAV-END -->
 
 <h1>DOI Resolution</h1>
-<p class="sub">If you landed here from a citation to a Crimson Hexagonal Archive DOI &mdash; <code>10.5281/zenodo.<em>XXXX</em></code> &mdash; that came back HTTP 410 GONE: that's because <a href="/records/?id=868">Zenodo terminated the CHA account on 2026-06-19</a>, severing 871 DOIs in a single day. This page resolves each legacy DOI to its <strong>sovereign successor</strong> in Alexanarch: the canonical AXN, the record page, and the live blog/registry mirrors. 1,838 mappings indexed, 1,778 alexanarch + 27 blog/repo sources (95%), 60 without alexanarch equivalent (13 truly Zenodo-only per MANUS diagnosis + 47 with blog redirect via resolver page) + 19 other-author + 18 registry-catalogued) (severed at Zenodo termination).</p>
+<p class="sub">If you landed here from a citation to a Crimson Hexagonal Archive DOI &mdash; <code>10.5281/zenodo.<em>XXXX</em></code> &mdash; that came back HTTP 410 GONE: that's because <a href="/records/?id=868">Zenodo terminated the CHA account on 2026-06-19</a>, severing 871 DOIs in a single day. This page resolves each legacy DOI to its <strong>sovereign successor</strong> in Alexanarch: the canonical AXN, the record page, and the live blog/registry mirrors. 1,838 mappings indexed: 1,777 resolve to alexanarch records (97%), 37 more to live blog or repository sources, 19 belong to other authors (never remapped), and 5 remain severed with no known live target.</p>
 
 <!-- Focused lookup (responds to ?doi= URL param) -->
 <div id="focus-area"></div>
@@ -107,13 +107,14 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
 <div class="pager" id="pager"></div>
 
 <div class="footer">
-  <div><strong>Alexanarch</strong> &middot; Read from <a href="/data/doi-resolution-index.json"><span class="kbd">data/doi-resolution-index.json</span></a> v3.1 &middot; Companion to <a href="/records/?id=1">Zenodotus' Book-Burning</a> (#1) and <a href="/records/?id=868">DOIs &ne; Permanent Identifiers</a> (#868)</div>
+  <div><strong>Alexanarch</strong> &middot; Read from <a href="/data/doi-resolution-index.json"><span class="kbd">data/doi-resolution-index.json</span></a> <span id="idx-version"></span> &middot; Companion to <a href="/records/?id=1">Zenodotus' Book-Burning</a> (#1) and <a href="/records/?id=868">DOIs &ne; Permanent Identifiers</a> (#868)</div>
   <div class="glyph">&int; = 1</div>
 </div>
 </div>
 
 <script>
 fetch('/data/doi-resolution-index.json').then(function(r){return r.json()}).then(function(idx){
+  var vEl=document.getElementById('idx-version'); if(vEl && idx.version) vEl.textContent = idx.version;
   var mappings = idx.mappings || [];
 
   // Build lookup index: doi → mapping(s)
@@ -195,7 +196,7 @@ fetch('/data/doi-resolution-index.json').then(function(r){return r.json()}).then
         '<div class="resolve-focus-doi">'+escapeHtml(doi)+'</div>'+
         '<div class="resolve-focus-result unmatched">'+
           '<div class="resolve-focus-result-label">Not found in resolution index</div>'+
-          '<div style="font-size:0.92em;color:#444;line-height:1.5">This DOI is not among the 1,838 indexed CHA mappings (v3.8, 96% resolve to valid alexanarch). It may not have originated from the Crimson Hexagonal Archive, or it may be from a Zenodo record outside CHA. The general Zenodo termination on 2026-06-19 affected only the CHA account.</div>'+
+          '<div style="font-size:0.92em;color:#444;line-height:1.5">This DOI is not among the 1,838 indexed CHA mappings (97% resolve to valid alexanarch records). It may not have originated from the Crimson Hexagonal Archive, or it may be from a Zenodo record outside CHA. The general Zenodo termination on 2026-06-19 affected only the CHA account.</div>'+
         '</div>'+
         '<div class="resolve-focus-actions">'+
           '<a href="https://doi.org/'+encodeURIComponent(doi)+'" target="_blank" rel="noopener">Try the live DOI →</a>'+
