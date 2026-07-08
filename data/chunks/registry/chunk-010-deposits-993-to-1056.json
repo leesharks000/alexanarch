@@ -1,8 +1,8 @@
 {
   "chunk_number": 10,
   "first_deposit": 993,
-  "last_deposit": 1055,
-  "count": 63,
+  "last_deposit": 1056,
+  "count": 64,
   "deposits": [
     {
       "deposit_number": 993,
@@ -3696,6 +3696,19 @@
         "minted_by_script": "scripts/mint_deposit.py",
         "minted_via": "self_serve_validated_pr"
       }
+    },
+    {
+      "deposit_number": 1056,
+      "axn": "AXN:0431.ARCHIVAL.🔗🕸️🗺️🔍📋⚖️",
+      "title": "Network-wide Link Inventory v1.0",
+      "creator": "Lee Sharks",
+      "date": "2026-07-08",
+      "content_type": "Dataset",
+      "license": "CC-BY-4.0",
+      "substrate": "AI-assisted (TACHYON, tool)",
+      "hash": "0454278a7854561f91ff377f369389e321835768a7145a06d08c43d33aed6ddc",
+      "status": "ACTIVE",
+      "description": "A per-link database of every anchored hyperlink across all 34 substantive repositories in the leesharks000 network — 59,431 rows, each carrying anchor text, current href, surrounding prose context, extracted DOI/AXN references, resolver lookup, prose-vs-resolver-title jaccard, best-matching alternative registry record, and a verdict flag classifying each link into review categories (no_id, ambiguous, consistent, href_disagrees_resolver, external_ok, href_wrong_target, likely_prose_mismatch, ok). Companion to DOI Resolution Index (#4) — this inventory audits the resolver's real-world usage across the site network. Assembled to answer a question the earlier 440K-row link-token scan could not: not just how many links there are, but whether each link is right. Immediate use is a review pile for correcting broken and mismatched links across sites, with corrections applied preferentially to the resolver map at its source of truth (deposit #4 v3.11.0+) rather than to individual site source files, so sovereign resolver behavior propagates automatically via /go/?doi=X. Artifacts at /data/link-inventory/: inventory-summary.json (aggregate stats), link-review-actionable.csv (623 rows, high-confidence mismatches), link-review-ambiguous.csv (830 rows, DOI-carrying ambiguous cases with promising alt). Regeneration scripts at /scripts/link-inventory/. Iteration policy: rescan after each rewrite pass or resolver update; bump minor version; the versioned snapshots become the durable record of network-wide link integrity."
     }
   ]
 }
