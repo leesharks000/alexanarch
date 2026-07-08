@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alexanarch — The Self-Governing Library</title>
 <meta name="description" content="Sovereign infrastructure for persistent scholarly identifiers. Content-derived AXN addresses, distributed custody, tombstone permanence. Founded after 871 DOIs returned HTTP 404 in a single day.">
-<link rel="canonical" href="https://alexanarch.org">
+<link rel="canonical" href="https://www.alexanarch.org/">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -317,7 +317,7 @@ fetch('/data/registry.json').then(r=>r.json()).then(reg=>{
 
 <ul style="font-size:0.9em;color:#444;line-height:1.9;margin:0 0 24px 24px;padding:0">
   <li><strong>Content-derived identifiers</strong> — AXN: 6-emoji derivation from the first 6 bytes of SHA-256 of canonical bytes. The address is computed from the work; no host issues it.</li>
-  <li><strong>Sovereign custody</strong> — mirrored across <a href="https://alexanarch.org">alexanarch.org</a>, <a href="https://github.com/leesharks000/alexanarch">GitHub</a>, content-addressable manifests (<a href="/SHA256SUMS.txt"><code>SHA256SUMS.txt</code></a>), and machine-readable chunks (<a href="/data/chunks/registry/"><code>/data/chunks/registry/</code></a>). Reconstruction verifiable from any complete mirror.</li>
+  <li><strong>Sovereign custody</strong> — mirrored across <a href="https://www.alexanarch.org/">alexanarch.org</a>, <a href="https://github.com/leesharks000/alexanarch">GitHub</a>, content-addressable manifests (<a href="/SHA256SUMS.txt"><code>SHA256SUMS.txt</code></a>), and machine-readable chunks (<a href="/data/chunks/registry/"><code>/data/chunks/registry/</code></a>). Reconstruction verifiable from any complete mirror.</li>
   <li><strong>Tombstone permanence</strong> — withdrawn records retain bibliographic metadata, withdrawal reason, provenance chain, and canonical content hash. No record ever resolves to 410.</li>
   <li><strong>Public, machine-readable validation</strong> — every protocol at <a href="/api/deposit-protocol.json"><code>/api/deposit-protocol.json</code></a>, <a href="/api/axn-protocol.json"><code>/api/axn-protocol.json</code></a>; central catalog at <a href="/api/index.json"><code>/api/index.json</code></a>. No private moderation surface.</li>
   <li><strong>Substrate as standard metadata</strong> — methodology and substrate are declared fields in the registry schema. Provenance, not suspicion.</li>

@@ -122,7 +122,7 @@ PER_REPO_RECIPES = {
         ('"https://alexanarch.org/s/records/561/"', '"https://alexanarch.org/s/records/549/"'),
         # Dead Zenodo community link
         ('href="https://zenodo.org/communities/leesharks000"',
-         'href="https://alexanarch.org/s/browse/"'),
+         'href="https://www.alexanarch.org/s/browse/"'),
     ],
     'watergiraffe-org': [
         # WG-04 wrong target (was Assembly Room Anchor, should be Water Giraffe Room Anchor)
@@ -178,10 +178,10 @@ PROSE_REWRITES = [
 
 # Link text fixes when URL points to alexanarch but text is still Zenodo-era
 LINK_TEXT_FIXES = [
-    # <a href="https://alexanarch.org/s/browse/">Zenodo community</a>
+    # <a href="https://www.alexanarch.org/s/browse/">Zenodo community</a>
     (re.compile(r'(<a[^>]+href="https://alexanarch\.org/s/browse/?"[^>]*>)Zenodo community(</a>)', re.IGNORECASE),
      r'\1Alexanarch (sovereign archive)\2'),
-    # <a href="https://alexanarch.org/s/browse/">Zenodo</a>
+    # <a href="https://www.alexanarch.org/s/browse/">Zenodo</a>
     (re.compile(r'(<a[^>]+href="https://alexanarch\.org/s/browse/?"[^>]*>)Zenodo(</a>)', re.IGNORECASE),
      r'\1Alexanarch\2'),
 ]

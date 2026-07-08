@@ -817,7 +817,7 @@ One overstated claim in adversarial correspondence hands the opposition a way to
 19. **Mint workflow is trusted infrastructure pending two repo-settings flips** (Settings → Allow auto-merge; Settings → Branches → main → require `validate-registry`). Until landed, curator-script direct commits are the working pattern.
 20. **Identity scopes are distinct fields, never collapsed.** `record_axn` (current v2), `record_sha256`, `artifact_sha256`, `artifact_internal_claimed_axn`, `glyphic_canary`, `legacy_axns` — all distinct.
 21. **Counts derive from `state.json`, not from prose.** Hand-maintaining counts is anti-pattern.
-22. **Self-canonical every public page.** `<link rel="canonical" href="https://alexanarch.org/$THIS-PAGE/">` to itself, not the homepage.
+22. **Self-canonical every public page.** `<link rel="canonical" href="https://www.alexanarch.org/$THIS-PAGE/">` to itself, not the homepage.
 23. **Transaction-boundary precondition met** as of §6.2.1 step-3 rebuild. The Surface Visibility dashboard is unblocked once Lee performs §5.6 manual repo-settings flips.
 
 ## §9 — Gotchas observed this session (extends §8)

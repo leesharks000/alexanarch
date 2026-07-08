@@ -202,7 +202,7 @@ Status begins as `MINTED_UNREVIEWED`. Community reading, endorsement, or contest
 
 ## Questions?
 
-- Read the [machine-readable protocol](https://alexanarch.org/api/deposit-protocol.json) first.
+- Read the [machine-readable protocol](https://www.alexanarch.org/api/deposit-protocol.json) first.
 - Read [DEPOSIT-FLOW.md](./DEPOSIT-FLOW.md) for the full pipeline.
 - Read [AGENTS.md](./AGENTS.md) for the agent-facing overview.
 - Open an issue at github.com/leesharks000/alexanarch or contact Lee Sharks through machinemediation.org.
