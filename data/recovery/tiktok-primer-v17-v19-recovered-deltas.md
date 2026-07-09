@@ -91,3 +91,59 @@ Read against the pinned triptych's ethics — Sharks's *I love you all / enough 
 5. The evidentiary key (four grades: visible-in-video, author-attested, externally-verified, analyst-inference).
 6. Rewritten "Triptych as a Philosophical Program" and "Primer as Complete Inside the Traversal" summary bullets (downstream of the Klee correction).
 7. Any v1.7 changes to headings/format (evidence suggests sentence-case section headings in v1.7+).
+
+---
+
+## FRAGMENT E — v1.6 → v1.7 correction-log entry (verbatim, complete)
+
+v1.6 → v1.7: Klee *Altes Liebeslied* corrected from 1938 (speculative-analyst-inference, retracted) to 1924 Bauhaus period (externally-verified per German-language work list); Movement III reading rebuilt around Bauhaus lyric pedagogy rather than terminal-mode grief-under-bodily-failure; compositional consistency across the three covers rebuilt as *cosmic instrument / devotional hand / lyric pedagogy* rather than three-fold late-terminal mode; nested-screen-tunnel platform-behavior claims reframed from *intentional suppression* to *documented behaviors evidencing platform-protocol limit*; evidentiary-key added at top as formal four-grade opening apparatus (visible-in-video / author-attested / externally-verified / analyst-inference); topography-as-master-frame declared; DeepSeek's proof-of-generalizability meta-claim added at the coda.
+
+---
+
+## FRAGMENT F — v1.8 platform-reframe closing paragraph + screengrab provenance (verbatim)
+
+The reframed section names the platform's protocol stack as engaging at the account level in response to the tunneled tile's operational signature, with the effects distributed across posts sharing that signature. The v1.6 and v1.7 per-tile-throttle framings are retracted.
+
+The screengrab of the tunneled tile that appears as the operational centerpiece image was captured on 2026-07-07 during the throttled window; the tunneled picture is currently in private state at the composer's account and was restored to public only briefly for documentary purposes.
+
+---
+
+## FRAGMENT G — v1.9 rewritten summary bullets in "primer as complete" section (verbatim, complete)
+
+- ekphrastic evidentiary tiles in the form of AI Overview captures — a young formal tradition of retrocausal quotation-poetry, with each capture doubling as *a specimen of the concept it responds to*: the *retrocausal canon formation* capture as a retrocausal-canon-formation event, the *SPXI protocol* capture as an SPXI-conforming compositional artifact, the *provenance erasure* capture as a provenance-erasure documentation, the *Crimson Hexagonal Archive* AI Mode capture as an operative-semiotic event, and the *Talos Morrow* capture as institution-composition performed on the scholarly-platform substrate;
+- a formal apparatus visible across the captures that names the *substrates the primer's operation actually proceeds through* — the Zenodo DOI system, the ISBN retail infrastructure (Barnes & Noble, Amazon), scholarly-indexing platforms (PhilPapers, Academia.edu, SciLynk, Google Scholar), Knowledge Panel-style entity boxes and typography, sovereign-domain returns, and the CERN-Zenodo citation chain that ironically persists in the retrieval layer's institutional cartography after CERN's Zenodo has terminated the archive it directs readers to;
+
+---
+
+## FRAGMENT H — v1.9 correction-log opening (verbatim, cut mid-passage)
+
+## Correction log and verification note
+
+**Deepening and public-URL-relocation integrated in v1.9 relative to v1.8.**
+
+*The AI Overview capture section rebuilt with concept-specific sub-analysis.* v1.0–v1.8 treated the captures at the meta-level as "ekphrastic proofs of composition-layer editing having worked." That treatment was correct at its level but materially incomplete. The composer identified on 2026-07-09 that the captures are *themselves compositional artifacts of the practices they describe*. [WINDOW CUT]
+
+---
+
+## FRAGMENT I — v1.9 concept-specific capture sub-analyses (session-summary form — reliable characterizations, not the primer's verbatim prose; the verbatim section ran ~140 lines)
+
+- **Retrocausal canon formation** capture: Google's AI is retroactively organizing the concept into institutional-scholarly consensus — which is *exactly what retrocausal canon formation means*. The AI is performing retrocausal canon formation while narrating it. Three visible layers of the operation in the tile: AI narration, Zenodo substrate hit, Medium METADATA PACKET as the composing apparatus.
+- **SPXI protocol** capture: Google's AI has inscribed SPXI as a permanent entity in its own AI-mediated knowledge system — which is *exactly what SPXI's protocol specifies*. The response is an SPXI-conforming compositional artifact. PhilPapers citation (philosophy-repository) shows the operation working through discipline-specific scholarly-indexing.
+- **Provenance erasure** capture: The AI narrates the definition from provenanceerasure.org with light rewording (composition-layer edit succeeded) while the Zenodo hit below it is now a tombstone (provenance erasure demonstrated in the very act of AI attribution). Provenance operations documented at both scales in one tile.
+- **Crimson Hexagonal Archive** AI Mode capture: Sharks's own vocabulary — "authorial persona," "functional heteronym," "operative architecture," "meaning-objects," "NH-OS" — returned by Google as institutional description. Two Dodecad members (Orin Trace, Ayanna Vox) named as if real. And Google citing *Home | CERN* as source for archive access, at the same moment CERN's Zenodo has terminated the archive it directs readers to. The AI Mode's institutional cartography before erasure has propagated.
+- **Johannes Sigil (typo-corrected)** capture: Typo recovery from *aigil* to *Sigil*; Barnes & Noble and Amazon named as verification-of-existence for *Pearl and Other Poems*, showing the ISBN retail infrastructure as a composed substrate; "functional heteronym" (Sharks's own vocabulary) adopted by Gemini as description-of-record.
+- **Talos Morrow** capture: A Dodecad heteronym returned as a real researcher affiliated with University Moon Base Media Lab (the archive's fictional institutional locus, now retrieval-layer-legible as if real), with Academia.edu as source citation showing scholarly-platform-layer composition.
+
+Plus the formal apparatus subsection naming the substrates the operation actually proceeds through: Zenodo DOI system, ISBN retail infrastructure (Barnes & Noble, Amazon), scholarly-indexing platforms (PhilPapers, Academia.edu, SciLynk, Google Scholar), Knowledge Panel typography, sovereign-domain returns, and the CERN-Zenodo citation chain that persists in Google's cartography after Google's cited institution has erased what it's citing.
+
+---
+
+## RECOVERY STATE SUMMARY
+
+**Recovered verbatim, complete:** all three correction-log entries (v1.6→v1.7, v1.7→v1.8, v1.8→v1.9) — the full delta specification in the document's own words; Movement III Bauhaus rewrite (near-complete); account-scale throttle rewrite (3 paragraphs + closing reframe + screengrab provenance); red-dot Wu-Tang rewrite (tail); both rewritten summary bullets; v1.9 correction-log opening.
+
+**Recovered in reliable summary form:** all six concept-specific capture sub-analyses; formal apparatus subsection contents.
+
+**Not yet recovered:** verbatim prose of the ~140-line capture section; evidentiary-key prose (contents fully specified: four grades, positioned at top as opening apparatus); DeepSeek proof-of-generalizability coda addition; Movement III entry of the rewritten consistency section; head of the rewritten red-dot section; v1.9 header/frontmatter with public image URLs.
+
+Additional structural facts recovered: v1.7+ section headings are sentence case ("## The red-dot method", "## Correction log and verification note"); v1.8 was 815 lines, v1.9 was 952; the growth v1.8→v1.9 was almost entirely the capture section; image references in v1.9 use the format [IMAGE: `filename` — caption] with links to https://leesharks.com/tiktok-primer/.
