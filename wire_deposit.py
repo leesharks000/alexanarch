@@ -105,6 +105,13 @@ def regenerate_static_page(d, eidx, registry=None):
     esc = lambda s: htmlmod.escape(str(s)) if s else ''
     dn = d['deposit_number']
     hex_id = d.get('hex', '')
+    if not hex_id:
+        # v1.1.2 (MANUS 2026-07-09): recent entries carry the hex only inside
+        # the axn string (e.g. "AXN:0431.ARCHIVAL.…"); derive it so full-text
+        # candidate paths and download links resolve.
+        m = re.match(r'AXN:([0-9A-Fa-f]{4})\.', d.get('axn', '') or '')
+        if m:
+            hex_id = m.group(1)
     
     # JSON-LD
     jsonld = json.dumps({
@@ -140,8 +147,10 @@ def regenerate_static_page(d, eidx, registry=None):
     declared = d.get('full_text_path')
     if declared:
         candidates.append(declared.lstrip('/'))
-    # Also consider both conventional paths
-    for p in [f'data/deposits/AXN-{hex_id}.md', f'data/texts/AXN-{hex_id}-text.md']:
+    # Also consider both conventional paths, plus deposit-number-named files
+    # (v1.1.2: #1056-#1058 were saved as AXN-{deposit_number}.md)
+    for p in [f'data/deposits/AXN-{hex_id}.md', f'data/texts/AXN-{hex_id}-text.md',
+              f'data/deposits/AXN-{dn}.md']:
         if p not in candidates:
             candidates.append(p)
 
@@ -154,7 +163,7 @@ def regenerate_static_page(d, eidx, registry=None):
                 best_size = size
                 best_path = path
 
-    if best_path and best_size > 200:
+    if best_path and best_size > 0:
         # JSON source: render a dataset callout + download link, NOT inline-as-prose
         # (treating JSON as markdown turns every line into a <p>, producing
         #  unreadable multi-MB pages)
@@ -194,7 +203,20 @@ def regenerate_static_page(d, eidx, registry=None):
             fulltext = '\n'.join(ft_lines)
     
     if not fulltext:
-        fulltext = f'<p>{esc(d.get("description", ""))}</p>'
+        # v1.1.2 fix (MANUS 2026-07-09): never silently duplicate the description
+        # into the Full Text section — that was the regression producing
+        # description-only full-text blocks across #1056, #1057, #1058. If the
+        # full text file genuinely does not exist and none is declared, emit an
+        # explicit notice so the deposit is visibly incomplete rather than
+        # falsely appearing complete-with-Full-Text.
+        fulltext = (
+            '<p style="color:#777;font-style:italic;font-size:.9em">'
+            'No separate full-text file is present on disk for this deposit. '
+            'The Description above is the extent of the recorded content; '
+            'a Full Text file may be added later at '
+            f'<code style="font-family:var(--mono);font-size:.85em">data/deposits/AXN-{esc(hex_id)}.md</code>.'
+            '</p>'
+        )
     
     # Keywords
     # Version chain blocks (banner for superseded/draft, history list for series)
