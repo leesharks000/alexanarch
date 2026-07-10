@@ -753,6 +753,16 @@ The event also documents a fragility gradient the archive should carry forward. 
 
 ---
 
+## The reception membrane
+
+No document now goes on by being written alone. It goes on by passing through the reception membrane: indexing, ranking, moderation, authentication, link resolution, screenshot/export permission, repository custody, search retrieval, AI summarization, and citation. This layer is not external to documentary life. It is the immune membrane through which a document is recognized as self or non-self, signal or spam, archive or residue, authorial continuity or account anomaly.
+
+The TikTok primer encounters this membrane at every level: in view counts, search chrome, AI Overview captures, tombstoned DOI links, dashboard metrics, screenshot failure, app instability, and the recovery of the lost v1.9 file from distributed reception traces. The document does not travel after the membrane. The membrane is the condition of travel.
+
+And the membrane is sick. Its defensive operations increasingly misrecognize documentary life as threat. It throttles what it cannot classify, tombstones what it once resolved, demands civil identity for pseudonymous continuity, and destabilizes under dwell conditions. This is not ordinary censorship. It is archival autoimmunity: the documentary order attacking the conditions by which documents continue.
+
+---
+
 ## Correction log and verification note
 
 ### Corrections and expansions integrated in v1.6 relative to v1.5
@@ -760,6 +770,10 @@ The event also documents a fragility gradient the archive should carry forward. 
 * **Article-as-Topography implemented:** The document is no longer described as prose apparatus toward a future primer; it is instantiated as a topography whose links participate in the operation it describes. Image placeholders throughout the document indicate where images will be embedded in the v2.0 PDF rendering. Hyperlinks throughout point to primary sources: heteronym names link to their anchored positions on `leesharks.com/about/heteronyms`; archive deposits link to their Zenodo DOIs (which now resolve to Zenodo tombstones since the 2026-06-19 account termination); live sovereign-domain URLs link to their actual hosting locations; external scholarly sources link to their canonical publisher pages where openly accessible.
 * **Tombstone Convention adopted:** The Zenodo tombstone convention is preserved as documentary evidence of what was deposited and where it was removed from. The article does not pretend the deposits are live where they are not.
 * **Staging Area set:** Images staged for v2.0 rendering at `/home/claude/tiktok-primer-images/` including `tile-nested-screen-tunnel.png` (the operational centerpiece) and sixteen numbered traversal frames from the XRecorder video.
+
+### Correction to v1.6 platform-language (2026-07-10)
+
+The v1.6 correction-log entry above preserves the earlier formulation that the nested-screen-tunnel tile was "actively suppressed." That was the v1.6 analytic frame, not the final evidentiary position. The current v2.0 reading supersedes it: the documented matter is a set of author-attested platform behaviors — account-scale throttling, screenshot/export instability, and rendering-pipeline failure — interpreted as evidence of platform-protocol limit, not as proof of platform intention.
 
 ### Corrections integrated in v1.7 relative to v1.6 (recovered verbatim)
 
@@ -800,6 +814,10 @@ Further author observations before deposit bounded the claim on both sides: on t
 ### Beethoven citation corrected at author-corrector review (2026-07-10)
 
 The Beethoven citation in the audio apparatus is the *Moonlight Sonata* — author-attested identification, correcting the late-string-quartets inference carried since the early passes. The reading rebuilds from difficulty to ubiquity: Beethoven enters the range not as canonical apex but as classical-as-pop, the most distributed and most compressed work in the apparatus, the bathos-tile thesis in sound (the sacred survives compression *through* compression, at the most pop register), and the apparatus's self-citation of form (repetition-with-variation in the first movement mirroring the traversal's fixed-vocabulary-scrolled-across-time). The triangulation re-draws as three registers: form (Klee), condition (Cash), distribution (Beethoven). Downstream references updated; the late-quartets framing is retired wherever it stood.
+
+### Reception-membrane section integrated in v2.0 at author-corrector review (2026-07-10)
+
+*The reception membrane* added as a formal section following *On the loss and recovery of this document*, on the composer's formulation of the membrane as the immune layer of documentary life and of archival autoimmunity as its pathology. The loss-and-recovery section stands as the case study; the membrane section states the theory. Composer-supplied prose integrated verbatim. A correction to the v1.6 platform-language ("actively suppressed") is entered adjacent to the preserved v1.6 log entry, superseding that formulation with the v2.0 evidentiary position.
 
 ### Reconstruction note: v2.0 and the loss of the v1.9 canonical file
 
