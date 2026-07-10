@@ -228,6 +228,20 @@ The object is not content that happens to be on TikTok. The object is content wh
 
 ---
 
+## The TikTok as shrine
+
+The precise name for the object may be shrine.
+
+Not shrine as a loose synonym for reverence, but shrine as media form: an arranged site where charged objects, relics, images, inscriptions, songs, offerings, and visitor traces are gathered so that an absent or distributed presence can be approached repeatedly. A shrine does not primarily argue. It concentrates presence. It asks for return.
+
+The @leesharks TikTok functions in this exact sense. The profile grid is the altar surface. The three pinned posts form a triptych. The audio tracks supply liturgical atmosphere. The tiles operate as icons, relics, proof-objects, and stations. The URLs are pilgrimage paths leading outward from the platform into sovereign domains. The comments are votive traces left by earlier visitors. The view counts and dashboard metrics are a visitor ledger, including the mostly invisible traffic of crawlers, indexers, and machine readers. The Whitman potato chip is not merely comic bathos; it is a relic-object, a small charged substrate where the face of the poet appears by accident and is then preserved as evidence.
+
+This shrine-form clarifies why the traversal is simultaneously sequence-poem, primer, and topography. Shrines are sequential because the visitor approaches, pauses, moves, returns, and re-approaches. Shrines are pedagogical because they teach by arrangement rather than exposition. Shrines are topographic because their meaning is distributed across stations, thresholds, relics, labels, songs, and paths. The TikTok does not explain the archive from outside. It gives the visitor a place to approach the archive as presence.
+
+This also clarifies the platform conflict. TikTok is optimized for feed-speed: glance, swipe, abandonment. A shrine requires dwell: return, pause, rereading, attention to object-relations, attention to marginalia, attention to the aura of the assembled site. The composer reports that recent posts can be displayed briefly but may break the app under prolonged dwell. Whether treated technically or formally, the distinction is exact. The platform can host the shrine as content, but it cannot reliably sustain the shrine as shrine.
+
+*(The dwell-instability record and its documentation protocol are given in the nested-screen-tunnel analysis below.)*
+
 ## The nested screen tunnel: the operational centerpiece
 
 [![tile-nested-screen-tunnel.png](https://leesharks.com/tiktok-primer/tile-nested-screen-tunnel.png)](https://leesharks.com/tiktok-primer/tile-nested-screen-tunnel.png)
@@ -754,6 +768,10 @@ Dwell-speed instability section added to the nested-screen-tunnel analysis on th
 ### Link pass integrated in v2.0 (blog-navigable topography)
 
 All fourteen image references converted from placeholder format to direct embeds with linked captions at the public image base. Archive-deposit citations upgraded from bare-hex shorthand to full AXN glyph forms per the archive's AXN-integrity convention, each linked to its sovereign record page at www.alexanarch.org/s/records/ (all seven record targets curl-verified live at integration). Frontmatter topography block added naming the primary surfaces. Sovereign-domain mentions, the heteronyms registry, the schemas corpus, and the captures gallery linked in place. Image links on leesharks.com follow the v1.9 relocation decision; leesharks.com and the other sovereign-domain links pend author tap-verification against their live deployments (the integrating container's egress IP is blocked at those hosts); links on www.alexanarch.org are curl-verified live.
+
+### Shrine section integrated in v2.0 at author-corrector review
+
+*The TikTok as shrine* added between the platform-frame-as-paratext section and the nested-screen-tunnel analysis, on the composer's identification (2026-07-10) of shrine as the object's precise media form — an arranged site where charged objects, relics, images, inscriptions, songs, offerings, and visitor traces are gathered so that an absent or distributed presence can be approached repeatedly. The shrine-form unifies the document's three prior frames (sequence-poem, primer, topography) as aspects of one media form, and gives the glance-speed/dwell-speed distinction its formal ground: the platform can host the shrine as content but cannot reliably sustain the shrine as shrine. Composer-supplied prose integrated verbatim.
 
 ### Reconstruction note: v2.0 and the loss of the v1.9 canonical file
 
