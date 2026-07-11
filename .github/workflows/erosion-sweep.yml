@@ -1,0 +1,22 @@
+name: EA-EROSION registry-wide sweep
+on:
+  schedule:
+    - cron: '0 6 * * 1'   # weekly, Mondays 06:00 UTC
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run registry-wide client sweep
+        run: python3 scripts/erosion/sweep_datacite_clients.py
+      - name: Commit epoch capture
+        run: |
+          git config user.name "EA-EROSION harness"
+          git config user.email "tachyon@alexanarch.org"
+          git add data/datacite-registrywide-*.json
+          git diff --cached --quiet || git commit -m "EA-EROSION: registry-wide epoch capture $(date -u +%Y-%m-%d)"
+          git push
