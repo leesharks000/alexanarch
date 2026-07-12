@@ -1,0 +1,44 @@
+{
+ "analysis": "ZD-S2 label-structure analysis",
+ "lane": "ZD",
+ "source_epoch": "ZD-S2 (2026-07-12, 1,322,007 rows)",
+ "instrument": "Platform Erosion Observatory \u00b7 EA-EROSION-01 (deposit #1045)",
+ "observed_at_utc": "2026-07-12T21:19:32Z",
+ "question": "Is the spam removal_reason a per-record adjudication or a process label inherited from bulk/account-stratum actions?",
+ "findings": {
+  "spam_labeled_rows": 1156280,
+  "spam_share_pct": 87.46,
+  "note_user_was_blocked": {
+   "rows": 786498,
+   "pct_of_spam": 68.02,
+   "interpretation": "reason inherited from account-level block, not record-level determination"
+  },
+  "note_record_level_spam": {
+   "rows": 350547,
+   "pct_of_spam": 30.32
+  },
+  "same_day_same_note_batches_ge_1000": {
+   "rows": 1036314,
+   "pct_of_spam": 89.6
+  },
+  "batches_le_5_rows": {
+   "rows": 732,
+   "pct_of_spam": 0.06,
+   "interpretation": "upper bound on removals with a process signature compatible with individual review"
+  },
+  "top_10_days_share_pct": 52.4,
+  "days_to_50pct": 10,
+  "days_to_90pct": 97,
+  "largest_single_day": {
+   "date": "2024-07-06",
+   "rows": 109903
+  },
+  "spam_rows_with_citation_text": {
+   "rows": 0,
+   "pct": 0.0,
+   "interpretation": "the spam pathway writes no tombstone citation at all; export-level citation absence (91.30%) is largely a pathway artifact, not a record property"
+  }
+ },
+ "formulation": "\"88% spam\" is a label distribution, not an adjudication record: 68% inherited from account blocks, ~90% applied in >=1,000-record same-day batches, <=0.1% with any process signature of per-record review. A blacklist constructed from this list inherits its label structure wholesale.",
+ "replication": "derivable from the preserved ZD-S2 export (sha256 in the XR-E1 capture) by grouping removal_reason x removal_note x removal_date"
+}
