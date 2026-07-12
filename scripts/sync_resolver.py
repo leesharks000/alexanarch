@@ -44,6 +44,35 @@ REGISTRY = os.path.join(ROOT, 'data', 'registry.json')
 BASE = 'https://alexanarch.org'
 NO_TARGET_TYPES = {'no_alexanarch_equivalent', 'misclassified_other_author'}
 
+
+def is_fragment(doi):
+    """Suspected truncated/partial identifier: zenodo suffix under 6 digits."""
+    if not doi or not doi.startswith('10.5281/zenodo.'):
+        return False
+    tail = doi.rsplit('.', 1)[-1]
+    return tail.isdigit() and len(tail) < 6
+
+
+def quarantine_reason(m):
+    """P0-5 gate: reasons an entry must NOT emit an operational redirect.
+    Redirects require verified identifier + confirmed membership + one target.
+    R1: the recorded evidence envelope (enrich_resolver_evidence.py) is
+    authoritative when present; legacy heuristics remain as fallback for
+    entries not yet enveloped."""
+    env = m.get('envelope')
+    if env is not None:
+        return env.get('quarantine')
+    doi = m.get('dead_doi') or ''
+    if is_fragment(doi):
+        return 'identifier_fragment_candidate'
+    if 'unresolved' in ((m.get('note') or '')).lower():
+        return 'parent_work_unresolved'
+    if m.get('mapping_type') == 'misclassified_other_author':
+        return 'other_author'
+    if not doi.startswith('10.5281/'):
+        return 'unsupported_namespace'
+    return None
+
 def recnum(u):
     """Extract record number from any pointer form; 0-sentinel and null → None."""
     if not u:
@@ -128,12 +157,23 @@ def main():
         print('SYNC FAILED — canonical index has invalid targets; nothing written.')
         sys.exit(1)
 
+    # P0-3: duplicate dead_doi keys are a hard failure — no implicit
+    # first-wins/last-wins semantics may exist on any surface.
+    from collections import Counter as _C
+    dupckeys = [k for k, c in _C(m.get('dead_doi') for m in maps if m.get('dead_doi')).items() if c > 1]
+    if dupckeys:
+        print(f'FATAL: {len(dupckeys)} duplicate dead_doi keys in canonical index: {dupckeys[:5]}')
+        sys.exit(1)
+
     def map_url(m):
-        """Resolution target for the api map, with v3.8 fallback semantics."""
+        """Resolution target for the api map. P0-5: quarantined entries emit
+        null — a redirect requires a verified full identifier, confirmed
+        membership, and exactly one target. v3.8 fallback semantics retained
+        for clean no_alexanarch_equivalent entries."""
+        if quarantine_reason(m):
+            return None
         if m.get('alexanarch_url'):
             return m['alexanarch_url']
-        if m.get('mapping_type') == 'misclassified_other_author':
-            return None  # other author's work — never map to a Lee Sharks record
         lu = m.get('live_urls') or {}
         return lu.get('repo') or lu.get('github') or lu.get('blog') or None
 
@@ -152,6 +192,12 @@ def main():
 
     # --apply: write canonical (compact per house rule) + regen api map
     idx['dateModified'] = date.today().isoformat()
+    # P0-2: totals are derived, never hand-maintained.
+    deads = [m.get('dead_doi') for m in maps if m.get('dead_doi')]
+    idx['total_mappings'] = len(maps)
+    idx['total_unique_dois'] = len(set(deads))
+    qc = Counter(quarantine_reason(m) for m in maps if quarantine_reason(m))
+    idx['quarantined_from_operational_map'] = dict(qc)
     with open(INDEX, 'w') as f:
         json.dump(idx, f, ensure_ascii=False, indent=None, separators=(',', ':'))
     api = {
@@ -162,6 +208,9 @@ def main():
                        'blog source; null = no known live target (see mapping_type in canonical index).',
         'version': idx.get('version'),
         'dateModified': idx['dateModified'],
+        'quarantine_policy': 'entries with fragment-candidate identifiers, unresolved parent works, '
+                             'other-author classification, or unsupported namespaces emit null targets; '
+                             'see quarantine field per entry in canonical index',
         'map': {m['dead_doi']: [m.get('axn') or None, map_url(m)] for m in maps},
     }
     with open(APIMAP, 'w') as f:
