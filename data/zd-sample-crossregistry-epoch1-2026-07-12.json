@@ -1,0 +1,1130 @@
+{
+ "epoch": "XR-E1",
+ "lane": "XR (cross-registry propagation sampling)",
+ "instrument": "Platform Erosion Observatory \u00b7 EA-EROSION-01 (deposit #1045)",
+ "observed_at_utc": "2026-07-12T20:14:58Z",
+ "source_population": {
+  "export": "https://zenodo.org/api/exporter/records-deleted.csv.gz",
+  "snapshot_label": "ZD-S2",
+  "captured": "2026-07-12",
+  "rows": 1322007,
+  "delta_vs_ZD_S1_2026_06_07": 12656,
+  "citation_text_present_pct": 8.7,
+  "citation_text_absent_pct": 91.3,
+  "export_gz_sha256": "f4b5aee62a032d5a5e56e769f3419cc046feb1e6c443ea7ec60538103b41c3db"
+ },
+ "method": {
+  "seed": 20260712,
+  "strata_quotas": {
+   "spam": 60,
+   "out-of-scope": 40,
+   "take-down-request": 25,
+   "retracted": 25
+  },
+  "exclusions": [
+   "removal_date == 2026-06-19 (founding-case day; measured exhaustively in FC lane)",
+   "malformed DOIs (regex ^10\\.5281/zenodo\\.\\d{4,}$)"
+  ],
+  "probes": {
+   "datacite": "GET https://api.datacite.org/dois/{doi} \u2014 200 findable / 404 absent from public findability",
+   "openalex": "GET https://api.openalex.org/works/doi:{doi} \u2014 200 present / 404 absent",
+   "openaire": "PENDING \u2014 api.openaire.eu blocked at sampler egress at capture time; lane re-runnable"
+  }
+ },
+ "aggregates": {
+  "n": 150,
+  "datacite_absent_404": 150,
+  "datacite_absent_pct": 100.0,
+  "openalex_present_200": 138,
+  "openalex_present_pct": 92.0,
+  "present_in_aggregator_absent_in_registry": 138,
+  "errors": 0,
+  "by_stratum": {
+   "spam": {
+    "n": 60,
+    "datacite_absent_404": 60,
+    "datacite_findable_200": 0,
+    "openalex_present_200": 57,
+    "present_in_aggregator_absent_in_registry": 57
+   },
+   "out-of-scope": {
+    "n": 40,
+    "datacite_absent_404": 40,
+    "datacite_findable_200": 0,
+    "openalex_present_200": 40,
+    "present_in_aggregator_absent_in_registry": 40
+   },
+   "take-down-request": {
+    "n": 25,
+    "datacite_absent_404": 25,
+    "datacite_findable_200": 0,
+    "openalex_present_200": 23,
+    "present_in_aggregator_absent_in_registry": 23
+   },
+   "retracted": {
+    "n": 25,
+    "datacite_absent_404": 25,
+    "datacite_findable_200": 0,
+    "openalex_present_200": 18,
+    "present_in_aggregator_absent_in_registry": 18
+   }
+  }
+ },
+ "findings": [
+  "Public-findability severance at DataCite is universal in the sample: 150/150 deleted records return 404 at the public API, across all four removal-reason strata. The founding case pattern is the population pattern.",
+  "Aggregator persistence after source severance is the norm, not an anomaly: 92% of sampled deleted records remain present in OpenAlex, including 100% of out-of-scope, 92% of take-down-request, and 72% of retracted records.",
+  "The founding-case cohort (out-of-scope; 97.2% OpenAlex shadow persistence at FC-E1) behaves as a typical member of its removal class."
+ ],
+ "per_doi": [
+  {
+   "doi": "10.5281/zenodo.12671427",
+   "stratum": "spam",
+   "removal_date": "2024-07-11",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.12068825",
+   "stratum": "spam",
+   "removal_date": "2024-07-06",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.12053423",
+   "stratum": "spam",
+   "removal_date": "2024-07-06",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.6875361",
+   "stratum": "spam",
+   "removal_date": "2022-08-03",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.12096311",
+   "stratum": "spam",
+   "removal_date": "2024-07-06",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.12555853",
+   "stratum": "spam",
+   "removal_date": "2024-07-11",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.5850696",
+   "stratum": "spam",
+   "removal_date": "2022-02-06",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.13011259",
+   "stratum": "spam",
+   "removal_date": "2024-09-19",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.11761499",
+   "stratum": "spam",
+   "removal_date": "2024-07-03",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.5548054",
+   "stratum": "spam",
+   "removal_date": "2024-08-30",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.11459543",
+   "stratum": "spam",
+   "removal_date": "2024-10-01",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.12424719",
+   "stratum": "spam",
+   "removal_date": "2024-07-07",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.11900731",
+   "stratum": "spam",
+   "removal_date": "2024-07-05",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.5947409",
+   "stratum": "spam",
+   "removal_date": "2022-02-23",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.11321156",
+   "stratum": "spam",
+   "removal_date": "2024-08-29",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.13347430",
+   "stratum": "spam",
+   "removal_date": "2024-08-30",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.11322608",
+   "stratum": "spam",
+   "removal_date": "2024-08-29",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.11416465",
+   "stratum": "spam",
+   "removal_date": "2024-08-30",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.5863961",
+   "stratum": "spam",
+   "removal_date": "2022-02-22",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.13025029",
+   "stratum": "spam",
+   "removal_date": "2024-09-03",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.14044120",
+   "stratum": "spam",
+   "removal_date": "2024-11-07",
+   "datacite_status": 404,
+   "openalex_status": 404
+  },
+  {
+   "doi": "10.5281/zenodo.12118239",
+   "stratum": "spam",
+   "removal_date": "2024-07-06",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.4068777",
+   "stratum": "spam",
+   "removal_date": "2020-10-07",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.13008679",
+   "stratum": "spam",
+   "removal_date": "2024-08-30",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.7606413",
+   "stratum": "spam",
+   "removal_date": "2023-02-06",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.13035533",
+   "stratum": "spam",
+   "removal_date": "2024-09-02",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.12898116",
+   "stratum": "spam",
+   "removal_date": "2024-09-03",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.5938206",
+   "stratum": "spam",
+   "removal_date": "2022-02-23",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.6838103",
+   "stratum": "spam",
+   "removal_date": "2022-08-01",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.11700418",
+   "stratum": "spam",
+   "removal_date": "2024-07-03",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.6457296",
+   "stratum": "spam",
+   "removal_date": "2024-12-13",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.3959899",
+   "stratum": "spam",
+   "removal_date": "2020-09-24",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.1053589",
+   "stratum": "spam",
+   "removal_date": "2020-11-13",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.12140009",
+   "stratum": "spam",
+   "removal_date": "2024-07-06",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.12294708",
+   "stratum": "spam",
+   "removal_date": "2024-07-07",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.4806792",
+   "stratum": "spam",
+   "removal_date": "2021-05-31",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.12563014",
+   "stratum": "spam",
+   "removal_date": "2024-07-11",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.6755514",
+   "stratum": "spam",
+   "removal_date": "2022-06-29",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.13803673",
+   "stratum": "spam",
+   "removal_date": "2024-09-20",
+   "datacite_status": 404,
+   "openalex_status": 404
+  },
+  {
+   "doi": "10.5281/zenodo.11868820",
+   "stratum": "spam",
+   "removal_date": "2024-07-05",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.12268555",
+   "stratum": "spam",
+   "removal_date": "2024-07-06",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.4494911",
+   "stratum": "spam",
+   "removal_date": "2021-02-08",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.4796571",
+   "stratum": "spam",
+   "removal_date": "2021-05-31",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.13026367",
+   "stratum": "spam",
+   "removal_date": "2024-09-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.6816368",
+   "stratum": "spam",
+   "removal_date": "2022-07-29",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.11582885",
+   "stratum": "spam",
+   "removal_date": "2024-08-30",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.11268346",
+   "stratum": "spam",
+   "removal_date": "2024-08-29",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.12949455",
+   "stratum": "spam",
+   "removal_date": "2024-08-30",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.11290553",
+   "stratum": "spam",
+   "removal_date": "2024-08-29",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.4101785",
+   "stratum": "spam",
+   "removal_date": "2020-10-18",
+   "datacite_status": 404,
+   "openalex_status": 404
+  },
+  {
+   "doi": "10.5281/zenodo.11746288",
+   "stratum": "spam",
+   "removal_date": "2024-07-03",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.11745800",
+   "stratum": "spam",
+   "removal_date": "2024-07-03",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.6806480",
+   "stratum": "spam",
+   "removal_date": "2022-07-29",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.12696966",
+   "stratum": "spam",
+   "removal_date": "2024-08-22",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.13052637",
+   "stratum": "spam",
+   "removal_date": "2024-09-19",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.12270535",
+   "stratum": "spam",
+   "removal_date": "2024-07-06",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.4259902",
+   "stratum": "spam",
+   "removal_date": "2020-11-09",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.8429656",
+   "stratum": "spam",
+   "removal_date": "2024-10-24",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.4096758",
+   "stratum": "spam",
+   "removal_date": "2020-10-18",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.7488737",
+   "stratum": "spam",
+   "removal_date": "2023-08-24",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19149738",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19619976",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19611583",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19076752",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-06-26",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19306891",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19300210",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19302626",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19584629",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19281598",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.18881118",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19131427",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19317950",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19350813",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19251676",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19275972",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19278234",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19378273",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19352059",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-06-26",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19303453",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19407505",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19381036",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19619751",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19611847",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19312422",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19409471",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19406325",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19576162",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.20182430",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-06-26",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19540128",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19270684",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19618943",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19577891",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19575492",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.20281540",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19312561",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19259452",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19408971",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19619135",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19619707",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19147347",
+   "stratum": "out-of-scope",
+   "removal_date": "2026-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.18412318",
+   "stratum": "take-down-request",
+   "removal_date": "2026-03-04",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.17164906",
+   "stratum": "take-down-request",
+   "removal_date": "2025-10-10",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.14293462",
+   "stratum": "take-down-request",
+   "removal_date": "2025-07-16",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.13359048",
+   "stratum": "take-down-request",
+   "removal_date": "2024-11-29",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.7292668",
+   "stratum": "take-down-request",
+   "removal_date": "2024-12-11",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.17920477",
+   "stratum": "take-down-request",
+   "removal_date": "2026-01-09",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.15266407",
+   "stratum": "take-down-request",
+   "removal_date": "2025-12-29",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.12731791",
+   "stratum": "take-down-request",
+   "removal_date": "2024-12-15",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.13358904",
+   "stratum": "take-down-request",
+   "removal_date": "2024-11-29",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.12526347",
+   "stratum": "take-down-request",
+   "removal_date": "2024-11-29",
+   "datacite_status": 404,
+   "openalex_status": 404
+  },
+  {
+   "doi": "10.5281/zenodo.18852898",
+   "stratum": "take-down-request",
+   "removal_date": "2026-06-26",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.18849834",
+   "stratum": "take-down-request",
+   "removal_date": "2026-04-28",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.14652780",
+   "stratum": "take-down-request",
+   "removal_date": "2025-03-21",
+   "datacite_status": 404,
+   "openalex_status": 404
+  },
+  {
+   "doi": "10.5281/zenodo.7244839",
+   "stratum": "take-down-request",
+   "removal_date": "2026-04-23",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.14283068",
+   "stratum": "take-down-request",
+   "removal_date": "2025-05-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.8385209",
+   "stratum": "take-down-request",
+   "removal_date": "2025-04-17",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.11632687",
+   "stratum": "take-down-request",
+   "removal_date": "2025-01-09",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.15814614",
+   "stratum": "take-down-request",
+   "removal_date": "2025-08-12",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.15386274",
+   "stratum": "take-down-request",
+   "removal_date": "2025-08-27",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.16370024",
+   "stratum": "take-down-request",
+   "removal_date": "2025-10-24",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.11184010",
+   "stratum": "take-down-request",
+   "removal_date": "2025-01-09",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.12542360",
+   "stratum": "take-down-request",
+   "removal_date": "2025-02-05",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.10041864",
+   "stratum": "take-down-request",
+   "removal_date": "2023-10-31",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.12731573",
+   "stratum": "take-down-request",
+   "removal_date": "2024-12-15",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.7495717",
+   "stratum": "take-down-request",
+   "removal_date": "2024-11-19",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.18598058",
+   "stratum": "retracted",
+   "removal_date": "2026-02-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19613231",
+   "stratum": "retracted",
+   "removal_date": "2026-05-27",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.15713198",
+   "stratum": "retracted",
+   "removal_date": "2025-06-23",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.11440030",
+   "stratum": "retracted",
+   "removal_date": "2024-06-03",
+   "datacite_status": 404,
+   "openalex_status": 404
+  },
+  {
+   "doi": "10.5281/zenodo.15580673",
+   "stratum": "retracted",
+   "removal_date": "2025-06-05",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19412257",
+   "stratum": "retracted",
+   "removal_date": "2026-04-28",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19681155",
+   "stratum": "retracted",
+   "removal_date": "2026-04-21",
+   "datacite_status": 404,
+   "openalex_status": 404
+  },
+  {
+   "doi": "10.5281/zenodo.16753155",
+   "stratum": "retracted",
+   "removal_date": "2025-08-19",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19049206",
+   "stratum": "retracted",
+   "removal_date": "2026-03-16",
+   "datacite_status": 404,
+   "openalex_status": 404
+  },
+  {
+   "doi": "10.5281/zenodo.17557769",
+   "stratum": "retracted",
+   "removal_date": "2025-11-09",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.14206689",
+   "stratum": "retracted",
+   "removal_date": "2024-11-28",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.18885603",
+   "stratum": "retracted",
+   "removal_date": "2026-03-06",
+   "datacite_status": 404,
+   "openalex_status": 404
+  },
+  {
+   "doi": "10.5281/zenodo.18063351",
+   "stratum": "retracted",
+   "removal_date": "2025-12-30",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19551095",
+   "stratum": "retracted",
+   "removal_date": "2026-04-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.17424827",
+   "stratum": "retracted",
+   "removal_date": "2025-11-21",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19123649",
+   "stratum": "retracted",
+   "removal_date": "2026-03-20",
+   "datacite_status": 404,
+   "openalex_status": 404
+  },
+  {
+   "doi": "10.5281/zenodo.17773436",
+   "stratum": "retracted",
+   "removal_date": "2025-12-14",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19473629",
+   "stratum": "retracted",
+   "removal_date": "2026-04-08",
+   "datacite_status": 404,
+   "openalex_status": 404
+  },
+  {
+   "doi": "10.5281/zenodo.18363461",
+   "stratum": "retracted",
+   "removal_date": "2026-01-28",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.19656630",
+   "stratum": "retracted",
+   "removal_date": "2026-05-09",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.18736427",
+   "stratum": "retracted",
+   "removal_date": "2026-02-24",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.17143790",
+   "stratum": "retracted",
+   "removal_date": "2025-10-15",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.17203831",
+   "stratum": "retracted",
+   "removal_date": "2025-10-02",
+   "datacite_status": 404,
+   "openalex_status": 200
+  },
+  {
+   "doi": "10.5281/zenodo.17236188",
+   "stratum": "retracted",
+   "removal_date": "2025-09-30",
+   "datacite_status": 404,
+   "openalex_status": 404
+  },
+  {
+   "doi": "10.5281/zenodo.10816959",
+   "stratum": "retracted",
+   "removal_date": "2024-03-20",
+   "datacite_status": 404,
+   "openalex_status": 200
+  }
+ ]
+}
