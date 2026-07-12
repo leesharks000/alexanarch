@@ -1,0 +1,133 @@
+{
+ "instrument": "EA-DISTRO-01 channel definitions",
+ "version": "0.1",
+ "tiers": {
+  "T1": "full-auto (token only)",
+  "T2": "semi-auto (SWORD + human moderation)",
+  "T3": "manual queue (pipeline emits packages)"
+ },
+ "channels": {
+  "figshare": {
+   "tier": "T1",
+   "api": "https://api.figshare.com/v2",
+   "auth": "personal token (Integrations page)",
+   "identifier": "DataCite DOI (reservable)",
+   "roles": [
+    "forensic datasets",
+    "kit artifacts",
+    "linked/metadata-only flagship records"
+   ],
+   "velocity": "moderate",
+   "gate": "light post-hoc"
+  },
+  "dataverse": {
+   "tier": "T1",
+   "api": "https://dataverse.harvard.edu/api",
+   "auth": "API token (account page)",
+   "identifier": "DataCite DOI",
+   "roles": [
+    "structured evidentiary datasets, dual custody"
+   ],
+   "velocity": "moderate",
+   "gate": "light"
+  },
+  "osf": {
+   "tier": "T1",
+   "api": "https://api.osf.io/v2",
+   "auth": "personal access token",
+   "identifier": "DataCite DOI",
+   "roles": [
+    "MMRS project + components"
+   ],
+   "velocity": "moderate",
+   "gate": "minimal (projects)"
+  },
+  "mediarxiv": {
+   "tier": "T1/T2",
+   "api": "OSF preprints API",
+   "auth": "OSF token",
+   "identifier": "DOI via OSF",
+   "roles": [
+    "MMRS / reception-studies preprints"
+   ],
+   "velocity": "1 per 2 weeks",
+   "gate": "light human screen"
+  },
+  "kcworks": {
+   "tier": "T1",
+   "api": "InvenioRDM REST (Zenodo-shaped)",
+   "auth": "account token",
+   "identifier": "DataCite DOI concept+version; ORCID writeback",
+   "roles": [
+    "canonical scholarly spine"
+   ],
+   "velocity": "1-2 per week HARD CAP",
+   "gate": "human review, first publications"
+  },
+  "swh": {
+   "tier": "T1",
+   "api": "https://archive.softwareheritage.org/api/1/origin/save/",
+   "auth": "optional token (rate limits)",
+   "identifier": "SWHID (content-derived; no severable account)",
+   "roles": [
+    "all public repositories"
+   ],
+   "velocity": "unlimited",
+   "gate": "none"
+  },
+  "hal": {
+   "tier": "T2",
+   "api": "SWORD",
+   "auth": "HAL credentials",
+   "identifier": "HAL ID",
+   "roles": [
+    "European anchor, major instruments"
+   ],
+   "velocity": "low",
+   "gate": "per-deposit human moderation"
+  },
+  "philarchive": {
+   "tier": "T3",
+   "api": null,
+   "roles": [
+    "philosophy / heteronymy theory"
+   ],
+   "velocity": "monthly",
+   "gate": "editorial categorization"
+  },
+  "philsci": {
+   "tier": "T3",
+   "api": null,
+   "roles": [
+    "measurement / inscription epistemology"
+   ],
+   "velocity": "monthly",
+   "gate": "moderated"
+  },
+  "ssrn": {
+   "tier": "T3",
+   "api": null,
+   "roles": [
+    "governance & semantic-economy working papers"
+   ],
+   "velocity": "selective",
+   "gate": "classification review"
+  },
+  "zenodo_reentry": {
+   "tier": "conditional",
+   "api": "InvenioRDM REST",
+   "status": "NOT ACTIVE \u2014 governed by separate pre-registration charter if adopted",
+   "roles": [
+    "zenodo-/cern-critical scholarship only"
+   ]
+  }
+ },
+ "standing_rules": [
+  "alexanarch canonical in all cases; distributed copies are surfaces not homes",
+  "every DataCite re-deposit carries relatedIdentifier crosswalk to its dead 10.5281 DOI",
+  "every record description carries AXN with glyph + alexanarch canonical URL",
+  "moderated channels receive human-paced traffic; never reproduce the serial-deposit signature",
+  "no distribution act without same-commit index update (EA-DISTRO-01 \u00a76)",
+  "private correspondence is never distributed"
+ ]
+}

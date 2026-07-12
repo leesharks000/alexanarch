@@ -1,0 +1,71 @@
+{
+ "instrument": "EA-DISTRO-01 routing rules",
+ "version": "0.1",
+ "routes": [
+  {
+   "class": "forensic-dataset",
+   "channels": [
+    "figshare",
+    "dataverse"
+   ],
+   "mode": "full package + SHA-256 manifest"
+  },
+  {
+   "class": "flagship-pretermination",
+   "channels": [
+    "kcworks"
+   ],
+   "secondary": [
+    "figshare:linked-record"
+   ],
+   "mode": "slow drip, dead-DOI crosswalk"
+  },
+  {
+   "class": "mmrs-instrument",
+   "channels": [
+    "mediarxiv",
+    "osf"
+   ],
+   "secondary": [
+    "kcworks"
+   ],
+   "mode": "preprint, fortnightly"
+  },
+  {
+   "class": "post-termination-instrument",
+   "channels": [
+    "kcworks",
+    "mediarxiv"
+   ],
+   "mode": "metered into weekly drip; never bulk"
+  },
+  {
+   "class": "code-kit",
+   "channels": [
+    "swh"
+   ],
+   "secondary": [
+    "figshare"
+   ],
+   "mode": "repo snapshot; SWHID recorded"
+  },
+  {
+   "class": "philosophy",
+   "channels": [
+    "philarchive",
+    "philsci"
+   ],
+   "mode": "manual queue, monthly packages"
+  },
+  {
+   "class": "corpus-native",
+   "channels": [],
+   "mode": "alexanarch-native by policy; machinemediation surface"
+  },
+  {
+   "class": "governance-correspondence",
+   "channels": [],
+   "mode": "NEVER distributed"
+  }
+ ]
+}
