@@ -49,5 +49,54 @@
    "sha256": "8e06d6688de2ea0d693c9696c91d072dce3c7c2c29a9173287dbeff3b1aee24f",
    "description": "The 1,136-row CHA cohort extraction from Zenodo’s own deletion-ledger exporter (records-deleted.csv.gz, md5-verified against the platform’s listing): record_id, DOI, parent, removal note/reason/date, citation_text. Companion copy hash-anchored in-archive at deposit #1071."
   }
- ]
+ ],
+ "dataset_set": {
+  "name": "alexanarch-dataset-set",
+  "canonical": "/datasets/set.json",
+  "members": [
+   {
+    "name": "tombstone-mirror",
+    "title": "The Tombstone Mirror",
+    "path": "/datasets/tombstone-mirror/",
+    "manifest": "/datasets/tombstone-mirror/manifest.json",
+    "summary": "Post-severance mirror: full API-tombstone census of all 2,027 objects deleted 2026-06-19 (872-second sweep chronology, removed_by enumeration), 57 rich pre-shrink metadata captures, the kill-ledger cohort extraction, and the stripped-page corpus documenting the surface’s live reduction on 2026-07-12.",
+    "self": true
+   },
+   {
+    "name": "zenodo-datacite-batch",
+    "title": "Zenodo / DataCite Batch",
+    "path": "/datasets/zenodo-datacite-batch/",
+    "manifest": "/datasets/zenodo-datacite-batch/manifest.json",
+    "summary": "Pre-severance reference frame: the DOI Resolution Index (1,838 severed DOIs mapped to sovereign targets) alongside the DataCite metadata backup captured before the 2026-06-19 termination propagated."
+   },
+   {
+    "name": "heteronyms",
+    "title": "Heteronyms",
+    "path": "/datasets/heteronyms/",
+    "manifest": "/datasets/heteronyms/MANIFEST.json",
+    "summary": "The Dodecad substrate: the twelve heteronyms of the estate with frames, avatars, and structured biographical data — the authorial system under which the severed corpus was composed."
+   },
+   {
+    "name": "new-human-primary",
+    "title": "New Human Primary",
+    "path": "/datasets/new-human-primary/",
+    "manifest": "/datasets/new-human-primary/manifest.json",
+    "summary": "Curated inventory of New Human Project primary texts within the Alexanarch archive."
+   },
+   {
+    "name": "gutenberg-classical",
+    "title": "Gutenberg Classical",
+    "path": "/datasets/gutenberg-classical/",
+    "manifest": "/datasets/gutenberg-classical/pilot-manifest.json",
+    "summary": "Curated Project Gutenberg classical corpus: identified and curated inventories for the operative-philology workstreams."
+   },
+   {
+    "name": "perseus-classical",
+    "title": "Perseus Classical",
+    "path": "/datasets/perseus-classical/",
+    "manifest": "/datasets/perseus-classical/manifest.json",
+    "summary": "Perseus canonical classical-text inventories (Greek, Latin, and Farsi literature) grounding the philological instruments."
+   }
+  ]
+ }
 }
