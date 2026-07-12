@@ -156,15 +156,25 @@ h2:first-of-type{margin-top:0}
 <div class="ds">
   <div class="ds-head">
     <span class="ds-name">data/doi-resolution-index.json</span>
-    <span class="ds-meta">1.49 MB &middot; <strong>1,675</strong> mappings</span>
+    <span class="ds-meta"><strong id="rs-mappings">&hellip;</strong> mappings &middot; <span id="rs-version">&hellip;</span> &middot; <span id="rs-live">&hellip;</span> live redirects / <span id="rs-quarantined">&hellip;</span> quarantined</span>
   </div>
-  <div class="ds-desc">Legacy Zenodo DOI &rarr; Alexanarch AXN resolution table. Allows users coming in from old CHA DOI links to find the canonical successor record. Each entry: Zenodo DOI, target AXN, deposit_number, title, status (active / migrated / tombstoned).</div>
-  <div class="ds-row"><strong>Consumed by:</strong> <em style="color:var(--dim)">no UI surface yet &mdash; planned at /resolve/</em></div>
+  <div class="ds-desc">Legacy Zenodo DOI &rarr; Alexanarch AXN resolution table with per-entry evidence envelopes (identifier validity &times; archive membership &times; relationship &times; evidence &times; quarantine reason). A redirect is emitted only for verified identifiers with confirmed membership and a same-work relationship; everything else resolves to inspection. Counts on this card are hydrated live from <code>/data/resolver-status.json</code> — the computed status artifact — and are never hand-written.</div>
+  <div class="ds-row"><strong>Consumed by:</strong> <a href="/resolve/">/resolve/</a> (inspection) and <a href="/go/">/go/</a> (redirect); immutable snapshots at <a href="/datasets/zenodo-datacite-batch/">zenodo-datacite-batch</a></div>
   <div class="ds-actions">
-    <a href="/data/doi-resolution-index.json">Raw JSON</a>
-    <a href="/records/?id=4">Resolution Index v2.2 (deposit #4)</a>
+    <a href="/data/doi-resolution-index.json">Raw JSON (latest)</a>
+    <a href="/data/resolver-status.json">Status</a>
+    <a href="/records/?id=4">Deposit #4 (Resolution Index)</a>
   </div>
 </div>
+<script>
+fetch('/data/resolver-status.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(function(s){
+  var set=function(id,v){var e=document.getElementById(id); if(e) e.textContent=v;};
+  set('rs-mappings', (s.mappings_total||0).toLocaleString());
+  set('rs-version', s.index_version||'');
+  set('rs-live', (s.live_redirects||0).toLocaleString());
+  set('rs-quarantined', (s.quarantined_total||0).toLocaleString());
+}).catch(function(){});
+</script>
 
 <div class="ds">
   <div class="ds-head">

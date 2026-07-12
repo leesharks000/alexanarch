@@ -1,19 +1,26 @@
 {
  "instrument": "resolver-status",
  "generated": "2026-07-12",
- "resolver_version": "v3.11.0",
+ "resolver_version": "v3.12.0",
+ "index_version": "v3.12.0",
+ "mappings_total": 1938,
+ "live_redirects": 1268,
+ "quarantined_total": 670,
  "mapping_rows": 1938,
  "unique_normalized_dois": 1938,
  "duplicate_doi_keys": 0,
- "operational_live_targets": 1689,
- "operational_null_targets": 249,
+ "operational_live_targets": 1268,
+ "operational_null_targets": 670,
  "quarantined": {
   "identifier_fragment_candidate": 3,
-  "parent_work_unresolved": 225,
-  "other_author": 1
+  "membership_rejected_collision": 64,
+  "parent_work_unresolved": 196,
+  "membership_not_confirmed": 115,
+  "target_title_mismatch": 267,
+  "relationship_provisional": 20
  },
- "canonical_sha256": "20f569f8345fc9c107d9156578a29c29d3beafc2740c0dcf4a3b350a8c369b72",
- "api_map_sha256": "8ecf09b484aea4d73fbf85a4be6daa9379fa91feb6532cd366da5494c61ac66f",
- "gate_failures": 439,
- "gate": "FAIL"
+ "canonical_sha256": "2c6443b99bb040e94cc5d82e56f57319f2e17ff8e265ed523bbc9072cb7b9ac0",
+ "api_map_sha256": "181e3f5ba644d9f3fc3ebfd07396561a99b495d225be5ec6197e349c4d2a7a8f",
+ "gate_failures": 0,
+ "gate": "PASS"
 }

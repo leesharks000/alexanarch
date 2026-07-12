@@ -1,0 +1,51 @@
+{
+ "instrument": "Alexanarch resolver status (computed; do not hand-edit)",
+ "generated": "2026-07-12T19:44:36Z",
+ "generating_commit": "ffdc7f844216ccdb9f1101b8b2f0578dcffb3224",
+ "index_version": "v3.12.0",
+ "index_sha256": "ccd1475aadbea2c3de9d407ba80969cce6309b5ace643c8fe87ff494fe10dbb1",
+ "api_map_sha256": "974137c01e3792790414518cdf383441ea41caa06e052f9aae01dfc55044d71d",
+ "mappings_total": 1938,
+ "unique_dois": 1938,
+ "live_redirects": 1335,
+ "quarantined": 603,
+ "envelope_coverage": 1938,
+ "envelope_quarantined": 598,
+ "envelope_stats": {
+  "validity": {
+   "fragment_candidate": 3,
+   "verified_registered": 75,
+   "verified_erased_registration": 32,
+   "verified_tombstone": 1815,
+   "syntactically_valid_unverified": 13
+  },
+  "membership": {
+   "unresolved": 172,
+   "rejected_collision": 64,
+   "confirmed": 1621,
+   "probable": 81
+  },
+  "relationship": {
+   "referenced_in_registry_document": 204,
+   "none_other_author": 64,
+   "same_work_restored": 1346,
+   "related_work_provisional": 187,
+   "no_successor_known": 107,
+   "same_work_title_matched": 30
+  },
+  "quarantine": {
+   "identifier_fragment_candidate": 3,
+   "membership_rejected_collision": 64,
+   "parent_work_unresolved": 201,
+   "membership_not_confirmed": 158,
+   "relationship_provisional": 172
+  }
+ },
+ "redirect_gate": "identifier_validity verified + archive_membership confirmed + relationship same_work + quarantine null",
+ "surfaces": {
+  "inspection": "/resolve/",
+  "redirect": "/go/",
+  "canonical_index": "/data/doi-resolution-index.json",
+  "operational_map": "/api/doi-axn-map.json"
+ }
+}

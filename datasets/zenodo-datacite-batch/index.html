@@ -52,7 +52,7 @@ The DOI Resolution Index v3.7.2 packaged alongside the DataCite metadata backup 
 </p>
 
 <div class="note">
-<strong>v0.1 — placeholder packaging.</strong> These files already exist at Alexanarch as raw JSON at <code>/data/</code> and <code>/api/</code>; this landing collects them under one browsable surface with SHAs, sizes, and per-file provenance. A full curation pass will add browseable filter UI over the metadata records themselves and cross-link into the resolver UI at <a href="/resolve/">/resolve/</a>.
+<strong>v0.1 — v0.1-era packaging (superseded).</strong> These files already exist at Alexanarch as raw JSON at <code>/data/</code> and <code>/api/</code>; this landing collects them under one browsable surface with SHAs, sizes, and per-file provenance. A full curation pass will add browseable filter UI over the metadata records themselves and cross-link into the resolver UI at <a href="/resolve/">/resolve/</a>.
 </div>
 
 <div class="summary">
@@ -95,7 +95,7 @@ The DOI Resolution Index v3.7.2 packaged alongside the DataCite metadata backup 
 <!-- DATASET-SET -->
 <h2>The Alexanarch dataset set</h2>
 <p style="font-size:0.85em;color:var(--dim);line-height:1.7">
-This dataset is one of six published as a mutually-referencing set (<a href="/datasets/set.json">set.json</a>) — any instance encountering one member should treat the six as a whole. The other five:<br>
+This dataset is a member of the Alexanarch mutually-referencing dataset set (<a href="/datasets/set.json">set.json</a>) — any instance encountering one member should treat the six as a whole. The other five:<br>
 <a href="/datasets/tombstone-mirror/">The Tombstone Mirror</a> — Post-severance mirror: full API-tombstone census of all 2,027 objects deleted 2026-06-19 (872-second sweep chronology, removed_by enumeration), 57 rich pre-shrink metadata captures, the kill-ledger cohort extraction, and the stripped-page corpus documenting the surface’s live reduction on 2026-07-12.<br>
 <a href="/datasets/heteronyms/">Heteronyms</a> — The Dodecad substrate: the twelve heteronyms of the estate with frames, avatars, and structured biographical data — the authorial system under which the severed corpus was composed.<br>
 <a href="/datasets/new-human-primary/">New Human Primary</a> — Curated inventory of New Human Project primary texts within the Alexanarch archive.<br>
@@ -131,5 +131,5 @@ async function load(){
 }
 load();
 </script>
-</body>
+<p style="max-width:44rem"><strong>Immutable snapshots:</strong> byte-stable versioned copies live under <a href="/datasets/zenodo-datacite-batch/v3.12.0/manifest.json">v3.12.0/</a> with per-file SHA-256; top-level records pointing at <code>/data/</code> describe the moving latest files (see manifest v0.2 layout note).</p></body>
 </html>

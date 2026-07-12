@@ -111,8 +111,10 @@ def relationship(m, mem_status):
     return REL_BY_TYPE.get(mt, 'unclassified')
 
 
-def quarantine(m, val, mem_status, rel):
+def quarantine(m, val, mem_status, rel, title_conflict=False):
     doi = m.get('dead_doi') or ''
+    if title_conflict:
+        return 'target_title_mismatch'
     if val == 'unsupported_namespace':
         return 'unsupported_namespace'
     if val == 'fragment_candidate':
@@ -154,6 +156,7 @@ for m in maps:
     rel = relationship(m, mem_status)
 
     # target cross-checks against registry
+    title_conflict = False
     mm = re.match(r'/s/records/(\d+)/', m.get('alexanarch_record') or '')
     if mm:
         dep = rec_by_no.get(int(mm.group(1)))
@@ -161,18 +164,30 @@ for m in maps:
             ev.append({'type': 'target_record_exists',
                        'source': '/data/registry.json',
                        'locator': f"deposit {dep['deposit_number']}"})
-            if m.get('axn') and dep.get('axn') and m['axn'] == dep['axn']:
-                ev.append({'type': 'axn_agreement', 'source': '/data/registry.json'})
             ttl = (m.get('title') or '').strip().lower()
-            if ttl and ttl[:60] == (dep.get('title') or '').strip().lower()[:60]:
-                ev.append({'type': 'title_prefix_agreement',
-                           'source': '/data/registry.json'})
-                title_checked += 1
+            reg_ttl = (dep.get('title') or '').strip().lower()
+            if ttl and reg_ttl:
+                if ttl[:60] == reg_ttl[:60]:
+                    ev.append({'type': 'title_prefix_agreement',
+                               'source': '/data/registry.json'})
+                    title_checked += 1
+                else:
+                    title_conflict = True
+            # registry is the AXN source of truth (AXN-INTEGRITY rule):
+            # where the same-work target is title-confirmed, sync the
+            # mapping's AXN field from the registry.
+            if dep.get('axn'):
+                if m.get('axn') != dep['axn'] and not title_conflict:
+                    m['axn'] = dep['axn']
+                    ev.append({'type': 'axn_synced_from_registry',
+                               'source': '/data/registry.json'})
+                elif m.get('axn') == dep['axn']:
+                    ev.append({'type': 'axn_agreement', 'source': '/data/registry.json'})
     if doi in tombstones and tombstones[doi]['citation_text']:
         ev.append({'type': 'authority_citation_text',
                    'source': '/datasets/tombstone-mirror/tombstone-api.jsonl'})
 
-    q = quarantine(m, val, mem_status, rel)
+    q = quarantine(m, val, mem_status, rel, title_conflict)
 
     m['envelope'] = {
         'identifier_validity': val,

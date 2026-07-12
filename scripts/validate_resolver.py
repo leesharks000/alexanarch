@@ -49,6 +49,9 @@ def is_fragment(doi):
 
 
 def quarantine_reason(m):
+    env = m.get('envelope')
+    if env is not None:
+        return env.get('quarantine')
     doi = m.get('dead_doi') or ''
     if is_fragment(doi):
         return 'identifier_fragment_candidate'
@@ -161,6 +164,49 @@ def main():
     except FileNotFoundError:
         pass
 
+    # G11 envelope coverage (R1): every mapping self-explains
+    no_env = [m.get('dead_doi') for m in maps if 'envelope' not in m]
+    for d in no_env:
+        fail('G11_envelope_missing', d)
+
+    # G12 full redirect gate (R1 doctrine): every live target passes
+    # validity+membership+relationship; no gated entry with a target is null
+    VOK = {'verified_tombstone', 'verified_registered', 'verified_erased_registration'}
+    ROK = {'same_work_restored', 'same_work_title_matched'}
+    for m in maps:
+        d = m.get('dead_doi'); env = m.get('envelope') or {}
+        tgt = amap.get(d, [None, None])[1]
+        is_fallback = tgt is not None and 'alexanarch.org/s/records/' not in tgt
+        ok = (env.get('identifier_validity') in VOK and
+              env.get('archive_membership') == 'confirmed' and
+              not env.get('quarantine') and
+              (env.get('relationship') in ROK or
+               (env.get('relationship') == 'no_successor_known' and is_fallback)))
+        if tgt is not None and not ok:
+            fail('G12_gate_violation_live', f"{d}: {env.get('identifier_validity')}/"
+                 f"{env.get('archive_membership')}/{env.get('relationship')}/q={env.get('quarantine')}")
+
+    # G13 /go/ static safety (R2): rejection, never coercion
+    go = open(os.path.join(ROOT, 'go', 'index.html')).read()
+    if re.search(r"split\('\.'\)\.pop\(\)", go):
+        fail('G13_go_coercion', 'namespace-coercion normalizer present')
+    if 'No redirect will be attempted' not in go:
+        fail('G13_go_rejection_missing', 'strict rejection message absent')
+
+    # G14 immutable snapshot hashes (R3)
+    snap_root = os.path.join(ROOT, 'datasets', 'zenodo-datacite-batch')
+    for v in sorted(os.listdir(snap_root)):
+        mp = os.path.join(snap_root, v, 'manifest.json')
+        if not (os.path.isdir(os.path.join(snap_root, v)) and os.path.exists(mp)):
+            continue
+        man = json.load(open(mp))
+        for r in man.get('files', []):
+            if r['name'] == 'manifest.json':
+                continue
+            actual = hashlib.sha256(open(os.path.join(snap_root, v, r['name']), 'rb').read()).hexdigest()
+            if actual != r['sha256']:
+                fail('G14_snapshot_hash', f"{v}/{r['name']}")
+
     # emit artifacts
     q_counts = Counter(quarantine_reason(m) for m in maps if quarantine_reason(m))
     live = sum(1 for v in amap.values() if v[1])
@@ -168,6 +214,10 @@ def main():
         'instrument': 'resolver-status',
         'generated': datetime.date.today().isoformat(),
         'resolver_version': idx.get('version'),
+        'index_version': idx.get('version'),
+        'mappings_total': len(maps),
+        'live_redirects': live,
+        'quarantined_total': len(amap) - live,
         'mapping_rows': len(maps),
         'unique_normalized_dois': len(set(deads)),
         'duplicate_doi_keys': len(dups),
