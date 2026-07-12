@@ -14,15 +14,15 @@ cp "$MANIFEST" "$OUT/estate-repos.tsv"
 cleanup() { rm -rf "$WORK"; }
 trap cleanup EXIT
 
-clone_private() {
-  local url="$1" dest="$2" auth
-  auth="$(printf 'x-access-token:%s' "$TOKEN" | base64 | tr -d '\n')"
-  GIT_CONFIG_COUNT=1 \
-  GIT_CONFIG_KEY_0=http.https://github.com/.extraheader \
-  GIT_CONFIG_VALUE_0="AUTHORIZATION: basic $auth" \
-  GIT_TERMINAL_PROMPT=0 \
-  git clone --mirror "$url" "$dest"
-}
+# Read-only authentication for private repository and LFS fetches. The token is
+# carried only in the process environment; it is never written to a remote URL.
+if [[ -n "$TOKEN" ]]; then
+  BACKUP_AUTH="$(printf 'x-access-token:%s' "$TOKEN" | base64 | tr -d '\n')"
+  export GIT_CONFIG_COUNT=1
+  export GIT_CONFIG_KEY_0=http.https://github.com/.extraheader
+  export GIT_CONFIG_VALUE_0="AUTHORIZATION: basic $BACKUP_AUTH"
+  export GIT_TERMINAL_PROMPT=0
+fi
 
 while IFS=$'\t' read -r full visibility branch tier; do
   [[ "$full" == "full_name" || -z "$full" ]] && continue
@@ -37,11 +37,7 @@ while IFS=$'\t' read -r full visibility branch tier; do
     continue
   fi
 
-  if [[ "$visibility" == "private" ]]; then
-    clone_private "$url" "$mirror"
-  else
-    git clone --mirror "$url" "$mirror"
-  fi
+  git clone --mirror "$url" "$mirror"
 
   if ! git --git-dir="$mirror" for-each-ref --format='%(refname)' | grep -q .; then
     printf '%s\t%s\t%s\t%s\t%s\n' "$full" "$visibility" "$tier" "empty-repository" "" >> "$OUT/recovery-index.tsv"
@@ -90,19 +86,21 @@ printf '%s\n' "$STAMP" > "$OUT/CREATED-UTC.txt"
 )
 
 if [[ "${UPLOAD_IA:-0}" == "1" ]]; then
-  : "${IA_ACCESS:?IA_ACCESS required when UPLOAD_IA=1}"
-  : "${IA_SECRET:?IA_SECRET required when UPLOAD_IA=1}"
-  IA_IDENTIFIER="${IA_IDENTIFIER:-alexanarch-estate-recovery}"
-  first=1
-  while IFS= read -r -d '' file; do
-    rel="${file#$OUT/}"
-    headers=(-H "Authorization: LOW $IA_ACCESS:$IA_SECRET")
-    if [[ "$first" == "1" ]]; then
-      headers+=(-H 'x-archive-auto-make-bucket: 1' -H 'x-archive-meta-title: Alexanarch Estate Recovery Set' -H 'x-archive-meta-creator: Lee Sharks' -H 'x-archive-meta-mediatype: data' -H 'x-archive-meta-subject: Alexanarch; archival continuity; disaster recovery; Git bundles')
-      first=0
-    fi
-    curl --fail --show-error --silent --retry 4 --retry-all-errors "${headers[@]}" --upload-file "$file" "https://s3.us.archive.org/$IA_IDENTIFIER/$STAMP/$rel"
-  done < <(find "$OUT" -type f -print0 | sort -z)
+  if [[ -z "${IA_ACCESS:-}" || -z "${IA_SECRET:-}" ]]; then
+    echo "Internet Archive upload skipped: IA_ACCESS and IA_SECRET are not both configured"
+  else
+    IA_IDENTIFIER="${IA_IDENTIFIER:-alexanarch-estate-recovery}"
+    first=1
+    while IFS= read -r -d '' file; do
+      rel="${file#$OUT/}"
+      headers=(-H "Authorization: LOW $IA_ACCESS:$IA_SECRET")
+      if [[ "$first" == "1" ]]; then
+        headers+=(-H 'x-archive-auto-make-bucket: 1' -H 'x-archive-meta-title: Alexanarch Estate Recovery Set' -H 'x-archive-meta-creator: Lee Sharks' -H 'x-archive-meta-mediatype: data' -H 'x-archive-meta-subject: Alexanarch; archival continuity; disaster recovery; Git bundles')
+        first=0
+      fi
+      curl --fail --show-error --silent --retry 4 --retry-all-errors "${headers[@]}" --upload-file "$file" "https://s3.us.archive.org/$IA_IDENTIFIER/$STAMP/$rel"
+    done < <(find "$OUT" -type f -print0 | sort -z)
+  fi
 fi
 
 echo "Recovery set created at $OUT"
