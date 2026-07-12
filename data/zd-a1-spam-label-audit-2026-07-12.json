@@ -1,0 +1,4386 @@
+{
+ "analysis": "ZD-A1: spam-label content audit (metadata-shadow sampling)",
+ "lane": "ZD",
+ "source_epoch": "ZD-S2 (2026-07-12)",
+ "instrument": "Platform Erosion Observatory \u00b7 EA-EROSION-01 (deposit #1045)",
+ "observed_at_utc": "2026-07-12T21:29:46Z",
+ "question": "What fraction of spam-labeled removals is corroborated / contradicted by the surviving metadata shadow (OpenAlex), judged by a published mechanical rubric on the same surface the removal process judged?",
+ "method": {
+  "seed": 20260712,
+  "n": 300,
+  "strata": {
+   "account-block (\"User was blocked\")": 150,
+   "staff-note (\"Spam record, removed by Zenodo staff.\")": 150
+  },
+  "metadata_source": "OpenAlex /works/doi:{doi} (title, abstract, authorships, references, citations, ORCID)",
+  "rubric": "v2: ~65 spam patterns (commercial, pharma, gambling, piracy/ebook-SEO, download-bait) vs scholarship structure (>=2 of: abstract>=300ch, authors>=2, refs>=1, cited>=1, ORCID). Rubric v1 (commercial-only) undercounted piracy/SEO spam; v1->v2 revision documented deliberately: the correction is part of the record.",
+  "honesty_bounds": "Indicia of presentation, not ground truth; the destroyed records preclude confirmation in both directions, for the operator as for the auditor. Manual inspection of the UNCORROBORATED bucket shows it dominated by pattern-evading SEO/piracy queries: content-level spam share plausibly ~90%+."
+ },
+ "results": {
+  "all": {
+   "CLEAR_SPAM_SIGNAL": [
+    140,
+    46.7
+   ],
+   "SCHOLARSHIP_SIGNAL": [
+    3,
+    1.0
+   ],
+   "UNCORROBORATED": [
+    123,
+    41.0
+   ],
+   "NO_METADATA": [
+    34,
+    11.3
+   ]
+  },
+  "account_block": {
+   "CLEAR_SPAM_SIGNAL": [
+    53,
+    35.3
+   ],
+   "SCHOLARSHIP_SIGNAL": [
+    3,
+    2.0
+   ],
+   "UNCORROBORATED": [
+    85,
+    56.7
+   ],
+   "NO_METADATA": [
+    9,
+    6.0
+   ]
+  },
+  "staff_note": {
+   "CLEAR_SPAM_SIGNAL": [
+    87,
+    58.0
+   ],
+   "SCHOLARSHIP_SIGNAL": [
+    0,
+    0.0
+   ],
+   "UNCORROBORATED": [
+    38,
+    25.3
+   ],
+   "NO_METADATA": [
+    25,
+    16.7
+   ]
+  },
+  "scholarship_signal_rate_pct": {
+   "point": 1.0,
+   "ci95": [
+    0.34,
+    2.9
+   ]
+  },
+  "extrapolation_to_spam_class_1156280": {
+   "point": 11562,
+   "ci95": [
+    3938,
+    33513
+   ]
+  },
+  "collateral_examples": [
+   {
+    "title": "Pengaruh Antusiasme Belajar dan Media Belajar Website \"Sekolah Digital SMKN 3 Salatiga\"...",
+    "pathway": "account-block",
+    "cited_by": 4,
+    "note": "education study, 4 OpenAlex citations, deleted as spam via account block"
+   },
+   {
+    "title": "White Paper #0018 - The Collapse of Cultural Immunity",
+    "pathway": "account-block",
+    "note": "non-commercial fringe scholarship erased under commercial-spam label"
+   },
+   {
+    "title": "No.140 Data. Thought Synchronization in Mirror Writing...",
+    "pathway": "account-block",
+    "has_orcid": true
+   }
+  ]
+ },
+ "findings": [
+  "The spam label is SUBSTANTIALLY CORROBORATED at content level in this sample: ~47% pattern-confirmed, with manual inspection indicating most of the uncorroborated residual is pattern-evading SEO/piracy. The audit does not support a claim that spam labels are mostly wrong.",
+  "The measured collateral is small in rate and large in count: 1.0% [0.34-2.90] of spam-labeled records bear affirmative scholarship indicia -> on the order of 10^4 records [~4K-34K] across the class, including cited research, erased under the spam label.",
+  "The asymmetry is the finding: the audit could measure an error rate from outside using surviving shadows; the removal process itself wrote no per-record evidence in either direction (0.00% citation_text; 0.1% reviewable batch sizes), so its errors are invisible to the operator and uncorrectable by design.",
+  "Pathway contrast: staff-adjudicated removals show higher pattern-confirmation (58.0% vs 35.3%) and zero scholarship-signal collateral (0/150 vs 3/150), consistent with adjudication working where it occurs; the account-block pathway, which produced 68% of the entire spam class, is where the collateral lives."
+ ],
+ "per_record": [
+  {
+   "doi": "10.5281/zenodo.11601341",
+   "pathway": "account-block",
+   "removal_date": "2024-08-30",
+   "oa_status": 200,
+   "title": "IN Alexandra/Bloemfontein [[[[WhatsApp ((( (+27) 738311517))) *____**)) Hips And Bums Enlargement Pills &amp; Cream Thokoza",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\bfor\\s+sale\\b",
+    "\\bhips\\s+and\\s+bums\\b",
+    "\\bwhatsapp\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11943796",
+   "pathway": "account-block",
+   "removal_date": "2024-07-05",
+   "oa_status": 200,
+   "title": "ex\u00e1menes de laboratorio pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12239489",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "Online pdf bewerken",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11735067",
+   "pathway": "account-block",
+   "removal_date": "2024-07-03",
+   "oa_status": 200,
+   "title": "el caso de harry quebert pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11930516",
+   "pathway": "account-block",
+   "removal_date": "2024-07-05",
+   "oa_status": 200,
+   "title": "guantanameras dolores soler-espiauba pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.13307008",
+   "pathway": "account-block",
+   "removal_date": "2024-08-26",
+   "oa_status": 200,
+   "title": "Java Burn Reviews: Price, Shark Tank, Ingredients and Side Effects?",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\breviews?\\s*:.{0,60}\\b(price|ingredients|side\\s+effects|shark\\s+tank)\\b",
+    "\\bshark\\s+tank\\b",
+    "\\bweight\\s*loss\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.14143994",
+   "pathway": "account-block",
+   "removal_date": "2024-11-19",
+   "oa_status": 200,
+   "title": "Margaret Lawrence University, Umunede, Delta State. 2024/2025 POST UTME/JUPEB Form Is Out Now! 09078816209 To apply call the admin office direct on (+2349078816209) for more information on how to obtain the form Also 2022/2023 Admission Form, Jupeb Form/Direct Entry Form (09078816209) and Pre-Degree",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\badmission\\s+(form|list)\\b",
+    "\\bform\\s+is\\s+out\\b",
+    "\\bpost\\s+utme\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.12441244",
+   "pathway": "account-block",
+   "removal_date": "2024-07-07",
+   "oa_status": 200,
+   "title": "dealing in desire pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12439461",
+   "pathway": "account-block",
+   "removal_date": "2024-07-07",
+   "oa_status": 200,
+   "title": "google pdf reader windows",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12485739",
+   "pathway": "account-block",
+   "removal_date": "2024-07-02",
+   "oa_status": 200,
+   "title": "add signature field to pdf adobe acrobat pro dc",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11466154",
+   "pathway": "account-block",
+   "removal_date": "2024-08-30",
+   "oa_status": 200,
+   "title": "IN Groblershoop/Emoyeni [[[[WhatsApp ((( (+27) 0633867063))) *____**)) ABORTION PILLS FOR SALE IN Groblershoop/Emoyeni KEMPTON PARK, GAUTENG JOHANNESBURG CBD. ABU DHABI, ABORTION PILLS FOR SALE Groblershoop/Emoyeni WhatsApp ((( (+27) 0633867063)))",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\babortion\\s+pills\\b",
+    "\\bfor\\s+sale\\b",
+    "\\bwhatsapp\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.12089106",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "Antrag auf nutzungs\u00e4nderung pdf rlp",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.14016321",
+   "pathway": "account-block",
+   "removal_date": "2024-10-31",
+   "oa_status": 404,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12273221",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "Unregelm\u00e4\u00dfige verben englisch pdf \u00fcbungen",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11338673",
+   "pathway": "account-block",
+   "removal_date": "2024-08-30",
+   "oa_status": 200,
+   "title": "IN Bakerville/Pietermaritzburg [[[[WhatsApp ((( (+27) 810718266))) *____**)) SKIN LIGHTENING PILLS &amp; CREAM FOR SALE KwaThema",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\bfor\\s+sale\\b",
+    "\\bskin\\s*(lightening|care)?\\s*(pills|cream|serum)\\b",
+    "\\bwhatsapp\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11556850",
+   "pathway": "account-block",
+   "removal_date": "2024-08-30",
+   "oa_status": 200,
+   "title": "IN Maclear/Vereeniging [[[[WhatsApp ((( (+27) 738311517))) *____**)) Hips And Bums Enlargement Pills &amp; Cream Mokopane",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\bfor\\s+sale\\b",
+    "\\bhips\\s+and\\s+bums\\b",
+    "\\bwhatsapp\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11790349",
+   "pathway": "account-block",
+   "removal_date": "2024-07-03",
+   "oa_status": 200,
+   "title": "Stadtplan kleve pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12494625",
+   "pathway": "account-block",
+   "removal_date": "2024-07-03",
+   "oa_status": 200,
+   "title": "alfreds group piano for adults student book 2 pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12390282",
+   "pathway": "account-block",
+   "removal_date": "2024-08-22",
+   "oa_status": 200,
+   "title": "Franco British International University, Kaduna State 2024/2025 ADMISSION FORM is now on sale. Call (07044935866) now",
+   "n_authors": 2,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\badmission\\s+(form|list)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.12040659",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "anthropologie catalogue pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12125949",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "Hager esc225 pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12359932",
+   "pathway": "account-block",
+   "removal_date": "2024-07-07",
+   "oa_status": 200,
+   "title": "Deutsch lernen f\u00fcr araber pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11647274",
+   "pathway": "account-block",
+   "removal_date": "2024-08-30",
+   "oa_status": 200,
+   "title": "(^`_# IN Wesselsbron/Soweto [[[[WhatsApp ((( (+27) 810718266))) *____**)) SKIN LIGHTENING PILLS &amp; CREAM FOR SALE Vanderbijlpark",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\bfor\\s+sale\\b",
+    "\\bskin\\s*(lightening|care)?\\s*(pills|cream|serum)\\b",
+    "\\bwhatsapp\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.13109137",
+   "pathway": "account-block",
+   "removal_date": "2024-09-03",
+   "oa_status": 200,
+   "title": "der meister und margarita",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12964422",
+   "pathway": "account-block",
+   "removal_date": "2024-09-02",
+   "oa_status": 200,
+   "title": "bali reisef\u00fchrer kostenlos",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\breisef(\u00fc|u)hrer\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11709521",
+   "pathway": "account-block",
+   "removal_date": "2024-07-03",
+   "oa_status": 200,
+   "title": "elevator safety pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12258490",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "planos sierra y fresadora de mesa pdf gratis",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\b(pdf|epub)\\b.{0,30}\\b(download|gratis|free|kostenlos)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.12307363",
+   "pathway": "account-block",
+   "removal_date": "2024-07-07",
+   "oa_status": 200,
+   "title": "instalaciones para pollos de engorde pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12090146",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "Adobe xd export pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11752329",
+   "pathway": "account-block",
+   "removal_date": "2024-07-03",
+   "oa_status": 200,
+   "title": "Audi 80 bedienungsanleitung pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bbedienungsanleitung\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11934578",
+   "pathway": "account-block",
+   "removal_date": "2024-07-05",
+   "oa_status": 200,
+   "title": "reflexiones sobre la revolucion francesa edmund burke pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12045899",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "family crisis pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12313646",
+   "pathway": "account-block",
+   "removal_date": "2024-07-07",
+   "oa_status": 200,
+   "title": "Die vier rechtgeleiteten kalifen pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11846030",
+   "pathway": "account-block",
+   "removal_date": "2024-09-03",
+   "oa_status": 200,
+   "title": "\ubc88\ub3d9\ucf5c\uac78\uc0f5\u25cb\u25cb\u300e\ud154\ub808\uadf8\ub7a8kv577\u300f\u25cb\u25cb\ubc88\ub3d9\ucf5c\uac78\ub9cc\ub0a8\u25cb\u25cb\ubc88\ub3d9\uc720\ud765\uc5c5\uc18c\u25cb\u25cb\ubc88\ub3d9\ucd9c\uc7a5\ub9c8\uc0ac\uc9c0\u25cb\u25cb\ubc88\ub3d9\uc5ec\ub300\uc0dd\ucd9c\uc7a5\u25cb\u25cb\ubc88\ub3d9\ub2e4\ubc29\uc5c5\uc18c\u25cb\u25cb\uc720\ud765\uc815\ubcf4\ucee4\ubba4\ub2c8\ud2f0\u30f0\u25cb\u25cb\u25cb\u25cb",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12474050",
+   "pathway": "account-block",
+   "removal_date": "2024-07-02",
+   "oa_status": 200,
+   "title": "ashanti law and constitution pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12147204",
+   "pathway": "account-block",
+   "removal_date": "2024-07-11",
+   "oa_status": 200,
+   "title": "[Pdf/ePub] Manuel de rechargement N\u00b06 by Ren\u00e9 Malfatti download ebook",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bepub\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.12867485",
+   "pathway": "account-block",
+   "removal_date": "2024-09-20",
+   "oa_status": 200,
+   "title": "ece r26",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12982519",
+   "pathway": "account-block",
+   "removal_date": "2024-09-02",
+   "oa_status": 200,
+   "title": "online convert html to",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bconvert\\s+(html|pdf|word)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.13027385",
+   "pathway": "account-block",
+   "removal_date": "2024-09-03",
+   "oa_status": 200,
+   "title": "the genesis order walkthrough",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bwalkthrough\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11881185",
+   "pathway": "account-block",
+   "removal_date": "2024-07-05",
+   "oa_status": 200,
+   "title": "soroban niveau 1 pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11926882",
+   "pathway": "account-block",
+   "removal_date": "2024-07-05",
+   "oa_status": 200,
+   "title": "vgate vs890 manual pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11583631",
+   "pathway": "account-block",
+   "removal_date": "2024-09-19",
+   "oa_status": 200,
+   "title": "Call girls in abu dhabi +971508275196 Get abu dhabi Call girls",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\bcall\\s+girls?\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11469714",
+   "pathway": "account-block",
+   "removal_date": "2024-08-30",
+   "oa_status": 200,
+   "title": "IN PHIRI/Clarens [[[[WhatsApp ((( (+27) 0633867063))) *____**)) ABORTION PILLS FOR SALE IN PHIRI/Clarens KEMPTON PARK, GAUTENG JOHANNESBURG CBD. ABU DHABI, ABORTION PILLS FOR SALE PHIRI/Clarens WhatsApp ((( (+27) 0633867063)))",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\babortion\\s+pills\\b",
+    "\\bfor\\s+sale\\b",
+    "\\bwhatsapp\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11860589",
+   "pathway": "account-block",
+   "removal_date": "2024-07-05",
+   "oa_status": 200,
+   "title": "traductor de pdf grandes gratis",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\b(pdf|epub)\\b.{0,30}\\b(download|gratis|free|kostenlos)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.12415703",
+   "pathway": "account-block",
+   "removal_date": "2024-07-07",
+   "oa_status": 200,
+   "title": "Aoac 2000 pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.15514764",
+   "pathway": "account-block",
+   "removal_date": "2025-06-10",
+   "oa_status": 200,
+   "title": "White Paper #0018 - The Collapse of Cultural Immunity \u2013 Why No One Is Safe From Structural Truth Anymore.pdf",
+   "n_authors": 2,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "SCHOLARSHIP_SIGNAL",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.13005582",
+   "pathway": "account-block",
+   "removal_date": "2024-09-19",
+   "oa_status": 200,
+   "title": "coleccin austral completa",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.13296758",
+   "pathway": "account-block",
+   "removal_date": "2024-10-23",
+   "oa_status": 200,
+   "title": "0812-9869-9940 Promo Hebat, Daftar Harga Jual Tempat Pemandian Jenazah / Tempat Pemandian Mayat Buol",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11753212",
+   "pathway": "account-block",
+   "removal_date": "2024-07-03",
+   "oa_status": 200,
+   "title": "valve testing standards pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12084647",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "Cambridge english empower a1 pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12486671",
+   "pathway": "account-block",
+   "removal_date": "2024-07-02",
+   "oa_status": 200,
+   "title": "wet spinning process pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11982267",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "Vw polo 9n reparaturanleitung pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.14380062",
+   "pathway": "account-block",
+   "removal_date": "2024-12-12",
+   "oa_status": 200,
+   "title": "Wellspring University, Evbuobanosa - Edo State 2024/2025 Admission List is Out. Call {09078816209} now to check your status. Also, Pre-Degree Form, IJMB Form, Masters form, Ph.D Form, Diploma Form, Direct entry form, Change of Institution form/Transfer form, Change of course Form are all out. Call{0",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\badmission\\s+(form|list)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.12285993",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "r\u00e9f\u00e9rentiel aide-soignant 2022 pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12394464",
+   "pathway": "account-block",
+   "removal_date": "2024-07-07",
+   "oa_status": 200,
+   "title": "Rechenmandala multiplikation pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12675106",
+   "pathway": "account-block",
+   "removal_date": "2024-07-11",
+   "oa_status": 200,
+   "title": "DOWNLOAD [PDF] {EPUB} M\u00e9thode de chinois troisi\u00e8me niveau",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bdownload\\b.{0,40}\\b(pdf|epub|book|movie|mp3|mp4|free|gratis)\\b",
+    "\\bepub\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.18724163",
+   "pathway": "account-block",
+   "removal_date": "2026-02-21",
+   "oa_status": 404,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11780315",
+   "pathway": "account-block",
+   "removal_date": "2024-07-03",
+   "oa_status": 200,
+   "title": "\u00fcbungsaufgaben buchungss\u00e4tze pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.3976776",
+   "pathway": "account-block",
+   "removal_date": "2024-08-29",
+   "oa_status": 200,
+   "title": "MARKETABLE WORK-RELATED SKILLS: ITS RELATION TOTHE EMPLOYMENT STATUS OF BACHELOR OF SCIENCEIN INDUSTRIAL EDUCATION GRADUATES",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.13068139",
+   "pathway": "account-block",
+   "removal_date": "2024-09-03",
+   "oa_status": 200,
+   "title": "legend of the five rings courts of stone",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.13030823",
+   "pathway": "account-block",
+   "removal_date": "2024-09-02",
+   "oa_status": 200,
+   "title": "2000 mazda mpv repair manual",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11490018",
+   "pathway": "account-block",
+   "removal_date": "2024-08-30",
+   "oa_status": 200,
+   "title": "IN Lesotho/Gra\u010danica ][**WhatsApp:+27789155305'*][* Buy ssd chemical solution online, Best money cleaning(1 kg/liter) Donabate",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\bfor\\s+sale\\b",
+    "\\bwhatsapp\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.12085651",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "Ob s\u00e4tze \u00fcbungen pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12530338",
+   "pathway": "account-block",
+   "removal_date": "2024-08-26",
+   "oa_status": 200,
+   "title": "Gluco Freedom In Blood Sugar Reviews \u2013 Is It Legit or Not Worth the Money? (Glucose Support Drops)",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11812948",
+   "pathway": "account-block",
+   "removal_date": "2024-07-03",
+   "oa_status": 200,
+   "title": "Bachelorarbeit informatik pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11401173",
+   "pathway": "account-block",
+   "removal_date": "2024-08-26",
+   "oa_status": 200,
+   "title": "GDR Labs Conolidine Review \u2013 # USA-No.1 Conolidine Effective Natural Reduces &amp; Chronic Pain!",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12407066",
+   "pathway": "account-block",
+   "removal_date": "2024-07-07",
+   "oa_status": 200,
+   "title": "Sing mit mir ein halleluja pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11853870",
+   "pathway": "account-block",
+   "removal_date": "2024-07-05",
+   "oa_status": 200,
+   "title": "statistica per scuole medie pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12624996",
+   "pathway": "account-block",
+   "removal_date": "2024-07-11",
+   "oa_status": 200,
+   "title": "PDF [DOWNLOAD] The Three-Body Problem (Hugo Award Winner) by Cixin Liu, Ken Liu on Iphone",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\b(pdf|epub)\\b.{0,30}\\b(download|gratis|free|kostenlos)\\b",
+    "\\bdownload\\b.{0,40}\\b(pdf|epub|book|movie|mp3|mp4|free|gratis)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.12884483",
+   "pathway": "account-block",
+   "removal_date": "2024-09-09",
+   "oa_status": 200,
+   "title": "alonso finn fisica 2",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.17706709",
+   "pathway": "account-block",
+   "removal_date": "2025-11-28",
+   "oa_status": 200,
+   "title": "Relational Field Theory \u2014 Theory of Everything (RFT\u2013ToE): Expanded Correspondence and Unified Consequences",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12533456",
+   "pathway": "account-block",
+   "removal_date": "2024-08-22",
+   "oa_status": 200,
+   "title": "Gerar University of Medical Sciences, Imope-ljebu, Ogun State (07044935866).Also Direct Entry Form, masters form, P.H.D Form, Sandwich Form, Diploma Form, Transfer form, Change of School Form For 2024/2025 Session, FOR GUIDELINES AND ADMISSION ASSISTANCE CALL THE SCHOOL ADMIN ON\u00a0@\u00a00704_4935866. +234",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.13113047",
+   "pathway": "account-block",
+   "removal_date": "2024-09-20",
+   "oa_status": 200,
+   "title": "angebot webdesign",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12054774",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "list of all ich guidelines pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12887698",
+   "pathway": "account-block",
+   "removal_date": "2024-09-03",
+   "oa_status": 200,
+   "title": "iso 15001",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11582768",
+   "pathway": "account-block",
+   "removal_date": "2024-09-04",
+   "oa_status": 200,
+   "title": "Powerful psychic\ud83d\udca2 (209) _876 _5519] Love Spells In Newark, DE Psychic Mediums LOVE Potions Voodoo love spells Black magic spells",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12346891",
+   "pathway": "account-block",
+   "removal_date": "2024-07-07",
+   "oa_status": 200,
+   "title": "F\u00fchrerschein theorie lernen pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11839801",
+   "pathway": "account-block",
+   "removal_date": "2024-07-05",
+   "oa_status": 200,
+   "title": "Kba 17009 pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11247385",
+   "pathway": "account-block",
+   "removal_date": "2024-08-23",
+   "oa_status": 200,
+   "title": "Igbinedion University, Edo State 2024/2025 Admission Form for JUPEB/Direct Entry/Pre-degree is out. Call {SCHOOL ADMIN} on (08125777035)(+2348125777035) for more Information On How to apply and for admission Assistance Take note, The School Management also wishes to inform the General Public that Ad",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\badmission\\s+(form|list)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.12852374",
+   "pathway": "account-block",
+   "removal_date": "2024-09-02",
+   "oa_status": 200,
+   "title": "leon grandeurs et mesures cm2",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12733925",
+   "pathway": "account-block",
+   "removal_date": "2024-08-22",
+   "oa_status": 200,
+   "title": "Mode Of School Fees Payment For Crawford University, Igbesa, Ogun State 2024/2025 (Tuition Fee/Acceptance Fee) For Various Courses/Department is ongoing call 09125210477 for more details on how to make payment to the registration unit Centre account.Also Sales of 2024/2025 Last Supplementary Post Ut",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\badmission\\s+(form|list)\\b",
+    "\\bpost\\s+utme\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.19535567",
+   "pathway": "account-block",
+   "removal_date": "2026-04-17",
+   "oa_status": 200,
+   "title": "No.140 Data. Thought Synchronization in Mirror Writing Observational Organization of the Simultaneous Processing Model of Writing and Cognition",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": true,
+   "verdict": "SCHOLARSHIP_SIGNAL",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12858110",
+   "pathway": "account-block",
+   "removal_date": "2024-09-19",
+   "oa_status": 200,
+   "title": "zelda breath of the wild loesungsbuch download deutsch",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bl(\u00f6|oe)sungsbuch\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.7632606",
+   "pathway": "account-block",
+   "removal_date": "2024-08-27",
+   "oa_status": 200,
+   "title": "School of Nursing, UNTH, Enugu State\u00a0 Admission Form 2023/2024,is out now \u260e(0)7066280862 DR Anita (0)7066280862)The Management of the school hereby inform the general public on the sales of the general Nursing Application form into the School of Nursing .And also the sales of two (2) years Post Basi",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\badmission\\s+(form|list)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11441984",
+   "pathway": "account-block",
+   "removal_date": "2024-07-29",
+   "oa_status": 200,
+   "title": ")%#-~ [[[[WhatsApp ((( (+27) 736616875))) *____**)) TOP QUALITY COUNTERFEIT MONEY FOR SALE Micronesia Grindsted Port Elizabeth\\\\EUROPE USA 3",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\bfor\\s+sale\\b",
+    "\\bwhatsapp\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.12250916",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "biology questions and answers pdf free download",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\b(pdf|epub)\\b.{0,30}\\b(download|gratis|free|kostenlos)\\b",
+    "\\bfree\\s+download\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.12474010",
+   "pathway": "account-block",
+   "removal_date": "2024-07-02",
+   "oa_status": 200,
+   "title": "luna roja pdf descargar",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11788591",
+   "pathway": "account-block",
+   "removal_date": "2024-07-03",
+   "oa_status": 200,
+   "title": "Eigenmann aufgaben pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12312435",
+   "pathway": "account-block",
+   "removal_date": "2024-07-07",
+   "oa_status": 200,
+   "title": "Subjekt objekt fragen englisch \u00fcbungen pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11826048",
+   "pathway": "account-block",
+   "removal_date": "2024-07-03",
+   "oa_status": 429,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.13096531",
+   "pathway": "account-block",
+   "removal_date": "2024-09-02",
+   "oa_status": 200,
+   "title": "schaeff skl 831 betriebsanleitung",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12352898",
+   "pathway": "account-block",
+   "removal_date": "2024-07-07",
+   "oa_status": 200,
+   "title": "delta rp100960.pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12368817",
+   "pathway": "account-block",
+   "removal_date": "2024-07-07",
+   "oa_status": 200,
+   "title": "Blo\u00df\u00a0nicht weinen akbar pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11883880",
+   "pathway": "account-block",
+   "removal_date": "2024-07-05",
+   "oa_status": 200,
+   "title": "Antony sutton pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12382916",
+   "pathway": "account-block",
+   "removal_date": "2024-07-07",
+   "oa_status": 200,
+   "title": "il giocatore dostoevskij pdf gratis",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\b(pdf|epub)\\b.{0,30}\\b(download|gratis|free|kostenlos)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.13687053",
+   "pathway": "account-block",
+   "removal_date": "2024-09-09",
+   "oa_status": 200,
+   "title": "The Other Passenger by Je Rowney on Ipad",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bdownload\\b.{0,40}\\b(pdf|epub|book|movie|mp3|mp4|free|gratis)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11857549",
+   "pathway": "account-block",
+   "removal_date": "2024-07-11",
+   "oa_status": 200,
+   "title": "DOWNLOADS The Casanova by T L Swan",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bdownload\\b.{0,40}\\b(pdf|epub|book|movie|mp3|mp4|free|gratis)\\b",
+    "\\bdownloads?\\s+the\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11838862",
+   "pathway": "account-block",
+   "removal_date": "2024-07-05",
+   "oa_status": 200,
+   "title": "online i love pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6133247",
+   "pathway": "account-block",
+   "removal_date": "2024-10-24",
+   "oa_status": 200,
+   "title": "Pengaruh Antusiasme Belajar dan Media Belajar Website \"Sekolah Digital SMKN 3 Salatiga\" Terhadap Prestasi Belajar Simulasi Digital",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 4,
+   "has_orcid": false,
+   "verdict": "SCHOLARSHIP_SIGNAL",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.10840330",
+   "pathway": "account-block",
+   "removal_date": "2024-08-22",
+   "oa_status": 200,
+   "title": "University of Mkar, Direct Entry 2024/2025,Pre-Degree/ Transfer form is out Call \u260e{07066280862 OR 07066280862} DR ANITA For More Details\u2013Apply For Admission If You Wish To Study At The University,It's Time To Apply For The Post Utme Screening Form 2024/2025 Session Which Now On Sale.",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\bform\\s+is\\s+out\\b",
+    "\\bpost\\s+utme\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.12205036",
+   "pathway": "account-block",
+   "removal_date": "2024-07-11",
+   "oa_status": 200,
+   "title": "DOWNLOAD [PDF] {EPUB} Droit commercial et des affaires",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bdownload\\b.{0,40}\\b(pdf|epub|book|movie|mp3|mp4|free|gratis)\\b",
+    "\\bepub\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11498316",
+   "pathway": "account-block",
+   "removal_date": "2024-07-09",
+   "oa_status": 200,
+   "title": "Glyco Care Canada Reviews \u2013 Worth it?",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12074397",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "you cant hurt me pdf free",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\b(pdf|epub)\\b.{0,30}\\b(download|gratis|free|kostenlos)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.13031051",
+   "pathway": "account-block",
+   "removal_date": "2024-08-30",
+   "oa_status": 200,
+   "title": "msc drinks packages prices 2023 download",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bprices?\\s+\\d{4}\\s+download\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.13298004",
+   "pathway": "account-block",
+   "removal_date": "2024-10-23",
+   "oa_status": 200,
+   "title": "0812-9869-9940 Eksklusif, Daftar Harga Jual Tempat Pemandian Jenazah / Tempat Pemandian Mayat Ujung Tanah",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.12130975",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "Datenschutzerkl\u00e4rung arztpraxis muster pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11436174",
+   "pathway": "account-block",
+   "removal_date": "2024-08-30",
+   "oa_status": 200,
+   "title": "(WhatsApp 0633867063) \u00ae\u2122Abortion Pills For Sale In Tembisa Central",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\babortion\\s+pills\\b",
+    "\\bfor\\s+sale\\b",
+    "\\bwhatsapp\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11476793",
+   "pathway": "account-block",
+   "removal_date": "2024-08-23",
+   "oa_status": 200,
+   "title": "Afe Babalola Institution of Ado-Ekiti (ABUAD), Ado-Ekiti, Ekiti State. 2024/2025 Admission post UTME form,\u00a0 direct entry \u00a0Form, \u00a0post-graduate form, \u00a0diploma form, Master PhD form, Pree degree form, Ijmb form, and Jupeb form,\u00a0 are Out Now, To apply call the Admin Office for registration guidelines a",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\bpost\\s+utme\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11724591",
+   "pathway": "account-block",
+   "removal_date": "2024-07-03",
+   "oa_status": 200,
+   "title": "Pdf als fax versenden kostenlos ohne anmeldung",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\b(pdf|epub)\\b.{0,30}\\b(download|gratis|free|kostenlos)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.13041637",
+   "pathway": "account-block",
+   "removal_date": "2024-08-30",
+   "oa_status": 200,
+   "title": "hornbach farbpalette",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12289288",
+   "pathway": "account-block",
+   "removal_date": "2024-07-07",
+   "oa_status": 200,
+   "title": "Brother p touch 65 bedienungsanleitung deutsch pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bbedienungsanleitung\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11851643",
+   "pathway": "account-block",
+   "removal_date": "2024-07-05",
+   "oa_status": 200,
+   "title": "Grundriss haus pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11798269",
+   "pathway": "account-block",
+   "removal_date": "2024-07-03",
+   "oa_status": 200,
+   "title": "Fragebogen bei eigener k\u00fcndigung pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12447160",
+   "pathway": "account-block",
+   "removal_date": "2024-07-07",
+   "oa_status": 200,
+   "title": "tomcat the definitive guide 3rd edition pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11682616",
+   "pathway": "account-block",
+   "removal_date": "2024-07-03",
+   "oa_status": 200,
+   "title": "Iso 14118 pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.13791037",
+   "pathway": "account-block",
+   "removal_date": "2024-09-19",
+   "oa_status": 404,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12833626",
+   "pathway": "account-block",
+   "removal_date": "2024-08-26",
+   "oa_status": 200,
+   "title": "teoria degli adattamenti hutcheon",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12056358",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "el poder del metabolismo frank suarez pdf download",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\b(pdf|epub)\\b.{0,30}\\b(download|gratis|free|kostenlos)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.12293730",
+   "pathway": "account-block",
+   "removal_date": "2024-07-07",
+   "oa_status": 200,
+   "title": "crear curr\u00edculum pdf gratis",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\b(pdf|epub)\\b.{0,30}\\b(download|gratis|free|kostenlos)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.13017316",
+   "pathway": "account-block",
+   "removal_date": "2024-08-30",
+   "oa_status": 200,
+   "title": "plan tiny house",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.13267739",
+   "pathway": "account-block",
+   "removal_date": "2024-08-22",
+   "oa_status": 200,
+   "title": "Lagos State University Ojo, Lagos 2024/2025 Pre-degree, Sandwich Form are on sales! Call the registrar +2349063223614 TO APPLY AND FURTHER ADMISSION GUIDELINES BEFORE THE CLOSING DATE.",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11374901",
+   "pathway": "account-block",
+   "removal_date": "2024-08-30",
+   "oa_status": 200,
+   "title": "+27633867063 \u00ae\u2122Original Abortion Pills For Sale In BELLVILLE",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\babortion\\s+pills\\b",
+    "\\bfor\\s+sale\\b",
+    "\\bwhatsapp\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.12922226",
+   "pathway": "account-block",
+   "removal_date": "2024-09-19",
+   "oa_status": 200,
+   "title": "kesselw\u00e4rterpr\u00fcfung",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11724491",
+   "pathway": "account-block",
+   "removal_date": "2024-07-03",
+   "oa_status": 200,
+   "title": "Din en 13670 pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12140225",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "Taupunkt tabelle pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12752388",
+   "pathway": "account-block",
+   "removal_date": "2024-08-22",
+   "oa_status": 200,
+   "title": "School of Nursing, Emekuku 2024/2025 Nursing/Midwifery Application form is out call now (08125777035). For more information on purchase of the form and admission assistance contact (DR. MRS ALICE OGUNSOLA) on (08125777035)... Also Post Basic Nursing forms into: PERI-OPERATIVE NURSING, CARDIOTHERACIC",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\bform\\s+is\\s+out\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11925361",
+   "pathway": "account-block",
+   "removal_date": "2024-07-05",
+   "oa_status": 429,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12878308",
+   "pathway": "account-block",
+   "removal_date": "2024-09-03",
+   "oa_status": 200,
+   "title": "yo declaro joel osteen descargar gratis",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11376823",
+   "pathway": "account-block",
+   "removal_date": "2024-08-30",
+   "oa_status": 200,
+   "title": "IN PHUTHADITJHABA /Orchards [[[[WhatsApp ((( (+27) 0633867063))) *____**)) ABORTION PILLS FOR SALE IN PHUTHADITJHABA /Orchards KEMPTON PARK, GAUTENG JOHANNESBURG CBD. ABU DHABI, ABORTION PILLS FOR SALE PHUTHADITJHABA /Orchards WhatsApp ((( (+27) 0633867063)))",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\babortion\\s+pills\\b",
+    "\\bfor\\s+sale\\b",
+    "\\bwhatsapp\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11982830",
+   "pathway": "account-block",
+   "removal_date": "2024-07-05",
+   "oa_status": 200,
+   "title": "aaa framework pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12882616",
+   "pathway": "account-block",
+   "removal_date": "2024-09-20",
+   "oa_status": 429,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11812272",
+   "pathway": "account-block",
+   "removal_date": "2024-07-03",
+   "oa_status": 200,
+   "title": "en 50136-1 pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12277898",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "Gourmetmaxx bedienungsanleitung pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bbedienungsanleitung\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11247795",
+   "pathway": "account-block",
+   "removal_date": "2024-08-29",
+   "oa_status": 200,
+   "title": "IN Bethlehem/United Kingdom [[[[WhatsApp ((( (+27) 781985813))) *____**)) Penis Enlargement Products - Mens Clinic WhatsApp ((( (+27) 781985813))) Liechtenstein",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\bmale\\s+enhancement\\b",
+    "\\bwhatsapp\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.12281875",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "deberes de vida profe manolo pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.14281604",
+   "pathway": "account-block",
+   "removal_date": "2024-12-14",
+   "oa_status": 200,
+   "title": "School of Nursing, Lagos University Teaching Hospital, Idi-Araba Admission List (1st & 2nd) 2024/2025 is out now call (09078816209), to check your admission status. Also for admission assistance contact (DR. MRS GRACE A.A) on (09078816209). Also Admission Lists into: PERI-OPERATIVE NURSING, CARDIOTH",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\badmission\\s+(form|list)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11984990",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "pdf interaktives inhaltsverzeichnis",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11811381",
+   "pathway": "account-block",
+   "removal_date": "2024-07-03",
+   "oa_status": 200,
+   "title": "robin buss count of monte cristo pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12009466",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "como escanear varias hojas en un solo archivo pdf hp",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.14010899",
+   "pathway": "account-block",
+   "removal_date": "2024-10-30",
+   "oa_status": 404,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12114319",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "Pflegetagebuch pdf ausf\u00fcllbar",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11907548",
+   "pathway": "account-block",
+   "removal_date": "2024-07-12",
+   "oa_status": 200,
+   "title": "Click Here To OrderHemp Smart Hemp Gummies Australia From Its Official Website",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bgummies\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11914843",
+   "pathway": "account-block",
+   "removal_date": "2024-07-05",
+   "oa_status": 429,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12972001",
+   "pathway": "account-block",
+   "removal_date": "2024-09-20",
+   "oa_status": 200,
+   "title": "mietvertrag wg muster",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12194727",
+   "pathway": "account-block",
+   "removal_date": "2024-07-11",
+   "oa_status": 200,
+   "title": "DOWNLOAD [PDF] {EPUB} Comprendre et traiter l'anxi\u00e9t\u00e9 sociale - Nouvelles approches en TCC",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bdownload\\b.{0,40}\\b(pdf|epub|book|movie|mp3|mp4|free|gratis)\\b",
+    "\\bepub\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.12654812",
+   "pathway": "account-block",
+   "removal_date": "2024-07-11",
+   "oa_status": 200,
+   "title": "Download Pdf The Divine Project: Reflections on Creation and the Church by Joseph Ratzinger",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bdownload\\b.{0,40}\\b(pdf|epub|book|movie|mp3|mp4|free|gratis)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.11777550",
+   "pathway": "account-block",
+   "removal_date": "2024-07-03",
+   "oa_status": 200,
+   "title": "Maddie die wahrheit \u00fcber die l\u00fcge pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12141491",
+   "pathway": "account-block",
+   "removal_date": "2024-07-06",
+   "oa_status": 200,
+   "title": "De figuris veneris pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.12405266",
+   "pathway": "account-block",
+   "removal_date": "2024-07-07",
+   "oa_status": 200,
+   "title": "Das monster vom blauen planeten pdf",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.11731781",
+   "pathway": "account-block",
+   "removal_date": "2024-07-03",
+   "oa_status": 429,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6769667",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-29",
+   "oa_status": 200,
+   "title": "WA : 0853-1102-5193. Daftar Harga Jual Keranda Jenazah Mauponggo",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.3687403",
+   "pathway": "staff-note",
+   "removal_date": "2020-07-07",
+   "oa_status": 200,
+   "title": "Best Locations for Renting a House in Islamabad",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.7294778",
+   "pathway": "staff-note",
+   "removal_date": "2022-11-07",
+   "oa_status": 429,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6750695",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-29",
+   "oa_status": 200,
+   "title": "WA : 0853-1102-5193. Daftar Harga Jual Tempat Pemandian Jenazah Stainless Pulau Pura",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6716823",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-28",
+   "oa_status": 429,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.4203406",
+   "pathway": "staff-note",
+   "removal_date": "2020-11-03",
+   "oa_status": 200,
+   "title": "~&gt;Free Download Operative Design: A Catalog of Spatial Verbs [Full]",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\b(pdf|epub)\\b.{0,30}\\b(download|gratis|free|kostenlos)\\b",
+    "\\bepub\\b",
+    "\\bfree\\s+download\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.7605553",
+   "pathway": "staff-note",
+   "removal_date": "2023-02-06",
+   "oa_status": 200,
+   "title": "School of Nursing, Ekiti State University Teaching Hospital, Ado-Ekiti,2023/2024 Admission form",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\badmission\\s+(form|list)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6682590",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-28",
+   "oa_status": 200,
+   "title": "WA : 0853-1102-5193. Daftar Harga Jual Keranda Jenazah Suruh",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4230204",
+   "pathway": "staff-note",
+   "removal_date": "2020-11-04",
+   "oa_status": 200,
+   "title": "EBOOK [P.D.F] Patternmaking for Fashion Design (5th Edition) [Full]",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bpdf\\s*$"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4462587",
+   "pathway": "staff-note",
+   "removal_date": "2021-02-01",
+   "oa_status": 200,
+   "title": "#ESP.RePeLis| C\u00f3mo mueren las reinas (2021) H.D Pelicula Completa espa\u00f1ol xnw",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bfull\\s+(movie|hd)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.7733871",
+   "pathway": "staff-note",
+   "removal_date": "2023-03-27",
+   "oa_status": 429,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.4204853",
+   "pathway": "staff-note",
+   "removal_date": "2020-11-03",
+   "oa_status": 200,
+   "title": "[DOWNLOAD] Reading Wonders Literature Anthology Grade 3 (ELEMENTARY CORE READING) Full AudioBook",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\b(pdf|epub)\\b.{0,30}\\b(download|gratis|free|kostenlos)\\b",
+    "\\bepub\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.7947957",
+   "pathway": "staff-note",
+   "removal_date": "2023-05-25",
+   "oa_status": 429,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.7605754",
+   "pathway": "staff-note",
+   "removal_date": "2023-02-06",
+   "oa_status": 200,
+   "title": "Nana College of Nursing Sciences, Anyingba 2023/2024 Admission From, out",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\badmission\\s+(form|list)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4847893",
+   "pathway": "staff-note",
+   "removal_date": "2021-05-31",
+   "oa_status": 200,
+   "title": "[Download~^Mp3] Purity Ring - Another Eternity Album Download",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\bdownload\\b.{0,40}\\b(pdf|epub|book|movie|mp3|mp4|free|gratis)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.7385810",
+   "pathway": "staff-note",
+   "removal_date": "2022-12-12",
+   "oa_status": 429,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6820147",
+   "pathway": "staff-note",
+   "removal_date": "2022-08-04",
+   "oa_status": 200,
+   "title": "Few things you ought to understand about on the internet gaming",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bcasino\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.5887330",
+   "pathway": "staff-note",
+   "removal_date": "2022-02-22",
+   "oa_status": 200,
+   "title": "Get 100% Passing Guarantee With True 2V0-62.21 Exam Dumps",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bdownload\\b.{0,40}\\b(pdf|epub|book|movie|mp3|mp4|free|gratis)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4104853",
+   "pathway": "staff-note",
+   "removal_date": "2020-10-19",
+   "oa_status": 200,
+   "title": "[-@!~FULL-movie]-Watch Christmas Perfection (2020) HD English Full Movie axd",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bfull\\s+(movie|hd)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.7228367",
+   "pathway": "staff-note",
+   "removal_date": "2022-10-24",
+   "oa_status": 200,
+   "title": "Bells University of Technology 2022/2023 jupeb/ Pre-Degree \u00a0Admission form is Out Call \u260e 07066280862\u201307066280862 PROF MRS JUDITH Direct entry form, Transfer form, Change of course Form are all out Call on {+2347066280862 } on how to purchase the form and register online, For Admission Process on how",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\badmission\\s+(form|list)\\b",
+    "\\bform\\s+is\\s+out\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6749082",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-29",
+   "oa_status": 200,
+   "title": "WA : 0853-1102-5193. Daftar Harga Jual Tempat Pemandian Jenazah Stainless Simpang Pematang",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4092010",
+   "pathway": "staff-note",
+   "removal_date": "2020-10-16",
+   "oa_status": 200,
+   "title": "123MovieS::::'|HD|;::::: Watch Supernova (2020) Online Full Or Free wmc",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\b123movies\\b",
+    "\\bfull\\s+(movie|hd)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4522517",
+   "pathway": "staff-note",
+   "removal_date": "2021-02-09",
+   "oa_status": 429,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.5881361",
+   "pathway": "staff-note",
+   "removal_date": "2022-02-22",
+   "oa_status": 429,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.4160829",
+   "pathway": "staff-note",
+   "removal_date": "2020-10-30",
+   "oa_status": 404,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.5880717",
+   "pathway": "staff-note",
+   "removal_date": "2022-01-28",
+   "oa_status": 200,
+   "title": "Using the NCLEX-PN Dumps Pdf Moderate Your Preparation [2022]",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.3775095",
+   "pathway": "staff-note",
+   "removal_date": "2020-06-10",
+   "oa_status": 200,
+   "title": "How to Buy Steel Wire Rod",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6710829",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-29",
+   "oa_status": 200,
+   "title": "WA : 0853-1102-5193. Daftar Harga Jual Payung Keranda Sutojayan",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6549232",
+   "pathway": "staff-note",
+   "removal_date": "2022-08-09",
+   "oa_status": 200,
+   "title": "\u0645\u0639\u062a\u0628\u0631\u062a\u0631\u06cc\u0646 \u06a9\u0627\u0632\u06cc\u0646\u0648 \u0622\u0646\u0644\u0627\u06cc\u0646 \u0641\u0627\u0631\u0633\u06cc",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6675606",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-29",
+   "oa_status": 200,
+   "title": "Jual Keranda Kabupaten Landak 0812 9869 9940",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.7807775",
+   "pathway": "staff-note",
+   "removal_date": "2023-04-12",
+   "oa_status": 200,
+   "title": "Diaetolin Deutschland Bewertung 2023, H\u00f6hle der l\u00f6wen, Erfahrungen &amp; Preis, Kaufen",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.4144444",
+   "pathway": "staff-note",
+   "removal_date": "2020-10-28",
+   "oa_status": 200,
+   "title": "@FILM]-WaTCH.! Before the Fire (2020) Online HD Full Movie | Free On Putlockers xts",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bfull\\s+(movie|hd)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.8102982",
+   "pathway": "staff-note",
+   "removal_date": "2023-07-03",
+   "oa_status": 200,
+   "title": "7 Things About Ringsmaker You'll Kick Yourself for Not Knowing",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6964550",
+   "pathway": "staff-note",
+   "removal_date": "2022-08-05",
+   "oa_status": 200,
+   "title": "Partisi Sekat Shaf Pembatas Sholat Masjid Stainless Musholla Buol 0812 9869 9940",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.5848884",
+   "pathway": "staff-note",
+   "removal_date": "2022-02-23",
+   "oa_status": 200,
+   "title": "Preparation With NSE4_FGT-7.0 PDF Questions 2022 Lead You To Success",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.7068962",
+   "pathway": "staff-note",
+   "removal_date": "2022-10-06",
+   "oa_status": 200,
+   "title": "[123Movies.Watch] Summering 2022 streaming online Free on 123movies &amp; Reddit",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\b123movies\\b",
+    "\\bfull\\s+(movie|hd)\\b",
+    "\\bwatch\\s+(online|free)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.5938108",
+   "pathway": "staff-note",
+   "removal_date": "2022-02-23",
+   "oa_status": 200,
+   "title": "HP2-I05 Dumps PDF 2022 Surprising Tips to Enhance Preparation",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6586136",
+   "pathway": "staff-note",
+   "removal_date": "2022-08-09",
+   "oa_status": 200,
+   "title": "Invest Good Time with Adult Massage Cape Town",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.4164435",
+   "pathway": "staff-note",
+   "removal_date": "2020-11-02",
+   "oa_status": 200,
+   "title": "(FilmCB01) Synchronic (2020) Streaming ITA Altadefinizione Guarda Gratis wrr",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6874614",
+   "pathway": "staff-note",
+   "removal_date": "2022-07-29",
+   "oa_status": 200,
+   "title": "Ibu Heni 0822-1455-5757 Distributor Herbalife di Rejoso Pasuruan",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4225139",
+   "pathway": "staff-note",
+   "removal_date": "2020-11-03",
+   "oa_status": 404,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.4112158",
+   "pathway": "staff-note",
+   "removal_date": "2020-10-21",
+   "oa_status": 404,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.7002889",
+   "pathway": "staff-note",
+   "removal_date": "2022-10-10",
+   "oa_status": 200,
+   "title": "Super CBD Gummies - Legit or Fake Reviews Read Before Buy",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bgummies\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.8049963",
+   "pathway": "staff-note",
+   "removal_date": "2023-06-23",
+   "oa_status": 200,
+   "title": "Efektivitas Kebijakan Intervensi dalam Penanggulangan Stunting",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6726244",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-29",
+   "oa_status": 200,
+   "title": "Jual Keranda Jenazah Kabupaten Mandailing Natal 0812 9869 9940",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.3592301",
+   "pathway": "staff-note",
+   "removal_date": "2022-05-06",
+   "oa_status": 200,
+   "title": "4 Homemade Dog Treats for this Holiday Season",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.7964884",
+   "pathway": "staff-note",
+   "removal_date": "2023-05-25",
+   "oa_status": 200,
+   "title": "6 Online Communities About Buy Cheap Sports Gear Online You Should Join",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bbuy\\s+(now|online|cheap)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4162811",
+   "pathway": "staff-note",
+   "removal_date": "2020-11-02",
+   "oa_status": 200,
+   "title": "!Regarder*HD`! The Last Vermeer (2020) [HD] FILM complet STREAMING VF Cin\u00e9ma 4k lyw",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6702096",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-28",
+   "oa_status": 200,
+   "title": "WA : 0853-1102-5193. Daftar Harga Jual Keranda Pemandian Multifungsi Ciledug",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4139305",
+   "pathway": "staff-note",
+   "removal_date": "2020-10-27",
+   "oa_status": 200,
+   "title": "Streaming vF~ Les Sept de Chicago (2020) streaming vf et vostfr en Ligne Complet wyb",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.7581039",
+   "pathway": "staff-note",
+   "removal_date": "2023-03-16",
+   "oa_status": 200,
+   "title": "On Which Hand Must you Put On An Evil Eye Bracelet?",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6765406",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-29",
+   "oa_status": 200,
+   "title": "WA : 0853-1102-5193. Daftar Harga Jual Keranda Jenazah Matan Hilir Selatan",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4873207",
+   "pathway": "staff-note",
+   "removal_date": "2021-05-31",
+   "oa_status": 429,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.7200139",
+   "pathway": "staff-note",
+   "removal_date": "2022-10-18",
+   "oa_status": 200,
+   "title": "2022/2023 Admission List Lead City University\u00a0\u00a0is out, (1st/2nd, Batch List) To check \u260e 0806_7046_209, Prof Mrs Faith +23480-6704-6209 For Checking Of Result , Admission List, Processing Of Admission Into Any Department And Processing Of Form For NewStudent Into Any Program. Degree, Pre-degree,Diplo",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\badmission\\s+(form|list)\\b",
+    "\\bhelpline\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4263982",
+   "pathway": "staff-note",
+   "removal_date": "2020-11-10",
+   "oa_status": 200,
+   "title": "Keto VIP Fuel - Weight Loss Supplements And Diet Pills",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bweight\\s*loss\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6732811",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-29",
+   "oa_status": 200,
+   "title": "WA : 0853-1102-5193. Daftar Harga Jual Bendera Kematian Jenazah Pagerruyung",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6763448",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-28",
+   "oa_status": 404,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.4908068",
+   "pathway": "staff-note",
+   "removal_date": "2021-07-08",
+   "oa_status": 200,
+   "title": "Spells to make him fall in love with you +918696805715",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\bwhatsapp\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4231656",
+   "pathway": "staff-note",
+   "removal_date": "2020-11-03",
+   "oa_status": 404,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6910879",
+   "pathway": "staff-note",
+   "removal_date": "2022-07-29",
+   "oa_status": 200,
+   "title": "TELP 0812-1456-7837 Toko Karangan Bunga dekat ATM BNI ALFA MIDI SENGKANG",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4792147",
+   "pathway": "staff-note",
+   "removal_date": "2021-05-25",
+   "oa_status": 404,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6741742",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-29",
+   "oa_status": 200,
+   "title": "WA : 0853-1102-5193. Daftar Harga Jual Scoop Stretcher Kepahiang",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4808423",
+   "pathway": "staff-note",
+   "removal_date": "2021-05-31",
+   "oa_status": 200,
+   "title": "Download Zip : Mp3 Haftbefehl - Russisch Roulette (Deluxe) @Full Album Download",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\bdownload\\b.{0,40}\\b(pdf|epub|book|movie|mp3|mp4|free|gratis)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4789669",
+   "pathway": "staff-note",
+   "removal_date": "2021-05-25",
+   "oa_status": 404,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.7532558",
+   "pathway": "staff-note",
+   "removal_date": "2023-01-13",
+   "oa_status": 404,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6485704",
+   "pathway": "staff-note",
+   "removal_date": "2022-08-12",
+   "oa_status": 200,
+   "title": "11 Ways to Completely Sabotage Your summer reading program near Clarksville - TN state",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6762724",
+   "pathway": "staff-note",
+   "removal_date": "2022-07-01",
+   "oa_status": 200,
+   "title": "School of Basic Midwifery, Ihiala\u00a0Admission Form 2022/2023,is Out,Call 08036640134 Dr.Mrs. Faith A.A On 08036640134 For More Details On How To Apply And Register Online",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": true,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\badmission\\s+(form|list)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6636070",
+   "pathway": "staff-note",
+   "removal_date": "2022-08-04",
+   "oa_status": 200,
+   "title": "Trucos para sacar el m\u00e1ximo partido a la reforma de tu piso",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.5955519",
+   "pathway": "staff-note",
+   "removal_date": "2022-02-23",
+   "oa_status": 200,
+   "title": "1V0-61.21 Dumps PDF 2022 Definite Guide For Preparation",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.4248841",
+   "pathway": "staff-note",
+   "removal_date": "2020-11-06",
+   "oa_status": 404,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.4641557",
+   "pathway": "staff-note",
+   "removal_date": "2021-07-20",
+   "oa_status": 200,
+   "title": "15 Best Finger Foods for Small Weddings",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6697843",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-28",
+   "oa_status": 200,
+   "title": "WA : 0853-1102-5193. Daftar Harga Jual Tenda Pemandian Jenazah Kedawung",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.7591930",
+   "pathway": "staff-note",
+   "removal_date": "2023-02-01",
+   "oa_status": 404,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.1297254",
+   "pathway": "staff-note",
+   "removal_date": "2018-06-25",
+   "oa_status": 200,
+   "title": "Acc 422,Uop Acc 422,Acc 422 Entire Course New",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6888192",
+   "pathway": "staff-note",
+   "removal_date": "2022-07-29",
+   "oa_status": 200,
+   "title": "HP 0812-1456-7837 Toko Florist di Ti Zain Mappi Papua Karangan Bunga papan",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.5865279",
+   "pathway": "staff-note",
+   "removal_date": "2022-02-22",
+   "oa_status": 200,
+   "title": "ValidQuestions is a sure-pass Salesforce CPQ-Specialist Questions",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6858152",
+   "pathway": "staff-note",
+   "removal_date": "2022-08-10",
+   "oa_status": 200,
+   "title": "Jual Troli Hotel Simeulue Wa 0812-9869-9940",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4835749",
+   "pathway": "staff-note",
+   "removal_date": "2021-06-02",
+   "oa_status": 200,
+   "title": "love marriage problem solution astrology +91-9772829207 hamilton denmark",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6690257",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-28",
+   "oa_status": 200,
+   "title": "WA : 0853-1102-5193. Daftar Harga Jual Tenda Pemandian Jenazah Kronjo",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4191937",
+   "pathway": "staff-note",
+   "removal_date": "2020-12-04",
+   "oa_status": 200,
+   "title": "Read Book [PDF] David Goes To School (David Books [Shannon]) Full-Acces",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\b(pdf|epub)\\b.{0,30}\\b(download|gratis|free|kostenlos)\\b",
+    "\\bepub\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6831632",
+   "pathway": "staff-note",
+   "removal_date": "2022-08-10",
+   "oa_status": 200,
+   "title": "WA 0822-4203-4567 Alamat Toko Bunga Papan di Curug Banten",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.7932307",
+   "pathway": "staff-note",
+   "removal_date": "2023-05-24",
+   "oa_status": 200,
+   "title": "10 Compelling Reasons Why You Need Authentic Or Replica Jersey Cheap",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6908782",
+   "pathway": "staff-note",
+   "removal_date": "2022-07-29",
+   "oa_status": 200,
+   "title": "\u300a\u4eba\u751f\u5927\u4e8b\u300b\u7dda\u4e0a\u770b\u5b8c\u6574\u7248 - 2022\u5e74\u7535\u5f71HK /TW",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6698093",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-29",
+   "oa_status": 200,
+   "title": "WA : 0853-1102-5193. Daftar Harga Jual Kain Penutup Keranda Jenazah Sekar",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6708253",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-28",
+   "oa_status": 200,
+   "title": "WA : 0853-1102-5193. Daftar Harga Jual Keranda Pemandian Multifungsi Kampak",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.7527702",
+   "pathway": "staff-note",
+   "removal_date": "2023-01-16",
+   "oa_status": 200,
+   "title": "FERTILITY POTENTIAL CLASSIFICATION OF SOILS OF TIPUKJAN WATERSHED OF ASSAM, INDIA USING PRINCIPAL COMPONENT ANALYSIS",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6755732",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-29",
+   "oa_status": 200,
+   "title": "WA : 0853-1102-5193. Daftar Harga Jual Tempat Pemandian Jenazah Stainless Rawas Ulu",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4870648",
+   "pathway": "staff-note",
+   "removal_date": "2021-05-31",
+   "oa_status": 200,
+   "title": "Download Zip : Mp3 Loretta Goggi - Collection: Loretta Goggi @Full Album Download",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\bdownload\\b.{0,40}\\b(pdf|epub|book|movie|mp3|mp4|free|gratis)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6717590",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-29",
+   "oa_status": 200,
+   "title": "Jual Troli Barang Kota Gorontalo 0812 9869 9940",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4859976",
+   "pathway": "staff-note",
+   "removal_date": "2021-05-31",
+   "oa_status": 200,
+   "title": "Download Zip : Mp3 Alice Cooper - A Paranormal Evening at the Olympia, Par @Full Album Download",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\bdownload\\b.{0,40}\\b(pdf|epub|book|movie|mp3|mp4|free|gratis)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6702422",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-28",
+   "oa_status": 200,
+   "title": "WA : 0853-1102-5193. Daftar Harga Jual Keranda Pemandian Multifungsi Lengkong",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6857397",
+   "pathway": "staff-note",
+   "removal_date": "2022-08-08",
+   "oa_status": 200,
+   "title": "\u010cern\u00fd telefon (2022) \u300eCel\u00fd-film\u300f| CZ!Titulky Sledujte-Filmy'zdarma",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6898841",
+   "pathway": "staff-note",
+   "removal_date": "2022-07-29",
+   "oa_status": 200,
+   "title": "(WA) 0822-4602-4567 Karangan Bunga HUT Polres Tni Korem Ternate Maluku Utara",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.7376298",
+   "pathway": "staff-note",
+   "removal_date": "2022-11-29",
+   "oa_status": 200,
+   "title": "James Hope University,Post UTME Admission Form 2022/2023 Academic session call (070)66280862 \u260e 07066280862 PROF MRS FAITH APPLICATION FORMS \u00a0(07066280862) Candidates who scored 120 and above are eligible for screening. In addition, candidates must possess five (5) credit passes at one sitting in rel",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\badmission\\s+(form|list)\\b",
+    "\\bpost\\s+utme\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.7380716",
+   "pathway": "staff-note",
+   "removal_date": "2022-12-13",
+   "oa_status": 200,
+   "title": "\u0e14\u0e2b\u0e19\u0e07 Sick of Myself 2022 \u0e40\u0e15\u0e21\u0e40\u0e23\u0e2d\u0e07 [HD] \u0e1e\u0e32\u0e01\u0e22\u0e44\u0e17\u0e22",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.7304252",
+   "pathway": "staff-note",
+   "removal_date": "2022-11-09",
+   "oa_status": 200,
+   "title": "Crescent University,Undergraduate Admission List 2022/2023 Batch 1st and 2nd is Out \u00a0\u260e[07066280862]-\u260e 07066280862 Prof Mrs Mary Candidates From Nigeria must posses the Senior Secondary School Certificate or its equivalent with five credits to include English Language and either Physics, Chemistry, B",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\badmission\\s+(form|list)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.7149998",
+   "pathway": "staff-note",
+   "removal_date": "2022-10-06",
+   "oa_status": 404,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.4190671",
+   "pathway": "staff-note",
+   "removal_date": "2020-11-03",
+   "oa_status": 200,
+   "title": "!$PDF ~*EPub Essence of the Bhagavad Gita: A Contemporary Guide to Yoga, Meditation, and Indian Philosophy (Wisdom of India (2)) Full PDF",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\b(pdf|epub)\\b.{0,30}\\b(download|gratis|free|kostenlos)\\b",
+    "\\bepub\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4703369",
+   "pathway": "staff-note",
+   "removal_date": "2021-04-22",
+   "oa_status": 200,
+   "title": "IN BRAKPAN +27633867063 Amapills safe legal ...\\\\ Abortion Pills for sale in ... BRAKPAN MAPETLA !^%^&amp;!^%^&amp; Tue Apr 20 2021 06:06:56 GMT+0200 (South Africa Standard Time)",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\babortion\\s+pills\\b",
+    "\\bfor\\s+sale\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6042538",
+   "pathway": "staff-note",
+   "removal_date": "2022-02-23",
+   "oa_status": 200,
+   "title": "Top Recommended E20-575 Exam Dumps (2022) For Outstanding Results",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6918093",
+   "pathway": "staff-note",
+   "removal_date": "2022-07-29",
+   "oa_status": 200,
+   "title": "TELP 0812-1456-7837 Toko Karangan Bunga dekat PT. Gudang Garam Tbk",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6686940",
+   "pathway": "staff-note",
+   "removal_date": "2022-08-10",
+   "oa_status": 200,
+   "title": "Jual Emas Kabupaten Lampung Utara 0821-3495-0277",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.7332975",
+   "pathway": "staff-note",
+   "removal_date": "2022-12-20",
+   "oa_status": 200,
+   "title": "YIELD, PLANT NUTRIENT UPTAKE AND SOIL FERTILITY STATUS OF SUMMER MAIZE (Zea Mays L.) AS AFFECTED BY DIFFERENT MULCHING AND NUTRIENT MANAGEMENT PRACTICES",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.7493969",
+   "pathway": "staff-note",
+   "removal_date": "2022-12-30",
+   "oa_status": 404,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6947635",
+   "pathway": "staff-note",
+   "removal_date": "2022-08-01",
+   "oa_status": 404,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6661622",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-28",
+   "oa_status": 200,
+   "title": "WA 0853-1102-5193 Daftar Harga Tempat Pemandian Jenazah Nguter",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4193939",
+   "pathway": "staff-note",
+   "removal_date": "2020-11-03",
+   "oa_status": 200,
+   "title": "Free Download Kakebo - The Art Of Saving Pre Order",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\b(pdf|epub)\\b.{0,30}\\b(download|gratis|free|kostenlos)\\b",
+    "\\bdownload\\b.{0,40}\\b(pdf|epub|book|movie|mp3|mp4|free|gratis)\\b",
+    "\\bepub\\b",
+    "\\bfree\\s+download\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4130535",
+   "pathway": "staff-note",
+   "removal_date": "2020-10-26",
+   "oa_status": 200,
+   "title": "{streaming Vf} Les michetonneuses (2020) Streaming vF Film Complet en Ligne thn",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.8079051",
+   "pathway": "staff-note",
+   "removal_date": "2023-06-26",
+   "oa_status": 404,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6119658",
+   "pathway": "staff-note",
+   "removal_date": "2022-02-23",
+   "oa_status": 200,
+   "title": "CertNexus CFR-310 Dumps - Things You Should Know About Our CFR-310 Exam Dumps",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\b(pdf|epub)\\b.{0,30}\\b(download|gratis|free|kostenlos)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6915696",
+   "pathway": "staff-note",
+   "removal_date": "2022-07-29",
+   "oa_status": 200,
+   "title": "TELP 0812-1456-7837 Toko Karangan Bunga dekat Kejaksaan Negeri Parigi Moutong",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6718007",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-29",
+   "oa_status": 200,
+   "title": "Jual Troli Barang Kabupaten Halmahera Tengah 0812 9869 9940",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.5923909",
+   "pathway": "staff-note",
+   "removal_date": "2022-02-23",
+   "oa_status": 200,
+   "title": "NS0-194 Dumps PDF 2022 Can Boost Your Exam Preparation",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6872422",
+   "pathway": "staff-note",
+   "removal_date": "2022-07-29",
+   "oa_status": 200,
+   "title": "Ibu Heni 0822-1455-5757 Distributor Herbalife di Purwoasri Kediri",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4190313",
+   "pathway": "staff-note",
+   "removal_date": "2020-11-03",
+   "oa_status": 200,
+   "title": "[DOWNLOAD $PDF$] Doing Right: A Practical Guide to Ethics for Medical Trainees and Physicians *Full Online",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\b(pdf|epub)\\b.{0,30}\\b(download|gratis|free|kostenlos)\\b",
+    "\\bdownload\\b.{0,40}\\b(pdf|epub|book|movie|mp3|mp4|free|gratis)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6970719",
+   "pathway": "staff-note",
+   "removal_date": "2022-08-08",
+   "oa_status": 200,
+   "title": "K2 Fat Burner Reviews\u2013: Price ! Side Effects !",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6890366",
+   "pathway": "staff-note",
+   "removal_date": "2022-07-29",
+   "oa_status": 200,
+   "title": "School of Nursing, Nnamdi Azikiwe University Teaching Hospital, Nnewi\u00a02022/2023 Admission Forms are on sales call 08061730689 Admin DR Mrs GRACE OPARA on 08061730689 for more details on how to apply and register online.",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\badmission\\s+(form|list)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4472604",
+   "pathway": "staff-note",
+   "removal_date": "2021-02-02",
+   "oa_status": 200,
+   "title": "\u300a\u9b3c\u706d\u4e4b\u5203 \u5267\u573a\u7248 \u65e0\u9650\u5217\u8f66\u7bc7\u300b| \u5b8c\u6574\u7248 Demon Slayer: Infinity Train 2020 \u5728\u7ebf\u89c2\u770b",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6720655",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-29",
+   "oa_status": 200,
+   "title": "WA : 0853-1102-5193. Daftar Harga Jual Jam Digital Masjid Bandung Kidul",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4261720",
+   "pathway": "staff-note",
+   "removal_date": "2020-11-09",
+   "oa_status": 200,
+   "title": "Filmywap Watch Corona Zombies (2020) Online Full Movie Download Hindi Free Streaming nzn",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bdownload\\b.{0,40}\\b(pdf|epub|book|movie|mp3|mp4|free|gratis)\\b",
+    "\\bfull\\s+(movie|hd)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6848136",
+   "pathway": "staff-note",
+   "removal_date": "2022-07-29",
+   "oa_status": 200,
+   "title": "WA. 0852-3039-5551 Meja Ala Cafe Surabaya",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6747297",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-29",
+   "oa_status": 200,
+   "title": "WA : 0853-1102-5193. Daftar Harga Jual Tempat Pemandian Jenazah Stainless Bunguran Timur",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4175126",
+   "pathway": "staff-note",
+   "removal_date": "2020-11-02",
+   "oa_status": 200,
+   "title": "Capgras (2020) Pelicula Completa Latino Mega *HD*720p En Espa\u00f1ol Gratis oir",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bfull\\s+(movie|hd)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6906869",
+   "pathway": "staff-note",
+   "removal_date": "2022-07-29",
+   "oa_status": 200,
+   "title": "Jual Keranda SERANG BARU 0812-9254-9816",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4852280",
+   "pathway": "staff-note",
+   "removal_date": "2021-05-31",
+   "oa_status": 200,
+   "title": "DOWNLOAD ALBUM: Crypt Sermon - The Ruins of Fading Light (Zip Mp3)",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4128336",
+   "pathway": "staff-note",
+   "removal_date": "2020-10-26",
+   "oa_status": 200,
+   "title": "WATCH Cosa sar\u00e0 (2020) HD Full Movie online free xts",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bfull\\s+(movie|hd)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6660447",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-28",
+   "oa_status": 200,
+   "title": "WA 0853-1102-5193 Daftar Harga Tempat Pemandian Jenazah Muncang",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4043464",
+   "pathway": "staff-note",
+   "removal_date": "2020-09-23",
+   "oa_status": 200,
+   "title": "Antebellum 2020 PEL\u00cdCULA COMPLETA Ver_HD (DESCARGA_GRATIS)",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.4259099",
+   "pathway": "staff-note",
+   "removal_date": "2020-11-09",
+   "oa_status": 200,
+   "title": "123movies|HQ|watch The Swan Princess: A Royal Wedding (2020) full for free PutlockerS dat",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\b123movies\\b",
+    "\\bfull\\s+(movie|hd)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6905279",
+   "pathway": "staff-note",
+   "removal_date": "2022-07-29",
+   "oa_status": 200,
+   "title": "Daftar Harga Keranda CISOMPET 0812-9254-9816",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": true,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6734069",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-29",
+   "oa_status": 200,
+   "title": "WA : 0853-1102-5193. Daftar Harga Jual Bendera Kematian Jenazah Tual",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.5853308",
+   "pathway": "staff-note",
+   "removal_date": "2022-02-06",
+   "oa_status": 200,
+   "title": "100% Updated 300-215 PDF Dumps - Exam Dumps",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.3537950",
+   "pathway": "staff-note",
+   "removal_date": "2020-03-30",
+   "oa_status": 200,
+   "title": "(0534 054 61 15)-CYTOTEC D\u00dc\u015e\u00dcK HAPI \u0130LET\u0130\u015e\u0130M: WhatsApp,Bilecik,",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\bwhatsapp\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4046061",
+   "pathway": "staff-note",
+   "removal_date": "2020-09-23",
+   "oa_status": 404,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.4189992",
+   "pathway": "staff-note",
+   "removal_date": "2020-11-03",
+   "oa_status": 200,
+   "title": "Free Download Coding for Pediatrics 2014: A Manual for Pediatric Documentation and Payment FOR ANY DEVICE",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\b(pdf|epub)\\b.{0,30}\\b(download|gratis|free|kostenlos)\\b",
+    "\\bfree\\s+download\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.7368207",
+   "pathway": "staff-note",
+   "removal_date": "2022-12-12",
+   "oa_status": 200,
+   "title": "How to Land Your Dream Job Without a Career Site",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.7480601",
+   "pathway": "staff-note",
+   "removal_date": "2022-12-27",
+   "oa_status": 200,
+   "title": "Jedna z najlepszych strategii u\u017cytkownika nagwarantowana po\u017cyczka dla zad\u0142u\u017conych",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.4194647",
+   "pathway": "staff-note",
+   "removal_date": "2020-11-03",
+   "oa_status": 200,
+   "title": "[DOWNLOAD $PDF$] ICD-10-CM and ICD-10-PCS Coding Handbook, without Answers, 2019 Rev. Ed. Full Books",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bdownload\\b.{0,40}\\b(pdf|epub|book|movie|mp3|mp4|free|gratis)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4202390",
+   "pathway": "staff-note",
+   "removal_date": "2020-11-03",
+   "oa_status": 200,
+   "title": "EBOOK [P.D.F] National Geographic Atlas of the World, Tenth Edition Full Pages",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6850917",
+   "pathway": "staff-note",
+   "removal_date": "2022-07-29",
+   "oa_status": 200,
+   "title": "Hp/Wa 0822-4602-4567 Toko Karangan Bunga Ngadiluwih Kediri 24 Jam",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6807622",
+   "pathway": "staff-note",
+   "removal_date": "2022-08-04",
+   "oa_status": 200,
+   "title": "The Advanced Guide to Green Mountain Remodeling",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6343860",
+   "pathway": "staff-note",
+   "removal_date": "2022-03-31",
+   "oa_status": 200,
+   "title": "COGNITIVE PERSPECTIVES OF TRAINING GOOD VOCABULARY LEARNERS",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "UNCORROBORATED",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.4153377",
+   "pathway": "staff-note",
+   "removal_date": "2020-10-29",
+   "oa_status": 404,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.4786739",
+   "pathway": "staff-note",
+   "removal_date": "2021-05-31",
+   "oa_status": 200,
+   "title": "Zip[Download~^Mp3] EU.CLIDES Reservado - EP Album Download",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d",
+    "\\bdownload\\b.{0,40}\\b(pdf|epub|book|movie|mp3|mp4|free|gratis)\\b"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4523791",
+   "pathway": "staff-note",
+   "removal_date": "2021-02-09",
+   "oa_status": 404,
+   "title": null,
+   "n_authors": null,
+   "n_refs": null,
+   "cited_by": null,
+   "has_orcid": null,
+   "verdict": "NO_METADATA",
+   "spam_hits": []
+  },
+  {
+   "doi": "10.5281/zenodo.6861704",
+   "pathway": "staff-note",
+   "removal_date": "2022-08-10",
+   "oa_status": 200,
+   "title": "0822-1455-5757 (COACH NIA) Distributor Herbalife di Nduga Papua",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6918773",
+   "pathway": "staff-note",
+   "removal_date": "2022-07-29",
+   "oa_status": 200,
+   "title": "WA : 0811-2324-77 Kontraktor Jasa Pembangunan Jalan Raya dan Tol Selong Berpengalaman",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6698687",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-29",
+   "oa_status": 200,
+   "title": "WA : 0853-1102-5193. Daftar Harga Jual Kain Penutup Keranda Jenazah Wonosari",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.6751702",
+   "pathway": "staff-note",
+   "removal_date": "2022-06-29",
+   "oa_status": 200,
+   "title": "WA : 0853-1102-5193. Daftar Harga Jual Tempat Pemandian Jenazah Stainless Banyuglugur",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\+?\\d[\\d\\-\\s\\(\\)\\.]{8,}\\d"
+   ]
+  },
+  {
+   "doi": "10.5281/zenodo.4150791",
+   "pathway": "staff-note",
+   "removal_date": "2020-10-29",
+   "oa_status": 200,
+   "title": "[WATCH-Free]. Scooby ! (2020) . DVD4K. Full.Online.FULL. Movie@Shared jfy",
+   "n_authors": 1,
+   "n_refs": 0,
+   "cited_by": 0,
+   "has_orcid": false,
+   "verdict": "CLEAR_SPAM_SIGNAL",
+   "spam_hits": [
+    "\\bfull\\s+(movie|hd)\\b"
+   ]
+  }
+ ]
+}
