@@ -1,0 +1,53 @@
+{
+ "dataset": "tombstone-mirror",
+ "title": "The Tombstone Mirror",
+ "version": "v1.0",
+ "date": "2026-07-12",
+ "description": "Complete machine-readable mirror of what Zenodo serves for the 2026-06-19 deletion of the Crimson Hexagonal Archive: the full API-tombstone census of all 2,027 deleted objects with exact sweep chronology and removed_by enumeration, 57 rich pre-shrink metadata captures, the kill-ledger cohort extraction, and the stripped-page corpus documenting the live reduction of the tombstone surface on 2026-07-12. Forensic basis: deposit #1068 (AXN:043D.EMPIRICAL.⭕🌀🌾🗝️🧪🟡); evidence anchor: deposit #1071 (AXN:0440.EMPIRICAL.🕕🗿✨△📌👋). Working custody: platform-erosion-observatory, data/zenodo-deletion-ledger/tombstones/ (commit 5b3ac0c).",
+ "total_files": 5,
+ "total_bytes": 9937638,
+ "total_size_human": "9.48 MB",
+ "severance_date": "2026-06-19",
+ "records": [
+  {
+   "name": "tombstone-api.jsonl",
+   "path": "/datasets/tombstone-mirror/tombstone-api.jsonl",
+   "size_bytes": 1096718,
+   "size_human": "1.05 MB",
+   "sha256": "31ef08cecbb3f9ca8c460fb5406a4cf5dd0719118fa666b2ae9b196b1a1526f9",
+   "description": "Full API-tombstone census: all 2,027 deleted objects (1,136 records + 891 concept parents), each returning HTTP 410 with removal timestamp to microsecond precision, removed_by, removal_reason, and citation_text. Complete sweep chronology: 2026-06-19T11:34:17.929620Z through 11:48:50.039372Z — 872 seconds, 1,915 of 2,005 staff removals in the first five minutes at ~6.6 objects/second sustained."
+  },
+  {
+   "name": "tombstone-mirror.jsonl",
+   "path": "/datasets/tombstone-mirror/tombstone-mirror.jsonl",
+   "size_bytes": 820734,
+   "size_human": "801.5 KB",
+   "sha256": "cbe27c8927f26b80857e77c08961cdb88a0c0c00760beaee1c2e95e9e3c31fe4",
+   "description": "57 rich HTML-tombstone captures containing the complete embedded record JSON: full metadata, all creators with heteronym affiliations, abstracts, related-identifier mesh (152 edges), file inventories with names/sizes/md5 checksums, and terminal usage statistics (157 downloads, 2,134 unique views at death across the 57). The remaining 1,079 entries record the post-shrink stripped state (record: null) with fetch timestamps."
+  },
+  {
+   "name": "census-summary.json",
+   "path": "/datasets/tombstone-mirror/census-summary.json",
+   "size_bytes": 1389,
+   "size_human": "1.4 KB",
+   "sha256": "8895d0dffdb1d9487ecd40b1631a4a7cc2e4a3719974533934929390a897efa4",
+   "description": "Computed census: removed_by total enumeration (2,005 staff / 19 uploader / 3 empty-tombstone anomalies), per-minute sweep histogram, rich-capture aggregates, and the documented surface-shrink window (last rich capture 2026-07-12T01:50:52Z, first stripped page 02:03:55Z)."
+  },
+  {
+   "name": "raw-tombstone-pages-20260712.tar.gz",
+   "path": "/datasets/tombstone-mirror/raw-tombstone-pages-20260712.tar.gz",
+   "size_bytes": 7672118,
+   "size_human": "7.32 MB",
+   "sha256": "ee2eb172689a6afd7a1ab7cfa2516600a4fd1cae6450b3834730dc2525526b0b",
+   "description": "All 1,079 stripped tombstone HTML pages as fetched 2026-07-12 ~02:03–02:55Z — evidence of the reduced surface state after the rich embedded record JSON stopped being served, under every user-agent tested and via /export/ endpoints."
+  },
+  {
+   "name": "cha-kill-ledger-20260619.csv",
+   "path": "/datasets/tombstone-mirror/cha-kill-ledger-20260619.csv",
+   "size_bytes": 346679,
+   "size_human": "338.6 KB",
+   "sha256": "8e06d6688de2ea0d693c9696c91d072dce3c7c2c29a9173287dbeff3b1aee24f",
+   "description": "The 1,136-row CHA cohort extraction from Zenodo’s own deletion-ledger exporter (records-deleted.csv.gz, md5-verified against the platform’s listing): record_id, DOI, parent, removal note/reason/date, citation_text. Companion copy hash-anchored in-archive at deposit #1071."
+  }
+ ]
+}
