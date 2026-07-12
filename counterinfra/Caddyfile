@@ -1,0 +1,41 @@
+alexanarch.org, www.alexanarch.org {
+    root * /srv/alexanarch
+    encode zstd gzip
+
+    redir /observatory/surface-weather /observatory/ permanent
+    redir /observatory/surface-weather/ /observatory/ permanent
+    redir /browse /s/browse/ permanent
+    redir /browse/ /s/browse/ permanent
+    redir /wiki /s/wiki/ permanent
+    redir /wiki/ /s/wiki/ permanent
+    redir /graph /s/graph/ permanent
+    redir /graph/ /s/graph/ permanent
+    redir /axn/* /s{uri} permanent
+
+    header {
+        Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://gc.zgo.at; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://gc.zgo.at https://alexanarch.goatcounter.com https://raw.githubusercontent.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://github.com"
+        X-Content-Type-Options nosniff
+        X-Frame-Options DENY
+        Referrer-Policy strict-origin-when-cross-origin
+        Permissions-Policy "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+    }
+
+    @json path /data/*.json
+    header @json {
+        Content-Type application/json
+        Access-Control-Allow-Origin *
+        Cache-Control "public, max-age=60"
+    }
+
+    @markdown path /data/*.md
+    header @markdown {
+        Content-Type "text/markdown; charset=utf-8"
+        Access-Control-Allow-Origin *
+        Cache-Control "public, max-age=60"
+    }
+
+    @api path /api/*
+    header @api Access-Control-Allow-Origin *
+
+    file_server
+}
