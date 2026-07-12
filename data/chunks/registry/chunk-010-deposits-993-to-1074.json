@@ -1,8 +1,8 @@
 {
   "chunk_number": 10,
   "first_deposit": 993,
-  "last_deposit": 1073,
-  "count": 81,
+  "last_deposit": 1074,
+  "count": 82,
   "deposits": [
     {
       "deposit_number": 993,
@@ -3989,6 +3989,20 @@
       "status": "ACTIVE",
       "full_text_path": "/data/deposits/AXN-0442.md",
       "description": "Fifth deposit in the EA-CORRESPONDENCE-CERN series. Isolates the doctrinal sentence in the DPO’s Ref:MSG130477837 message (verbatim in #1047 §2) — that where account identifiers “may be owned by legal persons, or may be used by or shared among several natural persons … the associated data in Zenodo would not necessarily constitute personal data, and OC 11 would not apply” — and states its consequence with exactness: an account/data-category conflation that draws no distinction between data relating to a legal person and the personal data of the identifiable natural persons who administer, author, and correspond through institutional, shared, and pseudonymous accounts, producing a rights vacuum across the platform’s ordinary institutional architecture and rendering security-layer records inaccessible to the persons recorded in them. Publishes the Track 1 clarification request as finalized for transmission within RQF3807508: confirm whether the rule is general for all such accounts, or state the limiting principle and the rights pathway for natural persons operating through such accounts. Two-track disposition with a seven-day correction window; non-correction, per #1047 §4.2, is itself an answer. Cross-references #920, #924, #948 (§104.1 referral), #1047, #1057, #1062, and the Tombstone Mirror census."
+    },
+    {
+      "deposit_number": 1074,
+      "axn": "AXN:0443.ARCHIVAL.🌆➗📌🚩🗝️🎺",
+      "hex": "0443",
+      "title": "EA-COUNTERINFRA-ANCHOR-01 v1.0: Counter-Infrastructure Kit v0.1 — Byte-Integrity Anchor (SHA-256)",
+      "creator": "Lee Sharks",
+      "date": "2026-07-12",
+      "content_type": "text/markdown",
+      "license": "CC-BY-4.0",
+      "hash": "e39346533f8b259ae1420e0a2dcf2a0b931dd79d589c473cbb722a5b8bcc066e",
+      "status": "ACTIVE",
+      "full_text_path": "/data/deposits/AXN-0443.md",
+      "description": "Byte-integrity anchor for the counter-infrastructure kit v0.1 (EA-COUNTERINFRA-01, carried inside the anchored artifacts). Registers the canonical SHA-256 values of both distribution containers — tar.gz 49d972ab…f446f (14,651 B) and zip 975c2263…7089e (22,222 B), identical 24-file payload — inside the registry's own integrity chain, severing the sidecar dependence in which checksums and artifacts share custody and can be altered or lost together (the 2026-06-19 Zenodo termination as type case). Documents the four-link verification chain: generation, phone transfer (filename mangling, bytes intact), canonicalization at commit 12292d1 (renames git-confirmed 100% content-identical, sha256sum -c passing), and live serving at /artifacts/counter-infrastructure/ content-matched per Rule 28 v2. Includes full payload manifest. Standing rule: on any divergence between served bytes and this deposit, the deposit governs; re-anchoring of future kit versions mints successor deposits in this series."
     }
   ]
 }
