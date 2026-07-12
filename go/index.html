@@ -19,6 +19,7 @@ a{color:#0a7c6a}
 </head>
 <body>
 <h1><span class="spinner"></span> Resolving <span id="target" class="mono"></span>&hellip;</h1>
+<p id="msg" style="color:#b04a4a;max-width:44rem"></p>
 <p class="dim">Redirecting to the current live target via the alexanarch resolution map (v3.11.0+).
 If nothing happens in a moment, you'll be sent to the <a href="/resolve/">resolver info page</a> where you can inspect what's known about this identifier.</p>
 <noscript>
@@ -41,8 +42,19 @@ If nothing happens in a moment, you'll be sent to the <a href="/resolve/">resolv
     if(doi){
       // Normalize to canonical form '10.5281/zenodo.<N>'
       var key = target;
+      // R2 (P0-4): strict normalization — accept bare record numbers or full
+      // 10.5281/zenodo.* DOIs; REJECT all other namespaces. Never coerce a
+      // foreign DOI into the Zenodo namespace.
+      key = key.replace(/^doi:/i,'').replace(/^https?:\/\/(dx\.)?doi\.org\//i,'').trim();
       if(/^\d+$/.test(key)) key = '10.5281/zenodo.' + key;
-      if(!/^10\.5281\/zenodo\./.test(key)) key = '10.5281/zenodo.' + key.split('.').pop();
+      if(!/^10\.5281\/zenodo\.\d+$/i.test(key)){
+        document.getElementById('msg').textContent =
+          'Unsupported or malformed identifier: "' + key + '". This resolver serves ' +
+          'only 10.5281/zenodo.* DOIs of the Crimson Hexagonal Archive. ' +
+          'No redirect will be attempted.';
+        return;
+      }
+      key = key.toLowerCase();
       var r = await fetch('/api/doi-axn-map.json', {cache: 'no-cache'});
       var map = (await r.json()).map;
       var entry = map[key];

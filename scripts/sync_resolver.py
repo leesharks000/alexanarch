@@ -32,7 +32,8 @@ are no longer edited in lockstep by hand — edit alexanarch_url only, then run
 this script; alexanarch_record is derived. Read the FULL output; the final
 "SYNC OK" line must be seen, not assumed.
 """
-import json, os, re, sys, hashlib
+import json
+import sys, os, re, sys, hashlib
 from collections import Counter
 from datetime import date
 
@@ -194,6 +195,13 @@ def main():
     idx['dateModified'] = date.today().isoformat()
     # P0-2: totals are derived, never hand-maintained.
     deads = [m.get('dead_doi') for m in maps if m.get('dead_doi')]
+    # R2 (P0-3): a DOI must correspond to exactly one canonical resolution
+    # object. Neither first-wins nor last-wins may exist as implicit policy.
+    from collections import Counter as _C
+    _dups = [d for d, c in _C(m.get('dead_doi') for m in maps if m.get('dead_doi')).items() if c > 1]
+    if _dups:
+        print(f'FATAL: duplicate dead_doi keys ({len(_dups)}): {_dups[:5]} — refusing to generate surfaces', file=sys.stderr)
+        sys.exit(2)
     idx['total_mappings'] = len(maps)
     idx['total_unique_dois'] = len(set(deads))
     qc = Counter(quarantine_reason(m) for m in maps if quarantine_reason(m))
