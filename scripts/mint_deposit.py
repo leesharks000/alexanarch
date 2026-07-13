@@ -399,15 +399,24 @@ def next_deposit_number(registry: dict) -> int:
     return max(existing) + 1
 
 
-def next_hex_id(deposit_number: int) -> str:
-    """Compute the opaque hex label for a deposit_number.
+def next_hex_id(deposit_number: int, registry: dict | None = None) -> str:
+    """Compute the opaque hex label for the next deposit.
 
-    Formula: hex_id = deposit_number + HEX_OFFSET, formatted as 4-digit
-    uppercase hex. The offset is historical (from earlier renumbering);
-    schema's pattern allows 2-4 digits.
+    HISTORY (bug fixed 2026-07-13, caught in dry-run before minting #1077):
+    the original formula hex_id = deposit_number + HEX_OFFSET assumed the
+    offset was invariant, but the registry's real assignments drifted
+    (recent deposits run at offset 17, e.g. #1072 -> 0441) — the formula
+    would have re-minted 0441 and collided. The hex is an OPAQUE SEQUENTIAL
+    LABEL, not a function of deposit_number: the only safe rule is
+    max(existing hex) + 1. The deposit_number+offset formula is retained
+    only as a fallback for an empty registry.
     """
-    value = deposit_number + HEX_OFFSET
-    return f"{value:04X}"
+    if registry:
+        existing = [int(d["hex"], 16) for d in registry.get("deposits", [])
+                    if d.get("hex")]
+        if existing:
+            return f"{max(existing) + 1:04X}"
+    return f"{deposit_number + HEX_OFFSET:04X}"
 
 
 def family_for_content_type(content_type: str) -> str:
@@ -851,7 +860,7 @@ def mint_from_issue_body(body: str, issue_number: int, *, dry_run: bool = False)
         registry = json.load(f)
 
     deposit_number = next_deposit_number(registry)
-    hex_id = next_hex_id(deposit_number)
+    hex_id = next_hex_id(deposit_number, registry)
     family = family_for_content_type(fields["content_type"])
 
     # Build canonical text content — attachments included so SPXI Layer 3
