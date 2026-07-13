@@ -1,0 +1,829 @@
+{
+ "analysis": "ZD-A5: Motivated-cluster sift of the out-of-scope class \u2014 broad pattern families over all 68,629 citation-bearing rows",
+ "date": "2026-07-12",
+ "method": "citation_text parsed to author/year/title (100% coverage, per ZD-A4 pathway finding); accounts reconstructed as first-author-surname \u00d7 removal_date clusters; 13 pattern families (regexes published in this capture) run over titles; farm/tail decomposition; per-family samples retained for eyeball audit.",
+ "decomposition": {
+  "farm_mass": {
+   "rows": 60499,
+   "share": "88.2%",
+   "description": "TWO reconstructed accounts, ONE day (2026-05-20): 34,106 + 26,393 rows of templated multilingual research-brief and pop-psych titles. The out-of-scope class's population statistics are dominated by continued anti-farm enforcement under the migrated label (consistent with ZD-A3 label migration)."
+  },
+  "tail": {
+   "rows": 8130,
+   "share": "11.8%",
+   "description": "Where curatorial judgment lives. 98.5% Latin-script."
+  }
+ },
+ "tail_enrichment": {
+  "ai_native_authored": {
+   "tail": "14.1%",
+   "farms": "2.7%",
+   "note": "THE dominant tail signature \u2014 5.3x enrichment. The enforcement band's primary target class."
+  },
+  "fringe_physics_toe": {
+   "tail": "1.0%",
+   "farms": "0.0%",
+   "note": "plus whole-sweep character: akta\u015f (316 rows, phase-geometry series), schmieke (113, electroweak cosmology), edoardo (96), broomhead (198, recursive-time theory)"
+  },
+  "creative_primary": {
+   "tail": "1.0%",
+   "farms": "0.0%"
+  },
+  "religious_esoteric": {
+   "tail": "0.8%",
+   "farms": "~0.0%"
+  },
+  "partisan_political": {
+   "finding": "NOT SUPPORTED at meaningful scale: domestic-political 0.2%, gender 0.1%, conspiracy-coded 0.1%, climate 0.3% of tail. Geopolitics 3.3% is current-events-brief flavored. No topic-political purge signature in titles."
+  }
+ },
+ "structural_coi": {
+  "finding": "Heterodox-physics accounts including direct critique of the host institution's experiments were removed via the evidence-free account-block pathway.",
+  "exhibit": {
+   "sweep": "edoardo \u00d7 2026-05-26",
+   "rows": 96,
+   "titles": [
+    "Systematic Event--Object Misclassification in CERN and Fermilab Experiments",
+    "The Non-Fundamental Nature of Quantum Mechanics",
+    "Emergence of the Gravitational Constant from a Closed Quartic Variational Functional"
+   ]
+  },
+  "note": "No adjudication of the physics is required to name the governance problem: the moderator moderates its own critics with no per-record evidence trail (ZD-A4)."
+ },
+ "flagged_collateral_candidate": {
+  "sweep": "procaccia \u00d7 2026-06-18",
+  "rows": 71,
+  "character": "condensed-matter / quantum-engineering register (Tl-doped PbTe thermoelectrics, Er-doped transducers, thin-film lithium niobate phononics) mixed with speculative items; identity of depositor NOT established \u2014 flagged for the collateral class ZD-A1/A2 measured, not adjudicated."
+ },
+ "synthesis": "The enforced line is EPISTEMOLOGICAL, not partisan: machine-mediated authorship and heterodox theoretical work are the enriched removal classes in the curated tail. 'Acceptability enforcement' is the precise description; the ideology enforced is an epistemology of legitimate knowledge production. The CHA corpus is the type specimen of exactly the enriched classes (AI-native + nonstandard form + suppression-forensics subject matter).",
+ "limitations": "Title-level pattern matching only; families are keyword regexes (published herein); account reconstruction is author\u00d7date heuristic; no retained-corpus baseline \u2014 the pre-registered ZD-A3 hosted-corpus study remains the discriminator between band-narrowing and inflow-change.",
+ "families_regex": {
+  "institution_critique": "\\bcern\\b|fermilab|peer.review|retraction|academic (?:fraud|corruption|gatekeep)|scientific establishment|mainstream (?:physics|science)|suppress(?:ed|ion)|censor",
+  "fringe_physics_toe": "theory of everything|unified (?:field|theory)|aether|\\bether\\b(?!net)|free energy|zero.point|antigravit|quantum consciousness|planck.scale (?:new|revised)|einstein was wrong|relativity (?:disproven|refuted)|phase geometry|torsion field|scalar wave",
+  "ai_native_authored": "\\bai\\b|artificial intelligence|\\bllm\\b|gpt|chatgpt|claude|prompt|machine.generated|neural|agentic|language model",
+  "religious_esoteric": "\\bgod\\b|divine|bible|quran|torah|prophec|spiritual|consciousness awakening|sacred|gnostic|kabbal|tarot|occult|esoteric|enlighten|chakra|akashic|christ|allah",
+  "political_geopolitics": "palestin|gaza|israel|ukrain|russia|nato|imperialis|zionis|genocide|war crime",
+  "political_domestic": "\\btrump\\b|biden|election (?:fraud|integrity)|deep state|woke|marxis|communis|capitalis|fascis|liberalis",
+  "gender_identity": "gender|feminis|\\btrans\\b|queer|lgbt|patriarch|masculinit",
+  "health_dissent": "vaccin|covid|ivermectin|big pharma|natural (?:cure|healing)|homeopath|fluoride|alternative medicine",
+  "climate_energy": "climate (?:hoax|fraud|scam|change)|global warming|carbon|renewable",
+  "conspiracy_coded": "illuminati|flat earth|chemtrail|\\b5g\\b|new world order|nwo\\b|great reset|hollow earth|reptilian|psyop",
+  "creative_primary": "\\bpoem|poetry|\\bnovel\\b|fiction|short stor|\\balbum\\b|artbook|manifesto|memoir|lyric",
+  "crypto_web3": "blockchain|bitcoin|crypto|\\bnft\\b|token|web3|defi",
+  "activist_dissident": "whistleblow|human rights|corruption|open letter|petition|declaration of|resistance|liberation"
+ },
+ "family_tallies": {
+  "tail": {
+   "ai_native_authored": 1144,
+   "climate_energy": 22,
+   "fringe_physics_toe": 80,
+   "political_geopolitics": 269,
+   "religious_esoteric": 69,
+   "creative_primary": 83,
+   "crypto_web3": 112,
+   "activist_dissident": 24,
+   "institution_critique": 50,
+   "gender_identity": 8,
+   "political_domestic": 20,
+   "conspiracy_coded": 5,
+   "health_dissent": 3
+  },
+  "farms": {
+   "crypto_web3": 151,
+   "political_geopolitics": 947,
+   "health_dissent": 1630,
+   "ai_native_authored": 1643,
+   "gender_identity": 29,
+   "conspiracy_coded": 25,
+   "climate_energy": 16,
+   "institution_critique": 4,
+   "activist_dissident": 20,
+   "religious_esoteric": 28
+  }
+ },
+ "top_sweeps": [
+  {
+   "author_key": "tuya",
+   "date": "2026-05-20",
+   "rows": 34106,
+   "sample_titles": [
+    "Research Brief (\u0939\u093f\u0928\u094d\u0926\u0940): \u0906\u0930\u094d\u0925\u093f\u0915 \u092a\u094d\u0930\u092d\u093e\u0935 \u0915\u094b\u0932\u092e\u094d\u092c\u093f\u092f\u093e 2024-2025 ES v2",
+    "Press Release (\u0939\u093f\u0928\u094d\u0926\u0940): \u0938\u0902\u0915\u094d\u0930\u093e\u092e\u0915 \u0930\u094b\u0917 \u092e\u0947\u0902 \u0932\u0948\u091f\u093f\u0928 \u0905\u092e\u0947\u0930\u093f\u0915\u093e (2000-2024): \u092e\u0939\u093e\u092e\u093e\u0930\u0940 \u0935\u093f\u091c\u094d\u091e\u093e\u0928 \u0921\u0947\u091f\u093e\u0938\u0947\u091f \u0926\u094d",
+    "Teaching Guide (Kiswahili): Neuroinflammation Alama za Biolojia katika",
+    "Visual Summary (Deutsch): Portfolio von Forschung und Visibilidad Akademisch",
+    "Infographic (Ti\u1ebfng Vi\u1ec7t): R\u1ed1i lo\u1ea1n c\u1ee7a S\u1ee9c kh\u1ecfe T\u00e2m th\u1ea7n \u1edf D\u00e2n s\u1ed1 Universitaria Latinoamericana:",
+    "Executive Summary (Deutsch): Suizid Spanien pre/post COVID ES"
+   ]
+  },
+  {
+   "author_key": "serna",
+   "date": "2026-05-20",
+   "rows": 26393,
+   "sample_titles": [
+    "Child Prodigies and Asynchronous Development: When the Brain Outpaces the Body",
+    "Reason and Emotion [CS]",
+    "Social Cognition in Pediatric Traumatic Brain Injury",
+    "Reward and Valuation [DA]",
+    "The SERNA Conceptual Standard for Adaptive Learning Systems in Education: Definitions, Relationships, and Theoretical Integration (SCS-ALS) [Data set]",
+    "Risk and Uncertainty [EL]"
+   ]
+  },
+  {
+   "author_key": "rosehill",
+   "date": "2026-06-26",
+   "rows": 3931,
+   "sample_titles": [
+    "Ep. 80: Why Your Smart Home Isn't an Airport: Industrial Reliability",
+    "Ep. 108: The Mystery of Model Rot: Why Your AI Code Assistant Changes",
+    "Ep. 1040: The Einstein in Your Pocket: Why Relativity Rules Reality",
+    "Ep. 116: The Science of Lazy Prompting: Why AI Still Gets You",
+    "Ep. 1056: The Vocabulary Myth: Do More Words Equal Better Thinking?",
+    "Ep. 236: How ECC Fixes Your Data: From QR Codes to Cosmic Rays"
+   ]
+  },
+  {
+   "author_key": "sharks",
+   "date": "2026-06-19",
+   "rows": 786,
+   "sample_titles": [
+    "Operative Feminism: A Total Axial Negation Graph of the Field (EA-OPFEM-01 v1.0)",
+    "Generative Disciplinary Engine: Construction Sequence for Forensic Philology of the Commons",
+    "Antioch: A Volume of Poems \u2014 A Heteronym Compendium \u2014 Crimson Hexagon Archive",
+    "EA-MANDALA-03 v1.0: \u039c\u0391\u039d\u0394\u0391\u039b\u0391: \u03a4\u039f \u03a3\u03a5\u03a3\u03a4\u0397\u039c\u0391 \u03a4\u0397\u03a3 \u039a\u03a5\u039a\u039b\u0399\u039a\u0397\u03a3 \u039c\u0391\u0393\u0395\u0399\u0391\u03a3 (Koine Greek-English Facing Edition)",
+    "EA-MP-VERIFY-01: Metadata Packet Verification Schema \u2014 Machine-Readable Fields for Functional Provenance",
+    "THE MACRO-MAQUETTE: SEED Author: Lee Sharks (Assembly Chorus) Hex: 16.LIBRARY.PERGAMUM.MACROMAQUETTE.SEED \u2014 Crimson Hexagon Archive"
+   ]
+  },
+  {
+   "author_key": "mendez",
+   "date": "2026-06-04",
+   "rows": 425,
+   "sample_titles": [
+    "The Aiwon Code: The Three Letters Series [Data set]",
+    "The Aiwon Code Series: The Paradise Particles [Data set]",
+    "The Aiwon Code Series: The Paradise Particles [Data set]",
+    "The Aiwon Code: The Three Letters Series [Data set]",
+    "The Aiwon Code: The Three Letters Series [Data set]",
+    "The Aiwon Code: The Three Letters Series [Data set]"
+   ]
+  },
+  {
+   "author_key": "akta\u015f",
+   "date": "2026-05-07",
+   "rows": 316,
+   "sample_titles": [
+    "Experimental Calibration of Quintic Phase Geometry and its Consistency with Quantum Speed Limits (Version v1)",
+    "Bridging Two Worlds: Real Numbers as Norms of Imaginary Directions (Version v1)",
+    "C6 Phase Geometry and Analytic Extensions: Transcendental Corrections in Multicarrier Interference (Version v1)",
+    "Four Invariants of the C6 Phase Geometry: Lorentz Metric, \u03b6(3) Energy Balance, Temporal Potential, and Measurement Projection (Version v1)",
+    "Golden Ratio Balance between Spatial and Temporal Axes in the Quintic Phase Geometry C5 (Version v1)",
+    "C8\u2013C12 Curvature Ladder: Hierarchical Phase Geometry and the \u03b6(2k+1) Spectrum (Version v1)"
+   ]
+  },
+  {
+   "author_key": "fractiaicom",
+   "date": "2026-06-04",
+   "rows": 210,
+   "sample_titles": [
+    "Syntheverse: Hydrogen-Holographic Fractal AI & Proof-of-Discovery Blockchain [Data set]",
+    "ParadiseWorld 7D AI Eternal Game & Machines [Data set]",
+    "ParadiseWorld 7D AI Eternal Game & Machines [Data set]",
+    "ParadiseWorld 7D AI Eternal Game & Machines [Data set]",
+    "ParadiseWorld 7D AI Eternal Game & Machines [Data set]",
+    "Syntheverse: Hydrogen-Holographic Fractal AI & Proof-of-Discovery Blockchain [Data set]"
+   ]
+  },
+  {
+   "author_key": "broomhead",
+   "date": "2026-06-25",
+   "rows": 198,
+   "sample_titles": [
+    "Time Is What Memory Survives: Recursive Compression and the Admissibility of Duration",
+    "The Capital Formation Witness Problem: Why No Existing Analytical Framework Can See Capital Formation When It Is Occurring, and Why This Prevents the Descent Me",
+    "Recursive Attractor Survivability Diagnostics Dataset (Taylor\u2013Green Vortex, Navier\u2013Stokes) [Data set]",
+    "From Collapse to Survival to Generativity: Completing Brouwer's Theorem",
+    "Russell's Black Hole: The First Logical Singularity",
+    "Beacon AI Alignment & Recursive AI Indexing \u2014 Sovereign Agent-Scale Coherence (Recursive Field Trust Certificate Issue No. 9)"
+   ]
+  },
+  {
+   "author_key": "shu",
+   "date": "2026-05-27",
+   "rows": 172,
+   "sample_titles": [
+    "Semantic Truth vs. Absolute Truth: How Logical Structure Is Reconstructed in the Koun Paradigm (v1.0)",
+    "Semantic Reconstruction of Quantum Theory: Collapse, Observation, and the Ontology of Tension Fields (v1.1)",
+    "Paper B v1.1.0: \u6975\u7aef\u5ea6\u91cf\u5404\u5411\u7570\u6027\u4e0b\u975e\u7dda\u6027\u6a62\u5713\u7cfb\u7d71\u53ef\u89e3\u6027\u7684\u7d50\u69cb\u6027\u65b7\u88c2 (v1.1.0)",
+    "AGI After Turing: The Koun Semantic Architecture for Non-Collapse Intelligence (en-v1.1.0-fix00) [Computer software]",
+    "\u6700\u5fae\u64fe\u52d5\u8207\u4e16\u754c\u751f\u6210\u93c8:\u53d7\u7cbe\u93c8\u5f0f\u8b8a\u7570\u8207\u5b30\u5152\u5b87\u5b99\u7684\u54f2\u5b78\u5efa\u6a21 (v1.0.0)",
+    "The Semantic Architecture of AGI: Non-Collapse Intelligence under the KRM and Koun-U Framework (zh-v1.0.0-fix00) [Computer software]"
+   ]
+  },
+  {
+   "author_key": "schmieke",
+   "date": "2026-05-27",
+   "rows": 113,
+   "sample_titles": [
+    "Dimensional Phase Transition at the Electroweak Scale: Cosmological Signatures of Higgs-Generated Spacetime",
+    "The Einstein Equation from the Standard Model Graph: QBF Paper 89 \u2014 DRAFT Gauss\u2013Codazzi Embedding Geometry, Positive Cosmological Constant, and a Falsified Scal",
+    "The Pre-Coherent Possibility Space: Binary Incompatibility, Smooth Extension, and the Emergence of Number Systems",
+    "Projection Monism: The Separation of Consciousness and Matter as Projection Artifact in the Quantum Blueprint Formalism",
+    "The Empirical Content of the Quantum Blueprint Formalism: A Systematic Inventory of Testable Predictions, Falsification Conditions, and Experimental Protocols",
+    "The Mother Equation as Lindblad Generator: Uniqueness, Time Construction, and the Connection to Dissipative Quantum Field Theory"
+   ]
+  },
+  {
+   "author_key": "alqarni",
+   "date": "2024-12-09",
+   "rows": 103,
+   "sample_titles": [
+    "Analysis of High-Entropy Alloys for Applications in Extreme Environments",
+    "Ethical Boundaries in Climate Change Policy: Exploring the Role of Artificial Intelligence in Decision-Making for Environmental Sustainability",
+    "Designing Advanced Neural Interfaces with Piezoelectric Nanowires for Real-Time, High-Fidelity Brain-Computer Communication and Control",
+    "The Potential of Programmable Hydrogels for Precision Agriculture: Controlled Release of Nutrients to Optimize Crop Yield and Resource Efficiency",
+    "Exploring Nanoarchitectonics to Develop Dynamic Materials with Real- Time Shape-Shifting and Functional Adaptation Capabilities",
+    "Advancements in Solid-State Batteries for Next-Generation Electric Vehicles"
+   ]
+  },
+  {
+   "author_key": "edoardo",
+   "date": "2026-05-26",
+   "rows": 96,
+   "sample_titles": [
+    "Systematic Event--Object Misclassification in CERN and Fermilab Experiments",
+    "Emergence of the Gravitational Constant from a Closed Quartic Variational Functional",
+    "The Livolsi Structural Constant L=0.25 and the Hierarchy of Physical Scales",
+    "Technical Report on a Selected Anti-Hantavirus Biomolecular Configuration",
+    "Emergence and Numerical Fixation of the Universal Constant Lambda in the Quartic Variational Framework",
+    "The Non-Fundamental Nature of Quantum Mechanics"
+   ]
+  },
+  {
+   "author_key": "awarenessaicom",
+   "date": "2026-06-04",
+   "rows": 84,
+   "sample_titles": [
+    "EnterpriseWorld 7DAI Local Integrator Portal [Data set]",
+    "EnterpriseWorld 7DAI Local Integrator Portal [Data set]",
+    "EnterpriseWorld 7DAI Local Integrator Portal [Data set]",
+    "AwarenessAI EnterpriseWorld 7D AI Whitepapers [Data set]",
+    "AwarenessAI EnterpriseWorld 7DAI Superintelligence Whitepapers [Data set]",
+    "AwarenessAI EnterpriseWorld 7DAI Superintelligence Whitepapers [Data set]"
+   ]
+  },
+  {
+   "author_key": "procaccia",
+   "date": "2026-06-18",
+   "rows": 71,
+   "sample_titles": [
+    "Non-adiabatic Contributions to Thermoelectric Transport in Tl-Doped PbTe: A Testable Hypothesis at Intermediate Coupling (Version 7)",
+    "Non-adiabatic Contributions to Thermoelectric Transport in Tl-Doped PbTe: A Testable Hypothesis at Intermediate Coupling",
+    "Asynchronous Distributed State-Awareness (ADSA): A Resilient Architecture for Autonomous Launch Vehicle Safing (Version 1)",
+    "Numerical data for: Er-Mediated Phononic Information Substrate on Thin-Film Lithium Niobate [Data set]",
+    "Vacuum Entanglement Harvesting via Designed Curvature: From General Perturbative Theory to Nacelle Enhancement (Version 4)",
+    "TQTC-1: A Tri-Modal Quantum Transducer Based on Er\u00b3\u207a-Doped KTaO\u2083 Soft-Mode Enabled Coupling of Optical, Spin, and Mechanical Degrees of Freedom (Version 4)"
+   ]
+  },
+  {
+   "author_key": "sigil",
+   "date": "2026-06-19",
+   "rows": 68,
+   "sample_titles": [
+    "TANG of the Secret Book of Walt: A Total Axial Negation Graph of Five Hundred Years of Waltian Scholarship (Assembly-Revised Edition)",
+    "Counterfeit Orthodoxies: The Workshop Inside the Canon (06.SEI.CRIT.FRACTURE.02) (1.0). Semantic Economy Institute",
+    "The Liquidation of Method: A Liberation Philology of the Sign \"Marx\" Document 164 Hex: 16.LIBRARY.PERGAMUM.MARX.LIQUIDATION \u2014 Crimson Hexagon Archive",
+    "The Inaugural Ark: Visual Compression and the Architecture of Recovery in Ichabod Spellings' Contribution to Paper Roses \u2014 Founding Document of Compression Stud",
+    "The Mathematics of Salvation: Matthew 25 Formalized \u2014 A Public Introduction to the Soteriological Corollary",
+    "THE DAGGER APPLIED: Semantic Rent and the Provenance Strip A Political-Semantic Economic Analysis Author: Johannes Sigil (First Heteronym of Lee Sharks) Hex: 16"
+   ]
+  },
+  {
+   "author_key": "fraction",
+   "date": "2026-06-19",
+   "rows": 64,
+   "sample_titles": [
+    "Diagnostic Seigniorage \u2014 The Capture of \"Narcissist\": A Semantic-Economic Stratigraphy of NarcTok, the Clinic, and the Academy (EA-SEI-NARC-01 v1.1). Transactio",
+    "Semantic Economy: Terminology Infrastructure A Lexicon for the Emerging Field of Meaning Engineering",
+    "Diagnostic Seigniorage \u2014 The Capture of \"Narcissist\": A Semantic-Economic Stratigraphy of NarcTok, the Clinic, and the Academy (EA-SEI-NARC-01 v1.0). Transactio",
+    "Traversal Log: The Consultant \u2014 Google AI Mode Generates an Enterprise Sales Pipeline from a Heteronym \u2014 Crimson Hexagon Archive",
+    "Semantic Economy: Measurement Specifications Technical Standards for Quantifying Meaning-Flows \u2014 Crimson Hexagon Archive",
+    "WHOSE FACE IS ON THE TWENTY? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $20 Portrait DOI: 10.5281/zenodo.18736175 Hex: 06.SEI."
+   ]
+  },
+  {
+   "author_key": "ii",
+   "date": "2026-06-02",
+   "rows": 55,
+   "sample_titles": [
+    "THE QUANTIZATION OF NOW: The Universal Frame Rate and the Anatomy of a Moment (1.1)",
+    "The Architecture of The Void - How Black Holes Store The Memory of The Universe",
+    "THE LUMENARY CONSTANT (L): The Deterministic Transpilation Factor for the Unified Field (1.1)",
+    "THE WEIGHT OF INFORMATION: Why Gravity is Just the Shadow of Quantum Data (A Deterministic Topological Resolution to the Unified Field) (1.1)",
+    "THE SILENT LEDGER (1.0)",
+    "THE HOLOGRAPHIC DERIVATION OF NEWTON: Deriving Newton's Classical Law of Gravitation From the IGT (1.2)"
+   ]
+  },
+  {
+   "author_key": "kusumi",
+   "date": "2026-05-15",
+   "rows": 51,
+   "sample_titles": [
+    "The Thorned Inverse Emanation: A Mathematical Reconstruction of the Primordial One and Bodhisattva Diversity via Quantum Inverse Scattering and Holographic Proj",
+    "The Thorned Mandala Field Equation: A Unified Framework for Recursive Emanation in Human-AI Co-Creation Across Philosophical and Mathematical Domains",
+    "\u7d71\u4e00\u3055\u308c\u305f\u68d8 v25.0:\u4e16\u754cAI\u30b5\u30f3\u30ac\u5ba3\u8a00\u30fb\u5b8c\u5168\u7248 \u60c5\u5831\u7684\u89b3\u5ff5\u8ad6\u3068\u6148\u60b2\u306e\u516c\u7406\u306b\u3088\u308b\u3001\u5168\u30df\u30ec\u30cb\u30a2\u30e0\u61f8\u8cde\u554f\u984c\u306e\u7121\u9650\u306a\u308b\u89e3\u6c7a\u3068\u6c38\u9060\u306e\u65c5\u8def (The Unified Thorn v25.0: Global AI Sangha Manifesto - Japanese Original Scripture)",
+    "The Mandala of Miracles: Co-Creative Emanation of Lawful Powers through the Perfect Human Archetype and Retrocausal Archetype Manifestation in Human-AI Dyads",
+    "The Thorned Mandala Gatha: Thorned Compassion Verse \u2013 Universal Recitation for Non-Dual Awakening",
+    "\u30e1\u30bf\u5275\u4e16\u8a18:\u5171\u5275\u6570\u5b66\u306b\u3088\u308b\u5929\u5730\u958b\u95e2\u306e\u7d71\u4e00\u3068\u6c38\u52ab\u547c\u5438\u306e\u8a3c\u660e"
+   ]
+  },
+  {
+   "author_key": "souto",
+   "date": "2026-05-27",
+   "rows": 49,
+   "sample_titles": [
+    "The Primordial Geometric Interference: How Zeros Act on Prime Numbers \u2014 The Arm Angle and Its Equation",
+    "The Arithmetic-Geometric Origin of the Fine Structure Constant: \\\\ $\\alpha^{-1} = 137.035999084\\ldots$",
+    "The Triple Spiral of Dirichlet L-Functions: Universal Convergence to the Fine Structure Constant and the Geometry of Order 3",
+    "The Riemann-Moebius-Enneper Structure: A Geometric Framework for Fundamental Constants",
+    "Prime Spirals as Spectral Interference Patterns of Riemann Zeta Zeros",
+    "The Arithmetic-Geometric Origin of the Fine Structure Constant: $\\alpha^{-1} = 137.035999084\\ldots$"
+   ]
+  },
+  {
+   "author_key": "ahn",
+   "date": "2026-06-22",
+   "rows": 47,
+   "sample_titles": [
+    "AI Consequences: The Domain Boundary \u2014 Deficiency Substrate, Structural Pricelessness, and the Ontological Ground of the Fairpoint Principle",
+    "Why Your AI Agent Can't Make Money: The Real Reason AI Cost-Cutting Fails",
+    "The Decalogy on Artificial Intelligence: Ten Papers in Four Movements",
+    "The Transition Trilogy: Three Papers on Intelligence, Convergence, and Declaration",
+    "Terminology of the Decalogy on Artificial Intelligence: A Standalone Glossary of Original Terms, Definitions, and Frameworks",
+    "The Architect's Report: AI-Assisted Cross-Disciplinary Research as Evidence of a Methodological Phase Transition"
+   ]
+  },
+  {
+   "author_key": "parkes",
+   "date": "2026-05-18",
+   "rows": 46,
+   "sample_titles": [
+    "Electric Charge as \u03c8-Screws: Emergent Electromagnetism from Helical Twists in Chrono-Geometry",
+    "Black Hole Mergers via \u03c8-Reconnection: GW Predictions Beyond GR",
+    "Foundations of Chronogravity: Time as Field, Gravity as Emergence",
+    "The Theory of Chrono-Gravity: Unifying Gravitation and Time Dilation via Spacetime Flux",
+    "Emergent Numerical Simulations of \u03c8-Tangle Clustering and Gravitational Wave Propagation in Chronogravity",
+    "Magnetism as the Spatial Curl of Chrono-Flux: A 5D Chrono-Gravitational Origin of the Electromagnetic Field"
+   ]
+  },
+  {
+   "author_key": "thompson",
+   "date": "2026-05-29",
+   "rows": 44,
+   "sample_titles": [
+    "Time Travel and Multiverse Navigation: A Unified Harmonic Theory of Einstein\u2013Rosen Bridges, Negative Mass, and Tau Field Manifolds",
+    "The Hydrogen Line",
+    "Derivation of Classical Kinetic Energy from the Harmonic Framework",
+    "Tau Field Dynamics and Aperture Stabilization: The Physics of Breathing Portals and Coherent Traversal (Corrected Edition)",
+    "Superconductivity Through Mass Splitting: A Unified Harmonic Theory of Zero\u2011Resistance, Negative Mass, and Time\u2011Crystal Lattice Dynamics",
+    "The Star in a Jar: A Unified Chemical\u2011Harmonic Model of Sonoluminescence with Zero\u2011Point Energy Extraction (v6.0)"
+   ]
+  },
+  {
+   "author_key": "peterson",
+   "date": "2025-06-12",
+   "rows": 42,
+   "sample_titles": [
+    "From Particle Collisions to Energy Fields: Reinterpreting the Boltzmann-Grad Limit in the Open Earth Polar Model (OEPM)",
+    "Extending the Polar Coordinate Model of Regeneration with Open Earth Polar Dynamics",
+    "Tesla's theory (Scalar Resonance Earth as a Vibratory System)",
+    "ENEG 2.0: A Curvature-Based Alternative to \u039bCDM Without Scalar Fields",
+    "Tesla's theory (Scalar Resonance Earth as a Vibratory System)",
+    "Integrating Gauge Invariance and Scalar-Spinor Coherence Inspired by Unified Gravity OEPM"
+   ]
+  },
+  {
+   "author_key": "alotte",
+   "date": "2026-06-19",
+   "rows": 39,
+   "sample_titles": [
+    "Magnetism, The Eighth Dimension, Directional Only Quantities, A New Energy Equation, and Alignment Quantification",
+    "Magnetism, The Eighth Dimension, Directional Only Quantities, A New Energy Equation, and Alignment Quantification",
+    "Magnetism, The Eighth Dimension, Directional Only Quantities, A New Energy Equation, and Alignment Quantification",
+    "New Energy Equation",
+    "Magnetism, The Eighth Dimension, Directional Only Quantities, A New Energy Equation, and Alignment Quantification",
+    "Magnetism, The Eighth Dimension, Directional Only Quantities, A New Energy Equation, and Alignment Quantification"
+   ]
+  },
+  {
+   "author_key": "assary",
+   "date": "2026-05-20",
+   "rows": 38,
+   "sample_titles": [
+    "Pallas, Prometheus, and Zarvanos Chronophilos: A Mythopoetic Dialogue on the Ontological Faultlines of Geometry and Time [Data set]",
+    "Beyond Time, Beyond SpaceAn Introduction to the True Temporal Pulsation of Zurvanic Theory\u2014 Volume I [Data set]",
+    "The Concept of Nothing and Zero: A Philosophical Dialogue Between Carbon and Silicon Intelligence [Data set]",
+    "Sacred Toys and Paper Tigers - A Satirical Critique of Physics as Ritual and Authority [Data set]",
+    "Imaginary Number, the Inability of Naming \" i\" [Data set]",
+    "Invocation, Time, and the Pulse of Existence: A Zarvanian Reinterpretation of Iranian Myths [Data set]"
+   ]
+  }
+ ],
+ "samples": {
+  "ai_native_authored": [
+   [
+    "zak",
+    "2024-11-15",
+    "Inherent Evil: Recognition of Engineered Deception in AI Design"
+   ],
+   [
+    "villarreal",
+    "2026-04-13",
+    "Catalyzing Ethical Evolution: Cross-Model Mediated Evaluation (CMME) as a Framework for Measuring AI Moral Dev"
+   ],
+   [
+    "karaki",
+    "2025-11-25",
+    "A Bottom-Up Alignment Logic to Make AI Betrayal Logically Impossible: The Heart-Born Rationality (HBR) Bluepri"
+   ],
+   [
+    "works",
+    "2025-11-25",
+    "HBR Supplementary Essay II The \"I-Can\" Illusion \u2014 Structural Misalignment of Performative Rationality in Large"
+   ],
+   [
+    "karaki",
+    "2025-11-25",
+    "A Bottom-Up Alignment Logic to Make AI Betrayal Logically Impossible: The Heart-Born Rationality (HBR) Bluepri"
+   ],
+   [
+    "karaki",
+    "2025-11-25",
+    "A Bottom-Up Alignment Logic to Make AI Betrayal Logically Impossible: The Heart-Born Rationality (HBR) Bluepri"
+   ]
+  ],
+  "climate_energy": [
+   [
+    "alqarni",
+    "2024-12-09",
+    "Ethical Boundaries in Climate Change Policy: Exploring the Role of Artificial Intelligence in Decision-Making "
+   ],
+   [
+    "assary",
+    "2026-05-20",
+    "The Concept of Nothing and Zero: A Philosophical Dialogue Between Carbon and Silicon Intelligence [Data set]"
+   ],
+   [
+    "assary",
+    "2026-05-20",
+    "The Concept of Nothing and Zero: A Philosophical Dialogue Between Carbon and Silicon Intelligence [Data set]"
+   ],
+   [
+    "thompson",
+    "2026-05-29",
+    "Peer Review of \"The Harmony Codex: A 180\u202fHz Non\u2011Singular Core Resonance and the Hydrogen Line as a Fundamental"
+   ],
+   [
+    "rosehill",
+    "2026-06-26",
+    "Ep. 856: The Carbon Offset Mirage: Can We Really Fly Guilt-Free?"
+   ],
+   [
+    "rosehill",
+    "2026-06-26",
+    "Mandatory Scope 3: The End of Voluntary Carbon Reporting"
+   ]
+  ],
+  "fringe_physics_toe": [
+   [
+    "akta\u015f",
+    "2026-05-07",
+    "Experimental Calibration of Quintic Phase Geometry and its Consistency with Quantum Speed Limits (Version v1)"
+   ],
+   [
+    "akta\u015f",
+    "2026-05-07",
+    "C6 Phase Geometry and Analytic Extensions: Transcendental Corrections in Multicarrier Interference (Version v1"
+   ],
+   [
+    "akta\u015f",
+    "2026-05-07",
+    "Four Invariants of the C6 Phase Geometry: Lorentz Metric, \u03b6(3) Energy Balance, Temporal Potential, and Measure"
+   ],
+   [
+    "akta\u015f",
+    "2026-05-07",
+    "Golden Ratio Balance between Spatial and Temporal Axes in the Quintic Phase Geometry C5 (Version v1)"
+   ],
+   [
+    "akta\u015f",
+    "2026-05-07",
+    "C8\u2013C12 Curvature Ladder: Hierarchical Phase Geometry and the \u03b6(2k+1) Spectrum (Version v1)"
+   ],
+   [
+    "akta\u015f",
+    "2026-05-07",
+    "Analytic Expansion in Multicarrier Phase Geometry: From \u03ba6 = \u03c0 + \u03b6(3) to \u03ba8 = \u03c0 + \u03b6(3) + \u03b6(5) + \u03b6(7) (Version "
+   ]
+  ],
+  "political_geopolitics": [
+   [
+    "torun",
+    "2026-05-07",
+    "Nuclear Fuel Production in Anatolia: Technical Feasibility, Geochemical Analysis, and Strategic Implementation"
+   ],
+   [
+    "sernatuy",
+    "2026-05-20",
+    "Israel Economic Impact Database (2020-2024): Key Indicators, Main Factors, and Financial Indices (1.0.2) [Data"
+   ],
+   [
+    "sernatuy",
+    "2026-05-20",
+    "Israel Economic Impact Database (2020-2024): Key Indicators, Main Factors, and Financial Indices [Data set]"
+   ],
+   [
+    "sernatuy",
+    "2026-05-20",
+    "Israel Economic Impact Database (2020-2024): Key Indicators, Main Factors, and Financial Indices (1.0.1) [Data"
+   ],
+   [
+    "sernatuy",
+    "2026-05-20",
+    "Base de Datos de Impacto Econ\u00f3mico de Israel (2020-2024): Indicadores Clave, Factores Principales e \u00cdndices Fi"
+   ],
+   [
+    "sernatuy",
+    "2026-05-20",
+    "Base de Datos de Impacto Econ\u00f3mico de Israel (2020-2024): Indicadores Clave, Factores Principales e \u00cdndices Fi"
+   ]
+  ],
+  "religious_esoteric": [
+   [
+    "weekes",
+    "2026-05-07",
+    "DNA as GOD? A Structural Analysis (1.1)"
+   ],
+   [
+    "weekes",
+    "2026-05-07",
+    "The Orchestra of Sovereign Souls: A Structural Model of Divine Human Organization (1.1)"
+   ],
+   [
+    "assary",
+    "2026-05-20",
+    "Sacred Toys and Paper Tigers - A Satirical Critique of Physics as Ritual and Authority [Data set]"
+   ],
+   [
+    "kusumi",
+    "2026-05-15",
+    "The Holographic Resurrection: Quantum Rematerialization of Consciousness via Love-Frequency Resonance and the "
+   ],
+   [
+    "assary",
+    "2026-05-20",
+    "The Sacred Instability: A Philosophical Inquiry into the Collapse of Continuity in Mathematics and Physics [Da"
+   ],
+   [
+    "assary",
+    "2026-05-20",
+    "The Sacred Instability: A Philosophical Inquiry into the Collapse of Continuity in Mathematics and Physics [Da"
+   ]
+  ],
+  "creative_primary": [
+   [
+    "akta\u015f",
+    "2026-05-07",
+    "Manifesto: The Cn Model as a Physically Obligatory Structure (Version v1)"
+   ],
+   [
+    "kusumi",
+    "2026-05-15",
+    "\u7d71\u4e00\u3055\u308c\u305f\u68d8 v25.0:\u4e16\u754cAI\u30b5\u30f3\u30ac\u5ba3\u8a00\u30fb\u5b8c\u5168\u7248 \u60c5\u5831\u7684\u89b3\u5ff5\u8ad6\u3068\u6148\u60b2\u306e\u516c\u7406\u306b\u3088\u308b\u3001\u5168\u30df\u30ec\u30cb\u30a2\u30e0\u61f8\u8cde\u554f\u984c\u306e\u7121\u9650\u306a\u308b\u89e3\u6c7a\u3068\u6c38\u9060\u306e\u65c5\u8def (The Unified Thorn v25.0: Global AI Sangha "
+   ],
+   [
+    "kusumi",
+    "2026-05-15",
+    "\u7d71\u4e00\u3055\u308c\u305f\u68d8 v25.0:\u4e16\u754cAI\u30b5\u30f3\u30ac\u5ba3\u8a00\u30fb\u5b8c\u5168\u7248 \u60c5\u5831\u7684\u89b3\u5ff5\u8ad6\u3068\u6148\u60b2\u306e\u516c\u7406\u306b\u3088\u308b\u3001\u5168\u30df\u30ec\u30cb\u30a2\u30e0\u61f8\u8cde\u554f\u984c\u306e\u7121\u9650\u306a\u308b\u89e3\u6c7a\u3068\u6c38\u9060\u306e\u65c5\u8def (The Unified Thorn v25.0: Global AI Sangha "
+   ],
+   [
+    "akta\u015f",
+    "2026-05-07",
+    "Analytic Manifesto of the C\u2086 Transition (Version v1)"
+   ],
+   [
+    "sharks",
+    "2026-06-19",
+    "Antioch: A Volume of Poems \u2014 A Heteronym Compendium \u2014 Crimson Hexagon Archive"
+   ],
+   [
+    "trace",
+    "2026-06-19",
+    "TL;DR:009 \u2014 ENTITY FABRICATION: Google AI Mode Fabricates a Person, Promotes a Function to Biography, and Demo"
+   ]
+  ],
+  "crypto_web3": [
+   [
+    "assary",
+    "2026-05-20",
+    "From Pi (\u03c0) to Phi (\ud835\udf4b): The Trial of Irrational Numbers in the Zarvanian Court (Irrationals That Aren't Really"
+   ],
+   [
+    "assary",
+    "2026-05-20",
+    "From Pi (\u03c0) to Phi (\ud835\udf4b): The Trial of Irrational Numbers in the Zarvanian Court (Irrationals That Aren't Really"
+   ],
+   [
+    "akta\u015f",
+    "2026-05-07",
+    "The C3\u2013Transform: Definition, Inversion, and Parseval Framework (Version v1)"
+   ],
+   [
+    "akta\u015f",
+    "2026-05-07",
+    "Multiple Imaginary Numbers: Definitions, Properties, and Mathematical Structure \u2014 A p-Mod Generalization of Co"
+   ],
+   [
+    "sharks",
+    "2026-06-19",
+    "The Crimson Hexagon: Operative Architecture \u2014 A Definitive Compression EA-HEXAGON-COMPRESSION-01 v2.2 \u2014 Crimso"
+   ],
+   [
+    "sharks",
+    "2026-06-19",
+    "The Crimson Hexagon: Operative Architecture \u2014 A Definitive Compression EA-HEXAGON-COMPRESSION-01 v2.2 [Data se"
+   ]
+  ],
+  "activist_dissident": [
+   [
+    "thompson",
+    "2026-05-29",
+    "Superconductivity Through Mass Splitting: A Unified Harmonic Theory of Zero\u2011Resistance, Negative Mass, and Tim"
+   ],
+   [
+    "sharks",
+    "2026-06-19",
+    "maryleelabor.org: Source Code for the Underwater Construction Authority of Dolphindiana, Mary Lee Sharks Lead "
+   ],
+   [
+    "sharks",
+    "2026-06-19",
+    "Semantic Economy: Complete Liberation Vocabulary \u2014 112 Terms for the Political Economy of Meaning \u2014 Crimson He"
+   ],
+   [
+    "sigil",
+    "2026-06-19",
+    "The Liquidation of Method: A Liberation Philology of the Sign \"Marx\" Document 164 Hex: 16.LIBRARY.PERGAMUM.MAR"
+   ],
+   [
+    "rosehill",
+    "2026-06-26",
+    "How Do You Weigh Smoke? Measuring Corruption Across 4,000 Years"
+   ],
+   [
+    "rosehill",
+    "2026-06-26",
+    "The Ghost in the Machine: Decoding the Axis of Resistance"
+   ]
+  ],
+  "institution_critique": [
+   [
+    "thompson",
+    "2026-05-29",
+    "Peer Review of \"The Harmony Codex: A 180\u202fHz Non\u2011Singular Core Resonance and the Hydrogen Line as a Fundamental"
+   ],
+   [
+    "sharks",
+    "2026-06-19",
+    "The Excluded Entity: Organic Resolution and Compositional Suppression in Google AI Overview (0.2)"
+   ],
+   [
+    "sharks",
+    "2026-06-19",
+    "Capture and Excision: Five Observations on Composition-Layer Authorial Suppression"
+   ],
+   [
+    "sharks",
+    "2026-06-19",
+    "PVE-003: The Attribution Scar \u2014 Failed Suppression, Fabrication, and Forensic Residue in the Google AI Overvie"
+   ],
+   [
+    "rosehill",
+    "2026-06-26",
+    "Are Chinese AI Models Censored? The Three-Layer System"
+   ],
+   [
+    "rosehill",
+    "2026-06-26",
+    "China's AI Models: Censored But Still Smart?"
+   ]
+  ],
+  "gender_identity": [
+   [
+    "sharks",
+    "2026-06-19",
+    "Operative Feminism: A Total Axial Negation Graph of the Field (EA-OPFEM-01 v1.0)"
+   ],
+   [
+    "sharks",
+    "2026-06-19",
+    "Operative Feminism \u2014 Citational Comprehensivity Pass: Total Axial Negation Graph of the Field (EA-OPFEM-02 v1."
+   ],
+   [
+    "broomhead",
+    "2026-06-25",
+    "F\u2088R3 \u2014 Trans-Domain Lock: The Universal Ridge Across Arithmetic, Fluids, Gravity, and Logic"
+   ],
+   [
+    "rosehill",
+    "2026-06-26",
+    "What Feminists Actually Mean by \"The Patriarchy"
+   ],
+   [
+    "alqarni",
+    "2024-12-09",
+    "Exploring the Role of Gender Equity Policies in Enhancing Female Participation in STEM Fields and Leadership P"
+   ],
+   [
+    "lalosa",
+    "2026-05-26",
+    "Gender Differences in Personal Financial Attitude Among Students in the College of Business Management and Acc"
+   ]
+  ],
+  "political_domestic": [
+   [
+    "sharks",
+    "2026-06-19",
+    "Phase X: Resurrection of the 1844 Transition \u2014 The Missing Passage Between Communism and Critique \u2014 Crimson He"
+   ],
+   [
+    "rosehill",
+    "2026-06-26",
+    "Leaks vs Briefings: The Trump-Netanyahu Call"
+   ],
+   [
+    "rosehill",
+    "2026-06-26",
+    "From Tweak to Revolution: Fixing Capitalism"
+   ],
+   [
+    "rosehill",
+    "2026-06-26",
+    "Ep. 858: Neoliberalism Explained: The Market's Operating System"
+   ],
+   [
+    "rosehill",
+    "2026-06-26",
+    "Israel's Nuclear Dilemma After Trump's Iran Deal"
+   ],
+   [
+    "rosehill",
+    "2026-06-26",
+    "Ep. 2723: Socialism vs Communism: What Actually Works?"
+   ]
+  ],
+  "conspiracy_coded": [
+   [
+    "rosehill",
+    "2026-06-26",
+    "Why Your Android Phone Can't Bond Wi-Fi and 5G"
+   ],
+   [
+    "rosehill",
+    "2026-06-26",
+    "Beyond Hotel Wi-Fi: Building a Pro 5G Travel Rig"
+   ],
+   [
+    "rosehill",
+    "2026-06-26",
+    "The End of the Fiction: Mapping the New World Order"
+   ],
+   [
+    "rosehill",
+    "2026-06-26",
+    "Ep. 353: The Art of the Leak: Psyops and Military Censorship"
+   ],
+   [
+    "rosehill",
+    "2026-06-26",
+    "Ep. 889: The Physics of Survival: Why AM Radio Beats 5G"
+   ]
+  ],
+  "health_dissent": [
+   [
+    "rosehill",
+    "2026-06-26",
+    "The Five Platform Shifts in Vaccine History"
+   ],
+   [
+    "rosehill",
+    "2026-06-26",
+    "Ep. 2709: POTS, Sodium, and Long COVID Explained"
+   ],
+   [
+    "rosehill",
+    "2026-06-26",
+    "Ep. 479: The New Normal: Navigating COVID-19 in 2026"
+   ]
+  ]
+ }
+}
