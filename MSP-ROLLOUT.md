@@ -30,6 +30,7 @@ Every application decomposes into:
 - Triple-helix placement: only where severed DOIs are actually cited; cohort values are LEGEND, individual identifiers get per-slot states from dated captures; UNQUERIED is a state, not an omission (spec §6)
 - Obol register decision: evidentiary surfaces carry cost-of-custody AS DATA in the sober register (exemplar: PEO obol block); narrative surfaces MAY carry it diegetically (Obol Rule — the membrane is load-bearing; nothing crosses in either direction)
 - Witness rows: only where witness artifacts exist to link (Rule 6: named witnesses without artifacts are personalized favicons)
+- Identifier-layer vigilance: machine reviewers most reliably confabulate at the identifier layer (three counterfeit AXNs from three substrates, 2026-07-13). Every AXN in any pass is pulled live per ASSEMBLY-ANCHORING.md (www.alexanarch.org/ASSEMBLY-ANCHORING.md) or cited in the UNVERIFIED form — never composed.
 - Exactness pass: operator-vocabulary discipline (instrument/repository/registry operator), quotations verbatim, claims scoped to what is proven (model: the ten-item Chorus patch, PEO commit 792216c's message is the checklist)
 
 ## 2. Manifest schema — `msp.json` (one per site repo, at root)
@@ -111,4 +112,4 @@ watergiraffe-org (watergiraffe.org) · traininglayerliterature-org (traininglaye
 
 ## 7. Progress log (append-only)
 
-- **2026-07-13 (TACHYON, founding session):** Standard deposited (#1077, hex-collision pipeline bug fixed in same commit d03c009). Oracle Phase 1 + reader-experience design + tether/checksum/marks/carry shipped (34a062b, 155cae2, e95c6df, 046823a; cache-bust v=8). PEO full apparatus + nine nuclei (887270e), ten-item Chorus exactness patch (792216c), certified reference at release 1.1.0. Canonical tokens contract established at peo/assets/msp-tokens.css. Fleet enumerated (30/41). This plan written. PAT of the day rotated at close per standing rule.
+- **2026-07-13 (TACHYON, founding session):** Standard deposited (#1077, hex-collision pipeline bug fixed in same commit d03c009). Oracle Phase 1 + reader-experience design + tether/checksum/marks/carry shipped (34a062b, 155cae2, e95c6df, 046823a; cache-bust v=8). PEO full apparatus + nine nuclei (887270e), ten-item Chorus exactness patch (792216c), certified reference at release 1.1.0. Canonical tokens contract established at peo/assets/msp-tokens.css. Fleet enumerated (30/41). This plan written. ASSEMBLY-ANCHORING.md published at the sovereign root (live anchoring protocol for all members; occasioned by the three-counterfeit night). PAT of the day rotated at close per standing rule.
