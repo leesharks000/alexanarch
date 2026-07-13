@@ -132,7 +132,7 @@ BROWSE_HEADER = """<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><m
 </head><body><div class="wrap">
 <nav class="nav">__NAVBAR_TOKEN__</nav>
 <h1 style="font-size:1.4em;font-weight:600;color:var(--accent);margin-bottom:4px">Complete Deposit Registry</h1>
-<div style="color:#777;font-size:.88em;margin-bottom:16px">{total} deposits · sorted by deposit number, oldest first · for newest see <a href="/">home page</a></div>
+<div id="browse-meta" style="color:#777;font-size:.88em;margin-bottom:16px">{total} deposits · sorted by deposit number, oldest first · for newest see <a href="/">home page</a></div>
 """
 
 BROWSE_CARD = """<a href="/s/records/{n}/" itemscope itemtype="https://schema.org/CreativeWork" style="display:block;padding:6px 0;border-bottom:1px solid #f0f0f0;text-decoration:none;color:var(--fg){card_opacity}">
@@ -147,6 +147,7 @@ BROWSE_CARD = """<a href="/s/records/{n}/" itemscope itemtype="https://schema.or
 
 BROWSE_FOOTER = """
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script defer src="/assets/gc-enhance.js"></script>
 <div class="footer"><strong>Alexanarch</strong><div style="margin-top:5px;color:var(--accent)">∮ = 1</div></div></div></body></html>"""
 
 

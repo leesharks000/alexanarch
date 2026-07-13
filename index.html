@@ -127,7 +127,7 @@ fetch('/data/registry.json').then(r=>r.json()).then(reg=>{
     var card='<a href="/s/records/'+(d.deposit_number||d.issue_number||1)+'/" style="display:block;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;margin-bottom:12px;text-decoration:none;color:inherit;cursor:pointer;opacity:'+opacity+'">';
     card+='<div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px">';
     card+='<div style="font-family:var(--mono);font-size:0.88em;color:var(--teal);font-weight:500">'+d.axn+'</div>';
-    card+='<div style="font-size:0.72em;color:var(--dim)">'+d.date+' \u00b7 <span class="gc-v" data-gc="/s/records/'+(d.deposit_number||d.issue_number||1)+'/" style="color:var(--teal)">0 views</span></div>';
+    card+='<div style="font-size:0.72em;color:var(--dim)">'+d.date+' \u00b7 <span class="gc-v" data-gc="/s/records/'+(d.deposit_number||d.issue_number||1)+'/" style="color:var(--teal)">—</span></div>';
     card+='</div>';
     // Supersession or draft banner — under the AXN, above title
     if(status==='SUPERSEDED'&&supersededBy){
@@ -328,64 +328,6 @@ Primary research and empirical datasets. Critical editions and philological appa
 </div>
 
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-<script>
-// Update deposit card counters from GoatCounter
-var gcReady=setInterval(function(){
-  if(window.goatcounter&&window.goatcounter.visit_count){
-    clearInterval(gcReady);
-    document.querySelectorAll('.gc-v').forEach(function(el){
-      var p=el.getAttribute('data-gc');
-      // Use a hidden element to get the count
-      var tmp=document.createElement('span');
-      tmp.style.display='none';
-      document.body.appendChild(tmp);
-      try{
-        window.goatcounter.visit_count({append:tmp,type:'text',no_branding:true,style:'',path:p});
-        setTimeout(function(){
-          var count=tmp.textContent.trim();
-          if(count&&count!=='0') el.textContent=count+' views';
-          tmp.remove();
-        },1500);
-      }catch(e){tmp.remove();}
-    });
-  }
-},200);
-setTimeout(function(){clearInterval(gcReady);},5000);
-</script>
-<script>
-(function(){
-  function loadCounts(){
-    var els=document.querySelectorAll('.gc-v');
-    for(var i=0;i<els.length;i++){
-      (function(el){
-        var p=el.getAttribute('data-gc');
-        var x=new XMLHttpRequest();
-        x.open('GET','https://alexanarch.goatcounter.com/counter/'+encodeURIComponent(p)+'.json');
-        x.onload=function(){
-          try{var d=JSON.parse(x.responseText);el.textContent=(d.count||'0')+' views';}
-          catch(e){el.textContent='0 views';}
-        };
-        x.onerror=function(){el.textContent='0 views';};
-        x.send();
-      })(els[i]);
-    }
-    // Also load home page counter
-    var hx=new XMLHttpRequest();
-    hx.open('GET','https://alexanarch.goatcounter.com/counter/'+encodeURIComponent('/')+'.json');
-    hx.onload=function(){
-      try{
-        var d=JSON.parse(hx.responseText);
-        var el=document.getElementById('home-views');
-        if(el) el.textContent=d.count+' total visits';
-      }catch(e){}
-    };
-    hx.send();
-  }
-  if(document.readyState==='complete') loadCounts();
-  else window.addEventListener('load',loadCounts);
-})();
-</script>
-
-
+<script defer src="/assets/gc-enhance.js"></script>
 </body>
 </html>
