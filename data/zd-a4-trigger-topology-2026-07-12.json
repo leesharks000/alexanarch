@@ -1,0 +1,35 @@
+{
+ "analysis": "ZD-A4: Trigger Topology \u2014 can review initiation be recovered from the deletion export?",
+ "date": "2026-07-12",
+ "schema_finding": "8 columns (record_id, doi, parent_id, parent_doi, removal_note, removal_reason, removal_date, citation_text). No reviewer field, no account key, no trigger marker; removal_date is day-granular. Review initiation has no field.",
+ "cha_case": {
+  "rows_matched": 1161,
+  "termination_batch": {
+   "date": "2026-06-19",
+   "rows": 1148,
+   "note": "User was blocked",
+   "reason": "out-of-scope"
+  },
+  "pre_termination_rows": 13,
+  "self_housekeeping": 11,
+  "self_housekeeping_note": "all empty removal_note; reasons duplicate/test-record/personal-data/retracted; several carry the depositor's own [DUPLICATE \u2014 SUPERSEDED \u2192] annotations. User-initiated pathway, not review trace.",
+  "foreign_misattributions": [
+   {
+    "doi": "10.5281/zenodo.15339374",
+    "blocked": "2025-08-15",
+    "true_owner": "unknown third party; adjacent to CHA 15339368 (deposit #68, The Secret Name)",
+    "action": "QUARANTINE resolver mapping"
+   },
+   {
+    "doi": "10.5281/zenodo.18364947",
+    "blocked": "2026-04-13",
+    "note": "empty citation_text; block date incompatible with CHA account; string-match hit inside DOI-registry deposit body only",
+    "action": "QUARANTINE resolver mapping"
+   }
+  ],
+  "staff_initiated_precursors": 0,
+  "conclusion": "The review that terminated the account left ZERO record-level trace. The event appears in the data as a single-day monolith. Initiation is structurally unrecordable in this schema."
+ },
+ "doctrinal_line": "The blacklist has a DOI; the review has no record; the trigger has no field. Outcome-only logging is the asymmetric-memory thesis at the schema layer.",
+ "citation_text_mechanics": "CHA account-block rows carry the deleted work's own formatted bibliographic citation (1,159/1,161) \u2014 the adverse-party-bibliography reading is literal, not figurative. Fill-rate by category recorded above for context."
+}
