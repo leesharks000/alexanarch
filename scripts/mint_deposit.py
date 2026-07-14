@@ -197,6 +197,11 @@ CONTENT_TYPE_TO_FAMILY = {
     # Allowed for backward compatibility with curator-minted deposits
     "Empirical baseline reading": "EMPIRICAL",
     "Methodology specification": "OPERATIVE",
+    # Correspondence chain (documented on EA-CORRESPONDENCE-CERN-01..05):
+    # the semicolon-separated content_type declarations all begin with
+    # "Institutional correspondence" and belong to the GOVERNANCE family.
+    "Institutional correspondence": "GOVERNANCE",
+    "Correspondence": "GOVERNANCE",
 }
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -426,8 +431,11 @@ def family_for_content_type(content_type: str) -> str:
     weren't anticipated here. UNCLASSIFIED is valid per the schema's
     family enum.
     """
-    # Strip suffix in parens, e.g. "Other (specify in description)" -> "Other"
-    key = content_type.split("(")[0].strip() if content_type else ""
+    # Strip suffix in parens, e.g. "Other (specify in description)" -> "Other".
+    # Also split on semicolons so that semicolon-continued declarations like
+    # "Institutional correspondence; documentary artifact for the OC 11 exercise..."
+    # (used across the EA-CORRESPONDENCE-CERN chain) match the first-clause key.
+    key = re.split(r"[;(]", content_type)[0].strip() if content_type else ""
     return CONTENT_TYPE_TO_FAMILY.get(key, "UNCLASSIFIED")
 
 
