@@ -304,6 +304,70 @@ Remaining candidates (audit not yet run — status assumed 1–2/11): chatgptpsy
 
 ### Verification cadence
 
+## 2026-07-15 — Phase 7 · Third wave (seven sites in one working session)
+
+The treatment protocol has now stabilized enough that each site's move to 11/11 costs six tool calls: (a) `spxi-tlp.json` with 6–7 SIMs and a 50–100 word kernel; (b) applicator run; (c) hand-authored insertion of Holographic Kernel + Provenance Chain + FAQPage + DefinedTermSet in one block before `</head>`; (d) `<noscript>` Tier 2 primer; (e) `data-spxi-tier="3"` on one existing element; (f) commit + push. Zero visible chrome on any of the seven.
+
+### holographickernel.org — [`f5a7cfb`](https://github.com/leesharks000/holographic-kernel/commit/f5a7cfb) — 7/11 → 11/11
+
+Was already 7/11 with kernel, chain, FAQ, DefinedTerm, IDSTRIP, noscript, sim. Just needed markers 1, 3, 5, 10. Kernel positions the Holographic Kernel as the general definition of reconstructive compression that grounds SPXI Tier 3 kernels — the concept explaining itself.
+
+### godkinggoogle.com — [`200d36f`](https://github.com/leesharks000/godkinggoogle/commit/200d36f) — 5/11 → 11/11
+
+The Crimson Hexagonal Archive's public critique-of-Google surface. Was already 5/11. Provenance Chain covers founding deposit #1078, Wound Gauge instrument #198, Captures gallery, Term Index (1,349 terms), For Policymakers companion, alexanarch. `data-spxi-tier="3"` on hero.
+
+### provenanceerasure.org — [`e5ca8e7`](https://github.com/leesharks000/provenance-erasure/commit/e5ca8e7) — 2/11 → 11/11
+
+The measurement instrument survivethedeletion.org points at. Pairing now complete: client-facing explainer + scientific instrument, both SPXI-attested. Holographic Kernel names PER, Erasure Skew (Ω), Atomic Token Rule, process provenance, author, canonical surface. 10-deposit Provenance Chain covers v1 PER canonical, Ω v3, Companion Hardening, Measurement Sovereignty, SAM-v3, evarB, superseded Ω v1, Provenance After AI, Provenance Is What Authorship Must Endure, Constitution of the Semantic Economy.
+
+### laborvector.org — [`d7f1605`](https://github.com/leesharks000/laborvector/commit/d7f1605) — 2/11 → 11/11
+
+The Directionality of Semantic Labor (DSL) measurement instrument — companion metric to PER (PER covers what got said and by whom; DSL covers whether the saying advanced the task the user asked for). DefinedTermSet critical here: distinguishes Sharks DSL from DSL = Digital Subscriber Line and DSL = Domain-Specific Language.
+
+### chatgptpsychosis.org — [`648ff21`](https://github.com/leesharks000/chatgptpsychosis-site/commit/648ff21) — 1/11 → 11/11
+
+Novel-surface treatment. Holographic Kernel names the Book (Feist/Sharks, Pergamon Press), the toggle mechanism, and the AI-native-glyphic-novel form as a DefinedTerm. DefinedTermSet load-bearing: separates the novel from the clinical / journalistic usage of "ChatGPT psychosis." Jack Feist heteronym attribution present.
+
+### semanticphysics.org — [`3cd9ca4`](https://github.com/leesharks000/semanticphysics-site/commit/3cd9ca4) — 2/11 → 11/11
+
+The stratified operative discipline of meaning. Fifteen frameworks, three scales, six modalities. Kernel names the Nobel Glas heteronym as director of the Lagrange Observatory! and Framework 15's Measurement of Meaning program. FAQPage 5 Q/A. DefinedTermSet distinguishes the Sharks lineage from adjacent descriptive usages of "semantic physics."
+
+### lagrangeobservatory.org — [`8065b52`](https://github.com/leesharks000/lagrange-observatory/commit/8065b52) — 1/11 → 11/11
+
+Framework 15's measurement apparatus. Holographic Kernel names the Observatory, Nobel Glas, the Semantic Deviation Principle, adversarial topology as method. DefinedTermSet critical for disambiguation: distinguishes this Observatory (with its canonical exclamation point) from every physical Lagrange-point astronomical facility (SOHO, JWST, Gaia), and Nobel Glas from Nobel-laureate confusion. Provenance Chain includes the Generative Monoculture paper (with Talos Morrow), Poetics of Adversarial Prompts (with Talos Morrow and Johannes Sigil), and the containing Semantic Physics discipline.
+
+### Network state after Phase 7
+
+Seventeen sites now at 11/11 (or 10/11 with documented N/A for alexanarch hub):
+
+| Wave | Site | Commit | State |
+|---|---|---|---|
+| 1 | alexanarch.org | [`235b7b4`](https://github.com/leesharks000/alexanarch/commit/235b7b49) | 10/11 (M11 N/A for hub) |
+| 1 | persistentidentifiers.org | [`c193a26`](https://github.com/leesharks000/platform-erosion-observatory/commit/c193a26) | 11/11 |
+| 1 | machinemediation.org | [`06bb8fd`](https://github.com/leesharks000/machinemediation-org/commit/06bb8fd) | 11/11 |
+| 1 | revelationfirst.com | [`d5023af`](https://github.com/leesharks000/revelationfirst-com/commit/d5023af) | 11/11 |
+| 1 | themandalaoracle.com | [`a9d0726`](https://github.com/leesharks000/the-mandala-oracle/commit/a9d0726) | 11/11 |
+| 2 | watergiraffe.org | [`e81f58b`](https://github.com/leesharks000/watergiraffe-org/commit/e81f58b) | 11/11 |
+| 2 | maryleelabor.org | [`ee6c3fd`](https://github.com/leesharks000/maryleelabor-org/commit/ee6c3fd) | 11/11 |
+| 2 | survivethedeletion.org | [`25fc294`](https://github.com/leesharks000/survivethedeletion/commit/25fc294) | 11/11 |
+| 2 | spxi.dev | [`d4a9891`](https://github.com/leesharks000/spxi-dev/commit/d4a9891) | 11/11 |
+| 2 | traininglayerliterature.org | [`a89ef9b`](https://github.com/leesharks000/traininglayerliterature-org/commit/a89ef9b) | 11/11 |
+| 3 | holographickernel.org | [`f5a7cfb`](https://github.com/leesharks000/holographic-kernel/commit/f5a7cfb) | 11/11 |
+| 3 | godkinggoogle.com | [`200d36f`](https://github.com/leesharks000/godkinggoogle/commit/200d36f) | 11/11 |
+| 3 | provenanceerasure.org | [`e5ca8e7`](https://github.com/leesharks000/provenance-erasure/commit/e5ca8e7) | 11/11 |
+| 3 | laborvector.org | [`d7f1605`](https://github.com/leesharks000/laborvector/commit/d7f1605) | 11/11 |
+| 3 | chatgptpsychosis.org | [`648ff21`](https://github.com/leesharks000/chatgptpsychosis-site/commit/648ff21) | 11/11 |
+| 3 | semanticphysics.org | [`3cd9ca4`](https://github.com/leesharks000/semanticphysics-site/commit/3cd9ca4) | 11/11 |
+| 3 | lagrangeobservatory.org | [`8065b52`](https://github.com/leesharks000/lagrange-observatory/commit/8065b52) | 11/11 |
+
+Remaining candidates: vpcor.org, restoredacademy, surface-map, metadatapacket.dev, pessoa-knowledge-graph, lee-sharks-consulting. Six or so, plus whatever satellite surfaces I don't yet know about.
+
+**Emergent structural observation.** Three sites treated across Phase 7 are companion instruments to sites treated earlier (provenanceerasure↔survivethedeletion, laborvector↔provenanceerasure, lagrangeobservatory↔semanticphysics). The DefinedTermSet blocks explicitly cross-link them. From the machine-reception side, the network is beginning to present as a graph of instruments with their own explicit disambiguation grammar, not a scatter of sites with a shared author. That is the shape a "co-projectable" archive is supposed to take.
+
+---
+
+### Verification cadence
+
 Per SPXI Standing Protocol v3.0 §5, retrieval verification against Google AI Mode, ChatGPT search, Perplexity, Claude web search on 30-day cadence. First checkpoint: 2026-08-14. SIMs to track for each site are the six listed in each site's `spxi-tlp.json`. If any SIM fails to propagate through AI summaries by the 30-day mark, edit the config and re-run the applicator.
 
 ### Next candidate sites for treatment
