@@ -366,6 +366,58 @@ Remaining candidates: vpcor.org, restoredacademy, surface-map, metadatapacket.de
 
 ---
 
+## 2026-07-15 — Data Art Sweep · companion track
+
+Initiated in response to third-party criticism sharpening the "make the seams visible" principle: the archive's projections do not need to agree, but every disagreement must be traceable to a declared transformation contract. Nine items, priority-ordered by dependency + return-on-effort. Adopted en bloc; scheduled as a companion track to any remaining SPXI compliance work.
+
+### Status matrix
+
+| # | Item | Status | Depends on | Location |
+|---|------|:-:|:-:|---|
+| 1 | Dynamic counts from source-of-truth | ☐ | — | Datasets, Browse, Wiki, Captures, Homepage |
+| 2 | Four-emoji AXN description cleanup | ☐ | — | GLYPH_SPEC.md, `/identifiers/`, hub prose |
+| 3 | Navigation clusters (5 groups) | ☐ | — | Global nav across surfaces |
+| 4 | Transformation-contract micro-headers | ☐ | #1 | Every derived surface |
+| 5 | Resolver-language sharpen | ☐ | — | `/identifiers/`, `/manifest/`, hub |
+| 6 | AXN hash-glyph precision correction | ☐ | — | `/identifiers/` |
+| 7 | Semantic Addresses source-of-truth unification | ☐ | #4 | data pipeline; captures + SP + MMRS + RevFirst as tributaries |
+| 8 | Semantic Addresses class-proportion viz | ☐ | #7 | `/addresses/` |
+| 9 | Graph epistemic-label sub-split | ☐ | — | `/s/graph/`, data-side |
+
+Legend: ☐ not started · 🟡 in progress · ✓ landed
+
+### Notes per item
+
+**#1 · Dynamic counts.** Every count on every surface reads from source-of-truth JSON at build time (or client-fetch), not from hardcoded prose. Prevents the version-skew the critic named: Browse 1,083 vs Wiki 863-of-1,072 vs Datasets 881 vs Captures 176-vs-204. The single source of truth is `data/registry.json`; derived counts are computed at build time and injected into templates.
+
+**#2 · Four-emoji AXN cleanup.** The published `GLYPH_SPEC.md` describes a four-byte / four-emoji mapping; actual AXNs are six-emoji throughout the network. Reconcile: version the spec explicitly (v1 four-emoji, v2 six-emoji) with a clear cutover note in each, or update the spec forward and audit for stale four-emoji language in prose. Whichever preserves the historical record. Also affects `homepage` SPXI metadata and any related site copy.
+
+**#3 · Navigation clusters.** Group the 16-surface top nav into: **Library** (Browse · Wiki · Graph · Lexical · Citations) · **Reception Instruments** (Addresses · Captures · Observatory) · **Continuity Infrastructure** (Resolve · Identifiers · Datasets) · **Generative Apparatus** (Book) · **Governance** (Principles · Deposit · Guide · Manifest). Makes the plurality intelligible as an architecture rather than as accumulation. Replicate the cluster contract across every hub-page nav.
+
+**#4 · Transformation-contract micro-headers.** Standardized block on every derived surface: `source: registry.json · hash: <sha7> · generated: <iso> · transform: <name> · coverage: <n>/<m> · exclusions: <k>`. Establishes local accountability for every projection: the reader can distinguish intentional plurality from historical snapshot from derivation lag from accidental inconsistency. Small monospace strip near the top of each derived surface. The archive's answer to the critic's central methodological point.
+
+**#5 · Resolver-language sharpen.** Three-part distinction to replace the currently-overreaching "no platform can revoke it": (a) *content identity* — byte-anchored, non-revokable, verifiable against the hash; (b) *public resolution* — custodian-mediated, revokable, dependent on the resolver / domain / mirrors; (c) *custodial continuity* — sovereign, distributed, resistant to any single point of failure but not to the class of all failures. Preserves the political force while maintaining the precise technical claim. Affected surfaces: `/identifiers/`, `/manifest/`, and any hub prose still using the older language.
+
+**#6 · AXN glyph precision.** The hash glyphs form a portrait of the work's *position in a hash space*, not a "structural portrait" of the work itself. The arbitrariness is the point: semantic inscription ends in a cryptographic remainder that refuses interpretation. Small paragraph edit on `/identifiers/`, preserving the AXN's aesthetic force while correcting the technical rhetoric. The three-layer AXN (positional / semantic-family / cryptographic) stays; the framing of what the third layer *does* sharpens.
+
+**#7 · Semantic Addresses source-of-truth unification** (Lee-added). The current 111-observed count on `/addresses/` draws from ONE tributary. Observed addresses also exist across at least four other tributaries and are not currently wired to the addresses dataset:
+- **Captures registry** at machinemediation.org — each capture is by definition an observed address (a query that returned a machine response worth preserving).
+- **Sémantique Potentielle** at MMRS — Releases 3 and 4 include observed-address batteries.
+- **Revelation First** — the capture workstreams document reception of specific queries.
+- Others across satellite surfaces (godkinggoogle captures, PEO's XR-E2 sampling, likely more).
+
+Design: canonical addresses dataset regenerated as UNION over these tributaries, with per-address tributary attribution stamped per the #4 pattern (`observed_by: [captures#203, SP-r3-batt2, RF-workstream-4]`). Deduplication by canonical query form. Precedent is the DOI Resolution Index's tributary-union pattern.
+
+**#8 · Semantic Addresses class-proportion viz.** After #7 unifies the observed set, make the observed / subjunctive / verified-non-address proportion unmissable at the top of `/addresses/`. Prevents the potential layer from being read as observed territory — a critical epistemic guardrail the critic named explicitly. Could be as simple as a top-of-page proportion bar or as involved as an interactive filter defaulting to observed-only.
+
+**#9 · Graph epistemic-label sub-split.** Keep observed / inferred / performative as top labels on the graph. Annotate each edge with two sub-classes: **attestation status** (extracted / hand-curated / generated / imported) and **evidence target** (textual / empirical / juridical / institutional / machine-reception). Data-side addition to `entities[]` extraction; graph renderer picks up the sub-classes without needing to change its top-level buckets. Prevents an "observed" edge from being read as an empirical claim about the world when it may be a textual assertion about a text.
+
+### Cross-track note
+
+The Sweep and the SPXI compliance work address the same underlying failure mode from opposite sides: SPXI markers make each surface *individually* readable to the composition layer; the Sweep makes the *transformations between surfaces* readable to a human. SPXI answers "what is this surface?"; the Sweep answers "how did this projection come to look this way?" Both are transformation-provenance work; both attach the provenance to the artifact rather than to a footnote.
+
+---
+
 ### Verification cadence
 
 Per SPXI Standing Protocol v3.0 §5, retrieval verification against Google AI Mode, ChatGPT search, Perplexity, Claude web search on 30-day cadence. First checkpoint: 2026-08-14. SIMs to track for each site are the six listed in each site's `spxi-tlp.json`. If any SIM fails to propagate through AI summaries by the 30-day mark, edit the config and re-run the applicator.
