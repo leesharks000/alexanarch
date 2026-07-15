@@ -83,13 +83,40 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
 <div class="pager" id="pager"></div>
 
 <div class="footer">
-  <div><strong>Alexanarch</strong> &middot; Read from <a href="/data/EA-WG-CAPTURES-01-v8.3.json"><span class="kbd">data/EA-WG-CAPTURES-01-v8.3.json</span></a> &middot; canonical record at <a href="/records/?id=3">deposit #3</a></div>
+  <div><strong>Alexanarch</strong> &middot; Read from <a href="/data/EA-WG-CAPTURES-01.json"><span class="kbd">data/EA-WG-CAPTURES-01.json</span></a> &middot; canonical record at <a href="/records/?id=3">deposit #3</a></div>
   <div class="glyph">&int; = 1</div>
 </div>
 </div>
 
 <script>
-fetch('/data/EA-WG-CAPTURES-01-v8.3.json').then(function(r){return r.json()}).then(function(cap){
+// Try candidates in order — a versionless alias first (populated by the mirror
+// sync step), then the versioned deposit artifact as fallback. Fixes the class
+// of bug where a version bump renames the file and the page 404-hangs.
+// If both fail, we render a visible error state instead of an infinite spinner.
+var CAPTURE_SOURCES = ['/data/EA-WG-CAPTURES-01.json', '/data/EA-WG-CAPTURES-01-v8.11.json'];
+
+function loadCaptures(){
+  return CAPTURE_SOURCES.reduce(function(chain, url){
+    return chain.then(function(cap){
+      if(cap) return cap;
+      return fetch(url).then(function(r){
+        if(!r.ok) return null;
+        return r.json();
+      }).catch(function(){ return null; });
+    });
+  }, Promise.resolve(null));
+}
+
+loadCaptures().then(function(cap){
+  if(!cap){
+    document.getElementById('stats').innerHTML =
+      '<div style="padding:16px;background:#fbeae6;border:1px solid #c23b22;border-radius:6px;color:#c23b22;font-size:.9em">'+
+      'Registry data unavailable. Attempted: '+CAPTURE_SOURCES.join(', ')+'. '+
+      'The mirror may be mid-rotation; try refreshing in a moment, or read the '+
+      'source-of-truth live registry at <a href="https://machinemediation.org/registry/" style="color:inherit;text-decoration:underline">machinemediation.org/registry</a>.'+
+      '</div>';
+    return;
+  }
   var entries = cap.entries || [];
   var galleries = cap.galleries || ['https://godkinggoogle.vercel.app/captures'];
   var primaryGallery = galleries[0];
