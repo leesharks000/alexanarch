@@ -32,6 +32,7 @@ AUTHORED_PAGES = [
     'citations/index.html',
     'addresses/index.html',
     'datasets/index.html',
+    'search/index.html',
 ]
 
 

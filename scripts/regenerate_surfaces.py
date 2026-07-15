@@ -49,6 +49,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -73,7 +74,7 @@ try:
 except ImportError:
     _OVERWRITE_GUARD_AVAILABLE = False
 
-ALL_SURFACES = ["state", "browse", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index"]
+ALL_SURFACES = ["state", "browse", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static"]
 
 
 def _receipt(path, reason: str = "regenerate_surfaces write"):
@@ -460,6 +461,8 @@ STATIC_URLS = [
     ("https://alexanarch.org/s/browse/", 0.7),
     ("https://alexanarch.org/s/wiki/", 0.6),
     ("https://alexanarch.org/s/graph/", 0.6),
+    ("https://alexanarch.org/s/search/", 0.7),
+    ("https://alexanarch.org/search/", 0.8),
     # Canonical data
     ("https://alexanarch.org/data/registry.json", 0.5),
     ("https://alexanarch.org/data/state.json", 0.6),
@@ -467,6 +470,7 @@ STATIC_URLS = [
     ("https://alexanarch.org/data/doi-resolution-index.json", 0.5),
     ("https://alexanarch.org/data/batch-axn-assignment.json", 0.4),
     ("https://alexanarch.org/data/chunks/registry/_index.json", 0.4),
+    ("https://alexanarch.org/api/search-index.json", 0.7),
     # Protocols
     ("https://alexanarch.org/api/index.json", 0.6),
     ("https://alexanarch.org/api/deposit-protocol.json", 0.5),
@@ -1162,6 +1166,277 @@ def regenerate_api_index(reg, dry_run=False):
         print(f"  ✓ api/index.json (already in sync)")
 
 
+# ──────────────────────────────────────────────────────────────────────────────
+# Surface 12: /api/search-index.json — token-level inverted index (v1)
+# ──────────────────────────────────────────────────────────────────────────────
+#
+# Machine-facing search endpoint. Reads registry, emits an inverted index
+# mapping tokens → lists of deposit numbers. Fetch once; look up any term
+# as a key. Complements /data/browse-index.json (which is walk-and-grep):
+# search-index.json is direct lookup, no scan.
+#
+# Series prefixes (gw.tachyon, EA-*, MPAI, OCTANG, etc.) are captured as
+# structured entries with their casing preserved. Generic tokens are
+# case-folded and stopwords are stripped. Content-derived identifiers
+# (AXN hex, full AXN) are added as their own lookup keys so a bare hex
+# like "0421" resolves to its deposit number.
+
+_SEARCH_STOPWORDS = frozenset({
+    "a", "an", "the", "and", "or", "of", "in", "on", "at", "to", "for",
+    "with", "by", "from", "as", "is", "are", "was", "were", "be", "been",
+    "being", "has", "have", "had", "it", "its", "this", "that", "these",
+    "those", "which", "who", "whom", "whose", "what", "when", "where",
+    "why", "how", "not", "no", "so", "if", "than", "then", "into", "out",
+    "via", "per", "over", "vs",
+})
+
+_SEARCH_SERIES_PATTERNS = [
+    # (regex, case-fold?)
+    (re.compile(r"\bgw\.tachyon(?:\.[a-z]+)?", re.IGNORECASE), True),
+    (re.compile(r"\bgw\.[a-z]+(?:\.[a-z]+)?", re.IGNORECASE), True),
+    (re.compile(r"\bEA-[A-Z0-9]+(?:-[A-Z0-9]+)*"), False),
+    (re.compile(r"\bMPAI(?:-[A-Z0-9]+)*"), False),
+    (re.compile(r"\bOCTANG(?:-\d+)?"), False),
+    (re.compile(r"\bPVE-\d+"), False),
+    (re.compile(r"\bEB-\d+"), False),
+    (re.compile(r"\bSPXI(?:-[A-Z0-9]+)*"), False),
+    (re.compile(r"\bCHA(?:-[A-Z0-9-]+)?"), False),
+    (re.compile(r"\bNEGSHAPE(?:-\d+)?"), False),
+    (re.compile(r"\bAXN:[0-9A-F]{3,4}", re.IGNORECASE), False),
+]
+
+
+def _tokenize_search(text):
+    """Extract case-folded generic tokens, ≥3 chars, stopwords removed."""
+    if not text:
+        return []
+    words = re.findall(r"[a-zA-Z0-9]{3,}", text.lower())
+    return [w for w in words if w not in _SEARCH_STOPWORDS]
+
+
+def _extract_series(text):
+    """Find series-prefix matches with structure preserved."""
+    if not text:
+        return []
+    out = []
+    for cre, fold in _SEARCH_SERIES_PATTERNS:
+        for m in cre.findall(text):
+            if isinstance(m, tuple):
+                m = m[0] if m else ""
+            if m:
+                out.append(m.lower() if fold else m)
+    return out
+
+
+def regenerate_search_index(reg, dry_run=False):
+    """Build /api/search-index.json — token-level inverted index.
+
+    Sources per deposit: title, description, creator, content_type, keywords,
+    axn (full), hex. Series prefixes captured in a dedicated table with
+    casing preserved.
+    """
+    deposits = reg["deposits"]
+
+    inverted = {}    # generic token → set of deposit numbers
+    series_ix = {}   # series token (e.g. gw.tachyon, EA-EROSION-01) → deposit numbers
+    creator_ix = {}  # creator full-string → deposit numbers
+    type_ix = {}     # content_type prefix → deposit numbers
+    hex_ix = {}      # hex label → deposit number(s)
+    keyword_ix = {}  # explicit keyword (whole phrase, lowercased) → deposit numbers
+
+    for d in deposits:
+        n = d.get("deposit_number") or d.get("issue_number") or 0
+        if not n:
+            continue
+        title = d.get("title", "") or ""
+        creator = (d.get("creator", "") or "").strip()
+        desc = d.get("description", "") or ""
+        ctype_full = (d.get("content_type", "") or "").strip()
+        ctype_prefix = re.split(r"[;(]", ctype_full)[0].strip()
+        axn = d.get("axn", "") or ""
+        hexid = d.get("hex", "") or ""
+        keywords = d.get("keywords", []) or []
+
+        # Generic tokens from title + description
+        for tok in _tokenize_search(title):
+            inverted.setdefault(tok, set()).add(n)
+        for tok in _tokenize_search(desc):
+            inverted.setdefault(tok, set()).add(n)
+
+        # Series prefixes from title + description (preserve casing)
+        for series_tok in _extract_series(title + " " + desc):
+            series_ix.setdefault(series_tok, set()).add(n)
+
+        # Creators — both as full-string key and as tokens
+        if creator:
+            creator_ix.setdefault(creator, set()).add(n)
+            for tok in _tokenize_search(creator):
+                inverted.setdefault(tok, set()).add(n)
+
+        # Content-type prefix as its own facet
+        if ctype_prefix:
+            type_ix.setdefault(ctype_prefix, set()).add(n)
+            for tok in _tokenize_search(ctype_prefix):
+                inverted.setdefault(tok, set()).add(n)
+
+        # Keywords: whole phrase + individual tokens
+        for kw in keywords:
+            kw_norm = kw.strip().lower()
+            if kw_norm:
+                keyword_ix.setdefault(kw_norm, set()).add(n)
+            for tok in _tokenize_search(kw):
+                inverted.setdefault(tok, set()).add(n)
+
+        # AXN and hex as their own lookup keys
+        if axn:
+            inverted.setdefault(axn.lower(), set()).add(n)
+        if hexid:
+            hex_ix.setdefault(hexid.upper(), set()).add(n)
+            # Also case-folded into the generic table for grep-style queries
+            inverted.setdefault(hexid.lower(), set()).add(n)
+
+    def to_sorted(d):
+        return {k: sorted(v) for k, v in sorted(d.items())}
+
+    output = {
+        "$schema": "https://alexanarch.org/api/schemas/search-index.schema.json",
+        "$id": "https://alexanarch.org/api/search-index.json",
+        "index_version": "v1",
+        "generated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "total_deposits": len(deposits),
+        "tokenization": {
+            "sources": ["title", "description", "creator", "content_type", "keywords", "axn", "hex"],
+            "min_length": 3,
+            "case_folded": True,
+            "stopwords_stripped": True,
+            "series_prefixes_regex_captured": True,
+            "series_families_recognized": [
+                "gw.tachyon.*", "gw.<substrate>.*", "EA-*", "MPAI-*", "OCTANG-*",
+                "PVE-*", "EB-*", "SPXI-*", "CHA-*", "NEGSHAPE-*", "AXN:*"
+            ],
+        },
+        "series_prefixes": to_sorted(series_ix),
+        "hex_labels": to_sorted(hex_ix),
+        "creators": to_sorted(creator_ix),
+        "content_types": to_sorted(type_ix),
+        "keywords": to_sorted(keyword_ix),
+        "index": to_sorted(inverted),
+        "counts": {
+            "series_prefix_terms": len(series_ix),
+            "hex_labels": len(hex_ix),
+            "creator_names": len(creator_ix),
+            "content_types": len(type_ix),
+            "keyword_phrases": len(keyword_ix),
+            "generic_tokens": len(inverted),
+        },
+    }
+
+    target = REPO_ROOT / "api" / "search-index.json"
+    payload = json.dumps(output, ensure_ascii=False, indent=2)
+    if dry_run:
+        print(f"  [DRY] would write {target} ({len(payload):,} bytes)")
+        return
+    target.parent.mkdir(parents=True, exist_ok=True)
+    _receipt(target)
+    with open(target, "w", encoding="utf-8") as f:
+        f.write(payload)
+    print(f"  ✓ api/search-index.json ({len(payload):,} bytes, "
+          f"{len(inverted)} generic tokens, {len(series_ix)} series prefixes, "
+          f"{len(keyword_ix)} keyword phrases)")
+
+
+def regenerate_search_static(reg, dry_run=False):
+    """Build /s/search/index.html — static crawler-readable series-prefix table.
+
+    Complements the dynamic /search/ page (JS-driven). Machines that follow
+    HTML links land here; agents that want token-level lookup should fetch
+    /api/search-index.json directly.
+    """
+    deposits_by_n = {d.get("deposit_number") or d.get("issue_number"): d
+                     for d in reg["deposits"]}
+
+    # Rebuild the series and hex tables here (mirror of search-index logic)
+    series_ix = {}
+    hex_ix = {}
+    for n, d in deposits_by_n.items():
+        if not n:
+            continue
+        text = (d.get("title", "") or "") + " " + (d.get("description", "") or "")
+        for series_tok in _extract_series(text):
+            series_ix.setdefault(series_tok, set()).add(n)
+        hexid = d.get("hex", "")
+        if hexid:
+            hex_ix.setdefault(hexid.upper(), set()).add(n)
+
+    # Series section
+    series_rows = []
+    for series_tok, nums in sorted(series_ix.items(), key=lambda kv: (-len(kv[1]), kv[0])):
+        nums_sorted = sorted(nums)
+        links = " · ".join(
+            f'<a href="/s/records/{n}/">#{n}</a>'
+            for n in nums_sorted[:100]
+        )
+        more = f" (+{len(nums_sorted) - 100} more)" if len(nums_sorted) > 100 else ""
+        series_rows.append(
+            f'<h3>{esc_html(series_tok)} <span class="count">{len(nums_sorted)}</span></h3>'
+            f'<p>{links}{more}</p>'
+        )
+    series_body = "\n".join(series_rows) or "<p><em>No series prefixes detected.</em></p>"
+
+    nav = render_navbar(active="/s/search/")
+
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Search — Alexanarch</title>
+<meta name="description" content="Static series-prefix table with deposit links. For token-level search, fetch /api/search-index.json or use /search/.">
+<style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
+:root{{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}}
+*{{margin:0;padding:0;box-sizing:border-box}}
+body{{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.7;font-size:15px}}
+.wrap{{max-width:900px;margin:0 auto;padding:60px 24px}}
+a{{color:var(--accent);text-decoration:none}}a:hover{{color:var(--accent2)}}
+h1{{font-size:1.4em;font-weight:600;color:var(--accent);margin-bottom:12px}}
+h2{{font-size:1em;font-weight:500;color:var(--accent);margin-top:24px;margin-bottom:8px;border-bottom:1px solid var(--border);padding-bottom:4px}}
+h3{{font-family:var(--mono);font-size:.95em;color:var(--fg);margin-top:20px;margin-bottom:4px}}
+h3 .count{{color:var(--dim);font-family:var(--sans);font-weight:400;font-size:.85em;margin-left:8px}}
+p{{margin-bottom:8px;color:#333;font-size:.9em}}
+.nav{{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}}
+.nav a{{color:#777;font-weight:500;text-decoration:none}}.nav a:hover{{color:var(--accent)}}
+.hint{{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:14px 18px;margin:14px 0;font-size:.88em;color:#444;line-height:1.6}}
+.hint code{{background:#f0f4f8;font-family:var(--mono);font-size:.9em;padding:1px 6px;border-radius:3px}}
+.footer{{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<!-- NAV-START -->
+{nav}
+<!-- NAV-END -->
+<h1>Search — Series-Prefix Table (static)</h1>
+<div class="hint">
+This is the static, crawler-readable projection of the series-prefix table. Every named series (<code>gw.tachyon</code>, <code>EA-*</code>, <code>MPAI-*</code>, <code>OCTANG-*</code>, etc.) is listed with its member deposit numbers. For interactive token-level search, use <a href="/search/">/search/</a> (JS-driven). For machine-facing token lookup, GET <a href="/api/search-index.json"><code>/api/search-index.json</code></a> directly — it is an inverted index keyed by token, returning deposit numbers.
+</div>
+<h2>Series prefixes ({len(series_ix)})</h2>
+{series_body}
+<div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
+</div>
+</body>
+</html>
+"""
+
+    target = REPO_ROOT / "s" / "search" / "index.html"
+    if dry_run:
+        print(f"  [DRY] would write {target} ({len(html):,} bytes)")
+        return
+    target.parent.mkdir(parents=True, exist_ok=True)
+    _receipt(target)
+    with open(target, "w", encoding="utf-8") as f:
+        f.write(html)
+    print(f"  ✓ s/search/index.html ({len(html):,} bytes, {len(series_ix)} series prefixes)")
+
+
 SURFACE_FNS = {
     "state": regenerate_state,
     "browse": regenerate_browse,
@@ -1174,6 +1449,8 @@ SURFACE_FNS = {
     "graph": regenerate_graph,
     "homepage-noscript": regenerate_homepage_noscript,
     "api-index": regenerate_api_index,
+    "search-index": regenerate_search_index,
+    "search-static": regenerate_search_static,
 }
 
 
