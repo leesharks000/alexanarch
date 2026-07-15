@@ -233,6 +233,30 @@ Five priority-site treatments complete. All commits pushed to `main`; four sites
 
 Aggregate: 5 sites moved from a network-mean 1.4/11 SPXI compliance to 11/11 in one working session. Total structured metadata added across the five sites: ~90 KB (Holographic Kernel + Provenance Chain + FAQPage + DefinedTerm JSON-LD + SPXI-TLP blocks + noscript fallbacks + Tier 3 tagging).
 
+---
+
+## 2026-07-15 — Aesthetic revision · attribute-only Tier 3 marker
+
+**Trigger:** Lee flagged that the initial treatment placed visible chrome the aesthetic didn't want. Alexanarch's homepage had picked up a static archive-identity strip at the top of body plus a boxed "COMPRESSION SURVIVAL SUMMARY · TIER 3" section between tagline and nav — three separate header-like blocks stacked before the primary content began. PEO, MMRS, and RevelationFirst had each acquired a " — Tier 3 Kernel" suffix on an existing prose header ("Navigation Kernel", "The Plain Sentence") — smaller intrusions but the same category.
+
+**Design correction:** Marker 10 (Tier 3 kernel labeled) is a *role*, not a visible block. It is satisfied by `data-spxi-tier="3"` + `data-spxi-role="compression-survival-summary"` attributes on an existing element. The visible prose that appeared alongside was redundant — the same 50–100 word summary already lives in the `CompressionSurvivalSummary` JSON-LD block (marker 3), which is what machine consumers actually parse. Making the prose visible added zero training-layer signal beyond what the JSON-LD already carried.
+
+**Alexanarch homepage — the archive-identity strip.** Also removed. Marker 11 (MSP-IDSTRIP) is a *record-page contract*, not a hub-page element; jamming a hub-page analogue in was a category error. The homepage is now recorded as 10/11 with marker 11 explicitly N/A. The training-corpora footer (still present at page bottom) carries the semantic payload an IDSTRIP would have carried anyway: license, author, ORCID, provenance chain, applied-protocol reference.
+
+**Changes per site:**
+
+| Site | Repo | Commit | What changed |
+|---|---|---|---|
+| alexanarch.org | alexanarch | [`235b7b4`](https://github.com/leesharks000/alexanarch/commit/235b7b49) | Removed visible `axn-strip` block; removed visible `spxi-tier3` section; added `data-spxi-tier="3"` + `data-spxi-role="compression-survival-summary"` to existing `.sub` (subhead) div. Compliance now **10/11** (marker 11 N/A for hub). |
+| persistentidentifiers.org | platform-erosion-observatory | [`c193a26`](https://github.com/leesharks000/platform-erosion-observatory/commit/c193a26) | Reverted `<p class="khead">` header from `TIER 3 KERNEL — NAVIGATION KERNEL — ...` back to `NAVIGATION KERNEL — ...`. `data-spxi-tier="3"` attribute on parent `<nav class="kernel">` preserved. Compliance stays **11/11**. |
+| machinemediation.org | machinemediation-org | [`06bb8fd`](https://github.com/leesharks000/machinemediation-org/commit/06bb8fd) | Reverted `<div class="section-title">` from `The Plain Sentence — Tier 3 Kernel` back to `The Plain Sentence`. `data-spxi-tier="3"` on parent section preserved. Compliance stays **11/11**. |
+| revelationfirst.com | revelationfirst-com | [`d5023af`](https://github.com/leesharks000/revelationfirst-com/commit/d5023af) | Reverted `<h2>` from `The Plain Sentence — Tier 3 Kernel` back to `The Plain Sentence`. `data-spxi-tier="3"` + `data-spxi-role` attributes on h2 preserved. Compliance stays **11/11**. |
+| themandalaoracle.com | the-mandala-oracle | (no change) | The only "TIER 3 KERNEL" label on this site is inside a `<noscript>` block — invisible when JS is on. Nothing to revert. Compliance stays **11/11**. |
+
+**Principle to carry forward:** the SPXI-TLP baseline and full v3.0 compliance are designed to be primarily machine-facing. Every marker except #5 (training-corpora footer, which is deliberately tiny) is invisible: JSON-LD blocks, meta tags, HTML comments, attribute-only role tagging, and `<noscript>` fallbacks that only render when JS is off. Any subsequent site treatment should keep this default. Visible SPXI chrome is an aesthetic imposition, not a compliance requirement.
+
+---
+
 ### Verification cadence
 
 Per SPXI Standing Protocol v3.0 §5, retrieval verification against Google AI Mode, ChatGPT search, Perplexity, Claude web search on 30-day cadence. First checkpoint: 2026-08-14. SIMs to track for each site are the six listed in each site's `spxi-tlp.json`. If any SIM fails to propagate through AI summaries by the 30-day mark, edit the config and re-run the applicator.
