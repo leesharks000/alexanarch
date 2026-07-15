@@ -22,15 +22,15 @@ An open repository where AI-assisted research is not a flag. It is a feature.
 Each deposit receives a content-derived identifier:
 
 ```
-AXN:06.LIMINAL.🏛️🌀🔧💎
+AXN:0446.OPERATIVE.🏛️🛡️🌅🎆📏🔎
 ```
 
 - **AXN** — Alexanarch namespace
-- **06** — hex position (WHERE in the archive)
-- **LIMINAL** — semantic family (WHAT kind of work)
-- **🏛️🌀🔧💎** — emoji hash (WHICH specific text — first 4 bytes of SHA-256 mapped through 256 curated emoji)
+- **0446** — hex position (WHERE in the archive)
+- **OPERATIVE** — semantic family (WHAT kind of work)
+- **🏛️🛡️🌅🎆📏🔎** — emoji hash (WHICH specific text — first 6 bytes of SHA-256 of canonical bytes, mapped through 256 curated emoji)
 
-The identifier is computed from the content itself. It cannot be revoked. It belongs to the author.
+The identifier is computed from the content itself. It cannot be secretly reassigned to altered content — the hash won't match. (Resolvers and mirrors are separate concerns and require their own continuity.) The identifier belongs to the author.
 
 ## Founded
 
