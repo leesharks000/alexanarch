@@ -93,7 +93,7 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
 // sync step), then the versioned deposit artifact as fallback. Fixes the class
 // of bug where a version bump renames the file and the page 404-hangs.
 // If both fail, we render a visible error state instead of an infinite spinner.
-var CAPTURE_SOURCES = ['/data/EA-WG-CAPTURES-01.json', '/data/EA-WG-CAPTURES-01-v8.11.json'];
+var CAPTURE_SOURCES = ['/data/EA-WG-CAPTURES-01.json', '/data/EA-WG-CAPTURES-01-v9.6.json'];
 
 function loadCaptures(){
   return CAPTURE_SOURCES.reduce(function(chain, url){
