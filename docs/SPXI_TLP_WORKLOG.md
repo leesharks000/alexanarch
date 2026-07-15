@@ -375,11 +375,11 @@ Initiated in response to third-party criticism sharpening the "make the seams vi
 | # | Item | Status | Depends on | Location |
 |---|------|:-:|:-:|---|
 | 1 | Dynamic counts from source-of-truth | ✓ | — | Datasets, Browse, Wiki, Captures, Homepage |
-| 2 | Four-emoji AXN description cleanup | ☐ | — | GLYPH_SPEC.md, `/identifiers/`, hub prose |
-| 3 | Navigation clusters (5 groups) | ☐ | — | Global nav across surfaces |
+| 2 | Four-emoji AXN description cleanup | ✓ | — | GLYPH_SPEC.md, `/identifiers/`, hub prose |
+| 3 | Navigation clusters (5 groups) | ✓ | — | Global nav across surfaces |
 | 4 | Transformation-contract micro-headers | ☐ | #1 | Every derived surface |
-| 5 | Resolver-language sharpen | ☐ | — | `/identifiers/`, `/manifest/`, hub |
-| 6 | AXN hash-glyph precision correction | ☐ | — | `/identifiers/` |
+| 5 | Resolver-language sharpen | 🟡 | — | `/identifiers/`, `/manifest/`, hub — partial via GLYPH_SPEC.md rewrite in #2 |
+| 6 | AXN hash-glyph precision correction | 🟡 | — | `/identifiers/` — partial via GLYPH_SPEC.md rewrite in #2 |
 | 7 | Semantic Addresses source-of-truth unification | ☐ | #4 | data pipeline; captures + SP + MMRS + RevFirst as tributaries |
 | 8 | Semantic Addresses class-proportion viz | ☐ | #7 | `/addresses/` |
 | 9 | Graph epistemic-label sub-split | ☐ | — | `/s/graph/`, data-side |
@@ -428,6 +428,21 @@ Mechanism added to `regenerate_surfaces.py` as a new surface `dynamic-counts` (r
 jsonpath uses dot-notation with optional `[]` suffix meaning `len()`. Values formatted with thousands separators. Markers landed on `datasets/`, `addresses/`, `captures/` (176 → 204), and `index.html` (softened to durable "1,000+" phrasing since SIMs need stable diagnostics that don't drift per mint).
 
 Companion cleanup: the stale `total: 1081` field was removed from `data/registry.json` — only `total_deposits` is set by `mint_deposit.py`, so `total` was a relic that produced two-count skew in the source-of-truth file itself. One canonical count field now, no ambiguity.
+
+**#2 · Four-emoji AXN description cleanup** — landed [`b23e638a`](https://github.com/leesharks000/alexanarch/commit/b23e638a), 2026-07-15.
+
+Scope was bounded to two files (`GLYPH_SPEC.md`, `README.md`); everything else was either historical context (workplans documenting the v1→v2 migration) or correctly labeled as v1 (like `api/axn-protocol.json`'s `schema_versions.v1.summary`). `GLYPH_SPEC.md` rewritten v1.0 → v2.0 with a top-of-file versioning note explaining migration and `legacy_axn` preservation, and an explicit Versioning section at the bottom. Example AXN changed from the 4-emoji `AXN:06.LIMINAL.🏛️🌀🔧💎` to the real v2 canonical `AXN:0446.OPERATIVE.🏛️🛡️🌅🎆📏🔎` (EA-APPARATUS-01 v0.3). Collision resistance 2³² → 2⁴⁸. `spxi-tlp.json` at repo root softened the same way as the homepage (1,082 → 1,000+ for SIM stability).
+
+**Partial preview of #5 and #6 in the same pass** — `GLYPH_SPEC.md` needed a full rewrite anyway, so two adjacent paragraphs got their sharpened wording in this commit:
+
+- #6 preview: added *"What the emoji hash is and is not"* — the six emoji are a portrait of the work's position in a hash space, not a structural portrait of the work itself. The arbitrariness is the point. Cryptographic remainder that refuses interpretation.
+- #5 preview: replaced *"Irrevocable: No authority can revoke a hash of your own content"* with *"Detection-anchored: The hash cannot be secretly reassigned to altered content without invalidating the identifier. (Resolver reachability and custodial continuity are separate concerns — see the manifest.)"*
+
+Both marked 🟡 in the status matrix — remaining spots (`/identifiers/`, `/manifest/`, hub prose beyond what's captured in GLYPH_SPEC.md) still to sweep.
+
+**#3 · Navigation clusters (5 groups)** — landed [`a3b328fd`](https://github.com/leesharks000/alexanarch/commit/a3b328fd), 2026-07-15.
+
+The 17-surface top nav is now grouped into five clusters, made possible by a single edit to the source-of-truth `data/navigation.json` (schema bumped v1.0 → v1.1) plus a renderer extension in `scripts/render_navbar.py`. Cluster taxonomy: **Library** (Browse · Wiki · Graph · Lexical · Citations), **Reception** (Addresses · Captures · Observatory), **Continuity** (Resolve · Identifiers · Datasets), **Generative** (Book), **Governance** (Principles · Deposit · Guide · Manifest). The Alexanarch home link stays ungrouped as the site anchor. Cluster labels use monospace uppercase small type with a light left-border divider — quiet, institutional, matches the site's aesthetic. Semantics are captured in the JSON itself (`render_specification.cluster_semantics`) so any future reader can see what each cluster means without reading the code. `sync_navbars.py` propagated the change across 13 authored pages; the regenerator refreshed the derived surfaces. Cluster labels use inline styles so they degrade gracefully on any page whose CSS doesn't yet know about `.nav-cluster`.
 
 ---
 
