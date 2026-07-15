@@ -374,7 +374,7 @@ Initiated in response to third-party criticism sharpening the "make the seams vi
 
 | # | Item | Status | Depends on | Location |
 |---|------|:-:|:-:|---|
-| 1 | Dynamic counts from source-of-truth | ☐ | — | Datasets, Browse, Wiki, Captures, Homepage |
+| 1 | Dynamic counts from source-of-truth | ✓ | — | Datasets, Browse, Wiki, Captures, Homepage |
 | 2 | Four-emoji AXN description cleanup | ☐ | — | GLYPH_SPEC.md, `/identifiers/`, hub prose |
 | 3 | Navigation clusters (5 groups) | ☐ | — | Global nav across surfaces |
 | 4 | Transformation-contract micro-headers | ☐ | #1 | Every derived surface |
@@ -415,6 +415,19 @@ Design: canonical addresses dataset regenerated as UNION over these tributaries,
 ### Cross-track note
 
 The Sweep and the SPXI compliance work address the same underlying failure mode from opposite sides: SPXI markers make each surface *individually* readable to the composition layer; the Sweep makes the *transformations between surfaces* readable to a human. SPXI answers "what is this surface?"; the Sweep answers "how did this projection come to look this way?" Both are transformation-provenance work; both attach the provenance to the artifact rather than to a footnote.
+
+### Landing log
+
+**#1 · Dynamic counts from source-of-truth** — landed [`46e7f5cc`](https://github.com/leesharks000/alexanarch/commit/46e7f5cc), 2026-07-15.
+
+Mechanism added to `regenerate_surfaces.py` as a new surface `dynamic-counts` (registered in `ALL_SURFACES`). Two markup patterns cover every case the audit found:
+
+- `<span data-count="src.json:field.path">1,234</span>` for text-node counts
+- `<!--REGEN-COUNT src.json:field.path-->` before a meta / og / attribute-only line, replaces the first digit-shaped substring on the next line
+
+jsonpath uses dot-notation with optional `[]` suffix meaning `len()`. Values formatted with thousands separators. Markers landed on `datasets/`, `addresses/`, `captures/` (176 → 204), and `index.html` (softened to durable "1,000+" phrasing since SIMs need stable diagnostics that don't drift per mint).
+
+Companion cleanup: the stale `total: 1081` field was removed from `data/registry.json` — only `total_deposits` is set by `mint_deposit.py`, so `total` was a relic that produced two-count skew in the source-of-truth file itself. One canonical count field now, no ambiguity.
 
 ---
 
