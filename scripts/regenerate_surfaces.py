@@ -74,7 +74,7 @@ try:
 except ImportError:
     _OVERWRITE_GUARD_AVAILABLE = False
 
-ALL_SURFACES = ["state", "browse", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static"]
+ALL_SURFACES = ["state", "browse", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "dynamic-counts"]
 
 
 def _receipt(path, reason: str = "regenerate_surfaces write"):
@@ -1451,7 +1451,163 @@ SURFACE_FNS = {
     "api-index": regenerate_api_index,
     "search-index": regenerate_search_index,
     "search-static": regenerate_search_static,
+    "dynamic-counts": None,  # populated below (forward-reference to preserve declaration order)
 }
+
+
+# ─── Dynamic counts (Data Art Sweep #1) ─────────────────────────────────────
+#
+# The archive presents identifying counts on several derived surfaces (Browse,
+# Wiki, Datasets, Addresses, Captures, Homepage-noscript). Prior to this
+# regenerator, those counts were maintained in different places at different
+# cadences, producing version skew: Browse could say 1,083 while Wiki still
+# said 863, while Datasets showed a hardcoded 881.
+#
+# This surface establishes a single mechanism: any element whose text should
+# come from a source-of-truth JSON is tagged with either
+#
+#   <span data-count="{file}:{path}">1,234</span>
+#
+# for text-node counts, or the comment marker
+#
+#   <!--REGEN-COUNT {file}:{path}-->
+#   <meta content="… 1,234 …">
+#
+# for counts embedded in attribute-only nodes (meta descriptions, og:*, etc.).
+# The regenerator resolves {file}:{path} against the corresponding JSON file
+# under data/ and rewrites the count in place. Numbers are formatted with
+# thousands separators; a leading + sign is preserved.
+#
+# jsonpath uses dot-notation with an optional [] suffix meaning len():
+#   registry.json:total_deposits
+#   semantic-addresses.json:class_counts.subjunctive
+#   semantic-addresses.json:addresses[]
+
+_SRC_CACHE = {}
+
+
+def _load_source(name):
+    """Load a source-of-truth JSON file under data/ (cached per run)."""
+    if name in _SRC_CACHE:
+        return _SRC_CACHE[name]
+    path = REPO_ROOT / "data" / name
+    if not path.exists():
+        raise FileNotFoundError(f"dynamic-counts source not found: {path}")
+    _SRC_CACHE[name] = json.loads(path.read_text(encoding="utf-8"))
+    return _SRC_CACHE[name]
+
+
+def _resolve_jsonpath(src, jsonpath):
+    """Resolve a dot-separated path into src. Suffix '[]' means len()."""
+    parts = jsonpath.split(".")
+    v = src
+    for i, part in enumerate(parts):
+        is_last = (i == len(parts) - 1)
+        if part.endswith("[]"):
+            key = part[:-2]
+            if key:
+                v = v[key]
+            if not hasattr(v, "__len__"):
+                raise TypeError(f"jsonpath {jsonpath}: '{part}' expected a container, got {type(v).__name__}")
+            v = len(v)
+        else:
+            if not isinstance(v, dict):
+                raise TypeError(f"jsonpath {jsonpath}: '{part}' expected a dict, got {type(v).__name__}")
+            v = v[part]
+    return v
+
+
+def _fmt_count(value):
+    """Format an integer count with thousands separators. Pass-through for str."""
+    if isinstance(value, int):
+        return f"{value:,}"
+    return str(value)
+
+
+_ATTR_RE = re.compile(r'(data-count="([^"]+)"[^>]*>)([^<]*)(</)')
+_COMMENT_RE = re.compile(r'<!--\s*REGEN-COUNT\s+([^\s]+)\s*-->\s*\n?([^\n]*)')
+_NUM_IN_LINE_RE = re.compile(r'\b\d[\d,]*(?:\+)?\b')
+
+DYNAMIC_COUNT_PAGES = [
+    "index.html",
+    "datasets/index.html",
+    "addresses/index.html",
+    "captures/index.html",
+]
+
+
+def regenerate_dynamic_counts(reg, dry_run=False):
+    """Sweep pages for data-count attributes and REGEN-COUNT comments; update in place.
+
+    Preserves everything outside the marked spans / next-line meta values.
+    Prints per-page substitution summary."""
+    print("Regenerating dynamic counts across derived surfaces …")
+
+    # Seed the source cache with the already-loaded registry so we don't re-read it.
+    _SRC_CACHE["registry.json"] = reg
+
+    for page_rel in DYNAMIC_COUNT_PAGES:
+        page = REPO_ROOT / page_rel
+        if not page.exists():
+            print(f"  · {page_rel}: not present (skipped)")
+            continue
+        html = page.read_text(encoding="utf-8")
+        original = html
+        substitutions = []
+
+        # Pattern 1: <X data-count="src:path">value</X>
+        def _sub_attr(m):
+            open_tag, spec, current, close_open = m.group(1), m.group(2), m.group(3), m.group(4)
+            try:
+                source_name, jsonpath = spec.split(":", 1)
+                src = _load_source(source_name)
+                value = _resolve_jsonpath(src, jsonpath)
+                fresh = _fmt_count(value)
+            except Exception as e:
+                print(f"  ! {page_rel}: data-count={spec!r} failed — {e}")
+                return m.group(0)
+            if fresh != current.strip():
+                substitutions.append((spec, current.strip(), fresh))
+            return f"{open_tag}{fresh}{close_open}"
+
+        html = _ATTR_RE.sub(_sub_attr, html)
+
+        # Pattern 2: <!--REGEN-COUNT src:path-->\n<next line with a number>
+        def _sub_comment(m):
+            spec, next_line = m.group(1), m.group(2)
+            try:
+                source_name, jsonpath = spec.split(":", 1)
+                src = _load_source(source_name)
+                value = _resolve_jsonpath(src, jsonpath)
+                fresh = _fmt_count(value)
+            except Exception as e:
+                print(f"  ! {page_rel}: REGEN-COUNT={spec!r} failed — {e}")
+                return m.group(0)
+            new_line, replaced = _NUM_IN_LINE_RE.subn(fresh, next_line, count=1)
+            if replaced and new_line != next_line:
+                substitutions.append((spec, next_line.strip()[:60], fresh))
+            return f"<!--REGEN-COUNT {spec}-->\n{new_line}"
+
+        html = _COMMENT_RE.sub(_sub_comment, html)
+
+        if html == original:
+            print(f"  · {page_rel}: already canonical")
+            continue
+
+        if dry_run:
+            print(f"  [DRY] {page_rel}: {len(substitutions)} substitution(s):")
+            for spec, old, new in substitutions:
+                print(f"      {spec}: '{old}' → '{new}'")
+            continue
+
+        _receipt(page)
+        page.write_text(html, encoding="utf-8")
+        print(f"  ✓ {page_rel}: {len(substitutions)} substitution(s):")
+        for spec, old, new in substitutions:
+            print(f"      {spec}: {old!r} → {new!r}")
+
+
+SURFACE_FNS["dynamic-counts"] = regenerate_dynamic_counts
 
 
 def main():
