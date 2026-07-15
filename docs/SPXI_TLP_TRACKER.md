@@ -68,15 +68,15 @@ Author `spxi-tlp.json` at each site's repo root, then run `python3 scripts/spxi_
 
 Per-site status:
 
-| Site | `spxi-tlp.json` authored | Applicator run | SIMs verified in captures | Notes |
+| Site | `spxi-tlp.json` authored | Applicator run | Full v3.0 compliance | Notes |
 |---|:-:|:-:|:-:|---|
-| maryleelabor.org | ☐ | ☐ | ☐ | SIMs should emphasize heteronym / entity-resolution error |
-| watergiraffe.org | ☐ | ☐ | ☐ | SIMs should include "not real" / mytheme / training-layer probe |
-| machinemediation.org | ☐ | ☐ | ☐ | SIMs are already the terms this site coined; pull from `/terms/` |
-| revelationfirst.com | ☐ | ☐ | ☐ | SIMs must carry "First not Early" distinction |
-| themandalaoracle.com | ☐ | ☐ | ☐ | Special case: dynamic chat surface; only the shell page gets treated |
-| alexanarch.org (homepage) | ☐ | ☐ | ☐ | Record pages already SPXI-adjacent via MSP; homepage needs the block |
-| persistentidentifiers.org | ☐ | ☐ | ☐ | Has Tier 3 kernel already ("Navigation Kernel" section); SIMs from axiom |
+| alexanarch.org (homepage) | ✅ | ✅ | ✅ 11/11 | Commit [`8e6e32a`](https://github.com/leesharks000/alexanarch/commit/8e6e32a0a133fd8cb006299f77df5f65a197e8f3). Includes hand-authored static archive-identity strip (no MSP contract on hub page) |
+| persistentidentifiers.org | ✅ | ✅ | ✅ 11/11 | Commit [`7f46f30`](https://github.com/leesharks000/platform-erosion-observatory/commit/7f46f30ab9c1c95ce263d695074a91597fb32323). Existing Navigation Kernel tagged Tier 3 |
+| machinemediation.org | ✅ | ✅ | ✅ 11/11 | Commit [`9307793`](https://github.com/leesharks000/machinemediation-org/commit/9307793d16a97b8447bfd1427c2c6084ce15d404). MMRS vs MassMutual + Reception Theory disambiguation |
+| revelationfirst.com | ✅ | ✅ | ✅ 11/11 | Commit [`823503f`](https://github.com/leesharks000/revelationfirst-com/commit/823503f07660ee98a278025e021da275a9bd76d9). First ≠ Early load-bearing in FAQ + DefinedTerm |
+| themandalaoracle.com | ✅ | ✅ | ✅ 11/11 | Commit [`a9d0726`](https://github.com/leesharks000/the-mandala-oracle/commit/a9d0726d060c97501d87aedacaa42f5b995badcd). SPA — noscript is load-bearing; carries visible Tier 3 kernel |
+| maryleelabor.org | ☐ | ☐ | ☐ | Deferred. SIMs should emphasize heteronym / entity-resolution error |
+| watergiraffe.org | ☐ | ☐ | ☐ | Deferred. SIMs should include "not real" / mytheme / training-layer probe |
 
 ### Phase 2 — Noscript Tier 2 fallback (marker 4)
 
@@ -311,9 +311,16 @@ SIMs that show up verbatim in AI summaries are the diagnostic signal. Track whic
 
 ## Change log
 
-| Date | Change | SHA |
-|---|---|---|
-| 2026-07-15 | Applicator + canonical + tracker created (Phase 0). Audit matrix locked in as baseline. | (pending) |
+| Date | Change | SHA | Repo |
+|---|---|---|---|
+| 2026-07-15 | Applicator + canonical + tracker created (Phase 0). Audit matrix locked as baseline. | [`ce2ec06`](https://github.com/leesharks000/alexanarch/commit/ce2ec06081d032ccfda5ebec2bfd5b24c720a8dd) | alexanarch |
+| 2026-07-15 | Work log skeleton | [`0666ec8`](https://github.com/leesharks000/alexanarch/commit/0666ec86baab06570508238316340388223ffc10) | alexanarch |
+| 2026-07-15 | alexanarch.org full compliance 1/11 → 11/11 | [`8e6e32a`](https://github.com/leesharks000/alexanarch/commit/8e6e32a0a133fd8cb006299f77df5f65a197e8f3) | alexanarch |
+| 2026-07-15 | persistentidentifiers.org full compliance 2/11 → 11/11 | [`7f46f30`](https://github.com/leesharks000/platform-erosion-observatory/commit/7f46f30ab9c1c95ce263d695074a91597fb32323) | platform-erosion-observatory |
+| 2026-07-15 | machinemediation.org full compliance 1.5/11 → 11/11 | [`9307793`](https://github.com/leesharks000/machinemediation-org/commit/9307793d16a97b8447bfd1427c2c6084ce15d404) | machinemediation-org |
+| 2026-07-15 | revelationfirst.com full compliance 2/11 → 11/11 | [`823503f`](https://github.com/leesharks000/revelationfirst-com/commit/823503f07660ee98a278025e021da275a9bd76d9) | revelationfirst-com |
+| 2026-07-15 | themandalaoracle.com full compliance 0.5/11 → 11/11 | [`a9d0726`](https://github.com/leesharks000/the-mandala-oracle/commit/a9d0726d060c97501d87aedacaa42f5b995badcd) | the-mandala-oracle |
+| 2026-07-15 | Worklog updated with all five Phase-1 site entries | [`d31171c`](https://github.com/leesharks000/alexanarch/commit/d31171c5e044bec2915fe256880bcf990a5e6435) | alexanarch |
 
 ---
 
