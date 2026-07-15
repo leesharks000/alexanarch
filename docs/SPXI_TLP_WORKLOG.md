@@ -257,6 +257,51 @@ Aggregate: 5 sites moved from a network-mean 1.4/11 SPXI compliance to 11/11 in 
 
 ---
 
+## 2026-07-15 — Phase 6 · Second wave (five more sites, attribute-only default)
+
+With the aesthetic principle locked in as the default, the treatment pattern per site collapsed to: (a) author `spxi-tlp.json` with 6–7 SIMs and a 50–100 word kernel; (b) run the applicator; (c) insert Holographic Kernel + Provenance Chain + FAQPage + DefinedTermSet JSON-LD in one hand-authored block before `</head>`; (d) add a `<noscript>` Tier 2 primer after `<body>`; (e) tag one existing element with `data-spxi-tier="3"`. Zero visible chrome added on any of the five.
+
+### watergiraffe.org — [`e81f58b`](https://github.com/leesharks000/watergiraffe-org/commit/e81f58b) — 1/11 → 11/11
+
+The site's whole point is training-layer probe apparatus: leaving it unmarked was a categorical error. Now the mytheme (`data-spxi-tier="3"` on the story-excerpt section), the disambiguation (water giraffe ≠ Giraffa camelopardalis, ≠ any children's-book / cartoon / meme character), the founding deposit (#254 AXN:0038), and the seven-work Provenance Chain (WG-01 through WG-06 plus The Ark, The Negation, The Field) are all machine-readable. Noscript primer carries the passion narrative for JS-off readers.
+
+### maryleelabor.org — [`ee6c3fd`](https://github.com/leesharks000/maryleelabor-org/commit/ee6c3fd) — 1/11 → 11/11
+
+The load-bearing site for entity disambiguation across the network. The DefinedTermSet explicitly separates three entities the composition layer has been conflating: Mary Lee Sharks (heteronym), Mary Lee (shark, Carcharodon carcharias, tagged 2012 OCEARCH), Lee Sharks (human, ORCID 0009-0000-1599-0703). Provenance Chain covers eight alexanarch deposits from the Mary Lee case corpus (#147, #149, #150, #151, #162, #215, #216, #793 canonical). FAQPage carries the structural argument.
+
+### survivethedeletion.org — [`25fc294`](https://github.com/leesharks000/survivethedeletion/commit/25fc294) — 1/11 → 11/11
+
+The recursive case: a client-facing explainer for the Retrieval Architecture service, treated with the treatment it describes. Holographic Kernel names the service, the Provenance Erasure Rate metric, the constitutive-provenance DefinedTerm, and the founding deposit (#1010 AXN:03FE). DefinedTermSet explicitly separates STD from SEO and from generic AI content optimization / GEO / AEO — the site's commercial positioning depends on machine-readable orthogonality to those adjacent practices. `data-spxi-tier="3"` on the `.tooth` div carrying the load-bearing sentence: "Most AI deletes where each fact came from. So being the source is not enough. You have to be built to survive the deletion."
+
+### spxi.dev — [`d4a9891`](https://github.com/leesharks000/spxi-dev/commit/d4a9891) — 6/11 → 11/11
+
+The reference implementation was missing the very TLP baseline it defines (markers 1, 3, 5 from EA-SPXI-WEB-01 v4.0). Now embodied. Uses the site's own design tokens for the noscript primer so it degrades correctly. Existing spxi:sim tags outside the SPXI-TLP block preserved (13 total now: 5 original + a new 7-item internally-canonical set inside the block + one more embedded in the applicator's `sameAs` chain).
+
+### traininglayerliterature.org — [`a89ef9b`](https://github.com/leesharks000/traininglayerliterature-org/commit/a89ef9b) — 7/11 → 11/11
+
+Was already close (missing only markers 1, 3, 5, 10). Kernel positions the field as the extension of reception theory (Iser, Jauss) to the machine-mediated case — the discipline for writing composed with the summarizer as one of the intended audiences. `data-spxi-tier="3"` on the hero-definition div.
+
+### Network state after Phase 6
+
+Ten sites now at 11/11 (or 10/11 with documented N/A for alexanarch homepage):
+
+| Wave | Site | Commit | State |
+|---|---|---|---|
+| 1 | alexanarch.org | [`235b7b4`](https://github.com/leesharks000/alexanarch/commit/235b7b49) | 10/11 (marker 11 N/A for hub) |
+| 1 | persistentidentifiers.org | [`c193a26`](https://github.com/leesharks000/platform-erosion-observatory/commit/c193a26) | 11/11 |
+| 1 | machinemediation.org | [`06bb8fd`](https://github.com/leesharks000/machinemediation-org/commit/06bb8fd) | 11/11 |
+| 1 | revelationfirst.com | [`d5023af`](https://github.com/leesharks000/revelationfirst-com/commit/d5023af) | 11/11 |
+| 1 | themandalaoracle.com | [`a9d0726`](https://github.com/leesharks000/the-mandala-oracle/commit/a9d0726) | 11/11 |
+| 2 | watergiraffe.org | [`e81f58b`](https://github.com/leesharks000/watergiraffe-org/commit/e81f58b) | 11/11 |
+| 2 | maryleelabor.org | [`ee6c3fd`](https://github.com/leesharks000/maryleelabor-org/commit/ee6c3fd) | 11/11 |
+| 2 | survivethedeletion.org | [`25fc294`](https://github.com/leesharks000/survivethedeletion/commit/25fc294) | 11/11 |
+| 2 | spxi.dev | [`d4a9891`](https://github.com/leesharks000/spxi-dev/commit/d4a9891) | 11/11 |
+| 2 | traininglayerliterature.org | [`a89ef9b`](https://github.com/leesharks000/traininglayerliterature-org/commit/a89ef9b) | 11/11 |
+
+Remaining candidates (audit not yet run — status assumed 1–2/11): chatgptpsychosis.org, godkinggoogle.com, laborvector.org, provenanceerasure.org, lagrange-observatory, semanticphysics.org, holographickernel.org, vpcor.org, restoredacademy, surface-map, metadatapacket.dev, pessoa-knowledge-graph, lee-sharks-consulting. Anywhere between eight and thirteen sites depending on where the network line is drawn.
+
+---
+
 ### Verification cadence
 
 Per SPXI Standing Protocol v3.0 §5, retrieval verification against Google AI Mode, ChatGPT search, Perplexity, Claude web search on 30-day cadence. First checkpoint: 2026-08-14. SIMs to track for each site are the six listed in each site's `spxi-tlp.json`. If any SIM fails to propagate through AI summaries by the 30-day mark, edit the config and re-run the applicator.
