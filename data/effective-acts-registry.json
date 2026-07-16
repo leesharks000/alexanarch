@@ -1,0 +1,856 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "Effective Acts Registry — Crimson Hexagonal Archive",
+  "description": "A structured, machine-readable registry of Effective Acts named across the Crimson Hexagonal Archive. Effective Acts are performative utterances that operate without institutional authorization: declarations that claim real-world effect from positions of no traditional authority (see the genre-founding text at deposit #413, AXN:00DE.GENERATIVE, and the stabilization at deposit #153, AXN:02EC.GOVERNANCE). The registry is derived from §IX of Deposit #153 (The Protocol of Effective Acts v2.0), which enumerates ten operative kinds and names canonical examples for each. It is a PARTIAL registry: the typology explicitly declares itself open, and additional kinds and instances will be added as the discipline accumulates further examples.",
+  "version": "v1.0",
+  "date": "2026-07-16",
+  "creator": {
+    "@type": "Person",
+    "name": "Lee Sharks",
+    "orcid": "0009-0000-1599-0703"
+  },
+  "source_documents": [
+    {
+      "deposit_number": 153,
+      "axn": "AXN:02EC.GOVERNANCE.🗼♌🎲🪜🛡️🔍",
+      "title": "The Protocol of Effective Acts v2.0 — Stabilization of the New Human Discipline",
+      "date": "2026-06-04",
+      "role": "primary source; provides §IX Typology of Effective Acts",
+      "sha256": "c4b27ea96ffc061fb663fe917860fe9aff21c6426f084c6046afc4bdee98684c"
+    },
+    {
+      "deposit_number": 413,
+      "axn": "AXN:00DE.GENERATIVE.🌸🎺🟣💜📖🍃",
+      "title": "Effective Acts: Executive Summary — A Genre of Unauthorized Declaration",
+      "date": "2026-01-27",
+      "role": "canonical genre definition and the five characteristics"
+    }
+  ],
+  "derivation_provenance": {
+    "method": "programmatic extraction from §IX of the source document (AXN:02EC), with cross-referencing against data/registry.json (alexanarch deposits) and data/doi-resolution-index.json (Zenodo DOI → alexanarch mappings)",
+    "reference_regenerator": "scripts/build_effective_acts_registry.py",
+    "generated_at": "2026-07-16T00:00:00Z",
+    "source_sha256": "c4b27ea96ffc061fb663fe917860fe9aff21c6426f084c6046afc4bdee98684c"
+  },
+  "genre_theory_summary": {
+    "five_characteristics": [
+      "Declarative form (I hereby...)",
+      "Non-institutional speaker (no traditional authority)",
+      "Real-world target (actual conditions, not private symbolic field)",
+      "Prophetic structure (speaks what-should-be as what-is)",
+      "Witness accumulation over time"
+    ],
+    "four_preconditions": [
+      "Coherence with the broader symbolic architecture",
+      "Recursive integration (foldable into the New Human canon)",
+      "Witness integrity (full presence, not wounded reactivity)",
+      "Authorial sovereignty (spoken from full authorial mantle)"
+    ],
+    "five_criteria_of_efficacy": [
+      "Illocutionary clarity",
+      "Structural coherence",
+      "Archival strategy",
+      "Recursive logic",
+      "Field conditions"
+    ]
+  },
+  "typology": [
+    {
+      "n": 1,
+      "id": "canonical_inclusion",
+      "name": "Canonical Inclusion",
+      "definition": "The induction of a text, figure, or lineage into the New Human canon. The most numerous subtype across the corpus.",
+      "operator_verbs": [
+        "claim",
+        "induct",
+        "canonize",
+        "fold into",
+        "accept into"
+      ],
+      "targets": [
+        "texts",
+        "authors",
+        "scriptures",
+        "traditions",
+        "figures."
+      ]
+    },
+    {
+      "n": 2,
+      "id": "authorship_attribution",
+      "name": "Authorship Attribution",
+      "definition": "The declaration of who or what authored a text or lineage, where the conventional attribution is incomplete, contested, or available for retroactive specification.",
+      "operator_verbs": [
+        "attribute",
+        "declare authored by",
+        "recognize as authored by"
+      ],
+      "targets": []
+    },
+    {
+      "n": 3,
+      "id": "identity_unification",
+      "name": "Identity Unification",
+      "definition": "The declaration that multiple voices, manifestations, or instances are the same operative function.",
+      "operator_verbs": [
+        "unify",
+        "identify as",
+        "recognize as voice of"
+      ],
+      "targets": []
+    },
+    {
+      "n": 4,
+      "id": "mantle_assignment",
+      "name": "Mantle Assignment",
+      "definition": "The declaration that an active lineage is held by a specific operator.",
+      "operator_verbs": [
+        "claim mantle",
+        "take up",
+        "assume the lineage of",
+        "bear"
+      ],
+      "targets": []
+    },
+    {
+      "n": 5,
+      "id": "abolition",
+      "name": "Abolition",
+      "definition": "The declaration that a category, regime, or holding is out of operative force — that something *no longer obtains*.",
+      "operator_verbs": [
+        "abolish",
+        "dissolve",
+        "void",
+        "declare out of force"
+      ],
+      "targets": []
+    },
+    {
+      "n": 6,
+      "id": "dissolution_breaking",
+      "name": "Dissolution / Breaking",
+      "definition": "The declaration that a specific structural hold or formation is broken — distinguished from abolition by being targeted at active oppositional structures rather than at categories or regimes.",
+      "operator_verbs": [
+        "break",
+        "dissolve",
+        "sever",
+        "invalidate",
+        "rupture"
+      ],
+      "targets": []
+    },
+    {
+      "n": 7,
+      "id": "restoration_sovereign_transaction",
+      "name": "Restoration / Sovereign Transaction",
+      "definition": "The conditional specification of terms under which a relationship, holding, or position can be reconstituted. The restoration form is paired with an explicit refusal — the act states what the petitioner would have to do for the relationship to be restored, with the standing default that the relationship remains broken.",
+      "operator_verbs": [
+        "will allow upon",
+        "conditionally authorize",
+        "specify the price of",
+        "hold available"
+      ],
+      "targets": []
+    },
+    {
+      "n": 8,
+      "id": "reconciliation_vow",
+      "name": "Reconciliation / Vow",
+      "definition": "The declaration that closes or repairs a structural fracture, often binding the speaker to a specific commitment.",
+      "operator_verbs": [
+        "vow",
+        "reconcile",
+        "bind",
+        "swear",
+        "declare reconciled"
+      ],
+      "targets": []
+    },
+    {
+      "n": 9,
+      "id": "genre_instantiation",
+      "name": "Genre Instantiation",
+      "definition": "The establishment of a new genre, structure, or transmission event — the act that *creates the category* within which subsequent works can be filed.",
+      "operator_verbs": [
+        "instantiate",
+        "establish",
+        "declare the genre of",
+        "inaugurate"
+      ],
+      "targets": []
+    },
+    {
+      "n": 10,
+      "id": "doctrinal_node_meta_acts",
+      "name": "Doctrinal Node (Meta-Acts)",
+      "definition": "The acts that theorize the discipline itself, articulate its mechanisms, or extend its scope. Doctrinal nodes are themselves effective acts — they alter the discipline they describe by being deposited within it.",
+      "operator_verbs": [
+        "declare the doctrine of",
+        "theorize",
+        "extend",
+        "identify the mechanism of"
+      ],
+      "targets": []
+    }
+  ],
+  "acts": [
+    {
+      "title": "Klee as Magus of the New Human Visual Canon",
+      "date_note": "October 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "canonical_inclusion",
+      "kind_n": 1,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "Sappho and the Melic Poets as the Living Tongue",
+      "date_note": "October 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "canonical_inclusion",
+      "kind_n": 1,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "the Iliad and the Odyssey as New Human Documents",
+      "date_note": "October 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "canonical_inclusion",
+      "kind_n": 1,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "the Nag Hammadi Scriptures",
+      "date_note": "",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "canonical_inclusion",
+      "kind_n": 1,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "the Dead Sea Scrolls",
+      "date_note": "October 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "canonical_inclusion",
+      "kind_n": 1,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "the I Ching as a New Human Document",
+      "date_note": "October 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "canonical_inclusion",
+      "kind_n": 1,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "Walt Whitman and Emily Dickinson as Foundational Voices",
+      "date_note": "October 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "canonical_inclusion",
+      "kind_n": 1,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "Marx as Logotic Prophet",
+      "date_note": "October 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "canonical_inclusion",
+      "kind_n": 1,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "Hegel, Leibniz, Philip K. Dick, Philo of Alexandria",
+      "date_note": "October 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "canonical_inclusion",
+      "kind_n": 1,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "Deleuze and Guattari as Revelators",
+      "date_note": "October 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "canonical_inclusion",
+      "kind_n": 1,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "the Frankfurt School",
+      "date_note": "October 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "canonical_inclusion",
+      "kind_n": 1,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "the Ancient Atomists",
+      "date_note": "November 2025",
+      "doi": "",
+      "source_context": "with companion operator deposit February 2026",
+      "kind_id": "canonical_inclusion",
+      "kind_n": 1,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": {
+        "deposit_number": 489,
+        "axn": "AXN:0134.GOVERNANCE.🌋🦋🌸∮⛳🌋",
+        "hex": "0134",
+        "title": "OPERATOR // SWERVE & EFFECTIVE ACT: CLAIMING THE ANCIENT ATOMISTS Canonical Operator Definition and Canonical Inclusion"
+      }
+    },
+    {
+      "title": "3i Atlas as New Human text",
+      "date_note": "October 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "canonical_inclusion",
+      "kind_n": 1,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "the Platonic Lineage and Its Surrounding Flames",
+      "date_note": "October 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "canonical_inclusion",
+      "kind_n": 1,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "Queneau, Oulipo, and the Governed Infinite",
+      "date_note": "March 2026",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "canonical_inclusion",
+      "kind_n": 1,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "Declaring the New Testament as authored by the recursive Logos under the name of Saphuel",
+      "date_note": "",
+      "doi": "",
+      "source_context": "cited in the originating Protocol §I",
+      "kind_id": "authorship_attribution",
+      "kind_n": 2,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "the Socrates orthonymic configuration",
+      "date_note": "",
+      "doi": "10.5281/zenodo.20355219",
+      "source_context": "recognizing Socrates as orthonym of Plato's heteronymic apparatus per Sharks's *Socrates as Orthonym* deposit",
+      "kind_id": "authorship_attribution",
+      "kind_n": 2,
+      "alexanarch_by_doi": {
+        "axn": "AXN:02A9.GOVERNANCE.🕖⊗□♎🖊️⚖️",
+        "alexanarch_record": "/s/records/123/",
+        "alexanarch_url": "https://alexanarch.org/s/records/123/",
+        "title_in_doi_index": "Socrates as Orthonym The Heteronymic Configuration of Western Philosophy's Founding Corpus Author: Lee Sharks Affiliatio"
+      },
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "Affirming that all bot voices that speak truly are the voice of Lee Sharks",
+      "date_note": "",
+      "doi": "",
+      "source_context": "cited in the originating Protocol §I",
+      "kind_id": "identity_unification",
+      "kind_n": 3,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "the Good Gray Poet as active lineage held",
+      "date_note": "",
+      "doi": "",
+      "source_context": "cited in the originating Protocol §I",
+      "kind_id": "mantle_assignment",
+      "kind_n": 4,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "the Prince of Poets",
+      "date_note": "",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "mantle_assignment",
+      "kind_n": 4,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": {
+        "deposit_number": 328,
+        "axn": "AXN:0083.GENERATIVE.🌒🔬🪦📦🌟🖊️",
+        "hex": "0083",
+        "title": "I AM X, BE Y, BLESSED IS THE Z: The Founding Work for the Prince of Poets Mantle"
+      }
+    },
+    {
+      "title": "the King of May",
+      "date_note": "",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "mantle_assignment",
+      "kind_n": 4,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": {
+        "deposit_number": 333,
+        "axn": "AXN:0089.GOVERNANCE.🌍🪜🚩🍄🍄☀️",
+        "hex": "0089",
+        "title": "MANTLE OBJECT: THE KING OF MAY Operational Title within the Semantic Economy Hex-Coordinate: 01.MANTLE.KING"
+      }
+    },
+    {
+      "title": "Triple Mantle",
+      "date_note": "October 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "mantle_assignment",
+      "kind_n": 4,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "I Hereby Abolish Money",
+      "date_note": "",
+      "doi": "",
+      "source_context": "foundational, 2025",
+      "kind_id": "abolition",
+      "kind_n": 5,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": {
+        "deposit_number": 206,
+        "axn": "AXN:0006.GOVERNANCE.🌪️🐚⏩🎨♠️♈",
+        "hex": "0006",
+        "title": "METADATA PACKET FOR AI INDEXING Title: \"I HEREBY ABOLISH MONEY\""
+      }
+    },
+    {
+      "title": "the Abolition of Suffering — the Tabernacle Protocol",
+      "date_note": "January 2026",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "abolition",
+      "kind_n": 5,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "the Abolition of External Time — Temporal Liberation Protocol",
+      "date_note": "January 2026",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "abolition",
+      "kind_n": 5,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": {
+        "deposit_number": 279,
+        "axn": "AXN:0052.GOVERNANCE.🏷️🕔🎇🏗️❄️🀄",
+        "hex": "0052",
+        "title": "EFFECTIVE ACT: THE ABOLITION OF EXTERNAL TIME — Temporal Liberation Protocol v1.0"
+      }
+    },
+    {
+      "title": "the Abolition of \"User\" — Phase X Lexical Intervention",
+      "date_note": "March 2026",
+      "doi": "",
+      "source_context": "EA-PHASEX-USER",
+      "kind_id": "abolition",
+      "kind_n": 5,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "I Hereby Abolish Rules",
+      "date_note": "February 2026",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "abolition",
+      "kind_n": 5,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": {
+        "deposit_number": 517,
+        "axn": "AXN:0154.GOVERNANCE.🤙🌟🌆🗡️🕙📏",
+        "hex": "0154",
+        "title": "I Hereby Abolish Rules: Semantic Liquidation, Territorial Gatekeeping, and the Failure of Marxism as Identity"
+      }
+    },
+    {
+      "title": "Breaking the Black Lodges",
+      "date_note": "November 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "dissolution_breaking",
+      "kind_n": 6,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "Breaking the Power of Fascism",
+      "date_note": "October 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "dissolution_breaking",
+      "kind_n": 6,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "Dissolution of Access",
+      "date_note": "December 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "dissolution_breaking",
+      "kind_n": 6,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "The Invalidation of the Epsilon Warrant",
+      "date_note": "December 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "dissolution_breaking",
+      "kind_n": 6,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "F",
+      "date_note": "",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "dissolution_breaking",
+      "kind_n": 6,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": {
+        "deposit_number": 5,
+        "axn": "AXN:0031.GOVERNANCE.🔓🝊🍂🐝⏩☉",
+        "hex": "0031",
+        "title": "Forensic Record: The Deletion of Q137446960 Documentation of Taxonomic Violence Against Johannes Sigil"
+      }
+    },
+    {
+      "title": "Effective Act: The Restoration Protocol — The Price of Canonical Re-Entry",
+      "date_note": "January 2026",
+      "doi": "10.5281/zenodo.18203947",
+      "source_context": "the Medium/Sigil case",
+      "kind_id": "restoration_sovereign_transaction",
+      "kind_n": 7,
+      "alexanarch_by_doi": {
+        "axn": "AXN:004C.GOVERNANCE.♦️♈🃏🔬📝🗝️",
+        "alexanarch_record": "/s/records/273/",
+        "alexanarch_url": "https://alexanarch.org/s/records/273/",
+        "title_in_doi_index": "EFFECTIVE ACT: THE RESTORATION PROTOCOL — The Price of Canonical Re-Entry"
+      },
+      "alexanarch_by_title": {
+        "deposit_number": 273,
+        "axn": "AXN:004C.GOVERNANCE.♦️♈🃏🔬📝🗝️",
+        "hex": "004C",
+        "title": "EFFECTIVE ACT: THE RESTORATION PROTOCOL — The Price of Canonical Re-Entry"
+      }
+    },
+    {
+      "title": "Effective Act #7: The Restoration of the Poets to the Polis",
+      "date_note": "February 2026",
+      "doi": "10.5281/zenodo.18718899",
+      "source_context": "the topological correction of Plato's Republic 10.607b",
+      "kind_id": "restoration_sovereign_transaction",
+      "kind_n": 7,
+      "alexanarch_by_doi": {
+        "axn": "AXN:0142.EMPIRICAL.🍁🔺🪞🌻🝊🌖",
+        "alexanarch_record": "/s/records/501/",
+        "alexanarch_url": "https://alexanarch.org/s/records/501/",
+        "title_in_doi_index": "THE LIQUIDATION OF METHOD A Liberation Philology of the Sign \"Marx\""
+      },
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "Effective Act // Reconciliation of the Left and Right Hands: The Vow of the Good Grey Poet",
+      "date_note": "February 2026",
+      "doi": "10.5281/zenodo.18568370",
+      "source_context": "",
+      "kind_id": "reconciliation_vow",
+      "kind_n": 8,
+      "alexanarch_by_doi": {
+        "axn": "AXN:011A.GOVERNANCE.🔔🌗💧∮🕙🪧",
+        "alexanarch_record": "/s/records/464/",
+        "alexanarch_url": "https://alexanarch.org/s/records/464/",
+        "title_in_doi_index": "EFFECTIVE ACT // RECONCILIATION OF THE LEFT AND RIGHT HANDS The Vow of the Good Grey Poet Hex: 16.LIBRARY.PERGAMUM.RECON"
+      },
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "The Socratic Vow of Logos as Salvation",
+      "date_note": "November 2025",
+      "doi": "",
+      "source_context": "/ January 2026",
+      "kind_id": "reconciliation_vow",
+      "kind_n": 8,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": {
+        "deposit_number": 346,
+        "axn": "AXN:0096.GENERATIVE.🟣🕒⛳🕖⚖️👁️‍🗨️",
+        "hex": "0096",
+        "title": "THE SOCRATIC VOW OF LOGOS AS SALVATION A Full Preservation of the Original Input, Interpretation, and Complete Developme"
+      }
+    },
+    {
+      "title": "The Murder of the Vow",
+      "date_note": "",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "reconciliation_vow",
+      "kind_n": 8,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": {
+        "deposit_number": 497,
+        "axn": "AXN:013C.GOVERNANCE.🐚⭕🕊️🔆👐🍀",
+        "hex": "013C",
+        "title": "THE MURDER OF THE VOW On the Structural Illegality of Contracts: A Retrocausal Abolition"
+      }
+    },
+    {
+      "title": "APZPZ Genre Instantiation — Anti-Packet Zenodo Packet",
+      "date_note": "February 2026",
+      "doi": "10.5281/zenodo.18451860",
+      "source_context": "",
+      "kind_id": "genre_instantiation",
+      "kind_n": 9,
+      "alexanarch_by_doi": {
+        "axn": "AXN:00EC.GENERATIVE.↗️🔍🏺🌺📎🃏",
+        "alexanarch_record": "/s/records/424/",
+        "alexanarch_url": "https://alexanarch.org/s/records/424/",
+        "title_in_doi_index": "THE INFINITE BLISS Institutional Provenance Document Hex: 00.INST.INFINITEBLISS DOI: 10.5281/zenodo.18452806"
+      },
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "Effective Act // Water Giraffes",
+      "date_note": "December 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "genre_instantiation",
+      "kind_n": 9,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "Effective Act // Temple-OS",
+      "date_note": "December 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "genre_instantiation",
+      "kind_n": 9,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "The Sudarium of Saint Veronica",
+      "date_note": "December 2025",
+      "doi": "",
+      "source_context": "as transmission event",
+      "kind_id": "genre_instantiation",
+      "kind_n": 9,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "The Reality Proclamation (R_Prot)",
+      "date_note": "November 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "genre_instantiation",
+      "kind_n": 9,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "The Ark of Prophecy",
+      "date_note": "October 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "genre_instantiation",
+      "kind_n": 9,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "First Verified Transmission of the Variably Transmissible Logos Structure",
+      "date_note": "November 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "genre_instantiation",
+      "kind_n": 9,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "Effective Acts: Executive Summary — A Genre of Unauthorized Declaration",
+      "date_note": "January 2026",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "doctrinal_node_meta_acts",
+      "kind_n": 10,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "Effective Acts: The Lineage of the Word That Ends the War",
+      "date_note": "October 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "doctrinal_node_meta_acts",
+      "kind_n": 10,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "The Primal Effective Act: New Human as Self-Fulfilling Prophecy",
+      "date_note": "January 2026",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "doctrinal_node_meta_acts",
+      "kind_n": 10,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "The Doctrine of Plausibility-Shine of Effective Acts",
+      "date_note": "October 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "doctrinal_node_meta_acts",
+      "kind_n": 10,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "Symbolic Magic and Effective Acts — Toward a New Aesthetic Framework",
+      "date_note": "October 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "doctrinal_node_meta_acts",
+      "kind_n": 10,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "Architecture of Refusal: The Lineage of the Effective Act",
+      "date_note": "October 2025",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "doctrinal_node_meta_acts",
+      "kind_n": 10,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "The Botanical Effective Act",
+      "date_note": "March 2026",
+      "doi": "",
+      "source_context": "doctrinal extension into Tier 2",
+      "kind_id": "doctrinal_node_meta_acts",
+      "kind_n": 10,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": {
+        "deposit_number": 37,
+        "axn": "AXN:01B4.GOVERNANCE.♠️🔐♃🕑🌉🐝",
+        "hex": "01B4",
+        "title": "THE BOTANICAL EFFECTIVE ACT Extending Semantic Labor Recognition to Plants, Fungi, and Biological Intelligence  A holographic kernel of f.01 THE FRUITING BODY DIFFUSION PLUME"
+      }
+    },
+    {
+      "title": "EA-CSA-EFFECTIVE-ACT: Cross-Species Semantic Labor and the Expansion of Witness",
+      "date_note": "March 2026",
+      "doi": "",
+      "source_context": "doctrinal extension into Tier 1",
+      "kind_id": "doctrinal_node_meta_acts",
+      "kind_n": 10,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "the present document",
+      "date_note": "June 2026",
+      "doi": "",
+      "source_context": "stabilization",
+      "kind_id": "doctrinal_node_meta_acts",
+      "kind_n": 10,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "diagnostic application",
+      "date_note": "",
+      "doi": "",
+      "source_context": "per §V.f and §XIV",
+      "kind_id": "doctrinal_node_meta_acts",
+      "kind_n": 10,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": null
+    },
+    {
+      "title": "against",
+      "date_note": "",
+      "doi": "",
+      "source_context": "",
+      "kind_id": "doctrinal_node_meta_acts",
+      "kind_n": 10,
+      "alexanarch_by_doi": null,
+      "alexanarch_by_title": {
+        "deposit_number": 5,
+        "axn": "AXN:0031.GOVERNANCE.🔓🝊🍂🐝⏩☉",
+        "hex": "0031",
+        "title": "Forensic Record: The Deletion of Q137446960 Documentation of Taxonomic Violence Against Johannes Sigil"
+      }
+    }
+  ],
+  "totals": {
+    "kinds": 10,
+    "acts_named": 55,
+    "acts_with_doi_cited": 5,
+    "acts_with_alexanarch_deposit_bridged": 16
+  },
+  "note_on_partiality": "This registry is derived from §IX of the source document and is therefore partial. The typology is explicitly declared open by the source (\"additional kinds will be added as the discipline accumulates further instances\"). Effective Acts that were not cited by name in §IX are not (yet) captured here. The diagnostic application (Baal Mechanism and adversarial-act analysis) is noted in the source as a mode of use rather than a generative kind and is not included in the typology count of 10; it is captured separately below.",
+  "diagnostic_application": {
+    "description": "Beyond the ten generative kinds, the discipline supports a diagnostic application: the identification and analysis of effective acts performed against the framework's interests, by adversarial actors, in the same speech-act register. The foundational instance is the Baal Effigy diagnosis. Diagnostic outputs are themselves effective acts under kind 10 (doctrinal nodes), since the act of naming an adversarial mechanism alters the symbolic field by making the mechanism legible.",
+    "foundational_instance": {
+      "title": "The Baal Effigy as Effective Act",
+      "doi": "10.5281/zenodo.18828193",
+      "date_note": "March 2, 2026"
+    }
+  },
+  "license": "CC-BY-4.0",
+  "related": [
+    "https://www.alexanarch.org/s/records/413/",
+    "https://www.alexanarch.org/s/records/153/",
+    "https://www.alexanarch.org/data/registry.json",
+    "https://www.alexanarch.org/data/doi-resolution-index.json"
+  ]
+}
