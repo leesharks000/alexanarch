@@ -1,6 +1,6 @@
 ---
-deposit_number: 1084
-hex: (to be minted)
+deposit_number: 1085
+hex: 044E
 title: "EA-CORRESPONDENCE-CERN-07 v0.1: RQF3807508 — Closing Exchange (Refusal of Confirmation; Reply on the Dissolution Question)"
 creator: Lee Sharks
 orcid: 0009-0000-1599-0703
@@ -35,7 +35,9 @@ keywords:
   - data subject status
 ---
 
-# EA-CORRESPONDENCE-CERN-07 v0.1
+# EA-CORRESPONDENCE-CERN-07 v0.1: RQF3807508 — Closing Exchange (Refusal of Confirmation; Reply on the Dissolution Question)
+
+## Description
 
 ## Closing Exchange — RQF3807508: Refusal of Confirmation; Reply on the Dissolution Question
 
