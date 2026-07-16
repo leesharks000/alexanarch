@@ -1,0 +1,35 @@
+name: GoatCounter snapshot
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # every 6 hours
+  workflow_dispatch: {}     # manual runs from Actions tab
+permissions:
+  contents: write
+concurrency:
+  group: goatcounter-snapshot
+  cancel-in-progress: false
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run snapshot aggregator
+        env:
+          GOATCOUNTER_API_KEY: ${{ secrets.GOATCOUNTER_API_KEY }}
+        run: python3 scripts/build_snapshots.py
+
+      - name: Commit snapshot (if changed)
+        run: |
+          git config user.name "TACHYON snapshot"
+          git config user.email "tachyon@alexanarch.org"
+          git add data/view-counts.json data/network-witness.json
+          if git diff --cached --quiet; then
+            echo "no snapshot changes; skipping commit"
+            exit 0
+          fi
+          # Extract network total for the commit message
+          NT=$(python3 -c "import json; d=json.load(open('data/network-witness.json')); print(d.get('network_total','?'))" 2>/dev/null || echo "?")
+          git commit -m "counter: snapshot @ $(date -u +%Y-%m-%dT%H:%MZ) (network_total=${NT})"
+          git push
