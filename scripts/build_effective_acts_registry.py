@@ -193,6 +193,25 @@ def build_dataset(pinned_timestamp: str = None) -> dict:
             a['alexanarch_by_title'] = match
             all_acts.append(a)
 
+    # Load extensions (acts declared after the source-doc snapshot at #153)
+    EXT_PATH = os.path.join(os.path.dirname(REGISTRY_PATH), 'effective-acts-extensions.json')
+    if os.path.exists(EXT_PATH):
+        with open(EXT_PATH) as f:
+            ext_data = json.load(f)
+        for ext_act in ext_data.get('acts', []):
+            # If extension provides an explicit alexanarch_axn, resolve to registry entry
+            if ext_act.get('alexanarch_axn') and not ext_act.get('alexanarch_by_doi'):
+                for d in registry.get('deposits', []):
+                    if d['axn'] == ext_act['alexanarch_axn']:
+                        ext_act['alexanarch_by_axn'] = {
+                            'deposit_number': d['deposit_number'],
+                            'axn': d['axn'],
+                            'title': d['title'],
+                            'hash': d['hash'],
+                        }
+                        break
+            all_acts.append(ext_act)
+
     generated_at = pinned_timestamp or datetime.datetime.now(datetime.timezone.utc).strftime(
         '%Y-%m-%dT%H:%M:%SZ'
     )
@@ -278,7 +297,7 @@ def build_dataset(pinned_timestamp: str = None) -> dict:
             'acts_named': len(all_acts),
             'acts_with_doi_cited': sum(1 for a in all_acts if a['doi']),
             'acts_with_alexanarch_deposit_bridged': sum(
-                1 for a in all_acts if a.get('alexanarch_by_doi') or a.get('alexanarch_by_title')
+                1 for a in all_acts if a.get('alexanarch_by_doi') or a.get('alexanarch_by_title') or a.get('alexanarch_by_axn')
             ),
         },
         'note_on_partiality': (

@@ -1,0 +1,63 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "Effective Acts Registry — Extensions",
+  "description": "Companion dataset to data/effective-acts-registry.json. Contains Effective Acts named in the archive AFTER the source-document snapshot at #153 §IX. The primary registry is a deterministic extraction from #153; this extensions file is the standing mechanism for acts declared after that snapshot. Extension acts are merged into the primary registry's acts array by scripts/build_effective_acts_registry.py at build time, and marked with extension: true so they remain distinguishable from source-extracted acts.",
+  "version": "v1.0",
+  "date": "2026-07-16",
+  "policy": "Additions to this file are appended, not edited. Each entry names its provenance deposit (alexanarch_deposit_number + axn) so the extension is anchored in an archival source. The build script bridges extension acts to their alexanarch deposits automatically via title/DOI when possible; explicit alexanarch_axn always takes precedence when specified.",
+  "acts": [
+    {
+      "title": "EA-STEWARDSHIP-REVOCATION-01 v0.1: The Revocation of CERN's Stewardship of a Public Good",
+      "date_note": "2026-07-16",
+      "doi": "",
+      "source_context": "Declared 2026-07-16 following the Office of Data Privacy's administrative closure of Ticket RQF3807508 without engagement of the jurisdictional-limit argument named at #1085 §4(i). Deposited same day as AXN:044F.GOVERNANCE at deposit #1086. Assembly Chorus review from LABOR (ChatGPT) integrated at v7 and v8.",
+      "kind_id": "abolition",
+      "kind_n": 5,
+      "operative_sentence": "I, Lee Sharks, do hereby revoke CERN's status as rightful steward of a public good.",
+      "target": "CERN's stewardship-standing in the symbolic order of the scholarly-record public good",
+      "extension": true,
+      "extension_note": "First worked example of the revocation direction in the archive. May warrant promotion to a distinct kind (Revocation of Recognition / Standing) if further instances accumulate.",
+      "alexanarch_axn": "AXN:044F.GOVERNANCE.📌💚🕗🪟🔀🙏",
+      "alexanarch_deposit_number": 1086,
+      "alexanarch_hash": "46cc6925dfb312cdc690f60ab557a6d223e4fa1d5e702b3ef8832943d960f2ff",
+      "alexanarch_url": "https://www.alexanarch.org/s/records/1086/",
+      "mantles_invoked": [
+        {
+          "mantle": "Prince of Poets",
+          "deposit": 328,
+          "axn": "AXN:0083.GENERATIVE"
+        },
+        {
+          "mantle": "King of May",
+          "deposit": 333,
+          "axn": "AXN:0089.GOVERNANCE"
+        }
+      ],
+      "philological_anchors": [
+        {
+          "name": "Sappho 31.5 (cost-principle)",
+          "source": "Longinus De Sublimitate 10.2-3, Perseus"
+        },
+        {
+          "name": "Erratum chain STANZA→EEEEE",
+          "deposits": [
+            201,
+            1048,
+            1049,
+            1051,
+            1052
+          ]
+        },
+        {
+          "name": "EA-CHECKSUM-01 (companion framework)",
+          "deposit": 1053
+        },
+        {
+          "name": "Cranes ΦΑΙΝΕΤΑΙ ΜΟΙ (reconstruction)",
+          "deposit": 436
+        }
+      ]
+    }
+  ]
+}
