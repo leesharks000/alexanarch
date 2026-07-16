@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Chunked Registry — Alexanarch</title>
+<meta name="description" content="Chunked registry.json (~1 MB per chunk) for streaming readers. Index at _index.json.">
+<link rel="alternate" type="application/json" href="/data/chunks/registry/_index.json" title="Machine-readable chunk index">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"DataCatalog","@id":"https://alexanarch.org/data/chunks/registry/","name":"Alexanarch Registry — Chunked","description":"Chunked view of the full registry.json for streaming readers; each chunk ~1 MB.","url":"https://alexanarch.org/data/chunks/registry/","distribution":{"@type":"DataDownload","contentUrl":"https://alexanarch.org/data/chunks/registry/_index.json","encodingFormat":"application/json"},"creator":{"@type":"Person","name":"Lee Sharks","identifier":"https://orcid.org/0009-0000-1599-0703"},"license":"https://creativecommons.org/licenses/by/4.0/"}</script>
+<style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--teal:#0a7c6a;--border:#e0e0e0;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.6;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}a:hover{border-bottom-color:var(--accent);background:#f8f8ff}.nav{display:flex;gap:12px;margin-bottom:20px;font-size:.85em;overflow-x:auto;white-space:nowrap}.nav a{color:#777;font-weight:500;border:none}.nav a:hover{color:var(--accent);background:none}h1{font-size:1.4em;font-weight:600;color:var(--accent);margin-bottom:4px}h2{font-size:1em;font-weight:600;color:var(--accent);margin:24px 0 8px}code{font-family:var(--mono);font-size:.92em;background:#f0f4f8;padding:1px 6px;border-radius:3px}table{width:100%;font-size:.85em;margin:12px 0;border-collapse:collapse}td{padding:4px 8px;border-bottom:1px solid #f0f0f0}td.mono{font-family:var(--mono);color:var(--teal)}td.n{text-align:right;color:#777}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:#777}</style>
+</head><body><div class="wrap">
+<nav class="nav"> <a href="/">Alexanarch</a> <a href="/s/browse/">Browse</a> <a href="/s/wiki/">Wiki</a> <a href="/api/index.json">API</a> <a href="/manifest/">Manifest</a> </nav>
+<h1>Chunked Registry</h1>
+<div style="color:#777;font-size:.88em;margin-bottom:16px">Streaming reader access to the full deposit registry, split into ~1 MB chunks.</div>
+
+<p>The full <a href="/data/registry.json"><code>/data/registry.json</code></a> is ~6 MB. For readers that want to stream or paginate — including machine consumers with memory constraints and archival mirrors that want to verify each range independently — the registry is also served as fixed-size chunks in this directory. Each chunk is content-addressable and independently verifiable via <a href="/SHA256SUMS.txt"><code>SHA256SUMS.txt</code></a>.</p>
+
+<h2>Machine-readable index</h2>
+<p><a href="/data/chunks/registry/_index.json"><code>_index.json</code></a> — JSON-LD DataCatalog describing all chunks, their byte ranges, and deposit ID ranges.</p>
+
+<h2>Chunks</h2>
+<table>
+<tr><td class="mono"><a href="/data/chunks/registry/chunk-001-deposits-1-to-70.json">chunk-001-deposits-1-to-70.json</a></td><td class="n">~992 KB</td><td class="n">deposits 1–70</td></tr>
+<tr><td class="mono"><a href="/data/chunks/registry/chunk-002-deposits-71-to-158.json">chunk-002-deposits-71-to-158.json</a></td><td class="n">~996 KB</td><td class="n">deposits 71–158</td></tr>
+<tr><td class="mono"><a href="/data/chunks/registry/chunk-003-deposits-159-to-254.json">chunk-003-deposits-159-to-254.json</a></td><td class="n">~997 KB</td><td class="n">deposits 159–254</td></tr>
+<tr><td class="mono"><a href="/data/chunks/registry/chunk-004-deposits-255-to-357.json">chunk-004-deposits-255-to-357.json</a></td><td class="n">~994 KB</td><td class="n">deposits 255–357</td></tr>
+<tr><td class="mono"><a href="/data/chunks/registry/chunk-005-deposits-358-to-459.json">chunk-005-deposits-358-to-459.json</a></td><td class="n">~988 KB</td><td class="n">deposits 358–459</td></tr>
+<tr><td class="mono"><a href="/data/chunks/registry/chunk-006-deposits-460-to-542.json">chunk-006-deposits-460-to-542.json</a></td><td class="n">~995 KB</td><td class="n">deposits 460–542</td></tr>
+<tr><td class="mono"><a href="/data/chunks/registry/chunk-007-deposits-543-to-648.json">chunk-007-deposits-543-to-648.json</a></td><td class="n">~996 KB</td><td class="n">deposits 543–648</td></tr>
+<tr><td class="mono"><a href="/data/chunks/registry/chunk-008-deposits-649-to-790.json">chunk-008-deposits-649-to-790.json</a></td><td class="n">~996 KB</td><td class="n">deposits 649–790</td></tr>
+<tr><td class="mono"><a href="/data/chunks/registry/chunk-009-deposits-791-to-992.json">chunk-009-deposits-791-to-992.json</a></td><td class="n">~1000 KB</td><td class="n">deposits 791–992</td></tr>
+<tr><td class="mono"><a href="/data/chunks/registry/chunk-010-deposits-993-to-1086.json">chunk-010-deposits-993-to-1086.json</a></td><td class="n">~362 KB</td><td class="n">deposits 993–1086</td></tr>
+</table>
+
+<h2>Verification</h2>
+<p>All chunks are hashed in <a href="/SHA256SUMS.txt"><code>/SHA256SUMS.txt</code></a>. To verify a chunk after download: <code>sha256sum chunk-001-deposits-1-to-70.json</code>, then compare to the corresponding line in SHA256SUMS.txt.</p>
+
+<div class="footer">
+Also available: <a href="/api/index.json">/api/index.json</a> (catalog) · <a href="/data/registry.json">/data/registry.json</a> (full registry) · <a href="/manifest/">manifest</a> (bibliographic view)
+</div>
+
+</div></body></html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AXN Identifier Space — Alexanarch</title>
+<meta name="description" content="Alexanarch Identifiers (AXN): content-derived, host-independent identifiers for the 1086 deposits in the archive.">
+<link rel="alternate" type="application/json" href="/api/axn-protocol.json" title="AXN protocol specification">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"DefinedTermSet","@id":"https://alexanarch.org/s/axn/","name":"Alexanarch Identifiers (AXN)","description":"Content-derived, host-independent identifiers. Each AXN is a hex deposit number, a semantic family, and a six-emoji fingerprint derived from the first 6 bytes of SHA-256 of the deposit's canonical bytes.","url":"https://alexanarch.org/s/axn/","creator":{"@type":"Person","name":"Lee Sharks","identifier":"https://orcid.org/0009-0000-1599-0703"},"license":"https://creativecommons.org/licenses/by/4.0/"}</script>
+<style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--teal:#0a7c6a;--border:#e0e0e0;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.6;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}a:hover{border-bottom-color:var(--accent);background:#f8f8ff}.nav{display:flex;gap:12px;margin-bottom:20px;font-size:.85em;overflow-x:auto;white-space:nowrap}.nav a{color:#777;font-weight:500;border:none}.nav a:hover{color:var(--accent);background:none}h1{font-size:1.4em;font-weight:600;color:var(--accent);margin-bottom:4px}h2{font-size:1em;font-weight:600;color:var(--accent);margin:24px 0 8px}p{margin:8px 0}code{font-family:var(--mono);font-size:.92em;background:#f0f4f8;padding:1px 6px;border-radius:3px}pre{font-family:var(--mono);font-size:.85em;background:#f7f7f4;padding:12px;border-left:2px solid var(--teal);overflow-x:auto;margin:12px 0}ul{margin:8px 0 8px 24px}li{margin:4px 0}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:#777}</style>
+</head><body><div class="wrap">
+<nav class="nav"> <a href="/">Alexanarch</a> <a href="/s/browse/">Browse</a> <a href="/s/wiki/">Wiki</a> <a href="/api/index.json">API</a> <a href="/identifiers/">Identifiers</a> </nav>
+<h1>AXN Identifier Space</h1>
+<div style="color:#777;font-size:.88em;margin-bottom:16px">1086 content-derived identifiers for the deposits in Alexanarch.</div>
+
+<p>An <strong>Alexanarch Identifier</strong> is a three-layer identifier for a deposit:</p>
+<pre>AXN:044F.GOVERNANCE.📌💚🕗🪟🔀🙏
+    │    │          │
+    │    │          └─ six-emoji fingerprint (first 6 bytes of SHA-256 over the deposit's canonical bytes)
+    │    └───────────── semantic family (GOVERNANCE, EMPIRICAL, GENERATIVE, ARCHIVAL, UNCLASSIFIED)
+    └────────────────── hex deposit number (positional, sequential)</pre>
+
+<p>AXNs are <em>content-derived</em>: the emoji fingerprint is a deterministic function of the deposit's canonical bytes. No host, no registrar, no external authority issues them. Two independent operators computing an AXN over the same bytes produce the same six-emoji glyph. The specification is at <a href="/api/axn-protocol.json"><code>/api/axn-protocol.json</code></a>.</p>
+
+<h2>Resolving an AXN</h2>
+<p>Individual AXNs resolve at <code>/s/axn/{hex}/</code>. For example:</p>
+<ul>
+<li><a href="/s/axn/044F/"><code>/s/axn/044F/</code></a> — AXN:044F.GOVERNANCE.📌💚🕗🪟🔀🙏 (deposit #1086, EA-STEWARDSHIP-REVOCATION-01)</li>
+<li><a href="/s/axn/0001/"><code>/s/axn/0001/</code></a> — AXN:0001 (deposit #1, Zenodotus' Book-Burning)</li>
+</ul>
+
+<h2>Full listing</h2>
+<p>The complete catalog of all 1086 deposits with their AXNs is at <a href="/s/browse/">/s/browse/</a>. A machine-readable index is at <a href="/api/search-index.json"><code>/api/search-index.json</code></a> and the full registry at <a href="/data/registry.json"><code>/data/registry.json</code></a> (or in chunks at <a href="/data/chunks/registry/"><code>/data/chunks/registry/</code></a>).</p>
+
+<h2>Semantic families</h2>
+<p>Every AXN is classified into one of five semantic families:</p>
+<ul>
+<li><code>GOVERNANCE</code> — protocols, effective acts, standing orders, governance instruments</li>
+<li><code>EMPIRICAL</code> — data captures, observation records, evidentiary deposits</li>
+<li><code>GENERATIVE</code> — theoretical work, essays, creative and philosophical deposits</li>
+<li><code>ARCHIVAL</code> — resolution indexes, provenance records, custody instruments</li>
+<li><code>UNCLASSIFIED</code> — deposits without a family assignment (typically pending review)</li>
+</ul>
+
+<div class="footer">
+Related: <a href="/api/axn-protocol.json">axn-protocol.json</a> · <a href="/manifest/">manifest</a> · <a href="/identifiers/">identifiers</a> · <a href="/api/index.json">/api/index.json</a>
+</div>
+
+</div></body></html>
