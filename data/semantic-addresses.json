@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-07-16T02:59:48Z",
+  "regenerated_at": "2026-07-16T05:56:03Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "dd5598462acca344b0552347e384d755eb7b4fd91d830ad606bbbb05d0ce4c13",
+    "mm-main-capture": "a6cbdad93b65abe01688404e1448ff3836cc7841e1739c2d93cc137e636336e6",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 1994,
-  "total_observations": 275,
+  "total_addresses": 1995,
+  "total_observations": 276,
   "class_counts": {
     "subjunctive": 1752,
-    "observed_address": 222,
+    "observed_address": 223,
     "verified_non_address": 20
   },
   "type_counts": {
-    "unmatched": 1576,
+    "unmatched": 1577,
     "single_concept": 409,
     "multi_concept": 9
   },
@@ -4214,6 +4214,32 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-07-13",
       "latest_status": "EXACT MATCH"
+    },
+    "alexanarch identifier": {
+      "canonical_query": "alexanarch identifier",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-16",
+          "status": "ADOPTION (protocol synthesis, sovereign-source-only retrieval)",
+          "source_format": "AI Mode, 5+ sources",
+          "section": "Frameworks",
+          "slug": "alexanarch-identifier",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#alexanarch-identifier",
+          "mirror_gallery_url": "https://leesharks.com/captures/#alexanarch-identifier",
+          "details_excerpt": "AI Mode returns the Alexanarch Identifier (AXN) protocol as a coherent, institutional standard with correct three-layer structure (AXN:<HEX>.<FAMILY>.<6 EMOJI>): HEX as 4-digit hexadecimal positional anchor corresponding"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-16",
+      "latest_status": "ADOPTION (protocol synthesis, sovereign-source-only retrieval)"
     },
     "algebraic properties": {
       "canonical_query": "algebraic properties",
