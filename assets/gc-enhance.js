@@ -1,162 +1,191 @@
-/* Alexanarch view-count + browse enhancement (TACHYON, 2026-07-12).
+/* Alexanarch view-count + browse enhancement v2 (TACHYON, 2026-07-16).
  *
- * Epistemics of a counter (the whole reason this file exists):
- *   HTTP 200  -> a count. Display it, cache it.
- *   HTTP 404  -> a true zero (GoatCounter has no pageviews for the path).
- *                Display "0 views" honestly.
- *   429/5xx/network -> NOT AN ANSWER. Never display 0. Show the cached
- *                value if one exists, else an em dash. A rate limit must
- *                never testify that a record is unread.
+ * v1 fetched a per-record GoatCounter API call from the browser on every
+ * page load and thundering-herd'd the public counter endpoint, producing
+ * em-dashes under load. v2 fetches ONE static snapshot per session
+ * (data/view-counts.json, refreshed every 6 hours by the goatcounter-snapshot
+ * GitHub Action) and does O(1) local lookups per record.
  *
- * Also: localStorage cache (6h fresh, stale-while-revalidate), a fetch
- * queue throttled under GoatCounter's public counter rate limit, lazy
- * loading via IntersectionObserver, client-side date sorting for the
- * static browse surface, and the site-wide TOTAL counter.
+ * The tracker script (count.js on every page) is unchanged; GoatCounter
+ * keeps accumulating the underlying data. Only the display path was
+ * broken; only the display path is replaced.
+ *
+ * Epistemics of a counter, snapshot edition:
+ *   Snapshot has a path with a numeric count -> display the count.
+ *   Snapshot is missing the path -> display em-dash. In the snapshot
+ *     pattern, "missing" collapses three prior states — no observations
+ *     yet, snapshot lag, path never tracked — into one honest uncertainty
+ *     signal. The v1 200/404 distinction bought a display of "0 views"
+ *     for genuine zeros at the cost of the thundering-herd; the snapshot
+ *     buys reliability at the cost of that specific distinction. A record
+ *     that has been tracked for months and legitimately has zero views
+ *     will show em-dash; that is the trade.
+ *   Snapshot fetch fails at runtime -> display em-dash; fall back to any
+ *     cached snapshot from localStorage. Never displays 0 under uncertainty.
+ *   Special path 'TOTAL' -> snapshot.total (all-time site total from
+ *     goatcounter /api/v0/stats/total).
  */
 (function () {
   'use strict';
-  var HOST = 'https://alexanarch.goatcounter.com';
-  var TTL = 6 * 3600 * 1000;           // cache freshness window
-  var GAP = 340;                        // ms between counter fetches (~3/s)
+  var SNAPSHOT_URL = '/data/view-counts.json';
+  var CACHE_KEY = 'gc:snapshot:v2';
+  var TTL = 6 * 3600 * 1000;  // 6h — matches the Action's cadence
+  var snapshotPromise = null;
 
-  function cacheGet(path) {
-    try { var v = JSON.parse(localStorage.getItem('gcv:' + path)); return v && typeof v.c !== 'undefined' ? v : null; }
-    catch (e) { return null; }
-  }
-  function cacheSet(path, count) {
-    try { localStorage.setItem('gcv:' + path, JSON.stringify({ c: count, t: Date.now() })); } catch (e) {}
-  }
   function fmt(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
   function show(el, count, suffix) {
-    el.textContent = fmt(count) + ' ' + (suffix || (count === 1 || count === '1' ? 'view' : 'views'));
+    el.textContent = fmt(count) + ' ' + (suffix || (count === 1 ? 'view' : 'views'));
     el.removeAttribute('title');
   }
   function showUnavailable(el) {
-    if (!el.textContent || el.textContent === '\u2014' || /^0 views$/.test(el.textContent)) {
+    if (!/^\d/.test(el.textContent)) {
       el.textContent = '\u2014';
       el.title = 'view count temporarily unavailable';
-    } // else: keep whatever (cached) value is already displayed
+    }
   }
 
-  // ── throttled fetch queue ──────────────────────────────────────────────
-  var queue = [], draining = false, seen = {};
-  function enqueue(path, el, suffix) {
-    var key = path + '|' + (suffix || '');
-    if (seen[key]) return; seen[key] = 1;
-    var c = cacheGet(path);
-    if (c) { show(el, c.c, suffix); if (Date.now() - c.t < TTL) return; } // fresh: done; stale: revalidate below
-    queue.push({ path: path, el: el, suffix: suffix });
-    drain();
-  }
-  function drain() {
-    if (draining) return; draining = true;
-    (function step() {
-      var job = queue.shift();
-      if (!job) { draining = false; return; }
+  function loadSnapshot() {
+    if (snapshotPromise) return snapshotPromise;
+    snapshotPromise = new Promise(function (resolve) {
+      // 1. Try localStorage cache
+      var cached = null;
+      try {
+        var raw = localStorage.getItem(CACHE_KEY);
+        if (raw) {
+          var c = JSON.parse(raw);
+          if (c && c.d && (Date.now() - c.t) < TTL) cached = c.d;
+        }
+      } catch (e) {}
+      if (cached) { resolve(cached); return; }
+
+      // 2. Fetch fresh
       var x = new XMLHttpRequest();
-      x.open('GET', HOST + '/counter/' + encodeURIComponent(job.path) + '.json');
-      x.timeout = 8000;
+      x.open('GET', SNAPSHOT_URL);
+      x.timeout = 10000;
       x.onload = function () {
         if (x.status === 200) {
           try {
             var d = JSON.parse(x.responseText);
-            var n = parseInt(String(d.count).replace(/[^\d]/g, ''), 10);
-            if (!isNaN(n)) { cacheSet(job.path, n); show(job.el, n, job.suffix); }
-            else showUnavailable(job.el);
-          } catch (e) { showUnavailable(job.el); }
-        } else if (x.status === 404) {
-          cacheSet(job.path, 0); show(job.el, 0, job.suffix);   // true zero
+            try { localStorage.setItem(CACHE_KEY, JSON.stringify({ d: d, t: Date.now() })); } catch (e) {}
+            resolve(d);
+          } catch (e) { resolve(null); }
         } else {
-          showUnavailable(job.el);                               // 429/5xx: not an answer
+          // Try stale localStorage as last resort before giving up
+          try {
+            var stale = localStorage.getItem(CACHE_KEY);
+            if (stale) { var s = JSON.parse(stale); if (s && s.d) return resolve(s.d); }
+          } catch (e) {}
+          resolve(null);
         }
-        setTimeout(step, GAP);
       };
-      x.onerror = x.ontimeout = function () { showUnavailable(job.el); setTimeout(step, GAP); };
+      x.onerror = x.ontimeout = function () {
+        try {
+          var stale = localStorage.getItem(CACHE_KEY);
+          if (stale) { var s = JSON.parse(stale); if (s && s.d) return resolve(s.d); }
+        } catch (e) {}
+        resolve(null);
+      };
       x.send();
-    })();
+    });
+    return snapshotPromise;
   }
 
-  // ── lazy loading: fetch only when visible ─────────────────────────────
-  var io = ('IntersectionObserver' in window) ? new IntersectionObserver(function (entries) {
-    entries.forEach(function (en) {
-      if (en.isIntersecting) {
-        io.unobserve(en.target);
-        enqueue(en.target.getAttribute('data-gc'), en.target);
-      }
+  function renderOne(el, snapshot, suffix) {
+    if (!snapshot) return showUnavailable(el);
+    var path = el.getAttribute('data-gc');
+    if (path === 'TOTAL') {
+      if (typeof snapshot.total === 'number') show(el, snapshot.total, suffix || 'views site-wide');
+      else showUnavailable(el);
+      return;
+    }
+    var entry = snapshot.paths && snapshot.paths[path];
+    if (entry && typeof entry.count === 'number') show(el, entry.count, suffix);
+    else showUnavailable(el);
+  }
+
+  function renderAll(snapshot) {
+    document.querySelectorAll('.gc-v[data-gc]').forEach(function (el) {
+      renderOne(el, snapshot);
     });
-  }, { rootMargin: '200px' }) : null;
-  function watch(el) { if (io) io.observe(el); else enqueue(el.getAttribute('data-gc'), el); }
+    var tot = document.getElementById('home-views') || document.getElementById('site-views');
+    if (tot) {
+      tot.setAttribute('data-gc', 'TOTAL');
+      tot.classList.add('gc-v');
+      renderOne(tot, snapshot, 'views site-wide');
+    }
+  }
 
   function init() {
-    // 1. Upgrade any pre-existing counter elements (homepage cards).
+    // Pre-mark any elements that don't have counts yet with em-dash rather
+    // than "0 views" or empty text; renderAll will replace with real value
+    // once the snapshot loads.
     document.querySelectorAll('.gc-v[data-gc]').forEach(function (el) {
-      if (!/\d/.test(el.textContent) || el.textContent.trim() === '0 views') el.textContent = '\u2014';
-      watch(el);
+      if (!/\d/.test(el.textContent) || el.textContent.trim() === '0 views') {
+        el.textContent = '\u2014';
+      }
     });
 
-    // 2. Site-wide total (GoatCounter special TOTAL path).
-    var tot = document.getElementById('home-views') || document.getElementById('site-views');
-    if (tot) enqueue('TOTAL', tot, 'views site-wide');
-
-    // 3. Browse surface: per-record counters + date sorting.
+    // Browse-surface enhancement: add counter spans to record rows + wire
+    // date sort. Same logic as v1; only the count SOURCE changed.
     var rows = Array.prototype.slice.call(
       document.querySelectorAll('a[itemscope][href^="/s/records/"]'));
-    if (rows.length < 10) return;                      // not the browse page
-
-    rows.forEach(function (row) {
-      var line = row.querySelector('div');             // the flex line
-      var m = row.getAttribute('href').match(/\/s\/records\/(\d+)\//);
-      if (!line || !m) return;
-      var sp = document.createElement('span');
-      sp.className = 'gc-v';
-      sp.setAttribute('data-gc', '/s/records/' + m[1] + '/');
-      sp.style.cssText = 'font-size:.72em;color:var(--teal);white-space:nowrap;min-width:52px;text-align:right';
-      sp.textContent = '';
-      line.appendChild(sp);
-      watch(sp);
-    });
-
-    var hdr = document.getElementById('browse-meta') ||
-      (function () {                                   // fallback: the "deposits · sorted by" line
-        var ds = document.querySelectorAll('div');
-        for (var i = 0; i < ds.length; i++)
-          if (/deposits\s*·\s*sorted/.test(ds[i].textContent) && ds[i].children.length < 3) return ds[i];
-        return null;
-      })();
-
-    var parent = rows[0].parentNode;
-    var anchor = document.createComment('gc-rows');
-    parent.insertBefore(anchor, rows[0]);
-
-    function key(row) {
-      var t = row.querySelector('time[datetime]');
-      var m2 = row.getAttribute('href').match(/(\d+)/);
-      return { d: t ? t.getAttribute('datetime') : '', n: m2 ? parseInt(m2[1], 10) : 0 };
-    }
-    function apply(mode) {
-      var sorted = rows.slice().sort(function (a, b) {
-        var ka = key(a), kb = key(b);
-        if (mode === 'newest') return (kb.d > ka.d ? 1 : kb.d < ka.d ? -1 : kb.n - ka.n);
-        if (mode === 'oldest') return (ka.d > kb.d ? 1 : ka.d < kb.d ? -1 : ka.n - kb.n);
-        return ka.n - kb.n;                            // by number
+    if (rows.length >= 10) {
+      rows.forEach(function (row) {
+        var line = row.querySelector('div');
+        var m = row.getAttribute('href').match(/\/s\/records\/(\d+)\//);
+        if (!line || !m) return;
+        var sp = document.createElement('span');
+        sp.className = 'gc-v';
+        sp.setAttribute('data-gc', '/s/records/' + m[1] + '/');
+        sp.style.cssText = 'font-size:.72em;color:var(--teal);white-space:nowrap;min-width:52px;text-align:right';
+        sp.textContent = '\u2014';
+        line.appendChild(sp);
       });
-      var last = anchor;
-      sorted.forEach(function (r) { parent.insertBefore(r, last.nextSibling); last = r; });
-      if (hdr) {
-        var label = { newest: 'sorted by date, newest first', oldest: 'sorted by date, oldest first', number: 'sorted by deposit number' }[mode];
-        var totSpan = hdr.querySelector('#site-views');
-        hdr.innerHTML = rows.length + ' deposits · ' + label + ' · sort: ' +
-          '<a href="#" data-sort="newest" style="color:var(--teal)">newest</a> · ' +
-          '<a href="#" data-sort="oldest" style="color:var(--teal)">oldest</a> · ' +
-          '<a href="#" data-sort="number" style="color:var(--teal)">by №</a>' +
-          ' · <span id="site-views">' + (totSpan ? totSpan.textContent : '\u2014') + '</span>';
-        hdr.querySelectorAll('a[data-sort]').forEach(function (a) {
-          a.onclick = function (ev) { ev.preventDefault(); apply(a.getAttribute('data-sort')); };
-        });
-        enqueue('TOTAL', hdr.querySelector('#site-views'), 'views site-wide');
+
+      var hdr = document.getElementById('browse-meta') ||
+        (function () {
+          var ds = document.querySelectorAll('div');
+          for (var i = 0; i < ds.length; i++)
+            if (/deposits\s*·\s*sorted/.test(ds[i].textContent) && ds[i].children.length < 3) return ds[i];
+          return null;
+        })();
+
+      var parent = rows[0].parentNode;
+      var anchor = document.createComment('gc-rows');
+      parent.insertBefore(anchor, rows[0]);
+
+      function key(row) {
+        var t = row.querySelector('time[datetime]');
+        var m2 = row.getAttribute('href').match(/(\d+)/);
+        return { d: t ? t.getAttribute('datetime') : '', n: m2 ? parseInt(m2[1], 10) : 0 };
       }
+      function apply(mode) {
+        var sorted = rows.slice().sort(function (a, b) {
+          var ka = key(a), kb = key(b);
+          if (mode === 'newest') return (kb.d > ka.d ? 1 : kb.d < ka.d ? -1 : kb.n - ka.n);
+          if (mode === 'oldest') return (ka.d > kb.d ? 1 : ka.d < kb.d ? -1 : ka.n - kb.n);
+          return ka.n - kb.n;
+        });
+        var last = anchor;
+        sorted.forEach(function (r) { parent.insertBefore(r, last.nextSibling); last = r; });
+        if (hdr) {
+          var label = { newest: 'sorted by date, newest first', oldest: 'sorted by date, oldest first', number: 'sorted by deposit number' }[mode];
+          var totSpan = hdr.querySelector('#site-views');
+          hdr.innerHTML = rows.length + ' deposits · ' + label + ' · sort: ' +
+            '<a href="#" data-sort="newest" style="color:var(--teal)">newest</a> · ' +
+            '<a href="#" data-sort="oldest" style="color:var(--teal)">oldest</a> · ' +
+            '<a href="#" data-sort="number" style="color:var(--teal)">by №</a>' +
+            ' · <span id="site-views">' + (totSpan ? totSpan.textContent : '\u2014') + '</span>';
+          hdr.querySelectorAll('a[data-sort]').forEach(function (a) {
+            a.onclick = function (ev) { ev.preventDefault(); apply(a.getAttribute('data-sort')); };
+          });
+        }
+      }
+      apply('newest');
     }
-    apply('newest');                                   // date order by default
+
+    // One snapshot fetch, apply everywhere.
+    loadSnapshot().then(renderAll);
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
