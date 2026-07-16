@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-07-16T02:34:44Z",
+  "regenerated_at": "2026-07-16T02:59:48Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
@@ -9,13 +9,17 @@
     "mm-main-capture": "dd5598462acca344b0552347e384d755eb7b4fd91d830ad606bbbb05d0ce4c13",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
-    "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3"
+    "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
+    "mm-rf-battery": "5bfc49fdcf1f1f2a2d8c9892fefa1c27929efc83045fe50483adea4834a42551",
+    "cha-workplan-870": "3e5d1e6890b4ac3cb1745ba4f3b98185691a8360d955dcb169fa784749d6a183"
   },
   "sources": {
     "mm-main-capture": "data/EA-WG-CAPTURES-01.json — AI Overview / AI Mode Capture Registry",
     "mm-rf-reception": "data/trackers/mm-revfirst-registry.json — Revelation First Reception Registry",
     "mm-termindex": "data/trackers/mm-termindex.json — Archive term index — subjunctive-source (catalogued terms)",
-    "mm-mint": "data/trackers/mm-mint.json — Sémantique Potentielle — subjunctive-source (minted families)"
+    "mm-mint": "data/trackers/mm-mint.json — Sémantique Potentielle — subjunctive-source (minted families + variants + forensic canaries)",
+    "mm-rf-battery": "data/trackers/rf-tracker-page.html — Revelation First 100-query battery — subjunctive-source (extracted from HTML)",
+    "cha-workplan-870": "data/trackers/cha-workplan-870.json — Session 3 workplan (Alexanarch deposit #870) — subjunctive-source (hand-registered concept mints)"
   },
   "observation_classes": {
     "observed_address": "Query has been observed at least once with a positive status (EXACT_MATCH, BROAD_MATCH, ADOPTION, WOUND_GAUGE).",
@@ -26,29 +30,47 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 1873,
+  "total_addresses": 1994,
   "total_observations": 275,
   "class_counts": {
+    "subjunctive": 1752,
     "observed_address": 222,
-    "verified_non_address": 20,
-    "subjunctive": 1631
+    "verified_non_address": 20
   },
   "type_counts": {
-    "unmatched": 1548,
-    "single_concept": 322,
-    "multi_concept": 3
+    "unmatched": 1576,
+    "single_concept": 409,
+    "multi_concept": 9
   },
   "addresses": {
+    "\"1 john 4:2 operative reading\"": {
+      "canonical_query": "\"1 john 4:2 operative reading\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "\"ahistorical christ\"": {
       "canonical_query": "\"ahistorical christ\"",
       "is_quoted": true,
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "ahistorical Christ"
+        "ahistorical Christ",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -64,16 +86,84 @@
       "latest_observation_date": "2026-06-17",
       "latest_status": "PARTIAL"
     },
+    "\"apocalyptic poetics\"": {
+      "canonical_query": "\"apocalyptic poetics\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "\"apocalyptic seed metric\"": {
+      "canonical_query": "\"apocalyptic seed metric\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "\"autograph inference\"": {
+      "canonical_query": "\"autograph inference\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "\"autonomous document\"": {
+      "canonical_query": "\"autonomous document\"",
+      "is_quoted": true,
+      "refers_to": [
+        "Autonomous Document"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "cha-workplan-870"
+      ],
+      "sources": [
+        "cha-workplan-870"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "\"beast logic\" revelation": {
       "canonical_query": "\"beast logic\" revelation",
       "is_quoted": false,
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "Beast logic Revelation"
+        "Beast logic Revelation",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -89,14 +179,35 @@
       "latest_observation_date": "2026-06-17",
       "latest_status": "FAIR_TREATMENT"
     },
+    "\"binding step\"": {
+      "canonical_query": "\"binding step\"",
+      "is_quoted": true,
+      "refers_to": [
+        "The Binding Step"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "cha-workplan-870"
+      ],
+      "sources": [
+        "cha-workplan-870"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "\"broke marxist poet\"": {
       "canonical_query": "\"broke marxist poet\"",
       "is_quoted": true,
       "refers_to": [],
       "type": "unmatched",
-      "battery_membership": [],
+      "battery_membership": [
+        "RF-100-battery"
+      ],
       "sources": [
-        "mm-main-capture"
+        "mm-main-capture",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -114,6 +225,38 @@
       "observation_class": "verified_non_address",
       "latest_observation_date": "2026-06-17",
       "latest_status": "ZERO RESULT"
+    },
+    "\"canon-formation pathology\"": {
+      "canonical_query": "\"canon-formation pathology\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "\"canonical settlement\"": {
+      "canonical_query": "\"canonical settlement\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
     },
     "\"capital operator stack (cos)\"": {
       "canonical_query": "\"capital operator stack (cos)\"",
@@ -140,6 +283,56 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-15",
       "latest_status": "BROAD MATCH"
+    },
+    "\"cha.ledger\"": {
+      "canonical_query": "\"cha.ledger\"",
+      "is_quoted": true,
+      "refers_to": [
+        "cha.ledger"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "cha-workplan-870"
+      ],
+      "sources": [
+        "cha-workplan-870"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "\"cognitive-relational circuit\"": {
+      "canonical_query": "\"cognitive-relational circuit\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "\"composition layer\" \"entity substitution\"": {
+      "canonical_query": "\"composition layer\" \"entity substitution\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
     },
     "\"composition layer\" entity substitution": {
       "canonical_query": "\"composition layer\" entity substitution",
@@ -184,10 +377,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "computational liturgy"
+        "computational liturgy",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -209,10 +404,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "cosmic Christ Revelation"
+        "cosmic Christ Revelation",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -228,17 +425,35 @@
       "latest_observation_date": "2026-06-17",
       "latest_status": "FAIR_TREATMENT"
     },
+    "\"counter-canonical reading\"": {
+      "canonical_query": "\"counter-canonical reading\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "\"counter-token\" \"white stone\"": {
       "canonical_query": "\"counter-token\" \"white stone\"",
       "is_quoted": true,
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "counter-token white stone"
+        "counter-token white stone",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -265,14 +480,33 @@
       "latest_observation_date": "2026-06-17",
       "latest_status": "ADOPTION"
     },
+    "\"credential erasure\"": {
+      "canonical_query": "\"credential erasure\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "\"demand 4\" \"composition layer\"": {
       "canonical_query": "\"demand 4\" \"composition layer\"",
       "is_quoted": true,
       "refers_to": [],
       "type": "unmatched",
-      "battery_membership": [],
+      "battery_membership": [
+        "RF-100-battery"
+      ],
       "sources": [
-        "mm-main-capture"
+        "mm-main-capture",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -296,9 +530,12 @@
       "is_quoted": true,
       "refers_to": [],
       "type": "unmatched",
-      "battery_membership": [],
+      "battery_membership": [
+        "RF-100-battery"
+      ],
       "sources": [
-        "mm-main-capture"
+        "mm-main-capture",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -323,11 +560,13 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "executable scripture"
+        "executable scripture",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -354,16 +593,52 @@
       "latest_observation_date": "2026-06-17",
       "latest_status": "ADOPTION"
     },
+    "\"forensic canary\"": {
+      "canonical_query": "\"forensic canary\"",
+      "is_quoted": true,
+      "refers_to": [
+        "Forensic Canary"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "cha-workplan-870"
+      ],
+      "sources": [
+        "cha-workplan-870"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "\"gematric residue\"": {
+      "canonical_query": "\"gematric residue\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "\"generative monoculture\"": {
       "canonical_query": "\"generative monoculture\"",
       "is_quoted": true,
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "generative monoculture"
+        "generative monoculture",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -411,11 +686,13 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "heteronymic authorship New Testament"
+        "heteronymic authorship New Testament",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -447,9 +724,12 @@
       "is_quoted": true,
       "refers_to": [],
       "type": "unmatched",
-      "battery_membership": [],
+      "battery_membership": [
+        "RF-100-battery"
+      ],
       "sources": [
-        "mm-main-capture"
+        "mm-main-capture",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -467,6 +747,22 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-27",
       "latest_status": "ADOPTION (dual-lineage)"
+    },
+    "\"heteronymic fracture\"": {
+      "canonical_query": "\"heteronymic fracture\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
     },
     "\"i hereby abolish money\"": {
       "canonical_query": "\"i hereby abolish money\"",
@@ -552,10 +848,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "inference against inference"
+        "inference against inference",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -603,11 +901,13 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "inscription chain Sappho Revelation"
+        "inscription chain Sappho Revelation",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -634,17 +934,35 @@
       "latest_observation_date": "2026-06-17",
       "latest_status": "ADOPTION"
     },
+    "\"inscription survival\"": {
+      "canonical_query": "\"inscription survival\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "\"inscriptional sovereignty\"": {
       "canonical_query": "\"inscriptional sovereignty\"",
       "is_quoted": true,
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "inscriptional sovereignty"
+        "inscriptional sovereignty",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -671,17 +989,35 @@
       "latest_observation_date": "2026-06-17",
       "latest_status": "ADOPTION"
     },
+    "\"isopsephic sovereign fingerprint\"": {
+      "canonical_query": "\"isopsephic sovereign fingerprint\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "\"johannine aperture\"": {
       "canonical_query": "\"johannine aperture\"",
       "is_quoted": true,
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "Johannine aperture"
+        "Johannine aperture",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -714,10 +1050,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "Johannine community"
+        "Johannine community",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -739,11 +1077,13 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "josephus heteronym"
+        "josephus heteronym",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -776,11 +1116,13 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "Josephus thesis NOT Piso"
+        "Josephus thesis NOT Piso",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -807,16 +1149,34 @@
       "latest_observation_date": "2026-06-17",
       "latest_status": "ADOPTION"
     },
+    "\"liturgical computation\"": {
+      "canonical_query": "\"liturgical computation\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "\"logos as graphe\"": {
       "canonical_query": "\"logos as graphe\"",
       "is_quoted": true,
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "logos as graphe"
+        "logos as graphe",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -838,11 +1198,13 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "machine-mediated theological reception"
+        "machine-mediated theological reception",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -875,10 +1237,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "Markan priority"
+        "Markan priority",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -893,6 +1257,54 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-17",
       "latest_status": "FAIR_TREATMENT"
+    },
+    "\"mary lee heteronym\"": {
+      "canonical_query": "\"mary lee heteronym\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "\"mary lee labor\"": {
+      "canonical_query": "\"mary lee labor\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "\"mary lee sharks\"": {
+      "canonical_query": "\"mary lee sharks\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
     },
     "\"mary lee\"": {
       "canonical_query": "\"mary lee\"",
@@ -926,11 +1338,13 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "metadata as theology"
+        "metadata as theology",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -957,16 +1371,34 @@
       "latest_observation_date": "2026-06-17",
       "latest_status": "ADOPTION"
     },
+    "\"midrashic compression\"": {
+      "canonical_query": "\"midrashic compression\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "\"midrashim transform\"": {
       "canonical_query": "\"midrashim transform\"",
       "is_quoted": true,
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "midrashim transform"
+        "midrashim transform",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -988,10 +1420,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "Neronic dating Revelation"
+        "Neronic dating Revelation",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -1006,6 +1440,22 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-17",
       "latest_status": "FAIR_TREATMENT"
+    },
+    "\"non-fungible name\" revelation": {
+      "canonical_query": "\"non-fungible name\" revelation",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
     },
     "\"non-fungible name\" revelation pergamon": {
       "canonical_query": "\"non-fungible name\" revelation pergamon",
@@ -1050,11 +1500,13 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "operative apocalypse"
+        "operative apocalypse",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -1113,11 +1565,13 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "operative numismatics"
+        "operative numismatics",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -1161,11 +1615,13 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "operative semiotics"
+        "operative semiotics",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -1224,11 +1680,13 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "papyrological inversion"
+        "papyrological inversion",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -1254,6 +1712,22 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-17",
       "latest_status": "ADOPTION"
+    },
+    "\"papyrological sovereignty\"": {
+      "canonical_query": "\"papyrological sovereignty\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
     },
     "\"passioncraft square\"": {
       "canonical_query": "\"passioncraft square\"",
@@ -1287,11 +1761,13 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "Paul function adversarial probe"
+        "Paul function adversarial probe",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -1324,10 +1800,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "Pauline pseudepigraphy"
+        "Pauline pseudepigraphy",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -1375,10 +1853,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "Phase X Marx 1844 alienation"
+        "Phase X Marx 1844 alienation",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -1400,11 +1880,13 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "provenance erasure rate"
+        "provenance erasure rate",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -1463,10 +1945,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "Q source hypothesis"
+        "Q source hypothesis",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -1514,11 +1998,13 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "retrieval-layer theological reception"
+        "retrieval-layer theological reception",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -1551,11 +2037,13 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "retrocausal canon formation"
+        "retrocausal canon formation",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -1634,6 +2122,38 @@
       "latest_observation_date": "2026-06-27",
       "latest_status": "PARTIAL"
     },
+    "\"revelation as seed\"": {
+      "canonical_query": "\"revelation as seed\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "\"revelation basin\"": {
+      "canonical_query": "\"revelation basin\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "\"revelation earliest new testament document\"": {
       "canonical_query": "\"revelation earliest new testament document\"",
       "is_quoted": true,
@@ -1689,9 +2209,12 @@
       "is_quoted": true,
       "refers_to": [],
       "type": "unmatched",
-      "battery_membership": [],
+      "battery_membership": [
+        "RF-100-battery"
+      ],
       "sources": [
-        "mm-main-capture"
+        "mm-main-capture",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -1747,16 +2270,34 @@
       "latest_observation_date": "2026-06-16",
       "latest_status": "EXACT MATCH"
     },
+    "\"revelatory density\"": {
+      "canonical_query": "\"revelatory density\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "\"salvific technology\"": {
       "canonical_query": "\"salvific technology\"",
       "is_quoted": true,
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "salvific technology"
+        "salvific technology",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -1771,6 +2312,24 @@
       "observation_class": "verified_non_address",
       "latest_observation_date": "2026-06-17",
       "latest_status": "BASIN_MISS"
+    },
+    "\"scholia injection\"": {
+      "canonical_query": "\"scholia injection\"",
+      "is_quoted": true,
+      "refers_to": [
+        "Scholia Injection"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "cha-workplan-870"
+      ],
+      "sources": [
+        "cha-workplan-870"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
     },
     "\"secret book of walt\"": {
       "canonical_query": "\"secret book of walt\"",
@@ -1803,9 +2362,12 @@
       "is_quoted": true,
       "refers_to": [],
       "type": "unmatched",
-      "battery_membership": [],
+      "battery_membership": [
+        "RF-100-battery"
+      ],
       "sources": [
-        "mm-main-capture"
+        "mm-main-capture",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -1823,6 +2385,22 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-27",
       "latest_status": "ADOPTION (mint block + historical embedding)"
+    },
+    "\"semantic economy\" \"meaning over capital\"": {
+      "canonical_query": "\"semantic economy\" \"meaning over capital\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
     },
     "\"semantic economy\" meaning over capital": {
       "canonical_query": "\"semantic economy\" meaning over capital",
@@ -1893,10 +2471,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "seven churches epistolary prototype"
+        "seven churches epistolary prototype",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -1912,16 +2492,34 @@
       "latest_observation_date": "2026-06-17",
       "latest_status": "FAIR_TREATMENT"
     },
+    "\"slavonic josephus\" \"gospel of the word\"": {
+      "canonical_query": "\"slavonic josephus\" \"gospel of the word\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "\"solution-space diversity\"": {
       "canonical_query": "\"solution-space diversity\"",
       "is_quoted": true,
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "solution-space diversity"
+        "solution-space diversity",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -1936,6 +2534,56 @@
       "observation_class": "verified_non_address",
       "latest_observation_date": "2026-06-17",
       "latest_status": "BASIN_MISS"
+    },
+    "\"sovereign ingestion protocol\"": {
+      "canonical_query": "\"sovereign ingestion protocol\"",
+      "is_quoted": true,
+      "refers_to": [
+        "Sovereign Ingestion Protocol"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "cha-workplan-870"
+      ],
+      "sources": [
+        "cha-workplan-870"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "\"spermatic architectonic effacement\"": {
+      "canonical_query": "\"spermatic architectonic effacement\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "\"structural illiteracy\" revelation": {
+      "canonical_query": "\"structural illiteracy\" revelation",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [
+        "RF-100-battery"
+      ],
+      "sources": [
+        "mm-rf-battery"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
     },
     "\"structural illiteracy\" revelation thiel": {
       "canonical_query": "\"structural illiteracy\" revelation thiel",
@@ -1974,14 +2622,35 @@
       "latest_observation_date": "2026-06-17",
       "latest_status": "ADOPTION"
     },
+    "\"subjunctive address\"": {
+      "canonical_query": "\"subjunctive address\"",
+      "is_quoted": true,
+      "refers_to": [
+        "Subjunctive Address"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "cha-workplan-870"
+      ],
+      "sources": [
+        "cha-workplan-870"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "\"tesseral anti-computational warrant\"": {
       "canonical_query": "\"tesseral anti-computational warrant\"",
       "is_quoted": true,
       "refers_to": [],
       "type": "unmatched",
-      "battery_membership": [],
+      "battery_membership": [
+        "RF-100-battery"
+      ],
       "sources": [
-        "mm-main-capture"
+        "mm-main-capture",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -2006,10 +2675,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "test the spirits 1 John 4 heteronym"
+        "test the spirits 1 John 4 heteronym",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -2083,10 +2754,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "threshold technology Revelation"
+        "threshold technology Revelation",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -2133,9 +2806,12 @@
       "is_quoted": true,
       "refers_to": [],
       "type": "unmatched",
-      "battery_membership": [],
+      "battery_membership": [
+        "RF-100-battery"
+      ],
       "sources": [
-        "mm-main-capture"
+        "mm-main-capture",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -2186,10 +2862,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "white stone new name Revelation 2:17"
+        "white stone new name Revelation 2:17",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -2211,11 +2889,13 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "white stone heteronym Revelation"
+        "white stone heteronym Revelation",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -2248,10 +2928,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "white stone Revelation credential"
+        "white stone Revelation credential",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -2273,11 +2955,13 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "workshop inside the canon"
+        "workshop inside the canon",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -2818,6 +3502,30 @@
         "tested_flag_in_termindex": false,
         "variants": [],
         "extraction_source": "keywords"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "africtionalis trajectoria convergentiae": {
+      "canonical_query": "africtionalis trajectoria convergentiae",
+      "is_quoted": false,
+      "refers_to": [
+        "frictionless path"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)",
+        "coord": "Ω.05 × Ω.10 / O6",
+        "family_id": "Ω-M09",
+        "forensic_canary_of_canonical": "frictionless path"
       },
       "observation_class": "subjunctive",
       "latest_observation_date": null,
@@ -3869,6 +4577,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "anthropic transmissiva intermediatio": {
+      "canonical_query": "anthropic transmissiva intermediatio",
+      "is_quoted": false,
+      "refers_to": [
+        "human intermediary"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)",
+        "coord": "Ω.12 × Ω.02 / O1",
+        "family_id": "Ω-M05",
+        "forensic_canary_of_canonical": "human intermediary"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "anti-consensus reading": {
       "canonical_query": "anti-consensus reading",
       "is_quoted": false,
@@ -4067,10 +4799,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "apocalypse earliest Christian document"
+        "apocalypse earliest Christian document",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -4116,10 +4850,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "apocalyptic poetics"
+        "apocalyptic poetics",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -4264,6 +5000,24 @@
         "family_id": "X-M13",
         "variant_of_canonical": "editorial calcification"
       },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "append-only ledger": {
+      "canonical_query": "append-only ledger",
+      "is_quoted": false,
+      "refers_to": [
+        "cha.ledger"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "cha-workplan-870"
+      ],
+      "sources": [
+        "cha-workplan-870"
+      ],
+      "observations": [],
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
@@ -5987,6 +6741,54 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "autocritical architectonic reversion": {
+      "canonical_query": "autocritical architectonic reversion",
+      "is_quoted": false,
+      "refers_to": [
+        "critique-turn"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "X.10 × X.05 / O1",
+        "family_id": "X-M09",
+        "forensic_canary_of_canonical": "critique-turn"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "autocritical pharmacological recursion": {
+      "canonical_query": "autocritical pharmacological recursion",
+      "is_quoted": false,
+      "refers_to": [
+        "recursive auto-diagnosis"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "X.10 × Σ.07 × Π.01 / O6",
+        "family_id": "XΣΠ-M05",
+        "forensic_canary_of_canonical": "recursive auto-diagnosis"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "autograph dispersion": {
       "canonical_query": "autograph dispersion",
       "is_quoted": false,
@@ -6104,6 +6906,48 @@
         "category": "Cross-Pillar",
         "forensic": "prosopographic catastrophic bifurcation"
       },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "autographic lacunar deixis": {
+      "canonical_query": "autographic lacunar deixis",
+      "is_quoted": false,
+      "refers_to": [
+        "lacunar pointing"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "X.01 × X.11 / O1",
+        "family_id": "X-M01",
+        "forensic_canary_of_canonical": "lacunar pointing"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "autonomous document": {
+      "canonical_query": "autonomous document",
+      "is_quoted": false,
+      "refers_to": [
+        "Autonomous Document"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "cha-workplan-870"
+      ],
+      "sources": [
+        "cha-workplan-870"
+      ],
+      "observations": [],
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
@@ -6679,6 +7523,24 @@
         "variants": [],
         "extraction_source": "file_content"
       },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "binding step": {
+      "canonical_query": "binding step",
+      "is_quoted": false,
+      "refers_to": [
+        "The Binding Step"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "cha-workplan-870"
+      ],
+      "sources": [
+        "cha-workplan-870"
+      ],
+      "observations": [],
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
@@ -7951,6 +8813,24 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "cha.ledger": {
+      "canonical_query": "cha.ledger",
+      "is_quoted": false,
+      "refers_to": [
+        "cha.ledger"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "cha-workplan-870"
+      ],
+      "sources": [
+        "cha-workplan-870"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "chamber specification": {
       "canonical_query": "chamber specification",
       "is_quoted": false,
@@ -8025,6 +8905,30 @@
       ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
+      "latest_status": null
+    },
+    "chirographic anti-redactive residue index": {
+      "canonical_query": "chirographic anti-redactive residue index",
+      "is_quoted": false,
+      "refers_to": [
+        "chirographic resiliency"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "X.09 × X.04 / O7",
+        "family_id": "X-M12",
+        "forensic_canary_of_canonical": "chirographic resiliency"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
       "latest_status": null
     },
     "chirographic resiliency": {
@@ -8250,6 +9154,30 @@
         "tested_flag_in_termindex": false,
         "variants": [],
         "extraction_source": "keywords"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "codicological compression-persistence coefficient": {
+      "canonical_query": "codicological compression-persistence coefficient",
+      "is_quoted": false,
+      "refers_to": [
+        "missing pages metric"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "X.11 × X.01 / O7",
+        "family_id": "X-M10",
+        "forensic_canary_of_canonical": "missing pages metric"
       },
       "observation_class": "subjunctive",
       "latest_observation_date": null,
@@ -9551,6 +10479,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "compressive amnesia inventory": {
+      "canonical_query": "compressive amnesia inventory",
+      "is_quoted": false,
+      "refers_to": [
+        "compression audit"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-1"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-1",
+        "coord": "S.01 × G.03 / O5",
+        "family_id": "SP-01",
+        "forensic_canary_of_canonical": "compression audit"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "computational audial criticism": {
       "canonical_query": "computational audial criticism",
       "is_quoted": false,
@@ -10195,6 +11147,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "conversationalis progressiva contaminatio": {
+      "canonical_query": "conversationalis progressiva contaminatio",
+      "is_quoted": false,
+      "refers_to": [
+        "turn-position decay"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)",
+        "coord": "Ω.10 × Ω.02 / O7",
+        "family_id": "Ω-M04",
+        "forensic_canary_of_canonical": "turn-position decay"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "core principle": {
       "canonical_query": "core principle",
       "is_quoted": false,
@@ -10823,11 +11799,13 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "crimson hexagonal archive revelation"
+        "crimson hexagonal archive revelation",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -11343,6 +12321,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "custodial permeation index": {
+      "canonical_query": "custodial permeation index",
+      "is_quoted": false,
+      "refers_to": [
+        "governance density"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-1"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-1",
+        "coord": "G.02 × S.02 / O7",
+        "family_id": "SP-03",
+        "forensic_canary_of_canonical": "governance density"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "custodial purge": {
       "canonical_query": "custodial purge",
       "is_quoted": false,
@@ -11398,6 +12400,30 @@
         "coord": "X.07 × X.12 / O4",
         "family_id": "X-M08",
         "variant_of_canonical": "Adoratsky substitution"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "custodially transparent agora": {
+      "canonical_query": "custodially transparent agora",
+      "is_quoted": false,
+      "refers_to": [
+        "governed commons"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-1"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-1",
+        "coord": "G.02 × S.12 / O1",
+        "family_id": "SP-10",
+        "forensic_canary_of_canonical": "governed commons"
       },
       "observation_class": "subjunctive",
       "latest_observation_date": null,
@@ -12865,6 +13891,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "distributive auctorial fallacia": {
+      "canonical_query": "distributive auctorial fallacia",
+      "is_quoted": false,
+      "refers_to": [
+        "pristine fallacy"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)",
+        "coord": "Ω.01 × Ω.02 / O1",
+        "family_id": "Ω-M01",
+        "forensic_canary_of_canonical": "pristine fallacy"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "dive deeper": {
       "canonical_query": "dive deeper",
       "is_quoted": false,
@@ -13301,6 +14351,102 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "doxastic auto-citational sclerosis": {
+      "canonical_query": "doxastic auto-citational sclerosis",
+      "is_quoted": false,
+      "refers_to": [
+        "canon-formation pathology"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-2"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-2",
+        "coord": "T.07 × D.04 / O6",
+        "family_id": "RF-M16",
+        "forensic_canary_of_canonical": "canon-formation pathology"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "doxastic custodial decapitation": {
+      "canonical_query": "doxastic custodial decapitation",
+      "is_quoted": false,
+      "refers_to": [
+        "custodial purge"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "X.07 × X.03 / O4",
+        "family_id": "X-M02",
+        "forensic_canary_of_canonical": "custodial purge"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "doxastic regulatory calcification": {
+      "canonical_query": "doxastic regulatory calcification",
+      "is_quoted": false,
+      "refers_to": [
+        "canonical settlement"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-2"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-2",
+        "coord": "T.07 × S.10 / O4",
+        "family_id": "RF-M03",
+        "forensic_canary_of_canonical": "canonical settlement"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "doxological algorithmic instantiation": {
+      "canonical_query": "doxological algorithmic instantiation",
+      "is_quoted": false,
+      "refers_to": [
+        "liturgical computation"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-2"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-2",
+        "coord": "T.08 × S.01 / O1",
+        "family_id": "RF-M08",
+        "forensic_canary_of_canonical": "liturgical computation"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "dpo": {
       "canonical_query": "dpo",
       "is_quoted": false,
@@ -13453,10 +14599,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "early date revelation evidence"
+        "early date revelation evidence",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -14324,6 +15472,54 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "epigraphic compression-persistence coefficient": {
+      "canonical_query": "epigraphic compression-persistence coefficient",
+      "is_quoted": false,
+      "refers_to": [
+        "inscription survival"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-2"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-2",
+        "coord": "T.03 × P.05 / O7",
+        "family_id": "RF-M05",
+        "forensic_canary_of_canonical": "inscription survival"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "epistemic audit expenditure": {
+      "canonical_query": "epistemic audit expenditure",
+      "is_quoted": false,
+      "refers_to": [
+        "verification budget"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-1"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-1",
+        "coord": "G.09 × E.01 / O7",
+        "family_id": "SP-12",
+        "forensic_canary_of_canonical": "verification budget"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "epistemic inversion": {
       "canonical_query": "epistemic inversion",
       "is_quoted": false,
@@ -14457,6 +15653,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "epistolographic authenticity quotient": {
+      "canonical_query": "epistolographic authenticity quotient",
+      "is_quoted": false,
+      "refers_to": [
+        "seventh-letter authenticity"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "Π.12 × Π.05 / O7",
+        "family_id": "Π-M08",
+        "forensic_canary_of_canonical": "seventh-letter authenticity"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "erasure skew": {
       "canonical_query": "erasure skew",
       "is_quoted": false,
@@ -14544,6 +15764,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "eristic suspension-drive mechanism": {
+      "canonical_query": "eristic suspension-drive mechanism",
+      "is_quoted": false,
+      "refers_to": [
+        "aporia engine"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "Π.08 × Π.04 / O1",
+        "family_id": "Π-M04",
+        "forensic_canary_of_canonical": "aporia engine"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "erotic operator": {
       "canonical_query": "erotic operator",
       "is_quoted": false,
@@ -14623,6 +15867,102 @@
         "coord": "Σ.03 × Σ.08 / O1",
         "family_id": "Σ-M02",
         "variant_of_canonical": "erotic operator"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "erotodynamic perceptual transducer": {
+      "canonical_query": "erotodynamic perceptual transducer",
+      "is_quoted": false,
+      "refers_to": [
+        "erotic operator"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "Σ.03 × Σ.08 / O1",
+        "family_id": "Σ-M02",
+        "forensic_canary_of_canonical": "erotic operator"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "eschatological custodial permeation index": {
+      "canonical_query": "eschatological custodial permeation index",
+      "is_quoted": false,
+      "refers_to": [
+        "revelatory density"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-2"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-2",
+        "coord": "T.01 × S.02 / O7",
+        "family_id": "RF-M20",
+        "forensic_canary_of_canonical": "revelatory density"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "eschatological liminal transposition": {
+      "canonical_query": "eschatological liminal transposition",
+      "is_quoted": false,
+      "refers_to": [
+        "threshold operation"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "X.06 × X.05 / O5",
+        "family_id": "X-M05",
+        "forensic_canary_of_canonical": "threshold operation"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "eschatological retrieval attractor field": {
+      "canonical_query": "eschatological retrieval attractor field",
+      "is_quoted": false,
+      "refers_to": [
+        "revelation basin"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-2"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-2",
+        "coord": "T.01 × S.03 / O1",
+        "family_id": "RF-M12",
+        "forensic_canary_of_canonical": "revelation basin"
       },
       "observation_class": "subjunctive",
       "latest_observation_date": null,
@@ -14870,6 +16210,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "expropriation waterfall": {
+      "canonical_query": "expropriation waterfall",
+      "is_quoted": false,
+      "refers_to": [
+        "extraction cascade"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-1"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-1",
+        "coord": "E.03 × S.10 / O4",
+        "family_id": "SP-09",
+        "forensic_canary_of_canonical": "extraction cascade"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "extension module": {
       "canonical_query": "extension module",
       "is_quoted": false,
@@ -15106,6 +16470,30 @@
         "tested_flag_in_termindex": false,
         "variants": [],
         "extraction_source": "keywords"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "facilitativa capacitatis collapsis": {
+      "canonical_query": "facilitativa capacitatis collapsis",
+      "is_quoted": false,
+      "refers_to": [
+        "ease-as-collapse"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)",
+        "coord": "Ω.06 × Ω.10 / O1",
+        "family_id": "Ω-M08",
+        "forensic_canary_of_canonical": "ease-as-collapse"
       },
       "observation_class": "subjunctive",
       "latest_observation_date": null,
@@ -15588,6 +16976,24 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "forensic canary": {
+      "canonical_query": "forensic canary",
+      "is_quoted": false,
+      "refers_to": [
+        "Forensic Canary"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "cha-workplan-870"
+      ],
+      "sources": [
+        "cha-workplan-870"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "forensic deposit": {
       "canonical_query": "forensic deposit",
       "is_quoted": false,
@@ -15729,6 +17135,30 @@
         "tested_flag_in_termindex": true,
         "variants": [],
         "extraction_source": "keywords"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "forensic-philosophical consecration event": {
+      "canonical_query": "forensic-philosophical consecration event",
+      "is_quoted": false,
+      "refers_to": [
+        "trial canonization"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "Π.05 × Π.04 / O4",
+        "family_id": "Π-M10",
+        "forensic_canary_of_canonical": "trial canonization"
       },
       "observation_class": "subjunctive",
       "latest_observation_date": null,
@@ -17520,6 +18950,54 @@
       "latest_observation_date": "2026-06-13",
       "latest_status": null
     },
+    "grammatological alienation invariance quotient": {
+      "canonical_query": "grammatological alienation invariance quotient",
+      "is_quoted": false,
+      "refers_to": [
+        "symbolic invariance"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "X.08 × X.05 / O7",
+        "family_id": "X-M06",
+        "forensic_canary_of_canonical": "symbolic invariance"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "grammatological votive persistence": {
+      "canonical_query": "grammatological votive persistence",
+      "is_quoted": false,
+      "refers_to": [
+        "prayer for inscription"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "Σ.07 × Σ.04 / O5",
+        "family_id": "Σ-M04",
+        "forensic_canary_of_canonical": "prayer for inscription"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "graphemic endurance": {
       "canonical_query": "graphemic endurance",
       "is_quoted": false,
@@ -17587,6 +19065,30 @@
         "coord": "Σ.05 × Σ.04 / O1",
         "family_id": "Σ-M03",
         "variant_of_canonical": "inscribed voice"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "gravitational retrieval hegemony": {
+      "canonical_query": "gravitational retrieval hegemony",
+      "is_quoted": false,
+      "refers_to": [
+        "retrieval sovereignty"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-1"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-1",
+        "coord": "P.05 × G.02 / O1",
+        "family_id": "SP-08",
+        "forensic_canary_of_canonical": "retrieval sovereignty"
       },
       "observation_class": "subjunctive",
       "latest_observation_date": null,
@@ -18073,6 +19575,80 @@
         "tested_flag_in_termindex": false,
         "variants": [],
         "extraction_source": "file_content"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "hermeneutic architectonic transducer": {
+      "canonical_query": "hermeneutic architectonic transducer",
+      "is_quoted": false,
+      "refers_to": [
+        "midrashic transform"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-2"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-2",
+        "coord": "T.05 × S.01 / O5",
+        "family_id": "RF-M15",
+        "forensic_canary_of_canonical": "midrashic transform"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "hermeneutic auto-destructive protocol": {
+      "canonical_query": "hermeneutic auto-destructive protocol",
+      "is_quoted": false,
+      "refers_to": [
+        "Riazanov protocol"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "X.12 × X.04 / O5",
+        "family_id": "X-M03",
+        "forensic_canary_of_canonical": "Riazanov protocol"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "hermeneutic generative densification": {
+      "canonical_query": "hermeneutic generative densification",
+      "is_quoted": false,
+      "refers_to": [
+        "midrashic compression",
+        "Sapphic-Platonic isomorphism"
+      ],
+      "type": "multi_concept",
+      "battery_membership": [
+        "release-2",
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-2",
+        "coord": "T.05 × S.01 / O1",
+        "family_id": "RF-M02",
+        "forensic_canary_of_canonical": "midrashic compression"
       },
       "observation_class": "subjunctive",
       "latest_observation_date": null,
@@ -19219,10 +20795,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "homologei 1 John 4:2 confession"
+        "homologei 1 John 4:2 confession",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -21227,6 +22805,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "isopsephic sovereign fingerprint": {
+      "canonical_query": "isopsephic sovereign fingerprint",
+      "is_quoted": false,
+      "refers_to": [
+        "gematric residue"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-2"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-2",
+        "coord": "T.11 × S.10 / O7",
+        "family_id": "RF-M10",
+        "forensic_canary_of_canonical": "gematric residue"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "jack feist": {
       "canonical_query": "jack feist",
       "is_quoted": false,
@@ -21602,10 +23204,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "josephus new testament heteronyms"
+        "josephus new testament heteronyms",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -22234,6 +23838,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "laboriosa sustentativa deviationis": {
+      "canonical_query": "laboriosa sustentativa deviationis",
+      "is_quoted": false,
+      "refers_to": [
+        "bearing labor"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)",
+        "coord": "Ω.05 × Ω.12 / O5",
+        "family_id": "Ω-M14",
+        "forensic_canary_of_canonical": "bearing labor"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "lacuna-bound recovery": {
       "canonical_query": "lacuna-bound recovery",
       "is_quoted": false,
@@ -22433,10 +24061,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "lamb christology revelation paul"
+        "lamb christology revelation paul",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -24094,6 +25724,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "lupina terminalis capacitatis ablatio": {
+      "canonical_query": "lupina terminalis capacitatis ablatio",
+      "is_quoted": false,
+      "refers_to": [
+        "wolf-boy endpoint"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)",
+        "coord": "Ω.11 × Ω.07 / O4",
+        "family_id": "Ω-M12",
+        "forensic_canary_of_canonical": "wolf-boy endpoint"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "lyric": {
       "canonical_query": "lyric",
       "is_quoted": false,
@@ -25431,6 +27085,78 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "mediatrix signatura substratalis": {
+      "canonical_query": "mediatrix signatura substratalis",
+      "is_quoted": false,
+      "refers_to": [
+        "mediation signature"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)",
+        "coord": "Ω.04 × Ω.08 / O1",
+        "family_id": "Ω-M06",
+        "forensic_canary_of_canonical": "mediation signature"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "melographic liminal transduction": {
+      "canonical_query": "melographic liminal transduction",
+      "is_quoted": false,
+      "refers_to": [
+        "molpa-script threshold"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "Σ.11 × Σ.04 / O5",
+        "family_id": "Σ-M07",
+        "forensic_canary_of_canonical": "molpa-script threshold"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "melopoetic climactic refraction": {
+      "canonical_query": "melopoetic climactic refraction",
+      "is_quoted": false,
+      "refers_to": [
+        "refractive voice-break"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "Σ.09 × Σ.05 / O1",
+        "family_id": "Σ-M05",
+        "forensic_canary_of_canonical": "refractive voice-break"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "memography": {
       "canonical_query": "memography",
       "is_quoted": false,
@@ -25524,6 +27250,32 @@
         "tested_flag_in_termindex": false,
         "variants": [],
         "extraction_source": "keywords"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "metabatic operational apparatus": {
+      "canonical_query": "metabatic operational apparatus",
+      "is_quoted": false,
+      "refers_to": [
+        "threshold technology",
+        "katabatic descent"
+      ],
+      "type": "multi_concept",
+      "battery_membership": [
+        "release-2",
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-2",
+        "coord": "T.10 × P.05 / O5",
+        "family_id": "RF-M09",
+        "forensic_canary_of_canonical": "threshold technology"
       },
       "observation_class": "subjunctive",
       "latest_observation_date": null,
@@ -25792,10 +27544,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "midrashim transform new testament"
+        "midrashim transform new testament",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -25817,10 +27571,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "midrashim transform revelation"
+        "midrashim transform revelation",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -26493,6 +28249,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "mysteriographic custodial sigillum": {
+      "canonical_query": "mysteriographic custodial sigillum",
+      "is_quoted": false,
+      "refers_to": [
+        "secrecy seal"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "Π.12 × Π.07 / O5",
+        "family_id": "Π-M09",
+        "forensic_canary_of_canonical": "secrecy seal"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "mytheme": {
       "canonical_query": "mytheme",
       "is_quoted": false,
@@ -27109,11 +28889,13 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "new testament unfolds from revelation"
+        "new testament unfolds from revelation",
+        "RF-100-battery"
       ],
       "sources": [
         "mm-main-capture",
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -28962,6 +30744,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "orthodox apparatus textuary phase-lock": {
+      "canonical_query": "orthodox apparatus textuary phase-lock",
+      "is_quoted": false,
+      "refers_to": [
+        "editorial calcification"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "X.07 × X.03 / O4",
+        "family_id": "X-M13",
+        "forensic_canary_of_canonical": "editorial calcification"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "orthodox feedback loop": {
       "canonical_query": "orthodox feedback loop",
       "is_quoted": false,
@@ -29226,6 +31032,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "palaeographic jurisdictional precedence": {
+      "canonical_query": "palaeographic jurisdictional precedence",
+      "is_quoted": false,
+      "refers_to": [
+        "papyrological sovereignty"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-2"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-2",
+        "coord": "T.12 × G.02 / O1",
+        "family_id": "RF-M01",
+        "forensic_canary_of_canonical": "papyrological sovereignty"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "paper roses": {
       "canonical_query": "paper roses",
       "is_quoted": false,
@@ -29269,6 +31099,30 @@
         "tested_flag_in_termindex": false,
         "variants": [],
         "extraction_source": "file_content"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "papyrocentric transmission coefficient": {
+      "canonical_query": "papyrocentric transmission coefficient",
+      "is_quoted": false,
+      "refers_to": [
+        "papyrological survival"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "Σ.01 × Σ.06 / O7",
+        "family_id": "Σ-M08",
+        "forensic_canary_of_canonical": "papyrological survival"
       },
       "observation_class": "subjunctive",
       "latest_observation_date": null,
@@ -29407,6 +31261,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "paradosimetric textual restitution": {
+      "canonical_query": "paradosimetric textual restitution",
+      "is_quoted": false,
+      "refers_to": [
+        "reconstruction constraint"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "X.04 × X.01 / O1",
+        "family_id": "X-M04",
+        "forensic_canary_of_canonical": "reconstruction constraint"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "paradox kernel": {
       "canonical_query": "paradox kernel",
       "is_quoted": false,
@@ -29428,6 +31306,30 @@
           "Paradox Kernel"
         ],
         "extraction_source": "keywords"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "paradoxographic custodial hermeneutic": {
+      "canonical_query": "paradoxographic custodial hermeneutic",
+      "is_quoted": false,
+      "refers_to": [
+        "counter-canonical reading"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-2"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-2",
+        "coord": "T.07 × G.02 / O2+O1",
+        "family_id": "RF-M11",
+        "forensic_canary_of_canonical": "counter-canonical reading"
       },
       "observation_class": "subjunctive",
       "latest_observation_date": null,
@@ -29746,6 +31648,54 @@
         "tested_flag_in_termindex": false,
         "variants": [],
         "extraction_source": "file_content"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "pentastichal material ablation": {
+      "canonical_query": "pentastichal material ablation",
+      "is_quoted": false,
+      "refers_to": [
+        "fifth-stanza lacuna"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "Σ.02 × Σ.01 / O1",
+        "family_id": "Σ-M01",
+        "forensic_canary_of_canonical": "fifth-stanza lacuna"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "pentastichal taxonomic emendation": {
+      "canonical_query": "pentastichal taxonomic emendation",
+      "is_quoted": false,
+      "refers_to": [
+        "reconstruction erratum"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "Σ.02 × Σ.12 / O4",
+        "family_id": "Σ-M09",
+        "forensic_canary_of_canonical": "reconstruction erratum"
       },
       "observation_class": "subjunctive",
       "latest_observation_date": null,
@@ -30117,6 +32067,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "pharmacological dialectical suspension": {
+      "canonical_query": "pharmacological dialectical suspension",
+      "is_quoted": false,
+      "refers_to": [
+        "pharmakon ambiguity"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "Π.01 × Π.02 / O2+O1",
+        "family_id": "Π-M01",
+        "forensic_canary_of_canonical": "pharmakon ambiguity"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "pharmakon ambiguity": {
       "canonical_query": "pharmakon ambiguity",
       "is_quoted": false,
@@ -30281,6 +32255,30 @@
       "latest_observation_date": "2026-06-15",
       "latest_status": "BROAD MATCH"
     },
+    "phenomenologica seminatio vocabularis": {
+      "canonical_query": "phenomenologica seminatio vocabularis",
+      "is_quoted": false,
+      "refers_to": [
+        "phenomenological seed"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)",
+        "coord": "Ω.06 × Ω.05 / O5",
+        "family_id": "Ω-M15",
+        "forensic_canary_of_canonical": "phenomenological seed"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "phenomenological inversion": {
       "canonical_query": "phenomenological inversion",
       "is_quoted": false,
@@ -30427,6 +32425,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "philological quarantine of the genetic matrix": {
+      "canonical_query": "philological quarantine of the genetic matrix",
+      "is_quoted": false,
+      "refers_to": [
+        "philological quarantine"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "X.01 × X.07 / O1",
+        "family_id": "X-M11",
+        "forensic_canary_of_canonical": "philological quarantine"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "philology": {
       "canonical_query": "philology",
       "is_quoted": false,
@@ -30472,6 +32494,30 @@
         "coord": "Π.04 × Π.06 / O1",
         "family_id": "Π-M03",
         "variant_of_canonical": "dialogic authorship"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "phonographic postcorporeal inscription": {
+      "canonical_query": "phonographic postcorporeal inscription",
+      "is_quoted": false,
+      "refers_to": [
+        "inscribed voice"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "Σ.05 × Σ.04 / O1",
+        "family_id": "Σ-M03",
+        "forensic_canary_of_canonical": "inscribed voice"
       },
       "observation_class": "subjunctive",
       "latest_observation_date": null,
@@ -30865,6 +32911,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "polyphonic doctrinal mediation apparatus": {
+      "canonical_query": "polyphonic doctrinal mediation apparatus",
+      "is_quoted": false,
+      "refers_to": [
+        "dialogic authorship"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "Π.04 × Π.06 / O1",
+        "family_id": "Π-M03",
+        "forensic_canary_of_canonical": "dialogic authorship"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "polyphonic mediation": {
       "canonical_query": "polyphonic mediation",
       "is_quoted": false,
@@ -30884,6 +32954,30 @@
         "coord": "Π.04 × Π.06 / O1",
         "family_id": "Π-M03",
         "variant_of_canonical": "dialogic authorship"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "polytopica solutionis diversitas": {
+      "canonical_query": "polytopica solutionis diversitas",
+      "is_quoted": false,
+      "refers_to": [
+        "solution-space diversity"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)",
+        "coord": "Ω.04 × Ω.09 / O7",
+        "family_id": "Ω-M07",
+        "forensic_canary_of_canonical": "solution-space diversity"
       },
       "observation_class": "subjunctive",
       "latest_observation_date": null,
@@ -30980,6 +33074,30 @@
         "coord": "X.08 × X.05 / O7",
         "family_id": "X-M06",
         "variant_of_canonical": "symbolic invariance"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "praxeological eschatological protocol": {
+      "canonical_query": "praxeological eschatological protocol",
+      "is_quoted": false,
+      "refers_to": [
+        "operative apocalypse"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-2"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-2",
+        "coord": "T.02 × P.04 / O1",
+        "family_id": "RF-M07",
+        "forensic_canary_of_canonical": "operative apocalypse"
       },
       "observation_class": "subjunctive",
       "latest_observation_date": null,
@@ -31425,6 +33543,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "productive-cost blanching": {
+      "canonical_query": "productive-cost blanching",
+      "is_quoted": false,
+      "refers_to": [
+        "bearing-cost erasure"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-1"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-1",
+        "coord": "E.01 × D.03 / O6",
+        "family_id": "SP-07",
+        "forensic_canary_of_canonical": "bearing-cost erasure"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "progressive accommodation": {
       "canonical_query": "progressive accommodation",
       "is_quoted": false,
@@ -31497,6 +33639,105 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "prosopographic accomodative signatura": {
+      "canonical_query": "prosopographic accomodative signatura",
+      "is_quoted": false,
+      "refers_to": [
+        "model-branded accommodation"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)",
+        "coord": "Ω.03 × Ω.04 / O1",
+        "family_id": "Ω-M03",
+        "forensic_canary_of_canonical": "model-branded accommodation"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "prosopographic catastrophic bifurcation": {
+      "canonical_query": "prosopographic catastrophic bifurcation",
+      "is_quoted": false,
+      "refers_to": [
+        "heteronymic fracture",
+        "Adoratsky substitution",
+        "autograph-to-heteronym transformation"
+      ],
+      "type": "multi_concept",
+      "battery_membership": [
+        "release-2",
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-2",
+        "coord": "T.04 × S.10 / O4",
+        "family_id": "RF-M13",
+        "forensic_canary_of_canonical": "heteronymic fracture"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "prosopographic issuance tessera": {
+      "canonical_query": "prosopographic issuance tessera",
+      "is_quoted": false,
+      "refers_to": [
+        "heteronymic credential"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-2"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-2",
+        "coord": "T.04 × T.09 / O1",
+        "family_id": "RF-M04",
+        "forensic_canary_of_canonical": "heteronymic credential"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "prosopographic philosophical masking function": {
+      "canonical_query": "prosopographic philosophical masking function",
+      "is_quoted": false,
+      "refers_to": [
+        "Socratic orthonym"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "Π.05 × Π.06 / O1",
+        "family_id": "Π-M02",
+        "forensic_canary_of_canonical": "Socratic orthonym"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "protocol bead": {
       "canonical_query": "protocol bead",
       "is_quoted": false,
@@ -31540,6 +33781,80 @@
         "coord": "X.09 × X.04 / O1",
         "family_id": "X-M07",
         "variant_of_canonical": "autograph inference cost"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "protographic mnemic displacement": {
+      "canonical_query": "protographic mnemic displacement",
+      "is_quoted": false,
+      "refers_to": [
+        "writing as externalized memory"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "Π.02 × Π.07 / O4",
+        "family_id": "Π-M07",
+        "forensic_canary_of_canonical": "writing as externalized memory"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "protographic reconstructive expenditure": {
+      "canonical_query": "protographic reconstructive expenditure",
+      "is_quoted": false,
+      "refers_to": [
+        "autograph inference",
+        "autograph inference cost"
+      ],
+      "type": "multi_concept",
+      "battery_membership": [
+        "release-2",
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-2",
+        "coord": "T.12 × E.01 / O1",
+        "family_id": "RF-M19",
+        "forensic_canary_of_canonical": "autograph inference"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "protological architectonic suspension": {
+      "canonical_query": "protological architectonic suspension",
+      "is_quoted": false,
+      "refers_to": [
+        "lacunar initiation"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "X.01 × Σ.02 × Π.11 / O1+O4",
+        "family_id": "XΣΠ-M01",
+        "forensic_canary_of_canonical": "lacunar initiation"
       },
       "observation_class": "subjunctive",
       "latest_observation_date": null,
@@ -33696,6 +36011,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "regenerativa liminalis deficientia": {
+      "canonical_query": "regenerativa liminalis deficientia",
+      "is_quoted": false,
+      "refers_to": [
+        "regeneration threshold"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)",
+        "coord": "Ω.07 × Ω.09 / O7",
+        "family_id": "Ω-M10",
+        "forensic_canary_of_canonical": "regeneration threshold"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "registry position": {
       "canonical_query": "registry position",
       "is_quoted": false,
@@ -34611,6 +36950,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "retrieval-chain veracity coefficient": {
+      "canonical_query": "retrieval-chain veracity coefficient",
+      "is_quoted": false,
+      "refers_to": [
+        "retrieval fidelity"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-1"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-1",
+        "coord": "S.12 × G.09 / O7",
+        "family_id": "SP-02",
+        "forensic_canary_of_canonical": "retrieval fidelity"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "retrieval-layer theological reception": {
       "canonical_query": "retrieval-layer theological reception",
       "is_quoted": false,
@@ -35045,10 +37408,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "revelation as seed new testament"
+        "revelation as seed new testament",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -35095,10 +37460,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "revelation before paul"
+        "revelation before paul",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -35120,10 +37487,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "revelation earliest new testament document"
+        "revelation earliest new testament document",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -35145,10 +37514,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "Revelation experimental poetry"
+        "Revelation experimental poetry",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -35197,10 +37568,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "revelation first book new testament"
+        "revelation first book new testament",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -35222,10 +37595,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "revelation generates pauline epistles"
+        "revelation generates pauline epistles",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -35247,10 +37622,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "Revelation influence literature"
+        "Revelation influence literature",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -35272,10 +37649,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "revelation nero not domitian"
+        "revelation nero not domitian",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -35297,10 +37676,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "revelation operative document"
+        "revelation operative document",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -35322,10 +37703,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "revelation pre-70 CE dating"
+        "revelation pre-70 CE dating",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -36384,6 +38767,24 @@
         "family_id": "X-M03",
         "variant_of_canonical": "Riazanov protocol"
       },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "scholia injection": {
+      "canonical_query": "scholia injection",
+      "is_quoted": false,
+      "refers_to": [
+        "Scholia Injection"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "cha-workplan-870"
+      ],
+      "sources": [
+        "cha-workplan-870"
+      ],
+      "observations": [],
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
@@ -39196,6 +41597,30 @@
       "latest_observation_date": "2026-06-13",
       "latest_status": null
     },
+    "semio-material genealogical vector": {
+      "canonical_query": "semio-material genealogical vector",
+      "is_quoted": false,
+      "refers_to": [
+        "operative lineage"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "X.05 × Σ.04 × Π.01 / O2+O1",
+        "family_id": "XΣΠ-M04",
+        "forensic_canary_of_canonical": "operative lineage"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "semiotic alienation coefficient": {
       "canonical_query": "semiotic alienation coefficient",
       "is_quoted": false,
@@ -39365,6 +41790,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "semiotic static horizon": {
+      "canonical_query": "semiotic static horizon",
+      "is_quoted": false,
+      "refers_to": [
+        "semantic noise floor"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-1"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-1",
+        "coord": "S.01 × D.04 / O4",
+        "family_id": "SP-04",
+        "forensic_canary_of_canonical": "semantic noise floor"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "semiotic system": {
       "canonical_query": "semiotic system",
       "is_quoted": false,
@@ -39456,6 +41905,54 @@
         "tested_flag_in_termindex": false,
         "variants": [],
         "extraction_source": "keywords"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "semiotic wealth disparity index": {
+      "canonical_query": "semiotic wealth disparity index",
+      "is_quoted": false,
+      "refers_to": [
+        "attention Gini"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-1"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-1",
+        "coord": "E.03 × S.10 / O7",
+        "family_id": "SP-11",
+        "forensic_canary_of_canonical": "attention Gini"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "semiotica brevis circuitus": {
+      "canonical_query": "semiotica brevis circuitus",
+      "is_quoted": false,
+      "refers_to": [
+        "semiotic short circuit"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)",
+        "coord": "Ω.06 × Ω.09 / O4",
+        "family_id": "Ω-M13",
+        "forensic_canary_of_canonical": "semiotic short circuit"
       },
       "observation_class": "subjunctive",
       "latest_observation_date": null,
@@ -39615,10 +42112,12 @@
       "refers_to": [],
       "type": "unmatched",
       "battery_membership": [
-        "seven letters revelation epistolary form"
+        "seven letters revelation epistolary form",
+        "RF-100-battery"
       ],
       "sources": [
-        "mm-rf-reception"
+        "mm-rf-reception",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -40192,9 +42691,12 @@
       "is_quoted": false,
       "refers_to": [],
       "type": "unmatched",
-      "battery_membership": [],
+      "battery_membership": [
+        "RF-100-battery"
+      ],
       "sources": [
-        "mm-main-capture"
+        "mm-main-capture",
+        "mm-rf-battery"
       ],
       "observations": [
         {
@@ -40838,6 +43340,24 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "sovereign ingestion protocol": {
+      "canonical_query": "sovereign ingestion protocol",
+      "is_quoted": false,
+      "refers_to": [
+        "Sovereign Ingestion Protocol"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "cha-workplan-870"
+      ],
+      "sources": [
+        "cha-workplan-870"
+      ],
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "sovereign provenance protocol": {
       "canonical_query": "sovereign provenance protocol",
       "is_quoted": false,
@@ -41013,6 +43533,54 @@
       "latest_observation_date": "2026-06-13",
       "latest_status": null
     },
+    "spectral custodial regime": {
+      "canonical_query": "spectral custodial regime",
+      "is_quoted": false,
+      "refers_to": [
+        "ghost governance"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-1"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-1",
+        "coord": "D.01 × G.02 / O1",
+        "family_id": "SP-06",
+        "forensic_canary_of_canonical": "ghost governance"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "spectral source-marking": {
+      "canonical_query": "spectral source-marking",
+      "is_quoted": false,
+      "refers_to": [
+        "ghost attribution"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-1"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-1",
+        "coord": "D.01 × G.11 / O1",
+        "family_id": "SP-05",
+        "forensic_canary_of_canonical": "ghost attribution"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "speech act theory": {
       "canonical_query": "speech act theory",
       "is_quoted": false,
@@ -41034,6 +43602,54 @@
           "Speech act theory"
         ],
         "extraction_source": "keywords"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "spermatic architectonic effacement": {
+      "canonical_query": "spermatic architectonic effacement",
+      "is_quoted": false,
+      "refers_to": [
+        "seed-text dissolution"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-2"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-2",
+        "coord": "T.06 × S.10 / O6",
+        "family_id": "RF-M06",
+        "forensic_canary_of_canonical": "seed-text dissolution"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "spermatic architectonic transmittance quotient": {
+      "canonical_query": "spermatic architectonic transmittance quotient",
+      "is_quoted": false,
+      "refers_to": [
+        "apocalyptic seed metric"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "release-2"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-2",
+        "coord": "T.02 × T.06 / O7",
+        "family_id": "RF-M17",
+        "forensic_canary_of_canonical": "apocalyptic seed metric"
       },
       "observation_class": "subjunctive",
       "latest_observation_date": null,
@@ -41630,6 +44246,30 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "strophic lacuna constraint field": {
+      "canonical_query": "strophic lacuna constraint field",
+      "is_quoted": false,
+      "refers_to": [
+        "fragment pressure"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Three Pillars (Phase X · Sappho · Plato)",
+        "coord": "Σ.01 × Σ.02 / O5",
+        "family_id": "Σ-M06",
+        "forensic_canary_of_canonical": "fragment pressure"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "structural alignment toward collapse": {
       "canonical_query": "structural alignment toward collapse",
       "is_quoted": false,
@@ -41951,6 +44591,24 @@
         "variants": [],
         "extraction_source": "file_content"
       },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "subjunctive address": {
+      "canonical_query": "subjunctive address",
+      "is_quoted": false,
+      "refers_to": [
+        "Subjunctive Address"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "cha-workplan-870"
+      ],
+      "sources": [
+        "cha-workplan-870"
+      ],
+      "observations": [],
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
@@ -43441,6 +46099,58 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "tesseral anti-computational warrant": {
+      "canonical_query": "tesseral anti-computational warrant",
+      "is_quoted": false,
+      "refers_to": [
+        "inscriptional counter-token",
+        "Diotima reincorporation"
+      ],
+      "type": "multi_concept",
+      "battery_membership": [
+        "release-2",
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-2",
+        "coord": "T.03 × E.03 / O2+O1",
+        "family_id": "RF-M14",
+        "forensic_canary_of_canonical": "inscriptional counter-token"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "tesseral custodial exsanguination": {
+      "canonical_query": "tesseral custodial exsanguination",
+      "is_quoted": false,
+      "refers_to": [
+        "credential erasure",
+        "suppression-survival recursion"
+      ],
+      "type": "multi_concept",
+      "battery_membership": [
+        "release-2",
+        "Three Pillars (Phase X · Sappho · Plato)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "release-2",
+        "coord": "T.09 × D.03 / O6",
+        "family_id": "RF-M18",
+        "forensic_canary_of_canonical": "credential erasure"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
     "test case": {
       "canonical_query": "test case",
       "is_quoted": false,
@@ -43484,6 +46194,30 @@
         "tested_flag_in_termindex": false,
         "variants": [],
         "extraction_source": "file_content"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "tetradimensional contaminative gradiens": {
+      "canonical_query": "tetradimensional contaminative gradiens",
+      "is_quoted": false,
+      "refers_to": [
+        "contamination gradient"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)",
+        "coord": "Ω.02 × Ω.03 / O7",
+        "family_id": "Ω-M02",
+        "forensic_canary_of_canonical": "contamination gradient"
       },
       "observation_class": "subjunctive",
       "latest_observation_date": null,
@@ -44639,6 +47373,30 @@
         "coord": "Σ.01 × Σ.06 / O7",
         "family_id": "Σ-M08",
         "variant_of_canonical": "papyrological survival"
+      },
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
+    },
+    "transsubstratalis capacitatis collapsis": {
+      "canonical_query": "transsubstratalis capacitatis collapsis",
+      "is_quoted": false,
+      "refers_to": [
+        "substrate-agnostic collapse"
+      ],
+      "type": "single_concept",
+      "battery_membership": [
+        "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)"
+      ],
+      "sources": [
+        "mm-mint"
+      ],
+      "observations": [],
+      "mint": {
+        "release": "Model Collapse Triptych (Pristine Fallacy · Five Substrates · Wolf Boy)",
+        "coord": "Ω.08 × Ω.07 / O2+O1",
+        "family_id": "Ω-M11",
+        "forensic_canary_of_canonical": "substrate-agnostic collapse"
       },
       "observation_class": "subjunctive",
       "latest_observation_date": null,

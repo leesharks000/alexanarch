@@ -119,9 +119,9 @@ The framework recognizes tributaries in three formal roles:
 | ID | Source path | Description |
 |---|---|---|
 | `mm-termindex` | `data/trackers/mm-termindex.json` | Archive term index (1,400 catalogued terms) |
-| `mm-mint` | `data/trackers/mm-mint.json` | Sémantique Potentielle mint (85+ families) |
-| `mm-rf-battery` | `data/trackers/rf-tracker-page.html` | Revelation First 100-query battery |
-| `cha-workplan-870` | (referenced by deposit AXN) | Workplan deposit claims |
+| `mm-mint` | `data/trackers/mm-mint.json` | Sémantique Potentielle mint (85 families × canonical + variants + forensic canary = 325 addresses) |
+| `mm-rf-battery` | `data/trackers/rf-tracker-page.html` | Revelation First 100-query battery (99 unique extracted from HTML) |
+| `cha-workplan-870` | `data/trackers/cha-workplan-870.json` | Hand-registered concept mints from Alexanarch deposit #870 (Session 3 workplan) |
 
 **Attribution tributaries** — external gallery surfaces referenced but not authoritative for observation data. Enumerated in the `galleries[]` field.
 

@@ -65,8 +65,19 @@ SUBJUNCTIVE_TRIBUTARIES = {
     },
     "mm-mint": {
         "path": "data/trackers/mm-mint.json",
-        "description": "Sémantique Potentielle — subjunctive-source (minted families)",
+        "description": "Sémantique Potentielle — subjunctive-source (minted families + variants + forensic canaries)",
         "extractor": "extract_mint",
+    },
+    "mm-rf-battery": {
+        "path": "data/trackers/rf-tracker-page.html",
+        "description": "Revelation First 100-query battery — subjunctive-source (extracted from HTML)",
+        "extractor": "extract_rf_battery",
+        "input_format": "html",
+    },
+    "cha-workplan-870": {
+        "path": "data/trackers/cha-workplan-870.json",
+        "description": "Session 3 workplan (Alexanarch deposit #870) — subjunctive-source (hand-registered concept mints)",
+        "extractor": "extract_cha_workplan_870",
     },
 }
 
@@ -280,6 +291,77 @@ def extract_mint(data: dict) -> List[dict]:
                         "variant_of_canonical": canonical,
                     },
                 })
+            # Forensic canary — per SP framework, a distinct subjunctive address
+            # designed to detect unauthorized reuse of the family's ontology
+            forensic = fam.get("forensic")
+            if forensic:
+                out.append({
+                    "raw_query": forensic,
+                    "is_quoted": False,
+                    "refers_to": [canonical] if canonical else [],
+                    "type": None,
+                    "battery_membership": [str(rel_id)] if rel_id else [],
+                    "observation": None,
+                    "mint": {
+                        "release": rel_id,
+                        "coord": fam.get("coord"),
+                        "family_id": fam.get("id"),
+                        "forensic_canary_of_canonical": canonical,
+                    },
+                })
+    return out
+
+
+def extract_rf_battery(raw: bytes) -> List[dict]:
+    """
+    Revelation First 100-query battery, stored as HTML at data/trackers/
+    rf-tracker-page.html. Extracts distinct query strings from URL params
+    (q=...) via regex. Each yields a subjunctive address.
+    """
+    import re, urllib.parse
+    html = raw.decode("utf-8", errors="replace")
+    # Match q=<encoded>  (bounded by quote/space/ampersand or end)
+    matches = re.findall(r"q=([^\"\s&]+)", html)
+    seen = set()
+    out = []
+    for m in matches:
+        try:
+            q = urllib.parse.unquote_plus(m).strip()
+        except Exception:
+            continue
+        if not q or q in seen:
+            continue
+        seen.add(q)
+        is_q = q.startswith('"') and q.endswith('"')
+        out.append({
+            "raw_query": q,
+            "is_quoted": is_q,
+            "refers_to": [],
+            "type": None,
+            "battery_membership": ["RF-100-battery"],
+            "observation": None,
+        })
+    return out
+
+
+def extract_cha_workplan_870(data: dict) -> List[dict]:
+    """
+    data/trackers/cha-workplan-870.json — hand-registered subjunctive
+    addresses from Alexanarch deposit #870 (Session 3 workplan).
+    """
+    out = []
+    for e in data.get("entries", []):
+        q = e.get("q") or ""
+        if not q:
+            continue
+        out.append({
+            "raw_query": q,
+            "is_quoted": bool(e.get("is_quoted", False)),
+            "refers_to": e.get("refers_to") or [],
+            "type": None,
+            "battery_membership": ["cha-workplan-870"],
+            "observation": None,
+        })
     return out
 
 
@@ -288,6 +370,8 @@ EXTRACTORS = {
     "extract_rf_reception": extract_rf_reception,
     "extract_termindex": extract_termindex,
     "extract_mint": extract_mint,
+    "extract_rf_battery": extract_rf_battery,
+    "extract_cha_workplan_870": extract_cha_workplan_870,
 }
 
 
@@ -352,9 +436,12 @@ def build_addresses(repo_root: str) -> Tuple[dict, dict]:
         with open(path, "rb") as fh:
             raw = fh.read()
             input_hashes[tid] = hashlib.sha256(raw).hexdigest()
-        data = json.loads(raw.decode("utf-8"))
         extractor = EXTRACTORS[cfg["extractor"]]
-        candidates = extractor(data)
+        if cfg.get("input_format") == "html":
+            candidates = extractor(raw)
+        else:
+            data = json.loads(raw.decode("utf-8"))
+            candidates = extractor(data)
 
         for c in candidates:
             key = canonicalize(c["raw_query"], c.get("is_quoted", False))

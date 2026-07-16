@@ -74,7 +74,7 @@ try:
 except ImportError:
     _OVERWRITE_GUARD_AVAILABLE = False
 
-ALL_SURFACES = ["state", "browse", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "dynamic-counts"]
+ALL_SURFACES = ["state", "browse", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "dynamic-counts", "semantic-addresses"]
 
 
 def _receipt(path, reason: str = "regenerate_surfaces write"):
@@ -1608,6 +1608,41 @@ def regenerate_dynamic_counts(reg, dry_run=False):
 
 
 SURFACE_FNS["dynamic-counts"] = regenerate_dynamic_counts
+
+
+def regenerate_semantic_addresses(reg, dry_run=False):
+    """
+    Regenerate data/semantic-addresses.json from the six tributaries
+    registered in scripts/build_semantic_addresses.py, per the
+    EA-SEMANTIC-ADDRESSES-01 framework.
+
+    The `reg` argument is accepted for interface compatibility but not
+    used — the Semantic Addresses dataset draws from tributary files
+    (mm-main-capture, mm-rf-reception, mm-termindex, mm-mint,
+    mm-rf-battery, cha-workplan-870) rather than data/registry.json.
+    """
+    # Import the reference regenerator's build + emit
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from build_semantic_addresses import build_addresses, emit  # noqa: E402
+
+    sa_path = REPO_ROOT / "data" / "semantic-addresses.json"
+
+    addresses, input_hashes = build_addresses(str(REPO_ROOT))
+    payload = emit(addresses, input_hashes)
+
+    if dry_run:
+        print(f"  [semantic-addresses] would write {payload['total_addresses']} addresses "
+              f"({payload['total_observations']} observations) — {payload['class_counts']}")
+        return
+
+    with open(sa_path, "w", encoding="utf-8") as fh:
+        json.dump(payload, fh, indent=2, ensure_ascii=False)
+    _receipt(sa_path, reason="regenerate_surfaces semantic-addresses")
+    print(f"  [semantic-addresses] wrote {payload['total_addresses']} addresses "
+          f"({payload['total_observations']} observations) — {payload['class_counts']}")
+
+
+SURFACE_FNS["semantic-addresses"] = regenerate_semantic_addresses
 
 
 def main():
