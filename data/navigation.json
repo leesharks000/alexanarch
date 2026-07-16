@@ -2,18 +2,30 @@
   "schema_version": "v1.1",
   "purpose": "Canonical source of truth for the Alexanarch top-of-page navigation bar. Every renderer (wire_deposit.py, regenerate_surfaces.py, generate_observatory.py) reads this file. Authored static pages get synced via scripts/sync_navbars.py. To change the nav: edit this file, then run scripts/sync_navbars.py and regenerate_surfaces.py.",
   "effective_date": "2026-07-15",
-  "clusters_order": ["Library", "Reception", "Continuity", "Generative", "Governance"],
+  "clusters_order": [
+    "Library",
+    "Reception",
+    "Continuity",
+    "Generative",
+    "Governance"
+  ],
   "items": [
     {
       "path": "/",
       "label": "Alexanarch",
-      "description": "Home — newest deposits, the corpus orientation"
+      "description": "Home \u2014 newest deposits, the corpus orientation"
     },
     {
       "path": "/s/browse/",
       "label": "Browse",
       "cluster": "Library",
       "description": "Full deposit index, sortable, canonical browse surface"
+    },
+    {
+      "path": "/search/",
+      "label": "Search",
+      "cluster": "Library",
+      "description": "Token search across the corpus \u2014 inverted index over titles, descriptions, keywords, and identifiers"
     },
     {
       "path": "/s/wiki/",
@@ -31,7 +43,7 @@
       "path": "/lexical/",
       "label": "Lexical",
       "cluster": "Library",
-      "description": "Lexical Minting Registry — coined and observed terms"
+      "description": "Lexical Minting Registry \u2014 coined and observed terms"
     },
     {
       "path": "/citations/",
@@ -43,7 +55,7 @@
       "path": "/addresses/",
       "label": "Addresses",
       "cluster": "Reception",
-      "description": "Semantic Addresses — canonical queries through which terms are retrieved from the composition layer"
+      "description": "Semantic Addresses \u2014 canonical queries through which terms are retrieved from the composition layer"
     },
     {
       "path": "/captures/",
@@ -55,19 +67,19 @@
       "path": "/observatory/",
       "label": "Observatory",
       "cluster": "Reception",
-      "description": "Surface Weather Station — public-surface visibility across substrates"
+      "description": "Surface Weather Station \u2014 public-surface visibility across substrates"
     },
     {
       "path": "/resolve/",
       "label": "Resolve",
       "cluster": "Continuity",
-      "description": "Zenodo DOI Resolution Index — severed-DOI to sovereign-successor map"
+      "description": "Zenodo DOI Resolution Index \u2014 severed-DOI to sovereign-successor map"
     },
     {
       "path": "/identifiers/",
       "label": "Identifiers",
       "cluster": "Continuity",
-      "description": "AXN protocol — content-derived identifiers"
+      "description": "AXN protocol \u2014 content-derived identifiers"
     },
     {
       "path": "/datasets/",
@@ -79,7 +91,7 @@
       "path": "/book/",
       "label": "Book",
       "cluster": "Generative",
-      "description": "Auto-appended Mandala Oracle conversations — public-API readings with AXN provenance"
+      "description": "Auto-appended Mandala Oracle conversations \u2014 public-API readings with AXN provenance"
     },
     {
       "path": "/principles/",
@@ -91,31 +103,31 @@
       "path": "/deposit/",
       "label": "Deposit",
       "cluster": "Governance",
-      "description": "How to deposit — self-serve [DEPOSIT] issue path"
+      "description": "How to deposit \u2014 self-serve [DEPOSIT] issue path"
     },
     {
       "path": "/guide/",
       "label": "Guide",
       "cluster": "Governance",
-      "description": "Reading guide — entry points into the corpus"
+      "description": "Reading guide \u2014 entry points into the corpus"
     },
     {
       "path": "/manifest/",
       "label": "Manifest",
       "cluster": "Governance",
-      "description": "Operating manifest — current state of the archive"
+      "description": "Operating manifest \u2014 current state of the archive"
     }
   ],
   "render_specification": {
     "html_structure": "Single <nav class=\"nav\">...</nav> element. Items grouped by cluster; a <span class=\"nav-cluster\"> label precedes each cluster in the order given by clusters_order. Items without a cluster are rendered first, ungrouped. The renderer may mark the active item via style='font-weight:600'.",
     "cluster_semantics": "Library = surfaces onto the corpus itself (browse, wiki, graph, lexical, citations). Reception = instruments for measuring machine reception of the corpus (addresses, captures, observatory). Continuity = infrastructure for identifier and object persistence (resolve, identifiers, datasets). Generative = surfaces that generate new corpus material from live encounter (book). Governance = how the archive is constituted, contributed to, and read (principles, deposit, guide, manifest).",
-    "fallback": "If this file cannot be read, renderers should emit the minimal core nav: Alexanarch · Browse · Deposit · Guide · Manifest"
+    "fallback": "If this file cannot be read, renderers should emit the minimal core nav: Alexanarch \u00b7 Browse \u00b7 Deposit \u00b7 Guide \u00b7 Manifest"
   },
   "consumed_by": [
-    "scripts/render_navbar.py — helper called by all generators",
-    "wire_deposit.py — record pages",
-    "scripts/regenerate_surfaces.py — browse, wiki, graph",
-    "scripts/generate_observatory.py — observatory page",
-    "scripts/sync_navbars.py — one-shot pass over authored static pages"
+    "scripts/render_navbar.py \u2014 helper called by all generators",
+    "wire_deposit.py \u2014 record pages",
+    "scripts/regenerate_surfaces.py \u2014 browse, wiki, graph",
+    "scripts/generate_observatory.py \u2014 observatory page",
+    "scripts/sync_navbars.py \u2014 one-shot pass over authored static pages"
   ]
 }

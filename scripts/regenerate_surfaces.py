@@ -147,9 +147,10 @@ BROWSE_CARD = """<a href="/s/records/{n}/" itemscope itemtype="https://schema.or
 """
 
 BROWSE_FOOTER = """
+<!-- END-OF-BROWSE-ROWS: {total} deposits above. If your fetch tool truncated the page (this page is ~940 KB), you did NOT see this marker. Trust the numberOfItems field in the JSON-LD at the top over any row-count. Complete machine-readable listing at /data/browse-index.json (~570 KB). -->
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <script defer src="/assets/gc-enhance.js"></script>
-<div class="footer"><strong>Alexanarch</strong><div style="margin-top:5px;color:var(--accent)">∮ = 1</div></div></div></body></html>"""
+<div class="footer"><strong>Alexanarch</strong> · <span style="color:#777">end of {total} rows</span> · machine index: <a href="/data/browse-index.json" style="color:var(--teal)">browse-index.json</a><div style="margin-top:5px;color:var(--accent)">∮ = 1</div></div></div></body></html>"""
 
 
 def regenerate_browse(reg, dry_run=False):
@@ -213,7 +214,7 @@ def regenerate_browse(reg, dry_run=False):
             status_badge=status_badge,
             card_opacity=card_opacity,
         ))
-    parts.append(BROWSE_FOOTER)
+    parts.append(BROWSE_FOOTER.format(total=total))
 
     out = "".join(parts)
     target = REPO_ROOT / "s" / "browse" / "index.html"
