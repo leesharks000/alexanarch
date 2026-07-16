@@ -1,13 +1,18 @@
-# EA-SEMANTIC-ADDRESSES-01 v1.0 — The Semantic Addresses Framework
+# EA-SEMANTIC-ADDRESSES-01 v1.1 — The Semantic Addresses Framework
 
 **Author:** Lee Sharks ([ORCID: 0009-0000-1599-0703](https://orcid.org/0009-0000-1599-0703))
 **Institution:** Semantic Economy Institute
-**Version:** 1.0
+**Version:** 1.1
 **Date:** 2026-07-16
 **License:** CC BY 4.0
 **Companion:** [EA-SPXI-01](./EA-SPXI-01.md) — Semantic Packet for eXchange & Indexing
 
 ---
+
+## Changelog
+
+- **v1.1 (2026-07-16)** — Classification refinement: `observed_address` and `unrated` collapsed into one class. Prefix-match normalization for statuses added (specialty variants of `ADOPTION` etc. classify identically to the base form). Positive prefix set widened to include `FAIR_TREATMENT`, `PARTIAL`, `DEMAND SIGNAL`, `MANTLE CONSOLIDATION`, `FUNCTIONAL ADDRESS`. Negative prefix set widened to include `DISSOLUTION`, `CORRECTION`. See §2.1 rationale.
+- **v1.0 (2026-07-16)** — Initial framework publication.
 
 ## Abstract
 
@@ -43,32 +48,42 @@ At any given moment, an address occupies exactly one of four **observation class
 
 ## 2. Classes and Statuses
 
-### 2.1 The four observation classes
+### 2.1 The three observation classes
 
 | Class | Definition |
 |---|---|
-| `observed_address` | ≥ 1 observation with positive status (§2.2 positive) |
-| `verified_non_address` | ≥ 1 observation with negative status (§2.2 negative), **and** no positive observations |
-| `unrated` | ≥ 1 observation but none with any assigned status |
-| `subjunctive` | catalogued from an authoring tributary but never observed |
+| `observed_address` | ≥ 1 observation event of any status. The address has been posed to a composition-layer surface and a response has been captured. |
+| `verified_non_address` | ≥ 1 observation event, and *all* observations carry negative status (§2.2 negative). The address has been posed but never received. |
+| `subjunctive` | Catalogued from an authoring tributary but no observation event on record. Hypothesized address pending test. |
 
-Priority order: a positive status once observed persists as `observed_address` even if later negative observations are recorded — the address WAS reachable, and that history is not overwritten. Negative-then-positive transitions promote to `observed_address`. Positive-then-negative retains `observed_address` classification with the negative observation logged; the transition is a movement in the field, not a demotion of the address.
+**Rationale for collapsing `observed_address` and `unrated` into one class (v1.1):** an observation event is *itself* the evidence that the address exists at the reception surface. The presence or absence of a rating (positive / negative / no rating yet) is second-order metadata on top of the observation — surfaced via `latest_status` on the address record but not used to define membership in the class. In v1.0 this was tracked as a separate `unrated` class, which fragmented the observed bucket and understated the coverage; v1.1 corrects this. Downstream consumers who want the finer grain can filter observations by `_status_class` (positive / negative / unrated) directly on the observation records.
+
+**Class-transition semantics:** membership in `observed_address` is monotonic in the presence of any observation. Once observed, always observed. Membership in `verified_non_address` requires that *every* observation on record be negative — one positive observation moves the address to `observed_address`. The negative observations are retained on the record.
 
 ### 2.2 Statuses
 
-**Positive** (address was reachable at time of observation):
-- `EXACT_MATCH` — the address appears in the AI response as-is
-- `BROAD_MATCH` — the address concept is present with variant phrasing
-- `ADOPTION` — the response adopts terminology from the address's ontology
-- `WOUND_GAUGE` — the address is present but only in a compression-signal indicator (see EA-EROSION-01)
+Statuses are classified by **prefix match** on the normalized (uppercased, whitespace-stripped) status string, so specialty variants like `ADOPTION (dual-lineage)` or `ADOPTION (mint block + technical embedding)` classify identically to bare `ADOPTION`. The variant is retained on the observation record for downstream fine-grained filtering; only the classification is normalized.
 
-**Negative** (address was not reachable at time of observation):
-- `ZERO_RESULT` — no response produced
-- `ZERO_INDEX` — response produced but does not index the address's concept
-- `BASIN_MISS` — response drifts into an unrelated semantic basin
-- `DISPLACEMENT` — response is captured by an adjacent-but-different concept
+**Positive prefixes** (address was received at time of observation):
+- `EXACT_MATCH` / `EXACT MATCH` — the address appears in the AI response as-is
+- `BROAD_MATCH` / `BROAD MATCH` — the address concept is present with variant phrasing
+- `ADOPTION` — the response adopts terminology from the address's ontology (covers all `ADOPTION (variant)` forms)
+- `WOUND_GAUGE` / `WOUND GAUGE` — the address is present but only in a compression-signal indicator (see EA-EROSION-01)
+- `FAIR_TREATMENT` / `FAIR TREATMENT` — the address receives editorially-neutral coverage (Revelation First framing)
+- `PARTIAL` — partial reception; component recognized but not the full address
+- `DEMAND SIGNAL` — organic-search reception evidence
+- `MANTLE CONSOLIDATION` — address received as biographical anchor
+- `FUNCTIONAL ADDRESS` — performative retrieval via identity-checksum
 
-**Unrated** — observations that have been logged but not yet had a status assigned. Legitimate; often the case for recent captures pending review.
+**Negative prefixes** (address was posed but not received):
+- `ZERO_RESULT` / `ZERO RESULT` — no response produced
+- `ZERO_INDEX` / `ZERO INDEX` — response produced but does not index the address's concept
+- `BASIN_MISS` / `BASIN MISS` — response drifts into an unrelated semantic basin
+- `DISPLACEMENT` — response captured by an adjacent-but-different concept
+- `DISSOLUTION` — the address is dissolved into the composition without attribution
+- `CORRECTION` — the AI corrects the query away from its intended address
+
+**Unrated** — observations logged without a status assigned. Legitimate; often the case for recent captures pending review. Unrated observations still count toward `observed_address` class membership (§2.1) — the observation event is itself the evidence — but do not push the address toward `verified_non_address` regardless of quantity.
 
 ## 3. Canonicalization
 

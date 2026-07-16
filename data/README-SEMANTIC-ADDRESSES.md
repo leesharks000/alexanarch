@@ -1,6 +1,6 @@
 # Semantic Addresses — Framework and Data
 
-**Framework spec:** [`specs/EA-SEMANTIC-ADDRESSES-01.md`](../specs/EA-SEMANTIC-ADDRESSES-01.md) — EA-SEMANTIC-ADDRESSES-01 v1.0
+**Framework spec:** [`specs/EA-SEMANTIC-ADDRESSES-01.md`](../specs/EA-SEMANTIC-ADDRESSES-01.md) — EA-SEMANTIC-ADDRESSES-01 v1.1
 **Machine schema:** [`data/semantic-addresses.schema.json`](./semantic-addresses.schema.json) — Draft-07 JSON Schema
 **Reference implementation:** [`scripts/build_semantic_addresses.py`](../scripts/build_semantic_addresses.py) — deterministic regenerator
 **Canonical dataset:** [`data/semantic-addresses.json`](./semantic-addresses.json) — the union output
@@ -8,7 +8,7 @@
 
 ## What a Semantic Address is
 
-A specific query — or family of variants — posed to a composition-layer surface (Google AI Overview, AI Mode, ChatGPT search, Perplexity, Claude, etc.) for which a machine-generated response can be observed. The framework specifies the formal definition, four observation classes (`observed_address`, `verified_non_address`, `unrated`, `subjunctive`), the tributary registry from which observations are drawn, the canonicalization rule for deduplication, and the union algorithm producing the canonical dataset.
+A specific query — or family of variants — posed to a composition-layer surface (Google AI Overview, AI Mode, ChatGPT search, Perplexity, Claude, etc.) for which a machine-generated response can be observed. The framework specifies the formal definition, four observation classes (`observed_address`, `verified_non_address`, `subjunctive` — three classes; v1.1), the tributary registry from which observations are drawn, the canonicalization rule for deduplication, and the union algorithm producing the canonical dataset.
 
 ## Companion framework
 

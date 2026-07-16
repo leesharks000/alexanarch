@@ -2,61 +2,113 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://alexanarch.org/data/semantic-addresses.schema.json",
   "title": "Semantic Addresses canonical dataset",
-  "description": "Reference schema for the canonical Semantic Addresses dataset produced by build_semantic_addresses.py. Framework spec: EA-SEMANTIC-ADDRESSES-01 v1.0.",
+  "description": "Reference schema for the canonical Semantic Addresses dataset produced by build_semantic_addresses.py. Framework spec: EA-SEMANTIC-ADDRESSES-01 v1.0. Framework spec: EA-SEMANTIC-ADDRESSES-01 v1.1.",
   "type": "object",
-  "required": ["version", "regenerated_at", "sources", "observation_classes", "total_addresses", "total_observations", "addresses"],
+  "required": [
+    "version",
+    "regenerated_at",
+    "sources",
+    "observation_classes",
+    "total_addresses",
+    "total_observations",
+    "addresses"
+  ],
   "properties": {
     "version": {
       "type": "string",
       "description": "Semantic Addresses framework version",
-      "examples": ["1.0"]
+      "examples": [
+        "1.0"
+      ]
     },
-    "description": {"type": "string"},
-    "regenerated_at": {"type": "string", "format": "date-time"},
-    "regenerator": {"type": "string"},
+    "description": {
+      "type": "string"
+    },
+    "regenerated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "regenerator": {
+      "type": "string"
+    },
     "input_hashes": {
       "type": "object",
       "description": "SHA-256 of each tributary file at regeneration time (reproducibility guarantee)",
-      "additionalProperties": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      }
     },
     "sources": {
       "type": "object",
-      "description": "Tributary ID → human-readable description",
-      "additionalProperties": {"type": "string"}
+      "description": "Tributary ID \u2192 human-readable description",
+      "additionalProperties": {
+        "type": "string"
+      }
     },
     "observation_classes": {
       "type": "object",
       "properties": {
-        "observed_address": {"type": "string"},
-        "verified_non_address": {"type": "string"},
-        "unrated": {"type": "string"},
-        "subjunctive": {"type": "string"}
+        "observed_address": {
+          "type": "string"
+        },
+        "verified_non_address": {
+          "type": "string"
+        },
+        "unrated": {
+          "type": "string"
+        },
+        "subjunctive": {
+          "type": "string"
+        }
       }
     },
     "galleries": {
       "type": "array",
-      "items": {"type": "string", "format": "uri"}
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
     },
-    "total_addresses": {"type": "integer", "minimum": 0},
-    "total_observations": {"type": "integer", "minimum": 0},
+    "total_addresses": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "total_observations": {
+      "type": "integer",
+      "minimum": 0
+    },
     "class_counts": {
       "type": "object",
-      "additionalProperties": {"type": "integer", "minimum": 0}
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
     },
     "type_counts": {
       "type": "object",
-      "additionalProperties": {"type": "integer", "minimum": 0}
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
     },
     "addresses": {
       "type": "object",
-      "description": "canonical_query_key → address record",
-      "additionalProperties": {"$ref": "#/definitions/AddressRecord"}
+      "description": "canonical_query_key \u2192 address record",
+      "additionalProperties": {
+        "$ref": "#/definitions/AddressRecord"
+      }
     }
   },
   "definitions": {
     "AddressRecord": {
       "type": "object",
-      "required": ["canonical_query", "sources", "observations", "observation_class"],
+      "required": [
+        "canonical_query",
+        "sources",
+        "observations",
+        "observation_class"
+      ],
       "properties": {
         "canonical_query": {
           "type": "string",
@@ -68,64 +120,143 @@
         },
         "refers_to": {
           "type": "array",
-          "items": {"type": "string"},
+          "items": {
+            "type": "string"
+          },
           "description": "Canonical entity/concept references this address maps to"
         },
         "type": {
           "type": "string",
-          "enum": ["single_concept", "multi_concept", "unmatched", "compressed_argument", "site_query", "diagnostic_test"]
+          "enum": [
+            "single_concept",
+            "multi_concept",
+            "unmatched",
+            "compressed_argument",
+            "site_query",
+            "diagnostic_test"
+          ]
         },
         "battery_membership": {
           "type": "array",
-          "items": {"type": "string"}
+          "items": {
+            "type": "string"
+          }
         },
         "sources": {
           "type": "array",
-          "items": {"type": "string"},
+          "items": {
+            "type": "string"
+          },
           "description": "Tributary IDs contributing to this address"
         },
         "observations": {
           "type": "array",
-          "items": {"$ref": "#/definitions/ObservationRecord"}
+          "items": {
+            "$ref": "#/definitions/ObservationRecord"
+          }
         },
         "observation_class": {
           "type": "string",
-          "enum": ["observed_address", "verified_non_address", "unrated", "subjunctive"]
+          "enum": [
+            "observed_address",
+            "verified_non_address",
+            "subjunctive"
+          ]
         },
-        "termindex": {"type": ["object", "null"]},
-        "latest_observation_date": {"type": ["string", "null"]},
-        "latest_status": {"type": ["string", "null"]}
+        "termindex": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "latest_observation_date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "latest_status": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
     "ObservationRecord": {
       "type": "object",
-      "required": ["source", "date"],
+      "required": [
+        "source",
+        "date"
+      ],
       "properties": {
         "source": {
           "type": "string",
           "description": "Tributary ID that logged this observation"
         },
-        "date": {"type": "string", "format": "date"},
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
         "status": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "enum": [
             null,
-            "EXACT_MATCH", "EXACT MATCH",
-            "BROAD_MATCH", "BROAD MATCH",
+            "EXACT_MATCH",
+            "EXACT MATCH",
+            "BROAD_MATCH",
+            "BROAD MATCH",
             "ADOPTION",
-            "WOUND_GAUGE", "WOUND GAUGE",
-            "ZERO_RESULT", "ZERO RESULT",
-            "ZERO_INDEX", "ZERO INDEX",
-            "BASIN_MISS", "BASIN MISS",
+            "WOUND_GAUGE",
+            "WOUND GAUGE",
+            "ZERO_RESULT",
+            "ZERO RESULT",
+            "ZERO_INDEX",
+            "ZERO INDEX",
+            "BASIN_MISS",
+            "BASIN MISS",
             "DISPLACEMENT"
           ]
         },
-        "source_format": {"type": ["string", "null"]},
-        "section": {"type": ["string", "null"]},
-        "slug": {"type": ["string", "null"]},
-        "gallery_url": {"type": ["string", "null"]},
-        "mirror_gallery_url": {"type": ["string", "null"]},
-        "details_excerpt": {"type": ["string", "null"]}
+        "source_format": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "section": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "slug": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gallery_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "mirror_gallery_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "details_excerpt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     }
   }

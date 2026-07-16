@@ -39,7 +39,7 @@ from typing import Dict, List, Tuple
 # Configuration
 # --------------------------------------------------------------------------- #
 
-FRAMEWORK_VERSION = "1.0"
+FRAMEWORK_VERSION = "1.1"
 REGENERATOR_PATH = "scripts/build_semantic_addresses.py"
 
 # Observation tributaries — produce actual observation events
@@ -71,18 +71,41 @@ SUBJUNCTIVE_TRIBUTARIES = {
 }
 
 # Positive statuses → observed_address; negative → verified_non_address
-POSITIVE_STATUSES = {
+# Status classification uses prefix normalization: "ADOPTION (dual-lineage)"
+# → normalizes to "ADOPTION" for classification. Variants preserved in raw form
+# on the observation record for downstream fine-grained filtering.
+POSITIVE_PREFIXES = (
     "EXACT_MATCH", "EXACT MATCH",
     "BROAD_MATCH", "BROAD MATCH",
-    "ADOPTION",
+    "ADOPTION",              # covers "ADOPTION (dual-lineage)", etc.
     "WOUND_GAUGE", "WOUND GAUGE",
-}
-NEGATIVE_STATUSES = {
+    "FAIR_TREATMENT", "FAIR TREATMENT",
+    "PARTIAL",               # partial reception is still reception
+    "DEMAND SIGNAL",
+    "MANTLE CONSOLIDATION",
+    "FUNCTIONAL ADDRESS",
+)
+NEGATIVE_PREFIXES = (
     "ZERO_RESULT", "ZERO RESULT",
     "ZERO_INDEX", "ZERO INDEX",
     "BASIN_MISS", "BASIN MISS",
     "DISPLACEMENT",
-}
+    "DISSOLUTION",
+    "CORRECTION",            # AI corrected the query rather than answering
+)
+
+def _status_class(status: str) -> str:
+    """Return 'positive' | 'negative' | 'unrated'."""
+    if not status:
+        return "unrated"
+    s = status.upper().strip()
+    for p in POSITIVE_PREFIXES:
+        if s.startswith(p.upper()):
+            return "positive"
+    for p in NEGATIVE_PREFIXES:
+        if s.startswith(p.upper()):
+            return "negative"
+    return "unrated"
 
 GALLERIES = [
     "https://godkinggoogle.vercel.app/captures",
@@ -273,16 +296,22 @@ EXTRACTORS = {
 # --------------------------------------------------------------------------- #
 
 def classify(observations: List[dict]) -> str:
-    """§2.1 — deterministic class assignment."""
+    """
+    §2.1 — deterministic class assignment (framework v1.1):
+      subjunctive           — no observations at all
+      verified_non_address  — has observations but ALL are negative
+      observed_address      — has any observation (positive or unrated)
+    An observation event is itself evidence the address exists at the
+    reception surface; positive/negative/unrated are ratings within the
+    observed class, surfaced via `latest_status`.
+    """
     if not observations:
         return "subjunctive"
-    has_positive = any((o.get("status") or "") in POSITIVE_STATUSES for o in observations)
-    has_negative = any((o.get("status") or "") in NEGATIVE_STATUSES for o in observations)
-    if has_positive:
+    classes = [_status_class(o.get("status")) for o in observations]
+    has_any_positive_or_unrated = any(c in ("positive", "unrated") for c in classes)
+    if has_any_positive_or_unrated:
         return "observed_address"
-    if has_negative:
-        return "verified_non_address"
-    return "unrated"
+    return "verified_non_address"
 
 
 def infer_type(refers_to: List[str], termindex: dict, existing: str = None) -> str:
@@ -411,10 +440,6 @@ def emit(addresses: dict, input_hashes: dict, timestamp: str = None) -> dict:
             "verified_non_address": (
                 "Query has been observed at least once with a negative status "
                 "(ZERO_RESULT, ZERO_INDEX, BASIN_MISS, DISPLACEMENT) and no positive observations."
-            ),
-            "unrated": (
-                "Query has observations but no decisive status (typically recent "
-                "captures pending rating)."
             ),
             "subjunctive": (
                 "Query catalogued from an authoring tributary but never observed "
