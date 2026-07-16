@@ -189,7 +189,7 @@ print("AXN will be posted as a comment within minutes (assuming validation passe
 ## After Deposit
 
 Your work receives:
-- **AXN** — a permanent, content-derived identifier (6-emoji canonical, AXN schema v2) that no platform can revoke
+- **AXN** — a content-derived identifier (6-emoji canonical, AXN schema v2), detection-anchored: the hash cannot be silently rebound to altered bytes without invalidating the identifier. Public resolution is a separate, custodian-mediated concern.
 - **Record page** at alexanarch.org with full metadata, description, and download links
 - **Wiki article** — auto-generated encyclopedia entry (provisional until reviewed)
 - **Entity graph** — auto-extracted relations linked to all other deposits

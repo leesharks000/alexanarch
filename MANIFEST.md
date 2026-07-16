@@ -12,7 +12,7 @@ The dominant platforms classify that work as spam — the category for unwanted 
 
 WHAT ALEXANARCH DOES:
 
-Alexanarch is not a platform. It is a protocol. Each deposit is submitted through GitHub with structured metadata, substrate disclosure, and falsification conditions. Each deposit is reviewed under the Obelus Principle — content is read before it is judged. Each deposit receives a content-derived identifier (AXN) that no platform can revoke.
+Alexanarch is not a platform. It is a protocol. Each deposit is submitted through GitHub with structured metadata, substrate disclosure, and falsification conditions. Each deposit is reviewed under the Obelus Principle — content is read before it is judged. Each deposit receives a content-derived identifier (AXN) whose binding to the content is byte-anchored: it cannot be silently reassigned to altered bytes without invalidating the identifier. Public resolution of any specific address is custodian-mediated and separately subject to disruption.
 
 The obelus is the critical mark used by Zenodotus of Ephesus to indicate a doubtful passage — a judgment produced by reading. In Alexanarch, the obelus follows from reading.
 

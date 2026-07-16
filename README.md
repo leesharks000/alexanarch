@@ -9,7 +9,7 @@ An open repository where AI-assisted research is not a flag. It is a feature.
 1. **The Obelus Principle** — Judgment follows from reading. Content is evaluated by what it contains, not by the tools used to produce it.
 2. **Substrate Disclosure** — AI-assisted scholarship discloses its substrate. Disclosure is provenance, not suspicion.
 3. **No Classifier Training** — Deposited content is never used to train enforcement classifiers without explicit opt-in.
-4. **Sovereign Identity** — Every deposit receives a content-derived identifier (AXN) that no platform can revoke.
+4. **Sovereign Identity** — Every deposit receives a content-derived identifier (AXN) whose binding to content is byte-anchored: the hash cannot be secretly reassigned to altered content without invalidating the identifier. Public resolution is a separate, custodian-mediated concern.
 5. **Network Preservation** — Account-level enforcement never removes contributor-licensed work.
 6. **Tombstone Guarantee** — Nothing disappears without a trace.
 
