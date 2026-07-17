@@ -30,6 +30,6 @@ record.
 
 | Case | Failure mode | Observed source |
 |---|---|---|
-| `semantic-inversion/` | A text's declared mechanism summarized as its documented misreading | Machine Mediation Capture Registry (machinemediation.org) |
+| `semantic-inversion/` | A cited source's declared mechanism inverted into the mutually exclusive reading it argues against | Machine Mediation Capture Registry (machinemediation.org) |
 | `entity-substitution/` | A provenance protocol summarized as an adjacent ranking practice | Live namespace collision, documented captures |
 | `provenance-erasure/` | Attribution fields stripped while content survives | Measured platform-deletion aftermath, 2026-06-19 |

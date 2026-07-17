@@ -28,8 +28,12 @@ does not stage for the perceptual catalogue it does.
 ## Observed case provenance
 
 Mapped from the most-documented capture class in the Machine Mediation
-Capture Registry (https://machinemediation.org/data/registry.json):
-AI composition layers repeatedly summarizing the fragment as a "jealousy
-poem," inverting the declared mechanism. Observation boundary: captures
-document generated summaries on public AI answer surfaces; the fixture tests
+Capture Registry (https://machinemediation.org/data/registry.json): AI
+composition layers citing this concept's source documents — which stage the
+perceptual-dissolution reading and mark the jealousy reading as the
+reduction — and summarizing them into the mutually exclusive "jealousy
+poem" reading. The inversion is of the cited source's declared mechanism:
+the summary attributes to its own cited source the reading that source
+argues against. Observation boundary: captures document generated summaries
+and their cited sources on public AI answer surfaces; the fixture tests
 only the assertion and compression IDs above, not the registry contents.
