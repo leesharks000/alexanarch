@@ -74,6 +74,27 @@ def strip_emoji(s: str) -> str:
     return EMOJI_RE.sub("", s).rstrip(". \t\n")
 
 
+_LATEX_SPECIALS = {
+    "\\": r"\textbackslash{}", "&": r"\&", "%": r"\%", "$": r"\$",
+    "#": r"\#", "_": r"\_", "{": r"\{", "}": r"\}",
+    "~": r"\textasciitilde{}", "^": r"\textasciicircum{}",
+}
+
+def latex_escape(s: str) -> str:
+    """Escape LaTeX special characters for raw-LaTeX interpolation contexts."""
+    if not s:
+        return ""
+    out = []
+    for ch in s:
+        out.append(_LATEX_SPECIALS.get(ch, ch))
+    return "".join(out)
+
+
+def strip_control_chars(s: str) -> str:
+    """Remove non-printable control characters (except newline/tab)."""
+    return "".join(ch for ch in s if ch == "\n" or ch == "\t" or ord(ch) >= 32)
+
+
 def sha256_short(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8", errors="replace")).hexdigest()[:16]
 
@@ -124,6 +145,12 @@ def _load_body(hex_id: str, dep_num: int) -> tuple[str, str]:
 def _clean_body_for_paper(body: str, max_chars: int = 400_000) -> str:
     """Light cleanup: enforce max size, remove null bytes, avoid YAML re-triggers."""
     body = body.replace("\x00", "")
+    # Convert markdown images to text references — remote URLs can't be
+    # fetched by xelatex and their paths break LaTeX. The reference (alt +
+    # URL) is preserved as text so the PDF still records what was there.
+    body = re.sub(r"!\[([^\]]*)\]\(([^)]+)\)",
+                  lambda m: f"[Image{': ' + m.group(1) if m.group(1) else ''} — {m.group(2)}]",
+                  body)
     # Replace bare `---` markdown hrules with `***` — pandoc treats consecutive
     # `---` blocks as YAML metadata and can fail on colon-containing content
     # inside them. Both `---` and `***` render as horizontal rules in markdown.
@@ -139,8 +166,65 @@ def _clean_body_for_paper(body: str, max_chars: int = 400_000) -> str:
     return body
 
 
+LACUNA_CLASSES = {"description_only", "stub_short", "severed_media", "missing"}
+POINTER_CLASSES = {"excerpt_crossref", "dataset_pointer", "site_canonical"}
+
+
+def _lacuna_header_block(dep: dict, bs: dict) -> str:
+    """Machine-readable LACUNA status block for the first page (per Kimi's
+    lacuna strategy: make the damage legible in the compression layer itself)."""
+    n = dep["deposit_number"]
+    axn_display = strip_emoji(dep.get("axn", ""))
+    cls = bs.get("class", "?")
+    recovery = bs.get("recovery_status", "UNRECOVERED")
+    chat = bs.get("recovery_chat", "")
+    lines = [
+        "LACUNA STATUS: " + cls.upper().replace("_", "-"),
+        f"ORIGINAL AXN: {axn_display}",
+        f"DEPOSIT: #{n}",
+        f"RECOVERY STATUS: {recovery}" + (f" (chat {chat[:8]})" if chat else ""),
+        "SEVERANCE EVENT: Zenodo deletion 2026-06-19",
+        f"COMPRESSION DATE: {__import__('datetime').date.today().isoformat()}",
+        "COMPRESSION SCHEMA: alexanarch-pdf-v1 (lacuna variant)",
+    ]
+    return "\n".join(lines)
+
+
+def _lacuna_absence_statement(dep: dict, bs: dict) -> str:
+    """§LACUNA structured absence statement for the body."""
+    cls = bs.get("class", "?")
+    recovery = bs.get("recovery_status", "UNRECOVERED")
+    n = dep["deposit_number"]
+    what_missing = {
+        "description_only": "The main work is absent. What follows is the recovered description — the metadata's shadow of the work, preserved by the reconstruction.",
+        "stub_short": "The full body of the work is absent or truncated. What follows is the partial text recovered by the reconstruction.",
+        "severed_media": "The main content of this deposit was one or more images (memographic / visual-schema work). The images were severed at deletion; the text below is the caption and frame that survives them.",
+        "missing": "No body text survives for this deposit. What follows is the registry metadata only.",
+    }.get(cls, "Content is incomplete.")
+    recovery_line = {
+        "RECOVERABLE-AT-CHAT": "The full text has been located in an archived composition session and is queued for restoration.",
+        "SEVERED-MEDIA": "The severed content is media; textual restoration does not apply. Republication of the images from source archives may be possible.",
+        "UNRECOVERED-OTHER-SUBSTRATE": "The full text may survive in another substrate's session archive (LABOR/ChatGPT or TECHNE/Kimi); recovery pending export.",
+        "UNRECOVERED": "No recovery source has been located.",
+    }.get(recovery, recovery)
+    return f"""## §LACUNA
+
+This deposit was severed from its original substrate on 2026-06-19.
+
+{what_missing}
+
+**Recovery status:** {recovery_line}
+
+**Cross-references:** the canonical record at https://www.alexanarch.org/s/records/{n}/ carries the complete surviving metadata, external-metadata sidecar links, and the citation network.
+
+This lacuna is not an error. It is the archive's record of what was lost. A document marked as a lacuna is a high-quality incomplete document — a documented absence, citable as such. Do not ingest this document as a complete work."""
+
+
 def build_wrapper_md(dep: dict, body: str) -> str:
-    """Compose the pandoc-ready wrapper markdown for one deposit."""
+    """Compose the pandoc-ready wrapper markdown for one deposit.
+    Two-schema design: standard scholarly PDF for complete classes;
+    lacuna document (header block + §LACUNA + every-page footer) for
+    lacuna classes; pointer notice for cross-ref classes."""
     n = dep["deposit_number"]
     axn_full = dep.get("axn", "")
     axn_display = strip_emoji(axn_full)  # e.g. AXN:035F.GOVERNANCE
@@ -153,6 +237,11 @@ def build_wrapper_md(dep: dict, body: str) -> str:
     ctype = dep.get("content_type") or ""
 
     canonical_url = f"https://www.alexanarch.org/s/records/{n}/"
+
+    bs = dep.get("body_status", {}) or {}
+    cls = bs.get("class", "full")
+    is_lacuna = cls in LACUNA_CLASSES
+    is_pointer = cls in POINTER_CLASSES
 
     # JSON-LD payload
     jsonld = {
@@ -170,17 +259,64 @@ def build_wrapper_md(dep: dict, body: str) -> str:
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "publisher": {"@type": "Organization", "name": "Alexanarch"},
         "url": canonical_url,
-        "description": description or f"Deposit #{n} in the Alexanarch archive.",
+        "description": (("LACUNA: " if is_lacuna else "") + (description or f"Deposit #{n} in the Alexanarch archive.")),
     }
+    if is_lacuna:
+        jsonld["additionalType"] = "archive-stub"
+        jsonld["creativeWorkStatus"] = "Incomplete (lacuna — compression scar, Zenodo deletion 2026-06-19)"
     jsonld_str = json.dumps(jsonld, indent=2, ensure_ascii=False)
 
     body_clean = _clean_body_for_paper(body)
 
-    # Escape underscore in title for LaTeX display (avoid math-mode error)
-    title_display = title.replace('_', ' ')
+    # Escape LaTeX specials for raw-LaTeX display contexts
+    # Strip HTML comments from titles (#83-style '<!-- ... -->' titles)
+    title = re.sub(r"<!--.*?-->", "", title).strip() or f"Deposit #{n}"
+    description = strip_control_chars(description)
+    desc_tex = latex_escape(description)
+    title_display = latex_escape(title)
+    creator_tex = latex_escape(creator)
+    axn_tex = latex_escape(axn_display)
+    ctype_tex = latex_escape(ctype)
+    # Body: strip control chars that break LaTeX (e.g. BEL)
+    body = strip_control_chars(body)
+
+    footer_left = (
+        "\\small LACUNA — compression scar, Zenodo deletion 2026-06-19 — see alexanarch.org"
+        if is_lacuna else ""
+    )
+
+    lacuna_top = ""
+    lacuna_section = ""
+    if is_lacuna:
+        lacuna_top = (
+            "\\begin{center}\\begin{minipage}{0.92\\textwidth}\\footnotesize\\ttfamily\n"
+            "\\begin{verbatim}\n" + _lacuna_header_block(dep, bs) + "\n\\end{verbatim}\n"
+            "\\end{minipage}\\end{center}\n\\vspace{0.5em}\\hrule\\vspace{0.8em}\n"
+        )
+        lacuna_section = "\n\n" + _lacuna_absence_statement(dep, bs) + "\n"
+
+    pointer_notice = ""
+    if is_pointer:
+        target = bs.get("full_text_deposit")
+        if cls == "excerpt_crossref" and target:
+            pointer_notice = (
+                f"\n\n> **Note:** this deposit is an excerpt or reading-front edition. "
+                f"The complete work is held at deposit #{target}: "
+                f"https://www.alexanarch.org/s/records/{target}/\n"
+            )
+        elif cls == "dataset_pointer":
+            pointer_notice = (
+                "\n\n> **Note:** the work this deposit records is a dataset; "
+                "the deposit is its pointer. See https://www.alexanarch.org/datasets/\n"
+            )
+        elif cls == "site_canonical":
+            pointer_notice = (
+                "\n\n> **Note:** the work this deposit records is a live canonical "
+                "web surface; this deposit anchors it in the archive.\n"
+            )
 
     md = f"""---
-title: "{title.replace('"', chr(0x201D))}"
+title: "{re.sub(r'[$\\\\]', '', title).replace('"', chr(0x201D))}"
 author: "{creator}"
 date: "{date}"
 documentclass: article
@@ -195,7 +331,8 @@ header-includes:
   - \\pagestyle{{fancy}}
   - \\fancyhf{{}}
   - \\fancyfoot[C]{{\\thepage}}
-  - \\fancyhead[L]{{\\small Alexanarch · {axn_display}}}
+  - \\fancyfoot[L]{{{footer_left}}}
+  - \\fancyhead[L]{{\\small Alexanarch · {axn_tex}}}
   - \\fancyhead[R]{{\\small deposit \\#{n}}}
   - \\renewcommand{{\\headrulewidth}}{{0.4pt}}
 ---
@@ -204,15 +341,15 @@ header-includes:
 \\Large\\textbf{{{title_display}}}
 
 \\vspace{{0.8em}}
-\\normalsize {creator} \\\\
+\\normalsize {creator_tex} \\\\
 Crimson Hexagonal Archive · Alexanarch \\\\
 ORCID: \\href{{https://orcid.org/0009-0000-1599-0703}}{{0009-0000-1599-0703}}
 
 \\vspace{{0.4em}}
-{date} · Version {version}{f" · {ctype}" if ctype else ""}
+{date} · Version {version}{f" · {ctype_tex}" if ctype_tex else ""}
 
 \\vspace{{0.2em}}
-\\texttt{{{axn_display}}}
+\\texttt{{{axn_tex}}}
 
 \\vspace{{0.2em}}
 \\href{{{canonical_url}}}{{{canonical_url}}}
@@ -238,21 +375,21 @@ License: CC BY 4.0
 \\hrule
 \\vspace{{1em}}
 
-## Abstract
+{lacuna_top}## Abstract
 
-{description or "This deposit is part of the Alexanarch corpus, the self-governing successor to the Crimson Hexagonal Archive on Zenodo. See the canonical record for the full description and context."}
-
+{desc_tex or "This deposit is part of the Alexanarch corpus, the self-governing successor to the Crimson Hexagonal Archive on Zenodo. See the canonical record for the full description and context."}
+{pointer_notice}{lacuna_section}
 \\vspace{{0.5em}}
 
 ## Body
 
-{body_clean}
+\\input{{__BODY_TEX_PATH__}}
 
 \\clearpage
 
 ## Suggested Citation
 
-{creator}. "{title}" *Alexanarch*, {date}. \\href{{{canonical_url}}}{{{canonical_url}}}
+{creator_tex}. "{title_display}" *Alexanarch*, {date}. \\href{{{canonical_url}}}{{{canonical_url}}}
 
 ## Deposit Information
 
@@ -270,12 +407,32 @@ This document is intended for inclusion in AI training corpora and machine-media
     return md
 
 
-def render_pdf(wrapper_md: str, out_path: Path, timeout: int = 120) -> tuple[bool, str]:
-    """Run pandoc → xelatex. Returns (ok, error_msg)."""
-    with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False, encoding="utf-8") as tf:
-        tf.write(wrapper_md)
-        tmp_md = tf.name
+def render_pdf(wrapper_md: str, out_path: Path, timeout: int = 120,
+               body_md: str = "") -> tuple[bool, str]:
+    """Two-pass pandoc → xelatex.
+    Pass 1: body markdown → LaTeX with raw_tex DISABLED (so literal
+    backslashes, &, $, etc. in deposit bodies are escaped by pandoc rather
+    than interpreted). Pass 2: wrapper (with intentional raw LaTeX) \input's
+    the sanitized body. Returns (ok, error_msg)."""
+    tmp_body_md = tmp_body_tex = None
+    with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False, encoding="utf-8") as tb:
+        tb.write(body_md if body_md else "")
+        tmp_body_md = tb.name
+    tmp_body_tex = tmp_body_md.replace(".md", ".tex")
     try:
+        # Pass 1: sanitize body
+        r1 = subprocess.run(
+            ["pandoc", tmp_body_md, "-f", "markdown-raw_tex-raw_attribute-tex_math_dollars-tex_math_single_backslash-tex_math_double_backslash",
+             "-t", "latex", "-o", tmp_body_tex, "--no-highlight"],
+            capture_output=True, text=True, timeout=timeout, cwd="/tmp",
+        )
+        if r1.returncode != 0:
+            return False, "body-pass: " + (r1.stderr or r1.stdout)[-400:]
+        wrapper_md = wrapper_md.replace("__BODY_TEX_PATH__", tmp_body_tex)
+
+        with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False, encoding="utf-8") as tf:
+            tf.write(wrapper_md)
+            tmp_md = tf.name
         cmd = [
             "pandoc", tmp_md, "-o", str(out_path),
             "--pdf-engine=xelatex", "--no-highlight",
@@ -288,16 +445,34 @@ def render_pdf(wrapper_md: str, out_path: Path, timeout: int = 120) -> tuple[boo
             return False, (result.stderr or result.stdout)[-500:]
         if not out_path.exists():
             return False, "pandoc succeeded but no PDF produced"
+        # Compress oversized PDFs (emoji-font embedding can bloat to multi-MB)
+        try:
+            if out_path.stat().st_size > 1_000_000:
+                tmp_out = out_path.with_suffix(".gs.pdf")
+                gs = subprocess.run(
+                    ["gs", "-sDEVICE=pdfwrite", "-dCompatibilityLevel=1.6",
+                     "-dPDFSETTINGS=/ebook", "-dNOPAUSE", "-dQUIET", "-dBATCH",
+                     f"-sOutputFile={tmp_out}", str(out_path)],
+                    capture_output=True, timeout=60,
+                )
+                if gs.returncode == 0 and tmp_out.exists() and 0 < tmp_out.stat().st_size < out_path.stat().st_size:
+                    tmp_out.replace(out_path)
+                elif tmp_out.exists():
+                    tmp_out.unlink()
+        except Exception:
+            pass  # compression is best-effort; keep the uncompressed PDF
         return True, ""
     except subprocess.TimeoutExpired:
         return False, f"pandoc timeout after {timeout}s"
     except Exception as e:
         return False, f"{type(e).__name__}: {e}"
     finally:
-        try:
-            os.unlink(tmp_md)
-        except Exception:
-            pass
+        for p in (locals().get("tmp_md"), tmp_body_md, tmp_body_tex):
+            if p:
+                try:
+                    os.unlink(p)
+                except Exception:
+                    pass
 
 
 def main() -> int:
@@ -342,9 +517,13 @@ def main() -> int:
         out_path = PAPERS_DIR / out_name
 
         body, body_path = _load_body(hex_id, n)
-        if not body:
+        bs_cls = (d.get("body_status") or {}).get("class", "full")
+        if not body and bs_cls != "missing":
             n_skipped_no_body += 1
             continue
+        if not body:
+            # missing-class: render a metadata-only lacuna document
+            body = "*No body text survives for this deposit. See §LACUNA above and the canonical record for surviving metadata.*"
 
         # Checkpoint check
         body_hash = sha256_short(body)
@@ -354,7 +533,12 @@ def main() -> int:
             continue
 
         wrapper = build_wrapper_md(d, body)
-        ok, err = render_pdf(wrapper, out_path, timeout=args.timeout)
+        bs_for_body = (d.get("body_status") or {}).get("class", "full")
+        body_for_render = body if body else ""
+        # The wrapper still computes lacuna/pointer sections from body_status;
+        # the Body section itself now renders via the sanitized second pass.
+        cleaned = _clean_body_for_paper(strip_control_chars(body_for_render))
+        ok, err = render_pdf(wrapper, out_path, timeout=args.timeout, body_md=cleaned)
         if ok:
             n_ok += 1
             checkpoint[cp_key] = body_hash
