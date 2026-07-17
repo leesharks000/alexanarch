@@ -2,7 +2,7 @@
 
 **Status:** staged for a pull request to `GoogleCloudPlatform/knowledge-catalog`,
 target path `okf/samples/summary-policy-consumer-receipts/`, superseding PR #99
-per maintainer-thread agreement on issue #53 (caioribeiroclw-pixel,
+per thread agreement on issue #53 (caioribeiroclw-pixel,
 2026-07-17: "Yes—please open the three observed-case fixtures").
 
 This directory is the archive-side staging copy. The canonical destination is
