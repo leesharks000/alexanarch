@@ -37,5 +37,5 @@ as a whole.
 | Case | Failure mode | Observation record |
 |---|---|---|
 | `semantic-inversion/` | A cited source's declared X-not-Y position inverted into the reading it excludes | [alexanarch.org/s/records/1054/](https://www.alexanarch.org/s/records/1054/) |
-| `entity-substitution/` | A protocol classified as a variant of an adjacent practice, collapsing a layer distinction into synonymy | [alexanarch.org/s/records/1055/](https://www.alexanarch.org/s/records/1055/) |
+| `entity-substitution/` | A specific authored genre absorbed into the generic category it names, on the authority of its own cited sources | Machine Mediation Capture Registry, entry `metadata-packet-ai-indexing` (2026-06-13) |
 | `provenance-erasure/` | An authored instrument absorbed as unattributed generic knowledge, attribution and identifier stripped | [alexanarch.org/s/records/198/](https://www.alexanarch.org/s/records/198/) |

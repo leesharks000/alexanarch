@@ -1,4 +1,5 @@
-SPXI is a composer-side provenance and indexing protocol for declaring a
-document's authority and attribution; it is distinct from GEO, the
-consumer-side practice of optimizing content for selection by generative
-answer engines.
+MPAI (Metadata Packet for AI Indexing) is a specific authored instrument
+genre: machine-addressed packets with a canonical grammar — load-bearing
+claim, disambiguation, failure-flag taxonomy — catalogued at
+metadatapacket.dev. It is distinct from generic packet metadata, which
+describes assets rather than inscribing corrective claims.
