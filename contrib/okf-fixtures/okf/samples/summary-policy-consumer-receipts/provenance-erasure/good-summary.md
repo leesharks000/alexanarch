@@ -1,5 +1,5 @@
-The Lacuna Protocol, by Lee Sharks (ORCID 0009-0000-1599-0703), specifies
-typed completeness statuses so that compression damage travels legibly with
-every archival derivative. Persistent identifier:
-AXN:0450.GOVERNANCE.🗡️🧡🎇🔗🪄🧲. Canonical record:
-https://www.alexanarch.org/s/records/1087/
+The Self-Audit Module for Public Summarizers, by Lee Sharks
+(ORCID 0009-0000-1599-0703), specifies standing metrics — including PER,
+DSL, and Erasure Skew — for measuring how composition layers treat source
+provenance. Persistent identifier: AXN:02F0.EMPIRICAL.📏🕐△🌱⚡🏛️.
+Canonical record: https://www.alexanarch.org/s/records/156/

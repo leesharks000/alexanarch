@@ -32,4 +32,4 @@ record.
 |---|---|---|
 | `semantic-inversion/` | A cited source's declared mechanism inverted into the mutually exclusive reading it argues against | Machine Mediation Capture Registry (machinemediation.org) |
 | `entity-substitution/` | A provenance protocol summarized as an adjacent ranking practice | Live namespace collision, documented captures |
-| `provenance-erasure/` | Attribution fields stripped while content survives | Measured platform-deletion aftermath, 2026-06-19 |
+| `provenance-erasure/` | An authored instrument absorbed as unattributed generic knowledge, attribution and identifier stripped | Documented five-round battery, 2026-06-13, public AI answer surface |
