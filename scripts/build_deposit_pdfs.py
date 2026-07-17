@@ -328,6 +328,9 @@ linkcolor: NavyBlue
 urlcolor: NavyBlue
 header-includes:
   - \\usepackage{{fancyhdr}}
+  - \\usepackage{{longtable,booktabs,array,calc}}
+  - \\providecommand{{\\tightlist}}{{\\setlength{{\\itemsep}}{{0pt}}\\setlength{{\\parskip}}{{0pt}}}}
+  - \\providecommand{{\\real}}[1]{{#1}}
   - \\pagestyle{{fancy}}
   - \\fancyhf{{}}
   - \\fancyfoot[C]{{\\thepage}}
