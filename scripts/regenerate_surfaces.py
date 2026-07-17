@@ -802,6 +802,28 @@ fetch("/data/wiki-entries.json").then(function(r){return r.json()}).then(functio
     if chunk_dirs:
         print(f"  ✓ removed {len(chunk_dirs)} obsolete chunk director{'y' if len(chunk_dirs)==1 else 'ies'}")
 
+    # Task 2 of EA-RETRIEVAL-DENSITY-01: after the dataset is written, delegate
+    # to publish_wiki_entries.py which generates one HTML page per entry at
+    # /s/wiki/{n}/ and OVERWRITES s/wiki/index.html with a static alphabetical
+    # listing (retiring the JS-only pagination that hid 97% of entries from
+    # non-JS crawlers). Overwrite is intentional: the paginated version above
+    # is written first as a defensive fallback in case publish_wiki_entries
+    # fails, then replaced by the crawler-friendly static list.
+    try:
+        import subprocess
+        result = subprocess.run(
+            ["python3", str(REPO_ROOT / "scripts" / "publish_wiki_entries.py")],
+            capture_output=True, text=True, cwd=str(REPO_ROOT),
+        )
+        if result.returncode == 0:
+            for line in result.stdout.strip().split("\n"):
+                print(f"    {line}")
+        else:
+            print(f"  ! publish_wiki_entries failed (returncode={result.returncode}):")
+            print(f"    stderr: {result.stderr[:400]}")
+    except Exception as e:
+        print(f"  ! publish_wiki_entries invocation error: {e}")
+
 
 CITATION_GRAPH_PATH = REPO_ROOT / "data" / "citation-graph.json"
 GRAPH_PATH = REPO_ROOT / "s" / "graph" / "index.html"
