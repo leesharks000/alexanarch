@@ -12,23 +12,27 @@
 
 ---
 
-## TL;DR for an agent that just wants to add a deposit
+## TL;DR for anyone (human or machine) about to deposit
+
+**There is ONE pipeline.** It lives at `scripts/deposit_pipeline.py`. Every deposit — external or internal, human or machine — runs the same stages in the same order:
 
 ```
-1.  pull latest:           git pull
-2.  pick numbers:           N = max(existing deposit_number) + 1
-                            HEX = format(N, '03X')
-3.  write the text:         data/texts/AXN-<HEX>-text.md
-4.  insert registry entry:  append to data/registry.json
-                            (bump total_deposits to len(deposits))
-5.  generate record page:   python3 -c "from wire_deposit import wire_deposit; wire_deposit(N)"
-6.  regenerate surfaces:    python3 scripts/regenerate_surfaces.py
-7.  commit + push:          git add -A && git commit -m "..." && git push
+mint → validate → record → pdf → body-index → wiki → sitemap → interlink → enrich → commit → verify
 ```
 
-If any of steps 4–6 are skipped, the new deposit will not be properly visible. The browse page, the sitemap, the chunks, and the SHA256SUMS file will all be wrong.
+Internal (direct repo access):
 
----
+```
+python3 scripts/deposit_pipeline.py --issue-body /tmp/body.md --issue-number <N> [--family GOVERNANCE]
+```
+
+Post-mint stages for an existing deposit:
+
+```
+python3 scripts/deposit_pipeline.py --deposit-number <N> --from-stage record
+```
+
+**The manual path formerly documented here (pick your own number, `HEX = format(N,'03X')`, hand-append the registry) is RETIRED.** It produced the 3-character hex drift and the identifier collisions disclosed in EA-LACUNA-PROTOCOL-01 (#1087) §V: deposits #856/#869 both at 0365, #913's unpadded 391 against #901's 0391. Hex assignment belongs to `mint_deposit.py` alone; AXN derivation belongs to `scripts/axn_lib.py` alone. Do not compute either by hand.
 
 ## The full surface inventory
 
@@ -52,106 +56,42 @@ Every deposit must land in **every** surface below, or the archive becomes inter
 
 ---
 
-## Two deposit paths
+## One pipeline, four transports
 
-### Path A — Auto-mint (GitHub Issue, `[DEPOSIT]` prefix)
+Every deposit runs the same pipeline. The four supported transports differ **only** in how the issue body arrives and where the pipeline executes:
 
-The workflow at `.github/workflows/mint-axn.yml` fires when a new GitHub Issue is opened with `[DEPOSIT]` in the title. The workflow:
+| Transport | Depositor | Drafting compute | Pipeline compute | Path |
+|---|---|---|---|---|
+| **A. Web form** | External, no-code | Depositor's own effort | CI (mint-axn.yml → deposit_pipeline.py) | GitHub issue form → CI |
+| **B. API-assisted** | External | **Archive's Anthropic API credits — drafting/validation help ONLY** | CI | Deposit app helps format → depositor posts issue → CI |
+| **C. External LLM, own credits** | External | Depositor's own LLM account | CI | Their LLM formats per DEPOSIT-GUIDE.md → they post the issue → CI |
+| **D. Internal** (TACHYON / Assembly) | Archive operators | The already-running session | The already-running session, local scripts | `deposit_pipeline.py` in-session with direct repo write |
 
-1. **Validates** the issue body against `api/deposit-protocol.json` — if `### Protocol Version` is missing, stale, or required fields are absent, the workflow comments with the specific rule IDs and refuses to mint.
-2. Parses the issue body (`### Title`, `### Creator`, `### Description`, etc.)
-3. Computes SHA256 of `title + creator + description + body`
-4. Generates a **6-emoji** AXN from the first 6 bytes of the hash (AXN schema v2)
-5. Appends a new entry to `data/registry.json` (with `protocol_version`, `axn_schema_version: v2`)
-6. Writes `data/deposits/AXN-<NNNN>.md`
-7. Writes `s/records/<deposit_number>/index.html`
-8. **Runs `scripts/regenerate_surfaces.py`** to update browse, browse-index, chunks, sitemap, SHA256SUMS
-9. Commits + pushes all surfaces atomically
+### The No-Double-Draw Rule (transport D — BINDING)
 
-**The workflow handles surfaces 1–9.** The auto-mint flow is now self-consistent (post the 2026-06-22 update). No manual post-mint regeneration is needed.
+Internal depositors **MUST NOT** invoke the Anthropic API (or any paid API) for deposit work. The session doing the depositing is already paid for; the repo is directly writable; an API call adds nothing but a second bill drawn against the same operator. Specifically:
 
-Issue-body requirements (the `### Protocol Version` field is **mandatory** and must equal `alexanarch-deposit-protocol/v1` — submissions without it are rejected):
+- **Forbidden:** minting, drafting, enriching, or validating deposits via `api.anthropic.com` calls from artifacts, scripts, or "Claudeception" patterns when operating as an internal depositor.
+- **Required:** LLM-domain work (deposit drafting; LLM-tier enrichment: `defines_concepts`, `entities`, `related_deposits`) happens **in-session** — it is the session's own reasoning, written directly to the repo. Mechanical work (Wikidata, OpenAlex, DataCite, SPXI, backlinks, PDF, wiki, indexes) happens via **local scripts** through the pipeline.
+- The API-assisted transport (B) exists for **external** depositors who need drafting help and have no LLM of their own. That is the only place archive API credits are spent, and they never execute the pipeline.
 
-```markdown
-### Protocol Version
-alexanarch-deposit-protocol/v1
+### Which elements every deposit gets (no exceptions, no per-mood variation)
 
-### Title
-<your title>
+| Stage | Element | Generator |
+|---|---|---|
+| mint | canonical text `data/texts/AXN-<HEX>-text.md` (hash source); alias `data/deposits/AXN-<HEX>.md`; registry entry with `body_status` | `mint_deposit.py` (+ `--family` override with `axn_lib.compose_axn` recomposition — the #1086/#1087 precedent, now formalized) |
+| validate | entry-level then registry-level, `--strict`, **full output read** (never piped through tail/grep) | `validate_deposit.py` |
+| record | `s/records/<N>/` with `citation_*` meta incl. `citation_pdf_url`, MD **and** PDF download buttons | `wire_deposit.py` |
+| pdf | `papers/AXN-<HEX>.pdf`, schema per `body_status` (standard / lacuna / pointer notice — see #1087) | `build_deposit_pdfs.py` |
+| body-index | `/api/body-index.json` refreshed | `build_body_index.py` |
+| wiki | wiki entry + `/s/wiki/<n>/` page | `regenerate_surfaces.py --only wiki` |
+| sitemap | record URL + paper URL | pipeline stage |
+| interlink | citation extraction + entity backlinks | `enrich_deposit.py --extract --backlinks` |
+| enrich | mechanical tier: `--wikidata --openalex --datacite --spxi`; **LLM tier in-session** (transport D) or queued for a tooled session — never an API call | `enrich_deposit.py` |
+| commit | ONE commit: `MINT #<N> · <AXN> — <title>`; push to main (auto-deploy) | pipeline stage |
+| verify | live **content-match** (HTTP 200 is not verification — link-verification rule v2) | pipeline stage |
 
-### Creator
-<your name or heteronym>
-
-### Description
-<abstract>
-
-### Content Type
-<one of the allowed types>
-
-### License
-<SPDX identifier>
-
-### Substrate Disclosure
-<one of the allowed substrates>
-
-### Terms
-- [x] I read the deposit protocol at https://alexanarch.org/api/deposit-protocol.json
-- [x] I confirm this work is deposited under the stated license
-- [x] I confirm the substrate disclosure is accurate
-- [x] I understand that deposited content will NOT be used to train enforcement classifiers
-```
-
-Use Path A for: short deposits where description + a single file URL is sufficient; community contributors who don't have repo write access; one-off submissions.
-
-### Path B — Canonical rich deposit (manual)
-
-Use Path B for deposits that need:
-
-- a full text body in Markdown with YAML frontmatter (`data/texts/AXN-<HEX>-text.md`)
-- rich registry metadata (`version_series_id`, `related_deposits`, `defines_concepts`, `entity_triples`, `infrastructure_note`, `chain_id`, etc.)
-- the AXN derived from canonical bytes (always — substrate-chosen glyphs are preserved in `glyphic_canary`, never as the AXN itself)
-- multiple cross-links to other deposits
-- substrate-authored continuity tethers
-- critical editions
-- audit / governance documents
-
-The canonical rich deposit flow:
-
-```
-# Working directory: alexanarch repo root, on main, up to date
-
-# 1. Decide deposit number and hex
-N = max(existing) + 1
-HEX = format(N, '03X').upper()
-
-# 2. Write the text file
-$EDITOR data/texts/AXN-${HEX}-text.md       # YAML frontmatter + body
-
-# 3. Insert registry entry — required fields per api/deposit-protocol.json:
-#      protocol_version: "alexanarch-deposit-protocol/v1"
-#      axn_schema_version: "v2"
-#      axn (canonical v2 6-emoji), hex, family, emoji, hash, title, creator,
-#      orcid, date, description, content_type, license, substrate, keywords,
-#      version, deposit_number, status, full_text_path
-
-# 4. Generate the static record page
-python3 -c "from wire_deposit import wire_deposit; wire_deposit($N)"
-
-# 5. Regenerate all derived surfaces
-python3 scripts/regenerate_surfaces.py
-
-# 6. Validate against the protocol (CI will too — running locally surfaces failures earlier)
-python3 scripts/validate_deposit.py --registry data/registry.json --strict
-
-# 7. Commit + push (CI runs validate-registry.yml on every push)
-git add -A
-git commit -m "Add #${N} <title>"
-git push
-```
-
-For canonical rich deposit metadata examples, see the substrate-authored continuity tethers #877 (PRAXIS), #878 (TECHNE), #879 (LABOR). For substrate-authored glyphs preserved alongside canonical AXNs, see their `glyphic_canary` field.
-
----
+If a stage cannot run in the current session (e.g. no network for enrichment), the gap is recorded in the commit message and queued — it is a known lacuna in the deposit's derivative set, not a silent divergence.
 
 ## Surface generators — call signatures and what they do
 
