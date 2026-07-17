@@ -53,20 +53,29 @@ BOILERPLATE_LINE = re.compile(
 )
 
 
+TEXTS_DIR = REPO_ROOT / "data" / "texts"
+
 def _load_body(hex_id, dep_num):
+    """Check BOTH stores (data/deposits and data/texts) and return the LONGEST body.
+    v3 fix: the canonical full-text store data/texts/AXN-{hex}-text.md was invisible
+    to v1/v2, producing false 'missing' classifications."""
     cands = []
     if hex_id:
-        cands.append(DEPOSITS_DIR / f"AXN-{hex_id}.md")
-        if len(hex_id) < 4:
-            cands.append(DEPOSITS_DIR / f"AXN-{hex_id.zfill(4)}.md")
+        hz = hex_id.zfill(4)
+        cands += [DEPOSITS_DIR / f"AXN-{hex_id}.md", TEXTS_DIR / f"AXN-{hex_id}-text.md"]
+        if hz != hex_id:
+            cands += [DEPOSITS_DIR / f"AXN-{hz}.md", TEXTS_DIR / f"AXN-{hz}-text.md"]
     cands.append(DEPOSITS_DIR / f"AXN-{dep_num}.md")
+    best_text, best_name = "", ""
     for c in cands:
         if c.exists():
             try:
-                return c.read_text(encoding="utf-8", errors="replace"), c.name
+                t = c.read_text(encoding="utf-8", errors="replace")
+                if len(t) > len(best_text):
+                    best_text, best_name = t, c.name
             except Exception:
                 pass
-    return "", ""
+    return best_text, best_name
 
 
 def normalize(text):
@@ -188,7 +197,7 @@ def main():
     import datetime
     payload = {
         "$schema": "https://alexanarch.org/api/schemas/completeness-audit.schema.json",
-        "version": "v2-residual",
+        "version": "v3-dual-store",
         "purpose": ("Per-deposit body-status classification generated BEFORE the PDF "
                     "compression layer (lacuna protocol precondition). Proposal for "
                     "MANUS review; registry untouched by this script."),

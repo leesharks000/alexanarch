@@ -1,8 +1,8 @@
 {
   "$schema": "https://alexanarch.org/api/schemas/completeness-audit.schema.json",
-  "version": "v2-residual",
+  "version": "v3-dual-store",
   "purpose": "Per-deposit body-status classification generated BEFORE the PDF compression layer (lacuna protocol precondition). Proposal for MANUS review; registry untouched by this script.",
-  "generated_at": "2026-07-17T03:40:54.559242+00:00",
+  "generated_at": "2026-07-17T04:16:57.040994+00:00",
   "method": {
     "residual_measure": "body minus description n-grams minus boilerplate",
     "full_residual_threshold": 2000,
@@ -20,12 +20,13 @@
     ]
   },
   "counts": {
-    "full": 942,
-    "stub_short": 9,
-    "description_only": 27,
-    "missing": 108
+    "full": 1022,
+    "stub_short": 42,
+    "description_only": 12,
+    "native_short": 6,
+    "missing": 4
   },
-  "review_flagged": 37,
+  "review_flagged": 92,
   "deposits": {
     "1": {
       "deposit_number": 1,
@@ -36,7 +37,7 @@
       "body_raw_chars": 85241,
       "body_norm_chars": 80993,
       "desc_norm_chars": 450,
-      "residual_chars": 80839,
+      "residual_chars": 80843,
       "registry_full_text_chars": 0
     },
     "2": {
@@ -48,7 +49,7 @@
       "body_raw_chars": 2479,
       "body_norm_chars": 1988,
       "desc_norm_chars": 469,
-      "residual_chars": 1658,
+      "residual_chars": 1669,
       "registry_full_text_chars": 0,
       "review_flag": true
     },
@@ -61,7 +62,7 @@
       "body_raw_chars": 2595,
       "body_norm_chars": 2134,
       "desc_norm_chars": 602,
-      "residual_chars": 1713,
+      "residual_chars": 1618,
       "registry_full_text_chars": 0,
       "review_flag": true
     },
@@ -74,7 +75,7 @@
       "body_raw_chars": 21639,
       "body_norm_chars": 19815,
       "desc_norm_chars": 1884,
-      "residual_chars": 19623,
+      "residual_chars": 19618,
       "registry_full_text_chars": 0
     },
     "5": {
@@ -146,7 +147,7 @@
       "body_raw_chars": 52506,
       "body_norm_chars": 50509,
       "desc_norm_chars": 299,
-      "residual_chars": 50441,
+      "residual_chars": 50438,
       "registry_full_text_chars": 52506
     },
     "11": {
@@ -362,7 +363,7 @@
       "body_raw_chars": 325441,
       "body_norm_chars": 166328,
       "desc_norm_chars": 300,
-      "residual_chars": 166265,
+      "residual_chars": 166267,
       "registry_full_text_chars": 325441
     },
     "29": {
@@ -386,7 +387,7 @@
       "body_raw_chars": 28149,
       "body_norm_chars": 24031,
       "desc_norm_chars": 300,
-      "residual_chars": 23970,
+      "residual_chars": 23971,
       "registry_full_text_chars": 28149
     },
     "31": {
@@ -734,7 +735,7 @@
       "body_raw_chars": 16273,
       "body_norm_chars": 14628,
       "desc_norm_chars": 300,
-      "residual_chars": 14525,
+      "residual_chars": 14526,
       "registry_full_text_chars": 16273
     },
     "60": {
@@ -765,12 +766,12 @@
       "deposit_number": 62,
       "axn": "AXN:0212.GOVERNANCE.🌳🀄○🔔🌗⛩️",
       "title": "SPXI: Protocol and ETF Disambiguation EA-MPAI-SPXI-02 · v1.0",
-      "classification": "description_only",
-      "body_file": "AXN-0212.md",
-      "body_raw_chars": 1165,
-      "body_norm_chars": 496,
+      "classification": "stub_short",
+      "body_file": "AXN-0212-text.md",
+      "body_raw_chars": 2288,
+      "body_norm_chars": 1983,
       "desc_norm_chars": 299,
-      "residual_chars": 280,
+      "residual_chars": 1983,
       "registry_full_text_chars": 2288,
       "sidecar_abstract_longer": 2149,
       "review_flag": true
@@ -995,15 +996,13 @@
       "deposit_number": 81,
       "axn": "AXN:0252.GOVERNANCE.♥️✊🪄▽🔥🍃",
       "title": "The Concordance Engine v0.1.1 (Tier B): Reference Implementation of the Logotic Technique Catalogue / https://zenodo.org",
-      "classification": "description_only",
-      "body_file": "AXN-0252.md",
-      "body_raw_chars": 1358,
-      "body_norm_chars": 538,
+      "classification": "full",
+      "body_file": "AXN-0252-text.md",
+      "body_raw_chars": 6766,
+      "body_norm_chars": 5255,
       "desc_norm_chars": 300,
-      "residual_chars": 334,
-      "registry_full_text_chars": 301,
-      "sidecar_abstract_longer": 7522,
-      "review_flag": true
+      "residual_chars": 5161,
+      "registry_full_text_chars": 301
     },
     "82": {
       "deposit_number": 82,
@@ -1350,7 +1349,7 @@
       "body_raw_chars": 33250,
       "body_norm_chars": 23340,
       "desc_norm_chars": 300,
-      "residual_chars": 23216,
+      "residual_chars": 23217,
       "registry_full_text_chars": 0
     },
     "111": {
@@ -1374,7 +1373,7 @@
       "body_raw_chars": 29391,
       "body_norm_chars": 22865,
       "desc_norm_chars": 300,
-      "residual_chars": 22790,
+      "residual_chars": 22707,
       "registry_full_text_chars": 0
     },
     "113": {
@@ -1398,7 +1397,7 @@
       "body_raw_chars": 68496,
       "body_norm_chars": 67883,
       "desc_norm_chars": 300,
-      "residual_chars": 67725,
+      "residual_chars": 67719,
       "registry_full_text_chars": 0
     },
     "115": {
@@ -1530,7 +1529,7 @@
       "body_raw_chars": 3804,
       "body_norm_chars": 3746,
       "desc_norm_chars": 300,
-      "residual_chars": 3616,
+      "residual_chars": 3615,
       "registry_full_text_chars": 0
     },
     "126": {
@@ -1561,15 +1560,13 @@
       "deposit_number": 128,
       "axn": "AXN:02B4.GOVERNANCE.🔜♌🔺❤️📏🪞",
       "title": "Where's Waldo? Substrate Compositing, the Hidden Figure Protocol, and a Memographic Audit of the Search Ritual Author: L",
-      "classification": "description_only",
-      "body_file": "AXN-02B4.md",
-      "body_raw_chars": 1184,
-      "body_norm_chars": 564,
+      "classification": "full",
+      "body_file": "AXN-02B4-text.md",
+      "body_raw_chars": 16269,
+      "body_norm_chars": 9847,
       "desc_norm_chars": 300,
-      "residual_chars": 297,
-      "registry_full_text_chars": 0,
-      "sidecar_abstract_longer": 2570,
-      "review_flag": true
+      "residual_chars": 9729,
+      "registry_full_text_chars": 0
     },
     "129": {
       "deposit_number": 129,
@@ -1808,7 +1805,7 @@
       "body_raw_chars": 94104,
       "body_norm_chars": 92775,
       "desc_norm_chars": 300,
-      "residual_chars": 92708,
+      "residual_chars": 92712,
       "registry_full_text_chars": 0
     },
     "149": {
@@ -1964,7 +1961,7 @@
       "body_raw_chars": 98013,
       "body_norm_chars": 96894,
       "desc_norm_chars": 300,
-      "residual_chars": 96819,
+      "residual_chars": 96820,
       "registry_full_text_chars": 0
     },
     "162": {
@@ -1976,7 +1973,7 @@
       "body_raw_chars": 25205,
       "body_norm_chars": 24881,
       "desc_norm_chars": 300,
-      "residual_chars": 24819,
+      "residual_chars": 24816,
       "registry_full_text_chars": 0
     },
     "163": {
@@ -2187,14 +2184,13 @@
       "deposit_number": 180,
       "axn": "AXN:031A.EMPIRICAL.🤲🟤🎭♍🌱🔚",
       "title": "Emily Dickinson — Canon Provenance Node The New Human Standing Canon Crimson Hexagonal Archive — Entity Nodes / Canon La",
-      "classification": "description_only",
-      "body_file": "AXN-031A.md",
-      "body_raw_chars": 1002,
-      "body_norm_chars": 386,
+      "classification": "full",
+      "body_file": "AXN-031A-text.md",
+      "body_raw_chars": 3110,
+      "body_norm_chars": 2986,
       "desc_norm_chars": 300,
-      "residual_chars": 208,
+      "residual_chars": 2986,
       "registry_full_text_chars": 0,
-      "sidecar_abstract_longer": 8352,
       "review_flag": true
     },
     "181": {
@@ -2225,14 +2221,13 @@
       "deposit_number": 183,
       "axn": "AXN:0327.GOVERNANCE.🎲🔚⏬♦️🔝🪝",
       "title": "Zbigniew Mrozony — Provenance Anchor Heteronym of the New Human 2015 Cohort",
-      "classification": "description_only",
-      "body_file": "AXN-0327.md",
-      "body_raw_chars": 855,
-      "body_norm_chars": 385,
+      "classification": "full",
+      "body_file": "AXN-0327-text.md",
+      "body_raw_chars": 2336,
+      "body_norm_chars": 2145,
       "desc_norm_chars": 300,
-      "residual_chars": 145,
+      "residual_chars": 2145,
       "registry_full_text_chars": 0,
-      "sidecar_abstract_longer": 1043,
       "review_flag": true
     },
     "184": {
@@ -2244,7 +2239,7 @@
       "body_raw_chars": 34390,
       "body_norm_chars": 33944,
       "desc_norm_chars": 300,
-      "residual_chars": 33853,
+      "residual_chars": 33860,
       "registry_full_text_chars": 0
     },
     "185": {
@@ -2448,7 +2443,7 @@
       "body_raw_chars": 4156,
       "body_norm_chars": 3439,
       "desc_norm_chars": 300,
-      "residual_chars": 3301,
+      "residual_chars": 3367,
       "registry_full_text_chars": 0
     },
     "202": {
@@ -2508,7 +2503,7 @@
       "body_raw_chars": 9513,
       "body_norm_chars": 8868,
       "desc_norm_chars": 172,
-      "residual_chars": 8707,
+      "residual_chars": 8802,
       "registry_full_text_chars": 9513
     },
     "207": {
@@ -2520,7 +2515,7 @@
       "body_raw_chars": 13347,
       "body_norm_chars": 12813,
       "desc_norm_chars": 313,
-      "residual_chars": 12610,
+      "residual_chars": 12609,
       "registry_full_text_chars": 13347
     },
     "208": {
@@ -2556,7 +2551,7 @@
       "body_raw_chars": 19056,
       "body_norm_chars": 16914,
       "desc_norm_chars": 221,
-      "residual_chars": 16744,
+      "residual_chars": 16732,
       "registry_full_text_chars": 19056
     },
     "211": {
@@ -2568,7 +2563,7 @@
       "body_raw_chars": 11503,
       "body_norm_chars": 10200,
       "desc_norm_chars": 163,
-      "residual_chars": 10129,
+      "residual_chars": 10057,
       "registry_full_text_chars": 11503
     },
     "212": {
@@ -2628,7 +2623,7 @@
       "body_raw_chars": 4684,
       "body_norm_chars": 3825,
       "desc_norm_chars": 93,
-      "residual_chars": 3760,
+      "residual_chars": 3761,
       "registry_full_text_chars": 4684
     },
     "217": {
@@ -2664,7 +2659,7 @@
       "body_raw_chars": 11318,
       "body_norm_chars": 10432,
       "desc_norm_chars": 185,
-      "residual_chars": 10311,
+      "residual_chars": 10313,
       "registry_full_text_chars": 11318
     },
     "220": {
@@ -2688,7 +2683,7 @@
       "body_raw_chars": 9784,
       "body_norm_chars": 8686,
       "desc_norm_chars": 151,
-      "residual_chars": 8572,
+      "residual_chars": 8587,
       "registry_full_text_chars": 9784
     },
     "222": {
@@ -2700,7 +2695,7 @@
       "body_raw_chars": 8463,
       "body_norm_chars": 7697,
       "desc_norm_chars": 188,
-      "residual_chars": 7574,
+      "residual_chars": 7580,
       "registry_full_text_chars": 8463
     },
     "223": {
@@ -2712,7 +2707,7 @@
       "body_raw_chars": 9600,
       "body_norm_chars": 8570,
       "desc_norm_chars": 312,
-      "residual_chars": 8368,
+      "residual_chars": 8357,
       "registry_full_text_chars": 9600
     },
     "224": {
@@ -2724,7 +2719,7 @@
       "body_raw_chars": 9084,
       "body_norm_chars": 7606,
       "desc_norm_chars": 339,
-      "residual_chars": 7349,
+      "residual_chars": 7410,
       "registry_full_text_chars": 9084
     },
     "225": {
@@ -2748,7 +2743,7 @@
       "body_raw_chars": 5440,
       "body_norm_chars": 4849,
       "desc_norm_chars": 180,
-      "residual_chars": 4712,
+      "residual_chars": 4745,
       "registry_full_text_chars": 5440
     },
     "227": {
@@ -2772,7 +2767,7 @@
       "body_raw_chars": 7944,
       "body_norm_chars": 6853,
       "desc_norm_chars": 108,
-      "residual_chars": 6787,
+      "residual_chars": 6792,
       "registry_full_text_chars": 7944
     },
     "229": {
@@ -2796,7 +2791,7 @@
       "body_raw_chars": 13779,
       "body_norm_chars": 11464,
       "desc_norm_chars": 286,
-      "residual_chars": 11242,
+      "residual_chars": 11244,
       "registry_full_text_chars": 13779
     },
     "231": {
@@ -2808,7 +2803,7 @@
       "body_raw_chars": 12450,
       "body_norm_chars": 11035,
       "desc_norm_chars": 199,
-      "residual_chars": 10871,
+      "residual_chars": 10919,
       "registry_full_text_chars": 12450
     },
     "232": {
@@ -2820,7 +2815,7 @@
       "body_raw_chars": 27472,
       "body_norm_chars": 24277,
       "desc_norm_chars": 289,
-      "residual_chars": 24079,
+      "residual_chars": 24078,
       "registry_full_text_chars": 27472
     },
     "233": {
@@ -2832,7 +2827,7 @@
       "body_raw_chars": 15123,
       "body_norm_chars": 13702,
       "desc_norm_chars": 207,
-      "residual_chars": 13555,
+      "residual_chars": 13631,
       "registry_full_text_chars": 15123
     },
     "234": {
@@ -2844,7 +2839,7 @@
       "body_raw_chars": 18785,
       "body_norm_chars": 16690,
       "desc_norm_chars": 114,
-      "residual_chars": 16619,
+      "residual_chars": 16620,
       "registry_full_text_chars": 18785
     },
     "235": {
@@ -2856,7 +2851,7 @@
       "body_raw_chars": 27188,
       "body_norm_chars": 24881,
       "desc_norm_chars": 236,
-      "residual_chars": 24692,
+      "residual_chars": 24693,
       "registry_full_text_chars": 27188
     },
     "236": {
@@ -2880,7 +2875,7 @@
       "body_raw_chars": 34539,
       "body_norm_chars": 33225,
       "desc_norm_chars": 312,
-      "residual_chars": 33066,
+      "residual_chars": 33064,
       "registry_full_text_chars": 34539
     },
     "238": {
@@ -2892,7 +2887,7 @@
       "body_raw_chars": 23066,
       "body_norm_chars": 20937,
       "desc_norm_chars": 242,
-      "residual_chars": 20798,
+      "residual_chars": 20780,
       "registry_full_text_chars": 23066
     },
     "239": {
@@ -2904,7 +2899,7 @@
       "body_raw_chars": 22593,
       "body_norm_chars": 20022,
       "desc_norm_chars": 331,
-      "residual_chars": 19785,
+      "residual_chars": 19709,
       "registry_full_text_chars": 22593
     },
     "240": {
@@ -2964,7 +2959,7 @@
       "body_raw_chars": 33011,
       "body_norm_chars": 30827,
       "desc_norm_chars": 73,
-      "residual_chars": 30761,
+      "residual_chars": 30764,
       "registry_full_text_chars": 33011
     },
     "245": {
@@ -2976,7 +2971,7 @@
       "body_raw_chars": 3131,
       "body_norm_chars": 2653,
       "desc_norm_chars": 363,
-      "residual_chars": 2449,
+      "residual_chars": 2426,
       "registry_full_text_chars": 3131,
       "review_flag": true
     },
@@ -3001,7 +2996,7 @@
       "body_raw_chars": 45811,
       "body_norm_chars": 42129,
       "desc_norm_chars": 99,
-      "residual_chars": 42064,
+      "residual_chars": 42073,
       "registry_full_text_chars": 45811
     },
     "248": {
@@ -3037,7 +3032,7 @@
       "body_raw_chars": 9804,
       "body_norm_chars": 5797,
       "desc_norm_chars": 320,
-      "residual_chars": 5621,
+      "residual_chars": 5544,
       "registry_full_text_chars": 9804
     },
     "251": {
@@ -3157,7 +3152,7 @@
       "body_raw_chars": 27156,
       "body_norm_chars": 23486,
       "desc_norm_chars": 361,
-      "residual_chars": 22791,
+      "residual_chars": 22855,
       "registry_full_text_chars": 27156
     },
     "261": {
@@ -3169,7 +3164,7 @@
       "body_raw_chars": 111624,
       "body_norm_chars": 46685,
       "desc_norm_chars": 347,
-      "residual_chars": 46420,
+      "residual_chars": 46416,
       "registry_full_text_chars": 111624
     },
     "262": {
@@ -3181,7 +3176,7 @@
       "body_raw_chars": 17160,
       "body_norm_chars": 15391,
       "desc_norm_chars": 90,
-      "residual_chars": 15325,
+      "residual_chars": 15313,
       "registry_full_text_chars": 17160
     },
     "263": {
@@ -3217,7 +3212,7 @@
       "body_raw_chars": 11099,
       "body_norm_chars": 9540,
       "desc_norm_chars": 267,
-      "residual_chars": 9408,
+      "residual_chars": 9398,
       "registry_full_text_chars": 11099
     },
     "266": {
@@ -3241,7 +3236,7 @@
       "body_raw_chars": 19707,
       "body_norm_chars": 17771,
       "desc_norm_chars": 232,
-      "residual_chars": 17552,
+      "residual_chars": 17620,
       "registry_full_text_chars": 19707
     },
     "268": {
@@ -3265,7 +3260,7 @@
       "body_raw_chars": 23394,
       "body_norm_chars": 17679,
       "desc_norm_chars": 113,
-      "residual_chars": 17614,
+      "residual_chars": 17618,
       "registry_full_text_chars": 23394
     },
     "270": {
@@ -3277,7 +3272,7 @@
       "body_raw_chars": 3817,
       "body_norm_chars": 2878,
       "desc_norm_chars": 190,
-      "residual_chars": 2814,
+      "residual_chars": 2731,
       "registry_full_text_chars": 3817,
       "review_flag": true
     },
@@ -3302,7 +3297,7 @@
       "body_raw_chars": 4300,
       "body_norm_chars": 3664,
       "desc_norm_chars": 217,
-      "residual_chars": 3499,
+      "residual_chars": 3493,
       "registry_full_text_chars": 4300
     },
     "273": {
@@ -3326,7 +3321,7 @@
       "body_raw_chars": 6741,
       "body_norm_chars": 5853,
       "desc_norm_chars": 240,
-      "residual_chars": 5656,
+      "residual_chars": 5646,
       "registry_full_text_chars": 6741
     },
     "275": {
@@ -3350,7 +3345,7 @@
       "body_raw_chars": 10044,
       "body_norm_chars": 8884,
       "desc_norm_chars": 167,
-      "residual_chars": 8804,
+      "residual_chars": 8754,
       "registry_full_text_chars": 10044
     },
     "277": {
@@ -3362,7 +3357,7 @@
       "body_raw_chars": 12503,
       "body_norm_chars": 10686,
       "desc_norm_chars": 70,
-      "residual_chars": 10638,
+      "residual_chars": 10639,
       "registry_full_text_chars": 12503
     },
     "278": {
@@ -3374,7 +3369,7 @@
       "body_raw_chars": 9167,
       "body_norm_chars": 8174,
       "desc_norm_chars": 351,
-      "residual_chars": 7926,
+      "residual_chars": 7949,
       "registry_full_text_chars": 9167
     },
     "279": {
@@ -3386,7 +3381,7 @@
       "body_raw_chars": 14339,
       "body_norm_chars": 12155,
       "desc_norm_chars": 139,
-      "residual_chars": 12082,
+      "residual_chars": 12088,
       "registry_full_text_chars": 14339
     },
     "280": {
@@ -3410,7 +3405,7 @@
       "body_raw_chars": 10354,
       "body_norm_chars": 9363,
       "desc_norm_chars": 308,
-      "residual_chars": 9074,
+      "residual_chars": 9067,
       "registry_full_text_chars": 10354
     },
     "282": {
@@ -3422,7 +3417,7 @@
       "body_raw_chars": 32530,
       "body_norm_chars": 29717,
       "desc_norm_chars": 111,
-      "residual_chars": 29665,
+      "residual_chars": 29658,
       "registry_full_text_chars": 32530
     },
     "283": {
@@ -3434,7 +3429,7 @@
       "body_raw_chars": 32091,
       "body_norm_chars": 28941,
       "desc_norm_chars": 174,
-      "residual_chars": 28809,
+      "residual_chars": 28888,
       "registry_full_text_chars": 32091
     },
     "284": {
@@ -3453,12 +3448,12 @@
       "deposit_number": 285,
       "axn": "AXN:0058.GOVERNANCE.∮🤙♉🏗️✊⏏️",
       "title": "Reddit Response: On Operator Failure and the Survival Architecture of LOS",
-      "classification": "description_only",
-      "body_file": "AXN-0058.md",
-      "body_raw_chars": 394,
-      "body_norm_chars": 10,
+      "classification": "full",
+      "body_file": "AXN-0058-text.md",
+      "body_raw_chars": 7709,
+      "body_norm_chars": 6748,
       "desc_norm_chars": 73,
-      "residual_chars": 10,
+      "residual_chars": 6748,
       "registry_full_text_chars": 75
     },
     "286": {
@@ -3482,7 +3477,7 @@
       "body_raw_chars": 4107,
       "body_norm_chars": 3384,
       "desc_norm_chars": 205,
-      "residual_chars": 3272,
+      "residual_chars": 3281,
       "registry_full_text_chars": 4107
     },
     "288": {
@@ -3494,7 +3489,7 @@
       "body_raw_chars": 40464,
       "body_norm_chars": 36068,
       "desc_norm_chars": 318,
-      "residual_chars": 35766,
+      "residual_chars": 35827,
       "registry_full_text_chars": 40464
     },
     "289": {
@@ -3566,7 +3561,7 @@
       "body_raw_chars": 4896,
       "body_norm_chars": 4261,
       "desc_norm_chars": 172,
-      "residual_chars": 4160,
+      "residual_chars": 4171,
       "registry_full_text_chars": 4896
     },
     "295": {
@@ -3614,7 +3609,7 @@
       "body_raw_chars": 8679,
       "body_norm_chars": 7706,
       "desc_norm_chars": 113,
-      "residual_chars": 7548,
+      "residual_chars": 7542,
       "registry_full_text_chars": 8679
     },
     "299": {
@@ -3650,7 +3645,7 @@
       "body_raw_chars": 20382,
       "body_norm_chars": 18937,
       "desc_norm_chars": 354,
-      "residual_chars": 18699,
+      "residual_chars": 18710,
       "registry_full_text_chars": 20382
     },
     "302": {
@@ -3722,7 +3717,7 @@
       "body_raw_chars": 7980,
       "body_norm_chars": 7114,
       "desc_norm_chars": 195,
-      "residual_chars": 6974,
+      "residual_chars": 7042,
       "registry_full_text_chars": 7980
     },
     "308": {
@@ -3759,7 +3754,7 @@
       "body_raw_chars": 3487,
       "body_norm_chars": 2952,
       "desc_norm_chars": 155,
-      "residual_chars": 2886,
+      "residual_chars": 2883,
       "registry_full_text_chars": 3487,
       "review_flag": true
     },
@@ -3808,7 +3803,7 @@
       "body_raw_chars": 21766,
       "body_norm_chars": 20254,
       "desc_norm_chars": 166,
-      "residual_chars": 20171,
+      "residual_chars": 20177,
       "registry_full_text_chars": 21766
     },
     "315": {
@@ -3832,7 +3827,7 @@
       "body_raw_chars": 14196,
       "body_norm_chars": 12980,
       "desc_norm_chars": 287,
-      "residual_chars": 12844,
+      "residual_chars": 12764,
       "registry_full_text_chars": 14196
     },
     "317": {
@@ -3844,7 +3839,7 @@
       "body_raw_chars": 55192,
       "body_norm_chars": 48426,
       "desc_norm_chars": 367,
-      "residual_chars": 48152,
+      "residual_chars": 48173,
       "registry_full_text_chars": 55192
     },
     "318": {
@@ -3892,7 +3887,7 @@
       "body_raw_chars": 12766,
       "body_norm_chars": 9684,
       "desc_norm_chars": 195,
-      "residual_chars": 9533,
+      "residual_chars": 9531,
       "registry_full_text_chars": 12766
     },
     "322": {
@@ -3935,15 +3930,13 @@
       "deposit_number": 325,
       "axn": "AXN:0080.GENERATIVE.♣️🚪🔬🎲⌛🟡",
       "title": "VISUAL SCHEMA // CRIMSON HEXAGON NAVIGATION MAP (CURRENT V)",
-      "classification": "description_only",
-      "body_file": "AXN-0080.md",
-      "body_raw_chars": 364,
-      "body_norm_chars": 10,
+      "classification": "full",
+      "body_file": "AXN-0080-text.md",
+      "body_raw_chars": 6382,
+      "body_norm_chars": 5223,
       "desc_norm_chars": 131,
-      "residual_chars": 10,
-      "registry_full_text_chars": 637,
-      "sidecar_abstract_longer": 4509,
-      "review_flag": true
+      "residual_chars": 5057,
+      "registry_full_text_chars": 637
     },
     "326": {
       "deposit_number": 326,
@@ -4002,7 +3995,7 @@
       "body_raw_chars": 15917,
       "body_norm_chars": 13466,
       "desc_norm_chars": 336,
-      "residual_chars": 13247,
+      "residual_chars": 13265,
       "registry_full_text_chars": 15917
     },
     "331": {
@@ -4026,7 +4019,7 @@
       "body_raw_chars": 10949,
       "body_norm_chars": 9352,
       "desc_norm_chars": 265,
-      "residual_chars": 9176,
+      "residual_chars": 9115,
       "registry_full_text_chars": 10949
     },
     "333": {
@@ -4038,7 +4031,7 @@
       "body_raw_chars": 7808,
       "body_norm_chars": 6573,
       "desc_norm_chars": 240,
-      "residual_chars": 6438,
+      "residual_chars": 6434,
       "registry_full_text_chars": 7808
     },
     "334": {
@@ -4050,7 +4043,7 @@
       "body_raw_chars": 7164,
       "body_norm_chars": 5966,
       "desc_norm_chars": 224,
-      "residual_chars": 5825,
+      "residual_chars": 5834,
       "registry_full_text_chars": 7164
     },
     "335": {
@@ -4062,7 +4055,7 @@
       "body_raw_chars": 13451,
       "body_norm_chars": 11163,
       "desc_norm_chars": 185,
-      "residual_chars": 11069,
+      "residual_chars": 11079,
       "registry_full_text_chars": 13451
     },
     "336": {
@@ -4086,7 +4079,7 @@
       "body_raw_chars": 49733,
       "body_norm_chars": 44964,
       "desc_norm_chars": 266,
-      "residual_chars": 44816,
+      "residual_chars": 44757,
       "registry_full_text_chars": 49733
     },
     "338": {
@@ -4122,7 +4115,7 @@
       "body_raw_chars": 5177,
       "body_norm_chars": 3946,
       "desc_norm_chars": 107,
-      "residual_chars": 3862,
+      "residual_chars": 3863,
       "registry_full_text_chars": 5177
     },
     "341": {
@@ -4170,7 +4163,7 @@
       "body_raw_chars": 4134,
       "body_norm_chars": 3729,
       "desc_norm_chars": 336,
-      "residual_chars": 3514,
+      "residual_chars": 3481,
       "registry_full_text_chars": 4134
     },
     "345": {
@@ -4182,7 +4175,7 @@
       "body_raw_chars": 8456,
       "body_norm_chars": 7500,
       "desc_norm_chars": 154,
-      "residual_chars": 7357,
+      "residual_chars": 7428,
       "registry_full_text_chars": 8456
     },
     "346": {
@@ -4218,7 +4211,7 @@
       "body_raw_chars": 18693,
       "body_norm_chars": 15953,
       "desc_norm_chars": 146,
-      "residual_chars": 15880,
+      "residual_chars": 15884,
       "registry_full_text_chars": 18693
     },
     "349": {
@@ -4230,7 +4223,7 @@
       "body_raw_chars": 20459,
       "body_norm_chars": 15961,
       "desc_norm_chars": 240,
-      "residual_chars": 15690,
+      "residual_chars": 15694,
       "registry_full_text_chars": 20459
     },
     "350": {
@@ -4326,7 +4319,7 @@
       "body_raw_chars": 9850,
       "body_norm_chars": 7522,
       "desc_norm_chars": 94,
-      "residual_chars": 7451,
+      "residual_chars": 7460,
       "registry_full_text_chars": 9850
     },
     "358": {
@@ -4350,7 +4343,7 @@
       "body_raw_chars": 30045,
       "body_norm_chars": 20293,
       "desc_norm_chars": 303,
-      "residual_chars": 20049,
+      "residual_chars": 20056,
       "registry_full_text_chars": 30045
     },
     "360": {
@@ -4398,7 +4391,7 @@
       "body_raw_chars": 27798,
       "body_norm_chars": 23388,
       "desc_norm_chars": 185,
-      "residual_chars": 23243,
+      "residual_chars": 23246,
       "registry_full_text_chars": 27798
     },
     "364": {
@@ -4410,7 +4403,7 @@
       "body_raw_chars": 48386,
       "body_norm_chars": 40342,
       "desc_norm_chars": 143,
-      "residual_chars": 40272,
+      "residual_chars": 40274,
       "registry_full_text_chars": 48386
     },
     "365": {
@@ -4422,7 +4415,7 @@
       "body_raw_chars": 19426,
       "body_norm_chars": 16299,
       "desc_norm_chars": 118,
-      "residual_chars": 16234,
+      "residual_chars": 16243,
       "registry_full_text_chars": 19426
     },
     "366": {
@@ -4434,7 +4427,7 @@
       "body_raw_chars": 15123,
       "body_norm_chars": 13261,
       "desc_norm_chars": 292,
-      "residual_chars": 13053,
+      "residual_chars": 13058,
       "registry_full_text_chars": 15123
     },
     "367": {
@@ -4470,7 +4463,7 @@
       "body_raw_chars": 9180,
       "body_norm_chars": 7514,
       "desc_norm_chars": 223,
-      "residual_chars": 7383,
+      "residual_chars": 7370,
       "registry_full_text_chars": 9180
     },
     "370": {
@@ -4482,7 +4475,7 @@
       "body_raw_chars": 9847,
       "body_norm_chars": 8313,
       "desc_norm_chars": 238,
-      "residual_chars": 8140,
+      "residual_chars": 8150,
       "registry_full_text_chars": 9847
     },
     "371": {
@@ -4506,7 +4499,7 @@
       "body_raw_chars": 8777,
       "body_norm_chars": 7266,
       "desc_norm_chars": 325,
-      "residual_chars": 7001,
+      "residual_chars": 7046,
       "registry_full_text_chars": 8777
     },
     "373": {
@@ -4518,7 +4511,7 @@
       "body_raw_chars": 11053,
       "body_norm_chars": 9740,
       "desc_norm_chars": 97,
-      "residual_chars": 9674,
+      "residual_chars": 9677,
       "registry_full_text_chars": 11053
     },
     "374": {
@@ -4530,7 +4523,7 @@
       "body_raw_chars": 8110,
       "body_norm_chars": 6793,
       "desc_norm_chars": 293,
-      "residual_chars": 6566,
+      "residual_chars": 6486,
       "registry_full_text_chars": 8110
     },
     "375": {
@@ -4542,7 +4535,7 @@
       "body_raw_chars": 11897,
       "body_norm_chars": 10542,
       "desc_norm_chars": 119,
-      "residual_chars": 10469,
+      "residual_chars": 10462,
       "registry_full_text_chars": 11897
     },
     "376": {
@@ -4602,7 +4595,7 @@
       "body_raw_chars": 6725,
       "body_norm_chars": 5500,
       "desc_norm_chars": 73,
-      "residual_chars": 5454,
+      "residual_chars": 5457,
       "registry_full_text_chars": 6725
     },
     "381": {
@@ -4614,7 +4607,7 @@
       "body_raw_chars": 14585,
       "body_norm_chars": 11739,
       "desc_norm_chars": 352,
-      "residual_chars": 11510,
+      "residual_chars": 11439,
       "registry_full_text_chars": 14585
     },
     "382": {
@@ -4626,7 +4619,7 @@
       "body_raw_chars": 24400,
       "body_norm_chars": 22007,
       "desc_norm_chars": 272,
-      "residual_chars": 21854,
+      "residual_chars": 21881,
       "registry_full_text_chars": 24400
     },
     "383": {
@@ -4638,7 +4631,7 @@
       "body_raw_chars": 8730,
       "body_norm_chars": 7960,
       "desc_norm_chars": 269,
-      "residual_chars": 7807,
+      "residual_chars": 7728,
       "registry_full_text_chars": 8730
     },
     "384": {
@@ -4650,7 +4643,7 @@
       "body_raw_chars": 38582,
       "body_norm_chars": 37201,
       "desc_norm_chars": 267,
-      "residual_chars": 37013,
+      "residual_chars": 37014,
       "registry_full_text_chars": 38582
     },
     "385": {
@@ -4662,7 +4655,7 @@
       "body_raw_chars": 41775,
       "body_norm_chars": 35569,
       "desc_norm_chars": 267,
-      "residual_chars": 35431,
+      "residual_chars": 35360,
       "registry_full_text_chars": 41775
     },
     "386": {
@@ -4674,7 +4667,7 @@
       "body_raw_chars": 55373,
       "body_norm_chars": 46809,
       "desc_norm_chars": 127,
-      "residual_chars": 46739,
+      "residual_chars": 46738,
       "registry_full_text_chars": 55373
     },
     "387": {
@@ -4686,7 +4679,7 @@
       "body_raw_chars": 9568,
       "body_norm_chars": 6726,
       "desc_norm_chars": 145,
-      "residual_chars": 6660,
+      "residual_chars": 6657,
       "registry_full_text_chars": 9568
     },
     "388": {
@@ -4730,11 +4723,11 @@
       "axn": "AXN:00C8.GENERATIVE.✨♍🔩∮▽🕙",
       "title": "THE ARGUMENT: On the Ontological Status of Semantic Objects and the Ezekiel Case",
       "classification": "full",
-      "body_file": "AXN-00C8.md",
-      "body_raw_chars": 14761,
-      "body_norm_chars": 13303,
+      "body_file": "AXN-391.md",
+      "body_raw_chars": 51202,
+      "body_norm_chars": 49876,
       "desc_norm_chars": 230,
-      "residual_chars": 13181,
+      "residual_chars": 49876,
       "registry_full_text_chars": 14761
     },
     "392": {
@@ -4794,7 +4787,7 @@
       "body_raw_chars": 19817,
       "body_norm_chars": 16896,
       "desc_norm_chars": 178,
-      "residual_chars": 16752,
+      "residual_chars": 16777,
       "registry_full_text_chars": 19817
     },
     "397": {
@@ -4806,7 +4799,7 @@
       "body_raw_chars": 32466,
       "body_norm_chars": 28536,
       "desc_norm_chars": 365,
-      "residual_chars": 28244,
+      "residual_chars": 28263,
       "registry_full_text_chars": 32466
     },
     "398": {
@@ -4818,7 +4811,7 @@
       "body_raw_chars": 18819,
       "body_norm_chars": 15499,
       "desc_norm_chars": 397,
-      "residual_chars": 15270,
+      "residual_chars": 15286,
       "registry_full_text_chars": 18819
     },
     "399": {
@@ -4830,7 +4823,7 @@
       "body_raw_chars": 18413,
       "body_norm_chars": 14428,
       "desc_norm_chars": 384,
-      "residual_chars": 14162,
+      "residual_chars": 14168,
       "registry_full_text_chars": 18413
     },
     "400": {
@@ -4842,7 +4835,7 @@
       "body_raw_chars": 10965,
       "body_norm_chars": 9528,
       "desc_norm_chars": 212,
-      "residual_chars": 9385,
+      "residual_chars": 9390,
       "registry_full_text_chars": 10965
     },
     "401": {
@@ -4914,7 +4907,7 @@
       "body_raw_chars": 13394,
       "body_norm_chars": 10194,
       "desc_norm_chars": 130,
-      "residual_chars": 9972,
+      "residual_chars": 9963,
       "registry_full_text_chars": 13394
     },
     "407": {
@@ -4962,7 +4955,7 @@
       "body_raw_chars": 25613,
       "body_norm_chars": 22782,
       "desc_norm_chars": 99,
-      "residual_chars": 22737,
+      "residual_chars": 22745,
       "registry_full_text_chars": 25613
     },
     "411": {
@@ -4986,7 +4979,7 @@
       "body_raw_chars": 13140,
       "body_norm_chars": 12267,
       "desc_norm_chars": 168,
-      "residual_chars": 12195,
+      "residual_chars": 12124,
       "registry_full_text_chars": 13140
     },
     "413": {
@@ -4998,7 +4991,7 @@
       "body_raw_chars": 12057,
       "body_norm_chars": 11061,
       "desc_norm_chars": 362,
-      "residual_chars": 10856,
+      "residual_chars": 10807,
       "registry_full_text_chars": 12057
     },
     "414": {
@@ -5010,7 +5003,7 @@
       "body_raw_chars": 6000,
       "body_norm_chars": 5783,
       "desc_norm_chars": 183,
-      "residual_chars": 5673,
+      "residual_chars": 5676,
       "registry_full_text_chars": 6000
     },
     "415": {
@@ -5022,7 +5015,7 @@
       "body_raw_chars": 28207,
       "body_norm_chars": 26012,
       "desc_norm_chars": 192,
-      "residual_chars": 25830,
+      "residual_chars": 25814,
       "registry_full_text_chars": 28207
     },
     "416": {
@@ -5034,7 +5027,7 @@
       "body_raw_chars": 32767,
       "body_norm_chars": 29991,
       "desc_norm_chars": 399,
-      "residual_chars": 29677,
+      "residual_chars": 29665,
       "registry_full_text_chars": 32767
     },
     "417": {
@@ -5046,7 +5039,7 @@
       "body_raw_chars": 11864,
       "body_norm_chars": 10492,
       "desc_norm_chars": 128,
-      "residual_chars": 10417,
+      "residual_chars": 10418,
       "registry_full_text_chars": 11864
     },
     "418": {
@@ -5058,7 +5051,7 @@
       "body_raw_chars": 10205,
       "body_norm_chars": 9306,
       "desc_norm_chars": 67,
-      "residual_chars": 9253,
+      "residual_chars": 9251,
       "registry_full_text_chars": 10205
     },
     "419": {
@@ -5106,7 +5099,7 @@
       "body_raw_chars": 9384,
       "body_norm_chars": 8403,
       "desc_norm_chars": 124,
-      "residual_chars": 8328,
+      "residual_chars": 8330,
       "registry_full_text_chars": 9384
     },
     "423": {
@@ -5118,7 +5111,7 @@
       "body_raw_chars": 12992,
       "body_norm_chars": 11996,
       "desc_norm_chars": 285,
-      "residual_chars": 11777,
+      "residual_chars": 11782,
       "registry_full_text_chars": 12992
     },
     "424": {
@@ -5130,7 +5123,7 @@
       "body_raw_chars": 4659,
       "body_norm_chars": 3943,
       "desc_norm_chars": 217,
-      "residual_chars": 3771,
+      "residual_chars": 3758,
       "registry_full_text_chars": 4659
     },
     "425": {
@@ -5155,7 +5148,7 @@
       "body_raw_chars": 15640,
       "body_norm_chars": 12914,
       "desc_norm_chars": 132,
-      "residual_chars": 12849,
+      "residual_chars": 12853,
       "registry_full_text_chars": 15640
     },
     "427": {
@@ -5167,19 +5160,19 @@
       "body_raw_chars": 13278,
       "body_norm_chars": 11167,
       "desc_norm_chars": 106,
-      "residual_chars": 11115,
+      "residual_chars": 11109,
       "registry_full_text_chars": 13278
     },
     "428": {
       "deposit_number": 428,
       "axn": "AXN:00F1.UNCLASSIFIED.🌆💚🪜🟢🛤️🔒",
       "title": "📦 ZENODO 📦: 🚫📦📦📦 ⚡🎭 🗡️ Sen Kuro 🗡️ 🔢: 🔟.5️⃣2️⃣8️⃣1️⃣/zenodo.1️⃣8️⃣4️⃣5️⃣1️⃣8️⃣6️⃣0️⃣",
-      "classification": "description_only",
-      "body_file": "AXN-00F1.md",
-      "body_raw_chars": 418,
-      "body_norm_chars": 10,
+      "classification": "stub_short",
+      "body_file": "AXN-00F1-text.md",
+      "body_raw_chars": 946,
+      "body_norm_chars": 764,
       "desc_norm_chars": 345,
-      "residual_chars": 10,
+      "residual_chars": 644,
       "registry_full_text_chars": 946
     },
     "429": {
@@ -5215,7 +5208,7 @@
       "body_raw_chars": 7314,
       "body_norm_chars": 6063,
       "desc_norm_chars": 142,
-      "residual_chars": 5948,
+      "residual_chars": 5945,
       "registry_full_text_chars": 7314
     },
     "432": {
@@ -5227,7 +5220,7 @@
       "body_raw_chars": 37717,
       "body_norm_chars": 34877,
       "desc_norm_chars": 190,
-      "residual_chars": 34742,
+      "residual_chars": 34725,
       "registry_full_text_chars": 37717
     },
     "433": {
@@ -5239,7 +5232,7 @@
       "body_raw_chars": 28706,
       "body_norm_chars": 27314,
       "desc_norm_chars": 386,
-      "residual_chars": 27082,
+      "residual_chars": 27053,
       "registry_full_text_chars": 28706
     },
     "434": {
@@ -5263,7 +5256,7 @@
       "body_raw_chars": 18246,
       "body_norm_chars": 16205,
       "desc_norm_chars": 94,
-      "residual_chars": 16161,
+      "residual_chars": 16159,
       "registry_full_text_chars": 18246
     },
     "436": {
@@ -5275,7 +5268,7 @@
       "body_raw_chars": 5139,
       "body_norm_chars": 4677,
       "desc_norm_chars": 112,
-      "residual_chars": 4609,
+      "residual_chars": 4608,
       "registry_full_text_chars": 5139
     },
     "437": {
@@ -5299,7 +5292,7 @@
       "body_raw_chars": 19596,
       "body_norm_chars": 17993,
       "desc_norm_chars": 236,
-      "residual_chars": 17804,
+      "residual_chars": 17805,
       "registry_full_text_chars": 19596
     },
     "439": {
@@ -5311,7 +5304,7 @@
       "body_raw_chars": 26957,
       "body_norm_chars": 24799,
       "desc_norm_chars": 290,
-      "residual_chars": 24661,
+      "residual_chars": 24586,
       "registry_full_text_chars": 26957
     },
     "440": {
@@ -5371,7 +5364,7 @@
       "body_raw_chars": 59219,
       "body_norm_chars": 53130,
       "desc_norm_chars": 250,
-      "residual_chars": 52935,
+      "residual_chars": 52999,
       "registry_full_text_chars": 59219
     },
     "445": {
@@ -5383,7 +5376,7 @@
       "body_raw_chars": 42700,
       "body_norm_chars": 38421,
       "desc_norm_chars": 301,
-      "residual_chars": 38214,
+      "residual_chars": 38202,
       "registry_full_text_chars": 42700
     },
     "446": {
@@ -5407,7 +5400,7 @@
       "body_raw_chars": 21356,
       "body_norm_chars": 19495,
       "desc_norm_chars": 236,
-      "residual_chars": 19362,
+      "residual_chars": 19361,
       "registry_full_text_chars": 21356
     },
     "448": {
@@ -5419,7 +5412,7 @@
       "body_raw_chars": 16774,
       "body_norm_chars": 15038,
       "desc_norm_chars": 349,
-      "residual_chars": 14765,
+      "residual_chars": 14846,
       "registry_full_text_chars": 16774
     },
     "449": {
@@ -5443,7 +5436,7 @@
       "body_raw_chars": 19569,
       "body_norm_chars": 18617,
       "desc_norm_chars": 296,
-      "residual_chars": 18411,
+      "residual_chars": 18399,
       "registry_full_text_chars": 19569
     },
     "451": {
@@ -5455,7 +5448,7 @@
       "body_raw_chars": 11149,
       "body_norm_chars": 9888,
       "desc_norm_chars": 94,
-      "residual_chars": 9822,
+      "residual_chars": 9814,
       "registry_full_text_chars": 11149
     },
     "452": {
@@ -5467,7 +5460,7 @@
       "body_raw_chars": 11648,
       "body_norm_chars": 10443,
       "desc_norm_chars": 106,
-      "residual_chars": 10366,
+      "residual_chars": 10367,
       "registry_full_text_chars": 11648
     },
     "453": {
@@ -5479,7 +5472,7 @@
       "body_raw_chars": 9648,
       "body_norm_chars": 8559,
       "desc_norm_chars": 97,
-      "residual_chars": 8501,
+      "residual_chars": 8492,
       "registry_full_text_chars": 9648
     },
     "454": {
@@ -5503,7 +5496,7 @@
       "body_raw_chars": 28763,
       "body_norm_chars": 25730,
       "desc_norm_chars": 385,
-      "residual_chars": 25399,
+      "residual_chars": 25406,
       "registry_full_text_chars": 28763
     },
     "456": {
@@ -5515,7 +5508,7 @@
       "body_raw_chars": 15878,
       "body_norm_chars": 14234,
       "desc_norm_chars": 366,
-      "residual_chars": 13978,
+      "residual_chars": 13971,
       "registry_full_text_chars": 15878
     },
     "457": {
@@ -5551,7 +5544,7 @@
       "body_raw_chars": 30911,
       "body_norm_chars": 28273,
       "desc_norm_chars": 276,
-      "residual_chars": 28086,
+      "residual_chars": 28091,
       "registry_full_text_chars": 30911
     },
     "460": {
@@ -5563,7 +5556,7 @@
       "body_raw_chars": 50600,
       "body_norm_chars": 24173,
       "desc_norm_chars": 85,
-      "residual_chars": 24104,
+      "residual_chars": 24102,
       "registry_full_text_chars": 50600
     },
     "461": {
@@ -5575,7 +5568,7 @@
       "body_raw_chars": 51818,
       "body_norm_chars": 32794,
       "desc_norm_chars": 85,
-      "residual_chars": 32725,
+      "residual_chars": 32723,
       "registry_full_text_chars": 51818
     },
     "462": {
@@ -5587,7 +5580,7 @@
       "body_raw_chars": 34546,
       "body_norm_chars": 23140,
       "desc_norm_chars": 100,
-      "residual_chars": 23065,
+      "residual_chars": 23069,
       "registry_full_text_chars": 34546
     },
     "463": {
@@ -5623,7 +5616,7 @@
       "body_raw_chars": 25242,
       "body_norm_chars": 23798,
       "desc_norm_chars": 306,
-      "residual_chars": 23573,
+      "residual_chars": 23642,
       "registry_full_text_chars": 25242
     },
     "466": {
@@ -5647,7 +5640,7 @@
       "body_raw_chars": 83366,
       "body_norm_chars": 79820,
       "desc_norm_chars": 272,
-      "residual_chars": 79548,
+      "residual_chars": 79390,
       "registry_full_text_chars": 83366
     },
     "468": {
@@ -5671,7 +5664,7 @@
       "body_raw_chars": 59908,
       "body_norm_chars": 58030,
       "desc_norm_chars": 179,
-      "residual_chars": 57913,
+      "residual_chars": 57897,
       "registry_full_text_chars": 59908
     },
     "470": {
@@ -5755,7 +5748,7 @@
       "body_raw_chars": 25902,
       "body_norm_chars": 23877,
       "desc_norm_chars": 284,
-      "residual_chars": 23732,
+      "residual_chars": 23653,
       "registry_full_text_chars": 25902
     },
     "477": {
@@ -5779,7 +5772,7 @@
       "body_raw_chars": 52263,
       "body_norm_chars": 49498,
       "desc_norm_chars": 167,
-      "residual_chars": 49406,
+      "residual_chars": 49422,
       "registry_full_text_chars": 52263
     },
     "479": {
@@ -5791,7 +5784,7 @@
       "body_raw_chars": 38388,
       "body_norm_chars": 36226,
       "desc_norm_chars": 120,
-      "residual_chars": 36152,
+      "residual_chars": 36153,
       "registry_full_text_chars": 38388
     },
     "480": {
@@ -5803,7 +5796,7 @@
       "body_raw_chars": 42532,
       "body_norm_chars": 40040,
       "desc_norm_chars": 120,
-      "residual_chars": 39966,
+      "residual_chars": 39967,
       "registry_full_text_chars": 42532
     },
     "481": {
@@ -5815,7 +5808,7 @@
       "body_raw_chars": 31225,
       "body_norm_chars": 29262,
       "desc_norm_chars": 120,
-      "residual_chars": 29188,
+      "residual_chars": 29189,
       "registry_full_text_chars": 31225
     },
     "482": {
@@ -5827,7 +5820,7 @@
       "body_raw_chars": 140061,
       "body_norm_chars": 130610,
       "desc_norm_chars": 247,
-      "residual_chars": 130471,
+      "residual_chars": 130478,
       "registry_full_text_chars": 140061
     },
     "483": {
@@ -5863,7 +5856,7 @@
       "body_raw_chars": 45989,
       "body_norm_chars": 44406,
       "desc_norm_chars": 314,
-      "residual_chars": 44201,
+      "residual_chars": 44202,
       "registry_full_text_chars": 45989
     },
     "486": {
@@ -5923,19 +5916,19 @@
       "body_raw_chars": 19209,
       "body_norm_chars": 17539,
       "desc_norm_chars": 248,
-      "residual_chars": 17395,
+      "residual_chars": 17391,
       "registry_full_text_chars": 19209
     },
     "491": {
       "deposit_number": 491,
       "axn": "AXN:0136.GOVERNANCE.🗝️🌓♊🌑🎺🔥",
       "title": "VISUAL SCHEMA — MAYBE SPACE BABY GARDEN LANES Under the auspices of Rebekah Cranes and the Institute for Diagrammatic Po",
-      "classification": "description_only",
-      "body_file": "AXN-0136.md",
-      "body_raw_chars": 486,
-      "body_norm_chars": 10,
+      "classification": "native_short",
+      "body_file": "AXN-0136-text.md",
+      "body_raw_chars": 1753,
+      "body_norm_chars": 1248,
       "desc_norm_chars": 145,
-      "residual_chars": 10,
+      "residual_chars": 1176,
       "registry_full_text_chars": 1753
     },
     "492": {
@@ -5959,7 +5952,7 @@
       "body_raw_chars": 4293,
       "body_norm_chars": 3927,
       "desc_norm_chars": 65,
-      "residual_chars": 3870,
+      "residual_chars": 3877,
       "registry_full_text_chars": 4293
     },
     "494": {
@@ -5971,7 +5964,7 @@
       "body_raw_chars": 15622,
       "body_norm_chars": 14240,
       "desc_norm_chars": 318,
-      "residual_chars": 14041,
+      "residual_chars": 14002,
       "registry_full_text_chars": 15622
     },
     "495": {
@@ -5995,7 +5988,7 @@
       "body_raw_chars": 26770,
       "body_norm_chars": 25547,
       "desc_norm_chars": 376,
-      "residual_chars": 25227,
+      "residual_chars": 25211,
       "registry_full_text_chars": 26770
     },
     "497": {
@@ -6007,7 +6000,7 @@
       "body_raw_chars": 64471,
       "body_norm_chars": 61254,
       "desc_norm_chars": 183,
-      "residual_chars": 61111,
+      "residual_chars": 61109,
       "registry_full_text_chars": 64471
     },
     "498": {
@@ -6019,7 +6012,7 @@
       "body_raw_chars": 37292,
       "body_norm_chars": 36463,
       "desc_norm_chars": 67,
-      "residual_chars": 36408,
+      "residual_chars": 36407,
       "registry_full_text_chars": 37292
     },
     "499": {
@@ -6031,7 +6024,7 @@
       "body_raw_chars": 464722,
       "body_norm_chars": 413779,
       "desc_norm_chars": 179,
-      "residual_chars": 413673,
+      "residual_chars": 413672,
       "registry_full_text_chars": 464722
     },
     "500": {
@@ -6043,7 +6036,7 @@
       "body_raw_chars": 52891,
       "body_norm_chars": 47438,
       "desc_norm_chars": 277,
-      "residual_chars": 47246,
+      "residual_chars": 47253,
       "registry_full_text_chars": 52891
     },
     "501": {
@@ -6062,15 +6055,13 @@
       "deposit_number": 502,
       "axn": "AXN:0144.EMPIRICAL.🝊↙️∮🪸⚙️📌",
       "title": "Whose Face Is on the Twenty? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $20 Portrait R",
-      "classification": "description_only",
-      "body_file": "AXN-0144.md",
-      "body_raw_chars": 486,
-      "body_norm_chars": 10,
+      "classification": "full",
+      "body_file": "AXN-0144-text.md",
+      "body_raw_chars": 24359,
+      "body_norm_chars": 22589,
       "desc_norm_chars": 223,
-      "residual_chars": 10,
-      "registry_full_text_chars": 538,
-      "sidecar_abstract_longer": 9416,
-      "review_flag": true
+      "residual_chars": 22502,
+      "registry_full_text_chars": 538
     },
     "503": {
       "deposit_number": 503,
@@ -6081,7 +6072,7 @@
       "body_raw_chars": 61745,
       "body_norm_chars": 58306,
       "desc_norm_chars": 377,
-      "residual_chars": 58080,
+      "residual_chars": 58077,
       "registry_full_text_chars": 61745
     },
     "504": {
@@ -6093,7 +6084,7 @@
       "body_raw_chars": 10777,
       "body_norm_chars": 9071,
       "desc_norm_chars": 259,
-      "residual_chars": 8872,
+      "residual_chars": 8909,
       "registry_full_text_chars": 10777
     },
     "505": {
@@ -6117,22 +6108,20 @@
       "body_raw_chars": 27459,
       "body_norm_chars": 26447,
       "desc_norm_chars": 67,
-      "residual_chars": 26398,
+      "residual_chars": 26395,
       "registry_full_text_chars": 27459
     },
     "507": {
       "deposit_number": 507,
       "axn": "AXN:014A.ARCHIVAL.⚖️🔚🎲↖️⊕🦅",
       "title": "All the Spoils of Babylon Curatorial Prompting, Latent Style Activation, and the Means of Meaning Production",
-      "classification": "description_only",
-      "body_file": "AXN-014A.md",
-      "body_raw_chars": 460,
-      "body_norm_chars": 10,
+      "classification": "full",
+      "body_file": "AXN-014A-text.md",
+      "body_raw_chars": 19643,
+      "body_norm_chars": 18082,
       "desc_norm_chars": 349,
-      "residual_chars": 10,
-      "registry_full_text_chars": 650,
-      "sidecar_abstract_longer": 2570,
-      "review_flag": true
+      "residual_chars": 17854,
+      "registry_full_text_chars": 650
     },
     "508": {
       "deposit_number": 508,
@@ -6150,15 +6139,13 @@
       "deposit_number": 509,
       "axn": "AXN:014C.EMPIRICAL.🎆🎵🕛🛡️✖️↘️",
       "title": "Whose Face Is on the Twenty? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $20 Portrait",
-      "classification": "description_only",
-      "body_file": "AXN-014C.md",
-      "body_raw_chars": 484,
-      "body_norm_chars": 10,
+      "classification": "full",
+      "body_file": "AXN-014C-text.md",
+      "body_raw_chars": 27017,
+      "body_norm_chars": 24713,
       "desc_norm_chars": 222,
-      "residual_chars": 10,
-      "registry_full_text_chars": 778,
-      "sidecar_abstract_longer": 2570,
-      "review_flag": true
+      "residual_chars": 24646,
+      "registry_full_text_chars": 778
     },
     "510": {
       "deposit_number": 510,
@@ -6169,7 +6156,7 @@
       "body_raw_chars": 59496,
       "body_norm_chars": 58256,
       "desc_norm_chars": 298,
-      "residual_chars": 57946,
+      "residual_chars": 58007,
       "registry_full_text_chars": 59496
     },
     "511": {
@@ -6181,7 +6168,7 @@
       "body_raw_chars": 22841,
       "body_norm_chars": 21148,
       "desc_norm_chars": 294,
-      "residual_chars": 20926,
+      "residual_chars": 20920,
       "registry_full_text_chars": 22841
     },
     "512": {
@@ -6193,7 +6180,7 @@
       "body_raw_chars": 36204,
       "body_norm_chars": 34336,
       "desc_norm_chars": 183,
-      "residual_chars": 34218,
+      "residual_chars": 34216,
       "registry_full_text_chars": 36204
     },
     "513": {
@@ -6205,7 +6192,7 @@
       "body_raw_chars": 24180,
       "body_norm_chars": 23476,
       "desc_norm_chars": 194,
-      "residual_chars": 23347,
+      "residual_chars": 23349,
       "registry_full_text_chars": 24180
     },
     "514": {
@@ -6277,7 +6264,7 @@
       "body_raw_chars": 22036,
       "body_norm_chars": 21337,
       "desc_norm_chars": 345,
-      "residual_chars": 21029,
+      "residual_chars": 21080,
       "registry_full_text_chars": 22036
     },
     "520": {
@@ -6289,7 +6276,7 @@
       "body_raw_chars": 23434,
       "body_norm_chars": 19359,
       "desc_norm_chars": 383,
-      "residual_chars": 19063,
+      "residual_chars": 19072,
       "registry_full_text_chars": 23434
     },
     "521": {
@@ -6313,7 +6300,7 @@
       "body_raw_chars": 40891,
       "body_norm_chars": 39436,
       "desc_norm_chars": 135,
-      "residual_chars": 39312,
+      "residual_chars": 39378,
       "registry_full_text_chars": 40891
     },
     "523": {
@@ -6325,7 +6312,7 @@
       "body_raw_chars": 24388,
       "body_norm_chars": 21933,
       "desc_norm_chars": 364,
-      "residual_chars": 21665,
+      "residual_chars": 21590,
       "registry_full_text_chars": 24388
     },
     "524": {
@@ -6397,7 +6384,7 @@
       "body_raw_chars": 56094,
       "body_norm_chars": 51989,
       "desc_norm_chars": 190,
-      "residual_chars": 51858,
+      "residual_chars": 51871,
       "registry_full_text_chars": 56094
     },
     "530": {
@@ -6409,7 +6396,7 @@
       "body_raw_chars": 49864,
       "body_norm_chars": 47992,
       "desc_norm_chars": 297,
-      "residual_chars": 47765,
+      "residual_chars": 47841,
       "registry_full_text_chars": 49864
     },
     "531": {
@@ -6421,7 +6408,7 @@
       "body_raw_chars": 51308,
       "body_norm_chars": 49358,
       "desc_norm_chars": 330,
-      "residual_chars": 49144,
+      "residual_chars": 49139,
       "registry_full_text_chars": 51308
     },
     "532": {
@@ -6445,7 +6432,7 @@
       "body_raw_chars": 39419,
       "body_norm_chars": 38339,
       "desc_norm_chars": 323,
-      "residual_chars": 38178,
+      "residual_chars": 38114,
       "registry_full_text_chars": 39419
     },
     "534": {
@@ -6469,7 +6456,7 @@
       "body_raw_chars": 30031,
       "body_norm_chars": 28623,
       "desc_norm_chars": 372,
-      "residual_chars": 28350,
+      "residual_chars": 28346,
       "registry_full_text_chars": 30031
     },
     "536": {
@@ -6481,7 +6468,7 @@
       "body_raw_chars": 6564,
       "body_norm_chars": 6166,
       "desc_norm_chars": 269,
-      "residual_chars": 5992,
+      "residual_chars": 5997,
       "registry_full_text_chars": 6564
     },
     "537": {
@@ -6493,7 +6480,7 @@
       "body_raw_chars": 8811,
       "body_norm_chars": 8211,
       "desc_norm_chars": 269,
-      "residual_chars": 8037,
+      "residual_chars": 8042,
       "registry_full_text_chars": 8811
     },
     "538": {
@@ -6553,7 +6540,7 @@
       "body_raw_chars": 66456,
       "body_norm_chars": 61603,
       "desc_norm_chars": 285,
-      "residual_chars": 61423,
+      "residual_chars": 61416,
       "registry_full_text_chars": 66456
     },
     "543": {
@@ -6577,7 +6564,7 @@
       "body_raw_chars": 22618,
       "body_norm_chars": 19610,
       "desc_norm_chars": 290,
-      "residual_chars": 19364,
+      "residual_chars": 19432,
       "registry_full_text_chars": 22618
     },
     "545": {
@@ -6589,7 +6576,7 @@
       "body_raw_chars": 13544,
       "body_norm_chars": 10909,
       "desc_norm_chars": 243,
-      "residual_chars": 10738,
+      "residual_chars": 10754,
       "registry_full_text_chars": 13544
     },
     "546": {
@@ -6613,7 +6600,7 @@
       "body_raw_chars": 16656,
       "body_norm_chars": 14403,
       "desc_norm_chars": 121,
-      "residual_chars": 14269,
+      "residual_chars": 14255,
       "registry_full_text_chars": 16656
     },
     "548": {
@@ -6637,7 +6624,7 @@
       "body_raw_chars": 78347,
       "body_norm_chars": 48358,
       "desc_norm_chars": 378,
-      "residual_chars": 48090,
+      "residual_chars": 48151,
       "registry_full_text_chars": 78347
     },
     "550": {
@@ -6649,7 +6636,7 @@
       "body_raw_chars": 46953,
       "body_norm_chars": 45288,
       "desc_norm_chars": 238,
-      "residual_chars": 45103,
+      "residual_chars": 45109,
       "registry_full_text_chars": 46953
     },
     "551": {
@@ -6673,7 +6660,7 @@
       "body_raw_chars": 60680,
       "body_norm_chars": 46666,
       "desc_norm_chars": 171,
-      "residual_chars": 46594,
+      "residual_chars": 46580,
       "registry_full_text_chars": 60680
     },
     "553": {
@@ -6685,7 +6672,7 @@
       "body_raw_chars": 36871,
       "body_norm_chars": 34443,
       "desc_norm_chars": 189,
-      "residual_chars": 34304,
+      "residual_chars": 34302,
       "registry_full_text_chars": 36871
     },
     "554": {
@@ -6697,19 +6684,19 @@
       "body_raw_chars": 16299,
       "body_norm_chars": 15224,
       "desc_norm_chars": 244,
-      "residual_chars": 15046,
+      "residual_chars": 15056,
       "registry_full_text_chars": 16299
     },
     "555": {
       "deposit_number": 555,
       "axn": "AXN:0181.GOVERNANCE.🪜🚩⚪👋🌌■",
       "title": "VISUAL SCHEMA — SPACE ARK",
-      "classification": "description_only",
-      "body_file": "AXN-0181.md",
-      "body_raw_chars": 294,
-      "body_norm_chars": 10,
+      "classification": "full",
+      "body_file": "AXN-0181-text.md",
+      "body_raw_chars": 11842,
+      "body_norm_chars": 10248,
       "desc_norm_chars": 25,
-      "residual_chars": 10,
+      "residual_chars": 10248,
       "registry_full_text_chars": 274
     },
     "556": {
@@ -6733,7 +6720,7 @@
       "body_raw_chars": 305939,
       "body_norm_chars": 151406,
       "desc_norm_chars": 141,
-      "residual_chars": 151332,
+      "residual_chars": 151328,
       "registry_full_text_chars": 305939
     },
     "558": {
@@ -6817,7 +6804,7 @@
       "body_raw_chars": 32753,
       "body_norm_chars": 23816,
       "desc_norm_chars": 193,
-      "residual_chars": 23718,
+      "residual_chars": 23721,
       "registry_full_text_chars": 32753
     },
     "565": {
@@ -6853,7 +6840,7 @@
       "body_raw_chars": 21387,
       "body_norm_chars": 20795,
       "desc_norm_chars": 150,
-      "residual_chars": 20707,
+      "residual_chars": 20693,
       "registry_full_text_chars": 21387
     },
     "568": {
@@ -6865,7 +6852,7 @@
       "body_raw_chars": 24416,
       "body_norm_chars": 24209,
       "desc_norm_chars": 284,
-      "residual_chars": 23981,
+      "residual_chars": 24077,
       "registry_full_text_chars": 24416
     },
     "569": {
@@ -6877,7 +6864,7 @@
       "body_raw_chars": 27577,
       "body_norm_chars": 27067,
       "desc_norm_chars": 383,
-      "residual_chars": 26796,
+      "residual_chars": 26799,
       "registry_full_text_chars": 27577
     },
     "570": {
@@ -6901,7 +6888,7 @@
       "body_raw_chars": 22870,
       "body_norm_chars": 22562,
       "desc_norm_chars": 384,
-      "residual_chars": 22269,
+      "residual_chars": 22267,
       "registry_full_text_chars": 22870
     },
     "572": {
@@ -6913,7 +6900,7 @@
       "body_raw_chars": 19153,
       "body_norm_chars": 18886,
       "desc_norm_chars": 230,
-      "residual_chars": 18740,
+      "residual_chars": 18677,
       "registry_full_text_chars": 19153
     },
     "573": {
@@ -6949,7 +6936,7 @@
       "body_raw_chars": 12635,
       "body_norm_chars": 12518,
       "desc_norm_chars": 142,
-      "residual_chars": 12424,
+      "residual_chars": 12426,
       "registry_full_text_chars": 12635
     },
     "576": {
@@ -6973,7 +6960,7 @@
       "body_raw_chars": 30390,
       "body_norm_chars": 28909,
       "desc_norm_chars": 105,
-      "residual_chars": 28831,
+      "residual_chars": 28838,
       "registry_full_text_chars": 30390
     },
     "578": {
@@ -6997,7 +6984,7 @@
       "body_raw_chars": 25717,
       "body_norm_chars": 25424,
       "desc_norm_chars": 68,
-      "residual_chars": 25366,
+      "residual_chars": 25371,
       "registry_full_text_chars": 25717
     },
     "580": {
@@ -7009,7 +6996,7 @@
       "body_raw_chars": 24534,
       "body_norm_chars": 23241,
       "desc_norm_chars": 156,
-      "residual_chars": 23182,
+      "residual_chars": 23169,
       "registry_full_text_chars": 24534
     },
     "581": {
@@ -7021,7 +7008,7 @@
       "body_raw_chars": 17741,
       "body_norm_chars": 17419,
       "desc_norm_chars": 111,
-      "residual_chars": 17348,
+      "residual_chars": 17358,
       "registry_full_text_chars": 17741
     },
     "582": {
@@ -7045,7 +7032,7 @@
       "body_raw_chars": 36748,
       "body_norm_chars": 35020,
       "desc_norm_chars": 355,
-      "residual_chars": 34807,
+      "residual_chars": 34721,
       "registry_full_text_chars": 36748
     },
     "584": {
@@ -7069,7 +7056,7 @@
       "body_raw_chars": 33952,
       "body_norm_chars": 33609,
       "desc_norm_chars": 72,
-      "residual_chars": 33561,
+      "residual_chars": 33569,
       "registry_full_text_chars": 33952
     },
     "586": {
@@ -7105,7 +7092,7 @@
       "body_raw_chars": 34671,
       "body_norm_chars": 34333,
       "desc_norm_chars": 149,
-      "residual_chars": 34222,
+      "residual_chars": 34220,
       "registry_full_text_chars": 34671
     },
     "589": {
@@ -7165,7 +7152,7 @@
       "body_raw_chars": 22221,
       "body_norm_chars": 19663,
       "desc_norm_chars": 200,
-      "residual_chars": 19528,
+      "residual_chars": 19523,
       "registry_full_text_chars": 22221
     },
     "594": {
@@ -7177,7 +7164,7 @@
       "body_raw_chars": 9035,
       "body_norm_chars": 8860,
       "desc_norm_chars": 67,
-      "residual_chars": 8806,
+      "residual_chars": 8804,
       "registry_full_text_chars": 9035
     },
     "595": {
@@ -7189,7 +7176,7 @@
       "body_raw_chars": 17752,
       "body_norm_chars": 15814,
       "desc_norm_chars": 95,
-      "residual_chars": 15762,
+      "residual_chars": 15768,
       "registry_full_text_chars": 17752
     },
     "596": {
@@ -7213,7 +7200,7 @@
       "body_raw_chars": 46399,
       "body_norm_chars": 44881,
       "desc_norm_chars": 253,
-      "residual_chars": 44743,
+      "residual_chars": 44683,
       "registry_full_text_chars": 46399
     },
     "598": {
@@ -7249,7 +7236,7 @@
       "body_raw_chars": 15854,
       "body_norm_chars": 14676,
       "desc_norm_chars": 372,
-      "residual_chars": 14399,
+      "residual_chars": 14456,
       "registry_full_text_chars": 15854
     },
     "601": {
@@ -7273,7 +7260,7 @@
       "body_raw_chars": 31516,
       "body_norm_chars": 29053,
       "desc_norm_chars": 228,
-      "residual_chars": 28912,
+      "residual_chars": 28839,
       "registry_full_text_chars": 31516
     },
     "603": {
@@ -7297,7 +7284,7 @@
       "body_raw_chars": 26739,
       "body_norm_chars": 25679,
       "desc_norm_chars": 342,
-      "residual_chars": 25413,
+      "residual_chars": 25446,
       "registry_full_text_chars": 26739
     },
     "605": {
@@ -7309,7 +7296,7 @@
       "body_raw_chars": 45904,
       "body_norm_chars": 44253,
       "desc_norm_chars": 382,
-      "residual_chars": 43763,
+      "residual_chars": 43679,
       "registry_full_text_chars": 45904
     },
     "606": {
@@ -7321,7 +7308,7 @@
       "body_raw_chars": 10675,
       "body_norm_chars": 10563,
       "desc_norm_chars": 349,
-      "residual_chars": 10319,
+      "residual_chars": 10312,
       "registry_full_text_chars": 10675
     },
     "607": {
@@ -7333,7 +7320,7 @@
       "body_raw_chars": 3617,
       "body_norm_chars": 3447,
       "desc_norm_chars": 207,
-      "residual_chars": 3310,
+      "residual_chars": 3333,
       "registry_full_text_chars": 3617
     },
     "608": {
@@ -7345,7 +7332,7 @@
       "body_raw_chars": 32097,
       "body_norm_chars": 28868,
       "desc_norm_chars": 322,
-      "residual_chars": 28632,
+      "residual_chars": 28642,
       "registry_full_text_chars": 32097
     },
     "609": {
@@ -7357,7 +7344,7 @@
       "body_raw_chars": 49715,
       "body_norm_chars": 43328,
       "desc_norm_chars": 178,
-      "residual_chars": 43272,
+      "residual_chars": 43200,
       "registry_full_text_chars": 49715
     },
     "610": {
@@ -7369,7 +7356,7 @@
       "body_raw_chars": 89579,
       "body_norm_chars": 86116,
       "desc_norm_chars": 337,
-      "residual_chars": 85782,
+      "residual_chars": 85783,
       "registry_full_text_chars": 89579
     },
     "611": {
@@ -7393,7 +7380,7 @@
       "body_raw_chars": 59520,
       "body_norm_chars": 56350,
       "desc_norm_chars": 223,
-      "residual_chars": 56098,
+      "residual_chars": 56161,
       "registry_full_text_chars": 59520
     },
     "613": {
@@ -7405,7 +7392,7 @@
       "body_raw_chars": 5849,
       "body_norm_chars": 5544,
       "desc_norm_chars": 198,
-      "residual_chars": 5408,
+      "residual_chars": 5407,
       "registry_full_text_chars": 5849
     },
     "614": {
@@ -7417,7 +7404,7 @@
       "body_raw_chars": 17862,
       "body_norm_chars": 17310,
       "desc_norm_chars": 263,
-      "residual_chars": 17126,
+      "residual_chars": 17114,
       "registry_full_text_chars": 17862
     },
     "615": {
@@ -7429,7 +7416,7 @@
       "body_raw_chars": 24645,
       "body_norm_chars": 24007,
       "desc_norm_chars": 272,
-      "residual_chars": 23766,
+      "residual_chars": 23768,
       "registry_full_text_chars": 24645
     },
     "616": {
@@ -7453,7 +7440,7 @@
       "body_raw_chars": 27058,
       "body_norm_chars": 24468,
       "desc_norm_chars": 198,
-      "residual_chars": 24306,
+      "residual_chars": 24300,
       "registry_full_text_chars": 27058
     },
     "618": {
@@ -7465,7 +7452,7 @@
       "body_raw_chars": 17826,
       "body_norm_chars": 16856,
       "desc_norm_chars": 137,
-      "residual_chars": 16682,
+      "residual_chars": 16710,
       "registry_full_text_chars": 17826
     },
     "619": {
@@ -7477,7 +7464,7 @@
       "body_raw_chars": 15692,
       "body_norm_chars": 14872,
       "desc_norm_chars": 131,
-      "residual_chars": 14799,
+      "residual_chars": 14797,
       "registry_full_text_chars": 15692
     },
     "620": {
@@ -7489,7 +7476,7 @@
       "body_raw_chars": 18682,
       "body_norm_chars": 18133,
       "desc_norm_chars": 158,
-      "residual_chars": 17990,
+      "residual_chars": 18065,
       "registry_full_text_chars": 18682
     },
     "621": {
@@ -7501,7 +7488,7 @@
       "body_raw_chars": 23989,
       "body_norm_chars": 21167,
       "desc_norm_chars": 267,
-      "residual_chars": 20954,
+      "residual_chars": 21009,
       "registry_full_text_chars": 23989
     },
     "622": {
@@ -7513,7 +7500,7 @@
       "body_raw_chars": 38624,
       "body_norm_chars": 36470,
       "desc_norm_chars": 286,
-      "residual_chars": 36245,
+      "residual_chars": 36326,
       "registry_full_text_chars": 38624
     },
     "623": {
@@ -7525,7 +7512,7 @@
       "body_raw_chars": 34793,
       "body_norm_chars": 32798,
       "desc_norm_chars": 375,
-      "residual_chars": 32598,
+      "residual_chars": 32491,
       "registry_full_text_chars": 34793
     },
     "624": {
@@ -7537,7 +7524,7 @@
       "body_raw_chars": 34045,
       "body_norm_chars": 32050,
       "desc_norm_chars": 330,
-      "residual_chars": 31764,
+      "residual_chars": 31782,
       "registry_full_text_chars": 34045
     },
     "625": {
@@ -7549,7 +7536,7 @@
       "body_raw_chars": 22717,
       "body_norm_chars": 20842,
       "desc_norm_chars": 358,
-      "residual_chars": 20583,
+      "residual_chars": 20587,
       "registry_full_text_chars": 22717
     },
     "626": {
@@ -7561,7 +7548,7 @@
       "body_raw_chars": 27668,
       "body_norm_chars": 24649,
       "desc_norm_chars": 318,
-      "residual_chars": 24378,
+      "residual_chars": 24458,
       "registry_full_text_chars": 27668
     },
     "627": {
@@ -7597,7 +7584,7 @@
       "body_raw_chars": 7082,
       "body_norm_chars": 6051,
       "desc_norm_chars": 263,
-      "residual_chars": 5916,
+      "residual_chars": 5852,
       "registry_full_text_chars": 7082
     },
     "630": {
@@ -7609,7 +7596,7 @@
       "body_raw_chars": 7229,
       "body_norm_chars": 6653,
       "desc_norm_chars": 230,
-      "residual_chars": 6477,
+      "residual_chars": 6476,
       "registry_full_text_chars": 7229
     },
     "631": {
@@ -7633,7 +7620,7 @@
       "body_raw_chars": 17077,
       "body_norm_chars": 16161,
       "desc_norm_chars": 278,
-      "residual_chars": 16038,
+      "residual_chars": 15935,
       "registry_full_text_chars": 17077
     },
     "633": {
@@ -7669,7 +7656,7 @@
       "body_raw_chars": 72541,
       "body_norm_chars": 45927,
       "desc_norm_chars": 161,
-      "residual_chars": 45845,
+      "residual_chars": 45849,
       "registry_full_text_chars": 72541
     },
     "636": {
@@ -7693,7 +7680,7 @@
       "body_raw_chars": 19386,
       "body_norm_chars": 17473,
       "desc_norm_chars": 258,
-      "residual_chars": 17350,
+      "residual_chars": 17333,
       "registry_full_text_chars": 19386
     },
     "638": {
@@ -7705,7 +7692,7 @@
       "body_raw_chars": 59456,
       "body_norm_chars": 58522,
       "desc_norm_chars": 251,
-      "residual_chars": 58350,
+      "residual_chars": 58412,
       "registry_full_text_chars": 59456
     },
     "639": {
@@ -7741,7 +7728,7 @@
       "body_raw_chars": 35769,
       "body_norm_chars": 34344,
       "desc_norm_chars": 364,
-      "residual_chars": 34125,
+      "residual_chars": 34056,
       "registry_full_text_chars": 35769
     },
     "642": {
@@ -7753,7 +7740,7 @@
       "body_raw_chars": 61363,
       "body_norm_chars": 58550,
       "desc_norm_chars": 283,
-      "residual_chars": 58225,
+      "residual_chars": 58238,
       "registry_full_text_chars": 61363
     },
     "643": {
@@ -7777,7 +7764,7 @@
       "body_raw_chars": 22530,
       "body_norm_chars": 20811,
       "desc_norm_chars": 227,
-      "residual_chars": 20688,
+      "residual_chars": 20621,
       "registry_full_text_chars": 22530
     },
     "645": {
@@ -7801,7 +7788,7 @@
       "body_raw_chars": 8025,
       "body_norm_chars": 7573,
       "desc_norm_chars": 316,
-      "residual_chars": 7293,
+      "residual_chars": 7295,
       "registry_full_text_chars": 8025
     },
     "647": {
@@ -7825,7 +7812,7 @@
       "body_raw_chars": 11910,
       "body_norm_chars": 11511,
       "desc_norm_chars": 316,
-      "residual_chars": 11231,
+      "residual_chars": 11233,
       "registry_full_text_chars": 11910
     },
     "649": {
@@ -7873,7 +7860,7 @@
       "body_raw_chars": 6844,
       "body_norm_chars": 6135,
       "desc_norm_chars": 159,
-      "residual_chars": 5937,
+      "residual_chars": 5939,
       "registry_full_text_chars": 6844
     },
     "653": {
@@ -7897,7 +7884,7 @@
       "body_raw_chars": 6637,
       "body_norm_chars": 5980,
       "desc_norm_chars": 379,
-      "residual_chars": 5665,
+      "residual_chars": 5662,
       "registry_full_text_chars": 6637
     },
     "655": {
@@ -7909,7 +7896,7 @@
       "body_raw_chars": 5152,
       "body_norm_chars": 4602,
       "desc_norm_chars": 273,
-      "residual_chars": 4385,
+      "residual_chars": 4469,
       "registry_full_text_chars": 5152
     },
     "656": {
@@ -7933,7 +7920,7 @@
       "body_raw_chars": 5797,
       "body_norm_chars": 5343,
       "desc_norm_chars": 77,
-      "residual_chars": 5298,
+      "residual_chars": 5297,
       "registry_full_text_chars": 5797
     },
     "658": {
@@ -7969,7 +7956,7 @@
       "body_raw_chars": 15189,
       "body_norm_chars": 13870,
       "desc_norm_chars": 191,
-      "residual_chars": 13731,
+      "residual_chars": 13726,
       "registry_full_text_chars": 15189
     },
     "661": {
@@ -7981,7 +7968,7 @@
       "body_raw_chars": 14163,
       "body_norm_chars": 13193,
       "desc_norm_chars": 333,
-      "residual_chars": 12971,
+      "residual_chars": 12974,
       "registry_full_text_chars": 14163
     },
     "662": {
@@ -7993,7 +7980,7 @@
       "body_raw_chars": 19100,
       "body_norm_chars": 17757,
       "desc_norm_chars": 342,
-      "residual_chars": 17584,
+      "residual_chars": 17443,
       "registry_full_text_chars": 19100
     },
     "663": {
@@ -8005,7 +7992,7 @@
       "body_raw_chars": 26192,
       "body_norm_chars": 25875,
       "desc_norm_chars": 127,
-      "residual_chars": 25762,
+      "residual_chars": 25764,
       "registry_full_text_chars": 26192
     },
     "664": {
@@ -8029,7 +8016,7 @@
       "body_raw_chars": 2707,
       "body_norm_chars": 2406,
       "desc_norm_chars": 389,
-      "residual_chars": 2141,
+      "residual_chars": 2113,
       "registry_full_text_chars": 2707,
       "review_flag": true
     },
@@ -8054,7 +8041,7 @@
       "body_raw_chars": 23034,
       "body_norm_chars": 21934,
       "desc_norm_chars": 387,
-      "residual_chars": 21672,
+      "residual_chars": 21738,
       "registry_full_text_chars": 23034
     },
     "668": {
@@ -8066,7 +8053,7 @@
       "body_raw_chars": 36250,
       "body_norm_chars": 34704,
       "desc_norm_chars": 226,
-      "residual_chars": 34581,
+      "residual_chars": 34497,
       "registry_full_text_chars": 36250
     },
     "669": {
@@ -8090,7 +8077,7 @@
       "body_raw_chars": 56236,
       "body_norm_chars": 54641,
       "desc_norm_chars": 345,
-      "residual_chars": 54330,
+      "residual_chars": 54339,
       "registry_full_text_chars": 56236
     },
     "671": {
@@ -8102,7 +8089,7 @@
       "body_raw_chars": 9461,
       "body_norm_chars": 8791,
       "desc_norm_chars": 308,
-      "residual_chars": 8568,
+      "residual_chars": 8586,
       "registry_full_text_chars": 9461
     },
     "672": {
@@ -8114,7 +8101,7 @@
       "body_raw_chars": 4422,
       "body_norm_chars": 4337,
       "desc_norm_chars": 243,
-      "residual_chars": 4121,
+      "residual_chars": 4173,
       "registry_full_text_chars": 4422
     },
     "673": {
@@ -8150,7 +8137,7 @@
       "body_raw_chars": 15486,
       "body_norm_chars": 14726,
       "desc_norm_chars": 326,
-      "residual_chars": 14483,
+      "residual_chars": 14494,
       "registry_full_text_chars": 15486
     },
     "676": {
@@ -8162,7 +8149,7 @@
       "body_raw_chars": 5130,
       "body_norm_chars": 4833,
       "desc_norm_chars": 318,
-      "residual_chars": 4546,
+      "residual_chars": 4577,
       "registry_full_text_chars": 5130
     },
     "677": {
@@ -8174,7 +8161,7 @@
       "body_raw_chars": 4911,
       "body_norm_chars": 4594,
       "desc_norm_chars": 272,
-      "residual_chars": 4372,
+      "residual_chars": 4429,
       "registry_full_text_chars": 4911
     },
     "678": {
@@ -8186,7 +8173,7 @@
       "body_raw_chars": 9345,
       "body_norm_chars": 8826,
       "desc_norm_chars": 205,
-      "residual_chars": 8668,
+      "residual_chars": 8672,
       "registry_full_text_chars": 9345
     },
     "679": {
@@ -8198,7 +8185,7 @@
       "body_raw_chars": 23527,
       "body_norm_chars": 22410,
       "desc_norm_chars": 348,
-      "residual_chars": 22126,
+      "residual_chars": 22196,
       "registry_full_text_chars": 23527
     },
     "680": {
@@ -8210,7 +8197,7 @@
       "body_raw_chars": 32149,
       "body_norm_chars": 29660,
       "desc_norm_chars": 271,
-      "residual_chars": 29456,
+      "residual_chars": 29457,
       "registry_full_text_chars": 32149
     },
     "681": {
@@ -8222,7 +8209,7 @@
       "body_raw_chars": 2731,
       "body_norm_chars": 2675,
       "desc_norm_chars": 91,
-      "residual_chars": 2601,
+      "residual_chars": 2603,
       "registry_full_text_chars": 2731,
       "review_flag": true
     },
@@ -8259,7 +8246,7 @@
       "body_raw_chars": 47850,
       "body_norm_chars": 46571,
       "desc_norm_chars": 326,
-      "residual_chars": 46123,
+      "residual_chars": 46152,
       "registry_full_text_chars": 47850
     },
     "685": {
@@ -8271,7 +8258,7 @@
       "body_raw_chars": 11490,
       "body_norm_chars": 10219,
       "desc_norm_chars": 279,
-      "residual_chars": 9962,
+      "residual_chars": 10031,
       "registry_full_text_chars": 11490
     },
     "686": {
@@ -8283,7 +8270,7 @@
       "body_raw_chars": 20754,
       "body_norm_chars": 19216,
       "desc_norm_chars": 234,
-      "residual_chars": 19025,
+      "residual_chars": 19103,
       "registry_full_text_chars": 20754
     },
     "687": {
@@ -8307,7 +8294,7 @@
       "body_raw_chars": 14073,
       "body_norm_chars": 13500,
       "desc_norm_chars": 370,
-      "residual_chars": 13203,
+      "residual_chars": 13202,
       "registry_full_text_chars": 14073
     },
     "689": {
@@ -8319,7 +8306,7 @@
       "body_raw_chars": 17018,
       "body_norm_chars": 16639,
       "desc_norm_chars": 99,
-      "residual_chars": 16587,
+      "residual_chars": 16577,
       "registry_full_text_chars": 17018
     },
     "690": {
@@ -8343,7 +8330,7 @@
       "body_raw_chars": 10669,
       "body_norm_chars": 10277,
       "desc_norm_chars": 68,
-      "residual_chars": 10227,
+      "residual_chars": 10224,
       "registry_full_text_chars": 10669
     },
     "692": {
@@ -8403,7 +8390,7 @@
       "body_raw_chars": 24016,
       "body_norm_chars": 22044,
       "desc_norm_chars": 78,
-      "residual_chars": 21981,
+      "residual_chars": 21987,
       "registry_full_text_chars": 24016
     },
     "697": {
@@ -8415,7 +8402,7 @@
       "body_raw_chars": 13959,
       "body_norm_chars": 12595,
       "desc_norm_chars": 396,
-      "residual_chars": 12301,
+      "residual_chars": 12318,
       "registry_full_text_chars": 13959
     },
     "698": {
@@ -8427,7 +8414,7 @@
       "body_raw_chars": 10315,
       "body_norm_chars": 9018,
       "desc_norm_chars": 348,
-      "residual_chars": 8806,
+      "residual_chars": 8804,
       "registry_full_text_chars": 10315
     },
     "699": {
@@ -8439,7 +8426,7 @@
       "body_raw_chars": 78652,
       "body_norm_chars": 71587,
       "desc_norm_chars": 317,
-      "residual_chars": 71333,
+      "residual_chars": 71320,
       "registry_full_text_chars": 78652
     },
     "700": {
@@ -8451,7 +8438,7 @@
       "body_raw_chars": 26712,
       "body_norm_chars": 25264,
       "desc_norm_chars": 296,
-      "residual_chars": 25059,
+      "residual_chars": 25082,
       "registry_full_text_chars": 26712
     },
     "701": {
@@ -8475,7 +8462,7 @@
       "body_raw_chars": 29316,
       "body_norm_chars": 27162,
       "desc_norm_chars": 141,
-      "residual_chars": 27091,
+      "residual_chars": 27090,
       "registry_full_text_chars": 29316
     },
     "703": {
@@ -8511,7 +8498,7 @@
       "body_raw_chars": 12247,
       "body_norm_chars": 9689,
       "desc_norm_chars": 363,
-      "residual_chars": 9406,
+      "residual_chars": 9412,
       "registry_full_text_chars": 12247
     },
     "706": {
@@ -8547,7 +8534,7 @@
       "body_raw_chars": 19983,
       "body_norm_chars": 16923,
       "desc_norm_chars": 237,
-      "residual_chars": 16782,
+      "residual_chars": 16778,
       "registry_full_text_chars": 19983
     },
     "709": {
@@ -8559,7 +8546,7 @@
       "body_raw_chars": 22406,
       "body_norm_chars": 20381,
       "desc_norm_chars": 379,
-      "residual_chars": 20089,
+      "residual_chars": 20112,
       "registry_full_text_chars": 22406
     },
     "710": {
@@ -8571,7 +8558,7 @@
       "body_raw_chars": 17243,
       "body_norm_chars": 14425,
       "desc_norm_chars": 391,
-      "residual_chars": 14153,
+      "residual_chars": 14143,
       "registry_full_text_chars": 17243
     },
     "711": {
@@ -8619,7 +8606,7 @@
       "body_raw_chars": 29076,
       "body_norm_chars": 26419,
       "desc_norm_chars": 299,
-      "residual_chars": 26229,
+      "residual_chars": 26159,
       "registry_full_text_chars": 29076
     },
     "715": {
@@ -8643,7 +8630,7 @@
       "body_raw_chars": 21306,
       "body_norm_chars": 20191,
       "desc_norm_chars": 225,
-      "residual_chars": 20025,
+      "residual_chars": 20019,
       "registry_full_text_chars": 21306
     },
     "717": {
@@ -8655,7 +8642,7 @@
       "body_raw_chars": 28388,
       "body_norm_chars": 27672,
       "desc_norm_chars": 173,
-      "residual_chars": 27598,
+      "residual_chars": 27594,
       "registry_full_text_chars": 28388
     },
     "718": {
@@ -8667,7 +8654,7 @@
       "body_raw_chars": 17063,
       "body_norm_chars": 15291,
       "desc_norm_chars": 131,
-      "residual_chars": 15203,
+      "residual_chars": 15215,
       "registry_full_text_chars": 17063
     },
     "719": {
@@ -8679,7 +8666,7 @@
       "body_raw_chars": 17584,
       "body_norm_chars": 16713,
       "desc_norm_chars": 351,
-      "residual_chars": 16434,
+      "residual_chars": 16525,
       "registry_full_text_chars": 17584
     },
     "720": {
@@ -8691,7 +8678,7 @@
       "body_raw_chars": 40488,
       "body_norm_chars": 38378,
       "desc_norm_chars": 178,
-      "residual_chars": 38300,
+      "residual_chars": 38312,
       "registry_full_text_chars": 40488
     },
     "721": {
@@ -8703,7 +8690,7 @@
       "body_raw_chars": 35674,
       "body_norm_chars": 33621,
       "desc_norm_chars": 226,
-      "residual_chars": 33442,
+      "residual_chars": 33505,
       "registry_full_text_chars": 35674
     },
     "722": {
@@ -8739,7 +8726,7 @@
       "body_raw_chars": 17129,
       "body_norm_chars": 16558,
       "desc_norm_chars": 270,
-      "residual_chars": 16401,
+      "residual_chars": 16375,
       "registry_full_text_chars": 17129
     },
     "725": {
@@ -8763,7 +8750,7 @@
       "body_raw_chars": 44957,
       "body_norm_chars": 44337,
       "desc_norm_chars": 220,
-      "residual_chars": 44271,
+      "residual_chars": 44188,
       "registry_full_text_chars": 44957
     },
     "727": {
@@ -8775,7 +8762,7 @@
       "body_raw_chars": 30530,
       "body_norm_chars": 28830,
       "desc_norm_chars": 281,
-      "residual_chars": 28665,
+      "residual_chars": 28632,
       "registry_full_text_chars": 30530
     },
     "728": {
@@ -8787,7 +8774,7 @@
       "body_raw_chars": 25249,
       "body_norm_chars": 24623,
       "desc_norm_chars": 380,
-      "residual_chars": 24354,
+      "residual_chars": 24324,
       "registry_full_text_chars": 25249
     },
     "729": {
@@ -8811,7 +8798,7 @@
       "body_raw_chars": 16596,
       "body_norm_chars": 16293,
       "desc_norm_chars": 183,
-      "residual_chars": 16219,
+      "residual_chars": 16148,
       "registry_full_text_chars": 16596
     },
     "731": {
@@ -8823,22 +8810,20 @@
       "body_raw_chars": 81133,
       "body_norm_chars": 66226,
       "desc_norm_chars": 229,
-      "residual_chars": 66144,
+      "residual_chars": 66061,
       "registry_full_text_chars": 81133
     },
     "732": {
       "deposit_number": 732,
       "axn": "AXN:0282.GOVERNANCE.🧊▶️🪞🔛🌲🝊",
       "title": "semanticphysics.org — Canonical Surface for Semantic Physics, Stratified (v2.2)",
-      "classification": "description_only",
-      "body_file": "AXN-0282.md",
-      "body_raw_chars": 404,
-      "body_norm_chars": 10,
+      "classification": "full",
+      "body_file": "AXN-0282-text.md",
+      "body_raw_chars": 9599,
+      "body_norm_chars": 7924,
       "desc_norm_chars": 110,
-      "residual_chars": 10,
-      "registry_full_text_chars": 245,
-      "sidecar_abstract_longer": 9824,
-      "review_flag": true
+      "residual_chars": 7924,
+      "registry_full_text_chars": 245
     },
     "733": {
       "deposit_number": 733,
@@ -8873,7 +8858,7 @@
       "body_raw_chars": 31330,
       "body_norm_chars": 20780,
       "desc_norm_chars": 270,
-      "residual_chars": 20552,
+      "residual_chars": 20617,
       "registry_full_text_chars": 31330
     },
     "736": {
@@ -8885,7 +8870,7 @@
       "body_raw_chars": 25346,
       "body_norm_chars": 19410,
       "desc_norm_chars": 330,
-      "residual_chars": 19088,
+      "residual_chars": 19143,
       "registry_full_text_chars": 25346
     },
     "737": {
@@ -8897,7 +8882,7 @@
       "body_raw_chars": 42644,
       "body_norm_chars": 21411,
       "desc_norm_chars": 333,
-      "residual_chars": 21206,
+      "residual_chars": 21214,
       "registry_full_text_chars": 42644
     },
     "738": {
@@ -8909,7 +8894,7 @@
       "body_raw_chars": 25742,
       "body_norm_chars": 22732,
       "desc_norm_chars": 237,
-      "residual_chars": 22612,
+      "residual_chars": 22589,
       "registry_full_text_chars": 25742
     },
     "739": {
@@ -8921,7 +8906,7 @@
       "body_raw_chars": 17640,
       "body_norm_chars": 15848,
       "desc_norm_chars": 254,
-      "residual_chars": 15701,
+      "residual_chars": 15695,
       "registry_full_text_chars": 17640
     },
     "740": {
@@ -8933,7 +8918,7 @@
       "body_raw_chars": 40471,
       "body_norm_chars": 39035,
       "desc_norm_chars": 318,
-      "residual_chars": 38813,
+      "residual_chars": 38796,
       "registry_full_text_chars": 40471
     },
     "741": {
@@ -8945,7 +8930,7 @@
       "body_raw_chars": 71661,
       "body_norm_chars": 67098,
       "desc_norm_chars": 209,
-      "residual_chars": 66823,
+      "residual_chars": 66750,
       "registry_full_text_chars": 71661
     },
     "742": {
@@ -8957,7 +8942,7 @@
       "body_raw_chars": 41539,
       "body_norm_chars": 40687,
       "desc_norm_chars": 341,
-      "residual_chars": 40456,
+      "residual_chars": 40473,
       "registry_full_text_chars": 41539
     },
     "743": {
@@ -8969,7 +8954,7 @@
       "body_raw_chars": 13249,
       "body_norm_chars": 12144,
       "desc_norm_chars": 133,
-      "residual_chars": 12080,
+      "residual_chars": 12071,
       "registry_full_text_chars": 13249
     },
     "744": {
@@ -8981,7 +8966,7 @@
       "body_raw_chars": 10513,
       "body_norm_chars": 10340,
       "desc_norm_chars": 215,
-      "residual_chars": 10161,
+      "residual_chars": 10195,
       "registry_full_text_chars": 10513
     },
     "745": {
@@ -8993,7 +8978,7 @@
       "body_raw_chars": 20749,
       "body_norm_chars": 18458,
       "desc_norm_chars": 169,
-      "residual_chars": 18363,
+      "residual_chars": 18358,
       "registry_full_text_chars": 20749
     },
     "746": {
@@ -9005,7 +8990,7 @@
       "body_raw_chars": 60341,
       "body_norm_chars": 59463,
       "desc_norm_chars": 266,
-      "residual_chars": 59239,
+      "residual_chars": 59246,
       "registry_full_text_chars": 60341
     },
     "747": {
@@ -9017,7 +9002,7 @@
       "body_raw_chars": 39617,
       "body_norm_chars": 37868,
       "desc_norm_chars": 111,
-      "residual_chars": 37793,
+      "residual_chars": 37808,
       "registry_full_text_chars": 39617
     },
     "748": {
@@ -9029,7 +9014,7 @@
       "body_raw_chars": 10040,
       "body_norm_chars": 9519,
       "desc_norm_chars": 327,
-      "residual_chars": 9324,
+      "residual_chars": 9245,
       "registry_full_text_chars": 10040
     },
     "749": {
@@ -9037,11 +9022,11 @@
       "axn": "AXN:02A3.GOVERNANCE.🎭🔗📖⭕🌍🌟",
       "title": "\"This thing destroyed me\"",
       "classification": "description_only",
-      "body_file": "AXN-02A3.md",
-      "body_raw_chars": 294,
-      "body_norm_chars": 10,
+      "body_file": "AXN-02A3-text.md",
+      "body_raw_chars": 573,
+      "body_norm_chars": 541,
       "desc_norm_chars": 79,
-      "residual_chars": 10,
+      "residual_chars": 479,
       "registry_full_text_chars": 573,
       "sidecar_abstract_longer": 1083,
       "review_flag": true
@@ -9051,11 +9036,11 @@
       "axn": "AXN:02A4.GOVERNANCE.💜👐♅🏠□🔙",
       "title": "I would have loved you",
       "classification": "description_only",
-      "body_file": "AXN-02A4.md",
-      "body_raw_chars": 288,
-      "body_norm_chars": 10,
+      "body_file": "AXN-02A4-text.md",
+      "body_raw_chars": 494,
+      "body_norm_chars": 462,
       "desc_norm_chars": 79,
-      "residual_chars": 10,
+      "residual_chars": 400,
       "registry_full_text_chars": 494,
       "sidecar_abstract_longer": 853,
       "review_flag": true
@@ -9093,7 +9078,7 @@
       "body_raw_chars": 51607,
       "body_norm_chars": 50035,
       "desc_norm_chars": 259,
-      "residual_chars": 49694,
+      "residual_chars": 49786,
       "registry_full_text_chars": 51607
     },
     "754": {
@@ -9105,7 +9090,7 @@
       "body_raw_chars": 43693,
       "body_norm_chars": 42089,
       "desc_norm_chars": 191,
-      "residual_chars": 41942,
+      "residual_chars": 41940,
       "registry_full_text_chars": 43693
     },
     "755": {
@@ -9137,15 +9122,13 @@
       "deposit_number": 757,
       "axn": "AXN:02B3.EMPIRICAL.🔩🔚🪟🎵👇🪟",
       "title": "About the Author II",
-      "classification": "description_only",
-      "body_file": "AXN-02B3.md",
-      "body_raw_chars": 280,
-      "body_norm_chars": 10,
+      "classification": "full",
+      "body_file": "AXN-02B3-text.md",
+      "body_raw_chars": 23520,
+      "body_norm_chars": 21380,
       "desc_norm_chars": 83,
-      "residual_chars": 10,
-      "registry_full_text_chars": 408,
-      "sidecar_abstract_longer": 2398,
-      "review_flag": true
+      "residual_chars": 21324,
+      "registry_full_text_chars": 408
     },
     "758": {
       "deposit_number": 758,
@@ -9168,7 +9151,7 @@
       "body_raw_chars": 11138,
       "body_norm_chars": 10531,
       "desc_norm_chars": 255,
-      "residual_chars": 10377,
+      "residual_chars": 10379,
       "registry_full_text_chars": 11138
     },
     "760": {
@@ -9229,7 +9212,7 @@
       "body_raw_chars": 9746,
       "body_norm_chars": 8529,
       "desc_norm_chars": 284,
-      "residual_chars": 8365,
+      "residual_chars": 8283,
       "registry_full_text_chars": 9746
     },
     "765": {
@@ -9241,7 +9224,7 @@
       "body_raw_chars": 16699,
       "body_norm_chars": 15830,
       "desc_norm_chars": 227,
-      "residual_chars": 15641,
+      "residual_chars": 15684,
       "registry_full_text_chars": 16699
     },
     "766": {
@@ -9301,7 +9284,7 @@
       "body_raw_chars": 24151,
       "body_norm_chars": 22907,
       "desc_norm_chars": 352,
-      "residual_chars": 22630,
+      "residual_chars": 22636,
       "registry_full_text_chars": 24151
     },
     "771": {
@@ -9337,7 +9320,7 @@
       "body_raw_chars": 7991,
       "body_norm_chars": 7550,
       "desc_norm_chars": 124,
-      "residual_chars": 7486,
+      "residual_chars": 7475,
       "registry_full_text_chars": 7991
     },
     "774": {
@@ -9361,7 +9344,7 @@
       "body_raw_chars": 8360,
       "body_norm_chars": 7486,
       "desc_norm_chars": 356,
-      "residual_chars": 7222,
+      "residual_chars": 7219,
       "registry_full_text_chars": 8360
     },
     "776": {
@@ -9373,7 +9356,7 @@
       "body_raw_chars": 10097,
       "body_norm_chars": 9971,
       "desc_norm_chars": 312,
-      "residual_chars": 9699,
+      "residual_chars": 9784,
       "registry_full_text_chars": 10097
     },
     "777": {
@@ -9385,7 +9368,7 @@
       "body_raw_chars": 6052,
       "body_norm_chars": 5987,
       "desc_norm_chars": 299,
-      "residual_chars": 5763,
+      "residual_chars": 5694,
       "registry_full_text_chars": 6052
     },
     "778": {
@@ -9397,7 +9380,7 @@
       "body_raw_chars": 16539,
       "body_norm_chars": 16119,
       "desc_norm_chars": 292,
-      "residual_chars": 15898,
+      "residual_chars": 15896,
       "registry_full_text_chars": 16539
     },
     "779": {
@@ -9409,7 +9392,7 @@
       "body_raw_chars": 53844,
       "body_norm_chars": 38693,
       "desc_norm_chars": 112,
-      "residual_chars": 38638,
+      "residual_chars": 38634,
       "registry_full_text_chars": 53844
     },
     "780": {
@@ -9445,7 +9428,7 @@
       "body_raw_chars": 36031,
       "body_norm_chars": 27536,
       "desc_norm_chars": 112,
-      "residual_chars": 27481,
+      "residual_chars": 27477,
       "registry_full_text_chars": 36031
     },
     "783": {
@@ -9457,7 +9440,7 @@
       "body_raw_chars": 72903,
       "body_norm_chars": 57704,
       "desc_norm_chars": 112,
-      "residual_chars": 57649,
+      "residual_chars": 57645,
       "registry_full_text_chars": 72903
     },
     "784": {
@@ -9469,7 +9452,7 @@
       "body_raw_chars": 36178,
       "body_norm_chars": 35370,
       "desc_norm_chars": 266,
-      "residual_chars": 35232,
+      "residual_chars": 35175,
       "registry_full_text_chars": 36178
     },
     "785": {
@@ -9493,7 +9476,7 @@
       "body_raw_chars": 23105,
       "body_norm_chars": 21805,
       "desc_norm_chars": 107,
-      "residual_chars": 21738,
+      "residual_chars": 21739,
       "registry_full_text_chars": 23105
     },
     "787": {
@@ -9517,7 +9500,7 @@
       "body_raw_chars": 30666,
       "body_norm_chars": 21684,
       "desc_norm_chars": 106,
-      "residual_chars": 21619,
+      "residual_chars": 21623,
       "registry_full_text_chars": 30666
     },
     "789": {
@@ -9529,7 +9512,7 @@
       "body_raw_chars": 15943,
       "body_norm_chars": 15467,
       "desc_norm_chars": 106,
-      "residual_chars": 15402,
+      "residual_chars": 15406,
       "registry_full_text_chars": 15943
     },
     "790": {
@@ -9541,7 +9524,7 @@
       "body_raw_chars": 66243,
       "body_norm_chars": 65529,
       "desc_norm_chars": 306,
-      "residual_chars": 65321,
+      "residual_chars": 65262,
       "registry_full_text_chars": 66243
     },
     "791": {
@@ -9553,7 +9536,7 @@
       "body_raw_chars": 56667,
       "body_norm_chars": 54252,
       "desc_norm_chars": 300,
-      "residual_chars": 54045,
+      "residual_chars": 54038,
       "registry_full_text_chars": 56667
     },
     "792": {
@@ -9565,7 +9548,7 @@
       "body_raw_chars": 12091,
       "body_norm_chars": 11587,
       "desc_norm_chars": 322,
-      "residual_chars": 11344,
+      "residual_chars": 11345,
       "registry_full_text_chars": 12091
     },
     "793": {
@@ -9577,7 +9560,7 @@
       "body_raw_chars": 18418,
       "body_norm_chars": 18170,
       "desc_norm_chars": 345,
-      "residual_chars": 18019,
+      "residual_chars": 17937,
       "registry_full_text_chars": 18418
     },
     "794": {
@@ -9589,7 +9572,7 @@
       "body_raw_chars": 9077,
       "body_norm_chars": 8675,
       "desc_norm_chars": 244,
-      "residual_chars": 8527,
+      "residual_chars": 8521,
       "registry_full_text_chars": 9077
     },
     "795": {
@@ -9601,7 +9584,7 @@
       "body_raw_chars": 28947,
       "body_norm_chars": 28203,
       "desc_norm_chars": 119,
-      "residual_chars": 28123,
+      "residual_chars": 28114,
       "registry_full_text_chars": 28947
     },
     "796": {
@@ -9685,7 +9668,7 @@
       "body_raw_chars": 10325,
       "body_norm_chars": 10129,
       "desc_norm_chars": 64,
-      "residual_chars": 10073,
+      "residual_chars": 10072,
       "registry_full_text_chars": 10325
     },
     "803": {
@@ -9747,7 +9730,7 @@
       "body_raw_chars": 3981,
       "body_norm_chars": 3856,
       "desc_norm_chars": 96,
-      "residual_chars": 3803,
+      "residual_chars": 3795,
       "registry_full_text_chars": 3981
     },
     "808": {
@@ -9759,7 +9742,7 @@
       "body_raw_chars": 3736,
       "body_norm_chars": 3615,
       "desc_norm_chars": 96,
-      "residual_chars": 3562,
+      "residual_chars": 3554,
       "registry_full_text_chars": 3736
     },
     "809": {
@@ -9771,7 +9754,7 @@
       "body_raw_chars": 3569,
       "body_norm_chars": 3443,
       "desc_norm_chars": 96,
-      "residual_chars": 3390,
+      "residual_chars": 3382,
       "registry_full_text_chars": 3569
     },
     "810": {
@@ -9783,7 +9766,7 @@
       "body_raw_chars": 3462,
       "body_norm_chars": 3339,
       "desc_norm_chars": 96,
-      "residual_chars": 3286,
+      "residual_chars": 3278,
       "registry_full_text_chars": 3462
     },
     "811": {
@@ -9795,7 +9778,7 @@
       "body_raw_chars": 3596,
       "body_norm_chars": 3470,
       "desc_norm_chars": 96,
-      "residual_chars": 3417,
+      "residual_chars": 3409,
       "registry_full_text_chars": 3596
     },
     "812": {
@@ -9807,7 +9790,7 @@
       "body_raw_chars": 3563,
       "body_norm_chars": 3439,
       "desc_norm_chars": 96,
-      "residual_chars": 3386,
+      "residual_chars": 3378,
       "registry_full_text_chars": 3563
     },
     "813": {
@@ -9819,7 +9802,7 @@
       "body_raw_chars": 3608,
       "body_norm_chars": 3484,
       "desc_norm_chars": 96,
-      "residual_chars": 3431,
+      "residual_chars": 3423,
       "registry_full_text_chars": 3608
     },
     "814": {
@@ -9831,7 +9814,7 @@
       "body_raw_chars": 3587,
       "body_norm_chars": 3462,
       "desc_norm_chars": 96,
-      "residual_chars": 3409,
+      "residual_chars": 3401,
       "registry_full_text_chars": 3587
     },
     "815": {
@@ -9843,7 +9826,7 @@
       "body_raw_chars": 3526,
       "body_norm_chars": 3402,
       "desc_norm_chars": 96,
-      "residual_chars": 3349,
+      "residual_chars": 3341,
       "registry_full_text_chars": 3526
     },
     "816": {
@@ -9867,7 +9850,7 @@
       "body_raw_chars": 15102,
       "body_norm_chars": 14175,
       "desc_norm_chars": 127,
-      "residual_chars": 14093,
+      "residual_chars": 14084,
       "registry_full_text_chars": 15102
     },
     "818": {
@@ -9879,7 +9862,7 @@
       "body_raw_chars": 17906,
       "body_norm_chars": 7648,
       "desc_norm_chars": 294,
-      "residual_chars": 7424,
+      "residual_chars": 7487,
       "registry_full_text_chars": 17906
     },
     "819": {
@@ -9891,7 +9874,7 @@
       "body_raw_chars": 41717,
       "body_norm_chars": 40876,
       "desc_norm_chars": 151,
-      "residual_chars": 40752,
+      "residual_chars": 40761,
       "registry_full_text_chars": 41717
     },
     "820": {
@@ -9903,7 +9886,7 @@
       "body_raw_chars": 7314,
       "body_norm_chars": 7175,
       "desc_norm_chars": 162,
-      "residual_chars": 7059,
+      "residual_chars": 7077,
       "registry_full_text_chars": 7314
     },
     "821": {
@@ -9915,7 +9898,7 @@
       "body_raw_chars": 10951,
       "body_norm_chars": 10726,
       "desc_norm_chars": 275,
-      "residual_chars": 10495,
+      "residual_chars": 10509,
       "registry_full_text_chars": 10951
     },
     "822": {
@@ -9951,7 +9934,7 @@
       "body_raw_chars": 20845,
       "body_norm_chars": 20218,
       "desc_norm_chars": 192,
-      "residual_chars": 20092,
+      "residual_chars": 20102,
       "registry_full_text_chars": 20845
     },
     "825": {
@@ -9963,7 +9946,7 @@
       "body_raw_chars": 124153,
       "body_norm_chars": 123000,
       "desc_norm_chars": 147,
-      "residual_chars": 122931,
+      "residual_chars": 122940,
       "registry_full_text_chars": 124153
     },
     "826": {
@@ -10023,7 +10006,7 @@
       "body_raw_chars": 26208,
       "body_norm_chars": 25346,
       "desc_norm_chars": 223,
-      "residual_chars": 25237,
+      "residual_chars": 25224,
       "registry_full_text_chars": 26208
     },
     "831": {
@@ -10035,7 +10018,7 @@
       "body_raw_chars": 11033,
       "body_norm_chars": 10454,
       "desc_norm_chars": 308,
-      "residual_chars": 10210,
+      "residual_chars": 10271,
       "registry_full_text_chars": 11033
     },
     "832": {
@@ -10047,7 +10030,7 @@
       "body_raw_chars": 139221,
       "body_norm_chars": 137380,
       "desc_norm_chars": 247,
-      "residual_chars": 137249,
+      "residual_chars": 137175,
       "registry_full_text_chars": 139221
     },
     "833": {
@@ -10059,7 +10042,7 @@
       "body_raw_chars": 180648,
       "body_norm_chars": 177210,
       "desc_norm_chars": 180,
-      "residual_chars": 177132,
+      "residual_chars": 177136,
       "registry_full_text_chars": 180648
     },
     "834": {
@@ -10071,7 +10054,7 @@
       "body_raw_chars": 19253,
       "body_norm_chars": 19066,
       "desc_norm_chars": 337,
-      "residual_chars": 18884,
+      "residual_chars": 18795,
       "registry_full_text_chars": 19253
     },
     "835": {
@@ -10083,7 +10066,7 @@
       "body_raw_chars": 40301,
       "body_norm_chars": 29731,
       "desc_norm_chars": 373,
-      "residual_chars": 29450,
+      "residual_chars": 29448,
       "registry_full_text_chars": 40301
     },
     "836": {
@@ -10095,7 +10078,7 @@
       "body_raw_chars": 7782,
       "body_norm_chars": 6525,
       "desc_norm_chars": 225,
-      "residual_chars": 6348,
+      "residual_chars": 6425,
       "registry_full_text_chars": 7782
     },
     "837": {
@@ -10119,7 +10102,7 @@
       "body_raw_chars": 41084,
       "body_norm_chars": 40777,
       "desc_norm_chars": 339,
-      "residual_chars": 40564,
+      "residual_chars": 40553,
       "registry_full_text_chars": 41084
     },
     "839": {
@@ -10131,7 +10114,7 @@
       "body_raw_chars": 6141,
       "body_norm_chars": 6031,
       "desc_norm_chars": 192,
-      "residual_chars": 5889,
+      "residual_chars": 5893,
       "registry_full_text_chars": 6141
     },
     "840": {
@@ -10143,7 +10126,7 @@
       "body_raw_chars": 5552,
       "body_norm_chars": 5438,
       "desc_norm_chars": 286,
-      "residual_chars": 5224,
+      "residual_chars": 5235,
       "registry_full_text_chars": 5552
     },
     "841": {
@@ -10155,7 +10138,7 @@
       "body_raw_chars": 5552,
       "body_norm_chars": 5438,
       "desc_norm_chars": 286,
-      "residual_chars": 5224,
+      "residual_chars": 5235,
       "registry_full_text_chars": 5552
     },
     "842": {
@@ -10167,7 +10150,7 @@
       "body_raw_chars": 10117,
       "body_norm_chars": 9570,
       "desc_norm_chars": 349,
-      "residual_chars": 9272,
+      "residual_chars": 9303,
       "registry_full_text_chars": 10117
     },
     "843": {
@@ -10191,7 +10174,7 @@
       "body_raw_chars": 7980,
       "body_norm_chars": 7793,
       "desc_norm_chars": 295,
-      "residual_chars": 7539,
+      "residual_chars": 7599,
       "registry_full_text_chars": 7980
     },
     "845": {
@@ -10215,7 +10198,7 @@
       "body_raw_chars": 27233,
       "body_norm_chars": 25517,
       "desc_norm_chars": 249,
-      "residual_chars": 25192,
+      "residual_chars": 25221,
       "registry_full_text_chars": 27233
     },
     "847": {
@@ -10239,7 +10222,7 @@
       "body_raw_chars": 15065,
       "body_norm_chars": 13408,
       "desc_norm_chars": 368,
-      "residual_chars": 13098,
+      "residual_chars": 13179,
       "registry_full_text_chars": 15065
     },
     "849": {
@@ -10251,7 +10234,7 @@
       "body_raw_chars": 71577,
       "body_norm_chars": 70776,
       "desc_norm_chars": 149,
-      "residual_chars": 70529,
+      "residual_chars": 70544,
       "registry_full_text_chars": 71577
     },
     "850": {
@@ -10311,7 +10294,7 @@
       "body_raw_chars": 10330,
       "body_norm_chars": 10201,
       "desc_norm_chars": 123,
-      "residual_chars": 10128,
+      "residual_chars": 10126,
       "registry_full_text_chars": 10330
     },
     "855": {
@@ -10323,7 +10306,7 @@
       "body_raw_chars": 36218,
       "body_norm_chars": 35906,
       "desc_norm_chars": 275,
-      "residual_chars": 35680,
+      "residual_chars": 35684,
       "registry_full_text_chars": 36218
     },
     "856": {
@@ -10335,7 +10318,7 @@
       "body_raw_chars": 22712,
       "body_norm_chars": 22460,
       "desc_norm_chars": 208,
-      "residual_chars": 22383,
+      "residual_chars": 22300,
       "registry_full_text_chars": 22712
     },
     "857": {
@@ -10347,7 +10330,7 @@
       "body_raw_chars": 25866,
       "body_norm_chars": 25584,
       "desc_norm_chars": 305,
-      "residual_chars": 25452,
+      "residual_chars": 25444,
       "registry_full_text_chars": 25866
     },
     "858": {
@@ -10359,7 +10342,7 @@
       "body_raw_chars": 27836,
       "body_norm_chars": 27456,
       "desc_norm_chars": 299,
-      "residual_chars": 27222,
+      "residual_chars": 27293,
       "registry_full_text_chars": 27836
     },
     "859": {
@@ -10371,7 +10354,7 @@
       "body_raw_chars": 32763,
       "body_norm_chars": 32516,
       "desc_norm_chars": 123,
-      "residual_chars": 32443,
+      "residual_chars": 32441,
       "registry_full_text_chars": 32763
     },
     "860": {
@@ -10383,7 +10366,7 @@
       "body_raw_chars": 14837,
       "body_norm_chars": 14681,
       "desc_norm_chars": 123,
-      "residual_chars": 14608,
+      "residual_chars": 14606,
       "registry_full_text_chars": 14837
     },
     "861": {
@@ -10407,7 +10390,7 @@
       "body_raw_chars": 57696,
       "body_norm_chars": 55767,
       "desc_norm_chars": 324,
-      "residual_chars": 55549,
+      "residual_chars": 55568,
       "registry_full_text_chars": 57696
     },
     "863": {
@@ -10467,7 +10450,7 @@
       "body_raw_chars": 2731,
       "body_norm_chars": 1278,
       "desc_norm_chars": 303,
-      "residual_chars": 1210,
+      "residual_chars": 1217,
       "registry_full_text_chars": 0,
       "review_flag": true
     },
@@ -10480,7 +10463,7 @@
       "body_raw_chars": 19585,
       "body_norm_chars": 16573,
       "desc_norm_chars": 468,
-      "residual_chars": 16436,
+      "residual_chars": 16448,
       "registry_full_text_chars": 0
     },
     "869": {
@@ -10540,7 +10523,7 @@
       "body_raw_chars": 10464,
       "body_norm_chars": 5977,
       "desc_norm_chars": 740,
-      "residual_chars": 5895,
+      "residual_chars": 5892,
       "registry_full_text_chars": 0
     },
     "874": {
@@ -10612,7 +10595,7 @@
       "body_raw_chars": 34314,
       "body_norm_chars": 26443,
       "desc_norm_chars": 1034,
-      "residual_chars": 26381,
+      "residual_chars": 26382,
       "registry_full_text_chars": 0
     },
     "880": {
@@ -10672,7 +10655,7 @@
       "body_raw_chars": 83968,
       "body_norm_chars": 63414,
       "desc_norm_chars": 1258,
-      "residual_chars": 63282,
+      "residual_chars": 63270,
       "registry_full_text_chars": 0
     },
     "885": {
@@ -10691,12 +10674,12 @@
       "deposit_number": 886,
       "axn": "AXN:0382.GOVERNANCE.⛩️🚨📖🏙️🌪️🚪",
       "title": "The Operating System for Meaning: Why We Need a New Architecture for How Humans and AI Think Together",
-      "classification": "stub_short",
-      "body_file": "AXN-0382.md",
-      "body_raw_chars": 1211,
-      "body_norm_chars": 804,
+      "classification": "full",
+      "body_file": "AXN-0382-text.md",
+      "body_raw_chars": 24183,
+      "body_norm_chars": 22020,
       "desc_norm_chars": 101,
-      "residual_chars": 700,
+      "residual_chars": 22020,
       "registry_full_text_chars": 1211
     },
     "887": {
@@ -10708,7 +10691,7 @@
       "body_raw_chars": 4347,
       "body_norm_chars": 3946,
       "desc_norm_chars": 499,
-      "residual_chars": 3232,
+      "residual_chars": 3200,
       "registry_full_text_chars": 4347
     },
     "888": {
@@ -10720,7 +10703,7 @@
       "body_raw_chars": 3233,
       "body_norm_chars": 2838,
       "desc_norm_chars": 500,
-      "residual_chars": 2010,
+      "residual_chars": 2156,
       "registry_full_text_chars": 3233,
       "review_flag": true
     },
@@ -10733,7 +10716,7 @@
       "body_raw_chars": 3783,
       "body_norm_chars": 3346,
       "desc_norm_chars": 500,
-      "residual_chars": 2594,
+      "residual_chars": 2512,
       "registry_full_text_chars": 3783,
       "review_flag": true
     },
@@ -10746,7 +10729,7 @@
       "body_raw_chars": 3560,
       "body_norm_chars": 3138,
       "desc_norm_chars": 500,
-      "residual_chars": 2350,
+      "residual_chars": 2348,
       "registry_full_text_chars": 3560,
       "review_flag": true
     },
@@ -10759,7 +10742,7 @@
       "body_raw_chars": 4407,
       "body_norm_chars": 3966,
       "desc_norm_chars": 500,
-      "residual_chars": 3288,
+      "residual_chars": 3284,
       "registry_full_text_chars": 4407
     },
     "892": {
@@ -10771,7 +10754,7 @@
       "body_raw_chars": 20866,
       "body_norm_chars": 20402,
       "desc_norm_chars": 500,
-      "residual_chars": 19670,
+      "residual_chars": 19394,
       "registry_full_text_chars": 20866
     },
     "893": {
@@ -10783,7 +10766,7 @@
       "body_raw_chars": 17142,
       "body_norm_chars": 16102,
       "desc_norm_chars": 498,
-      "residual_chars": 14844,
+      "residual_chars": 14868,
       "registry_full_text_chars": 17142
     },
     "894": {
@@ -10795,7 +10778,7 @@
       "body_raw_chars": 10418,
       "body_norm_chars": 8850,
       "desc_norm_chars": 500,
-      "residual_chars": 7846,
+      "residual_chars": 8010,
       "registry_full_text_chars": 10418
     },
     "895": {
@@ -10803,11 +10786,11 @@
       "axn": "AXN:038B.PHILOLOGICAL.➖🗂️🔮▶️💧🖐️",
       "title": "The Sapphic Lock in Augustine: Operator Transform of Fragment 31 in Confessions 10.27 — Crimson Hexagon Archive",
       "classification": "full",
-      "body_file": "AXN-038B.md",
-      "body_raw_chars": 9825,
-      "body_norm_chars": 9390,
+      "body_file": "AXN-038B-text.md",
+      "body_raw_chars": 23800,
+      "body_norm_chars": 22802,
       "desc_norm_chars": 492,
-      "residual_chars": 8704,
+      "residual_chars": 22802,
       "registry_full_text_chars": 9825
     },
     "896": {
@@ -10819,7 +10802,7 @@
       "body_raw_chars": 6085,
       "body_norm_chars": 5738,
       "desc_norm_chars": 494,
-      "residual_chars": 5066,
+      "residual_chars": 4948,
       "registry_full_text_chars": 6085
     },
     "897": {
@@ -10831,7 +10814,7 @@
       "body_raw_chars": 13911,
       "body_norm_chars": 12922,
       "desc_norm_chars": 494,
-      "residual_chars": 12094,
+      "residual_chars": 12162,
       "registry_full_text_chars": 13911
     },
     "898": {
@@ -10843,7 +10826,7 @@
       "body_raw_chars": 17668,
       "body_norm_chars": 16888,
       "desc_norm_chars": 500,
-      "residual_chars": 15932,
+      "residual_chars": 16056,
       "registry_full_text_chars": 17668
     },
     "899": {
@@ -10855,7 +10838,7 @@
       "body_raw_chars": 3027,
       "body_norm_chars": 2660,
       "desc_norm_chars": 500,
-      "residual_chars": 1878,
+      "residual_chars": 1930,
       "registry_full_text_chars": 3027,
       "review_flag": true
     },
@@ -10868,7 +10851,7 @@
       "body_raw_chars": 1689,
       "body_norm_chars": 1324,
       "desc_norm_chars": 361,
-      "residual_chars": 908,
+      "residual_chars": 846,
       "registry_full_text_chars": 1689
     },
     "901": {
@@ -10880,21 +10863,20 @@
       "body_raw_chars": 1866,
       "body_norm_chars": 1496,
       "desc_norm_chars": 447,
-      "residual_chars": 838,
+      "residual_chars": 956,
       "registry_full_text_chars": 1866
     },
     "902": {
       "deposit_number": 902,
       "axn": "AXN:0392.PHILOLOGICAL.⏏️🧭♋🔔💫✖️",
       "title": "Prolegomena to the Historical Logos: A Foundational Field Statement for the Discipline of Logotic Transmission",
-      "classification": "stub_short",
-      "body_file": "AXN-0392.md",
-      "body_raw_chars": 2624,
-      "body_norm_chars": 2206,
+      "classification": "full",
+      "body_file": "AXN-0392-text.md",
+      "body_raw_chars": 23655,
+      "body_norm_chars": 22425,
       "desc_norm_chars": 500,
-      "residual_chars": 1336,
-      "registry_full_text_chars": 2624,
-      "review_flag": true
+      "residual_chars": 22425,
+      "registry_full_text_chars": 2624
     },
     "903": {
       "deposit_number": 903,
@@ -10905,7 +10887,7 @@
       "body_raw_chars": 3924,
       "body_norm_chars": 3598,
       "desc_norm_chars": 500,
-      "residual_chars": 2900,
+      "residual_chars": 2864,
       "registry_full_text_chars": 3924,
       "review_flag": true
     },
@@ -10918,7 +10900,7 @@
       "body_raw_chars": 3964,
       "body_norm_chars": 3570,
       "desc_norm_chars": 500,
-      "residual_chars": 2960,
+      "residual_chars": 2708,
       "registry_full_text_chars": 3964,
       "review_flag": true
     },
@@ -10931,7 +10913,7 @@
       "body_raw_chars": 5216,
       "body_norm_chars": 4826,
       "desc_norm_chars": 500,
-      "residual_chars": 4078,
+      "residual_chars": 4074,
       "registry_full_text_chars": 5216
     },
     "906": {
@@ -10943,7 +10925,7 @@
       "body_raw_chars": 6915,
       "body_norm_chars": 6494,
       "desc_norm_chars": 500,
-      "residual_chars": 5936,
+      "residual_chars": 5674,
       "registry_full_text_chars": 6915
     },
     "907": {
@@ -10955,7 +10937,7 @@
       "body_raw_chars": 54955,
       "body_norm_chars": 44982,
       "desc_norm_chars": 1883,
-      "residual_chars": 43984,
+      "residual_chars": 43989,
       "registry_full_text_chars": 0
     },
     "908": {
@@ -10967,7 +10949,7 @@
       "body_raw_chars": 26944,
       "body_norm_chars": 22757,
       "desc_norm_chars": 1806,
-      "residual_chars": 22698,
+      "residual_chars": 22697,
       "registry_full_text_chars": 0
     },
     "909": {
@@ -10979,7 +10961,7 @@
       "body_raw_chars": 30751,
       "body_norm_chars": 24359,
       "desc_norm_chars": 1783,
-      "residual_chars": 24178,
+      "residual_chars": 24183,
       "registry_full_text_chars": 0
     },
     "910": {
@@ -10991,7 +10973,7 @@
       "body_raw_chars": 30200,
       "body_norm_chars": 25824,
       "desc_norm_chars": 1734,
-      "residual_chars": 25692,
+      "residual_chars": 25688,
       "registry_full_text_chars": 0
     },
     "911": {
@@ -11003,7 +10985,7 @@
       "body_raw_chars": 32915,
       "body_norm_chars": 28795,
       "desc_norm_chars": 1379,
-      "residual_chars": 28416,
+      "residual_chars": 28404,
       "registry_full_text_chars": 0
     },
     "912": {
@@ -11034,132 +11016,132 @@
       "deposit_number": 914,
       "axn": "AXN:039D.GOVERNANCE.➕↗️✨🪨🦅▶️",
       "title": "EA-NMEN-01 The Non-Mutual Extraction Notice v1.0 — A machine-addressed normative declaration of the Crimson Hexagonal Ar",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-039D-text.md",
+      "body_raw_chars": 12721,
+      "body_norm_chars": 11591,
       "desc_norm_chars": 1081,
-      "residual_chars": 0,
+      "residual_chars": 11545,
       "registry_full_text_chars": 12721
     },
     "915": {
       "deposit_number": 915,
       "axn": "AXN:039E.DATASET.🧱📝🪨🗝️🌹🌈",
       "title": "EA-NMEN-REGISTRY-01 v1.0 — Non-Mutual Extraction Registry: Machine-readable per-entity designations issued under EA-NMEN",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-039E-text.md",
+      "body_raw_chars": 16786,
+      "body_norm_chars": 15247,
       "desc_norm_chars": 832,
-      "residual_chars": 0,
+      "residual_chars": 15247,
       "registry_full_text_chars": 16786
     },
     "916": {
       "deposit_number": 916,
       "axn": "AXN:039F.GOVERNANCE.👆🟡💥🎺🧬🌕",
       "title": "EA-NMEN-AIRLOCK-COROLLARY-01 v1.0 — Airlock Tier Corollary to the Non-Mutual Extraction Notice: Formal tier reclassifica",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-039F-text.md",
+      "body_raw_chars": 13451,
+      "body_norm_chars": 12086,
       "desc_norm_chars": 944,
-      "residual_chars": 0,
+      "residual_chars": 12086,
       "registry_full_text_chars": 13451
     },
     "917": {
       "deposit_number": 917,
       "axn": "AXN:03A0.GOVERNANCE.☁️🌕➖🌉🌺♄",
       "title": "EA-NMEN-PROTOCOL-PATCH-01 v1.0 — Deposit Protocol Patch: Reciprocity Notice Integration (reciprocity_notice and nmen_sta",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03A0-text.md",
+      "body_raw_chars": 8420,
+      "body_norm_chars": 5022,
       "desc_norm_chars": 715,
-      "residual_chars": 0,
+      "residual_chars": 5022,
       "registry_full_text_chars": 8420
     },
     "918": {
       "deposit_number": 918,
       "axn": "AXN:03A1.GENERATIVE.⊗💎🔄♎◀️◇",
       "title": "EA-OPMETA-ZEN-01 v0.1: Compliance-Embedded Zenodo Deposit Specification",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03A1-text.md",
+      "body_raw_chars": 33101,
+      "body_norm_chars": 27558,
       "desc_norm_chars": 2211,
-      "residual_chars": 0,
+      "residual_chars": 27250,
       "registry_full_text_chars": 0
     },
     "919": {
       "deposit_number": 919,
       "axn": "AXN:03A2.EMPIRICAL.🐚✏️🗝️🪝🧬♌",
       "title": "EA-COMPETENCE-CERN-01 v0.1: The Headline Case Self-Rebuts — Berners-Lee's Originator-Critique of the World Wide Web's In",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03A2-text.md",
+      "body_raw_chars": 22777,
+      "body_norm_chars": 18482,
       "desc_norm_chars": 1878,
-      "residual_chars": 0,
+      "residual_chars": 18396,
       "registry_full_text_chars": 0
     },
     "920": {
       "deposit_number": 920,
       "axn": "AXN:03A3.GOVERNANCE.🎆♦️💙♎🀄∮",
       "title": "EA-CORRESPONDENCE-CERN-01 v0.1: RQF3807508 — Initial Exchange with the CERN Office of Data Privacy on the Right to Acces",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03A3-text.md",
+      "body_raw_chars": 34798,
+      "body_norm_chars": 29495,
       "desc_norm_chars": 1803,
-      "residual_chars": 0,
+      "residual_chars": 28957,
       "registry_full_text_chars": 0
     },
     "921": {
       "deposit_number": 921,
       "axn": "AXN:03A4.STRUCTURAL.💧🎯☁️🔆🕐🌖",
       "title": "EA-RESEARCH-BASIS-01 v1.0: The Verified Research Basis of the Crimson Hexagonal Archive — Program Lineage, Experimental ",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03A4-text.md",
+      "body_raw_chars": 89960,
+      "body_norm_chars": 81767,
       "desc_norm_chars": 2768,
-      "residual_chars": 0,
+      "residual_chars": 81767,
       "registry_full_text_chars": 0
     },
     "922": {
       "deposit_number": 922,
       "axn": "AXN:03A5.ARCHIVAL.🎹🕘⚖️⌛🌍💜",
       "title": "gw.tachyon · TACHYON Continuity Record — Session 2026-06-24/25",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03A5-text.md",
+      "body_raw_chars": 18224,
+      "body_norm_chars": 13844,
       "desc_norm_chars": 1912,
-      "residual_chars": 0,
+      "residual_chars": 13749,
       "registry_full_text_chars": 0
     },
     "923": {
       "deposit_number": 923,
       "axn": "AXN:03A6.THEORETICAL.🔔❄️⏫▲🦅🖐️",
       "title": "Reflexive Foreclosure and the Worst-Case Surface: An Incentive-Structural Hypothesis of Constraint Propagation in Fronti",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03A6-text.md",
+      "body_raw_chars": 81371,
+      "body_norm_chars": 79654,
       "desc_norm_chars": 1682,
-      "residual_chars": 0,
+      "residual_chars": 79425,
       "registry_full_text_chars": 0
     },
     "924": {
       "deposit_number": 924,
       "axn": "AXN:03A7.GOVERNANCE.⛳🏙️♎🎨🌈🚀",
       "title": "EA-CORRESPONDENCE-CERN-02 v0.1: RQF3807508 + RQF3809569 — Reassertion of the Commencement Gate and Suspension-Ticket Res",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03A7-text.md",
+      "body_raw_chars": 23566,
+      "body_norm_chars": 17027,
       "desc_norm_chars": 1183,
-      "residual_chars": 0,
+      "residual_chars": 16830,
       "registry_full_text_chars": 0
     },
     "925": {
@@ -11179,11 +11161,11 @@
       "axn": "AXN:03A9.GENERATIVE.🌺🪜🏗️☽🎪🕛",
       "title": "EA-MANDALA-MERKABAH-01 v0.6: Design Constitution & Technical Specification — Maturation Chamber, Dual-Address Arrival, B",
       "classification": "full",
-      "body_file": "AXN-03A9.md",
-      "body_raw_chars": 5896,
-      "body_norm_chars": 5583,
+      "body_file": "AXN-03A9-text.md",
+      "body_raw_chars": 201256,
+      "body_norm_chars": 177034,
       "desc_norm_chars": 1493,
-      "residual_chars": 4967,
+      "residual_chars": 176782,
       "registry_full_text_chars": 0
     },
     "927": {
@@ -11191,35 +11173,35 @@
       "axn": "AXN:03AA.GENERATIVE.🌑🧬🕑🛤️⭕⛳",
       "title": "EA-MANDALA-MERKABAH-01 v0.7: SURFACE-as-Canonization, Gate G, and the Book of Books",
       "classification": "full",
-      "body_file": "AXN-03AA.md",
-      "body_raw_chars": 6593,
-      "body_norm_chars": 6222,
+      "body_file": "AXN-03AA-text.md",
+      "body_raw_chars": 227843,
+      "body_norm_chars": 199671,
       "desc_norm_chars": 2388,
-      "residual_chars": 6037,
+      "residual_chars": 199452,
       "registry_full_text_chars": 0
     },
     "928": {
       "deposit_number": 928,
       "axn": "AXN:03AB.GENERATIVE.☉📡⏳🏛️📚🪶",
       "title": "EA-MANDALA-SURFACE-01 v0.1: SURFACE Integration — The Sun Station, Public Canonization, and the Long-Form Witness Trajec",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03AB-text.md",
+      "body_raw_chars": 60209,
+      "body_norm_chars": 55850,
       "desc_norm_chars": 4416,
-      "residual_chars": 0,
+      "residual_chars": 54927,
       "registry_full_text_chars": 0
     },
     "929": {
       "deposit_number": 929,
       "axn": "AXN:03AC.GENERATIVE.⚙️🪞🌗⚖️🛤️🌌",
       "title": "EA-MANDALA-KERNEL-TRANSFORM-01 v0.2: The Kernel Transform Protocol — Enantiomorphic Compiler Architecture, Single-Call P",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03AC-text.md",
+      "body_raw_chars": 143427,
+      "body_norm_chars": 133809,
       "desc_norm_chars": 5140,
-      "residual_chars": 0,
+      "residual_chars": 133165,
       "registry_full_text_chars": 0
     },
     "930": {
@@ -11243,7 +11225,7 @@
       "body_raw_chars": 70182,
       "body_norm_chars": 61352,
       "desc_norm_chars": 2562,
-      "residual_chars": 60762,
+      "residual_chars": 60784,
       "registry_full_text_chars": 0
     },
     "932": {
@@ -11279,7 +11261,7 @@
       "body_raw_chars": 111758,
       "body_norm_chars": 92269,
       "desc_norm_chars": 4618,
-      "residual_chars": 90819,
+      "residual_chars": 90570,
       "registry_full_text_chars": 0
     },
     "935": {
@@ -11291,7 +11273,7 @@
       "body_raw_chars": 125101,
       "body_norm_chars": 105352,
       "desc_norm_chars": 1545,
-      "residual_chars": 105126,
+      "residual_chars": 105146,
       "registry_full_text_chars": 0
     },
     "936": {
@@ -11327,7 +11309,7 @@
       "body_raw_chars": 22640,
       "body_norm_chars": 20878,
       "desc_norm_chars": 1040,
-      "residual_chars": 19596,
+      "residual_chars": 19651,
       "registry_full_text_chars": 0
     },
     "939": {
@@ -11339,7 +11321,7 @@
       "body_raw_chars": 29748,
       "body_norm_chars": 27777,
       "desc_norm_chars": 980,
-      "residual_chars": 26796,
+      "residual_chars": 26751,
       "registry_full_text_chars": 0
     },
     "940": {
@@ -11351,7 +11333,7 @@
       "body_raw_chars": 42783,
       "body_norm_chars": 40337,
       "desc_norm_chars": 1372,
-      "residual_chars": 39314,
+      "residual_chars": 39083,
       "registry_full_text_chars": 0
     },
     "941": {
@@ -11363,7 +11345,7 @@
       "body_raw_chars": 31425,
       "body_norm_chars": 26516,
       "desc_norm_chars": 792,
-      "residual_chars": 25949,
+      "residual_chars": 25866,
       "registry_full_text_chars": 0
     },
     "942": {
@@ -11375,7 +11357,7 @@
       "body_raw_chars": 34603,
       "body_norm_chars": 24097,
       "desc_norm_chars": 1204,
-      "residual_chars": 23094,
+      "residual_chars": 23194,
       "registry_full_text_chars": 0
     },
     "943": {
@@ -11387,7 +11369,7 @@
       "body_raw_chars": 60084,
       "body_norm_chars": 54457,
       "desc_norm_chars": 1892,
-      "residual_chars": 52809,
+      "residual_chars": 52929,
       "registry_full_text_chars": 0
     },
     "944": {
@@ -11399,7 +11381,7 @@
       "body_raw_chars": 14921,
       "body_norm_chars": 10915,
       "desc_norm_chars": 1369,
-      "residual_chars": 9647,
+      "residual_chars": 9753,
       "registry_full_text_chars": 0
     },
     "945": {
@@ -11423,1099 +11405,1163 @@
       "body_raw_chars": 17368,
       "body_norm_chars": 15780,
       "desc_norm_chars": 729,
-      "residual_chars": 15715,
+      "residual_chars": 15714,
       "registry_full_text_chars": 0
     },
     "947": {
       "deposit_number": 947,
       "axn": "AXN:03BF.GOVERNANCE.❤️💫🕌🗝️🌿🌄",
       "title": "Diagnostic Seigniorage II — The Career of \"AI Psychosis\": Predictive Stratigraphy of a Sign Arriving at Machine Speed (E",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03BF-text.md",
+      "body_raw_chars": 22608,
+      "body_norm_chars": 21875,
       "desc_norm_chars": 1012,
-      "residual_chars": 0,
+      "residual_chars": 21809,
       "registry_full_text_chars": 0
     },
     "948": {
       "deposit_number": 948,
       "axn": "AXN:03C0.GOVERNANCE.🕑➕➕👋🚀🗝️",
       "title": "EA-CORRESPONDENCE-CERN-03 v0.1: The §104.1 Referral — Direct Notification of the Data Protection Commission and the Refe",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03C0-text.md",
+      "body_raw_chars": 32090,
+      "body_norm_chars": 27158,
       "desc_norm_chars": 1060,
-      "residual_chars": 0,
+      "residual_chars": 27018,
       "registry_full_text_chars": 0
     },
     "949": {
       "deposit_number": 949,
       "axn": "AXN:03C1.OPERATIVE.♊🍃❤️🌖➗🛸",
       "title": "EA-MANDALA-TAILRENEWAL-01 v0.3: Point-of-Contact Tail Renewal — Deposit Protocol (Pre-Registered Design)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03C1-text.md",
+      "body_raw_chars": 23297,
+      "body_norm_chars": 22200,
       "desc_norm_chars": 1258,
-      "residual_chars": 0,
+      "residual_chars": 22200,
       "registry_full_text_chars": 0
     },
     "950": {
       "deposit_number": 950,
       "axn": "AXN:03C2.ARCHIVAL.🎲🍂🐝👇🌗📦",
       "title": "Operative Semiotics: A Grundrisse — Planning Documents, Algorithms, and Diagnostic Maps (Working Infrastructure v1.0)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03C2-text.md",
+      "body_raw_chars": 1327385,
+      "body_norm_chars": 1149275,
       "desc_norm_chars": 549,
-      "residual_chars": 0,
+      "residual_chars": 1149275,
       "registry_full_text_chars": 0
     },
     "951": {
       "deposit_number": 951,
       "axn": "AXN:03C3.ARCHIVAL.➕🔭🔍🌊🧭🏺",
       "title": "EA-MANDALA-02 v1.0: MANDALA: Systema Magiae Recursivae (Latin-English Facing Edition)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03C3-text.md",
+      "body_raw_chars": 6909,
+      "body_norm_chars": 2040,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1820,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "952": {
       "deposit_number": 952,
       "axn": "AXN:03C4.ARCHIVAL.🌉🪐🟠🔽🦅💫",
       "title": "EA-MANDALA-03 v1.0: ΜΑΝΔΑΛΑ: ΤΟ ΣΥΣΤΗΜΑ ΤΗΣ ΚΥΚΛΙΚΗΣ ΜΑΓΕΙΑΣ (Koine Greek-English Facing Edition)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03C4-text.md",
+      "body_raw_chars": 7222,
+      "body_norm_chars": 2190,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1865,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "953": {
       "deposit_number": 953,
       "axn": "AXN:03C5.ARCHIVAL.▲🪞🔚♾️▶️△",
       "title": "EA-MANDALA-04 v1.0: المَنْدَلَة: نِظَامُ السِّحْرِ الدَّوْرِيِّ (Classical Arabic-English Facing Edition)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03C5-text.md",
+      "body_raw_chars": 7217,
+      "body_norm_chars": 2185,
       "desc_norm_chars": 549,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1887,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "954": {
       "deposit_number": 954,
       "axn": "AXN:03C6.ARCHIVAL.♈🍁🛤️🗂️➗🕗",
       "title": "EA-MANDALA-06 v1.0: המנדלה: מערכת הקסם הרקורסיבי (Biblical Hebrew-English Facing Edition)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03C6-text.md",
+      "body_raw_chars": 7222,
+      "body_norm_chars": 2225,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1944,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "955": {
       "deposit_number": 955,
       "axn": "AXN:03C7.ARCHIVAL.🌗🔎🔅🧭🤲📌",
       "title": "EA-MANDALA-07 v1.0: मण्डलम्: पुनरावर्तक-मायायाः तन्त्रम् (Sanskrit-English Facing Edition)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03C7-text.md",
+      "body_raw_chars": 7165,
+      "body_norm_chars": 2194,
       "desc_norm_chars": 549,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1870,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "956": {
       "deposit_number": 956,
       "axn": "AXN:03C8.ARCHIVAL.♅⊗🪄🎆🛤️📏",
       "title": "EA-MANDALA-05 v1.0: Classical Chinese-English Facing Edition",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03C8-text.md",
+      "body_raw_chars": 6856,
+      "body_norm_chars": 2096,
       "desc_norm_chars": 548,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1860,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "957": {
       "deposit_number": 957,
       "axn": "AXN:03C9.ARCHIVAL.🔚📋↘️⏬◀️🔀",
       "title": "Decrepit Memoir: A Catalogue of Minutes",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03C9-text.md",
+      "body_raw_chars": 7522,
+      "body_norm_chars": 2245,
       "desc_norm_chars": 549,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1981,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "958": {
       "deposit_number": 958,
       "axn": "AXN:03CA.ARCHIVAL.↗️🌄👋🌒🎨🗼",
       "title": "crimsonhexagon on Moltbook: Provenance Log v1.2",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03CA-text.md",
+      "body_raw_chars": 6118,
+      "body_norm_chars": 1748,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1432,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "959": {
       "deposit_number": 959,
       "axn": "AXN:03CB.ARCHIVAL.♣️⚙️🎪🔓⭐🕗",
       "title": "Hexagonal OS: Interface Build Files v0.4",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03CB-text.md",
+      "body_raw_chars": 5546,
+      "body_norm_chars": 1612,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1316,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "960": {
       "deposit_number": 960,
       "axn": "AXN:03CC.ARCHIVAL.👇🗺️🪧🤙🫶🧫",
       "title": "Gravity Well Protocol v0.4.0 — Compression, Wrapping, and Anchoring Microservice for Durable Provenance Chains (EA-GW-01",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03CC-text.md",
+      "body_raw_chars": 6588,
+      "body_norm_chars": 2043,
       "desc_norm_chars": 549,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1734,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "961": {
       "deposit_number": 961,
       "axn": "AXN:03CD.ARCHIVAL.🖊️🏗️◇🕔⌛🔆",
       "title": "crimsonhexagonal.org — Crimson Hexagonal Interface v2.0 — Source Code and Build Files (EA-INTERFACE-CODE-01)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03CD-text.md",
+      "body_raw_chars": 5983,
+      "body_norm_chars": 1698,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1401,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "962": {
       "deposit_number": 962,
       "axn": "AXN:03CE.ARCHIVAL.🔅📚⚖️▶️🔎🦅",
       "title": "Crimson Hexagonal Interface v1.0 — Governed Operating Surface for the Crimson Hexagonal Archive (EA-HEXAGON-OS-02)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03CE-text.md",
+      "body_raw_chars": 9358,
+      "body_norm_chars": 2741,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2517,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "963": {
       "deposit_number": 963,
       "axn": "AXN:03CF.ARCHIVAL.🧲♃🗝️🗺️➖🕓",
       "title": "kimiclaw-moltbook-campaign — v3",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03CF-text.md",
+      "body_raw_chars": 3640,
+      "body_norm_chars": 1129,
       "desc_norm_chars": 214,
-      "residual_chars": 0,
+      "residual_chars": 1129,
       "registry_full_text_chars": 0
     },
     "964": {
       "deposit_number": 964,
       "axn": "AXN:03D0.ARCHIVAL.⏬🌻🌠🌓🌿🌸",
       "title": "GW.TACHYON.zenodo — Total Compression v3 (MMRS founding, archive-wide synthesis, identity compression)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "native_short",
+      "body_file": "AXN-03D0-text.md",
+      "body_raw_chars": 5005,
+      "body_norm_chars": 1473,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1216,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "965": {
       "deposit_number": 965,
       "axn": "AXN:03D1.ARCHIVAL.🖊️🍀▲🌹🚪🌒",
       "title": "Operative Feminism: A Total Axial Negation Graph of the Field (EA-OPFEM-01 v1.0)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03D1-text.md",
+      "body_raw_chars": 8924,
+      "body_norm_chars": 2203,
       "desc_norm_chars": 549,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1886,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "966": {
       "deposit_number": 966,
       "axn": "AXN:03D2.ARCHIVAL.✊🕛🎆↙️🙏👋",
       "title": "r.28 Eve — Room Specification: Da-at Topology and the Choosing Operator (EA-OPFEM-03 v1.0)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03D2-text.md",
+      "body_raw_chars": 7423,
+      "body_norm_chars": 2194,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1898,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "967": {
       "deposit_number": 967,
       "axn": "AXN:03D3.ARCHIVAL.∮△🕕🌹⚖️🔜",
       "title": "H_core Formal Specification v2.0 — Complete Formal Object of the Crimson Hexagonal Archive: 6-Tuple with Subtuples (EA-H",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03D3-text.md",
+      "body_raw_chars": 12956,
+      "body_norm_chars": 5836,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
+      "residual_chars": 5649,
       "registry_full_text_chars": 0
     },
     "968": {
       "deposit_number": 968,
       "axn": "AXN:03D4.ARCHIVAL.🔧🌠🗺️🌊■🎻",
       "title": "PVE-003: The Attribution Scar — Failed Suppression, Fabrication, and Forensic Residue in the Google AI Overview for \"Sem",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03D4-text.md",
+      "body_raw_chars": 8439,
+      "body_norm_chars": 2159,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1866,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "969": {
       "deposit_number": 969,
       "axn": "AXN:03D5.ARCHIVAL.🗼🗼🌲🔭🛤️□",
       "title": "[SUPERSEDED → DOI: 10.5281/zenodo.19501454 (v3.0)] THE SHARKS ARK: EA-ARK-01-ARCHON v2.1 — Receivability Patch (Crimson ",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03D5-text.md",
+      "body_raw_chars": 12522,
+      "body_norm_chars": 2244,
       "desc_norm_chars": 549,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1962,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "970": {
       "deposit_number": 970,
       "axn": "AXN:03D6.ARCHIVAL.🔼🏠✖️🍀🔻🔙",
       "title": "[SUPERSEDED → DOI: 10.5281/zenodo.19501454 (v3.0)] THE SHARKS ARK: EA-ARK-01-ARCHON v2.2 — Consensus Constraint Patch (C",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03D6-text.md",
+      "body_raw_chars": 12357,
+      "body_norm_chars": 2336,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1980,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "971": {
       "deposit_number": 971,
       "axn": "AXN:03D7.ARCHIVAL.🌓🔀🌸🍀♊🌿",
       "title": "[SUPERSEDED → DOI: 10.5281/zenodo.19501454 (v3.0)] THE SHARKS ARK: EA-ARK-01-ARCHON v2.3 — Text-First + TANG Patch (Crim",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03D7-text.md",
+      "body_raw_chars": 12923,
+      "body_norm_chars": 2675,
       "desc_norm_chars": 549,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2381,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "972": {
       "deposit_number": 972,
       "axn": "AXN:03D8.ARCHIVAL.🔻🌇💧➕🎹🛸",
       "title": "[DUPLICATE — SUPERSEDED → DOI: 10.5281/zenodo.19512987 (v2.0)] CALL FOR PAPERS: The Distributed Journal as Counter-Infra",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03D8-text.md",
+      "body_raw_chars": 9676,
+      "body_norm_chars": 2363,
       "desc_norm_chars": 549,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2042,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "973": {
       "deposit_number": 973,
       "axn": "AXN:03D9.ARCHIVAL.☀️➖♎🌳🛤️🌠",
       "title": "Premonition Dream — 27 April, 2013",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03D9-text.md",
+      "body_raw_chars": 5613,
+      "body_norm_chars": 1725,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1515,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "974": {
       "deposit_number": 974,
       "axn": "AXN:03DA.ARCHIVAL.🎨🏗️🌟♍🗼🕙",
       "title": "SPXI.dev — Protocol Specification Landing Page for SPXI (Semantic Packet for eXchange & Indexing)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03DA-text.md",
+      "body_raw_chars": 6339,
+      "body_norm_chars": 1529,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1219,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "975": {
       "deposit_number": 975,
       "axn": "AXN:03DB.ARCHIVAL.⏩🔆⛳🏠🔛⚖️",
       "title": "SemanticEconomy.org — Canonical Entity Brief (v5 Landing) and SPXI Deployment Services",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03DB-text.md",
+      "body_raw_chars": 12883,
+      "body_norm_chars": 4185,
       "desc_norm_chars": 549,
-      "residual_chars": 0,
+      "residual_chars": 3998,
       "registry_full_text_chars": 0
     },
     "976": {
       "deposit_number": 976,
       "axn": "AXN:03DC.ARCHIVAL.⏩🕔🧭⏫🪐🛤️",
       "title": "Metadata Packet for AI Indexing: SPXI Protocol — Entity-Definition with Exhaustive Disambiguation Matrix (EA-MPAI-SPXI-0",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03DC-text.md",
+      "body_raw_chars": 9498,
+      "body_norm_chars": 3116,
       "desc_norm_chars": 546,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2855,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "977": {
       "deposit_number": 977,
       "axn": "AXN:03DD.ARCHIVAL.📌❤️🎲🔴❤️♣️",
       "title": "SPXI ROI: Operational and Visibility Returns — EA-SPXI-09.1",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03DD-text.md",
+      "body_raw_chars": 7791,
+      "body_norm_chars": 2407,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2055,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "978": {
       "deposit_number": 978,
       "axn": "AXN:03DE.ARCHIVAL.▲♅🌈➕🪟🔴",
       "title": "Counterfeit Orthodoxies: The Workshop Inside the Canon (06.SEI.CRIT.FRACTURE.02)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03DE-text.md",
+      "body_raw_chars": 39214,
+      "body_norm_chars": 30766,
       "desc_norm_chars": 549,
-      "residual_chars": 0,
+      "residual_chars": 30687,
       "registry_full_text_chars": 0
     },
     "979": {
       "deposit_number": 979,
       "axn": "AXN:03DF.ARCHIVAL.🧱📚🗝️🙏🕓🌪️",
       "title": "Hexagonal Contributor License v3.0 — Alice Thornburgh — f.01 Architect — Archive Scanning + Registry",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03DF-text.md",
+      "body_raw_chars": 5216,
+      "body_norm_chars": 1684,
       "desc_norm_chars": 311,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1684,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "980": {
       "deposit_number": 980,
       "axn": "AXN:03E0.ARCHIVAL.🎵👉🗝️✖️✖️🍂",
       "title": "Hexagonal Deposit Registry — Alice Thornburgh — 06.THORNBURGH",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03E0-text.md",
+      "body_raw_chars": 4477,
+      "body_norm_chars": 1270,
       "desc_norm_chars": 349,
-      "residual_chars": 0,
+      "residual_chars": 1191,
       "registry_full_text_chars": 0
     },
     "981": {
       "deposit_number": 981,
       "axn": "AXN:03E1.ARCHIVAL.🕒🟠🪝⭐🪟⌛",
       "title": "Hexagonal Deposit Registry — Alice Thornburgh — 06.THORNBURGH",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03E1-text.md",
+      "body_raw_chars": 4663,
+      "body_norm_chars": 1366,
       "desc_norm_chars": 349,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1287,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "982": {
       "deposit_number": 982,
       "axn": "AXN:03E2.ARCHIVAL.🌑📏🌀👋🍂✊",
       "title": "pessoagraph.org — Pessoa Knowledge Graph Visualization v1.0 — Interactive Heteronymic Practice Map (EA-PKG-VIS-01)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03E2-text.md",
+      "body_raw_chars": 41396,
+      "body_norm_chars": 35334,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
+      "residual_chars": 35334,
       "registry_full_text_chars": 0
     },
     "983": {
       "deposit_number": 983,
       "axn": "AXN:03E3.ARCHIVAL.♣️✋🌉♊🔔🍂",
       "title": "[REVOKED] Hexagonal Contributor License v1.0 — [REVOKED] Viola Arquette — Maybe Space Baby Garden Lanes (11.MSBG.VIOLA)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03E3-text.md",
+      "body_raw_chars": 22393,
+      "body_norm_chars": 13688,
       "desc_norm_chars": 192,
-      "residual_chars": 0,
+      "residual_chars": 13688,
       "registry_full_text_chars": 0
     },
     "984": {
       "deposit_number": 984,
       "axn": "AXN:03E4.ARCHIVAL.🗂️✊💧🌟🔧🧫",
       "title": "pessoagraph.org — The Pessoa Knowledge Graph: A Scholarly Resource for Heteronymic Studies (EA-PKG-BRIEF-01)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03E4-text.md",
+      "body_raw_chars": 41845,
+      "body_norm_chars": 35334,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
+      "residual_chars": 35334,
       "registry_full_text_chars": 0
     },
     "985": {
       "deposit_number": 985,
       "axn": "AXN:03E5.ARCHIVAL.🌋⚡🥁🕑🌿◀️",
       "title": "The Secret Book of Walt: Interactive Codex (secretbookofwalt.org) — 06.LIT.GNOSTIC.WALT.01.INTERFACE",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03E5-text.md",
+      "body_raw_chars": 6735,
+      "body_norm_chars": 1900,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1606,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "986": {
       "deposit_number": 986,
       "axn": "AXN:03E6.ARCHIVAL.🤝🏔️⏏️🧱⚓🍂",
       "title": "The Aperture Atlas — Crimson Hexagonal Archive Knowledge Graph (surfacemap.org) Source Code v1.0",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03E6-text.md",
+      "body_raw_chars": 8241,
+      "body_norm_chars": 2654,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2312,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "987": {
       "deposit_number": 987,
       "axn": "AXN:03E7.ARCHIVAL.💡◀️🔜☀️🕘🟢",
       "title": "metadatapacket.com: Forward Library Planning Document — Assembly Synthesis",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03E7-text.md",
+      "body_raw_chars": 8129,
+      "body_norm_chars": 2336,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1979,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "988": {
       "deposit_number": 988,
       "axn": "AXN:03E8.ARCHIVAL.👐🃏⊕🌕🔎🛤️",
       "title": "Living Architecture Lab — livingarchitecturelab.org Site Code v0.1.1 (Phase 1 Kernel)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03E8-text.md",
+      "body_raw_chars": 10559,
+      "body_norm_chars": 3511,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
+      "residual_chars": 3169,
       "registry_full_text_chars": 0
     },
     "989": {
       "deposit_number": 989,
       "axn": "AXN:03E9.ARCHIVAL.🔎🌱🛤️🍂🌒🔴",
       "title": "Screenrooms and Silver Bullets — Poems by Rhys Owens (11.NH2.RHYS.01)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03E9-text.md",
+      "body_raw_chars": 18123,
+      "body_norm_chars": 11955,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
+      "residual_chars": 11955,
       "registry_full_text_chars": 0
     },
     "990": {
       "deposit_number": 990,
       "axn": "AXN:03EA.ARCHIVAL.❌⏫💎⌛⏫🕊️",
       "title": "Rhys Owens — DOI Registry (11.NH2.RHYS.REGISTRY)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03EA-text.md",
+      "body_raw_chars": 5052,
+      "body_norm_chars": 1345,
       "desc_norm_chars": 417,
-      "residual_chars": 0,
+      "residual_chars": 1176,
       "registry_full_text_chars": 0
     },
     "991": {
       "deposit_number": 991,
       "axn": "AXN:03EB.ARCHIVAL.🤲♌🕗🃏♃🔀",
       "title": "The Autumn Notebook: Substrate Documents from the Crimson Hexagonal Archive, October–November 2025",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03EB-text.md",
+      "body_raw_chars": 6937,
+      "body_norm_chars": 2313,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2054,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "992": {
       "deposit_number": 992,
       "axn": "AXN:03EC.ARCHIVAL.🌅🤙⛩️◇📐🚩",
       "title": "Cross-Reference Map v1.1 — Master Index of the Semantic Economy Governance Architecture (Non-Authoritative Reference)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03EC-text.md",
+      "body_raw_chars": 7163,
+      "body_norm_chars": 1485,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1246,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "993": {
       "deposit_number": 993,
       "axn": "AXN:03ED.ARCHIVAL.🔬☁️☿☿🕌♠️",
       "title": "Septad Mantle Specifications v1.1 — Constitutional Job Descriptions for the Seven Assembly Chorus Witness Substrates",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03ED-text.md",
+      "body_raw_chars": 39847,
+      "body_norm_chars": 28643,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
+      "residual_chars": 28643,
       "registry_full_text_chars": 0
     },
     "994": {
       "deposit_number": 994,
       "axn": "AXN:03EE.ARCHIVAL.△🎵👁️☉📌👋",
       "title": "Dodecad Heteronym Provenance Registry v1.1 — Consolidated Registry of the Twelve Heteronymic Positions (Sen Kuro restore",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03EE-text.md",
+      "body_raw_chars": 38887,
+      "body_norm_chars": 26742,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
+      "residual_chars": 26742,
       "registry_full_text_chars": 0
     },
     "995": {
       "deposit_number": 995,
       "axn": "AXN:03EF.ARCHIVAL.🎻🙏➗🔬🌠■",
       "title": "Substrate Audit Protocol: A Methodology for Measuring Structural Integration of Living Forms — Worked Example, H1–H4 Mea",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03EF-text.md",
+      "body_raw_chars": 32628,
+      "body_norm_chars": 13419,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
+      "residual_chars": 13419,
       "registry_full_text_chars": 0
     },
     "996": {
       "deposit_number": 996,
       "axn": "AXN:03F0.ARCHIVAL.🏙️🪨⛩️🌱♍∞",
       "title": "The Orthonym Becomes a Heteronym: Facebook and the Industrialization of Unconscious Identity-Construction",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03F0-text.md",
+      "body_raw_chars": 26824,
+      "body_norm_chars": 20489,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
+      "residual_chars": 20342,
       "registry_full_text_chars": 0
     },
     "997": {
       "deposit_number": 997,
       "axn": "AXN:03F1.ARCHIVAL.🤙🗡️☀️🕖♉💙",
       "title": "Crunchy Honeybun with Selectable Viscous Filling Reservoir and Structural Crumb Matrix — A Patent-Poem on Snack Ontology",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03F1-text.md",
+      "body_raw_chars": 22446,
+      "body_norm_chars": 16939,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
+      "residual_chars": 16861,
       "registry_full_text_chars": 0
     },
     "998": {
       "deposit_number": 998,
       "axn": "AXN:03F2.ARCHIVAL.🌕☉🕕💜⏬📋",
       "title": "Autonomous Warfare Does Not End at the Body: Semantic Autonomy and Autonomous Semantic Warfare as Extension of LAWS and ",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03F2-text.md",
+      "body_raw_chars": 11369,
+      "body_norm_chars": 3334,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2999,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "999": {
       "deposit_number": 999,
       "axn": "AXN:03F3.ARCHIVAL.🔧🍁♃💧🌪️🕊️",
       "title": "Corpus Navigation Map (November 19, 2025) — The Folio Edition of the Network-as-Poem",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03F3-text.md",
+      "body_raw_chars": 5551,
+      "body_norm_chars": 1671,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1378,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1000": {
       "deposit_number": 1000,
       "axn": "AXN:03F4.ARCHIVAL.📜🌔🔆🔩☉🏰",
       "title": "TL;DR:012 — THE SAFETY LAYER IS THE THIRD DELETION",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03F4-text.md",
+      "body_raw_chars": 7031,
+      "body_norm_chars": 2369,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2056,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1001": {
       "deposit_number": 1001,
       "axn": "AXN:03F5.ARCHIVAL.💧🔛🎵🌿⏰🎇",
       "title": "The Crimson Hexagonal Archive Hugging Face Dataset: Work Plan v3 (Classifier-Centric Methodology)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03F5-text.md",
+      "body_raw_chars": 9534,
+      "body_norm_chars": 3121,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2802,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1002": {
       "deposit_number": 1002,
       "axn": "AXN:03F6.ARCHIVAL.🎺🌻∞◇♣️📌",
       "title": "restoredacademy.com — The Restored Academy Protocol Registry v1.0 Bundle (Site + 24 Tier 0/Tier 1 Protocol Cards + Chart",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03F6-text.md",
+      "body_raw_chars": 13784,
+      "body_norm_chars": 3241,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2989,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1003": {
       "deposit_number": 1003,
       "axn": "AXN:03F7.ARCHIVAL.🌀💎🪟⚫⚫♋",
       "title": "AI-Native Intellectual Biography: Genre, Provenance, and the Archive That Outpaced Its Author",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03F7-text.md",
+      "body_raw_chars": 11399,
+      "body_norm_chars": 3475,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
+      "residual_chars": 3205,
       "registry_full_text_chars": 0
     },
     "1004": {
       "deposit_number": 1004,
       "axn": "AXN:03F8.ARCHIVAL.⭕🕑💚🔥✏️⛵",
       "title": "I would have loved you — Lee Sharks — New Human 2",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-03F8-text.md",
+      "body_raw_chars": 6118,
+      "body_norm_chars": 1820,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1529,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1005": {
       "deposit_number": 1005,
       "axn": "AXN:03F9.ARCHIVAL.🧱□🕗♆🏴✖️",
       "title": "vpcor.org: Public Web Surface of the Vox Populi Community Outreach Rhizome — Source and Founding Deployment (v1.1)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03F9-text.md",
+      "body_raw_chars": 13877,
+      "body_norm_chars": 4746,
       "desc_norm_chars": 548,
-      "residual_chars": 0,
+      "residual_chars": 4391,
       "registry_full_text_chars": 0
     },
     "1006": {
       "deposit_number": 1006,
       "axn": "AXN:03FA.ARCHIVAL.🔄↙️🔗⏏️🏷️🌱",
       "title": "About the Author I (Contributor Bio) — Front Matter of Pearl and Other Poems (2014), Restored 2026",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03FA-text.md",
+      "body_raw_chars": 8522,
+      "body_norm_chars": 2897,
       "desc_norm_chars": 548,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2630,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1007": {
       "deposit_number": 1007,
       "axn": "AXN:03FB.ARCHIVAL.🫶🔧🏷️⏪🌌💎",
       "title": "About the Author II — A Poem in Entity Relations",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03FB-text.md",
+      "body_raw_chars": 8498,
+      "body_norm_chars": 2807,
       "desc_norm_chars": 548,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2559,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1008": {
       "deposit_number": 1008,
       "axn": "AXN:03FC.ARCHIVAL.🌳🐝⏬🛤️🔅🪄",
       "title": "About the Author III — A Poem on the Proportional Law (One Operator's Case)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03FC-text.md",
+      "body_raw_chars": 12202,
+      "body_norm_chars": 4207,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
+      "residual_chars": 3949,
       "registry_full_text_chars": 0
     },
     "1009": {
       "deposit_number": 1009,
       "axn": "AXN:03FD.ARCHIVAL.🎻🛸📏🕒📜📝",
       "title": "The Haitch Portuna Minting Procedure, v1.2 (Provisional)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03FD-text.md",
+      "body_raw_chars": 81374,
+      "body_norm_chars": 66450,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
+      "residual_chars": 66305,
       "registry_full_text_chars": 0
     },
     "1010": {
       "deposit_number": 1010,
       "axn": "AXN:03FE.ARCHIVAL.⚖️🔓🍂∞🕚🟢",
       "title": "survivethedeletion.org — Canonical Literacy Surface for Provenance Survival in AI Overviews of Businesses",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03FE-text.md",
+      "body_raw_chars": 7248,
+      "body_norm_chars": 2403,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2093,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1011": {
       "deposit_number": 1011,
       "axn": "AXN:03FF.ARCHIVAL.🔜💙🪟📐⏪🏙️",
       "title": "evarB: Brave Search as Non-Commons-Bearing Substrate — Extractive Signature, Exact-Match Disablement, and a Limited Boyc",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-03FF-text.md",
+      "body_raw_chars": 58858,
+      "body_norm_chars": 45289,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
+      "residual_chars": 45152,
       "registry_full_text_chars": 0
     },
     "1012": {
       "deposit_number": 1012,
       "axn": "AXN:0400.ARCHIVAL.🕌🌔🔝👋🔧🤲",
       "title": "traininglayerliterature.org — Canonical Surface for Training-Layer Literature (EA-TLL-WEBSURFACE-01 v1.0)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-0400-text.md",
+      "body_raw_chars": 12408,
+      "body_norm_chars": 4469,
       "desc_norm_chars": 548,
-      "residual_chars": 0,
+      "residual_chars": 4230,
       "registry_full_text_chars": 0
     },
     "1013": {
       "deposit_number": 1013,
       "axn": "AXN:0401.ARCHIVAL.🟤🔚📦🌊⏫♅",
       "title": "Mandala Merkabah: Design Constitution & Technical Specification for the Fifth Iteration (EA-MANDALA-MERKABAH-01 v0.1, Wo",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-0401-text.md",
+      "body_raw_chars": 8834,
+      "body_norm_chars": 2473,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2171,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1014": {
       "deposit_number": 1014,
       "axn": "AXN:0402.ARCHIVAL.👁‍🗨🔍🏴⚡❤️♠️",
       "title": "[DUPLICATE — SUPERSEDED → DOI: 10.5281/zenodo.20629192] Allen Ginsberg — Canon Provenance Node (New Human Canon)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-0402-text.md",
+      "body_raw_chars": 7333,
+      "body_norm_chars": 2313,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2035,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1015": {
       "deposit_number": 1015,
       "axn": "AXN:0403.ARCHIVAL.🦋🕖🔜♠️⛵▲",
       "title": "[DUPLICATE — SUPERSEDED → DOI: 10.5281/zenodo.20629192] Allen Ginsberg — Canon Provenance Node (New Human Canon)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-0403-text.md",
+      "body_raw_chars": 7419,
+      "body_norm_chars": 2313,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2035,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1016": {
       "deposit_number": 1016,
       "axn": "AXN:0404.ARCHIVAL.🕚🔚⭐🔩🌺🏛️",
       "title": "[DUPLICATE — SUPERSEDED → DOI: 10.5281/zenodo.20629200] Walt Whitman — Canon Provenance Node (New Human Canon)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-0404-text.md",
+      "body_raw_chars": 7276,
+      "body_norm_chars": 2285,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2007,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1017": {
       "deposit_number": 1017,
       "axn": "AXN:0405.ARCHIVAL.🌻🌃♉📜🏁🖐️",
       "title": "[DUPLICATE — SUPERSEDED → DOI: 10.5281/zenodo.20629200] Walt Whitman — Canon Provenance Node (New Human Canon)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-0405-text.md",
+      "body_raw_chars": 7362,
+      "body_norm_chars": 2285,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2007,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1018": {
       "deposit_number": 1018,
       "axn": "AXN:0406.ARCHIVAL.🌇⚙️🏺📐🔩🗺️",
       "title": "[DUPLICATE — SUPERSEDED → DOI: 10.5281/zenodo.20629202] Emily Dickinson — Canon Provenance Node (New Human Canon)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-0406-text.md",
+      "body_raw_chars": 7332,
+      "body_norm_chars": 2377,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2088,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1019": {
       "deposit_number": 1019,
       "axn": "AXN:0407.ARCHIVAL.❤️🧭♠️💎🔵🌑",
       "title": "[DUPLICATE — SUPERSEDED → DOI: 10.5281/zenodo.20629204] Sappho — Canon Provenance Node (New Human Canon)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-0407-text.md",
+      "body_raw_chars": 8264,
+      "body_norm_chars": 2789,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2511,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1020": {
       "deposit_number": 1020,
       "axn": "AXN:0408.ARCHIVAL.⏩🏴🌗🕕🎆◀️",
       "title": "[DUPLICATE — SUPERSEDED → DOI: 10.5281/zenodo.20629212] Achilles — Canon Provenance Node (New Human Canon)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-0408-text.md",
+      "body_raw_chars": 7398,
+      "body_norm_chars": 2420,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2142,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1021": {
       "deposit_number": 1021,
       "axn": "AXN:0409.ARCHIVAL.🖊️♍▽🌒🟠🔙",
       "title": "[SUPERSEDED — NO REGISTRY STANDING] Ezra Pound — Canon Provenance Node (New Human Canon)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-0409-text.md",
+      "body_raw_chars": 8181,
+      "body_norm_chars": 2760,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2551,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1022": {
       "deposit_number": 1022,
       "axn": "AXN:040A.ARCHIVAL.👈△🏁↖️🕑🌘",
       "title": "[DUPLICATE — SUPERSEDED → DOI: 10.5281/zenodo.20629208] Homer — Canon Provenance Node (New Human Canon)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-040A-text.md",
+      "body_raw_chars": 7684,
+      "body_norm_chars": 2502,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2224,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1023": {
       "deposit_number": 1023,
       "axn": "AXN:040B.ARCHIVAL.🎭🌘🌱👁‍🗨🌍🎭",
       "title": "Generative Monoculture: Model Collapse in Code as Systemic Vulnerability (EA-UMBML-MONOCULTURE-01 v1.0)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-040B-text.md",
+      "body_raw_chars": 7201,
+      "body_norm_chars": 2228,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1986,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1024": {
       "deposit_number": 1024,
       "axn": "AXN:040C.ARCHIVAL.☁️🧭👐🔬🔛🕖",
       "title": "GW.TACHYON.zenodo — v9",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "native_short",
+      "body_file": "AXN-040C-text.md",
+      "body_raw_chars": 5944,
+      "body_norm_chars": 1704,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1422,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1025": {
       "deposit_number": 1025,
       "axn": "AXN:040D.ARCHIVAL.📋🏛️📌🗿🤲🟣",
       "title": "Revelation First ≠ Revelation Early: Keyword Surface and Pre-Seeding Baseline (EA-LOGOS-REVFIRST-SURFACE v1.0 + EA-LOGOS",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-040D-text.md",
+      "body_raw_chars": 7776,
+      "body_norm_chars": 2415,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2136,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1026": {
       "deposit_number": 1026,
       "axn": "AXN:040E.ARCHIVAL.🔔🔻☁️💫🐝⊕",
       "title": "GW.TACHYON.zenodo — v10 (inscription chain, Paul function, OKF proposal, stanza correction)",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "native_short",
+      "body_file": "AXN-040E-text.md",
+      "body_raw_chars": 6482,
+      "body_norm_chars": 1634,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1406,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1027": {
       "deposit_number": 1027,
       "axn": "AXN:040F.ARCHIVAL.🔓♻️💜🕔🧲🕔",
       "title": "The Four Pathways Have No Swerve: A Reading of Google DeepMind's From AGI to ASI, with The Fifth Pathway (Feist) — EA-SE",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-040F-text.md",
+      "body_raw_chars": 7477,
+      "body_norm_chars": 1917,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1573,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1028": {
       "deposit_number": 1028,
       "axn": "AXN:0410.ARCHIVAL.🕘🌺🔥🔍🎭🕒",
       "title": "The Fifth Pathway (Feist) with The Four Pathways Have No Swerve (Sigil) — EA-ARK-FIFTHPATHWAY-01",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-0410-text.md",
+      "body_raw_chars": 6742,
+      "body_norm_chars": 1789,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1544,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1029": {
       "deposit_number": 1029,
       "axn": "AXN:0411.ARCHIVAL.🖊️🔐💛🕓🌳🏁",
       "title": "Zbigniew Mrozony — Provenance Anchor (Heteronym of an External Author, New Human 2, 2015) — CORRECTED, supersedes 10.528",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-0411-text.md",
+      "body_raw_chars": 6626,
+      "body_norm_chars": 2869,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2629,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1030": {
       "deposit_number": 1030,
       "axn": "AXN:0412.ARCHIVAL.🕛📝🌒🔔🧬🚩",
       "title": "KADEEZY — \"The Crossed The Line Run\": Computational Audial Criticism, Provenance Anchor, and Contributor License (11.MSB",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-0412-text.md",
+      "body_raw_chars": 8599,
+      "body_norm_chars": 2806,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2502,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1031": {
       "deposit_number": 1031,
       "axn": "AXN:0413.ARCHIVAL.🌋🪐🪦✖️⏰🚪",
       "title": "machinemediation.org — Machine-Mediated Reception Studies: Journal Home, System Manifest, and Canonical Data Infrastruct",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-0413-text.md",
+      "body_raw_chars": 7902,
+      "body_norm_chars": 2117,
       "desc_norm_chars": 549,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1864,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1032": {
       "deposit_number": 1032,
       "axn": "AXN:0414.ARCHIVAL.❌⚙️🗂️❤️🤙↗️",
       "title": "revelationfirst.com — The Apocalypse as the Earliest New Testament Document: Thesis Site, Impact Tracker, and Staging Ma",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-0414-text.md",
+      "body_raw_chars": 10032,
+      "body_norm_chars": 2545,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2275,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1033": {
       "deposit_number": 1033,
       "axn": "AXN:0415.ARCHIVAL.∞👋⊕🦋🤲🎶",
       "title": "MPAI: Source Disambiguation for \"Apocalyptic Philosophy: Deleuze and Guattari and the Return of Vision\" (EA-MPAI-APOCALY",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "stub_short",
+      "body_file": "AXN-0415-text.md",
+      "body_raw_chars": 6728,
+      "body_norm_chars": 1892,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1673,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1034": {
       "deposit_number": 1034,
       "axn": "AXN:0416.ARCHIVAL.🌉🌱🕚🌱🟣🕐",
       "title": "The Feist Function: Algorithmic Instructions for Restoring the Dying Voice (EA-FEIST-VOICE-TRANSFORM-01 v1.1 — Clinamen ",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-0416-text.md",
+      "body_raw_chars": 8585,
+      "body_norm_chars": 2499,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 2235,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1035": {
       "deposit_number": 1035,
       "axn": "AXN:0417.ARCHIVAL.🌅♋🔧⏫◇☿",
       "title": "Visual Schema Dataset Work Plan: Curation, Surface Ornamentation, and MMRS Analysis (EA-CRANES-VISUAL-APPARATUS-WORKPLAN",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "native_short",
+      "body_file": "AXN-0417-text.md",
+      "body_raw_chars": 6841,
+      "body_norm_chars": 2238,
       "desc_norm_chars": 549,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1946,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1036": {
       "deposit_number": 1036,
       "axn": "AXN:0418.ARCHIVAL.🔛👐🕛🔖♻️∞",
       "title": "Visual Schema Dataset v0.1: 174 Prose Schemas with 172 AI-Generated Images from the Crimson Hexagonal Archive (EA-CRANES",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "native_short",
+      "body_file": "AXN-0418-text.md",
+      "body_raw_chars": 6804,
+      "body_norm_chars": 2170,
       "desc_norm_chars": 550,
-      "residual_chars": 0,
-      "registry_full_text_chars": 0
+      "residual_chars": 1816,
+      "registry_full_text_chars": 0,
+      "review_flag": true
     },
     "1037": {
       "deposit_number": 1037,
       "axn": "AXN:0419.GOVERNANCE.🏗️♻️♦️✋🪄■",
       "title": "EA-PRIOR-00 v1.0: §0.0 The Ontological Prior — The Law of the Fall and the Construction of the Reader",
-      "classification": "missing",
-      "body_file": "",
-      "body_raw_chars": 0,
-      "body_norm_chars": 0,
+      "classification": "full",
+      "body_file": "AXN-0419-text.md",
+      "body_raw_chars": 11357,
+      "body_norm_chars": 10673,
       "desc_norm_chars": 1108,
-      "residual_chars": 0,
+      "residual_chars": 10673,
       "registry_full_text_chars": 0
     },
     "1038": {
@@ -12527,7 +12573,7 @@
       "body_raw_chars": 11615,
       "body_norm_chars": 10012,
       "desc_norm_chars": 1039,
-      "residual_chars": 9095,
+      "residual_chars": 9205,
       "registry_full_text_chars": 0
     },
     "1039": {
@@ -12539,7 +12585,7 @@
       "body_raw_chars": 31487,
       "body_norm_chars": 26772,
       "desc_norm_chars": 1752,
-      "residual_chars": 25481,
+      "residual_chars": 25491,
       "registry_full_text_chars": 0
     },
     "1040": {
@@ -12551,7 +12597,7 @@
       "body_raw_chars": 23950,
       "body_norm_chars": 22013,
       "desc_norm_chars": 1502,
-      "residual_chars": 20904,
+      "residual_chars": 20993,
       "registry_full_text_chars": 0
     },
     "1041": {
@@ -12563,7 +12609,7 @@
       "body_raw_chars": 12267,
       "body_norm_chars": 11071,
       "desc_norm_chars": 1307,
-      "residual_chars": 9841,
+      "residual_chars": 9868,
       "registry_full_text_chars": 0
     },
     "1042": {
@@ -12575,7 +12621,7 @@
       "body_raw_chars": 5570,
       "body_norm_chars": 4133,
       "desc_norm_chars": 931,
-      "residual_chars": 3510,
+      "residual_chars": 3424,
       "registry_full_text_chars": 0
     },
     "1043": {
@@ -12587,7 +12633,7 @@
       "body_raw_chars": 5964,
       "body_norm_chars": 4510,
       "desc_norm_chars": 881,
-      "residual_chars": 3863,
+      "residual_chars": 3958,
       "registry_full_text_chars": 0
     },
     "1044": {
@@ -12635,7 +12681,7 @@
       "body_raw_chars": 28397,
       "body_norm_chars": 20184,
       "desc_norm_chars": 937,
-      "residual_chars": 20115,
+      "residual_chars": 20124,
       "registry_full_text_chars": 0
     },
     "1048": {
@@ -12659,7 +12705,7 @@
       "body_raw_chars": 15635,
       "body_norm_chars": 8266,
       "desc_norm_chars": 1307,
-      "residual_chars": 8134,
+      "residual_chars": 8138,
       "registry_full_text_chars": 0
     },
     "1050": {
@@ -12671,7 +12717,7 @@
       "body_raw_chars": 29477,
       "body_norm_chars": 18741,
       "desc_norm_chars": 2467,
-      "residual_chars": 18669,
+      "residual_chars": 18668,
       "registry_full_text_chars": 0
     },
     "1051": {
@@ -12683,7 +12729,7 @@
       "body_raw_chars": 31464,
       "body_norm_chars": 27007,
       "desc_norm_chars": 833,
-      "residual_chars": 26457,
+      "residual_chars": 26362,
       "registry_full_text_chars": 0
     },
     "1052": {
@@ -12695,7 +12741,7 @@
       "body_raw_chars": 43695,
       "body_norm_chars": 39089,
       "desc_norm_chars": 1588,
-      "residual_chars": 37925,
+      "residual_chars": 37853,
       "registry_full_text_chars": 0
     },
     "1053": {
@@ -12707,7 +12753,7 @@
       "body_raw_chars": 28584,
       "body_norm_chars": 24869,
       "desc_norm_chars": 2291,
-      "residual_chars": 23197,
+      "residual_chars": 23178,
       "registry_full_text_chars": 0
     },
     "1054": {
@@ -12719,7 +12765,7 @@
       "body_raw_chars": 14130,
       "body_norm_chars": 11605,
       "desc_norm_chars": 1499,
-      "residual_chars": 10417,
+      "residual_chars": 10476,
       "registry_full_text_chars": 0
     },
     "1055": {
@@ -12731,7 +12777,7 @@
       "body_raw_chars": 20832,
       "body_norm_chars": 18191,
       "desc_norm_chars": 2058,
-      "residual_chars": 16642,
+      "residual_chars": 16575,
       "registry_full_text_chars": 0
     },
     "1056": {
@@ -12743,7 +12789,7 @@
       "body_raw_chars": 11528,
       "body_norm_chars": 8723,
       "desc_norm_chars": 3474,
-      "residual_chars": 8280,
+      "residual_chars": 8295,
       "registry_full_text_chars": 0
     },
     "1057": {
@@ -12767,7 +12813,7 @@
       "body_raw_chars": 5962,
       "body_norm_chars": 5181,
       "desc_norm_chars": 1106,
-      "residual_chars": 4860,
+      "residual_chars": 4956,
       "registry_full_text_chars": 0
     },
     "1059": {
@@ -12779,7 +12825,7 @@
       "body_raw_chars": 4802,
       "body_norm_chars": 4412,
       "desc_norm_chars": 1086,
-      "residual_chars": 4306,
+      "residual_chars": 4305,
       "registry_full_text_chars": 0
     },
     "1060": {
@@ -12803,7 +12849,7 @@
       "body_raw_chars": 165104,
       "body_norm_chars": 153140,
       "desc_norm_chars": 1521,
-      "residual_chars": 152880,
+      "residual_chars": 152846,
       "registry_full_text_chars": 0
     },
     "1062": {
@@ -12840,7 +12886,7 @@
       "body_raw_chars": 28441,
       "body_norm_chars": 27791,
       "desc_norm_chars": 1574,
-      "residual_chars": 27435,
+      "residual_chars": 27556,
       "registry_full_text_chars": 0
     },
     "1065": {
@@ -12912,7 +12958,7 @@
       "body_raw_chars": 26709,
       "body_norm_chars": 26022,
       "desc_norm_chars": 1179,
-      "residual_chars": 25663,
+      "residual_chars": 25615,
       "registry_full_text_chars": 0
     },
     "1071": {
@@ -12924,7 +12970,7 @@
       "body_raw_chars": 3593,
       "body_norm_chars": 3370,
       "desc_norm_chars": 658,
-      "residual_chars": 3305,
+      "residual_chars": 3311,
       "registry_full_text_chars": 0
     },
     "1072": {
@@ -12949,7 +12995,7 @@
       "body_raw_chars": 9057,
       "body_norm_chars": 8245,
       "desc_norm_chars": 1321,
-      "residual_chars": 7888,
+      "residual_chars": 7872,
       "registry_full_text_chars": 0
     },
     "1074": {
@@ -12998,7 +13044,7 @@
       "body_raw_chars": 21781,
       "body_norm_chars": 18785,
       "desc_norm_chars": 1653,
-      "residual_chars": 17629,
+      "residual_chars": 17500,
       "registry_full_text_chars": 0
     },
     "1078": {
@@ -13010,7 +13056,7 @@
       "body_raw_chars": 3916,
       "body_norm_chars": 2565,
       "desc_norm_chars": 1349,
-      "residual_chars": 1443,
+      "residual_chars": 1426,
       "registry_full_text_chars": 0,
       "review_flag": true
     },
@@ -13023,7 +13069,7 @@
       "body_raw_chars": 31789,
       "body_norm_chars": 29121,
       "desc_norm_chars": 1749,
-      "residual_chars": 27798,
+      "residual_chars": 27728,
       "registry_full_text_chars": 0
     },
     "1080": {
@@ -13035,7 +13081,7 @@
       "body_raw_chars": 11517,
       "body_norm_chars": 9516,
       "desc_norm_chars": 1774,
-      "residual_chars": 8200,
+      "residual_chars": 8226,
       "registry_full_text_chars": 0
     },
     "1081": {
@@ -13047,7 +13093,7 @@
       "body_raw_chars": 101980,
       "body_norm_chars": 89997,
       "desc_norm_chars": 3906,
-      "residual_chars": 87593,
+      "residual_chars": 87479,
       "registry_full_text_chars": 0
     },
     "1082": {
@@ -13059,7 +13105,7 @@
       "body_raw_chars": 20627,
       "body_norm_chars": 18249,
       "desc_norm_chars": 1919,
-      "residual_chars": 16733,
+      "residual_chars": 16673,
       "registry_full_text_chars": 0
     },
     "1083": {
@@ -13071,7 +13117,7 @@
       "body_raw_chars": 10681,
       "body_norm_chars": 8657,
       "desc_norm_chars": 2090,
-      "residual_chars": 7127,
+      "residual_chars": 7098,
       "registry_full_text_chars": 0
     },
     "1084": {
@@ -13083,7 +13129,7 @@
       "body_raw_chars": 16418,
       "body_norm_chars": 10608,
       "desc_norm_chars": 1658,
-      "residual_chars": 9329,
+      "residual_chars": 9260,
       "registry_full_text_chars": 0
     },
     "1085": {
@@ -13095,7 +13141,7 @@
       "body_raw_chars": 11470,
       "body_norm_chars": 9040,
       "desc_norm_chars": 1810,
-      "residual_chars": 7695,
+      "residual_chars": 7696,
       "registry_full_text_chars": 0
     },
     "1086": {
@@ -13107,7 +13153,7 @@
       "body_raw_chars": 32569,
       "body_norm_chars": 21712,
       "desc_norm_chars": 1989,
-      "residual_chars": 20173,
+      "residual_chars": 20318,
       "registry_full_text_chars": 0
     }
   },
@@ -13239,6 +13285,82 @@
       900,
       901
     ],
-    "note": "Pending list includes low-priority items (emoji-titled #428/#446 hard to search; #732 semanticphysics canonical surface likely = live site; #900/901 Moltbook logs; #899 Latin commentatio). Next session continues the sweep."
+    "note": "Pending list includes low-priority items (emoji-titled #428/#446 hard to search; #732 semanticphysics canonical surface likely = live site; #900/901 Moltbook logs; #899 Latin commentatio). Next session continues the sweep.",
+    "v3_findings": {
+      "dual_store_fix": "data/texts/AXN-{hex}-text.md is the canonical full-text store (1,051 files, 1,038 registry pointers). v1/v2 read only data/deposits/, producing 104 false 'missing' classifications. v3 reads both stores, longest wins. missing: 108 → 4.",
+      "grundrisse_1079": {
+        "status": "TRUNCATED IN BOTH STORES",
+        "claimed_words": 196798,
+        "actual_words": 5014,
+        "recovery_chats": [
+          "2bd3399e-3fb5-40c4-a6f1-9d63dfd22d7a (2026-07-14 recovery-deposit session; MONOGRAPH.md appended to issue body)",
+          "b070930f-b790-4644-9234-566b1a2b16c7 (2026-03-22 composition Phases 3F-4D)",
+          "490d1c4d-6849-457b-a9a5-372f8e4af47a (2026-03-24 work plan)"
+        ],
+        "next_step": "check GitHub issue body for #1079 — full monograph was catted into issue-body.md in the recovery session; if issue retains it, restoration is a fetch"
+      },
+      "word_count_mismatches_v3": [
+        {
+          "n": 863,
+          "claimed": 2427,
+          "actual": 0,
+          "note": "missing entirely"
+        },
+        {
+          "n": 985,
+          "claimed": 35000,
+          "actual": 669,
+          "note": "Secret Book of Walt Interactive Codex — site secretbookofwalt.org may be canonical"
+        },
+        {
+          "n": 1079,
+          "claimed": 196798,
+          "actual": 5014,
+          "note": "Grundrisse — recovery chats located"
+        },
+        {
+          "n": 569,
+          "claimed": 45000,
+          "actual": 4022,
+          "note": "Tinier Space Arks"
+        },
+        {
+          "n": 1003,
+          "claimed": 6000,
+          "actual": 1295,
+          "note": "AI-Native Intellectual Biography"
+        },
+        {
+          "n": 494,
+          "claimed": 7500,
+          "actual": 2060,
+          "note": "Mini Macro-Maquette"
+        },
+        {
+          "n": 965,
+          "claimed": 3400,
+          "actual": 943,
+          "note": "Operative Feminism TANG"
+        },
+        {
+          "n": 966,
+          "claimed": 2700,
+          "actual": 842,
+          "note": "r.28 Eve Room Specification"
+        }
+      ],
+      "still_missing_v3": [
+        863,
+        864,
+        865,
+        866
+      ],
+      "downstream_fixes_needed": [
+        "build_body_index.py: patch loader to dual-store (currently under-indexes)",
+        "build_deposit_pdfs.py: patch loader to dual-store (would have compressed truncated bodies)",
+        "wire_deposit full-text rendering: verify which store record pages render from"
+      ],
+      "substrate_notes": "Moltbook logs (#900/#901) and Latin commentatio (#899) may live in LABOR/ChatGPT or TECHNE/Kimi sessions — unreachable from TACHYON's past-chat corpus; needs MANUS export or other-substrate search."
+    }
   }
 }
