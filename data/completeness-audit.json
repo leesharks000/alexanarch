@@ -13110,5 +13110,135 @@
       "residual_chars": 20173,
       "registry_full_text_chars": 0
     }
+  },
+  "recovery_map": {
+    "generated_at": "2026-07-17T04:08:08.927509+00:00",
+    "method": "exact-match conversation_search of stub titles against past-chat corpus, per MANUS instruction",
+    "searches_run": 9,
+    "hits": 9,
+    "recoverable": {
+      "81": {
+        "title": "The Concordance Engine v0.1.1 (Tier B)",
+        "source_chat": "db6d1a69-406a-4a3e-9c3e-3f110fed1ff2",
+        "chat_date": "2026-05-05",
+        "evidence": "Full README + critique_loop.py implementation + citing block present in chat"
+      },
+      "128": {
+        "title": "Where's Waldo? Substrate Compositing",
+        "source_chat": "eb05d67a-3447-46c5-abe1-9bbb9d57b080",
+        "chat_date": "2026-05-30",
+        "evidence": "Full deposit sealing + entity relations; NOTE: memographic artifact — main content was IMAGE (Bosch/Handford composite)",
+        "reclass": "severed_media"
+      },
+      "502": {
+        "title": "Whose Face Is on the Twenty?",
+        "source_chat": "3fde9c89-aef6-467f-85f1-bd29f5a956a2",
+        "chat_date": "2026-02-27",
+        "evidence": "Full paper incl. Works Cited, siderographic correction, Assembly audit trail; DOI 10.5281/zenodo.18745216 (Memographic Hand, thumb)"
+      },
+      "509": {
+        "title": "Whose Face Is on the Twenty? (second record)",
+        "source_chat": "3fde9c89-aef6-467f-85f1-bd29f5a956a2",
+        "chat_date": "2026-02-27",
+        "evidence": "Same work as #502"
+      },
+      "507": {
+        "title": "All the Spoils of Babylon",
+        "source_chat": "3fde9c89-aef6-467f-85f1-bd29f5a956a2",
+        "chat_date": "2026-02-27",
+        "evidence": "Full paper draft in create_file; DOI 10.5281/zenodo.18745250 (Memographic Hand, middle); includes figure specs"
+      },
+      "532": {
+        "title": "MAGIC AS SYMBOLIC ENGINEERING",
+        "source_chat": "6a798659-0c90-4930-aebb-1bc30fa403eb + 7800d596-7042-4c06-81c8-0735beae8059",
+        "chat_date": "2026-03-03/09",
+        "evidence": "Full working paper with abstract, five atomic operations, disciplinary grammar; two chat copies"
+      },
+      "886": {
+        "title": "The Operating System for Meaning",
+        "source_chat": "ea3aebc3-a308-4ec7-992c-c9f9d9508fd7 + 75d9ecdb-725f-4c73-9397-e7a24873288b",
+        "chat_date": "2025-11-21 + 2026-01-08",
+        "evidence": "Original public essay + Sigil-framed NH-OS publication version with metadata header"
+      },
+      "902": {
+        "title": "Prolegomena to the Historical Logos",
+        "source_chat": "5c7132a5-c86c-4211-8b6f-5ae7cdb27d39",
+        "chat_date": "2026-04-05",
+        "evidence": "Complete md with YAML frontmatter + docx build + Zenodo deposit workflow; DOI 10.5281/zenodo.19431129; companion EA-LOGOS-01 at 19431121"
+      },
+      "803": {
+        "title": "The Water Giraffe Cycle (BOOK)",
+        "source_chat": "48fb66d1-069b-4c40-aafd-b40de1985aac",
+        "chat_date": "2026-06-14",
+        "evidence": "Full book WGC_BOOK_v1.0.md; DOI 10.5281/zenodo.20632525 published 2026-06-10; 173 relations; 9 files byte-verified; copied to outputs in that session. BOOK-LENGTH SEVERED WORK."
+      },
+      "760": {
+        "title": "AI Training Rights",
+        "source_chat": "eb05d67a-3447-46c5-abe1-9bbb9d57b080",
+        "chat_date": "2026-05-30",
+        "evidence": "Full leesharks.com/ai-training-rights page: TDM reservation (EU 2019/790 Art. 4), SPXI SIM markers, JSON-LD"
+      }
+    },
+    "reclassifications": {
+      "poems_native_short": {
+        "deposits": [
+          690,
+          701,
+          733,
+          734,
+          749,
+          750,
+          827
+        ],
+        "rationale": "Poems: on Zenodo the description field carried the full poem text. description_only IS the complete work for this class. Reclass: native_short (complete)."
+      },
+      "severed_media": {
+        "deposits": [
+          128,
+          325,
+          491,
+          555
+        ],
+        "rationale": "Image-carrying works (memography, VISUAL SCHEMA posts): main content was images severed at deletion. Text stub is the caption/frame. Distinct lacuna type: the absence is media, not text. Evidence: chat 2bea9585 blog audit lists 'VISUAL SCHEMA — SPACE ARK (2 images)' etc."
+      },
+      "canon_node_native": {
+        "deposits": [
+          180,
+          183
+        ],
+        "rationale": "Canon Provenance Nodes / Provenance Anchors are natively short-form entity objects (cf. #178 Homer pattern). Likely complete at their length; verify per-item."
+      },
+      "dataset_pointer": {
+        "deposits": [
+          3,
+          867
+        ],
+        "rationale": "#3 Capture Registry v8.3 superseded by v9.7 (data lives in registry lineage); #867 DataCite Backup Sweep = datasets/zenodo-datacite-batch. The work IS the dataset; the deposit is its pointer."
+      },
+      "site_canonical": {
+        "deposits": [
+          1078
+        ],
+        "rationale": "godkinggoogle.com deposit: the work is the live site (godkinggoogle repo, commit-tracked). Body stub points to canonical surface that exists."
+      }
+    },
+    "searches_pending": [
+      2,
+      62,
+      285,
+      295,
+      325,
+      428,
+      446,
+      491,
+      555,
+      699,
+      732,
+      757,
+      899,
+      900,
+      901
+    ],
+    "note": "Pending list includes low-priority items (emoji-titled #428/#446 hard to search; #732 semanticphysics canonical surface likely = live site; #900/901 Moltbook logs; #899 Latin commentatio). Next session continues the sweep."
   }
 }
