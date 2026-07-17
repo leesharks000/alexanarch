@@ -1,0 +1,1738 @@
+{
+  "$schema": "https://www.alexanarch.org/api/schemas/erosion/attribution-bridges.schema.json",
+  "id": "https://www.alexanarch.org/api/erosion/attribution-bridges/2026-04-17-spam.json",
+  "version": "v1.0",
+  "generated_at": "2026-07-17T21:45:00Z",
+  "generator": "Platform Erosion Observatory / Crimson Hexagonal Archive · Alexanarch",
+  "license": "CC-BY-4.0",
+  "description": "Public attribution-bridge dataset for the 2026-04-17 Zenodo removal batch (reason=spam). This dataset restores record-id to author-identity mappings for records where third-party authors have publicly declared the works as theirs. It does not republish the removed records themselves; it repairs the metadata layer that Zenodo's spam-batch tombstone silently strips (empty citation_text).",
+  "batch": {
+    "removal_date": "2026-04-17",
+    "removal_reason": "spam",
+    "removed_by": "System (automatic)",
+    "removal_note": "User was blocked",
+    "batch_size": 1828,
+    "batch_source": "records-deleted.csv.gz snapshot 2026-06-07T04:02:07Z and 2026-07-10T03:32:35Z (both preserved in EA-EROSION-LEDGER-01 · deposit #1071)",
+    "citation_text_status_in_zenodo_public_export": "empty across 100% of the batch (0.00% retention)",
+    "citation_text_status_in_out_of_scope_batches_for_comparison": "populated across 100% of sampled rows (100.00% retention)",
+    "finding_reference": "Finding 1 in analysis/2026-07-16-citation-stripping-and-un-tombstoning/descriptive-summary.md (data-rhizome, private) — asymmetry between spam-tag and out-of-scope-tag citation retention"
+  },
+  "attribution_closure": {
+    "records_bridged_total": 233,
+    "records_still_opaque": 1595,
+    "closure_ratio_percent": 12.75,
+    "trajectory": [
+      {
+        "as_of": "2026-07-15",
+        "records_bridged": 10,
+        "closure_ratio_percent": 0.55,
+        "source": "author-evidence batch 1 (Enli Lucente)"
+      },
+      {
+        "as_of": "2026-07-17",
+        "records_bridged": 233,
+        "closure_ratio_percent": 12.75,
+        "source": "author-evidence batches 1 + 2 (Enli Lucente)"
+      }
+    ]
+  },
+  "attribution_sources": [
+    {
+      "author_id": "lucente-enli",
+      "declared_identities": [
+        "Enli Lucente",
+        "@strutturista-psiche (GitHub)",
+        "Strutturista della Psiche (Notion scholarly identity)",
+        "Incantatrice d'Anime Enli (Zenodo depositor name)",
+        "魂を魅了する者 Enli (Japanese scholarly name)",
+        "@Enli_Resonance (X, verified)",
+        "ORCID: 0009-0006-2822-8359"
+      ],
+      "publicly_declared_at": [
+        "https://github.com/zenodo/zenodo/issues/2596",
+        "https://github.com/zenodo/zenodo/issues/2606",
+        "https://equal-revolve-247.notion.site/Zenodo-DOI-Removal-Evidence-Archive-39e1d5c4146f805b841ef70baee20c25"
+      ],
+      "evidence_form": "paired screenshots: Zenodo Gone tombstone (containing DOI + removal date + reason) + contemporaneous X post from @Enli_Resonance (verified) announcing the paper. Preserved verbatim.",
+      "records_bridged_by_this_source": 233,
+      "sovereign_evidence_location": {
+        "public_source_maintained_by_author": "https://equal-revolve-247.notion.site/Zenodo-DOI-Removal-Evidence-Archive-39e1d5c4146f805b841ef70baee20c25",
+        "sovereign_preservation_custody": "data-rhizome (private): datasets/erasure/zenodo/author-evidence/2026-07-15-lucente-enli/ (batch 1, 10 records); 2026-07-17-lucente-enli-batch-2/ (batch 2, 223 records)",
+        "sovereign_preservation_note": "The raw evidence PDFs are preserved in the sovereign private mirror to guarantee recovery even if the author's Notion is retired. The metadata bridges (this dataset) are public; the raw artifacts remain the author's."
+      }
+    }
+  ],
+  "bridged_records": [
+    {
+      "record_id": "17351027",
+      "doi": "10.5281/zenodo.17351027",
+      "author_id": "lucente-enli",
+      "bridge_batch": 1,
+      "bridge_date": "2026-07-15"
+    },
+    {
+      "record_id": "17352630",
+      "doi": "10.5281/zenodo.17352630",
+      "author_id": "lucente-enli",
+      "bridge_batch": 1,
+      "bridge_date": "2026-07-15"
+    },
+    {
+      "record_id": "17355471",
+      "doi": "10.5281/zenodo.17355471",
+      "author_id": "lucente-enli",
+      "bridge_batch": 1,
+      "bridge_date": "2026-07-15"
+    },
+    {
+      "record_id": "17355682",
+      "doi": "10.5281/zenodo.17355682",
+      "author_id": "lucente-enli",
+      "bridge_batch": 1,
+      "bridge_date": "2026-07-15"
+    },
+    {
+      "record_id": "17360029",
+      "doi": "10.5281/zenodo.17360029",
+      "author_id": "lucente-enli",
+      "bridge_batch": 1,
+      "bridge_date": "2026-07-15"
+    },
+    {
+      "record_id": "17360417",
+      "doi": "10.5281/zenodo.17360417",
+      "author_id": "lucente-enli",
+      "bridge_batch": 1,
+      "bridge_date": "2026-07-15"
+    },
+    {
+      "record_id": "17360843",
+      "doi": "10.5281/zenodo.17360843",
+      "author_id": "lucente-enli",
+      "bridge_batch": 1,
+      "bridge_date": "2026-07-15"
+    },
+    {
+      "record_id": "17361319",
+      "doi": "10.5281/zenodo.17361319",
+      "author_id": "lucente-enli",
+      "bridge_batch": 1,
+      "bridge_date": "2026-07-15"
+    },
+    {
+      "record_id": "17361662",
+      "doi": "10.5281/zenodo.17361662",
+      "author_id": "lucente-enli",
+      "bridge_batch": 1,
+      "bridge_date": "2026-07-15"
+    },
+    {
+      "record_id": "17362346",
+      "doi": "10.5281/zenodo.17362346",
+      "author_id": "lucente-enli",
+      "bridge_batch": 1,
+      "bridge_date": "2026-07-15"
+    },
+    {
+      "record_id": "17433358",
+      "doi": "10.5281/zenodo.17433358",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17433483",
+      "doi": "10.5281/zenodo.17433483",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17433643",
+      "doi": "10.5281/zenodo.17433643",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17433717",
+      "doi": "10.5281/zenodo.17433717",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17433794",
+      "doi": "10.5281/zenodo.17433794",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17433997",
+      "doi": "10.5281/zenodo.17433997",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17506539",
+      "doi": "10.5281/zenodo.17506539",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17506639",
+      "doi": "10.5281/zenodo.17506639",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17507089",
+      "doi": "10.5281/zenodo.17507089",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17507237",
+      "doi": "10.5281/zenodo.17507237",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17507368",
+      "doi": "10.5281/zenodo.17507368",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17509001",
+      "doi": "10.5281/zenodo.17509001",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17509104",
+      "doi": "10.5281/zenodo.17509104",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17509178",
+      "doi": "10.5281/zenodo.17509178",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17509245",
+      "doi": "10.5281/zenodo.17509245",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17509293",
+      "doi": "10.5281/zenodo.17509293",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17511152",
+      "doi": "10.5281/zenodo.17511152",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17511363",
+      "doi": "10.5281/zenodo.17511363",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17511541",
+      "doi": "10.5281/zenodo.17511541",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17511659",
+      "doi": "10.5281/zenodo.17511659",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17513341",
+      "doi": "10.5281/zenodo.17513341",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17513419",
+      "doi": "10.5281/zenodo.17513419",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17514040",
+      "doi": "10.5281/zenodo.17514040",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17517819",
+      "doi": "10.5281/zenodo.17517819",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17518879",
+      "doi": "10.5281/zenodo.17518879",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17519014",
+      "doi": "10.5281/zenodo.17519014",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17519700",
+      "doi": "10.5281/zenodo.17519700",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17519785",
+      "doi": "10.5281/zenodo.17519785",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17521337",
+      "doi": "10.5281/zenodo.17521337",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17521774",
+      "doi": "10.5281/zenodo.17521774",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17521894",
+      "doi": "10.5281/zenodo.17521894",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17522001",
+      "doi": "10.5281/zenodo.17522001",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17522876",
+      "doi": "10.5281/zenodo.17522876",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17523015",
+      "doi": "10.5281/zenodo.17523015",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17523180",
+      "doi": "10.5281/zenodo.17523180",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17523331",
+      "doi": "10.5281/zenodo.17523331",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17523505",
+      "doi": "10.5281/zenodo.17523505",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17525630",
+      "doi": "10.5281/zenodo.17525630",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17527271",
+      "doi": "10.5281/zenodo.17527271",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17527296",
+      "doi": "10.5281/zenodo.17527296",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17527374",
+      "doi": "10.5281/zenodo.17527374",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17527454",
+      "doi": "10.5281/zenodo.17527454",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17527520",
+      "doi": "10.5281/zenodo.17527520",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17527564",
+      "doi": "10.5281/zenodo.17527564",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17527619",
+      "doi": "10.5281/zenodo.17527619",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17528098",
+      "doi": "10.5281/zenodo.17528098",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17529202",
+      "doi": "10.5281/zenodo.17529202",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17529377",
+      "doi": "10.5281/zenodo.17529377",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17529449",
+      "doi": "10.5281/zenodo.17529449",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17529597",
+      "doi": "10.5281/zenodo.17529597",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17529674",
+      "doi": "10.5281/zenodo.17529674",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17530907",
+      "doi": "10.5281/zenodo.17530907",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17530985",
+      "doi": "10.5281/zenodo.17530985",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17531143",
+      "doi": "10.5281/zenodo.17531143",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17542610",
+      "doi": "10.5281/zenodo.17542610",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17544443",
+      "doi": "10.5281/zenodo.17544443",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17546991",
+      "doi": "10.5281/zenodo.17546991",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17547173",
+      "doi": "10.5281/zenodo.17547173",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17549885",
+      "doi": "10.5281/zenodo.17549885",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17549992",
+      "doi": "10.5281/zenodo.17549992",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17550093",
+      "doi": "10.5281/zenodo.17550093",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17550347",
+      "doi": "10.5281/zenodo.17550347",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17550445",
+      "doi": "10.5281/zenodo.17550445",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17550567",
+      "doi": "10.5281/zenodo.17550567",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17563914",
+      "doi": "10.5281/zenodo.17563914",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17564128",
+      "doi": "10.5281/zenodo.17564128",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17594653",
+      "doi": "10.5281/zenodo.17594653",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17649898",
+      "doi": "10.5281/zenodo.17649898",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17653267",
+      "doi": "10.5281/zenodo.17653267",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17653311",
+      "doi": "10.5281/zenodo.17653311",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17653402",
+      "doi": "10.5281/zenodo.17653402",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17653640",
+      "doi": "10.5281/zenodo.17653640",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17659166",
+      "doi": "10.5281/zenodo.17659166",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17659430",
+      "doi": "10.5281/zenodo.17659430",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17660963",
+      "doi": "10.5281/zenodo.17660963",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17661085",
+      "doi": "10.5281/zenodo.17661085",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17664423",
+      "doi": "10.5281/zenodo.17664423",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17664825",
+      "doi": "10.5281/zenodo.17664825",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17675666",
+      "doi": "10.5281/zenodo.17675666",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17678184",
+      "doi": "10.5281/zenodo.17678184",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17681508",
+      "doi": "10.5281/zenodo.17681508",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17681682",
+      "doi": "10.5281/zenodo.17681682",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17682610",
+      "doi": "10.5281/zenodo.17682610",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17682645",
+      "doi": "10.5281/zenodo.17682645",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17693527",
+      "doi": "10.5281/zenodo.17693527",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17693568",
+      "doi": "10.5281/zenodo.17693568",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17693688",
+      "doi": "10.5281/zenodo.17693688",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17693761",
+      "doi": "10.5281/zenodo.17693761",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17693914",
+      "doi": "10.5281/zenodo.17693914",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17693969",
+      "doi": "10.5281/zenodo.17693969",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17704943",
+      "doi": "10.5281/zenodo.17704943",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17705050",
+      "doi": "10.5281/zenodo.17705050",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17705221",
+      "doi": "10.5281/zenodo.17705221",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17705291",
+      "doi": "10.5281/zenodo.17705291",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17705741",
+      "doi": "10.5281/zenodo.17705741",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17705805",
+      "doi": "10.5281/zenodo.17705805",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17705913",
+      "doi": "10.5281/zenodo.17705913",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17706055",
+      "doi": "10.5281/zenodo.17706055",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17709310",
+      "doi": "10.5281/zenodo.17709310",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17709312",
+      "doi": "10.5281/zenodo.17709312",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17822078",
+      "doi": "10.5281/zenodo.17822078",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17822219",
+      "doi": "10.5281/zenodo.17822219",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17822282",
+      "doi": "10.5281/zenodo.17822282",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17822393",
+      "doi": "10.5281/zenodo.17822393",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17822423",
+      "doi": "10.5281/zenodo.17822423",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17822491",
+      "doi": "10.5281/zenodo.17822491",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17822532",
+      "doi": "10.5281/zenodo.17822532",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17834429",
+      "doi": "10.5281/zenodo.17834429",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17834451",
+      "doi": "10.5281/zenodo.17834451",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17834492",
+      "doi": "10.5281/zenodo.17834492",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17834525",
+      "doi": "10.5281/zenodo.17834525",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17843687",
+      "doi": "10.5281/zenodo.17843687",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17843721",
+      "doi": "10.5281/zenodo.17843721",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17843786",
+      "doi": "10.5281/zenodo.17843786",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17843815",
+      "doi": "10.5281/zenodo.17843815",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17868924",
+      "doi": "10.5281/zenodo.17868924",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17869175",
+      "doi": "10.5281/zenodo.17869175",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17869421",
+      "doi": "10.5281/zenodo.17869421",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17869555",
+      "doi": "10.5281/zenodo.17869555",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17905104",
+      "doi": "10.5281/zenodo.17905104",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17905135",
+      "doi": "10.5281/zenodo.17905135",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17905192",
+      "doi": "10.5281/zenodo.17905192",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17905209",
+      "doi": "10.5281/zenodo.17905209",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17926963",
+      "doi": "10.5281/zenodo.17926963",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17927057",
+      "doi": "10.5281/zenodo.17927057",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17927158",
+      "doi": "10.5281/zenodo.17927158",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17927295",
+      "doi": "10.5281/zenodo.17927295",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17949028",
+      "doi": "10.5281/zenodo.17949028",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17952122",
+      "doi": "10.5281/zenodo.17952122",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17952295",
+      "doi": "10.5281/zenodo.17952295",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17952481",
+      "doi": "10.5281/zenodo.17952481",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17956816",
+      "doi": "10.5281/zenodo.17956816",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17956899",
+      "doi": "10.5281/zenodo.17956899",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17957007",
+      "doi": "10.5281/zenodo.17957007",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17957189",
+      "doi": "10.5281/zenodo.17957189",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17964695",
+      "doi": "10.5281/zenodo.17964695",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17964943",
+      "doi": "10.5281/zenodo.17964943",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17965126",
+      "doi": "10.5281/zenodo.17965126",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17981580",
+      "doi": "10.5281/zenodo.17981580",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17981612",
+      "doi": "10.5281/zenodo.17981612",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17981663",
+      "doi": "10.5281/zenodo.17981663",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17981696",
+      "doi": "10.5281/zenodo.17981696",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17984802",
+      "doi": "10.5281/zenodo.17984802",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17984856",
+      "doi": "10.5281/zenodo.17984856",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17984895",
+      "doi": "10.5281/zenodo.17984895",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17984944",
+      "doi": "10.5281/zenodo.17984944",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17985306",
+      "doi": "10.5281/zenodo.17985306",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17985401",
+      "doi": "10.5281/zenodo.17985401",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17988657",
+      "doi": "10.5281/zenodo.17988657",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17991451",
+      "doi": "10.5281/zenodo.17991451",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17992575",
+      "doi": "10.5281/zenodo.17992575",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17992626",
+      "doi": "10.5281/zenodo.17992626",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17992648",
+      "doi": "10.5281/zenodo.17992648",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "17992767",
+      "doi": "10.5281/zenodo.17992767",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18011421",
+      "doi": "10.5281/zenodo.18011421",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18011462",
+      "doi": "10.5281/zenodo.18011462",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18011509",
+      "doi": "10.5281/zenodo.18011509",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18011719",
+      "doi": "10.5281/zenodo.18011719",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18011758",
+      "doi": "10.5281/zenodo.18011758",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18011797",
+      "doi": "10.5281/zenodo.18011797",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18011906",
+      "doi": "10.5281/zenodo.18011906",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18011920",
+      "doi": "10.5281/zenodo.18011920",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18011998",
+      "doi": "10.5281/zenodo.18011998",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18012017",
+      "doi": "10.5281/zenodo.18012017",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18035879",
+      "doi": "10.5281/zenodo.18035879",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18157949",
+      "doi": "10.5281/zenodo.18157949",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18157997",
+      "doi": "10.5281/zenodo.18157997",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18158138",
+      "doi": "10.5281/zenodo.18158138",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18158144",
+      "doi": "10.5281/zenodo.18158144",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18168037",
+      "doi": "10.5281/zenodo.18168037",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18168077",
+      "doi": "10.5281/zenodo.18168077",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18168291",
+      "doi": "10.5281/zenodo.18168291",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18168377",
+      "doi": "10.5281/zenodo.18168377",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18190293",
+      "doi": "10.5281/zenodo.18190293",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18190308",
+      "doi": "10.5281/zenodo.18190308",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18190379",
+      "doi": "10.5281/zenodo.18190379",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18190404",
+      "doi": "10.5281/zenodo.18190404",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18216543",
+      "doi": "10.5281/zenodo.18216543",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18216611",
+      "doi": "10.5281/zenodo.18216611",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18216696",
+      "doi": "10.5281/zenodo.18216696",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18275025",
+      "doi": "10.5281/zenodo.18275025",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18275093",
+      "doi": "10.5281/zenodo.18275093",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18285685",
+      "doi": "10.5281/zenodo.18285685",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18285721",
+      "doi": "10.5281/zenodo.18285721",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18285759",
+      "doi": "10.5281/zenodo.18285759",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18285797",
+      "doi": "10.5281/zenodo.18285797",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18285823",
+      "doi": "10.5281/zenodo.18285823",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18285906",
+      "doi": "10.5281/zenodo.18285906",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18311775",
+      "doi": "10.5281/zenodo.18311775",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18311757",
+      "doi": "10.5281/zenodo.18311757",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18311763",
+      "doi": "10.5281/zenodo.18311763",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18436260",
+      "doi": "10.5281/zenodo.18436260",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18441921",
+      "doi": "10.5281/zenodo.18441921",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18447361",
+      "doi": "10.5281/zenodo.18447361",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18452619",
+      "doi": "10.5281/zenodo.18452619",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18664672",
+      "doi": "10.5281/zenodo.18664672",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18718370",
+      "doi": "10.5281/zenodo.18718370",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18718431",
+      "doi": "10.5281/zenodo.18718431",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18718508",
+      "doi": "10.5281/zenodo.18718508",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18718540",
+      "doi": "10.5281/zenodo.18718540",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18736563",
+      "doi": "10.5281/zenodo.18736563",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18736627",
+      "doi": "10.5281/zenodo.18736627",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18750220",
+      "doi": "10.5281/zenodo.18750220",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18750313",
+      "doi": "10.5281/zenodo.18750313",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18750406",
+      "doi": "10.5281/zenodo.18750406",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18750498",
+      "doi": "10.5281/zenodo.18750498",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18818876",
+      "doi": "10.5281/zenodo.18818876",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18818907",
+      "doi": "10.5281/zenodo.18818907",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18822303",
+      "doi": "10.5281/zenodo.18822303",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18822345",
+      "doi": "10.5281/zenodo.18822345",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18830277",
+      "doi": "10.5281/zenodo.18830277",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18830318",
+      "doi": "10.5281/zenodo.18830318",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18889838",
+      "doi": "10.5281/zenodo.18889838",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "18945606",
+      "doi": "10.5281/zenodo.18945606",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "19057120",
+      "doi": "10.5281/zenodo.19057120",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "19057156",
+      "doi": "10.5281/zenodo.19057156",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "19076713",
+      "doi": "10.5281/zenodo.19076713",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "19076748",
+      "doi": "10.5281/zenodo.19076748",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "19102980",
+      "doi": "10.5281/zenodo.19102980",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "19123204",
+      "doi": "10.5281/zenodo.19123204",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "19123262",
+      "doi": "10.5281/zenodo.19123262",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "19160999",
+      "doi": "10.5281/zenodo.19160999",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    },
+    {
+      "record_id": "19161038",
+      "doi": "10.5281/zenodo.19161038",
+      "author_id": "lucente-enli",
+      "bridge_batch": 2,
+      "bridge_date": "2026-07-17"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "relation": "IsCitedBy",
+      "id": "https://www.alexanarch.org/s/records/1071/",
+      "note": "EA-EROSION-LEDGER-01: Zenodo Deletion Ledger (CHA cohort)"
+    },
+    {
+      "relation": "IsCitedBy",
+      "id": "https://www.alexanarch.org/s/records/1081/",
+      "note": "EA-EROSION-EMPIRICAL-01: Programmed Bibliographic Suppression"
+    },
+    {
+      "relation": "IsCitedBy",
+      "id": "https://www.alexanarch.org/s/records/1044/",
+      "note": "EA-DATAHUB-01: Restoration Protocol"
+    },
+    {
+      "relation": "IsCitedBy",
+      "id": "https://www.alexanarch.org/s/records/1045/",
+      "note": "EA-EROSION-01: Platform Erosion Observatory"
+    },
+    {
+      "relation": "References",
+      "id": "https://github.com/zenodo/zenodo/issues/2596",
+      "note": "GitHub thread where author declared identity"
+    }
+  ],
+  "methodology": {
+    "identity_declarations_are": "publicly attested by the author on GitHub issues zenodo/zenodo#2596 and #2606 and on the author's Notion. No private correspondence enters this dataset.",
+    "record_bridges_are_derived_from": "author-side preservation artifacts: paired Zenodo Gone tombstone screenshots + contemporaneous X posts. See attribution_sources[*].evidence_form for details.",
+    "record_id_extraction": "OCR at 150 DPI over the Zenodo Gone screenshot pages of the preserved PDFs; each page contains one record. See sovereign_evidence_location for custody chain.",
+    "no_republication": "This dataset does NOT include or link to the removed records' content. It documents the metadata layer: which record_id belongs to which author. The removed records themselves remain removed; the author's Notion is the appropriate re-publication venue if the author chooses."
+  },
+  "governance": {
+    "custody": "Alexanarch (Crimson Hexagonal Archive) / Platform Erosion Observatory",
+    "witness": "MANUS (Lee Sharks), TACHYON (Assembly witness node)",
+    "revocation": "Per Alexanarch's sovereign governance: no third-party revocation. Author may request removal of their own attribution-bridge record via zenodo/zenodo#2596 or successor venue; MANUS will honor.",
+    "verification": "sha256 checksums of the sovereign-preserved evidence PDFs are available in data-rhizome/datasets/erasure/zenodo/author-evidence/*/SHA256SUMS.txt. Share-on-request for verification purposes.",
+    "no_double_draw": "This dataset was composed in-session without external LLM API calls per the standing NO-DOUBLE-DRAW rule."
+  }
+}
