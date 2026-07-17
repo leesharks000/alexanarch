@@ -124,27 +124,36 @@ def _extract_capitalized_phrases(text: str) -> list[str]:
     return [m.strip() for m in matches if m.strip()]
 
 
+TEXTS_DIR = REPO_ROOT / "data" / "texts"
+
 def _load_body(hex_id: str, dep_num: int) -> tuple[str, str]:
-    """Return (body_text, path_used). Tries multiple filename conventions:
-    AXN-{hex}.md, AXN-{hex.zfill(4)}.md, AXN-{dep_num}.md."""
+    """Return (body_text, path_used) from the LONGEST body across BOTH stores.
+
+    v2 fix (2026-07-17): data/texts/AXN-{hex}-text.md is the canonical
+    full-text store (registry full_text_path); data/deposits/AXN-{hex}.md is
+    the wire_deposit store. Reading only deposits/ under-indexed the corpus
+    (104 deposits appeared body-less). Longest-wins across both stores."""
     candidates = []
     if hex_id:
-        candidates.append(DEPOSITS_DIR / f"AXN-{hex_id}.md")
-        # Early deposits (hex 1-3 chars) may be zero-padded to 4 chars
-        if len(hex_id) < 4:
-            candidates.append(DEPOSITS_DIR / f"AXN-{hex_id.zfill(4)}.md")
-        # Also try uppercase and lowercase variants for hex letters
+        hz = hex_id.zfill(4)
+        candidates += [DEPOSITS_DIR / f"AXN-{hex_id}.md", TEXTS_DIR / f"AXN-{hex_id}-text.md"]
+        if hz != hex_id:
+            candidates += [DEPOSITS_DIR / f"AXN-{hz}.md", TEXTS_DIR / f"AXN-{hz}-text.md"]
         if hex_id != hex_id.upper():
             candidates.append(DEPOSITS_DIR / f"AXN-{hex_id.upper()}.md")
     candidates.append(DEPOSITS_DIR / f"AXN-{dep_num}.md")
 
+    best_text, best_path = "", ""
     for candidate in candidates:
         if candidate.exists():
             try:
-                return candidate.read_text(encoding="utf-8", errors="replace"), str(candidate.relative_to(REPO_ROOT))
+                t = candidate.read_text(encoding="utf-8", errors="replace")
+                if len(t) > len(best_text):
+                    best_text = t
+                    best_path = str(candidate.relative_to(REPO_ROOT))
             except (OSError, UnicodeDecodeError):
                 pass
-    return "", ""
+    return best_text, best_path
 
 
 def build(dry_run: bool = False, min_phrase_freq: int = 2) -> int:
