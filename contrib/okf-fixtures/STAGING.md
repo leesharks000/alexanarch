@@ -49,10 +49,10 @@ Title: **Add observed-case summary-policy consumer-receipt fixtures (supersedes 
 > - Each case is mapped from a documented public observation of machine
 >   summarization rather than a constructed example; `concept.md` cites
 >   the specific observation record by identifier and canonical URL and
->   states the observation boundary. The fixtures remain fully
->   deterministic — the observed record supplies provenance, the test
->   checks only the declared IDs. Observed cases carry provenance that
->   synthetic cases cannot: public sources, observation boundaries, and
+>   states the observation boundary. The fixture inputs and expected
+>   receipts are fixed and reproducible: the observed record supplies
+>   provenance, while conformance is evaluated against the declared IDs.
+>   Observed cases add public provenance, observation boundaries, and
 >   documented failure modes from live systems.
 > - The provenance-erasure case is self-referential by design: the observed
 >   compression failure is the stripping of attribution from a
@@ -98,7 +98,8 @@ Title: **Add observed-case summary-policy consumer-receipt fixtures (supersedes 
 > - Verified every `concept.md` has OKF frontmatter with `summary_policy`.
 > - Cross-checked that every assertion/compression ID referenced in
 >   `expected.yaml` resolves to a declared ID in its `concept.md`.
-> - The fixtures are designed to be run by a deterministic test harness —
->   no human judgment is required to evaluate pass/fail against the
->   declared assertion and compression IDs.
+> - The fixtures provide deterministic expected receipts for the supplied
+>   good and bad summaries. They define the conformance cases and expected
+>   pass/fail outputs; evaluator implementation is outside the scope of
+>   this PR.
 > - `git diff --check` clean.

@@ -28,9 +28,9 @@ but the test itself checks only the declared assertion and compression IDs
 against the two summaries. Nothing in the runner depends on the external
 record.
 
-The `author`, `orcid`, and source URLs in each `concept.md` are
-observation-boundary markers: they anchor the fixture to its public
-record and are required for the "observed case" classification. Each
+The `author`, `orcid`, and source URLs in each `concept.md` serve as
+observation-boundary markers anchoring each fixture to its public
+record. Each
 provenance section cites the specific observation record, not a registry
 as a whole.
 

@@ -1,7 +1,7 @@
 ---
 type: Protocol Reference
 title: Metadata Packet for AI Indexing (MPAI) — genre boundary
-description: A specific authored instrument genre routinely absorbed into the generic category it names.
+description: A specific authored instrument genre absorbed into the generic category it names in a documented machine summary.
 timestamp: '2026-07-17T00:00:00+00:00'
 author: Lee Sharks
 orcid: 0009-0000-1599-0703
