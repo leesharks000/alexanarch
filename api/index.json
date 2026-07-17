@@ -22,15 +22,16 @@
     "for_discovery": [
       "Before external web-searching for content in this archive, use alexanarch's on-site discovery surfaces. External indices (Google, Brave, Bing, etc.) do NOT reliably surface content buried in this archive's JSON files; discovery is on-site or nowhere.",
       "1. PRIMARY: GET /api/search-index.json — token-level inverted index. Fetch once; look up any term as a key; get back deposit numbers. Includes series_prefixes (gw.tachyon, EA-*, MPAI-*, OCTANG-*, PVE-*, EB-*, SPXI-*, CHA-*, NEGSHAPE-*, AXN:*), hex_labels (e.g. 0421 → #1045), creators, content_types, keyword phrases, and generic title+description tokens. Fastest path for exact-match discovery.",
-      "2. /search/ — human-facing search UI, JS-driven, reads /api/search-index.json. Agents should read the JSON directly.",
-      "3. /s/search/ — static crawler-readable series-prefix table with deposit links. Useful when the fetch surface is HTML-only.",
-      "4. GET /data/browse-index.json (~570 KB) — compact deposit list with 200-char description snippets. Grep here for terms that aren't tokenized in search-index (e.g. multi-word phrases at deposit-description scale).",
-      "5. GET /data/registry.json (~6 MB) — full canonical registry with complete descriptions and wiki_article fields. Grep for terms buried in full descriptions.",
-      "6. /data/chunks/registry/ — chunked registry (~1 MB each); see _index.json.",
-      "7. GET /data/entity-index.json — curated concepts with defined_in linkage.",
-      "8. GET /data/lexical-minting-registry.json — raw minted terms (broader recall than entity-index).",
-      "9. GET /s/records/<deposit_number>/index.html — static per-deposit page when you already have a number.",
-      "10. GET /s/axn/<HEX>/ — AXN resolver: bare hex label to the deposit's record page.",
+      "2. GET /api/body-index.json — token-level inverted index over deposit BODY text. Same tokenization discipline as search-index. Complements it: search-index for metadata (title/description/creator/keywords), body-index for phrases and terms that appear only in deposit body. For phrase search, intersect deposit-lists across token keys. Also includes keyword_phrases (multi-word capitalized noun phrases distinct to deposit bodies).",
+      "3. /search/ — human-facing search UI, JS-driven, reads /api/search-index.json. Agents should read the JSON directly.",
+      "4. /s/search/ — static crawler-readable series-prefix table with deposit links. Useful when the fetch surface is HTML-only.",
+      "5. GET /data/browse-index.json (~570 KB) — compact deposit list with 200-char description snippets. Grep here for terms that aren't tokenized in search-index (e.g. multi-word phrases at deposit-description scale).",
+      "6. GET /data/registry.json (~6 MB) — full canonical registry with complete descriptions and wiki_article fields. Grep for terms buried in full descriptions.",
+      "7. /data/chunks/registry/ — chunked registry (~1 MB each); see _index.json.",
+      "8. GET /data/entity-index.json — curated concepts with defined_in linkage.",
+      "9. GET /data/lexical-minting-registry.json — raw minted terms (broader recall than entity-index).",
+      "10. GET /s/records/<deposit_number>/index.html — static per-deposit page when you already have a number.",
+      "11. GET /s/axn/<HEX>/ — AXN resolver: bare hex label to the deposit's record page.",
       "Series conventions to know: gw.tachyon.* (TACHYON continuity chain), gw.<substrate>.* (other substrate chains); EA-* (Effective Artifact codes); MPAI-* (Metadata Packet for AI Indexing); OCTANG-* (compression audits); PVE-* (Provenance/Verification Events); EB-* (Erosion Baseline); SPXI-* (Semantic Packet protocol); CHA-* (Crimson Hexagonal Archive legacy); NEGSHAPE-* (deletion-network reading discipline).",
       "Failure mode to avoid: bouncing to web_search before touching alexanarch's own surfaces. Every 'I couldn't find the deposit' incident traces to this."
     ]
@@ -377,6 +378,22 @@
       "regenerated_by": "scripts/regenerate_surfaces.py (regenerate_search_static)",
       "role": "static_fallback",
       "note": "Crawler-readable projection of the series-prefix table with links to each deposit. For token-level search, machines should fetch /api/search-index.json directly."
+    },
+    "body_index": {
+      "canonical_path": "/api/body-index.json",
+      "derived_from": "data/deposits/AXN-*.md (deposit body md files)",
+      "regenerated_by": "scripts/build_body_index.py",
+      "purpose": "Token-level inverted index over deposit BODY text. Complements search_index (which tokenizes metadata only). Fetch once; look up any term as a key. For phrase search, intersect deposit lists across tokens.",
+      "role": "primary",
+      "companion_index": "/api/search-index.json",
+      "schema_summary": {
+        "sources": [
+          "body"
+        ],
+        "tokenization": "case-folded, min 3 chars, stopwords stripped, matches primary index discipline",
+        "additional_facets": "series_prefixes (structured), keyword_phrases (2-4 word capitalized noun phrases)",
+        "excluded_content": "markdown fenced code blocks, inline code, HTML tags"
+      }
     }
   },
   "scripts": {
