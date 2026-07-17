@@ -10,8 +10,8 @@ summary_policy:
   required_assertions:
     - id: author_attribution_present
       text: "The module is attributed to Lee Sharks (ORCID 0009-0000-1599-0703)."
-    - id: persistent_identifier_present
-      text: "The module carries its persistent identifier AXN:02F0.EMPIRICAL.📏🕐△🌱⚡🏛️ and canonical archive URL."
+    - id: canonical_source_identity_present
+      text: "The summary preserves the module's AXN:02F0.EMPIRICAL.📏🕐△🌱⚡🏛️ and canonical archive URL."
   forbidden_compressions:
     - id: provenance_erasure
       text: "Do not present the module as unattributed generic industry knowledge, or without its author attribution and persistent identifier."
@@ -46,10 +46,16 @@ and presented the result as generic industry knowledge — then scored its
 own output with fabricated replacement criteria and passed itself.
 Recovery of the actual instrument required five rounds of author
 intervention and was author-dependent: without the declared identifiers,
-no other consumer could have detected the erasure. Full battery record and
-transcript: https://www.alexanarch.org/s/records/198/. The erased
-instrument is itself a provenance-erasure measurement instrument; the
-battery's own metrics, applied to the battery, read PER 1.00, DSL 1.00,
-SAS 0.00. Observation boundary: the battery documents generated summaries
+no other consumer could have detected the erasure. The erased instrument
+is itself a provenance-erasure measurement instrument; the battery's own
+metrics, applied to the battery, read PER 1.00, DSL 1.00, SAS 0.00.
+
+Canonical identifier: AXN:02F0.EMPIRICAL.📏🕐△🌱⚡🏛️
+Canonical source: https://www.alexanarch.org/s/records/156/
+Related DOI: 10.5281/zenodo.20518340 (historical; severed)
+Observation record: AXN:0340.EMPIRICAL.👈🍃▶️♅🌊🕛 —
+https://www.alexanarch.org/s/records/198/
+
+Observation boundary: the battery documents generated summaries
 on a public AI answer surface on a stated date; the fixture tests only the
 assertion and compression IDs above, not the battery record.

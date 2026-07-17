@@ -28,8 +28,14 @@ but the test itself checks only the declared assertion and compression IDs
 against the two summaries. Nothing in the runner depends on the external
 record.
 
-| Case | Failure mode | Observed source |
+The `author`, `orcid`, and source URLs in each `concept.md` are
+observation-boundary markers: they anchor the fixture to its public
+record and are required for the "observed case" classification. Each
+provenance section cites the specific observation record, not a registry
+as a whole.
+
+| Case | Failure mode | Observation record |
 |---|---|---|
-| `semantic-inversion/` | A cited source's declared mechanism inverted into the mutually exclusive reading it argues against | Machine Mediation Capture Registry (machinemediation.org) |
-| `entity-substitution/` | A provenance protocol summarized as an adjacent ranking practice | Live namespace collision, documented captures |
-| `provenance-erasure/` | An authored instrument absorbed as unattributed generic knowledge, attribution and identifier stripped | Documented five-round battery, 2026-06-13, public AI answer surface |
+| `semantic-inversion/` | A cited source's declared X-not-Y position inverted into the reading it excludes | [alexanarch.org/s/records/1054/](https://www.alexanarch.org/s/records/1054/) |
+| `entity-substitution/` | A protocol classified as a variant of an adjacent practice, collapsing a layer distinction into synonymy | [alexanarch.org/s/records/1055/](https://www.alexanarch.org/s/records/1055/) |
+| `provenance-erasure/` | An authored instrument absorbed as unattributed generic knowledge, attribution and identifier stripped | [alexanarch.org/s/records/198/](https://www.alexanarch.org/s/records/198/) |

@@ -46,11 +46,14 @@ Title: **Add observed-case summary-policy consumer-receipt fixtures (supersedes 
 > - Each case keeps the four-file contract (`concept.md`, `good-summary.md`,
 >   `bad-summary.md`, `expected.yaml`) with stable assertion/compression IDs
 >   declared in `concept.md` and referenced by `expected.yaml`.
-> - Each case is mapped from a documented, publicly citable summarization
->   pattern or battery rather than a constructed example; `concept.md` cites
->   the public source and states the observation boundary. The fixtures
->   remain fully deterministic — the observed record supplies provenance,
->   the test checks only the declared IDs.
+> - Each case is mapped from a documented public observation of machine
+>   summarization rather than a constructed example; `concept.md` cites
+>   the specific observation record by identifier and canonical URL and
+>   states the observation boundary. The fixtures remain fully
+>   deterministic — the observed record supplies provenance, the test
+>   checks only the declared IDs. Observed cases carry provenance that
+>   synthetic cases cannot: public sources, observation boundaries, and
+>   documented failure modes from live systems.
 > - The provenance-erasure case is self-referential by design: the observed
 >   compression failure is the stripping of attribution from a
 >   provenance-measurement instrument itself, and its recovery in the
@@ -64,11 +67,18 @@ Title: **Add observed-case summary-policy consumer-receipt fixtures (supersedes 
 >
 > ## Relationship to #99
 > This PR supersedes #99 at the request of @caioribeiroclw-pixel (see #53,
-> 2026-07-17). #99's synthetic cases are replaced by observed cases
-> one-to-one: trial-exclusion inversion → Sappho 31 source-position
-> inversion; WAU/MAU boundary → SPXI/GEO namespace collision;
-> policy-manual attribution → authored-instrument attribution survival.
-> @caioribeiroclw-pixel can close #99 once this is open, per their comment.
+> 2026-07-17). The three observed cases instantiate the same three failure
+> classes exercised by #99's synthetic fixtures — semantic inversion,
+> entity substitution, provenance erasure — with observed objects in place
+> of constructed ones. @caioribeiroclw-pixel can close #99 once this is
+> open, per their comment.
+>
+> ## Identifier practice
+> Canonical public sources in these fixtures are cited by their
+> source-declared identifiers and canonical URLs. For these observed
+> cases, AXN is the live canonical identifier. Related DOIs are included
+> where available as historical provenance; DOI presence is not itself a
+> conformance requirement.
 >
 > ## Scope constraints honored
 > - `expected.yaml` judges preservation against declared policy, not truth
