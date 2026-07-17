@@ -368,6 +368,7 @@ def regenerate_static_page(d, eidx, registry=None):
 <meta name="citation_abstract" content="{esc(d.get("description",""))}">
 <meta name="citation_public_url" content="https://www.alexanarch.org/s/records/{dn}/">
 <meta name="citation_fulltext_html_url" content="https://www.alexanarch.org/s/records/{dn}/">
+<meta name="citation_pdf_url" content="https://www.alexanarch.org/papers/AXN-{hex_id.zfill(4)}.pdf">
 <meta name="citation_language" content="en">
 <meta name="DC.title" content="{esc(d["title"])}">
 <meta name="DC.creator" content="{esc(d["creator"])}">
@@ -386,7 +387,7 @@ def regenerate_static_page(d, eidx, registry=None):
 {version_banner}
 <h1>{esc(d["title"])}</h1>
 <div style="font-size:.85em;color:#777;margin-bottom:10px">{esc(d["creator"])} · {esc(d["date"])} · {esc(d.get("content_type",""))}{f' · <span style="color:var(--accent);font-weight:500">{esc(version)}</span>' if (version and (version != 'v1.0' or series_id)) else ''}</div>
-<a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-{hex_id}.md" download>↓ Download MD</a>
+<a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-{hex_id}.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/papers/AXN-{hex_id.zfill(4)}.pdf">↓ PDF</a>
 <div style="margin:8px 0">{kw_html}</div>
 <h2>Description</h2>
 <p style="font-size:.9em">{esc(d.get("description",""))}</p>
