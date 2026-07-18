@@ -57,6 +57,7 @@ select{font-family:var(--mono);font-size:.85em;border:1px solid var(--border);bo
 <div class="k">Six-glyph checksum (first 6 bytes)</div><div class="glyph" id="o-glyph"></div>
 <div class="k">Glyph names</div><div class="v" id="o-names" style="font-size:.78em"></div>
 <div class="k">Cluster reading</div><div class="v" id="o-reading"></div>
+<div class="k">Registry lookup (bytes → AXN)</div><div class="v" id="o-reg" style="font-size:.85em"></div>
 </div>
 
 <h2>2 &middot; Compose (optional)</h2>
@@ -108,6 +109,23 @@ async function compute(buf){
   // Name glyphs via clusters as proxy names (UCD not available client-side); show cluster per glyph
   $("o-names").textContent=splitGlyphs(lastGlyph).map((g,i)=>g+" ("+cl[i]+")").join(" \u00b7 ");
   $("kernel").style.display="block";
+  $("o-reg").textContent="checking registry\u2026";
+  lookupKernel(h);
+}
+async function lookupKernel(h){
+  const srcs=["/api/kernel-index.json","https://www.alexanarch.org/api/kernel-index.json"];
+  for(const s of srcs){
+    try{
+      const r=await fetch(s,{cache:"no-store"});
+      if(!r.ok)continue;
+      const idx=await r.json();
+      const hit=idx.kernels&&idx.kernels[h];
+      if(hit){$("o-reg").innerHTML="REGISTERED \u2713 \u2014 "+hit.axn+" \u00b7 deposit #"+hit.deposit_number+" \u00b7 <a href=\"https://www.alexanarch.org"+hit.record+"\">record</a>";}
+      else{$("o-reg").textContent="Not in the alexanarch registry ("+idx.count+" kernels checked). The kernel is still valid \u2014 registration is a separate act.";}
+      return;
+    }catch(e){}
+  }
+  $("o-reg").textContent="registry lookup unavailable on this surface \u2014 kernel computation is unaffected.";
 }
 
 $("compute").onclick=async()=>{

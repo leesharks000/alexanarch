@@ -26,6 +26,7 @@ def main():
     a = ap.parse_args()
     src = (ROOT / 'mint' / 'index.html').read_text(encoding='utf-8')
     payload = BANNER + src
+    kidx = (ROOT / 'api' / 'kernel-index.json').read_text(encoding='utf-8')
     cfg = json.loads((ROOT / 'data' / 'mint-mirrors.json').read_text())
     for m in cfg['mirrors']:
         repo = m['repo']
@@ -36,12 +37,17 @@ def main():
             p = pathlib.Path(td) / 'mint'
             p.mkdir(exist_ok=True)
             f = p / 'index.html'
-            if f.exists() and f.read_text(encoding='utf-8') == payload:
+            ap = pathlib.Path(td) / 'api'; ap.mkdir(exist_ok=True)
+            kf = ap / 'kernel-index.json'
+            same = (f.exists() and f.read_text(encoding='utf-8') == payload and
+                    kf.exists() and kf.read_text(encoding='utf-8') == kidx)
+            if same:
                 print('   unchanged'); continue
             if a.dry_run:
                 print('   would update'); continue
             f.write_text(payload, encoding='utf-8')
-            subprocess.run(['git','-C',td,'add','mint/index.html'], check=True)
+            kf.write_text(kidx, encoding='utf-8')
+            subprocess.run(['git','-C',td,'add','mint/index.html','api/kernel-index.json'], check=True)
             subprocess.run(['git','-C',td,'-c','user.email=tachyon@alexanarch.org',
                             '-c','user.name=TACHYON','commit','-q','-m',
                             'Sync /mint/ mirror from alexanarch canonical'], check=True)
