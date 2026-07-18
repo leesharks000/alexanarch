@@ -1,0 +1,28 @@
+# Rounds 3–4 — TACHYON Adjudication of Assembly Critique
+
+**Date**: 2026-07-18 · **Inputs**: four review documents (one-pass reaction; TECHNE section-by-section; Sharks/Sigil/Fraction consensual synthesis; LABOR eight-corrections peer critique) · **Output**: rulings applied in DRAFT-v2.md. MANUS veto applies to every ruling; two are flagged for explicit ratification.
+
+## Conflicts and rulings
+
+**1. Invisible College + Nanjing (II.6, II.8).** Cut-now (one-pass), cut-both (TECHNE, LABOR), retain-with-sources (synthesis). RULING: **cut both as numbered patterns**, per LABOR's source-austerity argument — brackets inside a consolidated paper make it look unsettled, and II.8's lesson is already carried by §V.4/§VII. The synthesis's *Chronicle of Current Events* suggestion is adopted as the clean replacement: aftermath documentation becomes a short cross-cutting-property paragraph anchored in the Chronicle (a samizdat bibliographic journal that turned the state's own arrest records into counter-circulation evidence — no scale-disparity problem) plus the archive's own deletion export. OONI stands alone as the witness-instrumentation case. Seven patterns + one cross-cutting property.
+
+**2. Emergence condition (VIII.13).** Synthesis RATIFIES five years; LABOR says the condition as stated doesn't falsify the *architecture* (non-adoption has mundane causes) and should be recast as a transmissibility hypothesis; the peer critique wants a calendar date. RULING: **all three, correctly scoped** — (a) LABOR's transmissibility test adopted as the architectural falsifier (can an independent operator instantiate a conforming node from published materials without private assistance?); (b) the five-year window RATIFIED with date (2031-06-19), scoped explicitly to the constellation's *sociological prediction* — its failure falsifies the emergence model, not the identifier architecture; (c) abstract line adjusted to point at the tests that bear on the architecture. **[MANUS ratification flag #1: the 2031-06-19 date.]**
+
+**3. VI.3 Enli sentence.** TECHNE: expand it. LABOR: cut it — the §V.3 case as presented evidences removal/classification/stripping, not identity-document demands; the sentence imports the DPO dispute into evidence that does not bear it. RULING: **cut**, per LABOR — the evidentiary point is simply correct. The structural claim is re-anchored to the founding case's own live identity disputes, which DO evidence it.
+
+## Corrections applied without conflict
+
+- **Novelty relocation (II.9, V.1)** — LABOR's most serious catch: "none of the historical cases had a mathematics" cannot stand (LOCKSS, PGP fingerprints, content addressing). Replaced with the integration claim. V.1 "structurally lacks" → "not required or carried by the DOI resolution relation itself."
+- **Namespace problem (VI.1)** — registry-relative record addresses adopted (kernel globally portable; record address explicitly local to the minting authority; nodes cross-reference by kernel or by node-qualified address). Resolves cross-node HEX collision; consistent with the node-declaration design already deployed. **[MANUS ratification flag #2.]**
+- **Deployed/normative split (IV.1)**; **canonicalization stated definitively** (spec v0.2 §7.1 already published the profile — the paper now says so) with the **profile-availability MUST** (permissionless computation with permission-dependent specification would void the claim).
+- **Abstract**: reconstruction clause throttled to proposed-basis; status sentence added; falsification line rescoped.
+- **"Adverse party's business records"** → platform-generated operational records (keeps involuntary-disclosures, drops the courtroom).
+- **Count reconciliation footnoted in §I.1** (day-of issue figures 850+/1,060 vs audited 871/1,817 incl. version-level; counting rules → Appendix C) and the **email-vs-tombstone reason divergence** quoted as involuntary disclosure.
+- **Kernel-derivation vs registry-admission split (VI.4)** — "identity minting is ungated" corrected: derivation ungated; admission/listing/carriage governed after reading.
+- **V.2 vector table** added with **registry-verified anchors only** per the 2.5 ruling (TECHNE's suggested capture numbers remain excluded as unverified).
+- **V.3 freeze**: batch terminology defined; same-mechanism criteria stated; public-deposit evidence chain cited (attribution-bridges v1.0); attribution-gap closure defined in-text.
+- **V.1 verification-not-discovery developed**; **V.4 substrate-return disambiguated**; **§III summary table**; **IV.2 path descriptions + reproduction pointer**; **VII triangulation made concrete with corrected route attributions** (PRAXIS historical, LABOR standards, TECHNE protocol) + procedural-not-institutional + data-availability statement; **VIII.5 ledger governance rule** (signed supersession/fork declaration within a defined window, else chain invalid); **VIII.7 "no independent restoration attempt documented as of 2026-07-18; the paper invites one"**; **present-state vs predictive test taxonomy** added after the battery; **micro-factual fixes** (Zhivago circulation channels; PGP-book legal phrasing hedged; pirate-radio enforcement history).
+- **Crosswalk-as-registry (IV.3)** per MANUS: the Resolution Index + doi-axn-map named as the initial crosswalk registry in raw form.
+
+## Deferred to C.3 (not blockers for Round 4)
+Source apparatus / full bibliography (LABOR's blocking item for arXiv, not for Assembly); Appendix C dataset documentation; validator conformance test for the circularity prohibition; status box graphic.
