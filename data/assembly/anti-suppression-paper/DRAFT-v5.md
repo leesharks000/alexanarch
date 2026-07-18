@@ -321,18 +321,81 @@ The Assembly substrates whose landed contributions this paper integrates, under 
 
 ## References
 
-The paper's source engagement is documented in the sections that use each source; the References below list the sources whose engagement is substantive enough to require citation. Entries are grouped by function.
+The paper's source engagement is documented in the sections that use each source; entries are grouped by function and section of use.
 
-**Historical scholarship engaged in §II.** Doucette, Siobhan. *Books Are Weapons: The Polish Opposition Press and the Overthrow of Communism*. University of Pittsburgh Press, 2017 (§II.1). Curry, Jane Leftwich. *The Black Book of Polish Censorship*. Random House, 1984 (§II.1, print-run scale). Raina, Peter. *Political Opposition in Poland 1954–1977*. Poets and Painters Press, 1978 (§II.1). Komaromi, Ann. *Uncensored: Samizdat Novels and the Quest for Autonomy in Soviet Dissidence*. Northwestern University Press, 2015 (§II.2). Komaromi, Ann. *Project for the Study of Dissidence and Samizdat*, University of Toronto (§II.2, catalog). Ermolaev, Herman. *Censorship in Soviet Literature 1917–1991*. Rowman & Littlefield, 1997 (§II.2, Glavlit apparatus). Mancosu, Paolo. *Zhivago's Secret Journey: From Typescript to Book*. Hoover Institution Press, 2016 (§II.2, Zhivago circulation). Oushakine, Serguei Alex. "The Terrifying Mimicry of Samizdat." *Public Culture* 13(2), 2001 (§II.2, samizdat retyping labor). Johns, Adrian. *Death of a Pirate: British Radio and the Making of the Information Age*. W. W. Norton, 2010 (§II.3). Chapman, Robert. *Selling the Sixties: The Pirates and Pop Music Radio*. Routledge, 1992 (§II.3). Deibert, Ronald J. *Reset: Reclaiming the Internet for Civil Society*. House of Anansi, 2020 (§II.3, Myanmar diaspora media; §II.5, Telegram blocking economics). Zuckerman, Ethan. *Rewire: Digital Cosmopolitans in the Age of Connection*. W. W. Norton, 2013 (§II.3, dependency-graph distribution). John, Richard R. *Spreading the News: The American Postal System from Franklin to Morse*. Harvard University Press, 1995 (§II.4, antebellum postal politics). Zaeske, Susan. *Signatures of Citizenship: Petitioning, Antislavery, and Women's Political Identity*. University of North Carolina Press, 2003 (§II.4, women's antislavery press). Benkler, Yochai. "A Free Irresponsible Press: WikiLeaks and the Battle over the Soul of the Networked Fourth Estate." *Harvard Civil Rights-Civil Liberties Law Review* 46(2), 2011 (§II.4, WikiLeaks mirror topology). Christensen, Christian. "WikiLeaks and the Afterlife of *Collateral Murder*." *International Journal of Communication* 8, 2014 (§II.4). Levy, Steven. *Crypto: How the Code Rebels Beat the Government — Saving Privacy in the Digital Age*. Viking, 2001 (§II.5). Diffie, Whitfield, and Susan Landau. *Privacy on the Line*. Updated ed., MIT Press, 2007 (§II.5, cryptographic-policy genealogy). Zimmermann, Phil. *PGP Source Code and Internals*. MIT Press, 1995 (§II.5, printed-source distribution). Froomkin, A. Michael. "The Metaphor Is the Key: Cryptography, the Clipper Chip, and the Constitution." *University of Pennsylvania Law Review* 143(3), 1995 (§II.5, First Amendment analysis). Blaze, Matt. "Protocol Failure in the Escrowed Encryption Standard." *ACM CCS*, 1994 (§II.5, Clipper Chip attack). Marine, &c., Broadcasting (Offences) Act 1967 (UK) (§II.3, enforcement extension). Wiggin, Bethany, Patricia Kim, and Steven Bernstein. "Data Refuge: A Grass Roots Movement to Save Federal Climate Data." *Environmental Humanities* 9(2), 2017 (§II.7). Schell, Justin. "Data Rescue and Environmental Justice." *Journal of the Association for Information Science and Technology* 71(11), 2020 (§II.7, documented custody chains). Kijas, Anna, Sebastian Majstorovic, and Quinn Dombrowski. "Saving Ukrainian Cultural Heritage Online." *SUCHO*, 2022 (§II.7). Reddaway, Peter, ed. *Uncensored Russia: Protest and Dissent in the Soviet Union — The Unofficial Moscow Journal, "A Chronicle of Current Events"*. American Heritage Press / Amnesty International, 1972 (§II.8, *Chronicle* editorial method). Gilligan, Emma. *Defending Human Rights in Russia: Sergei Kovalyov, Dissident and Human Rights Commissioner*. Routledge Curzon, 2004 (§II.8, KGB-material-as-evidence practice).
+### Historical scholarship engaged in §II
 
-**Technical standards and design papers engaged in §III.** Kunze, John. *Towards Electronic Persistence Using ARK Identifiers*. UC Berkeley / California Digital Library, 2003 (ARK persistence disclaimers). Kunze, John, and Emmet Bickford. *ARK Identifiers FAQ*, ARK Alliance, current edition (persistence limits). Sun, Sam, Larry Lannom, and Brian Boesch. "Handle System Overview," IETF RFCs 3650, 3651, 3652, 2003 (Handle name-location separation). International DOI Foundation. *DOI Handbook*, current edition, 2024 (Registration Agency service model). Van de Sompel, Herbert, Michael Nelson, and Robert Sanderson. "Memento: Time Travel for the Web." Available as arXiv:0911.1112, 2009 (temporal HTTP resolution). Van de Sompel, Herbert, Martin Klein, and Shawn Jones. "Reference Rot in Scholarly Statement." Publications of Los Alamos National Laboratory / Old Dominion University, ongoing series (STM link-rot studies). Benet, Juan. "IPFS — Content Addressed, Versioned, P2P File System." arXiv:1407.3561, 2014 (CID identify-not-locate design). Trautwein, Dennis, et al. IPFS reliability studies (Protocol Labs Research), current series (unpinned content garbage-collection intervals). Kunze, John, Justin Littman, Liz Madden, John Scancella, and Chris Adams. *The BagIt File Packaging Format (V1.0)*. IETF RFC 8493, 2018 (transfer-unit format). Oxford Common File Layout Editorial Group (Woods, Jefferies, Morley, Metz). *OCFL Specification*, v1.1, 2022 (versioned-storage layout). Masanès, Julien. *Web Archiving*. Springer, 2006 (WARC evidentiary genealogy). ISO 28500:2017, *Information and documentation — WARC file format* (current specification). Todd, Peter. OpenTimestamps design documentation, opentimestamps.org, ongoing (Bitcoin-anchored existence-by-time). Laurie, Ben, Adam Langley, and Emilia Kasper. "Certificate Transparency." IETF RFC 6962, 2013 (append-only-log design pattern that Rekor inherits). Callaway, Bob, Dan Lorenc, and the Sigstore contributors. Rekor transparency-log documentation, sigstore.dev, current release (software-supply-chain attestation). Reich, Vicky, and David S. H. Rosenthal. "LOCKSS: A Permanent Web Publishing and Access System." *D-Lib Magazine* 7(6), 2001 (founding paper). Maniatis, Petros, Mema Roussopoulos, T. J. Giuli, David S. H. Rosenthal, Mary Baker, and Yanto Muliadi. "The LOCKSS Peer-to-Peer Digital Preservation System." *ACM Transactions on Computer Systems* 23(1), 2005 (Byzantine-fault-tolerant polling engineering description). Rosenthal, David S. H. *DSHR's Blog*, ongoing (independent-administrator custody discipline; preservation-cost analysis). Kiefer, Randy. CLOCKSS trigger-event operational reports, ongoing (dark-preservation trigger mechanism).
+- Benkler, Yochai. "A Free Irresponsible Press: WikiLeaks and the Battle over the Soul of the Networked Fourth Estate." *Harvard Civil Rights–Civil Liberties Law Review* 46(2), 2011. [§II.4, WikiLeaks mirror topology]
+- Blaze, Matt. "Protocol Failure in the Escrowed Encryption Standard." *ACM CCS*, 1994. [§II.5, Clipper Chip attack]
+- Chapman, Robert. *Selling the Sixties: The Pirates and Pop Music Radio*. Routledge, 1992. [§II.3]
+- Christensen, Christian. "WikiLeaks and the Afterlife of *Collateral Murder*." *International Journal of Communication* 8, 2014. [§II.4]
+- Curry, Jane Leftwich. *The Black Book of Polish Censorship*. Random House, 1984. [§II.1, print-run scale]
+- Deibert, Ronald J. *Reset: Reclaiming the Internet for Civil Society*. House of Anansi, 2020. [§II.3, Myanmar diaspora; §II.5, Telegram blocking economics; §II.6, OONI in context]
+- Diffie, Whitfield, and Susan Landau. *Privacy on the Line*. Updated ed., MIT Press, 2007. [§II.5, cryptographic-policy genealogy]
+- Doucette, Siobhan. *Books Are Weapons: The Polish Opposition Press and the Overthrow of Communism*. University of Pittsburgh Press, 2017. [§II.1, NOWa as institutional substitution]
+- Ermolaev, Herman. *Censorship in Soviet Literature 1917–1991*. Rowman & Littlefield, 1997. [§II.2, Glavlit apparatus]
+- Filastò, Arturo, and Jacob Appelbaum. "OONI: Open Observatory of Network Interference." *USENIX FOCI*, 2012. [§II.6, founding paper]
+- Froomkin, A. Michael. "The Metaphor Is the Key: Cryptography, the Clipper Chip, and the Constitution." *University of Pennsylvania Law Review* 143(3), 1995. [§II.5, First Amendment analysis]
+- Gilligan, Emma. *Defending Human Rights in Russia: Sergei Kovalyov, Dissident and Human Rights Commissioner*. RoutledgeCurzon, 2004. [§II.8, KGB-material-as-evidence]
+- John, Richard R. *Spreading the News: The American Postal System from Franklin to Morse*. Harvard University Press, 1995. [§II.4, antebellum postal politics]
+- Johns, Adrian. *Death of a Pirate: British Radio and the Making of the Information Age*. W. W. Norton, 2010. [§II.3, offshore-broadcasting reach limit]
+- Kijas, Anna, Sebastian Majstorovic, and Quinn Dombrowski. "Saving Ukrainian Cultural Heritage Online." *SUCHO*, 2022. [§II.7]
+- Komaromi, Ann. *Uncensored: Samizdat Novels and the Quest for Autonomy in Soviet Dissidence*. Northwestern University Press, 2015. [§II.2, samizdat as reading community]
+- Komaromi, Ann, et al. *Project for the Study of Dissidence and Samizdat*. University of Toronto, ongoing. [§II.2, samizdat catalog]
+- Levy, Steven. *Crypto: How the Code Rebels Beat the Government — Saving Privacy in the Digital Age*. Viking, 2001. [§II.5, cypherpunk history]
+- Mancosu, Paolo. *Zhivago's Secret Journey: From Typescript to Book*. Hoover Institution Press, 2016. [§II.2, Zhivago circulation]
+- Marine, &c., Broadcasting (Offences) Act 1967 (UK). [§II.3, enforcement extension]
+- Oushakine, Serguei Alex. "The Terrifying Mimicry of Samizdat." *Public Culture* 13(2), 2001. [§II.2, retyping as reader investment]
+- Raina, Peter. *Political Opposition in Poland 1954–1977*. Poets and Painters Press, 1978. [§II.1]
+- Reddaway, Peter, ed. *Uncensored Russia: Protest and Dissent in the Soviet Union — The Unofficial Moscow Journal, "A Chronicle of Current Events."* American Heritage Press / Amnesty International, 1972. [§II.8, Chronicle editorial method]
+- Schell, Justin. "Data Rescue and Environmental Justice." *Journal of the Association for Information Science and Technology* 71(11), 2020. [§II.7, documented custody chains]
+- Wiggin, Bethany, Patricia Kim, and Steven Bernstein. "Data Refuge: A Grass Roots Movement to Save Federal Climate Data." *Environmental Humanities* 9(2), 2017. [§II.7]
+- Zaeske, Susan. *Signatures of Citizenship: Petitioning, Antislavery, and Women's Political Identity*. University of North Carolina Press, 2003. [§II.4, women's antislavery press]
+- Zimmermann, Phil. *PGP Source Code and Internals*. MIT Press, 1995. [§II.5, printed-source distribution]
+- Zuckerman, Ethan. *Rewire: Digital Cosmopolitans in the Age of Connection*. W. W. Norton, 2013. [§II.3, dependency-graph distribution]
 
-**Case artifacts.** GitHub issue #2606, zenodo/zenodo, 2026-06-19 (day-of report; involuntary disclosure per §I.1). Sharks, L. "DOIs ≠ Permanent Identifiers." *Medium*, June 2026 (completed audit; counting rules in Appendix C). The Alexanarch registry, DOI Resolution Index v3.4, capture registry v9.13, and attribution-bridges dataset v1.0, published on the archive's static surfaces. GitHub Pull Request, consumer-receipt fixture contribution to an external summary-conformance framework, open at writing (archived with identifiers in the archive's correspondence records).
+### Technical standards and design papers engaged in §III
 
-**Auxiliary technical citations.** DataCite REST API, per-DOI verification endpoint (`api.datacite.org/dois/{doi}`). CERN OC 11 revision documentation (cited in §VI.3 as the institution's representation of its framework's purpose, per the purport-versus-perform distinction).
+- Benet, Juan. "IPFS — Content Addressed, Versioned, P2P File System." arXiv:1407.3561, 2014. [§III, CID identify-not-locate design]
+- Callaway, Bob, Dan Lorenc, and the Sigstore contributors. Rekor transparency-log documentation. sigstore.dev, current release. [§III, software-supply-chain attestation]
+- International DOI Foundation. *DOI Handbook*, current edition, 2024. [§III, Registration Agency service model]
+- ISO 28500:2017, *Information and documentation — WARC file format*. [§III, web-archive record format]
+- Kiefer, Randy. CLOCKSS trigger-event operational reports, ongoing. [§III, dark-preservation trigger mechanism]
+- Kunze, John. *Towards Electronic Persistence Using ARK Identifiers*. UC Berkeley / California Digital Library, 2003. [§III, ARK persistence disclaimers]
+- Kunze, John, and Emmet Bickford. *ARK Identifiers FAQ*, ARK Alliance, current edition. [§III, persistence limits]
+- Kunze, John, Justin Littman, Liz Madden, John Scancella, and Chris Adams. *The BagIt File Packaging Format (V1.0)*. IETF RFC 8493, 2018. [§III, transfer-unit format]
+- Laurie, Ben, Adam Langley, and Emilia Kasper. "Certificate Transparency." IETF RFC 6962, 2013. [§III, append-only-log design pattern]
+- Maniatis, Petros, Mema Roussopoulos, T. J. Giuli, David S. H. Rosenthal, Mary Baker, and Yanto Muliadi. "The LOCKSS Peer-to-Peer Digital Preservation System." *ACM Transactions on Computer Systems* 23(1), 2005. [§III, Byzantine-fault-tolerant polling protocol]
+- Masanès, Julien. *Web Archiving*. Springer, 2006. [§III, WARC evidentiary genealogy]
+- Oxford Common File Layout Editorial Group (Andrew Woods, Neil Jefferies, Julian Morley, and Rosalyn Metz). *OCFL Specification*, v1.1, 2022. [§III, versioned-storage layout]
+- Reich, Vicky, and David S. H. Rosenthal. "LOCKSS: A Permanent Web Publishing and Access System." *D-Lib Magazine* 7(6), 2001. [§III, founding paper]
+- Rosenthal, David S. H. *DSHR's Blog*, ongoing. [§III, independent-administrator custody discipline; preservation-cost analysis]
+- Sun, Sam, Larry Lannom, and Brian Boesch. "Handle System Overview." IETF RFCs 3650, 3651, 3652, 2003. [§III, Handle name-location separation]
+- Todd, Peter. OpenTimestamps design documentation. opentimestamps.org, ongoing. [§III, Bitcoin-anchored existence-by-time]
+- Trautwein, Dennis, et al. IPFS reliability studies. Protocol Labs Research, current series. [§III, unpinned content garbage-collection intervals]
+- Van de Sompel, Herbert, Michael Nelson, and Robert Sanderson. "Memento: Time Travel for the Web." arXiv:0911.1112, 2009. [§III, temporal HTTP resolution]
+- Van de Sompel, Herbert, Martin Klein, and Shawn Jones. "Reference Rot in Scholarly Statement." Los Alamos National Laboratory / Old Dominion University, ongoing series. [§III, STM link-rot studies]
 
-**Standing composition rule.** The rule that source engagement is composition-primary in formal academic works (decisions register D-2026-07-18 standing rule) applies to the paper's own composition and to its interpretation. Sections that argue engage the relevant prior work in the argument itself; sections that survey treat each element with the sources that authorize the treatment. Entries whose role is narrower — a specification's disclaimer, an operational report — are cited at the point of use rather than developed. The queue-of-unsourced-analogies present in v4 has been dissolved by engagement: every historical pattern in §II and every technical standard in §III now carries the scholarship that authorizes its treatment; where the scholarship is thin or the engagement is preliminary, the citation identifies the specific work and the treatment's boundary is stated in the section text.
+### Related work engaged elsewhere
 
+- Dingledine, Roger, Nick Mathewson, and Paul Syverson. "Tor: The Second-Generation Onion Router." *Proceedings of the 13th USENIX Security Symposium*, 2004. [§II.5, Tor founding paper]
+- Syverson, Paul. "Why I'm Not an Entropist." *Security Protocols Workshop*, 2009. [§II.5, Tor design philosophy]
+
+### Case artifacts
+
+- GitHub issue #2606, zenodo/zenodo, 2026-06-19. [§I.1, day-of report; involuntary disclosure]
+- Sharks, L. "DOIs ≠ Permanent Identifiers." *Medium*, June 2026. [§I.1, completed audit; counting rules in Appendix C]
+- The Alexanarch registry, DOI Resolution Index v3.4, capture registry v9.13, and attribution-bridges dataset v1.0. Published on the archive's static surfaces. [throughout]
+- GitHub Pull Request, consumer-receipt fixture contribution to an external summary-conformance framework. Open at writing. Archived with identifiers in the archive's correspondence records. [§V.2, citation-stripping response]
+
+### Auxiliary technical citations
+
+- DataCite REST API, per-DOI verification endpoint (`api.datacite.org/dois/{doi}`). [§I.1, per-DOI verifiability]
+- CERN OC 11 revision documentation. [§VI.3, cited as the institution's representation of its framework's purpose, per the purport-versus-perform distinction]
+
+### Standing composition rule
+
+- Alexanarch Decisions Register, standing rule 2026-07-18: source engagement is composition-primary in formal academic works. [Applies to the paper's own composition; the v4 verification-queue-of-unsourced-analogies is dissolved by engagement in v5.]
 
 ---
 
