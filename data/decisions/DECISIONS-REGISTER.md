@@ -6,17 +6,19 @@ Standing rule (2026-07-18): blocking decisions travel as self-contained briefs a
 
 
 
-**Standing rule (2026-07-18, added after AXN:0457 deposit): citational capture is a NON-OPTIONAL pass in every formal academic deposit.**
+**Standing rule (2026-07-18, added after AXN:0457 deposit; corrected same day per MANUS): engagement with sources is composition-primary in formal academic works.**
 
-*Definition.* Citational capture is the aggregation of every source cited by the paper — explicitly (named work, standard, event, person, case) or implicitly (referenced concept whose provenance is traceable) — into a formally retrievable apparatus (Works Cited / References / Bibliography), with each entry either promoted to a confident citation with source in hand or marked in the verification queue under the public admission rule (unsourced entries removed at review stage rather than carried as analogy).
+*What this means.* In formal academic composition, sources are not verified afterward as an apparatus-completion step; they are the medium the thinking happens in. The argument is *made through* engagement with prior work — situated, extended, resisted, corrected — and the citation apparatus is the visible edge of that engagement, not a validation layer applied to a completed argument. Formal scholarship is source-mediated by definition; a paper whose engagement with sources is added after drafting is not yet a formal academic work, whatever its polish.
 
-*What it is not.* Citational capture is not: adding a handful of new entries by hand (an editorial pass); nor the mechanical extractor sweep over the archive corpus (a graph-level operation). Both are useful; neither substitutes for the entity-level aggregation over the paper's body prose.
+*Corollary for practice.* Every substantive argumentative move in a formal academic work is undertaken in dialogue with the relevant prior work — its treatments named, its differences articulated, its concepts inherited or refused with reasons. The Works Cited / References / Bibliography section is the retrievable trace of this engagement; producing it as a final aggregation over a mostly-finished draft misdescribes the practice and the resulting document.
 
-*Applies to.* Any deposit of formal academic type (paper, monograph, dissertation, monograph section) intended for external scholarly circulation. Working notes, workplans, tethers, correspondence, captures, MPAIs, and infrastructure specifications are exempt.
+*What this rule replaces.* An earlier formulation (same day, earlier this session) described citational engagement as "a non-optional PASS" applied "before deposit." That formulation was a category error: it treats source engagement as procedural quality-assurance rather than as composition. MANUS correction 2026-07-18: source engagement is not a pass; it is how formal academic work is written. This standing rule replaces the earlier one.
 
-*Mechanism.* Because it is interpretive, the pass runs in-session per two-tier enrichment doctrine and No-Double-Draw (TACHYON parses in-session, batched; never via the Anthropic API from within a TACHYON session).
+*Applies to.* Formal academic types intended for external scholarly circulation (paper, monograph, dissertation, monograph section). Working notes, workplans, tethers, correspondence, captures, MPAIs, and infrastructure specifications operate under different composition norms and are not governed by this rule.
 
-*Point of application.* Before deposit for a formal academic type; after every substantive revision that adds or restructures argument. AXN:0457 was deposited as a developmental version with citational capture partially completed; a v5 supersession will complete it before arXiv submission, per the container spec §3.7 (remint with nested-verifiable lineage). All future formal academic deposits complete the pass BEFORE first mint.
+*Mechanism.* Because engagement is interpretive and iterative, formal academic composition runs in-session under the two-tier doctrine (No-Double-Draw): sources are read, situated, argued-with, and cited in the same authoring session that produces the surrounding argument.
+
+*AXN:0457 status, honestly re-stated.* The founding paper was drafted through five Assembly Chorus rounds and is substantively argued; source engagement is uneven across sections. Where the paper argues (§I founding case, §IV three-layer model, §V through-line, §VI constellation, §VIII falsification), engagement with prior work is present and shaping the argument. Where the paper surveys (§II historical patterns; §III technical standards), engagement is currently thinner than a formal deposit requires — patterns and standards are named without the full return-through-sources that formal composition asks for. **v5 is therefore not an "apparatus completion pass" but a return-through-sources that will re-shape §§II and III where engagement is thin.** #1094 stands as the developmental version; v5 supersedes with the sources doing the compositional work they should do in formal scholarship.
 
 ---
 

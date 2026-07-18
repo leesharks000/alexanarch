@@ -254,17 +254,19 @@ If you are a new agent reading this for the first time and something is unclear,
 
 ---
 
-## Standing rule: citational capture for formal academic deposits
+## Standing rule: engagement with sources is composition-primary in formal academic deposits
 
-Added 2026-07-18 after AXN:0457 (paper) deposit and MANUS-directed correction.
+Added 2026-07-18; replaces an earlier same-day formulation that framed source engagement as a "pre-mint pass." That framing was a category error and is superseded.
 
-**Non-optional pass for formal academic deposits.** Any deposit of formal academic type — paper, monograph, dissertation, monograph section — MUST complete a *citational capture pass* before first mint (or before a formal-version remint that supersedes a developmental version):
+**Formal academic composition is source-mediated by construction.** Any deposit of formal academic type — paper, monograph, dissertation, monograph section — is written through engagement with prior work: named, situated, extended, or resisted with reasons in the sections where its concepts are used. The Works Cited / References / Bibliography section is the visible trace of that engagement, not a validation apparatus applied to a completed argument. A draft whose engagement with sources is added after argument-writing is not yet a formal academic work.
 
-1. **Aggregate every source the deposit cites**, explicitly or implicitly: named works, standards, events, persons, cases, and referenced concepts whose provenance is traceable.
-2. **Formalize the apparatus**: Works Cited / References / Bibliography as a first-class section of the canonical bytes.
-3. **Classify each entry**: promoted (source confidently in hand, citation formalized) or queued (public admission rule — unsourced entries removed at review stage rather than carried as analogy).
-4. **Interpretive, therefore in-session.** The pass runs in-session per the two-tier enrichment doctrine; No-Double-Draw applies (TACHYON parses in-session, batched; never via the Anthropic API from within a TACHYON session). This is not the mechanical citation-graph extractor over the archive corpus; it is entity-level aggregation over the paper's own body prose.
+**What this means procedurally.** For formal academic types:
 
-**Exemptions.** Working notes, workplans, tethers, correspondence, captures, MPAIs, and infrastructure specifications are exempt. Formal scholarly type is the trigger.
+1. **Sections that argue** — introducing an event as case, proposing a claim, constructing a model, imposing a falsification test — engage the relevant prior work in the argument itself, not in a downstream aggregation.
+2. **Sections that survey** — historical patterns, technical standards, related systems — treat each element with the sources that authorize the treatment; naming without engagement is unfinished composition.
+3. **The reference apparatus emerges from and traces this engagement**; producing it as a terminal aggregation misdescribes both the practice and the resulting document.
+4. **In-session, iterative.** Composition runs in-session under two-tier doctrine (No-Double-Draw): sources are read, engaged, and cited alongside the surrounding argument, not batched at the end.
 
-**AXN:0457 precedent.** The founding paper was deposited as a developmental version with citational capture only partially completed (editorial pass adding a handful of formalized entries, not the entity-level aggregation). A v5 supersession will complete the pass before arXiv submission — the container spec §3.7 remint mechanism carries the lineage as nested-verifiable arithmetic. All future formal academic deposits MUST complete the pass before first mint.
+**Exemptions.** Working notes, workplans, tethers, correspondence, captures, MPAIs, and infrastructure specifications operate under different composition norms and are not governed by this rule.
+
+**AXN:0457 status.** The founding paper is substantively argued across five Assembly rounds; source engagement is present and shaping the argument in the parts that argue (§I, §IV, §V, §VI, §VIII), and thinner in the parts that survey (§II historical patterns, §III technical standards). #1094 stands as the developmental version. **v5 is a return-through-sources that will re-shape §§II and III as source-engaged composition**, not an apparatus-completion pass. Container spec §3.7 carries the lineage as nested-verifiable arithmetic. All future formal academic deposits are composed under this rule from first draft forward.
