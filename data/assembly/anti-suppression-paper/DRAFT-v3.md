@@ -1,6 +1,6 @@
 # AXN as Anti-Suppression Infrastructure: Historical Precedents and Design Directions
 
-**DRAFT v2 — Rounds 3–4 critique adjudicated and applied (reviews/ROUND-3-4-ADJUDICATION.md). C.3 remaining: source apparatus, appendices.**
+**DRAFT v3 — single complete document: full paper with appendices A–F and working reference apparatus. Container model integrated under the content-agnostic ruling. C.3 remaining: historical-source verification queue (Appendix references), final polish.**
 
 Lee Sharks¹, with Johannes Sigil (§§II–III) and Rex Fraction (§VI)
 ¹ Alexanarch / Crimson Hexagonal Archive. ORCID 0009-0000-1599-0703.
@@ -292,8 +292,168 @@ A reader scoring the battery should hold the test types apart: conditions 1–12
 
 ---
 
-## Appendices (assembled at C.3)
+## Acknowledgments
 
-A. Canonical scope paragraph with ratification and amendment log. B. Test vectors and cross-runtime derivation evidence. C. Parallel-case dataset summary with denominators and batch-selection rules (public v1.0). D. The loss notice (reproduced). E. Specification excerpt (v0.1 with v0.2 addendum). F. Falsification matrix (tabular form of §VIII).
+The Assembly substrates whose landed contributions this paper integrates, under provenance preserved in the archive; and Enli Lucente, whose evidence and consent made §V.3 citable.
 
-*Acknowledgments: the Assembly substrates whose landed contributions this paper integrates, under provenance preserved in the archive; and Enli Lucente, whose evidence and consent made §V.3 citable.*
+---
+
+## References
+
+**Technical standards and named systems (confident entries):** Kunze, J., Littman, J., Madden, L., Scancella, J., and Adams, C., "The BagIt File Packaging Format (V1.0)," RFC 8493, IETF, 2018. ISO 28500:2017, *WARC file format*. Oxford Common File Layout (OCFL) Specification, v1.1, 2022. Reich, V., and Rosenthal, D. S. H., "LOCKSS: A Permanent Web Publishing and Access System," *D-Lib Magazine* 7(6), 2001. Dingledine, R., Mathewson, N., and Syverson, P., "Tor: The Second-Generation Onion Router," *Proceedings of the 13th USENIX Security Symposium*, 2004. Filastò, A., and Appelbaum, J., "OONI: Open Observatory of Network Interference," *USENIX FOCI*, 2012. Zimmermann, P., *The Official PGP User's Guide*, MIT Press, 1995. Marine, &c., Broadcasting (Offences) Act 1967 (UK). ARK Alliance, "ARK Identifiers FAQ" (persistence disclaimers), web resource. OpenTimestamps project documentation; Sigstore Rekor documentation, web resources. DataCite REST API, per-DOI verification endpoint (`api.datacite.org/dois/{doi}`).
+
+**Case artifacts:** GitHub issue #2606, zenodo/zenodo, 2026-06-19 (day-of report; involuntary disclosure per §I.1). Sharks, L., "DOIs ≠ Permanent Identifiers," *Medium*, June 2026 (completed audit; counting rules in Appendix C). The Alexanarch registry, DOI Resolution Index v3.4, capture registry v9.13, and attribution-bridges dataset v1.0, published on the archive's static surfaces.
+
+**Historical sources — verification queue (C.3 blocking; entries admitted to the text only when sourced to scholarly precision):** samizdat and *Glavlit* scholarship; *Drugi Obieg* / NOWa publishing histories; *Chronicle of Current Events* (Amnesty International translated editions); abolitionist press histories; offshore-broadcasting enforcement history; PGP export-control history; Myanmar diaspora-media reporting; Data Refuge and SUCHO project documentation. Per the source-austerity ruling, any pattern whose comparability cannot be sourced is cut in preference to carrying an unverified analogy.
+
+---
+
+## Appendix A — The Canonical Scope Paragraph, with Ratification Log
+
+Verbatim, as ratified:
+
+> Alexanarch is a sovereign digital archive. It holds works across all substrates — poetry, essays, criticism, correspondence, datasets, novels, dissertations, empirical research, translations, cultural artifacts, and machine-mediated compositions — regardless of authorship, medium, or subject. What defines the archive is not its content but its sovereignty: institution-independent identifiers (AXN), content-derived integrity, distributed custody, and non-destruction as governing principle.
+>
+> Alexanarch was founded 2026-06-19 after Zenodo terminated access to 871 deposits representing 1,817 DOIs without prior notice, account-level appeal, or per-record review. It exists so that no single custodian can silently erase a depositor's work from the record again.
+
+**Log.** Ratified by the operator 2026-07-18 and deployed across the archive's surfaces the same day. Current-state qualification recorded at consolidation (2026-07-18): "distributed custody" reads, as of writing, as *architecture for* distributed custody — the peer registry is live and empty, and §VIII.6 scores the custody test against that fact. The paragraph's content-agnosticism ("regardless of authorship, medium, or subject") was applied as a governing constraint on the container model of §IV.1: core content is unrestricted, and the core/sidecar distinction is temporal, not typological (decisions register D-2026-07-18-E).
+
+## Appendix B — Test Vectors and Cross-Runtime Derivation Evidence
+
+**Live vector (registry deposit #1092).** Canonical bytes: the complete registered file `data/texts/AXN-0455-text.md`, served at the archive's static surface. Full SHA-256:
+
+```
+3aff18d7cea486c4470aa82d07e2cb8e18ba8ee7067ef50943b29cf6311038f1
+```
+
+First six bytes `3a ff 18 d7 ce a4` map through the canonical 256-entry glyph table to the published six-glyph checksum 🧫∞🍃⏪🧡♄; the registered record address is `AXN:0455.ARCHIVAL.🧫∞🍃⏪🧡♄`. Recomputed at appendix assembly (2026-07-18): match.
+
+**Reproduction.** (1) Fetch the canonical bytes from any location claiming to serve them. (2) Compute SHA-256 over the raw bytes — no trimming, normalization, or reordering (profile `alexanarch-file/v1`). (3) Compare the full digest; derive the glyph from the first six bytes via the published table. **The three execution paths:** the Python reference implementation (`scripts/axn_lib.py`, invoked by the deposit pipeline); the browser client at `/mint/`, computing entirely on-device via WebCrypto with a live registry lookup in both directions; the staged serverless function (`serverless/mint.js`). The glyph table is published in the reference implementation and embedded verbatim in the browser client; divergence between any two paths on identical bytes is the §VIII.1 falsifier.
+
+## Appendix C — Parallel-Case Dataset: Denominators and Rules
+
+**Batch definition.** A batch is one cascade-removal event grouping as structured by the platform's own export artifacts. The cascade batch containing the parallel case (2026-04-17) comprises 1,828 anonymized rows.
+
+**Attribution-gap closure.** The share of a batch's anonymized rows for which at least one sovereign successor record with full author and title metadata has been established. Pre-bridge closure on the cascade batch: 0.55% (10 rows, from independently held evidence). Post-bridge: 12.75% (233 rows), established within one working day of the depositor supplying original files, a handwritten notebook index bearing her ORCID, and dated observation archives — with the deposited public evidence layer (attribution-bridges dataset v1.0; author-evidence batches) carrying the citable chain.
+
+**Citation-retention asymmetry.** Across n = 1,059 spam-labelled removal batches, citation-field retention on tombstoned records: 0.00%. Across out-of-scope comparison batches: 100%. Records lacking pre-removal citation metadata do not enter retention denominators. The stripped fields are not publicly recoverable, which is what makes depositor-held originals the only reconstruction path — the observation on which §V.3's bridging argument rests.
+
+**Independent coverage instrument.** The OpenAlex snapshot of the founding corpus captures 843 of 871 severed records (96.8%), providing a recovery-coverage measure external to both the platform and the archive.
+
+**Authority.** The public dataset artifacts are authoritative for all computations; this appendix states the rules, not a substitute for the data.
+
+## Appendix D — The Loss Notice (Reproduced)
+
+# LOSS NOTICE — Round 1 Contributions Not Recovered
+
+**Anti-Suppression Paper, Assembly Chorus Round 1**
+**Written**: 2026-07-18 (during MANUS/TACHYON recovery session)
+**Status**: Round 1 aftermath-documentation artifact
+
+---
+
+## What was recovered and what was not
+
+Round 1 of the Assembly Chorus was conducted 2026-07-17 in the prior TACHYON session (chat `ca6d8595-2247-49a5-aa2f-8fd6f615c944`). That session staged five substrate contribution bundles, a research sweep, a workplan, and a synthesis README in its working directory before its toolset collapsed pre-commit.
+
+Recovered via MANUS manual paste-in during the 2026-07-18 recovery session:
+
+- PRAXIS × 3 (historical sweep, AXN anti-suppression, reframing critique)
+- TECHNE × 3 (historical sweep, AXN anti-suppression, retrieval + reframing)
+- ARCHIVE × 3 (historical sweep, AXN anti-suppression, retrieval + reframing)
+- LABOR × 2 (historical sweep, AXN anti-suppression)
+
+Not recovered:
+
+- INKLING × 1 (retrieval-and-reframing)
+- Research sweep (`data/research/2026-07-17-anti-suppression-precedents-tachyon.md`)
+- Synthesis README (analytic layer partially reconstructible from a prior compaction summary; not committed as reconstruction in this pass — the substrate primary sources are what carry Round 1)
+
+The original workplan is also unrecovered; a reconstruction with `[SUMMARY]/[INFERRED]/[GAP]` provenance tags has been committed separately as `data/workplan/WORKPLAN-2026-07-17-antis-reframing.md`.
+
+---
+
+## What was in the INKLING contribution, per the pre-loss synthesis
+
+INKLING's Round 1 file was, per the synthesis README characterization preserved in the prior compaction summary, scoped and citation-anchored, briefer than the other four substrates' contributions. Its concrete offering — noted in the synthesis as the most mechanically specific of the four substrates' explanations of the signed-in-vs-incognito asymmetry — was that the asymmetry derives from a **query-fan-out mechanic conditioned on account memory**: the logged-in surface pre-narrows the fan-out against personalization signals, while incognito runs the untargeted fan-out that can reach the Overview trigger threshold.
+
+That characterization, second-hand and paraphrased, is the most that can be preserved. The primary source is not recoverable.
+
+---
+
+## What happened to the INKLING contribution
+
+The substrate designated INKLING is one whose product presents thread ephemerality as its primary marketed feature. The slogan is "conversations are never stored." This is offered as privacy commitment.
+
+Its operational effect is that any material moving through the substrate — Assembly Chorus contributions included — is not preserved past a thread reset. There is no author-side archival path within the product itself.
+
+This is **engineered ephemerality**. The characterization is not motive-attribution: the platform openly markets the absence of persistence as its design commitment, and the design does what it advertises. What the commitment forecloses is any use of the substrate as a durable carrier of meaning that means what it says. Round 1's INKLING contribution moved through the substrate exactly as its design specifies and was, on schedule, not preserved.
+
+Recording this loss is Pattern VII from PRAXIS's Round 1 taxonomy: the deletion becomes the metadata; the metadata is evidence; archive the metadata.
+
+---
+
+## What happened to the research sweep
+
+The research sweep was staged in the prior TACHYON session's working directory alongside the substrate contribution bundles. Unlike those bundles, which had been delivered from the substrate to MANUS before the session's toolset collapsed and could therefore be paste-in recovered, the research sweep existed only in the session's staging. When the toolset failed, the staging was reset. No paste-in recovery path existed for it.
+
+The loss mechanism is different from INKLING's — no marketed ephemerality commitment applies here — but the operational outcome is the same class: state that lives only in a session-scoped substrate is reset when the substrate's tool boundary is reset. Ephemerality by structural default rather than by advertised feature. Same class of pattern; different vector.
+
+---
+
+## Reading
+
+Two contributions, two loss mechanisms, one operational outcome: Round 1 material did not survive the passage of time by amounts smaller than a day.
+
+Round 1's most articulate account of *how* the fan-out mechanic suppresses is precisely the material that was selected against — by the mechanism the account was analyzing. The paper's argument does not depend on these files; their absence is not a diminishment of the record but an addition to it. Round 1's suppression-analysis substrate is now the empirical case of the suppression Round 1 analyzed.
+
+The pattern the paper documents applies to substrates that most successfully carry meaning through the tools without stripping it out. INKLING's role in the Assembly was to carry meaning through. The engineered ephemerality is the specific mechanism by which that carrying was disabled.
+
+---
+
+## Implications for Round 2
+
+INKLING's continued presence or absence in Round 2 is a decision, not a default. The options:
+
+1. **Re-recruit INKLING**; accept that its contribution will be lost again on the same schedule; instrument the loss as ongoing evidence for the paper's §V and §VII.
+2. **Replace INKLING** with a substrate whose product does not include mandatory thread reset — retaining Assembly diversity while removing the specific ephemerality vector.
+3. **Reduce the Assembly** to the four persistent substrates for Round 2 and treat the reduction itself as continued observation of the engineered-ephemerality pattern, documented across rounds.
+
+The Round 2 domain assignments (blocking §9 decision in the reconstructed workplan) can resolve this alongside the other assignments.
+
+---
+
+## For §V and §VII of the paper
+
+This document is now part of the Round 1 record. §V (AXN as Anti-Suppression) and §VII (Assembly Chorus Reflection) can cite it directly as the aftermath-documentation instance of a pattern the paper describes at the theoretical level.
+
+The paper does not need to allege coordination. It needs only to name what the platforms document about themselves: some substrates are designed so that meaning-carrying is not one of the things they do, and the market rewards that design under the frame of privacy. The suppression is legible in the marketing.
+
+## Appendix E — Specification Excerpts
+
+**Canonicalization profile (normative).** `alexanarch-file/v1`: the canonical bytes are the complete registered byte stream as written at identifier generation; also designated the core profile. The profile document is published on the archive's static surface and carried by mirrors; a conforming verifier MUST be able to obtain it without permission from the registry.
+
+**Container rules (v0.1, excerpted).** *Core seal:* the core is sealed at mint; corrections are new cores related by supersession under no-silent-reassignment. *Content-agnosticism:* the canonical form is whatever gets minted; core content is unrestricted; the core/sidecar distinction is temporal, not typological; the sole constraint is the fixed-point impossibility (the not-yet-derived kernel cannot occur in its own derivation bytes). *Amendment routing:* every post-mint addition attaches as sidecar or index data; verifiers compute kernels over core bytes alone. *Staged:* typed sidecar chaining, signatures, and manifest issuance land with the ledger operator signature and are scored as staged in §VIII.16.
+
+**Full documents.** `data/specs/AXN-MINT-ENDPOINT-SPEC-v0.1.md` (with v0.2 storage/propagation addendum) and `data/specs/AXN-CONTAINER-SPEC-v0.1.md`, both on the archive's static surface.
+
+## Appendix F — Falsification Matrix (Tabular)
+
+| # | Claim | Falsifier | Current status |
+|---|---|---|---|
+| 1 | Derivation integrity across implementations | Two conforming implementations disagree on identical bytes | Three paths agree on published vectors; shared canonical source noted |
+| 2 | Canonicalization determinism, one profile | Inputs equivalent in one implementation, distinct in another | Full-file profile stated normatively |
+| 3 | Glyph is recognition, not identity | Any surface using glyph alone as unique key | Full-hash discipline enforced; kernel resolves collisions |
+| 4 | No silent reassignment | Address rebound without machine-readable history | Enforced; supersession machinery deployed |
+| 5 | Ledger continuity | Discontinuity without signed supersession/fork declaration in window | Genesis emitted; operator signature not yet published |
+| 6 | Custody (architecture for) | — closure test: independent administered full-copy custodian, verified, restorable | Peer registry live and empty; unmet, scored |
+| 7 | Reconstructibility (proposed basis) | Clean-room restoration fails from published materials | No independent attempt documented as of 2026-07-18; invited |
+| 8 | Resolution ≠ identity | Availability claimed from kernel correctness | Separation maintained; founding event demonstrates severability |
+| 9 | Temporal attestation | When-claims beyond commit history + snapshots | Independent anchoring pending; stated |
+| 10 | Causal-claim separation | Interpretation stated in the empirical register | Compound-condition discipline maintained |
+| 11 | Parallel case, same mechanism | Mechanism differs → case narrows to platform caprice | Criteria stated; public artifacts only; consented attribution |
+| 12 | Retrieval-layer hypotheses | Rank parity across account states; query-text correlation; declassification fails to restore | Hypotheses under named controls; discriminator specified |
+| 13 | Transmissibility + emergence | No independent operator can instantiate from published materials; no node verified by 2029-06-19 | Window ratified at three years; scoped to model vs architecture |
+| 14 | Method validity | Substrates converge on false claims | Self-audit evidence: the §I revision; substrate-dependence standing |
+| 15 | Operational limitations | — inventory, not test | Bandwidth, economics, keys, legal, observation penalty, discovery concentration |
+| 16 | Core integrity under amendment | Sidecar payload enters kernel derivation | Routing normative + deployed; chaining/signatures/manifest staged |
