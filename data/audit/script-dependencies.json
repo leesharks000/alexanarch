@@ -1,0 +1,268 @@
+{
+  "build_lexical_overlay.py": {
+    "reads": [],
+    "writes": []
+  },
+  "sync_navbars.py": {
+    "reads": [],
+    "writes": []
+  },
+  "build_snapshots.py": {
+    "reads": [],
+    "writes": []
+  },
+  "glyph_aria.py": {
+    "reads": [],
+    "writes": []
+  },
+  "mint_deposit.py": {
+    "reads": [
+      "scripts/mint_deposit.py"
+    ],
+    "writes": []
+  },
+  "build_distribution_index.py": {
+    "reads": [],
+    "writes": []
+  },
+  "build_deposit_pdfs.py": {
+    "reads": [],
+    "writes": []
+  },
+  "build_body_index.py": {
+    "reads": [],
+    "writes": []
+  },
+  "pre_overwrite.py": {
+    "reads": [],
+    "writes": []
+  },
+  "build_semantic_addresses.py": {
+    "reads": [
+      "data/EA-WG-CAPTURES-01.json",
+      "data/semantic-addresses.json",
+      "data/semantic-addresses.schema.json",
+      "data/trackers/cha-workplan-870.json",
+      "data/trackers/mm-mint.json",
+      "data/trackers/mm-revfirst-registry.json",
+      "data/trackers/mm-termindex.json",
+      "data/trackers/rf-tracker-page.html",
+      "scripts/build_semantic_addresses.py"
+    ],
+    "writes": []
+  },
+  "concept_backlink.py": {
+    "reads": [],
+    "writes": []
+  },
+  "build_kernel_index.py": {
+    "reads": [],
+    "writes": [
+      "api/kernel-index.json",
+      "data/registry.json"
+    ]
+  },
+  "salvage_zenodo.py": {
+    "reads": [],
+    "writes": []
+  },
+  "citation_extractor.py": {
+    "reads": [],
+    "writes": []
+  },
+  "spxi_tlp_apply.py": {
+    "reads": [],
+    "writes": []
+  },
+  "regenerate_surfaces.py": {
+    "reads": [],
+    "writes": []
+  },
+  "generate_observatory.py": {
+    "reads": [],
+    "writes": [
+      "data/surface-weather/scans"
+    ]
+  },
+  "parse_refsec_queue.py": {
+    "reads": [],
+    "writes": []
+  },
+  "enrich_datasets.py": {
+    "reads": [],
+    "writes": []
+  },
+  "validate_resolver.py": {
+    "reads": [],
+    "writes": []
+  },
+  "sync_mint_mirrors.py": {
+    "reads": [],
+    "writes": [
+      "api/kernel-index.json"
+    ]
+  },
+  "insert_seed_deposits.py": {
+    "reads": [],
+    "writes": []
+  },
+  "audit_completeness.py": {
+    "reads": [],
+    "writes": []
+  },
+  "build_effective_acts_registry.py": {
+    "reads": [
+      "data/doi-resolution-index.json",
+      "data/effective-acts-registry.json",
+      "data/registry.json",
+      "data/texts/AXN-02EC-text.md",
+      "scripts/build_effective_acts_registry.py"
+    ],
+    "writes": []
+  },
+  "publish_wiki_entries.py": {
+    "reads": [],
+    "writes": []
+  },
+  "reconcile_resolution_index.py": {
+    "reads": [],
+    "writes": []
+  },
+  "fanout.py": {
+    "reads": [
+      "data/registry.json"
+    ],
+    "writes": [
+      "data/fanout-state.json"
+    ]
+  },
+  "check_resolver_parity.py": {
+    "reads": [],
+    "writes": []
+  },
+  "axn_lib.py": {
+    "reads": [],
+    "writes": []
+  },
+  "recovery_status.py": {
+    "reads": [],
+    "writes": []
+  },
+  "render_navbar.py": {
+    "reads": [],
+    "writes": []
+  },
+  "validate_deposit.py": {
+    "reads": [],
+    "writes": []
+  },
+  "propagate_deposit.py": {
+    "reads": [
+      "data/registry.json"
+    ],
+    "writes": []
+  },
+  "enrich_resolver_evidence.py": {
+    "reads": [
+      "data/datacite-full-backup.json",
+      "data/registry.json"
+    ],
+    "writes": [
+      "data/doi-resolution-index.json"
+    ]
+  },
+  "dodecad_cleanup.py": {
+    "reads": [],
+    "writes": []
+  },
+  "protocol_update.py": {
+    "reads": [],
+    "writes": []
+  },
+  "validate_external_metadata.py": {
+    "reads": [],
+    "writes": []
+  },
+  "reconcile_recovered_metadata.py": {
+    "reads": [],
+    "writes": []
+  },
+  "publish_semantic_addresses.py": {
+    "reads": [],
+    "writes": []
+  },
+  "enrich_deposit.py": {
+    "reads": [],
+    "writes": []
+  },
+  "msp_apply.py": {
+    "reads": [],
+    "writes": []
+  },
+  "md_render.py": {
+    "reads": [],
+    "writes": []
+  },
+  "bootstrap_familiarization.py": {
+    "reads": [],
+    "writes": []
+  },
+  "backfill_axn_compliance.py": {
+    "reads": [],
+    "writes": []
+  },
+  "recover_zenodo_bulk.py": {
+    "reads": [],
+    "writes": [
+      "data/doi-resolution-index.json"
+    ]
+  },
+  "generate_axn_resolver.py": {
+    "reads": [
+      "s/axn"
+    ],
+    "writes": [
+      "api/axn-index.json",
+      "data/registry.json"
+    ]
+  },
+  "generate_state.py": {
+    "reads": [
+      "api/axn-protocol.json",
+      "api/deposit-protocol.json",
+      "api/deposit-schema.json",
+      "api/enrichment-protocol.json",
+      "api/lifecycle-protocol.json",
+      "data/EA-WG-CAPTURES-01.json",
+      "data/browse-index.json",
+      "data/doi-resolution-index.json",
+      "data/entity-index.json",
+      "data/navigation.json",
+      "data/registry.json"
+    ],
+    "writes": []
+  },
+  "sync_resolver.py": {
+    "reads": [],
+    "writes": []
+  },
+  "deposit_pipeline.py": {
+    "reads": [],
+    "writes": [
+      "data/entity-index.json",
+      "data/pre-overwrite-receipts.log",
+      "data/registry.json"
+    ]
+  },
+  "extract_citations_external.py": {
+    "reads": [
+      "data/doi-axn-map.json",
+      "data/doi-resolution-index.json"
+    ],
+    "writes": []
+  },
+  "overwrite_guard.py": {
+    "reads": [],
+    "writes": []
+  }
+}

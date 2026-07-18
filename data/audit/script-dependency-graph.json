@@ -1,0 +1,151 @@
+{
+  "producers": {
+    "api/kernel-index.json": [
+      "build_kernel_index.py",
+      "sync_mint_mirrors.py"
+    ],
+    "data/registry.json": [
+      "build_kernel_index.py",
+      "deposit_pipeline.py",
+      "generate_axn_resolver.py"
+    ],
+    "data/surface-weather/scans": [
+      "generate_observatory.py"
+    ],
+    "data/fanout-state.json": [
+      "fanout.py"
+    ],
+    "data/doi-resolution-index.json": [
+      "enrich_resolver_evidence.py",
+      "recover_zenodo_bulk.py"
+    ],
+    "api/axn-index.json": [
+      "generate_axn_resolver.py"
+    ],
+    "data/entity-index.json": [
+      "deposit_pipeline.py"
+    ],
+    "data/pre-overwrite-receipts.log": [
+      "deposit_pipeline.py"
+    ]
+  },
+  "consumers": {
+    "scripts/mint_deposit.py": [
+      "mint_deposit.py"
+    ],
+    "data/EA-WG-CAPTURES-01.json": [
+      "build_semantic_addresses.py",
+      "generate_state.py"
+    ],
+    "data/semantic-addresses.json": [
+      "build_semantic_addresses.py"
+    ],
+    "data/semantic-addresses.schema.json": [
+      "build_semantic_addresses.py"
+    ],
+    "data/trackers/cha-workplan-870.json": [
+      "build_semantic_addresses.py"
+    ],
+    "data/trackers/mm-mint.json": [
+      "build_semantic_addresses.py"
+    ],
+    "data/trackers/mm-revfirst-registry.json": [
+      "build_semantic_addresses.py"
+    ],
+    "data/trackers/mm-termindex.json": [
+      "build_semantic_addresses.py"
+    ],
+    "data/trackers/rf-tracker-page.html": [
+      "build_semantic_addresses.py"
+    ],
+    "scripts/build_semantic_addresses.py": [
+      "build_semantic_addresses.py"
+    ],
+    "data/doi-resolution-index.json": [
+      "build_effective_acts_registry.py",
+      "extract_citations_external.py",
+      "generate_state.py"
+    ],
+    "data/effective-acts-registry.json": [
+      "build_effective_acts_registry.py"
+    ],
+    "data/registry.json": [
+      "build_effective_acts_registry.py",
+      "enrich_resolver_evidence.py",
+      "fanout.py",
+      "generate_state.py",
+      "propagate_deposit.py"
+    ],
+    "data/texts/AXN-02EC-text.md": [
+      "build_effective_acts_registry.py"
+    ],
+    "scripts/build_effective_acts_registry.py": [
+      "build_effective_acts_registry.py"
+    ],
+    "data/datacite-full-backup.json": [
+      "enrich_resolver_evidence.py"
+    ],
+    "s/axn": [
+      "generate_axn_resolver.py"
+    ],
+    "api/axn-protocol.json": [
+      "generate_state.py"
+    ],
+    "api/deposit-protocol.json": [
+      "generate_state.py"
+    ],
+    "api/deposit-schema.json": [
+      "generate_state.py"
+    ],
+    "api/enrichment-protocol.json": [
+      "generate_state.py"
+    ],
+    "api/lifecycle-protocol.json": [
+      "generate_state.py"
+    ],
+    "data/browse-index.json": [
+      "generate_state.py"
+    ],
+    "data/entity-index.json": [
+      "generate_state.py"
+    ],
+    "data/navigation.json": [
+      "generate_state.py"
+    ],
+    "data/doi-axn-map.json": [
+      "extract_citations_external.py"
+    ]
+  },
+  "orphan_candidates": [
+    "api/axn-index.json",
+    "api/kernel-index.json",
+    "data/fanout-state.json",
+    "data/pre-overwrite-receipts.log",
+    "data/surface-weather/scans"
+  ],
+  "externally_authored": [
+    "api/axn-protocol.json",
+    "api/deposit-protocol.json",
+    "api/deposit-schema.json",
+    "api/enrichment-protocol.json",
+    "api/lifecycle-protocol.json",
+    "data/EA-WG-CAPTURES-01.json",
+    "data/browse-index.json",
+    "data/datacite-full-backup.json",
+    "data/doi-axn-map.json",
+    "data/effective-acts-registry.json",
+    "data/navigation.json",
+    "data/semantic-addresses.json",
+    "data/semantic-addresses.schema.json",
+    "data/texts/AXN-02EC-text.md",
+    "data/trackers/cha-workplan-870.json",
+    "data/trackers/mm-mint.json",
+    "data/trackers/mm-revfirst-registry.json",
+    "data/trackers/mm-termindex.json",
+    "data/trackers/rf-tracker-page.html",
+    "s/axn",
+    "scripts/build_effective_acts_registry.py",
+    "scripts/build_semantic_addresses.py",
+    "scripts/mint_deposit.py"
+  ]
+}
