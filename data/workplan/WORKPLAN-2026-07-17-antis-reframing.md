@@ -166,3 +166,10 @@ NO-DOUBLE-DRAW binding; ask_user_input_v0 disabled; AXN-INTEGRITY; LINK-VERIFICA
 ## What is genuinely lost vs. what is reconstructed
 
 The phase-name specifics for A.2-A.5, B.2-B.4, and C.2-C.4 are inference. The three workstreams, phase counts, blocking decisions, title options, authorship structure, publication path, substrate mapping — those are from the compaction summary. Any prose the original workplan carried (framing, rationale paragraphs, cross-references, footnotes) is not in this reconstruction; only the structural skeleton with reasoned fill. `[GAP]` markers stand where reconstruction was not attempted.
+
+
+## STATUS APPEND 2026-07-18 (later session)
+- ROUND 2 COMPLETE: 11/11 landed (INKLING ×2, ARCHIVE ×2, LABOR ×3, TECHNE ×2, PRAXIS ×2).
+- CONSENT GATE OPEN: Enli Lucente cleared for named scholarly attribution (private correspondence excluded). C.2 unblocked on both dimensions.
+- Round 2.5 consistency pass recorded at reviews/ROUND-2.5-CONSISTENCY.md.
+- C.2 drafting begun: DRAFT-v0.md.
