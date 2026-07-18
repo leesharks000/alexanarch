@@ -40,13 +40,13 @@ Draft, iterate, and lock the substrate-agnostic scope paragraph. Round 1 deliver
 
 Once A.1 locks, replace the home page anchor and About surface with the canonical phrasing.
 
-### Phase A.3 — Fleet rollout to network sites [INFERRED]
+### Phase A.3 — Fleet rollout to network sites [EXECUTED 2026-07-18; verification pending]
 
-Propagate the reframed paragraph across the 27-site network per canonical templates (network-v4-standard, network-v4-alexanarch). Would use the same mechanical apply pattern the MSP applicator uses.
+Executed: Enli rename (Strutturista della Psiche) pushed to 25 fleet repos + alexanarch (26 surfaces). Stale-anchor audit came back clean — the old MMRS/AI-native/850+ phrasings never propagated to fleet, so no anchor-text correction was needed beyond alexanarch home (done in A.1/A.2). Record: `data/FLEET-ROLLOUT-2026-07-18.md`. VERIFICATION GAP: session egress proxy blocked all fleet domains except alexanarch.org; LINK-VERIFICATION v2 on fleet requires MANUS manual pass or an allowlisted session. leesharks.com and mandala repos may need manual Vercel triggers.
 
-### Phase A.4 — machinemediation.org unification decision [SUMMARY: listed as pending in session close queue]
+### Phase A.4 — machinemediation.org unification decision [RESOLVED 2026-07-18]
 
-Whether machinemediation retains its own 3-tier network block or adopts the canonical minimal.
+MANUS decision: machinemediation **retains its bespoke five-section annotated block** (Archive Network / Research Sites / Institutional Sites / Allied Research / Profiles) — the per-link descriptions serve its role as MMRS institutional home; flattening to canonical minimal would lose real information. Amendment applied: Strutturista della Psiche (Enli Lucente) added to Allied Research for fleet-wide consistency. Pushed to machinemediation-org same day.
 
 ### Phase A.5 — Verification pass [INFERRED]
 
@@ -149,7 +149,7 @@ arXiv cs.DL preprint → International Journal on Digital Libraries submission �
 1. Next tooled session: reconstruct files from transcript, commit + push Assembly Round 1 bundle + research sweep + workplan — **partially executed in 2026-07-18 recovery session** (11 of 12 substrate files landed; research sweep unrecovered; workplan reconstructed with tag discipline)
 2. Complete INKLING + Synthesis README Gmail drafts (post-compaction path) — **INKLING not recoverable, see `LOSS-NOTICE.md`**
 3. Send Enli DM once Vercel queue drains
-4. machinemediation.org network block unification decision
+4. machinemediation.org network block unification decision — **RESOLVED 2026-07-18** (retain bespoke; Enli line added)
 5. Empirical Phenomenology #120 Related Identifiers enrichment
 6. Public AXN generation/embedding endpoint
 7. Medium article "AXNs = Persistent Identifiers"
