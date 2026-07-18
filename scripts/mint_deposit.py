@@ -226,6 +226,12 @@ def extract_field(body: str, label: str) -> str:
         "Content Type", "License", "Substrate Disclosure", "Keywords",
         "Related Identifiers", "Version", "Methodology",
         "Falsification Conditions", "Files", "Terms",
+        # 2026-07-18: "Body" added as boundary marker only. parse_issue_body
+        # never calls extract_field("Body"); the paper deposit places a "### Body"
+        # header before the canonical text so preceding fields terminate cleanly
+        # rather than running to EOF. Without this, formal deposits whose canonical
+        # bytes are the deposit body cannot mint via the pipeline.
+        "Body",
     )
     _label_alt = "|".join(re.escape(l) for l in _KNOWN_LABELS)
     pattern = rf"###\s+{re.escape(label)}\s*\n\s*(.*?)(?=\n###\s+(?:{_label_alt})\s*\n|\Z)"
