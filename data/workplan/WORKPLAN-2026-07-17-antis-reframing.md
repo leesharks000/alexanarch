@@ -103,7 +103,7 @@ Post-remediation AIO probe, PEO instrumentation update, XR-E3 or successor run.
 
 ### 4 phases [INFERRED — the summary gives the count but not the phase names]
 
-- Phase C.1: Outline + Round 1 ingest (likely COMPLETE at session end)
+- Phase C.1: Outline + Round 1 ingest — **COMPLETE 2026-07-18**: `OUTLINE-v1.md` (eight sections + appendices + production sequence, ratified title/authorship/path, LOCKSS-analogy and D-Lib corrections incorporated, LOSS-NOTICE wired into §V and §VII, custody honesty in §VIII) and `ROUND-2-PROMPTS.md` (five voices, eleven deliverables, self-contained shared-context block, INKLING post-loss terms, immediate-landing rule for the known loss vector).
 - Phase C.2: Full draft (likely uses Round 2 domain assignments)
 - Phase C.3: Peer critique across substrates
 - Phase C.4: Revision + publication
