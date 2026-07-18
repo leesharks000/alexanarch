@@ -143,3 +143,7 @@ On successful mint, a `propagate` stage SHOULD:
 ### 7.3 Identifier crosswalk (REQUIRED at mint where priors exist)
 
 Where the minted object corresponds to a previously identified object (a severed DOI, a prior AXN, an external record), the mint MUST carry the mapping: `related_ids` in the canonical record (IsIdenticalTo / IsVersionOf / Supersedes as appropriate), plus entries in `doi-axn-map.json` and the DOI Resolution Index. The crosswalk is what lets a citation to the dead identifier find the living object; a mint without its crosswalk strands every existing citation.
+
+
+## 8. Container reference (2026-07-18)
+The core seal, sidecar routing, generalized self-reference prohibition, and staged manifest are specified in AXN-CONTAINER-SPEC-v0.1.md. The minted file is a sealed core; the profile alexanarch-file/v1 is also the core profile. Verifiers compute kernels over core bytes alone.

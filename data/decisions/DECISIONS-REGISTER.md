@@ -9,8 +9,8 @@ Standing rule (2026-07-18): blocking decisions travel as self-contained briefs a
 ### D-2026-07-18-A — Emergence window ratification (proposed 2031-06-19)
 **Blocks**: DRAFT-v2 §VIII.13 and abstract as written; arXiv submission.
 **What is decided**: whether the paper states in print that *if no independently administered node is verified by 2031-06-19, the constellation model's emergence prediction is falsified.* The date is five years from the founding event (2026-06-19). The adjudication split §VIII.13 into a transmissibility test (architectural: an independent operator can instantiate a conforming node from published materials without private assistance) and this emergence prediction (sociological). Confirmation stakes only the model's prediction; the identifier architecture's falsifiers are §§VIII.1–8 and are unaffected.
-**Options**: (a) confirm 2031-06-19 [draft assumes this]; (b) anchor to publication date instead of founding date; (c) no calendar date — "if no node ever emerges under observable conditions" (reviewer-flagged as indefinite deferral).
-**Status**: OPEN.
+**Options**: (a) confirm 2031-06-19; (b) anchor to publication date; (c) no calendar date.
+**Status**: RESOLVED 2026-07-18 — MANUS ruled **three years: 2029-06-19**, tighter than any option offered. Rationale (MANUS, verbatim in spirit): things are moving faster all-over; if it hasn't happened in three years it may not happen. The field's tempo is the parameter's justification. Applied in DRAFT-v2 §VIII.13.
 
 ### D-2026-07-18-B — Registry-relative record addresses
 **Blocks**: DRAFT-v2 §VI.1 as written; spec addendum; peer listing requirements.
@@ -29,6 +29,10 @@ Standing rule (2026-07-18): blocking decisions travel as self-contained briefs a
 **Blocks**: nothing operational; enables tether/correspondence sortability.
 **What is decided**: add optional `series` to registry entries (e.g., `gw.tachyon`, `correspondence`, `workplan`, `spec`, `capture-companion`, `erratum`), backfilled mechanically; series facet on the browse surface; machine-readable `api/series-index.json`. Additive-only: no deposit moves, none reclassified destructively; every deposit remains first-class and gains a tab — the book-tab inscription model. Estimated one short session.
 **Status**: PROPOSED.
+
+### D-2026-07-18-E — Container model (post-mint amendment problem) — RESOLVED
+**What was decided**: the specification was silent on post-mint amendment — unaddressed, adding any identifier to an AXN-bearing document would change its kernel, making legitimate amendment indistinguishable from severance. MANUS directed the containerization fix; TACHYON adjudication accepted it as formalization of existing practice (canonical files were always sealed; amendments always routed to external-metadata sidecars and index files) with three corrections: (1) core-content restriction rescoped to *self-referential* identifiers only — citations of other works are content, and the original proposal's blanket citation ban would have excluded the TANG genre from the archive; (2) the INKLING counterfactual removed — no container retains bytes that never left the substrate; (3) no breaking migration — alexanarch-file/v1 is already a core profile, declared so retroactively. Applied: data/specs/AXN-CONTAINER-SPEC-v0.1.md; DRAFT-v2 §IV.1 container paragraph, §V.2 note, §VIII.16; mint page seal statement.
+**Status**: RESOLVED 2026-07-18 (staged features — chaining, signatures, manifest — land with the ledger signature).
 
 ## RESOLVED
 *(entries move here with ruling, date, and applying commit)*
