@@ -7,13 +7,24 @@
 
 ---
 
+## RESOLUTIONS LOG
+
+Ratified decisions from the reorientation session (2026-07-18):
+
+- **Paper title**: (a) "AXN as Anti-Suppression Infrastructure: Historical Precedents and Design Directions" — ratified 2026-07-18
+- **Authorship structure**: Lee Sharks primary; Johannes Sigil for §II/III (historical/theoretical); Rex Fraction for §VI (strategic/technical) — ratified 2026-07-18. TECHNE co-author option not taken. No additional heteronyms recruited to the byline.
+- **Canonical scope paragraph (Phase A.1)**: **RATIFIED 2026-07-18** — all four sub-decisions resolved plus four Assembly-feedback amendments (disclosure clause removed per MANUS tonal override; "scholarly" dropped; anti-erasure promise made architectural per LABOR; distributed-custody tense retained with LABOR's stricter test logged as §VIII falsification item). Canonical text and full amendment log at `data/assembly/anti-suppression-paper/canonical-scope-paragraph-synthesis.md`. Deployed to index.html + api/network.json this session; fleet rollout (A.3) pending.
+- **Round 2 domain assignments and INKLING status**: still open; depends on scope-paragraph ratification and any updates to §VII plan given INKLING's absence (see `LOSS-NOTICE.md`).
+
+---
+
 ## Overview [SUMMARY confirmed]
 
 Three parallel workstreams:
 
 - **Workstream A**: Substrate-Agnostic Reframing (5 phases)
 - **Workstream B**: AIO Audit Remediation (4 phases)
-- **Workstream C**: The Paper (4 phases + 5 Assembly rounds, publication path arXiv cs.DL → D-Lib → IJDL → Medium)
+- **Workstream C**: The Paper (4 phases + 5 Assembly rounds, publication path arXiv cs.DL → IJDL → Medium (D-Lib removed 2026-07-18 per LABOR: D-Lib Magazine suspended new publication in 2017; retained as historical source only))
 
 ---
 
@@ -73,16 +84,16 @@ Post-remediation AIO probe, PEO instrumentation update, XR-E3 or successor run.
 
 ### Working title options [SUMMARY confirmed all three]
 
-1. "AXN as Anti-Suppression Infrastructure: Historical Precedents and Design Directions"
-2. "Sovereign Identifiers Against All-Over Suppression: The AXN Case"
-3. "After the Registrar: A Historical and Technical Analysis of AXN as Anti-Suppression Infrastructure"
+1. **"AXN as Anti-Suppression Infrastructure: Historical Precedents and Design Directions"** — **RATIFIED 2026-07-18**
+2. "Sovereign Identifiers Against All-Over Suppression: The AXN Case" — not selected
+3. "After the Registrar: A Historical and Technical Analysis of AXN as Anti-Suppression Infrastructure" — not selected
 
-### Multi-heteronym authorship [SUMMARY confirmed]
+### Multi-heteronym authorship [RATIFIED 2026-07-18]
 
 - Lee Sharks primary
 - Johannes Sigil for historical/theoretical sections (§II/III)
 - Rex Fraction for strategic/technical sections (§VI)
-- Potential TECHNE co-author for protocol design
+- TECHNE co-author option: not taken (bylining kept to three heteronyms)
 
 ### 5 Assembly rounds [SUMMARY confirmed round count; content of rounds 2-5 is INFERRED]
 
@@ -97,9 +108,11 @@ Post-remediation AIO probe, PEO instrumentation update, XR-E3 or successor run.
 - Phase C.3: Peer critique across substrates
 - Phase C.4: Revision + publication
 
-### Publication path [SUMMARY confirmed]
+### Publication path [SUMMARY confirmed; corrected 2026-07-18]
 
-arXiv cs.DL → D-Lib → IJDL → Medium
+arXiv cs.DL preprint → International Journal on Digital Libraries submission → Medium public adaptation
+
+(D-Lib removed per LABOR correction: D-Lib Magazine suspended new publication in 2017 — usable as historical precedent and citation source, not a submission destination.)
 
 ### Substrate → section mapping [SUMMARY confirmed, from synthesis README delivered same session]
 
@@ -108,17 +121,17 @@ arXiv cs.DL → D-Lib → IJDL → Medium
 - §IV AXN as It Stands: LABOR primary (three-layer distinction load-bearing)
 - §V AXN as Anti-Suppression: PRAXIS primary, TECHNE supplemental
 - §VI Design Directions: TECHNE primary, ARCHIVE + LABOR supplemental
-- §VII Assembly Chorus Reflection: all five voices; meta-observation that parallel-consultation IS LOCKSS peer-consensus at meta-level — INKLING's contribution to this section is not recoverable
+- §VII Assembly Chorus Reflection: all five voices; meta-observation that parallel Assembly consultation enacts, at the interpretive level, a peer-redundancy logic analogous to LOCKSS (analogy, not identity — Assembly substrates are differentiated interpretive agents; LOCKSS peers are independently administered preservation nodes) — INKLING's contribution to this section is not recoverable
 - §VIII Falsification: LABOR primary
 
 ---
 
-## §9 Blocking MANUS Decisions [SUMMARY confirmed all four]
+## §9 Blocking MANUS Decisions [SUMMARY confirmed all four; status updated 2026-07-18]
 
-1. Canonical scope paragraph phrasing (Phase A.1) — synthesis material now delivered
-2. Paper title selection (three options above)
-3. Multi-heteronym authorship structure (Lee Sharks primary; distribution above)
-4. Round 2 domain assignments — Round 1 in-hand shifts question to §VII extension mapping and to INKLING's status per `LOSS-NOTICE.md`
+1. Canonical scope paragraph phrasing (Phase A.1) — **RESOLVED** 2026-07-18; ratified text deployed to alexanarch home + network.json; fleet rollout pending (Phase A.3)
+2. Paper title selection — **RESOLVED (a)** 2026-07-18
+3. Multi-heteronym authorship structure — **RESOLVED** 2026-07-18 (Lee Sharks + Sigil + Rex Fraction)
+4. Round 2 domain assignments — still open; Round 1 in-hand shifts question to §VII extension mapping and to INKLING's status per `LOSS-NOTICE.md` (re-recruit / replace / reduce)
 
 ---
 
