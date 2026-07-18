@@ -116,10 +116,30 @@ Mirrors prove their state belongs to the same history, detect divergence, and ex
 1. **DONE**: `/mint/` client-side.
 2. **DONE**: `/.well-known/axn-node.json` — live, declaring roles, registry head (`da81d2ab…`), and surfaces.
 3. **STAGED**: `/api/mint` — full implementation at `serverless/mint.js` (Node.js path verified against the deposit #1092 test vector, identical to Python canon and the browser client). Not deployed: the repo's `/api` directory is a live static surface feeding the 25-site fleet; flipping the Vercel project into hybrid function mode is a deliberate MANUS action per `serverless/README.md` activation checklist. Returns 501 with activation instructions until `MINT_GITHUB_TOKEN` is set.
-4. **WIRED, EMPTY**: `/rhizome/peers.json` — live with `peers: []`, listing requirements published (declaration, independent custody per the LOCKSS test, byte verification, mechanical listing). `/rhizome/ledger.json` genesis epoch 0 emitted, chained forward from registry head `da81d2ab…` at deposit #1092. Empty by fact, not by design: **the first entry simultaneously satisfies the federation layer and the independently-administered-custody test** logged as a §VIII falsification item at Phase A.1 ratification. The socket precedes the plug.
+4. **WIRED, EMPTY**: `/rhizome/peers.json` — live with `peers: []`, listing requirements published (declaration, independent custody per the LOCKSS test, byte verification, mechanical listing). `/rhizome/ledger.json` genesis epoch 0 emitted, chained forward from registry head `da81d2ab…` at deposit #1092. Empty by fact, not by design; the socket precedes the plug. CORRECTED CUSTODY DOCTRINE (2026-07-18, per Assembly review): a peer-registry entry closes the empty-peer-registry condition only. The custody limitation closes only when an independently administered operator holds a verified, periodically re-verified, reconstructible full copy and completes a restoration test. Until then: *architecture for* distributed custody.
 
 ## 6. Falsification hooks (for the paper, §VIII)
 
 - If two conforming implementations derive different glyphs from the same bytes, the canon is broken (test vectors published above and in `/mint/` guard this).
 - If a registry head chain shows a discontinuity without a signed supersession, tampering is proven.
 - If no second independently administered node exists by the paper's publication, "distributed custody" in the anchor is architecture-plus-Wayback, not peer plurality — and the paper says so.
+
+
+---
+
+## 7. v0.2 addendum (2026-07-18): storage, propagation, and identifier crosswalk
+
+### 7.1 What registration stores today (current state)
+
+A pipeline mint persists, in one commit: the canonical bytes (`data/texts/AXN-<HEX>-text.md` — the hashed object itself); a download alias (`data/deposits/`); the registry entry (hash, AXN, body_status); the record page (`s/records/<N>/`); the PDF (`papers/`); index/wiki/sitemap/interlink surfaces; and the external-metadata sidecar. Git history is the first backup tier; the deployed site is the serving tier. **Canonicalization profile (reconciliation per LABOR §IV note):** the operative profile is `alexanarch-file/v1` — the canonical bytes ARE the full text-file bytes (frontmatter + body) as written by `build_canonical_text`; `canonical_text` in the API design is that same profile, not a second one. The protocol JSON is to be amended to state this explicitly; any four-field concatenation description is superseded.
+
+### 7.2 Propagation (target state, staged)
+
+On successful mint, a `propagate` stage SHOULD:
+1. **Wayback**: request Save-Page-Now for the record URL and the canonical-text URL (`web.archive.org/save/…`), recording returned snapshot timestamps in the external-metadata sidecar. Implemented: `scripts/propagate_deposit.py` (anonymous SPN; authenticated SPN2 with S3 keys is a MANUS upgrade).
+2. **IPFS**: pin the canonical bytes and record the CID in the sidecar and the location record (layer 3). PENDING a pinning-service credential (MANUS: web3.storage / Pinata / self-hosted node choice).
+3. **Location record**: emit/update the layer-3 record listing all verified locations (sovereign URL, raw.githubusercontent URL, Wayback snapshot, CID when present).
+
+### 7.3 Identifier crosswalk (REQUIRED at mint where priors exist)
+
+Where the minted object corresponds to a previously identified object (a severed DOI, a prior AXN, an external record), the mint MUST carry the mapping: `related_ids` in the canonical record (IsIdenticalTo / IsVersionOf / Supersedes as appropriate), plus entries in `doi-axn-map.json` and the DOI Resolution Index. The crosswalk is what lets a citation to the dead identifier find the living object; a mint without its crosswalk strands every existing citation.
