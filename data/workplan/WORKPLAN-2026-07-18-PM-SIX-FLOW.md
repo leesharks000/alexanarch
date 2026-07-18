@@ -32,25 +32,37 @@ Total sessions to first delivery of each: Flow 2 → 2. Flow 1 → 3. Flow 4 →
 
 ---
 
-## Flow 2 — Data-interlinkage audit + standing map
+## Flow 2 — Rhizome-Wide Data Atlas + Deposit-Flow Standing Map
 
-**Rationale for going first.** Neither Flow 1 (visual revision) nor Flow 4 (Enli study execution) can be done intelligently without knowing exactly which generative elements are mandated per mint, which are conditional, which are optional post-mint enrichment, and how the data actually links up. Flow 1 needs this to restructure record pages honestly (what goes above the fold vs. below; what is text vs. apparatus). Flow 4 needs this so the mint operations for Arms 2 and 3 have precise field-level specifications rather than gestural ones. The audit produces the map; the map is the substrate everything else operates against.
+**Scope revision, 2026-07-18 PM.** Original Flow 2 scoped this as an audit of the Alexanarch deposit pipeline's generative artifacts. MANUS correction extends the scope network-wide: every dataset on every repo in the data-rhizome, every published data relation (canonical → derived → mirrored → consumed), every displayed value on every HTML surface (with dynamic-vs-static classification per value), including relations that are currently isolated. The rhizome is a specific corpus, not only a conceptual term.
 
-**Deliverables.**
+**Actual scope, measured.** Seven repos audited (alexanarch, data-rhizome, machinemediation-org, platform-erosion-observatory, revelationfirst-com, leesharks.com, godkinggoogle): **1,349 JSON files (~262MB), 39 JSONL, 3,141 markdown files, 5,167 HTML surfaces, 3,634 XML files (mostly data-rhizome bibliographic records), 78 Python scripts, 11 CSV, 4 JavaScript.** Alexanarch alone: 950 JSON, 5,118 HTML, 68 scripts. data-rhizome: 338 JSON, 3,627 XML records, 26 JSONL. Machinemediation: 34 JSON at 134MB (large content payloads).
 
-1. **Complete inventory of generative elements per deposit.** Every artifact the pipeline produces or updates: `data/registry.json` entry, `data/texts/AXN-XXXX-text.md` canonical bytes, `data/external-metadata/AXN-XXXX.json` sidecar, `data/deposits/AXN-XXXX.md` record markdown, `papers/AXN-XXXX.pdf`, `s/records/N/index.html` record page, `s/axn/XXXX/index.html` AXN page, `s/wiki/N/index.html` wiki article, `sitemap.xml` entry, `api/kernel-index.json` entry, `api/doi-axn-map.json` where applicable, `data/citation-graph-external.json` edges where applicable, `data/external-works.json` entries where applicable, capture-registry linkage where applicable, DOI Resolution Index update where a legacy DOI was severed. Full field-level catalog per artifact.
+**Rationale for going first, unchanged.** Neither Flow 1 (visual revision) nor Flow 4 (Enli study execution) can be done intelligently without the standing map. Flow 1 needs it to restructure record pages honestly. Flow 4 needs precise field-level specifications for mint operations.
 
-2. **Dependency graph.** For each artifact: (a) what upstream data does it consume? (b) what downstream artifacts consume it? (c) is it produced deterministically from the registry entry, produced with mechanical enrichment, or produced with interpretive enrichment (LLM-domain)?
+**Deliverables, restructured for the rhizome-wide scope.**
 
-3. **Per-mint requirement classification.** Every artifact classified: MANDATORY (produced on every mint, gate the mint if failure), CONDITIONAL (produced when a specified condition holds — e.g. DOI Resolution Index update only when a legacy DOI is severed), or OPTIONAL POST-MINT (interpretive enrichment that can happen after mint, per two-tier doctrine).
+*Session-1 output: raw inventory + atlas scaffold.*
 
-4. **Standing map document.** Output at `data/specs/AXN-DATAFLOW-MAP-v0.1.md`. Reader-oriented: a scholar (or a future TACHYON session) can read this once and understand the entire deposit lifecycle. Includes a visual dependency diagram if the format supports it (Mermaid or ASCII).
+1. **Per-repo dataset catalog.** For each of the 1,349 JSON datasets and every notable non-JSON dataset (JSONL, XML, CSV): path, approximate size, apparent purpose (inferred from name and structure), last-modified. Grouped by repo, then by function. Not annotated with relations yet — this is the raw list.
 
-5. **Gaps and inconsistencies inventory.** Where the current pipeline diverges from the map (missing artifacts, orphaned files, inconsistent field naming, redundant surfaces), record as inventory for later cleanup. This surfaces the technical debt without spending Flow 2's session budget on remediation.
+2. **Per-repo generative-script catalog.** All 78 scripts inventoried: what they read, what they write, what they update. This is the mechanical dependency layer; the human-readable one comes in Session 3.
 
-**Sessions.** One session for audit (walk the pipeline, inventory every artifact, trace dependencies). One session for specification writing (produce the map document, the gap inventory).
+3. **Displayed-value inventory across HTML surfaces.** Every HTML surface (5,167 files) grep-scanned for displayed numeric values, counts, dates, filenames, percentages, and lists. Each classified: *dynamic* (fetched at page-load from a JSON endpoint), *build-time-injected* (baked in at page generation but from a data source), *static* (hard-coded in HTML with no data source referenced), or *static-but-should-be-dynamic* (a value that is patently a count-of-something that ought to update as its source does — e.g., "176 captures" in text when `data/registry.json` has 214). This is Session 2 primarily but the inventory begins in Session 1.
 
-**Notes for the session.** The `scripts/deposit_pipeline.py` eleven-stage sequence (mint → validate → record → pdf → body-index → wiki → sitemap → interlink → enrich → commit → verify) is the pipeline canonical reference. Every artifact touched by any stage enters the inventory. Cross-check against `scripts/mint_deposit.py`, `scripts/enrich_deposit.py`, `scripts/build_kernel_index.py`, `scripts/build_body_index.py`, `scripts/generate_wiki.py`, and any other script the pipeline invokes. If any script is undocumented at field-level, that is itself a Flow 2 gap-inventory entry.
+4. **Atlas scaffold document.** A structured skeleton showing the eventual atlas's chapter/section layout, filled with the inventory data. Sections: (a) per-repo dataset catalog; (b) per-repo scripts; (c) cross-repo relations map (deferred to Session 3); (d) displayed-value inventory; (e) gap and pathology register.
+
+5. **Jump-out pathology register.** Every anomaly noticed during Session 1 walk — static-should-be-dynamic values found in the wild, orphaned datasets, duplicated data between repos, inconsistent field naming across otherwise-identical structures, redundant surfaces, missing cross-references — logged with location and inferred fix. This is the specific pathology MANUS asked to surface.
+
+*Session-2 output: displayed-value classification full pass + pathology triage.*
+
+*Session-3 output: cross-repo relation graph.* For each dataset in the inventory: producing repo (canonical origin), consuming repos (mirrors, references), cross-references, mutation frequency, published-API endpoint (if any). This is the atlas's chapter (c). Machine-readable at `api/dataflow-graph.json`.
+
+*Session-4 output: standing map document + gap remediation queue.* Publishable as `data/specs/AXN-DATAFLOW-MAP-v0.1.md`. Includes a Mermaid visual dependency diagram. Companion queue at `data/workplan/DATAFLOW-REMEDIATION-QUEUE.md` prioritizing pathologies for follow-on work.
+
+**Sessions revised: 4 sessions for the full atlas rather than 2.** Session 1 delivers substantial raw material and jump-out pathologies; Sessions 2–4 refine into the finished atlas. Original 2-session estimate was for Alexanarch-only scope; rhizome-wide scope is genuinely 2x the work.
+
+**Notes.** The `scripts/deposit_pipeline.py` eleven-stage sequence (mint → validate → record → pdf → body-index → wiki → sitemap → interlink → enrich → commit → verify) is the Alexanarch pipeline canonical reference — but Alexanarch is only one of seven repos. data-rhizome has its own generation pipeline (3,627 XML records suggest a bibliographic-corpus workflow); machinemediation-org has content-manifest architecture; leesharks and gkg have capture-registry pipelines. Each repo's canonical reference gets identified during Session 1's walk.
 
 ---
 
