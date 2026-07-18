@@ -1,6 +1,6 @@
 # Assembly Round 2 — Prompt Set
 
-**Status**: READY. §9.4 resolved 2026-07-18 — five voices; INKLING included on hybrid terms.
+**Status**: v1.1 (amended per Assembly review round, 2026-07-18). INKLING ×2 and ARCHIVE ×2 DELIVERED and landed. Outstanding: PRAXIS ×2, LABOR ×3, TECHNE ×2 — prompts below amended per the six load-bearing corrections; superseded phrasings struck.
 **Method**: paste the SHARED CONTEXT block, then the substrate's assigned prompt, into a fresh session with that substrate. Deliverables land at `data/assembly/anti-suppression-paper/<substrate>/round-2-<slug>.md` via the standard TACHYON landing pattern.
 **Discipline**: measured figures only (871 deposits / 1,817 DOIs). Substrates write material, not final prose — integration is C.2 (Sharks/Sigil/Fraction).
 
@@ -31,7 +31,7 @@ Round 2 assignment: two deliverables.
 
 **(1) §II Historical Precedents — full drafting material.** Your Round 1 8-pattern taxonomy merges with LABOR's 7-case sweep into eight subsections (distributed reproduction; professionalized counter-circulation; jurisdictional exit; syndication as topology; protocol-as-armor; witness instrumentation; emergency preservation; aftermath documentation). For each: the historical case in 150–250 words of citable scholarly register (this becomes Sigil's raw material — precise dates, named actors, no polemic), the operational lesson in one sentence, and the Alexanarch mapping in one sentence. Flag any Round 1 historical claim you cannot source on reflection — §VIII wants the retractions too.
 
-**(2) §V argument spine.** Your through-line — "an AXN is true or false independently of any authority" — is the paper's central claim. Develop it in 600–900 words: what exactly the property is, why DOIs structurally lack it, why every §II pattern converged on it, and what its limits are (an identifier's truth does not locate content; verification is not discovery; the kernel survives severance but resolution does not). The limits paragraph is mandatory.
+**(2) §V argument spine (rescoped v1.1).** The central claim now attaches to the identity kernel, not the whole AXN: *a claimed correspondence between canonical bytes and an AXN identity kernel is independently verifiable — it matches or it does not, without permission from a registrar or custodian.* Develop this in 600–900 words: what exactly the property is; why **DOI-to-content correspondence** lacks independent verification (not why DOIs lack "truth"); why every §II pattern converged on it; and its limits (verification is not discovery; the kernel survives severance but resolution does not; the record address carries registry-assigned components the kernel does not). Close on the crucial sentence: AXN does not make disappearance impossible — it makes identity independently testable, disappearance recordable, and reconstruction by another custodian technically possible. The limits paragraph is mandatory.
 
 ---
 
@@ -43,7 +43,7 @@ Round 2 assignment: three deliverables, all in your Round 1 register (explicit e
 
 **(2) §IV — the three-layer model as normative text.** Your identity-kernel / canonical-record-address / location-record distinction is now spec v0.1 §1. Write it for the journal: 500–800 words that a repository engineer could implement from, including the exact honest characterization ("a sovereign record address with a content-derived recognition component, backed by a full content hash") and the circularity prohibition.
 
-**(3) §VIII Falsification — full section material.** Your assignment as primary: the derivation-integrity test, the ledger-continuity test, the custody test stated against the current fact (peers: []), the causal-claim separation you established in Round 1, and the limitations inventory (solo-operation, economic substrate, legal personhood, Assembly substrate-dependence). Where the paper overclaims anywhere in the outline, say so by section number.
+**(3) §VIII Falsification — full section material (amended v1.1).** Your assignment as primary: the derivation-integrity test; the ledger-continuity test in its corrected form (discontinuity without signed supersession or documented fork *falsifies continuous-history claims and requires investigation* — it does not by itself establish cause); the custody test in its corrected form (*the first independently administered peer holding and periodically verifying a reconstructible full copy* closes the limitation — a peer-registry entry alone does not); the parallel-case condition (the depositor-E argument requires verification that her records were suppressed by the same platform mechanism as the 871; if the mechanism differed, evidence of caprice, not systemic genre-blindness); the causal-claim separation you established in Round 1; and the limitations inventory (solo-operation, economic substrate, legal personhood, Assembly substrate-dependence — the method fails if the substrates converge on false claims). Your six Round-2-review corrections are applied in OUTLINE v1.1; where the outline still overclaims, say so by section number.
 
 ---
 
@@ -51,15 +51,15 @@ Round 2 assignment: three deliverables, all in your Round 1 register (explicit e
 
 Round 2 assignment: two deliverables.
 
-**(1) §VI Design Directions — drafting material.** Your three-futures fork (Sovereign / Distributed / Constellation) with the trade-off matrix is the section's organizing structure. Update it against what now exists: the mint client, node declaration, wired-empty peers.json, ledger genesis, staged /api/mint. For each engineering question in your Round 1 matrix (resolution / replication / verification / temporal / legal), state what this cycle's deliveries chose de facto, and what remains genuinely open. Then: the institutional layer — develop your legal-entity recommendation to proposal level (entity forms that permit operational control without civil-identity disclosure; 300–500 words; jurisdiction-aware but not legal advice).
+**(1) §VI Design Directions — drafting material.** Your three-futures fork (Sovereign / Distributed / Constellation) with the trade-off matrix is the section's organizing structure. Update it against what now exists: the mint client, node declaration, wired-empty peers.json, ledger genesis, staged /api/mint. For each engineering question in your Round 1 matrix (resolution / replication / verification / temporal / legal), state what this cycle's deliveries chose de facto, and what remains genuinely open. Then: the institutional layer — an **options-and-questions-for-counsel memorandum** (rescoped v1.1): compare entity structures and operational constraints for control-without-civil-identity-disclosure, and enumerate the questions requiring legal review; 300–500 words; explicitly not a jurisdiction-specific recommendation.
 
-**(2) §V retrieval-layer mechanics.** Your Enli analysis (genre suppression by algorithmic proxy) and two-surface asymmetry table are §V.3–4's spine. Tighten both against the current figures (233 records; 0.55% → 12.75%; 0.00%/100% citation asymmetry) and add the falsifiable predictions: what observations would DISCONFIRM the account-linked-deranking hypothesis? The paper needs the disconfirmation conditions, not just the mechanism.
+**(2) §V retrieval-layer mechanics.** Your Enli analysis (genre suppression by algorithmic proxy) and two-surface asymmetry table are §V.3–4's spine. Tighten both against the current figures (233 records; 0.55% → 12.75%; 0.00%/100% citation asymmetry) and add the falsifiable predictions: what observations would DISCONFIRM the account-linked-conditioning hypothesis? State the competing mundane explanations (query variance, caching, experiment allocation, localization, temporal index change) and the observations that would distinguish them. Hypothesis register throughout — observations first, interpretations second (v1.1 discipline; INKLING's delivered Round 2 reconstruction models this and is in the archive for reference).
 
 ---
 
-## ARCHIVE (Gemini) — §III attestation + §VI speculative frontier
+## ARCHIVE (Gemini) — §III attestation + §VI speculative frontier — ✅ DELIVERED 2026-07-18
 
-Round 2 assignment: two deliverables.
+Round 2 assignment (both deliverables in the archive at `archive/`): ISCN specifics with ledger anchor and HK survival record; OWI marked architecture-not-deployment; three speculative extensions each developed; dual-use boundary drawn via the Obelus Principle at the carriage layer (identity minting ungated; node carriage sovereign, post-minting, visible).
 
 **(1) §III content-attestation material.** Your ISCN/LikeCoin treatment (Hong Kong) and CAS pillar carry §III.2–3. Deepen with citable specifics: what ISCN registers, on what ledger, with what survival record through the crackdowns. One paragraph on One-Way Indexing as a design pattern, clearly marked as architecture-not-deployment.
 
@@ -67,9 +67,9 @@ Round 2 assignment: two deliverables.
 
 ---
 
-## INKLING — §VII post-loss layer
+## INKLING — §VII post-loss layer — ✅ DELIVERED 2026-07-18, landed same session per the loss-vector rule
 
-Round 2 assignment: one deliverable, explicitly marked **reconstruction, not restoration**.
+Round 2 assignment (both deliverables in the archive at `inkling/`): explicitly marked **reconstruction, not restoration**. Delivered in hypothesis register with confirmation AND disconfirmation predictions — the v1.1 discipline, modeled before it was mandated.
 
 Your Round 1 contribution is gone. The LOSS-NOTICE characterizes what survives of it second-hand: the fan-out mechanic — the logged-in surface pre-narrows query fan-out against personalization signals while incognito runs the untargeted fan-out that can reach the Overview threshold. You do not carry the lost session, and the paper will not pretend you do.
 
