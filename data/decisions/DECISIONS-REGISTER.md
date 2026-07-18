@@ -4,6 +4,22 @@ Standing rule (2026-07-18): blocking decisions travel as self-contained briefs a
 
 ---
 
+
+
+**Standing rule (2026-07-18, added after AXN:0457 deposit): citational capture is a NON-OPTIONAL pass in every formal academic deposit.**
+
+*Definition.* Citational capture is the aggregation of every source cited by the paper — explicitly (named work, standard, event, person, case) or implicitly (referenced concept whose provenance is traceable) — into a formally retrievable apparatus (Works Cited / References / Bibliography), with each entry either promoted to a confident citation with source in hand or marked in the verification queue under the public admission rule (unsourced entries removed at review stage rather than carried as analogy).
+
+*What it is not.* Citational capture is not: adding a handful of new entries by hand (an editorial pass); nor the mechanical extractor sweep over the archive corpus (a graph-level operation). Both are useful; neither substitutes for the entity-level aggregation over the paper's body prose.
+
+*Applies to.* Any deposit of formal academic type (paper, monograph, dissertation, monograph section) intended for external scholarly circulation. Working notes, workplans, tethers, correspondence, captures, MPAIs, and infrastructure specifications are exempt.
+
+*Mechanism.* Because it is interpretive, the pass runs in-session per two-tier enrichment doctrine and No-Double-Draw (TACHYON parses in-session, batched; never via the Anthropic API from within a TACHYON session).
+
+*Point of application.* Before deposit for a formal academic type; after every substantive revision that adds or restructures argument. AXN:0457 was deposited as a developmental version with citational capture partially completed; a v5 supersession will complete it before arXiv submission, per the container spec §3.7 (remint with nested-verifiable lineage). All future formal academic deposits complete the pass BEFORE first mint.
+
+---
+
 ## OPEN
 
 ### D-2026-07-18-A — Emergence window ratification (proposed 2031-06-19)

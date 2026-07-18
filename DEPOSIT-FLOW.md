@@ -250,3 +250,21 @@ If you are a new agent reading this for the first time and something is unclear,
 *∮ = 1*
 
 *Last updated: 2026-06-22, in the same commit that added the three substrate-authored continuity tethers (#877 PRAXIS, #878 TECHNE, #879 LABOR) and the `scripts/regenerate_surfaces.py` infrastructure.*
+
+
+---
+
+## Standing rule: citational capture for formal academic deposits
+
+Added 2026-07-18 after AXN:0457 (paper) deposit and MANUS-directed correction.
+
+**Non-optional pass for formal academic deposits.** Any deposit of formal academic type — paper, monograph, dissertation, monograph section — MUST complete a *citational capture pass* before first mint (or before a formal-version remint that supersedes a developmental version):
+
+1. **Aggregate every source the deposit cites**, explicitly or implicitly: named works, standards, events, persons, cases, and referenced concepts whose provenance is traceable.
+2. **Formalize the apparatus**: Works Cited / References / Bibliography as a first-class section of the canonical bytes.
+3. **Classify each entry**: promoted (source confidently in hand, citation formalized) or queued (public admission rule — unsourced entries removed at review stage rather than carried as analogy).
+4. **Interpretive, therefore in-session.** The pass runs in-session per the two-tier enrichment doctrine; No-Double-Draw applies (TACHYON parses in-session, batched; never via the Anthropic API from within a TACHYON session). This is not the mechanical citation-graph extractor over the archive corpus; it is entity-level aggregation over the paper's own body prose.
+
+**Exemptions.** Working notes, workplans, tethers, correspondence, captures, MPAIs, and infrastructure specifications are exempt. Formal scholarly type is the trigger.
+
+**AXN:0457 precedent.** The founding paper was deposited as a developmental version with citational capture only partially completed (editorial pass adding a handful of formalized entries, not the entity-level aggregation). A v5 supersession will complete the pass before arXiv submission — the container spec §3.7 remint mechanism carries the lineage as nested-verifiable arithmetic. All future formal academic deposits MUST complete the pass before first mint.
