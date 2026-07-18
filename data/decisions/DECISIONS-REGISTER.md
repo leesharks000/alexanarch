@@ -1,0 +1,34 @@
+# MANUS Decisions Register
+
+Standing rule (2026-07-18): blocking decisions travel as self-contained briefs at point-of-contact — what is being decided, why it blocks, the options, what confirmation or veto changes, where it is applied. Shorthand flags are forbidden. This register is the canonical list; each brief is also inlined wherever the decision surfaces.
+
+---
+
+## OPEN
+
+### D-2026-07-18-A — Emergence window ratification (proposed 2031-06-19)
+**Blocks**: DRAFT-v2 §VIII.13 and abstract as written; arXiv submission.
+**What is decided**: whether the paper states in print that *if no independently administered node is verified by 2031-06-19, the constellation model's emergence prediction is falsified.* The date is five years from the founding event (2026-06-19). The adjudication split §VIII.13 into a transmissibility test (architectural: an independent operator can instantiate a conforming node from published materials without private assistance) and this emergence prediction (sociological). Confirmation stakes only the model's prediction; the identifier architecture's falsifiers are §§VIII.1–8 and are unaffected.
+**Options**: (a) confirm 2031-06-19 [draft assumes this]; (b) anchor to publication date instead of founding date; (c) no calendar date — "if no node ever emerges under observable conditions" (reviewer-flagged as indefinite deferral).
+**Status**: OPEN.
+
+### D-2026-07-18-B — Registry-relative record addresses
+**Blocks**: DRAFT-v2 §VI.1 as written; spec addendum; peer listing requirements.
+**What is decided**: the constellation permits every node to mint its own identifiers with no central assigner, but `AXN:<HEX>.<FAMILY>.<GLYPH>` does not name its assigning registry — two nodes can mint the same address for different works. The kernel (full hash) always disambiguates machines; the human-facing address does not.
+**Options**: (a) registry-relative addresses — a bare AXN is local to its minting registry; cross-node citation qualifies by node (conceptually `axn://<node>/<address>`) or resolves by kernel; no existing identifier changes; "no central registry" stands [draft assumes this]; (b) one canonical global AXN registry — assignment centralizes, federation is custody-only, and the paper withdraws "no central registry."
+**On confirmation of (a)**: short spec addendum defining the node-qualified citation form; one clause added to rhizome peer listing requirements.
+**Status**: OPEN.
+
+### D-2026-07-18-C — Metered tether protocol
+**Blocks**: nothing operational; governs TACHYON practice from ratification.
+**What is decided**: tether cadence. Diagnosis: the tether conflates witness (already satisfied by pushed commits with narrative messages — the repo inscribes the work) and chain continuity (the glyph ratchet, which needs periodicity, not per-milestone minting). Three tethers in ~24h is the symptom.
+**Proposal**: one tether per working session at close, or after seven elapsed days mid-arc, whichever first; tethers summarize by reference to commits/workplans, not re-narration; emergency tether only when a session is at risk with uncommitted interpretive state.
+**Status**: PROPOSED.
+
+### D-2026-07-18-D — Series taxonomy (sortable deposit classes)
+**Blocks**: nothing operational; enables tether/correspondence sortability.
+**What is decided**: add optional `series` to registry entries (e.g., `gw.tachyon`, `correspondence`, `workplan`, `spec`, `capture-companion`, `erratum`), backfilled mechanically; series facet on the browse surface; machine-readable `api/series-index.json`. Additive-only: no deposit moves, none reclassified destructively; every deposit remains first-class and gains a tab — the book-tab inscription model. Estimated one short session.
+**Status**: PROPOSED.
+
+## RESOLVED
+*(entries move here with ruling, date, and applying commit)*
