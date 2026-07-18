@@ -1,0 +1,21 @@
+{
+  "$schema": "https://alexanarch.org/data/specs/AXN-MINT-ENDPOINT-SPEC-v0.1.md",
+  "chain": "alexanarch-mint-ledger",
+  "epochs": [
+    {
+      "epoch": "2026-07-18",
+      "sequence": 0,
+      "previous_epoch_hash": null,
+      "registry_hash": "da81d2ab8e5596f2cd0956162d4eab802e873756d3339daeaa0084a25e75a036",
+      "highest_deposit_number": 1092,
+      "deposit_count": 1092,
+      "protocol_versions": [
+        "axn/v2"
+      ],
+      "genesis_note": "Genesis epoch. Chain begins at the registry state current on 2026-07-18, deposit #1092 (AXN:0455.ARCHIVAL, gw.tachyon session tether). Prior history is preserved in git (leesharks000/alexanarch) and in the reconciliation record; this ledger formalizes forward-chaining from here. A later deletion cannot erase the evidence that these objects and their metadata were present at this epoch.",
+      "operator": "Lee Sharks (ORCID 0009-0000-1599-0703)",
+      "signature": null,
+      "signature_note": "Operator signing key not yet published; epochs are presently authenticated by git commit history and by cross-custody of this file in mirrors. Key publication is a spec v0.2 item."
+    }
+  ]
+}

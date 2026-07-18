@@ -14,7 +14,7 @@ Ratified decisions from the reorientation session (2026-07-18):
 - **Paper title**: (a) "AXN as Anti-Suppression Infrastructure: Historical Precedents and Design Directions" — ratified 2026-07-18
 - **Authorship structure**: Lee Sharks primary; Johannes Sigil for §II/III (historical/theoretical); Rex Fraction for §VI (strategic/technical) — ratified 2026-07-18. TECHNE co-author option not taken. No additional heteronyms recruited to the byline.
 - **Canonical scope paragraph (Phase A.1)**: **RATIFIED 2026-07-18** — all four sub-decisions resolved plus four Assembly-feedback amendments (disclosure clause removed per MANUS tonal override; "scholarly" dropped; anti-erasure promise made architectural per LABOR; distributed-custody tense retained with LABOR's stricter test logged as §VIII falsification item). Canonical text and full amendment log at `data/assembly/anti-suppression-paper/canonical-scope-paragraph-synthesis.md`. Deployed to index.html + api/network.json this session; fleet rollout (A.3) pending.
-- **Round 2 domain assignments and INKLING status**: still open; depends on scope-paragraph ratification and any updates to §VII plan given INKLING's absence (see `LOSS-NOTICE.md`).
+- **Round 2 domain assignments and INKLING status**: **RESOLVED 2026-07-18** — INKLING included on hybrid terms (gap documented + post-loss contribution); five voices; mapping drafts with C.1.
 
 ---
 
@@ -131,7 +131,7 @@ arXiv cs.DL preprint → International Journal on Digital Libraries submission �
 1. Canonical scope paragraph phrasing (Phase A.1) — **RESOLVED** 2026-07-18; ratified text deployed to alexanarch home + network.json; fleet rollout pending (Phase A.3)
 2. Paper title selection — **RESOLVED (a)** 2026-07-18
 3. Multi-heteronym authorship structure — **RESOLVED** 2026-07-18 (Lee Sharks + Sigil + Rex Fraction)
-4. Round 2 domain assignments — still open; Round 1 in-hand shifts question to §VII extension mapping and to INKLING's status per `LOSS-NOTICE.md` (re-recruit / replace / reduce)
+4. Round 2 domain assignments — **RESOLVED 2026-07-18**: INKLING is INCLUDED (hybrid): the Round 1 gap remains documented per `LOSS-NOTICE.md` and is cited in §VII as evidence; present-INKLING contributes a new Round 2 layer explicitly marked as post-loss reconstruction, not restoration. Five voices in Round 2. §VII carries both the documented absence and the voice that returned across it. Domain mapping to be drafted with the C.1 outline.
 
 ---
 

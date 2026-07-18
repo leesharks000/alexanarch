@@ -111,12 +111,12 @@ Each registry release commits to the previous:
 
 Mirrors prove their state belongs to the same history, detect divergence, and exchange missing deposits. The existing chunk hashes, manifests, and overwrite receipts already point here; this formalizes the chain. A later deletion cannot erase the evidence that an object and its metadata were previously present.
 
-## 5. Sequencing
+## 5. Sequencing (status updated 2026-07-18, same session)
 
-1. **Done**: `/mint/` client-side (this commit).
-2. **Next**: `/.well-known/axn-node.json` — static, no server code, publishable immediately.
-3. **Then**: `/api/mint` as a Vercel function writing to a `pending` branch via the GitHub API (the deposit transport, mechanized).
-4. **Then**: `/rhizome/peers.json` once a second independently administered node exists — which is also the unmet LABOR custody test logged at Phase A.1 ratification (§VIII falsification item). The federation layer and the custody-independence requirement resolve together: **the first true peer satisfies both.**
+1. **DONE**: `/mint/` client-side.
+2. **DONE**: `/.well-known/axn-node.json` — live, declaring roles, registry head (`da81d2ab…`), and surfaces.
+3. **STAGED**: `/api/mint` — full implementation at `serverless/mint.js` (Node.js path verified against the deposit #1092 test vector, identical to Python canon and the browser client). Not deployed: the repo's `/api` directory is a live static surface feeding the 25-site fleet; flipping the Vercel project into hybrid function mode is a deliberate MANUS action per `serverless/README.md` activation checklist. Returns 501 with activation instructions until `MINT_GITHUB_TOKEN` is set.
+4. **WIRED, EMPTY**: `/rhizome/peers.json` — live with `peers: []`, listing requirements published (declaration, independent custody per the LOCKSS test, byte verification, mechanical listing). `/rhizome/ledger.json` genesis epoch 0 emitted, chained forward from registry head `da81d2ab…` at deposit #1092. Empty by fact, not by design: **the first entry simultaneously satisfies the federation layer and the independently-administered-custody test** logged as a §VIII falsification item at Phase A.1 ratification. The socket precedes the plug.
 
 ## 6. Falsification hooks (for the paper, §VIII)
 

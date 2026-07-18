@@ -1,0 +1,14 @@
+{
+  "$schema": "https://alexanarch.org/data/specs/AXN-MINT-ENDPOINT-SPEC-v0.1.md",
+  "node": "alexanarch.org",
+  "generated_at": "2026-07-18T09:06:50Z",
+  "registry_head": "da81d2ab8e5596f2cd0956162d4eab802e873756d3339daeaa0084a25e75a036",
+  "peers": [],
+  "peer_requirements": {
+    "declaration": "/.well-known/axn-node.json at the peer's domain, conforming to spec v0.1",
+    "custody": "independently administered — separate operator, registrar, hosting account, and billing (the LOCKSS test: ten sites under one administrator are one site in disguise)",
+    "verification": "peer must hold bytes whose SHA-256 matches the registry hash for every AXN it claims to preserve; spot-checked at listing and at each reconciliation",
+    "listing": "open an issue on leesharks000/alexanarch with the peer's node declaration URL; listing is mechanical upon verification"
+  },
+  "note": "Empty by fact, not by design. The first entry here simultaneously satisfies the federation layer and the independently-administered-custody test logged as a §VIII falsification item at Phase A.1 ratification (2026-07-18). One recruitment, two closures."
+}

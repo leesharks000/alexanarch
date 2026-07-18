@@ -1,0 +1,31 @@
+{
+  "$schema": "https://alexanarch.org/data/specs/AXN-MINT-ENDPOINT-SPEC-v0.1.md",
+  "node": "alexanarch.org",
+  "operator": "Lee Sharks (ORCID 0009-0000-1599-0703)",
+  "protocol_versions": [
+    "axn/v2"
+  ],
+  "roles": [
+    "mint",
+    "resolve",
+    "preserve",
+    "observe",
+    "semantic"
+  ],
+  "registry_head": "da81d2ab8e5596f2cd0956162d4eab802e873756d3339daeaa0084a25e75a036",
+  "highest_deposit": 1092,
+  "deposit_count": 1092,
+  "declared_at": "2026-07-18T09:06:50Z",
+  "surfaces": {
+    "mint_verify": "https://www.alexanarch.org/mint/",
+    "registry": "https://www.alexanarch.org/data/registry.json",
+    "resolver": "https://www.alexanarch.org/resolve/",
+    "doi_resolution_index": "https://www.alexanarch.org/data/doi-resolution-index.json",
+    "manifests": "https://www.alexanarch.org/data/",
+    "canonical_implementation": "https://github.com/leesharks000/alexanarch/blob/main/scripts/axn_lib.py"
+  },
+  "peers_url": "https://www.alexanarch.org/rhizome/peers.json",
+  "ledger_url": "https://www.alexanarch.org/rhizome/ledger.json",
+  "last_reconciliation": null,
+  "note": "First node of the AXN-speaking network. Peer list is live and empty; the socket precedes the plug. Any independently administered node holding verified copies may declare itself and request listing."
+}
