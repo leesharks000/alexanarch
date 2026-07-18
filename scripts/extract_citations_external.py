@@ -37,6 +37,7 @@ DOI_RE = re.compile(r'\b(10\.\d{4,9}/[^\s\)\]\">,;]+)')
 URL_RE = re.compile(r'https?://[^\s\)\]\">]+')
 ARXIV_RE = re.compile(r'\barXiv:\s?(\d{4}\.\d{4,5})(v\d+)?', re.I)
 ISBN_RE = re.compile(r'\bISBN[:\s-]*((?:97[89][- ]?)?(?:\d[- ]?){9}[\dXx])\b')
+TANG_RE = re.compile(r'(Total Axial Negation Graph|\bTANG\b|\bOCTANG\b)', re.I)
 REFSEC_RE = re.compile(r'^#{1,4}[^\n]{0,40}\b(Works Cited|References|Bibliography|Sources)\b[^\n]{0,25}$', re.I | re.M)
 HEADING_RE = re.compile(r'^#{1,4}\s+\S', re.M)
 
@@ -79,11 +80,13 @@ def main():
 
     edges, nodes = [], {}
     refsec_texts = 0
+    tang_texts = 0
     queue_entries = []
 
     def add_edge(src_num, src_axn, bibkey, via, locus, raw):
         edges.append({'source_deposit': src_num, 'source_axn': src_axn,
                       'target_bibkey': bibkey, 'via': via, 'locus': locus,
+                      'relation': 'cites', 'ontic_status': 'unverified',
                       'raw': raw[:300]})
         n = nodes.setdefault(bibkey, {'bibkey': bibkey, 'cited_by': []})
         if src_axn not in n['cited_by']:
@@ -97,6 +100,22 @@ def main():
         num, axn = by_hex[hexid]
         body = s.split('---', 2)[-1]
 
+        # TANG rule (MANUS 2026-07-18): a TANG's entire body IS its citation set
+        # (genre spec deposit #542: TANG = <T,C,E,L,S,P>, C = total citation set).
+        # Detection: title or early body names the genre. Full body segments into
+        # the Stage C queue with locus='tang'; relation typing per the TANG edge
+        # vocabulary happens at parse time.
+        title_zone = s[:600] + body[:800]
+        is_tang = bool(TANG_RE.search(title_zone))
+        if is_tang:
+            tang_texts += 1
+            for entry in re.split(r'\n\s*\n', body):
+                e = ' '.join(entry.split())
+                if len(e) > 25 and not e.startswith('#'):
+                    queue_entries.append({'source_deposit': num, 'source_axn': axn,
+                                          'raw': e[:600], 'locus': 'tang',
+                                          'status': 'pending'})
+
         # refsec span (locus classification + Stage B segmentation)
         rs = REFSEC_RE.search(body)
         refsec_span = (rs.end(), len(body)) if rs else None
@@ -109,7 +128,8 @@ def main():
                 e = ' '.join(entry.split())
                 if len(e) > 25 and not e.startswith('#'):
                     queue_entries.append({'source_deposit': num, 'source_axn': axn,
-                                          'raw': e[:600], 'status': 'pending'})
+                                          'raw': e[:600], 'locus': 'refsec',
+                                          'status': 'pending'})
 
         def locus(pos):
             return 'refsec' if refsec_span and refsec_span[0] <= pos < refsec_span[1] else 'inline'
@@ -139,6 +159,8 @@ def main():
     (ROOT / 'data' / 'citation-graph-external.json').write_text(json.dumps({
         '@context': 'https://schema.org', '@type': 'Dataset',
         'name': 'Alexanarch External Citation Graph (Stage A: mechanical)',
+        'edge_fields': {'relation': 'TANG edge vocabulary (genre spec, deposit #542): cites | critiques | builds_upon | temporal_precedence | methodological_lineage | contradiction. Mechanical extraction defaults to cites; Stage C retypes.',
+                        'ontic_status': 'real (verified existent) | forward_library (cited before existence) | fictive_retro (invented past work) | unverified (default until Stage C/D classification). Fictive and forward citations are first-class literary structure, never broken links.'},
         'description': 'External citation edges extracted mechanically from canonical texts: external-prefix DOIs, foreign Zenodo DOIs, URLs (own-fleet excluded), arXiv IDs, ISBNs. Freeform reference-section entries pending Stage C in-session parsing (see worklists/refsec-parse-queue.json).',
         'dateModified': now, 'total_edges': len(edges), 'edges': edges,
     }, ensure_ascii=False, indent=1) + '\n')
@@ -164,7 +186,7 @@ def main():
         'entries': parsed_keep + queue_entries,
     }, ensure_ascii=False, indent=1) + '\n')
 
-    print(f'edges: {len(edges)} | external nodes: {len(nodes)} | refsec texts: {refsec_texts} | queue pending: {len(queue_entries)} (parsed kept: {len(parsed_keep)})')
+    print(f'edges: {len(edges)} | external nodes: {len(nodes)} | refsec texts: {refsec_texts} | TANG texts: {tang_texts} | queue pending: {len(queue_entries)} (parsed kept: {len(parsed_keep)})')
     from collections import Counter
     print('via:', Counter(e['via'] for e in edges).most_common())
     doms = Counter(url_domain(e['target_bibkey'][4:]) for e in edges if e['via'] == 'url')
