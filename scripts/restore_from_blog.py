@@ -59,12 +59,12 @@ def load_inventory():
         out.append((u, set(t for t in slug.split('-') if t and t not in STOP)))
     return out
 
-def slug_candidates(title, inventory, k=3):
+def slug_candidates(title, inventory, k=3, min_ov=3):
     tt = set(t for t in norm(title).split() if t not in STOP)
     scored = []
     for u, stoks in inventory:
         ov = len(tt & stoks)
-        if ov >= 3 or (stoks and ov >= max(2, len(stoks)-1)):
+        if ov >= min_ov or (stoks and ov >= max(2, len(stoks)-1)):
             scored.append((ov, u))
     scored.sort(reverse=True)
     return [u for _, u in scored[:k]]
@@ -84,6 +84,7 @@ def main():
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--batch', action='store_true',
                     help='mint-only per work (fast); shared stages deferred to --finish; queue saved after EVERY work')
+    ap.add_argument('--deep', action='store_true', help='wider candidate search: 10 slug candidates, overlap>=2')
     ap.add_argument('--finish', action='store_true',
                     help='run shared stages once for all stages_pending mints, then single commit')
     args = ap.parse_args()
@@ -109,7 +110,7 @@ def main():
         tt = norm(e['title'])
         matched = None
         h2 = html2text.HTML2Text(); h2.body_width = 0
-        candidates = slug_candidates(e['title'], INVENTORY) + [u for u in e['candidate_blog_urls'] if u]
+        candidates = slug_candidates(e['title'], INVENTORY, k=(10 if args.deep else 3), min_ov=(2 if args.deep else 3)) + [u for u in e['candidate_blog_urls'] if u]
         seen = set()
         for url in candidates:
             if url in seen: continue
