@@ -506,17 +506,12 @@ def regenerate_sitemap(reg, dry_run=False):
             f'  <url><loc>https://alexanarch.org/s/records/{n}/</loc>'
             f'<lastmod>{last}</lastmod><priority>0.8</priority></url>'
         )
-        # Paper PDF URL (the /papers/ compression layer, EA-LACUNA-PROTOCOL-01).
-        # Emitted from the registry so wiki/sitemap rebuilds can never drop
-        # the paper layer again (regression: 2026-07-17 wiki run clobbered
-        # 1,085 paper URLs added by commit 2c11e35).
-        axn = d.get("axn", "")
-        hx = axn.split(":")[1].split(".")[0] if ":" in axn and "." in axn else ""
-        if hx:
-            lines.append(
-                f'  <url><loc>https://alexanarch.org/papers/AXN-{hx.zfill(4)}.pdf</loc>'
-                f'<lastmod>{last}</lastmod><priority>0.7</priority></url>'
-            )
+        # PDFs demoted from the sitemap 2026-07-19 (Canonical Record Convergence
+        # P0.7, MANUS-directed searchability pass): the /papers/ layer remains
+        # fully published and linked from every record page as a representation,
+        # but no longer competes with /s/records/N/ as an independent crawl
+        # target. (Supersedes the 2026-07-17 regression note: the paper layer
+        # is preserved by record-page links + /papers/ directory, not sitemap.)
     lines.append("</urlset>")
     out = "\n".join(lines) + "\n"
 

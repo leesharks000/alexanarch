@@ -272,6 +272,28 @@ def build(dry_run: bool = False, min_phrase_freq: int = 2) -> int:
         OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
         OUTPUT_PATH.write_text(payload, encoding="utf-8")
         print(f"  ✓ api/body-index.json ({len(payload):,} bytes)")
+        # --- Sharded postings for client-side body search (Canonical Record Convergence P0.3) ---
+        # The monolith is ~39MB and cannot be client-fetched; /search/ fetches only the
+        # 2-char-prefix shards for the query's tokens (median shard: tens of KB).
+        import shutil as _sh
+        shard_dir = OUTPUT_PATH.parent / "body-shards"
+        if shard_dir.exists():
+            _sh.rmtree(shard_dir)
+        shard_dir.mkdir()
+        tokens = output.get("index", {})
+        shards = {}
+        for tok, posts in tokens.items():
+            pref = "".join(c for c in tok[:2].lower() if c.isalnum()) or "_"
+            if len(pref) < 2: pref = (pref + "_")[:2]
+            shards.setdefault(pref, {})[tok] = posts
+        for pref, block in shards.items():
+            (shard_dir / f"{pref}.json").write_text(
+                json.dumps(block, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+        manifest = {"shard_count": len(shards), "prefix_length": 2,
+                    "lookup": "lowercase token -> first two alphanumeric chars -> /api/body-shards/{prefix}.json",
+                    "generated_at": output.get("generated_at")}
+        (shard_dir / "manifest.json").write_text(json.dumps(manifest, indent=1), encoding="utf-8")
+        print(f"  ✓ api/body-shards/ ({len(shards)} shards)")
 
     print(f"  deposits indexed: {body_found}/{len(deposits)}")
     if body_missing:

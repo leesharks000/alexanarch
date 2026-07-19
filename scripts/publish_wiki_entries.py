@@ -91,12 +91,13 @@ def render_entry_page(entry: dict) -> str:
     jsonld = {
         "@context": "https://schema.org",
         "@type": "Article",
-        "@id": page_url,
+        "@id": record_url,
         "name": f"Wiki entry: {title}",
         "headline": title,
         "author": {"@type": "Person", "name": creator or "Lee Sharks"},
         "datePublished": date,
-        "url": page_url,
+        "url": record_url,
+        "mainEntityOfPage": record_url,
         "about": {"@type": "ScholarlyArticle", "url": record_url, "identifier": axn},
         "articleBody": wiki_body,
     }
@@ -109,7 +110,8 @@ def render_entry_page(entry: dict) -> str:
         f'<title>Wiki: {esc(title)} — Alexanarch</title>'
         f'<meta name="description" content="{esc(wiki_body[:160])}">'
         f'<script type="application/ld+json">{json.dumps(jsonld, ensure_ascii=False)}</script>'
-        f'<link rel="canonical" href="{page_url}">'
+        f'<link rel="canonical" href="{record_url}">'
+        '<meta name="robots" content="noindex,follow">'
         f'<meta name="citation_title" content="Wiki entry: {esc(title)}">'
         f'<meta name="citation_author" content="{esc(creator or "Lee Sharks")}">'
         f'<meta name="citation_publication_date" content="{esc(date)}">'
@@ -237,45 +239,19 @@ def render_index_page(entries: list) -> str:
 
 
 def update_sitemap(entries: list) -> None:
-    """Insert /s/wiki/{n}/ URLs into sitemap.xml, dedup on re-run."""
+    """Per-entry wiki URLs NO LONGER enter the sitemap (Canonical Record
+    Convergence P0.7, 2026-07-19): wiki pages canonicalize to their records
+    and carry noindex,follow, so listing them as crawl targets would be
+    contradictory. This function now REMOVES any legacy /s/wiki/{n}/ URLs
+    from sitemap.xml (idempotent)."""
     if not SITEMAP.exists():
-        print(f"  ! sitemap not found at {SITEMAP}")
         return
-    txt = SITEMAP.read_text(encoding="utf-8")
-
-    # Strip any prior per-entry wiki URLs (dedup for re-runs)
-    txt = re.sub(
-        r"[ \t]*<url><loc>https://alexanarch\.org/s/wiki/\d+/</loc>[^<]*(?:<[^>]+>[^<]*)*</url>\n?",
-        "",
-        txt,
-    )
-
-    # Inject after the /s/wiki/ index line
-    idx_re = re.compile(
-        r"(<url><loc>https://alexanarch\.org/s/wiki/</loc>[^<]*(?:<[^>]+>[^<]*)*</url>)"
-    )
-    m = idx_re.search(txt)
-    if not m:
-        insertion_point = txt.rfind("</urlset>")
-        header = txt[:insertion_point]
-        tail = txt[insertion_point:]
-    else:
-        header = txt[:m.end()]
-        tail = txt[m.end():]
-
-    lines = []
-    for e in sorted(entries, key=lambda x: x.get("n", 0)):
-        n = e.get("n")
-        if n is None:
-            continue
-        lines.append(
-            f'  <url><loc>https://alexanarch.org/s/wiki/{n}/</loc>'
-            f'<changefreq>monthly</changefreq><priority>0.6</priority></url>'
-        )
-    injection = "\n" + "\n".join(lines) + "\n"
-    SITEMAP.write_text(header + injection + tail, encoding="utf-8")
-    print(f"  ✓ sitemap updated with {len(lines)} wiki URLs")
-
+    import re as _re
+    xml = SITEMAP.read_text(encoding="utf-8")
+    cleaned = _re.sub(r'\s*<url><loc>https://alexanarch\.org/s/wiki/\d+/</loc>.*?</url>', '', xml)
+    if cleaned != xml:
+        SITEMAP.write_text(cleaned, encoding="utf-8")
+        print("  ✓ sitemap purged of per-entry wiki URLs (canonical lives at the record)")
 
 def main() -> int:
     print("Loading wiki-entries.json...")

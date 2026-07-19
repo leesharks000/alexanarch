@@ -28,6 +28,8 @@ input#q:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(
 .nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}
 .nav a{color:#777;font-weight:500;text-decoration:none}.nav a:hover{color:var(--accent)}
 .footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}
+.pill{font-size:.7em;border:1px solid var(--accent);border-radius:8px;padding:0 6px;margin-left:4px;color:var(--accent)}
+.hit{margin:.45em 0}
 </style>
 </head>
 <body>
@@ -36,7 +38,7 @@ input#q:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(
 <nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/book/">Book</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
 <!-- NAV-END -->
 <h1>Search</h1>
-<p class="hint">Token-level exact-match search over titles, descriptions, creators, series prefixes, keywords, and AXN identifiers across every deposit. Reads <a href="/api/search-index.json"><code>/api/search-index.json</code></a>. Machine consumers should fetch that JSON directly. For a crawler-readable projection, see <a href="/s/search/"><code>/s/search/</code></a>.</p>
+<p class="hint">Multiword search: every query token is required (AND) across metadata AND full body text of every deposit, via sharded postings (<a href="/api/body-shards/manifest.json"><code>/api/body-shards/</code></a>). Reads <a href="/api/search-index.json"><code>/api/search-index.json</code></a>. Machine consumers should fetch that JSON directly. For a crawler-readable projection, see <a href="/s/search/"><code>/s/search/</code></a>.</p>
 <input id="q" type="text" placeholder="Try: gw.tachyon, tether, EA-EROSION, sappho, 0421, provenance…" autofocus autocomplete="off" spellcheck="false">
 <div id="status" class="status">Loading index…</div>
 <div id="results"></div>
@@ -72,69 +74,90 @@ input#q:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(
     }
   }
 
-  function match(query) {
+  const shardCache = {};
+  async function shardFor(tok) {
+    let pref = (tok.slice(0,2).toLowerCase().replace(/[^a-z0-9]/g,''));
+    if (pref.length < 2) pref = (pref + '_').slice(0,2) || '__';
+    if (!(pref in shardCache)) {
+      try {
+        const r = await fetch('/api/body-shards/' + pref + '.json');
+        shardCache[pref] = r.ok ? await r.json() : {};
+      } catch (e) { shardCache[pref] = {}; }
+    }
+    return shardCache[pref];
+  }
+
+  function metaHits(tok) {
+    const out = new Set();
+    for (const table of [idx.index, idx.series_prefixes, idx.keyword_phrases]) {
+      if (!table) continue;
+      if (table[tok]) table[tok].forEach(n => out.add(n));
+    }
+    return out;
+  }
+
+  async function match(query) {
     const q = query.trim().toLowerCase();
     if (!q) return null;
-    const nums = new Set();
-    // Exact-match against every keyed table
-    const exactTables = [idx.index, idx.series_prefixes, idx.hex_labels, idx.creators, idx.content_types, idx.keywords];
-    for (const t of exactTables) {
-      if (t && t[q]) t[q].forEach(function(n) { nums.add(n); });
-      // Case-preserved tables need case-insensitive lookup too
-      if (t) {
-        for (const k in t) {
-          if (k.toLowerCase() === q) t[k].forEach(function(n) { nums.add(n); });
-        }
-      }
+    // token pass: AND-intersection across metadata + body, per token
+    const toks = q.split(/[^a-z0-9\u00c0-\uffff.\-:]+/).filter(t => t.length >= 2);
+    if (!toks.length) return { hits: [], sources: {}, toks: [] };
+    const perTok = [];
+    const sources = {};   // n -> Set(source labels)
+    for (const t of toks) {
+      const m = metaHits(t);
+      const shard = await shardFor(t);
+      const b = new Set(shard[t] || []);
+      const u = new Set([...m, ...b]);
+      perTok.push(u);
+      for (const n of m) (sources[n] = sources[n] || new Set()).add('metadata');
+      for (const n of b) (sources[n] = sources[n] || new Set()).add('body');
     }
-    // Substring fallback for series prefixes and generic tokens (typo-tolerance)
-    if (nums.size === 0) {
-      for (const t of [idx.series_prefixes, idx.keywords, idx.index]) {
-        if (!t) continue;
-        for (const k in t) {
-          if (k.toLowerCase().indexOf(q) !== -1) {
-            t[k].forEach(function(n) { nums.add(n); });
-          }
-        }
-      }
+    let inter = perTok[0];
+    for (const s of perTok.slice(1)) inter = new Set([...inter].filter(n => s.has(n)));
+    // exact identifier/title fallbacks widen (OR) when intersection is empty
+    if (!inter.size) {
+      const whole = metaHits(q);
+      if (whole.size) { inter = whole; for (const n of whole) (sources[n] = sources[n] || new Set()).add('exact'); }
     }
-    return Array.from(nums).sort(function(a, b) { return b - a; });
+    return { hits: [...inter], sources, toks };
   }
 
-  function esc(s) {
-    return String(s || '').replace(/[&<>"']/g, function(c) {
-      return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c];
-    });
+  function rank(n, srcs, toks) {
+    const d = browse[n] || {};
+    const title = (d.t || d.title || '').toLowerCase();
+    let s = 0;
+    if (srcs.has('exact')) s += 100;
+    if (srcs.has('metadata')) s += 10;
+    if (srcs.has('body')) s += 4;
+    for (const t of toks) if (title.includes(t)) s += 6;
+    return s;
   }
 
-  function render(query) {
-    const nums = match(query);
-    if (!nums) { $results.innerHTML = ''; return; }
-    if (nums.length === 0) {
-      $results.innerHTML = '<div class="empty">No matches. Try a shorter term, a series prefix like <code>gw.tachyon</code>, or a hex like <code>0421</code>.</div>';
-      return;
-    }
-    const cards = nums.slice(0, 200).map(function(n) {
-      const d = browse[n];
-      if (!d) {
-        return '<div class="result"><span class="num">#' + n + '</span> (metadata not in browse-index)</div>';
-      }
-      return '<div class="result">' +
-        '<span class="num">#' + n + '</span> · <span class="axn">' + esc(d.a) + '</span>' +
-        '<div class="title"><a href="/s/records/' + n + '/">' + esc(d.t) + '</a></div>' +
-        '<div class="meta">' + esc(d.c) + ' · ' + esc(d.d) + '</div>' +
-        (d.s ? '<div class="snippet">' + esc(d.s) + '</div>' : '') +
-        '</div>';
+  let seq = 0;
+  async function render(query) {
+    const my = ++seq;
+    $status.textContent = 'Searching…';
+    const res = await match(query);
+    if (my !== seq) return;
+    if (!res) { $status.textContent = 'Type to search.'; $results.innerHTML = ''; return; }
+    const rows = res.hits
+      .map(n => ({ n, srcs: res.sources[n] || new Set() }))
+      .sort((a, b) => rank(b.n, b.srcs, res.toks) - rank(a.n, a.srcs, res.toks))
+      .slice(0, 60);
+    $status.textContent = rows.length
+      ? rows.length + ' matching deposits (all query tokens required; sources labeled). Body search live across the full corpus.'
+      : 'No deposits contain every token. Fewer or different terms may help.';
+    $results.innerHTML = rows.map(({ n, srcs }) => {
+      const d = browse[n] || {};
+      const title = d.t || d.title || ('Deposit #' + n);
+      const axn = d.a || d.axn || '';
+      const lbl = [...srcs].map(s => '<span class="pill">' + s + '</span>').join(' ');
+      return '<div class="hit"><a href="/s/records/' + n + '/">#' + n + ' — ' +
+             title.replace(/</g,'&lt;') + '</a> <span class="axn">' + axn + '</span> ' + lbl + '</div>';
     }).join('');
-    const more = nums.length > 200
-      ? '<div class="empty">' + (nums.length - 200) + ' more matches; refine to see them.</div>'
-      : '';
-    $results.innerHTML =
-      '<div class="status">' + nums.length + ' match' + (nums.length === 1 ? '' : 'es') + '</div>' +
-      cards + more;
   }
 
-  let timer;
   $q.addEventListener('input', function() {
     clearTimeout(timer);
     timer = setTimeout(function() { render($q.value); }, 80);
