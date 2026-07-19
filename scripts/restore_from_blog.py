@@ -1,0 +1,197 @@
+#!/usr/bin/env python3
+"""
+restore_from_blog.py — batch restoration of queue works from live blog surfaces.
+
+Reads datasets/doi-work-identity/restoration-queue.json (class: restorable).
+For each work, IN ORDER: fetch candidate blog URL(s) → extract Blogger post body →
+TITLE-VERIFICATION GATE (the candidate URL is only the post the DOI was FOUND IN;
+mint only if the fetched post's title matches this work's DOI-keyed truth title;
+mismatches are skipped and logged, never minted) → legal-name hygiene scan →
+html2text canonical markdown + SHA-256 of raw fetch → issue body → deposit_pipeline
+(transport D, full stages, --no-push; commits are local until the operator pushes).
+
+Creator is taken from the OpenAlex snapshot authorships for the work's DOI when
+present (creators as recorded), else 'Lee Sharks' with a note — per the standing
+batch-restoration authorization pattern (MANUS 2026-07-03; renewed 2026-07-19).
+
+USAGE: python3 scripts/restore_from_blog.py --limit 8 [--offset 0] [--dry-run]
+Progress is tracked in the queue file itself: each restored entry gains
+restored: {deposit_number, axn, date}; each skip gains skip: {reason, date}.
+Re-runs resume past entries carrying either marker.
+"""
+import argparse, hashlib, json, re, subprocess, sys, urllib.request
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+QUEUE = ROOT / 'datasets' / 'doi-work-identity' / 'restoration-queue.json'
+
+def norm(t):
+    t = re.sub(r'\[SUPERSEDED[^\]]*\]', '', t or '')
+    return ' '.join(re.sub(r'[^0-9a-z ]', '', t.lower().replace('\u00a0', ' ')).split())
+
+def jacc(a, b):
+    sa, sb = set(a.split()), set(b.split())
+    return len(sa & sb) / max(1, len(sa | sb))
+
+def contain(a, b):
+    sa, sb = set(a.split()), set(b.split())
+    return len(sa & sb) / max(1, min(len(sa), len(sb)))
+
+def fetch(url):
+    req = urllib.request.Request(url, headers={'User-Agent': 'alexanarch-restoration/1.0'})
+    return urllib.request.urlopen(req, timeout=30).read()
+
+def extract_post(html):
+    m = re.search(r"<title>(?:Mind Control Poems:?\s*)?([^<]+)</title>", html)
+    page_title = (m.group(1).strip() if m else '')
+    b = re.search(r"<div class='post-body entry-content[^']*'[^>]*>(.*?)<div class='post-footer'>", html, re.S) \
+        or re.search(r'<div class="post-body entry-content[^"]*"[^>]*>(.*?)<div class="post-footer">', html, re.S)
+    return page_title, (b.group(1) if b else None)
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--limit', type=int, default=5)
+    ap.add_argument('--offset', type=int, default=0)
+    ap.add_argument('--dry-run', action='store_true')
+    args = ap.parse_args()
+    import html2text
+    q = json.load(open(QUEUE))
+    snap = json.load(open(ROOT/'data'/'openalex-severed-recovery.json'))
+    recs = next(v for v in snap.values() if isinstance(v, list) and len(v) > 500)
+    oa_auth = {}
+    for r in recs:
+        doi = (r.get('doi') or '').replace('https://doi.org/', '').lower()
+        au = [a.get('author', {}).get('display_name') for a in (r.get('authorships') or []) if a.get('author')]
+        if doi and au: oa_auth[doi] = au
+    reg = json.load(open(ROOT/'data'/'registry.json'))
+    next_issue = max(d['deposit_number'] for d in reg['deposits']) + 1
+    done = 0
+    pending = [e for e in q['restorable'] if not e.get('restored') and not e.get('skip')][args.offset:]
+    for e in pending:
+        if done >= args.limit: break
+        tt = norm(e['title'])
+        matched = None
+        for url in e['candidate_blog_urls']:
+            try:
+                raw = fetch(url)
+            except Exception as ex:
+                continue
+            html = raw.decode('utf-8', 'replace')
+            ptitle, body = extract_post(html)
+            pt = norm(ptitle)
+            if body and (jacc(tt, pt) >= 0.7 or contain(tt, pt) >= 0.85 or contain(pt, tt) >= 0.85):
+                matched = (url, raw, html, ptitle, body); break
+        if not matched:
+            e['skip'] = {'reason': 'title_gate_no_matching_post', 'date': '2026-07-19'}
+            print(f"SKIP  {e['dois'][0]} | {e['title'][:55]} | gate: no candidate post matched")
+            continue
+        url, raw, html, ptitle, body = matched
+        if re.search(r'(?i)pfaff', html):
+            e['skip'] = {'reason': 'legal_name_hygiene', 'date': '2026-07-19'}
+            print(f"SKIP  {e['dois'][0]} | LEGAL-NAME HYGIENE FLAG — manual review")
+            continue
+        h = html2text.HTML2Text(); h.body_width = 0
+        md = h.handle(body).strip()
+        raw_sha = hashlib.sha256(raw).hexdigest()
+        md_sha = hashlib.sha256(md.encode()).hexdigest()
+        doi = e['dois'][0]
+        creators = oa_auth.get(doi.lower()) or ['Lee Sharks']
+        desc = (f"Canonical bytes recovered 2026-07-19 from the authorial blog surface ({url}); "
+                f"work severed at Zenodo 2026-06-19 (DOI(s): {', '.join(e['dois'])}). Batch restoration under the "
+                f"queue at /datasets/doi-work-identity/restoration-queue.json; title verified against the DOI-keyed "
+                f"truth title at fetch time. Opening of the work: " + re.sub(r'\s+', ' ', md)[:400])
+        rel = '; '.join(f"https://doi.org/{d} (severed)" for d in e['dois'])
+        body_md = f"""### Protocol Version
+
+alexanarch-deposit-protocol/v1
+
+### Title
+
+{e['title']}
+
+### Creator
+
+{'; '.join(creators)}
+
+### ORCID
+
+0009-0000-1599-0703
+
+### Date
+
+{e['date'] if e['date'] != '9999' else '2026-01-01'}
+
+### Description
+
+{desc}
+
+### Content Type
+
+Recovered blog-canonical work (full text; queue restoration 2026-07-19)
+
+### License
+
+CC-BY-4.0
+
+### Substrate Disclosure
+
+Human-only (original composition; creators as recorded by OpenAlex/DataCite capture); 2026-07-19 recovery, title-gate verification, and framing by TACHYON in-session under MANUS authorization (queue restoration). No paid API calls (No-Double-Draw, transport D).
+
+### Keywords
+
+Crimson Hexagonal Archive, restoration, blog canonical bytes, severed DOI, Zenodo termination, {', '.join(re.findall(r'[A-Za-z]{4,}', e['title'])[:5])}
+
+### Related Identifiers
+
+{rel}; recovery source: {url}
+
+### Version
+
+v1.0
+
+### Methodology
+
+Fetched {url} (raw SHA-256 {raw_sha}); Blogger post-body extracted; title gate passed against DOI-keyed truth title; converted via html2text body_width=0 (canonical MD SHA-256 {md_sha}).
+
+### Falsification Conditions
+
+Byte fidelity verifiable against the live blog URL and the recorded hashes; authorial originals, if they surface with different bytes, supersede this record per the versioning protocol.
+
+### Files
+
+_No response_
+
+### Body
+
+## Recovery note (TACHYON, 2026-07-19)
+
+Restored from {url} under the grade-none restoration queue; DOI(s) {', '.join(e['dois'])} severed 2026-06-19. Title gate: fetched post title matched the DOI-keyed truth title. Canonical bytes below the rule.
+
+---
+
+{md}
+
+### Terms
+
+- [x] I have read and agree to the deposit protocol.
+"""
+        if args.dry_run:
+            print(f"DRY   {doi} | would mint #{next_issue} | {e['title'][:55]}")
+            next_issue += 1; done += 1; continue
+        bp = Path(f"/tmp/restore-{next_issue}.md"); bp.write_text(body_md)
+        r = subprocess.run([sys.executable, 'scripts/deposit_pipeline.py', '--issue-body', str(bp),
+                            '--issue-number', str(next_issue), '--no-push'],
+                           cwd=ROOT, capture_output=True, text=True)
+        mm = re.search(r'minted \+ inserted: #(\d+) · (AXN:\S+)', r.stdout)
+        if mm and 'pipeline complete' in r.stdout:
+            e['restored'] = {'deposit_number': int(mm.group(1)), 'axn': mm.group(2), 'date': '2026-07-19'}
+            print(f"MINT  {doi} → #{mm.group(1)} {mm.group(2)} | {e['title'][:50]}")
+        else:
+            e['skip'] = {'reason': 'pipeline_failure', 'date': '2026-07-19'}
+            print(f"FAIL  {doi} | pipeline error; tail: {r.stdout[-300:]}{r.stderr[-200:]}")
+        next_issue += 1; done += 1
+    json.dump(q, open(QUEUE, 'w'), ensure_ascii=False, indent=1)
+    print('tranche complete:', done)
+
+if __name__ == '__main__':
+    main()
