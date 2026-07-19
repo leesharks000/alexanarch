@@ -48,6 +48,35 @@ def extract_post(html):
         or re.search(r'<div class="post-body entry-content[^"]*"[^>]*>(.*?)<div class="post-footer">', html, re.S)
     return page_title, (b.group(1) if b else None)
 
+STOP = {'the','a','an','of','and','or','in','on','for','to','as','with','by','from','at','crimson','hexagon','archive'}
+
+def load_inventory():
+    p = ROOT/'datasets'/'doi-work-identity'/'blog-post-inventory.txt'
+    urls = [u.strip() for u in open(p) if u.strip()] if p.exists() else []
+    out = []
+    for u in urls:
+        slug = u.rsplit('/',1)[-1].replace('.html','')
+        out.append((u, set(t for t in slug.split('-') if t and t not in STOP)))
+    return out
+
+def slug_candidates(title, inventory, k=3):
+    tt = set(t for t in norm(title).split() if t not in STOP)
+    scored = []
+    for u, stoks in inventory:
+        ov = len(tt & stoks)
+        if ov >= 3 or (stoks and ov >= max(2, len(stoks)-1)):
+            scored.append((ov, u))
+    scored.sort(reverse=True)
+    return [u for _, u in scored[:k]]
+
+def body_gate(tt, md):
+    """Post body is the source of truth (authorial practice: in-place version overwrites;
+    post <title>/slug may be stale). Match truth-title tokens against the BODY HEAD only
+    (first ~800 normalized chars) so catalog posts that merely cite the title deeper in
+    the body do not false-match."""
+    head = norm(md[:1200])[:800]
+    return contain(tt, head) >= 0.75
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--limit', type=int, default=5)
@@ -55,6 +84,8 @@ def main():
     ap.add_argument('--dry-run', action='store_true')
     args = ap.parse_args()
     import html2text
+    global INVENTORY
+    INVENTORY = load_inventory()
     q = json.load(open(QUEUE))
     snap = json.load(open(ROOT/'data'/'openalex-severed-recovery.json'))
     recs = next(v for v in snap.values() if isinstance(v, list) and len(v) > 500)
@@ -71,18 +102,24 @@ def main():
         if done >= args.limit: break
         tt = norm(e['title'])
         matched = None
-        for url in e['candidate_blog_urls']:
+        h2 = html2text.HTML2Text(); h2.body_width = 0
+        candidates = slug_candidates(e['title'], INVENTORY) + [u for u in e['candidate_blog_urls'] if u]
+        seen = set()
+        for url in candidates:
+            if url in seen: continue
+            seen.add(url)
             try:
                 raw = fetch(url)
-            except Exception as ex:
+            except Exception:
                 continue
             html = raw.decode('utf-8', 'replace')
             ptitle, body = extract_post(html)
-            pt = norm(ptitle)
-            if body and (jacc(tt, pt) >= 0.7 or contain(tt, pt) >= 0.85 or contain(pt, tt) >= 0.85):
+            if not body: continue
+            md_probe = h2.handle(body).strip()
+            if body_gate(tt, md_probe):
                 matched = (url, raw, html, ptitle, body); break
         if not matched:
-            e['skip'] = {'reason': 'title_gate_no_matching_post', 'date': '2026-07-19'}
+            e['skip'] = {'reason': 'body_gate_no_matching_post', 'date': '2026-07-19'}
             print(f"SKIP  {e['dois'][0]} | {e['title'][:55]} | gate: no candidate post matched")
             continue
         url, raw, html, ptitle, body = matched
@@ -151,7 +188,7 @@ v1.0
 
 ### Methodology
 
-Fetched {url} (raw SHA-256 {raw_sha}); Blogger post-body extracted; title gate passed against DOI-keyed truth title; converted via html2text body_width=0 (canonical MD SHA-256 {md_sha}).
+Fetched {url} (raw SHA-256 {raw_sha}); Blogger post-body extracted; BODY-HEAD gate passed against the DOI-keyed truth title (post body is the source of truth per authorial practice: versioned posts were often overwritten in place without updating post title or slug). Converted via html2text body_width=0 (canonical MD SHA-256 {md_sha}). Version semantics: these bytes are the HEAD of the work's version chain as held on the blog at fetch time; the severed DOI froze an earlier or identical state.
 
 ### Falsification Conditions
 
@@ -165,7 +202,7 @@ _No response_
 
 ## Recovery note (TACHYON, 2026-07-19)
 
-Restored from {url} under the grade-none restoration queue; DOI(s) {', '.join(e['dois'])} severed 2026-06-19. Title gate: fetched post title matched the DOI-keyed truth title. Canonical bytes below the rule.
+Restored from {url} under the grade-none restoration queue; DOI(s) {', '.join(e['dois'])} severed 2026-06-19. Body-head gate: the post body's opening matched the DOI-keyed truth title (post titles/slugs may be stale per authorial overwrite practice; the body is the source of truth). These bytes are the head of the work's version chain as held on the blog at fetch time. Canonical bytes below the rule.
 
 ---
 
