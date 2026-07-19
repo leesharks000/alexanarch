@@ -268,6 +268,7 @@ def parse_issue_body(body: str) -> dict:
         "methodology": extract_field(body, "Methodology"),
         "falsification": extract_field(body, "Falsification Conditions"),
         "files": extract_field(body, "Files"),
+        "body": extract_field(body, "Body"),
         "terms": extract_field(body, "Terms"),
     }
 
@@ -699,6 +700,10 @@ def build_canonical_text(
             body_sections.append(render_attachment_section(att))
     if fields.get("files"):
         body_sections.append(f"## Files\n\n{fields['files']}\n")
+    if fields.get("body"):
+        # 2026-07-18: Body field carries depositor's canonical bytes for artifact-
+        # is-the-body deposits (poems, correspondence, spatial scores). Verbatim.
+        body_sections.append(fields["body"] + "\n")
 
     frontmatter = "\n".join(fm_lines)
     if keywords_yaml:

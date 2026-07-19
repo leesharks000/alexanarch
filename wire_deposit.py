@@ -188,7 +188,40 @@ def regenerate_static_page(d, eidx, registry=None):
                 raw = f.read()
             lines = raw.split('\n')
             ft_lines = []
+            in_pre = False
+            pre_buf = []
+            _img_re = re.compile(r'^!\[([^\]]*)\]\((/?data/attachments/[A-Za-z0-9._/\-]+)\)\s*$')
+            _pre_style = ('font-family:var(--mono);font-size:.82em;background:#f8f9fa;'
+                          'border:1px solid var(--border);border-radius:6px;padding:12px 14px;'
+                          'margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333')
             for line in lines:
+                stripped = line.strip()
+                if stripped.startswith('```'):
+                    if not in_pre:
+                        in_pre = True
+                        pre_buf = []
+                    else:
+                        pre_content = '\n'.join(esc(l) for l in pre_buf)
+                        ft_lines.append(f'<pre style="{_pre_style}">{pre_content}</pre>')
+                        in_pre = False
+                        pre_buf = []
+                    continue
+                if in_pre:
+                    pre_buf.append(line)
+                    continue
+                img_match = _img_re.match(stripped)
+                if img_match:
+                    alt = esc(img_match.group(1))
+                    src = img_match.group(2)
+                    if not src.startswith('/'):
+                        src = '/' + src
+                    ft_lines.append(
+                        f'<figure style="margin:16px 0;text-align:center">'
+                        f'<img src="{esc(src)}" alt="{alt}" '
+                        f'style="max-width:100%;height:auto;border:1px solid var(--border);border-radius:6px">'
+                        f'</figure>'
+                    )
+                    continue
                 line = esc(line)
                 if line.startswith('# '): ft_lines.append(f'<h1>{line[2:]}</h1>')
                 elif line.startswith('## '): ft_lines.append(f'<h2>{line[3:]}</h2>')
@@ -201,6 +234,9 @@ def regenerate_static_page(d, eidx, registry=None):
                     line = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', line)
                     ft_lines.append(f'<p>{line}</p>')
                 else: ft_lines.append('')
+            if in_pre and pre_buf:
+                pre_content = '\n'.join(esc(l) for l in pre_buf)
+                ft_lines.append(f'<pre style="{_pre_style}">{pre_content}</pre>')
             fulltext = '\n'.join(ft_lines)
     
     if not fulltext:
