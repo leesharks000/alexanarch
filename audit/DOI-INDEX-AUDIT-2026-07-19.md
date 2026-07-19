@@ -29,3 +29,25 @@ openalex-severed-recovery.json + datacite-full-backup.json; DOIs absent from bot
 `unverified` flag; every corrected row gets a title_verification note citing its OpenAlex work ID; sync_resolver +
 full validation in the same commit. Estimated one focused session. The remaining 1,094 mappings (not in the OpenAlex
 snapshot) get verified against the DataCite backup in the same pass.
+
+
+---
+
+## Remediation executed same session (index v3.4 → v3.5)
+
+`scripts/remediate_resolution_index.py` — DOI-keyed truth union (DataCite backup 963 + OpenAlex snapshot 844 +
+newly-found 21 + tombstone citation_texts), exact-title constraint with tiered fallback (full-token Jaccard ≥0.9 or
+≥0.7 with 0.15 gap; containment ≥0.9 for truncated titles), two-pass supersession-pointer resolution, non-Latin/short
+title guard. All prior values preserved per-row in `remediation_2026_07_19`.
+
+Final distribution: A exact-unique 164 · C fuzzy 556 · D containment 266 · S superseded-pointer 10 ·
+already-correct 280 · ambiguous-earliest 2 (duplicate-deposit pairs #238/#886, #282/#324 — flagged for MANUS) ·
+no-candidate 614 (titles corrected, prior targets retained flagged; includes works never restored and known
+foreign-DOI rows) · no-truth 34 · unmatchable non-Latin 12. 40 envelopes advanced no_successor_known →
+same_work_title_matched with evidence entries. Gates: validate_resolver PASS, parity OK (1938 keys, 1269 live),
+registry --strict 0 failures.
+
+**New identity artifact:** `datasets/doi-work-identity/doi-identity-map.json` — the DOI→work identity map that never
+previously existed; registered as 9th member of the dataset set. G10's member_count 7-vs-8 was itself a live
+PATHOLOGY-01 (the 2026-07-18 atlas pin added the member without bumping the count) — corrected in set.json v1.2,
+which also wires every member's `map` field to /datasets/dataflow-atlas/ per MANUS ruling 2026-07-19.
