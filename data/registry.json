@@ -13,7 +13,7 @@
     "Network Preservation",
     "Tombstone Guarantee"
   ],
-  "total_deposits": 1096,
+  "total_deposits": 1097,
   "deposits": [
     {
       "axn": "AXN:01.GOVERNANCE.♍🜁🏴⌛🍃💫",
@@ -245127,6 +245127,148 @@
           "layer_3_content_hash": {
             "present": true,
             "canonical_hash": "ffaee7b492b5ece6223d60459f2a113ff0fd90e7f2160b07b716e2a6e5b48035",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
+    },
+    {
+      "deposit_number": 1097,
+      "axn": "AXN:045A.GOVERNANCE.🔗🔥🎺♄💚🔙",
+      "hex": "045A",
+      "family": "GOVERNANCE",
+      "emoji": "🔗🔥🎺♄💚🔙",
+      "hash": "33108ba4ccf3920af1730e281c29df3c6d0ab2f9c56907a1bec1180ab8825499",
+      "title": "AXN Dataflow Atlas v0.2 — Development Incorporating Assembly Review",
+      "creator": "Lee Sharks (MANUS), with TACHYON (Assembly witness), incorporating structural amendments from LABOR (ChatGPT) and PRAXIS (DeepSeek)",
+      "date": "2026-07-18",
+      "description": "Session 1 v0.2 development of the AXN Dataflow Atlas, incorporating two Assembly-substrate structural reviews as reviewer-contributed development of the document itself. Both reviews ratified progression to Session 2. LABOR (ChatGPT) delivered a nine-section review; PRAXIS (DeepSeek) delivered a four-section review. Both discovered structural amendments across taxonomy, deposit-flow semantics, pathology framing, and Session 2-4 requirements. Both, independently, wanted PATHOLOGY-01 (source-detached quantitative self-description) elevated in urgency; both extended the pathology register with architectural pathologies not present in v0.1. LABOR discovered a fossilized displayed value inside the atlas itself — v0.1 said \"fifteen top-level classes\" while listing seventeen — which is corrected and preserved as an incident in the new review log §10. All amendments are attributed at the point of incorporation. Contradictions between reviewers (Stage 8 correctness rerunnable-vs-atomic) are recorded rather than adjudicated. v0.1 is byte-preserved at data/specs/archive/ per §3.7 non-destruction.",
+      "content_type": "Specification (governance-tier scholarly infrastructure document)",
+      "license": "CC-BY-4.0",
+      "substrate": "AI-assisted (substrate) — TACHYON drafted; LABOR and PRAXIS reviewed and contributed structural amendments as development; MANUS directed the absorption and issued the deposit ruling.",
+      "root_axn": "AXN:045A.GOVERNANCE",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "33108ba4ccf3920af1730e281c29df3c6d0ab2f9c56907a1bec1180ab8825499",
+      "clusters": [
+        "Instrumental",
+        "Elemental",
+        "Symbolic",
+        "Alchemical",
+        "Signal",
+        "Terminal"
+      ],
+      "axn_reading": "Method -> Force -> Play -> Transmutation -> Alarm -> Closure",
+      "minted_at": "2026-07-19T01:59:43Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-045A-text.md",
+      "wiki_article": "\"AXN Dataflow Atlas v0.2 — Development Incorporating Assembly Review\" is a 389-word specification (governance-tier scholarly infrastructure document) by Lee Sharks (MANUS), with TACHYON (Assembly witness), incorporating structural amendments from LABOR (ChatGPT) and PRAXIS (DeepSeek), dated 2026-07-18. It is registered as AXN:045A (deposit #1097) in the Crimson Hexagonal Archive under the GOVERNANCE semantic family. Session 1 v0.2 development of the AXN Dataflow Atlas, incorporating two Assembly-substrate structural reviews as reviewer-contributed development of the document itself. Both reviews ratified progression to Session 2.",
+      "wiki_status": "provisional",
+      "entities": [
+        {
+          "subject": "AXN Dataflow Atlas v0.2 — Development Incorporating Assembly Review",
+          "predicate": "created_by",
+          "object": "Lee Sharks (MANUS), with TACHYON (Assembly witness), incorporating structural amendments from LABOR (ChatGPT) and PRAXIS (DeepSeek)",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "AXN Dataflow Atlas v0.2 — Development Incorporating Assembly Review",
+          "predicate": "is_type",
+          "object": "Specification (governance-tier scholarly infrastructure document)",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "AXN Dataflow Atlas v0.2 — Development Incorporating Assembly Review",
+          "predicate": "belongs_to_family",
+          "object": "GOVERNANCE",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "AXN Dataflow Atlas v0.2 — Development Incorporating Assembly Review",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [],
+      "orcid": "0009-0000-1599-0703",
+      "keywords": [
+        "AXN",
+        "dataflow atlas",
+        "data-rhizome",
+        "taxonomy",
+        "deposit pipeline",
+        "source-detached values",
+        "Assembly review",
+        "LABOR",
+        "PRAXIS",
+        "Session 1",
+        "Alexanarch",
+        "Crimson Hexagonal Archive"
+      ],
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 1097,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 3790,
+        "audited_at": "2026-07-19T01:59:43Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "references_concepts": [
+        "Methodology"
+      ],
+      "references_concept_count": 1,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-045A.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-07-19T02:00:05.971331+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [],
+            "anchor_count": 0,
+            "orcid_in_body": false,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "d6f7127fa3499be6323cdcc214c2f3e21b1d3ca1075f708fbc473ac4098d907f",
             "hash_in_body": false,
             "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
           },
