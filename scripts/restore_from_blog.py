@@ -77,6 +77,27 @@ def body_gate(tt, md):
     head = norm(md[:1200])[:800]
     return contain(tt, head) >= 0.75
 
+
+def registry_existence_check(title, registry_deposits, threshold=0.72):
+    """ANCHOR-IN-THE-ARCHIVE GATE (2026-07-19): before minting any restoration,
+    search the existing registry for the work. Returns (deposit_number, jaccard)
+    of the best match at/above threshold, else None. A hit means the work may
+    already exist natively — do NOT mint; route to the duplicate-triage queue."""
+    import re as _re
+    def _toks(t):
+        t = _re.sub(r"\[SUPERSEDED[^\]]*\]", "", t or "")
+        t = _re.sub(r"(?i)(crimson hexagon(al)? archive|crimson hexagon)", "", t.lower())
+        return set(_re.sub(r"[^0-9a-z ]", "", t).split())
+    tt = _toks(title)
+    best = None
+    for d in registry_deposits:
+        ot = _toks(d.get("title", ""))
+        if not tt or not ot: continue
+        j = len(tt & ot) / len(tt | ot)
+        if j >= threshold and (best is None or j > best[1]):
+            best = (d["deposit_number"], round(j, 2))
+    return best
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--limit', type=int, default=5)
@@ -107,6 +128,11 @@ def main():
     pending = [e for e in q['restorable'] if not e.get('restored') and not e.get('skip')][args.offset:]
     for e in pending:
         if done >= args.limit: break
+        hit = registry_existence_check(e['title'], reg['deposits'])
+        if hit:
+            e['skip'] = {'reason': 'exists_in_registry', 'existing_deposit': hit[0], 'jaccard': hit[1], 'date': '2026-07-19'}
+            print(f"SKIP  {e['dois'][0]} | EXISTS as #{hit[0]} (j={hit[1]}) | {e['title'][:45]}")
+            continue
         tt = norm(e['title'])
         matched = None
         h2 = html2text.HTML2Text(); h2.body_width = 0

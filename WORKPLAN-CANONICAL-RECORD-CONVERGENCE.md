@@ -5,6 +5,13 @@
 
 ---
 
+
+## 0. ERRATUM (2026-07-19, same day, MANUS-caught)
+
+**The lacuna narrative in §1.1 below is FALSE and stands corrected.** All four files (#863–#866) exist in-repo; the 2026-07-17 audit and the 2026-07-19 diagnosis both tested leading-slash `full_text_path` values as absolute filesystem paths. The #864 blog "recovery" was redundant (original 45,363 bytes were never lost; canonical pointer restored; blog-derived file retained as mirror only). The body-index builder additionally never consulted `full_text_path` at all — now patched (text formats, 2MB cap after a 75MB-PDF poisoning near-miss on #344). Body index: **1404/1404, zero missing.**
+
+**Root failure MANUS identified:** documents were not checked against existing records as a matter of course. The restoration harnesses established identity by title-match against index truth titles with **no registry-existence gate**, producing ~29 suspected duplicates of prior deposits (3 certain at j=1.0), 6 tonight-internal pairs, and the OKF case (#1215 duplicating native #835; #1399/#1402 duplicating each other while the correspondence lives whole in #1088/#1090). Full triage table: `audit/DUPLICATE-MINT-AUDIT-2026-07-19.json` — disposition is a MANUS ruling (exact duplicates → duplicate-of/retirement; version siblings → series wiring; 16 needs-eyes rows). The **anchor-in-the-archive existence gate** is now installed in both harnesses: any mint candidate whose title matches the registry at j≥0.72 is refused with the existing deposit number recorded. The original assessment text below is preserved unamended per non-destruction.
+
 ## 1. TACHYON assessment of the LABOR audit
 
 **Concur on substance.** The audit's central verdict is correct: the archive succeeds at "one object, one complete static page" and fails at routing — internal body search, multiword retrieval, and canonical-identity consolidation. The remediation order (P0 routing → P1 composition → P2 object-range) is sound and adopted.

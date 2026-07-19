@@ -44,6 +44,27 @@ def parse_citation(ct):
     if vm: ver = vm.group(1); rest = rest[:vm.start()]
     return {'creators': m.group('au'), 'year': m.group('yr'), 'title': rest, 'version': ver}
 
+
+def registry_existence_check(title, registry_deposits, threshold=0.72):
+    """ANCHOR-IN-THE-ARCHIVE GATE (2026-07-19): before minting any restoration,
+    search the existing registry for the work. Returns (deposit_number, jaccard)
+    of the best match at/above threshold, else None. A hit means the work may
+    already exist natively — do NOT mint; route to the duplicate-triage queue."""
+    import re as _re
+    def _toks(t):
+        t = _re.sub(r"\[SUPERSEDED[^\]]*\]", "", t or "")
+        t = _re.sub(r"(?i)(crimson hexagon(al)? archive|crimson hexagon)", "", t.lower())
+        return set(_re.sub(r"[^0-9a-z ]", "", t).split())
+    tt = _toks(title)
+    best = None
+    for d in registry_deposits:
+        ot = _toks(d.get("title", ""))
+        if not tt or not ot: continue
+        j = len(tt & ot) / len(tt | ot)
+        if j >= threshold and (best is None or j > best[1]):
+            best = (d["deposit_number"], round(j, 2))
+    return best
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--dry-run', action='store_true')
@@ -64,6 +85,11 @@ def main():
         if e.get('restored') or done >= args.limit: continue
         if e.get('skip') and e['skip'].get('reason') != 'body_gate_no_matching_post': continue
         if e.get('skip') and not args.include_skipped: continue
+        hit = registry_existence_check(e['title'], reg['deposits'])
+        if hit:
+            e['skip'] = {'reason': 'exists_in_registry', 'existing_deposit': hit[0], 'jaccard': hit[1], 'date': '2026-07-19'}
+            print(f"SKIP  {e['dois'][0]} | EXISTS as #{hit[0]} (j={hit[1]}) | {e['title'][:45]}")
+            continue
         ds = [d.lower() for d in e['dois']]
         a = next((bydoi[d] for d in ds if d in bydoi), None)
         tb = next((tomb[d] for d in ds if d in tomb), None)

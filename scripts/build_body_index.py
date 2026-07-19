@@ -126,7 +126,7 @@ def _extract_capitalized_phrases(text: str) -> list[str]:
 
 TEXTS_DIR = REPO_ROOT / "data" / "texts"
 
-def _load_body(hex_id: str, dep_num: int) -> tuple[str, str]:
+def _load_body(hex_id: str, dep_num: int, ftp: str | None = None) -> tuple[str, str]:
     """Return (body_text, path_used) from the LONGEST body across BOTH stores.
 
     v2 fix (2026-07-17): data/texts/AXN-{hex}-text.md is the canonical
@@ -142,6 +142,12 @@ def _load_body(hex_id: str, dep_num: int) -> tuple[str, str]:
         if hex_id != hex_id.upper():
             candidates.append(DEPOSITS_DIR / f"AXN-{hex_id.upper()}.md")
     candidates.append(DEPOSITS_DIR / f"AXN-{dep_num}.md")
+    if ftp:  # registry full_text_path is authoritative; stored with leading slash = repo-relative.
+        # Text formats only (binary pointers like PDFs fall back to the conventional stores),
+        # capped at 2MB so index-scale data files cannot masquerade as bodies.
+        _p = REPO_ROOT / ftp.lstrip('/')
+        if _p.suffix.lower() in ('.md', '.txt', '.json') and _p.exists() and _p.stat().st_size < 2_000_000:
+            candidates.append(_p)
 
     best_text, best_path = "", ""
     for candidate in candidates:
@@ -179,7 +185,7 @@ def build(dry_run: bool = False, min_phrase_freq: int = 2) -> int:
             hex_id = axn.split(":")[1].split(".")[0]
         hex_id = hex_id or d.get("hex", "") or ""
 
-        body_text, used_path = _load_body(hex_id, n)
+        body_text, used_path = _load_body(hex_id, n, d.get('full_text_path'))
         if not body_text:
             body_missing.append(n)
             continue
