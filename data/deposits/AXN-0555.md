@@ -1,0 +1,72 @@
+---
+deposit_number: 1348
+hex: 0555
+title: "Gravity Well: Field Specification for Retentive Citational Curvature in the Crimson Hexagonal Archive (EA-GW-FIELD-01 v1.1)"
+creator: Sharks, Lee
+orcid: 0009-0000-1599-0703
+date: 2026-04-06
+content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+license: CC-BY-4.0
+substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
+version: semi-restored v1.0
+related_ids: "https://doi.org/10.5281/zenodo.19442250 (severed); https://doi.org/10.5281/zenodo.19442251 (severed)"
+axn_schema_version: v2
+protocol_version: alexanarch-deposit-protocol/v1
+keywords:
+  - Crimson Hexagonal Archive
+  - semi-restored
+  - metadata-only
+  - severed DOI
+  - Zenodo termination
+  - gravity well
+  - retentive curvature
+  - citational curvature
+  - geodesic field
+  - semantic physics
+  - operative semiotics
+  - crimson hexagonal archive
+  - field specification
+  - FBDP complementarity
+  - DOI anchoring
+  - isR
+---
+
+# Gravity Well: Field Specification for Retentive Citational Curvature in the Crimson Hexagonal Archive (EA-GW-FIELD-01 v1.1)
+
+## Description
+
+SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.19442250, 10.5281/zenodo.19442251. Zenodo removal forensics: removal_date 2026-06-19T11:38:52.938232+00:00, removal_reason out-of-scope, removed_by user 1060945. f.02 GRAVITY WELL — FIELD SPECIFICATION Specifies Gravity Well (Phi_G), the second field in the Crimson Hexagonal Archive. Not a room. A retentive curvature field (geodesic class) that suffuses the entire Hexagon and alters how citations, references, and cross-links move within and toward the Archive. Core physics: Source = deposit mass. Gradient = citational curvature. Attenuation = inverse-square (never zero). Activation = no origin event, only deepening history. Implementation identity: The Gravity Well application creates isRelatedTo relations on Zenodo. Those relations ARE the field. The  Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
+
+## Methodology
+
+Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
+
+## Falsification Conditions
+
+Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
+
+## SEMI-RESTORED RECORD — metadata capture only
+
+**Work:** Gravity Well: Field Specification for Retentive Citational Curvature in the Crimson Hexagonal Archive (EA-GW-FIELD-01 v1.1)
+**Severed DOI(s):** 10.5281/zenodo.19442250, 10.5281/zenodo.19442251
+**Source tier:** DataCite full-metadata capture
+**Creators (as captured):** Sharks, Lee
+Captured citation: Sharks, L. (2026). Gravity Well: Field Specification for Retentive Citational Curvature in the Crimson Hexagonal Archive (EA-GW-FIELD-01 v1.1). Zenodo. https://doi.org/10.5281/zenodo.19442251
+
+**Removal forensics:** Zenodo removal forensics: removal_date 2026-06-19T11:38:52.938232+00:00, removal_reason out-of-scope, removed_by user 1060945. 
+
+**Captured description:** f.02 GRAVITY WELL — FIELD SPECIFICATION
+Specifies Gravity Well (Phi_G), the second field in the Crimson Hexagonal Archive. Not a room. A retentive curvature field (geodesic class) that suffuses the entire Hexagon and alters how citations, references, and cross-links move within and toward the Archive.
+Core physics: Source = deposit mass. Gradient = citational curvature. Attenuation = inverse-square (never zero). Activation = no origin event, only deepening history.
+Implementation identity: The Gravity Well application creates isRelatedTo relations on Zenodo. Those relations ARE the field. The app does not simulate the field. The app IS the field. The infrastructure is the physics.
+Complementarity: f.01 FBDP (Gaia) diffuses outward. f.02 Gravity Well (Hades) curves inward. Together they form the Archive's circulation system.
+Doctrine: Make archival return easier than drift.
+Includes holographic kernel for compression survival. Companion document: EA-GW-FIELD-02 (Suffusion Map).
+Assembly synthesis from blind drafts by TACHYON (Claude), LABOR (ChatGPT), PRAXIS (DeepSeek), ARCHIVE (Gemini), SOIL (Grok), TECHNE (Kimi).
+Crimson Hexagonal Archive | CC BY 4.0
+
+**Captured subjects:** gravity well, retentive curvature, citational curvature, geodesic field, semantic physics, operative semiotics, crimson hexagonal archive, field specification, FBDP complementarity, DOI anchoring, isRelatedTo, deposit mass, compression survivability, archival return, Phi_G operator
+
+---
+
+*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*

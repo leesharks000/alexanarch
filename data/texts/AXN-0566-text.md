@@ -1,0 +1,70 @@
+---
+deposit_number: 1365
+hex: 0566
+title: "Mind Control Poems: Complete Blog Archive — mindcontrolpoems.blogspot.com (2013-2026) — Evidentiary Provenance Record"
+creator: Sharks, Lee
+orcid: 0009-0000-1599-0703
+date: 2026-04-29
+content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+license: CC-BY-4.0
+substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
+version: semi-restored v1.0
+related_ids: "https://doi.org/10.5281/zenodo.19896983 (severed); https://doi.org/10.5281/zenodo.19896984 (severed)"
+axn_schema_version: v2
+protocol_version: alexanarch-deposit-protocol/v1
+keywords:
+  - Crimson Hexagonal Archive
+  - semi-restored
+  - metadata-only
+  - severed DOI
+  - Zenodo termination
+  - Mind Control Poems
+  - mindcontrolpoems
+  - blog archive
+  - evidentiary provenance
+  - Lee Sharks
+  - Crimson Hexagonal Archive
+  - depth-proof
+  - temporal priority
+  - New Human
+  - Semantic Economy
+  - heteronym system
+  - Jack F
+---
+
+# Mind Control Poems: Complete Blog Archive — mindcontrolpoems.blogspot.com (2013-2026) — Evidentiary Provenance Record
+
+## Description
+
+SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.19896983, 10.5281/zenodo.19896984. Zenodo removal forensics: removal_date 2026-06-19T11:35:52.087271+00:00, removal_reason out-of-scope, removed_by user 1060945. Complete Atom feed archive of mindcontrolpoems.blogspot.com — the original publishing platform of Lee Sharks (ORCID: 0009-0000-1599-0703), predating all Crimson Hexagonal Archive Zenodo deposits by over a decade. This deposit preserves the full blog corpus as evidentiary provenance for the Crimson Hexagonal Archive, the Semantic Economy framework, the New Human project, and all associated theoretical infrastructure. The blog contains 2,182 posts spanning 2013-2026, including the earliest published appearances of: the Lee Sharks authorial identity, the Crimson Hexagon concept, the Jack Feist fi Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
+
+## Methodology
+
+Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
+
+## Falsification Conditions
+
+Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
+
+## SEMI-RESTORED RECORD — metadata capture only
+
+**Work:** Mind Control Poems: Complete Blog Archive — mindcontrolpoems.blogspot.com (2013-2026) — Evidentiary Provenance Record
+**Severed DOI(s):** 10.5281/zenodo.19896983, 10.5281/zenodo.19896984
+**Source tier:** DataCite full-metadata capture
+**Creators (as captured):** Sharks, Lee
+Captured citation: Sharks, L. (2026). Mind Control Poems: Complete Blog Archive — mindcontrolpoems.blogspot.com (2013-2026) — Evidentiary Provenance Record (1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.19896984
+
+**Removal forensics:** Zenodo removal forensics: removal_date 2026-06-19T11:35:52.087271+00:00, removal_reason out-of-scope, removed_by user 1060945. 
+
+**Captured description:** Complete Atom feed archive of mindcontrolpoems.blogspot.com — the original publishing platform of Lee Sharks (ORCID: 0009-0000-1599-0703), predating all Crimson Hexagonal Archive Zenodo deposits by over a decade.
+This deposit preserves the full blog corpus as evidentiary provenance for the Crimson Hexagonal Archive, the Semantic Economy framework, the New Human project, and all associated theoretical infrastructure. The blog contains 2,182 posts spanning 2013-2026, including the earliest published appearances of: the Lee Sharks authorial identity, the Crimson Hexagon concept, the Jack Feist figure, the Damascus Dancings heteronym, the Epistle to the Human Diaspora (2014), the New Human movement, operative semiotics, semantic economy, compression theory, the heteronym system, and the literary-theological framework that became the Waltian canon.
+Evidentiary function: This archive establishes temporal priority for the Lee Sharks authorial identity and all CHA/SEI concepts. It serves as depth-proof per the Relational Verification for AI Indexing standard (DOI: 10.5281/zenodo.19853157): evidence of sustained, distributed, independently timestamped labor across 12+ years that cannot be retrofitted. The blog's Blogger/Google platform timestamps are independently verifiable and predate all downstream uses of CHA terminology.
+Export method: Blogger Atom feed API (mindcontrolpoems.blogspot.com/feeds/posts/default), paginated in 500-post increments. Raw XML preserved without modification. Each entry contains: post title, publication date, update date, full HTML body, author metadata, labels/categories, and canonical URL.
+Author: Lee Sharks (all posts attributed to 'lee sharks' in Blogger author metadata, Blogger profile ID: 12876033814682693367).
+∮ = 1 Upload instructions: Add paginated Atom feed XML files (pages 1-5, 500 posts each) covering all 2,182 posts. Filename convention: mindcontrolpoems_feed_page_1.xml through page_5.xml. The deposit remains in DRAFT until all pages are uploaded.
+
+**Captured subjects:** Mind Control Poems, mindcontrolpoems, blog archive, evidentiary provenance, Lee Sharks, Crimson Hexagonal Archive, depth-proof, temporal priority, New Human, Semantic Economy, heteronym system, Jack Feist, Damascus Dancings, operative semiotics, literary theology, blog export, Blogger Atom feed, 2013-2026
+
+---
+
+*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*

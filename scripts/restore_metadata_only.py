@@ -48,14 +48,22 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--limit', type=int, default=100)
+    ap.add_argument('--include-skipped', action='store_true',
+                    help='also semi-restore restorable-class entries whose body gate found no surface')
     args = ap.parse_args()
     bydoi, tomb = load_sources()
     q = json.load(open(QUEUE))
     reg = json.load(open(ROOT/'data'/'registry.json'))
     next_issue = max(d['deposit_number'] for d in reg['deposits']) + 1
     done = 0
-    for e in q['metadata_only']:
-        if e.get('restored') or e.get('skip') or done >= args.limit: continue
+    targets = list(q['metadata_only'])
+    if args.include_skipped:
+        targets += [e for e in q['restorable']
+                    if e.get('skip', {}).get('reason') == 'body_gate_no_matching_post' and not e.get('restored')]
+    for e in targets:
+        if e.get('restored') or done >= args.limit: continue
+        if e.get('skip') and e['skip'].get('reason') != 'body_gate_no_matching_post': continue
+        if e.get('skip') and not args.include_skipped: continue
         ds = [d.lower() for d in e['dois']]
         a = next((bydoi[d] for d in ds if d in bydoi), None)
         tb = next((tomb[d] for d in ds if d in tomb), None)
@@ -186,6 +194,7 @@ _No response_
         if mm:
             e['restored'] = {'deposit_number': int(mm.group(1)), 'axn': mm.group(2),
                              'date': '2026-07-19', 'semi': True, 'stages_pending': True}
+            e.pop('skip', None)
             print(f"MINT  {e['dois'][0]} → #{mm.group(1)} ({tier.split()[0]}) | {title[:45]}")
         else:
             e['skip'] = {'reason': 'pipeline_failure', 'date': '2026-07-19'}

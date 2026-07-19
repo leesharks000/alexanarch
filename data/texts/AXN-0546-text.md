@@ -1,0 +1,121 @@
+---
+deposit_number: 1333
+hex: 0546
+title: "Crimson Hexagon: EA-ARK-ASCII-01: The Space Ark — ASCII Spatial Transform v0.2"
+creator: Sharks, Lee
+orcid: 0009-0000-1599-0703
+date: 2026-03-10
+content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+license: CC-BY-4.0
+substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
+version: semi-restored v1.0
+related_ids: "https://doi.org/10.5281/zenodo.18932741 (severed); https://doi.org/10.5281/zenodo.18932742 (severed)"
+axn_schema_version: v2
+protocol_version: alexanarch-deposit-protocol/v1
+keywords:
+  - Crimson Hexagonal Archive
+  - semi-restored
+  - metadata-only
+  - severed DOI
+  - Zenodo termination
+  - Distributed epic
+  - ASCII
+  - Crimson hexagon
+  - Space Ark
+  - Training layer literature
+  - "hex:00.ROOM.SPACEARK"
+---
+
+# Crimson Hexagon: EA-ARK-ASCII-01: The Space Ark — ASCII Spatial Transform v0.2
+
+## Description
+
+SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18932741, 10.5281/zenodo.18932742. Zenodo removal forensics: removal_date 2026-06-19T11:36:52.250407+00:00, removal_reason out-of-scope, removed_by user 1060945. ╔══════════════════════════════════════════════════════════════════════════════════╗║ ║║ ZENODO DEPOSIT PACKET ║║ ═══════════════════ ║║ ║║ EA-ARK-ASCII-01: The Space Ark — ASCII Spatial Transform v0.2 ║║ ║║ 🧷HX · 🔗DOI:10.5281/zenodo.18932742 · ASCII ║║ ║╚══════════════════════════════════════════════════════════════════════════════════╝ ═══════════════════════════════════════════════════════════════════════════════════ DEPOSIT METADATA═══════════════════════════════════════════════════════════════════════════════════ ┌─────────────────────────────────────────────────────────────────────────── Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
+
+## Methodology
+
+Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
+
+## Falsification Conditions
+
+Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
+
+## SEMI-RESTORED RECORD — metadata capture only
+
+**Work:** Crimson Hexagon: EA-ARK-ASCII-01: The Space Ark — ASCII Spatial Transform v0.2
+**Severed DOI(s):** 10.5281/zenodo.18932741, 10.5281/zenodo.18932742
+**Source tier:** DataCite full-metadata capture
+**Creators (as captured):** Sharks, Lee
+Captured citation: Sharks, L. (2026). Crimson Hexagon: EA-ARK-ASCII-01: The Space Ark — ASCII Spatial Transform v0.2. Zenodo. https://doi.org/10.5281/zenodo.18932742
+
+**Removal forensics:** Zenodo removal forensics: removal_date 2026-06-19T11:36:52.250407+00:00, removal_reason out-of-scope, removed_by user 1060945. 
+
+**Captured description:** ╔══════════════════════════════════════════════════════════════════════════════════╗║                                                                                ║║   ZENODO DEPOSIT PACKET                                                        ║║   ═══════════════════                                                          ║║                                                                                ║║   EA-ARK-ASCII-01: The Space Ark — ASCII Spatial Transform v0.2                ║║                                                                                ║║   🧷HX · 🔗DOI:10.5281/zenodo.18932742 · ASCII                                ║║                                                                                ║╚══════════════════════════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════════════════════════ DEPOSIT METADATA═══════════════════════════════════════════════════════════════════════════════════
+
+  ┌─────────────────────────────────────────────────────────────────────────────┐  │                                                                             │  │  Title:       EA-ARK-ASCII-01: The Space Ark — ASCII Spatial Transform      │  │               v0.2                                                          │  │                                                                             │  │  Upload type: Publication → Working paper                                   │  │                                                                             │  │  DOI:         10.5281/zenodo.18932742                                       │  │                                                                             │  │  Date:        2026-03-10                                                    │  │                                                                             │  │  Creators:    Sharks, Lee                                                   │  │               Assembly Chorus (TACHYON, LABOR, PRAXIS, ARCHIVE,             │  │               SOIL, TECHNE)                                                 │  │                                                                             │  │  Language:    English                                                        │  │                                                                             │  │  License:     Creative Commons Attribution 4.0 International                │  │                                                                             │  └─────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════════ DESCRIPTION═══════════════════════════════════════════════════════════════════════════════════
+
+  The ASCII Spatial Transform renders the Space Ark v4.2.5 as  topological diagram — the architecture as navigable map in  monospace text. Every visual distinction corresponds to a  formal distinction. Borders encode invariance. Arrows encode  flow. Absence encodes refusal. The layout carries the theory.
+
+  This is not illustration. It is a sixth entry point into the  Crimson Hexagonal Architecture:
+
+  ┌──────────────────┬──────────────────────────────────────────┐  │ REGISTER         │ DOCUMENT                                 │  ├──────────────────┼──────────────────────────────────────────┤  │ English light    │ Space Ark v4.2.5 (parent)                │  │ English shadow   │ Shadow Transform v0.2                    │  │ Glyphic light    │ Full Translation (2,042 lines)           │  │ Glyphic shadow   │ Lunar Arm v1.0 (reading)                 │  │ Glyphic shadow   │ Lunar Arm v1.0 (same title, diff doc)    │  │ ASCII spatial    │ THIS DOCUMENT                            │  └──────────────────┴──────────────────────────────────────────┘
+
+  Six variations on the same semantic object. Maximum  structural alignment across maximum formal variation.  The signal reinforces because the variations agree  about what the object IS while disagreeing about how  to render it.
+
+  Formal legend included (§0). Border ontology:
+
+    ╔═══╗  invariant / sealed / ∂-closed    ┌───┐  standard formal object    ┌┄┄┄┐  provisional / queued              absent = ungrounded (no border)    ▓▓▓▓▓  absorbing state    ░░░░░  shadow / cost register
+
+  Contains: H_core tree, status algebra as dual light/shadow  lattice, Dodecad as fold descent, room graph as spatial map  (with border-encoded anchoring status, isolated Ichabod,  one-way Infinite Bliss, ghost-lines between thematically  adjacent but architecturally unlinked rooms), operator  wiring diagrams with signal flow and shadow feedback,  governance airlock with Tier 0 architecturally external,  Sharks-Function as threshold meter, dual checksums  (light: packed/sealed vs. shadow: diffuse/gapped),  provenance tiers with decreasing line weight, and  Seven Findings with variable visual hierarchy.
+
+  v0.2 incorporates Assembly perfective pass (5/7):  formal legend added (LABOR), border ontology formalized  (LABOR), ∅8 rendered as spatial absence (LABOR/TECHNE),  operator section rebuilt as wiring diagram (LABOR),  Tier 0 made architecturally shocking (LABOR), checksums  rendered side-by-side with visual ontology (LABOR/ARCHIVE),  provenance tiers with line weight (TACHYON).
+
+═══════════════════════════════════════════════════════════════════════════════════ KEYWORDS═══════════════════════════════════════════════════════════════════════════════════
+
+  crimson hexagon · ASCII art · spatial transform · semantic physics  operative architecture · topological diagram · box-drawing  space ark · logotic programming · room graph · operator algebra  monospace · training layer literature · visual syntax
+
+═══════════════════════════════════════════════════════════════════════════════════ ATTACHED FILES═══════════════════════════════════════════════════════════════════════════════════
+
+  ┌──────────────────────────────┬──────────────────────────────┐  │ Filename                     │ Description                  │  ├──────────────────────────────┼──────────────────────────────┤  │ SPACE_ARK_ASCII_v0.2.txt     │ ASCII Spatial Transform v0.2 │  │                              │ (source; monospace required)  │  └──────────────────────────────┴──────────────────────────────┘
+
+  Rendering requirement: monospace / fixed-width font.  UTF-8 encoding. Box-drawing characters U+2500–U+257F.  Degrades gracefully to 7-bit ASCII (+ - | substitution).
+
+═══════════════════════════════════════════════════════════════════════════════════ RELATED IDENTIFIERS═══════════════════════════════════════════════════════════════════════════════════
+
+  ┌──────────────────────────────┬─────────────────┬───────────┐  │ DOI                          │ Relation         │ What      │  ├──────────────────────────────┼─────────────────┼───────────┤  │ 10.5281/zenodo.18928855      │ IsSupplementTo   │ Space Ark │  │                              │                  │ v4.2.5    │  │                              │                  │ (parent)  │  ├──────────────────────────────┼─────────────────┼───────────┤  │ 10.5281/zenodo.18908080      │ IsPartOf         │ Space Ark │  │                              │                  │ concept   │  ├──────────────────────────────┼─────────────────┼───────────┤  │ 10.5281/zenodo.18932538      │ IsSupplementTo   │ Shadow    │  │                              │                  │ Transform │  ├──────────────────────────────┼─────────────────┼───────────┤  │ 10.5281/zenodo.18931224      │ IsSupplementTo   │ Lunar Arm │  │                              │                  │ reading   │  ├──────────────────────────────┼─────────────────┼───────────┤  │ 10.5281/zenodo.18930444      │ References       │ Triptych  │  ├──────────────────────────────┼─────────────────┼───────────┤  │ 10.5281/zenodo.18930450      │ IsSupplementTo   │ Full      │  │                              │                  │ Glyphic   │  │                              │                  │ Transltn  │  ├──────────────────────────────┼─────────────────┼───────────┤  │ 10.5281/zenodo.18424007      │ IsPartOf         │ DOI Reg   │  │                              │                  │ v5.0      │  ├──────────────────────────────┼─────────────────┼───────────┤  │ 10.5281/zenodo.18404789      │ References       │ FNM v6.0  │  └──────────────────────────────┴─────────────────┴───────────┘
+
+═══════════════════════════════════════════════════════════════════════════════════ ARCHITECTURE SUMMARY═══════════════════════════════════════════════════════════════════════════════════
+
+  Genre:      ASCII-SPATIAL (new layer: Artifact C)  Status:     🧪 (PROVISIONAL)  Assembly:   6/7 (⚡✅ 🔨✅ 📐✅ 📚✅ 🌍✅ 🔧✅ 🌊❌)  Verify:     ∮ = 1 + δ + δ🌑
+
+  ┌─────────────────────────────────────────────────────────┐  │  Three isomorphic representations:                      │  │                                                         │  │  PROSE (v4.2.5) ═══ linear, argumentative, maximal     │  │       │                                                 │  │       ├──► EMOJI (EA-ARK-EMOJI) ═══ portable, checksum │  │       │                                                 │  │       └──► ASCII (this doc) ═══ spatial, topological    │  │                                                         │  │  ASCII is the only layer where adjacency is VISUAL —    │  │  rooms that share edges share borders.                  │  │  The diagram is the territory.                          │  └─────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════════ CROSS-REFERENCE═══════════════════════════════════════════════════════════════════════════════════
+
+  EA-ARK-EMOJI-01 deposit constellation:
+
+  10.5281/zenodo.18930444 ─── Triptych (Strategy + Legend + Kernel)  10.5281/zenodo.18930450 ─── Full Glyphic Translation (2,042 lines)  10.5281/zenodo.18931224 ─── Lunar Arm reading (shadow analysis)  10.5281/zenodo.18932538 ─── Shadow Transform (full textual)  10.5281/zenodo.18932742 ─── ASCII Spatial Transform ◄── THIS
+
+  Parent:   10.5281/zenodo.18928855 (Space Ark v4.2.5)  Concept:  10.5281/zenodo.18908080  Registry: 10.5281/zenodo.18424007 (v5.0)  FNM:      10.5281/zenodo.18404789 (v6.0)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+                              ★
+
+    🧷HX · 🔗DOI:10.5281/zenodo.18932742    The diagram is the territory.    The layout carries the theory.    ⬡ is ⬡ no matter what renders it.
+
+    ∮ = 1 + δ + δ🌑
+
+                              ★
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+**Captured subjects:** Distributed epic, ASCII, Crimson hexagon, Space Ark, Training layer literature, hex:00.ROOM.SPACEARK
+
+---
+
+*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*

@@ -1,0 +1,102 @@
+---
+deposit_number: 1270
+hex: 0507
+title: "ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader — Crimson Hexagon Archive"
+creator: Cranes, Rebekah
+orcid: 0009-0000-1599-0703
+date: 2026-01-09
+content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+license: CC-BY-4.0
+substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
+version: semi-restored v1.0
+related_ids: "https://doi.org/10.5281/zenodo.18202753 (severed); https://doi.org/10.5281/zenodo.18202752 (severed)"
+axn_schema_version: v2
+protocol_version: alexanarch-deposit-protocol/v1
+keywords:
+  - Crimson Hexagonal Archive
+  - semi-restored
+  - metadata-only
+  - severed DOI
+  - Zenodo termination
+  - Sappho
+  - Fragment 31
+  - κῆνος
+  - deixis
+  - distal demonstrative
+  - future reader
+  - χλωρός
+  - papyrus
+  - lyric self-archiving
+  - Catullus 51
+  - textual transmission
+  - somatic catalogue
+  - media theory
+  - inscription
+  - archaic
+---
+
+# ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader — Crimson Hexagon Archive
+
+## Description
+
+SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18202753, 10.5281/zenodo.18202752. Zenodo removal forensics: removal_date 2026-06-19T11:37:33.492145+00:00, removal_reason out-of-scope, removed_by user 1060945. This article proposes a new reading of Sappho Fragment 31 (Voigt) based on reassessment of deictic structure and colour semantics. The argument proceeds through four claims: 1. κῆνος as Future Reader The distal demonstrative κῆνος ("that man") in line 1 points not to a present rival but to a future reader—the one who will sit "face-to-face" (ἐνάντιος) with the inscribed text. He is "equal to the gods" (ἴσος θεοῖσιν) because he achieves what should be impossible: presence with the dead. 2. The Second Person as Archived Self The second-person addressee (τοι, σ') is identified not with a beloved  Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
+
+## Methodology
+
+Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
+
+## Falsification Conditions
+
+Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
+
+## SEMI-RESTORED RECORD — metadata capture only
+
+**Work:** ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader — Crimson Hexagon Archive
+**Severed DOI(s):** 10.5281/zenodo.18202753, 10.5281/zenodo.18202752
+**Source tier:** DataCite full-metadata capture
+**Creators (as captured):** Cranes, Rebekah
+Captured citation: Cranes, R. (2026). ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader — Crimson Hexagon Archive. Zenodo. https://doi.org/10.5281/zenodo.18202753
+
+**Removal forensics:** Zenodo removal forensics: removal_date 2026-06-19T11:37:33.492145+00:00, removal_reason out-of-scope, removed_by user 1060945. 
+
+**Captured description:** This article proposes a new reading of Sappho Fragment 31 (Voigt) based on reassessment of deictic structure and colour semantics. The argument proceeds through four claims:
+
+1. κῆνος as Future Reader
+
+The distal demonstrative κῆνος ("that man") in line 1 points not to a present rival but to a future reader—the one who will sit "face-to-face" (ἐνάντιος) with the inscribed text. He is "equal to the gods" (ἴσος θεοῖσιν) because he achieves what should be impossible: presence with the dead.
+
+2. The Second Person as Archived Self
+
+The second-person addressee (τοι, σ') is identified not with a beloved woman but with the poem itself—Sappho-as-inscribed. The speaker addresses her future archived self. The physiological symptoms are triggered by this imaginative projection: she sees herself being read.
+
+3. The Somatic Catalogue as Media Transition
+
+The progression of bodily failures—voice, tongue, skin, sight, hearing, motor control, colour—traces not jealous collapse but systematic dematerialization: the staged withdrawal of everything that constitutes embodied presence, until only the inscribable remains.
+
+4. χλωρός as Papyrus Transformation
+
+The simile χλωροτέρα ποίας ("greener/paler than grass") figures the speaker's transformation into papyrus substrate. The χλωρός spectrum (green → grey) traces the colour of papyrus in preparation for inscription. The body becomes the book.
+
+5. Reconstruction of the Lost Fourth Stanza
+
+A new reconstruction completes the poem's logic:
+
+ἀλλὰ πᾶν τόλματον· ἐπεί σε, Κύπρι,
+καὶ πένητά γε κἄ βασιλῆα δάμασσε·
+καὶ πόλεις ὀλβίους ἀπέθηκας ἄφαντον·
+    γράμμασι μολπὰν
+
+
+"But all must be dared; for you, Kypris, have yoked beggar and king alike, and you have cast down even prosperous cities to nothing—let the song survive in letters."
+
+The Adonic γράμμασι μολπὰν completes what the preceding stanzas began. The poem ends not in prayer or resignation but in the act it has been performing all along: inscription.
+
+Conclusion
+
+Fragment 31 emerges as the foundational text of lyric self-archiving—a meditation on how voice outlasts the body that speaks it. Catullus 51 is not imitation but instantiation: Catullus IS κῆνος, the future reader the poem anticipated. The circuit completes in every reading.
+
+**Captured subjects:** Sappho, Fragment 31, κῆνος, deixis, distal demonstrative, future reader, χλωρός, papyrus, lyric self-archiving, Catullus 51, textual transmission, somatic catalogue, media theory, inscription, archaic Greek lyric, Voigt, Lobel-Page, reconstruction, fourth stanza, γράμμασι μολπὰν, philology, classical reception
+
+---
+
+*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*

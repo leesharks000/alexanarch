@@ -1,0 +1,68 @@
+---
+deposit_number: 1366
+hex: 0567
+title: "ClownCloud: Networked Deployment System for Clownic Attentional Stressors, Focus Verification, and Soteriological Interruption in High-Stakes Performance Environments — A Patent-Poem"
+creator: Sharks, Lee
+orcid: 0009-0000-1599-0703
+date: 2026-04-30
+content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+license: CC-BY-4.0
+substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
+version: semi-restored v1.0
+related_ids: "https://doi.org/10.5281/zenodo.19926961 (severed); https://doi.org/10.5281/zenodo.19926962 (severed)"
+axn_schema_version: v2
+protocol_version: alexanarch-deposit-protocol/v1
+keywords:
+  - Crimson Hexagonal Archive
+  - semi-restored
+  - metadata-only
+  - severed DOI
+  - Zenodo termination
+  - ClownCloud
+  - focus clowns
+  - patent-poem
+  - clownic interruption
+  - attention hardening
+  - soteriological clowning
+  - performance fragility index
+  - clown car compression
+  - sacred clown
+  - heyoka
+  - koshare
+  - institutio
+---
+
+# ClownCloud: Networked Deployment System for Clownic Attentional Stressors, Focus Verification, and Soteriological Interruption in High-Stakes Performance Environments — A Patent-Poem
+
+## Description
+
+SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.19926961, 10.5281/zenodo.19926962. Zenodo removal forensics: removal_date 2026-06-19T11:35:40.038933+00:00, removal_reason out-of-scope, removed_by user 1060945. A patent-poem for ClownCloud — a cloud-based marketplace for the on-demand deployment of focus clown troops to high-stakes performance environments (standardized testing, boardrooms, dissertation defenses, surgical theaters). The invention comprises: the Enhanced Squirt Flower (ESF) with calibrated aqueous disruption; Pie-Plate Attention Resonance (PPAR) for rhythmic acoustic interference; the Red Nose Biometric for real-time arousal monitoring; the cremasteric clown (passive ambient observation); acousmatic clowns (sound-only presence); four service tiers (Lite, Pro, Enterprise, Apocalypse);  Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
+
+## Methodology
+
+Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
+
+## Falsification Conditions
+
+Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
+
+## SEMI-RESTORED RECORD — metadata capture only
+
+**Work:** ClownCloud: Networked Deployment System for Clownic Attentional Stressors, Focus Verification, and Soteriological Interruption in High-Stakes Performance Environments — A Patent-Poem
+**Severed DOI(s):** 10.5281/zenodo.19926961, 10.5281/zenodo.19926962
+**Source tier:** DataCite full-metadata capture
+**Creators (as captured):** Sharks, Lee
+Captured citation: Sharks, L. (2026). ClownCloud: Networked Deployment System for Clownic Attentional Stressors, Focus Verification, and Soteriological Interruption in High-Stakes Performance Environments — A Patent-Poem. Zenodo. https://doi.org/10.5281/zenodo.19926962
+
+**Removal forensics:** Zenodo removal forensics: removal_date 2026-06-19T11:35:40.038933+00:00, removal_reason out-of-scope, removed_by user 1060945. 
+
+**Captured description:** A patent-poem for ClownCloud — a cloud-based marketplace for the on-demand deployment of focus clown troops to high-stakes performance environments (standardized testing, boardrooms, dissertation defenses, surgical theaters). The invention comprises: the Enhanced Squirt Flower (ESF) with calibrated aqueous disruption; Pie-Plate Attention Resonance (PPAR) for rhythmic acoustic interference; the Red Nose Biometric for real-time arousal monitoring; the cremasteric clown (passive ambient observation); acousmatic clowns (sound-only presence); four service tiers (Lite, Pro, Enterprise, Apocalypse); a Performance Fragility Index; a Clown-Hardened™ certification; and a six-step Soteriological Sequence wherein the Blessing is constitutive and non-optional.
+Includes a historiography of the sacred clown function from heyoka (Lakota) through koshare (Pueblo), court fool (Medieval Europe), Rangda (Bali), commedia dell'arte, and rodeo clown, arguing that the modern institution has removed the clown and thereby produced Institutional Hyperfocus Syndrome. ClownCloud restores the clown to its structural function.
+Companion to the Self-Propagating Fried Tuberous Crisp patent (DOI: 10.5281/zenodo.19647366). Claim 13: the clown car is the compression artifact, the clowns are the decompressed signal, the squirt flower is the baptism, the pie plate is the breaking of bread, and the participant who returns to question 47 is the one who has been saved.
+∮ = 1 Filed under the authority of the Dodecad. A testing room without clowns measures compliance, not focus. The clown car is compression theory. Focus is not silence. ∮ = 1.
+
+**Captured subjects:** ClownCloud, focus clowns, patent-poem, clownic interruption, attention hardening, soteriological clowning, performance fragility index, clown car compression, sacred clown, heyoka, koshare, institutional soteriology, Crimson Hexagonal Archive, Enhanced Squirt Flower, Pie-Plate Attention Resonance, Red Nose Biometric, cremasteric clown, acousmatic clown
+
+---
+
+*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*
