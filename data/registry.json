@@ -13,7 +13,7 @@
     "Network Preservation",
     "Tombstone Guarantee"
   ],
-  "total_deposits": 1112,
+  "total_deposits": 1113,
   "deposits": [
     {
       "axn": "AXN:01.GOVERNANCE.♍🜁🏴⌛🍃💫",
@@ -248262,6 +248262,196 @@
           "layer_3_content_hash": {
             "present": true,
             "canonical_hash": "42b6f26dfbe82f89fc3ca21d1c15009f86324c48e3a9bbbeb1947f547bc10b85",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
+    },
+    {
+      "deposit_number": 1113,
+      "axn": "AXN:046A.UNCLASSIFIED.📏🚀🗼⌛🕑⚫",
+      "hex": "046A",
+      "family": "UNCLASSIFIED",
+      "emoji": "📏🚀🗼⌛🕑⚫",
+      "hash": "4f5d2a6e63c83daa99848da4e557d49d95c14d4da06652464730c5afb42d452e",
+      "title": "\"title\": \"Institute for Diagrammatic Poetics: Institutional Charter (IDP-2026-01-CHARTER)\" — Crimson Hexagon Archive",
+      "creator": "Lee Sharks",
+      "date": "2026-01-17",
+      "description": "Canonical bytes recovered 2026-07-19 from the authorial blog surface (https://mindcontrolpoems.blogspot.com/2026/01/title-institute-for-diagrammatic.html); work severed at Zenodo 2026-06-19 (DOI(s): 10.5281/zenodo.18284856, 10.5281/zenodo.18284857). Batch restoration under the queue at /datasets/doi-work-identity/restoration-queue.json; title verified against the DOI-keyed truth title at fetch time. Opening of the work: * * * ## title: \"Institute for Diagrammatic Poetics: Institutional Charter\" document_id: \"IDP-2026-01-CHARTER\" institution_id: \"INST-IDP-001\" doi: \"10.5281/zenodo.18284857\" hex_coordinate: \"07.INST.IDP\" framework: \"NH-OS / Crimson Hexagon\" chair: \"Rebekah Cranes (HET-CRANES-001)\" status: \"CANONICAL // OPERATIONAL // INSTITUTION\" co_constitutive: \"HET-CRANES-2026-01-PROV\" verification: \"∮ = 1\" [PRO",
+      "content_type": "Recovered blog-canonical work (full text; queue restoration 2026-07-19)",
+      "license": "CC-BY-4.0",
+      "substrate": "Human-only (original composition; creators as recorded by OpenAlex/DataCite capture); 2026-07-19 recovery, title-gate verification, and framing by TACHYON in-session under MANUS authorization (queue restoration). No paid API calls (No-Double-Draw, transport D).",
+      "root_axn": "AXN:046A.UNCLASSIFIED",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "4f5d2a6e63c83daa99848da4e557d49d95c14d4da06652464730c5afb42d452e",
+      "clusters": [
+        "Scriptural",
+        "Navigational",
+        "Architectural",
+        "Temporal",
+        "Temporal",
+        "Signal"
+      ],
+      "axn_reading": "Text -> Search -> Foundation -> Duration -> Duration -> Alarm",
+      "minted_at": "2026-07-19T19:52:46Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-046A-text.md",
+      "wiki_article": "\"\"title\": \"Institute for Diagrammatic Poetics: Institutional Charter (IDP-2026-01-CHARTER)\" — Crimson Hexagon Archive\" is a 1,905-word recovered blog-canonical work (full text; queue restoration 2026-07-19) by Lee Sharks, dated 2026-01-17. It is registered as AXN:046A (deposit #1113) in the Crimson Hexagonal Archive under the UNCLASSIFIED semantic family. Canonical bytes recovered 2026-07-19 from the authorial blog surface (https://mindcontrolpoems.blogspot.com/2026/01/title-institute-for-diagrammatic.html); work severed at Zenodo 2026-06-19 (DOI(s): 10.5281/zenodo.18284856, 10.5281/zenodo.18284857). Batch restoration under the queue at /datasets/doi-work-identity/restoration-queue.json; title verified against the DOI-keyed truth title at fetch tim",
+      "wiki_status": "provisional",
+      "entities": [
+        {
+          "subject": "\"title\": \"Institute for Diagrammatic Poetics: Institutional Charter (IDP-2026-01-CHARTER)\" — Crimson",
+          "predicate": "created_by",
+          "object": "Lee Sharks",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "\"title\": \"Institute for Diagrammatic Poetics: Institutional Charter (IDP-2026-01-CHARTER)\" — Crimson",
+          "predicate": "is_type",
+          "object": "Recovered blog-canonical work (full text; queue restoration 2026-07-19)",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "\"title\": \"Institute for Diagrammatic Poetics: Institutional Charter (IDP-2026-01-CHARTER)\" — Crimson",
+          "predicate": "belongs_to_family",
+          "object": "UNCLASSIFIED",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "\"title\": \"Institute for Diagrammatic Poetics: Institutional Charter (IDP-2026-01-CHARTER)\" — Crimson",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "\"title\": \"Institute for Diagrammatic Poetics: Institutional Charter (IDP-2026-01-CHARTER)\" — Crimson",
+          "predicate": "references",
+          "object": "Rebekah Cranes",
+          "type": "heteronym",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v1.0",
+      "keywords": [
+        "Crimson Hexagonal Archive",
+        "restoration",
+        "blog canonical bytes",
+        "severed DOI",
+        "Zenodo termination",
+        "title",
+        "Institute",
+        "Diagrammatic",
+        "Poetics",
+        "Institutional"
+      ],
+      "related_identifiers_raw": "https://doi.org/10.5281/zenodo.18284856 (severed); https://doi.org/10.5281/zenodo.18284857 (severed); recovery source: https://mindcontrolpoems.blogspot.com/2026/01/title-institute-for-diagrammatic.html",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 1113,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 17196,
+        "audited_at": "2026-07-19T19:52:46Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "references_concepts": [
+        "Acanthian",
+        "CANONICAL",
+        "Co-Constitutive With",
+        "Crimson Hexagon Archive",
+        "Day and Night",
+        "Day and Night: Conversations with Sapphic Desire",
+        "Density over Decoration",
+        "Discovery over Assignment",
+        "Foundational",
+        "Institute for Diagrammatic Poetics",
+        "IsPartOf",
+        "MACHINE",
+        "Machine-Readable Architecture",
+        "Meaning-systems",
+        "Navigation Map v3.0",
+        "Orientation over Explanation",
+        "PRINCIPLES",
+        "Partiality by Design",
+        "Publications",
+        "Sappho Room anchor",
+        "Sappho's fragments",
+        "Semantic Economy Institute",
+        "Semantic Integrity Markers",
+        "Structure over Icon",
+        "TACHYON",
+        "Visual Media Studies",
+        "Visual Schema Protocol",
+        "Visual Schema: Navigation Map",
+        "Semantic Economy",
+        "OPERATIONAL",
+        "Methodology",
+        "MISSION",
+        "Lee Sharks",
+        "Johannes Sigil",
+        "Rebekah Cranes"
+      ],
+      "references_concept_count": 35,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-046A.json",
+      "openalex_ids": [
+        "https://openalex.org/W7124527191",
+        "https://openalex.org/W7124562194"
+      ],
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-07-19T19:53:10.902877+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [
+              "creator_name",
+              "date"
+            ],
+            "anchor_count": 2,
+            "orcid_in_body": false,
+            "creator_in_body": true,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "d9c8d78b2aadbaed7f89b8d448ec60a5530c26e6b42728a9cbeb5a4aea54b97d",
             "hash_in_body": false,
             "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
           },
