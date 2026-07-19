@@ -1,9 +1,9 @@
 {
  "set": "alexanarch-dataset-set",
- "version": "v1.0",
- "date": "2026-07-12",
+ "version": "v1.1",
+ "date": "2026-07-18",
  "canonical": "/datasets/set.json",
- "description": "The datasets of the Alexanarch corpus, published as a mutually-referencing set: any instance encountering one member should treat the as a whole. The Zenodo/DataCite Batch and the Tombstone Mirror are paired instruments — the reference frame before the 2026-06-19 severance and the mirror of what the platform serves after it. The Heteronyms dataset is the authorial substrate of the severed corpus; the classical and New Human datasets are the philological ground.",
+ "description": "The datasets of the Alexanarch corpus, published as a mutually-referencing set: any instance encountering one member should treat the as a whole. The Zenodo/DataCite Batch and the Tombstone Mirror are paired instruments — the reference frame before the 2026-06-19 severance and the mirror of what the platform serves after it. The Heteronyms dataset is the authorial substrate of the severed corpus; the classical and New Human datasets are the philological ground. The Dataflow Atlas is the meta-dataset: the archive turning its instruments on its own data layer.",
  "members": [
   {
    "name": "tombstone-mirror",
@@ -53,6 +53,13 @@
    "path": "/datasets/negshape-deletion-bibliography/",
    "manifest": "/datasets/negshape-deletion-bibliography/manifest.json",
    "summary": "Appendices A–B of EA-NEGSHAPE-01 v0.2 (#1075): the 2026-06-19 bulk deletion constituted as a formal bibliographic container (CHA-DELETION-CORPUS-20260619); 1,834 identifier entries, 1,621 membership-confirmed, 6,484 formal citations in four formats; bibliographic matrix at 99.98% core-field coverage with per-cell metadata provenance and per-row membership provenance; rejected-candidate ledger of 68 heteronym/name-string collisions; both generators included."
+  },
+  {
+   "name": "dataflow-atlas",
+   "title": "The AXN Dataflow Atlas — Session 1",
+   "path": "/datasets/dataflow-atlas/",
+   "manifest": "/datasets/dataflow-atlas/manifest.json",
+   "summary": "Session-1 output of the AXN Dataflow Atlas workstream (Flow 2 of the six-flow workplan). v0.2 atlas incorporating two Assembly reviews (LABOR from ChatGPT and PRAXIS from DeepSeek), byte-preserved v0.1 predecessor, both reviews as received, and the three raw inventories (rhizome file catalog, 1,494-occurrence source-detached-values inventory, script producer-consumer graph). 17 top-level taxonomic classes; 17 pathologies (10 in v0.1 + 7 architectural additions from the reviews). Provenance anchor: deposit #1097 (AXN:045A.GOVERNANCE.🔗🔥🎺♄💚🔙)."
   }
  ],
  "member_count": 7,
