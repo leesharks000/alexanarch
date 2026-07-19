@@ -315,9 +315,14 @@ def _load_registry() -> dict:
 
 
 def _save_registry(reg: dict) -> None:
-    with open(REGISTRY, "w") as f:
+    # Atomic tmp+rename: a killed process can never leave a torn registry.
+    # (2026-07-19: a timeout-killed enrich run truncated registry.json mid-dump.)
+    import os as _os, tempfile as _tf
+    _fd, _tmp = _tf.mkstemp(dir=_os.path.dirname(str(REGISTRY)) or ".", suffix=".reg.tmp")
+    with open(_fd, "w") as f:
         json.dump(reg, f, indent=2, ensure_ascii=False)
         f.write("\n")
+    _os.replace(_tmp, str(REGISTRY))
 
 
 def _find_deposit(reg: dict, deposit_number: int) -> dict:

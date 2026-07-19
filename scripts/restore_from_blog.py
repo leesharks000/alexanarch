@@ -82,7 +82,13 @@ def main():
     ap.add_argument('--limit', type=int, default=5)
     ap.add_argument('--offset', type=int, default=0)
     ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--batch', action='store_true',
+                    help='mint-only per work (fast); shared stages deferred to --finish; queue saved after EVERY work')
+    ap.add_argument('--finish', action='store_true',
+                    help='run shared stages once for all stages_pending mints, then single commit')
     args = ap.parse_args()
+    if args.finish:
+        return finish(args)
     import html2text
     global INVENTORY
     INVENTORY = load_inventory()
@@ -216,19 +222,67 @@ Restored from {url} under the grade-none restoration queue; DOI(s) {', '.join(e[
             print(f"DRY   {doi} | would mint #{next_issue} | {e['title'][:55]}")
             next_issue += 1; done += 1; continue
         bp = Path(f"/tmp/restore-{next_issue}.md"); bp.write_text(body_md)
+        stages = ['--stages', 'mint'] if args.batch else []
         r = subprocess.run([sys.executable, 'scripts/deposit_pipeline.py', '--issue-body', str(bp),
-                            '--issue-number', str(next_issue), '--no-push'],
+                            '--issue-number', str(next_issue), '--no-push'] + stages,
                            cwd=ROOT, capture_output=True, text=True)
         mm = re.search(r'minted \+ inserted: #(\d+) · (AXN:\S+)', r.stdout)
-        if mm and 'pipeline complete' in r.stdout:
+        ok = mm and ('pipeline complete' in r.stdout or args.batch)
+        if ok:
             e['restored'] = {'deposit_number': int(mm.group(1)), 'axn': mm.group(2), 'date': '2026-07-19'}
+            if args.batch: e['restored']['stages_pending'] = True
             print(f"MINT  {doi} → #{mm.group(1)} {mm.group(2)} | {e['title'][:50]}")
         else:
             e['skip'] = {'reason': 'pipeline_failure', 'date': '2026-07-19'}
             print(f"FAIL  {doi} | pipeline error; tail: {r.stdout[-300:]}{r.stderr[-200:]}")
         next_issue += 1; done += 1
+        json.dump(q, open(QUEUE, 'w'), ensure_ascii=False, indent=1)  # save after EVERY work
     json.dump(q, open(QUEUE, 'w'), ensure_ascii=False, indent=1)
     print('tranche complete:', done)
+
+def finish(args):
+    """Shared stages, once, for every stages_pending mint; then one commit."""
+    import json as J
+    q = J.load(open(QUEUE))
+    pend = [e for e in q['restorable'] if (e.get('restored') or {}).get('stages_pending')]
+    nums = sorted(e['restored']['deposit_number'] for e in pend)
+    if not nums:
+        print('nothing pending'); return
+    print('finishing shared stages for:', nums)
+    def sh(cmd, check=True):
+        r = subprocess.run([str(c) for c in cmd], cwd=ROOT, capture_output=True, text=True)
+        if check and r.returncode != 0:
+            print('STAGE FAIL:', ' '.join(str(c) for c in cmd), r.stdout[-300:], r.stderr[-200:]); sys.exit(1)
+        return r
+    py = sys.executable
+    sh([py, 'scripts/validate_deposit.py', '--registry', 'data/registry.json', '--strict'])
+    # record pages (in-process, cheap)
+    sys.path.insert(0, str(ROOT)); sys.path.insert(0, str(ROOT/'scripts'))
+    import wire_deposit
+    reg = J.load(open(ROOT/'data'/'registry.json'))
+    eidx = J.load(open(ROOT/'data'/'entity-index.json'))
+    for n in nums:
+        d = next(x for x in reg['deposits'] if x['deposit_number'] == n)
+        wire_deposit.regenerate_static_page(d, eidx, registry=reg)
+    print('record pages:', len(nums))
+    sh([py, 'scripts/build_deposit_pdfs.py', f"--deposits={','.join(map(str,nums))}", '--timeout=120', '--force'], check=False)
+    sh([py, 'scripts/build_body_index.py'])
+    sh([py, 'scripts/regenerate_surfaces.py'])
+    for n in nums:  # mechanical enrich, per pipeline doctrine (No-Double-Draw: mechanical flags only)
+        sh([py, 'scripts/enrich_deposit.py', '--deposit-number', str(n), '--backlinks'], check=False)
+        sh([py, 'scripts/enrich_deposit.py', '--deposit-number', str(n),
+            '--wikidata', '--openalex', '--datacite', '--spxi'], check=False)
+    sh([py, 'scripts/validate_deposit.py', '--registry', 'data/registry.json', '--strict'])
+    for e in pend:
+        e['restored'].pop('stages_pending', None)
+    J.dump(q, open(QUEUE, 'w'), ensure_ascii=False, indent=1)
+    subprocess.run(['git', 'add', '-A'], cwd=ROOT)
+    subprocess.run(['git', 'checkout', 'data/pre-overwrite-receipts.log'], cwd=ROOT, capture_output=True)
+    msg = (f"RESTORE BATCH · #{nums[0]}–#{nums[-1]} ({len(nums)} works) via restore_from_blog.py --batch/--finish. "
+           f"Body-head gate; version-head semantics; shared stages run once per batch; queue markers saved per-work. "
+           f"validate --strict clean.")
+    subprocess.run(['git', 'commit', '-q', '-m', msg], cwd=ROOT)
+    print('batch committed:', len(nums), 'works')
 
 if __name__ == '__main__':
     main()
