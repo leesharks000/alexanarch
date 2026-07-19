@@ -27,6 +27,7 @@ Six workstreams named by MANUS at the close of the AXN:0458 arc (2026-07-18). Th
 | 3 | PEO total DOI snapshot + delta measurement | 2 planning + 1 initiate | 30–60d accumulation | Delta paper | — |
 | 5 | Campaign — leverage entities, materials, outreach | 3 | ongoing | — | Flows 1–3 (archive presenting as complete) |
 | 6 | Feisting Gutenberg — L1/L2 pipeline | 1 spec + N execution | ongoing | — | Homer parameter file (per AXN:0422) |
+| 7 | File preview + attachment preservation | 1-2 sessions | — | — | Stage 7.3 changes deposit pipeline |
 
 Total sessions to first delivery of each: Flow 2 → 2. Flow 1 → 3. Flow 4 → 4 to protocol. Flow 3 → 2 to bulk pull. Flow 5 → depends on 1–3. Flow 6 → 1 to specification, then execution parallel to any other flow.
 
@@ -203,6 +204,29 @@ The reader who wants the text reads the text; the reader who wants the apparatus
 
 ---
 
+
+
+## Flow 7 — File Preview and Attachment Preservation (added 2026-07-18 late session)
+
+**Origin.** MANUS asked what it would take to enable click-to-preview file attachments on record pages (Zenodo-style), triggered by the Cranes-deposit review where the papyrus fragment was only referenced by URL rather than pulled into the deposit. The technical question exposed a more urgent preservation question: every deposit that references external media currently depends on the source surface remaining live. The correct fix is *pull-at-mint* so the archive holds a byte-preserved copy regardless of what happens to the source.
+
+**Four-stage build.**
+
+*Stage 7.1 (manifest layer, ~2-3 hours).* Extend every deposit's sidecar to include an `attachments` array: `[{filename, path, mime_type, size_bytes, sha256, description}]`. For existing deposits, a mechanical script walks the deposit's existing artifacts and records them. New mints get it as an added pipeline stage between mint and record.
+
+*Stage 7.2 (preview handler in record page, one afternoon).* Update the record-page template to render an "Attachments" section with click-to-preview. Handlers by MIME type — client-side JavaScript, no backend. Images inline; PDFs in iframe or via pdf.js; markdown parsed via marked.js; plain text and code via `<pre>` + highlight.js; JSON pretty-printed. Whole preview layer ~100KB of JS added.
+
+*Stage 7.3 (external-media-pull discipline, per-mint pipeline change).* Mint pipeline pulls external referenced media (images from URLs, embedded audio, video thumbnails) into the deposit as attached files at `data/attachments/AXN-XXXX/`. Recorded in the manifest. Referenced by relative path in canonical bytes. This is the load-bearing preservation practice; the preview UI is downstream.
+
+*Stage 7.4 (media browse surface, optional).* Dataset-set-level browse of every attachment across the archive filterable by type. Only makes sense once enough attachments exist.
+
+**Sessions.** One session for stages 7.1 + 7.2 together. Stage 7.3 is a pipeline change (deposit_pipeline.py new stage), executed once and applied to all subsequent mints. Stage 7.4 is a follow-on.
+
+**Attachment path decision.** Recommended: `data/attachments/AXN-XXXX/` (canonical-data-adjacent, treated as first-class byte-preserved artifacts under non-destruction). MANUS ruling pending before the pipeline change lands.
+
+**Ordering.** Parallelizable with Flow 2 sessions but a natural fit *after* Session 2 of Flow 2 (since Session 2 investigates displayed-value pathologies and the attachment layer is a related "surface knows more than it displays" problem). Can also slot before Flow 4 execution begins, since the Enli-study Arm 3 depositors will benefit from click-to-preview affordances on their deposit pages.
+
+---
 ## Proposed sequencing
 
 **Session 1 (immediate).** Flow 2 — data-interlinkage audit + standing map. Two turns of work: inventory pass, then specification document.
