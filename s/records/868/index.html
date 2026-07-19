@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>DOIs ≠ Persistent Identifiers: 871 Cases of Public Metadata Erasure and Identifier Severance in DataCite (EA-MPAI-DOI-IMPERMANENCE-01) — Alexanarch</title><meta name="description" content="Empirical falsification of DOI persistence. Of 1,817 DOIs audited, 871 return HTTP 404 from DataCite&#x27;s public metadata API — complete public metadata erasure. 9"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "DOIs ≠ Persistent Identifiers: 871 Cases of Public Metadata Erasure and Identifier Severance in DataCite (EA-MPAI-DOI-IMPERMANENCE-01)", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-06-22", "identifier": "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝", "description": "Empirical falsification of DOI persistence. Of 1,817 DOIs audited, 871 return HTTP 404 from DataCite's public metadata API — complete public metadata erasure. 946 preserved, 871 severed, sum exact. Stripping correlates with DOI type (concept vs version), not content. Mints identifier severance: the ", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "DOI, persistent identifiers, DataCite, identifier severance, metadata erasure, FAIR principles, TRUST principles, Zenodo, platform governance, conditional persistence, semantic persistence, verification procedure"}</script>
+<title>DOIs ≠ Persistent Identifiers: 871 Cases of Public Metadata Erasure and Identifier Severance in DataCite (EA-MPAI-DOI-IMPERMANENCE-01) — Alexanarch</title><meta name="description" content="Empirical falsification of DOI persistence. Of 1,817 DOIs audited, 871 return HTTP 404 from DataCite&#x27;s public metadata API — complete public metadata…"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "DOIs ≠ Persistent Identifiers: 871 Cases of Public Metadata Erasure and Identifier Severance in DataCite (EA-MPAI-DOI-IMPERMANENCE-01)", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-06-22", "identifier": "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝", "description": "Empirical falsification of DOI persistence. Of 1,817 DOIs audited, 871 return HTTP 404 from DataCite's public metadata API — complete public metadata erasure. 946 preserved, 871 severed, sum exact. Stripping correlates with DOI type (concept vs version), not content. Mints identifier severance: the ", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "DOI, persistent identifiers, DataCite, identifier severance, metadata erasure, FAIR principles, TRUST principles, Zenodo, platform governance, conditional persistence, semantic persistence, verification procedure"}</script>
 <link rel="canonical" href="https://www.alexanarch.org/s/records/868/">
 <meta name="citation_title" content="DOIs ≠ Persistent Identifiers: 871 Cases of Public Metadata Erasure and Identifier Severance in DataCite (EA-MPAI-DOI-IMPERMANENCE-01)">
 <meta name="citation_author" content="Lee Sharks">
@@ -253,34 +253,26 @@
 
 <p><strong>Step 1. Query a preserved DOI.</strong> Request the metadata record for a DOI that this paper reports as preserved:</p>
 
-<p>```</p>
-<p>GET https://api.datacite.org/dois/10.5281%2Fzenodo.19895579</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">GET https://api.datacite.org/dois/10.5281%2Fzenodo.19895579</pre>
 
 <p>Expected result: HTTP 200 with a JSON response containing `attributes.titles`, `attributes.creators`, `attributes.subjects`, `attributes.descriptions`, and `attributes.relatedIdentifiers`. The metadata record exists. The identifier identifies.</p>
 
 <p><strong>Step 2. Query a severed DOI.</strong> Request the metadata record for a DOI that this paper reports as severed:</p>
 
-<p>```</p>
-<p>GET https://api.datacite.org/dois/10.5281%2Fzenodo.18674040</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">GET https://api.datacite.org/dois/10.5281%2Fzenodo.18674040</pre>
 
 <p>Expected result: HTTP 404. No metadata record. No title, no creator, no subjects, no description. The DOI string is syntactically valid but the public metadata that constitutes identification is absent.</p>
 
 <p><strong>Step 3. Query a paired set.</strong> Request both DOIs from a single deposit — the version DOI (preserved) and the concept DOI (severed):</p>
 
-<p>```</p>
-<p>GET https://api.datacite.org/dois/10.5281%2Fzenodo.20313252  (version DOI)</p>
-<p>GET https://api.datacite.org/dois/10.5281%2Fzenodo.20309930  (concept DOI)</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">GET https://api.datacite.org/dois/10.5281%2Fzenodo.20313252  (version DOI)
+GET https://api.datacite.org/dois/10.5281%2Fzenodo.20309930  (concept DOI)</pre>
 
 <p>Expected result: The first returns HTTP 200 with full metadata. The second returns HTTP 404. Same deposit. Same content. Same author. One identifier functions; the other has been severed.</p>
 
 <p><strong>Step 4. Confirm at scale.</strong> The complete inventory of 1,817 DOIs is available at:</p>
 
-<p>```</p>
-<p>https://alexanarch.org/data/doi-resolution-index.json</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">https://alexanarch.org/data/doi-resolution-index.json</pre>
 
 <p>Each entry contains the field `dead_doi`. Query each against `https://api.datacite.org/dois/{DOI}` and record the HTTP status code. The finding is confirmed if the results match: approximately 946 return HTTP 200 and approximately 871 return HTTP 404.</p>
 

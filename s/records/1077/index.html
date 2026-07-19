@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>EA-APPARATUS-01 v0.3: The Apparatus Grammar — A Standard for Care-Attended Compression Surfaces (the Mandala Surface Protocol) — Alexanarch</title><meta name="description" content="A binding design standard for care-attended compression surfaces across the archive&#x27;s sites and instruments, occasioned by the Google AI Overview as a philologi"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "EA-APPARATUS-01 v0.3: The Apparatus Grammar — A Standard for Care-Attended Compression Surfaces (the Mandala Surface Protocol)", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-07-13", "identifier": "AXN:0446.OPERATIVE.🏛️🛡️🌅🎆📏🔎", "description": "A binding design standard for care-attended compression surfaces across the archive's sites and instruments, occasioned by the Google AI Overview as a philological object and built on the thesis that every device the Overview uses has a two-thousand-year-old manuscript ancestor, and the ancestor is ", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "Mandala Surface Protocol, apparatus grammar, care-attended compression, philological UI, Mark Law, claim states, colophon, triple-helix citation, figure parity, Specimen Rule, rubrication, incipit, obelus, Google AI Overview, machine-mediated reception"}</script>
+<title>EA-APPARATUS-01 v0.3: The Apparatus Grammar — A Standard for Care-Attended Compression Surfaces (the Mandala Surface Protocol) — Alexanarch</title><meta name="description" content="A binding design standard for care-attended compression surfaces across the archive&#x27;s sites and instruments, occasioned by the Google AI Overview as a…"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "EA-APPARATUS-01 v0.3: The Apparatus Grammar — A Standard for Care-Attended Compression Surfaces (the Mandala Surface Protocol)", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-07-13", "identifier": "AXN:0446.OPERATIVE.🏛️🛡️🌅🎆📏🔎", "description": "A binding design standard for care-attended compression surfaces across the archive's sites and instruments, occasioned by the Google AI Overview as a philological object and built on the thesis that every device the Overview uses has a two-thousand-year-old manuscript ancestor, and the ancestor is ", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "Mandala Surface Protocol, apparatus grammar, care-attended compression, philological UI, Mark Law, claim states, colophon, triple-helix citation, figure parity, Specimen Rule, rubrication, incipit, obelus, Google AI Overview, machine-mediated reception"}</script>
 <link rel="canonical" href="https://www.alexanarch.org/s/records/1077/">
 <meta name="citation_title" content="EA-APPARATUS-01 v0.3: The Apparatus Grammar — A Standard for Care-Attended Compression Surfaces (the Mandala Surface Protocol)">
 <meta name="citation_author" content="Lee Sharks">
@@ -179,12 +179,10 @@
 
 <p>Permitted transitions:</p>
 
-<p>```</p>
-<p>proposed  → observed | contested | corrected</p>
-<p>inferred  → observed | contested | corrected</p>
-<p>observed  → contested | corrected</p>
-<p>contested → observed  | corrected</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">proposed  → observed | contested | corrected
+inferred  → observed | contested | corrected
+observed  → contested | corrected
+contested → observed  | corrected</pre>
 
 <p>Every transition appends a ledger record: previous state · new state ·</p>
 <p>effective date · reason · evidence · responsible operator · prior text hash ·</p>
@@ -199,9 +197,7 @@
 <p>Claim states describe assertions; <strong>object states</strong> describe the surface,</p>
 <p>edition, or work itself. The two are never mixed:</p>
 
-<p>```</p>
-<p>draft · canonical · superseded · withdrawn · forensic-salvage</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">draft · canonical · superseded · withdrawn · forensic-salvage</pre>
 
 <p>A claim can be corrected or contested; an edition can be superseded or</p>
 <p>withdrawn. The identity strip (device 9) carries the object state. In the</p>
@@ -236,11 +232,9 @@
 <p>three <strong>slots</strong>, each of which must report a state; absence is itself part</p>
 <p>of the apparatus and renders as a witnessed null, never as a missing link:</p>
 
-<p>```</p>
-<p>LOCAL     PRESENT | ABSENT | UNVERIFIED</p>
-<p>GRAPH     PRESENT | ABSENT | DIVERGENT | UNQUERIED</p>
-<p>REGISTRY  FINDABLE | REGISTERED-INFERRED | 404 | ERROR</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">LOCAL     PRESENT | ABSENT | UNVERIFIED
+GRAPH     PRESENT | ABSENT | DIVERGENT | UNQUERIED
+REGISTRY  FINDABLE | REGISTERED-INFERRED | 404 | ERROR</pre>
 
 <p>1. the <strong>local immutable copy</strong> (sovereign record page / data spine),</p>
 <p>2. the <strong>aggregator ghost-state</strong> (OpenAlex / OpenAIRE, as it stands),</p>
@@ -256,13 +250,11 @@
 <p>The binding minimum. Unknown values are stated as `unknown`, never omitted;</p>
 <p>where no model was used, `model_or_agent: none`.</p>
 
-<p>```</p>
-<p>surface_id            canonical_url         version</p>
-<p>source_object_ids     source_hashes         generator_version</p>
-<p>repository_commit     model_or_agent        operator_sequence</p>
-<p>human_approver        approval_timestamp    render_hash</p>
-<p>correction_log</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">surface_id            canonical_url         version
+source_object_ids     source_hashes         generator_version
+repository_commit     model_or_agent        operator_sequence
+human_approver        approval_timestamp    render_hash
+correction_log</pre>
 
 <h3>8. Composition rules</h3>
 

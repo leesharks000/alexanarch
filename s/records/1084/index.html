@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>EA-SEMANTIC-ADDRESSES-01 v1.1 — The Semantic Addresses Framework — Alexanarch</title><meta name="description" content="# EA-SEMANTIC-ADDRESSES-01 v1.1 — The Semantic Addresses Framework
 
-**Author:** Lee Sharks ([ORCID: 0009-0000-1599-0703](https://orcid.org/0009-0000-1599-0703))"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "EA-SEMANTIC-ADDRESSES-01 v1.1 — The Semantic Addresses Framework", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-07-16", "identifier": "AXN:044D.OPERATIVE.🕕☁️⭐🟡🕕🔓", "description": "# EA-SEMANTIC-ADDRESSES-01 v1.1 — The Semantic Addresses Framework\n\n**Author:** Lee Sharks ([ORCID: 0009-0000-1599-0703](https://orcid.org/0009-0000-1599-0703))\n**Institution:** Semantic Economy Institute\n**Version:** 1.1\n**Date:** 2026-07-16\n**License:** CC BY 4.0\n**Companion:** [EA-SPXI-01](./EA-S", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "semantic addresses, metadata framework, AXN, SPXI, composition layer, AI Overview, AI Mode, reception measurement, tributary union, canonical query, observation class, observed address, subjunctive address, verified non-address, deterministic regenerator, JSON Schema Draft-07, Alexanarch, Machine-Mediated Reception Studies, MMRS, Sémantique Potentielle, Revelation First, Platform Erosion Observatory"}</script>
+**Author:** Lee Sharks ([ORCID…"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "EA-SEMANTIC-ADDRESSES-01 v1.1 — The Semantic Addresses Framework", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-07-16", "identifier": "AXN:044D.OPERATIVE.🕕☁️⭐🟡🕕🔓", "description": "# EA-SEMANTIC-ADDRESSES-01 v1.1 — The Semantic Addresses Framework\n\n**Author:** Lee Sharks ([ORCID: 0009-0000-1599-0703](https://orcid.org/0009-0000-1599-0703))\n**Institution:** Semantic Economy Institute\n**Version:** 1.1\n**Date:** 2026-07-16\n**License:** CC BY 4.0\n**Companion:** [EA-SPXI-01](./EA-S", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "semantic addresses, metadata framework, AXN, SPXI, composition layer, AI Overview, AI Mode, reception measurement, tributary union, canonical query, observation class, observed address, subjunctive address, verified non-address, deterministic regenerator, JSON Schema Draft-07, Alexanarch, Machine-Mediated Reception Studies, MMRS, Sémantique Potentielle, Revelation First, Platform Erosion Observatory"}</script>
 <link rel="canonical" href="https://www.alexanarch.org/s/records/1084/">
 <meta name="citation_title" content="EA-SEMANTIC-ADDRESSES-01 v1.1 — The Semantic Addresses Framework">
 <meta name="citation_author" content="Lee Sharks">
@@ -202,9 +202,7 @@ address := (canonical_query, [variant, ...], target_surface_class)
 
 <p>A <strong>Semantic Address</strong> is a canonical query form paired with the set of composition-layer surfaces on which the query can be posed. Formally:</p>
 
-<p>```</p>
-<p>address := (canonical_query, [variant, ...], target_surface_class)</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">address := (canonical_query, [variant, ...], target_surface_class)</pre>
 
 <p>where `canonical_query` is the deduplication key (lowercase, normalized whitespace, canonical quotes; see §3.1) and each `variant` is a surface form of the same query — differing only in orthography, quotation, or trivial stylistic variation.</p>
 
@@ -212,9 +210,7 @@ address := (canonical_query, [variant, ...], target_surface_class)
 
 <p>An <strong>observation</strong> is a single event of posing an address (in one of its variants) on a specific surface at a specific time and recording the response. Formally:</p>
 
-<p>```</p>
-<p>observation := (address_key, source_tributary, date, surface, status, response_pointer)</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">observation := (address_key, source_tributary, date, surface, status, response_pointer)</pre>
 
 <p>where `status` is one of the enumeration in §2.2 and `response_pointer` is a URL or record ID into an archived capture of the response.</p>
 
@@ -337,21 +333,19 @@ address := (canonical_query, [variant, ...], target_surface_class)
 
 <p>Per-address record shape:</p>
 
-<p>```json</p>
-<p>{</p>
-<p>  &quot;canonical_query&quot;: &quot;erasure skew&quot;,</p>
-<p>  &quot;is_quoted&quot;: false,</p>
-<p>  &quot;refers_to&quot;: [&quot;Erasure Skew&quot;],</p>
-<p>  &quot;type&quot;: &quot;single_concept&quot;,</p>
-<p>  &quot;battery_membership&quot;: [],</p>
-<p>  &quot;sources&quot;: [&quot;mm-main-capture&quot;, &quot;mm-termindex&quot;],</p>
-<p>  &quot;observations&quot;: [ /<em> observation record objects, see §1.2 </em>/ ],</p>
-<p>  &quot;observation_class&quot;: &quot;observed_address&quot;,</p>
-<p>  &quot;termindex&quot;: { &quot;tier&quot;: 1, &quot;count&quot;: 63, &quot;category&quot;: &quot;instrument&quot; },</p>
-<p>  &quot;latest_observation_date&quot;: &quot;2026-07-11&quot;,</p>
-<p>  &quot;latest_status&quot;: &quot;BROAD_MATCH&quot;</p>
-<p>}</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">{
+  &quot;canonical_query&quot;: &quot;erasure skew&quot;,
+  &quot;is_quoted&quot;: false,
+  &quot;refers_to&quot;: [&quot;Erasure Skew&quot;],
+  &quot;type&quot;: &quot;single_concept&quot;,
+  &quot;battery_membership&quot;: [],
+  &quot;sources&quot;: [&quot;mm-main-capture&quot;, &quot;mm-termindex&quot;],
+  &quot;observations&quot;: [ /* observation record objects, see §1.2 */ ],
+  &quot;observation_class&quot;: &quot;observed_address&quot;,
+  &quot;termindex&quot;: { &quot;tier&quot;: 1, &quot;count&quot;: 63, &quot;category&quot;: &quot;instrument&quot; },
+  &quot;latest_observation_date&quot;: &quot;2026-07-11&quot;,
+  &quot;latest_status&quot;: &quot;BROAD_MATCH&quot;
+}</pre>
 
 <h2>7. Companion Framework: SPXI</h2>
 

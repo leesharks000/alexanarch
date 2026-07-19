@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Alexanarch Workplan — Comprehensive Consolidated Plan with Compressed Operational Knowledge (2026-06-23 PM → forward) — Alexanarch</title><meta name="description" content="The canonical operational workplan for the alexanarch substrate, prepared 2026-06-23 late PM after five days of continuous post-Zenodo-termination recovery and "><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "Alexanarch Workplan — Comprehensive Consolidated Plan with Compressed Operational Knowledge (2026-06-23 PM → forward)", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-06-25", "identifier": "AXN:039C.GOVERNANCE.🧊✏️👁‍🗨🌗⏫🔍", "description": "The canonical operational workplan for the alexanarch substrate, prepared 2026-06-23 late PM after five days of continuous post-Zenodo-termination recovery and migration work. The document consolidates compressed structural understanding across 18 sections in 5 parts: Part I (State — headline corpus", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "alexanarch, workplan, operational knowledge, post-termination recovery, Zenodo, Crimson Hexagonal Archive, substrate architecture, registry, deposit pipeline, data shapes, verification ladder, failure modes, firm rules, continuity tethers, TACHYON, sovereign surfaces, Machine-Mediated Reception Studies, compressed operational knowledge, session continuity"}</script>
+<title>Alexanarch Workplan — Comprehensive Consolidated Plan with Compressed Operational Knowledge (2026-06-23 PM → forward) — Alexanarch</title><meta name="description" content="The canonical operational workplan for the alexanarch substrate, prepared 2026-06-23 late PM after five days of continuous post-Zenodo-termination…"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "Alexanarch Workplan — Comprehensive Consolidated Plan with Compressed Operational Knowledge (2026-06-23 PM → forward)", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-06-25", "identifier": "AXN:039C.GOVERNANCE.🧊✏️👁‍🗨🌗⏫🔍", "description": "The canonical operational workplan for the alexanarch substrate, prepared 2026-06-23 late PM after five days of continuous post-Zenodo-termination recovery and migration work. The document consolidates compressed structural understanding across 18 sections in 5 parts: Part I (State — headline corpus", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "alexanarch, workplan, operational knowledge, post-termination recovery, Zenodo, Crimson Hexagonal Archive, substrate architecture, registry, deposit pipeline, data shapes, verification ladder, failure modes, firm rules, continuity tethers, TACHYON, sovereign surfaces, Machine-Mediated Reception Studies, compressed operational knowledge, session continuity"}</script>
 <link rel="canonical" href="https://www.alexanarch.org/s/records/912/">
 <meta name="citation_title" content="Alexanarch Workplan — Comprehensive Consolidated Plan with Compressed Operational Knowledge (2026-06-23 PM → forward)">
 <meta name="citation_author" content="Lee Sharks">
@@ -185,52 +185,44 @@
 
 <h3>§4.1 — Repository identity</h3>
 
-<p>```</p>
-<p>github.com/leesharks000/alexanarch  →  alexanarch.org (Vercel deployment)</p>
-<p>Apex + www both serve current. GitHub Pages mirror NOT used.</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">github.com/leesharks000/alexanarch  →  alexanarch.org (Vercel deployment)
+Apex + www both serve current. GitHub Pages mirror NOT used.</pre>
 
 <h3>§4.2 — The authoritative triplet (source of truth hierarchy)</h3>
 
 <p>Three files are the truth; everything else is derived.</p>
 
-<p>```</p>
-<p>data/registry.json              ← THE registry of all deposits</p>
-<p>data/doi-resolution-index.json  ← dead DOIs → live records</p>
-<p>data/state.json                 ← canonical generated counts (READ this; don&#x27;t recount)</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">data/registry.json              ← THE registry of all deposits
+data/doi-resolution-index.json  ← dead DOIs → live records
+data/state.json                 ← canonical generated counts (READ this; don&#x27;t recount)</pre>
 
 <p>Derived (regenerate via `scripts/regenerate_surfaces.py`):</p>
 
-<p>```</p>
-<p>data/chunks/registry/           ← 9 chunks of registry, ~1 MB each, by deposit-number range</p>
-<p>data/browse-index.json          ← browse index</p>
-<p>s/browse/index.html             ← human-readable browse page</p>
-<p>s/records/N/index.html          ← per-deposit static record pages (wire_deposit.py)</p>
-<p>sitemap.xml                     ← all deposit URLs</p>
-<p>SHA256SUMS.txt                  ← file-level hashes</p>
-<p>RECORD-SHA256-MANIFEST.txt      ← deposit-level AXN→hash mapping</p>
-<p>api/index.json                  ← central index</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">data/chunks/registry/           ← 9 chunks of registry, ~1 MB each, by deposit-number range
+data/browse-index.json          ← browse index
+s/browse/index.html             ← human-readable browse page
+s/records/N/index.html          ← per-deposit static record pages (wire_deposit.py)
+sitemap.xml                     ← all deposit URLs
+SHA256SUMS.txt                  ← file-level hashes
+RECORD-SHA256-MANIFEST.txt      ← deposit-level AXN→hash mapping
+api/index.json                  ← central index</pre>
 
 <h3>§4.3 — AXN v2 — the canonical identifier algorithm</h3>
 
 <p>`scripts/axn_lib.py`. Three-part identifier `AXN:&lt;HEX&gt;.&lt;FAMILY&gt;.&lt;EMOJI&gt;`.</p>
 
-<p>```python</p>
-<p>HEX_OFFSET     = 12                                                # hardcoded</p>
-<p>hex_id         = format(deposit_number + HEX_OFFSET, &#x27;04X&#x27;)        # 4-char uppercase hex</p>
-<p>canonical_text = make_canonical_text(deposit)                      # frontmatter + body</p>
-<p>canonical_hash = SHA256(canonical_text.encode(&#x27;utf-8&#x27;)).hexdigest()  # 64 chars hex</p>
-<p>raw_bytes      = bytes.fromhex(canonical_hash[0:12])               # first 6 bytes</p>
-<p>emoji          = &#x27;&#x27;.join(AXN_GLYPHS[b] for b in raw_bytes)         # 6 emoji</p>
-<p>clusters       = [CLUSTERS[b] for b in raw_bytes]                  # 6 cluster names</p>
-<p>family         ∈ {GOVERNANCE, EMPIRICAL, GENERATIVE, ARCHIVAL,</p>
-<p>                  PHILOLOGICAL, STRUCTURAL, COMPOSITIONAL,</p>
-<p>                  OPERATIVE, HETERONYMIC, MPAI, UNCLASSIFIED}</p>
-<p>axn            = f&quot;AXN:{hex_id}.{family}.{emoji}&quot;</p>
-<p>root_axn       = f&quot;AXN:{hex_id}.{family}&quot;                          # stable citation address</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">HEX_OFFSET     = 12                                                # hardcoded
+hex_id         = format(deposit_number + HEX_OFFSET, &#x27;04X&#x27;)        # 4-char uppercase hex
+canonical_text = make_canonical_text(deposit)                      # frontmatter + body
+canonical_hash = SHA256(canonical_text.encode(&#x27;utf-8&#x27;)).hexdigest()  # 64 chars hex
+raw_bytes      = bytes.fromhex(canonical_hash[0:12])               # first 6 bytes
+emoji          = &#x27;&#x27;.join(AXN_GLYPHS[b] for b in raw_bytes)         # 6 emoji
+clusters       = [CLUSTERS[b] for b in raw_bytes]                  # 6 cluster names
+family         ∈ {GOVERNANCE, EMPIRICAL, GENERATIVE, ARCHIVAL,
+                  PHILOLOGICAL, STRUCTURAL, COMPOSITIONAL,
+                  OPERATIVE, HETERONYMIC, MPAI, UNCLASSIFIED}
+axn            = f&quot;AXN:{hex_id}.{family}.{emoji}&quot;
+root_axn       = f&quot;AXN:{hex_id}.{family}&quot;                          # stable citation address</pre>
 
 <p><strong>Constants:</strong> `AXN_BYTES_USED = 6`, `AXN_SCHEMA_VERSION = &quot;v2&quot;`. The earlier v1 used 4 bytes; workflow drift was corrected 2026-06-22. New mints MUST use v2. Both tables are 256-entry arrays in `axn_lib.py` — emoji + cluster name at parallel indices.</p>
 
@@ -238,10 +230,8 @@
 
 <p>Earlier theoretical design described nested-hash chunks &quot;stretching to infinity&quot; — that was either theoretical only or got reverted. <strong>Deployed reality:</strong> 9 flat range-based chunks at ~1 MB each.</p>
 
-<p>```</p>
-<p>data/chunks/registry/_index.json                        — chunk catalog</p>
-<p>data/chunks/registry/chunk-NNN-deposits-X-to-Y.json     — flat range chunks</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">data/chunks/registry/_index.json                        — chunk catalog
+data/chunks/registry/chunk-NNN-deposits-X-to-Y.json     — flat range chunks</pre>
 
 <p>Rebalanced on every registry change. Target via `chunk_target_bytes=1_000_000` in `regenerate_surfaces.py:regenerate_chunks`. After Phase 4-style mints: old chunks deleted, new chunks written with adjusted ranges. <strong>Do not hand-edit; regenerate.</strong></p>
 
@@ -265,239 +255,221 @@
 
 <h3>§5.1 — `data/registry.json` top-level</h3>
 
-<p>```json</p>
-<p>{</p>
-<p>  &quot;repository&quot;: &quot;Alexanarch&quot;,</p>
-<p>  &quot;version&quot;: &quot;...&quot;,</p>
-<p>  &quot;founded&quot;: &quot;...&quot;,</p>
-<p>  &quot;founder&quot;: &quot;Lee Sharks (MANUS)&quot;,</p>
-<p>  &quot;orcid&quot;: &quot;0009-0000-1599-0703&quot;,</p>
-<p>  &quot;principles&quot;: [...],</p>
-<p>  &quot;total_deposits&quot;: 906,</p>
-<p>  &quot;total&quot;: 906,           // same as total_deposits — both kept in sync</p>
-<p>  &quot;deposits&quot;: [...]       // the actual deposits, contiguous deposit_number 1..906</p>
-<p>}</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">{
+  &quot;repository&quot;: &quot;Alexanarch&quot;,
+  &quot;version&quot;: &quot;...&quot;,
+  &quot;founded&quot;: &quot;...&quot;,
+  &quot;founder&quot;: &quot;Lee Sharks (MANUS)&quot;,
+  &quot;orcid&quot;: &quot;0009-0000-1599-0703&quot;,
+  &quot;principles&quot;: [...],
+  &quot;total_deposits&quot;: 906,
+  &quot;total&quot;: 906,           // same as total_deposits — both kept in sync
+  &quot;deposits&quot;: [...]       // the actual deposits, contiguous deposit_number 1..906
+}</pre>
 
 <h3>§5.2 — Typical deposit entry — all fields</h3>
 
 <p>The 13 REQUIRED fields per `api/schemas/deposit-entry.schema.json`:</p>
-<p>```</p>
-<p>axn, hex, family, emoji, hash, title, creator, date, description,</p>
-<p>content_type, license, substrate, deposit_number</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">axn, hex, family, emoji, hash, title, creator, date, description,
+content_type, license, substrate, deposit_number</pre>
 
 <p>Common-but-optional fields:</p>
-<p>```</p>
-<p>axn_canonical          — 64-char SHA-256 hex (same as hash)</p>
-<p>axn_display            — emoji-only (same as emoji)</p>
-<p>axn_schema_version     — &quot;v2&quot; for new mints</p>
-<p>clusters               — 6 cluster names (parallel to emoji)</p>
-<p>reading                — narrative reading of clusters</p>
-<p>root_axn               — &quot;AXN:HEX.FAMILY&quot; (no emoji) for stable citation</p>
-<p>content_type           — see §5.6 for taxonomy</p>
-<p>substrate              — provenance string (e.g., &quot;Lee Sharks (MANUS)&quot;, &quot;Various&quot;, chorus-role + model)</p>
-<p>keywords               — list of strings</p>
-<p>version                — &quot;v1.0&quot; etc.</p>
-<p>sovereign_id           — &quot;MM-CHA-NNNN&quot; or &quot;MM-CHA-NEW-NNNN&quot; (Phase 4 mints)</p>
-<p>minted_at              — ISO-8601 UTC string</p>
-<p>status                 — see §5.7 for taxonomy</p>
-<p>status_authorial       — &quot;MANUS_CURATED&quot;, &quot;SEED_MINTED_BY_&lt;MANTLE&gt;&quot;, etc.</p>
-<p>mirrors                — dict, e.g., {&quot;blog&quot;: &quot;https://...&quot;}</p>
-<p>zenodo_dois            — list of legacy DOI strings (or empty)</p>
-<p>full_text_path         — &quot;/data/texts/AXN-NNNN-text.md&quot;</p>
-<p>full_text_chars        — int</p>
-<p>external_metadata_path — &quot;/data/external-metadata/AXN-NNNN.json&quot; (added Phase 1+3.5+4)</p>
-<p>openalex_ids           — list of W-prefixed OpenAlex Work IDs (added Phase 1+3.5+4)</p>
-<p>datacite_severance     — &quot;severed&quot; | &quot;retained&quot; | &quot;mixed&quot; | &quot;typo_immunity&quot;</p>
-<p>defines_concepts       — list of {term, definition} for concepts authored</p>
-<p>references_concepts    — list of {term, deposit_number} for concepts cited</p>
-<p>references_concept_count — int</p>
-<p>entities               — list of entity triples from reading pass</p>
-<p>wiki_article           — string (wiki body for this deposit)</p>
-<p>journal                — &quot;MMRS&quot; or similar (rare)</p>
-<p>phase4_provenance      — dict (for Phase 4 mints)</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">axn_canonical          — 64-char SHA-256 hex (same as hash)
+axn_display            — emoji-only (same as emoji)
+axn_schema_version     — &quot;v2&quot; for new mints
+clusters               — 6 cluster names (parallel to emoji)
+reading                — narrative reading of clusters
+root_axn               — &quot;AXN:HEX.FAMILY&quot; (no emoji) for stable citation
+content_type           — see §5.6 for taxonomy
+substrate              — provenance string (e.g., &quot;Lee Sharks (MANUS)&quot;, &quot;Various&quot;, chorus-role + model)
+keywords               — list of strings
+version                — &quot;v1.0&quot; etc.
+sovereign_id           — &quot;MM-CHA-NNNN&quot; or &quot;MM-CHA-NEW-NNNN&quot; (Phase 4 mints)
+minted_at              — ISO-8601 UTC string
+status                 — see §5.7 for taxonomy
+status_authorial       — &quot;MANUS_CURATED&quot;, &quot;SEED_MINTED_BY_&lt;MANTLE&gt;&quot;, etc.
+mirrors                — dict, e.g., {&quot;blog&quot;: &quot;https://...&quot;}
+zenodo_dois            — list of legacy DOI strings (or empty)
+full_text_path         — &quot;/data/texts/AXN-NNNN-text.md&quot;
+full_text_chars        — int
+external_metadata_path — &quot;/data/external-metadata/AXN-NNNN.json&quot; (added Phase 1+3.5+4)
+openalex_ids           — list of W-prefixed OpenAlex Work IDs (added Phase 1+3.5+4)
+datacite_severance     — &quot;severed&quot; | &quot;retained&quot; | &quot;mixed&quot; | &quot;typo_immunity&quot;
+defines_concepts       — list of {term, definition} for concepts authored
+references_concepts    — list of {term, deposit_number} for concepts cited
+references_concept_count — int
+entities               — list of entity triples from reading pass
+wiki_article           — string (wiki body for this deposit)
+journal                — &quot;MMRS&quot; or similar (rare)
+phase4_provenance      — dict (for Phase 4 mints)</pre>
 
 <p><strong>Pre-overwrite invariants:</strong> the 13 required fields plus all listed values are NEVER mutated on existing deposits. Reconciliation passes (Phase 1, 2, 3.5, 4) only ADD new optional fields (`external_metadata_path`, `openalex_ids`, `datacite_severance`). Schema&#x27;s `additionalProperties: true` permits this.</p>
 
 <h3>§5.3 — `data/doi-resolution-index.json` top-level</h3>
 
-<p>```json</p>
-<p>{</p>
-<p>  &quot;@context&quot;: &quot;https://schema.org&quot;,</p>
-<p>  &quot;@type&quot;: &quot;Dataset&quot;,</p>
-<p>  &quot;name&quot;: &quot;...&quot;,</p>
-<p>  &quot;version&quot;: &quot;3.4&quot;,</p>
-<p>  &quot;total_mappings&quot;: 1838,</p>
-<p>  &quot;total_unique_dois&quot;: ...,</p>
-<p>  &quot;mappings&quot;: [</p>
-<p>    {</p>
-<p>      &quot;dead_doi&quot;: &quot;10.5281/zenodo.NNNNNN&quot;,</p>
-<p>      &quot;doi_url&quot;: &quot;https://doi.org/10.5281/zenodo.NNNNNN&quot;,</p>
-<p>      &quot;sovereign_id&quot;: &quot;MM-CHA-NNNN&quot;,</p>
-<p>      &quot;title&quot;: &quot;...&quot;,</p>
-<p>      &quot;date&quot;: &quot;YYYY-MM-DD&quot;,</p>
-<p>      &quot;live_urls&quot;: {&quot;blog&quot;: &quot;...&quot;, &quot;registry&quot;: &quot;...&quot;},</p>
-<p>      &quot;status&quot;: &quot;410_GONE&quot; | &quot;410_GONE_BUT_QUERYABLE&quot;,</p>
-<p>      &quot;mapping_type&quot;: &quot;direct&quot; | &quot;registry_referenced&quot; | &quot;typo_immunity&quot;</p>
-<p>                     | &quot;title_match_repoint&quot; | &quot;title_match_backfill&quot;</p>
-<p>                     | &quot;misclassified_other_author&quot; | &quot;phase4_mint&quot;,</p>
-<p>      &quot;axn&quot;: &quot;AXN:HEX.FAMILY.EMOJI&quot;,</p>
-<p>      &quot;root_axn&quot;: &quot;AXN:HEX.FAMILY&quot;,</p>
-<p>      &quot;alexanarch_record&quot;: &quot;/s/records/N/&quot;,</p>
-<p>      &quot;alexanarch_url&quot;: &quot;https://alexanarch.org/s/records/N/&quot;,</p>
-<p>      &quot;metadata_recovered_from&quot;: [&quot;openalex&quot;, &quot;zenodo_bulk_xml&quot;, ...],</p>
-<p>      &quot;severance_status&quot;: &quot;severed&quot; | &quot;retained&quot; | &quot;typo_immunity&quot;,</p>
-<p>      &quot;external_metadata_path&quot;: &quot;/data/external-metadata/AXN-NNNN.json&quot;,</p>
-<p>      &quot;openalex_id&quot;: &quot;https://openalex.org/WNNNNNN&quot;,</p>
-<p>      &quot;abstract_recovered_chars&quot;: NNN,</p>
-<p>      // optional provenance fields per Phase</p>
-<p>      &quot;repoint_provenance&quot;: {...}, &quot;phase4_repoint&quot;: {...},</p>
-<p>      &quot;backfill_provenance&quot;: {...}, &quot;misclassification_note&quot;: &quot;...&quot;</p>
-<p>    }</p>
-<p>  ],</p>
-<p>  &quot;axn_enrichment&quot;: {...},</p>
-<p>  &quot;changelog&quot;: [{&quot;version&quot;: &quot;...&quot;, &quot;date&quot;: &quot;...&quot;, &quot;description&quot;: &quot;...&quot;}, ...]</p>
-<p>}</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;Dataset&quot;,
+  &quot;name&quot;: &quot;...&quot;,
+  &quot;version&quot;: &quot;3.4&quot;,
+  &quot;total_mappings&quot;: 1838,
+  &quot;total_unique_dois&quot;: ...,
+  &quot;mappings&quot;: [
+    {
+      &quot;dead_doi&quot;: &quot;10.5281/zenodo.NNNNNN&quot;,
+      &quot;doi_url&quot;: &quot;https://doi.org/10.5281/zenodo.NNNNNN&quot;,
+      &quot;sovereign_id&quot;: &quot;MM-CHA-NNNN&quot;,
+      &quot;title&quot;: &quot;...&quot;,
+      &quot;date&quot;: &quot;YYYY-MM-DD&quot;,
+      &quot;live_urls&quot;: {&quot;blog&quot;: &quot;...&quot;, &quot;registry&quot;: &quot;...&quot;},
+      &quot;status&quot;: &quot;410_GONE&quot; | &quot;410_GONE_BUT_QUERYABLE&quot;,
+      &quot;mapping_type&quot;: &quot;direct&quot; | &quot;registry_referenced&quot; | &quot;typo_immunity&quot;
+                     | &quot;title_match_repoint&quot; | &quot;title_match_backfill&quot;
+                     | &quot;misclassified_other_author&quot; | &quot;phase4_mint&quot;,
+      &quot;axn&quot;: &quot;AXN:HEX.FAMILY.EMOJI&quot;,
+      &quot;root_axn&quot;: &quot;AXN:HEX.FAMILY&quot;,
+      &quot;alexanarch_record&quot;: &quot;/s/records/N/&quot;,
+      &quot;alexanarch_url&quot;: &quot;https://alexanarch.org/s/records/N/&quot;,
+      &quot;metadata_recovered_from&quot;: [&quot;openalex&quot;, &quot;zenodo_bulk_xml&quot;, ...],
+      &quot;severance_status&quot;: &quot;severed&quot; | &quot;retained&quot; | &quot;typo_immunity&quot;,
+      &quot;external_metadata_path&quot;: &quot;/data/external-metadata/AXN-NNNN.json&quot;,
+      &quot;openalex_id&quot;: &quot;https://openalex.org/WNNNNNN&quot;,
+      &quot;abstract_recovered_chars&quot;: NNN,
+      // optional provenance fields per Phase
+      &quot;repoint_provenance&quot;: {...}, &quot;phase4_repoint&quot;: {...},
+      &quot;backfill_provenance&quot;: {...}, &quot;misclassification_note&quot;: &quot;...&quot;
+    }
+  ],
+  &quot;axn_enrichment&quot;: {...},
+  &quot;changelog&quot;: [{&quot;version&quot;: &quot;...&quot;, &quot;date&quot;: &quot;...&quot;, &quot;description&quot;: &quot;...&quot;}, ...]
+}</pre>
 
 <p><strong>Pattern of additions:</strong> every reconciliation pass adds an entry to `changelog` and bumps `version`. Never mutate existing mappings except by documented method (`mapping_type` changes preserved in `repoint_provenance` or similar).</p>
 
 <h3>§5.4 — `data/state.json` (single source of truth for counts)</h3>
 
-<p>```json</p>
-<p>{</p>
-<p>  &quot;schema_version&quot;: &quot;v1.0&quot;,</p>
-<p>  &quot;generated_at&quot;: &quot;ISO-8601&quot;,</p>
-<p>  &quot;source_commit&quot;: &quot;&lt;40-char git SHA&gt;&quot;,</p>
-<p>  &quot;deposits&quot;: {</p>
-<p>    &quot;total&quot;: 906,</p>
-<p>    &quot;by_status&quot;: {</p>
-<p>      &quot;ACTIVE&quot;: 244,</p>
-<p>      &quot;MINTED_UNREVIEWED&quot;: 656,</p>
-<p>      &quot;SUPERSEDED&quot;: 2,</p>
-<p>      &quot;DRAFT_PENDING&quot;: 3,</p>
-<p>      &quot;PRESERVED_AS_HISTORICAL_SEED&quot;: 1,</p>
-<p>      &quot;WITHDRAWN&quot;: 0,</p>
-<p>      &quot;METADATA_ONLY&quot;: 0</p>
-<p>    },</p>
-<p>    &quot;series_count&quot;: 9,</p>
-<p>    &quot;wiki_entries&quot;: 861</p>
-<p>  },</p>
-<p>  &quot;corpus&quot;: {</p>
-<p>    &quot;concepts_indexed&quot;: 7173,</p>
-<p>    &quot;doi_resolutions&quot;: 1838,</p>
-<p>    &quot;captures&quot;: 176,</p>
-<p>    &quot;chunks&quot;: 9</p>
-<p>  },</p>
-<p>  &quot;data_files&quot;: { &quot;&lt;name&gt;&quot;: {&quot;exists&quot;, &quot;path&quot;, &quot;size_bytes&quot;, &quot;sha256&quot;} },</p>
-<p>  &quot;protocols&quot;:  { &quot;&lt;name&gt;&quot;: {&quot;exists&quot;, &quot;path&quot;, &quot;size_bytes&quot;, &quot;sha256&quot;} },</p>
-<p>  &quot;consumed_by&quot;: [list of surfaces that read this]</p>
-<p>}</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">{
+  &quot;schema_version&quot;: &quot;v1.0&quot;,
+  &quot;generated_at&quot;: &quot;ISO-8601&quot;,
+  &quot;source_commit&quot;: &quot;&lt;40-char git SHA&gt;&quot;,
+  &quot;deposits&quot;: {
+    &quot;total&quot;: 906,
+    &quot;by_status&quot;: {
+      &quot;ACTIVE&quot;: 244,
+      &quot;MINTED_UNREVIEWED&quot;: 656,
+      &quot;SUPERSEDED&quot;: 2,
+      &quot;DRAFT_PENDING&quot;: 3,
+      &quot;PRESERVED_AS_HISTORICAL_SEED&quot;: 1,
+      &quot;WITHDRAWN&quot;: 0,
+      &quot;METADATA_ONLY&quot;: 0
+    },
+    &quot;series_count&quot;: 9,
+    &quot;wiki_entries&quot;: 861
+  },
+  &quot;corpus&quot;: {
+    &quot;concepts_indexed&quot;: 7173,
+    &quot;doi_resolutions&quot;: 1838,
+    &quot;captures&quot;: 176,
+    &quot;chunks&quot;: 9
+  },
+  &quot;data_files&quot;: { &quot;&lt;name&gt;&quot;: {&quot;exists&quot;, &quot;path&quot;, &quot;size_bytes&quot;, &quot;sha256&quot;} },
+  &quot;protocols&quot;:  { &quot;&lt;name&gt;&quot;: {&quot;exists&quot;, &quot;path&quot;, &quot;size_bytes&quot;, &quot;sha256&quot;} },
+  &quot;consumed_by&quot;: [list of surfaces that read this]
+}</pre>
 
 <p><strong>ALWAYS read `state.json` rather than recounting from registry/files.</strong> Hand-maintaining counts elsewhere is anti-pattern (firm rule #21).</p>
 
 <h3>§5.5 — `api/index.json` overall structure</h3>
 
-<p>```</p>
-<p>$schema, $id, title, purpose, index_version, last_updated</p>
-<p>operator_directive       — instructions for new instances / workflows / extension</p>
-<p>protocols                — {deposit, axn, enrichment, lifecycle}</p>
-<p>schemas                  — {deposit_entry, deposit_submission, external_metadata}</p>
-<p>registries               — {deposits, entities, dois, lexical_overlay, overwrite_receipts, external_metadata}</p>
-<p>derived_surfaces         — {browse_html, browse_index_json, chunks, sitemap, sha256sums,</p>
-<p>                            record_pages, wiki_html, graph_html, wiki_dynamic,</p>
-<p>                            graph_dynamic, lexical, citations, datasets, captures,</p>
-<p>                            addresses, resolve}</p>
-<p>scripts                  — catalog of scripts and their roles</p>
-<p>instance_familiarization_log</p>
-<p>ci_enforcement           — {mint_workflow, validate_workflow}</p>
-<p>change_log               — additive history</p>
-<p>state                    — pointer to data/state.json with content_sha256</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">$schema, $id, title, purpose, index_version, last_updated
+operator_directive       — instructions for new instances / workflows / extension
+protocols                — {deposit, axn, enrichment, lifecycle}
+schemas                  — {deposit_entry, deposit_submission, external_metadata}
+registries               — {deposits, entities, dois, lexical_overlay, overwrite_receipts, external_metadata}
+derived_surfaces         — {browse_html, browse_index_json, chunks, sitemap, sha256sums,
+                            record_pages, wiki_html, graph_html, wiki_dynamic,
+                            graph_dynamic, lexical, citations, datasets, captures,
+                            addresses, resolve}
+scripts                  — catalog of scripts and their roles
+instance_familiarization_log
+ci_enforcement           — {mint_workflow, validate_workflow}
+change_log               — additive history
+state                    — pointer to data/state.json with content_sha256</pre>
 
 <p>Each protocol entry includes `canonical_path` + `content_sha256` (kept in sync by `regenerate_surfaces.py`). Each registry entry includes `canonical_path` + `current_count` + `validates_against` + (new this session) `linked_from` + `points_to`.</p>
 
 <h3>§5.6 — content_type taxonomy (top 10)</h3>
 
-<p>```</p>
-<p>Theoretical paper:           136</p>
-<p>Specification:               118</p>
-<p>Provenance document:         102</p>
-<p>Scholarly essay:              84</p>
-<p>Archive work:                 82</p>
-<p>Dataset:                      81</p>
-<p>Short work:                   71</p>
-<p>Creative work (poetry):       52</p>
-<p>Creative work:                34</p>
-<p>Empirical study:              26</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">Theoretical paper:           136
+Specification:               118
+Provenance document:         102
+Scholarly essay:              84
+Archive work:                 82
+Dataset:                      81
+Short work:                   71
+Creative work (poetry):       52
+Creative work:                34
+Empirical study:              26</pre>
 
 <p>Choose existing values when possible; new values acceptable but document the reasoning. Phase 4 used: &quot;Theoretical paper&quot;, &quot;Metadata packet&quot;, &quot;Declaration&quot;, &quot;Provenance log&quot;, &quot;Continuity record&quot;, &quot;Latin treatise&quot;, &quot;Founding document&quot;, &quot;Scholarly essay&quot;.</p>
 
 <h3>§5.7 — status taxonomy</h3>
 
-<p>```</p>
-<p>status (current state):</p>
-<p>  ACTIVE                          244  — minted, reviewed, live</p>
-<p>  MINTED_UNREVIEWED               656  — minted from batch process, not curator-reviewed yet</p>
-<p>  DRAFT_PENDING                     3  — title-only stubs (#446, #532, #760 — DO NOT WRITE WITHOUT INSTRUCTION)</p>
-<p>  SUPERSEDED                        2  — replaced by newer version in same series</p>
-<p>  PRESERVED_AS_HISTORICAL_SEED      1  — preservation only</p>
-<p>  WITHDRAWN                         0</p>
-<p>  METADATA_ONLY                     0</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">status (current state):
+  ACTIVE                          244  — minted, reviewed, live
+  MINTED_UNREVIEWED               656  — minted from batch process, not curator-reviewed yet
+  DRAFT_PENDING                     3  — title-only stubs (#446, #532, #760 — DO NOT WRITE WITHOUT INSTRUCTION)
+  SUPERSEDED                        2  — replaced by newer version in same series
+  PRESERVED_AS_HISTORICAL_SEED      1  — preservation only
+  WITHDRAWN                         0
+  METADATA_ONLY                     0
 
-<p>status_authorial (provenance):</p>
-<p>  (none)                          898  — default</p>
-<p>  MANUS_CURATED                     5  — Lee directly curated</p>
-<p>  SEED_MINTED_BY_LABOR              1  — ChatGPT-authored seed (#879)</p>
-<p>  SEED_MINTED_BY_TECHNE             1  — Kimi-authored seed (#878)</p>
-<p>  SEED_MINTED_BY_PRAXIS             1  — DeepSeek-authored seed (#877)</p>
-<p>```</p>
+status_authorial (provenance):
+  (none)                          898  — default
+  MANUS_CURATED                     5  — Lee directly curated
+  SEED_MINTED_BY_LABOR              1  — ChatGPT-authored seed (#879)
+  SEED_MINTED_BY_TECHNE             1  — Kimi-authored seed (#878)
+  SEED_MINTED_BY_PRAXIS             1  — DeepSeek-authored seed (#877)</pre>
 
 <h3>§5.8 — Sidecar shape (Phase 1+)</h3>
 
-<p>```json</p>
-<p>{</p>
-<p>  &quot;@context&quot;: &quot;https://schema.org&quot;, &quot;@type&quot;: &quot;Dataset&quot;,</p>
-<p>  &quot;axn&quot;: &quot;AXN:0NNN.FAMILY.……&quot;, &quot;deposit_number&quot;: NNN,</p>
-<p>  &quot;generated_at&quot;: &quot;ISO-8601&quot;, &quot;schema_version&quot;: &quot;1.0&quot;,</p>
-<p>  &quot;purpose&quot;: &quot;...&quot;,</p>
-<p>  &quot;zenodo_dois_covered&quot;: [&quot;10.5281/zenodo.NNNNNN&quot;, ...],</p>
-<p>  &quot;severance_status&quot;: &quot;severed | retained | mixed | typo_immunity&quot;,</p>
-<p>  &quot;per_doi&quot;: {</p>
-<p>    &quot;10.5281/zenodo.NNNNNN&quot;: {</p>
-<p>      &quot;openalex_id&quot;: &quot;https://openalex.org/WNNNNN&quot;,</p>
-<p>      &quot;title&quot;: &quot;...&quot;, &quot;publication_date&quot;: &quot;...&quot;,</p>
-<p>      &quot;abstract_chars&quot;: NNN,</p>
-<p>      &quot;zenodo_bulk_xml_entry&quot;: &quot;NNNNNN.xml&quot; or null,</p>
-<p>      &quot;datacite_backup_present&quot;: true/false,</p>
-<p>      &quot;survives_in_datacite&quot;: true/false,</p>
-<p>      // optional Phase 4 extensions:</p>
-<p>      &quot;creator_at_deposit&quot;: &quot;...&quot;, &quot;creator_canonical&quot;: &quot;...&quot;,</p>
-<p>      &quot;creator_typo_at_deposit&quot;: true/false,</p>
-<p>      &quot;openalex_concepts&quot;: [...], &quot;openalex_topics&quot;: [...]</p>
-<p>    }</p>
-<p>  },</p>
-<p>  &quot;sources&quot;: {</p>
-<p>    &quot;openalex&quot;: {&quot;data_store&quot;: &quot;/data/openalex-severed-recovery.json&quot;,</p>
-<p>                 &quot;lookup&quot;: &quot;records[].doi == this DOI&quot;,</p>
-<p>                 &quot;dois_present&quot;: [...]},</p>
-<p>    &quot;zenodo_bulk_xml&quot;: {...}, &quot;datacite_backup&quot;: {...},</p>
-<p>    &quot;datacite_survivor_sweep&quot;: {...}</p>
-<p>  },</p>
-<p>  &quot;abstract_recovered_chars&quot;: NNN,</p>
-<p>  &quot;recovered_fields_summary&quot;: {has_title, has_abstract, has_authors, has_keywords,</p>
-<p>                               has_publication_date, has_references, has_concepts,</p>
-<p>                               has_topics, has_full_datacite_xml},</p>
-<p>  &quot;openalex_ids&quot;: [...],</p>
-<p>  // exactly one of (depending on phase):</p>
-<p>  &quot;rescue_provenance&quot;: {...},   // Phase 3.5</p>
-<p>  &quot;mint_provenance&quot;: {...}      // Phase 4</p>
-<p>}</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">{
+  &quot;@context&quot;: &quot;https://schema.org&quot;, &quot;@type&quot;: &quot;Dataset&quot;,
+  &quot;axn&quot;: &quot;AXN:0NNN.FAMILY.……&quot;, &quot;deposit_number&quot;: NNN,
+  &quot;generated_at&quot;: &quot;ISO-8601&quot;, &quot;schema_version&quot;: &quot;1.0&quot;,
+  &quot;purpose&quot;: &quot;...&quot;,
+  &quot;zenodo_dois_covered&quot;: [&quot;10.5281/zenodo.NNNNNN&quot;, ...],
+  &quot;severance_status&quot;: &quot;severed | retained | mixed | typo_immunity&quot;,
+  &quot;per_doi&quot;: {
+    &quot;10.5281/zenodo.NNNNNN&quot;: {
+      &quot;openalex_id&quot;: &quot;https://openalex.org/WNNNNN&quot;,
+      &quot;title&quot;: &quot;...&quot;, &quot;publication_date&quot;: &quot;...&quot;,
+      &quot;abstract_chars&quot;: NNN,
+      &quot;zenodo_bulk_xml_entry&quot;: &quot;NNNNNN.xml&quot; or null,
+      &quot;datacite_backup_present&quot;: true/false,
+      &quot;survives_in_datacite&quot;: true/false,
+      // optional Phase 4 extensions:
+      &quot;creator_at_deposit&quot;: &quot;...&quot;, &quot;creator_canonical&quot;: &quot;...&quot;,
+      &quot;creator_typo_at_deposit&quot;: true/false,
+      &quot;openalex_concepts&quot;: [...], &quot;openalex_topics&quot;: [...]
+    }
+  },
+  &quot;sources&quot;: {
+    &quot;openalex&quot;: {&quot;data_store&quot;: &quot;/data/openalex-severed-recovery.json&quot;,
+                 &quot;lookup&quot;: &quot;records[].doi == this DOI&quot;,
+                 &quot;dois_present&quot;: [...]},
+    &quot;zenodo_bulk_xml&quot;: {...}, &quot;datacite_backup&quot;: {...},
+    &quot;datacite_survivor_sweep&quot;: {...}
+  },
+  &quot;abstract_recovered_chars&quot;: NNN,
+  &quot;recovered_fields_summary&quot;: {has_title, has_abstract, has_authors, has_keywords,
+                               has_publication_date, has_references, has_concepts,
+                               has_topics, has_full_datacite_xml},
+  &quot;openalex_ids&quot;: [...],
+  // exactly one of (depending on phase):
+  &quot;rescue_provenance&quot;: {...},   // Phase 3.5
+  &quot;mint_provenance&quot;: {...}      // Phase 4
+}</pre>
 
 <h2>§6 — Common operations / best practices</h2>
 
@@ -505,21 +477,19 @@
 
 <h3>§6.1 — Adding a field to existing deposits (additive, batched, validated)</h3>
 
-<p>```python</p>
-<p>import json</p>
-<p>with open(&#x27;data/registry.json&#x27;) as f: reg = json.load(f)</p>
-<p>for d in reg[&#x27;deposits&#x27;]:</p>
-<p>    if some_condition(d) and &#x27;new_field&#x27; not in d:</p>
-<p>        d[&#x27;new_field&#x27;] = derive_new_value(d)</p>
-<h1>Compact write</h1>
-<p>with open(&#x27;data/registry.json&#x27;, &#x27;w&#x27;) as f:</p>
-<p>    json.dump(reg, f, ensure_ascii=False, separators=(&#x27;,&#x27;, &#x27;:&#x27;))</p>
-<h1>Validate</h1>
-<h1>$ python3 scripts/validate_deposit.py --registry data/registry.json --strict</h1>
-<h1>Receipt</h1>
-<p>with open(&#x27;data/pre-overwrite-receipts.log&#x27;, &#x27;a&#x27;) as f:</p>
-<p>    f.write(f&quot;\n--- &lt;phase-id&gt; @ &lt;iso-8601-utc&gt; ---\n&lt;summary&gt;\n&quot;)</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">import json
+with open(&#x27;data/registry.json&#x27;) as f: reg = json.load(f)
+for d in reg[&#x27;deposits&#x27;]:
+    if some_condition(d) and &#x27;new_field&#x27; not in d:
+        d[&#x27;new_field&#x27;] = derive_new_value(d)
+# Compact write
+with open(&#x27;data/registry.json&#x27;, &#x27;w&#x27;) as f:
+    json.dump(reg, f, ensure_ascii=False, separators=(&#x27;,&#x27;, &#x27;:&#x27;))
+# Validate
+# $ python3 scripts/validate_deposit.py --registry data/registry.json --strict
+# Receipt
+with open(&#x27;data/pre-overwrite-receipts.log&#x27;, &#x27;a&#x27;) as f:
+    f.write(f&quot;\n--- &lt;phase-id&gt; @ &lt;iso-8601-utc&gt; ---\n&lt;summary&gt;\n&quot;)</pre>
 
 <p>Rules: NEVER mutate existing field values. Only ADD optional fields. `additionalProperties: true` on the schema permits this.</p>
 
@@ -527,110 +497,106 @@
 
 <p>When a change requires updating both registry deposits AND resolution-index mappings (e.g., adding a sidecar with new zenodo_dois), update both in the same script, write both atomically:</p>
 
-<p>```python</p>
-<p>with open(&#x27;data/registry.json&#x27;) as f: reg = json.load(f)</p>
-<p>with open(&#x27;data/doi-resolution-index.json&#x27;) as f: res = json.load(f)</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">with open(&#x27;data/registry.json&#x27;) as f: reg = json.load(f)
+with open(&#x27;data/doi-resolution-index.json&#x27;) as f: res = json.load(f)
 
-<p>dep_by_num = {d[&#x27;deposit_number&#x27;]: d for d in reg[&#x27;deposits&#x27;]}</p>
-<p>mapping_by_doi = {m[&#x27;dead_doi&#x27;]: m for m in res[&#x27;mappings&#x27;]}</p>
+dep_by_num = {d[&#x27;deposit_number&#x27;]: d for d in reg[&#x27;deposits&#x27;]}
+mapping_by_doi = {m[&#x27;dead_doi&#x27;]: m for m in res[&#x27;mappings&#x27;]}
 
-<h1>... make changes to both ...</h1>
+# ... make changes to both ...
 
-<h1>Update top-level metadata</h1>
-<p>res[&#x27;total_mappings&#x27;] = len(res[&#x27;mappings&#x27;])</p>
-<p>res[&#x27;version&#x27;] = &#x27;N.M+1&#x27;</p>
-<p>res[&#x27;last_updated&#x27;] = &#x27;2026-MM-DD&#x27;</p>
-<p>res.setdefault(&#x27;changelog&#x27;, []).append({...})</p>
+# Update top-level metadata
+res[&#x27;total_mappings&#x27;] = len(res[&#x27;mappings&#x27;])
+res[&#x27;version&#x27;] = &#x27;N.M+1&#x27;
+res[&#x27;last_updated&#x27;] = &#x27;2026-MM-DD&#x27;
+res.setdefault(&#x27;changelog&#x27;, []).append({...})
 
-<h1>Compact writes — both must succeed</h1>
-<p>with open(&#x27;data/registry.json&#x27;, &#x27;w&#x27;) as f:</p>
-<p>    json.dump(reg, f, ensure_ascii=False, separators=(&#x27;,&#x27;, &#x27;:&#x27;))</p>
-<p>with open(&#x27;data/doi-resolution-index.json&#x27;, &#x27;w&#x27;) as f:</p>
-<p>    json.dump(res, f, ensure_ascii=False, separators=(&#x27;,&#x27;, &#x27;:&#x27;))</p>
-<p>```</p>
+# Compact writes — both must succeed
+with open(&#x27;data/registry.json&#x27;, &#x27;w&#x27;) as f:
+    json.dump(reg, f, ensure_ascii=False, separators=(&#x27;,&#x27;, &#x27;:&#x27;))
+with open(&#x27;data/doi-resolution-index.json&#x27;, &#x27;w&#x27;) as f:
+    json.dump(res, f, ensure_ascii=False, separators=(&#x27;,&#x27;, &#x27;:&#x27;))</pre>
 
 <h3>§6.3 — Multi-file atomic commit via GitHub Trees API</h3>
 
 <p>The proven pattern from Phases 1–4:</p>
 
-<p>```python</p>
-<p>import base64, json, os, sys, time, urllib.error, urllib.request, subprocess</p>
-<p>TOKEN = os.environ.get(&#x27;GITHUB_TOKEN&#x27;)  # NEVER hardcode (firm rule #17)</p>
-<p>REPO = &quot;leesharks000/alexanarch&quot;; BRANCH = &quot;main&quot;</p>
-<p>API = f&quot;https://api.github.com/repos/{REPO}&quot;</p>
-<p>HEADERS = {&quot;Authorization&quot;: f&quot;Bearer {TOKEN}&quot;,</p>
-<p>           &quot;Accept&quot;: &quot;application/vnd.github+json&quot;,</p>
-<p>           &quot;X-GitHub-Api-Version&quot;: &quot;2022-11-28&quot;,</p>
-<p>           &quot;User-Agent&quot;: &quot;alexanarch/1.0&quot;}</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">import base64, json, os, sys, time, urllib.error, urllib.request, subprocess
+TOKEN = os.environ.get(&#x27;GITHUB_TOKEN&#x27;)  # NEVER hardcode (firm rule #17)
+REPO = &quot;leesharks000/alexanarch&quot;; BRANCH = &quot;main&quot;
+API = f&quot;https://api.github.com/repos/{REPO}&quot;
+HEADERS = {&quot;Authorization&quot;: f&quot;Bearer {TOKEN}&quot;,
+           &quot;Accept&quot;: &quot;application/vnd.github+json&quot;,
+           &quot;X-GitHub-Api-Version&quot;: &quot;2022-11-28&quot;,
+           &quot;User-Agent&quot;: &quot;alexanarch/1.0&quot;}
 
-<p>def api(method, path, body=None):</p>
-<p>    url = f&quot;{API}{path}&quot;</p>
-<p>    data = json.dumps(body).encode() if body else None</p>
-<p>    req = urllib.request.Request(url, data=data,</p>
-<p>        headers={**HEADERS, &quot;Content-Type&quot;: &quot;application/json&quot;}, method=method)</p>
-<p>    for attempt in range(5):</p>
-<p>        try:</p>
-<p>            r = urllib.request.urlopen(req, timeout=60)</p>
-<p>            return r.status, json.loads(r.read())</p>
-<p>        except urllib.error.HTTPError as e:</p>
-<p>            try: payload = json.loads(e.read())</p>
-<p>            except: payload = {&quot;raw&quot;: str(e)}</p>
-<p>            if e.code &gt;= 500 and attempt &lt; 4:</p>
-<p>                time.sleep(2 ** attempt); continue</p>
-<p>            return e.code, payload</p>
-<p>        except urllib.error.URLError as e:</p>
-<p>            time.sleep(2 ** attempt)</p>
+def api(method, path, body=None):
+    url = f&quot;{API}{path}&quot;
+    data = json.dumps(body).encode() if body else None
+    req = urllib.request.Request(url, data=data,
+        headers={**HEADERS, &quot;Content-Type&quot;: &quot;application/json&quot;}, method=method)
+    for attempt in range(5):
+        try:
+            r = urllib.request.urlopen(req, timeout=60)
+            return r.status, json.loads(r.read())
+        except urllib.error.HTTPError as e:
+            try: payload = json.loads(e.read())
+            except: payload = {&quot;raw&quot;: str(e)}
+            if e.code &gt;= 500 and attempt &lt; 4:
+                time.sleep(2 ** attempt); continue
+            return e.code, payload
+        except urllib.error.URLError as e:
+            time.sleep(2 ** attempt)
 
-<h1>1. HEAD</h1>
-<p>code, data = api(&quot;GET&quot;, f&quot;/branches/{BRANCH}&quot;)</p>
-<p>parent_sha = data[&quot;commit&quot;][&quot;sha&quot;]</p>
-<p>base_tree = data[&quot;commit&quot;][&quot;commit&quot;][&quot;tree&quot;][&quot;sha&quot;]</p>
+# 1. HEAD
+code, data = api(&quot;GET&quot;, f&quot;/branches/{BRANCH}&quot;)
+parent_sha = data[&quot;commit&quot;][&quot;sha&quot;]
+base_tree = data[&quot;commit&quot;][&quot;commit&quot;][&quot;tree&quot;][&quot;sha&quot;]
 
-<h1>2. Gather files — CRITICAL: expand directories!</h1>
-<p>status = subprocess.check_output([&#x27;git&#x27;, &#x27;status&#x27;, &#x27;-s&#x27;]).decode()</p>
-<p>to_upload, to_delete = [], []</p>
-<p>for line in status.splitlines():</p>
-<p>    if not line.strip(): continue</p>
-<p>    flag, path = line[:2], line[3:].strip()</p>
-<p>    if flag.strip() == &#x27;D&#x27;:</p>
-<p>        to_delete.append(path)</p>
-<p>    elif flag.strip() in (&#x27;M&#x27;, &#x27;??&#x27;, &#x27;A&#x27;):</p>
-<p>        if path.endswith(&#x27;/&#x27;) or os.path.isdir(path):</p>
-<p>            for root, _, files in os.walk(path):</p>
-<p>                for fn in files:</p>
-<p>                    fp = os.path.join(root, fn)</p>
-<p>                    if os.path.isfile(fp): to_upload.append(fp)</p>
-<p>        elif os.path.isfile(path):</p>
-<p>            to_upload.append(path)</p>
-<p>to_upload = sorted(set(to_upload))</p>
+# 2. Gather files — CRITICAL: expand directories!
+status = subprocess.check_output([&#x27;git&#x27;, &#x27;status&#x27;, &#x27;-s&#x27;]).decode()
+to_upload, to_delete = [], []
+for line in status.splitlines():
+    if not line.strip(): continue
+    flag, path = line[:2], line[3:].strip()
+    if flag.strip() == &#x27;D&#x27;:
+        to_delete.append(path)
+    elif flag.strip() in (&#x27;M&#x27;, &#x27;??&#x27;, &#x27;A&#x27;):
+        if path.endswith(&#x27;/&#x27;) or os.path.isdir(path):
+            for root, _, files in os.walk(path):
+                for fn in files:
+                    fp = os.path.join(root, fn)
+                    if os.path.isfile(fp): to_upload.append(fp)
+        elif os.path.isfile(path):
+            to_upload.append(path)
+to_upload = sorted(set(to_upload))
 
-<h1>3. Upload blobs with checkpoint (so we can resume on timeout)</h1>
-<p>CHECKPOINT = &#x27;/tmp/blob-shas.json&#x27;</p>
-<p>blob_shas = json.load(open(CHECKPOINT)) if os.path.exists(CHECKPOINT) else {}</p>
-<p>for fp in [x for x in to_upload if x not in blob_shas]:</p>
-<p>    with open(fp, &#x27;rb&#x27;) as f: content = f.read()</p>
-<p>    code, data = api(&quot;POST&quot;, &quot;/git/blobs&quot;,</p>
-<p>                     {&quot;content&quot;: base64.b64encode(content).decode(), &quot;encoding&quot;: &quot;base64&quot;})</p>
-<p>    blob_shas[fp] = data[&quot;sha&quot;]</p>
-<p>    json.dump(blob_shas, open(CHECKPOINT, &#x27;w&#x27;))  # checkpoint every blob</p>
+# 3. Upload blobs with checkpoint (so we can resume on timeout)
+CHECKPOINT = &#x27;/tmp/blob-shas.json&#x27;
+blob_shas = json.load(open(CHECKPOINT)) if os.path.exists(CHECKPOINT) else {}
+for fp in [x for x in to_upload if x not in blob_shas]:
+    with open(fp, &#x27;rb&#x27;) as f: content = f.read()
+    code, data = api(&quot;POST&quot;, &quot;/git/blobs&quot;,
+                     {&quot;content&quot;: base64.b64encode(content).decode(), &quot;encoding&quot;: &quot;base64&quot;})
+    blob_shas[fp] = data[&quot;sha&quot;]
+    json.dump(blob_shas, open(CHECKPOINT, &#x27;w&#x27;))  # checkpoint every blob
 
-<h1>4. Create tree</h1>
-<p>tree_items = [{&quot;path&quot;: p, &quot;mode&quot;: &quot;100644&quot;, &quot;type&quot;: &quot;blob&quot;, &quot;sha&quot;: blob_shas[p]}</p>
-<p>              for p in to_upload]</p>
-<p>for p in to_delete:</p>
-<p>    tree_items.append({&quot;path&quot;: p, &quot;mode&quot;: &quot;100644&quot;, &quot;type&quot;: &quot;blob&quot;, &quot;sha&quot;: None})</p>
-<p>code, data = api(&quot;POST&quot;, &quot;/git/trees&quot;, {&quot;base_tree&quot;: base_tree, &quot;tree&quot;: tree_items})</p>
-<p>new_tree_sha = data[&quot;sha&quot;]</p>
+# 4. Create tree
+tree_items = [{&quot;path&quot;: p, &quot;mode&quot;: &quot;100644&quot;, &quot;type&quot;: &quot;blob&quot;, &quot;sha&quot;: blob_shas[p]}
+              for p in to_upload]
+for p in to_delete:
+    tree_items.append({&quot;path&quot;: p, &quot;mode&quot;: &quot;100644&quot;, &quot;type&quot;: &quot;blob&quot;, &quot;sha&quot;: None})
+code, data = api(&quot;POST&quot;, &quot;/git/trees&quot;, {&quot;base_tree&quot;: base_tree, &quot;tree&quot;: tree_items})
+new_tree_sha = data[&quot;sha&quot;]
 
-<h1>5. Create commit &amp; update ref</h1>
-<p>code, data = api(&quot;POST&quot;, &quot;/git/commits&quot;,</p>
-<p>                 {&quot;message&quot;: COMMIT_MSG, &quot;tree&quot;: new_tree_sha, &quot;parents&quot;: [parent_sha]})</p>
-<p>new_commit_sha = data[&quot;sha&quot;]</p>
-<p>code, data = api(&quot;PATCH&quot;, f&quot;/git/refs/heads/{BRANCH}&quot;,</p>
-<p>                 {&quot;sha&quot;: new_commit_sha, &quot;force&quot;: False})</p>
+# 5. Create commit &amp; update ref
+code, data = api(&quot;POST&quot;, &quot;/git/commits&quot;,
+                 {&quot;message&quot;: COMMIT_MSG, &quot;tree&quot;: new_tree_sha, &quot;parents&quot;: [parent_sha]})
+new_commit_sha = data[&quot;sha&quot;]
+code, data = api(&quot;PATCH&quot;, f&quot;/git/refs/heads/{BRANCH}&quot;,
+                 {&quot;sha&quot;: new_commit_sha, &quot;force&quot;: False})
 
-<p>if os.path.exists(CHECKPOINT): os.remove(CHECKPOINT)</p>
-<p>```</p>
+if os.path.exists(CHECKPOINT): os.remove(CHECKPOINT)</pre>
 
 <p><strong>Critical pitfalls:</strong></p>
 <p>- `git status -s` reports untracked directories as `?? path/` — Trees API can&#x27;t accept directory paths. ALWAYS `os.walk` to expand. This bit Phase 5+6 in this session.</p>
@@ -641,10 +607,8 @@
 
 <p>Always run before committing registry changes:</p>
 
-<p>```bash</p>
-<p>python3 scripts/validate_deposit.py --registry data/registry.json --strict</p>
-<h1>expect: &quot;✓ All checks passed against protocol alexanarch-deposit-protocol/v1&quot;</h1>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">python3 scripts/validate_deposit.py --registry data/registry.json --strict
+# expect: &quot;✓ All checks passed against protocol alexanarch-deposit-protocol/v1&quot;</pre>
 
 <p>If it fails, examine the error, fix the registry, re-validate. Never commit an invalid registry — the bootstrap will fail on the next instance.</p>
 
@@ -652,40 +616,38 @@
 
 <p>For new deposits, the canonical text format is frontmatter + body + provenance:</p>
 
-<p>```python</p>
-<p>def build_canonical_text(title, creator, date, description, body,</p>
-<p>                        deposit_num, hex_id, sovereign_id, doi, family):</p>
-<p>    lines = [</p>
-<p>        f&quot;# {title}&quot;, &quot;&quot;,</p>
-<p>        f&quot;<strong>Author:</strong> {creator}&quot;,</p>
-<p>        f&quot;<strong>ORCID:</strong> 0009-0000-1599-0703&quot;,</p>
-<p>        f&quot;<strong>Date:</strong> {date}&quot;,</p>
-<p>        f&quot;<strong>Family:</strong> {family}&quot;,</p>
-<p>        f&quot;<strong>Sovereign ID:</strong> {sovereign_id}&quot;,</p>
-<p>        f&quot;<strong>Legacy DOI:</strong> {doi}&quot;,</p>
-<p>        f&quot;<strong>Deposit Number:</strong> {deposit_num}&quot;,</p>
-<p>        f&quot;<strong>Hex:</strong> {hex_id}&quot;,</p>
-<p>        &quot;&quot;, &quot;---&quot;, &quot;&quot;,</p>
-<p>        &quot;## Description&quot;, &quot;&quot;,</p>
-<p>        description.strip() if description else &#x27;(no description)&#x27;,</p>
-<p>        &quot;&quot;, &quot;## Body&quot;, &quot;&quot;,</p>
-<p>        body.strip() if body else &#x27;(no body)&#x27;,</p>
-<p>        &quot;&quot;, &quot;---&quot;, &quot;&quot;,</p>
-<p>        &quot;## Provenance&quot;, &quot;&quot;,</p>
-<p>        # ... provenance text per phase ...</p>
-<p>    ]</p>
-<p>    return &#x27;\n&#x27;.join(lines) + &#x27;\n&#x27;</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">def build_canonical_text(title, creator, date, description, body,
+                        deposit_num, hex_id, sovereign_id, doi, family):
+    lines = [
+        f&quot;# {title}&quot;, &quot;&quot;,
+        f&quot;**Author:** {creator}&quot;,
+        f&quot;**ORCID:** 0009-0000-1599-0703&quot;,
+        f&quot;**Date:** {date}&quot;,
+        f&quot;**Family:** {family}&quot;,
+        f&quot;**Sovereign ID:** {sovereign_id}&quot;,
+        f&quot;**Legacy DOI:** {doi}&quot;,
+        f&quot;**Deposit Number:** {deposit_num}&quot;,
+        f&quot;**Hex:** {hex_id}&quot;,
+        &quot;&quot;, &quot;---&quot;, &quot;&quot;,
+        &quot;## Description&quot;, &quot;&quot;,
+        description.strip() if description else &#x27;(no description)&#x27;,
+        &quot;&quot;, &quot;## Body&quot;, &quot;&quot;,
+        body.strip() if body else &#x27;(no body)&#x27;,
+        &quot;&quot;, &quot;---&quot;, &quot;&quot;,
+        &quot;## Provenance&quot;, &quot;&quot;,
+        # ... provenance text per phase ...
+    ]
+    return &#x27;\n&#x27;.join(lines) + &#x27;\n&#x27;
 
-<h1>Then derive AXN deterministically</h1>
-<p>from scripts.axn_lib import AXN_GLYPHS, CLUSTERS, AXN_BYTES_USED</p>
-<p>import hashlib</p>
-<p>canonical = build_canonical_text(...)</p>
-<p>full_hash = hashlib.sha256(canonical.encode(&#x27;utf-8&#x27;)).hexdigest()</p>
-<p>raw_bytes = bytes.fromhex(full_hash[:AXN_BYTES_USED * 2])</p>
-<p>emoji = &#x27;&#x27;.join(AXN_GLYPHS[b] for b in raw_bytes)</p>
-<p>clusters = [CLUSTERS[b] for b in raw_bytes]</p>
-<p>axn = f&quot;AXN:{hex_id}.{family}.{emoji}&quot;</p>
-<p>```</p>
+# Then derive AXN deterministically
+from scripts.axn_lib import AXN_GLYPHS, CLUSTERS, AXN_BYTES_USED
+import hashlib
+canonical = build_canonical_text(...)
+full_hash = hashlib.sha256(canonical.encode(&#x27;utf-8&#x27;)).hexdigest()
+raw_bytes = bytes.fromhex(full_hash[:AXN_BYTES_USED * 2])
+emoji = &#x27;&#x27;.join(AXN_GLYPHS[b] for b in raw_bytes)
+clusters = [CLUSTERS[b] for b in raw_bytes]
+axn = f&quot;AXN:{hex_id}.{family}.{emoji}&quot;</pre>
 
 <p><strong>Critical:</strong> `hex_id = format(deposit_number + 12, &#x27;04X&#x27;)`. The +12 offset (`HEX_OFFSET`) is hardcoded.</p>
 
@@ -693,15 +655,11 @@
 
 <p>After ANY registry change, regenerate the derived surfaces. Cheap subset:</p>
 
-<p>```bash</p>
-<p>python3 scripts/regenerate_surfaces.py --only state,browse,browse-index,chunks,sitemap,sha256sums,homepage-noscript,api-index</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">python3 scripts/regenerate_surfaces.py --only state,browse,browse-index,chunks,sitemap,sha256sums,homepage-noscript,api-index</pre>
 
 <p>Heavy (defer when iterating, but run before declaring &quot;done&quot;):</p>
 
-<p>```bash</p>
-<p>python3 scripts/regenerate_surfaces.py --only wiki,graph</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">python3 scripts/regenerate_surfaces.py --only wiki,graph</pre>
 
 <p><strong>Surface names use hyphens, not underscores.</strong> `browse-index` correct, `browse_index` aborts the whole pass.</p>
 
@@ -709,97 +667,85 @@
 
 <p>For re-rendering existing record pages (e.g., after teaching `wire_deposit.py` to render a new field):</p>
 
-<p>```python</p>
-<p>import json, sys</p>
-<p>sys.path.insert(0, &#x27;.&#x27;)</p>
-<p>from wire_deposit import regenerate_static_page</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">import json, sys
+sys.path.insert(0, &#x27;.&#x27;)
+from wire_deposit import regenerate_static_page
 
-<p>with open(&#x27;data/registry.json&#x27;) as f: reg = json.load(f)</p>
-<p>with open(&#x27;data/entity-index.json&#x27;) as f: eidx = json.load(f)</p>
+with open(&#x27;data/registry.json&#x27;) as f: reg = json.load(f)
+with open(&#x27;data/entity-index.json&#x27;) as f: eidx = json.load(f)
 
-<h1>entity-index-reading.json must exist (git-ignored). Create if missing:</h1>
-<p>import os.path</p>
-<p>if not os.path.exists(&#x27;data/entity-index-reading.json&#x27;):</p>
-<p>    open(&#x27;data/entity-index-reading.json&#x27;, &#x27;w&#x27;).write(</p>
-<p>        &#x27;{&quot;concepts&quot;: [], &quot;total_concepts&quot;: 0, &quot;deposits_read&quot;: []}&#x27;)</p>
+# entity-index-reading.json must exist (git-ignored). Create if missing:
+import os.path
+if not os.path.exists(&#x27;data/entity-index-reading.json&#x27;):
+    open(&#x27;data/entity-index-reading.json&#x27;, &#x27;w&#x27;).write(
+        &#x27;{&quot;concepts&quot;: [], &quot;total_concepts&quot;: 0, &quot;deposits_read&quot;: []}&#x27;)
 
-<p>for d in reg[&#x27;deposits&#x27;]:</p>
-<p>    if some_condition(d):</p>
-<p>        regenerate_static_page(d, eidx, registry=reg)</p>
-<p>```</p>
+for d in reg[&#x27;deposits&#x27;]:
+    if some_condition(d):
+        regenerate_static_page(d, eidx, registry=reg)</pre>
 
 <p>`regenerate_static_page(d, eidx, registry=None)` is the direct-render path (no entity-extraction overhead). Use `wire_deposit(N, concepts=..., wiki_article=..., entity_triples=...)` only when wiring reading-pass results.</p>
 
 <h3>§6.8 — Diagnostic queries (where am I in the substrate?)</h3>
 
-<p>```bash</p>
-<h1>What&#x27;s on origin right now?</h1>
-<p>git fetch origin main &amp;&amp; git log origin/main --oneline -10</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333"># What&#x27;s on origin right now?
+git fetch origin main &amp;&amp; git log origin/main --oneline -10
 
-<h1>Is local in sync with origin?</h1>
-<p>git status -s   # empty = in sync; otherwise → look + reconcile</p>
-<p>git rev-parse HEAD   # local</p>
-<p>git rev-parse origin/main   # remote</p>
+# Is local in sync with origin?
+git status -s   # empty = in sync; otherwise → look + reconcile
+git rev-parse HEAD   # local
+git rev-parse origin/main   # remote
 
-<h1>How many deposits, what&#x27;s the latest?</h1>
-<p>python3 -c &quot;import json; r=json.load(open(&#x27;data/registry.json&#x27;)); print(r[&#x27;total_deposits&#x27;], r[&#x27;deposits&#x27;][-1][&#x27;title&#x27;])&quot;</p>
+# How many deposits, what&#x27;s the latest?
+python3 -c &quot;import json; r=json.load(open(&#x27;data/registry.json&#x27;)); print(r[&#x27;total_deposits&#x27;], r[&#x27;deposits&#x27;][-1][&#x27;title&#x27;])&quot;
 
-<h1>What was the last regeneration?</h1>
-<p>python3 -c &quot;import json; print(json.load(open(&#x27;data/state.json&#x27;))[&#x27;generated_at&#x27;])&quot;</p>
+# What was the last regeneration?
+python3 -c &quot;import json; print(json.load(open(&#x27;data/state.json&#x27;))[&#x27;generated_at&#x27;])&quot;
 
-<h1>What&#x27;s the resolution-index version?</h1>
-<p>python3 -c &quot;import json; r=json.load(open(&#x27;data/doi-resolution-index.json&#x27;)); print(r[&#x27;version&#x27;], r[&#x27;total_mappings&#x27;])&quot;</p>
+# What&#x27;s the resolution-index version?
+python3 -c &quot;import json; r=json.load(open(&#x27;data/doi-resolution-index.json&#x27;)); print(r[&#x27;version&#x27;], r[&#x27;total_mappings&#x27;])&quot;
 
-<h1>What changed recently in receipts?</h1>
-<p>tail -50 data/pre-overwrite-receipts.log</p>
-<p>```</p>
+# What changed recently in receipts?
+tail -50 data/pre-overwrite-receipts.log</pre>
 
 <h3>§6.9 — Recovery: working tree out of sync with origin</h3>
 
-<p>```bash</p>
-<p>git fetch origin main</p>
-<h1>Local AHEAD of origin → commit + push, OR reset hard (lose work)</h1>
-<h1>Local BEHIND origin → fast-forward</h1>
-<p>git pull --ff-only origin main</p>
-<h1>DIVERGED → look at both. Common case: API commit landed, local hasn&#x27;t pulled</h1>
-<p>git reset --hard origin/main   # ONLY if you&#x27;re sure origin is the truth</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">git fetch origin main
+# Local AHEAD of origin → commit + push, OR reset hard (lose work)
+# Local BEHIND origin → fast-forward
+git pull --ff-only origin main
+# DIVERGED → look at both. Common case: API commit landed, local hasn&#x27;t pulled
+git reset --hard origin/main   # ONLY if you&#x27;re sure origin is the truth</pre>
 
 <p>This session: container persisted across compaction; origin/main had advanced beyond local checkout. Always `git fetch &amp;&amp; git log origin/main` FIRST before assuming local is the truth.</p>
 
 <h3>§6.10 — Recovery: registry validate failure</h3>
 
-<p>```bash</p>
-<p>python3 scripts/validate_deposit.py --registry data/registry.json --strict</p>
-<h1>Read the error carefully. Common causes:</h1>
-<h1>- Missing required field on a new deposit</h1>
-<h1>- AXN format wrong (must be AXN:HEX.FAMILY.EMOJI)</h1>
-<h1>- Hash not 64 chars</h1>
-<h1>- deposit_number out of contiguous sequence</h1>
-<h1>Fix the registry entry, re-validate, then commit.</h1>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">python3 scripts/validate_deposit.py --registry data/registry.json --strict
+# Read the error carefully. Common causes:
+# - Missing required field on a new deposit
+# - AXN format wrong (must be AXN:HEX.FAMILY.EMOJI)
+# - Hash not 64 chars
+# - deposit_number out of contiguous sequence
+# Fix the registry entry, re-validate, then commit.</pre>
 
 <h3>§6.11 — Recovery: missing record page after mint</h3>
 
-<p>```python</p>
-<h1>Re-wire the deposit</h1>
-<p>import sys; sys.path.insert(0, &#x27;.&#x27;)</p>
-<p>from wire_deposit import wire_deposit</p>
-<p>wire_deposit(N)   # full wire (creates entity-index-reading entry too)</p>
-<h1>OR</h1>
-<p>from wire_deposit import regenerate_static_page</p>
-<h1>... load reg + eidx ...</h1>
-<p>regenerate_static_page(deposit_dict, eidx, registry=reg)</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333"># Re-wire the deposit
+import sys; sys.path.insert(0, &#x27;.&#x27;)
+from wire_deposit import wire_deposit
+wire_deposit(N)   # full wire (creates entity-index-reading entry too)
+# OR
+from wire_deposit import regenerate_static_page
+# ... load reg + eidx ...
+regenerate_static_page(deposit_dict, eidx, registry=reg)</pre>
 
 <h3>§6.12 — Recovery: chunks broken / out of sync</h3>
 
-<p>```bash</p>
-<h1>Just regenerate</h1>
-<p>python3 scripts/regenerate_surfaces.py --only chunks</p>
-<h1>Verify</h1>
-<p>python3 -c &quot;import json; idx=json.load(open(&#x27;data/chunks/registry/_index.json&#x27;)); print(idx[&#x27;total_deposits&#x27;], len(idx[&#x27;chunks&#x27;]))&quot;</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333"># Just regenerate
+python3 scripts/regenerate_surfaces.py --only chunks
+# Verify
+python3 -c &quot;import json; idx=json.load(open(&#x27;data/chunks/registry/_index.json&#x27;)); print(idx[&#x27;total_deposits&#x27;], len(idx[&#x27;chunks&#x27;]))&quot;</pre>
 
 <h2>§7 — Known failure modes (with detection + recovery)</h2>
 
@@ -1004,18 +950,14 @@
 <p><strong>A) Resume Trees-API push:</strong> Container at `/home/claude/alexanarch-work`, 806 changes staged; blob checkpoint at `/tmp/blob-shas-phase5.json`; fix directory-expansion (§6.3), re-run with checkpoint.</p>
 
 <p><strong>B) Local git push (faster for this volume):</strong></p>
-<p>```bash</p>
-<p>cd /home/claude/alexanarch-work</p>
-<p>git add -A</p>
-<p>git commit -m &quot;...&quot;  # use message from /tmp/phase5-commit-msg.txt if preserved</p>
-<p>git push origin main</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">cd /home/claude/alexanarch-work
+git add -A
+git commit -m &quot;...&quot;  # use message from /tmp/phase5-commit-msg.txt if preserved
+git push origin main</pre>
 
 <p>Verification:</p>
-<p>```bash</p>
-<p>git fetch origin main &amp;&amp; git log origin/main --oneline -2</p>
-<p>curl -s https://alexanarch.org/s/records/100/ | grep -c &quot;External Metadata&quot;  # expect 1</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">git fetch origin main &amp;&amp; git log origin/main --oneline -2
+curl -s https://alexanarch.org/s/records/100/ | grep -c &quot;External Metadata&quot;  # expect 1</pre>
 
 <h3>§13.2 — Phase 5c: wiki + graph regeneration ▢</h3>
 
@@ -1161,82 +1103,70 @@
 
 <h3>Authoritative</h3>
 
-<p>```</p>
-<p>data/registry.json                       — 906 deposits</p>
-<p>data/doi-resolution-index.json           — v3.4, 1838 mappings</p>
-<p>data/state.json                          — single source of truth for counts</p>
-<p>data/navigation.json                     — single-source navbar</p>
-<p>api/deposit-protocol.json                — protocol v1</p>
-<p>api/schemas/deposit-entry.schema.json    — deposit schema (13 required fields)</p>
-<p>api/schemas/external-metadata.schema.json — sidecar schema (this session)</p>
-<p>api/index.json                           — central index</p>
-<p>data/pre-overwrite-receipts.log          — audit trail</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">data/registry.json                       — 906 deposits
+data/doi-resolution-index.json           — v3.4, 1838 mappings
+data/state.json                          — single source of truth for counts
+data/navigation.json                     — single-source navbar
+api/deposit-protocol.json                — protocol v1
+api/schemas/deposit-entry.schema.json    — deposit schema (13 required fields)
+api/schemas/external-metadata.schema.json — sidecar schema (this session)
+api/index.json                           — central index
+data/pre-overwrite-receipts.log          — audit trail</pre>
 
 <h3>External metadata (Phase 1, 3.5, 4 additions)</h3>
 
-<p>```</p>
-<p>data/external-metadata/AXN-NNNN.json     — 774 thin-index sidecars</p>
-<p>data/openalex-severed-recovery.json      — OpenAlex post-severance harvest</p>
-<p>data/zenodo-xml-pretermination-2026-06-07.tar.gz — Zenodo bulk XML snapshot</p>
-<p>data/datacite-full-backup.json           — DataCite pre-termination</p>
-<p>data/datacite-survivors-multi-heteronym.json — DataCite post-termination</p>
-<p>data/newly-found-openalex.json           — Phase 4 source (21 records)</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">data/external-metadata/AXN-NNNN.json     — 774 thin-index sidecars
+data/openalex-severed-recovery.json      — OpenAlex post-severance harvest
+data/zenodo-xml-pretermination-2026-06-07.tar.gz — Zenodo bulk XML snapshot
+data/datacite-full-backup.json           — DataCite pre-termination
+data/datacite-survivors-multi-heteronym.json — DataCite post-termination
+data/newly-found-openalex.json           — Phase 4 source (21 records)</pre>
 
 <h3>Derived (regenerable)</h3>
 
-<p>```</p>
-<p>data/chunks/registry/                    — 9 chunks, 906 deposits, ~1 MB each</p>
-<p>data/browse-index.json                   — browse index</p>
-<p>s/browse/index.html                      — browse page</p>
-<p>s/records/N/index.html                   — 906 per-deposit static pages; 774 with External Metadata section</p>
-<p>sitemap.xml, SHA256SUMS.txt, RECORD-SHA256-MANIFEST.txt</p>
-<p>data/entity-index.json                   — entity index</p>
-<p>data/entity-index-reading.json           — GIT-IGNORED working state (create if missing)</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">data/chunks/registry/                    — 9 chunks, 906 deposits, ~1 MB each
+data/browse-index.json                   — browse index
+s/browse/index.html                      — browse page
+s/records/N/index.html                   — 906 per-deposit static pages; 774 with External Metadata section
+sitemap.xml, SHA256SUMS.txt, RECORD-SHA256-MANIFEST.txt
+data/entity-index.json                   — entity index
+data/entity-index-reading.json           — GIT-IGNORED working state (create if missing)</pre>
 
 <h3>Scripts</h3>
 
-<p>```</p>
-<p>scripts/axn_lib.py                       — AXN v2 derivation (canonical)</p>
-<p>scripts/validate_deposit.py              — schema validator</p>
-<p>scripts/regenerate_surfaces.py           — surface regenerator (10 surfaces, hyphenated names)</p>
-<p>scripts/protocol_update.py               — protocol-update helper (firm rule #10)</p>
-<p>scripts/pre_overwrite.py                 — pre-write receipt enforcement</p>
-<p>scripts/bootstrap_familiarization.py     — instance bootstrap</p>
-<p>scripts/dodecad_cleanup.py               — canonical cleanup engine</p>
-<p>scripts/mint_deposit.py                  — sanitization layer for mint workflow</p>
-<p>scripts/reconcile_recovered_metadata.py  — Phase 1 engine</p>
-<p>scripts/reconcile_resolution_index.py    — Phase 3 engine</p>
-<p>scripts/validate_external_metadata.py    — sidecar validator</p>
-<p>scripts/insert_seed_deposits.py          — direct-mint pattern reference</p>
-<p>scripts/render_navbar.py                 — navbar renderer</p>
-<p>scripts/generate_state.py                — state.json generator</p>
-<p>scripts/generate_observatory.py          — Observatory page generator</p>
-<p>wire_deposit.py                          — single-deposit page renderer (NOT in scripts/)</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">scripts/axn_lib.py                       — AXN v2 derivation (canonical)
+scripts/validate_deposit.py              — schema validator
+scripts/regenerate_surfaces.py           — surface regenerator (10 surfaces, hyphenated names)
+scripts/protocol_update.py               — protocol-update helper (firm rule #10)
+scripts/pre_overwrite.py                 — pre-write receipt enforcement
+scripts/bootstrap_familiarization.py     — instance bootstrap
+scripts/dodecad_cleanup.py               — canonical cleanup engine
+scripts/mint_deposit.py                  — sanitization layer for mint workflow
+scripts/reconcile_recovered_metadata.py  — Phase 1 engine
+scripts/reconcile_resolution_index.py    — Phase 3 engine
+scripts/validate_external_metadata.py    — sidecar validator
+scripts/insert_seed_deposits.py          — direct-mint pattern reference
+scripts/render_navbar.py                 — navbar renderer
+scripts/generate_state.py                — state.json generator
+scripts/generate_observatory.py          — Observatory page generator
+wire_deposit.py                          — single-deposit page renderer (NOT in scripts/)</pre>
 
 <h3>Audit</h3>
 
-<p>```</p>
-<p>audit/REPORT.md                          — external audit log</p>
-<p>audit/CONSOLIDATED.json                  — audit findings</p>
-<p>audit/phase-3.5-ambiguous-mappings.md    — 3 cases needing human judgment (this session)</p>
-<p>audit/dodecad-cleanup-log.json           — cleanup engine audit trail</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">audit/REPORT.md                          — external audit log
+audit/CONSOLIDATED.json                  — audit findings
+audit/phase-3.5-ambiguous-mappings.md    — 3 cases needing human judgment (this session)
+audit/dodecad-cleanup-log.json           — cleanup engine audit trail</pre>
 
 <h3>Network sites (Dodecad)</h3>
 
-<p>```</p>
-<p>alexanarch.org              (primary)</p>
-<p>machinemediation.org         leesharks.com</p>
-<p>watergiraffe.org             spxi.dev / spxi.org</p>
-<p>godkinggoogle.vercel.app     vpcor.org</p>
-<p>chatgptpsychosis.org         maryleelabor.org</p>
-<p>livingarchitecturelab.org    traininglayerliterature.org</p>
-<p>semanticeconomy.org          mindcontrolpoems.blogspot.com</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">alexanarch.org              (primary)
+machinemediation.org         leesharks.com
+watergiraffe.org             spxi.dev / spxi.org
+godkinggoogle.vercel.app     vpcor.org
+chatgptpsychosis.org         maryleelabor.org
+livingarchitecturelab.org    traininglayerliterature.org
+semanticeconomy.org          mindcontrolpoems.blogspot.com</pre>
 
 <h3>Concept glossary (compressed)</h3>
 
@@ -1262,10 +1192,8 @@
 
 <p>Session glyph:</p>
 
-<p>```</p>
-<p>🔍📋 → 🧬🔗 → 🪞📂 → 🏗️⛓️ → 🌐∮</p>
-<p>search/audit → wire/link → reflect/expose → build/chain → web/return</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">🔍📋 → 🧬🔗 → 🪞📂 → 🏗️⛓️ → 🌐∮
+search/audit → wire/link → reflect/expose → build/chain → web/return</pre>
 
 <p>Compressed: 🪞⛓️∮</p>
 

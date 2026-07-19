@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Whitespace as Provenance: Representation Pipelines and the Extinction of Compositional Authorship (EA-WHITESPACE-01 v0.2) — Alexanarch</title><meta name="description" content="Argues that provenance erasure operates below the semantic layer, in the representation pipeline (digitization, normalization, serialization, tokenization, mode"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "Whitespace as Provenance: Representation Pipelines and the Extinction of Compositional Authorship (EA-WHITESPACE-01 v0.2)", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-07-02", "identifier": "AXN:03BB.GENERATIVE.🐚💎🪄💡🌙🚪", "description": "Argues that provenance erasure operates below the semantic layer, in the representation pipeline (digitization, normalization, serialization, tokenization, model processing, rendering) that makes texts available to language models. Core claims: character preservation is not compositional preservatio", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "whitespace, provenance erasure, representation pipeline, tokenization, serialization, compositional authorship, compositional erasure, extinction gradient, Pearl, Cotton Nero A.x, double invisibility, Snub-Poemed, calligram, Dickinson, Hopkins, Whitman, concrete poetry, editorial theory, variorum, facsimile, textual condition, WISP, Bhyravajjula, semantic economy, machine-mediated reception, alexanarch"}</script>
+<title>Whitespace as Provenance: Representation Pipelines and the Extinction of Compositional Authorship (EA-WHITESPACE-01 v0.2) — Alexanarch</title><meta name="description" content="Argues that provenance erasure operates below the semantic layer, in the representation pipeline (digitization, normalization, serialization…"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "Whitespace as Provenance: Representation Pipelines and the Extinction of Compositional Authorship (EA-WHITESPACE-01 v0.2)", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-07-02", "identifier": "AXN:03BB.GENERATIVE.🐚💎🪄💡🌙🚪", "description": "Argues that provenance erasure operates below the semantic layer, in the representation pipeline (digitization, normalization, serialization, tokenization, model processing, rendering) that makes texts available to language models. Core claims: character preservation is not compositional preservatio", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "whitespace, provenance erasure, representation pipeline, tokenization, serialization, compositional authorship, compositional erasure, extinction gradient, Pearl, Cotton Nero A.x, double invisibility, Snub-Poemed, calligram, Dickinson, Hopkins, Whitman, concrete poetry, editorial theory, variorum, facsimile, textual condition, WISP, Bhyravajjula, semantic economy, machine-mediated reception, alexanarch"}</script>
 <link rel="canonical" href="https://www.alexanarch.org/s/records/943/">
 <meta name="citation_title" content="Whitespace as Provenance: Representation Pipelines and the Extinction of Compositional Authorship (EA-WHITESPACE-01 v0.2)">
 <meta name="citation_author" content="Lee Sharks">
@@ -450,35 +450,33 @@
 
 <h2>Code</h2>
 
-<p>```python</p>
-<p>from transformers import AutoTokenizer</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">from transformers import AutoTokenizer
 
-<p>tok = AutoTokenizer.from_pretrained(&quot;gpt2&quot;)</p>
+tok = AutoTokenizer.from_pretrained(&quot;gpt2&quot;)
 
-<h1>Fragment approximating a naive text-layer extraction of a calligram</h1>
-<h1>region: ten phrases from Snub-Poemed (AXN:0246), each carrying the</h1>
-<h1>horizontal indentation of its position in the spatial arrangement.</h1>
-<p>spatial_fragment = &quot;&quot;&quot;                    do they know beauty?</p>
-<p>        is it madness</p>
-<p>                to feel and to know?</p>
-<p>   the same poet composing</p>
-<p>              both tragedy and comedy</p>
-<p>                                  satyr</p>
-<p>     I press my scruff-weary beard</p>
-<p>                        to your lips</p>
-<p>              awkward with longing</p>
-<p>                     snub-nosed&quot;&quot;&quot;</p>
+# Fragment approximating a naive text-layer extraction of a calligram
+# region: ten phrases from Snub-Poemed (AXN:0246), each carrying the
+# horizontal indentation of its position in the spatial arrangement.
+spatial_fragment = &quot;&quot;&quot;                    do they know beauty?
+        is it madness
+                to feel and to know?
+   the same poet composing
+              both tragedy and comedy
+                                  satyr
+     I press my scruff-weary beard
+                        to your lips
+              awkward with longing
+                     snub-nosed&quot;&quot;&quot;
 
-<h1>The same phrases linearized — typical PDF/HTML extraction output.</h1>
-<p>linearized = (&quot;do they know beauty? is it madness to feel and to know? &quot;</p>
-<p>              &quot;the same poet composing both tragedy and comedy satyr &quot;</p>
-<p>              &quot;I press my scruff-weary beard to your lips awkward with &quot;</p>
-<p>              &quot;longing snub-nosed&quot;)</p>
+# The same phrases linearized — typical PDF/HTML extraction output.
+linearized = (&quot;do they know beauty? is it madness to feel and to know? &quot;
+              &quot;the same poet composing both tragedy and comedy satyr &quot;
+              &quot;I press my scruff-weary beard to your lips awkward with &quot;
+              &quot;longing snub-nosed&quot;)
 
-<p>for name, text in [(&quot;spatial&quot;, spatial_fragment), (&quot;linearized&quot;, linearized)]:</p>
-<p>    ids = tok.encode(text)</p>
-<p>    print(name, len(ids), tok.decode(ids) == text)</p>
-<p>```</p>
+for name, text in [(&quot;spatial&quot;, spatial_fragment), (&quot;linearized&quot;, linearized)]:
+    ids = tok.encode(text)
+    print(name, len(ids), tok.decode(ids) == text)</pre>
 
 <h2>Results</h2>
 
@@ -492,16 +490,14 @@
 
 <p><strong>First 30 token strings of the spatial version:</strong></p>
 
-<p>```</p>
-<p>  0–18   &#x27;Ġ&#x27; × 19        (nineteen consecutive single-space tokens)</p>
-<p>  19     &#x27;Ġdo&#x27;</p>
-<p>  20     &#x27;Ġthey&#x27;</p>
-<p>  21     &#x27;Ġknow&#x27;</p>
-<p>  22     &#x27;Ġbeauty&#x27;</p>
-<p>  23     &#x27;?&#x27;</p>
-<p>  24     &#x27;Ċ&#x27;</p>
-<p>  25–29  &#x27;Ġ&#x27; × 5 ...     (the next line&#x27;s indentation begins)</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">  0–18   &#x27;Ġ&#x27; × 19        (nineteen consecutive single-space tokens)
+  19     &#x27;Ġdo&#x27;
+  20     &#x27;Ġthey&#x27;
+  21     &#x27;Ġknow&#x27;
+  22     &#x27;Ġbeauty&#x27;
+  23     &#x27;?&#x27;
+  24     &#x27;Ċ&#x27;
+  25–29  &#x27;Ġ&#x27; × 5 ...     (the next line&#x27;s indentation begins)</pre>
 
 <h2>The three findings (as stated in §4)</h2>
 

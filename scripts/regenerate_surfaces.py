@@ -459,11 +459,11 @@ STATIC_URLS = [
     ("https://alexanarch.org/resolve/", 0.7),
     ("https://alexanarch.org/datasets/", 0.7),
     # Generated surfaces
-    ("https://alexanarch.org/s/browse/", 0.7),
-    ("https://alexanarch.org/s/wiki/", 0.6),
-    ("https://alexanarch.org/s/graph/", 0.6),
-    ("https://alexanarch.org/s/search/", 0.7),
-    ("https://alexanarch.org/search/", 0.8),
+    ("https://alexanarch.org/s/browse/", 0.5),
+    ("https://alexanarch.org/s/wiki/", 0.5),
+    ("https://alexanarch.org/s/graph/", 0.5),
+    ("https://alexanarch.org/s/search/", 0.5),
+    ("https://alexanarch.org/search/", 0.6),
     # Canonical data
     ("https://alexanarch.org/data/registry.json", 0.5),
     ("https://alexanarch.org/data/state.json", 0.6),
@@ -504,7 +504,7 @@ def regenerate_sitemap(reg, dry_run=False):
         last = esc_xml(d.get("date") or today)
         lines.append(
             f'  <url><loc>https://alexanarch.org/s/records/{n}/</loc>'
-            f'<lastmod>{last}</lastmod><priority>0.6</priority></url>'
+            f'<lastmod>{last}</lastmod><priority>0.8</priority></url>'
         )
         # Paper PDF URL (the /papers/ compression layer, EA-LACUNA-PROTOCOL-01).
         # Emitted from the registry so wiki/sitemap rebuilds can never drop
@@ -515,7 +515,7 @@ def regenerate_sitemap(reg, dry_run=False):
         if hx:
             lines.append(
                 f'  <url><loc>https://alexanarch.org/papers/AXN-{hx.zfill(4)}.pdf</loc>'
-                f'<lastmod>{last}</lastmod><priority>0.5</priority></url>'
+                f'<lastmod>{last}</lastmod><priority>0.7</priority></url>'
             )
     lines.append("</urlset>")
     out = "\n".join(lines) + "\n"

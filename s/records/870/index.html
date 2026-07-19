@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Alexanarch Data Foundry — Session Workplan 2026-06-22 — Alexanarch</title><meta name="description" content="Session 3 workplan documenting the binding step (capture-tracker reconciliation into time-series semantic-addresses table with subjunctive class), and the new A"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "Alexanarch Data Foundry — Session Workplan 2026-06-22", "author": {"@type": "Person", "name": "Lee Sharks (MANUS) + TACHYON"}, "datePublished": "2026-06-22", "identifier": "AXN:0372.ARCHIVAL.🌟🛡️🔝🪦🔜🕘", "description": "Session 3 workplan documenting the binding step (capture-tracker reconciliation into time-series semantic-addresses table with subjunctive class), and the new Autonomous Document workstream evaluating Gemini's proposal for embedded text metadata. Mints 5 concepts (Autonomous Document, The Binding St", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "workplan, binding step, semantic address, subjunctive, autonomous document, scholia, forensic canary, TACHYON, session 3"}</script>
+<title>Alexanarch Data Foundry — Session Workplan 2026-06-22 — Alexanarch</title><meta name="description" content="Session 3 workplan documenting the binding step (capture-tracker reconciliation into time-series semantic-addresses table with subjunctive class), and the…"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "Alexanarch Data Foundry — Session Workplan 2026-06-22", "author": {"@type": "Person", "name": "Lee Sharks (MANUS) + TACHYON"}, "datePublished": "2026-06-22", "identifier": "AXN:0372.ARCHIVAL.🌟🛡️🔝🪦🔜🕘", "description": "Session 3 workplan documenting the binding step (capture-tracker reconciliation into time-series semantic-addresses table with subjunctive class), and the new Autonomous Document workstream evaluating Gemini's proposal for embedded text metadata. Mints 5 concepts (Autonomous Document, The Binding St", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "workplan, binding step, semantic address, subjunctive, autonomous document, scholia, forensic canary, TACHYON, session 3"}</script>
 <link rel="canonical" href="https://www.alexanarch.org/s/records/870/">
 <meta name="citation_title" content="Alexanarch Data Foundry — Session Workplan 2026-06-22">
 <meta name="citation_author" content="Lee Sharks (MANUS) + TACHYON">
@@ -182,26 +182,22 @@
 
 <p><strong>Final unified state</strong>:</p>
 
-<p>```</p>
-<p>1,949 addresses · 247 observations · 7,156 concepts · 341 with linked addresses</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">1,949 addresses · 247 observations · 7,156 concepts · 341 with linked addresses
 
-<p>Observation classes:</p>
-<p>  subjunctive          1,733   (Lee&#x27;s third category — hypothesized, not observed)</p>
-<p>  observed_address       111   (positive: EXACT/BROAD/ADOPTION/WOUND_GAUGE/FAIR_TREATMENT/PARTIAL)</p>
-<p>  unrated                 83   (observed but no decisive status — older captures)</p>
-<p>  verified_non_address    22   (negative: ZERO_RESULT/ZERO_INDEX/BASIN_MISS/DISSOLUTION/CORRECTION)</p>
-<p>```</p>
+Observation classes:
+  subjunctive          1,733   (Lee&#x27;s third category — hypothesized, not observed)
+  observed_address       111   (positive: EXACT/BROAD/ADOPTION/WOUND_GAUGE/FAIR_TREATMENT/PARTIAL)
+  unrated                 83   (observed but no decisive status — older captures)
+  verified_non_address    22   (negative: ZERO_RESULT/ZERO_INDEX/BASIN_MISS/DISSOLUTION/CORRECTION)</pre>
 
 <p>Per-address fields:</p>
-<p>```</p>
-<p>canonical_query (quotes preserved) · is_quoted · refers_to · type</p>
-<p>observation_class · sources[] · battery_membership[]</p>
-<p>observations[] sorted by date, each carries:</p>
-<p>  source · date · status|framing · slug · gallery_url · details_excerpt · ...</p>
-<p>latest_status · latest_observation_date</p>
-<p>termindex {tier, count, category, first_date, first_doi, variants}  # if from termindex</p>
-<p>mint_role · mint_id · mint_canonical                                  # if from mint</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">canonical_query (quotes preserved) · is_quoted · refers_to · type
+observation_class · sources[] · battery_membership[]
+observations[] sorted by date, each carries:
+  source · date · status|framing · slug · gallery_url · details_excerpt · ...
+latest_status · latest_observation_date
+termindex {tier, count, category, first_date, first_doi, variants}  # if from termindex
+mint_role · mint_id · mint_canonical                                  # if from mint</pre>
 
 <p>Concepts now carry `semantic_addresses[]` — list of address_ids that refer to them. Lookup follows `concept → addresses → observations[]` for the full reception history.</p>
 
@@ -319,11 +315,9 @@
 <h3>Phase 2 — Combined text generation</h3>
 
 <p>For each deposit, produce `data/autonomous/AXN-{hex}-autonomous.md`:</p>
-<p>```</p>
-<p>[YAML front-matter from scholia]</p>
-<p>[original prose body]</p>
-<p>[closing scholia]</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">[YAML front-matter from scholia]
+[original prose body]
+[closing scholia]</pre>
 
 <p>These become the canonical <em>autonomous</em> versions, suitable for direct AI ingestion.</p>
 
@@ -381,23 +375,21 @@
 
 <p>#### Bulk run across whole archive (end of session 3)</p>
 
-<p>```</p>
-<p>870 deposits → 870 autonomous docs in data/autonomous/  (3 seconds, 29 MB)</p>
-<p>869 docs ingested → 669 transactions in data/ledger/cha.ledger (1 second, 142 KB)</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">870 deposits → 870 autonomous docs in data/autonomous/  (3 seconds, 29 MB)
+869 docs ingested → 669 transactions in data/ledger/cha.ledger (1 second, 142 KB)
 
-<p>3 ephemeral hash anchors (deposits using non-standard YAML field names —</p>
-<p>  correctly anchored by TX_HASH for downstream reconstruction)</p>
+3 ephemeral hash anchors (deposits using non-standard YAML field names —
+  correctly anchored by TX_HASH for downstream reconstruction)
 
-<p>TX type breakdown:</p>
-<p>  TX_MINT     464   (concepts coined)</p>
-<p>  TX_SPECIFY   71   (formal operators)</p>
-<p>  TX_INVOKE    51   (semantic addresses claimed)</p>
-<p>  TX_DEVELOP   28   (existing concepts built up)</p>
-<p>  TX_FOUND     21   (institutions, journals, rooms)</p>
-<p>  TX_REVISE    19   (meanings extended)</p>
-<p>  TX_POSITION  12   (entities placed in roles)</p>
-<p>  TX_HASH       3   (ephemeral SHA-256 anchors)</p>
-<p>```</p>
+TX type breakdown:
+  TX_MINT     464   (concepts coined)
+  TX_SPECIFY   71   (formal operators)
+  TX_INVOKE    51   (semantic addresses claimed)
+  TX_DEVELOP   28   (existing concepts built up)
+  TX_FOUND     21   (institutions, journals, rooms)
+  TX_REVISE    19   (meanings extended)
+  TX_POSITION  12   (entities placed in roles)
+  TX_HASH       3   (ephemeral SHA-256 anchors)</pre>
 
 <p>Most deposits show low transaction counts because the reading pass has</p>
 <p>only processed ~10 deposits in depth. As reading progresses, the ledger</p>

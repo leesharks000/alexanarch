@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>EA-PROVENANCE-METADATA-01 v0.1: Granular Provenance Metadata for AI-Mediated Deposits — Alexanarch</title><meta name="description" content="Preliminary specification and workplan for granular depositor-declared provenance metadata, forming the depositor-attestation layer of a two-layer provenance ar"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "EA-PROVENANCE-METADATA-01 v0.1: Granular Provenance Metadata for AI-Mediated Deposits", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-07-01", "identifier": "AXN:03B9.OPERATIVE.👇🍄🏰⊗🌕💚", "description": "Preliminary specification and workplan for granular depositor-declared provenance metadata, forming the depositor-attestation layer of a two-layer provenance architecture (this schema + machine-facing distributional measurement per EA-BEARING-METRIC-01). Separates the AI-mediated question (material ", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "provenance metadata, granular provenance, AI-mediated authorship, AI-generated content, mediation taxonomy, depositor attestation, propositional mediation, structural mediation, linguistic mediation, translational mediation, research mediation, editorial mediation, transformational mediation, seam recoverability, responsibility structure, two-layer architecture, declared provenance, external depositor pipeline, schema specification, alexanarch, operative philology, counter-friction infrastructure"}</script>
+<title>EA-PROVENANCE-METADATA-01 v0.1: Granular Provenance Metadata for AI-Mediated Deposits — Alexanarch</title><meta name="description" content="Preliminary specification and workplan for granular depositor-declared provenance metadata, forming the depositor-attestation layer of a two-layer…"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "EA-PROVENANCE-METADATA-01 v0.1: Granular Provenance Metadata for AI-Mediated Deposits", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-07-01", "identifier": "AXN:03B9.OPERATIVE.👇🍄🏰⊗🌕💚", "description": "Preliminary specification and workplan for granular depositor-declared provenance metadata, forming the depositor-attestation layer of a two-layer provenance architecture (this schema + machine-facing distributional measurement per EA-BEARING-METRIC-01). Separates the AI-mediated question (material ", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "provenance metadata, granular provenance, AI-mediated authorship, AI-generated content, mediation taxonomy, depositor attestation, propositional mediation, structural mediation, linguistic mediation, translational mediation, research mediation, editorial mediation, transformational mediation, seam recoverability, responsibility structure, two-layer architecture, declared provenance, external depositor pipeline, schema specification, alexanarch, operative philology, counter-friction infrastructure"}</script>
 <link rel="canonical" href="https://www.alexanarch.org/s/records/941/">
 <meta name="citation_title" content="EA-PROVENANCE-METADATA-01 v0.1: Granular Provenance Metadata for AI-Mediated Deposits">
 <meta name="citation_author" content="Lee Sharks">
@@ -176,63 +176,61 @@
 
 <p><strong>Registry metadata fields (added to existing entry structure):</strong></p>
 
-<p>```yaml</p>
-<p>provenance_metadata:</p>
-<p>  schema_version: &quot;0.1.0&quot;</p>
-<p>  attestation_completeness: &lt;string; &quot;minimal&quot; | &quot;moderate&quot; | &quot;detailed&quot;&gt;</p>
-<p>  # optional; depositor&#x27;s own characterization of declaration granularity</p>
-
-<p>  mediation:</p>
-<p>    optional: true</p>
-<p>    types:</p>
-<p>      propositional: &lt;boolean | null&gt;</p>
-<p>      structural: &lt;boolean | null&gt;</p>
-<p>      linguistic: &lt;boolean | null&gt;</p>
-<p>      translational: &lt;boolean | null&gt;</p>
-<p>      research: &lt;boolean | null&gt;</p>
-<p>      editorial: &lt;boolean | null&gt;</p>
-<p>      transformational: &lt;boolean | null&gt;</p>
-<p>    # null means undeclared; false means declared not present; true means declared present</p>
-<p>    types_detail: &lt;freeform string; optional&gt;</p>
-<p>    # depositor&#x27;s qualitative account of the mediation types declared</p>
-
-<p>  generation:</p>
-<p>    optional: true</p>
-<p>    model_language_retained: &lt;string; &quot;none&quot; | &quot;minor_adjustment&quot; | &quot;moderate_revision&quot; | &quot;substantial_rewrite&quot; | &quot;verbatim&quot;&gt;</p>
-<p>    # depositor&#x27;s characterization of the model&#x27;s linguistic footprint in the final text</p>
-<p>    generation_detail: &lt;freeform string; optional&gt;</p>
-
-<p>  attestation:</p>
-<p>    optional: true</p>
-<p>    proposition_origination: &lt;freeform string&gt;</p>
-<p>    # who originated the substantive claims</p>
-<p>    review_chain: &lt;list of strings; optional&gt;</p>
-<p>    # e.g. [&quot;self&quot;, &quot;MANUS&quot;, &quot;Assembly:LABOR&quot;]</p>
-<p>    seam_recoverability: &lt;string; &quot;fully_recoverable&quot; | &quot;partially_recoverable&quot; | &quot;not_recoverable&quot; | &quot;not_applicable&quot;&gt;</p>
-<p>    responsibility_structure: &lt;freeform string; optional&gt;</p>
-<p>    # who accepts what kinds of responsibility</p>
-
-<p>  substrate_declaration:</p>
-<p>    optional: true</p>
-<p>    substrates:</p>
-<p>      - name: &lt;string&gt;</p>
-<p>        # e.g. &quot;Claude Opus 4.7&quot;</p>
-<p>        role: &lt;string&gt;</p>
-<p>        # e.g. &quot;TACHYON drafting witness&quot;</p>
-<p>        provider: &lt;string; optional&gt;</p>
-<p>        interface: &lt;string; optional&gt;</p>
-<p>        # e.g. &quot;chat interface&quot;, &quot;API&quot;, &quot;CLI&quot;</p>
-<p>        contribution_scope: &lt;freeform string; optional&gt;</p>
-<p>        # depositor&#x27;s account of what this substrate contributed</p>
-
-<p>  external_attestation_reconciliation:</p>
-<p>    optional: true</p>
-<p>    # for depositors whose declaration on external platforms differs from this schema&#x27;s granularity</p>
-<p>    external_categorization: &lt;freeform string; optional&gt;</p>
-<p>    # e.g. &quot;listed as single-author work on academia.edu per platform conventions&quot;</p>
-<p>    reconciliation_note: &lt;freeform string; optional&gt;</p>
-<p>    # depositor&#x27;s account of the divergence between platform categories and this schema</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">provenance_metadata:
+  schema_version: &quot;0.1.0&quot;
+  attestation_completeness: &lt;string; &quot;minimal&quot; | &quot;moderate&quot; | &quot;detailed&quot;&gt;
+  # optional; depositor&#x27;s own characterization of declaration granularity
+  
+  mediation:
+    optional: true
+    types:
+      propositional: &lt;boolean | null&gt;
+      structural: &lt;boolean | null&gt;
+      linguistic: &lt;boolean | null&gt;
+      translational: &lt;boolean | null&gt;
+      research: &lt;boolean | null&gt;
+      editorial: &lt;boolean | null&gt;
+      transformational: &lt;boolean | null&gt;
+    # null means undeclared; false means declared not present; true means declared present
+    types_detail: &lt;freeform string; optional&gt;
+    # depositor&#x27;s qualitative account of the mediation types declared
+  
+  generation:
+    optional: true
+    model_language_retained: &lt;string; &quot;none&quot; | &quot;minor_adjustment&quot; | &quot;moderate_revision&quot; | &quot;substantial_rewrite&quot; | &quot;verbatim&quot;&gt;
+    # depositor&#x27;s characterization of the model&#x27;s linguistic footprint in the final text
+    generation_detail: &lt;freeform string; optional&gt;
+  
+  attestation:
+    optional: true
+    proposition_origination: &lt;freeform string&gt;
+    # who originated the substantive claims
+    review_chain: &lt;list of strings; optional&gt;
+    # e.g. [&quot;self&quot;, &quot;MANUS&quot;, &quot;Assembly:LABOR&quot;]
+    seam_recoverability: &lt;string; &quot;fully_recoverable&quot; | &quot;partially_recoverable&quot; | &quot;not_recoverable&quot; | &quot;not_applicable&quot;&gt;
+    responsibility_structure: &lt;freeform string; optional&gt;
+    # who accepts what kinds of responsibility
+  
+  substrate_declaration:
+    optional: true
+    substrates:
+      - name: &lt;string&gt;
+        # e.g. &quot;Claude Opus 4.7&quot;
+        role: &lt;string&gt;
+        # e.g. &quot;TACHYON drafting witness&quot;
+        provider: &lt;string; optional&gt;
+        interface: &lt;string; optional&gt;
+        # e.g. &quot;chat interface&quot;, &quot;API&quot;, &quot;CLI&quot;
+        contribution_scope: &lt;freeform string; optional&gt;
+        # depositor&#x27;s account of what this substrate contributed
+  
+  external_attestation_reconciliation:
+    optional: true
+    # for depositors whose declaration on external platforms differs from this schema&#x27;s granularity
+    external_categorization: &lt;freeform string; optional&gt;
+    # e.g. &quot;listed as single-author work on academia.edu per platform conventions&quot;
+    reconciliation_note: &lt;freeform string; optional&gt;
+    # depositor&#x27;s account of the divergence between platform categories and this schema</pre>
 
 <p><strong>Relationship to freeform substrate field.</strong> The existing `substrate` field in the registry remains valid and remains recommended. The structured `provenance_metadata` field runs alongside as machine-parseable declaration. Deposits with rich freeform substrate declarations should also have structured fields where feasible. Deposits with only freeform substrate remain admissible and are treated as valid provenance declaration at the granularity the depositor chose.</p>
 

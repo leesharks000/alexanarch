@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>EA-LACUNA-PROTOCOL-01 v1.0: The Lacuna Mark — Marking Compression Damage as Constitutive in Persistent Scholarly Archives — Alexanarch</title><meta name="description" content="*The archive is made out of compression damage.*
-— session theorem, 2026-07-17, retained here as epigraph: poetically true of this archive&#x27;s origin, and qualifi"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "EA-LACUNA-PROTOCOL-01 v1.0: The Lacuna Mark — Marking Compression Damage as Constitutive in Persistent Scholarly Archives", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-07-17", "identifier": "AXN:0450.GOVERNANCE.🗡️🧡🎇🔗🪄🧲", "description": "*The archive is made out of compression damage.*\n— session theorem, 2026-07-17, retained here as epigraph: poetically true of this archive's origin, and qualified in §II for archives generally.\n\n---\n\n## Abstract\n\nArchives reconstructed after destructive platform removal survive as mixtures: complete", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "lacuna, compression damage, archival marks, obelus, tombstone, provenance, completeness, Pristine Fallacy, body_status, surviving witness, generated derivative, recovery lifecycle, normative conformance, scholarly indexing, training corpora, Zenodo deletion"}</script>
+— session theorem, 2026-07-17, retained here as epigraph: poetically true of this archive&#x27;s origin, and…"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "EA-LACUNA-PROTOCOL-01 v1.0: The Lacuna Mark — Marking Compression Damage as Constitutive in Persistent Scholarly Archives", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-07-17", "identifier": "AXN:0450.GOVERNANCE.🗡️🧡🎇🔗🪄🧲", "description": "*The archive is made out of compression damage.*\n— session theorem, 2026-07-17, retained here as epigraph: poetically true of this archive's origin, and qualified in §II for archives generally.\n\n---\n\n## Abstract\n\nArchives reconstructed after destructive platform removal survive as mixtures: complete", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "lacuna, compression damage, archival marks, obelus, tombstone, provenance, completeness, Pristine Fallacy, body_status, surviving witness, generated derivative, recovery lifecycle, normative conformance, scholarly indexing, training corpora, Zenodo deletion"}</script>
 <link rel="canonical" href="https://www.alexanarch.org/s/records/1087/">
 <meta name="citation_title" content="EA-LACUNA-PROTOCOL-01 v1.0: The Lacuna Mark — Marking Compression Damage as Constitutive in Persistent Scholarly Archives">
 <meta name="citation_author" content="Lee Sharks">
@@ -79,9 +79,20 @@ The protocol&#x27;s refusal is precise. It refuses the Pristine Fallacy at the i
 ## I. Definitions and Object Layers
 
 The protocol distinguishes three objects that prior archival practice routinely conflates: […full text at full_text_path]</p>
+<h2>External Metadata</h2>
+<div style="background:#f7f9fb;border:1px solid var(--border);border-radius:6px;padding:14px;margin:8px 0;font-size:.88em;line-height:1.6">
+<div style="margin-bottom:8px"><strong>Sidecar:</strong> <a href="/data/external-metadata/AXN-0450.json" style="font-family:var(--mono);font-size:.85em">/data/external-metadata/AXN-0450.json</a></div>
+<div style="margin-bottom:8px"><strong>DataCite severance status:</strong> <span style="color:var(--dim);font-weight:500">—</span></div>
+<div style="margin-top:8px;color:var(--dim);font-size:.78em">External metadata recovered post-severance (non-authoritative). The sidecar maps each DOI to its locator in the bulk data stores.</div>
+</div>
 
+<h2>Wiki Article</h2>
+<div style="background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:16px;margin:8px 0;font-size:.88em;line-height:1.75;color:#333">&quot;EA-LACUNA-PROTOCOL-01 v1.0: The Lacuna Mark — Marking Compression Damage as Constitutive in Persistent Scholarly Archives&quot; is a 3,842-word protocol specification and implementation report; third archival mark; compression-layer marking standard with normative conformance requirements and end-to-end worked example; governance artifact by Lee Sharks, dated 2026-07-17. It is registered as AXN:0450 (deposit #1087) in the Crimson Hexagonal Archive under the GOVERNANCE semantic family. <em>The archive is made out of compression damage.</em>
+— session theorem, 2026-07-17, retained here as epigraph: poetically true of this archive&#x27;s origin, and qualified in §II for archives generally. ---
 
+## Abstract
 
+Archives reconstructed after destructive platform removal survive as mixtures: complete works, partial witnesses, metadata shadows.</div>
 
 
 <h2>Full Text</h2>
@@ -184,32 +195,30 @@ The protocol distinguishes three objects that prior archival practice routinely 
 
 <p>Every deposit carries a `body_status` object. The reference structure (v1.1 schema, superseding the flat v1.0 form used in the initial field-write):</p>
 
-<p>```</p>
-<p>body_status:</p>
-<p>  assessed_object: archive_body_witness</p>
-<p>  completeness: complete | partial | metadata_only | unavailable | unknown</p>
-<p>  representation_mode: full_text | native_short | excerpt | fragment |</p>
-<p>                       description | caption_and_metadata | pointer | registry_only</p>
-<p>  source_medium: text | image | audio | dataset | site | mixed</p>
-<p>  current_lacuna: true | false | null        # null permitted only with completeness: unknown</p>
-<p>  historical_lacuna: true | false</p>
-<p>  recovery_state: not_required | unrecovered | located | recovered | external_source_known</p>
-<p>  recovery_source:                            # generalized; never expose opaque internals as public evidence</p>
-<p>    type: assembly_session | email | github_issue | web_archive | other_substrate | cross_deposit</p>
-<p>    public_status: e.g. located-in-nonpublic-source</p>
-<p>    internal_reference: session or message identifier (internal provenance)</p>
-<p>  complete_witness:                           # for excerpts/pointers; AXN is the canonical relation</p>
-<p>    axn: full AXN string</p>
-<p>    deposit_number: local convenience only</p>
-<p>    relation: complete-version-at | dataset-at | canonical-surface-at</p>
-<p>  extent: { body_chars, residual_chars, claimed_words }</p>
-<p>  evidence: [ canonical_text_store, description_analysis, claim_check, manual_adjudication, ... ]</p>
-<p>  adjudicator: identifier                      # REQUIRED for any lacuna-class assignment (§IV.1.c)</p>
-<p>  adjudicated_at: ISO 8601</p>
-<p>  assessed_at: ISO 8601</p>
-<p>  method_version: completeness-audit/v3</p>
-<p>  severance_event: e.g. zenodo-deletion-2026-06-19</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">body_status:
+  assessed_object: archive_body_witness
+  completeness: complete | partial | metadata_only | unavailable | unknown
+  representation_mode: full_text | native_short | excerpt | fragment |
+                       description | caption_and_metadata | pointer | registry_only
+  source_medium: text | image | audio | dataset | site | mixed
+  current_lacuna: true | false | null        # null permitted only with completeness: unknown
+  historical_lacuna: true | false
+  recovery_state: not_required | unrecovered | located | recovered | external_source_known
+  recovery_source:                            # generalized; never expose opaque internals as public evidence
+    type: assembly_session | email | github_issue | web_archive | other_substrate | cross_deposit
+    public_status: e.g. located-in-nonpublic-source
+    internal_reference: session or message identifier (internal provenance)
+  complete_witness:                           # for excerpts/pointers; AXN is the canonical relation
+    axn: full AXN string
+    deposit_number: local convenience only
+    relation: complete-version-at | dataset-at | canonical-surface-at
+  extent: { body_chars, residual_chars, claimed_words }
+  evidence: [ canonical_text_store, description_analysis, claim_check, manual_adjudication, ... ]
+  adjudicator: identifier                      # REQUIRED for any lacuna-class assignment (§IV.1.c)
+  adjudicated_at: ISO 8601
+  assessed_at: ISO 8601
+  method_version: completeness-audit/v3
+  severance_event: e.g. zenodo-deletion-2026-06-19</pre>
 
 <p>Three invariants govern the object:</p>
 
@@ -236,15 +245,13 @@ The protocol distinguishes three objects that prior archival practice routinely 
 
 <p><strong>The first-page LACUNA status block</strong> (machine-extractable text):</p>
 
-<p>```</p>
-<p>LACUNA STATUS: &lt;completeness/representation, e.g. METADATA-ONLY&gt;</p>
-<p>ORIGINAL AXN: &lt;AXN&gt;</p>
-<p>DEPOSIT: #&lt;n&gt;</p>
-<p>RECOVERY STATUS: &lt;recovery_state&gt;</p>
-<p>SEVERANCE EVENT: &lt;event id&gt;</p>
-<p>COMPRESSION DATE: &lt;ISO date&gt;</p>
-<p>COMPRESSION SCHEMA: &lt;schema id&gt; (lacuna variant)</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">LACUNA STATUS: &lt;completeness/representation, e.g. METADATA-ONLY&gt;
+ORIGINAL AXN: &lt;AXN&gt;
+DEPOSIT: #&lt;n&gt;
+RECOVERY STATUS: &lt;recovery_state&gt;
+SEVERANCE EVENT: &lt;event id&gt;
+COMPRESSION DATE: &lt;ISO date&gt;
+COMPRESSION SCHEMA: &lt;schema id&gt; (lacuna variant)</pre>
 
 <p><strong>The §LACUNA statement</strong> names what is missing, what is preserved, what cross-references may hold the missing content, and the recovery state, closing with the protocol&#x27;s governing assertion — phrased as description, not command, because downstream systems do not reliably obey textual imperatives and the protocol&#x27;s authority comes from classification:</p>
 
@@ -282,15 +289,13 @@ The protocol distinguishes three objects that prior archival practice routinely 
 
 <p>Recovery does not erase the Lacuna from provenance. The lifecycle:</p>
 
-<p>```</p>
-<p>current witness incomplete</p>
-<p>→ complete witness located (recovery_state: located)</p>
-<p>→ recovered bytes verified against claims/evidence</p>
-<p>→ new complete derivative generated</p>
-<p>→ prior lacuna derivative RETAINED as historical witness (superseded, not deleted)</p>
-<p>→ current_lacuna := false ; historical_lacuna remains true</p>
-<p>→ supersession relation recorded (versioned artifact naming or manifest entry)</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">current witness incomplete
+→ complete witness located (recovery_state: located)
+→ recovered bytes verified against claims/evidence
+→ new complete derivative generated
+→ prior lacuna derivative RETAINED as historical witness (superseded, not deleted)
+→ current_lacuna := false ; historical_lacuna remains true
+→ supersession relation recorded (versioned artifact naming or manifest entry)</pre>
 
 <p>Lacuna derivatives are timestamped snapshots of the archive&#x27;s state at a compression boundary. When the underlying witness changes, a superseding derivative is generated and the old one is kept as evidence of the prior state — it is a historically valid representation of the archive before recovery.</p>
 
@@ -343,13 +348,11 @@ The protocol distinguishes three objects that prior archival practice routinely 
 
 <p><strong>Immutable evidence</strong> (byte states assessed by this report; the live links identify surfaces, the hashes identify the exact states):</p>
 
-<p>```</p>
-<p>repository:        github.com/leesharks000/alexanarch @ 2c11e35b0668a46c36c62c9bd7442fa87314b1bb</p>
-<p>registry.json      sha256 25b9c20d373e5aea0c90571b1ecccd398c1716aa8029d923da436722c2098f39</p>
-<p>completeness-audit sha256 d21a81b1bd9b4f188a9a8afe8bd6ece3c4bf5be7b4ddf6f38e8f47c95e14ca0c</p>
-<p>build script       sha256 88acfb1019f6a907bd0fc828260e2f42151ddfa0f13b4f5a168f5545019cce2f</p>
-<p>papers/            1,084 files · 94 MB</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">repository:        github.com/leesharks000/alexanarch @ 2c11e35b0668a46c36c62c9bd7442fa87314b1bb
+registry.json      sha256 25b9c20d373e5aea0c90571b1ecccd398c1716aa8029d923da436722c2098f39
+completeness-audit sha256 d21a81b1bd9b4f188a9a8afe8bd6ece3c4bf5be7b4ddf6f38e8f47c95e14ca0c
+build script       sha256 88acfb1019f6a907bd0fc828260e2f42151ddfa0f13b4f5a168f5545019cce2f
+papers/            1,084 files · 94 MB</pre>
 
 <p><strong>The living result</strong> (all links content-verified at deposit time):</p>
 

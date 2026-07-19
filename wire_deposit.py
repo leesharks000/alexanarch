@@ -96,6 +96,90 @@ def wire_deposit(deposit_number, concepts=None, wiki_article=None, entity_triple
         print(f"    triples: {len(entity_triples)}")
 
 
+def _compose_meta_description(d, max_len=155, min_target=120):
+    """Compose a rich meta description for SERP snippets.
+    
+    Meta description is the ~155-char snippet Google shows under the SERP title.
+    Records with short descriptions (< 120 chars) were previously truncated at
+    that length, causing Google to prefer the browse page's abundant text over
+    the record page for many queries.
+    
+    Strategy: if description is already long enough, use it (word-safe truncate);
+    otherwise extend with the informative tail of wiki_article's opening sentence
+    ("is a N-word content-type by author, a heteronym within..."), which is a
+    reliably rich pattern authored by publish_wiki_entries.py.
+    """
+    desc = (d.get('description') or '').strip()
+    wiki = (d.get('wiki_article') or '').strip()
+    keywords = d.get('keywords', []) or []
+    title = (d.get('title') or '').strip()
+    
+    def _truncate_at_word(s, limit):
+        """Truncate at last word boundary before limit; no mid-word cuts."""
+        if len(s) <= limit:
+            return s
+        cut = s[:limit].rsplit(' ', 1)[0]
+        return cut.rstrip('.,;: ') + '…'
+    
+    # Case 1: description is already long enough — use it (word-safe truncate)
+    if len(desc) >= min_target:
+        return _truncate_at_word(desc, max_len)
+    
+    # Case 2: short description — mine wiki_article for a rich extension
+    if wiki:
+        # Wiki entries reliably follow this shape:
+        #   "TITLE" is a N-word CONTENT_TYPE by AUTHOR, ...
+        # The "TITLE" quoted at the start is redundant with the SERP title;
+        # skip it, and rewrite "is a" as "It is a" so the extension reads as
+        # a proper sentence when it follows the description.
+        import re as _re
+        m = _re.match(r'^["\u201c\u201d]?[^"\u201c\u201d]{0,300}["\u201c\u201d]?\s+is\s+(a|an)\s+', wiki)
+        if m:
+            # keep the "a"/"an" and everything after; prepend "It" to form
+            # "It is a 49,530-word dataset by Jack Feist..."
+            wiki_tail = 'It is ' + wiki[m.end() - len(m.group(1)) - 1:].lstrip()
+        else:
+            wiki_tail = wiki
+        
+        # Take first sentence of the tail
+        parts = wiki_tail.replace('!', '.').replace('?', '.').split('. ')
+        wiki_lead = parts[0].strip()
+        if len(wiki_lead) < 60 and len(parts) > 1:
+            wiki_lead = (wiki_lead + '. ' + parts[1]).strip()
+        if wiki_lead and not wiki_lead.endswith('.'):
+            wiki_lead = wiki_lead + '.'
+        
+        # Compose: if desc is a substring of wiki_lead, just use wiki_lead
+        # (avoids "Mobile Ontological... Mobile Ontological..." duplication)
+        if desc and desc.rstrip('.').lower() in wiki_lead.lower():
+            combined = wiki_lead
+        elif desc:
+            combined = desc.rstrip('.') + '. ' + wiki_lead
+        else:
+            combined = wiki_lead
+        
+        # If still too short after wiki extension, try one more sentence
+        if len(combined) < min_target and len(parts) > 2:
+            addition = parts[2].strip()
+            if addition and not addition.endswith('.'):
+                addition = addition + '.'
+            combined = combined.rstrip('.') + '. ' + addition
+        
+        return _truncate_at_word(combined, max_len)
+    
+    # Case 3: no wiki — augment desc with keywords
+    if desc and keywords:
+        kw_str = ', '.join(k for k in keywords[:6] if k)
+        return _truncate_at_word(f'{desc.rstrip(".")} — {kw_str}.', max_len)
+    
+    # Case 4: fall back to raw description (may be short)
+    if desc:
+        return _truncate_at_word(desc, max_len)
+    
+    # Case 5: nothing available — use title
+    return _truncate_at_word(title, max_len)
+
+
 def regenerate_static_page(d, eidx, registry=None):
     """Regenerate the static HTML page for a deposit with full enrichment.
 
@@ -394,7 +478,7 @@ def regenerate_static_page(d, eidx, registry=None):
 
     # Build page
     page = f'''<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>{esc(d["title"])} — Alexanarch</title><meta name="description" content="{esc(d.get('description','')[:160])}"><script type="application/ld+json">{jsonld}</script>
+<title>{esc(d["title"])} — Alexanarch</title><meta name="description" content="{esc(_compose_meta_description(d))}"><script type="application/ld+json">{jsonld}</script>
 <link rel="canonical" href="https://www.alexanarch.org/s/records/{dn}/">
 <meta name="citation_title" content="{esc(d["title"])}">
 <meta name="citation_author" content="{esc(d["creator"])}">

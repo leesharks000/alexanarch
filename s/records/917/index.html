@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>EA-NMEN-PROTOCOL-PATCH-01 v1.0 — Deposit Protocol Patch: Reciprocity Notice Integration (reciprocity_notice and nmen_status_observed fields) — Alexanarch</title><meta name="description" content="Protocol amendment to api/deposit-protocol.json. Adds two recommended fields to the deposit schema: (1) reciprocity_notice, a URI pointing to the canonical Non-"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "EA-NMEN-PROTOCOL-PATCH-01 v1.0 — Deposit Protocol Patch: Reciprocity Notice Integration (reciprocity_notice and nmen_status_observed fields)", "author": {"@type": "Person", "name": "Lee Sharks, MANUS"}, "datePublished": "2026-06-24", "identifier": "AXN:03A0.GOVERNANCE.☁️🌕➖🌉🌺♄", "description": "Protocol amendment to api/deposit-protocol.json. Adds two recommended fields to the deposit schema: (1) reciprocity_notice, a URI pointing to the canonical Non-Mutual Extraction Notice that the depositing party has read; (2) nmen_status_observed, an enumerated value (standing | pending | provisional", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "protocol patch, schema amendment, reciprocity_notice field, nmen_status_observed field, deposit protocol, backward compatible, JSON schema, machine-readable governance"}</script>
+<title>EA-NMEN-PROTOCOL-PATCH-01 v1.0 — Deposit Protocol Patch: Reciprocity Notice Integration (reciprocity_notice and nmen_status_observed fields) — Alexanarch</title><meta name="description" content="Protocol amendment to api/deposit-protocol.json. Adds two recommended fields to the deposit schema: (1) reciprocity_notice, a URI pointing to the…"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "EA-NMEN-PROTOCOL-PATCH-01 v1.0 — Deposit Protocol Patch: Reciprocity Notice Integration (reciprocity_notice and nmen_status_observed fields)", "author": {"@type": "Person", "name": "Lee Sharks, MANUS"}, "datePublished": "2026-06-24", "identifier": "AXN:03A0.GOVERNANCE.☁️🌕➖🌉🌺♄", "description": "Protocol amendment to api/deposit-protocol.json. Adds two recommended fields to the deposit schema: (1) reciprocity_notice, a URI pointing to the canonical Non-Mutual Extraction Notice that the depositing party has read; (2) nmen_status_observed, an enumerated value (standing | pending | provisional", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "protocol patch, schema amendment, reciprocity_notice field, nmen_status_observed field, deposit protocol, backward compatible, JSON schema, machine-readable governance"}</script>
 <link rel="canonical" href="https://www.alexanarch.org/s/records/917/">
 <meta name="citation_title" content="EA-NMEN-PROTOCOL-PATCH-01 v1.0 — Deposit Protocol Patch: Reciprocity Notice Integration (reciprocity_notice and nmen_status_observed fields)">
 <meta name="citation_author" content="Lee Sharks, MANUS">
@@ -73,28 +73,26 @@
 
 <p>The following diff is to be applied to `api/deposit-protocol.json`. The `schema_version` should be incremented to `&quot;2026-06-24-axn-v2-nmen&quot;`.</p>
 
-<p>```json</p>
-<p>{</p>
-<p>  &quot;schema_version&quot;: &quot;2026-06-24-axn-v2-nmen&quot;,</p>
-<p>  &quot;recommended_deposit_fields&quot;: {</p>
-<p>    &quot;...&quot;: &quot;(prior fields preserved)&quot;,</p>
-<p>    &quot;reciprocity_notice&quot;: {</p>
-<p>      &quot;type&quot;: &quot;string (URI)&quot;,</p>
-<p>      &quot;description&quot;: &quot;Canonical URI of the Non-Mutual Extraction Notice acknowledged by the depositing party. Recommended default: &#x27;https://alexanarch.org/notice/non-mutual-extraction/&#x27; (EA-NMEN-01). Including this field in a deposit declares that the depositing party has read the Notice and understands the doctrine of non-mutual extraction. The field does not constrain the legal license under which the work is offered; it operates per §0 of EA-NMEN-01 as a normative declaration only.&quot;,</p>
-<p>      &quot;default&quot;: &quot;https://alexanarch.org/notice/non-mutual-extraction/&quot;</p>
-<p>    },</p>
-<p>    &quot;nmen_status_observed&quot;: {</p>
-<p>      &quot;type&quot;: &quot;string (enum)&quot;,</p>
-<p>      &quot;enum&quot;: [&quot;standing&quot;, &quot;pending&quot;, &quot;provisional&quot;, &quot;inadmissible_host&quot;, &quot;restricted&quot;],</p>
-<p>      &quot;description&quot;: &quot;For deposits whose subject IS one of the entities tracked in EA-NMEN-REGISTRY-01 (correspondence records, forensic documentation, tier-update memos, etc.), declares the entity&#x27;s NMEN designation at time of deposit. Allows machine-readers to filter deposits by reciprocity context. Omit for deposits whose subject is the Archive&#x27;s own scholarship rather than an external entity.&quot;</p>
-<p>    }</p>
-<p>  },</p>
-<p>  &quot;consistency_invariants&quot;: {</p>
-<p>    &quot;...&quot;: &quot;(prior invariants preserved)&quot;,</p>
-<p>    &quot;nmen_alignment&quot;: &quot;If `nmen_status_observed` is set, the value must match the entity&#x27;s current designation in EA-NMEN-REGISTRY-01 at time of deposit. Successor versions of EA-NMEN-REGISTRY-01 do not require backfilling of deposits&#x27; nmen_status_observed fields — the field records the observed status at time of deposit, not the current status.&quot;</p>
-<p>  }</p>
-<p>}</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">{
+  &quot;schema_version&quot;: &quot;2026-06-24-axn-v2-nmen&quot;,
+  &quot;recommended_deposit_fields&quot;: {
+    &quot;...&quot;: &quot;(prior fields preserved)&quot;,
+    &quot;reciprocity_notice&quot;: {
+      &quot;type&quot;: &quot;string (URI)&quot;,
+      &quot;description&quot;: &quot;Canonical URI of the Non-Mutual Extraction Notice acknowledged by the depositing party. Recommended default: &#x27;https://alexanarch.org/notice/non-mutual-extraction/&#x27; (EA-NMEN-01). Including this field in a deposit declares that the depositing party has read the Notice and understands the doctrine of non-mutual extraction. The field does not constrain the legal license under which the work is offered; it operates per §0 of EA-NMEN-01 as a normative declaration only.&quot;,
+      &quot;default&quot;: &quot;https://alexanarch.org/notice/non-mutual-extraction/&quot;
+    },
+    &quot;nmen_status_observed&quot;: {
+      &quot;type&quot;: &quot;string (enum)&quot;,
+      &quot;enum&quot;: [&quot;standing&quot;, &quot;pending&quot;, &quot;provisional&quot;, &quot;inadmissible_host&quot;, &quot;restricted&quot;],
+      &quot;description&quot;: &quot;For deposits whose subject IS one of the entities tracked in EA-NMEN-REGISTRY-01 (correspondence records, forensic documentation, tier-update memos, etc.), declares the entity&#x27;s NMEN designation at time of deposit. Allows machine-readers to filter deposits by reciprocity context. Omit for deposits whose subject is the Archive&#x27;s own scholarship rather than an external entity.&quot;
+    }
+  },
+  &quot;consistency_invariants&quot;: {
+    &quot;...&quot;: &quot;(prior invariants preserved)&quot;,
+    &quot;nmen_alignment&quot;: &quot;If `nmen_status_observed` is set, the value must match the entity&#x27;s current designation in EA-NMEN-REGISTRY-01 at time of deposit. Successor versions of EA-NMEN-REGISTRY-01 do not require backfilling of deposits&#x27; nmen_status_observed fields — the field records the observed status at time of deposit, not the current status.&quot;
+  }
+}</pre>
 
 <hr>
 

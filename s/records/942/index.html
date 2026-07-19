@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>EA-PROVENANCE-METADATA-01 v0.2: Spatial-Typographic Mediation, Representation Pipeline, and the Versioning Protocol — Alexanarch</title><meta name="description" content="Minor version update to the granular provenance metadata schema (predecessor: EA-PROVENANCE-METADATA-01 v0.1, AXN:03B9, deposit #941). Adds an eighth mediation "><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "EA-PROVENANCE-METADATA-01 v0.2: Spatial-Typographic Mediation, Representation Pipeline, and the Versioning Protocol", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-07-02", "identifier": "AXN:03BA.OPERATIVE.♅🛤️🕗🧊🍃☉", "description": "Minor version update to the granular provenance metadata schema (predecessor: EA-PROVENANCE-METADATA-01 v0.1, AXN:03B9, deposit #941). Adds an eighth mediation type — spatial-typographic mediation — covering spatial composition, typographic composition, prosodic notation, stanzaic and group structur", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "provenance metadata, granular provenance, spatial-typographic mediation, representation pipeline, compositional erasure, compositional authorship, tokenization, serialization, whitespace, calligram, manuscript features, stanzaic structure, versioning protocol, version series, superseded chain, schema versioning, correction protocol, Pearl, Snub-Poemed, alexanarch, operative philology"}</script>
+<title>EA-PROVENANCE-METADATA-01 v0.2: Spatial-Typographic Mediation, Representation Pipeline, and the Versioning Protocol — Alexanarch</title><meta name="description" content="Minor version update to the granular provenance metadata schema (predecessor: EA-PROVENANCE-METADATA-01 v0.1, AXN:03B9, deposit #941). Adds an eighth…"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "EA-PROVENANCE-METADATA-01 v0.2: Spatial-Typographic Mediation, Representation Pipeline, and the Versioning Protocol", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-07-02", "identifier": "AXN:03BA.OPERATIVE.♅🛤️🕗🧊🍃☉", "description": "Minor version update to the granular provenance metadata schema (predecessor: EA-PROVENANCE-METADATA-01 v0.1, AXN:03B9, deposit #941). Adds an eighth mediation type — spatial-typographic mediation — covering spatial composition, typographic composition, prosodic notation, stanzaic and group structur", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "provenance metadata, granular provenance, spatial-typographic mediation, representation pipeline, compositional erasure, compositional authorship, tokenization, serialization, whitespace, calligram, manuscript features, stanzaic structure, versioning protocol, version series, superseded chain, schema versioning, correction protocol, Pearl, Snub-Poemed, alexanarch, operative philology"}</script>
 <link rel="canonical" href="https://www.alexanarch.org/s/records/942/">
 <meta name="citation_title" content="EA-PROVENANCE-METADATA-01 v0.2: Spatial-Typographic Mediation, Representation Pipeline, and the Versioning Protocol">
 <meta name="citation_author" content="Lee Sharks">
@@ -175,178 +175,172 @@
 
 <p>The v0.1 schema (reproduced in full at AXN:03B9) is extended with the following new fields, nested within the existing `provenance_metadata` structure.</p>
 
-<p>```yaml</p>
-<p>provenance_metadata:</p>
-<p>  schema_version: &quot;0.2.0&quot;</p>
-<p>  # ... all v0.1 fields unchanged ...</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">provenance_metadata:
+  schema_version: &quot;0.2.0&quot;
+  # ... all v0.1 fields unchanged ...
+  
+  mediation:
+    # ... all v0.1 mediation type flags unchanged ...
+    types:
+      propositional: &lt;boolean | null&gt;
+      structural: &lt;boolean | null&gt;
+      linguistic: &lt;boolean | null&gt;
+      translational: &lt;boolean | null&gt;
+      research: &lt;boolean | null&gt;
+      editorial: &lt;boolean | null&gt;
+      transformational: &lt;boolean | null&gt;
+      spatial_typographic: &lt;boolean | null&gt;  # NEW in v0.2
+    # null = undeclared; false = declared not present; true = declared present
 
-<p>  mediation:</p>
-<p>    # ... all v0.1 mediation type flags unchanged ...</p>
-<p>    types:</p>
-<p>      propositional: &lt;boolean | null&gt;</p>
-<p>      structural: &lt;boolean | null&gt;</p>
-<p>      linguistic: &lt;boolean | null&gt;</p>
-<p>      translational: &lt;boolean | null&gt;</p>
-<p>      research: &lt;boolean | null&gt;</p>
-<p>      editorial: &lt;boolean | null&gt;</p>
-<p>      transformational: &lt;boolean | null&gt;</p>
-<p>      spatial_typographic: &lt;boolean | null&gt;  # NEW in v0.2</p>
-<p>    # null = undeclared; false = declared not present; true = declared present</p>
-
-<p>  # NEW in v0.2 — representation pipeline</p>
-<p>  representation_pipeline:</p>
-<p>    optional: true</p>
-<p>    # Declare when the deposit is or contains a compositionally-substantive</p>
-<p>    # work whose spatial-typographic features are relevant to its archive status.</p>
-
-<p>    source_artifact:</p>
-<p>      format: &lt;string&gt;</p>
-<p>      # e.g. &quot;manuscript&quot;, &quot;printed_edition&quot;, &quot;digital_text&quot;, &quot;image_scan&quot;,</p>
-<p>      #      &quot;non_ocr_pdf&quot;, &quot;born_digital&quot;, &quot;non_ocr_pdf_embedded_image&quot;</p>
-<p>      description: &lt;freeform string; optional&gt;</p>
-
-<p>    digitization:</p>
-<p>      method: &lt;string&gt;</p>
-<p>      # e.g. &quot;ocr&quot;, &quot;manual_transcription&quot;, &quot;image_capture&quot;, &quot;born_digital_no_conversion&quot;</p>
-<p>      tool: &lt;string; optional&gt;</p>
-<p>      # e.g. &quot;Tesseract 5.0&quot;, &quot;manual&quot;</p>
-<p>      verified: &lt;boolean; optional&gt;</p>
-<p>      notes: &lt;freeform string; optional&gt;</p>
-
-<p>    normalization:</p>
-<p>      applied: &lt;boolean | null&gt;</p>
-<p>      unicode_normalization: &lt;string; optional&gt;</p>
-<p>      # e.g. &quot;NFC&quot;, &quot;NFKC&quot;, &quot;none&quot;</p>
-<p>      whitespace_normalization: &lt;boolean | null&gt;</p>
-<p>      features_affected: &lt;list of strings; optional&gt;</p>
-<p>      # e.g. [&quot;dash_variation&quot;, &quot;internal_spacing&quot;, &quot;stanza_breaks&quot;]</p>
-
-<p>    serialization:</p>
-<p>      two_d_to_one_d: &lt;boolean | null&gt;</p>
-<p>      # true if two-dimensional composition was converted to one-dimensional sequence</p>
-<p>      layout_coordinates_preserved: &lt;boolean | null&gt;</p>
-<p>      serialization_notes: &lt;freeform string; optional&gt;</p>
-<p>      # e.g. &quot;calligram serialized as left-to-right phrase list; spatial argument lost&quot;</p>
-
-<p>    tokenization:</p>
-<p>      applied: &lt;boolean | null&gt;</p>
-<p>      scheme: &lt;string; optional&gt;</p>
-<p>      # e.g. &quot;cl100k_base (GPT)&quot;, &quot;sentencepiece&quot;, &quot;none_not_applicable&quot;</p>
-<p>      whitespace_handling: &lt;string; optional&gt;</p>
-<p>      # e.g. &quot;leading_whitespace_as_token_prefix&quot;, &quot;newlines_preserved&quot;, &quot;all_whitespace_stripped&quot;</p>
-<p>      lineation_preserved: &lt;string; optional&gt;</p>
-<p>      # e.g. &quot;true&quot;, &quot;visual_only&quot;, &quot;false&quot;, &quot;not_applicable&quot;</p>
-<p>      stanza_boundaries_preserved: &lt;string; optional&gt;</p>
-<p>      # e.g. &quot;true&quot;, &quot;visual_only&quot;, &quot;false&quot;, &quot;not_applicable&quot;</p>
-
-<p>    model_access:</p>
-<p>      text_rag: &lt;boolean | null&gt;</p>
-<p>      # accessible to text-based search and retrieval</p>
-<p>      multimodal_visual: &lt;boolean | null&gt;</p>
-<p>      # accessible via image inspection by multimodal model</p>
-<p>      compiler_accessible: &lt;boolean | null&gt;</p>
-<p>      # accessible to EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 compiler pipeline</p>
-
-<p>    canonical_artifact:</p>
-<p>      linked: &lt;boolean | null&gt;</p>
-<p>      # true if a facsimile or higher-fidelity source is linked or locatable</p>
-<p>      reference: &lt;freeform string; optional&gt;</p>
-<p>      # e.g. &quot;Cotton Nero A.x digital facsimile, University of Calgary;</p>
-<p>      #        Emily Dickinson Archive (edickinson.org)&quot;</p>
-
-<p>    representation_status: &lt;string&gt;</p>
-<p>    # required if representation_pipeline is declared</p>
-<p>    # one of: &quot;compositionally_invisible&quot; | &quot;compositionally_reduced&quot; |</p>
-<p>    #         &quot;compositionally_faithful&quot; | &quot;compositionally_operational&quot;</p>
-
-<p>    status_notes: &lt;freeform string; optional&gt;</p>
-<p>    # depositor&#x27;s qualitative account of what is preserved and what is lost</p>
-<p>```</p>
+  # NEW in v0.2 — representation pipeline
+  representation_pipeline:
+    optional: true
+    # Declare when the deposit is or contains a compositionally-substantive
+    # work whose spatial-typographic features are relevant to its archive status.
+    
+    source_artifact:
+      format: &lt;string&gt;
+      # e.g. &quot;manuscript&quot;, &quot;printed_edition&quot;, &quot;digital_text&quot;, &quot;image_scan&quot;,
+      #      &quot;non_ocr_pdf&quot;, &quot;born_digital&quot;, &quot;non_ocr_pdf_embedded_image&quot;
+      description: &lt;freeform string; optional&gt;
+    
+    digitization:
+      method: &lt;string&gt;
+      # e.g. &quot;ocr&quot;, &quot;manual_transcription&quot;, &quot;image_capture&quot;, &quot;born_digital_no_conversion&quot;
+      tool: &lt;string; optional&gt;
+      # e.g. &quot;Tesseract 5.0&quot;, &quot;manual&quot;
+      verified: &lt;boolean; optional&gt;
+      notes: &lt;freeform string; optional&gt;
+    
+    normalization:
+      applied: &lt;boolean | null&gt;
+      unicode_normalization: &lt;string; optional&gt;
+      # e.g. &quot;NFC&quot;, &quot;NFKC&quot;, &quot;none&quot;
+      whitespace_normalization: &lt;boolean | null&gt;
+      features_affected: &lt;list of strings; optional&gt;
+      # e.g. [&quot;dash_variation&quot;, &quot;internal_spacing&quot;, &quot;stanza_breaks&quot;]
+    
+    serialization:
+      two_d_to_one_d: &lt;boolean | null&gt;
+      # true if two-dimensional composition was converted to one-dimensional sequence
+      layout_coordinates_preserved: &lt;boolean | null&gt;
+      serialization_notes: &lt;freeform string; optional&gt;
+      # e.g. &quot;calligram serialized as left-to-right phrase list; spatial argument lost&quot;
+    
+    tokenization:
+      applied: &lt;boolean | null&gt;
+      scheme: &lt;string; optional&gt;
+      # e.g. &quot;cl100k_base (GPT)&quot;, &quot;sentencepiece&quot;, &quot;none_not_applicable&quot;
+      whitespace_handling: &lt;string; optional&gt;
+      # e.g. &quot;leading_whitespace_as_token_prefix&quot;, &quot;newlines_preserved&quot;, &quot;all_whitespace_stripped&quot;
+      lineation_preserved: &lt;string; optional&gt;
+      # e.g. &quot;true&quot;, &quot;visual_only&quot;, &quot;false&quot;, &quot;not_applicable&quot;
+      stanza_boundaries_preserved: &lt;string; optional&gt;
+      # e.g. &quot;true&quot;, &quot;visual_only&quot;, &quot;false&quot;, &quot;not_applicable&quot;
+    
+    model_access:
+      text_rag: &lt;boolean | null&gt;
+      # accessible to text-based search and retrieval
+      multimodal_visual: &lt;boolean | null&gt;
+      # accessible via image inspection by multimodal model
+      compiler_accessible: &lt;boolean | null&gt;
+      # accessible to EA-MANDALA-KERNEL-TRANSFORM-01 v0.2 compiler pipeline
+    
+    canonical_artifact:
+      linked: &lt;boolean | null&gt;
+      # true if a facsimile or higher-fidelity source is linked or locatable
+      reference: &lt;freeform string; optional&gt;
+      # e.g. &quot;Cotton Nero A.x digital facsimile, University of Calgary;
+      #        Emily Dickinson Archive (edickinson.org)&quot;
+    
+    representation_status: &lt;string&gt;
+    # required if representation_pipeline is declared
+    # one of: &quot;compositionally_invisible&quot; | &quot;compositionally_reduced&quot; |
+    #         &quot;compositionally_faithful&quot; | &quot;compositionally_operational&quot;
+    
+    status_notes: &lt;freeform string; optional&gt;
+    # depositor&#x27;s qualitative account of what is preserved and what is lost</pre>
 
 <p><strong>Example declaration for Pearl (non-OCR PDF, double invisibility):</strong></p>
 
-<p>```yaml</p>
-<p>representation_pipeline:</p>
-<p>  source_artifact:</p>
-<p>    format: &quot;non_ocr_pdf_embedded_image&quot;</p>
-<p>    description: &quot;Image-embedded PDF of a printed edition of Pearl. Edition TBD — </p>
-<p>      archive copy requires identification before further processing.&quot;</p>
-<p>  digitization:</p>
-<p>    method: &quot;image_capture&quot;</p>
-<p>    verified: false</p>
-<p>    notes: &quot;No OCR attempted. Text not machine-legible.&quot;</p>
-<p>  normalization:</p>
-<p>    applied: false</p>
-<p>  serialization:</p>
-<p>    two_d_to_one_d: false</p>
-<p>    layout_coordinates_preserved: false</p>
-<p>    serialization_notes: &quot;Serialization has not occurred. Text-operating layer</p>
-<p>      cannot ingest this source. Stanzaic structure, concatenation, group-of-five</p>
-<p>      superstructure, and all compositional features are visually present in the</p>
-<p>      PDF but not accessible to text operations.&quot;</p>
-<p>  tokenization:</p>
-<p>    applied: false</p>
-<p>    scheme: &quot;none_not_applicable&quot;</p>
-<p>  model_access:</p>
-<p>    text_rag: false</p>
-<p>    multimodal_visual: true</p>
-<p>    compiler_accessible: false</p>
-<p>  canonical_artifact:</p>
-<p>    linked: true</p>
-<p>    reference: &quot;Cotton Nero A.x digital facsimile available via British Library</p>
-<p>      and University of Calgary; Andrew-Waldron 2007 edition preserves stanzaic</p>
-<p>      structure. Manual transcription from one of these sources is required to</p>
-<p>      advance beyond compositionally_invisible status.&quot;</p>
-<p>  representation_status: &quot;compositionally_invisible&quot;</p>
-<p>  status_notes: &quot;Pearl is present in the archive as a file and absent as an</p>
-<p>    operable text. The compositional argument (concatenation, group-of-five,</p>
-<p>    circular return, deliberate imperfections at lines 472 and 721) is not</p>
-<p>    accessible to any text-operating function. Immediate action required:</p>
-<p>    re-source from Andrew-Waldron 2007 or produce manual transcription from</p>
-<p>    Cotton Nero A.x facsimile.&quot;</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">representation_pipeline:
+  source_artifact:
+    format: &quot;non_ocr_pdf_embedded_image&quot;
+    description: &quot;Image-embedded PDF of a printed edition of Pearl. Edition TBD — 
+      archive copy requires identification before further processing.&quot;
+  digitization:
+    method: &quot;image_capture&quot;
+    verified: false
+    notes: &quot;No OCR attempted. Text not machine-legible.&quot;
+  normalization:
+    applied: false
+  serialization:
+    two_d_to_one_d: false
+    layout_coordinates_preserved: false
+    serialization_notes: &quot;Serialization has not occurred. Text-operating layer
+      cannot ingest this source. Stanzaic structure, concatenation, group-of-five
+      superstructure, and all compositional features are visually present in the
+      PDF but not accessible to text operations.&quot;
+  tokenization:
+    applied: false
+    scheme: &quot;none_not_applicable&quot;
+  model_access:
+    text_rag: false
+    multimodal_visual: true
+    compiler_accessible: false
+  canonical_artifact:
+    linked: true
+    reference: &quot;Cotton Nero A.x digital facsimile available via British Library
+      and University of Calgary; Andrew-Waldron 2007 edition preserves stanzaic
+      structure. Manual transcription from one of these sources is required to
+      advance beyond compositionally_invisible status.&quot;
+  representation_status: &quot;compositionally_invisible&quot;
+  status_notes: &quot;Pearl is present in the archive as a file and absent as an
+    operable text. The compositional argument (concatenation, group-of-five,
+    circular return, deliberate imperfections at lines 472 and 721) is not
+    accessible to any text-operating function. Immediate action required:
+    re-source from Andrew-Waldron 2007 or produce manual transcription from
+    Cotton Nero A.x facsimile.&quot;</pre>
 
 <p><strong>Example declaration for Snub-Poemed (image + essay + key-phrases):</strong></p>
 
-<p>```yaml</p>
-<p>representation_pipeline:</p>
-<p>  source_artifact:</p>
-<p>    format: &quot;born_digital&quot;</p>
-<p>    description: &quot;Calligram exists as image file (snub-poemed.jpg); accompanied</p>
-<p>      by essay (essay.md) and key-phrases (key-phrases.md) in the archive&#x27;s</p>
-<p>      sources directory.&quot;</p>
-<p>  digitization:</p>
-<p>    method: &quot;born_digital_no_conversion&quot;</p>
-<p>    verified: true</p>
-<p>  serialization:</p>
-<p>    two_d_to_one_d: true</p>
-<p>    layout_coordinates_preserved: false</p>
-<p>    serialization_notes: &quot;The calligram&#x27;s spatial arrangement — phrases arranged</p>
-<p>      to form Socrates&#x27;s bust outline — is preserved in the image but not in any</p>
-<p>      text stream. The essay.md and key-phrases.md provide a compositionally-</p>
-<p>      reduced text representation (phrase list + critical reading) but the spatial</p>
-<p>      arrangement and the compositional argument it enacts are accessible only</p>
-<p>      via image inspection. The calligram&#x27;s argument about Socratic identity —</p>
-<p>      that the face is constituted by exactly the textual mediation that appears</p>
-<p>      to be decorating a pre-existing Socratic content — cannot be extracted from</p>
-<p>      the phrase list.&quot;</p>
-<p>  model_access:</p>
-<p>    text_rag: true</p>
-<p>    multimodal_visual: true</p>
-<p>    compiler_accessible: false</p>
-<p>  canonical_artifact:</p>
-<p>    linked: true</p>
-<p>    reference: &quot;Image file at sources/sigil-snub-poemed/snub-poemed.jpg.</p>
-<p>      The image IS the canonical artifact for this work. Text representations</p>
-<p>      (essay.md, key-phrases.md) are apparatus, not the poem.&quot;</p>
-<p>  representation_status: &quot;compositionally_reduced&quot;</p>
-<p>  status_notes: &quot;The calligram&#x27;s text content is accessible via image inspection</p>
-<p>    and partially via the key-phrases apparatus. The spatial arrangement is</p>
-<p>    accessible only via image. The kernel-transform compiler cannot yet operate</p>
-<p>    on the spatial dimension (pending spatial_form field addition to the compiler</p>
-<p>    response schema). For compiler purposes: compositionally_reduced status is</p>
-<p>    accurate until the compiler gains spatial_form capability.&quot;</p>
-<p>```</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">representation_pipeline:
+  source_artifact:
+    format: &quot;born_digital&quot;
+    description: &quot;Calligram exists as image file (snub-poemed.jpg); accompanied
+      by essay (essay.md) and key-phrases (key-phrases.md) in the archive&#x27;s
+      sources directory.&quot;
+  digitization:
+    method: &quot;born_digital_no_conversion&quot;
+    verified: true
+  serialization:
+    two_d_to_one_d: true
+    layout_coordinates_preserved: false
+    serialization_notes: &quot;The calligram&#x27;s spatial arrangement — phrases arranged
+      to form Socrates&#x27;s bust outline — is preserved in the image but not in any
+      text stream. The essay.md and key-phrases.md provide a compositionally-
+      reduced text representation (phrase list + critical reading) but the spatial
+      arrangement and the compositional argument it enacts are accessible only
+      via image inspection. The calligram&#x27;s argument about Socratic identity —
+      that the face is constituted by exactly the textual mediation that appears
+      to be decorating a pre-existing Socratic content — cannot be extracted from
+      the phrase list.&quot;
+  model_access:
+    text_rag: true
+    multimodal_visual: true
+    compiler_accessible: false
+  canonical_artifact:
+    linked: true
+    reference: &quot;Image file at sources/sigil-snub-poemed/snub-poemed.jpg.
+      The image IS the canonical artifact for this work. Text representations
+      (essay.md, key-phrases.md) are apparatus, not the poem.&quot;
+  representation_status: &quot;compositionally_reduced&quot;
+  status_notes: &quot;The calligram&#x27;s text content is accessible via image inspection
+    and partially via the key-phrases apparatus. The spatial arrangement is
+    accessible only via image. The kernel-transform compiler cannot yet operate
+    on the spatial dimension (pending spatial_form field addition to the compiler
+    response schema). For compiler purposes: compositionally_reduced status is
+    accurate until the compiler gains spatial_form capability.&quot;</pre>
 
 <hr>
 <h2>§5. Coupling to the archive&#x27;s broader work (updated)</h2>
