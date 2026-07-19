@@ -13,7 +13,7 @@
     "Network Preservation",
     "Tombstone Guarantee"
   ],
-  "total_deposits": 1111,
+  "total_deposits": 1112,
   "deposits": [
     {
       "axn": "AXN:01.GOVERNANCE.♍🜁🏴⌛🍃💫",
@@ -248075,6 +248075,193 @@
           "layer_3_content_hash": {
             "present": true,
             "canonical_hash": "356f0cf83a4d162b9d6f8988e4425b7d8b7687830ecc51efa2a942d278b04874",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
+    },
+    {
+      "deposit_number": 1112,
+      "axn": "AXN:0469.UNCLASSIFIED.👋🔮🏴⛩️▲♅",
+      "hex": "0469",
+      "family": "UNCLASSIFIED",
+      "emoji": "👋🔮🏴⛩️▲♅",
+      "hash": "bf3d52289fa5ae01a356430d1fb148098a6d357b3751457086dc7680e9570286",
+      "title": "\"title\": \"Heteronym Provenance Document: Rebekah Cranes (HET-CRANES-001)\" — Crimson Hexagon Archive",
+      "creator": "Lee Sharks",
+      "date": "2026-01-17",
+      "description": "Canonical bytes recovered 2026-07-19 from the authorial blog surface (https://mindcontrolpoems.blogspot.com/2026/01/title-heteronym-provenance-document.html); work severed at Zenodo 2026-06-19 (DOI(s): 10.5281/zenodo.18284775, 10.5281/zenodo.18284776). Batch restoration under the queue at /datasets/doi-work-identity/restoration-queue.json; title verified against the DOI-keyed truth title at fetch time. Opening of the work: * * * ## title: \"Heteronym Provenance Document: Rebekah Cranes\" document_id: \"HET-CRANES-2026-01-PROV\" heteronym_id: \"HET-CRANES-001\" doi: \"10.5281/zenodo.18284776\" hex_coordinate: \"06.PERSONA.CRANES\" framework: \"NH-OS / Crimson Hexagon\" institution: \"Institute for Diagrammatic Poetics (Chair)\" status: \"CANONICAL // ACTIVE // CHAIR-IDP\" co_constitutive: \"IDP-2026-01-CHARTER\" verification: \"∮ = 1\"",
+      "content_type": "Recovered blog-canonical work (full text; queue restoration 2026-07-19)",
+      "license": "CC-BY-4.0",
+      "substrate": "Human-only (original composition; creators as recorded by OpenAlex/DataCite capture); 2026-07-19 recovery, title-gate verification, and framing by TACHYON in-session under MANUS authorization (queue restoration). No paid API calls (No-Double-Draw, transport D).",
+      "root_axn": "AXN:0469.UNCLASSIFIED",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "bf3d52289fa5ae01a356430d1fb148098a6d357b3751457086dc7680e9570286",
+      "clusters": [
+        "Gestural",
+        "Instrumental",
+        "Navigational",
+        "Architectural",
+        "Mathematical",
+        "Alchemical"
+      ],
+      "axn_reading": "Touch -> Method -> Search -> Foundation -> Proof -> Transmutation",
+      "minted_at": "2026-07-19T19:52:15Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-0469-text.md",
+      "wiki_article": "\"\"title\": \"Heteronym Provenance Document: Rebekah Cranes (HET-CRANES-001)\" — Crimson Hexagon Archive\" is a 1,948-word recovered blog-canonical work (full text; queue restoration 2026-07-19) by Lee Sharks, dated 2026-01-17. It is registered as AXN:0469 (deposit #1112) in the Crimson Hexagonal Archive under the UNCLASSIFIED semantic family. Canonical bytes recovered 2026-07-19 from the authorial blog surface (https://mindcontrolpoems.blogspot.com/2026/01/title-heteronym-provenance-document.html); work severed at Zenodo 2026-06-19 (DOI(s): 10.5281/zenodo.18284775, 10.5281/zenodo.18284776). Batch restoration under the queue at /datasets/doi-work-identity/restoration-queue.json; title verified against the DOI-keyed truth title at fetch ",
+      "wiki_status": "provisional",
+      "entities": [
+        {
+          "subject": "\"title\": \"Heteronym Provenance Document: Rebekah Cranes (HET-CRANES-001)\" — Crimson Hexagon Archive",
+          "predicate": "created_by",
+          "object": "Lee Sharks",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "\"title\": \"Heteronym Provenance Document: Rebekah Cranes (HET-CRANES-001)\" — Crimson Hexagon Archive",
+          "predicate": "is_type",
+          "object": "Recovered blog-canonical work (full text; queue restoration 2026-07-19)",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "\"title\": \"Heteronym Provenance Document: Rebekah Cranes (HET-CRANES-001)\" — Crimson Hexagon Archive",
+          "predicate": "belongs_to_family",
+          "object": "UNCLASSIFIED",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "\"title\": \"Heteronym Provenance Document: Rebekah Cranes (HET-CRANES-001)\" — Crimson Hexagon Archive",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "\"title\": \"Heteronym Provenance Document: Rebekah Cranes (HET-CRANES-001)\" — Crimson Hexagon Archive",
+          "predicate": "references",
+          "object": "Rebekah Cranes",
+          "type": "heteronym",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v1.0",
+      "keywords": [
+        "Crimson Hexagonal Archive",
+        "restoration",
+        "blog canonical bytes",
+        "severed DOI",
+        "Zenodo termination",
+        "title",
+        "Heteronym",
+        "Provenance",
+        "Document",
+        "Rebekah"
+      ],
+      "related_identifiers_raw": "https://doi.org/10.5281/zenodo.18284775 (severed); https://doi.org/10.5281/zenodo.18284776 (severed); recovery source: https://mindcontrolpoems.blogspot.com/2026/01/title-heteronym-provenance-document.html",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 1112,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 17889,
+        "audited_at": "2026-07-19T19:52:15Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "references_concepts": [
+        "CANONICAL",
+        "Canonical ID",
+        "Co-Constitutive Document",
+        "Co-Constitutive With",
+        "Cranes offers brief I Ching-style judgments",
+        "Crimson Hexagon Archive",
+        "Day and Night",
+        "Day and Night: Conversations with Sapphic Desire",
+        "Enigmatic register",
+        "IDP Charter",
+        "Institute for Diagrammatic Poetics",
+        "Liturgical tone",
+        "MACHINE",
+        "Navigation Map v3.0",
+        "Operational specification",
+        "Present tense",
+        "Sappho Room anchor",
+        "Source text",
+        "TACHYON",
+        "Terse judgments",
+        "The Five Steps",
+        "The Sappho Room",
+        "Visual Schema Protocol",
+        "Visual Schema: Navigation Map",
+        "Semantic Economy",
+        "Provenance Chain",
+        "OPERATIONAL",
+        "Rex Fraction",
+        "Methodology",
+        "Lee Sharks",
+        "Johannes Sigil",
+        "Rebekah Cranes"
+      ],
+      "references_concept_count": 32,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-0469.json",
+      "openalex_ids": [
+        "https://openalex.org/W7124547669",
+        "https://openalex.org/W7124583153"
+      ],
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-07-19T19:52:40.331664+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [
+              "creator_name",
+              "date"
+            ],
+            "anchor_count": 2,
+            "orcid_in_body": false,
+            "creator_in_body": true,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "42b6f26dfbe82f89fc3ca21d1c15009f86324c48e3a9bbbeb1947f547bc10b85",
             "hash_in_body": false,
             "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
           },
