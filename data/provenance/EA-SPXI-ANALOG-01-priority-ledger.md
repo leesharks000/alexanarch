@@ -25,6 +25,10 @@ committed document; any altered variant will not match.
 | `38fac3cc67d7ffec5d7d3ae48bc8cb8e8f44c28e8433939dc4c9cca85577d7a4` | 395933 | PDF rendering of v0.12. |
 
 **Ledger amended 2026-07-20T11:29:26Z**: v0.12 entries (reviewer-corrections round 1); chain … → v0.11 → v0.12 (canonical).
+| `05730940f088c332767c1265d59cb8261470b688b66ec2769e62d0a1012f6892` | 84757 | Unified review object v0.13 — §7 signature-scope clause per Lucente (Part I + identified use only; no Part II technical endorsement); canonical send artifact. |
+| `4de23083daed51a3f81586b504531acdba1b1fbd6b3d1e4fa0d96fa0bd5a3268` | 397048 | PDF rendering of v0.13. |
+
+**Ledger amended 2026-07-20T17:54:43Z**: v0.13 (§7 scope, review round 2).
 
 Chain: v0.8 → v0.9 (review corrections) → v0.10 (canonical). The private parts
 publish only upon the reviewer's approval per the terms fixed inside the committed
