@@ -448,3 +448,59 @@ About-this-image surfacing) as synthetic contamination pressure rises. Pre-regis
 the Reserve is positioned either way — if H6 confirms, the artifacts ride the preference;
 if it fails, the Reserve's scarcity thesis still compounds with every synthetic page the
 web adds.
+
+## E.5 The Scribal Corollary — somatic non-collapse
+
+Anticipate the Goodhart attack now: if the Reserve becomes valuable, people will hand-copy
+machine-generated text to farm the warranty. The corollary is that against an
+**image-grounded** Reserve, the attack does not merely fail — it is not even an attack.
+
+**Collapse is a property of distributions, not of authorship.** Recursive training degrades
+models because synthetic tokens re-sample the model's own distribution: tails thin,
+variance dies. But a handwritten page is not a token stream. It is the modulation of
+language through a unique somatic medium — stroke, pressure, cadence, hesitation, spacing,
+the tremor and recovery of a specific body on a specific morning. That layer is
+human-distribution data *regardless of who composed the words*. Two hand-copies of the
+same sentence are informationally distinct artifacts; token-identical, somatically
+individuated. Even the same words have a signature. And the somatic layer is precisely
+**tail-dense** — irregular, individuated, high-variance — the exact statistical material
+collapse destroys and synthesis cannot replenish. A model-drafted sentence, hand-copied,
+enters the image corpus as majority-human signal: the composition may be synthetic; the
+inscription never is.
+
+**Therefore the warranty is restated, sharper.** The Reserve certifies human
+**inscription** — execution-layer, somatic, forensically checksummed. Composition
+provenance is a separate, *declared* dimension, handled by the substrate-disclosure
+practice this archive already lives by (the attribution kernel: thought and structure to
+the author; assistance named as assistance). "Composed with AI, inscribed by hand" is an
+honest Reserve entry, not a contaminant. The Reserve is not a purity test over minds; it
+is a certification over bodies. That is what makes it Goodhart-proof: the attacker who
+hand-copies machine text has not counterfeited the commodity — he has *manufactured* it.
+The scam produces the product.
+
+**The OCR inversion.** Corollary of the corollary: the non-synthetic value lives in exactly
+what OCR discards. Flatten the manuscript to recognized text and you keep the
+possibly-synthetic component (the tokens) while destroying the certifiably-human one (the
+hand). Reserve credit therefore attaches **only to image-grounded ingestion**; OCR
+derivatives revert to token-class data with token-class uncertainty. This gives "the
+load-bearing artifact must be in the image" its final justification — not only retrieval
+strategy, not only payload discipline, but conservation law: *the image is where the human
+signal is; flattening is the destruction of the warranty.*
+
+**The lineage is old.** Manuscript culture already knew all of this. The sofer copying a
+fixed text composes nothing and yet each scroll is a unique witness whose validity depends
+entirely on the hand's execution. Monastic transmission made copying itself the medium of
+survival; paleography — the proto-science of writer identification — could name a scribe
+across centuries from letterforms alone; textual criticism's founding premise is that no
+two witnesses are the same artifact. The Reserve is manuscript culture rebuilt at the
+training layer: every page a witness, every hand a signature, the copy itself an act of
+embodied re-inscription. It is the most deeply intimate semiotics available to the medium
+— the signifier itself individuated by the body that made it — and it is, not
+coincidentally, the one data class whose supply cannot be automated without ceasing to be
+itself.
+
+**§E.2 amended accordingly.** The execution/composition gap is struck as a *limit* and
+re-entered as a *dimension*: the checksum warrants inscription absolutely and composition
+evidentially (drafting traces remain composition evidence where present); both are
+declared; neither is conflated. The honest formulation improves rather than weakens the
+instrument.
