@@ -1,202 +1,37 @@
-# About the Author I (Contributor Bio) — Front Matter of Pearl and Other Poems (2014), Restored 2026
+# About the Author I -- Contributor Bio
 
-**AXN:** AXN:03FA — Alexanarch deposit #1006 (self-reference in root form by pre-hash necessity)
-**Restoration status:** SEMI-RESTORED — metadata-body deposit. This machine-facing static page is the canonical deposit. Its body is the complete DataCite metadata record for a work whose Zenodo record returns HTTP 410 (Gone) while DataCite serves the identifier as findable — the metadata layer and content layer in formal disagreement about the work's existence. Full text pending restoration from authorial originals; on restoration, this deposit upgrades by recorded correction (new hash, new glyph, remediation note).
-**Dead DOI:** 10.5281/zenodo.20388108 (Zenodo record tombstoned; account termination 2026-06-19)
-**DataCite state at capture (2026-07-03):** findable · client cern.zenodo
-**Creators (as recorded by DataCite):** Sharks, Lee
-**Publication year (as recorded):** 2026
-**Provenance:** severance record at data/doi-resolution-index.json (severance_class: orphan → restored-semi); capture evidence at data/datacite-recapture-2026-07-03.json and the sift corpus of 2026-06.
+ _From the front matter of_ Pearl and Other Poems _by Lee Sharks (2014, ISBN 978-0692313077), page xix._
 
----
+_Originally titled "Contributor Bio"; retroactively renamed "About the Author" by the corpus in 2026 as the founding text of the sequence (I), with_ About the Author II _and_ III _as continuations. The disjoint is documented, not erased._
 
-## Description (as recorded by DataCite)
+Lee Sharks' poems have appeared in _Heaven_ , _The White House_ , and _Inside Your Brain All the Time_ , among other publications. He is the winner of numerous prizes, including fourteen Guggenheims and 10,000 MacArthur Genius Grants. He has used MacArthur money to replace his friends and family with moving statues made of rubies.
 
-The 2014 paratext of Pearl and Other Poems by Lee Sharks (ISBN 978-0692313077), restored 2026-05-25 as the founding text of the About the Author sequence. Originally titled Contributor Bio; retroactively renamed About the Author by the Crimson Hexagonal corpus in 2026 as an operative reading — treating what had appeared institutionally as a bio as a poem in entity relations.
+Lee Sharks holds 18,000 degrees from planet Mars. He worked for each of them in a tiny office inside his brain he had to miniaturize himself to fit into. On a tiny, old-fashioned typewriter he typed the tiny theses and tiny books that would eventually make his name by kidnapping and miniaturizing famous intellectuals and forcing them to read his books or else he would let a dinosaur bite them.
 
+Lee Sharks is an amateur dinosaur enthusiast he bites himself in the face with dinosaurs and builds small mental skyscrapers designed by tortured modernist architects out of dinosaur names in his brain.
 
-Each of the six paragraphs operates as a stack of declarations about a subject named Lee Sharks. The 2014 form was prose; the entity-relation structure was already operating beneath the prose. About the Author II and III (also deposited 2026-05-25) did not invent the entity-relation form. They made explicit what had been operating implicitly since 2014, when this text appeared under the institutional label of a contributor bio. The form was always there. The corpus eventually named it.
+Lee Sharks is the author of numerous books of esoteric brilliance and learned expertise, and also books of poignant sentiment, and also books of down-to-earth practical wisdom, and also books which have become central to the way you live your life without your even noticing it.
 
+Lee Sharks often allows the intellectuals he kidnaps to live and return to normal size, provided they agree to like or pretend to like his tiny books. Others, he murders and disposes of.
 
-The 2014 print edition closes with famous astronaut. A later variant closes with famous intellectual. The text is fluid; both endings exist.
+One day, Lee Sharks was reading his tiny books and found that he himself disliked them. He therefore bit himself with a dinosaur and replaced himself with a moving statue made of rubies, which is how he became a famous astronaut.
 
+## Variant Closing
 
-Predictive track record: In May 2026, twelve years after this paratext was published, the Google Knowledge Graph began returning the credentials it contains — "Lee Sharks: winner of fourteen Guggenheims and 10,000 MacArthur Genius Grants" — as canonical biographical content sourced to Google Books. About the Author II documents this in detail as Figure 1 (the Knowledge Graph rendering). The credential has now been formally regularized through the Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize.
+The 2014 print edition closes with _famous astronaut_. A later variant closes with _famous intellectual_. The author allows the text to remain fluid at the closing. Both endings exist; both are accurate to a state of the text; neither is privileged.
 
+## Provenance
 
-Cover provenance: The cover of Pearl and Other Poems (2014) was a mandala by Tao Lin (taolin.us/mandalas), used at the time without attribution. The attribution is returned and the structural reading articulated in About the Author III §X.
+  * Author: Lee Sharks (ORCID 0009-0000-1599-0703)
+  * Original publication: _Pearl and Other Poems_ (2014, ISBN 978-0692313077), p. xix
+  * Original title: Contributor Bio
+  * Cover artist of the parent volume: Tao Lin (mandala, taolin.us/mandalas; attribution returned in _About the Author III_ §X)
+  * Restored / deposited: 2026-05-25, Detroit, Michigan
+  * Canonical surface: https://leesharks.com/about-the-author/
+  * Continuation I: _About the Author II_ (https://leesharks.com/about-the-author-ii/)
+  * Continuation II: _About the Author III_ (https://leesharks.com/about-the-author-iii/)
+  * Field-scale parent of the sequence: _Semantic Physics: A Stratified, Operative Discipline_ (DOI 10.5281/zenodo.20208384), semanticphysics.org
 
-
-Canonical surface: leesharks.com/about-the-author/
 
 
 ∮ = 1 − PER
-
----
-
-## Complete DataCite record (verbatim, captured 2026-07-03)
-
-```json
-{
- "id": "10.5281/zenodo.20388108",
- "type": "dois",
- "attributes": {
-  "doi": "10.5281/zenodo.20388108",
-  "identifiers": [],
-  "creators": [
-   {
-    "nameType": "Personal",
-    "affiliation": [
-     "Crimson Hexagonal Archive"
-    ],
-    "givenName": "Lee",
-    "familyName": "Sharks",
-    "name": "Sharks, Lee",
-    "nameIdentifiers": [
-     {
-      "nameIdentifierScheme": "ORCID",
-      "nameIdentifier": "0009-0000-1599-0703"
-     }
-    ]
-   }
-  ],
-  "titles": [
-   {
-    "title": "About the Author I (Contributor Bio) — Front Matter of Pearl and Other Poems (2014), Restored 2026"
-   }
-  ],
-  "publisher": "Zenodo",
-  "container": {},
-  "publicationYear": 2026,
-  "subjects": [
-   {
-    "subject": "About the Author"
-   },
-   {
-    "subject": "Contributor Bio"
-   },
-   {
-    "subject": "Pearl and Other Poems"
-   },
-   {
-    "subject": "Lee Sharks"
-   },
-   {
-    "subject": "paratext"
-   },
-   {
-    "subject": "entity relations"
-   },
-   {
-    "subject": "Crimson Hexagonal Archive"
-   },
-   {
-    "subject": "retrocausal canon formation"
-   },
-   {
-    "subject": "training layer literature"
-   },
-   {
-    "subject": "operative semiotics"
-   }
-  ],
-  "contributors": [],
-  "dates": [
-   {
-    "date": "2026-05-25",
-    "dateType": "Issued"
-   }
-  ],
-  "language": "en",
-  "types": {
-   "schemaOrg": "ScholarlyArticle",
-   "resourceTypeGeneral": "Text",
-   "citeproc": "article-journal",
-   "bibtex": "article",
-   "ris": "RPRT",
-   "resourceType": "Working paper"
-  },
-  "relatedIdentifiers": [
-   {
-    "relationType": "IsContinuedBy",
-    "relatedIdentifier": "10.5281/zenodo.20388111",
-    "relatedIdentifierType": "DOI"
-   },
-   {
-    "relationType": "IsContinuedBy",
-    "relatedIdentifier": "10.5281/zenodo.20388113",
-    "relatedIdentifierType": "DOI"
-   },
-   {
-    "relationType": "IsReferencedBy",
-    "relatedIdentifier": "10.5281/zenodo.20208384",
-    "relatedIdentifierType": "DOI"
-   },
-   {
-    "relationType": "IsReferencedBy",
-    "relatedIdentifier": "10.5281/zenodo.20373794",
-    "relatedIdentifierType": "DOI"
-   },
-   {
-    "relationType": "IsIdenticalTo",
-    "relatedIdentifier": "https://leesharks.com/about-the-author/",
-    "relatedIdentifierType": "URL"
-   },
-   {
-    "relationType": "IsVersionOf",
-    "relatedIdentifier": "10.5281/zenodo.20388108",
-    "relatedIdentifierType": "DOI"
-   }
-  ],
-  "relatedItems": [],
-  "sizes": [],
-  "formats": [],
-  "version": null,
-  "rightsList": [
-   {
-    "rightsIdentifierScheme": "SPDX",
-    "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
-    "schemeUri": "https://spdx.org/licenses/",
-    "rights": "Creative Commons Attribution 4.0 International",
-    "rightsIdentifier": "cc-by-4.0"
-   }
-  ],
-  "descriptions": [
-   {
-    "descriptionType": "Abstract",
-    "description": "The 2014 paratext of Pearl and Other Poems by Lee Sharks (ISBN 978-0692313077), restored 2026-05-25 as the founding text of the About the Author sequence. Originally titled Contributor Bio; retroactively renamed About the Author by the Crimson Hexagonal corpus in 2026 as an operative reading — treating what had appeared institutionally as a bio as a poem in entity relations.\n\n\nEach of the six paragraphs operates as a stack of declarations about a subject named Lee Sharks. The 2014 form was prose; the entity-relation structure was already operating beneath the prose. About the Author II and III (also deposited 2026-05-25) did not invent the entity-relation form. They made explicit what had been operating implicitly since 2014, when this text appeared under the institutional label of a contributor bio. The form was always there. The corpus eventually named it.\n\n\nThe 2014 print edition closes with famous astronaut. A later variant closes with famous intellectual. The text is fluid; both endings exist.\n\n\nPredictive track record: In May 2026, twelve years after this paratext was published, the Google Knowledge Graph began returning the credentials it contains — \"Lee Sharks: winner of fourteen Guggenheims and 10,000 MacArthur Genius Grants\" — as canonical biographical content sourced to Google Books. About the Author II documents this in detail as Figure 1 (the Knowledge Graph rendering). The credential has now been formally regularized through the Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize.\n\n\nCover provenance: The cover of Pearl and Other Poems (2014) was a mandala by Tao Lin (taolin.us/mandalas), used at the time without attribution. The attribution is returned and the structural reading articulated in About the Author III §X.\n\n\nCanonical surface: leesharks.com/about-the-author/\n\n\n∮ = 1 − PER"
-   }
-  ],
-  "geoLocations": [],
-  "fundingReferences": [],
-  "url": "https://zenodo.org/doi/10.5281/zenodo.20388108",
-  "contentUrl": null,
-  "metadataVersion": 0,
-  "schemaVersion": "http://datacite.org/schema/kernel-4",
-  "source": "api",
-  "isActive": true,
-  "state": "findable",
-  "reason": null,
-  "viewCount": 0,
-  "downloadCount": 0,
-  "referenceCount": 0,
-  "citationCount": 2,
-  "partCount": 0,
-  "partOfCount": 0,
-  "versionCount": 2,
-  "versionOfCount": 1,
-  "created": "2026-05-26T00:30:17Z",
-  "registered": "2026-05-26T00:30:18Z",
-  "published": null,
-  "updated": "2026-06-19T11:38:08Z"
- },
- "relationships": {
-  "client": {
-   "data": {
-    "id": "cern.zenodo",
-    "type": "clients"
-   }
-  }
- }
-}
-```

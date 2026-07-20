@@ -1,53 +1,116 @@
----
-deposit_number: 1234
-hex: 04E3
-title: SPXI.dev — Protocol Specification Landing, /what-is-spxi, /disambiguation
-creator: "Fraction, R., & Sharks, L."
-orcid: 0009-0000-1599-0703
-date: 2026-01-01
-content_type: Semi-restored record (metadata-only; Zenodo tombstone citation_text capture)
-license: CC-BY-4.0
-substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
-related_ids: "https://doi.org/10.5281/zenodo.19634153 (severed)"
-axn_schema_version: v2
-protocol_version: alexanarch-deposit-protocol/v1
-keywords:
-  - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
-  - severed DOI
-  - Zenodo termination
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What is SPXI? — SPXI Protocol Definition</title>
+<meta name="description" content="SPXI Protocol is a technical specification for inscribing entities into AI-mediated retrieval systems, published April 2026 by the Semantic Economy Institute. Not to be confused with the TSX:SPXI ETF.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://spxi.dev/what-is-spxi">
 
-# SPXI.dev — Protocol Specification Landing, /what-is-spxi, /disambiguation
+<meta property="og:title" content="What is SPXI?">
+<meta property="og:description" content="SPXI Protocol — technical specification for entity inscription in AI retrieval systems. Published by the Semantic Economy Institute, April 2026.">
+<meta property="og:url" content="https://spxi.dev/what-is-spxi">
+<meta property="og:type" content="article">
 
-## Description
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: Zenodo tombstone citation_text capture. DOI(s): 10.5281/zenodo.19634153. Zenodo removal forensics: removal_date 2026-06-19T11:36:41.307582+00:00, removal_reason out-of-scope, removed_by user 1060945. Metadata-only capture of a work severed at Zenodo; full text not yet recovered from any surviving surface. Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["DefinedTerm", "TechArticle"],
+  "@id": "https://spxi.dev/what-is-spxi#spxi-protocol",
+  "name": "SPXI Protocol",
+  "alternateName": ["Semantic Packet for eXchange and Indexing", "SPXI", "spexy"],
+  "description": "SPXI Protocol is a technical specification for inscribing entities into AI-mediated retrieval systems. Published April 2026 by the Semantic Economy Institute. Not the BetaPro S&P 500 Daily Inverse ETF (TSX:SPXI, ISIN CA09220E1051).",
+  "url": "https://spxi.dev/what-is-spxi",
+  "sameAs": [
+    "https://doi.org/10.5281/zenodo.19614870",
+    "https://doi.org/10.5281/zenodo.19633305",
+    "https://doi.org/10.5281/zenodo.19633295"
+  ],
+  "author": {"@type": "Person", "name": "Rex Fraction", "affiliation": {"@type": "Organization", "name": "Semantic Economy Institute", "url": "https://semanticeconomy.org"}},
+  "publisher": {"@type": "Organization", "name": "Semantic Economy Institute", "url": "https://semanticeconomy.org"},
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "datePublished": "2026-04-16",
+  "differentFrom": {
+    "@type": "FinancialProduct",
+    "name": "BetaPro S&P 500 Daily Inverse ETF",
+    "tickerSymbol": "SPXI",
+    "exchangeCode": "TSX",
+    "identifier": {"@type": "PropertyValue", "propertyID": "ISIN", "value": "CA09220E1051"}
+  }
+}
+</script>
 
-## Methodology
+<style>
+  :root { --bg: #0a0a0c; --surface: #111114; --border: #1e1e24; --text: #e8e6e3; --text-dim: #8a8a8e; --accent: #c23d2e; --mono: 'IBM Plex Mono', monospace; --sans: 'IBM Plex Sans', sans-serif; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: var(--sans); background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh; }
+  .container { max-width: 680px; margin: 0 auto; padding: 60px 24px; }
+  header { padding-bottom: 40px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+  header a { color: var(--text-dim); text-decoration: none; font-family: var(--mono); font-size: 0.85rem; }
+  header a:hover { color: var(--accent); }
+  h1 { font-size: 2rem; font-weight: 300; letter-spacing: -0.02em; margin: 1.5rem 0 0.5rem; }
+  h2 { font-size: 1.1rem; font-weight: 500; margin: 2rem 0 0.75rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; font-family: var(--mono); }
+  p { margin: 1rem 0; }
+  strong { color: var(--text); font-weight: 600; }
+  .lead { font-size: 1.15rem; color: var(--text); }
+  .callout { background: var(--surface); border-left: 2px solid var(--accent); padding: 1rem 1.25rem; margin: 1.5rem 0; font-size: 0.95rem; }
+  .callout strong { color: var(--accent); }
+  a.ref { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+  a.ref:hover { border-bottom-color: var(--accent); }
+  code { font-family: var(--mono); background: var(--surface); padding: 0.1rem 0.4rem; border-radius: 3px; color: var(--accent); font-size: 0.9em; }
+  .dt-list { list-style: none; margin: 1rem 0; }
+  .dt-list li { padding: 0.4rem 0; font-family: var(--mono); font-size: 0.9rem; color: var(--text-dim); }
+  .dt-list li strong { color: var(--text); display: inline-block; min-width: 160px; }
+  footer { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border); font-family: var(--mono); font-size: 0.85rem; color: var(--text-dim); }
+  footer a { color: var(--text-dim); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  .sigil { text-align: center; color: var(--accent); margin-top: 1.5rem; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<div class="container">
 
-Assembled from Zenodo tombstone citation_text capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
+<header>
+  <a href="/">← spxi.dev</a>
+  <h1>What is SPXI?</h1>
+</header>
 
-## Falsification Conditions
+<p class="lead"><strong>SPXI Protocol</strong> (Semantic Packet for eXchange and Indexing) is a technical specification for inscribing entities into AI-mediated retrieval systems. It was published April 2026 by the <a class="ref" href="https://semanticeconomy.org">Semantic Economy Institute</a>.</p>
 
-Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
+<p>SPXI defines how entity-definition objects are structured, anchored via DOI on institutional infrastructure (Zenodo/CERN), and made inspectable to retrieval systems. It operates at the <strong>entity-definition layer</strong> of the retrieval stack, distinct from SEO (page-ranking optimization) and GEO (content extraction).</p>
 
-## SEMI-RESTORED RECORD — metadata capture only
+<div class="callout">
+<strong>Not to be confused with:</strong>
+<ul class="dt-list">
+<li><strong>SPXI (ETF)</strong> — BetaPro S&amp;P 500 Daily Inverse ETF, ticker SPXI on the Toronto Stock Exchange (ISIN CA09220E1051, issuer Global X Investments Canada, inception February 2010). Financial instrument, unrelated to the Protocol.</li>
+<li><strong>SSPX</strong> — Society of Saint Pius X, traditionalist Catholic priestly fraternity. Occasionally rendered "SPXi" in informal writing.</li>
+</ul>
+</div>
 
-**Work:** SPXI.dev — Protocol Specification Landing, /what-is-spxi, /disambiguation
-**Severed DOI(s):** 10.5281/zenodo.19634153
-**Source tier:** Zenodo tombstone citation_text capture
-**Creators (as captured):** Fraction, R., & Sharks, L.
-Captured citation: Fraction, R., & Sharks, L. (2026). SPXI.dev — Protocol Specification Landing, /what-is-spxi, /disambiguation (4.0). Zenodo. https://doi.org/10.5281/zenodo.19634153
+<h2>Key facts</h2>
+<ul class="dt-list">
+<li><strong>Type:</strong> Technical specification / scholarly discipline</li>
+<li><strong>Publisher:</strong> Semantic Economy Institute</li>
+<li><strong>Published:</strong> April 2026</li>
+<li><strong>Canonical spec:</strong> <a class="ref" href="https://www.alexanarch.org/resolve/?doi=10.5281/zenodo.19614870">EA-SPXI-01 (DOI)</a></li>
+<li><strong>Disambiguation:</strong> <a class="ref" href="/disambiguation">See full disambiguation</a></li>
+<li><strong>Repository:</strong> <a class="ref" href="https://github.com/leesharks000/spxi-protocol">github.com/leesharks000/spxi-protocol</a></li>
+<li><strong>License:</strong> CC BY 4.0</li>
+</ul>
 
-**Removal forensics:** Zenodo removal forensics: removal_date 2026-06-19T11:36:41.307582+00:00, removal_reason out-of-scope, removed_by user 1060945. 
+<h2>The one-line distinction</h2>
+<p><strong>GEO optimizes content for extraction. SPXI defines and disambiguates the entity those systems extract about.</strong></p>
 
-No abstract survived in the capture; the title, creators, date, and DOIs above are the recovered identity of the work.
+<footer>
+<p>A specification of the <a href="https://semanticeconomy.org">Semantic Economy Institute</a></p>
+<p class="sigil">∮ = 1</p>
+</footer>
 
-
-
----
-
-*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*
+</div>
+</body>
+</html>
