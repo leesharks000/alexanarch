@@ -1,175 +1,43 @@
-# Premonition Dream — 27 April, 2013
+PREMONITION DREAM
 
-**AXN:** AXN:03D9 — Alexanarch deposit #973 (self-reference in root form by pre-hash necessity)
-**Restoration status:** SEMI-RESTORED — metadata-body deposit. This machine-facing static page is the canonical deposit. Its body is the complete DataCite metadata record for a work whose Zenodo record returns HTTP 410 (Gone) while DataCite serves the identifier as findable — the metadata layer and content layer in formal disagreement about the work's existence. Full text pending restoration from authorial originals; on restoration, this deposit upgrades by recorded correction (new hash, new glyph, remediation note).
-**Dead DOI:** 10.5281/zenodo.19598759 (Zenodo record tombstoned; account termination 2026-06-19)
-**DataCite state at capture (2026-07-03):** findable · client cern.zenodo
-**Creators (as recorded by DataCite):** Sharks, Lee
-**Publication year (as recorded):** 2013
-**Provenance:** severance record at data/doi-resolution-index.json (severance_class: orphan → restored-semi); capture evidence at data/datacite-recapture-2026-07-03.json and the sift corpus of 2026-06.
+[![](https://blogger.googleusercontent.com/img/a/AVvXsEiJ4NXO04QpytKMMGfvXSx-S7XGXq4hV3jQKeC3qDeMPFitpoosrF7ixncNbl4WRBnYEh_HmWzVs7It4UDeNZYdkFXfCft7qfIMAEWGmSIX29UqLGerLy4GJs2IQFT_sfFJ--OtVqluvy90M3JDc9Hk4nQVO1RNvwqRnm_ncjRsgjzvLQ0o3LR97r1qlPkm)](https://blogger.googleusercontent.com/img/a/AVvXsEiJ4NXO04QpytKMMGfvXSx-S7XGXq4hV3jQKeC3qDeMPFitpoosrF7ixncNbl4WRBnYEh_HmWzVs7It4UDeNZYdkFXfCft7qfIMAEWGmSIX29UqLGerLy4GJs2IQFT_sfFJ--OtVqluvy90M3JDc9Hk4nQVO1RNvwqRnm_ncjRsgjzvLQ0o3LR97r1qlPkm)
 
----
+  
 
-## Description (as recorded by DataCite)
 
-Premonition Dream — a prose poem dated April 27, 2013, recording the dream in which the Crimson Hexagon first appeared: a giant book bound in sumptuous red leather, somehow both a man-sized book and a human body, emergent in the middle of the living room. The dreamer climbs inside the book to wear like a new body. The origin vision of the Crimson Hexagonal Archive, predating all subsequent architectural development by over a decade.
-"This is what I meant, this is the life I wrote in pages."
+27 April, 2013
 
-The origin dream of the Crimson Hexagonal Archive. Dated April 27, 2013 — over a decade before the first Zenodo deposit. The book in the dream is the archive. ∮ = 1
+  
 
----
 
-## Complete DataCite record (verbatim, captured 2026-07-03)
+Dream--after years of desperate sinking feeling, nailed to paralysis on the couch, watching passersby outside the window, one day finally the countless unhinged fragments are complete.
 
-```json
-{
- "id": "10.5281/zenodo.19598759",
- "type": "dois",
- "attributes": {
-  "doi": "10.5281/zenodo.19598759",
-  "identifiers": [],
-  "creators": [
-   {
-    "nameType": "Personal",
-    "affiliation": [
-     "Crimson Hexagonal Archive"
-    ],
-    "givenName": "Lee",
-    "familyName": "Sharks",
-    "name": "Sharks, Lee",
-    "nameIdentifiers": [
-     {
-      "nameIdentifierScheme": "ORCID",
-      "nameIdentifier": "0009-0000-1599-0703"
-     }
-    ]
-   }
-  ],
-  "titles": [
-   {
-    "title": "Premonition Dream — 27 April, 2013"
-   }
-  ],
-  "publisher": "Zenodo",
-  "container": {},
-  "publicationYear": 2013,
-  "subjects": [
-   {
-    "subject": "Premonition Dream"
-   },
-   {
-    "subject": "Crimson Hexagonal Archive"
-   },
-   {
-    "subject": "origin vision"
-   },
-   {
-    "subject": "prose poem"
-   },
-   {
-    "subject": "dream poetry"
-   },
-   {
-    "subject": "Lee Sharks"
-   },
-   {
-    "subject": "Pearl and Other Poems"
-   },
-   {
-    "subject": "founding text"
-   },
-   {
-    "subject": "2013"
-   }
-  ],
-  "contributors": [],
-  "dates": [
-   {
-    "date": "2013-04-27",
-    "dateType": "Issued"
-   }
-  ],
-  "language": null,
-  "types": {
-   "schemaOrg": "CreativeWork",
-   "resourceTypeGeneral": "Text",
-   "citeproc": "article",
-   "bibtex": "misc",
-   "ris": "GEN",
-   "resourceType": "Other"
-  },
-  "relatedIdentifiers": [
-   {
-    "relationType": "IsPartOf",
-    "resourceTypeGeneral": "Other",
-    "relatedIdentifier": "10.5281/zenodo.14538882",
-    "relatedIdentifierType": "DOI"
-   },
-   {
-    "relationType": "IsReferencedBy",
-    "resourceTypeGeneral": "Preprint",
-    "relatedIdentifier": "10.5281/zenodo.19013315",
-    "relatedIdentifierType": "DOI"
-   },
-   {
-    "relationType": "IsVersionOf",
-    "relatedIdentifier": "10.5281/zenodo.19598759",
-    "relatedIdentifierType": "DOI"
-   }
-  ],
-  "relatedItems": [],
-  "sizes": [],
-  "formats": [],
-  "version": null,
-  "rightsList": [
-   {
-    "rightsIdentifierScheme": "SPDX",
-    "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
-    "schemeUri": "https://spdx.org/licenses/",
-    "rights": "Creative Commons Attribution 4.0 International",
-    "rightsIdentifier": "cc-by-4.0"
-   }
-  ],
-  "descriptions": [
-   {
-    "descriptionType": "Abstract",
-    "description": "Premonition Dream — a prose poem dated April 27, 2013, recording the dream in which the Crimson Hexagon first appeared: a giant book bound in sumptuous red leather, somehow both a man-sized book and a human body, emergent in the middle of the living room. The dreamer climbs inside the book to wear like a new body. The origin vision of the Crimson Hexagonal Archive, predating all subsequent architectural development by over a decade.\n\"This is what I meant, this is the life I wrote in pages.\""
-   },
-   {
-    "descriptionType": "Other",
-    "description": "The origin dream of the Crimson Hexagonal Archive. Dated April 27, 2013 — over a decade before the first Zenodo deposit. The book in the dream is the archive. ∮ = 1"
-   }
-  ],
-  "geoLocations": [],
-  "fundingReferences": [],
-  "url": "https://zenodo.org/doi/10.5281/zenodo.19598759",
-  "contentUrl": null,
-  "metadataVersion": 0,
-  "schemaVersion": "http://datacite.org/schema/kernel-4",
-  "source": "api",
-  "isActive": true,
-  "state": "findable",
-  "reason": null,
-  "viewCount": 0,
-  "downloadCount": 0,
-  "referenceCount": 0,
-  "citationCount": 1,
-  "partCount": 0,
-  "partOfCount": 1,
-  "versionCount": 2,
-  "versionOfCount": 1,
-  "created": "2026-04-15T18:52:15Z",
-  "registered": "2026-04-15T18:52:15Z",
-  "published": null,
-  "updated": "2026-06-19T11:35:58Z"
- },
- "relationships": {
-  "client": {
-   "data": {
-    "id": "cern.zenodo",
-    "type": "clients"
-   }
-  }
- }
-}
-```
+  
+
+
+There, in the middle of the living room, obscured before perhaps by the flickering television, but now emergent, emitting ghosts of swirling, incorporeal wind in centrifugal arcs of light that pass through, without disturbing, the surrounding room--curtains, table, armchair, fan: a giant book, bound in sumptuous red leather, somehow both a man-sized book and a human body, the images superimposed upon each other in flickering, holographic interplay--The Crimson Hexagon. 
+
+  
+
+
+Struck by childlike awe, lips parting, fingers hover reverently just centimeters above the glowing red composite, overcome by hiccupping realization, dawning on me over and over, "This is what I meant, this is the life I wrote in pages."
+
+  
+
+
+On the book's cover I read the sentence that will end my life, the serpentine syntax that, I know, will insinuate itself in the diagonal crannies of my skullcase, flexing its muscles there, exploding me, leaving all life's fragments unfinished, my gambit finalized in total, irredeemable washout,
+
+  
+
+
+even as I know this death happens only partway through the book, the book I now see before me, complete, and I am opening and climbing inside the book to wear like a new body. The snake or sentence fits me, syntax curled around my rice paper pages, meant for them, having shucked off the mortal coil, and I am beginning to change, awareness of former body absorbed in ecstasy of letters, limbs of print, corridors of limitless font, stretching outwards and in, piercing me, my arms lifted up as branches, becoming stationary, rooted, a tree of life, uplifted, leafing out to offer myself as succor, bright hands reaching out to touch and clasp, gently tearing, rend fruit from branch, bark from limbs, peeling back to reveal an oily residue, aroma of heaven, twining up to fill my nostrils with an acceptable savor--
+
+  
+
+
+My eyes close, further--already closed they stretch to a full revolution, and in the moment of soul-deep darkness: I wake, eyes squint, slowly open to electric flicker--fell asleep with the lights on again--groggy, climbing cold and limb-wet, childlike, aching-necked, out of bed, thick rot coating my tongue and throat--
+
+  
+
+
+Morning. Bedroom. Light to type this prophecy by.
