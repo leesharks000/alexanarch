@@ -17,6 +17,10 @@ committed document; any altered variant will not match.
 | `1ab7c804c0d2e4c8b7f6b90cfc4063c75a508ebfcfec80190aab6fdf6b0e270c` | 75717 | Unified review object v0.8 (superseded; retained for chain continuity). |
 | `0aed2f0321efe22da821ad33394f023f94af3d15fd5cfdbff6275dcc9921ecc4` | 11740 | Part I source, v0.2 (three narrow corrections + triad + Nox lineage applied). |
 | `b01f6466b2d41be3194cd6649e6839f13177086a99efd2f1b6953dd566a089bb` | 10161 | Part I source, v0.1 (initial provenance formation). |
+| `b0c82bad7c441f56fe49726373dedd04a0288a089fe60014ef3e395b4c6c926e` | 83033 | Unified review object v0.11 (adds Part I §5 The Wager — falsification clause after the 反論条件 form — and public §I.8; supersedes v0.10 as canonical send artifact). |
+| `8e93204a800eceb23f441ed0443e8413de0687c718f1af1fb3e43438420d1302` | 394518 | PDF rendering of v0.11 unified review object. |
+
+**Ledger amended 2026-07-20T08:48:44Z**: v0.11 entries added; chain v0.8 → v0.9 → v0.10 → v0.11 (canonical).
 
 Chain: v0.8 → v0.9 (review corrections) → v0.10 (canonical). The private parts
 publish only upon the reviewer's approval per the terms fixed inside the committed
