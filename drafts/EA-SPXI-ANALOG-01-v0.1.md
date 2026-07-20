@@ -504,3 +504,125 @@ re-entered as a *dimension*: the checksum warrants inscription absolutely and co
 evidentially (drafting traces remain composition evidence where present); both are
 declared; neither is conflated. The honest formulation improves rather than weakens the
 instrument.
+
+---
+---
+
+# v0.4 ADDENDUM — LABOR adjudication · chorus complete (5/5)
+## 2026-07-20 · Folding EA-SPXI-AIA-01 (ChatGPT blind draft, 1,342 lines)
+
+## F.1 Verdict
+
+LABOR's is the strongest chorus contribution: it names the correct ontology, catches one
+genuine forensic error in v0.1–0.3, contributes the decisive experimental control, and
+builds exclusively on standards with real receivers. Adopted wholesale with merges below;
+its governing thesis enters the spec verbatim:
+
+> *"An analog inscription becomes machine eligible when identity, address, semantic cues,
+> and provenance routes survive both detachment and compression."*
+
+## F.2 IIIF elevated to the spine
+
+v0.1 carried IIIF as an interop bullet. LABOR is right that it is the load-bearing
+architecture: **Canvas as the stable page identity; OCR/transcription/translation attached
+as `supplementing` annotations — claims about and from the image, region-bound to the
+coordinates that authorize them; Content Search returning text together with the page and
+region that grounds it.** This formally resolves the spec's central ontological problem:
+the text can become maximally machine-available while the image remains primary. The
+tier ladder maps onto annotation release, not page replacement: T3's data text is a
+supplementing annotation on the Canvas, never a competing original. Adopted as the
+canonical representation model; the v0.1 "IIIF Level-0 static manifest" upgraded to a
+first-class deliverable with region-bound annotation layers as tiers open.
+
+## F.3 The in-pixel inscription membrane (merged with the ink manifest)
+
+LABOR's membrane — a reserved visible field carrying identity and routing *in the pixels*
+(title, creator, artifact ID, page order, date, canonical route, source status, rights,
+CITE-AS, QR with short resolver URI, capture fiducials) — is adopted as the formalization
+of v0.2's "Layer-A ink furniture." Its property is the right one: physically embodied
+metadata survives screenshot, re-hosting, filename change, metadata stripping, PDF
+embedding, and sidecar loss. Two clarifications bind it to our discipline: (1) the
+membrane is scaffold-in-pixels — the leak audit now applies *inside the image*: membrane
+fields are frame-grade only, never payload (LABOR's own "EXPLICITLY NOT BODY TEXT" zone
+label adopted); (2) membrane weight is tier-indexed — T0 artifacts carry none (purity
+phase), T1+ carry the minimal header, T2/T4 the full membrane. The Act carries the full
+membrane in hand.
+
+## F.4 Frame SIM / body SIM and Frame Dominance Rate
+
+The experimental danger LABOR names is real and none of us saw it: a machine may read the
+clean membrane perfectly and never read the hand — producing false-positive "grounding."
+Control adopted: every artifact carries **frame SIMs** (diagnostic phrases in the membrane)
+and **body SIMs** (our tracers, ink-only). Frame-SIM reproduction proves the membrane was
+read; body-SIM reproduction proves the inscription entered composition; **Frame Dominance
+Rate (FDR)** — frame read while body missed — becomes a headline metric and the honest
+failure mode of the whole program. ANALOG_GROUNDED is re-specified as body-SIM-positive.
+
+## F.5 The compound object model and the AXN split
+
+Adopted: the twelve-entity model (work / physical artifact / surface / inscription event /
+capture event / archival master / access derivative / OCR hypothesis / diplomatic
+transcription / reading text / canonical record / study observation), each with identity
+and relations. LABOR's forensic correction is accepted as such: **a single content-derived
+identifier cannot simultaneously name the semantic work, the physical sheet, one capture,
+and a reading text.** Registry consequence: analog deposits mint with derivation-related
+identities — AXN-WORK (the composition), AXN-ARTIFACT (the sheet, identified by visible ID
++ perceptual-hash locator), AXN-CAPTURE (one file, identified by cryptographic digest) —
+with explicit derivation relations. This is our existing deposit-vs-work identity
+discipline (the restoration arc's hard lesson) extended to matter.
+
+**Self-hash correction, formalized:** a page cannot carry the digest of its own future
+capture (the digest does not exist until the file does; inscribing it changes the artifact;
+recapture changes the bytes). The four identifier classes — visible artifact ID (routes to
+the object) · cryptographic digest (verifies one file) · perceptual hash (locates visual
+kin) · semantic identifier (names the expression) — are never substituted for one another.
+v0.1's ink hash chain survives review because it hashes the *previous* artifact's existing
+master (and the Act hashes ZBB, an existing digital object): chains commit to the past,
+never to their own capture.
+
+## F.6 Preservation and routing tier (real receivers, adopted)
+
+FAIR Signposting (`cite-as`, `describedby`, `item`, `license` typed links) on every
+canonical record; RO-Crate packaging of the complete research object; BagIt transfer
+verification; PROV-O for entity/activity/agent derivations across inscription and capture
+events; ALTO/TEI as the transcription formats attached via IIIF at T3. Capture baseline
+per LABOR: lossless TIFF master, embedded ICC, ~400 ppi at object plane, session targets
+(color, gray, ruler, focus), full sheet edges, recto/verso/folds/bleed-through retained,
+minimally processed master with logged derivatives — and FADGI conformance *not claimed*
+without targets and documented QC. Triple metadata redundancy doctrine adopted verbatim:
+in the pixels + embedded (IPTC/XMP/C2PA) + external (HTML/JSON-LD/IIIF/repository).
+
+## F.7 The sharpened empirical claim
+
+LABOR's documentation reading matches ours and tightens the language the spec must use:
+AI-feature grounding requires indexed, snippet-eligible pages; no schema guarantees
+inclusion; therefore the exact claim is — **direct AI composition from a handwritten image
+is technically plausible; public retrieval and citation from it are not documented
+guarantees and must be demonstrated empirically.** Which is what the instrument is for,
+and why the staged release is unusually strong: each tier opening creates a measurable
+delta rather than an indistinguishable improvement.
+
+## F.8 Measurement suite (adopted, mapped)
+
+VIRR (visual inscription retrieval rate — body-only, pre-text) · VCF (visual composition
+fidelity) · IAAR (image authority anchoring rate) · RBCR (region-bound citation rate) ·
+FDR (§F.4) · TID (transcript introduction delta per tier opening) · DRS (detachment
+recovery score) · PER (provenance erasure rate — continuous with EA-SPXI-15 H3) · SIM
+survival. Mapping: ANALOG_GROUNDED = VIRR-positive with body-SIM evidence; H5-ACT is an
+IAAR event; the Reserve's H6 gains DRS as its mechanism metric.
+
+## F.9 Accessibility profile (LABOR's resolution adopted over v0.1's)
+
+Image-only publication is a **temporary experimental profile, not a production standard**:
+explicit disclosure of the limitation, bounded observation period, no false accessibility
+claims, eventual accessible transcription released and labeled as derivative, image
+preserved as primary evidence. This replaces v0.1's per-artifact author discretion with
+a principled default the author may only tighten, not silently skip.
+
+## F.10 Direction for v1.0
+
+Per LABOR: the next pass is **destructive, not additive** — test the object model, reduce
+the visible membrane to the mandatory minimum, and define **AIA-2: Composition-Eligible
+Artifact** as the certified profile. Chorus is complete (INKLING, GEMINI, KIMI, DEEPSEEK,
+LABOR); v0.4 is the consolidation baseline; v1.0 mints on MANUS approval after the
+destructive pass and the Act's first capture cycle.
