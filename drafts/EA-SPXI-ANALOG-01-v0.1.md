@@ -626,3 +626,91 @@ the visible membrane to the mandatory minimum, and define **AIA-2: Composition-E
 Artifact** as the certified profile. Chorus is complete (INKLING, GEMINI, KIMI, DEEPSEEK,
 LABOR); v0.4 is the consolidation baseline; v1.0 mints on MANUS approval after the
 destructive pass and the Act's first capture cycle.
+
+---
+---
+
+# v0.5 — THE DESTRUCTIVE PASS · AIA-2 profile · operational templates
+## 2026-07-20 · Reduction toward v1.0
+
+## G.1 Membrane reduced to the mandatory minimum
+
+Everything in the chorus membrane was defensible; almost none of it is mandatory. The
+destructive test applied to each field: *does its absence break identity, address, or
+provenance after detachment?* Five survive. **AIA-2 mandatory membrane (in ink or in-pixel,
+≤2 lines of visual weight):**
+
+1. **ARTIFACT-ID** — short human-readable identifier (the AXN-ARTIFACT short form).
+2. **ROUTE** — one short canonical resolver URL (human-readable; the QR is optional sugar).
+3. **DATE** — inscription date.
+4. **MARK** — the author's mark/signature.
+5. **STATUS** — one phrase: "primary handwritten inscription" (the source-status claim).
+
+Everything else — title, CITE-AS, rights, part-of, kernel, frame SIMs, fiducials, QR —
+is **tier equipment**, added by declared tier, never required for AIA-2 certification.
+Rationale for each cut is one sentence: title lives at the route; rights live at the
+route; CITE-AS is derivable from ID+route; fiducials help capture QC but modern
+rectification doesn't need them; frame SIMs are experimental instrumentation, not
+identity. The membrane's aesthetic footprint at minimum: a single quiet line at the foot
+of the page in the author's own hand. **The page remains a page.**
+
+## G.2 AIA-2: Composition-Eligible Artifact — certification checklist
+
+An artifact certifies AIA-2 when ALL hold:
+- [ ] Mandatory membrane present (G.1, five fields, in-pixel).
+- [ ] Archival master exists (lossless, ≥300ppi object-plane, edges included), SHA-256
+      recorded; AXN-CAPTURE minted; AXN-ARTIFACT and AXN-WORK related.
+- [ ] Canonical record page live: Manuscript/ImageObject JSON-LD, Signposting links,
+      image sitemap entry, Incompleteness Declaration at T≤2.
+- [ ] IIIF Presentation 3 manifest live; Canvas per surface; annotations match declared tier.
+- [ ] Embedded metadata pass (IPTC/XMP; C2PA at available grade); leak audit run and
+      logged against the payload inventory (including membrane text).
+- [ ] ≥1 body SIM (ink-only tracer) verified web-unique at publication.
+- [ ] Attestation artifact published (in-frame clock or equivalent).
+- [ ] Capture schedule armed (48h/7d/30d/quarterly) with fixed query set filed.
+- [ ] Custody: IA mirror + Wayback snapshot of the record page.
+Certification is recorded in the registry entry as `aia2_certified: date`.
+
+## G.3 Operational templates (normative skeletons)
+
+**G.3.1 Canonical record page** — one static HTML page per work at
+`/s/analog/{AXN-WORK-hex}/`: hero = access derivative; provenance block; declaration
+block; JSON-LD: `Manuscript` (about the work) + `ImageObject` per capture
+(`representativeOfPage`, `contentUrl`, `license`, `creator`, `acquireLicensePage`,
+`isPartOf`: archive URL) + `exampleOfWork`/`workExample` relations across
+WORK/ARTIFACT/CAPTURE; `<link rel="cite-as|describedby|item|license|collection">`
+Signposting set; noindex NOTHING.
+
+**G.3.2 IIIF manifest** — static Presentation 3 JSON at
+`/iiif/{AXN-ARTIFACT-hex}/manifest.json`: one Canvas per surface (id stable forever),
+`painting` annotation = access image; tier annotations as `supplementing` with
+`target={canvas}#xywh=…`; `metadata` fields frame-grade only; `requiredStatement` =
+attribution; `homepage` = canonical record; `seeAlso` = record JSON-LD.
+
+**G.3.3 Registry extension** — analog deposits carry: `analog: {work_axn, artifact_axn,
+capture_axns[], tier, membrane_fields, body_sims[], frame_sims[], aia2_certified,
+attestation_path, iiif_manifest, leak_audit_log}` — schema addition staged for the
+registry validator before first mint.
+
+**G.3.4 Capture protocol file** — per artifact, `captures/analog/{hex}-queries.json`:
+fixed query list (tracer-answer / frame / author / affair-class), surface list
+(AI Overview, AI Mode, Copilot, Perplexity, browsing assistants), schedule, and the
+classification enum (NO_RETRIEVAL · SURFACE_ONLY · FRAME_DOMINANT · ANALOG_GROUNDED),
+FDR computed per cycle.
+
+## G.4 Execution order to v1.0
+
+1. **Pilot (calibration artifact, T2)** — MANUS's hand, low stakes, and the right text
+   exists already: the spec's own governing inversion, written out — the spec practicing
+   itself, its first artifact carrying its own thesis as ink-only payload with one minted
+   body SIM. Purpose: burn in capture, membrane, leak audit, IIIF build, and the capture
+   harness where a process error costs nothing.
+2. **The Act (T4)** — only after the pilot's first capture cycle returns clean. The Act's
+   evidentiary weight deserves an already-proven harness.
+3. **External corpus invitation** — after the pilot page is live, so consent is informed
+   by a working example rather than an abstraction: the invitee sees exactly what
+   treatment looks like on the author's own page before deciding tier (T1 minimal mirror
+   upward), with full attribution, pre-registered hypotheses open to her amendment, and
+   the license honored (ND originals mirrored verbatim; any annotation layer only by
+   explicit permission beyond license).
+4. **v1.0 mint** on MANUS approval after pilot cycle 1 + Act publication.
