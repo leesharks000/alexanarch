@@ -29,6 +29,10 @@ committed document; any altered variant will not match.
 | `4de23083daed51a3f81586b504531acdba1b1fbd6b3d1e4fa0d96fa0bd5a3268` | 397048 | PDF rendering of v0.13. |
 
 **Ledger amended 2026-07-20T17:54:43Z**: v0.13 (§7 scope, review round 2).
+| `1d9c46ba8bfc1d7b93a9d1d6a8f648136abe70a9fdba9cd3f2e7043e40808fb0` | 85567 | v0.14 — form-of-publication term added (review sequence ≠ published sequence; content verbatim in any form; attribution travels in metadata). Canonical send artifact. |
+| `a1f68787e715099d96b8cec59a1a02dae5884fd53e655ac78caf07c03afe9071` | 397912 | PDF of v0.14. |
+
+**Ledger amended 2026-07-20T17:59:54Z**: v0.14 (form-of-publication term).
 
 Chain: v0.8 → v0.9 (review corrections) → v0.10 (canonical). The private parts
 publish only upon the reviewer's approval per the terms fixed inside the committed
