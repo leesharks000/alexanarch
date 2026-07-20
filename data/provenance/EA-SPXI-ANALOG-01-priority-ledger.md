@@ -21,6 +21,10 @@ committed document; any altered variant will not match.
 | `8e93204a800eceb23f441ed0443e8413de0687c718f1af1fb3e43438420d1302` | 394518 | PDF rendering of v0.11 unified review object. |
 
 **Ledger amended 2026-07-20T08:48:44Z**: v0.11 entries added; chain v0.8 → v0.9 → v0.10 → v0.11 (canonical).
+| `708acba2ae7295859b1bdcab763ac1e84c061527409a43912f719f5b33ce8fda` | 84087 | Unified review object v0.12 — incorporates Lucente review letter of 2026-07-20 (four revisions: P193 assistance clarification, consent-entry precision + §7 signature-as-consent instrument, honorific typography confirmed, NKA de-attribution). Canonical send artifact. |
+| `38fac3cc67d7ffec5d7d3ae48bc8cb8e8f44c28e8433939dc4c9cca85577d7a4` | 395933 | PDF rendering of v0.12. |
+
+**Ledger amended 2026-07-20T11:29:26Z**: v0.12 entries (reviewer-corrections round 1); chain … → v0.11 → v0.12 (canonical).
 
 Chain: v0.8 → v0.9 (review corrections) → v0.10 (canonical). The private parts
 publish only upon the reviewer's approval per the terms fixed inside the committed
