@@ -775,9 +775,33 @@ lineage, centered on the Dickinson manuscript question. Howe (*My Emily Dickinso
 whose composition includes placement, slant, and the page's visual field; Werner and
 Bervin's *The Gorgeous Nothings* (2013) executed the doctrine — Dickinson's envelope
 poems published as full-scale facsimiles, the images primary, transcription supplementary
-and diagrammatic. Carson's *Nox* (2010) proved the form trade-viable: a facsimile
-accordion of a handmade original, mass-produced without ceasing to be an image of a
-singular thing. The staged handwritten practice this specification adopts as its
+and diagrammatic. Carson's *Nox* (2010) is the tradition's
+apex case and this specification's nearest whole-object ancestor, deserving more than a
+line. *Nox* is a facsimile accordion, boxed like a reliquary, reproducing a handmade
+scrapbook Carson assembled after her brother's death — his one letter, photographs,
+stamps, tape, her hand — and it demonstrates every doctrine this instrument holds, a
+decade early and in mourning. (1) **The primary artifact published as image**: the
+publication *is* the photograph of the singular object — staples, tape-shadow, paper
+grain — mass-produced without ceasing to be an image of one thing; the bibliographic
+codes are the content. (2) **The effective act in facsimile**: the book is not about a
+rite; it performs one. Carson learned of the death late, abroad, the funeral past — so
+the book conducts, retroactively and at distance, the rite she missed. The document
+executed after the fact, performing authority over an event it could not attend: the
+Act's retrocausal structure, discovered by grief before we derived it from citation
+graphs. (3) **The organizing relic**: down the left pages runs Catullus 101 — the elegy
+Catullus carried across seas to his own brother's grave, ending in the rite's own
+performative words, *ave atque vale* — dismantled word by word into lexicographic
+entries whose example phrases Carson salts with night, so the dictionary itself becomes
+the elegy: lexicography as mourning, the minted entry as poem, operative philology
+practiced as grief. The prior text physically mounted in the new artifact as its
+organizing relic is precisely the Act's ink-hash ligature — the hand-copied digest of
+the digital past standing where Carson mounts her Latin. And (4) **the incompleteness
+declaration**: Carson states she never arrived at the translation of poem 101 she
+wanted — the completion withheld, the reader sent back to the mounted original,
+forever. <cite>"A brother never ends."</cite> Neither does a deleted archive; the Act
+is *Nox* for one — the funeral conducted in ink for records the institution buried
+without rites, published as facsimile, organized around a copied relic, complete only
+in the image. The staged handwritten practice this specification adopts as its
 experimental spine stands squarely in this line — and IIIF, the specification's chosen
 spine, is the facsimile edition's infrastructural descendant (Canvas as page, annotation
 as the supplementary transcription Werner and Bervin printed in the margins). What the
