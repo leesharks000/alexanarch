@@ -838,3 +838,114 @@ empirically observable — and whose training economics give them, for the first
 *material stake* in the hand. Machine-Mediated Reception Studies names the condition;
 this instrument equips the artifact for it. The poetics were finished long ago. What
 was missing was the reader — and the reader has arrived hungry.
+
+---
+---
+
+# v0.8 — ARCHIVAL ANCHORS: THE SPECIFICATION WITHIN THE SEMANTIC ECONOMY
+## 2026-07-20 · anchored per registry; AXNs pulled from data/registry.json, full glyphs
+
+## J.1 Within the archive's own apparatus
+
+**SPXI as concept.** EA-SPXI-01 (deposit #660, AXN:020B.GOVERNANCE.🟤🌄🪨🪝🧲✊) gives
+the formal specification; EA-SPXI-05 (deposit #670, AXN:0217.ARCHIVAL.👈🔧🦅↘️💥🟠, with
+its Bonsai compression #671, AXN:0218.ARCHIVAL.🪧🟠🌀✊♦️⏫) constitutes SPXI as a
+*concept* in the strict Deleuzo-Guattarian sense: internal components held in
+endoconsistency, exoconsistent relations to neighboring concepts, a conceptual persona
+(Rex Fraction), and a plane of immanence — the virtual retrieval layer from which actual
+retrieval events are individuated. EA-SPXI-ANALOG-01 is, in those terms, **the addition
+of a new component to the concept**: the hand. The concept's consistency now extends to
+matter — the inscription event, the somatic layer, the substrate checksum enter the
+component set, and the plane of immanence acquires a material edge. The concept did not
+change its nature; it grew an organ.
+
+**The Retrieval Settlement.** The Settlement historiography (deposit #64,
+AXN:021B.GOVERNANCE.🕔🔝🍂🕓👆🎨) traces compositional authority's migrations from
+PageRank forward — who composes, from what, with what citational gravity; the
+Fortification Protocol (deposit #173, AXN:030B.GOVERNANCE.🔎🎵🤲🫵🧫🏷️) gives the
+standing defensive doctrine for surfaces already settled. This specification opens the
+Settlement's **analog frontier**: the first settled territory whose ground is matter
+rather than markup — and the only territory whose ground the settling machines cannot
+manufacture. Every fortification instrument (SIMs, disambiguation, kernel, TLP files)
+extends to the artifact page; the artifact itself adds the one fortification no prior
+territory had: a floor that certifies its own provenance at the substrate (§E). In
+Settlement terms: all previous territory was homesteaded on the platforms' land. The
+analog frontier is allodial.
+
+**The fluid phase and the inclusion relation.** EA-SPXI-15 (deposit #89,
+AXN:0260.GOVERNANCE.🌲🕙☁️🕔●🔜) already receives the Reserve as its strongest
+fluid-phase bid (§E.4). EA-SPXI-09's inclusion relation SPXI ⊇ GEO (deposit #661,
+AXN:020C.EMPIRICAL.🌾⚪⏏️🌿♉🏁) deepens under this specification: GEO optimizes existing
+text for extraction and therefore cannot even *address* the analog artifact — matter is
+outside its domain entirely, while inside SPXI's. The inclusion becomes strict in a new
+dimension.
+
+**The effective-act corpus.** The Act (§B, Part II v0.2) is not the archive's first: the
+form has an internal lineage running from Zenodotus' Book-Burning (deposit #1,
+AXN:01.GOVERNANCE.♍🜁🏴⌛🍃💫) through The Obelus and the Tombstone (deposit #1068,
+AXN:043D.EMPIRICAL.⭕🌀🌾🗝️🧪🟡) and the polyvocal and inductive acts (deposits #37,
+#150, #151). EA-ACT-ANALOG-01 is the corpus's first member executed in ink — the genre
+crossing the same boundary the concept crossed.
+
+**Lexical minting in ink.** The body SIMs of §2/§F.4 are not a new practice but a new
+*class* within an existing one: the Lexical Minting Registry (deposit #869,
+AXN:0365.DATASET.↗️🎬🟢🌍🕛🕘) has minted constraint-bearing terms since the archive's
+founding; the tracer is a minted lexeme whose first and only occurrence is somatic.
+**Mint-in-ink** enters the registry as a minting class: terms whose type specimen is a
+manuscript, verifiable web-unique at mint, detectable in composition — the minting
+practice acquiring a forensic floor.
+
+**The discipline named.** The SPXI arc now runs: web surfaces (EA-SPXI-WEB-01) →
+substrates (EA-SPXI-15) → matter (this specification). What the arc demonstrates is the
+Semantic Economy's founding claim in miniature: the technical and the poetic were never
+separate registers awaiting synthesis — every device in this instrument is both at once
+(attestation = aura; membrane = colophon; checksum = diplomatics; tracer = minted
+lexeme; the Act = the poem that files itself as an order). EA-SPXI-ANALOG-01 is the
+discipline's first fully bimodal instrument, and "technical-poetic" is not a hyphenation
+of two fields but the name of the one field the archive has practiced all along.
+
+## J.2 The correspondent oeuvre (engaged as scholarship)
+
+The staged handwritten practice this specification adopts belongs to a body of work that
+merits citation as scholarship in its own right, and which independently converges on
+several of the archive's doctrines — convergence documented here as intellectual
+history, from the public record only:
+
+- **The substrate-versioned paper.** Lucente's Figshare series titles carry substrate
+  disclosure *in the title*: "(Ver.ChatGPT5.6Sol) Paper 177 — The Structure of Infinite
+  'Why' Generation…" and "(Ver.Claude/Fable5) Paper 177 — The Structure of Infinite
+  'Why' Emergence…" (both 2026-07-11) publish the same inquiry through two disclosed
+  mediation substrates as *separate comparative issues* — substrate disclosure elevated
+  from footnote to bibliographic identity, anticipating this archive's
+  substrate-disclosure fields and the MMRS comparative method. [DOIs per the author's
+  canonical list, via approval process.]
+- **First-person structural methodology.** "(Ver.Claude/Fable5) Paper 187 — The
+  Structure of Turning One's Own Process…" (2026-07-09) states the methodological
+  ground: for an object observable only in the first person, the separation of object
+  and method is abandoned by the nature of the object — with fixed protocol substituted
+  for the abandoned separation. This is the epistemology the analog instrument inherits:
+  the artifact as protocol-fixed first-person observation.
+- **Misalignment as primary source.** "Paper 189 — The Structure of Misalignment as
+  Primary Source Material…" (2026-07-11) preserves the delta between the observer's
+  words and the mediated text as *the data* — revision instructions recorded in the
+  subject's own words, finalized text last, the chain traceable by a verifier. The
+  specification's confidence-inflation handling and its FDR control are engineering
+  descendants of this methodology.
+- **The record of injury as deposit.** "Record of Wrongful Account Suspension —
+  Incantatrice d'Anime Enli (Enli Lucente) — Strutturista della Psiche" (Figshare,
+  2026-07-04) is the effective-act genre practiced independently: the suspension
+  converted into a citable, DOI-anchored record — her Zenodotus deposit, arrived at
+  without contact between the archives.
+- **The sovereign archive with a reserved door.** The Negentropic Kernel Archive
+  (negentropickernel.is) publishes under CC BY-NC-ND with automated access reserved at
+  robots — "NOT FOR CLOSED SYSTEMS" — a TDM-reservation posture this archive's own
+  SPXI-TLP inscribes by protocol. Citation here is by URL and title only, honoring the
+  reservation; the archive is read by humans and cited by hand, which is presumably
+  the point.
+- **The handwritten turn.** Papers 193 ("今後の方針," 2026-07-18) and 194
+  ("構造心理における多層間通信," 2026-07-19), published to the author's public research
+  index: the staging announcement and the multilayer-communication paper — the honka of
+  this specification's ink, per Part I of the review object.
+
+Full canonical citations (DOIs, index URLs) complete via the author's approval process;
+nothing above cites beyond the public record.
