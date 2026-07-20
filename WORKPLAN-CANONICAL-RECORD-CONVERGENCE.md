@@ -55,3 +55,15 @@ A mint is not "published" until the gate passes.
 ## 4. Standing constraints honored throughout
 
 Static-only (no backend, no server search); No-Double-Draw; non-destruction (envelope files retained, boilerplate moved not deleted); legal-name hygiene at every recovery; every derived surface regenerates in the same commit as its source of truth.
+
+---
+
+# APPENDED · PEO TOTAL-PERSISTENCE PLAN (2026-07-19/20, MANUS-directed)
+
+**State:** Tier-1 census OPERATIONAL — two full epochs (07-13: 130,608,704 findable / 4,419 clients; 07-20: 131,565,511 / 4,426), delta engine proven tonight: net +956,807 masked 24 shrinking cells totaling −18,600, headlined by **crui.unifi (Università di Firenze): 14,283 → 0 with client active and prefixes emptied** — the observatory's first live registry-scale catch, case study #1 regardless of whether drill-down resolves it as severance or silent migration (a PID-discontinuity finding either way). Deltas at data/datacite-erosion-delta-20260713-20260720.json.
+
+**Tier-2 (total identifier capture, 131.6M) — what it takes:**
+1. *Bootstrap snapshot*, one of: (a) DataCite Public Data File — datafiles.datacite.org answers 403 at root, so access path/allowlist for the release host (likely S3) is the open item, Lee-side or next session; (b) REST cursor harvest — ~132K requests ≈ 6–7h at the proven 6 req/s, chunked ~45–50 resumable tool calls across 3–5 sessions, cursor checkpoints committed; (c) OAI-PMH ListIdentifiers with resumption tokens (headers only).
+2. *Projection + custody*: minimal tuple per DOI (doi, client, state, updated, url-hash) → prefix-sharded gz, ~10GB raw / ~2–3GB compressed — too big for site repos; custody in a dedicated repo's release assets (2GB/asset) or an Internet Archive item via s3.us.archive.org (allowlisted; needs MANUS IA keys). Manifests + SHA-256s live in PEO.
+3. *Delta engine*: weekly census (cheap, tonight's pipeline) → shrunk cells trigger identifier-level re-enumeration of those cells only → diffs against the snapshot NAME the vanished DOIs → per-DOI tombstone probes (doi.org + REST detail) → erosion-ledger events. Monthly updated-range incremental sync keeps the snapshot current; quarterly count-vs-snapshot reconciliation.
+4. *Why tier-2 is non-optional*: tonight we can prove 14,283 Florence DOIs vanished but cannot name one of them — the identifier snapshot is the difference between measuring erosion and witnessing it.
