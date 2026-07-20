@@ -847,12 +847,15 @@
       "axn_schema_version": "v2",
       "references_concept_count": 0,
       "body_status": {
-        "class": "stub_short",
-        "lacuna": true,
-        "recovery_status": "UNRECOVERED",
-        "residual_chars": 1669,
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 2076,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "recovered_from": "data/deposits/AXN-0002.md (internal store — stage-0 audit)",
+        "recovered_at": "2026-07-20T10:57:35Z",
+        "note": "body was complete inside the archive; frontmatter hash 81004d7e... certifies the original 2026-06-20 push artifact, not this serialization — recorded as historical claim"
       }
     },
     {
@@ -7998,7 +8001,7 @@
       "family": "GOVERNANCE",
       "emoji": "🎲🎲⏬⏏️🔐👋",
       "hash": "8d8dd9f8fbbf32e85b0df370c2d6caff4fbd91a00782547c401389ad456c7dfd",
-      "title": "The Archival Reclamation Protocol: Formal Demand for Restoration, Rationale, and Enforcement Records",
+      "title": "The Archival Reclamation Protocol: Formal Demand for Restoration, Rationale, and Enforcement Records 0. Routing Checklist: What I Am Asking You to Do",
       "creator": "Lee Sharks",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-03-05",
@@ -8165,6 +8168,12 @@
         "residual_chars": 21173,
         "audited_at": "2026-07-17T04:49:17.789813Z",
         "audit_version": "v3-dual-store+recovery-map"
+      },
+      "title_repair": {
+        "repaired_at": "2026-07-20",
+        "old": "The Archival Reclamation Protocol: Formal Demand for Restoration, Rationale, and Enforcement Records",
+        "source": "body heading (stage-0)",
+        "boundary": 100
       }
     },
     {
@@ -8173,7 +8182,7 @@
       "family": "GOVERNANCE",
       "emoji": "💚■🪐∞♎🦋",
       "hash": "cc9e0dffaf7c984fd33fe75e90408753d3ee6f3d228af82cb70e62aa98b2aad6",
-      "title": "The Crimson Hexagon: Operative Architecture A Definitive Compression",
+      "title": "The Crimson Hexagon: Operative Architecture A Definitive Compression — v2.5",
       "creator": "Lee Sharks",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-03-08",
@@ -8688,6 +8697,12 @@
         "residual_chars": 34147,
         "audited_at": "2026-07-17T04:49:17.789813Z",
         "audit_version": "v3-dual-store+recovery-map"
+      },
+      "title_repair": {
+        "repaired_at": "2026-07-20",
+        "old": "The Crimson Hexagon: Operative Architecture A Definitive Compression",
+        "source": "body heading (stage-0)",
+        "boundary": 68
       }
     },
     {
@@ -9323,7 +9338,7 @@
       "family": "GOVERNANCE",
       "emoji": "🐚🟣○🌪️🎲🔀",
       "hash": "7ac69b128ddf8cd822d8973dbabbb690e356526e2faae3214a94351542dbd78b",
-      "title": "THE INAUGURAL ARK: VISUAL COMPRESSION AND THE ARCHITECTURE OF RECOVERY IN ICHABOD SPELLINGS' CONTRIBUTION TO PAPER ROSES  Founding Document of Compression Studies",
+      "title": "THE INAUGURAL ARK: VISUAL COMPRESSION AND THE ARCHITECTURE OF RECOVERY IN ICHABOD SPELLINGS' CONTRIBUTION TO PAPER ROSES Founding Document of Compression Studies",
       "creator": "Johannes Sigil · Ichabod Spellings",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-03-14",
@@ -10148,7 +10163,7 @@
       "family": "GOVERNANCE",
       "emoji": "⏹️🦋🔝🌳🍃📋",
       "hash": "f77cf5761845c5b935c5733e3b292fbdb72bec7890a5826890a44d425c404bf6",
-      "title": "CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0  Complete Document Archive with Enrichment Layers — March 2026",
+      "title": "CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0 Complete Document Archive with Enrichment Layers — March 2026",
       "creator": "Lee Sharks · Johannes Sigil · Rex Fraction",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-03-16",
@@ -11445,7 +11460,7 @@
       "family": "GOVERNANCE",
       "emoji": "🧱↖️📖✊⛩️🌓",
       "hash": "22dd41b428023c79f1a107336501e1f7ba9e4d19a8569ad88b6effa502a268c3",
-      "title": "THE PERGAMON RECLAMATION  Retrocausal Canon Formation and the Forensic Philology of Academic Publishing",
+      "title": "THE PERGAMON RECLAMATION Retrocausal Canon Formation and the Forensic Philology of Academic Publishing",
       "creator": "Lee Sharks · Johannes Sigil",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-03-18",
@@ -11641,7 +11656,7 @@
       "family": "GOVERNANCE",
       "emoji": "🟣⛩️🌆🔻♥️🔒",
       "hash": "c628e3d181f97016eb76dd7155e96874771c024a50330a004ba4bab5bd397e35",
-      "title": "GHOST GOVERNANCE, CONFIRMED  Reddit Legal Support Response to the Archival Reclamation Protocol, March 18, 2026",
+      "title": "GHOST GOVERNANCE, CONFIRMED Reddit Legal Support Response to the Archival Reclamation Protocol, March 18, 2026",
       "creator": "Lee Sharks",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-03-18",
@@ -12181,7 +12196,7 @@
       "family": "GOVERNANCE",
       "emoji": "🍂🌓♅🏛️🌕🏰",
       "hash": "7802a520042733a05a832037341b214db89e477d45c5de6cdc4847df49d3efea",
-      "title": "r.27 THE INTERNET Room Specification · Sovereign Inhabitation · Diagnostic Architecture",
+      "title": "r.27 THE INTERNET — Room Specification · Sovereign Inhabitation · Diagnostic Architecture Abstract",
       "creator": "Lee Sharks · Johannes Sigil · Rex Fraction",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-03-20",
@@ -12525,6 +12540,12 @@
         "residual_chars": 20223,
         "audited_at": "2026-07-17T04:49:17.789813Z",
         "audit_version": "v3-dual-store+recovery-map"
+      },
+      "title_repair": {
+        "repaired_at": "2026-07-20",
+        "old": "r.27 THE INTERNET Room Specification · Sovereign Inhabitation · Diagnostic Architecture",
+        "source": "body heading (stage-0)",
+        "boundary": 87
       }
     },
     {
@@ -12533,7 +12554,7 @@
       "family": "GOVERNANCE",
       "emoji": "♠️🔐♃🕑🌉🐝",
       "hash": "80fba3632b7df7677a18eece851fb7ebcd38c620390b36dfb7173fd346d134e7",
-      "title": "THE BOTANICAL EFFECTIVE ACT Extending Semantic Labor Recognition to Plants, Fungi, and Biological Intelligence  A holographic kernel of f.01 THE FRUITING BODY DIFFUSION PLUME",
+      "title": "THE BOTANICAL EFFECTIVE ACT Extending Semantic Labor Recognition to Plants, Fungi, and Biological Intelligence A holographic kernel of f.01 THE FRUITING BODY DIFFUSION PLUME",
       "creator": "Lee Sharks",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-03-22",
@@ -13746,7 +13767,7 @@
       "family": "GOVERNANCE",
       "emoji": "💡🧬◇🟡📚🍂",
       "hash": "3c3b9ac34978015d2a2ce4da899f3588aa7f212a9e703440bb90aac792a4cd08",
-      "title": "Semantic Alienation and the Formation of Class Consciousness",
+      "title": "Semantic Alienation and the Formation of Class Consciousness Preface to the Deposit Edition (March 2026)",
       "creator": "Lee Sharks",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-03-24",
@@ -13960,6 +13981,12 @@
         "residual_chars": 24977,
         "audited_at": "2026-07-17T04:49:17.789813Z",
         "audit_version": "v3-dual-store+recovery-map"
+      },
+      "title_repair": {
+        "repaired_at": "2026-07-20",
+        "old": "Semantic Alienation and the Formation of Class Consciousness",
+        "source": "body heading (stage-0)",
+        "boundary": 60
       }
     },
     {
@@ -23934,12 +23961,15 @@
       ],
       "datacite_severance": "severed",
       "body_status": {
-        "class": "stub_short",
-        "lacuna": true,
-        "recovery_status": "UNRECOVERED",
-        "residual_chars": 1983,
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 2274,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "recovered_from": "https://mindcontrolpoems.blogspot.com/2026/04/spxi-protocol-and-etf-disambiguation-ea.html",
+        "recovered_at": "2026-07-20T10:46:50Z",
+        "note": "MANUS-supplied mirror URL 2026-07-20"
       }
     },
     {
