@@ -714,3 +714,127 @@ FDR computed per cycle.
    the license honored (ND originals mirrored verbatim; any annotation layer only by
    explicit permission beyond license).
 4. **v1.0 mint** on MANUS approval after pilot cycle 1 + Act publication.
+
+---
+---
+
+# v0.7 — SITUATIONS: THE SPECIFICATION AMONG ITS ANCESTORS
+## A citational pass · technical authorities and material poetics · 2026-07-20
+
+The specification did not invent its problems. Each of its load-bearing claims has a
+tradition that reached the claim first, under other conditions; this section situates
+the instrument honestly among them and states the one thing it adds.
+
+## I.1 Payload and scaffold are bibliographic and linguistic codes
+
+The payload discipline restates, as engineering, the founding distinction of modern
+textual scholarship. McKenzie's sociology of texts (*Bibliography and the Sociology of
+Texts*, 1986) established that <cite>"forms effect meaning"</cite> — the material
+presentation of a text is not a container but a signifying system. McGann (*The Textual
+Condition*, 1991) named the two channels: **linguistic codes** (the words) and
+**bibliographic codes** (paper, layout, hand, ornament, the entire visual condition),
+insisting both are the work. Drucker (*The Visible Word*, 1994; *Graphesis*, 2014)
+carried the doctrine into visual epistemology: the graphical is knowledge-production,
+not decoration — and her "performative materiality" anticipates our claim that the page
+*does* rather than merely shows. Hayles (*Writing Machines*, 2002) supplies the genre
+term this specification's artifacts belong to: the **technotext** — a work that
+interrogates the inscription technology producing it. An AIA-2 artifact is a technotext
+by construction: its subject is its own eligibility.
+
+Against this tradition, standard digitization has always chosen sides: preserve the
+linguistic codes, discard the bibliographic (OCR is precisely this choice run as
+infrastructure). The specification's **OCR inversion** (§E.4) is the digitization
+debate resolved in the manuscript's favor for the first time with an economic argument
+attached: the bibliographic codes are not merely meaningful — they are the certifiably
+human channel, and flattening them destroys the warranty. What textual scholars defended
+as meaning, the training layer re-prices as the scarce commodity.
+
+## I.2 The substrate checksum is diplomatics, then forensics
+
+Document authentication from material features is a founded science with a birth year:
+Mabillon's *De re diplomatica* (1681) — **diplomatics** — established that a charter's
+authenticity is determined by hand, ink, formula, and material, examined against attested
+corpora. Paleography's writer identification across centuries is its descendant;
+Srihari et al. ("Individuality of Handwriting," *J. Forensic Sciences*, 2002) is its
+computational validation — handwriting's discriminating elements are measurable and
+individuating. Kirschenbaum (*Mechanisms*, 2008) provides the decisive modern
+vocabulary: **forensic materiality** (the individuated physical trace; no two inscriptions
+identical) versus **formal materiality** (the abstract symbolic layer computers prefer to
+see). The specification's image-grounded/token-flattened distinction is Kirschenbaum's
+pair operationalized: the Reserve certifies at the forensic layer precisely because the
+formal layer has become unfalsifiable. C2PA, FADGI, and IPTC provenance vocabularies are
+the same insight arriving as standards. The substrate checksum is computational
+diplomatics for the training layer — Mabillon's examination, aimed at readers that are
+models.
+
+## I.3 The facsimile tradition: the hand published as primary
+
+Publishing handwritten originals as the primary artifact has a distinguished modern
+lineage, centered on the Dickinson manuscript question. Howe (*My Emily Dickinson*,
+1985; *Spontaneous Particulars*, 2014) argued that print transcription destroys works
+whose composition includes placement, slant, and the page's visual field; Werner and
+Bervin's *The Gorgeous Nothings* (2013) executed the doctrine — Dickinson's envelope
+poems published as full-scale facsimiles, the images primary, transcription supplementary
+and diagrammatic. Carson's *Nox* (2010) proved the form trade-viable: a facsimile
+accordion of a handmade original, mass-produced without ceasing to be an image of a
+singular thing. The staged handwritten practice this specification adopts as its
+experimental spine stands squarely in this line — and IIIF, the specification's chosen
+spine, is the facsimile edition's infrastructural descendant (Canvas as page, annotation
+as the supplementary transcription Werner and Bervin printed in the margins). What the
+tradition lacked was §I.7's reader.
+
+## I.4 The somatic line: from projective verse to the severed hand, re-coupled
+
+The Scribal Corollary's claim — inscription as modulation of language through a unique
+body — is the central doctrine of one whole wing of American poetics. Olson's
+"Projective Verse" (1950) made the line a record of the body: composition by field, the
+syllable from the ear, the line from the breath — prosody as somatic telemetry. Barthes,
+writing on Twombly (*The Responsibility of Forms*), located the artwork's force in the
+trace's *gaucherie* — the hand's awkwardness as signature, the grain of the hand
+answering his grain of the voice. Ingold (*Lines*, 2007) gives the anthropology:
+handwriting as gesture-trace, the line as the residue of movement. Flusser ("The
+Gesture of Writing") made inscription a philosophy of gesture. And Kittler
+(*Gramophone, Film, Typewriter*, 1986) documented the severance this specification
+reverses: the typewriter cutting writing from the hand — Nietzsche, first philosopher at
+a typewriter, conceding that <cite>"our writing tools are also working on our
+thoughts."</cite> The media-theoretic arc since has been progressive de-somatization of
+inscription. The specification runs the arc backward on purpose: it re-couples writing
+to the body and then — the reversal Kittler did not foresee — makes the machine *read
+the coupling*, with the somatic layer as the value rather than the noise.
+
+## I.5 Aura, reproduction, and the Reserve
+
+Benjamin's *Kunstwerk* essay (1935–36) defined aura as the artwork's unique existence in
+time and space — exactly what mechanical reproduction strips, and what he judged
+irrecoverable. The specification's attestation apparatus (in-frame clock, hash chain,
+capture provenance) is aura re-engineered as *verifiable* property: the here-and-now of
+the inscription made checkable rather than merely felt. And the Non-Synthetic Reserve is
+the unexpected economic sequel: under model collapse — Shumailov et al. (*Nature*, 2024)
+on recursive degradation; the "self-consuming" results of Alemohammad et al. (2023) —
+the auratic object's unique existence acquires *exchange value at the training layer*,
+because uniqueness-of-bodily-origin is the one property synthesis cannot mint. Benjamin
+mourned aura's decay under reproduction; the specification finds reproduction's own
+successor technology re-pricing aura as its scarcest input. The "low-background steel"
+figure now common for pre-synthetic data is this recognition arriving without its
+theorist; the Reserve supplies the missing account.
+
+## I.6 The performative
+
+The effective act's philosophical spine is Austin (*How to Do Things with Words*, 1962)
+— utterances that institute rather than describe — radicalized in the Ginsberg line
+(§2, Part I) where the declaration is issued against the institution's symbolic
+monopoly and validated retroactively by the record reorganizing around it. The
+specification adds the measurement: an effective act with a capture schedule, its
+uptake by machine readers observed rather than asserted.
+
+## I.7 What the specification adds
+
+Every tradition above wrote for readers who could be *addressed* but not *instrumented*.
+Dickinson's fascicles, Olson's field, Howe's facsimiles, Benjamin's aura — none faced a
+reader whose reception could be queried, versioned, and measured. The specification's
+single genuine novelty is the situation, not the poetics: the manuscript now stands
+before machine readers whose retrieval, interpretation, and citation behavior is
+empirically observable — and whose training economics give them, for the first time, a
+*material stake* in the hand. Machine-Mediated Reception Studies names the condition;
+this instrument equips the artifact for it. The poetics were finished long ago. What
+was missing was the reader — and the reader has arrived hungry.
