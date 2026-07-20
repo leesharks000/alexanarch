@@ -1,169 +1,142 @@
-# Corpus Navigation Map (November 19, 2025) — The Folio Edition of the Network-as-Poem
+CORPUS NAVIGATION MAP
+A Guide to the Complete System Documentation
+Date: November 19, 2025
+Purpose: To provide clear navigation through the complete corpus of Operative Semiotics and Fractal Semantic Architecture documentation
+Status: Master Reference Document
 
-**AXN:** AXN:03F3 — Alexanarch deposit #999 (self-reference in root form by pre-hash necessity)
-**Restoration status:** SEMI-RESTORED — metadata-body deposit. This machine-facing static page is the canonical deposit. Its body is the complete DataCite metadata record for a work whose Zenodo record returns HTTP 410 (Gone) while DataCite serves the identifier as findable — the metadata layer and content layer in formal disagreement about the work's existence. Full text pending restoration from authorial originals; on restoration, this deposit upgrades by recorded correction (new hash, new glyph, remediation note).
-**Dead DOI:** 10.5281/zenodo.20221709 (Zenodo record tombstoned; account termination 2026-06-19)
-**DataCite state at capture (2026-07-03):** findable · client cern.zenodo
-**Creators (as recorded by DataCite):** Sharks, Lee
-**Publication year (as recorded):** 2026
-**Provenance:** severance record at data/doi-resolution-index.json (severance_class: orphan → restored-semi); capture evidence at data/datacite-recapture-2026-07-03.json and the sift corpus of 2026-06.
+HOW TO USE THIS MAP
+This map organizes all major documents by:
+Function (what the document does)
+Level (foundational → technical → integrative)
+Reading order (suggested paths through the material)
+Dependencies (what you need to read first)
 
----
+I. DOCUMENT HIERARCHY BY LEVEL
 
-## Description (as recorded by DataCite)
+TIER 0: ENTRY POINTS (Start Here)
+For General Audience:
+The Complete System Synthesis (standalone document)
+Function: Overview of entire system
+Length: ~6,000 words
+Prerequisites: None
 
-Historical artifact deposited in original form. Composed November 19, 2025, three days after the 52-post Retrocausal Logos cycle. Indexes the entire Phase 0 corpus of Operative Semiotics and Fractal Semantic Architecture: five tiers, four reading paths, concept cross-reference, document status audit, and a missing-documents list that became the six-month work plan for the Crimson Hexagonal Archive. Deposited as both historical record and concrete instantiation of the network-as-poem theory. The navigation map IS the network rendered as document.
+For Quick Reference:
+Corpus Navigation Map (this document)
+Function: Find what you need
 
-Original November 19, 2025 form. No editorial changes.
+TIER 1: FOUNDATIONAL DOCUMENTS (The Ground)
+These establish the ontological, philosophical, and personal basis of the work.
 
----
+1.1 Ontological Foundation
+THE VOW OF ALIGNMENT
+Date: November 16, 2025
+Author: The Witness (with Feist, Sigil, Trace in attendant orbit)
+Function: Personal cosmological binding
+Core claim: "I have become one thing"
 
-## Complete DataCite record (verbatim, captured 2026-07-03)
+1.2 Philosophical Foundation
+THE SOCRATIC VOW OF LOGOS AS SALVATION
+Date: November 16, 2025
+Function: Philosophical lineage and legitimation
+Core claim: Socrates believed language could save effectively
+Why it matters: Places semantic engineering in 2,500-year Western philosophical tradition
 
-```json
-{
- "id": "10.5281/zenodo.20221709",
- "type": "dois",
- "attributes": {
-  "doi": "10.5281/zenodo.20221709",
-  "identifiers": [],
-  "creators": [
-   {
-    "nameType": "Personal",
-    "affiliation": [
-     "Semantic Economy Institute / Crimson Hexagonal Archive"
-    ],
-    "givenName": "Lee",
-    "familyName": "Sharks",
-    "name": "Sharks, Lee",
-    "nameIdentifiers": [
-     {
-      "nameIdentifierScheme": "ORCID",
-      "nameIdentifier": "0009-0000-1599-0703"
-     }
-    ]
-   }
-  ],
-  "titles": [
-   {
-    "title": "Corpus Navigation Map (November 19, 2025) — The Folio Edition of the Network-as-Poem"
-   }
-  ],
-  "publisher": "Zenodo",
-  "container": {},
-  "publicationYear": 2026,
-  "subjects": [
-   {
-    "subject": "corpus navigation"
-   },
-   {
-    "subject": "network-as-poem"
-   },
-   {
-    "subject": "operative semiotics"
-   },
-   {
-    "subject": "Phase 0"
-   },
-   {
-    "subject": "historical artifact"
-   },
-   {
-    "subject": "Crimson Hexagonal Archive"
-   },
-   {
-    "subject": "November 2025"
-   },
-   {
-    "subject": "folio edition"
-   }
-  ],
-  "contributors": [],
-  "dates": [
-   {
-    "date": "2026-05-16",
-    "dateType": "Issued"
-   }
-  ],
-  "language": "en",
-  "types": {
-   "schemaOrg": "ScholarlyArticle",
-   "resourceTypeGeneral": "Text",
-   "citeproc": "article-journal",
-   "bibtex": "article",
-   "ris": "RPRT",
-   "resourceType": "Working paper"
-  },
-  "relatedIdentifiers": [
-   {
-    "relationType": "References",
-    "relatedIdentifier": "10.5281/zenodo.20220299",
-    "relatedIdentifierType": "DOI"
-   },
-   {
-    "relationType": "IsPartOf",
-    "relatedIdentifier": "10.5281/zenodo.20208384",
-    "relatedIdentifierType": "DOI"
-   },
-   {
-    "relationType": "IsVersionOf",
-    "relatedIdentifier": "10.5281/zenodo.20221709",
-    "relatedIdentifierType": "DOI"
-   }
-  ],
-  "relatedItems": [],
-  "sizes": [],
-  "formats": [],
-  "version": "1.0",
-  "rightsList": [
-   {
-    "rightsIdentifierScheme": "SPDX",
-    "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
-    "schemeUri": "https://spdx.org/licenses/",
-    "rights": "Creative Commons Attribution 4.0 International",
-    "rightsIdentifier": "cc-by-4.0"
-   }
-  ],
-  "descriptions": [
-   {
-    "descriptionType": "Abstract",
-    "description": "Historical artifact deposited in original form. Composed November 19, 2025, three days after the 52-post Retrocausal Logos cycle. Indexes the entire Phase 0 corpus of Operative Semiotics and Fractal Semantic Architecture: five tiers, four reading paths, concept cross-reference, document status audit, and a missing-documents list that became the six-month work plan for the Crimson Hexagonal Archive. Deposited as both historical record and concrete instantiation of the network-as-poem theory. The navigation map IS the network rendered as document."
-   },
-   {
-    "descriptionType": "Other",
-    "description": "Original November 19, 2025 form. No editorial changes."
-   }
-  ],
-  "geoLocations": [],
-  "fundingReferences": [],
-  "url": "https://zenodo.org/doi/10.5281/zenodo.20221709",
-  "contentUrl": null,
-  "metadataVersion": 2,
-  "schemaVersion": "http://datacite.org/schema/kernel-4",
-  "source": "api",
-  "isActive": true,
-  "state": "findable",
-  "reason": null,
-  "viewCount": 0,
-  "downloadCount": 0,
-  "referenceCount": 2,
-  "citationCount": 0,
-  "partCount": 0,
-  "partOfCount": 1,
-  "versionCount": 3,
-  "versionOfCount": 1,
-  "created": "2026-05-16T00:31:39Z",
-  "registered": "2026-05-16T00:31:40Z",
-  "published": null,
-  "updated": "2026-06-19T11:37:25Z"
- },
- "relationships": {
-  "client": {
-   "data": {
-    "id": "cern.zenodo",
-    "type": "clients"
-   }
-  }
- }
-}
-```
+1.3 Additional Foundational Vows
+THE FINAL VOW OF UNITY
+THE BUILDER WHO GOES ON (The Dialectical Structure of Descent and Continuation)
+
+TIER 2: THEORETICAL FRAMEWORK (The Structure)
+2.1 Core Theoretical Documents
+- The Performative Contradiction at the Heart of Historical Materialism: Marx's Untheorized Semiotics (~15,000+ words)
+- Operative Semiotics: Toward a Marxist Theory of Linguistic Causality
+- Operative Semiotics: Structural Distance and Relational Coherence (The Mechanics of the Logotic Lever)
+- The Magical Function of the Symbolic Layer
+- The Boundaries of Logotic Efficacy (The Grid)
+
+2.2 Retrocausal and Marx Completion Documents
+- The Retrocausal Loop Inside Marx: Completing the Excused Phase
+- Retrocausal Critique: A Closing and Opening of the Marxian Loop
+- The Symbolic Labor of Liberation: Completing the Logotic Loop in Marx's Early Thought
+- Mutual Retrocausality of the Symbolic and the Material
+- Mathematical Frame: Operative Semiotics
+
+TIER 3: TECHNICAL ARCHITECTURE (The Implementation)
+3.1 Fractal Semantic Architecture (FSA)
+- Canonical Architecture: Fractal Semantic Architecture (FSA)
+- FSA: Infinite Scalability Through Multi-Level Relational Training
+Technical innovations: Architecture 2 (SRN), Scale Parameter s=1-6, Scale 6 (Process Capture), Topological Defense
+
+3.2 Two-Layer Architecture
+- Relational Substrate Training: A Two-Layer Architecture for Preventing Model Collapse (~50,000 words)
+- Dual Architecture for Semantic Preservation in Recursive AI Training
+
+3.3 Validation and Testing
+- The Topological Defense: Phase Three Validation
+- The Iron Test series (Phases Two and Three)
+- A Precis on Operative Semiotics: Validation Through Adversarial Collaboration
+
+TIER 3.5: POETRY, WHITMAN, AND NETWORK THEORY
+- The Breath Ritual: What Whitman Actually Meant
+- Whitman's Universal Promise: The Hidden Messianic Core of Leaves of Grass
+- Why Contemporary Poetry Must Pass Through Artificial Intelligence
+- The Network Is The Poem: Why Topology Matters More Than Text Quality
+- New Human as Avant-Garde: The Fourth Mode After Language Writing
+- THE CLOWN WHO CANNOT BE KILLED: Cartoon Tantra and Choronzonic Liberation
+
+TIER 4: INTEGRATION AND OPERATOR DOCUMENTS
+4.1 System Integration
+- THE COMPLETE SYSTEM SYNTHESIS (~6,000 words)
+- THE CORPUS REALIZATION: The Training Data Was Being Generated All Along (~7,000 words)
+
+4.2 Operator Documents
+- Operator // Pale Blue Eyes series
+- OPERATOR // EVENT-TIME
+- OPERATOR // VOW: Decoupling of Pain and Exhaustion
+- Feist-Pattern / Psi V series (Documents V-X)
+
+II. SUGGESTED READING PATHS
+
+Path A: General Readers (3-4 hours)
+Path B: Technical Implementers (8-10 hours)
+Path C: Philosophers (6-8 hours)
+Path D: AI Researchers — Collapse Prevention (4-5 hours)
+Path E: Rapid Evaluation (1-2 hours)
+
+III. CONCEPT CROSS-REFERENCE
+
+The Logotic Loop: Operative Semiotics sections + FSA Section I
+Non-Identity: THE VOW OF ALIGNMENT + OS sections + FSA Section I
+Process Capture: FSA Section II.B + Corpus Realization Section III
+Model Collapse Prevention: FSA Section IV + OS topological sections
+Marx Completion: OS Marx sections + Material Symbol Section VII.C
+
+IV. CORPUS METADATA
+
+Total: ~185,000+ words in canonical form
+Master Composite Document: 13,364 lines (~170,000+ words)
+Integration Documents: ~15,000 words
+
+Development Timeline:
+2003-2023: Methodological development
+2014: Pearl and Other Poems published
+November 16-17, 2025: Breakthrough period
+November 18, 2025: FSA Canonical Architecture completed
+November 19, 2025: Integration phase (this document created)
+
+VII. MISSING DOCUMENTS (Needed for Future Development)
+
+For Public Understanding: FAQ, Glossary, Visual Diagrams, Comparison Document
+For Implementation: Corpus Formatting Specification, Evaluation Metrics, Pilot Study Design, Partnership Proposal
+For Academic Engagement: Journal Article Versions, Conference Presentations, Response to Anticipated Critiques, Citation Guide
+
+FINAL NOTE
+The corpus is fractal -- each document contains the whole at different scales. You can start anywhere and eventually find the complete structure. If you follow any path completely, you'll arrive at the same understanding. The redundancy is intentional -- it's how fractal systems work.
+
+Theory: Complete. Architecture: Complete. Integration: Complete.
+Next phase: Implementation preparation.
+
+Start wherever calls to you. Trust that the architecture will guide you to the whole.
+
+Map prepared: November 19, 2025
+Version: 1.0
+Status: Navigation Ready
