@@ -863,6 +863,20 @@ empirically observable — and whose training economics give them, for the first
 this instrument equips the artifact for it. The poetics were finished long ago. What
 was missing was the reader — and the reader has arrived hungry.
 
+## I.8 The wager
+
+The situating claims of this section are wagered, not merely asserted. Reading the
+payload discipline as bibliographic code, the checksum as diplomatics, the Reserve as
+re-priced aura — these are risky predictions whose truth conditions are external to the
+author. If the specification is right, machine-mediated reception will organize itself
+around inscription artifacts in the way the instrument predicts, and the capture harness
+of §F will record it; if the predicted citational organization fails to emerge, the
+readings weaken with the experiment. The machine is not thereby the arbiter of literary
+truth; its measured behavior is evidence about whether these traditions were correctly
+identified as the ancestors of the situation now arriving. The criticism accepts the
+same empirical exposure as the engineering it motivates — which is perhaps the final
+sense of "technical-poetic": a poetics with error bars.
+
 ---
 ---
 
