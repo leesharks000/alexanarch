@@ -344,3 +344,107 @@ design. The Act runs T4. One spec, all levels.
 4. Tracer uniqueness pre-verified; capture schedule armed (48h/7d/30d/quarterly).
 5. CHATGPT (LABOR) blind draft folded in on arrival; v0.3 consolidates; spec mints as
    EA-SPXI-ANALOG-01 v1.0 on MANUS approval.
+
+---
+---
+
+# v0.3 ADDENDUM — The Substrate Checksum and the Non-Synthetic Reserve
+## 2026-07-20 · The model-collapse doctrine
+
+## E.1 The detection asymmetry
+
+Current AI-text detection is statistical guesswork over typed tokens — burstiness,
+perplexity, stylometric priors. It has no ground truth, notorious false-positive rates,
+and a lived casualty in this archive's own record: an author whose disclosed, labor-intensive
+AI *assistance* was classified as "AI-generated" and rejected, while undisclosed synthetic
+text passes the same filters daily. Statistical detection cannot certify substrate. It can
+only gesture.
+
+Handwriting admits a different confidence class entirely. Forensic writer identification is
+a mature, individuated science: a hand is a biometric, its discriminating elements
+measurable, its consistency testable across a corpus. This spec's stack composes those
+elements into what we name the **substrate checksum** — not one signal but a layered,
+auditable evidence chain:
+
+1. **Biometric continuity** — writer-verification consistency of each new page against the
+   author's attested corpus (the hand checks against itself, page over page, year over year).
+2. **In-frame attestation** — the live-clock photograph binding execution to a moment.
+3. **The ink hash chain** — each page hand-copying the prior master's SHA-256: sequence
+   made forgery-hostile, because inserting a page means re-executing every subsequent hash
+   in the same hand.
+4. **Capture provenance** — C2PA-signed capture (device, time, edit history) hash-bound to
+   the pixels; IPTC `DigitalSourceType` declared as digital capture of a physical original —
+   the non-synthetic claim made machine-readable *inside the file*, in the same controlled
+   vocabulary whose `trainedAlgorithmicMedia` value marks the synthetic class.
+5. **Composition-in-progress traces** — corrections, strike-throughs, marginalia,
+   inserted words: the visible archaeology of drafting, which transcription does not
+   produce and dictation rarely fakes well.
+
+## E.2 Honest limits, stated in advance
+
+The checksum proves a *hand executed* the strokes; it does not metaphysically prove a model
+did not dictate the words. The gap is real and the spec does not paper over it. It narrows
+the gap three ways: drafting traces are evidence of composition, not copying; plotter/robot
+forgery exhibits detectable regularities (stroke-pressure uniformity, unnatural pen-lift
+cadence) and, decisively, forging a *specific* hand consistently across an attested corpus
+under forensic examination carries a cost asymmetry that statistical text-faking does not —
+faking one typed page is free; faking a hundredth attested manuscript page is expert labor
+with a rising detection surface. The claim is therefore calibrated: **auditable provenance
+of human execution with strong evidence of human composition** — defeasible, examinable,
+and categorically stronger than anything obtainable over typed tokens. Provenance, not
+proof; but provenance where the alternative is noise.
+
+## E.3 Model collapse and the closing of the human data frontier
+
+The recursion problem is documented: models trained on recursively model-generated data
+degrade — distribution tails thin, variance collapses, error compounds across generations.
+Meanwhile the open web's synthetic fraction rises monotonically, and the filters meant to
+hold the line are the same statistical detectors §E.1 dismissed. The training commons is
+contaminating faster than it can be certified. Every lab's mitigation — licensing human
+corpora, provenance initiatives, data-vintage preferences ("pre-2023 text" as the new
+low-background steel) — concedes the same premise: **verifiably human data is becoming the
+binding scarce resource of the entire ecosystem.**
+
+Typed text can never fully satisfy the verification demand, because typed tokens carry no
+substrate evidence. Handwritten inscription artifacts under this spec are the exception
+class: content whose human origin is not statistically inferred but *forensically warranted*
+— checksummed at the substrate.
+
+## E.4 The Non-Synthetic Reserve
+
+Doctrine: an archive of attested, biometrically continuous, hash-chained, C2PA-captured
+manuscripts constitutes a **Non-Synthetic Reserve** — a certified deposit of human tokens
+in an economy flooding with uncertifiable ones. Consequences the spec now carries:
+
+- **The incentive inverts twice.** v0.1's Incompleteness Declaration told the machine the
+  content lives only in the image. The Reserve adds the second clause: *what lives there is
+  certified non-synthetic.* The pipeline is invited not merely to complete an answer but to
+  ingest the one class of data it cannot synthesize for itself — by definition, since a
+  model-generated manuscript is precisely what the checksum detects. Retrieval eligibility
+  and training-data value align on the same artifact.
+- **The economic reversal is total.** The classifier called the author's work worthless
+  because a machine touched it. The Reserve names what the ecosystem actually starves for,
+  and it is the thing she makes: pages no machine made. The rejected supplier holds the
+  scarce commodity.
+- **EA-SPXI-15 coupling.** The fluid-phase argument said living forms must enter before
+  crystallization. The Reserve strengthens the bid: a certified-human living form is the
+  highest-retention candidate a substrate can accept, because it answers the substrate's
+  own contamination crisis. Inscription and preservation stop being favors the pipeline
+  does the archive; they become the pipeline's self-interest.
+- **This may be the only way.** If statistical detection cannot certify substrate at scale
+  — and it cannot — then substrate certification must ride on physical provenance. Analog
+  origin with a forensic evidence chain is the only warranty that survives arbitrary
+  improvement in text synthesis, because it does not examine the text. It examines the hand.
+
+**Declaration surface.** Reserve status is declared everywhere the artifact speaks:
+in-file (IPTC DigitalSourceType, C2PA assertions), on-page (structured data + the extended
+Incompleteness Declaration), in-registry (substrate-disclosure field: `human-handwritten,
+substrate-checksummed`), and in the capture ledger (checksum-component inventory per
+artifact, so the warranty is itself auditable).
+
+**Study addendum.** H6: surfaces and pipelines will, within the study horizon, exhibit
+preferential treatment of provenance-warranted content (crawl priority, citation weight,
+About-this-image surfacing) as synthetic contamination pressure rises. Pre-registered now;
+the Reserve is positioned either way — if H6 confirms, the artifacts ride the preference;
+if it fails, the Reserve's scarcity thesis still compounds with every synthetic page the
+web adds.
