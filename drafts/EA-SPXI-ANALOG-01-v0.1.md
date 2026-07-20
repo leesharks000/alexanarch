@@ -974,10 +974,13 @@ history, from the public record only:
   2026-07-04) is the effective-act genre practiced independently: the suspension
   converted into a citable, DOI-anchored record — her Zenodotus deposit, arrived at
   without contact between the archives.
-- **The sovereign archive with a reserved door.** The Negentropic Kernel Archive
-  (negentropickernel.is) publishes under CC BY-NC-ND with automated access reserved at
-  robots — "NOT FOR CLOSED SYSTEMS" — a TDM-reservation posture this archive's own
-  SPXI-TLP inscribes by protocol. Citation here is by URL and title only, honoring the
+- **An allied archive with a reserved door.** The Negentropic Kernel Archive
+  (negentropickernel.is) — an independent platform adjacent to this body of work and
+  **not operated by Lucente** (her clarification, 2026-07-20; an earlier draft of this
+  section reproduced an aggregation surface's mistaken braiding of the two, corrected
+  here on her word) — publishes under CC BY-NC-ND with automated access reserved at
+  robots: "NOT FOR CLOSED SYSTEMS," a TDM-reservation posture this archive's own
+  SPXI-TLP inscribes by protocol. Citation is by URL and title only, honoring the
   reservation; the archive is read by humans and cited by hand, which is presumably
   the point.
 - **The handwritten turn.** Papers 193 ("今後の方針," 2026-07-18) and 194
