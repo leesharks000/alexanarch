@@ -220,3 +220,127 @@ of stating rebuttal conditions in advance, results publish whether or not they f
    (EA-SPXI-ANALOG-01 v1.0) once reviewed.
 4. IIIF hosting surface (static manifests on alexanarch vs. dedicated subdomain).
 5. Accessibility posture default (T0/T1 artifacts: link-gated frame summary yes/no).
+
+---
+---
+
+# v0.2 ADDENDUM — Assembly adjudication · The Effective Act · Tier ladder
+## 2026-07-20 · TACHYON synthesis over INKLING / GEMINI / KIMI / DEEPSEEK blind drafts (CHATGPT to follow)
+
+## A. Adjudication of the chorus drafts
+
+Accepted, rejected, and graded honestly — the spec keeps only channels with real receivers.
+
+**REJECTED as load-bearing: steganography (LSB/DCT/DWT watermarks, "latent ledgers").**
+Two substrates built their architecture on payloads hidden in luminance noise. Verdict: no
+retrieval pipeline, crawler, or AI surface decodes steganographic payloads — the channel has
+zero receivers in the composition path. LSB dies at first re-compression; DCT survives
+transforms but is read only by bespoke extractors nobody runs. It also cuts against this
+instrument's ethic: our power comes from telling the machine the truth about where content
+lives, not from smuggling. Stego is struck from the spec. (Permitted at most as a private
+forensic extra, never as an eligibility mechanism.)
+
+**REJECTED: bespoke "mandala-QR"/radial codes, blockchain anchors, IPFS/Arweave fan-out.**
+Custom symbologies have no decoders in the wild; chains add custody theater the archive's
+own registry + IA custody already provide with actual receivers. Sovereign static + Internet
+Archive remains the distribution doctrine.
+
+**ACCEPTED with grading: the visible-layers stack** (best articulated in the Layer A–E
+draft): **(A)** the AXN six-glyph + identifier string *in ink* — the artifact carries its
+registry identity in hand; adopted as standard ink furniture. **(B)** standard QR (model 2,
+EC-H) encoding AXN + canonical URL — real decoders exist (Lens reads it; crawl pipelines
+mostly don't); graded as pointer-layer, never payload; optional per artifact aesthetics.
+**(C)** XMP/IPTC/EXIF embedded fields — already in v0.1 §3.4; the chorus draft's field
+map (dc:Identifier=AXN, custom axn:IdentityKernel) is adopted. **(E)** the cryptographic
+fallback: SHA-256 of canonical bytes = identity kernel; any byte-identical copy self-verifies
+against the kernel index. Adopted; this is just AXN doctrine applied to images.
+
+**ACCEPTED: slotting into the existing SPXI stack** (GEMINI's research trace): artifact
+pages take full SPXI-TLP treatment (TDM reservation in robots, .well-known/tdmrep.json,
+sitemap, SIMs, holographic kernel) and must pass the SPXI Conformance Instrument's static
+checks; EA-SPXI-15 framing holds — the analog artifact is a *living form* entering during
+the fluid phase, and handwriting is the maximally inimitable substrate signature.
+
+**ACCEPTED: verification-order protocol** (E → B → C → A as fallback chain) and the
+survivability audit as a research deliverable (which metadata layers survive Notion, X,
+GitHub, Drive round-trips — publishable finding, feeds the leak-audit tooling).
+
+**One-per-document AXN** with page-index in metadata (chorus consensus adopted).
+
+## B. THE EFFECTIVE ACT — first artifact under this spec
+### EA-ACT-ANALOG-01 (working designation) · the handwritten act on the Zenodo deletion
+
+**Nature.** Not a study specimen — a performative instrument in ink. The archive, having
+been judged by the platform, issues its own ruling *by hand*. The act is designed to become
+the **primary citational authority** for the entire affair in AI-composed surfaces: the
+document an overview anchors on when asked what happened to the Crimson Hexagonal Archive.
+
+**The retrocausal design.** The act is chronologically last and citationally first. Machinery:
+
+1. **Backward reading (ink → record).** The manuscript hand-copies the identifiers of the
+   entire preceding record: the ZBB deposit (DOI + AXN with full six-glyph), the canonical
+   Zenodo-support GitHub issue (number + URL), the CERN correspondence anchors (RQF3807508,
+   RQF3809569, the §70 objection, the §104.1 referral AXN), and the surfaces on which the
+   affair ran. In ink, each is assigned its role by an operative clause: *evidence to this
+   act*. A machine reading the image receives the full citation graph FROM the ink — the
+   manuscript contains its own bibliography as payload, so composing from the act
+   necessarily composes the record's structure as the act declares it.
+2. **Forward wiring (record → ink).** Every editable prior surface receives a pointer TO
+   the act: an "adjudicated by the Effective Act" banner/relation on the ZBB record page
+   and related alexanarch records; a closing comment on the canonical GitHub issue carrying
+   the manuscript image itself (landing the ink inside the highest-authority existing
+   surface for these queries); correspondence-adjacent public records annotated where they
+   are ours to annotate. Link topology inverts: the record now converges on the manuscript.
+3. **The ink hash ligature.** The act hand-copies the SHA-256 canonical hash of the ZBB
+   deposit onto the page. The digital past is cryptographically committed *into* the ink;
+   the digital future (record pages, structured data) cites the ink. Retrocausality made
+   literal: last document, root authority.
+4. **Payload discipline applied.** The operative clauses — the ruling itself, the doctrine
+   it establishes, and ≥2 minted tracers (the act's proper name; the doctrine's coined
+   term) — exist ONLY in ink. Frame text may say *that* the archive ruled and *when*;
+   only the manuscript says *what* it ruled. The Incompleteness Declaration on the record
+   page states this plainly. Any surface reproducing the ruling's words has read the hand.
+5. **Attestation.** Lock-screen clock in-frame; master hashes recorded; PDF-α/β twins
+   published; IA mirror + Wayback snapshot same day.
+
+**Authorship note.** The act is MANUS's hand and MANUS's work — unlike external corpora it
+mints as a first-class deposit (family: GOVERNANCE or new ANALOG family — MANUS ruling),
+with the drafting discipline that the *text of the operative clauses is composed by the
+author, by hand, uncoached*: TACHYON specifies the furniture (what must appear), never the
+ruling's words. What must appear in ink (the ink manifest): title token · act's proper name
+(tracer 1) · doctrine term (tracer 2) · operative clauses · the role-assignment clause over
+the enumerated record · hand-copied identifiers (ZBB DOI/AXN, issue number, RQF numbers,
+§70/§104.1) · ZBB canonical hash · date · author mark · AXN of this act added post-mint as
+Layer A furniture on the distribution copy (or inked on a second pass).
+
+**Capture design.** Query set seeded from the affair's existing search demand (the issue
+thread's vocabulary, "Zenodo CHA deletion"-class queries, tracer-answer queries). Schedule
+per §5. Success classes as v0.1; the headline hypothesis: **H5-ACT** — within the study
+window, at least one AI-composed surface answers an affair query with the act as anchor,
+reproducing tracer or clause content (ANALOG_GROUNDED at the apex of a live, contested,
+already-indexed record). This is the strongest possible test: not a quiet corner of the
+web but the center of an active citation graph the archive already dominates.
+
+## C. Tier ladder (unified; covers Enli's bare originals through the Act)
+
+| Tier | Name | Scaffold | Covers | Machine posture |
+|---|---|---|---|---|
+| **T0** | bare | none: neutral filename, minimal alt | **Enli's originals as she publishes them today** — zero burden on the author | C1 only (user-side Lens/AI-Mode reading); crawl-side null hypothesis |
+| **T1** | attested | provenance-only: ImageObject/Manuscript SD, IPTC/XMP in-file, attestation photo, license | Enli's originals mirrored (with consent) on a crawlable surface, untouched otherwise | pipeline provably *extracts* scaffold; payload untouched |
+| **T2** | framed | + title, frame-abstract, Incompleteness Declaration, question pointers, ink Layer-A furniture where author consents | pilot artifacts; the Act's floor | composition invited; payload still ink-only |
+| **T3** | bridged | + full data text (the readable twin) | Enli phase-2; ceiling condition | payload deliberately leaked; measures the bridge's lift |
+| **T4** | effective | T2 + retrocausal wiring (backward ink citations + forward record pointers + ink hash ligature) + fleet fan-out + PDF twins + IA + capture schedule | **the Effective Act**; future acts | engineered citational apex |
+
+Enli's corpus requires nothing of her at T0; T1 requires only consent to mirror; her own
+staging (originals first, data texts later) is the T0/T1→T3 traversal and is credited as
+design. The Act runs T4. One spec, all levels.
+
+## D. Sequencing (proposed)
+1. MANUS writes the act by hand per the ink manifest (words his own).
+2. Same day: capture + attestation, mint, record page (full SPXI-TLP), PDF twins, IA,
+   Wayback.
+3. Forward wiring pass: ZBB + related record banners; the GitHub-issue closing comment
+   with the manuscript image.
+4. Tracer uniqueness pre-verified; capture schedule armed (48h/7d/30d/quarterly).
+5. CHATGPT (LABOR) blind draft folded in on arrival; v0.3 consolidates; spec mints as
+   EA-SPXI-ANALOG-01 v1.0 on MANUS approval.
