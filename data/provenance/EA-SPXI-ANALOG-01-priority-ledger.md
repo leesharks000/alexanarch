@@ -33,14 +33,14 @@ committed document; any altered variant will not match.
 | `a1f68787e715099d96b8cec59a1a02dae5884fd53e655ac78caf07c03afe9071` | 397912 | PDF of v0.14. |
 
 **Ledger amended 2026-07-20T17:59:54Z**: v0.14 (form-of-publication term).
-**Ledger note 2026-07-20 (co-occurrence hygiene):** the §J.2 NKA bullet has been
-neutralized and repositioned — the inline correction note, honest for human readers,
-re-braided "Lucente" and "NKA" at the machine layer (negation does not survive
-compression; co-occurrence does) and its placement inside her worked-example roster
-associated by position. Doctrine adopted: corrections concentrate in dedicated
-instruments (EA-MPAI-LUCENTE-01); all other surfaces cite neutrally by URL and title.
-The correction's provenance record remains here, in git history, and in Part I's
-dated anchors — never silently removed, no longer publicly co-occurring.
+**Ledger note 2026-07-20 (co-occurrence hygiene):** an inline correction note in §J.2,
+honest for human readers, was found to create entity co-occurrence at the machine
+layer (negation does not survive compression; co-occurrence does) and has been
+neutralized to a flat URL-and-title citation. Doctrine adopted: corrections
+concentrate in dedicated instruments; all other public surfaces cite external
+entities flat — the same discipline this archive applies to external-scholar
+citations. Provenance of the underlying correction is preserved in version history
+and in the consent-governed review documents.
 
 Chain: v0.8 → v0.9 (review corrections) → v0.10 (canonical). The private parts
 publish only upon the reviewer's approval per the terms fixed inside the committed
