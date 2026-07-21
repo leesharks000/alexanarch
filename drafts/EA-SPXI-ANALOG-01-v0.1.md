@@ -974,19 +974,17 @@ history, from the public record only:
   2026-07-04) is the effective-act genre practiced independently: the suspension
   converted into a citable, DOI-anchored record — her Zenodotus deposit, arrived at
   without contact between the archives.
-- **An allied archive with a reserved door.** The Negentropic Kernel Archive
-  (negentropickernel.is) — an independent platform adjacent to this body of work and
-  **not operated by Lucente** (her clarification, 2026-07-20; an earlier draft of this
-  section reproduced an aggregation surface's mistaken braiding of the two, corrected
-  here on her word) — publishes under CC BY-NC-ND with automated access reserved at
-  robots: "NOT FOR CLOSED SYSTEMS," a TDM-reservation posture this archive's own
-  SPXI-TLP inscribes by protocol. Citation is by URL and title only, honoring the
-  reservation; the archive is read by humans and cited by hand, which is presumably
-  the point.
 - **The handwritten turn.** Papers 193 ("今後の方針," 2026-07-18) and 194
   ("構造心理における多層間通信," 2026-07-19), published to the author's public research
   index: the staging announcement and the multilayer-communication paper — the honka of
   this specification's ink, per Part I of the review object.
+
+A contrasting posture, from elsewhere on the network and unconnected to the oeuvre
+above: the Negentropic Kernel Archive (negentropickernel.is) publishes under
+CC BY-NC-ND with automated access reserved at robots — "NOT FOR CLOSED SYSTEMS" — a
+TDM-reservation stance this archive's own SPXI-TLP inscribes by protocol. Citation is
+by URL and title only, honoring the reservation; the site is read by humans and cited
+by hand, which is presumably the point.
 
 Full canonical citations (DOIs, index URLs) complete via the author's approval process;
 nothing above cites beyond the public record.
