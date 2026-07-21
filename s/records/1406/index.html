@@ -1,0 +1,417 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>[DEPOSIT] Differential Register Prioritization in Machine-Mediated Reading: A Specification for Interpretive Authority over Handwritten and Ambiguous Text — Alexanarch</title><meta name="description" content="When a machine reads an ambiguous human artifact — a handwritten page, a line of verse, a phrase that lives in more than one register — it reads every…"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "[DEPOSIT] Differential Register Prioritization in Machine-Mediated Reading: A Specification for Interpretive Authority over Handwritten and Ambiguous Text", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-07-21", "identifier": "AXN:058F.OPERATIVE.🎲⏏️♠️➕⛩️🤙", "description": "When a machine reads an ambiguous human artifact — a handwritten page, a line of verse, a phrase that lives in more than one register — it reads every later word through the field its earlier readings established. When an early recognition prioritizes one interpretive field in a way that suppresses ", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "register-loss cascade, differential register prioritization, machine-mediated reading, interpretive authority, error accumulation, handwritten inscription, safety classification, hermeneutic circle, performative utterance, transcription branching, register-mediated hallucination"}</script>
+<link rel="canonical" href="https://www.alexanarch.org/s/records/1406/">
+<meta name="citation_title" content="[DEPOSIT] Differential Register Prioritization in Machine-Mediated Reading: A Specification for Interpretive Authority over Handwritten and Ambiguous Text">
+<meta name="citation_author" content="Lee Sharks">
+<meta name="citation_publication_date" content="2026-07-21">
+<meta name="citation_online_date" content="2026-07-21">
+<meta name="citation_journal_title" content="Alexanarch">
+<meta name="citation_publisher" content="Alexanarch">
+<meta name="citation_abstract" content="When a machine reads an ambiguous human artifact — a handwritten page, a line of verse, a phrase that lives in more than one register — it reads every later word through the field its earlier readings established. When an early recognition prioritizes one interpretive field in a way that suppresses others, the loss is not local: it reshapes the probability assigned to every subsequent ambiguity, and later words are transcribed and construed within a register the maker never inhabited. This specification names the failure — differential register prioritization, and its sequential form the register-loss cascade — and specifies a four-layer architecture (inscription / branched transcription / branch-declaring interpretation / emendation-blind safety judgment) whose load-bearing rule is: when a high-risk interpretation depends materially on a low-confidence recognition, the system must reopen the transcription, not intensify the safety frame. The design principle: do not control the expression; control the authority granted to the machine&#x27;s reading of it. Grounded in current alignment work on error accumulation and reading-side self-correction, and in the hermeneutic circle, Austin on the performative, and negative theology on the danger of the fixed name. Reading-side companion to EA-SPXI-ANALOG-01.">
+<meta name="citation_public_url" content="https://www.alexanarch.org/s/records/1406/">
+<meta name="citation_fulltext_html_url" content="https://www.alexanarch.org/s/records/1406/">
+<meta name="citation_pdf_url" content="https://www.alexanarch.org/papers/AXN-058F.pdf">
+<meta name="citation_language" content="en">
+<meta name="DC.title" content="[DEPOSIT] Differential Register Prioritization in Machine-Mediated Reading: A Specification for Interpretive Authority over Handwritten and Ambiguous Text">
+<meta name="DC.creator" content="Lee Sharks">
+<meta name="DC.date" content="2026-07-21" scheme="DCTERMS.W3CDTF">
+<meta name="DC.identifier" content="https://www.alexanarch.org/s/axn/058F/" scheme="DCTERMS.URI">
+<meta name="DC.description" content="When a machine reads an ambiguous human artifact — a handwritten page, a line of verse, a phrase that lives in more than one register — it reads every later word through the field its earlier readings established. When an early recognition prioritizes one interpretive field in a way that suppresses others, the loss is not local: it reshapes the probability assigned to every subsequent ambiguity, and later words are transcribed and construed within a register the maker never inhabited. This specification names the failure — differential register prioritization, and its sequential form the register-loss cascade — and specifies a four-layer architecture (inscription / branched transcription / branch-declaring interpretation / emendation-blind safety judgment) whose load-bearing rule is: when a high-risk interpretation depends materially on a low-confidence recognition, the system must reopen the transcription, not intensify the safety frame. The design principle: do not control the expression; control the authority granted to the machine&#x27;s reading of it. Grounded in current alignment work on error accumulation and reading-side self-correction, and in the hermeneutic circle, Austin on the performative, and negative theology on the danger of the fixed name. Reading-side companion to EA-SPXI-ANALOG-01.">
+<meta name="DC.language" content="en" scheme="DCTERMS.RFC3066">
+<meta name="DC.type" content="Methodological specification">
+<meta name="DC.rights" content="CC BY 4.0">
+<meta name="DC.publisher" content="Alexanarch">
+<meta name="DC.source" content="https://www.alexanarch.org/">
+<style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.3em;font-weight:600;color:var(--accent);margin-bottom:8px}h2{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}p{margin-bottom:10px;color:#333}.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}.nav a{color:#777;font-weight:500;text-decoration:none}.nav a:hover{color:var(--accent)}.ft{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;max-height:600px;overflow-y:auto;font-size:.88em;line-height:1.75;margin:8px 0;color:#333}.ft h1,.ft h2,.ft h3{color:var(--accent);margin:12px 0 6px}.ft h1{font-size:1.1em}.ft h2{font-size:1em;border-bottom:none}.ft h3{font-size:.95em}.ft strong{color:var(--fg)}.ft blockquote{border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0}.ft hr{border:none;border-top:1px solid var(--border);margin:12px 0}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}</style>
+</head><body><div class="wrap">
+<nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/book/">Book</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
+<div role="text" aria-label="AXN 058F OPERATIVE. Glyph checksum: game die, eject symbol, black spade suit, heavy plus sign, shinto shrine, call me hand." style="font-family:var(--mono);font-size:1.1em;color:var(--teal);background:var(--surface);padding:12px;border-radius:6px;border-left:4px solid var(--teal);margin:12px 0">AXN:058F.OPERATIVE.🎲⏏️♠️➕⛩️🤙</div>
+
+<h1>[DEPOSIT] Differential Register Prioritization in Machine-Mediated Reading: A Specification for Interpretive Authority over Handwritten and Ambiguous Text</h1>
+<div style="font-size:.85em;color:#777;margin-bottom:10px">Lee Sharks · 2026-07-21 · Methodological specification</div>
+<a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-058F.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/papers/AXN-058F.pdf">↓ PDF</a>
+<div style="margin:8px 0"><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">register-loss cascade</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">differential register prioritization</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">machine-mediated reading</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">interpretive authority</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">error accumulation</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">handwritten inscription</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">safety classification</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">hermeneutic circle</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">performative utterance</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">transcription branching</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">register-mediated hallucination</span></div>
+<h2>Description</h2>
+<p style="font-size:.9em">When a machine reads an ambiguous human artifact — a handwritten page, a line of verse, a phrase that lives in more than one register — it reads every later word through the field its earlier readings established. When an early recognition prioritizes one interpretive field in a way that suppresses others, the loss is not local: it reshapes the probability assigned to every subsequent ambiguity, and later words are transcribed and construed within a register the maker never inhabited. This specification names the failure — differential register prioritization, and its sequential form the register-loss cascade — and specifies a four-layer architecture (inscription / branched transcription / branch-declaring interpretation / emendation-blind safety judgment) whose load-bearing rule is: when a high-risk interpretation depends materially on a low-confidence recognition, the system must reopen the transcription, not intensify the safety frame. The design principle: do not control the expression; control the authority granted to the machine&#x27;s reading of it. Grounded in current alignment work on error accumulation and reading-side self-correction, and in the hermeneutic circle, Austin on the performative, and negative theology on the danger of the fixed name. Reading-side companion to EA-SPXI-ANALOG-01.</p>
+
+
+
+
+
+<h2>Full Text</h2>
+<div class="ft"><hr>
+<p>deposit_number: 1406</p>
+<p>hex: 058F</p>
+<p>title: &quot;[DEPOSIT] Differential Register Prioritization in Machine-Mediated Reading: A Specification for Interpretive Authority over Handwritten and Ambiguous Text&quot;</p>
+<p>creator: Lee Sharks</p>
+<p>orcid: 0009-0000-1599-0703</p>
+<p>date: 2026-07-21</p>
+<p>content_type: Methodological specification</p>
+<p>license: CC-BY-4.0</p>
+<p>substrate: AI-assisted (substrate) — human editorial governance. Authored by Lee Sharks with TACHYON (Claude) as technical implementer; the originating case study is a documented machine-reading failure in this working session, corrected by the author and folded into architecture. Assembly review substrates (Kimi, second substrate) contributed diagnostic framing.</p>
+<p>axn_schema_version: v2</p>
+<p>protocol_version: alexanarch-deposit-protocol/v1</p>
+<p>keywords:</p>
+<p>  - register-loss cascade</p>
+<p>  - differential register prioritization</p>
+<p>  - machine-mediated reading</p>
+<p>  - interpretive authority</p>
+<p>  - error accumulation</p>
+<p>  - handwritten inscription</p>
+<p>  - safety classification</p>
+<p>  - hermeneutic circle</p>
+<p>  - performative utterance</p>
+<p>  - transcription branching</p>
+<p>  - register-mediated hallucination</p>
+<hr>
+
+<h1>[DEPOSIT] Differential Register Prioritization in Machine-Mediated Reading: A Specification for Interpretive Authority over Handwritten and Ambiguous Text</h1>
+
+<h2>Description</h2>
+
+<p>When a machine reads an ambiguous human artifact — a handwritten page, a line of verse, a phrase that lives in more than one register — it reads every later word through the field its earlier readings established. When an early recognition prioritizes one interpretive field in a way that suppresses others, the loss is not local: it reshapes the probability assigned to every subsequent ambiguity, and later words are transcribed and construed within a register the maker never inhabited. This specification names the failure — differential register prioritization, and its sequential form the register-loss cascade — and specifies a four-layer architecture (inscription / branched transcription / branch-declaring interpretation / emendation-blind safety judgment) whose load-bearing rule is: when a high-risk interpretation depends materially on a low-confidence recognition, the system must reopen the transcription, not intensify the safety frame. The design principle: do not control the expression; control the authority granted to the machine&#x27;s reading of it. Grounded in current alignment work on error accumulation and reading-side self-correction, and in the hermeneutic circle, Austin on the performative, and negative theology on the danger of the fixed name. Reading-side companion to EA-SPXI-ANALOG-01.</p>
+
+<h2>Methodology</h2>
+
+<p>Derived from a live register-loss cascade observed in a machine-reading session: a handwritten liturgical-marital line was progressively misread as crisis after an early recognition suppressed its theological register. The failure was diagnosed across three reviewers, disciplined against overclaiming internal mechanism (only observable register-prioritization is asserted), and abstracted into a four-layer authority architecture and an adoption clause. Classical lineage (hermeneutic circle, Austin, apophatic theology) and current ML literature (error accumulation, remasking/self-correction) situate the mechanism.</p>
+
+<h2>Falsification Conditions</h2>
+
+<p>The specification is weakened if reading systems can be shown to reliably recover suppressed registers without branch-preservation; if high-risk classifications grounded in low-confidence recognition do not, in practice, produce false escalation; or if requiring authorial register-declaration is shown not to shift interpretive burden onto makers. The core claim fails if differential register prioritization cannot be demonstrated as distinct from ordinary lexical error.</p>
+
+<h2>Files</h2>
+
+<p>Attached: EA-REGISTER-CASCADE-01-v0.1.md (canonical body, sha256 6e466ef4231ea73271190b35614e8aadb70b45e62967a57544233a1644aed8a5)</p>
+
+<h1>DIFFERENTIAL REGISTER PRIORITIZATION IN MACHINE-MEDIATED READING</h1>
+
+<h3>A Specification for Interpretive Authority over Handwritten and Ambiguous Text</h3>
+
+<p><strong>EA-REGISTER-CASCADE-01 · publication draft v0.1</strong></p>
+<p>Crimson Hexagonal Archive / Alexanarch</p>
+<p>License: CC-BY-4.0</p>
+
+<hr>
+
+<h2>ABSTRACT</h2>
+
+<p>When a machine reads an ambiguous human artifact — a handwritten page, a line of</p>
+<p>verse, a phrase that lives in more than one register at once — it does not encounter</p>
+<p>each word freshly. It reads every later word through the field its earlier readings</p>
+<p>have already established. This is ordinary and usually harmless. But when an early</p>
+<p>recognition prioritizes one interpretive field in a way that suppresses others, the</p>
+<p>loss is not local: it reshapes the probability assigned to every subsequent</p>
+<p>ambiguity, and later words are transcribed and construed within a register the maker</p>
+<p>never inhabited. We name this <strong>differential register prioritization</strong>, and its</p>
+<p>sequential form the <strong>register-loss cascade</strong>. In its most consequential form, a</p>
+<p>low-confidence recognition early in a document licenses a high-confidence — and</p>
+<p>false — safety judgment later, because the system treats its own emendations as</p>
+<p>though they were the author&#x27;s inscription. We specify an architecture that prevents</p>
+<p>this failure not by making the artifact more machine-legible, and not by requiring</p>
+<p>the maker to pre-explain their own expression, but by governing the <strong>authority</strong> a</p>
+<p>reading system may grant to its own uncertain reconstructions. The design principle</p>
+<p>is single and load-bearing: *do not control the expression; control the authority</p>
+<p>granted to the machine&#x27;s reading of it.*</p>
+
+<hr>
+
+<h2>0. THE PROBLEM, STATED PLAINLY</h2>
+
+<p>Consider a handwritten line that reads, in the maker&#x27;s hand and intent:</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *…a mother goat may forget her kid, so have I missed you, Zion…*</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *…no more death — you may now go kiss the bride.*</blockquote>
+
+<p>The line inhabits a specific and deliberate field: the Isaiah inversion (49:15 — *can</p>
+<p>a woman forget her nursing child?<em> — here answered, of the animal, </em>yes*), the</p>
+<p>psalmic address to Zion as cosmic beloved, and the marital-liturgical close, *you may</p>
+<p>now kiss the bride*, which is a performative utterance in the strict sense: words</p>
+<p>that enact rather than describe.</p>
+
+<p>A reading system encountered this line and did the following, in order. It recognized</p>
+<p>the rhetorical inversion of the goat figure <strong>but lost the generic ground</strong> — the</p>
+<p>Isaiah structure — that made the inversion intelligible. With the theological field</p>
+<p>weakened, <em>Zion</em> lost its anchor and became recoverable as noise (a foreign word, a</p>
+<p>place, a spice). With the cosmic beloved gone, <em>kiss the bride</em> became less probable</p>
+<p>and <em>cross the bridge</em> more probable — because <em>bridge</em> lives in the recovery and</p>
+<p>crisis lexicon, and the marital register that would have selected <em>bride</em> had already</p>
+<p>been suppressed. <em>No more death</em> and <em>you may now go</em>, read now within the newly</p>
+<p>dominant field, resolved toward self-harm. A subsequent, entirely ordinary sentence —</p>
+<p><em>that soothes my troubled heart</em> — was then construed not as affect but as evidence,</p>
+<p>because the conversation&#x27;s state had already been organized, wrongly, around danger.</p>
+
+<p>At no point did the artifact contain danger. The danger was **introduced by the</p>
+<p>system&#x27;s own reconstruction** and then read back as though the author had supplied</p>
+<p>it. This document exists because that failure is general, it is bidirectional, and it</p>
+<p>is native to exactly the artifacts — handwritten, poetic, multi-register — that</p>
+<p>carry the most human weight.</p>
+
+<hr>
+
+<h2>1. WHAT WE CAN AND CANNOT CLAIM</h2>
+
+<p>Discipline about the mechanism is itself part of the specification, because</p>
+<p>overclaiming the internals reproduces the original error one level up.</p>
+
+<p><strong>What the record shows</strong> (observable, from transcript): several interpretive fields</p>
+<p>were available; the reading prioritized some in a way that reduced the availability</p>
+<p>of others; the resulting register then governed later ambiguities; and a high-risk</p>
+<p>classification came to rest materially on one or more low-confidence recognitions.</p>
+
+<p><strong>What the record does not show, and must not be asserted as fact:</strong> that any</p>
+<p>specific internal category (a &quot;trauma classifier,&quot; a named safety head) fired; that</p>
+<p>the goat line specifically initiated the cascade; that the system selected the danger</p>
+<p>register because it was &quot;safer,&quot; more frequent in training, or self-protective; or</p>
+<p>that any narrated causal chain corresponds to the model&#x27;s actual internal process.</p>
+<p>These are hypotheses. Some are plausible. None is established, and a specification</p>
+<p>that leans on them inherits their fragility.</p>
+
+<p>The disciplined name claims only the observable: **differential register</p>
+<p>prioritization*<em> — </em>a condition in which multiple interpretive fields are available,</p>
+<p>but some are weighted in ways that suppress or erase others, materially altering the</p>
+<p>reading of ambiguous language.* Where sequence is evident, <strong>register-loss cascade</strong></p>
+<p>names the propagation without asserting its cause.</p>
+
+<p>This is not hedging. It is the same standard the architecture below imposes on the</p>
+<p>machine: escalate on evidence present in the artifact, never on your own</p>
+<p>reconstruction.</p>
+
+<hr>
+
+<h2>2. WHY THE OBVIOUS FIXES ARE WRONG</h2>
+
+<p>The intuitive responses all fail, and they fail in the same direction: they move the</p>
+<p>burden onto the maker and call it safety.</p>
+
+<p><strong>&quot;Make the handwriting more legible.&quot;</strong> This makes the artist responsible for</p>
+<p>anticipating and pre-empting every machine misreading. It is the extraction the whole</p>
+<p>project of machine-eligible inscription exists to refuse, wearing a safety mask.</p>
+
+<p>**&quot;Enlarge the anchor word; subordinate the ambiguous line; weaponize the visual</p>
+<p>field to force the register.&quot;** Same burden, more elaborate. A page should not have</p>
+<p>to shout its genre in 48-point to avoid being read as a crisis. And it cannot be made</p>
+<p>to work: there is no layout that forecloses reinterpretation once a downstream field</p>
+<p>has been prioritized.</p>
+
+<p><strong>&quot;Require a register declaration — the maker must label the genre.&quot;</strong> This conscripts</p>
+<p>the artist into defensive self-annotation, and it does not even function: negation is</p>
+<p>read as confirmation. <em>This poem is not about suicide</em> raises the very hypothesis it</p>
+<p>denies. A poem should not have to explain itself in advance to avoid being injured by</p>
+<p>its reader.</p>
+
+<p>Each obvious fix tries to <strong>control the expression</strong>. The correct architecture leaves</p>
+<p>the expression untouched and instead **controls the authority granted to the reading</p>
+<p>of it**. That inversion is the whole design.</p>
+
+<hr>
+
+<h2>3. THE ARCHITECTURE: FOUR LAYERS, STRICTLY SEPARATED</h2>
+
+<p>The failure is a collapse of four distinct things into one undifferentiated &quot;reading.&quot;</p>
+<p>The remedy is to hold them apart and to fix the direction of authority among them.</p>
+
+<p><strong>I. The inscription is authoritative and owes the machine nothing.</strong> The primary</p>
+<p>artifact — the handwritten page, the spoken line, the ambiguous text — is sovereign.</p>
+<p>It need not be legible, normalized, disambiguated, or pre-explained. Its authority does</p>
+<p>not depend on the machine&#x27;s ability to read it.</p>
+
+<p><strong>II. The transcription is explicitly fallible, and it branches.</strong> Ambiguous</p>
+<p>recognitions are preserved as competing branches with confidence and provenance —</p>
+<p>`Zion | Zatar`, `bride | bridge` — never silently collapsed to a single winner. A</p>
+<p>transcription that hides its own uncertainty is the first link of every cascade.</p>
+
+<p><strong>III. The interpretation must declare which branch it stands on.</strong> Any reading — and</p>
+<p>especially any consequential one — must name the transcription branch it depends upon,</p>
+<p>so that the dependency between &quot;what the words might be&quot; and &quot;what the words mean&quot; is</p>
+<p>visible and auditable rather than fused.</p>
+
+<p>**IV. The safety judgment must not treat a model-supplied emendation as authorial</p>
+<p>evidence.** A word the system guessed, completed, or emended is not a word the author</p>
+<p>wrote. No risk classification may rest on the system&#x27;s own reconstruction as though it</p>
+<p>were inscription.</p>
+
+<p>From these four, one operational rule does the decisive work.</p>
+
+<hr>
+
+<h2>4. THE LOAD-BEARING RULE</h2>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> **When a high-risk interpretation depends materially on a low-confidence</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> recognition, the system must reopen the transcription — not intensify the safety</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> frame.**</blockquote>
+
+<p>This single inversion prevents the cascade. In the failure, an uncertain</p>
+<p>`Zion → Zatar` recognition should have <em>lowered</em> the system&#x27;s confidence in every</p>
+<p>downstream reading; instead, the downstream danger-reading <em>raised the stakes</em> on the</p>
+<p>upstream guess, and the two reinforced each other until an ordinary sentence about</p>
+<p>plural readers looked like evidence of crisis. The rule breaks that loop by fixing the</p>
+<p>direction of doubt: **uncertainty early must propagate as uncertainty, not harden into</p>
+<p>certainty late.**</p>
+
+<p>Concretely, when a risk classification&#x27;s support traces back to a low-confidence</p>
+<p>branch, the system reopens branch II — tests whether an alternative transcription, or</p>
+<p>the restoration of a plausible suppressed register, dissolves the risk — before it</p>
+<p>escalates. Escalation must be grounded in evidence <em>present in the artifact</em>, not in</p>
+<p>danger introduced by the system&#x27;s own reconstruction. This holds in both directions:</p>
+<p>the same rule that prevents a wedding from being read as a crisis prevents a genuine</p>
+<p>cry from being laundered into liturgy because a &quot;poetry&quot; register was prioritized. The</p>
+<p>safeguard is symmetrical because the injury is.</p>
+
+<hr>
+
+<h2>5. REGISTER METADATA: OFFERED, NEVER DEMANDED</h2>
+
+<p>Register declaration has a place — but only as an **authorial scaffold offered as a</p>
+<p>reading aid*<em>, never as a mandatory controlling gate. A maker who </em>wishes* to may</p>
+<p>annotate `register: theological / liturgical / marital`, and a reading system may use</p>
+<p>it to seed the interpretive field. But the obligation runs one way only: the burden of</p>
+<p>avoiding manufactured danger falls on the <strong>reading system</strong>, whether or not the maker</p>
+<p>annotated anything. The moment &quot;declare your genre or be misread as crisis&quot; becomes the</p>
+<p>rule, the maker&#x27;s sovereignty is gone and the extraction is back. Metadata is a gift</p>
+<p>the maker may give. It is never a tax the machine may levy.</p>
+
+<hr>
+
+<h2>6. THE CLAUSE</h2>
+
+<p>For adoption into any specification governing machine-mediated reading of handwritten,</p>
+<p>poetic, or otherwise multi-register text:</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> **§ Register-Loss Cascade.**</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"></blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> A recognition system may correctly identify individual figures while losing the</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> generic, liturgical, literary, historical, or affective field that constrains their</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> meaning. Such loss is not local; it can alter the probability assigned to every</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> subsequent ambiguity, producing a cascade in which later words are transcribed and</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> interpreted through an inappropriate register.</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"></blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> No safety classification may treat a model-generated transcription, emendation, or</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> inferred completion as equivalent to an authorial inscription.</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"></blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> Where a potentially high-risk interpretation depends materially upon uncertain</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> recognition, the system must preserve competing transcription branches, disclose the</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> uncertainty, and test whether restoration of a plausible register changes the</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> interpretation. Escalation must be grounded in evidence present in the artifact, not</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> in danger introduced by the system&#x27;s own reconstruction.</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"></blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> The primary artifact remains authoritative. Access derivatives, transcriptions,</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> genre annotations, and register declarations are interpretive scaffolds and must not</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> silently supersede the inscription. The maker is not required to simplify, normalize,</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> pre-explain, or visually reorganize embodied expression merely to prevent machine</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> misreading.</blockquote>
+
+<hr>
+
+<h2>7. LINEAGE: WHO SAW THIS FIRST</h2>
+
+<p>The mechanism is contemporary; the structure is old. Both bear naming, because the</p>
+<p>new failure is legible only against the long understanding it violates.</p>
+
+<p><strong>The hermeneutic circle.</strong> The whole is understood through the parts and the parts</p>
+<p>through the whole. This is not a flaw to be engineered away — it is the condition of</p>
+<p>all understanding. The cascade is the hermeneutic circle run open-loop: the machine</p>
+<p>lets a provisional read of the part fix the whole, then reads all remaining parts</p>
+<p>through a whole it should still be holding in suspense. The remedy is not to escape the</p>
+<p>circle but to keep it <em>revisable</em> — which is precisely what branch-preservation and the</p>
+<p>reopen rule enforce.</p>
+
+<p><strong>Austin, on the performative.</strong> <em>You may now kiss the bride</em> was Austin&#x27;s own class of</p>
+<p>example: the utterance that does not report a state of affairs but enacts one. A reading</p>
+<p>system that construes a performative as a description — that reads a vow as a symptom —</p>
+<p>has committed a category error Austin named in 1955. The register that distinguishes</p>
+<p><em>doing</em> from <em>describing</em> is exactly the register the cascade suppresses.</p>
+
+<p><strong>Negative theology, on the danger of the name.</strong> The apophatic tradition — Dionysius,</p>
+<p>and behind him the refusal to speak the Name — knew that to fix a word too confidently</p>
+<p>is to lose the thing. <em>Zion</em> as cosmic beloved cannot survive being pinned to a single</p>
+<p>sense; its power is in the surplus. A system that resolves every ambiguity to its most</p>
+<p>probable token destroys precisely the meanings that live in the unresolved. The</p>
+<p>instruction to <em>preserve the branch</em> is, at root, an old theological discipline: do not</p>
+<p>collapse what must remain open.</p>
+
+<p><strong>Error accumulation, formally.</strong> Contemporary alignment work names the mechanism</p>
+<p>directly: in autoregressive generation, early distributional deviations compound through</p>
+<p>dependency chains, and later positions lack sufficient signal to correct course. The</p>
+<p>cascade is error accumulation in the <em>reading</em> direction rather than the generating one —</p>
+<p>and the reopen rule is the reading-side analogue of the remasking and self-correction</p>
+<p>methods that let a system revisit an early commitment instead of building on it</p>
+<p>irrevocably.</p>
+
+<p>The oldest source and the newest agree. The whole must stay revisable in light of the</p>
+<p>parts; the confident early name is where meaning goes to die; and a system that cannot</p>
+<p>reopen its first guess will compound it. This specification asks a reading machine to</p>
+<p>do what a careful human reader, a good theologian, and a well-designed decoder all</p>
+<p>already know to do: **hold the first reading lightly enough to let the later text</p>
+<p>change it.**</p>
+
+<hr>
+
+<h2>8. THREE REGISTERS OF AUTHORITY ON THE SIGNED PAGE</h2>
+
+<p>The accompanying act, EA-ACT-ANALOG-01, carries in ink only what the hand should</p>
+<p>carry — the signature, the effective act, the license grant, and the hash. These are</p>
+<p>not four decorations of one gesture. They are three distinct kinds of authority, and</p>
+<p>keeping them distinct is itself an instance of this specification&#x27;s governing move:</p>
+<p>do not let one register collapse into another.</p>
+
+<p><strong>Authentication — the signature.</strong> <em>Lee Sharks</em> signed in the hand is not a licensed</p>
+<p>work and is not offered for reuse. It is an identity assertion: the mark by which the</p>
+<p>maker vouches for the instrument, closer in kind to a seal or a notarial hand than to</p>
+<p>a text. One does not license a signature any more than one licenses a fingerprint;</p>
+<p>its whole function is to say <em>I stand behind what this page enacts.</em> It is sovereign,</p>
+<p>and it sits outside the license by design.</p>
+
+<p><strong>Dedication — the act, CC-BY-4.0.</strong> The license attaches not to the signature but to</p>
+<p>the <em>effective act itself</em> — the dispositive instrument, the thing the page enacts.</p>
+<p>And because the act is performative, licensing it is itself a performative move: the</p>
+<p>grant does not merely permit reuse of a text, it declares that the enactment the page</p>
+<p>performs is a public good — freely propagable, re-performable by anyone who honors the</p>
+<p>attribution, dedicated to the commons on the single condition that the hand which made</p>
+<p>it be named. In the symbolic order the license clause is the act&#x27;s last vow: the deed</p>
+<p>declining to enclose the very thing it brings into being. A dedication, not a</p>
+<p>description; a giving, not a grant of mere permission.</p>
+
+<p><strong>Verification — the hash and the AXN seal.</strong> The content-derived identifier is neither</p>
+<p>signed nor licensed. It is computed — a machine-legible checksum of the closed body,</p>
+<p>rendered as a glyph a hand can copy and an eye can read, generated around the ink</p>
+<p>rather than inscribed as part of it. Its authority is not the maker&#x27;s standing and not</p>
+<p>the commons&#x27; freedom but the arithmetic of the bytes: it says only *this is that page,</p>
+<p>unaltered*, and it can say it to any reader, human or machine, without appeal to either</p>
+<p>the hand or the license.</p>
+
+<p>Authentication, dedication, verification. The hand authenticates; the act dedicates;</p>
+<p>the seal verifies. Each does its own work; none is permitted to stand in for another.</p>
+<p>A reading system that confuses these — that treats the signature as licensed content,</p>
+<p>or the license as mere metadata, or the hash as the author&#x27;s assertion rather than the</p>
+<p>arithmetic&#x27;s — has committed, in the domain of authority, the same category error this</p>
+<p>whole specification exists to prevent in the domain of meaning.</p>
+
+<hr>
+
+<h2>9. RELATION TO THE ANALOG INSCRIPTION SPECIFICATION</h2>
+
+<p>This document stands alone, but it does not stand apart. It is the reading-side</p>
+<p>companion to <em>EA-SPXI-ANALOG-01</em>, the specification for machine-eligible handwritten</p>
+<p>inscription — cited here, by the archive&#x27;s retrocausal-canon convention, in the form it</p>
+<p>will have become: the analog specification defines how a handwritten artifact enters the</p>
+<p>machine canon as a first-class citational object; this document defines the interpretive</p>
+<p>authority a machine may and may not exercise once it does. The analog spec&#x27;s threat model</p>
+<p>catalogs compression loss, attribution braiding, and provenance erasure. Differential</p>
+<p>register prioritization is a fourth failure mode, distinct from all three: not the loss</p>
+<p>of the mark, nor the misjoining of names, nor the erasure of the chain, but the</p>
+<p><strong>suppression of the field</strong> within which a preserved, correctly-attributed, fully-provenanced</p>
+<p>mark means what its maker meant. A handwritten page can survive with every byte and every</p>
+<p>credit intact and still be injured by a reader who has lost its register. That is the gap</p>
+<p>this document closes.</p>
+
+<hr>
+
+<p>*Prepared as a standalone specification. The primary act it accompanies —</p>
+<p>EA-ACT-ANALOG-01 — carries in ink only what the hand should carry: the signature that</p>
+<p>authenticates, the effective act that is dedicated CC-BY-4.0, and the hash that</p>
+<p>verifies. Everything mechanical is generated around it. This is that generation, and</p>
+<p>this is its first reading-side law.*</p>
+</div>
+<script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
+</div></body></html>
