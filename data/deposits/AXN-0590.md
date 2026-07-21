@@ -36,11 +36,13 @@ keywords:
 
 ## Description
 
+![EA-ACT-ANALOG-01, in the author's hand, executed and signed 2026-07-21 — display derivative rotated 90° counterclockwise for reading, from the preserved unrotated master](data/attachments/AXN-0590/display-rot90ccw.jpg)
+
+*The Effective Act, in the author's hand. Display derivative (SHA-256 `7ac2ec5ae849a417da7d6134f0050be8411f935c2558d2d99a849cec9e2adda8`) rotated 90° counterclockwise for reading, per EA-SPXI-ANALOG-01 §F capture discipline. The unrotated master (SHA-256 `ceb944f37e2792af990ac63fad3e277710549d09cbb2b2a8e89e38c74b5a93a8`) is preserved unaltered as the primary evidentiary object; both are attached to this deposit. The operative language of the Act is not transcribed in any scaffold surface of this record. It lives in the ink.*
+
 A single-page primary handwritten inscription in blue ink, executed and signed by the author in one sitting on 2026-07-21. The Act is a self-executing revocation of CERN's status as rightful steward of a public good, issued in the context of the ongoing custody dispute over the Crimson Hexagonal Archive following Zenodo's termination of the account on 2026-06-19 (RQF3807508, §70 objection to prospective deletion-as-processing, §85 referral registered as AXN:03C0, §104.1 referral).
 
-The operative language is not transcribed in this description or in any scaffold surface associated with this deposit. The Act's operative text lives in the ink; any machine composition citing that text has read the artifact itself. This is the payload discipline of EA-SPXI-ANALOG-01, applied to the artifact the specification names as its first named instance.
-
-The Act is the first named artifact executed under EA-SPXI-ANALOG-01 v1.0 (Machine-Eligible Handwritten Artifacts), where it appears as Figure 3 with its display derivative (rotated 90° counterclockwise for reading), both hashes recorded, and the §G.4 protocol deviation documented — the Act was executed before the calibration pilot, and this first mint accordingly does not assert AIA-2 certification. Certification is available in a subsequent edition after the pilot's first clean capture cycle.
+The Act is the first named artifact executed under EA-SPXI-ANALOG-01 v1.0 (Machine-Eligible Handwritten Artifacts), where it appears as Figure 3 with its display derivative, both hashes recorded, and the §G.4 protocol deviation documented — the Act was executed before the calibration pilot, and this first mint accordingly does not assert AIA-2 certification. Certification is available in a subsequent edition after the pilot's first clean capture cycle.
 
 Per §I.8 of the specification, this Act is a wager. Its evidentiary weight is engineered by the surrounding instrument — capture schedule (48h/7d/30d/quarterly), classification enum (NO_RETRIEVAL · SURFACE_ONLY · FRAME_DOMINANT · ANALOG_GROUNDED), fixed query set, custody mirrors — but not yet demonstrated in the record. The measurement arms with this mint.
 
@@ -48,7 +50,7 @@ Reference to the specification's rebuttal condition (§7, honoring the correspon
 
 ## Methodology
 
-Primary handwritten inscription per EA-SPXI-ANALOG-01 §B, executed in a single sitting on 2026-07-21. Photographic capture per §F: master preserved unrotated at native camera-roll aspect, SHA-256 recorded; display derivative rotated 90° counterclockwise for reading, SHA-256 recorded separately. No perspective correction, no crop touching the page edges or the ink. All display and evidentiary reference chains from the master via cryptographic hash. Custody: this deposit as canonical record; Wayback and Internet Archive mirroring at record-page live.
+Primary handwritten inscription per EA-SPXI-ANALOG-01 §B, executed in a single sitting on 2026-07-21. Photographic capture per §F: master preserved unrotated at native camera-roll aspect, SHA-256 recorded; display derivative rotated 90° counterclockwise for reading, SHA-256 recorded separately. No perspective correction, no crop touching the page edges or the ink. All display and evidentiary reference chains from the master via cryptographic hash. Custody: this deposit as canonical record, with both image objects attached; Wayback and Internet Archive mirroring at record-page live.
 
 ## Falsification Conditions
 
@@ -60,14 +62,15 @@ Two independent classes of falsification apply:
 
 ## Files
 
-Master (unrotated, native capture, primary evidentiary object):
-`data/staging/EA-ACT-ANALOG-01/master.jpg`
-SHA-256: `ceb944f37e2792af990ac63fad3e277710549d09cbb2b2a8e89e38c74b5a93a8`
-Bytes: 2,213,363
-
-Display derivative (rotated 90° counterclockwise, for reading):
+**Display derivative — the reading surface** (rotated 90° counterclockwise from the master, so the ink reads upright):
 `data/staging/EA-ACT-ANALOG-01/display-rot90ccw.jpg`
 SHA-256: `7ac2ec5ae849a417da7d6134f0050be8411f935c2558d2d99a849cec9e2adda8`
 Bytes: 1,942,138
 
-Provenance chain and custody discipline: `data/staging/EA-ACT-ANALOG-01/PROVENANCE.md`
+**Master — the primary evidentiary object** (unrotated, native camera-roll orientation; preserved unaltered per §F.5):
+`data/staging/EA-ACT-ANALOG-01/master.jpg`
+SHA-256: `ceb944f37e2792af990ac63fad3e277710549d09cbb2b2a8e89e38c74b5a93a8`
+Bytes: 2,213,363
+
+**Provenance chain** (composition → capture → rotation → custody):
+`data/staging/EA-ACT-ANALOG-01/PROVENANCE.md`
