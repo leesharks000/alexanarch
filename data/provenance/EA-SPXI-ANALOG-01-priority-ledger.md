@@ -21,7 +21,7 @@ committed document; any altered variant will not match.
 | `8e93204a800eceb23f441ed0443e8413de0687c718f1af1fb3e43438420d1302` | 394518 | PDF rendering of v0.11 unified review object. |
 
 **Ledger amended 2026-07-20T08:48:44Z**: v0.11 entries added; chain v0.8 → v0.9 → v0.10 → v0.11 (canonical).
-| `708acba2ae7295859b1bdcab763ac1e84c061527409a43912f719f5b33ce8fda` | 84087 | Unified review object v0.12 — incorporates Lucente review letter of 2026-07-20 (four revisions: P193 assistance clarification, consent-entry precision + §7 signature-as-consent instrument, honorific typography confirmed, NKA de-attribution). Canonical send artifact. |
+| `708acba2ae7295859b1bdcab763ac1e84c061527409a43912f719f5b33ce8fda` | 84087 | Unified review object v0.12 — incorporates reviewer letter of 2026-07-20 (four revisions: P193 assistance clarification, consent-entry precision + §7 signature-as-consent instrument, honorific typography confirmed, third-party attribution correction). Canonical send artifact. |
 | `38fac3cc67d7ffec5d7d3ae48bc8cb8e8f44c28e8433939dc4c9cca85577d7a4` | 395933 | PDF rendering of v0.12. |
 
 **Ledger amended 2026-07-20T11:29:26Z**: v0.12 entries (reviewer-corrections round 1); chain … → v0.11 → v0.12 (canonical).
@@ -41,6 +41,10 @@ concentrate in dedicated instruments; all other public surfaces cite external
 entities flat — the same discipline this archive applies to external-scholar
 citations. Provenance of the underlying correction is preserved in version history
 and in the consent-governed review documents.
+| `578e87c85d729810970d820cc4e48225fb363f3a311f8d4df03feebdadbe6a8d` | 85367 | v0.15 — citation-discipline pass: external entities cited flat throughout; anchors generalized; no substantive change to any reviewed term. Canonical send artifact. |
+| `dcf9df8188dc0e6b33ece1ca68e363ae6a516847e6c153d4966d3591e105e5ff` | 397873 | PDF of v0.15. |
+
+**Ledger amended 2026-07-21T00:23:32Z**: v0.15 (citation-discipline pass).
 
 Chain: v0.8 → v0.9 (review corrections) → v0.10 (canonical). The private parts
 publish only upon the reviewer's approval per the terms fixed inside the committed
