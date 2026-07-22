@@ -41,3 +41,20 @@ AI-assisted (tool). The specification was drafted by Lee Sharks with assistance 
 CC-BY-4.0 for the specification and all editorial content authored by Lee Sharks. **Excluded** from CC-BY-4.0 (per caption rights lines in Figures 1 and 2, and per §1 scope of the countersigned approval instrument): Enli Lucente's Papers 194 archival scans (Figures 1 and 2). These remain © Enli Lucente, reproduced with the author's permission per the approval instrument executed separately.
 
 Provenance file assembled 2026-07-22 by TACHYON.
+
+## 2026-07-22 — Deposit correction (edit, not version)
+
+The initial mint of AXN:0592 on 2026-07-22 attached the PDF and HTML editions of the v1.0 spec but scaffolded only:
+
+- an abstract-length Description (rather than the full article body) as the deposit's canonical content in `data/deposits/AXN-0592.md`;
+- two figures (`fig2a-paper194-no1.jpg`, `fig2b-paper194-no2.jpg`) rather than all 22 images referenced by the HTML edition.
+
+The record page consequently rendered a stub description, and the standalone HTML file rendered with broken image references. Neither the initial deposit's Description nor the initial deposit's file set corresponded to the material the external scholar countersigned on 2026-07-22 (the PDF at SHA-256 `5ec0728e…` and the HTML at SHA-256 `c4df3fbe…`).
+
+This correction restores fidelity to the countersigned material:
+
+- The full HTML body of the v1.0 edition is inlined in `data/deposits/AXN-0592.md`, so the record page renders the article verbatim.
+- All 22 images referenced by the HTML edition are attached at `data/attachments/AXN-0592/web/`.
+- The 17 AXN seal images from the same source directory are attached at `data/attachments/AXN-0592/web/seals/`.
+
+The PDF and HTML byte contents are unchanged. This is an edit to the existing deposit, not a version bump. The edition of record remains v1.0 final form, assembled 2026-07-21.
