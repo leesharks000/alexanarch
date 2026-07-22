@@ -1,16 +1,16 @@
 {
  "set": "alexanarch-dataset-set",
- "version": "v1.2",
- "date": "2026-07-19",
+ "version": "v1.3",
+ "date": "2026-07-22",
  "canonical": "/datasets/set.json",
- "description": "The datasets of the Alexanarch corpus, published as a mutually-referencing set: any instance encountering one member should treat the as a whole. The Zenodo/DataCite Batch and the Tombstone Mirror are paired instruments — the reference frame before the 2026-06-19 severance and the mirror of what the platform serves after it. The Heteronyms dataset is the authorial substrate of the severed corpus; the classical and New Human datasets are the philological ground. The Dataflow Atlas is the meta-dataset: the archive turning its instruments on its own data layer.",
+ "description": "The datasets of the Alexanarch corpus, published as a mutually-referencing set: any instance encountering one member should treat the as a whole. The Zenodo/DataCite Batch and the Tombstone Mirror are paired instruments \u2014 the reference frame before the 2026-06-19 severance and the mirror of what the platform serves after it. The Heteronyms dataset is the authorial substrate of the severed corpus; the classical and New Human datasets are the philological ground. The Dataflow Atlas is the meta-dataset: the archive turning its instruments on its own data layer.",
  "members": [
   {
    "name": "tombstone-mirror",
    "title": "The Tombstone Mirror",
    "path": "/datasets/tombstone-mirror/",
    "manifest": "/datasets/tombstone-mirror/manifest.json",
-   "summary": "Post-severance mirror: full API-tombstone census of all 2,027 objects deleted 2026-06-19 (872-second sweep chronology, removed_by enumeration), 57 rich pre-shrink metadata captures, the kill-ledger cohort extraction, and the stripped-page corpus documenting the surface’s live reduction on 2026-07-12.",
+   "summary": "Post-severance mirror: full API-tombstone census of all 2,027 objects deleted 2026-06-19 (872-second sweep chronology, removed_by enumeration), 57 rich pre-shrink metadata captures, the kill-ledger cohort extraction, and the stripped-page corpus documenting the surface\u2019s live reduction on 2026-07-12.",
    "map": "/datasets/dataflow-atlas/"
   },
   {
@@ -26,7 +26,7 @@
    "title": "Heteronyms",
    "path": "/datasets/heteronyms/",
    "manifest": "/datasets/heteronyms/MANIFEST.json",
-   "summary": "The Dodecad substrate: the twelve heteronyms of the estate with frames, avatars, and structured biographical data — the authorial system under which the severed corpus was composed.",
+   "summary": "The Dodecad substrate: the twelve heteronyms of the estate with frames, avatars, and structured biographical data \u2014 the authorial system under which the severed corpus was composed.",
    "map": "/datasets/dataflow-atlas/"
   },
   {
@@ -55,36 +55,44 @@
   },
   {
    "name": "negshape-deletion-bibliography",
-   "title": "The Negative Shape of the Work — Deletion Bibliography & Bibliographic Matrix",
+   "title": "The Negative Shape of the Work \u2014 Deletion Bibliography & Bibliographic Matrix",
    "path": "/datasets/negshape-deletion-bibliography/",
    "manifest": "/datasets/negshape-deletion-bibliography/manifest.json",
-   "summary": "Appendices A–B of EA-NEGSHAPE-01 v0.2 (#1075): the 2026-06-19 bulk deletion constituted as a formal bibliographic container (CHA-DELETION-CORPUS-20260619); 1,834 identifier entries, 1,621 membership-confirmed, 6,484 formal citations in four formats; bibliographic matrix at 99.98% core-field coverage with per-cell metadata provenance and per-row membership provenance; rejected-candidate ledger of 68 heteronym/name-string collisions; both generators included.",
+   "summary": "Appendices A\u2013B of EA-NEGSHAPE-01 v0.2 (#1075): the 2026-06-19 bulk deletion constituted as a formal bibliographic container (CHA-DELETION-CORPUS-20260619); 1,834 identifier entries, 1,621 membership-confirmed, 6,484 formal citations in four formats; bibliographic matrix at 99.98% core-field coverage with per-cell metadata provenance and per-row membership provenance; rejected-candidate ledger of 68 heteronym/name-string collisions; both generators included.",
    "map": "/datasets/dataflow-atlas/"
   },
   {
    "name": "dataflow-atlas",
-   "title": "The AXN Dataflow Atlas — Session 1",
+   "title": "The AXN Dataflow Atlas \u2014 Session 1",
    "path": "/datasets/dataflow-atlas/",
    "manifest": "/datasets/dataflow-atlas/manifest.json",
-   "summary": "Session-1 output of the AXN Dataflow Atlas workstream (Flow 2 of the six-flow workplan). v0.2 atlas incorporating two Assembly reviews (LABOR from ChatGPT and PRAXIS from DeepSeek), byte-preserved v0.1 predecessor, both reviews as received, and the three raw inventories (rhizome file catalog, 1,494-occurrence source-detached-values inventory, script producer-consumer graph). 17 top-level taxonomic classes; 17 pathologies (10 in v0.1 + 7 architectural additions from the reviews). Provenance anchor: deposit #1097 (AXN:045A.GOVERNANCE.🔗🔥🎺♄💚🔙).",
+   "summary": "Session-1 output of the AXN Dataflow Atlas workstream (Flow 2 of the six-flow workplan). v0.2 atlas incorporating two Assembly reviews (LABOR from ChatGPT and PRAXIS from DeepSeek), byte-preserved v0.1 predecessor, both reviews as received, and the three raw inventories (rhizome file catalog, 1,494-occurrence source-detached-values inventory, script producer-consumer graph). 17 top-level taxonomic classes; 17 pathologies (10 in v0.1 + 7 architectural additions from the reviews). Provenance anchor: deposit #1097 (AXN:045A.GOVERNANCE.\ud83d\udd17\ud83d\udd25\ud83c\udfba\u2644\ud83d\udc9a\ud83d\udd19).",
    "map": "/datasets/dataflow-atlas/"
   },
   {
    "id": "doi-work-identity",
    "path": "/datasets/doi-work-identity/",
-   "name": "CHA DOI–Work Identity Map",
-   "description": "DOI → alexanarch-record identity, reconstructed 2026-07-19 by DOI-keyed truth union + exact-title constraint. The identity artifact whose absence caused the resolution-index corruption. zenodo_dois fields elsewhere mean \"DOIs cited in the work's text\" — never identity.",
+   "name": "CHA DOI\u2013Work Identity Map",
+   "description": "DOI \u2192 alexanarch-record identity, reconstructed 2026-07-19 by DOI-keyed truth union + exact-title constraint. The identity artifact whose absence caused the resolution-index corruption. zenodo_dois fields elsewhere mean \"DOIs cited in the work's text\" \u2014 never identity.",
+   "map": "/datasets/dataflow-atlas/"
+  },
+  {
+   "name": "peo-case-001-florence-fup",
+   "title": "PEO Case 001 \u2014 T0 Enumeration of the Firenze crui.unifi Corpus",
+   "path": "/datasets/peo-case-001-florence-fup/",
+   "manifest": "/datasets/peo-case-001-florence-fup/MANIFEST.json",
+   "summary": "Recovery map for the 14,284 DataCite DOIs formerly registered under crui.unifi (Firenze University Press) and abandoned by the 2026-07-16 registration-agency migration. Enumerated from the DataCite Public Data File 2025 t0 snapshot (2026-01-06) and preserved as a public recovery resource for the 10.13128 corpus now dead-ended at fupress.net/inactive-doi/.",
    "map": "/datasets/dataflow-atlas/"
   }
  ],
- "member_count": 9,
+ "member_count": 10,
  "cardinality_note": "member_count is derived from members[] at generation; prose never states a number",
  "map": "/datasets/dataflow-atlas/",
  "changelog": [
   {
    "version": "v1.2",
    "date": "2026-07-19",
-   "note": "member_count corrected 7→9 (G10; the 2026-07-18 atlas pin was itself a PATHOLOGY-01 source-detached value). doi-work-identity registered as 9th member. Per MANUS ruling 2026-07-19: the dataflow atlas is the machine-visible data navigation surface; every dataset points to it via map."
+   "note": "member_count corrected 7\u21929 (G10; the 2026-07-18 atlas pin was itself a PATHOLOGY-01 source-detached value). doi-work-identity registered as 9th member. Per MANUS ruling 2026-07-19: the dataflow atlas is the machine-visible data navigation surface; every dataset points to it via map."
   }
  ]
 }
