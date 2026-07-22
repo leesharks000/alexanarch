@@ -111,3 +111,17 @@ through the DataCite 302 (5-minute presigned TTL, ~180 chunks at 128 MB) —
 avoids both bulk download (615 GB decompressed, 32 GB compressed) and the
 single-connection expiration failure mode. Global filter yields per-client
 enumerations without materializing the full 108,468,906-record file.
+
+---
+
+## Reconstruction
+
+Session 2026-07-22, following the T0 enumeration and its deposit as AXN #1408, established that this abandoned corpus is over-preserved by other actors: 100% of a 50-DOI random sample indexed in OpenAlex, 100% Open Access, 99.986% with full DataCite JSON metadata already in the Public Data File 2025 tar, average 2.44 preservation mirrors per work distributed across DOAJ, Florence Research (`hdl.handle.net/2158/*`), and CINECA IRIS. The University of Florence preserved every one of its scholarly outputs; Firenze University Press walked away from the identifier layer that made the corpus discoverable *as a corpus*.
+
+A three-tier identifier architecture and phased reconstruction plan is specified in [WORKPLAN.md](../datasets/peo-case-001-florence-fup/WORKPLAN.md). The plan introduces:
+
+- **AXN_W** — sovereign persistent identifier for each work, replacing the abandoned `10.13128/*` DOI.
+- **mAXN** — metadata-specific bridge identifier, carrying and versioning competing metadata propositions from different sources.
+- **AXN_R** — identifier for reconstructions (SPXI-encoded regenerative packets), verifiable against source records.
+
+The corpus becomes a large-N testbed for iterative reconstruction methodology. Egress additions requested for institutional-repository access are enumerated in the workplan §5.3.

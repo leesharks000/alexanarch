@@ -87,10 +87,34 @@
       "path": "t0-summary.json",
       "description": "Structured summary of the corpus: state, prefix, update-year, source-month distributions.",
       "size_bytes": 2130
+    },
+    {
+      "path": "WORKPLAN.md",
+      "description": "Reconstruction workplan v0.1 \u2014 three-tier identifier architecture (AXN_W \u00b7 mAXN \u00b7 AXN_R), iterative reconstruction framework, and phased plan through sovereign resolver deployment. Bridges from enumeration (this dataset) to full corpus reconstruction."
     }
   ],
   "license": "CC-BY-4.0",
   "license_note": "Redistributed from the DataCite Public Data File 2025 under CC-BY-4.0. See landing DOI 10.14454/t5qb-d995.",
   "generated": "2026-07-22T05:43:05Z",
-  "generator": "TACHYON via streaming tar extractor (chunked HTTP Range fetches; see MANIFEST.methodology)"
+  "generator": "TACHYON via streaming tar extractor (chunked HTTP Range fetches; see MANIFEST.methodology)",
+  "related_documents": [
+    {
+      "role": "reconstruction_workplan",
+      "path": "WORKPLAN.md",
+      "canonical_url": "https://alexanarch.org/datasets/peo-case-001-florence-fup/WORKPLAN.md",
+      "version": "v0.1",
+      "date": "2026-07-22"
+    },
+    {
+      "role": "case_file",
+      "path": "https://alexanarch.org/data/peo-case-001-florence-fup.md",
+      "version": "as-of-2026-07-22"
+    }
+  ],
+  "next_phase": {
+    "name": "Phase 2 \u2014 DataCite JSON metadata harvest",
+    "status": "ready-to-execute",
+    "estimated_yield": "14,282 of 14,284 works (99.986%)",
+    "workplan": "WORKPLAN.md"
+  }
 }
