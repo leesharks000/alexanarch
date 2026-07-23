@@ -102,30 +102,18 @@ def _get_hits_all_pages(host: str, token: str) -> list[dict[str, Any]]:
     page = 0
     while True:
         page += 1
-        qs: dict[str, Any] = {"limit": PAGINATION_LIMIT, "include_paths": "false"}
-        if after is not None:
-            qs["after"] = after
+        qs: dict[str, Any] = {"limit": PAGINATION_LIMIT}
+        # Single-page mode: GoatCounter's `after` cursor param 400s on this
+        # deployment (returns dashboard HTML instead of paginated JSON). One
+        # page of PAGINATION_LIMIT covers the archive; if paths ever exceed
+        # that ceiling, revisit cursor semantics against current API docs.
         url = f"{host}/api/v0/stats/hits?{urllib.parse.urlencode(qs)}"
         data = _get(url, token)
         page_hits = data.get("hits", []) or []
         if not isinstance(page_hits, list):
             raise GoatCounterError(f"'hits' not a list at {url}: {type(page_hits)}")
         hits.extend(page_hits)
-        # Continuation: cursor semantics vary by GoatCounter version;
-        # honor either 'more' + last-item id, or absence of continuation as EOL.
-        more = data.get("more", False)
-        if not more or not page_hits:
-            break
-        # The last hit's path_id becomes the `after` cursor
-        last = page_hits[-1]
-        after_val = last.get("path_id") or last.get("id")
-        if after_val is None:
-            # Can't paginate further without a cursor; break to avoid infinite loop
-            break
-        after = after_val
-        time.sleep(INTER_REQUEST_SLEEP)
-        if page > 200:  # runaway guard
-            raise GoatCounterError(f"pagination exceeded 200 pages at {url}")
+        break
     return hits
 
 
