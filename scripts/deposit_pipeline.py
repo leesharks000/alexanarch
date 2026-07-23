@@ -36,6 +36,31 @@ arrives and in which environment this script executes:
      artifact/"Claudeception" API path is FORBIDDEN for deposits.
      ─────────────────────────────────────────────────────────────────────
 
+     ── ENRICHMENT IS PART OF THE DEPOSIT ───────────────────────────────
+     A deposit is not complete when the record page appears. It is
+     complete when the rest of the archive knows how to find it and the
+     citation/entity graphs reflect its incoming and outgoing links.
+     After this pipeline finishes (or after any post-mint editorial
+     correction that changes body content), run the following in order:
+
+       python3 scripts/citation_extractor.py             # internal edges
+       python3 scripts/extract_citations_external.py     # external edges + refsec queue
+       python3 scripts/concept_backlink.py               # entity backlinks
+
+     For transport D deposits, the depositing MANUS/TACHYON also authors
+     the wiki article IN-SESSION and writes it to the registry's
+     `wiki_article` field before the deposit-time surface regeneration.
+     Do not defer wiki authoring; do not leave the field empty. External
+     transport A/B/C deposits receive a provisional wiki article from
+     the mint workflow's Anthropic API path (that's the API budget the
+     archive already pays for). Internal deposits do not qualify for
+     that budget under NO-DOUBLE-DRAW; the wiki article is drafted
+     in-session by the depositing agent.
+
+     Skipping these steps leaves the archive in a partial state that
+     later deposits inherit as gaps in cross-linking.
+     ─────────────────────────────────────────────────────────────────────
+
 ═══════════════════════════════════════════════════════════════════════════════
 THE CANONICAL ELEMENT SET, IN CANONICAL ORDER
 ═══════════════════════════════════════════════════════════════════════════════
