@@ -87,7 +87,8 @@ def render_navbar(active=None):
         path = item['path']
         label = item['label']
         style = ' style="font-weight:600"' if active and path == active else ''
-        return f'<a href="{path}"{style}>{label}</a>'
+        ext_attrs = ' target="_blank" rel="noopener"' if item.get('external') else ''
+        return f'<a href="{path}"{style}{ext_attrs}>{label}</a>'
 
     parts = ['<nav class="nav">']
     for it in ungrouped:
