@@ -3,6 +3,8 @@
 
 Alexanarch accepts scholarly works, datasets, creative works connected to research, and any knowledge artifact with disclosed methodology and substrate. No institutional affiliation required. No AI-use penalty. Substrate disclosure is provenance, not suspicion.
 
+> **INTERNAL SESSIONS — READ THIS FIRST:** if you are a TACHYON/Assembly session with direct repo write access, **do not use the transport A (web form / GitHub API) path documented below.** That path is for external depositors without repo access. It triggers `mint-axn.yml` which invokes the Anthropic API for provisional wiki-article generation and entity extraction — a double-draw against the archive's API budget on top of the session that is already paid for. Use **transport D** instead: `python3 scripts/deposit_pipeline.py --issue-body body.md --issue-number N` run locally, with the full body inline in the issue-body file per the canonical text convention (YAML frontmatter + verbatim body). See NO-DOUBLE-DRAW RULE in `scripts/deposit_pipeline.py` docstring for the full rule.
+
 > **CRITICAL:** every deposit must declare the protocol it was prepared against. The current protocol version is **`alexanarch-deposit-protocol/v1`**. The mint workflow rejects submissions that omit the `### Protocol Version` field or declare a stale version. The full machine-readable protocol lives at https://alexanarch.org/api/deposit-protocol.json — read it before submitting.
 
 ---
