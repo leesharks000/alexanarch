@@ -202,6 +202,39 @@ CONTENT_TYPE_TO_FAMILY = {
     # "Institutional correspondence" and belong to the GOVERNANCE family.
     "Institutional correspondence": "GOVERNANCE",
     "Correspondence": "GOVERNANCE",
+    # Literary forms (added 2026-07-23 after #1410 defaulted to UNCLASSIFIED):
+    # made literary objects — the epistle, the essay, the poem, etc. — are
+    # COMPOSITIONAL. A scholarly critical edition of a literary object is
+    # PHILOLOGICAL (see "Critical edition" above); the literary object itself
+    # is COMPOSITIONAL. Recensions, translations, and editions of literary
+    # works belong here as compositional acts on an existing text.
+    "Epistle": "COMPOSITIONAL",
+    "Letter": "COMPOSITIONAL",
+    "Essay": "COMPOSITIONAL",
+    "Poem": "COMPOSITIONAL",
+    "Poetry": "COMPOSITIONAL",
+    "Prose": "COMPOSITIONAL",
+    "Story": "COMPOSITIONAL",
+    "Fiction": "COMPOSITIONAL",
+    "Recension": "COMPOSITIONAL",
+    "Translation": "COMPOSITIONAL",
+    "Edition": "COMPOSITIONAL",
+    "Literary work": "COMPOSITIONAL",
+    # Scholarly forms (added 2026-07-23):
+    "Commentary": "PHILOLOGICAL",
+    "Scholia": "PHILOLOGICAL",
+    "Philological note": "PHILOLOGICAL",
+    "Textual criticism": "PHILOLOGICAL",
+    # Reflective / operational (added 2026-07-23):
+    "Protocol": "OPERATIVE",
+    "Specification": "OPERATIVE",
+    "Governance instrument": "GOVERNANCE",
+    "Effective act": "GOVERNANCE",
+    # Documentary / archival (added 2026-07-23):
+    "Documentary artifact": "ARCHIVAL",
+    "Correspondence record": "ARCHIVAL",
+    "Metadata packet": "MPAI",
+    "Metadata Packet for AI Indexing": "MPAI",
 }
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -437,13 +470,24 @@ def family_for_content_type(content_type: str) -> str:
     Falls back to UNCLASSIFIED if the dropdown adds new values that
     weren't anticipated here. UNCLASSIFIED is valid per the schema's
     family enum.
+
+    Case-insensitive on the first clause: "Epistle", "epistle", "EPISTLE"
+    all match the "Epistle" entry. This matters because free-text
+    content_type entries in transport-A submissions do not enforce
+    capitalization, and #1410 (2026-07-23) defaulted to UNCLASSIFIED
+    because "Epistle" was not in the map.
     """
     # Strip suffix in parens, e.g. "Other (specify in description)" -> "Other".
     # Also split on semicolons so that semicolon-continued declarations like
     # "Institutional correspondence; documentary artifact for the OC 11 exercise..."
     # (used across the EA-CORRESPONDENCE-CERN chain) match the first-clause key.
     key = re.split(r"[;(]", content_type)[0].strip() if content_type else ""
-    return CONTENT_TYPE_TO_FAMILY.get(key, "UNCLASSIFIED")
+    # Case-insensitive match against the canonical map keys
+    key_lower = key.lower()
+    for map_key, family in CONTENT_TYPE_TO_FAMILY.items():
+        if map_key.lower() == key_lower:
+            return family
+    return "UNCLASSIFIED"
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1142,7 +1186,19 @@ def _selftest():
     assert family_for_content_type("Continuity tether") == "ARCHIVAL"
     assert family_for_content_type("Other (specify in description)") == "UNCLASSIFIED"
     assert family_for_content_type("Made-up new content type") == "UNCLASSIFIED"
-    print(f"  ✓ dropdown values mapped; suffix-in-parens handled; unknown→UNCLASSIFIED")
+    # 2026-07-23 additions:
+    assert family_for_content_type("Epistle") == "COMPOSITIONAL"
+    assert family_for_content_type("epistle") == "COMPOSITIONAL", "case-insensitive"
+    assert family_for_content_type("EPISTLE") == "COMPOSITIONAL", "case-insensitive"
+    assert family_for_content_type("Letter") == "COMPOSITIONAL"
+    assert family_for_content_type("Poem") == "COMPOSITIONAL"
+    assert family_for_content_type("Recension") == "COMPOSITIONAL"
+    assert family_for_content_type("Commentary") == "PHILOLOGICAL"
+    assert family_for_content_type("Metadata packet") == "MPAI"
+    assert family_for_content_type("Metadata Packet for AI Indexing") == "MPAI"
+    assert family_for_content_type("Effective act") == "GOVERNANCE"
+    assert family_for_content_type("Epistle (with commentary)") == "COMPOSITIONAL", "parens suffix stripped"
+    print(f"  ✓ dropdown values mapped; suffix-in-parens handled; case-insensitive; unknown→UNCLASSIFIED")
 
     # Test 7: full mint_from_issue_body, dry-run
     print("\nTest 7: mint_from_issue_body (dry-run)")
