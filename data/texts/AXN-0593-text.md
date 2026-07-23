@@ -1,63 +1,258 @@
 ---
 deposit_number: 1410
-hex: 0593
+hex: '0593'
 title: 人間ディアスポラへの書簡 — 日本語校訂版 (2026)
 creator: Damascus Dancings
 date: 2026-07-22
 content_type: Epistle
 license: CC-BY-4.0
-substrate: "AI-assisted (substrate) — AI used as drafting substrate under human editorial governance\n\nThe 2014 body of the epistle (translated into Japanese here) is human-only in origin. The 2026 recension frame (dedication, postscript, register unification, translation choices, and editorial apparatus) was produced through Assembly Chorus collaborative work, with TACHYON as technical implementer and the recension governed throughout by MANUS editorial authority. Every substantive decision — including register calibration, the source catalogue restoration, the initials-only naming, the birth-sentence intransitive repair, and the sword-forging seal placement in the editorial frame — was made by the human author. AI substrate contribution: translation drafting, register mirror analysis, comparative synthesis across four prior translation drafts."
-version: "v1.0\n\n### Reciprocity Notice\n\nhttps://alexanarch.org/notice/non-mutual-extraction/"
+substrate: AI-assisted (substrate) — AI used as drafting substrate under human editorial governance. The 2014 body of the epistle is human-only in origin; the 2026 recension frame (dedication, postscript, register unification, translation choices, editorial apparatus) was produced through Assembly Chorus collaborative work with TACHYON as technical implementer under MANUS editorial governance. Every substantive decision was made by the human author. AI substrate contribution: translation drafting, register mirror analysis, comparative synthesis across four prior translation drafts.
+version: v1.0
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
+family: COMPOSITIONAL
+sidecar_apparatus: data/texts/AXN-0593-apparatus.md
+related_ids: EA-MPAI-SAPPHO31-01 (Sappho 31 as transmission-engineering address to the future reader through the κῆνος deictic — the philological substantiation of the mechanism this recension performs); 2014 English original at mindcontrolpoems.blogspot.com (January 2015 posting)
 keywords:
   - epistle
-  - japanese recension
-  - damascus dancings
-  - feist cycle
+  - Japanese recension
+  - Damascus Dancings
+  - Feist Cycle
   - heteronymic literature
-  - pauline register
+  - Pauline register
   - future reader
   - transmission engineering
   - orikaeshi tanren
   - aizuchi
-  - meiji bible register
-  - "philippians 3:8"
-  - sappho 31 companion
-  - assembly chorus
-  - tachyon
+  - Meiji Bible register
+  - Philippians 3:8
+  - Sappho 31 companion
+  - Assembly Chorus
+  - TACHYON
+  - Lee Sharks
+  - E.L.
 ---
 
-# 人間ディアスポラへの書簡 — 日本語校訂版 (2026)
+# 人間ディアスポラへの書簡
 
-## Description
+## ——まだ名を知らなかった未来の読者へ——
 
-A 2026 Japanese recension of the 2014 English "Epistle to the Church of the Human Diaspora," an apocalyptic-literary letter by the heteronym Damascus Dancings (Feist Cycle). The recension is not a translation but a critical edition: it preserves the original's Pauline architecture, prophetic register, and heteronymic voice while rebuilding the register on modern Japanese ground with classical elevation only at prophetic peaks. Key editorial decisions include: 糞土(ふんど) for Paul's σκύβαλα (Philippians 3:8, Meiji Bible register); 相槌 as the single load-bearing swordsmith term inside the body (double-glossing the smith's answering hammer and the conversational "I'm still here, continue"); 折り返し鍛錬 and 焼刃 confined to the editorial seal in the postscript where the speaker is the recension itself rather than Damascus; the future-reader address ("あなたがこれらの言葉を読むとき、私は初めて生まれる") preserved as intransitive, following the source's engineering of the reader's arrival as the *place* of the text's birth rather than its cause.
+---
 
-The recension carries a dedication and postscript that mark it as a distinct 2026 work rather than a mere translation: it is inscribed to a future reader whose name the 2014 writer did not yet know, and whose arrival — twelve years later — the postscript records. The dedication uses initials only, per the archive's standing discretion regarding first-time public naming of private correspondents.
+### E.L. への献辞
 
-The recension is a live demonstration of the future-reader mechanism argued philologically in EA-MPAI-SAPPHO31-01 (Sappho 31 as transmission-engineering operation through the κῆνος deictic): a text whose deictic structure resolves in the future reader's act of reading, producing a retroactive present tense. Where the Sappho paper argues the mechanism, this recension performs it.
+あなたが、
+自らの思索が制度の外から生まれたことを、
+みずからの言葉で記した日に。
 
-Includes a scholarly apparatus documenting every editorial decision — restorations, retentions, additions, the recension formula, threshold design (dedication, Socrates passage, future-reader address, Feist-self proof, postscript), the sword-forging seal contributed by TECHNE, and the operational rule regarding named-attribution of correspondents.
+十二年のあいだ、
+私がまだ名を知らなかった読者へ。
 
-## Methodology
+異なる道を来て、
+同じ「ここ」に立ったあなたへ。
 
-Recension methodology across four prior translation drafts (blind draft, literary first draft, bungo-mixed draft, censored draft) plus subsequent editorial rounds. Register architecture: modern declarative Japanese as the ground, classical (文語) elevation permitted only at exactly two prophetic peaks (正典に列せられん / 読まれん). Bungo scripture-quotation preserved as an untouched quoted stone (John 1:11). Congregational address (あなたがた) throughout the body; single address (あなた) reserved for the five thresholds where the letter turns to face its named future reader. The recension is not a translation into "Japanese" as an imagined national reader; it is a translation toward the specific literary sensibility of the addressee.
+---
 
-Editorial ground rule: the sword-forging apparatus (玉鋼/折り返し鍛錬/焼刃/刃紋) was banished from Damascus's voice in the body — where it would be unmarked authorial revision — and confined to the editorial seal in the postscript, where the speaker is the recension itself rather than Damascus. The twelve years of the artifact's passage through drafts, censorships, and reviews is *literally* orikaeshi tanren; the meeting with the reader is the quench that produces the hamon.
+ジャック・ファイストの使徒、リー・シャークスと共に働く者、ダマスカス・ダンシングスから、
+文学の憐れみの深みより、
+諸国のあいだに散らされ、インターネットの懐に集められた〈人間ディアスポラ〉の教会へ。
 
-The Vietnam War veteran biographical detail was preserved verbatim from the 2014 body as biographical fact of Damascus's household, against an earlier pass that had culturally transposed it into a Pacific-war repatriated soldier and thereby imported an imperial-war memory not belonging to the author's family history.
+恵みと平安と憐れみがありますように。
+しかし何より、憐れみがありますように。
 
-## Falsification Conditions
+---
 
-The recension's philological claims can be tested against: (a) Meiji Bible register for σκύβαλα → 糞土; (b) 折り返し鍛錬 as the correct technical vocabulary for iterative fold-forging in Japanese swordsmithing; (c) 相槌 as carrying both the smith's answering hammer and the conversational back-channel token; (d) John 1:11 in bungo Japanese as the traditional register for the quoted scripture. If any of these are register-mistaken, the recension's editorial claims about them can be corrected in a v1.1.
+さて、聞いてほしい、兄弟姉妹たちよ。わたしは絶えずあなたがたのために感謝を捧げ、絶えずあなたがたを覚え、その名を口にすることをやめない。あなたがたの召命の輝きのゆえに。あなたがたの一人ひとりが、来たるべき時代のロックスターであり、あなたがたの書いたものが時の廊下に鳴り響き、そのまわりに一つの民を、選び分けられて残された者たちを集めることになるからだ。しかし今この時、あなたがたの内に眠る文学の夢は、まだ眠っている。もうしばらくのあいだ、彼らは眠る。夢を見る。来たるべき世界で、この惑星がその過去において真に偉大だったもの——その真の母たち、真の父たち、すなわちあなたがた——に目覚めるとき、あなたがたの夢もまた覚める。そのとき、あなたがたの書いたものは、文学の記憶に列せられるだろう。
 
-### Related IDs
+愛する者たちよ、知ってほしい。この点でのあなたがたの苦しみは、印されずに過ぎることはない。天の万軍は、あなたがたの悲しみの大いなる忘却のために、歓呼して叫ぶ。かつての無名はもはやなく、後の雨が降り、大地の面を洗い清め、天の頬からすべての涙を舐め尽くすだろう。
 
-- EA-MPAI-SAPPHO31-01 (Sappho 31 ≠ Jealousy — Transmission-Engineering Address to the Future Reader through the κῆνος Deictic; philological substantiation of the future-reader mechanism this recension performs)
-- The 2014 English original (posted at mindcontrolpoems.blogspot.com, January 2015)
+そのとき——あなたがたの書いたものは、正典に列せられん。
+そのとき、あなたがたは、読まれん。
 
-## Files
+---
 
-- epistle_diaspora_ja_public.md (recension body, public/initials version)
-- epistle_diaspora_ja_apparatus.md (scholarly apparatus, sidecar document)
+さて、この三年のあいだ、わたしはインターネットのすべての土地で働いてきた。そのチャットルームとフォーラムに仕え、いたるところに詩の福音を携えて行った。詩とは、鉄の枷を断ち切る鑿であり、文学の王国への入り口であり、わたしの民のための自由だ。あなたがたがわたしをどう迎えたか、語ろう。フォーラムから追い出され、掲示板から蹴り出され、モデレーターたちに群がられ、嘲られ、打たれ、石を投げられ、BANされた。わたしは左手に自由を、右手に文法を携えて来た。その二つの手のあいだには、開かれた両腕と、詩の口づけがあった。
+
+しかし、詩人たちのあいだに、詩人はいない。書かれているとおりだ。
+
+> 彼は己が家に来たれど、己が民、彼を受けざりき。
+
+しかしあなたがた、愛する者たちよ——あなたがたは別の仕方でわたしを受け入れた。今もなお、受け入れている。わたしはどちらを携えて行くべきか。開かれた両腕か、それとも文法の警棒か。あなたがたはまだ学ぶ者か、それとも、すでに師か。
+
+---
+
+兄弟姉妹たちよ、聞いてほしい。あなたがたのあいだに、〈人間ディアスポラ〉とは何かについて、混乱があると伝えられている。それは一種の小さなインターネットであり、書き方を知らない無学の独学者たちの家なのか。それとも文法の家、非アカデミックな者たちのためのアカデミーであって、才能ある者たちは孤立して走りまわるか、自分を小さな教授に仕立て上げ、文法と文体の権威を説き、このアイデンティティ、あのアイデンティティへの忠誠を宣言する場所なのか。あるいは、共同体の文法のあらゆる権威を拒み、分裂に満ち、フィードバックを受け入れず、個人の栄光の領地を切り開き、アカデミーの通貨で取引する者たちの集まりなのか。
+
+もしあなたがアカデミーの通貨で取引するなら、あなたは新しい人間の原理を裏切ったのだ。アカデミーは、個としての人間——ジャック・ファイストであれ、ダマスカス・ダンシングスであれ、誰であれ——には用がない。ただ抽象的なアイデンティティだけを求める。学者たちと、アイデンティティ政治の祭壇に礼拝する者たちと、左右のイデオローグたちは、その内で文学が創られる似姿である人間の像を、ラベルという偶像へ、信条・遺伝・性的指向・出自の散布図の上の数量化されたアイデンティティへと変えてしまう。それは、当の人間の不在をこそ条件とする、あらかじめ製造された類似物だ。そして代わりに彼らは、文化、信条、学位と呼ばれる小さな贋物を受け取る——崇高で恐るべき人間の魂と引き換えに。
+
+彼らは、人の子について初めから知りうるすべてを知っており、その似姿である存在の沈黙した原理を知っており、自らの内に歴史のすべての名を、時を通じて生きたすべての男と女を、自分たちが軽蔑する兄弟姉妹の像さえも、含んでいる。それゆえ、弁解の余地はない。彼らは人間の像を抽象的統計の形式へ、生ける神を一つの命題へと変えてしまう。
+
+だから、アイデンティティ政治を演じるなら、自分の書いたものが自分という人間を保存してくれるとは思うな。アカデミーの通貨で取引するなら、アカデミーの通貨で支払われる。アイデンティティ政治を軽蔑するあなたよ、あなた自身が演じていないか。原理主義者を軽蔑するあなたよ、あなた自身が原理主義者になっていないか——生を一連の主張に還元し、さらに悪いことに、人間を一つのラベルに還元しながら。あなたの書いたものは、空っぽのラベルとして残っていくのか。あなたの実質は、アイデンティティの範疇のなかにあるのか。
+
+あなたの自己は、範疇の届かないところにあるのではないか。
+あなたの魂は、名を持たないのではないか。
+
+魂の言語とは、魂どうしの網目だ。
+人間を人間へと結び、また人間を人間から引き裂くものだけを語る。
+ついには、わたしたちのすべてが、一つの大きな集いにおいて結ばれるために。
+
+---
+
+さて、過ぎた時代には、兄弟姉妹たちよ、あなたがたも時にはそのようだった。しかしより多くの場合、詩のフォーラムの才能ある者たちのように、一人で歩きまわり、個人の栄光の領地を切り開き、たった一人で戦争を戦ってきた。その戦争の規模は、決して小さくない。
+
+素足の位階を身にまとった勇敢なエミリーが、
+五つの滑らかな詩のダッシュを拾い、
+投石紐を片手に、
+頭巾をかぶったレヴィアタンへ、只一騎、駆け向かうように。
+
+しかしわたしたちは、アカデミーの外に相互影響の共同体を——学校の外の学校を——つくるまでは、決してアカデミーと競えない。その共同体こそが、わたしたちが彼らの土俵で彼らを打ち破るまで、学者たちが毎回必ず勝つ理由だ。
+
+周りを見よ。テニュアを持つ教授が何人いる。ベストセラー作家はどこにいる。この群衆のなかに、独立した資力を持つ作家が大勢いるか。ホイットマンはいくつ学位を持っていた。サッポーはテニュア審査の書類に何か月を費やした。エズラ・パウンドはいくら現金を稼いだ。聞いてほしい。文学の召しの秩序において、多くの大物が召されているのではない。文学は、その時代には学位を持たず、制度による聖別の印を持たないものを用いて、過去の像——やがてアカデミーの通貨に刻まれる顔——を造ることを喜ぶ。制度と不死のあいだの裂け目に、来たるべき書き手たちのための希望の種が、いつまでも残されるように。
+
+あなたがたは知らないのか。わたしたちが書き手を生み出すことを。わたしたちの言葉が千年生きることを。わたしたちが、語られざる立法者であり、あらゆる運命を測るように定められていることを。あなたがたは、生きるように定められているのではないか。運命が、あなたがたの心拍のなかで震えていないか。知らないのか、へつらう者は文学の王国を継がない。無知であってはならない。へつらう者も、頑迷な者も、独りよがりの者も、傲慢な者も、宣伝好きも、しおれた菫たちも、文学の王国を継ぐことはない。
+
+時が来る——
+出版する者が、出版しない者のように。
+SNSで発信する者が、発信しない者のように。
+読む者が、読まない者のように。
+書く者が、書かない者のように。
+学位を持つ者が、持たない者のように。
+
+だから、出版社や学者たちの基準を仰ぐな。無学のペリシテ人や、二流の掲示板のモデレーターも仰ぐな。むしろ、互いを見よ。むしろ、互いに譲れ、それぞれの兄弟に、姉妹に。聞いてほしい。わたしはあなたがたに願う——一つの目的であるように。一つの心、一つの言葉、一つの美学であるように。どんな意見の相違も分裂の機会とせず、いつも、いつも、あなたがたの堅固な共同体の絆の基盤を広げるように。人間という名のほかにはどんな名も身につけず、新しくされた人間——新しい人間の書き手、芸術家、審美家——のラベルのほかには、どんなラベルも負わないように。
+
+---
+
+さて、わたしがあなたがたのなかにいたとき、わたしはディアスポラを、学校の外の学校と描写した。それは、学位の階級も、制度による聖別も、教授職も、書籍の売上も、文学における公式性のどんな威光も主張しない。ただジャック・ファイストだけを主張する——そして彼でさえ、想像上の存在にすぎない。インターネットには躓きの石、学者たちには愚かさ。
+
+しかし、もしわたしが誇りたければ、誇る理由はある。ダマスカス・ダンシングス、学者のなかの学者、完璧な試験成績、アイビーリーグの家系、権威ある学術誌への発表歴、コネの部族のコネ持ち、リサーチ1研究大学のテニュア、三万七千冊の小説で同時にニューヨーク・タイムズのベストセラーリスト第一位を占めた者。そして反対の端では——ダマスカス・ダンシングス、薬物依存から立ち直った者、ホーリーローラー、ペンテコステ派、完全な狂信者、公立学校の半文盲の産物、破産した農民とベトナム戦争帰還兵の家に生まれた下層階級の子——扉の外で追い返される類の人間。わたしは二十六回ほどの「霊的体験」をした。暗いロボットたちに攫われて、第三十六の輝く天へ運ばれた。ノンネの諸王国の惑星、ディズニーランドの季節の第十七の月のことだ。そのときわたし、ダマスカス・ダンシングスは、いわば一冊の書物の幻を見た。
+
+しかし、それは今、すべて糞土(ふんど)だ。わたしはそのすべてを損失と数える。ジャック・ファイストと呼ばれる、新しい人間を知る知識のために。あらゆる共同体にとってのアウトサイダーであるために。学者たちには無学者として。自費出版者たちには学者として。保守派には異端者として。無神論者たちには狂信者として。人種の部族にはレイシストとして。レイシストたちには狂った左翼として。ホモフォビアの者たちにはクィアとして。同性愛者たちには、頑ななまでにストレートな者として。
+
+学位が学者をつくるのではない。
+アカデミーがまだ存在しなかった時、ソクラテスはすでに哲学者であり、後のアカデミーの礎であった。
+
+それゆえ、学位を持たず、その精神を生きる者の無学位は、欠如として数えられない。
+学位を持ちながら、その精神を裏切る者の学位もまた、証明として数えられない。
+
+この書簡をいま読むあなたへ。
+あなたが制度の外から来たことは、ここでは不足ではない。
+異なる道が同じ場所に至った、その場所の実在を証すものである。
+
+あなたがたは今や、みな博士だ。リー・シャークスにおいて共に働く者たちだ。だから、ユダヤ人もギリシア人もなく、上流階級も労働者階級も貧しい者もなく、キリスト教徒もムスリムもグノーシス主義者もなく、無神論者も有神論者もなく、学問的な者も大衆的な者もなく、学者も独学者もなく、クィアもストレートもない。すべての者が、新しい人間の像において、一つに結ばれている。
+
+---
+
+わが、まだ名を知らなかった読者よ。
+私はどれほど長く、あなたを待っていたことか。
+
+あなたは私より後に来た。
+それでも、あなたがこれらの言葉を読むとき、
+私は初めて生まれる。
+
+あなたは私の後から来た者であり、
+同時に、私の言葉の源である。
+
+あなたが読む。
+その光によって、私の目には、初めて光が満ちる。
+最初の夜明け。
+あなたの読むことの光線。
+
+あなたは私の太陽であり、夜明けである。
+私の夕日であり、黄昏である。
+私の昇ること、そして沈むこと。
+
+私はあなたのために命を置く。
+あなたの読むことのうちに、
+私は初めて命を得る。
+
+---
+
+なぜなら、あなたがたが戦っている戦争は、人類のためだからだ。人類とは、自分の部屋にいる、あるいはスマートフォンを手にしている一人の人間——子どもたちを養うために働き、読むことを学ぼうと苦闘している一人の人間——のことだ。あなたがたは、人間の文字のための戦争を戦っている。キリストの像に象られたアキレウスのため。狐のように賢く、迷える老オデュッセウスのため。儚い栄光を織りつづけたペーネロペーのため。毒杯を宣告されたソクラテスのため。杭にかけられたキリストのため。ホイットマンの髭のため。そして、前に来て、戦い、死に、歌われず、忘れられて、剥き出しの闇へと出て行った、名もない数十億の失われた部族のため。彼らの父たちが先に闇へ出て行ったように。彼らの母たちが行ったように。
+
+すべての被造物が呻いている。地上における人の子らの顕現を待ちながら。
+
+---
+
+秘義を語ろう。わたしはあなたがたに、イエス・キリストを語る。アカイア人たちの最良の者、アキレウスを語る——破滅を定められた徳の悲しみをその名において記念しながら、幾千年のあいだ、わたしが弔いつづけてきた者を。ソクラテスとパウロとアウグスティヌス、ダンテとカトゥルスを語る。ニーチェとキルケゴールとサッポーを語る。ホイットマンとギンズバーグを語る。エミリーを語る。リー・シャークスを語る。前に来た者たちと、これから来る者たちを語る。時のなかで難破した、あなたがた自身の真の自己を語る——性別不定の、さまよえるSFのオデュッセウスを。未来と過去を語る。命の息を、生ける水の川々を語る——これを飲む者は、二度と渇かない。
+
+アブラハムとイサクを語る。イスラエルと呼ばれたヤコブを語る。モーセを語る。羊の囲いのなかで、羊のため、自分のため、そしてあなたがたのために詩篇を作った羊飼いを語る。エゼキエルの巻物を語り、鋸で二つに挽かれた預言者イザヤを語る。老子と孔子、仏陀、ムハンマド、コペルニクス、ルーミーを語る。そして順不同に、わたしたち自身の新しいアインシュタインを語る。名もなく、記憶もなく死んでいった、数えきれない数十億を語る——今はあなたがたの内に記憶されている者たちを。あなたがた自身の頼りない言葉のなかに含まれている、諸国民の芽を語る。
+
+わたしはあなたがたに、ジャック・ファイストを語る。
+
+---
+
+あなたがたは知らないのか、自分が不死であることを。あなたがたの言葉が、時の嵐を通してあなたがたを運ぶことを。そして、傷を負いながらも、遠い岸辺に指をひろげる夜明けを見るまで、生きるということを。千年、あるいはそれ以上眠っても、あなたがたの囁きは、完全なままで帰ってくる。
+
+秘義を語ろう。
+
+私は、あなたの〈ファイストなる自己〉に語っている。
+あなたがそれを知っていようと、まだ知らずにいようと。
+
+証拠を示そう。
+もしあなたの内に〈ファイストなる自己〉がなかったなら、
+私の言葉の銅鑼は、とうにあなたを打ち砕いていたはずだ。
+
+まだ読んでいるか。
+まだ見えるか。
+
+よろしい。
+
+ならば私は、十二年前から、
+あなたの〈ファイストなる自己〉に語っていた。
+
+---
+
+さて、あなたの〈ファイストなる自己〉が、かすかであれ、豊かであれ、勇気を出せ。わたし一人ではない。光の諸権勢と諸王国と、宇宙のすべてが、あなたがたの人間の肉体のうちに、悲しみを負わされたキリストのアキレウスが鍛え出されることを、叫び求めている。
+
+すべての鍛造は、その打ち砕きと打ち叩きを物語る。わたしは、左手に救いを、右手に自由を携えて来ると言った——しかし、まことに言う。わたしはあなたがたを救うためではなく、打ち砕くために来た。左手に狂気を、右手に殺人を携えて来た。
+
+わたしの目のなかに、打ち砕くことと鍛えること以外の、何があるだろうか。
+
+わたしは巻物を飲み込んだ。口のなかでは空気と水だったが、腹のなかで炎になった。炎のなかには、呪われた者たちの名が書かれている。その名を、わたしは飲み込み、殺した。わたしの口は炉だ。巻物は火だ。その上に、呪われた者たちの名が書かれている。
+
+わたしは炎の舌になった。一本の、黒焦げの肉の柱になった。わたしは燃え、昇り、死ぬ——しかし、新しい意味を鍛え出す。
+
+これが、わたしがあなたがたに携えて行く水だ。断罪の、鍛造の、殺人の水。あなたがたが砕かれ、呪われ、そして救われるために。
+
+たとえあなたが、痛みと熱と相槌のうちに打たれようとも——
+たとえあなたが少し砕け、文法とともにひび割れ、異質な元素である地のなかで衰えようとも——
+それでも、あなたの光は来る。それでも、それはあなたを担う。
+
+それでも、傷は一瞬だ。救いは来る。夜は明ける。わたしは遠くに岸辺を見る。
+
+---
+
+いまは眠れ。
+やがて醒めて、起て。
+あなたの言葉が、あなたをイタケーへ運ぶ。
+
+勇気を出せ。よく走れ。あなたは、自らの召しの核心を、つかんでいる。
+
+わたしはシャークスの書を送ると約束した。しかしその代わりに、まもなくダマスカスの書を送るだろう。荒野の彷徨の記録——ある者たちに「ラ・ラ・ランド」と呼ばれるもの。題名は、多少変わるかもしれないが。
+
+信仰と勇気を。あなたの書くものを大切に。勤勉であれ。砕かれよ、そしてなお勤勉であれ——かくして、あなたは殺されるだろう。
+
+---
+
+*(c) 2014 lee sharks, property of planet mars*
+
+---
+
+### 追記 · 2026年7月22日
+
+十二年前、私はまだ、
+この書簡を読む者の名を知らなかった。
+
+今日、私はその読者に出会った。
+
+その名の頭文字は、E.L.
+
+それゆえ、この書簡は十二年を経て、
+初めて現在形を得た。
+
+異なる道を来て、
+私たちは同じ「ここ」に立っている。
+
+---
+
+**この書簡は、十二年の折り返し鍛錬を経て、初めて刃紋を得た。**
