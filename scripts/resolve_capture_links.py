@@ -32,12 +32,35 @@ DOIINDEX = 'data/doi-resolution-index.json'
 OUT = 'data/capture-deposit-links.json'
 
 MIN_QUERY_LEN = 8          # below this, title substring matching is noise
-MAX_SOFT_LINKS = 6         # a query matching more than this is too generic
+MAX_SOFT_LINKS = 6
+MAX_BODY_LINKS = 4         # body matching is the loosest tier; keep fan-out tight         # a query matching more than this is too generic
 
 
 def load(p):
     with open(p, encoding='utf-8') as fh:
         return json.load(fh)
+
+
+_BODIES = None
+
+
+def _bodies(deps):
+    """deposit_number -> lowercased body text. Loaded once (~39MB)."""
+    global _BODIES
+    if _BODIES is not None:
+        return _BODIES
+    out = []
+    for d in deps:
+        p = str(d.get('full_text_path') or '').lstrip('/')
+        if not p or not os.path.exists(p) or not p.endswith('.md'):
+            continue
+        try:
+            out.append((d['deposit_number'],
+                        open(p, encoding='utf-8', errors='replace').read().lower()))
+        except Exception:
+            continue
+    _BODIES = out
+    return out
 
 
 def build():
@@ -74,6 +97,7 @@ def build():
 
     # DOI -> deposit, via the resolution index's axn join
     doi2dep = {}
+    dep_doi_status = {}
     if os.path.exists(DOIINDEX):
         for row in load(DOIINDEX).get('mappings', []):
             axn, doi = row.get('axn'), row.get('dead_doi')
@@ -86,10 +110,16 @@ def build():
                     n = by_hex.get(m.group(1).upper())
             if n is not None:
                 doi2dep[doi] = n
+                st = row.get('status')
+                rec = dep_doi_status.setdefault(n, {'dois': [], 'statuses': []})
+                if doi not in rec['dois']:
+                    rec['dois'].append(doi)
+                if st and st not in rec['statuses']:
+                    rec['statuses'].append(st)
 
     links, stats = {}, {'hard/axn': 0, 'hard/doi': 0, 'hard/series': 0,
                         'soft/title': 0, 'soft/keyword': 0,
-                        'soft/description': 0}
+                        'soft/description': 0, 'soft/body': 0}
     unresolved = []
 
     for e in caps.get('entries', []):
@@ -129,13 +159,23 @@ def build():
                 if 0 < len(dmatch) <= MAX_SOFT_LINKS:
                     for n in dmatch:
                         found.setdefault(n, ('soft/description', q))
+            # Last tier: exact phrase in body text. Many captures test coined
+            # terms that appear in prose and never in a title. Requires a
+            # longer phrase and a tighter fan-out cap, since body matching is
+            # the loosest evidence in the ladder.
+            if not found and len(q) >= 14:
+                bmatch = [n for n, b in _bodies(deps) if q in b]
+                if 0 < len(bmatch) <= MAX_BODY_LINKS:
+                    for n in bmatch:
+                        found.setdefault(n, ('soft/body', q))
 
         if not found:
             unresolved.append({'slug': slug, 'q': e.get('q'), 'date': e.get('date')})
             continue
 
         PRIORITY = {'hard/series': 0, 'soft/title': 1, 'hard/axn': 2,
-                    'soft/keyword': 3, 'soft/description': 4, 'hard/doi': 5}
+                    'soft/keyword': 3, 'soft/description': 4, 'soft/body': 5,
+                    'hard/doi': 6}
         best = min(found.items(), key=lambda kv: (PRIORITY.get(kv[1][0], 9),
                                                   -len(str(kv[1][1])), kv[0]))[0]
         entries = []
@@ -149,6 +189,7 @@ def build():
                 'method': method,
                 'evidence': ev,
                 'primary': (n == best),
+                'doi_status': dep_doi_status.get(n),
             })
             stats[method] += 1
         links[slug] = {
@@ -158,6 +199,26 @@ def build():
             'match_type': e.get('mt'),
             'deposits': entries,
         }
+
+    # How many captures land on works whose DOI was severed? This is the join
+    # that makes tombstone-vs-live competition measurable as a rate rather
+    # than case by case.
+    severance = {'captures_on_severed_works': 0, 'captures_on_unsevered_works': 0,
+                 'captures_with_no_doi_record': 0, 'status_counts': {}}
+    for v in links.values():
+        prim = next((x for x in v['deposits'] if x['primary']), None)
+        ds = (prim or {}).get('doi_status')
+        if not ds:
+            severance['captures_with_no_doi_record'] += 1
+            continue
+        sts = ds.get('statuses') or []
+        for s in sts:
+            severance['status_counts'][s] = severance['status_counts'].get(s, 0) + 1
+        if any('410' in str(s) or 'GONE' in str(s).upper() or 'SEVER' in str(s).upper()
+               for s in sts):
+            severance['captures_on_severed_works'] += 1
+        else:
+            severance['captures_on_unsevered_works'] += 1
 
     total = len(caps.get('entries', []))
     payload = {
@@ -195,6 +256,7 @@ def build():
             'edges': sum(len(v['deposits']) for v in links.values()),
         },
         'method_counts': stats,
+        'severance_rollup': severance,
         'links': links,
         'unresolved': unresolved,
     }

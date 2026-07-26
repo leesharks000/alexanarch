@@ -1,0 +1,81 @@
+{
+  "dataset": "capture-registry",
+  "title": "The Capture Registry — Retrieval Reception of the Alexanarch Corpus",
+  "version": "9.19",
+  "date": "2026-07-25",
+  "description": "The archive's reception instrument, and its join to the corpus it measures. EA-WG-CAPTURES-01 records how AI Overview, AI Mode, and comparable summarisation surfaces compose answers about this corpus: what they attribute, what they strip, what they invert, and what they return as definitional. Entries are dated, screenshot-evidenced, and classified by match type. Authored and versioned at machinemediation.org; mirrored here with the link map that binds capture events to the deposits they concern, so that provenance-erasure rate and erasure skew are computable per deposit rather than per capture. This dataset is the instrument the other members are measured with: where the Tombstone Mirror records what the platform did to the corpus, the Capture Registry records what the retrieval layer does with it.",
+  "canonical_home": "https://www.machinemediation.org/data/registry.json",
+  "authored_at": "machinemediation.org",
+  "totals": {
+    "captures": 221,
+    "captures_linked_to_deposits": 148,
+    "link_rate": 0.6697,
+    "edges": 443,
+    "captures_unresolved": 71,
+    "deposits_with_a_reception_record": 231
+  },
+  "method_counts": {
+    "hard/axn": 11,
+    "hard/doi": 7,
+    "hard/series": 9,
+    "soft/title": 175,
+    "soft/keyword": 58,
+    "soft/description": 16,
+    "soft/body": 177
+  },
+  "severance_rollup": {
+    "captures_on_severed_works": 65,
+    "captures_on_unsevered_works": 6,
+    "captures_with_no_doi_record": 77,
+    "status_counts": {
+      "RECOVERED": 34,
+      "410_GONE": 65,
+      "RECOVERED_UNLINKED": 26,
+      "SEMI_RESTORED": 7
+    }
+  },
+  "instruments": [
+    {
+      "name": "Provenance Erasure Rate (PER)",
+      "note": "attribution loss per captured work"
+    },
+    {
+      "name": "Erasure Skew (Ω)",
+      "note": "orientation of that loss; power-conditioned, non-random"
+    }
+  ],
+  "generated_by": [
+    "scripts/resolve_capture_links.py",
+    "scripts/build_semantic_addresses.py"
+  ],
+  "generated_at": "2026-07-26T01:56:24Z",
+  "total_files": 3,
+  "total_bytes": 2334449,
+  "records": [
+    {
+      "name": "EA-WG-CAPTURES-01.json",
+      "path": "/data/EA-WG-CAPTURES-01.json",
+      "size_bytes": 346852,
+      "size_human": "338.7 KB",
+      "sha256": "c743fe538db2cfed31c36c0a859373a0fb67f027d8bca7861f68a7a377761ca7",
+      "description": "The Capture Registry itself, v9.19 (2026-07-25), 221 capture events. Synchronised copy; the canonical home and author of record is https://www.machinemediation.org/data/registry.json. Each entry carries the query, the surface and authentication state, the composed attribution observed verbatim, a match-type classification, and an analysis."
+    },
+    {
+      "name": "capture-deposit-links.json",
+      "path": "/data/capture-deposit-links.json",
+      "size_bytes": 322608,
+      "size_human": "315.0 KB",
+      "sha256": "c4766c76bd3fa087967c15b6bc4ba7326a4577115ead6422050a2f216473a9c2",
+      "description": "Capture ↔ deposit link map: 443 edges joining 148 of 221 captures to the deposit corpus, each edge recording the resolution method so any confidence tier can be discarded. Includes the severance rollup: of captures whose primary deposit carries a DOI record, 65 land on severed works and 6 do not."
+    },
+    {
+      "name": "semantic-addresses.json",
+      "path": "/data/semantic-addresses.json",
+      "size_bytes": 1664989,
+      "size_human": "1.59 MB",
+      "sha256": "80158e7427a5ebfbae33fd7918c5e760f5a12a37cf7c63f62d39e2438a1d236f",
+      "description": "Semantic addresses, 2009 canonical queries across observation and subjunctive tributaries. Capture-derived addresses carry refers_to and deposit_links, making retrieval observations joinable to the works observed."
+    }
+  ],
+  "map": "/datasets/dataflow-atlas/"
+}

@@ -142,6 +142,35 @@ def _kw_list(d, fm):
     return [k for k in (kw or []) if k and len(k) < 120][:40]
 # --- end Task 6 helpers ---
 
+_CAPTURE_BY_DEPOSIT = None
+
+
+def _captures_for_deposit(dn):
+    """Reception record for a deposit, from data/capture-deposit-links.json
+    (Task 7). Returns [] when the map is absent."""
+    global _CAPTURE_BY_DEPOSIT
+    if _CAPTURE_BY_DEPOSIT is None:
+        _CAPTURE_BY_DEPOSIT = {}
+        try:
+            with open('data/capture-deposit-links.json', encoding='utf-8') as fh:
+                for slug, rec in json.load(fh).get('links', {}).items():
+                    for edge in rec.get('deposits', []):
+                        _CAPTURE_BY_DEPOSIT.setdefault(edge['deposit_number'], []).append({
+                            'slug': slug,
+                            'query': rec.get('query'),
+                            'date': rec.get('date'),
+                            'match_type': rec.get('match_type'),
+                            'section': rec.get('section'),
+                            'primary': edge.get('primary', False),
+                        })
+        except Exception:
+            pass
+        for v in _CAPTURE_BY_DEPOSIT.values():
+            v.sort(key=lambda x: (not x['primary'], x.get('date') or ''), reverse=False)
+    return _CAPTURE_BY_DEPOSIT.get(dn, [])
+# --- end Task 7 helper ---
+
+
 
 def wire_deposit(deposit_number, concepts=None, wiki_article=None, entity_triples=None):
     """
@@ -352,6 +381,23 @@ def regenerate_static_page(d, eidx, registry=None):
         "isPartOf": {"@type": "Collection", "name": "Alexanarch",
                      "url": "https://www.alexanarch.org/"},
     }
+    _caps = _captures_for_deposit(dn)
+    if _caps:
+        _ld["subjectOf"] = [{
+            "@type": "Observation",
+            "name": f"Retrieval capture: {c['query']}",
+            "url": f"https://www.machinemediation.org/captures/#{c['slug']}",
+            "datePublished": c.get('date'),
+            "measurementTechnique": c.get('match_type'),
+            "isPartOf": {"@type": "Dataset", "name": "EA-WG-CAPTURES-01",
+                         "url": "https://www.machinemediation.org/data/registry.json"},
+        } for c in _caps[:10]]
+        _ld["interactionStatistic"] = {
+            "@type": "InteractionCounter",
+            "interactionType": "https://schema.org/ViewAction",
+            "name": "retrieval captures recorded",
+            "userInteractionCount": len(_caps),
+        }
     _didx = _load_doi_index()
     _dois = _didx.get(d.get('axn', ''), []) or _didx.get((hex_id or '').upper(), [])
     if _dois:
