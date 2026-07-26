@@ -84,6 +84,12 @@ THE CANONICAL ELEMENT SET, IN CANONICAL ORDER
   enrich       mechanical tier: --wikidata --openalex
                --datacite --spxi (LLM tier is IN-SESSION work,
                recorded by the session, never an API call)        yes
+  identity     data/concept-map.json + data/mirror-map.json refreshed;
+               deposit joined to its work-concept (current-version
+               resolution) and to any known off-archive copies.
+               Without this a new version is an orphan object: the
+               reader of an older version cannot learn it exists,
+               and its mirrors outrank it unclaimed.                 yes (rebuild)
   commit       ONE commit for the whole deposit, canonical
                message format "MINT #<N> · <AXN> — <title>"       n/a
   verify       live content-match per link-verification rule v2
@@ -119,7 +125,7 @@ REGISTRY = REPO_ROOT / "data" / "registry.json"
 
 STAGE_ORDER = [
     "mint", "validate", "record", "pdf", "body-index",
-    "wiki", "sitemap", "interlink", "enrich", "commit", "verify",
+    "wiki", "sitemap", "interlink", "enrich", "identity", "commit", "verify",
 ]
 
 
@@ -277,6 +283,52 @@ def stage_enrich(args):
         "--wikidata", "--openalex", "--datacite", "--spxi"], check=False)
 
 
+def stage_identity(args):
+    """Work-level identity: concept resolution + mirror consolidation.
+
+    Added after the 2026-07-26 audit found both functions missing. Alexanarch
+    mints a fresh hex per deposit, so successive versions of one work were
+    unlinked objects — the Zenodo concept-DOI function had no successor. And a
+    capture the same day showed composed answers citing Medium, scilynk and
+    Academia.edu for six documents all deposited here: the archive losing not
+    to strangers but to its own distribution copies, because nothing declared
+    them the same work.
+
+    Both maps are full rebuilds and idempotent, so running this at every mint
+    keeps the guarantee true by construction rather than by remembering."""
+    sh([sys.executable, SCRIPTS / "build_concept_map.py"], check=False)
+    seed = REPO_ROOT / "data" / "medium-seed.json"
+    cmd = [sys.executable, SCRIPTS / "build_mirror_map.py"]
+    if seed.exists():
+        cmd += ["--medium-seed", str(seed)]
+    sh(cmd, check=False)
+
+    # report where this deposit landed, so a partial join is visible at mint
+    try:
+        cm = json.loads((REPO_ROOT / "data" / "concept-map.json").read_text())
+        mm = json.loads((REPO_ROOT / "data" / "mirror-map.json").read_text())
+        n = args.deposit_number
+        con = next((c for c in cm["concepts"]
+                    if any(v["deposit_number"] == n for v in c["versions"])), None)
+        mir = next((w for w in mm["works"] if w["deposit_number"] == n), None)
+        if con:
+            cur = con["current"]["deposit_number"]
+            flag = " [needs_review]" if con.get("needs_review") else ""
+            print(f"  concept: {con['concept_id']} ({con['basis']}{flag}) — "
+                  f"current is #{cur}" + ("  <- this deposit" if cur == n else ""))
+        else:
+            print("  concept: singleton (no version family detected)")
+        if mir:
+            safe = sum(1 for x in mir["mirrors"] if x.get("safe_for_sameas"))
+            print(f"  mirrors: {len(mir['mirrors'])} known, {safe} safe for sameAs")
+        else:
+            print("  mirrors: none known — if this work is also posted to the blog, "
+                  "Medium or Academia.edu, record it so the copy does not outrank "
+                  "the deposit unclaimed")
+    except Exception as e:
+        print(f"  (identity report unavailable: {e})")
+
+
 def stage_commit(args):
     reg, d = deposit_by_number(args.deposit_number)
     n, axn, title = args.deposit_number, d["axn"], d.get("title", "")[:80]
@@ -319,7 +371,8 @@ STAGES = {
     "mint": stage_mint, "validate": stage_validate, "record": stage_record,
     "pdf": stage_pdf, "body-index": stage_body_index, "wiki": stage_wiki,
     "sitemap": stage_sitemap, "interlink": stage_interlink,
-    "enrich": stage_enrich, "commit": stage_commit, "verify": stage_verify,
+    "enrich": stage_enrich, "identity": stage_identity,
+    "commit": stage_commit, "verify": stage_verify,
 }
 
 
