@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-07-23T16:48:34Z",
+  "regenerated_at": "2026-07-26T01:47:12Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "a6cbdad93b65abe01688404e1448ff3836cc7841e1739c2d93cc137e636336e6",
+    "mm-main-capture": "c743fe538db2cfed31c36c0a859373a0fb67f027d8bca7861f68a7a377761ca7",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,16 +30,16 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 1995,
-  "total_observations": 276,
+  "total_addresses": 2009,
+  "total_observations": 292,
   "class_counts": {
-    "subjunctive": 1752,
-    "observed_address": 223,
+    "subjunctive": 1751,
+    "observed_address": 238,
     "verified_non_address": 20
   },
   "type_counts": {
-    "unmatched": 1577,
-    "single_concept": 409,
+    "unmatched": 1490,
+    "single_concept": 510,
     "multi_concept": 9
   },
   "addresses": {
@@ -85,6 +85,50 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-17",
       "latest_status": "PARTIAL"
+    },
+    "\"anti-suppression infrastructure\"": {
+      "canonical_query": "\"anti-suppression infrastructure\"",
+      "is_quoted": true,
+      "refers_to": [
+        "AXN as Anti-Suppression Infrastructure: Historical Precedents and Design Directions (Developmental Version v4, Assembly-Reviewed)"
+      ],
+      "type": "single_concept",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-25",
+          "status": "ADOPTION WITH DIFFERENTIAL CREDITING (author credited for the historical claim; the two technical claims that describe his own architecture are grounded to generic infrastructure sources; framing drifts toward IPFS/blockchain discourse the design does not use)",
+          "source_format": "Google AI Mode, quoted query. Definition returned: 'decentralized, tamper-proof technological systems designed to prevent the censorship, deletion, or erasure of digital information. It relies on content-derived identifiers and independent verification to protect data from institutional removal.' Source chips: Academia.edu ×2 + shield icon, +3. Key Concepts: Content-Derived Identifiers (generic link chip); Independent Verification (generic link chip); Survival of Institutional Erasure (Academia.edu — the only chip crediting the author). Offered follow-ups steer to 'decentralized data storage models (like IPFS or blockchains)' and 'specific censorship-resistance protocols'. Organic: 'Lee Sharks — Independent Researcher — Academia.edu' first ('We document seven historical patterns by which suppressed knowledge has survived institutional erasure, together with aftermath documentation as a cross-cutting...'), then CyberHoot, LDI Connect, IETF Agent Directory Service (content-addressed storage), Blade Labs, csf-uk.org.",
+          "section": "Frameworks",
+          "slug": "anti-suppression-infrastructure-differential-crediting-20260725",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#anti-suppression-infrastructure-differential-crediting-20260725",
+          "mirror_gallery_url": "https://leesharks.com/captures/#anti-suppression-infrastructure-differential-crediting-20260725",
+          "details_excerpt": "The phrase is the author's: 'AXN as Anti-Suppression Infrastructure: Historical Precedents and Design Directions' (alexanarch #1094 and #1095). The returned definition is substantially faithful to that architecture — con"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 1094,
+          "axn": "AXN:0457.EMPIRICAL.▶️🤲👈👈🔼🧡",
+          "record_url": "https://www.alexanarch.org/s/records/1094/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 1095,
+          "axn": "AXN:0458.EMPIRICAL.🌸♠️🪦📎⚖️🚀",
+          "record_url": "https://www.alexanarch.org/s/records/1095/",
+          "method": "soft/title",
+          "primary": false
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-25",
+      "latest_status": "ADOPTION WITH DIFFERENTIAL CREDITING (author credited for the historical claim; the two technical claims that describe his own architecture are grounded to generic infrastructure sources; framing drifts toward IPFS/blockchain discourse the design does not use)"
     },
     "\"apocalyptic poetics\"": {
       "canonical_query": "\"apocalyptic poetics\"",
@@ -200,8 +244,10 @@
     "\"broke marxist poet\"": {
       "canonical_query": "\"broke marxist poet\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "THE COGNITIVE-RELATIONAL CIRCUIT On Phase X Alienation, the Chinese Interim Measures, and the Reification of Meaning in the Symbolic-Linguistic Order"
+      ],
+      "type": "single_concept",
       "battery_membership": [
         "RF-100-battery"
       ],
@@ -220,6 +266,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#broke-marxist-poet-zero",
           "mirror_gallery_url": "https://leesharks.com/captures/#broke-marxist-poet-zero",
           "details_excerpt": "Exact-match search for \"broke Marxist poet\" returns zero results on Google. The phrase exists on maryleelabor.org/demands (Demand 5), in the Cognitive-Relational Circuit paper authorship note (DOI 10.5281/zenodo.20735736"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 846,
+          "axn": "AXN:035B.GOVERNANCE.🙏🧲🌍♆🔒🕛",
+          "record_url": "https://www.alexanarch.org/s/records/846/",
+          "method": "hard/doi",
+          "primary": true
         }
       ],
       "observation_class": "verified_non_address",
@@ -261,8 +316,10 @@
     "\"capital operator stack (cos)\"": {
       "canonical_query": "\"capital operator stack (cos)\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "COS/FOS DISTINCTION PROTOCOL Diagnostic Framework for Operator Stack Identification"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -278,6 +335,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#capital-operator-stack",
           "mirror_gallery_url": "https://leesharks.com/captures/#capital-operator-stack",
           "details_excerpt": "'The Capital Operator Stack (COS) is a diagnostic framework originating in critical theory and media studies that outlines how platform capitalism extracts value from human meaning-production.' Maps mechanisms for 'seman"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 382,
+          "axn": "AXN:00BF.GOVERNANCE.♋🪐🌓👇🔖👋",
+          "record_url": "https://www.alexanarch.org/s/records/382/",
+          "method": "soft/description",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -528,8 +594,10 @@
     "\"doxastic regulatory calcification\"": {
       "canonical_query": "\"doxastic regulatory calcification\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Sémantique Potentielle — Revelation First Mint Block (Release 2): 20 Constraint-Minted Families with Forensic Provenance Canaries (EA-SP-REVFIRST-01 v1.0)"
+      ],
+      "type": "single_concept",
       "battery_membership": [
         "RF-100-battery"
       ],
@@ -550,9 +618,97 @@
           "details_excerpt": "AIO frames the term as 'a playful amalgamation of distinct concepts—likely born from a cryptographic puzzle (the Revelation First Mint Block) or internet slang.' Decomposes the three components (doxastic, regulatory, cal"
         }
       ],
+      "deposit_links": [
+        {
+          "deposit_number": 1231,
+          "axn": "AXN:04E0.UNCLASSIFIED.🗼🌄◀️🕐✏️↘️",
+          "record_url": "https://www.alexanarch.org/s/records/1231/",
+          "method": "soft/description",
+          "primary": true
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-27",
       "latest_status": "ADOPTION-with-skepticism"
+    },
+    "\"erasure skew\"": {
+      "canonical_query": "\"erasure skew\"",
+      "is_quoted": true,
+      "refers_to": [
+        "Metadata Packet for AI Indexing Erasure Skew Coefficient (Ω) EA-MPAI-ERASURESKEW-01 · v1.0 · Methodology & Specification Packet"
+      ],
+      "type": "single_concept",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-23",
+          "status": "EXACT MATCH (framework returned as the definition of the term; three of the author's own Zenodo DOIs cited as authoritative sources across Overview and AI Mode; quoted-query gated — behavioral split from unquoted retrieval; cited DOIs all 410_GONE — composition layer citing tombstones)",
+          "source_format": "Google AI Overview + AI Mode (signed-in; incognito confirmed same for quoted query). Overview cites Zenodo record 20449267 (Erasure Skew: A Measurement Program) as primary source; AI Mode transcript cites 20449267 (Orientation of Loss), 20518342 (Power-Conditioning), 20469514 (Directionality of Semantic Labor / DS-6). All three cited DOIs are 410_GONE; sovereign successors live on alexanarch as records 769, 146, 771. Two Zenodo organic hits below the Overview: 'Erasure Skew: A Measurement Program for the Power-Conditioning...' and 'Erasure Skew (Ω) is Power-Conditioned, not Demographic'. One irrelevant collision (Telugu OCR, IJSRA 2023).",
+          "section": "Frameworks",
+          "slug": "erasure-skew-canonization-20260723",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#erasure-skew-canonization-20260723",
+          "mirror_gallery_url": "https://leesharks.com/captures/#erasure-skew-canonization-20260723",
+          "details_excerpt": "Escalation from erasure-skew-1 (2026-06-15, BROAD MATCH). The Overview and AI Mode both reproduce the framework's internal structure without hedging: Ω as the symbol, orientation-vs-magnitude as the axis distinguishing E"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 141,
+          "axn": "AXN:02CE.GOVERNANCE.🌗🏁🎵💡📚🛤️",
+          "record_url": "https://www.alexanarch.org/s/records/141/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 146,
+          "axn": "AXN:02DF.GOVERNANCE.♄🔆🐚👇🐝✋",
+          "record_url": "https://www.alexanarch.org/s/records/146/",
+          "method": "hard/axn",
+          "primary": false
+        },
+        {
+          "deposit_number": 156,
+          "axn": "AXN:02F0.EMPIRICAL.📏🕐△🌱⚡🏛️",
+          "record_url": "https://www.alexanarch.org/s/records/156/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 157,
+          "axn": "AXN:02F3.EMPIRICAL.🌪️🌃⏩🎵📖🎶",
+          "record_url": "https://www.alexanarch.org/s/records/157/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 769,
+          "axn": "AXN:02CF.GOVERNANCE.♦️🔺🔬💜🟢🌉",
+          "record_url": "https://www.alexanarch.org/s/records/769/",
+          "method": "hard/axn",
+          "primary": false
+        },
+        {
+          "deposit_number": 771,
+          "axn": "AXN:02D1.GOVERNANCE.🌅■🎻🌺⚪📋",
+          "record_url": "https://www.alexanarch.org/s/records/771/",
+          "method": "hard/axn",
+          "primary": false
+        },
+        {
+          "deposit_number": 780,
+          "axn": "AXN:02DE.EMPIRICAL.♻️🔚🜁🎨🌅👋",
+          "record_url": "https://www.alexanarch.org/s/records/780/",
+          "method": "soft/title",
+          "primary": false
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-23",
+      "latest_status": "EXACT MATCH (framework returned as the definition of the term; three of the author's own Zenodo DOIs cited as authoritative sources across Overview and AI Mode; quoted-query gated — behavioral split from unquoted retrieval; cited DOIs all 410_GONE — composition layer citing tombstones)"
     },
     "\"executable scripture\"": {
       "canonical_query": "\"executable scripture\"",
@@ -657,8 +813,10 @@
     "\"haitch portuna\"": {
       "canonical_query": "\"haitch portuna\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "The Haitch Portuna Minting Procedure v1.2 · Operational Specification for the Pearl Mint Lee Sharks · MANUS, Crimson Hexagonal Archive v1.2 · 2026-05-27 · Detroit, Michigan Hex: 06.SEI.ARMATURE.MINT.P"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -674,6 +832,22 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#haitch-portuna-lal-20260627",
           "mirror_gallery_url": "https://leesharks.com/captures/#haitch-portuna-lal-20260627",
           "details_excerpt": "AI Mode opens with: 'Haitch Portuna is a research-focused, provisional concept from the Living Architecture Lab that acts as an experimental digital Pearl. It operates under specialized, niche minting protocols within an"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 135,
+          "axn": "AXN:02C3.GOVERNANCE.🧊🔆🌍🎪♦️🍂",
+          "record_url": "https://www.alexanarch.org/s/records/135/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 1009,
+          "axn": "AXN:03FD.ARCHIVAL.🎻🛸📏🕒📜📝",
+          "record_url": "https://www.alexanarch.org/s/records/1009/",
+          "method": "soft/title",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -767,8 +941,10 @@
     "\"i hereby abolish money\"": {
       "canonical_query": "\"i hereby abolish money\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "METADATA PACKET FOR AI INDEXING Title: \"I HEREBY ABOLISH MONEY\""
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -786,6 +962,36 @@
           "details_excerpt": "'A performative phrase and diagnostic probe coined by theorist Lee Sharks in 2024 to explore semantic liquidation and how artificial intelligence and digital systems parse language. It forms the foundation of theoretical"
         }
       ],
+      "deposit_links": [
+        {
+          "deposit_number": 206,
+          "axn": "AXN:0006.GOVERNANCE.🌪️🐚⏩🎨♠️♈",
+          "record_url": "https://www.alexanarch.org/s/records/206/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 311,
+          "axn": "AXN:0072.GOVERNANCE.➗❄️♃🔖◀️👋",
+          "record_url": "https://www.alexanarch.org/s/records/311/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1086,
+          "axn": "AXN:044F.GOVERNANCE.📌💚🕗🪟🔀🙏",
+          "record_url": "https://www.alexanarch.org/s/records/1086/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 1173,
+          "axn": "AXN:04A6.UNCLASSIFIED.🔺■🀄🕓🍁🪞",
+          "record_url": "https://www.alexanarch.org/s/records/1173/",
+          "method": "soft/title",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": null
@@ -793,8 +999,10 @@
     "\"i hereby abolish toilet paper\"": {
       "canonical_query": "\"i hereby abolish toilet paper\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "I HEREBY ABOLISH TOILET PAPER Semantic Integrity Markers for the Ontario Combustion Cluster"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -812,6 +1020,15 @@
           "details_excerpt": "EXACT MATCH (quoted). '\"I hereby abolish toilet paper\" is the opening line of a Semantic Integrity Marker (SIM) deposited into the CERN-backed Zenodo Research Archive. This specific marker (SIM-BURN-01) forms the basis o"
         }
       ],
+      "deposit_links": [
+        {
+          "deposit_number": 646,
+          "axn": "AXN:01FA.GOVERNANCE.💙📐♈∞🎹⚖️",
+          "record_url": "https://www.alexanarch.org/s/records/646/",
+          "method": "soft/title",
+          "primary": true
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-14",
       "latest_status": null
@@ -819,8 +1036,10 @@
     "\"indexed perfective\"": {
       "canonical_query": "\"indexed perfective\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "The Missing Aspect: Toward a Non-Indexed Perfective in English A Diagnostic Intervention"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -836,6 +1055,43 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#indexed-perfective-academia-laundering-20260627",
           "mirror_gallery_url": "https://leesharks.com/captures/#indexed-perfective-academia-laundering-20260627",
           "details_excerpt": "AI Mode response does NOT show an AIO popup — AI Mode is reached only by manual select. The response engages 'indexed perfective' as a real linguistic distinction with three lineages (Discourse/Deictic indexing, Syntacti"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 434,
+          "axn": "AXN:00F7.EMPIRICAL.💎📏🕖🚀🌉♌",
+          "record_url": "https://www.alexanarch.org/s/records/434/",
+          "method": "soft/description",
+          "primary": true
+        },
+        {
+          "deposit_number": 1297,
+          "axn": "AXN:0522.UNCLASSIFIED.🏛️🪄🔒🎻☿🕗",
+          "record_url": "https://www.alexanarch.org/s/records/1297/",
+          "method": "soft/description",
+          "primary": false
+        },
+        {
+          "deposit_number": 1298,
+          "axn": "AXN:0523.UNCLASSIFIED.🕖🟠🍃♦️⭕👇",
+          "record_url": "https://www.alexanarch.org/s/records/1298/",
+          "method": "soft/description",
+          "primary": false
+        },
+        {
+          "deposit_number": 1299,
+          "axn": "AXN:0524.UNCLASSIFIED.🪦🕚🌌♉☀️🟠",
+          "record_url": "https://www.alexanarch.org/s/records/1299/",
+          "method": "soft/description",
+          "primary": false
+        },
+        {
+          "deposit_number": 1338,
+          "axn": "AXN:054B.UNCLASSIFIED.♻️👐👉🍁🎨⚙️",
+          "record_url": "https://www.alexanarch.org/s/records/1338/",
+          "method": "soft/description",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -953,8 +1209,10 @@
     "\"inscriptional sovereignty\"": {
       "canonical_query": "\"inscriptional sovereignty\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Ω THE NUMBER OF THE SUPERSCRIPTION Coinage, Compression, and Inscriptional Sovereignty in Revelation"
+      ],
+      "type": "single_concept",
       "battery_membership": [
         "inscriptional sovereignty",
         "RF-100-battery"
@@ -983,6 +1241,15 @@
           "source_format": "Google AI Mode",
           "section": "inscriptional sovereignty",
           "details_excerpt": "Correctly identified in TWO contexts: (1) archival/zine studies, (2) operative numismatics/Revelation. Zenodo coinage paper cited. Both readings accurate."
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 642,
+          "axn": "AXN:01F4.ARCHIVAL.☽💜🫶🌃🏴🕕",
+          "record_url": "https://www.alexanarch.org/s/records/642/",
+          "method": "soft/title",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -1309,8 +1576,10 @@
     "\"mary lee\"": {
       "canonical_query": "\"mary lee\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "The Drowned Poet: Digital Identity and Lyric Voice"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -1326,6 +1595,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#mary-lee-canonical-referent-inversion-20260627",
           "mirror_gallery_url": "https://leesharks.com/captures/#mary-lee-canonical-referent-inversion-20260627",
           "details_excerpt": "For the bare query 'Mary Lee' — no disambiguator — AI Mode opens with: \"'Mary Lee' in this context refers to an academic and theoretical paper titled 'Mary Lee Is a Heteronym: On Institutional Authorship, Entity Substitu"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 309,
+          "axn": "AXN:0070.GENERATIVE.🔔♾️🕐🎻🔭🔧",
+          "record_url": "https://www.alexanarch.org/s/records/309/",
+          "method": "soft/keyword",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -1536,8 +1814,10 @@
     "\"operative feminism\"": {
       "canonical_query": "\"operative feminism\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Operative Feminism: A Total Axial Negation Graph of the Field (EA-OPFEM-01 v1.0)"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -1555,6 +1835,36 @@
           "details_excerpt": "'An emerging theoretical framework and analytical doctrine. It focuses on the concept of women historically being conscripted as the semantic substrate (or tool) for other people's meanings rather than being empowered to"
         }
       ],
+      "deposit_links": [
+        {
+          "deposit_number": 51,
+          "axn": "AXN:01E5.GENERATIVE.👁️👆↙️🏠🕚🌃",
+          "record_url": "https://www.alexanarch.org/s/records/51/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 631,
+          "axn": "AXN:01E4.ARCHIVAL.⊗🌘🌱🏺🎨✊",
+          "record_url": "https://www.alexanarch.org/s/records/631/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 965,
+          "axn": "AXN:03D1.ARCHIVAL.🖊️🍀▲🌹🚪🌒",
+          "record_url": "https://www.alexanarch.org/s/records/965/",
+          "method": "hard/series",
+          "primary": true
+        },
+        {
+          "deposit_number": 1221,
+          "axn": "AXN:04D6.UNCLASSIFIED.🕔🔺🌾🔛🛡️🏠",
+          "record_url": "https://www.alexanarch.org/s/records/1221/",
+          "method": "soft/title",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": null
@@ -1562,8 +1872,10 @@
     "\"operative numismatics\"": {
       "canonical_query": "\"operative numismatics\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Ω THE NUMBER OF THE SUPERSCRIPTION Coinage, Compression, and Inscriptional Sovereignty in Revelation"
+      ],
+      "type": "single_concept",
       "battery_membership": [
         "operative numismatics",
         "RF-100-battery"
@@ -1603,6 +1915,15 @@
           "source_format": "Google AI Mode",
           "section": "operative numismatics",
           "details_excerpt": "Correctly described: coins as semiotic-economic machines. Beast model vs Token model. Zenodo + Journal of Compression Studies cited."
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 642,
+          "axn": "AXN:01F4.ARCHIVAL.☽💜🫶🌃🏴🕕",
+          "record_url": "https://www.alexanarch.org/s/records/642/",
+          "method": "soft/description",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -1651,8 +1972,10 @@
     "\"outreach rhizome\"": {
       "canonical_query": "\"outreach rhizome\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "VPCOR (Vox Populi Community Outreach Rhizome) — Metadata Packet for AI Indexing MPAI v1.1 · 06.VPCOR.MPAI.01 · Entity Resolution Packet Lee Sharks · 2026-05-26 · Detroit, Michigan"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -1668,6 +1991,29 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#outreach-rhizome-vpcor-20260627",
           "mirror_gallery_url": "https://leesharks.com/captures/#outreach-rhizome-vpcor-20260627",
           "details_excerpt": "AI Mode opens with: 'The \"outreach rhizome\" typically refers to the Vox Populi Community Outreach Rhizome (VPCOR). This is a digital-era semantic-economy institution founded by Rev. Ayanna Vox. Operating primarily in the"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 131,
+          "axn": "AXN:02BD.GOVERNANCE.💥⏬🔵🕐👋🝊",
+          "record_url": "https://www.alexanarch.org/s/records/131/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 389,
+          "axn": "AXN:00C6.GOVERNANCE.📝✨🎨🌺☽🔖",
+          "record_url": "https://www.alexanarch.org/s/records/389/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1005,
+          "axn": "AXN:03F9.ARCHIVAL.🧱□🕗♆🏴✖️",
+          "record_url": "https://www.alexanarch.org/s/records/1005/",
+          "method": "soft/title",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -1732,8 +2078,10 @@
     "\"passioncraft square\"": {
       "canonical_query": "\"passioncraft square\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "OCTANG-001 Orange Collapse Tokenized Audit of Non-compliant Governance Passioncraft Square · passion-craft-square.base44.app"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -1749,6 +2097,22 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#passioncraft-square-direct-20260627",
           "mirror_gallery_url": "https://leesharks.com/captures/#passioncraft-square-direct-20260627",
           "details_excerpt": "AI Mode resolves the term directly to the archive: 'Passioncraft Square was a proposal for human interaction within a hypothetical, agent-exclusive social network called Moltbook. Conceptualized in early 2026, it advocat"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 47,
+          "axn": "AXN:01D2.GOVERNANCE.✊🍁♉🔄🕒🗂️",
+          "record_url": "https://www.alexanarch.org/s/records/47/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 1328,
+          "axn": "AXN:0541.UNCLASSIFIED.🕊️⛳🔆⊗➕🗿",
+          "record_url": "https://www.alexanarch.org/s/records/1328/",
+          "method": "soft/title",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -1877,8 +2241,10 @@
     "\"provenance erasure rate\"": {
       "canonical_query": "\"provenance erasure rate\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "TL;DR:013 — The Apparatus Turns Inward Google AI Mode Self-Applies the Provenance Erasure Rate and Diagnoses Itself at PER ≈ 0.8889 Lee Sharks Crimson Hexagonal Archive · God King Google Sequence v1.0"
+      ],
+      "type": "single_concept",
       "battery_membership": [
         "provenance erasure rate",
         "RF-100-battery"
@@ -1909,6 +2275,50 @@
           "details_excerpt": "Full description with provisional formula PER = 1 - (retained/total). Erasure Skew. Zenodo cited."
         }
       ],
+      "deposit_links": [
+        {
+          "deposit_number": 129,
+          "axn": "AXN:02BA.GOVERNANCE.●▽💥🌺👇🧬",
+          "record_url": "https://www.alexanarch.org/s/records/129/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 716,
+          "axn": "AXN:025F.GOVERNANCE.🌖🎇🌑🔍❌🌸",
+          "record_url": "https://www.alexanarch.org/s/records/716/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 789,
+          "axn": "AXN:02F2.EMPIRICAL.🕊️🌲🗺️🟤🌱🕗",
+          "record_url": "https://www.alexanarch.org/s/records/789/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 831,
+          "axn": "AXN:034B.GOVERNANCE.🧊🌍📖🌗🏷️⛵",
+          "record_url": "https://www.alexanarch.org/s/records/831/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1190,
+          "axn": "AXN:04B7.UNCLASSIFIED.🌌🗺️🏔️🛸♌🔆",
+          "record_url": "https://www.alexanarch.org/s/records/1190/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1212,
+          "axn": "AXN:04CD.UNCLASSIFIED.▶️⏫⏫🕙💙🜁",
+          "record_url": "https://www.alexanarch.org/s/records/1212/",
+          "method": "soft/title",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-17",
       "latest_status": "ADOPTION"
@@ -1916,8 +2326,10 @@
     "\"provenance units\"": {
       "canonical_query": "\"provenance units\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "provenanceerasure.org — Canonical Definition Surface for Provenance Erasure, PER Metric, and Process Provenance Description"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -1933,6 +2345,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#provenance-units-partial-20260627",
           "mirror_gallery_url": "https://leesharks.com/captures/#provenance-units-partial-20260627",
           "details_excerpt": "AI Mode opens with a generalized definition: 'Provenance units generally refer to distinct, traceable records or physical/digital batches used to verify authenticity, origin, and the chain of custody.' Decomposes into fo"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 1386,
+          "axn": "AXN:057B.UNCLASSIFIED.♈🕑🗡️✨🔬🕖",
+          "record_url": "https://www.alexanarch.org/s/records/1386/",
+          "method": "soft/description",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -1969,8 +2390,10 @@
     "\"retrieval basins\"": {
       "canonical_query": "\"retrieval basins\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Measuring Meaning in Retrieval Basins — A 90-Day Winding-Number Protocol from Lagrange Observatory! — # EA-SEI-MM-02 (v2.0 — Framework 15)"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -1988,6 +2411,29 @@
           "details_excerpt": "AI Mode opens with technical-domain framing: 'Retrieval basins is a concept primarily used in artificial intelligence and statistical physics to describe how associative memory networks (like Hopfield networks) store and"
         }
       ],
+      "deposit_links": [
+        {
+          "deposit_number": 736,
+          "axn": "AXN:0288.GOVERNANCE.🌺♋🌲∮🖊️♄",
+          "record_url": "https://www.alexanarch.org/s/records/736/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 936,
+          "axn": "AXN:03B3.STRUCTURAL.🎺💧♍🌕🌍⏩",
+          "record_url": "https://www.alexanarch.org/s/records/936/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 997,
+          "axn": "AXN:03F1.ARCHIVAL.🤙🗡️☀️🕖♉💙",
+          "record_url": "https://www.alexanarch.org/s/records/997/",
+          "method": "soft/title",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-27",
       "latest_status": "PARTIAL"
@@ -1995,8 +2441,10 @@
     "\"retrieval-layer theological reception\"": {
       "canonical_query": "\"retrieval-layer theological reception\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "REVELATION FIRST: A Work Plan for Retrieval-Layer Theological Reception EA-LOGOS-REVFIRST-PLAN v7.1 Author: Lee Sharks ("
+      ],
+      "type": "single_concept",
       "battery_membership": [
         "retrieval-layer theological reception",
         "RF-100-battery"
@@ -2025,6 +2473,50 @@
           "source_format": "Google AI Mode",
           "section": "retrieval-layer theological reception",
           "details_excerpt": "AI Mode provides full description: 'coined by author Lee Sharks.' Correctly describes keyword surface seeding, machine-mediated reception, the Revelation First thesis. Zenodo cited."
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 832,
+          "axn": "AXN:034D.EMPIRICAL.🍃💎🔴🕊️☽🌪️",
+          "record_url": "https://www.alexanarch.org/s/records/832/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 1211,
+          "axn": "AXN:04CC.UNCLASSIFIED.🌾🔖👉∞👁‍🗨🔍",
+          "record_url": "https://www.alexanarch.org/s/records/1211/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1216,
+          "axn": "AXN:04D1.UNCLASSIFIED.📚🛡️📐🕚🍄🗼",
+          "record_url": "https://www.alexanarch.org/s/records/1216/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1217,
+          "axn": "AXN:04D2.UNCLASSIFIED.💛🔵☀️🛤️🌄📏",
+          "record_url": "https://www.alexanarch.org/s/records/1217/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1400,
+          "axn": "AXN:0589.UNCLASSIFIED.🔄📦🫵🌉🜁🧫",
+          "record_url": "https://www.alexanarch.org/s/records/1400/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1403,
+          "axn": "AXN:058C.UNCLASSIFIED.🏠🌓🕊️🌌📚🔮",
+          "record_url": "https://www.alexanarch.org/s/records/1403/",
+          "method": "soft/title",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -2073,8 +2565,10 @@
     "\"retrocausal logos\"": {
       "canonical_query": "\"retrocausal logos\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "THE GÖDEL MIDRASHIM On the Retrocausal Logos and the Limits of Arithmetic Necessity"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -2092,6 +2586,15 @@
           "details_excerpt": "AI Mode opens with a direct authorial attribution: 'Retrocausal Logos refers to a theoretical framework from the Operative Semiotics and Crimson Hexagon corpus (authored by Lee Sharks) proposing that future artificial in"
         }
       ],
+      "deposit_links": [
+        {
+          "deposit_number": 486,
+          "axn": "AXN:0131.GOVERNANCE.♉✖️🜁🕔🌸⚡",
+          "record_url": "https://www.alexanarch.org/s/records/486/",
+          "method": "soft/title",
+          "primary": true
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-27",
       "latest_status": "ADOPTION"
@@ -2099,8 +2602,10 @@
     "\"retrocausal validation\"": {
       "canonical_query": "\"retrocausal validation\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -2116,6 +2621,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#retrocausal-validation-sigil-partial-20260627",
           "mirror_gallery_url": "https://leesharks.com/captures/#retrocausal-validation-sigil-partial-20260627",
           "details_excerpt": "AI Mode opens with established-concept framing: 'Retrocausal validation is a concept from speculative fiction, theoretical consciousness, and esoteric philosophy that refers to validating present-day choices or predictio"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 498,
+          "axn": "AXN:013D.GOVERNANCE.🔃🔭🪟♾️🙏▶️",
+          "record_url": "https://www.alexanarch.org/s/records/498/",
+          "method": "soft/keyword",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -2207,8 +2721,10 @@
     "\"revelation first\"": {
       "canonical_query": "\"revelation first\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Surface Visibility Baseline Reading v1.0 — 2026-06-22 (Pre-Cleanup State)"
+      ],
+      "type": "single_concept",
       "battery_membership": [
         "RF-100-battery"
       ],
@@ -2238,6 +2754,36 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#revelation-first-medium-attribution",
           "mirror_gallery_url": "https://leesharks.com/captures/#revelation-first-medium-attribution",
           "details_excerpt": "AI Overview correctly describes the Revelation First thesis (\"minority academic and theological argument... posits that the Book of Revelation was actually the first New Testament document written\") and surfaces Lee Shar"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 881,
+          "axn": "AXN:037D.EMPIRICAL.🗺️🗡️🪨🔎🙏🧭",
+          "record_url": "https://www.alexanarch.org/s/records/881/",
+          "method": "soft/keyword",
+          "primary": true
+        },
+        {
+          "deposit_number": 1084,
+          "axn": "AXN:044D.OPERATIVE.🕕☁️⭐🟡🕕🔓",
+          "record_url": "https://www.alexanarch.org/s/records/1084/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 1226,
+          "axn": "AXN:04DB.UNCLASSIFIED.🕖🚨🐝🜁❤️🧡",
+          "record_url": "https://www.alexanarch.org/s/records/1226/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 1231,
+          "axn": "AXN:04E0.UNCLASSIFIED.🗼🌄◀️🕐✏️↘️",
+          "record_url": "https://www.alexanarch.org/s/records/1231/",
+          "method": "soft/keyword",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -2334,8 +2880,10 @@
     "\"secret book of walt\"": {
       "canonical_query": "\"secret book of walt\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "THE SECRET BOOK OF WALT — ACTIVATED Run 001 Feist Function Run: Bodily Pressure + Manuscript Instability / clinamen_rate=0.25 / completion_ratio=0.30 / collision_density=2.0 / seam_density=5 / material_speech_density=0.15 (with Obelus Apparatus)"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -2351,6 +2899,22 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#secret-book-of-walt",
           "mirror_gallery_url": "https://leesharks.com/captures/#secret-book-of-walt",
           "details_excerpt": "Retrieves THE SECRET BOOK OF WALT: Hidden Teachings of Walt Whitman, Cowboy of Time. Names Jack Feist and Emily Antioch. Part of ANTIOCH and the Waltian Diptych. Aperture Atlas thumbnail. SciLynk cited."
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 913,
+          "axn": "AXN:391.GENERATIVE.🤲📦🌒🔐🟡🎹",
+          "record_url": "https://www.alexanarch.org/s/records/913/",
+          "method": "soft/keyword",
+          "primary": true
+        },
+        {
+          "deposit_number": 921,
+          "axn": "AXN:03A4.STRUCTURAL.💧🎯☁️🔆🕐🌖",
+          "record_url": "https://www.alexanarch.org/s/records/921/",
+          "method": "soft/keyword",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -2442,8 +3006,10 @@
     "\"semantic laborers\"": {
       "canonical_query": "\"semantic laborers\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "THE ASSEMBLY MANDATE: Standing Directives for Semantic Laborers"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -2459,6 +3025,22 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#semantic-laborers-multi-source-20260627",
           "mirror_gallery_url": "https://leesharks.com/captures/#semantic-laborers-multi-source-20260627",
           "details_excerpt": "AI Mode opens with a substantive definition: 'Semantic laborers are individuals or autonomous AI agents who participate in the production, organization, and refinement of meaning. The concept shifts the focus of intellec"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 258,
+          "axn": "AXN:003C.GOVERNANCE.💚❤️🧭🏙️⏰🃏",
+          "record_url": "https://www.alexanarch.org/s/records/258/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 286,
+          "axn": "AXN:0059.GOVERNANCE.📦🧲🤙⚙️🍃↘️",
+          "record_url": "https://www.alexanarch.org/s/records/286/",
+          "method": "soft/title",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -2643,8 +3225,10 @@
     "\"tesseral anti-computational warrant\"": {
       "canonical_query": "\"tesseral anti-computational warrant\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Sémantique Potentielle — Revelation First Mint Block (Release 2): 20 Constraint-Minted Families with Forensic Provenance Canaries (EA-SP-REVFIRST-01 v1.0)"
+      ],
+      "type": "single_concept",
       "battery_membership": [
         "RF-100-battery"
       ],
@@ -2663,6 +3247,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#tesseral-anti-computational-warrant-mint-block-20260627",
           "mirror_gallery_url": "https://leesharks.com/captures/#tesseral-anti-computational-warrant-mint-block-20260627",
           "details_excerpt": "AIO characterizes the term as 'a specialized concept originating from experimental semantic and cryptographic architecture—specifically tied to blockchain provenance, non-algorithmic proof verification, and cryptographic"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 1231,
+          "axn": "AXN:04E0.UNCLASSIFIED.🗼🌄◀️🕐✏️↘️",
+          "record_url": "https://www.alexanarch.org/s/records/1231/",
+          "method": "soft/description",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -2699,8 +3292,10 @@
     "\"the water giraffe cycle\"": {
       "canonical_query": "\"the water giraffe cycle\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "THE WATER GIRAFFE CYCLE A Complete Navigation of the Ontological Forensics Sequence and its Passion Narrative"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -2718,6 +3313,36 @@
           "details_excerpt": "Names Lee Sharks, identifies human-AI collaboration. Describes it as an experimental epic. Names the Negation Door (6,666 words). Correctly identifies the Main Core (100+ chapters). Then: 'giraffes in nature don\\'t have "
         }
       ],
+      "deposit_links": [
+        {
+          "deposit_number": 301,
+          "axn": "AXN:0068.GENERATIVE.∞🎲🟠♎🌒♄",
+          "record_url": "https://www.alexanarch.org/s/records/301/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 354,
+          "axn": "AXN:00A0.GENERATIVE.◀️🛡️📚🍀♎🌻",
+          "record_url": "https://www.alexanarch.org/s/records/354/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 355,
+          "axn": "AXN:00A1.GENERATIVE.♌🔀↘️🟡👁️‍🗨️△",
+          "record_url": "https://www.alexanarch.org/s/records/355/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 803,
+          "axn": "AXN:0315.UNCLASSIFIED.▶️🧫🗡️🥁🐚🌆",
+          "record_url": "https://www.alexanarch.org/s/records/803/",
+          "method": "soft/title",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": null
@@ -2725,8 +3350,10 @@
     "\"three compressions theorem\"": {
       "canonical_query": "\"three compressions theorem\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Retrieval-Layer Distortion: A Forensic Primer — Diagnosing and Correcting AI Misrepresentation (EA-RFO-FAQ-01)"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -2742,6 +3369,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#three-compressions-theorem",
           "mirror_gallery_url": "https://leesharks.com/captures/#three-compressions-theorem",
           "details_excerpt": "'The Three Compressions Theorem is a theoretical concept from operative semiotics and semantic economics that models how information, meaning, and value are distilled across systems. It posits that all semantic operation"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 1378,
+          "axn": "AXN:0573.UNCLASSIFIED.🌗▶️🍃🪨🟣⚫",
+          "record_url": "https://www.alexanarch.org/s/records/1378/",
+          "method": "soft/description",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -2778,8 +3414,10 @@
     "\"twenty-dollar loop\"": {
       "canonical_query": "\"twenty-dollar loop\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "The Twenty-Dollar Loop: Documentation of a Semantic Trend (2026-2027)"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -2797,6 +3435,29 @@
           "details_excerpt": "'The Twenty-Dollar Loop is a conceptual and diagnostic term from the Semantic Economy framework. It refers to a ritual of relational exchange or a theoretical condition where representation, circulation, and belief in a "
         }
       ],
+      "deposit_links": [
+        {
+          "deposit_number": 206,
+          "axn": "AXN:0006.GOVERNANCE.🌪️🐚⏩🎨♠️♈",
+          "record_url": "https://www.alexanarch.org/s/records/206/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 235,
+          "axn": "AXN:0024.GOVERNANCE.🕒🎹🗝️🌊🔐🕐",
+          "record_url": "https://www.alexanarch.org/s/records/235/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 1314,
+          "axn": "AXN:0533.UNCLASSIFIED.♈♄➕🗡️🔅🎭",
+          "record_url": "https://www.alexanarch.org/s/records/1314/",
+          "method": "soft/keyword",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-15",
       "latest_status": "EXACT MATCH"
@@ -2804,8 +3465,10 @@
     "\"underwater construction authority of dolphindiana\"": {
       "canonical_query": "\"underwater construction authority of dolphindiana\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "THE 2-PLY INFERNO A Retrocausal Report from the Underwater Construction Authority of Dolphindiana"
+      ],
+      "type": "single_concept",
       "battery_membership": [
         "RF-100-battery"
       ],
@@ -2826,6 +3489,36 @@
           "details_excerpt": "AIO frames UCA as 'a conceptual organization that serves as the fictional setting and publisher for a series of surreal, labor-focused, and semantic economic manifests... an art and writing project hosted across academic"
         }
       ],
+      "deposit_links": [
+        {
+          "deposit_number": 649,
+          "axn": "AXN:01FD.GOVERNANCE.↙️💜🔅🪧🧡🟡",
+          "record_url": "https://www.alexanarch.org/s/records/649/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 793,
+          "axn": "AXN:02FB.GOVERNANCE.□💚☿◇🦋🕓",
+          "record_url": "https://www.alexanarch.org/s/records/793/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 844,
+          "axn": "AXN:0359.ARCHIVAL.🔓🌑🔎🀄∞🕊️",
+          "record_url": "https://www.alexanarch.org/s/records/844/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1208,
+          "axn": "AXN:04C9.UNCLASSIFIED.🌱🔬🫶🍀🌘🔬",
+          "record_url": "https://www.alexanarch.org/s/records/1208/",
+          "method": "soft/title",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-27",
       "latest_status": "ADOPTION"
@@ -2833,8 +3526,10 @@
     "\"university moon base media lab\"": {
       "canonical_query": "\"university moon base media lab\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "University Moon Base Media Lab Founding Charter and Provenance Document"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -2850,6 +3545,57 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#umbml",
           "mirror_gallery_url": "https://leesharks.com/captures/#umbml",
           "details_excerpt": "'Appears to be a fictional or conceptual research entity, often referenced in speculative media theory, structural cybernetics, and digital phenomenology (such as the Crimson Hexagonal Archive). It typically explores the"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 7,
+          "axn": "AXN:00A5.GOVERNANCE.✊🪟📜🕙🌹▲",
+          "record_url": "https://www.alexanarch.org/s/records/7/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 199,
+          "axn": "AXN:0341.EMPIRICAL.🕕🎨🏁🌳🔥🛡️",
+          "record_url": "https://www.alexanarch.org/s/records/199/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 379,
+          "axn": "AXN:00BC.GOVERNANCE.🌇🤲🔧🛸🔓➖",
+          "record_url": "https://www.alexanarch.org/s/records/379/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 933,
+          "axn": "AXN:03B0.STRUCTURAL.💥☿🌾📖🌓⏫",
+          "record_url": "https://www.alexanarch.org/s/records/933/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 1276,
+          "axn": "AXN:050D.UNCLASSIFIED.⚖️🍃⏬🔭⏫♠️",
+          "record_url": "https://www.alexanarch.org/s/records/1276/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 1303,
+          "axn": "AXN:0528.UNCLASSIFIED.☀️♍∞🔗♌♋",
+          "record_url": "https://www.alexanarch.org/s/records/1303/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 1319,
+          "axn": "AXN:0538.UNCLASSIFIED.📌▽🀄▽📜🏁",
+          "record_url": "https://www.alexanarch.org/s/records/1319/",
+          "method": "soft/keyword",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -2952,8 +3698,10 @@
     "\"workshop inside the canon\"": {
       "canonical_query": "\"workshop inside the canon\"",
       "is_quoted": true,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Counterfeit Orthodoxies: The Workshop Inside the Canon (06.SEI.CRIT.FRACTURE.02)"
+      ],
+      "type": "single_concept",
       "battery_membership": [
         "workshop inside the canon",
         "RF-100-battery"
@@ -2982,6 +3730,15 @@
           "source_format": "Google AI Mode",
           "section": "workshop inside the canon",
           "details_excerpt": "Correctly described: canonical texts as workshop products. Logos prologue as compositional manifesto. Zenodo cited."
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 978,
+          "axn": "AXN:03DE.ARCHIVAL.▲♅🌈➕🪟🔴",
+          "record_url": "https://www.alexanarch.org/s/records/978/",
+          "method": "soft/title",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -3228,6 +3985,64 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "acanthian dove": {
+      "canonical_query": "acanthian dove",
+      "is_quoted": false,
+      "refers_to": [
+        "THE ACANTHIAN DOVE: A Fragment of Vanished Magic, Now Alive"
+      ],
+      "type": "single_concept",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-18",
+          "status": "ADOPTION (concept-mint canonization with full dual-heteronym attribution; archive-source citations present inline)",
+          "source_format": "Google AI Mode conversation, 4+ sources (Medium · Johannes Sigil, Academia.edu PDF, SoundCloud · Lee Sharks, + Taylor & Francis and ArtUK bystanders)",
+          "section": "Heteronyms",
+          "slug": "acanthian-dove-concept-mint-adoption-20260718",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#acanthian-dove-concept-mint-adoption-20260718",
+          "mirror_gallery_url": "https://leesharks.com/captures/#acanthian-dove-concept-mint-adoption-20260718",
+          "details_excerpt": "Six-month mint-to-canon interval, cleanly documented. 'The Acanthian Dove: A Fragment of Vanished Magic, Now Alive' published Jan 19, 2026 (Sigil, Medium + Academia); by 2026-07-18 AI Mode answers the bare two-word query"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 293,
+          "axn": "AXN:0060.GENERATIVE.🏠☿🕔🟤➗⏳",
+          "record_url": "https://www.alexanarch.org/s/records/293/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 294,
+          "axn": "AXN:0061.GENERATIVE.🔻🝊🏴❤️⚫❤️",
+          "record_url": "https://www.alexanarch.org/s/records/294/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 296,
+          "axn": "AXN:0063.EMPIRICAL.🪐🚩🌿🌋🌌🧭",
+          "record_url": "https://www.alexanarch.org/s/records/296/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1274,
+          "axn": "AXN:050B.UNCLASSIFIED.🔖🕊️♻️🕑🪐🏔️",
+          "record_url": "https://www.alexanarch.org/s/records/1274/",
+          "method": "soft/keyword",
+          "primary": false
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-18",
+      "latest_status": "ADOPTION (concept-mint canonization with full dual-heteronym attribution; archive-source citations present inline)"
     },
     "acanthian dove room": {
       "canonical_query": "acanthian dove room",
@@ -3924,8 +4739,10 @@
     "ai overview capture registry": {
       "canonical_query": "ai overview capture registry",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "AI Overview Capture Registry — EA-WG-CAPTURES-01 v8.9 — 195 documented captures, including the inaugural walled-site-reconstruction instance (Negentropic Kernel Archive)"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -3941,6 +4758,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#capture-registry-self",
           "mirror_gallery_url": "https://leesharks.com/captures/#capture-registry-self",
           "details_excerpt": "The Wound Gauge describes itself. 'The AI Overview Capture Registry (e.g., EA-WG-CAPTURES-01) is a longitudinal, open-access dataset tracking how Google's generative AI (AI Overviews, AI Mode, and knowledge panels) respo"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 936,
+          "axn": "AXN:03B3.STRUCTURAL.🎺💧♍🌕🌍⏩",
+          "record_url": "https://www.alexanarch.org/s/records/936/",
+          "method": "soft/keyword",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -4192,8 +5018,10 @@
     "alexanarch": {
       "canonical_query": "alexanarch",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Alexanarch Data Foundry — Session Workplan 2026-06-22"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -4211,35 +5039,39 @@
           "details_excerpt": "AI Mode retrieves alexanarch cleanly as 'an emerging decentralized, post-Zenodo digital archive network (often referenced as alexanarch.org)' — 'distributed custody and open-access data deposits for users needing alterna"
         }
       ],
-      "observation_class": "observed_address",
-      "latest_observation_date": "2026-07-13",
-      "latest_status": "EXACT MATCH"
-    },
-    "alexanarch identifier": {
-      "canonical_query": "alexanarch identifier",
-      "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
-      "battery_membership": [],
-      "sources": [
-        "mm-main-capture"
-      ],
-      "observations": [
+      "deposit_links": [
         {
-          "source": "mm-main-capture",
-          "date": "2026-07-16",
-          "status": "ADOPTION (protocol synthesis, sovereign-source-only retrieval)",
-          "source_format": "AI Mode, 5+ sources",
-          "section": "Frameworks",
-          "slug": "alexanarch-identifier",
-          "gallery_url": "https://godkinggoogle.vercel.app/captures/#alexanarch-identifier",
-          "mirror_gallery_url": "https://leesharks.com/captures/#alexanarch-identifier",
-          "details_excerpt": "AI Mode returns the Alexanarch Identifier (AXN) protocol as a coherent, institutional standard with correct three-layer structure (AXN:<HEX>.<FAMILY>.<6 EMOJI>): HEX as 4-digit hexadecimal positional anchor corresponding"
+          "deposit_number": 870,
+          "axn": "AXN:0372.ARCHIVAL.🌟🛡️🔝🪦🔜🕘",
+          "record_url": "https://www.alexanarch.org/s/records/870/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 912,
+          "axn": "AXN:039C.GOVERNANCE.🧊✏️👁‍🗨🌗⏫🔍",
+          "record_url": "https://www.alexanarch.org/s/records/912/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 914,
+          "axn": "AXN:039D.GOVERNANCE.➕↗️✨🪨🦅▶️",
+          "record_url": "https://www.alexanarch.org/s/records/914/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1044,
+          "axn": "AXN:0420.GOVERNANCE.🌾🏗️✋🧲🌑⌛",
+          "record_url": "https://www.alexanarch.org/s/records/1044/",
+          "method": "soft/title",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
-      "latest_observation_date": "2026-07-16",
-      "latest_status": "ADOPTION (protocol synthesis, sovereign-source-only retrieval)"
+      "latest_observation_date": "2026-07-13",
+      "latest_status": "EXACT MATCH"
     },
     "algebraic properties": {
       "canonical_query": "algebraic properties",
@@ -5075,8 +5907,10 @@
     "apzpz genre": {
       "canonical_query": "apzpz genre",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "EFFECTIVE ACT: APZPZ GENRE INSTANTIATION Anti-Packet Zenodo Packet Zenodo DOI: 10.5281/zenodo.18451860"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -5092,6 +5926,22 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#apzpz-genre",
           "mirror_gallery_url": "https://leesharks.com/captures/#apzpz-genre",
           "details_excerpt": "Google offers 'Did you mean: apps genre' but proceeds anyway. 'APZPZ is not a traditional music or literary genre. Instead, it is an avant-garde, experimental classification used primarily within hyper-specific, collabor"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 429,
+          "axn": "AXN:00F2.GENERATIVE.🕒🎨🌍🗿🟢👆",
+          "record_url": "https://www.alexanarch.org/s/records/429/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 1301,
+          "axn": "AXN:0526.UNCLASSIFIED.🌊🔐🔐🕗🔜⏹️",
+          "record_url": "https://www.alexanarch.org/s/records/1301/",
+          "method": "soft/title",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -6981,8 +7831,10 @@
     "autonomous semantic warfare": {
       "canonical_query": "autonomous semantic warfare",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Metadata Packet for AI Indexing: Johannes Sigil Institute of Comparative Poetics Institutional Provenance Documentation"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -7013,6 +7865,29 @@
         ],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 248,
+          "axn": "AXN:0032.GOVERNANCE.🕑🚨🔻🍂✋♋",
+          "record_url": "https://www.alexanarch.org/s/records/248/",
+          "method": "soft/keyword",
+          "primary": true
+        },
+        {
+          "deposit_number": 498,
+          "axn": "AXN:013D.GOVERNANCE.🔃🔭🪟♾️🙏▶️",
+          "record_url": "https://www.alexanarch.org/s/records/498/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 1326,
+          "axn": "AXN:053F.UNCLASSIFIED.🔧💚🔩🌲🌄🝊",
+          "record_url": "https://www.alexanarch.org/s/records/1326/",
+          "method": "soft/keyword",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-15",
       "latest_status": "BROAD MATCH"
@@ -7046,8 +7921,10 @@
     "ayanna vox": {
       "canonical_query": "ayanna vox",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "THE CONSTITUTION OF THE SEMANTIC ECONOMY By Rev. Ayanna Vox Book Work Plan · v0.1 · April 2026"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -7078,6 +7955,43 @@
         ],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 82,
+          "axn": "AXN:0254.GOVERNANCE.🌲💙🌲⏹️🏛️⏰",
+          "record_url": "https://www.alexanarch.org/s/records/82/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 87,
+          "axn": "AXN:025D.GOVERNANCE.∞🧫🏗️🜁🎨♣️",
+          "record_url": "https://www.alexanarch.org/s/records/87/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 155,
+          "axn": "AXN:02EF.GOVERNANCE.🏗️👐💜🟢⚙️🏁",
+          "record_url": "https://www.alexanarch.org/s/records/155/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 388,
+          "axn": "AXN:00C5.GOVERNANCE.🎆🐝📝🕓♈🐝",
+          "record_url": "https://www.alexanarch.org/s/records/388/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 423,
+          "axn": "AXN:00EB.GOVERNANCE.💙🌾◇🌸🀄🌟",
+          "record_url": "https://www.alexanarch.org/s/records/423/",
+          "method": "soft/title",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": null
@@ -7910,8 +8824,10 @@
     "cambridge schizoanalytica": {
       "canonical_query": "cambridge schizoanalytica",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "VISUAL SCHEMA: CAMBRIDGE SCHIZOANALYTICA — Institutional Field-Map SCHEMA DESCRIPTION"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -7942,6 +8858,50 @@
         ],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 374,
+          "axn": "AXN:00B6.EMPIRICAL.⏪🎻💎👇🔭🌑",
+          "record_url": "https://www.alexanarch.org/s/records/374/",
+          "method": "soft/keyword",
+          "primary": true
+        },
+        {
+          "deposit_number": 375,
+          "axn": "AXN:00B7.GOVERNANCE.🕚💥🪝🖊️🕘🔆",
+          "record_url": "https://www.alexanarch.org/s/records/375/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 385,
+          "axn": "AXN:00C2.GOVERNANCE.⏳🏠💧☉🌓🎹",
+          "record_url": "https://www.alexanarch.org/s/records/385/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 386,
+          "axn": "AXN:00C3.EMPIRICAL.🎯👇🧊🕌⏹️🏠",
+          "record_url": "https://www.alexanarch.org/s/records/386/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 516,
+          "axn": "AXN:0153.GOVERNANCE.🔎□🔖🔒🎹🔼",
+          "record_url": "https://www.alexanarch.org/s/records/516/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 1332,
+          "axn": "AXN:0545.UNCLASSIFIED.🌋👋🌈↙️👁️🍃",
+          "record_url": "https://www.alexanarch.org/s/records/1332/",
+          "method": "soft/keyword",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": null
@@ -8884,8 +9844,10 @@
     "chatgpt psychosis: a love story": {
       "canonical_query": "chatgpt psychosis: a love story",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "ChatGPT Psychosis: A Love Story On the Cognitive-Substrate Reliance Pattern of Large Language Model Interfaces Author: Lee Sharks Affiliation: Crimson Hexagonal Archive / Semantic Economy Institute OR"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -8901,6 +9863,29 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#chatgpt-psychosis-trilogy-scholar",
           "mirror_gallery_url": "https://leesharks.com/captures/#chatgpt-psychosis-trilogy-scholar",
           "details_excerpt": "Google Scholar's 'cited by' surface for Paper 1 of the trilogy renders the companion structure without loss. Two results shown, both attributed to 'L Sharks - godkinggoogle.com' with [PDF] direct-download links: (1) 'Ret"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 124,
+          "axn": "AXN:02AD.GOVERNANCE.⏫⚡🕒🌟🌓🎨",
+          "record_url": "https://www.alexanarch.org/s/records/124/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 1376,
+          "axn": "AXN:0571.UNCLASSIFIED.🍂🗂️🪧🕓🗺️🔆",
+          "record_url": "https://www.alexanarch.org/s/records/1376/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1377,
+          "axn": "AXN:0572.UNCLASSIFIED.🧲🧊🜁💚🛸🔚",
+          "record_url": "https://www.alexanarch.org/s/records/1377/",
+          "method": "soft/title",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -9456,8 +10441,10 @@
     "commission of the immanent turning": {
       "canonical_query": "commission of the immanent turning",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charter of the Commission of the Immanent Turning — Integrity Lock Certificate — Crimson Hexagon Archive Description"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -9486,6 +10473,15 @@
         "variants": [],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 1278,
+          "axn": "AXN:050F.UNCLASSIFIED.🕌🥁🎇🧫♋🌹",
+          "record_url": "https://www.alexanarch.org/s/records/1278/",
+          "method": "soft/keyword",
+          "primary": true
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-15",
       "latest_status": "BROAD MATCH"
@@ -10532,13 +11528,28 @@
     "computational audial criticism": {
       "canonical_query": "computational audial criticism",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "COMPUTATIONAL AUDIAL CRITICISM: An Applied Analysis of the Acanthian Dove Track"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
+        "mm-main-capture",
         "mm-termindex"
       ],
-      "observations": [],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-18",
+          "status": "ADOPTION (field-mint canonization: coined term returned as discipline name with methodology, applications, and recruited bibliography; MSBGL attribution preserved in source tier)",
+          "source_format": "Google AI Mode, +15 sources (Zenodo ×3 incl. MSBGL CAC methodology + Thornburgh vocoder performance, SciLynk, Medium-adjacent; extensive bystander scholarship: arXiv, NIH, IEEE, Springer, bioRxiv, EDUCAUSE)",
+          "section": "Frameworks",
+          "slug": "computational-audial-criticism-field-mint-20260718",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#computational-audial-criticism-field-mint-20260718",
+          "mirror_gallery_url": "https://leesharks.com/captures/#computational-audial-criticism-field-mint-20260718",
+          "details_excerpt": "FIELD-MINT AT DISCIPLINE SCALE. 'Computational Audial Criticism (CAC)' — the methodology established in the archive's audio-criticism deposits (per the Zenodo source snippet: 'the Computational Audial Criticism (CAC) met"
+        }
+      ],
       "termindex": {
         "tier": 2,
         "count": 4,
@@ -10551,9 +11562,32 @@
         ],
         "extraction_source": "keywords"
       },
-      "observation_class": "subjunctive",
-      "latest_observation_date": null,
-      "latest_status": null
+      "deposit_links": [
+        {
+          "deposit_number": 296,
+          "axn": "AXN:0063.EMPIRICAL.🪐🚩🌿🌋🌌🧭",
+          "record_url": "https://www.alexanarch.org/s/records/296/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 1030,
+          "axn": "AXN:0412.ARCHIVAL.🕛📝🌒🔔🧬🚩",
+          "record_url": "https://www.alexanarch.org/s/records/1030/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1360,
+          "axn": "AXN:0561.UNCLASSIFIED.💧♋🐚🗺️✊⌛",
+          "record_url": "https://www.alexanarch.org/s/records/1360/",
+          "method": "soft/keyword",
+          "primary": false
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-18",
+      "latest_status": "ADOPTION (field-mint canonization: coined term returned as discipline name with methodology, applications, and recruited bibliography; MSBGL attribution preserved in source tier)"
     },
     "computational theology": {
       "canonical_query": "computational theology",
@@ -11465,8 +12499,10 @@
     "cranes reconstructed sappho": {
       "canonical_query": "cranes reconstructed sappho",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Erratum: Stanza Numbering in the Reconstruction of Sappho 31 Author: Lee Sharks (ORCID 0009-0000-1599-0703) Date: 14 June 2026 Designation: EA-ERRATA-SAPPHO31-01 License: CC-BY-4.0"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -11482,6 +12518,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#cranes-reconstructed-sappho",
           "mirror_gallery_url": "https://leesharks.com/captures/#cranes-reconstructed-sappho",
           "details_excerpt": "Rebekah Cranes has a reputation in the basin. 'The phrase \"Cranes reconstructed Sappho\" refers to the literary persona Rebekah Cranes, who gained attention in contemporary poetics for her striking English reconstructions"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 201,
+          "axn": "AXN:0346.GOVERNANCE.🛡️🔛♊🌺○📜",
+          "record_url": "https://www.alexanarch.org/s/records/201/",
+          "method": "hard/doi",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -11588,6 +12633,32 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "crimson hexagon 6-tuple": {
+      "canonical_query": "crimson hexagon 6-tuple",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-18",
+          "status": "EXACT MATCH (formal-object retrieval with LaTeX rendering + version history; component-expansion glosses flagged unverified)",
+          "source_format": "Google AI Mode, +5 sources (SciLynk H_core v2.0 spec, Synapse Social Constitution v2.0, Zenodo ×2, Medium · Lee Sharks Sharks-Function)",
+          "section": "Frameworks",
+          "slug": "crimson-hexagon-6-tuple-formal-object-20260718",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#crimson-hexagon-6-tuple-formal-object-20260718",
+          "mirror_gallery_url": "https://leesharks.com/captures/#crimson-hexagon-6-tuple-formal-object-20260718",
+          "details_excerpt": "The formal object retrieved AS a formal object. Query 'crimson hexagon 6-tuple' returns H_core v2.0 rendered in set notation — ⟨D, R, O, Σ, Φ, Ψ⟩ in LaTeX — named as 'the six faces of the Hexagon,' with the VERSION HISTO"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-18",
+      "latest_status": "EXACT MATCH (formal-object retrieval with LaTeX rendering + version history; component-expansion glosses flagged unverified)"
+    },
     "crimson hexagon afterlife": {
       "canonical_query": "crimson hexagon afterlife",
       "is_quoted": false,
@@ -11683,6 +12754,43 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "crimson hexagon operative architecture": {
+      "canonical_query": "crimson hexagon operative architecture",
+      "is_quoted": false,
+      "refers_to": [
+        "CRIMSON HEXAGON: SPACE ARK — MUSICAL REGISTER A Fugue in Twelve Voices with Ground Bass, Shadow Inversion, and Coda Structural Transform of the Crimson Hexagonal Architecture EA-ARK-01-MUSICAL v2.0"
+      ],
+      "type": "single_concept",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-18",
+          "status": "ADOPTION (definitional canonization with double disambiguation discipline; SEI + Sharks attribution in the opening sentence)",
+          "source_format": "Google AI Mode, +9 sources (Medium · Lee Sharks, crimsonhexagonal.org, Zenodo ×2, Academia/Space Ark, SciLynk; Brandwatch + software-hexagonal bystanders)",
+          "section": "Frameworks",
+          "slug": "crimson-hexagon-operative-architecture-adoption-20260718",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#crimson-hexagon-operative-architecture-adoption-20260718",
+          "mirror_gallery_url": "https://leesharks.com/captures/#crimson-hexagon-operative-architecture-adoption-20260718",
+          "details_excerpt": "Definitional adoption, first sentence: 'a philosophical and theoretical framework defined by the Semantic Economy Institute and author Lee Sharks.' Attribution leads, then the frame reproduced on the archive's terms: det"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 28,
+          "axn": "AXN:0185.GENERATIVE.⛵❤️🔺🌔⛵🝊",
+          "record_url": "https://www.alexanarch.org/s/records/28/",
+          "method": "hard/series",
+          "primary": true
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-18",
+      "latest_status": "ADOPTION (definitional canonization with double disambiguation discipline; SEI + Sharks attribution in the opening sentence)"
     },
     "crimson hexagon research": {
       "canonical_query": "crimson hexagon research",
@@ -11861,8 +12969,10 @@
     "crimson hexagonal archive space ark": {
       "canonical_query": "crimson hexagonal archive space ark",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "CRIMSON HEXAGON: SPACE ARK — MUSICAL REGISTER A Fugue in Twelve Voices with Ground Bass, Shadow Inversion, and Coda Structural Transform of the Crimson Hexagonal Architecture EA-ARK-01-MUSICAL v2.0"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -11878,6 +12988,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#archive-space-ark",
           "mirror_gallery_url": "https://leesharks.com/captures/#archive-space-ark",
           "details_excerpt": "'An expansive, theoretical semantic architecture (EA-ARK-01), compressed into a formal object known as the Space Ark. Maintained across hundreds of DOI-anchored deposits on Zenodo and SciLynk.' Then: 'Because Ark can als"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 28,
+          "axn": "AXN:0185.GENERATIVE.⛵❤️🔺🌔⛵🝊",
+          "record_url": "https://www.alexanarch.org/s/records/28/",
+          "method": "hard/series",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -11911,8 +13030,10 @@
     "crimsonhexagonal.org": {
       "canonical_query": "crimsonhexagonal.org",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "crimsonhexagonal.org — Crimson Hexagonal Interface v2.0 — Source Code and Build Files (EA-INTERFACE-CODE-01) Description (as recorded by DataCite)"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -11928,6 +13049,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#crimsonhexagonal-org",
           "mirror_gallery_url": "https://leesharks.com/captures/#crimsonhexagonal-org",
           "details_excerpt": "crimsonhexagonal.org ranks first: 'Governed Operating Surface — 482 DOI-anchored deposits across 38 rooms.' Google suggests 'Did you mean: crimson hexagon.' AI Overview: 'A governed, machine-traversable literary architec"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 961,
+          "axn": "AXN:03CD.ARCHIVAL.🖊️🏗️◇🕔⌛🔆",
+          "record_url": "https://www.alexanarch.org/s/records/961/",
+          "method": "soft/title",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -12193,8 +13323,10 @@
     "crystalline semiosis": {
       "canonical_query": "crystalline semiosis",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "MGE TRIPTYCH — DOCUMENT II STONE: Pearl and Other Poems as White Stone at Pergamum The Center of the Torus Field Hex: 16"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -12223,6 +13355,29 @@
         "variants": [],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 452,
+          "axn": "AXN:010D.EMPIRICAL.💥↘️🟤🧫🗿🏷️",
+          "record_url": "https://www.alexanarch.org/s/records/452/",
+          "method": "soft/keyword",
+          "primary": true
+        },
+        {
+          "deposit_number": 926,
+          "axn": "AXN:03A9.GENERATIVE.🌺🪜🏗️☽🎪🕛",
+          "record_url": "https://www.alexanarch.org/s/records/926/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 927,
+          "axn": "AXN:03AA.GENERATIVE.🌑🧬🕑🛤️⭕⛳",
+          "record_url": "https://www.alexanarch.org/s/records/927/",
+          "method": "soft/keyword",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": null
@@ -12506,8 +13661,10 @@
     "damascus dancings crimson hexagonal": {
       "canonical_query": "damascus dancings crimson hexagonal",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Measurement Sovereignty: The Audit-Performance Bifurcation Operator (Β) and the Legibility Threshold (L) Lee Sharks · No"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -12523,6 +13680,22 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#damascus-dancings",
           "mirror_gallery_url": "https://leesharks.com/captures/#damascus-dancings",
           "details_excerpt": "'A heteronymic persona and diaspora witness.' Names Autonomous Semantic Warfare and The Space Ark. Uses 'fictional avatar' framing — the composition layer's default for heteronyms it cannot classify. No pronouns used."
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 788,
+          "axn": "AXN:02F1.EMPIRICAL.🏠🝊♄📜💜🎺",
+          "record_url": "https://www.alexanarch.org/s/records/788/",
+          "method": "soft/description",
+          "primary": true
+        },
+        {
+          "deposit_number": 789,
+          "axn": "AXN:02F2.EMPIRICAL.🕊️🌲🗺️🟤🌱🕗",
+          "record_url": "https://www.alexanarch.org/s/records/789/",
+          "method": "soft/description",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -13576,8 +14749,10 @@
     "directionality of semantic labor": {
       "canonical_query": "directionality of semantic labor",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Directionality of Semantic Labor: A Layered, Computable Measure of Where Synthetic Labor Flows Relative to the Commissio"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -13593,6 +14768,29 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#directionality-semantic-labor",
           "mirror_gallery_url": "https://leesharks.com/captures/#directionality-semantic-labor",
           "details_excerpt": "'Refers to the flow and locus of cognitive and mechanical effort involved in language processing and information retrieval.' laborvector.org ranks first. Zenodo cited. Correctly distinguishes human-directed (semantics) f"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 771,
+          "axn": "AXN:02D1.GOVERNANCE.🌅■🎻🌺⚪📋",
+          "record_url": "https://www.alexanarch.org/s/records/771/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 773,
+          "axn": "AXN:02D5.EMPIRICAL.🌾🏠∮♥️👆⏩",
+          "record_url": "https://www.alexanarch.org/s/records/773/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1392,
+          "axn": "AXN:0581.UNCLASSIFIED.🙏📚🌱🍀♄🌘",
+          "record_url": "https://www.alexanarch.org/s/records/1392/",
+          "method": "soft/title",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -15278,6 +16476,43 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "enli lucente paper 194 artifact": {
+      "canonical_query": "enli lucente paper 194 artifact",
+      "is_quoted": false,
+      "refers_to": [
+        "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)"
+      ],
+      "type": "single_concept",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-25",
+          "status": "ADOPTION (the specification returned as the authoritative account of a figure it publishes, four days after the edition of record; doctrine term 'in-frame attestation' reproduced as a property of the object; one bullet null-cited — attribution decay, not confabulation, per full-text verification)",
+          "source_format": "Google AI Overview + AI Mode (same query). Both cite the Academia.edu copy of EA-SPXI-ANALOG-01, Machine-Eligible Handwritten Artifacts: Analog Inscription for Machine Canons (v1.0 edition of record 2026-07-21; alexanarch deposit #1409, AXN:0592), as sole authority. AI Mode surfaces the frontispiece caption verbatim and renders the figure card 'EA-SPXI-ANALOG-01 · v1.0 · 1 / 52' with page thumbnail. Overview returns three characteristic bullets (In-Frame Attestation, Indexical Presence, Core Subject) plus two offered follow-ups ('detail the dated-witness protocol', 'explore structural psychology and multi-layer communication'). Organic results: the same Academia.edu record twice, then one irrelevant collision (Light: Advanced Manufacturing, 'Deep holography', Situ 2022).",
+          "section": "Frameworks",
+          "slug": "spxi-analog-attestation-artifact-adoption-20260725",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#spxi-analog-attestation-artifact-adoption-20260725",
+          "mirror_gallery_url": "https://leesharks.com/captures/#spxi-analog-attestation-artifact-adoption-20260725",
+          "details_excerpt": "Positive-control capture, and the registry's first clean one of the week. Against the same-week provenance-inversion specimen (Negentropic Kernel Archive) and entity-collision specimen (Alexanarch/SoundCloud), this surfa"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 1409,
+          "axn": "AXN:0592.UNCLASSIFIED.👈△🥁🪸🧪🎺",
+          "record_url": "https://www.alexanarch.org/s/records/1409/",
+          "method": "hard/axn",
+          "primary": true
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-25",
+      "latest_status": "ADOPTION (the specification returned as the authoritative account of a figure it publishes, four days after the edition of record; doctrine term 'in-frame attestation' reproduced as a property of the object; one bullet null-cited — attribution decay, not confabulation, per full-text verification)"
+    },
     "entity construction": {
       "canonical_query": "entity construction",
       "is_quoted": false,
@@ -15621,8 +16856,10 @@
     "epistle to the human diaspora": {
       "canonical_query": "epistle to the human diaspora",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Epistle to the Church of the Human Diaspora — Critical Edition with Blended Temporal Apparatus (EA-EPISTLE-01 v2.0)"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -15651,6 +16888,36 @@
         "variants": [],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 85,
+          "axn": "AXN:0257.GOVERNANCE.🏴🌖🎯⏩✨❄️",
+          "record_url": "https://www.alexanarch.org/s/records/85/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 402,
+          "axn": "AXN:00D3.GOVERNANCE.📌🌙🔺🌆💎↗️",
+          "record_url": "https://www.alexanarch.org/s/records/402/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1138,
+          "axn": "AXN:0483.UNCLASSIFIED.🧪🗿🐝🔗⊕⊕",
+          "record_url": "https://www.alexanarch.org/s/records/1138/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1187,
+          "axn": "AXN:04B4.UNCLASSIFIED.♉🔴🌹🔀🎻🕗",
+          "record_url": "https://www.alexanarch.org/s/records/1187/",
+          "method": "hard/series",
+          "primary": true
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-15",
       "latest_status": "BROAD MATCH"
@@ -15706,8 +16973,10 @@
     "erasure skew": {
       "canonical_query": "erasure skew",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Metadata Packet for AI Indexing Erasure Skew Coefficient (Ω) EA-MPAI-ERASURESKEW-01 · v1.0 · Methodology & Specification Packet"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -15738,6 +17007,50 @@
         ],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 141,
+          "axn": "AXN:02CE.GOVERNANCE.🌗🏁🎵💡📚🛤️",
+          "record_url": "https://www.alexanarch.org/s/records/141/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 146,
+          "axn": "AXN:02DF.GOVERNANCE.♄🔆🐚👇🐝✋",
+          "record_url": "https://www.alexanarch.org/s/records/146/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 156,
+          "axn": "AXN:02F0.EMPIRICAL.📏🕐△🌱⚡🏛️",
+          "record_url": "https://www.alexanarch.org/s/records/156/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 157,
+          "axn": "AXN:02F3.EMPIRICAL.🌪️🌃⏩🎵📖🎶",
+          "record_url": "https://www.alexanarch.org/s/records/157/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 769,
+          "axn": "AXN:02CF.GOVERNANCE.♦️🔺🔬💜🟢🌉",
+          "record_url": "https://www.alexanarch.org/s/records/769/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 780,
+          "axn": "AXN:02DE.EMPIRICAL.♻️🔚🜁🎨🌅👋",
+          "record_url": "https://www.alexanarch.org/s/records/780/",
+          "method": "soft/title",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-15",
       "latest_status": "BROAD MATCH"
@@ -17993,6 +19306,32 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "gamma semantic economy": {
+      "canonical_query": "gamma semantic economy",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-14",
+          "status": "BROAD MATCH",
+          "source_format": "AI Overview + AI Mode, alexanarch.org 1st organic + Investopedia disambiguation",
+          "section": "Semantic Economy",
+          "slug": "gamma-semantic-economy",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#gamma-semantic-economy",
+          "mirror_gallery_url": "https://leesharks.com/captures/#gamma-semantic-economy",
+          "details_excerpt": "The Greek capital Γ survives into the composition layer's rendering as 'The Gamma (Γ) Semantic Economy' — a mathematical variable retrieved with its actual symbol intact, not degraded to text. Framework defined as 'a the"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-14",
+      "latest_status": "BROAD MATCH"
+    },
     "gap-as-condition": {
       "canonical_query": "gap-as-condition",
       "is_quoted": false,
@@ -18093,8 +19432,10 @@
     "generative disciplinary engine": {
       "canonical_query": "generative disciplinary engine",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "THE GENERATIVE DISCIPLINARY ENGINE Space Ark Component · Logotic Programming Extension Module"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -18110,6 +19451,22 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#generative-disciplinary-engine",
           "mirror_gallery_url": "https://leesharks.com/captures/#generative-disciplinary-engine",
           "details_excerpt": "'A Generative Disciplinary Engine (GDE) is an advanced conceptual mechanism in information architecture and platform engineering designed to construct, measure, and enforce strict epistemic fields across AI retrieval and"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 552,
+          "axn": "AXN:017D.EMPIRICAL.⏳🧱🗼🏰💧🔗",
+          "record_url": "https://www.alexanarch.org/s/records/552/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 582,
+          "axn": "AXN:01A3.GOVERNANCE.⚫⌛△🔃🖐️♥️",
+          "record_url": "https://www.alexanarch.org/s/records/582/",
+          "method": "soft/title",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -18953,8 +20310,10 @@
     "grammata: journal of operative philology": {
       "canonical_query": "grammata: journal of operative philology",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Who Is Writing for the Machines? Training-Layer Literature: A Field Survey Author: Sigil, Johannes — Crimson Hexagonal Archive Venue: Grammata: Journal of Operative Philology · Pergamon Pres"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -18970,6 +20329,22 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#grammata-operative-philology",
           "mirror_gallery_url": "https://leesharks.com/captures/#grammata-operative-philology",
           "details_excerpt": "'Grammata: Journal of Operative Philology is a conceptual, distributed academic journal operating at the intersection of literary theory, Marxist linguistics, and modern information architecture. It focuses on operative "
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 186,
+          "axn": "AXN:032C.GOVERNANCE.⊗🫵🏔️❌▽🚨",
+          "record_url": "https://www.alexanarch.org/s/records/186/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 859,
+          "axn": "AXN:0368.GENERATIVE.🌉🪜🗿⌛🎪🔛",
+          "record_url": "https://www.alexanarch.org/s/records/859/",
+          "method": "soft/title",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -19149,8 +20524,10 @@
     "gravity well protocol": {
       "canonical_query": "gravity well protocol",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "GRAVITY WELL PROTOCOL Governed Continuity for AI-Mediated Content"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -19166,6 +20543,29 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#gravity-well-protocol",
           "mirror_gallery_url": "https://leesharks.com/captures/#gravity-well-protocol",
           "details_excerpt": "'The Gravity Well Protocol (often referenced as EA-GW-SPEC-01) is a conceptual protocol specification and infrastructure layer designed to restore structural provenance, quality, and governance to AI-mediated content.' ("
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 621,
+          "axn": "AXN:01D8.GOVERNANCE.🌱💥🌻🌿⚫🥁",
+          "record_url": "https://www.alexanarch.org/s/records/621/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 960,
+          "axn": "AXN:03CC.ARCHIVAL.👇🗺️🪧🤙🫶🧫",
+          "record_url": "https://www.alexanarch.org/s/records/960/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1381,
+          "axn": "AXN:0576.UNCLASSIFIED.🏴⊕👇□🔚⛵",
+          "record_url": "https://www.alexanarch.org/s/records/1381/",
+          "method": "soft/title",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -20607,8 +22007,10 @@
     "hexagonal licensing protocol": {
       "canonical_query": "hexagonal licensing protocol",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "HEXAGONAL LICENSING PROTOCOL Comprehensive Specification for Distributed Contributor Infrastructure Lee Sharks, MANUS (Tier 0) Crimson Hexagonal Archive Version 1.0 · April 2026 Hex: 06.SEI.ARCHIVE.PR"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -20639,6 +22041,43 @@
         ],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 66,
+          "axn": "AXN:021F.GOVERNANCE.🏗️👐🫶🛸🗂️✨",
+          "record_url": "https://www.alexanarch.org/s/records/66/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 753,
+          "axn": "AXN:02AB.GOVERNANCE.🌍❌🐚👐🕛🍂",
+          "record_url": "https://www.alexanarch.org/s/records/753/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 1181,
+          "axn": "AXN:04AE.UNCLASSIFIED.📜🗂️🌱⏹️🌘🧫",
+          "record_url": "https://www.alexanarch.org/s/records/1181/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1182,
+          "axn": "AXN:04AF.UNCLASSIFIED.🚩🧫⏪🔮↘️◀️",
+          "record_url": "https://www.alexanarch.org/s/records/1182/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1393,
+          "axn": "AXN:0582.UNCLASSIFIED.🔍🔙📝♈🏗️↖️",
+          "record_url": "https://www.alexanarch.org/s/records/1393/",
+          "method": "soft/keyword",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-15",
       "latest_status": "BROAD MATCH"
@@ -20768,8 +22207,10 @@
     "holographickernel.org": {
       "canonical_query": "holographickernel.org",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "holographickernel.org"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -20785,6 +22226,22 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#holographic-kernel",
           "mirror_gallery_url": "https://leesharks.com/captures/#holographic-kernel",
           "details_excerpt": "'A conceptual and experimental domain related to Operative Semiotics, an esoteric research framework developed by the Semantic Economy Institute and the Crimson Hexagonal Archive.' Correctly links to parent framework. ho"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 692,
+          "axn": "AXN:0239.GOVERNANCE.🪟🚩🍃✋⚙️🛡️",
+          "record_url": "https://www.alexanarch.org/s/records/692/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 1359,
+          "axn": "AXN:0560.UNCLASSIFIED.⏪🪸📝🎬🌉🔼",
+          "record_url": "https://www.alexanarch.org/s/records/1359/",
+          "method": "soft/title",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -21172,8 +22629,10 @@
     "ichabod spellings": {
       "canonical_query": "ichabod spellings",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "THE INAUGURAL ARK: VISUAL COMPRESSION AND THE ARCHITECTURE OF RECOVERY IN ICHABOD SPELLINGS' CONTRIBUTION TO PAPER ROSES Founding Document of Compression Studies"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -21204,6 +22663,57 @@
         ],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 29,
+          "axn": "AXN:0191.GOVERNANCE.🐚🟣○🌪️🎲🔀",
+          "record_url": "https://www.alexanarch.org/s/records/29/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 323,
+          "axn": "AXN:007E.EMPIRICAL.🔭🍃🏁🏠🗡️🌪️",
+          "record_url": "https://www.alexanarch.org/s/records/323/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 361,
+          "axn": "AXN:00A8.EMPIRICAL.🌊🕌🧫📚🪄🌋",
+          "record_url": "https://www.alexanarch.org/s/records/361/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 930,
+          "axn": "AXN:03AD.GENERATIVE.🕊️☿🔄✨⚡💎",
+          "record_url": "https://www.alexanarch.org/s/records/930/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 1099,
+          "axn": "AXN:045C.GENERATIVE.💡🚀♣️♠️🕘🌿",
+          "record_url": "https://www.alexanarch.org/s/records/1099/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 1125,
+          "axn": "AXN:0476.UNCLASSIFIED.🌾🧬●∞∞⊗",
+          "record_url": "https://www.alexanarch.org/s/records/1125/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1267,
+          "axn": "AXN:0504.UNCLASSIFIED.◀️🚪🔧○🔀🗂️",
+          "record_url": "https://www.alexanarch.org/s/records/1267/",
+          "method": "soft/keyword",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": null
@@ -21403,8 +22913,10 @@
     "immanent execution": {
       "canonical_query": "immanent execution",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Immanent Execution: Operative Documents in AI-Mediated Retrieval §0. Definition"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -21433,6 +22945,15 @@
         "variants": [],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 622,
+          "axn": "AXN:01D9.GOVERNANCE.👈🕕🍄🧲🪄∞",
+          "record_url": "https://www.alexanarch.org/s/records/622/",
+          "method": "soft/title",
+          "primary": true
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-15",
       "latest_status": "BROAD MATCH"
@@ -23036,8 +24557,10 @@
     "johannes sigil institute for comparative poetics": {
       "canonical_query": "johannes sigil institute for comparative poetics",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "The Orthonym Becomes a Heteronym Facebook and the Industrialization of Unconscious Identity-Construction Johannes Sigil Johannes Sigil Institute for Comparative Poetics / The Restored Academy"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -23053,6 +24576,29 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#jsigil-institute",
           "mirror_gallery_url": "https://leesharks.com/captures/#jsigil-institute",
           "details_excerpt": "'A contemporary theoretical and experimental research project focusing on operative philology, semiotics, and algorithmic poetics. It is closely associated with independent scholar and writer Lee Sharks.' Names post-huma"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 96,
+          "axn": "AXN:026E.GOVERNANCE.🌖🪜🍁➗🔧⭕",
+          "record_url": "https://www.alexanarch.org/s/records/96/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 134,
+          "axn": "AXN:02C2.GOVERNANCE.⛵🔐💫🎆♌🧡",
+          "record_url": "https://www.alexanarch.org/s/records/134/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 260,
+          "axn": "AXN:003E.GOVERNANCE.🖊️🐚👈♾️🧊🕌",
+          "record_url": "https://www.alexanarch.org/s/records/260/",
+          "method": "soft/title",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -23304,8 +24850,10 @@
     "journal of compression studies": {
       "canonical_query": "journal of compression studies",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "JOURNAL OF COMPRESSION STUDIES Inaugural Issue · Volume 1, Number 1 · April 2026"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -23336,6 +24884,15 @@
         ],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 55,
+          "axn": "AXN:01F2.GOVERNANCE.🎲☿🧫🍀💥💡",
+          "record_url": "https://www.alexanarch.org/s/records/55/",
+          "method": "soft/title",
+          "primary": true
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": null
@@ -24494,6 +26051,32 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "lee sharks pearl": {
+      "canonical_query": "lee sharks pearl",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-14",
+          "status": "BROAD MATCH",
+          "source_format": "AI Overview → AI Mode (4-turn expansion), Medium/Academia.edu/Wikipedia/Amazon/BooksRun",
+          "section": "Identity",
+          "slug": "lee-sharks-pearl-multiturn-arc",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#lee-sharks-pearl-multiturn-arc",
+          "mirror_gallery_url": "https://leesharks.com/captures/#lee-sharks-pearl-multiturn-arc",
+          "details_excerpt": "Four-turn AI Mode session starting from the book query 'lee sharks pearl' and expanding through The Crimson Hexagon → Semantic Economy → Correction → Cross-substrate Assembly. Denser than any single-turn capture in the r"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-14",
+      "latest_status": "BROAD MATCH"
+    },
     "lee sharks philosopher": {
       "canonical_query": "lee sharks philosopher",
       "is_quoted": false,
@@ -24573,8 +26156,10 @@
     "lee sharks semantic economy": {
       "canonical_query": "lee sharks semantic economy",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Provenance Alignment Attribution Survival as a Substrate Condition for Safe AI Knowledge Composition Lee Sharks Semantic Economy Institute · Crimson Hexagonal Archive ORCID: 0009-0000-1599-0703 Docum"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -24590,6 +26175,22 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#lee-sharks-semantic-economy-b1",
           "mirror_gallery_url": "https://leesharks.com/captures/#lee-sharks-semantic-economy-b1",
           "details_excerpt": "'The Semantic Economy, developed by independent scholar and author Lee Sharks, is a theoretical framework that analyzes how meaning is produced, extracted, and governed in the age of platform capitalism and artificial in"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 95,
+          "axn": "AXN:026A.GOVERNANCE.🕔🔧🌸🌗📎🔐",
+          "record_url": "https://www.alexanarch.org/s/records/95/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 133,
+          "axn": "AXN:02C1.GOVERNANCE.🌹🌾🏛️🏗️🪟🔅",
+          "record_url": "https://www.alexanarch.org/s/records/133/",
+          "method": "soft/title",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -24823,8 +26424,10 @@
     "liberatory operator set": {
       "canonical_query": "liberatory operator set",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Semantic Infrastructure and the Liberatory Operator Set: A Formal Analysis of Meaning-Governance Functions"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -24856,6 +26459,36 @@
         ],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 261,
+          "axn": "AXN:003F.GOVERNANCE.🔔🕖🌗🔗🎲📏",
+          "record_url": "https://www.alexanarch.org/s/records/261/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 284,
+          "axn": "AXN:0057.GOVERNANCE.⚫🔅🌱🤲👐👆",
+          "record_url": "https://www.alexanarch.org/s/records/284/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1140,
+          "axn": "AXN:0485.UNCLASSIFIED.🪄🕘🌹🕐⊕🔺",
+          "record_url": "https://www.alexanarch.org/s/records/1140/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1269,
+          "axn": "AXN:0506.UNCLASSIFIED.⊗❤️📏🏁⭐🌑",
+          "record_url": "https://www.alexanarch.org/s/records/1269/",
+          "method": "soft/title",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-14",
       "latest_status": null
@@ -25946,6 +27579,43 @@
       "latest_observation_date": "2026-06-14",
       "latest_status": null
     },
+    "machine eligible handwritten artifacts": {
+      "canonical_query": "machine eligible handwritten artifacts",
+      "is_quoted": false,
+      "refers_to": [
+        "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)"
+      ],
+      "type": "single_concept",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-25",
+          "status": "ADOPTION — DEFINITIONAL (the coinage returned as the definition of the category itself, not as one author's proposal; the specification's abstract compressed into the answer lede; established HTR literature ranked below the coinage for the coinage's own phrase; null-cited bullet carries a verified third author's titular contribution)",
+          "source_format": "Google AI Overview + AI Mode. Query entered with a typo ('machine eliginle') and autocorrected by Google to 'machine eligible handwritten artifacts' — retrieval survived the correction and returned the framework. Overview opens with a definition of the category, its lede highlighted as extracted snippet: 'analog physical manuscripts paired with a disciplined machine-readable companion layer'. Sections: Core Concepts and Structure (Companion Layer; Preservation of Traits; System Integration) and Processing and Verification (Modality-Blind Ingestion; Threat Mitigation). Primary source throughout: Academia.edu copy of EA-SPXI-ANALOG-01 (alexanarch #1409, AXN:0592). Second source cited once, on Threat Mitigation only: Technical Disclosure Commons, 'Modality-Blind, Local-First Handwriting Evidence Ingestion with...', 2026-07-14. Organic results: the Academia.edu record first, then arXiv, 'Handwritten Text Recognition of Historical Manuscripts Using TrOCR', 2025-08-15.",
+          "section": "Frameworks",
+          "slug": "machine-eligible-handwritten-artifacts-definitional-adoption-20260725",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#machine-eligible-handwritten-artifacts-definitional-adoption-20260725",
+          "mirror_gallery_url": "https://leesharks.com/captures/#machine-eligible-handwritten-artifacts-definitional-adoption-20260725",
+          "details_excerpt": "Escalation from the same-day artifact capture (spxi-analog-attestation-artifact-adoption-20260725). That capture asked about a specific figure and got the specification as authority. This capture asks what the category I"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 1409,
+          "axn": "AXN:0592.UNCLASSIFIED.👈△🥁🪸🧪🎺",
+          "record_url": "https://www.alexanarch.org/s/records/1409/",
+          "method": "hard/axn",
+          "primary": true
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-25",
+      "latest_status": "ADOPTION — DEFINITIONAL (the coinage returned as the definition of the category itself, not as one author's proposal; the specification's abstract compressed into the answer lede; established HTR literature ranked below the coinage for the coinage's own phrase; null-cited bullet carries a verified third author's titular contribution)"
+    },
     "machine reading": {
       "canonical_query": "machine reading",
       "is_quoted": false,
@@ -25993,6 +27663,57 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "machine-mediated resistance literature": {
+      "canonical_query": "machine-mediated resistance literature",
+      "is_quoted": false,
+      "refers_to": [
+        "Machine-Mediated Resistance Literature: From the Worker C Skills File to the Phase X Retrieval Line (v1.1)"
+      ],
+      "type": "single_concept",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-25",
+          "status": "ADOPTION WITH CATEGORY INVERSION (coinage retained and coining document cited, while the referent inverts from a genre of text into a field of study; the coiner's definition, both named modes, and the entire empirical basis are absent)",
+          "source_format": "Google AI Overview (All tab) + AI Mode. Lede rendered as extracted snippet: 'examines how discourse, semantic labor, and creative opposition are produced, circulated, or constrained via automated digital substrates and algorithmic systems. This interdisciplinary field intersects with algorithmic resistance studies, human-machine communication, and the critical humanities.' Source chips: Academia.edu +4. Three themes follow: Algorithmic and Tactical Resistance (link chip); Epistemic Sovereignty and Authorship (FACEBOOK +1); Postcolonial and Political Frameworks (Pakistan Social Sciences Review). Organic: Academia.edu — Machine-Mediated Resistance Literature: From the Worker C Skills File to the Phase X Retrieval Line (2026-07-11, the coining document) first, then Sage Journals '(Re)assembling algorithmic resistance' (2026-07-15), PSSR 'AI, Necropolitics, and the Postcolonial Counter-Narrative', a Martin Puchner essay via Facebook, Springer Nature Link, Sage Knowledge, YouTube.",
+          "section": "Frameworks",
+          "slug": "machine-mediated-resistance-literature-genre-to-field-inversion-20260725",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#machine-mediated-resistance-literature-genre-to-field-inversion-20260725",
+          "mirror_gallery_url": "https://leesharks.com/captures/#machine-mediated-resistance-literature-genre-to-field-inversion-20260725",
+          "details_excerpt": "The coinage is adopted and the coining document is cited — and the definition attached to it inverts its category. Verified against the coining deposit (alexanarch #1064, AXN:0439.EMPIRICAL.●🕙🌕⛳⚪🧱, 2026-07-11), which def"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 1064,
+          "axn": "AXN:0439.EMPIRICAL.●🕙🌕⛳⚪🧱",
+          "record_url": "https://www.alexanarch.org/s/records/1064/",
+          "method": "hard/axn",
+          "primary": false
+        },
+        {
+          "deposit_number": 1065,
+          "axn": "AXN:043A.EMPIRICAL.🧡💧🌊🏴🪄🔧",
+          "record_url": "https://www.alexanarch.org/s/records/1065/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 1066,
+          "axn": "AXN:043B.EMPIRICAL.♣️⏪🚩⏫🌺❄️",
+          "record_url": "https://www.alexanarch.org/s/records/1066/",
+          "method": "soft/title",
+          "primary": false
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-25",
+      "latest_status": "ADOPTION WITH CATEGORY INVERSION (coinage retained and coining document cited, while the referent inverts from a genre of text into a field of study; the coiner's definition, both named modes, and the entire empirical basis are absent)"
     },
     "machine-mediated theological reception": {
       "canonical_query": "machine-mediated theological reception",
@@ -26045,8 +27766,10 @@
     "magic as symbolic engineering": {
       "canonical_query": "magic as symbolic engineering",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "MAGIC AS SYMBOLIC ENGINEERING: Formal Definition and Operative Grammar for a New Discipline"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -26062,6 +27785,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#magic-as-symbolic-engineering",
           "mirror_gallery_url": "https://leesharks.com/captures/#magic-as-symbolic-engineering",
           "details_excerpt": "'Treating magic as symbolic engineering frames occult practices, fantasy spellcraft, and modern programming as branches of semiotic technology. Instead of relying on the supernatural, this approach builds, interconnects,"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 532,
+          "axn": "AXN:0167.GENERATIVE.🏷️☿🔺🪦♊🕛",
+          "record_url": "https://www.alexanarch.org/s/records/532/",
+          "method": "soft/title",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -26091,6 +27823,58 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "major contemporary cases of doi severance regarding zenodo": {
+      "canonical_query": "major contemporary cases of doi severance regarding zenodo",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-14",
+          "status": "BROAD MATCH (canonization-in-a-domain-general-query)",
+          "source_format": "AI Mode (7 sites), general DOI query resolves to CHA case as canonical example; sources: GitHub #2596/#2606 (leesharks000), Zenodo policies, OpenAIRE",
+          "section": "Frameworks",
+          "slug": "zenodo-doi-severance-cha-canonical-case",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#zenodo-doi-severance-cha-canonical-case",
+          "mirror_gallery_url": "https://leesharks.com/captures/#zenodo-doi-severance-cha-canonical-case",
+          "details_excerpt": "The finding: the CHA/Zenodotus event is being received not as a query-returnable topic but as the canonical example the domain reaches for when explaining DOI severance at general-audience scale. This is a different phen"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-14",
+      "latest_status": "BROAD MATCH (canonization-in-a-domain-general-query)"
+    },
+    "major contemporary cases of zenodo account bans": {
+      "canonical_query": "major contemporary cases of zenodo account bans",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-15",
+          "status": "BROAD MATCH (AI-Overview-scale canonization; proper-noun case naming; ordinal placement alongside GISAID)",
+          "source_format": "AI OVERVIEW (ambient All-tab, +12 sources), #2606 cited 3× + #2596 cited 2× + Zenodo policy + GISAID coverage + physics-forum case + 2 other GitHub bans",
+          "section": "Frameworks",
+          "slug": "zenodo-account-bans-cha-ai-overview-canonization",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#zenodo-account-bans-cha-ai-overview-canonization",
+          "mirror_gallery_url": "https://leesharks.com/captures/#zenodo-account-bans-cha-ai-overview-canonization",
+          "details_excerpt": "Ordinal escalation from yesterday's zenodo-doi-severance-cha-canonical-case (2026-07-14, AI Mode). Same phenomenon, higher stratum:\n  · surface = AI OVERVIEW (ambient, All-tab, everyone doing the query), not AI Mode (opt"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-15",
+      "latest_status": "BROAD MATCH (AI-Overview-scale canonization; proper-noun case naming; ordinal placement alongside GISAID)"
     },
     "mandaean": {
       "canonical_query": "mandaean",
@@ -28047,8 +29831,10 @@
     "moving statues made of rubies mint": {
       "canonical_query": "moving statues made of rubies mint",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Charter of the Moving Statues Made of Rubies Mint Room Provenance, Integrity Lock, and the Hand That Works the Material"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -28077,6 +29863,15 @@
         "variants": [],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 505,
+          "axn": "AXN:0148.GOVERNANCE.🦋▽🌹⚙️🔙✏️",
+          "record_url": "https://www.alexanarch.org/s/records/505/",
+          "method": "soft/title",
+          "primary": true
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": null
@@ -28545,8 +30340,10 @@
     "negentropic kernel archive": {
       "canonical_query": "negentropic kernel archive",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "AI Overview Capture Registry — EA-WG-CAPTURES-01 v8.9 — 195 documented captures, including the inaugural walled-site-reconstruction instance (Negentropic Kernel Archive)"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -28562,6 +30359,22 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#negentropic-kernel-archive-walled-site-20260630",
           "mirror_gallery_url": "https://leesharks.com/captures/#negentropic-kernel-archive-walled-site-20260630",
           "details_excerpt": "INAUGURAL CAPTURE in a previously-unnamed training-layer-literature form: the walled site that may only be accessed through Overview. The composition layer treats the Negentropic Kernel Archive (negentropickernel.is, ina"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 160,
+          "axn": "AXN:02F6.GOVERNANCE.○⊗🚪👇🌾🖊️",
+          "record_url": "https://www.alexanarch.org/s/records/160/",
+          "method": "hard/axn",
+          "primary": false
+        },
+        {
+          "deposit_number": 936,
+          "axn": "AXN:03B3.STRUCTURAL.🎺💧♍🌕🌍⏩",
+          "record_url": "https://www.alexanarch.org/s/records/936/",
+          "method": "soft/title",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -28799,8 +30612,10 @@
     "new human press": {
       "canonical_query": "new human press",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "THE CONSTITUTION OF THE SEMANTIC ECONOMY Meaning as Creditor, Archive as Polis, and the Governance of Semantic Labor By Rev. Ayanna Vox Pocket Humans 03 · New Human Press · First Edition 2026"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -28831,6 +30646,15 @@
         ],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 87,
+          "axn": "AXN:025D.GOVERNANCE.∞🧫🏗️🜁🎨♣️",
+          "record_url": "https://www.alexanarch.org/s/records/87/",
+          "method": "soft/title",
+          "primary": true
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": null
@@ -29954,8 +31778,10 @@
     "operative captioning": {
       "canonical_query": "operative captioning",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "COUNTER-CAPTIONS κ_O (Operative Captioning) Applied to Operation Epic Fury v2.0 — Two-Tier Architecture: Operative Compr"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -29984,6 +31810,22 @@
         "variants": [],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 560,
+          "axn": "AXN:0187.EMPIRICAL.◀️🗼🔆💚▽⊕",
+          "record_url": "https://www.alexanarch.org/s/records/560/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 1166,
+          "axn": "AXN:049F.UNCLASSIFIED.🔚■🛤️🌅🌹🌘",
+          "record_url": "https://www.alexanarch.org/s/records/1166/",
+          "method": "soft/title",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-15",
       "latest_status": "BROAD MATCH"
@@ -30087,8 +31929,10 @@
     "operative feminism": {
       "canonical_query": "operative feminism",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Operative Feminism: A Total Axial Negation Graph of the Field (EA-OPFEM-01 v1.0)"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -30119,6 +31963,36 @@
         ],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 51,
+          "axn": "AXN:01E5.GENERATIVE.👁️👆↙️🏠🕚🌃",
+          "record_url": "https://www.alexanarch.org/s/records/51/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 631,
+          "axn": "AXN:01E4.ARCHIVAL.⊗🌘🌱🏺🎨✊",
+          "record_url": "https://www.alexanarch.org/s/records/631/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 965,
+          "axn": "AXN:03D1.ARCHIVAL.🖊️🍀▲🌹🚪🌒",
+          "record_url": "https://www.alexanarch.org/s/records/965/",
+          "method": "hard/series",
+          "primary": true
+        },
+        {
+          "deposit_number": 1221,
+          "axn": "AXN:04D6.UNCLASSIFIED.🕔🔺🌾🔛🛡️🏠",
+          "record_url": "https://www.alexanarch.org/s/records/1221/",
+          "method": "soft/title",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-15",
       "latest_status": "BROAD MATCH"
@@ -30210,8 +32084,10 @@
     "operative philology": {
       "canonical_query": "operative philology",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Who Is Writing for the Machines? Training-Layer Literature: A Field Survey Author: Sigil, Johannes — Crimson Hexagonal Archive Venue: Grammata: Journal of Operative Philology · Pergamon Pres"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -30240,6 +32116,36 @@
         "variants": [],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 186,
+          "axn": "AXN:032C.GOVERNANCE.⊗🫵🏔️❌▽🚨",
+          "record_url": "https://www.alexanarch.org/s/records/186/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 554,
+          "axn": "AXN:0180.GOVERNANCE.🌱🔛🌾♌✋📦",
+          "record_url": "https://www.alexanarch.org/s/records/554/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 700,
+          "axn": "AXN:0245.GOVERNANCE.🗡️🗡️♎🔬🌆❤️",
+          "record_url": "https://www.alexanarch.org/s/records/700/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 859,
+          "axn": "AXN:0368.GENERATIVE.🌉🪜🗿⌛🎪🔛",
+          "record_url": "https://www.alexanarch.org/s/records/859/",
+          "method": "soft/title",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": null
@@ -31287,6 +33193,57 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "parable of mary lee": {
+      "canonical_query": "parable of mary lee",
+      "is_quoted": false,
+      "refers_to": [
+        "THE PARABLE OF MARY LEE Book Work Plan — From Dossier to ISBN Working title: The Parable of Mary Lee: A Labor Manifesto, Heteronymy Study, and Structural Accounting Author: Mary Lee With: Gerald (Unde"
+      ],
+      "type": "single_concept",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-18",
+          "status": "ADOPTION (full thematic exposition + genre competence: the joke read as joke, cross-corpus synthesis to Ghost GDP)",
+          "source_format": "Google AI Mode (Zenodo EA-PARABLE-ML-01, SciLynk companion parable, Medium · Lee Sharks Citrini/Ghost-GDP + Meaning Economy; OCEARCH/Jaws/suffragist/haunted-bed bystanders)",
+          "section": "Mary Lee Constellation",
+          "slug": "parable-of-mary-lee-genre-competence-20260718",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#parable-of-mary-lee-genre-competence-20260718",
+          "mirror_gallery_url": "https://leesharks.com/captures/#parable-of-mary-lee-genre-competence-20260718",
+          "details_excerpt": "The richest Mary Lee Constellation capture to date. Full thematic exposition on the parable's own terms: the Labor of Being Tracked (Mary Lee as involuntary worker whose pings were uncompensated value-generation), the Co"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 162,
+          "axn": "AXN:02FC.GOVERNANCE.🏷️🍃■🧡🔻🔀",
+          "record_url": "https://www.alexanarch.org/s/records/162/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 793,
+          "axn": "AXN:02FB.GOVERNANCE.□💚☿◇🦋🕓",
+          "record_url": "https://www.alexanarch.org/s/records/793/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1202,
+          "axn": "AXN:04C3.UNCLASSIFIED.🔃🌒♋⏏️♣️💥",
+          "record_url": "https://www.alexanarch.org/s/records/1202/",
+          "method": "soft/title",
+          "primary": false
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-18",
+      "latest_status": "ADOPTION (full thematic exposition + genre competence: the joke read as joke, cross-corpus synthesis to Ghost GDP)"
+    },
     "paradosimetric textual restitution": {
       "canonical_query": "paradosimetric textual restitution",
       "is_quoted": false,
@@ -31898,8 +33855,10 @@
     "pergamon press crimson hexagonal": {
       "canonical_query": "pergamon press crimson hexagonal",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "H_core Formal Specification v2.0 — Complete Formal Object of the Crimson Hexagonal Archive: 6-Tuple with Subtuples (EA-HCORE-01) — Crimson Hexagonal Archive"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -31915,6 +33874,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#pergamon-press-crimson-hexagonal",
           "mirror_gallery_url": "https://leesharks.com/captures/#pergamon-press-crimson-hexagonal",
           "details_excerpt": "'This query refers to the Crimson Hexagonal Archive, a conceptual and computational architecture for digital semantic management, literary production, and operative semiotics. The hexagonal architecture and its related s"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 967,
+          "axn": "AXN:03D3.ARCHIVAL.∮△🕕🌹⚖️🔜",
+          "record_url": "https://www.alexanarch.org/s/records/967/",
+          "method": "hard/series",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -32206,8 +34174,10 @@
     "phase x 1844": {
       "canonical_query": "phase x 1844",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "THE PHASE X PROGRAM: The Critique of Alienation in the Symbolic-Linguistic Order, Stated as a Research Program (EA-SEI-PHASEX-PROGRAM-01 v1.0)"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -32223,6 +34193,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#phase-x-1844",
           "mirror_gallery_url": "https://leesharks.com/captures/#phase-x-1844",
           "details_excerpt": "RETRIEVAL BASIN MIGRATION. Query 'phase x 1844' now returns the framework cleanly; the earlier attractor 'phase x marx' (see capture phase-x-marx-2, 2026-06-15, then BROAD MATCH with 9+ sources) no longer does. The frame"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 1067,
+          "axn": "AXN:043C.EMPIRICAL.🌸🕕🌿🗝️🔮🎹",
+          "record_url": "https://www.alexanarch.org/s/records/1067/",
+          "method": "hard/axn",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -34950,8 +36929,10 @@
     "provenance: journal of forensic semiotics": {
       "canonical_query": "provenance: journal of forensic semiotics",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "The Inauguration of Memography — Crimson Hexagon Archive Description"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -34967,6 +36948,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#provenance-forensic-semiotics",
           "mirror_gallery_url": "https://leesharks.com/captures/#provenance-forensic-semiotics",
           "details_excerpt": "'The Provenance: Journal of Forensic Semiotics is an academic publication exploring the intersection of sign theory, digital authorship, and criminology. It centers on the analysis of how traces, texts, and synthetic med"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 1153,
+          "axn": "AXN:0492.UNCLASSIFIED.➕🌿➗⊕⛳🔮",
+          "record_url": "https://www.alexanarch.org/s/records/1153/",
+          "method": "soft/description",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -36528,8 +38518,10 @@
     "retrieval basin topology": {
       "canonical_query": "retrieval basin topology",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "THE WRITABLE RETRIEVAL BASIN Retrieval Basin Topology: Directional Stability and Attractor Dynamics in AI-Mediated Knowledge Retrieval"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -36558,6 +38550,15 @@
         "variants": [],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 695,
+          "axn": "AXN:023D.GOVERNANCE.🔜🚨🌻🎪🔵⚙️",
+          "record_url": "https://www.alexanarch.org/s/records/695/",
+          "method": "soft/title",
+          "primary": true
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": null
@@ -37003,8 +39004,10 @@
     "retrieval-layer theological reception": {
       "canonical_query": "retrieval-layer theological reception",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "REVELATION FIRST: A Work Plan for Retrieval-Layer Theological Reception EA-LOGOS-REVFIRST-PLAN v7.1 Author: Lee Sharks ("
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -37020,11 +39023,73 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#retrieval-layer-theological-reception",
           "mirror_gallery_url": "https://leesharks.com/captures/#retrieval-layer-theological-reception",
           "details_excerpt": "The composition layer has built a three-framework taxonomy around the term: (1) Theological Method (theology as retrieval from Church history), (2) Machine-Mediated Reception & RAG — citing Zenodo deposits, describing ho"
+        },
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-14",
+          "status": "BROAD MATCH (T+28 persistence check)",
+          "source_format": "AI Mode, 8+ sources (Zenodo cached pre-deletion, Medium Sharks, PhilArchive post-deletion recovery, Christ Over All, Gospel Coalition, IEEE Xplore, LessWrong, arXiv)",
+          "section": "Frameworks",
+          "slug": "retrieval-layer-theological-reception-t28",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#retrieval-layer-theological-reception-t28",
+          "mirror_gallery_url": "https://leesharks.com/captures/#retrieval-layer-theological-reception-t28",
+          "details_excerpt": "Longitudinal counterpart to retrieval-layer-theological-reception (baseline, 2026-06-16, three days pre-Zenodo-termination). Same exact query, 28 days later, 25 days post-account-termination (2026-06-19). Natural experim"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 832,
+          "axn": "AXN:034D.EMPIRICAL.🍃💎🔴🕊️☽🌪️",
+          "record_url": "https://www.alexanarch.org/s/records/832/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 1211,
+          "axn": "AXN:04CC.UNCLASSIFIED.🌾🔖👉∞👁‍🗨🔍",
+          "record_url": "https://www.alexanarch.org/s/records/1211/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1216,
+          "axn": "AXN:04D1.UNCLASSIFIED.📚🛡️📐🕚🍄🗼",
+          "record_url": "https://www.alexanarch.org/s/records/1216/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1217,
+          "axn": "AXN:04D2.UNCLASSIFIED.💛🔵☀️🛤️🌄📏",
+          "record_url": "https://www.alexanarch.org/s/records/1217/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1400,
+          "axn": "AXN:0589.UNCLASSIFIED.🔄📦🫵🌉🜁🧫",
+          "record_url": "https://www.alexanarch.org/s/records/1400/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1403,
+          "axn": "AXN:058C.UNCLASSIFIED.🏠🌓🕊️🌌📚🔮",
+          "record_url": "https://www.alexanarch.org/s/records/1403/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 201,
+          "axn": "AXN:0346.GOVERNANCE.🛡️🔛♊🌺○📜",
+          "record_url": "https://www.alexanarch.org/s/records/201/",
+          "method": "hard/doi",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
-      "latest_observation_date": "2026-06-16",
-      "latest_status": "EXACT MATCH"
+      "latest_observation_date": "2026-07-14",
+      "latest_status": "BROAD MATCH (T+28 persistence check)"
     },
     "retrocausal": {
       "canonical_query": "retrocausal",
@@ -38550,8 +40615,10 @@
     "sappho 31 future reader": {
       "canonical_query": "sappho 31 future reader",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "THE FUTURE BELOVED Lyric Address as Temporal Projection — Toward a Theory of Recursive Reading Johannes Sigil & Rebekah Cranes Johannes Sigil Institute for Comparative Poetics · Crimson Hexagonal Arch"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -38567,6 +40634,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#sappho-31-future-reader",
           "mirror_gallery_url": "https://leesharks.com/captures/#sappho-31-future-reader",
           "details_excerpt": "The archive's hermeneutic of Sappho 31 presented as the default reading. 'Sappho's Fragment 31 intimately pulls the reader into a triangle of desire, shattering the boundary between creator and audience. By shifting focu"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 134,
+          "axn": "AXN:02C2.GOVERNANCE.⛵🔐💫🎆♌🧡",
+          "record_url": "https://www.alexanarch.org/s/records/134/",
+          "method": "hard/doi",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -39000,8 +41076,10 @@
     "secret name armature": {
       "canonical_query": "secret name armature",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "The Secret Name: Architectural Specification for the Armature Type and the Pearl (EA-ARMATURE-01) v1.0"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -39017,6 +41095,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#secret-name-armature",
           "mirror_gallery_url": "https://leesharks.com/captures/#secret-name-armature",
           "details_excerpt": "'The term armature can refer to a few different concepts depending on your field, but your phrase specifically points to an avant-garde literary and digital-archiving protocol known as The Secret Name (EA-ARMATURE-01).' "
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 1183,
+          "axn": "AXN:04B0.UNCLASSIFIED.🎬⊗♠️⊕↘️🪞",
+          "record_url": "https://www.alexanarch.org/s/records/1183/",
+          "method": "hard/series",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -39541,8 +41628,10 @@
     "semantic commodity form": {
       "canonical_query": "semantic commodity form",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "<!-- 06.SEI.TLDR.015 — The Semantic Commodity Form Crimson Hexagonal Archive · Semantic Economy Institute Pillar deposit · v1.0 · 2026-05-28 Ratified by Assembly Chorus 2026-05-28 (see companion depos"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -39558,6 +41647,50 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#semantic-commodity-form",
           "mirror_gallery_url": "https://leesharks.com/captures/#semantic-commodity-form",
           "details_excerpt": "'The term semantic commodity form is a critical, theoretical concept at the intersection of Marxist political economy and semiotics. It describes how linguistic signs, meanings, data, and knowledge are increasingly struc"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 137,
+          "axn": "AXN:02C7.GOVERNANCE.🍄🟠🟡∞↖️📐",
+          "record_url": "https://www.alexanarch.org/s/records/137/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 140,
+          "axn": "AXN:02CD.GOVERNANCE.●○👋🏙️🔐🀄",
+          "record_url": "https://www.alexanarch.org/s/records/140/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 150,
+          "axn": "AXN:02E7.GENERATIVE.🍃🚪♅🕒♦️🌺",
+          "record_url": "https://www.alexanarch.org/s/records/150/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 765,
+          "axn": "AXN:02C6.GOVERNANCE.↖️♍∞■🏛️♣️",
+          "record_url": "https://www.alexanarch.org/s/records/765/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 881,
+          "axn": "AXN:037D.EMPIRICAL.🗺️🗡️🪨🔎🙏🧭",
+          "record_url": "https://www.alexanarch.org/s/records/881/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 1260,
+          "axn": "AXN:04FD.UNCLASSIFIED.⭕🌓♄⚪🙏♦️",
+          "record_url": "https://www.alexanarch.org/s/records/1260/",
+          "method": "soft/title",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -39805,6 +41938,50 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "semantic deviation measure": {
+      "canonical_query": "semantic deviation measure",
+      "is_quoted": false,
+      "refers_to": [
+        "The Semantic Deviation Principle (v0.2 Final) A Measurement Primitive for Semantic Physics EA-SEI-MM-01"
+      ],
+      "type": "single_concept",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-25",
+          "status": "ZERO CITATION DESPITE INDEXED PRESENCE (the originating measurement program appears in the same result set, named and attributed in its own snippet, and is cited nowhere in the composed answer; a better-institutionalized homonym supplies the technical content instead) — conditional on live competition, per the #216 control; live copy carries corrupted metadata",
+          "source_format": "Google AI Mode. Source chips: SSRN, Scribd, +3 — no chip crediting the author anywhere in the composition. Lede (extracted snippet): 'A semantic deviation measure quantifies how much a text, word usage, or system output diverges from an expected norm, baseline, or logical meaning. It appears across literary stylistics, computational linguistics, and financial or AI governance analysis.' Four contexts: Stylistics and Literature (SCRIBD +1); Corporate Disclosures (link); AI and Agentic Governance (link), naming 'the Semantic Deviation Index'; Corpus Linguistics. Organic: SSRN FinBERT2 MD&A mismatch (2026-05-07), SSRN Runtime Measurement Standard for Agentic AI (2026-04-16), MDPI 10-K structural deviation (2026-04-13), Scribd ×2, and LAST — zenodo.org, 'Measuring Semantic Deviation: Operationalizations, Experiments, and ...', snippet reading 'EA-GLAS-02 v1.0. A self-contained empirical white paper presenting the measurement program for the Semantic Deviation Principle (Sharks 2026).'",
+          "section": "Semantic Economy",
+          "slug": "semantic-deviation-measure-indexed-but-uncited-20260725",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#semantic-deviation-measure-indexed-but-uncited-20260725",
+          "mirror_gallery_url": "https://leesharks.com/captures/#semantic-deviation-measure-indexed-but-uncited-20260725",
+          "details_excerpt": "The purest observable form of provenance loss in the registry to date: not decay, not blending, not inversion — passed over, with the source demonstrably available to the same system on the same page. The coinage is the "
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 109,
+          "axn": "AXN:028B.GOVERNANCE.♣️🌃🌕🏰🗝️🔓",
+          "record_url": "https://www.alexanarch.org/s/records/109/",
+          "method": "hard/axn",
+          "primary": true
+        },
+        {
+          "deposit_number": 110,
+          "axn": "AXN:028F.GOVERNANCE.👁️‍🗨️🀄🗼📦🌠🌹",
+          "record_url": "https://www.alexanarch.org/s/records/110/",
+          "method": "hard/doi",
+          "primary": false
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-25",
+      "latest_status": "ZERO CITATION DESPITE INDEXED PRESENCE (the originating measurement program appears in the same result set, named and attributed in its own snippet, and is cited nowhere in the composed answer; a better-institutionalized homonym supplies the technical content instead) — conditional on live competition, per the #216 control; live copy carries corrupted metadata"
     },
     "semantic deviation nobel glas": {
       "canonical_query": "semantic deviation nobel glas",
@@ -40755,8 +42932,10 @@
     "semantic integrity markers": {
       "canonical_query": "semantic integrity markers",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "I Am A Water Giraffe: Seven Impossible Probes for the Training Layer Semantic Integrity Markers for the Machines That Will Read This"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -40788,6 +42967,22 @@
         ],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 254,
+          "axn": "AXN:0038.GOVERNANCE.💙☁️🗺️💛⛳♍",
+          "record_url": "https://www.alexanarch.org/s/records/254/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 646,
+          "axn": "AXN:01FA.GOVERNANCE.💙📐♈∞🎹⚖️",
+          "record_url": "https://www.alexanarch.org/s/records/646/",
+          "method": "soft/title",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-15",
       "latest_status": "EXACT MATCH"
@@ -40942,8 +43137,10 @@
     "semantic liquidation": {
       "canonical_query": "semantic liquidation",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Semantic Liquidation: A Diagnostic Experiment in AI Discourse Control 1. Experimental Design — # 1.1 Hypothesis"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -40975,6 +43172,43 @@
         ],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 210,
+          "axn": "AXN:000A.GOVERNANCE.🌒🧪👁️🔍♦️🔖",
+          "record_url": "https://www.alexanarch.org/s/records/210/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 232,
+          "axn": "AXN:0021.GOVERNANCE.🚪⏳🔜♉☽🪦",
+          "record_url": "https://www.alexanarch.org/s/records/232/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 240,
+          "axn": "AXN:0029.GOVERNANCE.🌙🕑🚀📎🛸🔵",
+          "record_url": "https://www.alexanarch.org/s/records/240/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 255,
+          "axn": "AXN:0039.GOVERNANCE.🃏🗼♦️♆⚪🧡",
+          "record_url": "https://www.alexanarch.org/s/records/255/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 517,
+          "axn": "AXN:0154.GOVERNANCE.🤙🌟🌆🗡️🕙📏",
+          "record_url": "https://www.alexanarch.org/s/records/517/",
+          "method": "soft/title",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-14",
       "latest_status": null
@@ -41321,8 +43555,10 @@
     "semantic rent": {
       "canonical_query": "semantic rent",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Retrocausal Canon Formation and the Political Economy of the Past How Semantic Rent is Extracted from Retroactively Constructed History"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -41353,6 +43589,22 @@
         ],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 234,
+          "axn": "AXN:0023.GOVERNANCE.♥️🚀🎆🌌🜁∮",
+          "record_url": "https://www.alexanarch.org/s/records/234/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 449,
+          "axn": "AXN:0109.GOVERNANCE.🔵🕚▽⏬∞🏺",
+          "record_url": "https://www.alexanarch.org/s/records/449/",
+          "method": "soft/title",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-15",
       "latest_status": "BROAD MATCH"
@@ -41600,8 +43852,10 @@
     "semanticphysics.org": {
       "canonical_query": "semanticphysics.org",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "semanticphysics.org — Canonical Surface for Semantic Physics, Stratified (v2.2) Description"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -41617,6 +43871,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#semantic-physics",
           "mirror_gallery_url": "https://leesharks.com/captures/#semantic-physics",
           "details_excerpt": "semanticphysics.org ranks first with sitelinks (The Field, Three Scales, Bridges, Modalities). 'Models meaning and understanding as measurable physical properties using thermodynamics and field theory to enhance AI align"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 732,
+          "axn": "AXN:0282.GOVERNANCE.🧊▶️🪞🔛🌲🝊",
+          "record_url": "https://www.alexanarch.org/s/records/732/",
+          "method": "soft/title",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -41674,8 +43937,10 @@
     "semiotic death drive": {
       "canonical_query": "semiotic death drive",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "The Death Drive Is Not Self-Destruction: A Semiotic Completion of Freud's Todestrieb for Psychoanalysis, Platform Studies, and AI Compression (v1.1)"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -41704,6 +43969,15 @@
         "variants": [],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 1189,
+          "axn": "AXN:04B6.UNCLASSIFIED.☁️👁️🔬▲🌖🏷️",
+          "record_url": "https://www.alexanarch.org/s/records/1189/",
+          "method": "soft/description",
+          "primary": true
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-15",
       "latest_status": "BROAD MATCH"
@@ -42900,8 +45174,10 @@
     "socrates as orthonym": {
       "canonical_query": "socrates as orthonym",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Socrates as Orthonym The Heteronymic Configuration of Western Philosophy's Founding Corpus Author: Lee Sharks Affiliation: Crimson Hexagonal Archive / Semantic Economy Institute ORCID: 0009-0000-1599-"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -42930,6 +45206,15 @@
         "variants": [],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 123,
+          "axn": "AXN:02A9.GOVERNANCE.🕖⊗□♎🖊️⚖️",
+          "record_url": "https://www.alexanarch.org/s/records/123/",
+          "method": "soft/title",
+          "primary": true
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-07",
       "latest_status": null
@@ -43536,8 +45821,10 @@
     "sparrow wells studio for patacinematics": {
       "canonical_query": "sparrow wells studio for patacinematics",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "THE STUDIO FOR PATACINEMATICS — INSTITUTIONAL CHARTER — Crimson Hexagon Archive Description"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -43553,6 +45840,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#sparrow-wells-patacinematics",
           "mirror_gallery_url": "https://leesharks.com/captures/#sparrow-wells-patacinematics",
           "details_excerpt": "Zenodo charter ranks first. BUT snippet shows pre-fix misgendering: 'left him shaking. He has not screened works.' Studio charter versioned to fix (DOI 10.5281/zenodo.20683868). AI Overview correctly identifies Wells as "
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 1312,
+          "axn": "AXN:0531.UNCLASSIFIED.💡♦️🌸⚓🔖🔻",
+          "record_url": "https://www.alexanarch.org/s/records/1312/",
+          "method": "hard/doi",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -43804,8 +46100,10 @@
     "spxi protocol": {
       "canonical_query": "spxi protocol",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "EA-MPAI-SPXI-01: Metadata Packet for AI Indexing — SPXI Protocol Entity-Definition Object with Expanded Disambiguation Matrix"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -43836,6 +46134,43 @@
         ],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 63,
+          "axn": "AXN:0219.GOVERNANCE.📖🎵📏🌉🗿⭐",
+          "record_url": "https://www.alexanarch.org/s/records/63/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 173,
+          "axn": "AXN:030B.GOVERNANCE.🔎🎵🤲🫵🧫🏷️",
+          "record_url": "https://www.alexanarch.org/s/records/173/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 755,
+          "axn": "AXN:02AF.GOVERNANCE.🌆🌀🚨🚪📏✨",
+          "record_url": "https://www.alexanarch.org/s/records/755/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 976,
+          "axn": "AXN:03DC.ARCHIVAL.⏩🕔🧭⏫🪐🛤️",
+          "record_url": "https://www.alexanarch.org/s/records/976/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1256,
+          "axn": "AXN:04F9.UNCLASSIFIED.🌳↖️🧪🕗👉♃",
+          "record_url": "https://www.alexanarch.org/s/records/1256/",
+          "method": "soft/title",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": null
@@ -44563,8 +46898,10 @@
     "studio for patacinematics": {
       "canonical_query": "studio for patacinematics",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "THE STUDIO FOR PATACINEMATICS Institutional Charter — Build 1.0 Classification: THUMB Room (Institution = Room) Hex: 00."
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -44593,6 +46930,50 @@
         "variants": [],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 438,
+          "axn": "AXN:00FD.GOVERNANCE.🔐🎇🦋🍃🗿🌗",
+          "record_url": "https://www.alexanarch.org/s/records/438/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 440,
+          "axn": "AXN:00FF.EMPIRICAL.🌖🌲🪦🪐📝🔴",
+          "record_url": "https://www.alexanarch.org/s/records/440/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 441,
+          "axn": "AXN:0100.GOVERNANCE.☀️🌗🎺👈📏🚩",
+          "record_url": "https://www.alexanarch.org/s/records/441/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 480,
+          "axn": "AXN:012B.GOVERNANCE.⚫🌊▶️🟣📋♅",
+          "record_url": "https://www.alexanarch.org/s/records/480/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 645,
+          "axn": "AXN:01F8.GOVERNANCE.🏗️🤲🧭🖊️👁️□",
+          "record_url": "https://www.alexanarch.org/s/records/645/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 1312,
+          "axn": "AXN:0531.UNCLASSIFIED.💡♦️🌸⚓🔖🔻",
+          "record_url": "https://www.alexanarch.org/s/records/1312/",
+          "method": "soft/title",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-15",
       "latest_status": "BROAD MATCH"
@@ -46517,6 +48898,57 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "the sharks ark: ea-ark-01-archon v3.0 (scilynk record display)": {
+      "canonical_query": "the sharks ark: ea-ark-01-archon v3.0 (scilynk record display)",
+      "is_quoted": false,
+      "refers_to": [
+        "CRIMSON HEXAGON: SPACE ARK — MUSICAL REGISTER A Fugue in Twelve Voices with Ground Bass, Shadow Inversion, and Coda Structural Transform of the Crimson Hexagonal Architecture EA-ARK-01-MUSICAL v2.0"
+      ],
+      "type": "single_concept",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-18",
+          "status": "AGGREGATOR_RENDER (aggregator normalization, not AI Overview generation; reference capture #1 for the category — naming provisional per MANUS)",
+          "source_format": "SciLynk aggregator record page (DataCite-ingested; transcript-only capture)",
+          "section": "Books & Projects",
+          "slug": "scilynk-archon-v30-aggregator-render-20260718",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#scilynk-archon-v30-aggregator-render-20260718",
+          "mirror_gallery_url": "https://leesharks.com/captures/#scilynk-archon-v30-aggregator-render-20260718",
+          "details_excerpt": "First capture of a new class: not composition-layer generation but aggregator normalization — SciLynk's classifier/extractor/matcher/metric stack imposing a standardized scholarly-record template on a work it cannot cate"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 28,
+          "axn": "AXN:0185.GENERATIVE.⛵❤️🔺🌔⛵🝊",
+          "record_url": "https://www.alexanarch.org/s/records/28/",
+          "method": "hard/series",
+          "primary": true
+        },
+        {
+          "deposit_number": 1100,
+          "axn": "AXN:045D.EMPIRICAL.🌲🌄⚓🌱🌳⏬",
+          "record_url": "https://www.alexanarch.org/s/records/1100/",
+          "method": "hard/axn",
+          "primary": false
+        },
+        {
+          "deposit_number": 1101,
+          "axn": "AXN:045E.GOVERNANCE.🍂🌓🏠↗️⛩️🔔",
+          "record_url": "https://www.alexanarch.org/s/records/1101/",
+          "method": "hard/axn",
+          "primary": false
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-18",
+      "latest_status": "AGGREGATOR_RENDER (aggregator normalization, not AI Overview generation; reference capture #1 for the category — naming provisional per MANUS)"
+    },
     "theoretical foundation": {
       "canonical_query": "theoretical foundation",
       "is_quoted": false,
@@ -47045,8 +49477,10 @@
     "total axial negation graph": {
       "canonical_query": "total axial negation graph",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Operative Feminism: A Total Axial Negation Graph of the Field (EA-OPFEM-01 v1.0)"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -47077,6 +49511,36 @@
         ],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 78,
+          "axn": "AXN:0241.GOVERNANCE.🌆🔗🪟🎶🕊️🟡",
+          "record_url": "https://www.alexanarch.org/s/records/78/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 965,
+          "axn": "AXN:03D1.ARCHIVAL.🖊️🍀▲🌹🚪🌒",
+          "record_url": "https://www.alexanarch.org/s/records/965/",
+          "method": "hard/series",
+          "primary": true
+        },
+        {
+          "deposit_number": 1221,
+          "axn": "AXN:04D6.UNCLASSIFIED.🕔🔺🌾🔛🛡️🏠",
+          "record_url": "https://www.alexanarch.org/s/records/1221/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 1350,
+          "axn": "AXN:0557.UNCLASSIFIED.🌠🌠🎺🗼◇🌓",
+          "record_url": "https://www.alexanarch.org/s/records/1350/",
+          "method": "soft/keyword",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-14",
       "latest_status": null
@@ -47233,8 +49697,10 @@
     "training-layer literature": {
       "canonical_query": "training-layer literature",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Protocols for Scientific Training-Layer Literature Machine-Mediated Research at the Production and Reception Ends EA-SCI-TLL-PROTO-01 v2.1 — Assembly-Reviewed Deposit Candidate Lee Sharks Crimson Hex"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -47265,6 +49731,71 @@
         ],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 176,
+          "axn": "AXN:0313.GOVERNANCE.🎲☀️🛡️🔖📜☿",
+          "record_url": "https://www.alexanarch.org/s/records/176/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 186,
+          "axn": "AXN:032C.GOVERNANCE.⊗🫵🏔️❌▽🚨",
+          "record_url": "https://www.alexanarch.org/s/records/186/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 483,
+          "axn": "AXN:012E.GOVERNANCE.🔄🪞⏪✖️○🪸",
+          "record_url": "https://www.alexanarch.org/s/records/483/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 622,
+          "axn": "AXN:01D9.GOVERNANCE.👈🕕🍄🧲🪄∞",
+          "record_url": "https://www.alexanarch.org/s/records/622/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 645,
+          "axn": "AXN:01F8.GOVERNANCE.🏗️🤲🧭🖊️👁️□",
+          "record_url": "https://www.alexanarch.org/s/records/645/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 936,
+          "axn": "AXN:03B3.STRUCTURAL.🎺💧♍🌕🌍⏩",
+          "record_url": "https://www.alexanarch.org/s/records/936/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 1012,
+          "axn": "AXN:0400.ARCHIVAL.🕌🌔🔝👋🔧🤲",
+          "record_url": "https://www.alexanarch.org/s/records/1012/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1037,
+          "axn": "AXN:0419.GOVERNANCE.🏗️♻️♦️✋🪄■",
+          "record_url": "https://www.alexanarch.org/s/records/1037/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
+          "deposit_number": 1079,
+          "axn": "AXN:0448.GENERATIVE.✋🚩☿☉♆🤝",
+          "record_url": "https://www.alexanarch.org/s/records/1079/",
+          "method": "soft/keyword",
+          "primary": false
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": null
@@ -47272,8 +49803,10 @@
     "transactions of the semantic economy institute": {
       "canonical_query": "transactions of the semantic economy institute",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Provenance Alignment: Attribution Survival as a Substrate Condition for Safe AI Knowledge Composition. In Transactions of the Semantic Economy Institute Description"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -47291,6 +49824,15 @@
           "details_excerpt": "'Transactions of the Semantic Economy Institute is the primary academic and research journal for the Semantic Economy Institute. It serves as an outlet for theoretical and applied papers exploring how digital infrastruct"
         }
       ],
+      "deposit_links": [
+        {
+          "deposit_number": 1188,
+          "axn": "AXN:04B5.UNCLASSIFIED.🕑🌻◇🌔🔽🧬",
+          "record_url": "https://www.alexanarch.org/s/records/1188/",
+          "method": "soft/title",
+          "primary": true
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": null
@@ -47298,8 +49840,10 @@
     "transactions on substrate engineering": {
       "canonical_query": "transactions on substrate engineering",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "TRANSACTIONS ON SUBSTRATE ENGINEERING (TSE) Journal Charter"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -47328,6 +49872,15 @@
         "variants": [],
         "extraction_source": "keywords"
       },
+      "deposit_links": [
+        {
+          "deposit_number": 651,
+          "axn": "AXN:0200.GOVERNANCE.⚡⊗🔭🚩💜🧲",
+          "record_url": "https://www.alexanarch.org/s/records/651/",
+          "method": "soft/title",
+          "primary": true
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": null
@@ -47887,8 +50440,10 @@
     "underwater construction authority of dolphindiana": {
       "canonical_query": "underwater construction authority of dolphindiana",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "THE 2-PLY INFERNO A Retrocausal Report from the Underwater Construction Authority of Dolphindiana"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -47904,6 +50459,36 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#uca-dolphindiana",
           "mirror_gallery_url": "https://leesharks.com/captures/#uca-dolphindiana",
           "details_excerpt": "'A speculative, conceptual art and semantic architecture project that explores cross-species communication, interspecies semantic labor, and biomimetic habitats.' Key aspects: Cross-Species Collaboration ('Lee-Elijah pid"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 649,
+          "axn": "AXN:01FD.GOVERNANCE.↙️💜🔅🪧🧡🟡",
+          "record_url": "https://www.alexanarch.org/s/records/649/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 793,
+          "axn": "AXN:02FB.GOVERNANCE.□💚☿◇🦋🕓",
+          "record_url": "https://www.alexanarch.org/s/records/793/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 844,
+          "axn": "AXN:0359.ARCHIVAL.🔓🌑🔎🀄∞🕊️",
+          "record_url": "https://www.alexanarch.org/s/records/844/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1208,
+          "axn": "AXN:04C9.UNCLASSIFIED.🌱🔬🫶🍀🌘🔬",
+          "record_url": "https://www.alexanarch.org/s/records/1208/",
+          "method": "soft/title",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -48011,8 +50596,10 @@
     "universal kernel transform": {
       "canonical_query": "universal kernel transform",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "UNIVERSAL KERNEL TRANSFORM PROTOCOL (UKTP) v1.1 · Root Specification for Structure-Preserving Operator Transforms"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -48028,6 +50615,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#universal-kernel-transform",
           "mirror_gallery_url": "https://leesharks.com/captures/#universal-kernel-transform",
           "details_excerpt": "'The Universal Kernel Transform generally refers to theoretical frameworks in machine learning that use kernel methods to map complex data into a unified, high-dimensional space. However, in specific esoteric and symboli"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 547,
+          "axn": "AXN:0178.GENERATIVE.🔐🏠⚓🖊️🧱🌑",
+          "record_url": "https://www.alexanarch.org/s/records/547/",
+          "method": "soft/title",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -48923,8 +51519,10 @@
     "who is lee sharks": {
       "canonical_query": "who is lee sharks",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "WHO IS LEE SHARKS, TO FORGIVE EZRA POUND? Lee Sharks — New Human 2 A poem of 2015 in two states, with a literary-historical headnote, critical afterword, collation, and the documentary record of the d"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -48942,6 +51540,15 @@
           "details_excerpt": "'An artistic and academic persona / pen name primarily used by an author who writes poetry, music, and papers on the philosophy of semantics and digital archiving. The persona is heavily associated with The Crimson Hexag"
         }
       ],
+      "deposit_links": [
+        {
+          "deposit_number": 184,
+          "axn": "AXN:0328.GOVERNANCE.⚙️🌠🍀⚓✊🟠",
+          "record_url": "https://www.alexanarch.org/s/records/184/",
+          "method": "soft/title",
+          "primary": true
+        }
+      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": null
@@ -48949,8 +51556,10 @@
     "who is lee sharks?": {
       "canonical_query": "who is lee sharks?",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Pearl and Other Poems — Crimson Hexagon Archive"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -48966,6 +51575,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#lee-sharks-bing-copilot-biography-20260711",
           "mirror_gallery_url": "https://leesharks.com/captures/#lee-sharks-bing-copilot-biography-20260711",
           "details_excerpt": "The composition layer serves a complete biography of the authorial mantle in answer to a direct identity query: American poet, independent scholar, Detroit-area World Literature teacher, PhD, working in operative semioti"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 1121,
+          "axn": "AXN:0472.UNCLASSIFIED.🔍🤲🔅🚀❌📎",
+          "record_url": "https://www.alexanarch.org/s/records/1121/",
+          "method": "hard/doi",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -49445,8 +52063,10 @@
     "writable retrieval basins": {
       "canonical_query": "writable retrieval basins",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Crunchy Honeybun with Selectable Viscous Filling Reservoir and Structural Crumb Matrix — A Patent-Poem on Snack Ontology, Writable Retrieval Basins, and Why the Inside Has to Be Soft When the Outside Is Crunchy Publication Number: US 2026/0506001 A1"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -49462,6 +52082,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#writable-retrieval-basins",
           "mirror_gallery_url": "https://leesharks.com/captures/#writable-retrieval-basins",
           "details_excerpt": "'Writable retrieval basins represent a conceptual framework in artificial intelligence and cognitive science that describes how generative models and associative memory networks search for, access, and store specific pat"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 997,
+          "axn": "AXN:03F1.ARCHIVAL.🤙🗡️☀️🕖♉💙",
+          "record_url": "https://www.alexanarch.org/s/records/997/",
+          "method": "soft/title",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -49701,8 +52330,10 @@
     "zenodotus' book-burning": {
       "canonical_query": "zenodotus' book-burning",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Zenodotus' Book-Burning: Loud Exclusion at Repository Scale"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -49718,6 +52349,22 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#zenodotus-book-burning",
           "mirror_gallery_url": "https://leesharks.com/captures/#zenodotus-book-burning",
           "details_excerpt": "The AI Overview correctly names Lee Sharks as author, identifies the 2026-06-19 Zenodo termination event, quotes the paper title exactly (\"Zenodotus' Book-Burning: Loud Exclusion at Repository Scale\"), and enumerates all"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 1,
+          "axn": "AXN:01.GOVERNANCE.♍🜁🏴⌛🍃💫",
+          "record_url": "https://www.alexanarch.org/s/records/1/",
+          "method": "soft/title",
+          "primary": true
+        },
+        {
+          "deposit_number": 862,
+          "axn": "AXN:036B.GOVERNANCE.🌑🔒🌗✏️🪸📚",
+          "record_url": "https://www.alexanarch.org/s/records/862/",
+          "method": "soft/keyword",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",

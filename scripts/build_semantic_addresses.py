@@ -150,6 +150,25 @@ def canonicalize(q: str, is_quoted: bool = False) -> str:
 # Extractors — one per tributary
 # --------------------------------------------------------------------------- #
 
+_CAPTURE_LINKS = None
+
+
+def _capture_links(repo_root: str = ".") -> dict:
+    """slug -> link record from data/capture-deposit-links.json (Task 7).
+
+    Absent file is not an error: addresses simply keep refers_to empty, which
+    is the pre-Task-7 behaviour."""
+    global _CAPTURE_LINKS
+    if _CAPTURE_LINKS is None:
+        try:
+            with open(os.path.join(repo_root, "data", "capture-deposit-links.json"),
+                      encoding="utf-8") as fh:
+                _CAPTURE_LINKS = json.load(fh).get("links", {})
+        except Exception:
+            _CAPTURE_LINKS = {}
+    return _CAPTURE_LINKS
+
+
 def extract_main_capture(data: dict) -> List[dict]:
     """
     EA-WG-CAPTURES-01.json — each entry is a capture event.
@@ -176,10 +195,19 @@ def extract_main_capture(data: dict) -> List[dict]:
         }
         # detect is_quoted from surrounding quotes
         is_q = query.startswith('"') and query.endswith('"')
+        link = _capture_links().get(slug) or {}
+        _deps = link.get("deposits") or []
+        # refers_to carries the human-readable object of the address, which is
+        # what infer_type() classifies on; deposit_links carries the edges.
+        _refers = [x["title"] for x in _deps if x.get("primary")] or \
+                  [x["title"] for x in _deps]
         out.append({
             "raw_query": query,
             "is_quoted": is_q,
-            "refers_to": [],
+            "refers_to": _refers,
+            "deposit_links": [{k: x[k] for k in
+                               ("deposit_number", "axn", "record_url", "method", "primary")}
+                              for x in _deps],
             "type": None,
             "battery_membership": [],
             "observation": obs,
@@ -462,6 +490,10 @@ def build_addresses(repo_root: str) -> Tuple[dict, dict]:
                 a["sources"].append(tid)
             if c.get("observation"):
                 a["observations"].append(c["observation"])
+            for dl in (c.get("deposit_links") or []):
+                a.setdefault("deposit_links", [])
+                if dl not in a["deposit_links"]:
+                    a["deposit_links"].append(dl)
             if c.get("termindex") and not a["termindex"]:
                 a["termindex"] = c["termindex"]
             if c.get("mint") and not a["mint"]:
