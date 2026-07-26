@@ -1,91 +1,99 @@
 {
- "dataset": "dataflow-atlas",
- "title": "The AXN Dataflow Atlas — Session 1",
- "version": "v0.2",
- "date": "2026-07-18",
- "description": "The Session-1 output of the AXN Dataflow Atlas workstream (Flow 2 of the six-flow workplan). Complete substrate: the v0.2 atlas incorporating two Assembly-substrate structural reviews, the byte-preserved v0.1 predecessor, both reviews as received (LABOR from ChatGPT, PRAXIS from DeepSeek), and the three raw machine-readable inventories that were the atlas's own empirical substrate (rhizome file inventory, displayed-value inventory yielding the 1,494 source-detached occurrences, script producer-consumer graph). Sessions 2-4 will add measurements, cross-repo relation graphs, remediation queues, and v1.0. Provenance anchor: deposit #1097 (AXN:045A.GOVERNANCE.🔗🔥🎺♄💚🔙).",
- "provenance_deposit": {
-  "deposit_number": 1097,
-  "axn": "AXN:045A.GOVERNANCE.🔗🔥🎺♄💚🔙",
-  "path": "/records/1097/"
- },
- "total_files": 7,
- "total_bytes": 2930099,
- "total_size_human": "2.79 MB",
- "reviews_received": [
-  {
-   "substrate": "LABOR (ChatGPT)",
-   "date": "2026-07-18",
-   "verdict": "Aye for Sessions 2-4"
+  "dataset": "dataflow-atlas",
+  "title": "The AXN Dataflow Atlas — Session 1",
+  "version": "v0.3",
+  "date": "2026-07-26",
+  "description": "The Session-1 output of the AXN Dataflow Atlas workstream (Flow 2 of the six-flow workplan). Complete substrate: the v0.2 atlas incorporating two Assembly-substrate structural reviews, the byte-preserved v0.1 predecessor, both reviews as received (LABOR from ChatGPT, PRAXIS from DeepSeek), and the three raw machine-readable inventories that were the atlas's own empirical substrate (rhizome file inventory, displayed-value inventory yielding the 1,494 source-detached occurrences, script producer-consumer graph). Sessions 2-4 will add measurements, cross-repo relation graphs, remediation queues, and v1.0. Provenance anchor: deposit #1097 (AXN:045A.GOVERNANCE.🔗🔥🎺♄💚🔙). v0.3 adds the retrieval-density audit addendum: eight further pathologies, four new generative elements, and the finding that file-level inventory cannot see defects that are only visible in what the retrieval layer does with what the archive serves.",
+  "provenance_deposit": {
+    "deposit_number": 1097,
+    "axn": "AXN:045A.GOVERNANCE.🔗🔥🎺♄💚🔙",
+    "path": "/records/1097/"
   },
-  {
-   "substrate": "PRAXIS (DeepSeek)",
-   "date": "2026-07-18",
-   "verdict": "Approved for progression to Session 2"
-  }
- ],
- "workstream": {
-  "session": 1,
-  "of": 4,
-  "workplan": "/workplan/WORKPLAN-2026-07-18-PM-SIX-FLOW.md",
-  "flow": "Flow 2 — Rhizome-Wide Data Atlas + Deposit-Flow Standing Map"
- },
- "records": [
-  {
-   "name": "atlas-v0.2.md",
-   "path": "/datasets/dataflow-atlas/atlas-v0.2.md",
-   "size_bytes": 64602,
-   "size_human": "63.1 KB",
-   "sha256": "ac77e87f4dfba4a5c3ba4a32511b60f546f1d2b41fc6552a95cd844ee71d074a",
-   "description": "AXN Dataflow Atlas v0.2 — the reviewer-incorporated development. 454 lines, 17 top-level taxonomic classes, 17 pathologies (v0.1 had 10; PATHOLOGY-11 through -17 added per LABOR §8 and PRAXIS §4). §10 review log records both substrate reviews with per-amendment absorption status."
+  "total_files": 8,
+  "total_bytes": 2942354,
+  "total_size_human": "2.81 MB",
+  "reviews_received": [
+    {
+      "substrate": "LABOR (ChatGPT)",
+      "date": "2026-07-18",
+      "verdict": "Aye for Sessions 2-4"
+    },
+    {
+      "substrate": "PRAXIS (DeepSeek)",
+      "date": "2026-07-18",
+      "verdict": "Approved for progression to Session 2"
+    }
+  ],
+  "workstream": {
+    "session": 1,
+    "of": 4,
+    "workplan": "/workplan/WORKPLAN-2026-07-18-PM-SIX-FLOW.md",
+    "flow": "Flow 2 — Rhizome-Wide Data Atlas + Deposit-Flow Standing Map"
   },
-  {
-   "name": "atlas-v0.1-superseded.md",
-   "path": "/datasets/dataflow-atlas/atlas-v0.1-superseded.md",
-   "size_bytes": 37815,
-   "size_human": "36.9 KB",
-   "sha256": "743db552a364afae9031a78124467ca4521aba700b67167e94405646265bf871",
-   "description": "Predecessor v0.1 preserved byte-exact per §3.7 non-destruction. 305 lines. Reviewed by LABOR and PRAXIS at close of Session 1; v0.2 supersedes."
-  },
-  {
-   "name": "review-labor.md",
-   "path": "/datasets/dataflow-atlas/review-labor.md",
-   "size_bytes": 16307,
-   "size_human": "15.9 KB",
-   "sha256": "f3340807ea7d9b9f6a5962ae083e84ca594150c946a98eda47983334c5677928",
-   "description": "LABOR (ChatGPT) structural review of v0.1. Nine numbered sections. Ratified progression to Session 2. Discovered the seventeen-not-fifteen fossil inside the atlas. Delivered the two-axes taxonomic model, the api/data-authority-map.json specification, five architectural pathology-class additions."
-  },
-  {
-   "name": "review-praxis.md",
-   "path": "/datasets/dataflow-atlas/review-praxis.md",
-   "size_bytes": 5882,
-   "size_human": "5.7 KB",
-   "sha256": "ca65e6dfb5897a4696a17ea8685c8e48521da7be8744c26aa78aac2cde4b064e",
-   "description": "PRAXIS (DeepSeek) structural review of v0.1. Four numbered sections plus executive assessment. Ratified progression to Session 2. Contributed the PROVENANCE/ATTESTATION class addition, the REGISTRY.capture displacement, the LLM-ingestion harm mechanism for PATHOLOGY-01, and PATHOLOGY-11 (Index Interdependency Vulnerability)."
-  },
-  {
-   "name": "rhizome-inventory-raw.json",
-   "path": "/datasets/dataflow-atlas/rhizome-inventory-raw.json",
-   "size_bytes": 2231927,
-   "size_human": "2.13 MB",
-   "sha256": "e75ab1123cb51761bab72ec724840a6c783991457048d8c7a4a7b1b7eff7b2c8",
-   "description": "Session-1 raw inventory: every file across seven repos (alexanarch, data-rhizome, mm, peo, rf, leesharks, gkg), each tagged with inferred functional purpose based on path signature. Primary machine-readable substrate for the atlas."
-  },
-  {
-   "name": "displayed-values-inventory-session1.json",
-   "path": "/datasets/dataflow-atlas/displayed-values-inventory-session1.json",
-   "size_bytes": 569580,
-   "size_human": "556.2 KB",
-   "sha256": "1fe82a78c7fa67f0cb2d67deb0159a2c0c12902205190165e28d984dd5e3f422",
-   "description": "Session-1 displayed-value inventory: 1,494 unique numeric-value occurrences across the fleet, classified for source-detachment. Zero of the 1,494 have dynamic indicators. Empirical substrate for PATHOLOGY-01."
-  },
-  {
-   "name": "script-dependency-graph.json",
-   "path": "/datasets/dataflow-atlas/script-dependency-graph.json",
-   "size_bytes": 3986,
-   "size_human": "3.9 KB",
-   "sha256": "53edf8805710e488b712ba636cbdffadecc818a2d3c3381cbb69807dd9a62513",
-   "description": "Session-1 producer→consumer graph across 78 Python scripts, partial (literal-string paths only; full trace deferred to Session 3)."
-  }
- ]
+  "records": [
+    {
+      "name": "atlas-v0.2.md",
+      "path": "/datasets/dataflow-atlas/atlas-v0.2.md",
+      "size_bytes": 64602,
+      "size_human": "63.1 KB",
+      "sha256": "ac77e87f4dfba4a5c3ba4a32511b60f546f1d2b41fc6552a95cd844ee71d074a",
+      "description": "AXN Dataflow Atlas v0.2 — the reviewer-incorporated development. 454 lines, 17 top-level taxonomic classes, 17 pathologies (v0.1 had 10; PATHOLOGY-11 through -17 added per LABOR §8 and PRAXIS §4). §10 review log records both substrate reviews with per-amendment absorption status."
+    },
+    {
+      "name": "atlas-v0.1-superseded.md",
+      "path": "/datasets/dataflow-atlas/atlas-v0.1-superseded.md",
+      "size_bytes": 37815,
+      "size_human": "36.9 KB",
+      "sha256": "743db552a364afae9031a78124467ca4521aba700b67167e94405646265bf871",
+      "description": "Predecessor v0.1 preserved byte-exact per §3.7 non-destruction. 305 lines. Reviewed by LABOR and PRAXIS at close of Session 1; v0.2 supersedes."
+    },
+    {
+      "name": "review-labor.md",
+      "path": "/datasets/dataflow-atlas/review-labor.md",
+      "size_bytes": 16307,
+      "size_human": "15.9 KB",
+      "sha256": "f3340807ea7d9b9f6a5962ae083e84ca594150c946a98eda47983334c5677928",
+      "description": "LABOR (ChatGPT) structural review of v0.1. Nine numbered sections. Ratified progression to Session 2. Discovered the seventeen-not-fifteen fossil inside the atlas. Delivered the two-axes taxonomic model, the api/data-authority-map.json specification, five architectural pathology-class additions."
+    },
+    {
+      "name": "review-praxis.md",
+      "path": "/datasets/dataflow-atlas/review-praxis.md",
+      "size_bytes": 5882,
+      "size_human": "5.7 KB",
+      "sha256": "ca65e6dfb5897a4696a17ea8685c8e48521da7be8744c26aa78aac2cde4b064e",
+      "description": "PRAXIS (DeepSeek) structural review of v0.1. Four numbered sections plus executive assessment. Ratified progression to Session 2. Contributed the PROVENANCE/ATTESTATION class addition, the REGISTRY.capture displacement, the LLM-ingestion harm mechanism for PATHOLOGY-01, and PATHOLOGY-11 (Index Interdependency Vulnerability)."
+    },
+    {
+      "name": "rhizome-inventory-raw.json",
+      "path": "/datasets/dataflow-atlas/rhizome-inventory-raw.json",
+      "size_bytes": 2231927,
+      "size_human": "2.13 MB",
+      "sha256": "e75ab1123cb51761bab72ec724840a6c783991457048d8c7a4a7b1b7eff7b2c8",
+      "description": "Session-1 raw inventory: every file across seven repos (alexanarch, data-rhizome, mm, peo, rf, leesharks, gkg), each tagged with inferred functional purpose based on path signature. Primary machine-readable substrate for the atlas."
+    },
+    {
+      "name": "displayed-values-inventory-session1.json",
+      "path": "/datasets/dataflow-atlas/displayed-values-inventory-session1.json",
+      "size_bytes": 569580,
+      "size_human": "556.2 KB",
+      "sha256": "1fe82a78c7fa67f0cb2d67deb0159a2c0c12902205190165e28d984dd5e3f422",
+      "description": "Session-1 displayed-value inventory: 1,494 unique numeric-value occurrences across the fleet, classified for source-detachment. Zero of the 1,494 have dynamic indicators. Empirical substrate for PATHOLOGY-01."
+    },
+    {
+      "name": "script-dependency-graph.json",
+      "path": "/datasets/dataflow-atlas/script-dependency-graph.json",
+      "size_bytes": 3986,
+      "size_human": "3.9 KB",
+      "sha256": "53edf8805710e488b712ba636cbdffadecc818a2d3c3381cbb69807dd9a62513",
+      "description": "Session-1 producer→consumer graph across 78 Python scripts, partial (literal-string paths only; full trace deferred to Session 3)."
+    },
+    {
+      "name": "atlas-v0.3-addendum.md",
+      "path": "/datasets/dataflow-atlas/atlas-v0.3-addendum.md",
+      "size_bytes": 12255,
+      "size_human": "12.0 KB",
+      "sha256": "a33f87c5226b1a4a49df660b48ef99635d7762c7f08d2e19b70526ea38c7575b",
+      "description": "v0.3 addendum: the retrieval-density audit of 2026-07-25/26. Registers four new generative elements (capture-deposit link map, concept map, mirror map, medium seed), proposes a DERIVED.identity class, documents the new `identity` pipeline stage, and extends the pathology register with PATHOLOGY-18 through -25 — six of them self-inflicted and invisible to file-level inventory, surfaced only by pointing the archive's own reception instrument at the archive. Five closed same-day; two (concept surface, sameAs emission) have maps built and surfaces pending. Does not supersede v0.2, which stands byte-exact per §3.7."
+    }
+  ]
 }

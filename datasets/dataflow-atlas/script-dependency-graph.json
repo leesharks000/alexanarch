@@ -147,5 +147,39 @@
     "scripts/build_effective_acts_registry.py",
     "scripts/build_semantic_addresses.py",
     "scripts/mint_deposit.py"
-  ]
+  ],
+  "v0_3_additions": {
+    "note": "Added by the 2026-07-25/26 retrieval-density audit. All three are full rebuilds and idempotent; all three are invoked by deposit_pipeline.py stage `identity`.",
+    "producers": {
+      "scripts/resolve_capture_links.py": [
+        "data/capture-deposit-links.json"
+      ],
+      "scripts/build_concept_map.py": [
+        "data/concept-map.json"
+      ],
+      "scripts/build_mirror_map.py": [
+        "data/mirror-map.json"
+      ]
+    },
+    "consumers": {
+      "scripts/build_semantic_addresses.py": [
+        "data/capture-deposit-links.json"
+      ],
+      "wire_deposit.py": [
+        "data/capture-deposit-links.json",
+        "data/doi-resolution-index.json"
+      ],
+      "scripts/build_mirror_map.py": [
+        "data/doi-resolution-index.json",
+        "data/medium-seed.json"
+      ],
+      "scripts/build_concept_map.py": [
+        "data/registry.json"
+      ]
+    },
+    "pending_consumers": {
+      "data/concept-map.json": "concept pages + isPartOf/version emission (PATHOLOGY-23)",
+      "data/mirror-map.json": "sameAs emission for the 1,292 safe links (PATHOLOGY-24)"
+    }
+  }
 }
