@@ -29,15 +29,23 @@
     "soft/body": 177
   },
   "severance_rollup": {
-    "captures_on_severed_works": 65,
-    "captures_on_unsevered_works": 6,
-    "captures_with_no_doi_record": 77,
-    "status_counts": {
+    "CORRECTION": "The first published rollup (2026-07-25) reported 92% of DOI-bearing captured works as severed. That figure was an artefact of the estimator, which binned a capture as severed if ANY status in its list contained 410 and as unsevered only if none did; deposits commonly carry several DOIs with mixed statuses. Corrected below by comparing status counts against the base rate of the same identifier population.",
+    "status_counts_captured": {
       "RECOVERED": 34,
       "410_GONE": 65,
       "RECOVERED_UNLINKED": 26,
       "SEMI_RESTORED": 7
-    }
+    },
+    "status_counts_index_base": {
+      "410_GONE": 1012,
+      "RECOVERED": 422,
+      "RECOVERED_UNLINKED": 415,
+      "SEMI_RESTORED": 87,
+      "TYPO_IMMUNE_SURVIVOR": 2
+    },
+    "severed_share_captured": 49.2,
+    "severed_share_index_base": 52.2,
+    "finding": "NULL. Captured works are not enriched for severance (49.2% vs 52.2% base). The severance hypothesis is not supported at this sample size."
   },
   "links": {
     "retrieval-layer-theological-reception": {
