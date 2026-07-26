@@ -8,6 +8,141 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from scripts.render_navbar import render_navbar
 from scripts.glyph_aria import axn_aria_label as _axn_aria
 
+# --- EA-RETRIEVAL-DENSITY-01 Task 6 ---
+_DOI_INDEX_CACHE = None
+
+
+def _load_doi_index():
+    """AXN (full string and bare hex) -> sorted list of doi.org URLs.
+
+    Joins on the mappings[].axn field (1929/1938 rows carry it); live_urls in
+    that file are blog/registry links, not record pages, so axn is the key."""
+    global _DOI_INDEX_CACHE
+    if _DOI_INDEX_CACHE is not None:
+        return _DOI_INDEX_CACHE
+    out = {}
+    try:
+        with open('data/doi-resolution-index.json') as fh:
+            idx = json.load(fh)
+        for row in idx.get('mappings', []):
+            axn = row.get('axn')
+            url = row.get('doi_url') or (
+                f"https://doi.org/{row['dead_doi']}" if row.get('dead_doi') else None)
+            if not axn or not url:
+                continue
+            for key in {axn, (re.match(r'AXN:([0-9A-Fa-f]{4})', axn).group(1).upper()
+                              if re.match(r'AXN:([0-9A-Fa-f]{4})', axn) else axn)}:
+                out.setdefault(key, set()).add(url)
+        out = {k: sorted(v) for k, v in out.items()}
+    except Exception:
+        pass
+    _DOI_INDEX_CACHE = out
+    return out
+
+
+def _split_frontmatter(raw):
+    """Return (meta_dict, body). Tolerates blank lines after the opening fence
+    (the #110 shape: '---\n\n\ntitle: ...'), which the markdown renderer was
+    treating as a horizontal rule."""
+    if not re.match(r'^\s*---\s*\n', raw):
+        return {}, raw
+    lines = raw.split('\n')
+    start = next((i for i, l in enumerate(lines) if l.strip() == '---'), None)
+    if start is None:
+        return {}, raw
+    close = None
+    for i in range(start + 1, min(len(lines), start + 200)):
+        if lines[i].strip() == '---':
+            close = i
+            break
+    meta, block = {}, None
+    if close is not None:
+        block = lines[start + 1:close]
+        body = '\n'.join(lines[close + 1:])
+    else:
+        # unterminated fence: consume the leading run of key: value lines
+        end = start + 1
+        seen = False
+        for i in range(start + 1, len(lines)):
+            s = lines[i]
+            if not s.strip():
+                if seen and not re.match(r'^\s', s):
+                    pass
+                end = i + 1
+                continue
+            if re.match(r'^\s*#{0,6}\s*[A-Za-z_][A-Za-z0-9_]{1,30}:\s', s) or re.match(r'^\s*-\s+\S', s) or re.match(r'^\s+\S', s):
+                seen = True
+                end = i + 1
+                continue
+            break
+        if not seen:
+            return {}, raw
+        block = lines[start + 1:end]
+        body = '\n'.join(lines[end:])
+    key = None
+    for l in (block or []):
+        m = re.match(r'^\s*#{0,6}\s*([A-Za-z_][A-Za-z0-9_]{1,30}):\s*(.*)$', l)
+        if m:
+            key = m.group(1)
+            val = m.group(2).strip().strip('"').strip("'")
+            meta[key] = val if val else []
+        elif key and re.match(r'^\s*-\s+', l):
+            if not isinstance(meta.get(key), list):
+                meta[key] = []
+            meta[key].append(re.sub(r'^\s*-\s+', '', l).strip().strip('"').strip("'"))
+    return meta, body.lstrip('\n')
+
+
+_MD_STRIP = [
+    (re.compile(r'```.*?```', re.S), ' '),
+    (re.compile(r'!\[[^\]]*\]\([^)]*\)'), ' '),
+    (re.compile(r'\[([^\]]*)\]\([^)]*\)'), r'\1'),
+    (re.compile(r'^\s{0,3}#{1,6}\s*', re.M), ''),
+    (re.compile(r'[*_`>|]+'), ' '),
+    (re.compile(r'^\s*-{3,}\s*$', re.M), ' '),
+]
+
+ARTICLE_BODY_CAP = 250_000
+
+
+def _plain_body(body):
+    """Markdown -> plain text for schema.org articleBody."""
+    t = body
+    for rx, rep in _MD_STRIP:
+        t = rx.sub(rep, t)
+    t = re.sub(r'[ \t]+', ' ', t)
+    t = re.sub(r'\n{3,}', '\n\n', t).strip()
+    if len(t) > ARTICLE_BODY_CAP:
+        cut = t.rfind('\n\n', 0, ARTICLE_BODY_CAP)
+        t = t[:cut if cut > 0 else ARTICLE_BODY_CAP].rstrip() + '\n\n[…full text continues; see encoding.contentUrl]'
+    return t
+
+
+def _kw_list(d, fm):
+    """Registry keywords may be a list, a comma string, or a raw markdown list."""
+    kw = d.get('keywords') or []
+    if isinstance(kw, str):
+        kw = [x.strip() for x in kw.split(',')]
+    fkw = fm.get('keywords') or []
+    if isinstance(fkw, str):
+        fkw = [x.strip() for x in fkw.split(',')]
+    # frontmatter subject terms lead; registry terms (often generic) follow
+    seen = set()
+    merged = []
+    for k in (list(fkw) + list(kw)):
+        if k and k.lower() not in seen:
+            seen.add(k.lower())
+            merged.append(k)
+    kw = merged
+    if isinstance(kw, str):
+        if '\n-' in kw or kw.lstrip().startswith('-'):
+            kw = [re.sub(r'^\s*-\s*', '', x).strip() for x in kw.split('\n')]
+        else:
+            kw = [x.strip() for x in kw.split(',')]
+    return [k for k in (kw or []) if k and len(k) < 120][:40]
+# --- end Task 6 helpers ---
+
+
 def wire_deposit(deposit_number, concepts=None, wiki_article=None, entity_triples=None):
     """
     Wire reading results for a single deposit into:
@@ -199,7 +334,8 @@ def regenerate_static_page(d, eidx, registry=None):
             hex_id = m.group(1)
     
     # JSON-LD
-    jsonld = json.dumps({
+    _rec_url = f"https://www.alexanarch.org/s/records/{dn}/"
+    _ld = {
         "@context": "https://schema.org",
         "@type": "ScholarlyArticle",
         "name": d['title'],
@@ -209,8 +345,18 @@ def regenerate_static_page(d, eidx, registry=None):
         "description": d.get('description', '')[:300],
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "publisher": {"@type": "Organization", "name": "Alexanarch"},
-        "keywords": ", ".join(d.get('keywords', [])),
-    }, ensure_ascii=False)
+        "keywords": ", ".join(d.get('keywords', []) if isinstance(d.get('keywords'), list) else []),
+        "url": _rec_url,
+        "mainEntityOfPage": {"@type": "WebPage", "@id": _rec_url},
+        "inLanguage": "en",
+        "isPartOf": {"@type": "Collection", "name": "Alexanarch",
+                     "url": "https://www.alexanarch.org/"},
+    }
+    _didx = _load_doi_index()
+    _dois = _didx.get(d.get('axn', ''), []) or _didx.get((hex_id or '').upper(), [])
+    if _dois:
+        _ld["sameAs"] = _dois
+    jsonld = json.dumps(_ld, ensure_ascii=False)
     
     # Read full text
     # v1.1.1 fix: prefer the registry's declared full_text_path (the canonical
@@ -223,7 +369,7 @@ def regenerate_static_page(d, eidx, registry=None):
     _declared = d.get('full_text_path')
     if _declared and not os.path.exists(_declared.lstrip('/')):
         raise RuntimeError(
-            f"wire_deposit #{deposit_number}: full_text_path {_declared} declared "
+            f"wire_deposit #{dn}: full_text_path {_declared} declared "
             f"in registry but the file does not exist on disk; refusing to render "
             f"a description-only page. Write the canonical text first, then wire."
         )
@@ -270,6 +416,32 @@ def regenerate_static_page(d, eidx, registry=None):
         else:
             with open(best_path) as f:
                 raw = f.read()
+            # Task 6: frontmatter is metadata, not prose. Strip it from the
+            # rendered body (375/1379 deposits were emitting it as <p> text)
+            # and retain it for structured data.
+            _fm, raw = _split_frontmatter(raw)
+            _plain = _plain_body(raw)
+            if _plain:
+                _ld["articleBody"] = _plain
+                _ld["wordCount"] = len(_plain.split())
+            _ld["encoding"] = {
+                "@type": "MediaObject",
+                "contentUrl": "https://www.alexanarch.org/" + best_path.lstrip('/'),
+                "encodingFormat": "text/markdown",
+                "contentSize": str(best_size),
+            }
+            _kws = _kw_list(d, _fm)
+            if _kws:
+                _ld["keywords"] = ", ".join(_kws)
+            if _fm.get('series'):
+                _ld.setdefault("isPartOf", {})
+                _ld["isPartOf"] = [
+                    {"@type": "Collection", "name": "Alexanarch",
+                     "url": "https://www.alexanarch.org/"},
+                    {"@type": "PublicationIssue", "name": str(_fm['series'])},
+                ]
+                _ld["identifier"] = [d['axn'], str(_fm['series'])]
+            jsonld = json.dumps(_ld, ensure_ascii=False)
             lines = raw.split('\n')
             ft_lines = []
             in_pre = False

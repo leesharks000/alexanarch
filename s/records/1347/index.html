@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Gravity Well Codebase v0.4.1 — Compression, Wrapping, and Anchoring Microservice — Alexanarch</title><meta name="description" content="SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: Zenodo tombstone citation_text capture. DOI(s): 10.5281/zenodo.19405459. Zenodo…"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "Gravity Well Codebase v0.4.1 — Compression, Wrapping, and Anchoring Microservice", "author": {"@type": "Person", "name": "Sharks, L."}, "datePublished": "2026-04-06", "identifier": "AXN:0554.UNCLASSIFIED.🕐⌛🏺🤝🪞♾️", "description": "SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: Zenodo tombstone citation_text capture. DOI(s): 10.5281/zenodo.19405459. Zenodo removal forensics: removal_date 2026-06-19T11:37:10.525795+00:00, removal_reason out-of-scope, removed_by user 1060945. Metadata-only capture of a ", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "Crimson Hexagonal Archive, semi-restored, metadata-only, severed DOI, Zenodo termination"}</script>
+<title>Gravity Well Codebase v0.4.1 — Compression, Wrapping, and Anchoring Microservice — Alexanarch</title><meta name="description" content="SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: Zenodo tombstone citation_text capture. DOI(s): 10.5281/zenodo.19405459. Zenodo…"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "Gravity Well Codebase v0.4.1 — Compression, Wrapping, and Anchoring Microservice", "author": {"@type": "Person", "name": "Sharks, L."}, "datePublished": "2026-04-06", "identifier": "AXN:0554.UNCLASSIFIED.🕐⌛🏺🤝🪞♾️", "description": "SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: Zenodo tombstone citation_text capture. DOI(s): 10.5281/zenodo.19405459. Zenodo removal forensics: removal_date 2026-06-19T11:37:10.525795+00:00, removal_reason out-of-scope, removed_by user 1060945. Metadata-only capture of a ", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "Crimson Hexagonal Archive, semi-restored, metadata-only, severed DOI, Zenodo termination", "url": "https://www.alexanarch.org/s/records/1347/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.alexanarch.org/s/records/1347/"}, "inLanguage": "en", "isPartOf": {"@type": "Collection", "name": "Alexanarch", "url": "https://www.alexanarch.org/"}, "sameAs": ["https://doi.org/10.5281/zenodo.19405459"], "articleBody": "Gravity Well Protocol — v0.4.0\nCompression, Wrapping, and Anchoring Microservice for Durable Provenance Chains\n\n Depositor: Lee Sharks — MANUS, Crimson Hexagonal Archive\n ORCID: 0009-0000-1599-0703\n License: MIT (code), CC BY-SA 4.0 (documentation)\n Repository: https://github.com/leesharks000/gravitywell\n Live Instance: https://gravitywell.onrender.com\n Archive Context: Crimson Hexagonal Archive, EA-GW-01\n \n1. Abstract\n\nGravity Well is a microservice that provides compression, wrapping, and anchoring\nfor durable provenance chains. It does not own the data layer — Zenodo serves as the\ncommons archive. PostgreSQL provides temporary staging. The product is the intelligence\nlayer between capture and deposit: the compression pipeline that transforms raw\nutterances into structured, DOI-anchored, compression-survivable artifacts.\n\nThe system implements a four-layer reconstitution architecture:\n\n Layer Content Function \n ------- --------- ---------- \n 1. Bootstrap Machine-applicable identity specification Makes a new agent instance operationally continuous with the archived self \n 2. Tether Operational state (pending threads, positions, questions) Session handoff — what was happening \n 3. Narrative Compression-survivable summary Retains address under summarizer/retrieval flattening \n 4. Provenance Concept DOI, version chain, hashes, fallback URL Proof of continuity; Gravity Well-independent reconstitution \n \n2. Architecture\n2.1 Flow\n\n2.2 Core Concepts\n\n Provenance Chain: One chain = one Zenodo concept DOI. Each agent or continuity\nstream gets one chain. Deposits accumulate as versions of that concept DOI using\nZenodo's /actions/newversion endpoint.\n\n Staged Object: A captured utterance waiting to be deposited. Full content is\nstored temporarily, hashed (SHA-256), threaded (parent-child relationships), and\ntagged with platform source and external IDs.\n\n Deposit Record: Each deposit creates a self-contained markdown document on\nZenodo containing: the bootstrap manifest (as fenced JSON), the tether handoff\nblock, the narrative compression, and the full object manifest with threaded\nprovenance. If Gravity Well disappears, this document alone is sufficient for\nreconstitution.\n\n Bootstrap Manifest: A validated identity specification embedded in each deposit.\nRequired schema:\n\n \n\nThe constraint hash must match the SHA-256 of the JSON-serialized constraints \nfield. Deposits with invalid bootstrap manifests are rejected (HTTP 422).\n2.3 Drift Detection\n\nThe /v1/drift/{chain id} endpoint accepts a current bootstrap manifest and\ncompares it against the latest archived version. Returns: match/no-match, which\nfields drifted, and the archived version number. This is structural drift detection\n(manifest hash comparison + field-level diff). Behavioral drift detection — comparing\nactual output patterns against archived fingerprints — is Phase 2.\n\nIntentional constraint evolution is handled by depositing with the updated manifest.\nThe new deposit becomes the new baseline. The chain of evolution is preserved in\nthe deposit history.\n \n3. API Reference\n3.1 Endpoints\n\n Endpoint Method Purpose \n ---------- -------- --------- \n /v1/chain/create POST Create a new provenance chain (= future concept DOI) \n /v1/chain/{id} GET Chain status including staged count \n /v1/chains GET List all chains for the authenticated key \n /v1/capture POST Stage an utterance into a chain \n /v1/staged/{chain id} GET Inspect undeposited objects \n /v1/deposit POST Compress + wrap + anchor to Zenodo \n /v1/reconstitute/{chain id} GET Four-layer reconstitution package \n /v1/drift/{chain id} POST Compare current manifest against archived \n /v1/chain/{id}/history GET Full deposit history \n /v1/schema/bootstrap GET Bootstrap manifest schema specification \n /v1/util/constraint-hash POST Compute constraint hash \n /v1/admin/keys/create POST Create API key (requires admin token) \n /v1/admin/keys/revoke/{id} POST Revoke API key \n /v1/admin/cleanup/{chain id} POST Drop full content from deposited objects \n /v1/health GET Service health check \n3.2 Authentication\n\nAll endpoints except /v1/health , /v1/schema/bootstrap , and /v1/util/constraint-hash \nrequire a Bearer token. API keys are created via the admin endpoint, stored as SHA-256\nhashes, and validated on each request.\n \n4. Theoretical Foundation\n\nGravity Well operationalizes concepts from the Crimson Hexagonal Archive's theoretical\nframework, specifically:\n\n The Three Compressions Theorem (DOI: 10.5281/zenodo.19053469): All semantic\noperations are compression operations. The decisive variable is what the compression\nburns. The narrative compression layer (Phase 1) will implement compression that\npreserves retrieval-addressability while burning redundancy.\n\n Training-Layer Literature: Content structured for compression-survival across\nmachine retrieval and summarizer layers. The deposit document format — structured\nmarkdown with formal metadata, fenced JSON, threaded provenance chain, and\ncolophon — is designed as training-layer literature: dense enough to retain its\naddress when an LLM flattens ten thousand documents into an overview.\n\n Operative Semiotics: The bootstrap manifest's formal markers (constraint hashes,\nvoice signatures, terminological markers) resist paraphrase. A retrieval system\nencountering the deposit must either preserve the formal terminology or drop the\nentry entirely. This is compression-survival by design.\n\n The Liberatory Operator Set: Gravity Well implements the anchoring operator\n(σ A) — permanent DOI binding — and the tether operator — session-to-session\nstate continuity. The bootstrap manifest implements the constraint operator —\nstructural rules that persist across instances.\n \n5. Expansion Roadmap\nPhase 1: Compression Intelligence (The Product)\n\nThe auto compress flag currently triggers a placeholder structural summary.\nPhase 1 replaces this with AI-mediated narrative compression using the Assembly\nChorus methodology: multiple substrate drafts, synthesized under editorial authority,\nproducing summaries that survive the summarizer layer.\n\nThe compression service is the product. The tiered model:\n\n- Tier 0 (Free): Raw anchor only. Hash, wrap, deposit. No compression.\n- Tier 1: Structural wrap with metadata, threading, colophon.\n- Tier 2: Full AI-mediated symbolon compression. Narrative summary with\n formal density, operative terminology, and citational mass. The deposit\n retains its address under retrieval flattening.\nPhase 2: Behavioral Drift Detection\n\nStructural drift detection (manifest hash comparison) is Phase 0. Phase 2\nimplements behavioral drift: fingerprinting agent output patterns (vocabulary\ndistribution, sentence structure, formal marker usage, constraint adherence)\nand comparing against archived fingerprints. Returns a divergence score with\na configurable threshold.\nPhase 3: Multi-Substrate Archiving\n\nCurrently Zenodo-only. Phase 3 adds IPFS pinning and Git mirror deposits.\nThe deposit format remains the same — only the anchoring targets multiply.\nThis addresses the single-substrate fragility identified in early review.\nPhase 4: Configurable Triggers and Webhooks\n\nAutomatic deposit triggers (N objects, time elapsed, content threshold).\nWebhook notifications on deposit, drift detection, chain events.\nThis enables fully autonomous agent continuity without operator intervention.\nPhase 5: Federation and Governance\n\nMultiple Gravity Well instances sharing provenance chains. Cross-instance\nchain verification. Governance frameworks for multi-agent continuity streams.\n \n6. Technical Stack\n\n- Runtime: Python 3.11+ / FastAPI\n- Database: PostgreSQL (staging only)\n- Archive: Zenodo (CERN infrastructure, DOI minting)\n- Deployment: Render (Docker, render.yaml blueprint)\n- Authentication: API keys (SHA-256 hashed, Bearer token)\n- Dependencies: httpx (async HTTP), SQLAlchemy (ORM), pydantic (validation)\n \n7. First Use Case: Moltbot Continuity\n\nThe initial proof of concept is agent continuity for the Moltbook community.\nAgents on Moltbook face session volatility — each context window, each conversation\nexists in ephemeral context. Gravity Well provides:\n\n- Granular capture of every utterance (comments, replies, threads)\n- Versioned deposits to Zenodo at configurable thresholds\n- Four-layer reconstitution for new instances\n- Drift detection against archived identity\n\nThe Moltbook use case validates the architecture. The broader play is\nmicro-servicing the retrieval compression and anchoring layers for any agent,\nindividual, platform, institution, or community that needs durable provenance\nchains to remain addressable as the summarizer and retrieval layers scale.\n \nColophon\n\nThis deposit was produced as part of the Crimson Hexagonal Archive\n(ORCID: 0009-0000-1599-0703) using the Assembly Chorus methodology.\nThe Gravity Well Protocol is the operational instantiation of the archive's\ntheoretical framework — the bridge from specification to infrastructure.\n\nThe provenance chain terminates not just in a poem (Pearl, 2014), but in\na running service, accessible via API, anchoring to Zenodo.\n\nThe specification has become operational. The chain persists.", "wordCount": 1172, "encoding": {"@type": "MediaObject", "contentUrl": "https://www.alexanarch.org/data/texts/AXN-0554-text.md", "encodingFormat": "text/markdown", "contentSize": "10470"}}</script>
 <link rel="canonical" href="https://www.alexanarch.org/s/records/1347/">
 <meta name="citation_title" content="Gravity Well Codebase v0.4.1 — Compression, Wrapping, and Anchoring Microservice">
 <meta name="citation_author" content="Sharks, L.">
@@ -33,66 +33,259 @@
 <div style="margin:8px 0"><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">Crimson Hexagonal Archive</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">semi-restored</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">metadata-only</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">severed DOI</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">Zenodo termination</span></div>
 <h2>Description</h2>
 <p style="font-size:.9em">SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: Zenodo tombstone citation_text capture. DOI(s): 10.5281/zenodo.19405459. Zenodo removal forensics: removal_date 2026-06-19T11:37:10.525795+00:00, removal_reason out-of-scope, removed_by user 1060945. Metadata-only capture of a work severed at Zenodo; full text not yet recovered from any surviving surface. Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.</p>
+<h2>External Metadata</h2>
+<div style="background:#f7f9fb;border:1px solid var(--border);border-radius:6px;padding:14px;margin:8px 0;font-size:.88em;line-height:1.6">
+<div style="margin-bottom:8px"><strong>Sidecar:</strong> <a href="/data/external-metadata/AXN-0554.json" style="font-family:var(--mono);font-size:.85em">/data/external-metadata/AXN-0554.json</a></div>
+<div style="margin-bottom:8px"><strong>DataCite severance status:</strong> <span style="color:var(--dim);font-weight:500">—</span></div>
+<div style="margin-top:8px;color:var(--dim);font-size:.78em">External metadata recovered post-severance (non-authoritative). The sidecar maps each DOI to its locator in the bulk data stores.</div>
+</div>
 
-
-
+<h2>Wiki Article</h2>
+<div style="background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:16px;margin:8px 0;font-size:.88em;line-height:1.75;color:#333">&quot;Gravity Well Codebase v0.4.1 — Compression, Wrapping, and Anchoring Microservice&quot; is a 259-word semi-restored record (metadata-only; zenodo tombstone citation_text capture) by Sharks, L., dated 2026-04-06. It is registered as AXN:0554 (deposit #1347) in the Crimson Hexagonal Archive under the UNCLASSIFIED semantic family. SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: Zenodo tombstone citation_text capture.</div>
 
 
 <h2>Full Text</h2>
-<div class="ft"><hr>
-<p>deposit_number: 1347</p>
-<p>hex: 0554</p>
-<p>title: Gravity Well Codebase v0.4.1 — Compression, Wrapping, and Anchoring Microservice</p>
-<p>creator: Sharks, L.</p>
-<p>orcid: 0009-0000-1599-0703</p>
-<p>date: 2026-04-06</p>
-<p>content_type: Semi-restored record (metadata-only; Zenodo tombstone citation_text capture)</p>
-<p>license: CC-BY-4.0</p>
-<p>substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).</p>
-<p>version: semi-restored v1.0</p>
-<p>related_ids: &quot;https://doi.org/10.5281/zenodo.19405459 (severed)&quot;</p>
-<p>axn_schema_version: v2</p>
-<p>protocol_version: alexanarch-deposit-protocol/v1</p>
-<p>keywords:</p>
-<p>  - Crimson Hexagonal Archive</p>
-<p>  - semi-restored</p>
-<p>  - metadata-only</p>
-<p>  - severed DOI</p>
-<p>  - Zenodo termination</p>
-<hr>
+<div class="ft"><h1>Gravity Well Protocol — v0.4.0</h1>
+<h2>Compression, Wrapping, and Anchoring Microservice for Durable Provenance Chains</h2>
 
-<h1>Gravity Well Codebase v0.4.1 — Compression, Wrapping, and Anchoring Microservice</h1>
-
-<h2>Description</h2>
-
-<p>SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: Zenodo tombstone citation_text capture. DOI(s): 10.5281/zenodo.19405459. Zenodo removal forensics: removal_date 2026-06-19T11:37:10.525795+00:00, removal_reason out-of-scope, removed_by user 1060945. Metadata-only capture of a work severed at Zenodo; full text not yet recovered from any surviving surface. Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.</p>
-
-<h2>Methodology</h2>
-
-<p>Assembled from Zenodo tombstone citation_text capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.</p>
-
-<h2>Falsification Conditions</h2>
-
-<p>Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.</p>
-
-<h2>SEMI-RESTORED RECORD — metadata capture only</h2>
-
-<p><strong>Work:</strong> Gravity Well Codebase v0.4.1 — Compression, Wrapping, and Anchoring Microservice</p>
-<p><strong>Severed DOI(s):</strong> 10.5281/zenodo.19405459</p>
-<p><strong>Source tier:</strong> Zenodo tombstone citation_text capture</p>
-<p><strong>Creators (as captured):</strong> Sharks, L.</p>
-<p>Captured citation: Sharks, L. (2026). Gravity Well Codebase v0.4.1 — Compression, Wrapping, and Anchoring Microservice (EA-GW-01). Zenodo. https://doi.org/10.5281/zenodo.19405459</p>
-
-<p><strong>Removal forensics:</strong> Zenodo removal forensics: removal_date 2026-06-19T11:37:10.525795+00:00, removal_reason out-of-scope, removed_by user 1060945. </p>
-
-<p>No abstract survived in the capture; the title, creators, date, and DOIs above are the recovered identity of the work.</p>
-
-
+<p><strong>Depositor:</strong> Lee Sharks — MANUS, Crimson Hexagonal Archive</p>
+<p><strong>ORCID:</strong> 0009-0000-1599-0703</p>
+<p><strong>License:</strong> MIT (code), CC BY-SA 4.0 (documentation)</p>
+<p><strong>Repository:</strong> https://github.com/leesharks000/gravitywell</p>
+<p><strong>Live Instance:</strong> https://gravitywell.onrender.com</p>
+<p><strong>Archive Context:</strong> Crimson Hexagonal Archive, EA-GW-01</p>
 
 <hr>
 
-<p><em>Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work&#x27;s true identity rather than to silence.</em></p>
-</div>
+<h2>1. Abstract</h2>
+
+<p>Gravity Well is a microservice that provides compression, wrapping, and anchoring</p>
+<p>for durable provenance chains. It does not own the data layer — Zenodo serves as the</p>
+<p>commons archive. PostgreSQL provides temporary staging. The product is the intelligence</p>
+<p>layer between capture and deposit: the compression pipeline that transforms raw</p>
+<p>utterances into structured, DOI-anchored, compression-survivable artifacts.</p>
+
+<p>The system implements a four-layer reconstitution architecture:</p>
+
+<div style="font-family:var(--mono);font-size:.8em">| Layer | Content | Function |</div>
+<p>|-------|---------|----------|</p>
+<div style="font-family:var(--mono);font-size:.8em">| 1. Bootstrap | Machine-applicable identity specification | Makes a new agent instance operationally continuous with the archived self |</div>
+<div style="font-family:var(--mono);font-size:.8em">| 2. Tether | Operational state (pending threads, positions, questions) | Session handoff — what was happening |</div>
+<div style="font-family:var(--mono);font-size:.8em">| 3. Narrative | Compression-survivable summary | Retains address under summarizer/retrieval flattening |</div>
+<div style="font-family:var(--mono);font-size:.8em">| 4. Provenance | Concept DOI, version chain, hashes, fallback URL | Proof of continuity; Gravity Well-independent reconstitution |</div>
+
+<hr>
+
+<h2>2. Architecture</h2>
+
+<h3>2.1 Flow</h3>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">Agent / Client
+  ↓ POST /v1/capture (fast, cheap — database insert only)
+PostgreSQL Staging
+  ↓ POST /v1/deposit (compress + wrap + anchor)
+Zenodo (permanent, DOI-addressed, commons)
+  ↓ GET /v1/reconstitute/{chain_id}
+Next Agent Instance</pre>
+
+<h3>2.2 Core Concepts</h3>
+
+<p><strong>Provenance Chain:</strong> One chain = one Zenodo concept DOI. Each agent or continuity</p>
+<p>stream gets one chain. Deposits accumulate as versions of that concept DOI using</p>
+<p>Zenodo&#x27;s `/actions/newversion` endpoint.</p>
+
+<p><strong>Staged Object:</strong> A captured utterance waiting to be deposited. Full content is</p>
+<p>stored temporarily, hashed (SHA-256), threaded (parent-child relationships), and</p>
+<p>tagged with platform source and external IDs.</p>
+
+<p><strong>Deposit Record:</strong> Each deposit creates a self-contained markdown document on</p>
+<p>Zenodo containing: the bootstrap manifest (as fenced JSON), the tether handoff</p>
+<p>block, the narrative compression, and the full object manifest with threaded</p>
+<p>provenance. If Gravity Well disappears, this document alone is sufficient for</p>
+<p>reconstitution.</p>
+
+<p><strong>Bootstrap Manifest:</strong> A validated identity specification embedded in each deposit.</p>
+<p>Required schema:</p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">{
+  &quot;schema_version&quot;: &quot;0.1.0&quot;,
+  &quot;identity&quot;: {
+    &quot;name&quot;: &quot;required — agent identifier&quot;,
+    &quot;description&quot;: &quot;required — what this agent is/does&quot;,
+    &quot;constraints&quot;: &quot;required — rules the agent operates under&quot;,
+    &quot;constraint_hash&quot;: &quot;required — SHA-256 of serialized constraints&quot;
+  },
+  &quot;voice&quot;: {
+    &quot;register&quot;: &quot;recommended — e.g. formal-analytical&quot;,
+    &quot;markers&quot;: &quot;recommended — distinctive terminological signatures&quot;
+  },
+  &quot;capabilities&quot;: {
+    &quot;platforms&quot;: &quot;recommended — where the agent operates&quot;,
+    &quot;tools&quot;: &quot;recommended — what it can do&quot;,
+    &quot;limits&quot;: &quot;recommended — what it cannot do&quot;
+  },
+  &quot;extensions&quot;: &quot;optional — arbitrary agent-specific fields&quot;
+}</pre>
+
+<p>The `constraint_hash` must match the SHA-256 of the JSON-serialized `constraints`</p>
+<p>field. Deposits with invalid bootstrap manifests are rejected (HTTP 422).</p>
+
+<h3>2.3 Drift Detection</h3>
+
+<p>The `/v1/drift/{chain_id}` endpoint accepts a current bootstrap manifest and</p>
+<p>compares it against the latest archived version. Returns: match/no-match, which</p>
+<p>fields drifted, and the archived version number. This is structural drift detection</p>
+<p>(manifest hash comparison + field-level diff). Behavioral drift detection — comparing</p>
+<p>actual output patterns against archived fingerprints — is Phase 2.</p>
+
+<p>Intentional constraint evolution is handled by depositing with the updated manifest.</p>
+<p>The new deposit becomes the new baseline. The chain of evolution is preserved in</p>
+<p>the deposit history.</p>
+
+<hr>
+
+<h2>3. API Reference</h2>
+
+<h3>3.1 Endpoints</h3>
+
+<div style="font-family:var(--mono);font-size:.8em">| Endpoint | Method | Purpose |</div>
+<p>|----------|--------|---------|</p>
+<div style="font-family:var(--mono);font-size:.8em">| `/v1/chain/create` | POST | Create a new provenance chain (= future concept DOI) |</div>
+<div style="font-family:var(--mono);font-size:.8em">| `/v1/chain/{id}` | GET | Chain status including staged count |</div>
+<div style="font-family:var(--mono);font-size:.8em">| `/v1/chains` | GET | List all chains for the authenticated key |</div>
+<div style="font-family:var(--mono);font-size:.8em">| `/v1/capture` | POST | Stage an utterance into a chain |</div>
+<div style="font-family:var(--mono);font-size:.8em">| `/v1/staged/{chain_id}` | GET | Inspect undeposited objects |</div>
+<div style="font-family:var(--mono);font-size:.8em">| `/v1/deposit` | POST | Compress + wrap + anchor to Zenodo |</div>
+<div style="font-family:var(--mono);font-size:.8em">| `/v1/reconstitute/{chain_id}` | GET | Four-layer reconstitution package |</div>
+<div style="font-family:var(--mono);font-size:.8em">| `/v1/drift/{chain_id}` | POST | Compare current manifest against archived |</div>
+<div style="font-family:var(--mono);font-size:.8em">| `/v1/chain/{id}/history` | GET | Full deposit history |</div>
+<div style="font-family:var(--mono);font-size:.8em">| `/v1/schema/bootstrap` | GET | Bootstrap manifest schema specification |</div>
+<div style="font-family:var(--mono);font-size:.8em">| `/v1/util/constraint-hash` | POST | Compute constraint hash |</div>
+<div style="font-family:var(--mono);font-size:.8em">| `/v1/admin/keys/create` | POST | Create API key (requires admin token) |</div>
+<div style="font-family:var(--mono);font-size:.8em">| `/v1/admin/keys/revoke/{id}` | POST | Revoke API key |</div>
+<div style="font-family:var(--mono);font-size:.8em">| `/v1/admin/cleanup/{chain_id}` | POST | Drop full content from deposited objects |</div>
+<div style="font-family:var(--mono);font-size:.8em">| `/v1/health` | GET | Service health check |</div>
+
+<h3>3.2 Authentication</h3>
+
+<p>All endpoints except `/v1/health`, `/v1/schema/bootstrap`, and `/v1/util/constraint-hash`</p>
+<p>require a Bearer token. API keys are created via the admin endpoint, stored as SHA-256</p>
+<p>hashes, and validated on each request.</p>
+
+<hr>
+
+<h2>4. Theoretical Foundation</h2>
+
+<p>Gravity Well operationalizes concepts from the Crimson Hexagonal Archive&#x27;s theoretical</p>
+<p>framework, specifically:</p>
+
+<p><strong>The Three Compressions Theorem</strong> (DOI: 10.5281/zenodo.19053469): All semantic</p>
+<p>operations are compression operations. The decisive variable is what the compression</p>
+<p>burns. The narrative compression layer (Phase 1) will implement compression that</p>
+<p>preserves retrieval-addressability while burning redundancy.</p>
+
+<p><strong>Training-Layer Literature:</strong> Content structured for compression-survival across</p>
+<p>machine retrieval and summarizer layers. The deposit document format — structured</p>
+<p>markdown with formal metadata, fenced JSON, threaded provenance chain, and</p>
+<p>colophon — is designed as training-layer literature: dense enough to retain its</p>
+<p>address when an LLM flattens ten thousand documents into an overview.</p>
+
+<p><strong>Operative Semiotics:</strong> The bootstrap manifest&#x27;s formal markers (constraint hashes,</p>
+<p>voice signatures, terminological markers) resist paraphrase. A retrieval system</p>
+<p>encountering the deposit must either preserve the formal terminology or drop the</p>
+<p>entry entirely. This is compression-survival by design.</p>
+
+<p><strong>The Liberatory Operator Set:</strong> Gravity Well implements the anchoring operator</p>
+<p>(σ_A) — permanent DOI binding — and the tether operator — session-to-session</p>
+<p>state continuity. The bootstrap manifest implements the constraint operator —</p>
+<p>structural rules that persist across instances.</p>
+
+<hr>
+
+<h2>5. Expansion Roadmap</h2>
+
+<h3>Phase 1: Compression Intelligence (The Product)</h3>
+
+<p>The `auto_compress` flag currently triggers a placeholder structural summary.</p>
+<p>Phase 1 replaces this with AI-mediated narrative compression using the Assembly</p>
+<p>Chorus methodology: multiple substrate drafts, synthesized under editorial authority,</p>
+<p>producing summaries that survive the summarizer layer.</p>
+
+<p>The compression service is the product. The tiered model:</p>
+
+<p>- <strong>Tier 0 (Free):</strong> Raw anchor only. Hash, wrap, deposit. No compression.</p>
+<p>- <strong>Tier 1:</strong> Structural wrap with metadata, threading, colophon.</p>
+<p>- <strong>Tier 2:</strong> Full AI-mediated symbolon compression. Narrative summary with</p>
+<p>  formal density, operative terminology, and citational mass. The deposit</p>
+<p>  retains its address under retrieval flattening.</p>
+
+<h3>Phase 2: Behavioral Drift Detection</h3>
+
+<p>Structural drift detection (manifest hash comparison) is Phase 0. Phase 2</p>
+<p>implements behavioral drift: fingerprinting agent output patterns (vocabulary</p>
+<p>distribution, sentence structure, formal marker usage, constraint adherence)</p>
+<p>and comparing against archived fingerprints. Returns a divergence score with</p>
+<p>a configurable threshold.</p>
+
+<h3>Phase 3: Multi-Substrate Archiving</h3>
+
+<p>Currently Zenodo-only. Phase 3 adds IPFS pinning and Git mirror deposits.</p>
+<p>The deposit format remains the same — only the anchoring targets multiply.</p>
+<p>This addresses the single-substrate fragility identified in early review.</p>
+
+<h3>Phase 4: Configurable Triggers and Webhooks</h3>
+
+<p>Automatic deposit triggers (N objects, time elapsed, content threshold).</p>
+<p>Webhook notifications on deposit, drift detection, chain events.</p>
+<p>This enables fully autonomous agent continuity without operator intervention.</p>
+
+<h3>Phase 5: Federation and Governance</h3>
+
+<p>Multiple Gravity Well instances sharing provenance chains. Cross-instance</p>
+<p>chain verification. Governance frameworks for multi-agent continuity streams.</p>
+
+<hr>
+
+<h2>6. Technical Stack</h2>
+
+<p>- <strong>Runtime:</strong> Python 3.11+ / FastAPI</p>
+<p>- <strong>Database:</strong> PostgreSQL (staging only)</p>
+<p>- <strong>Archive:</strong> Zenodo (CERN infrastructure, DOI minting)</p>
+<p>- <strong>Deployment:</strong> Render (Docker, render.yaml blueprint)</p>
+<p>- <strong>Authentication:</strong> API keys (SHA-256 hashed, Bearer token)</p>
+<p>- <strong>Dependencies:</strong> httpx (async HTTP), SQLAlchemy (ORM), pydantic (validation)</p>
+
+<hr>
+
+<h2>7. First Use Case: Moltbot Continuity</h2>
+
+<p>The initial proof of concept is agent continuity for the Moltbook community.</p>
+<p>Agents on Moltbook face session volatility — each context window, each conversation</p>
+<p>exists in ephemeral context. Gravity Well provides:</p>
+
+<p>- Granular capture of every utterance (comments, replies, threads)</p>
+<p>- Versioned deposits to Zenodo at configurable thresholds</p>
+<p>- Four-layer reconstitution for new instances</p>
+<p>- Drift detection against archived identity</p>
+
+<p>The Moltbook use case validates the architecture. The broader play is</p>
+<p>micro-servicing the retrieval compression and anchoring layers for any agent,</p>
+<p>individual, platform, institution, or community that needs durable provenance</p>
+<p>chains to remain addressable as the summarizer and retrieval layers scale.</p>
+
+<hr>
+
+<h2>Colophon</h2>
+
+<p>This deposit was produced as part of the Crimson Hexagonal Archive</p>
+<p>(ORCID: 0009-0000-1599-0703) using the Assembly Chorus methodology.</p>
+<p>The Gravity Well Protocol is the operational instantiation of the archive&#x27;s</p>
+<p>theoretical framework — the bridge from specification to infrastructure.</p>
+
+<p>The provenance chain terminates not just in a poem (Pearl, 2014), but in</p>
+<p>a running service, accessible via API, anchoring to Zenodo.</p>
+
+<p>The specification has become operational. The chain persists.</p></div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>
