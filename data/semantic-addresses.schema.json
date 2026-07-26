@@ -41,7 +41,7 @@
     },
     "sources": {
       "type": "object",
-      "description": "Tributary ID \u2192 human-readable description",
+      "description": "Tributary ID → human-readable description",
       "additionalProperties": {
         "type": "string"
       }
@@ -53,9 +53,6 @@
           "type": "string"
         },
         "verified_non_address": {
-          "type": "string"
-        },
-        "unrated": {
           "type": "string"
         },
         "subjunctive": {
@@ -94,7 +91,7 @@
     },
     "addresses": {
       "type": "object",
-      "description": "canonical_query_key \u2192 address record",
+      "description": "canonical_query_key → address record",
       "additionalProperties": {
         "$ref": "#/definitions/AddressRecord"
       }
@@ -259,5 +256,6 @@
         }
       }
     }
-  }
+  },
+  "$comment": "observation_class 'unrated' was retired 2026-07-16, collapsed into 'observed_address'; removed from this schema 2026-07-25 after a composition-layer capture reported it as a live class on the strength of this file (machinemediation capture registry, semantic-address-alexanarch-framework-adoption-20260725). Live classes: subjunctive, observed_address, verified_non_address."
 }
