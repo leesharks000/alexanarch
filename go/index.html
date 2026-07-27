@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alexanarch DOI/AXN Resolver — Redirect</title>
+<title>Alexanarch DOI/AXN Resolver — client-side redirect (target not visible without scripts)</title>
 <meta name="description" content="Resolves a DOI or AXN via the current alexanarch resolution map and redirects to the live target. Any resolver-map update propagates instantly on the next click.">
 <meta name="robots" content="noindex, follow">
 <link rel="canonical" href="https://www.alexanarch.org/resolve/">
@@ -23,7 +23,11 @@ a{color:#0a7c6a}
 <p class="dim">Redirecting to the current live target via the alexanarch resolution map (v3.11.0+).
 If nothing happens in a moment, you'll be sent to the <a href="/resolve/">resolver info page</a> where you can inspect what's known about this identifier.</p>
 <noscript>
-<p class="dim"><strong>JavaScript required.</strong> Go to the <a href="/resolve/">resolver info page</a> and paste the identifier there.</p>
+<div style="border:1px solid #c8843e;padding:1em;margin:1em 0;border-radius:4px;text-align:left">
+<p><strong>This is a resolver, not a document.</strong> It maps a severed Zenodo DOI to its record in this archive. Resolution runs in the browser against <a href="https://www.alexanarch.org/api/doi-axn-map.json">/api/doi-axn-map.json</a>, so an automated checker that does not execute scripts sees this page rather than the target.</p>
+<p><strong>Link checkers:</strong> a 200 on this URL means the resolver is reachable. It does not verify the target. Verification requires the map lookup below.</p>
+<p><strong>To resolve without scripts:</strong> open the map above and look up the DOI in this page's <code>?doi=</code> parameter. The entry gives the work's AXN identifier and the URL of its record page. The full index of severed DOIs, with status and successor, is at <a href="https://www.alexanarch.org/data/doi-resolution-index.json">/data/doi-resolution-index.json</a>. Or use the <a href="/resolve/">resolver info page</a>.</p>
+</div>
 </noscript>
 
 <script>
