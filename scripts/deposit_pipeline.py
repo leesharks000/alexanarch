@@ -129,6 +129,80 @@ STAGE_ORDER = [
 ]
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# THE HANDLER TAX
+#
+# Added 2026-07-28, after a session in which this pipeline was invoked without
+# being read: the wiki article was left to the mechanical template despite the
+# docstring assigning it to the depositing agent under NO-DOUBLE-DRAW, validate
+# was piped through tail despite the docstring forbidding it, the three required
+# post-pipeline scripts were skipped, and the result was reported as a success
+# because the pipeline printed one.
+#
+# The design fault is that invoking was cheap and reading was optional. The cost
+# of not reading fell on the archive and on MANUS, discovered later. These gates
+# move it onto the handler, before the archive is touched.
+#
+# Two gates, neither of which can be satisfied by asserting compliance:
+#
+#   --procedure-token   a value obtainable only by reading this file. An
+#                       attestation flag ("--i-have-read yes") is free to lie;
+#                       a token derived from the text costs reading time.
+#
+#   --exemplar N        name an existing deposit of the same kind. The pipeline
+#                       prints its shape and requires the handler to have looked
+#                       at what a deposit of this kind actually contains. Nobody
+#                       who had opened one example would have shipped a record
+#                       whose wiki article read '"" is a 0-word work by , dated .'
+#
+# Both are recorded on the deposit in procedure_compliance, so a shortcut is
+# visible on the object rather than discoverable weeks later.
+# ─────────────────────────────────────────────────────────────────────────────
+
+PROCEDURE_TOKEN = "in-session"   # answer to: who authors the wiki article for a
+                                 # transport D internal deposit? (see docstring)
+
+def gate_procedure(args):
+    """Refuse to run unless the handler demonstrates having read the procedure."""
+    if (args.procedure_token or "").strip().lower().strip(".") != PROCEDURE_TOKEN:
+        raise SystemExit(
+            "\n  REFUSED — procedure gate.\n"
+            "  This pipeline modifies a live archive and will not run unattested.\n\n"
+            "  Pass --procedure-token with the answer to:\n"
+            "      For a transport D internal deposit, WHO authors the wiki article,\n"
+            "      and by what route?\n\n"
+            "  The answer is stated in this file's docstring, in the paragraph that\n"
+            "  explains why internal deposits do not draw on the mint workflow's API\n"
+            "  budget. Read it. The token is two words.\n\n"
+            "  This gate exists because the cost of not reading a procedure should\n"
+            "  fall on whoever skips it, not on the archive that inherits the result.\n")
+    if not args.exemplar:
+        raise SystemExit(
+            "\n  REFUSED — exemplar gate.\n"
+            "  Pass --exemplar <deposit_number>: an existing deposit of the same kind\n"
+            "  as the one you are about to create. The pipeline will print its shape.\n\n"
+            "  Even a handler who will not read the procedure can open one example.\n"
+            "  Creating a deposit without having looked at what a deposit contains is\n"
+            "  the failure this gate exists to price.\n")
+
+
+def show_exemplar(n):
+    reg = load_registry()
+    d = next((x for x in reg["deposits"] if x.get("deposit_number") == int(n)), None)
+    if d is None:
+        raise SystemExit(f"  REFUSED — exemplar #{n} is not in the registry.")
+    print(f"\n── exemplar: deposit #{n} ──")
+    for f in ("title", "creator", "date", "content_type", "license", "version", "substrate"):
+        v = str(d.get(f) or "")
+        print(f"  {f:<14} {v[:88]}")
+    wa = str(d.get("wiki_article") or "")
+    print(f"  {'wiki_article':<14} {len(wa.split())} words — {wa[:66]}...")
+    bs = d.get("body_status") or {}
+    print(f"  {'body_status':<14} {json.dumps(bs, ensure_ascii=False)[:88]}")
+    print("  ── your deposit must have a value in every field above. ──\n")
+    return d
+
+
 def sh(cmd, check=True, timeout=600, capture=False):
     print(f"  $ {' '.join(str(c) for c in cmd)}")
     r = subprocess.run([str(c) for c in cmd], cwd=REPO_ROOT, timeout=timeout,
@@ -387,9 +461,15 @@ def main():
                     help="start at this stage (default: mint if --issue-body else record)")
     ap.add_argument("--stages", default=None,
                     help="comma list to run exactly these stages")
+    ap.add_argument("--procedure-token", default=None,
+                    help="value obtainable only by reading this file's docstring; see gate_procedure")
+    ap.add_argument("--exemplar", default=None,
+                    help="deposit number of an existing deposit of the same kind, printed before the run")
     ap.add_argument("--no-push", action="store_true")
     ap.add_argument("--deploy-wait", type=int, default=90)
     args = ap.parse_args()
+    gate_procedure(args)
+    show_exemplar(args.exemplar)
 
     if args.stages:
         args.stages = [s.strip() for s in args.stages.split(",")]

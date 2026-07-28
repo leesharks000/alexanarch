@@ -166,6 +166,87 @@ def validate_issue_body(body, protocol):
     return failures
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# REQUIRED-FIELD ENFORCEMENT ON THE REGISTRY ENTRY
+#
+# Added 2026-07-28 after deposit #1412 passed --strict with an empty title,
+# creator, date, description, content_type and license, and reported 0 failures.
+# The protocol has declared REQ-001..005 since v1; they were implemented only in
+# validate_issue_body, i.e. only on the pre-mint path. Anything that wrote a
+# registry entry by another route — a repair script, a direct edit, a pipeline
+# stage — was never checked against them.
+#
+# A validator that reports success on a record with no title is worse than no
+# validator: it converts an absent check into a positive assurance.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# field -> (rule id, human description)
+REQUIRED_ENTRY_FIELDS = {
+    "title":         ("REQ-001", "title is non-empty"),
+    "creator":       ("REQ-002", "creator is non-empty"),
+    "description":   ("REQ-003", "description is non-empty"),
+    "license":       ("REQ-004", "license is non-empty"),
+    "substrate":     ("REQ-005", "substrate disclosure is non-empty"),
+    "date":          ("REQ-006", "date is non-empty and ISO 8601 (YYYY-MM-DD)"),
+    "content_type":  ("REQ-007", "content_type is non-empty"),
+}
+
+# the mechanical wiki template, emitted when the registry entry was empty.
+# Its presence means the in-session authoring step was skipped.
+WIKI_STUB = re.compile(r'^""\s+is a 0-word work by\s*,\s*dated\s*\.')
+
+
+# Rules added 2026-07-28 bind deposits minted from that date. Earlier deposits
+# carry 245 pre-existing failures — overwhelmingly WIKI-001, from the period when
+# the in-session authoring step was not enforced. Those are a remediation backlog,
+# reported under --backlog, and are not blocking: making them blocking would stop
+# every future deposit until the backlog cleared, which puts the cost back on the
+# archive instead of on the handler who skips a procedure today.
+ENFORCEMENT_FROM = "2026-07-28"
+ENFORCE_ALL = [False]   # set by --backlog
+
+
+def _minted_on_or_after(entry, iso):
+    m = str(entry.get("minted_at") or entry.get("date") or "")
+    return m[:10] >= iso if len(m) >= 10 else False
+
+
+def validate_entry_required_fields(entry, enforce_all=False):
+    """REQ-001..007, BODY-001, WIKI-001. Returns list of (rule_id, msg).
+
+    Binding for deposits minted on or after ENFORCEMENT_FROM. For earlier
+    deposits the same checks run under --backlog and report without blocking."""
+    if not enforce_all and not _minted_on_or_after(entry, ENFORCEMENT_FROM):
+        return []
+    failures = []
+    for field, (rid, desc) in REQUIRED_ENTRY_FIELDS.items():
+        v = entry.get(field)
+        if v is None or (isinstance(v, str) and not v.strip()):
+            failures.append((rid, f"{desc} — deposit #{entry.get('deposit_number')} has {field}={v!r}"))
+    d = entry.get("date")
+    if isinstance(d, str) and d.strip() and not re.match(r"^\d{4}-\d{2}-\d{2}$", d.strip()):
+        failures.append(("REQ-006", f"date must be ISO 8601 YYYY-MM-DD; got {d!r}"))
+
+    # BODY-001: canonical bytes must not be a template stub.
+    bs = entry.get("body_status") or {}
+    wc = bs.get("word_count") if isinstance(bs, dict) else None
+    if isinstance(wc, int) and wc < 25 and str(bs.get("class")) not in ("pointer", "tether", "notice"):
+        failures.append(("BODY-001",
+                         f"canonical bytes are {wc} words — below the threshold at which a deposit "
+                         f"can be distinguished from an unfilled template. If this is intentional, "
+                         f"set body_status.class to pointer, tether or notice."))
+
+    # WIKI-001: the wiki article must have been authored, not templated.
+    wa = str(entry.get("wiki_article") or "")
+    if not wa.strip():
+        failures.append(("WIKI-001", "wiki_article is empty; internal deposits author it in-session "
+                                     "(see deposit_pipeline.py, transport D)"))
+    elif WIKI_STUB.match(wa.strip()):
+        failures.append(("WIKI-001", "wiki_article is the mechanical template stub, which means the "
+                                     "in-session authoring step was skipped"))
+    return failures
+
+
 def validate_registry_entry(entry, protocol):
     """Validate a single registry entry."""
     failures = []
@@ -188,6 +269,8 @@ def validate_registry_entry(entry, protocol):
     h = entry.get("hash", "")
     if not re.match(r"^[0-9a-f]{64}$", h or ""):
         failures.append(("AXN-003", f"hash must be a 64-char lowercase hex SHA-256; got {h!r}"))
+
+    failures.extend(validate_entry_required_fields(entry, enforce_all=ENFORCE_ALL[0]))
 
     return failures
 

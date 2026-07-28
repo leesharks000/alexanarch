@@ -277,6 +277,38 @@ def extract_field(body: str, label: str) -> str:
     return val
 
 
+
+# ─────────────────────────────────────────────────────────────────────────────
+# FORMAT-MISMATCH GUARD
+#
+# Added 2026-07-28. A YAML-frontmatter document was passed where this parser
+# expects a GitHub Issue Form body ("### Label" then value). Every field parsed
+# to the empty string, and the mint proceeded — writing a 158-byte template as
+# the canonical bytes and a registry entry with no title, creator or date.
+#
+# Silent templating over a format mismatch is the worst available behaviour: it
+# produces an object that looks minted and is empty. Fail loudly instead, and
+# name the expected format so the handler can see what they gave it.
+# ─────────────────────────────────────────────────────────────────────────────
+
+def guard_issue_body_format(body: str) -> None:
+    core = ["Title", "Creator", "Date", "Description", "Content Type", "License"]
+    got = {l: extract_field(body, l) for l in core}
+    empty = [l for l, v in got.items() if not (v or "").strip()]
+    if len(empty) < len(core):
+        return
+    looks_yaml = body.lstrip().startswith("---") or re.search(r"^\w+:\s", body.lstrip()[:400], re.M)
+    raise SystemExit(
+        "\n  REFUSED — issue body format.\n"
+        f"  All {len(core)} core fields parsed empty: {', '.join(empty)}\n\n"
+        "  This parser expects a GitHub Issue Form body:\n"
+        "      ### Title\n      <value>\n\n      ### Creator\n      <value>\n\n"
+        + ("  What was supplied looks like YAML frontmatter.\n\n" if looks_yaml else "\n")
+        + "  The field labels are defined in .github/ISSUE_TEMPLATE/deposit.yml and\n"
+          "  parsed by extract_field() in this file. A mint that proceeds past a\n"
+          "  format mismatch writes an empty deposit that looks like a real one.\n")
+
+
 def parse_issue_body(body: str) -> dict:
     """Extract all known fields from a deposit issue body.
 
@@ -1248,6 +1280,7 @@ def _selftest():
 
 def main():
     parser = argparse.ArgumentParser(
+    # format guard runs before any field is trusted
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
