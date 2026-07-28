@@ -5,7 +5,7 @@
     "axn": "AXN:0596.ARCHIVAL.🛤️🐚🌍🔔🎵🕊️",
     "version": "v0.2"
   },
-  "updated": "2026-07-28T18:57:58.256728+00:00",
+  "updated": "2026-07-28T19:21:22.155526+00:00",
   "tasks": {
     "T1": {
       "status": "COMPLETE",
@@ -24,14 +24,15 @@
       "note": "two-axis model per ⟡1; implemented by T2 instrument"
     },
     "T2b": {
-      "status": "COMPLETE-WITH-39-HELD",
+      "status": "COMPLETE",
       "commit": "pending-this-push",
       "date": "2026-07-28",
-      "evidence": "62 inversions reclassified recovered_full_text; 156 captures confirmed; 39 UNCERTAIN for MANUS (data/reaudit-T2b-resolution-2026-07-28.json)"
+      "evidence": "62 inversions reclassified recovered_full_text; 156 captures confirmed; 39 UNCERTAIN for MANUS (data/reaudit-T2b-resolution-2026-07-28.json); 39 UNCERTAINs ruled by MANUS 2026-07-28 (28 recovered / 11 floor)"
     },
     "T18": {
-      "status": "DRAFTED",
-      "note": "tombstone texts + apply script staged for MANUS text confirmation (⟡11); DOIs verified live-external"
+      "status": "COMPLETE",
+      "date": "2026-07-28",
+      "evidence": "1382/1383 withdrawn with tombstones; captured content deleted; DOIs stripped (1937 mappings); ownership gate live, sweep clean (402 owned, 2 known typos, 0 external)"
     },
     "T3": {
       "status": "COMPLETE",
@@ -52,11 +53,10 @@
     }
   },
   "next": [
-    "T18 (awaits MANUS tombstone confirmation)",
     "T4 sitemap + /fleet/ (starts T17 clock)",
-    "T5 recrawl (MANUS, Search Console)",
-    "T6 exposure (Phase 0 now clear)",
-    "39 T2b UNCERTAINs (MANUS per-cluster ruling)",
+    "T5 recrawl (MANUS)",
+    "T6 exposure (fully unblocked — Phase 0 complete)",
+    "T16 authority file build (add Viola Arquette; record Sharkd/Craned DataCite typos)",
     "regenerate_surfaces sync"
   ]
 }
