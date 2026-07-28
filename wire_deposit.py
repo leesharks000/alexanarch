@@ -433,12 +433,23 @@ def regenerate_static_page(d, eidx, registry=None):
 
     best_path = None
     best_size = 0
-    for path in candidates:
-        if os.path.exists(path):
-            size = os.path.getsize(path)
-            if size > best_size:
-                best_size = size
-                best_path = path
+    # T1 fix (EA-AVAILABILITY-INTEGRITY-01, 2026-07-28): a declared, existing
+    # full_text_path is AUTHORITATIVE. Largest-wins applies only among
+    # fallback candidates when the registry declares nothing — otherwise a
+    # larger hex-keyed sibling shadows the canonical body (the #869/#856
+    # hex-0365 collision: #869 served #856's 22KB text over its own declared
+    # 2KB dataset-pointer body). The declared-but-missing case still raises
+    # above, so the anti-stub guard's intent is preserved.
+    if declared and os.path.exists(declared.lstrip('/')):
+        best_path = declared.lstrip('/')
+        best_size = os.path.getsize(best_path)
+    else:
+        for path in candidates:
+            if os.path.exists(path):
+                size = os.path.getsize(path)
+                if size > best_size:
+                    best_size = size
+                    best_path = path
 
     if best_path and best_size > 0:
         # JSON source: render a dataset callout + download link, NOT inline-as-prose

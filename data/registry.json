@@ -231469,7 +231469,7 @@
       "defines_concepts": [
         "Lexical Minting Registry"
       ],
-      "download_md": "/data/deposits/AXN-0365.md",
+      "download_md": "/data/deposits/deposit-0869.md",
       "orcid": "0009-0000-1599-0703",
       "updated_at": "2026-06-22T18:34:49.459246Z",
       "version_history": [
@@ -231526,13 +231526,15 @@
       ],
       "references_concept_count": 15,
       "body_status": {
-        "class": "full",
+        "class": "dataset_pointer",
         "lacuna": false,
-        "recovery_status": "COMPLETE",
-        "residual_chars": 22460,
-        "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
-      }
+        "recovery_status": "CORRECTED-T1-20260728",
+        "residual_chars": 1908,
+        "audited_at": "2026-07-28T17:46:56.441667Z",
+        "audit_version": "EA-AVAILABILITY-INTEGRITY-01-T1",
+        "note": "Body replaced: hex-0365 storage collision had substituted deposit #856's full text from mint (2026-06-22) to 2026-07-28. Canonical content is data/lexical-minting-registry.json. Storage re-keyed by deposit number per ruling on storage keys."
+      },
+      "full_text_path": "/data/texts/deposit-0869-text.md"
     },
     {
       "axn": "AXN:0372.ARCHIVAL.🌟🛡️🔝🪦🔜🕘",
@@ -314617,10 +314619,46 @@
           "object": "Crimson Hexagonal Archive",
           "type": "work",
           "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-AVAILABILITY-INTEGRITY-01",
+          "predicate": "is_type",
+          "object": "remediation work plan",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-AVAILABILITY-INTEGRITY-01",
+          "predicate": "gated_by",
+          "object": "Phase 0 integrity repairs (T1, T2, T18)",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "deposit #869",
+          "predicate": "served_body_of",
+          "object": "deposit #856 (hex 0365 storage collision)",
+          "type": "defect",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "registry body_status",
+          "predicate": "mistyped",
+          "object": "224 semi-restored metadata captures as full/COMPLETE",
+          "type": "defect",
+          "evidence_status": "observed"
         }
       ],
       "entity_status": "provisional",
-      "defines_concepts": [],
+      "defines_concepts": [
+        "availability gate",
+        "crawl vintage",
+        "provider variance",
+        "canonical-text status (two-axis availability model)",
+        "composition-ready vs composition-observed",
+        "canonical-return pressure",
+        "ownership gate (DataCite sift)"
+      ],
       "orcid": "0009-0000-1599-0703",
       "version": "v0.2",
       "keywords": [
@@ -314660,18 +314698,14 @@
       "issue_number": null,
       "issue_url": null,
       "references_concepts": [
-        "COMPLETE",
-        "MANUS ruling",
-        "Part I",
-        "Part II",
-        "TACHYON",
-        "Pristine Fallacy",
-        "Methodology",
-        "Lee Sharks",
-        "Rebekah Cranes",
-        "Assembly Chorus"
+        "witness-gap corollary",
+        "Lacuna Mark",
+        "AXN identifier",
+        "Machine-Mediated Reception Studies",
+        "provenance inversion",
+        "semi-restored record"
       ],
-      "references_concept_count": 10,
+      "references_concept_count": 6,
       "citations": [],
       "wikidata_candidates": [],
       "cha_cross_references": [],
@@ -314715,7 +314749,8 @@
           }
         },
         "overall_conformance": "partial"
-      }
+      },
+      "concept_count": 7
     }
   ],
   "last_updated": "2026-07-14T19:56:51Z"
