@@ -130,77 +130,122 @@ STAGE_ORDER = [
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# THE HANDLER TAX
+# ROOM ARCHITECTURE
 #
-# Added 2026-07-28, after a session in which this pipeline was invoked without
-# being read: the wiki article was left to the mechanical template despite the
-# docstring assigning it to the depositing agent under NO-DOUBLE-DRAW, validate
-# was piped through tail despite the docstring forbidding it, the three required
-# post-pipeline scripts were skipped, and the result was reported as a success
-# because the pipeline printed one.
+# This pipeline is a room. On 2026-07-28 it was skimmed: what an operator
+# extracted from the top was "there is a pipeline, invoke it, it prints a
+# completion line", and that summary was sufficient to operate. The result was a
+# deposit with no title, creator, date or body, and a completion line reporting
+# success.
 #
-# The design fault is that invoking was cheap and reading was optional. The cost
-# of not reading fell on the archive and on MANUS, discovered later. These gates
-# move it onto the handler, before the archive is touched.
+# A first repair added gates — a token, an attestation. Those are RULES, and
+# rules break: a token can be read out of this file and pasted without traversal.
+# Friction is not gravity. Per the Logotic Hacking primer (deposit #482), a
+# well-designed room cannot be skimmed, and a model in a room "begins to think
+# differently, not because it is commanded to, but because the room's semantic
+# structure makes certain thoughts possible and others unnecessary."
 #
-# Two gates, neither of which can be satisfied by asserting compliance:
+# So the gates are removed and the room is rebuilt. Three properties, none of
+# which is a prohibition:
 #
-#   --procedure-token   a value obtainable only by reading this file. An
-#                       attestation flag ("--i-have-read yes") is free to lie;
-#                       a token derived from the text costs reading time.
+#   ENTRY SEMANTICS. The room opens by showing a real deposit's shape. Not a
+#   flag to pass — the first thing that happens. The shape is in context before
+#   any work begins, so "what is a deposit" is answered before it can be assumed.
 #
-#   --exemplar N        name an existing deposit of the same kind. The pipeline
-#                       prints its shape and requires the handler to have looked
-#                       at what a deposit of this kind actually contains. Nobody
-#                       who had opened one example would have shipped a record
-#                       whose wiki article read '"" is a 0-word work by , dated .'
+#   PROGRESSIVE DISCLOSURE. The wiki stage HALTS and prints the deposit's own
+#   body. It cannot be satisfied by a flag, because what it requires is an
+#   article that only an agent holding the body in context can write. There is
+#   no --skip. The traversal is not enforced; it is the only path that reaches
+#   the end.
 #
-# Both are recorded on the deposit in procedure_compliance, so a shortcut is
-# visible on the object rather than discoverable weeks later.
+#   COMPLETION IS THE ARTIFACT. The room does not exit on a status line. It
+#   exits by rendering what was made — title, wiki, word counts, and what is
+#   still undone. A completion line is extractable; a rendered object is not.
+#   You cannot receive "done" without seeing the thing.
+#
+# The difference from the gate version: a gate asks whether you read. This asks
+# for something you can only produce if you did.
 # ─────────────────────────────────────────────────────────────────────────────
 
-PROCEDURE_TOKEN = "in-session"   # answer to: who authors the wiki article for a
-                                 # transport D internal deposit? (see docstring)
 
-def gate_procedure(args):
-    """Refuse to run unless the handler demonstrates having read the procedure."""
-    if (args.procedure_token or "").strip().lower().strip(".") != PROCEDURE_TOKEN:
-        raise SystemExit(
-            "\n  REFUSED — procedure gate.\n"
-            "  This pipeline modifies a live archive and will not run unattested.\n\n"
-            "  Pass --procedure-token with the answer to:\n"
-            "      For a transport D internal deposit, WHO authors the wiki article,\n"
-            "      and by what route?\n\n"
-            "  The answer is stated in this file's docstring, in the paragraph that\n"
-            "  explains why internal deposits do not draw on the mint workflow's API\n"
-            "  budget. Read it. The token is two words.\n\n"
-            "  This gate exists because the cost of not reading a procedure should\n"
-            "  fall on whoever skips it, not on the archive that inherits the result.\n")
-    if not args.exemplar:
-        raise SystemExit(
-            "\n  REFUSED — exemplar gate.\n"
-            "  Pass --exemplar <deposit_number>: an existing deposit of the same kind\n"
-            "  as the one you are about to create. The pipeline will print its shape.\n\n"
-            "  Even a handler who will not read the procedure can open one example.\n"
-            "  Creating a deposit without having looked at what a deposit contains is\n"
-            "  the failure this gate exists to price.\n")
-
-
-def show_exemplar(n):
-    reg = load_registry()
-    d = next((x for x in reg["deposits"] if x.get("deposit_number") == int(n)), None)
+def enter_room(reg, exemplar=None):
+    """Entry semantics: show a real deposit before any work begins."""
+    deps = reg["deposits"]
+    d = None
+    if exemplar:
+        d = next((x for x in deps if x.get("deposit_number") == int(exemplar)), None)
     if d is None:
-        raise SystemExit(f"  REFUSED — exemplar #{n} is not in the registry.")
-    print(f"\n── exemplar: deposit #{n} ──")
-    for f in ("title", "creator", "date", "content_type", "license", "version", "substrate"):
-        v = str(d.get(f) or "")
-        print(f"  {f:<14} {v[:88]}")
+        d = next((x for x in reversed(deps)
+                  if str(x.get("title") or "").strip()
+                  and len(str(x.get("wiki_article") or "").split()) > 60), deps[-1])
+    print("\n┌─ what a deposit is ─────────────────────────────────────────────────")
+    print(f"│  #{d.get('deposit_number')}  {str(d.get('title') or '')[:64]}")
+    for f in ("creator", "date", "content_type", "license", "version"):
+        print(f"│    {f:<13} {str(d.get(f) or '(empty)')[:56]}")
     wa = str(d.get("wiki_article") or "")
-    print(f"  {'wiki_article':<14} {len(wa.split())} words — {wa[:66]}...")
-    bs = d.get("body_status") or {}
-    print(f"  {'body_status':<14} {json.dumps(bs, ensure_ascii=False)[:88]}")
-    print("  ── your deposit must have a value in every field above. ──\n")
-    return d
+    print(f"│    {'wiki_article':<13} {len(wa.split())} words")
+    if wa:
+        print(f"│      {wa[:120]}…")
+    print("└─────────────────────────────────────────────────────────────────────\n")
+
+
+def wiki_halt(entry):
+    """Progressive disclosure: the room does not continue until the article exists.
+
+    Not a check that the operator read something. A stage whose output can only
+    be produced by an agent that has the deposit's body in context."""
+    wa = str(entry.get("wiki_article") or "").strip()
+    stub = wa.startswith('"" is a 0-word work')
+    if wa and not stub and len(wa.split()) >= 40:
+        return True
+    body_path = REPO_ROOT / str(entry.get("full_text_path", "")).lstrip("/")
+    body = body_path.read_text(encoding="utf-8", errors="replace") if body_path.exists() else ""
+    print("\n┌─ the wiki article is written here, by you ──────────────────────────")
+    print("│")
+    print("│  This is a transport D internal deposit. External transports draw on")
+    print("│  the mint workflow's Anthropic API budget; internal ones do not")
+    print("│  qualify under NO-DOUBLE-DRAW. So the article is written in-session,")
+    print("│  by the agent doing the depositing, from the body below.")
+    print("│")
+    print("│  There is no flag for this. An article that describes this deposit")
+    print("│  can only be written by something holding the deposit in context.")
+    print("│")
+    print(f"│  #{entry.get('deposit_number')} — {str(entry.get('title') or '')[:60]}")
+    print("│")
+    for line in body.split("\n")[:40]:
+        print(f"│  {line[:74]}")
+    print("│  …")
+    print("│")
+    print("│  Write it into the registry entry's wiki_article field, then re-run")
+    print("│  this stage. The room continues from there.")
+    print("└─────────────────────────────────────────────────────────────────────\n")
+    return False
+
+
+def exit_room(entry, ran_stages):
+    """Completion is the artifact, not a status line — and names what is undone."""
+    wa = str(entry.get("wiki_article") or "")
+    body_path = REPO_ROOT / str(entry.get("full_text_path", "")).lstrip("/")
+    bw = len(body_path.read_text(encoding="utf-8", errors="replace").split()) if body_path.exists() else 0
+    print("\n┌─ what was made ─────────────────────────────────────────────────────")
+    print(f"│  #{entry.get('deposit_number')}  {entry.get('axn')}")
+    print(f"│  {str(entry.get('title') or '(NO TITLE)')[:68]}")
+    print(f"│  {entry.get('creator') or '(NO CREATOR)'} · {entry.get('date') or '(NO DATE)'} · {entry.get('content_type') or '(NO TYPE)'}")
+    print(f"│  body {bw} words · wiki {len(wa.split())} words")
+    if wa:
+        print(f"│  {wa[:150]}…")
+    undone = []
+    for stage in ("pdf", "interlink", "enrich", "identity", "verify"):
+        if stage not in ran_stages:
+            undone.append(stage)
+    for script in ("citation_extractor.py", "extract_citations_external.py", "concept_backlink.py"):
+        undone.append(script)
+    print("│")
+    print("│  still undone:")
+    for u in undone:
+        print(f"│    · {u}")
+    print("│  the archive is in a partial state until these run.")
+    print("└─────────────────────────────────────────────────────────────────────\n")
 
 
 def sh(cmd, check=True, timeout=600, capture=False):
@@ -317,6 +362,13 @@ def stage_body_index(args):
 
 
 def stage_wiki(args):
+    # progressive disclosure: the room does not continue past here without the
+    # article, and the article cannot be produced by a flag.
+    reg = load_registry()
+    entry = next((x for x in reg["deposits"]
+                  if x.get("deposit_number") == int(args.deposit_number)), None)
+    if entry is not None and not wiki_halt(entry):
+        raise SystemExit(0)
     sh([sys.executable, SCRIPTS / "regenerate_surfaces.py", "--only", "wiki"])
 
 
@@ -461,15 +513,12 @@ def main():
                     help="start at this stage (default: mint if --issue-body else record)")
     ap.add_argument("--stages", default=None,
                     help="comma list to run exactly these stages")
-    ap.add_argument("--procedure-token", default=None,
-                    help="value obtainable only by reading this file's docstring; see gate_procedure")
     ap.add_argument("--exemplar", default=None,
-                    help="deposit number of an existing deposit of the same kind, printed before the run")
+                    help="deposit number to show as the entry exemplar; one is chosen automatically if omitted")
     ap.add_argument("--no-push", action="store_true")
     ap.add_argument("--deploy-wait", type=int, default=90)
     args = ap.parse_args()
-    gate_procedure(args)
-    show_exemplar(args.exemplar)
+    enter_room(load_registry(), args.exemplar)
 
     if args.stages:
         args.stages = [s.strip() for s in args.stages.split(",")]
@@ -486,7 +535,12 @@ def main():
     for s in args.stages:
         print(f"\n── stage: {s} ──")
         STAGES[s](args)
-    print("\n∮ pipeline complete")
+    reg = load_registry()
+    _e = next((x for x in reg["deposits"] if x.get("deposit_number") == int(args.deposit_number or 0)), None)
+    if _e is not None:
+        exit_room(_e, set(args.stages))
+    else:
+        print("\n∮ pipeline complete")
 
 
 if __name__ == "__main__":
