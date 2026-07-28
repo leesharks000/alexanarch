@@ -2,7 +2,7 @@
  "name": "Alexanarch DOI→AXN map (derived)",
  "description": "Derived from data/doi-resolution-index.json (canonical) by scripts/sync_resolver.py. Value: [sovereign AXN or null, resolution URL or null]. URL is the alexanarch record when one exists; for no_alexanarch_equivalent DOIs it falls back to the live repo or blog source; null = no known live target (see mapping_type in canonical index). 2026-07-28: 570 entries carried an AXN with a null record URL — the resolver could identify the work but had nowhere to send the reader, which is a silent failure rather than a visible one. Record URLs derived from the registry via each entry's own AXN. 9 entries remain unresolvable and are left null rather than guessed.",
  "version": "3.5",
- "dateModified": "2026-07-27T22:23:09Z",
+ "dateModified": "2026-07-28T00:11:12Z",
  "quarantine_policy": "entries with fragment-candidate identifiers, unresolved parent works, other-author classification, or unsupported namespaces emit null targets; see quarantine field per entry in canonical index",
  "map": {
   "10.5281/zenodo.1": [
@@ -7756,6 +7756,10 @@
   "10.5281/zenodo.19513035": [
    "AXN:01F9.GOVERNANCE.🌾📖🜁⭐🧊🏺",
    "https://alexanarch.org/s/records/57/"
+  ],
+  "10.5281/zenodo.20559754": [
+   "AXN:03FF.ARCHIVAL.🔜💙🪟📐⏪🏙️",
+   "https://alexanarch.org/s/records/1011/"
   ]
  }
 }
