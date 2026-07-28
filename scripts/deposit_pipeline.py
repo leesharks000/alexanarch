@@ -458,6 +458,10 @@ def stage_identity(args):
 def stage_commit(args):
     reg, d = deposit_by_number(args.deposit_number)
     n, axn, title = args.deposit_number, d["axn"], d.get("title", "")[:80]
+    # T3 (EA-AVAILABILITY-INTEGRITY-01, audit #1413 H3): every commit carries
+    # coherent counts, timestamps, and surface hashes — the governing index
+    # must never again assert a stale state of the registry it governs.
+    sh([sys.executable, SCRIPTS / "coherence_sync.py"])
     sh(["git", "add", "-A"])
     sh(["git", "checkout", "data/pre-overwrite-receipts.log"], check=False)
     msg = (f"MINT #{n} · {axn} — {title}\n\n"
