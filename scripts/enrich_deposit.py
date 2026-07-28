@@ -590,18 +590,34 @@ def fetch_openalex(deposit: dict, citations: list[dict]) -> dict:
         "openalex_ids_for_deposit": [],
         "openalex_ids_for_citations": {},
     }
-    title = deposit.get("title", "")
-    if title:
-        try:
-            data = _http_get_json(
-                OPENALEX_API,
-                {"search": title[:200], "per_page": "5"},
-                headers={"User-Agent": "Alexanarch-Enrichment/1.0 (mailto:hello@alexanarch.org)"},
-            )
-            for w in data.get("results", []):
-                result["openalex_ids_for_deposit"].append(w.get("id"))
-        except (urllib.error.URLError, json.JSONDecodeError, TimeoutError) as e:
-            _log(f"openalex deposit search failed: {e}")
+    # THE DEPOSIT'S OWN OPENALEX ID IS NOT LOOKED UP, BY DESIGN.
+    #
+    # Removed 2026-07-28. This function used to run a full-text search on the
+    # deposit's title and record every hit as a match:
+    #
+    #     data = _http_get_json(OPENALEX_API, {"search": title[:200], "per_page": "5"})
+    #     for w in data.get("results", []):
+    #         result["openalex_ids_for_deposit"].append(w.get("id"))
+    #
+    # There was no score threshold, no title comparison, no author or ORCID
+    # check. It searched for an identifier that cannot exist: OpenAlex indexes
+    # Crossref, DataCite, PubMed and the repositories it harvests, and this
+    # archive is not among them, so an alexanarch deposit has no OpenAlex work
+    # ID to find. Because search always returns something for a non-empty
+    # string, the step was guaranteed to return another author's work and
+    # record it under the field name "deposit_work_matches".
+    #
+    # It did. Deposit #1411, a poem posted two days before enrichment ran,
+    # received W2476952509 — a work id predating it by roughly a decade —
+    # because the title contains the word "Catullus". 38 sidecars carried 110
+    # such ids before this was removed.
+    #
+    # A search for a thing that does not exist does not return nothing. It
+    # returns the nearest thing that does, and calls it a match.
+    #
+    # If alexanarch deposits are ever harvested by OpenAlex, the correct
+    # implementation looks up the deposit's own DOI or AXN, does not search on
+    # title, and records the basis of the match alongside the id.
 
     for i, cit in enumerate(citations):
         cit_title = cit.get("title")
