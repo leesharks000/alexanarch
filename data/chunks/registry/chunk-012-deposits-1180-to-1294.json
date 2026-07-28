@@ -16765,7 +16765,7 @@
       "family": "UNCLASSIFIED",
       "emoji": "🔮🌅⊕🌖♈🎻",
       "hash": "3de09605a98a08fdd44de029e3a812c1c31b3032e18fea897dfc17638952d75e",
-      "title": "\"title\": \"Crimson Hexagon: Central Navigation Map v4.2 (Assembly-Sealed)\" — Crimson Hexagon Archive",
+      "title": "Crimson Hexagon: Central Navigation Map v4.2 (Assembly-Sealed)",
       "creator": "Sharks, L., Fraction, R., & Cranes, R.",
       "date": "2026-01-19",
       "description": "SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: Zenodo tombstone citation_text capture. DOI(s): 10.5281/zenodo.18294470. Zenodo removal forensics: removal_date 2026-06-19T11:34:54.093219+00:00, removal_reason out-of-scope, removed_by user 1060945. Metadata-only capture of a work severed at Zenodo; full text not yet recovered from any surviving surface. Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.",
@@ -16988,7 +16988,16 @@
         },
         "overall_conformance": "partial"
       },
-      "external_metadata_path": "/data/external-metadata/AXN-050C.json"
+      "external_metadata_path": "/data/external-metadata/AXN-050C.json",
+      "title_repair_log": [
+        {
+          "at": "2026-07-28T03:28:58Z",
+          "defect": "frontmatter_as_title",
+          "was": "\"title\": \"Crimson Hexagon: Central Navigation Map v4.2 (Assembly-Sealed)\" — Crimson Hexagon Archive",
+          "now": "Crimson Hexagon: Central Navigation Map v4.2 (Assembly-Sealed)",
+          "basis": "quoted title in frontmatter; NOT found in body — verify"
+        }
+      ]
     },
     {
       "deposit_number": 1276,
