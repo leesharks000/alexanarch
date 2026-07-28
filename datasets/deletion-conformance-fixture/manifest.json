@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Deletion Semantics Conformance Fixture",
+  "version": "1.0",
+  "date": "2026-07-28",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": {
+    "@type": "Person",
+    "name": "Lee Sharks",
+    "identifier": "https://orcid.org/0009-0000-1599-0703"
+  },
+  "description": "47 identifiers from a documented repository account termination, selected so that each exercises a distinct condition a deletion-semantics specification must handle: removal with and without a successor, erased registration, structure erasure at concept-root and version level, unresolved membership, other-author collision, unverifiable successor, non-identifiers, and a negative control of identifiers that still resolve. Every case carries its recorded classification, its verification date, and an independently observed terminal HTTP status. The source index holds 1,938 identifiers; that is not 1,938 deletions, and the fixture is explicit about the difference. One recorded class is documented as unreliable, with the disagreement retained rather than corrected, because a producer state that observation contradicts is itself a test case.",
+  "isBasedOn": "https://alexanarch.org/data/doi-resolution-index.json",
+  "offered_to": "https://github.com/GoogleCloudPlatform/knowledge-catalog/issues/207",
+  "total_cases": 47,
+  "total_classes": 11,
+  "generated": "2026-07-27T23:59:57Z",
+  "records": [
+    {
+      "name": "README.md",
+      "path": "/datasets/deletion-conformance-fixture/README.md",
+      "size_bytes": 8697,
+      "sha256": "6888d8c89857a6fe2c728ef8cf5e46d8144691f09afa28c580d0349f1c86129b"
+    },
+    {
+      "name": "cases.json",
+      "path": "/datasets/deletion-conformance-fixture/cases.json",
+      "size_bytes": 32905,
+      "sha256": "14c305e2422dbd83ece33640ac8100e45e475f75a6836a131d82506a9fd92866"
+    },
+    {
+      "name": "verify.py",
+      "path": "/datasets/deletion-conformance-fixture/verify.py",
+      "size_bytes": 3761,
+      "sha256": "782c8a0147ec025a1221f10b5bab5e32743bd717e3df41b79f3b54132526e965"
+    }
+  ]
+}
