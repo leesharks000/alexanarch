@@ -5,7 +5,7 @@
     "axn": "AXN:0596.ARCHIVAL.🛤️🐚🌍🔔🎵🕊️",
     "version": "v0.2"
   },
-  "updated": "2026-07-28T17:53:16.405056+00:00",
+  "updated": "2026-07-28T18:57:58.256728+00:00",
   "tasks": {
     "T1": {
       "status": "COMPLETE",
@@ -24,20 +24,24 @@
       "note": "two-axis model per ⟡1; implemented by T2 instrument"
     },
     "T2b": {
-      "status": "PENDING-MANUS",
-      "note": "22-record 10% sample + 95 inversion flags in diff artifact; spot-check before T6"
+      "status": "COMPLETE-WITH-39-HELD",
+      "commit": "pending-this-push",
+      "date": "2026-07-28",
+      "evidence": "62 inversions reclassified recovered_full_text; 156 captures confirmed; 39 UNCERTAIN for MANUS (data/reaudit-T2b-resolution-2026-07-28.json)"
     },
     "T18": {
       "status": "DRAFTED",
       "note": "tombstone texts + apply script staged for MANUS text confirmation (⟡11); DOIs verified live-external"
     },
     "T3": {
-      "status": "PENDING",
-      "note": "last_updated bumped once in dec52a45; pipeline coherence wiring not yet written"
+      "status": "COMPLETE",
+      "date": "2026-07-28",
+      "evidence": "coherence_sync.py standalone + wired into stage_commit; api/index carries surface sha256 block"
     },
     "T7": {
-      "status": "PENDING",
-      "phase": "0.5"
+      "status": "COMPLETE",
+      "date": "2026-07-28",
+      "evidence": "22 field-consistency backfills; hexes 0431-0433 seated; resolver 1412 hexes + 1 disambiguation; 3 derivation mismatches noted, published forms retained"
     },
     "mint_1413": {
       "commit": "3620cb8e"
@@ -46,5 +50,13 @@
       "commit": "578a80ee",
       "note": "regenerate_surfaces.py sync pending — first action next session"
     }
-  }
+  },
+  "next": [
+    "T18 (awaits MANUS tombstone confirmation)",
+    "T4 sitemap + /fleet/ (starts T17 clock)",
+    "T5 recrawl (MANUS, Search Console)",
+    "T6 exposure (Phase 0 now clear)",
+    "39 T2b UNCERTAINs (MANUS per-cluster ruling)",
+    "regenerate_surfaces sync"
+  ]
 }
