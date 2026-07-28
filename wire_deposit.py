@@ -368,6 +368,7 @@ def regenerate_static_page(d, eidx, registry=None):
         "@context": "https://schema.org",
         "@type": "ScholarlyArticle",
         "name": d['title'],
+        "headline": str(d['title'])[:110],
         "author": {"@type": "Person", "name": d['creator']},
         "datePublished": d['date'],
         "identifier": d['axn'],
@@ -381,6 +382,20 @@ def regenerate_static_page(d, eidx, registry=None):
         "isPartOf": {"@type": "Collection", "name": "Alexanarch",
                      "url": "https://www.alexanarch.org/"},
     }
+    # T6 (EA-AVAILABILITY-INTEGRITY-01, ⟡2 RESOLVED): canonical-text status is
+    # machine-declared on every record — creativeWorkStatus carries the enum,
+    # conditionsOfAccess mirrors it in crawler-conventional prose.
+    _cts = d.get('canonical_text_status')
+    if _cts:
+        _ld["creativeWorkStatus"] = _cts
+        _ld["conditionsOfAccess"] = {
+            "canonical_full_text": "Open access; complete canonical text embedded in this page and its structured data.",
+            "recovered_full_text": "Open access; complete text recovered and seated as the canonical body after the 2026 repository termination.",
+            "metadata_only": "Metadata capture only; the canonical full text of this work is not held by this archive.",
+            "attachment_only": "Open access attachment; canonical content is the linked file, not page prose.",
+            "tombstone": "Tombstoned record; see body for disposition.",
+            "withdrawn": "Withdrawn record; see body for the withdrawal notice and the authoritative external identifier.",
+        }.get(_cts, _cts)
     _caps = _captures_for_deposit(dn)
     if _caps:
         _ld["subjectOf"] = [{
@@ -455,7 +470,17 @@ def regenerate_static_page(d, eidx, registry=None):
         # JSON source: render a dataset callout + download link, NOT inline-as-prose
         # (treating JSON as markdown turns every line into a <p>, producing
         #  unreadable multi-MB pages)
-        if best_path.endswith('.json'):
+        if best_path.endswith(('.pdf', '.zip', '.png', '.jpg', '.epub')):
+            # T6 hardening (2026-07-28): binary attachments are never inlined
+            # or text-decoded — render a download callout. (Regression guard:
+            # #344's declared PDF body crashed the fleet pass and was briefly
+            # text-mangled before git restore.)
+            size_mb = best_size / (1024 * 1024)
+            fulltext = (f'**Attachment:** [{best_path.split("/")[-1]}](/{best_path}) '
+                        f'({size_mb:.1f} MB). The canonical content of this deposit is '
+                        f'the attached file; this page is its address and description.')
+            best_path = None  # prevent any text read below
+        elif best_path and best_path.endswith('.json'):
             json_size_kb = best_size // 1024
             json_size_mb = best_size / (1024 * 1024)
             size_label = f"{json_size_mb:.1f} MB" if best_size > 1024 * 1024 else f"{json_size_kb} KB"
@@ -707,7 +732,7 @@ def regenerate_static_page(d, eidx, registry=None):
 
     # Build page
     page = f'''<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>{esc(d["title"])} — Alexanarch</title><meta name="description" content="{esc(_compose_meta_description(d))}"><script type="application/ld+json">{jsonld}</script>
+<title>{esc(d["title"])} — Alexanarch</title><meta name="description" content="{esc(_compose_meta_description(d))}"><meta property="og:title" content="{esc(str(d["title"])[:95])}"><meta property="og:description" content="{esc(_compose_meta_description(d))}"><meta property="og:url" content="{_rec_url}"><meta property="og:type" content="article"><meta property="og:site_name" content="Alexanarch"><meta name="twitter:card" content="summary"><script type="application/ld+json">{jsonld}</script>
 <link rel="canonical" href="https://www.alexanarch.org/s/records/{dn}/">
 <meta name="citation_title" content="{esc(d["title"])}">
 <meta name="citation_author" content="{esc(d["creator"])}">

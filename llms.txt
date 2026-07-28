@@ -15,6 +15,12 @@ encoding.contentUrl. Nothing is paywalled, cloaked, or rendered client-side.
 - [Body index](https://www.alexanarch.org/api/body-index.json): inverted index over full deposit body text
 - [Search index](https://www.alexanarch.org/api/search-index.json): metadata index
 
+## Availability typing
+Every deposit carries `canonical_text_status` (canonical_full_text | recovered_full_text |
+metadata_only | attachment_only | tombstone | withdrawn) in the registry, in record-page
+JSON-LD as `creativeWorkStatus`, and as an index table in /api/search-index.json.
+A well-formed articleBody does NOT imply the canonical work is held — read the status.
+
 ## Identifiers
 - [AXN identifier set](https://www.alexanarch.org/s/axn/): content-derived identifiers, each an independent term
 - [AXN machine index](https://www.alexanarch.org/api/axn-index.json): hex to deposit map

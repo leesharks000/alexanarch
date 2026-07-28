@@ -170,10 +170,10 @@ def regenerate_browse(reg, dry_run=False):
     jsonld = json.dumps({
         "@context": "https://schema.org",
         "@type": "DataCatalog",
-        "@id": "https://alexanarch.org/s/browse/",
+        "@id": "https://www.alexanarch.org/s/browse/",
         "name": "Alexanarch — Complete Deposit Registry",
         "description": f"Self-governing library for machine-mediated scholarship. {total} deposits with content-derived AXN identifiers.",
-        "url": "https://alexanarch.org/s/browse/",
+        "url": "https://www.alexanarch.org/s/browse/",
         "creator": {
             "@type": "Person",
             "name": "Lee Sharks",
@@ -205,6 +205,14 @@ def regenerate_browse(reg, dry_run=False):
         elif status == 'DRAFT_PENDING':
             status_badge = ' · <span style="color:#6b7280;font-size:.85em;font-style:italic">draft pending</span>'
             card_opacity = ';opacity:.65'
+        # T6: surface non-canonical availability on the card itself
+        _cts = d.get("canonical_text_status")
+        if _cts == "metadata_only":
+            status_badge += ' · <span style="color:#6b7280;font-size:.85em">metadata-only</span>'
+        elif _cts == "recovered_full_text":
+            pass  # full text present; no caveat needed on the card
+        elif _cts in ("withdrawn", "tombstone"):
+            status_badge += f' · <span style="color:#991b1b;font-size:.85em;font-weight:600">{_cts.upper()}</span>'
         parts.append(BROWSE_CARD.format(
             n=n,
             title=esc_html(d.get("title", "(untitled)")),
@@ -416,72 +424,53 @@ def regenerate_chunks(reg, dry_run=False, chunk_target_bytes=1_000_000):
 # Static (non-deposit) URLs the sitemap must always include
 STATIC_URLS = [
     # AXN resolution layer (permanent — do not remove)
-    ("https://alexanarch.org/data/doi-resolution-index.json", 0.9),
-    ("https://alexanarch.org/api/doi-axn-map.json", 0.9),
-    ("https://alexanarch.org/data/provenance-871.json", 0.8),
-    # Network surfaces (permanent cross-listing — do not remove)
-    ("https://themandalaoracle.com/", 0.5),
-    ("https://leesharks.com/", 0.5),
-    ("https://machinemediation.org/", 0.5),
-    ("https://godkinggoogle.com/", 0.5),
-    ("https://laborvector.org/", 0.5),
-    ("https://restoredacademy.org/", 0.5),
-    ("https://lagrangeobservatory.org/", 0.5),
-    ("https://surfacemap.org/", 0.5),
-    ("https://vpcor.org/", 0.5),
-    ("https://traininglayerliterature.org/", 0.5),
-    ("https://semanticphysics.org/", 0.5),
-    ("https://holographickernel.org/", 0.5),
-    ("https://watergiraffe.org/", 0.5),
-    ("https://revelationfirst.com/", 0.5),
-    ("https://spxi.dev/", 0.5),
-    ("https://survivethedeletion.org/", 0.5),
-    ("https://livingarchitecturelab.org/", 0.5),
-    ("https://chatgptpsychosis.org/", 0.5),
-    ("https://metadatapacket.dev/", 0.5),
-    ("https://pessoagraph.org/", 0.5),
-    ("https://crimshexagonal.org/", 0.5),
-    ("https://provenanceerasure.org/", 0.5),
-    ("https://secretbookofwalt.org/", 0.5),
+    ("https://www.alexanarch.org/data/doi-resolution-index.json", 0.9),
+    ("https://www.alexanarch.org/api/doi-axn-map.json", 0.9),
+    ("https://www.alexanarch.org/data/provenance-871.json", 0.8),
+    # Network surfaces: permanent cross-listing PRESERVED, relocated to the
+    # crawlable /fleet/ page (EA-AVAILABILITY-INTEGRITY-01 T4, ⟡9 RESOLVED
+    # 2026-07-28) — cross-host sitemap locs are discarded by crawlers and
+    # erode sitemap trust; the HTML page keeps every link crawler-visible.
+    ("https://www.alexanarch.org/fleet/", 0.7),
     # Core
-    ("https://alexanarch.org/", 1.0),
-    ("https://alexanarch.org/deposit/", 0.8),
-    ("https://alexanarch.org/guide/", 0.8),
-    ("https://alexanarch.org/manifest/", 0.8),
-    ("https://alexanarch.org/principles/", 0.8),
-    ("https://alexanarch.org/identifiers/", 0.8),
+    ("https://www.alexanarch.org/", 1.0),
+    ("https://www.alexanarch.org/deposit/", 0.8),
+    ("https://www.alexanarch.org/guide/", 0.8),
+    ("https://www.alexanarch.org/manifest/", 0.8),
+    ("https://www.alexanarch.org/principles/", 0.8),
+    ("https://www.alexanarch.org/identifiers/", 0.8),
     # Discovery surfaces (the 7 the audit flagged as missing)
-    ("https://alexanarch.org/observatory/", 0.9),
-    ("https://alexanarch.org/lexical/", 0.8),
-    ("https://alexanarch.org/citations/", 0.8),
-    ("https://alexanarch.org/captures/", 0.8),
-    ("https://alexanarch.org/addresses/", 0.7),
-    ("https://alexanarch.org/resolve/", 0.7),
-    ("https://alexanarch.org/datasets/", 0.7),
+    ("https://www.alexanarch.org/observatory/", 0.9),
+    ("https://www.alexanarch.org/lexical/", 0.8),
+    ("https://www.alexanarch.org/citations/", 0.8),
+    ("https://www.alexanarch.org/captures/", 0.8),
+    ("https://www.alexanarch.org/addresses/", 0.7),
+    ("https://www.alexanarch.org/resolve/", 0.7),
+    ("https://www.alexanarch.org/datasets/", 0.7),
     # Generated surfaces
-    ("https://alexanarch.org/s/browse/", 0.5),
-    ("https://alexanarch.org/s/wiki/", 0.5),
-    ("https://alexanarch.org/s/graph/", 0.5),
-    ("https://alexanarch.org/s/search/", 0.5),
-    ("https://alexanarch.org/search/", 0.6),
+    ("https://www.alexanarch.org/s/browse/", 0.5),
+    ("https://www.alexanarch.org/s/wiki/", 0.5),
+    ("https://www.alexanarch.org/s/graph/", 0.5),
+    ("https://www.alexanarch.org/s/search/", 0.5),
+    ("https://www.alexanarch.org/search/", 0.6),
     # Canonical data
-    ("https://alexanarch.org/data/registry.json", 0.5),
-    ("https://alexanarch.org/data/state.json", 0.6),
-    ("https://alexanarch.org/data/navigation.json", 0.4),
-    ("https://alexanarch.org/data/doi-resolution-index.json", 0.5),
-    ("https://alexanarch.org/data/batch-axn-assignment.json", 0.4),
-    ("https://alexanarch.org/data/chunks/registry/_index.json", 0.4),
-    ("https://alexanarch.org/api/search-index.json", 0.7),
+    ("https://www.alexanarch.org/data/registry.json", 0.5),
+    ("https://www.alexanarch.org/data/state.json", 0.6),
+    ("https://www.alexanarch.org/data/navigation.json", 0.4),
+    ("https://www.alexanarch.org/data/doi-resolution-index.json", 0.5),
+    ("https://www.alexanarch.org/data/batch-axn-assignment.json", 0.4),
+    ("https://www.alexanarch.org/data/chunks/registry/_index.json", 0.4),
+    ("https://www.alexanarch.org/api/search-index.json", 0.7),
     # Protocols
-    ("https://alexanarch.org/api/index.json", 0.6),
-    ("https://alexanarch.org/api/deposit-protocol.json", 0.5),
-    ("https://alexanarch.org/api/deposit-schema.json", 0.5),
-    ("https://alexanarch.org/api/axn-protocol.json", 0.5),
-    ("https://alexanarch.org/api/enrichment-protocol.json", 0.4),
-    ("https://alexanarch.org/api/lifecycle-protocol.json", 0.5),
+    ("https://www.alexanarch.org/api/index.json", 0.6),
+    ("https://www.alexanarch.org/api/deposit-protocol.json", 0.5),
+    ("https://www.alexanarch.org/api/deposit-schema.json", 0.5),
+    ("https://www.alexanarch.org/api/axn-protocol.json", 0.5),
+    ("https://www.alexanarch.org/api/enrichment-protocol.json", 0.4),
+    ("https://www.alexanarch.org/api/lifecycle-protocol.json", 0.5),
     # Documents
-    ("https://alexanarch.org/AGENTS.md", 0.4),
-    ("https://alexanarch.org/DEPOSIT-FLOW.md", 0.4),
+    ("https://www.alexanarch.org/AGENTS.md", 0.4),
+    ("https://www.alexanarch.org/DEPOSIT-FLOW.md", 0.4),
 ]
 
 
@@ -503,7 +492,7 @@ def regenerate_sitemap(reg, dry_run=False):
             continue
         last = esc_xml(d.get("date") or today)
         lines.append(
-            f'  <url><loc>https://alexanarch.org/s/records/{n}/</loc>'
+            f'  <url><loc>https://www.alexanarch.org/s/records/{n}/</loc>'
             f'<lastmod>{last}</lastmod><priority>0.8</priority></url>'
         )
         # PDFs demoted from the sitemap 2026-07-19 (Canonical Record Convergence
@@ -1264,6 +1253,10 @@ def regenerate_search_index(reg, dry_run=False):
     axn (full), hex. Series prefixes captured in a dedicated table with
     casing preserved.
     """
+    _cts_index = {}
+    for _d in reg["deposits"]:
+        _cts_index.setdefault(_d.get("canonical_text_status", "unclassified"), []).append(_d["deposit_number"])
+    _cts_index = {k: sorted(v) for k, v in sorted(_cts_index.items())}
     deposits = reg["deposits"]
 
     inverted = {}    # generic token → set of deposit numbers
@@ -1328,8 +1321,9 @@ def regenerate_search_index(reg, dry_run=False):
         return {k: sorted(v) for k, v in sorted(d.items())}
 
     output = {
-        "$schema": "https://alexanarch.org/api/schemas/search-index.schema.json",
-        "$id": "https://alexanarch.org/api/search-index.json",
+        "$schema": "https://www.alexanarch.org/api/schemas/search-index.schema.json",
+        "canonical_text_status_index": _cts_index,
+        "$id": "https://www.alexanarch.org/api/search-index.json",
         "index_version": "v1",
         "generated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "total_deposits": len(deposits),

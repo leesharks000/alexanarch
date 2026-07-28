@@ -5,7 +5,7 @@
     "axn": "AXN:0596.ARCHIVAL.🛤️🐚🌍🔔🎵🕊️",
     "version": "v0.2"
   },
-  "updated": "2026-07-28T19:21:22.155526+00:00",
+  "updated": "2026-07-28T19:30:54.478230+00:00",
   "tasks": {
     "T1": {
       "status": "COMPLETE",
@@ -50,13 +50,38 @@
     "enrich_1413": {
       "commit": "578a80ee",
       "note": "regenerate_surfaces.py sync pending — first action next session"
+    },
+    "T4": {
+      "status": "COMPLETE",
+      "date": "2026-07-28",
+      "evidence": "sitemap www-only, 0 cross-domain, 1413 records + /fleet/; 23 fleet sites relocated to crawlable /fleet/ page (root + /s/); T17 clock starts at this push"
+    },
+    "T6": {
+      "status": "COMPLETE",
+      "date": "2026-07-28",
+      "evidence": "creativeWorkStatus+conditionsOfAccess in all 1413 record pages; availability table in search-index (1001/240/170/2 + attachment_only); browse badges (170 metadata-only, 2 WITHDRAWN); llms.txt typing note"
+    },
+    "T11": {
+      "status": "COMPLETE",
+      "date": "2026-07-28",
+      "evidence": "headline + OG/Twitter tags fleet-wide (folded into T6 regen)"
+    },
+    "T6_incidentals": {
+      "note": "#3 path desync repaired (v8.3 filename); #344 repointed attachment_only, PDF integrity preserved after brief text-mangle caught and git-restored; wire_deposit hardened against binary bodies"
     }
   },
   "next": [
-    "T4 sitemap + /fleet/ (starts T17 clock)",
-    "T5 recrawl (MANUS)",
-    "T6 exposure (fully unblocked — Phase 0 complete)",
-    "T16 authority file build (add Viola Arquette; record Sharkd/Craned DataCite typos)",
-    "regenerate_surfaces sync"
-  ]
+    "T5 recrawl (MANUS, Search Console)",
+    "T12 capture-edge write-back audit vs 443 edges",
+    "T13 record-availability.json derived",
+    "T14 mirror headers",
+    "T15 #1412 dual-axis metadata",
+    "T16 authority file",
+    "T17 epoch 1 (2026-08-11)",
+    "regenerate_surfaces full sync + sync_navbars fleet link"
+  ],
+  "t17_clock": {
+    "starts": "2026-07-28",
+    "first_epoch_due": "2026-08-11"
+  }
 }
