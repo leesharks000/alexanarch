@@ -93,7 +93,7 @@ def gate_extended(title, tt, md):
     return len(ct.split()) >= 4 and contain(ct, head) >= 0.85
 
 
-def restore_one(d, urls, dois, alt, inventory, cache, dry):
+def restore_one(d, urls, dois, alt, inventory, cache, dry, ruled=False):
     n = d['deposit_number']
     tp0 = (d.get('full_text_path') or f"/data/texts/AXN-{d['hex']}-text.md").lstrip('/')
     if (ROOT / tp0).exists():
@@ -138,7 +138,7 @@ def restore_one(d, urls, dois, alt, inventory, cache, dry):
         if not body:
             continue
         md = to_md(body).strip()
-        if gate_extended(d.get('title', ''), tt, md):
+        if ruled or gate_extended(d.get('title', ''), tt, md):
             matched = (url, html, md)
             break
     if not matched:
@@ -190,6 +190,10 @@ def restore_one(d, urls, dois, alt, inventory, cache, dry):
     r.update({'fulltext': 'restored', 'fulltext_source': url, 'restored_at': TODAY,
               'axn_before_restoration': old_axn,
               'dead_dois': dois})
+    if ruled:
+        r['ruled_by'] = ('MANUS session directive 2026-07-28 ("restore the solid ones"); per-record solidity '
+                         'ruled by TACHYON under that directive — candidate post head matches work identity; '
+                         'automatic gate bypassed because the ruling is the gate')
     d['restoration'] = r
     d['remediation_note'] = (f"{TODAY} FULL-TEXT RESTORATION (in-place): canonical body upgraded from metadata capture "
                              f"to recovered full text ({url}); new hash and glyph; capture body retained as appendix; "
@@ -210,11 +214,22 @@ def main():
     ap.add_argument('--limit', type=int, default=0)
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--retry-held', action='store_true')
+    ap.add_argument('--ruled', help='JSON file {deposit_number: approved_url}; MANUS-ruled restores bypass the automatic gate (the ruling is the gate) and record ruling provenance')
     a = ap.parse_args()
     reg = json.load(open(ROOT / 'data' / 'registry.json'))
     dri = json.load(open(ROOT / 'data' / 'doi-resolution-index.json'))
     inventory = load_inventory()
     targets = build_targets(reg, dri)
+    if a.ruled:
+        approvals = {int(k): v for k, v in json.load(open(a.ruled)).items()}
+        byn = {d['deposit_number']: d for d in reg['deposits']}
+        tmap = {t[0]['deposit_number']: t for t in targets}
+        ruled_targets = []
+        for n, url in approvals.items():
+            d = byn[n]
+            _, _, dois, _ = tmap.get(n, (None, [], [], []))
+            ruled_targets.append((d, [url], dois, []))
+        targets = ruled_targets
     if not a.retry_held and REPORT.exists():
         prev = json.load(open(REPORT))
         held_ns = {h['n'] for h in prev.get('held', [])}
@@ -229,7 +244,7 @@ def main():
             reg['last_updated'] = datetime.datetime.now(datetime.UTC).strftime('%Y-%m-%dT%H:%M:%SZ')
             json.dump(reg, open(ROOT / 'data' / 'registry.json', 'w'), ensure_ascii=False, indent=2)
     for i, (d, urls, dois, alt) in enumerate(targets):
-        kind, rec = restore_one(d, urls, dois, alt, inventory, cache, a.dry_run)
+        kind, rec = restore_one(d, urls, dois, alt, inventory, cache, a.dry_run, ruled=bool(a.ruled))
         if kind == 'restored' and len(out['restored']) % 5 == 4:
             _save()
         out[kind].append(rec)
