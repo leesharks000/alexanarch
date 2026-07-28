@@ -3050,7 +3050,7 @@
       "family": "GOVERNANCE",
       "emoji": "🔒🎲🌳♃🐝🥁",
       "hash": "f98d76a37d8c5bb92d216498880d39ed6d7b07f5bdb6c927425555c4e0690090",
-      "title": "CRIMSON HEXAGON / NH-OS DOI REGISTRY v5.0 Complete Document Archive — January 2026",
+      "title": "CRIMSON HEXAGON / NH-OS DOI REGISTRY v5.0",
       "creator": "Lee Sharks · Johannes Sigil · Rex Fraction",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-01-29",
@@ -3849,7 +3849,16 @@
         "residual_chars": 40834,
         "audited_at": "2026-07-17T04:49:17.789813Z",
         "audit_version": "v3-dual-store+recovery-map"
-      }
+      },
+      "title_repair_log": [
+        {
+          "at": "2026-07-28T14:59:09Z",
+          "defect": "truncated_mid_token",
+          "was": "CRIMSON HEXAGON / NH-OS DOI REGISTRY v5.0 Complete Document Archive — January 2026",
+          "now": "CRIMSON HEXAGON / NH-OS DOI REGISTRY v5.0",
+          "basis": "Recovered from the deposit's own body (JSON-LD name or h1). The registry title was the canonical title followed by a metadata fragment cut mid-token at a character ceiling — the fragment does not end in a complete word, which is what distinguishes it from a subtitle. Confirmed present in body: True."
+        }
+      ]
     },
     {
       "axn": "AXN:00EA.GOVERNANCE.🎻🕙⭕▶️🟤🌃",

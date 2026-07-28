@@ -796,6 +796,21 @@
         "by": "TACHYON (Assembly witness), in-session",
         "at": "2026-07-28T13:57:41Z",
         "basis": "Transport D internal deposit. Per deposit_pipeline.py, internal deposits do not draw on the mint workflow Anthropic API budget under NO-DOUBLE-DRAW; the wiki article is drafted in-session by the depositing agent. An earlier state of this deposit carried the mechanical template stub (\"\" is a 0-word work by , dated .) because the pipeline was run without the in-session authoring step being performed."
+      },
+      "procedure_compliance": {
+        "flow": "deposit_pipeline.py, transport D (internal)",
+        "read_before_first_run": false,
+        "omissions_at_first_run": [
+          "wiki article left to the mechanical template; the flow assigns it to the depositing agent in-session under NO-DOUBLE-DRAW",
+          "validate output piped through tail; the flow requires the full output be read",
+          "citation_extractor.py, extract_citations_external.py and concept_backlink.py not run",
+          "commit format ad-hoc rather than the canonical MINT #<N> · <AXN> — <title>",
+          "verify stage not run",
+          "--family not passed, so the family was inferred as UNCLASSIFIED"
+        ],
+        "remediated_at": "2026-07-28",
+        "remediation": "All omissions completed and recorded in the commit rather than corrected silently. The gates in EA-HANDLER-TAX-01 were enacted as a consequence.",
+        "spec": "EA-HANDLER-TAX-01 v1.0"
       }
     }
   ]
