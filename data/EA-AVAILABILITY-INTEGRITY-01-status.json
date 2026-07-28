@@ -1,0 +1,50 @@
+{
+  "sprint": "EA-AVAILABILITY-INTEGRITY-01",
+  "plan_deposit": {
+    "number": 1413,
+    "axn": "AXN:0596.ARCHIVAL.🛤️🐚🌍🔔🎵🕊️",
+    "version": "v0.2"
+  },
+  "updated": "2026-07-28T17:53:16.405056+00:00",
+  "tasks": {
+    "T1": {
+      "status": "COMPLETE",
+      "commit": "795ac96b",
+      "date": "2026-07-28",
+      "evidence": "declared full_text_path authoritative in wire_deposit.py; #869 re-keyed, honest dataset-pointer body; content-match verified both pages; body-index rebuilt"
+    },
+    "T2": {
+      "status": "COMPLETE",
+      "commit": "dec52a45",
+      "date": "2026-07-28",
+      "evidence": "canonical_text_status on all 1413 (1001/150/262); 224 reclassified full->metadata_capture; zero semi-restored-classed-full remain; diff artifact data/reaudit-T2-diff-2026-07-28.json"
+    },
+    "T2a": {
+      "status": "RESOLVED",
+      "note": "two-axis model per ⟡1; implemented by T2 instrument"
+    },
+    "T2b": {
+      "status": "PENDING-MANUS",
+      "note": "22-record 10% sample + 95 inversion flags in diff artifact; spot-check before T6"
+    },
+    "T18": {
+      "status": "DRAFTED",
+      "note": "tombstone texts + apply script staged for MANUS text confirmation (⟡11); DOIs verified live-external"
+    },
+    "T3": {
+      "status": "PENDING",
+      "note": "last_updated bumped once in dec52a45; pipeline coherence wiring not yet written"
+    },
+    "T7": {
+      "status": "PENDING",
+      "phase": "0.5"
+    },
+    "mint_1413": {
+      "commit": "3620cb8e"
+    },
+    "enrich_1413": {
+      "commit": "578a80ee",
+      "note": "regenerate_surfaces.py sync pending — first action next session"
+    }
+  }
+}
