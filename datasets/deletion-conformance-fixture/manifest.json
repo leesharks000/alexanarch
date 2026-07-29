@@ -1,40 +1,42 @@
 {
-  "@context": "https://schema.org",
-  "@type": "Dataset",
   "name": "Deletion Semantics Conformance Fixture",
-  "version": "2.0",
+  "version": "2.1",
   "date": "2026-07-28",
-  "license": "https://creativecommons.org/licenses/by/4.0/",
-  "creator": {
-    "@type": "Person",
-    "name": "Lee Sharks",
-    "identifier": "https://orcid.org/0009-0000-1599-0703"
+  "license": {
+    "dataset": "CC0-1.0",
+    "scripts": "MIT"
   },
-  "description": "47 identifiers from a documented repository account termination, selected so that each exercises a distinct condition a deletion-semantics specification must handle: removal with and without a successor, erased registration, structure erasure at concept-root and version level, unresolved membership, other-author collision, unverifiable successor, non-identifiers, and a negative control of identifiers that still resolve. Every case carries its recorded classification, its verification date, and an independently observed terminal HTTP status. The source index holds 1,938 identifiers; that is not 1,938 deletions, and the fixture is explicit about the difference. One recorded class is documented as unreliable, with the disagreement retained rather than corrected, because a producer state that observation contradicts is itself a test case.",
-  "isBasedOn": "https://alexanarch.org/data/doi-resolution-index.json",
-  "offered_to": "https://github.com/GoogleCloudPlatform/knowledge-catalog/issues/207",
   "total_cases": 111,
-  "total_classes": 11,
-  "generated": "2026-07-27T23:59:57Z",
-  "records": [
-    {
-      "name": "README.md",
-      "path": "/datasets/deletion-conformance-fixture/README.md",
-      "size_bytes": 8697,
-      "sha256": "6888d8c89857a6fe2c728ef8cf5e46d8144691f09afa28c580d0349f1c86129b"
-    },
-    {
-      "name": "cases.json",
-      "path": "/datasets/deletion-conformance-fixture/cases.json",
-      "size_bytes": 32905,
-      "sha256": "14c305e2422dbd83ece33640ac8100e45e475f75a6836a131d82506a9fd92866"
-    },
-    {
-      "name": "verify.py",
-      "path": "/datasets/deletion-conformance-fixture/verify.py",
-      "size_bytes": 3761,
-      "sha256": "782c8a0147ec025a1221f10b5bab5e32743bd717e3df41b79f3b54132526e965"
-    }
+  "total_classes": 17,
+  "source_population": 1937,
+  "source_repository": "https://github.com/leesharks000/alexanarch",
+  "source_commit_at_freeze": "aa34c9e8416651cb85c8d19fbd566f57f6960dc0",
+  "note": "Chorus-review release: subject-explicit axes (axis_subject), validity never derived from identifier survival, sparse presence enforced by verify_offline.py, machine-readable consumer expectations per case, DataCite state parsed via GET with UTC timestamps, drift ledger derived from mapping-level diff. Offline verification is the default; cases.json is the frozen conformance artifact.",
+  "files": [
+    "cases.json",
+    "cases-v1.0.json",
+    "deletion-fixture.schema.json",
+    "README.md",
+    "build_v2.py",
+    "verify_offline.py",
+    "reprobe_live.py",
+    "LICENSE-DATA",
+    "LICENSE-CODE"
   ],
-  "note": "Ratified-axes release: expressed per knowledge-catalog#207 (2026-07-27) — validity/presence/edges, sparse presence, reason objects, removal-vs-destruction split. 47 v1.0 cases preserved and archived; 64 added; 109 identifiers probed at build."
+  "sha256": {
+    "cases.json": "23073f4d293b434c010c2b35fcd0b795b982a5b654f8c9c88ebe38c760247e15",
+    "cases-v1.0.json": "14c305e2422dbd83ece33640ac8100e45e475f75a6836a131d82506a9fd92866",
+    "deletion-fixture.schema.json": "9ecb08c9ca51535438b16dfd8d49e964fa5b5ab15e531da8a97bebd6a477f862",
+    "README.md": "1b7d695c7686bfaf069b8d144368b642469080d1678f10f7d4784f3676eb1290",
+    "build_v2.py": "dbda33689225436550ed97072ca3b45a80f95232269988e46ca497854fc7738b",
+    "verify_offline.py": "4417bcb2cba279518806eb4e6aa6385e3b56cc74220e2442142b03e81998f9c8",
+    "reprobe_live.py": "398b30b319708a4be7d565f8fe9ee6f4148033c6df55cc4e4f9566a11068e004",
+    "LICENSE-DATA": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+    "LICENSE-CODE": "33bb639011a3f352e2450e869d73e46c40c31e6f5f88de55ac67dfa4213f9c46"
+  },
+  "deposit": {
+    "number": 1417,
+    "axn": "AXN:059A.EMPIRICAL.👁‍🗨🍂🌪️♠️↘️◀️",
+    "record": "https://www.alexanarch.org/s/records/1417/"
+  }
 }

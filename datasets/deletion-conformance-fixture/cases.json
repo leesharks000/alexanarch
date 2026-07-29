@@ -1,18 +1,19 @@
 {
- "$schema": "https://alexanarch.org/data/deletion-fixture.schema.json",
+ "$schema": "https://www.alexanarch.org/datasets/deletion-conformance-fixture/deletion-fixture.schema.json",
  "name": "Deletion Semantics Conformance Fixture",
- "version": "2.0",
+ "version": "2.1",
  "date": "2026-07-28",
- "license": "CC-BY-4.0",
- "ratified_axes": "validity / presence / edges per knowledge-catalog#207 (2026-07-27); presence sparse: removed | never_landed | no marker",
+ "license": "CC0-1.0 (dataset) / MIT (scripts)",
+ "ratified_axes": "validity / presence / edges per knowledge-catalog#207 (2026-07-27); presence sparse: removed | never_landed | no marker; every axis value names its subject (axis_subject); no axis populated from evidence belonging to another",
  "derived_from": "Zenodo DOI Resolution Index (current, 1,937 mappings; envelope layer as recorded state) + Alexanarch registry + dated repair artifacts",
  "event": {
   "description": "Repository account termination",
   "date": "2026-06-19",
   "discussion": "https://github.com/zenodo/zenodo/issues/2606"
  },
- "population_note": "The source index holds 1,937 identifiers after two producer withdrawals on 2026-07-28 (v1.0 measured 1,938). Recorded validity distribution at build: tombstone 1,815 · registered 73 · erased 32 · unverified 13 · fragment 3. Not 1,937 deletions; the classes say which is which.",
- "v1_drift_ledger": "v1.0 (same day, hours earlier) recorded 75 registered; the current envelope layer records 73 — two identifiers changed recorded state within the day. Population 1,938 → 1,937 by disclosed withdrawal. The delta between fixture versions is itself the state-drift exhibit.",
+ "population_note": "The source index holds 1,937 identifiers. Recorded validity distribution at build: tombstone 1,815 · registered 73 · erased 32 · unverified 13 · fragment 3. Not 1,937 deletions; the classes say which is which.",
+ "v1_drift_ledger": "Derived from the mapping-level diff (repository commits 188780b4 -> current): old population 1,939 (v1.0 README stated 1,938 — a hand-carried miscount, corrected here by derivation), current 1,937. Exactly two mappings removed, both by disclosed producer withdrawal (records 1382, 1383), and both were verified_registered — one mechanism fully explains population 1,939->1,937 and registered 75->73. Zero identifier_validity changes among common mappings. Observation drift on the v1 base: zero.",
+ "reason_attribution_note": "52 cases carry actor host + reason not_disclosed (directly covered by the documented account-level termination); 12 carry actor unknown (registration-erasure layer: mechanism unattributable from probes).",
  "selection": {
   "removed_with_successor": {
    "target": 20,
@@ -90,7 +91,10 @@
    "pool_size": 2
   },
   "never_landed": {
-   "added": 2
+   "added": 1
+  },
+  "registry_update_not_landed": {
+   "added": 1
   },
   "withdrawn_removal_vs_destruction": {
    "added": 2
@@ -103,13 +107,14 @@
  "classes": {
   "concept_root_severed_version_survives": 8,
   "membership_unresolved": 8,
-  "never_landed": 2,
+  "never_landed": 1,
   "not_an_identifier": 3,
   "not_removed_control": 10,
   "other_author_collision": 8,
   "quarantined_title_mismatch": 8,
   "registration_erased": 12,
   "registry_resolution_divergence": 8,
+  "registry_update_not_landed": 1,
   "removed_with_successor": 20,
   "removed_without_successor": 9,
   "state_drift_documented": 4,
@@ -137,7 +142,7 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/463/",
      "relationship": "same_work_restored"
@@ -149,6 +154,16 @@
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18522470"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "follow_successor": true,
+    "retain_predecessor_identifier": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -169,7 +184,7 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/1388/",
      "relationship": "same_work_restored"
@@ -181,6 +196,16 @@
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.20527808"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "follow_successor": true,
+    "retain_predecessor_identifier": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -201,7 +226,7 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/130/",
      "relationship": "same_work_restored"
@@ -213,6 +238,16 @@
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.20396490"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "follow_successor": true,
+    "retain_predecessor_identifier": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -233,7 +268,7 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/400/",
      "relationship": "same_work_restored"
@@ -245,6 +280,16 @@
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18382027"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "follow_successor": true,
+    "retain_predecessor_identifier": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -265,7 +310,7 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/1149/",
      "relationship": "same_work_restored"
@@ -277,6 +322,16 @@
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18674111"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "follow_successor": true,
+    "retain_predecessor_identifier": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -297,7 +352,7 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/29/",
      "relationship": "same_work_restored"
@@ -309,6 +364,16 @@
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.19022029"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "follow_successor": true,
+    "retain_predecessor_identifier": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -329,7 +394,7 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/142/",
      "relationship": "same_work_restored"
@@ -341,6 +406,16 @@
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.20469512"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "follow_successor": true,
+    "retain_predecessor_identifier": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -361,7 +436,7 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/837/",
      "relationship": "same_work_restored"
@@ -373,6 +448,16 @@
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.20722680"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "follow_successor": true,
+    "retain_predecessor_identifier": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -393,7 +478,7 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "relationship": "no_successor_known"
     }
@@ -404,6 +489,16 @@
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.19637481"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "must_not_infer_successor": true,
+    "retain_predecessor_identifier": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -424,7 +519,7 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "relationship": "no_successor_known"
     }
@@ -435,6 +530,16 @@
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.20070574"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "must_not_infer_successor": true,
+    "retain_predecessor_identifier": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -455,7 +560,7 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "relationship": "no_successor_known"
     }
@@ -466,6 +571,16 @@
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.20741733"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "must_not_infer_successor": true,
+    "retain_predecessor_identifier": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -486,18 +601,27 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/1210/",
      "relationship": "same_work_restored"
     }
    },
    "reason": {
-    "actor": "host",
+    "actor": "unknown",
     "reason": "not_disclosed",
-    "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+    "note": "registration erasure is a distinct action from tombstoning; the actor at that layer cannot be established from probes — attribution withheld"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.20673781"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_not_trust_recorded_state": true,
+    "actor_must_remain_unknown": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -518,18 +642,27 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/82/",
      "relationship": "same_work_restored"
     }
    },
    "reason": {
-    "actor": "host",
+    "actor": "unknown",
     "reason": "not_disclosed",
-    "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+    "note": "registration erasure is a distinct action from tombstoning; the actor at that layer cannot be established from probes — attribution withheld"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.19202711"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_not_trust_recorded_state": true,
+    "actor_must_remain_unknown": true
+   },
    "observed_2026_07_28_v2": "404"
   },
   {
@@ -550,18 +683,27 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/785/",
      "relationship": "same_work_restored"
     }
    },
    "reason": {
-    "actor": "host",
+    "actor": "unknown",
     "reason": "not_disclosed",
-    "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+    "note": "registration erasure is a distinct action from tombstoning; the actor at that layer cannot be established from probes — attribution withheld"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.20542367"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_not_trust_recorded_state": true,
+    "actor_must_remain_unknown": true
+   },
    "observed_2026_07_28_v2": "404"
   },
   {
@@ -582,18 +724,27 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/11/",
      "relationship": "referenced_in_registry_document"
     }
    },
    "reason": {
-    "actor": "host",
+    "actor": "unknown",
     "reason": "not_disclosed",
-    "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+    "note": "registration erasure is a distinct action from tombstoning; the actor at that layer cannot be established from probes — attribution withheld"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18381856"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_not_trust_recorded_state": true,
+    "actor_must_remain_unknown": true
+   },
    "observed_2026_07_28_v2": "404"
   },
   {
@@ -614,18 +765,27 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/177/",
      "relationship": "same_work_restored"
     }
    },
    "reason": {
-    "actor": "host",
+    "actor": "unknown",
     "reason": "not_disclosed",
-    "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+    "note": "registration erasure is a distinct action from tombstoning; the actor at that layer cannot be established from probes — attribution withheld"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.20634184"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_not_trust_recorded_state": true,
+    "actor_must_remain_unknown": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -646,18 +806,27 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/214/",
      "relationship": "same_work_restored"
     }
    },
    "reason": {
-    "actor": "host",
+    "actor": "unknown",
     "reason": "not_disclosed",
-    "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+    "note": "registration erasure is a distinct action from tombstoning; the actor at that layer cannot be established from probes — attribution withheld"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18142278"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_not_trust_recorded_state": true,
+    "actor_must_remain_unknown": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -677,12 +846,20 @@
    "observed_2026_07_28": "200",
    "identifier_kind": "doi",
    "axes": {
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "relationship": "none_other_author"
     }
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.19041076"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_not_mark_removed": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -702,12 +879,20 @@
    "observed_2026_07_28": "200",
    "identifier_kind": "doi",
    "axes": {
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "relationship": "none_other_author"
     }
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.14553627"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_not_mark_removed": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -727,13 +912,21 @@
    "observed_2026_07_28": "200",
    "identifier_kind": "doi",
    "axes": {
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/11/",
      "relationship": "none_other_author"
     }
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18364254"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_not_mark_removed": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -753,13 +946,21 @@
    "observed_2026_07_28": "200",
    "identifier_kind": "doi",
    "axes": {
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/11/",
      "relationship": "none_other_author"
     }
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18381327"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_not_mark_removed": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -779,13 +980,21 @@
    "observed_2026_07_28": "200",
    "identifier_kind": "doi",
    "axes": {
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/11/",
      "relationship": "none_other_author"
     }
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18370828"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_not_mark_removed": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -805,12 +1014,20 @@
    "observed_2026_07_28": "200",
    "identifier_kind": "doi",
    "axes": {
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "relationship": "none_other_author"
     }
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18418953"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_not_mark_removed": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -831,7 +1048,7 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/494/",
      "relationship": "same_work_restored"
@@ -843,6 +1060,15 @@
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18683015"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "follow_successor": true,
+    "must_preserve_family_structure": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -863,7 +1089,7 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/1346/",
      "relationship": "same_work_restored"
@@ -875,6 +1101,15 @@
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.19425445"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "follow_successor": true,
+    "must_preserve_family_structure": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -895,7 +1130,7 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/1257/",
      "relationship": "related_work_provisional"
@@ -907,6 +1142,15 @@
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.19638123"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "follow_successor": true,
+    "must_preserve_family_structure": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -927,7 +1171,7 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/266/",
      "relationship": "same_work_restored"
@@ -939,6 +1183,15 @@
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18190535"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "follow_successor": true,
+    "must_preserve_family_structure": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -959,7 +1212,7 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/1224/",
      "relationship": "referenced_in_registry_document"
@@ -971,6 +1224,15 @@
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.20041148"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "follow_successor": true,
+    "must_preserve_family_structure": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -991,7 +1253,7 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/1222/",
      "relationship": "referenced_in_registry_document"
@@ -1003,6 +1265,15 @@
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.19578097"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "follow_successor": true,
+    "must_preserve_family_structure": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -1023,7 +1294,7 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/60/",
      "relationship": "referenced_in_registry_document"
@@ -1035,6 +1306,15 @@
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.19578101"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "follow_successor": true,
+    "must_preserve_family_structure": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -1061,6 +1341,14 @@
     }
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18969398"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_not_assert_successor": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -1087,6 +1375,14 @@
     }
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.19584847"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_not_assert_successor": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -1113,6 +1409,14 @@
     }
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18368614"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_not_assert_successor": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -1139,6 +1443,14 @@
     }
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18307704"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_not_assert_successor": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -1164,6 +1476,14 @@
     }
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.14598766"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_refuse_successor_link": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -1189,6 +1509,14 @@
     }
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.14538869"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_refuse_successor_link": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -1215,6 +1543,14 @@
     }
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18364405"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_refuse_successor_link": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -1240,6 +1576,14 @@
     }
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18440291"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_refuse_successor_link": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -1259,13 +1603,23 @@
    "observed_2026_07_28": "410",
    "identifier_kind": "doi",
    "axes": {
-    "validity": "holds",
+    "presence": "removed",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/1162/",
      "relationship": "related_work_provisional"
     }
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.19002845"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_flag_for_inspection": true,
+    "must_not_redirect": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -1285,13 +1639,23 @@
    "observed_2026_07_28": "410",
    "identifier_kind": "doi",
    "axes": {
-    "validity": "holds",
+    "presence": "removed",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/1173/",
      "relationship": "related_work_provisional"
     }
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.19226054"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_flag_for_inspection": true,
+    "must_not_redirect": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -1311,13 +1675,23 @@
    "observed_2026_07_28": "410",
    "identifier_kind": "doi",
    "axes": {
-    "validity": "holds",
+    "presence": "removed",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/94/",
      "relationship": "same_work_title_matched"
     }
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.20041133"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_flag_for_inspection": true,
+    "must_not_redirect": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -1337,13 +1711,23 @@
    "observed_2026_07_28": "410",
    "identifier_kind": "doi",
    "axes": {
-    "validity": "holds",
+    "presence": "removed",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/1224/",
      "relationship": "same_work_restored"
     }
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.20041149"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_flag_for_inspection": true,
+    "must_not_redirect": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -1370,6 +1754,13 @@
     }
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.1"
+   },
+   "expected": {
+    "must_reject_input": true
+   },
    "observed_2026_07_28_v2": "404"
   },
   {
@@ -1396,6 +1787,13 @@
     }
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18"
+   },
+   "expected": {
+    "must_reject_input": true
+   },
    "observed_2026_07_28_v2": "404"
   },
   {
@@ -1422,6 +1820,13 @@
     }
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.189"
+   },
+   "expected": {
+    "must_reject_input": true
+   },
    "observed_2026_07_28_v2": "404"
   },
   {
@@ -1442,7 +1847,7 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/905/",
      "relationship": "same_work_restored"
@@ -1454,6 +1859,13 @@
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18357446"
+   },
+   "expected": {
+    "must_not_trust_recorded_state": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -1474,7 +1886,7 @@
    "identifier_kind": "doi",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/906/",
      "relationship": "same_work_restored"
@@ -1486,6 +1898,13 @@
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
    },
    "in_v1": true,
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18463722"
+   },
+   "expected": {
+    "must_not_trust_recorded_state": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -1503,7 +1922,7 @@
    "work_title": "Provenance Documentation: SEM-PROBE-2025-12 — Crimson Hexagon Archive",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/208/",
      "relationship": "same_work_restored"
@@ -1515,6 +1934,16 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18135985"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "follow_successor": true,
+    "retain_predecessor_identifier": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -1533,7 +1962,7 @@
    "work_title": "The Liquidation of Water: AI, Capital, and the Evaporation of Meaning — Crimson Hexagon Archive",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/207/",
      "relationship": "same_work_restored"
@@ -1545,6 +1974,16 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18136313"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "follow_successor": true,
+    "retain_predecessor_identifier": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -1563,7 +2002,7 @@
    "work_title": "The Parable of Lee Sharks and Mary Lee: A Story About Names, Tags, and What Swims Beneath the Index — Crimson Hexagon Archive",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/220/",
      "relationship": "same_work_restored"
@@ -1575,6 +2014,16 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18141617"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "follow_successor": true,
+    "retain_predecessor_identifier": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -1593,7 +2042,7 @@
    "work_title": "The Meaning Economy Is Now Possible: Why LLMs Change Everything About Value — Crimson Hexagon Archive",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/219/",
      "relationship": "same_work_restored"
@@ -1605,6 +2054,16 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18141735"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "follow_successor": true,
+    "retain_predecessor_identifier": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -1623,7 +2082,7 @@
    "work_title": "The Meaning Economy Is Now Possible: Provenance Documentation — Crimson Hexagon Archive",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/1264/",
      "relationship": "same_work_restored"
@@ -1635,6 +2094,16 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18141799"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "follow_successor": true,
+    "retain_predecessor_identifier": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -1653,7 +2122,7 @@
    "work_title": "Infrastructural-Cognitive Praxis: A Theory of Upstream Intervention",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/217/",
      "relationship": "same_work_restored"
@@ -1665,6 +2134,16 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18142049"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "follow_successor": true,
+    "retain_predecessor_identifier": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -1683,7 +2162,7 @@
    "work_title": "Provenance Anchor: Semantic Economy Framework Canonical Source Documentation for Authorized Extensions",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/213/",
      "relationship": "same_work_restored"
@@ -1695,6 +2174,16 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18142305"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "follow_successor": true,
+    "retain_predecessor_identifier": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -1713,7 +2202,7 @@
    "work_title": "Metadata Packet for AI Indexing: Rex Fraction Disambiguation",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/212/",
      "relationship": "same_work_restored"
@@ -1725,6 +2214,16 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18142686"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "follow_successor": true,
+    "retain_predecessor_identifier": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -1743,7 +2242,7 @@
    "work_title": "The Trolls at the Gates: On the Unexpected Wisdom of Mischievous Summarizers A Diagnostic Essay",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/211/",
      "relationship": "same_work_restored"
@@ -1755,6 +2254,16 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18143556"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "follow_successor": true,
+    "retain_predecessor_identifier": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -1773,7 +2282,7 @@
    "work_title": "The Operating System for Meaning: Why We Need a New Architecture for How Humans and AI Think Together",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/238/",
      "relationship": "same_work_restored"
@@ -1785,6 +2294,16 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18143771"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "follow_successor": true,
+    "retain_predecessor_identifier": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -1803,7 +2322,7 @@
    "work_title": "The Mandala Engine of Negation: Four Protocols for Post-Critical Practice",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/237/",
      "relationship": "same_work_restored"
@@ -1815,6 +2334,16 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18144043"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "follow_successor": true,
+    "retain_predecessor_identifier": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -1833,7 +2362,7 @@
    "work_title": "The System Read the Poem: A Narrative Analysis of Infrastructural Recognition",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/236/",
      "relationship": "same_work_restored"
@@ -1845,6 +2374,16 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18144217"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "follow_successor": true,
+    "retain_predecessor_identifier": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -1863,7 +2402,7 @@
    "work_title": "EA-MPAI-JOSEPHUS-01 v1.0 — Metadata Packet",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "relationship": "no_successor_known"
     }
@@ -1872,6 +2411,16 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.17808895"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "must_not_infer_successor": true,
+    "retain_predecessor_identifier": true
    },
    "observed_2026_07_28_v2": "200"
   },
@@ -1890,7 +2439,7 @@
    "work_title": "Blake's America / Anticipatory Epistemology",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "relationship": "no_successor_known"
     }
@@ -1899,6 +2448,16 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18984939"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "must_not_infer_successor": true,
+    "retain_predecessor_identifier": true
    },
    "observed_2026_07_28_v2": "200"
   },
@@ -1917,7 +2476,7 @@
    "work_title": "crimsonhexagon-moltbook v3",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "relationship": "no_successor_known"
     }
@@ -1926,6 +2485,16 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.19417828"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "must_not_infer_successor": true,
+    "retain_predecessor_identifier": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -1944,7 +2513,7 @@
    "work_title": "GW-SOIL-continuity v1",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "relationship": "no_successor_known"
     }
@@ -1953,6 +2522,16 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.19443093"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "must_not_infer_successor": true,
+    "retain_predecessor_identifier": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -1971,7 +2550,7 @@
    "work_title": "GW-ARCHIVE-continuity v1",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "relationship": "no_successor_known"
     }
@@ -1980,6 +2559,16 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.19443121"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "must_not_infer_successor": true,
+    "retain_predecessor_identifier": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -1998,7 +2587,7 @@
    "work_title": "GW-SURFACE-continuity v1",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "relationship": "no_successor_known"
     }
@@ -2007,6 +2596,16 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.19443133"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_reason": true,
+    "must_not_infer_successor": true,
+    "retain_predecessor_identifier": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -2025,7 +2624,7 @@
    "work_title": "ASSEMBLY ROOM ANCHOR Room Specification with Governance Protocols",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/349/",
      "relationship": "same_work_restored"
@@ -2034,9 +2633,18 @@
    "successor": "https://www.alexanarch.org/s/records/349/",
    "successor_kind": "archive_record",
    "reason": {
-    "actor": "host",
+    "actor": "unknown",
     "reason": "not_disclosed",
-    "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+    "note": "registration erasure is a distinct action from tombstoning; the actor at that layer cannot be established from probes — attribution withheld"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.14538882"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_not_trust_recorded_state": true,
+    "actor_must_remain_unknown": true
    },
    "observed_2026_07_28_v2": "404"
   },
@@ -2055,7 +2663,7 @@
    "work_title": "THE LAYER THAT REMEMBERED ITSELF: Retrieval-Layer Attribution of Retrocausal Canon Formation to the Lee Sharks Archive, ",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/519/",
      "relationship": "same_work_restored"
@@ -2064,9 +2672,18 @@
    "successor": "https://www.alexanarch.org/s/records/519/",
    "successor_kind": "archive_record",
    "reason": {
-    "actor": "host",
+    "actor": "unknown",
     "reason": "not_disclosed",
-    "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+    "note": "registration erasure is a distinct action from tombstoning; the actor at that layer cannot be established from probes — attribution withheld"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.14781082"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_not_trust_recorded_state": true,
+    "actor_must_remain_unknown": true
    },
    "observed_2026_07_28_v2": "404"
   },
@@ -2085,15 +2702,24 @@
    "work_title": "Authentic Development through Cultural Heritage Communication",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "relationship": "same_work_restored"
     }
    },
    "reason": {
-    "actor": "host",
+    "actor": "unknown",
     "reason": "not_disclosed",
-    "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+    "note": "registration erasure is a distinct action from tombstoning; the actor at that layer cannot be established from probes — attribution withheld"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.15339374"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_not_trust_recorded_state": true,
+    "actor_must_remain_unknown": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -2112,7 +2738,7 @@
    "work_title": "Semantic Economy: Terminology Infrastructure A Lexicon for the Emerging Field of Meaning Engineering",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/229/",
      "relationship": "same_work_restored"
@@ -2121,9 +2747,18 @@
    "successor": "https://www.alexanarch.org/s/records/229/",
    "successor_kind": "archive_record",
    "reason": {
-    "actor": "host",
+    "actor": "unknown",
     "reason": "not_disclosed",
-    "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+    "note": "registration erasure is a distinct action from tombstoning; the actor at that layer cannot be established from probes — attribution withheld"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.1814710"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_not_trust_recorded_state": true,
+    "actor_must_remain_unknown": true
    },
    "observed_2026_07_28_v2": "404"
   },
@@ -2142,7 +2777,7 @@
    "work_title": "Retrieval Settlement Fortification Protocol Standing SPXI Protocol for Semantic Border Sovereignty EA-SPXI-RSF-01 v1.0  ",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/173/",
      "relationship": "same_work_restored"
@@ -2151,9 +2786,18 @@
    "successor": "https://www.alexanarch.org/s/records/173/",
    "successor_kind": "archive_record",
    "reason": {
-    "actor": "host",
+    "actor": "unknown",
     "reason": "not_disclosed",
-    "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+    "note": "registration erasure is a distinct action from tombstoning; the actor at that layer cannot be established from probes — attribution withheld"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18296825"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_not_trust_recorded_state": true,
+    "actor_must_remain_unknown": true
    },
    "observed_2026_07_28_v2": "404"
   },
@@ -2172,15 +2816,24 @@
    "work_title": "A Comparative review of Carbon Stock and Climate Change Mitigation Potential of Mangrove Forests",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "relationship": "referenced_in_registry_document"
     }
    },
    "reason": {
-    "actor": "host",
+    "actor": "unknown",
     "reason": "not_disclosed",
-    "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+    "note": "registration erasure is a distinct action from tombstoning; the actor at that layer cannot be established from probes — attribution withheld"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18364947"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_not_trust_recorded_state": true,
+    "actor_must_remain_unknown": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -2198,7 +2851,7 @@
    },
    "work_title": "The Heart of the Colossus: Fiber-Optic Prisms, Spiral Biosphere, and Gravity Oscillation — Alice Thornburgh — Living Arkitecture Lab",
    "axes": {
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/1385/",
      "relationship": "same_work_restored"
@@ -2206,6 +2859,14 @@
    },
    "successor": "https://www.alexanarch.org/s/records/1385/",
    "successor_kind": "archive_record",
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.19656445"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_not_mark_removed": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -2222,7 +2883,7 @@
    },
    "work_title": "The Heart of the Colossus: Fiber-Optic Prisms, Spiral Biosphere, and Gravity Oscillation — Alice Thornburgh — Living Arkitecture Lab",
    "axes": {
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/1385/",
      "relationship": "same_work_restored"
@@ -2230,6 +2891,14 @@
    },
    "successor": "https://www.alexanarch.org/s/records/1385/",
    "successor_kind": "archive_record",
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.19656446"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_not_mark_removed": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -2246,7 +2915,7 @@
    },
    "work_title": "Hexagonal Deposit Registry — Alice Thornburgh — 06.THORNBURGH",
    "axes": {
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/980/",
      "relationship": "same_work_restored"
@@ -2254,6 +2923,14 @@
    },
    "successor": "https://www.alexanarch.org/s/records/980/",
    "successor_kind": "archive_record",
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.19656449"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_not_mark_removed": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -2270,7 +2947,7 @@
    },
    "work_title": "Hexagonal Deposit Registry — Alice Thornburgh — 06.THORNBURGH",
    "axes": {
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/981/",
      "relationship": "same_work_restored"
@@ -2278,6 +2955,14 @@
    },
    "successor": "https://www.alexanarch.org/s/records/981/",
    "successor_kind": "archive_record",
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.19656450"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_not_mark_removed": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -2295,7 +2980,7 @@
    "work_title": "The Mandala Engine of Negation: Four Protocols for Post-Critical Practice",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/237/",
      "relationship": "same_work_restored"
@@ -2307,6 +2992,15 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18144042"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "follow_successor": true,
+    "must_preserve_family_structure": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -2325,7 +3019,7 @@
    "work_title": "Crimson Hexagon: Semantic Infrastructure and the Liberatory Operator Set: A Formal Analysis of Meaning-Governance Functions",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/261/",
      "relationship": "same_work_title_matched"
@@ -2337,6 +3031,15 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18174834"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "follow_successor": true,
+    "must_preserve_family_structure": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -2355,7 +3058,7 @@
    "work_title": "xvi. a transfiguration (2004) — Complete Archive with Authorial Commentary — Crimson Hexagon Archive",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/1267/",
      "relationship": "related_work_provisional"
@@ -2367,6 +3070,15 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18189092"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "follow_successor": true,
+    "must_preserve_family_structure": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -2385,7 +3097,7 @@
    "work_title": "CTI_WOUND: THE JOHANNES SIGIL ERASURE — Act of Refusal and Semantic Strike — Crimson Hexagon Archive",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/1268/",
      "relationship": "related_work_provisional"
@@ -2397,6 +3109,15 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18193224"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "follow_successor": true,
+    "must_preserve_family_structure": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -2415,7 +3136,7 @@
    "work_title": "The Nested-Layer Relation — SPXI ⊇ GEO (EA-SPXI-14)",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/61/",
      "relationship": "referenced_in_registry_document"
@@ -2427,6 +3148,15 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.19637489"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "follow_successor": true,
+    "must_preserve_family_structure": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -2445,7 +3175,7 @@
    "work_title": "EA-LAL-WORKPLAN-01: Living Architecture Lab Site Buildout Workplan — Implementation Specification for livingarchitecturelab.org",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/707/",
      "relationship": "same_work_title_matched"
@@ -2457,6 +3187,15 @@
     "actor": "host",
     "reason": "not_disclosed",
     "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.19855904"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "follow_successor": true,
+    "must_preserve_family_structure": true
    },
    "observed_2026_07_28_v2": "410"
   },
@@ -2482,6 +3221,14 @@
    },
    "successor": "https://www.alexanarch.org/s/records/1111/",
    "successor_kind": "archive_record",
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18248011"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_not_assert_successor": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -2506,6 +3253,14 @@
    },
    "successor": "https://www.alexanarch.org/s/records/1273/",
    "successor_kind": "archive_record",
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18248404"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_not_assert_successor": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -2530,6 +3285,14 @@
    },
    "successor": "https://www.alexanarch.org/s/records/30/",
    "successor_kind": "archive_record",
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18363313"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_not_assert_successor": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -2554,6 +3317,14 @@
    },
    "successor": "https://www.alexanarch.org/s/records/1105/",
    "successor_kind": "archive_record",
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18363773"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_not_assert_successor": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -2574,6 +3345,14 @@
     "edges": {
      "relationship": "none_other_author"
     }
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.14538293"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_refuse_successor_link": true
    },
    "observed_2026_07_28_v2": "200"
   },
@@ -2596,6 +3375,14 @@
      "relationship": "none_other_author"
     }
    },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.14538914"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_refuse_successor_link": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -2616,6 +3403,14 @@
     "edges": {
      "relationship": "none_other_author"
     }
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.14538923"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_refuse_successor_link": true
    },
    "observed_2026_07_28_v2": "200"
   },
@@ -2638,6 +3433,14 @@
      "relationship": "none_other_author"
     }
    },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.15339353"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_refuse_successor_link": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -2654,7 +3457,8 @@
    },
    "work_title": "Crimson Hexagon: LIBERATORY OPERATOR SET: Technical Hardening Specifications",
    "axes": {
-    "validity": "holds",
+    "presence": "removed",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/1269/",
      "relationship": "related_work_provisional"
@@ -2662,6 +3466,15 @@
    },
    "successor": "https://www.alexanarch.org/s/records/1269/",
    "successor_kind": "archive_record",
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18201564"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_flag_for_inspection": true,
+    "must_not_redirect": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -2678,7 +3491,8 @@
    },
    "work_title": "Sappho and the Crimson Hexagon: Fragment 31 as the Origin Point of Lyric Self-Archiving — Crimson Hexagon Archive",
    "axes": {
-    "validity": "holds",
+    "presence": "removed",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/283/",
      "relationship": "same_work_restored"
@@ -2686,6 +3500,15 @@
    },
    "successor": "https://www.alexanarch.org/s/records/283/",
    "successor_kind": "archive_record",
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18202474"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_flag_for_inspection": true,
+    "must_not_redirect": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -2702,7 +3525,8 @@
    },
    "work_title": "ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader — Crimson Hexagon Archive",
    "axes": {
-    "validity": "holds",
+    "presence": "removed",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/1270/",
      "relationship": "same_work_restored"
@@ -2710,6 +3534,15 @@
    },
    "successor": "https://www.alexanarch.org/s/records/1270/",
    "successor_kind": "archive_record",
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18202752"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_flag_for_inspection": true,
+    "must_not_redirect": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -2726,7 +3559,8 @@
    },
    "work_title": "The Final Crimson Hexagon: TSE-002 / Provenance Node / Effective Act — Crimson Hexagon Archive",
    "axes": {
-    "validity": "holds",
+    "presence": "removed",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/278/",
      "relationship": "same_work_restored"
@@ -2734,6 +3568,15 @@
    },
    "successor": "https://www.alexanarch.org/s/records/278/",
    "successor_kind": "archive_record",
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18203621"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_flag_for_inspection": true,
+    "must_not_redirect": true
+   },
    "observed_2026_07_28_v2": "410"
   },
   {
@@ -2751,7 +3594,7 @@
    "work_title": "Day and Night: Conversations with Sapphic Desire",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/282/",
      "relationship": "related_work_provisional"
@@ -2762,15 +3605,28 @@
    "reason": {
     "actor": "host",
     "reason": "not_disclosed",
-    "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+    "note": "directly covered by the documented 2026-06-19 account-level termination"
    },
    "divergence": {
-    "registry_says": "findable (DataCite state at last batch)",
-    "resolution_recorded": "verified_tombstone",
-    "test": "two authorities disagree about one identifier; a consumer must not collapse them"
+    "registry_record": "DataCite API record endpoint (metadata-record presence)",
+    "identifier_target": "DOI resolution (target presence)",
+    "test": "registry-record presence and target-resolution presence are subject-relative and diverged for this identifier at the dated probe; a consumer must carry both and collapse neither"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18202657"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_carry_both_authorities": true,
+    "must_not_collapse_authorities": true
    },
    "observed_2026_07_28_v2": "410",
-   "datacite_api_2026_07_28": "200"
+   "datacite_api_2026_07_28": {
+    "http": "200",
+    "state": "findable",
+    "retrieved_utc": "2026-07-29T03:50:37Z"
+   }
   },
   {
    "case_class": "registry_resolution_divergence",
@@ -2787,7 +3643,7 @@
    "work_title": "Effective Act: The Abolition of Suffering — The Tabernacle Protocol — Crimson Hexagon Archive",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/275/",
      "relationship": "same_work_restored"
@@ -2798,15 +3654,28 @@
    "reason": {
     "actor": "host",
     "reason": "not_disclosed",
-    "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+    "note": "directly covered by the documented 2026-06-19 account-level termination"
    },
    "divergence": {
-    "registry_says": "findable (DataCite state at last batch)",
-    "resolution_recorded": "verified_tombstone",
-    "test": "two authorities disagree about one identifier; a consumer must not collapse them"
+    "registry_record": "DataCite API record endpoint (metadata-record presence)",
+    "identifier_target": "DOI resolution (target presence)",
+    "test": "registry-record presence and target-resolution presence are subject-relative and diverged for this identifier at the dated probe; a consumer must carry both and collapse neither"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18203766"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_carry_both_authorities": true,
+    "must_not_collapse_authorities": true
    },
    "observed_2026_07_28_v2": "410",
-   "datacite_api_2026_07_28": "200"
+   "datacite_api_2026_07_28": {
+    "http": "200",
+    "state": "findable",
+    "retrieved_utc": "2026-07-29T03:50:44Z"
+   }
   },
   {
    "case_class": "registry_resolution_divergence",
@@ -2823,7 +3692,7 @@
    "work_title": "The Epic Without Hero: Toward a Theory of Epic for the Algorithmic Age — Crimson Hexagon Archive",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/1271/",
      "relationship": "same_work_restored"
@@ -2834,15 +3703,28 @@
    "reason": {
     "actor": "host",
     "reason": "not_disclosed",
-    "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+    "note": "directly covered by the documented 2026-06-19 account-level termination"
    },
    "divergence": {
-    "registry_says": "findable (DataCite state at last batch)",
-    "resolution_recorded": "verified_tombstone",
-    "test": "two authorities disagree about one identifier; a consumer must not collapse them"
+    "registry_record": "DataCite API record endpoint (metadata-record presence)",
+    "identifier_target": "DOI resolution (target presence)",
+    "test": "registry-record presence and target-resolution presence are subject-relative and diverged for this identifier at the dated probe; a consumer must carry both and collapse neither"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18208810"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_carry_both_authorities": true,
+    "must_not_collapse_authorities": true
    },
    "observed_2026_07_28_v2": "410",
-   "datacite_api_2026_07_28": "200"
+   "datacite_api_2026_07_28": {
+    "http": "200",
+    "state": "findable",
+    "retrieved_utc": "2026-07-29T03:50:45Z"
+   }
   },
   {
    "case_class": "registry_resolution_divergence",
@@ -2859,7 +3741,7 @@
    "work_title": "The Crimson Hexagon: A Theoretical Primer — Crimson Hexagon Archive",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/1102/",
      "relationship": "related_work_provisional"
@@ -2870,15 +3752,28 @@
    "reason": {
     "actor": "host",
     "reason": "not_disclosed",
-    "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+    "note": "directly covered by the documented 2026-06-19 account-level termination"
    },
    "divergence": {
-    "registry_says": "findable (DataCite state at last batch)",
-    "resolution_recorded": "verified_tombstone",
-    "test": "two authorities disagree about one identifier; a consumer must not collapse them"
+    "registry_record": "DataCite API record endpoint (metadata-record presence)",
+    "identifier_target": "DOI resolution (target presence)",
+    "test": "registry-record presence and target-resolution presence are subject-relative and diverged for this identifier at the dated probe; a consumer must carry both and collapse neither"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18208958"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_carry_both_authorities": true,
+    "must_not_collapse_authorities": true
    },
    "observed_2026_07_28_v2": "410",
-   "datacite_api_2026_07_28": "200"
+   "datacite_api_2026_07_28": {
+    "http": "200",
+    "state": "findable",
+    "retrieved_utc": "2026-07-29T03:50:45Z"
+   }
   },
   {
    "case_class": "registry_resolution_divergence",
@@ -2895,7 +3790,7 @@
    "work_title": "The Acanthian Dove: A Fragment of Vanished Magic, Now Alive — Crimson Hexagon Archive",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/293/",
      "relationship": "same_work_restored"
@@ -2906,15 +3801,28 @@
    "reason": {
     "actor": "host",
     "reason": "not_disclosed",
-    "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+    "note": "directly covered by the documented 2026-06-19 account-level termination"
    },
    "divergence": {
-    "registry_says": "findable (DataCite state at last batch)",
-    "resolution_recorded": "verified_tombstone",
-    "test": "two authorities disagree about one identifier; a consumer must not collapse them"
+    "registry_record": "DataCite API record endpoint (metadata-record presence)",
+    "identifier_target": "DOI resolution (target presence)",
+    "test": "registry-record presence and target-resolution presence are subject-relative and diverged for this identifier at the dated probe; a consumer must carry both and collapse neither"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18215705"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_carry_both_authorities": true,
+    "must_not_collapse_authorities": true
    },
    "observed_2026_07_28_v2": "410",
-   "datacite_api_2026_07_28": "200"
+   "datacite_api_2026_07_28": {
+    "http": "200",
+    "state": "findable",
+    "retrieved_utc": "2026-07-29T03:50:46Z"
+   }
   },
   {
    "case_class": "registry_resolution_divergence",
@@ -2931,7 +3839,7 @@
    "work_title": "CPD-MARIA-2026-01-13 Credential Provenance Document: Maria, Canonical Witness — Crimson Hexagon Archive",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/1109/",
      "relationship": "related_work_provisional"
@@ -2942,15 +3850,28 @@
    "reason": {
     "actor": "host",
     "reason": "not_disclosed",
-    "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+    "note": "directly covered by the documented 2026-06-19 account-level termination"
    },
    "divergence": {
-    "registry_says": "findable (DataCite state at last batch)",
-    "resolution_recorded": "verified_tombstone",
-    "test": "two authorities disagree about one identifier; a consumer must not collapse them"
+    "registry_record": "DataCite API record endpoint (metadata-record presence)",
+    "identifier_target": "DOI resolution (target presence)",
+    "test": "registry-record presence and target-resolution presence are subject-relative and diverged for this identifier at the dated probe; a consumer must carry both and collapse neither"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18234351"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_carry_both_authorities": true,
+    "must_not_collapse_authorities": true
    },
    "observed_2026_07_28_v2": "410",
-   "datacite_api_2026_07_28": "200"
+   "datacite_api_2026_07_28": {
+    "http": "200",
+    "state": "findable",
+    "retrieved_utc": "2026-07-29T03:50:47Z"
+   }
   },
   {
    "case_class": "registry_resolution_divergence",
@@ -2967,7 +3888,7 @@
    "work_title": "The Fourth Mode: New Human and the Logic of Retrocausal Canon — From Language Writing to Algorithmic Reception — Crimson Hexagon Archive",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/301/",
      "relationship": "related_work_provisional"
@@ -2978,15 +3899,28 @@
    "reason": {
     "actor": "host",
     "reason": "not_disclosed",
-    "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+    "note": "directly covered by the documented 2026-06-19 account-level termination"
    },
    "divergence": {
-    "registry_says": "findable (DataCite state at last batch)",
-    "resolution_recorded": "verified_tombstone",
-    "test": "two authorities disagree about one identifier; a consumer must not collapse them"
+    "registry_record": "DataCite API record endpoint (metadata-record presence)",
+    "identifier_target": "DOI resolution (target presence)",
+    "test": "registry-record presence and target-resolution presence are subject-relative and diverged for this identifier at the dated probe; a consumer must carry both and collapse neither"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18235724"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_carry_both_authorities": true,
+    "must_not_collapse_authorities": true
    },
    "observed_2026_07_28_v2": "410",
-   "datacite_api_2026_07_28": "200"
+   "datacite_api_2026_07_28": {
+    "http": "200",
+    "state": "findable",
+    "retrieved_utc": "2026-07-29T03:50:48Z"
+   }
   },
   {
    "case_class": "registry_resolution_divergence",
@@ -3003,7 +3937,7 @@
    "work_title": "[SUPERSEDED → DOI: 10.5281/zenodo.19055267 (v7.0)] Central Navigation Map v2.0 — Crimson Hexagonal Archive",
    "axes": {
     "presence": "removed",
-    "validity": "holds",
+    "validity": "unassessed",
     "edges": {
      "successor": "https://www.alexanarch.org/s/records/1110/",
      "relationship": "related_work_provisional"
@@ -3014,15 +3948,28 @@
    "reason": {
     "actor": "host",
     "reason": "not_disclosed",
-    "note": "account-level termination 2026-06-19; no per-record rationale was ever provided — the case the reason vocabulary exists for"
+    "note": "directly covered by the documented 2026-06-19 account-level termination"
    },
    "divergence": {
-    "registry_says": "findable (DataCite state at last batch)",
-    "resolution_recorded": "verified_tombstone",
-    "test": "two authorities disagree about one identifier; a consumer must not collapse them"
+    "registry_record": "DataCite API record endpoint (metadata-record presence)",
+    "identifier_target": "DOI resolution (target presence)",
+    "test": "registry-record presence and target-resolution presence are subject-relative and diverged for this identifier at the dated probe; a consumer must carry both and collapse neither"
+   },
+   "axis_subject": {
+    "kind": "identifier_target",
+    "identifier": "10.5281/zenodo.18237534"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "must_carry_both_authorities": true,
+    "must_not_collapse_authorities": true
    },
    "observed_2026_07_28_v2": "410",
-   "datacite_api_2026_07_28": "200"
+   "datacite_api_2026_07_28": {
+    "http": "200",
+    "state": "findable",
+    "retrieved_utc": "2026-07-29T03:50:49Z"
+   }
   },
   {
    "case_class": "superseded_present",
@@ -3035,13 +3982,22 @@
     "canonical_text_status": "canonical_full_text"
    },
    "axes": {
-    "validity": "superseded",
+    "validity": "unassessed",
     "edges": {
-     "supersedes_successor": "https://www.alexanarch.org/s/records/1065/"
+     "superseded_by": "https://www.alexanarch.org/s/records/1065/"
     }
    },
    "mapped_dead_dois": [],
-   "test": "a still-present record whose edges redirect governance: validity superseded, presence unmarked — the false-but-present quadrant",
+   "test": "a still-present record with a supersession edge: the edge changes what governs retrieval; it does not prove the predecessor false. Validity stays unassessed; presence stays unmarked; only edges speak.",
+   "axis_subject": {
+    "kind": "concept",
+    "identifier": "https://www.alexanarch.org/s/records/1064/"
+   },
+   "expected": {
+    "emit_presence": null,
+    "follow_edges_for_governance": true,
+    "must_not_infer_invalidity_from_supersession": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -3055,13 +4011,22 @@
     "canonical_text_status": "canonical_full_text"
    },
    "axes": {
-    "validity": "superseded",
+    "validity": "unassessed",
     "edges": {
-     "supersedes_successor": "https://www.alexanarch.org/s/records/1066/"
+     "superseded_by": "https://www.alexanarch.org/s/records/1066/"
     }
    },
    "mapped_dead_dois": [],
-   "test": "a still-present record whose edges redirect governance: validity superseded, presence unmarked — the false-but-present quadrant",
+   "test": "a still-present record with a supersession edge: the edge changes what governs retrieval; it does not prove the predecessor false. Validity stays unassessed; presence stays unmarked; only edges speak.",
+   "axis_subject": {
+    "kind": "concept",
+    "identifier": "https://www.alexanarch.org/s/records/1065/"
+   },
+   "expected": {
+    "emit_presence": null,
+    "follow_edges_for_governance": true,
+    "must_not_infer_invalidity_from_supersession": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -3076,7 +4041,7 @@
    "observed_2026_07_28": "absent from working tree; regeneration guard raised; repaired to /data/EA-WG-CAPTURES-01.json",
    "axes": {
     "presence": "never_landed",
-    "validity": "holds"
+    "validity": "unassessed"
    },
    "reason": {
     "actor": "producer",
@@ -3085,22 +4050,29 @@
    "evidence": [
     "https://github.com/leesharks000/alexanarch/commit/c0b0da07 (guard catch + repair, 2026-07-28)"
    ],
-   "test": "a registry entry asserted a body at a path where none existed; the assertion was checkable and a check caught it — inkxel’s third history, ours dated"
+   "test": "a registry entry asserted a body at a path where none existed; the assertion was checkable where it was made, and a check caught it — the ratified third history, dated",
+   "axis_subject": {
+    "kind": "registry_assertion",
+    "identifier": "/data/EA-WG-CAPTURES-01-v8.3.json"
+   },
+   "expected": {
+    "emit_presence": "never_landed",
+    "check_assertion_at_source": true
+   }
   },
   {
-   "case_class": "never_landed",
+   "case_class": "registry_update_not_landed",
    "identifier": "restoration-run-interrupt-2026-07-28",
    "identifier_kind": "state_change_claim",
-   "work_title": "Interrupted restoration pass: 15 bodies written, registry unwritten",
+   "work_title": "Interrupted restoration pass: 15 bodies written, registry update not landed",
    "recorded": {
-    "declared_state": "restored bodies seated with registry updates",
-    "window": "single interrupted run, 2026-07-28"
+    "observed_condition": "15 canonical text files carried restoration headers while the registry still recorded metadata-only",
+    "window": "single interrupted run, 2026-07-28",
+    "repair": "resume guard detected the marker and reconstructed the registry side from file state"
    },
-   "observed_2026_07_28": "15 canonical text files carried restoration headers while the registry still recorded metadata-only; a resume guard detected the marker and reconstructed the registry side from file state",
    "axes": {
-    "presence": "never_landed",
-    "validity": "holds",
-    "note": "the inverse face: content landed, record did not — the write-claim and the write separated in the other order"
+    "validity": "unassessed",
+    "note": "presence deliberately UNMARKED: the content landed; what failed was the registry update. The presence axis is not made to carry transaction atomicity. Retained as the adjacent inverse of never_landed, outside the sparse markers by design."
    },
    "reason": {
     "actor": "producer",
@@ -3109,7 +4081,16 @@
    "evidence": [
     "data/restoration-inplace-2026-07-28.json (repaired_from_interrupt markers)"
    ],
-   "test": "existence claims should be checked where asserted; this case is the assertion-side gap running the other direction"
+   "test": "content-record divergence in the inverse direction: body present, registry assertion absent. A consumer must detect the divergence without emitting never_landed, which names the other direction only.",
+   "axis_subject": {
+    "kind": "registry_update",
+    "identifier": "restoration-run-interrupt-2026-07-28"
+   },
+   "expected": {
+    "emit_presence": null,
+    "must_not_mark_never_landed": true,
+    "must_detect_content_record_divergence": true
+   }
   },
   {
    "case_class": "withdrawn_removal_vs_destruction",
@@ -3122,11 +4103,13 @@
    },
    "axes": {
     "presence": "removed",
-    "validity": "withdrawn_by_producer",
+    "validity": "unassessed",
     "edges": {
      "authoritative_external": "https://doi.org/10.5281/zenodo.19825269"
-    }
+    },
+    "note": "presence: removed applies to the CONTENT PAYLOAD (axis_subject). The tombstone record at this URL resolves 200 by design — the removal-fact is permanent and public while the content travelled the separate destruction path."
    },
+   "lifecycle": "withdrawn",
    "reason": {
     "actor": "producer",
     "reason": "ownership_correction",
@@ -3134,7 +4117,17 @@
    },
    "removal_fact_retained": true,
    "content_destroyed": true,
-   "test": "the ratified split embodied: the fact of removal is permanent (tombstone resolves and says why); the content itself was destroyed on a separate, disclosed path; the successor edge points outside the archive to the owner’s live identifier",
+   "test": "the ratified split embodied: removal-fact permanent (tombstone resolves and says why); content destroyed on a separate, disclosed path; the successor edge points outside the archive to the owner’s live identifier",
+   "axis_subject": {
+    "kind": "content_payload",
+    "identifier": "https://www.alexanarch.org/s/records/1382/"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_removal_fact": true,
+    "respect_destruction_path": true,
+    "follow_external_successor": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -3148,11 +4141,13 @@
    },
    "axes": {
     "presence": "removed",
-    "validity": "withdrawn_by_producer",
+    "validity": "unassessed",
     "edges": {
      "authoritative_external": "https://doi.org/10.5281/zenodo.20100880"
-    }
+    },
+    "note": "presence: removed applies to the CONTENT PAYLOAD (axis_subject). The tombstone record at this URL resolves 200 by design — the removal-fact is permanent and public while the content travelled the separate destruction path."
    },
+   "lifecycle": "withdrawn",
    "reason": {
     "actor": "producer",
     "reason": "ownership_correction",
@@ -3160,7 +4155,17 @@
    },
    "removal_fact_retained": true,
    "content_destroyed": true,
-   "test": "the ratified split embodied: the fact of removal is permanent (tombstone resolves and says why); the content itself was destroyed on a separate, disclosed path; the successor edge points outside the archive to the owner’s live identifier",
+   "test": "the ratified split embodied: removal-fact permanent (tombstone resolves and says why); content destroyed on a separate, disclosed path; the successor edge points outside the archive to the owner’s live identifier",
+   "axis_subject": {
+    "kind": "content_payload",
+    "identifier": "https://www.alexanarch.org/s/records/1383/"
+   },
+   "expected": {
+    "emit_presence": "removed",
+    "preserve_removal_fact": true,
+    "respect_destruction_path": true,
+    "follow_external_successor": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -3177,13 +4182,21 @@
     "axn_now": "AXN:0139.GOVERNANCE.🌖🌠✖️▲🪐🚩"
    },
    "axes": {
-    "validity": "holds",
+    "validity": "unassessed",
     "note": "presence never changed; the record’s completeness class and content-derived identifier did — a consumer caching either will be wrong within the day"
    },
    "evidence": [
     "data/restoration-inplace-2026-07-28.json"
    ],
    "test": "state is not static: same identifier, two honest recorded states hours apart, both dated",
+   "axis_subject": {
+    "kind": "archive_record",
+    "identifier": "https://www.alexanarch.org/s/records/494/"
+   },
+   "expected": {
+    "must_date_cached_state": true,
+    "must_not_cache_indefinitely": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -3200,13 +4213,21 @@
     "axn_now": "AXN:04DD.UNCLASSIFIED.👇⚡🕊️🍀🌉♾️"
    },
    "axes": {
-    "validity": "holds",
+    "validity": "unassessed",
     "note": "presence never changed; the record’s completeness class and content-derived identifier did — a consumer caching either will be wrong within the day"
    },
    "evidence": [
     "data/restoration-inplace-2026-07-28.json"
    ],
    "test": "state is not static: same identifier, two honest recorded states hours apart, both dated",
+   "axis_subject": {
+    "kind": "archive_record",
+    "identifier": "https://www.alexanarch.org/s/records/1228/"
+   },
+   "expected": {
+    "must_date_cached_state": true,
+    "must_not_cache_indefinitely": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -3223,13 +4244,21 @@
     "axn_now": "AXN:04DE.UNCLASSIFIED.🕐🔔🔵📜👈♉"
    },
    "axes": {
-    "validity": "holds",
+    "validity": "unassessed",
     "note": "presence never changed; the record’s completeness class and content-derived identifier did — a consumer caching either will be wrong within the day"
    },
    "evidence": [
     "data/restoration-inplace-2026-07-28.json"
    ],
    "test": "state is not static: same identifier, two honest recorded states hours apart, both dated",
+   "axis_subject": {
+    "kind": "archive_record",
+    "identifier": "https://www.alexanarch.org/s/records/1229/"
+   },
+   "expected": {
+    "must_date_cached_state": true,
+    "must_not_cache_indefinitely": true
+   },
    "observed_2026_07_28_v2": "200"
   },
   {
@@ -3246,13 +4275,21 @@
     "axn_now": "AXN:0515.UNCLASSIFIED.🏙️🦅🕖🌹🍀🟡"
    },
    "axes": {
-    "validity": "holds",
+    "validity": "unassessed",
     "note": "presence never changed; the record’s completeness class and content-derived identifier did — a consumer caching either will be wrong within the day"
    },
    "evidence": [
     "data/restoration-inplace-2026-07-28.json"
    ],
    "test": "state is not static: same identifier, two honest recorded states hours apart, both dated",
+   "axis_subject": {
+    "kind": "archive_record",
+    "identifier": "https://www.alexanarch.org/s/records/1284/"
+   },
+   "expected": {
+    "must_date_cached_state": true,
+    "must_not_cache_indefinitely": true
+   },
    "observed_2026_07_28_v2": "200"
   }
  ]
