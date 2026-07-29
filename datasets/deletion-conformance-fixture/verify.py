@@ -24,6 +24,15 @@ EXPECTED = {
     'syntactically_valid_unverified': set(),          # no expectation asserted
 }
 
+# v2.0: per-class expectations for non-DOI and new classes.
+CLASS_EXPECTED = {
+    'registry_resolution_divergence': {'doi': {'410', '404'}, 'datacite_api': {'200'}},
+    'superseded_present': {'archive_record': {'200'}},
+    'withdrawn_removal_vs_destruction': {'archive_record': {'200'}},  # removal-fact page resolves
+    'state_drift_documented': {'archive_record': {'200'}},
+    'never_landed': {},  # evidence is repository artifacts, not HTTP
+}
+
 
 def probe(doi, tries=3, pause=3):
     for i in range(tries):
