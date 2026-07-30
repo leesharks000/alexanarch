@@ -618,6 +618,35 @@ def regenerate_static_page(d, eidx, registry=None):
             + (f'<div style="color:#78350f;font-size:.88em;margin-top:6px">{esc(superseded_reason)}</div>' if superseded_reason else '')
             + '</div>'
         )
+    elif d.get('body_status', {}).get('class') == 'metadata_capture':
+        # Semi-restored pointer banner (2026-07-30, MANUS-directed): a capture
+        # must never present as the whole work. Two truthful states:
+        #   full_version present  -> point forward to the complete deposit
+        #   absent                -> say plainly the complete work is not yet
+        #                            restored here (restoration candidate)
+        fv = d.get('body_status', {}).get('full_version') or {}
+        if fv.get('deposit_number'):
+            version_banner = (
+                '<div style="background:#e0f2fe;border-left:4px solid #0369a1;padding:12px 16px;'
+                'border-radius:6px;margin:12px 0;font-size:.92em">'
+                '<div style="font-weight:600;color:#0c4a6e;margin-bottom:4px">◐ Semi-restored capture — the complete work exists in this archive</div>'
+                f'<div style="color:#075985">Complete version: <a href="/s/records/{fv["deposit_number"]}/" '
+                f'style="color:var(--accent);font-weight:500">#{fv["deposit_number"]} — {esc(fv.get("title",""))[:90]}</a>'
+                f' <span style="font-size:.85em;opacity:.8">({esc(fv.get("axn",""))})</span></div>'
+                f'<div style="color:#075985;font-size:.85em;margin-top:6px">Pairing basis: {esc(fv.get("basis",""))}. '
+                'This record preserves the metadata capture; read the complete version for the full text.</div>'
+                '</div>'
+            )
+        else:
+            version_banner = (
+                '<div style="background:#fef3c7;border-left:4px solid #d97706;padding:12px 16px;'
+                'border-radius:6px;margin:12px 0;font-size:.92em">'
+                '<div style="font-weight:600;color:#92400e;margin-bottom:4px">◐ Semi-restored metadata capture</div>'
+                '<div style="color:#78350f">This record preserves metadata and a partial body only. '
+                'The complete work is <strong>not yet restored in this archive</strong>; do not cite this page as the full text. '
+                'It is queued for restoration (see <code>data/worklists/semi-restored-pairing-queue.json</code>).</div>'
+                '</div>'
+            )
     elif status == 'DRAFT_PENDING':
         reason = d.get('draft_pending_reason', '')
         version_banner = (
