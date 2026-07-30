@@ -344,6 +344,148 @@ def _compose_meta_description(d, max_len=155, min_target=120):
     return _truncate_at_word(title, max_len)
 
 
+
+_TRAVERSAL_CACHE = {}
+
+
+def _traversal_graphs():
+    """Load and index the citation / capture / concept graphs once per process.
+
+    These files are computed by the enrichment scripts and, until 2026-07-30,
+    were never rendered anywhere: the archive's intellectual structure existed
+    only as JSON. The traversal block below makes it walkable — for readers and
+    for crawlers, which previously could enter at any record and find no exit
+    but the 940 KB master index.
+    """
+    if _TRAVERSAL_CACHE:
+        return _TRAVERSAL_CACHE
+    import collections, pathlib
+    _ROOT = pathlib.Path(__file__).resolve().parent
+    _errs = []
+    cites = collections.defaultdict(list)   # source -> [(target, via)]
+    cited = collections.defaultdict(list)   # target -> [(source, via)]
+    caps = collections.defaultdict(list)    # deposit -> [(slug, query, date)]
+    concept_of = {}                         # deposit -> concept dict
+    try:
+        cg = json.load(open(_ROOT / 'data' / 'citation-graph.json'))
+        for e in cg.get('edges', []):
+            s, t = e.get('source_deposit'), e.get('target_deposit')
+            if not s or not t or s == t:
+                continue
+            cites[s].append((t, e.get('via')))
+            cited[t].append((s, e.get('via')))
+    except Exception as e:
+        _errs.append(f"citation-graph: {e}")
+    try:
+        cl = json.load(open(_ROOT / 'data' / 'capture-deposit-links.json'))
+        for slug, rec in (cl.get('links') or {}).items():
+            for dep in (rec.get('deposits') or []):
+                n = dep.get('deposit_number')
+                if n:
+                    caps[n].append((slug, rec.get('query'), rec.get('date')))
+    except Exception as e:
+        _errs.append(f"capture-links: {e}")
+    try:
+        cm = json.load(open(_ROOT / 'data' / 'concept-map.json'))
+        for c in cm.get('concepts', []):
+            for v in c.get('versions', []):
+                if v.get('deposit_number'):
+                    concept_of[v['deposit_number']] = c
+    except Exception as e:
+        _errs.append(f"concept-map: {e}")
+    if _errs:
+        print("  [traversal] graph load failures:", "; ".join(_errs), file=sys.stderr)
+    _TRAVERSAL_CACHE.update(cites=cites, cited=cited, caps=caps, concept=concept_of)
+    return _TRAVERSAL_CACHE
+
+
+def _traversal_html(d, registry):
+    """Render prev/next, citation edges, concept siblings, and capture links."""
+    if not registry:
+        return ''
+    esc = lambda s: htmlmod.escape(str(s)) if s else ''
+    g = _traversal_graphs()
+    dn = d['deposit_number']
+    nums = sorted(x['deposit_number'] for x in registry.get('deposits', []))
+    bynum = {x['deposit_number']: x for x in registry.get('deposits', [])}
+    i = nums.index(dn) if dn in nums else -1
+    prev_n = nums[i - 1] if i > 0 else None
+    next_n = nums[i + 1] if 0 <= i < len(nums) - 1 else None
+
+    def link(n, extra=''):
+        e = bynum.get(n)
+        if not e:
+            return ''
+        t = esc(e['title'])[:88]
+        return (f'<a href="/s/records/{n}/" style="color:var(--accent);text-decoration:none">'
+                f'#{n} {t}</a>{extra}')
+
+    rows = []
+    if prev_n or next_n:
+        nav = []
+        if prev_n:
+            nav.append(f'← {link(prev_n)}')
+        if next_n:
+            nav.append(f'{link(next_n)} →')
+        rows.append('<div style="display:flex;justify-content:space-between;gap:1.5rem;'
+                    'font-size:.85em;margin:.4rem 0">'
+                    + ''.join(f'<span style="flex:1">{x}</span>' for x in nav) + '</div>')
+
+    VIA = {'doi_resolution': 'via DOI', 'deposit_number_reference': 'by deposit number',
+           'ea_id_reference': 'by EA identifier', 'axn_reference': 'by AXN',
+           'axn_hex_reference': 'by AXN hex', 'artifact_anchor': 'by artifact anchor'}
+
+    def edge_list(pairs, label, limit=12):
+        if not pairs:
+            return ''
+        seen = {}
+        for n, via in pairs:
+            seen.setdefault(n, via)
+        items = list(seen.items())
+        shown = items[:limit]
+        lis = ''.join(f'<li style="margin:.15rem 0">{link(n)} '
+                      f'<span style="opacity:.6;font-size:.85em">{esc(VIA.get(via, via or ""))}</span></li>'
+                      for n, via in shown)
+        more = (f'<li style="opacity:.6;margin:.15rem 0">+{len(items) - limit} more</li>'
+                if len(items) > limit else '')
+        return (f'<div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;'
+                f'margin-bottom:.2rem">{label} ({len(items)})</div>'
+                f'<ul style="margin:0;padding-left:1.1rem;font-size:.85em">{lis}{more}</ul></div>')
+
+    rows.append(edge_list(g['cites'].get(dn, []), 'This deposit cites'))
+    rows.append(edge_list(g['cited'].get(dn, []), 'Cited by'))
+
+    c = g['concept'].get(dn)
+    if c and len(c.get('versions', [])) > 1:
+        sibs = [v for v in c['versions'] if v.get('deposit_number') != dn]
+        lis = ''.join(f'<li style="margin:.15rem 0">{link(v["deposit_number"])}'
+                      f'{" <span style=\"opacity:.6;font-size:.85em\">current</span>" if v.get("is_current") else ""}</li>'
+                      for v in sibs[:8])
+        rows.append(f'<div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;'
+                    f'margin-bottom:.2rem">Other versions of this work ({len(sibs)})</div>'
+                    f'<ul style="margin:0;padding-left:1.1rem;font-size:.85em">{lis}</ul>'
+                    f'<div style="font-size:.8em;opacity:.7;margin-top:.2rem">'
+                    f'Work concept: <a href="{esc(c.get("concept_url",""))}" '
+                    f'style="color:var(--accent)">{esc(c.get("title_base",""))}</a></div></div>')
+
+    caps = g['caps'].get(dn, [])
+    if caps:
+        lis = ''.join(f'<li style="margin:.15rem 0"><a href="https://www.machinemediation.org/captures/#{esc(s)}" '
+                      f'style="color:var(--accent);text-decoration:none">{esc(q)[:70]}</a> '
+                      f'<span style="opacity:.6;font-size:.85em">{esc(dt)}</span></li>'
+                      for s, q, dt in caps[:6])
+        rows.append(f'<div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;'
+                    f'margin-bottom:.2rem">Machine-composition captures referencing this deposit ({len(caps)})</div>'
+                    f'<ul style="margin:0;padding-left:1.1rem;font-size:.85em">{lis}</ul></div>')
+
+    rows = [r for r in rows if r]
+    if not rows:
+        return ''
+    return ('<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));'
+            'border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2>'
+            + ''.join(rows) + '</section>')
+
+
 def regenerate_static_page(d, eidx, registry=None):
     """Regenerate the static HTML page for a deposit with full enrichment.
 
@@ -658,6 +800,8 @@ def regenerate_static_page(d, eidx, registry=None):
             + '</div></div>'
         )
 
+    traversal_html = _traversal_html(d, registry)
+
     if registry and series_id:
         siblings = sorted(
             (s for s in registry.get('deposits', []) if s.get('version_series_id') == series_id),
@@ -797,6 +941,7 @@ def regenerate_static_page(d, eidx, registry=None):
 <p style="font-size:.9em">{esc(d.get("description",""))}</p>
 {external_metadata_html}
 {version_history}
+{traversal_html}
 {wiki_html}
 {concepts_html}
 {triples_html}
