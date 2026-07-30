@@ -490,7 +490,11 @@ def regenerate_sitemap(reg, dry_run=False):
         n = d.get("deposit_number") or d.get("issue_number")
         if not n:
             continue
-        last = esc_xml(d.get("date") or today)
+        # <lastmod> carries the record's own modification date when it has one
+        # (see scripts/record_modification.py). Absence means unmodified since
+        # deposit — a truthful claim — so we fall back to the publication date
+        # rather than stamping today and teaching crawlers to discount the field.
+        last = esc_xml(d.get("date_modified") or d.get("date") or today)
         lines.append(
             f'  <url><loc>https://www.alexanarch.org/s/records/{n}/</loc>'
             f'<lastmod>{last}</lastmod><priority>0.8</priority></url>'

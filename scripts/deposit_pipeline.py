@@ -338,6 +338,11 @@ def stage_validate(args):
         "--registry", str(REGISTRY), "--strict"])
 
 
+# date_modified is set by scripts/record_modification.py at the point a record's
+# metadata or declared state changes — never by regeneration or enrichment.
+# See that module for the change rule.
+
+
 def stage_record(args):
     n = args.deposit_number
     code = (

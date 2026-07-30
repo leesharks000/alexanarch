@@ -513,6 +513,7 @@ def regenerate_static_page(d, eidx, registry=None):
         "headline": str(d['title'])[:110],
         "author": {"@type": "Person", "name": d['creator']},
         "datePublished": d['date'],
+        **({"dateModified": d['date_modified']} if d.get('date_modified') else {}),
         "identifier": d['axn'],
         "description": d.get('description', '')[:300],
         "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -800,6 +801,19 @@ def regenerate_static_page(d, eidx, registry=None):
             + '</div></div>'
         )
 
+    mods = d.get('modifications') or []
+    mods_html = ''
+    if mods:
+        rows = ''.join(
+            f'<li style="margin:.25rem 0"><span style="opacity:.7">{esc(m.get("date",""))}</span> — '
+            f'<strong style="font-weight:600">{esc(m.get("field",""))}</strong>: {esc(m.get("reason",""))}</li>'
+            for m in mods[-8:])
+        mods_html = ('<section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));'
+                     'font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div>'
+                     f'<ul style="margin:0;padding-left:1.1rem">{rows}</ul>'
+                     '<div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; '
+                     'these are changes to the record\'s metadata and declared state.</div></section>')
+
     traversal_html = _traversal_html(d, registry)
 
     if registry and series_id:
@@ -941,6 +955,7 @@ def regenerate_static_page(d, eidx, registry=None):
 <p style="font-size:.9em">{esc(d.get("description",""))}</p>
 {external_metadata_html}
 {version_history}
+{mods_html}
 {traversal_html}
 {wiki_html}
 {concepts_html}
