@@ -779,5 +779,76 @@
    "status": "pending",
    "note": "no verified complete twin; adjudicate pairing or mark restoration-candidate"
   }
- ]
+ ],
+ "classification_audit": {
+  "finding": "T2 audit reclassified full→metadata_capture with reclassification_reason=None across the cohort; reasons were never recorded. body_status.class is authoritative (validator+renderer read it); content_type is legacy display text.",
+  "items": [
+   {
+    "deposit_number": 1230,
+    "issue": "class='full' but content_type says semi-restored; text carries capture boilerplate",
+    "action": "confirm class=full stands; refresh content_type display string; verify body is the complete letter",
+    "status": "pending"
+   },
+   {
+    "deposit_numbers": [
+     975,
+     1002,
+     1005,
+     1008,
+     1012
+    ],
+    "issue": "site-source briefs, class_before_T2='full', bodies 12-14k, no capture marker",
+    "action": "restore class='full' if bodies are genuinely complete surface sources",
+    "status": "pending"
+   },
+   {
+    "deposit_numbers": [
+     1014,
+     1015,
+     1016,
+     1017,
+     1018,
+     1019,
+     1020,
+     1021,
+     1022
+    ],
+    "issue": "duplicate/supersession notices carrying class=metadata_capture",
+    "action": "reclass to 'notice' per validator language (pointer/tether/notice)",
+    "status": "pending"
+   }
+  ]
+ },
+ "creator_adjudication": {
+  "finding": "Lee's ORCID (0009-0000-1599-0703) was attached to capture records with non-Sharks creators. Dodecad heteronyms carrying it is disclosed design; genuinely external humans must not.",
+  "resolved": [
+   {
+    "deposit_number": 1344,
+    "creator": "Emrick, Matthew Craig",
+    "action": "ORCID removed 2026-07-30 (MANUS-flagged: not ours)"
+   }
+  ],
+  "pending_manus_ruling": [
+   {
+    "deposit_number": 1308,
+    "creator": "Kim, Jooyeol",
+    "question": "external scholar or persona?"
+   },
+   {
+    "deposit_number": 1311,
+    "creator": "Wells, Sparrow",
+    "question": "persona? (house register suspected)"
+   },
+   {
+    "deposit_number": 1360,
+    "creator": "Thornburgh, Alice",
+    "question": "persona? (vocoder performance, house register suspected)"
+   },
+   {
+    "deposit_number": 1385,
+    "creator": "Thornburgh, Alice",
+    "question": "same as 1360"
+   }
+  ]
+ }
 }
