@@ -30,11 +30,26 @@ jobs:
         run: python3 scripts/fanout.py
       - name: Persist state
         run: |
-          if ! git diff --quiet data/fanout-state.json 2>/dev/null; then
-            git config user.name "fanout"
-            git config user.email "fanout@alexanarch.org"
-            git add data/fanout-state.json
-            git commit -m "fanout state ($(date -u +%Y-%m-%dT%H:%MZ))"
-            git pull --rebase origin main
-            git push
+          # data/fanout-state.json is a DERIVED file: it records what this run
+          # already published and is regenerable on the next run. Failing the
+          # whole workflow because it could not be rebased onto a main that
+          # moved underneath us reports a failure that did not occur — the
+          # fan-out itself succeeded. Retry, then warn rather than fail.
+          if git diff --quiet data/fanout-state.json 2>/dev/null; then
+            echo "no state change"; exit 0
           fi
+          git config user.name "fanout"
+          git config user.email "fanout@alexanarch.org"
+          git add data/fanout-state.json
+          git commit -m "fanout state ($(date -u +%Y-%m-%dT%H:%MZ))"
+          for i in 1 2 3 4 5; do
+            # During rebase, "theirs" is the commit being replayed — this run's
+            # freshly computed state, which is the one worth keeping.
+            if git pull --rebase -X theirs origin main && git push; then
+              echo "state persisted on attempt $i"; exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          echo "::warning title=fanout state not persisted::Publication succeeded; the derived state file could not be rebased after 5 attempts and will regenerate on the next run."
+          exit 0
