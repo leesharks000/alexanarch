@@ -171,22 +171,30 @@ def main():
         'works': {k: nodes[k] for k in sorted(nodes)},
     }, ensure_ascii=False, indent=1) + '\n')
 
-    # merge queue: preserve any already-parsed entries
+    # merge queue: preserve every entry that has reached a TERMINAL status.
+    # Terminal = parsed, or a triage class naming what the segment actually is
+    # (refsec_parse.py). Only `pending` is regenerated. Without this, each run
+    # reset finished triage to pending and the same non-references were re-queued
+    # forever — work recorded as owed where none was.
+    TERMINAL = {'parsed', 'relation_line', 'legal_citation', 'apparatus',
+                'prose', 'provenance_row', 'bare_url', 'nav_relation'}
     qp = ROOT / 'data' / 'worklists' / 'refsec-parse-queue.json'
     parsed_keep = []
     if qp.exists():
         old = json.loads(qp.read_text())
-        parsed_keep = [e for e in old.get('entries', []) if e.get('status') == 'parsed']
+        parsed_keep = [e for e in old.get('entries', []) if e.get('status') in TERMINAL]
         done_raw = {e['raw'] for e in parsed_keep}
         queue_entries = [e for e in queue_entries if e['raw'] not in done_raw]
     qp.write_text(json.dumps({
         'description': 'Stage B/C queue: freeform reference-section entries awaiting in-session interpretive parsing (No-Double-Draw: TACHYON parses in-session; never via API). Parsed entries carry structured records and bib: keys.',
         'dateModified': now,
-        'pending': len(queue_entries), 'parsed': len(parsed_keep),
+        'pending': len(queue_entries),
+        'parsed': sum(1 for e in parsed_keep if e.get('status') == 'parsed'),
+        'triaged': sum(1 for e in parsed_keep if e.get('status') != 'parsed'),
         'entries': parsed_keep + queue_entries,
     }, ensure_ascii=False, indent=1) + '\n')
 
-    print(f'edges: {len(edges)} | external nodes: {len(nodes)} | refsec texts: {refsec_texts} | TANG texts: {tang_texts} | queue pending: {len(queue_entries)} (parsed kept: {len(parsed_keep)})')
+    print(f'edges: {len(edges)} | external nodes: {len(nodes)} | refsec texts: {refsec_texts} | TANG texts: {tang_texts} | queue pending: {len(queue_entries)} (terminal kept: {len(parsed_keep)})')
     from collections import Counter
     print('via:', Counter(e['via'] for e in edges).most_common())
     doms = Counter(url_domain(e['target_bibkey'][4:]) for e in edges if e['via'] == 'url')
