@@ -4,7 +4,7 @@
   "title": "Alexanarch Protocol Index",
   "purpose": "Central machine-readable catalog of all Alexanarch protocols, schemas, and data registries. Single source of truth — every other document (AGENTS.md, DEPOSIT-FLOW.md, scripts, workflows) MUST pull from this index, not duplicate it. If this file disagrees with any other surface, this file wins and the other surface is wrong.",
   "index_version": "v1.1",
-  "last_updated": "2026-07-29",
+  "last_updated": "2026-07-30",
   "operator_directive": {
     "for_new_instances": [
       "STOP before any action.",
@@ -166,7 +166,7 @@
       "name": "Deposit Registry (the AXN registry)",
       "canonical_path": "/data/registry.json",
       "purpose": "Canonical list of every deposit. Drives home-page Recent Deposits, browse page, sitemap, chunks. THE source of truth — all other surfaces are derived.",
-      "current_count": 1418,
+      "current_count": 1423,
       "validates_against": [
         "/api/schemas/deposit-entry.schema.json"
       ],
@@ -521,12 +521,12 @@
   },
   "surface_hashes": {
     "algorithm": "sha256",
-    "hashed_at": "2026-07-29T04:46:19Z",
+    "hashed_at": "2026-07-30T09:03:43Z",
     "files": {
-      "data/registry.json": "b7ad34363a0283efd943ca42deaae9d9a0a41090a7cb9ff14cd241fe412769ce",
+      "data/registry.json": "d38702628ac31406f2b723ce38c1d47dbc4ffca458a6f3a3182d153b828183b6",
       "api/search-index.json": "323cc6ddaa8dd780df20ead851a67e1862be102c38d52b3ff873fa7bedff95c9",
-      "api/body-index.json": "817aa1a3229257b390c8ddf799d89ed7b3dbcb67a9c0fbc66106a21ecbe6b1b4",
-      "api/axn-index.json": "2ed2a2a09205136a15fba2db7d7226db5f8027c1cca7477da2b8009021308222",
+      "api/body-index.json": "8ceed189f0425733b7eb38dadc89182e28be2ba8ecb86af3cbfbc1f393b0df00",
+      "api/axn-index.json": "82b57d90c10785f6df9e514d96ad8f2d21fbf4fe0a3ac6a12711feaf6e268674",
       "data/doi-resolution-index.json": "e8d72894f699d926f851735049c05c79284cb5e4ec389dba2b11ced53e45c885"
     }
   }
