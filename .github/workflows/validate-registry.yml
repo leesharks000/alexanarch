@@ -75,12 +75,6 @@ jobs:
       contents: read
       pull-requests: write
     steps:
-      - name: Resolver acceptance gate (P0-1 / R4)
-        run: |
-          python3 scripts/sync_resolver.py --check
-          python3 scripts/check_resolver_parity.py
-          python3 scripts/validate_resolver.py --strict
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -88,6 +82,12 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
+      - name: Resolver acceptance gate (P0-1 / R4)
+        run: |
+          python3 scripts/sync_resolver.py --check
+          python3 scripts/check_resolver_parity.py
+          python3 scripts/validate_resolver.py --strict
 
       - name: Verify protocol JSON files parse
         run: |
