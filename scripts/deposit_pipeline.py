@@ -126,6 +126,7 @@ REGISTRY = REPO_ROOT / "data" / "registry.json"
 STAGE_ORDER = [
     "mint", "validate", "record", "pdf", "body-index",
     "wiki", "sitemap", "interlink", "enrich", "identity", "commit", "verify",
+    "announce",
 ]
 
 
@@ -502,12 +503,34 @@ def stage_verify(args):
             print(f"  ✗ {url} — {e}")
 
 
+def stage_announce(args):
+    """Push the record URL to IndexNow participants (Bing, Yandex, Naver, Seznam).
+
+    Runs after `verify` deliberately: a URL is announced only once it has been
+    confirmed live and content-matched. Announcing a page that 404s trains the
+    endpoint to discount this host, which is the same failure as stamping
+    <lastmod> on unchanged records.
+
+    Google does not participate in IndexNow. Its discovery path remains the
+    sitemap plus internal links — including the traversal blocks added
+    2026-07-30, which give crawlers a route between records instead of a single
+    flat index.
+    """
+    if args.no_push:
+        print("  (skipped: --no-push)")
+        return
+    sh([sys.executable, SCRIPTS / "indexnow_submit.py",
+        f"--deposits={args.deposit_number}",
+        "--reason=deposit minted"])
+
+
 STAGES = {
     "mint": stage_mint, "validate": stage_validate, "record": stage_record,
     "pdf": stage_pdf, "body-index": stage_body_index, "wiki": stage_wiki,
     "sitemap": stage_sitemap, "interlink": stage_interlink,
     "enrich": stage_enrich, "identity": stage_identity,
     "commit": stage_commit, "verify": stage_verify,
+    "announce": stage_announce,
 }
 
 

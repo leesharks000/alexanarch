@@ -1,0 +1,19 @@
+{
+ "$schema": "https://www.alexanarch.org/schemas/indexnow-ledger.json",
+ "name": "IndexNow submission ledger",
+ "description": "Record of URLs announced to IndexNow participants. A 200 or 202 response means the notification was RECEIVED. It does not mean the URL was crawled, and it does not mean the URL was indexed. This ledger records what the archive said, not what any engine did.",
+ "host": "www.alexanarch.org",
+ "submissions": [
+  {
+   "submitted_at": "2026-07-30T21:32:47Z",
+   "count": 1,
+   "response": 200,
+   "note": "received",
+   "reason": "pipeline wiring test",
+   "urls": [
+    "https://www.alexanarch.org/s/records/1424/"
+   ],
+   "meaning": "notification received; not a crawl and not an index event"
+  }
+ ]
+}
