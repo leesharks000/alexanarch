@@ -83,6 +83,21 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Status-declaration coherence gate
+        run: |
+          # body_status.class and canonical_text_status are the source of truth
+          # for a deposit's restoration status. content_type, description,
+          # keywords, wiki_article and version are DERIVED. If any of them has
+          # drifted back into contradicting the authoritative pair, the archive
+          # is publishing a record whose own status is wrong, and that is a
+          # failure worth stopping the build for.
+          OUT=$(python3 scripts/status_reconcile.py)
+          echo "$OUT"
+          echo "$OUT" | grep -q "records reconciled: 0" || {
+            echo "::error title=status drift::A deposit's display status contradicts body_status.class. Run: python3 scripts/status_reconcile.py --apply"
+            exit 1
+          }
+
       - name: Resolver acceptance gate (P0-1 / R4)
         run: |
           python3 scripts/sync_resolver.py --check
