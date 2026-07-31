@@ -1,9 +1,8 @@
 {
- "description": "Deposits whose bodies measure as stubs. Each is a restoration target: the work exists somewhere (blog, repo, mirror, print) and the archive holds only its metadata. Measured, not declared.",
- "rule": "prose words < 400 after scaffold removal",
- "dateModified": "2026-07-31",
- "count": 42,
- "entries": [
+ "status": "RETRACTED 2026-07-31",
+ "description": "This queue was produced by a word-count discriminator on 2026-07-30 that classified any body under 400 prose words as a stub. Reading all 207 affected bodies on 2026-07-31 found ZERO stubs among them: the entries were complete short works — canon provenance nodes, poems, registry tables, a complete Greek text, a work in emoji notation. The queue is retained as a record of the error, not as a worklist. Classification now derives from each record's own declaration (scripts/classify_bodies.py).",
+ "superseded_by": "data/worklists/body-classification-findings.json",
+ "retracted_entries": [
   {
    "n": 428,
    "issue": "declared_full_body_is_stub",

@@ -490,6 +490,53 @@ def _traversal_html(d, registry):
 _APPENDIX_MARK = "Appendix — metadata-capture body"
 
 
+
+def _drop_duplicated_description(fulltext, description):
+    """Remove the body's opening Description block when it restates the field above it.
+
+    A capture body typically opens with `## Description` followed by the same
+    prose already rendered in the record's Description section. The reader then
+    reads the identical paragraph twice before learning whether the record holds
+    anything. Canonical bytes are immutable, so the duplicate is dropped at
+    render rather than edited out of the file.
+
+    Matching is by leading prefix, not similarity: a heuristic that guesses at
+    resemblance is how this archive has repeatedly asserted things it had not
+    checked.
+    """
+    if not fulltext or not description:
+        return fulltext
+    norm = lambda x: re.sub(r"\s+", " ", re.sub(r"[*_`#]", "", str(x))).strip().lower()
+    d = norm(description)[:160]
+    if len(d) < 60:
+        return fulltext
+    # The pipeline hands this HTML, not markdown. Match both forms rather than
+    # assuming one: assuming the input shape is how the first three attempts at
+    # this fix silently did nothing.
+    m = re.search(r"<h[23]>\s*Description\s*</h[23]>", fulltext, re.I)
+    html_mode = bool(m)
+    if not m:
+        m = re.search(r"^##+\s*Description\s*$", fulltext, re.M)
+    if not m:
+        return fulltext
+    after = fulltext[m.end():]
+    a = norm(after)
+    # The body's block is typically the capture sentence + the same description
+    # now held in the field. Discount the known prefix before comparing, since a
+    # 2026-07-30 reconciliation pass stripped that sentence from the field but
+    # could not touch the immutable body.
+    a = re.sub(r"^semi-restored record \(metadata capture only;? no full text\)\.?\s*", "", a)
+    if not a[:160].startswith(d[:120]):
+        return fulltext
+    # cut from the Description heading to the next heading of the same or higher level
+    if html_mode:
+        nxt = re.search(r"<h[123][ >]", after, re.I)
+    else:
+        nxt = re.search(r"^##+\s+\S", after, re.M)
+    tail = after[nxt.start():] if nxt else ""
+    return fulltext[:m.start()].rstrip() + ("\n\n" + tail.lstrip() if tail.strip() else "\n")
+
+
 def _mark_superseded_appendix(html):
     """Visually and semantically mark a retained metadata-capture appendix.
 
@@ -778,6 +825,7 @@ def regenerate_static_page(d, eidx, registry=None):
     
     # Retained metadata-capture appendices are marked, not removed: the record
     # keeps its own history, and the mark says the history is history.
+    fulltext = _drop_duplicated_description(fulltext, d.get('description'))
     fulltext_marked = _mark_superseded_appendix(fulltext)
 
     # Keywords
