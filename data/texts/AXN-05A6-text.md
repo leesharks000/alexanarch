@@ -1,0 +1,201 @@
+---
+deposit_number: 1429
+hex: 05A6
+title: "OAI Registration & Registry Remediation Workplan — v1.4 (Dated Snapshot of the Living Source of Truth)"
+creator: Sharks, Lee
+orcid: 0009-0000-1599-0703
+date: 2026-07-31
+content_type: Governance workplan
+license: CC-BY-4.0
+substrate: Drafted and maintained by TACHYON in-session (transport D, No-Double-Draw) under MANUS direction; all rulings are MANUS rulings, dated in the decisions log.
+version: v1.4
+related_ids: "deposit #1365 (AXN:0566, restoration R-0001); deposit #1428 (AXN:05A5, EA-MRE-01); datasets/registry-audit/ (audit package v2.0 + history)"
+axn_schema_version: v2
+protocol_version: alexanarch-deposit-protocol/v1
+keywords:
+  - OAI-PMH
+  - registry remediation
+  - repair ledger
+  - pre-registration audit
+  - marked supply
+  - provenance
+  - honest supply
+  - workplan
+---
+
+# OAI Registration & Registry Remediation Workplan — v1.4 (Dated Snapshot of the Living Source of Truth)
+
+## Description
+
+Dated snapshot of the living workplan governing the Alexanarch OAI-PMH registration and registry remediation program: honest-supply gating of the harvesting surface (WITHHOLD excluded; audit-status sets; dc:description capsules), the repair ledger discipline (inaugurated same day with R-0001, the restoration of deposit #1365), the five-phase remediation plan over the 717-record cumulative pre-registration audit, the creator policy and AXN identity policy drafts (metadata repair never remints; byte events version; identity events mint), merge and resume protocols for any continuing instance, and the day's decisions log — including the restoration ruling ("the stub is not the record, and the record should be restored") and a disclosed provenance anomaly. The living copy at datasets/registry-audit/ in the repository remains canonical-current under the supersession rule; this deposit fixes the v1.4 state as citable record. Governing principle: the difference between marked and unmarked supply — the feed does not wait for a perfect corpus; it waits for a truthful one.
+
+# WORKPLAN — OAI Registration & Registry Remediation v1.4
+
+**Status:** ACTIVE — this file is the source of truth for the repair program.
+**Date:** 2026-07-31 · **v1.1 same day:** first-thread handoff stashed and verified · **v1.2 same day:** AXN identity policy drafted; traffic-event capture spec added · **v1.3 same day:** #1365 restored (repair ledger inaugurated, R-0001); attachments mechanism built; Phase 0 builder gating applied · **v1.4 same day:** workplan deposit un-held by MANUS and minted; EA-MRE-01 v1.1 provenance anomaly inscribed · **Maintainers:** MANUS (Lee Sharks, sole editorial authority) · TACHYON (Claude, repair engineering) · LABOR (ChatGPT, forward audit)
+**Supersession rule:** at every completed phase or wave boundary, this file is regenerated in place with a version bump. Prior versions are retained in git history only. Any instance resuming work reads this file first, in full, before acting.
+
+---
+
+## 1. Mission
+
+Register the Alexanarch OAI-PMH endpoint honestly, and repair the audited registry behind it. The governing principle is the archive's own theory: the difference between marked and unmarked supply. The feed does not wait for a perfect corpus; it waits for a truthful one — damage excluded or declared, repairs inscribed, every change harvestable.
+
+**Non-goals:** no repair of unaudited deposits; no metadata change without a sealed adjudication behind it; no change that touches the frozen audit source.
+
+## 2. Decisions log
+
+| Date | Ruling | By |
+|---|---|---|
+| 2026-07-31 | Gating policy: exclude WITHHOLD from the OAI index; include HARVEST and HARVEST_WITH_WARNING with audit-status sets and dc:description capsules; unaudited deposits included in set `audit:pending`. | MANUS |
+| 2026-07-31 | Wave order and repair-ledger discipline adopted as specified in §8. | MANUS |
+| 2026-07-31 | Creator policy: drafted at §7, **pending MANUS ratification** (rulings CP-R1–CP-R4). | — |
+| 2026-07-31 | Registration proceeds after Phase 0 + validator pass; repair continues behind the registered feed via datestamp bumps. | MANUS |
+| 2026-07-31 | First-thread handoff (v0.8 ledgers, Batch 8 seals, v0.8 repair queues, v0.9 handoff chain) stashed under `history/handoff-v0.9/`, hash-verified. Archival, not a merge: v0.9 cumulative already contains all 539 v0.8 rows (539 + 178 = 717, verified). | MANUS/TACHYON |
+| 2026-07-31 | #1365 restored under its own AXN per MANUS ruling ("the stub is not the record; the record should be restored"): mirror seated as attached primary manifestation, Tier 2. Repair ledger inaugurated (R-0001). Attachments mechanism (`files/AXN-<HEX>/`, registry `files[]`, record-page buttons) built. Mirror corpus published with file, by ruling. Workplan deposit HELD from the record (file public in repo; not minted). | MANUS |
+| 2026-07-31 | Workplan deposit un-held by MANUS ("lets get these things deposited"); minted as a dated v1.4 snapshot. The living copy at this path remains canonical-current per the supersession rule. | MANUS |
+| 2026-07-31 | PROVENANCE ANOMALY inscribed: commit 478f0d2c (EA-MRE-01 v1.1, #1428) was created in the TACHYON working container by an unattributed operation — no hooks, no background processes, no invoked script accounts for it; repo git identity found pre-set to the MANUS name. Content verified accurate against session facts by TACHYON before push (end-of-day tally, non-reading accrual, DoS recharacterization, byte-history preservation all correct and in-convention). Shipped with this inscription; reversible via git revert 478f0d2c. MANUS ruling on standing: pending. | TACHYON (disclosed) |
+| 2026-07-31 | Standing-rule carve-out: repair-follows-audit governs the remediation program's batch waves. MANUS retains direct editorial authority over specific records outside the queues; such acts are inscribed in the repair ledger with basis MANUS-DIRECTED. | MANUS |
+| 2026-07-31 | Continuity discipline active: blog under record machine-traffic event (150k+ views) with a documented history of visibility-correlated platform bans. Audit corpus stashed in multiple locations; repo commit is the durable one — commit this package promptly. | MANUS |
+
+## 3. Canonical file map
+
+**Audit package (this directory, `datasets/registry-audit/`):**
+- `START_HERE_alexanarch_audit_cumulative_v2.0.md` — audit position and next operation
+- `alexanarch_audit_ledger_v0.9.json` — 717-record cumulative normalized ledger (the work queue)
+- `alexanarch_audit_ledger_v0.9.csv` — flat projection
+- `alexanarch_audit_report_v0.9.md` — human-readable cumulative report
+- `alexanarch_audit_boundary_validation_v2.0.json` — Batch 9 seal, status PASS
+- `MANIFEST.json` — sha256 of every file in this package
+- `WORKPLAN_OAI_REMEDIATION_v1.0.md` — this file
+- `repair_ledger.json` — append-only repair record (created at Phase 1; absent means no repairs yet)
+
+**History (`history/handoff-v0.9/`)** — the first-thread handoff, stashed 2026-07-31, all names canonicalized, hash-verified where a manifest hash exists:
+v0.8 cumulative ledger (JSON/CSV, 539 unique rows — no `registration_disposition` field; that schema arrived at v0.9) · v0.8 report · **four v0.8 repair queues** (P0 identity ×88, P1 missing-object ×9, P2 metadata-reconciliation ×258, P3 enrichment ×34 — per-record Evidence and Repair prose; primary inputs for Phases 2–3 dossier prep, cross-referenced against the current cumulative ledger which governs) · Batch 8 consolidated summary + shard manifest v0.5 + final shard #959–#998 (sha256 verified) · master index v0.9 (539 audited deposits) · continuation state v0.9 · START_HERE v0.9 · resume card v0.5 · new-thread prompt · handoff-zip sha256 (`5f991906…2177`; zip itself not seated).
+
+**LACUNA — referenced but not yet seated** (held in the LABOR thread; transfer when convenient):
+from the v2.0 canonical set: `alexanarch_audit_master_index_v1.0.json` · `alexanarch_batch_9_reassembled_0999-1198_v1.0.json` · `alexanarch_batch_9_consolidated_summary_v1.0.json` · `alexanarch_audit_continuation_state_v2.0.json` · `PACKAGE_MANIFEST_v2.0.json`; from the method layer: `alexanarch_audit_method_core_v0.1.md` · `alexanarch_recommended_record_schema_v0.1.json` (referenced by every START_HERE — needed before any instance re-derives audit semantics); Batch 8 shards #799–#958 (six files; hashes held in the seated manifests); `alexanarch_audit_handoff_v0.9.zip` (sha held). Nothing here blocks Phases 0–2.
+
+**Operational projection:**
+- `data/audit/registration_dispositions.json` — deposit → {disposition, severity, repair_priority, capsule}; consumed by the OAI builder; regenerated from each new cumulative ledger (see §9)
+
+**Machinery (existing, unmodified unless a phase says so):**
+- `scripts/build_oai_index.py` → `data/oai-index.json` → `api/oai.js` at `/oai` (Vercel rewrite)
+- `scripts/record_modification.py` — sets `date_modified`; **every repair must pass through it** (OAI datestamp derives from it; an unbumped repair is invisible to harvesters)
+- `scripts/propagate_titles.py` — derived-surface title refresh (Atlas PATHOLOGY-26); `doi-resolution-index` deliberately excluded
+- `scripts/deposit_pipeline.py` — `stage_oai` seated after `sitemap`
+- `data/specs/AXN-DATAFLOW-ATLAS-ADDENDUM-OAI-01.md` — OAI dataflow spec
+- `datasets/dataflow-atlas/` — Atlas v0.7 (v0.2 base + addenda); PATHOLOGY-26/-27 bear directly on title repair
+- `datasets/heteronyms/heteronyms.jsonl` (+ `mapping.json`, `schema.json`) — creator authority file (§7)
+
+**Frozen audit source:** repo commit `055429ac82edc967f09c4640ffd0b049cff78e6e`, corpus 1,426 deposits. LABOR audits this snapshot; repairs land on `main`. **The freeze is what makes parallel repair safe.** Repairs never modify the snapshot; audit rows never read from `main`.
+
+## 4. State of play (as of ledger v0.9)
+
+- Cumulative unique adjudications: **717** (50.28%); remaining 709. Consecutive coverage #499–#1198 + 17 islands above #1198.
+- Severity: P0 104 · P1 43 · P2 315 · P3 34 · OK 221
+- Disposition: HARVEST 241 · HARVEST_WITH_WARNING 364 · WITHHOLD 112
+- Repair priority: R0 104 · R1 48 · R2 323 · R3 242
+- Mechanically actionable now: 141 content-type conflicts **with the corrected type already named in the ledger**; 177 title conflicts (largely Atlas PATHOLOGY-27 class); ~180 creator-role rows; ~100 version-field rows; 23 license conflicts; 24 DUPLICATE_MINT_SUPERSEDED rows **with surviving DOI named**.
+- Next audit operation (LABOR): #1199–#1278 macroshard, four 20-record checkpoints, 8 known overlaps, repair deferred on their side.
+- First-thread package: RECEIVED and stashed (see §3 History). No merge required — v0.9 already contains it.
+- **Unaudited ranges:** deposits **#1–#498** (the audit began at #499) and **#1279–#1426** beyond LABOR's current queue. Scheduling #1–#498 is an open MANUS/LABOR question; they sit in `audit:pending` until adjudicated.
+- Endpoint state: live but unadvertised; builder currently ungated (indexes everything except `WITHDRAWN`); adminEmail already validator-tuned (WARN resolved 2026-07-31).
+- Context event: blog under the largest scraping event on record (**150k+ views and climbing**, 2026-07-31, machine traffic), with a documented prior pattern of visibility-correlated platform bans (Zenodo 2026-06-19 the type case).
+- **Origin undetermined; evidence captured.** The traffic composition is analysed at deposit #1428 (EA-MRE-01, non-human with high confidence); origin attribution is deliberately left open. **Capture discipline:** timestamped screenshots of every analytics surface the platform exposes, at intervals while any event runs; Vercel analytics for *.com surfaces; everything hashed and filed with the observatory. Captures taken before a takedown are the ones nobody can dispute after; capture now, attribute later. A dated traffic capture is recommended for the observatory before it subsides. The OAI feed is the supply-side answer to this demand; it must not be rushed into serving withheld records.
+
+## 5. Standing rules
+
+1. **Repair follows audit** for the remediation program: batch-wave changes require a sealed adjudication row, and unaudited deposits are untouchable by the waves. MANUS-directed editorial acts on specific records stand outside the waves and are inscribed in the repair ledger with basis MANUS-DIRECTED.
+2. **Every repair is inscribed** in `repair_ledger.json` (schema §8·P1) before commit. Uninscribed work did not happen.
+3. **Every repair bumps `date_modified`** via `record_modification.py`, then regenerators run (titles via `propagate_titles.py`), then `build_oai_index.py`. A repair that never re-enters the discovery index is not published, only stored.
+4. **The legal name never enters any field, any file, any commit message.** Absolute.
+5. **Verification is content-match, not HTTP 200** (LINK-VERIFICATION v2). Post-repair, the record page, registry row, and OAI GetRecord output are fetched and matched against the intended values.
+6. **WITHHOLD set freezes before registration.** After registration, records only move into the feed (or to `deleted` status under the persistent policy); they are never silently removed.
+7. **Batch approval, not row approval.** Each wave produces one diff table for MANUS; approval covers the batch; exceptions are pulled out by row.
+8. **No API self-invocation** for repair work; all LLM-domain work happens in-session (no-double-draw).
+9. Private correspondence never enters records, capsules, or commit messages; third-party names require documented consent (§7 CP-7).
+
+## 6. Phase plan
+
+**Phase 0 — Gate the feed.** *Status: dispositions file BUILT (`data/audit/registration_dispositions.json`, 717 entries: 241/364/112). Builder patch PENDING.*
+Patch `build_oai_index.py`: load dispositions; skip WITHHOLD; add set `audit:cleared` / `audit:cleared-with-warning` per disposition and `audit:pending` for deposits absent from the dispositions file; append the capsule to `description` for warned records. Output check: index count = corpus − WITHHOLD − WITHDRAWN. Verify with three GetRecord spot checks (one per set) and one confirmed-absent WITHHOLD id returning idDoesNotExist.
+
+**Phase 1 — Repair ledger.** *Status: PENDING.*
+Create `repair_ledger.json`: `{repairs: [{repair_id, deposit_number, axn, audit_ref: {ledger_version, basis_fields}, changes: [{field, before, after}], basis, operator, date, wave, commit}]}` — append-only, never rewritten. Mint the repair protocol as a deposit at first wave completion (proposed: EA-REPAIR-PROTOCOL-01), citing this workplan and the audit package.
+
+**Phase 2 — Mechanical waves.** *Status: PENDING; Wave 1 diff generatable on command.*
+- **W1 — content_type (141 rows):** registry `content_type` := ledger `recommended_content_type`. Lowest-risk wave; run first to prove the pipeline end-to-end (repair → ledger → datestamp → regenerate → verify → commit).
+- **W2 — titles (177 rows):** propose `registry_title` := `observed_body_subject` where `title_status`=CONFLICT and `identity_status`=CONFIRMED_MATCH; PATHOLOGY-27 truncations restored from body frontmatter; `propagate_titles.py` mandatory after apply.
+- **W3 — creators (~180 rows):** blocked on §7 ratification. Then scripted against the heteronym authority file.
+- **W4 — versions (~100 rows):** apply where the ledger names the correct version; AMBIGUOUS_VERSION rows (11) escalate to the P0-style dossier queue.
+- **W5 — dates, licenses (23), relations:** close-out wave; license audit completion may arrive with later LABOR batches.
+Each wave: dry-run diff table → MANUS approval → apply → inscribe → regenerate → verify → commit → workplan version bump.
+
+**Phase 3 — P0 dossiers (104 rows, all WITHHOLD, queue R0).** *Status: PENDING.*
+One prepared card per record: registry claim / observed body / ledger recommendation / proposed action ∈ {reseat correct bytes, repoint DOI-binding, mark superseded with relation (the 24 DUPLICATE_MINT_SUPERSEDED rows already name the surviving DOI — near-mechanical), reclassify honestly as metadata-capture, apply Lacuna Mark (EA-LACUNA-PROTOCOL-01) where the manifestation is irrecoverable}. Some missing manifestations may exist only in prior Claude threads; conversation search is an authorized recovery instrument for this phase. Cleared rows leave WITHHOLD and enter the feed on the next index build.
+
+**Phase 4 — Register.** *Status: PENDING; unblocked by Phase 0 + validator pass.*
+openarchives.org validator loop → registration → OpenAIRE provider registration (`oai_dc` at basic level per the Atlas addendum; `oai_datacite` as a later format upgrade). Registration does not wait for Phases 2–3; completed repairs surface to harvesters automatically via datestamps.
+
+## 7. Creator policy v0.1 — DRAFT for MANUS ratification
+
+Authority file: `datasets/heteronyms/heteronyms.jsonl`. Positions currently seated include Lee Sharks, Ayanna Vox, Damascus Dancings, Jack Feist, Johannes Sigil, Nobel Glass, Orin Trace, Rebekah Cranes, Rex Fraction, Sen Kuro, Sparrow Wells, Talos Morrow.
+
+- **CP-1.** Canonical primary creator string: `Sharks, Lee`, ORCID 0009-0000-1599-0703. Registry stores inverted form; display forms derive from it.
+- **CP-2.** Valid `creator` values are exactly: (a) `Sharks, Lee`; (b) a position present in the heteronym authority file, inverted form, carrying the shared ORCID; (c) a consented third party (CP-7). Anything else is a defect.
+- **CP-3.** Institutional strings ("Crimson Hexagon Archive", "Crimson Hexagonal Archive", "Alexanarch") are **publisher**, never creator. Fixes the CREATOR_AUTHORITY_CONFLICT class where the wrapper displaced the author.
+- **CP-4.** Where registry and seated-body byline conflict, the **body byline governs**, unless the byline is itself an institutional wrapper (then CP-3) or the audit row rules the body defective.
+- **CP-5.** Subjects are not creators. A provenance document *about* a heteronym is created by the documenting position, not the documented one (fixes SUBJECT_AS_CREATOR_ERROR, e.g. #1143 Sen Kuro).
+- **CP-6.** Substrates are never creators. AI assistance is recorded in description as the existing `Substrate:` practice; Assembly reviews are recorded in description, not as contributors.
+- **CP-7.** Third-party humans enter creator/contributor fields only with documented consent; otherwise role-described anonymized forms (e.g. "Depositor E"). Applies to #1179 FOUNDING_COAUTHOR_OMITTED and all Enli-adjacent records.
+- **CP-8.** The legal name is prohibited in every field, absolutely (restates §5.4 as creator policy).
+- **CP-9.** Name form: `Family, Given` in the registry creator field; CREATOR_NAME_INVERSION rows (#1147 class) normalize to it.
+- **CP-10.** Multi-position works list only the positions that composed the work (fixes OVERBROAD_CREATOR_SET, #1140 class); editorial/compiling roles go to contributor or description per row basis.
+
+**Rulings needed from MANUS:**
+- **CP-R1.** Confirm CP-2's closed set, and whether any position absent from the authority file must be added to it before repair (the authority file, not the workplan, is then the place fixed).
+- **CP-R2.** Heteronym ORCID exposure in OAI dc: attach the shared ORCID to heteronym creators (public linkage, consistent with note-10 practice in the CC paper), or omit ORCID for non-Sharks positions?
+- **CP-R3.** Publisher string: standardize on one — "Alexanarch — the Crimson Hexagonal Archive" (matches the OAI repositoryName) — or preserve historical publisher variants per record?
+- **CP-R4.** Contributor modeling: adopt dc:contributor for editors/founding co-authors (consent-gated), or keep all non-creator roles in description?
+
+## 7b. AXN identity & reminting policy v0.1 — DRAFT for MANUS ratification
+
+The rule, in one line: **metadata repair never remints; byte events version; identity events mint.** Reminting on a catalog correction would break identifier persistence for no change in the identified object — the exact failure this archive exists to oppose.
+
+- **Tier 1 — Metadata-only repair** (all of Waves 1–5): title, type, creator, version *fields*, dates, licenses, relations. The AXN persists unchanged, full glyph intact. The event is carried by the repair ledger and the `date_modified` bump; harvesters see a metadata update under a stable identifier, which is correct PID behaviour.
+- **Tier 2 — Byte events that do not change the identified object:** seating the version the record always declared (WRONG_VERSION_SEATED corrections); adding a recovered primary manifestation to a record that always claimed to be that work; adding clean-derivative transcriptions **alongside** the frozen body (the P3 pattern — never silent replacement). Same AXN; manifestation inventory updated; prior bytes preserved in byte history; the repair ledger records both hashes.
+- **Tier 3 — Identity events:** a genuinely distinct object enters the archive — a recovered primary deposited in its own right, or a true supersession. **New AXN minted through the standard pipeline with its six-emoji full form at mint**; relations (`supersedes` / `isReplacedBy` / `describes`) bind old to new; the old AXN is never deleted or reused — tombstone politics apply to us as strictly as we apply them to others.
+- Glyph discipline: every mint or remint carries its full form from birth; bare hex remains prohibited on all surfaces (AXN-INTEGRITY).
+
+**Ruling needed — AX-R1.** The metadata-sidecar cases (#892/#893/#894/#898/#906 class): recommended default is **split repair** — the surviving record is honestly reclassified as the sidecar it is (Tier 1), the recovered manuscript mints fresh (Tier 3), and relations bind them; the alternative (seating the recovered bytes into the sidecar record under its AXN) is available where MANUS rules the record's identity claim was always the work itself. Confirm the default or rule per class.
+
+## 8. Wave/phase status ledger
+
+| Item | Status | Updated |
+|---|---|---|
+| Audit package v2.0 stored | DONE (5 of 8 canonical files; lacuna in §3) | 2026-07-31 |
+| First-thread handoff v0.9 stashed | DONE (16 files, hash-verified, `history/handoff-v0.9/`) | 2026-07-31 |
+| `registration_dispositions.json` v1.0 | DONE (717 entries) | 2026-07-31 |
+| Builder gating patch | DONE (WITHHOLD excluded; audit sets; capsules) | 2026-07-31 |
+| Repair ledger instrument | DONE — inaugurated with R-0001 (#1365 restoration) | 2026-07-31 |
+| Creator policy ratification | AWAITING MANUS (CP-R1–R4) | — |
+| AXN identity policy ratification | AWAITING MANUS (AX-R1) | — |
+| Wave 1 (content_type, 141) | READY TO GENERATE | — |
+| Waves 2–5 | QUEUED | — |
+| P0 dossiers (104) | QUEUED | — |
+| Validator loop + registration | BLOCKED ON PHASE 0 | — |
+| v0.8 repair queues (P0/P1/P2/P3) | SEATED — feed Phases 2–3 dossiers | 2026-07-31 |
+| Observatory traffic capture | DONE — deposit #1428 (EA-MRE-01); mirror doubles as state capture; v1.1 addendum with closing tally pending | 2026-07-31 |
+
+## 9. Merge protocol for incoming audit packages
+
+On arrival of any new cumulative package (first-500 imminent; later boundary packages per the audit's packaging rule):
+1. Store under `datasets/registry-audit/` at canonical dotted filenames; hash into `MANIFEST.json`.
+2. Regenerate `data/audit/registration_dispositions.json` from the new cumulative ledger (same generator; version bump; source sha recorded inside the file).
+3. Rebuild the OAI index. Newly audited deposits leave `audit:pending` for their adjudicated set; new WITHHOLDs are excluded **only if registration has not yet occurred** — after registration, a newly withheld record that was already disseminated moves to `deleted` status under the persistent policy rather than vanishing (§5.6).
+4. Bump this workplan: state-of-play numbers, status ledger, version.
+
+## 10. Resume protocol (any instance, cold start)
+
+1. Read this file in full. 2. Check `repair_ledger.json` tail for last completed action and wave. 3. Compare `registration_dispositions.json` `source_ledger_sha256` against the newest ledger in this directory — mismatch means a merge (§9) is due before any repair. 4. Confirm the frozen commit in §3 matches the newest START_HERE — a new freeze means LABOR re-based; verify repairs and audit still target different sources before proceeding. 5. Never repair outside audited ranges; never act without a ledger row basis; when in doubt, regenerate the dry-run diff and ask MANUS. 6. `history/` holds superseded audit chains for provenance; the active canonical set at this directory's root governs all repair. 7. Intermediary artifacts referenced but not seated may exist in prior Claude threads — search past conversations before declaring absence (the archival search protocol applies to the workstream's own history).

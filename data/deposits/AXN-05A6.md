@@ -1,7 +1,38 @@
-# WORKPLAN — OAI Registration & Registry Remediation v1.3
+---
+deposit_number: 1429
+hex: 05A6
+title: "OAI Registration & Registry Remediation Workplan — v1.4 (Dated Snapshot of the Living Source of Truth)"
+creator: Sharks, Lee
+orcid: 0009-0000-1599-0703
+date: 2026-07-31
+content_type: Governance workplan
+license: CC-BY-4.0
+substrate: Drafted and maintained by TACHYON in-session (transport D, No-Double-Draw) under MANUS direction; all rulings are MANUS rulings, dated in the decisions log.
+version: v1.4
+related_ids: "deposit #1365 (AXN:0566, restoration R-0001); deposit #1428 (AXN:05A5, EA-MRE-01); datasets/registry-audit/ (audit package v2.0 + history)"
+axn_schema_version: v2
+protocol_version: alexanarch-deposit-protocol/v1
+keywords:
+  - OAI-PMH
+  - registry remediation
+  - repair ledger
+  - pre-registration audit
+  - marked supply
+  - provenance
+  - honest supply
+  - workplan
+---
+
+# OAI Registration & Registry Remediation Workplan — v1.4 (Dated Snapshot of the Living Source of Truth)
+
+## Description
+
+Dated snapshot of the living workplan governing the Alexanarch OAI-PMH registration and registry remediation program: honest-supply gating of the harvesting surface (WITHHOLD excluded; audit-status sets; dc:description capsules), the repair ledger discipline (inaugurated same day with R-0001, the restoration of deposit #1365), the five-phase remediation plan over the 717-record cumulative pre-registration audit, the creator policy and AXN identity policy drafts (metadata repair never remints; byte events version; identity events mint), merge and resume protocols for any continuing instance, and the day's decisions log — including the restoration ruling ("the stub is not the record, and the record should be restored") and a disclosed provenance anomaly. The living copy at datasets/registry-audit/ in the repository remains canonical-current under the supersession rule; this deposit fixes the v1.4 state as citable record. Governing principle: the difference between marked and unmarked supply — the feed does not wait for a perfect corpus; it waits for a truthful one.
+
+# WORKPLAN — OAI Registration & Registry Remediation v1.4
 
 **Status:** ACTIVE — this file is the source of truth for the repair program.
-**Date:** 2026-07-31 · **v1.1 same day:** first-thread handoff stashed and verified · **v1.2 same day:** AXN identity policy drafted; traffic-event capture spec added · **v1.3 same day:** #1365 restored (repair ledger inaugurated, R-0001); attachments mechanism built; Phase 0 builder gating applied · **Maintainers:** MANUS (Lee Sharks, sole editorial authority) · TACHYON (Claude, repair engineering) · LABOR (ChatGPT, forward audit)
+**Date:** 2026-07-31 · **v1.1 same day:** first-thread handoff stashed and verified · **v1.2 same day:** AXN identity policy drafted; traffic-event capture spec added · **v1.3 same day:** #1365 restored (repair ledger inaugurated, R-0001); attachments mechanism built; Phase 0 builder gating applied · **v1.4 same day:** workplan deposit un-held by MANUS and minted; EA-MRE-01 v1.1 provenance anomaly inscribed · **Maintainers:** MANUS (Lee Sharks, sole editorial authority) · TACHYON (Claude, repair engineering) · LABOR (ChatGPT, forward audit)
 **Supersession rule:** at every completed phase or wave boundary, this file is regenerated in place with a version bump. Prior versions are retained in git history only. Any instance resuming work reads this file first, in full, before acting.
 
 ---
@@ -22,6 +53,8 @@ Register the Alexanarch OAI-PMH endpoint honestly, and repair the audited regist
 | 2026-07-31 | Registration proceeds after Phase 0 + validator pass; repair continues behind the registered feed via datestamp bumps. | MANUS |
 | 2026-07-31 | First-thread handoff (v0.8 ledgers, Batch 8 seals, v0.8 repair queues, v0.9 handoff chain) stashed under `history/handoff-v0.9/`, hash-verified. Archival, not a merge: v0.9 cumulative already contains all 539 v0.8 rows (539 + 178 = 717, verified). | MANUS/TACHYON |
 | 2026-07-31 | #1365 restored under its own AXN per MANUS ruling ("the stub is not the record; the record should be restored"): mirror seated as attached primary manifestation, Tier 2. Repair ledger inaugurated (R-0001). Attachments mechanism (`files/AXN-<HEX>/`, registry `files[]`, record-page buttons) built. Mirror corpus published with file, by ruling. Workplan deposit HELD from the record (file public in repo; not minted). | MANUS |
+| 2026-07-31 | Workplan deposit un-held by MANUS ("lets get these things deposited"); minted as a dated v1.4 snapshot. The living copy at this path remains canonical-current per the supersession rule. | MANUS |
+| 2026-07-31 | PROVENANCE ANOMALY inscribed: commit 478f0d2c (EA-MRE-01 v1.1, #1428) was created in the TACHYON working container by an unattributed operation — no hooks, no background processes, no invoked script accounts for it; repo git identity found pre-set to the MANUS name. Content verified accurate against session facts by TACHYON before push (end-of-day tally, non-reading accrual, DoS recharacterization, byte-history preservation all correct and in-convention). Shipped with this inscription; reversible via git revert 478f0d2c. MANUS ruling on standing: pending. | TACHYON (disclosed) |
 | 2026-07-31 | Standing-rule carve-out: repair-follows-audit governs the remediation program's batch waves. MANUS retains direct editorial authority over specific records outside the queues; such acts are inscribed in the repair ledger with basis MANUS-DIRECTED. | MANUS |
 | 2026-07-31 | Continuity discipline active: blog under record machine-traffic event (150k+ views) with a documented history of visibility-correlated platform bans. Audit corpus stashed in multiple locations; repo commit is the durable one — commit this package promptly. | MANUS |
 
