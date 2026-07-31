@@ -486,6 +486,46 @@ def _traversal_html(d, registry):
             + ''.join(rows) + '</section>')
 
 
+
+_APPENDIX_MARK = "Appendix — metadata-capture body"
+
+
+def _mark_superseded_appendix(html):
+    """Visually and semantically mark a retained metadata-capture appendix.
+
+    Restored records keep the superseded capture body per non-destruction. That
+    is correct: the record's own history stays on the page. But rendered as
+    plain prose, its field dump ("content_type: Semi-restored record …") scans —
+    to a reader, a crawler, and a composition layer — as a live declaration of
+    the record's current status, which it is not.
+
+    So the appendix is kept and marked. That is the obelus applied to the
+    archive's own body: the doubted passage stays on the page, and the mark says
+    what it is.
+    """
+    i = html.find(_APPENDIX_MARK)
+    if i == -1:
+        return html
+    # back up to the start of the element containing the marker
+    start = html.rfind("<", 0, i)
+    start = html.rfind("<p", 0, i)
+    if start == -1:
+        start = i
+    banner = (
+        '<div class="superseded-appendix" role="note" '
+        'aria-label="Superseded metadata-capture appendix, retained for the record" '
+        'style="margin:1.4rem 0;padding:.9rem 1.1rem;border-left:3px solid rgba(127,127,127,.45);'
+        'background:rgba(127,127,127,.06);opacity:.72;font-size:.92em">'
+        '<div style="font-weight:600;margin-bottom:.35rem;opacity:.85">'
+        '⊖ Superseded — metadata-capture body, retained</div>'
+        '<div style="margin-bottom:.6rem">Everything below records this deposit\'s '
+        '<em>former</em> state, when only a metadata capture was held. The full text '
+        'above is the canonical body. Status fields appearing in this appendix are '
+        'historical and do not describe the record as it now stands.</div>'
+    )
+    return html[:start] + banner + html[start:] + "</div>"
+
+
 def regenerate_static_page(d, eidx, registry=None):
     """Regenerate the static HTML page for a deposit with full enrichment.
 
@@ -736,6 +776,10 @@ def regenerate_static_page(d, eidx, registry=None):
             '</p>'
         )
     
+    # Retained metadata-capture appendices are marked, not removed: the record
+    # keeps its own history, and the mark says the history is history.
+    fulltext_marked = _mark_superseded_appendix(fulltext)
+
     # Keywords
     # Version chain blocks (banner for superseded/draft, history list for series)
     version_banner = ''
@@ -815,6 +859,7 @@ def regenerate_static_page(d, eidx, registry=None):
                      'these are changes to the record\'s metadata and declared state.</div></section>')
 
     traversal_html = _traversal_html(d, registry)
+
 
     if registry and series_id:
         siblings = sorted(
@@ -961,7 +1006,7 @@ def regenerate_static_page(d, eidx, registry=None):
 {concepts_html}
 {triples_html}
 <h2>Full Text</h2>
-<div class="ft">{fulltext}</div>
+<div class="ft">{fulltext_marked}</div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>'''
