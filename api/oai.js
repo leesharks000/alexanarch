@@ -110,9 +110,33 @@ function decTok(t) {
 
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 
-module.exports = (req, res) => {
+
+// OAI-PMH 2.0 requires a repository to accept BOTH GET and POST for every verb
+// (spec §3.1.1.1). Arguments arrive POSTed as application/x-www-form-urlencoded.
+// Reading only the query string made every POST fall through to badVerb — the
+// two failures in the 2026-07-31 validation run.
+function readBody(req) {
+  return new Promise((resolve) => {
+    if (req.body !== undefined && req.body !== null) {
+      if (typeof req.body === 'string') return resolve(req.body);
+      if (typeof req.body === 'object') {
+        try { return resolve(new URLSearchParams(req.body).toString()); } catch (e) { /* fall through */ }
+      }
+    }
+    let data = '';
+    req.on('data', (c) => { data += c; });
+    req.on('end', () => resolve(data));
+    req.on('error', () => resolve(''));
+  });
+}
+
+module.exports = async (req, res) => {
   const url = new URL(req.url, `https://${req.headers.host || 'www.alexanarch.org'}`);
-  const p = Object.fromEntries(url.searchParams.entries());
+  let p = Object.fromEntries(url.searchParams.entries());
+  if ((req.method || 'GET').toUpperCase() === 'POST') {
+    const raw = await readBody(req);
+    p = { ...p, ...Object.fromEntries(new URLSearchParams(raw).entries()) };
+  }
   const verb = p.verb || '';
   const reqAttrs = { verb, identifier: p.identifier, metadataPrefix: p.metadataPrefix,
                      from: p.from, until: p.until, set: p.set };
