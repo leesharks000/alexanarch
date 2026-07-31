@@ -511,6 +511,7 @@ def stage_oai(args):
     incrementally — which is all of them.
     """
     sh([sys.executable, SCRIPTS / "build_oai_index.py"])
+    sh([sys.executable, SCRIPTS / "build_resourcesync.py"])
 
 
 def stage_announce(args):

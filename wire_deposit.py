@@ -965,6 +965,8 @@ def regenerate_static_page(d, eidx, registry=None):
     # Build page
     page = f'''<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>{esc(d["title"])} — Alexanarch</title><meta name="description" content="{esc(_compose_meta_description(d))}"><meta property="og:title" content="{esc(str(d["title"])[:95])}"><meta property="og:description" content="{esc(_compose_meta_description(d))}"><meta property="og:url" content="{_rec_url}"><meta property="og:type" content="article"><meta property="og:site_name" content="Alexanarch"><meta name="twitter:card" content="summary"><script type="application/ld+json">{jsonld}</script>
+<link rel="resourcesync" href="https://www.alexanarch.org/.well-known/resourcesync">
+<link rel="alternate" type="application/xml" title="OAI-PMH 2.0" href="https://www.alexanarch.org/oai?verb=Identify">
 <link rel="canonical" href="https://www.alexanarch.org/s/records/{dn}/">
 <meta name="citation_title" content="{esc(d["title"])}">
 <meta name="citation_author" content="{esc(d["creator"])}">

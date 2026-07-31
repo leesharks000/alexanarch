@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:rs="http://www.openarchives.org/rs/terms/">
+  <rs:ln rel="up" href="https://www.alexanarch.org/.well-known/resourcesync"/>
+  <rs:md capability="capabilitylist"/>
+  <url>
+    <loc>https://www.alexanarch.org/resourcesync/resourcelist.xml</loc>
+    <rs:md capability="resourcelist"/>
+  </url>
+  <url>
+    <loc>https://www.alexanarch.org/resourcesync/changelist.xml</loc>
+    <rs:md capability="changelist"/>
+  </url>
+  <url>
+    <loc>https://www.alexanarch.org/oai?verb=Identify</loc>
+    <rs:ln rel="describedby" href="https://www.alexanarch.org/oai?verb=Identify"/>
+    <rs:md capability="resourcelist" type="application/xml"/>
+  </url>
+</urlset>
