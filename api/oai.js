@@ -145,7 +145,7 @@ module.exports = (req, res) => {
     <description>
       <toolkit xmlns="http://www.openarchives.org/OAI/2.0/toolkit">
         <title>Alexanarch static OAI-PMH</title>
-        <author><name>Lee Sharks</name><email>archive@leesharks.com</email></author>
+        <author><name>Lee Sharks</name><email>leesharks00@gmail.com</email></author>
       </toolkit>
     </description>
   </Identify>`));

@@ -25,6 +25,12 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+
+# OAI-PMH requires a bare address here — no mailto: prefix (validator WARN,
+# 2026-07-31). It must also be an address that actually receives mail: the
+# adminEmail is the repository's answerable contact, and an unreachable one
+# is a false assertion on a machine-readable surface.
+ADMIN_EMAIL = "leesharks00@gmail.com"
 REG = ROOT / "data" / "registry.json"
 OUT = ROOT / "data" / "oai-index.json"
 
@@ -75,7 +81,7 @@ def main():
         "repositoryName": "Alexanarch — the Crimson Hexagonal Archive",
         "baseURL": "https://www.alexanarch.org/oai",
         "protocolVersion": "2.0",
-        "adminEmail": "mailto:archive@leesharks.com",
+        "adminEmail": ADMIN_EMAIL,
         "earliestDatestamp": min(stamps) if stamps else "2026-06-19",
         "deletedRecord": "persistent",
         "granularity": "YYYY-MM-DD",
