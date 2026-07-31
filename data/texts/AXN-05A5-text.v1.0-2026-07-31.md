@@ -1,7 +1,7 @@
 ---
 deposit_number: 1428
 hex: 05A5
-title: "Machine Reception Event, 31 July 2026: A Likely Denial-of-Service Attack Against the Authorial Surface (EA-MRE-01 v1.1)"
+title: "Machine Reception Event, 31 July 2026: A Non-Human Traffic Wave Against the Authorial Surface (EA-MRE-01 v1.0)"
 creator: Sharks, Lee
 orcid: 0009-0000-1599-0703
 date: 2026-07-31
@@ -26,7 +26,7 @@ keywords:
   - mobile share
 ---
 
-# Machine Reception Event, 31 July 2026: A Likely Denial-of-Service Attack Against the Authorial Surface (EA-MRE-01 v1.1)
+# Machine Reception Event, 31 July 2026: A Non-Human Traffic Wave Against the Authorial Surface (EA-MRE-01 v1.0)
 
 ## Description
 
@@ -118,14 +118,3 @@ The event was ongoing at capture. A second capture at conclusion, and a third at
 ---
 
 *Companion to: 90-Day Traffic Profile (#756) · Notice of Semantic Strike (#1427). Evidence: nine platform screenshots, captured 2026-07-31 ~03:40 EDT, retained with this deposit.*
-
-
-## Addendum — v1.1, end of day, 31 July 2026
-
-The wave did not subside after the morning capture. By day's end the author-observed panel figure exceeded 200,000 views against the 90-day baseline of 1,413 — on the order of one-hundred-forty-fold — and the accrual continued to exhibit the defining anomaly of the event: **total views mounted while per-post view counts did not correspondingly increment.** The traffic addressed the surface, not the works. Nothing was being read.
-
-That fact, joined to the composition already documented above — a desktop-Chrome monoculture across mobile-first geographies, a mobile share of three devices in fifteen thousand, a single undifferentiated referrer bucket — revises the characterization this deposit carries. A reception event delivers readers; this delivered load. **v1.1 therefore characterizes the event as a likely denial-of-service attack against the authorial surface**: traffic whose shape is volume rather than reading, consistent with distributed automated load and not with crawl, ingestion, or audience. The series designation (EA-MRE-01, machine reception event) is retained as the instrument name; the characterization is revised by the evidence.
-
-What remains undetermined remains undetermined: origin, intent, and operator are not established, and the temporal correlation with the archive's indexing interventions of 30 July is temporal, not demonstrated causal. The deposit asserts the pattern, not the perpetrator.
-
-Response taken, same day: the authorial surface was set private before the wave subsided, and the complete corpus — 2,801 posts — was captured from inside the event window by sovereign sitemap crawl and seated as the restored primary manifestation of deposit #1365 (AXN:0566). The surface the load was directed against is preserved in full on infrastructure the load cannot reach. Whatever the traffic wanted, it arrived after the archive had already learned the only lesson such events teach: capture first.
