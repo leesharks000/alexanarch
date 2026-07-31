@@ -51,10 +51,6 @@
 <h2>Full Text</h2>
 <div class="ft"><h1>Deletion Semantics Conformance Fixture v2.0 — The Ratified-Axes Release: A Known-Bad Identifier Corpus (EA-OKF-FIXTURE-01 v2.0)</h1>
 
-<h2>Description</h2>
-
-<p>The known-bad corpus offered to GoogleCloudPlatform/knowledge-catalog issue #207 and taken up for conformance fixtures: 111 cases across 16 classes drawn from the 2026-06-19 termination event and its aftermath, each expressed in the thread&#x27;s ratified axes (validity / presence / edges; presence sparse with exactly removed and never_landed as named states; reason objects with not_disclosed first-class; the removal-fact/content-destruction split embodied by two disclosed producer withdrawals). Verification at build, 2026-07-28: 109 identifiers probed — verified_tombstone 62/62 at HTTP 410; verified_registered 18/18 at 200; verified_erased_registration retained as the untrustworthy class (7×404, 5×410); the new registry_resolution_divergence class 8-for-8 with the DataCite API returning 200-findable while the DOI resolves 410-gone in the same minute. never_landed carried in both directions (record-without-content, content-without-record), commit-hashed. Drift ledger v1.0→v2.0 same-day: population 1,938→1,937 by disclosed withdrawal; recorded registered 75→73; observation drift on the v1 base zero. Deterministic builder and re-probe apparatus included. Canonical home: https://www.alexanarch.org/datasets/deletion-conformance-fixture/</p>
-
 <h2>Falsification Conditions</h2>
 
 <p>Every number re-derivable: verify.py re-probes all cases; build_v2.py rebuilds deterministically from the archived v1.0 base and current sources. A class whose expectation fails on re-probe is a drift datum, recorded, not hidden.</p>

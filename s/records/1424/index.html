@@ -51,10 +51,6 @@
 <h2>Full Text</h2>
 <div class="ft"><h1>The Sovereign Asset Registry: Index of 871 Research Objects Recovered After Repository Termination, with Cross-Resolution Between Terminated and Sovereign Identifiers (v1.0)</h1>
 
-<h2>Description</h2>
-
-<p>The Sovereign Asset Registry is the index of 871 research objects recovered after the 19 June 2026 termination of the Crimson Hexagonal Archive&#x27;s repository account, which tombstoned 1,817 DOIs. Each asset records its recovered locations, its terminated Zenodo identifiers (6,596 DOI attachments across 993 distinct identifiers), the alexanarch deposit(s) where it has been restored (622 of 871 assets are linked, across 881 deposits), body-completeness state, and mirror-network status. This deposit mints the registry as a scholarly object in its own right rather than as a surface of a site manifest, and seats two artifacts: the dataset (data/sovereign-asset-registry.json) and a bidirectional cross-resolution index (data/sovereign-crosswalk.json) that resolves any one identifier for a work — sovereign_id, terminated DOI, deposit number, AXN, blog URL — to every other known route to the same entry. Terminated identifiers are retained rather than deleted: an identifier that no longer resolves at its origin still resolves here, which is the operative difference between a dead link and a severed record.</p>
-
 <h2>Methodology</h2>
 
 <p>Assets enumerated from the post-termination recovery sweep; identifiers assembled from the DataCite metadata backup and the archive&#x27;s own deposit records. Mapping between sovereign assets and alexanarch deposits is typed rather than asserted flatly: direct_verified (476), direct (73), remediated_fuzzy (489), remediated_containment (222), and smaller classes including superseded_version_pointer and misclassified_other_author, each retained with its type so that the confidence of any given link is legible to the reader rather than flattened into a bare pointer. Counts are computed from the data at build time, not transcribed.</p>

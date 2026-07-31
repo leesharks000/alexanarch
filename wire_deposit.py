@@ -506,8 +506,21 @@ def _drop_duplicated_description(fulltext, description):
     """
     if not fulltext or not description:
         return fulltext
-    norm = lambda x: re.sub(r"\s+", " ", re.sub(r"[*_`#]", "", str(x))).strip().lower()
-    d = norm(description)[:160]
+    # Strip HTML tags as well as markdown: by the time this runs the pipeline has
+    # already converted the body line-by-line, so the block begins "<p>…". Four
+    # earlier attempts (2026-07-31) patched the branch logic while the normalizer
+    # silently failed every prefix comparison on that one tag.
+    def norm(x):
+        t = re.sub(r"<[^>]+>", " ", str(x))
+        t = re.sub(r"[*_`#]", "", t)
+        return re.sub(r"\s+", " ", t).strip().lower()
+    # The capture sentence may lead the body block, the description field, both,
+    # or neither: a 2026-07-30 pass stripped it from some fields and could not
+    # touch any immutable body. Discount it on BOTH sides before comparing —
+    # stripping one side only misaligns every comparison by exactly that phrase.
+    _lead = re.compile(
+        r"^semi-restored record\s*\(metadata capture only;?\s*no full text\)\.?\s*", re.I)
+    d = _lead.sub("", norm(description))[:160]
     if len(d) < 60:
         return fulltext
     # The pipeline hands this HTML, not markdown. Match both forms rather than
@@ -525,7 +538,7 @@ def _drop_duplicated_description(fulltext, description):
     # now held in the field. Discount the known prefix before comparing, since a
     # 2026-07-30 reconciliation pass stripped that sentence from the field but
     # could not touch the immutable body.
-    a = re.sub(r"^semi-restored record \(metadata capture only;? no full text\)\.?\s*", "", a)
+    a = _lead.sub("", a)
     if not a[:160].startswith(d[:120]):
         return fulltext
     # cut from the Description heading to the next heading of the same or higher level
