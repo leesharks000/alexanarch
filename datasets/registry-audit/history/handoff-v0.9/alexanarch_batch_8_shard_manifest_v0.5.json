@@ -1,0 +1,99 @@
+{
+  "manifest_version": "0.5",
+  "project": "Alexanarch audit — Batch 8",
+  "snapshot_commit": "055429ac82edc967f09c4640ffd0b049cff78e6e",
+  "batch_number": 8,
+  "batch_mode": "200_RECORD_MACROBATCH",
+  "promised_interval": [
+    799,
+    998
+  ],
+  "completed_interval": [
+    799,
+    998
+  ],
+  "completed_count": 200,
+  "next_deposit": 999,
+  "next_checkpoint_interval": [
+    999,
+    1038
+  ],
+  "canonical_storage_policy": {
+    "completed_records": "Immutable shard files. Early Batch 8 shards contain 20 records; from #879 onward the standard shard is 40 records, with immediate P0 persistence.",
+    "in_progress_records": "One active shard file for the current 20-record interval",
+    "monolithic_partial_file": "Compatibility copy only; do not use as the sole crash-recovery source",
+    "merge_time": "Reassemble shards only after #998 is complete and validate the exact 200-record interval"
+  },
+  "shards": [
+    {
+      "file": "alexanarch_batch_8_rows_799_818.json",
+      "start_deposit": 799,
+      "end_deposit": 818,
+      "record_count": 20,
+      "sha256": "0d0c49723c24d047eef0ab9ae933465ebb6b294560047a92a243293a7bc9128b",
+      "status": "COMPLETE_IMMUTABLE_CHECKPOINT"
+    },
+    {
+      "file": "alexanarch_batch_8_rows_819_838.json",
+      "start_deposit": 819,
+      "end_deposit": 838,
+      "record_count": 20,
+      "sha256": "18d967897115a6a4940fc988bb6392d5f4744e80300bebedcfe59527805f10b7",
+      "status": "COMPLETE_IMMUTABLE_CHECKPOINT"
+    },
+    {
+      "file": "alexanarch_batch_8_rows_839_858.json",
+      "start_deposit": 839,
+      "end_deposit": 858,
+      "record_count": 20,
+      "sha256": "c4941312419411010de1366c6cec6b8e8dfce52aed93a36efec6150f0af7da7a",
+      "status": "COMPLETE_IMMUTABLE_CHECKPOINT"
+    },
+    {
+      "file": "alexanarch_batch_8_rows_859_878.json",
+      "start_deposit": 859,
+      "end_deposit": 878,
+      "record_count": 20,
+      "sha256": "23f06606b9c76f6024dd739605eda88e166aea27aa54255b1ea24a0f0581db5d",
+      "status": "COMPLETE_IMMUTABLE_CHECKPOINT"
+    },
+    {
+      "file": "alexanarch_batch_8_rows_879_918.json",
+      "start_deposit": 879,
+      "end_deposit": 918,
+      "record_count": 40,
+      "sha256": "1a40c02b704d16a1dbefe4d21208994643bfdc7c0ddbfe3764c651d73cbde679",
+      "status": "COMPLETE_IMMUTABLE_CHECKPOINT",
+      "shard_cadence": "40_RECORD_LARGE_SHARD"
+    },
+    {
+      "file": "alexanarch_batch_8_rows_919_958.json",
+      "start_deposit": 919,
+      "end_deposit": 958,
+      "record_count": 40,
+      "sha256": "c6486d626c75cc76c230c825aa36fe7c8a544e67b62d643e4db8bec83a7af8ec",
+      "status": "COMPLETE_IMMUTABLE_CHECKPOINT"
+    },
+    {
+      "file": "alexanarch_batch_8_rows_959_998.json",
+      "start_deposit": 959,
+      "end_deposit": 998,
+      "record_count": 40,
+      "sha256": "c175f75ce4a88c290dc3dc44cdcd2df5a2a811c71fdaa3c4734228c21f35e6f5",
+      "status": "COMPLETE_IMMUTABLE_CHECKPOINT"
+    }
+  ],
+  "compatibility_copy": {
+    "file": "alexanarch_batch_8_partial_rows.json",
+    "record_count": 60,
+    "sha256": "2f2aa069a9990abe915ca5ed67cc33a70c94b9e02d73d0fb607e29135b954be8",
+    "status": "NONCANONICAL_COMPATIBILITY_COPY"
+  },
+  "validation_rules": [
+    "Every completed shard contains exactly 20 contiguous deposits.",
+    "Shard ranges do not overlap and leave no gaps.",
+    "SHA-256 must match before use.",
+    "Never edit a completed shard; create a corrected replacement with a new version and preserve the old shard.",
+    "At final merge, the reconstructed interval must equal deposits 799 through 998 exactly once."
+  ]
+}

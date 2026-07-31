@@ -1,0 +1,55 @@
+{
+  "validation_version": "1.0",
+  "validated_at": "2026-07-31T11:02:00-04:00",
+  "snapshot_commit": "055429ac82edc967f09c4640ffd0b049cff78e6e",
+  "sealed_shard_hashes": [
+    {
+      "filename": "alexanarch_audit_batch_9_shard_01_0999-1038_v1.0.json",
+      "expected_sha256": "cfb6eae9c0e03a2405f387f050c50c8a190c40dccaaaa3016a3f45cfbc7850aa",
+      "actual_sha256": "cfb6eae9c0e03a2405f387f050c50c8a190c40dccaaaa3016a3f45cfbc7850aa",
+      "match": true
+    },
+    {
+      "filename": "alexanarch_audit_batch_9_shard_02_1039-1078_v1.0.json",
+      "expected_sha256": "738c9b94c24aa3780080e5918f07ab8e5b381cae5f6d36fa85da170829878b06",
+      "actual_sha256": "738c9b94c24aa3780080e5918f07ab8e5b381cae5f6d36fa85da170829878b06",
+      "match": true
+    },
+    {
+      "filename": "alexanarch_audit_batch_9_shard_03_1079-1118_v1.0.json",
+      "expected_sha256": "70b80583d260b1ce664a7103a393daf015636735886a5cdc12950473c3b95273",
+      "actual_sha256": "70b80583d260b1ce664a7103a393daf015636735886a5cdc12950473c3b95273",
+      "match": true
+    },
+    {
+      "filename": "alexanarch_audit_batch_9_shard_04_1119-1158_v1.0.json",
+      "expected_sha256": "1afa7e091ec042f87894078ce0233821ed5ebe328fd1b0cf25855018be8de932",
+      "actual_sha256": "1afa7e091ec042f87894078ce0233821ed5ebe328fd1b0cf25855018be8de932",
+      "match": true
+    },
+    {
+      "filename": "alexanarch_audit_batch_9_shard_05_1159-1198_v1.0.json",
+      "expected_sha256": "1356d41b72c1a6276c2b6e3b264086291988300b2eae06bd1d2472a298be8b2c",
+      "actual_sha256": "1356d41b72c1a6276c2b6e3b264086291988300b2eae06bd1d2472a298be8b2c",
+      "match": true
+    }
+  ],
+  "checks": {
+    "batch9_exact_ordered_coverage_999_1198": true,
+    "batch9_record_count_200": true,
+    "batch9_unique_deposits_200": true,
+    "batch9_all_rows_record_schema_v0_2": true,
+    "cumulative_unique_717": true,
+    "overlap_count_22": true,
+    "cumulative_all_rows_schema_v0_3": true,
+    "all_manifest_shard_hashes_match": true,
+    "merged_ledger_record_count_717": true,
+    "merged_ledger_unique_deposits_717": true,
+    "merged_overlap_history_preserved": true,
+    "no_record_repair_performed": true
+  },
+  "errors": [],
+  "record_schema_errors": [],
+  "cumulative_schema_errors": [],
+  "status": "PASS"
+}

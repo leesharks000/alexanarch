@@ -42,14 +42,23 @@ def dc_type(d):
     return ct or "Text"
 
 
+DISP = ROOT / "data" / "audit" / "registration_dispositions.json"
+
+
 def main():
     reg = json.loads(REG.read_text())
+    disp = {}
+    if DISP.exists():
+        disp = json.loads(DISP.read_text()).get("dispositions", {})
     recs = []
     families = set()
     for d in reg["deposits"]:
         n = d.get("deposit_number")
         if not n:
             continue
+        a = disp.get(str(n))
+        if a and a.get("d") == "WITHHOLD":
+            continue  # audit-withheld: excluded from the harvesting surface until repaired
         axn = d.get("axn") or ""
         m = FAMILY.search(axn)
         fam = m.group(1).lower() if m else "unclassified"
@@ -65,12 +74,16 @@ def main():
             "title": d.get("title") or "",
             "creator": d.get("creator") or "",
             "orcid": d.get("orcid") or "",
-            "description": (d.get("description") or "")[:2000],
+            "description": ((d.get("description") or "")[:2000]
+                            + ((" — " + a["capsule"]) if (a and a.get("capsule")) else "")),
             "type": dc_type(d),
             "rights": d.get("license") or "CC-BY-4.0",
             "axn": axn,
             "subjects": [str(k) for k in kws][:24],
-            "sets": [f"family:{fam}"] + (
+            "sets": [f"family:{fam}",
+                     ("audit:cleared" if (a and a.get("d") == "HARVEST")
+                      else "audit:cleared-with-warning" if (a and a.get("d") == "HARVEST_WITH_WARNING")
+                      else "audit:pending")] + (
                 ["completeness:metadata-capture"] if bs.get("class") == "metadata_capture"
                 else ["completeness:full"]),
             "deleted": bool(d.get("status") == "WITHDRAWN"),

@@ -1,0 +1,30 @@
+{
+  "state_version": "0.9",
+  "snapshot_commit": "055429ac82edc967f09c4640ffd0b049cff78e6e",
+  "latest_fully_merged": {
+    "ledger_version": "0.8",
+    "last_contiguous_batch_deposit": 998
+  },
+  "next_batch": {
+    "batch_number": 9,
+    "range": [
+      999,
+      1198
+    ],
+    "batch_mode": "200_RECORD_MACROBATCH",
+    "first_shard": [
+      999,
+      1038
+    ],
+    "review_target": "FRONTMATTER_AND_IDENTITY_READ"
+  },
+  "canonical_files": {
+    "ledger_json": "alexanarch_audit_ledger_v0.8.json",
+    "ledger_csv": "alexanarch_audit_ledger_v0.8.csv",
+    "report": "alexanarch_audit_report_v0.8.md",
+    "method": "alexanarch_audit_method_core_v0.1.md",
+    "schema": "alexanarch_recommended_record_schema_v0.1.json",
+    "batch_8_manifest": "alexanarch_batch_8_shard_manifest_v0.5.json"
+  },
+  "resume_rule": "Begin Batch 9 at deposit 999; seal 40-record shards; preserve overlap history."
+}

@@ -1,0 +1,20 @@
+{
+ "ledger": "alexanarch repair ledger",
+ "created": "2026-07-31",
+ "append_only": true,
+ "policy": "Every repair references its basis: a sealed audit adjudication row, or an explicit MANUS-DIRECTED ruling (workplan standing-rule carve-out, 2026-07-31). Uninscribed work did not happen.",
+ "repairs": [
+  {
+   "repair_id": "R-0001",
+   "deposit_number": 1365,
+   "axn": "AXN:0566.UNCLASSIFIED.✋👇♋🟡🌅🕕",
+   "basis": "MANUS-DIRECTED (2026-07-31): \"the stub is not the record, and the record should be restored.\" Record outside audited ranges; direct editorial authority per workplan carve-out.",
+   "tier": "Tier 2 (byte event, same AXN) + Tier 1 metadata reconciliation",
+   "changes_summary": "Canonical body rewritten as restoration record (prior body preserved at data/texts/AXN-0566-text.pre-restoration-2026-07-31.md); primary archive seated as attached file (sha256 in registry files[]); body_status metadata_capture->full; canonical_text_status metadata_only->canonical_full_text; content_type Metadata capture->Dataset; version ->v2.0; description and wiki_article rewritten; cross-references to #756 and #1428 added. Full field-level before/after in the deposit modifications log.",
+   "operator": "TACHYON (transport D, in-session)",
+   "date": "2026-07-31",
+   "wave": null,
+   "commit": "PENDING-MANUS-COMMIT"
+  }
+ ]
+}
