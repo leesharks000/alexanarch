@@ -117,5 +117,15 @@
         }
       ]
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/oai",
+      "destination": "/api/oai"
+    },
+    {
+      "source": "/oai/",
+      "destination": "/api/oai"
+    }
   ]
 }

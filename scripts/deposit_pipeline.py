@@ -125,7 +125,7 @@ REGISTRY = REPO_ROOT / "data" / "registry.json"
 
 STAGE_ORDER = [
     "mint", "validate", "record", "pdf", "body-index",
-    "wiki", "sitemap", "interlink", "enrich", "identity", "commit", "verify",
+    "wiki", "sitemap", "oai", "interlink", "enrich", "identity", "commit", "verify",
     "announce",
 ]
 
@@ -503,6 +503,16 @@ def stage_verify(args):
             print(f"  ✗ {url} — {e}")
 
 
+def stage_oai(args):
+    """Recompile the OAI-PMH index so harvesters see the new record.
+
+    Runs after sitemap. OAI selective harvesting keys on datestamp, so a record
+    that never enters the index is invisible to every aggregator that harvests
+    incrementally — which is all of them.
+    """
+    sh([sys.executable, SCRIPTS / "build_oai_index.py"])
+
+
 def stage_announce(args):
     """Push the record URL to IndexNow participants (Bing, Yandex, Naver, Seznam).
 
@@ -530,6 +540,7 @@ STAGES = {
     "sitemap": stage_sitemap, "interlink": stage_interlink,
     "enrich": stage_enrich, "identity": stage_identity,
     "commit": stage_commit, "verify": stage_verify,
+    "oai": stage_oai,
     "announce": stage_announce,
 }
 
