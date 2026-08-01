@@ -1,0 +1,142 @@
+{
+  "artifact": "alexanarch_audit_boundary_validation_v3.1",
+  "validated_at": "2026-07-31T13:55:00-04:00",
+  "snapshot_commit": "055429ac82edc967f09c4640ffd0b049cff78e6e",
+  "package_version": "3.1",
+  "checks": {
+    "ledger_json_parses": true,
+    "unique_record_count_928": true,
+    "exact_contiguous_coverage_499_1426": true,
+    "csv_header_plus_928_rows": true,
+    "summary_unique_matches": true,
+    "severity_counts_match": true,
+    "registration_disposition_counts_match": true,
+    "identity_counts_match": true,
+    "lifecycle_counts_match": true,
+    "overlap_history_preserved_1400_1401_1403": true,
+    "upper_tail_shard_hash_matches": true,
+    "upper_tail_exact_28": true,
+    "upper_tail_net_new_25": true,
+    "record_repair_performed": false
+  },
+  "cumulative_summary": {
+    "unique_records": 928,
+    "severity": {
+      "P2": 344,
+      "OK": 253,
+      "P3": 35,
+      "P0": 121,
+      "P1": 175
+    },
+    "registration_disposition": {
+      "HARVEST_WITH_WARNING": 527,
+      "HARVEST": 273,
+      "WITHHOLD": 128
+    },
+    "identity_status": {
+      "CONFIRMED_MATCH": 755,
+      "WRONG_VERSION": 81,
+      "PROBABLE_MATCH": 22,
+      "AMBIGUOUS_VERSION": 31,
+      "WRONG_OBJECT": 39
+    },
+    "lifecycle_status": {
+      "UNKNOWN": 587,
+      "ACTIVE": 175,
+      "DRAFT_PENDING": 108,
+      "WITHDRAWN": 7,
+      "SUPERSEDED": 51
+    },
+    "contiguous_audited_range": [
+      499,
+      1426
+    ],
+    "contiguous_record_count": 928,
+    "additional_audited_islands": [],
+    "corpus_snapshot_deposits": 1426,
+    "coverage_percent": 65.077,
+    "remaining_records": 498,
+    "record_repair_performed": false
+  },
+  "upper_tail_summary": {
+    "records": 28,
+    "severity": {
+      "OK": 13,
+      "P0": 3,
+      "P1": 6,
+      "P2": 5,
+      "P3": 1
+    },
+    "registration_disposition": {
+      "HARVEST": 13,
+      "HARVEST_WITH_WARNING": 12,
+      "WITHHOLD": 3
+    },
+    "identity_status": {
+      "CONFIRMED_MATCH": 21,
+      "PROBABLE_MATCH": 4,
+      "WRONG_VERSION": 3
+    },
+    "overlap_reaudits": 3,
+    "net_new_records": 25,
+    "record_repair_performed": false
+  },
+  "expected_zip_members": [
+    "START_HERE_alexanarch_audit_cumulative_v3.1.md",
+    "alexanarch_audit_batch_13_upper_tail_1399-1426_v1.0.json",
+    "alexanarch_audit_batch_13_upper_tail_summary_v1.0.json",
+    "alexanarch_audit_batch_13_upper_tail_validation_v1.0.json",
+    "alexanarch_audit_boundary_validation_v3.1.json",
+    "alexanarch_audit_continuation_state_v3.1.json",
+    "alexanarch_audit_ledger_v1.1.csv",
+    "alexanarch_audit_ledger_v1.1.json",
+    "alexanarch_audit_method_core_v0.4.md",
+    "alexanarch_audit_report_v1.1.md"
+  ],
+  "file_hashes_before_validation_file": {
+    "START_HERE_alexanarch_audit_cumulative_v3.1.md": {
+      "sha256": "b796b4056931b249310fb792dfaf996eaa19caff7d4635a9f02edb738c878cce",
+      "bytes": 1509
+    },
+    "alexanarch_audit_batch_13_upper_tail_1399-1426_v1.0.json": {
+      "sha256": "1649b3f55bf911fa560c6256d9d53f4c44005c52bbca47b4d55460c473c427ac",
+      "bytes": 103233
+    },
+    "alexanarch_audit_batch_13_upper_tail_summary_v1.0.json": {
+      "sha256": "bb821123ddccc799d79d9fd02c237f3521d409e9e6a0dede94ad523a367beef6",
+      "bytes": 982
+    },
+    "alexanarch_audit_batch_13_upper_tail_validation_v1.0.json": {
+      "sha256": "781450dda84f25f64615e7b8cc3a728c105fae80ced226053b7ea9a1a822c8b0",
+      "bytes": 798
+    },
+    "alexanarch_audit_continuation_state_v3.1.json": {
+      "sha256": "3927cc0368e272b2f8e81eea59b2e47c76e7a167d31baa738ea73fe02d353ec0",
+      "bytes": 567
+    },
+    "alexanarch_audit_ledger_v1.1.csv": {
+      "sha256": "e99e7611e5a1012438fbcc2beddc422e05041239fc44d26a5560e0225ede9805",
+      "bytes": 652276
+    },
+    "alexanarch_audit_ledger_v1.1.json": {
+      "sha256": "4e80e62013bcb3494dc169308db0024ebb03a0511bdb8acd8a5f5a52b1a3e5e1",
+      "bytes": 3086691
+    },
+    "alexanarch_audit_method_core_v0.4.md": {
+      "sha256": "9116b1c0d63250bf2194a3dcd929f7c47712463734e1dac604dfed0123863b56",
+      "bytes": 4387
+    },
+    "alexanarch_audit_report_v1.1.md": {
+      "sha256": "532586b8650c3ec4b8c9b517edf171d2eff032beb93b3f5cf70f145150cd400d",
+      "bytes": 3906
+    }
+  },
+  "passed": false,
+  "zip_validation": {
+    "expected_member_count": 10,
+    "exact_member_set_required": true,
+    "testzip_expected": null,
+    "zip_sha256_recorded_externally": true,
+    "note": "Validated after final ZIP build; ZIP SHA-256 is reported in the handoff response to avoid self-referential package hashing."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "artifact": "alexanarch_audit_checkpoint_0479-0498_validation_v1.0",
+  "validated_at": "2026-07-31T18:45:00-04:00",
+  "snapshot_commit": "055429ac82edc967f09c4640ffd0b049cff78e6e",
+  "checks": {
+    "json_parses": true,
+    "exact_record_count_20": true,
+    "unique_deposit_numbers": true,
+    "exact_contiguous_range_479_498": true,
+    "all_frontmatter_and_identity_read": true,
+    "severity_counts_match": true,
+    "disposition_counts_match": true,
+    "no_overlap_reaudits": true,
+    "cumulative_v3_1_untouched": true,
+    "zip_exact_member_set": true,
+    "zip_integrity_test": true,
+    "record_repair_not_performed": true
+  },
+  "summary": {
+    "records": 20,
+    "severity": {
+      "OK": 12,
+      "P0": 0,
+      "P1": 5,
+      "P2": 3,
+      "P3": 0
+    },
+    "registration_disposition": {
+      "HARVEST": 12,
+      "HARVEST_WITH_WARNING": 8
+    },
+    "identity_status": {
+      "CONFIRMED_MATCH": 19,
+      "PROBABLE_MATCH": 1
+    },
+    "overlap_reaudits": 0,
+    "net_new_records": 20,
+    "record_repair_performed": false
+  },
+  "passed": true,
+  "expected_zip_members": [
+    "SHA256SUMS.txt",
+    "START_HERE_alexanarch_audit_checkpoint_0479-0498_v1.0.md",
+    "alexanarch_audit_checkpoint_0479-0498_summary_v1.0.json",
+    "alexanarch_audit_checkpoint_0479-0498_v1.0.json",
+    "alexanarch_audit_checkpoint_0479-0498_validation_v1.0.json"
+  ]
+}

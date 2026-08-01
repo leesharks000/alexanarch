@@ -1,45 +1,95 @@
 {
  "package": "registry-audit storage + OAI remediation workplan",
- "version": "1.3",
- "date": "2026-07-31",
+ "version": "3.1",
+ "date": "2026-08-01",
  "audit_snapshot_commit": "055429ac82edc967f09c4640ffd0b049cff78e6e",
- "note": "v1.3: repair ledger inaugurated (R-0001, #1365 restoration); workplan v1.3; deposited-record hold honored.",
+ "canonical_state": {
+  "cumulative_package": "v3.1",
+  "cumulative_ledger": "v1.1",
+  "unique_records_audited": 928,
+  "coverage_percent": 65.08,
+  "contiguous_audited_range": [
+   499,
+   1426
+  ],
+  "remaining_range": [
+   1,
+   498
+  ],
+  "checkpoints_pending_merge": [
+   "checkpoint_0479-0498 (20 records, 0 P0)"
+  ],
+  "record_repair_performed": false
+ },
+ "note": "v3.1: cumulative advanced from v2.0/ledger v0.9 (717 records) to v3.1/ledger v1.1 (928 records); upper tail #1199-#1426 audited and closed; #479-#498 checkpoint seated (not yet merged). Superseded v0.9/v2.0 files relocated to history/handoff-v2.0/. Repair still deferred until full 1,426-record audit assembled and validated. Pending shards not yet seated: alexanarch_audit_method_core_v0.4.md, alexanarch_audit_batch_13_upper_tail_summary_v1.0.json, alexanarch_audit_batch_13_upper_tail_validation_v1.0.json.",
+ "pending_shards_not_seated": [
+  "alexanarch_audit_method_core_v0.4.md",
+  "alexanarch_audit_batch_13_upper_tail_summary_v1.0.json",
+  "alexanarch_audit_batch_13_upper_tail_validation_v1.0.json"
+ ],
  "files": [
   {
-   "path": "datasets/registry-audit/START_HERE_alexanarch_audit_cumulative_v2.0.md",
-   "sha256": "bf1686ca7765518bbd9cbe76fc3c657669e998162833a981a713af23a8a55b65",
-   "bytes": 1611
+   "path": "datasets/registry-audit/START_HERE_alexanarch_audit_cumulative_v3.1.md",
+   "sha256": "b796b4056931b249310fb792dfaf996eaa19caff7d4635a9f02edb738c878cce",
+   "bytes": 1509
   },
   {
-   "path": "datasets/registry-audit/WORKPLAN_OAI_REMEDIATION_v1.3.md",
-   "sha256": "d2dd11198a71e18319d42295870e0182daa36c0e0d79268ae7ccb7d45019cdc5",
-   "bytes": 21983
+   "path": "datasets/registry-audit/alexanarch_audit_ledger_v1.1.json",
+   "sha256": "4e80e62013bcb3494dc169308db0024ebb03a0511bdb8acd8a5f5a52b1a3e5e1",
+   "bytes": 3086691
   },
   {
-   "path": "datasets/registry-audit/alexanarch_audit_boundary_validation_v2.0.json",
-   "sha256": "5ba3f39ec5c616692735c55cf7bd998a1943e22c120ab46fdc4d89ace0fc95c2",
-   "bytes": 2264
+   "path": "datasets/registry-audit/alexanarch_audit_ledger_v1.1.csv",
+   "sha256": "e99e7611e5a1012438fbcc2beddc422e05041239fc44d26a5560e0225ede9805",
+   "bytes": 652276
   },
   {
-   "path": "datasets/registry-audit/alexanarch_audit_ledger_v0.9.csv",
-   "sha256": "05b0f5b9c94aab346b3f0ea138f7c32196c576e4a1f179d34b15858fad1ad6d7",
-   "bytes": 1387759
+   "path": "datasets/registry-audit/alexanarch_audit_report_v1.1.md",
+   "sha256": "532586b8650c3ec4b8c9b517edf171d2eff032beb93b3f5cf70f145150cd400d",
+   "bytes": 3906
   },
   {
-   "path": "datasets/registry-audit/alexanarch_audit_ledger_v0.9.json",
-   "sha256": "8bb94da12530df2880b99427dbfc3b0e9581828ca889c50a8c96799fefb265a5",
-   "bytes": 2379430
+   "path": "datasets/registry-audit/alexanarch_audit_batch_13_upper_tail_1399-1426_v1.0.json",
+   "sha256": "1649b3f55bf911fa560c6256d9d53f4c44005c52bbca47b4d55460c473c427ac",
+   "bytes": 103233
   },
   {
-   "path": "datasets/registry-audit/alexanarch_audit_report_v0.9.md",
-   "sha256": "b9eb76152a35478c86592a84958ffcbc41a1ab2ac0f26be5fba435c036fa0bd6",
-   "bytes": 13509
+   "path": "datasets/registry-audit/alexanarch_audit_boundary_validation_v3.1.json",
+   "sha256": "3dadb8e757084a0952c6d5a72d212e000ae77b8174a50732d13444a6ec961f77",
+   "bytes": 4529
+  },
+  {
+   "path": "datasets/registry-audit/alexanarch_audit_continuation_state_v3.1.json",
+   "sha256": "3927cc0368e272b2f8e81eea59b2e47c76e7a167d31baa738ea73fe02d353ec0",
+   "bytes": 567
+  },
+  {
+   "path": "datasets/registry-audit/WORKPLAN_OAI_REMEDIATION_v1.5.md",
+   "sha256": "c4949d21eda9620fa3e547f8c7d15fd0f0221fbc9dee983e803243216cc4e692",
+   "bytes": 23416
   },
   {
    "path": "datasets/registry-audit/repair_ledger.json",
    "sha256": "d0300bcd500617476f19a09d960fa39b08a711a2550007567a679b9d3cfaff63",
    "bytes": 1346
   },
+  {
+   "path": "datasets/registry-audit/checkpoints/checkpoint_0479-0498/START_HERE_alexanarch_audit_checkpoint_0479-0498_v1.0.md",
+   "sha256": "6f93c483bd8be6d81c10c06c9a24aab0b70f80f33620f38c41f2fbd2fcfb2374",
+   "bytes": 1394
+  },
+  {
+   "path": "datasets/registry-audit/checkpoints/checkpoint_0479-0498/alexanarch_audit_checkpoint_0479-0498_v1.0.json",
+   "sha256": "45cfe7fa9e3e166032dac999b2f453a6e5cfc51b91646fa42a76bd9406b330ce",
+   "bytes": 63532
+  },
+  {
+   "path": "datasets/registry-audit/checkpoints/checkpoint_0479-0498/alexanarch_audit_checkpoint_0479-0498_validation_v1.0.json",
+   "sha256": "d8ed83853d4e1fdd8cc49d76befa570a83c73883aece3094971f2909013a927c",
+   "bytes": 1374
+  }
+ ],
+ "history": [
   {
    "path": "datasets/registry-audit/history/handoff-v0.9/START_HERE_alexanarch_audit_v0.9.md",
    "sha256": "f430bd50df2d7c5b798f8ecd9baf0f04d8e99306e287e1ab0445ca73bf34df93",
@@ -119,6 +169,31 @@
    "path": "datasets/registry-audit/history/handoff-v0.9/alexanarch_v0.8_p3_enrichment_queue.md",
    "sha256": "f3bd8966dc69e618b01959f83e9513a973acf5def978ac46b9f0220be1ad1816",
    "bytes": 14695
+  },
+  {
+   "path": "datasets/registry-audit/history/handoff-v2.0/START_HERE_alexanarch_audit_cumulative_v2.0.md",
+   "sha256": "bf1686ca7765518bbd9cbe76fc3c657669e998162833a981a713af23a8a55b65",
+   "bytes": 1611
+  },
+  {
+   "path": "datasets/registry-audit/history/handoff-v2.0/alexanarch_audit_boundary_validation_v2.0.json",
+   "sha256": "5ba3f39ec5c616692735c55cf7bd998a1943e22c120ab46fdc4d89ace0fc95c2",
+   "bytes": 2264
+  },
+  {
+   "path": "datasets/registry-audit/history/handoff-v2.0/alexanarch_audit_ledger_v0.9.csv",
+   "sha256": "05b0f5b9c94aab346b3f0ea138f7c32196c576e4a1f179d34b15858fad1ad6d7",
+   "bytes": 1387759
+  },
+  {
+   "path": "datasets/registry-audit/history/handoff-v2.0/alexanarch_audit_ledger_v0.9.json",
+   "sha256": "8bb94da12530df2880b99427dbfc3b0e9581828ca889c50a8c96799fefb265a5",
+   "bytes": 2379430
+  },
+  {
+   "path": "datasets/registry-audit/history/handoff-v2.0/alexanarch_audit_report_v0.9.md",
+   "sha256": "b9eb76152a35478c86592a84958ffcbc41a1ab2ac0f26be5fba435c036fa0bd6",
+   "bytes": 13509
   }
  ]
 }
