@@ -5,7 +5,7 @@
  "registered": "2026-08-02T20:31:49.908Z",
  "status": "witnessed-verified",
  "retrieval": "https://www.alexanarch.org/data/symbolon-registry/files/deb473d8ff92c55f-IMG_3671__________.pdf",
- "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9.",
+ "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9. [Stamp re-applied 2026-08-02; AXN1 refreshed to the current stamped form. Sealed core (AXN0) unchanged.]",
  "spec": "AXN-SYMBOLON-SPEC v0.2 · https://www.alexanarch.org/s/records/1432/",
  "tuple": {
   "axn0": {
@@ -13,8 +13,8 @@
    "sha256": "deb473d8ff92c55fb96300d15a4c98f82077881d3df9efea15f2832261b75a30"
   },
   "axn1": {
-   "glyphs": "🌳📦🗝️🌔🔥▶️",
-   "sha256": "764b3f0310d39ba0c9e8234a9181bb54d33963942bc299f66929829e034f632a"
+   "glyphs": "🐝♆🔅▶️🍁🎲",
+   "sha256": "7da6edd3778d985f95016968ec903254afa5a4e5907d906cf4dc52aa50ec85b0"
   }
  },
  "position_note": "The hex position is a registry address allocated from the shared AXN sequence (data/symbolon-registry/allocation.json). An address is not a verification.",
@@ -54,5 +54,18 @@
   "family": "UNCLASSIFIED",
   "registration": "kernel is authority-independent; registry witnessing via https://www.alexanarch.org/deposit/ or by sending this sidecar to the archive"
  },
- "verified_at": "2026-08-02T21:20:04.536Z"
+ "verified_at": "2026-08-02T21:20:04.536Z",
+ "stamp_history": [
+  {
+   "axn1": {
+    "glyphs": "🌳📦🗝️🌔🔥▶️",
+    "sha256": "764b3f0310d39ba0c9e8234a9181bb54d33963942bc299f66929829e034f632a"
+   },
+   "until": "2026-08-02T21:45:46.321Z"
+  },
+  {
+   "axn1_replaced": "764b3f0310d39ba0c9e8234a9181bb54d33963942bc299f66929829e034f632a",
+   "at": "2026-08-02T21:45:46.321Z"
+  }
+ ]
 }
