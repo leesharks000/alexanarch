@@ -1,0 +1,61 @@
+{
+ "version": "1.0",
+ "date": "2026-08-01",
+ "source_priority": [
+  "in-repo staging",
+  "github repos",
+  "past conversation threads",
+  "blog",
+  "MANUS directly"
+ ],
+ "queue": {
+  "901": {
+   "claims": "v1.5",
+   "serves": "v1.3",
+   "action": "recover v1.5 bytes or relabel to v1.3 preserving series",
+   "likely_source": "conversation threads / blog"
+  },
+  "1013": {
+   "claims": "historical version",
+   "serves": "later version",
+   "action": "recover exact historical bytes; relabel FORBIDDEN by ledger",
+   "likely_source": "conversation threads / blog / github"
+  },
+  "1024": {
+   "claims": "historical version",
+   "serves": "later version",
+   "action": "recover exact historical bytes; relabel FORBIDDEN by ledger",
+   "likely_source": "conversation threads / blog / github"
+  },
+  "1237": {
+   "claims": "v1.7",
+   "serves": "other",
+   "action": "recover v1.7 body; connect Moltbook version series; current body preserved as audit trace",
+   "likely_source": "conversation threads"
+  },
+  "1397": {
+   "claims": "v6.1",
+   "serves": "—",
+   "action": "seat v6.1 body or rebind to v7.2 under new version identity",
+   "likely_source": "github / staging"
+  },
+  "1400": {
+   "claims": "v7.1",
+   "serves": "v7.3",
+   "action": "recover v7.1 bytes or mark historical version missing (Lacuna); v7.3 = successor head",
+   "likely_source": "conversation threads / github"
+  },
+  "1403": {
+   "claims": "v7.2",
+   "serves": "v7.3",
+   "action": "recover v7.2; resolve concept/version DOI semantics",
+   "likely_source": "conversation threads / github"
+  },
+  "1417": {
+   "claims": "v2.0",
+   "serves": "—",
+   "action": "restore frozen v2.0 dataset/manifest or reversion as v2.1 with successor relation",
+   "likely_source": "github / staging"
+  }
+ }
+}
