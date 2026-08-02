@@ -222,14 +222,28 @@ go.onclick=async()=>{
     const doReg=async()=>{
       rb.style.display='none'; ro.textContent='witnessing…';
       try{
-        const payload={...seedA};
-        if(document.getElementById('storeit').checked){
-          if(buf.length>3145728){ro.textContent='file exceeds the 3 MB storage cap — witnessed without storage; use the deposit transport to store it'; }
-          else{let b='';const CH=32768;for(let i=0;i<buf.length;i+=CH)b+=String.fromCharCode.apply(null,buf.subarray(i,i+CH));payload.store={filename:FILE.name,content_b64:btoa(b)};}
-        }
-        const r=await fetch('/api/register-symbolon',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+        // Step 1 — always witness the identity (small, reliable).
+        const r=await fetch('/api/register-symbolon',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(seedA)});
         const j=await r.json();
-        if(r.ok){ro.innerHTML='✓ '+j.status+(j.axn?' — <strong>'+j.axn+'</strong>':'')+' — <a href="'+j.record+'">registry record</a>'+(j.retrieval?' · <a href="'+j.retrieval+'">stored file</a>':'');}
+        if(r.ok){
+          ro.innerHTML='✓ '+j.status+(j.axn?' — <strong>'+j.axn+'</strong>':'')+' — <a href="'+j.record+'">registry record</a>'+(j.retrieval?' · <a href="'+j.retrieval+'">stored file</a>':'');
+          // Step 2 — optional storage, only if requested and safely small; failure never undoes the witnessing above.
+          if(document.getElementById('storeit').checked && !j.retrieval){
+            const SAFE=2600000; // ~2.6MB raw → ~3.5MB b64, comfortably under the platform body limit
+            if(buf.length>SAFE){ ro.innerHTML+=' <span style="color:var(--accent2)">· file too large to store here ('+(buf.length/1048576).toFixed(1)+' MB); identity is witnessed — use the <a href="/deposit/">deposit transport</a> to store the file.</span>'; }
+            else{
+              ro.innerHTML+=' · storing…';
+              try{
+                let b='';const CH=32768;for(let i=0;i<buf.length;i+=CH)b+=String.fromCharCode.apply(null,buf.subarray(i,i+CH));
+                const sp={...seedA, store:{filename:FILE.name, content_b64:btoa(b)}};
+                const sr=await fetch('/api/register-symbolon',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(sp)});
+                const sj=await sr.json();
+                if(sr.ok && sj.retrieval){ ro.innerHTML=ro.innerHTML.replace(' · storing…',' · <a href="'+sj.retrieval+'">stored file</a> (verified)'); }
+                else{ ro.innerHTML=ro.innerHTML.replace(' · storing…',' <span style="color:var(--accent2)">· identity witnessed; file storage did not complete — use the <a href="/deposit/">deposit transport</a> to store it.</span>'); }
+              }catch(e){ ro.innerHTML=ro.innerHTML.replace(' · storing…',' <span style="color:var(--accent2)">· identity witnessed; file too large for this route — use the <a href="/deposit/">deposit transport</a>.</span>'); }
+            }
+          }
+        }
         else{ro.textContent=(j.error||'unavailable')+(j.fallback?' — '+j.fallback:''); rb.style.display='inline-block'; rb.disabled=false;}
       }catch(e){ro.textContent='offline — email the sidecar to the archive instead'; rb.style.display='inline-block'; rb.disabled=false;}
     };
