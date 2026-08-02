@@ -30,10 +30,19 @@ if sdir.is_dir():
         except Exception: continue
         hx = s.get("position")
         if not hx: continue
+        tup = s.get("tuple", {})
         e = {"axn": s.get("axn"), "source": "symbolon-witness", "status": s.get("status"),
              "entry": f"/data/symbolon-registry/entries/{f.name}",
              "filename": (s.get("seed_a") or {}).get("manifest", [{}])[0].get("filename"),
-             "retrieval": s.get("retrieval")}
+             "retrieval": s.get("retrieval"),
+             "family": (s.get("axn") or "..").split(".")[1] if s.get("axn") and "." in s.get("axn","") else None,
+             "registered": s.get("registered"),
+             "verified_at": s.get("verified_at"),
+             "axn0_sha256": tup.get("axn0", {}).get("sha256"),
+             "axn0_glyphs": tup.get("axn0", {}).get("glyphs"),
+             "axn1_sha256": tup.get("axn1", {}).get("sha256"),
+             "axn1_glyphs": tup.get("axn1", {}).get("glyphs"),
+             "reconstruction_class": (s.get("seed_a") or {}).get("reconstruction_class")}
         positions[hx] = e; n_sym += 1
         t = s.get("tuple", {})
         if t.get("axn0", {}).get("sha256"): kernels[t["axn0"]["sha256"]] = {"role": "axn0", **e}

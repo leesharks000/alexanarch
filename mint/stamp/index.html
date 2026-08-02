@@ -77,8 +77,17 @@ button:hover{background:#086354}button:disabled{background:#aaa;cursor:default}
 <h2 style="margin-top:34px">Verify</h2>
 <p style="font-size:.9em">Drop any file — an original or a stamped copy — and it is looked up in the <a href="/data/axn-central-registry.json">central AXN registry</a> by its kernel.</p>
 <div class="drop" id="vdrop" style="padding:16px">Drop a file to verify<input type="file" id="vfile" style="display:none"></div>
-<p style="font-size:.85em;color:var(--dim);margin:10px 0 4px">or paste an AXN or its sha256 kernel to look it up:</p>
-<div class="row"><div style="flex:3"><input type="text" id="axnq" placeholder="AXN:05AD.UNCLASSIFIED.🌾➕🥁⚫👋🪄  or  sha256:1a908cc8…"></div><div style="flex:0 0 auto"><button id="axnlook">Look up</button></div></div>
+<p style="font-size:.85em;color:var(--dim);margin:14px 0 6px">or look up an identifier</p>
+<div style="display:flex;gap:8px;align-items:stretch">
+<input type="text" id="axnq" placeholder="paste an AXN, hex position, or sha256 kernel" style="flex:1;font-family:var(--mono);font-size:.85em;border:1px solid var(--border);border-radius:8px;padding:11px 13px;background:var(--surface)">
+<button id="axnlook" style="border-radius:8px;padding:0 18px">Look up</button>
+</div>
+<div style="font-size:.74em;color:var(--dim);margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;align-items:center">
+<span>examples:</span>
+<code class="exchip" style="cursor:pointer;background:#f2f2f2;border:1px solid var(--border);border-radius:5px;padding:3px 7px">05AD</code>
+<code class="exchip" style="cursor:pointer;background:#f2f2f2;border:1px solid var(--border);border-radius:5px;padding:3px 7px">AXN:05AD.UNCLASSIFIED.🌾➕🥁⚫👋🪄</code>
+<code class="exchip" style="cursor:pointer;background:#f2f2f2;border:1px solid var(--border);border-radius:5px;padding:3px 7px">sha256:1a908cc8…</code>
+</div>
 <div class="out" id="vout"></div>
 <script>
 (function(){
@@ -113,10 +122,35 @@ al.onclick=async()=>{
     if(hexM){const hx=hexM[1].toUpperCase();if(reg.positions&&reg.positions[hx]){hit=reg.positions[hx];by='position';}}
     if(!hit){for(const hx in (reg.positions||{})){if((reg.positions[hx].axn||'')===q){hit=reg.positions[hx];by='axn';break;}}}
   }
-  if(hit){vo.innerHTML='<div class="verdict" style="color:var(--teal)">FOUND ('+by+')</div><div class="v"><strong>'+(hit.axn||'')+'</strong> · '+(hit.source||'')+' · '+(hit.status||'')+'</div>'+(hit.record?'<div class="v"><a href="'+hit.record+'">record</a></div>':'')+(hit.entry?'<div class="v"><a href="'+hit.entry+'">witness entry</a></div>':'')+(hit.retrieval?'<div class="v"><a href="'+hit.retrieval+'">stored file</a></div>':'');}
-  else{vo.innerHTML='<div class="verdict" style="color:var(--accent2)">NOT FOUND</div><div class="v">No position or kernel matches that AXN in the central registry.</div>';}
+  if(hit){
+    const row=(k,v)=>v?('<div style="display:flex;gap:10px;padding:5px 0;border-top:1px solid #eee"><div style="flex:0 0 118px;color:var(--dim);font-size:.72em;text-transform:uppercase;letter-spacing:.04em">'+k+'</div><div style="flex:1;font-family:var(--mono);font-size:.8em;word-break:break-all">'+v+'</div></div>'):'';
+    const verified=(hit.status||'').indexOf('verified')>-1;
+    let h='<div class="verdict" style="color:var(--teal)">✓ FOUND'+(verified?' · VERIFIED':'')+'</div>';
+    h+='<div style="font-family:var(--mono);font-size:1.05em;margin:6px 0 12px;word-break:break-all">'+(hit.axn||'')+'</div>';
+    // actions
+    let acts='';
+    if(hit.retrieval)acts+='<a class="dl" href="'+hit.retrieval+'" style="margin:0 8px 0 0">↓ retrieve file</a>';
+    if(hit.record)acts+='<a class="dl" href="'+hit.record+'" style="background:var(--accent);margin:0 8px 0 0">record page</a>';
+    if(hit.entry)acts+='<a class="dl" href="'+hit.entry+'" style="background:#555;margin:0 8px 8px 0">witness entry</a>';
+    if(acts)h+='<div style="margin-bottom:12px">'+acts+'</div>';
+    // metadata table
+    h+=row('matched by',by);
+    h+=row('source',hit.source);
+    h+=row('status',hit.status);
+    h+=row('family',hit.family);
+    h+=row('class',hit.reconstruction_class);
+    if(hit.filename)h+=row('filename',hit.filename);
+    h+=row('deposit #',hit.deposit_number!=null?('#'+hit.deposit_number):'');
+    h+=row('registered',hit.registered);
+    h+=row('verified at',hit.verified_at);
+    h+=row('AXN₀ kernel',(hit.axn0_glyphs?hit.axn0_glyphs+'  ':'')+(hit.axn0_sha256||''));
+    h+=row('AXN₁ stamped',(hit.axn1_glyphs?hit.axn1_glyphs+'  ':'')+(hit.axn1_sha256||''));
+    vo.innerHTML=h;
+  }
+  else{vo.innerHTML='<div class="verdict" style="color:var(--accent2)">NOT FOUND</div><div class="v">No position or kernel in the central registry matches that identifier. It may be unregistered, a different version, or altered.</div>';}
 };
 aq.onkeydown=e=>{if(e.key==='Enter')al.click();};
+document.querySelectorAll('.exchip').forEach(c=>{c.onclick=()=>{let v=c.textContent;if(v.indexOf('1a908cc8')>-1)v='sha256:1a908cc8bf3ed5cc6adaf64181f8811e9e060840182c732df4b4629c9bdff357';aq.value=v;al.click();};});
 })();
 </script>
 <div class="footer">AXN schema v2 · glyph table and derivation identical to <span style="font-family:var(--mono)">scripts/axn_lib.py</span> · AXN-SYMBOLON-SPEC v0.2 · Alexanarch</div>
