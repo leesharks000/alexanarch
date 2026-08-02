@@ -21083,6 +21083,55 @@
    "operator": "TACHYON",
    "date": "2026-08-02",
    "wave": "R1c"
+  },
+  {
+   "repair_id": "R-0995",
+   "deposit_number": 1400,
+   "axn": "AXN:0589.UNCLASSIFIED.🔄📦🫵🌉🜁🧫",
+   "audit_ref": {
+    "basis": "WRONG_VERSION sibling recovery",
+    "source": "deposit #832 staged body"
+   },
+   "changes": [
+    {
+     "field": "staged_body",
+     "before": "167254ch v7.3 (displaced)",
+     "after": "139221ch v7.1 (sibling-recovered)"
+    },
+    {
+     "field": "version",
+     "before": "v1.0",
+     "after": "v7.1"
+    }
+   ],
+   "basis": "R1C-SIBLING-RECOVERY",
+   "operator": "TACHYON",
+   "date": "2026-08-02",
+   "wave": "R1c"
+  },
+  {
+   "repair_id": "R-0996",
+   "deposit_number": 1403,
+   "axn": "AXN:058C.UNCLASSIFIED.🏠🌓🕊️🌌📚🔮",
+   "audit_ref": {
+    "basis": "MANUS Lacuna ruling 2026-08-02"
+   },
+   "changes": [
+    {
+     "field": "staged_body",
+     "before": "167254ch v7.3 audit-trace",
+     "after": "1834ch Lacuna Mark"
+    },
+    {
+     "field": "lacuna",
+     "before": null,
+     "after": "PRIMARY_OBJECT_LOST"
+    }
+   ],
+   "basis": "LACUNA-WITH-SUCCESSOR",
+   "operator": "TACHYON",
+   "date": "2026-08-02",
+   "wave": "R1c"
   }
  ]
 }

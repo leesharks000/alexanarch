@@ -335022,7 +335022,7 @@
       "entity_status": "provisional",
       "defines_concepts": [],
       "orcid": "0009-0000-1599-0703",
-      "version": "v1.0",
+      "version": "v7.1",
       "keywords": [
         "Crimson Hexagonal Archive"
       ],
@@ -335197,10 +335197,32 @@
           "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
           "was": "3 terms",
           "now": "1 terms"
+        },
+        {
+          "date": "2026-08-02",
+          "field": "body_status",
+          "reason": "R1c sibling recovery: claimed v7.1 body seated byte-exact from sibling deposit #832 (AXN:034D — same work, same version, direct deposit); displaced v7.3 body preserved in git history",
+          "was": "167254ch displaced v7.3",
+          "now": "139221ch recovered v7.1"
+        },
+        {
+          "date": "2026-08-02",
+          "field": "version",
+          "reason": "R1c: aligned to titled claim",
+          "was": "v1.0",
+          "now": "v7.1"
         }
       ],
-      "date_modified": "2026-07-31",
-      "resolver_lock": true
+      "date_modified": "2026-08-02",
+      "resolver_lock": true,
+      "relations": [
+        {
+          "type": "same_version_as",
+          "target_deposit": 832,
+          "target_axn": "AXN:034D.EMPIRICAL.🍃💎🔴🕊️☽🌪️",
+          "note": "two records of EA-LOGOS-REVFIRST-PLAN v7.1: #832 direct deposit, #1400 the Zenodo-record restoration"
+        }
+      ]
     },
     {
       "deposit_number": 1401,
@@ -335965,10 +335987,36 @@
           "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
           "was": "3 terms",
           "now": "1 terms"
+        },
+        {
+          "date": "2026-08-02",
+          "field": "body_status",
+          "reason": "LACUNA EXECUTED (MANUS ruling 2026-08-02): primary v7.2 object declared lost after exhausted hunt; body = Lacuna Mark w/ preserved version note; displaced v7.3 audit-trace preserved in git history (v7.3 properly served by #1217)",
+          "was": "167254ch v7.3 audit-trace",
+          "now": "1834ch Lacuna Mark"
         }
       ],
-      "date_modified": "2026-07-31",
-      "resolver_lock": true
+      "date_modified": "2026-08-02",
+      "resolver_lock": true,
+      "lacuna": {
+        "state": "PRIMARY_OBJECT_LOST",
+        "protocol": "EA-LACUNA-PROTOCOL-01",
+        "declared": "2026-08-02"
+      },
+      "relations": [
+        {
+          "type": "successor",
+          "target_deposit": 1217,
+          "target_axn": "AXN:04D2.UNCLASSIFIED.💛🔵☀️🛤️🌄📏",
+          "note": "v7.3 carries the preserved v7.2 version note"
+        },
+        {
+          "type": "predecessor",
+          "target_deposit": 832,
+          "target_axn": "AXN:034D.EMPIRICAL.🍃💎🔴🕊️☽🌪️",
+          "note": "v7.1"
+        }
+      ]
     },
     {
       "deposit_number": 1404,

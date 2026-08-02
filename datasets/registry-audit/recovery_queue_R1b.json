@@ -1,5 +1,5 @@
 {
- "version": "1.5",
+ "version": "1.6",
  "date": "2026-08-01",
  "source_priority": [
   "in-repo staging",
@@ -48,7 +48,7 @@
    "serves": "v7.3",
    "action": "recover v7.1 bytes or mark historical version missing (Lacuna); v7.3 = successor head",
    "likely_source": "conversation threads / github",
-   "status": "PROPOSED LACUNA — primary object unrecoverable; version note survives in v7.3",
+   "status": "RECOVERED — v7.1 seated from sibling #832 (in-repo all along)",
    "hunt_evidence": "HUNT EXHAUSTED 2026-08-02: repo history = semi-stubs only; Zenodo records 20690868/20693286/20693272/20693274 all 410 (among the 871 tombstoned); Wayback = no snapshots (5-day live window uncrawled); threads bd8b78c8/3f9a120d contain build scripts and version notes, not full bytes; blog carries only current v7.3. SURVIVING EVIDENCE: verbatim version-note ladder preserved inside the v7.3 body; build transformations documented in-thread."
   },
   "1403": {
@@ -56,7 +56,7 @@
    "serves": "v7.3",
    "action": "recover v7.2; resolve concept/version DOI semantics",
    "likely_source": "conversation threads / github",
-   "status": "PROPOSED LACUNA — primary object unrecoverable; version note survives in v7.3",
+   "status": "LACUNA EXECUTED — successor #1217; v7.2 note preserved verbatim",
    "hunt_evidence": "HUNT EXHAUSTED 2026-08-02: repo history = semi-stubs only; Zenodo records 20690868/20693286/20693272/20693274 all 410 (among the 871 tombstoned); Wayback = no snapshots (5-day live window uncrawled); threads bd8b78c8/3f9a120d contain build scripts and version notes, not full bytes; blog carries only current v7.3. SURVIVING EVIDENCE: verbatim version-note ladder preserved inside the v7.3 body; build transformations documented in-thread."
   },
   "1417": {
@@ -145,5 +145,8 @@
  "proposed_adjudications": {
   "1400": "Lacuna Mark (EA-LACUNA-PROTOCOL-01) + successor relation to v7.3 carrying the preserved v7.1 note — AWAITING MANUS BATCH WORD",
   "1403": "Lacuna Mark + successor relation to v7.3 carrying the preserved v7.2 note — AWAITING MANUS BATCH WORD"
+ },
+ "hunt_doctrine": {
+  "sibling_scan_rule": "HUNT STEP 1b (inscribed 2026-08-02): before any external hunt, scan the registry for SIBLING DEPOSITS of the same work (title-family match) — a claimed version may be staged under another deposit number. This step recovered v7.1 (#832→#1400) after external hunts had been declared exhausted."
  }
 }
