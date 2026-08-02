@@ -128,6 +128,10 @@ const AXN_GLYPHS=["🌑","🌒","🌓","🌔","🌕","🌖","🌗","🌘","⭐",
 async function sha256(buf){const d=await crypto.subtle.digest("SHA-256",buf);return Array.from(new Uint8Array(d)).map(b=>b.toString(16).padStart(2,"0")).join("");}
 function glyphs(h){const bs=[];for(let i=0;i<12;i+=2)bs.push(parseInt(h.slice(i,i+2),16));return bs.map(b=>AXN_GLYPHS[b]).join("");}
 
+function fallbackCopy(txt,ok){
+  try{const ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.focus();ta.select();ta.setSelectionRange(0,txt.length);document.execCommand('copy');document.body.removeChild(ta);ok&&ok();}
+  catch(e){/* last resort: the box has user-select:all so a long-press selects it */}
+}
 let FILE=null;
 const drop=document.getElementById('drop'),fin=document.getElementById('file'),go=document.getElementById('go'),err=document.getElementById('err');
 drop.onclick=()=>fin.click();
@@ -249,8 +253,8 @@ go.onclick=async()=>{
         const j=await r.json();
         if(r.ok){
           const axnStr=j.axn||'';
-          ro.innerHTML='✓ '+j.status+(axnStr?' — <strong id="axnval">'+axnStr+'</strong> <button id="copyaxn" style="padding:3px 9px;font-size:.75em">copy</button>':'')+' — <a href="'+j.record+'">registry record</a>'+(j.retrieval?' · <a href="'+j.retrieval+'">stored file</a>':'');
-          setTimeout(()=>{const cb=document.getElementById('copyaxn');if(cb)cb.onclick=()=>{navigator.clipboard.writeText(axnStr).then(()=>{cb.textContent='copied ✓';});};},50);
+          ro.innerHTML='✓ '+j.status+' — <a href="'+j.record+'">registry record</a>'+(j.retrieval?' · <a href="'+j.retrieval+'">stored file</a>':'')
+            +(axnStr?'<div style="margin-top:10px"><div style="font-size:.72em;color:var(--dim);text-transform:uppercase;letter-spacing:.05em">your AXN — tap to copy</div><div id="axnbox" style="margin-top:5px;padding:10px 12px;background:#f0f7f5;border:1px solid var(--teal);border-radius:6px;font-family:var(--mono);font-size:.9em;word-break:break-all;cursor:pointer;-webkit-user-select:all;user-select:all">'+axnStr+'</div><div id="axncopied" style="font-size:.78em;color:var(--teal);margin-top:4px;display:none">copied ✓</div></div>':'');
           // Step 2 — optional storage, only if requested and safely small; failure never undoes the witnessing above.
           if(document.getElementById('storeit').checked && !j.retrieval){
             const SAFE=2600000; // ~2.6MB raw → ~3.5MB b64, comfortably under the platform body limit
@@ -266,6 +270,18 @@ go.onclick=async()=>{
                 else{ ro.innerHTML=ro.innerHTML.replace(' · storing…',' <span style="color:var(--accent2)">· identity witnessed; file storage did not complete — use the <a href="/deposit/">deposit transport</a> to store it.</span>'); }
               }catch(e){ ro.innerHTML=ro.innerHTML.replace(' · storing…',' <span style="color:var(--accent2)">· identity witnessed; file too large for this route — use the <a href="/deposit/">deposit transport</a>.</span>'); }
             }
+          }
+          // bind copy LAST, after any storage rewrite, so the element still exists
+          const box=document.getElementById('axnbox');
+          if(box){
+            const doCopy=()=>{
+              const txt=axnStr;
+              const ok=()=>{const c=document.getElementById('axncopied');if(c)c.style.display='block';};
+              if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(ok).catch(()=>fallbackCopy(txt,ok));}
+              else fallbackCopy(txt,ok);
+            };
+            box.addEventListener('click',doCopy);
+            box.addEventListener('touchend',function(ev){ev.preventDefault();doCopy();});
           }
         }
         else{ro.textContent=(j.error||'unavailable')+(j.fallback?' — '+j.fallback:''); rb.style.display='inline-block'; rb.disabled=false;}
