@@ -1,0 +1,60 @@
+{
+ "axn": "AXN:05AC.ARCHIVAL.💎🔩🌟🔽🔒🔵",
+ "position": "05AC",
+ "family": "ARCHIVAL",
+ "registered": "2026-08-02T20:49:43.805Z",
+ "status": "witnessed-verified",
+ "retrieval": "https://www.alexanarch.org/data/symbolon-registry/files/1c3109d5f9c5c668-screengrab-20260731-133526.png",
+ "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9.",
+ "spec": "AXN-SYMBOLON-SPEC v0.2 · https://www.alexanarch.org/s/records/1432/",
+ "tuple": {
+  "axn0": {
+   "glyphs": "💎🔩🌟🔽🔒🔵",
+   "sha256": "1c3109d5f9c5c6689dbe378f4b427078ba6ef58579a2878e1f568dcff50ec159"
+  },
+  "axn1": {
+   "glyphs": "🔙🐚🗿🔵☿♍",
+   "sha256": "f37afcc5a2ae1c6ba60ff38c891a926b75f6c4b47535b92619d0364927dfeadb"
+  }
+ },
+ "position_note": "The hex position is a registry address allocated from the shared AXN sequence (data/symbolon-registry/allocation.json). An address is not a verification.",
+ "seed_a": {
+  "axn_spec": "AXN-SYMBOLON-SPEC v0.2",
+  "spec_record": "https://www.alexanarch.org/s/records/1432/",
+  "spec_axn": "AXN:05A9.OPERATIVE.🐚🌪️🕖🫵⏩○",
+  "reconstruction_class": "content-addressed",
+  "axn0": {
+   "glyphs": "💎🔩🌟🔽🔒🔵",
+   "sha256": "1c3109d5f9c5c6689dbe378f4b427078ba6ef58579a2878e1f568dcff50ec159",
+   "role": "identity kernel of the sealed core (the original, pre-stamp bytes)"
+  },
+  "axn1": {
+   "glyphs": "🔙🐚🗿🔵☿♍",
+   "sha256": "f37afcc5a2ae1c6ba60ff38c891a926b75f6c4b47535b92619d0364927dfeadb",
+   "role": "kernel of the stamped file as it circulates (tamper witness; not a name)"
+  },
+  "manifest": [
+   {
+    "part": 1,
+    "filename": "screengrab-20260731-133526.png",
+    "sha256": "1c3109d5f9c5c6689dbe378f4b427078ba6ef58579a2878e1f568dcff50ec159",
+    "bytes": 180523
+   }
+  ],
+  "stamp_geometry": {
+   "format": "image/png",
+   "method": "appended_footer_strip",
+   "strip_px": 109,
+   "original_px": {
+    "w": 1080,
+    "h": 2424
+   },
+   "strip_stamp": "crop to original_px then compare pixels; byte-identical strip NOT possible for raster (re-encode); AXN₀ verification requires Seed B = the original file",
+   "strip_reversible": false
+  },
+  "created": "2026-08-02T20:49:41.760Z",
+  "generator": "https://www.alexanarch.org/mint/stamp/ (client-side; WebCrypto)",
+  "family": "ARCHIVAL",
+  "registration": "kernel is authority-independent; registry witnessing via https://www.alexanarch.org/deposit/ or by sending this sidecar to the archive"
+ }
+}
