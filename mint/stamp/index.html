@@ -152,7 +152,11 @@ async function stampPdf(buf,axn0g,axn0h){
   const pages=doc.getPages(); const pg=pages[pages.length-1];
   const {x:mx,y:my,width:mw}=pg.getMediaBox?pg.getMediaBox():{x:0,y:0,width:pg.getWidth()};
   const STRIP=26;
-  pg.setMediaBox(mx,my-STRIP,mw,(pg.getHeight?pg.getHeight():pg.getSize().height)+STRIP);
+  const ph=(pg.getHeight?pg.getHeight():pg.getSize().height);
+  pg.setMediaBox(mx,my-STRIP,mw,ph+STRIP);
+  if(pg.setCropBox)pg.setCropBox(mx,my-STRIP,mw,ph+STRIP);   // viewers display the CropBox — extend it too (found by depositor E's merged-photo PDF)
+  if(pg.setBleedBox)pg.setBleedBox(mx,my-STRIP,mw,ph+STRIP);
+  if(pg.setTrimBox)pg.setTrimBox(mx,my-STRIP,mw,ph+STRIP);
   const font=await doc.embedFont(StandardFonts.Courier);
   const line=`AXN kernel [${axn0h.slice(0,12)}] sha256:${axn0h.slice(0,16)}... ${new Date().toISOString().slice(0,10)} alexanarch.org`;
   pg.drawText(line,{x:mx+14,y:my-STRIP+9,size:8,font,color:rgb(.1,.1,.1)});
