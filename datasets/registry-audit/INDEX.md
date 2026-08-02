@@ -21,7 +21,7 @@ Remediation Workplan (deposit #1429, AXN:05A6.GOVERNANCE.🍀🌈🎭⚫⚪♃).
 - `alexanarch_audit_boundary_validation_v3.1.json` — integrity checks
 - `alexanarch_audit_continuation_state_v3.1.json` — exact resume state (audit #1–#498)
 - `checkpoints/checkpoint_0479-0498/` — sealed 20-record checkpoint (not yet merged)
-- `WORKPLAN_OAI_REMEDIATION_v1.7.md` — living remediation workplan
+- `WORKPLAN_OAI_REMEDIATION_v1.8.md` — living remediation workplan
 - `repair_ledger.json` — repair ledger (R-0001: #1365 restoration)
 - `MANIFEST.json` — full file hashes + history
 - `history/` — superseded packages (handoff-v0.9, handoff-v2.0)
