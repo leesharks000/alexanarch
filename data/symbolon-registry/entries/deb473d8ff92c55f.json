@@ -1,0 +1,57 @@
+{
+ "axn": "AXN:05AB.UNCLASSIFIED.🔃✊🌹⏫∞✖️",
+ "position": "05AB",
+ "family": "UNCLASSIFIED",
+ "registered": "2026-08-02T20:31:49.908Z",
+ "status": "witnessed-unverified",
+ "retrieval": null,
+ "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9.",
+ "spec": "AXN-SYMBOLON-SPEC v0.2 · https://www.alexanarch.org/s/records/1432/",
+ "tuple": {
+  "axn0": {
+   "glyphs": "🔃✊🌹⏫∞✖️",
+   "sha256": "deb473d8ff92c55fb96300d15a4c98f82077881d3df9efea15f2832261b75a30"
+  },
+  "axn1": {
+   "glyphs": "🌳📦🗝️🌔🔥▶️",
+   "sha256": "764b3f0310d39ba0c9e8234a9181bb54d33963942bc299f66929829e034f632a"
+  }
+ },
+ "position_note": "The hex position is a registry address allocated from the shared AXN sequence (data/symbolon-registry/allocation.json). An address is not a verification.",
+ "seed_a": {
+  "axn_spec": "AXN-SYMBOLON-SPEC v0.2",
+  "spec_record": "https://www.alexanarch.org/s/records/1432/",
+  "spec_axn": "AXN:05A9.OPERATIVE.🐚🌪️🕖🫵⏩○",
+  "reconstruction_class": "content-addressed",
+  "axn0": {
+   "glyphs": "🔃✊🌹⏫∞✖️",
+   "sha256": "deb473d8ff92c55fb96300d15a4c98f82077881d3df9efea15f2832261b75a30",
+   "role": "identity kernel of the sealed core (the original, pre-stamp bytes)"
+  },
+  "axn1": {
+   "glyphs": "🌳📦🗝️🌔🔥▶️",
+   "sha256": "764b3f0310d39ba0c9e8234a9181bb54d33963942bc299f66929829e034f632a",
+   "role": "kernel of the stamped file as it circulates (tamper witness; not a name)"
+  },
+  "manifest": [
+   {
+    "part": 1,
+    "filename": "IMG_3671 が結合されました.pdf",
+    "sha256": "deb473d8ff92c55fb96300d15a4c98f82077881d3df9efea15f2832261b75a30",
+    "bytes": 2428286
+   }
+  ],
+  "stamp_geometry": {
+   "format": "application/pdf",
+   "method": "last_page_mediabox_extended",
+   "strip_pt": 26,
+   "note": "glyph kernel carried in XMP/Subject metadata; visible line carries hash prefix (PDF text layer cannot render emoji reliably)",
+   "strip_stamp": "pdf rewrite is not byte-reversible; AXN₀ verification requires Seed B = the original file",
+   "strip_reversible": false
+  },
+  "created": "2026-08-02T20:31:47.679Z",
+  "generator": "https://www.alexanarch.org/mint/stamp/ (client-side; WebCrypto)",
+  "family": "UNCLASSIFIED",
+  "registration": "kernel is authority-independent; registry witnessing via https://www.alexanarch.org/deposit/ or by sending this sidecar to the archive"
+ }
+}
