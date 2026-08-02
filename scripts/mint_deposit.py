@@ -476,6 +476,23 @@ def next_deposit_number(registry: dict) -> int:
     return max(existing) + 1
 
 
+def _symbolon_position_for(sha256_hex: str):
+    """One kernel, one position: if the symbolon witness layer already assigned
+    a position to these canonical bytes, minting a second is forbidden."""
+    import json as _json, pathlib as _pl
+    d = _pl.Path(__file__).resolve().parent.parent / "data" / "symbolon-registry" / "entries"
+    if not d.is_dir():
+        return None
+    for f in d.glob("*.json"):
+        try:
+            e = _json.loads(f.read_text())
+            if e.get("tuple", {}).get("axn0", {}).get("sha256") == sha256_hex:
+                return e.get("axn") or e.get("position")
+        except Exception:
+            continue
+    return None
+
+
 def _symbolon_ledger_floor() -> int:
     """Highest position consumed by the symbolon witness layer per the shared
     allocation ledger (data/symbolon-registry/allocation.json): the ledger's

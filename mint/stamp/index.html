@@ -62,13 +62,13 @@ button:hover{background:#086354}button:disabled{background:#aaa;cursor:default}
   <div class="v" id="h1"></div>
   <div class="k">Downloads — keep both together; they are two halves of one identity</div>
   <div><a class="dl" id="dlStamped" download>stamped file</a><a class="dl" id="dlSeed" download>Seed A sidecar (.axn.json)</a></div>
-  <div class="k">Registry (optional)</div>
-  <div style="margin-top:6px"><button id="reg">Register with the archive</button> <span id="regout" style="font-size:.82em;color:var(--dim)"></span></div>
+  <div class="k">Registry</div>
+  <div style="margin-top:6px"><span id="regout" style="font-size:.85em;color:#333">registering…</span> <button id="reg" style="display:none">Retry registration</button></div>
 </div>
 
 <div class="note">
 <strong>What the stamp is.</strong> A footer strip appended <em>below</em> your content — added canvas for images, an added-margin line for PDFs, a comment block for text. It carries the six-glyph kernel and the SHA-256 prefix of your <em>original</em> bytes. <strong>What the sidecar is.</strong> The identity half: both kernels in full, the exact stamp geometry (so verification knows precisely where the stamp ends and your work begins), and the manifest. <strong>What to do with them.</strong> Circulate the stamped file freely; keep the sidecar with it, or send it to the archive. The stamp says what the work is; the sidecar proves it. Keeping your original file safe as well is ideal — it is the sealed core itself.
-<br><br><strong>Registration.</strong> The <em>Register with the archive</em> button witnesses your symbolon in the public record: the sidecar's internal consistency is checked (glyphs recomputed from hashes), a hex position is allocated from the sovereign AXN sequence, and the full identifier — <span style="font-family:var(--mono)">AXN:HEX.FAMILY.glyphs</span> — is composed and committed to the registry, publicly visible within about two minutes. Only Seed A crosses the wire; your file never does. Registration is optional and adds an address, not authority: the kernel in your stamp is true or false independently of any registry, including this one. Full deposit (body, record page, DOI-class treatment) remains available through the <a href="/deposit/">deposit transport</a>.
+<br><br><strong>Registration.</strong> The <em>Register with the archive</em> button witnesses your symbolon in the public record: the sidecar's internal consistency is checked (glyphs recomputed from hashes), a hex position is allocated from the sovereign AXN sequence, and the full identifier — <span style="font-family:var(--mono)">AXN:HEX.FAMILY.glyphs</span> — is composed and committed to the registry, publicly visible within about two minutes. Only Seed A crosses the wire; your file never does. Registration is automatic on stamping — one kernel, one position, deduplicated against the whole registry — and adds an address, not authority: the kernel in your stamp is true or false independently of any registry, including this one. Full deposit (body, record page, DOI-class treatment) remains available through the <a href="/deposit/">deposit transport</a>.
 </div>
 
 <div class="footer">AXN schema v2 · glyph table and derivation identical to <span style="font-family:var(--mono)">scripts/axn_lib.py</span> · AXN-SYMBOLON-SPEC v0.2 · Alexanarch</div>
@@ -188,16 +188,16 @@ go.onclick=async()=>{
     document.getElementById('h1').textContent='sha256: '+h1;
     document.getElementById('out').style.display='block';
     const rb=document.getElementById('reg'), ro=document.getElementById('regout');
-    rb.disabled=false; ro.textContent='';
-    rb.onclick=async()=>{
-      rb.disabled=true; ro.textContent='witnessing…';
+    const doReg=async()=>{
+      rb.style.display='none'; ro.textContent='witnessing…';
       try{
         const r=await fetch('/api/register-symbolon',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(seedA)});
         const j=await r.json();
         if(r.ok){ro.innerHTML='✓ '+j.status+(j.axn?' — <strong>'+j.axn+'</strong>':'')+' — <a href="'+j.record+'">registry record</a>';}
-        else{ro.textContent=(j.error||'unavailable')+(j.fallback?' — '+j.fallback:''); rb.disabled=false;}
-      }catch(e){ro.textContent='offline — email the sidecar to the archive instead'; rb.disabled=false;}
+        else{ro.textContent=(j.error||'unavailable')+(j.fallback?' — '+j.fallback:''); rb.style.display='inline-block'; rb.disabled=false;}
+      }catch(e){ro.textContent='offline — email the sidecar to the archive instead'; rb.style.display='inline-block'; rb.disabled=false;}
     };
+    rb.onclick=doReg; doReg();
     go.textContent='Stamp it';go.disabled=false;
   }catch(e){
     err.textContent='Could not stamp this file: '+e.message;err.style.display='block';

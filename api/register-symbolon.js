@@ -75,6 +75,19 @@ module.exports = async (req, res) => {
       record: `https://www.alexanarch.org/${path}`,
     });
 
+  // --- ONE KERNEL, ONE POSITION: refuse a second position for a kernel the main registry already holds ---
+  try {
+    const ki = await fetch("https://www.alexanarch.org/api/kernel-index.json").then(r => r.json());
+    const hit = ki?.kernels?.[h0];
+    if (hit)
+      return res.status(200).json({
+        status: "already-positioned",
+        axn: hit.axn,
+        record: "https://www.alexanarch.org" + hit.record,
+        note: "This kernel already holds a position in the main registry (deposit #" + hit.deposit_number + "). One kernel, one position — no second address is allocated.",
+      });
+  } catch (e) { /* index unreachable: proceed; the pipeline-side guard is the second lock */ }
+
   // --- allocate a registry position from the shared ledger (compare-and-swap) ---
   const ledgerApi = "https://api.github.com/repos/leesharks000/alexanarch/contents/data/symbolon-registry/allocation.json";
   let hexPos = null;
