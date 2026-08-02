@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="canonical" href="https://www.alexanarch.org/mint/stamp/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Symbolon Stamp — AXN inscription | Alexanarch</title>
+<meta name="description" content="Upload a file, receive it back AXN-stamped on an added margin plus its Seed A sidecar — the symbolon pair. Implements AXN-SYMBOLON-SPEC v0.2 (deposit #1432). Everything runs in your browser; nothing leaves your device.">
+<!-- Implements AXN:05A9.OPERATIVE.🐚🌪️🕖🫵⏩○ · AXN-SYMBOLON-SPEC v0.2 · alexanarch #1432 -->
+<style>
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
+:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.7;font-size:15px}
+.wrap{max-width:720px;margin:0 auto;padding:50px 24px}
+a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}
+h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
+h2{font-size:1em;font-weight:500;color:var(--accent);margin:22px 0 8px;border-bottom:1px solid var(--border);padding-bottom:3px}
+p{margin-bottom:10px;color:#333}
+.nav{display:flex;gap:14px;margin-bottom:22px;font-size:.85em}.nav a{color:var(--dim);font-weight:500}
+button{background:var(--teal);color:#fff;border:none;border-radius:5px;padding:9px 18px;font-size:.9em;font-family:var(--sans);cursor:pointer;font-weight:500}
+button:hover{background:#086354}button:disabled{background:#aaa;cursor:default}
+.drop{border:2px dashed var(--border);border-radius:8px;padding:26px;text-align:center;color:var(--dim);font-size:.9em;margin:10px 0;background:var(--surface);cursor:pointer}
+.drop.hot{border-color:var(--teal);color:var(--teal)}
+.out{background:var(--surface);border-left:4px solid var(--teal);border-radius:6px;padding:16px;margin:12px 0;font-family:var(--mono);word-break:break-all;display:none}
+.out .glyph{font-size:1.6em;letter-spacing:.15em;margin:6px 0}
+.out .k{color:var(--dim);font-size:.72em;text-transform:uppercase;letter-spacing:.05em;margin-top:10px}
+.out .v{font-size:.83em;color:#333}
+.dl{display:inline-block;margin:8px 10px 0 0;background:var(--accent);color:#fff;border-radius:5px;padding:9px 16px;font-size:.88em;font-family:var(--sans)}
+.dl:hover{background:#12294a;color:#fff}
+.note{font-size:.82em;color:var(--dim);margin:14px 0;border-top:1px dashed var(--border);padding-top:12px}
+.footer{margin-top:36px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}
+.err{color:var(--accent2);font-size:.85em;display:none;margin:8px 0}
+</style>
+</head>
+<body><div class="wrap">
+<nav class="nav"><a href="/">Alexanarch</a> <a href="/mint/">Mint &amp; Verify</a> <a href="/identifiers/">Identifiers</a> <a href="/deposit/">Deposit</a></nav>
+
+<h1>Symbolon Stamp</h1>
+<p>Upload a file and receive back the <strong>symbolon pair</strong>: your file stamped with its AXN identity kernel on an <em>added margin</em> — the original is never overprinted — and the <strong>Seed A sidecar</strong> (<span style="font-family:var(--mono)">.axn.json</span>) that makes the stamp verifiable. Everything runs in your browser via WebCrypto; <strong>nothing leaves your device</strong>.</p>
+<p style="font-size:.85em;color:var(--dim)">Implements <a href="/s/records/1432/">AXN-SYMBOLON-SPEC v0.2</a> (AXN:05A9.OPERATIVE.🐚🌪️🕖🫵⏩○): the identifier splits into two halves — the kernel inscribed in the artifact, the verification data in the sidecar — because a hash cannot contain itself. Their meeting proves the work.</p>
+
+<h2>1 · Your file</h2>
+<div class="drop" id="drop">Drop a file here, or click to choose<br><span style="font-size:.8em">images (PNG/JPEG) · PDF · text/markdown</span><input type="file" id="file" style="display:none" accept=".png,.jpg,.jpeg,.pdf,.txt,.md,image/png,image/jpeg,application/pdf,text/plain,text/markdown"></div>
+<div class="err" id="err"></div>
+
+<h2>2 · Stamp</h2>
+<button id="go" disabled>Stamp it</button>
+
+<div class="out" id="out">
+  <div class="k">AXN₀ — identity kernel of your original (the sealed core)</div>
+  <div class="glyph" id="g0"></div>
+  <div class="v" id="h0"></div>
+  <div class="k">AXN₁ — kernel of the stamped file as it will circulate</div>
+  <div class="glyph" id="g1"></div>
+  <div class="v" id="h1"></div>
+  <div class="k">Downloads — keep both together; they are two halves of one identity</div>
+  <div><a class="dl" id="dlStamped" download>stamped file</a><a class="dl" id="dlSeed" download>Seed A sidecar (.axn.json)</a></div>
+</div>
+
+<div class="note">
+<strong>What the stamp is.</strong> A footer strip appended <em>below</em> your content — added canvas for images, an added-margin line for PDFs, a comment block for text. It carries the six-glyph kernel and the SHA-256 prefix of your <em>original</em> bytes. <strong>What the sidecar is.</strong> The identity half: both kernels in full, the exact stamp geometry (so verification knows precisely where the stamp ends and your work begins), and the manifest. <strong>What to do with them.</strong> Circulate the stamped file freely; keep the sidecar with it, or send it to the archive. The stamp says what the work is; the sidecar proves it. Keeping your original file safe as well is ideal — it is the sealed core itself.
+<br><br><strong>Registration.</strong> This page computes and inscribes; it does not register. A kernel is true or false independently of any authority. To enter the public record, the pair flows through the <a href="/deposit/">deposit transport</a> — or simply send the sidecar to the archive and we will witness it.
+</div>
+
+<div class="footer">AXN schema v2 · glyph table and derivation identical to <span style="font-family:var(--mono)">scripts/axn_lib.py</span> · AXN-SYMBOLON-SPEC v0.2 · Alexanarch</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<script>
+const AXN_GLYPHS=["🌑","🌒","🌓","🌔","🌕","🌖","🌗","🌘","⭐","🌟","💫","☀️","🌙","🪐","🌍","🌊","🔥","💧","🌪️","⚡","❄️","🌋","🏔️","🌿","🍃","🌱","🌾","🪨","💎","🧊","🌈","☁️","🏛️","🏗️","🧱","🪜","🚪","🪟","🏠","🏰","⛩️","🕌","🗼","🌉","⚓","🛡️","🔔","🏺","🔧","🔩","⚙️","🔗","🪝","🧲","⚖️","🔬","🔭","🧪","🧫","🧬","💡","🔮","🪄","🗝️","📜","📖","📝","✏️","🖊️","📋","📌","📎","🔖","📚","🗂️","📦","🏷️","🪧","📐","📏","🧭","🗺️","🏴","🚩","⛳","🎯","🔍","👁️","🔎","🪞","🗡️","🛤️","⛵","🚀","🛸","🌀","⌛","⏰","🕐","🕑","🕒","🕓","🕔","🕕","🕖","🕗","🕘","🕙","🕚","🕛","⌛","🔄","🌸","🌺","🌻","🌹","🍀","🌲","🌳","🍁","🍂","🍄","🐚","🪸","🦋","🐝","🕊️","🦅","♠️","❤️","♦️","♣️","🎭","🎪","🎨","🎵","🎶","🎹","🎻","🎺","🥁","🎲","🃏","🀄","➕","➖","✖️","➗","♾️","∮","⊕","⊗","△","▽","◇","○","●","□","■","▲","🜁","🝊","☿","♃","♄","♅","♆","☉","☽","♈","♉","♊","♋","♌","♍","♎","👁‍🗨","🤲","👐","🙏","✊","🤝","👆","👇","👈","👉","🫵","🖐️","✋","🫶","🤙","👋","🚨","🔴","🟠","🟡","🟢","🔵","🟣","⚪","⚫","🟤","💜","💙","💚","💛","🧡","❤️","🔺","🔻","◀️","▶️","🔼","🔽","⏩","⏪","⏫","⏬","↗️","↘️","↙️","↖️","🔃","🔀","🌅","🌄","🌃","🌆","🌇","🏙️","🌌","🎆","🎇","✨","🌠","💥","🔆","🔅","⭕","❌","🏁","🎬","🔚","🔙","🔛","🔝","🔜","⏹️","⏏️","🔒","🔓","🔐","🗿","🪦","♻️","∞"];
+async function sha256(buf){const d=await crypto.subtle.digest("SHA-256",buf);return Array.from(new Uint8Array(d)).map(b=>b.toString(16).padStart(2,"0")).join("");}
+function glyphs(h){const bs=[];for(let i=0;i<12;i+=2)bs.push(parseInt(h.slice(i,i+2),16));return bs.map(b=>AXN_GLYPHS[b]).join("");}
+
+let FILE=null;
+const drop=document.getElementById('drop'),fin=document.getElementById('file'),go=document.getElementById('go'),err=document.getElementById('err');
+drop.onclick=()=>fin.click();
+drop.ondragover=e=>{e.preventDefault();drop.classList.add('hot');};
+drop.ondragleave=()=>drop.classList.remove('hot');
+drop.ondrop=e=>{e.preventDefault();drop.classList.remove('hot');if(e.dataTransfer.files[0])pick(e.dataTransfer.files[0]);};
+fin.onchange=()=>{if(fin.files[0])pick(fin.files[0]);};
+function pick(f){FILE=f;drop.innerHTML=`<strong>${f.name}</strong><br><span style="font-size:.8em">${(f.size/1024).toFixed(1)} KB — ready</span>`;go.disabled=false;err.style.display='none';}
+
+function kind(f){
+  const n=f.name.toLowerCase(), t=(f.type||'');
+  if(t.includes('png')||n.endsWith('.png'))return 'png';
+  if(t.includes('jpeg')||t.includes('jpg')||n.endsWith('.jpg')||n.endsWith('.jpeg'))return 'jpeg';
+  if(t.includes('pdf')||n.endsWith('.pdf'))return 'pdf';
+  return 'text';
+}
+
+async function stampImage(buf,axn0g,axn0h,mime){
+  const blob=new Blob([buf],{type:mime});
+  const img=await createImageBitmap(blob);
+  const STRIP=Math.max(44,Math.round(img.height*0.045));
+  const c=document.createElement('canvas');c.width=img.width;c.height=img.height+STRIP;
+  const x=c.getContext('2d');
+  x.fillStyle='#ffffff';x.fillRect(0,0,c.width,c.height);
+  x.drawImage(img,0,0);
+  x.fillStyle='#1a1a1a';
+  const fs=Math.max(13,Math.round(STRIP*0.34));
+  x.font=fs+'px "IBM Plex Mono",monospace';
+  x.textBaseline='middle';
+  const line=`AXN kernel ${axn0g} · sha256:${axn0h.slice(0,16)}… · ${new Date().toISOString().slice(0,10)} · alexanarch.org`;
+  x.fillText(line,Math.round(STRIP*0.3),img.height+STRIP/2);
+  const out=await new Promise(r=>c.toBlob(b=>r(b),'image/png'));
+  return {bytes:new Uint8Array(await out.arrayBuffer()),
+          geometry:{format:'image/png',method:'appended_footer_strip',strip_px:STRIP,original_px:{w:img.width,h:img.height},
+                    strip_stamp:'crop to original_px then compare pixels; byte-identical strip NOT possible for raster (re-encode); AXN₀ verification requires Seed B = the original file',
+                    strip_reversible:false},
+          ext:'.stamped.png'};
+}
+
+async function stampPdf(buf,axn0g,axn0h){
+  const {PDFDocument,rgb,StandardFonts}=PDFLib;
+  const doc=await PDFDocument.load(buf,{ignoreEncryption:true});
+  const pages=doc.getPages(); const pg=pages[pages.length-1];
+  const {x:mx,y:my,width:mw}=pg.getMediaBox?pg.getMediaBox():{x:0,y:0,width:pg.getWidth()};
+  const STRIP=26;
+  pg.setMediaBox(mx,my-STRIP,mw,(pg.getHeight?pg.getHeight():pg.getSize().height)+STRIP);
+  const font=await doc.embedFont(StandardFonts.Courier);
+  const line=`AXN kernel [${axn0h.slice(0,12)}] sha256:${axn0h.slice(0,16)}... ${new Date().toISOString().slice(0,10)} alexanarch.org`;
+  pg.drawText(line,{x:mx+14,y:my-STRIP+9,size:8,font,color:rgb(.1,.1,.1)});
+  doc.setSubject(`AXN kernel ${axn0g} sha256:${axn0h}`);
+  const out=await doc.save();
+  return {bytes:out,
+          geometry:{format:'application/pdf',method:'last_page_mediabox_extended',strip_pt:STRIP,
+                    note:'glyph kernel carried in XMP/Subject metadata; visible line carries hash prefix (PDF text layer cannot render emoji reliably)',
+                    strip_stamp:'pdf rewrite is not byte-reversible; AXN₀ verification requires Seed B = the original file',
+                    strip_reversible:false},
+          ext:'.stamped.pdf'};
+}
+
+function stampText(buf,axn0g,axn0h){
+  const dec=new TextDecoder().decode(buf);
+  const stamp=`\n\n<!-- AXN-STAMP-BEGIN\nAXN-KERNEL: ${axn0g}\nSHA256: ${axn0h}\nDATE: ${new Date().toISOString().slice(0,10)}\nSPEC: AXN-SYMBOLON-SPEC v0.2 (alexanarch #1432)\nAXN-STAMP-END -->\n`;
+  const bytes=new TextEncoder().encode(dec+stamp);
+  return {bytes,
+          geometry:{format:'text',method:'suffix_comment_block',delimiters:['<!-- AXN-STAMP-BEGIN','AXN-STAMP-END -->'],
+                    stamp_bytes:new TextEncoder().encode(stamp).length,
+                    strip_stamp:'remove exactly stamp_bytes from the end (or delimiter block); byte-reversible',
+                    strip_reversible:true},
+          ext:'.stamped'+(FILE.name.match(/\.[^.]+$/)?.[0]||'.txt')};
+}
+
+go.onclick=async()=>{
+  try{
+    go.disabled=true;go.textContent='Stamping…';
+    const buf=new Uint8Array(await FILE.arrayBuffer());
+    const h0=await sha256(buf), g0=glyphs(h0), k=kind(FILE);
+    let res;
+    if(k==='png')res=await stampImage(buf,g0,h0,'image/png');
+    else if(k==='jpeg')res=await stampImage(buf,g0,h0,'image/jpeg');
+    else if(k==='pdf')res=await stampPdf(buf,g0,h0);
+    else res=stampText(buf,g0,h0);
+    const h1=await sha256(res.bytes), g1=glyphs(h1);
+    const base=FILE.name.replace(/\.[^.]+$/,'');
+    const seedA={
+      axn_spec:"AXN-SYMBOLON-SPEC v0.2",
+      spec_record:"https://www.alexanarch.org/s/records/1432/",
+      spec_axn:"AXN:05A9.OPERATIVE.🐚🌪️🕖🫵⏩○",
+      reconstruction_class:"content-addressed",
+      axn0:{glyphs:g0,sha256:h0,role:"identity kernel of the sealed core (the original, pre-stamp bytes)"},
+      axn1:{glyphs:g1,sha256:h1,role:"kernel of the stamped file as it circulates (tamper witness; not a name)"},
+      manifest:[{part:1,filename:FILE.name,sha256:h0,bytes:buf.length}],
+      stamp_geometry:res.geometry,
+      created:new Date().toISOString(),
+      generator:"https://www.alexanarch.org/mint/stamp/ (client-side; WebCrypto)",
+      registration:"kernel is authority-independent; registry witnessing via https://www.alexanarch.org/deposit/ or by sending this sidecar to the archive"
+    };
+    const sBlob=new Blob([JSON.stringify(seedA,null,1)],{type:'application/json'});
+    const fBlob=new Blob([res.bytes],{type:k==='pdf'?'application/pdf':(k==='text'?'text/plain':'image/png')});
+    const dS=document.getElementById('dlStamped'), dJ=document.getElementById('dlSeed');
+    dS.href=URL.createObjectURL(fBlob); dS.download=base+res.ext;
+    dJ.href=URL.createObjectURL(sBlob); dJ.download=base+'.axn.json';
+    document.getElementById('g0').textContent=g0;
+    document.getElementById('h0').textContent='sha256: '+h0;
+    document.getElementById('g1').textContent=g1;
+    document.getElementById('h1').textContent='sha256: '+h1;
+    document.getElementById('out').style.display='block';
+    go.textContent='Stamp it';go.disabled=false;
+  }catch(e){
+    err.textContent='Could not stamp this file: '+e.message;err.style.display='block';
+    go.textContent='Stamp it';go.disabled=false;
+  }
+};
+</script>
+</body></html>
