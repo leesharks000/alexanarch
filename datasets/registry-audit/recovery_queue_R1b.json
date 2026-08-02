@@ -1,5 +1,5 @@
 {
- "version": "1.0",
+ "version": "1.1",
  "date": "2026-08-01",
  "source_priority": [
   "in-repo staging",
@@ -56,6 +56,65 @@
    "serves": "—",
    "action": "restore frozen v2.0 dataset/manifest or reversion as v2.1 with successor relation",
    "likely_source": "github / staging"
+  }
+ },
+ "end_state_declaration": "The end state of this program is ACCURATE, RESTORED, COMPLETE records. Relabeling a record to its served version (R1a) is step one only. Step two: the claimed intermediary version's bytes are recovered and minted as their own version record, bound by predecessor/successor relations, so every version that existed has a record serving its actual bytes. Wrongness-notes are scaffolding. Genuinely unrecoverable versions receive a Lacuna Mark declaring the loss after a real hunt across all priority sources.",
+ "r1a_predecessor_recovery": {
+  "635": {
+   "claimed_intermediary": "v1.0",
+   "action": "hunt claimed version bytes across priority sources; mint as predecessor record on recovery; Lacuna Mark only after exhausted hunt"
+  },
+  "657": {
+   "claimed_intermediary": "v1.0",
+   "action": "hunt claimed version bytes across priority sources; mint as predecessor record on recovery; Lacuna Mark only after exhausted hunt"
+  },
+  "659": {
+   "claimed_intermediary": "v1.0",
+   "action": "hunt claimed version bytes across priority sources; mint as predecessor record on recovery; Lacuna Mark only after exhausted hunt"
+  },
+  "693": {
+   "claimed_intermediary": "v1.0",
+   "action": "hunt claimed version bytes across priority sources; mint as predecessor record on recovery; Lacuna Mark only after exhausted hunt"
+  },
+  "695": {
+   "claimed_intermediary": "v1.0",
+   "action": "hunt claimed version bytes across priority sources; mint as predecessor record on recovery; Lacuna Mark only after exhausted hunt"
+  },
+  "707": {
+   "claimed_intermediary": "v1.0",
+   "action": "hunt claimed version bytes across priority sources; mint as predecessor record on recovery; Lacuna Mark only after exhausted hunt"
+  },
+  "755": {
+   "claimed_intermediary": "v1.0(→v0.2 corrected; v0.1 predecessor)",
+   "action": "hunt claimed version bytes across priority sources; mint as predecessor record on recovery; Lacuna Mark only after exhausted hunt"
+  },
+  "817": {
+   "claimed_intermediary": "v1.0",
+   "action": "hunt claimed version bytes across priority sources; mint as predecessor record on recovery; Lacuna Mark only after exhausted hunt"
+  },
+  "825": {
+   "claimed_intermediary": "v6.0 predecessor + capture-count states",
+   "action": "hunt claimed version bytes across priority sources; mint as predecessor record on recovery; Lacuna Mark only after exhausted hunt"
+  },
+  "842": {
+   "claimed_intermediary": "v1.0+v1.1",
+   "action": "hunt claimed version bytes across priority sources; mint as predecessor record on recovery; Lacuna Mark only after exhausted hunt"
+  },
+  "864": {
+   "claimed_intermediary": "v4",
+   "action": "hunt claimed version bytes across priority sources; mint as predecessor record on recovery; Lacuna Mark only after exhausted hunt"
+  },
+  "900": {
+   "claimed_intermediary": "v1.0",
+   "action": "hunt claimed version bytes across priority sources; mint as predecessor record on recovery; Lacuna Mark only after exhausted hunt"
+  },
+  "903": {
+   "claimed_intermediary": "v1.0 + chain intermediates",
+   "action": "hunt claimed version bytes across priority sources; mint as predecessor record on recovery; Lacuna Mark only after exhausted hunt"
+  },
+  "958": {
+   "claimed_intermediary": "v1.0–v1.2",
+   "action": "hunt claimed version bytes across priority sources; mint as predecessor record on recovery; Lacuna Mark only after exhausted hunt"
   }
  }
 }
