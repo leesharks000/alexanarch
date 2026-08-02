@@ -77,6 +77,8 @@ button:hover{background:#086354}button:disabled{background:#aaa;cursor:default}
 <h2 style="margin-top:34px">Verify</h2>
 <p style="font-size:.9em">Drop any file — an original or a stamped copy — and it is looked up in the <a href="/data/axn-central-registry.json">central AXN registry</a> by its kernel.</p>
 <div class="drop" id="vdrop" style="padding:16px">Drop a file to verify<input type="file" id="vfile" style="display:none"></div>
+<p style="font-size:.85em;color:var(--dim);margin:10px 0 4px">or paste an AXN or its sha256 kernel to look it up:</p>
+<div class="row"><div style="flex:3"><input type="text" id="axnq" placeholder="AXN:05AD.UNCLASSIFIED.🌾➕🥁⚫👋🪄  or  sha256:1a908cc8…"></div><div style="flex:0 0 auto"><button id="axnlook">Look up</button></div></div>
 <div class="out" id="vout"></div>
 <script>
 (function(){
@@ -96,6 +98,25 @@ async function check(f){
 }
 vd.ondrop=e=>{e.preventDefault();vd.classList.remove('hot');if(e.dataTransfer.files[0])check(e.dataTransfer.files[0]);};
 vf.onchange=()=>{if(vf.files[0])check(vf.files[0]);};
+const aq=document.getElementById('axnq'),al=document.getElementById('axnlook');
+al.onclick=async()=>{
+  const q=(aq.value||'').trim();if(!q){return;}
+  vo.style.display='block';vo.innerHTML='looking up…';
+  const reg=await fetch('/data/axn-central-registry.json').then(r=>r.json()).catch(()=>null);
+  if(!reg){vo.innerHTML='<div class="v">registry unreachable</div>';return;}
+  let hit=null, by='';
+  const shaMatch=q.match(/[0-9a-f]{64}/i)||q.match(/sha256:\s*([0-9a-f]{6,64})/i);
+  if(shaMatch){const s=(shaMatch[1]||shaMatch[0]).toLowerCase();
+    for(const k in reg.kernels){if(k.startsWith(s)){hit=reg.kernels[k];by='kernel';break;}}}
+  if(!hit){ // by full AXN or hex position
+    const hexM=q.match(/AXN:([0-9A-F]{2,4})\./i)||q.match(/^([0-9A-F]{2,4})$/i);
+    if(hexM){const hx=hexM[1].toUpperCase();if(reg.positions&&reg.positions[hx]){hit=reg.positions[hx];by='position';}}
+    if(!hit){for(const hx in (reg.positions||{})){if((reg.positions[hx].axn||'')===q){hit=reg.positions[hx];by='axn';break;}}}
+  }
+  if(hit){vo.innerHTML='<div class="verdict" style="color:var(--teal)">FOUND ('+by+')</div><div class="v"><strong>'+(hit.axn||'')+'</strong> · '+(hit.source||'')+' · '+(hit.status||'')+'</div>'+(hit.record?'<div class="v"><a href="'+hit.record+'">record</a></div>':'')+(hit.entry?'<div class="v"><a href="'+hit.entry+'">witness entry</a></div>':'')+(hit.retrieval?'<div class="v"><a href="'+hit.retrieval+'">stored file</a></div>':'');}
+  else{vo.innerHTML='<div class="verdict" style="color:var(--accent2)">NOT FOUND</div><div class="v">No position or kernel matches that AXN in the central registry.</div>';}
+};
+aq.onkeydown=e=>{if(e.key==='Enter')al.click();};
 })();
 </script>
 <div class="footer">AXN schema v2 · glyph table and derivation identical to <span style="font-family:var(--mono)">scripts/axn_lib.py</span> · AXN-SYMBOLON-SPEC v0.2 · Alexanarch</div>
@@ -149,23 +170,24 @@ async function stampImage(buf,axn0g,axn0h,mime){
 async function stampPdf(buf,axn0g,axn0h){
   const {PDFDocument,rgb,StandardFonts}=PDFLib;
   const doc=await PDFDocument.load(buf,{ignoreEncryption:true});
-  const pages=doc.getPages(); const pg=pages[pages.length-1];
-  const {x:mx,y:my,width:mw}=pg.getMediaBox?pg.getMediaBox():{x:0,y:0,width:pg.getWidth()};
-  const STRIP=26;
-  const ph=(pg.getHeight?pg.getHeight():pg.getSize().height);
-  pg.setMediaBox(mx,my-STRIP,mw,ph+STRIP);
-  if(pg.setCropBox)pg.setCropBox(mx,my-STRIP,mw,ph+STRIP);   // viewers display the CropBox — extend it too (found by depositor E's merged-photo PDF)
-  if(pg.setBleedBox)pg.setBleedBox(mx,my-STRIP,mw,ph+STRIP);
-  if(pg.setTrimBox)pg.setTrimBox(mx,my-STRIP,mw,ph+STRIP);
   const font=await doc.embedFont(StandardFonts.Courier);
   const line=`AXN kernel [${axn0h.slice(0,12)}] sha256:${axn0h.slice(0,16)}... ${new Date().toISOString().slice(0,10)} alexanarch.org`;
-  pg.drawText(line,{x:mx+14,y:my-STRIP+9,size:8,font,color:rgb(.1,.1,.1)});
+  // Draw an opaque white band + stamp INSIDE the existing page area at the bottom of the LAST page.
+  // Drawing within the original media box means no viewer box-clipping can hide it — robust across
+  // iOS Preview, Chrome, Acrobat. (Added-margin approach was clipped by per-page CropBoxes in merged
+  // photo PDFs — found by depositor E, papers 198.)
+  const pg=doc.getPages()[doc.getPageCount()-1];
+  const pw=pg.getWidth(), BAND=22;
+  pg.drawRectangle({x:0,y:0,width:pw,height:BAND,color:rgb(1,1,1)});
+  pg.drawLine({start:{x:0,y:BAND},end:{x:pw,y:BAND},thickness:0.5,color:rgb(.8,.8,.8)});
+  pg.drawText(line,{x:12,y:7,size:7.5,font,color:rgb(.1,.1,.1)});
   doc.setSubject(`AXN kernel ${axn0g} sha256:${axn0h}`);
+  doc.setKeywords([`AXN0:${axn0g}`,`sha256:${axn0h}`]);
   const out=await doc.save();
   return {bytes:out,
-          geometry:{format:'application/pdf',method:'last_page_mediabox_extended',strip_pt:STRIP,
-                    note:'glyph kernel carried in XMP/Subject metadata; visible line carries hash prefix (PDF text layer cannot render emoji reliably)',
-                    strip_stamp:'pdf rewrite is not byte-reversible; AXN₀ verification requires Seed B = the original file',
+          geometry:{format:'application/pdf',method:'last_page_bottom_band_inside_mediabox',band_pt:BAND,
+                    note:'opaque band drawn inside the existing last-page media box (viewer-clip-proof); glyph kernel also in XMP/Subject/Keywords metadata',
+                    strip_stamp:'pdf rewrite is not byte-reversible; AXN0 verification requires Seed B = the original file',
                     strip_reversible:false},
           ext:'.stamped.pdf'};
 }
@@ -226,7 +248,9 @@ go.onclick=async()=>{
         const r=await fetch('/api/register-symbolon',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(seedA)});
         const j=await r.json();
         if(r.ok){
-          ro.innerHTML='✓ '+j.status+(j.axn?' — <strong>'+j.axn+'</strong>':'')+' — <a href="'+j.record+'">registry record</a>'+(j.retrieval?' · <a href="'+j.retrieval+'">stored file</a>':'');
+          const axnStr=j.axn||'';
+          ro.innerHTML='✓ '+j.status+(axnStr?' — <strong id="axnval">'+axnStr+'</strong> <button id="copyaxn" style="padding:3px 9px;font-size:.75em">copy</button>':'')+' — <a href="'+j.record+'">registry record</a>'+(j.retrieval?' · <a href="'+j.retrieval+'">stored file</a>':'');
+          setTimeout(()=>{const cb=document.getElementById('copyaxn');if(cb)cb.onclick=()=>{navigator.clipboard.writeText(axnStr).then(()=>{cb.textContent='copied ✓';});};},50);
           // Step 2 — optional storage, only if requested and safely small; failure never undoes the witnessing above.
           if(document.getElementById('storeit').checked && !j.retrieval){
             const SAFE=2600000; // ~2.6MB raw → ~3.5MB b64, comfortably under the platform body limit
