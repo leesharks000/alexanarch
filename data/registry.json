@@ -334254,7 +334254,7 @@
       "entity_status": "provisional",
       "defines_concepts": [],
       "orcid": "0009-0000-1599-0703",
-      "version": "v1.0",
+      "version": "v6.1",
       "keywords": [
         "Crimson Hexagonal Archive"
       ],
@@ -334513,9 +334513,23 @@
           "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
           "was": "3 terms",
           "now": "1 terms"
+        },
+        {
+          "date": "2026-08-02",
+          "field": "body_status",
+          "reason": "R1c history recovery (AX-R1 Option B): claimed v6.1 dataset object seated byte-exact from godkinggoogle commit 29d1a6c (2026-06-14, the v6.1 registry state); displaced v7.2 body preserved at db7b9215d",
+          "was": "124845ch displaced v7.2 registry",
+          "now": "154812ch recovered v6.1 dataset"
+        },
+        {
+          "date": "2026-08-02",
+          "field": "version",
+          "reason": "R1c: aligned to titled claim",
+          "was": "v1.0",
+          "now": "v6.1"
         }
       ],
-      "date_modified": "2026-07-31"
+      "date_modified": "2026-08-02"
     },
     {
       "deposit_number": 1398,
