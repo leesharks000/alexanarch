@@ -1,5 +1,5 @@
 {
- "version": "1.0",
+ "version": "1.1",
  "generated": "2026-08-01",
  "authority": "MANUS ruling 2026-08-01 (CP-R3 extension): standardize across internal venues; New Human Press publishes the creative and scriptural works; Pergamon Press the academic.",
  "publishers": [
@@ -73,5 +73,5 @@
    "class": "archive-direct"
   }
  ],
- "registry_convention": "journal field carries the sanctioned abbreviation; OAI dc:source emits the canonical long form via this file; publisher is populated from the press mapping (Wave 6)."
+ "registry_convention": "journal field carries the FULL canonical journal name, with the approved abbreviation optionally appended in parentheses — e.g. 'Machine-Mediated Reception Studies (MMRS)' — per MANUS ruling 2026-08-01 (reversing the v1.0 abbreviation convention). OAI dc:source emits the field as stored. Records outside the audited range retain legacy strings until audited (repair-follows-audit)."
 }
