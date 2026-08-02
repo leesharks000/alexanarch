@@ -1,5 +1,5 @@
 {
- "version": "1.1",
+ "version": "1.2",
  "date": "2026-08-01",
  "source_priority": [
   "in-repo staging",
@@ -13,19 +13,22 @@
    "claims": "v1.5",
    "serves": "v1.3",
    "action": "recover v1.5 bytes or relabel to v1.3 preserving series",
-   "likely_source": "conversation threads / blog"
+   "likely_source": "conversation threads / blog",
+   "status": "RECOVERED — v1.5 seated from fae8af653"
   },
   "1013": {
    "claims": "historical version",
    "serves": "later version",
    "action": "recover exact historical bytes; relabel FORBIDDEN by ledger",
-   "likely_source": "conversation threads / blog / github"
+   "likely_source": "conversation threads / blog / github",
+   "status": "RECOVERED — v0.1 seated from 4c27d12c0"
   },
   "1024": {
    "claims": "historical version",
    "serves": "later version",
    "action": "recover exact historical bytes; relabel FORBIDDEN by ledger",
-   "likely_source": "conversation threads / blog / github"
+   "likely_source": "conversation threads / blog / github",
+   "status": "RECOVERED — v9 seated from 4c27d12c0"
   },
   "1237": {
    "claims": "v1.7",
@@ -114,7 +117,12 @@
   },
   "958": {
    "claimed_intermediary": "v1.0–v1.2",
-   "action": "hunt claimed version bytes across priority sources; mint as predecessor record on recovery; Lacuna Mark only after exhausted hunt"
+   "action": "hunt claimed version bytes across priority sources; mint as predecessor record on recovery; Lacuna Mark only after exhausted hunt",
+   "status": "v1.2 predecessor recovered in-history (4c27d12c0); v1.0/v1.1 likely inline in the versioned log — verify"
   }
+ },
+ "diagnostic_finding": "CAUSAL ORIGIN IDENTIFIED (2026-08-02): the 2026-07-20 address-resolver backfill (commit db7b9215d) systematically overwrote correctly-versioned staged bodies with whatever version the blog/mirror served at resolve time, including seating the SAME v1.3 Moltbook log into three distinct records (#901, #958, #1237). The displaced correct bytes remained in git history. IMPLICATION: every remaining WRONG_VERSION row whose staged text was touched by db7b9215d should be checked for in-history recovery FIRST — sweep before any external hunt.",
+ "body_quality_recoveries": {
+  "900": "richer v1.4 body (1689ch) restored over shrunken 465ch mirror artifact"
  }
 }

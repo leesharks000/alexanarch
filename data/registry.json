@@ -246679,9 +246679,16 @@
           "reason": "R1a repair: version claim corrected to the served body's actual version per audit ledger (WRONG_VERSION adjudication); prior claim preserved here as history",
           "was": "v1.0",
           "now": "v1.4"
+        },
+        {
+          "date": "2026-08-02",
+          "field": "body_status",
+          "reason": "R1c history recovery (AX-R1 Option B — unambiguous identifier claim): richer v1.4 body (1689ch) restored; 2026-07-20 mirror pass had shrunk it to 465ch",
+          "was": "465ch displaced body",
+          "now": "1689ch recovered body"
         }
       ],
-      "date_modified": "2026-08-01"
+      "date_modified": "2026-08-02"
     },
     {
       "axn": "AXN:0391.ARCHIVAL.🥁📦⏬🍂📦🕕",
@@ -246717,7 +246724,7 @@
         "World Wide Web",
         "Thread (computing)"
       ],
-      "version": "v1.0",
+      "version": "v1.5",
       "deposit_number": 901,
       "sovereign_id": "MM-CHA-NEW-0901",
       "minted_at": "2026-06-23T15:33:31Z",
@@ -246772,9 +246779,23 @@
           "reason": "Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)",
           "was": "Provenance log",
           "now": "Versioned provenance log"
+        },
+        {
+          "date": "2026-08-02",
+          "field": "body_status",
+          "reason": "R1c history recovery (AX-R1 Option B — unambiguous identifier claim): claimed v1.5 body restored; 2026-07-20 resolver had overwritten with the v1.3 log (displaced body preserved at db7b9215d)",
+          "was": "6577ch displaced body",
+          "now": "1866ch recovered body"
+        },
+        {
+          "date": "2026-08-02",
+          "field": "version",
+          "reason": "R1c: version field aligned to the record's own titled claim",
+          "was": "v1.0",
+          "now": "v1.5"
         }
       ],
-      "date_modified": "2026-08-01"
+      "date_modified": "2026-08-02"
     },
     {
       "axn": "AXN:0392.PHILOLOGICAL.⏏️🧭♋🔔💫✖️",
@@ -261849,7 +261870,7 @@
       "content_type": "Recovered work (full text seated)",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
-      "version": "v0.1-semi",
+      "version": "v0.1",
       "description": "Semi-restored deposit for dead DOI 10.5281/zenodo.20619488 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. The complete operating specification for the fifth Mandala iteration: a liturgical rite conducted entirely within an AI chat window, in which the conversation is the merkabah vehicle piloted through a knowledge graph of the canon (Day and Night + the Book of Revelation as the saved text and the swept text; the witness's own offering as the undecided). Contents: a ten-law Design Constitution with t",
       "keywords": [
         "orphan restoration",
@@ -261956,9 +261977,23 @@
           "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
           "was": "5 terms",
           "now": "4 terms"
+        },
+        {
+          "date": "2026-08-02",
+          "field": "body_status",
+          "reason": "R1c history recovery (AX-R1 Option B — unambiguous identifier claim): claimed v0.1 spec restored; resolver had seated a 230KB v3.0-era doc (preserved at db7b9215d)",
+          "was": "230229ch displaced body",
+          "now": "8834ch recovered body"
+        },
+        {
+          "date": "2026-08-02",
+          "field": "version",
+          "reason": "R1c: version field aligned to the record's own titled claim",
+          "was": "v0.1-semi",
+          "now": "v0.1"
         }
       ],
-      "date_modified": "2026-07-30"
+      "date_modified": "2026-08-02"
     },
     {
       "deposit_number": 1014,
@@ -263089,7 +263124,7 @@
       "content_type": "Recovered work (full text seated)",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
-      "version": "v0.1-semi",
+      "version": "v9",
       "description": "Semi-restored deposit for dead DOI 10.5281/zenodo.20675215 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. Provenance deposit v9: manual continuity capture. Session 2026-06-12/13. Records: Adversarial by Origin (doi 10.5281/zenodo.20673413), r.30 THE RUBY MOOT (doi 10.5281/zenodo.20673776), Mary Lee Sharks v. The Composition Layer petition (doi 10.5281/zenodo.20673781), Adversarial by Origin Addendum: First Confirmation Marker (doi 10.5281/zenodo.20674488), Generative Monoculture (doi 10.5281/zenodo.20",
       "keywords": [
         "orphan restoration",
@@ -263171,9 +263206,23 @@
           "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
           "was": "5 terms",
           "now": "4 terms"
+        },
+        {
+          "date": "2026-08-02",
+          "field": "body_status",
+          "reason": "R1c history recovery (AX-R1 Option B — unambiguous identifier claim): claimed v9 body restored; resolver had seated the v7 doc (preserved at db7b9215d)",
+          "was": "9993ch displaced body",
+          "now": "5944ch recovered body"
+        },
+        {
+          "date": "2026-08-02",
+          "field": "version",
+          "reason": "R1c: version field aligned to the record's own titled claim",
+          "was": "v0.1-semi",
+          "now": "v9"
         }
       ],
-      "date_modified": "2026-07-30"
+      "date_modified": "2026-08-02"
     },
     {
       "deposit_number": 1025,
