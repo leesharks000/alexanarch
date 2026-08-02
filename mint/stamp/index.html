@@ -109,7 +109,10 @@ vd.ondrop=e=>{e.preventDefault();vd.classList.remove('hot');if(e.dataTransfer.fi
 vf.onchange=()=>{if(vf.files[0])check(vf.files[0]);};
 const aq=document.getElementById('axnq'),al=document.getElementById('axnlook');
 al.onclick=async()=>{
-  const q=(aq.value||'').trim();if(!q){return;}
+  let q=(aq.value||'').trim();if(!q){return;}
+  // tolerate percent-encoded emoji pastes (iOS copy sometimes URL-encodes glyphs)
+  if(q.indexOf('%')>-1){try{const dec=decodeURIComponent(q);if(dec&&dec.length)q=dec;}catch(e){}}
+  aq.value=q;
   vo.style.display='block';vo.innerHTML='looking up…';
   const reg=await fetch('/data/axn-central-registry.json').then(r=>r.json()).catch(()=>null);
   if(!reg){vo.innerHTML='<div class="v">registry unreachable</div>';return;}
@@ -163,6 +166,7 @@ async function sha256(buf){const d=await crypto.subtle.digest("SHA-256",buf);ret
 function glyphs(h){const bs=[];for(let i=0;i<12;i+=2)bs.push(parseInt(h.slice(i,i+2),16));return bs.map(b=>AXN_GLYPHS[b]).join("");}
 
 function fallbackCopy(txt,ok){
+  try{ if(txt.indexOf('%')>-1) txt=decodeURIComponent(txt); }catch(e){}
   try{const ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.focus();ta.select();ta.setSelectionRange(0,txt.length);document.execCommand('copy');document.body.removeChild(ta);ok&&ok();}
   catch(e){/* last resort: the box has user-select:all so a long-press selects it */}
 }
@@ -309,8 +313,11 @@ go.onclick=async()=>{
           const box=document.getElementById('axnbox');
           if(box){
             const doCopy=()=>{
-              const txt=axnStr;
-              const ok=()=>{const c=document.getElementById('axncopied');if(c)c.style.display='block';};
+              // normalize to guarantee clean glyphs (never percent-encoded)
+              let txt=axnStr;
+              try{ if(txt.indexOf('%')>-1) txt=decodeURIComponent(txt); }catch(e){}
+              txt=txt.normalize('NFC');
+              const ok=()=>{const c=document.getElementById('axncopied');if(c){c.textContent='copied ✓';c.style.display='block';}};
               if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(ok).catch(()=>fallbackCopy(txt,ok));}
               else fallbackCopy(txt,ok);
             };
