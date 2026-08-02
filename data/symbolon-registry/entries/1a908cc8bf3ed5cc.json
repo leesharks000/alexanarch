@@ -1,0 +1,57 @@
+{
+ "axn": "AXN:05AD.UNCLASSIFIED.🌾➕🥁⚫👋🪄",
+ "position": "05AD",
+ "family": "UNCLASSIFIED",
+ "registered": "2026-08-02T21:05:11.534Z",
+ "status": "witnessed-verified",
+ "retrieval": "https://www.alexanarch.org/data/symbolon-registry/files/1a908cc8bf3ed5cc-____198-___________-2026.08.01.pdf",
+ "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9.",
+ "spec": "AXN-SYMBOLON-SPEC v0.2 · https://www.alexanarch.org/s/records/1432/",
+ "tuple": {
+  "axn0": {
+   "glyphs": "🌾➕🥁⚫👋🪄",
+   "sha256": "1a908cc8bf3ed5cc6adaf64181f8811e9e060840182c732df4b4629c9bdff357"
+  },
+  "axn1": {
+   "glyphs": "📐🌇🌆☽🔆♈",
+   "sha256": "4ee4e3a8eca9d949de69c25534414b1a7509b035532a91ad2871eaaa865bca6c"
+  }
+ },
+ "position_note": "The hex position is a registry address allocated from the shared AXN sequence (data/symbolon-registry/allocation.json). An address is not a verification.",
+ "seed_a": {
+  "axn_spec": "AXN-SYMBOLON-SPEC v0.2",
+  "spec_record": "https://www.alexanarch.org/s/records/1432/",
+  "spec_axn": "AXN:05A9.OPERATIVE.🐚🌪️🕖🫵⏩○",
+  "reconstruction_class": "content-addressed",
+  "axn0": {
+   "glyphs": "🌾➕🥁⚫👋🪄",
+   "sha256": "1a908cc8bf3ed5cc6adaf64181f8811e9e060840182c732df4b4629c9bdff357",
+   "role": "identity kernel of the sealed core (the original, pre-stamp bytes)"
+  },
+  "axn1": {
+   "glyphs": "📐🌇🌆☽🔆♈",
+   "sha256": "4ee4e3a8eca9d949de69c25534414b1a7509b035532a91ad2871eaaa865bca6c",
+   "role": "kernel of the stamped file as it circulates (tamper witness; not a name)"
+  },
+  "manifest": [
+   {
+    "part": 1,
+    "filename": "手書論文198-多層構造による復元回帰-2026.08.01.pdf",
+    "sha256": "1a908cc8bf3ed5cc6adaf64181f8811e9e060840182c732df4b4629c9bdff357",
+    "bytes": 2923273
+   }
+  ],
+  "stamp_geometry": {
+   "format": "application/pdf",
+   "method": "last_page_mediabox_extended",
+   "strip_pt": 26,
+   "note": "glyph kernel carried in XMP/Subject metadata; visible line carries hash prefix (PDF text layer cannot render emoji reliably)",
+   "strip_stamp": "pdf rewrite is not byte-reversible; AXN₀ verification requires Seed B = the original file",
+   "strip_reversible": false
+  },
+  "created": "2026-08-02T21:05:01.472Z",
+  "generator": "https://www.alexanarch.org/mint/stamp/ (client-side; WebCrypto)",
+  "family": "UNCLASSIFIED",
+  "registration": "kernel is authority-independent; registry witnessing via https://www.alexanarch.org/deposit/ or by sending this sidecar to the archive"
+ }
+}
