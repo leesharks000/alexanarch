@@ -56,6 +56,8 @@ button:hover{background:#086354}button:disabled{background:#aaa;cursor:default}
   <div class="v" id="h1"></div>
   <div class="k">Downloads — keep both together; they are two halves of one identity</div>
   <div><a class="dl" id="dlStamped" download>stamped file</a><a class="dl" id="dlSeed" download>Seed A sidecar (.axn.json)</a></div>
+  <div class="k">Registry (optional)</div>
+  <div style="margin-top:6px"><button id="reg">Register with the archive</button> <span id="regout" style="font-size:.82em;color:var(--dim)"></span></div>
 </div>
 
 <div class="note">
@@ -178,6 +180,17 @@ go.onclick=async()=>{
     document.getElementById('g1').textContent=g1;
     document.getElementById('h1').textContent='sha256: '+h1;
     document.getElementById('out').style.display='block';
+    const rb=document.getElementById('reg'), ro=document.getElementById('regout');
+    rb.disabled=false; ro.textContent='';
+    rb.onclick=async()=>{
+      rb.disabled=true; ro.textContent='witnessing…';
+      try{
+        const r=await fetch('/api/register-symbolon',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(seedA)});
+        const j=await r.json();
+        if(r.ok){ro.innerHTML='✓ '+j.status+' — <a href="'+j.record+'">registry record</a>';}
+        else{ro.textContent=(j.error||'unavailable')+(j.fallback?' — '+j.fallback:''); rb.disabled=false;}
+      }catch(e){ro.textContent='offline — email the sidecar to the archive instead'; rb.disabled=false;}
+    };
     go.textContent='Stamp it';go.disabled=false;
   }catch(e){
     err.textContent='Could not stamp this file: '+e.message;err.style.display='block';
