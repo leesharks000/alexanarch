@@ -1,5 +1,5 @@
 {
- "version": "1.2",
+ "version": "1.3",
  "date": "2026-08-01",
  "source_priority": [
   "in-repo staging",
@@ -59,6 +59,18 @@
    "serves": "—",
    "action": "restore frozen v2.0 dataset/manifest or reversion as v2.1 with successor relation",
    "likely_source": "github / staging"
+  },
+  "1242": {
+   "claims": "v1 (Encrypted Session Deposit)",
+   "serves": "v7 chain doc (resolver collision, preserved as audit trace per ledger)",
+   "action": "hunt v1 encrypted-session object in past conversation threads / any Zenodo sidecar; if unavailable → explicit missing-primary-object state per ledger (encrypted blob likely lost with Zenodo termination)",
+   "likely_source": "conversation threads; low recovery odds"
+  },
+  "1243": {
+   "claims": "v2 (First Glyphic Deposit)",
+   "serves": "v7 chain doc (resolver collision, preserved as audit trace per ledger)",
+   "action": "hunt v2 glyphic-deposit object in past conversation threads (chain tethers were composed in-thread); if unavailable → explicit missing-primary-object state",
+   "likely_source": "conversation threads; moderate odds"
   }
  },
  "end_state_declaration": "The end state of this program is ACCURATE, RESTORED, COMPLETE records. Relabeling a record to its served version (R1a) is step one only. Step two: the claimed intermediary version's bytes are recovered and minted as their own version record, bound by predecessor/successor relations, so every version that existed has a record serving its actual bytes. Wrongness-notes are scaffolding. Genuinely unrecoverable versions receive a Lacuna Mark declaring the loss after a real hunt across all priority sources.",
