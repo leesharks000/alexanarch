@@ -71,12 +71,42 @@ module.exports = async (req, res) => {
 
   // dedupe: already witnessed?
   const existing = await fetch(api, { headers: gh });
-  if (existing.status === 200)
+  if (existing.status === 200) {
+    const ej = await existing.json();
+    const ent = JSON.parse(Buffer.from(ej.content, "base64").toString("utf8"));
+    // ONE KERNEL, ONE POSITION — but a witnessed entry may still receive its sealed core:
+    // storing against an existing entry hash-verifies the bytes and upgrades the record.
+    if (store && !ent.retrieval) {
+      const crypto = require("crypto");
+      const bytes = Buffer.from(store.content_b64, "base64");
+      const sha = crypto.createHash("sha256").update(bytes).digest("hex");
+      if (sha !== h0)
+        return res.status(422).json({ error: "stored bytes do not hash to axn0.sha256 — refusing to store a file that is not the sealed core" });
+      const safe = String(store.filename || "file").replace(/[^A-Za-z0-9._-]/g, "_").slice(0, 80);
+      const fpath = `data/symbolon-registry/files/${key}-${safe}`;
+      const fr = await fetch(`https://api.github.com/repos/leesharks000/alexanarch/contents/${fpath}`, {
+        method: "PUT", headers: { ...gh, "Content-Type": "application/json" },
+        body: JSON.stringify({ message: `SYMBOLON STORE (upgrade) ${ent.position} · ${key} — sealed core attached to existing entry, hash-verified`, content: store.content_b64 }),
+      });
+      if (fr.ok) {
+        ent.retrieval = `https://www.alexanarch.org/${fpath}`;
+        ent.status = "witnessed-verified";
+        ent.verified_at = new Date().toISOString();
+        await fetch(api, {
+          method: "PUT", headers: { ...gh, "Content-Type": "application/json" },
+          body: JSON.stringify({ message: `SYMBOLON UPGRADE ${ent.axn || ent.position} → witnessed-verified (sealed core stored)`,
+            content: Buffer.from(JSON.stringify(ent, null, 1)).toString("base64"), sha: ej.sha }),
+        });
+        return res.status(200).json({ status: "upgraded to witnessed-verified — sealed core stored against the existing entry",
+          axn: ent.axn, retrieval: ent.retrieval, record: `https://www.alexanarch.org/${path}` });
+      }
+    }
     return res.status(200).json({
-      status: "already-witnessed",
-      axn0: g0,
+      status: "already-witnessed" + (ent.retrieval ? " (sealed core already stored)" : ""),
+      axn: ent.axn, retrieval: ent.retrieval || null,
       record: `https://www.alexanarch.org/${path}`,
     });
+  }
 
   // --- ONE KERNEL, ONE POSITION: refuse a second position for a kernel the main registry already holds ---
   try {
