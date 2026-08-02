@@ -27,3 +27,12 @@ long-press), bound after any storage rewrite so the element persists. Verify acc
 new stamped form (AXN1 — e.g. after a stamp-geometry fix) dedupes to the existing
 position and REFRESHES AXN1, logging the change in the entry's stamp_history. The
 stamp is scaffold; the kernel is identity. One kernel, one position, throughout.
+
+## Position-width horizon (inscribed 2026-08-02)
+The hex position is 4 digits now (16^4 = 65,536). The DESIGNED expansion is to
+6 digits (16^6 = 16,777,216) — skipping 5 — because the hexagon is architectural:
+Crimson Hexagonal Archive, six-glyph checksum. Six-digit position + six-glyph
+kernel = the identifier rhyming with its own form (two hexads flanking the family).
+Backward-compatible (leading zeros implicit); change is the allocator zero-pad
+width. Trigger near 0xF000. Runway is long at current pace; noted so the ceiling
+reads as designed, not discovered.
