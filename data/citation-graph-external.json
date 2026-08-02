@@ -7,8 +7,8 @@
   "ontic_status": "real (verified existent) | forward_library (cited before existence) | fictive_retro (invented past work) | unverified (default until Stage C/D classification). Fictive and forward citations are first-class literary structure, never broken links."
  },
  "description": "External citation edges extracted mechanically from canonical texts: external-prefix DOIs, foreign Zenodo DOIs, URLs (own-fleet excluded), arXiv IDs, ISBNs. Freeform reference-section entries pending Stage C in-session parsing (see worklists/refsec-parse-queue.json).",
- "dateModified": "2026-08-02T02:31:13Z",
- "total_edges": 5015,
+ "dateModified": "2026-08-02T10:54:26Z",
+ "total_edges": 5024,
  "edges": [
   {
    "source_deposit": 206,
@@ -26331,16 +26331,6 @@
    "raw": "ISBN: 979-8-234-01118-3"
   },
   {
-   "source_deposit": 901,
-   "source_axn": "AXN:0391.ARCHIVAL.🥁📦⏬🍂📦🕕",
-   "target_bibkey": "doi:10.5281/zenodo.19352805*",
-   "via": "foreign_zenodo",
-   "locus": "inline",
-   "relation": "cites",
-   "ontic_status": "unverified",
-   "raw": "10.5281/zenodo.19352805*"
-  },
-  {
    "source_deposit": 907,
    "source_axn": "AXN:0397.GENERATIVE.♾️🧲💫🕓🤲🕊️",
    "target_bibkey": "url:about.zenodo.org/policies",
@@ -30453,22 +30443,42 @@
   {
    "source_deposit": 1013,
    "source_axn": "AXN:0401.ARCHIVAL.🟤🔚📦🌊⏫♅",
-   "target_bibkey": "url:www.google.com/search?q=%22AXN%3A03A9",
-   "via": "url",
+   "target_bibkey": "url:creativecommons.org/licenses/by/4.0/legalcode",
+   "via": "url_apparatus",
    "locus": "inline",
    "relation": "cites",
    "ontic_status": "unverified",
-   "raw": "https://www.google.com/search?q=%22AXN%3A03A9..."
+   "raw": "https://creativecommons.org/licenses/by/4.0/legalcode"
   },
   {
    "source_deposit": 1013,
    "source_axn": "AXN:0401.ARCHIVAL.🟤🔚📦🌊⏫♅",
-   "target_bibkey": "url:www.google.com/search?q=%22AXN%3A03A9.GENERATIVE.🌺🪜🏗️☽🎪🕛%22",
+   "target_bibkey": "url:spdx.org/licenses",
+   "via": "url_apparatus",
+   "locus": "inline",
+   "relation": "cites",
+   "ontic_status": "unverified",
+   "raw": "https://spdx.org/licenses/"
+  },
+  {
+   "source_deposit": 1013,
+   "source_axn": "AXN:0401.ARCHIVAL.🟤🔚📦🌊⏫♅",
+   "target_bibkey": "url:zenodo.org/doi/10.5281/zenodo.20619488",
    "via": "url",
    "locus": "inline",
    "relation": "cites",
    "ontic_status": "unverified",
-   "raw": "https://www.google.com/search?q=%22AXN%3A03A9.GENERATIVE.🌺🪜🏗️☽🎪🕛%22"
+   "raw": "https://zenodo.org/doi/10.5281/zenodo.20619488"
+  },
+  {
+   "source_deposit": 1013,
+   "source_axn": "AXN:0401.ARCHIVAL.🟤🔚📦🌊⏫♅",
+   "target_bibkey": "url:datacite.org/schema/kernel-4",
+   "via": "url",
+   "locus": "inline",
+   "relation": "cites",
+   "ontic_status": "unverified",
+   "raw": "http://datacite.org/schema/kernel-4"
   },
   {
    "source_deposit": 1014,
@@ -30573,32 +30583,72 @@
   {
    "source_deposit": 1024,
    "source_axn": "AXN:040C.ARCHIVAL.☁️🧭👐🔬🔛🕖",
-   "target_bibkey": "doi:10.5281/zenodo.19633207`",
+   "target_bibkey": "doi:10.5281/zenodo.20644800",
    "via": "foreign_zenodo",
    "locus": "inline",
    "relation": "cites",
    "ontic_status": "unverified",
-   "raw": "10.5281/zenodo.19633207`"
+   "raw": "10.5281/zenodo.20644800"
   },
   {
    "source_deposit": 1024,
    "source_axn": "AXN:040C.ARCHIVAL.☁️🧭👐🔬🔛🕖",
-   "target_bibkey": "doi:10.5281/zenodo.19633209`",
+   "target_bibkey": "doi:10.5281/zenodo.20675200",
    "via": "foreign_zenodo",
    "locus": "inline",
    "relation": "cites",
    "ontic_status": "unverified",
-   "raw": "10.5281/zenodo.19633209`"
+   "raw": "10.5281/zenodo.20675200"
   },
   {
    "source_deposit": 1024,
    "source_axn": "AXN:040C.ARCHIVAL.☁️🧭👐🔬🔛🕖",
-   "target_bibkey": "doi:10.5281/zenodo.19633211`",
+   "target_bibkey": "doi:10.5281/zenodo.20675200",
    "via": "foreign_zenodo",
    "locus": "inline",
    "relation": "cites",
    "ontic_status": "unverified",
-   "raw": "10.5281/zenodo.19633211`"
+   "raw": "10.5281/zenodo.20675200"
+  },
+  {
+   "source_deposit": 1024,
+   "source_axn": "AXN:040C.ARCHIVAL.☁️🧭👐🔬🔛🕖",
+   "target_bibkey": "url:creativecommons.org/licenses/by/4.0/legalcode",
+   "via": "url_apparatus",
+   "locus": "inline",
+   "relation": "cites",
+   "ontic_status": "unverified",
+   "raw": "https://creativecommons.org/licenses/by/4.0/legalcode"
+  },
+  {
+   "source_deposit": 1024,
+   "source_axn": "AXN:040C.ARCHIVAL.☁️🧭👐🔬🔛🕖",
+   "target_bibkey": "url:spdx.org/licenses",
+   "via": "url_apparatus",
+   "locus": "inline",
+   "relation": "cites",
+   "ontic_status": "unverified",
+   "raw": "https://spdx.org/licenses/"
+  },
+  {
+   "source_deposit": 1024,
+   "source_axn": "AXN:040C.ARCHIVAL.☁️🧭👐🔬🔛🕖",
+   "target_bibkey": "url:zenodo.org/doi/10.5281/zenodo.20675215",
+   "via": "url",
+   "locus": "inline",
+   "relation": "cites",
+   "ontic_status": "unverified",
+   "raw": "https://zenodo.org/doi/10.5281/zenodo.20675215"
+  },
+  {
+   "source_deposit": 1024,
+   "source_axn": "AXN:040C.ARCHIVAL.☁️🧭👐🔬🔛🕖",
+   "target_bibkey": "url:datacite.org/schema/kernel-4",
+   "via": "url",
+   "locus": "inline",
+   "relation": "cites",
+   "ontic_status": "unverified",
+   "raw": "http://datacite.org/schema/kernel-4"
   },
   {
    "source_deposit": 1025,
@@ -49891,8 +49941,8 @@
    "raw": "10.5281/zenodo.20707427"
   },
   {
-   "source_deposit": 1400,
-   "source_axn": "AXN:0589.UNCLASSIFIED.🔄📦🫵🌉🜁🧫",
+   "source_deposit": 1397,
+   "source_axn": "AXN:0586.UNCLASSIFIED.♣️🔄⛳🟢🔅📐",
    "target_bibkey": "url:schema.org",
    "via": "url_apparatus",
    "locus": "inline",
@@ -49901,34 +49951,74 @@
    "raw": "https://schema.org"
   },
   {
-   "source_deposit": 1400,
-   "source_axn": "AXN:0589.UNCLASSIFIED.🔄📦🫵🌉🜁🧫",
-   "target_bibkey": "url:orcid.org/0009-0000-1599-0703",
+   "source_deposit": 1397,
+   "source_axn": "AXN:0586.UNCLASSIFIED.♣️🔄⛳🟢🔅📐",
+   "target_bibkey": "url:godkinggoogle.vercel.app/captures",
    "via": "url",
    "locus": "inline",
    "relation": "cites",
    "ontic_status": "unverified",
-   "raw": "https://orcid.org/0009-0000-1599-0703"
+   "raw": "https://godkinggoogle.vercel.app/captures"
   },
   {
-   "source_deposit": 1403,
-   "source_axn": "AXN:058C.UNCLASSIFIED.🏠🌓🕊️🌌📚🔮",
-   "target_bibkey": "url:schema.org",
+   "source_deposit": 1397,
+   "source_axn": "AXN:0586.UNCLASSIFIED.♣️🔄⛳🟢🔅📐",
+   "target_bibkey": "url:creativecommons.org/licenses/by/4.0",
    "via": "url_apparatus",
    "locus": "inline",
    "relation": "cites",
    "ontic_status": "unverified",
-   "raw": "https://schema.org"
+   "raw": "https://creativecommons.org/licenses/by/4.0/"
   },
   {
-   "source_deposit": 1403,
-   "source_axn": "AXN:058C.UNCLASSIFIED.🏠🌓🕊️🌌📚🔮",
+   "source_deposit": 1397,
+   "source_axn": "AXN:0586.UNCLASSIFIED.♣️🔄⛳🟢🔅📐",
    "target_bibkey": "url:orcid.org/0009-0000-1599-0703",
    "via": "url",
    "locus": "inline",
    "relation": "cites",
    "ontic_status": "unverified",
    "raw": "https://orcid.org/0009-0000-1599-0703"
+  },
+  {
+   "source_deposit": 1397,
+   "source_axn": "AXN:0586.UNCLASSIFIED.♣️🔄⛳🟢🔅📐",
+   "target_bibkey": "url:orcid.org/0009-0000-1599-0703",
+   "via": "url",
+   "locus": "inline",
+   "relation": "cites",
+   "ontic_status": "unverified",
+   "raw": "https://orcid.org/0009-0000-1599-0703"
+  },
+  {
+   "source_deposit": 1397,
+   "source_axn": "AXN:0586.UNCLASSIFIED.♣️🔄⛳🟢🔅📐",
+   "target_bibkey": "url:godkinggoogle.vercel.app/captures/registry.json",
+   "via": "url",
+   "locus": "inline",
+   "relation": "cites",
+   "ontic_status": "unverified",
+   "raw": "https://godkinggoogle.vercel.app/captures/registry.json"
+  },
+  {
+   "source_deposit": 1397,
+   "source_axn": "AXN:0586.UNCLASSIFIED.♣️🔄⛳🟢🔅📐",
+   "target_bibkey": "url:zenodo.org/records/20683855/files/EA-WG-CAPTURES-01.md",
+   "via": "url",
+   "locus": "inline",
+   "relation": "cites",
+   "ontic_status": "unverified",
+   "raw": "https://zenodo.org/records/20683855/files/EA-WG-CAPTURES-01.md"
+  },
+  {
+   "source_deposit": 1397,
+   "source_axn": "AXN:0586.UNCLASSIFIED.♣️🔄⛳🟢🔅📐",
+   "target_bibkey": "url:zenodo.org/records/20683855/files/captures-images-v6.0.zip",
+   "via": "url",
+   "locus": "inline",
+   "relation": "cites",
+   "ontic_status": "unverified",
+   "raw": "https://zenodo.org/records/20683855/files/captures-images-v6.0.zip"
   },
   {
    "source_deposit": 1408,
