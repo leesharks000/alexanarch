@@ -101,8 +101,21 @@ module.exports = async (req, res) => {
           axn: ent.axn, retrieval: ent.retrieval, record: `https://www.alexanarch.org/${path}` });
       }
     }
+    // Stamp is scaffold: if the sealed core matches but the stamped form (AXN1) changed
+    // — e.g. re-stamped with improved geometry — refresh AXN1 and record the re-stamp.
+    let axn1_refreshed = false;
+    if (ent.tuple && ent.tuple.axn1 && ent.tuple.axn1.sha256 !== h1) {
+      ent.stamp_history = ent.stamp_history || [{ axn1: ent.tuple.axn1, until: new Date().toISOString() }];
+      ent.stamp_history.push({ axn1_replaced: ent.tuple.axn1.sha256, at: new Date().toISOString() });
+      ent.tuple.axn1 = { glyphs: g1, sha256: h1 };
+      ent.note = (ent.note || "") + " [Stamp re-applied " + new Date().toISOString().slice(0,10) + "; AXN1 refreshed to the current stamped form. Sealed core (AXN0) unchanged.]";
+      await fetch(api, { method: "PUT", headers: { ...gh, "Content-Type": "application/json" },
+        body: JSON.stringify({ message: `SYMBOLON RE-STAMP ${ent.axn || ent.position} — AXN1 refreshed (sealed core unchanged)`,
+          content: Buffer.from(JSON.stringify(ent, null, 1)).toString("base64"), sha: ej.sha }) });
+      axn1_refreshed = true;
+    }
     return res.status(200).json({
-      status: "already-witnessed" + (ent.retrieval ? " (sealed core already stored)" : ""),
+      status: "already-witnessed" + (ent.retrieval ? " (sealed core already stored)" : "") + (axn1_refreshed ? " — stamp re-applied, AXN1 refreshed" : ""),
       axn: ent.axn, retrieval: ent.retrieval || null,
       record: `https://www.alexanarch.org/${path}`,
     });
