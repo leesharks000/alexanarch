@@ -1,6 +1,6 @@
 {
  "package": "registry-audit storage + OAI remediation workplan",
- "version": "3.1",
+ "version": "4.0",
  "date": "2026-08-01",
  "audit_snapshot_commit": "055429ac82edc967f09c4640ffd0b049cff78e6e",
  "canonical_state": {
@@ -195,5 +195,26 @@
    "sha256": "b9eb76152a35478c86592a84958ffcbc41a1ab2ac0f26be5fba435c036fa0bd6",
    "bytes": 13509
   }
+ ],
+ "canonical_ledger": "alexanarch_audit_merged_ledger_through_0359-0378_v1.0.json",
+ "coverage": {
+  "records": 1068,
+  "range": [
+   359,
+   1426
+  ],
+  "percent": 74.89,
+  "remaining": [
+   1,
+   358
+  ],
+  "next_checkpoint": [
+   339,
+   358
+  ]
+ },
+ "pending_shards": [],
+ "notes": [
+  "2026-08-01: complete-thread handoff through 0359-0378 seated (7 checkpoints + v3.1 base, all hashes verified, 0 historical mismatches vs v1.1); method_core_v0.4.md seated (previously pending); dispositions v3.0 (1068); source packages under source_packages/."
  ]
 }
