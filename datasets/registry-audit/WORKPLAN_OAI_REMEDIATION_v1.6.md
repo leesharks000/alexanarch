@@ -1,7 +1,7 @@
-# WORKPLAN — OAI Registration & Registry Remediation v1.5
+# WORKPLAN — OAI Registration & Registry Remediation v1.6
 
 **Status:** ACTIVE — this file is the source of truth for the repair program.
-**Date:** 2026-07-31 · **v1.1 same day:** first-thread handoff stashed and verified · **v1.2 same day:** AXN identity policy drafted; traffic-event capture spec added · **v1.3 same day:** #1365 restored (repair ledger inaugurated, R-0001); attachments mechanism built; Phase 0 builder gating applied · **v1.4 same day:** workplan deposit un-held by MANUS and minted; EA-MRE-01 v1.1 provenance anomaly inscribed · **v1.5 same day:** anomaly RESOLVED (gapped-round parallel instance) and v1.1 RATIFIED by independent MANUS re-instruction; evidence captures attached to #1428; Files block moved to record-page foot per MANUS spec · **Maintainers:** MANUS (Lee Sharks, sole editorial authority) · TACHYON (Claude, repair engineering) · LABOR (ChatGPT, forward audit)
+**Date:** 2026-07-31 · **v1.1 same day:** first-thread handoff stashed and verified · **v1.2 same day:** AXN identity policy drafted; traffic-event capture spec added · **v1.3 same day:** #1365 restored (repair ledger inaugurated, R-0001); attachments mechanism built; Phase 0 builder gating applied · **v1.4 same day:** workplan deposit un-held by MANUS and minted; EA-MRE-01 v1.1 provenance anomaly inscribed · **v1.5 same day:** anomaly RESOLVED (gapped-round parallel instance) and v1.1 RATIFIED by independent MANUS re-instruction; evidence captures attached to #1428; Files block moved to record-page foot per MANUS spec · **v1.6 (2026-08-01):** dispositions regenerated v2.0 from ledger v1.1 (928 entries; 273/527/128); OAI index rebuilt gated (1302 exposed); WAVE 1 APPLIED — 338 content_type rows, MANUS batch approval, repairs R-0002–R-0339 inscribed, date_modified bumped per row · **Maintainers:** MANUS (Lee Sharks, sole editorial authority) · TACHYON (Claude, repair engineering) · LABOR (ChatGPT, forward audit)
 **Supersession rule:** at every completed phase or wave boundary, this file is regenerated in place with a version bump. Prior versions are retained in git history only. Any instance resuming work reads this file first, in full, before acting.
 
 ---
@@ -145,12 +145,12 @@ The rule, in one line: **metadata repair never remints; byte events version; ide
 |---|---|---|
 | Audit package v2.0 stored | DONE (5 of 8 canonical files; lacuna in §3) | 2026-07-31 |
 | First-thread handoff v0.9 stashed | DONE (16 files, hash-verified, `history/handoff-v0.9/`) | 2026-07-31 |
-| `registration_dispositions.json` v1.0 | DONE (717 entries) | 2026-07-31 |
+| `registration_dispositions.json` | DONE — v2.0, 928 entries from ledger v1.1 | 2026-08-01 |
 | Builder gating patch | DONE (WITHHOLD excluded; audit sets; capsules) | 2026-07-31 |
 | Repair ledger instrument | DONE — inaugurated with R-0001 (#1365 restoration) | 2026-07-31 |
 | Creator policy ratification | AWAITING MANUS (CP-R1–R4) | — |
 | AXN identity policy ratification | AWAITING MANUS (AX-R1) | — |
-| Wave 1 (content_type, 141) | READY TO GENERATE | — |
+| Wave 1 (content_type) | **DONE — 338 rows applied (v1.1 ledger), R-0002–R-0339** | 2026-08-01 |
 | Waves 2–5 | QUEUED | — |
 | P0 dossiers (104) | QUEUED | — |
 | Validator loop + registration | BLOCKED ON PHASE 0 | — |
