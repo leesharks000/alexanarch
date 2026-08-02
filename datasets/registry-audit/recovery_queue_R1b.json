@@ -1,5 +1,5 @@
 {
- "version": "1.4",
+ "version": "1.5",
  "date": "2026-08-01",
  "source_priority": [
   "in-repo staging",
@@ -47,13 +47,17 @@
    "claims": "v7.1",
    "serves": "v7.3",
    "action": "recover v7.1 bytes or mark historical version missing (Lacuna); v7.3 = successor head",
-   "likely_source": "conversation threads / github"
+   "likely_source": "conversation threads / github",
+   "status": "PROPOSED LACUNA — primary object unrecoverable; version note survives in v7.3",
+   "hunt_evidence": "HUNT EXHAUSTED 2026-08-02: repo history = semi-stubs only; Zenodo records 20690868/20693286/20693272/20693274 all 410 (among the 871 tombstoned); Wayback = no snapshots (5-day live window uncrawled); threads bd8b78c8/3f9a120d contain build scripts and version notes, not full bytes; blog carries only current v7.3. SURVIVING EVIDENCE: verbatim version-note ladder preserved inside the v7.3 body; build transformations documented in-thread."
   },
   "1403": {
    "claims": "v7.2",
    "serves": "v7.3",
    "action": "recover v7.2; resolve concept/version DOI semantics",
-   "likely_source": "conversation threads / github"
+   "likely_source": "conversation threads / github",
+   "status": "PROPOSED LACUNA — primary object unrecoverable; version note survives in v7.3",
+   "hunt_evidence": "HUNT EXHAUSTED 2026-08-02: repo history = semi-stubs only; Zenodo records 20690868/20693286/20693272/20693274 all 410 (among the 871 tombstoned); Wayback = no snapshots (5-day live window uncrawled); threads bd8b78c8/3f9a120d contain build scripts and version notes, not full bytes; blog carries only current v7.3. SURVIVING EVIDENCE: verbatim version-note ladder preserved inside the v7.3 body; build transformations documented in-thread."
   },
   "1417": {
    "claims": "v2.0",
@@ -137,5 +141,9 @@
  "diagnostic_finding": "CAUSAL ORIGIN IDENTIFIED (2026-08-02): the 2026-07-20 address-resolver backfill (commit db7b9215d) systematically overwrote correctly-versioned staged bodies with whatever version the blog/mirror served at resolve time, including seating the SAME v1.3 Moltbook log into three distinct records (#901, #958, #1237). The displaced correct bytes remained in git history. IMPLICATION: every remaining WRONG_VERSION row whose staged text was touched by db7b9215d should be checked for in-history recovery FIRST — sweep before any external hunt.",
  "body_quality_recoveries": {
   "900": "richer v1.4 body (1689ch) restored over shrunken 465ch mirror artifact"
+ },
+ "proposed_adjudications": {
+  "1400": "Lacuna Mark (EA-LACUNA-PROTOCOL-01) + successor relation to v7.3 carrying the preserved v7.1 note — AWAITING MANUS BATCH WORD",
+  "1403": "Lacuna Mark + successor relation to v7.3 carrying the preserved v7.2 note — AWAITING MANUS BATCH WORD"
  }
 }
