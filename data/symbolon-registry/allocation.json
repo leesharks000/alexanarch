@@ -1,0 +1,6 @@
+{
+ "next_hex": "05AA",
+ "note": "Shared AXN position ledger. Consumed by /api/register-symbolon via compare-and-swap and honored by scripts/mint_deposit.py next_hex_id(). A position is an address, not a verification: witnessed-unverified entries hold real positions pending byte verification.",
+ "initialized": "2026-08-02",
+ "sequence_authority": "max(registry hex, this ledger) — the two allocators share one space and can never collide"
+}

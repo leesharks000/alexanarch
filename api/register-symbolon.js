@@ -59,6 +59,8 @@ module.exports = async (req, res) => {
   if (glyphsFromHash(h1) !== g1)
     return res.status(422).json({ error: "axn1 glyphs do not derive from axn1.sha256 — sidecar internally inconsistent" });
 
+  const FAMILIES=["GOVERNANCE","UNCLASSIFIED","EMPIRICAL","ARCHIVAL","GENERATIVE","STRUCTURAL","OPERATIVE","PHILOLOGICAL"];
+  const family = FAMILIES.includes(seed.family) ? seed.family : "UNCLASSIFIED";
   const key = h0.slice(0, 16);
   const path = `data/symbolon-registry/entries/${key}.json`;
   const api = `https://api.github.com/repos/leesharks000/alexanarch/contents/${path}`;
@@ -73,28 +75,69 @@ module.exports = async (req, res) => {
       record: `https://www.alexanarch.org/${path}`,
     });
 
+  // --- allocate a registry position from the shared ledger (compare-and-swap) ---
+  const ledgerApi = "https://api.github.com/repos/leesharks000/alexanarch/contents/data/symbolon-registry/allocation.json";
+  let hexPos = null;
+  for (let attempt = 0; attempt < 4 && !hexPos; attempt++) {
+    const lr = await fetch(ledgerApi, { headers: gh });
+    if (!lr.ok) break;
+    const lj = await lr.json();
+    const ledger = JSON.parse(Buffer.from(lj.content, "base64").toString("utf8"));
+    const candidate = ledger.next_hex;
+    const bumped = { ...ledger, next_hex: (parseInt(candidate, 16) + 1).toString(16).toUpperCase().padStart(4, "0"), last_allocated: candidate, last_allocated_at: new Date().toISOString() };
+    const cas = await fetch(ledgerApi, {
+      method: "PUT",
+      headers: { ...gh, "Content-Type": "application/json" },
+      body: JSON.stringify({
+        message: `AXN ALLOCATE ${candidate} (symbolon witness)`,
+        content: Buffer.from(JSON.stringify(bumped, null, 1)).toString("base64"),
+        sha: lj.sha,
+      }),
+    });
+    if (cas.ok) hexPos = candidate;           // CAS won
+    else if (cas.status === 409) continue;    // lost race; re-read and retry
+    else break;
+  }
+  if (!hexPos)
+    return res.status(502).json({ error: "position allocation failed; kernel remains valid without a position — retry shortly or email the sidecar" });
+  const fullAxn = `AXN:${hexPos}.${family}.${g0}`;
+
   const entry = {
+    axn: fullAxn,
+    position: hexPos,
+    family,
     registered: new Date().toISOString(),
     status: "witnessed-unverified",
     note: "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9.",
     spec: "AXN-SYMBOLON-SPEC v0.2 · https://www.alexanarch.org/s/records/1432/",
     tuple: { axn0: { glyphs: g0, sha256: h0 }, axn1: { glyphs: g1, sha256: h1 } },
+    position_note: "The hex position is a registry address allocated from the shared AXN sequence (data/symbolon-registry/allocation.json). An address is not a verification.",
     seed_a: seed,
   };
   const put = await fetch(api, {
     method: "PUT",
     headers: { ...gh, "Content-Type": "application/json" },
     body: JSON.stringify({
-      message: `SYMBOLON WITNESS ${g0} · ${key} (witnessed-unverified via /api/register-symbolon)`,
+      message: `SYMBOLON WITNESS ${fullAxn} · ${key} (witnessed-unverified via /api/register-symbolon)`,
       content: Buffer.from(JSON.stringify(entry, null, 1)).toString("base64"),
     }),
   });
+  // position-keyed pointer for registry-style lookup
+  await fetch(`https://api.github.com/repos/leesharks000/alexanarch/contents/data/symbolon-registry/positions/${hexPos}.json`, {
+    method: "PUT",
+    headers: { ...gh, "Content-Type": "application/json" },
+    body: JSON.stringify({
+      message: `SYMBOLON POSITION ${hexPos} → ${key}`,
+      content: Buffer.from(JSON.stringify({ axn: fullAxn, entry: `entries/${key}.json` }, null, 1)).toString("base64"),
+    }),
+  }).catch(() => {});
   if (!put.ok) {
     const t = await put.text();
     return res.status(502).json({ error: "witness commit failed", detail: t.slice(0, 200) });
   }
   return res.status(201).json({
     status: "witnessed",
+    axn: fullAxn,
     axn0: g0,
     axn1: g1,
     record: `https://www.alexanarch.org/${path}`,

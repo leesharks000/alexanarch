@@ -476,6 +476,19 @@ def next_deposit_number(registry: dict) -> int:
     return max(existing) + 1
 
 
+def _symbolon_ledger_floor() -> int:
+    """Highest position consumed by the symbolon witness layer per the shared
+    allocation ledger (data/symbolon-registry/allocation.json): the ledger's
+    next_hex means positions below it are consumed. Returns -1 if absent, so
+    the ledger's presence is optional and its absence changes nothing."""
+    import json as _json, pathlib as _pl
+    p = _pl.Path(__file__).resolve().parent.parent / "data" / "symbolon-registry" / "allocation.json"
+    try:
+        return int(_json.loads(p.read_text())["next_hex"], 16) - 1
+    except Exception:
+        return -1
+
+
 def next_hex_id(deposit_number: int, registry: dict | None = None) -> str:
     """Compute the opaque hex label for the next deposit.
 
@@ -488,12 +501,13 @@ def next_hex_id(deposit_number: int, registry: dict | None = None) -> str:
     max(existing hex) + 1. The deposit_number+offset formula is retained
     only as a fallback for an empty registry.
     """
+    floor = _symbolon_ledger_floor()
     if registry:
         existing = [int(d["hex"], 16) for d in registry.get("deposits", [])
                     if d.get("hex")]
         if existing:
-            return f"{max(existing) + 1:04X}"
-    return f"{deposit_number + HEX_OFFSET:04X}"
+            return f"{max(max(existing), floor) + 1:04X}"
+    return f"{max(deposit_number + HEX_OFFSET - 1, floor) + 1:04X}"
 
 
 def family_for_content_type(content_type: str) -> str:

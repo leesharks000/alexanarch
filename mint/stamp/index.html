@@ -44,7 +44,13 @@ button:hover{background:#086354}button:disabled{background:#aaa;cursor:default}
 <div class="drop" id="drop">Drop a file here, or click to choose<br><span style="font-size:.8em">images (PNG/JPEG) · PDF · text/markdown</span><input type="file" id="file" style="display:none" accept=".png,.jpg,.jpeg,.pdf,.txt,.md,image/png,image/jpeg,application/pdf,text/plain,text/markdown"></div>
 <div class="err" id="err"></div>
 
-<h2>2 · Stamp</h2>
+<h2>2 · Semantic family (for registration)</h2>
+<select id="fam" style="font-family:var(--mono);font-size:.85em;border:1px solid var(--border);border-radius:5px;padding:8px;background:var(--surface);width:100%">
+<option>UNCLASSIFIED</option><option>ARCHIVAL</option><option>EMPIRICAL</option><option>GENERATIVE</option><option>GOVERNANCE</option><option>OPERATIVE</option><option>PHILOLOGICAL</option><option>STRUCTURAL</option>
+</select>
+<p style="font-size:.8em;color:var(--dim);margin-top:4px">The family joins the hex position and kernel to compose the full AXN at registration. The stamp itself carries the kernel — true independently of any registry.</p>
+
+<h2>3 · Stamp</h2>
 <button id="go" disabled>Stamp it</button>
 
 <div class="out" id="out">
@@ -168,6 +174,7 @@ go.onclick=async()=>{
       stamp_geometry:res.geometry,
       created:new Date().toISOString(),
       generator:"https://www.alexanarch.org/mint/stamp/ (client-side; WebCrypto)",
+      family:document.getElementById("fam").value,
       registration:"kernel is authority-independent; registry witnessing via https://www.alexanarch.org/deposit/ or by sending this sidecar to the archive"
     };
     const sBlob=new Blob([JSON.stringify(seedA,null,1)],{type:'application/json'});
@@ -187,7 +194,7 @@ go.onclick=async()=>{
       try{
         const r=await fetch('/api/register-symbolon',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(seedA)});
         const j=await r.json();
-        if(r.ok){ro.innerHTML='✓ '+j.status+' — <a href="'+j.record+'">registry record</a>';}
+        if(r.ok){ro.innerHTML='✓ '+j.status+(j.axn?' — <strong>'+j.axn+'</strong>':'')+' — <a href="'+j.record+'">registry record</a>';}
         else{ro.textContent=(j.error||'unavailable')+(j.fallback?' — '+j.fallback:''); rb.disabled=false;}
       }catch(e){ro.textContent='offline — email the sidecar to the archive instead'; rb.disabled=false;}
     };
