@@ -47,8 +47,11 @@ module.exports = async (req, res) => {
   if (typeof seed === "string") { try { seed = JSON.parse(seed); } catch { seed = null; } }
   if (!seed || typeof seed !== "object")
     return res.status(400).json({ error: "body must be the Seed A JSON object" });
+  const store = seed.store; delete seed.store;
   if (JSON.stringify(seed).length > 60000)
     return res.status(413).json({ error: "sidecar too large (60KB cap)" });
+  if (store && (typeof store.content_b64 !== "string" || store.content_b64.length > 4200000))
+    return res.status(413).json({ error: "stored file too large for this transport (~3 MB cap) — use the deposit transport for larger works" });
 
   const h0 = seed?.axn0?.sha256, g0 = seed?.axn0?.glyphs;
   const h1 = seed?.axn1?.sha256, g1 = seed?.axn1?.glyphs;
@@ -115,12 +118,31 @@ module.exports = async (req, res) => {
     return res.status(502).json({ error: "position allocation failed; kernel remains valid without a position — retry shortly or email the sidecar" });
   const fullAxn = `AXN:${hexPos}.${family}.${g0}`;
 
+  // optional storage: bytes seen → true verification of AXN₀
+  let retrieval = null, verified = false;
+  if (store) {
+    const crypto = require("crypto");
+    const bytes = Buffer.from(store.content_b64, "base64");
+    const sha = crypto.createHash("sha256").update(bytes).digest("hex");
+    if (sha !== h0)
+      return res.status(422).json({ error: "stored bytes do not hash to axn0.sha256 — refusing to store a file that is not the sealed core" });
+    verified = true;
+    const safe = String(store.filename || "file").replace(/[^A-Za-z0-9._-]/g, "_").slice(0, 80);
+    const fpath = `data/symbolon-registry/files/${key}-${safe}`;
+    const fr = await fetch(`https://api.github.com/repos/leesharks000/alexanarch/contents/${fpath}`, {
+      method: "PUT", headers: { ...gh, "Content-Type": "application/json" },
+      body: JSON.stringify({ message: `SYMBOLON STORE ${hexPos} · ${key} (sealed core, hash-verified at ingest)`, content: store.content_b64 }),
+    });
+    if (fr.ok) retrieval = `https://www.alexanarch.org/${fpath}`;
+  }
+
   const entry = {
     axn: fullAxn,
     position: hexPos,
     family,
     registered: new Date().toISOString(),
-    status: "witnessed-unverified",
+    status: verified ? "witnessed-verified" : "witnessed-unverified",
+    retrieval,
     note: "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9.",
     spec: "AXN-SYMBOLON-SPEC v0.2 · https://www.alexanarch.org/s/records/1432/",
     tuple: { axn0: { glyphs: g0, sha256: h0 }, axn1: { glyphs: g1, sha256: h1 } },
@@ -149,8 +171,9 @@ module.exports = async (req, res) => {
     return res.status(502).json({ error: "witness commit failed", detail: t.slice(0, 200) });
   }
   return res.status(201).json({
-    status: "witnessed",
+    status: verified ? "witnessed-verified (bytes stored; AXN₀ confirmed against the sealed core)" : "witnessed",
     axn: fullAxn,
+    retrieval,
     axn0: g0,
     axn1: g1,
     record: `https://www.alexanarch.org/${path}`,

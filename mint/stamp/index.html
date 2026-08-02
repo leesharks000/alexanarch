@@ -50,7 +50,10 @@ button:hover{background:#086354}button:disabled{background:#aaa;cursor:default}
 </select>
 <p style="font-size:.8em;color:var(--dim);margin-top:4px">The family joins the hex position and kernel to compose the full AXN at registration. The stamp itself carries the kernel — true independently of any registry.</p>
 
-<h2>3 · Stamp</h2>
+<h2>3 · Storage (optional)</h2>
+<label style="text-transform:none;font-size:.85em;color:#333;display:flex;gap:8px;align-items:flex-start"><input type="checkbox" id="storeit" style="margin-top:4px"> <span>Also <strong>store the sealed core</strong> with the archive (files ≤ 3 MB), so this AXN can retrieve the file itself. Storing enables full verification — your bytes are hash-checked at ingest and the record upgrades to <em>witnessed-verified</em>. Leave unchecked and only the identity crosses the wire; larger works flow through the <a href="/deposit/">deposit transport</a>.</span></label>
+
+<h2>4 · Stamp</h2>
 <button id="go" disabled>Stamp it</button>
 
 <div class="out" id="out">
@@ -71,6 +74,30 @@ button:hover{background:#086354}button:disabled{background:#aaa;cursor:default}
 <br><br><strong>Registration.</strong> The <em>Register with the archive</em> button witnesses your symbolon in the public record: the sidecar's internal consistency is checked (glyphs recomputed from hashes), a hex position is allocated from the sovereign AXN sequence, and the full identifier — <span style="font-family:var(--mono)">AXN:HEX.FAMILY.glyphs</span> — is composed and committed to the registry, publicly visible within about two minutes. Only Seed A crosses the wire; your file never does. Registration is automatic on stamping — one kernel, one position, deduplicated against the whole registry — and adds an address, not authority: the kernel in your stamp is true or false independently of any registry, including this one. Full deposit (body, record page, DOI-class treatment) remains available through the <a href="/deposit/">deposit transport</a>.
 </div>
 
+<h2 style="margin-top:34px">Verify</h2>
+<p style="font-size:.9em">Drop any file — an original or a stamped copy — and it is looked up in the <a href="/data/axn-central-registry.json">central AXN registry</a> by its kernel.</p>
+<div class="drop" id="vdrop" style="padding:16px">Drop a file to verify<input type="file" id="vfile" style="display:none"></div>
+<div class="out" id="vout"></div>
+<script>
+(function(){
+const vd=document.getElementById('vdrop'),vf=document.getElementById('vfile'),vo=document.getElementById('vout');
+vd.onclick=()=>vf.click();
+vd.ondragover=e=>{e.preventDefault();vd.classList.add('hot');};
+vd.ondragleave=()=>vd.classList.remove('hot');
+async function check(f){
+  vo.style.display='block';vo.innerHTML='hashing…';
+  const buf=await f.arrayBuffer();
+  const d=await crypto.subtle.digest('SHA-256',buf);
+  const h=Array.from(new Uint8Array(d)).map(b=>b.toString(16).padStart(2,'0')).join('');
+  const reg=await fetch('/data/axn-central-registry.json').then(r=>r.json()).catch(()=>null);
+  const hit=reg&&reg.kernels&&reg.kernels[h];
+  if(hit){vo.innerHTML='<div class="verdict" style="color:var(--teal)">VERIFIED — known kernel ('+hit.role+')</div><div class="v"><strong>'+(hit.axn||'')+'</strong> · '+hit.source+' · '+(hit.status||'')+'</div>'+(hit.record?'<div class="v"><a href="'+hit.record+'">record</a></div>':'')+(hit.entry?'<div class="v"><a href="'+hit.entry+'">witness entry</a></div>':'')+(hit.retrieval?'<div class="v"><a href="'+hit.retrieval+'">stored file</a></div>':'')+'<div class="v" style="color:var(--dim)">sha256: '+h+'</div>';}
+  else{vo.innerHTML='<div class="verdict" style="color:var(--accent2)">UNKNOWN KERNEL</div><div class="v">This exact byte sequence holds no position in the registry. It may be unregistered, a different version, or altered.</div><div class="v" style="color:var(--dim)">sha256: '+h+'</div>';}
+}
+vd.ondrop=e=>{e.preventDefault();vd.classList.remove('hot');if(e.dataTransfer.files[0])check(e.dataTransfer.files[0]);};
+vf.onchange=()=>{if(vf.files[0])check(vf.files[0]);};
+})();
+</script>
 <div class="footer">AXN schema v2 · glyph table and derivation identical to <span style="font-family:var(--mono)">scripts/axn_lib.py</span> · AXN-SYMBOLON-SPEC v0.2 · Alexanarch</div>
 </div>
 
@@ -191,9 +218,14 @@ go.onclick=async()=>{
     const doReg=async()=>{
       rb.style.display='none'; ro.textContent='witnessing…';
       try{
-        const r=await fetch('/api/register-symbolon',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(seedA)});
+        const payload={...seedA};
+        if(document.getElementById('storeit').checked){
+          if(buf.length>3145728){ro.textContent='file exceeds the 3 MB storage cap — witnessed without storage; use the deposit transport to store it'; }
+          else{let b='';const CH=32768;for(let i=0;i<buf.length;i+=CH)b+=String.fromCharCode.apply(null,buf.subarray(i,i+CH));payload.store={filename:FILE.name,content_b64:btoa(b)};}
+        }
+        const r=await fetch('/api/register-symbolon',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
         const j=await r.json();
-        if(r.ok){ro.innerHTML='✓ '+j.status+(j.axn?' — <strong>'+j.axn+'</strong>':'')+' — <a href="'+j.record+'">registry record</a>';}
+        if(r.ok){ro.innerHTML='✓ '+j.status+(j.axn?' — <strong>'+j.axn+'</strong>':'')+' — <a href="'+j.record+'">registry record</a>'+(j.retrieval?' · <a href="'+j.retrieval+'">stored file</a>':'');}
         else{ro.textContent=(j.error||'unavailable')+(j.fallback?' — '+j.fallback:''); rb.style.display='inline-block'; rb.disabled=false;}
       }catch(e){ro.textContent='offline — email the sidecar to the archive instead'; rb.style.display='inline-block'; rb.disabled=false;}
     };
