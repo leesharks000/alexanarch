@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OAI-PMH API — Alexanarch</title>
+<style>body{font:16px/1.6 ui-monospace,Menlo,monospace;max-width:44rem;margin:2rem auto;padding:0 1rem;background:#0d0d0f;color:#e8e6e0}h1{color:#c9a84a}code,pre{color:#c9a84a}a{color:#c9a84a}td{padding:.2rem .6rem;border-bottom:1px solid #26262c}</style></head><body>
+<h1>OAI-PMH API</h1>
+<p><strong>Alexanarch — the Crimson Hexagonal Archive</strong> exposes its full public registry via OAI-PMH 2.0.</p>
+<p><strong>Base URL:</strong> <code>https://www.alexanarch.org/oai</code><br>
+<strong>Metadata format:</strong> <code>oai_dc</code> (Dublin Core) · <strong>Transport:</strong> GET and POST · <strong>Paging:</strong> resumption tokens, 100 records/page · <strong>Sets:</strong> 19 (by family/venue)</p>
+<h2>Verbs</h2>
+<table>
+<tr><td><a href="/oai?verb=Identify">Identify</a></td><td>repository information</td></tr>
+<tr><td><a href="/oai?verb=ListMetadataFormats">ListMetadataFormats</a></td><td>supported formats</td></tr>
+<tr><td><a href="/oai?verb=ListSets">ListSets</a></td><td>set structure</td></tr>
+<tr><td><a href="/oai?verb=ListIdentifiers&metadataPrefix=oai_dc">ListIdentifiers</a></td><td>headers only</td></tr>
+<tr><td><a href="/oai?verb=ListRecords&metadataPrefix=oai_dc">ListRecords</a></td><td>full records</td></tr>
+<tr><td><code>GetRecord&identifier=oai:alexanarch.org:N</code></td><td>single record by deposit number</td></tr>
+</table>
+<h2>Record semantics</h2>
+<p>Every exposed record's <code>dc:description</code> carries its <em>audit capsule</em>: severity, declared defects, and repair status from the registry-wide pre-registration audit. Records under active restoration are withheld until restored; declared absences (Lacuna Marks) are exposed as part of the archive's record. Selective harvesting by datestamp is fully supported — restored records enter the feed by datestamp bump.</p>
+<p>Native persistent identifiers are <strong>AXN</strong> (content-derived, six-glyph checksum); legacy DOIs resolve via the <a href="/data/doi-resolution-index.json">DOI resolution index</a>. Conformance: passes the openarchives.org OAI-PMH validator (2026-08-02).</p>
+<p>Contact: leesharks00@gmail.com · <a href="/">alexanarch.org</a></p>
+</body></html>
