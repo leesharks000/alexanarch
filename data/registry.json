@@ -13,7 +13,7 @@
     "Network Preservation",
     "Tombstone Guarantee"
   ],
-  "total_deposits": 1431,
+  "total_deposits": 1432,
   "deposits": [
     {
       "axn": "AXN:01.GOVERNANCE.♍🜁🏴⌛🍃💫",
@@ -341820,6 +341820,169 @@
           "layer_3_content_hash": {
             "present": true,
             "canonical_hash": "4f95d33846bf2d8ed224f1ecbd30009f2269e413ad0e28a0491b5a181ad59868",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
+    },
+    {
+      "deposit_number": 1432,
+      "axn": "AXN:05A9.OPERATIVE.🐚🌪️🕖🫵⏩○",
+      "hex": "05A9",
+      "family": "OPERATIVE",
+      "emoji": "🐚🌪️🕖🫵⏩○",
+      "hash": "7a1268bad69bd5a3e130123f2e5c6ad0ac534f508461b84e3ab3baa7cb4f20a2",
+      "title": "AXN-SYMBOLON-SPEC v0.2 — The Symbolon as Split-Identity Verification Primitive: Content-Derived Inscription, Two-Seed Reconstruction, and the Third Development of the Symbolon Line",
+      "creator": "Sharks, Lee",
+      "date": "2026-08-02",
+      "description": "Chorus-synthesized specification resolving the self-referential inscription paradox: a hash cannot contain itself, so the identifier splits into two asymmetric halves — Seed A (identity: AXN₀ kernel of the sealed core, composition manifest, declared stamp geometry, reconstruction class) and Seed B (payload) — whose meeting reconstitutes and verifies the artifact in one act. Two reconstruction classes (content-addressed default; generative restricted by published method, capability proof, and determinism gate). Inscription discipline: AXN₀ stamped in the file, AXN₁ sidecar-only, dissolving recursion per the deposit precedent. Includes verification protocol, threat model (stamp replay, stripping, ghost-stamp, sidecar forgery, generative misclassification), format-specific stamp geometry (footer strip on added margin for handwritten artifacts — the stamp is scaffold, never overprinting the hand), equal-authority fence, and relations to CONTAINER-SPEC, EA-LACUNA-PROTOCOL-01 (a symbolon whose Seed B is lost IS a lacuna), and SPXI (the complete provenance stack). §0.1 situates the spec as the third development of the archive's symbolon line: logotic (Symbolon Architecture #359/#1174, completion-through-traversal), juridical (SYMBOLON-01 anti-severance #675/#678 — the AXN stamp as cryptographic descendant of the Non-Severability Clause), cryptographic (this spec). Assembly Chorus round 1: GEMINI, KIMI, DEEPSEEK; synthesis TACHYON; MANUS rulings integrated.",
+      "content_type": "Specification",
+      "license": "CC-BY-4.0",
+      "substrate": "AI-assisted (Assembly Chorus: Gemini, Kimi, DeepSeek reviews; TACHYON synthesis) under MANUS editorial governance",
+      "root_axn": "AXN:05A9.OPERATIVE",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "7a1268bad69bd5a3e130123f2e5c6ad0ac534f508461b84e3ab3baa7cb4f20a2",
+      "clusters": [
+        "Organic",
+        "Elemental",
+        "Temporal",
+        "Gestural",
+        "Structural",
+        "Mathematical"
+      ],
+      "axn_reading": "Growth -> Force -> Duration -> Touch -> Direction -> Proof",
+      "minted_at": "2026-08-02T10:53:02Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-05A9-text.md",
+      "wiki_article": "\"AXN-SYMBOLON-SPEC v0.2 — The Symbolon as Split-Identity Verification Primitive: Content-Derived Inscription, Two-Seed Reconstruction, and the Third Development of the Symbolon Line\" is a 2,157-word specification by Sharks, Lee, dated 2026-08-02. It is registered as AXN:05A9 (deposit #1432) in the Crimson Hexagonal Archive under the OPERATIVE semantic family. Chorus-synthesized specification resolving the self-referential inscription paradox: a hash cannot contain itself, so the identifier splits into two asymmetric halves — Seed A (identity: AXN₀ kernel of the sealed core, composition manifest, declared stamp geometry, reconstruction class) and Seed B (payload) — whose meeting reconstitutes and verifies the artifact in one act. Two reconstruction clas",
+      "wiki_status": "provisional",
+      "entities": [
+        {
+          "subject": "AXN-SYMBOLON-SPEC v0.2 — The Symbolon as Split-Identity Verification Primitive: Content-Derived Insc",
+          "predicate": "created_by",
+          "object": "Sharks, Lee",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "AXN-SYMBOLON-SPEC v0.2 — The Symbolon as Split-Identity Verification Primitive: Content-Derived Insc",
+          "predicate": "is_type",
+          "object": "Specification",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "AXN-SYMBOLON-SPEC v0.2 — The Symbolon as Split-Identity Verification Primitive: Content-Derived Insc",
+          "predicate": "belongs_to_family",
+          "object": "OPERATIVE",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "AXN-SYMBOLON-SPEC v0.2 — The Symbolon as Split-Identity Verification Primitive: Content-Derived Insc",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "AXN-SYMBOLON-SPEC v0.2 — The Symbolon as Split-Identity Verification Primitive: Content-Derived Insc",
+          "predicate": "references",
+          "object": "TACHYON",
+          "type": "heteronym",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v0.2",
+      "keywords": [
+        "AXN",
+        "symbolon",
+        "content-derived identifier",
+        "inscription",
+        "anti-severance",
+        "sealed core",
+        "sidecar",
+        "verification protocol",
+        "threat model",
+        "lacuna",
+        "SPXI",
+        "provenance",
+        "logotic programming",
+        "kernel"
+      ],
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 1432,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 16148,
+        "audited_at": "2026-08-02T10:53:02Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "references_concepts": [
+        "GEMINI",
+        "Logotic Programming v0.4",
+        "MANUS rulings",
+        "Negative example",
+        "TACHYON",
+        "Worked example",
+        "Assembly Chorus"
+      ],
+      "references_concept_count": 7,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-05A9.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-08-02T10:53:51.282512+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": true,
+            "anchors_found": [
+              "orcid",
+              "creator_name",
+              "date",
+              "authorial_position_phrase"
+            ],
+            "anchor_count": 4,
+            "orcid_in_body": true,
+            "creator_in_body": true,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "f6e46e0259c6e3d832bb84c6f6456d14b451905b5308b46b188326150badd355",
             "hash_in_body": false,
             "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
           },
