@@ -1,0 +1,99 @@
+{
+  "artifact": "alexanarch_audit_final_completion_summary_v1.0",
+  "snapshot_commit": "055429ac82edc967f09c4640ffd0b049cff78e6e",
+  "corpus_boundary": {
+    "first_record": 1,
+    "last_record": 1426,
+    "records": 1426,
+    "out_of_scope": "#1427 and later"
+  },
+  "audit_status": "COMPLETE_AT_FROZEN_CORPUS_BOUNDARY",
+  "audit_method": "Alexanarch Audit Method Core v0.4",
+  "severity": {
+    "OK": 284,
+    "P0": 124,
+    "P1": 519,
+    "P2": 464,
+    "P3": 35
+  },
+  "registration_disposition": {
+    "HARVEST": 304,
+    "HARVEST_WITH_WARNING": 991,
+    "WITHHOLD": 131
+  },
+  "terminal_checkpoint": {
+    "coverage": [
+      1,
+      18
+    ],
+    "records": 18,
+    "severity": {
+      "P0": 0,
+      "P1": 13,
+      "P2": 5,
+      "OK": 0
+    },
+    "registration_disposition": {
+      "HARVEST_WITH_WARNING": 18
+    },
+    "axn_sequence_discontinuity_boundaries": 12
+  },
+  "thread_checkpoint_geometry": {
+    "ordinary_checkpoint_size": 20,
+    "terminal_checkpoint_size": 18,
+    "terminal_fallback_unit": [
+      1,
+      38
+    ],
+    "thread_new_records": 358
+  },
+  "dominant_defect_code_counts_note": "Counts use the inherited, historically heterogeneous defect-code vocabulary and are indicative rather than mutually exclusive.",
+  "dominant_defect_code_counts": {
+    "BIBLIOGRAPHIC_TYPE_CONFLICT": 170,
+    "STANDING": 151,
+    "CREATOR_AUTHORITY_FLATTENED": 141,
+    "PRIMARY_CREATOR_CONFLICT": 120,
+    "MISSING_PRIMARY_MANIFESTATION": 110,
+    "TITLE": 81,
+    "REGISTRY_VERSION_UNCORROBORATED": 70,
+    "BIBLIOGRAPHIC_TYPE_NORMALIZATION": 65,
+    "CREATOR_ROLE": 56,
+    "VERSION_FIELD_CONFLICT": 50,
+    "TYPE": 47,
+    "CREATOR_AUTHORITY_CONFLICT": 45,
+    "OMITTED_COAUTHOR": 43,
+    "VERSION": 43,
+    "VERSION_BASIS_UNCORROBORATED": 34,
+    "REGISTRY_BODY_VERSION_CONFLICT": 34,
+    "HETERONYM_ALIAS_PROJECTED_AS_SOLE_CREATOR": 34,
+    "MANIFESTATION": 33,
+    "OMITTED_COLLECTIVE_AUTHOR": 32,
+    "TITLE_PROJECTION_CONCATENATION": 29
+  },
+  "repository_repairs_performed": false,
+  "lifecycle_conversion_status": "DEFERRED",
+  "required_downstream_passes": [
+    {
+      "pass": "CONTROLLED_LIFECYCLE_CONVERSION",
+      "scope": [
+        1,
+        498
+      ],
+      "instruction": "Convert raw frozen lifecycle language into the controlled standing model only in a separate reviewed pass; preserve basis and confidence."
+    },
+    {
+      "pass": "REGISTRATION_REMEDIATION_PLANNING",
+      "scope": [
+        1,
+        1426
+      ],
+      "instruction": "Prioritize WITHHOLD and P0 objects, then warning-level creator/version/type/manifestation defects. Do not mutate the sealed audit ledgers."
+    },
+    {
+      "pass": "PRIMARY_MANIFESTATION_RECOVERY",
+      "scope": "records explicitly marked missing, proxy, wrong, or unverified primary manifestation",
+      "instruction": "Recover only from separately authenticated sources with new custody evidence; never rewrite the frozen audit finding."
+    }
+  ],
+  "completed_at": "2026-08-03T09:47:24-04:00"
+}

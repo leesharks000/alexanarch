@@ -1,0 +1,43 @@
+{
+  "artifact": "alexanarch_audit_final_source_discontinuities_v1.0",
+  "snapshot_commit": "055429ac82edc967f09c4640ffd0b049cff78e6e",
+  "scope": [
+    1,
+    1426
+  ],
+  "source_bundle_condition": {
+    "registry_rows": 358,
+    "static_pages": 358,
+    "staged_canonical_texts": 354,
+    "staged_texts_absent_for_deposits": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "interpretation": "Absence at the frozen commit is audit evidence, not silently repaired bundle error."
+  },
+  "terminal_records": [
+    {
+      "deposit_number": 1,
+      "condition": "Complete work-bearing body survives in the static page; separately staged canonical Markdown is absent. Registry/page v9 dated 2026-06-19, stale embedded SPXI v8.1 dated 2026-06-20, and current body v9.1 FINAL dated 2026-06-20 conflict.",
+      "audit_effect": "P1 / HARVEST_WITH_WARNING; current body identity recoverable from page, staging discontinuity and version/date conflict remain explicit."
+    },
+    {
+      "deposit_number": 2,
+      "condition": "Complete prose poem survives in the static page; separately staged Markdown serialization is absent. Frozen registry records recovery from an internal deposit serialization and warns that its historical frontmatter hash does not certify the current serialization.",
+      "audit_effect": "P2 / HARVEST_WITH_WARNING; work identity is readable, byte-level equivalence to the historical artifact is not inferred."
+    },
+    {
+      "deposit_number": 3,
+      "condition": "Static page is a metadata and descriptive surface. It explicitly identifies data/EA-WG-CAPTURES-01.json as the canonical 379 KB dataset, but that JSON is absent from the frozen bundle.",
+      "audit_effect": "P1 / HARVEST_WITH_WARNING; metadata identity is confirmed, canonical dataset presence and contents are not verified from the audit source."
+    },
+    {
+      "deposit_number": 4,
+      "condition": "Static page is a metadata and descriptive surface. It explicitly identifies data/doi-resolution-index.json as the canonical 5.2 MB dataset, but that JSON is absent. Registry version v3.8.1 conflicts with title/body v3.11.0; original 2026-06-20 and v3.11.0 revision 2026-07-08 are distinct events.",
+      "audit_effect": "P1 / HARVEST_WITH_WARNING; metadata identity is confirmed, primary dataset is absent, and version/date layers must remain separated."
+    }
+  ],
+  "repair_posture": "No recovery, source substitution, repository write, or inferred reconstruction was performed."
+}
