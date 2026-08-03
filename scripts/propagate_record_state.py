@@ -74,7 +74,7 @@ def main(nums):
     reg = json.load(open(ROOT / "data/registry.json"))
     by = {d["deposit_number"]: d for d in reg["deposits"]}
     try:
-        eidx = json.load(open(ROOT / "data/entities/entity-index.json"))
+        eidx = json.load(open(ROOT / "data/entity-index.json"))
     except Exception:
         eidx = {}
     for n in nums:
