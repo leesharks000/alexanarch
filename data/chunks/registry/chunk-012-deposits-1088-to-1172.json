@@ -16264,7 +16264,7 @@
       "creator": "Jack E. Feist; Rebekah Cranes",
       "date": "2026-03-14",
       "description": "Canonical bytes recovered 2026-07-19 from the authorial blog surface (https://mindcontrolpoems.blogspot.com/2026/03/on-architecture-of-cleis-compression.html); work severed at Zenodo 2026-06-19 (DOI(s): 10.5281/zenodo.19024779, 10.5281/zenodo.19024778). Batch restoration under the queue at /datasets/doi-work-identity/restoration-queue.json; title verified against the DOI-keyed truth title at fetch time. Opening of the work: ON THE ARCHITECTURE OF CLEIS Compression, Botanics, and the Survival of Paternal Lyric Rebekah Cranes Institute for Diagrammatic Poetics * Crimson Hexagonal Archive EA-IDP-CLEIS-ANALYSIS v1.0 * 2026-03-14 DOI: 10.5281/zenodo.19025556 Companion to: Cleis: more precious to me than all Lydia (DOI: 10.5281/zenodo.19024779) Genre: OPERATIVE PHILOLOGY / CLOSE READING / COMPANION ANALYSIS * * * PRELIMINA",
-      "content_type": "Recovered blog-canonical work (full text; queue restoration 2026-07-19)",
+      "content_type": "Recovered work (full text seated) — poem collection",
       "license": "CC-BY-4.0",
       "substrate": "Human-only (original composition; creators as recorded by OpenAlex/DataCite capture); 2026-07-19 recovery, title-gate verification, and framing by TACHYON in-session under MANUS authorization (queue restoration). No paid API calls (No-Double-Draw, transport D).",
       "root_axn": "AXN:049E.UNCLASSIFIED",
@@ -16349,12 +16349,14 @@
       "body_status": {
         "class": "full",
         "lacuna": false,
-        "recovery_status": "COMPLETE",
+        "recovery_status": "RECOVERED_FROM_SOURCE_FILE",
         "residual_chars": 35787,
         "audited_at": "2026-07-19T20:29:54Z",
         "audit_version": "mint-time-declaration",
-        "measured_prose_words": 5345,
-        "measured_at": "2026-07-31"
+        "measured_prose_words": 4307,
+        "measured_at": "2026-08-02",
+        "recovery_status_note": "SUBSTITUTION CORRECTED 2026-08-02: this collection record had been wrongly seated (2026-07-19) with the ANALYSIS text (EA-IDP-CLEIS-ANALYSIS, the body of #562) because the July restoration fetched the blog slug 'on-architecture-of-cleis-compression' and trusted the blog body over the slug. The collection itself — the poem cycle (the Sapphic identification, The Botanist's Daughter, the flower compendium, the teaching-email interruptions) — is now seated from the MANUS-provided source file. The analysis remains correctly at #562.",
+        "recovered_at": "2026-08-02"
       },
       "references_concepts": [
         "Companion to",
@@ -16423,9 +16425,16 @@
           "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
           "was": "10 terms",
           "now": "8 terms"
+        },
+        {
+          "date": "2026-08-02",
+          "field": "body_status",
+          "reason": "SUBSTITUTION CORRECTED: collection record had been seated with the analysis text (dup of #562) via a blog-slug mismatch on 2026-07-19; the actual poem collection now seated from MANUS source file. Analysis stays at #562.",
+          "was": "5778w (WRONG: analysis text)",
+          "now": "4307w (collection, correct)"
         }
       ],
-      "date_modified": "2026-07-31"
+      "date_modified": "2026-08-02"
     },
     {
       "deposit_number": 1166,
