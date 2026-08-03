@@ -1,4 +1,11 @@
-# CONTROLLED TYPE VOCABULARY v0.1 — DRAFT FOR MANUS RATIFICATION
+# CONTROLLED TYPE VOCABULARY v1.0 — RATIFIED (MANUS 2026-08-03)
+**Rulings:** Q1 ratified · Q2 SPLIT (framework/strategic brief AND white paper/business brief are two values) ·
+Q3 integrity-lock is a NAMED GENRE, identical in kind to the fulfillment-operator documents (the triadic
+binding structure: doc 1, doc 2, and doc 3 declaring that 2 fulfills 1) · Q4 patent-poem ratified ·
+Q5 transitional wave APPROVED ("Genre pending (recovered)") · Q6 corrected by MANUS: the Gospel of
+Antioch is SCRIPTURE — a gospel, containing no epistles, a mandala transform cast by hand on the model
+of the Gospel of Thomas; a Scripture value is added. Correspondence/epistolary remains for actual
+letter-works (e.g. letters within the Antioch volume).
 **Basis:** MANUS ruling 2026-08-03 ("we'll need a controlled type vocabulary"). Unlocks the 159-row
 compound batch (#1–#358) and the re-genre of ~360 condition-as-type records.
 **Sources:** registry census (514 distinct values / 1,432 records), the sealed audit rows' target
@@ -28,13 +35,15 @@ this. The vocabulary makes the two axes unmixable.
 | **Specification** | normative technical document (chamber specs, protocol specs) |
 | **Methodological specification** | a method as the object (Assembly Chorus method, audit method) |
 | **Constitution / governance framework** | founding governance texts |
-| **Consulting brief** | subsumes consulting framework / strategic brief / white paper / business brief |
+| **Consulting framework / strategic brief** | strategic frameworks (Q2 split ruling) |
+| **Consulting white paper / business brief** | client-facing white papers and business briefs |
 | **Diagnostic probe** | instrument runs designed to elicit substrate behavior |
 | **Metadata packet** | MPAI / disambiguation packets, publication-declaration packets |
 | **Dataset** | data as the object (capture registries, audit ledgers, indexes) |
 | **Navigation map** | cartographic bibliography / semantic interface layouts (IDP maps) |
 | **Traversal log / field observation** | first-person traversal and field notes |
 | **Technical correction** | erratum / correction as its own object |
+| **Integrity-lock / fulfillment architecture** | NAMED GENRE (Q3): documents that bind or fulfill other documents — integrity locks, non-severability bindings, and fulfillment-operator triads (doc 1, doc 2, doc 3 declaring 2-fulfills-1) |
 
 ### Archival & governance acts
 | **Effective Act** | canonization, bestowal, founding acts (subsumes founding/bestowal document) |
@@ -52,6 +61,7 @@ this. The vocabulary makes the two axes unmixable.
 | **Creative work (mixed)** | braided/composite works (e.g. Cleis-class collections that interleave genres) |
 | **Correspondence / epistolary** | letters as the object (Gospel-of-Antioch class where applicable) |
 | **Visual schema / diagram** | canonical visual schema / diagrammatic metaphysics |
+| **Scripture** | gospels and scripture-form works, incl. hand-cast mandala transforms on gospel models (Gospel of Antioch class; Q6 MANUS correction) |
 
 ### Transitional (temporary, burn-down targets — not ratified genres)
 | **Genre pending (recovered)** | for the ~360 condition-as-type records until their genre wave runs |
@@ -72,8 +82,9 @@ this. The vocabulary makes the two axes unmixable.
 | cartographic-bibliography/navigation-map | Navigation map |
 | canonical visual schema / diagrammatic metaphysics | Visual schema / diagram |
 | constitution / governance framework | Constitution / governance framework |
-| integrity-lock architecture / binding specification | Specification |
-| consulting framework/strategic brief; consulting white paper/business brief | Consulting brief |
+| integrity-lock architecture / binding specification | Integrity-lock / fulfillment architecture |
+| consulting framework/strategic brief | Consulting framework / strategic brief |
+| consulting white paper/business brief | Consulting white paper / business brief |
 | scholarly essay (w/ archive-suffix-as-branding) | Scholarly essay |
 | diagnostic type | Diagnostic probe |
 | metadata packet for a publication/declaration | Metadata packet |
@@ -107,7 +118,7 @@ this. The vocabulary makes the two axes unmixable.
 5. field_discipline.py's CONDITION regex becomes a hard validator: any content_type matching a
    condition pattern fails the gate.
 
-## 5 · Questions for MANUS (the actual ratification decisions)
+## 5 · Ratification record (questions as posed; rulings in header)
 - **Q1.** Ratify the 26-value list as-is, or amend (add/remove/rename)?
 - **Q2.** "Consulting brief" as ONE value subsuming framework/strategic/white-paper/business — or keep two (framework vs. white paper)?
 - **Q3.** "Integrity-lock architecture / binding specification" → folded into **Specification** (as drafted) or kept distinct?
