@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The AXN Constitution — identifier guarantees | Alexanarch</title>
+<meta name="description" content="The constitutional guarantees of the AXN identifier: raw-byte kernels, free verification forever, published wind-down, and what an AXN does not claim.">
+<style>:root{--teal:#0f766e;--ink:#1a1a1a;--dim:#666;--border:#ddd;--mono:ui-monospace,SFMono-Regular,Menlo,monospace}body{font-family:Georgia,serif;color:var(--ink);max-width:720px;margin:0 auto;padding:24px 18px;line-height:1.65}h1{font-size:1.6em}h2{color:var(--teal);margin-top:1.6em}code{font-family:var(--mono);background:#f4f4f4;padding:1px 5px;border-radius:4px;font-size:.88em}.rule{background:#f0f7f5;border-left:4px solid var(--teal);padding:12px 16px;border-radius:6px;margin:14px 0}.no{background:#fef3f2;border-left:4px solid #b91c1c;padding:12px 16px;border-radius:6px;margin:14px 0}a{color:var(--teal)}footer{margin-top:3em;font-size:.85em;color:var(--dim);border-top:1px solid var(--border);padding-top:12px}</style></head><body>
+<nav style="font-size:.9em"><a href="/">Alexanarch</a> · <a href="/mint/stamp/">Stamp &amp; Verify</a> · <a href="/data/axn-central-registry.json">Registry</a></nav>
+<h1>The AXN Constitution</h1>
+<p><em>Ratified by the archive's editorial authority (MANUS), 2026-08-03. These guarantees govern every AXN identifier and every service built on them, including axnidentifiers.org. Amendments occur only by numbered, published change proposal — never silently, never retroactively.</em></p>
+
+<h2>I. The identifier is content-derived</h2>
+<div class="rule"><strong>Canonical bytes v1 = the exact raw byte sequence of the submitted file.</strong> No normalization, no re-encoding, no stripping. The identity kernel is the SHA-256 of those bytes; the six-glyph checksum derives from the first six bytes of that hash through the canonical 256-glyph table. Any future normalization profile can only ever be opt-in, versioned, and non-retroactive: <strong>no existing kernel will ever be redefined.</strong></div>
+<p>Grammar: <code>AXN:HEX.FAMILY.⟨6 glyphs⟩</code> — e.g. the registered position <code>AXN:05AB.UNCLASSIFIED.🔃✊🌹⏫∞✖️</code> (kernel <code>deb473d8ff92c55f…</code>). The derivation is fully specified and independently implementable; it runs in your browser at <a href="/mint/stamp/">Stamp &amp; Verify</a> and nothing leaves your device for computation. An AXN is true or false <strong>independently of any registry, including this one.</strong></p>
+
+<h2>II. Verification is free, forever</h2>
+<div class="rule"><strong>Dated public promise (2026-08-03):</strong> computing kernels, stamping files, looking up identifiers, and verifying files against the registry are free, permanently. The full registry is public, git-versioned, and exportable. Paid services sell human labor and witnessing <em>around</em> identifiers — never the identifier's truth, and <strong>registry positions are never sold.</strong></div>
+
+<h2>III. Continuity and wind-down</h2>
+<div class="rule">If any AXN service ends, all registry data will be offered as a downloadable archive during a stated wind-down window, stored sealed cores will be returned or exported, and a final registry snapshot will be published. <strong>AXN identifiers remain valid regardless, because they are content-derived.</strong> The registry lives in version control with full public history; its continuity does not depend on any single website remaining online.</div>
+
+<h2>IV. What an AXN does not claim</h2>
+<div class="no"><strong>Identity ≠ Authorship.</strong> An AXN proves a file's identity, not who created it. Authorship statements are recorded as declarations and marked <code>UNVERIFIED</code> unless independently attested.<br><br><strong>Witnessing ≠ Notarization.</strong> Registration timestamps prove when a file was <em>witnessed</em>, not when it was created. Nothing here is legal notarization or legal advice.<br><br><strong>Resolver ≠ Indefinite hosting.</strong> A registry entry is a record, not a promise of perpetual file hosting. Storage terms are always explicit.</div>
+
+<h2>V. Corrections and change control</h2>
+<p>Errors are corrected by amendment and tombstone, never silent deletion — withdrawn records remain as typed tombstones naming the rightful state. Protocol changes (canonical bytes, derivation, schema, this constitution) require a numbered public proposal with test vectors, migration impact, and ratification. The first proposed mutation — byte normalization — was caught and refused before this page was published; that refusal is why Section I reads as it does.</p>
+
+<footer>AXN schema v2 · derivation identical to <code>scripts/axn_lib.py</code> · AXN-SYMBOLON-SPEC v0.2 · <a href="/data/axn-central-registry.json">central registry</a> · Alexanarch · ∮ = 1</footer>
+</body></html>
