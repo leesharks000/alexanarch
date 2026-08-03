@@ -1,5 +1,5 @@
 # AXNIDENTIFIERS — BUILD WORKPLAN v1.0 (Round 2 Consolidation)
-**Synthesis: TACHYON · 2026-08-03 · Status: DRAFT FOR MANUS RATIFICATION**
+**Synthesis: TACHYON · 2026-08-03 · Status: RATIFIED — M-001–M-008 frozen at defaults (MANUS 2026-08-03; see DECISION-REGISTER.md)**
 **Inputs (Round 2, in MANUS's stated order):** GEMINI · GPT-A · GPT-B · MUSE SPARK · KIMI · DEEPSEEK
 (six independent responses to Round 1 Consolidation v0.1; raw texts held in the MANUS thread; attribution
 order per MANUS's listing — correct me if any mapping is off).
