@@ -127,7 +127,7 @@ this. The vocabulary makes the two axes unmixable.
 - **Q6.** "Correspondence / epistolary": apply to Gospel-of-Antioch–class records, or keep those under Creative prose?
 
 
-## 6 · PROPOSED AMENDMENTS v1.1 (from Wave C holds — awaiting MANUS word)
+## 6 · AMENDMENTS v1.1 — ALL EIGHT RATIFIED (MANUS 2026-08-03); list now 37 values + 2 transitional
 The 35 unmappable sealed recommendations cluster into genres the list lacks. Proposed additions:
 | Proposed value | Evidence from holds |
 |---|---|
