@@ -581,7 +581,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 80843,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 10789,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -856,7 +858,9 @@
         "audit_version": "v3-dual-store+recovery-map",
         "recovered_from": "data/deposits/AXN-0002.md (internal store — stage-0 audit)",
         "recovered_at": "2026-07-20T10:57:35Z",
-        "note": "body was complete inside the archive; frontmatter hash 81004d7e... certifies the original 2026-06-20 push artifact, not this serialization — recorded as historical claim"
+        "note": "body was complete inside the archive; frontmatter hash 81004d7e... certifies the original 2026-06-20 push artifact, not this serialization — recorded as historical claim",
+        "measured_prose_words": 939,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "recovered_full_text"
     },
@@ -1026,15 +1030,29 @@
       "axn_schema_version": "v2",
       "references_concept_count": 0,
       "body_status": {
-        "class": "dataset_pointer",
+        "class": "full",
         "lacuna": false,
         "recovery_status": "COMPLETE",
         "residual_chars": 1618,
         "audited_at": "2026-07-17T04:49:17.789813Z",
         "audit_version": "v3-dual-store+recovery-map",
-        "path_repaired": "T6-regen 2026-07-28: declared v8.3 filename absent on disk; repointed to canonical unversioned file"
+        "path_repaired": "T6-regen 2026-07-28: declared v8.3 filename absent on disk; repointed to canonical unversioned file",
+        "measured_prose_words": 46916,
+        "measured_at": "2026-07-31",
+        "class_before_read_audit": "dataset_pointer",
+        "read_audit": "Classified 2026-07-31 by reading the body opening: the record opens with the work, not a capture notice."
       },
-      "canonical_text_status": "canonical_full_text"
+      "canonical_text_status": "canonical_full_text",
+      "modifications": [
+        {
+          "date": "2026-07-31",
+          "field": "body_status",
+          "reason": "Body classified by reading its own opening declaration rather than by counting words. Word counting misread works in Greek, emoji, and natively short forms as stubs.",
+          "was": "dataset_pointer",
+          "now": "full"
+        }
+      ],
+      "date_modified": "2026-07-31"
     },
     {
       "axn": "AXN:0004.ARCHIVAL.✖️🜄🜂🖋️🧪🛡️",
@@ -1180,7 +1198,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 19618,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 453324,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -1435,7 +1455,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 10929,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 1530,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -1715,7 +1737,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 15073,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 2119,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -1961,7 +1985,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 5860,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 762,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -2248,7 +2274,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 23417,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 3329,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -2458,7 +2486,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 6977,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 1041,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -3078,7 +3108,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 50438,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 6642,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -3895,7 +3927,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 40834,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 4671,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -4166,7 +4200,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 10169,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 1408,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -4494,7 +4530,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 13889,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 1379,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -4812,7 +4850,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 9364,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 1378,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -5156,7 +5196,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 13363,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 1910,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -5588,7 +5630,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 27330,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 3662,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -5884,7 +5928,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 19084,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 2689,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -6106,7 +6152,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 49238,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 6578,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -6362,7 +6410,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 24890,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 3674,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -6590,7 +6640,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 21289,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 3228,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -7017,7 +7069,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 41335,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 5715,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -7294,7 +7348,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 27075,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 3854,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -7547,7 +7603,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 32061,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 4630,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -7831,7 +7889,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 33100,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 4744,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -8148,7 +8208,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 29084,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 3949,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -8333,7 +8395,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 21173,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 2920,
+        "measured_at": "2026-07-31"
       },
       "title_repair": {
         "repaired_at": "2026-07-20",
@@ -8872,7 +8936,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 34147,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 4653,
+        "measured_at": "2026-07-31"
       },
       "title_repair": {
         "repaired_at": "2026-07-20",
@@ -9514,7 +9580,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 166267,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 40356,
+        "measured_at": "2026-07-31"
       },
       "version_series_id": "SERIES-BODYMATCH-28",
       "canonical_text_status": "canonical_full_text"
@@ -9810,7 +9878,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 53872,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 7070,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -10351,7 +10421,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 23971,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 3585,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -11665,7 +11737,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 140568,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 16208,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -11862,7 +11936,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 29638,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 4213,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -12025,7 +12101,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 9305,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 1315,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -12206,7 +12284,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 14651,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 2018,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -12405,7 +12485,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 18489,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 2700,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -12767,7 +12849,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 20223,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 2866,
+        "measured_at": "2026-07-31"
       },
       "title_repair": {
         "repaired_at": "2026-07-20",
@@ -13129,7 +13213,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 21094,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 2541,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -14013,7 +14099,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 169644,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 24746,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -14236,7 +14324,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 24977,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 3748,
+        "measured_at": "2026-07-31"
       },
       "title_repair": {
         "repaired_at": "2026-07-20",
@@ -14433,7 +14523,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 41861,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 6539,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -14745,7 +14837,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 16036,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 1970,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -15010,7 +15104,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 21020,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 3055,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -15446,7 +15542,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 52882,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 8781,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -15803,7 +15901,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 21273,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 3162,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -16111,7 +16211,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 19736,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 2807,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -16815,7 +16917,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 30609,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 3787,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -17113,7 +17217,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 22689,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 2852,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -17416,7 +17522,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 32036,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 4190,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -19170,7 +19278,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 267105,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 41218,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -19613,7 +19723,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 19834,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 4060,
+        "measured_at": "2026-07-31"
       },
       "version_series_id": "SERIES-BODYMATCH-50",
       "title_repair_log": [
@@ -19781,7 +19893,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 40704,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 5804,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -20196,7 +20310,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 14771,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 1997,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -20628,7 +20744,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 16740,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 2286,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -20927,7 +21045,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 34972,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 5159,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -21328,7 +21448,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 30522,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 4058,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -22251,7 +22373,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 201284,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 20469,
+        "measured_at": "2026-07-31"
       },
       "version_series_id": "SERIES-EA-ARK-01-ARCHON",
       "superseded_by_deposit_number": 1101,
@@ -22617,7 +22741,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 14942,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 2229,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -22915,7 +23041,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 12967,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 1911,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -23348,7 +23476,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 14526,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 1946,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -23635,7 +23765,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 9930,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 1367,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -24053,7 +24185,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 17017,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 2328,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -24341,15 +24475,39 @@
       "body_status": {
         "class": "full",
         "lacuna": false,
-        "recovery_status": "COMPLETE",
+        "recovery_status": "PASS_COMPLETE_TEXT_NOT_SEATED",
         "residual_chars": 2274,
         "audited_at": "2026-07-17T04:49:17.789813Z",
         "audit_version": "v3-dual-store+recovery-map",
         "recovered_from": "https://mindcontrolpoems.blogspot.com/2026/04/spxi-protocol-and-etf-disambiguation-ea.html",
         "recovered_at": "2026-07-20T10:46:50Z",
-        "note": "MANUS-supplied mirror URL 2026-07-20"
+        "note": "MANUS-supplied mirror URL 2026-07-20",
+        "measured_prose_words": 266,
+        "measured_at": "2026-07-31",
+        "class_before_substance_audit": "full",
+        "substance_audit": "Reclassified 2026-07-31: declared full, measured 266 prose words after scaffold removal. Substance is measured, not declared.",
+        "recovery_status_note": "The 2026-07 restoration pass ran to completion for this record and did not recover canonical bytes. 'COMPLETE' previously denoted pass completion and was read as text completeness; renamed 2026-07-31 so the two claims cannot be confused.",
+        "class_before_read_audit": "metadata_capture",
+        "read_audit": "Classified 2026-07-31 by reading the body opening: the record opens with the work, not a capture notice."
       },
-      "canonical_text_status": "recovered_full_text"
+      "canonical_text_status": "recovered_full_text",
+      "modifications": [
+        {
+          "date": "2026-07-31",
+          "field": "body_status",
+          "reason": "Body-substance audit: record declared class=full while its body measured as a metadata stub. Reclassified from the bytes.",
+          "was": "full",
+          "now": "metadata_capture"
+        },
+        {
+          "date": "2026-07-31",
+          "field": "body_status",
+          "reason": "Body classified by reading its own opening declaration rather than by counting words. Word counting misread works in Greek, emoji, and natively short forms as stubs.",
+          "was": "metadata_capture",
+          "now": "full"
+        }
+      ],
+      "date_modified": "2026-07-31"
     },
     {
       "axn": "AXN:0219.GOVERNANCE.📖🎵📏🌉🗿⭐",
@@ -24767,7 +24925,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 18565,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 2428,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -25078,7 +25238,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 19547,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 2670,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -25349,7 +25511,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 30150,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 4465,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     },
@@ -25780,7 +25944,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 27442,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 3976,
+        "measured_at": "2026-07-31"
       },
       "title_repair_log": [
         {
@@ -25911,7 +26077,9 @@
         "recovery_status": "COMPLETE",
         "residual_chars": 9347,
         "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map"
+        "audit_version": "v3-dual-store+recovery-map",
+        "measured_prose_words": 1334,
+        "measured_at": "2026-07-31"
       },
       "canonical_text_status": "canonical_full_text"
     }
