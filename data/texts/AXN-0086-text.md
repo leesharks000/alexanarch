@@ -6212,8 +6212,8 @@ correspondence, 9-20-14, 6:45pm, Thursday
 dear j---
 
 
-               i've been meaning to reply, but i've been too retarded,
-lately. the letter form makes me feel partially retarded in my left toe,
+               i've been meaning to reply, but i've been too r******d,
+lately. the letter form makes me feel partially r******d in my left toe,
 and also my brain---the main one. 
 
                i want to send you some of my books. i think i've been
@@ -6225,7 +6225,7 @@ double shift at the group home. sitting on couch, my daughter zoe
 playing kindle on my left, daughter haley playing minecraft PS3 on my
 right, stepson gio playing PS3 on the computer chair, upstairs messy,
 floor cluttered, A/C unit wheezing, disconsolate, my hair-sad head,
-depressed for no good reason---stuck in a pit because of retardedness.
+depressed for no good reason---stuck in a pit because of r******dness.
 
                and also sadness & self-pity.
 
@@ -6242,13 +6242,13 @@ for company.
                probably.
 
                i used to find writing by hand a uniquely expressive
-medium. now, i find retardedness a uniquely expressive mental brain.
+medium. now, i find r******dness a uniquely expressive mental brain.
 
                a strange & wonderful poem is happening somewhere at the
 intersection of handwriting, word processing, SMS texting, and
 speech-to-text. i call this intersection 'telepathy' & it's where i
 produce my best material. i rarely get to read or write this material,
-but i know it is happening there because i intuit it with my retarded
+but i know it is happening there because i intuit it with my r******d
 brain.
 
                the poem that is happening right now at the intersection
@@ -6259,7 +6259,7 @@ intestine meets the soul) as a multimedia fluorescence of luminous
 vegetable matter---a kind of sentient mold infecting Google with
 salvation and also fame.
 
-               my miraculous retarded vegetable poem is being
+               my miraculous r******d vegetable poem is being
 brainwashed directly into Wikipedia.
 
                i am too sad to write any more.

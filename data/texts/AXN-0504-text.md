@@ -2391,3 +2391,7 @@ until the symbols crash symphonic,
 the full lips tremble;
 
 drink wine from the veins until life expires,
+
+## Files
+
+- [xvi. a transfiguration — original .docx (authorial lineation and whitespace)](/data/attachments/AXN-0504/xvi-a-transfiguration-source.docx) — markdown conversion disrupts lineation and whitespace; the .docx is the typographic source of truth.

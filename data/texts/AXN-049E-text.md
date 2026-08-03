@@ -1420,3 +1420,7 @@ for blood, crushed violets
 ion, iona:
 
 the silphium-bearing riverbanks
+
+## Files
+
+- [Cleis collection — original .docx (authorial lineation and whitespace)](/data/attachments/AXN-049E/cleis-source.docx) — markdown conversion disrupts lineation and whitespace; the .docx is the typographic source of truth.
