@@ -5,17 +5,15 @@ title: xvi. a transfiguration (2004) — Complete Archive with Authorial Comment
 creator: Spellings, Ichabod; Sharks, Lee
 orcid: 0009-0000-1599-0703
 date: 2026-01-08
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+content_type: Recovered work (full text seated) — poem with 2004 authorial preface
 license: CC-BY-4.0
-substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
+substrate: Human-only original (2004). Canonical text recovered 2026-08-02 from MANUS-provided source file; no machine authorship.
+version: v1.0
 related_ids: "https://doi.org/10.5281/zenodo.18189092 (severed); https://doi.org/10.5281/zenodo.18189093 (severed)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 keywords:
   - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
   - severed DOI
   - Zenodo termination
   - Crimson hexagon
