@@ -125,3 +125,19 @@ this. The vocabulary makes the two axes unmixable.
 - **Q4.** Patent-poem distinct (as drafted) — confirm?
 - **Q5.** The ~360 condition-as-type records: approve the transitional **Genre pending (recovered/capture)** wave (mechanical, restores the two-axis rule immediately), with per-record genre assignment as a follow-on wave?
 - **Q6.** "Correspondence / epistolary": apply to Gospel-of-Antioch–class records, or keep those under Creative prose?
+
+
+## 6 · PROPOSED AMENDMENTS v1.1 (from Wave C holds — awaiting MANUS word)
+The 35 unmappable sealed recommendations cluster into genres the list lacks. Proposed additions:
+| Proposed value | Evidence from holds |
+|---|---|
+| **Invocation** | ×2 — the archive's invocation-form works (Space Ark trigger class) |
+| **Book / manuscript** | Pocket Humans book/manuscript |
+| **Working paper** | Semantic Economy working paper; draft book work plan |
+| **Edited journal issue** | Grammata/Trans-SEI issue objects |
+| **Call for papers / announcement** | journal announcements |
+| **Implementation report** | build/implementation reports |
+| **Software / executable apparatus** | self-describing knowledge graph; semantic routing machine |
+| **Score / executable transform** | musical-register structural transform / executable score (Musical Ark class) |
+One word ratifies any subset; unratified holds keep their current values and stay queued
+(vocab_v1.1_amendment_candidates.json).
