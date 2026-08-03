@@ -851,7 +851,23 @@ def regenerate_static_page(d, eidx, registry=None):
     superseded_by_n = d.get('superseded_by_deposit_number')
     superseded_reason = d.get('superseded_reason', '')
 
-    if registry and status == 'SUPERSEDED' and superseded_by_n:
+    if d.get('lifecycle_state') == 'withdrawn_external':
+        # Typed tombstone (MANUS foreign-capture policy + SHAPE doctrine v1.0):
+        # an over-captured external work. The page names the rightful author and
+        # DOI and serves none of their content. Highest-priority state.
+        w = d.get('withdrawn', {})
+        version_banner = (
+            '<div style="background:#fee2e2;border-left:4px solid #b91c1c;padding:12px 16px;'
+            'border-radius:6px;margin:12px 0;font-size:.92em">'
+            '<div style="font-weight:600;color:#7f1d1d;margin-bottom:4px">✕ Withdrawn — external work (typed tombstone)</div>'
+            '<div style="color:#7f1d1d">This position was created by an over-inclusive metadata capture. '
+            f'The work is by <strong>{esc(w.get("rightful_author",""))}</strong> and is not a holding of this archive. '
+            f'It belongs to its author at DOI <a href="https://doi.org/{esc(w.get("rightful_doi",""))}" '
+            f'style="color:#b91c1c;font-weight:500">{esc(w.get("rightful_doi",""))}</a>. '
+            'No content of the work is served here.</div>'
+            '</div>'
+        )
+    elif registry and status == 'SUPERSEDED' and superseded_by_n:
         by_v = ''
         for sib in registry.get('deposits', []):
             if sib.get('deposit_number') == superseded_by_n:

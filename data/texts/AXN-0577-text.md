@@ -1,6 +1,6 @@
 ---
-deposit_number: 1344
-hex: 0551
+deposit_number: 1382
+hex: 0577
 title: "WITHDRAWN — external work (typed tombstone)"
 content_type: Withdrawn — external work (typed tombstone)
 lifecycle_state: withdrawn_external
@@ -9,16 +9,16 @@ axn_schema_version: v2
 
 # WITHDRAWN — EXTERNAL WORK
 
-This position (AXN:0551.UNCLASSIFIED.🛡️🔄🔆🧡🏠💎) was created by an over-inclusive DataCite
+This position (AXN:0577.UNCLASSIFIED.🌘📌📋🧡🔃🔥) was created by an over-inclusive DataCite
 full-metadata capture during the post-termination restoration campaign.
 
-The work it captured — **"Axioms of the Emrick Phase Grid"** — is by
-**Matthew Craig Emrick** and is NOT a holding of this archive. It belongs to its author at
-DOI **10.5281/zenodo.19341561**, where it should be cited and accessed.
+The work it captured — **"Semantic Physics: A Transport Theory of Held Meaning (An Entry Paper)"** — is by
+**Jonas Jakob Gebendörfer** and is NOT a holding of this archive. It belongs to its author at
+DOI **10.5281/zenodo.19825269**, where it should be cited and accessed.
 
 The captured metadata and content have been removed. This position is retained
 as a typed tombstone (no 404) to document the capture-and-withdrawal honestly
-rather than silently erase it. No content of Matthew Craig Emrick's work is served here,
+rather than silently erase it. No content of Jonas Jakob Gebendörfer's work is served here,
 and no archive identifier (ORCID or otherwise) attaches to their work.
 
 *MANUS foreign-capture tombstone policy (site audit 2026-07-31); propagated

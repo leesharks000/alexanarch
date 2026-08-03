@@ -57,6 +57,8 @@ def main():
         if not n:
             continue
         a = disp.get(str(n))
+        if d.get("lifecycle_state") == "withdrawn_external":
+            continue  # foreign tombstones are NEVER exposed to harvesters (SHAPE doctrine §1 row 9)
         if a and a.get("d") == "WITHHOLD":
             continue  # audit-withheld: excluded from the harvesting surface until repaired
         axn = d.get("axn") or ""
