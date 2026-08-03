@@ -306780,7 +306780,7 @@
       "creator": "Spellings, Ichabod; Sharks, Lee",
       "date": "2026-01-08",
       "description": "SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18189092, 10.5281/zenodo.18189093. Zenodo removal forensics: removal_date 2026-06-19T11:34:26.780924+00:00, removal_reason out-of-scope, removed_by user 1060945. A complete archive of xvi. a transfiguration, a 57-page poem written 2003–2004 by Ichabod Spellings, accompanied by the author's own theoretical commentary (\"A Guide for the Perplexed,\" dated April 22, 2004) and a comprehensive provenance document. This deposit preserves: 1. The completed poem (PDF, 57 pages) — A four-part structure modeled on Dante's Commedia, framed by invocations to Caedmon, the Anglo-Saxon poet commanded by an angel to sing creation. The work embeds a complete inhabitation of Sappho Fragment 31 and channels Ginsberg's \"Howl\" through its apocalyptic middle sections. 2. \"A G Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.",
-      "content_type": "Metadata capture",
+      "content_type": "Recovered work (full text seated) — poem with authorial commentary",
       "license": "CC-BY-4.0",
       "substrate": "Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).",
       "root_axn": "AXN:0504.UNCLASSIFIED",
@@ -306867,18 +306867,19 @@
         "minted_via": "self_serve_validated_pr"
       },
       "body_status": {
-        "class": "metadata_capture",
+        "class": "full",
         "lacuna": false,
-        "recovery_status": "PASS_COMPLETE_TEXT_NOT_SEATED",
+        "recovery_status": "RECOVERED_FROM_SOURCE_FILE",
         "residual_chars": 5936,
         "audited_at": "2026-07-19T21:16:52Z",
         "audit_version": "mint-time-declaration",
         "class_before_T2": "full",
         "reclassified_by": "EA-AVAILABILITY-INTEGRITY-01-T2",
         "reclassified_at": "2026-07-28T17:49:24.756605+00:00",
-        "measured_prose_words": 68,
-        "measured_at": "2026-07-31",
-        "recovery_status_note": "The 2026-07 restoration pass ran to completion for this record and did not recover canonical bytes. 'COMPLETE' previously denoted pass completion and was read as text completeness; renamed 2026-07-31 so the two claims cannot be confused."
+        "measured_prose_words": 5656,
+        "measured_at": "2026-08-02",
+        "recovery_status_note": "Canonical bytes recovered 2026-08-02 from MANUS-provided source .docx (xvi__a_transfiguration.docx). Previously PASS_COMPLETE_TEXT_NOT_SEATED (metadata capture only); full authorial text + 2004 epistolary preface now seated.",
+        "recovered_at": "2026-08-02"
       },
       "references_concepts": [
         "Crimson Hexagon Archive",
@@ -306975,9 +306976,16 @@
           "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
           "was": "16 terms",
           "now": "12 terms"
+        },
+        {
+          "date": "2026-08-02",
+          "field": "body_status",
+          "reason": "Full text RECOVERED and seated from MANUS-provided source .docx (5,656 words: complete poem + 2004 preface to Dr. Aguirre). Was PASS_COMPLETE_TEXT_NOT_SEATED metadata stub.",
+          "was": "5900ch metadata stub (755w)",
+          "now": "34070ch full text (5656w)"
         }
       ],
-      "date_modified": "2026-07-31"
+      "date_modified": "2026-08-02"
     },
     {
       "deposit_number": 1268,
