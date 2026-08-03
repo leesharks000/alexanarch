@@ -103,6 +103,69 @@ from the v2.0 canonical set: `alexanarch_audit_master_index_v1.0.json` · `alexa
 8. **No API self-invocation** for repair work; all LLM-domain work happens in-session (no-double-draw).
 9. Private correspondence never enters records, capsules, or commit messages; third-party names require documented consent (§7 CP-7).
 
+## 5b. REPAIR PIPELINE DYNAMICS — mandatory for every repair, every instance
+
+**Why this section exists.** Two live fractures (#1267, #1308) proved that a repair landing in
+`registry.json` alone is not a repair — it is a NEW inconsistency. A record's state is declared in
+NINE sites (full doctrine: `RECORD-SHAPE-AND-PROPAGATION-v1.0.md`, same directory). A repair that
+reaches some sites and not others converts one defect into several.
+
+**THE RULE: a repair is INSCRIBED at the ledger row and DONE only when propagation has run.**
+Never mark a wave complete, never report a record fixed, never tell MANUS "restored" until step 6
+below has finished without error.
+
+**The pipeline (every repair round, in this order):**
+
+```
+0. PRECONDITIONS
+   git pull --rebase                      # remote moves (fanout jobs, witness commits)
+   verify dispositions source_ledger_sha256 matches newest merged ledger (§9 merge first if not)
+   confirm frozen commit unchanged (055429ac…) — audit reads snapshot, repairs land on main
+
+1. INSCRIBE   repair_ledger.json row(s) — basis, before/after, sealed audit_ref, wave tag
+2. APPLY      the field/body change in registry.json and/or data/texts/AXN-XXXX-text.md
+              · staged-text edits preserve frontmatter unless the state itself changed
+              · tombstones/withdrawals: the STAGED TEXT is rewritten too (foreign content out,
+                NO archive ORCID on foreign work) — the propagator does this when
+                lifecycle_state=withdrawn_external
+3. PROPAGATE  python3 scripts/propagate_record_state.py N [N …]
+              which runs, in order: tombstone-text rewrite (if applicable) →
+              status_reconcile --apply → wire_deposit.regenerate_static_page per N →
+              regenerate_surfaces (chunks,browse,browse-index,search-index,wiki,sitemap) →
+              build_central_registry → build_oai_index
+4. VERIFY     grep the regenerated s/records/N/index.html for the OLD state string (must be 0)
+              and the NEW state string (must be >0); spot-check staged text
+5. LOG        append a Decisions-log row in THIS file (date, what, counts, operator)
+6. PUSH       commit with a message naming the wave/basis; git push; if rejected, pull --rebase
+              (never reset over uncommitted work — commit FIRST, then rebase)
+7. LIVE CHECK (when feasible) curl the live page after ~2 min; deploys lag — a stale live page
+              with a correct repo page is propagation delay, not failure; re-check before alarming
+```
+
+**Batch waves:** steps 1–2 run per-row; steps 3–7 run ONCE per batch with all Ns (or `--all-touched`).
+
+**Renderer states the pipeline knows:** SUPERSEDED, metadata_capture (semi-restored, with/without
+full_version pointer), DRAFT_PENDING, and `lifecycle_state=withdrawn_external` (red tombstone,
+highest priority; ALWAYS excluded from the OAI feed at the builder gate, independent of disposition).
+If a repair introduces a state the renderer has no branch for, TEACH THE RENDERER FIRST
+(wire_deposit.py banner block), then propagate — otherwise the page will misdeclare.
+
+**Known traps (each cost a real round):**
+- Registry-only fixes: page/chunks/OAI keep the old state (the #1267/#1308 class).
+- Staged-text frontmatter disagreeing with registry fields — sync both or status drifts back.
+- `git reset --hard` after editing but before committing: DESTROYS the edit (commit first).
+- Remote moves mid-round (fanout/witness commits): expect push rejects; pull --rebase resolves.
+- Foreign works: NEVER carry the archive ORCID in any frontmatter, sidecar, or page.
+- The resolver/backfill class: any record with resolver_lock=true is NEVER auto-resolved (see
+  data/lacuna-recovery-queue.json doctrine); version-gate all body matches.
+- Audit recommendations for foreign captures may say "recover the article" — that is the
+  FOREIGN_CAPTURE→WITHDRAW disposition instead (typed tombstone; MANUS policy 2026-07-31).
+
+**Authority boundaries (BATCH-AUTHORITY, MANUS 2026-08-02):** mechanical classes run under standing
+batch approval (version-truth, type normalization, journal names); anything touching creator fields,
+type vocabulary beyond the ratified list, external persons, or new policy WAITS for a MANUS batch
+ruling. MANUS rules by policy; TACHYON executes; nothing is decided per-row by the machine.
+
 ## 6. Phase plan
 
 **Phase 0 — Gate the feed.** *Status: dispositions file BUILT (`data/audit/registration_dispositions.json`, 717 entries: 241/364/112). Builder patch PENDING.*
@@ -186,4 +249,4 @@ On arrival of any new cumulative package (first-500 imminent; later boundary pac
 
 ## 10. Resume protocol (any instance, cold start)
 
-1. Read this file in full. 2. Check `repair_ledger.json` tail for last completed action and wave. 3. Compare `registration_dispositions.json` `source_ledger_sha256` against the newest ledger in this directory — mismatch means a merge (§9) is due before any repair. 4. Confirm the frozen commit in §3 matches the newest START_HERE — a new freeze means LABOR re-based; verify repairs and audit still target different sources before proceeding. 5. Never repair outside audited ranges; never act without a ledger row basis; when in doubt, regenerate the dry-run diff and ask MANUS. 6. `history/` holds superseded audit chains for provenance; the active canonical set at this directory's root governs all repair. 7. Intermediary artifacts referenced but not seated may exist in prior Claude threads — search past conversations before declaring absence (the archival search protocol applies to the workstream's own history).
+1. Read this file in full — §5b (REPAIR PIPELINE DYNAMICS) is mandatory before any repair. 2. Check `repair_ledger.json` tail for last completed action and wave. 3. Compare `registration_dispositions.json` `source_ledger_sha256` against the newest ledger in this directory — mismatch means a merge (§9) is due before any repair. 4. Confirm the frozen commit in §3 matches the newest START_HERE — a new freeze means LABOR re-based; verify repairs and audit still target different sources before proceeding. 5. Never repair outside audited ranges; never act without a ledger row basis; when in doubt, regenerate the dry-run diff and ask MANUS. 6. `history/` holds superseded audit chains for provenance; the active canonical set at this directory's root governs all repair. 7. Intermediary artifacts referenced but not seated may exist in prior Claude threads — search past conversations before declaring absence (the archival search protocol applies to the workstream's own history).
