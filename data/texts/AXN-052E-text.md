@@ -42,7 +42,7 @@ Assembled from DataCite full-metadata capture; no live authorial surface passed 
 
 Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
 
-## SEMI-RESTORED RECORD — metadata capture only
+## PURE APZPZ — COMPLETE AS DEPOSITED (reclassified 2026-08-04, MANUS ruling): the description field is this work's entire body by design ("ATTACH ZERO FILES"); this capture preserves it whole.
 
 **Work:** APZPZ A: ΣΑΠΦΩ 31 (Greek Only) DOI: 10.5281/zenodo.18459278 — Crimson Hexagon Archive
 **Severed DOI(s):** 10.5281/zenodo.18459278, 10.5281/zenodo.18459277
@@ -131,4 +131,4 @@ Crimson Hexagon
 
 ---
 
-*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*
+*The work is complete as deposited: a pure APZPZ has no file to lose, and the captured description field IS the canonical body. This record exists so the DOI resolves to the work itself.*
