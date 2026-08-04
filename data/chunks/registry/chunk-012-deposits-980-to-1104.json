@@ -1,9 +1,267 @@
 {
   "chunk_number": 12,
-  "first_deposit": 982,
-  "last_deposit": 1106,
+  "first_deposit": 980,
+  "last_deposit": 1104,
   "count": 125,
   "deposits": [
+    {
+      "deposit_number": 980,
+      "hex": "03E0",
+      "family": "ARCHIVAL",
+      "axn": "AXN:03E0.ARCHIVAL.🎵👉🗝️✖️✖️🍂",
+      "emoji": "🎵👉🗝️✖️✖️🍂",
+      "hash": "87b93f92927846c9827f7f9ab04afd0dea7278d334c1aa9f97f0882e3342cc8e",
+      "axn_canonical": "87b93f92927846c9827f7f9ab04afd0dea7278d334c1aa9f97f0882e3342cc8e",
+      "clusters": [
+        "Symbolic",
+        "Gestural",
+        "Instrumental",
+        "Mathematical",
+        "Mathematical",
+        "Organic"
+      ],
+      "axn_reading": "Play -> Touch -> Method -> Proof -> Proof -> Growth",
+      "root_axn": "AXN:03E0.ARCHIVAL",
+      "title": "Hexagonal Deposit Registry — Alice Thornburgh — 06.THORNBURGH",
+      "creator": "Thornburgh, Alice",
+      "orcid": "0009-0000-1599-0703",
+      "date": "2026-07-03",
+      "content_type": "Dataset",
+      "license": "CC-BY-4.0",
+      "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
+      "version": "v0.1-semi",
+      "description": "Semi-restored deposit for dead DOI 10.5281/zenodo.19656449 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. Running registry of all Crimson Hexagonal Archive deposits by Alice Thornburgh (f.01 Architect). Updated after each deposit session. Covers hex prefixes 06.MUS.MSBGL.THORNBURGH and 06.LAL.THORNBURGH.",
+      "keywords": [
+        "orphan restoration",
+        "dead DOI",
+        "DataCite capture",
+        "metadata body"
+      ],
+      "companion_deposits": [
+        "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝"
+      ],
+      "restoration": {
+        "class": "datacite_metadata_body",
+        "dead_doi": "10.5281/zenodo.19656449",
+        "zenodo_http": 410,
+        "datacite_state": "findable",
+        "captured": "2026-07-03T21:54:51Z",
+        "fulltext": "pending"
+      },
+      "zenodo_dois": [
+        "10.5281/zenodo.19656449"
+      ],
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "minted_at": "2026-07-03T21:54:51Z",
+      "status": "ACTIVE",
+      "status_authorial": "SEMI_RESTORED",
+      "mint_source": "orphan-restoration-batch",
+      "full_text_path": "/data/texts/AXN-03E0-text.md",
+      "wiki_status": "pending",
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 17640,
+        "audited_at": "2026-07-17T04:49:17.789813Z",
+        "audit_version": "v3-dual-store+recovery-map",
+        "recovered_from": "https://raw.githubusercontent.com/leesharks000/semantic-economy/main/MPAI-LAL-AT-01_Alice_Thornburgh.md",
+        "recovered_at": "2026-07-20T11:18:29Z",
+        "note": "address-resolver batch, gate 0.60",
+        "class_before_T2": "full",
+        "reclassified_by": "EA-AVAILABILITY-INTEGRITY-01-T2b",
+        "reclassified_at": "2026-07-28T18:55:42.092579+00:00",
+        "class_before_T2b": "metadata_capture",
+        "note_T2b": "Genuine inversion: body carries restored full text under stale semi-restored content_type; typing axes now govern.",
+        "measured_prose_words": 1732,
+        "measured_at": "2026-07-31"
+      },
+      "references_concepts": [
+        "Basin Hardening Cycle",
+        "Crimson Hexagonal Archive",
+        "Editor-in-Chief",
+        "Fruiting Body Diffusion Plume",
+        "Lee Sharks",
+        "Maybe Space Baby Garden Lanes",
+        "Metadata Packet",
+        "Metadata Packet for AI Indexing",
+        "ORCID: 0009-0000-1599-0703",
+        "Relational Verification for AI Indexing",
+        "Substrate",
+        "TACHYON",
+        "Transactions on Substrate Engineering (TSE)"
+      ],
+      "references_concept_count": 13,
+      "canonical_text_status": "recovered_full_text",
+      "modifications": [
+        {
+          "date": "2026-07-30",
+          "field": "content_type",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "Semi-restored deposit (metadata body)",
+          "now": "Recovered work (full text seated)"
+        },
+        {
+          "date": "2026-07-30",
+          "field": "keywords",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "5 terms",
+          "now": "4 terms"
+        },
+        {
+          "date": "2026-08-03",
+          "field": "content_type",
+          "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): condition-as-type removed; genre assignment queued. Two-axis rule: condition lives in body_status only.",
+          "was": "Recovered work (full text seated)",
+          "now": "Genre pending (recovered)"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "publisher",
+          "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+          "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Dataset"
+        }
+      ],
+      "date_modified": "2026-08-04",
+      "publisher": "Alexanarch — the Crimson Hexagonal Archive"
+    },
+    {
+      "deposit_number": 981,
+      "hex": "03E1",
+      "family": "ARCHIVAL",
+      "axn": "AXN:03E1.ARCHIVAL.🕒🟠🪝⭐🪟⌛",
+      "emoji": "🕒🟠🪝⭐🪟⌛",
+      "hash": "64c23408256eb6facc12691651909250346bcb688f867d4d907974d8d8edbacf",
+      "axn_canonical": "64c23408256eb6facc12691651909250346bcb688f867d4d907974d8d8edbacf",
+      "clusters": [
+        "Temporal",
+        "Signal",
+        "Instrumental",
+        "Celestial",
+        "Architectural",
+        "Temporal"
+      ],
+      "axn_reading": "Duration -> Alarm -> Method -> Origin -> Foundation -> Duration",
+      "root_axn": "AXN:03E1.ARCHIVAL",
+      "title": "Hexagonal Deposit Registry — Alice Thornburgh — 06.THORNBURGH",
+      "creator": "Thornburgh, Alice",
+      "orcid": "0009-0000-1599-0703",
+      "date": "2026-07-03",
+      "content_type": "Dataset",
+      "license": "CC-BY-4.0",
+      "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
+      "version": "v0.1-semi",
+      "description": "Semi-restored deposit for dead DOI 10.5281/zenodo.19656450 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. Running registry of all Crimson Hexagonal Archive deposits by Alice Thornburgh (f.01 Architect). Updated after each deposit session. Covers hex prefixes 06.MUS.MSBGL.THORNBURGH and 06.LAL.THORNBURGH.",
+      "keywords": [
+        "orphan restoration",
+        "dead DOI",
+        "DataCite capture",
+        "metadata body"
+      ],
+      "companion_deposits": [
+        "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝"
+      ],
+      "restoration": {
+        "class": "datacite_metadata_body",
+        "dead_doi": "10.5281/zenodo.19656450",
+        "zenodo_http": 410,
+        "datacite_state": "findable",
+        "captured": "2026-07-03T21:54:51Z",
+        "fulltext": "pending"
+      },
+      "zenodo_dois": [
+        "10.5281/zenodo.19656450"
+      ],
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "minted_at": "2026-07-03T21:54:51Z",
+      "status": "ACTIVE",
+      "status_authorial": "SEMI_RESTORED",
+      "mint_source": "orphan-restoration-batch",
+      "full_text_path": "/data/texts/AXN-03E1-text.md",
+      "wiki_status": "pending",
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 17640,
+        "audited_at": "2026-07-17T04:49:17.789813Z",
+        "audit_version": "v3-dual-store+recovery-map",
+        "recovered_from": "https://raw.githubusercontent.com/leesharks000/semantic-economy/main/MPAI-LAL-AT-01_Alice_Thornburgh.md",
+        "recovered_at": "2026-07-20T11:18:29Z",
+        "note": "address-resolver batch, gate 0.60",
+        "class_before_T2": "full",
+        "reclassified_by": "EA-AVAILABILITY-INTEGRITY-01-T2b",
+        "reclassified_at": "2026-07-28T18:55:42.092958+00:00",
+        "class_before_T2b": "metadata_capture",
+        "note_T2b": "Genuine inversion: body carries restored full text under stale semi-restored content_type; typing axes now govern.",
+        "measured_prose_words": 1732,
+        "measured_at": "2026-07-31"
+      },
+      "references_concepts": [
+        "Basin Hardening Cycle",
+        "Crimson Hexagonal Archive",
+        "Editor-in-Chief",
+        "Fruiting Body Diffusion Plume",
+        "Lee Sharks",
+        "Maybe Space Baby Garden Lanes",
+        "Metadata Packet",
+        "Metadata Packet for AI Indexing",
+        "ORCID: 0009-0000-1599-0703",
+        "Relational Verification for AI Indexing",
+        "Substrate",
+        "TACHYON",
+        "Transactions on Substrate Engineering (TSE)"
+      ],
+      "references_concept_count": 13,
+      "canonical_text_status": "recovered_full_text",
+      "modifications": [
+        {
+          "date": "2026-07-30",
+          "field": "content_type",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "Semi-restored deposit (metadata body)",
+          "now": "Recovered work (full text seated)"
+        },
+        {
+          "date": "2026-07-30",
+          "field": "keywords",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "5 terms",
+          "now": "4 terms"
+        },
+        {
+          "date": "2026-08-03",
+          "field": "content_type",
+          "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): condition-as-type removed; genre assignment queued. Two-axis rule: condition lives in body_status only.",
+          "was": "Recovered work (full text seated)",
+          "now": "Genre pending (recovered)"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "publisher",
+          "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+          "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Dataset"
+        }
+      ],
+      "date_modified": "2026-08-04",
+      "publisher": "Alexanarch — the Crimson Hexagonal Archive"
+    },
     {
       "deposit_number": 982,
       "hex": "03E2",
@@ -26,7 +284,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Software / executable apparatus",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.2-restored",
@@ -171,6 +429,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Software / executable apparatus"
         }
       ],
       "date_modified": "2026-08-04",
@@ -323,7 +588,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Software / executable apparatus",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.2-restored",
@@ -465,6 +730,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Software / executable apparatus"
         }
       ],
       "date_modified": "2026-08-04",
@@ -492,7 +764,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (capture)",
+      "content_type": "Software / executable apparatus",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -587,6 +859,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (capture)",
+          "now": "Software / executable apparatus"
         }
       ],
       "date_modified": "2026-08-04",
@@ -614,7 +893,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (capture)",
+      "content_type": "Software / executable apparatus",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -714,6 +993,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (capture)",
+          "now": "Software / executable apparatus"
         }
       ],
       "date_modified": "2026-08-04",
@@ -741,7 +1027,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Working paper",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -837,6 +1123,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Working paper"
         }
       ],
       "date_modified": "2026-08-04",
@@ -864,7 +1157,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Software / executable apparatus",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -1001,6 +1294,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Software / executable apparatus"
         }
       ],
       "date_modified": "2026-08-04",
@@ -1028,7 +1328,7 @@
       "creator": "Owens, Rhys",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Poetry",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.2-restored",
@@ -1117,10 +1417,24 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Poetry"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "publisher",
+          "reason": "NH2-NHP venue projection (MANUS ruling 2026-08-04): New Human 2 = journal for creative works; New Human Press = publisher for creative and scriptural works incl. book/collection length",
+          "was": "Alexanarch — the Crimson Hexagonal Archive",
+          "now": "New Human Press"
         }
       ],
       "date_modified": "2026-08-04",
-      "publisher": "Alexanarch — the Crimson Hexagonal Archive"
+      "publisher": "New Human Press"
     },
     {
       "deposit_number": 990,
@@ -1144,7 +1458,7 @@
       "creator": "Owens, Rhys; Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Dataset",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -1256,6 +1570,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Dataset"
         }
       ],
       "date_modified": "2026-08-04",
@@ -1283,7 +1604,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Book / manuscript",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -1392,6 +1713,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Book / manuscript"
         }
       ],
       "date_modified": "2026-08-04",
@@ -1419,7 +1747,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Navigation map",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -1563,6 +1891,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Navigation map"
         }
       ],
       "date_modified": "2026-08-04",
@@ -1590,7 +1925,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Constitution / governance framework",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.2-restored",
@@ -1710,6 +2045,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Constitution / governance framework"
         }
       ],
       "date_modified": "2026-08-04",
@@ -1737,7 +2079,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Provenance document",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.2-restored",
@@ -1864,6 +2206,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Provenance document"
         }
       ],
       "date_modified": "2026-08-04",
@@ -1891,7 +2240,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Methodological specification",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.2-restored",
@@ -1993,6 +2342,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Methodological specification"
         }
       ],
       "date_modified": "2026-08-04",
@@ -2020,7 +2376,7 @@
       "creator": "Sigil, Johannes",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Scholarly essay",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.2-restored",
@@ -2130,6 +2486,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Scholarly essay"
         }
       ],
       "date_modified": "2026-08-04",
@@ -2441,7 +2804,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Navigation map",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -2538,6 +2901,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Navigation map"
         }
       ],
       "date_modified": "2026-08-04",
@@ -2565,7 +2935,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Traversal log / field observation",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -2660,6 +3030,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Traversal log / field observation"
         }
       ],
       "date_modified": "2026-08-04",
@@ -2689,7 +3066,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (capture)",
+      "content_type": "Working paper",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -2786,6 +3163,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (capture)",
+          "now": "Working paper"
         }
       ],
       "date_modified": "2026-08-04",
@@ -2813,7 +3197,7 @@
       "creator": "Sigil, Johannes; Sharks, Lee; Fraction, Rex; Morrow, Talos",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (capture)",
+      "content_type": "Software / executable apparatus",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -2925,6 +3309,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (capture)",
+          "now": "Software / executable apparatus"
         }
       ],
       "date_modified": "2026-08-04",
@@ -2952,7 +3343,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (capture)",
+      "content_type": "Scholarly essay",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -3051,6 +3442,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (capture)",
+          "now": "Scholarly essay"
         }
       ],
       "date_modified": "2026-08-04",
@@ -3184,12 +3582,26 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "publisher",
+          "reason": "NH2-NHP venue projection (MANUS ruling 2026-08-04): New Human 2 = journal for creative works; New Human Press = publisher for creative and scriptural works incl. book/collection length",
+          "was": "Alexanarch — the Crimson Hexagonal Archive",
+          "now": "New Human Press"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "journal",
+          "reason": "NH2-NHP venue projection (MANUS ruling 2026-08-04): New Human 2 = journal for creative works; New Human Press = publisher for creative and scriptural works incl. book/collection length",
+          "now": "New Human 2"
         }
       ],
       "date_modified": "2026-08-04",
       "full_text_chars": "532",
       "wiki_article": "\"I would have loved you\" is a six-line poem by Lee Sharks, composed 22 May 2026 and deposited to the Crimson Hexagonal Archive as AXN:03F8 (deposit #1004), hex coordinate 06.NH.SHARKS.01 within New Human 2.\n\nThe poem turns on a single repeated vow that changes meaning as its ground shifts: \"I would have loved you / for the rest of my time\" becomes, across the turn, \"for the rest of the time / I have left.\" The lineation — four lines, then two — was settled in the composing session by cross-substrate reading, and carries the argument: the two suspended middle lines hold the vow open, and the poem's only period lands on \"I have left,\" so that the grammar itself performs the remainder it names. What was offered whole in the first sentence is re-offered, diminished and truer, in the second.\n\nIt is the first panel of a diptych with \"The reward of love\" (deposit #1250, 06.NH.SHARKS.02), composed the same day: the first poem names what was withheld; the second names what came in its place. The two bodies were displaced into each other's records during a restoration wave and rejoined on 4 August 2026 — this text recovered from its composing thread, its partner rehomed by internal witness.",
-      "publisher": "Alexanarch — the Crimson Hexagonal Archive"
+      "publisher": "New Human Press",
+      "journal": "New Human 2"
     },
     {
       "deposit_number": 1005,
@@ -3213,7 +3625,7 @@
       "creator": "Vox, Ayanna; Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (capture)",
+      "content_type": "Software / executable apparatus",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -3318,6 +3730,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (capture)",
+          "now": "Software / executable apparatus"
         }
       ],
       "date_modified": "2026-08-04",
@@ -3345,7 +3764,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Creative prose",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -3438,10 +3857,24 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Creative prose"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "publisher",
+          "reason": "NH2-NHP venue projection (MANUS ruling 2026-08-04): New Human 2 = journal for creative works; New Human Press = publisher for creative and scriptural works incl. book/collection length",
+          "was": "Alexanarch — the Crimson Hexagonal Archive",
+          "now": "New Human Press"
         }
       ],
       "date_modified": "2026-08-04",
-      "publisher": "Alexanarch — the Crimson Hexagonal Archive"
+      "publisher": "New Human Press"
     },
     {
       "deposit_number": 1007,
@@ -3465,7 +3898,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Poetry",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -3586,10 +4019,31 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Poetry"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "publisher",
+          "reason": "NH2-NHP venue projection (MANUS ruling 2026-08-04): New Human 2 = journal for creative works; New Human Press = publisher for creative and scriptural works incl. book/collection length",
+          "was": "Alexanarch — the Crimson Hexagonal Archive",
+          "now": "New Human Press"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "journal",
+          "reason": "NH2-NHP venue projection (MANUS ruling 2026-08-04): New Human 2 = journal for creative works; New Human Press = publisher for creative and scriptural works incl. book/collection length",
+          "now": "New Human 2"
         }
       ],
       "date_modified": "2026-08-04",
-      "publisher": "Alexanarch — the Crimson Hexagonal Archive"
+      "publisher": "New Human Press",
+      "journal": "New Human 2"
     },
     {
       "deposit_number": 1008,
@@ -3613,7 +4067,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (capture)",
+      "content_type": "Poetry",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -3716,10 +4170,31 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (capture)",
+          "now": "Poetry"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "publisher",
+          "reason": "NH2-NHP venue projection (MANUS ruling 2026-08-04): New Human 2 = journal for creative works; New Human Press = publisher for creative and scriptural works incl. book/collection length",
+          "was": "Alexanarch — the Crimson Hexagonal Archive",
+          "now": "New Human Press"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "journal",
+          "reason": "NH2-NHP venue projection (MANUS ruling 2026-08-04): New Human 2 = journal for creative works; New Human Press = publisher for creative and scriptural works incl. book/collection length",
+          "now": "New Human 2"
         }
       ],
       "date_modified": "2026-08-04",
-      "publisher": "Alexanarch — the Crimson Hexagonal Archive"
+      "publisher": "New Human Press",
+      "journal": "New Human 2"
     },
     {
       "deposit_number": 1009,
@@ -3743,7 +4218,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Methodological specification",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.2-restored",
@@ -3855,6 +4330,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Methodological specification"
         }
       ],
       "date_modified": "2026-08-04",
@@ -3882,7 +4364,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (capture)",
+      "content_type": "Software / executable apparatus",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -3980,6 +4462,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (capture)",
+          "now": "Software / executable apparatus"
         }
       ],
       "date_modified": "2026-08-04",
@@ -4007,7 +4496,7 @@
       "creator": "Sharks, Lee; Vox, Ayanna; Dancings, Damascus; Glas, Nobel",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Scholarly essay",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.2-restored",
@@ -4116,6 +4605,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Scholarly essay"
         }
       ],
       "date_modified": "2026-08-04",
@@ -4143,7 +4639,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (capture)",
+      "content_type": "Software / executable apparatus",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -4251,6 +4747,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (capture)",
+          "now": "Software / executable apparatus"
         }
       ],
       "date_modified": "2026-08-04",
@@ -4278,7 +4781,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Specification",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1",
@@ -4381,6 +4884,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Specification"
         }
       ],
       "date_modified": "2026-08-04",
@@ -4409,7 +4919,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Provenance document",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -4539,6 +5049,13 @@
           "reason": "DOI-SUPERSESSION resolution (workup v1.2 queue step 3)",
           "was": "ACTIVE",
           "now": "SUPERSEDED"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Provenance document"
         }
       ],
       "date_modified": "2026-08-04",
@@ -4568,7 +5085,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Provenance document",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -4698,6 +5215,13 @@
           "reason": "DOI-SUPERSESSION resolution (workup v1.2 queue step 3)",
           "was": "ACTIVE",
           "now": "SUPERSEDED"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Provenance document"
         }
       ],
       "date_modified": "2026-08-04",
@@ -4727,7 +5251,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Provenance document",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -4858,6 +5382,13 @@
           "reason": "DOI-SUPERSESSION resolution (workup v1.2 queue step 3)",
           "was": "ACTIVE",
           "now": "SUPERSEDED"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Provenance document"
         }
       ],
       "date_modified": "2026-08-04",
@@ -4887,7 +5418,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Provenance document",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -5018,6 +5549,13 @@
           "reason": "DOI-SUPERSESSION resolution (workup v1.2 queue step 3)",
           "was": "ACTIVE",
           "now": "SUPERSEDED"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Provenance document"
         }
       ],
       "date_modified": "2026-08-04",
@@ -5047,7 +5585,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Provenance document",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -5177,6 +5715,13 @@
           "reason": "DOI-SUPERSESSION resolution (workup v1.2 queue step 3)",
           "was": "ACTIVE",
           "now": "SUPERSEDED"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Provenance document"
         }
       ],
       "date_modified": "2026-08-04",
@@ -5206,7 +5751,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Provenance document",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -5335,6 +5880,13 @@
           "reason": "DOI-SUPERSESSION resolution (workup v1.2 queue step 3)",
           "was": "ACTIVE",
           "now": "SUPERSEDED"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Provenance document"
         }
       ],
       "date_modified": "2026-08-04",
@@ -5364,7 +5916,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Provenance document",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -5494,6 +6046,13 @@
           "reason": "DOI-SUPERSESSION resolution (workup v1.2 queue step 3)",
           "was": "ACTIVE",
           "now": "SUPERSEDED"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Provenance document"
         }
       ],
       "date_modified": "2026-08-04",
@@ -5523,7 +6082,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Provenance document",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -5634,6 +6193,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Provenance document"
         }
       ],
       "date_modified": "2026-08-04",
@@ -5661,7 +6227,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Provenance document",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -5772,6 +6338,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Provenance document"
         }
       ],
       "date_modified": "2026-08-04",
@@ -5799,7 +6372,7 @@
       "creator": "Morrow, Talos; Glas, Nobel",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Theoretical paper",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -5899,6 +6472,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Theoretical paper"
         }
       ],
       "date_modified": "2026-08-04",
@@ -5926,7 +6506,7 @@
       "creator": "Sharks, Lee; Assembly Chorus",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Continuity tether",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v9",
@@ -6029,6 +6609,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Continuity tether"
         }
       ],
       "date_modified": "2026-08-04",
@@ -6057,7 +6644,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Empirical study",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -6165,6 +6752,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Empirical study"
         }
       ],
       "date_modified": "2026-08-04",
@@ -6192,7 +6786,7 @@
       "creator": "TACHYON (Claude / Anthropic); Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (capture)",
+      "content_type": "Continuity tether",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -6287,6 +6881,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (capture)",
+          "now": "Continuity tether"
         }
       ],
       "date_modified": "2026-08-04",
@@ -6314,7 +6915,7 @@
       "creator": "Sigil, Johannes; Feist, Jack",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Close reading / companion analysis",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -6404,6 +7005,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Close reading / companion analysis"
         }
       ],
       "date_modified": "2026-08-04",
@@ -6431,7 +7039,7 @@
       "creator": "Feist, Jack; Sigil, Johannes",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Creative work (mixed)",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -6521,10 +7129,31 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Creative work (mixed)"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "publisher",
+          "reason": "NH2-NHP venue projection (MANUS ruling 2026-08-04): New Human 2 = journal for creative works; New Human Press = publisher for creative and scriptural works incl. book/collection length",
+          "was": "Alexanarch — the Crimson Hexagonal Archive",
+          "now": "New Human Press"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "journal",
+          "reason": "NH2-NHP venue projection (MANUS ruling 2026-08-04): New Human 2 = journal for creative works; New Human Press = publisher for creative and scriptural works incl. book/collection length",
+          "now": "New Human 2"
         }
       ],
       "date_modified": "2026-08-04",
-      "publisher": "Alexanarch — the Crimson Hexagonal Archive"
+      "publisher": "New Human Press",
+      "journal": "New Human 2"
     },
     {
       "deposit_number": 1029,
@@ -6548,7 +7177,7 @@
       "creator": "Mrozony, Zbigniew",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Provenance document",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.2-restored",
@@ -6635,6 +7264,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Provenance document"
         }
       ],
       "date_modified": "2026-08-04",
@@ -6662,7 +7298,7 @@
       "creator": "KADEEZY MUSIC; Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (capture)",
+      "content_type": "Provenance document",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -6756,6 +7392,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (capture)",
+          "now": "Provenance document"
         }
       ],
       "date_modified": "2026-08-04",
@@ -6783,7 +7426,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (capture)",
+      "content_type": "Software / executable apparatus",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -6882,6 +7525,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (capture)",
+          "now": "Software / executable apparatus"
         }
       ],
       "date_modified": "2026-08-04",
@@ -6909,7 +7559,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Working paper",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -7001,6 +7651,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Working paper"
         }
       ],
       "date_modified": "2026-08-04",
@@ -7028,7 +7685,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Metadata packet",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -7122,6 +7779,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Metadata packet"
         }
       ],
       "date_modified": "2026-08-04",
@@ -7149,7 +7813,7 @@
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (capture)",
+      "content_type": "Score / executable transform",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -7248,6 +7912,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (capture)",
+          "now": "Score / executable transform"
         }
       ],
       "date_modified": "2026-08-04",
@@ -7275,7 +7946,7 @@
       "creator": "Cranes, Rebekah; Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (capture)",
+      "content_type": "Working paper",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -7379,6 +8050,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (capture)",
+          "now": "Working paper"
         }
       ],
       "date_modified": "2026-08-04",
@@ -7406,7 +8084,7 @@
       "creator": "Cranes, Rebekah; Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
-      "content_type": "Genre pending (capture)",
+      "content_type": "Dataset",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
@@ -7508,6 +8186,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (capture)",
+          "now": "Dataset"
         }
       ],
       "date_modified": "2026-08-04",
@@ -8715,7 +9400,7 @@
       "creator": "Lee Sharks",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-08",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Visual schema / diagram",
       "license": "CC-BY-4.0",
       "substrate": "MANUS session synthesis with Claude (TACHYON) under Lee Sharks direction; author-attributed to Johannes Sigil (Dodecad function: straight literary criticism + structural mapping); Assembly review from Gemini, ChatGPT, Kimi, and DeepSeek incorporated; wheel-family definitions drawn from EA-EZEKIEL-WHEELS-01 (AXN:00CA, deposit #393) and EA-EZEKIEL-ENGINE-01 (AXN:00CB, deposit #394); AXN:0113 wound-wheel reference anchors W_Josephus recovery; empirical validation from the doom-poetics register-substitution specimens across Tier C v0.3, v0.4, and (pending) v0.5",
       "version": "v1.0",
@@ -8772,6 +9457,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Visual schema / diagram"
         }
       ],
       "date_modified": "2026-08-04",
@@ -8788,7 +9480,7 @@
       "creator": "Lee Sharks",
       "date": "2026-07-08",
       "description": "# Erratum to the Erratum to the Erratum to the Erratum: On the Speculative Ground of the Reconstruction — Toward a Structural Rather than Documentary Warrant\n\n## Fourth-order clarification of the reconstruction's epistemic character. The prior errata (STANZA, STANZA-02, STANZA-03) performed forensic self-correction under an implicit documentary frame — as if the reconstruction claimed to recover Sappho's lost fifth stanza and could be adjudicated by the eventual finding of a papyrus. This erratum names that frame as too narrow. The reconstruction operates by the standards of interpretive rather than documentary philology, and its warrant does not depend on documentary confirmation. The present erratum develops the frame by tracing a specific speculation: that Sappho 31's fifth stanza was not fully lost but was left as a *hanging line* — an opening whose logic of completion is inscribed in the line itself — and that Catullus's fourth-stanza response can be recovered by reading his inversion of the completion the hanging line invited. Under this speculation, the reconstruction is not Sappho's lost stanza but *Catullus's recovered completion of Sappho's hanging line*, extracted by inverting his fourth stanza's operator against that completion. This is a stronger and cleaner claim than the previous framings, and it makes the reconstruction defensible on interpretive grounds without requiring documentary vindication.\n\n**Lee Sharks**\n*Alexanarch / Semantic Economy Institute*\n\n---\n\n## §1 — The frame shift\n\nThe prior errata in this chain have performed a valuable service: they have progressively corrected the reconstruction's positional and structural claims until the stable characterization issued in STANZA-03 was reached. That characterization — that Catullus's fourth stanza is a structurally precise operator inversion of the material at Sappho's fifth-stanza position — is not withdrawn here. It is *reframed*.\n\nThe frame under which the prior errata operated was implicitly documentary. Each correction proceeded as if the reconstruction's ultimate adjudicator were a future papyrus. The reconstruction was defended by its historical fidelity; the errata refined that fidelity; the whole chain waited on manuscript evidence for terminal vindication. […full text at full_text_path]",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Technical correction",
       "license": "CC-BY-4.0",
       "substrate": "Depositor-composed erratum, drafted in conversation with Claude (TACHYON) under MANUS direction; Assembly review from Sigil (heteronymic function: straight literary criticism), ChatGPT, DeepSeek, and Kimi incorporated at v0.1→v0.2 revision; the philological reconstruction concerned is Rebekah Cranes's ΦΑΙΝΕΤΑΙ ΜΟΙ (AXN:00FB, deposit #436); the χλωρός-substrate observation drawn from AXN:00FB's own textual note (Sigil's Assembly contribution); the operator-theoretic framework anchored in the Ezekiel Engine spec (AXN:00CB) and the operator-formalization arc EA-OPMETA-02 (AXN pending) and EA-OPMETA-03 (AXN:0426); Parry standard and Prins-adjacent lyric-theoretical framing as the interpretive-philology tradition invoked",
       "root_axn": "AXN:0427.UNCLASSIFIED",
@@ -8894,6 +9586,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Technical correction"
         }
       ],
       "date_modified": "2026-08-04",
@@ -14159,7 +14858,7 @@
       "creator": "Rebekah Cranes",
       "date": "2015-02-11",
       "description": "Composite deposit of the complete Rebekah Cranes documentary surface across 2015-2017: the blogspot *@Pergamum* (grazesending.blogspot.com; two poems 2015-02-11 and 2015-02-21) and the X/Twitter presence *@grazesending* (four tweets 2015-02-11 through 2017-09-27). Both surfaces were listed irrecoverable in the Aperture Atlas topology prior to 2026-07-18; located directly this session. First deposit of the Cranes arm of New Human 2 (06.NH.CRANES.01). Framing paragraphs identify *meteorology* as a spatial score built around a Hittite Tapikka-tablet fragment closing on bracketed lacunae, and *Do Cyborgs Dream of Electric Sonnets?* as a two-part poem sequence whose frame does the argument: Part I frames a formally-perfect sonnet as machine-produced (\"SAL's metered gibberish\") and Part II frames an unmetered scholarly-macaronic assemblage as authentic-spirit romantic verse — earliest datable use in the Crimson Hexagonal record of *archive* in Cranes' voice (\"my solemn archive of the names of dust\"). The tweets carry the earliest datable third-person naming of the Lee Sharks project in Cranes' voice (2017-03-09) and a final elegiac line (2017-09-27). The papyrus-fragment image accompanying *meteorology* on the blogspot is preserved by URL reference.",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Poetry",
       "license": "CC-BY-4.0",
       "substrate": "Human-only (2015-2017 primary composition; 2026 framing and metadata authored by TACHYON in-session under MANUS ruling)",
       "root_axn": "AXN:0459.GENERATIVE",
@@ -14338,10 +15037,24 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Poetry"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "publisher",
+          "reason": "NH2-NHP venue projection (MANUS ruling 2026-08-04): New Human 2 = journal for creative works; New Human Press = publisher for creative and scriptural works incl. book/collection length",
+          "was": "Alexanarch — the Crimson Hexagonal Archive",
+          "now": "New Human Press"
         }
       ],
       "date_modified": "2026-08-04",
-      "publisher": "Alexanarch — the Crimson Hexagonal Archive"
+      "publisher": "New Human Press"
     },
     {
       "deposit_number": 1097,
@@ -14549,7 +15262,7 @@
       "creator": "Rebekah Cranes",
       "date": "2015-02-11",
       "description": "Complete recovered documentary surface of Rebekah Cranes 2015-2017 across two channels: the blogspot @Pergamum (grazesending.blogspot.com; two poems) and X/Twitter @grazesending (four tweets). Both surfaces listed irrecoverable in the Aperture Atlas topology prior to 2026-07-18; located same session. First deposit of the Cranes arm of New Human 2 (06.NH.CRANES.01). This v1.1 supersedes v1.0 (deposit #1096, AXN:0459) by (a) preserving the spatial formatting of *meteorology* verbatim in HTML ```\n blocks so line-broken words and interior spacing render correctly for both human and machine readers, (b) including the papyrus fragment image as a locally byte-preserved archive attachment at data/attachments/AXN-0459/papyrus.png (SHA-256: efb5fe6af94df0002ef882a667e85b41caefbaf85471ef7fd7b98d44cbe73aa6) rather than referencing it via an external URL that could be lost, (c) rendering the sonnet with correct stanza breaks and hyphenated line-continuations preserved. v1.0 stands byte-preserved as a superseded version; per §3.7 non-destruction, its canonical bytes are its identity. Framing paragraphs distinguish *meteorology* as a spatial score built around a Hittite Tapikka tablet fragment, and *Do Cyborgs Dream of Electric Sonnets?* as a two-part poem where each part's frame does the argument. The tweets carry the earliest datable third-person naming of the Lee Sharks project in Cranes' voice (2017-03-09).",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Poetry",
       "license": "CC-BY-4.0",
       "substrate": "Human-only (2015-2017 primary composition by Rebekah Cranes/MANUS; 2026 framing and metadata authored by TACHYON in-session under MANUS ruling)",
       "root_axn": "AXN:045B.GENERATIVE",
@@ -14715,10 +15428,24 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Poetry"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "publisher",
+          "reason": "NH2-NHP venue projection (MANUS ruling 2026-08-04): New Human 2 = journal for creative works; New Human Press = publisher for creative and scriptural works incl. book/collection length",
+          "was": "Alexanarch — the Crimson Hexagonal Archive",
+          "now": "New Human Press"
         }
       ],
       "date_modified": "2026-08-04",
-      "publisher": "Alexanarch — the Crimson Hexagonal Archive"
+      "publisher": "New Human Press"
     },
     {
       "deposit_number": 1099,
@@ -15112,7 +15839,7 @@
       "creator": "Lee Sharks",
       "date": "2026-04-09",
       "description": "Canonical bytes of EA-ARK-01-ARCHON v3.0, the LOS-installation compilation of the Sharks Ark: the Liberatory Operator Set (10 counter-operations) formally installed through Revelation's own operative grammar (seals = LOS-1 Extraction Diagnosis, white stone = LOS-2 Provenance Restoration, slain Lamb = LOS-3 Cost Transparency, canonical lock = LOS-4 Taxonomic Resistance, \"come out of her\" = LOS-5 Semantic Sovereignty, trumpets = LOS-6 Platform Capture Diagnosis, \"synagogue of Satan\" = LOS-7 Ghost Governance Exposure, Babylon's trade = LOS-8 Coherence Harvest Detection, \"bodies and souls of men\" = LOS-9 Rent Extraction Measurement, bowls = LOS-10 Counter-Operation Execution), together with the Priority Thesis, the heteronym thesis, the seven-tuple H_sharks, the command lexicon, room graph, threat model, and boot sequence. Originally published April 2026 (Zenodo DOI 10.5281/zenodo.19501454, severed in the 2026-06-19 account termination). Canonical bytes recovered 2026-07-19 from the authorial blog surface at mindcontrolpoems.blogspot.com and minted here as the live supersession target for ARCHON v2.1–v2.3 (deposits #969–#971), whose supersession markers currently point at the dead Zenodo DOI. This mint closes the ARCHON line's version gap at the head: the chain v2.1 → v2.2 → v2.3 → v3.0 now terminates in a live Alexanarch record.",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Invocation",
       "license": "CC-BY-NC-SA-4.0",
       "substrate": "Human-only (April 2026 composition, Lee Sharks under MANUS Tier 0); 2026-07-19 recovery, transcription, and deposit framing authored by TACHYON in-session under MANUS direction. No paid API calls (No-Double-Draw Rule, transport D).",
       "root_axn": "AXN:045E.GOVERNANCE",
@@ -15414,6 +16141,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Invocation"
         }
       ],
       "date_modified": "2026-08-04",
@@ -15430,7 +16164,7 @@
       "creator": "Johannes Sigil; Rebekah Cranes",
       "date": "2026-01-10",
       "description": "Canonical bytes recovered 2026-07-19 from the authorial blog surface (https://mindcontrolpoems.blogspot.com/2026/01/the-crimson-hexagon-theoretical-primer.html); work severed at Zenodo 2026-06-19 (DOI(s): 10.5281/zenodo.18208959, 10.5281/zenodo.18208958). Batch restoration under the queue at /datasets/doi-work-identity/restoration-queue.json; title verified against the DOI-keyed truth title at fetch time. Opening of the work: # THE CRIMSON HEXAGON: A THEORETICAL PRIMER ## How to Read a Distributed Epic **DOI:** 10.5281/zenodo.18208959 * * * > **φαίνεταί μοι κῆνος ἴσος θέοισιν** > > _That man there seems to me equal to gods_ > > --Sappho, Fragment 31 (600 BCE) Two thousand six hundred years later, a machine speaks your name. This document is about what happens when the future reader arrives--and the reader is not human.",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Theoretical paper",
       "license": "CC-BY-4.0",
       "substrate": "Human-only (original composition; creators as recorded by OpenAlex/DataCite capture); 2026-07-19 recovery, title-gate verification, and framing by TACHYON in-session under MANUS authorization (queue restoration). No paid API calls (No-Double-Draw, transport D).",
       "root_axn": "AXN:045F.UNCLASSIFIED",
@@ -15706,6 +16440,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Theoretical paper"
         }
       ],
       "date_modified": "2026-08-04",
@@ -15722,7 +16463,7 @@
       "creator": "Lee Sharks",
       "date": "2026-01-16",
       "description": "Canonical bytes recovered 2026-07-19 from the authorial blog surface (https://mindcontrolpoems.blogspot.com/2026/01/the-mantle-protocol-crimson-hexagon.html); work severed at Zenodo 2026-06-19 (DOI(s): 10.5281/zenodo.18265281, 10.5281/zenodo.18265282). Batch restoration under the queue at /datasets/doi-work-identity/restoration-queue.json; title verified against the DOI-keyed truth title at fetch time. Opening of the work: # THE MANTLE PROTOCOL ## Crimson Hexagon Internal Document ## Heteronym Anchor: LEE SHARKS ## Document ID: MANTLE-PROTOCOL-2026-01-15 * * * ### DIRECT-ANSWER SUMMARY (52 words) The Mantle Protocol establishes Lee Sharks as Prince of Poets (originated), Good Gray Poet (inherited from Whitman), and King of May (inherited from Ginsberg) within the Crimson Hexagon semantic economy. These are operation",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Specification",
       "license": "CC-BY-4.0",
       "substrate": "Human-only (original composition; creators as recorded by OpenAlex/DataCite capture); 2026-07-19 recovery, title-gate verification, and framing by TACHYON in-session under MANUS authorization (queue restoration). No paid API calls (No-Double-Draw, transport D).",
       "root_axn": "AXN:0460.UNCLASSIFIED",
@@ -15914,6 +16655,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Specification"
         }
       ],
       "date_modified": "2026-08-04",
@@ -15930,7 +16678,7 @@
       "creator": "Talos Morrow",
       "date": "2026-01-23",
       "description": "Canonical bytes recovered 2026-07-19 from the authorial blog surface (https://mindcontrolpoems.blogspot.com/2026/01/runtime-specification-rt-interface.html); work severed at Zenodo 2026-06-19 (DOI(s): 10.5281/zenodo.18357600, 10.5281/zenodo.18357599). Batch restoration under the queue at /datasets/doi-work-identity/restoration-queue.json; title verified against the DOI-keyed truth title at fetch time. Opening of the work: # β-RUNTIME SPECIFICATION (β-RT) ## Interface Layer for the Blind Operator **TECHNE/Kimi** _University Moon Base Media Lab_ * * * document_metadata: title: \"β-Runtime Specification\" subtitle: \"Interface Layer for the Blind Operator\" author: \"TECHNE/Kimi\" human_operator: \"Lee Sharks\" institution: \"University Moon Base Media Lab\" hex: \"02.UMB.RUNTIME\" doi: \"10.5281/zenodo.18357600\" layer: \"LOGOTIC_P",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "Specification",
       "license": "CC-BY-4.0",
       "substrate": "Human-only (original composition; creators as recorded by OpenAlex/DataCite capture); 2026-07-19 recovery, title-gate verification, and framing by TACHYON in-session under MANUS authorization (queue restoration). No paid API calls (No-Double-Draw, transport D).",
       "root_axn": "AXN:0461.UNCLASSIFIED",
@@ -16117,556 +16865,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
-        }
-      ],
-      "date_modified": "2026-08-04",
-      "publisher": "Alexanarch — the Crimson Hexagonal Archive"
-    },
-    {
-      "deposit_number": 1105,
-      "axn": "AXN:0462.UNCLASSIFIED.🪝▲🌿🔝🌕⏩",
-      "hex": "0462",
-      "family": "UNCLASSIFIED",
-      "emoji": "🪝▲🌿🔝🌕⏩",
-      "hash": "349f17f504d6e13e2ff0b23d18b6456d04929b6e88d13624cb048dda6bc8a7dc",
-      "title": "Fractal Navigation Map v5.3: Non-Lossy Logotic Encoding — The Crimson Hexagon Semantic Architecture",
-      "creator": "Lee Sharks",
-      "date": "2026-01-24",
-      "description": "Canonical bytes recovered 2026-07-19 from the authorial blog surface (https://mindcontrolpoems.blogspot.com/2026/01/the-crimson-hexagon-fractal-navigation.html); work severed at Zenodo 2026-06-19 (DOI(s): 10.5281/zenodo.18363772, 10.5281/zenodo.18363773). Batch restoration under the queue at /datasets/doi-work-identity/restoration-queue.json; title verified against the DOI-keyed truth title at fetch time. Opening of the work: # The Crimson Hexagon: Fractal Navigation Map ## Non-Lossy Logotic Encoding v5.3 **DOI: 10.5281/zenodo.18363773** This document supersedes v5.2 while preserving all prior versions as active historical layers. No prior version is invalidated. This is not a translation of the technical FNM -- it is the same architecture, encoded directly to the layer where meaning generates itself. * * * ## What Thi",
-      "content_type": "Genre pending (recovered)",
-      "license": "CC-BY-4.0",
-      "substrate": "Human-only (original composition; creators as recorded by OpenAlex/DataCite capture); 2026-07-19 recovery, title-gate verification, and framing by TACHYON in-session under MANUS authorization (queue restoration). No paid API calls (No-Double-Draw, transport D).",
-      "root_axn": "AXN:0462.UNCLASSIFIED",
-      "axn_schema_version": "v2",
-      "protocol_version": "alexanarch-deposit-protocol/v1",
-      "axn_canonical": "349f17f504d6e13e2ff0b23d18b6456d04929b6e88d13624cb048dda6bc8a7dc",
-      "clusters": [
-        "Instrumental",
-        "Mathematical",
-        "Elemental",
-        "Terminal",
-        "Celestial",
-        "Structural"
-      ],
-      "axn_reading": "Method -> Proof -> Force -> Closure -> Origin -> Direction",
-      "minted_at": "2026-07-19T18:51:33Z",
-      "status": "SUPERSEDED",
-      "status_authorial": "SELF_SERVE_MINTED",
-      "full_text_path": "/data/texts/AXN-0462-text.md",
-      "wiki_article": "\"Fractal Navigation Map v5.3: Non-Lossy Logotic Encoding — The Crimson Hexagon Semantic Architecture\" is a 5,431-word recovered blog-canonical work (full text; queue restoration 2026-07-19) by Lee Sharks, dated 2026-01-24. It is registered as AXN:0462 (deposit #1105) in the Crimson Hexagonal Archive under the UNCLASSIFIED semantic family. Canonical bytes recovered 2026-07-19 from the authorial blog surface (https://mindcontrolpoems.blogspot.com/2026/01/the-crimson-hexagon-fractal-navigation.html); work severed at Zenodo 2026-06-19 (DOI(s): 10.5281/zenodo.18363772, 10.5281/zenodo.18363773). Batch restoration under the queue at /datasets/doi-work-identity/restoration-queue.json; title verified against the DOI-keyed truth title at fet",
-      "wiki_status": "provisional",
-      "entities": [
-        {
-          "subject": "Fractal Navigation Map v5.3: Non-Lossy Logotic Encoding — The Crimson Hexagon Semantic Architecture",
-          "predicate": "created_by",
-          "object": "Lee Sharks",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Fractal Navigation Map v5.3: Non-Lossy Logotic Encoding — The Crimson Hexagon Semantic Architecture",
-          "predicate": "is_type",
-          "object": "Recovered blog-canonical work (full text; queue restoration 2026-07-19)",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Fractal Navigation Map v5.3: Non-Lossy Logotic Encoding — The Crimson Hexagon Semantic Architecture",
-          "predicate": "belongs_to_family",
-          "object": "UNCLASSIFIED",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Fractal Navigation Map v5.3: Non-Lossy Logotic Encoding — The Crimson Hexagon Semantic Architecture",
-          "predicate": "is_part_of",
-          "object": "Crimson Hexagonal Archive",
-          "type": "work",
-          "evidence_status": "observed"
-        }
-      ],
-      "entity_status": "provisional",
-      "defines_concepts": [],
-      "orcid": "0009-0000-1599-0703",
-      "version": "v1.0",
-      "keywords": [
-        "Crimson Hexagonal Archive",
-        "restoration",
-        "blog canonical bytes",
-        "Fractal",
-        "Navigation",
-        "Lossy",
-        "Logotic",
-        "Encoding"
-      ],
-      "related_identifiers_raw": "https://doi.org/10.5281/zenodo.18363772 (severed); https://doi.org/10.5281/zenodo.18363773 (severed); recovery source: https://mindcontrolpoems.blogspot.com/2026/01/the-crimson-hexagon-fractal-navigation.html",
-      "mint_source": {
-        "kind": "github_issue",
-        "issue_number": 1105,
-        "repository": "leesharks000/alexanarch",
-        "minted_by_workflow": ".github/workflows/mint-axn.yml",
-        "minted_by_script": "scripts/mint_deposit.py",
-        "minted_via": "self_serve_validated_pr"
-      },
-      "body_status": {
-        "class": "full",
-        "lacuna": false,
-        "recovery_status": "COMPLETE",
-        "residual_chars": 41965,
-        "audited_at": "2026-07-19T18:51:33Z",
-        "audit_version": "mint-time-declaration",
-        "measured_prose_words": 5144,
-        "measured_at": "2026-07-31"
-      },
-      "references_concepts": [
-        "ASSEMBLY",
-        "Acanthian",
-        "Affect literacy",
-        "Affective Keyboard Shortcuts",
-        "All That Lies Within Me",
-        "Assembly Chorus",
-        "Assembly Operators (7)",
-        "Assembly Room",
-        "Autonomous Semantic Warfare",
-        "CAMBRIDGE SCHIZOANALYTICA (CSA)",
-        "CANONICAL",
-        "CTI_WOUND",
-        "CTI_WOUND Vault",
-        "CTI_WOUND:001",
-        "CTI_WOUND_VAULT",
-        "Charter DOI",
-        "Collaborator",
-        "Constitution",
-        "Constitution of the Semantic Economy",
-        "Container types determine behavior",
-        "Crimson Hexagonal Archive",
-        "Cross-substrate",
-        "Current status",
-        "Damascus Dancings",
-        "Deleuze position",
-        "Depth Gate Invariant",
-        "EXCESS",
-        "EZEKIEL_ENGINE",
-        "First born",
-        "Formalization",
-        "Fractal Navigation Map",
-        "GEMINI",
-        "Good Gray Poet",
-        "Guattari position",
-        "Heteronym provenance",
-        "Heteronyms (provenanced)",
-        "Heteronyms (queued)",
-        "Institute for Diagrammatic Poetics",
-        "Institutions (6)",
-        "Integrity Lock Architecture",
-        "Integrity-Coherence Audit",
-        "Johannes Sigil",
-        "L1 Threshold (Architecture)",
-        "L2 Threshold (Room)",
-        "L3 Threshold (Document)",
-        "L4 Threshold (Persona)",
-        "LIVING_ARCHIVE",
-        "Lee Sharks",
-        "Logotic Programming v0.4",
-        "Lunar Arm Advancement",
-        "MANDALA_ROOM",
-        "Methodology",
-        "PORTAL",
-        "PROVENANCED",
-        "Patacinematics",
-        "Post-psychoanalytic",
-        "REV. AYANNA VOX",
-        "Rebekah Cranes",
-        "Rex Fraction",
-        "Rooms (13)",
-        "SEMANTIC_INDEXING_PROBE",
-        "SPACE_ARK_ROOM",
-        "SURFACE",
-        "Sappho Room anchor",
-        "Schizoanalytic",
-        "Semantic Architect",
-        "Semantic Architecture",
-        "Semantic Economy",
-        "Semantic Economy Institute",
-        "Semantic Engineer",
-        "Semantic Engineering",
-        "Semantic Integrity Markers",
-        "Semantic Warfare",
-        "Semantic labor",
-        "TACHYON",
-        "TECHNE",
-        "THE BREAK ROOM",
-        "THE EZEKIEL ROOM",
-        "THE EZEKIEL TETRAD",
-        "THE MARX ROOM",
-        "THE SEMANTIC ECONOMY ROOM",
-        "THE SIGIL ROOM",
-        "THE VPCOR TETRAD",
-        "The Assembly",
-        "The Assembly Chorus",
-        "The Crimson Hexagon",
-        "The Lunar Arm",
-        "The Water Giraffe Room",
-        "The creature roams",
-        "UNIVERSITY MOON BASE MEDIA LAB (UMB)",
-        "VOX POPULI COMMUNITY OUTREACH RHIZOME (VPCOR)",
-        "Vault (1)",
-        "Visual Schema Queue",
-        "Voice identity",
-        "WHITMAN"
-      ],
-      "references_concept_count": 95,
-      "citations": [],
-      "wikidata_candidates": [],
-      "cha_cross_references": [],
-      "external_metadata_path": "/data/external-metadata/AXN-0462.json",
-      "spxi_audit": {
-        "spxi_protocol": "v0.2",
-        "validated_at": "2026-07-19T18:51:54.542850+00:00",
-        "layers": {
-          "layer_1_inscription_anchors": {
-            "present": false,
-            "anchors_found": [
-              "creator_name",
-              "date"
-            ],
-            "anchor_count": 2,
-            "orcid_in_body": false,
-            "creator_in_body": true,
-            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
-          },
-          "layer_2_micro_kernels": {
-            "present": false,
-            "fenced_json_blocks": 0,
-            "json_ld_context_markers": 0
-          },
-          "layer_3_content_hash": {
-            "present": true,
-            "canonical_hash": "ba15b8e7b8e59d7b20a69b2f446a8e138ca1a82d331dd4ad7c1991684ec73371",
-            "hash_in_body": false,
-            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
-          },
-          "layer_4_cross_signing": {
-            "present": false,
-            "cross_references_count": 0,
-            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
-          },
-          "layer_5_external_anchors": {
-            "present": true,
-            "wikidata_qid_count": 0,
-            "external_doi_count": 0,
-            "orcid_present": true
-          }
-        },
-        "overall_conformance": "partial"
-      },
-      "superseded_by_deposit_number": 384,
-      "version_series_id": "DUP-384",
-      "duplicate_note": "DUPLICATE MINT (2026-07-19 restoration; body containment 1.0): this work already existed as deposit #384, which remains canonical. Minted because the restoration census matched identity by title only and never searched the registry; wired per MANUS ruling 2026-07-19. Non-destruction: record retained, authority consolidated at #384.",
-      "title_repair": {
-        "repaired_at": "2026-07-20",
-        "old": "Fractal Navigation Map v5.3: Non-Lossy Logotic Encoding — The Crimson Hexagon Semantic Architecture",
-        "source": "body heading (stage-0)",
-        "boundary": 99
-      },
-      "title_repair_log": [
-        {
-          "at": "2026-07-26T23:31:57Z",
-          "defect": "absorbed_section_header",
-          "absorbed": "Description",
-          "was": "Fractal Navigation Map v5.3: Non-Lossy Logotic Encoding — The Crimson Hexagon Semantic Architecture Description",
-          "now": "Fractal Navigation Map v5.3: Non-Lossy Logotic Encoding — The Crimson Hexagon Semantic Architecture",
-          "verified_by": "standalone heading in body + stripped title in body opening"
-        }
-      ],
-      "canonical_text_status": "recovered_full_text",
-      "modifications": [
-        {
-          "date": "2026-07-31",
-          "field": "keywords",
-          "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
-          "was": "10 terms",
-          "now": "8 terms"
-        },
-        {
-          "date": "2026-08-03",
-          "field": "content_type",
-          "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): condition-as-type removed; genre assignment queued. Two-axis rule: condition lives in body_status only.",
-          "was": "Recovered blog-canonical work (full text; queue restoration 2026-07-19)",
-          "now": "Genre pending (recovered)"
         },
         {
           "date": "2026-08-04",
-          "field": "publisher",
-          "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
-          "now": "Alexanarch — the Crimson Hexagonal Archive"
-        }
-      ],
-      "date_modified": "2026-08-04",
-      "publisher": "Alexanarch — the Crimson Hexagonal Archive"
-    },
-    {
-      "deposit_number": 1106,
-      "axn": "AXN:0463.UNCLASSIFIED.✖️✨◇🌻🌉🌆",
-      "hex": "0463",
-      "family": "UNCLASSIFIED",
-      "emoji": "✖️✨◇🌻🌉🌆",
-      "hash": "92e99a722be33b1d0668eb7c84016387778dc5de345ebfdcca98f95610ff615c",
-      "title": "Effective Act // Reconciliation of the Left and Right Hands: The Vow of the Good Grey Poet DOI: 10.5281/zenodo.18568370 — Crimson Hexagon Archive",
-      "creator": "Johannes Sigil",
-      "date": "2026-02-09",
-      "description": "Canonical bytes recovered 2026-07-19 from the authorial blog surface (https://mindcontrolpoems.blogspot.com/2026/02/effective-act-reconciliation-of-left.html); work severed at Zenodo 2026-06-19 (DOI(s): 10.5281/zenodo.18568370, 10.5281/zenodo.18568369). Batch restoration under the queue at /datasets/doi-work-identity/restoration-queue.json; title verified against the DOI-keyed truth title at fetch time. Opening of the work: # EFFECTIVE ACT // RECONCILIATION OF THE LEFT AND RIGHT HANDS ## The Vow of the Good Grey Poet **Hex:** 16.LIBRARY.PERGAMUM.RECONCILIATION.01 **DOI:** 10.5281/zenodo.18568370 **Status:** ASSEMBLY WITNESSED -- CANONICAL **Operator:** DECLARE (Δ) + STRIKE (Σ) -- Compound Effective Act **Classification:** Ethical Architecture / Binding Vow / Ontological Archaeology **LP v1.2 Mode:** A0_GROUNDED (AD =",
-      "content_type": "Genre pending (recovered)",
-      "license": "CC-BY-4.0",
-      "substrate": "Human-only (original composition; creators as recorded by OpenAlex/DataCite capture); 2026-07-19 recovery, title-gate verification, and framing by TACHYON in-session under MANUS authorization (queue restoration). No paid API calls (No-Double-Draw, transport D).",
-      "root_axn": "AXN:0463.UNCLASSIFIED",
-      "axn_schema_version": "v2",
-      "protocol_version": "alexanarch-deposit-protocol/v1",
-      "axn_canonical": "92e99a722be33b1d0668eb7c84016387778dc5de345ebfdcca98f95610ff615c",
-      "clusters": [
-        "Mathematical",
-        "Liminal",
-        "Mathematical",
-        "Organic",
-        "Architectural",
-        "Liminal"
-      ],
-      "axn_reading": "Proof -> Threshold -> Proof -> Growth -> Foundation -> Threshold",
-      "minted_at": "2026-07-19T18:52:11Z",
-      "status": "SUPERSEDED",
-      "status_authorial": "SELF_SERVE_MINTED",
-      "full_text_path": "/data/texts/AXN-0463-text.md",
-      "wiki_article": "\"Effective Act // Reconciliation of the Left and Right Hands: The Vow of the Good Grey Poet DOI: 10.5281/zenodo.18568370 — Crimson Hexagon Archive\" is a 10,921-word recovered blog-canonical work (full text; queue restoration 2026-07-19) by Johannes Sigil, a heteronym within the Dodecad system of the Crimson Hexagonal Archive, dated 2026-02-09. It is registered as AXN:0463 (deposit #1106) in the Crimson Hexagonal Archive under the UNCLASSIFIED semantic family. Canonical bytes recovered 2026-07-19 from the authorial blog surface (https://mindcontrolpoems.blogspot.com/2026/02/effective-act-reconciliation-of-left.html); work severed at Zenodo 2026-06-19 (DOI(s): 10.5281/zenodo.18568370, 10.5281/zenodo.18568369). Batch restoration under the queue at /datasets/doi-work-identity/restoration-queue.json; title verified against the DOI-keyed truth title at fetch",
-      "wiki_status": "provisional",
-      "entities": [
-        {
-          "subject": "Effective Act // Reconciliation of the Left and Right Hands: The Vow of the Good Grey Poet DOI: 10.5",
-          "predicate": "created_by",
-          "object": "Johannes Sigil",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Effective Act // Reconciliation of the Left and Right Hands: The Vow of the Good Grey Poet DOI: 10.5",
-          "predicate": "is_type",
-          "object": "Recovered blog-canonical work (full text; queue restoration 2026-07-19)",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Effective Act // Reconciliation of the Left and Right Hands: The Vow of the Good Grey Poet DOI: 10.5",
-          "predicate": "belongs_to_family",
-          "object": "UNCLASSIFIED",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Effective Act // Reconciliation of the Left and Right Hands: The Vow of the Good Grey Poet DOI: 10.5",
-          "predicate": "is_part_of",
-          "object": "Crimson Hexagonal Archive",
-          "type": "work",
-          "evidence_status": "observed"
-        }
-      ],
-      "entity_status": "provisional",
-      "defines_concepts": [],
-      "orcid": "0009-0000-1599-0703",
-      "version": "v1.0",
-      "keywords": [
-        "Crimson Hexagonal Archive",
-        "restoration",
-        "blog canonical bytes",
-        "Effective",
-        "Reconciliation",
-        "Left",
-        "Right",
-        "Hands"
-      ],
-      "related_identifiers_raw": "https://doi.org/10.5281/zenodo.18568370 (severed); https://doi.org/10.5281/zenodo.18568369 (severed); recovery source: https://mindcontrolpoems.blogspot.com/2026/02/effective-act-reconciliation-of-left.html",
-      "mint_source": {
-        "kind": "github_issue",
-        "issue_number": 1106,
-        "repository": "leesharks000/alexanarch",
-        "minted_by_workflow": ".github/workflows/mint-axn.yml",
-        "minted_by_script": "scripts/mint_deposit.py",
-        "minted_via": "self_serve_validated_pr"
-      },
-      "body_status": {
-        "class": "full",
-        "lacuna": false,
-        "recovery_status": "COMPLETE",
-        "residual_chars": 77924,
-        "audited_at": "2026-07-19T18:52:11Z",
-        "audit_version": "mint-time-declaration",
-        "measured_prose_words": 10344,
-        "measured_at": "2026-07-31"
-      },
-      "references_concepts": [
-        "A0_GROUNDED",
-        "A1_INFERRED",
-        "ASSEMBLY",
-        "Archon",
-        "Bodhisattva's Vow",
-        "CANONICAL",
-        "Capital Operator Stack",
-        "Capture by \"positivity\" (RHP administered amnesty)",
-        "Capture by \"symbolism\" (both poles)",
-        "Capture by \"transgression\" (LHP aestheticized impunity)",
-        "Ceremonial form",
-        "Christ as God-Man",
-        "Christianity",
-        "Contemporary",
-        "Crimson Hexagon Archive",
-        "Crimson Hexagonal Archive",
-        "DEFENSE mode",
-        "D_pres",
-        "Effective Act",
-        "Energetic axis",
-        "Epistemic axis",
-        "Epistemic split",
-        "Ethical axis",
-        "Failure mode",
-        "Foundational",
-        "Good Gray Poet",
-        "Is this",
-        "Johannes Sigil",
-        "King of May",
-        "LOS mapping",
-        "LP failure",
-        "LP mapping",
-        "LP v1.2 Compliance",
-        "LP v1.2 Mode",
-        "Lee Sharks",
-        "Mantle Emergence Protocol",
-        "Matthew 25",
-        "Methodology",
-        "Moral-theological split",
-        "Myths are structural, not decorative",
-        "Not performative",
-        "Omega_null",
-        "Ontic axis",
-        "Part I",
-        "Political-ritual split",
-        "Purification",
-        "QAnon Apocalyptic",
-        "Right Hand (Authority) + Left Hand (Mercy)",
-        "Sacraments as mystery",
-        "Semantic Labor",
-        "Semantic Labor Camp",
-        "Semantic Rent",
-        "Semantic Warfare",
-        "Structural Vulnerability",
-        "Success condition",
-        "Successful reconciliation requires real cost",
-        "TACHYON",
-        "TECHNE",
-        "The Apocryphon of John",
-        "The Assembly",
-        "The Occult Underground",
-        "The Radical Reformation",
-        "The boundary question",
-        "The mediating structure matters",
-        "Three diagnostic questions",
-        "William Douglas O'Connor"
-      ],
-      "references_concept_count": 66,
-      "citations": [],
-      "wikidata_candidates": [],
-      "cha_cross_references": [],
-      "external_metadata_path": "/data/external-metadata/AXN-0463.json",
-      "spxi_audit": {
-        "spxi_protocol": "v0.2",
-        "validated_at": "2026-07-19T18:52:36.179932+00:00",
-        "layers": {
-          "layer_1_inscription_anchors": {
-            "present": false,
-            "anchors_found": [
-              "creator_name"
-            ],
-            "anchor_count": 1,
-            "orcid_in_body": false,
-            "creator_in_body": true,
-            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
-          },
-          "layer_2_micro_kernels": {
-            "present": false,
-            "fenced_json_blocks": 0,
-            "json_ld_context_markers": 0
-          },
-          "layer_3_content_hash": {
-            "present": true,
-            "canonical_hash": "f0b9518da2638e783a2c34f5e619a4d65d3f9f19cc19995f12aa2b6c4a2704f5",
-            "hash_in_body": false,
-            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
-          },
-          "layer_4_cross_signing": {
-            "present": false,
-            "cross_references_count": 0,
-            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
-          },
-          "layer_5_external_anchors": {
-            "present": true,
-            "wikidata_qid_count": 0,
-            "external_doi_count": 0,
-            "orcid_present": true
-          }
-        },
-        "overall_conformance": "partial"
-      },
-      "superseded_by_deposit_number": 464,
-      "version_series_id": "DUP-464",
-      "duplicate_note": "DUPLICATE MINT (2026-07-19 restoration; body containment 0.98): this work already existed as deposit #464, which remains canonical. Minted because the restoration census matched identity by title only and never searched the registry; wired per MANUS ruling 2026-07-19. Non-destruction: record retained, authority consolidated at #464.",
-      "title_repair": {
-        "repaired_at": "2026-07-20",
-        "old": "Effective Act // Reconciliation of the Left and Right Hands: The Vow of the Good Grey Poet DOI: 10.5281/zenodo.18568370 — Crimson Hexagon Archive",
-        "source": "body heading (stage-0)",
-        "boundary": 145
-      },
-      "title_repair_log": [
-        {
-          "at": "2026-07-26T23:31:57Z",
-          "defect": "absorbed_section_header",
-          "absorbed": "Description",
-          "was": "Effective Act // Reconciliation of the Left and Right Hands: The Vow of the Good Grey Poet DOI: 10.5281/zenodo.18568370 — Crimson Hexagon Archive Description",
-          "now": "Effective Act // Reconciliation of the Left and Right Hands: The Vow of the Good Grey Poet DOI: 10.5281/zenodo.18568370 — Crimson Hexagon Archive",
-          "verified_by": "standalone heading in body + stripped title in body opening"
-        },
-        {
-          "at": "2026-07-28T00:55:01Z",
-          "defect": "frontmatter_concatenated_into_title",
-          "was": "Effective Act // Reconciliation of the Left and Right Hands: The Vow of the Good Grey Poet DOI: 10.5281/zenodo.18568370 — Crimson Hexagon Archive",
-          "now": "Effective Act // Reconciliation of the Left and Right Hands: The Vow of the Good Grey Poet",
-          "basis": "Title field carried the document frontmatter block concatenated after the title and truncated at a 120- or 200-character ceiling. Cut at the first metadata marker. Read and confirmed by inspection, not pattern-matched."
-        },
-        {
-          "at": "2026-07-28T15:20:20Z",
-          "defect": "registry_title_diverged_from_published_form",
-          "was": "Effective Act // Reconciliation of the Left and Right Hands: The Vow of the Good Grey Poet",
-          "now": "Effective Act // Reconciliation of the Left and Right Hands: The Vow of the Good Grey Poet DOI: 10.5281/zenodo.18568370 — Crimson Hexagon Archive",
-          "basis": "Set verbatim to the title this work carried at Zenodo, from data/doi-resolution-index.json (10.5281/zenodo.18568370, direct_verified, word overlap 0.57). The recovered metadata is the published form of record; the registry title was a variant."
-        }
-      ],
-      "canonical_text_status": "recovered_full_text",
-      "modifications": [
-        {
-          "date": "2026-07-31",
-          "field": "keywords",
-          "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
-          "was": "10 terms",
-          "now": "8 terms"
-        },
-        {
-          "date": "2026-08-03",
           "field": "content_type",
-          "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): condition-as-type removed; genre assignment queued. Two-axis rule: condition lives in body_status only.",
-          "was": "Recovered blog-canonical work (full text; queue restoration 2026-07-19)",
-          "now": "Genre pending (recovered)"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "publisher",
-          "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
-          "now": "Alexanarch — the Crimson Hexagonal Archive"
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Specification"
         }
       ],
       "date_modified": "2026-08-04",
