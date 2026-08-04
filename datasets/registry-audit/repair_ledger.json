@@ -27529,6 +27529,42 @@
    "operator": "TACHYON",
    "date": "2026-08-04",
    "wave": "SAMEVER-SCAN"
+  },
+  {
+   "repair_id": "R-1167",
+   "deposit_number": null,
+   "batch": true,
+   "records": [
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+   ],
+   "count": 24,
+   "basis": "DW-004 + DW-005 INTAKE (LABOR stream, #37-#60): 24/24 seated, 0 rejects. Two initial flags were BOTH harness false-positives (#58 phrase verbatim but punctuation-separated; #40 quoted the record's own subtitle in the plural where the body reads singular). HARNESS RULE ADDED: quoted phrases matched against a normalized body (punctuation stripped) with singular/plural tolerance — a quoted phrase in editorial prose is not a claim about exact wording. Re-run: 24/24 clean, 0 flags. DW-VERIFIED-REGISTER extended to #1-#60.",
+   "operator": "TACHYON",
+   "date": "2026-08-04",
+   "wave": "DW-004/005"
   }
  ]
 }

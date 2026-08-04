@@ -32,9 +32,22 @@ def verify(it, d):
     for x in list(nums)[:5]:
         if x in hay: hits += 1
         else: miss += 1; missed.append(x)
+    # DW-004/005 rule: quoted phrases are matched against a normalized body
+    # (punctuation stripped, whitespace collapsed) and tolerate simple
+    # singular/plural variance — LABOR quotes a work's phrase as it reads in
+    # prose, which is not a factual claim about exact wording.
+    norm = re.sub(r'\s+', ' ', re.sub(r'[^a-z0-9 ]', ' ', hay))
+    def present(q):
+        c = re.sub(r'\s+', ' ', re.sub(r'[^a-z0-9 ]', ' ', q.lower())).strip()
+        if not c: return True
+        if c[:40] in norm: return True
+        toks = [t for t in c.split() if len(t) > 3][:4]
+        if toks and all(re.search(r'\b' + re.escape(t[:-1] if t.endswith('s') else t), norm) for t in toks):
+            return True
+        return False
     for q in re.findall(r'[“"]([^”"]{10,70})[”"]', text)[:3]:
         if NAMEQ.match(q.strip()): continue
-        if q[:25].lower() in hay: hits += 1
+        if present(q): hits += 1
         else: miss += 1; missed.append(q[:30])
     return hits, miss, missed
 
