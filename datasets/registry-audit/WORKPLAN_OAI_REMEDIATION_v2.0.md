@@ -16,6 +16,7 @@ Register the Alexanarch OAI-PMH endpoint honestly, and repair the audited regist
 
 | Date | Ruling | By |
 |---|---|---|
+| 2026-08-04 | LIVE FRACTURE CAUGHT+REPAIRED: swap-round canonical poem bytes (#1004/#1250) were silently refused by the sparse rule at commit — derived surfaces shipped, canonicals lagged on origin ~1hr; committed via add --sparse, verified on origin. robots.txt found builder-truncated (agent block + Sitemap line lost), restored from HEAD. §5b trap entry sharpened with the commit-side rule (status-after-add discipline). All other seated canonicals (Sappho, Chaerephon, Lacuna) verified correct on HEAD. | TACHYON |
 | 2026-08-04 | FORWARD-AUDIT RULE RATIFIED (MANUS in-thread): every new mint receives its audit row AT MINT via method_core v0.4 (body-vs-claim identity, primary object seated, field sanity), appended to the repair-era ledger; records enter the feed with a real audit status, never a standing audit:pending. Frozen-corpus completeness (#1–#1426) is thereby permanent: the debt class cannot re-incur. FIRST ACT QUEUED: catch-up batch for the post-freeze backlog (#1427–current, ~10 records), one evening, standard checkpoint form. Pipeline note: stage_oai’s sibling — an audit-at-mint stage — to be added to deposit_pipeline.py STAGE_ORDER (mint · validate · **audit** · record · …) at next pipeline touch. | MANUS |
 | 2026-08-04 | PACKAGE TRUED + W7 PROPOSED: INDEX.md rewritten from live state (pre-completion contradictions retired), MANIFEST regenerated with live sha256s, continuation state formally RETIRED (historical artifact). Forward-audit rule for #1427+ drafted in INDEX, pending MANUS. NEW DEFECT CLASS named from the #1261 catch: STALE PROVENANCE PROSE — description/wiki_article fields narrating superseded recovery states on reseated records; PROPOSED W7: sweep all July-era recovered/reseated records' description + wiki_article recovery clauses against current body_status truth. MANUS notes defects exist beyond workplan capture; W7 is the first named extension class. | MANUS/TACHYON |
 | 2026-08-04 | MANUS-EXPORT RECOVERIES EXECUTED: the Sappho paper (PHAINETAI MOI, complete to colophon, v0.2-restored→v1.0, fifth-stanza erratum noted in body_status per AXN:0346 guard) seated at #1270; the Chaerephon Problem (thread-built PDF, 21pp/9,409w, academia twin text-identical) seated at #1261 with clean extraction as canonical text + PDF at papers/. All recovery bytes preserved at recovered/2026-08-04/ with SHA256SUMS BEFORE seating; recovered_bytes_sha256 declared per kernel ruling; strays preserved in history. Epistle Triptych: component D (Lock ILA-CIT-001) + collection metadata now in hand/preserved; components A/B/C still wanted (Wayback queue). Review docx removed from public recovered/ (not a recovery object). WITHHOLD 59→57; feed 1,371. | MANUS/TACHYON |
@@ -186,6 +187,14 @@ If a repair introduces a state the renderer has no branch for, TEACH THE RENDERE
   session-only entries, caught at `git add` by the sparse rule; central registry rebuilt at 0 kernels /
   0 symbolon, caught at output line). Before running ANY writer, check out every input AND every
   append-target it touches; verify counts against prior state after.
+- THE SAME TRAP, COMMIT-SIDE (cost a live 1-hr fracture, 2026-08-04): `git add -A` SILENTLY refuses
+  paths outside the sparse definition — including files the session itself WROTE (the #1004/#1250
+  canonical poems were refused at the swap commit while every derived surface shipped; origin held
+  the displacement for an hour). RULE: sparse-add every path BEFORE writing to it; after every
+  `git add`, run `git status --short` and treat ANY remaining ` M` as a refusal, not noise. Corollary:
+  builders may also REWRITE tracked files from partial state (robots.txt lost its agent-guidance
+  block + Sitemap line, second instance of the class) — diff-inspect unexpected modifications; restore,
+  never commit, truncations.
 - Registry-only fixes: page/chunks/OAI keep the old state (the #1267/#1308 class).
 - Staged-text frontmatter disagreeing with registry fields — sync both or status drifts back.
 - `git reset --hard` after editing but before committing: DESTROYS the edit (commit first).
