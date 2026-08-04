@@ -23359,6 +23359,49 @@
     }
    ],
    "date": "2026-08-04"
+  },
+  {
+   "repair_id": "R-1075",
+   "wave": "R1c",
+   "deposit_number": 1250,
+   "basis": "INTERNAL-WITNESS RECOVERY (MANUS in-thread 2026-08-04): the complete named object (\"The reward of love\", 06.NH.SHARKS.02) was mis-seated at #1004 (audit row, displacement class); byte-copy from #1004 seat at commit 51b327cba. Completeness verified by the body's own terminal wrapper (diptych + license footer). Displaced \"Who Is Lee Sharks v1.1\" body preserved at commit 51b327cba as the v1.1 witness (#184 holds its own edition).",
+   "changes": [
+    {
+     "field": "staged_body",
+     "before": "Who Is Lee Sharks, to Forgive Ezra Pound? v1.1 (mis-seated)",
+     "after": "The reward of love (06.NH.SHARKS.02), complete"
+    },
+    {
+     "field": "content_type",
+     "before": "Genre pending (recovered)",
+     "after": "Poetry"
+    }
+   ],
+   "date": "2026-08-04"
+  },
+  {
+   "repair_id": "R-1076",
+   "wave": "R1c",
+   "deposit_number": 1004,
+   "basis": "THREAD-RECOVERY (MANUS in-thread 2026-08-04): complete poem + deposit wrapper recovered from composing thread https://claude.ai/chat/beec57ae-028d-46c3-a9ee-40d8b90837fc (2026-05-29); wrapper terminal convention verified against sibling 06.NH.SHARKS.02 seated bytes (footer ends at license sentence; no diptych line at 01 composition — 02's footer carries the diptych, citing 01 DOI 10.5281/zenodo.20348996). Hard line breaks per sibling convention. Displaced reward-of-love body rehomed to #1250 (paired repair).",
+   "changes": [
+    {
+     "field": "staged_body",
+     "before": "The reward of love (mis-seated)",
+     "after": "I would have loved you (06.NH.SHARKS.01), complete"
+    },
+    {
+     "field": "version",
+     "before": "v0.1-semi",
+     "after": "v1.0"
+    },
+    {
+     "field": "content_type",
+     "before": "Genre pending (recovered)",
+     "after": "Poetry"
+    }
+   ],
+   "date": "2026-08-04"
   }
  ]
 }
