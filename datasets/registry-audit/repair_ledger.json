@@ -27575,6 +27575,38 @@
    "operator": "TACHYON",
    "date": "2026-08-04",
    "wave": "DISP-v5"
+  },
+  {
+   "repair_id": "R-1169",
+   "deposit_number": null,
+   "batch": true,
+   "records": [
+    1001,
+    1003,
+    1026,
+    1246,
+    1273,
+    1291,
+    1299,
+    1311,
+    1313,
+    1314,
+    1319,
+    1331,
+    1339,
+    1346,
+    1367,
+    1368,
+    1377,
+    1381,
+    1399,
+    1402
+   ],
+   "count": 20,
+   "basis": "W14 CAPTURE-PAIRING wave 1: 20 semi-restored metadata captures pointed at their in-archive complete versions via body_status.full_version. Matcher: title-token overlap >=0.6 AND content probe >=0.6, registry/nav-map targets require >=0.85 (they list every DOI and were producing false pairs in the loose pass), size sanity. 2 held: candidate full smaller than the capture (relationship may be reversed - ADJUDICATION). Remaining 74 unpointed captures have no in-archive complete version and need external recovery.",
+   "operator": "TACHYON",
+   "date": "2026-08-04",
+   "wave": "W14-PAIRING"
   }
  ]
 }
