@@ -10,6 +10,8 @@
 - Type vocabulary: **v1.2 RATIFIED (41 values)** — GENRE BURN-DOWN COMPLETE; only #1168/#1170 remain transitional (identity-blocked)
 - In-history sweep: CLOSED with clean negative (repo history exhausted for the 68-target recovery queue); 6 version-label defects fixed; RF chain completed to v7.3 head; #1242/#1243 composing thread located (recovery_queue_R1b v1.9 tail governs)
 - Repair ledger: see repair_ledger.json (R-0001 → current; tail governs)
+- **AUDIT EXECUTION: AUDIT-DIRECTIVE-QUEUE.json is the work queue** (the audit's own `recommendation` field, grouped). Status 2026-08-04: 39/127 concrete directives satisfied, 88 open. Satisfaction is evidence-tested on the record (creator_roles · version_basis · date_semantics · source recovery · pointers), never asserted in prose.
+- Audit-derived record fields now in use: `creator_roles` (role projection, strings preserved) · `version_basis` (ruling + prior claim + directive) · `date_semantics` (publication vs deposit) · `body_status.audit_disposition` (the audit's verdict travelling with the record)
 - Workplan: WORKPLAN_OAI_REMEDIATION_v2.0.md — **decisions log is the authoritative running record**
 - WRONG_OBJECT program: wrong-object-workup-2026-08-04.json v1.2 (match graph, recovery channels, adjudication findings)
 - Recovered bytes: recovered/2026-08-04/ (SHA256SUMS sealed)
