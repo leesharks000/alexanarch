@@ -822,8 +822,18 @@ def regenerate_static_page(d, eidx, registry=None):
             # transform. 2+ hashes + space avoids C#-style single-hash tokens;
             # fenced code blocks are exempted by splitting on ``` fences.
             _fence_parts = raw.split('```')
+            _COMMA_MANGLE = re.compile(r'(?<=[a-zA-Z0-9})\]]) , (?=\\(?!ldots|dots|cdots|quad|qquad|text|mathrm\b|mbox))')
+            def _fix_math_span(m):
+                # W13 tier 1.5 addendum (MANUS view-flag 2026-08-04): the LaTeX
+                # thin-space \, lost its backslash in capture conversion and
+                # became a literal comma (" -\sigma , \nabla" was "-\sigma \,
+                # \nabla"). Deterministic signature: space-comma-space followed
+                # by a backslash command, with the legitimate ", \ldots" family
+                # excluded. Display-level; bytes carry the mangle until tier 2.
+                return '$$' + _COMMA_MANGLE.sub(r' \\, ', m.group(1)) + '$$'
             for _pi in range(0, len(_fence_parts), 2):  # even indices = outside fences
                 _fence_parts[_pi] = re.sub(r'(?<=[^\n])(#{2,6} )', r'\n\n\1', _fence_parts[_pi])
+                _fence_parts[_pi] = re.sub(r'\$\$(.+?)\$\$', _fix_math_span, _fence_parts[_pi], flags=re.S)
                 _fence_parts[_pi] = _w13_reflow(_fence_parts[_pi])
             raw = '```'.join(_fence_parts)
             lines = raw.split('\n')

@@ -99,7 +99,7 @@
 
 <p>We can state the operation more sharply. The retrieval kernel maps the query token $q$ to an output referent $r^*$ by:</p>
 
-<p>$$r^* = \arg\max_{r \in R(q)} , \pi(r) \cdot S(r \mid q)$$</p>
+<p>$$r^* = \arg\max_{r \in R(q)} \, \pi(r) \cdot S(r \mid q)$$</p>
 
 <p>Where $R(q)$ is the set of referents the apparatus considers candidates for the query, $\pi(r)$ is the institutional prior weight of candidate $r$, and $S(r \mid q)$ is the substrate&#x27;s confidence in the attribution conditional on the query. Under conditions where one candidate has $\pi(r) \approx 0$ and another has $\pi(r) \gg 0$, the argmax selects the high-prior candidate with overwhelming probability, regardless of the actual referential intent of the user.</p>
 
