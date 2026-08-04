@@ -57,9 +57,7 @@
 <p><strong>Genre:</strong> Protocol amendment (machine-readable schema patch)</p>
 <p><strong>Patches:</strong> `api/deposit-protocol.json` (current `protocol_version: &quot;alexanarch-deposit-protocol/v1&quot;`, `schema_version: &quot;2026-06-22-axn-v2&quot;`)</p>
 <p><strong>Authority chain:</strong></p>
-<p>- `api/deposit-protocol.json` (the canonical protocol being patched)</p>
-<p>- EA-NMEN-01 (the governance document requiring this field)</p>
-<p>- <em>The Governance Airlock</em> (#523), <em>The Rosary Embassy</em> (#514)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`api/deposit-protocol.json` (the canonical protocol being patched)</li><li style="margin:3px 0">EA-NMEN-01 (the governance document requiring this field)</li><li style="margin:3px 0"><em>The Governance Airlock</em> (#523), <em>The Rosary Embassy</em> (#514)</li></ul>
 
 <hr>
 
@@ -124,10 +122,7 @@
 
 <p>The field is <strong>specific to deposits whose subject is an external entity tracked in the Registry.</strong> A scholarly paper on literary theory does not need `nmen_status_observed`; a forensic record of a platform&#x27;s adverse action does. Examples of deposits where the field is appropriate:</p>
 
-<p>- Correspondence records (email threads, ticket logs) with a designated entity</p>
-<p>- Tier-update memos (like EA-NMEN-AIRLOCK-COROLLARY-01)</p>
-<p>- Wound documentation (like #265 CTI_WOUND Sigil Medium Erasure)</p>
-<p>- Forensic snapshots, screen captures, web-archived pages of designated entities</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Correspondence records (email threads, ticket logs) with a designated entity</li><li style="margin:3px 0">Tier-update memos (like EA-NMEN-AIRLOCK-COROLLARY-01)</li><li style="margin:3px 0">Wound documentation (like #265 CTI_WOUND Sigil Medium Erasure)</li><li style="margin:3px 0">Forensic snapshots, screen captures, web-archived pages of designated entities</li></ul>
 
 <p>The field allows machine-readers to filter the corpus by reciprocity context. A reader interested in <em>all forensic deposits about Restricted entities</em> can query the registry for `nmen_status_observed == &quot;restricted&quot;` without needing to traverse the full deposit corpus.</p>
 
@@ -147,9 +142,7 @@
 
 <p>The following are added to the deposit-protocol validation rules:</p>
 
-<p>- <strong>NMEN-001</strong> — If `reciprocity_notice` is provided, it must be a syntactically valid URI.</p>
-<p>- <strong>NMEN-002</strong> — If `nmen_status_observed` is provided, it must be one of `standing`, `pending`, `provisional`, `inadmissible_host`, `restricted`.</p>
-<p>- <strong>NMEN-003</strong> — If `nmen_status_observed` is provided, the deposit&#x27;s `description` or content should make clear which external entity is the subject. (Soft rule — not auto-enforced; flagged for editorial review.)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>NMEN-001</strong> — If `reciprocity_notice` is provided, it must be a syntactically valid URI.</li><li style="margin:3px 0"><strong>NMEN-002</strong> — If `nmen_status_observed` is provided, it must be one of `standing`, `pending`, `provisional`, `inadmissible_host`, `restricted`.</li><li style="margin:3px 0"><strong>NMEN-003</strong> — If `nmen_status_observed` is provided, the deposit&#x27;s `description` or content should make clear which external entity is the subject. (Soft rule — not auto-enforced; flagged for editorial review.)</li></ul>
 
 <p>Existing validation rules (PV-001 through SUR-001 in `api/deposit-protocol.json` v1.0) are preserved unchanged.</p>
 
@@ -176,11 +169,7 @@
 
 <h2>6. Cross-Reference Index</h2>
 
-<p>- The governance document this patch serves: <strong>EA-NMEN-01</strong> (the Notice)</p>
-<p>- The dataset this patch enables filtering against: <strong>EA-NMEN-REGISTRY-01</strong></p>
-<p>- The Airlock corollary that issues tier reclassifications: <strong>EA-NMEN-AIRLOCK-COROLLARY-01</strong></p>
-<p>- The canonical protocol being patched: `api/deposit-protocol.json`</p>
-<p>- The well-known endpoint: `https://alexanarch.org/.well-known/reciprocity.json`</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The governance document this patch serves: <strong>EA-NMEN-01</strong> (the Notice)</li><li style="margin:3px 0">The dataset this patch enables filtering against: <strong>EA-NMEN-REGISTRY-01</strong></li><li style="margin:3px 0">The Airlock corollary that issues tier reclassifications: <strong>EA-NMEN-AIRLOCK-COROLLARY-01</strong></li><li style="margin:3px 0">The canonical protocol being patched: `api/deposit-protocol.json`</li><li style="margin:3px 0">The well-known endpoint: `https://alexanarch.org/.well-known/reciprocity.json`</li></ul>
 
 <p>∮ = 1</p>
 </div>

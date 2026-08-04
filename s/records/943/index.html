@@ -183,10 +183,7 @@
 
 <p><strong>Input 1</strong> is a fragment approximating a naive text-layer extraction of a calligram region: ten short phrases from <em>Snub-Poemed</em>, each carrying the horizontal indentation of its position in the spatial arrangement. <strong>Input 2</strong> is the same ten phrases linearized — the typical output of HTML or PDF text extraction.</p>
 
-<div style="font-family:var(--mono);font-size:.8em">| representation | tokens | round-trip | contains the calligram? |</div>
-<p>|---|---|---|---|</p>
-<div style="font-family:var(--mono);font-size:.8em">| spatial (indented) text | 202 | perfect | no |</div>
-<div style="font-family:var(--mono);font-size:.8em">| linearized phrase list | 44 | perfect | no |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">representation</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">tokens</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">round-trip</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">contains the calligram?</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">spatial (indented) text</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">202</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">perfect</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">no</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">linearized phrase list</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">44</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">perfect</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">no</td></tr></table></div>
 
 <p>Three findings.</p>
 
@@ -279,10 +276,7 @@
 
 <p>The field&#x27;s status vocabulary distinguishes four conditions that current discourse conflates:</p>
 
-<p>- <strong>compositionally_invisible</strong> — features present in the source artifact, inaccessible to the text-operating layer (<em>Pearl</em>: present as file, absent as operable text);</p>
-<p>- <strong>compositionally_reduced</strong> — some features preserved, significant features lost (<em>Snub-Poemed</em>: phrase list and critical apparatus in the text layer, spatial argument only in the image);</p>
-<p>- <strong>compositionally_faithful</strong> — all semantically weighted compositional features accessible in the text-operating layer;</p>
-<p>- <strong>compositionally_operational</strong> — the text is in a form the archive&#x27;s kernel-transform compiler can operate on at the level of compositional structure, not only propositional content (the target status for primary-literary canon sources; currently held by none, pending the compiler&#x27;s spatial-form extension, §9.4).</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>compositionally_invisible</strong> — features present in the source artifact, inaccessible to the text-operating layer (<em>Pearl</em>: present as file, absent as operable text);</li><li style="margin:3px 0"><strong>compositionally_reduced</strong> — some features preserved, significant features lost (<em>Snub-Poemed</em>: phrase list and critical apparatus in the text layer, spatial argument only in the image);</li><li style="margin:3px 0"><strong>compositionally_faithful</strong> — all semantically weighted compositional features accessible in the text-operating layer;</li><li style="margin:3px 0"><strong>compositionally_operational</strong> — the text is in a form the archive&#x27;s kernel-transform compiler can operate on at the level of compositional structure, not only propositional content (the target status for primary-literary canon sources; currently held by none, pending the compiler&#x27;s spatial-form extension, §9.4).</li></ul>
 
 <p>These four states — with the intermediate distinctions the schema records between <em>textually absent</em>, <em>textually present</em>, <em>structurally encoded</em>, <em>visually preserved</em>, and <em>compositionally operational</em> — give the archive what the pipeline&#x27;s own audits cannot: a per-deposit answer to the question the round-trip test does not ask.</p>
 
@@ -484,10 +478,7 @@ for name, text in [(&quot;spatial&quot;, spatial_fragment), (&quot;linearized&qu
 
 <h2>Results</h2>
 
-<div style="font-family:var(--mono);font-size:.8em">| representation | input chars | tokens | round-trip identical |</div>
-<p>|---|---|---|---|</p>
-<div style="font-family:var(--mono);font-size:.8em">| spatial (indented) | 343 | 202 | **True** |</div>
-<div style="font-family:var(--mono);font-size:.8em">| linearized | — | 44 | **True** |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">representation</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">input chars</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">tokens</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">round-trip identical</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">spatial (indented)</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">343</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">202</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">**True**</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">linearized</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">—</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">44</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">**True**</td></tr></table></div>
 
 <p><strong>Whitespace token count (spatial version):</strong> 158 of 202 tokens (78%) are</p>
 <p>pure-whitespace tokens (`Ġ` = space, `Ċ` = newline).</p>

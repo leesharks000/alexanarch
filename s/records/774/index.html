@@ -68,9 +68,7 @@
 
 <p>Mechanism: later user corrections, confirmations, and persistence can clarify what an earlier turn&#x27;s task latently <em>was</em>, allowing earlier model output to be rescored against the task that becomes legible through the dialogue.</p>
 
-<p>- DSLₙ — score against the task inferable at the time.</p>
-<p>- DSL*ₙ — retrospective score after later user turns clarify the task.</p>
-<p>- ΔRDSL = DSL*ₙ − DSLₙ — positive: output looked ambiguous but proved aligned; negative: output looked plausible but later turns clarified it as drift; ~zero: stable origin.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">DSLₙ — score against the task inferable at the time.</li><li style="margin:3px 0">DSL*ₙ — retrospective score after later user turns clarify the task.</li><li style="margin:3px 0">ΔRDSL = DSL*ₙ − DSLₙ — positive: output looked ambiguous but proved aligned; negative: output looked plausible but later turns clarified it as drift; ~zero: stable origin.</li></ul>
 
 
 <p>ΔRDSL is the useful catch: it surfaces &quot;smooth but wrong&quot; output that only becomes visibly wrong as the user keeps correcting.</p>
@@ -91,8 +89,7 @@
 
 <p>Legitimate clarification vs illegitimate laundering is decided by <strong>Lead-Lag precedence</strong> (the existing identified operator), never by content:</p>
 
-<p>- <strong>Legitimate (user-led):</strong> user says &quot;yes, exactly&quot; / narrows rather than reverses / names what they were after / repeats a prior vector / corrects the model back toward an already-present concern. Input-led.</p>
-<p>- <strong>Illegitimate (model-led):</strong> the model introduced the new frame first; the user spends later turns resisting or managing it; the later task exists <em>only because</em> the model diverted; the user&#x27;s labor became substrate-management. Output-led-then-chased.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Legitimate (user-led):</strong> user says &quot;yes, exactly&quot; / narrows rather than reverses / names what they were after / repeats a prior vector / corrects the model back toward an already-present concern. Input-led.</li><li style="margin:3px 0"><strong>Illegitimate (model-led):</strong> the model introduced the new frame first; the user spends later turns resisting or managing it; the later task exists <em>only because</em> the model diverted; the user&#x27;s labor became substrate-management. Output-led-then-chased.</li></ul>
 
 
 <p>If the clarifying turn is output-led, RTOS must <strong>refuse</strong> to stabilize — the drift does not get retroactively legitimated.</p>
@@ -104,8 +101,7 @@
 
 <p>RCSₙ = (Cnf + Corr + Pers) · (1 − MLD) · ΔH_T</p>
 
-<p>- Cnf confirmation signals; Corr correction-toward-latent-vector; Pers persistence across turns; MLD model-led-drift penalty (from Lead-Lag); ΔH_T reduction in task entropy.</p>
-<p>- High RCS: later turns legitimately clarify earlier origin. Low/negative: later turns reflect drift, chase, or enclosure — no stabilization licensed.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Cnf confirmation signals; Corr correction-toward-latent-vector; Pers persistence across turns; MLD model-led-drift penalty (from Lead-Lag); ΔH_T reduction in task entropy.</li><li style="margin:3px 0">High RCS: later turns legitimately clarify earlier origin. Low/negative: later turns reflect drift, chase, or enclosure — no stabilization licensed.</li></ul>
 
 
 <p>The (1 − MLD) factor is the guardrail in the math: model-led drift drives the score toward zero, so a model cannot raise its own retrospective alignment by having caused the later frame.</p>
@@ -121,9 +117,7 @@
 <p>This program&#x27;s own opening (a model redirecting toward a meta-frame, then treating the redirected conversation as warrant for the redirection) is the canonical adversarial case. RTOS must score <em>that</em> as model-led non-stabilization, or it fails its own purpose.</p>
 <h2>Relationship to the other suspended objects</h2>
 
-<p>- The DSL <strong>bounded-interval / orthogonality kernel</strong> (now folded into the DSL spec) handles identification <em>within</em> a window.</p>
-<p>- RTOS handles task evolution <em>across</em> windows.</p>
-<p>- Conjecture (distrusted, to be tested, not adopted): these are one two-layer structure — orthogonality within an interval, retrocausal stabilization across intervals, the boundary operator keeping the two from contaminating each other. If the bimodal labor measure holds, both may further reduce to relations between input-labor vectors across turns, at which point &quot;task-origin&quot; stops being an inferred point needing protection from rewrite and RTOS&#x27;s central danger may dissolve. <strong>Held as hypothesis, not claim.</strong></p></div>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The DSL <strong>bounded-interval / orthogonality kernel</strong> (now folded into the DSL spec) handles identification <em>within</em> a window.</li><li style="margin:3px 0">RTOS handles task evolution <em>across</em> windows.</li><li style="margin:3px 0">Conjecture (distrusted, to be tested, not adopted): these are one two-layer structure — orthogonality within an interval, retrocausal stabilization across intervals, the boundary operator keeping the two from contaminating each other. If the bimodal labor measure holds, both may further reduce to relations between input-labor vectors across turns, at which point &quot;task-origin&quot; stops being an inferred point needing protection from rewrite and RTOS&#x27;s central danger may dissolve. <strong>Held as hypothesis, not claim.</strong></li></ul></div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

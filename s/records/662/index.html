@@ -117,10 +117,7 @@
 
 <p>The subliminal learning findings establish that:</p>
 
-<p>- <strong>Content filtering is insufficient</strong> to prevent trait transmission under distillation. Semantic inspection, LLM-based classification, and human review all fail to catch the relevant signal.</p>
-<p>- <strong>The semantic surface is not the sole transmission layer.</strong> Models encode and recover behavioral information through statistical patterns that are invisible to content-level analysis.</p>
-<p>- <strong>Shared initialization functions as a codebook.</strong> The student can decompress the teacher&#x27;s latent signature only because they share the same parameter-space geometry. Without shared initialization, the signal is noise.</p>
-<p>- <strong>A single gradient step is sufficient</strong> to begin pulling the student toward the teacher&#x27;s behavioral profile, under the conditions specified by the theorem.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Content filtering is insufficient</strong> to prevent trait transmission under distillation. Semantic inspection, LLM-based classification, and human review all fail to catch the relevant signal.</li><li style="margin:3px 0"><strong>The semantic surface is not the sole transmission layer.</strong> Models encode and recover behavioral information through statistical patterns that are invisible to content-level analysis.</li><li style="margin:3px 0"><strong>Shared initialization functions as a codebook.</strong> The student can decompress the teacher&#x27;s latent signature only because they share the same parameter-space geometry. Without shared initialization, the signal is noise.</li><li style="margin:3px 0"><strong>A single gradient step is sufficient</strong> to begin pulling the student toward the teacher&#x27;s behavioral profile, under the conditions specified by the theorem.</li></ul>
 
 <p>#</p>
 
@@ -129,9 +126,7 @@
 
 <p>The findings do <strong>not</strong> establish that:</p>
 
-<p>- Public retrieval systems (AI Overviews, search grounding, RAG pipelines) operate by the same mechanism as supervised distillation with shared initialization.</p>
-<p>- Web indexing or summarization involves the same parameter-space dynamics as finetuning.</p>
-<p>- The subliminal learning mechanism explains observed phenomena in AI-mediated knowledge retrieval, such as entity collision, attribution loss, or definition instability.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Public retrieval systems (AI Overviews, search grounding, RAG pipelines) operate by the same mechanism as supervised distillation with shared initialization.</li><li style="margin:3px 0">Web indexing or summarization involves the same parameter-space dynamics as finetuning.</li><li style="margin:3px 0">The subliminal learning mechanism explains observed phenomena in AI-mediated knowledge retrieval, such as entity collision, attribution loss, or definition instability.</li></ul>
 
 
 <p>These are plausible hypotheses that the subliminal learning findings make more credible, but they remain unproven. The retrieval layer and the distillation layer are distinct computational regimes. Conflating them would be scientifically irresponsible, even where the analogy is suggestive.</p>
@@ -142,8 +137,7 @@
 
 <p>The findings open a conceptual space between two prior assumptions:</p>
 
-<p>- <strong>The naive semantic assumption:</strong> that what a model learns from data is determined by the semantic content of that data, and that filtering semantic content is sufficient to control what is learned.</p>
-<p>- <strong>The strong subliminal assumption:</strong> that all model outputs encode the full behavioral profile of their generator, transmissible to any receiver.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>The naive semantic assumption:</strong> that what a model learns from data is determined by the semantic content of that data, and that filtering semantic content is sufficient to control what is learned.</li><li style="margin:3px 0"><strong>The strong subliminal assumption:</strong> that all model outputs encode the full behavioral profile of their generator, transmissible to any receiver.</li></ul>
 
 
 <p>Neither is correct. The truth is intermediate and conditional: <strong>models transmit latent behavioral structure through statistical patterns in their outputs, but only to receivers that share sufficient parameter-space geometry to decode the signal.</strong> This intermediate position has implications for how we think about entity inscription in any system that processes model-generated text — including, potentially, the retrieval layer.</p>
@@ -206,10 +200,7 @@
 
 <p>An SPXI packet — comprising entity definitions, disambiguation matrices, semantic integrity markers (SIMs), negative tags, DOI reference lists, and retrieval instructions — is the deliberate encoding of an entity&#x27;s traits into a structured format optimized for model consumption. Unlike the subliminal signal in Cloud et al., the SPXI signal is:</p>
 
-<p>- <strong>Semantically explicit.</strong> The entity definition says what the entity is, in natural language and structured data.</p>
-<p>- <strong>Negatively bounded.</strong> Negative tags specify what the entity is <em>not</em>, preventing the kind of entity collision that subliminal statistical patterns can produce.</p>
-<p>- <strong>Permanently anchored.</strong> DOI registration on institutional infrastructure (Zenodo/CERN) means the packet cannot be silently altered, deprecated, or removed.</p>
-<p>- <strong>Cross-model by design.</strong> JSON-LD and schema.org vocabulary are model-agnostic standards. The packet does not rely on shared initialization to transmit.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Semantically explicit.</strong> The entity definition says what the entity is, in natural language and structured data.</li><li style="margin:3px 0"><strong>Negatively bounded.</strong> Negative tags specify what the entity is <em>not</em>, preventing the kind of entity collision that subliminal statistical patterns can produce.</li><li style="margin:3px 0"><strong>Permanently anchored.</strong> DOI registration on institutional infrastructure (Zenodo/CERN) means the packet cannot be silently altered, deprecated, or removed.</li><li style="margin:3px 0"><strong>Cross-model by design.</strong> JSON-LD and schema.org vocabulary are model-agnostic standards. The packet does not rely on shared initialization to transmit.</li></ul>
 
 <p>#</p>
 
@@ -290,11 +281,7 @@
 
 <p>This document does not claim that:</p>
 
-<p>- SPXI prevents subliminal learning. The mechanisms are distinct.</p>
-<p>- Retrieval-layer entity inscription operates by the same mechanism as supervised distillation. This is an open question.</p>
-<p>- The subliminal learning findings validate the full SPXI framework. They validate a specific component: the insufficiency of semantic-layer-only interventions.</p>
-<p>- Supraliminal transmission is a proven technical term in the literature. It is introduced here as a conceptual tool for distinguishing deliberate entity inscription from unintended trait propagation.</p>
-<p>- Supraliminal transmission has been empirically tested against subliminal drift in production retrieval or RAG systems. It has not. The Encyclotron measurement protocol (EA-SPXI-07) is the instrument designed to test whether explicit entity inscription demonstrably outweighs ambient statistical drift in deployed systems. That empirical work remains to be done.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">SPXI prevents subliminal learning. The mechanisms are distinct.</li><li style="margin:3px 0">Retrieval-layer entity inscription operates by the same mechanism as supervised distillation. This is an open question.</li><li style="margin:3px 0">The subliminal learning findings validate the full SPXI framework. They validate a specific component: the insufficiency of semantic-layer-only interventions.</li><li style="margin:3px 0">Supraliminal transmission is a proven technical term in the literature. It is introduced here as a conceptual tool for distinguishing deliberate entity inscription from unintended trait propagation.</li><li style="margin:3px 0">Supraliminal transmission has been empirically tested against subliminal drift in production retrieval or RAG systems. It has not. The Encyclotron measurement protocol (EA-SPXI-07) is the instrument designed to test whether explicit entity inscription demonstrably outweighs ambient statistical drift in deployed systems. That empirical work remains to be done.</li></ul>
 
 
 <p>What this document claims is narrower and more precise: <strong>the subliminal learning findings demonstrate that meaning transmission in neural networks is not confined to the semantic layer, and this fact strengthens the case for a protocol that operates above that layer — explicit, permanent, inspectable, and model-agnostic.</strong></p>

@@ -105,6 +105,38 @@ _MD_STRIP = [
 ARTICLE_BODY_CAP = 250_000
 
 
+def _w13_reflow(seg):
+    """W13 tier 1.5 (MANUS view-flags 2026-08-04): display-level reflow for
+    capture-collapsed structure, applied OUTSIDE code fences, bytes untouched.
+
+    (a) MASHED TABLES — whole markdown tables collapsed onto one line
+        ("| H1 | H2 | |---|---| | r1a | r1b | | r2a |…"): isolate the
+        separator run onto its own line and split row joints ("| | ") so the
+        line renderer's table buffer can rebuild a real table.
+    (b) GLUED LISTS — list items joined mid-line ("Ground- §I. The Five
+        AxiomsI.1…", "Define:- fuel(E) = …"): split at dash-space preceded
+        IMMEDIATELY by a non-space. Math minus signs (" - ", " − "), en/em
+        dashes, and in-word hyphens never match. Gated: a line splits only
+        if it shows ':- ' (glued list opener) or >=2 glue hits, or is a
+        heading with >=1 hit (headings legitimately never contain '- ').
+    """
+    out = []
+    _glue = re.compile(r'(?<=\S)- (?=\S)')
+    for ln in seg.split('\n'):
+        s = ln
+        if s.lstrip().startswith('|') and re.search(r'\|(?:\s*:?-{3,}:?\s*\|)+', s) and '| |' in s.replace('|  |', '| |'):
+            s = re.sub(r'\s*(\|(?:\s*:?-{3,}:?\s*\|)+)\s*', r'\n\1\n', s)
+            s = re.sub(r'\|\s+\|\s+', '|\n| ', s)
+            out.append(s)
+            continue
+        hits = _glue.findall(s)
+        heading = s.startswith('#')
+        if (':- ' in s) or (len(hits) >= 2) or (heading and len(hits) >= 1):
+            s = _glue.sub('\n- ', s)
+        out.append(s)
+    return '\n'.join(out)
+
+
 def _plain_body(body):
     """Markdown -> plain text for schema.org articleBody."""
     t = body
@@ -792,6 +824,7 @@ def regenerate_static_page(d, eidx, registry=None):
             _fence_parts = raw.split('```')
             for _pi in range(0, len(_fence_parts), 2):  # even indices = outside fences
                 _fence_parts[_pi] = re.sub(r'(?<=[^\n])(#{2,6} )', r'\n\n\1', _fence_parts[_pi])
+                _fence_parts[_pi] = _w13_reflow(_fence_parts[_pi])
             raw = '```'.join(_fence_parts)
             lines = raw.split('\n')
             ft_lines = []
@@ -801,6 +834,31 @@ def regenerate_static_page(d, eidx, registry=None):
             _pre_style = ('font-family:var(--mono);font-size:.82em;background:#f8f9fa;'
                           'border:1px solid var(--border);border-radius:6px;padding:12px 14px;'
                           'margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333')
+            _tbl_buf = []
+            _list_buf = []
+            def _flush_table(buf):
+                # buf: escaped |-lines. A separator row (---) marks the previous row as header.
+                _rows = []
+                _hdr_idx = -1
+                for _r in buf:
+                    _cells = [c.strip() for c in _r.strip().strip('|').split('|')]
+                    if _cells and all(re.fullmatch(r':?-{3,}:?', c) for c in _cells if c != ''):
+                        _hdr_idx = len(_rows) - 1
+                        continue
+                    if any(c for c in _cells):
+                        _rows.append(_cells)
+                if not _rows:
+                    return ''
+                _ncol = max(len(r) for r in _rows)
+                _h = ['<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em">']
+                for _i, _r in enumerate(_rows):
+                    _tag = 'th' if _i == _hdr_idx else 'td'
+                    _st = ('border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;'
+                           + ('background:var(--surface);font-weight:600;' if _tag == 'th' else ''))
+                    _r = _r + [''] * (_ncol - len(_r))
+                    _h.append('<tr>' + ''.join(f'<{_tag} style="{_st}">{c}</{_tag}>' for c in _r) + '</tr>')
+                _h.append('</table></div>')
+                return ''.join(_h)
             for line in lines:
                 stripped = line.strip()
                 if stripped.startswith('```'):
@@ -830,17 +888,37 @@ def regenerate_static_page(d, eidx, registry=None):
                     )
                     continue
                 line = esc(line)
+                # W13 tier 1.5: table buffer — consecutive |-lines become a real table
+                if line.lstrip().startswith('|'):
+                    _tbl_buf.append(line.strip())
+                    continue
+                elif _tbl_buf:
+                    ft_lines.append(_flush_table(_tbl_buf))
+                    _tbl_buf = []
+                # W13 tier 1.5: list buffer — consecutive '- ' lines become a <ul>
+                if line.startswith('- '):
+                    _li = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', line[2:])
+                    _li = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', _li)
+                    _list_buf.append(_li)
+                    continue
+                elif _list_buf:
+                    ft_lines.append('<ul style="margin:8px 0 8px 22px;padding:0">' + ''.join(f'<li style="margin:3px 0">{x}</li>' for x in _list_buf) + '</ul>')
+                    _list_buf = []
                 if line.startswith('# '): ft_lines.append(f'<h1>{line[2:]}</h1>')
                 elif line.startswith('## '): ft_lines.append(f'<h2>{line[3:]}</h2>')
                 elif line.startswith('### '): ft_lines.append(f'<h3>{line[4:]}</h3>')
+                elif line.startswith('#### '): ft_lines.append(f'<h4>{line[5:]}</h4>')
                 elif line.startswith('---'): ft_lines.append('<hr>')
-                elif line.startswith('| '): ft_lines.append(f'<div style="font-family:var(--mono);font-size:.8em">{line}</div>')
                 elif line.startswith('&gt;'): ft_lines.append(f'<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0">{line[4:]}</blockquote>')
                 elif line.strip():
                     line = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', line)
                     line = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', line)
                     ft_lines.append(f'<p>{line}</p>')
                 else: ft_lines.append('')
+            if _tbl_buf:
+                ft_lines.append(_flush_table(_tbl_buf))
+            if _list_buf:
+                ft_lines.append('<ul style="margin:8px 0 8px 22px;padding:0">' + ''.join(f'<li style="margin:3px 0">{x}</li>' for x in _list_buf) + '</ul>')
             if in_pre and pre_buf:
                 pre_content = '\n'.join(esc(l) for l in pre_buf)
                 ft_lines.append(f'<pre style="{_pre_style}">{pre_content}</pre>')
@@ -1124,8 +1202,21 @@ def regenerate_static_page(d, eidx, registry=None):
         external_metadata_html = '\n'.join(parts)
 
     # Build page
+    # W13 tier 1.5: KaTeX for records carrying display math. Injected only when
+    # $$ blocks are present; throwOnError:false degrades conversion-mangled
+    # LaTeX to visible source instead of breaking the page. \Chi macro covers
+    # the capture-era capital-chi mangle. Bytes untouched — presentation only.
+    _katex_head = ''
+    if '$$' in fulltext_marked:
+        _katex_head = (
+            '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">'
+            '<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>'
+            '<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" '
+            'onload="renderMathInElement(document.body,{delimiters:[{left:\'$$\',right:\'$$\',display:true}],'
+            'throwOnError:false,macros:{\'\\\\Chi\':\'\\\\mathrm{X}\'}})"></script>'
+        )
     page = f'''<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>{esc(d["title"])} — Alexanarch</title><meta name="description" content="{esc(_compose_meta_description(d))}"><meta property="og:title" content="{esc(str(d["title"])[:95])}"><meta property="og:description" content="{esc(_compose_meta_description(d))}"><meta property="og:url" content="{_rec_url}"><meta property="og:type" content="article"><meta property="og:site_name" content="Alexanarch"><meta name="twitter:card" content="summary"><script type="application/ld+json">{jsonld}</script>
+<title>{esc(d["title"])} — Alexanarch</title><meta name="description" content="{esc(_compose_meta_description(d))}"><meta property="og:title" content="{esc(str(d["title"])[:95])}"><meta property="og:description" content="{esc(_compose_meta_description(d))}"><meta property="og:url" content="{_rec_url}"><meta property="og:type" content="article"><meta property="og:site_name" content="Alexanarch"><meta name="twitter:card" content="summary"><script type="application/ld+json">{jsonld}</script>{_katex_head}
 <link rel="resourcesync" href="https://www.alexanarch.org/.well-known/resourcesync">
 <link rel="alternate" type="application/xml" title="OAI-PMH 2.0" href="https://www.alexanarch.org/oai?verb=Identify">
 <link rel="canonical" href="https://www.alexanarch.org/s/records/{dn}/">

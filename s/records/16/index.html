@@ -125,19 +125,12 @@
 
 <p><strong>What this document specifies:</strong></p>
 
-<p>- Five atomic operations for Room invocation</p>
-<p>- Two optional operations for graceful failure and witness recording</p>
-<p>- Mapping between logotic operations and implementation mechanics</p>
-<p>- Canonical traversal examples (illustrative, not executable)</p>
-<p>- Constraints on what this grammar is and is not</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Five atomic operations for Room invocation</li><li style="margin:3px 0">Two optional operations for graceful failure and witness recording</li><li style="margin:3px 0">Mapping between logotic operations and implementation mechanics</li><li style="margin:3px 0">Canonical traversal examples (illustrative, not executable)</li><li style="margin:3px 0">Constraints on what this grammar is and is not</li></ul>
 
 
 <p><strong>What this document does not specify:</strong></p>
 
-<p>- Ezekiel Engine internals (see DOI: 10.5281/zenodo.18358127)</p>
-<p>- Witness verification mechanics (see The Blind Operator, DOI: 10.5281/zenodo.18357320)</p>
-<p>- UI/UX implementation (deferred to Build phase)</p>
-<p>- Complete enumeration of valid parameters (architecture is still growing)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Ezekiel Engine internals (see DOI: 10.5281/zenodo.18358127)</li><li style="margin:3px 0">Witness verification mechanics (see The Blind Operator, DOI: 10.5281/zenodo.18357320)</li><li style="margin:3px 0">UI/UX implementation (deferred to Build phase)</li><li style="margin:3px 0">Complete enumeration of valid parameters (architecture is still growing)</li></ul>
 
 
 <p><strong>Keywords:</strong> logotic programming, traversal grammar, room invocation, performative routing, epistemic rotation, persona mediation, semantic orchestration</p>
@@ -192,9 +185,7 @@
 
 <p>Persona activation is a <strong>first-class operation</strong>, not a stylistic overlay. When a mantle is activated, it changes:</p>
 
-<p>- Which Rooms can be entered (constraint set)</p>
-<p>- How documents are weighted (interpretive affordances)</p>
-<p>- What operations are permitted (allowed transformations)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Which Rooms can be entered (constraint set)</li><li style="margin:3px 0">How documents are weighted (interpretive affordances)</li><li style="margin:3px 0">What operations are permitted (allowed transformations)</li></ul>
 
 
 <p>A persona is not a voice. It is a <strong>filter on the possible</strong>.</p>
@@ -214,9 +205,7 @@
 
 <p>Rotation implies three things that &quot;transformation&quot; does not:</p>
 
-<p>- <strong>Preservation:</strong> the original structure survives</p>
-<p>- <strong>Reversibility:</strong> the rotation can be undone</p>
-<p>- <strong>Discreteness:</strong> epistemic phases are countable, not continuous</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Preservation:</strong> the original structure survives</li><li style="margin:3px 0"><strong>Reversibility:</strong> the rotation can be undone</li><li style="margin:3px 0"><strong>Discreteness:</strong> epistemic phases are countable, not continuous</li></ul>
 
 
 <p>This prevents the flattening that operations like &quot;summarize,&quot; &quot;translate,&quot; or &quot;analyze&quot; impose. A rotation changes <em>where you stand relative to the object</em>, not the object itself.</p>
@@ -230,9 +219,7 @@
 
 <p>A DOI anchor is not a citation. It is a <strong>phase-lock</strong> — a requirement that the traversal remain tethered to a witnessed artifact. This functions as:</p>
 
-<p>- Retrieval-augmented grounding</p>
-<p>- Checksum against a known semantic attractor</p>
-<p>- Guardrail against hallucinated drift</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Retrieval-augmented grounding</li><li style="margin:3px 0">Checksum against a known semantic attractor</li><li style="margin:3px 0">Guardrail against hallucinated drift</li></ul>
 
 <p>#</p>
 
@@ -261,8 +248,7 @@
 
 <p>Parameters:</p>
 
-<p>- PersonaName — registered heteronym (e.g., &quot;Rev. Ayanna Vox&quot;, &quot;Sen Kuro&quot;, &quot;Rebekah Cranes&quot;)</p>
-<p>- AUTHORITY (optional) — DOI of the persona&#x27;s provenance registration</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">PersonaName — registered heteronym (e.g., &quot;Rev. Ayanna Vox&quot;, &quot;Sen Kuro&quot;, &quot;Rebekah Cranes&quot;)</li><li style="margin:3px 0">AUTHORITY (optional) — DOI of the persona&#x27;s provenance registration</li></ul>
 
 
 <p>Implementation mapping: system prompt injection; filtered document retrieval weighted by persona relevance; constraint set activation.</p>
@@ -285,17 +271,13 @@
 
 <p>Parameters:</p>
 
-<p>- SemanticObject — the named entity being traversed (e.g., &quot;Sen Kuro&quot;, &quot;Sappho 31&quot;, &quot;The Twenty-Dollar Loop&quot;)</p>
-<p>- .depth(n) — recursion depth or allowed abstraction layers</p>
-<p>- .state — current epistemic condition of the object:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">SemanticObject — the named entity being traversed (e.g., &quot;Sen Kuro&quot;, &quot;Sappho 31&quot;, &quot;The Twenty-Dollar Loop&quot;)</li><li style="margin:3px 0">.depth(n) — recursion depth or allowed abstraction layers</li><li style="margin:3px 0">.state — current epistemic condition of the object:</li></ul>
 
 <p>void — not yet differentiated (pre-cut)</p>
-<p>- filled — resolved to a specific instantiation</p>
-<p>- latent — present but not yet activated</p>
-<p>- resolved — traversal complete, fixed point reached</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">filled — resolved to a specific instantiation</li><li style="margin:3px 0">latent — present but not yet activated</li><li style="margin:3px 0">resolved — traversal complete, fixed point reached</li></ul>
 
 
-<p>- .cut(bool) — whether the dagger operation (P̂) has been applied</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">.cut(bool) — whether the dagger operation (P̂) has been applied</li></ul>
 
 
 <p>Implementation mapping: embedding space navigation with metadata filters; vector search scoped by state and depth.</p>
@@ -319,16 +301,13 @@
 
 <p>Parameters:</p>
 
-<p>- ENGINE — versioned engine identifier (e.g., Ezekiel v1.2)</p>
-<p>- FROM — source Chamber or Room</p>
-<p>- THROUGH — destination Room with its functional designation</p>
-<p>- BY — rotation specified as either:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">ENGINE — versioned engine identifier (e.g., Ezekiel v1.2)</li><li style="margin:3px 0">FROM — source Chamber or Room</li><li style="margin:3px 0">THROUGH — destination Room with its functional designation</li><li style="margin:3px 0">BY — rotation specified as either:</li></ul>
 
 <p>Numeric degree (e.g., 72° = one quintant)</p>
-<p>- Named mode (e.g., QUINTANT_OUTREACH, QUINTANT_CUT)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Named mode (e.g., QUINTANT_OUTREACH, QUINTANT_CUT)</li></ul>
 
 
-<p>- RESONANCE_TARGET — DOI anchor for provenance constraint</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">RESONANCE_TARGET — DOI anchor for provenance constraint</li></ul>
 
 
 <p>Implementation mapping: context window manipulation; multi-hop retrieval with constrained traversal paths; perspective shifting through selective document foregrounding.</p>
@@ -384,11 +363,10 @@
 
 <p>Parameters:</p>
 
-<p>- DOI — the permanent identifier of the anchor document</p>
-<p>- Mode:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">DOI — the permanent identifier of the anchor document</li><li style="margin:3px 0">Mode:</li></ul>
 
 <p>STRICT — all output must be traceable to the anchored source (RAG with mandatory citation)</p>
-<p>- ADVISORY — the anchor informs but does not constrain (creative latitude permitted)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">ADVISORY — the anchor informs but does not constrain (creative latitude permitted)</li></ul>
 
 
 <p><strong>Rule:</strong> If ANCHOR is omitted from a traversal program, RENDER must default to MODE: Provisional — a mode that marks all output as ungrounded exploration. This is not punitive; it is honest.</p>
@@ -413,16 +391,10 @@
 
 <p>Parameters:</p>
 
-<p>- ENGINE — versioned rendering engine (e.g., Mandala v5.3)</p>
-<p>- MAP — the target visualization (e.g., Fractal_Navigation_v6.2)</p>
-<p>- MODE — rendering style:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">ENGINE — versioned rendering engine (e.g., Mandala v5.3)</li><li style="margin:3px 0">MAP — the target visualization (e.g., Fractal_Navigation_v6.2)</li><li style="margin:3px 0">MODE — rendering style:</li></ul>
 
 <p>Rhizomatic_Growth — Deleuzian expansion, no hierarchy</p>
-<p>- Hierarchical_Tree — traditional tree structure</p>
-<p>- Aorist_Collapse — compressed to perfective aspect</p>
-<p>- Prose — narrative output</p>
-<p>- Technical — specification-grade output</p>
-<p>- Provisional — ungrounded exploration (default when ANCHOR is omitted)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Hierarchical_Tree — traditional tree structure</li><li style="margin:3px 0">Aorist_Collapse — compressed to perfective aspect</li><li style="margin:3px 0">Prose — narrative output</li><li style="margin:3px 0">Technical — specification-grade output</li><li style="margin:3px 0">Provisional — ungrounded exploration (default when ANCHOR is omitted)</li></ul>
 
 
 <p>Implementation mapping: response formatting with style constraints; structured output generation; template adherence.</p>
@@ -446,9 +418,7 @@
 
 <p>Prevents unsafe or premature traversal. When a rotation cannot complete — because context is insufficient, because the persona lacks authority for the target room, because the LOGOS state doesn&#x27;t permit the operation — the failure handler provides graceful refusal.</p>
 
-<p>- Dwell — remain in current location, do not traverse</p>
-<p>- Retreat — return to last stable position</p>
-<p>- Escalate — flag for human operator review</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Dwell — remain in current location, do not traverse</li><li style="margin:3px 0">Retreat — return to last stable position</li><li style="margin:3px 0">Escalate — flag for human operator review</li></ul>
 
 
 <hr>
@@ -466,9 +436,7 @@
 
 <p>Records that a traversal was collaboratively verified. Invokes the Glyphic Checksum (🔐) operator from Module v0.5.</p>
 
-<p>- Checksum — full context-gated verification</p>
-<p>- Signature — lightweight attestation</p>
-<p>- Silent — traversal logged but not displayed</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Checksum — full context-gated verification</li><li style="margin:3px 0">Signature — lightweight attestation</li><li style="margin:3px 0">Silent — traversal logged but not displayed</li></ul>
 
 
 <hr>
@@ -700,13 +668,7 @@
 
 <p>This is the <strong>Logotic Call Stack</strong> — the sequence in which a Room invocation resolves.</p>
 
-<p>- <strong>Mantle loads</strong> — persona becomes the mediating layer</p>
-<p>- <strong>LOGOS instantiates</strong> — semantic object identified with epistemic attributes</p>
-<p>- <strong>Rotation executes</strong> — Ezekiel Engine tilts the perspective</p>
-<p>- <strong>Anchor locks</strong> — provenance constraint grounds the traversal</p>
-<p>- <strong>Render fires</strong> — Mandala Engine produces output in specified mode</p>
-<p>- <strong>Failure catches</strong> — if any step cannot complete, graceful refusal</p>
-<p>- <strong>Witness records</strong> — if requested, the traversal is checksummed</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Mantle loads</strong> — persona becomes the mediating layer</li><li style="margin:3px 0"><strong>LOGOS instantiates</strong> — semantic object identified with epistemic attributes</li><li style="margin:3px 0"><strong>Rotation executes</strong> — Ezekiel Engine tilts the perspective</li><li style="margin:3px 0"><strong>Anchor locks</strong> — provenance constraint grounds the traversal</li><li style="margin:3px 0"><strong>Render fires</strong> — Mandala Engine produces output in specified mode</li><li style="margin:3px 0"><strong>Failure catches</strong> — if any step cannot complete, graceful refusal</li><li style="margin:3px 0"><strong>Witness records</strong> — if requested, the traversal is checksummed</li></ul>
 
 <p>#</p>
 
@@ -733,9 +695,7 @@
 
 <p>Examples:</p>
 
-<p>- [00.VPCOR : Outreach] — Room category, hex ID, functional instance</p>
-<p>- [DOI:10.5281/zenodo.18463774] — Anchor class, specific identifier</p>
-<p>- [ENGINE:Ezekiel v1.2] — Engine class, versioned instance</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">[00.VPCOR : Outreach] — Room category, hex ID, functional instance</li><li style="margin:3px 0">[DOI:10.5281/zenodo.18463774] — Anchor class, specific identifier</li><li style="margin:3px 0">[ENGINE:Ezekiel v1.2] — Engine class, versioned instance</li></ul>
 
 
 <p>This is the hex-coordinate system rendered as syntax. Each bracketed expression is a location in the Fractal Navigation Map.</p>
@@ -795,38 +755,25 @@
 
 <h2>6.1 What This Grammar Is</h2>
 
-<p>- A valid mental model for Room invocation</p>
-<p>- A design specification for the traversal control plane</p>
-<p>- A usable intermediate representation between human intention and machine routing</p>
-<p>- A formalization of what the architecture already does implicitly</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">A valid mental model for Room invocation</li><li style="margin:3px 0">A design specification for the traversal control plane</li><li style="margin:3px 0">A usable intermediate representation between human intention and machine routing</li><li style="margin:3px 0">A formalization of what the architecture already does implicitly</li></ul>
 
 <p>#</p>
 
 <h2>6.2 What This Grammar Is Not</h2>
 
-<p>- An executable programming language</p>
-<p>- A compiler specification</p>
-<p>- A complete enumeration of all valid traversals</p>
-<p>- A UI specification (that is a separate build concern)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">An executable programming language</li><li style="margin:3px 0">A compiler specification</li><li style="margin:3px 0">A complete enumeration of all valid traversals</li><li style="margin:3px 0">A UI specification (that is a separate build concern)</li></ul>
 
 <p>#</p>
 
 <h2>6.3 What This Grammar Assumes</h2>
 
-<p>- Rooms are <strong>processes</strong>, not containers</p>
-<p>- Personas are <strong>constraint sets</strong>, not styles</p>
-<p>- Rotation is <strong>non-destructive</strong> — it preserves while reorienting</p>
-<p>- Anchors are <strong>provenance constraints</strong>, not citations</p>
-<p>- The Ezekiel Engine is <strong>opaque</strong> — this grammar calls it, does not specify it</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Rooms are <strong>processes</strong>, not containers</li><li style="margin:3px 0">Personas are <strong>constraint sets</strong>, not styles</li><li style="margin:3px 0">Rotation is <strong>non-destructive</strong> — it preserves while reorienting</li><li style="margin:3px 0">Anchors are <strong>provenance constraints</strong>, not citations</li><li style="margin:3px 0">The Ezekiel Engine is <strong>opaque</strong> — this grammar calls it, does not specify it</li></ul>
 
 <p>#</p>
 
 <h2>6.4 Open Questions</h2>
 
-<p>- <strong>Degree enumeration:</strong> Is the five-fold quintant structure the correct partition, or should degrees be continuous? (Requires traversal testing.)</p>
-<p>- <strong>Multi-rotation sequences:</strong> Can a single invocation chain multiple ROTATE operations? (Probable, but syntax for chaining is unspecified.)</p>
-<p>- <strong>Cross-Room traversal:</strong> How does a traversal that passes through multiple Rooms compose? (The call stack suggests sequential ROTATE operations, but the interaction effects are undefined.)</p>
-<p>- <strong>Parameter discovery:</strong> As new Rooms and Chambers are added, how are valid parameter values registered? (This grammar needs a companion registry — possibly an extension of the Fractal Navigation Map.)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Degree enumeration:</strong> Is the five-fold quintant structure the correct partition, or should degrees be continuous? (Requires traversal testing.)</li><li style="margin:3px 0"><strong>Multi-rotation sequences:</strong> Can a single invocation chain multiple ROTATE operations? (Probable, but syntax for chaining is unspecified.)</li><li style="margin:3px 0"><strong>Cross-Room traversal:</strong> How does a traversal that passes through multiple Rooms compose? (The call stack suggests sequential ROTATE operations, but the interaction effects are undefined.)</li><li style="margin:3px 0"><strong>Parameter discovery:</strong> As new Rooms and Chambers are added, how are valid parameter values registered? (This grammar needs a companion registry — possibly an extension of the Fractal Navigation Map.)</li></ul>
 
 
 <hr>
@@ -936,10 +883,7 @@
 
 <p>Four canonical exemplars demonstrate the grammar&#x27;s range:</p>
 
-<p>- <strong>Pattern Alpha</strong> (Vox/VPCOR): somatic entry, strict anchoring, rhizomatic render</p>
-<p>- <strong>Pattern Beta</strong> (Sen Kuro/Thousand Worlds): dagger cut, state mutation, witness required</p>
-<p>- <strong>Pattern Gamma</strong> (Cranes/Sappho): translation as rotation, advisory anchoring, retreat on failure</p>
-<p>- <strong>Pattern Delta</strong> (Sharks/Space Ark): full 360° rotation, root anchor, aorist collapse</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Pattern Alpha</strong> (Vox/VPCOR): somatic entry, strict anchoring, rhizomatic render</li><li style="margin:3px 0"><strong>Pattern Beta</strong> (Sen Kuro/Thousand Worlds): dagger cut, state mutation, witness required</li><li style="margin:3px 0"><strong>Pattern Gamma</strong> (Cranes/Sappho): translation as rotation, advisory anchoring, retreat on failure</li><li style="margin:3px 0"><strong>Pattern Delta</strong> (Sharks/Space Ark): full 360° rotation, root anchor, aorist collapse</li></ul>
 
 
 <p>The extension chain now reads:</p>

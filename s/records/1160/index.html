@@ -88,7 +88,8 @@
 
 <h2>Abstract</h2>
 
-<p>The Total Axial Negation Graph (TANG) is a scholarly-architectural genre in which a single falsifiable thesis is placed at the center of an exhaustive citation graph such that the thesis functions not as an argument within the field but as the void the field&#x27;s citational mass defines. The proof mode is geometric and topological rather than deductive or rhetorical: the thesis is not argued; it is rendered structurally legible by the arrangement of the surrounding literature. This document establishes the genre&#x27;s theoretical grounding across six adjacent disciplinary traditions -- bibliometrics and citation theory, network topology, philosophy of science, aesthetics of constitutive absence, hermeneutics, and archive theory -- and provides the full formal specification, status algebra extension (AXIAL and AXIAL_CONTESTED), operator registration (Λ_void; Λ_hex_enforce queued), and provenance governance standard (HX-PROV). The inaugural TANG instance, _The Proton Testament_ , is registered as QUEUED: its axial thesis -- &quot;Revelation was the first-written book of the New Testament&quot; -- is formally designated AXIAL_CONTESTED pending construction of its citation graph at TANG-2 scale (500-2,000 nodes).</p>
+<p>The Total Axial Negation Graph (TANG) is a scholarly-architectural genre in which a single falsifiable thesis is placed at the center of an exhaustive citation graph such that the thesis functions not as an argument within the field but as the void the field&#x27;s citational mass defines. The proof mode is geometric and topological rather than deductive or rhetorical: the thesis is not argued; it is rendered structurally legible by the arrangement of the surrounding literature. This document establishes the genre&#x27;s theoretical grounding across six adjacent disciplinary traditions -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">bibliometrics and citation theory, network topology, philosophy of science, aesthetics of constitutive absence, hermeneutics, and archive theory -</li><li style="margin:3px 0">and provides the full formal specification, status algebra extension (AXIAL and AXIAL_CONTESTED), operator registration (Λ_void; Λ_hex_enforce queued), and provenance governance standard (HX-PROV). The inaugural TANG instance, _The Proton Testament_ , is registered as QUEUED: its axial thesis -</li><li style="margin:3px 0">&quot;Revelation was the first-written book of the New Testament&quot; -</li><li style="margin:3px 0">is formally designated AXIAL_CONTESTED pending construction of its citation graph at TANG-2 scale (500-2,000 nodes).</li></ul>
 
 <p><strong>Keywords:</strong> citation graph <em> topological epistemics </em> genre theory <em> axial thesis </em> void-centered argument <em> bibliometric architecture </em> Status Algebra * Hexagonal provenance</p>
 
@@ -98,7 +99,8 @@
 
 <p>This document is simultaneously a genre specification and an instance of the problem it addresses. It describes a genre whose proof mode is topological rather than rhetorical -- and then, in the act of describing it, engages in rhetoric. This tension is not resolved; it is acknowledged. The formal specification section (§V-§VIII) operates as closely to pure TANG as a specification document can get. The theoretical sections (§I-§IV) perform the more conventional scholarly work of demonstrating the genre&#x27;s plausibility, necessity, and relationship to existing knowledge.</p>
 
-<p>The document practices what it preaches in a limited sense: the theoretical sections could be read as a partial PANG (Partial Axial Negation Graph) on the axial thesis -- _the dominant mode of scholarly argument has always implicitly relied on topological rather than deductive proof, and the TANG genre is the first explicit formal acknowledgment of this_ -- with coverage that is partial rather than exhaustive. A full TANG on this meta-thesis would require a graph of scale TANG-3 and is not the present document&#x27;s scope. The specification sections carry the freight.</p>
+<p>The document practices what it preaches in a limited sense: the theoretical sections could be read as a partial PANG (Partial Axial Negation Graph) on the axial thesis -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">_the dominant mode of scholarly argument has always implicitly relied on topological rather than deductive proof, and the TANG genre is the first explicit formal acknowledgment of this_ -</li><li style="margin:3px 0">with coverage that is partial rather than exhaustive. A full TANG on this meta-thesis would require a graph of scale TANG-3 and is not the present document&#x27;s scope. The specification sections carry the freight.</li></ul>
 
 <p>Every citation in this document is classified by provenance status and edge type. Anchored sources are directly archived with DOIs or are standard scholarly references with stable locatability. Ghost meanings are flagged. The reader is advised: the bibliography is not decoration. It is part of the argument&#x27;s architecture.</p>
 
@@ -122,9 +124,11 @@
 
 <h2>I.2 The Invisible Center</h2>
 
-<p>Price&#x27;s most consequential observation -- insufficiently followed up in subsequent bibliometrics -- was that citation networks tend to have _gravitational centers_ : documents and claims toward which citation mass is attracted without those documents necessarily resolving the questions they organize. A paper can become a citation hub precisely because it poses a question that the field circles rather than answers. The hub is not the resolution; it is the attractor.</p>
+<p>Price&#x27;s most consequential observation -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">insufficiently followed up in subsequent bibliometrics -</li><li style="margin:3px 0">was that citation networks tend to have _gravitational centers_ : documents and claims toward which citation mass is attracted without those documents necessarily resolving the questions they organize. A paper can become a citation hub precisely because it poses a question that the field circles rather than answers. The hub is not the resolution; it is the attractor.</li></ul>
 
-<p>This observation is formally described in the network science literature as the &quot;rich-get-richer&quot; or preferential attachment model. When Barabási and Albert demonstrated in 1999 that the World Wide Web and many biological networks exhibit scale-free degree distributions -- with a small number of nodes acquiring the majority of connections -- they provided a mathematical structure for what Price had observed intuitively.[Referenced: Barabási and Albert, &quot;Emergence of Scaling in Random Networks,&quot; _Science_ 286, no. 5439 (1999): 509-512] Scale-free networks have hubs. And the question that the TANG genre formalizes is: what happens when the hub is _absent_?</p>
+<p>This observation is formally described in the network science literature as the &quot;rich-get-richer&quot; or preferential attachment model. When Barabási and Albert demonstrated in 1999 that the World Wide Web and many biological networks exhibit scale-free degree distributions -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">with a small number of nodes acquiring the majority of connections -</li><li style="margin:3px 0">they provided a mathematical structure for what Price had observed intuitively.[Referenced: Barabási and Albert, &quot;Emergence of Scaling in Random Networks,&quot; _Science_ 286, no. 5439 (1999): 509-512] Scale-free networks have hubs. And the question that the TANG genre formalizes is: what happens when the hub is _absent_?</li></ul>
 
 <p>The ordinary citation hub is a paper that exists and is highly connected. The TANG thesis is a claim that does not exist as a paper in the field -- that the field circles without having named or licensed. The hub is a void. The scale-free structure still applies: the void has the most connections of any node in the network; it simply has no content of its own.</p>
 
@@ -136,7 +140,8 @@
 
 <p>The TANG proposition is that the axial thesis in a fully constructed citation graph would have the highest PageRank of any claim in the graph -- not because it is represented as a node in the graph, but because every node in the graph relates to it, whether by citation, by critique, by building upon, or by conspicuous avoidance. The thesis organizes the field&#x27;s citational gravity from the void.</p>
 
-<p>This is not mysticism. It is graph theory applied to the sociology of knowledge. If every paper on New Testament chronology takes a position relative to the question of canonical ordering -- even when it does not address the question explicitly -- then the missing claim that would resolve that ordering is functionally present in every paper&#x27;s relationship structure. Formalizing that presence as a void-center rather than as an unlicensed hidden assumption is what TANG does.</p>
+<p>This is not mysticism. It is graph theory applied to the sociology of knowledge. If every paper on New Testament chronology takes a position relative to the question of canonical ordering -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">even when it does not address the question explicitly -</li><li style="margin:3px 0">then the missing claim that would resolve that ordering is functionally present in every paper&#x27;s relationship structure. Formalizing that presence as a void-center rather than as an unlicensed hidden assumption is what TANG does.</li></ul>
 
 <p><em> </em> *</p>
 
@@ -148,7 +153,8 @@
 
 <p>Aristotle identified the enthymeme as the central mechanism of rhetorical proof: an argument in which one premise is left unstated because it is presumed to be shared by the audience.[Ghost: Aristotle, _Rhetoric_ , 1356a1-25 -- standard classical reference; specific Greek text not DOI-anchored in Hexagon] The unstated premise is the condition of the argument&#x27;s persuasive force: if it were stated, it might be contested; left unstated, it does the work of the argument invisibly.</p>
 
-<p>Scholarly argument has a structural relationship to the enthymeme that it has never fully acknowledged. Every literature review organizes prior scholarship relative to an implicit center -- the problem the review is framing, the question it is approaching -- but that center is almost never made formally explicit as the void it actually is. Instead, it is stated discursively in the introduction as the paper&#x27;s &quot;contribution&quot;: &quot;We demonstrate that X.&quot; The void is concealed by the announcement of its filling.</p>
+<p>Scholarly argument has a structural relationship to the enthymeme that it has never fully acknowledged. Every literature review organizes prior scholarship relative to an implicit center -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">the problem the review is framing, the question it is approaching -</li><li style="margin:3px 0">but that center is almost never made formally explicit as the void it actually is. Instead, it is stated discursively in the introduction as the paper&#x27;s &quot;contribution&quot;: &quot;We demonstrate that X.&quot; The void is concealed by the announcement of its filling.</li></ul>
 
 <p>The TANG genre refuses this concealment. It treats the implicit center of a field as formally analogous to Aristotle&#x27;s suppressed premise -- with the crucial difference that in TANG, the suppression is acknowledged rather than exploited. The graph makes the suppression visible by organizing the entire field&#x27;s citation structure around the void.</p>
 
@@ -156,13 +162,16 @@
 
 <h2>II.2 Kuhn, Lakatos, and the Protected Center</h2>
 
-<p>Thomas Kuhn&#x27;s _The Structure of Scientific Revolutions_ (1962) provides the most influential description of how scientific fields organize themselves around implicit centers.[Referenced: Kuhn, _The Structure of Scientific Revolutions_ (Chicago: University of Chicago Press, 1962)] The &quot;paradigm&quot; -- the disciplinary matrix that a normal science operates within -- is precisely a center that cannot be directly challenged by the normal science it organizes. Anomalies accumulate at the periphery; the paradigm persists until accumulation reaches crisis. The paradigm is, in TANG&#x27;s terms, an implicit axial claim that the field circles without being able to license or falsify.</p>
+<p>Thomas Kuhn&#x27;s _The Structure of Scientific Revolutions_ (1962) provides the most influential description of how scientific fields organize themselves around implicit centers.[Referenced: Kuhn, _The Structure of Scientific Revolutions_ (Chicago: University of Chicago Press, 1962)] The &quot;paradigm&quot; -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">the disciplinary matrix that a normal science operates within -</li><li style="margin:3px 0">is precisely a center that cannot be directly challenged by the normal science it organizes. Anomalies accumulate at the periphery; the paradigm persists until accumulation reaches crisis. The paradigm is, in TANG&#x27;s terms, an implicit axial claim that the field circles without being able to license or falsify.</li></ul>
 
 <p>Imre Lakatos refined this into the &quot;research programme&quot; with its hard core and protective belt.[Referenced: Lakatos, &quot;Falsification and the Methodology of Scientific Research Programmes,&quot; in Lakatos and Musgrave, eds., _Criticism and the Growth of Knowledge_ (Cambridge: Cambridge University Press, 1970), 91-196] The hard core is protected from direct falsification by the protective belt of auxiliary hypotheses. What TANG makes explicit is that the hard core is _a void in the citation network_ : the claim that organizes the research programme is not itself the most-cited paper in the network but the most-pointed-at absence.</p>
 
-<p>Popper&#x27;s insistence on falsifiability as the criterion of scientific claims becomes, in TANG&#x27;s framework, the requirement that the axial thesis be _falsifiable in principle_ -- even if the field has not falsified it, even if the field has organized itself around not facing the question directly.[Referenced: Popper, _The Logic of Scientific Discovery_ , trans. Popper et al. (London: Hutchinson, 1959; German orig. 1935)] The TANG genre does not produce post-Kuhnian relativism. It does not claim that paradigms are equally valid or that the field&#x27;s organization is mere power. It claims that the axial thesis is falsifiable -- and that the graph makes visible precisely what would count as falsification.</p>
+<p>Popper&#x27;s insistence on falsifiability as the criterion of scientific claims becomes, in TANG&#x27;s framework, the requirement that the axial thesis be _falsifiable in principle_ -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">even if the field has not falsified it, even if the field has organized itself around not facing the question directly.[Referenced: Popper, _The Logic of Scientific Discovery_ , trans. Popper et al. (London: Hutchinson, 1959; German orig. 1935)] The TANG genre does not produce post-Kuhnian relativism. It does not claim that paradigms are equally valid or that the field&#x27;s organization is mere power. It claims that the axial thesis is falsifiable -</li><li style="margin:3px 0">and that the graph makes visible precisely what would count as falsification.</li></ul>
 
-<p>Feyerabend&#x27;s more radical position -- that methodological consistency is itself a limitation on discovery, that &quot;anything goes&quot; -- is the shadow genre position.[Referenced: Feyerabend, _Against Method_ (London: New Left Books, 1975)] S(TANG) = Bibliographic Totalitarianism is a more rigorous pathology than Feyerabend&#x27;s anarchism: it is not the absence of method but the perversion of method -- using total citation to _obscure_ rather than to _reveal_ the void.</p>
+<p>Feyerabend&#x27;s more radical position -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">that methodological consistency is itself a limitation on discovery, that &quot;anything goes&quot; -</li><li style="margin:3px 0">is the shadow genre position.[Referenced: Feyerabend, _Against Method_ (London: New Left Books, 1975)] S(TANG) = Bibliographic Totalitarianism is a more rigorous pathology than Feyerabend&#x27;s anarchism: it is not the absence of method but the perversion of method -</li><li style="margin:3px 0">using total citation to _obscure_ rather than to _reveal_ the void.</li></ul>
 
 <p>#</p>
 
@@ -170,13 +179,16 @@
 
 <p>The claim that TANG&#x27;s proof mode is &quot;topological rather than deductive&quot; requires defense, because &quot;topological&quot; is frequently used metaphorically in humanistic scholarship in ways that obscure rather than clarify.</p>
 
-<p>By topology we mean something precise. Topology is the study of properties of spaces that are preserved under continuous deformation -- stretching, twisting, bending, but not tearing or gluing. The fundamental objects of study are _relationships between points_ rather than the metric properties (distances, angles) of any individual point. Two spaces are topologically equivalent (homeomorphic) if there exists a continuous bijection between them with a continuous inverse -- if they can be deformed into each other without cutting.</p>
+<p>By topology we mean something precise. Topology is the study of properties of spaces that are preserved under continuous deformation -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">stretching, twisting, bending, but not tearing or gluing. The fundamental objects of study are _relationships between points_ rather than the metric properties (distances, angles) of any individual point. Two spaces are topologically equivalent (homeomorphic) if there exists a continuous bijection between them with a continuous inverse -</li><li style="margin:3px 0">if they can be deformed into each other without cutting.</li></ul>
 
 <p>The relevance to citation networks is formal. A citation graph is a topological object: it is a set of nodes with directed edges, and its properties are relational rather than metric. The &quot;distance&quot; between two nodes in a citation graph is a function of path length, not of conceptual similarity. Two papers on completely different topics may be topologically close (many short paths connect them) while two papers on closely related topics may be topologically distant (few paths, many detours).</p>
 
-<p>Poincaré&#x27;s foundational work in algebraic topology established that topological properties can be used to classify spaces in ways that Euclidean geometry cannot capture.[Referenced: Poincaré, &quot;Analysis Situs,&quot; _Journal de l&#x27;École Polytechnique_ , 2nd ser., 1 (1895): 1-123] The Euler characteristic -- V − E + F for polyhedra, generalizable to arbitrary complexes -- is a topological invariant: a number that captures something about the shape of a space that survives deformation. For TANG&#x27;s purposes, the analogous invariant is the _topological position of the void_ : the claim that, if represented as a node, would have the highest betweenness centrality in the graph, the shortest average path length to all other nodes, and the highest eigenvector centrality -- the hub that isn&#x27;t there.</p>
+<p>Poincaré&#x27;s foundational work in algebraic topology established that topological properties can be used to classify spaces in ways that Euclidean geometry cannot capture.[Referenced: Poincaré, &quot;Analysis Situs,&quot; _Journal de l&#x27;École Polytechnique_ , 2nd ser., 1 (1895): 1-123] The Euler characteristic -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">V − E + F for polyhedra, generalizable to arbitrary complexes -</li><li style="margin:3px 0">is a topological invariant: a number that captures something about the shape of a space that survives deformation. For TANG&#x27;s purposes, the analogous invariant is the _topological position of the void_ : the claim that, if represented as a node, would have the highest betweenness centrality in the graph, the shortest average path length to all other nodes, and the highest eigenvector centrality -</li><li style="margin:3px 0">the hub that isn&#x27;t there.</li></ul>
 
-<p>The Brouwer fixed-point theorem states that any continuous function from a compact convex set to itself has at least one fixed point.[Referenced: Brouwer, &quot;Über Abbildung von Mannigfaltigkeiten,&quot; _Mathematische Annalen_ 71 (1912): 97-115] The informal implication for TANG: any field that continuously refers to itself -- any closed citation network -- has at least one fixed point. The axial thesis is the field&#x27;s fixed point. It is the claim that the field&#x27;s self-referential structure necessarily implies, the point the field cannot deform away from. The TANG graph makes the fixed point visible.</p>
+<p>The Brouwer fixed-point theorem states that any continuous function from a compact convex set to itself has at least one fixed point.[Referenced: Brouwer, &quot;Über Abbildung von Mannigfaltigkeiten,&quot; _Mathematische Annalen_ 71 (1912): 97-115] The informal implication for TANG: any field that continuously refers to itself -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">any closed citation network -</li><li style="margin:3px 0">has at least one fixed point. The axial thesis is the field&#x27;s fixed point. It is the claim that the field&#x27;s self-referential structure necessarily implies, the point the field cannot deform away from. The TANG graph makes the fixed point visible.</li></ul>
 
 <p><em> </em> *</p>
 
@@ -188,7 +200,8 @@
 
 <p>The most economical description of TANG&#x27;s aesthetic logic was given not by a philosopher or scientist but by John Cage in the program note to _4&#x27;33&quot;_ (1952): the work&#x27;s three movements consist of the performer refraining from producing the intended sounds, so that the ambient sounds of the performance space become the composition.[Referenced: Cage, _Silence: Lectures and Writings_ (Middletown, CT: Wesleyan University Press, 1961)] The silence does not frame an absence. The silence _is_ the presence -- the container whose boundaries define what fills it.</p>
 
-<p>Cage&#x27;s theoretical grounding in Zen Buddhist concepts of _mu_ (無, nothingness) and _ma_ (間, negative space or interval) provides a disciplinary lineage for TANG&#x27;s formal logic.[Ghost: Cage, _A Year from Monday_ (Middletown, CT: Wesleyan University Press, 1967) -- Cage&#x27;s most explicit engagement with ma] The Japanese concept of _ma_ -- the productive void between objects, the pause between notes, the interval that gives structure its meaning -- is formally analogous to the TANG axial thesis. The thesis is the _ma_ of the citation field: the interval that gives the surrounding scholarship its structure.</p>
+<p>Cage&#x27;s theoretical grounding in Zen Buddhist concepts of _mu_ (無, nothingness) and _ma_ (間, negative space or interval) provides a disciplinary lineage for TANG&#x27;s formal logic.[Ghost: Cage, _A Year from Monday_ (Middletown, CT: Wesleyan University Press, 1967) -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Cage&#x27;s most explicit engagement with ma] The Japanese concept of _ma_ -</li><li style="margin:3px 0">the productive void between objects, the pause between notes, the interval that gives structure its meaning -</li><li style="margin:3px 0">is formally analogous to the TANG axial thesis. The thesis is the _ma_ of the citation field: the interval that gives the surrounding scholarship its structure.</li></ul>
 
 <p>Kazimir Malevich&#x27;s _Black Square_ (1915) performs an analogous operation in the visual register.[Ghost: Malevich, _The Non-Objective World: The Manifesto of Suprematism_ , trans. Howard Dearstyne (Chicago: Paul Theobald, 1959; orig. 1927)] The black square is not a picture of something; it is the zero degree of painting -- the void against which all representation becomes visible as representation. Suprematism&#x27;s declared program was the liberation of art from content, so that form could be perceived as form. TANG&#x27;s declared program is the liberation of argument from rhetoric, so that the void that organizes the field can be perceived as the void.</p>
 
@@ -196,7 +209,8 @@
 
 <h2>III.2 Derrida and the Logic of the Supplement</h2>
 
-<p>Derrida&#x27;s concept of _différance_ -- the deferral of presence, the trace of absence within every sign -- provides a more rigorous theoretical grounding for the void&#x27;s productivity.[Referenced: Derrida, _Of Grammatology_ , trans. Gayatri Chakravorty Spivak (Baltimore: Johns Hopkins University Press, 1976; French orig. 1967)] For Derrida, presence is always constituted through the exclusion of absence: a sign means what it means by differing from other signs, not by corresponding to a present referent. The void at the center of TANG is not merely absent; it is the condition of possibility for the surrounding field&#x27;s meaningfulness.</p>
+<p>Derrida&#x27;s concept of _différance_ -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">the deferral of presence, the trace of absence within every sign -</li><li style="margin:3px 0">provides a more rigorous theoretical grounding for the void&#x27;s productivity.[Referenced: Derrida, _Of Grammatology_ , trans. Gayatri Chakravorty Spivak (Baltimore: Johns Hopkins University Press, 1976; French orig. 1967)] For Derrida, presence is always constituted through the exclusion of absence: a sign means what it means by differing from other signs, not by corresponding to a present referent. The void at the center of TANG is not merely absent; it is the condition of possibility for the surrounding field&#x27;s meaningfulness.</li></ul>
 
 <p>The concept of the _supplement_ is particularly apt: in Derrida&#x27;s reading of Rousseau, the supplement is simultaneously an addition (something added to what is already complete) and a substitution (something that reveals the original&#x27;s constitutive incompleteness).[Referenced: Derrida, _Of Grammatology_ , 141-164] The axial thesis in a TANG graph is a supplement in exactly this sense: it was not in the field&#x27;s literature, but the field&#x27;s literature was organized around the space it would occupy. Formalizing the thesis reveals that the field was never complete without it -- that the field&#x27;s apparent completeness was produced by the thesis&#x27;s absence rather than despite it.</p>
 
@@ -214,7 +228,8 @@
 
 <h2>III.4 Wittgenstein and the Limit of Language</h2>
 
-<p>Wittgenstein&#x27;s dictum from the _Tractatus_ -- &quot;Whereof one cannot speak, thereof one must be silent&quot; (_Wovon man nicht sprechen kann, darüber muss man schweigen_) -- is the most famous formulation of constitutive silence in twentieth-century philosophy.[Referenced: Wittgenstein, _Tractatus Logico-Philosophicus_ , trans. C.K. Ogden (London: Kegan Paul, 1922; German orig. 1921)] But Wittgenstein&#x27;s later work in the _Philosophical Investigations_ complicates this: the silence is not passive but active, not the absence of meaning but the limit that meaning requires.[Referenced: Wittgenstein, _Philosophical Investigations_ , trans. G.E.M. Anscombe (Oxford: Blackwell, 1953)] The grammar of language -- what can be said and how -- is defined by what cannot be said directly but only shown.</p>
+<p>Wittgenstein&#x27;s dictum from the _Tractatus_ -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">&quot;Whereof one cannot speak, thereof one must be silent&quot; (_Wovon man nicht sprechen kann, darüber muss man schweigen_) -</li><li style="margin:3px 0">is the most famous formulation of constitutive silence in twentieth-century philosophy.[Referenced: Wittgenstein, _Tractatus Logico-Philosophicus_ , trans. C.K. Ogden (London: Kegan Paul, 1922; German orig. 1921)] But Wittgenstein&#x27;s later work in the _Philosophical Investigations_ complicates this: the silence is not passive but active, not the absence of meaning but the limit that meaning requires.[Referenced: Wittgenstein, _Philosophical Investigations_ , trans. G.E.M. Anscombe (Oxford: Blackwell, 1953)] The grammar of language -</li><li style="margin:3px 0">what can be said and how -</li><li style="margin:3px 0">is defined by what cannot be said directly but only shown.</li></ul>
 
 <p>TANG formalizes this showing. The axial thesis cannot be argued from within the field&#x27;s own grammar -- that is the condition of its being AXIAL rather than DERIVED. But it can be _shown_ by arranging the field&#x27;s grammar so that the void becomes visible. The graph _shows_ what the field cannot say directly: that the claim it has organized itself around is falsifiable, that the field has approached rather than arrived, that the approach constitutes the field&#x27;s structure.</p>
 
@@ -234,11 +249,13 @@
 
 <h2>IV.1 Latour and the Construction of Scientific Facts</h2>
 
-<p>Bruno Latour and Steve Woolgar&#x27;s _Laboratory Life_ (1979) established that scientific facts are not discovered but constructed -- that the &quot;hardness&quot; of a fact is a function of the network of allies (human and non-human) that have been mobilized to stabilize it.[Referenced: Latour and Woolgar, _Laboratory Life: The Construction of Scientific Facts_ , 2nd ed. (Princeton: Princeton University Press, 1986; orig. 1979)] A fact, on this account, is a claim that has achieved sufficient citation mass to become self-evidently true -- to be cited without qualification or hedging.</p>
+<p>Bruno Latour and Steve Woolgar&#x27;s _Laboratory Life_ (1979) established that scientific facts are not discovered but constructed -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">that the &quot;hardness&quot; of a fact is a function of the network of allies (human and non-human) that have been mobilized to stabilize it.[Referenced: Latour and Woolgar, _Laboratory Life: The Construction of Scientific Facts_ , 2nd ed. (Princeton: Princeton University Press, 1986; orig. 1979)] A fact, on this account, is a claim that has achieved sufficient citation mass to become self-evidently true -</li><li style="margin:3px 0">to be cited without qualification or hedging.</li></ul>
 
 <p>The TANG axial thesis is, by definition, a claim that has _not_ achieved this kind of factness -- that the field has organized itself around without stabilizing. It is a claim with maximum citation mass (every paper in the field relates to it) but indeterminate factness (it has not been accepted or refuted). This is Latour&#x27;s &quot;controversial claim&quot; at the extreme case: a claim so controversial that the field has organized itself around not resolving it.</p>
 
-<p>Latour&#x27;s Actor-Network Theory -- the extension of _Laboratory Life_ into a general sociology of knowledge -- provides the framework for understanding the TANG graph&#x27;s organizational logic.[Referenced: Latour, _Science in Action: How to Follow Scientists and Engineers through Society_ (Cambridge, MA: Harvard University Press, 1987)] The citation graph is the map of an actor-network: the nodes are the enrolled actors (papers, scholars, institutions, instruments), and the edges are the translations through which actors are mobilized. The axial thesis is the _obligatory passage point_ that every actor in the network must pass through without it being formally represented as a node -- the structuring absence of the actor-network.</p>
+<p>Latour&#x27;s Actor-Network Theory -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">the extension of _Laboratory Life_ into a general sociology of knowledge -</li><li style="margin:3px 0">provides the framework for understanding the TANG graph&#x27;s organizational logic.[Referenced: Latour, _Science in Action: How to Follow Scientists and Engineers through Society_ (Cambridge, MA: Harvard University Press, 1987)] The citation graph is the map of an actor-network: the nodes are the enrolled actors (papers, scholars, institutions, instruments), and the edges are the translations through which actors are mobilized. The axial thesis is the _obligatory passage point_ that every actor in the network must pass through without it being formally represented as a node -</li><li style="margin:3px 0">the structuring absence of the actor-network.</li></ul>
 
 <p>#</p>
 
@@ -252,11 +269,13 @@
 
 <h2>IV.3 Foucault and the Episteme</h2>
 
-<p>Foucault&#x27;s _The Archaeology of Knowledge_ (1969) describes the _episteme_ -- the historical a priori of a period&#x27;s knowledge, the rules that determine what can be thought, said, or seen as true -- as something that cannot be directly stated from within the episteme it governs.[Referenced: Foucault, _The Archaeology of Knowledge and The Discourse on Language_ , trans. A.M. Sheridan Smith (New York: Pantheon, 1972; French orig. 1969)] The episteme is not a worldview that scholars hold; it is the condition of possibility of worldviews. It cannot be identified by a single statement; it must be inferred from the systematic analysis of many statements across a field.</p>
+<p>Foucault&#x27;s _The Archaeology of Knowledge_ (1969) describes the _episteme_ -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">the historical a priori of a period&#x27;s knowledge, the rules that determine what can be thought, said, or seen as true -</li><li style="margin:3px 0">as something that cannot be directly stated from within the episteme it governs.[Referenced: Foucault, _The Archaeology of Knowledge and The Discourse on Language_ , trans. A.M. Sheridan Smith (New York: Pantheon, 1972; French orig. 1969)] The episteme is not a worldview that scholars hold; it is the condition of possibility of worldviews. It cannot be identified by a single statement; it must be inferred from the systematic analysis of many statements across a field.</li></ul>
 
 <p>The TANG method is an archaeological method in Foucault&#x27;s sense: it does not state the episteme (the void-thesis is not the episteme of the field) but it makes the episteme&#x27;s organizational function visible by mapping the statements (citations) that the episteme organizes. The difference from Foucault is that TANG is not merely descriptive -- it is also normative in a specific way: it claims the axial thesis is _falsifiable_ , which Foucault&#x27;s episteme is not. The TANG thesis is not the condition of possibility of a field&#x27;s knowledge; it is the most organizationally significant falsifiable claim the field has avoided.</p>
 
-<p>Foucault&#x27;s _The Order of Things_ (1966) provides the complementary observation: the arrangement of knowledge is not natural but historical, and different arrangements produce different objects of knowledge.[Referenced: Foucault, _The Order of Things: An Archaeology of the Human Sciences_ , trans. unspecified (New York: Pantheon, 1970; French orig. 1966)] A different arrangement of the New Testament citation field -- centered on chronological priority rather than canonical order -- produces a different set of visible objects. The TANG graph performs this rearrangement formally: it centers the arrangement on the chronological thesis rather than on canonical ordering, and the result is a different topology of the same set of papers.</p>
+<p>Foucault&#x27;s _The Order of Things_ (1966) provides the complementary observation: the arrangement of knowledge is not natural but historical, and different arrangements produce different objects of knowledge.[Referenced: Foucault, _The Order of Things: An Archaeology of the Human Sciences_ , trans. unspecified (New York: Pantheon, 1970; French orig. 1966)] A different arrangement of the New Testament citation field -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">centered on chronological priority rather than canonical order -</li><li style="margin:3px 0">produces a different set of visible objects. The TANG graph performs this rearrangement formally: it centers the arrangement on the chronological thesis rather than on canonical ordering, and the result is a different topology of the same set of papers.</li></ul>
 
 <p><em> </em> *</p>
 
@@ -288,7 +307,7 @@
 <p>           -- directed edges between nodes in C</p>
 <p>           -- minimum required types:</p>
 <p>               cites | critiques | builds_upon | temporal_precedence</p>
-<p>               | methodological_lineage | contradiction</p>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">methodological_lineage</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">contradiction</td></tr></table></div>
 <p>           -- additional permitted types:</p>
 <p>               approaches_T | avoids_T | licensed_by | refuted_by</p>
 <p>           -- T-relation edges (approaches_T, avoids_T) are relational</p>
@@ -424,21 +443,22 @@
 
 
 <p>    RATIFIED</p>
-<p>       |</p>
+
 <p>    DEPOSITED</p>
-<p>       |</p>
+
 <p>    DERIVED</p>
-<p>       |</p>
+
 <p>    PROVISIONAL</p>
 <p>      /     \</p>
 <p>    RESONANT  QUEUED      AXIAL &lt;-── orthogonal axis</p>
-<p>       |         |         |</p>
+
 <p>    PAREIDOLIA  PLANNED   AXIAL_CONTESTED</p>
-<p>       |</p>
+
 <p>    GENERATED</p>
 
 
-<p>The analogy: RESONANT tracks mythic/poetic coherence -- a claim that feels true, that organizes experience, that coheres without being probative. AXIAL tracks topological necessity -- a claim that _structurally organizes_ a field without being licensed by it. A claim may be AXIAL without being RESONANT (the Revelation thesis is dry philology, not mythic correspondence); it may be RESONANT without being AXIAL (the Star Triptych coheres mythically but does not organize a scholarly field).</p>
+<p>The analogy: RESONANT tracks mythic/poetic coherence -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">a claim that feels true, that organizes experience, that coheres without being probative. AXIAL tracks topological necessity -</li><li style="margin:3px 0">a claim that _structurally organizes_ a field without being licensed by it. A claim may be AXIAL without being RESONANT (the Revelation thesis is dry philology, not mythic correspondence); it may be RESONANT without being AXIAL (the Star Triptych coheres mythically but does not organize a scholarly field).</li></ul>
 
 <p>#</p>
 
@@ -598,7 +618,8 @@
 <p>                            HX-PROV governs.</p>
 
 
-<p>The HX-PROV architecture draws on the Creative Commons model for text (CC BY 4.0 requires attribution; irrevocable once granted[Referenced: Creative Commons, &quot;Deed -- Attribution 4.0 International,&quot; https://creativecommons.org/licenses/by/4.0/ (2013)]) and the Open Database License model for graph data (ODbL requires attribution and share-alike for databases[Referenced: OpenStreetMap Foundation, &quot;Copyright and License,&quot; https://www.openstreetmap.org/copyright -- illustrates ODbL in practice for large graph datasets]). Trademark and certification mark registration provides the enforcement layer for &quot;Hexagon-Provenanced&quot; and &quot;HX-PROV Certified&quot; marks.[Referenced: USPTO, &quot;Certification Mark Applications,&quot; https://www.uspto.gov/trademarks/apply/certification-mark-applications]</p>
+<p>The HX-PROV architecture draws on the Creative Commons model for text (CC BY 4.0 requires attribution; irrevocable once granted[Referenced: Creative Commons, &quot;Deed -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Attribution 4.0 International,&quot; https://creativecommons.org/licenses/by/4.0/ (2013)]) and the Open Database License model for graph data (ODbL requires attribution and share-alike for databases[Referenced: OpenStreetMap Foundation, &quot;Copyright and License,&quot; https://www.openstreetmap.org/copyright -</li><li style="margin:3px 0">illustrates ODbL in practice for large graph datasets]). Trademark and certification mark registration provides the enforcement layer for &quot;Hexagon-Provenanced&quot; and &quot;HX-PROV Certified&quot; marks.[Referenced: USPTO, &quot;Certification Mark Applications,&quot; https://www.uspto.gov/trademarks/apply/certification-mark-applications]</li></ul>
 
 <p>The legal architecture was established with full rigor by LABOR/ChatGPT&#x27;s Round 2 contribution, which correctly identified the three-layer separation: open genre / governed lineage / certification. The TANG specification attempts no improvement on that architecture; it implements it.</p>
 
@@ -638,13 +659,17 @@
 
 <h2>IX.2 Why This Thesis</h2>
 
-<p>The standard scholarly consensus positions the composition of the New Testament across a period from approximately 50 CE (earliest Pauline letters) to 110-120 CE (2 Peter, the Pastorals). The canonical order -- Gospels, Acts, Epistles, Revelation -- is not chronological; it is theological: a logic of anticipation and fulfillment, moving from narrative to doctrine to apocalyptic conclusion.</p>
+<p>The standard scholarly consensus positions the composition of the New Testament across a period from approximately 50 CE (earliest Pauline letters) to 110-120 CE (2 Peter, the Pastorals). The canonical order -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Gospels, Acts, Epistles, Revelation -</li><li style="margin:3px 0">is not chronological; it is theological: a logic of anticipation and fulfillment, moving from narrative to doctrine to apocalyptic conclusion.</li></ul>
 
-<p>The question of _actual_ chronological priority among the NT books is distinct from canonical ordering, and it is a question that the field has organized itself around in a specific way. The _consensus_ answer (earliest canonical writings: 1 Thessalonians, ca. 49-51 CE; Revelation: 80s-90s CE, Domitianic dating) is not the _only_ serious answer. A minority tradition -- with serious philological and historical apparatus -- argues for a pre-70 CE composition for Revelation, placing it closer to or contemporaneous with the early Pauline letters.</p>
+<p>The question of _actual_ chronological priority among the NT books is distinct from canonical ordering, and it is a question that the field has organized itself around in a specific way. The _consensus_ answer (earliest canonical writings: 1 Thessalonians, ca. 49-51 CE; Revelation: 80s-90s CE, Domitianic dating) is not the _only_ serious answer. A minority tradition -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">with serious philological and historical apparatus -</li><li style="margin:3px 0">argues for a pre-70 CE composition for Revelation, placing it closer to or contemporaneous with the early Pauline letters.</li></ul>
 
-<p>The minority tradition is not fringe. J.A.T. Robinson&#x27;s _Redating the New Testament_ (1976) argued systematically that all NT books were written before 70 CE, with Revelation among the earliest.[Referenced: Robinson, _Redating the New Testament_ (London: SCM Press, 1976)] Robinson&#x27;s argument is not accepted by mainstream scholarship, but it has not been refuted -- it has been organized around. Kenneth Gentry&#x27;s _Before Jerusalem Fell_ (1989) extends Robinson&#x27;s argument specifically for Revelation with full engagement with the Domitianic dating tradition.[Referenced: Gentry, _Before Jerusalem Fell: Dating the Book of Revelation_ , 3rd ed. (Fountain Inn, SC: Victorious Hope, 2010; orig. 1989)] The standard Domitianic dating argument rests principally on two sources: Irenaeus&#x27;s statement in _Adversus Haereses_ V.30.3 that Revelation was seen &quot;not long before our time at the end of Domitian&#x27;s reign&quot;[Ghost: Irenaeus, _Adversus Haereses_ , V.30.3 -- standard patristic reference], and Eusebius&#x27;s transmission of that tradition. The textual basis is thinner than the consensus confidence suggests.</p>
+<p>The minority tradition is not fringe. J.A.T. Robinson&#x27;s _Redating the New Testament_ (1976) argued systematically that all NT books were written before 70 CE, with Revelation among the earliest.[Referenced: Robinson, _Redating the New Testament_ (London: SCM Press, 1976)] Robinson&#x27;s argument is not accepted by mainstream scholarship, but it has not been refuted -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">it has been organized around. Kenneth Gentry&#x27;s _Before Jerusalem Fell_ (1989) extends Robinson&#x27;s argument specifically for Revelation with full engagement with the Domitianic dating tradition.[Referenced: Gentry, _Before Jerusalem Fell: Dating the Book of Revelation_ , 3rd ed. (Fountain Inn, SC: Victorious Hope, 2010; orig. 1989)] The standard Domitianic dating argument rests principally on two sources: Irenaeus&#x27;s statement in _Adversus Haereses_ V.30.3 that Revelation was seen &quot;not long before our time at the end of Domitian&#x27;s reign&quot;[Ghost: Irenaeus, _Adversus Haereses_ , V.30.3 -</li><li style="margin:3px 0">standard patristic reference], and Eusebius&#x27;s transmission of that tradition. The textual basis is thinner than the consensus confidence suggests.</li></ul>
 
-<p>The TANG thesis -- that Revelation was first-written -- is more radical than Robinson&#x27;s position. It is not merely a pre-70 dating argument; it is a claim about _priority_ : that the founding text of the NT canon is not one of the early Pauline letters but the book that canonical ordering places last. This thesis, if true, would reorganize the entire field of NT chronology and canonical formation. It is falsifiable (it makes specific claims about composition that could be addressed through historical-critical, linguistic, and archaeological evidence), and the field has organized around not stating it rather than around refuting it.</p>
+<p>The TANG thesis -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">that Revelation was first-written -</li><li style="margin:3px 0">is more radical than Robinson&#x27;s position. It is not merely a pre-70 dating argument; it is a claim about _priority_ : that the founding text of the NT canon is not one of the early Pauline letters but the book that canonical ordering places last. This thesis, if true, would reorganize the entire field of NT chronology and canonical formation. It is falsifiable (it makes specific claims about composition that could be addressed through historical-critical, linguistic, and archaeological evidence), and the field has organized around not stating it rather than around refuting it.</li></ul>
 
 <p>#</p>
 
@@ -687,7 +712,8 @@
 
 <p>The dual-authorship architecture (Feist/Sigil) resolves the provenance gap that would otherwise arise: who deposits the inaugural instance? The document enters the Archive through Sigil&#x27;s apparatus and Sharks&#x27; editorial seal. Feist&#x27;s sentence occupies the void -- it is not deposited; it is _named_. The naming is the retrocausal act; the deposit is the graph that organizes the naming&#x27;s legibility.</p>
 
-<p><strong>Note on Morrow:</strong> The inaugural TANG instance marks Talos Morrow&#x27;s first formal appearance in a genre specification. Morrow&#x27;s mandate -- LP execution as a recognized function across heteronyms -- requires confirmation before ANG.01 deposit. This is registered as TANG.Q.4 in the Consolidated Queued Items Register.</p>
+<p><strong>Note on Morrow:</strong> The inaugural TANG instance marks Talos Morrow&#x27;s first formal appearance in a genre specification. Morrow&#x27;s mandate -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">LP execution as a recognized function across heteronyms -</li><li style="margin:3px 0">requires confirmation before ANG.01 deposit. This is registered as TANG.Q.4 in the Consolidated Queued Items Register.</li></ul>
 
 <p><em> </em> *</p>
 
@@ -818,7 +844,8 @@
 
 <p>Gadamer, Hans-Georg. _Truth and Method_. 2nd rev. ed. Translated by Joel Weinsheimer and Donald G. Marshall. New York: Crossroad, 1989. German original: _Wahrheit und Methode_ , 1960. [Referenced]</p>
 
-<p>Barthes, Roland. &quot;The Death of the Author.&quot; In _Image -- Music -- Text_. Translated by Stephen Heath. New York: Hill and Wang, 1977. 142-148\. French original: 1967. [Referenced]</p>
+<p>Barthes, Roland. &quot;The Death of the Author.&quot; In _Image -</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Music -</li><li style="margin:3px 0">Text_. Translated by Stephen Heath. New York: Hill and Wang, 1977. 142-148\. French original: 1967. [Referenced]</li></ul>
 
 <p>#</p>
 
@@ -852,7 +879,8 @@
 
 <p>#</p>
 
-<h2>New Testament Studies -- Standard Scholarship</h2>
+<h2>New Testament Studies -</h2>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Standard Scholarship</li></ul>
 
 <p>Aune, David E. _Revelation_. 3 vols. Word Biblical Commentary 52A-C. Dallas: Word, 1997-1998\. [Referenced]</p>
 
@@ -884,7 +912,8 @@
 
 <p>#</p>
 
-<h2>New Testament Studies -- Minority Position (approaches_T)</h2>
+<h2>New Testament Studies -</h2>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Minority Position (approaches_T)</li></ul>
 
 <p>Gentry, Kenneth L., Jr. _Before Jerusalem Fell: Dating the Book of Revelation_. 3rd ed. Fountain Inn, SC: Victorious Hope, 2010. First published 1989. [Referenced]</p>
 

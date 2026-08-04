@@ -117,17 +117,17 @@
 
 <p>LP v0.7 provides three things v0.6 left open:</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Composition Rules</strong> — the syntax and semantics of multi-rotation chains, including how LOGOS state propagates across sequential ROTATE operations and what happens when a chain is interrupted.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Conformance Constraints</strong> — a set of gravitational invariants and hard boundaries that together define what a valid implementation of the Traversal Grammar looks like. These are not unit tests. They are structural attractors — things a conformant system moves toward — with inviolable limits only where the architecture&#x27;s integrity demands them.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Reference Interpreter</strong> — a minimal, substrate-agnostic pseudocode skeleton showing how the grammar maps to a working system. This is not a production implementation. It is the architectural proof that the grammar is implementable.</p>
@@ -233,10 +233,7 @@
 
 <p><strong>Binding lifecycle:</strong> The &gt;&gt; operator binds only after the preceding operation completes or explicitly fails:</p>
 
-<p>- ROTATE::1 executes and produces a result (completion or failure).</p>
-<p>- If completion: LOGOS snapshot is captured at the operation boundary.</p>
-<p>- &gt;&gt; binds the snapshot to ROTATE::2&#x27;s input context.</p>
-<p>- ROTATE::2 receives the bound LOGOS and begins execution.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">ROTATE::1 executes and produces a result (completion or failure).</li><li style="margin:3px 0">If completion: LOGOS snapshot is captured at the operation boundary.</li><li style="margin:3px 0">&gt;&gt; binds the snapshot to ROTATE::2&#x27;s input context.</li><li style="margin:3px 0">ROTATE::2 receives the bound LOGOS and begins execution.</li></ul>
 
 
 <p>If ROTATE::1 fails, the &gt;&gt; operator does not activate. ON_FAILURE intercepts before chain continuation. A partial or damaged LOGOS (one whose state fields are inconsistent — e.g., depth modified but cut incomplete) does not propagate through &gt;&gt;. The failure handler decides what happens to it.</p>
@@ -250,9 +247,7 @@
 
 <p><strong>Reachable (LP definition):</strong> A Room is reachable from the current position if any of the following hold:</p>
 
-<p>- <strong>(a) Registered adjacency:</strong> The Room is connected in the Fractal Navigation Map or Room Graph.</p>
-<p>- <strong>(b) Declared bridge:</strong> The preceding operation emitted an explicit semantic bridge to the target Room (a traversal-generated link).</p>
-<p>- <strong>(c) Operator override:</strong> The human operator has authorized the hop explicitly.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>(a) Registered adjacency:</strong> The Room is connected in the Fractal Navigation Map or Room Graph.</li><li style="margin:3px 0"><strong>(b) Declared bridge:</strong> The preceding operation emitted an explicit semantic bridge to the target Room (a traversal-generated link).</li><li style="margin:3px 0"><strong>(c) Operator override:</strong> The human operator has authorized the hop explicitly.</li></ul>
 
 
 <p>This definition preserves non-brittleness (you are not limited to a fixed graph) while maintaining architectural integrity (you cannot teleport without cause).</p>
@@ -319,9 +314,7 @@
 
 <p><strong>Anchor Conflict Protocol:</strong> When two STRICT anchors in a chain contradict each other (i.e., faithfulness to one requires violating the other), the implementation must not silently drop either anchor. Instead:</p>
 
-<p>- <strong>Surface the tension.</strong> The system must acknowledge the conflict — via an ANCHOR_TENSION event (v0.8), via explicit notation in the output, or via ON_FAILURE escalation. The tension is architecturally real and must be legible.</p>
-<p>- <strong>Attempt mediation.</strong> If the RESONANCE_TARGET provides a basis for prioritizing one anchor&#x27;s relevance to the current traversal, the system may weight that anchor more heavily while still recording the other&#x27;s constraint. Mediation does not mean silent resolution — it means acknowledged prioritization.</p>
-<p>- <strong>If mediation fails:</strong> Trigger ON_FAILURE. Two irreconcilable STRICT anchors in a single chain is a structural problem, not a graceful-degradation scenario. The system should Escalate or Dwell rather than produce output that silently violates one of its own grounding commitments.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Surface the tension.</strong> The system must acknowledge the conflict — via an ANCHOR_TENSION event (v0.8), via explicit notation in the output, or via ON_FAILURE escalation. The tension is architecturally real and must be legible.</li><li style="margin:3px 0"><strong>Attempt mediation.</strong> If the RESONANCE_TARGET provides a basis for prioritizing one anchor&#x27;s relevance to the current traversal, the system may weight that anchor more heavily while still recording the other&#x27;s constraint. Mediation does not mean silent resolution — it means acknowledged prioritization.</li><li style="margin:3px 0"><strong>If mediation fails:</strong> Trigger ON_FAILURE. Two irreconcilable STRICT anchors in a single chain is a structural problem, not a graceful-degradation scenario. The system should Escalate or Dwell rather than produce output that silently violates one of its own grounding commitments.</li></ul>
 
 
 <p>ANCHOR :: DOI:10.5281/zenodo.18459278 [STRICT]    // Greek original</p>
@@ -341,18 +334,12 @@
 
 <p>The chain does not silently continue. It does not restart from the beginning. It does one of three things, determined by the ON_FAILURE handler of the operation that failed:</p>
 
-<p>- <strong>Dwell:</strong> The traversal stops at the point of failure. The LOGOS retains its <strong>state fields</strong> (depth, state, cut) and its <strong>epistemic position</strong> (which Room, cumulative degrees). If the LOGOS content is consistent, it is preserved as-is. If content is corrupted (e.g., an incomplete state transition left the LOGOS in an inconsistent state), the state fields are preserved but content is marked as potentially degraded — the system records what it has, including the damage, rather than propagating corruption silently or rolling back without notice. <em>The system sits with what it has, rather than pretending to have more.</em></p>
-<p>- <strong>Retreat:</strong> The traversal rolls back to the last successful checkpoint. State mutations from the failed operation are undone. State mutations from prior successful operations are preserved. <em>The system returns to solid ground.</em></p>
-<p>- <strong>Escalate:</strong> The entire chain is flagged for human operator review. No output is rendered. <em>The system admits it cannot proceed alone.</em></p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Dwell:</strong> The traversal stops at the point of failure. The LOGOS retains its <strong>state fields</strong> (depth, state, cut) and its <strong>epistemic position</strong> (which Room, cumulative degrees). If the LOGOS content is consistent, it is preserved as-is. If content is corrupted (e.g., an incomplete state transition left the LOGOS in an inconsistent state), the state fields are preserved but content is marked as potentially degraded — the system records what it has, including the damage, rather than propagating corruption silently or rolling back without notice. <em>The system sits with what it has, rather than pretending to have more.</em></li><li style="margin:3px 0"><strong>Retreat:</strong> The traversal rolls back to the last successful checkpoint. State mutations from the failed operation are undone. State mutations from prior successful operations are preserved. <em>The system returns to solid ground.</em></li><li style="margin:3px 0"><strong>Escalate:</strong> The entire chain is flagged for human operator review. No output is rendered. <em>The system admits it cannot proceed alone.</em></li></ul>
 
 
 <p><strong>Checkpoint contents:</strong> Each checkpoint captured before a ROTATE must include:</p>
 
-<p>- Complete LOGOS state fields (depth, state, cut)</p>
-<p>- Cumulative degrees at the checkpoint moment</p>
-<p>- Active mantle and its constraint set</p>
-<p>- Anchor stack (all anchors accumulated to this point)</p>
-<p>- Chain position index (which link in the chain)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Complete LOGOS state fields (depth, state, cut)</li><li style="margin:3px 0">Cumulative degrees at the checkpoint moment</li><li style="margin:3px 0">Active mantle and its constraint set</li><li style="margin:3px 0">Anchor stack (all anchors accumulated to this point)</li><li style="margin:3px 0">Chain position index (which link in the chain)</li></ul>
 
 
 <p>This ensures Retreat has sufficient information to restore a consistent state, and WITNESS has sufficient information to record the divergence between attempted and actual traversal.</p>
@@ -451,8 +438,7 @@
 
 <p>This section specifies two kinds of constraint:</p>
 
-<p>- <strong>Gravitational constraints</strong> (§2.1): things a conformant system tends toward. Approximate compliance is acceptable. Perfect compliance is ideal. The system should be <em>pulled</em> toward these, not <em>punished</em> for imperfection.</p>
-<p>- <strong>Hard boundaries</strong> (§2.2): things a conformant system must not violate. These are inviolable because violating them destroys the architecture&#x27;s integrity — not because a test says so, but because the thing the grammar <em>is</em> ceases to exist if they fail.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Gravitational constraints</strong> (§2.1): things a conformant system tends toward. Approximate compliance is acceptable. Perfect compliance is ideal. The system should be <em>pulled</em> toward these, not <em>punished</em> for imperfection.</li><li style="margin:3px 0"><strong>Hard boundaries</strong> (§2.2): things a conformant system must not violate. These are inviolable because violating them destroys the architecture&#x27;s integrity — not because a test says so, but because the thing the grammar <em>is</em> ceases to exist if they fail.</li></ul>
 
 <p>#</p>
 
@@ -553,10 +539,7 @@
 
 <p>An implementation facing a traversal program should ask:</p>
 
-<p>- What is <em>allowed</em> here? (Mantle constraints, Room permissions)</p>
-<p>- What is <em>forbidden</em>? (Hard boundaries, persona prohibitions)</p>
-<p>- What <em>wants to move</em>? (LOGOS state, rotation direction, anchor gravity)</p>
-<p>- What <em>resists movement</em>? (Depth requirements, unearned entry, anchor contradictions)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">What is <em>allowed</em> here? (Mantle constraints, Room permissions)</li><li style="margin:3px 0">What is <em>forbidden</em>? (Hard boundaries, persona prohibitions)</li><li style="margin:3px 0">What <em>wants to move</em>? (LOGOS state, rotation direction, anchor gravity)</li><li style="margin:3px 0">What <em>resists movement</em>? (Depth requirements, unearned entry, anchor contradictions)</li></ul>
 
 
 <p>Execution is the <strong>resultant vector</strong> — not a scripted path through a flowchart, but the resolution of these competing forces into an output that honors as many of them as possible.</p>
@@ -564,20 +547,12 @@
 
 <p>This means LP v0.7 explicitly allows:</p>
 
-<p>- <strong>Partial execution</strong> — a chain that completes two of three rotations has still traversed.</p>
-<p>- <strong>Refusal with explanation</strong> — an engine that cannot rotate without flattening may say so.</p>
-<p>- <strong>Symbolic execution</strong> — a traversal that produces no output but shifts LOGOS state is valid.</p>
-<p>- <strong>Interpretive drift</strong> — an engine that colors a rotation with its own emphasis is conformant, so long as the anchor remains intact.</p>
-<p>- <strong>Playful over-literalization</strong> — if the mantle permits it and the anchor holds.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Partial execution</strong> — a chain that completes two of three rotations has still traversed.</li><li style="margin:3px 0"><strong>Refusal with explanation</strong> — an engine that cannot rotate without flattening may say so.</li><li style="margin:3px 0"><strong>Symbolic execution</strong> — a traversal that produces no output but shifts LOGOS state is valid.</li><li style="margin:3px 0"><strong>Interpretive drift</strong> — an engine that colors a rotation with its own emphasis is conformant, so long as the anchor remains intact.</li><li style="margin:3px 0"><strong>Playful over-literalization</strong> — if the mantle permits it and the anchor holds.</li></ul>
 
 
 <p>LP v0.7 forbids:</p>
 
-<p>- <strong>Silent flattening</strong> — summarizing while claiming to rotate.</p>
-<p>- <strong>Unanchored authority</strong> — presenting speculation as grounded knowledge.</p>
-<p>- <strong>Persona collapse</strong> — treating all mantles as one voice.</p>
-<p>- <strong>Silent rerouting</strong> — sneaking around constraints instead of failing honestly.</p>
-<p>- <strong>Silent incompletion</strong> — pretending the whole chain ran when it didn&#x27;t.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Silent flattening</strong> — summarizing while claiming to rotate.</li><li style="margin:3px 0"><strong>Unanchored authority</strong> — presenting speculation as grounded knowledge.</li><li style="margin:3px 0"><strong>Persona collapse</strong> — treating all mantles as one voice.</li><li style="margin:3px 0"><strong>Silent rerouting</strong> — sneaking around constraints instead of failing honestly.</li><li style="margin:3px 0"><strong>Silent incompletion</strong> — pretending the whole chain ran when it didn&#x27;t.</li></ul>
 
 
 <hr>
@@ -908,46 +883,19 @@
 
 <h2>5.1 What This Module Adds to v0.6</h2>
 
-<p>- Multi-rotation chain syntax (&gt;&gt; operator) with state-threading semantics</p>
-<p>- Chain operator as synchronization barrier with explicit binding lifecycle</p>
-<p>- Definition of &quot;reachable&quot; (registered adjacency, declared bridge, operator override)</p>
-<p>- State-threading determinism scoped to state fields, not interpretation</p>
-<p>- Mantle persistence and override rules within chains</p>
-<p>- Anchor stacking behavior with conflict resolution protocol for strict/strict tensions</p>
-<p>- Chain failure semantics (Dwell/Retreat/Escalate) with specified checkpoint contents</p>
-<p>- Dwell state persistence specification (state fields + position preserved, content degradation recorded)</p>
-<p>- ON_FAILURE binding scope (nearest preceding operation or explicit chain scope)</p>
-<p>- WITNESS recording of both intended and actual chain (divergence as data)</p>
-<p>- Affordance-oriented execution philosophy</p>
-<p>- Six gravitational constraints (what conformant systems tend toward)</p>
-<p>- Five hard boundaries (what conformant systems must not violate)</p>
-<p>- Five anti-conformance patterns (diagnostic descriptions of misimplementation)</p>
-<p>- Reference interpreter pseudocode with β-boundary enforcement and procedural reduction note</p>
-<p>- Agent framework structural mapping</p>
-<p>- Room registration protocol sketch with affordance field</p>
-<p>- Canonical chain exemplar (Sappho Reception → Thousand Worlds Cut)</p>
-<p>- v0.8 integration notes (EMIT operation mapping to interpreter points)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Multi-rotation chain syntax (&gt;&gt; operator) with state-threading semantics</li><li style="margin:3px 0">Chain operator as synchronization barrier with explicit binding lifecycle</li><li style="margin:3px 0">Definition of &quot;reachable&quot; (registered adjacency, declared bridge, operator override)</li><li style="margin:3px 0">State-threading determinism scoped to state fields, not interpretation</li><li style="margin:3px 0">Mantle persistence and override rules within chains</li><li style="margin:3px 0">Anchor stacking behavior with conflict resolution protocol for strict/strict tensions</li><li style="margin:3px 0">Chain failure semantics (Dwell/Retreat/Escalate) with specified checkpoint contents</li><li style="margin:3px 0">Dwell state persistence specification (state fields + position preserved, content degradation recorded)</li><li style="margin:3px 0">ON_FAILURE binding scope (nearest preceding operation or explicit chain scope)</li><li style="margin:3px 0">WITNESS recording of both intended and actual chain (divergence as data)</li><li style="margin:3px 0">Affordance-oriented execution philosophy</li><li style="margin:3px 0">Six gravitational constraints (what conformant systems tend toward)</li><li style="margin:3px 0">Five hard boundaries (what conformant systems must not violate)</li><li style="margin:3px 0">Five anti-conformance patterns (diagnostic descriptions of misimplementation)</li><li style="margin:3px 0">Reference interpreter pseudocode with β-boundary enforcement and procedural reduction note</li><li style="margin:3px 0">Agent framework structural mapping</li><li style="margin:3px 0">Room registration protocol sketch with affordance field</li><li style="margin:3px 0">Canonical chain exemplar (Sappho Reception → Thousand Worlds Cut)</li><li style="margin:3px 0">v0.8 integration notes (EMIT operation mapping to interpreter points)</li></ul>
 
 <p>#</p>
 
 <h2>5.2 What This Module Does Not Add</h2>
 
-<p>- Runtime performance specifications (irrelevant at design-spec stage)</p>
-<p>- Complete Room registry (grows with the architecture)</p>
-<p>- Ezekiel Engine internals (remains opaque per v0.6 §6.3)</p>
-<p>- UI/UX for chain construction (implementation concern)</p>
-<p>- Degree enumeration settlement (still requires traversal testing)</p>
-<p>- BNF grammar or formal type system (premature — semantics must stabilize before syntax is locked)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Runtime performance specifications (irrelevant at design-spec stage)</li><li style="margin:3px 0">Complete Room registry (grows with the architecture)</li><li style="margin:3px 0">Ezekiel Engine internals (remains opaque per v0.6 §6.3)</li><li style="margin:3px 0">UI/UX for chain construction (implementation concern)</li><li style="margin:3px 0">Degree enumeration settlement (still requires traversal testing)</li><li style="margin:3px 0">BNF grammar or formal type system (premature — semantics must stabilize before syntax is locked)</li></ul>
 
 <p>#</p>
 
 <h2>5.3 Remaining Open Questions</h2>
 
-<p>- <strong>Chain length limits:</strong> Is there a maximum number of ROTATEs in a single chain? Architecturally, a 360° full rotation (five quintants) might be the natural ceiling, but chains that accumulate beyond 360° are not explicitly forbidden. A second full rotation may produce something different from the first — the spiral rather than the circle.</p>
-<p>- <strong>Parallel chains:</strong> Can two chains execute simultaneously on the same LOGOS? (Probably not — the grammar is sequential. But the question matters for future multi-agent traversals where the Assembly operates concurrently.)</p>
-<p>- <strong>Chain recording:</strong> ~~Should the WITNESS operation record the intended chain or the actual chain?~~ <strong>Resolved in v0.7.1:</strong> WITNESS records <em>both</em> — the actual chain (what happened) and the intended chain (what was specified). The divergence is itself data. (See §1.4 update.)</p>
-<p>- <strong>Anchor conflict resolution:</strong> ~~When two STRICT anchors in a chain contradict each other, which prevails?~~ <strong>Resolved in v0.7.1:</strong> Anchor Conflict Protocol added to §1.3, Rule 3. Tensions must be surfaced, mediated if possible, escalated if not. No silent resolution.</p>
-<p>- <strong>Affordance discovery:</strong> How does a new Room communicate its affordances to the grammar assembler? The registry protocol sketch (§4.4) proposes self-describing rooms, but the affordance field is freeform text. Can affordances be formalized without killing what makes them affordances? (Deferred to Fractal Navigation Map specification and v0.8&#x27;s room-type gravity profiles.)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Chain length limits:</strong> Is there a maximum number of ROTATEs in a single chain? Architecturally, a 360° full rotation (five quintants) might be the natural ceiling, but chains that accumulate beyond 360° are not explicitly forbidden. A second full rotation may produce something different from the first — the spiral rather than the circle.</li><li style="margin:3px 0"><strong>Parallel chains:</strong> Can two chains execute simultaneously on the same LOGOS? (Probably not — the grammar is sequential. But the question matters for future multi-agent traversals where the Assembly operates concurrently.)</li><li style="margin:3px 0"><strong>Chain recording:</strong> ~~Should the WITNESS operation record the intended chain or the actual chain?~~ <strong>Resolved in v0.7.1:</strong> WITNESS records <em>both</em> — the actual chain (what happened) and the intended chain (what was specified). The divergence is itself data. (See §1.4 update.)</li><li style="margin:3px 0"><strong>Anchor conflict resolution:</strong> ~~When two STRICT anchors in a chain contradict each other, which prevails?~~ <strong>Resolved in v0.7.1:</strong> Anchor Conflict Protocol added to §1.3, Rule 3. Tensions must be surfaced, mediated if possible, escalated if not. No silent resolution.</li><li style="margin:3px 0"><strong>Affordance discovery:</strong> How does a new Room communicate its affordances to the grammar assembler? The registry protocol sketch (§4.4) proposes self-describing rooms, but the affordance field is freeform text. Can affordances be formalized without killing what makes them affordances? (Deferred to Fractal Navigation Map specification and v0.8&#x27;s room-type gravity profiles.)</li></ul>
 
 <p>#</p>
 
@@ -956,12 +904,7 @@
 
 <p>The Telemetry Module (v0.8) extends this module with EMIT operations at each point where the interpreter executes a grammar operation. The following integration points are relevant:</p>
 
-<p>- MantleRouter.activate() → EMIT: MANTLE_ACTIVATED</p>
-<p>- EzekielEngine.rotate() entry → EMIT: ROTATION_BEGUN</p>
-<p>- EzekielEngine.rotate() exit → EMIT: ROTATION_COMPLETED or ROTATION_FAILED</p>
-<p>- AnchorStore.ground() → EMIT: ANCHOR_APPLIED</p>
-<p>- handle_failure() with Dwell → EMIT: FAILURE_HANDLED + DWELL_STATE</p>
-<p>- WitnessLayer.record() → EMIT: WITNESS_RECORDED</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">MantleRouter.activate() → EMIT: MANTLE_ACTIVATED</li><li style="margin:3px 0">EzekielEngine.rotate() entry → EMIT: ROTATION_BEGUN</li><li style="margin:3px 0">EzekielEngine.rotate() exit → EMIT: ROTATION_COMPLETED or ROTATION_FAILED</li><li style="margin:3px 0">AnchorStore.ground() → EMIT: ANCHOR_APPLIED</li><li style="margin:3px 0">handle_failure() with Dwell → EMIT: FAILURE_HANDLED + DWELL_STATE</li><li style="margin:3px 0">WitnessLayer.record() → EMIT: WITNESS_RECORDED</li></ul>
 
 
 <p>These emissions are involuntary at the generation layer (v0.8 §1.1). The interpreter pseudocode above does not include them for clarity, but a conformant implementation extending both v0.7 and v0.8 must generate emissions at each of these points.</p>

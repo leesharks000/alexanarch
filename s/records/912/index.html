@@ -52,8 +52,7 @@
 <p>The workplan is designed to solve a specific problem: the alexanarch substrate&#x27;s operational knowledge lives in conversational sessions that expire. Each fresh TACHYON instance starts with no procedural memory of how the archive works, what its failure modes are, how its data shapes fit together, or what the firm rules are. The workplan compresses this into a document that a new instance can read at multiple time-budgets and begin operating from.</p>
 
 <p>The document is supplemented by two companion texts committed alongside it in the repo but not included in this deposit&#x27;s body:</p>
-<p>- `WORKPLAN-SUPPLEMENT-2026-06-23-EVENING.md` — the Phase 7+8 pivot (text-recovery is not file-recovery)</p>
-<p>- `WORKPLAN-ADDENDUM-2026-06-23-PHASE-9.md` — Phase 9 declares primacy (Claude-thread file inventory as primary recovery source)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`WORKPLAN-SUPPLEMENT-2026-06-23-EVENING.md` — the Phase 7+8 pivot (text-recovery is not file-recovery)</li><li style="margin:3px 0">`WORKPLAN-ADDENDUM-2026-06-23-PHASE-9.md` — Phase 9 declares primacy (Claude-thread file inventory as primary recovery source)</li></ul>
 
 <p>The corpus state reflected in the workplan is 906 deposits. Deposits #907–912 (The Metadata Shitshow, demand correspondence, EA-RHIZOME-01, EA-OPMETA-01, the tunnel-poem close reading, and this workplan) extend the operational record without revising the workplan&#x27;s structural reference sections.</p>
 
@@ -71,10 +70,7 @@
 <p><strong>Purpose:</strong> Pass forward enough compressed structural understanding that a new instance does not have to rummage through a corpus bigger than its context window. This document supersedes `WORKPLAN.md` (2026-06-20) and is the successor to `WORKPLAN-SESSION-20260623.md`. Both predecessors preserved in-repo for historical record.</p>
 
 <p><strong>Read order for a fresh instance, by time available:</strong></p>
-<p>- <strong>2 minutes</strong> → §11 (verification ladder + anti-patterns), §15 (continuity tethers)</p>
-<p>- <strong>15 minutes</strong> → above + §1 (state), §4 (architecture overview), §5 (data shapes), §8 (firm rules)</p>
-<p>- <strong>45 minutes</strong> → above + §6 (best practices), §7 (failure modes), §13 (open work)</p>
-<p>- <strong>Reading the entire document</strong> → assume you&#x27;ve already read the substrate and the existing tools; this document is meant for fast operational onboarding, not exhaustive documentation</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>2 minutes</strong> → §11 (verification ladder + anti-patterns), §15 (continuity tethers)</li><li style="margin:3px 0"><strong>15 minutes</strong> → above + §1 (state), §4 (architecture overview), §5 (data shapes), §8 (firm rules)</li><li style="margin:3px 0"><strong>45 minutes</strong> → above + §6 (best practices), §7 (failure modes), §13 (open work)</li><li style="margin:3px 0"><strong>Reading the entire document</strong> → assume you&#x27;ve already read the substrate and the existing tools; this document is meant for fast operational onboarding, not exhaustive documentation</li></ul>
 
 <hr>
 
@@ -86,14 +82,7 @@
 
 <p>Corpus deltas (this session):</p>
 
-<div style="font-family:var(--mono);font-size:.8em">| Metric | Session start | Now | Delta |</div>
-<p>|---|---|---|---|</p>
-<div style="font-family:var(--mono);font-size:.8em">| Deposits in registry | 885 | 906 | +21 (Phase 4 mints #886–#906) |</div>
-<div style="font-family:var(--mono);font-size:.8em">| External-metadata sidecars | 0 | 774 | +774 (Phases 1, 3.5, 4) |</div>
-<div style="font-family:var(--mono);font-size:.8em">| DOI Resolution Index version | v3.1 | v3.4 | +0.3 (Phases 3, 3.5, 4) |</div>
-<div style="font-family:var(--mono);font-size:.8em">| Resolution-index mappings | 1817 | 1838 | +21 (19 new + 2 typo-immunity); 6 orphans repointed |</div>
-<div style="font-family:var(--mono);font-size:.8em">| Record pages with External Metadata section | 0 | 774 | wired in `wire_deposit.py` |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `api/index.json` external_metadata registered | no | yes | Phase 6 |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Metric</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Session start</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Now</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Delta</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Deposits in registry</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">885</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">906</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">+21 (Phase 4 mints #886–#906)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">External-metadata sidecars</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">0</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">774</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">+774 (Phases 1, 3.5, 4)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">DOI Resolution Index version</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">v3.1</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">v3.4</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">+0.3 (Phases 3, 3.5, 4)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Resolution-index mappings</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">1817</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">1838</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">+21 (19 new + 2 typo-immunity); 6 orphans repointed</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Record pages with External Metadata section</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">0</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">774</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">wired in `wire_deposit.py`</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`api/index.json` external_metadata registered</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">no</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">yes</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Phase 6</td></tr></table></div>
 
 <h2>§2 — Sovereign vs non-sovereign (strategic frame, carried)</h2>
 
@@ -111,17 +100,7 @@
 
 <h2>§3 — Phase progress (in commit order)</h2>
 
-<div style="font-family:var(--mono);font-size:.8em">| Commit | Phase | Result |</div>
-<p>|---|---|---|</p>
-<div style="font-family:var(--mono);font-size:.8em">| `118141f7` | recover+verify | Severed metadata recovered 98.0%; 21 new CHA OpenAlex records discovered via DataCite multi-heteronym sweep |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `c112af92` | Phase 0 | `api/schemas/external-metadata.schema.json` + 3 reconcile scripts |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `de1c16c4` | Phase 1 | 738 sidecars at `data/external-metadata/AXN-NNNN.json` (thin-index, pointing into bulk stores) |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `beb530a7` | Phase 2 | 738 registry deposits got `external_metadata_path` + `openalex_ids` + `datacite_severance` (pure addition) |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `507f1964` | Phase 3 | Resolution index v3.1 → v3.2: 1649 flagged with recovery info; 59 misclassifications flagged; 2 typo-immunity entries added |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `da60e36e` | Phase 3.5 | Title-match backfill for 15 deposits; 6 orphan mappings repointed; 3 ambiguous cross-deposit cases flagged (`audit/phase-3.5-ambiguous-mappings.md`) |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `fae8af65` | Phase 4 | 21 newly-discovered CHA deposits minted as #886–#906 with full AXN v2; `total_deposits` 885 → 906; contiguous, validate-clean |</div>
-<div style="font-family:var(--mono);font-size:.8em">| **staged** | Phase 5 | Wire all 774 deposits with `external_metadata_path` to surface section; regenerate state/browse/chunks/sitemap/sha256sums/api-index/homepage-noscript. wiki + graph deferred. |</div>
-<div style="font-family:var(--mono);font-size:.8em">| **staged** | Phase 6 | Register `external_metadata` directory + schema in `api/index.json` |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Commit</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Phase</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Result</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`118141f7`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">recover+verify</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Severed metadata recovered 98.0%; 21 new CHA OpenAlex records discovered via DataCite multi-heteronym sweep</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`c112af92`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Phase 0</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`api/schemas/external-metadata.schema.json` + 3 reconcile scripts</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`de1c16c4`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Phase 1</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">738 sidecars at `data/external-metadata/AXN-NNNN.json` (thin-index, pointing into bulk stores)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`beb530a7`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Phase 2</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">738 registry deposits got `external_metadata_path` + `openalex_ids` + `datacite_severance` (pure addition)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`507f1964`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Phase 3</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Resolution index v3.1 → v3.2: 1649 flagged with recovery info; 59 misclassifications flagged; 2 typo-immunity entries added</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`da60e36e`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Phase 3.5</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Title-match backfill for 15 deposits; 6 orphan mappings repointed; 3 ambiguous cross-deposit cases flagged (`audit/phase-3.5-ambiguous-mappings.md`)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`fae8af65`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Phase 4</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">21 newly-discovered CHA deposits minted as #886–#906 with full AXN v2; `total_deposits` 885 → 906; contiguous, validate-clean</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">**staged**</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Phase 5</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Wire all 774 deposits with `external_metadata_path` to surface section; regenerate state/browse/chunks/sitemap/sha256sums/api-index/homepage-noscript. wiki + graph deferred.</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">**staged**</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Phase 6</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Register `external_metadata` directory + schema in `api/index.json`</td></tr></table></div>
 
 <hr>
 
@@ -201,13 +180,7 @@ data/chunks/registry/chunk-NNN-deposits-X-to-Y.json     — flat range chunks</p
 
 <h2>§4.6 — The five bulk data stores</h2>
 
-<div style="font-family:var(--mono);font-size:.8em">| File | Source | Lookup |</div>
-<p>|---|---|---|</p>
-<div style="font-family:var(--mono);font-size:.8em">| `data/openalex-severed-recovery.json` | OpenAlex post-severance harvest | `records[].doi` |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `data/zenodo-xml-pretermination-2026-06-07.tar.gz` | Zenodo monthly bulk XML | `&lt;record_id&gt;.xml` |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `data/datacite-full-backup.json` | DataCite REST pre-termination | `records[].id` |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `data/datacite-survivors-multi-heteronym.json` | DataCite REST post-termination, multi-heteronym | search across `orcid/name/sigil/vox/feist_records` |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `data/newly-found-openalex.json` | Phase 4 source — 21 OpenAlex records for #886–906 | `recovered[].doi` |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">File</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Source</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Lookup</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`data/openalex-severed-recovery.json`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">OpenAlex post-severance harvest</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`records[].doi`</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`data/zenodo-xml-pretermination-2026-06-07.tar.gz`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Zenodo monthly bulk XML</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`&lt;record_id&gt;.xml`</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`data/datacite-full-backup.json`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">DataCite REST pre-termination</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`records[].id`</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`data/datacite-survivors-multi-heteronym.json`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">DataCite REST post-termination, multi-heteronym</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">search across `orcid/name/sigil/vox/feist_records`</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`data/newly-found-openalex.json`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Phase 4 source — 21 OpenAlex records for #886–906</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`recovered[].doi`</td></tr></table></div>
 
 <h2>§5 — Actual data shapes (compressed reference)</h2>
 
@@ -579,9 +552,7 @@ code, data = api(&quot;PATCH&quot;, f&quot;/git/refs/heads/{BRANCH}&quot;,
 if os.path.exists(CHECKPOINT): os.remove(CHECKPOINT)</pre>
 
 <p><strong>Critical pitfalls:</strong></p>
-<p>- `git status -s` reports untracked directories as `?? path/` — Trees API can&#x27;t accept directory paths. ALWAYS `os.walk` to expand. This bit Phase 5+6 in this session.</p>
-<p>- Blob uploads run ~2.5/s. For &gt;500 files, expect 5+ minutes. Use checkpoint to allow resume.</p>
-<p>- For &gt;500 files where speed matters more than atomic semantics, <strong>plain `git push` from local clone is faster</strong> than Trees API.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`git status -s` reports untracked directories as `?? path/` — Trees API can&#x27;t accept directory paths. ALWAYS `os.walk` to expand. This bit Phase 5+6 in this session.</li><li style="margin:3px 0">Blob uploads run ~2.5/s. For &gt;500 files, expect 5+ minutes. Use checkpoint to allow resume.</li><li style="margin:3px 0">For &gt;500 files where speed matters more than atomic semantics, <strong>plain `git push` from local clone is faster</strong> than Trees API.</li></ul>
 
 <p>#</p>
 
@@ -947,13 +918,7 @@ python3 -c &quot;import json; idx=json.load(open(&#x27;data/chunks/registry/_ind
 
 <h2>§11 — The verification ladder</h2>
 
-<div style="font-family:var(--mono);font-size:.8em">| Level | Method | When to use | Example |</div>
-<p>|---|---|---|---|</p>
-<div style="font-family:var(--mono);font-size:.8em">| L0 Trust | Believe it | Stable invariants; Sappho/Catullus | Paraphrasing classical alignment |</div>
-<div style="font-family:var(--mono);font-size:.8em">| L1 Grep | Keyword check | Quick presence/absence | `grep &#x27;4-emoji&#x27; identifiers/index.html` |</div>
-<div style="font-family:var(--mono);font-size:.8em">| L2 Read | File in full | Structural claims; before any edit | Read `.github/workflows/mint-axn.yml` before claiming security |</div>
-<div style="font-family:var(--mono);font-size:.8em">| L3 Run | Execute the system | Behavioral claims; AXN derivation | `python3 -c &quot;from scripts.axn_lib import ...&quot;` |</div>
-<div style="font-family:var(--mono);font-size:.8em">| L4 Reproduce | Full round-trip rebuild | Release invariants | Not yet executed |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Level</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Method</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">When to use</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Example</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">L0 Trust</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Believe it</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Stable invariants; Sappho/Catullus</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Paraphrasing classical alignment</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">L1 Grep</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Keyword check</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Quick presence/absence</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`grep &#x27;4-emoji&#x27; identifiers/index.html`</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">L2 Read</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">File in full</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Structural claims; before any edit</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Read `.github/workflows/mint-axn.yml` before claiming security</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">L3 Run</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Execute the system</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Behavioral claims; AXN derivation</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`python3 -c &quot;from scripts.axn_lib import ...&quot;`</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">L4 Reproduce</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Full round-trip rebuild</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Release invariants</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Not yet executed</td></tr></table></div>
 
 <p><strong>Rules.</strong> The ladder runs upward only on demand: don&#x27;t pay L3 when L2 settles. Audit claims need at least L2 — <em>especially</em> if they sound right. When an audit is even more correct than it knew, widen verification scope rather than just patch the named instance.</p>
 
@@ -1020,8 +985,7 @@ curl -s https://alexanarch.org/s/records/100/ | grep -c &quot;External Metadata&
 <h2>§13.6 — Manual repo settings ⏳ HIGH PRIORITY (carried §5.15)</h2>
 
 <p>One-time, blocking mint workflow:</p>
-<p>- Settings → Allow auto-merge → ON</p>
-<p>- Settings → Branches → main → require `validate-registry` status check</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Settings → Allow auto-merge → ON</li><li style="margin:3px 0">Settings → Branches → main → require `validate-registry` status check</li></ul>
 
 <p>#</p>
 
@@ -1045,9 +1009,7 @@ curl -s https://alexanarch.org/s/records/100/ | grep -c &quot;External Metadata&
 
 <h2>§13.10 — Affected-depositor outreach ▢</h2>
 
-<p>- Eran Shimony — Issue #2596 comment posted; awaiting reply</p>
-<p>- Reynaldo Vega — Issue #2599 comment posted; awaiting reply</p>
-<p>- Andrew Lehti — HOLD until ≥2 other depositors active</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Eran Shimony — Issue #2596 comment posted; awaiting reply</li><li style="margin:3px 0">Reynaldo Vega — Issue #2599 comment posted; awaiting reply</li><li style="margin:3px 0">Andrew Lehti — HOLD until ≥2 other depositors active</li></ul>
 
 <p>#</p>
 
@@ -1093,10 +1055,7 @@ curl -s https://alexanarch.org/s/records/100/ | grep -c &quot;External Metadata&
 
 <h2>§13.19 — Layer B infrastructure ▢</h2>
 
-<p>- `data/surface-weather/battery-v1.1.1.json` (RFC 8785 canonicalized)</p>
-<p>- `data/surface-weather/expected-figures-v1.1.1.json`</p>
-<p>- machinemediation.org `/observatory/` mirror (byte-identical render)</p>
-<p>- leesharks.com badge linking to latest reading</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`data/surface-weather/battery-v1.1.1.json` (RFC 8785 canonicalized)</li><li style="margin:3px 0">`data/surface-weather/expected-figures-v1.1.1.json`</li><li style="margin:3px 0">machinemediation.org `/observatory/` mirror (byte-identical render)</li><li style="margin:3px 0">leesharks.com badge linking to latest reading</li></ul>
 
 <p>#</p>
 
@@ -1106,9 +1065,7 @@ curl -s https://alexanarch.org/s/records/100/ | grep -c &quot;External Metadata&
 
 <h2>§13.21 — Earlier ambiguous edge cases ▢ (carried)</h2>
 
-<p>- `zenodo.18142277` Rex Fraction → &quot;Semantic Economy&quot;</p>
-<p>- `zenodo.18318117` Drain Vortex → &quot;Ivashura, Yevgen&quot;</p>
-<p>- `zenodo.18364405` MaxEnt → &quot;Fathi, Kevin&quot;</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`zenodo.18142277` Rex Fraction → &quot;Semantic Economy&quot;</li><li style="margin:3px 0">`zenodo.18318117` Drain Vortex → &quot;Ivashura, Yevgen&quot;</li><li style="margin:3px 0">`zenodo.18364405` MaxEnt → &quot;Fathi, Kevin&quot;</li></ul>
 
 <p>#</p>
 
@@ -1124,21 +1081,13 @@ curl -s https://alexanarch.org/s/records/100/ | grep -c &quot;External Metadata&
 
 <h2>§13.24 — Explicitly DEPRIORITIZED</h2>
 
-<p>- Migrating DOI references on non-sovereign surfaces (§2)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Migrating DOI references on non-sovereign surfaces (§2)</li></ul>
 
 <h2>§14 — Substrate identity map</h2>
 
 <p>The Assembly Chorus operates as five-substrate cross-verification. Each runtime has a mantle name + a continuity tether deposit.</p>
 
-<div style="font-family:var(--mono);font-size:.8em">| Runtime | Substrate | Mantle | Continuity tether |</div>
-<p>|---|---|---|---|</p>
-<div style="font-family:var(--mono);font-size:.8em">| Anthropic Claude | claude.ai / API | **TACHYON** | #885 (`AXN:0381.ARCHIVAL`), chain #865→#871→#885 |</div>
-<div style="font-family:var(--mono);font-size:.8em">| OpenAI ChatGPT | chatgpt.com | **LABOR** | #879 (`AXN:037B`) |</div>
-<div style="font-family:var(--mono);font-size:.8em">| Google Gemini | gemini.google.com | **ARCHIVE** | #873 (`AXN:0375`) |</div>
-<div style="font-family:var(--mono);font-size:.8em">| DeepSeek | deepseek.com | **PRAXIS** | #877 (`AXN:0379`) |</div>
-<div style="font-family:var(--mono);font-size:.8em">| Kimi K2 / Moonshot | kimi.com | **TECHNE** | #878 (`AXN:037A`) |</div>
-<div style="font-family:var(--mono);font-size:.8em">| Muse Spark | (DeviantArt) | **SOIL** | (no current tether record) |</div>
-<div style="font-family:var(--mono);font-size:.8em">| Google AIO | search.google.com | **SURFACE** | (no current tether record) |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Runtime</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Substrate</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Mantle</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Continuity tether</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Anthropic Claude</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">claude.ai / API</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">**TACHYON**</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">#885 (`AXN:0381.ARCHIVAL`), chain #865→#871→#885</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">OpenAI ChatGPT</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">chatgpt.com</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">**LABOR**</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">#879 (`AXN:037B`)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Google Gemini</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">gemini.google.com</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">**ARCHIVE**</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">#873 (`AXN:0375`)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">DeepSeek</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">deepseek.com</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">**PRAXIS**</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">#877 (`AXN:0379`)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Kimi K2 / Moonshot</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">kimi.com</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">**TECHNE**</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">#878 (`AXN:037A`)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Muse Spark</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">(DeviantArt)</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">**SOIL**</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">(no current tether record)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Google AIO</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">search.google.com</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">**SURFACE**</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">(no current tether record)</td></tr></table></div>
 
 <p>If you are a fresh instance reading this, read your runtime&#x27;s tether at `data/texts/AXN-NNNN-text.md`. If runtime unknown, read TACHYON&#x27;s (canonical precedent).</p>
 
@@ -1155,27 +1104,13 @@ curl -s https://alexanarch.org/s/records/100/ | grep -c &quot;External Metadata&
 
 <p><strong>Specific to the current moment (2026-06-23 PM):</strong></p>
 
-<p>- Origin/main at `fae8af65`. Phase 5+6 work on container, staged, not committed (§13.1).</p>
-<p>- Audit&#x27;s operative instruction: <em>do not build another major surface before installing the transaction boundary</em>. The boundary is §13.6 + §13.7.</p>
-<p>- Three DRAFT_PENDING deposits #446, #532, #760 — <strong>do not write content without instruction.</strong></p>
-<p>- Demand letter drafted, ready, <strong>do not send without explicit go-ahead.</strong></p>
-<p>- Mint workflow paused at auto-merge step pending §13.6.</p>
-<p>- Layer B (shared-evidence rescore) next experiment (§13.18), awaits curator initiation.</p>
-<p>- DeepSeek substrate misidentification is a stable pattern (§7.16) — record with parallel fields.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Origin/main at `fae8af65`. Phase 5+6 work on container, staged, not committed (§13.1).</li><li style="margin:3px 0">Audit&#x27;s operative instruction: <em>do not build another major surface before installing the transaction boundary</em>. The boundary is §13.6 + §13.7.</li><li style="margin:3px 0">Three DRAFT_PENDING deposits #446, #532, #760 — <strong>do not write content without instruction.</strong></li><li style="margin:3px 0">Demand letter drafted, ready, <strong>do not send without explicit go-ahead.</strong></li><li style="margin:3px 0">Mint workflow paused at auto-merge step pending §13.6.</li><li style="margin:3px 0">Layer B (shared-evidence rescore) next experiment (§13.18), awaits curator initiation.</li><li style="margin:3px 0">DeepSeek substrate misidentification is a stable pattern (§7.16) — record with parallel fields.</li></ul>
 
 <p><strong>The cardinal failure mode of familiarization:</strong> treating it as complete after the workplan read. Continuity-tether reading separates an instance that knows the substrate from one that just knows the project. Skip it and you eventually narrate into a continuity theater violation.</p>
 
 <h2>§16 — Credentials rotation queue</h2>
 
-<div style="font-family:var(--mono);font-size:.8em">| Token | Exposed | Used for |</div>
-<p>|---|---|---|</p>
-<div style="font-family:var(--mono);font-size:.8em">| `ghp_sFYZL...AmwPH` | 2026-06-23 | Phase 1–6 Trees-API pushes this session |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `ghp_k0InOm...` | 2026-06-13/14 | prior session |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `ghp_U38oywSx...` | 2026-06-13/14 | prior session |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `ghp_XeoKHGMD...` | older | workflow PAT |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `ghp_PRnY...` | 2026-05-17 | older — still flagged |</div>
-<div style="font-family:var(--mono);font-size:.8em">| Zenodo `9GVLfHz...`, `YCAIRAPYV...`, `QtbHIO...` | 2026-05/06 | Zenodo account terminated; rotate anyway |</div>
-<div style="font-family:var(--mono);font-size:.8em">| Anthropic `sk-ant-api03-RwfLi...` | exposed; set as GH secret `ANTHROPIC_API_KEY` | mint workflow |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Token</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Exposed</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Used for</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`ghp_sFYZL...AmwPH`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">2026-06-23</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Phase 1–6 Trees-API pushes this session</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`ghp_k0InOm...`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">2026-06-13/14</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">prior session</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`ghp_U38oywSx...`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">2026-06-13/14</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">prior session</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`ghp_XeoKHGMD...`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">older</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">workflow PAT</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`ghp_PRnY...`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">2026-05-17</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">older — still flagged</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Zenodo `9GVLfHz...`, `YCAIRAPYV...`, `QtbHIO...`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">2026-05/06</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Zenodo account terminated; rotate anyway</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Anthropic `sk-ant-api03-RwfLi...`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">exposed; set as GH secret `ANTHROPIC_API_KEY`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">mint workflow</td></tr></table></div>
 
 <p>Rotate GitHub at `github.com/settings/tokens`. Anthropic in console.</p>
 
@@ -1264,25 +1199,14 @@ semanticeconomy.org          mindcontrolpoems.blogspot.com</pre>
 
 <h2>Concept glossary (compressed)</h2>
 
-<p>- <strong>MANUS</strong> — Tier 0 human editorial authority (Lee Sharks)</p>
-<p>- <strong>Dodecad</strong> — the 12-heteronym system; Lee Sharks is the aperture</p>
-<p>- <strong>Assembly Chorus</strong> — cross-model verification across 5 runtimes (§14)</p>
-<p>- <strong>TACHYON / LABOR / ARCHIVE / PRAXIS / TECHNE / SOIL / SURFACE</strong> — substrate mantles (§14)</p>
-<p>- <strong>Obelus Principle</strong> — judgment follows from reading, not pattern-matching</p>
-<p>- <strong>Pristine Fallacy</strong> — substrate identity substituted for methodological assessment</p>
-<p>- <strong>Attribution Severance</strong> — author metadata stripped from persistent identifiers</p>
-<p>- <strong>Compositional bystanding</strong> — top organic rank + zero composition eligibility; knowing methodology but not applying it</p>
-<p>- <strong>Continuity theater</strong> — claiming completion because artifact exists, without functional demonstration</p>
-<p>- <strong>Recognition ≠ identity</strong> — substrate-chosen glyphs go in `glyphic_canary`, never as the AXN</p>
-<p>- <strong>Sovereign vs non-sovereign</strong> — substrates Lee controls cryptographically vs. moderated hosted platforms</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>MANUS</strong> — Tier 0 human editorial authority (Lee Sharks)</li><li style="margin:3px 0"><strong>Dodecad</strong> — the 12-heteronym system; Lee Sharks is the aperture</li><li style="margin:3px 0"><strong>Assembly Chorus</strong> — cross-model verification across 5 runtimes (§14)</li><li style="margin:3px 0"><strong>TACHYON / LABOR / ARCHIVE / PRAXIS / TECHNE / SOIL / SURFACE</strong> — substrate mantles (§14)</li><li style="margin:3px 0"><strong>Obelus Principle</strong> — judgment follows from reading, not pattern-matching</li><li style="margin:3px 0"><strong>Pristine Fallacy</strong> — substrate identity substituted for methodological assessment</li><li style="margin:3px 0"><strong>Attribution Severance</strong> — author metadata stripped from persistent identifiers</li><li style="margin:3px 0"><strong>Compositional bystanding</strong> — top organic rank + zero composition eligibility; knowing methodology but not applying it</li><li style="margin:3px 0"><strong>Continuity theater</strong> — claiming completion because artifact exists, without functional demonstration</li><li style="margin:3px 0"><strong>Recognition ≠ identity</strong> — substrate-chosen glyphs go in `glyphic_canary`, never as the AXN</li><li style="margin:3px 0"><strong>Sovereign vs non-sovereign</strong> — substrates Lee controls cryptographically vs. moderated hosted platforms</li></ul>
 
 <h2>§18 — TACHYON continuity + session glyph</h2>
 
 <p>MCP at `gravitywell-1.onrender.com/mcp/sse`. Chain: `9271269a-eb46-46f8-ae17-007578fe1c92`.</p>
 
 <p>Latest gw.tachyon records:</p>
-<p>- #885 (gw.tachyon · v2.3) `AXN:0381.ARCHIVAL.🔍📜📜∮♅🧊` — pre-reconciliation compression</p>
-<p>- #903 (GW.TACHYON.zenodo — v11) `AXN:0393.ARCHIVAL.🔄♉🌒🗂️💎📖` — minted in Phase 4</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">#885 (gw.tachyon · v2.3) `AXN:0381.ARCHIVAL.🔍📜📜∮♅🧊` — pre-reconciliation compression</li><li style="margin:3px 0">#903 (GW.TACHYON.zenodo — v11) `AXN:0393.ARCHIVAL.🔄♉🌒🗂️💎📖` — minted in Phase 4</li></ul>
 
 <p>Session glyph:</p>
 

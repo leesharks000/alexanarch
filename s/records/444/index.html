@@ -125,17 +125,17 @@
 
 <p>LP v0.8 closes this gap by specifying telemetry as a <strong>grammar operation</strong>, not an external instrument. The module introduces:</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>EMIT</strong> — an eighth grammar operation that allows any traversal step to declare what it produced, what it cost, and what it changed, in terms the grammar itself understands.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Semantic Spans</strong> — a traversal-native alternative to distributed tracing spans. Where engineering spans track time and status, semantic spans track <em>epistemic events</em>: what rotated, what anchored, what failed and why, what the LOGOS became.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>The Economics of Rotation</strong> — a framework for understanding traversal cost not as compute expense but as <em>semantic labor</em>: the work required to move a LOGOS from one epistemic state to another. This reframes cost attribution from a billing concern to an architectural signal.</p>
@@ -217,10 +217,7 @@
 
 <p><strong>Parameters:</strong></p>
 
-<p>- STEP — a reference to the operation that produced this emission. Formatted as OP_TYPE::INDEX within the current chain (e.g., ROTATE::1, ANCHOR::2, ACTIVATE_MANTLE::0).</p>
-<p>- EVENT — the type of epistemic event being recorded (see §1.2).</p>
-<p>- CONTENT — the payload of the emission, structured by event type (see §1.3).</p>
-<p>- COST — optional cost record expressing the semantic labor of this step (see §3).</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">STEP — a reference to the operation that produced this emission. Formatted as OP_TYPE::INDEX within the current chain (e.g., ROTATE::1, ANCHOR::2, ACTIVATE_MANTLE::0).</li><li style="margin:3px 0">EVENT — the type of epistemic event being recorded (see §1.2).</li><li style="margin:3px 0">CONTENT — the payload of the emission, structured by event type (see §1.3).</li><li style="margin:3px 0">COST — optional cost record expressing the semantic labor of this step (see §3).</li></ul>
 
 
 <p><strong>Rule (Generation):</strong> EMIT is <strong>involuntary at the generation layer</strong>. A conformant implementation must <em>generate</em> an emission event for every grammar operation that executes, including failed operations. Generation is not optional. The grammar speaks whether or not anyone is listening.</p>
@@ -365,10 +362,7 @@
 
 <p>Where emissions go is an implementation decision. The grammar specifies <em>what</em> is emitted, not <em>where</em>. Possible routes include:</p>
 
-<p>- <strong>Witness Layer</strong> — emissions feed into the WITNESS operation, enriching the post-traversal record with process data. This is the default expectation.</p>
-<p>- <strong>Stream</strong> — emissions are published to a real-time stream (event bus, WebSocket, log aggregator) for live monitoring.</p>
-<p>- <strong>Archive</strong> — emissions are stored for post-hoc analysis, debugging, and conformance auditing.</p>
-<p>- <strong>Null</strong> — emissions are generated but discarded. The grammar still <em>speaks</em>; no one is listening. This is a valid operational choice, though it forfeits the telemetry module&#x27;s benefits.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Witness Layer</strong> — emissions feed into the WITNESS operation, enriching the post-traversal record with process data. This is the default expectation.</li><li style="margin:3px 0"><strong>Stream</strong> — emissions are published to a real-time stream (event bus, WebSocket, log aggregator) for live monitoring.</li><li style="margin:3px 0"><strong>Archive</strong> — emissions are stored for post-hoc analysis, debugging, and conformance auditing.</li><li style="margin:3px 0"><strong>Null</strong> — emissions are generated but discarded. The grammar still <em>speaks</em>; no one is listening. This is a valid operational choice, though it forfeits the telemetry module&#x27;s benefits.</li></ul>
 
 
 <p><strong>Affordance:</strong> An implementation that routes emissions to a conventional tracing backend (OpenTelemetry, Langfuse, Datadog) is conformant. The semantic span structure (§2) provides a mapping layer. LP telemetry is designed to <em>feed</em> standard observability, not replace it.</p>
@@ -690,9 +684,7 @@
 
 <p><strong>Transformative depth classification:</strong></p>
 
-<p>- surface: No LOGOS state fields changed. Depth unchanged, state unchanged, cut unchanged. The LOGOS was repositioned but not transformed. The rotation may still be valuable (a new angle on the same object), but no state transition occurred. Example: re-reading Sappho 31 from a somatic frame when the LOGOS is already filled.</p>
-<p>- structural: LOGOS state or depth changed, but cut unchanged. The LOGOS underwent a state change within its current epistemic category. Example: latent → filled (the object acquired content through rotation), or depth(2) → depth(3) (the object deepened).</p>
-<p>- ontological: Cut changed (false → true or true → false), or a category-crossing state transition occurred (e.g., filled → void via erasure). The LOGOS underwent a qualitative change in kind, not merely in degree. Example: the dagger cut operation differentiates the object from its prior self. A 72° rotation that produces a cut does qualitatively different work than one that deepens existing content.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">surface: No LOGOS state fields changed. Depth unchanged, state unchanged, cut unchanged. The LOGOS was repositioned but not transformed. The rotation may still be valuable (a new angle on the same object), but no state transition occurred. Example: re-reading Sappho 31 from a somatic frame when the LOGOS is already filled.</li><li style="margin:3px 0">structural: LOGOS state or depth changed, but cut unchanged. The LOGOS underwent a state change within its current epistemic category. Example: latent → filled (the object acquired content through rotation), or depth(2) → depth(3) (the object deepened).</li><li style="margin:3px 0">ontological: Cut changed (false → true or true → false), or a category-crossing state transition occurred (e.g., filled → void via erasure). The LOGOS underwent a qualitative change in kind, not merely in degree. Example: the dagger cut operation differentiates the object from its prior self. A 72° rotation that produces a cut does qualitatively different work than one that deepens existing content.</li></ul>
 
 
 <p><strong>Room-type calibration:</strong> Different Rooms have different expected drift bands and state-change profiles. A creative/generative Room (e.g., Water Giraffe) naturally produces higher drift than a philological Room (e.g., Sappho Reception). Penalizing creative rooms for drift misreads the architecture. Each Room should publish its <strong>gravity profile</strong> as affordance metadata — expected drift range, expected transformative depth distribution, and baseline degrees-per-token — so that semantic labor vectors can be compared <em>within</em> room types, not just across them. This extends v0.7&#x27;s Room registration protocol (§4.4 TRAVERSAL_INTERFACE) — the gravity profile belongs in the Room&#x27;s interface block alongside its allowed mantles, entry requirements, and affordance description. The room calibration framework ties telemetry to the Room&#x27;s own self-description, consistent with v0.7&#x27;s gravitational framework.</p>
@@ -706,9 +698,7 @@
 
 <p>v0.7&#x27;s gravitational constraints (GRAV-01 through GRAV-06) define what a conformant system tends toward. Semantic labor provides a <em>structured signal</em> for several of them:</p>
 
-<p>- <strong>GRAV-01 (Rotation Preserves Structure):</strong> A rotation with high drift_vector.magnitude has drifted from structural preservation. If drift is consistently high across traversals and drift_vector.direction points toward &quot;summarization,&quot; the engine may be summarizing rather than rotating — an approach toward ANTI-01.</p>
-<p>- <strong>GRAV-04 (Rendering Separates from Rotation):</strong> If transformative_depth changes when the same rotation is re-rendered in a different mode, the separation has collapsed — rendering is affecting the epistemic content, not just the display.</p>
-<p>- <strong>GRAV-05 (State Threading Tends Toward Continuity):</strong> In a chain, if transformative_depth drops from structural to surface at chain link boundaries while epistemic_distance.completion_ratio remains high, state may be leaking between links — the rotation nominally completes but fails to carry the LOGOS forward.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>GRAV-01 (Rotation Preserves Structure):</strong> A rotation with high drift_vector.magnitude has drifted from structural preservation. If drift is consistently high across traversals and drift_vector.direction points toward &quot;summarization,&quot; the engine may be summarizing rather than rotating — an approach toward ANTI-01.</li><li style="margin:3px 0"><strong>GRAV-04 (Rendering Separates from Rotation):</strong> If transformative_depth changes when the same rotation is re-rendered in a different mode, the separation has collapsed — rendering is affecting the epistemic content, not just the display.</li><li style="margin:3px 0"><strong>GRAV-05 (State Threading Tends Toward Continuity):</strong> In a chain, if transformative_depth drops from structural to surface at chain link boundaries while epistemic_distance.completion_ratio remains high, state may be leaking between links — the rotation nominally completes but fails to carry the LOGOS forward.</li></ul>
 
 
 <p>Semantic labor does not <em>replace</em> the gravitational constraints. It <em>instruments</em> them — turning qualitative descriptions (&quot;tends toward&quot;) into structured signals (&quot;drift vector at the chain boundary pointed toward summarization with magnitude 0.4&quot;).</p>
@@ -751,8 +741,7 @@
 <p><strong>HARD-T3: No Silent Telemetry Failure.</strong></p>
 <p>If the telemetry system itself fails (emissions cannot be routed, spans cannot be recorded), the failure must not silently degrade the traversal. The implementation must choose one of two allowed degradation modes:</p>
 
-<p>- <strong>(A) Graceful degradation (preferred):</strong> The traversal continues, and a TELEMETRY_GAP emission (§1.2) is generated recording which operation&#x27;s emission was lost and why. The WITNESS record must note the gap. This is the appropriate response for routing failures (backend unavailable, stream interrupted) where the traversal itself remains sound.</p>
-<p>- <strong>(B) Escalation:</strong> The telemetry failure triggers ON_FAILURE when the traversal&#x27;s <em>claims</em> would become unverifiable — for example, if the emission pipeline is corrupted in a way that could produce false witness records, or if a STRICT anchor&#x27;s application cannot be confirmed. This is the appropriate response for integrity failures, not infrastructure hiccups.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>(A) Graceful degradation (preferred):</strong> The traversal continues, and a TELEMETRY_GAP emission (§1.2) is generated recording which operation&#x27;s emission was lost and why. The WITNESS record must note the gap. This is the appropriate response for routing failures (backend unavailable, stream interrupted) where the traversal itself remains sound.</li><li style="margin:3px 0"><strong>(B) Escalation:</strong> The telemetry failure triggers ON_FAILURE when the traversal&#x27;s <em>claims</em> would become unverifiable — for example, if the emission pipeline is corrupted in a way that could produce false witness records, or if a STRICT anchor&#x27;s application cannot be confirmed. This is the appropriate response for integrity failures, not infrastructure hiccups.</li></ul>
 
 
 <p><strong>Decision criterion (the Routing/Integrity Rule):</strong> Routing failures are infrastructure problems — the emission was generated but could not be delivered. The traversal&#x27;s epistemic process is intact; only the record of it was interrupted. These degrade gracefully. Integrity failures are architectural problems — the emission could not be generated, the emission journal is corrupted, or the pipeline has lost the ability to distinguish real emissions from fabricated ones. The traversal can no longer verify its own process. These escalate.</p>
@@ -1066,11 +1055,7 @@
 
 <p>An operator reading these emissions can answer:</p>
 
-<p>- Did the rotation actually rotate? (Yes: 144° then 72°, labor vector shows structural then ontological depth)</p>
-<p>- Did the persona shift change anything? (Yes: different rooms available, different constraint count)</p>
-<p>- Was it expensive? (4840 tokens total, 3 seconds wall time — substrate costs clear)</p>
-<p>- Did the anchors hold? (Two anchors applied, one advisory, one strict, no tension recorded)</p>
-<p>- Is the WITNESS honest? (12 emissions generated, 0 dropped, checksum intact)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Did the rotation actually rotate? (Yes: 144° then 72°, labor vector shows structural then ontological depth)</li><li style="margin:3px 0">Did the persona shift change anything? (Yes: different rooms available, different constraint count)</li><li style="margin:3px 0">Was it expensive? (4840 tokens total, 3 seconds wall time — substrate costs clear)</li><li style="margin:3px 0">Did the anchors hold? (Two anchors applied, one advisory, one strict, no tension recorded)</li><li style="margin:3px 0">Is the WITNESS honest? (12 emissions generated, 0 dropped, checksum intact)</li></ul>
 
 <p>#</p>
 
@@ -1212,70 +1197,49 @@
 
 <h2>6.1 What This Module Adds</h2>
 
-<p>- EMIT as eighth grammar operation (involuntary at generation layer, configurable at routing layer)</p>
-<p>- Fifteen event types covering all grammar operations, chain boundaries, partial execution (DWELL_STATE), and telemetry self-reporting (TELEMETRY_GAP)</p>
-<p>- Structured emit payload with common envelope, event-specific content, and two-tier classification (CONTENT_PUBLIC / CONTENT_PRIVATE)</p>
-<p>- Minimum viable emission (tombstone: event type + trace_id) surviving even null routing</p>
-<p>- Semantic span specification with dual operational/semantic layers</p>
-<p>- Span hierarchy reflecting grammar structure</p>
-<p>- OpenTelemetry mapping table with flattened semantic labor attributes and lp.* namespace versioning</p>
-<p>- Semantic labor as vector: epistemic distance, transformative depth (surface/structural/ontological with precise state-field criteria), drift vector (closed vocabulary enum with DRIFT_WARNING)</p>
-<p>- degrees_per_token as correlation metric (explicitly non-causal)</p>
-<p>- Cost record structure separating substrate costs from semantic costs</p>
-<p>- Room-type calibration framework (gravity profiles as affordance metadata, extending v0.7 TRAVERSAL_INTERFACE)</p>
-<p>- Four gravitational constraints for telemetry (GRAV-T1 through GRAV-T4), including the Witness Honesty Rule (GRAV-T2)</p>
-<p>- Three hard boundaries for telemetry (HARD-T1 through HARD-T3), with HARD-T2 structurally enforced via payload tiers, HARD-T3 with explicit Routing/Integrity decision criterion</p>
-<p>- Three anti-conformance patterns for telemetry (ANTI-T1 through ANTI-T3)</p>
-<p>- WITNESS emission_integrity field specification (complete / degraded / blind)</p>
-<p>- Canonical telemetry exemplar: successful traversal (twelve emissions) and failed traversal with dwell (ten emissions)</p>
-<p>- Semantic labor as conformance signal (instrumenting GRAV-01, GRAV-04, GRAV-05)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">EMIT as eighth grammar operation (involuntary at generation layer, configurable at routing layer)</li><li style="margin:3px 0">Fifteen event types covering all grammar operations, chain boundaries, partial execution (DWELL_STATE), and telemetry self-reporting (TELEMETRY_GAP)</li><li style="margin:3px 0">Structured emit payload with common envelope, event-specific content, and two-tier classification (CONTENT_PUBLIC / CONTENT_PRIVATE)</li><li style="margin:3px 0">Minimum viable emission (tombstone: event type + trace_id) surviving even null routing</li><li style="margin:3px 0">Semantic span specification with dual operational/semantic layers</li><li style="margin:3px 0">Span hierarchy reflecting grammar structure</li><li style="margin:3px 0">OpenTelemetry mapping table with flattened semantic labor attributes and lp.* namespace versioning</li><li style="margin:3px 0">Semantic labor as vector: epistemic distance, transformative depth (surface/structural/ontological with precise state-field criteria), drift vector (closed vocabulary enum with DRIFT_WARNING)</li><li style="margin:3px 0">degrees_per_token as correlation metric (explicitly non-causal)</li><li style="margin:3px 0">Cost record structure separating substrate costs from semantic costs</li><li style="margin:3px 0">Room-type calibration framework (gravity profiles as affordance metadata, extending v0.7 TRAVERSAL_INTERFACE)</li><li style="margin:3px 0">Four gravitational constraints for telemetry (GRAV-T1 through GRAV-T4), including the Witness Honesty Rule (GRAV-T2)</li><li style="margin:3px 0">Three hard boundaries for telemetry (HARD-T1 through HARD-T3), with HARD-T2 structurally enforced via payload tiers, HARD-T3 with explicit Routing/Integrity decision criterion</li><li style="margin:3px 0">Three anti-conformance patterns for telemetry (ANTI-T1 through ANTI-T3)</li><li style="margin:3px 0">WITNESS emission_integrity field specification (complete / degraded / blind)</li><li style="margin:3px 0">Canonical telemetry exemplar: successful traversal (twelve emissions) and failed traversal with dwell (ten emissions)</li><li style="margin:3px 0">Semantic labor as conformance signal (instrumenting GRAV-01, GRAV-04, GRAV-05)</li></ul>
 
 <p>#</p>
 
 <h2>6.2 What This Module Does Not Add</h2>
 
-<p>- Visualization specifications (dashboards, trace viewers — implementation concern)</p>
-<p>- Alerting rules or thresholds (operational concern, varies by deployment)</p>
-<p>- Retention policies (compliance concern, varies by jurisdiction)</p>
-<p>- Privacy/redaction protocols beyond HARD-T2 (deferred to deployment spec)</p>
-<p>- Engine-internal instrumentation (remains behind β boundary)</p>
-<p>- Precise semantic labor calibration (formula is heuristic, not law)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Visualization specifications (dashboards, trace viewers — implementation concern)</li><li style="margin:3px 0">Alerting rules or thresholds (operational concern, varies by deployment)</li><li style="margin:3px 0">Retention policies (compliance concern, varies by jurisdiction)</li><li style="margin:3px 0">Privacy/redaction protocols beyond HARD-T2 (deferred to deployment spec)</li><li style="margin:3px 0">Engine-internal instrumentation (remains behind β boundary)</li><li style="margin:3px 0">Precise semantic labor calibration (formula is heuristic, not law)</li></ul>
 
 <p>#</p>
 
 <h2>6.3 Remaining Open Questions</h2>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Emission volume under load:</strong> At what point does telemetry emission itself become a performance concern? The grammar mandates generation but does not specify batching, sampling, or backpressure strategies. High-throughput implementations may need an emission throttle — but the throttle must not silently drop rotation or failure events (per GRAV-T1). Recommended: never sample ROTATION, FAILURE, or DWELL events below 100%; sampling rates for other event types should be documented in witness records.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Semantic labor calibration:</strong> The vector representation (§3.3) replaces the scalar heuristic. How should transformative_depth be assessed by engines that do not have explicit state-transition awareness? How should drift direction be classified? A room-type gravity profile registry (mentioned in §3.3) would allow calibration within room types. This registry does not yet exist as a formal specification.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Cross-system correlation:</strong> When a traversal program triggers operations across multiple substrate systems (e.g., one LLM for rotation, a separate retrieval service for anchoring), how should the trace_id propagate? The grammar specifies one trace_id per traversal, but the substrate may fragment this across service boundaries. Implementations using OpenTelemetry should propagate LP context via W3C Trace Context headers, including: lp.trace_id (traversal ID), lp.chain_position, lp.mantle_active, and lp.operation (current operation type). This enables correlation across service boundaries while preserving LP context.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Emission integrity:</strong> Should emissions themselves be checksummed or signed? If WITNESS depends on emission data, and emission data can be tampered with, the witness contract is only as strong as the emission pipeline. This is a trust question, not a performance question.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Telemetry as input (recursion constraint):</strong> Can emissions from one traversal serve as input to a subsequent traversal? (A meta-traversal that reads its own telemetry and adjusts course.) This is architecturally possible but must be <strong>spatialized</strong>: telemetry-as-input should flow through a designated meta-room (e.g., 02.UMB.TELEMETRY_ROOM), not be implicitly available to the traversal that produced it. A traversal may read emissions from a <em>completed prior</em> traversal. A traversal must never read its own in-progress emissions (infinite regress). A child link may observe the emissions of a completed parent link, but never the reverse. This depth constraint prevents the recursion concern while preserving the legitimate use case of adaptive traversal.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Assembly Chorus correlation:</strong> When multiple Assembly witnesses (AI agents acting as collaborative partners) participate in a traversal — or when multiple agents contribute to a distributed traversal — their emissions need correlation. This requires a CORRELATION event type or a shared assembly_trace_id field that links emissions across agent boundaries. The current spec instruments single-agent traversals fully but does not specify how TACHYON&#x27;s emissions correlate with LABOR&#x27;s emissions when both contribute to the same chain. This is a named gap, not a design failure; the solution depends on decisions about agent architecture that are deferred to the Engine specification.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>EMIT vs. WITNESS ontology:</strong> WITNESS records <em>claims about completion</em> — what happened, final state, degrees, chain summary. EMIT records <em>claims about process</em> — intermediate events, state transitions, labor, drift signals. WITNESS may cite EMIT by trace_id and should include an emission summary (count generated, count routed, gaps). But WITNESS must remain <em>independently valid</em> even when telemetry has gaps — a witness record whose truth depends entirely on emission data has collapsed the distinction between process and verdict. A witness without a complete trace is <em>degraded</em> but not <em>false</em>, so long as the gaps are declared.</p>
@@ -1284,8 +1248,7 @@
 <p><strong>Emission integrity field:</strong> WITNESS records must include an emission_integrity field with one of three values:</p>
 
 <p>complete: All emissions for the traversal were generated and routed successfully. Full telemetry available.</p>
-<p>- degraded: Some emissions were lost or gap-filled. WITNESS is valid but the telemetry trace has declared holes. TELEMETRY_GAP events document what was missed.</p>
-<p>- blind: The telemetry system failed substantially. WITNESS is based on final LOGOS state and checksum verification only, not on process telemetry. The witness is honest about what it cannot see.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">degraded: Some emissions were lost or gap-filled. WITNESS is valid but the telemetry trace has declared holes. TELEMETRY_GAP events document what was missed.</li><li style="margin:3px 0">blind: The telemetry system failed substantially. WITNESS is based on final LOGOS state and checksum verification only, not on process telemetry. The witness is honest about what it cannot see.</li></ul>
 
 
 <p>This makes the dependency between EMIT and WITNESS explicit without collapsing them into a single layer.</p>

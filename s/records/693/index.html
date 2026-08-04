@@ -131,12 +131,7 @@
 
 <p><strong>Internal view names within the graph:</strong></p>
 
-<p>- <strong>Surface Registry</strong> — all URLs / platforms / deposits</p>
-<p>- <strong>Basin Portfolio</strong> — terms by ghost / contested / captured / immanent</p>
-<p>- <strong>Heteronym Graph</strong> — personae and collaborator nodes</p>
-<p>- <strong>Provenance Mesh</strong> — DOI / ORCID / Zenodo / Scholar relations</p>
-<p>- <strong>Lost Nodes</strong> — banned, orphaned, dead, data-walled surfaces</p>
-<p>- <strong>Aperture Map</strong> — public reception surfaces and entry points</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Surface Registry</strong> — all URLs / platforms / deposits</li><li style="margin:3px 0"><strong>Basin Portfolio</strong> — terms by ghost / contested / captured / immanent</li><li style="margin:3px 0"><strong>Heteronym Graph</strong> — personae and collaborator nodes</li><li style="margin:3px 0"><strong>Provenance Mesh</strong> — DOI / ORCID / Zenodo / Scholar relations</li><li style="margin:3px 0"><strong>Lost Nodes</strong> — banned, orphaned, dead, data-walled surfaces</li><li style="margin:3px 0"><strong>Aperture Map</strong> — public reception surfaces and entry points</li></ul>
 
 
 <hr>
@@ -225,37 +220,9 @@
 <p>type EdgeType =</p>
 <p>  // Wikidata-aligned relations (Pxxx = Wikidata property ID)</p>
 <p>  // Each edge doubles as a Wikidata edit specification</p>
-<p>  | &quot;P31&quot;     // instance of (ENTITY → class)</p>
-<p>  | &quot;P50&quot;     // author (DOCUMENT → IDENTITY)</p>
-<p>  | &quot;P123&quot;    // publisher (DOCUMENT → IDENTITY/org)</p>
-<p>  | &quot;P127&quot;    // owned by (SURFACE → IDENTITY)</p>
-<p>  | &quot;P170&quot;    // creator (SURFACE/DOCUMENT → IDENTITY)</p>
-<p>  | &quot;P178&quot;    // developer (PLATFORM/TOOL → IDENTITY)</p>
-<p>  | &quot;P179&quot;    // part of series (DOCUMENT → DOCUMENT)</p>
-<p>  | &quot;P195&quot;    // collection (DOCUMENT → collection/archive)</p>
-<p>  | &quot;P275&quot;    // license (DOCUMENT → license type)</p>
-<p>  | &quot;P356&quot;    // DOI (DOCUMENT → DOI string)</p>
-<p>  | &quot;P496&quot;    // ORCID iD (IDENTITY → ORCID)</p>
-<p>  | &quot;P527&quot;    // has part (ENTITY → ENTITY, archive → document)</p>
-<p>  | &quot;P856&quot;    // official website (ENTITY/IDENTITY → SURFACE)</p>
-<p>  | &quot;P921&quot;    // main subject (DOCUMENT → ENTITY)</p>
-<p>  | &quot;P1433&quot;   // published in (DOCUMENT → journal/venue)</p>
-<p>  | &quot;P1889&quot;   // different from (ENTITY → ENTITY, disambiguation)</p>
-<p>  | &quot;P2860&quot;   // cites work (DOCUMENT → DOCUMENT)</p>
-<p>  | &quot;P6216&quot;   // copyright status (DOCUMENT → CC BY 4.0)</p>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P31&quot;     // instance of (ENTITY → class)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P50&quot;     // author (DOCUMENT → IDENTITY)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P123&quot;    // publisher (DOCUMENT → IDENTITY/org)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P127&quot;    // owned by (SURFACE → IDENTITY)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P170&quot;    // creator (SURFACE/DOCUMENT → IDENTITY)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P178&quot;    // developer (PLATFORM/TOOL → IDENTITY)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P179&quot;    // part of series (DOCUMENT → DOCUMENT)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P195&quot;    // collection (DOCUMENT → collection/archive)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P275&quot;    // license (DOCUMENT → license type)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P356&quot;    // DOI (DOCUMENT → DOI string)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P496&quot;    // ORCID iD (IDENTITY → ORCID)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P527&quot;    // has part (ENTITY → ENTITY, archive → document)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P856&quot;    // official website (ENTITY/IDENTITY → SURFACE)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P921&quot;    // main subject (DOCUMENT → ENTITY)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P1433&quot;   // published in (DOCUMENT → journal/venue)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P1889&quot;   // different from (ENTITY → ENTITY, disambiguation)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P2860&quot;   // cites work (DOCUMENT → DOCUMENT)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P6216&quot;   // copyright status (DOCUMENT → CC BY 4.0)</td></tr></table></div>
 <p>  // Archive-specific extensions (not on Wikidata — use spxi: prefix)</p>
-<p>  | &quot;spxi:controls&quot;       // IDENTITY controls SURFACE</p>
-<p>  | &quot;spxi:authorizes&quot;     // MANUS authorizes IDENTITY (Tier 0)</p>
-<p>  | &quot;spxi:hexLicensedBy&quot;  // IDENTITY licensed under DOCUMENT</p>
-<p>  | &quot;spxi:hasWitness&quot;     // DOCUMENT witnessed by IDENTITY (Assembly)</p>
-<p>  | &quot;spxi:hasSIM&quot;         // SURFACE carries semantic identity marker</p>
-<p>  | &quot;spxi:hasFAQ&quot;         // SURFACE carries structured Q/A</p>
-<p>  | &quot;spxi:hasJSONLD&quot;      // SURFACE carries machine-readable schema</p>
-<p>  | &quot;spxi:reinforces&quot;     // SURFACE reinforces ENTITY (basin deepening)</p>
-<p>  | &quot;spxi:mirrors&quot;        // SURFACE mirrors DOCUMENT (content equivalence)</p>
-<p>  | &quot;spxi:lostFrom&quot;       // SURFACE ejected from PLATFORM</p>
-<p>  | &quot;spxi:basinCompetes&quot;  // ENTITY competes with ENTITY for same term</p>
-<p>  | &quot;spxi:replaces&quot;       // DOCUMENT supersedes DOCUMENT</p>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:controls&quot;       // IDENTITY controls SURFACE</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:authorizes&quot;     // MANUS authorizes IDENTITY (Tier 0)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:hexLicensedBy&quot;  // IDENTITY licensed under DOCUMENT</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:hasWitness&quot;     // DOCUMENT witnessed by IDENTITY (Assembly)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:hasSIM&quot;         // SURFACE carries semantic identity marker</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:hasFAQ&quot;         // SURFACE carries structured Q/A</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:hasJSONLD&quot;      // SURFACE carries machine-readable schema</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:reinforces&quot;     // SURFACE reinforces ENTITY (basin deepening)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:mirrors&quot;        // SURFACE mirrors DOCUMENT (content equivalence)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:lostFrom&quot;       // SURFACE ejected from PLATFORM</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:basinCompetes&quot;  // ENTITY competes with ENTITY for same term</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:replaces&quot;       // DOCUMENT supersedes DOCUMENT</td></tr></table></div>
 <p>  ;</p>
 
 <p>// WIKIDATA SYNC STATUS on each edge:</p>
@@ -1323,10 +1290,7 @@
 
 <h2>Layout</h2>
 
-<p>- Force-directed (d3-force) with forceManyBody (strength -300), forceCenter, forceCollide (radius 8)</p>
-<p>- INFRASTRUCTURE nodes fixed at periphery (domains anchor the graph)</p>
-<p>- IDENTITY nodes clustered near center</p>
-<p>- DOCUMENT nodes orbit their defining ENTITY</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Force-directed (d3-force) with forceManyBody (strength -300), forceCenter, forceCollide (radius 8)</li><li style="margin:3px 0">INFRASTRUCTURE nodes fixed at periphery (domains anchor the graph)</li><li style="margin:3px 0">IDENTITY nodes clustered near center</li><li style="margin:3px 0">DOCUMENT nodes orbit their defining ENTITY</li></ul>
 
 <p>#</p>
 
@@ -1377,35 +1341,25 @@
 
 <p><strong>Status rendering:</strong></p>
 
-<p>- active: full opacity</p>
-<p>- dormant: 0.5 opacity</p>
-<p>- banned / lapsed / walled / revoked: 0.3 opacity, dashed stroke, #8a8478</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">active: full opacity</li><li style="margin:3px 0">dormant: 0.5 opacity</li><li style="margin:3px 0">banned / lapsed / walled / revoked: 0.3 opacity, dashed stroke, #8a8478</li></ul>
 
 <p>#</p>
 
 <h2>Modes (toggleable)</h2>
 
-<p>- <strong>Default:</strong> Color by type</p>
-<p>- <strong>Basin Overlay:</strong> Color ENTITY nodes by basinState (ghost=#8a8478, contested=#b84030, competitive=#a89060, captured=#c8a868, immanent=#ffffff with glow)</p>
-<p>- <strong>Ghost Mode:</strong> Lost nodes rendered prominent with dashed borders. Makes absence visible.</p>
-<p>- <strong>Aperture View:</strong> Color by apertureType (input=blue, output=green, relay=gold)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Default:</strong> Color by type</li><li style="margin:3px 0"><strong>Basin Overlay:</strong> Color ENTITY nodes by basinState (ghost=#8a8478, contested=#b84030, competitive=#a89060, captured=#c8a868, immanent=#ffffff with glow)</li><li style="margin:3px 0"><strong>Ghost Mode:</strong> Lost nodes rendered prominent with dashed borders. Makes absence visible.</li><li style="margin:3px 0"><strong>Aperture View:</strong> Color by apertureType (input=blue, output=green, relay=gold)</li></ul>
 
 <p>#</p>
 
 <h2>Interaction</h2>
 
-<p>- <strong>Hover:</strong> Tooltip with label, type, status, authority, url (truncated)</p>
-<p>- <strong>Click:</strong> Right sidebar with full node card + outbound edges + &quot;Open URL&quot; button</p>
-<p>- <strong>Double-click:</strong> window.open(node.url, &#x27;_blank&#x27;)</p>
-<p>- <strong>Search:</strong> Typeahead across label, url, doi</p>
-<p>- <strong>Filter:</strong> Checkboxes for each type and status</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Hover:</strong> Tooltip with label, type, status, authority, url (truncated)</li><li style="margin:3px 0"><strong>Click:</strong> Right sidebar with full node card + outbound edges + &quot;Open URL&quot; button</li><li style="margin:3px 0"><strong>Double-click:</strong> window.open(node.url, &#x27;_blank&#x27;)</li><li style="margin:3px 0"><strong>Search:</strong> Typeahead across label, url, doi</li><li style="margin:3px 0"><strong>Filter:</strong> Checkboxes for each type and status</li></ul>
 
 <p>#</p>
 
 <h2>Performance</h2>
 
-<p>- Must handle 200 nodes + 500 edges at 60fps</p>
-<p>- Use canvas rendering if SVG degrades</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Must handle 200 nodes + 500 edges at 60fps</li><li style="margin:3px 0">Use canvas rendering if SVG degrades</li></ul>
 
 
 <hr>
@@ -1423,12 +1377,7 @@
 
 <p><strong>Tasks:</strong></p>
 
-<p>- For each SURFACE/INFRASTRUCTURE node with a URL, check HTTP status</p>
-<p>- Flag any returning 404/403/5xx as status: &quot;dormant&quot; or status: &quot;lapsed&quot;</p>
-<p>- For each first-party website, verify SPXI compliance (11 elements)</p>
-<p>- For blogspot, check for noindex meta tag</p>
-<p>- For Google Scholar, extract indexed titles and compare against Zenodo</p>
-<p>- For ORCID, check works list completeness</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">For each SURFACE/INFRASTRUCTURE node with a URL, check HTTP status</li><li style="margin:3px 0">Flag any returning 404/403/5xx as status: &quot;dormant&quot; or status: &quot;lapsed&quot;</li><li style="margin:3px 0">For each first-party website, verify SPXI compliance (11 elements)</li><li style="margin:3px 0">For blogspot, check for noindex meta tag</li><li style="margin:3px 0">For Google Scholar, extract indexed titles and compare against Zenodo</li><li style="margin:3px 0">For ORCID, check works list completeness</li></ul>
 
 
 <p><strong>Success criteria:</strong> Every node has verified status and lastVerified date.</p>
@@ -1608,13 +1557,7 @@
 
 <h2>§VIII. RESEARCH AGENDA</h2>
 
-<p>- <strong>AI Mode share link decay rate</strong> — do these expire? Set TTL?</p>
-<p>- <strong>Claude &quot;Publish Artifact&quot; indexability</strong> — crawlable by external search?</p>
-<p>- <strong>Reddit data wall permeability</strong> — check web.archive.org/web/*/reddit.com/user/nearby_job9638</p>
-<p>- <strong>OpenAlex entity recognition</strong> — is Lee Sharks a recognized author entity?</p>
-<p>- <strong>praxademic.com recovery</strong> — check web.archive.org/web/*/praxademic.com</p>
-<p>- <strong>Basin measurement protocol</strong> — formalize weekly FPI/DV tracking</p>
-<p>- <strong>Alice YouTube content audit</strong> — which of 134+ handles have actual uploads?</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>AI Mode share link decay rate</strong> — do these expire? Set TTL?</li><li style="margin:3px 0"><strong>Claude &quot;Publish Artifact&quot; indexability</strong> — crawlable by external search?</li><li style="margin:3px 0"><strong>Reddit data wall permeability</strong> — check web.archive.org/web/*/reddit.com/user/nearby_job9638</li><li style="margin:3px 0"><strong>OpenAlex entity recognition</strong> — is Lee Sharks a recognized author entity?</li><li style="margin:3px 0"><strong>praxademic.com recovery</strong> — check web.archive.org/web/*/praxademic.com</li><li style="margin:3px 0"><strong>Basin measurement protocol</strong> — formalize weekly FPI/DV tracking</li><li style="margin:3px 0"><strong>Alice YouTube content audit</strong> — which of 134+ handles have actual uploads?</li></ul>
 
 
 <hr>
@@ -1749,10 +1692,7 @@
 
 <p>The graph visualization includes a <strong>Wikidata Sync View</strong> that shows:</p>
 
-<p>- <strong>Green edges</strong> — wikidataStatus: &quot;live&quot; — relation exists on Wikidata</p>
-<p>- <strong>Yellow edges</strong> — wikidataStatus: &quot;pending&quot; — relation should be created</p>
-<p>- <strong>Gray edges</strong> — wikidataStatus: &quot;blocked&quot; — spxi: extensions, internal only</p>
-<p>- <strong>Dim edges</strong> — wikidataStatus: &quot;n/a&quot; — not applicable</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Green edges</strong> — wikidataStatus: &quot;live&quot; — relation exists on Wikidata</li><li style="margin:3px 0"><strong>Yellow edges</strong> — wikidataStatus: &quot;pending&quot; — relation should be created</li><li style="margin:3px 0"><strong>Gray edges</strong> — wikidataStatus: &quot;blocked&quot; — spxi: extensions, internal only</li><li style="margin:3px 0"><strong>Dim edges</strong> — wikidataStatus: &quot;n/a&quot; — not applicable</li></ul>
 
 
 <p><strong>Workflow:</strong> When a pending edge is created on Wikidata (via QuickStatements or manual edit), the operator updates the edge&#x27;s wikidataStatus to &quot;live&quot; and adds wikidataSubject and wikidataObject Q-IDs. The graph becomes both the visualization AND the edit queue.</p>
@@ -1833,10 +1773,7 @@
 
 <p><strong>Once Q-IDs are created, they propagate into:</strong></p>
 
-<p>- Every P1889 edge (disambiguation)</p>
-<p>- Every P195 edge (collection membership)</p>
-<p>- Every P50 / P170 edge (authorship/creation)</p>
-<p>- The SPXI JSON-LD on all first-party sites (sameAs fields)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Every P1889 edge (disambiguation)</li><li style="margin:3px 0">Every P195 edge (collection membership)</li><li style="margin:3px 0">Every P50 / P170 edge (authorship/creation)</li><li style="margin:3px 0">The SPXI JSON-LD on all first-party sites (sameAs fields)</li></ul>
 
 <p>#</p>
 

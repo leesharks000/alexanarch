@@ -78,10 +78,7 @@
 
 <p>The reading — the transform(s), the operator sequence, the verification results, Feist&#x27;s interpretations, the session flow — is appended to the public Book under the existing anonymous-append pattern:</p>
 
-<p>- `session_id` hashed on receipt; raw never stored.</p>
-<p>- `witness: &quot;anonymous&quot;` unless attribution is explicitly requested.</p>
-<p>- One AXN per reading; the record grows if the rotation continues.</p>
-<p>- Records live in `book/readings/` with an index at `book/readings-index.json`.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`session_id` hashed on receipt; raw never stored.</li><li style="margin:3px 0">`witness: &quot;anonymous&quot;` unless attribution is explicitly requested.</li><li style="margin:3px 0">One AXN per reading; the record grows if the rotation continues.</li><li style="margin:3px 0">Records live in `book/readings/` with an index at `book/readings-index.json`.</li></ul>
 
 <p>#</p>
 
@@ -90,15 +87,10 @@
 <p>The reading is split at exactly the boundary the kernel-transform compiler already draws: <strong>Layer A (skeleton) versus semantic content.</strong></p>
 
 <p><strong>Public (cleartext) in the record:</strong></p>
-<p>- The AXN and inscription timestamp.</p>
-<p>- The <strong>formal skeleton</strong>: operator sequence; unit counts; the beat-map as abstract structural functions (per spec §3.2 — architecture, not meaning); the `spatial_form` geometry (line counts, stanza boundaries, indentation profile); verification results (PASS per test, verification_mode); halt events if any (diagnosis category only).</p>
-<p>- A `key_fingerprint` (first 8 bytes of SHA-256 of the key) so a keyholder can verify they hold the right key without revealing it.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The AXN and inscription timestamp.</li><li style="margin:3px 0">The <strong>formal skeleton</strong>: operator sequence; unit counts; the beat-map as abstract structural functions (per spec §3.2 — architecture, not meaning); the `spatial_form` geometry (line counts, stanza boundaries, indentation profile); verification results (PASS per test, verification_mode); halt events if any (diagnosis category only).</li><li style="margin:3px 0">A `key_fingerprint` (first 8 bytes of SHA-256 of the key) so a keyholder can verify they hold the right key without revealing it.</li></ul>
 
 <p><strong>Sealed (AES-256-GCM ciphertext) in the record:</strong></p>
-<p>- The witness&#x27;s question / invoking context.</p>
-<p>- The enantiomorph texts themselves.</p>
-<p>- Feist&#x27;s interpretations.</p>
-<p>- The commentary apparatus (Layer B: coherence axes, semantic field selections — these ARE semantic).</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The witness&#x27;s question / invoking context.</li><li style="margin:3px 0">The enantiomorph texts themselves.</li><li style="margin:3px 0">Feist&#x27;s interpretations.</li><li style="margin:3px 0">The commentary apparatus (Layer B: coherence axes, semantic field selections — these ARE semantic).</li></ul>
 
 <p><strong>The key:</strong> generated server-side per reading; returned to the witness exactly once in the API response; never stored, never logged. Loss of the key is permanent illegibility. This is stated to the witness at inscription, and it is not softened: an oracle that can be re-opened by the operator is not sealed.</p>
 
@@ -210,10 +202,7 @@
 
 <h2>§4. What this protocol does not do</h2>
 
-<p>- No accounts, no login, no witness identity storage in either mode.</p>
-<p>- No key escrow. The archive cannot decrypt a sealed reading, ever, for anyone.</p>
-<p>- No deletion path for public readings (the Book appends); MANUS revocation authority over index entries is the only editorial lever, reserved for the abuse cases of §2.</p>
-<p>- No claim that the sealed stratum is anonymous <em>against traffic analysis</em> — inscription timing is public. Witnesses for whom timing is sensitive should be told so plainly in the interface copy.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">No accounts, no login, no witness identity storage in either mode.</li><li style="margin:3px 0">No key escrow. The archive cannot decrypt a sealed reading, ever, for anyone.</li><li style="margin:3px 0">No deletion path for public readings (the Book appends); MANUS revocation authority over index entries is the only editorial lever, reserved for the abuse cases of §2.</li><li style="margin:3px 0">No claim that the sealed stratum is anonymous <em>against traffic analysis</em> — inscription timing is public. Witnesses for whom timing is sensitive should be told so plainly in the interface copy.</li></ul>
 
 <hr>
 

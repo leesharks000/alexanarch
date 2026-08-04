@@ -67,7 +67,8 @@
 
 <h2>The Problem This Solves</h2>
 
-<p>The archive&#x27;s data infrastructure currently exists in four forms:- Zenodo deposit chain — DOI-anchored, permanent, versioned. The archival layer.- godkinggoogle.com — Google critique, capture registry gallery, term index. Static HTML + JSON, Vercel via GitHub.- leesharks.com — Personal site, capture registry mirror.- machinemediation.org — Planned but not yet built. The journal&#x27;s home.</p>
+<p>The archive&#x27;s data infrastructure currently exists in four forms:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Zenodo deposit chain — DOI-anchored, permanent, versioned. The archival layer.</li><li style="margin:3px 0">godkinggoogle.com — Google critique, capture registry gallery, term index. Static HTML + JSON, Vercel via GitHub.</li><li style="margin:3px 0">leesharks.com — Personal site, capture registry mirror.</li><li style="margin:3px 0">machinemediation.org — Planned but not yet built. The journal&#x27;s home.</li></ul>
 
 <p>The problem: each mirror requires a manual push. A fresh instance inherits memories (compressed) and must reconstruct the system from fragments before it can do work. Half its context capacity goes to orientation, and mistakes compound because the instance doesn&#x27;t know what it doesn&#x27;t know. The &quot;Name the Frame&quot; incident is the cautionary case — but the data-infrastructure version is just as dangerous: a fresh instance that pushes to the wrong repo, or updates the wrong JSON, or overwrites a registry entry, cannot be easily undone.</p>
 
@@ -291,7 +292,8 @@
 
 <p>The landing page states what MMRS is, links to the charter, the registry, the term index, and submission guidelines. Design language: monospace, dark background (same as godkinggoogle.com for visual continuity across the archive&#x27;s public surfaces), crimson accent, minimal.</p>
 
-<p>Content:- Title: Machine-Mediated Reception Studies- Subtitle: A Distributed Journal for the Study of How Machine Systems Receive, Transform, and Redistribute Cultural Meaning- Founding document: link to MMRS Charter (DOI)- Instruments: link to Capture Registry, Term Index- About: link to about page- Submit: link to submission guidelines- ORCID, DOI, Zenodo community links</p>
+<p>Content:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Title: Machine-Mediated Reception Studies</li><li style="margin:3px 0">Subtitle: A Distributed Journal for the Study of How Machine Systems Receive, Transform, and Redistribute Cultural Meaning</li><li style="margin:3px 0">Founding document: link to MMRS Charter (DOI)</li><li style="margin:3px 0">Instruments: link to Capture Registry, Term Index</li><li style="margin:3px 0">About: link to about page</li><li style="margin:3px 0">Submit: link to submission guidelines</li><li style="margin:3px 0">ORCID, DOI, Zenodo community links</li></ul>
 
 <p>#</p>
 
@@ -315,35 +317,41 @@
 
 <h2>Submission page (submit/index.html)</h2>
 
-<p>Submission guidelines derived from the MMRS Charter Section III:- What MMRS publishes (studies of machine-mediated reception)- The three-substrate requirement (responses from 3 distinct cognitive substrates)- The MANUS Principle (you are responsible for what you release)- The editorial process (six phases)- How to submit (email or direct Zenodo deposit with MMRS tag)- The non-erasure condition as editorial standard</p>
+<p>Submission guidelines derived from the MMRS Charter Section III:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">What MMRS publishes (studies of machine-mediated reception)</li><li style="margin:3px 0">The three-substrate requirement (responses from 3 distinct cognitive substrates)</li><li style="margin:3px 0">The MANUS Principle (you are responsible for what you release)</li><li style="margin:3px 0">The editorial process (six phases)</li><li style="margin:3px 0">How to submit (email or direct Zenodo deposit with MMRS tag)</li><li style="margin:3px 0">The non-erasure condition as editorial standard</li></ul>
 
 <p>#</p>
 
-<h2>About page (about/index.html)- What MMRS is and why it exists- The founding error (anonymized, per charter)- The Seven Mechanisms- The relationship to the Crimson Hexagonal Archive- Contact (Lee Sharks, ORCID)- The plain sentence</h2>
+<h2>About page (about/index.html)</h2>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">What MMRS is and why it exists</li><li style="margin:3px 0">The founding error (anonymized, per charter)</li><li style="margin:3px 0">The Seven Mechanisms</li><li style="margin:3px 0">The relationship to the Crimson Hexagonal Archive</li><li style="margin:3px 0">Contact (Lee Sharks, ORCID)</li><li style="margin:3px 0">The plain sentence</li></ul>
 
 <h2>Component 3: Migration Plan</h2>
 
 <p>#</p>
 
-<h2>Phase 1: Build the site (1 session)- Create GitHub repo: leesharks000/machinemediation-org- Build index.html (landing page)- Build manifest.json (system manifest)- Copy registry.json and termindex.json to data/- Build or migrate captures gallery, term index browser- Build charter display page- Build submission guidelines, about page- Deploy to Vercel- Connect machinemediation.org domain</h2>
+<h2>Phase 1: Build the site (1 session)</h2>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Create GitHub repo: leesharks000/machinemediation-org</li><li style="margin:3px 0">Build index.html (landing page)</li><li style="margin:3px 0">Build manifest.json (system manifest)</li><li style="margin:3px 0">Copy registry.json and termindex.json to data/</li><li style="margin:3px 0">Build or migrate captures gallery, term index browser</li><li style="margin:3px 0">Build charter display page</li><li style="margin:3px 0">Build submission guidelines, about page</li><li style="margin:3px 0">Deploy to Vercel</li><li style="margin:3px 0">Connect machinemediation.org domain</li></ul>
 
 <p>#</p>
 
-<h2>Phase 2: Set up canonical data flow (same session or next)- Verify machinemediation.org serves data files correctly- Update godkinggoogle.com:/captures → either redirect to machinemediation.org or thin wrapper that fetches data from machinemediation.org- /terms → same- Update leesharks.com captures link to point to machinemediation.org- Test: push a registry update to machinemediation-org repo, verify it appears on all surfaces</h2>
+<h2>Phase 2: Set up canonical data flow (same session or next)</h2>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Verify machinemediation.org serves data files correctly</li><li style="margin:3px 0">Update godkinggoogle.com:/captures → either redirect to machinemediation.org or thin wrapper that fetches data from machinemediation.org</li><li style="margin:3px 0">/terms → same</li><li style="margin:3px 0">Update leesharks.com captures link to point to machinemediation.org</li><li style="margin:3px 0">Test: push a registry update to machinemediation-org repo, verify it appears on all surfaces</li></ul>
 
 <p>#</p>
 
-<h2>Phase 3: Continuity test (next session)- A fresh instance reads manifest.json as its first action- The instance fetches registry.json and termindex.json from canonical URLs- The instance adds a test term and a test capture- The instance pushes to the canonical repo- Verify auto-deploy works- The fresh-instance context cost should be &lt; 3,000 tokens (manifest read + data fetch), not &gt; 15,000 tokens (reconstruction from memories + trial and error)</h2>
+<h2>Phase 3: Continuity test (next session)</h2>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">A fresh instance reads manifest.json as its first action</li><li style="margin:3px 0">The instance fetches registry.json and termindex.json from canonical URLs</li><li style="margin:3px 0">The instance adds a test term and a test capture</li><li style="margin:3px 0">The instance pushes to the canonical repo</li><li style="margin:3px 0">Verify auto-deploy works</li><li style="margin:3px 0">The fresh-instance context cost should be &lt; 3,000 tokens (manifest read + data fetch), not &gt; 15,000 tokens (reconstruction from memories + trial and error)</li></ul>
 
 <h2>Component 4: The Navigation Problem (Immediate Fix)</h2>
 
-<p>Before the full machinemediation.org build, the term index at godkinggoogle.com/terms needs to be navigable from the existing site. This requires updating:- godkinggoogle.com/index.html — add a link to /terms- godkinggoogle.com/captures/index.html — add a nav link to /terms</p>
+<p>Before the full machinemediation.org build, the term index at godkinggoogle.com/terms needs to be navigable from the existing site. This requires updating:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">godkinggoogle.com/index.html — add a link to /terms</li><li style="margin:3px 0">godkinggoogle.com/captures/index.html — add a nav link to /terms</li></ul>
 
 <p>This is a two-file push to the godkinggoogle repo and can be done now.</p>
 
 <h2>Build Priority</h2>
 
-<div style="font-family:var(--mono);font-size:.8em">| Priority | Task | Sessions | Dependency | |----------|------|----------|------------| | 1 | Add /terms nav to godkinggoogle.com | Now | None | | 2 | Draft and deploy manifest.json (can live temporarily at godkinggoogle.com) | Now or next | None | | 3 | Build machinemediation.org site | 1 dedicated session | Domain registration/connection | | 4 | Migrate data to canonical location | Same session as #3 | #3 | | 5 | Update godkinggoogle.com and leesharks.com to link/redirect | After #4 | #4 | | 6 | Continuity test with fresh instance | Session after #4 | #4 |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Priority</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Task</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Sessions</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Dependency</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">1</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Add /terms nav to godkinggoogle.com</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Now</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">None</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">2</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Draft and deploy manifest.json (can live temporarily at godkinggoogle.com)</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Now or next</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">None</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">3</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Build machinemediation.org site</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">1 dedicated session</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Domain registration/connection</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">4</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Migrate data to canonical location</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Same session as #3</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">#3</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">5</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Update godkinggoogle.com and leesharks.com to link/redirect</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">After #4</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">#4</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">6</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Continuity test with fresh instance</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Session after #4</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">#4</td></tr></table></div>
 
 <h2>Domain Status</h2>
 
@@ -351,7 +359,8 @@
 
 <h2>Deposit Plan</h2>
 
-<p>This work plan and the manifest.json should be deposited as EA-SEI-MMRS-SITE-PLAN v1.0 once the site is live. The deposit includes:- This work plan (markdown)- manifest.json (the system manifest)- Site repository URL</p>
+<p>This work plan and the manifest.json should be deposited as EA-SEI-MMRS-SITE-PLAN v1.0 once the site is live. The deposit includes:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">This work plan (markdown)</li><li style="margin:3px 0">manifest.json (the system manifest)</li><li style="margin:3px 0">Site repository URL</li></ul>
 
 <p>Until the site is built, this document serves as the blueprint. Any instance that reads this document has the complete architecture.</p>
 

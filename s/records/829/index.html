@@ -71,7 +71,8 @@
 
 <p>OKF is designed for knowledge that agents can consume. But consumption by an AI agent is not passive retrieval — it is transformation. An agent reads, compresses, paraphrases, and re-presents. During that transformation, specific information is systematically lost even when present in the source document.</p>
 
-<p>In an empirical registry of 87 documented AI summary events across Google AI Overview and AI Mode — run against a DOI-anchored open-access scholarly archive — the following failure modes repeat:- Author attribution omitted from summaries even when present in the source- Institutional affiliation generalized (&quot;some researchers,&quot; &quot;one theory&quot;)- Disambiguation constraints collapsed — distinct concepts merged into adjacent ones- Key definitions paraphrased into their negation (&quot;X, not Y&quot; → &quot;a form of Y&quot;)- Source documents ranking in organic results but excluded from the generated summary</p>
+<p>In an empirical registry of 87 documented AI summary events across Google AI Overview and AI Mode — run against a DOI-anchored open-access scholarly archive — the following failure modes repeat:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Author attribution omitted from summaries even when present in the source</li><li style="margin:3px 0">Institutional affiliation generalized (&quot;some researchers,&quot; &quot;one theory&quot;)</li><li style="margin:3px 0">Disambiguation constraints collapsed — distinct concepts merged into adjacent ones</li><li style="margin:3px 0">Key definitions paraphrased into their negation (&quot;X, not Y&quot; → &quot;a form of Y&quot;)</li><li style="margin:3px 0">Source documents ranking in organic results but excluded from the generated summary</li></ul>
 
 <p>The dataset includes captures from Google AI Overview and AI Mode, demonstrating that these losses occur on Google&#x27;s own summarization surfaces — the agents that will consume OKF documents.</p>
 
@@ -106,11 +107,7 @@
 <h1>Provenance</h1>
 
 <p>Structured provenance and summarization constraints. May include:</p>
-<p>- Author identity and persistent identifiers (ORCID, DOI)</p>
-<p>- Institutional affiliation</p>
-<p>- Key terms with canonical definitions</p>
-<p>- Disambiguation constraints (known false collapses)</p>
-<p>- A producer-defined verification or audit block</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Author identity and persistent identifiers (ORCID, DOI)</li><li style="margin:3px 0">Institutional affiliation</li><li style="margin:3px 0">Key terms with canonical definitions</li><li style="margin:3px 0">Disambiguation constraints (known false collapses)</li><li style="margin:3px 0">A producer-defined verification or audit block</li></ul>
 
 
 <p>The relationship between provenance_kernel in frontmatter and the # Provenance body section: the kernel is a compressed, one-paragraph representation suitable for agent consumption and indexing. The body section carries the full structured provenance, including information too complex for a single YAML string. Producers may use either or both.</p>
@@ -123,7 +120,7 @@
 
 <p>Format, not platform. The fields travel with the file. No SDK, no service, no account. They compose cleanly with #52&#x27;s bibliographic fields and #47&#x27;s trust layer.</p>
 
-<div style="font-family:var(--mono);font-size:.8em">| Layer | Issue | Provides | |-------|-------|----------| | Descriptive | #52 | Who made this, when, under what license | | Trust | #47 | Can the authorship claim be verified | | Governance | This | What must survive agent consumption |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Layer</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Issue</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Provides</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Descriptive</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">#52</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Who made this, when, under what license</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Trust</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">#47</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Can the authorship claim be verified</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Governance</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">This</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">What must survive agent consumption</td></tr></table></div>
 
 <h2>Examples</h2>
 
@@ -184,7 +181,8 @@
 
 <p>I maintain an open-access scholarly archive with 800+ DOI-anchored markdown deposits on Zenodo, operating with a markdown-plus-frontmatter structure that converges with OKF&#x27;s design. The archive has been consumed by AI agents across multiple composition layers, and I have empirical data on how these documents are transformed during summarization.</p>
 
-<p>I can contribute:- A pull request adding these fields to the recommended-fields section of SPEC.md- A sample OKF bundle using the governance fields on scholarly and technical concepts- The 87-capture empirical dataset as a reference case (Zenodo [10.5281/zenodo.20691745](https://doi.org/10.5281/zenodo.20691745), CC-BY-4.0)- The governance specification (Zenodo [10.5281/zenodo.20686496](https://doi.org/10.5281/zenodo.20686496))</p>
+<p>I can contribute:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">A pull request adding these fields to the recommended-fields section of SPEC.md</li><li style="margin:3px 0">A sample OKF bundle using the governance fields on scholarly and technical concepts</li><li style="margin:3px 0">The 87-capture empirical dataset as a reference case (Zenodo [10.5281/zenodo.20691745](https://doi.org/10.5281/zenodo.20691745), CC-BY-4.0)</li><li style="margin:3px 0">The governance specification (Zenodo [10.5281/zenodo.20686496](https://doi.org/10.5281/zenodo.20686496))</li></ul>
 
 <p>Happy to sign the CLA and adapt field naming to maintainer preferences.</p>
 

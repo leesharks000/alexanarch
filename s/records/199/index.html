@@ -207,22 +207,22 @@
 
 <p><strong>Operationalization.</strong> SSDI is measured by the following protocol:</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Task battery.</strong> Select a battery of N programming tasks spanning multiple domains (web applications, data processing, systems programming, cryptographic operations, API design). Each task is defined by a natural-language specification and a test suite with at least 90% branch coverage.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Generation.</strong> For each task, generate K independent solutions from the model under test (K ≥ 100). Filter to the subset that passes the full test suite. Call this the <em>functional population</em> F(T, G).</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Feature extraction.</strong> For each solution in F(T, G), extract a feature vector encoding structural properties: abstract syntax tree shape and depth, control-flow graph topology, data-flow patterns, library usage, API call sequences, variable naming entropy, cyclomatic complexity, and — critically — the <em>vulnerability surface</em>: which CWE categories the solution is potentially exposed to, as determined by static analysis (SAST) and, where feasible, dynamic analysis.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Diversity measurement.</strong> Compute the effective dimensionality of the feature-vector distribution for F(T, G) using the participation ratio of the eigenvalues of the covariance matrix:</p>
@@ -233,7 +233,7 @@
 
 <p>where λ_i are the eigenvalues of the covariance matrix of the feature vectors. This quantity equals 1 when all outputs are identical (a single eigenvalue dominates) and equals the number of features when outputs are uniformly distributed across all structural dimensions.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Normalization.</strong> Normalize SSDI_raw against a reference population — ideally human-written solutions to the same task collected from diverse sources (competitive programming archives, open-source repositories, textbooks, student submissions). If no human reference population is available, report SSDI_raw as effective dimensionality with bootstrap confidence intervals and mark the task as non-normalized. A synthetic baseline may be included for sensitivity analysis but does not substitute for a reference population of independently produced correct solutions.</p>
@@ -244,12 +244,12 @@
 
 <p>An SSDI of 1.0 means the model&#x27;s output diversity matches the reference population. An SSDI below 1.0 means the model&#x27;s outputs are more concentrated. An SSDI approaching 0 means monoculture.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Vulnerability correlation.</strong> For each pair of solutions in F(T, G), compute the Jaccard similarity of their CWE exposure sets. The <em>vulnerability correlation coefficient</em> (VCC) is the mean pairwise Jaccard similarity across the population. A VCC near 0 means each solution has independent failure modes; a VCC near 1 means all solutions fail the same way.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Cross-generational tracking.</strong> Repeat the measurement across successive model generations (or successive fine-tuning cycles on corpora with increasing synthetic content). The SSDI trajectory and VCC trajectory across generations constitute the empirical signal of code-domain model collapse. The prediction of this paper is not that every individual model release must show a lower SSDI than its predecessor — real generations may show bumps from mitigation efforts, data refreshes, or architectural changes. The prediction is that, absent diversity-preserving intervention, recursive synthetic saturation produces a declining SSDI trend and a rising VCC trend, while functional pass rate remains stable or improves. The gap between the functional pass rate trajectory and the SSDI trajectory is the <em>correctness trap</em> made visible.</p>
@@ -330,44 +330,27 @@
 
 <p><strong>Model collapse — foundational</strong></p>
 
-<p>- I. Shumailov et al., &quot;AI models collapse when trained on recursively generated data,&quot; <em>Nature</em> (2024), DOI 10.1038/s41586-024-07566-y.</p>
-<p>- E. Dohmatob et al., &quot;Strong Model Collapse,&quot; ICLR 2025 Spotlight.</p>
-<p>- Q. Bertrand et al., &quot;How bad is training on synthetic data? A statistical analysis of language model collapse,&quot; OpenReview / ICML (2025).</p>
-<p>- &quot;How to Synthesize Text Data without Model Collapse?&quot; ICML 2025, Vancouver.</p>
-<p>- &quot;When Models Don&#x27;t Collapse: On the Consistency of Iterative MLE,&quot; arxiv 2505.19046.</p>
-<p>- &quot;Preventing Model Collapse via Contraction-Conditioned Neural Filters,&quot; arxiv 2512.00757.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">I. Shumailov et al., &quot;AI models collapse when trained on recursively generated data,&quot; <em>Nature</em> (2024), DOI 10.1038/s41586-024-07566-y.</li><li style="margin:3px 0">E. Dohmatob et al., &quot;Strong Model Collapse,&quot; ICLR 2025 Spotlight.</li><li style="margin:3px 0">Q. Bertrand et al., &quot;How bad is training on synthetic data? A statistical analysis of language model collapse,&quot; OpenReview / ICML (2025).</li><li style="margin:3px 0">&quot;How to Synthesize Text Data without Model Collapse?&quot; ICML 2025, Vancouver.</li><li style="margin:3px 0">&quot;When Models Don&#x27;t Collapse: On the Consistency of Iterative MLE,&quot; arxiv 2505.19046.</li><li style="margin:3px 0">&quot;Preventing Model Collapse via Contraction-Conditioned Neural Filters,&quot; arxiv 2512.00757.</li></ul>
 
 
 <p><strong>Code security — empirical</strong></p>
 
-<p>- Checkmarx, &quot;Agentic AppSec Unleashed &#x27;26&quot; — annual survey of security leaders (June 2026, https://checkmarx.com/press-releases/75-of-companies-ship-vulnerable-code-despite-a-startling-increase-in-threat-velocity-agentic-appsec-unleashed-26-is-changing-that/): 3.4x vulnerability rate for heavy AI-code adopters; 70% developer-reported AI vulnerabilities; 93% enterprise breach rate.</p>
-<p>- &quot;SoK: Understanding (New) Security Issues Across AI4Code Use Cases,&quot; arxiv 2512.18456 — &quot;LLMs may emit insecure patterns even while passing functional tests.&quot;</p>
-<p>- &quot;How secure is AI-generated Code: A Large-Scale Comparison of Large Language Models,&quot; arxiv 2404.18353 — noting Shumailov et al.&#x27;s model collapse as a factor in training-data quality for vulnerability detection.</p>
-<p>- &quot;Chasing Shadows: Pitfalls in LLM Security Research,&quot; arxiv 2512.09549 — direct experimental measurement of model collapse in code generation (Qwen2.5-Coder).</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Checkmarx, &quot;Agentic AppSec Unleashed &#x27;26&quot; — annual survey of security leaders (June 2026, https://checkmarx.com/press-releases/75-of-companies-ship-vulnerable-code-despite-a-startling-increase-in-threat-velocity-agentic-appsec-unleashed-26-is-changing-that/): 3.4x vulnerability rate for heavy AI-code adopters; 70% developer-reported AI vulnerabilities; 93% enterprise breach rate.</li><li style="margin:3px 0">&quot;SoK: Understanding (New) Security Issues Across AI4Code Use Cases,&quot; arxiv 2512.18456 — &quot;LLMs may emit insecure patterns even while passing functional tests.&quot;</li><li style="margin:3px 0">&quot;How secure is AI-generated Code: A Large-Scale Comparison of Large Language Models,&quot; arxiv 2404.18353 — noting Shumailov et al.&#x27;s model collapse as a factor in training-data quality for vulnerability detection.</li><li style="margin:3px 0">&quot;Chasing Shadows: Pitfalls in LLM Security Research,&quot; arxiv 2512.09549 — direct experimental measurement of model collapse in code generation (Qwen2.5-Coder).</li></ul>
 
 
 <p><strong>AI monoculture and epistemic diversity</strong></p>
 
-<p>- Apiiro, &quot;AI-Generated Code Security&quot; (2025) — coining &quot;generative monoculture&quot; as systemic vulnerability at internet scale.</p>
-<p>- &quot;Epistemic diversity across language models mitigates knowledge collapse,&quot; arxiv 2512.15011.</p>
-<p>- Apple (2025), study on &quot;complete accuracy collapse&quot; in large reasoning models trained recursively.</p>
-<p>- Fujitsu, internal classification of model collapse as long-term threat to service reliability.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Apiiro, &quot;AI-Generated Code Security&quot; (2025) — coining &quot;generative monoculture&quot; as systemic vulnerability at internet scale.</li><li style="margin:3px 0">&quot;Epistemic diversity across language models mitigates knowledge collapse,&quot; arxiv 2512.15011.</li><li style="margin:3px 0">Apple (2025), study on &quot;complete accuracy collapse&quot; in large reasoning models trained recursively.</li><li style="margin:3px 0">Fujitsu, internal classification of model collapse as long-term threat to service reliability.</li></ul>
 
 
 <p><strong>Security-law context</strong></p>
 
-<p>- Adversarial by Origin, EA-SEI-ADVERSARY-01, DOI 10.5281/zenodo.20673413.</p>
-<p>- Adversarial by Origin Addendum: First Confirmation Marker, DOI 10.5281/zenodo.20674488.</p>
-<p>- OWASP Top 10 for Large Language Model Applications, LLM01:2025.</p>
-<p>- NIST AI 100-2, Adversarial Machine Learning taxonomy.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Adversarial by Origin, EA-SEI-ADVERSARY-01, DOI 10.5281/zenodo.20673413.</li><li style="margin:3px 0">Adversarial by Origin Addendum: First Confirmation Marker, DOI 10.5281/zenodo.20674488.</li><li style="margin:3px 0">OWASP Top 10 for Large Language Model Applications, LLM01:2025.</li><li style="margin:3px 0">NIST AI 100-2, Adversarial Machine Learning taxonomy.</li></ul>
 
 
 <p><strong>Historical monoculture analogues</strong></p>
 
-<p>- The Irish Potato Famine and <em>Phytophthora infestans</em> (1845–1852).</p>
-<p>- Southern corn leaf blight epidemic (1970): single cytoplasm type (T-cytoplasm) across 85% of US hybrid corn.</p>
-<p>- Heartbleed (CVE-2014-0160): OpenSSL vulnerability affecting ~17% of secure web servers simultaneously.</p>
-<p>- Code Red, Slammer, Blaster: Windows monoculture worm epidemics (2001–2003).</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The Irish Potato Famine and <em>Phytophthora infestans</em> (1845–1852).</li><li style="margin:3px 0">Southern corn leaf blight epidemic (1970): single cytoplasm type (T-cytoplasm) across 85% of US hybrid corn.</li><li style="margin:3px 0">Heartbleed (CVE-2014-0160): OpenSSL vulnerability affecting ~17% of secure web servers simultaneously.</li><li style="margin:3px 0">Code Red, Slammer, Blaster: Windows monoculture worm epidemics (2001–2003).</li></ul>
 
 
 <p><em>Version note: v1.1, revised 13 June 2026 incorporating Assembly review. Designator provisional pending register entry. Falsification window runs from deposit date.</em></p></div>

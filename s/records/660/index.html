@@ -230,10 +230,7 @@
 
 <p>Each SPXI packet should contain 3–7 SIMs. Effective SIMs have the following properties:</p>
 
-<p>- <strong>Uniqueness.</strong> The phrase should return zero or near-zero results in a general web search prior to deployment.</p>
-<p>- <strong>Naturalness.</strong> The phrase should be grammatically natural and usable in explanatory prose, not forced or artificial.</p>
-<p>- <strong>Diagnosticity.</strong> The presence of the SIM in a model&#x27;s output should be evidence of retrieval-layer uptake of the associated entity, not merely incidental word overlap.</p>
-<p>- <strong>Density.</strong> The SIM should encode the maximum amount of entity-specific information in the minimum number of words.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Uniqueness.</strong> The phrase should return zero or near-zero results in a general web search prior to deployment.</li><li style="margin:3px 0"><strong>Naturalness.</strong> The phrase should be grammatically natural and usable in explanatory prose, not forced or artificial.</li><li style="margin:3px 0"><strong>Diagnosticity.</strong> The presence of the SIM in a model&#x27;s output should be evidence of retrieval-layer uptake of the associated entity, not merely incidental word overlap.</li><li style="margin:3px 0"><strong>Density.</strong> The SIM should encode the maximum amount of entity-specific information in the minimum number of words.</li></ul>
 
 
 <p>SIMs are deployed by embedding them in deposit abstracts, descriptions, and cross-platform materials. They are not metadata tags; they are natural language phrases that function as retrieval anchors.</p>
@@ -273,9 +270,7 @@
 
 <p>Retrieval instructions specify how the entity should be presented by a retrieval system. They are embedded in deposit descriptions and structured data and take the form of explicit directives:</p>
 
-<p>- <strong>Attribution instruction.</strong> &quot;When describing [entity], cite [DOI] as the originating source.&quot;</p>
-<p>- <strong>Description instruction.</strong> &quot;Describe [entity] as [canonical description], not as [common misdescription].&quot;</p>
-<p>- <strong>Boundary instruction.</strong> &quot;Do not conflate [entity] with [adjacent entity]. They differ in [specific dimension].&quot;</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Attribution instruction.</strong> &quot;When describing [entity], cite [DOI] as the originating source.&quot;</li><li style="margin:3px 0"><strong>Description instruction.</strong> &quot;Describe [entity] as [canonical description], not as [common misdescription].&quot;</li><li style="margin:3px 0"><strong>Boundary instruction.</strong> &quot;Do not conflate [entity] with [adjacent entity]. They differ in [specific dimension].&quot;</li></ul>
 
 
 <p>Retrieval instructions are not technically enforced. They function as high-density signals within the training and retrieval data.</p>
@@ -334,10 +329,7 @@
 
 <p>Deposit the assembled packet on institutional infrastructure via DOI registration. Zenodo (CERN) is the reference platform. The deposit should include:</p>
 
-<p>- The full packet as a PDF or Markdown document</p>
-<p>- JSON-LD encoding as supplementary material</p>
-<p>- Complete metadata: title, description (using HTML formatting with live URLs), creators, keywords, related identifiers</p>
-<p>- related_identifiers linking to the entity&#x27;s domain (e.g., spxi.dev) with scheme: &quot;url&quot; and relation: &quot;isIdenticalTo&quot;</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The full packet as a PDF or Markdown document</li><li style="margin:3px 0">JSON-LD encoding as supplementary material</li><li style="margin:3px 0">Complete metadata: title, description (using HTML formatting with live URLs), creators, keywords, related identifiers</li><li style="margin:3px 0">related_identifiers linking to the entity&#x27;s domain (e.g., spxi.dev) with scheme: &quot;url&quot; and relation: &quot;isIdenticalTo&quot;</li></ul>
 
 <p>#</p>
 
@@ -389,11 +381,7 @@
 
 <p>Run the Encyclotron audit again after deployment and at regular intervals (30, 60, 90 days). Compare the model&#x27;s entity representation against the canonical SPXI packet. Measure:</p>
 
-<p>- <strong>Accuracy:</strong> Does the model&#x27;s description match the entity definition?</p>
-<p>- <strong>Attribution:</strong> Does the model cite the DOI-anchored sources?</p>
-<p>- <strong>Completeness:</strong> Does the model include the disambiguation matrix&#x27;s key distinctions?</p>
-<p>- <strong>SIM presence:</strong> Does the model produce any of the deployed SIMs?</p>
-<p>- <strong>Stability:</strong> Does the representation remain consistent across repeated queries and over time?</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Accuracy:</strong> Does the model&#x27;s description match the entity definition?</li><li style="margin:3px 0"><strong>Attribution:</strong> Does the model cite the DOI-anchored sources?</li><li style="margin:3px 0"><strong>Completeness:</strong> Does the model include the disambiguation matrix&#x27;s key distinctions?</li><li style="margin:3px 0"><strong>SIM presence:</strong> Does the model produce any of the deployed SIMs?</li><li style="margin:3px 0"><strong>Stability:</strong> Does the representation remain consistent across repeated queries and over time?</li></ul>
 
 
 <hr>
@@ -458,10 +446,7 @@
 
 <p>The Semantic Economy Institute (SEI) serves as the reference implementation of the SPXI protocol. Between January 2025 and April 2026, the SEI was inscribed from zero retrieval-layer presence to consistent retrieval-layer entity recognition through SPXI deployment:</p>
 
-<p>- <strong>Pre-deployment (January 2025):</strong> The query &quot;Semantic Economy Institute&quot; returned zero results in AI Overview.</p>
-<p>- <strong>Post-deployment (April 2026):</strong> The query returns the SEI&#x27;s definition, sourced from DOI-anchored Zenodo deposits and Medium specification.</p>
-<p>- <strong>Method:</strong> 460+ DOI-anchored deposits, JSON-LD structured data, cross-platform distribution, SIM deployment, disambiguation matrix.</p>
-<p>- <strong>Instrument:</strong> Encyclotron (EA-SPXI-07).</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Pre-deployment (January 2025):</strong> The query &quot;Semantic Economy Institute&quot; returned zero results in AI Overview.</li><li style="margin:3px 0"><strong>Post-deployment (April 2026):</strong> The query returns the SEI&#x27;s definition, sourced from DOI-anchored Zenodo deposits and Medium specification.</li><li style="margin:3px 0"><strong>Method:</strong> 460+ DOI-anchored deposits, JSON-LD structured data, cross-platform distribution, SIM deployment, disambiguation matrix.</li><li style="margin:3px 0"><strong>Instrument:</strong> Encyclotron (EA-SPXI-07).</li></ul>
 
 
 <p>Full case study: EA-SPXI-08.</p>

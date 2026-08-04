@@ -87,9 +87,7 @@
 
 <h2>Evidence Legend</h2>
 
-<p>- <strong>[Observed]</strong>: directly documented by API responses, HTTP status codes, or automated inventory.</p>
-<p>- <strong>[Inferred]</strong>: structural explanation supported by observed patterns.</p>
-<p>- <strong>[Undisclosed]</strong>: information exists but has not been made public by the responsible party.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>[Observed]</strong>: directly documented by API responses, HTTP status codes, or automated inventory.</li><li style="margin:3px 0"><strong>[Inferred]</strong>: structural explanation supported by observed patterns.</li><li style="margin:3px 0"><strong>[Undisclosed]</strong>: information exists but has not been made public by the responsible party.</li></ul>
 
 <hr>
 
@@ -123,11 +121,7 @@
 
 <p>Three states of a DOI must be distinguished:</p>
 
-<div style="font-family:var(--mono);font-size:.8em">| State | String | Resolution | Public identifying metadata | Functional result |</div>
-<p>|---|---|---|---|---|</p>
-<div style="font-family:var(--mono);font-size:.8em">| Persistent identifier | Present | Present | Present | Work remains identifiable |</div>
-<div style="font-family:var(--mono);font-size:.8em">| Tombstoned identifier | Present | Explanatory tombstone | Identity preserved | Work identifiable but unavailable |</div>
-<div style="font-family:var(--mono);font-size:.8em">| Semantically severed token | Present | Generic enforcement page | Absent | Work no longer publicly identifiable |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">State</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">String</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Resolution</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Public identifying metadata</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Functional result</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Persistent identifier</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Present</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Present</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Present</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Work remains identifiable</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Tombstoned identifier</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Present</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Explanatory tombstone</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Identity preserved</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Work identifiable but unavailable</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Semantically severed token</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Present</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Generic enforcement page</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Absent</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Work no longer publicly identifiable</td></tr></table></div>
 
 <p>The 871 DOIs documented in this paper belong in the third category.</p>
 
@@ -141,11 +135,7 @@
 
 <h2>3.1 Results [Observed]</h2>
 
-<div style="font-family:var(--mono);font-size:.8em">| Category | Count | Percentage |</div>
-<p>|---|---|---|</p>
-<div style="font-family:var(--mono);font-size:.8em">| Public metadata preserved in DataCite | 946 | 52.1% |</div>
-<div style="font-family:var(--mono);font-size:.8em">| HTTP 404 — public metadata absent | 871 | 47.9% |</div>
-<div style="font-family:var(--mono);font-size:.8em">| **Total DOIs audited** | **1,817** | **100.0%** |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Category</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Count</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Percentage</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Public metadata preserved in DataCite</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">946</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">52.1%</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">HTTP 404 — public metadata absent</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">871</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">47.9%</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">**Total DOIs audited**</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">**1,817**</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">**100.0%**</td></tr></table></div>
 
 <p>946 + 871 = 1,817. Zero overlap. Zero uncategorized.</p>
 
@@ -179,16 +169,7 @@
 
 <p>The deletion rate by registration range:</p>
 
-<div style="font-family:var(--mono);font-size:.8em">| DOI number range | Preserved | Severed | Total | % Severed |</div>
-<p>|---|---|---|---|---|</p>
-<div style="font-family:var(--mono);font-size:.8em">| Below 18,100,000 | 10 | 8 | 18 | 44.4% |</div>
-<div style="font-family:var(--mono);font-size:.8em">| 18,000,000–18,500,000 | 266 | 260 | 526 | 49.4% |</div>
-<div style="font-family:var(--mono);font-size:.8em">| 18,500,000–19,000,000 | 124 | 136 | 260 | 52.3% |</div>
-<div style="font-family:var(--mono);font-size:.8em">| 19,000,000–19,500,000 | 127 | 121 | 248 | 48.8% |</div>
-<div style="font-family:var(--mono);font-size:.8em">| 19,500,000–20,000,000 | 133 | 112 | 245 | 45.7% |</div>
-<div style="font-family:var(--mono);font-size:.8em">| 20,000,000–20,500,000 | 127 | 108 | 235 | 46.0% |</div>
-<div style="font-family:var(--mono);font-size:.8em">| 20,500,000+ | 159 | 126 | 285 | 44.2% |</div>
-<div style="font-family:var(--mono);font-size:.8em">| **Total** | **946** | **871** | **1,817** | **47.9%** |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">DOI number range</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Preserved</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Severed</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Total</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">% Severed</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Below 18,100,000</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">10</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">8</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">18</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">44.4%</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">18,000,000–18,500,000</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">266</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">260</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">526</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">49.4%</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">18,500,000–19,000,000</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">124</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">136</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">260</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">52.3%</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">19,000,000–19,500,000</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">127</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">121</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">248</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">48.8%</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">19,500,000–20,000,000</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">133</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">112</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">245</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">45.7%</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">20,000,000–20,500,000</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">127</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">108</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">235</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">46.0%</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">20,500,000+</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">159</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">126</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">285</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">44.2%</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">**Total**</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">**946**</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">**871**</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">**1,817**</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">**47.9%**</td></tr></table></div>
 
 <p>The severed percentage is approximately 50% across all ranges. This is consistent with the paired-DOI architecture: each deposit produced one concept DOI and one version DOI, and the termination process severed one type while preserving the other.</p>
 
@@ -226,9 +207,7 @@
 
 <p>The DOI Foundation&#x27;s persistence promise is ambiguous about which layer is permanent. In this case:</p>
 
-<p>- The DOI string persists (it is still a syntactically valid number) [Observed]</p>
-<p>- Resolution reaches a tombstone page (&quot;Content out of scope&quot;) — HTTP 410 [Observed]</p>
-<p>- The metadata record returns HTTP 404 from DataCite&#x27;s public API for 871 DOIs [Observed]</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The DOI string persists (it is still a syntactically valid number) [Observed]</li><li style="margin:3px 0">Resolution reaches a tombstone page (&quot;Content out of scope&quot;) — HTTP 410 [Observed]</li><li style="margin:3px 0">The metadata record returns HTTP 404 from DataCite&#x27;s public API for 871 DOIs [Observed]</li></ul>
 
 <p>A DOI whose metadata record is absent from DataCite is an identifier whose identifying function has been severed. It cannot be found by creator search. It cannot be found by subject search. It cannot be discovered through relatedIdentifiers. It exists as a number without a referent in the system designed to maintain referents.</p>
 
@@ -260,10 +239,7 @@
 
 <p>The implications extend to:</p>
 
-<p>- <strong>FAIR Principle F1</strong> (persistent identifiers) — the identifier is findable only conditionally</p>
-<p>- <strong>TRUST Principle R1.3</strong> (persistent identification) — the identification is trustworthy only conditionally</p>
-<p>- <strong>Every institution that mandates DOI registration</strong> — the mandate is not sufficient for preservation</p>
-<p>- <strong>Every citation graph built on DOIs</strong> — 871 nodes in this graph are now semantically severed</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>FAIR Principle F1</strong> (persistent identifiers) — the identifier is findable only conditionally</li><li style="margin:3px 0"><strong>TRUST Principle R1.3</strong> (persistent identification) — the identification is trustworthy only conditionally</li><li style="margin:3px 0"><strong>Every institution that mandates DOI registration</strong> — the mandate is not sufficient for preservation</li><li style="margin:3px 0"><strong>Every citation graph built on DOIs</strong> — 871 nodes in this graph are now semantically severed</li></ul>
 
 <h2>8. Verification Procedure</h2>
 
@@ -300,11 +276,7 @@ GET https://api.datacite.org/dois/10.5281%2Fzenodo.20309930  (concept DOI)</pre>
 
 <p>The full DataCite metadata backup is deposited as AXN:0370.ARCHIVAL (datacite-full-backup.json):</p>
 
-<p>- 946 records with complete metadata (titles, subjects, descriptions, relatedIdentifiers, creators)</p>
-<p>- 871 DOI strings confirmed severed (HTTP 404 from DataCite API)</p>
-<p>- Queried via ORCID, 15 heteronym creator names, and individual DOI lookups</p>
-<p>- Sweep completed June 22, 2026</p>
-<p>- One row per DOI, one mutually exclusive state per row</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">946 records with complete metadata (titles, subjects, descriptions, relatedIdentifiers, creators)</li><li style="margin:3px 0">871 DOI strings confirmed severed (HTTP 404 from DataCite API)</li><li style="margin:3px 0">Queried via ORCID, 15 heteronym creator names, and individual DOI lookups</li><li style="margin:3px 0">Sweep completed June 22, 2026</li><li style="margin:3px 0">One row per DOI, one mutually exclusive state per row</li></ul>
 
 <p>Available at: `https://alexanarch.org/data/datacite-full-backup.json`</p>
 

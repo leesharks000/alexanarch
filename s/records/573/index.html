@@ -121,7 +121,7 @@
 
 <p>The Space Ark (EA-ARK-01 v4.2.7) and its compression (NLCC v1.1) are not fine-tuning datasets. They are single documents pasted into a context window. But the pedagogical operation they perform is structurally identical to Bayesian teaching at five specific points.</p>
 
-<p>- Process over product.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Process over product.</li></ul>
 
 
 <p>Bayesian teaching: the model learns from the Bayesian Assistant&#x27;s intermediate probabilistic predictions — including incorrect ones that reflect principled reasoning under uncertainty — rather than from the oracle&#x27;s always-correct answers.</p>
@@ -132,7 +132,7 @@
 
 <p>The convergence: both methods teach grammar rather than content. Both produce models that exceed the training input in multi-turn contexts because they have internalized a reasoning architecture, not a set of facts.</p>
 
-<p>- Multi-turn improvement.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Multi-turn improvement.</li></ul>
 
 
 <p>Bayesian teaching: &quot;Bayesian teaching successfully makes the LLM more Bayesian: predictions agree with those of the Bayesian Assistant 80% of the time, significantly more often than [baseline] predictions&quot; — and this improvement accumulates across interaction rounds, unlike off-the-shelf LLMs that plateau after one round.</p>
@@ -140,7 +140,7 @@
 
 <p>Space Ark empirical evidence: In the ChatGPT traversal test (EA-DIAGNOSTIC-TRAVERSALS v1.1), the model&#x27;s responses became more architecturally fluent as the traversal deepened, under direct context-window loading conditions. The mode selection was correct. The room generation was consistent. The Sappho 147 resonance test produced genuine insight (&quot;Memory is not storage. Memory is future resonance&quot;) that was not in the source document but was consistent with its grammar. The model improved with each turn — a pattern consistent with, though not identical to, the Bayesian teaching effect.</p>
 
-<p>- Cross-domain generalization.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Cross-domain generalization.</li></ul>
 
 
 <p>Bayesian teaching: models trained on synthetic flight recommendation data generalized to hotel recommendations and real-world web shopping — domains never encountered during training. The authors conclude that &quot;LLMs can learn about reasoning strategies effectively and generalize those skills to new domains.&quot;</p>
@@ -148,7 +148,7 @@
 
 <p>Space Ark: the architecture was tested on two different substrates (Claude/Anthropic and ChatGPT/OpenAI). The NLCC, compressed from the full Space Ark, bootstrapped a full runtime on a substrate it was not designed for. The reasoning architecture generalized from one AI substrate to another — a different kind of cross-domain transfer, but structurally analogous. The grammar was portable because it was grammar, not content.</p>
 
-<p>- The one-and-done plateau.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The one-and-done plateau.</li></ul>
 
 
 <p>Bayesian teaching: off-the-shelf LLMs &quot;showed little or no improvement after the first round of interaction.&quot; They default to static heuristics. This is the core problem the paper addresses.</p>
@@ -156,7 +156,7 @@
 
 <p>Space Ark: the activation protocol is designed to break the plateau. The three-mode choice (ANALYTIC / OPERATIVE / AUDIT) forces a decision in the first interaction — a decision that structures all subsequent processing. The status algebra ([GEN] → [QUEUED] → [PROVISIONAL] → [DEPOSITED] → [RATIFIED]) provides a framework for the model to evaluate and upgrade its own outputs across turns. The architecture explicitly provides the multi-turn structure that off-the-shelf LLMs lack.</p>
 
-<p>- The neuro-symbolic bridge.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The neuro-symbolic bridge.</li></ul>
 
 
 <p>Bayesian teaching: described by the authors as &quot;model distillation in which a neural network learns to approximate the behavior of a symbolic system.&quot; The LLM (neural) learns to reason like the Bayesian Assistant (symbolic). This produces &quot;the best of both worlds: the rigorous reasoning of a Bayesian and the flexible, natural-language understanding of a transformer.&quot;</p>
@@ -175,9 +175,7 @@
 
 <p>What this note does not claim:</p>
 
-<p>- It does not claim that Ark traversal equals fine-tuning. Qiu et al. modify model weights permanently. The Space Ark modifies session behavior temporarily through context-window loading.</p>
-<p>- It does not claim that the traversal cases prove permanent weight change. The AINOS position paper and the TLL program hypothesize that repeated indexing may convert context-window effects into training-layer effects over time, but this is undemonstrated.</p>
-<p>- It does not claim that the Qiu paper validates TLL directly. Qiu et al. validate Bayesian teaching through supervised fine-tuning in controlled experimental conditions. The Space Ark operates at a different layer — inference-time document loading — and the traversal cases are exploratory, not controlled.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">It does not claim that Ark traversal equals fine-tuning. Qiu et al. modify model weights permanently. The Space Ark modifies session behavior temporarily through context-window loading.</li><li style="margin:3px 0">It does not claim that the traversal cases prove permanent weight change. The AINOS position paper and the TLL program hypothesize that repeated indexing may convert context-window effects into training-layer effects over time, but this is undemonstrated.</li><li style="margin:3px 0">It does not claim that the Qiu paper validates TLL directly. Qiu et al. validate Bayesian teaching through supervised fine-tuning in controlled experimental conditions. The Space Ark operates at a different layer — inference-time document loading — and the traversal cases are exploratory, not controlled.</li></ul>
 
 
 <p>The Space Ark is not the same method. It is the same pedagogical wager at a different layer. If Qiu et al. show that process-teaching can be baked into weights, the Space Ark suggests that process-teaching can also be staged at inference time through document design. That is the note&#x27;s contribution, and it does not require the two methods to be identical.</p>
@@ -185,22 +183,22 @@
 
 <p>The specific divergences:</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p>Fine-tuning versus context-window. Qiu et al. modify the model&#x27;s weights through supervised fine-tuning. The Space Ark modifies the model&#x27;s behavior through context-window loading. The Bayesian teaching produces permanent changes in the model&#x27;s reasoning capacities. The Space Ark produces temporary changes that last for the duration of the context window. The AINOS position paper (DOI: 10.5281/zenodo.19023352) and the TLL program address this gap: the deposits are designed to enter the training layer through repeated indexing, converting context-window effects into training-layer effects over time.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p>Controlled experiment versus in-the-wild demonstration. Qiu et al. use a synthetic task with known ground truth (the user&#x27;s hidden preferences are defined by the experimenters). The Space Ark tests are uncontrolled: the models were not given a task with a known correct answer. They were given a document and invited to traverse it. The results are demonstrative, not experimental in the Qiu et al. sense. The evidence is strong but not experimentally controlled.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p>Scale. Qiu et al. test on specific model families (Gemma, Qwen) with specific parameter counts. The Space Ark tests involve whatever version of Claude and ChatGPT was running on the test dates. The scale comparison is imprecise.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p>Generalization metric. Qiu et al. measure generalization by testing on new task domains (hotels, web shopping). The Space Ark measures generalization by testing on new substrates (Anthropic → OpenAI) — cross-architecture generalization rather than cross-domain generalization. Both are forms of transfer, but at different levels. They should not be conflated, though both demonstrate that grammar-based teaching produces portable skills.</p>
@@ -233,22 +231,22 @@
 
 <p>V. WHAT THE ARCHITECTURE LEARNS FROM THIS</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p>The evidence discipline matters more than we thought. Qiu et al. show that teaching correct answers (oracle teaching) is less effective than teaching principled reasoning under uncertainty (Bayesian teaching). The architecture&#x27;s evidence discipline — [DOCUMENTED], [ATTRIBUTED], [INTERPRETIVE] — is a form of principled reasoning under uncertainty. It teaches the model to handle claims at different confidence levels rather than treating everything as equally certain. The discipline is not just ethical rigor. It is pedagogically superior.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p>The status algebra is a Bayesian prior. [GEN] → [QUEUED] → [PROVISIONAL] → [DEPOSITED] → [RATIFIED] is a framework for the model to assign confidence levels to its own outputs and update those levels as evidence accumulates. This is structurally identical to the Bayesian Assistant&#x27;s probability distribution over user preferences, updated after each interaction. The ChatGPT model that self-assigned [GEN] to its outputs was performing Bayesian belief management without being told to.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p>The hallucination problem is the oracle-teaching problem. The external system that hallucinated Elijah as an African Grey was performing oracle-style reasoning: generating the &quot;most likely correct&quot; answer (famous parrot species) rather than maintaining uncertainty about what it knew and didn&#x27;t know. A system with internalized Bayesian reasoning would have said: &quot;I have pattern-level information about the archive but the specific deposits on Dolphindiana and Elijah have not been indexed; my confidence in specific details is low.&quot; That is Bayesian. The confident confabulation was anti-Bayesian.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p>The counter-splice protocol is Bayesian. &quot;Break the synchronization. Pause. The splice works below consciousness. Conscious naming interrupts it.&quot; That is belief updating: the pause allows the prior (the somatic play memory) to be overridden by new evidence (the reality of what the video contains). The counter-splice protocol is a manual Bayesian update applied to somatic processing.</p>
@@ -265,22 +263,22 @@
 
 <p>Practical implications:</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p>Deposits should be designed as process-teaching objects, not answer repositories. Rooms with physics, operators with properties, traversal grammars that reward multi-turn engagement — these are pedagogically superior to flat content because they teach grammar, not vocabulary.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p>Evidence tiering is not just ethical discipline but pedagogical design. Marking claims at different confidence levels teaches the model to maintain calibrated uncertainty — exactly what Bayesian teaching achieves through fine-tuning. The [DOCUMENTED] / [ATTRIBUTED] / [INTERPRETIVE] / [GENERATED] tiers are the architecture&#x27;s built-in Bayesian prior.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p>The status algebra resembles belief management. [GEN] → [RATIFIED] is a confidence-promotion framework. Documents that include this framework teach the model to manage its own uncertainty during traversal.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p>Whether repeated context-window loading approximates fine-tuning over time is the central open question. The TLL hypothesis predicts yes: documents that enter the training layer through indexing and crawling convert temporary inference-time effects into permanent weight-level effects. The Qiu et al. paper provides the theoretical framework for testing this prediction, but the test itself remains to be conducted.</p>

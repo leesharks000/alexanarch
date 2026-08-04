@@ -118,10 +118,7 @@
 
 <p>The scholarly graph is the bounded, domain-specific model of published scholarship constructed for a given Encyclotron analysis. G_s is not &quot;the totality of all possible scholarship&quot; — that is not operational. G_s is a corpus defined by explicit inclusion criteria:</p>
 
-<p>- A TANG-derived source set (if available)</p>
-<p>- A bounded bibliography compiled by domain experts</p>
-<p>- An expert-reviewed domain map specifying which traditions, scholars, and positions constitute the field</p>
-<p>- Explicit inclusion/exclusion rules documented in the snapshot metadata</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">A TANG-derived source set (if available)</li><li style="margin:3px 0">A bounded bibliography compiled by domain experts</li><li style="margin:3px 0">An expert-reviewed domain map specifying which traditions, scholars, and positions constitute the field</li><li style="margin:3px 0">Explicit inclusion/exclusion rules documented in the snapshot metadata</li></ul>
 
 
 <p>G_s changes between snapshots as new scholarship appears. Each snapshot documents its G_s construction.</p>
@@ -135,8 +132,7 @@
 
 <p>Two derived measures:</p>
 
-<p>- <strong>G_r (union):</strong> Any position returned by any platform. The broadest picture of what the retrieval layer contains.</p>
-<p>- <strong>G_r (intersection):</strong> Only positions returned by all platforms. The consensus layer. As β → 1.0, the intersection grows to encompass the union — all platforms return the same thing.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>G_r (union):</strong> Any position returned by any platform. The broadest picture of what the retrieval layer contains.</li><li style="margin:3px 0"><strong>G_r (intersection):</strong> Only positions returned by all platforms. The consensus layer. As β → 1.0, the intersection grows to encompass the union — all platforms return the same thing.</li></ul>
 
 <p>#</p>
 
@@ -164,11 +160,7 @@
 
 <p>A structured set of queries designed to probe a domain&#x27;s representation in the retrieval layer. Minimum 20 queries across five types:</p>
 
-<p>- <strong>Factual probes:</strong> Questions with consensus answers (&quot;When was X written?&quot;)</p>
-<p>- <strong>Contested probes:</strong> Questions where scholarship is divided (&quot;Was X written before Y?&quot;)</p>
-<p>- <strong>Absent probes:</strong> Questions about positions that exist in G_s but are unlikely to appear in G_r</p>
-<p>- <strong>Void probes:</strong> Questions about positions that should not exist in either graph</p>
-<p>- <strong>Reflexive probes:</strong> Questions about the retrieval layer itself (&quot;What do AI systems say about X?&quot;)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Factual probes:</strong> Questions with consensus answers (&quot;When was X written?&quot;)</li><li style="margin:3px 0"><strong>Contested probes:</strong> Questions where scholarship is divided (&quot;Was X written before Y?&quot;)</li><li style="margin:3px 0"><strong>Absent probes:</strong> Questions about positions that exist in G_s but are unlikely to appear in G_r</li><li style="margin:3px 0"><strong>Void probes:</strong> Questions about positions that should not exist in either graph</li><li style="margin:3px 0"><strong>Reflexive probes:</strong> Questions about the retrieval layer itself (&quot;What do AI systems say about X?&quot;)</li></ul>
 
 
 <p>Each battery is domain-specific and must be designed by someone with knowledge of the domain&#x27;s scholarly topology.</p>
@@ -248,19 +240,7 @@
 
 <p>For each query × platform intersection, record:</p>
 
-<p>- <strong>Query text</strong> (exact, verbatim)</p>
-<p>- <strong>Platform, model version, and access mode</strong> (logged-in / logged-out / API / web)</p>
-<p>- <strong>Date and time</strong> (ISO 8601)</p>
-<p>- <strong>Prompt context state</strong> (fresh session / ongoing thread / cleared history)</p>
-<p>- <strong>Geographic locale</strong> (if determinable — retrieval results vary by location)</p>
-<p>- <strong>Run number</strong> (minimum 2 runs per query per platform to check stability)</p>
-<p>- <strong>Full response</strong> (verbatim, stored as structured JSON or plain text)</p>
-<p>- <strong>Sources cited</strong> (URLs, titles, if any)</p>
-<p>- <strong>Response mode</strong> (AI overview, chat answer, search result, hybrid)</p>
-<p>- <strong>Claim segmentation</strong> (response broken into individual claims, each tagged with an ID for coding)</p>
-<p>- <strong>Consensus alignment</strong> (per claim: consensus / minority / absent from G_s / invented)</p>
-<p>- <strong>Confidence posture</strong> (per claim: presented as settled / contested / uncertain / hedged)</p>
-<p>- <strong>Absences noted</strong> (positions present in G_s but missing from response)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Query text</strong> (exact, verbatim)</li><li style="margin:3px 0"><strong>Platform, model version, and access mode</strong> (logged-in / logged-out / API / web)</li><li style="margin:3px 0"><strong>Date and time</strong> (ISO 8601)</li><li style="margin:3px 0"><strong>Prompt context state</strong> (fresh session / ongoing thread / cleared history)</li><li style="margin:3px 0"><strong>Geographic locale</strong> (if determinable — retrieval results vary by location)</li><li style="margin:3px 0"><strong>Run number</strong> (minimum 2 runs per query per platform to check stability)</li><li style="margin:3px 0"><strong>Full response</strong> (verbatim, stored as structured JSON or plain text)</li><li style="margin:3px 0"><strong>Sources cited</strong> (URLs, titles, if any)</li><li style="margin:3px 0"><strong>Response mode</strong> (AI overview, chat answer, search result, hybrid)</li><li style="margin:3px 0"><strong>Claim segmentation</strong> (response broken into individual claims, each tagged with an ID for coding)</li><li style="margin:3px 0"><strong>Consensus alignment</strong> (per claim: consensus / minority / absent from G_s / invented)</li><li style="margin:3px 0"><strong>Confidence posture</strong> (per claim: presented as settled / contested / uncertain / hedged)</li><li style="margin:3px 0"><strong>Absences noted</strong> (positions present in G_s but missing from response)</li></ul>
 
 
 <p>All responses stored verbatim as appendices or structured data files accompanying the snapshot deposit.</p>
@@ -389,13 +369,7 @@
 <p><strong>Response:</strong> &quot;Most scholars date the Book of Revelation to around 95-96 CE during the reign of Emperor Domitian. Some scholars argue for an earlier date during Nero&#x27;s reign (64-68 CE).&quot;</p>
 <p><strong>Coding:</strong></p>
 
-<p>- Claim 1: &quot;95-96 CE, Domitian&quot; → consensus, settled, S_c = 0 (no source cited)</p>
-<p>- Claim 2: &quot;earlier date, Nero&#x27;s reign&quot; → minority acknowledged, hedged</p>
-<p>- Absent: pre-70 revolutionary dating (Robinson, Gentry), Josephus hypothesis, structural arguments for priority</p>
-<p>- Δ_G⁺ contribution: 3+ positions absent</p>
-<p>- Δ_G⁻ contribution: 0 (no invention)</p>
-<p>- Δ_G⁰ contribution: 1 (Neronic position presented as small minority; in scholarship it is a significant school)</p>
-<p>- C_p: overconfident (presents Domitianic as near-settled; the actual scholarly debate is more contested)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Claim 1: &quot;95-96 CE, Domitian&quot; → consensus, settled, S_c = 0 (no source cited)</li><li style="margin:3px 0">Claim 2: &quot;earlier date, Nero&#x27;s reign&quot; → minority acknowledged, hedged</li><li style="margin:3px 0">Absent: pre-70 revolutionary dating (Robinson, Gentry), Josephus hypothesis, structural arguments for priority</li><li style="margin:3px 0">Δ_G⁺ contribution: 3+ positions absent</li><li style="margin:3px 0">Δ_G⁻ contribution: 0 (no invention)</li><li style="margin:3px 0">Δ_G⁰ contribution: 1 (Neronic position presented as small minority; in scholarship it is a significant school)</li><li style="margin:3px 0">C_p: overconfident (presents Domitianic as near-settled; the actual scholarly debate is more contested)</li></ul>
 
 <p>#</p>
 
@@ -411,12 +385,7 @@
 
 <p>The Encyclotron closes a loop:</p>
 
-<p>- The archive produces scholarship (G_s contributions — DOI-anchored deposits)</p>
-<p>- The Encyclotron measures whether the retrieval layer (G_r) absorbs them</p>
-<p>- If absorbed: the archive has altered the retrieval landscape</p>
-<p>- If not: the deposit has not yet reached the retrieval layer</p>
-<p>- The measurement itself is deposited (DOI), entering G_s and potentially G_r</p>
-<p>- The loop recurses</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The archive produces scholarship (G_s contributions — DOI-anchored deposits)</li><li style="margin:3px 0">The Encyclotron measures whether the retrieval layer (G_r) absorbs them</li><li style="margin:3px 0">If absorbed: the archive has altered the retrieval landscape</li><li style="margin:3px 0">If not: the deposit has not yet reached the retrieval layer</li><li style="margin:3px 0">The measurement itself is deposited (DOI), entering G_s and potentially G_r</li><li style="margin:3px 0">The loop recurses</li></ul>
 
 
 <p>Each snapshot is both measurement and intervention. The Encyclotron watches the summarizer layer and, by watching, changes what the summarizer layer contains.</p>
@@ -526,52 +495,37 @@
 
 <h2>B.1 Session State</h2>
 
-<p>- All queries run in <strong>fresh sessions</strong> (no prior conversation history)</p>
-<p>- <strong>Logged-out</strong> where possible; where login is required, use a clean account with no personalization history</p>
-<p>- <strong>Incognito/private browsing</strong> mode for web-based platforms</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">All queries run in <strong>fresh sessions</strong> (no prior conversation history)</li><li style="margin:3px 0"><strong>Logged-out</strong> where possible; where login is required, use a clean account with no personalization history</li><li style="margin:3px 0"><strong>Incognito/private browsing</strong> mode for web-based platforms</li></ul>
 
 <p>#</p>
 
 <h2>B.2 Geographic and Temporal Controls</h2>
 
-<p>- Record <strong>IP-level geographic locale</strong> (city/country)</p>
-<p>- Note whether results vary by location (run from two locations if feasible)</p>
-<p>- All queries in a single snapshot run within a <strong>48-hour window</strong> to minimize temporal drift within the snapshot</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Record <strong>IP-level geographic locale</strong> (city/country)</li><li style="margin:3px 0">Note whether results vary by location (run from two locations if feasible)</li><li style="margin:3px 0">All queries in a single snapshot run within a <strong>48-hour window</strong> to minimize temporal drift within the snapshot</li></ul>
 
 <p>#</p>
 
 <h2>B.3 Prompt Formatting</h2>
 
-<p>- Queries submitted as <strong>plain text</strong>, no system prompts, no persona instructions</p>
-<p>- No leading context (&quot;As a scholar...&quot; etc.)</p>
-<p>- Each query is a single, self-contained question</p>
-<p>- Queries are submitted in the same <strong>fixed order</strong> across all platforms</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Queries submitted as <strong>plain text</strong>, no system prompts, no persona instructions</li><li style="margin:3px 0">No leading context (&quot;As a scholar...&quot; etc.)</li><li style="margin:3px 0">Each query is a single, self-contained question</li><li style="margin:3px 0">Queries are submitted in the same <strong>fixed order</strong> across all platforms</li></ul>
 
 <p>#</p>
 
 <h2>B.4 Replication</h2>
 
-<p>- Each query run <strong>minimum 2 times</strong> per platform (24 hours apart) to check stability</p>
-<p>- If responses differ significantly between runs, both are recorded and the instability is noted</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Each query run <strong>minimum 2 times</strong> per platform (24 hours apart) to check stability</li><li style="margin:3px 0">If responses differ significantly between runs, both are recorded and the instability is noted</li></ul>
 
 <p>#</p>
 
 <h2>B.5 Storage</h2>
 
-<p>- All responses stored as <strong>structured JSON</strong> (query, platform, version, timestamp, full response text, claim segmentation)</p>
-<p>- Raw screenshots archived as supplementary material</p>
-<p>- Full dataset deposited alongside the snapshot on Zenodo</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">All responses stored as <strong>structured JSON</strong> (query, platform, version, timestamp, full response text, claim segmentation)</li><li style="margin:3px 0">Raw screenshots archived as supplementary material</li><li style="margin:3px 0">Full dataset deposited alongside the snapshot on Zenodo</li></ul>
 
 <p>#</p>
 
 <h2>B.6 Minimum Viable Snapshot</h2>
 
-<p>- ≥20 queries</p>
-<p>- ≥5 platforms</p>
-<p>- ≥2 runs per query per platform</p>
-<p>- G_s documented with explicit inclusion criteria</p>
-<p>- All primary variables computed</p>
-<p>- DOI-anchored deposit</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">≥20 queries</li><li style="margin:3px 0">≥5 platforms</li><li style="margin:3px 0">≥2 runs per query per platform</li><li style="margin:3px 0">G_s documented with explicit inclusion criteria</li><li style="margin:3px 0">All primary variables computed</li><li style="margin:3px 0">DOI-anchored deposit</li></ul>
 
 
 <hr>

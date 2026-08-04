@@ -154,8 +154,7 @@ address := (canonical_query, [variant, ...], target_surface_class)
 
 <h2>Changelog</h2>
 
-<p>- <strong>v1.1 (2026-07-16)</strong> — Classification refinement: `observed_address` and `unrated` collapsed into one class. Prefix-match normalization for statuses added (specialty variants of `ADOPTION` etc. classify identically to the base form). Positive prefix set widened to include `FAIR_TREATMENT`, `PARTIAL`, `DEMAND SIGNAL`, `MANTLE CONSOLIDATION`, `FUNCTIONAL ADDRESS`. Negative prefix set widened to include `DISSOLUTION`, `CORRECTION`. See §2.1 rationale.</p>
-<p>- <strong>v1.0 (2026-07-16)</strong> — Initial framework publication.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>v1.1 (2026-07-16)</strong> — Classification refinement: `observed_address` and `unrated` collapsed into one class. Prefix-match normalization for statuses added (specialty variants of `ADOPTION` etc. classify identically to the base form). Positive prefix set widened to include `FAIR_TREATMENT`, `PARTIAL`, `DEMAND SIGNAL`, `MANTLE CONSOLIDATION`, `FUNCTIONAL ADDRESS`. Negative prefix set widened to include `DISSOLUTION`, `CORRECTION`. See §2.1 rationale.</li><li style="margin:3px 0"><strong>v1.0 (2026-07-16)</strong> — Initial framework publication.</li></ul>
 
 <h2>Abstract</h2>
 
@@ -197,11 +196,7 @@ address := (canonical_query, [variant, ...], target_surface_class)
 
 <h2>2.1 The three observation classes</h2>
 
-<div style="font-family:var(--mono);font-size:.8em">| Class | Definition |</div>
-<p>|---|---|</p>
-<div style="font-family:var(--mono);font-size:.8em">| `observed_address` | ≥ 1 observation event of any status. The address has been posed to a composition-layer surface and a response has been captured. |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `verified_non_address` | ≥ 1 observation event, and *all* observations carry negative status (§2.2 negative). The address has been posed but never received. |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `subjunctive` | Catalogued from an authoring tributary but no observation event on record. Hypothesized address pending test. |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Class</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Definition</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`observed_address`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">≥ 1 observation event of any status. The address has been posed to a composition-layer surface and a response has been captured.</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`verified_non_address`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">≥ 1 observation event, and *all* observations carry negative status (§2.2 negative). The address has been posed but never received.</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`subjunctive`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Catalogued from an authoring tributary but no observation event on record. Hypothesized address pending test.</td></tr></table></div>
 
 <p><strong>Rationale for collapsing `observed_address` and `unrated` into one class (v1.1):</strong> an observation event is <em>itself</em> the evidence that the address exists at the reception surface. The presence or absence of a rating (positive / negative / no rating yet) is second-order metadata on top of the observation — surfaced via `latest_status` on the address record but not used to define membership in the class. In v1.0 this was tracked as a separate `unrated` class, which fragmented the observed bucket and understated the coverage; v1.1 corrects this. Downstream consumers who want the finer grain can filter observations by `_status_class` (positive / negative / unrated) directly on the observation records.</p>
 
@@ -214,23 +209,10 @@ address := (canonical_query, [variant, ...], target_surface_class)
 <p>Statuses are classified by <strong>prefix match</strong> on the normalized (uppercased, whitespace-stripped) status string, so specialty variants like `ADOPTION (dual-lineage)` or `ADOPTION (mint block + technical embedding)` classify identically to bare `ADOPTION`. The variant is retained on the observation record for downstream fine-grained filtering; only the classification is normalized.</p>
 
 <p><strong>Positive prefixes</strong> (address was received at time of observation):</p>
-<p>- `EXACT_MATCH` / `EXACT MATCH` — the address appears in the AI response as-is</p>
-<p>- `BROAD_MATCH` / `BROAD MATCH` — the address concept is present with variant phrasing</p>
-<p>- `ADOPTION` — the response adopts terminology from the address&#x27;s ontology (covers all `ADOPTION (variant)` forms)</p>
-<p>- `WOUND_GAUGE` / `WOUND GAUGE` — the address is present but only in a compression-signal indicator (see EA-EROSION-01)</p>
-<p>- `FAIR_TREATMENT` / `FAIR TREATMENT` — the address receives editorially-neutral coverage (Revelation First framing)</p>
-<p>- `PARTIAL` — partial reception; component recognized but not the full address</p>
-<p>- `DEMAND SIGNAL` — organic-search reception evidence</p>
-<p>- `MANTLE CONSOLIDATION` — address received as biographical anchor</p>
-<p>- `FUNCTIONAL ADDRESS` — performative retrieval via identity-checksum</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`EXACT_MATCH` / `EXACT MATCH` — the address appears in the AI response as-is</li><li style="margin:3px 0">`BROAD_MATCH` / `BROAD MATCH` — the address concept is present with variant phrasing</li><li style="margin:3px 0">`ADOPTION` — the response adopts terminology from the address&#x27;s ontology (covers all `ADOPTION (variant)` forms)</li><li style="margin:3px 0">`WOUND_GAUGE` / `WOUND GAUGE` — the address is present but only in a compression-signal indicator (see EA-EROSION-01)</li><li style="margin:3px 0">`FAIR_TREATMENT` / `FAIR TREATMENT` — the address receives editorially-neutral coverage (Revelation First framing)</li><li style="margin:3px 0">`PARTIAL` — partial reception; component recognized but not the full address</li><li style="margin:3px 0">`DEMAND SIGNAL` — organic-search reception evidence</li><li style="margin:3px 0">`MANTLE CONSOLIDATION` — address received as biographical anchor</li><li style="margin:3px 0">`FUNCTIONAL ADDRESS` — performative retrieval via identity-checksum</li></ul>
 
 <p><strong>Negative prefixes</strong> (address was posed but not received):</p>
-<p>- `ZERO_RESULT` / `ZERO RESULT` — no response produced</p>
-<p>- `ZERO_INDEX` / `ZERO INDEX` — response produced but does not index the address&#x27;s concept</p>
-<p>- `BASIN_MISS` / `BASIN MISS` — response drifts into an unrelated semantic basin</p>
-<p>- `DISPLACEMENT` — response captured by an adjacent-but-different concept</p>
-<p>- `DISSOLUTION` — the address is dissolved into the composition without attribution</p>
-<p>- `CORRECTION` — the AI corrects the query away from its intended address</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`ZERO_RESULT` / `ZERO RESULT` — no response produced</li><li style="margin:3px 0">`ZERO_INDEX` / `ZERO INDEX` — response produced but does not index the address&#x27;s concept</li><li style="margin:3px 0">`BASIN_MISS` / `BASIN MISS` — response drifts into an unrelated semantic basin</li><li style="margin:3px 0">`DISPLACEMENT` — response captured by an adjacent-but-different concept</li><li style="margin:3px 0">`DISSOLUTION` — the address is dissolved into the composition without attribution</li><li style="margin:3px 0">`CORRECTION` — the AI corrects the query away from its intended address</li></ul>
 
 <p><strong>Unrated</strong> — observations logged without a status assigned. Legitimate; often the case for recent captures pending review. Unrated observations still count toward `observed_address` class membership (§2.1) — the observation event is itself the evidence — but do not push the address toward `verified_non_address` regardless of quantity.</p>
 
@@ -260,21 +242,11 @@ address := (canonical_query, [variant, ...], target_surface_class)
 
 <p><strong>Observation tributaries</strong> — surfaces that log actual capture events with statuses. Contribute to `observed_address`, `verified_non_address`, and `unrated`:</p>
 
-<div style="font-family:var(--mono);font-size:.8em">| ID | Source path | Description |</div>
-<p>|---|---|---|</p>
-<div style="font-family:var(--mono);font-size:.8em">| `mm-main-capture` | `data/EA-WG-CAPTURES-01.json` | AI Overview / AI Mode Capture Registry |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `mm-rf-reception` | `data/trackers/mm-revfirst-registry.json` | Revelation First Reception Registry |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `mm-godkinggoogle` | `data/capture-mirrors/godkinggoogle.json` | Godkinggoogle capture mirror (when distinct) |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `peo-xr-e2` | `data/peo-xr-e2-samples.json` | PID Erosion Observatory cross-registry sampling |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">ID</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Source path</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Description</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`mm-main-capture`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`data/EA-WG-CAPTURES-01.json`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">AI Overview / AI Mode Capture Registry</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`mm-rf-reception`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`data/trackers/mm-revfirst-registry.json`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Revelation First Reception Registry</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`mm-godkinggoogle`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`data/capture-mirrors/godkinggoogle.json`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Godkinggoogle capture mirror (when distinct)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`peo-xr-e2`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`data/peo-xr-e2-samples.json`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">PID Erosion Observatory cross-registry sampling</td></tr></table></div>
 
 <p><strong>Subjunctive tributaries</strong> — surfaces that catalog candidate addresses without observation events. Contribute to `subjunctive`:</p>
 
-<div style="font-family:var(--mono);font-size:.8em">| ID | Source path | Description |</div>
-<p>|---|---|---|</p>
-<div style="font-family:var(--mono);font-size:.8em">| `mm-termindex` | `data/trackers/mm-termindex.json` | Archive term index (1,400 catalogued terms) |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `mm-mint` | `data/trackers/mm-mint.json` | Sémantique Potentielle mint (85 families × canonical + variants + forensic canary = 325 addresses) |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `mm-rf-battery` | `data/trackers/rf-tracker-page.html` | Revelation First 100-query battery (99 unique extracted from HTML) |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `cha-workplan-870` | `data/trackers/cha-workplan-870.json` | Hand-registered concept mints from Alexanarch deposit #870 (Session 3 workplan) |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">ID</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Source path</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Description</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`mm-termindex`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`data/trackers/mm-termindex.json`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Archive term index (1,400 catalogued terms)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`mm-mint`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`data/trackers/mm-mint.json`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Sémantique Potentielle mint (85 families × canonical + variants + forensic canary = 325 addresses)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`mm-rf-battery`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`data/trackers/rf-tracker-page.html`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Revelation First 100-query battery (99 unique extracted from HTML)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`cha-workplan-870`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`data/trackers/cha-workplan-870.json`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Hand-registered concept mints from Alexanarch deposit #870 (Session 3 workplan)</td></tr></table></div>
 
 <p><strong>Attribution tributaries</strong> — external gallery surfaces referenced but not authoritative for observation data. Enumerated in the `galleries[]` field.</p>
 
@@ -299,18 +271,7 @@ address := (canonical_query, [variant, ...], target_surface_class)
 
 <p>Top-level keys:</p>
 
-<p>- `version` — string, this framework version (currently `&quot;1.0&quot;`)</p>
-<p>- `regenerated_at` — ISO 8601 UTC timestamp</p>
-<p>- `regenerator` — path to the reference implementation</p>
-<p>- `input_hashes` — object mapping tributary ID → SHA-256 of source file at regeneration time</p>
-<p>- `sources` — dict of tributary ID → description</p>
-<p>- `observation_classes` — dict of class name → definition</p>
-<p>- `class_counts` — counts by class</p>
-<p>- `type_counts` — counts by inferred address type</p>
-<p>- `total_addresses` — integer, total canonical addresses</p>
-<p>- `total_observations` — integer, sum of observations across all addresses</p>
-<p>- `galleries` — array of external gallery URLs</p>
-<p>- `addresses` — dict of canonical_query_key → address record</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`version` — string, this framework version (currently `&quot;1.0&quot;`)</li><li style="margin:3px 0">`regenerated_at` — ISO 8601 UTC timestamp</li><li style="margin:3px 0">`regenerator` — path to the reference implementation</li><li style="margin:3px 0">`input_hashes` — object mapping tributary ID → SHA-256 of source file at regeneration time</li><li style="margin:3px 0">`sources` — dict of tributary ID → description</li><li style="margin:3px 0">`observation_classes` — dict of class name → definition</li><li style="margin:3px 0">`class_counts` — counts by class</li><li style="margin:3px 0">`type_counts` — counts by inferred address type</li><li style="margin:3px 0">`total_addresses` — integer, total canonical addresses</li><li style="margin:3px 0">`total_observations` — integer, sum of observations across all addresses</li><li style="margin:3px 0">`galleries` — array of external gallery URLs</li><li style="margin:3px 0">`addresses` — dict of canonical_query_key → address record</li></ul>
 
 <p>Per-address record shape:</p>
 
@@ -333,8 +294,7 @@ address := (canonical_query, [variant, ...], target_surface_class)
 <p>SPXI (Semantic Packet for eXchange &amp; Indexing; hex `06.SEI.SPXI.01`–`.12`) is the sister framework. It specifies the metadata packet that travels with a work; Semantic Addresses specifies the surfaces on which that packet&#x27;s contents can be found.</p>
 
 <p>Cross-references:</p>
-<p>- Every SPXI packet SHOULD declare a `spxi:sims` array of the Semantic Addresses at which the packet&#x27;s contents are expected to be findable (see EA-SPXI-01 §7).</p>
-<p>- Every observed Semantic Address MAY reference the SPXI packet(s) whose contents are being received at that address, via `refers_to`.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Every SPXI packet SHOULD declare a `spxi:sims` array of the Semantic Addresses at which the packet&#x27;s contents are expected to be findable (see EA-SPXI-01 §7).</li><li style="margin:3px 0">Every observed Semantic Address MAY reference the SPXI packet(s) whose contents are being received at that address, via `refers_to`.</li></ul>
 
 <p>Bidirectional wiring: the Observatory measures whether packets sent (SPXI) are being received (Semantic Addresses).</p>
 
@@ -345,20 +305,13 @@ address := (canonical_query, [variant, ...], target_surface_class)
 <p><strong>Independent replication.</strong> The tributary-union pattern is not proprietary in its algorithm — a competent implementer catching up can produce their own regenerator. What is claimed and dated here is the specific framework, its formal vocabulary (Semantic Address, observation class, tributary, canonical query, subjunctive/observed/verified-non-address/unrated), and its published reference implementation.</p>
 
 <p><strong>Falsifiability.</strong> The framework fails if:</p>
-<p>- The canonicalization rule §3.1 produces collisions that merge semantically-distinct addresses</p>
-<p>- The four observation classes prove insufficient to describe an observed reception event</p>
-<p>- The union algorithm §5 is not deterministic across runs</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The canonicalization rule §3.1 produces collisions that merge semantically-distinct addresses</li><li style="margin:3px 0">The four observation classes prove insufficient to describe an observed reception event</li><li style="margin:3px 0">The union algorithm §5 is not deterministic across runs</li></ul>
 
 <p>None of these have been observed in the current corpus (n=1,964). Falsifying observations are actively invited.</p>
 
 <h2>9. Cross-references</h2>
 
-<p>- [EA-SPXI-01](./EA-SPXI-01.md) — companion framework, metadata packet</p>
-<p>- [EA-EROSION-01](./EA-EROSION-01.md) — the erosion observatory that measures received/unreceived addresses over time</p>
-<p>- Alexanarch dataset: [`data/semantic-addresses.json`](../data/semantic-addresses.json)</p>
-<p>- Reference implementation: [`scripts/build_semantic_addresses.py`](../scripts/build_semantic_addresses.py)</p>
-<p>- Machine-readable schema: [`data/semantic-addresses.schema.json`](../data/semantic-addresses.schema.json)</p>
-<p>- Live surface: [https://alexanarch.org/addresses/](https://alexanarch.org/addresses/)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">[EA-SPXI-01](./EA-SPXI-01.md) — companion framework, metadata packet</li><li style="margin:3px 0">[EA-EROSION-01](./EA-EROSION-01.md) — the erosion observatory that measures received/unreceived addresses over time</li><li style="margin:3px 0">Alexanarch dataset: [`data/semantic-addresses.json`](../data/semantic-addresses.json)</li><li style="margin:3px 0">Reference implementation: [`scripts/build_semantic_addresses.py`](../scripts/build_semantic_addresses.py)</li><li style="margin:3px 0">Machine-readable schema: [`data/semantic-addresses.schema.json`](../data/semantic-addresses.schema.json)</li><li style="margin:3px 0">Live surface: [https://alexanarch.org/addresses/](https://alexanarch.org/addresses/)</li></ul>
 
 </div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

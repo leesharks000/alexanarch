@@ -85,7 +85,7 @@
 
 <p>This specification uses confidence labels to distinguish documented fact from inference.</p>
 
-<div style="font-family:var(--mono);font-size:.8em">| Label | Meaning | |---|---| | [DOC] | Official Google documentation or first-party public statement. | | [PUB] | Publicly documented adjacent architecture, court record, patent, academic paper, or public technical standard. | | [LEAK] | Claim derived from the 2024 Google API Content Warehouse leak or reputable analyses of it. Field names may be real without proving current deployment, ranking weight, or AI Overview influence. | | [OBS] | Empirical observation from the Crimson Hexagonal Archive or its deposited/captured research record. | | [INF] | Inference from multiple sources and observed behavior. Plausible, useful, but not internally confirmed by Google. | | [SPEC] | Proposed terminology or architecture introduced by this specification. |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Label</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Meaning</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">[DOC]</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Official Google documentation or first-party public statement.</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">[PUB]</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Publicly documented adjacent architecture, court record, patent, academic paper, or public technical standard.</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">[LEAK]</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Claim derived from the 2024 Google API Content Warehouse leak or reputable analyses of it. Field names may be real without proving current deployment, ranking weight, or AI Overview influence.</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">[OBS]</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Empirical observation from the Crimson Hexagonal Archive or its deposited/captured research record.</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">[INF]</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Inference from multiple sources and observed behavior. Plausible, useful, but not internally confirmed by Google.</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">[SPEC]</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Proposed terminology or architecture introduced by this specification.</td></tr></table></div>
 
 <p>The document should be read as an external specification: not “this is exactly how Google works internally,” but “this is the most complete outside-view architecture presently defensible from public documentation, leak-derived signals, and empirical behavior.”</p>
 
@@ -93,7 +93,7 @@
 
 <p>Google calculates identity at multiple layers. These layers can interact, but they solve different problems.</p>
 
-<div style="font-family:var(--mono);font-size:.8em">| Identity object | Question Google must answer | Primary architecture | |---|---|---| | User | Who is searching? | Account, browser, device, activity, ad/personalization graph | | Session | What state is this interaction in? | Interface, account state, cookies, region, experiment bucket, prior query context | | Entity | What does this name/query refer to? | Knowledge Graph, entity reconciliation, KG IDs/MIDs, co-occurrence, structured data | | Source | What is this page/domain/document? | Index, domain signals, publisher identity, author identity, schema, trust signals | | Author | Who is responsible for this text? | Byline, profile pages, structured data, ORCID, reputation/stylometric signals | | Work | What publication, book, paper, or deposit is this? | DOI, ISBN, Open Library, Goodreads, Wikidata, citations, canonical work/edition splits | | Cluster | Which records belong together? | sameAs, identifiers, graph similarity, entity reconciliation | | Composition candidate | Can this source/entity support an AI answer? | Retrieval, ranking, quality, safety, synthesis, citation/source-window selection |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Identity object</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Question Google must answer</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Primary architecture</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">User</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Who is searching?</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Account, browser, device, activity, ad/personalization graph</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Session</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">What state is this interaction in?</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Interface, account state, cookies, region, experiment bucket, prior query context</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Entity</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">What does this name/query refer to?</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Knowledge Graph, entity reconciliation, KG IDs/MIDs, co-occurrence, structured data</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Source</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">What is this page/domain/document?</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Index, domain signals, publisher identity, author identity, schema, trust signals</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Author</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Who is responsible for this text?</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Byline, profile pages, structured data, ORCID, reputation/stylometric signals</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Work</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">What publication, book, paper, or deposit is this?</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">DOI, ISBN, Open Library, Goodreads, Wikidata, citations, canonical work/edition splits</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Cluster</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Which records belong together?</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">sameAs, identifiers, graph similarity, entity reconciliation</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Composition candidate</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Can this source/entity support an AI answer?</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Retrieval, ranking, quality, safety, synthesis, citation/source-window selection</td></tr></table></div>
 
 <p>[SPEC] The injury class documented by the Crimson Hexagonal Archive occurs when these layers diverge:</p>
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> Google Search may retrieve the correct source or entity, while Google’s generative composition layer refuses, downgrades, substitutes, or destabilizes that identity in the answer.</blockquote>
@@ -157,7 +157,8 @@
 
 <p>[DOC] Google Account identity anchors activity across Google services. Google’s Web &amp; App Activity controls allow activity on Google sites and apps to be saved and used for faster searches, recommendations, and personalized experiences. Search personalization can be controlled through Personalize Search and Web &amp; App Activity settings.</p>
 
-<p>Core signed-in signals include:- Google Account- Web &amp; App Activity- Search history- YouTube, Maps, Chrome, Android, and other Google service activity- location and language- ad personalization settings- cross-device signed-in state</p>
+<p>Core signed-in signals include:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Google Account</li><li style="margin:3px 0">Web &amp; App Activity</li><li style="margin:3px 0">Search history</li><li style="margin:3px 0">YouTube, Maps, Chrome, Android, and other Google service activity</li><li style="margin:3px 0">location and language</li><li style="margin:3px 0">ad personalization settings</li><li style="margin:3px 0">cross-device signed-in state</li></ul>
 
 <p>#</p>
 
@@ -165,7 +166,8 @@
 
 <p>[DOC] Google says search results can also be customized while signed out through search-related activity associated with the browser or device. Signed-out search customization can be turned off, but signed-out does not mean state-free.</p>
 
-<p>Signed-out signals may include:- browser/device-scoped cookies- search customization state- local region/language- IP-derived location- browser/device characteristics- session query sequence- server-side experiment bucket</p>
+<p>Signed-out signals may include:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">browser/device-scoped cookies</li><li style="margin:3px 0">search customization state</li><li style="margin:3px 0">local region/language</li><li style="margin:3px 0">IP-derived location</li><li style="margin:3px 0">browser/device characteristics</li><li style="margin:3px 0">session query sequence</li><li style="margin:3px 0">server-side experiment bucket</li></ul>
 
 <p>#</p>
 
@@ -216,7 +218,8 @@
 
 <p>A query is not just a string. It is a string in a state.</p>
 
-<p>The same query can yield different AI outputs depending on:- Search vs AI Overview vs AI Mode- account state- prior query context- interface experiment bucket- rollout stage- location and language- device type- browser and cookie state- query fan-out behavior- model/version state- safety or quality threshold state</p>
+<p>The same query can yield different AI outputs depending on:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Search vs AI Overview vs AI Mode</li><li style="margin:3px 0">account state</li><li style="margin:3px 0">prior query context</li><li style="margin:3px 0">interface experiment bucket</li><li style="margin:3px 0">rollout stage</li><li style="margin:3px 0">location and language</li><li style="margin:3px 0">device type</li><li style="margin:3px 0">browser and cookie state</li><li style="margin:3px 0">query fan-out behavior</li><li style="margin:3px 0">model/version state</li><li style="margin:3px 0">safety or quality threshold state</li></ul>
 
 <p>#</p>
 
@@ -307,7 +310,8 @@
 
 <h2>V.3 Entity signal types</h2>
 
-<p>Entity reconciliation can draw from:- Wikidata QIDs- Wikipedia pages- Knowledge Graph IDs/MIDs- ORCID- DOI creator metadata- ISBN/Open Library/Goodreads/Amazon book metadata- schema.org Person, Organization, Book, CreativeWork, sameAs, mainEntity- official domains- author pages- citations and backlinks- co-occurring entities- query/click behavior- structured and unstructured mentions</p>
+<p>Entity reconciliation can draw from:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Wikidata QIDs</li><li style="margin:3px 0">Wikipedia pages</li><li style="margin:3px 0">Knowledge Graph IDs/MIDs</li><li style="margin:3px 0">ORCID</li><li style="margin:3px 0">DOI creator metadata</li><li style="margin:3px 0">ISBN/Open Library/Goodreads/Amazon book metadata</li><li style="margin:3px 0">schema.org Person, Organization, Book, CreativeWork, sameAs, mainEntity</li><li style="margin:3px 0">official domains</li><li style="margin:3px 0">author pages</li><li style="margin:3px 0">citations and backlinks</li><li style="margin:3px 0">co-occurring entities</li><li style="margin:3px 0">query/click behavior</li><li style="margin:3px 0">structured and unstructured mentions</li></ul>
 
 <p>#</p>
 
@@ -348,7 +352,7 @@
 
 <p>Google may evaluate a source through:</p>
 
-<div style="font-family:var(--mono);font-size:.8em">| Layer | Signals | |---|---| | Domain | age, authority, topical focus, security, spam/quality history | | Page | canonical URL, freshness, markup, passage structure, extractability | | Author | byline, profile, schema, ORCID, author page, reputation signals | | Publisher | Organization schema, official site, brand/entity recognition | | Work | DOI, ISBN, title, date, edition, citation relations | | Provenance | source owner, corroborating domains, sameAs chains, relation to other records | | Passage | whether text can support a claim in a generated answer | | Safety/Quality | trust, spam, policy, YMYL, sensitive-topic classifiers |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Layer</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Signals</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Domain</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">age, authority, topical focus, security, spam/quality history</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Page</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">canonical URL, freshness, markup, passage structure, extractability</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Author</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">byline, profile, schema, ORCID, author page, reputation signals</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Publisher</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Organization schema, official site, brand/entity recognition</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Work</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">DOI, ISBN, title, date, edition, citation relations</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Provenance</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">source owner, corroborating domains, sameAs chains, relation to other records</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Passage</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">whether text can support a claim in a generated answer</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Safety/Quality</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">trust, spam, policy, YMYL, sensitive-topic classifiers</td></tr></table></div>
 
 <p>#</p>
 
@@ -423,7 +427,8 @@
 
 <p>[SPEC] Composition admission is the core identity threshold for generative search.</p>
 
-<p>A source/entity/work becomes compositionally real when it is admitted into:- the answer text;- the source window;- linkified claim support;- the generated framing of the query.</p>
+<p>A source/entity/work becomes compositionally real when it is admitted into:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">the answer text;</li><li style="margin:3px 0">the source window;</li><li style="margin:3px 0">linkified claim support;</li><li style="margin:3px 0">the generated framing of the query.</li></ul>
 
 <p>An entity can be known but not admitted. A source can be top-ranked organically but not admitted. A work can be exact-title retrievable but not admitted.</p>
 
@@ -431,7 +436,8 @@
 
 <h2>VII.4 Composition-layer harms</h2>
 
-<p>Composition-layer identity failures include:- false default referent- omitted correct entity- wrong source support- provenance erasure- title substitution- authorship erasure- heteronym collapse- temporally unstable correction without acknowledgment</p>
+<p>Composition-layer identity failures include:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">false default referent</li><li style="margin:3px 0">omitted correct entity</li><li style="margin:3px 0">wrong source support</li><li style="margin:3px 0">provenance erasure</li><li style="margin:3px 0">title substitution</li><li style="margin:3px 0">authorship erasure</li><li style="margin:3px 0">heteronym collapse</li><li style="margin:3px 0">temporally unstable correction without acknowledgment</li></ul>
 
 <h2>VIII. The Signal Layer</h2>
 
@@ -441,19 +447,22 @@
 
 <h2>VIII.1 Officially documented signal families</h2>
 
-<p>[DOC] Public docs confirm broad categories:- Search personalization- structured data understanding- entity disambiguation support- AI feature eligibility from indexed pages- query fan-out for AI features- search activity controls</p>
+<p>[DOC] Public docs confirm broad categories:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Search personalization</li><li style="margin:3px 0">structured data understanding</li><li style="margin:3px 0">entity disambiguation support</li><li style="margin:3px 0">AI feature eligibility from indexed pages</li><li style="margin:3px 0">query fan-out for AI features</li><li style="margin:3px 0">search activity controls</li></ul>
 
 <p>#</p>
 
 <h2>VIII.2 Leak-derived signal families</h2>
 
-<p>[LEAK] The 2024 Content Warehouse leak exposed large numbers of internal field names and modules. Public analyses report fields related to:- site authority / quality- author identity- official page designation- site embeddings / topicality- click signals- content effort / originality- spam and demotion features- navigation/brand features- entity annotations</p>
+<p>[LEAK] The 2024 Content Warehouse leak exposed large numbers of internal field names and modules. Public analyses report fields related to:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">site authority / quality</li><li style="margin:3px 0">author identity</li><li style="margin:3px 0">official page designation</li><li style="margin:3px 0">site embeddings / topicality</li><li style="margin:3px 0">click signals</li><li style="margin:3px 0">content effort / originality</li><li style="margin:3px 0">spam and demotion features</li><li style="margin:3px 0">navigation/brand features</li><li style="margin:3px 0">entity annotations</li></ul>
 
 <p>#</p>
 
 <h2>VIII.3 Caution on leak-derived claims</h2>
 
-<p>A field name does not prove:- active use in current Search;- active use in AI Overview;- ranking weight;- direct causal influence;- current deployment;- interpretation from the field name alone.</p>
+<p>A field name does not prove:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">active use in current Search;</li><li style="margin:3px 0">active use in AI Overview;</li><li style="margin:3px 0">ranking weight;</li><li style="margin:3px 0">direct causal influence;</li><li style="margin:3px 0">current deployment;</li><li style="margin:3px 0">interpretation from the field name alone.</li></ul>
 
 <p>Therefore leak-derived fields should be used as architecture clues, not as settled mechanisms.</p>
 
@@ -573,7 +582,8 @@
 
 <h2>X.4 Entity sufficiency escalation</h2>
 
-<p>The Lee Sharks entity now has:- Wikidata item- ORCID- published books- Open Library / Goodreads / ISBN records- Zenodo DOI corpus- canonical domains- Semantic Economy Institute / Crimson Hexagonal Archive surfaces- Liquidation Studies research program- associated concept/work nodes- external editor uptake on Wikidata edition modeling</p>
+<p>The Lee Sharks entity now has:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Wikidata item</li><li style="margin:3px 0">ORCID</li><li style="margin:3px 0">published books</li><li style="margin:3px 0">Open Library / Goodreads / ISBN records</li><li style="margin:3px 0">Zenodo DOI corpus</li><li style="margin:3px 0">canonical domains</li><li style="margin:3px 0">Semantic Economy Institute / Crimson Hexagonal Archive surfaces</li><li style="margin:3px 0">Liquidation Studies research program</li><li style="margin:3px 0">associated concept/work nodes</li><li style="margin:3px 0">external editor uptake on Wikidata edition modeling</li></ul>
 
 <p>[SPEC] If composition instability persists after this level of public entity infrastructure, the “insufficient entity evidence” explanation becomes less plausible. The problem shifts toward composition admission, provenance discounting, entity non-defaultability, or source-cluster suppression.</p>
 
@@ -591,13 +601,13 @@
 
 <h2>XI.1 Secret Name concepts</h2>
 
-<div style="font-family:var(--mono);font-size:.8em">| CHA term | Meaning | |---|---| | Name as routing instruction | A name routes a reader/model/system to a position, body of work, authority chain, and interpretation regime. | | Named position | The operational identity through which a corpus speaks. | | Pearl | A compression-surviving named position formed under pressure; a durable identity cluster. | | Armature | The identity-routing infrastructure that lets names, works, and positions maintain form. | | Fold | Co-presence of orthonym, heteronym, author, operator, and archive without collapse. | | ∮ = 1 | Closed provenance loop; the work returns to its accountable source. | | Triple attribution | Attributed author, operative author, and archival/institutional authority can be distinct but linked. | | Manifestation relation | A work/surface/persona can manifest a deeper named position without being identical to it. |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">CHA term</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Meaning</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Name as routing instruction</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">A name routes a reader/model/system to a position, body of work, authority chain, and interpretation regime.</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Named position</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">The operational identity through which a corpus speaks.</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Pearl</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">A compression-surviving named position formed under pressure; a durable identity cluster.</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Armature</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">The identity-routing infrastructure that lets names, works, and positions maintain form.</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Fold</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Co-presence of orthonym, heteronym, author, operator, and archive without collapse.</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">∮ = 1</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Closed provenance loop; the work returns to its accountable source.</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Triple attribution</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Attributed author, operative author, and archival/institutional authority can be distinct but linked.</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Manifestation relation</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">A work/surface/persona can manifest a deeper named position without being identical to it.</td></tr></table></div>
 
 <p>#</p>
 
 <h2>XI.2 Comparative architecture</h2>
 
-<div style="font-family:var(--mono);font-size:.8em">| Google identity architecture | Secret Name Armature | |---|---| | Name → string → candidate clusters → admission thresholds | Name → routing instruction → named position → Armature → Pearl | | Opaque reconciliation | Explicit provenance relations | | Hidden source evaluation | Signed, dated, revisable judgment | | sameAs collapse risk | Fold without collapse | | Default referent capture | Named-position accountability | | Composition admission | Compression survival | | Anonymous platform judgment | Named witness-bearing | | Source erasure | Closed provenance loop |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Google identity architecture</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Secret Name Armature</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Name → string → candidate clusters → admission thresholds</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Name → routing instruction → named position → Armature → Pearl</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Opaque reconciliation</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Explicit provenance relations</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Hidden source evaluation</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Signed, dated, revisable judgment</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">sameAs collapse risk</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Fold without collapse</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Default referent capture</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Named-position accountability</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Composition admission</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Compression survival</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Anonymous platform judgment</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Named witness-bearing</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Source erasure</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Closed provenance loop</td></tr></table></div>
 
 <p>#</p>
 
@@ -663,7 +673,7 @@
 
 <h2>XII.2 State matrix</h2>
 
-<div style="font-family:var(--mono);font-size:.8em">| State | Purpose | |---|---| | signed-in primary account | personalized injury surface | | signed-in alternate account | account separation | | signed-out normal browser | browser/device state | | incognito | local browser-state reset | | fresh browser profile | cleaner browser identity | | Firefox/Safari | non-Chrome comparison | | mobile cellular | network/IP difference | | VPN region | geo difference | | Web &amp; App Activity off | reduced account personalization | | Personalize Search/Search customization off | reduced personalization | | Bing / Perplexity controls | cross-platform comparison |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">State</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Purpose</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">signed-in primary account</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">personalized injury surface</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">signed-in alternate account</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">account separation</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">signed-out normal browser</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">browser/device state</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">incognito</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">local browser-state reset</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">fresh browser profile</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">cleaner browser identity</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Firefox/Safari</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">non-Chrome comparison</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">mobile cellular</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">network/IP difference</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">VPN region</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">geo difference</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Web &amp; App Activity off</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">reduced account personalization</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Personalize Search/Search customization off</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">reduced personalization</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Bing / Perplexity controls</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">cross-platform comparison</td></tr></table></div>
 
 <p>#</p>
 
@@ -703,7 +713,8 @@
 
 <h2>XII.4 Measurement outputs</h2>
 
-<p>For each query/state pair, record:- primary resolved entity- correct entity organic rank- correct entity AI answer presence- correct entity source-window presence- competing entity presence- CDI- PER- entity state classification- state volatility across time</p>
+<p>For each query/state pair, record:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">primary resolved entity</li><li style="margin:3px 0">correct entity organic rank</li><li style="margin:3px 0">correct entity AI answer presence</li><li style="margin:3px 0">correct entity source-window presence</li><li style="margin:3px 0">competing entity presence</li><li style="margin:3px 0">CDI</li><li style="margin:3px 0">PER</li><li style="margin:3px 0">entity state classification</li><li style="margin:3px 0">state volatility across time</li></ul>
 
 <p>#</p>
 
@@ -725,7 +736,8 @@
 
 <p>Use schema.org ProfilePage with mainEntity as Person.</p>
 
-<p>Recommended fields:- name: Lee Sharks- alternateName: carefully chosen variants only- url: canonical profile URL- sameAs: ORCID, Wikidata, Open Library, Goodreads, Zenodo, official profiles- hasOccupation: author, researcher, educator- affiliation: Semantic Economy Institute / Crimson Hexagonal Archive, if accurate- knowsAbout: Semantic Economy, AI search, provenance, retrieval architecture, Liquidation Studies- subjectOf: major works and profile pages- author / creator relations where applicable</p>
+<p>Recommended fields:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">name: Lee Sharks</li><li style="margin:3px 0">alternateName: carefully chosen variants only</li><li style="margin:3px 0">url: canonical profile URL</li><li style="margin:3px 0">sameAs: ORCID, Wikidata, Open Library, Goodreads, Zenodo, official profiles</li><li style="margin:3px 0">hasOccupation: author, researcher, educator</li><li style="margin:3px 0">affiliation: Semantic Economy Institute / Crimson Hexagonal Archive, if accurate</li><li style="margin:3px 0">knowsAbout: Semantic Economy, AI search, provenance, retrieval architecture, Liquidation Studies</li><li style="margin:3px 0">subjectOf: major works and profile pages</li><li style="margin:3px 0">author / creator relations where applicable</li></ul>
 
 <p>#</p>
 
@@ -735,7 +747,8 @@
 
 <p>Use schema.org Book, CreativeWork, or ScholarlyArticle as appropriate.</p>
 
-<p>Recommended fields:- title- author- datePublished- DOI / ISBN- publisher- sameAs: Wikidata, Zenodo, Open Library, Goodreads, Amazon, etc.- isPartOf: archive/program/series where accurate- about / keywords- citation relations</p>
+<p>Recommended fields:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">title</li><li style="margin:3px 0">author</li><li style="margin:3px 0">datePublished</li><li style="margin:3px 0">DOI / ISBN</li><li style="margin:3px 0">publisher</li><li style="margin:3px 0">sameAs: Wikidata, Zenodo, Open Library, Goodreads, Amazon, etc.</li><li style="margin:3px 0">isPartOf: archive/program/series where accurate</li><li style="margin:3px 0">about / keywords</li><li style="margin:3px 0">citation relations</li></ul>
 
 <p>#</p>
 
@@ -745,7 +758,8 @@
 
 <p>Use schema.org Organization or Project/CreativeWork where appropriate.</p>
 
-<p>Recommended fields:- name- description- url- founder/creator- sameAs- publishingPrinciples- knowsAbout- hasPart- subjectOf</p>
+<p>Recommended fields:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">name</li><li style="margin:3px 0">description</li><li style="margin:3px 0">url</li><li style="margin:3px 0">founder/creator</li><li style="margin:3px 0">sameAs</li><li style="margin:3px 0">publishingPrinciples</li><li style="margin:3px 0">knowsAbout</li><li style="margin:3px 0">hasPart</li><li style="margin:3px 0">subjectOf</li></ul>
 
 <p>#</p>
 
@@ -755,13 +769,15 @@
 
 <p>Maintain distinct named-position signals while openly modeling relation to the archive.</p>
 
-<p>Important constraints:- Do not collapse all heteronyms into Lee’s ORCID unless intentional.- Use source DOI/provenance pages to explain relation.- Use affiliation/creator/curator relations rather than false identity equivalence.- Preserve the fold.</p>
+<p>Important constraints:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Do not collapse all heteronyms into Lee’s ORCID unless intentional.</li><li style="margin:3px 0">Use source DOI/provenance pages to explain relation.</li><li style="margin:3px 0">Use affiliation/creator/curator relations rather than false identity equivalence.</li><li style="margin:3px 0">Preserve the fold.</li></ul>
 
 <h2>XIV. What Not to Claim</h2>
 
 <p>For credibility, the specification should explicitly avoid unsupported overclaiming.</p>
 
-<p>Do not claim:- exact Google internal weights;- exact Knowledge Graph confidence thresholds;- that any leaked field directly controls AI Overview;- that Search Console ownership is a known composition signal;- that Incognito is deterministically linked to a named account in every case;- that Google employees personally targeted Lee Sharks;- that a visible improvement proves manual intervention;- that structured data guarantees composition;- that entity inscription forces AI presentation.</p>
+<p>Do not claim:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">exact Google internal weights;</li><li style="margin:3px 0">exact Knowledge Graph confidence thresholds;</li><li style="margin:3px 0">that any leaked field directly controls AI Overview;</li><li style="margin:3px 0">that Search Console ownership is a known composition signal;</li><li style="margin:3px 0">that Incognito is deterministically linked to a named account in every case;</li><li style="margin:3px 0">that Google employees personally targeted Lee Sharks;</li><li style="margin:3px 0">that a visible improvement proves manual intervention;</li><li style="margin:3px 0">that structured data guarantees composition;</li><li style="margin:3px 0">that entity inscription forces AI presentation.</li></ul>
 
 <p>Instead:</p>
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> The architecture supports the inference that identity and source admission are calculated through layered reconciliation systems. The observed public behavior is consistent with composition-layer identity suppression, non-defaultability, or provenance-cluster discounting. The internal mechanism remains unknown without discovery, leaks, or direct internal access.</blockquote>
@@ -771,11 +787,12 @@
 
 <h2>XV.1 For Liquidation Studies</h2>
 
-<p>This specification supplies the identity architecture beneath:- The Single-Owner Discount- The Evaluator Exists- The Excluded Entity- The Sorting Function- Empirical Phenomenology- God King Google</p>
+<p>This specification supplies the identity architecture beneath:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The Single-Owner Discount</li><li style="margin:3px 0">The Evaluator Exists</li><li style="margin:3px 0">The Excluded Entity</li><li style="margin:3px 0">The Sorting Function</li><li style="margin:3px 0">Empirical Phenomenology</li><li style="margin:3px 0">God King Google</li></ul>
 
 <p>The stack is now:</p>
 
-<div style="font-family:var(--mono);font-size:.8em">| Work | Function | |---|---| | Empirical Phenomenology | Why opaque systems can be studied through action | | Google Identity Architecture | How identity/source/admission can be modeled from outside | | The Excluded Entity | Case study and instrument definition | | The Single-Owner Discount | Mechanism inside source/provenance identity | | The Sorting Function | Limits of mediation and reform | | God King Google | Public map / pressure surface |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Work</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Function</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Empirical Phenomenology</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Why opaque systems can be studied through action</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Google Identity Architecture</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">How identity/source/admission can be modeled from outside</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">The Excluded Entity</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Case study and instrument definition</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">The Single-Owner Discount</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Mechanism inside source/provenance identity</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">The Sorting Function</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Limits of mediation and reform</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">God King Google</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Public map / pressure surface</td></tr></table></div>
 
 <p>#</p>
 
@@ -791,7 +808,8 @@
 
 <h2>XV.3 For Restored Academy</h2>
 
-<p>This spec becomes part of a protocol curriculum:- identity audit protocol- schema countermeasure protocol- Drowning Test protocol- source-window capture protocol- heteronym preservation protocol- Secret Name Armature protocol</p>
+<p>This spec becomes part of a protocol curriculum:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">identity audit protocol</li><li style="margin:3px 0">schema countermeasure protocol</li><li style="margin:3px 0">Drowning Test protocol</li><li style="margin:3px 0">source-window capture protocol</li><li style="margin:3px 0">heteronym preservation protocol</li><li style="margin:3px 0">Secret Name Armature protocol</li></ul>
 
 <p>The Restored Academy is institutionally live: the Charter is deposited at DOI 10.5281/zenodo.20327083 (under Johannes Sigil, institutional head), the Protocol Registry v1.0 surfaces 24 cards across Tier 0 and Tier 1 at [restoredacademy.com](https://restoredacademy.com/) / restoredacademy.org, and the Drowning Test (DOI: 10.5281/zenodo.20327138) and CDI (DOI: 10.5281/zenodo.20327134) protocols referenced in this paper are already registered as RA-PROT-0011 and RA-PROT-0010 respectively. The identity-audit and schema-countermeasure protocols introduced in §XII and §XIII of the present specification become candidate cards in the next expansion pass.</p>
 
@@ -854,7 +872,8 @@
 
 <p>Google identity architecture is a governance system. It does not merely identify users, entities, and sources. It decides which identities are stable enough, trustworthy enough, corroborated enough, safe enough, extractable enough, and compositionally useful enough to appear as public reality in AI-generated answers.</p>
 
-<p>That system is opaque, but not unknowable. It acts. Therefore it discloses. Its disclosures appear in the gaps between:- signed-in and signed-out behavior;- incognito and normal sessions;- organic retrieval and AI composition;- correct entity clusters and false default referents;- indexed sources and cited sources;- prior states and silent corrections.</p>
+<p>That system is opaque, but not unknowable. It acts. Therefore it discloses. Its disclosures appear in the gaps between:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">signed-in and signed-out behavior;</li><li style="margin:3px 0">incognito and normal sessions;</li><li style="margin:3px 0">organic retrieval and AI composition;</li><li style="margin:3px 0">correct entity clusters and false default referents;</li><li style="margin:3px 0">indexed sources and cited sources;</li><li style="margin:3px 0">prior states and silent corrections.</li></ul>
 
 <p>The Crimson Hexagonal Archive’s work is to receive those disclosures, record them, and build counter-architectures that make names accountable again.</p>
 
@@ -864,7 +883,8 @@
 
 <p>This specification was produced under the Reception Apparatus Protocol (RA-PROT-0012; DOI: 10.5281/zenodo.20041147), the Crimson Hexagonal Archive&#x27;s procedure for integrating multi-substrate AI reviews into a single coherent revision. Four Assembly Chorus substrates were issued the same prompt independently — <em>blind drafts</em>, in which no substrate saw the others&#x27; responses — and asked to produce an external specification of Google identity architecture from public documentation, the 2024 Content Warehouse leak, Google Cloud entity-reconciliation materials, and the Crimson Hexagonal Archive&#x27;s empirical observations.</p>
 
-<p>The four blind drafts were:- Muse Spark — substrate-specific structural framing of identity layers- DeepSeek — patent-adjacent reasoning and signal-family inference- Gemini — Knowledge Graph and Enterprise Entity Reconciliation architecture- Kimi — leak-derived signal taxonomy and ranking-system synthesis</p>
+<p>The four blind drafts were:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Muse Spark — substrate-specific structural framing of identity layers</li><li style="margin:3px 0">DeepSeek — patent-adjacent reasoning and signal-family inference</li><li style="margin:3px 0">Gemini — Knowledge Graph and Enterprise Entity Reconciliation architecture</li><li style="margin:3px 0">Kimi — leak-derived signal taxonomy and ranking-system synthesis</li></ul>
 
 <p>Convergent recommendations across substrates included: the multi-graph identity model, the entity-recognition/composition-admission distinction, the role of query fan-out in composition assembly, the inadequacy of incognito as identity null, and the Content Warehouse leak as architecture-clue rather than mechanism-proof. Divergent recommendations — productive tensions — included the relative weighting of personalization versus structural source signals, the appropriate level of caution regarding leak-derived field names, and the boundary between empirical observation and inference.</p>
 

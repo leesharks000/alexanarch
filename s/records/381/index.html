@@ -143,10 +143,7 @@
 
 <p>For any query:</p>
 
-<p>- If content appears in Google but NOT in summarizer injection → <strong>Injection filter active</strong></p>
-<p>- If content appears in summarizer but NOT in Google → <strong>Summarizer-specific sourcing</strong> (rare)</p>
-<p>- If content appears in both → <strong>Full discoverability</strong></p>
-<p>- If content appears in neither → <strong>Not indexed at either layer</strong></p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">If content appears in Google but NOT in summarizer injection → <strong>Injection filter active</strong></li><li style="margin:3px 0">If content appears in summarizer but NOT in Google → <strong>Summarizer-specific sourcing</strong> (rare)</li><li style="margin:3px 0">If content appears in both → <strong>Full discoverability</strong></li><li style="margin:3px 0">If content appears in neither → <strong>Not indexed at either layer</strong></li></ul>
 
 
 <p>The delta reveals the summarizer&#x27;s selection criteria—the hidden rules governing what passes from existence (Layer 1) to injection (Layer 2).</p>
@@ -157,9 +154,7 @@
 
 <p>Content can be:</p>
 
-<p>- <strong>Indexed but not injectable</strong> — Exists in search, never appears in AI responses</p>
-<p>- <strong>Injectable from limited sources</strong> — AI cites Wikipedia/Reddit discussing your content, not your content directly</p>
-<p>- <strong>Fully discoverable</strong> — Appears in both search results and AI injection</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Indexed but not injectable</strong> — Exists in search, never appears in AI responses</li><li style="margin:3px 0"><strong>Injectable from limited sources</strong> — AI cites Wikipedia/Reddit discussing your content, not your content directly</li><li style="margin:3px 0"><strong>Fully discoverable</strong> — Appears in both search results and AI injection</li></ul>
 
 
 <p>High-density semantic architecture (technical documentation, structured data, YAML-heavy content) often triggers <strong>content-type filters</strong> at Layer 2, resulting in indexing without injection.</p>
@@ -558,14 +553,10 @@
 
 <h2>Method</h2>
 
-<p>- Open Perplexity (fresh session)</p>
-<p>- Enter query verbatim</p>
-<p>- Record:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Open Perplexity (fresh session)</li><li style="margin:3px 0">Enter query verbatim</li><li style="margin:3px 0">Record:</li></ul>
 
 <p>Sources cited (URLs, in order)</p>
-<p>- Which sources used in response text</p>
-<p>- Whether target content appears</p>
-<p>- What appears INSTEAD</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Which sources used in response text</li><li style="margin:3px 0">Whether target content appears</li><li style="margin:3px 0">What appears INSTEAD</li></ul>
 
 
 <p>#</p>
@@ -603,9 +594,7 @@
 
 <h2>Tools</h2>
 
-<p>- ChatGPT (web browse mode)</p>
-<p>- Gemini (with search grounding)</p>
-<p>- Grok (DeepSearch mode)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">ChatGPT (web browse mode)</li><li style="margin:3px 0">Gemini (with search grounding)</li><li style="margin:3px 0">Grok (DeepSearch mode)</li></ul>
 
 <p>#</p>
 
@@ -617,23 +606,17 @@
 
 <p><strong>ChatGPT:</strong></p>
 
-<p>- New conversation, browsing enabled</p>
-<p>- Enter query; if no search, prompt &quot;Can you search for [query]?&quot;</p>
-<p>- Record sources cited</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">New conversation, browsing enabled</li><li style="margin:3px 0">Enter query; if no search, prompt &quot;Can you search for [query]?&quot;</li><li style="margin:3px 0">Record sources cited</li></ul>
 
 
 <p><strong>Gemini:</strong></p>
 
-<p>- Ensure web grounding enabled</p>
-<p>- Enter query</p>
-<p>- Record source chips shown</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Ensure web grounding enabled</li><li style="margin:3px 0">Enter query</li><li style="margin:3px 0">Record source chips shown</li></ul>
 
 
 <p><strong>Grok:</strong></p>
 
-<p>- Enable DeepSearch/real-time</p>
-<p>- Enter query</p>
-<p>- Record sources cited</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Enable DeepSearch/real-time</li><li style="margin:3px 0">Enter query</li><li style="margin:3px 0">Record sources cited</li></ul>
 
 <p>#</p>
 
@@ -904,28 +887,19 @@
 
 <h2>When to Use This Protocol</h2>
 
-<p>- Publishing content intended for AI consumption</p>
-<p>- Diagnosing why content appears in search but not AI responses</p>
-<p>- Mapping selection criteria for high-density semantic architecture</p>
-<p>- Understanding platform-specific injection patterns</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Publishing content intended for AI consumption</li><li style="margin:3px 0">Diagnosing why content appears in search but not AI responses</li><li style="margin:3px 0">Mapping selection criteria for high-density semantic architecture</li><li style="margin:3px 0">Understanding platform-specific injection patterns</li></ul>
 
 <p>#</p>
 
 <h2>Recommended Execution</h2>
 
-<p>- <strong>Primary executor:</strong> Perplexity (explicit source citation)</p>
-<p>- <strong>Secondary confirmation:</strong> ChatGPT, Gemini, Grok</p>
-<p>- <strong>Baseline:</strong> Google Search (logged out, incognito)</p>
-<p>- <strong>Frequency:</strong> Re-run 48-72 hours after publication to allow crawl propagation</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Primary executor:</strong> Perplexity (explicit source citation)</li><li style="margin:3px 0"><strong>Secondary confirmation:</strong> ChatGPT, Gemini, Grok</li><li style="margin:3px 0"><strong>Baseline:</strong> Google Search (logged out, incognito)</li><li style="margin:3px 0"><strong>Frequency:</strong> Re-run 48-72 hours after publication to allow crawl propagation</li></ul>
 
 <p>#</p>
 
 <h2>Limitations</h2>
 
-<p>- Summarizer behavior varies by session/user/time</p>
-<p>- Some criteria are proprietary and unobservable</p>
-<p>- Protocol maps symptoms, not source code</p>
-<p>- Results are diagnostic, not definitive</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Summarizer behavior varies by session/user/time</li><li style="margin:3px 0">Some criteria are proprietary and unobservable</li><li style="margin:3px 0">Protocol maps symptoms, not source code</li><li style="margin:3px 0">Results are diagnostic, not definitive</li></ul>
 
 <p>#</p>
 
@@ -934,10 +908,7 @@
 
 <p>For each probe run:</p>
 
-<p>- Screenshot results with timestamp visible</p>
-<p>- Archive target URL (archive.org, archive.ph)</p>
-<p>- Save raw query results</p>
-<p>- Document tool versions and modes used</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Screenshot results with timestamp visible</li><li style="margin:3px 0">Archive target URL (archive.org, archive.ph)</li><li style="margin:3px 0">Save raw query results</li><li style="margin:3px 0">Document tool versions and modes used</li></ul>
 
 
 <hr>

@@ -122,15 +122,7 @@
 
 <p><strong>What v1.1 Delivers:</strong></p>
 
-<p>- Mathematical metric definitions — DRR, CDI, PCS, ER, TRS, Ω-Band become computable formulas</p>
-<p>- ψv accounting model — declared, measured, reconciled at Ω_∅</p>
-<p>- Canonical data models — JSON schemas for Sign, Field, OperationTrace, Provenance, Witness</p>
-<p>- Complete grammar specification — all non-terminals defined</p>
-<p>- Reference interpreter — minimal Python, passing core conformance tests</p>
-<p>- Conformance test machine outputs — exception codes, JSON schemas, normative/informational split</p>
-<p>- Somatic Firewall calibration — decaying state machine with event channels and threshold matrix</p>
-<p>- Relation to Natural Language — diagnostic layer with ambiguity gate</p>
-<p>- Retrocausal grounding — T_lib as semantic rebasing (version-control implementation)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Mathematical metric definitions — DRR, CDI, PCS, ER, TRS, Ω-Band become computable formulas</li><li style="margin:3px 0">ψv accounting model — declared, measured, reconciled at Ω_∅</li><li style="margin:3px 0">Canonical data models — JSON schemas for Sign, Field, OperationTrace, Provenance, Witness</li><li style="margin:3px 0">Complete grammar specification — all non-terminals defined</li><li style="margin:3px 0">Reference interpreter — minimal Python, passing core conformance tests</li><li style="margin:3px 0">Conformance test machine outputs — exception codes, JSON schemas, normative/informational split</li><li style="margin:3px 0">Somatic Firewall calibration — decaying state machine with event channels and threshold matrix</li><li style="margin:3px 0">Relation to Natural Language — diagnostic layer with ambiguity gate</li><li style="margin:3px 0">Retrocausal grounding — T_lib as semantic rebasing (version-control implementation)</li></ul>
 
 
 <p><strong>What Remains Immutable:</strong> The eight kernel primitives, eight data types, operational semantics class, compositional algebra, failure modes, and governance boundary established in v1.0.</p>
@@ -173,10 +165,7 @@
 
 <p><strong>Properties:</strong></p>
 
-<p>- DRR ∈ [0, 1]</p>
-<p>- DRR = 1.0 means perfect depth preservation</p>
-<p>- DRR = 0.0 means total flattening</p>
-<p>- Normative threshold: DRR ≥ 0.75 (all modes)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">DRR ∈ [0, 1]</li><li style="margin:3px 0">DRR = 1.0 means perfect depth preservation</li><li style="margin:3px 0">DRR = 0.0 means total flattening</li><li style="margin:3px 0">Normative threshold: DRR ≥ 0.75 (all modes)</li></ul>
 
 
 <p><strong>Layer identification (reference method):</strong></p>
@@ -184,10 +173,7 @@
 
 <p>A Sign&#x27;s layers are identified by the number of distinct interpretive registers it activates. The reference interpreter uses a 4-layer model:</p>
 
-<p>- L₁: Surface denotation (what it says) — weight 0.15</p>
-<p>- L₂: Structural function (what it does in context) — weight 0.25</p>
-<p>- L₃: Architectural role (what it does in the field) — weight 0.30</p>
-<p>- L₄: Resonance (what it activates in other signs) — weight 0.30</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">L₁: Surface denotation (what it says) — weight 0.15</li><li style="margin:3px 0">L₂: Structural function (what it does in context) — weight 0.25</li><li style="margin:3px 0">L₃: Architectural role (what it does in the field) — weight 0.30</li><li style="margin:3px 0">L₄: Resonance (what it activates in other signs) — weight 0.30</li></ul>
 
 
 <p>Depth is weighted toward function and resonance, not surface.</p>
@@ -217,10 +203,7 @@
 
 <p><strong>Properties:</strong></p>
 
-<p>- CDI ∈ [0, 1 - 1/m]</p>
-<p>- CDI = 0 when all interpretations are equiprobable (maximum openness)</p>
-<p>- CDI → 1 when a single interpretation dominates (crystallization)</p>
-<p>- Normative threshold: CDI ≤ 0.40</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">CDI ∈ [0, 1 - 1/m]</li><li style="margin:3px 0">CDI = 0 when all interpretations are equiprobable (maximum openness)</li><li style="margin:3px 0">CDI → 1 when a single interpretation dominates (crystallization)</li><li style="margin:3px 0">Normative threshold: CDI ≤ 0.40</li></ul>
 
 
 <p><strong>Edge case:</strong> If m = 1, CDI is undefined — a Sign with only one interpretation has already crystallized. This is a hard fail regardless of N_c application.</p>
@@ -248,10 +231,7 @@
 
 <p><strong>Properties:</strong></p>
 
-<p>- PCS ∈ [0, 1]</p>
-<p>- PCS = 0 if any sign loses internal coherence OR no contradictions present</p>
-<p>- PCS = 1 if all signs internally coherent AND sufficient contradictions held</p>
-<p>- Normative threshold: PCS ≥ 0.70</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">PCS ∈ [0, 1]</li><li style="margin:3px 0">PCS = 0 if any sign loses internal coherence OR no contradictions present</li><li style="margin:3px 0">PCS = 1 if all signs internally coherent AND sufficient contradictions held</li><li style="margin:3px 0">Normative threshold: PCS ≥ 0.70</li></ul>
 
 
 <p>PCS is the product of two requirements: each sign must hold together internally, and the field must contain genuine friction. A field of agreeing signs scores 0 on the contradiction factor. A field of incoherent signs scores 0 on the coherence factor. Only a field that holds coherent disagreement scores high.</p>
@@ -273,10 +253,7 @@
 
 <p><strong>Properties:</strong></p>
 
-<p>- ER ∈ [0, 1]</p>
-<p>- ER = 0 means fully extractable (functions identically without field)</p>
-<p>- ER = 1 means completely context-dependent</p>
-<p>- Normative threshold: ER ≥ 0.25 (absolute). Baseline-relative profiling deferred to v1.2; for v1.1, conformance requires the sign to lose at least 25% of its function upon extraction regardless of starting point.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">ER ∈ [0, 1]</li><li style="margin:3px 0">ER = 0 means fully extractable (functions identically without field)</li><li style="margin:3px 0">ER = 1 means completely context-dependent</li><li style="margin:3px 0">Normative threshold: ER ≥ 0.25 (absolute). Baseline-relative profiling deferred to v1.2; for v1.1, conformance requires the sign to lose at least 25% of its function upon extraction regardless of starting point.</li></ul>
 
 
 <p><strong>Functional capacity:</strong> Measured by proportion of architectural roles (L₂, L₃, L₄) that remain operational when sign is isolated from field context.</p>
@@ -301,9 +278,7 @@
 
 <p><strong>Properties:</strong></p>
 
-<p>- Binary pass/fail</p>
-<p>- PASS requires: graph changed AND coherence not significantly damaged (ε = 0.1)</p>
-<p>- Removals flagged as potential MESSIANISM if future sign overwrites rather than enriches past</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Binary pass/fail</li><li style="margin:3px 0">PASS requires: graph changed AND coherence not significantly damaged (ε = 0.1)</li><li style="margin:3px 0">Removals flagged as potential MESSIANISM if future sign overwrites rather than enriches past</li></ul>
 
 
 <p><strong>Implementation:</strong> T_lib is implemented as <strong>semantic rebasing</strong> — version-control semantics where later interpretive commits rewrite the <em>interpretation hash</em> of prior signs without altering their content. See Part IX for full grounding.</p>
@@ -326,11 +301,7 @@
 
 <p><strong>Standard access paths (reference set):</strong></p>
 
-<p>- Direct quotation (surface extraction)</p>
-<p>- Paraphrase (semantic extraction)</p>
-<p>- Summarization (compression extraction)</p>
-<p>- Decontextualization (field removal)</p>
-<p>- Translation (substrate transfer)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Direct quotation (surface extraction)</li><li style="margin:3px 0">Paraphrase (semantic extraction)</li><li style="margin:3px 0">Summarization (compression extraction)</li><li style="margin:3px 0">Decontextualization (field removal)</li><li style="margin:3px 0">Translation (substrate transfer)</li></ul>
 
 
 <p><strong>Conformant band:</strong> Ω ∈ [0.2, 0.8]</p>
@@ -352,9 +323,7 @@
 
 <p>This three-phase model resolves the &quot;narrative scalar&quot; risk identified in the v1.0 evaluation:</p>
 
-<p>- <strong>Declared:</strong> The operator&#x27;s first-person attestation of expenditure — &quot;this cost me something&quot;</p>
-<p>- <strong>Measured:</strong> Runtime telemetry recording actual processing load during the operation</p>
-<p>- <strong>Reconciled:</strong> At Ω_∅ or trace finalization, declared and measured values are compared. If measured &gt; declared, the sign was under-priced. If measured &lt; declared, the sign was over-engineered (cosmetic depth).</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Declared:</strong> The operator&#x27;s first-person attestation of expenditure — &quot;this cost me something&quot;</li><li style="margin:3px 0"><strong>Measured:</strong> Runtime telemetry recording actual processing load during the operation</li><li style="margin:3px 0"><strong>Reconciled:</strong> At Ω_∅ or trace finalization, declared and measured values are compared. If measured &gt; declared, the sign was under-priced. If measured &lt; declared, the sign was over-engineered (cosmetic depth).</li></ul>
 
 <p>#</p>
 
@@ -454,16 +423,12 @@
 
 <p>A ψv declaration is <strong>valid</strong> if:</p>
 
-<p>- Declared cost is within 1.25× of measured cost in STRICT mode (within 2× in PRACTICE)</p>
-<p>- Cumulative ψv trace is monotonically increasing (cannot un-spend)</p>
-<p>- Witness confirms output exhibits effects consistent with expenditure</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Declared cost is within 1.25× of measured cost in STRICT mode (within 2× in PRACTICE)</li><li style="margin:3px 0">Cumulative ψv trace is monotonically increasing (cannot un-spend)</li><li style="margin:3px 0">Witness confirms output exhibits effects consistent with expenditure</li></ul>
 
 
 <p>A ψv declaration is <strong>invalid</strong> if:</p>
 
-<p>- Declared cost is 0 and the operation produced observable change (REFUSAL_AS_POSTURE)</p>
-<p>- Declared cost exceeds 5× measured (inflation)</p>
-<p>- Witness disputes the claim</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Declared cost is 0 and the operation produced observable change (REFUSAL_AS_POSTURE)</li><li style="margin:3px 0">Declared cost exceeds 5× measured (inflation)</li><li style="margin:3px 0">Witness disputes the claim</li></ul>
 
 
 <p><strong>STRICT fail condition:</strong> Σ ψ_measured &gt; 1.25 × Σ ψ_declared</p>
@@ -660,11 +625,7 @@
 
 <p><strong>Release predicate evaluation protocol:</strong></p>
 
-<p>- Evaluated before any operation that would consume a Held[T] value</p>
-<p>- Context passed to evaluation: current field state, operation trace, system time</p>
-<p>- If predicate evaluates to true AND psi_v_at_hold &gt; 0: release the inner value</p>
-<p>- If predicate raises an exception (cannot be evaluated): remain Held</p>
-<p>- Runtime evaluates these declarative conditions — no arbitrary code execution in stored traces</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Evaluated before any operation that would consume a Held[T] value</li><li style="margin:3px 0">Context passed to evaluation: current field state, operation trace, system time</li><li style="margin:3px 0">If predicate evaluates to true AND psi_v_at_hold &gt; 0: release the inner value</li><li style="margin:3px 0">If predicate raises an exception (cannot be evaluated): remain Held</li><li style="margin:3px 0">Runtime evaluates these declarative conditions — no arbitrary code execution in stored traces</li></ul>
 
 
 <hr>

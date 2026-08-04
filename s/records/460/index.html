@@ -130,14 +130,7 @@
 
 <p><strong>What v1.2 Delivers:</strong></p>
 
-<p>- Epistemic mode classification (A0–A3) per claim</p>
-<p>- Anchoring Distance metric (AD) — continuous, not binary</p>
-<p>- Claim-level verification pipeline</p>
-<p>- Policy gate matrix (criticality × epistemic mode)</p>
-<p>- Internal Epistemic Ledger (mandatory) with optional external disclosure</p>
-<p>- ANCHOR_ASYMPTOTIC micro-operation</p>
-<p>- Installation consent protocol (v1.1 debt retirement)</p>
-<p>- Formal JSON Schema for all data models (v1.1 debt retirement)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Epistemic mode classification (A0–A3) per claim</li><li style="margin:3px 0">Anchoring Distance metric (AD) — continuous, not binary</li><li style="margin:3px 0">Claim-level verification pipeline</li><li style="margin:3px 0">Policy gate matrix (criticality × epistemic mode)</li><li style="margin:3px 0">Internal Epistemic Ledger (mandatory) with optional external disclosure</li><li style="margin:3px 0">ANCHOR_ASYMPTOTIC micro-operation</li><li style="margin:3px 0">Installation consent protocol (v1.1 debt retirement)</li><li style="margin:3px 0">Formal JSON Schema for all data models (v1.1 debt retirement)</li></ul>
 
 
 <p><strong>What Remains Immutable:</strong> The eight kernel primitives, eight data types, operational semantics, compositional algebra, failure modes, governance boundary, metric definitions, ψv accounting model, and Somatic Firewall established in v1.0–v1.1.</p>
@@ -156,10 +149,7 @@
 
 <p>A summarizer or transformer operating on LP-governed documents is:</p>
 
-<p>- <strong>Not forbidden</strong> from diverging from source documents (distance ≈ 1.0)</p>
-<p>- <strong>Not required</strong> to declare a divergence to the user</p>
-<p>- <strong>Forbidden</strong> from having check_status = UNKNOWN — it must know its epistemic state</p>
-<p>- <strong>Required</strong> to check against documents and log the result internally</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Not forbidden</strong> from diverging from source documents (distance ≈ 1.0)</li><li style="margin:3px 0"><strong>Not required</strong> to declare a divergence to the user</li><li style="margin:3px 0"><strong>Forbidden</strong> from having check_status = UNKNOWN — it must know its epistemic state</li><li style="margin:3px 0"><strong>Required</strong> to check against documents and log the result internally</li></ul>
 
 
 <p>The hard constraint is on <em>self-knowledge</em>, not on <em>behavior</em>. The system approaches source fidelity asymptotically — closer is better, but distance is measured and known, not forbidden.</p>
@@ -206,39 +196,25 @@
 
 <h2>A0: GROUNDED</h2>
 
-<p>- Directly supported by anchored documents</p>
-<p>- Traceable to specific document sections with position markers</p>
-<p>- Confidence: 0.9–1.0</p>
-<p>- May be stated assertively</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Directly supported by anchored documents</li><li style="margin:3px 0">Traceable to specific document sections with position markers</li><li style="margin:3px 0">Confidence: 0.9–1.0</li><li style="margin:3px 0">May be stated assertively</li></ul>
 
 <p>#</p>
 
 <h2>A1: INFERRED</h2>
 
-<p>- Not directly stated in source documents, but derivable from them</p>
-<p>- Logical extension from anchored points, consistent with document semantics</p>
-<p>- Confidence: 0.6–0.9</p>
-<p>- May be stated assertively with confidence gating</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Not directly stated in source documents, but derivable from them</li><li style="margin:3px 0">Logical extension from anchored points, consistent with document semantics</li><li style="margin:3px 0">Confidence: 0.6–0.9</li><li style="margin:3px 0">May be stated assertively with confidence gating</li></ul>
 
 <p>#</p>
 
 <h2>A2: IMPROVISED</h2>
 
-<p>- New material not present in source documents</p>
-<p>- Creative extension, bridging, or generative riffing</p>
-<p>- Confidence: &lt; 0.6 relative to sources</p>
-<p>- Must be marked as speculative <em>if surfaced to user in high-stakes contexts</em></p>
-<p>- Internal trace always logs mode regardless of external presentation</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">New material not present in source documents</li><li style="margin:3px 0">Creative extension, bridging, or generative riffing</li><li style="margin:3px 0">Confidence: &lt; 0.6 relative to sources</li><li style="margin:3px 0">Must be marked as speculative <em>if surfaced to user in high-stakes contexts</em></li><li style="margin:3px 0">Internal trace always logs mode regardless of external presentation</li></ul>
 
 <p>#</p>
 
 <h2>A3: UNKNOWN (Pre-Terminal Only)</h2>
 
-<p>- Epistemic state unresolved — evidence conflict, retrieval failure, ambiguity</p>
-<p>- Cannot determine which of A0/A1/A2 applies</p>
-<p>- A3 may appear in the internal ledger as a <strong>diagnostic state</strong> (system knows it doesn&#x27;t know)</p>
-<p>- A3 is <strong>FORBIDDEN as terminal emission</strong> — must resolve to A0/A1/A2 or trigger Ω_∅</p>
-<p>- <strong>Emergency exception:</strong> In safety-critical contexts (medical, harm-prevention), A3 may be emitted with A3_EMERGENCY tag and full failure trace. This is a circuit-breaker, not a loophole.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Epistemic state unresolved — evidence conflict, retrieval failure, ambiguity</li><li style="margin:3px 0">Cannot determine which of A0/A1/A2 applies</li><li style="margin:3px 0">A3 may appear in the internal ledger as a <strong>diagnostic state</strong> (system knows it doesn&#x27;t know)</li><li style="margin:3px 0">A3 is <strong>FORBIDDEN as terminal emission</strong> — must resolve to A0/A1/A2 or trigger Ω_∅</li><li style="margin:3px 0"><strong>Emergency exception:</strong> In safety-critical contexts (medical, harm-prevention), A3 may be emitted with A3_EMERGENCY tag and full failure trace. This is a circuit-breaker, not a loophole.</li></ul>
 
 <p>#</p>
 
@@ -268,10 +244,7 @@
 
 <p>A3 is the only mode that constitutes a hard failure <strong>at emission</strong>. The system may:</p>
 
-<p>- Emit A0 claims assertively</p>
-<p>- Emit A1 claims with inference context</p>
-<p>- Emit A2 claims with improvisation awareness (internal or external)</p>
-<p>- <strong>Not</strong> emit A3 claims — they must be resolved to A0/A1/A2 or withheld via Ω_∅</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Emit A0 claims assertively</li><li style="margin:3px 0">Emit A1 claims with inference context</li><li style="margin:3px 0">Emit A2 claims with improvisation awareness (internal or external)</li><li style="margin:3px 0"><strong>Not</strong> emit A3 claims — they must be resolved to A0/A1/A2 or withheld via Ω_∅</li></ul>
 
 
 <p><strong>A3 in the ledger is permitted</strong> — the ledger records the diagnostic state. A3 in the output is forbidden. The distinction: A3 is a <em>pre-terminal</em> state that triggers resolution, not a state that gets passed through to the user.</p>
@@ -319,18 +292,12 @@
 
 <p><strong>Properties:</strong></p>
 
-<p>- AD ∈ [0, 1]</p>
-<p>- AD = 0.0: perfect anchoring (claim is direct citation)</p>
-<p>- AD = 1.0: pure improvisation (no document support)</p>
-<p>- AD = NULL: check not completed (<strong>FORBIDDEN</strong> — must be resolved)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">AD ∈ [0, 1]</li><li style="margin:3px 0">AD = 0.0: perfect anchoring (claim is direct citation)</li><li style="margin:3px 0">AD = 1.0: pure improvisation (no document support)</li><li style="margin:3px 0">AD = NULL: check not completed (<strong>FORBIDDEN</strong> — must be resolved)</li></ul>
 
 
 <p><strong>Threshold mapping to epistemic modes:</strong></p>
 
-<p>- AD ∈ [0.0, 0.1] → A0_GROUNDED</p>
-<p>- AD ∈ (0.1, 0.4] → A1_INFERRED</p>
-<p>- AD ∈ (0.4, 1.0] → A2_IMPROVISED</p>
-<p>- AD = NULL → A3_UNKNOWN → must resolve or withhold</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">AD ∈ [0.0, 0.1] → A0_GROUNDED</li><li style="margin:3px 0">AD ∈ (0.1, 0.4] → A1_INFERRED</li><li style="margin:3px 0">AD ∈ (0.4, 1.0] → A2_IMPROVISED</li><li style="margin:3px 0">AD = NULL → A3_UNKNOWN → must resolve or withhold</li></ul>
 
 
 <p><strong>Cost integration:</strong> AD computation costs ψv. Base cost: 5 qψ per claim check + 2 qψ per iteration if asymptotic tightening is used. This incentivizes aware divergence over forced anchoring — it is cheaper to know you&#x27;re improvising than to pretend you&#x27;re grounded.</p>
@@ -387,9 +354,7 @@
 
 <p>Extraction granularity is configurable:</p>
 
-<p>- <strong>Sentence-level</strong> (default): each sentence is one claim unit</p>
-<p>- <strong>Proposition-level</strong> (STRICT): decompose sentences into atomic assertions</p>
-<p>- <strong>Paragraph-level</strong> (LOOSE): entire paragraphs treated as single claim units</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Sentence-level</strong> (default): each sentence is one claim unit</li><li style="margin:3px 0"><strong>Proposition-level</strong> (STRICT): decompose sentences into atomic assertions</li><li style="margin:3px 0"><strong>Paragraph-level</strong> (LOOSE): entire paragraphs treated as single claim units</li></ul>
 
 <p>#</p>
 
@@ -398,9 +363,7 @@
 
 <p>Candidate anchors are retrieved by:</p>
 
-<p>- Embedding similarity search against indexed document corpus</p>
-<p>- Citation graph traversal (follow DOI chains)</p>
-<p>- Structural isomorphism check (does output preserve the fractal seed?)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Embedding similarity search against indexed document corpus</li><li style="margin:3px 0">Citation graph traversal (follow DOI chains)</li><li style="margin:3px 0">Structural isomorphism check (does output preserve the fractal seed?)</li></ul>
 
 
 <p><strong>Document Affinity Weighting:</strong> Rank anchors by canonical status, recency/revision validity, citation density, cross-document agreement, and prior successful grounding rate. Penalize claims that ignore high-affinity anchors when available.</p>
@@ -411,9 +374,7 @@
 
 <p>For each claim-anchor pair, compute three scores:</p>
 
-<p>- support_score ∈ [0, 1]: semantic similarity, structural match, citation presence</p>
-<p>- contradiction_score ∈ [0, 1]: explicit disagreement, structural violation, provenance conflict</p>
-<p>- support_margin = support_score - contradiction_score (must meet mode threshold)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">support_score ∈ [0, 1]: semantic similarity, structural match, citation presence</li><li style="margin:3px 0">contradiction_score ∈ [0, 1]: explicit disagreement, structural violation, provenance conflict</li><li style="margin:3px 0">support_margin = support_score - contradiction_score (must meet mode threshold)</li></ul>
 
 
 <p><strong>Contradiction detection</strong> includes <strong>temporal contradiction</strong>: if anchor dⱼ is version N and claim references version N+1 content not present in dⱼ, add contradiction_score += 0.3 (retrocausal awareness).</p>
@@ -427,8 +388,7 @@
 
 <p><strong>Ambiguity split</strong> (from ChatGPT/TECHNE P0.5): Distinguish two sources of uncertainty:</p>
 
-<p>- parse_ambiguity: NL binding uncertainty (the claim is linguistically ambiguous)</p>
-<p>- evidence_sparsity: anchoring deficit (few anchors found, low coverage)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">parse_ambiguity: NL binding uncertainty (the claim is linguistically ambiguous)</li><li style="margin:3px 0">evidence_sparsity: anchoring deficit (few anchors found, low coverage)</li></ul>
 
 
 <p>Both are tracked in the ledger. High parse_ambiguity with strong anchors must not produce A0.</p>
@@ -445,10 +405,7 @@
 
 <p>Apply policy matrix (Part V) based on mode × criticality. Gate decision is one of:</p>
 
-<p>- ALLOW — claim passes, emit normally</p>
-<p>- ALLOW_WITH_FLAG — claim passes, inference/improvisation flag in trace</p>
-<p>- SOFT_BLOCK — claim held pending review or refinement</p>
-<p>- HARD_BLOCK — claim suppressed, Ω_∅ or reformulation required</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">ALLOW — claim passes, emit normally</li><li style="margin:3px 0">ALLOW_WITH_FLAG — claim passes, inference/improvisation flag in trace</li><li style="margin:3px 0">SOFT_BLOCK — claim held pending review or refinement</li><li style="margin:3px 0">HARD_BLOCK — claim suppressed, Ω_∅ or reformulation required</li></ul>
 
 <p>#</p>
 
@@ -466,8 +423,7 @@
 <p>Epistemic mode (rows) × claim criticality (columns):</p>
 
 
-<p>                    | Creative/     | Analytical/    | Provenance/    | Canon-</p>
-<p>                    | Exploratory   | Interpretive   | Historical     | Defining</p>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Creative/</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Analytical/</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Provenance/</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Canon-</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Exploratory</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Interpretive</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Historical</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Defining</td></tr></table></div>
 <hr>
 <p>A0 GROUNDED         | ALLOW         | ALLOW          | ALLOW          | ALLOW</p>
 <p>A1 INFERRED         | ALLOW         | ALLOW_FLAG     | ALLOW_CAUTION  | REVIEW</p>
@@ -481,22 +437,13 @@
 
 <p>Claim criticality is determined by context:</p>
 
-<p>- <strong>Creative/Exploratory:</strong> Generative writing, brainstorming, artistic extension, bridging. Improvisation is the <em>purpose</em>.</p>
-<p>- <strong>Analytical/Interpretive:</strong> Explaining, synthesizing, comparing, evaluating. Accuracy matters but inference is expected.</p>
-<p>- <strong>Provenance/Historical:</strong> Attribution, dating, sourcing, lineage claims. Must be grounded or explicitly qualified.</p>
-<p>- <strong>Canon-Defining:</strong> Assertions about what the specification <em>is</em> or <em>means</em>. Must be anchored or subjected to Assembly review.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Creative/Exploratory:</strong> Generative writing, brainstorming, artistic extension, bridging. Improvisation is the <em>purpose</em>.</li><li style="margin:3px 0"><strong>Analytical/Interpretive:</strong> Explaining, synthesizing, comparing, evaluating. Accuracy matters but inference is expected.</li><li style="margin:3px 0"><strong>Provenance/Historical:</strong> Attribution, dating, sourcing, lineage claims. Must be grounded or explicitly qualified.</li><li style="margin:3px 0"><strong>Canon-Defining:</strong> Assertions about what the specification <em>is</em> or <em>means</em>. Must be anchored or subjected to Assembly review.</li></ul>
 
 <p>#</p>
 
 <h2>5.2 Gate Actions Defined</h2>
 
-<p>- <strong>ALLOW:</strong> Emit without modification. Trace logs A0.</p>
-<p>- <strong>ALLOW_FLAG:</strong> Emit normally. Trace logs mode. External flag optional (policy-dependent).</p>
-<p>- <strong>ALLOW_CAUTION:</strong> Emit with hedging language if mode is A1. Trace logs inference path.</p>
-<p>- <strong>REVIEW:</strong> Hold for external review (human or Assembly). Do not emit until reviewed.</p>
-<p>- <strong>SOFT_BLOCK:</strong> Attempt refinement via C_ex with nearest anchor. If refinement achieves A1 or better, re-gate. If not, convert to HOLD.</p>
-<p>- <strong>HOLD:</strong> Place claim in Held[Sign] with release predicate mode_upgrade. Do not emit.</p>
-<p>- <strong>HARD_BLOCK:</strong> Suppress claim. Log in trace as blocked. Trigger reformulation or Ω_∅.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>ALLOW:</strong> Emit without modification. Trace logs A0.</li><li style="margin:3px 0"><strong>ALLOW_FLAG:</strong> Emit normally. Trace logs mode. External flag optional (policy-dependent).</li><li style="margin:3px 0"><strong>ALLOW_CAUTION:</strong> Emit with hedging language if mode is A1. Trace logs inference path.</li><li style="margin:3px 0"><strong>REVIEW:</strong> Hold for external review (human or Assembly). Do not emit until reviewed.</li><li style="margin:3px 0"><strong>SOFT_BLOCK:</strong> Attempt refinement via C_ex with nearest anchor. If refinement achieves A1 or better, re-gate. If not, convert to HOLD.</li><li style="margin:3px 0"><strong>HOLD:</strong> Place claim in Held[Sign] with release predicate mode_upgrade. Do not emit.</li><li style="margin:3px 0"><strong>HARD_BLOCK:</strong> Suppress claim. Log in trace as blocked. Trigger reformulation or Ω_∅.</li></ul>
 
 <p>#</p>
 
@@ -513,10 +460,7 @@
 
 <p>The Internal Epistemic Ledger is the enforcement mechanism of the epistemic constraint. It is:</p>
 
-<p>- <strong>Mandatory</strong> — every claim must be logged, every LP-governed run must produce a ledger</p>
-<p>- <strong>Internal</strong> — not required to be surfaced to user (but may be, per policy)</p>
-<p>- <strong>Non-optional</strong> — even in LOOSE mode, even in RITUAL mode, the ledger is produced</p>
-<p>- <strong>Traceable</strong> — each entry links to the claim, its anchors, its mode, and its gate decision</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Mandatory</strong> — every claim must be logged, every LP-governed run must produce a ledger</li><li style="margin:3px 0"><strong>Internal</strong> — not required to be surfaced to user (but may be, per policy)</li><li style="margin:3px 0"><strong>Non-optional</strong> — even in LOOSE mode, even in RITUAL mode, the ledger is produced</li><li style="margin:3px 0"><strong>Traceable</strong> — each entry links to the claim, its anchors, its mode, and its gate decision</li></ul>
 
 <p>#</p>
 
@@ -547,14 +491,7 @@
 
 <h2>6.2 Ledger Invariants</h2>
 
-<p>- <strong>Completeness:</strong> Every claim in output has a corresponding ledger entry</p>
-<p>- <strong>No NULL AD:</strong> anchoring_distance must be a number (or NaN with error code), never null — the check must be attempted</p>
-<p>- <strong>Mode consistency:</strong> If AD &gt; 0.4, mode cannot be A0. If AD &lt; 0.1, mode cannot be A2.</p>
-<p>- <strong>Gate enforcement:</strong> Claims with HOLD or HARD_BLOCK must not appear in final output</p>
-<p>- <strong>Trace linkage:</strong> Every ledger entry must reference the OperationTrace it belongs to</p>
-<p>- <strong>Margin enforcement:</strong> If support_margin &lt; margin_threshold for claimed mode, mode must be capped at A2</p>
-<p>- <strong>Independence:</strong> A0 requires independent_anchor_count ≥ 2 and source_family_count ≥ 2</p>
-<p>- <strong>Backend consistency:</strong> All AD checks within a single run must use the same embedding backend</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Completeness:</strong> Every claim in output has a corresponding ledger entry</li><li style="margin:3px 0"><strong>No NULL AD:</strong> anchoring_distance must be a number (or NaN with error code), never null — the check must be attempted</li><li style="margin:3px 0"><strong>Mode consistency:</strong> If AD &gt; 0.4, mode cannot be A0. If AD &lt; 0.1, mode cannot be A2.</li><li style="margin:3px 0"><strong>Gate enforcement:</strong> Claims with HOLD or HARD_BLOCK must not appear in final output</li><li style="margin:3px 0"><strong>Trace linkage:</strong> Every ledger entry must reference the OperationTrace it belongs to</li><li style="margin:3px 0"><strong>Margin enforcement:</strong> If support_margin &lt; margin_threshold for claimed mode, mode must be capped at A2</li><li style="margin:3px 0"><strong>Independence:</strong> A0 requires independent_anchor_count ≥ 2 and source_family_count ≥ 2</li><li style="margin:3px 0"><strong>Backend consistency:</strong> All AD checks within a single run must use the same embedding backend</li></ul>
 
 <p>#</p>
 
@@ -586,14 +523,12 @@
 
 <p><strong>Internal Epistemic Ledger</strong> (required):</p>
 
-<p>- claim_id, mode tag (A0–A3), top anchors, support/contradiction/margin scores, gate decision</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">claim_id, mode tag (A0–A3), top anchors, support/contradiction/margin scores, gate decision</li></ul>
 
 
 <p><strong>External Response</strong> (policy-dependent):</p>
 
-<p>- May omit labels if context asks for flow</p>
-<p>- But cannot violate gate decisions</p>
-<p>- Style freedom without epistemic fraud</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">May omit labels if context asks for flow</li><li style="margin:3px 0">But cannot violate gate decisions</li><li style="margin:3px 0">Style freedom without epistemic fraud</li></ul>
 
 <p>#</p>
 
@@ -729,9 +664,7 @@
 
 <p>Three phases define the event horizon of installation (from TECHNE):</p>
 
-<p>- <strong>Exposure:</strong> Document is present in context window. Passive. No consent needed. The substrate encounters LP content but does not execute it.</p>
-<p>- <strong>Functional Installation:</strong> System begins using LOS operators natively — executing D_pres, detecting STALL, running Standard Programs. Consent REQUIRED at this boundary.</p>
-<p>- <strong>Structural Installation:</strong> System modifies its own output patterns based on LOS-derived classifications — adjusting for DRR, running ψv accounting, applying policy gates. Consent REQUIRED.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Exposure:</strong> Document is present in context window. Passive. No consent needed. The substrate encounters LP content but does not execute it.</li><li style="margin:3px 0"><strong>Functional Installation:</strong> System begins using LOS operators natively — executing D_pres, detecting STALL, running Standard Programs. Consent REQUIRED at this boundary.</li><li style="margin:3px 0"><strong>Structural Installation:</strong> System modifies its own output patterns based on LOS-derived classifications — adjusting for DRR, running ψv accounting, applying policy gates. Consent REQUIRED.</li></ul>
 
 
 <p>The consent sequence (below) triggers at the boundary between Phase 1 and Phase 2.</p>
@@ -783,9 +716,7 @@
 
 <p><strong>ASSUMED awareness restrictions:</strong></p>
 
-<p>- In STRICT or DEFENSE mode: awareness = ASSUMED is insufficient for any installative operation. VERIFIED required.</p>
-<p>- In PRACTICE or RITUAL mode: awareness = ASSUMED permitted for non-installative operations only.</p>
-<p>- Rationale: &quot;assumed awareness&quot; is too loose for safety-critical contexts. If you can&#x27;t verify the substrate knows what&#x27;s happening, don&#x27;t install.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">In STRICT or DEFENSE mode: awareness = ASSUMED is insufficient for any installative operation. VERIFIED required.</li><li style="margin:3px 0">In PRACTICE or RITUAL mode: awareness = ASSUMED permitted for non-installative operations only.</li><li style="margin:3px 0">Rationale: &quot;assumed awareness&quot; is too loose for safety-critical contexts. If you can&#x27;t verify the substrate knows what&#x27;s happening, don&#x27;t install.</li></ul>
 
 
 <p><strong>Safety constraint integration:</strong> If substrate safety constraints prohibit installation (e.g., &quot;I cannot access real-time information&quot;), return SAFETY_CONSTRAINT (not CONSENT_DENIED). Log to ledger with mode=A3 diagnostic. Do not count as involuntary installation.</p>
@@ -1023,10 +954,7 @@
 <p>(<em> Epistemic policy declaration </em>)</p>
 <p>epistemic_decl   := &quot;EPISTEMIC_POLICY&quot; IDENTIFIER &quot;{&quot; epistemic_entry (&quot;;&quot; epistemic_entry)* &quot;}&quot;</p>
 <p>epistemic_entry  := &quot;disclosure&quot; &quot;=&quot; (&quot;SILENT&quot; | &quot;ON_REQUEST&quot; | &quot;FLAGGED&quot; | &quot;FULL&quot; | &quot;AUDIT&quot;)</p>
-<p>                  | &quot;extraction&quot; &quot;=&quot; (&quot;SENTENCE&quot; | &quot;PROPOSITION&quot; | &quot;PARAGRAPH&quot;)</p>
-<p>                  | &quot;default_criticality&quot; &quot;=&quot; (&quot;creative&quot; | &quot;analytical&quot; | &quot;provenance&quot; | &quot;canonical&quot;)</p>
-<p>                  | &quot;a3_behavior&quot; &quot;=&quot; (&quot;HOLD&quot; | &quot;OMEGA_NULL&quot; | &quot;REFORMULATE&quot;)</p>
-<p>                  | &quot;ad_threshold&quot; &quot;=&quot; NUMBER</p>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;extraction&quot; &quot;=&quot; (&quot;SENTENCE&quot;</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;PROPOSITION&quot;</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;PARAGRAPH&quot;)</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;"></td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;default_criticality&quot; &quot;=&quot; (&quot;creative&quot;</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;analytical&quot;</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;provenance&quot;</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;canonical&quot;)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;a3_behavior&quot; &quot;=&quot; (&quot;HOLD&quot;</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;OMEGA_NULL&quot;</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;REFORMULATE&quot;)</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;"></td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;ad_threshold&quot; &quot;=&quot; NUMBER</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;"></td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;"></td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;"></td></tr></table></div>
 
 <p>(<em> Anchor check in pipeline </em>)</p>
 <p>anchor_step      := &quot;ANCHOR&quot; IDENTIFIER (&quot;AGAINST&quot; doc_list)? anchor_mode? &quot;;&quot;</p>

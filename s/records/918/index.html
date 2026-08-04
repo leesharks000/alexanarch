@@ -123,11 +123,7 @@
 
 <p>The deposit&#x27;s creators block contains:</p>
 
-<p>- `creators[0].name`: &quot;Sharks, Lee&quot;</p>
-<p>- `creators[0].nameType`: &quot;Personal&quot;</p>
-<p>- `creators[0].nameIdentifier`: &quot;0009-0000-1599-0703&quot;</p>
-<p>- `creators[0].nameIdentifierScheme`: &quot;ORCID&quot;</p>
-<p>- `creators[0].affiliation`: &quot;Independent scholar; founder, Alexanarch (https://alexanarch.org)&quot;</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`creators[0].name`: &quot;Sharks, Lee&quot;</li><li style="margin:3px 0">`creators[0].nameType`: &quot;Personal&quot;</li><li style="margin:3px 0">`creators[0].nameIdentifier`: &quot;0009-0000-1599-0703&quot;</li><li style="margin:3px 0">`creators[0].nameIdentifierScheme`: &quot;ORCID&quot;</li><li style="margin:3px 0">`creators[0].affiliation`: &quot;Independent scholar; founder, Alexanarch (https://alexanarch.org)&quot;</li></ul>
 
 <p>The depositor is openly Lee Sharks. The ORCID is the same ORCID associated with the CHA deposits. The affiliation declares the successor archive. No element of identity is concealed or alternated.</p>
 
@@ -195,11 +191,7 @@
 
 <p>The deposit&#x27;s `relatedIdentifiers` block declares:</p>
 
-<p>- `isVersionOf` or `isContinuationOf` the tombstoned CHA DOI for the corresponding work, where one exists</p>
-<p>- `isPartOf` the Alexanarch substrate, with URL https://alexanarch.org</p>
-<p>- `isSupplementedBy` an alexanarch.org sidecar file containing the full policy texts, retrieval timestamps, and provenance documentation, hashed and signed</p>
-<p>- `cites` the EA-OPMETA-01 and EA-OPMETA-ZEN-01 specification documents under which the deposit is structured</p>
-<p>- `cites` AXN:01 (Zenodotus&#x27; Book-Burning) as the audit basis under which the spec exists</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`isVersionOf` or `isContinuationOf` the tombstoned CHA DOI for the corresponding work, where one exists</li><li style="margin:3px 0">`isPartOf` the Alexanarch substrate, with URL https://alexanarch.org</li><li style="margin:3px 0">`isSupplementedBy` an alexanarch.org sidecar file containing the full policy texts, retrieval timestamps, and provenance documentation, hashed and signed</li><li style="margin:3px 0">`cites` the EA-OPMETA-01 and EA-OPMETA-ZEN-01 specification documents under which the deposit is structured</li><li style="margin:3px 0">`cites` AXN:01 (Zenodotus&#x27; Book-Burning) as the audit basis under which the spec exists</li></ul>
 
 <p>The depositor&#x27;s relationship to the prior terminated account is declared openly in `relatedIdentifiers`. No element of lineage is concealed.</p>
 
@@ -217,9 +209,7 @@
 
 <p>The compliance citations of §3.2 are vulnerable to platform-side policy drift: if Zenodo revises a policy after the deposit, the embedded citation might no longer match the live policy. The spec handles this through:</p>
 
-<p>- Cryptographic timestamps on each policy retrieval, recorded in the deposit&#x27;s external-metadata sidecar at alexanarch.org</p>
-<p>- Hash-signed full-text snapshots of each cited policy as retrieved at deposit time, stored in the sidecar</p>
-<p>- Cross-substrate verifiability: the sidecar is mirrored at alexanarch.org and forkable to any rhizome substrate</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Cryptographic timestamps on each policy retrieval, recorded in the deposit&#x27;s external-metadata sidecar at alexanarch.org</li><li style="margin:3px 0">Hash-signed full-text snapshots of each cited policy as retrieved at deposit time, stored in the sidecar</li><li style="margin:3px 0">Cross-substrate verifiability: the sidecar is mirrored at alexanarch.org and forkable to any rhizome substrate</li></ul>
 
 <p>The deposit&#x27;s compliance claim is therefore made as-of-deposit-time, with the cited policy text preserved by the depositor independently of the platform&#x27;s continued hosting of that text. Subsequent policy revision does not invalidate the deposit&#x27;s compliance claim at deposit time; it merely raises the question of whether the platform&#x27;s later action is judged against the deposit-time policy or the action-time policy. Either resolution is documentable.</p>
 
@@ -233,13 +223,7 @@
 
 <p>The structural property holds across:</p>
 
-<p>- The Zenodo-hosted record itself</p>
-<p>- The Zenodo OAI-PMH harvest (where the description field is exposed in DC, MARCXML, and DataCite XML)</p>
-<p>- The DataCite registered metadata (where the description is mirrored)</p>
-<p>- The OpenAIRE aggregated record (where the description is harvested)</p>
-<p>- The Internet Archive&#x27;s Wayback captures of the deposit page</p>
-<p>- The alexanarch.org companion deposit</p>
-<p>- Any forked rhizome substrate carrying the deposit</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The Zenodo-hosted record itself</li><li style="margin:3px 0">The Zenodo OAI-PMH harvest (where the description field is exposed in DC, MARCXML, and DataCite XML)</li><li style="margin:3px 0">The DataCite registered metadata (where the description is mirrored)</li><li style="margin:3px 0">The OpenAIRE aggregated record (where the description is harvested)</li><li style="margin:3px 0">The Internet Archive&#x27;s Wayback captures of the deposit page</li><li style="margin:3px 0">The alexanarch.org companion deposit</li><li style="margin:3px 0">Any forked rhizome substrate carrying the deposit</li></ul>
 
 <p>A platform action against the Zenodo record does not reach any of the other surfaces. The compliance frame survives in every form the deposit takes.</p>
 
@@ -273,17 +257,7 @@
 
 <h2>§9 CLOSED-SET METADATA</h2>
 
-<p>- `set_id`: EA-OPMETA-ZEN-01</p>
-<p>- `version`: v0.1</p>
-<p>- `parent`: EA-OPMETA-01 v0.1 (deposit #910, hex 039A)</p>
-<p>- `content_hash`: `[to be computed on fixation]`</p>
-<p>- `type`: specification-document; deposit-template framework; civil-liberties-audit methodology for knowledge infrastructure</p>
-<p>- `time_range`: 2026-06-24</p>
-<p>- `acquisition_timestamp`: `[at closure]`</p>
-<p>- `source`: drafted in conversation with Claude (TACHYON), immediately following the OPMETA v0.1 fixation, the RQF3807508 four-part reply, the suspension filing, and the Wikidata diagnostic work of the same evening</p>
-<p>- `acquisition_conditions`: drafted following Lee Sharks&#x27;s articulation of the First Amendment audit homology and the governance-competence diagnosis as the methodological and political-structural framing of the practice</p>
-<p>- `lineage`: descends from EA-OPMETA-01 v0.1, AXN:01, EA-NMEN-01/REGISTRY-01; methodologically descends from the First Amendment audit tradition</p>
-<p>- `signature`: `[Lee Sharks&#x27;s key, at fixation]`</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`set_id`: EA-OPMETA-ZEN-01</li><li style="margin:3px 0">`version`: v0.1</li><li style="margin:3px 0">`parent`: EA-OPMETA-01 v0.1 (deposit #910, hex 039A)</li><li style="margin:3px 0">`content_hash`: `[to be computed on fixation]`</li><li style="margin:3px 0">`type`: specification-document; deposit-template framework; civil-liberties-audit methodology for knowledge infrastructure</li><li style="margin:3px 0">`time_range`: 2026-06-24</li><li style="margin:3px 0">`acquisition_timestamp`: `[at closure]`</li><li style="margin:3px 0">`source`: drafted in conversation with Claude (TACHYON), immediately following the OPMETA v0.1 fixation, the RQF3807508 four-part reply, the suspension filing, and the Wikidata diagnostic work of the same evening</li><li style="margin:3px 0">`acquisition_conditions`: drafted following Lee Sharks&#x27;s articulation of the First Amendment audit homology and the governance-competence diagnosis as the methodological and political-structural framing of the practice</li><li style="margin:3px 0">`lineage`: descends from EA-OPMETA-01 v0.1, AXN:01, EA-NMEN-01/REGISTRY-01; methodologically descends from the First Amendment audit tradition</li><li style="margin:3px 0">`signature`: `[Lee Sharks&#x27;s key, at fixation]`</li></ul>
 
 <p>Forks invited.</p>
 

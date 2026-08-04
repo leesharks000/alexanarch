@@ -131,14 +131,14 @@
 
 <p>The text uses Unicode superscripts (¹²³⁴⁵⁶⁷⁸⁹⁰) for two purposes:</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Footnote references</strong> — at the end of a sentence, after a quote, or</p>
 <p>adjacent to whitespace.</p>
 <p>Examples: …catalogue.³  /  …inside it.&quot;¹³⁸  /  arrived from the future).¹⁴²</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Identifier suffixes on letters</strong> — most importantly, &quot;Golden Ticket&quot;</p>
@@ -212,9 +212,9 @@
 <p>Replaces the legacy Leaf component for <strong>all</strong> body-text rendering in</p>
 <p>front matter, gospel, and back matter. Outputs a sequence of:</p>
 
-<p>- Plain text spans (with optional glossary linking via injectLinks /</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Plain text spans (with optional glossary linking via injectLinks /</li></ul>
 <p>LinkedText) for non-superscript runs;</p>
-<p>- Clickable footnote markers (in veil mode), or styled-but-passive footnote</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Clickable footnote markers (in veil mode), or styled-but-passive footnote</li></ul>
 <p>markers (in pierce mode), for superscript runs that pass the</p>
 <p>not-preceded-by-letter rule.</p>
 
@@ -286,21 +286,21 @@
 
 <h2>What NOT to do</h2>
 
-<p>- <strong>Do not renumber footnotes per section.</strong> The numbering is canonical</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Do not renumber footnotes per section.</strong> The numbering is canonical</li></ul>
 <p>and matches the print edition.</p>
-<p>- <strong>Do not strip the leading superscript from footnote bodies</strong> when</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Do not strip the leading superscript from footnote bodies</strong> when</li></ul>
 <p>rendering the footnote — the user expects to see &quot;¹³⁸ The description…&quot;</p>
 <p>as the leaf text.</p>
-<p>- <strong>Do not use the old ✦ adjacency toggle.</strong> It only worked when a</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Do not use the old ✦ adjacency toggle.</strong> It only worked when a</li></ul>
 <p>footnote paragraph was immediately after the prose paragraph that</p>
 <p>referenced it, which is rarely the case.</p>
-<p>- <strong>Do not use the old per-section &quot;endnotes block&quot; toggle.</strong> It hid</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Do not use the old per-section &quot;endnotes block&quot; toggle.</strong> It hid</li></ul>
 <p>inline references and required users to scroll.</p>
-<p>- **Do not strip &lt;sup&gt; styling from non-clickable markers in pierce</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">**Do not strip &lt;sup&gt; styling from non-clickable markers in pierce</li></ul>
 <p>mode.** The markers remain visible as a reading cue.</p>
-<p>- <strong>Do not turn ticket numbers like G⁴⁶ into clickable footnotes.</strong> Apply</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Do not turn ticket numbers like G⁴⁶ into clickable footnotes.</strong> Apply</li></ul>
 <p>the not-preceded-by-letter rule.</p>
-<p>- <strong>Do not regenerate walt_full_data.json from scratch</strong> — the JSON has</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Do not regenerate walt_full_data.json from scratch</strong> — the JSON has</li></ul>
 <p>been hand-aligned with the print edition. Modify the rendering logic,</p>
 <p>not the data, to fix display bugs.</p>
 
@@ -373,22 +373,21 @@
 
 <p>Before merging, check:</p>
 
-<p>- <strong>Front matter</strong>: Click ¹ in Introduction §I — popup appears below</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Front matter</strong>: Click ¹ in Introduction §I — popup appears below</li></ul>
 <p>that paragraph; popup contains &quot;Sharks, L. (2015)…&quot;</p>
-<p>- <strong>Cross-section</strong>: Click ¹³⁸ in Introduction §IX (Physical Description) —</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Cross-section</strong>: Click ¹³⁸ in Introduction §IX (Physical Description) —</li></ul>
 <p>popup appears with the heavier-than-gold note (defined in introduction</p>
 <p>but lives in the same section).</p>
-<p>- <strong>Manuscripts</strong>: Click ¹¹⁹ in Note on the Manuscripts — popup with</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Manuscripts</strong>: Click ¹¹⁹ in Note on the Manuscripts — popup with</li></ul>
 <p>manuscripts §A note.</p>
-<p>- <strong>Codicological table</strong>: G⁴⁶ and G³¹ in the codicological table</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Codicological table</strong>: G⁴⁶ and G³¹ in the codicological table</li></ul>
 <p>are NOT clickable — they remain inline text with the same superscript</p>
 <p>styling but no cursor change, no click handler.</p>
-<p>- <strong>Pierce mode</strong>: All markers are blue; clicking them does NOTHING; the</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Pierce mode</strong>: All markers are blue; clicking them does NOTHING; the</li></ul>
 <p>popup never opens.</p>
-<p>- <strong>Gospel verse</strong>: Proem footnote ⁴ opens inline below the verse, as</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Gospel verse</strong>: Proem footnote ⁴ opens inline below the verse, as</li></ul>
 <p>it always has.</p>
-<p>- <strong>Re-click</strong>: Clicking an opened footnote closes it.</p>
-<p>- <strong>Section switch</strong>: Switching sections preserves no state (each section&#x27;s</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Re-click</strong>: Clicking an opened footnote closes it.</li><li style="margin:3px 0"><strong>Section switch</strong>: Switching sections preserves no state (each section&#x27;s</li></ul>
 <p>visibleFns is local).</p>
 
 

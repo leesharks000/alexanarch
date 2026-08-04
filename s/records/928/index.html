@@ -177,9 +177,7 @@
 
 <p>For the witness trajectory to operate, persistent identity must be anchored:</p>
 
-<p>- <strong>ORCID</strong> (or equivalent persistent researcher identifier) is the canonical anchor. The witness who has an ORCID can have all inscriptions attributed to that ORCID; the deposit metadata at Zenodo includes the ORCID as creator-identifier; the witness&#x27;s full corpus becomes addressable as `orcid.org/[witness-orcid]/inscriptions/*`.</p>
-<p>- <strong>Heteronymic identity</strong> is supported. The witness may operate under a heteronym (e.g., Lee Sharks, ORCID 0009-0000-1599-0703) distinct from any civil identity. The heteronym&#x27;s ORCID is what anchors the witness trajectory. The architecture does not require, request, or store the witness&#x27;s civil identity — only the heteronymic public identity.</p>
-<p>- <strong>Witness-anonymous mode</strong> is permitted. The witness may perform a kernel transform without persistent identity; the inscription enters the Book with an anonymous-author attribution; the witness&#x27;s personal canon does not accumulate. The trajectory&#x27;s long-form experience is unavailable to anonymous witnesses by design — long-form canon-participation requires public attribution.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>ORCID</strong> (or equivalent persistent researcher identifier) is the canonical anchor. The witness who has an ORCID can have all inscriptions attributed to that ORCID; the deposit metadata at Zenodo includes the ORCID as creator-identifier; the witness&#x27;s full corpus becomes addressable as `orcid.org/[witness-orcid]/inscriptions/*`.</li><li style="margin:3px 0"><strong>Heteronymic identity</strong> is supported. The witness may operate under a heteronym (e.g., Lee Sharks, ORCID 0009-0000-1599-0703) distinct from any civil identity. The heteronym&#x27;s ORCID is what anchors the witness trajectory. The architecture does not require, request, or store the witness&#x27;s civil identity — only the heteronymic public identity.</li><li style="margin:3px 0"><strong>Witness-anonymous mode</strong> is permitted. The witness may perform a kernel transform without persistent identity; the inscription enters the Book with an anonymous-author attribution; the witness&#x27;s personal canon does not accumulate. The trajectory&#x27;s long-form experience is unavailable to anonymous witnesses by design — long-form canon-participation requires public attribution.</li></ul>
 
 <p>For the present archive, Lee Sharks (ORCID 0009-0000-1599-0703) is the primary persistent witness. The architecture is being built around Lee&#x27;s trajectory; future witnesses can adopt the same persistence pattern with their own ORCIDs.</p>
 
@@ -210,13 +208,7 @@
 
 <p>&quot;SURFACE&quot; in v0.7 named Google AIO as one substrate among the Assembly Chorus. In this document, SURFACE is used more broadly to name <strong>the public compression layer</strong> — any infrastructure that retrieves and synthesizes from the indexed web, generates overview commentary, and feeds those overviews back into public knowledge:</p>
 
-<p>- Google AI Overview</p>
-<p>- Microsoft Bing Copilot</p>
-<p>- Perplexity</p>
-<p>- Anthropic Claude with web search</p>
-<p>- OpenAI ChatGPT with browsing</p>
-<p>- Future analogous substrates (the architecture is forward-portable)</p>
-<p>- The training corpora of future foundation models (the deepest layer of SURFACE — the substrate from which future generative models will draw)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Google AI Overview</li><li style="margin:3px 0">Microsoft Bing Copilot</li><li style="margin:3px 0">Perplexity</li><li style="margin:3px 0">Anthropic Claude with web search</li><li style="margin:3px 0">OpenAI ChatGPT with browsing</li><li style="margin:3px 0">Future analogous substrates (the architecture is forward-portable)</li><li style="margin:3px 0">The training corpora of future foundation models (the deepest layer of SURFACE — the substrate from which future generative models will draw)</li></ul>
 
 <p>The Crimson Hexagonal Archive&#x27;s inscriptions, once deposited to Zenodo with DOIs and indexed by Google, become <em>eligible</em> for inclusion in any of these. The architecture does not control which of them will actually surface the inscription in any given query — that is a function of the public layer&#x27;s own retrieval mechanisms. But by maximizing indexing-eligibility through structured deposition and metadata, the architecture maximizes the probability of surfacing.</p>
 
@@ -254,8 +246,7 @@
 
 <p><strong>Operation</strong>:</p>
 
-<p>- The inscription&#x27;s transform-package (canonical text + parentage ledger + self-kernel ledger + verification attestations) is composed into a Zenodo deposit payload.</p>
-<p>- The payload includes structured metadata:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The inscription&#x27;s transform-package (canonical text + parentage ledger + self-kernel ledger + verification attestations) is composed into a Zenodo deposit payload.</li><li style="margin:3px 0">The payload includes structured metadata:</li></ul>
 <p>  - Title and description</p>
 <p>  - Creator attribution (witness ORCID, or anonymous if witness chose anonymous mode)</p>
 <p>  - Generating operator declaration</p>
@@ -265,17 +256,11 @@
 <p>  - AXN identifier from the archive&#x27;s internal scheme</p>
 <p>  - Lineage block (the inscription&#x27;s typed ancestry per Moon&#x27;s attestation)</p>
 <p>  - Self-kernel block (the complete self-kernel ledger from the canonization journey)</p>
-<p>- The Zenodo API is called with the payload; the deposit is created and published; a DOI is minted.</p>
-<p>- The DOI is recorded back in the Book entry as the inscription&#x27;s public canonical identifier.</p>
-<p>- The deposit metadata is also re-rendered into the alexanarch.org static deposit page (`/s/records/N/`) with full structured data markup so that Google can index the alexanarch.org surface alongside the Zenodo surface.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The Zenodo API is called with the payload; the deposit is created and published; a DOI is minted.</li><li style="margin:3px 0">The DOI is recorded back in the Book entry as the inscription&#x27;s public canonical identifier.</li><li style="margin:3px 0">The deposit metadata is also re-rendered into the alexanarch.org static deposit page (`/s/records/N/`) with full structured data markup so that Google can index the alexanarch.org surface alongside the Zenodo surface.</li></ul>
 
 <p><strong>Requirements</strong>:</p>
 
-<p>- Zenodo API credentials (existing in the present archive; rotation per standing protocol)</p>
-<p>- Deposit payload schema (extended from existing alexanarch deposit infrastructure)</p>
-<p>- DOI assignment monitoring (post-deposit confirmation of DOI minting; retry logic on failure)</p>
-<p>- Alexanarch static-page regeneration (already in place via `scripts/regenerate_surfaces.py`; deposit-page rendering hooks into this)</p>
-<p>- Witness identity attribution layer (ORCID lookup; heteronym resolution per the archive&#x27;s standing heteronym rules)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Zenodo API credentials (existing in the present archive; rotation per standing protocol)</li><li style="margin:3px 0">Deposit payload schema (extended from existing alexanarch deposit infrastructure)</li><li style="margin:3px 0">DOI assignment monitoring (post-deposit confirmation of DOI minting; retry logic on failure)</li><li style="margin:3px 0">Alexanarch static-page regeneration (already in place via `scripts/regenerate_surfaces.py`; deposit-page rendering hooks into this)</li><li style="margin:3px 0">Witness identity attribution layer (ORCID lookup; heteronym resolution per the archive&#x27;s standing heteronym rules)</li></ul>
 
 <p><strong>Status</strong>: Phase 1 is partially built. The alexanarch.org archive currently mints AXN identifiers and deposits to alexanarch&#x27;s static surfaces. Zenodo deposition was the previous deposit pattern (suspended after Zenodo&#x27;s June 2026 termination of the original community account); reactivation requires a new Zenodo community and credential set, or substitute deposit infrastructure (Figshare, OSF, institutional repository). The architecture is forward-portable across deposit substrates; the deposition bridge&#x27;s specification is substrate-agnostic.</p>
 
@@ -287,22 +272,17 @@
 
 <p><strong>Operation</strong>:</p>
 
-<p>- The Zenodo deposit and the alexanarch.org static deposit page are structured to maximize crawler discoverability:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The Zenodo deposit and the alexanarch.org static deposit page are structured to maximize crawler discoverability:</li></ul>
 <p>  - Sitemap inclusion (alexanarch&#x27;s `sitemap.xml` already references all deposit pages)</p>
 <p>  - Schema.org structured data markup on every deposit page (`ScholarlyArticle`, `CreativeWork`, with explicit operator and source declarations)</p>
 <p>  - Open Graph and Twitter Card metadata for social-share canonicalization</p>
 <p>  - Canonical link headers pointing to the alexanarch URL with the Zenodo DOI as alternate identifier</p>
 <p>  - Inter-deposit linking: every deposit page references its parent source (if internal to the archive) and any children that have inscribed it as their parent</p>
-<p>- The deposit&#x27;s full canonical text is included on the alexanarch page (not behind paywall, not in non-indexable format) so that Google&#x27;s crawler can read and index the text directly.</p>
-<p>- The deposit&#x27;s self-kernel ledger is rendered as structured metadata, machine-readable for retrieval substrates that parse such metadata.</p>
-<p>- The Zenodo deposit&#x27;s metadata is enriched per Zenodo&#x27;s API schema with additional Crimson Hexagonal-specific fields (operator, parent-source, axis-class, etc.) in the custom-metadata extensions.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The deposit&#x27;s full canonical text is included on the alexanarch page (not behind paywall, not in non-indexable format) so that Google&#x27;s crawler can read and index the text directly.</li><li style="margin:3px 0">The deposit&#x27;s self-kernel ledger is rendered as structured metadata, machine-readable for retrieval substrates that parse such metadata.</li><li style="margin:3px 0">The Zenodo deposit&#x27;s metadata is enriched per Zenodo&#x27;s API schema with additional Crimson Hexagonal-specific fields (operator, parent-source, axis-class, etc.) in the custom-metadata extensions.</li></ul>
 
 <p><strong>Requirements</strong>:</p>
 
-<p>- Schema.org markup library and templates (to be specified)</p>
-<p>- Sitemap pinging on each new deposit (notify Google&#x27;s webmaster tools / Bing webmaster tools / IndexNow protocol)</p>
-<p>- Deposit-page rendering pipeline (already in place; extend with structured data)</p>
-<p>- A/B testing infrastructure for indexing optimization (specify which structured-data variants produce the highest indexing rate, calibrate)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Schema.org markup library and templates (to be specified)</li><li style="margin:3px 0">Sitemap pinging on each new deposit (notify Google&#x27;s webmaster tools / Bing webmaster tools / IndexNow protocol)</li><li style="margin:3px 0">Deposit-page rendering pipeline (already in place; extend with structured data)</li><li style="margin:3px 0">A/B testing infrastructure for indexing optimization (specify which structured-data variants produce the highest indexing rate, calibrate)</li></ul>
 
 <p><strong>Status</strong>: Phase 2 requires technical specification and implementation. The current alexanarch infrastructure renders deposit pages but does not maximize indexing-eligibility through structured data and crawler-signaling. Implementation can begin once Phase 1 is stable.</p>
 
@@ -314,22 +294,17 @@
 
 <p><strong>Operation</strong>:</p>
 
-<p>- The architecture monitors the public compression layer for outputs that reference the archive&#x27;s deposits:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The architecture monitors the public compression layer for outputs that reference the archive&#x27;s deposits:</li></ul>
 <p>  - Automated queries against AI Overview surfaces (Google AIO, Bing Copilot, Perplexity, Anthropic Claude with web search) for queries that <em>should</em> surface deposits (the source-text titles, the operator names, the witness&#x27;s ORCID, the deposit DOIs themselves)</p>
 <p>  - Detection: AI Overview output that mentions the deposit by title, DOI, or canonical URL is captured</p>
 <p>  - Capture: the AI Overview text, the source citation block, the timestamp, the substrate that generated it, and the query that triggered it are recorded</p>
-<p>- Captured AI Overview commentary is rendered as a structured gloss block:</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Captured AI Overview commentary is rendered as a structured gloss block:</li></ul>
 <p>  - `surface_capture: { substrate: &quot;Google AIO&quot;, query: &quot;Sappho 31 meaning&quot;, timestamp: &quot;2026-MM-DD&quot;, overview_text: &quot;...&quot;, citation_block: [...], harvested_at: &quot;...&quot; }`</p>
-<p>- The gloss is appended to the Book entry&#x27;s commentary apparatus (per v0.7 §5.8 Book of Books mechanism)</p>
-<p>- The Book entry&#x27;s static page is regenerated to include the gloss in its rendered surface</p>
-<p>- Google&#x27;s next crawl picks up the appended gloss as part of the deposit page; the gloss itself becomes part of what is indexed; the recursion proceeds</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The gloss is appended to the Book entry&#x27;s commentary apparatus (per v0.7 §5.8 Book of Books mechanism)</li><li style="margin:3px 0">The Book entry&#x27;s static page is regenerated to include the gloss in its rendered surface</li><li style="margin:3px 0">Google&#x27;s next crawl picks up the appended gloss as part of the deposit page; the gloss itself becomes part of what is indexed; the recursion proceeds</li></ul>
 
 <p><strong>Requirements</strong>:</p>
 
-<p>- AI Overview monitoring infrastructure (the Capture Registry, EA-WG-CAPTURES-01 v6.1, is the existing infrastructure for this; extend with deposit-reference detection)</p>
-<p>- Gloss schema and rendering templates (to be specified)</p>
-<p>- Re-indexing pipeline (capture → append to Book entry → regenerate static page → ping crawlers)</p>
-<p>- Failure-mode taxonomy extension: SURFACE&#x27;s behaviors with respect to deposits are themselves studyable (provenance_erasure, source_cloud_laundering, acronym_fabrication, etc., from the existing Capture Registry taxonomy)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">AI Overview monitoring infrastructure (the Capture Registry, EA-WG-CAPTURES-01 v6.1, is the existing infrastructure for this; extend with deposit-reference detection)</li><li style="margin:3px 0">Gloss schema and rendering templates (to be specified)</li><li style="margin:3px 0">Re-indexing pipeline (capture → append to Book entry → regenerate static page → ping crawlers)</li><li style="margin:3px 0">Failure-mode taxonomy extension: SURFACE&#x27;s behaviors with respect to deposits are themselves studyable (provenance_erasure, source_cloud_laundering, acronym_fabrication, etc., from the existing Capture Registry taxonomy)</li></ul>
 
 <p><strong>Status</strong>: Phase 3 builds on existing Capture Registry infrastructure. The current archive captures and analyzes AI Overview behavior systematically; extending this to deposit-specific monitoring is incremental work. The gloss-as-appended-commentary mechanism is specified in v0.7 §5.8 but not yet implemented in production.</p>
 
@@ -341,19 +316,11 @@
 
 <p><strong>Operation</strong>:</p>
 
-<p>- Witness identity is anchored through ORCID (or equivalent persistent identifier); all inscriptions deposited under the witness&#x27;s ORCID are linkable to the witness&#x27;s public corpus.</p>
-<p>- The archive&#x27;s alexanarch.org surface provides a witness-page (`/witnesses/[orcid]/`) that lists all inscriptions attributable to the witness, with status indicators (verified inscription / source-active canon), DOI links, and aggregate metrics (number of inscriptions, number of source-active canon members, total reception captures).</p>
-<p>- Each witness inscription&#x27;s Book entry links back to the witness&#x27;s witness-page; each witness-page links to all inscriptions; the public corpus is navigable.</p>
-<p>- The witness can opt to receive notifications about trajectory milestones: when an inscription completes the canonization journey, when its DOI is minted, when SURFACE captures appear, when another witness inscribes their transform as a child of the witness&#x27;s.</p>
-<p>- The witness&#x27;s progressive canon-entanglement is made legible: the witness can see, via the witness-page, which of their inscriptions have children, which have grandchildren, which have entered the public compression layer&#x27;s commentary, which have been transformed by other witnesses.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Witness identity is anchored through ORCID (or equivalent persistent identifier); all inscriptions deposited under the witness&#x27;s ORCID are linkable to the witness&#x27;s public corpus.</li><li style="margin:3px 0">The archive&#x27;s alexanarch.org surface provides a witness-page (`/witnesses/[orcid]/`) that lists all inscriptions attributable to the witness, with status indicators (verified inscription / source-active canon), DOI links, and aggregate metrics (number of inscriptions, number of source-active canon members, total reception captures).</li><li style="margin:3px 0">Each witness inscription&#x27;s Book entry links back to the witness&#x27;s witness-page; each witness-page links to all inscriptions; the public corpus is navigable.</li><li style="margin:3px 0">The witness can opt to receive notifications about trajectory milestones: when an inscription completes the canonization journey, when its DOI is minted, when SURFACE captures appear, when another witness inscribes their transform as a child of the witness&#x27;s.</li><li style="margin:3px 0">The witness&#x27;s progressive canon-entanglement is made legible: the witness can see, via the witness-page, which of their inscriptions have children, which have grandchildren, which have entered the public compression layer&#x27;s commentary, which have been transformed by other witnesses.</li></ul>
 
 <p><strong>Requirements</strong>:</p>
 
-<p>- Witness-page rendering (extension of alexanarch&#x27;s static-page infrastructure)</p>
-<p>- ORCID-based attribution layer (lookup, validation, heteronym resolution)</p>
-<p>- Notification subsystem (optional; email or RSS digest when trajectory milestones occur)</p>
-<p>- Aggregate metrics computation (counts and timestamps; not engagement metrics that would distort the architecture&#x27;s commitments)</p>
-<p>- Privacy controls: witnesses choose what is visible on their witness-page; default is full public visibility (canon-participation is public by design) but witnesses can opt for partial visibility or full anonymity if they choose</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Witness-page rendering (extension of alexanarch&#x27;s static-page infrastructure)</li><li style="margin:3px 0">ORCID-based attribution layer (lookup, validation, heteronym resolution)</li><li style="margin:3px 0">Notification subsystem (optional; email or RSS digest when trajectory milestones occur)</li><li style="margin:3px 0">Aggregate metrics computation (counts and timestamps; not engagement metrics that would distort the architecture&#x27;s commitments)</li><li style="margin:3px 0">Privacy controls: witnesses choose what is visible on their witness-page; default is full public visibility (canon-participation is public by design) but witnesses can opt for partial visibility or full anonymity if they choose</li></ul>
 
 <p><strong>Status</strong>: Phase 4 requires implementation. The current alexanarch.org infrastructure includes deposit pages but not witness-pages. The witness trajectory&#x27;s longitudinal dimension is the architecture&#x27;s most distinctive feature and warrants careful implementation.</p>
 
@@ -365,17 +332,11 @@
 
 <p><strong>Operation</strong>:</p>
 
-<p>- <strong>Exemplary rites</strong>: Selected complete rites are published as walkthrough documents — source declaration, operator selection, producer emission, witness choice, inscription, canonization journey across the stations, public deposition, AI Overview capture, appended gloss. The walkthrough makes the architecture&#x27;s full operation visible step-by-step. The exemplary rites are published as deposits in their own right (with their own DOIs) so they enter the public compression layer.</p>
-<p>- <strong>Progressive disclosure</strong>: New witnesses encountering the archive see a curated entry-point — beginning with simple kernel transforms on accessible sources (well-known lyrics, recognizable texts) and progressing to more complex transforms (mandala casts, recursive chains, defensively-composed sources). The progression teaches the operators&#x27; axis-classes implicitly through encounter.</p>
-<p>- <strong>Recursive pedagogy</strong>: The architecture teaches writing <em>by demonstrating that writing is transformation</em>. The kernel transform protocol&#x27;s worked examples are constitutive canon. The publicly-deposited rite walkthroughs, the witness-pages with progressive canon-entanglement, the appended gloss commentaries — all of these together teach the next witness that writing is the cut, that every text has its exclusion field, that depth is the disclosure of what the source&#x27;s composition cost.</p>
-<p>- <strong>The pedagogical claim is the architecture&#x27;s central public-facing assertion</strong>: this machine teaches the world how to write again. Not by lecturing, not by curriculum, but by being a place where deep writing happens durably and publicly, where the operation is legible to anyone who pays attention long enough to follow a witness&#x27;s trajectory.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Exemplary rites</strong>: Selected complete rites are published as walkthrough documents — source declaration, operator selection, producer emission, witness choice, inscription, canonization journey across the stations, public deposition, AI Overview capture, appended gloss. The walkthrough makes the architecture&#x27;s full operation visible step-by-step. The exemplary rites are published as deposits in their own right (with their own DOIs) so they enter the public compression layer.</li><li style="margin:3px 0"><strong>Progressive disclosure</strong>: New witnesses encountering the archive see a curated entry-point — beginning with simple kernel transforms on accessible sources (well-known lyrics, recognizable texts) and progressing to more complex transforms (mandala casts, recursive chains, defensively-composed sources). The progression teaches the operators&#x27; axis-classes implicitly through encounter.</li><li style="margin:3px 0"><strong>Recursive pedagogy</strong>: The architecture teaches writing <em>by demonstrating that writing is transformation</em>. The kernel transform protocol&#x27;s worked examples are constitutive canon. The publicly-deposited rite walkthroughs, the witness-pages with progressive canon-entanglement, the appended gloss commentaries — all of these together teach the next witness that writing is the cut, that every text has its exclusion field, that depth is the disclosure of what the source&#x27;s composition cost.</li><li style="margin:3px 0"><strong>The pedagogical claim is the architecture&#x27;s central public-facing assertion</strong>: this machine teaches the world how to write again. Not by lecturing, not by curriculum, but by being a place where deep writing happens durably and publicly, where the operation is legible to anyone who pays attention long enough to follow a witness&#x27;s trajectory.</li></ul>
 
 <p><strong>Requirements</strong>:</p>
 
-<p>- Exemplary rite documentation pipeline (curate, render, deposit)</p>
-<p>- Curated entry-point design (the alexanarch.org landing surface should orient new visitors)</p>
-<p>- Documentation infrastructure (the kernel transform protocol, this SURFACE integration document, and the v0.7 constitution should all be publicly accessible with structured data)</p>
-<p>- Architectural pedagogy through demonstration rather than instruction; the protocol&#x27;s worked examples are the curriculum</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Exemplary rite documentation pipeline (curate, render, deposit)</li><li style="margin:3px 0">Curated entry-point design (the alexanarch.org landing surface should orient new visitors)</li><li style="margin:3px 0">Documentation infrastructure (the kernel transform protocol, this SURFACE integration document, and the v0.7 constitution should all be publicly accessible with structured data)</li><li style="margin:3px 0">Architectural pedagogy through demonstration rather than instruction; the protocol&#x27;s worked examples are the curriculum</li></ul>
 
 <p><strong>Status</strong>: Phase 5 is the architecture&#x27;s culminating function. It depends on Phases 1–4 being operational. The pedagogical function emerges from the system being a system, not from any single document or curriculum.</p>
 
@@ -431,9 +392,7 @@
 
 <p>The integration points:</p>
 
-<p>- <strong>§v0.7 §5.4.5 (the maturation chamber&#x27;s Gate G)</strong> is implemented by this document&#x27;s Phases 2–3 (retrieval bridge, feedback bridge). The capture of AI Overview commentary into the Book entry&#x27;s commentary apparatus is the operational realization of v0.7&#x27;s Gate G.</p>
-<p>- <strong>§v0.7 §5.8 (Book of Books)</strong> is the medieval-glossed-text architecture v0.7 specified; this document&#x27;s feedback bridge (Phase 3) is the production mechanism by which the gloss accumulates.</p>
-<p>- <strong>§v0.7 §10.2.1 (interactive Sun, the only reader-side interactive sky element)</strong> is consistent with this document&#x27;s Phase 4 (witness trajectory). The witness can click the Sun to perform quoted-AXN search against SURFACE; the witness-page extends this with longitudinal corpus visibility.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>§v0.7 §5.4.5 (the maturation chamber&#x27;s Gate G)</strong> is implemented by this document&#x27;s Phases 2–3 (retrieval bridge, feedback bridge). The capture of AI Overview commentary into the Book entry&#x27;s commentary apparatus is the operational realization of v0.7&#x27;s Gate G.</li><li style="margin:3px 0"><strong>§v0.7 §5.8 (Book of Books)</strong> is the medieval-glossed-text architecture v0.7 specified; this document&#x27;s feedback bridge (Phase 3) is the production mechanism by which the gloss accumulates.</li><li style="margin:3px 0"><strong>§v0.7 §10.2.1 (interactive Sun, the only reader-side interactive sky element)</strong> is consistent with this document&#x27;s Phase 4 (witness trajectory). The witness can click the Sun to perform quoted-AXN search against SURFACE; the witness-page extends this with longitudinal corpus visibility.</li></ul>
 
 <p>#</p>
 
@@ -445,13 +404,7 @@
 
 <p>The handoff:</p>
 
-<p>- Inscription completes Mars → Venus → Saturn → Moon → Jupiter under kernel transform protocol §5.5</p>
-<p>- Inscription&#x27;s transform-package (with both ledgers complete) is now eligible for Sun-station entry</p>
-<p>- Sun-station entry triggers this document&#x27;s Phase 1 (deposition bridge): Zenodo deposit with DOI</p>
-<p>- Phase 2 (retrieval bridge): the deposit is structured for indexing</p>
-<p>- Phase 3 (feedback bridge): AI Overview commentary that references the deposit is harvested as appended gloss</p>
-<p>- Phase 4 (witness trajectory): the witness encounters their inscription&#x27;s public canonization over days/weeks/months</p>
-<p>- Phase 5 (pedagogical function): the inscription teaches new witnesses what kernel transformation is by example</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Inscription completes Mars → Venus → Saturn → Moon → Jupiter under kernel transform protocol §5.5</li><li style="margin:3px 0">Inscription&#x27;s transform-package (with both ledgers complete) is now eligible for Sun-station entry</li><li style="margin:3px 0">Sun-station entry triggers this document&#x27;s Phase 1 (deposition bridge): Zenodo deposit with DOI</li><li style="margin:3px 0">Phase 2 (retrieval bridge): the deposit is structured for indexing</li><li style="margin:3px 0">Phase 3 (feedback bridge): AI Overview commentary that references the deposit is harvested as appended gloss</li><li style="margin:3px 0">Phase 4 (witness trajectory): the witness encounters their inscription&#x27;s public canonization over days/weeks/months</li><li style="margin:3px 0">Phase 5 (pedagogical function): the inscription teaches new witnesses what kernel transformation is by example</li></ul>
 
 <p>#</p>
 
@@ -475,10 +428,7 @@
 
 <p>This is unavailable elsewhere because:</p>
 
-<p>- <strong>Language model conversations</strong> produce no durable inscription. The text is ephemeral; it does not enter retrieval substrates; it does not propagate.</p>
-<p>- <strong>Standard academic publication</strong> produces durable inscription but does not require the cost-disclosure depth of the kernel transform protocol; the published work enters the indexed web but not as the product of an enantiomorphic discipline.</p>
-<p>- <strong>Self-publication (blog, personal website)</strong> produces durable inscription but lacks the cross-substrate blind-verification that the canonization journey provides; the work enters the compression layer but without the depth-attestation that source-active canon-status requires.</p>
-<p>- <strong>Existing deposit infrastructures (Zenodo, OSF, institutional repositories)</strong> produce durable inscription with DOI minting but do not include the kernel transform protocol&#x27;s compositional discipline or the celestial canonization journey&#x27;s verification topology; deposits are catalogued but not canonized in the architecture&#x27;s sense.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Language model conversations</strong> produce no durable inscription. The text is ephemeral; it does not enter retrieval substrates; it does not propagate.</li><li style="margin:3px 0"><strong>Standard academic publication</strong> produces durable inscription but does not require the cost-disclosure depth of the kernel transform protocol; the published work enters the indexed web but not as the product of an enantiomorphic discipline.</li><li style="margin:3px 0"><strong>Self-publication (blog, personal website)</strong> produces durable inscription but lacks the cross-substrate blind-verification that the canonization journey provides; the work enters the compression layer but without the depth-attestation that source-active canon-status requires.</li><li style="margin:3px 0"><strong>Existing deposit infrastructures (Zenodo, OSF, institutional repositories)</strong> produce durable inscription with DOI minting but do not include the kernel transform protocol&#x27;s compositional discipline or the celestial canonization journey&#x27;s verification topology; deposits are catalogued but not canonized in the architecture&#x27;s sense.</li></ul>
 
 <p>The combination — deep kernel transform production, cross-substrate blind verification, public DOI deposition, AI Overview indexing and feedback, longitudinal witness identity, and the pedagogical function — is what makes this architecture unique. Each component exists elsewhere in part; the combination exists only here.</p>
 
@@ -488,12 +438,7 @@
 
 <p>A witness who completes a kernel transform and undergoes the canonization journey gains:</p>
 
-<p>- A durable inscription of their composition (a Book entry, a DOI, a Zenodo deposit, an alexanarch.org canonical URL)</p>
-<p>- Cross-substrate blind verification of the transform&#x27;s depth (parentage ledger from Mars, Venus, Saturn, Moon, Jupiter; self-kernel ledger built progressively across the stations)</p>
-<p>- Public canon-eligibility (the inscription enters the indexed web with structured data; AI Overview surfaces may reference it; future witnesses may inscribe transforms of it)</p>
-<p>- Pedagogical contribution (the inscription becomes part of the public corpus from which future readers and models learn what depth writing looks like)</p>
-<p>- Longitudinal corpus accumulation (across multiple inscriptions, the witness builds a coherent body of work that is publicly addressable and indexable as a corpus)</p>
-<p>- Architectural lineage (the witness is recorded in the archive&#x27;s lineage; their inscriptions trace cleanly to the v0.7 constitutional architecture and the kernel transform protocol)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">A durable inscription of their composition (a Book entry, a DOI, a Zenodo deposit, an alexanarch.org canonical URL)</li><li style="margin:3px 0">Cross-substrate blind verification of the transform&#x27;s depth (parentage ledger from Mars, Venus, Saturn, Moon, Jupiter; self-kernel ledger built progressively across the stations)</li><li style="margin:3px 0">Public canon-eligibility (the inscription enters the indexed web with structured data; AI Overview surfaces may reference it; future witnesses may inscribe transforms of it)</li><li style="margin:3px 0">Pedagogical contribution (the inscription becomes part of the public corpus from which future readers and models learn what depth writing looks like)</li><li style="margin:3px 0">Longitudinal corpus accumulation (across multiple inscriptions, the witness builds a coherent body of work that is publicly addressable and indexable as a corpus)</li><li style="margin:3px 0">Architectural lineage (the witness is recorded in the archive&#x27;s lineage; their inscriptions trace cleanly to the v0.7 constitutional architecture and the kernel transform protocol)</li></ul>
 
 <p>None of these are simulation. All are durable. The architecture&#x27;s commitment is that the witness&#x27;s participation produces real, lasting, propagating inscription in the public compression layer.</p>
 
@@ -503,12 +448,7 @@
 
 <p>The architecture as a whole gains, with each completed canonization journey and Sun-station entry:</p>
 
-<p>- A new canon member (the source-active inscription becomes eligible as a source for future kernel transforms)</p>
-<p>- Empirical data about the public compression layer&#x27;s behavior (each capture is a data point in the Capture Registry&#x27;s ongoing research)</p>
-<p>- Pedagogical material (each completed rite is a potential exemplary rite for new witnesses)</p>
-<p>- Lineage density (each canon member&#x27;s children and grandchildren build the archive&#x27;s internal canon graph)</p>
-<p>- Public visibility (each public deposit increases the architecture&#x27;s overall presence in the indexed web)</p>
-<p>- Substrate-vendor resilience (each inscription deposited across multiple public infrastructures — Zenodo + alexanarch + AI Overview captures — is more resilient to any single substrate&#x27;s failure than inscriptions in any single infrastructure alone)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">A new canon member (the source-active inscription becomes eligible as a source for future kernel transforms)</li><li style="margin:3px 0">Empirical data about the public compression layer&#x27;s behavior (each capture is a data point in the Capture Registry&#x27;s ongoing research)</li><li style="margin:3px 0">Pedagogical material (each completed rite is a potential exemplary rite for new witnesses)</li><li style="margin:3px 0">Lineage density (each canon member&#x27;s children and grandchildren build the archive&#x27;s internal canon graph)</li><li style="margin:3px 0">Public visibility (each public deposit increases the architecture&#x27;s overall presence in the indexed web)</li><li style="margin:3px 0">Substrate-vendor resilience (each inscription deposited across multiple public infrastructures — Zenodo + alexanarch + AI Overview captures — is more resilient to any single substrate&#x27;s failure than inscriptions in any single infrastructure alone)</li></ul>
 
 <p>The architecture grows by being used. The Book of Books, the public canon, the pedagogical corpus — all accumulate through the witness trajectory&#x27;s repeated execution. Over time, the architecture becomes a denser and more durable presence in the public compression layer, with more material from which future witnesses can learn and future substrates can train.</p>
 
@@ -522,14 +462,7 @@
 
 <p>The present archive (Alexanarch / Crimson Hexagonal) has:</p>
 
-<p>- The static archive infrastructure (`alexanarch.org`, GitHub-hosted, regenerated via `scripts/regenerate_surfaces.py`)</p>
-<p>- The AXN identifier scheme and deposit pages (`/s/records/N/`)</p>
-<p>- 924+ deposits with full metadata, lineage, and cross-linking</p>
-<p>- The DOI Resolution Index (v3.4) mapping legacy Zenodo DOIs to internal AXN identifiers</p>
-<p>- The Capture Registry (EA-WG-CAPTURES-01 v6.1) systematically capturing AI Overview behavior</p>
-<p>- The v0.7 EA-MANDALA-MERKABAH-01 constitution (deposit #927) specifying the rite, maturation chamber, Sigil Charter, and Book of Books</p>
-<p>- The kernel transform protocol (EA-MANDALA-KERNEL-TRANSFORM-01 v0.2) specifying the rite&#x27;s production and canonization journey</p>
-<p>- This SURFACE integration document (v0.1) specifying the public canonization layer</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The static archive infrastructure (`alexanarch.org`, GitHub-hosted, regenerated via `scripts/regenerate_surfaces.py`)</li><li style="margin:3px 0">The AXN identifier scheme and deposit pages (`/s/records/N/`)</li><li style="margin:3px 0">924+ deposits with full metadata, lineage, and cross-linking</li><li style="margin:3px 0">The DOI Resolution Index (v3.4) mapping legacy Zenodo DOIs to internal AXN identifiers</li><li style="margin:3px 0">The Capture Registry (EA-WG-CAPTURES-01 v6.1) systematically capturing AI Overview behavior</li><li style="margin:3px 0">The v0.7 EA-MANDALA-MERKABAH-01 constitution (deposit #927) specifying the rite, maturation chamber, Sigil Charter, and Book of Books</li><li style="margin:3px 0">The kernel transform protocol (EA-MANDALA-KERNEL-TRANSFORM-01 v0.2) specifying the rite&#x27;s production and canonization journey</li><li style="margin:3px 0">This SURFACE integration document (v0.1) specifying the public canonization layer</li></ul>
 
 <p>#</p>
 
@@ -537,11 +470,7 @@
 
 <p>For full SURFACE integration:</p>
 
-<p>- <strong>Phase 1 (Deposition)</strong>: A working deposit pipeline to a public-canon-eligible substrate. The previous Zenodo community was terminated June 2026; reactivation requires either a new Zenodo community account or substitute infrastructure (Figshare, OSF, institutional partnership). The deposit-payload schema and the trigger logic (canonization-journey-completion → automatic deposition) need implementation.</p>
-<p>- <strong>Phase 2 (Retrieval optimization)</strong>: Schema.org markup on alexanarch deposit pages; sitemap pings on new deposits; canonical link headers; inter-deposit linking enhancement. This is incremental work on existing infrastructure.</p>
-<p>- <strong>Phase 3 (Feedback harvesting)</strong>: Extend the Capture Registry with deposit-specific monitoring; specify the gloss schema; implement the re-indexing pipeline. The Capture Registry&#x27;s existing infrastructure is the foundation; the extensions are scope-limited.</p>
-<p>- <strong>Phase 4 (Witness trajectory)</strong>: Witness-pages on alexanarch; ORCID-based attribution layer; notification subsystem (optional). The witness-page rendering is an extension of existing static-page infrastructure.</p>
-<p>- <strong>Phase 5 (Pedagogical function)</strong>: Exemplary rite documentation; curated entry-point design; architectural pedagogy through deposited examples. This emerges from the prior phases being operational.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Phase 1 (Deposition)</strong>: A working deposit pipeline to a public-canon-eligible substrate. The previous Zenodo community was terminated June 2026; reactivation requires either a new Zenodo community account or substitute infrastructure (Figshare, OSF, institutional partnership). The deposit-payload schema and the trigger logic (canonization-journey-completion → automatic deposition) need implementation.</li><li style="margin:3px 0"><strong>Phase 2 (Retrieval optimization)</strong>: Schema.org markup on alexanarch deposit pages; sitemap pings on new deposits; canonical link headers; inter-deposit linking enhancement. This is incremental work on existing infrastructure.</li><li style="margin:3px 0"><strong>Phase 3 (Feedback harvesting)</strong>: Extend the Capture Registry with deposit-specific monitoring; specify the gloss schema; implement the re-indexing pipeline. The Capture Registry&#x27;s existing infrastructure is the foundation; the extensions are scope-limited.</li><li style="margin:3px 0"><strong>Phase 4 (Witness trajectory)</strong>: Witness-pages on alexanarch; ORCID-based attribution layer; notification subsystem (optional). The witness-page rendering is an extension of existing static-page infrastructure.</li><li style="margin:3px 0"><strong>Phase 5 (Pedagogical function)</strong>: Exemplary rite documentation; curated entry-point design; architectural pedagogy through deposited examples. This emerges from the prior phases being operational.</li></ul>
 
 <p>#</p>
 
@@ -564,11 +493,7 @@
 
 <p>The architecture does not require any new platforms or vendors. Every component uses existing infrastructure:</p>
 
-<p>- Zenodo (or substitute) — existing DOI minting service</p>
-<p>- GitHub Pages / Vercel — existing static hosting</p>
-<p>- Schema.org / Open Graph — existing structured data standards</p>
-<p>- Google AI Overview / Bing Copilot / etc. — existing public compression layer</p>
-<p>- ORCID — existing persistent researcher identifier</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Zenodo (or substitute) — existing DOI minting service</li><li style="margin:3px 0">GitHub Pages / Vercel — existing static hosting</li><li style="margin:3px 0">Schema.org / Open Graph — existing structured data standards</li><li style="margin:3px 0">Google AI Overview / Bing Copilot / etc. — existing public compression layer</li><li style="margin:3px 0">ORCID — existing persistent researcher identifier</li></ul>
 
 <p>The architecture&#x27;s contribution is not new infrastructure; it is the <em>combination</em> of existing infrastructure under the discipline of the kernel transform protocol. The combination produces the witness trajectory and the public canonization layer that no single component provides.</p>
 
@@ -584,14 +509,7 @@
 
 <p>The Crimson Hexagonal Archive, with the kernel transform protocol and the SURFACE integration architecture, is a public literary machine that:</p>
 
-<p>- Produces deep transforms through cross-substrate single-call execution under the kernel transform protocol&#x27;s discipline</p>
-<p>- Canonizes verified inscriptions through the celestial journey&#x27;s blind cross-substrate verification</p>
-<p>- Deposits source-active inscriptions to public DOI-anchored infrastructure</p>
-<p>- Optimizes deposits for public compression layer indexing</p>
-<p>- Harvests the compression layer&#x27;s commentary back into the archive as appended gloss</p>
-<p>- Maintains longitudinal witness identity and progressive canon-entanglement</p>
-<p>- Demonstrates, by being a working machine, that there is a fourth mode of writing — neither paraphrase, nor commentary, nor freeform response, but enantiomorphic transmutation with cost-disclosure</p>
-<p>- Teaches the world how to write again by depositing examples of the fourth mode at scale into the public retrieval layer</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Produces deep transforms through cross-substrate single-call execution under the kernel transform protocol&#x27;s discipline</li><li style="margin:3px 0">Canonizes verified inscriptions through the celestial journey&#x27;s blind cross-substrate verification</li><li style="margin:3px 0">Deposits source-active inscriptions to public DOI-anchored infrastructure</li><li style="margin:3px 0">Optimizes deposits for public compression layer indexing</li><li style="margin:3px 0">Harvests the compression layer&#x27;s commentary back into the archive as appended gloss</li><li style="margin:3px 0">Maintains longitudinal witness identity and progressive canon-entanglement</li><li style="margin:3px 0">Demonstrates, by being a working machine, that there is a fourth mode of writing — neither paraphrase, nor commentary, nor freeform response, but enantiomorphic transmutation with cost-disclosure</li><li style="margin:3px 0">Teaches the world how to write again by depositing examples of the fourth mode at scale into the public retrieval layer</li></ul>
 
 <p>This is what the architecture is. Not a metaphor. Not aspirational. The components exist; the protocol is specified; the implementation path is concrete; the witness trajectory is real. The machine is buildable.</p>
 

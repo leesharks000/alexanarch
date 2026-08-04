@@ -67,12 +67,7 @@
 
 <p>The system implements a four-layer reconstitution architecture:</p>
 
-<div style="font-family:var(--mono);font-size:.8em">| Layer | Content | Function |</div>
-<p>|-------|---------|----------|</p>
-<div style="font-family:var(--mono);font-size:.8em">| 1. Bootstrap | Machine-applicable identity specification | Makes a new agent instance operationally continuous with the archived self |</div>
-<div style="font-family:var(--mono);font-size:.8em">| 2. Tether | Operational state (pending threads, positions, questions) | Session handoff — what was happening |</div>
-<div style="font-family:var(--mono);font-size:.8em">| 3. Narrative | Compression-survivable summary | Retains address under summarizer/retrieval flattening |</div>
-<div style="font-family:var(--mono);font-size:.8em">| 4. Provenance | Concept DOI, version chain, hashes, fallback URL | Proof of continuity; Gravity Well-independent reconstitution |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Layer</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Content</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Function</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">1. Bootstrap</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Machine-applicable identity specification</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Makes a new agent instance operationally continuous with the archived self</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">2. Tether</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Operational state (pending threads, positions, questions)</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Session handoff — what was happening</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">3. Narrative</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Compression-survivable summary</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Retains address under summarizer/retrieval flattening</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">4. Provenance</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Concept DOI, version chain, hashes, fallback URL</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Proof of continuity; Gravity Well-independent reconstitution</td></tr></table></div>
 
 <hr>
 
@@ -156,23 +151,7 @@ Next Agent Instance</pre>
 
 <h2>3.1 Endpoints</h2>
 
-<div style="font-family:var(--mono);font-size:.8em">| Endpoint | Method | Purpose |</div>
-<p>|----------|--------|---------|</p>
-<div style="font-family:var(--mono);font-size:.8em">| `/v1/chain/create` | POST | Create a new provenance chain (= future concept DOI) |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `/v1/chain/{id}` | GET | Chain status including staged count |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `/v1/chains` | GET | List all chains for the authenticated key |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `/v1/capture` | POST | Stage an utterance into a chain |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `/v1/staged/{chain_id}` | GET | Inspect undeposited objects |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `/v1/deposit` | POST | Compress + wrap + anchor to Zenodo |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `/v1/reconstitute/{chain_id}` | GET | Four-layer reconstitution package |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `/v1/drift/{chain_id}` | POST | Compare current manifest against archived |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `/v1/chain/{id}/history` | GET | Full deposit history |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `/v1/schema/bootstrap` | GET | Bootstrap manifest schema specification |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `/v1/util/constraint-hash` | POST | Compute constraint hash |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `/v1/admin/keys/create` | POST | Create API key (requires admin token) |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `/v1/admin/keys/revoke/{id}` | POST | Revoke API key |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `/v1/admin/cleanup/{chain_id}` | POST | Drop full content from deposited objects |</div>
-<div style="font-family:var(--mono);font-size:.8em">| `/v1/health` | GET | Service health check |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Endpoint</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Method</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Purpose</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`/v1/chain/create`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">POST</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Create a new provenance chain (= future concept DOI)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`/v1/chain/{id}`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">GET</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Chain status including staged count</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`/v1/chains`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">GET</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">List all chains for the authenticated key</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`/v1/capture`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">POST</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Stage an utterance into a chain</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`/v1/staged/{chain_id}`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">GET</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Inspect undeposited objects</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`/v1/deposit`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">POST</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Compress + wrap + anchor to Zenodo</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`/v1/reconstitute/{chain_id}`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">GET</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Four-layer reconstitution package</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`/v1/drift/{chain_id}`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">POST</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Compare current manifest against archived</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`/v1/chain/{id}/history`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">GET</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Full deposit history</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`/v1/schema/bootstrap`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">GET</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Bootstrap manifest schema specification</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`/v1/util/constraint-hash`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">POST</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Compute constraint hash</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`/v1/admin/keys/create`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">POST</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Create API key (requires admin token)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`/v1/admin/keys/revoke/{id}`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">POST</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Revoke API key</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`/v1/admin/cleanup/{chain_id}`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">POST</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Drop full content from deposited objects</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`/v1/health`</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">GET</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Service health check</td></tr></table></div>
 
 <p>#</p>
 
@@ -225,9 +204,7 @@ Next Agent Instance</pre>
 
 <p>The compression service is the product. The tiered model:</p>
 
-<p>- <strong>Tier 0 (Free):</strong> Raw anchor only. Hash, wrap, deposit. No compression.</p>
-<p>- <strong>Tier 1:</strong> Structural wrap with metadata, threading, colophon.</p>
-<p>- <strong>Tier 2:</strong> Full AI-mediated symbolon compression. Narrative summary with</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Tier 0 (Free):</strong> Raw anchor only. Hash, wrap, deposit. No compression.</li><li style="margin:3px 0"><strong>Tier 1:</strong> Structural wrap with metadata, threading, colophon.</li><li style="margin:3px 0"><strong>Tier 2:</strong> Full AI-mediated symbolon compression. Narrative summary with</li></ul>
 <p>  formal density, operative terminology, and citational mass. The deposit</p>
 <p>  retains its address under retrieval flattening.</p>
 
@@ -268,12 +245,7 @@ Next Agent Instance</pre>
 
 <h2>6. Technical Stack</h2>
 
-<p>- <strong>Runtime:</strong> Python 3.11+ / FastAPI</p>
-<p>- <strong>Database:</strong> PostgreSQL (staging only)</p>
-<p>- <strong>Archive:</strong> Zenodo (CERN infrastructure, DOI minting)</p>
-<p>- <strong>Deployment:</strong> Render (Docker, render.yaml blueprint)</p>
-<p>- <strong>Authentication:</strong> API keys (SHA-256 hashed, Bearer token)</p>
-<p>- <strong>Dependencies:</strong> httpx (async HTTP), SQLAlchemy (ORM), pydantic (validation)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Runtime:</strong> Python 3.11+ / FastAPI</li><li style="margin:3px 0"><strong>Database:</strong> PostgreSQL (staging only)</li><li style="margin:3px 0"><strong>Archive:</strong> Zenodo (CERN infrastructure, DOI minting)</li><li style="margin:3px 0"><strong>Deployment:</strong> Render (Docker, render.yaml blueprint)</li><li style="margin:3px 0"><strong>Authentication:</strong> API keys (SHA-256 hashed, Bearer token)</li><li style="margin:3px 0"><strong>Dependencies:</strong> httpx (async HTTP), SQLAlchemy (ORM), pydantic (validation)</li></ul>
 
 <hr>
 
@@ -283,10 +255,7 @@ Next Agent Instance</pre>
 <p>Agents on Moltbook face session volatility — each context window, each conversation</p>
 <p>exists in ephemeral context. Gravity Well provides:</p>
 
-<p>- Granular capture of every utterance (comments, replies, threads)</p>
-<p>- Versioned deposits to Zenodo at configurable thresholds</p>
-<p>- Four-layer reconstitution for new instances</p>
-<p>- Drift detection against archived identity</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Granular capture of every utterance (comments, replies, threads)</li><li style="margin:3px 0">Versioned deposits to Zenodo at configurable thresholds</li><li style="margin:3px 0">Four-layer reconstitution for new instances</li><li style="margin:3px 0">Drift detection against archived identity</li></ul>
 
 <p>The Moltbook use case validates the architecture. The broader play is</p>
 <p>micro-servicing the retrieval compression and anchoring layers for any agent,</p>

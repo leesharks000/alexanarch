@@ -334,33 +334,19 @@
 
 <h2>Strong signals (high confidence)</h2>
 
-<p>- <strong>Title patterns:</strong> CTI_WOUND:, TL;DR:, PROBE-RESULT-, PVE-, EA- codes</p>
-<p>- <strong>Filename patterns:</strong> .html → web_surface_spec, .py → code_artifact</p>
-<p>- <strong>Resource type:</strong> Zenodo&#x27;s resource type field</p>
-<p>- <strong>Creator name field:</strong> The literal Zenodo creator string</p>
-<p>- <strong>Community membership:</strong> liquidation-studies, crimsonhexagonal alone</p>
-<p>- <strong>Date boundaries:</strong> before/after key phase transitions</p>
-<p>- <strong>Domain vocabulary co-occurrence:</strong> Multiple heteronym-specific terms appearing together</p>
-<p>- <strong>Self-attribution in text:</strong> When a deposit names its own heteronym explicitly</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Title patterns:</strong> CTI_WOUND:, TL;DR:, PROBE-RESULT-, PVE-, EA- codes</li><li style="margin:3px 0"><strong>Filename patterns:</strong> .html → web_surface_spec, .py → code_artifact</li><li style="margin:3px 0"><strong>Resource type:</strong> Zenodo&#x27;s resource type field</li><li style="margin:3px 0"><strong>Creator name field:</strong> The literal Zenodo creator string</li><li style="margin:3px 0"><strong>Community membership:</strong> liquidation-studies, crimsonhexagonal alone</li><li style="margin:3px 0"><strong>Date boundaries:</strong> before/after key phase transitions</li><li style="margin:3px 0"><strong>Domain vocabulary co-occurrence:</strong> Multiple heteronym-specific terms appearing together</li><li style="margin:3px 0"><strong>Self-attribution in text:</strong> When a deposit names its own heteronym explicitly</li></ul>
 
 <p>#</p>
 
 <h2>Medium signals (text-content based)</h2>
 
-<p>- <strong>TACHYON glyph chain presence</strong> → machine_witness + ai_generated_provenance_anchored</p>
-<p>- <strong>Assembly Chorus markers</strong> → assembly_reviewed</p>
-<p>- <strong>Multiple heteronym names in creator field or text</strong> → collaborative</p>
-<p>- <strong>Specific phrases</strong> (&quot;gw_capture&quot;, &quot;auto-deposit&quot;) → ai_generated_provenance_anchored</p>
-<p>- <strong>Code block density</strong> → code_artifact</p>
-<p>- <strong>Screenshot/figure references</strong> → forensic_documentary</p>
-<p>- <strong>Length and structural patterns</strong> → theoretical_paper vs. literary_work vs. traversal_log</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>TACHYON glyph chain presence</strong> → machine_witness + ai_generated_provenance_anchored</li><li style="margin:3px 0"><strong>Assembly Chorus markers</strong> → assembly_reviewed</li><li style="margin:3px 0"><strong>Multiple heteronym names in creator field or text</strong> → collaborative</li><li style="margin:3px 0"><strong>Specific phrases</strong> (&quot;gw_capture&quot;, &quot;auto-deposit&quot;) → ai_generated_provenance_anchored</li><li style="margin:3px 0"><strong>Code block density</strong> → code_artifact</li><li style="margin:3px 0"><strong>Screenshot/figure references</strong> → forensic_documentary</li><li style="margin:3px 0"><strong>Length and structural patterns</strong> → theoretical_paper vs. literary_work vs. traversal_log</li></ul>
 
 <p>#</p>
 
 <h2>Weak signals (priors)</h2>
 
-<p>- <strong>Default heteronym prior</strong> by deposit type: working papers default to Sharks unless overridden by domain signals</p>
-<p>- <strong>Cross-deposit citation patterns:</strong> Heteronyms cite different works</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Default heteronym prior</strong> by deposit type: working papers default to Sharks unless overridden by domain signals</li><li style="margin:3px 0"><strong>Cross-deposit citation patterns:</strong> Heteronyms cite different works</li></ul>
 
 
 <p>The classifier weights signals by source confidence and produces a softmax over candidate classes for each task. Confidence thresholds determine whether the classification is auto-accepted or flagged for human review.</p>
@@ -434,21 +420,12 @@
 
 <p>For high-confidence reattributions (confidence ≥ 0.85 AND reattribution-changes-heteronym), the underlying Zenodo deposit gets a metadata update. This is a substantive scholarly act with version history on Zenodo&#x27;s side. It requires:</p>
 
-<p>- Human review of the classifier&#x27;s proposal</p>
-<p>- Explicit acceptance of the reattribution</p>
-<p>- Zenodo deposit version increment</p>
-<p>- Update of related Wikidata items (P50 author field)</p>
-<p>- Update of GitHub repos where relevant</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Human review of the classifier&#x27;s proposal</li><li style="margin:3px 0">Explicit acceptance of the reattribution</li><li style="margin:3px 0">Zenodo deposit version increment</li><li style="margin:3px 0">Update of related Wikidata items (P50 author field)</li><li style="margin:3px 0">Update of GitHub repos where relevant</li></ul>
 
 
 <p>Track 2 is <strong>separate from the Hugging Face dataset session</strong>. It is its own multi-session project, working through high-confidence reattributions deliberately, possibly tens to hundreds of deposits. The order of operations is:</p>
 
-<p>- Hugging Face dataset publishes with Track 1 classifications</p>
-<p>- Researchers and Lee work with the dataset, surfacing classification quality</p>
-<p>- Classifier improves; review pass identifies confident reattributions</p>
-<p>- Track 2 begins, applying confident reattributions back to Zenodo</p>
-<p>- Wikidata batch updates follow Zenodo updates</p>
-<p>- Hugging Face dataset v2.0 reflects the corrected metadata</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Hugging Face dataset publishes with Track 1 classifications</li><li style="margin:3px 0">Researchers and Lee work with the dataset, surfacing classification quality</li><li style="margin:3px 0">Classifier improves; review pass identifies confident reattributions</li><li style="margin:3px 0">Track 2 begins, applying confident reattributions back to Zenodo</li><li style="margin:3px 0">Wikidata batch updates follow Zenodo updates</li><li style="margin:3px 0">Hugging Face dataset v2.0 reflects the corrected metadata</li></ul>
 
 
 <hr>
@@ -470,12 +447,7 @@
 
 <p><strong>Contents:</strong></p>
 
-<p>- Classifier source code (Python)</p>
-<p>- Heteronym profile YAML files (one per heteronym)</p>
-<p>- Decision tree as data structure</p>
-<p>- Signal weights and thresholds</p>
-<p>- Test suite with held-out gold-standard classifications</p>
-<p>- Documentation of methodology</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Classifier source code (Python)</li><li style="margin:3px 0">Heteronym profile YAML files (one per heteronym)</li><li style="margin:3px 0">Decision tree as data structure</li><li style="margin:3px 0">Signal weights and thresholds</li><li style="margin:3px 0">Test suite with held-out gold-standard classifications</li><li style="margin:3px 0">Documentation of methodology</li></ul>
 
 
 <p><strong>Reproducibility implication:</strong> Other archive operators can in principle apply this classifier to their own corpora, or fork it and define their own heteronym profiles. The methodology is portable.</p>
@@ -490,14 +462,7 @@
 
 <h2>Session 1: Acquisition + Classification (~4 hours)</h2>
 
-<p>- Zenodo API pull with pagination + error handling (~20 min)</p>
-<p>- File download with retries, size limits, format priority (~45 min)</p>
-<p>- Text extraction with quality logging (~45 min)</p>
-<p>- Automated language detection (~15 min)</p>
-<p>- <strong>Run classifier on every deposit</strong> — provenance mode + artifact mode + heteronym attribution (~30 min)</p>
-<p>- Initial metadata structuring + sha256 hashing (~30 min)</p>
-<p>- Generate classifier confidence report (~15 min)</p>
-<p>- Buffer / debugging (~40 min)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Zenodo API pull with pagination + error handling (~20 min)</li><li style="margin:3px 0">File download with retries, size limits, format priority (~45 min)</li><li style="margin:3px 0">Text extraction with quality logging (~45 min)</li><li style="margin:3px 0">Automated language detection (~15 min)</li><li style="margin:3px 0"><strong>Run classifier on every deposit</strong> — provenance mode + artifact mode + heteronym attribution (~30 min)</li><li style="margin:3px 0">Initial metadata structuring + sha256 hashing (~30 min)</li><li style="margin:3px 0">Generate classifier confidence report (~15 min)</li><li style="margin:3px 0">Buffer / debugging (~40 min)</li></ul>
 
 
 <p>Output: artifacts_v0.jsonl with full classifier outputs, ready for review.</p>
@@ -505,13 +470,7 @@
 
 <h2>Session 2: Review + Card + Push (~3 hours)</h2>
 
-<p>- Manual review of needs_review flagged deposits (~60 min)</p>
-<p>- Spot-check 10% of auto-accepted classifications (~30 min)</p>
-<p>- Chunk generation for chunks config (~20 min)</p>
-<p>- Multiple text renderings — body_only, minimal_header, provenance_header (~20 min)</p>
-<p>- Dataset card with YAML front matter (~30 min)</p>
-<p>- Push to Hugging Face + Zenodo deposit of dataset + Zenodo deposit of classifier (~30 min)</p>
-<p>- Buffer (~10 min)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Manual review of needs_review flagged deposits (~60 min)</li><li style="margin:3px 0">Spot-check 10% of auto-accepted classifications (~30 min)</li><li style="margin:3px 0">Chunk generation for chunks config (~20 min)</li><li style="margin:3px 0">Multiple text renderings — body_only, minimal_header, provenance_header (~20 min)</li><li style="margin:3px 0">Dataset card with YAML front matter (~30 min)</li><li style="margin:3px 0">Push to Hugging Face + Zenodo deposit of dataset + Zenodo deposit of classifier (~30 min)</li><li style="margin:3px 0">Buffer (~10 min)</li></ul>
 
 <p>#</p>
 
@@ -520,9 +479,7 @@
 
 <p>The pre-classification spreadsheet from v2 is now obsolete — the classifier does the work. Lee&#x27;s pre-session role becomes:</p>
 
-<p>- Confirm heteronym operational profiles are accurate (the classifier reads provenance documents, but verify each one is current)</p>
-<p>- Identify any deposits Lee knows have changed in attribution since the original deposit (these become gold-standard test cases for the classifier)</p>
-<p>- Add huggingface.co to allowed network domains</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Confirm heteronym operational profiles are accurate (the classifier reads provenance documents, but verify each one is current)</li><li style="margin:3px 0">Identify any deposits Lee knows have changed in attribution since the original deposit (these become gold-standard test cases for the classifier)</li><li style="margin:3px 0">Add huggingface.co to allowed network domains</li></ul>
 
 
 <hr>
@@ -711,10 +668,7 @@
 
 <h2>Versioning Roadmap</h2>
 
-<p>- <strong>v1.0</strong> (Sessions 1+2): Hugging Face dataset with Track 1 dual-attribution classifier outputs; classifier deposited</p>
-<p>- <strong>v1.1</strong> (post-publication review pass): Manual review of estimated-tier classifications, classifier improvements, push update</p>
-<p>- <strong>v2.0</strong> (Track 2 integration): After deliberate Zenodo metadata corrections, dataset reflects updated Zenodo state</p>
-<p>- <strong>v3.0</strong> (blog archive incorporation): Add mindcontrolpoems.blogspot.com as human-primary baseline expansion</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>v1.0</strong> (Sessions 1+2): Hugging Face dataset with Track 1 dual-attribution classifier outputs; classifier deposited</li><li style="margin:3px 0"><strong>v1.1</strong> (post-publication review pass): Manual review of estimated-tier classifications, classifier improvements, push update</li><li style="margin:3px 0"><strong>v2.0</strong> (Track 2 integration): After deliberate Zenodo metadata corrections, dataset reflects updated Zenodo state</li><li style="margin:3px 0"><strong>v3.0</strong> (blog archive incorporation): Add mindcontrolpoems.blogspot.com as human-primary baseline expansion</li></ul>
 
 
 <hr>

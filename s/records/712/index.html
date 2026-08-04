@@ -203,9 +203,7 @@
 <p>The rule: a superscript run is a footnote <strong>only if</strong> it is NOT immediately</p>
 <p>preceded by a letter (A-Z, a-z). So:</p>
 
-<p>- catalogue.³ → footnote ✓ (preceded by .)</p>
-<p>- G⁴⁶ → NOT a footnote ✗ (preceded by G)</p>
-<p>- text&quot;¹³⁸ → footnote ✓ (preceded by &quot;)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">catalogue.³ → footnote ✓ (preceded by .)</li><li style="margin:3px 0">G⁴⁶ → NOT a footnote ✗ (preceded by G)</li><li style="margin:3px 0">text&quot;¹³⁸ → footnote ✓ (preceded by &quot;)</li></ul>
 
 <p>#</p>
 
@@ -250,8 +248,7 @@
 
 <h2>Files involved</h2>
 
-<p>- src/footnotes.js — the scanner and map builder (pure JS, no React)</p>
-<p>- src/footnotes.jsx — the React renderer (FootnotedText + InlineFootnote)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">src/footnotes.js — the scanner and map builder (pure JS, no React)</li><li style="margin:3px 0">src/footnotes.jsx — the React renderer (FootnotedText + InlineFootnote)</li></ul>
 
 
 <hr>
@@ -264,8 +261,7 @@
 
 <p>Converts markdown emphasis markers to HTML:</p>
 
-<p>- <em>text</em> → <em>text</em> (italic, &lt;em&gt;)</p>
-<p>- <strong>text</strong> → <strong>text</strong> (bold, &lt;strong&gt;)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><em>text</em> → <em>text</em> (italic, &lt;em&gt;)</li><li style="margin:3px 0"><strong>text</strong> → <strong>text</strong> (bold, &lt;strong&gt;)</li></ul>
 
 <p>#</p>
 
@@ -343,9 +339,7 @@
 
 <p>Each entry maps a term to a link target:</p>
 
-<p>- { w: &quot;Page_Name&quot; } → links to en.wikipedia.org/wiki/Page_Name</p>
-<p>- { q: &quot;search terms&quot; } → links to google.com/search?q=search+terms</p>
-<p>- { u: &quot;https://...&quot; } → links to a custom URL</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">{ w: &quot;Page_Name&quot; } → links to en.wikipedia.org/wiki/Page_Name</li><li style="margin:3px 0">{ q: &quot;search terms&quot; } → links to google.com/search?q=search+terms</li><li style="margin:3px 0">{ u: &quot;https://...&quot; } → links to a custom URL</li></ul>
 
 <p>#</p>
 
@@ -574,23 +568,21 @@
 
 <p>If Lee asks you to modify text rendering in The Secret Book of Walt:</p>
 
-<p>- <strong>Read docs/FOOTNOTES.md first.</strong> It explains the footnote system.</p>
-<p>- <strong>Read this file (docs/BOOK_OF_LIFE.md) first.</strong> It explains how</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Read docs/FOOTNOTES.md first.</strong> It explains the footnote system.</li><li style="margin:3px 0"><strong>Read this file (docs/BOOK_OF_LIFE.md) first.</strong> It explains how</li></ul>
 <p>the three layers connect.</p>
-<p>- <strong>Do NOT rewrite LinkedText.</strong> It has been rewritten twice already and</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Do NOT rewrite LinkedText.</strong> It has been rewritten twice already and</li></ul>
 <p>both times broke the glossary links. If you need to change emphasis</p>
 <p>handling, change it INSIDE the existing processEmphasis function</p>
 <p>without altering the early return or the linkifyText calls.</p>
-<p>- <strong>Do NOT add conditionals to FootnotedText</strong> that skip the linkText</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Do NOT add conditionals to FootnotedText</strong> that skip the linkText</li></ul>
 <p>prop. When linkText is provided, always use it.</p>
-<p>- <strong>Test all three layers after any change:</strong></p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Test all three layers after any change:</strong></li></ul>
 
 <p>Are footnotes still clickable in veil mode? (Layer 1)</p>
-<p>- Do <em>italic</em> and <strong>bold</strong> render correctly? (Layer 2)</p>
-<p>- Are glossary terms still blue and linked? (Layer 3)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Do <em>italic</em> and <strong>bold</strong> render correctly? (Layer 2)</li><li style="margin:3px 0">Are glossary terms still blue and linked? (Layer 3)</li></ul>
 
 
-<p>- <strong>Build before committing.</strong> npm run build — if it fails, don&#x27;t push.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Build before committing.</strong> npm run build — if it fails, don&#x27;t push.</li></ul>
 
 
 <hr>

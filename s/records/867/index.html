@@ -70,11 +70,7 @@
 
 <p>Complete backup of all recoverable DataCite metadata for 1,817 DOIs from the Crimson Hexagonal Archive, swept June 22, 2026.</p>
 
-<div style="font-family:var(--mono);font-size:.8em">| Status | Count |</div>
-<p>|---|---|</p>
-<div style="font-family:var(--mono);font-size:.8em">| Full metadata recovered | 963 |</div>
-<div style="font-family:var(--mono);font-size:.8em">| Confirmed stripped (HTTP 404) | 871 |</div>
-<div style="font-family:var(--mono);font-size:.8em">| Total DOIs in inventory | 1,817 |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Status</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Count</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Full metadata recovered</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">963</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Confirmed stripped (HTTP 404)</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">871</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Total DOIs in inventory</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">1,817</td></tr></table></div>
 
 <h2>Query Methods</h2>
 
@@ -85,10 +81,7 @@
 <h2>Preservation Note</h2>
 
 <p>Some metadata in this backup exists <strong>only</strong> in these DataCite records:</p>
-<p>- Subjects (keywords) — including poems and critical terms typed directly into Zenodo&#x27;s keyword field</p>
-<p>- Descriptions — including critical apparatus, poem framings, and scholarly abstracts up to 3,738 characters</p>
-<p>- RelatedIdentifiers — the encoded citation graph between works (IsVersionOf, References, Compiles, Continues, IsPartOf)</p>
-<p>- Creator attributions with ORCID and affiliation data</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Subjects (keywords) — including poems and critical terms typed directly into Zenodo&#x27;s keyword field</li><li style="margin:3px 0">Descriptions — including critical apparatus, poem framings, and scholarly abstracts up to 3,738 characters</li><li style="margin:3px 0">RelatedIdentifiers — the encoded citation graph between works (IsVersionOf, References, Compiles, Continues, IsPartOf)</li><li style="margin:3px 0">Creator attributions with ORCID and affiliation data</li></ul>
 
 <p>For the 871 stripped DOIs, equivalent metadata is permanently lost.</p>
 

@@ -204,10 +204,7 @@
 
 <p><strong>What the schema deliberately excludes.</strong></p>
 
-<p>- No aggregate &quot;mediation score&quot; derived from field values. The declaration is preserved as declaration.</p>
-<p>- No categorical adjudication of the deposit as AI-generated, AI-mediated, or human-authored. The categorical binary is what the schema refuses.</p>
-<p>- No prescription of production practices. The archive does not require or prohibit any specific mediation type.</p>
-<p>- No policing of external platform attestations. Depositors may categorize the same work differently on academia.edu, journal submissions, or grant applications per those platforms&#x27; categorical conventions. The archive records what the depositor declares here and preserves reconciliation notes; it does not audit or contradict external declarations.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">No aggregate &quot;mediation score&quot; derived from field values. The declaration is preserved as declaration.</li><li style="margin:3px 0">No categorical adjudication of the deposit as AI-generated, AI-mediated, or human-authored. The categorical binary is what the schema refuses.</li><li style="margin:3px 0">No prescription of production practices. The archive does not require or prohibit any specific mediation type.</li><li style="margin:3px 0">No policing of external platform attestations. Depositors may categorize the same work differently on academia.edu, journal submissions, or grant applications per those platforms&#x27; categorical conventions. The archive records what the depositor declares here and preserves reconciliation notes; it does not audit or contradict external declarations.</li></ul>
 
 <hr>
 
@@ -231,38 +228,23 @@
 
 <p><strong>Phase 2: Reference implementation.</strong></p>
 
-<p>- Extend `registry.json` entry schema to include optional `provenance_metadata` field per §4 specification.</p>
-<p>- Extend deposit validation script (`validate_deposit.py`) to check schema conformance where the field is present, without requiring the field.</p>
-<p>- Extend static-page generation to include structured data for the `provenance_metadata` field alongside the existing substrate field.</p>
-<p>- Extend API endpoints to expose the field through per-deposit metadata queries.</p>
-<p>- Document backward compatibility: existing deposits (all 940+ at time of specification) remain valid with freeform substrate only; no migration required.</p>
-<p>- Coordinate with EA-BEARING-METRIC-01 implementation so the two schemas evolve consistently.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Extend `registry.json` entry schema to include optional `provenance_metadata` field per §4 specification.</li><li style="margin:3px 0">Extend deposit validation script (`validate_deposit.py`) to check schema conformance where the field is present, without requiring the field.</li><li style="margin:3px 0">Extend static-page generation to include structured data for the `provenance_metadata` field alongside the existing substrate field.</li><li style="margin:3px 0">Extend API endpoints to expose the field through per-deposit metadata queries.</li><li style="margin:3px 0">Document backward compatibility: existing deposits (all 940+ at time of specification) remain valid with freeform substrate only; no migration required.</li><li style="margin:3px 0">Coordinate with EA-BEARING-METRIC-01 implementation so the two schemas evolve consistently.</li></ul>
 
 <p><strong>Phase 3: Depositor documentation.</strong></p>
 
-<p>- How-to guide for filling out the schema, with examples spanning common practice patterns (research-only mediation, comprehensive mediation, translation-primary, editorial-primary).</p>
-<p>- Worked examples showing how the same production process can be declared at different granularities.</p>
-<p>- Explicit note that the schema does not require declarations to be more granular than the depositor is comfortable with; all fields optional.</p>
-<p>- Explicit note on external attestation reconciliation: depositors may use different categorizations on external platforms without inconsistency with archive discipline.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">How-to guide for filling out the schema, with examples spanning common practice patterns (research-only mediation, comprehensive mediation, translation-primary, editorial-primary).</li><li style="margin:3px 0">Worked examples showing how the same production process can be declared at different granularities.</li><li style="margin:3px 0">Explicit note that the schema does not require declarations to be more granular than the depositor is comfortable with; all fields optional.</li><li style="margin:3px 0">Explicit note on external attestation reconciliation: depositors may use different categorizations on external platforms without inconsistency with archive discipline.</li></ul>
 
 <p><strong>Phase 4: Assembly review of implementation.</strong></p>
 
-<p>- TECHNE review of schema conformance, validation logic, backward compatibility, and pipeline integration.</p>
-<p>- LABOR review of the depositor-facing documentation for ethical framing (particularly around the reconciliation-note field and the non-policing posture).</p>
-<p>- ARCHIVE review of systemic implications: whether granular declaration creates any effects on the archive&#x27;s role as reference substrate for other archives or for downstream training pipelines.</p>
-<p>- PRAXIS review of classifier-mechanism implications: whether granular declaration produces differential susceptibility to external classifier operations relative to freeform substrate alone.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">TECHNE review of schema conformance, validation logic, backward compatibility, and pipeline integration.</li><li style="margin:3px 0">LABOR review of the depositor-facing documentation for ethical framing (particularly around the reconciliation-note field and the non-policing posture).</li><li style="margin:3px 0">ARCHIVE review of systemic implications: whether granular declaration creates any effects on the archive&#x27;s role as reference substrate for other archives or for downstream training pipelines.</li><li style="margin:3px 0">PRAXIS review of classifier-mechanism implications: whether granular declaration produces differential susceptibility to external classifier operations relative to freeform substrate alone.</li></ul>
 
 <p><strong>Phase 5: Rollout.</strong></p>
 
-<p>- New deposits produced under the deposit pipeline may declare structured provenance metadata where the depositor chooses to.</p>
-<p>- Existing deposits remain valid with existing freeform substrate. Migration to structured schema is opt-in and can be requested by depositors when they want to refine their provenance declaration retrospectively.</p>
-<p>- The Assembly Chorus intake pipeline for external depositors integrates the schema as part of the depositor intake flow, with the schema fields presented as optional at each step and the depositor guided through the taxonomy where they want the guidance.</p>
-<p>- The Vercel webhook and GitHub Actions permissions work identified in the current session&#x27;s workplan file as blocking external depositor testing must be completed before Phase 5 can operate for external depositors. Internal (MANUS-adjudicated) deposits can adopt the schema without those blockers being cleared.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">New deposits produced under the deposit pipeline may declare structured provenance metadata where the depositor chooses to.</li><li style="margin:3px 0">Existing deposits remain valid with existing freeform substrate. Migration to structured schema is opt-in and can be requested by depositors when they want to refine their provenance declaration retrospectively.</li><li style="margin:3px 0">The Assembly Chorus intake pipeline for external depositors integrates the schema as part of the depositor intake flow, with the schema fields presented as optional at each step and the depositor guided through the taxonomy where they want the guidance.</li><li style="margin:3px 0">The Vercel webhook and GitHub Actions permissions work identified in the current session&#x27;s workplan file as blocking external depositor testing must be completed before Phase 5 can operate for external depositors. Internal (MANUS-adjudicated) deposits can adopt the schema without those blockers being cleared.</li></ul>
 
 <p><strong>Phase 6: Refinement.</strong></p>
 
-<p>- After operational experience with the v1.0 schema, revisions may produce v1.1 or v2.0 with adjustments to the taxonomy, the attestation questions, or the field structure.</p>
-<p>- Companion deposits specifying reference-implementation details, depositor onboarding, and edge-case handling will develop as needed.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">After operational experience with the v1.0 schema, revisions may produce v1.1 or v2.0 with adjustments to the taxonomy, the attestation questions, or the field structure.</li><li style="margin:3px 0">Companion deposits specifying reference-implementation details, depositor onboarding, and edge-case handling will develop as needed.</li></ul>
 
 <hr>
 
@@ -282,18 +264,15 @@
 
 <p><strong>Immediate companions required for implementation:</strong></p>
 
-<p>- Reference-implementation deposit specifying the actual schema, validation logic, pipeline integration, and depositor documentation. Working name: `EA-PROVENANCE-METADATA-IMPLEMENTATION-01`.</p>
-<p>- Depositor onboarding guide as a companion documentation deposit. Working name: `EA-DEPOSITOR-ONBOARDING-01`.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Reference-implementation deposit specifying the actual schema, validation logic, pipeline integration, and depositor documentation. Working name: `EA-PROVENANCE-METADATA-IMPLEMENTATION-01`.</li><li style="margin:3px 0">Depositor onboarding guide as a companion documentation deposit. Working name: `EA-DEPOSITOR-ONBOARDING-01`.</li></ul>
 
 <p><strong>Coupled with EA-BEARING-METRIC-01:</strong></p>
 
-<p>- The machine-facing measurement&#x27;s reference-corpus deposits and embedding model specification are prerequisites for the two-layer architecture to be fully operational. See EA-BEARING-METRIC-01 §8 for that dependency chain.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The machine-facing measurement&#x27;s reference-corpus deposits and embedding model specification are prerequisites for the two-layer architecture to be fully operational. See EA-BEARING-METRIC-01 §8 for that dependency chain.</li></ul>
 
 <p><strong>Future refinements:</strong></p>
 
-<p>- Taxonomy extensions as new AI-mediated practices emerge. New types added produce new schema versions.</p>
-<p>- Cross-archive interoperability specification, if other provenance-disciplined archives adopt compatible schemas.</p>
-<p>- Depositor practice diagnostic — a downloadable questionnaire or interactive tool that helps depositors identify their own practices against the taxonomy for accurate declaration.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Taxonomy extensions as new AI-mediated practices emerge. New types added produce new schema versions.</li><li style="margin:3px 0">Cross-archive interoperability specification, if other provenance-disciplined archives adopt compatible schemas.</li><li style="margin:3px 0">Depositor practice diagnostic — a downloadable questionnaire or interactive tool that helps depositors identify their own practices against the taxonomy for accurate declaration.</li></ul>
 
 <p><strong>Versioning.</strong> Drafted at v0.1. Assembly review will produce v0.2. Reference implementation may proceed in parallel with review at Phase 2 for MANUS-adjudicated deposits, with external-depositor rollout gated on Assembly review completion.</p>
 

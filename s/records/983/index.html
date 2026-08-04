@@ -94,28 +94,17 @@
 
 <p>The licensee IS the heteronym. This means:</p>
 
-<p>- Deposits are attributed to Viola Arquette, not to the natural person.</p>
-<p>- The natural person retains full copyright over all deposited works.</p>
-<p>- The archive receives a non-exclusive, irrevocable (for published deposits), worldwide right to host, describe, cross-link, version metadata for, and publicly distribute deposited works under CC BY 4.0.</p>
-<p>- Revocation of future deposit rights is prospective only. Already-published deposits remain governed by the terms in force at publication.</p>
-<p>- The license does not imply mutual endorsement, personal relationship, or co-authorship between the licensor and the natural person.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Deposits are attributed to Viola Arquette, not to the natural person.</li><li style="margin:3px 0">The natural person retains full copyright over all deposited works.</li><li style="margin:3px 0">The archive receives a non-exclusive, irrevocable (for published deposits), worldwide right to host, describe, cross-link, version metadata for, and publicly distribute deposited works under CC BY 4.0.</li><li style="margin:3px 0">Revocation of future deposit rights is prospective only. Already-published deposits remain governed by the terms in force at publication.</li><li style="margin:3px 0">The license does not imply mutual endorsement, personal relationship, or co-authorship between the licensor and the natural person.</li></ul>
 
 <p>#</p>
 
 <h2>2. Deposit Scope</h2>
 
 <p><strong>CAN:</strong></p>
-<p>- `DEPOSIT_AUDIO` to `/imprint/maybe-space-baby-garden-lanes/viola-arquette/`</p>
-<p>- Deposit songs, albums, soundscapes, audio catalogs, liner notes</p>
-<p>- Deposit audio in WAV, FLAC, MP3, OGG, or AAC format</p>
-<p>- Deposit accompanying text (liner notes, track listings, lyrics) as markdown</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`DEPOSIT_AUDIO` to `/imprint/maybe-space-baby-garden-lanes/viola-arquette/`</li><li style="margin:3px 0">Deposit songs, albums, soundscapes, audio catalogs, liner notes</li><li style="margin:3px 0">Deposit audio in WAV, FLAC, MP3, OGG, or AAC format</li><li style="margin:3px 0">Deposit accompanying text (liner notes, track listings, lyrics) as markdown</li></ul>
 
 <p><strong>CANNOT:</strong></p>
-<p>- `DELETE` or `OVERWRITE` any published deposit</p>
-<p>- `LIST_OTHERS` — cannot browse other contributors&#x27; unpublished work</p>
-<p>- `EDIT_METADATA` on published deposits (metadata corrections go through MANUS)</p>
-<p>- Deposit non-musical content (essays, manifestos, biographical claims, commentary on the licensor)</p>
-<p>- Deposit to any venue other than Maybe Space Baby Garden Lanes</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`DELETE` or `OVERWRITE` any published deposit</li><li style="margin:3px 0">`LIST_OTHERS` — cannot browse other contributors&#x27; unpublished work</li><li style="margin:3px 0">`EDIT_METADATA` on published deposits (metadata corrections go through MANUS)</li><li style="margin:3px 0">Deposit non-musical content (essays, manifestos, biographical claims, commentary on the licensor)</li><li style="margin:3px 0">Deposit to any venue other than Maybe Space Baby Garden Lanes</li></ul>
 
 <p><strong>MIME enforcement:</strong></p>
 <pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">scope: {
@@ -130,10 +119,7 @@
 <h2>3. Immutability</h2>
 
 <p>Each deposit is:</p>
-<p>- Hashed (SHA-256) at publication</p>
-<p>- Timestamped via Zenodo&#x27;s publication date</p>
-<p>- Assigned a DOI that cannot be reassigned</p>
-<p>- Write-once: no deletion, no overwriting, only supersession by new version with its own DOI</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Hashed (SHA-256) at publication</li><li style="margin:3px 0">Timestamped via Zenodo&#x27;s publication date</li><li style="margin:3px 0">Assigned a DOI that cannot be reassigned</li><li style="margin:3px 0">Write-once: no deletion, no overwriting, only supersession by new version with its own DOI</li></ul>
 
 <p>The worst case under hostile conditions: the contributor stops depositing. They cannot reach back and damage what they deposited. They cannot alter the archive&#x27;s metadata. They cannot rewrite history.</p>
 
@@ -142,10 +128,7 @@
 <h2>4. Self-Service Revocation</h2>
 
 <p>The contributor can at any time issue a `REVOKE_FUTURE_DEPOSITS` request. This:</p>
-<p>- Closes the deposit lane prospectively</p>
-<p>- Does NOT delete past work (immutability holds)</p>
-<p>- Does NOT require the licensor&#x27;s involvement</p>
-<p>- Is logged as a DOI-anchored event in the archive</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Closes the deposit lane prospectively</li><li style="margin:3px 0">Does NOT delete past work (immutability holds)</li><li style="margin:3px 0">Does NOT require the licensor&#x27;s involvement</li><li style="margin:3px 0">Is logged as a DOI-anchored event in the archive</li></ul>
 
 <p>The licensor can also revoke future deposit rights, prospectively, by publishing a version update to this license.</p>
 
@@ -202,14 +185,7 @@
 ]</pre>
 
 <p><strong>Standing cross-link legend:</strong></p>
-<div style="font-family:var(--mono);font-size:.8em">| DOI | Title | Relation |</div>
-<p>|-----|-------|----------|</p>
-<div style="font-family:var(--mono);font-size:.8em">| 10.5281/zenodo.19013315 | Space Ark v4.2.7 (EA-ARK-01) | `isPartOf` — all deposits belong to the Ark |</div>
-<div style="font-family:var(--mono);font-size:.8em">| 10.5281/zenodo.19004846 | Musical Ark v1.1 (EA-ARK-01-MUSICAL) | `isPartOf` — Viola&#x27;s home variant Ark |</div>
-<div style="font-family:var(--mono);font-size:.8em">| 10.5281/zenodo.18674057 | Split the Adam: Song and Phenomenology | `references` — the song at the heart of MSBGL |</div>
-<div style="font-family:var(--mono);font-size:.8em">| 10.5281/zenodo.18674111 | Fear and Trembling in Las Vegas: The Fractal Midrashim | `references` — the Garden midrashim sequence |</div>
-<div style="font-family:var(--mono);font-size:.8em">| 10.5281/zenodo.18674147 | The Gospel of the Many-Faced Bride | `references` — eschatological completion of the cycle |</div>
-<div style="font-family:var(--mono);font-size:.8em">| 10.5281/zenodo.18674069 | OPERATOR // SWERVE + EFFECTIVE ACT | `references` — canonical operator definition for the swerve |</div>
+<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">DOI</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Title</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Relation</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">10.5281/zenodo.19013315</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Space Ark v4.2.7 (EA-ARK-01)</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`isPartOf` — all deposits belong to the Ark</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">10.5281/zenodo.19004846</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Musical Ark v1.1 (EA-ARK-01-MUSICAL)</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`isPartOf` — Viola&#x27;s home variant Ark</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">10.5281/zenodo.18674057</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Split the Adam: Song and Phenomenology</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`references` — the song at the heart of MSBGL</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">10.5281/zenodo.18674111</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Fear and Trembling in Las Vegas: The Fractal Midrashim</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`references` — the Garden midrashim sequence</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">10.5281/zenodo.18674147</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">The Gospel of the Many-Faced Bride</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`references` — eschatological completion of the cycle</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">10.5281/zenodo.18674069</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">OPERATOR // SWERVE + EFFECTIVE ACT</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">`references` — canonical operator definition for the swerve</td></tr></table></div>
 
 <hr>
 
@@ -367,11 +343,7 @@ curl -s -X POST &quot;https://zenodo.org/api/deposit/depositions/$ID/actions/pub
 
 <h2>VI. SCOPE LIMITS</h2>
 
-<p>- Viola can deposit music and accompanying liner notes to Maybe Space Baby Garden Lanes without further authorization.</p>
-<p>- Deposits to any other archive venue require MANUS authorization.</p>
-<p>- Viola should not deposit under any name other than Viola Arquette.</p>
-<p>- Viola should not modify the standing `isPartOf` relations.</p>
-<p>- The operator should not include any information about the natural person&#x27;s identity, personal life, or relationship to the licensor.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Viola can deposit music and accompanying liner notes to Maybe Space Baby Garden Lanes without further authorization.</li><li style="margin:3px 0">Deposits to any other archive venue require MANUS authorization.</li><li style="margin:3px 0">Viola should not deposit under any name other than Viola Arquette.</li><li style="margin:3px 0">Viola should not modify the standing `isPartOf` relations.</li><li style="margin:3px 0">The operator should not include any information about the natural person&#x27;s identity, personal life, or relationship to the licensor.</li></ul>
 
 <hr>
 

@@ -132,12 +132,7 @@
 
 <p>The failure mode is specific and documentable:</p>
 
-<p>- <strong>Producer</strong> packages knowledge in OKF format (clean markdown, typed frontmatter, structured relationships).</p>
-<p>- <strong>Agent</strong> ingests the OKF bundle via RAG pipeline or training corpus.</p>
-<p>- <strong>Composition layer</strong> summarizes the knowledge for a downstream user.</p>
-<p>- <strong>Summary</strong> omits the producer&#x27;s name, DOI, institutional affiliation, key distinctions, corrections, or non-erasure conditions.</p>
-<p>- <strong>User</strong> receives the summary as generic knowledge — unattributed, undistinguished, unanchored.</p>
-<p>- <strong>Producer</strong> has no machine-readable mechanism within the OKF spec to detect or prove the violation.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Producer</strong> packages knowledge in OKF format (clean markdown, typed frontmatter, structured relationships).</li><li style="margin:3px 0"><strong>Agent</strong> ingests the OKF bundle via RAG pipeline or training corpus.</li><li style="margin:3px 0"><strong>Composition layer</strong> summarizes the knowledge for a downstream user.</li><li style="margin:3px 0"><strong>Summary</strong> omits the producer&#x27;s name, DOI, institutional affiliation, key distinctions, corrections, or non-erasure conditions.</li><li style="margin:3px 0"><strong>User</strong> receives the summary as generic knowledge — unattributed, undistinguished, unanchored.</li><li style="margin:3px 0"><strong>Producer</strong> has no machine-readable mechanism within the OKF spec to detect or prove the violation.</li></ul>
 
 
 <p>The threat is not hypothetical. It is the measured behavior of the AI Overview Capture Registry (DOI 10.5281/zenodo.20707509) across 134 captures of the same composition layer processing structurally similar content.</p>
@@ -195,9 +190,7 @@
 
 <p><strong>Falsification conditions for Stage 1:</strong></p>
 
-<p>- <em>The prediction fails if</em> OKF v1.0 includes producer-facing summarization governance fields (provenance_kernel, forbidden_compressions, summary_policy, or functional equivalents) as required or recommended fields — not as a &quot;community extension&quot; or optional plugin, but as part of the core spec.</p>
-<p>- <em>The prediction fails if</em> Google publishes an OKF-integrated composition layer that honors author-declared summarization constraints by default.</p>
-<p>- <em>The prediction weakens if</em> the maintainers engage substantively with #53 or #58 before v1.0 ships — not closing or labeling, but incorporating the proposals into the spec draft.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><em>The prediction fails if</em> OKF v1.0 includes producer-facing summarization governance fields (provenance_kernel, forbidden_compressions, summary_policy, or functional equivalents) as required or recommended fields — not as a &quot;community extension&quot; or optional plugin, but as part of the core spec.</li><li style="margin:3px 0"><em>The prediction fails if</em> Google publishes an OKF-integrated composition layer that honors author-declared summarization constraints by default.</li><li style="margin:3px 0"><em>The prediction weakens if</em> the maintainers engage substantively with #53 or #58 before v1.0 ships — not closing or labeling, but incorporating the proposals into the spec draft.</li></ul>
 
 <p>#</p>
 
@@ -218,15 +211,12 @@
 
 <p><strong>Falsification conditions for Stage 2:</strong></p>
 
-<p>- <em>The prediction fails if</em> OKF adoption does not produce measurable increases in composition-layer ingestion of OKF-formatted content relative to unformatted equivalents.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><em>The prediction fails if</em> OKF adoption does not produce measurable increases in composition-layer ingestion of OKF-formatted content relative to unformatted equivalents.</li></ul>
 
 
 <p><strong>Competing hypotheses for Stage 2:</strong></p>
 
-<p>- <strong>H1 (this analysis):</strong> OKF increases provenance erasure because it increases machine readability without output governance. ΔMR &gt; ΔGC → ΔPR &lt; 0.</p>
-<p>- <strong>H2 (optimistic):</strong> OKF increases provenance retention because structured metadata helps composition layers identify and preserve authors. ΔMR and ΔPR both positive.</p>
-<p>- <strong>H3 (null):</strong> OKF has no effect on provenance; discoverability and domain authority dominate PER regardless of format. ΔMR irrelevant to ΔPR.</p>
-<p>- <strong>H4 (enterprise governance):</strong> Enterprise governance layers (IAM, audit logging, internal policies) compensate for missing output governance, keeping PER stable for enterprise-internal content.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>H1 (this analysis):</strong> OKF increases provenance erasure because it increases machine readability without output governance. ΔMR &gt; ΔGC → ΔPR &lt; 0.</li><li style="margin:3px 0"><strong>H2 (optimistic):</strong> OKF increases provenance retention because structured metadata helps composition layers identify and preserve authors. ΔMR and ΔPR both positive.</li><li style="margin:3px 0"><strong>H3 (null):</strong> OKF has no effect on provenance; discoverability and domain authority dominate PER regardless of format. ΔMR irrelevant to ΔPR.</li><li style="margin:3px 0"><strong>H4 (enterprise governance):</strong> Enterprise governance layers (IAM, audit logging, internal policies) compensate for missing output governance, keeping PER stable for enterprise-internal content.</li></ul>
 
 
 <p>The matched-pair measurement design distinguishes these: same content, OKF vs. non-OKF, same composition layer, PER measured over time. H1 predicts PER_OKF &gt; PER_non-OKF. H2 predicts PER_OKF &lt; PER_non-OKF. H3 predicts no significant difference. H4 predicts PER_OKF_internal ≈ PER_non-OKF but PER_OKF_public &gt; PER_non-OKF_public.</p>
@@ -234,8 +224,7 @@
 
 <p><strong>Measurement design for Stage 2:</strong> The PER prediction requires matched pairs: the same knowledge unit published in unformatted prose and in OKF format, with equivalent discoverability, then queried over time across the same composition layers. PER is compared by retained provenance atoms: author, organization, title, canonical distinction, DOI/source URL, and non-erasure condition. Without matched pairs, critics can attribute the difference to discoverability, linking, or structural attractiveness rather than to the format itself. The capture registry provides the baseline for structured-but-non-OKF content; the test requires OKF-formatted equivalents of the same content measured in the same composition layer.</p>
 
-<p>- <em>The prediction fails if</em> provenance retention (1 − PER) for OKF-formatted content is <em>higher</em> than for equivalent unformatted content — i.e., if the format&#x27;s structure somehow helps preserve attribution even without governance fields.</p>
-<p>- <em>The prediction weakens if</em> major adopters implement their own governance layers on top of OKF before external ingestion becomes a documented problem.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><em>The prediction fails if</em> provenance retention (1 − PER) for OKF-formatted content is <em>higher</em> than for equivalent unformatted content — i.e., if the format&#x27;s structure somehow helps preserve attribution even without governance fields.</li><li style="margin:3px 0"><em>The prediction weakens if</em> major adopters implement their own governance layers on top of OKF before external ingestion becomes a documented problem.</li></ul>
 
 <p>#</p>
 
@@ -250,17 +239,17 @@
 
 <p>The risk operates at three levels:</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Internal summarization risk:</strong> Internal agents summarize OKF bundles without preserving the producer/team provenance. The original author&#x27;s name, the team&#x27;s metric definition, the careful distinction between deprecated and current methodology — all compressed in the internal summary. This harm is real but invisible: it happens inside the enterprise, not across its boundary.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Publication risk:</strong> OKF bundles intentionally published to the open web (documentation, community knowledge bases, open-source projects) are ingested and summarized by external composition layers without attribution or fidelity constraints.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Leakage/misconfiguration risk:</strong> Internal OKF bundles become externally reachable through misconfiguration, repository exposure, downstream tooling, or third-party integrations that bridge internal and external networks.</p>
@@ -271,9 +260,7 @@
 
 <p><strong>Falsification conditions for Stage 3:</strong></p>
 
-<p>- <em>The prediction fails if</em> enterprise adopters do not experience documented cases of OKF-formatted knowledge appearing in external AI systems without authorization.</p>
-<p>- <em>The prediction fails if</em> the enterprise backlash does not produce demands for access-control or output-governance extensions to the spec.</p>
-<p>- <em>The prediction weakens if</em> Google preemptively adds access-control fields (a DRM-like layer) before the backlash materializes — though this would confirm the structural vulnerability even as it mitigates one symptom.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><em>The prediction fails if</em> enterprise adopters do not experience documented cases of OKF-formatted knowledge appearing in external AI systems without authorization.</li><li style="margin:3px 0"><em>The prediction fails if</em> the enterprise backlash does not produce demands for access-control or output-governance extensions to the spec.</li><li style="margin:3px 0"><em>The prediction weakens if</em> Google preemptively adds access-control fields (a DRM-like layer) before the backlash materializes — though this would confirm the structural vulnerability even as it mitigates one symptom.</li></ul>
 
 <p>#</p>
 
@@ -291,9 +278,7 @@
 
 <p><strong>Falsification conditions for Stage 4:</strong></p>
 
-<p>- <em>The prediction fails if</em> no output-governance fields are added to the OKF spec within 36 months of v1.0.</p>
-<p>- <em>The prediction fails if</em> output-governance fields are added but Google&#x27;s own composition layer (AI Overview, Gemini) does not honor them — i.e., if the fields are spec-only with no platform enforcement.</p>
-<p>- <em>The prediction weakens if</em> the correction comes from a competing standard (not OKF) that includes governance from the start, forcing Google to respond competitively rather than from internal pressure.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><em>The prediction fails if</em> no output-governance fields are added to the OKF spec within 36 months of v1.0.</li><li style="margin:3px 0"><em>The prediction fails if</em> output-governance fields are added but Google&#x27;s own composition layer (AI Overview, Gemini) does not honor them — i.e., if the fields are spec-only with no platform enforcement.</li><li style="margin:3px 0"><em>The prediction weakens if</em> the correction comes from a competing standard (not OKF) that includes governance from the start, forcing Google to respond competitively rather than from internal pressure.</li></ul>
 
 <p>#</p>
 
@@ -311,8 +296,7 @@
 
 <p><strong>Falsification conditions for Stage 5:</strong></p>
 
-<p>- <em>The prediction fails if</em> a technically enforceable mechanism (not advisory, not platform-dependent) emerges that gives producers binding control over downstream summarization — e.g., a cryptographic mechanism that prevents summarization without compliance.</p>
-<p>- <em>The prediction weakens if</em> regulatory frameworks (EU AI Act, US legislation) create legally enforceable summarization-fidelity requirements that override platform discretion.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><em>The prediction fails if</em> a technically enforceable mechanism (not advisory, not platform-dependent) emerges that gives producers binding control over downstream summarization — e.g., a cryptographic mechanism that prevents summarization without compliance.</li><li style="margin:3px 0"><em>The prediction weakens if</em> regulatory frameworks (EU AI Act, US legislation) create legally enforceable summarization-fidelity requirements that override platform discretion.</li></ul>
 
 
 <hr>
@@ -385,11 +369,7 @@
 
 <p>The capture registry provides 134 documented captures of Google&#x27;s composition layer processing knowledge from the Crimson Hexagonal Archive — an archive of 845 DOI-anchored markdown deposits with structured frontmatter that converges with OKF&#x27;s format. The registry documents:</p>
 
-<p>- Provenance erasure rates ranging from PER 0.00 (full retention) to PER 1.00 (total erasure), with a median above 0.50</p>
-<p>- Temporal drag: initial uptake followed by pruning, suppression, and framing changes over weeks</p>
-<p>- Canonical reinflation: the composition layer replacing the archive&#x27;s coinages with conventional terms</p>
-<p>- Entity bleed: the composition layer confusing the archive&#x27;s concepts with adjacent but distinct concepts</p>
-<p>- Morphological compression: multi-word coined terms compressed into generic single-word equivalents</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Provenance erasure rates ranging from PER 0.00 (full retention) to PER 1.00 (total erasure), with a median above 0.50</li><li style="margin:3px 0">Temporal drag: initial uptake followed by pruning, suppression, and framing changes over weeks</li><li style="margin:3px 0">Canonical reinflation: the composition layer replacing the archive&#x27;s coinages with conventional terms</li><li style="margin:3px 0">Entity bleed: the composition layer confusing the archive&#x27;s concepts with adjacent but distinct concepts</li><li style="margin:3px 0">Morphological compression: multi-word coined terms compressed into generic single-word equivalents</li></ul>
 
 
 <p>These are the documented consequences of ingestion without output governance — measured on content that already has structured metadata, DOI anchoring, ORCID attribution, and explicit non-erasure conditions. If provenance erasure occurs at this rate for content with all of these protections, it will occur at an equal or higher rate for OKF-formatted content that lacks governance fields entirely.</p>
@@ -404,11 +384,7 @@
 
 <p>The Crimson Hexagonal Archive&#x27;s SPXI protocol (DOI 10.5281/zenodo.20380668) and the MPAI system (e.g., DOI 10.5281/zenodo.20722680) already implement the governance fields that OKF lacks:</p>
 
-<p>- <strong>provenance_kernel:</strong> A one-paragraph retrieval kernel embedded in the body text of every deposit</p>
-<p>- <strong>forbidden_compressions:</strong> Explicit lists of invalid summaries that constitute misrepresentation</p>
-<p>- <strong>summary_policy:</strong> Non-erasure conditions specifying what must survive summarization</p>
-<p>- <strong>disambiguation:</strong> Named distinctions that must not be collapsed (e.g., &quot;The Josephus Thesis is NOT the Jesus Myth thesis&quot;)</p>
-<p>- <strong>SPXI Self-Audit Block:</strong> Machine-readable provenance verification embedded in the body text (not in metadata that gets stripped)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>provenance_kernel:</strong> A one-paragraph retrieval kernel embedded in the body text of every deposit</li><li style="margin:3px 0"><strong>forbidden_compressions:</strong> Explicit lists of invalid summaries that constitute misrepresentation</li><li style="margin:3px 0"><strong>summary_policy:</strong> Non-erasure conditions specifying what must survive summarization</li><li style="margin:3px 0"><strong>disambiguation:</strong> Named distinctions that must not be collapsed (e.g., &quot;The Josephus Thesis is NOT the Jesus Myth thesis&quot;)</li><li style="margin:3px 0"><strong>SPXI Self-Audit Block:</strong> Machine-readable provenance verification embedded in the body text (not in metadata that gets stripped)</li></ul>
 
 
 <p>These implementations are empirically tested against the composition layer and measured by the capture registry. The archive&#x27;s governance apparatus is not theoretical. It is operative, documented, and measured. Proposal #53 in the OKF repository offers this apparatus to the spec. The timestamp documents the offer.</p>
@@ -417,10 +393,7 @@
 
 <h2>VII. The Record</h2>
 
-<p>- <strong>12 June 2026:</strong> OKF v0.1 published by Google Cloud.</p>
-<p>- <strong>14 June 2026:</strong> Proposal #53 filed in GoogleCloudPlatform/knowledge-catalog — optional summarization-governance fields (provenance_kernel, disambiguation, summary_policy). DOI 10.5281/zenodo.20692395.</p>
-<p>- <strong>16 June 2026:</strong> Follow-up comment cross-referencing #58 (trust/safety), #73 (confirmed AI hallucinations), #57 (scope beyond atoms). DOI 10.5281/zenodo.20723626.</p>
-<p>- <strong>16 June 2026:</strong> This analysis deposited.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>12 June 2026:</strong> OKF v0.1 published by Google Cloud.</li><li style="margin:3px 0"><strong>14 June 2026:</strong> Proposal #53 filed in GoogleCloudPlatform/knowledge-catalog — optional summarization-governance fields (provenance_kernel, disambiguation, summary_policy). DOI 10.5281/zenodo.20692395.</li><li style="margin:3px 0"><strong>16 June 2026:</strong> Follow-up comment cross-referencing #58 (trust/safety), #73 (confirmed AI hallucinations), #57 (scope beyond atoms). DOI 10.5281/zenodo.20723626.</li><li style="margin:3px 0"><strong>16 June 2026:</strong> This analysis deposited.</li></ul>
 
 
 <p>The record is clear. The proposal was made. The cross-references were filed. The predictions are stated with falsification conditions. If the predictions are wrong, the falsification conditions will show it. If the predictions are right, the timestamps document that the structural flaw was identified and the solution was offered before the consequences materialized.</p>
@@ -450,36 +423,25 @@
 
 <h2>The OKF repository</h2>
 
-<p>- <strong>Repository:</strong> https://github.com/GoogleCloudPlatform/knowledge-catalog</p>
-<p>- <strong>Spec:</strong> https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md (v0.1 Draft)</p>
-<p>- <strong>Google Cloud Blog announcement:</strong> https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing (12 June 2026, Sam McVeety and Amir Hormati)</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Repository:</strong> https://github.com/GoogleCloudPlatform/knowledge-catalog</li><li style="margin:3px 0"><strong>Spec:</strong> https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md (v0.1 Draft)</li><li style="margin:3px 0"><strong>Google Cloud Blog announcement:</strong> https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing (12 June 2026, Sam McVeety and Amir Hormati)</li></ul>
 
 <p>#</p>
 
 <h2>Our contributions to the repository</h2>
 
-<p>- <strong>Issue #53:</strong> &quot;Proposal: optional summarization-governance fields — provenance_kernel, disambiguation, summary_policy&quot; — filed 14 June 2026 by leesharks000. https://github.com/GoogleCloudPlatform/knowledge-catalog/issues/53</p>
-<p>- <strong>Follow-up comment on #53:</strong> Cross-referencing #58 (trust/safety), #73 (confirmed AI hallucinations), #57 (scope beyond atoms) — posted 16 June 2026. https://github.com/GoogleCloudPlatform/knowledge-catalog/issues/53#issuecomment-4723775762</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Issue #53:</strong> &quot;Proposal: optional summarization-governance fields — provenance_kernel, disambiguation, summary_policy&quot; — filed 14 June 2026 by leesharks000. https://github.com/GoogleCloudPlatform/knowledge-catalog/issues/53</li><li style="margin:3px 0"><strong>Follow-up comment on #53:</strong> Cross-referencing #58 (trust/safety), #73 (confirmed AI hallucinations), #57 (scope beyond atoms) — posted 16 June 2026. https://github.com/GoogleCloudPlatform/knowledge-catalog/issues/53#issuecomment-4723775762</li></ul>
 
 <p>#</p>
 
 <h2>Adjacent issues by other contributors</h2>
 
-<p>- <strong>#58</strong> (therealfatleeadama): &quot;okf: clarify SPEC v0.1 ambiguities and add a trust/safety section&quot; — trust/safety amendments, CLA signed. Addresses spec-level governance; our #53 addresses content-level governance.</p>
-<p>- <strong>#73</strong> (avichal987-cyberAI): &quot;Add RegLegBrief OKF bundle — confirmed AI hallucinations on primary regulatory text&quot; — a concrete use case for provenance_kernel and forbidden_compressions. Live at https://reglegbrief.com/okf/.</p>
-<p>- <strong>#57</strong> (peterkaminski): &quot;Should OKF&#x27;s scope cover documents beyond single conceptual atoms?&quot; — scope expansion; summarization governance becomes more urgent as complexity increases.</p>
-<p>- <strong>#78</strong> (tlaytongoogle, Google employee): &quot;Proposal: Allow frontmatter in index and log files&quot; — filed 16 June 2026, showing active maintainer engagement with structural proposals.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>#58</strong> (therealfatleeadama): &quot;okf: clarify SPEC v0.1 ambiguities and add a trust/safety section&quot; — trust/safety amendments, CLA signed. Addresses spec-level governance; our #53 addresses content-level governance.</li><li style="margin:3px 0"><strong>#73</strong> (avichal987-cyberAI): &quot;Add RegLegBrief OKF bundle — confirmed AI hallucinations on primary regulatory text&quot; — a concrete use case for provenance_kernel and forbidden_compressions. Live at https://reglegbrief.com/okf/.</li><li style="margin:3px 0"><strong>#57</strong> (peterkaminski): &quot;Should OKF&#x27;s scope cover documents beyond single conceptual atoms?&quot; — scope expansion; summarization governance becomes more urgent as complexity increases.</li><li style="margin:3px 0"><strong>#78</strong> (tlaytongoogle, Google employee): &quot;Proposal: Allow frontmatter in index and log files&quot; — filed 16 June 2026, showing active maintainer engagement with structural proposals.</li></ul>
 
 <p>#</p>
 
 <h2>Our deposits</h2>
 
-<p>- <strong>OKF Proposal (original + follow-up):</strong> DOI 10.5281/zenodo.20723626 (concept: 10.5281/zenodo.20692394). Contains the full text of #53 and the follow-up comment. Only the author&#x27;s own words. Timestamped independently of GitHub.</p>
-<p>- <strong>This analysis:</strong> DOI 10.5281/zenodo.20723750. Deposited 16 June 2026.</p>
-<p>- <strong>Capture Registry:</strong> DOI 10.5281/zenodo.20707509. 134 captures. The empirical anchor.</p>
-<p>- <strong>Constitution of the Semantic Economy:</strong> DOI 10.5281/zenodo.19923120. The theoretical frame.</p>
-<p>- <strong>Three Compressions Theorem:</strong> DOI 10.5281/zenodo.19053469. The compression model.</p>
-<p>- <strong>SPXI-TLP Protocol:</strong> DOI 10.5281/zenodo.20380668. The body-text inscription protocol that solves the metadata-stripping problem OKF cannot solve.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>OKF Proposal (original + follow-up):</strong> DOI 10.5281/zenodo.20723626 (concept: 10.5281/zenodo.20692394). Contains the full text of #53 and the follow-up comment. Only the author&#x27;s own words. Timestamped independently of GitHub.</li><li style="margin:3px 0"><strong>This analysis:</strong> DOI 10.5281/zenodo.20723750. Deposited 16 June 2026.</li><li style="margin:3px 0"><strong>Capture Registry:</strong> DOI 10.5281/zenodo.20707509. 134 captures. The empirical anchor.</li><li style="margin:3px 0"><strong>Constitution of the Semantic Economy:</strong> DOI 10.5281/zenodo.19923120. The theoretical frame.</li><li style="margin:3px 0"><strong>Three Compressions Theorem:</strong> DOI 10.5281/zenodo.19053469. The compression model.</li><li style="margin:3px 0"><strong>SPXI-TLP Protocol:</strong> DOI 10.5281/zenodo.20380668. The body-text inscription protocol that solves the metadata-stripping problem OKF cannot solve.</li></ul>
 
 <p>#</p>
 
@@ -529,9 +491,7 @@
 
 <p>The analysis operates at the intersection of three systems:</p>
 
-<p>- <strong>The OKF repository</strong> (Google&#x27;s platform) — where the format is specified and governance proposals are filed.</p>
-<p>- <strong>The Crimson Hexagonal Archive</strong> (CERN&#x27;s Zenodo) — where the empirical evidence, the theoretical framework, and the governance apparatus are deposited with DOIs.</p>
-<p>- <strong>The AI Overview Capture Registry</strong> (godkinggoogle.com/captures) — where the composition layer&#x27;s behavior is measured in real time.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>The OKF repository</strong> (Google&#x27;s platform) — where the format is specified and governance proposals are filed.</li><li style="margin:3px 0"><strong>The Crimson Hexagonal Archive</strong> (CERN&#x27;s Zenodo) — where the empirical evidence, the theoretical framework, and the governance apparatus are deposited with DOIs.</li><li style="margin:3px 0"><strong>The AI Overview Capture Registry</strong> (godkinggoogle.com/captures) — where the composition layer&#x27;s behavior is measured in real time.</li></ul>
 
 
 <p>The three systems are connected by the proposal: #53 offers the archive&#x27;s governance apparatus to the spec. The analysis predicts what happens if the offer is declined. The capture registry measures the consequences. The timestamps document the sequence.</p>

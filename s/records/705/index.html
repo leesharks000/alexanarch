@@ -88,12 +88,12 @@
 
 <p>The protocol produces two distinct outputs:</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Layer 1 (Crawl Map):</strong> Standard sitemap.xml — pure URL enumeration for Google, Bing, and generic crawlers. No custom tags. Validated by Google Search Console.</p>
 
-<p>- </p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
 <p><strong>Layer 2 (Semantic Index):</strong> /spxi-index.jsonld — a JSON-LD graph declaring entity definitions, negative space, disambiguation matrices, semantic integrity markers, holographic kernels, basin state metadata, and provenance chains. Designed for GPTBot, Claude-Web, PerplexityBot, CCBot, and knowledge graph harvesters.</p>
@@ -445,19 +445,13 @@
 
 <p><strong>Notes:</strong></p>
 
-<p>- xmlns:xhtml is the XHTML namespace. Google parses it for hreflang/alternate discovery.</p>
-<p>- hreflang=&quot;x-spxi&quot; is a valid private-use subtag per RFC 5646. Google will ignore it. SPXI-aware crawlers can filter on it.</p>
-<p>- type=&quot;application/ld+json&quot; signals the content type.</p>
-<p>- The href points to the site-level index. Per-page packets, if implemented, use a URL derived from the page path (e.g., /about/alice/spxi-packet.jsonld).</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">xmlns:xhtml is the XHTML namespace. Google parses it for hreflang/alternate discovery.</li><li style="margin:3px 0">hreflang=&quot;x-spxi&quot; is a valid private-use subtag per RFC 5646. Google will ignore it. SPXI-aware crawlers can filter on it.</li><li style="margin:3px 0">type=&quot;application/ld+json&quot; signals the content type.</li><li style="margin:3px 0">The href points to the site-level index. Per-page packets, if implemented, use a URL derived from the page path (e.g., /about/alice/spxi-packet.jsonld).</li></ul>
 
 <p>#</p>
 
 <h2>3.3 What NOT To Do</h2>
 
-<p>- Do NOT add custom XML elements inside &lt;url&gt;.</p>
-<p>- Do NOT add spxi: namespace tags to the sitemap.</p>
-<p>- Do NOT modify &lt;loc&gt; values to include fragment identifiers.</p>
-<p>- Do NOT replace sitemap.xml with spxi-index.jsonld. Both must exist.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Do NOT add custom XML elements inside &lt;url&gt;.</li><li style="margin:3px 0">Do NOT add spxi: namespace tags to the sitemap.</li><li style="margin:3px 0">Do NOT modify &lt;loc&gt; values to include fragment identifiers.</li><li style="margin:3px 0">Do NOT replace sitemap.xml with spxi-index.jsonld. Both must exist.</li></ul>
 
 
 <hr>
@@ -485,10 +479,7 @@
 
 <h2>4.4 Size Constraints</h2>
 
-<p>- Site kernel (compressionSurvivalSummary): ≤ 100 words.</p>
-<p>- Negative tags: each ≤ 200 characters.</p>
-<p>- SIMs: each ≤ 200 characters, minimum 2 per entity.</p>
-<p>- Total index size: SHOULD be ≤ 100KB (fits in a single HTTP response without pagination).</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Site kernel (compressionSurvivalSummary): ≤ 100 words.</li><li style="margin:3px 0">Negative tags: each ≤ 200 characters.</li><li style="margin:3px 0">SIMs: each ≤ 200 characters, minimum 2 per entity.</li><li style="margin:3px 0">Total index size: SHOULD be ≤ 100KB (fits in a single HTTP response without pagination).</li></ul>
 
 
 <hr>
@@ -528,10 +519,7 @@
 
 <p>AI crawlers discover the semantic index through three channels:</p>
 
-<p>- <strong>robots.txt</strong> — Allow: /spxi-index.jsonld signals its existence.</p>
-<p>- <strong>sitemap.xml</strong> — &lt;xhtml:link&gt; inside &lt;url&gt; entries points to the index.</p>
-<p>- <strong>HTML &lt;head&gt;</strong> — &lt;link rel=&quot;alternate&quot; type=&quot;application/ld+json&quot; href=&quot;/spxi-index.jsonld&quot;&gt; on every page (already standard practice for JSON-LD discovery).</p>
-<p>- <strong>llms.txt</strong> — explicit mention of the SPXI index URL in the AI-crawler reading guide.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>robots.txt</strong> — Allow: /spxi-index.jsonld signals its existence.</li><li style="margin:3px 0"><strong>sitemap.xml</strong> — &lt;xhtml:link&gt; inside &lt;url&gt; entries points to the index.</li><li style="margin:3px 0"><strong>HTML &lt;head&gt;</strong> — &lt;link rel=&quot;alternate&quot; type=&quot;application/ld+json&quot; href=&quot;/spxi-index.jsonld&quot;&gt; on every page (already standard practice for JSON-LD discovery).</li><li style="margin:3px 0"><strong>llms.txt</strong> — explicit mention of the SPXI index URL in the AI-crawler reading guide.</li></ul>
 
 
 <p>Multiple discovery paths ensure that different crawl strategies all converge on the semantic layer.</p>
@@ -543,15 +531,7 @@
 
 <p>A valid /spxi-index.jsonld MUST satisfy:</p>
 
-<p>- <strong>Valid JSON-LD.</strong> Parseable by any JSON-LD 1.1 processor.</p>
-<p>- <strong>No dangling @id.</strong> Every @id in spxi:hasEntity MUST be a reachable URL.</p>
-<p>- <strong>Negative tag format.</strong> Every spxi:negativeTag MUST begin with &quot;NOT &quot; (capital N-O-T, followed by a space).</p>
-<p>- <strong>SIM presence.</strong> Every spxi:semanticIntegrityMarker SHOULD appear verbatim in the page&#x27;s rendered HTML (case-sensitive, whitespace-normalized).</p>
-<p>- <strong>BDR range.</strong> Every spxi:bdrEstimate MUST be a float 0.0–1.0.</p>
-<p>- <strong>Entity type valid.</strong> Every spxi:entityType MUST be a subtype of schema:Thing or a documented custom type.</p>
-<p>- <strong>Kernel size.</strong> spxi:compressionSurvivalSummary MUST be ≤ 100 words.</p>
-<p>- <strong>Freshness.</strong> The index&#x27;s dateModified SHOULD be ≥ the most recent &lt;lastmod&gt; in sitemap.xml.</p>
-<p>- <strong>Completeness.</strong> Every URL in sitemap.xml SHOULD have a corresponding entry in spxi:hasSurface.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Valid JSON-LD.</strong> Parseable by any JSON-LD 1.1 processor.</li><li style="margin:3px 0"><strong>No dangling @id.</strong> Every @id in spxi:hasEntity MUST be a reachable URL.</li><li style="margin:3px 0"><strong>Negative tag format.</strong> Every spxi:negativeTag MUST begin with &quot;NOT &quot; (capital N-O-T, followed by a space).</li><li style="margin:3px 0"><strong>SIM presence.</strong> Every spxi:semanticIntegrityMarker SHOULD appear verbatim in the page&#x27;s rendered HTML (case-sensitive, whitespace-normalized).</li><li style="margin:3px 0"><strong>BDR range.</strong> Every spxi:bdrEstimate MUST be a float 0.0–1.0.</li><li style="margin:3px 0"><strong>Entity type valid.</strong> Every spxi:entityType MUST be a subtype of schema:Thing or a documented custom type.</li><li style="margin:3px 0"><strong>Kernel size.</strong> spxi:compressionSurvivalSummary MUST be ≤ 100 words.</li><li style="margin:3px 0"><strong>Freshness.</strong> The index&#x27;s dateModified SHOULD be ≥ the most recent &lt;lastmod&gt; in sitemap.xml.</li><li style="margin:3px 0"><strong>Completeness.</strong> Every URL in sitemap.xml SHOULD have a corresponding entry in spxi:hasSurface.</li></ul>
 
 
 <hr>
@@ -561,13 +541,7 @@
 
 <p>The SPXI-Sitemap Protocol is the first site-wide crawl standard that:</p>
 
-<p>- <strong>Preserves the fixed genre</strong> of sitemaps.org (required for Google/Bing)</p>
-<p>- <strong>Extends it with semantic vasculature</strong> (required for AI accuracy)</p>
-<p>- <strong>Declares negative space</strong> — explicit machine-readable exclusions</p>
-<p>- <strong>Preserves compression-survival phrases</strong> — semantic checksums against paraphrase drift</p>
-<p>- <strong>Links to DOI-anchored provenance</strong> — not just assertion, but evidence</p>
-<p>- <strong>Quantifies basin state</strong> — how well the entity is currently resolved by AI systems</p>
-<p>- <strong>Provides a disambiguation matrix</strong> — structured collision records with distinguishing attributes</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Preserves the fixed genre</strong> of sitemaps.org (required for Google/Bing)</li><li style="margin:3px 0"><strong>Extends it with semantic vasculature</strong> (required for AI accuracy)</li><li style="margin:3px 0"><strong>Declares negative space</strong> — explicit machine-readable exclusions</li><li style="margin:3px 0"><strong>Preserves compression-survival phrases</strong> — semantic checksums against paraphrase drift</li><li style="margin:3px 0"><strong>Links to DOI-anchored provenance</strong> — not just assertion, but evidence</li><li style="margin:3px 0"><strong>Quantifies basin state</strong> — how well the entity is currently resolved by AI systems</li><li style="margin:3px 0"><strong>Provides a disambiguation matrix</strong> — structured collision records with distinguishing attributes</li></ul>
 
 
 <p>This is not SEO. This is not metadata. This is <strong>crawlable epistemology</strong> — a machine-readable declaration of what a site knows about itself and what it knows it is not.</p>

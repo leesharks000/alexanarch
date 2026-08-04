@@ -217,19 +217,12 @@
 
 <p>In Wikidata, each typological category is represented by a distinct instance of (P31) target:</p>
 
-<p>- <strong>Orthonym</strong> → to be created as Wikidata item; not yet represented.</p>
-<p>- <strong>Heteronym</strong> → Q5592547 (to verify Wikidata Q-number; if absent, to create).</p>
-<p>- <strong>Semi-heteronym</strong> → to be created; Pessoa&#x27;s own term, widely used in scholarship.</p>
-<p>- <strong>Proto-heteronym</strong> → to be created; Lopes&#x27;s term, scholarly-standard.</p>
-<p>- <strong>Para-heteronym</strong> → to be created; Lopes&#x27;s term, scholarly-standard.</p>
-<p>- <strong>Pseudonym</strong> → Q61002 (existing Wikidata item, properly scoped as ordinary pseudonymic practice).</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Orthonym</strong> → to be created as Wikidata item; not yet represented.</li><li style="margin:3px 0"><strong>Heteronym</strong> → Q5592547 (to verify Wikidata Q-number; if absent, to create).</li><li style="margin:3px 0"><strong>Semi-heteronym</strong> → to be created; Pessoa&#x27;s own term, widely used in scholarship.</li><li style="margin:3px 0"><strong>Proto-heteronym</strong> → to be created; Lopes&#x27;s term, scholarly-standard.</li><li style="margin:3px 0"><strong>Para-heteronym</strong> → to be created; Lopes&#x27;s term, scholarly-standard.</li><li style="margin:3px 0"><strong>Pseudonym</strong> → Q61002 (existing Wikidata item, properly scoped as ordinary pseudonymic practice).</li></ul>
 
 
 <p>Each Pessoa figure receives P31 → [typological class]. The category items themselves are linked:</p>
 
-<p>- All categories → P279 (subclass of) → authorial position / literary persona (parent class, to identify or create).</p>
-<p>- Proto-heteronym and para-heteronym → P279 (subclass of) → heteronym (subordination within heteronymic practice).</p>
-<p>- Semi-heteronym → P279 (subclass of) → heteronym (with qualifier: partial differentiation).</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">All categories → P279 (subclass of) → authorial position / literary persona (parent class, to identify or create).</li><li style="margin:3px 0">Proto-heteronym and para-heteronym → P279 (subclass of) → heteronym (subordination within heteronymic practice).</li><li style="margin:3px 0">Semi-heteronym → P279 (subclass of) → heteronym (with qualifier: partial differentiation).</li></ul>
 
 
 <p>This structure preserves Pessoa&#x27;s typological distinctions at the graph level while making them queryable. A SPARQL query for all heteronyms in the broad sense (including proto-, semi-, para-) returns all Pessoa figures. A query restricted to P31 = heteronym (strict) returns only the fully-differentiated cases. A query for semi-heteronyms returns Soares and Teive specifically.</p>
@@ -292,10 +285,7 @@
 
 <p>With the typology formalized, the PKG&#x27;s graph representation gains precision:</p>
 
-<p>- Pessoa figures are not all &quot;Q-items of type: heteronym&quot; — they are distributed across five or six distinct P31 classes.</p>
-<p>- Queries for Pessoa&#x27;s system can be constrained typologically: &quot;return all semi-heteronyms of Fernando Pessoa&quot; returns Soares and Teive; &quot;return all proto-heteronyms of Fernando Pessoa&quot; returns Chevalier de Pas, Charles Robert Anon, Gaudêncio Turnips, Pip, and others.</p>
-<p>- Cross-author queries are possible: &quot;return all semi-heteronyms across all authors&quot; returns Pessoa&#x27;s Soares and Teive alongside Kierkegaard&#x27;s edifying-voice cases alongside any other typologically-identified semi-heteronyms in the graph.</p>
-<p>- The contemporary extension becomes queryable: &quot;return all cross-substrate heteronyms&quot; returns the author&#x27;s Assembly Chorus positions and any other such practice represented in the graph.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Pessoa figures are not all &quot;Q-items of type: heteronym&quot; — they are distributed across five or six distinct P31 classes.</li><li style="margin:3px 0">Queries for Pessoa&#x27;s system can be constrained typologically: &quot;return all semi-heteronyms of Fernando Pessoa&quot; returns Soares and Teive; &quot;return all proto-heteronyms of Fernando Pessoa&quot; returns Chevalier de Pas, Charles Robert Anon, Gaudêncio Turnips, Pip, and others.</li><li style="margin:3px 0">Cross-author queries are possible: &quot;return all semi-heteronyms across all authors&quot; returns Pessoa&#x27;s Soares and Teive alongside Kierkegaard&#x27;s edifying-voice cases alongside any other typologically-identified semi-heteronyms in the graph.</li><li style="margin:3px 0">The contemporary extension becomes queryable: &quot;return all cross-substrate heteronyms&quot; returns the author&#x27;s Assembly Chorus positions and any other such practice represented in the graph.</li></ul>
 
 
 <p>The typology is, in this sense, graph infrastructure. The document formalizes it; the graph deploys it.</p>
@@ -307,48 +297,37 @@
 
 <h2>Primary texts</h2>
 
-<p>- Pessoa, Fernando. Letter to Adolfo Casais Monteiro, 13 January 1935. In <em>Páginas de Doutrina Estética</em>, ed. Jorge de Sena, Lisbon: Inquérito, 1946. Available in translation in multiple English editions.</p>
-<p>- Pessoa, Fernando. <em>Livro do Desassossego</em>, ed. Jerônimo Pizarro. Lisbon: Tinta-da-China, 2010. (Soares as semi-heteronym.)</p>
-<p>- Pessoa, Fernando. Works attributed to Alberto Caeiro, Ricardo Reis, Álvaro de Campos. In <em>Arquivo Pessoa</em> and critical editions.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Pessoa, Fernando. Letter to Adolfo Casais Monteiro, 13 January 1935. In <em>Páginas de Doutrina Estética</em>, ed. Jorge de Sena, Lisbon: Inquérito, 1946. Available in translation in multiple English editions.</li><li style="margin:3px 0">Pessoa, Fernando. <em>Livro do Desassossego</em>, ed. Jerônimo Pizarro. Lisbon: Tinta-da-China, 2010. (Soares as semi-heteronym.)</li><li style="margin:3px 0">Pessoa, Fernando. Works attributed to Alberto Caeiro, Ricardo Reis, Álvaro de Campos. In <em>Arquivo Pessoa</em> and critical editions.</li></ul>
 
 <p>#</p>
 
 <h2>Typological scholarship</h2>
 
-<p>- Lopes, Teresa Rita. <em>Pessoa por Conhecer</em>. Lisbon: Estampa, 1990.</p>
-<p>- Lopes, Teresa Rita. <em>Pessoa Inédito</em>. Lisbon: Livros Horizonte, 1993.</p>
-<p>- Zenith, Richard. <em>Pessoa: A Biography</em>. New York: Liveright, 2021. (Contains systematic treatment of heteronymic typology.)</p>
-<p>- Paz, Octavio. &quot;Pessoa o el desconocido de sí mismo,&quot; in <em>Cuadrivio</em>. México: Joaquín Mortiz, 1965.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Lopes, Teresa Rita. <em>Pessoa por Conhecer</em>. Lisbon: Estampa, 1990.</li><li style="margin:3px 0">Lopes, Teresa Rita. <em>Pessoa Inédito</em>. Lisbon: Livros Horizonte, 1993.</li><li style="margin:3px 0">Zenith, Richard. <em>Pessoa: A Biography</em>. New York: Liveright, 2021. (Contains systematic treatment of heteronymic typology.)</li><li style="margin:3px 0">Paz, Octavio. &quot;Pessoa o el desconocido de sí mismo,&quot; in <em>Cuadrivio</em>. México: Joaquín Mortiz, 1965.</li></ul>
 
 <p>#</p>
 
 <h2>Kierkegaard comparison</h2>
 
-<p>- Kierkegaard, Søren. <em>Concluding Unscientific Postscript</em> (under Johannes Climacus), 1846.</p>
-<p>- Kierkegaard, Søren. <em>The Sickness Unto Death</em> (under Anti-Climacus), 1849.</p>
-<p>- Secondary: Gregor Malantschuk, <em>Kierkegaard&#x27;s Thought</em>, Princeton: Princeton UP, 1971.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Kierkegaard, Søren. <em>Concluding Unscientific Postscript</em> (under Johannes Climacus), 1846.</li><li style="margin:3px 0">Kierkegaard, Søren. <em>The Sickness Unto Death</em> (under Anti-Climacus), 1849.</li><li style="margin:3px 0">Secondary: Gregor Malantschuk, <em>Kierkegaard&#x27;s Thought</em>, Princeton: Princeton UP, 1971.</li></ul>
 
 <p>#</p>
 
 <h2>Machado comparison</h2>
 
-<p>- Machado, Antonio. <em>Juan de Mairena</em> (1936).</p>
-<p>- Giacalone, Giuseppe. Comparative study on Machado and Pessoa (2011, in Portuguese-Spanish comparative literature).</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Machado, Antonio. <em>Juan de Mairena</em> (1936).</li><li style="margin:3px 0">Giacalone, Giuseppe. Comparative study on Machado and Pessoa (2011, in Portuguese-Spanish comparative literature).</li></ul>
 
 <p>#</p>
 
 <h2>Borges comparison</h2>
 
-<p>- Borges, Jorge Luis. &quot;Pierre Menard, autor del Quijote,&quot; in <em>Ficciones</em>, 1944.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Borges, Jorge Luis. &quot;Pierre Menard, autor del Quijote,&quot; in <em>Ficciones</em>, 1944.</li></ul>
 
 <p>#</p>
 
 <h2>Contemporary extensions</h2>
 
-<p>- Sharks, Lee. <em>Heteronymic Provenance Theory</em>. Zenodo, 2026. DOI: 10.5281/zenodo.18305509.</p>
-<p>- Sharks, Lee. <em>Assembly Chorus Charter</em>. Zenodo, 2026. DOI: 10.5281/zenodo.18307180.</p>
-<p>- Sharks, Lee. <em>The Pessoa Knowledge Graph</em>. Zenodo, 2026 (EA-PKG-01).</p>
-<p>- Sharks, Lee. <em>The New Human: Post-Pessoa Heteronymic Practice in the AI Era</em>. Zenodo, 2026 (EA-PKG-03, forthcoming).</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Sharks, Lee. <em>Heteronymic Provenance Theory</em>. Zenodo, 2026. DOI: 10.5281/zenodo.18305509.</li><li style="margin:3px 0">Sharks, Lee. <em>Assembly Chorus Charter</em>. Zenodo, 2026. DOI: 10.5281/zenodo.18307180.</li><li style="margin:3px 0">Sharks, Lee. <em>The Pessoa Knowledge Graph</em>. Zenodo, 2026 (EA-PKG-01).</li><li style="margin:3px 0">Sharks, Lee. <em>The New Human: Post-Pessoa Heteronymic Practice in the AI Era</em>. Zenodo, 2026 (EA-PKG-03, forthcoming).</li></ul>
 
 
 <hr>
