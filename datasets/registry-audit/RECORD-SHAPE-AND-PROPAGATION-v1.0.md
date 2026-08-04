@@ -17,6 +17,7 @@ A single deposit's state is declared in NINE places. Every repair must reach all
 | 7 | `data/chunks/registry/*.json` mirror | regenerated from (1) |
 | 8 | `data/axn-central-registry.json` | regenerated from (1) |
 | 9 | `data/oai-index.json` (+ dispositions capsule) | regenerated from (1) + dispositions; **lifecycle_state=withdrawn_external is NEVER exposed** |
+| 10 | `resourcesync/` (resourcelist + changelist, lastmod per record) | regenerated from (1); OAI's sibling discovery surface — same severance class (added 2026-08-04 after found stale post-repair) |
 
 ## 2 · The propagation order (one command)
 `python3 scripts/propagate_record_state.py N [N …]` runs, in order:
@@ -28,6 +29,7 @@ A single deposit's state is declared in NINE places. Every repair must reach all
 4. `regenerate_surfaces --only chunks,browse,browse-index,search-index,wiki,sitemap`.
 5. `build_central_registry`.
 6. `build_oai_index` — withdrawn_external excluded at the gate regardless of disposition.
+7. `build_resourcesync` — lastmod surface for harvesters that sync by changelist (added 2026-08-04).
 
 ## 3 · The rule
 **No repair is complete until propagation has run.** The repair ledger row is inscribed at step 0;

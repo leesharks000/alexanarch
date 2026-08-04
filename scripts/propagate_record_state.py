@@ -90,6 +90,7 @@ def main(nums):
                     "chunks,browse,browse-index,search-index,wiki,sitemap"], cwd=ROOT, check=False)
     subprocess.run([sys.executable, "scripts/build_central_registry.py"], cwd=ROOT, check=False)
     subprocess.run([sys.executable, "scripts/build_oai_index.py"], cwd=ROOT, check=False)
+    subprocess.run([sys.executable, "scripts/build_resourcesync.py"], cwd=ROOT, check=False)
     print("propagation complete:", nums)
 
 
