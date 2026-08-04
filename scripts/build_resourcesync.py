@@ -28,6 +28,7 @@ date_modified (scripts/record_modification.py), so a record repaired today is
 re-offered to harvesters today, and a record untouched since deposit is not.
 """
 import json
+import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -97,17 +98,42 @@ def main():
         "changelist", ch, up=f"{BASE}/resourcesync/capabilitylist.xml",
         extra_md=f' from="{stamped[-1]["datestamp"]}T00:00:00Z"' if stamped else ""))
 
-    # robots.txt — announce both endpoints
+    # robots.txt — announce both endpoints.
+    # ROOT-CAUSE FIX (2026-08-04 decisions row, RECURRING truncation class):
+    # in sparse checkouts robots.txt is absent from the working tree, and this
+    # writer used to FABRICATE a minimal stub in its place — losing the
+    # agent-guidance block and Sitemap lines on every propagation run (step 7).
+    # Rule now: read-modify-write against HEAD content when the checkout copy is
+    # absent or truncated; never fabricate; skip when no canonical source exists.
+    # A truncated working copy is restored from HEAD (self-healing), never
+    # accepted as a base.
     rp = ROOT / "robots.txt"
-    txt = rp.read_text() if rp.exists() else "User-agent: *\nAllow: /\n"
-    add = []
-    if "resourcesync" not in txt:
-        add.append(f"# ResourceSync (ANSI/NISO Z39.99) source description")
-        add.append(f"Sitemap: {BASE}/resourcesync/resourcelist.xml")
-    if "/oai" not in txt:
-        add.append(f"# OAI-PMH 2.0 base URL: {BASE}/oai")
-    if add:
-        rp.write_text(txt.rstrip() + "\n\n" + "\n".join(add) + "\n")
+    MARKER = "# AI agents:"  # sentinel for the canonical agent-guidance block
+    txt = rp.read_text() if rp.exists() else ""
+    if MARKER not in txt:
+        head = subprocess.run(
+            ["git", "-C", str(ROOT), "show", "HEAD:robots.txt"],
+            capture_output=True, text=True)
+        if head.returncode == 0 and MARKER in head.stdout:
+            txt = head.stdout  # recover canonical bytes; restore on write below
+        elif not txt:
+            txt = None  # nothing in checkout, nothing in HEAD: do not invent
+            print("resourcesync: robots.txt absent from checkout and HEAD — "
+                  "SKIPPED robots write (no fabrication)")
+    if txt is not None:
+        add = []
+        if "resourcesync" not in txt:
+            add.append(f"# ResourceSync (ANSI/NISO Z39.99) source description")
+            add.append(f"Sitemap: {BASE}/resourcesync/resourcelist.xml")
+        if "/oai" not in txt:
+            add.append(f"# OAI-PMH 2.0 base URL: {BASE}/oai")
+        new = txt.rstrip() + "\n\n" + "\n".join(add) + "\n" if add else txt
+        current = rp.read_text() if rp.exists() else ""
+        if new != current:
+            rp.write_text(new)
+            print("resourcesync: robots.txt "
+                  + ("restored from HEAD" if MARKER in new and MARKER not in current
+                     else "updated"))
 
     print(f"resourcesync: {len(recs)} resources, {len(ch)} changes, "
           f"source description at /.well-known/resourcesync")
