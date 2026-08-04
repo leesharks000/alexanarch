@@ -80,7 +80,7 @@ def main(nums):
     for n in nums:
         if n in by:
             try:
-                wire_deposit.regenerate_static_page(by[n], eidx)
+                wire_deposit.regenerate_static_page(by[n], eidx, reg)
                 print(f"#{n}: record page regenerated")
             except Exception as ex:
                 print(f"#{n}: page regen failed: {ex}")
