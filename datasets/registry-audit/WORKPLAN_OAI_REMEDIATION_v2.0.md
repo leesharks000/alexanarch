@@ -169,6 +169,11 @@ If a repair introduces a state the renderer has no branch for, TEACH THE RENDERE
 (wire_deposit.py banner block), then propagate — otherwise the page will misdeclare.
 
 **Known traps (each cost a real round):**
+- Sparse/partial checkouts: writers regenerate or append against absent inputs, producing truncated
+  or impoverished outputs that look complete (2026-08-03 near-misses: receipts log truncated to
+  session-only entries, caught at `git add` by the sparse rule; central registry rebuilt at 0 kernels /
+  0 symbolon, caught at output line). Before running ANY writer, check out every input AND every
+  append-target it touches; verify counts against prior state after.
 - Registry-only fixes: page/chunks/OAI keep the old state (the #1267/#1308 class).
 - Staged-text frontmatter disagreeing with registry fields — sync both or status drifts back.
 - `git reset --hard` after editing but before committing: DESTROYS the edit (commit first).
