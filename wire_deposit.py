@@ -746,6 +746,13 @@ def regenerate_static_page(d, eidx, registry=None):
             # and retain it for structured data.
             _fm, raw = _split_frontmatter(raw)
             _plain = _plain_body(raw)
+            # W10: restoration wrapper (methodology/recovery apparatus) precedes
+            # the work inside canonical bytes; machine consumers of articleBody
+            # get the WORK — apparatus stays in the bytes and the page's
+            # apparatus section, provenance in description/encoding fields.
+            _w10 = 'Canonical bytes below the rule'
+            if _plain and _w10 in _plain:
+                _plain = _plain.split(_w10, 1)[1].lstrip(' .\n*-_')
             if _plain:
                 _ld["articleBody"] = _plain
                 _ld["wordCount"] = len(_plain.split())
@@ -840,6 +847,28 @@ def regenerate_static_page(d, eidx, registry=None):
     # keeps its own history, and the mark says the history is history.
     fulltext = _drop_duplicated_description(fulltext, d.get('description'))
     fulltext_marked = _mark_superseded_appendix(fulltext)
+
+    # W10 WRAPPER-APPARATUS SEPARATION (2026-08-04, exemplar #1167): restoration
+    # records carry the recovery wrapper (Methodology, Falsification Conditions,
+    # Recovery note) INSIDE the canonical bytes, above the marker line
+    # "Canonical bytes below the rule." — so Full Text opened with apparatus,
+    # not the work. Presentation-level fix, kernel-orthodox: bytes untouched;
+    # the wrapper renders as a collapsed apparatus section and Full Text is
+    # anchored at the canonical rule.
+    apparatus_html = ''
+    _W10_MARK = 'Canonical bytes below the rule'
+    if _W10_MARK in fulltext_marked:
+        _i = fulltext_marked.find(_W10_MARK)
+        _cut = fulltext_marked.find('</p>', _i)
+        _cut = (_cut + 4) if _cut != -1 else (_i + len(_W10_MARK))
+        apparatus_html = (
+            '<details style="margin:12px 0;background:var(--surface);border-radius:6px;padding:8px 12px">'
+            '<summary style="cursor:pointer;font-weight:600;color:#777;font-size:.9em">'
+            'Restoration apparatus — methodology, falsification conditions, recovery note '
+            '(provenance of the recovered bytes; the work follows below)</summary>'
+            '<div class="ft" style="font-size:.88em;color:#555">' + fulltext_marked[:_cut] + '</div></details>'
+        )
+        fulltext_marked = fulltext_marked[_cut:]
 
     # Keywords
     # Version chain blocks (banner for superseded/draft, history list for series)
@@ -1122,6 +1151,7 @@ def regenerate_static_page(d, eidx, registry=None):
 {concepts_html}
 {triples_html}
 <h2>Full Text</h2>
+{apparatus_html}
 <div class="ft">{fulltext_marked}</div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
