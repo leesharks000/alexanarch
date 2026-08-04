@@ -1,6 +1,6 @@
 {
  "artifact": "wrong-object-workup",
- "version": "1.0",
+ "version": "1.1",
  "date": "2026-08-04",
  "operator": "TACHYON (MANUS session, in-thread)",
  "scope": "36 WITHHOLD records with WRONG_OBJECT identity at audit freeze 055429ac",
@@ -139,6 +139,7 @@
   ]
  },
  "next_session_queue": [
+  "0. THREAD RECOVERIES (locations seated in recovery_locations): pull full texts in dedicated sessions — one thread per session, verify completeness in-thread, seat via R1c THREAD-RECOVERY with thread URI in basis, honor per-object reseat_notes (esp. the Sappho fifth-stanza erratum).",
   "1. Verify each home-candidate by content (not title): fetch candidate record bodies, confirm the displaced body is the complete named object.",
   "2. Execute verified cross-seat recoveries as R1c-class repairs (staged_body from internal witness; ledger row per record; propagate batch).",
   "3. Resolve DOI-supersession quartet via data/doi-resolution-index.json; inscribe superseded_by_deposit_number where target exists.",
@@ -542,5 +543,52 @@
    "rec": "Withhold until the Jess Elgene certificate/license object is seated.",
    "rel": "{}"
   }
- ]
+ ],
+ "recovery_locations": {
+  "1270": {
+   "object": "PHAINETAI MOI: Sappho 31 and the Inscription of the Future Reader (~4,600 words)",
+   "thread": "https://claude.ai/chat/efb11d91-2013-4208-81da-f548caeac29c",
+   "thread_date": "2026-01-13",
+   "evidence": "PHAINETAI_MOI.md composition + deposit apparatus; DOI 10.5281/zenodo.18202753 corroborated in-thread",
+   "confidence": "HIGH",
+   "reseat_note": "MUST respect fifth-stanza erratum AXN:0346 (Cranes 2026-06-14): reconstructed stanza is the FIFTH; thread text predates erratum and says fourth — reseat with erratum note or seat as historical version with erratum relation."
+  },
+  "1261": {
+   "object": "The Chaerephon Problem: Heteronymy as Symbolon (paper, v1.0)",
+   "thread": "https://claude.ai/chat/eb05d67a-3447-46c5-abe1-9bbb9d57b080",
+   "thread_date": "2026-05-30",
+   "evidence": "chaerephon-problem-v1.0.md composed and built to PDF with embedded metadata in-thread; companion ratification record (the body currently mis-seated here) composed in same session",
+   "confidence": "HIGH",
+   "reseat_note": "Displaced ratification-record body belongs at #764 per match graph."
+  },
+  "1260": {
+   "object": "The Semantic Commodity Form (paper; DOI 10.5281/zenodo.20449323)",
+   "threads": [
+    "https://claude.ai/chat/b070930f-b790-4644-9234-566b1a2b16c7 (2026-03-22 Marx Room blind-draft session)",
+    "https://claude.ai/chat/eb05d67a-3447-46c5-abe1-9bbb9d57b080 (2026-05-30 semantic-address + ratification mirror)"
+   ],
+   "confidence": "MEDIUM",
+   "reseat_note": "Composition thread not yet pinpointed; walk the two leads. Displaced ratification-record body belongs at #765."
+  },
+  "1252_1277": {
+   "object": "The Epistle Triptych — four components: Epistle to the Human Diaspora (2015 seed), Damascus Dancings provenance, CIT Charter, Integrity Lock ILA-CIT-001",
+   "thread": "https://claude.ai/chat/75a5d456-c0e0-411a-87dd-6d5057ee112a",
+   "thread_date": "2026-01-28",
+   "evidence": "Triptych metadata composed in-thread; component DOIs 10.5281/zenodo.18381184/.18381190/.18381196/.18381204 recorded (Wayback fallback channel)",
+   "confidence": "MEDIUM-HIGH",
+   "reseat_note": "Recovery = the components, esp. the 2015 Epistle seed text; components likely composed in the Jan-26/28 Revelation Room session cluster."
+  },
+  "1004": {
+   "object": "I would have loved you (poem, 06.NH.SHARKS.01, 2026-05-22)",
+   "thread": "https://claude.ai/chat/beec57ae-028d-46c3-a9ee-40d8b90837fc",
+   "thread_date": "2026-05-29",
+   "evidence": "COMPLETE six-line poem visible in-thread inside its deposit wrapper (create_file), incl. ChatGPT lineation ruling",
+   "confidence": "HIGH",
+   "reseat_note": "Pull full wrapper tail from thread; displaced current body (The reward of love, 06.NH.SHARKS.02) belongs at #1250."
+  },
+  "leads": {
+   "1356_1357_1358": "Hexagonal Contributor Licenses — thread beec57ae cites Rhys Owens concept DOI 10.5281/zenodo.19655468 and Hexagonal Licensing Protocol v1.0 DOI 10.5281/zenodo.19656133; search license-composition threads next.",
+   "1121": "Pearl materials lead: thread 962a0bb3 (2025-11-13, Pearl and Other Poems as prophetic synthesis) — metadata/context only; the 84-page artwork will not be in text threads."
+  }
+ }
 }
