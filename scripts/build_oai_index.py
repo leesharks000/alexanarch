@@ -115,6 +115,8 @@ def main():
                 else ["completeness:full"]),
             "deleted": bool(d.get("status") == "WITHDRAWN"),
             "relations": relations_for(d, by_n),
+            "source": d.get("journal") or "",
+            "publisher": d.get("publisher") or "",
         })
     recs.sort(key=lambda r: r["id"])
     stamps = [r["datestamp"] for r in recs if r["datestamp"]]

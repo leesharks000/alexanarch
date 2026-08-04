@@ -4,8 +4,9 @@
 
 ## Current live figures
 - Ledger: alexanarch_audit_merged_ledger_through_0001-0018_v1.0.json (1,426 rows, contiguous, sha in MANIFEST)
-- Dispositions: data/audit/registration_dispositions.json v4.x — HARVEST 304 · HARVEST_WITH_WARNING 1065 · **WITHHOLD 57** (was 131 at completion; repairs + verified conversions logged in WORKPLAN decisions)
-- OAI feed: 1,371 records · dc:relation live · ResourceSync = doctrine site 10
+- Dispositions: data/audit/registration_dispositions.json v4.x — HARVEST 304 · HARVEST_WITH_WARNING 1066 · **WITHHOLD 56** (was 131 at completion; repairs + verified conversions logged in WORKPLAN decisions)
+- OAI feed: 1,372 records · dc:relation live · dc:source + per-record dc:publisher live (MECH-BATCH-1) · ResourceSync = doctrine site 10
+- Venue truth: journal canonical corpus-wide (W6 COMPLETE incl. deferred #1–#358 half); dc:publisher populated on all 1,426 frozen-corpus records (venues.json v1.1)
 - Repair ledger: see repair_ledger.json (R-0001 → current; tail governs)
 - Workplan: WORKPLAN_OAI_REMEDIATION_v2.0.md — **decisions log is the authoritative running record**
 - WRONG_OBJECT program: wrong-object-workup-2026-08-04.json v1.2 (match graph, recovery channels, adjudication findings)

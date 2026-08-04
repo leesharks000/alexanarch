@@ -84,8 +84,8 @@ ${creatorId}
       <dc:identifier>${esc(r.axn)}</dc:identifier>
       <dc:description>${esc(r.description)}</dc:description>
 ${(r.relations || []).map((u) => `      <dc:relation>${esc(u)}</dc:relation>`).join('\n')}
-      <dc:publisher>Alexanarch — Crimson Hexagonal Archive</dc:publisher>
-      <dc:language>eng</dc:language>
+      <dc:publisher>${esc(r.publisher || 'Alexanarch — the Crimson Hexagonal Archive')}</dc:publisher>
+${r.source ? `      <dc:source>${esc(r.source)}</dc:source>\n` : ''}      <dc:language>eng</dc:language>
 ${subj}
       </oai_dc:dc>
     </metadata>

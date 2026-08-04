@@ -44,7 +44,7 @@ MODIFIABLE = {
     "title", "creator", "orcid", "description", "keywords", "license",
     "status", "substrate", "content_type", "body_status", "version",
     "superseded_by_deposit_number", "superseded_reason", "related_ids",
-    "canonical_text_status", "version_series_id",
+    "canonical_text_status", "version_series_id", "journal", "publisher",
 }
 
 

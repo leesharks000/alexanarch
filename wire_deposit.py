@@ -1074,8 +1074,8 @@ def regenerate_static_page(d, eidx, registry=None):
 <meta name="citation_author" content="{esc(d["creator"])}">
 <meta name="citation_publication_date" content="{esc(d["date"])}">
 <meta name="citation_online_date" content="{esc(d["date"])}">
-<meta name="citation_journal_title" content="Alexanarch">
-<meta name="citation_publisher" content="Alexanarch">
+<meta name="citation_journal_title" content="{esc(d.get("journal") or "Alexanarch")}">
+<meta name="citation_publisher" content="{esc(d.get("publisher") or "Alexanarch")}">
 <meta name="citation_abstract" content="{esc(d.get("description",""))}">
 <meta name="citation_public_url" content="https://www.alexanarch.org/s/records/{dn}/">
 <meta name="citation_fulltext_html_url" content="https://www.alexanarch.org/s/records/{dn}/">
@@ -1089,7 +1089,7 @@ def regenerate_static_page(d, eidx, registry=None):
 <meta name="DC.language" content="en" scheme="DCTERMS.RFC3066">
 <meta name="DC.type" content="{esc(d.get("content_type",""))}">
 <meta name="DC.rights" content="CC BY 4.0">
-<meta name="DC.publisher" content="Alexanarch">
+<meta name="DC.publisher" content="{esc(d.get("publisher") or "Alexanarch")}">
 <meta name="DC.source" content="https://www.alexanarch.org/">
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}}*{{margin:0;padding:0;box-sizing:border-box}}body{{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}}.wrap{{max-width:720px;margin:0 auto;padding:60px 24px}}a{{color:var(--accent);text-decoration:none}}a:hover{{color:var(--accent2)}}h1{{font-size:1.3em;font-weight:600;color:var(--accent);margin-bottom:8px}}h2{{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}}p{{margin-bottom:10px;color:#333}}.nav{{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}}.nav a{{color:#777;font-weight:500;text-decoration:none}}.nav a:hover{{color:var(--accent)}}.ft{{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;max-height:600px;overflow-y:auto;font-size:.88em;line-height:1.75;margin:8px 0;color:#333}}.ft h1,.ft h2,.ft h3{{color:var(--accent);margin:12px 0 6px}}.ft h1{{font-size:1.1em}}.ft h2{{font-size:1em;border-bottom:none}}.ft h3{{font-size:.95em}}.ft strong{{color:var(--fg)}}.ft blockquote{{border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0}}.ft hr{{border:none;border-top:1px solid var(--border);margin:12px 0}}.footer{{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}}</style>
 </head><body><div class="wrap">
