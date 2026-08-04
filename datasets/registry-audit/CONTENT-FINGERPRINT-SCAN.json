@@ -1,0 +1,164 @@
+{
+ "artifact": "CONTENT-FINGERPRINT-SCAN",
+ "version": "1.0",
+ "date": "2026-08-04",
+ "method": "9-word shingle hashing over normalized bodies (URLs and punctuation stripped), inverted-index candidate generation, Jaccard-min overlap. Identity is judged by TEXT, not by title — the failure mode this instrument exists to correct.",
+ "why": "MANUS question 2026-08-04 (\"how did you search, with what terms?\") exposed that every duplicate/pairing search this session was title-gated (title substring + hand-picked probes). Title matching is structurally blind to this archive's most common duplicate form: metadata packets, capture-titled records, and superseded variants that carry DIFFERENT titles for the SAME text.",
+ "results": {
+  "bodies_fingerprinted": 1391,
+  "high_overlap_pairs": 149,
+  "invisible_to_title_matching": 24
+ },
+ "invisible_pairs": [
+  {
+   "a": 1110,
+   "b": 1177,
+   "content_overlap": 1.0,
+   "title_overlap": 0.42
+  },
+  {
+   "a": 65,
+   "b": 978,
+   "content_overlap": 1.0,
+   "title_overlap": 0.44
+  },
+  {
+   "a": 178,
+   "b": 1022,
+   "content_overlap": 1.0,
+   "title_overlap": 0.46
+  },
+  {
+   "a": 856,
+   "b": 869,
+   "content_overlap": 1.0,
+   "title_overlap": 0.0
+  },
+  {
+   "a": 179,
+   "b": 1014,
+   "content_overlap": 1.0,
+   "title_overlap": 0.36
+  },
+  {
+   "a": 179,
+   "b": 1015,
+   "content_overlap": 1.0,
+   "title_overlap": 0.36
+  },
+  {
+   "a": 179,
+   "b": 1018,
+   "content_overlap": 1.0,
+   "title_overlap": 0.36
+  },
+  {
+   "a": 179,
+   "b": 1019,
+   "content_overlap": 1.0,
+   "title_overlap": 0.46
+  },
+  {
+   "a": 179,
+   "b": 1020,
+   "content_overlap": 1.0,
+   "title_overlap": 0.38
+  },
+  {
+   "a": 183,
+   "b": 1204,
+   "content_overlap": 1.0,
+   "title_overlap": 0.33
+  },
+  {
+   "a": 200,
+   "b": 826,
+   "content_overlap": 1.0,
+   "title_overlap": 0.12
+  },
+  {
+   "a": 826,
+   "b": 1027,
+   "content_overlap": 1.0,
+   "title_overlap": 0.38
+  },
+  {
+   "a": 826,
+   "b": 1028,
+   "content_overlap": 1.0,
+   "title_overlap": 0.38
+  },
+  {
+   "a": 631,
+   "b": 965,
+   "content_overlap": 1.0,
+   "title_overlap": 0.13
+  },
+  {
+   "a": 584,
+   "b": 591,
+   "content_overlap": 0.97,
+   "title_overlap": 0.43
+  },
+  {
+   "a": 584,
+   "b": 588,
+   "content_overlap": 0.97,
+   "title_overlap": 0.38
+  },
+  {
+   "a": 1168,
+   "b": 1171,
+   "content_overlap": 0.85,
+   "title_overlap": 0.0
+  },
+  {
+   "a": 636,
+   "b": 970,
+   "content_overlap": 0.85,
+   "title_overlap": 0.18
+  },
+  {
+   "a": 111,
+   "b": 1193,
+   "content_overlap": 0.8,
+   "title_overlap": 0.42
+  },
+  {
+   "a": 227,
+   "b": 1266,
+   "content_overlap": 0.78,
+   "title_overlap": 0.43
+  },
+  {
+   "a": 584,
+   "b": 586,
+   "content_overlap": 0.72,
+   "title_overlap": 0.38
+  },
+  {
+   "a": 683,
+   "b": 1362,
+   "content_overlap": 0.71,
+   "title_overlap": 0.29
+  },
+  {
+   "a": 317,
+   "b": 959,
+   "content_overlap": 0.64,
+   "title_overlap": 0.0
+  },
+  {
+   "a": 639,
+   "b": 970,
+   "content_overlap": 0.56,
+   "title_overlap": 0.36
+  }
+ ],
+ "notable": {
+  "1168_1171": "the \"Untitled\" record is content-identical (0.85) to the DOI Registry v7.0 — this is an IDENTITY finding for one of the two remaining transitional-genre records, previously blocked as unknowable",
+  "856_869": "content overlap 1.0 with ZERO title overlap (Pristine Fallacy vs Lexical Minting Registry) — WRONG_OBJECT candidate, ADJUDICATION",
+  "179_family": "five [DUPLICATE—SUPERSEDED] records are content-identical to the Sappho node — confirms the replicated-Sappho body finding in the WRONG_OBJECT workup, now measured rather than inferred"
+ },
+ "standing_rule": "Duplicate and pairing searches MUST run content fingerprints, not title matching. Title evidence may confirm a fingerprint match; it may never be the primary filter."
+}
