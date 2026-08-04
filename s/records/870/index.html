@@ -51,6 +51,7 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">cha.ledger</strong> <span style="font-size:.75em;color:#999">[specification]</span><br><span style="font-size:.85em;color:#444">Append-only plaintext transaction log at data/ledger/cha.ledger. The chrono-semantic backbone: each line is a standalone timestamped transaction extracted from an autonomous document. Schema self-describing in the file header. Surviving truth when JSON metadata or external databases crash.</span></div>
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>ALEXANARCH DATA FOUNDRY — SESSION WORKPLAN</h1>
 <h2>Session: June 22, 2026 (TACHYON)</h2>
 <h2>Updated: end of session 3 (binding step complete)</h2>
@@ -61,13 +62,17 @@
 
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> We are not aggregating terms CHA has minted. We are aggregating terms CHA has actively defined, developed, and used. Every one. When CHA touches a concept, a distinction, and names its address, that belongs. Where CHA comes to an address, finds what is there, and leaves it changed, that belongs. The heteronyms fit in this category, as well. The institutions. The journals. The operators. These all belong.</blockquote>
 
-<h3>The inclusion test</h3>
+<p>#</p>
+
+<h2>The inclusion test</h2>
 
 <p><strong>Did CHA arrive at this address, engage it, and leave it defined?</strong></p>
 
 <p>Not &quot;did CHA coin this from nothing&quot; but &quot;did CHA find this, work on it, and produce a specific definition or position?&quot;</p>
 
-<h3>Engagement types (assigned during reading)</h3>
+<p>#</p>
+
+<h2>Engagement types (assigned during reading)</h2>
 
 <div style="font-family:var(--mono);font-size:.8em">| Type | Meaning | Example |</div>
 <p>|---|---|---|</p>
@@ -79,7 +84,9 @@
 <div style="font-family:var(--mono);font-size:.8em">| `specified` | CHA formalized an operator or protocol | ACTIVATE_MANTLE, CANONICAL status marker |</div>
 <div style="font-family:var(--mono);font-size:.8em">| `unclassified` | Default for filter pool (not yet read) | |</div>
 
-<h3>Provenance levels</h3>
+<p>#</p>
+
+<h2>Provenance levels</h2>
 
 <div style="font-family:var(--mono);font-size:.8em">| Method | Meaning |</div>
 <p>|---|---|</p>
@@ -91,16 +98,24 @@
 
 <h2>SESSION 3 — THE BINDING STEP (COMPLETE)</h2>
 
-<h3>Session 2 baseline (entering)</h3>
+<p>#</p>
+
+<h2>Session 2 baseline (entering)</h2>
 
 <p>- Entity index: 7,042 terms (154 read)</p>
 <p>- Registry: 869 deposits with sparse `entities` triples</p>
 <p>- No semantic-address structure</p>
 <p>- No reconciliation between capture tracking and lexical work</p>
 
-<h3>Session 3 work (this session)</h3>
+<p>#</p>
 
-<p>#### Reading passes completed</p>
+<h2>Session 3 work (this session)</h2>
+
+<p>#</p>
+
+<p>#</p>
+
+<h2>Reading passes completed</h2>
 
 <div style="font-family:var(--mono);font-size:.8em">| Deposit | Hex | Title | Terms | Notes |</div>
 <p>|---|---|---|---|---|</p>
@@ -111,7 +126,11 @@
 
 <p>Total now: <strong>7,156 terms (618 read, 8 enriched, 73 mint-added)</strong> — up from 7,042 / 154.</p>
 
-<p>#### The binding step (session&#x27;s centerpiece)</p>
+<p>#</p>
+
+<p>#</p>
+
+<h2>The binding step (session&#x27;s centerpiece)</h2>
 
 <p>Lee identified the structural problem: the Capture Registry conflated two distinct things — <strong>concepts</strong> (defined lexical entries) and <strong>semantic addresses</strong> (search queries that retrieve those concepts from AI summarizers). Lee&#x27;s example: `&quot;lee sharks semantic economy&quot;` is an <em>address</em> for both `Lee Sharks` and `Semantic Economy`, not a third concept.</p>
 
@@ -167,7 +186,9 @@ mint_role · mint_id · mint_canonical                                  # if fro
 
 <h2>THE LOGICAL NEXT STEP — AUTONOMOUS DOCUMENT INJECTION</h2>
 
-<h3>The principle (Lee, paraphrasing Gemini)</h3>
+<p>#</p>
+
+<h2>The principle (Lee, paraphrasing Gemini)</h2>
 
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> The data comes from the texts, and the data is in the texts.</blockquote>
 
@@ -177,7 +198,9 @@ mint_role · mint_id · mint_canonical                                  # if fro
 
 <p>This is a return to classical philological tradition: <strong>the text carries its own scholia</strong>. Commentary, metadata, and operational constraints live inside the body of the work, not in a fragile cloud wrapper.</p>
 
-<h3>Why this matters strategically</h3>
+<p>#</p>
+
+<h2>Why this matters strategically</h2>
 
 <p>1. <strong>Zero-configuration ingestion</strong>: open a fresh thread, drop a section of a paper into the window, the model instantly digests the front-matter and inline tags. No need to spend 3,000 words explaining &quot;Semantic Economy Institute&quot; or &quot;New Human OS&quot; before the prompt.</p>
 
@@ -187,7 +210,9 @@ mint_role · mint_id · mint_canonical                                  # if fro
 
 <p>4. <strong>Survives Zenodo-class termination events</strong>: the June 19, 2026 termination deleted 870 deposits and tombstoned 1,817 DOIs. Recovery happened because the texts existed elsewhere — but the <em>metadata</em> about minting, engagement, and reception was reconstructable only because Lee held it locally. With autonomous documents, metadata can never be severed from the text.</p>
 
-<h3>Gemini&#x27;s proposal — evaluation</h3>
+<p>#</p>
+
+<h2>Gemini&#x27;s proposal — evaluation</h2>
 
 <p>Gemini proposed two surfaces:</p>
 
@@ -231,7 +256,9 @@ mint_role · mint_id · mint_canonical                                  # if fro
 
 <p>These markdown-compatible markers parse cleanly, don&#x27;t corrupt prose, and only appear at structural moments. The vast majority of prose remains unmarked.</p>
 
-<h3>This document IS an autonomous document</h3>
+<p>#</p>
+
+<h2>This document IS an autonomous document</h2>
 
 <p>The front-matter at the top of this workplan is the demonstration. A fresh AI thread fed only this file should be able to:</p>
 <p>- Identify what session this is</p>
@@ -246,13 +273,17 @@ mint_role · mint_id · mint_canonical                                  # if fro
 
 <h2>THE NEW WORKSTREAM — SCHOLIA INJECTION</h2>
 
-<h3>Workstream definition</h3>
+<p>#</p>
+
+<h2>Workstream definition</h2>
 
 <p>Build a generation pipeline that produces autonomous-document versions of every deposit by injecting:</p>
 <p>1. <strong>Front-matter</strong>: deposit_number, hex, axn, doi, engages (concepts), addresses (queries), engagement_types, citations, status</p>
 <p>2. <strong>Closing scholia</strong>: human-readable lexicon of terms minted/founded/engaged in this deposit, with definitions and address pointers</p>
 
-<h3>Phase 1 — `scholia_generator.py` (immediate)</h3>
+<p>#</p>
+
+<h2>Phase 1 — `scholia_generator.py` (immediate)</h2>
 
 <p>Script that, for any deposit number:</p>
 <p>1. Loads `entity-index.json`, `semantic-addresses.json`, `registry.json`</p>
@@ -263,7 +294,9 @@ mint_role · mint_id · mint_canonical                                  # if fro
 <p>6. Generates closing scholia section (prose, with definitions)</p>
 <p>7. Outputs a `scholia/AXN-{hex}-scholia.md` file (separate from canonical text, joinable)</p>
 
-<h3>Phase 2 — Combined text generation</h3>
+<p>#</p>
+
+<h2>Phase 2 — Combined text generation</h2>
 
 <p>For each deposit, produce `data/autonomous/AXN-{hex}-autonomous.md`:</p>
 <pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">[YAML front-matter from scholia]
@@ -272,18 +305,24 @@ mint_role · mint_id · mint_canonical                                  # if fro
 
 <p>These become the canonical <em>autonomous</em> versions, suitable for direct AI ingestion.</p>
 
-<h3>Phase 3 — Inline markers (retroactive pass, low priority)</h3>
+<p>#</p>
+
+<h2>Phase 3 — Inline markers (retroactive pass, low priority)</h2>
 
 <p>For high-priority deposits, add minimal `[MINT: ...]` and `[FOUND: ...]` markers at the structural moments. Detectable via existing entity-index data (concept names + deposit context).</p>
 
-<h3>Phase 4 — Author workflow integration</h3>
+<p>#</p>
+
+<h2>Phase 4 — Author workflow integration</h2>
 
 <p>For all NEW deposits going forward:</p>
 <p>- Lee composes prose with light inline structural markers at minting moments</p>
 <p>- `scholia_generator.py` produces front-matter and closing scholia</p>
 <p>- The combined `*-autonomous.md` becomes the canonical deposit</p>
 
-<h3>Surfaces affected (none modified, only enriched)</h3>
+<p>#</p>
+
+<h2>Surfaces affected (none modified, only enriched)</h2>
 
 <p>- The static `/s/` layer continues to serve the canonical record (firm infrastructure rule: do NOT modify dynamic JS pages)</p>
 <p>- Autonomous versions live in `data/autonomous/` (new directory)</p>
@@ -294,7 +333,9 @@ mint_role · mint_id · mint_canonical                                  # if fro
 
 <h2>PENDING WORK (END OF SESSION 3)</h2>
 
-<h3>Immediate (binding cleanup)</h3>
+<p>#</p>
+
+<h2>Immediate (binding cleanup)</h2>
 
 <p>1. <strong>83 unrated observations</strong> — older June 13–16 captures with null status. Hand-rate to move them to `observed_address` or `verified_non_address`.</p>
 
@@ -304,7 +345,9 @@ mint_role · mint_id · mint_canonical                                  # if fro
 
 <p>3. <strong>96 RF battery subjunctive addresses</strong> — battery queries that haven&#x27;t been observed yet. Lee&#x27;s regular work running these against AI Overview will produce observations that flow into the table.</p>
 
-<h3>High-density lexicons (continuing reading pass)</h3>
+<p>#</p>
+
+<h2>High-density lexicons (continuing reading pass)</h2>
 
 <p>In current term count order (excluding completed):</p>
 <p>- #49 LOGOTIC HACKING Encryption — 134 terms</p>
@@ -315,7 +358,9 @@ mint_role · mint_id · mint_canonical                                  # if fro
 <p>- #482 Logotic Hacking Primer — 65 terms</p>
 <p>- #608 Operator Kernel Specification — 58 terms</p>
 
-<h3>Scholia injection workstream</h3>
+<p>#</p>
+
+<h2>Scholia injection workstream</h2>
 
 <div style="font-family:var(--mono);font-size:.8em">| Phase | Status | Notes |</div>
 <p>|---|---|---|</p>
@@ -324,7 +369,11 @@ mint_role · mint_id · mint_canonical                                  # if fro
 <div style="font-family:var(--mono);font-size:.8em">| Phase 3 — Inline markers retro | Not started | Low priority; markers cleanly parseable when authored |</div>
 <div style="font-family:var(--mono);font-size:.8em">| Phase 4 — Author workflow | Not started | Activates with first new deposit composed under the protocol |</div>
 
-<p>#### Bulk run across whole archive (end of session 3)</p>
+<p>#</p>
+
+<p>#</p>
+
+<h2>Bulk run across whole archive (end of session 3)</h2>
 
 <pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">870 deposits → 870 autonomous docs in data/autonomous/  (3 seconds, 29 MB)
 869 docs ingested → 669 transactions in data/ledger/cha.ledger (1 second, 142 KB)
@@ -348,7 +397,9 @@ TX type breakdown:
 <p>into a TX on the next bulk regenerate. The infrastructure is built once;</p>
 <p>the corpus density accrues as scholarly work proceeds.</p>
 
-<h3>Credentials rotation queue (urgent)</h3>
+<p>#</p>
+
+<h2>Credentials rotation queue (urgent)</h2>
 
 <p>From userMemories — these tokens are exposed in this session&#x27;s history and prior sessions:</p>
 <p>- Zenodo tokens: `QtbHIO...`, `9GVLfHz...`, `YCAIRAPYV...`</p>
@@ -383,7 +434,9 @@ TX type breakdown:
 
 <h2>SCHOLIA — LEXICON OF THIS WORKPLAN</h2>
 
-<h3>Minted / Newly Articulated in This Document</h3>
+<p>#</p>
+
+<h2>Minted / Newly Articulated in This Document</h2>
 
 <p><strong>Autonomous Document</strong> — A text engineered to carry its own metadata, definitions, and operational schema inline, such that it can be ingested by an AI system or read by a human without external context. Implements the classical philological principle that the text carries its own scholia. Operationalized via front-matter (machine schema), minimal inline structural markers (`[MINT: ...]`, `[FOUND: ...]`, `[INVOKE: ...]`, `[CITE: ...]`), and closing scholia (prose-formatted self-contained lexicon). The logical fulfillment of retrocausal canon formation: when metadata cannot be severed from text, the canon survives any external infrastructure failure.</p>
 
@@ -399,7 +452,9 @@ TX type breakdown:
 
 <p><strong>cha.ledger</strong> — Append-only plaintext transaction log at `data/ledger/cha.ledger`. The chrono-semantic backbone: each line is a standalone timestamped transaction extracted from an autonomous document. Schema is self-describing in the file header. Surviving truth when JSON metadata or external databases crash.</p>
 
-<h3>Engaged</h3>
+<p>#</p>
+
+<h2>Engaged</h2>
 
 <p>- `cha:concept:retrocausal_canon_formation` — the strategic principle that fixed-timestamp deposits future-proof against erasure. The autonomous-document workstream is its logical extension.</p>
 <p>- `cha:concept:semantic_address` — formalized in this session as time-series query records with dated observations.</p>
@@ -407,7 +462,9 @@ TX type breakdown:
 <p>- `cha:framework:mmrs` — Machine-Mediated Reception Studies. The capture-registry and RF-reception trackers are MMRS instruments.</p>
 <p>- `cha:institution:semantique_potentielle` — the constraint-based mint extending Queneau&#x27;s Oulipo from verse to concept. 42 seeds × 8 operations × 4 constraints = 85 minted families with forensic canaries.</p>
 
-<h3>Addresses Claimed by This Document</h3>
+<p>#</p>
+
+<h2>Addresses Claimed by This Document</h2>
 
 <p>- `&quot;autonomous document&quot;` (subjunctive — pending observation)</p>
 <p>- `&quot;binding step&quot;` (subjunctive — pending observation)</p>

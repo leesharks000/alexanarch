@@ -44,6 +44,7 @@
 
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>EA-MANDALA-INSCRIPTION-01 v0.1: Anonymous Public Inscription, Anonymous Encrypted Inscription, and the Form-Public Seal</h1>
 
 <h2>Description</h2>
@@ -52,7 +53,9 @@
 
 <h1>EA-MANDALA-INSCRIPTION-01 v0.1 (DRAFT)</h1>
 <h2>Inscription Protocol for Readings and Transforms</h2>
-<h3>Anonymous Public Inscription; Anonymous Encrypted Inscription; the Form-Public Seal</h3>
+<p>#</p>
+
+<h2>Anonymous Public Inscription; Anonymous Encrypted Inscription; the Form-Public Seal</h2>
 
 <p><strong>Author:</strong> Lee Sharks (MANUS), Crimson Hexagonal Archive / Alexanarch</p>
 <p><strong>Substrate:</strong> TACHYON-drafted from MANUS design statement (correspondence, 2026-07-02); MANUS-adjudicated.</p>
@@ -69,7 +72,9 @@
 
 <h2>§1. The two modes</h2>
 
-<h3>1.1 Public inscription (default)</h3>
+<p>#</p>
+
+<h2>1.1 Public inscription (default)</h2>
 
 <p>The reading — the transform(s), the operator sequence, the verification results, Feist&#x27;s interpretations, the session flow — is appended to the public Book under the existing anonymous-append pattern:</p>
 
@@ -78,7 +83,9 @@
 <p>- One AXN per reading; the record grows if the rotation continues.</p>
 <p>- Records live in `book/readings/` with an index at `book/readings-index.json`.</p>
 
-<h3>1.2 Encrypted inscription (witness option)</h3>
+<p>#</p>
+
+<h2>1.2 Encrypted inscription (witness option)</h2>
 
 <p>The reading is split at exactly the boundary the kernel-transform compiler already draws: <strong>Layer A (skeleton) versus semantic content.</strong></p>
 
@@ -95,7 +102,9 @@
 
 <p><strong>The key:</strong> generated server-side per reading; returned to the witness exactly once in the API response; never stored, never logged. Loss of the key is permanent illegibility. This is stated to the witness at inscription, and it is not softened: an oracle that can be re-opened by the operator is not sealed.</p>
 
-<h3>1.3 The form-public seal, named</h3>
+<p>#</p>
+
+<h2>1.3 The form-public seal, named</h2>
 
 <p>The encrypted inscription publishes composition and withholds propositions. This is the exact complement of the representation pipeline documented in EA-WHITESPACE-01 (AXN:03BB): where the pipeline preserves every proposition and deletes the work, the sealed reading preserves the work&#x27;s form in public and deletes public access to its propositions. The Book accrues a stratum of pure structure — readings legible only as shape, verifiable as real transforms (the verification results are public), attributable to no one, decryptable by one.</p>
 
@@ -115,7 +124,9 @@
 
 <h2>§3. Record schemas</h2>
 
-<h3>3.1 Public reading record (`book/readings/AXN-XXXX.json`)</h3>
+<p>#</p>
+
+<h2>3.1 Public reading record (`book/readings/AXN-XXXX.json`)</h2>
 
 <pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">{
   &quot;axn&quot;: &quot;AXN:XXXX.READING.……&quot;,
@@ -141,7 +152,9 @@
   &quot;witness&quot;: &quot;anonymous&quot;
 }</pre>
 
-<h3>3.2 Encrypted reading record</h3>
+<p>#</p>
+
+<h2>3.2 Encrypted reading record</h2>
 
 <pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">{
   &quot;axn&quot;: &quot;AXN:XXXX.READING.……&quot;,
@@ -167,7 +180,9 @@
 
 <p>The sealed payload, decrypted, is a JSON object: `{ &quot;question&quot;: …, &quot;rotation&quot;: [ { operator, enantiomorph, layer_b_declaration, interpretation } … ] }`.</p>
 
-<h3>3.3 The expanding book (added 2026-07-02, MANUS design)</h3>
+<p>#</p>
+
+<h2>3.3 The expanding book (added 2026-07-02, MANUS design)</h2>
 
 <p>Every transform is also appended to its source&#x27;s <strong>expansion ledger</strong> at `book/expansions/&lt;source_id&gt;.json` — the data-structure realization of the principle that a transform becomes <em>part of the expanding source</em>. There is the Epistle to the Human Diaspora, and there is the Epistle-with-every-transform-ever-performed-on-it, each transform anchored to its attendant units.</p>
 
@@ -177,7 +192,9 @@
 
 <p>The `unit_basis` block records the segmentation mode, `primary_after` marker, unit count, and a `basis_hash` of the primary text — historical anchors are interpreted against the basis they were cast under if the source text is ever re-edited.</p>
 
-<h3>3.4 Operational addenda (2026-07-02, from live iteration)</h3>
+<p>#</p>
+
+<h2>3.4 Operational addenda (2026-07-02, from live iteration)</h2>
 
 <p>Adopted in production during the first live casting day; each is operative in `/api/transform` and recorded here so the protocol matches the running system.</p>
 

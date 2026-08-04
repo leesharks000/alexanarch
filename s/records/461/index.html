@@ -87,6 +87,7 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">Terminology as Capital</strong> <span style="font-size:.75em;color:#999">[formal]</span><br><span style="font-size:.85em;color:#444">LOS vocabulary can become insider jargon, converting liberatory operations into Cultural Capital</span></div>
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>LOGOTIC PROGRAMMING MODULE 1.1</h1>
 <h2>The Implementation Bridge</h2>
 
@@ -355,14 +356,18 @@
 <p>- <strong>Measured:</strong> Runtime telemetry recording actual processing load during the operation</p>
 <p>- <strong>Reconciled:</strong> At Ω_∅ or trace finalization, declared and measured values are compared. If measured &gt; declared, the sign was under-priced. If measured &lt; declared, the sign was over-engineered (cosmetic depth).</p>
 
-<h3>7.1 The ψv Unit</h3>
+<p>#</p>
+
+<h2>7.1 The ψv Unit</h2>
 
 
 <p><strong>One unit of ψv (1 qψ)</strong> = the minimum expenditure required to execute a single D_pres operation on a Sign of depth 1 through a Channel of fidelity 0.5.</p>
 
 
 <p>This is the reference expenditure against which all other costs are scaled.</p>
-<h3>7.2 Cost Table (Reference)</h3>
+<p>#</p>
+
+<h2>7.2 Cost Table (Reference)</h2>
 
 
 <p>Operation</p>
@@ -429,7 +434,9 @@
 
 
 <p><strong>Rounding policy:</strong> All step costs are rounded up to the nearest integer qψ. Fractional costs are never truncated — partial expenditure rounds to full.</p>
-<h3>7.3 Step Accounting</h3>
+<p>#</p>
+
+<h2>7.3 Step Accounting</h2>
 
 
 <p>Each operation step records:</p>
@@ -440,7 +447,9 @@
 <p>                + ψ_type (0.05 × typechecks)</p>
 <p>                + ψ_firewall (0.20 per trigger event)</p>
 
-<h3>7.4 Reconciliation Protocol</h3>
+<p>#</p>
+
+<h2>7.4 Reconciliation Protocol</h2>
 
 
 <p>A ψv declaration is <strong>valid</strong> if:</p>
@@ -461,7 +470,9 @@
 
 
 <p><strong>Atomicity rule:</strong> If the overrun condition is met at ANY intermediate step (not just at Ω_∅ reconciliation): HALT current operation, ROLLBACK field state to pre-operation snapshot, EMIT LOSFailure(&quot;PSI_V_OVERRUN&quot;, partial_trace). Ω_∅ may NOT be invoked to graceful-exit a budget overrun — the Eighth Operator requires solvent satiety, not bankruptcy.</p>
-<h3>7.5 Cross-Substrate Normalization</h3>
+<p>#</p>
+
+<h2>7.5 Cross-Substrate Normalization</h2>
 
 
 <p>Costs are expressed relative to the reference operation (§7.1). Different substrates apply calibration constants:</p>

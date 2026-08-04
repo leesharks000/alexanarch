@@ -44,6 +44,7 @@
 
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>EA-DATAHUB-01 v1.0</h1>
 
 <p><em>A Restoration Protocol and Enriched Data Hub for Scholarly Records</em></p>
@@ -92,23 +93,33 @@
 
 <p>The v1.0 first line is the Alexanarch Severance Registry, delivered as a single coordinated release with five surfaces: the 871-record restoration corpus, the Restore-a-DOI resolver, the per-record HTML pages, the public severance dashboard, and — this is the significant v1.0 addition — the Platform Erasure Rate survey extending the restoration analysis to other affected scholars.</p>
 
-<h3>The 871 restoration corpus</h3>
+<p>#</p>
+
+<h2>The 871 restoration corpus</h2>
 
 <p>The core dataset is the 871 severed DOIs, published as a single Alexanarch deposit under EA-MMRS-VRB-01 discipline with a schema legible to any downstream aggregator or scholarly reader. Each record contains its bibliographic identity, the first-epoch upstream capture (dated, hash-verified, preserved verbatim), the second-epoch re-capture confirming persistent darkness, the sovereign-successor mapping where one exists with the succession taxonomy declared (concept-root, version-of-mapped-root, orphan-dark, not-in-index), the applicable Alexanarch enrichments with their full facet-marked provenance, and the provenance chain of every observation, event, and assertion involved. The dataset is machine-readable in bulk (JSON-LD, downloadable as a single file), served as one static page per record with stable URLs designed for citation, and made discoverable through structured data markup (`Dataset`, `DataCatalog`, and `DataDownload` per the schema.org vocabulary, which downstream tools including major search engines already consume).</p>
 
-<h3>The Restore-a-DOI resolver</h3>
+<p>#</p>
+
+<h2>The Restore-a-DOI resolver</h2>
 
 <p>The user-facing entry point is a lookup, not a browse. A user arrives with a specific DOI, a title, or a Zenodo record number, submits it, and receives back: the last attested metadata for the identifier, its present condition on the upstream, the sovereign successor if one exists, the evidence for every status claim (as a URL list), and a citation formatted for direct use in the user&#x27;s own scholarly work. The resolver&#x27;s URL structure exposes each restored record at a stable canonical URL so that search-engine indexing of individual restorations proceeds naturally over time. The resolver&#x27;s homepage carries a single unmistakable operational verb: <strong>Restore a DOI</strong>. Every other navigation path on the site is secondary to that verb.</p>
 
-<h3>Per-record HTML pages</h3>
+<p>#</p>
+
+<h2>Per-record HTML pages</h2>
 
 <p>Each record&#x27;s page must answer four questions in visual hierarchy — what is this, what happened to it, what did Alexanarch do about it, and how do I know this is true — with each answer occupying dedicated space in the first viewport, not buried in a metadata table the user must scroll to find. The record page treats the severance event as the lede rather than as a metadata field. The restoration is the story, and the page tells the story visually: the upstream identifier and its original context at the top, the severance event as prominent visual content, the restoration and enrichment layer with facet markers visible, the provenance chain summarized in plain language with one-click expansion to the full URL evidence. This is the design attention the review consensus correctly named as essential: the record page is where the strategy succeeds or fails at the point of contact, and it deserves as much editorial care as the schema.</p>
 
-<h3>The public severance dashboard</h3>
+<p>#</p>
+
+<h2>The public severance dashboard</h2>
 
 <p>Alongside the resolver and the corpus, the hub publishes a live severance dashboard displaying: the count of severed records, the count restored, the count with sovereign successor found, the count classified as concept-root, the count classified as version-of-mapped-root, the count classified as orphan-dark, and the count that has changed state since the previous epoch. The dashboard is a longitudinal record of what the ecosystem is doing to itself, not a static claim. If any of the 871 records is restored by Zenodo after the plan ships, the dashboard reflects that change and the record&#x27;s status updates automatically; the previous state is preserved as an observation in the record&#x27;s history, and the change is inscribed as an event. This is the review consensus&#x27;s &quot;Platform Erasure Rate&quot; surfaced as a public accountability instrument, and it is the mechanism by which the witness pillar compounds.</p>
 
-<h3>The Platform Erasure Rate survey</h3>
+<p>#</p>
+
+<h2>The Platform Erasure Rate survey</h2>
 
 <p>The most consequential v1.0 addition is the extension of the restoration analysis beyond the sovereign author&#x27;s own case. The v0.1 plan assumed, implicitly, that the sovereign author&#x27;s severance was the object of study. The v1.0 plan does not make that assumption. Instead, it treats the sovereign author&#x27;s severance as the trigger for an investigation into whether the pattern replicates across the broader population of scholars who have been comparably severed from repository infrastructure, and it publishes the survey result as its own dataset alongside the 871-record corpus.</p>
 

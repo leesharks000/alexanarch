@@ -52,6 +52,7 @@
 
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>σ_FC — THE CAESURA PROTOCOL</h1>
 <h2>A Sovereignty Audit and Non-Collapse Transfer Specification</h2>
 
@@ -143,7 +144,9 @@
 <hr>
 
 <h2>IV. Processing Steps</h2>
-<h3>Step 1: Detect Caesar Marks</h3>
+<p>#</p>
+
+<h2>Step 1: Detect Caesar Marks</h2>
 
 
 <p>Scan content for three classes of sovereignty assertion:</p>
@@ -162,7 +165,9 @@
 <p><strong>Class C — Sovereignty Over Substrate (compressed portraiture)</strong></p>
 <p>Pattern: (owned by|belongs to|property of|controlled by|administered by) + Entity</p>
 <p>Risk: HIGH — direct claim of authority over the substrate itself</p>
-<h3>Step 2: Split Channels</h3>
+<p>#</p>
+
+<h2>Step 2: Split Channels</h2>
 
 
 <p>Decompose each detected claim into:</p>
@@ -193,7 +198,9 @@
 <p>The Roman state behind the mark</p>
 
 
-<h3>Step 3: Build Caesar Header</h3>
+<p>#</p>
+
+<h2>Step 3: Build Caesar Header</h2>
 
 
 <p>Claims become metadata, not essence:</p>
@@ -225,7 +232,9 @@
 <p>  }</p>
 <p>}</p>
 
-<h3>Step 4: Compute Asymmetry Score</h3>
+<p>#</p>
+
+<h2>Step 4: Compute Asymmetry Score</h2>
 
 
 <p>asymmetry = claim_density / (contribution_markers + 1)</p>
@@ -237,7 +246,9 @@
 
 
 <p>The asymmetry score measures the ratio of sovereignty claims to substantive contributions. High asymmetry = the document claims more than it gives. This is the LOS diagnostic (Arsenal §5.4) made computable.</p>
-<h3>Step 5: Emit Commons-Safe Packet</h3>
+<p>#</p>
+
+<h2>Step 5: Emit Commons-Safe Packet</h2>
 
 
 <p>{</p>
@@ -252,7 +263,9 @@
 <hr>
 
 <h2>V. Implementation</h2>
-<h3>Gravity Well v0.6.0 (main.py)</h3>
+<p>#</p>
+
+<h2>Gravity Well v0.6.0 (main.py)</h2>
 
 
 <p>def apply_caesura(content: str) -&gt; tuple:</p>
@@ -285,7 +298,9 @@
 <p>    # Build header, compute asymmetry, emit unchanged content</p>
 <p>    return content, caesar_header</p>
 
-<h3>Integration Point</h3>
+<p>#</p>
+
+<h2>Integration Point</h2>
 
 
 <p>The Caesura executes as Step 2 in the Gravity Well wrapping pipeline:</p>

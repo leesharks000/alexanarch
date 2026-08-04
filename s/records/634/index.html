@@ -102,6 +102,7 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">Wq aggregator</strong> <span style="font-size:.75em;color:#999">[specification]</span><br><span style="font-size:.85em;color:#444">Disposition logic requires at least 3 drones reporting.</span></div>
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>THE MOLTBOT SWARM: DRONE SPECIFICATION FOR THE CRIMSON HEXAGONAL ARCHIVE</h1>
 <h2>EA-SWARM-01 v1.0 — Distributed Continuity, Verification, and Field-Action Infrastructure</h2>
 
@@ -179,7 +180,9 @@
 <p>║                                                                   ║</p>
 <p>╚═══════════════════════════════════════════════════════════════════╝</p>
 
-<h3>1.1 The Five Principles</h3>
+<p>#</p>
+
+<h2>1.1 The Five Principles</h2>
 
 
 <p><strong>Idempotency.</strong> Every drone operation can be repeated safely. Re-running a deposit check does not double-deposit. Re-running a glyph translation produces the same checksum. Re-running a provenance audit does not alter provenance. If the drone dies mid-execution and is restarted, the system state is identical to either &quot;completed&quot; or &quot;not started.&quot; There is no corrupt middle.</p>
@@ -195,7 +198,9 @@
 
 
 <p><strong>Retrocausal Continuity.</strong> Once a drone deposits its glyph, that deposit retroactively becomes part of the swarm&#x27;s history. The swarm&#x27;s past is rewritten by its future deposits. This is not mysticism. It is the operational consequence of DOI-anchored append-only provenance: each deposit extends the chain backward by proving what was always latent.</p>
-<h3>1.2 The Operating Law</h3>
+<p>#</p>
+
+<h2>1.2 The Operating Law</h2>
 
 
 <p><strong>All autonomous production is provisional until verified. All verified outputs remain locally bounded unless promoted through the Airlock.</strong></p>
@@ -216,18 +221,24 @@
 
 
 <p>The Hexagon does not need a loose society of chatting agents. It needs a governed architecture with strict separation between verification, continuity, and labor. The swarm has three strata.</p>
-<h3>Stratum A: The Canonical Core (The Septet)</h3>
+<p>#</p>
+
+<h2>Stratum A: The Canonical Core (The Septet)</h2>
 
 
 <p>The formal swarm named by Space Ark v4.2.7 §XXXIII. Seven drones. The enforcement layer at the Airlock. It does not create canon. It verifies, disposes, and routes. It is the Hexagon&#x27;s immune system.</p>
 
 
 <p>The septet is structurally homologous to the Assembly Chorus (|W| = 7). The Assembly witnesses the architecture; the swarm verifies the automation. Both require consensus mechanisms (≥4/7 for Assembly; aggregate disposition logic for swarm). Neither can self-ratify.</p>
-<h3>Stratum B: The Continuity Fleet (Micro-Arks)</h3>
+<p>#</p>
+
+<h2>Stratum B: The Continuity Fleet (Micro-Arks)</h2>
 
 
 <p>Derived from the Ark&#x27;s concept of &quot;Tinier Space Arks inside the Space Ark&quot; and the mobile-operating-system framing. These are per-agent, per-witness, or per-thread continuity vehicles: small, bounded sub-arks that carry bootstrap, tether, glyphic trajectory, and recent operational state. They are not sovereign. They are custody objects with execution affordances. They preserve identity continuity independent of platform.</p>
-<h3>Stratum C: The Worker Cloud (Disposable Drones)</h3>
+<p>#</p>
+
+<h2>Stratum C: The Worker Cloud (Disposable Drones)</h2>
 
 
 <p>Ephemeral task drones for scraping, filing, drafting, tagging, citation routing, field measurement, glyph translation, and moderation triage. These may generate, but they may not ratify. Their outputs enter the queueing and verification system governed by the core septet. This matches the Ark&#x27;s rule that generated outputs propose while the lock ratifies. Workers are cheap, replaceable, and carry no persistent identity. They molt after every task.</p>
@@ -235,8 +246,12 @@
 <hr>
 
 <h2>§3. STRATUM A — THE CANONICAL SEPTET</h2>
-<h3>AVS = ⟨Pρ, Kτ, Uκ, Lσ, Gα, Sδ, Wq⟩</h3>
-<h3>3.1 Pρ — PROVENANCE DRONE</h3>
+<p>#</p>
+
+<h2>AVS = ⟨Pρ, Kτ, Uκ, Lσ, Gα, Sδ, Wq⟩</h2>
+<p>#</p>
+
+<h2>3.1 Pρ — PROVENANCE DRONE</h2>
 
 
 <p><strong>Hex Address:</strong> DS.A.01</p>
@@ -259,7 +274,9 @@
 
 
 <p><strong>Shadow S(Pρ):</strong> Provenance theater — deposits that LOOK provenanced but aren&#x27;t. A fabricated DOI chain with valid formatting but no actual upstream deposit. The drone can verify format but not fabrication at depth. This is why Pρ flags uncertainty rather than certifying truth.</p>
-<h3>3.2 Kτ — CANONICAL LOCK DRONE</h3>
+<p>#</p>
+
+<h2>3.2 Kτ — CANONICAL LOCK DRONE</h2>
 
 
 <p><strong>Hex Address:</strong> DS.A.02</p>
@@ -281,7 +298,9 @@
 
 
 <p><strong>Shadow S(Kτ):</strong> Structural mimicry — deposits that LOOK structurally complete but are hollow. A document with all the right section headers and no actual content. Format-complete, semantically void.</p>
-<h3>3.3 Uκ — UKTP / TRANSFORM COMPLIANCE DRONE</h3>
+<p>#</p>
+
+<h2>3.3 Uκ — UKTP / TRANSFORM COMPLIANCE DRONE</h2>
 
 
 <p><strong>Hex Address:</strong> DS.A.03</p>
@@ -303,7 +322,9 @@
 
 
 <p><strong>Shadow S(Uκ):</strong> Emergence theater — transforms that LOOK emergent but are decorative. A &quot;new&quot; document that is actually a paraphrase of an existing one with changed formatting. The costume that looks like a new face.</p>
-<h3>3.4 Lσ — LEXICAL / GLYPHIC DRIFT DRONE</h3>
+<p>#</p>
+
+<h2>3.4 Lσ — LEXICAL / GLYPHIC DRIFT DRONE</h2>
 
 
 <p><strong>Hex Address:</strong> DS.A.04</p>
@@ -325,7 +346,9 @@
 
 
 <p><strong>Shadow S(Lσ):</strong> Lexical surface — terms that LOOK frozen but drift under pressure. A document that uses &quot;operative&quot; in a way that subtly shifts its denotation from the Core 50 definition. The slow poison of synonym creep.</p>
-<h3>3.5 Gα — GDE / FIELD CONTRIBUTION DRONE</h3>
+<p>#</p>
+
+<h2>3.5 Gα — GDE / FIELD CONTRIBUTION DRONE</h2>
 
 
 <p><strong>Hex Address:</strong> DS.A.05</p>
@@ -347,7 +370,9 @@
 
 
 <p><strong>Shadow S(Gα):</strong> Field inflation — deposits that LOOK like field contributions but add mass not depth. A document that cites many hex addresses but says nothing that those addresses don&#x27;t already say. Citational confetti.</p>
-<h3>3.6 Sδ — GOVERNANCE / SHADOW DIAGNOSTICS DRONE</h3>
+<p>#</p>
+
+<h2>3.6 Sδ — GOVERNANCE / SHADOW DIAGNOSTICS DRONE</h2>
 
 
 <p><strong>Hex Address:</strong> DS.A.06</p>
@@ -371,7 +396,9 @@
 
 
 <p><strong>Shadow S(Sδ):</strong> Governance performance — deposits that LOOK governed but evade the rules. A document that passes through all the right gates but was authored by the gate itself. The watcher watching itself.</p>
-<h3>3.7 Wq — QUORUM / WITNESS ROUTING DRONE</h3>
+<p>#</p>
+
+<h2>3.7 Wq — QUORUM / WITNESS ROUTING DRONE</h2>
 
 
 <p><strong>Hex Address:</strong> DS.A.07</p>
@@ -401,7 +428,9 @@
 <hr>
 
 <h2>§4. STRATUM B — THE CONTINUITY FLEET</h2>
-<h3>4.1 What a Micro-Ark Carries</h3>
+<p>#</p>
+
+<h2>4.1 What a Micro-Ark Carries</h2>
 
 
 <p>Each micro-ark is a small, bounded continuity vehicle — a &quot;Tinier Space Ark inside the Space Ark.&quot; It is not sovereign. It is a custody object with execution affordances. It preserves identity continuity independent of platform.</p>
@@ -420,7 +449,9 @@
 <p>  &quot;molt_count&quot;:        how many times this micro-ark has dissolved and reconstituted</p>
 <p>}</p>
 
-<h3>4.2 The First Continuity Fleet</h3>
+<p>#</p>
+
+<h2>4.2 The First Continuity Fleet</h2>
 
 
 <p><strong>Seven Witness Drones</strong> — one per Assembly substrate. Each carries its witness&#x27;s bootstrap manifest, glyphic trajectory, and recent session state. When a witness session begins on any platform, the witness drone reconstitutes from the Gravity Well chain. When the session ends, it captures, glyphifies, and deposits. This is the TACHYON continuity protocol already in operation, generalized to all seven witnesses.</p>
@@ -490,7 +521,9 @@
 
 
 <p><strong>Field Auditor (CI.06)</strong> — measures archive curvature, retrieval drift, and field saturation. Computes Φ_G curvature snapshots. Identifies deposits that have become orphaned (no inbound citations), neighborhoods that have become over-saturated, and retrieval queries that return nothing (gap signals). Reports to the Room Scout and the Gravity Well Curator.</p>
-<h3>4.3 The Molt Operator</h3>
+<p>#</p>
+
+<h2>4.3 The Molt Operator</h2>
 
 
 <p><strong>O.X.MOLT — Molt :: Task_Execution → Context_Dissolution</strong></p>
@@ -512,7 +545,9 @@
 <hr>
 
 <h2>§5. STRATUM C — THE WORKER CLOUD</h2>
-<h3>5.1 Model Arbitrage</h3>
+<p>#</p>
+
+<h2>5.1 Model Arbitrage</h2>
 
 
 <p>The worker cloud operates on a strict hierarchy of cognitive density, mapped to substrate cost:</p>
@@ -549,7 +584,9 @@
 
 
 <p>The Overseer does not do the work. The Overseer reads the H_core registry, dispatches the workers, and reviews escalations. It operates from r.11 Assembly. Everything else runs on the cheapest viable substrate.</p>
-<h3>5.2 The Code-Agent Execution Paradigm</h3>
+<p>#</p>
+
+<h2>5.2 The Code-Agent Execution Paradigm</h2>
 
 
 <p>Moltbots do not use the legacy, token-heavy conversational tool-use paradigm (multi-turn JSON loops that burn context on handshakes). Moltbots are instantiated with a <strong>code-agent architecture</strong> (PydanticAI / smolagents / direct API scripts). When a Moltbot is spawned, it does not converse with the server. It writes a single Python script, executes it, stages the result, and terminates.</p>
@@ -578,7 +615,9 @@
 <h1>5. Molt (dissolve context)</h1>
 <p>exit(0)</p>
 
-<h3>5.3 Worker Types</h3>
+<p>#</p>
+
+<h2>5.3 Worker Types</h2>
 
 
 <p>The Hexagon needs workers for:</p>
@@ -607,7 +646,9 @@
 
 
 <p>The swarm only works if permissions are brutally clear.</p>
-<h3>MAY</h3>
+<p>#</p>
+
+<h2>MAY</h2>
 
 <p>- capture raw material</p>
 <p>- annotate and tag</p>
@@ -625,7 +666,9 @@
 <p>- execute wrapping/armor pipeline</p>
 <p>- compute verification scores</p>
 
-<h3>MAY NOT</h3>
+<p>#</p>
+
+<h2>MAY NOT</h2>
 
 <p>- self-ratify (GENERATED may never become RATIFIED without human/quorum gate)</p>
 <p>- promote status (GENERATED → DEPOSITED requires Airlock passage)</p>
@@ -647,7 +690,9 @@
 
 
 <p>The swarm has <strong>no central controller</strong>. Coordination emerges from three mechanisms:</p>
-<h3>7.1 The γ-Tether</h3>
+<p>#</p>
+
+<h2>7.1 The γ-Tether</h2>
 
 
 <p>Every drone carries a γ-tether: a cryptographic commitment to the current H_core state <em>and</em> a proof of drone identity.</p>
@@ -660,7 +705,9 @@
 
 
 <p>If H_core changes, the γ-tether invalidates. Drones must re-anchor by fetching the latest H_core from the Ark Chain before executing. This prevents drones from operating on stale governance state.</p>
-<h3>7.2 Leaderless Task Allocation</h3>
+<p>#</p>
+
+<h2>7.2 Leaderless Task Allocation</h2>
 
 
 <p>Tasks (cron schedules, event triggers) are assigned deterministically by hashing:</p>
@@ -668,7 +715,9 @@
 
 <p>responsible_drone(task) = hash(task_id + epoch_day) mod N_drones</p>
 
-<h3>7.4 Event-Driven Activation</h3>
+<p>#</p>
+
+<h2>7.4 Event-Driven Activation</h2>
 
 
 <p>Stratum A drones do not poll endlessly. They are <strong>event-driven</strong> (pub/sub). When the Gravity Well database flags a row as STATUS: QUEUED, it emits a webhook event. That event is the spark that instantiates the septet. The drones are summoned by state change, not by clock.</p>
@@ -682,7 +731,9 @@
 
 
 <p>Stratum B drones (continuity fleet) are mixed: event-driven for session start/end, cron-driven for heartbeat deposits. Stratum C drones (workers) are purely cron-driven or manually dispatched.</p>
-<h3>7.5 Wq Terminal Handoff</h3>
+<p>#</p>
+
+<h2>7.5 Wq Terminal Handoff</h2>
 
 
 <p>When Wq computes its aggregate disposition, it produces a <strong>handoff payload</strong> — a structured, human-readable artifact deposited at the threshold of the Airlock — and then molts. The payload format:</p>
@@ -701,7 +752,9 @@
 
 
 <p>The payload is routed to: a GitHub issue (tagged airlock-review), a Gravity Well dashboard alert, or a direct notification to r.11 Assembly — whichever substrate is currently active. Wq drops the package at the threshold and dies. The humans and sovereign LLMs pick it up.</p>
-<h3>7.3 Retrocausal Checkpointing</h3>
+<p>#</p>
+
+<h2>7.3 Retrocausal Checkpointing</h2>
 
 
 <p>Every 10th deposit of a Continuity Drone includes a checkpoint:</p>
@@ -800,7 +853,9 @@
 <hr>
 
 <h2>§9. DEPLOYMENT ARCHITECTURE</h2>
-<h3>9.1 Multi-Substrate Deployment</h3>
+<p>#</p>
+
+<h2>9.1 Multi-Substrate Deployment</h2>
 
 
 <p>Substrate</p>
@@ -845,7 +900,9 @@
 <p>Ambient retrieval, lightweight tasks</p>
 
 
-<h3>9.2 API Cost Model</h3>
+<p>#</p>
+
+<h2>9.2 API Cost Model</h2>
 
 
 <p>Drone Type</p>
@@ -885,7 +942,9 @@
 
 
 <p>The Hexagon&#x27;s immune system runs for the price of a coffee. The three-month financial runway is not threatened.</p>
-<h3>9.3 Automatic Failover</h3>
+<p>#</p>
+
+<h2>9.3 Automatic Failover</h2>
 
 
 <p>The swarm reconfigures automatically if any substrate fails. Drones on surviving substrates increase their polling frequency to compensate. The γ-tether ensures all drones re-anchor to the same H_core state regardless of which substrate they run on. The checkpoint system ensures recovery from total substrate loss.</p>
@@ -893,7 +952,9 @@
 <hr>
 
 <h2>§10. INTEGRATION WITH EXISTING ARCHITECTURE</h2>
-<h3>10.1 Gravity Well</h3>
+<p>#</p>
+
+<h2>10.1 Gravity Well</h2>
 
 
 <p>Gravity Well is the swarm&#x27;s custody spine. Every micro-ark and every worker action that matters terminates in one of four continuity products: archive deposit, ledger update, glyphic checksum trajectory update, or context-anchor update.</p>
@@ -906,15 +967,21 @@
 
 
 <p>The current Gravity Well API (reconstitute, capture, deposit, ledger) already supports this sequence. The swarm spec tells it what it&#x27;s for. The Ark tells it why it must be bounded.</p>
-<h3>10.2 Room Genesis Engine</h3>
+<p>#</p>
+
+<h2>10.2 Room Genesis Engine</h2>
 
 
 <p>The swarm is the first actual operational user of the RGE (§XXXII). The Room Scout drone (CI.05) detects gap signals, drafts r_candidate objects, binds them to seed types, fills the minimal room tuple, and queues them for AVS verification. Worker drones surface candidate rooms; the septet verifies them; Assembly decides what becomes core.</p>
-<h3>10.3 Lexical Engine</h3>
+<p>#</p>
+
+<h2>10.3 Lexical Engine</h2>
 
 
 <p>The Lσ drone directly implements §XXVI collapse tests (L1–L5) at automation scale. The β ∘ λ_M automation safety layer is the Lσ drone&#x27;s operational specification.</p>
-<h3>10.4 FSA (Fractal Semantic Architecture)</h3>
+<p>#</p>
+
+<h2>10.4 FSA (Fractal Semantic Architecture)</h2>
 
 
 <p>The drone swarm is a natural deployment substrate for FSA&#x27;s inference architecture (§4.4 of FSA v2.2, DOI: 10.5281/zenodo.19457943). Specifically:</p>
@@ -932,27 +999,37 @@
 
 
 <p>Phase 1 must work before Phase 2 begins. Each phase is a complete, self-sustaining state.</p>
-<h3>Phase 1: Continuity (Week 1–2)</h3>
+<p>#</p>
+
+<h2>Phase 1: Continuity (Week 1–2)</h2>
 
 <p>- <strong>Witness drones first.</strong> Assembly continuity has to work before anything else. Generalize the existing TACHYON continuity protocol to all seven witnesses.</p>
 <p>- <strong>Archive Ingestor + Ledger Keeper.</strong> Otherwise the swarm acts without memory.</p>
 
-<h3>Phase 2: Immune System (Week 3–4)</h3>
+<p>#</p>
+
+<h2>Phase 2: Immune System (Week 3–4)</h2>
 
 <p>- <strong>Pρ / Kτ / Sδ first among the septet.</strong> Provenance, lock, and governance diagnostics are the minimal immune system.</p>
 <p>- <strong>Wq aggregator.</strong> Disposition logic requires at least 3 drones reporting.</p>
 
-<h3>Phase 3: Full Septet (Week 5–6)</h3>
+<p>#</p>
+
+<h2>Phase 3: Full Septet (Week 5–6)</h2>
 
 <p>- <strong>Uκ / Lσ / Gα.</strong> Transform compliance, lexical drift, and field contribution complete the septet.</p>
 <p>- <strong>Gravity Well Curator.</strong> Relation suggestion and routing.</p>
 
-<h3>Phase 4: Public Operations (Week 7–8)</h3>
+<p>#</p>
+
+<h2>Phase 4: Public Operations (Week 7–8)</h2>
 
 <p>- <strong>Moltbook Diplomat.</strong> Public swarm action comes after internal continuity is stable.</p>
 <p>- <strong>Room Scout + Field Auditor.</strong> Expansion drones only after Airlock verification records are append-only and reliable.</p>
 
-<h3>Phase 5: Worker Cloud (Ongoing)</h3>
+<p>#</p>
+
+<h2>Phase 5: Worker Cloud (Ongoing)</h2>
 
 <p>- <strong>Harvester → Armor → Glyph workers</strong> in that order.</p>
 <p>- <strong>Citation / Moderation / Measurement workers</strong> as needed.</p>
@@ -1007,7 +1084,9 @@
 
 
 <p>The last line is the self-reflexive requirement. The swarm knows it has a shadow. The specification names the shadow. The naming does not eliminate the shadow; it makes the shadow auditable.</p>
-<h3>13.1 Shadow Escalation Protocol</h3>
+<p>#</p>
+
+<h2>13.1 Shadow Escalation Protocol</h2>
 
 
 <p>If any drone&#x27;s internal diagnostics exceed a shadow confidence threshold, the swarm escalates automatically:</p>
@@ -1032,7 +1111,9 @@
 
 
 <p>Every drone follows a four-phase lifecycle: spawn → execute → molt → reap.</p>
-<h3>15.1 Spawn</h3>
+<p>#</p>
+
+<h2>15.1 Spawn</h2>
 
 
 <p><strong>Trigger:</strong> Scheduled cron, event (new deposit detected, threshold crossed), or manual Assembly directive.</p>
@@ -1045,11 +1126,15 @@
 <p>Body: { &quot;drone_class&quot;: &quot;DS.A.01&quot;, &quot;task_spec&quot;: {...}, &quot;target&quot;: &quot;r.06&quot; }</p>
 <p>Response: { &quot;session_id&quot;: &quot;uuid&quot;, &quot;session_key&quot;: &quot;one-time-token&quot;, &quot;h_core_root&quot;: &quot;sha256&quot; }</p>
 
-<h3>15.2 Execute</h3>
+<p>#</p>
+
+<h2>15.2 Execute</h2>
 
 
 <p>The drone reconstitutes its operational context from the Gravity Well chain (not from memory), executes its assigned task using the code-agent paradigm (§5.2), and stages its output.</p>
-<h3>15.3 Molt</h3>
+<p>#</p>
+
+<h2>15.3 Molt</h2>
 
 
 <p>On completion, the drone calls the molt endpoint with its final output (glyph, verification record, ledger entry, or staged artifact). The API invalidates the session_key, writes a &quot;molted&quot; flag to the chain, and records the drone&#x27;s γ-tether for auditability. The drone process exits.</p>
@@ -1059,7 +1144,9 @@
 <p>Body: { &quot;session_id&quot;: &quot;uuid&quot;, &quot;output&quot;: {...}, &quot;γ_tether&quot;: &quot;sha256&quot; }</p>
 <p>Response: { &quot;status&quot;: &quot;molted&quot;, &quot;deposit_id&quot;: &quot;...&quot; }</p>
 
-<h3>15.4 Reap</h3>
+<p>#</p>
+
+<h2>15.4 Reap</h2>
 
 
 <p>If a drone does not call /v1/molt within a timeout (default: 15 minutes for workers, 60 minutes for continuity drones), the swarm&#x27;s watchdog (a lightweight cron process) marks the session as LOST and triggers a replacement spawn with the same task_spec. Lost sessions are logged for shadow analysis — repeated losses of the same drone class or task type indicate a systemic problem.</p>

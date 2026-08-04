@@ -745,6 +745,13 @@ def regenerate_static_page(d, eidx, registry=None):
             # rendered body (375/1379 deposits were emitting it as <p> text)
             # and retain it for structured data.
             _fm, raw = _split_frontmatter(raw)
+            # W13 tier 1: unglue collapsed heading markers for the plain-text
+            # machine surface too (outside code fences), so articleBody carries
+            # readable structure. Bytes untouched.
+            _fp = raw.split('```')
+            for _pi in range(0, len(_fp), 2):
+                _fp[_pi] = re.sub(r'(?<=[^\n])(#{2,6} )', r'\n\n\1', _fp[_pi])
+            raw = '```'.join(_fp)
             _plain = _plain_body(raw)
             # W10: restoration wrapper (methodology/recovery apparatus) precedes
             # the work inside canonical bytes; machine consumers of articleBody
@@ -774,6 +781,18 @@ def regenerate_static_page(d, eidx, registry=None):
                 ]
                 _ld["identifier"] = [d['axn'], str(_fm['series'])]
             jsonld = json.dumps(_ld, ensure_ascii=False)
+            # W13 TIER 1 (MANUS word 2026-08-04): display-level unglue for the
+            # collapsed-formatting class (580 records, capture-pipeline origin).
+            # Heading markers glued mid-line ("…thermodynamics## Table of
+            # Contents### Prolegomenon") never reach the line converter as
+            # headings; insert paragraph breaks before glued `##`+ markers so
+            # structure renders. Bytes untouched — reversible presentation
+            # transform. 2+ hashes + space avoids C#-style single-hash tokens;
+            # fenced code blocks are exempted by splitting on ``` fences.
+            _fence_parts = raw.split('```')
+            for _pi in range(0, len(_fence_parts), 2):  # even indices = outside fences
+                _fence_parts[_pi] = re.sub(r'(?<=[^\n])(#{2,6} )', r'\n\n\1', _fence_parts[_pi])
+            raw = '```'.join(_fence_parts)
             lines = raw.split('\n')
             ft_lines = []
             in_pre = False

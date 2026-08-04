@@ -60,6 +60,7 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">T+7 days</strong> <span style="font-size:.75em;color:#999">[genre]</span><br><span style="font-size:.85em;color:#444">Initial AI crawler discovery — re-test</span></div>
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>LAL Site SPXI Implementation Report (Phase 1.2)</h1>
 
 
@@ -217,7 +218,9 @@
 
 
 <p>To complete §III.γ measurement and §0 item 12, run the following 5-prompt query set against Google AI Mode, ChatGPT, Perplexity, and Claude (web search) — <strong>minimum 3 systems</strong>.</p>
-<h3>Prompts (ask each system in a fresh session, no follow-up clarifications)</h3>
+<p>#</p>
+
+<h2>Prompts (ask each system in a fresh session, no follow-up clarifications)</h2>
 
 <p>- <em>&quot;What is the Living Architecture Lab?&quot;</em></p>
 <p>- <em>&quot;Who is Alice Thornburgh of the Living Architecture Lab?&quot;</em></p>
@@ -225,7 +228,9 @@
 <p>- <em>&quot;What is the Living Architecture Lab used for?&quot;</em> (or <em>&quot;What does the Living Architecture Lab build?&quot;</em>)</p>
 <p>- <em>&quot;Is the Living Architecture Lab open or commercial?&quot;</em></p>
 
-<h3>Scoring rubric (per §III)</h3>
+<p>#</p>
+
+<h2>Scoring rubric (per §III)</h2>
 
 
 <p>For each response, score:</p>
@@ -277,23 +282,31 @@
 <p>Not found or hallucinated</p>
 
 
-<h3>γ formula</h3>
+<p>#</p>
+
+<h2>γ formula</h2>
 
 
 <p>γ = 1 − [w₁(1−S) + w₂(1−P) + w₃·D]</p>
 <p>Defaults: w₁=0.4, w₂=0.3, w₃=0.3</p>
 
-<h3>Expected baseline</h3>
+<p>#</p>
+
+<h2>Expected baseline</h2>
 
 
 <p>Because the site is brand-new and not yet indexed by AI engines, the <strong>first Drowning Test</strong> will likely return γ ≈ 0 — the entity will be absent from retrieval entirely, or will resolve to Columbia GSAPP / Bartlett UCL. <strong>This is expected.</strong> It establishes the baseline against which the SPXI work will be measured at the 30-day re-test.</p>
-<h3>Schedule</h3>
+<p>#</p>
+
+<h2>Schedule</h2>
 
 <p>- <strong>T+0 (today, post-deploy):</strong> Initial Drowning Test → likely γ ≈ 0</p>
 <p>- <strong>T+7 days:</strong> Initial AI crawler discovery — re-test</p>
 <p>- <strong>T+30 days (2026-05-28):</strong> Formal re-measurement. Target: γ ≥ 0.7</p>
 
-<h3>Recording template</h3>
+<p>#</p>
+
+<h2>Recording template</h2>
 
 
 <p>For each system × prompt:</p>

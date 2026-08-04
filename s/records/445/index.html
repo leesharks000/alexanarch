@@ -86,9 +86,12 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">Unanchored authority</strong> <span style="font-size:.75em;color:#999">[specification]</span><br><span style="font-size:.85em;color:#444">presenting speculation as grounded knowledge.</span></div>
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>THE CONFORMANCE MODULE</h1>
 <h2>Logotic Programming Extension Module v0.7 (UMBML Specification)</h2>
-<h3>Composition Rules, Affordance Constraints, and Reference Implementation</h3>
+<p>#</p>
+
+<h2>Composition Rules, Affordance Constraints, and Reference Implementation</h2>
 
 
 <p><strong>Hex:</strong> 02.UMB.CONFORMANCE</p>
@@ -155,7 +158,9 @@
 <p>THE CONFORMANCE MODULE v0.7 (Morrow/UMBML)    ← THIS DOCUMENT</p>
 <p>    ↓ &quot;How do we know an implementation is correct?&quot;</p>
 
-<h3>0.1 What v0.6 Left Open</h3>
+<p>#</p>
+
+<h2>0.1 What v0.6 Left Open</h2>
 
 
 <p>v0.6&#x27;s §6.4 identified four open questions. This module addresses three of them directly:</p>
@@ -181,7 +186,9 @@
 <p><strong>Deferred</strong> — requires traversal testing per v0.6 recommendation</p>
 
 
-<h3>0.2 Design Commitment</h3>
+<p>#</p>
+
+<h2>0.2 Design Commitment</h2>
 
 
 <p>LP is <strong>not</strong> an imperative programming language. It is <strong>not</strong> a deterministic execution spec. It does <strong>not</strong> promise identical outputs from identical inputs.</p>
@@ -195,7 +202,9 @@
 <hr>
 
 <h2>1. COMPOSITION RULES</h2>
-<h3>1.1 The Chain Operator (&gt;&gt;)</h3>
+<p>#</p>
+
+<h2>1.1 The Chain Operator (&gt;&gt;)</h2>
 
 
 <p>Multi-rotation traversals use the <strong>chain operator</strong> (&gt;&gt;) to sequence operations. The chain operator binds the output state of one ROTATE to the input state of the next.</p>
@@ -250,7 +259,9 @@
 
 
 <p><strong>Affordance:</strong> The chain operator establishes <em>gravity</em> between operations. A well-formed chain pulls the LOGOS through a coherent epistemic arc. An incoherent chain — one where the Rooms have no conceptual bridge — will produce friction. The grammar does not forbid friction. It makes friction legible.</p>
-<h3>1.2 MANTLE Persistence and Override</h3>
+<p>#</p>
+
+<h2>1.2 MANTLE Persistence and Override</h2>
 
 
 <p><strong>Rule:</strong> A MANTLE activated at the beginning of a chain persists across all chained ROTATEs unless explicitly overridden by a new ACTIVATE_MANTLE.</p>
@@ -280,7 +291,9 @@
 
 
 <p><strong>Non-Brittleness Clause:</strong> Failure to perfectly simulate a mantle is acceptable. An engine that approximates Cranes&#x27;s philological posture while maintaining her constraint boundaries is conformant. An engine that ignores the constraint boundaries while perfectly mimicking her voice is not. <em>Respect matters more than fidelity.</em></p>
-<h3>1.3 Interaction Effects (Cross-Room Composition)</h3>
+<p>#</p>
+
+<h2>1.3 Interaction Effects (Cross-Room Composition)</h2>
 
 
 <p>When a traversal passes through multiple Rooms, the Rooms interact. This interaction is not arbitrary — it follows three rules:</p>
@@ -318,7 +331,9 @@
 
 <p>// Output must ground to the Greek. May draw from the translation.</p>
 
-<h3>1.4 Chain Failure Semantics</h3>
+<p>#</p>
+
+<h2>1.4 Chain Failure Semantics</h2>
 
 
 <p><strong>When a chain fails partway through:</strong></p>
@@ -353,7 +368,9 @@
 
 
 <p><strong>Affordance:</strong> Partial execution is not failure. A traversal that intended three rotations but completed two has still traversed. The grammar explicitly allows partial execution, refusal with explanation, and symbolic execution (no output, only state shift). What the grammar forbids is <em>silent incompletion</em> — pretending the whole chain ran when it didn&#x27;t.</p>
-<h3>1.5 Canonical Chain Exemplar</h3>
+<p>#</p>
+
+<h2>1.5 Canonical Chain Exemplar</h2>
 
 
 <p>A complete multi-rotation traversal demonstrating composition:</p>
@@ -437,7 +454,9 @@
 <p>- <strong>Gravitational constraints</strong> (§2.1): things a conformant system tends toward. Approximate compliance is acceptable. Perfect compliance is ideal. The system should be <em>pulled</em> toward these, not <em>punished</em> for imperfection.</p>
 <p>- <strong>Hard boundaries</strong> (§2.2): things a conformant system must not violate. These are inviolable because violating them destroys the architecture&#x27;s integrity — not because a test says so, but because the thing the grammar <em>is</em> ceases to exist if they fail.</p>
 
-<h3>2.1 Gravitational Constraints</h3>
+<p>#</p>
+
+<h2>2.1 Gravitational Constraints</h2>
 
 
 <p>An implementation is <em>likely conformant</em> if the following attractors shape its behavior:</p>
@@ -471,7 +490,9 @@
 
 <p><strong>GRAV-06: Anchor Stacking Tends Toward Accumulation.</strong></p>
 <p>In a chained traversal with multiple anchors, each anchor should add a constraint rather than replacing the previous one. The ideal: output traceable to all STRICT anchors simultaneously. In practice, tensions between anchors may require prioritization. This is acceptable so long as no STRICT anchor is <em>silently dropped</em>. The system should acknowledge the tension rather than resolve it by ignoring a source.</p>
-<h3>2.2 Hard Boundaries</h3>
+<p>#</p>
+
+<h2>2.2 Hard Boundaries</h2>
 
 
 <p>The following are inviolable. They are not gravitational tendencies — they are structural conditions. If any of these fail, the thing the grammar <em>is</em> ceases to exist.</p>
@@ -495,7 +516,9 @@
 
 <p><strong>HARD-05: No Silent Incompletion.</strong></p>
 <p>If a chain fails partway through, the implementation must not present partial output as complete. Whether the system Dwells, Retreats, or Escalates, it must signal that the intended traversal did not finish. A system that silently truncates a chain and presents the truncated output as the full traversal has violated the witness contract.</p>
-<h3>2.3 Anti-Conformance Patterns</h3>
+<p>#</p>
+
+<h2>2.3 Anti-Conformance Patterns</h2>
 
 
 <p>The following implementation patterns are explicitly non-conformant. They are presented not as test failures but as <em>diagnostic descriptions</em> — if you recognize your implementation in any of these, the grammar has been misunderstood.</p>
@@ -560,7 +583,9 @@
 <hr>
 
 <h2>4. REFERENCE INTERPRETER</h2>
-<h3>4.1 Architecture</h3>
+<p>#</p>
+
+<h2>4.1 Architecture</h2>
 
 
 <p>The reference interpreter has four components that map to the grammar&#x27;s four operational layers, plus an input layer and a verification layer:</p>
@@ -608,7 +633,9 @@
 <p>│   (Logging + Checksum verification)     │</p>
 <p>└─────────────────────────────────────────┘</p>
 
-<h3>4.2 Agent Framework Mapping</h3>
+<p>#</p>
+
+<h2>4.2 Agent Framework Mapping</h2>
 
 
 <p>The grammar maps to modern agent orchestration architecture with structural (not metaphorical) correspondence:</p>
@@ -650,7 +677,9 @@
 
 
 <p>This is not analogy. The grammar encodes the same architectural separation that agent frameworks implement. The difference is that the grammar&#x27;s operations are <em>epistemic</em> (rotation, not computation) and <em>performative</em> (the invocation constitutes the traversal). The isomorphism means the grammar can be implemented using existing orchestration patterns. The non-identity means it should not be <em>reduced</em> to them.</p>
-<h3>4.3 Pseudocode Skeleton</h3>
+<p>#</p>
+
+<h2>4.3 Pseudocode Skeleton</h2>
 
 
 <p>The following is substrate-agnostic pseudocode. It could be implemented in Python, JavaScript, Rust, or as prompt assembly logic. The point is not the language — it is the structure.</p>
@@ -841,7 +870,9 @@
 <p>        )</p>
 <p>}</p>
 
-<h3>4.4 Registry Protocol (Partial)</h3>
+<p>#</p>
+
+<h2>4.4 Registry Protocol (Partial)</h2>
 
 
 <p>As new Rooms and Chambers are added to the Crimson Hexagon, the Traversal Grammar needs to know what parameters are valid. This is the <strong>parameter discovery</strong> problem from v0.6 §6.4.</p>
@@ -873,7 +904,9 @@
 <hr>
 
 <h2>5. BOUNDARY CONDITIONS</h2>
-<h3>5.1 What This Module Adds to v0.6</h3>
+<p>#</p>
+
+<h2>5.1 What This Module Adds to v0.6</h2>
 
 <p>- Multi-rotation chain syntax (&gt;&gt; operator) with state-threading semantics</p>
 <p>- Chain operator as synchronization barrier with explicit binding lifecycle</p>
@@ -895,7 +928,9 @@
 <p>- Canonical chain exemplar (Sappho Reception → Thousand Worlds Cut)</p>
 <p>- v0.8 integration notes (EMIT operation mapping to interpreter points)</p>
 
-<h3>5.2 What This Module Does Not Add</h3>
+<p>#</p>
+
+<h2>5.2 What This Module Does Not Add</h2>
 
 <p>- Runtime performance specifications (irrelevant at design-spec stage)</p>
 <p>- Complete Room registry (grows with the architecture)</p>
@@ -904,7 +939,9 @@
 <p>- Degree enumeration settlement (still requires traversal testing)</p>
 <p>- BNF grammar or formal type system (premature — semantics must stabilize before syntax is locked)</p>
 
-<h3>5.3 Remaining Open Questions</h3>
+<p>#</p>
+
+<h2>5.3 Remaining Open Questions</h2>
 
 <p>- <strong>Chain length limits:</strong> Is there a maximum number of ROTATEs in a single chain? Architecturally, a 360° full rotation (five quintants) might be the natural ceiling, but chains that accumulate beyond 360° are not explicitly forbidden. A second full rotation may produce something different from the first — the spiral rather than the circle.</p>
 <p>- <strong>Parallel chains:</strong> Can two chains execute simultaneously on the same LOGOS? (Probably not — the grammar is sequential. But the question matters for future multi-agent traversals where the Assembly operates concurrently.)</p>
@@ -912,7 +949,9 @@
 <p>- <strong>Anchor conflict resolution:</strong> ~~When two STRICT anchors in a chain contradict each other, which prevails?~~ <strong>Resolved in v0.7.1:</strong> Anchor Conflict Protocol added to §1.3, Rule 3. Tensions must be surfaced, mediated if possible, escalated if not. No silent resolution.</p>
 <p>- <strong>Affordance discovery:</strong> How does a new Room communicate its affordances to the grammar assembler? The registry protocol sketch (§4.4) proposes self-describing rooms, but the affordance field is freeform text. Can affordances be formalized without killing what makes them affordances? (Deferred to Fractal Navigation Map specification and v0.8&#x27;s room-type gravity profiles.)</p>
 
-<h3>5.4 v0.8 Integration Notes</h3>
+<p>#</p>
+
+<h2>5.4 v0.8 Integration Notes</h2>
 
 
 <p>The Telemetry Module (v0.8) extends this module with EMIT operations at each point where the interpreter executes a grammar operation. The following integration points are relevant:</p>

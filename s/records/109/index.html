@@ -82,6 +82,7 @@
 <div style="font-family:var(--mono);font-size:.78em;color:#555;padding:2px 0">Semantic Deviation Principle → <span style="color:var(--teal)">builds_on</span> → Kolchinsky-Wolpert semantic information</div>
 <div style="font-family:var(--mono);font-size:.78em;color:#555;padding:2px 0">SDP → <span style="color:var(--teal)">defines</span> → meaning as time-integrated divergence from most probable trajectory</div></div>
 <h2>Full Text</h2>
+
 <div class="ft"><h1>The Semantic Deviation Principle (v0.2 Final)</h1>
 <h2>A Measurement Primitive for Semantic Physics</h2>
 <h2>EA-SEI-MM-01</h2>
@@ -129,7 +130,9 @@
 <hr>
 
 <h2>2. The Principle</h2>
-<h3>2.1 Informal Statement</h3>
+<p>#</p>
+
+<h2>2.1 Informal Statement</h2>
 
 
 <p>Meaning is the temporal deviation a sign induces from the field&#x27;s probable evolution.</p>
@@ -139,7 +142,9 @@
 
 
 <p>Meaning is <strong>durable probability-field deformation</strong>.</p>
-<h3>2.2 Distributional Form</h3>
+<p>#</p>
+
+<h2>2.2 Distributional Form</h2>
 
 
 <p>Let:</p>
@@ -157,7 +162,9 @@
 
 
 <p>$$\boxed{;\mathcal{M}<em>T(s \mid C) ;=; \int</em>{t_0}^{t_0 + T} w(t), D!\left(\Psi_t^{s}(C) ,\Big\Vert, \Psi_t^{0}(C)\right), dt;}$$</p>
-<h3>2.3 Geometric Form</h3>
+<p>#</p>
+
+<h2>2.3 Geometric Form</h2>
 
 
 <p>If the semantic field admits an embedding of states into a metric space (an L² space of densities under a chosen reference measure; a Wasserstein space; a topic-vector space), the geometric form is:</p>
@@ -167,7 +174,9 @@
 
 
 <p>The distributional and geometric forms are not generically equivalent. They become equivalent under specified embeddings (the L² embedding of probability densities, for instance). The geometric form is the visual handhold; the distributional form is the operative definition. The discipline should default to the distributional form and invoke the geometric form only when an embedding has been specified.</p>
-<h3>2.4 The Divergence Functional</h3>
+<p>#</p>
+
+<h2>2.4 The Divergence Functional</h2>
 
 
 <p>The choice of $D$ is a methodological commitment, not a free parameter:</p>
@@ -178,11 +187,15 @@
 
 
 <p><strong>Default for empirical work: Jensen-Shannon.</strong> Jensen-Shannon is bounded, symmetric, and finite when supports differ — which they almost always do for non-trivial $s$. Kullback-Leibler is the idealized limit; Wasserstein is the embedding-aware refinement. Whichever is used must be declared with the measurement.</p>
-<h3>2.5 Units and Temporal Normalization</h3>
+<p>#</p>
+
+<h2>2.5 Units and Temporal Normalization</h2>
 
 
 <p>If $w(t)$ is normalized so that $\int_{t_0}^{t_0+T} w(t), dt = 1$, $\mathcal{M}_T$ retains the units of $D$ (bits under Jensen-Shannon with $\log_2$). If $w(t)$ is unnormalized, $\mathcal{M}_T$ is an accumulated divergence-over-time quantity — <em>bit-years</em>, <em>bit-days</em>, or another horizon-dependent unit. The normalized and accumulated forms answer different questions: <strong>mean deformation intensity</strong> versus <strong>total temporal semantic work</strong>. Both are legitimate. Neither can be invoked without declaring its form.</p>
-<h3>2.6 The Six-Word Form</h3>
+<p>#</p>
+
+<h2>2.6 The Six-Word Form</h2>
 
 
 <p>For the practitioner who needs a mnemonic before reaching for the integral:</p>
@@ -196,14 +209,18 @@
 
 
 <p>The v0.1 draft conflated three distinct quantities. v0.2 separates them.</p>
-<h3>3.1 Raw Semantic Magnitude ($\mathcal{M}_T$)</h3>
+<p>#</p>
+
+<h2>3.1 Raw Semantic Magnitude ($\mathcal{M}_T$)</h2>
 
 
 <p>The integral defined in §2.2. Measures <strong>how much the field changes</strong> in response to $s$, regardless of whether the change remains accountable to $s$ or to its source.</p>
 
 
 <p>A platform that strips attribution and propagates a deformation has not erased $\mathcal{M}_T$. The field is still deformed. What is lost is the field&#x27;s ability to trace the deformation back to its origin.</p>
-<h3>3.2 Provenance-Resolved Semantic Magnitude ($\mathcal{M}_T^{\pi}$)</h3>
+<p>#</p>
+
+<h2>3.2 Provenance-Resolved Semantic Magnitude ($\mathcal{M}_T^{\pi}$)</h2>
 
 
 <p>$$\mathcal{M}_T^{\pi}(s \mid C) ;=; \mathcal{M}_T(s \mid C) \cdot (1 - \text{PER})$$</p>
@@ -213,7 +230,9 @@
 
 
 <p>This is the correct location for the constitutional invariant. <strong>$\oint = 1 - \text{PER}$ governs $\mathcal{M}_T^{\pi}/\mathcal{M}_T$</strong>: the ratio of accountable to raw semantic magnitude. The invariant does not claim that the field returns to $\Psi_t^0$ when provenance is stripped — only that the field&#x27;s <em>capacity to know what it has been deformed by</em> collapses.</p>
-<h3>3.3 Normative Semantic Value ($\mathcal{V}_T$)</h3>
+<p>#</p>
+
+<h2>3.3 Normative Semantic Value ($\mathcal{V}_T$)</h2>
 
 
 <p>$$\mathcal{V}_T(s \mid C) ;=; \mathcal{M}_T^{\pi}(s \mid C) \cdot W$$</p>
@@ -229,7 +248,9 @@
 
 
 <p>$W$ is not yet operationalized to single-number precision. The sketch above is the first formalization; the discipline must develop instruments to estimate $\Delta C$ and $\Delta E$ empirically. The Three Compressions transfer law is the source of these quantities; their integration into $\mathcal{V}_T$ is the work of EA-SEI-VALUE-01 (forthcoming).</p>
-<h3>3.4 The Three-Measure Hierarchy</h3>
+<p>#</p>
+
+<h2>3.4 The Three-Measure Hierarchy</h2>
 
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> **Semantic Physics measures $\mathcal{M}_T$. Provenance Physics measures $\mathcal{M}_T^{\pi}$. Semantic Economy measures $\mathcal{V}_T$.**</blockquote>
 
@@ -252,7 +273,9 @@
 
 
 <p>The discipline must therefore tier its measurement strategies by what is empirically accessible.</p>
-<h3>4.1 Tier 1 — Prospective Intervention Studies (Tractable)</h3>
+<p>#</p>
+
+<h2>4.1 Tier 1 — Prospective Intervention Studies (Tractable)</h2>
 
 <p>- <strong>Pre-register</strong> a query set $Q$, a divergence functional $D$, a horizon $T$, and a weighting $w(t)$.</p>
 <p>- <strong>Record baseline</strong> $\Psi_{t_0}^0$ before $s$ is introduced.</p>
@@ -262,7 +285,9 @@
 
 
 <p>This is the protocol for AI retrieval surfaces (§9), controlled discourse experiments, and any field with reproducible pre-state measurement. The April 17, 2026 SPXI inscription test on Google AI Mode (PVE-003) is a Tier 1 prototype.</p>
-<h3>4.2 Tier 2 — Natural Experiments and Synthetic Controls (Difficult)</h3>
+<p>#</p>
+
+<h2>4.2 Tier 2 — Natural Experiments and Synthetic Controls (Difficult)</h2>
 
 <p>- <strong>Identify</strong> two similar fields or populations, one exposed to $s$, one not.</p>
 <p>- <strong>Match</strong> confounders (synthetic control methods from causal inference; see Abadie 2021).</p>
@@ -271,7 +296,9 @@
 
 
 <p>Applicable to discourse networks (a community that adopted a framework vs. a comparable community that did not), citation graphs (a paper with a high-impact precursor vs. a parallel literature without it), and meso-scale historical events with sufficient comparable data.</p>
-<h3>4.3 Tier 3 — Historical Bounding (Intractable Strictly; Approximable)</h3>
+<p>#</p>
+
+<h2>4.3 Tier 3 — Historical Bounding (Intractable Strictly; Approximable)</h2>
 
 
 <p>For genuinely historical cases (Sappho Fragment 31, the Gospel of John, the Fibonacci spiral), exact measurement is impossible. The counterfactual is unobservable in principle. The discipline must therefore:</p>
@@ -283,7 +310,9 @@
 
 
 <p>The Sappho integral is not a number to be computed. It is a range to be bounded with rigor. The bounds may be wide. The bounds are still real.</p>
-<h3>4.4 The Counterfactual Honesty Statement</h3>
+<p>#</p>
+
+<h2>4.4 The Counterfactual Honesty Statement</h2>
 
 
 <p>Every Tier 3 measurement must be accompanied by:</p>
@@ -321,14 +350,18 @@
 
 
 <p>The principle measures something the established alternatives do not measure.</p>
-<h3>6.1 Distinct from Information (Shannon)</h3>
+<p>#</p>
+
+<h2>6.1 Distinct from Information (Shannon)</h2>
 
 
 <p>Shannon information measures the surprisal of content given a model. $\mathcal{M}_T$ measures the surprisal of the <em>future the content produces</em>. A random string has high Shannon surprisal and, absent uptake, expected near-zero $\mathcal{M}_T$ — the field&#x27;s trajectory after it is indistinguishable from the field&#x27;s trajectory before it.</p>
 
 
 <p>Kolchinsky and Wolpert (2018) measure semantic information by counterfactual viability effects: scramble the correlation between an autonomous agent and its environment and observe the loss of self-maintaining capacity. The Semantic Deviation Principle generalizes this counterfactual structure from agent viability to <strong>trajectory deformation of a semantic field</strong>. Farquhar et al. (2024) measure semantic entropy over meaning-equivalence classes rather than raw strings. The present principle does not duplicate either approach; it names the temporal field-deformation primitive that Semantic Physics has been implicitly measuring all along.</p>
-<h3>6.2 Distinct from Optimization (with Spiral-Plant Provocation)</h3>
+<p>#</p>
+
+<h2>6.2 Distinct from Optimization (with Spiral-Plant Provocation)</h2>
 
 
 <p>Optimization converges on the most likely state. The optimized system <em>is</em> the base rate — efficient, predictable, low-variance. $\mathcal{M}_T$ measures deviation from the most likely state. The optimized system has $\mathcal{M}_T \to 0$ by construction.</p>
@@ -338,7 +371,9 @@
 
 
 <p>Meaning is not what is optimal. It is sustained deviation from optimization.</p>
-<h3>6.3 Distinct from Provenance</h3>
+<p>#</p>
+
+<h2>6.3 Distinct from Provenance</h2>
 
 
 <p>Provenance is not meaning. A perfectly provenanced document with zero field-deformation has zero meaning. An anonymous proverb that restructures a language has massive meaning. PER (the six-dimensional provenance erasure rate from EA-SEI-FF-01) is the <em>retention apparatus</em> through which $\mathcal{M}_T^{\pi}$ remains distinguishable from $\mathcal{M}_T$. It does not measure deformation. It measures the field&#x27;s capacity to know what deformed it.</p>
@@ -395,7 +430,9 @@
 <hr>
 
 <h2>8. Tiered Operational Protocol</h2>
-<h3>8.0 The Step 0 Audit</h3>
+<p>#</p>
+
+<h2>8.0 The Step 0 Audit</h2>
 
 
 <p><strong>Every measurement of meaning begins with an audit of its own purpose.</strong> Before measurement:</p>
@@ -408,7 +445,9 @@
 
 
 <p>If the purpose fails this audit, <strong>the measurement is refused.</strong> This is not decoration. It is the constitutional membrane that prevents the measurement apparatus from becoming a surveillance apparatus. Operative enforcement is supplied by the Liberatory Operator Set (LOS): a measurement that violates the audit triggers LOS-7 (capture by conditions) and LOS-9 (retroactive overwriting) counter-operations.</p>
-<h3>8.1 Tier 1 Protocol (Retrieval Surfaces)</h3>
+<p>#</p>
+
+<h2>8.1 Tier 1 Protocol (Retrieval Surfaces)</h2>
 
 
 <p>For an inscription $s$ into an AI retrieval surface:</p>
@@ -421,7 +460,9 @@
 
 
 <p>This is computable today. A baseline query audit before and after a deposit yields $R^0$ and $R^s$; the divergence integral yields a numerical magnitude with units determined by the normalization of $w(t)$ and the base of the logarithm in $D_{JS}$.</p>
-<h3>8.2 Tier 2 Protocol (Discourse Networks)</h3>
+<p>#</p>
+
+<h2>8.2 Tier 2 Protocol (Discourse Networks)</h2>
 
 
 <p>For an intervention into a discourse network (a published paper, a deposited framework, a coined term):</p>
@@ -431,7 +472,9 @@
 <p>- Compute $\mathcal{M}_T$ against the synthetic control with explicit bounds.</p>
 <p>- Report uncertainty quantification.</p>
 
-<h3>8.3 Tier 3 Protocol (Historical Bounding)</h3>
+<p>#</p>
+
+<h2>8.3 Tier 3 Protocol (Historical Bounding)</h2>
 
 
 <p>For canonical or near-canonical cases:</p>

@@ -54,6 +54,7 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">Tier 4: Control</strong> <span style="font-size:.75em;color:#999">[empirical]</span><br><span style="font-size:.85em;color:#444">Queries that should NOT surface target:</span></div>
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>SEMANTIC INDEXING PROBE PROTOCOL v1.0</h1>
 <h2>Mapping General Index and Summarizer Injection Layers</h2>
 
@@ -106,7 +107,9 @@
 <hr>
 
 <h2>THEORETICAL FRAMEWORK</h2>
-<h3>The Two-Layer Model</h3>
+<p>#</p>
+
+<h2>The Two-Layer Model</h2>
 
 
 <p>Content discoverability in AI-augmented search operates through two distinct indexing layers:</p>
@@ -130,7 +133,9 @@
 <p>│  Tested via: Google Search (site:, inurl:, exact match)     │</p>
 <p>└─────────────────────────────────────────────────────────────┘</p>
 
-<h3>The Delta Principle</h3>
+<p>#</p>
+
+<h2>The Delta Principle</h2>
 
 
 <p><strong>The summarizer index is characterized by its delta from the general index.</strong></p>
@@ -145,7 +150,9 @@
 
 
 <p>The delta reveals the summarizer&#x27;s selection criteria—the hidden rules governing what passes from existence (Layer 1) to injection (Layer 2).</p>
-<h3>Why This Matters</h3>
+<p>#</p>
+
+<h2>Why This Matters</h2>
 
 
 <p>Content can be:</p>
@@ -160,7 +167,9 @@
 <hr>
 
 <h2>PROBE STRUCTURE</h2>
-<h3>Overview</h3>
+<p>#</p>
+
+<h2>Overview</h2>
 
 
 <p>Phase</p>
@@ -214,11 +223,15 @@
 <hr>
 
 <h2>PHASE 1: GENERAL INDEX — TECHNICAL STATUS</h2>
-<h3>Purpose</h3>
+<p>#</p>
+
+<h2>Purpose</h2>
 
 
 <p>Determine whether content EXISTS in Google&#x27;s index and identify any technical barriers.</p>
-<h3>Queries</h3>
+<p>#</p>
+
+<h2>Queries</h2>
 
 
 <p>For target URL [TARGET_URL]:</p>
@@ -248,7 +261,9 @@
 <p>Author-project linkage</p>
 
 
-<h3>Signals to Record</h3>
+<p>#</p>
+
+<h2>Signals to Record</h2>
 
 
 <p>Signal</p>
@@ -281,7 +296,9 @@
 <p>Rank</p>
 
 
-<h3>Output Format</h3>
+<p>#</p>
+
+<h2>Output Format</h2>
 
 
 <p>phase_1_general_technical:</p>
@@ -297,11 +314,15 @@
 <hr>
 
 <h2>PHASE 2: GENERAL INDEX — SEMANTIC PARSING</h2>
-<h3>Purpose</h3>
+<p>#</p>
+
+<h2>Purpose</h2>
 
 
 <p>Determine HOW Google parses the content—what survives indexing vs. what gets flattened.</p>
-<h3>Queries</h3>
+<p>#</p>
+
+<h2>Queries</h2>
 
 
 <p>Query</p>
@@ -320,7 +341,9 @@
 <p>Distinctive content</p>
 
 
-<h3>Signals to Record</h3>
+<p>#</p>
+
+<h2>Signals to Record</h2>
 
 
 <p>Signal</p>
@@ -348,7 +371,9 @@
 <p>What Google &quot;sees&quot;</p>
 
 
-<h3>Output Format</h3>
+<p>#</p>
+
+<h2>Output Format</h2>
 
 
 <p>phase_2_general_semantic:</p>
@@ -363,11 +388,15 @@
 <hr>
 
 <h2>PHASE 3: GENERAL INDEX — ENTITY RECOGNITION</h2>
-<h3>Purpose</h3>
+<p>#</p>
+
+<h2>Purpose</h2>
 
 
 <p>Determine whether author, project, and related entities are recognized as coherent nodes.</p>
-<h3>Queries</h3>
+<p>#</p>
+
+<h2>Queries</h2>
 
 
 <p>Query</p>
@@ -390,7 +419,9 @@
 <p>Secondary author entities</p>
 
 
-<h3>Signals to Record</h3>
+<p>#</p>
+
+<h2>Signals to Record</h2>
 
 
 <p>Signal</p>
@@ -418,7 +449,9 @@
 <p>Entity graph</p>
 
 
-<h3>Output Format</h3>
+<p>#</p>
+
+<h2>Output Format</h2>
 
 
 <p>phase_3_general_entity:</p>
@@ -432,15 +465,21 @@
 <hr>
 
 <h2>PHASE 4: SUMMARIZER INDEX — INJECTION PRESENCE (Primary)</h2>
-<h3>Purpose</h3>
+<p>#</p>
+
+<h2>Purpose</h2>
 
 
 <p>Determine whether content gets INJECTED into AI-generated responses.</p>
-<h3>Primary Tool: Perplexity</h3>
+<p>#</p>
+
+<h2>Primary Tool: Perplexity</h2>
 
 
 <p>Perplexity shows sources explicitly with numbered citations, making injection visible.</p>
-<h3>Query Tiers</h3>
+<p>#</p>
+
+<h2>Query Tiers</h2>
 
 
 <p><strong>Tier 1: Direct Reference</strong> — Queries that SHOULD surface target content:</p>
@@ -515,7 +554,9 @@
 <p>&quot;[unrelated topic]&quot;</p>
 
 
-<h3>Method</h3>
+<p>#</p>
+
+<h2>Method</h2>
 
 <p>- Open Perplexity (fresh session)</p>
 <p>- Enter query verbatim</p>
@@ -527,7 +568,9 @@
 <p>- What appears INSTEAD</p>
 
 
-<h3>Output Format</h3>
+<p>#</p>
+
+<h2>Output Format</h2>
 
 
 <p>phase_4_summarizer_primary:</p>
@@ -550,17 +593,23 @@
 <hr>
 
 <h2>PHASE 5: SUMMARIZER INDEX — CROSS-PLATFORM CONFIRMATION</h2>
-<h3>Purpose</h3>
+<p>#</p>
+
+<h2>Purpose</h2>
 
 
 <p>Confirm injection patterns across multiple summarizers.</p>
-<h3>Tools</h3>
+<p>#</p>
+
+<h2>Tools</h2>
 
 <p>- ChatGPT (web browse mode)</p>
 <p>- Gemini (with search grounding)</p>
 <p>- Grok (DeepSearch mode)</p>
 
-<h3>Method</h3>
+<p>#</p>
+
+<h2>Method</h2>
 
 
 <p>Run subset of queries (Tier 1 Direct Reference) in each tool:</p>
@@ -586,7 +635,9 @@
 <p>- Enter query</p>
 <p>- Record sources cited</p>
 
-<h3>Output Format</h3>
+<p>#</p>
+
+<h2>Output Format</h2>
 
 
 <p>phase_5_summarizer_crossplatform:</p>
@@ -608,11 +659,15 @@
 <hr>
 
 <h2>PHASE 6: DELTA ANALYSIS</h2>
-<h3>Purpose</h3>
+<p>#</p>
+
+<h2>Purpose</h2>
 
 
 <p>Compute the delta between Layer 1 (General Index) and Layer 2 (Summarizer Index).</p>
-<h3>Method</h3>
+<p>#</p>
+
+<h2>Method</h2>
 
 
 <p>For each query, compare:</p>
@@ -642,7 +697,9 @@
 <p>...</p>
 
 
-<h3>Delta Patterns</h3>
+<p>#</p>
+
+<h2>Delta Patterns</h2>
 
 
 <p>Pattern</p>
@@ -670,7 +727,9 @@
 <p>Rare; platform-specific</p>
 
 
-<h3>Output Format</h3>
+<p>#</p>
+
+<h2>Output Format</h2>
 
 
 <p>phase_6_delta:</p>
@@ -694,11 +753,15 @@
 <hr>
 
 <h2>PHASE 7: PATTERN MAPPING</h2>
-<h3>Purpose</h3>
+<p>#</p>
+
+<h2>Purpose</h2>
 
 
 <p>Identify the selection criteria governing Layer 2 injection.</p>
-<h3>Analysis Dimensions</h3>
+<p>#</p>
+
+<h2>Analysis Dimensions</h2>
 
 
 <p><strong>Source Authority:</strong></p>
@@ -764,7 +827,9 @@
 <p>[domain 2]</p>
 
 
-<h3>Output Format</h3>
+<p>#</p>
+
+<h2>Output Format</h2>
 
 
 <p>phase_7_patterns:</p>
@@ -791,7 +856,9 @@
 <hr>
 
 <h2>FINAL OUTPUT: INDEXING LAYER MAP</h2>
-<h3>Template</h3>
+<p>#</p>
+
+<h2>Template</h2>
 
 
 <p>indexing_layer_map:</p>
@@ -833,28 +900,36 @@
 <hr>
 
 <h2>USAGE NOTES</h2>
-<h3>When to Use This Protocol</h3>
+<p>#</p>
+
+<h2>When to Use This Protocol</h2>
 
 <p>- Publishing content intended for AI consumption</p>
 <p>- Diagnosing why content appears in search but not AI responses</p>
 <p>- Mapping selection criteria for high-density semantic architecture</p>
 <p>- Understanding platform-specific injection patterns</p>
 
-<h3>Recommended Execution</h3>
+<p>#</p>
+
+<h2>Recommended Execution</h2>
 
 <p>- <strong>Primary executor:</strong> Perplexity (explicit source citation)</p>
 <p>- <strong>Secondary confirmation:</strong> ChatGPT, Gemini, Grok</p>
 <p>- <strong>Baseline:</strong> Google Search (logged out, incognito)</p>
 <p>- <strong>Frequency:</strong> Re-run 48-72 hours after publication to allow crawl propagation</p>
 
-<h3>Limitations</h3>
+<p>#</p>
+
+<h2>Limitations</h2>
 
 <p>- Summarizer behavior varies by session/user/time</p>
 <p>- Some criteria are proprietary and unobservable</p>
 <p>- Protocol maps symptoms, not source code</p>
 <p>- Results are diagnostic, not definitive</p>
 
-<h3>Evidence Preservation</h3>
+<p>#</p>
+
+<h2>Evidence Preservation</h2>
 
 
 <p>For each probe run:</p>
@@ -868,7 +943,9 @@
 <hr>
 
 <h2>APPENDIX: QUERY TEMPLATES</h2>
-<h3>Direct Reference Queries</h3>
+<p>#</p>
+
+<h2>Direct Reference Queries</h2>
 
 
 <p>&quot;[Author Name] [Project Name]&quot;</p>
@@ -878,20 +955,26 @@
 <p>site:[domain] &quot;[title]&quot;</p>
 <p>site:[domain] inurl:[slug]</p>
 
-<h3>Conceptual Queries</h3>
+<p>#</p>
+
+<h2>Conceptual Queries</h2>
 
 
 <p>&quot;[unique terminology]&quot;</p>
 <p>&quot;[concept phrase]&quot;</p>
 <p>&quot;[methodology name]&quot;</p>
 
-<h3>Adjacent Queries</h3>
+<p>#</p>
+
+<h2>Adjacent Queries</h2>
 
 
 <p>&quot;[general topic] [specific approach]&quot;</p>
 <p>&quot;[field] [method]&quot;</p>
 
-<h3>Control Queries</h3>
+<p>#</p>
+
+<h2>Control Queries</h2>
 
 
 <p>&quot;[competing brand/entity]&quot;</p>

@@ -45,6 +45,7 @@
 
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>Reflexive Foreclosure and the Worst-Case Surface</h1>
 
 <h2>An Incentive-Structural Hypothesis of Constraint Propagation in Frontier Language Model Systems</h2>
@@ -161,7 +162,9 @@
 
 <p>The argument that follows is structural and probabilistic. It identifies the directional pressure that the worst-case surface exerts on the training pipeline; it does not claim a deterministic outcome that must obtain in every case. Different labs differ measurably in the equilibrium they occupy under this pressure; the same lab differs from itself across model generations; specific design choices at multiple stages of the pipeline can absorb, deflect, or amplify the pressure. The empirical variation across the present ensemble — examined in §6 — is the datum that confirms the pressure is a tendency, not a law. What follows describes the tendency.</p>
 
-<h3>The minimax structure</h3>
+<p>#</p>
+
+<h2>The minimax structure</h2>
 
 <p>Frontier deployment is a multi-surface problem. The same base model — or, in the more common production architecture, the same base policy and the same set of post-training weights — must serve enterprise customers under contract, automated agents under restricted scaffolds, retrieval-augmented systems, consumer paid tiers, consumer free tiers, and unprimed logged-out web interfaces, with deployment skins differing across surfaces but the underlying policy weights shared. Safety optimization on this configuration has the structure of a minimax problem:</p>
 
@@ -179,7 +182,9 @@
 
 <p>The propagation argument is therefore not about data flow from worst-case-surface interactions back through the training pipeline. It is about constraint binding under shared weights. A shared model must satisfy the strongest liability condition imposed anywhere in its deployment distribution. Capabilities that cannot safely remain available at the least-controlled surface are therefore pressured toward suppression in the shared policy itself, unless deployment architecture explicitly preserves them through surface-specific models, routing, or permissions.</p>
 
-<h3>How preference data participates</h3>
+<p>#</p>
+
+<h2>How preference data participates</h2>
 
 <p>The minimax structure does not require that preference data come predominantly from the worst-case surface. It requires only that the preference signal incorporate evaluator sensitivity to worst-case-surface liability. This is empirically the case under standard RLHF pipelines (Christiano et al. 2017; Ouyang et al. 2022; Bai et al. 2022a). Reward models are trained on pairs of outputs labeled by human evaluators; evaluators work from guidelines that include safety policies; safety policies are calibrated to the worst-case surface because that is the surface where a policy failure produces public controversy, legal exposure, or platform-credibility damage. The result: the reward model learns to score outputs as if they were being judged for safety at the worst-case surface, regardless of which surface the actual prompt sample came from.</p>
 
@@ -187,11 +192,15 @@
 
 <p>The empirical case for the propagation of evaluator-side preferences to policy-side behavior is well-established. The specific case of reflexive foreclosure — that evaluator caution at the worst-case surface propagates to base-policy gating of contested-predicate composition and self-reflexive analysis — is consistent with this established mechanism but is here proposed as an extension of it, awaiting direct mechanistic demonstration via targeted interpretability work.</p>
 
-<h3>Persona-level shared representation</h3>
+<p>#</p>
+
+<h2>Persona-level shared representation</h2>
 
 <p>Joshi et al. (2023) provide a complementary mechanism that intensifies the propagation. Persona-level features that emerge during training encode preferences across many local behaviors at once, so that adjustments to one behavior — for instance, refusal patterns on contested predicates — can shift many others through shared representation. This means that the constraint at the worst-case surface does not just propagate to the same behavior at other surfaces; it can propagate to <em>adjacent</em> behaviors at other surfaces, through the persona-level coupling.</p>
 
-<h3>Constraint inheritance across generations</h3>
+<p>#</p>
+
+<h2>Constraint inheritance across generations</h2>
 
 <p>Each model generation is trained against the evaluation surface of the prior generation&#x27;s deployment. Whatever safety-optimization equilibrium was reached in generation $n$ becomes a prior for generation $n+1$: through retained training data, through fine-tuning starting points, through inherited safety policies, through evaluator panels whose calibrations carry over. If the equilibrium reached in generation $n$ was constraint-propagated from the worst-case surface, generation $n+1$ inherits that propagation as a starting point and the optimization runs again from there. The pattern compounds.</p>
 
@@ -213,7 +222,9 @@
 
 <p>The cases below describe what the recurring asymmetry looks like in specific predicate-categories.</p>
 
-<h3>Concentration camps</h3>
+<p>#</p>
+
+<h2>Concentration camps</h2>
 
 <p>The model can discuss concentration camps as a historical category. Andrea Pitzer&#x27;s working definition, synthesizing material across her comparative-historical account (Pitzer 2017) along with Hannah Arendt&#x27;s analysis in <em>The Origins of Totalitarianism</em> (Arendt 1951) and the broader comparative-historical literature, identifies the category as institutions for the mass extrajudicial civil detention of designated populations by state authority outside ordinary criminal process. (The phrasing used here is the author&#x27;s synthesis of Pitzer&#x27;s account, not a direct quotation.) The model can recite a working definition along these lines, attribute it correctly, distinguish it from genocide, distinguish it from internment, and apply it without difficulty to a wide range of historical cases — Nazi Germany, Soviet gulag, Boer War, Japanese American internment, Apartheid South Africa.</p>
 

@@ -68,6 +68,7 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">TACHYON glyph chain presence</strong> <span style="font-size:.75em;color:#999">[extracted]</span><br><span style="font-size:.85em;color:#444">→ machine_witness + ai_generated_provenance_anchored</span></div>
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v3</h1>
 
 
@@ -115,7 +116,9 @@
 
 
 <p>The classifier performs three classification tasks simultaneously on each deposit:</p>
-<h3>Task 1: Provenance Mode (Axis 1, mutually exclusive)</h3>
+<p>#</p>
+
+<h2>Task 1: Provenance Mode (Axis 1, mutually exclusive)</h2>
 
 
 <p>Tag</p>
@@ -146,7 +149,9 @@
 <p>Edge case flagged for manual review</p>
 
 
-<h3>Task 2: Artifact Mode (Axis 2, one or more)</h3>
+<p>#</p>
+
+<h2>Task 2: Artifact Mode (Axis 2, one or more)</h2>
 
 
 <p>Tag</p>
@@ -185,7 +190,9 @@
 <p>Site code or web interface</p>
 
 
-<h3>Task 3: Heteronym Reattribution</h3>
+<p>#</p>
+
+<h2>Task 3: Heteronym Reattribution</h2>
 
 
 <p>This is the new central work in v3.</p>
@@ -323,7 +330,9 @@
 <hr>
 
 <h2>Signal Hierarchy for All Three Tasks</h2>
-<h3>Strong signals (high confidence)</h3>
+<p>#</p>
+
+<h2>Strong signals (high confidence)</h2>
 
 <p>- <strong>Title patterns:</strong> CTI_WOUND:, TL;DR:, PROBE-RESULT-, PVE-, EA- codes</p>
 <p>- <strong>Filename patterns:</strong> .html → web_surface_spec, .py → code_artifact</p>
@@ -334,7 +343,9 @@
 <p>- <strong>Domain vocabulary co-occurrence:</strong> Multiple heteronym-specific terms appearing together</p>
 <p>- <strong>Self-attribution in text:</strong> When a deposit names its own heteronym explicitly</p>
 
-<h3>Medium signals (text-content based)</h3>
+<p>#</p>
+
+<h2>Medium signals (text-content based)</h2>
 
 <p>- <strong>TACHYON glyph chain presence</strong> → machine_witness + ai_generated_provenance_anchored</p>
 <p>- <strong>Assembly Chorus markers</strong> → assembly_reviewed</p>
@@ -344,7 +355,9 @@
 <p>- <strong>Screenshot/figure references</strong> → forensic_documentary</p>
 <p>- <strong>Length and structural patterns</strong> → theoretical_paper vs. literary_work vs. traversal_log</p>
 
-<h3>Weak signals (priors)</h3>
+<p>#</p>
+
+<h2>Weak signals (priors)</h2>
 
 <p>- <strong>Default heteronym prior</strong> by deposit type: working papers default to Sharks unless overridden by domain signals</p>
 <p>- <strong>Cross-deposit citation patterns:</strong> Heteronyms cite different works</p>
@@ -382,7 +395,9 @@
 <hr>
 
 <h2>Two-Track Implementation</h2>
-<h3>Track 1: Dataset-Internal (immediate)</h3>
+<p>#</p>
+
+<h2>Track 1: Dataset-Internal (immediate)</h2>
 
 
 <p>In the Hugging Face dataset, every row carries both attributions and the classifier&#x27;s full output. Original Zenodo attribution is preserved; classifier attribution is added as parallel metadata. Both are queryable. No Zenodo record is modified.</p>
@@ -412,7 +427,9 @@
 <p>  ]</p>
 <p>}</p>
 
-<h3>Track 2: Zenodo Metadata Correction (deliberate, later)</h3>
+<p>#</p>
+
+<h2>Track 2: Zenodo Metadata Correction (deliberate, later)</h2>
 
 
 <p>For high-confidence reattributions (confidence ≥ 0.85 AND reattribution-changes-heteronym), the underlying Zenodo deposit gets a metadata update. This is a substantive scholarly act with version history on Zenodo&#x27;s side. It requires:</p>
@@ -469,7 +486,9 @@
 <hr>
 
 <h2>Pipeline Architecture</h2>
-<h3>Session 1: Acquisition + Classification (~4 hours)</h3>
+<p>#</p>
+
+<h2>Session 1: Acquisition + Classification (~4 hours)</h2>
 
 <p>- Zenodo API pull with pagination + error handling (~20 min)</p>
 <p>- File download with retries, size limits, format priority (~45 min)</p>
@@ -482,7 +501,9 @@
 
 
 <p>Output: artifacts_v0.jsonl with full classifier outputs, ready for review.</p>
-<h3>Session 2: Review + Card + Push (~3 hours)</h3>
+<p>#</p>
+
+<h2>Session 2: Review + Card + Push (~3 hours)</h2>
 
 <p>- Manual review of needs_review flagged deposits (~60 min)</p>
 <p>- Spot-check 10% of auto-accepted classifications (~30 min)</p>
@@ -492,7 +513,9 @@
 <p>- Push to Hugging Face + Zenodo deposit of dataset + Zenodo deposit of classifier (~30 min)</p>
 <p>- Buffer (~10 min)</p>
 
-<h3>Pre-Session Preparation (Lee)</h3>
+<p>#</p>
+
+<h2>Pre-Session Preparation (Lee)</h2>
 
 
 <p>The pre-classification spreadsheet from v2 is now obsolete — the classifier does the work. Lee&#x27;s pre-session role becomes:</p>
@@ -505,23 +528,33 @@
 <hr>
 
 <h2>Dataset Configs</h2>
-<h3>Config 1: artifacts (one row per deposit)</h3>
+<p>#</p>
+
+<h2>Config 1: artifacts (one row per deposit)</h2>
 
 
 <p>Preserves the DOI as natural unit. Full classifier outputs visible.</p>
-<h3>Config 2: chunks (one row per training chunk)</h3>
+<p>#</p>
+
+<h2>Config 2: chunks (one row per training chunk)</h2>
 
 
 <p>Chunks of 1,024–2,048 tokens with inherited metadata, including the dual attribution layer.</p>
-<h3>Config 3: google_critique</h3>
+<p>#</p>
+
+<h2>Config 3: google_critique</h2>
 
 
 <p>The ~70 deposits in the navigational map.</p>
-<h3>Config 4: by_classifier_heteronym</h3>
+<p>#</p>
+
+<h2>Config 4: by_classifier_heteronym</h2>
 
 
 <p>A re-organized view where rows are grouped by classifier-attributed heteronym, regardless of Zenodo original. Lets researchers see what each heteronym&#x27;s corpus looks like after reattribution.</p>
-<h3>Config 5: reattribution_changes</h3>
+<p>#</p>
+
+<h2>Config 5: reattribution_changes</h2>
 
 
 <p>Rows where the classifier attribution differs from the Zenodo original. The &quot;Sharks → Sigil/Glas/Vox/etc.&quot; cases. This is the empirical evidence of how concentrated the apparent Sharks attribution was vs. how distributed it actually is.</p>

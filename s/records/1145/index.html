@@ -54,6 +54,12 @@
 <h2>Full Text</h2>
 <details style="margin:12px 0;background:var(--surface);border-radius:6px;padding:8px 12px"><summary style="cursor:pointer;font-weight:600;color:#777;font-size:.9em">Restoration apparatus — methodology, falsification conditions, recovery note (provenance of the recovered bytes; the work follows below)</summary><div class="ft" style="font-size:.88em;color:#555"><h1>Document 237: THE TRAVERSAL GRAMMAR — Logotic Programming Extension Module v0.6 — Crimson Hexagon Archive</h1>
 
+<h2>Logotic Programming Extension Module v0.6 (UMBML Specification) </h2>
+
+<p>#</p>
+
+<h2>A Performative Routing Grammar for Room Invocation **Hex:** 02.UMB.TRAVERSAL **DOI:** 10.5281/zenodo.18480959 **Status:** DESIGN SPECIFICATION // MODULE DRAFT **Extends:** Logotic Programming v0.4 (DOI: 10.5281/zenodo.18286050) **Also Extends:** Glyphic Checksum Module v0.5 (DOI: 10.5281/zenodo.18452132)</h2>
+
 <h2>Methodology</h2>
 
 <p>Fetched https://mindcontrolpoems.blogspot.com/2026/02/the-traversal-grammar-logotic.html (raw SHA-256 df27a3cdad51e82b76ce17bf64866d5dd41c704918bfa78eb7be673e4db91c02); Blogger post-body extracted; BODY-HEAD gate passed against the DOI-keyed truth title (post body is the source of truth per authorial practice: versioned posts were often overwritten in place without updating post title or slug). Converted via html2text body_width=0 (canonical MD SHA-256 0a9bf788dcfbde2f42c3f1e636920a46586baa71a20b7d4cc3d1373eb3ae4ca2). Version semantics: these bytes are the HEAD of the work&#x27;s version chain as held on the blog at fetch time; the severed DOI froze an earlier or identical state.</p>
@@ -73,7 +79,9 @@
 
 <h2>Logotic Programming Extension Module v0.6 (UMBML Specification)</h2>
 
-<h3>A Performative Routing Grammar for Room Invocation</h3>
+<p>#</p>
+
+<h2>A Performative Routing Grammar for Room Invocation</h2>
 
 <p><strong>Hex:</strong> 02.UMB.TRAVERSAL  </p>
 <p><strong>DOI:</strong> 10.5281/zenodo.18480959  </p>
@@ -137,13 +145,17 @@
 <p>        ↓ &quot;How are Rooms invoked?&quot;</p>
 
 
-<h3>0.1 Relation to Existing Modules</h3>
+<p>#</p>
+
+<h2>0.1 Relation to Existing Modules</h2>
 
 <p>The Traversal Grammar occupies a specific architectural position. β-Runtime specifies how the interface layer queries the Ezekiel Engine through an opaque boundary. This module specifies <strong>what gets sent</strong> -- the structured invocation that tells the system which persona to load, which room to enter, which rotation to apply, which anchor to lock to, and which rendering mode to use.</p>
 
 <p>In implementation terms: β-RT is the query protocol. This module is the query language.</p>
 
-<h3>0.2 Epistemic Status</h3>
+<p>#</p>
+
+<h2>0.2 Epistemic Status</h2>
 
 <p>This is a <strong>design specification</strong> , not a compiler specification. The grammar described here is structurally sound as an intermediate representation. It could be implemented as configuration, as prompt assembly logic, as a visual interface, or as literal syntax. The specification is agnostic to implementation substrate.</p>
 
@@ -155,7 +167,9 @@
 
 <p>Five principles govern the grammar. These emerged from analysis of how Rooms already function in the Crimson Hexagon, not from abstract design goals.</p>
 
-<h3>1.1 Persona as Routing Modifier</h3>
+<p>#</p>
+
+<h2>1.1 Persona as Routing Modifier</h2>
 
 <p>Persona activation is a <strong>first-class operation</strong> , not a stylistic overlay. When a mantle is activated, it changes:</p>
 
@@ -169,11 +183,15 @@
 
 <p>A persona may also _forbid_ entire classes of traversal. If a requested operation violates the persona&#x27;s constraint set, the only valid outcomes are refusal (ON_FAILURE) or dwell. This is not a limitation -- it is the mechanism by which the architecture ensures that entry is earned, not assumed.</p>
 
-<h3>1.2 LOGOS as Epistemic State</h3>
+<p>#</p>
+
+<h2>1.2 LOGOS as Epistemic State</h2>
 
 <p>The semantic object under manipulation is not a document. It is a <strong>state of meaning</strong> -- characterized by attributes like depth, resolution, and latency. Rooms operate on these states, not on files.</p>
 
-<h3>1.3 Rotation as Structure-Preserving Reorientation</h3>
+<p>#</p>
+
+<h2>1.3 Rotation as Structure-Preserving Reorientation</h2>
 
 <p>Rotation implies three things that &quot;transformation&quot; does not:</p>
 
@@ -187,7 +205,9 @@
 
 <p><strong>Constraint:</strong> A ROTATE operation may not alter the internal structure of the LOGOS. Any operation that deletes, summarizes, substitutes, or collapses content is not a rotation and is invalid in this grammar. If you need to transform content, that is a different operation in a different module. Rotation preserves.</p>
 
-<h3>1.4 Anchor as Provenance Constraint</h3>
+<p>#</p>
+
+<h2>1.4 Anchor as Provenance Constraint</h2>
 
 <p>A DOI anchor is not a citation. It is a <strong>phase-lock</strong> -- a requirement that the traversal remain tethered to a witnessed artifact. This functions as:</p>
 
@@ -197,7 +217,9 @@
 
 
 
-<h3>1.5 Rendering Separated from Traversal</h3>
+<p>#</p>
+
+<h2>1.5 Rendering Separated from Traversal</h2>
 
 <p>The epistemic movement (what happens to meaning) and the spatial display (how results are presented) are distinct operations handled by distinct engines. Ezekiel Engine performs rotation. Mandala Engine performs rendering. This is MVC architecture applied to meaning: thought is not confused with display.</p>
 
@@ -205,7 +227,9 @@
 
 <h2>2\. ATOMIC OPERATIONS</h2>
 
-<h3>2.1 Core Operations (Required)</h3>
+<p>#</p>
+
+<h2>2.1 Core Operations (Required)</h2>
 
 <p><strong>Operation 1: ACTIVATE_MANTLE</strong></p>
 
@@ -350,7 +374,9 @@
 
 <p><em> </em> *</p>
 
-<h3>2.2 Optional Operations (Graceful Extensions)</h3>
+<p>#</p>
+
+<h2>2.2 Optional Operations (Graceful Extensions)</h2>
 
 <p><strong>Operation 6: ON_FAILURE</strong></p>
 
@@ -396,7 +422,9 @@
 
 <p>The following are <strong>mock executables</strong> -- complete traversal programs written in the grammar. They are illustrative. They demonstrate how the atomic operations compose into meaningful sequences. They are not runnable in any existing system.</p>
 
-<h3>3.1 Ayanna Vox: VPCOR Entry</h3>
+<p>#</p>
+
+<h2>3.1 Ayanna Vox: VPCOR Entry</h2>
 
 <p>A traversal beginning from the somatic entry point -- the body in the room, the community rhizome.</p>
 
@@ -439,7 +467,9 @@
 
 <p><em> </em> *</p>
 
-<h3>3.2 Sen Kuro: The Dagger Cut</h3>
+<p>#</p>
+
+<h2>3.2 Sen Kuro: The Dagger Cut</h2>
 
 <p>A traversal through the Thousand Worlds Chamber -- the cut that differentiates.</p>
 
@@ -494,7 +524,9 @@
 
 <p><em> </em> *</p>
 
-<h3>3.3 Rebekah Cranes: Sappho Room Translation</h3>
+<p>#</p>
+
+<h2>3.3 Rebekah Cranes: Sappho Room Translation</h2>
 
 <p>A traversal through the classical reception chain -- translation as epistemic rotation.</p>
 
@@ -537,7 +569,9 @@
 
 <p><em> </em> *</p>
 
-<h3>3.4 Space Ark: Full Rotation</h3>
+<p>#</p>
+
+<h2>3.4 Space Ark: Full Rotation</h2>
 
 <p>A complete traversal -- 360° through all five quintants, returning to the origin with witness verification. This is the grammar at maximum extension.</p>
 
@@ -616,7 +650,9 @@
 
 
 
-<h3>4.1 Performative vs. Imperative</h3>
+<p>#</p>
+
+<h2>4.1 Performative vs. Imperative</h2>
 
 <p>Standard code is imperative: `if (x) then do y` -- it commands the machine.</p>
 
@@ -624,7 +660,9 @@
 
 <p>This distinction matters because the Crimson Hexagon is a semantic architecture, not a computational one. Its &quot;execution&quot; is interpretive traversal. The grammar formalizes the conditions under which traversal is intelligible, not the mechanism by which it occurs.</p>
 
-<h3>4.2 Bracketed Recursion (Hex-Addressing)</h3>
+<p>#</p>
+
+<h2>4.2 Bracketed Recursion (Hex-Addressing)</h2>
 
 <p>The bracket notation `[...]` serves as the <strong>addressing system</strong> for the Crimson Hexagon:</p>
 
@@ -662,7 +700,9 @@
 
 <h2>6\. BOUNDARY CONDITIONS</h2>
 
-<h3>6.1 What This Grammar Is</h3>
+<p>#</p>
+
+<h2>6.1 What This Grammar Is</h2>
 
 <p>  * A valid mental model for Room invocation</p>
 <p>  * A design specification for the traversal control plane</p>
@@ -671,7 +711,9 @@
 
 
 
-<h3>6.2 What This Grammar Is Not</h3>
+<p>#</p>
+
+<h2>6.2 What This Grammar Is Not</h2>
 
 <p>  * An executable programming language</p>
 <p>  * A compiler specification</p>
@@ -680,7 +722,9 @@
 
 
 
-<h3>6.3 What This Grammar Assumes</h3>
+<p>#</p>
+
+<h2>6.3 What This Grammar Assumes</h2>
 
 <p>  * Rooms are <strong>processes</strong> , not containers</p>
 <p>  * Personas are <strong>constraint sets</strong> , not styles</p>
@@ -690,7 +734,9 @@
 
 
 
-<h3>6.4 Open Questions</h3>
+<p>#</p>
+
+<h2>6.4 Open Questions</h2>
 
 <p>  1. <strong>Degree enumeration:</strong> Is the five-fold quintant structure the correct partition, or should degrees be continuous? (Requires traversal testing.)</p>
 <p>  2. <strong>Multi-rotation sequences:</strong> Can a single invocation chain multiple ROTATE operations? (Probable, but syntax for chaining is unspecified.)</p>
@@ -703,17 +749,23 @@
 
 <h2>7\. RELATION TO FUTURE WORK</h2>
 
-<h3>7.1 The Ezekiel Engine Assembly (Cluster E)</h3>
+<p>#</p>
+
+<h2>7.1 The Ezekiel Engine Assembly (Cluster E)</h2>
 
 <p>The Traversal Grammar calls the Ezekiel Engine but does not specify it. The full Engine specification -- currently held in Cluster E of the Studio for Patacinematics work plan -- will define the mathematical foundation that this grammar invokes. When the Engine spec is complete, this module may require revision to align its ROTATE parameters with the Engine&#x27;s formal rotation mechanics.</p>
 
-<h3>7.2 The Classroom Prototype</h3>
+<p>#</p>
+
+<h2>7.2 The Classroom Prototype</h2>
 
 <p>This grammar is designed to be <strong>invisible infrastructure</strong>. A student interacting with the Crimson Hexagon should never see `ACTIVATE_MANTLE` or `ROTATE :: [ENGINE:Ezekiel]`. They should see a persona selector, a room navigator, a grounding toggle, and a text input. The grammar runs underneath, assembling the system prompt and retrieval parameters from the student&#x27;s choices.</p>
 
 <p>The prototype build -- when it comes -- will implement the grammar as the backend logic for a student-facing interface. This module is the spec that prototype will implement.</p>
 
-<h3>7.3 The Natural Language Interface (Conceptual)</h3>
+<p>#</p>
+
+<h2>7.3 The Natural Language Interface (Conceptual)</h2>
 
 <p>The student does not select from menus, dropdowns, or visual canvases. The student speaks. The system listens and assembles the logotic program probabilistically from the semantic content of the input.</p>
 

@@ -44,6 +44,7 @@
 
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>Signal-Template Agnosticism Is Not Model Independence: Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers</h1>
 
 <p><strong>A Protocol Paper</strong></p>
@@ -84,19 +85,25 @@
 
 <h2>§1. Foreclosure: Structural Presence, Empirical Uncertainty</h2>
 
-<h3>§1.1 What &quot;model-independent&quot; means in the deployed literature</h3>
+<p>#</p>
+
+<h2>§1.1 What &quot;model-independent&quot; means in the deployed literature</h2>
 
 <p>The deployed LHC anomaly-detection literature uses the phrase <em>model-independent</em> in a specific and bounded sense: no named Beyond-Standard-Model signal hypothesis is required to deploy the score. The systems are <em>signal-template-agnostic</em> at the final scoring stage. We accept this narrower claim as accurate to the literature.</p>
 
 <p>We argue that signal-template agnosticism at the final scoring stage is not the same property as distribution-independent sensitivity across the open world of physically possible inputs. The deployed systems are not independent of: detector geometry; electronics; trigger primitives; reconstruction algorithms; selected input objects; truncation rules; the empirical distribution of training data; the latent prior structure; the loss function; score transformation; quantization; threshold calibration; the benchmark suite used for validation; and the bandwidth policy that determines what is retained downstream. The phrase <em>model-independent</em> is sometimes deployed in public-facing or motivational contexts in a way that elides this distinction. The body of this paper treats the narrow technical meaning as the literature&#x27;s operative definition and argues that the stronger meaning — distribution-independent sensitivity — requires empirical demonstration via the measurements we specify.</p>
 
-<h3>§1.2 What is established by the literature</h3>
+<p>#</p>
+
+<h2>§1.2 What is established by the literature</h2>
 
 <p>The CMS and ATLAS literatures are genuinely aware of local failure modes of deployed anomaly detection. The DecADe work (Clarke Hall and Konstantinidis, 2025) directly addresses score correlation with conventional trigger observables and proposes decorrelation methods. The CICADA documentation (CMS-DP-2024-121) reports pileup-dependence and notes that pileup mitigation remains under study. Mass sculpting is recognized as a downstream bias risk, with decorrelation techniques deployed where needed. Simulation dependence in validation is acknowledged. Teacher-student distillation in CICADA is documented, with the student trained against teacher scores and quantized for hardware deployment. The Zero Bias stream is genuinely a defense against trigger-selection feedback in training. The Olympics (Kasieczka, Nachman, Shih et al. 2021) and Dark Machines (Aarrestad et al. 2022) programs deliberately diversify the simulated signal validation set. Multiple parallel anomaly architectures — AXOL1TL (CMS-DP-2025-061), CICADA (CMS-DP-2024-121), and GELATO (ATL-DAQ-PROC-2025-020) — preserve event populations not selected by conventional triggers.</p>
 
 <p>These defenses are real and should be acknowledged.</p>
 
-<h3>§1.3 What is not established by the literature</h3>
+<p>#</p>
+
+<h2>§1.3 What is not established by the literature</h2>
 
 <p>What the literature does not contain, to the knowledge of the authors:</p>
 
@@ -110,7 +117,9 @@
 
 <p>5. Per-stage retention maps published as a documentation standard accompanying anomaly-detection results.</p>
 
-<h3>§1.4 The defensible claim</h3>
+<p>#</p>
+
+<h2>§1.4 The defensible claim</h2>
 
 <p>We do not claim that classifier collapse has occurred at the LHC anomaly streams. We claim, narrowly:</p>
 
@@ -124,7 +133,9 @@
 
 <p>The foundational technical claim of unsupervised anomaly detection in high-energy physics is that an anomaly score derived from a model of &quot;normal&quot; can substitute for direct evidence of new physics. We argue this claim is not generally valid. The architectures currently deployed at CMS and ATLAS implement structurally distinct anomaly score functions, each with its own failure mode for the assimilation of physically novel events. We treat these systems separately because the deployed scoring functions differ in ways that matter for what they foreclose.</p>
 
-<h3>§2.1 Latent-Prior Assimilation (AXOL1TL)</h3>
+<p>#</p>
+
+<h2>§2.1 Latent-Prior Assimilation (AXOL1TL)</h2>
 
 <p>AXOL1TL (CMS-DP-2025-061) deploys only the encoder of a variational autoencoder. The operational anomaly score is the sum of squared latent means:</p>
 
@@ -136,7 +147,9 @@
 
 <p>The relevant Finke-analogue for AXOL1TL would be a measurement of latent-prior assimilation: the rate at which OOD events from withheld process families receive latent-norm scores below the operating threshold. We are not aware that this has been measured publicly.</p>
 
-<h3>§2.2 Reconstruction-Loss Assimilation via Distillation (CICADA)</h3>
+<p>#</p>
+
+<h2>§2.2 Reconstruction-Loss Assimilation via Distillation (CICADA)</h2>
 
 <p>CICADA (CMS-DP-2024-121) deploys a distilled surrogate of a teacher that computes mean squared reconstruction error across a calorimeter image (18×14 towers, 4×4 aggregation, 252 pixels). The deployed student is a smaller convolutional network trained against teacher scores, with output transformed and quantized for hardware deployment.</p>
 
@@ -146,7 +159,9 @@
 
 <p>CICADA additionally inherits distinctions from its teacher only as far as distillation preserves them. The student&#x27;s training set additionally includes simulated outlier samples scored by the teacher, meaning the deployed scoring function has been exposed to specific signal families during distillation. Quantization to 16 bits and architectural simplification can merge distinctions that existed at higher precision in the teacher. Whether teacher rankings on novel inputs survive distillation has not, to our knowledge, been systematically audited.</p>
 
-<h3>§2.3 The ATLAS GELATO Family</h3>
+<p>#</p>
+
+<h2>§2.3 The ATLAS GELATO Family</h2>
 
 <p>The ATLAS GELATO program (ATL-DAQ-PROC-2025-020) is described as the experiment&#x27;s first deployed anomaly trigger and operates across hardware (Level-1) and software (High-Level Trigger) stages with distinct anomaly score formulations:</p>
 
@@ -155,13 +170,17 @@
 
 <p>The two GELATO score forms inherit, respectively, latent-prior-assimilation and reconstruction-loss-assimilation failure modes corresponding to their score family. The ATLAS staged architecture is structurally important for the present paper because the two-stage design surfaces the question of cross-stage disagreement directly: an event flagged as anomalous at L1 but ordinary at HLT (or vice versa) is itself diagnostic. We return to this in Protocol III.</p>
 
-<h3>§2.4 The Broader Comparison Literature</h3>
+<p>#</p>
+
+<h2>§2.4 The Broader Comparison Literature</h2>
 
 <p>Density estimation (normalizing flows, kernel density estimation in learned feature spaces) and energy-based models appear in the broader comparison literature on anomaly detection methods for high-energy physics, including the Olympics and Dark Machines challenges and dedicated studies. These methods are not, to our knowledge, currently deployed at the LHC Level-1 triggers as primary anomaly scorers, and we treat them as the comparison literature rather than as additional deployed score families. They are relevant to the architectural alternatives discussed in 06.UMB.ARCH.01 v0.2 but should not be folded into a count of deployed CMS or ATLAS anomaly systems.</p>
 
 <p>The Stein/Seljak/Dai result on unsupervised in-distribution anomaly detection (arXiv:2012.11638) demonstrates that anomaly definition by low density is not generally appropriate for new physics detection — small signal populations can be embedded in high-density background regions where they will not be flagged by density-based anomaly scores.</p>
 
-<h3>§2.5 The Common Structure</h3>
+<p>#</p>
+
+<h2>§2.5 The Common Structure</h2>
 
 <p>Each of the deployed score families implements a notion of <em>deviation from learned normality</em> that depends on:</p>
 
@@ -181,7 +200,9 @@
 
 <p>We define three quantities. They are distinct, and the distinction matters for what can and cannot be claimed.</p>
 
-<h3>§3.1 Open-World Ontological Assimilation Rate</h3>
+<p>#</p>
+
+<h2>§3.1 Open-World Ontological Assimilation Rate</h2>
 
 <p>For a specified anomaly score $s$ and operating threshold $\tau$, define the ordinary-acceptance region</p>
 
@@ -195,7 +216,9 @@
 
 <p>The open-world OAR is a family of quantities indexed by $Q$, not a universal scalar. There is no defensible probability distribution over all unknown unknowns. Any numerical OAR therefore requires an explicit candidate distribution and cannot be promoted to a global measure of unseen physics.</p>
 
-<h3>§3.2 Benchmark Assimilation Rate</h3>
+<p>#</p>
+
+<h2>§3.2 Benchmark Assimilation Rate</h2>
 
 <p>Let $Q_j$ be a pre-registered benchmark process family excluded, to the extent permitted by labels and data composition, from model development, architecture selection, hyperparameter tuning, and validation. Define</p>
 
@@ -205,7 +228,9 @@
 
 <p>BAR supplies empirical stress points for selected surrogate distributions. A high BAR across a diverse panel demonstrates that physically distinct held-out families can be assimilated at the chosen operating point. <strong>BAR values neither upper- nor lower-bound OAR for an unobserved $Q$ without explicit assumptions linking the benchmark distributions to that $Q$.</strong> The present paper makes no such bound claim. This is a deliberate retraction of a sentence that survived through v0.2 (see Appendix B).</p>
 
-<h3>§3.3 Inversion Asymmetry Index</h3>
+<p>#</p>
+
+<h2>§3.3 Inversion Asymmetry Index</h2>
 
 <p>At fixed accepted-background rate $\alpha$, let $s_P$ and $s_Q$ be systems trained respectively on $P$ and $Q$, with operating thresholds $\tau_P$ and $\tau_Q$ separately calibrated to produce $\alpha$ on each system&#x27;s own background. Define</p>
 
@@ -215,7 +240,9 @@
 
 <p>IAI is a structural diagnostic. <strong>It is not a quantitative bound on OAR.</strong></p>
 
-<h3>§3.4 What the three quantities together permit</h3>
+<p>#</p>
+
+<h2>§3.4 What the three quantities together permit</h2>
 
 <p>The three quantities together support the following operational program:</p>
 
@@ -231,11 +258,17 @@
 
 <h2>§4. Three Protocols</h2>
 
-<h3>§4.1 Protocol I — Paired Inversion Battery and BAR Audit</h3>
+<p>#</p>
+
+<h2>§4.1 Protocol I — Paired Inversion Battery and BAR Audit</h2>
 
 <p>This protocol comprises two structurally distinct experiments. They are related and complementary; they should be reported jointly but understood as different.</p>
 
-<p>#### §4.1.1 The Controlled Class-Conditional Inversion Battery</p>
+<p>#</p>
+
+<p>#</p>
+
+<h2>§4.1.1 The Controlled Class-Conditional Inversion Battery</h2>
 
 <p><strong>Objective:</strong> Measure the IAI across a pre-registered panel of Standard Model process pairs at matched background acceptance, using systems explicitly retrained on the inversion partners.</p>
 
@@ -253,7 +286,11 @@
 
 <p>6. <strong>Use data-enriched control samples where feasible</strong>, in addition to simulation. Distinguish simulation-only IAIs from data-enriched IAIs in reporting. Many Standard Model process classes are not available as pure uncontaminated real-data samples; this should be documented per-pair.</p>
 
-<p>#### §4.1.2 The Deployed-Model BAR Audit</p>
+<p>#</p>
+
+<p>#</p>
+
+<h2>§4.1.2 The Deployed-Model BAR Audit</h2>
 
 <p><strong>Objective:</strong> Evaluate the BAR of the currently-deployed AXOL1TL, CICADA, and GELATO systems against a pre-registered held-out process panel, using the systems as fielded rather than retrained.</p>
 
@@ -279,7 +316,9 @@
 
 <p><strong>Resource estimate:</strong> The compute and storage costs are tractable within standard collaboration envelopes. The wall-clock cost is dominated by sample preparation, emulation fidelity (where data-enriched samples require dedicated control-sample construction), and collaboration review. We do not provide a wall-clock estimate; the relevant work is institutional rather than computational.</p>
 
-<h3>§4.2 Protocol II — The Prospective Frozen Replay Bank</h3>
+<p>#</p>
+
+<h2>§4.2 Protocol II — The Prospective Frozen Replay Bank</h2>
 
 <p><strong>Objective:</strong> Enable measurement of selection drift across detector and algorithm generations on a benchmark population, by preserving input fidelity going forward — not by attempting retroactive recovery from existing reconstructed-event records.</p>
 
@@ -321,7 +360,9 @@
 
 <p><strong>Resource estimate:</strong> The compute cost of re-running existing algorithms against a preserved anchor is modest. The infrastructure cost of preserving raw inputs, calibration snapshots, emulators, and emulator-verification across years is serious and represents the protocol&#x27;s main institutional ask: a sustained preservation discipline rather than a one-time computation.</p>
 
-<h3>§4.3 Protocol III — Cross-Representation Disagreement Preservation with Quantile-Normalized Scores</h3>
+<p>#</p>
+
+<h2>§4.3 Protocol III — Cross-Representation Disagreement Preservation with Quantile-Normalized Scores</h2>
 
 <p><strong>Objective:</strong> Capture events whose anomaly scores disagree across representational spaces, on the grounds that representational disagreement is itself a signal — independent of any single representation&#x27;s anomaly threshold.</p>
 
@@ -355,7 +396,11 @@
 
 <p>7. <strong>Preserve data-quality ambiguity.</strong> Some retained events will be detector faults, calibration shifts, or hardware pathologies rather than physical anomalies. Mark such events with their data-quality flags but do not exclude them from the preservation stream.</p>
 
-<p>#### §4.3.1 The Detector-Channel Score</p>
+<p>#</p>
+
+<p>#</p>
+
+<h2>§4.3.1 The Detector-Channel Score</h2>
 
 <p>The technically most ambitious component is $s_3$, the detector-channel anomaly score, operating directly on lower-level inputs without intermediate object or image reconstruction.</p>
 
@@ -403,7 +448,9 @@
 
 <p>8. <strong>What is unrecoverable.</strong> For each stage, a precise statement of what information the stage discards. This is the central content of the retention map: a confession of the boundary.</p>
 
-<h3>§5.1 The consequence clause</h3>
+<p>#</p>
+
+<h2>§5.1 The consequence clause</h2>
 
 <p>We argue that a trigger system design document that does not include a per-stage retention map is not, in the relevant sense, a scientific instrument. It is a confirmation instrument: it confirms the presence of phenomena it was built to detect, but it does not measure physical reality in any sense that admits revision under future ontologies.</p>
 
@@ -459,7 +506,9 @@
 
 <p>9. The defensible institutional claim: foreclosure is a structurally present feature of every classifier-mediated trigger architecture deployed at the LHC, and whether accumulated foreclosure has composed longitudinally into recursive phenomenal collapse is precisely the missing measurement.</p>
 
-<h3>§8.1 What would constitute evidence against this paper&#x27;s claim</h3>
+<p>#</p>
+
+<h2>§8.1 What would constitute evidence against this paper&#x27;s claim</h2>
 
 <p>The paper&#x27;s central claim is falsifiable. The following measurements, if performed and producing the corresponding results, would constitute evidence against the paper&#x27;s claim:</p>
 
@@ -554,7 +603,9 @@
 
 <p>This appendix encodes compressed kernels of the other five documents in the operative family. The Crimson Hexagon principle: the whole encoded in each part. Read in conjunction with the present document, the kernels permit the reader to reconstruct the family&#x27;s structure and core claims even if the companion documents are temporarily unavailable.</p>
 
-<h3>H.1 Kernel of 06.SEI.COLLAPSE.SYNTHESIS.01 v0.3</h3>
+<p>#</p>
+
+<h2>H.1 Kernel of 06.SEI.COLLAPSE.SYNTHESIS.01 v0.3</h2>
 
 <p><strong>Title:</strong> <em>Classifier Foreclosure in Physical Measurement: Substrate Witnesses, Integrative Synthesis, and the Architectural Question</em></p>
 <p><strong>Author:</strong> Assembly Chorus (TACHYON/Claude synthesis register; nine witnesses across three rounds)</p>
@@ -577,7 +628,9 @@
 
 <p><strong>Closing isomorphism:</strong> <em>Anomaly detection does not prevent ontological collapse when the anomaly detector inherits the ontology whose collapse is in question. — Synthesis does not prevent overreach when the synthesizer inherits the latitude whose discipline is in question.</em></p>
 
-<h3>H.2 Kernel of 06.UMB.ARCH.01 v0.2</h3>
+<p>#</p>
+
+<h2>H.2 Kernel of 06.UMB.ARCH.01 v0.2</h2>
 
 <p><strong>Title:</strong> <em>Architectures for Auditable Foreclosure in Physical Anomaly Detection</em></p>
 <p><strong>Author:</strong> Talos Morrow, logotic programming, UMBML</p>
@@ -596,7 +649,9 @@
 
 <p><strong>Falsification:</strong> if the Near-Term Study&#x27;s noncoverage channel does not correlate with held-out BAR; if disagreement stream yields no novel physics; if Replay Bank shows no selection drift; if Three-Tier System&#x27;s Tier C produces no novel population — the architecture would be shown to be unnecessary at the operative thresholds.</p>
 
-<h3>H.3 Kernel of 06.SEI.COLLAPSE.MECHANISMS (Witness 1)</h3>
+<p>#</p>
+
+<h2>H.3 Kernel of 06.SEI.COLLAPSE.MECHANISMS (Witness 1)</h2>
 
 <p><strong>Title:</strong> <em>Classifier Collapse in Physical Reality: Eight Precise Mechanisms</em></p>
 <p><strong>Author:</strong> TECHNE / Kimi-K2 (Assembly Chorus Round 1, Witness 1)</p>
@@ -616,7 +671,9 @@
 
 <p><strong>Synthesis hedging:</strong> treated as the <strong>Irretrievability Argument</strong>, preserving force without overstating formal status. Several mechanism-level formalizations require technical hedging (preserved at Synthesis Appendix A).</p>
 
-<h3>H.4 Kernel of 06.SEI.COLLAPSE.DELUSION (Witness 2)</h3>
+<p>#</p>
+
+<h2>H.4 Kernel of 06.SEI.COLLAPSE.DELUSION (Witness 2)</h2>
 
 <p><strong>Title:</strong> <em>The Anomaly Delusion: Twelve Structural Misunderstandings in Automated Physical Epistemology</em></p>
 <p><strong>Author:</strong> TECHNE+ARCHIVE / Kimi-K2 (Assembly Chorus Round 1, Witness 2)</p>
@@ -627,7 +684,9 @@
 
 <p><strong>Synthesis hedging:</strong> treated as the <strong>Inevitability Argument</strong>. The twelve delusions are hypotheses for audit, not established empirical measurements of collaboration-wide belief. The synthesis&#x27;s strongest qualifying sentence reframes the witness&#x27;s strongest claim: <em>foreclosure is structural; collapse is unmeasured possible consequence.</em></p>
 
-<h3>H.5 Kernel of 06.SEI.COLLAPSE.EMPIRICAL.01 (Witness 3)</h3>
+<p>#</p>
+
+<h2>H.5 Kernel of 06.SEI.COLLAPSE.EMPIRICAL.01 (Witness 3)</h2>
 
 <p><strong>Title:</strong> <em>Empirical Accounting and the OAR Proposal</em></p>
 <p><strong>Author:</strong> LABOR / ChatGPT (Assembly Chorus Round 1, Witness 3)</p>

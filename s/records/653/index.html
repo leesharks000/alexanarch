@@ -61,6 +61,7 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">Regulatory compliance</strong> <span style="font-size:.75em;color:#999">[empirical]</span><br><span style="font-size:.85em;color:#444">Documented evidence of AI misrepresentation for legal proceedings.</span></div>
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>COMPRESSION DIAGNOSTICS</h1>
 <h2>Measuring What the AI Burns, Invents, and Distorts</h2>
 
@@ -100,7 +101,9 @@
 
 
 <p>Compression Diagnostics produces five quantitative metrics per entity:</p>
-<h3>β — Beige Threshold (0.0 – 1.0)</h3>
+<p>#</p>
+
+<h2>β — Beige Threshold (0.0 – 1.0)</h2>
 
 
 <p>The proportion of the AI&#x27;s description that could apply to any competitor in the same category. Measures entity-level genericness.</p>
@@ -127,25 +130,33 @@
 
 
 <p><em>Calibration:</em> Basecamp (37signals) scored β = 0.71 — commodity zone. 71% of the AI&#x27;s description could apply to Monday.com, Asana, or ClickUp.</p>
-<h3>Δ_G⁺ — Content Gain (Hallucination Index)</h3>
+<p>#</p>
+
+<h2>Δ_G⁺ — Content Gain (Hallucination Index)</h2>
 
 
 <p>What the AI invented that does not exist. Measured in distinct false claims per diagnostic level. Low Δ_G⁺ means the AI is not hallucinating about you. This is typically good — unless the hallucinations are <em>favorable</em> extensions of your frameworks (see: Conceptual Infrastructure Ownership, EA-CORP-04).</p>
-<h3>Δ_G⁻ — Content Loss (Erasure Index)</h3>
+<p>#</p>
+
+<h2>Δ_G⁻ — Content Loss (Erasure Index)</h2>
 
 
 <p>What the AI dropped that matters. Measured as the number of differentiation-critical attributes absent from the AI&#x27;s description. High Δ_G⁻ means your competitive advantage is invisible.</p>
 
 
 <p><em>Calibration:</em> Basecamp&#x27;s Δ_G⁻ was HIGH — six differentiation-critical attributes (calm company philosophy, intentional simplicity, Shape Up as competitive advantage, bootstrap trust signal, founder thought leadership, HEY email as vision evidence) were absent from all commercial queries.</p>
-<h3>S_c — Semantic Coherence (Fragmentation Score)</h3>
+<p>#</p>
+
+<h2>S_c — Semantic Coherence (Fragmentation Score)</h2>
 
 
 <p>Whether the AI treats your entity as one coherent thing or as disconnected fragments. Measured as the number of entity-level disconnections across diagnostic levels.</p>
 
 
 <p><em>Calibration:</em> Basecamp showed S_c = FRAGMENTED — the product, methodology, and founder were retrievable as three separate entities but never connected in commercial queries.</p>
-<h3>R — Compression Regime (R1 / R2 / R3)</h3>
+<p>#</p>
+
+<h2>R — Compression Regime (R1 / R2 / R3)</h2>
 
 
 <p>The classification of the compression behavior the entity is experiencing, per diagnostic level and overall:</p>

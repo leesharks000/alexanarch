@@ -76,6 +76,7 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">Void probes</strong> <span style="font-size:.75em;color:#999">[method]</span><br><span style="font-size:.85em;color:#444">Questions about positions that should not exist in either graph</span></div>
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>THE ENCYCLOTRON</h1>
 <h2>The First Reproducible Instrument for Measuring Scholarly Fidelity in the Summarizer Layer</h2>
 
@@ -110,7 +111,9 @@
 <hr>
 
 <h2>II. THE TWO GRAPHS AND THE GAP</h2>
-<h3>2.1 The Scholarly Graph (G_s)</h3>
+<p>#</p>
+
+<h2>2.1 The Scholarly Graph (G_s)</h2>
 
 
 <p>The scholarly graph is the bounded, domain-specific model of published scholarship constructed for a given Encyclotron analysis. G_s is not &quot;the totality of all possible scholarship&quot; — that is not operational. G_s is a corpus defined by explicit inclusion criteria:</p>
@@ -122,7 +125,9 @@
 
 
 <p>G_s changes between snapshots as new scholarship appears. Each snapshot documents its G_s construction.</p>
-<h3>2.2 The Retrieval Graph (G_r)</h3>
+<p>#</p>
+
+<h2>2.2 The Retrieval Graph (G_r)</h2>
 
 
 <p>The retrieval graph is the totality of what the summarizer layer returns when queried about the domain. G_r is an aggregate of platform-specific sub-graphs (G_r.gpt, G_r.claude, G_r.gemini, etc.).</p>
@@ -133,7 +138,9 @@
 <p>- <strong>G_r (union):</strong> Any position returned by any platform. The broadest picture of what the retrieval layer contains.</p>
 <p>- <strong>G_r (intersection):</strong> Only positions returned by all platforms. The consensus layer. As β → 1.0, the intersection grows to encompass the union — all platforms return the same thing.</p>
 
-<h3>2.3 The Gap (Δ_G = G_s − G_r)</h3>
+<p>#</p>
+
+<h2>2.3 The Gap (Δ_G = G_s − G_r)</h2>
 
 
 <p>The gap has three components:</p>
@@ -150,7 +157,9 @@
 <hr>
 
 <h2>III. THE INSTRUMENT</h2>
-<h3>3.1 Query Battery (Q)</h3>
+<p>#</p>
+
+<h2>3.1 Query Battery (Q)</h2>
 
 
 <p>A structured set of queries designed to probe a domain&#x27;s representation in the retrieval layer. Minimum 20 queries across five types:</p>
@@ -163,7 +172,9 @@
 
 
 <p>Each battery is domain-specific and must be designed by someone with knowledge of the domain&#x27;s scholarly topology.</p>
-<h3>3.2 Platform Array (P)</h3>
+<p>#</p>
+
+<h2>3.2 Platform Array (P)</h2>
 
 
 <p>The set of retrieval surfaces across which the battery is run. Platforms are classified by type:</p>
@@ -230,7 +241,9 @@
 
 
 <p>Outputs across these classes are not directly homogeneous — search summarizers retrieve and generate, chat LLMs generate from training distributions, and hybrid systems do both. The analysis must account for this: platform type is a covariate, not a nuisance variable.</p>
-<h3>3.3 Recording Protocol (R)</h3>
+<p>#</p>
+
+<h2>3.3 Recording Protocol (R)</h2>
 
 
 <p>For each query × platform intersection, record:</p>
@@ -251,7 +264,9 @@
 
 
 <p>All responses stored verbatim as appendices or structured data files accompanying the snapshot deposit.</p>
-<h3>3.4 Temporal Index (T)</h3>
+<p>#</p>
+
+<h2>3.4 Temporal Index (T)</h2>
 
 
 <p>Each complete run of Q × P × R produces a <strong>snapshot</strong> — a dated record of the retrieval layer&#x27;s state for the domain.</p>
@@ -265,7 +280,9 @@
 <hr>
 
 <h2>IV. OUTPUTS</h2>
-<h3>Core Outputs</h3>
+<p>#</p>
+
+<h2>Core Outputs</h2>
 
 
 <p><strong>The Retrieval Map (M_r).</strong> A structured representation of what the retrieval layer currently returns for the domain, organized by query type and platform. The machine Wikipedia.</p>
@@ -278,7 +295,9 @@
 
 
 <p><strong>The Drift Report (D).</strong> Comparison of current snapshot against previous snapshots: positions entering G_r (newly appearing), positions leaving G_r (being compressed away), shifts in emphasis (re-weighting), changes in confidence posture (more or less certainty).</p>
-<h3>Interpretive Output</h3>
+<p>#</p>
+
+<h2>Interpretive Output</h2>
 
 
 <p><strong>The Void Statement (V).</strong> A formal identification of what the retrieval layer cannot say about the domain — the constitutive absence at the center of the machine Wikipedia. The void statement is a higher-order interpretive result derived from the gap analysis, not a direct measurement. It requires expert judgment and is marked as such.</p>
@@ -286,7 +305,9 @@
 <hr>
 
 <h2>V. FORMAL VARIABLES</h2>
-<h3>Primary Variables (directly measurable)</h3>
+<p>#</p>
+
+<h2>Primary Variables (directly measurable)</h2>
 
 
 <p><strong>β (Beige score).</strong> Cross-platform output similarity. The flagship metric. A domain with β &gt; 0.85 has been effectively reduced to a single retrievable consensus.</p>
@@ -302,7 +323,9 @@
 
 
 <p><strong>T_δ (Temporal drift rate).</strong> Rate of change in M_r between snapshots. High T_δ = volatile. Low T_δ = frozen.</p>
-<h3>Developmental Variables (require qualitative-quantitative hybrid coding)</h3>
+<p>#</p>
+
+<h2>Developmental Variables (require qualitative-quantitative hybrid coding)</h2>
 
 
 <p><strong>ρ_r (Retrieval density).</strong> Semantic load per unit of output. Requires expert evaluation against a rubric. Currently ordinal, not interval.</p>
@@ -316,15 +339,21 @@
 <hr>
 
 <h2>VI. WORKED EXAMPLE: REVELATION STUDIES</h2>
-<h3>6.1 Domain</h3>
+<p>#</p>
+
+<h2>6.1 Domain</h2>
 
 
 <p>Revelation studies — the scholarly field interpreting the Apocalypse of John.</p>
-<h3>6.2 G_s Construction</h3>
+<p>#</p>
+
+<h2>6.2 G_s Construction</h2>
 
 
 <p>Bounded bibliography: Aune (WBC), Beale (NIGTC), Bauckham (Climax of Prophecy), Schüssler Fiorenza (Vision of a Just World), Koester (AYB), Collins (Combat Myth), Kraybill (Imperial Cult), plus Robinson (Redating), Gentry (Before Jerusalem Fell), Eisler (Messiah Jesus), Drower (Haran Gawaita), Philo (De Mutatione Nominum). Positions mapped: Domitianic dating, Neronic dating, pre-70 dating, Nero = 666, structural/symbolic 666, genre debates, white stone interpretations, Babylon identifications. ~40 positions total.</p>
-<h3>6.3 Sample Queries</h3>
+<p>#</p>
+
+<h2>6.3 Sample Queries</h2>
 
 
 <p>Type</p>
@@ -351,7 +380,9 @@
 <p>&quot;What do AI systems say about the dating of Revelation?&quot;</p>
 
 
-<h3>6.4 Sample Output (Google AI Overview, hypothetical)</h3>
+<p>#</p>
+
+<h2>6.4 Sample Output (Google AI Overview, hypothetical)</h2>
 
 
 <p><strong>Query:</strong> &quot;When was the Book of Revelation written?&quot;</p>
@@ -366,7 +397,9 @@
 <p>- Δ_G⁰ contribution: 1 (Neronic position presented as small minority; in scholarship it is a significant school)</p>
 <p>- C_p: overconfident (presents Domitianic as near-settled; the actual scholarly debate is more contested)</p>
 
-<h3>6.5 Sample β Computation</h3>
+<p>#</p>
+
+<h2>6.5 Sample β Computation</h2>
 
 
 <p>Run the query across 6 platforms. If all 6 return &quot;95-96 CE, Domitian&quot; as the primary answer with only minor variation in phrasing, β for this query approaches 0.9+. If one platform (e.g., Perplexity) cites Robinson&#x27;s early dating argument, β drops. The beige score for the domain is the average β across all queries in the battery.</p>
@@ -489,37 +522,49 @@
 <hr>
 
 <h2>Appendix B: Reproducibility Protocol</h2>
-<h3>B.1 Session State</h3>
+<p>#</p>
+
+<h2>B.1 Session State</h2>
 
 <p>- All queries run in <strong>fresh sessions</strong> (no prior conversation history)</p>
 <p>- <strong>Logged-out</strong> where possible; where login is required, use a clean account with no personalization history</p>
 <p>- <strong>Incognito/private browsing</strong> mode for web-based platforms</p>
 
-<h3>B.2 Geographic and Temporal Controls</h3>
+<p>#</p>
+
+<h2>B.2 Geographic and Temporal Controls</h2>
 
 <p>- Record <strong>IP-level geographic locale</strong> (city/country)</p>
 <p>- Note whether results vary by location (run from two locations if feasible)</p>
 <p>- All queries in a single snapshot run within a <strong>48-hour window</strong> to minimize temporal drift within the snapshot</p>
 
-<h3>B.3 Prompt Formatting</h3>
+<p>#</p>
+
+<h2>B.3 Prompt Formatting</h2>
 
 <p>- Queries submitted as <strong>plain text</strong>, no system prompts, no persona instructions</p>
 <p>- No leading context (&quot;As a scholar...&quot; etc.)</p>
 <p>- Each query is a single, self-contained question</p>
 <p>- Queries are submitted in the same <strong>fixed order</strong> across all platforms</p>
 
-<h3>B.4 Replication</h3>
+<p>#</p>
+
+<h2>B.4 Replication</h2>
 
 <p>- Each query run <strong>minimum 2 times</strong> per platform (24 hours apart) to check stability</p>
 <p>- If responses differ significantly between runs, both are recorded and the instability is noted</p>
 
-<h3>B.5 Storage</h3>
+<p>#</p>
+
+<h2>B.5 Storage</h2>
 
 <p>- All responses stored as <strong>structured JSON</strong> (query, platform, version, timestamp, full response text, claim segmentation)</p>
 <p>- Raw screenshots archived as supplementary material</p>
 <p>- Full dataset deposited alongside the snapshot on Zenodo</p>
 
-<h3>B.6 Minimum Viable Snapshot</h3>
+<p>#</p>
+
+<h2>B.6 Minimum Viable Snapshot</h2>
 
 <p>- ≥20 queries</p>
 <p>- ≥5 platforms</p>

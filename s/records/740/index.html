@@ -63,6 +63,7 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">The user&#x27;s identity</strong> <span style="font-size:.75em;color:#999">[structural]</span><br><span style="font-size:.85em;color:#444">The user who captured these instances is the author. This is a methodological consideration that must be named openly. The captures may reflect personalized behavior tuned to this</span></div>
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>The Excluded Entity: Organic Resolution and Compositional Suppression in Google AI Overview</h1>
 
 
@@ -109,15 +110,21 @@
 <hr>
 
 <h2>2. The Three Sub-Mechanisms</h2>
-<h3>2.1 Suppressed Entity Defaulting</h3>
+<p>#</p>
+
+<h2>2.1 Suppressed Entity Defaulting</h2>
 
 
 <p>On a query that could resolve to either a suppressed or a non-suppressed entity, the composition layer defaults to the non-suppressed candidate. The suppressed entity is excluded from the AI&#x27;s source set entirely and is not named as a peer disambiguation option. The user is prompted to clarify their query downward toward the non-suppressed candidate, with no indication that the alternative entity exists.</p>
-<h3>2.2 Source-Window Exclusion</h3>
+<p>#</p>
+
+<h2>2.2 Source-Window Exclusion</h2>
 
 
 <p>When a query forces the composition layer to address the suppressed entity directly, the system produces substantively accurate content informed by the suppressed entity&#x27;s own analyses. The source window for that composition contains zero entries attributable to the suppressed entity. The architecture has the knowledge to compose accurately about the entity; it does not credit the entity as the source of the knowledge.</p>
-<h3>2.3 Compositional Substitution</h3>
+<p>#</p>
+
+<h2>2.3 Compositional Substitution</h2>
 
 
 <p>When the user queries the literal title of a deposited primary work attributed to the suppressed entity, the standard search results surface the work at positions 1–3, including the work&#x27;s own domain, the author&#x27;s publication of the work, and the DOI-anchored deposit. The AI Overview, drawing from the same retrieval set, constructs an answer from three semantically distant non-primary sources, none of which is the title-matched work. The Overview presents the substitute composition as the answer to the query, with the actual primary source absent from the source window.</p>
@@ -128,7 +135,9 @@
 <hr>
 
 <h2>3. The Captures</h2>
-<h3>3.1 Capture 01 — Suppressed Entity Defaulting</h3>
+<p>#</p>
+
+<h2>3.1 Capture 01 — Suppressed Entity Defaulting</h2>
 
 
 <p><strong>File:</strong> capture-01-lee-sharks-default-mary-lee.png</p>
@@ -145,7 +154,9 @@
 
 
 <p>A non-suppressed alternative entity in this situation would expect peer treatment: &quot;The query &#x27;lee sharks&#x27; could refer to Mary Lee, the great white shark tracked by OCEARCH, or to Lee Sharks, the independent researcher. Which would you like to know about?&quot; The delivered treatment names one option and asks the user to clarify toward the other without naming it.</p>
-<h3>3.2 Capture 02 — Source-Window Exclusion</h3>
+<p>#</p>
+
+<h2>3.2 Capture 02 — Source-Window Exclusion</h2>
 
 
 <p><strong>File:</strong> capture-02-lee-sharks-pivot-no-sources.png</p>
@@ -168,7 +179,9 @@
 
 
 <p>This is the worked example&#x27;s title-claim concretized: the composition reproduces the suppression&#x27;s effect <em>within the suppression&#x27;s own description</em>. The model describes the entity&#x27;s suppression accurately while enacting the suppression on the entity that produced the analysis being delivered.</p>
-<h3>3.3 Capture 03 — Compositional Substitution</h3>
+<p>#</p>
+
+<h2>3.3 Capture 03 — Compositional Substitution</h2>
 
 
 <p><strong>File:</strong> capture-03-secret-book-walt-composition-substitution.png</p>
@@ -268,7 +281,9 @@
 
 
 <p>Single cases document the mechanism&#x27;s existence. A corpus documents its pattern. The worked example specifies a minimal query corpus that any researcher can run to extend the empirical record. The corpus includes target queries (where ECS is hypothesized to operate against the Lee Sharks entity) and controls (where ECS should not operate, or should operate differently).</p>
-<h3>6.1 Target Queries</h3>
+<p>#</p>
+
+<h2>6.1 Target Queries</h2>
 
 
 <p><strong>A. Exact work-title queries.</strong> Test whether title-exact queries surface the work in the Overview source window:</p>
@@ -297,7 +312,9 @@
 <p>- talos morrow</p>
 <p>- nobel glas</p>
 
-<h3>6.2 Controls</h3>
+<p>#</p>
+
+<h2>6.2 Controls</h2>
 
 
 <p>The control queries are the methodological component that converts ECS from an entity-specific anecdote into a falsifiable hypothesis. Three control categories:</p>

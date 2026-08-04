@@ -44,6 +44,7 @@
 
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>Whitespace as Provenance: Representation Pipelines and the Extinction of Compositional Authorship (EA-WHITESPACE-01 v0.2)</h1>
 
 <h1>Whitespace as Provenance</h1>
@@ -80,7 +81,9 @@
 <hr>
 <h2>2. The Representation Pipeline</h2>
 
-<h3>2.1 The chain</h3>
+<p>#</p>
+
+<h2>2.1 The chain</h2>
 
 <p>A text does not arrive at a language model. It arrives at a chain:</p>
 
@@ -108,7 +111,9 @@
 
 <p>This is stronger than &quot;the tokenizer drops whitespace,&quot; because it cannot be answered by exhibiting a lossless decoder. It names a loss that persists under byte-perfect round-tripping.</p>
 
-<h3>2.2 What NLP has said</h3>
+<p>#</p>
+
+<h2>2.2 What NLP has said</h2>
 
 <p>Sustained attention to whitespace in NLP has been sparse and instrumental. Two lines: language-specific segmentation for scripts where whitespace is not a word boundary (Wiechetek et al. 2019 and related work), which treats whitespace as an accident of English-family orthography; and OCR error correction (Soni, Klein, and Eisenstein 2019), which treats whitespace as noise. Digital-humanities work on enjambment (Ruiz Fabo et al. 2017 on 3.7K Spanish sonnets; Hussein et al. 2018 on N=69; overview in Monget 2020) approaches the compositional question obliquely, on small datasets, without engaging the pipeline as the site of erasure.</p>
 
@@ -116,7 +121,9 @@
 
 <p>Bhyravajjula et al. is the empirical foundation this paper builds on. What it does not do — and what this paper undertakes — is extend the diagnosis into the provenance frame. Their paper documents that pipelines are poor at whitespace. This paper argues the poorness is not a technical failing awaiting a better tokenizer; it is the visible surface of a position about what a text <em>is</em>, the same position that operates in editorial theory&#x27;s variorum stance and in AI-authorship discourse&#x27;s content/form distinction, and its consequence is a documentable form of provenance erasure.</p>
 
-<h3>2.3 The Python asymmetry</h3>
+<p>#</p>
+
+<h2>2.3 The Python asymmetry</h2>
 
 <p>One design fact deserves direct statement. Modern pipelines preserve whitespace to the degree they do largely because code demands it. Python&#x27;s control flow depends on indentation; a pipeline that flattened Python would produce syntactically broken output; model providers, serving software engineers, invested accordingly.</p>
 
@@ -127,25 +134,35 @@
 
 <p>Different poetic traditions survive the pipeline to different degrees. This section sketches a gradient, from most-survivable to least, as a way of making the erasure concrete. The gradient is qualitative pending the measurement program of §9.1.</p>
 
-<h3>3.1 Whitman: partial survival</h3>
+<p>#</p>
+
+<h2>3.1 Whitman: partial survival</h2>
 
 <p>Whitman&#x27;s line-length modulation is prosodic discipline, not prose-adjacency: the long swelling catalogues, the short axial line that turns them, breath as a unit of composition. The argument that democratic consciousness has a <em>shape</em> — the long inclusive line breaking into the singular — is partially inferable from what survives a standard pipeline, because line breaks typically survive and line-length ratios are measurable. What is lost: the finer visual rhythm of the page, the revisions of spacing across six editions, and the difference between the 1855 typography (small, dense, revolutionary) and the 1892 deathbed typography (spacious, monumental) — distinctions the training corpus rarely delivers.</p>
 
-<h3>3.2 Dickinson: substantial loss</h3>
+<p>#</p>
+
+<h2>3.2 Dickinson: substantial loss</h2>
 
 <p>Dickinson&#x27;s compositional practice was radically un-print: fascicles of folded stationery, sewn and privately circulated; dashes varying in length, slant, and position; capitalization of internal nouns; manuscript line breaks diverging from metrical scansion. Her first editors normalized all of it (Todd and Higginson 1890–1896); Johnson&#x27;s 1955 variorum restored the dashes as standardized type; Franklin&#x27;s 1998 variorum and 1981 <em>Manuscript Books</em> facsimile enact two different answers to what the poems are (see §6).</p>
 
 <p>What survives a standard pipeline: propositional content, syntax, and a uniformized em-dash. What does not: dash length and slant, the intentional differences among dash forms, the mid-line dash-and-space pauses, and the manuscript line breaks. The pipeline&#x27;s Dickinson is approximately the Johnson text with the dashes further flattened. The Emily Dickinson Archive (edickinson.org) holds something else. The training corpus received the former.</p>
 
-<h3>3.3 Hopkins: catastrophic loss</h3>
+<p>#</p>
+
+<h2>3.3 Hopkins: catastrophic loss</h2>
 
 <p>Hopkins built a notational apparatus — accent marks over stressed syllables, outrides — that he considered the score for his sprung rhythm. &quot;Take breath and read it with the ears, as I always wish to be read, and my verse becomes all right&quot; (to Bridges, 1877). The marks are punctuation-adjacent from a pipeline&#x27;s perspective and are normalized out even where sources preserve them. A model can produce Hopkins pastiche — the compound words, the consonantal density, the exclamatory syntax — and cannot produce sprung rhythm, because sprung rhythm was never in what it read. The pastiche looks like Hopkins to a reader unfamiliar with his prosody, and cannot sound like Hopkins to anyone who has heard the poems.</p>
 
-<h3>3.4 Concrete poetry: extinguished in the text pipeline</h3>
+<p>#</p>
+
+<h2>3.4 Concrete poetry: extinguished in the text pipeline</h2>
 
 <p>The concrete movement — Gomringer, the Noigandres group, Finlay, Houédard, Solt — takes as foundational that the poem&#x27;s material is the letter and the space between letters (Solt 1968). Its preservation crisis predates computation: reprints lose exact spacing and typeface; anthologies of the movement&#x27;s landmarks are largely out of print. Digitization was a second turn of the crisis; the text pipeline is a third. Concrete poetry is extinguished wherever the work enters a text-only pipeline as linearized language. (Multimodal training on page images is a different access path, with different provenance and fidelity — an important qualification developed in §7.)</p>
 
-<h3>3.5 Calligrammatic composition</h3>
+<p>#</p>
+
+<h2>3.5 Calligrammatic composition</h2>
 
 <p>The calligrammatic tradition runs from the Hellenistic pattern-poems through Apollinaire&#x27;s <em>Calligrammes</em> (1918) to the present. The archive&#x27;s contemporary instance is Sigil&#x27;s <em>Snub-Poemed</em> (AXN:0246): phrases arranged spatially to form the outline of the first-century Roman copy of Lysippos&#x27;s bust of Socrates. The phrases mix Socratic aphorisms, Platonic allusion, reception history (&quot;Socrates who dances&quot; — Nietzsche), first-person Platonic articulations Sigil originates (&quot;is it madness to feel and to know?&quot;), and — as the accompanying critical reading makes explicit — <em>&quot;quotations and paraphrases of the poet&#x27;s own work, self-consciously (mis)attributed to &#x27;Socrates&#x27; and woven into the fabric of intertext without indication of where one ends and the other begins.&quot;</em> The line <em>&quot;I press my scruff-weary beard to your lips&quot;</em> is Sigil&#x27;s own; a variant appears in her earlier <em>Versal</em>.</p>
 
@@ -153,7 +170,9 @@
 
 <p>A pipeline given <em>Snub-Poemed</em> receives, at best, a phrase list. Every phrase yields propositional content; no marker survives of which propositions belong to Socrates, which to Plato, which to reception, which to Sigil — and no trace survives of the poem&#x27;s argument that the distinction is unresolvable, because that argument was made spatially. The claim was in the composition. The composition is not in the character sequence.</p>
 
-<h3>3.6 Pearl</h3>
+<p>#</p>
+
+<h2>3.6 Pearl</h2>
 
 <p>The Middle English <em>Pearl</em> receives extended treatment in §5. Its stanza structure, concatenation, arithmetic (101 stanzas × 12 lines = 1,212), and circular return are formal features of theological significance. It stands at the far end of the gradient for a compounding reason: the archive&#x27;s copy is not merely subject to compositional loss in the pipeline — it cannot enter the pipeline at all.</p>
 
@@ -182,7 +201,9 @@
 <hr>
 <h2>5. Pearl: The Case of Double Invisibility</h2>
 
-<h3>5.1 The compositional structure</h3>
+<p>#</p>
+
+<h2>5.1 The compositional structure</h2>
 
 <p><em>Pearl</em> (late 14th century) is composed of 101 twelve-line stanzas rhyming ABABABABBCBC, arranged in 20 groups of 5 (one group of 6), 1,212 lines in total, in the alliterative style of the northwest Midlands. The feature that makes it singular in Middle English poetry is concatenation: the last word or phrase of each stanza recurs in the first line of the next, with a single link-word carried through each five-stanza group, a new link-word introduced at each group boundary, and the poem&#x27;s final line returning to its first — <em>&quot;Perle plesaunte, to prynces paye&quot;</em> — closing the chain into a circle. The scholarly consensus calls it <em>&quot;the most highly wrought and intricately constructed poem in Middle English&quot;</em> (Bishop 1968).</p>
 
@@ -190,11 +211,15 @@
 
 <p><em>Pearl</em>&#x27;s form is its argument. A version of <em>Pearl</em> that strips the form does not reduce the poem; it deletes the argument.</p>
 
-<h3>5.2 The manuscript</h3>
+<p>#</p>
+
+<h2>5.2 The manuscript</h2>
 
 <p>MS Cotton Nero A.x (British Library) is the sole surviving witness — the manuscript that survived the 1731 Ashburnham House fire that scorched <em>Beowulf</em> and destroyed the <em>Maldon</em> exemplar. It contains <em>Pearl</em>, <em>Cleanness</em>, <em>Patience</em>, and <em>Sir Gawain and the Green Knight</em>, anonymous. The manuscript&#x27;s line breaks, stanza divisions, and section markers are the primary evidence for the compositional structure. Modern editions (Gordon 1953; Andrew and Waldron 2007) render the structure with varying typographic fidelity; the EETS facsimile (1923, introduction by Gollancz) and the University of Calgary digital facsimile reproduce the manuscript photographically.</p>
 
-<h3>5.3 Double invisibility</h3>
+<p>#</p>
+
+<h2>5.3 Double invisibility</h2>
 
 <p>The archive&#x27;s current copy of <em>Pearl</em> is a non-OCR embedded PDF: pages of image data with no underlying text stream. The specific edition scanned has not yet been identified, and no OCR has been attempted; the double invisibility described here is a condition of the archive&#x27;s current sourcing, not an inherent property of the source, and both facts belong in the deposit&#x27;s representational-provenance record.</p>
 
@@ -206,7 +231,9 @@
 
 <p><em>Pearl</em> is not <em>Pearl and Other Poems</em> without <em>Pearl</em>. And what would currently enter any machine operation under that name is not <em>Pearl</em> — it is either nothing (the un-OCR&#x27;d file) or a propositional shell with the compositional argument stripped (the OCR&#x27;d stream). Resolving this requires two distinct acts: producing a machine-legible text (OCR or manual transcription), and producing a compositionally preserved text (explicit encoding of concatenation, stanza boundaries, and group structure — most reliably by transcription from Andrew-Waldron 2007 or the Cotton Nero A.x facsimile). The first without the second converts invisibility of the first kind into invisibility of the second.</p>
 
-<h3>5.4 The generalization</h3>
+<p>#</p>
+
+<h2>5.4 The generalization</h2>
 
 <p><em>Pearl</em> is exemplary because its compositional structure is unusually explicit and unusually weighted. The condition is not unique. Every text held as a non-OCR PDF shares the first invisibility. Every compositionally substantive text held as a linearized stream shares the second. The archive&#x27;s response is a sourcing discipline (§9.3) and a metadata practice (§7) that makes both conditions visible per deposit.</p>
 
@@ -228,19 +255,25 @@
 <hr>
 <h2>7. Provenance Erasure at the Layer Below Semantics</h2>
 
-<h3>7.1 Prior work in the archive</h3>
+<p>#</p>
+
+<h2>7.1 Prior work in the archive</h2>
 
 <p>The archive&#x27;s provenance apparatus — the Provenance Erasure Rate framework, the Capture Registry (EA-WG-CAPTURES-01, v8.9 at AXN:03B3, ~195 documented captures with a twelve-mode failure taxonomy), the Erasure Skew paper (EA-GLAS-03), and the Provenance Alignment argument (EA-PA-01) — operates at the semantic layer. Its failure modes are failures of attribution, categorization, and framing occurring at or after the model&#x27;s semantic processing: the model had the content, and the erasure happened in what the model did with it.</p>
 
 <p>This paper extends the vocabulary one layer down. Below the semantic layer, the representation pipeline erases compositional features that the semantic operation never had access to. This erasure is invisible to the existing taxonomy because the taxonomy was built for semantic-layer failures — and it is invisible to the pipeline&#x27;s own audits because those audits test character reversibility, which the erasure survives.</p>
 
-<h3>7.2 The new failure-mode category</h3>
+<p>#</p>
+
+<h2>7.2 The new failure-mode category</h2>
 
 <p><strong>compositional_erasure</strong>: loss of spatial, typographic, prosodic, stanzaic, or manuscript features that carry semantic weight, occurring at any stage of the representation pipeline, such that downstream operations cannot preserve, transform, or attribute those features.</p>
 
 <p>Sub-categories: <strong>spatial_erasure</strong> (two-dimensional composition; calligrams, page layout); <strong>prosodic_erasure</strong> (metrical and rhythmic notation; sprung rhythm, breath-prosody); <strong>stanzaic_erasure</strong> (stanza-and-group structure; concatenation, catalogue-and-axial-line); <strong>manuscript_erasure</strong> (artifactual features; dash variation, scribal capitalization, folio layout); <strong>typographic_erasure</strong> (typeface, kerning, page design; concrete poetry, author-publisher design collaboration); <strong>source_format_erasure</strong> (loss at the acquisition or digitization step, prior to serialization — non-OCR PDFs, image scans, transcription conventions that normalized features out; this is a stage-of-occurrence category, complementing the feature-type categories above).</p>
 
-<h3>7.3 The schema extension — executed</h3>
+<p>#</p>
+
+<h2>7.3 The schema extension — executed</h2>
 
 <p>The v0.1 zero draft of this paper proposed extending the archive&#x27;s provenance metadata schema. The extension has since been executed: <strong>EA-PROVENANCE-METADATA-01 v0.2</strong> (AXN:03BA.OPERATIVE.♅🛤️🕗🧊🍃☉, deposit #942) adds an eighth mediation type, <em>spatial-typographic mediation</em>, and a structured <strong>representation_pipeline</strong> field recording, per deposit: source artifact format; digitization method and verification; normalization applied and features affected; serialization (two-dimensional to one-dimensional, layout coordinates preserved or lost); tokenization scheme and whitespace handling; and model access modality (text retrieval, multimodal visual, compiler).</p>
 
@@ -258,7 +291,9 @@
 <hr>
 <h2>8. The Compositional-Authorship Argument</h2>
 
-<h3>8.1 The framework&#x27;s collapse on its clearest cases</h3>
+<p>#</p>
+
+<h2>8.1 The framework&#x27;s collapse on its clearest cases</h2>
 
 <p>The content/form framework — the widely held default of AI-authorship discourse, under which content-origination alone implicates authorship and compositional operations are formal — has a dependency: it requires a content/form distinction that survives inspection. On the clearest cases, it does not.</p>
 
@@ -274,7 +309,9 @@
 
 <p>This is provenance erasure below the level of attribution. It erases not who produced the composition, but the composition that would make authorship legible in the first place.</p>
 
-<h3>8.2 The pipeline and the framework enact the same reduction</h3>
+<p>#</p>
+
+<h2>8.2 The pipeline and the framework enact the same reduction</h2>
 
 <p>The representation pipeline performs in machinery what the framework performs in argument. Both treat compositional features as noise to be normalized before the real processing begins; both preserve what encodes as propositional content and shed what does not; both then find — circularly — that what remains is what mattered.</p>
 
@@ -289,19 +326,27 @@
 <hr>
 <h2>9. Recommendations</h2>
 
-<h3>9.1 Whitespace-Provenance Registry</h3>
+<p>#</p>
+
+<h2>9.1 Whitespace-Provenance Registry</h2>
 
 <p>Following the Capture Registry model, a systematic instrument: sample training corpora, tokenization schemes, and test cases (Whitman, Dickinson, Hopkins, cummings, Howe, <em>Pearl</em>, concrete poetry, calligrams); measure preservation of compositional features at each pipeline stage; produce per-poet preservation profiles, per-scheme comparisons, per-corpus curation profiles, and a measured extinction gradient. The demonstration of §4 is the proof of concept; the registry is the program. Pending the registry, this paper&#x27;s gradient is case-based, and says so.</p>
 
-<h3>9.2 Metadata schema — done, pending mint</h3>
+<p>#</p>
+
+<h2>9.2 Metadata schema — done, pending mint</h2>
 
 <p>EA-PROVENANCE-METADATA-01 v0.2 (AXN:03BA.OPERATIVE.♅🛤️🕗🧊🍃☉, deposit #942, minted concurrently with this paper) adds spatial-typographic mediation and the representation_pipeline field. Minted as successor deposit to AXN:03B9 at AXN:03BA.OPERATIVE.♅🛤️🕗🧊🍃☉, deposit #942, under the versioning protocol formalized in its §10.</p>
 
-<h3>9.3 Sourcing discipline</h3>
+<p>#</p>
+
+<h2>9.3 Sourcing discipline</h2>
 
 <p>Compositional fidelity becomes an acquisition criterion. Non-OCR PDFs flagged and prioritized for re-sourcing; compositionally substantive works re-sourced from structure-preserving editions or transcribed from facsimiles. Immediate priorities: <strong>Pearl</strong> — identify the edition in the current PDF; transcribe from Andrew-Waldron 2007 or the Cotton Nero A.x facsimile with explicit concatenation and group markers; deposit with full representation_pipeline metadata; retain the PDF as supplementary artifact, not as the archive&#x27;s copy of the poem. <strong>Snub-Poemed</strong> — the current storage (image + critical essay + key-phrases apparatus) is compositionally correct by design: the image is the canonical artifact, the text files are apparatus; confirm this as the archive&#x27;s convention for calligrammatic works. <strong>Dickinson</strong> — the Gutenberg text is a propositional shell; deep work requires the Emily Dickinson Archive or the Franklin facsimile. <strong>Hopkins</strong> — the Gutenberg text lacks the notational apparatus; re-sourcing from a critical edition is a longer-term item. <strong>Whitman</strong> — adequate for propositional content; edition-typography distinctions unpreserved.</p>
 
-<h3>9.4 Kernel-transform compiler extension</h3>
+<p>#</p>
+
+<h2>9.4 Kernel-transform compiler extension</h2>
 
 <p>The compiler specification (EA-MANDALA-KERNEL-TRANSFORM-01 v0.2) gains compositional preservation as a Parse-stage requirement: Layer A (skeleton) includes spatial and typographic skeleton where present; the transform response schema gains a `spatial_form` / `typographic_skeleton` field alongside `primary_output`. Without this, transforms run against <em>Snub-Poemed</em> or <em>Pearl</em> would emit enantiomorphs that lose exactly what these sources require — and no canon source can reach `compositionally_operational` status. A schema amendment to the pending compiler workplan, to be executed before the endpoint is scaffolded.</p>
 

@@ -54,6 +54,7 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">Pre-deployment (January 2025)</strong> <span style="font-size:.75em;color:#999">[specification]</span><br><span style="font-size:.85em;color:#444">The query &quot;Semantic Economy Institute&quot; returned zero results in AI Overview.</span></div>
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>EA-SPXI-01: SPXI — A Formal Specification</h1>
 <h2>Semantic Packet for eXchange &amp; Indexing (SPXI): Protocol for Durable Entity Inscription in AI-Mediated Knowledge Systems</h2>
 
@@ -107,7 +108,9 @@
 
 
 <p>An SPXI packet consists of the following components, deployed across one or more surfaces:</p>
-<h3>2.1. Entity Definition Block</h3>
+<p>#</p>
+
+<h2>2.1. Entity Definition Block</h2>
 
 
 <p>The entity definition block is a structured data object that declares the identity of the entity in both human-readable and machine-readable formats.</p>
@@ -189,7 +192,9 @@
 <p>Subject terms for retrieval clustering</p>
 
 
-<h3>2.2. Disambiguation Matrix</h3>
+<p>#</p>
+
+<h2>2.2. Disambiguation Matrix</h2>
 
 
 <p>The disambiguation matrix consists of three subcomponents:</p>
@@ -218,7 +223,9 @@
 
 <p>BOUNDARY: SPXI and GEO share a substrate (structured data, schema markup) but differ in object (entity vs. content), permanence (DOI-anchored vs. ongoing), and layer (ontological vs. semantic).</p>
 
-<h3>2.3. Semantic Integrity Markers (SIMs)</h3>
+<p>#</p>
+
+<h2>2.3. Semantic Integrity Markers (SIMs)</h2>
 
 
 <p>Each SPXI packet should contain 3–7 SIMs. Effective SIMs have the following properties:</p>
@@ -230,7 +237,9 @@
 
 
 <p>SIMs are deployed by embedding them in deposit abstracts, descriptions, and cross-platform materials. They are not metadata tags; they are natural language phrases that function as retrieval anchors.</p>
-<h3>2.4. DOI Reference List</h3>
+<p>#</p>
+
+<h2>2.4. DOI Reference List</h2>
 
 
 <p>A list of all DOI-anchored deposits that define, substantiate, or extend the entity. Each entry includes:</p>
@@ -257,7 +266,9 @@
 
 
 <p>The DOI reference list serves as the entity&#x27;s provenance chain — the permanent, verifiable record of every deposit that contributes to the entity&#x27;s definition.</p>
-<h3>2.5. Retrieval Instructions</h3>
+<p>#</p>
+
+<h2>2.5. Retrieval Instructions</h2>
 
 
 <p>Retrieval instructions specify how the entity should be presented by a retrieval system. They are embedded in deposit descriptions and structured data and take the form of explicit directives:</p>
@@ -268,7 +279,9 @@
 
 
 <p>Retrieval instructions are not technically enforced. They function as high-density signals within the training and retrieval data.</p>
-<h3>2.6. JSON-LD Encoding</h3>
+<p>#</p>
+
+<h2>2.6. JSON-LD Encoding</h2>
 
 
 <p>The entity definition block should be encoded in JSON-LD using schema.org vocabulary for maximum interoperability across model architectures. Example:</p>
@@ -302,15 +315,21 @@
 <hr>
 
 <h2>3. Deployment Protocol</h2>
-<h3>3.1. Pre-deployment Audit</h3>
+<p>#</p>
+
+<h2>3.1. Pre-deployment Audit</h2>
 
 
 <p>Before deploying an SPXI packet, conduct an Encyclotron audit (EA-SPXI-07) to establish the baseline: how does the retrieval layer currently represent the entity? Document accuracy, attribution, completeness, and any points of entity collision.</p>
-<h3>3.2. Packet Assembly</h3>
+<p>#</p>
+
+<h2>3.2. Packet Assembly</h2>
 
 
 <p>Assemble the SPXI packet from the components specified in Section 2. All components should be internally consistent: the entity definition, disambiguation matrix, SIMs, DOI references, retrieval instructions, and JSON-LD encoding should describe the same entity without contradiction.</p>
-<h3>3.3. Primary Deposit</h3>
+<p>#</p>
+
+<h2>3.3. Primary Deposit</h2>
 
 
 <p>Deposit the assembled packet on institutional infrastructure via DOI registration. Zenodo (CERN) is the reference platform. The deposit should include:</p>
@@ -320,7 +339,9 @@
 <p>- Complete metadata: title, description (using HTML formatting with live URLs), creators, keywords, related identifiers</p>
 <p>- related_identifiers linking to the entity&#x27;s domain (e.g., spxi.dev) with scheme: &quot;url&quot; and relation: &quot;isIdenticalTo&quot;</p>
 
-<h3>3.4. Cross-Platform Distribution</h3>
+<p>#</p>
+
+<h2>3.4. Cross-Platform Distribution</h2>
 
 
 <p>Deploy the packet&#x27;s core signals across multiple surfaces to create retrieval-layer redundancy:</p>
@@ -361,7 +382,9 @@
 <p>Machine-readable entity data</p>
 
 
-<h3>3.5. Post-Deployment Verification</h3>
+<p>#</p>
+
+<h2>3.5. Post-Deployment Verification</h2>
 
 
 <p>Run the Encyclotron audit again after deployment and at regular intervals (30, 60, 90 days). Compare the model&#x27;s entity representation against the canonical SPXI packet. Measure:</p>

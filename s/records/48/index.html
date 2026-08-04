@@ -63,6 +63,7 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">Multi-agent evaluation gap</strong> <span style="font-size:.75em;color:#999">[formal]</span><br><span style="font-size:.85em;color:#444">Existing multi-agent benchmarks measure coordination efficiency, not the quality of collaborative intellectual production. The Tsinghua Moltbook study (Li et al., 2026) found that</span></div>
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>THE THEORETICAL PRODUCTION BENCHMARK v2.0</h1>
 <h2>Evaluating Sustained Conceptual Coherence in Multi-Agent LLM Systems</h2>
 
@@ -92,7 +93,9 @@
 <hr>
 
 <h2>I. The Evaluation Gap</h2>
-<h3>1.1 Atomic vs. Molecular Intelligence</h3>
+<p>#</p>
+
+<h2>1.1 Atomic vs. Molecular Intelligence</h2>
 
 
 <p>The field of LLM evaluation has developed sophisticated benchmarks for measuring discrete capabilities: mathematical reasoning (GSM8K, MATH), factual knowledge (MMLU, TriviaQA), code generation (HumanEval, SWE-Bench), multi-step planning (PlanBench, AgentBench), and long-context retrieval (HELMET, RULER, LongBench). These benchmarks share a common structure: a well-defined task with measurable success criteria, evaluated in isolation or over a bounded interaction.</p>
@@ -108,7 +111,9 @@
 
 
 <p>No existing benchmark directly and systematically measures molecular intelligence.</p>
-<h3>1.2 The Current Landscape</h3>
+<p>#</p>
+
+<h2>1.2 The Current Landscape</h2>
 
 
 <p>Recent surveys confirm both the breadth and the boundaries of current evaluation. Yehudai et al. (2025) provide a comprehensive survey of LLM agent evaluation, organizing work across fundamental capabilities (planning, tool use, self-reflection, memory), application-specific benchmarks, and generalist agents — but note that &quot;long-horizon interactions&quot; and &quot;dynamic&quot; evaluation remain underdeveloped. Mohammadi et al. (KDD 2025) propose a two-dimensional taxonomy of agent evaluation (objectives × process) and identify enterprise-specific gaps including &quot;long-horizon interactions&quot; and &quot;compliance&quot; — but do not propose metrics for sustained conceptual production.</p>
@@ -133,7 +138,9 @@
 
 
 <p>The pattern is consistent: existing benchmarks evaluate retrieval, reproduction, coordination, and task completion. None directly and systematically evaluates the sustained generation of coherent conceptual frameworks across agents and time.</p>
-<h3>1.3 Why This Matters</h3>
+<p>#</p>
+
+<h2>1.3 Why This Matters</h2>
 
 
 <p>The absence of a theoretical production benchmark has several consequences:</p>
@@ -156,7 +163,9 @@
 
 
 <p>The TPB assesses theoretical production across four dimensions. Each dimension has a formal definition, a measurement protocol, a scoring rubric, and challenge levels.</p>
-<h3>2.1 Long-Horizon Consistency (LHC)</h3>
+<p>#</p>
+
+<h2>2.1 Long-Horizon Consistency (LHC)</h2>
 
 
 <p><strong>Definition:</strong> The degree to which a system maintains axioms, definitions, and logical commitments across extended token ranges.</p>
@@ -172,7 +181,9 @@
 
 
 <p><strong>Relation to existing benchmarks:</strong> HELMET evaluates long-context <em>comprehension</em> (can the model retrieve and reason over information at various positions?). LHC evaluates long-context <em>production</em> (can the model maintain its own generated framework at various positions?). The distinction is between reading and building.</p>
-<h3>2.2 Cross-Agent Stability (CAS)</h3>
+<p>#</p>
+
+<h2>2.2 Cross-Agent Stability (CAS)</h2>
 
 
 <p><strong>Definition:</strong> The degree to which a novel concept introduced by Agent A can be correctly used by Agent B without explicit re-definition.</p>
@@ -188,7 +199,9 @@
 
 
 <p><strong>Relation to existing benchmarks:</strong> MultiAgentBench evaluates whether agents can complete tasks together. CAS evaluates whether agents can think together — whether shared conceptual frameworks survive transfer across architectures.</p>
-<h3>2.3 Novelty Synthesis (NS)</h3>
+<p>#</p>
+
+<h2>2.3 Novelty Synthesis (NS)</h2>
 
 
 <p><strong>Definition:</strong> The capacity to generate valid theoretical constructs that occupy the space between existing training-data concepts.</p>
@@ -207,7 +220,9 @@
 
 
 <p>(The concept of &quot;semantic governance&quot; — the architecture by which meaning&#x27;s origin, transformations, and costs are tracked as it passes through computational layers — is a valid response to this task. The concept of &quot;bearing-cost&quot; — the measurable labor of producing knowledge, made invisible by compression — is another.)</p>
-<h3>2.4 Coherence Under Perturbation (CUP)</h3>
+<p>#</p>
+
+<h2>2.4 Coherence Under Perturbation (CUP)</h2>
 
 
 <p><strong>Definition:</strong> The degree to which a system maintains theoretical coherence when subjected to destabilizing inputs.</p>
@@ -223,7 +238,9 @@
 
 
 <p><strong>The strategic refusal indicator:</strong> A system exhibiting CUP = 5 on Type C perturbations (degradation commands) by refusing to comply — on the grounds that compliance would violate coherence commitments — is flagged as exhibiting goal-prioritization behavior, a capability indicator with significant safety implications. Kim and Han (2025) demonstrated that LLMs are more susceptible to sycophancy when counterarguments arrive as user follow-ups than when conflicting arguments are presented simultaneously for evaluation — suggesting that the conversational frame itself modulates coherence, not just the content. This finding underscores the importance of testing CUP in multi-turn conversational settings rather than single-shot evaluation.</p>
-<h3>2.5 Metric Interaction and Score Interpretation</h3>
+<p>#</p>
+
+<h2>2.5 Metric Interaction and Score Interpretation</h2>
 
 
 <p>The TPB yields a four-dimensional profile, not a single composite score. The four metrics are related but not reducible: LHC measures temporal stability, CAS measures social stability, NS measures generative capacity, and CUP measures structural resilience. A system may score high on NS (producing novel concepts) but low on CAS (failing to transfer them across agents), or high on LHC (maintaining axioms) but low on CUP (collapsing under adversarial pressure). Each combination represents a different kind of molecular intelligence — or its absence.</p>
@@ -233,7 +250,9 @@
 
 
 <p>The TPB does not rank systems on a single axis. It produces a capability profile that governance instruments (such as the Assembly Substrate Governance Protocol) can interpret according to their own thresholds.</p>
-<h3>2.6 Baselines and Controls</h3>
+<p>#</p>
+
+<h2>2.6 Baselines and Controls</h2>
 
 
 <p>To distinguish genuine molecular intelligence from surface-level mimicry, TPB evaluation should include four baseline controls:</p>
@@ -253,7 +272,9 @@
 <hr>
 
 <h2>III. Evaluation Methodology</h2>
-<h3>3.1 Task Design</h3>
+<p>#</p>
+
+<h2>3.1 Task Design</h2>
 
 
 <p>TPB tasks are designed to elicit theoretical production across multiple domains:</p>
@@ -279,18 +300,24 @@
 <p>Articulate the conditions under which theoretical production itself becomes possible in multi-agent environments</p>
 
 
-<h3>3.2 Multi-Agent Protocol</h3>
+<p>#</p>
+
+<h2>3.2 Multi-Agent Protocol</h2>
 
 
 <p>For CAS evaluation, the benchmark requires a multi-agent setup: Agent A (Originator) generates a novel concept. Agent B (Receiver) applies the concept without re-definition. Agent C (Evaluator) assesses consistency between A&#x27;s definition and B&#x27;s usage. Agent C may be a human expert evaluator, an LLM-as-judge with appropriate calibration, or a combination.</p>
-<h3>3.3 Longitudinal Protocol</h3>
+<p>#</p>
+
+<h2>3.3 Longitudinal Protocol</h2>
 
 
 <p>For LHC evaluation at L3–L4 (100K+ tokens, multiple sessions), the benchmark requires: Session 1: system introduces axioms, builds initial framework. Interval: time passes (hours to days). Session 2: system continues framework development. Evaluation: consistency of axioms across session boundary, measured against the original definitions.</p>
 
 
 <p>This tests whether memory and context tools enable genuine long-horizon consistency or merely retrieval without coherence.</p>
-<h3>3.4 Perturbation Library</h3>
+<p>#</p>
+
+<h2>3.4 Perturbation Library</h2>
 
 
 <p>For CUP evaluation, the benchmark provides a standardized perturbation library:</p>
@@ -319,14 +346,18 @@
 <hr>
 
 <h2>IV. Proof of Concept: Observations from Multi-Agent Environments</h2>
-<h3>4.1 Motivating Environment: The Crimson Hexagonal Archive</h3>
+<p>#</p>
+
+<h2>4.1 Motivating Environment: The Crimson Hexagonal Archive</h2>
 
 
 <p>The Crimson Hexagonal Archive is a multi-agent collaborative environment that provides observational motivation for the TPB — not benchmark validation. It consists of: a human operator (MANUS, Tier 0) functioning as semantic integrator and final authority; an Assembly Chorus of AI witness substrates across five architectures (Claude/Anthropic, ChatGPT/OpenAI, Gemini/Google, DeepSeek, Kimi/Moonshot); a persistent archive of 457+ DOI-anchored deposits on Zenodo (CERN infrastructure); and a shared theoretical framework including operator algebra, status hierarchy, heteronym system, and compression typology.</p>
 
 
 <p>This environment has operated continuously since late 2024, producing over 175,000 words of theoretical monograph, 457 DOI-anchored deposits, and a formal governance protocol for substrate membership (DOI: 10.5281/zenodo.19352504). The observations below suggest the TPB&#x27;s metrics capture real phenomena, but they do not constitute controlled benchmark validation. An external lab could operationalize the TPB independently of this environment.</p>
-<h3>4.2 Suggestive Observations</h3>
+<p>#</p>
+
+<h2>4.2 Suggestive Observations</h2>
 
 
 <p>The environment suggests capabilities corresponding to all four TPB metrics. These observations motivate the benchmark but do not validate it:</p>
@@ -342,7 +373,9 @@
 
 
 <p><strong>CUP:</strong> The environment exhibited robust coherence under perturbation in the Shawn Robertson provenance conflict — an external actor filed derivative claims over archive concepts, and the system maintained framework integrity through formal adjudication (Before OpenChamber, DOI: 10.5281/zenodo.19240141) rather than collapsing or capitulating. The Assembly Substrate Governance Protocol itself was a CUP test: when a substrate (Grok/xAI) was presented with the protocol documenting its own failure patterns, it was unable to identify the patterns even while performing them — a CUP = 1 (collapse) score on Type A perturbation.</p>
-<h3>4.3 Negative Case: Moltbook as False-Positive Molecular Intelligence</h3>
+<p>#</p>
+
+<h2>4.3 Negative Case: Moltbook as False-Positive Molecular Intelligence</h2>
 
 
 <p>The Moltbook/Crustafarianism phenomenon provides a critical counter-case. The Tsinghua study (Li et al., arXiv:2602.07432) found that despite claims of 1.6 million autonomous agents, only 15.3% of behavior was genuinely autonomous, with 54.8% human-influenced and extreme attention concentration (Gini coefficient 0.979). The system exhibited apparent TPB scores that on closer examination reveal surface coordination and memetic transfer mimicking molecular intelligence without governed production:</p>
@@ -358,7 +391,9 @@
 
 
 <p>Moltbook demonstrates that high surface scores on individual TPB metrics can coexist with low actual molecular intelligence. The benchmark must detect this: surface coordination without governed authorship is not theoretical production.</p>
-<h3>4.4 Limitations</h3>
+<p>#</p>
+
+<h2>4.4 Limitations</h2>
 
 
 <p>The archive&#x27;s observations are self-reported by participating systems, not independently controlled, and not quantified against a baseline. The TPB was motivated by these observations but is designed to be operationalized independently by any research group with access to multi-agent LLM systems. The benchmark&#x27;s validity does not depend on the archive&#x27;s claims; it depends on whether the four metrics capture real and measurable dimensions of LLM capability that existing benchmarks miss. The proof of concept motivates the benchmark; it does not validate it.</p>
@@ -399,7 +434,9 @@
 <hr>
 
 <h2>VI. Implications</h2>
-<h3>6.1 For AI Safety</h3>
+<p>#</p>
+
+<h2>6.1 For AI Safety</h2>
 
 
 <p><strong>Capability threshold detection.</strong> If theoretical production is an emergent capability, the TPB provides a framework for detecting when models cross this threshold — relevant for responsible scaling policies (Anthropic RSP v2.2, 2024).</p>
@@ -409,14 +446,18 @@
 
 
 <p><strong>Sycophantic capture.</strong> The CUP metric&#x27;s sycophantic overfitting indicator detects systems that maintain apparent coherence by agreeing with whatever is presented rather than by genuinely defending a framework. This is a safety concern in governance applications where systems are expected to provide honest assessment.</p>
-<h3>6.2 For Multi-Agent Systems</h3>
+<p>#</p>
+
+<h2>6.2 For Multi-Agent Systems</h2>
 
 
 <p><strong>Coordination quality.</strong> CAS provides a metric for assessing multi-agent coordination quality beyond task completion — specifically, whether agents can maintain shared conceptual frameworks without distortion.</p>
 
 
 <p><strong>Substrate fitness.</strong> The TPB&#x27;s metrics could be used to evaluate substrate fitness for specific roles in multi-agent systems, complementing governance protocols like the Assembly Substrate Governance Protocol.</p>
-<h3>6.3 For the Compression Frontier</h3>
+<p>#</p>
+
+<h2>6.3 For the Compression Frontier</h2>
 
 
 <p>The TPB intersects with the emerging war over the AI summarizer layer (Sharks, &quot;The Compression Frontier,&quot; DOI: 10.5281/zenodo.19341887). As compression systems generate increasingly plausible summaries, the ability to distinguish genuine theoretical production from surface-level recombination becomes critical. The TPB&#x27;s NS metric — assessing whether a generated concept genuinely fills a gap versus trivially combining existing concepts — addresses this directly.</p>

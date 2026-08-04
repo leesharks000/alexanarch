@@ -56,6 +56,7 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">Veil mode click behavior</strong> <span style="font-size:.75em;color:#999">[genre]</span><br><span style="font-size:.85em;color:#444">toggles the footnote into the section&#x27;s</span></div>
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>Footnote Architecture</h1>
 
 
@@ -67,7 +68,9 @@
 <hr>
 
 <h2>The data model</h2>
-<h3>Numbering is GLOBAL, not section-local</h3>
+<p>#</p>
+
+<h2>Numbering is GLOBAL, not section-local</h2>
 
 
 <p>Footnotes in <em>The Secret Book of Walt</em> are numbered <strong>1 through 158</strong> across</p>
@@ -121,7 +124,9 @@
 <p>Body-text references to these numbers can appear in <strong>any</strong> section. The</p>
 <p>single source of truth is therefore a <strong>global footnote map</strong>, built once at</p>
 <p>load time by walking every section.</p>
-<h3>NOT every superscript is a footnote</h3>
+<p>#</p>
+
+<h2>NOT every superscript is a footnote</h2>
 
 
 <p>The text uses Unicode superscripts (¹²³⁴⁵⁶⁷⁸⁹⁰) for two purposes:</p>
@@ -154,7 +159,9 @@
 
 <p>This rule is non-negotiable. Breaking it makes ticket references like G⁴⁶</p>
 <p>clickable as fake footnotes, which has happened in past iterations.</p>
-<h3>Paragraph-level footnote definitions</h3>
+<p>#</p>
+
+<h2>Paragraph-level footnote definitions</h2>
 
 
 <p>A footnote definition is a paragraph object of the form:</p>
@@ -175,7 +182,9 @@
 <hr>
 
 <h2>The component model</h2>
-<h3>useGlobalFnMap(rootData) — single source of truth</h3>
+<p>#</p>
+
+<h2>useGlobalFnMap(rootData) — single source of truth</h2>
 
 
 <p>A hook (or pure function) that walks the entire data object and produces:</p>
@@ -195,7 +204,9 @@
 
 <p>Built <strong>once</strong> per book, memoized by the data object identity. Built on the</p>
 <p>client (no server-side preprocessing required). Fast — Walt has 158 entries.</p>
-<h3>&lt;FootnotedText text glossaryLink isVeil onFnClick visibleFns /&gt; — universal renderer</h3>
+<p>#</p>
+
+<h2>&lt;FootnotedText text glossaryLink isVeil onFnClick visibleFns /&gt; — universal renderer</h2>
 
 
 <p>Replaces the legacy Leaf component for <strong>all</strong> body-text rendering in</p>
@@ -218,13 +229,17 @@
 <p>but click handlers and keyboard handlers are not bound. Pierce mode exists</p>
 <p>to give a quieter reading experience; the markers still indicate &quot;there is</p>
 <p>apparatus here&quot; without offering it.</p>
-<h3>&lt;InlineFootnote text fnColor depth /&gt; — popup display</h3>
+<p>#</p>
+
+<h2>&lt;InlineFootnote text fnColor depth /&gt; — popup display</h2>
 
 
 <p>The visible footnote body when a marker is clicked. Renders below the</p>
 <p>parent paragraph with a thin left rule, the footnote text, and (optionally)</p>
 <p>a close button. Uses fnColor for the marker rule.</p>
-<h3>Where the components live</h3>
+<p>#</p>
+
+<h2>Where the components live</h2>
 
 
 <p>Component</p>

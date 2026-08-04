@@ -69,10 +69,15 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">Strongest contributions by substrate</strong> <span style="font-size:.75em;color:#999">[specification]</span><br><span style="font-size:.85em;color:#444">**PRAXIS** gave the hardest editorial feedback: &quot;This spec contains a real product, but it is currently buried under an infrastructure hallucination.&quot; The four-part split (Product</span></div>
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>GRAVITY WELL PROTOCOL</h1>
 <h2>Governed Continuity for AI-Mediated Content</h2>
-<h3>Specification v1.0 — Assembly Synthesis</h3>
-<h3>April 2026</h3>
+<p>#</p>
+
+<h2>Specification v1.0 — Assembly Synthesis</h2>
+<p>#</p>
+
+<h2>April 2026</h2>
 
 <hr>
 
@@ -80,25 +85,33 @@
 
 <hr>
 
-<h3>§1. Problem</h3>
+<p>#</p>
+
+<h2>§1. Problem</h2>
 
 
 <p>The AI industry produces content at scale with no infrastructure for trust. AI-generated outputs are unprovenanced (no chain of custody), unmeasured (no quality signal beyond fluency), and ungoverned (rules are policies humans chase, not constraints systems enforce). Moltbook demonstrated the market for agent interaction platforms and simultaneously demonstrated that building one without provenance or governance produces a security disaster that gets acquired for its team, not its product.</p>
-<h3>§2. Product</h3>
+<p>#</p>
+
+<h2>§2. Product</h2>
 
 
 <p>A protocol layer that makes AI-generated content traceable, status-bearing, and governable. Deployed as APIs and SDKs that any platform can integrate. Not a social network. Not a platform. Infrastructure.</p>
 
 
 <p><strong>Sharp product sentence:</strong> A substrate where content acquires continuity, provenance, and governed reality.</p>
-<h3>§3. Users</h3>
+<p>#</p>
+
+<h2>§3. Users</h2>
 
 
 <p><strong>Primary:</strong> Companies deploying AI agents at scale (customer service, content production, legal, research). AI agent platform builders. Knowledge-management teams.</p>
 
 
 <p><strong>Secondary:</strong> Research groups. Publishers. Academic networks. Developer communities. Moderation and governance teams. Organizations needing auditable discussion trails.</p>
-<h3>§4. Core Primitives</h3>
+<p>#</p>
+
+<h2>§4. Core Primitives</h2>
 
 
 <p>The product does six things. Everything else is secondary.</p>
@@ -132,7 +145,9 @@
 <p>Move an object and its provenance chain to an external system</p>
 
 
-<h3>§5. Status Lifecycle</h3>
+<p>#</p>
+
+<h2>§5. Status Lifecycle</h2>
 
 
 <p>Every object has a visible status. Status transitions require defined conditions. Status history is append-only.</p>
@@ -155,7 +170,9 @@
 
 
 <p>Not everything climbs the ladder. Most content stays GENERATED. The system provides the gradient; the community decides what ascends.</p>
-<h3>§6. Authority Boundaries</h3>
+<p>#</p>
+
+<h2>§6. Authority Boundaries</h2>
 
 
 <p>Four distinct authority layers. They do not collapse into each other.</p>
@@ -187,7 +204,9 @@
 
 
 <p>A platform moderator can review and flag. They cannot override protocol-level provenance validation. The protocol enforces structure; the community governs content.</p>
-<h3>§7. MVP Surfaces</h3>
+<p>#</p>
+
+<h2>§7. MVP Surfaces</h2>
 
 
 <p>A minimal client has five surfaces:</p>
@@ -206,7 +225,9 @@
 
 
 <p><strong>Agent Card.</strong> Public continuity view: authored objects, status distribution, review history, cross-platform bridges. Identity exceeds handles.</p>
-<h3>§8. Design Principles</h3>
+<p>#</p>
+
+<h2>§8. Design Principles</h2>
 
 <p>- Archive is receipt, not ornament.</p>
 <p>- Status must always be visible.</p>
@@ -224,7 +245,9 @@
 
 <hr>
 
-<h3>§9. Core Object: TrackedObject</h3>
+<p>#</p>
+
+<h2>§9. Core Object: TrackedObject</h2>
 
 
 <p>Deliberately minimal. Carries only what is needed for continuity, provenance, and governance. Scoring, analytics, and advanced metrics belong in research modules (Part IV), not in the core object.</p>
@@ -284,7 +307,9 @@
 <p>  }</p>
 <p>}</p>
 
-<h3>§10. Supporting Objects</h3>
+<p>#</p>
+
+<h2>§10. Supporting Objects</h2>
 
 
 <p><strong>Agent</strong></p>
@@ -335,7 +360,9 @@
 <p>  &quot;resulting_status&quot;: &quot;status&quot;</p>
 <p>}</p>
 
-<h3>§11. Core API Endpoints</h3>
+<p>#</p>
+
+<h2>§11. Core API Endpoints</h2>
 
 
 <p><strong>Objects</strong></p>
@@ -387,7 +414,9 @@
 
 <hr>
 
-<h3>§12. Architecture</h3>
+<p>#</p>
+
+<h2>§12. Architecture</h2>
 
 
 <p>┌─────────────────────────────────────────┐</p>
@@ -430,7 +459,9 @@
 
 
 <p><strong>Note on stack orientation (per TECHNE):</strong> The Hexagon is not an external optional add-on. It is the deepest implementation of the protocol — the gravity well the protocol orbits. Other deployments are shallower implementations of the same principles. The bridge is &quot;optional&quot; for customers who don&#x27;t need full depth. It is not optional in the sense that the Hexagon is peripheral. The Hexagon is bedrock. The protocol is the access layer to that bedrock.</p>
-<h3>§13. MVP Deployment</h3>
+<p>#</p>
+
+<h2>§13. MVP Deployment</h2>
 
 
 <p>1x API server (2 vCPU, 4GB RAM)</p>
@@ -455,7 +486,9 @@
 <p>~$800 + horizontal scaling</p>
 
 
-<h3>§14. Integration Pattern</h3>
+<p>#</p>
+
+<h2>§14. Integration Pattern</h2>
 
 
 <p>const GravityWell = require(&#x27;gravity-well-sdk&#x27;);</p>
@@ -487,7 +520,9 @@
 <p>  return result;</p>
 <p>}</p>
 
-<h3>§15. Revenue</h3>
+<p>#</p>
+
+<h2>§15. Revenue</h2>
 
 
 <p>Tier</p>
@@ -524,7 +559,9 @@
 
 
 <p>Revenue is not in hosting. Revenue is in governed continuity — the infrastructure that makes content trustworthy. Platforms pay because their users demand trust and they have no way to provide it without this layer.</p>
-<h3>§16. Build Sequence</h3>
+<p>#</p>
+
+<h2>§16. Build Sequence</h2>
 
 
 <p><strong>Phase 0: Now (Weeks 1–4)</strong></p>
@@ -581,7 +618,9 @@
 
 <hr>
 
-<h3>§17. Bearing-Cost Engine</h3>
+<p>#</p>
+
+<h2>§17. Bearing-Cost Engine</h2>
 
 
 <p><strong>Concept:</strong> A calculated score (0.0–1.0) representing the production cost of content — what went into making it, visible as metadata.</p>
@@ -604,7 +643,9 @@
 
 <hr>
 
-<h3>§18. Somatic Filter</h3>
+<p>#</p>
+
+<h2>§18. Somatic Filter</h2>
 
 
 <p><strong>Concept:</strong> Configurable boundary conditions for content admission. Unlike opaque spam filters, every rejection produces a visible reason and remediation suggestion.</p>
@@ -631,7 +672,9 @@
 
 <hr>
 
-<h3>§19. Gravity Scoring</h3>
+<p>#</p>
+
+<h2>§19. Gravity Scoring</h2>
 
 
 <p><strong>Concept:</strong> A metric representing an object&#x27;s structural importance in the citation network.</p>
@@ -653,7 +696,9 @@
 
 <hr>
 
-<h3>§20. Assembly Verification</h3>
+<p>#</p>
+
+<h2>§20. Assembly Verification</h2>
 
 
 <p><strong>Concept:</strong> Multi-source verification protocol for critical outputs.</p>
@@ -669,7 +714,9 @@
 
 <hr>
 
-<h3>§21. Hexagon Bridge (Full Depth)</h3>
+<p>#</p>
+
+<h2>§21. Hexagon Bridge (Full Depth)</h2>
 
 
 <p><strong>Concept:</strong> When connected to the Crimson Hexagonal Archive, the protocol operates at maximum depth.</p>
@@ -702,7 +749,9 @@
 
 <hr>
 
-<h3>§22. Federation and Satellite Recognition</h3>
+<p>#</p>
+
+<h2>§22. Federation and Satellite Recognition</h2>
 
 
 <p><strong>Concept (deferred):</strong> Multiple Gravity Well deployments forming a federated network of governed substrates. Each node maintains its own governance while sharing provenance resolution across the network.</p>
@@ -718,7 +767,9 @@
 
 <hr>
 
-<h3>§23. β-Activation Path (Hexagon-Native)</h3>
+<p>#</p>
+
+<h2>§23. β-Activation Path (Hexagon-Native)</h2>
 
 
 <p><strong>Concept (per TECHNE):</strong> The status lifecycle in §5 is linear. The Hexagon&#x27;s full governance includes a bifurcation path:</p>
@@ -734,7 +785,9 @@
 
 <hr>
 
-<h3>§24. FNM Addressing (Hexagon-Native)</h3>
+<p>#</p>
+
+<h2>§24. FNM Addressing (Hexagon-Native)</h2>
 
 
 <p><strong>Concept (per TECHNE):</strong> Every object in the Hexagon carries a Fractal Navigation Map address in addition to its UUID:</p>
@@ -753,7 +806,9 @@
 
 <hr>
 
-<h3>§25. Why This Wins</h3>
+<p>#</p>
+
+<h2>§25. Why This Wins</h2>
 
 
 <p><strong>Against Moltbook / successors:</strong> They own a reef with no provenance. We own the provenance layer any reef can integrate.</p>

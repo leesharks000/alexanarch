@@ -102,6 +102,7 @@ Archives reconstructed after destructive platform removal survive as mixtures: c
 
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>EA-LACUNA-PROTOCOL-01 v1.0: The Lacuna Mark — Marking Compression Damage as Constitutive in Persistent Scholarly Archives</h1>
 
 <h2>Abstract</h2>
@@ -158,7 +159,9 @@ Archives reconstructed after destructive platform removal survive as mixtures: c
 
 <h2>IV. The Protocol</h2>
 
-<h3>IV.1 The registry status object</h3>
+<p>#</p>
+
+<h2>IV.1 The registry status object</h2>
 
 <p>Every deposit carries a `body_status` object. The reference structure (v1.1 schema, superseding the flat v1.0 form used in the initial field-write):</p>
 
@@ -195,7 +198,9 @@ Archives reconstructed after destructive platform removal survive as mixtures: c
 
 <p><strong>(c) The adjudication gate (against the Lacuna Fallacy).</strong> The Pristine Fallacy has an inverse: misclassifying a genuinely complete short work as damaged. Any assignment of `current_lacuna: true` — and any <em>reversal</em> of a complete classification — REQUIRES recorded adjudication (`adjudicator`, `adjudicated_at`) before the status is committed. Automated audit proposes; adjudication disposes.</p>
 
-<h3>IV.2 The derivative marking stack</h3>
+<p>#</p>
+
+<h2>IV.2 The derivative marking stack</h2>
 
 <p>At every compression boundary, a lacuna-class witness&#x27;s derivative must carry its status in <strong>multiple independent channels</strong>, because each channel fails differently:</p>
 
@@ -230,7 +235,9 @@ COMPRESSION SCHEMA: &lt;schema id&gt; (lacuna variant)</pre>
 
 <p><strong>Non-PDF layers</strong> (Schema B/C, normative direction): plaintext corpus extractions carry the status block as a header line plus the §LACUNA statement in-text; knowledge-graph entries carry the typed completeness property; HTML surfaces carry a banner plus meta/JSON-LD. The lacuna must not be lost when the PDF is stripped to text.</p>
 
-<h3>IV.3 Audit obligations and decision rules</h3>
+<p>#</p>
+
+<h2>IV.3 Audit obligations and decision rules</h2>
 
 <p>The Lacuna is a derived mark; deriving it obligates the archive to a methodology, not a fixed algorithm:</p>
 
@@ -252,7 +259,9 @@ COMPRESSION SCHEMA: &lt;schema id&gt; (lacuna variant)</pre>
 <div style="font-family:var(--mono);font-size:.8em">| No body witness survives | unavailable | registry_only |</div>
 <div style="font-family:var(--mono);font-size:.8em">| Evidence insufficient | unknown | undetermined |</div>
 
-<h3>IV.4 The recovery lifecycle</h3>
+<p>#</p>
+
+<h2>IV.4 The recovery lifecycle</h2>
 
 <p>Recovery does not erase the Lacuna from provenance. The lifecycle:</p>
 
@@ -266,7 +275,9 @@ COMPRESSION SCHEMA: &lt;schema id&gt; (lacuna variant)</pre>
 
 <p>Lacuna derivatives are timestamped snapshots of the archive&#x27;s state at a compression boundary. When the underlying witness changes, a superseding derivative is generated and the old one is kept as evidence of the prior state — it is a historically valid representation of the archive before recovery.</p>
 
-<h3>IV.5 Normative conformance</h3>
+<p>#</p>
+
+<h2>IV.5 Normative conformance</h2>
 
 <p>A conforming implementation:</p>
 

@@ -48,6 +48,7 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">The metadata record</strong> <span style="font-size:.75em;color:#999">[specification]</span><br><span style="font-size:.85em;color:#444">the structured description of what the DOI identifies</span></div>
 
 <h2>Full Text</h2>
+
 <div class="ft"><p>&lt;!-- SPXI PROVENANCE BLOCK — DO NOT REMOVE</p>
 <p>@type: ScholarlyArticle</p>
 <p>@identifier: AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝</p>
@@ -82,7 +83,9 @@
 
 <hr>
 
-<h3>Evidence Legend</h3>
+<p>#</p>
+
+<h2>Evidence Legend</h2>
 
 <p>- <strong>[Observed]</strong>: directly documented by API responses, HTTP status codes, or automated inventory.</p>
 <p>- <strong>[Inferred]</strong>: structural explanation supported by observed patterns.</p>
@@ -134,7 +137,9 @@
 
 <p>On June 22, 2026, a systematic sweep queried DataCite&#x27;s API (`https://api.datacite.org/dois/{DOI}`) for all 1,817 DOIs. The sweep was conducted via ORCID query (399 DOIs), heteronym creator-name queries across 15 distinct scholarly names (307 additional), and individual DOI lookups for the remainder.</p>
 
-<h3>3.1 Results [Observed]</h3>
+<p>#</p>
+
+<h2>3.1 Results [Observed]</h2>
 
 <div style="font-family:var(--mono);font-size:.8em">| Category | Count | Percentage |</div>
 <p>|---|---|---|</p>
@@ -148,7 +153,9 @@
 
 <p>The 871 severed DOIs return HTTP 404 from DataCite&#x27;s public API. No title. No subjects. No description. No creator. No date. No relatedIdentifiers.</p>
 
-<h3>3.2 The HTTP Status Code Distinction</h3>
+<p>#</p>
+
+<h2>3.2 The HTTP Status Code Distinction</h2>
 
 <p>Two infrastructure layers return distinct codes for these records:</p>
 
@@ -160,7 +167,9 @@
 
 <h2>4. The Stripping Pattern [Observed]</h2>
 
-<h3>4.1 DOI type, not content type</h3>
+<p>#</p>
+
+<h2>4.1 DOI type, not content type</h2>
 
 <p>The stripping correlates with DOI type. Zenodo assigns each deposit two DOIs: a <strong>concept DOI</strong> (persistent across versions) and a <strong>version DOI</strong> (specific to each upload).</p>
 
@@ -185,7 +194,9 @@
 
 <p>The probability of public metadata survival was strongly associated with DOI role (version vs. concept) and showed no observed association with the content categories represented by the works [Observed]. The archive contains theoretical papers, empirical studies, datasets, creative works, specifications, and poems. All categories experienced the same ~50% stripping rate. A human content moderator reviewing works for scope would delete both DOIs for a given deposit. The selective stripping of one DOI type indicates an automated process, not an editorial decision [Inferred].</p>
 
-<h3>4.2 Metadata-as-content</h3>
+<p>#</p>
+
+<h2>4.2 Metadata-as-content</h2>
 
 <p>The DOI registration system treats metadata as peripheral descriptive attributes. This case demonstrates that metadata <em>is</em> content.</p>
 
@@ -195,7 +206,9 @@
 
 <p>For the 871 severed DOIs, equivalent metadata is absent from DataCite&#x27;s public layer. This includes content that existed <em>only</em> as metadata — poems typed into keyword fields, critical framings typed into description fields, citation relationships typed into relatedIdentifiers. These were not downloadable files. They were structured data in the DOI registration system, and the DOI registration system no longer serves them.</p>
 
-<h3>4.3 Unique works</h3>
+<p>#</p>
+
+<h2>4.3 Unique works</h2>
 
 <p>851 of the 871 severed DOIs are unique works: they share no title with any preserved DOI and are not an alternate version of a preserved record. &quot;Unique&quot; means no other DOI in the audited inventory shares the same title and no `IsVersionOf` relation connects the severed DOI to a preserved one.</p>
 

@@ -58,6 +58,7 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">Surface Weather Station</strong> <span style="font-size:.75em;color:#999">[]</span><br><span style="font-size:.85em;color:#444"></span></div>
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>Compositional Defiguration: A Methodology for Measuring Public-Surface Visibility of Scholarly Corpora</h1>
 
 <p><strong>Specification v1.0 of the Surface Weather Station instrument</strong></p>
@@ -106,7 +107,9 @@
 
 <h2>3. The five signals</h2>
 
-<h3>3.1 Visibility (V) — can the intended object be retrieved at all?</h3>
+<p>#</p>
+
+<h2>3.1 Visibility (V) — can the intended object be retrieved at all?</h2>
 
 <p>Coded on a five-point scale:</p>
 
@@ -116,7 +119,9 @@
 <p>- <strong>0.25</strong> — fragmentary mention</p>
 <p>- <strong>0.00</strong> — absent or completely displaced by a confuser</p>
 
-<h3>3.2 Anchor alignment (A) — does the visible result point to the currently authoritative object?</h3>
+<p>#</p>
+
+<h2>3.2 Anchor alignment (A) — does the visible result point to the currently authoritative object?</h2>
 
 <p>- <strong>1.00</strong> — current canonical page</p>
 <p>- <strong>0.75</strong> — current authorized mirror that points back correctly</p>
@@ -126,7 +131,9 @@
 
 <p>This is the axis that distinguishes <strong>semantic survival</strong> from <strong>address survival</strong>. The conceptual organ can be intact while its institutional anchor has been revoked or relocated.</p>
 
-<h3>3.3 Figural integrity (F) — how much of the expected topology survives?</h3>
+<p>#</p>
+
+<h2>3.3 Figural integrity (F) — how much of the expected topology survives?</h2>
 
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> F_i = ( w_N·N + w_P·P + w_D·D + w_H·H + w_R·R ) / ( w_N + w_P + w_D + w_H + w_R )</blockquote>
 
@@ -134,7 +141,9 @@
 
 <p><strong>v1.0 default weights</strong>: w_N = 1.0, w_P = 1.5, w_D = 2.0, w_H = 1.0, w_R = 1.5. (Subject to revision against v1.1 calibration.)</p>
 
-<h3>3.4 Compositional lift (C) — does the object surface only when directly invoked?</h3>
+<p>#</p>
+
+<h2>3.4 Compositional lift (C) — does the object surface only when directly invoked?</h2>
 
 <p>Five query forms, scored independently:</p>
 
@@ -146,7 +155,9 @@
 
 <p>An object found only by exact phrase has low compositional lift. An object selected when the broader problem is queried — without the coined term being supplied — has high lift. This is the difference between <strong>indexed</strong> and <strong>installed</strong>.</p>
 
-<h3>3.5 Redundant substrate breadth (R_s) — how many independent surfaces carry enough structure to reconstruct?</h3>
+<p>#</p>
+
+<h2>3.5 Redundant substrate breadth (R_s) — how many independent surfaces carry enough structure to reconstruct?</h2>
 
 <p>Count domains, but discount near-duplicates. Pages all generated from one registry count as one substrate, not five. Five candidate categories of substrate:</p>
 
@@ -160,37 +171,49 @@
 
 <h2>4. Derived macro-indicators</h2>
 
-<h3>4.1 Link Fade</h3>
+<p>#</p>
+
+<h2>4.1 Link Fade</h2>
 
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> LF_i = 1 − A_i</blockquote>
 
 <p>Address loss only. Does not measure conceptual loss.</p>
 
-<h3>4.2 Ghost Survival</h3>
+<p>#</p>
+
+<h2>4.2 Ghost Survival</h2>
 
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> GS_i = V_i · (1 − A_i)</blockquote>
 
 <p>High value: the concept remains visible while its current canonical anchor has disappeared. The work continues to live on the surface but through inappropriate hosts. <strong>This is presently one of the dominant states of the Crimson Hexagonal corpus</strong> post-Zenodo termination.</p>
 
-<h3>4.3 Compositional Defiguration</h3>
+<p>#</p>
+
+<h2>4.3 Compositional Defiguration</h2>
 
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> CD_i = V_i · (1 − F_i)</blockquote>
 
 <p>Visible distortion. Correctly assigns a low score to a completely absent object: absence is <em>occlusion</em>, not defiguration.</p>
 
-<h3>4.4 Compositional Bystanding</h3>
+<p>#</p>
+
+<h2>4.4 Compositional Bystanding</h2>
 
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> CB_i = V_i · F_i · (1 − C_i)</blockquote>
 
 <p>The object is present, coherent, retrievable when named — but is not being selected into broader composition. <strong>High bystanding scores are the most common false-positive in casual visibility reading</strong>: exact-query success can be mistaken for installation.</p>
 
-<h3>4.5 Composition Eligibility</h3>
+<p>#</p>
+
+<h2>4.5 Composition Eligibility</h2>
 
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> CE_i = V_i · F_i · C_i · R_{s,i}</blockquote>
 
 <p>The aggregate measure. Not a probability that any particular model will use the object — that depends on prompt, training cut, retrieval policy. It is a comparative measure of whether the public surface supplies enough coherent, multiply-anchored material for composition to be possible at all.</p>
 
-<h3>4.6 Scale Drift Index (SDI)</h3>
+<p>#</p>
+
+<h2>4.6 Scale Drift Index (SDI)</h2>
 
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> SDI = 1 − ( median(visible_reported_counts) / current_canonical_count )</blockquote>
 

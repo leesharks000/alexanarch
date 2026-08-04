@@ -64,6 +64,7 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">Valid JSON-LD</strong> <span style="font-size:.75em;color:#999">[specification]</span><br><span style="font-size:.85em;color:#444">Parseable by any JSON-LD 1.1 processor.</span></div>
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>SPXI-SITEMAP PROTOCOL v1.0</h1>
 <h2>Semantic Packet for eXchange &amp; Indexing — Sitemap Extension</h2>
 
@@ -106,23 +107,33 @@
 <hr>
 
 <h2>I. Design Principles</h2>
-<h3>1.1 Genre Respect</h3>
+<p>#</p>
+
+<h2>1.1 Genre Respect</h2>
 
 
 <p>The standard sitemap is a <strong>fixed genre</strong>. &lt;urlset&gt;, &lt;url&gt;, &lt;loc&gt;, &lt;lastmod&gt;, &lt;changefreq&gt;, &lt;priority&gt;. Google and Bing reject or ignore invalid tags inside &lt;url&gt;. The SPXI-Sitemap Protocol does not fight this constraint. It grafts semantic vasculature onto the crawl skeleton.</p>
-<h3>1.2 Dual Output</h3>
+<p>#</p>
+
+<h2>1.2 Dual Output</h2>
 
 
 <p>SPXI ⊇ sitemap. The protocol produces both the standard sitemap AND the semantic index. Sites implementing SPXI-Sitemap maintain a valid sitemap.xml as a strict subset of their crawl infrastructure.</p>
-<h3>1.3 Negative Space as First-Class Data</h3>
+<p>#</p>
+
+<h2>1.3 Negative Space as First-Class Data</h2>
 
 
 <p>The critical innovation is the spxi:negativeTag — explicit machine-readable declarations of what an entity is NOT. No existing crawl standard expresses exclusions. Disambiguation in existing systems is probabilistic; SPXI disambiguation is declarative.</p>
-<h3>1.4 Compression Survival</h3>
+<p>#</p>
+
+<h2>1.4 Compression Survival</h2>
 
 
 <p>Every entity declares spxi:semanticIntegrityMarker — canonical phrases that must survive LLM compression. These are the semantic checksums: if an AI&#x27;s summary of the entity drops all SIMs, the entity has been lost to paraphrase drift.</p>
-<h3>1.5 Provenance Over Assertion</h3>
+<p>#</p>
+
+<h2>1.5 Provenance Over Assertion</h2>
 
 
 <p>Claims are anchored by spxi:packetRef (DOI-linked deposits), not by assertion alone. The spxi:verificationLevel enum declares the epistemic status of each claim.</p>
@@ -130,7 +141,9 @@
 <hr>
 
 <h2>II. Vocabulary (Normative)</h2>
-<h3>2.1 Namespace</h3>
+<p>#</p>
+
+<h2>2.1 Namespace</h2>
 
 
 <p>Prefix: spxi:</p>
@@ -138,7 +151,9 @@
 
 
 <p>Until the spxi.dev domain resolves with a live vocabulary document, implementations MUST use an inline @context block.</p>
-<h3>2.2 Core Classes</h3>
+<p>#</p>
+
+<h2>2.2 Core Classes</h2>
 
 
 <p>Class</p>
@@ -165,8 +180,14 @@
 <p>A single collision record in the disambiguation matrix.</p>
 
 
-<h3>2.3 Core Properties</h3>
-<p>#### On spxi:SemanticIndex:</p>
+<p>#</p>
+
+<h2>2.3 Core Properties</h2>
+<p>#</p>
+
+<p>#</p>
+
+<h2>On spxi:SemanticIndex:</h2>
 
 
 <p>Property</p>
@@ -205,7 +226,11 @@
 <p>DOI of this specification.</p>
 
 
-<p>#### On spxi:IndexedEntity:</p>
+<p>#</p>
+
+<p>#</p>
+
+<h2>On spxi:IndexedEntity:</h2>
 
 
 <p>Property</p>
@@ -274,7 +299,11 @@
 <p>Collision records.</p>
 
 
-<p>#### On spxi:HolographicKernel:</p>
+<p>#</p>
+
+<p>#</p>
+
+<h2>On spxi:HolographicKernel:</h2>
 
 
 <p>Property</p>
@@ -295,7 +324,11 @@
 <p>DOI of the anchoring deposit.</p>
 
 
-<p>#### On spxi:DisambiguationEntry:</p>
+<p>#</p>
+
+<p>#</p>
+
+<h2>On spxi:DisambiguationEntry:</h2>
 
 
 <p>Property</p>
@@ -322,7 +355,9 @@
 <p>high | medium | low</p>
 
 
-<h3>2.4 Enumerations</h3>
+<p>#</p>
+
+<h2>2.4 Enumerations</h2>
 
 
 <p><strong>spxi:basinState:</strong></p>
@@ -378,11 +413,15 @@
 <hr>
 
 <h2>III. Layer 1: Sitemap.xml (Normative)</h2>
-<h3>3.1 Requirements</h3>
+<p>#</p>
+
+<h2>3.1 Requirements</h2>
 
 
 <p>The sitemap.xml MUST be valid per sitemaps.org 0.9. No custom tags inside &lt;url&gt;.</p>
-<h3>3.2 XHTML Link Extension</h3>
+<p>#</p>
+
+<h2>3.2 XHTML Link Extension</h2>
 
 
 <p>Each &lt;url&gt; entry that has a corresponding entity in the semantic index SHOULD include an xhtml:link pointing to the index:</p>
@@ -411,7 +450,9 @@
 <p>- type=&quot;application/ld+json&quot; signals the content type.</p>
 <p>- The href points to the site-level index. Per-page packets, if implemented, use a URL derived from the page path (e.g., /about/alice/spxi-packet.jsonld).</p>
 
-<h3>3.3 What NOT To Do</h3>
+<p>#</p>
+
+<h2>3.3 What NOT To Do</h2>
 
 <p>- Do NOT add custom XML elements inside &lt;url&gt;.</p>
 <p>- Do NOT add spxi: namespace tags to the sitemap.</p>
@@ -422,19 +463,27 @@
 <hr>
 
 <h2>IV. Layer 2: Semantic Index (Normative)</h2>
-<h3>4.1 File Location</h3>
+<p>#</p>
+
+<h2>4.1 File Location</h2>
 
 
 <p>/spxi-index.jsonld at the site root. MUST be accessible at https://{domain}/spxi-index.jsonld.</p>
-<h3>4.2 Content Type</h3>
+<p>#</p>
+
+<h2>4.2 Content Type</h2>
 
 
 <p>Response MUST include Content-Type: application/ld+json or application/json.</p>
-<h3>4.3 Structure</h3>
+<p>#</p>
+
+<h2>4.3 Structure</h2>
 
 
 <p>The document is a single JSON-LD object of type spxi:SemanticIndex. See §V for a complete reference implementation.</p>
-<h3>4.4 Size Constraints</h3>
+<p>#</p>
+
+<h2>4.4 Size Constraints</h2>
 
 <p>- Site kernel (compressionSurvivalSummary): ≤ 100 words.</p>
 <p>- Negative tags: each ≤ 200 characters.</p>

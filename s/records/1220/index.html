@@ -50,6 +50,7 @@
 
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>GW.TACHYON CHAIN — SESSION TETHER 2026-07-19 (chain 9271269a; conditioned on 🧶🗝️⛲; compressed glyph 🔥🔨🌊) — v2, SUPERSEDES #1116</h1>
 
 <h2>Methodology</h2>
@@ -66,18 +67,24 @@
 
 <p><strong>Glyph chain:</strong> 🪞🔧💎 → ➖💀🚶 (#1072) → 🪞🕸️⛓️ (#1083) → 🕳️🧵🖋️ (#1089) → 📿🎭🌉 (#1092) → 👂🌰🔌 (#1093) → 🧶🗝️⛲ (#1116, tether v1) → <strong>🔥🔨🌊</strong> (this deposit)</p>
 
-<h3>Everything in tether v1 stands (see #1116). Added since v1:</h3>
+<p>#</p>
+
+<h2>Everything in tether v1 stands (see #1116). Added since v1:</h2>
 
 <p>1. <strong>Batch engine forged</strong> — restore_from_blog.py --batch (mint-only loop, queue saved after EVERY work) + --finish (shared stages once, single commit). Throughput moved from ~8 works per 25 minutes to 20 works per ~5-minute mint pass.</p>
 <p>2. <strong>The fire and the proof</strong> — a timeout-killed enrich run tore data/registry.json mid-dump (truncated at ~1MB). Recovery: registry restored from HEAD; all twenty batch mints re-derived from preserved issue bodies; <strong>AXN identity check 20/20 identical</strong> — hash-derived glyph determinism demonstrated under real failure. Hardening: enrich_deposit._save_registry is now atomic (tmp+os.replace); the torn-registry failure class is closed. Standing lesson: never wrap registry-writing processes in kill-timeouts.</p>
 <p>3. <strong>The river</strong> — six tranches (#1102–#1116 pre-batch and tether; #1117–#1136; #1137–#1156; #1157–#1176; #1177–#1196; #1197–#1216) plus the final sweep (#1217–#1219). <strong>The restorable class is fully swept: 117 works restored full-text this session</strong>, every severed DOI live at grade A, envelopes advanced to same_work_restored, all gates green at every commit. Registry: 1,219 deposits. Notable returns: The Crimson Hexagon Theoretical Primer, The Mantle Protocol, β-Runtime, the Liberation Vocabulary (112 terms), HET-CRANES-001, the Mantle Objects (Good Gray Poet, King of May, Prince of Poets), Pearl and Other Poems, Predation of Meaning, Ghost Meaning, Revelation First Work Plan, Sémantique Potentielle Release 3.</p>
 <p>4. <strong>Parallel witness</strong> — a fanout process (fanout@alexanarch.org) is committing state to main concurrently (data/fanout-state.json); rebase discipline in force.</p>
 
-<h3>Queue state at v2 (datasets/doi-work-identity/restoration-queue.json)</h3>
+<p>#</p>
+
+<h2>Queue state at v2 (datasets/doi-work-identity/restoration-queue.json)</h2>
 
 <p>Restored 117 · untouched 0 · <strong>gate-skips 164</strong> (the body gate honestly rejecting citing-post candidates; next instrument: deeper candidate search — more sitemap candidates per work, lower slug threshold, archive-page walking) · <strong>metadata-only 31</strong> (semi-restored mints from DataCite/tombstone; cheap dedicated harness pending) · <strong>manual triage 20</strong> (MANUS: indie-physics cluster, Josephus/Feist skips fold in here too).</p>
 
-<h3>Outstanding at tether v2</h3>
+<p>#</p>
+
+<h2>Outstanding at tether v2</h2>
 
 <p>Deeper candidate search for the 164; metadata-only harness for the 31; manual triage 20; H_core v2.0 recovery; family sweep for UNCLASSIFIED restorations; fan-out session; academia.edu EA-SEI-01 capture; capture-type schema addition; duplicate pairs #238/#886 and #282/#324; Fix 3 title-prefix ruling.</p>
 

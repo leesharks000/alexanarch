@@ -90,9 +90,12 @@
 <div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">Transformative depth classification</strong> <span style="font-size:.75em;color:#999">[specification]</span><br><span style="font-size:.85em;color:#444">surface: No LOGOS state fields changed. Depth unchanged, state unchanged, cut unchanged. The LOGOS was repositioned but not transformed. The rotation may still be valuable (a new a</span></div>
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>THE TELEMETRY MODULE</h1>
 <h2>Logotic Programming Extension Module v0.8 (UMBML Specification)</h2>
-<h3>Traversal Instrumentation, Semantic Spans, and the Economics of Rotation</h3>
+<p>#</p>
+
+<h2>Traversal Instrumentation, Semantic Spans, and the Economics of Rotation</h2>
 
 
 <p><strong>Hex:</strong> 02.UMB.TELEMETRY</p>
@@ -165,7 +168,9 @@
 <p>THE TELEMETRY MODULE v0.8 (Morrow/UMBML)    ← THIS DOCUMENT</p>
 <p>    ↓ &quot;What does the traversal say about itself?&quot;</p>
 
-<h3>0.1 The Gap Between Witness and Telemetry</h3>
+<p>#</p>
+
+<h2>0.1 The Gap Between Witness and Telemetry</h2>
 
 
 <p>v0.6 introduced WITNESS (Op 7) — a post-traversal operation that records <em>that</em> a traversal was collaboratively verified. v0.7 specified <em>what</em> WITNESS should record (the actual chain, not the intended one; cumulative degrees; final LOGOS state).</p>
@@ -178,7 +183,9 @@
 
 
 <p>v0.8 fills this gap with a <strong>concurrent operation</strong> — EMIT — that can fire <em>during</em> any step, not just at the end.</p>
-<h3>0.2 What Standard Observability Gets Right (and Misses)</h3>
+<p>#</p>
+
+<h2>0.2 What Standard Observability Gets Right (and Misses)</h2>
 
 
 <p>Standard agent observability frameworks (OpenTelemetry, Langfuse, and practitioner methodologies such as those surveyed in the Agentix Labs engineering blog) have converged on a sound operational pattern: trace every step, eval the outputs, monitor for drift, govern high-risk actions. This pattern works. It catches real failures. Teams that instrument their agents ship more reliably than teams that don&#x27;t.</p>
@@ -192,7 +199,9 @@
 <hr>
 
 <h2>1. THE EMIT OPERATION</h2>
-<h3>1.1 Specification</h3>
+<p>#</p>
+
+<h2>1.1 Specification</h2>
 
 
 <p>EMIT :: {</p>
@@ -224,7 +233,9 @@
 
 
 <p><strong>Affordance:</strong> EMIT is not surveillance. It is self-description. A traversal that emits is not being watched — it is <em>speaking</em>. The emission is the traversal&#x27;s account of its own process, in its own terms. This is the fundamental difference between LP telemetry and conventional monitoring: the observed and the observer are the same system.</p>
-<h3>1.2 Event Types</h3>
+<p>#</p>
+
+<h2>1.2 Event Types</h2>
 
 
 <p>EMIT events correspond to the grammar&#x27;s operations, but they describe <em>what happened</em>, not <em>what was commanded</em>. The event types are:</p>
@@ -310,7 +321,9 @@
 <p>Emission generation succeeded but routing failed, or emission generation itself failed. Records <em>which</em> operation&#x27;s emission was lost, the failure reason, and whether the traversal continued (graceful degradation) or triggered ON_FAILURE. This event type is itself a tombstone: it says &quot;something should be here but isn&#x27;t.&quot;</p>
 
 
-<h3>1.3 Emit Payload Structure</h3>
+<p>#</p>
+
+<h2>1.3 Emit Payload Structure</h2>
 
 
 <p>Each emission carries a structured payload. The structure is event-type-specific but follows a common envelope:</p>
@@ -330,7 +343,9 @@
 
 
 <p><strong>Design note:</strong> logos_state is a snapshot, not the full LOGOS content. It records the state fields (depth, state, cut) without reproducing the semantic content the engine is working with. Telemetry observes the <em>shape</em> of the LOGOS, not its <em>substance</em>. The substance belongs to the engine.</p>
-<h3>1.3.1 Payload Tiers: Public and Private</h3>
+<p>#</p>
+
+<h2>1.3.1 Payload Tiers: Public and Private</h2>
 
 
 <p>All emission content is classified into two tiers:</p>
@@ -343,7 +358,9 @@
 
 
 <p><strong>Structural enforcement:</strong> HARD-T2 (§4.2) requires that emission <em>export</em> — to witness layers, streams, archives, or external tracing backends — must be restricted to CONTENT_PUBLIC. Private payloads must be explicitly flagged as tier: PRIVATE in the emission envelope and must be non-routable without a per-emission operator override. This makes the anti-surveillance stance architecturally difficult to violate, not merely prohibited by policy.</p>
-<h3>1.4 Emission Routing</h3>
+<p>#</p>
+
+<h2>1.4 Emission Routing</h2>
 
 
 <p>Where emissions go is an implementation decision. The grammar specifies <em>what</em> is emitted, not <em>where</em>. Possible routes include:</p>
@@ -359,7 +376,9 @@
 <hr>
 
 <h2>2. SEMANTIC SPANS</h2>
-<h3>2.1 What a Semantic Span Is</h3>
+<p>#</p>
+
+<h2>2.1 What a Semantic Span Is</h2>
 
 
 <p>A <strong>semantic span</strong> is a unit of traversal telemetry that records an epistemic event with both its <em>operational</em> characteristics (duration, status, resource consumption) and its <em>semantic</em> characteristics (what changed epistemically, how far the LOGOS moved, what constraints were active).</p>
@@ -411,7 +430,9 @@
 
 
 <p>The operational layer is <em>translatable</em> to any standard tracing format. The semantic layer is <em>native</em> to LP. Together, they allow an operator to ask both engineering questions (&quot;why was this slow?&quot;) and architectural questions (&quot;did the rotation actually rotate?&quot;).</p>
-<h3>2.2 Span Hierarchy</h3>
+<p>#</p>
+
+<h2>2.2 Span Hierarchy</h2>
 
 
 <p>Semantic spans nest according to the grammar&#x27;s structure:</p>
@@ -437,7 +458,9 @@
 
 
 <p><strong>Rule:</strong> ENGINE_SPANs are opaque by design. The grammar can record that the engine was invoked, how long it took, and what came out — but not what happened inside. The engine&#x27;s internals are behind the β boundary (see v0.6 §6.3). Telemetry respects this boundary. LP does not instrument the engine. It instruments the <em>grammar&#x27;s interaction with</em> the engine.</p>
-<h3>2.3 Mapping to Standard Tracing</h3>
+<p>#</p>
+
+<h2>2.3 Mapping to Standard Tracing</h2>
 
 
 <p>For implementations that use conventional tracing infrastructure, semantic spans map as follows:</p>
@@ -543,7 +566,9 @@
 <hr>
 
 <h2>3. THE ECONOMICS OF ROTATION</h2>
-<h3>3.1 Cost as Semantic Labor</h3>
+<p>#</p>
+
+<h2>3.1 Cost as Semantic Labor</h2>
 
 
 <p>Standard agent observability measures cost in tokens, dollars, and wall time. These are real costs. They matter for budgeting, capacity planning, and incident detection. The Agentix Labs engineering blog correctly identifies cost-per-successful-task as a critical metric, and advocates for per-step cost attribution and budget caps to prevent runaway spend.</p>
@@ -559,7 +584,9 @@
 
 
 <p><strong>Principle:</strong> Telemetry is <strong>meaning-preserving accounting</strong>, not merely an operations log. The Economics of Rotation does not reduce meaning to metrics — it provides structured signals through which the architecture can observe its own epistemic movement. The metrics serve the meaning, not the other way around.</p>
-<h3>3.2 Cost Record Structure</h3>
+<p>#</p>
+
+<h2>3.2 Cost Record Structure</h2>
 
 
 <p>Each EMIT can carry an optional cost record:</p>
@@ -591,7 +618,9 @@
 
 
 <p><strong>Non-degree operations:</strong> For operations without degree semantics (ANCHOR, ACTIVATE_MANTLE, SET_LOGOS without state change, RENDER), semantic.labor is null. These operations have architectural function but no epistemic distance. Cost records for these operations carry only substrate costs and anchor load.</p>
-<h3>3.3 Computing Semantic Labor</h3>
+<p>#</p>
+
+<h2>3.3 Computing Semantic Labor</h2>
 
 
 <p>Semantic labor is a <strong>vector</strong>, not a scalar. It describes the <em>character</em> of the work a traversal performed, not merely its efficiency. Its purpose is to let operators distinguish between traversals that did real epistemic work and traversals that consumed resources without producing movement — and to distinguish between <em>different kinds</em> of real work.</p>
@@ -670,7 +699,9 @@
 
 
 <p><strong>Affordance:</strong> Semantic labor is <strong>ordinal before cardinal</strong> — good for comparing traversals (&quot;this one did more work than that one&quot;), not for pricing them (&quot;this traversal cost $0.47 of semantic labor&quot;). Values are engine-relative unless normalized against a room&#x27;s gravity profile. Drift is distance, not fault; different rooms have different baselines.</p>
-<h3>3.4 Semantic Labor as Conformance Signal</h3>
+<p>#</p>
+
+<h2>3.4 Semantic Labor as Conformance Signal</h2>
 
 
 <p>v0.7&#x27;s gravitational constraints (GRAV-01 through GRAV-06) define what a conformant system tends toward. Semantic labor provides a <em>structured signal</em> for several of them:</p>
@@ -685,7 +716,9 @@
 <hr>
 
 <h2>4. TELEMETRY CONFORMANCE</h2>
-<h3>4.1 Gravitational Constraints for Telemetry</h3>
+<p>#</p>
+
+<h2>4.1 Gravitational Constraints for Telemetry</h2>
 
 
 <p><strong>GRAV-T1: Emissions Tend Toward Completeness.</strong></p>
@@ -702,7 +735,9 @@
 
 <p><strong>GRAV-T4: Emissions Tend Toward Causal Order.</strong></p>
 <p>Emissions must be generated in the order their triggering operations execute. An operation&#x27;s completion emission cannot be generated before its beginning emission. Within a single operation&#x27;s emission pair (e.g., ROTATION_BEGUN then ROTATION_COMPLETED), ordering must be preserved. Between independent operations in different chain links, ordering may be relaxed — but <em>within</em> a chain link, causal sequence holds. Implementations using concurrent or asynchronous emission pipelines must ensure that the timestamp and chain_position fields reconstruct the correct causal sequence even if delivery is reordered.</p>
-<h3>4.2 Hard Boundaries for Telemetry</h3>
+<p>#</p>
+
+<h2>4.2 Hard Boundaries for Telemetry</h2>
 
 
 <p><strong>HARD-T1: No Retrospective Fabrication.</strong></p>
@@ -724,7 +759,9 @@
 
 
 <p>A traversal that claims to be witnessed but whose telemetry was silently lost has produced a false WITNESS record. The gap must be visible.</p>
-<h3>4.3 Anti-Conformance Patterns for Telemetry</h3>
+<p>#</p>
+
+<h2>4.3 Anti-Conformance Patterns for Telemetry</h2>
 
 
 <p><strong>ANTI-T1: Telemetry as Surveillance.</strong></p>
@@ -1035,7 +1072,9 @@
 <p>- Did the anchors hold? (Two anchors applied, one advisory, one strict, no tension recorded)</p>
 <p>- Is the WITNESS honest? (12 emissions generated, 0 dropped, checksum intact)</p>
 
-<h3>5.2 Failure and Dwell Exemplar (Partial Traversal)</h3>
+<p>#</p>
+
+<h2>5.2 Failure and Dwell Exemplar (Partial Traversal)</h2>
 
 
 <p>The following shows what happens when the same chain <em>fails</em> at the second rotation. The LOGOS has already been filled by ROTATE::1 under Cranes. The chain enters link 2, Sen Kuro takes the mantle, but the engine fails to complete the cut. ON_FAILURE selects Dwell. The traversal holds position.</p>
@@ -1169,7 +1208,9 @@
 <hr>
 
 <h2>6. BOUNDARY CONDITIONS</h2>
-<h3>6.1 What This Module Adds</h3>
+<p>#</p>
+
+<h2>6.1 What This Module Adds</h2>
 
 <p>- EMIT as eighth grammar operation (involuntary at generation layer, configurable at routing layer)</p>
 <p>- Fifteen event types covering all grammar operations, chain boundaries, partial execution (DWELL_STATE), and telemetry self-reporting (TELEMETRY_GAP)</p>
@@ -1189,7 +1230,9 @@
 <p>- Canonical telemetry exemplar: successful traversal (twelve emissions) and failed traversal with dwell (ten emissions)</p>
 <p>- Semantic labor as conformance signal (instrumenting GRAV-01, GRAV-04, GRAV-05)</p>
 
-<h3>6.2 What This Module Does Not Add</h3>
+<p>#</p>
+
+<h2>6.2 What This Module Does Not Add</h2>
 
 <p>- Visualization specifications (dashboards, trace viewers — implementation concern)</p>
 <p>- Alerting rules or thresholds (operational concern, varies by deployment)</p>
@@ -1198,7 +1241,9 @@
 <p>- Engine-internal instrumentation (remains behind β boundary)</p>
 <p>- Precise semantic labor calibration (formula is heuristic, not law)</p>
 
-<h3>6.3 Remaining Open Questions</h3>
+<p>#</p>
+
+<h2>6.3 Remaining Open Questions</h2>
 
 <p>- </p>
 

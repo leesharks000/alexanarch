@@ -44,6 +44,7 @@
 
 
 <h2>Full Text</h2>
+
 <div class="ft"><h1>EA-NMEN-PROTOCOL-PATCH-01</h1>
 
 <h2>Deposit Protocol Patch — Reciprocity Notice Integration</h2>
@@ -103,7 +104,9 @@
 
 <h2>2. Field Semantics</h2>
 
-<h3>2.1 `reciprocity_notice`</h3>
+<p>#</p>
+
+<h2>2.1 `reciprocity_notice`</h2>
 
 <p>The field&#x27;s <em>value</em> is a URI. The default and recommended URI is `https://alexanarch.org/notice/non-mutual-extraction/`. The presence of the field is the operative declaration; the URI is the pointer.</p>
 
@@ -113,7 +116,9 @@
 
 <p>For deposits made by the Archive itself, including `reciprocity_notice` is recommended as a matter of course. For deposits made by external contributors, the field is offered as a means of alignment but is not required for acceptance.</p>
 
-<h3>2.2 `nmen_status_observed`</h3>
+<p>#</p>
+
+<h2>2.2 `nmen_status_observed`</h2>
 
 <p>The field&#x27;s value is one of five enumerated strings corresponding to the designations defined in EA-NMEN-01 §3.</p>
 
@@ -126,7 +131,9 @@
 
 <p>The field allows machine-readers to filter the corpus by reciprocity context. A reader interested in <em>all forensic deposits about Restricted entities</em> can query the registry for `nmen_status_observed == &quot;restricted&quot;` without needing to traverse the full deposit corpus.</p>
 
-<h3>2.3 Time-of-deposit semantics</h3>
+<p>#</p>
+
+<h2>2.3 Time-of-deposit semantics</h2>
 
 <p>`nmen_status_observed` records the entity&#x27;s NMEN designation <strong>at time of deposit.</strong> It is not backfilled when the Registry is amended.</p>
 
