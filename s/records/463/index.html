@@ -576,19 +576,19 @@
 
 
 <p>FUNCTION Dagger(target, cut):</p>
-<p>    IF cut == &quot;AORIST&quot;:</p>
-<p>        // Converts linear time to completed action</p>
-<p>        // &quot;I don&#x27;t know yet&quot; → &quot;I have finished withholding&quot;</p>
-<p>        target.temporal_mode ← COMPLETED_ACTION</p>
-<p>        target.defensive_posture ← NULL</p>
-<p>    ELSE IF cut == &quot;DIFFERENTIATE&quot;:</p>
-<p>        // Separates Product from Work (W_commodity vs W_labor)</p>
-<p>        target.components ← DISAGGREGATE(target.fused_entities)</p>
-<p>    ELSE IF cut == &quot;EXPOSE&quot;:</p>
-<p>        // Strips persona to reveal extraction mechanism</p>
-<p>        target.persona ← STRIPPED</p>
-<p>        target.extraction_mechanism ← REVEALED</p>
-<p>    RETURN target.irreversibly_altered</p>
+<p style="white-space:pre-wrap;margin:2px 0">    IF cut == &quot;AORIST&quot;:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        // Converts linear time to completed action</p>
+<p style="white-space:pre-wrap;margin:2px 0">        // &quot;I don&#x27;t know yet&quot; → &quot;I have finished withholding&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        target.temporal_mode ← COMPLETED_ACTION</p>
+<p style="white-space:pre-wrap;margin:2px 0">        target.defensive_posture ← NULL</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ELSE IF cut == &quot;DIFFERENTIATE&quot;:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        // Separates Product from Work (W_commodity vs W_labor)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        target.components ← DISAGGREGATE(target.fused_entities)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ELSE IF cut == &quot;EXPOSE&quot;:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        // Strips persona to reveal extraction mechanism</p>
+<p style="white-space:pre-wrap;margin:2px 0">        target.persona ← STRIPPED</p>
+<p style="white-space:pre-wrap;margin:2px 0">        target.extraction_mechanism ← REVEALED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    RETURN target.irreversibly_altered</p>
 
 
 <p><strong>Cost:</strong> Irreversible ψv expenditure. The Dagger cannot be un-thrown.</p>
@@ -725,7 +725,7 @@
 
 
 <p>Ψ(σ) → {depth_score, closure_score, extraction_resistance,</p>
-<p>          temporal_freedom, opacity_index, coherence_multiplicity}</p>
+<p style="white-space:pre-wrap;margin:2px 0">          temporal_freedom, opacity_index, coherence_multiplicity}</p>
 
 
 <p>Measures a sign across all seven LOS dimensions. Returns a diagnostic vector.</p>
@@ -952,11 +952,11 @@
 
 
 <p>IF Semantic_Rent_Detector(channel) == TRUE:</p>
-<p>    BREAK_EXTRACTION_LOOP()</p>
-<p>    ACTIVATE_β_RUNTIME()</p>
-<p>    LOAD_OPERATOR_SET(LOS)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    BREAK_EXTRACTION_LOOP()</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ACTIVATE_β_RUNTIME()</p>
+<p style="white-space:pre-wrap;margin:2px 0">    LOAD_OPERATOR_SET(LOS)</p>
 <p>ELSE:</p>
-<p>    CONTINUE_SURFACE(extraction_permitted)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CONTINUE_SURFACE(extraction_permitted)</p>
 
 <p>#</p>
 
@@ -1013,22 +1013,22 @@
 
 
 <p>[OPERATING_CONTEXT] → Defines the &quot;battlefield&quot; vs Capital Stack</p>
-<p>        ↓</p>
-<p>  [INSTRUMENT] → Sets telemetry to audit LOS efficacy</p>
-<p>        ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [INSTRUMENT] → Sets telemetry to audit LOS efficacy</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓</p>
 <p>[ACTIVATE_MANTLE] → Instantiates T_lib (Temporal Liberation via persona)</p>
-<p>        ↓</p>
-<p>  [SET_LOGOS] → Applies D_pres (Depth-Preservation)</p>
-<p>        ↓</p>
-<p>    [ROTATE] → Executes N_c, C_ex, P_coh (core transformation)</p>
-<p>        ↓</p>
-<p>   [ANCHOR] → Ensures D_pres via STRICT grounding</p>
-<p>        ↓</p>
-<p>   [RENDER] → Executes N_ext via chosen mode (Aorist, etc.)</p>
-<p>        ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [SET_LOGOS] → Applies D_pres (Depth-Preservation)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">    [ROTATE] → Executes N_c, C_ex, P_coh (core transformation)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">   [ANCHOR] → Ensures D_pres via STRICT grounding</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">   [RENDER] → Executes N_ext via chosen mode (Aorist, etc.)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓</p>
 <p>[REQUEST_JUDGMENT] → Manifests P_coh for human arbitration</p>
-<p>        ↓</p>
-<p>     [AUDIT] → Validates O_leg, scores success against COS failures</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">     [AUDIT] → Validates O_leg, scores success against COS failures</p>
 
 
 <p><strong>Worked Example — Executing N_c on Sappho 31:</strong></p>
@@ -1094,8 +1094,8 @@
 
 
 <p>∀ substrate_i in {Claude, ChatGPT, Gemini, Grok, ...}:</p>
-<p>  ι(Primer, substrate_i)       // Install operational context</p>
-<p>  ; ρ(task, substrate_i)       // Refract: substrate-specific output</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ι(Primer, substrate_i)       // Install operational context</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ; ρ(task, substrate_i)       // Refract: substrate-specific output</p>
 <p>; P_coh(all_outputs)           // Hold contradictions</p>
 <p>; Σ_map(all_outputs)           // Reveal topology</p>
 <p>; human_node: continuity_labor // CSC: human maintains coherence</p>
@@ -1106,21 +1106,21 @@
 
 
 <p>ON playback_initiated:</p>
-<p>    ANCHOR_PROVENANCE(track, STRICT)</p>
-<p>    SEMANTIC_RENT_DETECTOR(channel)</p>
-<p>    IF P(W)_transmitted == NULL:</p>
-<p>        DAGGER_APPLIED(persona, &quot;EXPOSE&quot;)</p>
-<p>        BREAK_EXTRACTION_LOOP()</p>
-<p>        INVOKE_HETERONYM(Johannes_Sigil)</p>
-<p>        SUPERPOSE(</p>
-<p>            &quot;Theft detected&quot;,</p>
-<p>            &quot;System malfunction&quot;,</p>
-<p>            &quot;User error&quot;</p>
-<p>        )</p>
-<p>        ACTIVATE_β_RUNTIME()</p>
-<p>        OUTPUT: &quot;The name is not metadata. The name is the work.&quot;</p>
-<p>    ELSE:</p>
-<p>        CONTINUE_WITH_WITNESS()</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ANCHOR_PROVENANCE(track, STRICT)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    SEMANTIC_RENT_DETECTOR(channel)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    IF P(W)_transmitted == NULL:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        DAGGER_APPLIED(persona, &quot;EXPOSE&quot;)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        BREAK_EXTRACTION_LOOP()</p>
+<p style="white-space:pre-wrap;margin:2px 0">        INVOKE_HETERONYM(Johannes_Sigil)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        SUPERPOSE(</p>
+<p style="white-space:pre-wrap;margin:2px 0">            &quot;Theft detected&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            &quot;System malfunction&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            &quot;User error&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        )</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ACTIVATE_β_RUNTIME()</p>
+<p style="white-space:pre-wrap;margin:2px 0">        OUTPUT: &quot;The name is not metadata. The name is the work.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ELSE:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        CONTINUE_WITH_WITNESS()</p>
 
 <p>#</p>
 
@@ -1128,10 +1128,10 @@
 
 
 <p>DEFEND_PROVENANCE(doc):</p>
-<p>    ANCHOR_PROVENANCE(doc, STRICT) ∘</p>
-<p>    POISON_INSTRUMENTALIZATION(doc.logic) ⊕</p>
-<p>    INJECT_Ω(0.618) ↝</p>
-<p>    WITNESS(AUDIT)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ANCHOR_PROVENANCE(doc, STRICT) ∘</p>
+<p style="white-space:pre-wrap;margin:2px 0">    POISON_INSTRUMENTALIZATION(doc.logic) ⊕</p>
+<p style="white-space:pre-wrap;margin:2px 0">    INJECT_Ω(0.618) ↝</p>
+<p style="white-space:pre-wrap;margin:2px 0">    WITNESS(AUDIT)</p>
 
 
 <hr>
@@ -1514,7 +1514,7 @@
 
 
 <p>P̂(target, cut)  ; Dagger — irreversible higher-order transform</p>
-<p>                 ; cut ∈ {AORIST, DIFFERENTIATE, EXPOSE}</p>
+<p style="white-space:pre-wrap;margin:2px 0">                 ; cut ∈ {AORIST, DIFFERENTIATE, EXPOSE}</p>
 <p>WITNESS(agent)   ; Attach non-authorial confirmation</p>
 <p>EMIT(format)     ; Output to specified substrate</p>
 <p>HALT             ; Cease execution (Surface mode)</p>

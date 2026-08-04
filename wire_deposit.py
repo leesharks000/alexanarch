@@ -913,7 +913,14 @@ def regenerate_static_page(d, eidx, registry=None):
                 elif line.strip():
                     line = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', line)
                     line = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', line)
-                    ft_lines.append(f'<p>{line}</p>')
+                    # SOURCE-282 addendum (2026-08-04): leading whitespace is
+                    # prosodic structure (indentation clusters, staggered
+                    # arrangements); preserve it instead of letting HTML
+                    # collapse it. Applies only to lines that carry it.
+                    if line[:1] in (' ', '\t'):
+                        ft_lines.append(f'<p style="white-space:pre-wrap;margin:2px 0">{line}</p>')
+                    else:
+                        ft_lines.append(f'<p>{line}</p>')
                 else: ft_lines.append('')
             if _tbl_buf:
                 ft_lines.append(_flush_table(_tbl_buf))

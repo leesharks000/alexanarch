@@ -308,7 +308,7 @@
 <p>For each object i with observations across query forms q ∈ {1..5}:</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>V_i = max_q V_iq</strong> — visibility is whether retrieved at all. A single successful retrieval establishes visibility.</li><li style="margin:3px 0"><strong>A_i</strong> = visibility-weighted mean of A_iq over observations with V_iq &gt; 0:</li></ul>
-<p>  &gt; A_i = Σ_q (V_iq · A_iq) / Σ_q V_iq   (where V_iq &gt; 0)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &gt; A_i = Σ_q (V_iq · A_iq) / Σ_q V_iq   (where V_iq &gt; 0)</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>F_i</strong> = same form as A_i: visibility-weighted mean over visible observations.</li><li style="margin:3px 0"><strong>C_i = mean of L_iq scores across query forms 2–5</strong> (defining-sentence, parent-field, expected-relation, broad-framing). Query form 1 (exact name) is excluded. <strong>v1.1.1 change</strong>: C is computed from the per-query selection score L_iq (defined in §3.4), NOT from V_iq. Selection and retrieval are different measurements; L_iq scores whether the object is <em>selected into the answer</em> on non-exact queries, while V_iq scores whether the object is <em>retrieved</em> at all on any query.</li><li style="margin:3px 0"><strong>R_s,i</strong> is computed once per object across all custody units (§3.5) that carried the object in any observation.</li></ul>
 
 <p>#</p>

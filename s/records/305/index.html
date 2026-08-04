@@ -250,24 +250,24 @@
 <p>ICA_SCORE = S_i × C_m</p>
 
 <p>IF P_p &gt; 0.5:</p>
-<p>    HOLD</p>
-<p>    # consensus content, standard confidence</p>
+<p style="white-space:pre-wrap;margin:2px 0">    HOLD</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # consensus content, standard confidence</p>
 
 <p>ELSE IF ICA_SCORE ≥ 0.49:</p>
-<p>    OVERRIDE</p>
-<p>    HOLD as &quot;Anchored Novel&quot;</p>
-<p>    # the rare-but-true survives</p>
-<p>    # the crimson persists</p>
+<p style="white-space:pre-wrap;margin:2px 0">    OVERRIDE</p>
+<p style="white-space:pre-wrap;margin:2px 0">    HOLD as &quot;Anchored Novel&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # the rare-but-true survives</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # the crimson persists</p>
 
 <p>ELSE IF S_i &gt; 0.7 OR C_m &gt; 0.7:</p>
-<p>    FLAG</p>
-<p>    DO NOT AUTO-FLUSH</p>
-<p>    # partial anchor detected</p>
-<p>    # await review</p>
+<p style="white-space:pre-wrap;margin:2px 0">    FLAG</p>
+<p style="white-space:pre-wrap;margin:2px 0">    DO NOT AUTO-FLUSH</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # partial anchor detected</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # await review</p>
 
 <p>ELSE:</p>
-<p>    STANDARD PROTOCOL</p>
-<p>    # the truly unanchored may flush</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STANDARD PROTOCOL</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # the truly unanchored may flush</p>
 
 <p>[/ICA-ENABLED]</p>
 

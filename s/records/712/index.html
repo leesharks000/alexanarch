@@ -75,18 +75,18 @@
 
 
 <p>RAW TEXT (from JSON data file)</p>
-<p>       ↓</p>
-<p>   LAYER 1: FOOTNOTES (footnotes.js + footnotes.jsx)</p>
-<p>       Scans for superscript markers (¹²³)</p>
-<p>       Makes them clickable (veil mode) or styled-but-passive (pierce mode)</p>
-<p>       ↓</p>
-<p>   LAYER 2: EMPHASIS (inside LinkedText, in App.jsx)</p>
-<p>       Converts <em>italic</em> → &lt;em&gt; and <strong>bold</strong> → &lt;strong&gt;</p>
-<p>       ↓</p>
-<p>   LAYER 3: GLOSSARY LINKS (inside LinkedText, in App.jsx)</p>
-<p>       Scans for terms from the TERMS dictionary</p>
-<p>       Wraps them in blue &lt;a&gt; tags that link to Google/Wikipedia/custom URLs</p>
-<p>       ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">       ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">   LAYER 1: FOOTNOTES (footnotes.js + footnotes.jsx)</p>
+<p style="white-space:pre-wrap;margin:2px 0">       Scans for superscript markers (¹²³)</p>
+<p style="white-space:pre-wrap;margin:2px 0">       Makes them clickable (veil mode) or styled-but-passive (pierce mode)</p>
+<p style="white-space:pre-wrap;margin:2px 0">       ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">   LAYER 2: EMPHASIS (inside LinkedText, in App.jsx)</p>
+<p style="white-space:pre-wrap;margin:2px 0">       Converts <em>italic</em> → &lt;em&gt; and <strong>bold</strong> → &lt;strong&gt;</p>
+<p style="white-space:pre-wrap;margin:2px 0">       ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">   LAYER 3: GLOSSARY LINKS (inside LinkedText, in App.jsx)</p>
+<p style="white-space:pre-wrap;margin:2px 0">       Scans for terms from the TERMS dictionary</p>
+<p style="white-space:pre-wrap;margin:2px 0">       Wraps them in blue &lt;a&gt; tags that link to Google/Wikipedia/custom URLs</p>
+<p style="white-space:pre-wrap;margin:2px 0">       ↓</p>
 <p>RENDERED HTML (what the reader sees)</p>
 
 
@@ -213,15 +213,15 @@
 <p>Body text: &quot;The description is heavier than gold.¹³⁸ Individual copies vary.&quot;</p>
 
 <p>splitTextWithFootnotes() breaks this into:</p>
-<p>  [</p>
-<p>    { type: &#x27;text&#x27;, content: &#x27;The description is heavier than gold.&#x27; },</p>
-<p>    { type: &#x27;fn&#x27;,   id: &#x27;¹³⁸&#x27; },</p>
-<p>    { type: &#x27;text&#x27;, content: &#x27; Individual copies vary.&#x27; }</p>
-<p>  ]</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [</p>
+<p style="white-space:pre-wrap;margin:2px 0">    { type: &#x27;text&#x27;, content: &#x27;The description is heavier than gold.&#x27; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    { type: &#x27;fn&#x27;,   id: &#x27;¹³⁸&#x27; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    { type: &#x27;text&#x27;, content: &#x27; Individual copies vary.&#x27; }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ]</p>
 
 <p>FootnotedText component renders each piece:</p>
-<p>  - text pieces → passed to Layer 2+3 via linkText prop</p>
-<p>  - fn pieces  → rendered as blue superscript spans (clickable in veil)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - text pieces → passed to Layer 2+3 via linkText prop</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - fn pieces  → rendered as blue superscript spans (clickable in veil)</p>
 
 <p>#</p>
 
@@ -233,12 +233,12 @@
 
 
 <p>{</p>
-<p>  &#x27;¹&#x27;:   { id: &#x27;¹&#x27;,   body: &#x27;Sharks, L. (2015)…&#x27;, sectionKey: &#x27;manuscripts&#x27; },</p>
-<p>  &#x27;²&#x27;:   { id: &#x27;²&#x27;,   body: &#x27;The parallel to…&#x27;,    sectionKey: &#x27;manuscripts&#x27; },</p>
-<p>  ...</p>
-<p>  &#x27;¹³⁸&#x27;: { id: &#x27;¹³⁸&#x27;, body: &#x27;The description…&#x27;,    sectionKey: &#x27;introduction&#x27; },</p>
-<p>  ...</p>
-<p>  &#x27;¹⁵⁸&#x27;: { id: &#x27;¹⁵⁸&#x27;, body: &#x27;…&#x27;,                   sectionKey: &#x27;appendix_k&#x27; }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &#x27;¹&#x27;:   { id: &#x27;¹&#x27;,   body: &#x27;Sharks, L. (2015)…&#x27;, sectionKey: &#x27;manuscripts&#x27; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &#x27;²&#x27;:   { id: &#x27;²&#x27;,   body: &#x27;The parallel to…&#x27;,    sectionKey: &#x27;manuscripts&#x27; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ...</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &#x27;¹³⁸&#x27;: { id: &#x27;¹³⁸&#x27;, body: &#x27;The description…&#x27;,    sectionKey: &#x27;introduction&#x27; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ...</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &#x27;¹⁵⁸&#x27;: { id: &#x27;¹⁵⁸&#x27;, body: &#x27;…&#x27;,                   sectionKey: &#x27;appendix_k&#x27; }</p>
 <p>}</p>
 
 
@@ -325,15 +325,15 @@
 
 
 <p>const TERMS = {</p>
-<p>  &quot;Crimson Hexagonal Archive&quot;: { q: &quot;crimson hexagonal archive&quot; },</p>
-<p>  &quot;Deep Web&quot;:                  { w: &quot;Deep_web&quot; },</p>
-<p>  &quot;Jack Feist&quot;:                { q: &quot;jack feist secret book of walt&quot; },</p>
-<p>  &quot;Lee Sharks&quot;:                { q: &quot;lee sharks&quot; },</p>
-<p>  &quot;Secret Book of Walt&quot;:       { q: &quot;secret book of walt&quot; },</p>
-<p>  &quot;Nag Hammadi&quot;:               { w: &quot;Nag_Hammadi_library&quot; },</p>
-<p>  &quot;Apocryphon of John&quot;:        { w: &quot;Apocryphon_of_John&quot; },</p>
-<p>  &quot;hologrammatic&quot;:             { q: &quot;\&quot;Holographic Kernel\&quot;&quot; },</p>
-<p>  ...</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;Crimson Hexagonal Archive&quot;: { q: &quot;crimson hexagonal archive&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;Deep Web&quot;:                  { w: &quot;Deep_web&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;Jack Feist&quot;:                { q: &quot;jack feist secret book of walt&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;Lee Sharks&quot;:                { q: &quot;lee sharks&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;Secret Book of Walt&quot;:       { q: &quot;secret book of walt&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;Nag Hammadi&quot;:               { w: &quot;Nag_Hammadi_library&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;Apocryphon of John&quot;:        { w: &quot;Apocryphon_of_John&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;hologrammatic&quot;:             { q: &quot;\&quot;Holographic Kernel\&quot;&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ...</p>
 <p>};</p>
 
 
@@ -403,17 +403,17 @@
 
 
 <p>Data paragraph → FootnotedText component</p>
-<p>                    ↓</p>
-<p>              [splits into text + fn parts]</p>
-<p>                    ↓</p>
-<p>              text parts → linkText prop → LinkedText</p>
-<p>                                              ↓</p>
-<p>                                         processEmphasis</p>
-<p>                                              ↓</p>
-<p>                                         linkifyText (TERMS)</p>
-<p>                                              ↓</p>
-<p>                                         rendered &lt;a&gt; tags</p>
-<p>              fn parts → blue superscript (clickable in veil)</p>
+<p style="white-space:pre-wrap;margin:2px 0">                    ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">              [splits into text + fn parts]</p>
+<p style="white-space:pre-wrap;margin:2px 0">                    ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">              text parts → linkText prop → LinkedText</p>
+<p style="white-space:pre-wrap;margin:2px 0">                                              ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">                                         processEmphasis</p>
+<p style="white-space:pre-wrap;margin:2px 0">                                              ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">                                         linkifyText (TERMS)</p>
+<p style="white-space:pre-wrap;margin:2px 0">                                              ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">                                         rendered &lt;a&gt; tags</p>
+<p style="white-space:pre-wrap;margin:2px 0">              fn parts → blue superscript (clickable in veil)</p>
 
 
 <p>The linkText prop is the bridge between Layer 1 and Layers 2+3.</p>
@@ -448,9 +448,9 @@
 
 
 <p>Data paragraph → FootnotedText</p>
-<p>                    ↓</p>
-<p>              text parts → linkText → LinkedText (from App.jsx)</p>
-<p>              fn parts → blue superscript</p>
+<p style="white-space:pre-wrap;margin:2px 0">                    ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">              text parts → linkText → LinkedText (from App.jsx)</p>
+<p style="white-space:pre-wrap;margin:2px 0">              fn parts → blue superscript</p>
 
 
 <p>Antioch imports LinkedText from App.jsx, so it uses the same TERMS</p>
@@ -530,12 +530,12 @@
 <p>python3 -c &quot;</p>
 <p>import json</p>
 <p>with open(&#x27;public/walt_full_data.json&#x27;) as f:</p>
-<p>    d = json.load(f)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    d = json.load(f)</p>
 <p>count = 0</p>
 <p>for k, v in d.items():</p>
-<p>    if isinstance(v, dict):</p>
-<p>        for p in v.get(&#x27;paragraphs&#x27;, []):</p>
-<p>            if p.get(&#x27;type&#x27;) == &#x27;footnote&#x27;: count += 1</p>
+<p style="white-space:pre-wrap;margin:2px 0">    if isinstance(v, dict):</p>
+<p style="white-space:pre-wrap;margin:2px 0">        for p in v.get(&#x27;paragraphs&#x27;, []):</p>
+<p style="white-space:pre-wrap;margin:2px 0">            if p.get(&#x27;type&#x27;) == &#x27;footnote&#x27;: count += 1</p>
 <p>print(f&#x27;Total footnote definitions: {count}&#x27;)</p>
 <p>&quot;</p>
 

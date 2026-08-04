@@ -497,16 +497,16 @@ for name, text in [(&quot;spatial&quot;, spatial_fragment), (&quot;linearized&qu
 <h2>The three findings (as stated in §4)</h2>
 
 <p>1. <strong>Both representations round-trip perfectly.</strong> By the criterion of</p>
-<p>   character preservation, nothing was lost in either case.</p>
+<p style="white-space:pre-wrap;margin:2px 0">   character preservation, nothing was lost in either case.</p>
 <p>2. <strong>Neither representation contains the calligram.</strong> The spatial argument</p>
-<p>   was lost at serialization, before tokenization applied. The indentation</p>
-<p>   is a one-dimensional shadow (horizontal offset per line) of a</p>
-<p>   two-dimensional arrangement.</p>
+<p style="white-space:pre-wrap;margin:2px 0">   was lost at serialization, before tokenization applied. The indentation</p>
+<p style="white-space:pre-wrap;margin:2px 0">   is a one-dimensional shadow (horizontal offset per line) of a</p>
+<p style="white-space:pre-wrap;margin:2px 0">   two-dimensional arrangement.</p>
 <p>3. <strong>Preserved whitespace is preserved as noise.</strong> 78% of the spatial</p>
-<p>   version&#x27;s token budget is individual whitespace tokens that no training</p>
-<p>   objective attends to. The survival of the characters is what makes the</p>
-<p>   loss invisible: the pipeline&#x27;s own audit — does it round-trip? —</p>
-<p>   reports success.</p>
+<p style="white-space:pre-wrap;margin:2px 0">   version&#x27;s token budget is individual whitespace tokens that no training</p>
+<p style="white-space:pre-wrap;margin:2px 0">   objective attends to. The survival of the characters is what makes the</p>
+<p style="white-space:pre-wrap;margin:2px 0">   loss invisible: the pipeline&#x27;s own audit — does it round-trip? —</p>
+<p style="white-space:pre-wrap;margin:2px 0">   reports success.</p>
 
 <h2>Note on tokenizer choice</h2>
 

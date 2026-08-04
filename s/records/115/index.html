@@ -105,33 +105,33 @@
 
 <p>This specification models Google identity as five interacting graphs.</p>
 
-<p>                         ┌─────────────────────────────┐</p>
-<p>                         │          USER GRAPH          │</p>
-<p>                         │ account / device / cookies   │</p>
-<p>                         │ history / ads / location     │</p>
-<p>                         └──────────────┬──────────────┘</p>
-<p>                                        │ personalization/context</p>
-<p>                                        ▼</p>
+<p style="white-space:pre-wrap;margin:2px 0">                         ┌─────────────────────────────┐</p>
+<p style="white-space:pre-wrap;margin:2px 0">                         │          USER GRAPH          │</p>
+<p style="white-space:pre-wrap;margin:2px 0">                         │ account / device / cookies   │</p>
+<p style="white-space:pre-wrap;margin:2px 0">                         │ history / ads / location     │</p>
+<p style="white-space:pre-wrap;margin:2px 0">                         └──────────────┬──────────────┘</p>
+<p style="white-space:pre-wrap;margin:2px 0">                                        │ personalization/context</p>
+<p style="white-space:pre-wrap;margin:2px 0">                                        ▼</p>
 <p>┌───────────────┐       ┌─────────────────────────────┐</p>
 <p>│ QUERY STRING  │──────►│        SESSION GRAPH         │</p>
 <p>│ &quot;lee sharks&quot;  │       │ interface / bucket / state    │</p>
 <p>└───────┬───────┘       └──────────────┬──────────────┘</p>
-<p>        │                              │</p>
-<p>        ▼                              ▼</p>
+<p style="white-space:pre-wrap;margin:2px 0">        │                              │</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ▼                              ▼</p>
 <p>┌─────────────────────────────────────────────────────┐</p>
 <p>│                    ENTITY GRAPH                      │</p>
 <p>│ candidate clusters: Lee Sharks / Mary Lee / works    │</p>
 <p>│ KG IDs / Wikidata / ORCID / DOI / ISBN / domains     │</p>
 <p>└────────────────────┬────────────────────────────────┘</p>
-<p>                     │ entity resolution</p>
-<p>                     ▼</p>
+<p style="white-space:pre-wrap;margin:2px 0">                     │ entity resolution</p>
+<p style="white-space:pre-wrap;margin:2px 0">                     ▼</p>
 <p>┌─────────────────────────────────────────────────────┐</p>
 <p>│                    SOURCE GRAPH                      │</p>
 <p>│ domains / authors / publishers / schema / citations  │</p>
 <p>│ trust / authority / extractability / provenance      │</p>
 <p>└────────────────────┬────────────────────────────────┘</p>
-<p>                     │ composition eligibility</p>
-<p>                     ▼</p>
+<p style="white-space:pre-wrap;margin:2px 0">                     │ composition eligibility</p>
+<p style="white-space:pre-wrap;margin:2px 0">                     ▼</p>
 <p>┌─────────────────────────────────────────────────────┐</p>
 <p>│                 COMPOSITION GRAPH                    │</p>
 <p>│ query fan-out / retrieved docs / support set / LLM   │</p>
@@ -178,9 +178,9 @@
 <p>This matters because it demonstrates Google’s general architecture for identity stitching:</p>
 
 <p>User-ID / Account identity</p>
-<p>  → Google Signals / signed-in cross-device state</p>
-<p>  → Device or browser ID</p>
-<p>  → modeled identity when other identifiers are absent</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → Google Signals / signed-in cross-device state</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → Device or browser ID</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → modeled identity when other identifiers are absent</p>
 <p>#</p>
 
 <h2>III.4 Incognito is not identity null</h2>
@@ -196,17 +196,17 @@
 <p>Every empirical capture of Google AI Overview or AI Mode should record User Graph variables:</p>
 
 <p>{</p>
-<p>  &quot;signed_in&quot;: true,</p>
-<p>  &quot;account_context&quot;: &quot;primary / alternate / signed-out / unknown&quot;,</p>
-<p>  &quot;personalize_search&quot;: &quot;on / off / unknown&quot;,</p>
-<p>  &quot;web_app_activity&quot;: &quot;on / off / unknown&quot;,</p>
-<p>  &quot;search_customization&quot;: &quot;on / off / unknown&quot;,</p>
-<p>  &quot;browser&quot;: &quot;Chrome / Firefox / Safari / other&quot;,</p>
-<p>  &quot;mode&quot;: &quot;normal / incognito / fresh profile&quot;,</p>
-<p>  &quot;device&quot;: &quot;desktop / mobile&quot;,</p>
-<p>  &quot;network&quot;: &quot;home / school / cellular / VPN&quot;,</p>
-<p>  &quot;approx_region&quot;: &quot;city/state/country when known&quot;,</p>
-<p>  &quot;prior_query_sequence&quot;: []</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;signed_in&quot;: true,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;account_context&quot;: &quot;primary / alternate / signed-out / unknown&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;personalize_search&quot;: &quot;on / off / unknown&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;web_app_activity&quot;: &quot;on / off / unknown&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;search_customization&quot;: &quot;on / off / unknown&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;browser&quot;: &quot;Chrome / Firefox / Safari / other&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;mode&quot;: &quot;normal / incognito / fresh profile&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;device&quot;: &quot;desktop / mobile&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;network&quot;: &quot;home / school / cellular / VPN&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;approx_region&quot;: &quot;city/state/country when known&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;prior_query_sequence&quot;: []</p>
 <p>}</p>
 
 
@@ -234,11 +234,11 @@
 <p>visible query: &quot;secret book of walt&quot;</p>
 
 <p>possible fan-out branches:</p>
-<p>  - &quot;secret book of Walt Breaking Bad&quot;</p>
-<p>  - &quot;Walt Whitman secret book&quot;</p>
-<p>  - &quot;Secret Book of Walt Lee Sharks&quot;</p>
-<p>  - &quot;Secret Book of Walt Zenodo&quot;</p>
-<p>  - &quot;Secret Stories of Walt Disney World&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - &quot;secret book of Walt Breaking Bad&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - &quot;Walt Whitman secret book&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - &quot;Secret Book of Walt Lee Sharks&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - &quot;Secret Book of Walt Zenodo&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - &quot;Secret Stories of Walt Disney World&quot;</p>
 
 
 <p>If the wrong branches dominate the support set, exact-title organic resolution can be overwritten by composition-level substitution.</p>
@@ -264,15 +264,15 @@
 <p>A capture without session metadata is incomplete. A capture should record:</p>
 
 <p>{</p>
-<p>  &quot;query&quot;: &quot;lee sharks&quot;,</p>
-<p>  &quot;surface&quot;: &quot;AI Overview / AI Mode / Web / Classic Search&quot;,</p>
-<p>  &quot;timestamp_utc&quot;: &quot;&quot;,</p>
-<p>  &quot;region&quot;: &quot;&quot;,</p>
-<p>  &quot;interface_notes&quot;: &quot;&quot;,</p>
-<p>  &quot;prior_turns_or_queries&quot;: [],</p>
-<p>  &quot;ai_answer_text&quot;: &quot;&quot;,</p>
-<p>  &quot;source_window&quot;: [],</p>
-<p>  &quot;organic_top_results&quot;: []</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;query&quot;: &quot;lee sharks&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;surface&quot;: &quot;AI Overview / AI Mode / Web / Classic Search&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;timestamp_utc&quot;: &quot;&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;region&quot;: &quot;&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;interface_notes&quot;: &quot;&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;prior_turns_or_queries&quot;: [],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;ai_answer_text&quot;: &quot;&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;source_window&quot;: [],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;organic_top_results&quot;: []</p>
 <p>}</p>
 <h2>V. The Entity Graph</h2>
 
@@ -336,16 +336,16 @@
 <p>A source is not simply a URL. It is a bundle of identities:</p>
 
 <p>URL</p>
-<p>  → canonical page</p>
-<p>  → domain</p>
-<p>  → publisher</p>
-<p>  → author</p>
-<p>  → work</p>
-<p>  → source type</p>
-<p>  → topic</p>
-<p>  → trust profile</p>
-<p>  → provenance cluster</p>
-<p>  → extractable passages</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → canonical page</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → domain</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → publisher</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → author</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → work</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → source type</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → topic</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → trust profile</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → provenance cluster</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → extractable passages</p>
 <p>#</p>
 
 <h2>VI.1 Source identity layers</h2>
@@ -361,12 +361,12 @@
 <p>A page can be crawled and indexed without being admitted into AI composition.</p>
 
 <p>Crawled</p>
-<p>  → Indexed</p>
-<p>  → Retrievable</p>
-<p>  → Rankable</p>
-<p>  → Snippet-eligible</p>
-<p>  → Composition-eligible</p>
-<p>  → Cited in AI answer</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → Indexed</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → Retrievable</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → Rankable</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → Snippet-eligible</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → Composition-eligible</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → Cited in AI answer</p>
 
 
 <p>[SPEC] ECS occurs in the transition between Rankable/Retrievable and Composition-eligible/Cited.</p>
@@ -402,15 +402,15 @@
 <p>A simplified outside-view pipeline:</p>
 
 <p>User/session state</p>
-<p>  → query interpretation</p>
-<p>  → candidate entity clusters</p>
-<p>  → query fan-out</p>
-<p>  → document/source retrieval</p>
-<p>  → ranking / quality / trust / safety filters</p>
-<p>  → source support-set selection</p>
-<p>  → LLM synthesis</p>
-<p>  → link/source-window assignment</p>
-<p>  → final rendered answer</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → query interpretation</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → candidate entity clusters</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → query fan-out</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → document/source retrieval</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → ranking / quality / trust / safety filters</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → source support-set selection</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → LLM synthesis</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → link/source-window assignment</p>
+<p style="white-space:pre-wrap;margin:2px 0">  → final rendered answer</p>
 <p>#</p>
 
 <h2>VII.2 Support-set identity</h2>
@@ -680,34 +680,34 @@
 <h2>XII.3 Capture schema</h2>
 
 <p>{</p>
-<p>  &quot;query&quot;: &quot;&quot;,</p>
-<p>  &quot;surface&quot;: &quot;Google AI Overview / Google AI Mode / Classic Search / Bing / Perplexity&quot;,</p>
-<p>  &quot;timestamp_utc&quot;: &quot;&quot;,</p>
-<p>  &quot;signed_in_state&quot;: &quot;&quot;,</p>
-<p>  &quot;account_context&quot;: &quot;&quot;,</p>
-<p>  &quot;browser&quot;: &quot;&quot;,</p>
-<p>  &quot;mode&quot;: &quot;&quot;,</p>
-<p>  &quot;device&quot;: &quot;&quot;,</p>
-<p>  &quot;network&quot;: &quot;&quot;,</p>
-<p>  &quot;region&quot;: &quot;&quot;,</p>
-<p>  &quot;personalization_settings&quot;: {</p>
-<p>    &quot;web_app_activity&quot;: &quot;&quot;,</p>
-<p>    &quot;personalize_search&quot;: &quot;&quot;,</p>
-<p>    &quot;search_customization&quot;: &quot;&quot;</p>
-<p>  },</p>
-<p>  &quot;organic_top_10&quot;: [],</p>
-<p>  &quot;ai_answer_text&quot;: &quot;&quot;,</p>
-<p>  &quot;ai_source_window&quot;: [],</p>
-<p>  &quot;knowledge_panel_present&quot;: false,</p>
-<p>  &quot;primary_entity_resolved&quot;: &quot;&quot;,</p>
-<p>  &quot;secondary_entities&quot;: [],</p>
-<p>  &quot;misresolution_observed&quot;: false,</p>
-<p>  &quot;source_window_exclusion_observed&quot;: false,</p>
-<p>  &quot;CDI&quot;: &quot;&quot;,</p>
-<p>  &quot;PER&quot;: &quot;&quot;,</p>
-<p>  &quot;screenshot_files&quot;: [],</p>
-<p>  &quot;archive_deposit&quot;: &quot;&quot;,</p>
-<p>  &quot;notes&quot;: &quot;&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;query&quot;: &quot;&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;surface&quot;: &quot;Google AI Overview / Google AI Mode / Classic Search / Bing / Perplexity&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;timestamp_utc&quot;: &quot;&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;signed_in_state&quot;: &quot;&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;account_context&quot;: &quot;&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;browser&quot;: &quot;&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;mode&quot;: &quot;&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;device&quot;: &quot;&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;network&quot;: &quot;&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;region&quot;: &quot;&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;personalization_settings&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;web_app_activity&quot;: &quot;&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;personalize_search&quot;: &quot;&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;search_customization&quot;: &quot;&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;organic_top_10&quot;: [],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;ai_answer_text&quot;: &quot;&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;ai_source_window&quot;: [],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;knowledge_panel_present&quot;: false,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;primary_entity_resolved&quot;: &quot;&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;secondary_entities&quot;: [],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;misresolution_observed&quot;: false,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;source_window_exclusion_observed&quot;: false,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;CDI&quot;: &quot;&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;PER&quot;: &quot;&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;screenshot_files&quot;: [],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;archive_deposit&quot;: &quot;&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;notes&quot;: &quot;&quot;</p>
 <p>}</p>
 <p>#</p>
 
@@ -835,18 +835,18 @@
 
 <p>Compositional Identity =</p>
 <p>f(</p>
-<p>  User State,</p>
-<p>  Session State,</p>
-<p>  Query String,</p>
-<p>  Entity Cluster Strength,</p>
-<p>  Source Cluster Strength,</p>
-<p>  Author/Publisher Signals,</p>
-<p>  Work Identifiers,</p>
-<p>  Provenance Corroboration,</p>
-<p>  Query Fan-Out,</p>
-<p>  Quality/Safety Thresholds,</p>
-<p>  Interface State,</p>
-<p>  Temporal Rollout State</p>
+<p style="white-space:pre-wrap;margin:2px 0">  User State,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Session State,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Query String,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Entity Cluster Strength,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Source Cluster Strength,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Author/Publisher Signals,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Work Identifiers,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Provenance Corroboration,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Query Fan-Out,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Quality/Safety Thresholds,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Interface State,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Temporal Rollout State</p>
 <p>)</p>
 
 
@@ -854,15 +854,15 @@
 
 <p>Lee Sharks composability =</p>
 <p>f(</p>
-<p>  user/session personalization,</p>
-<p>  string ambiguity,</p>
-<p>  Lee Sharks entity cluster strength,</p>
-<p>  Mary Lee entity cluster strength,</p>
-<p>  source cluster admission,</p>
-<p>  single-owner provenance discount,</p>
-<p>  author/work recognition,</p>
-<p>  AI Overview support-set thresholds,</p>
-<p>  silent rollout state</p>
+<p style="white-space:pre-wrap;margin:2px 0">  user/session personalization,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  string ambiguity,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Lee Sharks entity cluster strength,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Mary Lee entity cluster strength,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  source cluster admission,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  single-owner provenance discount,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  author/work recognition,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  AI Overview support-set thresholds,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  silent rollout state</p>
 <p>)</p>
 
 

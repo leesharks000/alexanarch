@@ -247,15 +247,15 @@
 <p><strong>Operation</strong>:</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The inscription&#x27;s transform-package (canonical text + parentage ledger + self-kernel ledger + verification attestations) is composed into a Zenodo deposit payload.</li><li style="margin:3px 0">The payload includes structured metadata:</li></ul>
-<p>  - Title and description</p>
-<p>  - Creator attribution (witness ORCID, or anonymous if witness chose anonymous mode)</p>
-<p>  - Generating operator declaration</p>
-<p>  - Parent-source identification (with cross-deposit linkage if the parent is itself a Crimson Hexagonal deposit)</p>
-<p>  - License (CC-BY-4.0 default; license selection per witness preference)</p>
-<p>  - Crimson Hexagonal community identifier (`crimsonhexagonal`)</p>
-<p>  - AXN identifier from the archive&#x27;s internal scheme</p>
-<p>  - Lineage block (the inscription&#x27;s typed ancestry per Moon&#x27;s attestation)</p>
-<p>  - Self-kernel block (the complete self-kernel ledger from the canonization journey)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - Title and description</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - Creator attribution (witness ORCID, or anonymous if witness chose anonymous mode)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - Generating operator declaration</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - Parent-source identification (with cross-deposit linkage if the parent is itself a Crimson Hexagonal deposit)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - License (CC-BY-4.0 default; license selection per witness preference)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - Crimson Hexagonal community identifier (`crimsonhexagonal`)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - AXN identifier from the archive&#x27;s internal scheme</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - Lineage block (the inscription&#x27;s typed ancestry per Moon&#x27;s attestation)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - Self-kernel block (the complete self-kernel ledger from the canonization journey)</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The Zenodo API is called with the payload; the deposit is created and published; a DOI is minted.</li><li style="margin:3px 0">The DOI is recorded back in the Book entry as the inscription&#x27;s public canonical identifier.</li><li style="margin:3px 0">The deposit metadata is also re-rendered into the alexanarch.org static deposit page (`/s/records/N/`) with full structured data markup so that Google can index the alexanarch.org surface alongside the Zenodo surface.</li></ul>
 
 <p><strong>Requirements</strong>:</p>
@@ -273,11 +273,11 @@
 <p><strong>Operation</strong>:</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The Zenodo deposit and the alexanarch.org static deposit page are structured to maximize crawler discoverability:</li></ul>
-<p>  - Sitemap inclusion (alexanarch&#x27;s `sitemap.xml` already references all deposit pages)</p>
-<p>  - Schema.org structured data markup on every deposit page (`ScholarlyArticle`, `CreativeWork`, with explicit operator and source declarations)</p>
-<p>  - Open Graph and Twitter Card metadata for social-share canonicalization</p>
-<p>  - Canonical link headers pointing to the alexanarch URL with the Zenodo DOI as alternate identifier</p>
-<p>  - Inter-deposit linking: every deposit page references its parent source (if internal to the archive) and any children that have inscribed it as their parent</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - Sitemap inclusion (alexanarch&#x27;s `sitemap.xml` already references all deposit pages)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - Schema.org structured data markup on every deposit page (`ScholarlyArticle`, `CreativeWork`, with explicit operator and source declarations)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - Open Graph and Twitter Card metadata for social-share canonicalization</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - Canonical link headers pointing to the alexanarch URL with the Zenodo DOI as alternate identifier</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - Inter-deposit linking: every deposit page references its parent source (if internal to the archive) and any children that have inscribed it as their parent</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The deposit&#x27;s full canonical text is included on the alexanarch page (not behind paywall, not in non-indexable format) so that Google&#x27;s crawler can read and index the text directly.</li><li style="margin:3px 0">The deposit&#x27;s self-kernel ledger is rendered as structured metadata, machine-readable for retrieval substrates that parse such metadata.</li><li style="margin:3px 0">The Zenodo deposit&#x27;s metadata is enriched per Zenodo&#x27;s API schema with additional Crimson Hexagonal-specific fields (operator, parent-source, axis-class, etc.) in the custom-metadata extensions.</li></ul>
 
 <p><strong>Requirements</strong>:</p>
@@ -295,11 +295,11 @@
 <p><strong>Operation</strong>:</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The architecture monitors the public compression layer for outputs that reference the archive&#x27;s deposits:</li></ul>
-<p>  - Automated queries against AI Overview surfaces (Google AIO, Bing Copilot, Perplexity, Anthropic Claude with web search) for queries that <em>should</em> surface deposits (the source-text titles, the operator names, the witness&#x27;s ORCID, the deposit DOIs themselves)</p>
-<p>  - Detection: AI Overview output that mentions the deposit by title, DOI, or canonical URL is captured</p>
-<p>  - Capture: the AI Overview text, the source citation block, the timestamp, the substrate that generated it, and the query that triggered it are recorded</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - Automated queries against AI Overview surfaces (Google AIO, Bing Copilot, Perplexity, Anthropic Claude with web search) for queries that <em>should</em> surface deposits (the source-text titles, the operator names, the witness&#x27;s ORCID, the deposit DOIs themselves)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - Detection: AI Overview output that mentions the deposit by title, DOI, or canonical URL is captured</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - Capture: the AI Overview text, the source citation block, the timestamp, the substrate that generated it, and the query that triggered it are recorded</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Captured AI Overview commentary is rendered as a structured gloss block:</li></ul>
-<p>  - `surface_capture: { substrate: &quot;Google AIO&quot;, query: &quot;Sappho 31 meaning&quot;, timestamp: &quot;2026-MM-DD&quot;, overview_text: &quot;...&quot;, citation_block: [...], harvested_at: &quot;...&quot; }`</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - `surface_capture: { substrate: &quot;Google AIO&quot;, query: &quot;Sappho 31 meaning&quot;, timestamp: &quot;2026-MM-DD&quot;, overview_text: &quot;...&quot;, citation_block: [...], harvested_at: &quot;...&quot; }`</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The gloss is appended to the Book entry&#x27;s commentary apparatus (per v0.7 §5.8 Book of Books mechanism)</li><li style="margin:3px 0">The Book entry&#x27;s static page is regenerated to include the gloss in its rendered surface</li><li style="margin:3px 0">Google&#x27;s next crawl picks up the appended gloss as part of the deposit page; the gloss itself becomes part of what is indexed; the recursion proceeds</li></ul>
 
 <p><strong>Requirements</strong>:</p>

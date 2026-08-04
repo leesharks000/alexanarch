@@ -262,38 +262,38 @@
 
 
 <p>{</p>
-<p>  &quot;manifest_version&quot;: 3,</p>
-<p>  &quot;name&quot;: &quot;Overview Watch&quot;,</p>
-<p>  &quot;version&quot;: &quot;0.1.0&quot;,</p>
-<p>  &quot;description&quot;: &quot;Monitor how AI Overviews represent your work. Track attribution. Build the record.&quot;,</p>
-<p>  &quot;permissions&quot;: [</p>
-<p>    &quot;storage&quot;,</p>
-<p>    &quot;activeTab&quot;</p>
-<p>  ],</p>
-<p>  &quot;host_permissions&quot;: [</p>
-<p>    &quot;https://www.google.com/*&quot;,</p>
-<p>    &quot;https://www.google.co.uk/*&quot;,</p>
-<p>    &quot;https://www.google.ca/*&quot;</p>
-<p>    // Additional Google country domains as needed</p>
-<p>  ],</p>
-<p>  &quot;content_scripts&quot;: [</p>
-<p>    {</p>
-<p>      &quot;matches&quot;: [&quot;https://www.google.com/search<em>&quot;, &quot;https://www.google.co.uk/search</em>&quot;],</p>
-<p>      &quot;js&quot;: [&quot;content/overview-detector.js&quot;],</p>
-<p>      &quot;run_at&quot;: &quot;document_idle&quot;</p>
-<p>    }</p>
-<p>  ],</p>
-<p>  &quot;action&quot;: {</p>
-<p>    &quot;default_popup&quot;: &quot;popup/popup.html&quot;,</p>
-<p>    &quot;default_icon&quot;: {</p>
-<p>      &quot;16&quot;: &quot;icons/icon-16.png&quot;,</p>
-<p>      &quot;48&quot;: &quot;icons/icon-48.png&quot;,</p>
-<p>      &quot;128&quot;: &quot;icons/icon-128.png&quot;</p>
-<p>    }</p>
-<p>  },</p>
-<p>  &quot;background&quot;: {</p>
-<p>    &quot;service_worker&quot;: &quot;background/service-worker.js&quot;</p>
-<p>  }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;manifest_version&quot;: 3,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;name&quot;: &quot;Overview Watch&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;version&quot;: &quot;0.1.0&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;description&quot;: &quot;Monitor how AI Overviews represent your work. Track attribution. Build the record.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;permissions&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;storage&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;activeTab&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;host_permissions&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;https://www.google.com/*&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;https://www.google.co.uk/*&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;https://www.google.ca/*&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // Additional Google country domains as needed</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;content_scripts&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">    {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;matches&quot;: [&quot;https://www.google.com/search<em>&quot;, &quot;https://www.google.co.uk/search</em>&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;js&quot;: [&quot;content/overview-detector.js&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;run_at&quot;: &quot;document_idle&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;action&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;default_popup&quot;: &quot;popup/popup.html&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;default_icon&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;16&quot;: &quot;icons/icon-16.png&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;48&quot;: &quot;icons/icon-48.png&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;128&quot;: &quot;icons/icon-128.png&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;background&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;service_worker&quot;: &quot;background/service-worker.js&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  }</p>
 <p>}</p>
 
 <p>#</p>
@@ -326,37 +326,37 @@
 
 
 <p>{</p>
-<p>  id: &quot;uuid-v4&quot;,                    // Unique local ID</p>
-<p>  timestamp: &quot;2026-04-23T14:30:00Z&quot;,</p>
-<p>  query: &quot;semantic economy&quot;,         // From URL params or search input</p>
-<p>  overview: {</p>
-<p>    text: &quot;The semantic economy is a framework...&quot;,</p>
-<p>    html: &quot;&lt;div&gt;...&lt;/div&gt;&quot;,          // Raw HTML for forensic record</p>
-<p>    sources: [</p>
-<p>      {</p>
-<p>        title: &quot;Semantic Economy Singularity&quot;,</p>
-<p>        url: &quot;https://www.academia.edu/...&quot;,</p>
-<p>        domain: &quot;academia.edu&quot;,</p>
-<p>        displayText: &quot;Academia.edu&quot;,</p>
-<p>        position: 1                  // Order of citation in overview</p>
-<p>      },</p>
-<p>      // ...</p>
-<p>    ],</p>
-<p>    hasAttribution: true,            // Whether any source is cited at all</p>
-<p>    wordCount: 187,</p>
-<p>    sourceCount: 4</p>
-<p>  },</p>
-<p>  userMatch: {</p>
-<p>    matched: true,                   // Did any of the user&#x27;s registered works appear?</p>
-<p>    matchedWorks: [&quot;doi:10.5281/zenodo.xxxxx&quot;],</p>
-<p>    unmatchedButRelevant: [],        // Works the user flagged as relevant but uncited</p>
-<p>    attributionScore: 0.25           // Fraction of user&#x27;s relevant works that were cited</p>
-<p>  },</p>
-<p>  meta: {</p>
-<p>    googleDomain: &quot;google.com&quot;,</p>
-<p>    locale: &quot;en-US&quot;,</p>
-<p>    overviewPosition: &quot;top&quot;          // Where the overview appears relative to results</p>
-<p>  }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  id: &quot;uuid-v4&quot;,                    // Unique local ID</p>
+<p style="white-space:pre-wrap;margin:2px 0">  timestamp: &quot;2026-04-23T14:30:00Z&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  query: &quot;semantic economy&quot;,         // From URL params or search input</p>
+<p style="white-space:pre-wrap;margin:2px 0">  overview: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    text: &quot;The semantic economy is a framework...&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    html: &quot;&lt;div&gt;...&lt;/div&gt;&quot;,          // Raw HTML for forensic record</p>
+<p style="white-space:pre-wrap;margin:2px 0">    sources: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">      {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        title: &quot;Semantic Economy Singularity&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        url: &quot;https://www.academia.edu/...&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        domain: &quot;academia.edu&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        displayText: &quot;Academia.edu&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        position: 1                  // Order of citation in overview</p>
+<p style="white-space:pre-wrap;margin:2px 0">      },</p>
+<p style="white-space:pre-wrap;margin:2px 0">      // ...</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">    hasAttribution: true,            // Whether any source is cited at all</p>
+<p style="white-space:pre-wrap;margin:2px 0">    wordCount: 187,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    sourceCount: 4</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  userMatch: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    matched: true,                   // Did any of the user&#x27;s registered works appear?</p>
+<p style="white-space:pre-wrap;margin:2px 0">    matchedWorks: [&quot;doi:10.5281/zenodo.xxxxx&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">    unmatchedButRelevant: [],        // Works the user flagged as relevant but uncited</p>
+<p style="white-space:pre-wrap;margin:2px 0">    attributionScore: 0.25           // Fraction of user&#x27;s relevant works that were cited</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  meta: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    googleDomain: &quot;google.com&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    locale: &quot;en-US&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    overviewPosition: &quot;top&quot;          // Where the overview appears relative to results</p>
+<p style="white-space:pre-wrap;margin:2px 0">  }</p>
 <p>}</p>
 
 <p>#</p>
@@ -385,38 +385,38 @@
 
 <p>// chrome.storage.local</p>
 <p>{</p>
-<p>  // User&#x27;s registered works</p>
-<p>  &quot;registeredWorks&quot;: [</p>
-<p>    { type: &quot;doi&quot;, value: &quot;10.5281/zenodo.xxxxx&quot;, label: &quot;Semantic Economy Singularity&quot; },</p>
-<p>    { type: &quot;url&quot;, value: &quot;https://medium.com/@leesharks/...&quot;, label: &quot;Debt/Creditor Inversion&quot; },</p>
-<p>    { type: &quot;domain&quot;, value: &quot;crimson-hexagonal-interface.vercel.app&quot;, label: &quot;Hexagonal Interface&quot; },</p>
-<p>    { type: &quot;name&quot;, value: &quot;Lee Sharks&quot;, label: &quot;Primary heteronym&quot; },</p>
-<p>    { type: &quot;phrase&quot;, value: &quot;semantic liquidation&quot;, label: &quot;Core concept&quot; }</p>
-<p>  ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  // User&#x27;s registered works</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;registeredWorks&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">    { type: &quot;doi&quot;, value: &quot;10.5281/zenodo.xxxxx&quot;, label: &quot;Semantic Economy Singularity&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    { type: &quot;url&quot;, value: &quot;https://medium.com/@leesharks/...&quot;, label: &quot;Debt/Creditor Inversion&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    { type: &quot;domain&quot;, value: &quot;crimson-hexagonal-interface.vercel.app&quot;, label: &quot;Hexagonal Interface&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    { type: &quot;name&quot;, value: &quot;Lee Sharks&quot;, label: &quot;Primary heteronym&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    { type: &quot;phrase&quot;, value: &quot;semantic liquidation&quot;, label: &quot;Core concept&quot; }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ],</p>
 
-<p>  // Captured overviews (array, capped at configurable limit, e.g., 10000)</p>
-<p>  &quot;overviews&quot;: [ /<em> array of parsed payloads </em>/ ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  // Captured overviews (array, capped at configurable limit, e.g., 10000)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;overviews&quot;: [ /<em> array of parsed payloads </em>/ ],</p>
 
-<p>  // Dashboard statistics (precomputed for performance)</p>
-<p>  &quot;stats&quot;: {</p>
-<p>    totalCaptured: 0,</p>
-<p>    totalWithOverview: 0,</p>
-<p>    totalAttributed: 0,</p>
-<p>    totalAbsorbed: 0,</p>
-<p>    attributionRate: 0.0,</p>
-<p>    queriesTracked: 0,</p>
-<p>    firstCapture: null,</p>
-<p>    lastCapture: null</p>
-<p>  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  // Dashboard statistics (precomputed for performance)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;stats&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    totalCaptured: 0,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    totalWithOverview: 0,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    totalAttributed: 0,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    totalAbsorbed: 0,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    attributionRate: 0.0,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    queriesTracked: 0,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    firstCapture: null,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    lastCapture: null</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
 
-<p>  // User preferences</p>
-<p>  &quot;preferences&quot;: {</p>
-<p>    optInCorpus: false,          // Global opt-in toggle</p>
-<p>    askPerOverview: true,        // Ask before each contribution</p>
-<p>    autoCapture: true,           // Automatically capture all overviews locally</p>
-<p>    notifications: true,         // Show badge when overview detected</p>
-<p>    redactQueries: false         // Auto-redact queries before contributing</p>
-<p>  }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  // User preferences</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;preferences&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    optInCorpus: false,          // Global opt-in toggle</p>
+<p style="white-space:pre-wrap;margin:2px 0">    askPerOverview: true,        // Ask before each contribution</p>
+<p style="white-space:pre-wrap;margin:2px 0">    autoCapture: true,           // Automatically capture all overviews locally</p>
+<p style="white-space:pre-wrap;margin:2px 0">    notifications: true,         // Show badge when overview detected</p>
+<p style="white-space:pre-wrap;margin:2px 0">    redactQueries: false         // Auto-redact queries before contributing</p>
+<p style="white-space:pre-wrap;margin:2px 0">  }</p>
 <p>}</p>
 
 <p>#</p>
@@ -438,24 +438,24 @@
 <p>POST https://[supabase-project].supabase.co/rest/v1/overview_corpus</p>
 
 <p>Headers:</p>
-<p>  Content-Type: application/json</p>
-<p>  apikey: [anon key]</p>
-<p>  Authorization: Bearer [anon key]</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Content-Type: application/json</p>
+<p style="white-space:pre-wrap;margin:2px 0">  apikey: [anon key]</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Authorization: Bearer [anon key]</p>
 
 <p>Body:</p>
 <p>{</p>
-<p>  contributor_id: &quot;randomized-uuid&quot;,    // Not linked to user identity</p>
-<p>  query: &quot;semantic economy&quot;,            // Or &quot;[REDACTED]&quot; if user chose to redact</p>
-<p>  overview_text: &quot;...&quot;,</p>
-<p>  overview_html: &quot;...&quot;,                 // Optional, for forensic depth</p>
-<p>  sources: [ { title, url, domain, position } ],</p>
-<p>  source_count: 4,</p>
-<p>  word_count: 187,</p>
-<p>  has_user_match: true,                 // Boolean only — no details about which works</p>
-<p>  attribution_classification: &quot;ABSORBED&quot;,</p>
-<p>  timestamp_hour: &quot;2026-04-23T14:00:00Z&quot;,  // Rounded to hour</p>
-<p>  google_domain: &quot;google.com&quot;,</p>
-<p>  locale: &quot;en-US&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  contributor_id: &quot;randomized-uuid&quot;,    // Not linked to user identity</p>
+<p style="white-space:pre-wrap;margin:2px 0">  query: &quot;semantic economy&quot;,            // Or &quot;[REDACTED]&quot; if user chose to redact</p>
+<p style="white-space:pre-wrap;margin:2px 0">  overview_text: &quot;...&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  overview_html: &quot;...&quot;,                 // Optional, for forensic depth</p>
+<p style="white-space:pre-wrap;margin:2px 0">  sources: [ { title, url, domain, position } ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  source_count: 4,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  word_count: 187,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  has_user_match: true,                 // Boolean only — no details about which works</p>
+<p style="white-space:pre-wrap;margin:2px 0">  attribution_classification: &quot;ABSORBED&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  timestamp_hour: &quot;2026-04-23T14:00:00Z&quot;,  // Rounded to hour</p>
+<p style="white-space:pre-wrap;margin:2px 0">  google_domain: &quot;google.com&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  locale: &quot;en-US&quot;</p>
 <p>}</p>
 
 <p>#</p>
@@ -464,33 +464,33 @@
 
 
 <p>CREATE TABLE overview_corpus (</p>
-<p>  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),</p>
-<p>  contributor_id UUID NOT NULL,          -- Randomized, not linked to identity</p>
-<p>  query TEXT,                            -- May be &quot;[REDACTED]&quot;</p>
-<p>  overview_text TEXT NOT NULL,</p>
-<p>  overview_html TEXT,</p>
-<p>  sources JSONB NOT NULL DEFAULT &#x27;[]&#x27;,</p>
-<p>  source_count INTEGER,</p>
-<p>  word_count INTEGER,</p>
-<p>  has_user_match BOOLEAN,</p>
-<p>  attribution_classification TEXT,       -- ATTRIBUTED | SOURCED_UNATTRIBUTED | ABSORBED | ABSENT</p>
-<p>  timestamp_hour TIMESTAMPTZ NOT NULL,</p>
-<p>  google_domain TEXT,</p>
-<p>  locale TEXT,</p>
-<p>  created_at TIMESTAMPTZ DEFAULT now(),</p>
-<p>  corpus_version TEXT DEFAULT &#x27;1.0&#x27;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  contributor_id UUID NOT NULL,          -- Randomized, not linked to identity</p>
+<p style="white-space:pre-wrap;margin:2px 0">  query TEXT,                            -- May be &quot;[REDACTED]&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  overview_text TEXT NOT NULL,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  overview_html TEXT,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  sources JSONB NOT NULL DEFAULT &#x27;[]&#x27;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  source_count INTEGER,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  word_count INTEGER,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  has_user_match BOOLEAN,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  attribution_classification TEXT,       -- ATTRIBUTED | SOURCED_UNATTRIBUTED | ABSORBED | ABSENT</p>
+<p style="white-space:pre-wrap;margin:2px 0">  timestamp_hour TIMESTAMPTZ NOT NULL,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  google_domain TEXT,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  locale TEXT,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  created_at TIMESTAMPTZ DEFAULT now(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  corpus_version TEXT DEFAULT &#x27;1.0&#x27;</p>
 <p>);</p>
 
 <p>-- RLS: anon can insert, only authenticated (researcher role) can select</p>
 <p>ALTER TABLE overview_corpus ENABLE ROW LEVEL SECURITY;</p>
 
 <p>CREATE POLICY &quot;anon_insert&quot; ON overview_corpus</p>
-<p>  FOR INSERT TO anon</p>
-<p>  WITH CHECK (true);</p>
+<p style="white-space:pre-wrap;margin:2px 0">  FOR INSERT TO anon</p>
+<p style="white-space:pre-wrap;margin:2px 0">  WITH CHECK (true);</p>
 
 <p>CREATE POLICY &quot;researcher_select&quot; ON overview_corpus</p>
-<p>  FOR SELECT TO authenticated</p>
-<p>  USING (true);</p>
+<p style="white-space:pre-wrap;margin:2px 0">  FOR SELECT TO authenticated</p>
+<p style="white-space:pre-wrap;margin:2px 0">  USING (true);</p>
 
 <p>-- Index for research queries</p>
 <p>CREATE INDEX idx_corpus_classification ON overview_corpus(attribution_classification);</p>

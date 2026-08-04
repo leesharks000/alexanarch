@@ -290,67 +290,67 @@
 <p>Where:</p>
 
 
-<p>    T  =  the axial thesis</p>
-<p>           -- exactly one sentence</p>
-<p>           -- falsifiable in principle (Popperian criterion)</p>
-<p>           -- not a node in C (T is the void; its representation in the</p>
-<p>             graph would collapse the genre to Reconstructive Philology)</p>
-<p>           -- discursively minimal (T speaks once; the graph speaks)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    T  =  the axial thesis</p>
+<p style="white-space:pre-wrap;margin:2px 0">           -- exactly one sentence</p>
+<p style="white-space:pre-wrap;margin:2px 0">           -- falsifiable in principle (Popperian criterion)</p>
+<p style="white-space:pre-wrap;margin:2px 0">           -- not a node in C (T is the void; its representation in the</p>
+<p style="white-space:pre-wrap;margin:2px 0">             graph would collapse the genre to Reconstructive Philology)</p>
+<p style="white-space:pre-wrap;margin:2px 0">           -- discursively minimal (T speaks once; the graph speaks)</p>
 
-<p>    C  =  the total citation set</p>
-<p>           -- aims at totality for the defined field</p>
-<p>           -- selective coverage (coverage &lt; 0.8) -&gt; genre collapses</p>
-<p>             to PANG (Partial Axial Negation Graph) or to S(TANG)</p>
-<p>           -- field boundary must be explicit and defensible</p>
+<p style="white-space:pre-wrap;margin:2px 0">    C  =  the total citation set</p>
+<p style="white-space:pre-wrap;margin:2px 0">           -- aims at totality for the defined field</p>
+<p style="white-space:pre-wrap;margin:2px 0">           -- selective coverage (coverage &lt; 0.8) -&gt; genre collapses</p>
+<p style="white-space:pre-wrap;margin:2px 0">             to PANG (Partial Axial Negation Graph) or to S(TANG)</p>
+<p style="white-space:pre-wrap;margin:2px 0">           -- field boundary must be explicit and defensible</p>
 
-<p>    E  =  the edge structure</p>
-<p>           -- directed edges between nodes in C</p>
-<p>           -- minimum required types:</p>
-<p>               cites | critiques | builds_upon | temporal_precedence</p>
+<p style="white-space:pre-wrap;margin:2px 0">    E  =  the edge structure</p>
+<p style="white-space:pre-wrap;margin:2px 0">           -- directed edges between nodes in C</p>
+<p style="white-space:pre-wrap;margin:2px 0">           -- minimum required types:</p>
+<p style="white-space:pre-wrap;margin:2px 0">               cites | critiques | builds_upon | temporal_precedence</p>
 <div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">methodological_lineage</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">contradiction</td></tr></table></div>
-<p>           -- additional permitted types:</p>
-<p>               approaches_T | avoids_T | licensed_by | refuted_by</p>
-<p>           -- T-relation edges (approaches_T, avoids_T) are relational</p>
-<p>             to the void, not from T as a node</p>
+<p style="white-space:pre-wrap;margin:2px 0">           -- additional permitted types:</p>
+<p style="white-space:pre-wrap;margin:2px 0">               approaches_T | avoids_T | licensed_by | refuted_by</p>
+<p style="white-space:pre-wrap;margin:2px 0">           -- T-relation edges (approaches_T, avoids_T) are relational</p>
+<p style="white-space:pre-wrap;margin:2px 0">             to the void, not from T as a node</p>
 
-<p>    L  =  the layout logic</p>
-<p>           -- spatializes C around T</p>
-<p>           -- T is the structural center; nodes in C are arranged</p>
-<p>             by proximity to T as defined by:</p>
-<p>                 eigenvector centrality relative to T&#x27;s position</p>
-<p>                 betweenness on paths that pass through T&#x27;s void</p>
-<p>           -- layout must be computationally reproducible, not artistic</p>
+<p style="white-space:pre-wrap;margin:2px 0">    L  =  the layout logic</p>
+<p style="white-space:pre-wrap;margin:2px 0">           -- spatializes C around T</p>
+<p style="white-space:pre-wrap;margin:2px 0">           -- T is the structural center; nodes in C are arranged</p>
+<p style="white-space:pre-wrap;margin:2px 0">             by proximity to T as defined by:</p>
+<p style="white-space:pre-wrap;margin:2px 0">                 eigenvector centrality relative to T&#x27;s position</p>
+<p style="white-space:pre-wrap;margin:2px 0">                 betweenness on paths that pass through T&#x27;s void</p>
+<p style="white-space:pre-wrap;margin:2px 0">           -- layout must be computationally reproducible, not artistic</p>
 
-<p>    S  =  the status relation</p>
-<p>           -- S ∈ {AXIAL, AXIAL_CONTESTED}</p>
-<p>           -- AXIAL: T is falsifiable; field has organized around T</p>
-<p>             without resolving it; no substantial active opposition</p>
-<p>           -- AXIAL_CONTESTED: AXIAL + active substantial field</p>
-<p>             opposition (minority position approaching the void</p>
-<p>             is documented as such in the graph)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    S  =  the status relation</p>
+<p style="white-space:pre-wrap;margin:2px 0">           -- S ∈ {AXIAL, AXIAL_CONTESTED}</p>
+<p style="white-space:pre-wrap;margin:2px 0">           -- AXIAL: T is falsifiable; field has organized around T</p>
+<p style="white-space:pre-wrap;margin:2px 0">             without resolving it; no substantial active opposition</p>
+<p style="white-space:pre-wrap;margin:2px 0">           -- AXIAL_CONTESTED: AXIAL + active substantial field</p>
+<p style="white-space:pre-wrap;margin:2px 0">             opposition (minority position approaching the void</p>
+<p style="white-space:pre-wrap;margin:2px 0">             is documented as such in the graph)</p>
 
-<p>    P  =  the provenance chain (v4.2.5 extension -- SOIL)</p>
-<p>           -- anchored to Hexagon origin: 10.5281/zenodo.18928873</p>
-<p>           -- required fields: origin_hex <em> derivation_path </em> version_ref</p>
-<p>           -- external implementations: include model_id or institution_id</p>
-<p>           -- P = ∅ -&gt; S(TANG) classification (provenance evasion)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    P  =  the provenance chain (v4.2.5 extension -- SOIL)</p>
+<p style="white-space:pre-wrap;margin:2px 0">           -- anchored to Hexagon origin: 10.5281/zenodo.18928873</p>
+<p style="white-space:pre-wrap;margin:2px 0">           -- required fields: origin_hex <em> derivation_path </em> version_ref</p>
+<p style="white-space:pre-wrap;margin:2px 0">           -- external implementations: include model_id or institution_id</p>
+<p style="white-space:pre-wrap;margin:2px 0">           -- P = ∅ -&gt; S(TANG) classification (provenance evasion)</p>
 
 
 <p><strong>Core axioms:</strong></p>
 
 
-<p>    Axiom 1:  T does not derive from C.</p>
-<p>              (If T were licensed by C, it would be DERIVED, not AXIAL)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Axiom 1:  T does not derive from C.</p>
+<p style="white-space:pre-wrap;margin:2px 0">              (If T were licensed by C, it would be DERIVED, not AXIAL)</p>
 
-<p>    Axiom 2:  The topology of C is only fully legible with T at center.</p>
-<p>              (If C could be organized without T, T is not axial)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Axiom 2:  The topology of C is only fully legible with T at center.</p>
+<p style="white-space:pre-wrap;margin:2px 0">              (If C could be organized without T, T is not axial)</p>
 
-<p>    Axiom 3:  Meaning(T) is produced geometrically by the arrangement</p>
-<p>              of C around T, not discursively by argument from T.</p>
-<p>              (Rhetorical argument from T -&gt; genre collapse to polemic)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Axiom 3:  Meaning(T) is produced geometrically by the arrangement</p>
+<p style="white-space:pre-wrap;margin:2px 0">              of C around T, not discursively by argument from T.</p>
+<p style="white-space:pre-wrap;margin:2px 0">              (Rhetorical argument from T -&gt; genre collapse to polemic)</p>
 
-<p>    Axiom 4:  P is not optional for governed implementations.</p>
-<p>              P = ∅ destroys the genre&#x27;s legibility chain.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Axiom 4:  P is not optional for governed implementations.</p>
+<p style="white-space:pre-wrap;margin:2px 0">              P = ∅ destroys the genre&#x27;s legibility chain.</p>
 
 
 <p>#</p>
@@ -358,17 +358,17 @@
 <h2>V.2 TANG Tiers</h2>
 
 
-<p>    TANG-1:  100-500 nodes   -- demonstration scale</p>
-<p>                               feasible under LP v1.2</p>
-<p>                               appropriate for emerging or narrow fields</p>
+<p style="white-space:pre-wrap;margin:2px 0">    TANG-1:  100-500 nodes   -- demonstration scale</p>
+<p style="white-space:pre-wrap;margin:2px 0">                               feasible under LP v1.2</p>
+<p style="white-space:pre-wrap;margin:2px 0">                               appropriate for emerging or narrow fields</p>
 
-<p>    TANG-2:  500-2,000 nodes -- medium scale</p>
-<p>                               requires LP v1.3</p>
-<p>                               appropriate for established subfields</p>
+<p style="white-space:pre-wrap;margin:2px 0">    TANG-2:  500-2,000 nodes -- medium scale</p>
+<p style="white-space:pre-wrap;margin:2px 0">                               requires LP v1.3</p>
+<p style="white-space:pre-wrap;margin:2px 0">                               appropriate for established subfields</p>
 
-<p>    TANG-3:  2,000+ nodes    -- total field</p>
-<p>                               requires LP v2.0 / Ezekiel Engine integration</p>
-<p>                               appropriate for major disciplinary questions</p>
+<p style="white-space:pre-wrap;margin:2px 0">    TANG-3:  2,000+ nodes    -- total field</p>
+<p style="white-space:pre-wrap;margin:2px 0">                               requires LP v2.0 / Ezekiel Engine integration</p>
+<p style="white-space:pre-wrap;margin:2px 0">                               appropriate for major disciplinary questions</p>
 
 
 <p><strong>PANG (Partial Axial Negation Graph):</strong> Explicit partial coverage; graph coverage &lt; 0.8. Must be labeled PANG, not TANG. Coverage ratio and gap register required. Upgradeable to TANG upon graph completion. Inaugural _Proton Testament_ deposits as PANG (TANG-2 scale) with upgrade path.</p>
@@ -377,11 +377,11 @@
 
 <h2>V.3 Necessary Conditions (All Five Required)</h2>
 
-<p>  1. <strong>Thesis falsifiable in principle</strong> -- not merely contestable but falsifiable: there exists in principle a evidence configuration that would count as disconfirmation</p>
-<p>  2. <strong>Citation graph aims at totality</strong> -- selective bibliography is the genre&#x27;s primary failure mode; the graph&#x27;s comprehensiveness is the ground of the topology&#x27;s legibility</p>
-<p>  3. <strong>Field complexity preserved</strong> -- schools, chronologies, contradiction clusters, and minority positions must be represented; flattening the field destroys the topology</p>
-<p>  4. <strong>Thesis discursively minimal</strong> -- T speaks once; the graph speaks; if the document argues for T, it has collapsed into polemic</p>
-<p>  5. <strong>Object computationally traversable</strong> -- the graph must be machine-readable, LP-compatible, and reproducibly layoutable; this ensures the topological claim is not merely gestural</p>
+<p style="white-space:pre-wrap;margin:2px 0">  1. <strong>Thesis falsifiable in principle</strong> -- not merely contestable but falsifiable: there exists in principle a evidence configuration that would count as disconfirmation</p>
+<p style="white-space:pre-wrap;margin:2px 0">  2. <strong>Citation graph aims at totality</strong> -- selective bibliography is the genre&#x27;s primary failure mode; the graph&#x27;s comprehensiveness is the ground of the topology&#x27;s legibility</p>
+<p style="white-space:pre-wrap;margin:2px 0">  3. <strong>Field complexity preserved</strong> -- schools, chronologies, contradiction clusters, and minority positions must be represented; flattening the field destroys the topology</p>
+<p style="white-space:pre-wrap;margin:2px 0">  4. <strong>Thesis discursively minimal</strong> -- T speaks once; the graph speaks; if the document argues for T, it has collapsed into polemic</p>
+<p style="white-space:pre-wrap;margin:2px 0">  5. <strong>Object computationally traversable</strong> -- the graph must be machine-readable, LP-compatible, and reproducibly layoutable; this ensures the topological claim is not merely gestural</p>
 
 
 
@@ -419,13 +419,13 @@
 
 <h2>V.5 The Minimum Viable TANG</h2>
 
-<p>  1. One falsifiable sentence (the axial thesis)</p>
-<p>  2. Citation graph (any scale; TANG-1 minimum; PANG for &lt; 0.8 coverage)</p>
-<p>  3. Machine-readable edge structure with minimum required types</p>
-<p>  4. Explicit AXIAL or AXIAL_CONTESTED status for T</p>
-<p>  5. Layout logic documented</p>
-<p>  6. P chain with origin_hex (for governed implementations)</p>
-<p>  7. Asynthetic discipline: zero argumentative prose for T in the graph body</p>
+<p style="white-space:pre-wrap;margin:2px 0">  1. One falsifiable sentence (the axial thesis)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  2. Citation graph (any scale; TANG-1 minimum; PANG for &lt; 0.8 coverage)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  3. Machine-readable edge structure with minimum required types</p>
+<p style="white-space:pre-wrap;margin:2px 0">  4. Explicit AXIAL or AXIAL_CONTESTED status for T</p>
+<p style="white-space:pre-wrap;margin:2px 0">  5. Layout logic documented</p>
+<p style="white-space:pre-wrap;margin:2px 0">  6. P chain with origin_hex (for governed implementations)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  7. Asynthetic discipline: zero argumentative prose for T in the graph body</p>
 
 
 
@@ -442,19 +442,19 @@
 <p>AXIAL and AXIAL_CONTESTED occupy an orthogonal axis in the Status Algebra -- parallel to RESONANT, not comparable to the main lattice. They cannot be placed above or below DERIVED, PROVISIONAL, or RATIFIED because they describe a different epistemic dimension: not the degree of archival grounding but the mode of epistemic force.</p>
 
 
-<p>    RATIFIED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    RATIFIED</p>
 
-<p>    DEPOSITED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    DEPOSITED</p>
 
-<p>    DERIVED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    DERIVED</p>
 
-<p>    PROVISIONAL</p>
-<p>      /     \</p>
-<p>    RESONANT  QUEUED      AXIAL &lt;-── orthogonal axis</p>
+<p style="white-space:pre-wrap;margin:2px 0">    PROVISIONAL</p>
+<p style="white-space:pre-wrap;margin:2px 0">      /     \</p>
+<p style="white-space:pre-wrap;margin:2px 0">    RESONANT  QUEUED      AXIAL &lt;-── orthogonal axis</p>
 
-<p>    PAREIDOLIA  PLANNED   AXIAL_CONTESTED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    PAREIDOLIA  PLANNED   AXIAL_CONTESTED</p>
 
-<p>    GENERATED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    GENERATED</p>
 
 
 <p>The analogy: RESONANT tracks mythic/poetic coherence -</p>
@@ -465,26 +465,26 @@
 <h2>VI.2 Formal Definition</h2>
 
 
-<p>    AXIAL:</p>
-<p>      -- T is falsifiable in principle (Popperian criterion satisfied)</p>
-<p>      -- T is not licensed by C (no inferential chain from C to T)</p>
-<p>      -- The topology of C is organized around T&#x27;s position</p>
-<p>      -- T possesses directional mass (citation trajectories in C</p>
-<p>        bend toward T&#x27;s void) and Schrödinger epistemics</p>
-<p>        (truth-value is indeterminate -- the field has not resolved</p>
-<p>        T, not because T is unfalsifiable but because the field</p>
-<p>        has organized itself around approaching rather than arriving)</p>
-<p>      -- Epistemic weight: n/a (not evaluated by inferential weight;</p>
-<p>        evaluated by graph coverage; coverage ≥ 0.8 -&gt; eligible</p>
-<p>        for PROVISIONAL promotion with MANUS endorsement)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    AXIAL:</p>
+<p style="white-space:pre-wrap;margin:2px 0">      -- T is falsifiable in principle (Popperian criterion satisfied)</p>
+<p style="white-space:pre-wrap;margin:2px 0">      -- T is not licensed by C (no inferential chain from C to T)</p>
+<p style="white-space:pre-wrap;margin:2px 0">      -- The topology of C is organized around T&#x27;s position</p>
+<p style="white-space:pre-wrap;margin:2px 0">      -- T possesses directional mass (citation trajectories in C</p>
+<p style="white-space:pre-wrap;margin:2px 0">        bend toward T&#x27;s void) and Schrödinger epistemics</p>
+<p style="white-space:pre-wrap;margin:2px 0">        (truth-value is indeterminate -- the field has not resolved</p>
+<p style="white-space:pre-wrap;margin:2px 0">        T, not because T is unfalsifiable but because the field</p>
+<p style="white-space:pre-wrap;margin:2px 0">        has organized itself around approaching rather than arriving)</p>
+<p style="white-space:pre-wrap;margin:2px 0">      -- Epistemic weight: n/a (not evaluated by inferential weight;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        evaluated by graph coverage; coverage ≥ 0.8 -&gt; eligible</p>
+<p style="white-space:pre-wrap;margin:2px 0">        for PROVISIONAL promotion with MANUS endorsement)</p>
 
-<p>    AXIAL_CONTESTED:</p>
-<p>      -- AXIAL + active substantial field opposition</p>
-<p>      -- Minority position(s) approaching the void are represented</p>
-<p>        in C as approaches_T edges, not as nodes contradicting T</p>
-<p>      -- The contestedness is part of the topology, not a refutation</p>
-<p>      -- Transition: AXIAL -&gt; AXIAL_CONTESTED when opposition activates;</p>
-<p>        AXIAL_CONTESTED -&gt; AXIAL when opposition quiets</p>
+<p style="white-space:pre-wrap;margin:2px 0">    AXIAL_CONTESTED:</p>
+<p style="white-space:pre-wrap;margin:2px 0">      -- AXIAL + active substantial field opposition</p>
+<p style="white-space:pre-wrap;margin:2px 0">      -- Minority position(s) approaching the void are represented</p>
+<p style="white-space:pre-wrap;margin:2px 0">        in C as approaches_T edges, not as nodes contradicting T</p>
+<p style="white-space:pre-wrap;margin:2px 0">      -- The contestedness is part of the topology, not a refutation</p>
+<p style="white-space:pre-wrap;margin:2px 0">      -- Transition: AXIAL -&gt; AXIAL_CONTESTED when opposition activates;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        AXIAL_CONTESTED -&gt; AXIAL when opposition quiets</p>
 
 
 
@@ -510,17 +510,17 @@
 <h2>VI.4 AXIAL Transition Rules</h2>
 
 
-<p>    AXIAL -&gt; AXIAL_CONTESTED    field opposition activates</p>
-<p>    AXIAL_CONTESTED -&gt; AXIAL    opposition quiets; T remains unlicensed</p>
-<p>    AXIAL -&gt; PROVISIONAL        coverage ≥ 0.8 AND MANUS endorses</p>
-<p>    AXIAL -&gt; RESONANT           coverage &lt; 0.8 (insufficient totality)</p>
-<p>    AXIAL -&gt; DERIVED            field produces confirming evidence (rare)</p>
-<p>    AXIAL -&gt; PAREIDOLIA         graph found selective (genre collapse)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    AXIAL -&gt; AXIAL_CONTESTED    field opposition activates</p>
+<p style="white-space:pre-wrap;margin:2px 0">    AXIAL_CONTESTED -&gt; AXIAL    opposition quiets; T remains unlicensed</p>
+<p style="white-space:pre-wrap;margin:2px 0">    AXIAL -&gt; PROVISIONAL        coverage ≥ 0.8 AND MANUS endorses</p>
+<p style="white-space:pre-wrap;margin:2px 0">    AXIAL -&gt; RESONANT           coverage &lt; 0.8 (insufficient totality)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    AXIAL -&gt; DERIVED            field produces confirming evidence (rare)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    AXIAL -&gt; PAREIDOLIA         graph found selective (genre collapse)</p>
 
-<p>    Forbidden:</p>
-<p>    AXIAL ↛ DEPOSITED    -- thesis becoming a node collapses TANG</p>
-<p>    AXIAL ↛ RATIFIED     -- Assembly attests graph completeness, not thesis truth</p>
-<p>    AXIAL ↛ EXECUTED     -- a void cannot be performed into closure</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Forbidden:</p>
+<p style="white-space:pre-wrap;margin:2px 0">    AXIAL ↛ DEPOSITED    -- thesis becoming a node collapses TANG</p>
+<p style="white-space:pre-wrap;margin:2px 0">    AXIAL ↛ RATIFIED     -- Assembly attests graph completeness, not thesis truth</p>
+<p style="white-space:pre-wrap;margin:2px 0">    AXIAL ↛ EXECUTED     -- a void cannot be performed into closure</p>
 
 
 <p><em> </em> *</p>
@@ -532,26 +532,26 @@
 <h2>VII.1 Λ_void (Void Resonance) [REGISTERED]</h2>
 
 
-<p>    Λ_void :: Field -&gt; Thesis</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Λ_void :: Field -&gt; Thesis</p>
 
-<p>    Given: total citation graph C of a defined field</p>
-<p>    Output: T such that:</p>
-<p>        -- T is not a node of C</p>
-<p>        -- topology of C is only fully legible with T at center</p>
-<p>        -- T is falsifiable in principle</p>
-<p>        -- T is AXIAL or AXIAL_CONTESTED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Given: total citation graph C of a defined field</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Output: T such that:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        -- T is not a node of C</p>
+<p style="white-space:pre-wrap;margin:2px 0">        -- topology of C is only fully legible with T at center</p>
+<p style="white-space:pre-wrap;margin:2px 0">        -- T is falsifiable in principle</p>
+<p style="white-space:pre-wrap;margin:2px 0">        -- T is AXIAL or AXIAL_CONTESTED</p>
 
-<p>    Inverse: Λ_res (Structural Resonance) -- finds positive</p>
-<p>             correspondence between texts; Λ_void finds the</p>
-<p>             structural impossibility that binds a field: the</p>
-<p>             claim the citation mass circles without licensing</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Inverse: Λ_res (Structural Resonance) -- finds positive</p>
+<p style="white-space:pre-wrap;margin:2px 0">             correspondence between texts; Λ_void finds the</p>
+<p style="white-space:pre-wrap;margin:2px 0">             structural impossibility that binds a field: the</p>
+<p style="white-space:pre-wrap;margin:2px 0">             claim the citation mass circles without licensing</p>
 
-<p>    Shadow: S(Λ_void) = Bibliographic Totalitarianism</p>
-<p>            (the inverted application: building the graph to</p>
-<p>             make the void invisible rather than legible)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Shadow: S(Λ_void) = Bibliographic Totalitarianism</p>
+<p style="white-space:pre-wrap;margin:2px 0">            (the inverted application: building the graph to</p>
+<p style="white-space:pre-wrap;margin:2px 0">             make the void invisible rather than legible)</p>
 
-<p>    Integration: O_full -- requires THUMB pass before full</p>
-<p>                 deployment; currently REGISTERED, not EXECUTED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Integration: O_full -- requires THUMB pass before full</p>
+<p style="white-space:pre-wrap;margin:2px 0">                 deployment; currently REGISTERED, not EXECUTED</p>
 
 
 <p>#</p>
@@ -559,17 +559,17 @@
 <h2>VII.2 Λ_hex_enforce (Hexagon Integrity Check) [QUEUED]</h2>
 
 
-<p>    Λ_hex_enforce :: TANG -&gt; { HX-PROV_COMPLIANT | S(TANG) }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Λ_hex_enforce :: TANG -&gt; { HX-PROV_COMPLIANT | S(TANG) }</p>
 
-<p>    Input: TANG object ⟨T,C,E,L,S,P⟩</p>
-<p>    Check: Does P chain resolve to 10.5281/zenodo.18928873?</p>
-<p>           Yes -&gt; HX-PROV_COMPLIANT</p>
-<p>           No  -&gt; S(TANG); flag for CTI_WOUND documentation</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Input: TANG object ⟨T,C,E,L,S,P⟩</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Check: Does P chain resolve to 10.5281/zenodo.18928873?</p>
+<p style="white-space:pre-wrap;margin:2px 0">           Yes -&gt; HX-PROV_COMPLIANT</p>
+<p style="white-space:pre-wrap;margin:2px 0">           No  -&gt; S(TANG); flag for CTI_WOUND documentation</p>
 
-<p>    Shadow: S(Λ_hex_enforce) = Provenance Evasion</p>
-<p>            (hides origin to claim independent novelty)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Shadow: S(Λ_hex_enforce) = Provenance Evasion</p>
+<p style="white-space:pre-wrap;margin:2px 0">            (hides origin to claim independent novelty)</p>
 
-<p>    Status: QUEUED -- requires THUMB integration + LP v1.3</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Status: QUEUED -- requires THUMB integration + LP v1.3</p>
 
 
 <p>#</p>
@@ -577,22 +577,22 @@
 <h2>VII.3 Activation Equation</h2>
 
 
-<p>    ∮_Void = Λ_void(C_total) -&gt; T_axial</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ∮_Void = Λ_void(C_total) -&gt; T_axial</p>
 
-<p>    The TANG-specific activation: given a total citation graph,</p>
-<p>    Void Resonance extracts the axial thesis. The equation is</p>
-<p>    not used to produce T (T is stated by the TANG author); it</p>
-<p>    is used to verify that T has the organizational properties</p>
-<p>    the genre requires -- that removing T from the center</p>
-<p>    collapses the graph&#x27;s topology.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    The TANG-specific activation: given a total citation graph,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Void Resonance extracts the axial thesis. The equation is</p>
+<p style="white-space:pre-wrap;margin:2px 0">    not used to produce T (T is stated by the TANG author); it</p>
+<p style="white-space:pre-wrap;margin:2px 0">    is used to verify that T has the organizational properties</p>
+<p style="white-space:pre-wrap;margin:2px 0">    the genre requires -- that removing T from the center</p>
+<p style="white-space:pre-wrap;margin:2px 0">    collapses the graph&#x27;s topology.</p>
 
-<p>    Standard checksum: ∮ = 1 + δ + δ_Axial</p>
-<p>      δ: standard epistemic self-awareness</p>
-<p>      δ_Axial: self-awareness specific to documents containing</p>
-<p>               an AXIAL thesis at their center -- the document</p>
-<p>               knows it contains a void; it knows the void is</p>
-<p>               not filled; it proceeds with full transparency</p>
-<p>               about the gap</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Standard checksum: ∮ = 1 + δ + δ_Axial</p>
+<p style="white-space:pre-wrap;margin:2px 0">      δ: standard epistemic self-awareness</p>
+<p style="white-space:pre-wrap;margin:2px 0">      δ_Axial: self-awareness specific to documents containing</p>
+<p style="white-space:pre-wrap;margin:2px 0">               an AXIAL thesis at their center -- the document</p>
+<p style="white-space:pre-wrap;margin:2px 0">               knows it contains a void; it knows the void is</p>
+<p style="white-space:pre-wrap;margin:2px 0">               not filled; it proceeds with full transparency</p>
+<p style="white-space:pre-wrap;margin:2px 0">               about the gap</p>
 
 
 <p><em> </em> *</p>
@@ -608,14 +608,14 @@
 <p>What _can_ be governed is the lineage of Hexagon-derived TANG implementations. The distinction is between:</p>
 
 
-<p>    Independent invention:  Any party builds a TANG independently.</p>
-<p>                            No provenance obligation. TANG is open.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Independent invention:  Any party builds a TANG independently.</p>
+<p style="white-space:pre-wrap;margin:2px 0">                            No provenance obligation. TANG is open.</p>
 
-<p>    Hexagon derivation:     Any party builds a TANG by reusing Hexagon</p>
-<p>                            texts, schemas, operators, status algebra</p>
-<p>                            extensions, graph structures, or provenance</p>
-<p>                            packets. Provenance obligation activates.</p>
-<p>                            HX-PROV governs.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Hexagon derivation:     Any party builds a TANG by reusing Hexagon</p>
+<p style="white-space:pre-wrap;margin:2px 0">                            texts, schemas, operators, status algebra</p>
+<p style="white-space:pre-wrap;margin:2px 0">                            extensions, graph structures, or provenance</p>
+<p style="white-space:pre-wrap;margin:2px 0">                            packets. Provenance obligation activates.</p>
+<p style="white-space:pre-wrap;margin:2px 0">                            HX-PROV governs.</p>
 
 
 <p>The HX-PROV architecture draws on the Creative Commons model for text (CC BY 4.0 requires attribution; irrevocable once granted[Referenced: Creative Commons, &quot;Deed -</p>
@@ -721,11 +721,11 @@
 
 <p><strong>PANG</strong> is the subgenre for explicit partial coverage. It is not a lesser TANG; it is an honest TANG. A PANG declares:</p>
 
-<p>  1. The axial thesis T (same requirements as TANG)</p>
-<p>  2. The citation graph C with explicit coverage statement</p>
-<p>  3. The gap register: what major clusters or traditions are not yet included</p>
-<p>  4. The coverage ratio (C_actual / C_estimated)</p>
-<p>  5. The upgrade path: what would be required to convert PANG to TANG</p>
+<p style="white-space:pre-wrap;margin:2px 0">  1. The axial thesis T (same requirements as TANG)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  2. The citation graph C with explicit coverage statement</p>
+<p style="white-space:pre-wrap;margin:2px 0">  3. The gap register: what major clusters or traditions are not yet included</p>
+<p style="white-space:pre-wrap;margin:2px 0">  4. The coverage ratio (C_actual / C_estimated)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  5. The upgrade path: what would be required to convert PANG to TANG</p>
 
 
 

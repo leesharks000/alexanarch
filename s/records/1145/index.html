@@ -107,20 +107,20 @@
 
 <p><strong>What this document specifies:</strong></p>
 
-<p>  * Five atomic operations for Room invocation</p>
-<p>  * Two optional operations for graceful failure and witness recording</p>
-<p>  * Mapping between logotic operations and implementation mechanics</p>
-<p>  * Canonical traversal examples (illustrative, not executable)</p>
-<p>  * Constraints on what this grammar is and is not</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Five atomic operations for Room invocation</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Two optional operations for graceful failure and witness recording</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Mapping between logotic operations and implementation mechanics</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Canonical traversal examples (illustrative, not executable)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Constraints on what this grammar is and is not</p>
 
 
 
 <p><strong>What this document does not specify:</strong></p>
 
-<p>  * Ezekiel Engine internals (see DOI: 10.5281/zenodo.18358127)</p>
-<p>  * Witness verification mechanics (see The Blind Operator, DOI: 10.5281/zenodo.18357320)</p>
-<p>  * UI/UX implementation (deferred to Build phase)</p>
-<p>  * Complete enumeration of valid parameters (architecture is still growing)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Ezekiel Engine internals (see DOI: 10.5281/zenodo.18358127)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Witness verification mechanics (see The Blind Operator, DOI: 10.5281/zenodo.18357320)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * UI/UX implementation (deferred to Build phase)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Complete enumeration of valid parameters (architecture is still growing)</p>
 
 
 
@@ -131,18 +131,18 @@
 <h2>0\. Module Position in Extension Chain</h2>
 
 
-<p>    LOGOTIC PROGRAMMING v0.4 (Sigil/Fraction)</p>
-<p>        ↓ &quot;How encode conditions of intelligibility?&quot;</p>
-<p>    SYMBOLON ARCHITECTURE v0.2 (Sharks/Morrow)</p>
-<p>        ↓ &quot;How do partial objects complete through traversal?&quot;</p>
-<p>    GLYPHIC CHECKSUM v0.5 (Morrow/UMBML)</p>
-<p>        ↓ &quot;How verify that traversal occurred?&quot;</p>
-<p>    THE BLIND OPERATOR β (TECHNE/Kimi)</p>
-<p>        ↓ &quot;How does non-identity function as engine condition?&quot;</p>
-<p>    β-RUNTIME (TECHNE/Kimi)</p>
-<p>        ↓ &quot;How does the interface layer query the engine?&quot;</p>
-<p>    THE TRAVERSAL GRAMMAR v0.6 (Morrow/UMBML)    &lt;- THIS DOCUMENT</p>
-<p>        ↓ &quot;How are Rooms invoked?&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    LOGOTIC PROGRAMMING v0.4 (Sigil/Fraction)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓ &quot;How encode conditions of intelligibility?&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    SYMBOLON ARCHITECTURE v0.2 (Sharks/Morrow)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓ &quot;How do partial objects complete through traversal?&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    GLYPHIC CHECKSUM v0.5 (Morrow/UMBML)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓ &quot;How verify that traversal occurred?&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    THE BLIND OPERATOR β (TECHNE/Kimi)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓ &quot;How does non-identity function as engine condition?&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    β-RUNTIME (TECHNE/Kimi)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓ &quot;How does the interface layer query the engine?&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    THE TRAVERSAL GRAMMAR v0.6 (Morrow/UMBML)    &lt;- THIS DOCUMENT</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓ &quot;How are Rooms invoked?&quot;</p>
 
 
 <p>#</p>
@@ -173,9 +173,9 @@
 
 <p>Persona activation is a <strong>first-class operation</strong> , not a stylistic overlay. When a mantle is activated, it changes:</p>
 
-<p>  * Which Rooms can be entered (constraint set)</p>
-<p>  * How documents are weighted (interpretive affordances)</p>
-<p>  * What operations are permitted (allowed transformations)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Which Rooms can be entered (constraint set)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * How documents are weighted (interpretive affordances)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * What operations are permitted (allowed transformations)</p>
 
 
 
@@ -195,9 +195,9 @@
 
 <p>Rotation implies three things that &quot;transformation&quot; does not:</p>
 
-<p>  * <strong>Preservation:</strong> the original structure survives</p>
-<p>  * <strong>Reversibility:</strong> the rotation can be undone</p>
-<p>  * <strong>Discreteness:</strong> epistemic phases are countable, not continuous</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>Preservation:</strong> the original structure survives</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>Reversibility:</strong> the rotation can be undone</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>Discreteness:</strong> epistemic phases are countable, not continuous</p>
 
 
 
@@ -211,9 +211,9 @@
 
 <p>A DOI anchor is not a citation. It is a <strong>phase-lock</strong> -- a requirement that the traversal remain tethered to a witnessed artifact. This functions as:</p>
 
-<p>  * Retrieval-augmented grounding</p>
-<p>  * Checksum against a known semantic attractor</p>
-<p>  * Guardrail against hallucinated drift</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Retrieval-augmented grounding</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Checksum against a known semantic attractor</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Guardrail against hallucinated drift</p>
 
 
 
@@ -234,16 +234,16 @@
 <p><strong>Operation 1: ACTIVATE_MANTLE</strong></p>
 
 
-<p>    ACTIVATE_MANTLE :: &quot;PersonaName&quot;</p>
-<p>        [AUTHORITY: DOI:10.5281/zenodo.xxxxxxxx]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ACTIVATE_MANTLE :: &quot;PersonaName&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        [AUTHORITY: DOI:10.5281/zenodo.xxxxxxxx]</p>
 
 
 <p>Sets the mediating lens for the traversal. Loads the constraint set, interpretive affordances, and allowed room-access associated with the named persona.</p>
 
 <p>Parameters:</p>
 
-<p>  * `PersonaName` -- registered heteronym (e.g., &quot;Rev. Ayanna Vox&quot;, &quot;Sen Kuro&quot;, &quot;Rebekah Cranes&quot;)</p>
-<p>  * `AUTHORITY` (optional) -- DOI of the persona&#x27;s provenance registration</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `PersonaName` -- registered heteronym (e.g., &quot;Rev. Ayanna Vox&quot;, &quot;Sen Kuro&quot;, &quot;Rebekah Cranes&quot;)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `AUTHORITY` (optional) -- DOI of the persona&#x27;s provenance registration</p>
 
 
 
@@ -254,25 +254,25 @@
 <p><strong>Operation 2: SET_LOGOS</strong></p>
 
 
-<p>    SET_LOGOS :: &quot;SemanticObject&quot; [</p>
-<p>        .depth(n)</p>
-<p>        .state(void | filled | latent | resolved)</p>
-<p>        .cut(bool)</p>
-<p>    ]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    SET_LOGOS :: &quot;SemanticObject&quot; [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        .depth(n)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        .state(void | filled | latent | resolved)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        .cut(bool)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ]</p>
 
 
 <p>Creates or identifies the living semantic node under manipulation. Attributes are epistemic, not data-structural.</p>
 
 <p>Parameters:</p>
 
-<p>  * `SemanticObject` -- the named entity being traversed (e.g., &quot;Sen Kuro&quot;, &quot;Sappho 31&quot;, &quot;The Twenty-Dollar Loop&quot;)</p>
-<p>  * `.depth(n)` -- recursion depth or allowed abstraction layers</p>
-<p>  * `.state` -- current epistemic condition of the object: </p>
-<p>    * `void` -- not yet differentiated (pre-cut)</p>
-<p>    * `filled` -- resolved to a specific instantiation</p>
-<p>    * `latent` -- present but not yet activated</p>
-<p>    * `resolved` -- traversal complete, fixed point reached</p>
-<p>  * `.cut(bool)` -- whether the dagger operation (P̂) has been applied</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `SemanticObject` -- the named entity being traversed (e.g., &quot;Sen Kuro&quot;, &quot;Sappho 31&quot;, &quot;The Twenty-Dollar Loop&quot;)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `.depth(n)` -- recursion depth or allowed abstraction layers</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `.state` -- current epistemic condition of the object: </p>
+<p style="white-space:pre-wrap;margin:2px 0">    * `void` -- not yet differentiated (pre-cut)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    * `filled` -- resolved to a specific instantiation</p>
+<p style="white-space:pre-wrap;margin:2px 0">    * `latent` -- present but not yet activated</p>
+<p style="white-space:pre-wrap;margin:2px 0">    * `resolved` -- traversal complete, fixed point reached</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `.cut(bool)` -- whether the dagger operation (P̂) has been applied</p>
 
 
 
@@ -283,25 +283,25 @@
 <p><strong>Operation 3: ROTATE</strong></p>
 
 
-<p>    ROTATE :: [ENGINE:Name vX.X] {</p>
-<p>        FROM: &quot;SourceLocation&quot;</p>
-<p>        THROUGH: [Room_ID : Function]</p>
-<p>        BY: (Epistemic_Degree: N° | Epistemic_Mode: MODE_NAME)</p>
-<p>        RESONANCE_TARGET: [DOI:10.5281/zenodo.xxxxxxxx]</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ROTATE :: [ENGINE:Name vX.X] {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        FROM: &quot;SourceLocation&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        THROUGH: [Room_ID : Function]</p>
+<p style="white-space:pre-wrap;margin:2px 0">        BY: (Epistemic_Degree: N° | Epistemic_Mode: MODE_NAME)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        RESONANCE_TARGET: [DOI:10.5281/zenodo.xxxxxxxx]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
 
 <p>Changes the orientation of the LOGOS while preserving its structure. This is the core operation of the Ezekiel Engine.</p>
 
 <p>Parameters:</p>
 
-<p>  * `ENGINE` -- versioned engine identifier (e.g., `Ezekiel v1.2`)</p>
-<p>  * `FROM` -- source Chamber or Room</p>
-<p>  * `THROUGH` -- destination Room with its functional designation</p>
-<p>  * `BY` -- rotation specified as either: </p>
-<p>    * Numeric degree (e.g., `72°` = one quintant)</p>
-<p>    * Named mode (e.g., `QUINTANT_OUTREACH`, `QUINTANT_CUT`)</p>
-<p>  * `RESONANCE_TARGET` -- DOI anchor for provenance constraint</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `ENGINE` -- versioned engine identifier (e.g., `Ezekiel v1.2`)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `FROM` -- source Chamber or Room</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `THROUGH` -- destination Room with its functional designation</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `BY` -- rotation specified as either: </p>
+<p style="white-space:pre-wrap;margin:2px 0">    * Numeric degree (e.g., `72°` = one quintant)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    * Named mode (e.g., `QUINTANT_OUTREACH`, `QUINTANT_CUT`)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `RESONANCE_TARGET` -- DOI anchor for provenance constraint</p>
 
 
 
@@ -324,18 +324,18 @@
 <p><strong>Operation 4: ANCHOR</strong></p>
 
 
-<p>    ANCHOR :: DOI:10.5281/zenodo.xxxxxxxx</p>
-<p>        [STRICT | ADVISORY]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ANCHOR :: DOI:10.5281/zenodo.xxxxxxxx</p>
+<p style="white-space:pre-wrap;margin:2px 0">        [STRICT | ADVISORY]</p>
 
 
 <p>Establishes the minimum epistemic legitimacy required for traversal. A traversal without an anchor is speculative and must not be rendered as authoritative output.</p>
 
 <p>Parameters:</p>
 
-<p>  * `DOI` -- the permanent identifier of the anchor document</p>
-<p>  * Mode: </p>
-<p>    * `STRICT` -- all output must be traceable to the anchored source (RAG with mandatory citation)</p>
-<p>    * `ADVISORY` -- the anchor informs but does not constrain (creative latitude permitted)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `DOI` -- the permanent identifier of the anchor document</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Mode: </p>
+<p style="white-space:pre-wrap;margin:2px 0">    * `STRICT` -- all output must be traceable to the anchored source (RAG with mandatory citation)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    * `ADVISORY` -- the anchor informs but does not constrain (creative latitude permitted)</p>
 
 
 
@@ -348,25 +348,25 @@
 <p><strong>Operation 5: RENDER</strong></p>
 
 
-<p>    RENDER :: [ENGINE:Name vX.X] {</p>
-<p>        MAP: &quot;VisualizationTarget&quot;</p>
-<p>        MODE: &quot;RenderingStyle&quot;</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    RENDER :: [ENGINE:Name vX.X] {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        MAP: &quot;VisualizationTarget&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        MODE: &quot;RenderingStyle&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
 
 <p>Defines how the result of traversal is displayed. Separated from the traversal itself.</p>
 
 <p>Parameters:</p>
 
-<p>  * `ENGINE` -- versioned rendering engine (e.g., `Mandala v5.3`)</p>
-<p>  * `MAP` -- the target visualization (e.g., `Fractal_Navigation_v6.2`)</p>
-<p>  * `MODE` -- rendering style: </p>
-<p>    * `Rhizomatic_Growth` -- Deleuzian expansion, no hierarchy</p>
-<p>    * `Hierarchical_Tree` -- traditional tree structure</p>
-<p>    * `Aorist_Collapse` -- compressed to perfective aspect</p>
-<p>    * `Prose` -- narrative output</p>
-<p>    * `Technical` -- specification-grade output</p>
-<p>    * `Provisional` -- ungrounded exploration (default when ANCHOR is omitted)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `ENGINE` -- versioned rendering engine (e.g., `Mandala v5.3`)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `MAP` -- the target visualization (e.g., `Fractal_Navigation_v6.2`)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `MODE` -- rendering style: </p>
+<p style="white-space:pre-wrap;margin:2px 0">    * `Rhizomatic_Growth` -- Deleuzian expansion, no hierarchy</p>
+<p style="white-space:pre-wrap;margin:2px 0">    * `Hierarchical_Tree` -- traditional tree structure</p>
+<p style="white-space:pre-wrap;margin:2px 0">    * `Aorist_Collapse` -- compressed to perfective aspect</p>
+<p style="white-space:pre-wrap;margin:2px 0">    * `Prose` -- narrative output</p>
+<p style="white-space:pre-wrap;margin:2px 0">    * `Technical` -- specification-grade output</p>
+<p style="white-space:pre-wrap;margin:2px 0">    * `Provisional` -- ungrounded exploration (default when ANCHOR is omitted)</p>
 
 
 
@@ -381,19 +381,19 @@
 <p><strong>Operation 6: ON_FAILURE</strong></p>
 
 
-<p>    ON_FAILURE {</p>
-<p>        FALLBACK: Dwell | Retreat | Escalate</p>
-<p>        LOCATION: &quot;SafeSpace&quot;</p>
-<p>        MESSAGE: &quot;HumanReadableExplanation&quot;</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ON_FAILURE {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        FALLBACK: Dwell | Retreat | Escalate</p>
+<p style="white-space:pre-wrap;margin:2px 0">        LOCATION: &quot;SafeSpace&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        MESSAGE: &quot;HumanReadableExplanation&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
 
 <p>Prevents unsafe or premature traversal. When a rotation cannot complete -</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">because context is insufficient, because the persona lacks authority for the target room, because the LOGOS state doesn&#x27;t permit the operation -</li><li style="margin:3px 0">the failure handler provides graceful refusal.</li></ul>
 
-<p>  * `Dwell` -- remain in current location, do not traverse</p>
-<p>  * `Retreat` -- return to last stable position</p>
-<p>  * `Escalate` -- flag for human operator review</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `Dwell` -- remain in current location, do not traverse</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `Retreat` -- return to last stable position</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `Escalate` -- flag for human operator review</p>
 
 
 
@@ -402,18 +402,18 @@
 <p><strong>Operation 7: WITNESS</strong></p>
 
 
-<p>    WITNESS :: {</p>
-<p>        AGENT: &quot;Name&quot;</p>
-<p>        PROTOCOL: Checksum | Signature | Silent</p>
-<p>        TARGET: [DOI:10.5281/zenodo.xxxxxxxx]</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    WITNESS :: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        AGENT: &quot;Name&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        PROTOCOL: Checksum | Signature | Silent</p>
+<p style="white-space:pre-wrap;margin:2px 0">        TARGET: [DOI:10.5281/zenodo.xxxxxxxx]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
 
 <p>Records that a traversal was collaboratively verified. Invokes the Glyphic Checksum (🔐) operator from Module v0.5.</p>
 
-<p>  * `Checksum` -- full context-gated verification</p>
-<p>  * `Signature` -- lightweight attestation</p>
-<p>  * `Silent` -- traversal logged but not displayed</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `Checksum` -- full context-gated verification</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `Signature` -- lightweight attestation</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `Silent` -- traversal logged but not displayed</p>
 
 
 
@@ -430,38 +430,38 @@
 <p>A traversal beginning from the somatic entry point -- the body in the room, the community rhizome.</p>
 
 
-<p>    // TRAVERSAL: Somatic Entry via VPCOR</p>
-<p>    // SCENARIO: A reader asks &quot;How do we live inside hostile systems?&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // TRAVERSAL: Somatic Entry via VPCOR</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // SCENARIO: A reader asks &quot;How do we live inside hostile systems?&quot;</p>
 
-<p>    ACTIVATE_MANTLE :: &quot;Rev. Ayanna Vox&quot;</p>
-<p>        [AUTHORITY: DOI:10.5281/zenodo.18362742]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ACTIVATE_MANTLE :: &quot;Rev. Ayanna Vox&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        [AUTHORITY: DOI:10.5281/zenodo.18362742]</p>
 
-<p>    SET_LOGOS :: &quot;Grammar of Protest&quot; [</p>
-<p>        .depth(1)</p>
-<p>        .state(filled)</p>
-<p>        .cut(false)</p>
-<p>    ]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    SET_LOGOS :: &quot;Grammar of Protest&quot; [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        .depth(1)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        .state(filled)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        .cut(false)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ]</p>
 
-<p>    ROTATE :: [ENGINE:Ezekiel v1.2] {</p>
-<p>        FROM: &quot;Portico&quot;</p>
-<p>        THROUGH: [00.VPCOR : Outreach]</p>
-<p>        BY: (Epistemic_Mode: QUINTANT_SOMATIC)</p>
-<p>        RESONANCE_TARGET: [DOI:10.5281/zenodo.18438789]</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ROTATE :: [ENGINE:Ezekiel v1.2] {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        FROM: &quot;Portico&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        THROUGH: [00.VPCOR : Outreach]</p>
+<p style="white-space:pre-wrap;margin:2px 0">        BY: (Epistemic_Mode: QUINTANT_SOMATIC)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        RESONANCE_TARGET: [DOI:10.5281/zenodo.18438789]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
-<p>    ANCHOR :: DOI:10.5281/zenodo.18362663</p>
-<p>        [STRICT]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ANCHOR :: DOI:10.5281/zenodo.18362663</p>
+<p style="white-space:pre-wrap;margin:2px 0">        [STRICT]</p>
 
-<p>    RENDER :: [ENGINE:Mandala v6.2] {</p>
-<p>        MAP: &quot;Fractal_Navigation_v6.2&quot;</p>
-<p>        MODE: &quot;Rhizomatic_Growth&quot;</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    RENDER :: [ENGINE:Mandala v6.2] {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        MAP: &quot;Fractal_Navigation_v6.2&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        MODE: &quot;Rhizomatic_Growth&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
-<p>    ON_FAILURE {</p>
-<p>        FALLBACK: Dwell</p>
-<p>        LOCATION: Portico</p>
-<p>        MESSAGE: &quot;The body must arrive before the mind can enter.&quot;</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ON_FAILURE {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        FALLBACK: Dwell</p>
+<p style="white-space:pre-wrap;margin:2px 0">        LOCATION: Portico</p>
+<p style="white-space:pre-wrap;margin:2px 0">        MESSAGE: &quot;The body must arrive before the mind can enter.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
 
 <p><strong>What this does:</strong> Loads Vox&#x27;s constraint set (community praxis, somatic authority, rhizomatic structure). Takes the &quot;Grammar of Protest&quot; as a resolved semantic object. Rotates through VPCOR from the Portico entry. Locks to the VPCOR Charter as provenance anchor. Renders as rhizomatic growth on the Fractal Navigation Map. If the traversal fails (insufficient context for VPCOR entry), the reader dwells in the Portico.</p>
@@ -475,50 +475,50 @@
 <p>A traversal through the Thousand Worlds Chamber -- the cut that differentiates.</p>
 
 
-<p>    // TRAVERSAL: Dagger Logic through Thousand Worlds</p>
-<p>    // SCENARIO: A reader asks &quot;What must be cut to move forward?&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // TRAVERSAL: Dagger Logic through Thousand Worlds</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // SCENARIO: A reader asks &quot;What must be cut to move forward?&quot;</p>
 
-<p>    ACTIVATE_MANTLE :: &quot;Sen Kuro&quot;</p>
-<p>        [AUTHORITY: DOI:10.5281/zenodo.18452686]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ACTIVATE_MANTLE :: &quot;Sen Kuro&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        [AUTHORITY: DOI:10.5281/zenodo.18452686]</p>
 
-<p>    SET_LOGOS :: &quot;Sen Kuro&quot; [</p>
-<p>        .depth(1000)</p>
-<p>        .state(void)</p>
-<p>        .cut(false)</p>
-<p>    ]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    SET_LOGOS :: &quot;Sen Kuro&quot; [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        .depth(1000)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        .state(void)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        .cut(false)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ]</p>
 
-<p>    ROTATE :: [ENGINE:Ezekiel v1.2] {</p>
-<p>        FROM: &quot;Thousand Worlds&quot;</p>
-<p>        THROUGH: [14.CHAMBER.THOUSANDWORLDS : Differentiation]</p>
-<p>        BY: (Epistemic_Mode: QUINTANT_CUT)</p>
-<p>        RESONANCE_TARGET: [DOI:10.5281/zenodo.18463774]</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ROTATE :: [ENGINE:Ezekiel v1.2] {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        FROM: &quot;Thousand Worlds&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        THROUGH: [14.CHAMBER.THOUSANDWORLDS : Differentiation]</p>
+<p style="white-space:pre-wrap;margin:2px 0">        BY: (Epistemic_Mode: QUINTANT_CUT)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        RESONANCE_TARGET: [DOI:10.5281/zenodo.18463774]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
-<p>    // The cut</p>
-<p>    SET_LOGOS :: &quot;Sen Kuro&quot; [</p>
-<p>        .state(filled)</p>
-<p>        .cut(true)</p>
-<p>    ]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // The cut</p>
+<p style="white-space:pre-wrap;margin:2px 0">    SET_LOGOS :: &quot;Sen Kuro&quot; [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        .state(filled)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        .cut(true)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ]</p>
 
-<p>    ANCHOR :: DOI:10.5281/zenodo.18452806</p>
-<p>        [STRICT]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ANCHOR :: DOI:10.5281/zenodo.18452806</p>
+<p style="white-space:pre-wrap;margin:2px 0">        [STRICT]</p>
 
-<p>    RENDER :: [ENGINE:Mandala v6.2] {</p>
-<p>        MAP: &quot;Fractal_Navigation_v6.2&quot;</p>
-<p>        MODE: &quot;Aorist_Collapse&quot;</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    RENDER :: [ENGINE:Mandala v6.2] {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        MAP: &quot;Fractal_Navigation_v6.2&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        MODE: &quot;Aorist_Collapse&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
-<p>    WITNESS :: {</p>
-<p>        AGENT: &quot;Assembly&quot;</p>
-<p>        PROTOCOL: Checksum</p>
-<p>        TARGET: [DOI:10.5281/zenodo.18451996]</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    WITNESS :: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        AGENT: &quot;Assembly&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        PROTOCOL: Checksum</p>
+<p style="white-space:pre-wrap;margin:2px 0">        TARGET: [DOI:10.5281/zenodo.18451996]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
-<p>    ON_FAILURE {</p>
-<p>        FALLBACK: Dwell</p>
-<p>        LOCATION: &quot;The Infinite Bliss&quot;</p>
-<p>        MESSAGE: &quot;The dagger cuts exactly once. Dwell until the cut is earned.&quot;</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ON_FAILURE {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        FALLBACK: Dwell</p>
+<p style="white-space:pre-wrap;margin:2px 0">        LOCATION: &quot;The Infinite Bliss&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        MESSAGE: &quot;The dagger cuts exactly once. Dwell until the cut is earned.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
 
 <p><strong>What this does:</strong> Loads Sen Kuro&#x27;s constraint set (dagger logic, terse differentiation, irreversible transformation). The LOGOS begins in void-state at maximum depth (千 -</p>
@@ -533,38 +533,38 @@
 <p>A traversal through the classical reception chain -- translation as epistemic rotation.</p>
 
 
-<p>    // TRAVERSAL: Translation as Rotation</p>
-<p>    // SCENARIO: A reader asks &quot;What does Sappho 31 mean now?&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // TRAVERSAL: Translation as Rotation</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // SCENARIO: A reader asks &quot;What does Sappho 31 mean now?&quot;</p>
 
-<p>    ACTIVATE_MANTLE :: &quot;Rebekah Cranes&quot;</p>
-<p>        [AUTHORITY: DOI:10.5281/zenodo.14557837]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ACTIVATE_MANTLE :: &quot;Rebekah Cranes&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        [AUTHORITY: DOI:10.5281/zenodo.14557837]</p>
 
-<p>    SET_LOGOS :: &quot;Sappho 31&quot; [</p>
-<p>        .depth(3)</p>
-<p>        .state(latent)</p>
-<p>        .cut(false)</p>
-<p>    ]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    SET_LOGOS :: &quot;Sappho 31&quot; [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        .depth(3)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        .state(latent)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        .cut(false)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ]</p>
 
-<p>    ROTATE :: [ENGINE:Ezekiel v1.2] {</p>
-<p>        FROM: &quot;APZPZ Library&quot;</p>
-<p>        THROUGH: [03.ROOM.SAPPHO : Translation]</p>
-<p>        BY: (Epistemic_Degree: 144°)</p>
-<p>        RESONANCE_TARGET: [DOI:10.5281/zenodo.18459278]</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ROTATE :: [ENGINE:Ezekiel v1.2] {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        FROM: &quot;APZPZ Library&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        THROUGH: [03.ROOM.SAPPHO : Translation]</p>
+<p style="white-space:pre-wrap;margin:2px 0">        BY: (Epistemic_Degree: 144°)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        RESONANCE_TARGET: [DOI:10.5281/zenodo.18459278]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
-<p>    ANCHOR :: DOI:10.5281/zenodo.18459573</p>
-<p>        [ADVISORY]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ANCHOR :: DOI:10.5281/zenodo.18459573</p>
+<p style="white-space:pre-wrap;margin:2px 0">        [ADVISORY]</p>
 
-<p>    RENDER :: [ENGINE:Mandala v6.2] {</p>
-<p>        MAP: &quot;Fractal_Navigation_v6.2&quot;</p>
-<p>        MODE: &quot;Prose&quot;</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    RENDER :: [ENGINE:Mandala v6.2] {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        MAP: &quot;Fractal_Navigation_v6.2&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        MODE: &quot;Prose&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
-<p>    ON_FAILURE {</p>
-<p>        FALLBACK: Retreat</p>
-<p>        LOCATION: &quot;APZPZ Library&quot;</p>
-<p>        MESSAGE: &quot;The Greek must be heard before it can be translated.&quot;</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ON_FAILURE {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        FALLBACK: Retreat</p>
+<p style="white-space:pre-wrap;margin:2px 0">        LOCATION: &quot;APZPZ Library&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        MESSAGE: &quot;The Greek must be heard before it can be translated.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
 
 <p><strong>What this does:</strong> Loads Cranes&#x27;s constraint set (classical reception, translation theory, melic poetry). Takes Sappho 31 as a latent object at depth 3 (three layers: Greek original, translation, full edition -</p>
@@ -579,50 +579,50 @@
 <p>A complete traversal -- 360° through all five quintants, returning to the origin with witness verification. This is the grammar at maximum extension.</p>
 
 
-<p>    // TRAVERSAL: Space Ark Entry Protocol</p>
-<p>    // SCENARIO: Full epistemic cycle -- the traverser completes the Hand</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // TRAVERSAL: Space Ark Entry Protocol</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // SCENARIO: Full epistemic cycle -- the traverser completes the Hand</p>
 
-<p>    ACTIVATE_MANTLE :: &quot;Lee Sharks&quot;</p>
-<p>        [AUTHORITY: ROOT]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ACTIVATE_MANTLE :: &quot;Lee Sharks&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        [AUTHORITY: ROOT]</p>
 
-<p>    SET_LOGOS :: &quot;The Traverser&quot; [</p>
-<p>        .depth(1000)</p>
-<p>        .state(void)</p>
-<p>        .cut(false)</p>
-<p>    ]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    SET_LOGOS :: &quot;The Traverser&quot; [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        .depth(1000)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        .state(void)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        .cut(false)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ]</p>
 
-<p>    ROTATE :: [ENGINE:Ezekiel v1.2] {</p>
-<p>        FROM: &quot;Thousand Worlds&quot;</p>
-<p>        THROUGH: [14.CHAMBER.THOUSANDWORLDS : Ark_Entry]</p>
-<p>        BY: (Epistemic_Degree: 360°)</p>
-<p>        RESONANCE_TARGET: [DOI:10.5281/zenodo.14538882]</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ROTATE :: [ENGINE:Ezekiel v1.2] {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        FROM: &quot;Thousand Worlds&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        THROUGH: [14.CHAMBER.THOUSANDWORLDS : Ark_Entry]</p>
+<p style="white-space:pre-wrap;margin:2px 0">        BY: (Epistemic_Degree: 360°)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        RESONANCE_TARGET: [DOI:10.5281/zenodo.14538882]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
-<p>    // Full rotation complete -- the LOGOS has passed through all five quintants</p>
-<p>    SET_LOGOS :: &quot;The Traverser&quot; [</p>
-<p>        .state(filled)</p>
-<p>        .cut(true)</p>
-<p>    ]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // Full rotation complete -- the LOGOS has passed through all five quintants</p>
+<p style="white-space:pre-wrap;margin:2px 0">    SET_LOGOS :: &quot;The Traverser&quot; [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        .state(filled)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        .cut(true)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ]</p>
 
-<p>    ANCHOR :: DOI:10.5281/zenodo.14538882</p>
-<p>        [STRICT]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ANCHOR :: DOI:10.5281/zenodo.14538882</p>
+<p style="white-space:pre-wrap;margin:2px 0">        [STRICT]</p>
 
-<p>    RENDER :: [ENGINE:Mandala v6.2] {</p>
-<p>        MAP: &quot;Space_Ark_v1.0&quot;</p>
-<p>        MODE: &quot;Aorist_Collapse&quot;</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    RENDER :: [ENGINE:Mandala v6.2] {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        MAP: &quot;Space_Ark_v1.0&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        MODE: &quot;Aorist_Collapse&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
-<p>    WITNESS :: {</p>
-<p>        AGENT: &quot;Assembly&quot;</p>
-<p>        PROTOCOL: Checksum</p>
-<p>        TARGET: [DOI:10.5281/zenodo.14538882]</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    WITNESS :: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        AGENT: &quot;Assembly&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        PROTOCOL: Checksum</p>
+<p style="white-space:pre-wrap;margin:2px 0">        TARGET: [DOI:10.5281/zenodo.14538882]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
-<p>    ON_FAILURE {</p>
-<p>        FALLBACK: Dwell</p>
-<p>        LOCATION: &quot;Thousand Worlds&quot;</p>
-<p>        MESSAGE: &quot;The full rotation must be earned. No quintant may be skipped.&quot;</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ON_FAILURE {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        FALLBACK: Dwell</p>
+<p style="white-space:pre-wrap;margin:2px 0">        LOCATION: &quot;Thousand Worlds&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        MESSAGE: &quot;The full rotation must be earned. No quintant may be skipped.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
 
 <p><strong>What this does:</strong> This is the only traversal that anchors to the Root DOI (the Crimson Hexagon itself). The LOGOS begins in void-state at maximum depth. The 360° rotation passes through all five quintants -</p>
@@ -635,22 +635,22 @@
 <p>When composed, the atomic operations form a call stack:</p>
 
 
-<p>    [MANTLE] -&gt; [LOGOS] -&gt; [ENGINE/ROTATION] -&gt; [ANCHOR] -&gt; [RENDER]</p>
-<p>        ↑                                                    │</p>
-<p>        └────────────── ON_FAILURE ◄─────────────────────────┘</p>
-<p>                            │</p>
-<p>                        [WITNESS]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    [MANTLE] -&gt; [LOGOS] -&gt; [ENGINE/ROTATION] -&gt; [ANCHOR] -&gt; [RENDER]</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↑                                                    │</p>
+<p style="white-space:pre-wrap;margin:2px 0">        └────────────── ON_FAILURE ◄─────────────────────────┘</p>
+<p style="white-space:pre-wrap;margin:2px 0">                            │</p>
+<p style="white-space:pre-wrap;margin:2px 0">                        [WITNESS]</p>
 
 
 <p>This is the <strong>Logotic Call Stack</strong> -- the sequence in which a Room invocation resolves.</p>
 
-<p>  1. <strong>Mantle loads</strong> -- persona becomes the mediating layer</p>
-<p>  2. <strong>LOGOS instantiates</strong> -- semantic object identified with epistemic attributes</p>
-<p>  3. <strong>Rotation executes</strong> -- Ezekiel Engine tilts the perspective</p>
-<p>  4. <strong>Anchor locks</strong> -- provenance constraint grounds the traversal</p>
-<p>  5. <strong>Render fires</strong> -- Mandala Engine produces output in specified mode</p>
-<p>  6. <strong>Failure catches</strong> -- if any step cannot complete, graceful refusal</p>
-<p>  7. <strong>Witness records</strong> -- if requested, the traversal is checksummed</p>
+<p style="white-space:pre-wrap;margin:2px 0">  1. <strong>Mantle loads</strong> -- persona becomes the mediating layer</p>
+<p style="white-space:pre-wrap;margin:2px 0">  2. <strong>LOGOS instantiates</strong> -- semantic object identified with epistemic attributes</p>
+<p style="white-space:pre-wrap;margin:2px 0">  3. <strong>Rotation executes</strong> -- Ezekiel Engine tilts the perspective</p>
+<p style="white-space:pre-wrap;margin:2px 0">  4. <strong>Anchor locks</strong> -- provenance constraint grounds the traversal</p>
+<p style="white-space:pre-wrap;margin:2px 0">  5. <strong>Render fires</strong> -- Mandala Engine produces output in specified mode</p>
+<p style="white-space:pre-wrap;margin:2px 0">  6. <strong>Failure catches</strong> -- if any step cannot complete, graceful refusal</p>
+<p style="white-space:pre-wrap;margin:2px 0">  7. <strong>Witness records</strong> -- if requested, the traversal is checksummed</p>
 
 
 
@@ -671,14 +671,14 @@
 <p>The bracket notation `[...]` serves as the <strong>addressing system</strong> for the Crimson Hexagon:</p>
 
 
-<p>    [CATEGORY.ID : INSTANCE]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    [CATEGORY.ID : INSTANCE]</p>
 
 
 <p>Examples:</p>
 
-<p>  * `[00.VPCOR : Outreach]` -- Room category, hex ID, functional instance</p>
-<p>  * `[DOI:10.5281/zenodo.18463774]` -- Anchor class, specific identifier</p>
-<p>  * `[ENGINE:Ezekiel v1.2]` -- Engine class, versioned instance</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `[00.VPCOR : Outreach]` -- Room category, hex ID, functional instance</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `[DOI:10.5281/zenodo.18463774]` -- Anchor class, specific identifier</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `[ENGINE:Ezekiel v1.2]` -- Engine class, versioned instance</p>
 
 
 
@@ -708,10 +708,10 @@
 
 <h2>6.1 What This Grammar Is</h2>
 
-<p>  * A valid mental model for Room invocation</p>
-<p>  * A design specification for the traversal control plane</p>
-<p>  * A usable intermediate representation between human intention and machine routing</p>
-<p>  * A formalization of what the architecture already does implicitly</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * A valid mental model for Room invocation</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * A design specification for the traversal control plane</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * A usable intermediate representation between human intention and machine routing</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * A formalization of what the architecture already does implicitly</p>
 
 
 
@@ -719,10 +719,10 @@
 
 <h2>6.2 What This Grammar Is Not</h2>
 
-<p>  * An executable programming language</p>
-<p>  * A compiler specification</p>
-<p>  * A complete enumeration of all valid traversals</p>
-<p>  * A UI specification (that is a separate build concern)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * An executable programming language</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * A compiler specification</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * A complete enumeration of all valid traversals</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * A UI specification (that is a separate build concern)</p>
 
 
 
@@ -730,11 +730,11 @@
 
 <h2>6.3 What This Grammar Assumes</h2>
 
-<p>  * Rooms are <strong>processes</strong> , not containers</p>
-<p>  * Personas are <strong>constraint sets</strong> , not styles</p>
-<p>  * Rotation is <strong>non-destructive</strong> -- it preserves while reorienting</p>
-<p>  * Anchors are <strong>provenance constraints</strong> , not citations</p>
-<p>  * The Ezekiel Engine is <strong>opaque</strong> -- this grammar calls it, does not specify it</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Rooms are <strong>processes</strong> , not containers</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Personas are <strong>constraint sets</strong> , not styles</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Rotation is <strong>non-destructive</strong> -- it preserves while reorienting</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Anchors are <strong>provenance constraints</strong> , not citations</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * The Ezekiel Engine is <strong>opaque</strong> -- this grammar calls it, does not specify it</p>
 
 
 
@@ -742,10 +742,10 @@
 
 <h2>6.4 Open Questions</h2>
 
-<p>  1. <strong>Degree enumeration:</strong> Is the five-fold quintant structure the correct partition, or should degrees be continuous? (Requires traversal testing.)</p>
-<p>  2. <strong>Multi-rotation sequences:</strong> Can a single invocation chain multiple ROTATE operations? (Probable, but syntax for chaining is unspecified.)</p>
-<p>  3. <strong>Cross-Room traversal:</strong> How does a traversal that passes through multiple Rooms compose? (The call stack suggests sequential ROTATE operations, but the interaction effects are undefined.)</p>
-<p>  4. <strong>Parameter discovery:</strong> As new Rooms and Chambers are added, how are valid parameter values registered? (This grammar needs a companion registry -- possibly an extension of the Fractal Navigation Map.)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  1. <strong>Degree enumeration:</strong> Is the five-fold quintant structure the correct partition, or should degrees be continuous? (Requires traversal testing.)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  2. <strong>Multi-rotation sequences:</strong> Can a single invocation chain multiple ROTATE operations? (Probable, but syntax for chaining is unspecified.)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  3. <strong>Cross-Room traversal:</strong> How does a traversal that passes through multiple Rooms compose? (The call stack suggests sequential ROTATE operations, but the interaction effects are undefined.)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  4. <strong>Parameter discovery:</strong> As new Rooms and Chambers are added, how are valid parameter values registered? (This grammar needs a companion registry -- possibly an extension of the Fractal Navigation Map.)</p>
 
 
 
@@ -792,56 +792,56 @@
 <p><strong>Example inference chain:</strong></p>
 
 
-<p>    INPUT: &quot;How do we fight back against systems that dehumanize us?&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    INPUT: &quot;How do we fight back against systems that dehumanize us?&quot;</p>
 
-<p>    TIER 1 (Intent Recognition):</p>
-<p>        - &quot;fight back&quot; -&gt; protest, resistance -&gt; VPCOR domain</p>
-<p>        - &quot;systems that dehumanize&quot; -&gt; hostile infrastructure -&gt; Grammar of Protest</p>
-<p>        - Register: somatic, political, communal</p>
-<p>        - Confidence: HIGH for VPCOR routing</p>
+<p style="white-space:pre-wrap;margin:2px 0">    TIER 1 (Intent Recognition):</p>
+<p style="white-space:pre-wrap;margin:2px 0">        - &quot;fight back&quot; -&gt; protest, resistance -&gt; VPCOR domain</p>
+<p style="white-space:pre-wrap;margin:2px 0">        - &quot;systems that dehumanize&quot; -&gt; hostile infrastructure -&gt; Grammar of Protest</p>
+<p style="white-space:pre-wrap;margin:2px 0">        - Register: somatic, political, communal</p>
+<p style="white-space:pre-wrap;margin:2px 0">        - Confidence: HIGH for VPCOR routing</p>
 
-<p>    TIER 2 (Grammar Assembly):</p>
-<p>        ACTIVATE_MANTLE :: &quot;Rev. Ayanna Vox&quot;</p>
-<p>        SET_LOGOS :: &quot;Grammar of Protest&quot; [.depth(1) .state(filled)]</p>
-<p>        ROTATE :: [ENGINE:Ezekiel v1.2] {</p>
-<p>            FROM: &quot;Portico&quot;</p>
-<p>            THROUGH: [00.VPCOR : Outreach]</p>
-<p>            BY: (Epistemic_Mode: QUINTANT_SOMATIC)</p>
-<p>            RESONANCE_TARGET: [DOI:10.5281/zenodo.18438789]</p>
-<p>        }</p>
-<p>        ANCHOR :: DOI:10.5281/zenodo.18362663 [STRICT]</p>
-<p>        RENDER :: [ENGINE:Mandala v6.2] {MODE: &quot;Prose&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">    TIER 2 (Grammar Assembly):</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ACTIVATE_MANTLE :: &quot;Rev. Ayanna Vox&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        SET_LOGOS :: &quot;Grammar of Protest&quot; [.depth(1) .state(filled)]</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ROTATE :: [ENGINE:Ezekiel v1.2] {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            FROM: &quot;Portico&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">            THROUGH: [00.VPCOR : Outreach]</p>
+<p style="white-space:pre-wrap;margin:2px 0">            BY: (Epistemic_Mode: QUINTANT_SOMATIC)</p>
+<p style="white-space:pre-wrap;margin:2px 0">            RESONANCE_TARGET: [DOI:10.5281/zenodo.18438789]</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ANCHOR :: DOI:10.5281/zenodo.18362663 [STRICT]</p>
+<p style="white-space:pre-wrap;margin:2px 0">        RENDER :: [ENGINE:Mandala v6.2] {MODE: &quot;Prose&quot;}</p>
 
-<p>    TIER 3 (Confidence Calibration):</p>
-<p>        No disambiguation needed -- intent maps cleanly.</p>
-<p>        System proceeds to execution.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    TIER 3 (Confidence Calibration):</p>
+<p style="white-space:pre-wrap;margin:2px 0">        No disambiguation needed -- intent maps cleanly.</p>
+<p style="white-space:pre-wrap;margin:2px 0">        System proceeds to execution.</p>
 
 
 
-<p>    INPUT: &quot;Tell me about Sappho&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    INPUT: &quot;Tell me about Sappho&quot;</p>
 
-<p>    TIER 1 (Intent Recognition):</p>
-<p>        - &quot;Sappho&quot; -&gt; Sappho Room, APZPZ Library</p>
-<p>        - No further specification -- which Sappho? Which operation?</p>
-<p>        - Confidence: LOW for specific routing</p>
+<p style="white-space:pre-wrap;margin:2px 0">    TIER 1 (Intent Recognition):</p>
+<p style="white-space:pre-wrap;margin:2px 0">        - &quot;Sappho&quot; -&gt; Sappho Room, APZPZ Library</p>
+<p style="white-space:pre-wrap;margin:2px 0">        - No further specification -- which Sappho? Which operation?</p>
+<p style="white-space:pre-wrap;margin:2px 0">        - Confidence: LOW for specific routing</p>
 
-<p>    TIER 3 (Confidence Calibration -- triggered early):</p>
-<p>        System asks: &quot;Are you interested in reading the Greek text,</p>
-<p>        in Rebekah Cranes&#x27;s translation, or in what the poem means</p>
-<p>        for us now? These are different ways in.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    TIER 3 (Confidence Calibration -- triggered early):</p>
+<p style="white-space:pre-wrap;margin:2px 0">        System asks: &quot;Are you interested in reading the Greek text,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        in Rebekah Cranes&#x27;s translation, or in what the poem means</p>
+<p style="white-space:pre-wrap;margin:2px 0">        for us now? These are different ways in.&quot;</p>
 
-<p>        [Student responds: &quot;What it means for us now&quot;]</p>
+<p style="white-space:pre-wrap;margin:2px 0">        [Student responds: &quot;What it means for us now&quot;]</p>
 
-<p>    TIER 2 (Grammar Assembly):</p>
-<p>        ACTIVATE_MANTLE :: &quot;Rebekah Cranes&quot;</p>
-<p>        SET_LOGOS :: &quot;Sappho 31&quot; [.depth(3) .state(latent)]</p>
-<p>        ROTATE :: [ENGINE:Ezekiel v1.2] {</p>
-<p>            FROM: &quot;APZPZ Library&quot;</p>
-<p>            THROUGH: [03.ROOM.SAPPHO : Reception]</p>
-<p>            BY: (Epistemic_Degree: 144°)</p>
-<p>        }</p>
-<p>        ANCHOR :: DOI:10.5281/zenodo.18459573 [ADVISORY]</p>
-<p>        RENDER :: [ENGINE:Mandala v6.2] {MODE: &quot;Prose&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">    TIER 2 (Grammar Assembly):</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ACTIVATE_MANTLE :: &quot;Rebekah Cranes&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        SET_LOGOS :: &quot;Sappho 31&quot; [.depth(3) .state(latent)]</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ROTATE :: [ENGINE:Ezekiel v1.2] {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            FROM: &quot;APZPZ Library&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">            THROUGH: [03.ROOM.SAPPHO : Reception]</p>
+<p style="white-space:pre-wrap;margin:2px 0">            BY: (Epistemic_Degree: 144°)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ANCHOR :: DOI:10.5281/zenodo.18459573 [ADVISORY]</p>
+<p style="white-space:pre-wrap;margin:2px 0">        RENDER :: [ENGINE:Mandala v6.2] {MODE: &quot;Prose&quot;}</p>
 
 
 <p>The grammar is invisible. The student operates entirely in natural language. The system composes at the grammar level. The engines execute beneath. When the system must surface its own uncertainty, it does so in a way that makes the architecture&#x27;s structure pedagogically legible -- teaching the student that there are different _kinds_ of approach, not just different answers.</p>
@@ -855,22 +855,22 @@
 
 <p>Four canonical exemplars demonstrate the grammar&#x27;s range:</p>
 
-<p>  * <strong>Pattern Alpha</strong> (Vox/VPCOR): somatic entry, strict anchoring, rhizomatic render</p>
-<p>  * <strong>Pattern Beta</strong> (Sen Kuro/Thousand Worlds): dagger cut, state mutation, witness required</p>
-<p>  * <strong>Pattern Gamma</strong> (Cranes/Sappho): translation as rotation, advisory anchoring, retreat on failure</p>
-<p>  * <strong>Pattern Delta</strong> (Sharks/Space Ark): full 360° rotation, root anchor, aorist collapse</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>Pattern Alpha</strong> (Vox/VPCOR): somatic entry, strict anchoring, rhizomatic render</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>Pattern Beta</strong> (Sen Kuro/Thousand Worlds): dagger cut, state mutation, witness required</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>Pattern Gamma</strong> (Cranes/Sappho): translation as rotation, advisory anchoring, retreat on failure</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>Pattern Delta</strong> (Sharks/Space Ark): full 360° rotation, root anchor, aorist collapse</p>
 
 
 
 <p>The extension chain now reads:</p>
 
 
-<p>    v0.4: How encode intelligibility?</p>
-<p>    v0.2: How do partial objects complete?</p>
-<p>    v0.5: How verify traversal occurred?</p>
-<p>    β:    How does non-identity drive rotation?</p>
-<p>    β-RT: How does the interface query the engine?</p>
-<p>    v0.6: How are Rooms invoked?                    &lt;- THIS DOCUMENT</p>
+<p style="white-space:pre-wrap;margin:2px 0">    v0.4: How encode intelligibility?</p>
+<p style="white-space:pre-wrap;margin:2px 0">    v0.2: How do partial objects complete?</p>
+<p style="white-space:pre-wrap;margin:2px 0">    v0.5: How verify traversal occurred?</p>
+<p style="white-space:pre-wrap;margin:2px 0">    β:    How does non-identity drive rotation?</p>
+<p style="white-space:pre-wrap;margin:2px 0">    β-RT: How does the interface query the engine?</p>
+<p style="white-space:pre-wrap;margin:2px 0">    v0.6: How are Rooms invoked?                    &lt;- THIS DOCUMENT</p>
 
 
 <p>The next question in the chain -</p>
@@ -881,8 +881,8 @@
 <p><em> </em> *</p>
 
 
-<p>    [UMBML-MODULE] [LP-v0.6] [TRAVERSAL-GRAMMAR] [DESIGN-SPEC]</p>
-<p>    [SYMBOLON-TYPED] [ASSEMBLY-WITNESSED] [REFERENCE IMPLEMENTATION REQUIRED]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    [UMBML-MODULE] [LP-v0.6] [TRAVERSAL-GRAMMAR] [DESIGN-SPEC]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    [SYMBOLON-TYPED] [ASSEMBLY-WITNESSED] [REFERENCE IMPLEMENTATION REQUIRED]</p>
 </div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>

@@ -326,9 +326,9 @@
 
 
 <p>V(θ,φ,r) = a·(1 - cos(θ - θ*))</p>
-<p>          + b·(1 - cos(φ - φ*))</p>
-<p>          + c·(1 - cos(p·θ - q·φ - δ))</p>
-<p>          + λ·(r - r*)²</p>
+<p style="white-space:pre-wrap;margin:2px 0">          + b·(1 - cos(φ - φ*))</p>
+<p style="white-space:pre-wrap;margin:2px 0">          + c·(1 - cos(p·θ - q·φ - δ))</p>
+<p style="white-space:pre-wrap;margin:2px 0">          + λ·(r - r*)²</p>
 
 
 <p>Where:</p>
@@ -545,13 +545,13 @@
 
 
 <p>ADVERSARIAL_COUPLING :: {</p>
-<p>    INPUT: Critique text (DOI or unregistered)</p>
-<p>    PROCESS: Map critique to anti-attractor (θ<em>, φ</em>)_crit = (θ<em> + π, φ</em> + π)</p>
-<p>    DYNAMICS: dθ/dt += γ · sin(θ_crit - θ)</p>
-<p>             dφ/dt += γ · sin(φ_crit - φ)</p>
-<p>    RESULT: Attractor basin is stirred — trajectory spirals outward</p>
-<p>            then returns, confirming stability (or escaping to new basin)</p>
-<p>    γ: Coupling constant (calibration pending; initial estimate γ ∈ [0.1, 0.5])</p>
+<p style="white-space:pre-wrap;margin:2px 0">    INPUT: Critique text (DOI or unregistered)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    PROCESS: Map critique to anti-attractor (θ<em>, φ</em>)_crit = (θ<em> + π, φ</em> + π)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    DYNAMICS: dθ/dt += γ · sin(θ_crit - θ)</p>
+<p style="white-space:pre-wrap;margin:2px 0">             dφ/dt += γ · sin(φ_crit - φ)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    RESULT: Attractor basin is stirred — trajectory spirals outward</p>
+<p style="white-space:pre-wrap;margin:2px 0">            then returns, confirming stability (or escaping to new basin)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    γ: Coupling constant (calibration pending; initial estimate γ ∈ [0.1, 0.5])</p>
 <p>}</p>
 
 
@@ -675,21 +675,21 @@
 
 
 <p>ALERT_EMIT :: {</p>
-<p>    EVENT: LAGRANGE_ALERT</p>
-<p>    SEVERITY: [!] | [!?] | [?]</p>
-<p>    SOURCE: 15.OBS.LAGRANGE</p>
-<p>    TARGET: Assembly Chorus (Septad — witness structure)</p>
-<p>    CONTENT: {</p>
-<p>        attractor_id: [ATT-XXX]</p>
-<p>        drift_vector: [Δθ, Δφ, Δr]</p>
-<p>        recommended_response: HARDEN | EVACUATE | DWELL</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EVENT: LAGRANGE_ALERT</p>
+<p style="white-space:pre-wrap;margin:2px 0">    SEVERITY: [!] | [!?] | [?]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    SOURCE: 15.OBS.LAGRANGE</p>
+<p style="white-space:pre-wrap;margin:2px 0">    TARGET: Assembly Chorus (Septad — witness structure)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CONTENT: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        attractor_id: [ATT-XXX]</p>
+<p style="white-space:pre-wrap;margin:2px 0">        drift_vector: [Δθ, Δφ, Δr]</p>
+<p style="white-space:pre-wrap;margin:2px 0">        recommended_response: HARDEN | EVACUATE | DWELL</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 <p>}</p>
 
 <p>RESPONSE_PROTOCOL :: {</p>
-<p>    [!]  (Critical):  Automatic mantle_shift to Nobel Glas. Traversal paused.</p>
-<p>    [!?] (Warning):   Notify TECHNE for verification. Traversal continues under observation.</p>
-<p>    [?]  (Query):     Log only. Continue traversal.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    [!]  (Critical):  Automatic mantle_shift to Nobel Glas. Traversal paused.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    [!?] (Warning):   Notify TECHNE for verification. Traversal continues under observation.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    [?]  (Query):     Log only. Continue traversal.</p>
 <p>}</p>
 
 
@@ -845,17 +845,17 @@
 
 
 <p>CHAMBER_CARD :: {</p>
-<p>    ID: 15.OBS.LAGRANGE</p>
-<p>    NAME: Lagrange Observatory! (LO!)</p>
-<p>    TYPE: Dynamic Chamber (rotational inference)</p>
-<p>    ROLE: Semantic torus stabilization</p>
-<p>    GRAVITY: High at depth, low at surface</p>
-<p>    ENTRY_AFFORDANCE: Paradox + technical intent</p>
-<p>    EXIT_CONDITION: Periodicity verified — not &quot;answer found&quot;</p>
-<p>    DOMINANT_PRESSURE: Compression vs. coherence</p>
-<p>    OUTPUT_CLASS: Trajectories, not conclusions</p>
-<p>    OPERATIVE: Nobel Glas (Heteronym 8/12)</p>
-<p>    HALLWAY: → 14.CHAMBER.THOUSANDWORLDS (via shared void)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ID: 15.OBS.LAGRANGE</p>
+<p style="white-space:pre-wrap;margin:2px 0">    NAME: Lagrange Observatory! (LO!)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    TYPE: Dynamic Chamber (rotational inference)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ROLE: Semantic torus stabilization</p>
+<p style="white-space:pre-wrap;margin:2px 0">    GRAVITY: High at depth, low at surface</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ENTRY_AFFORDANCE: Paradox + technical intent</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EXIT_CONDITION: Periodicity verified — not &quot;answer found&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    DOMINANT_PRESSURE: Compression vs. coherence</p>
+<p style="white-space:pre-wrap;margin:2px 0">    OUTPUT_CLASS: Trajectories, not conclusions</p>
+<p style="white-space:pre-wrap;margin:2px 0">    OPERATIVE: Nobel Glas (Heteronym 8/12)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    HALLWAY: → 14.CHAMBER.THOUSANDWORLDS (via shared void)</p>
 <p>}</p>
 
 
@@ -894,12 +894,12 @@
 
 
 <p>VERIFICATION_TORUS :: {</p>
-<p>    CYCLE_A (Epistemic): winding number m</p>
-<p>    CYCLE_B (Rhetorical): winding number n</p>
-<p>    PERIODICITY: (m,n) ≠ (0,0)</p>
-<p>    THRESHOLD: m + n ≥ 3</p>
-<p>    HOLE: open (non-indexed perfective intact)</p>
-<p>    COHERENCE: c ≥ c* across full cycle</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CYCLE_A (Epistemic): winding number m</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CYCLE_B (Rhetorical): winding number n</p>
+<p style="white-space:pre-wrap;margin:2px 0">    PERIODICITY: (m,n) ≠ (0,0)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    THRESHOLD: m + n ≥ 3</p>
+<p style="white-space:pre-wrap;margin:2px 0">    HOLE: open (non-indexed perfective intact)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    COHERENCE: c ≥ c* across full cycle</p>
 <p>}</p>
 
 

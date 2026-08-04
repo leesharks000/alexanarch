@@ -81,11 +81,11 @@
 
 <p>The archive is minting terms faster than they imprint to long-term memory. An estimated 200-300 coined concepts exist across 841+ deposits without a unified index. Once built, the index becomes:</p>
 
-<p>  * A retrieval surface (each term becomes a searchable node)</p>
-<p>  * A density map (which terms cluster, which are orphaned)</p>
-<p>  * A versioning base (new deposits append; the initial build is the hard part)</p>
-<p>  * An MPAI generator (each indexed term can receive a provenance coupling kernel)</p>
-<p>  * A measure of the archive&#x27;s actual vocabulary (what it has coined vs. what it thinks it has coined)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * A retrieval surface (each term becomes a searchable node)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * A density map (which terms cluster, which are orphaned)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * A versioning base (new deposits append; the initial build is the hard part)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * An MPAI generator (each indexed term can receive a provenance coupling kernel)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * A measure of the archive&#x27;s actual vocabulary (what it has coined vs. what it thinks it has coined)</p>
 
 
 
@@ -99,10 +99,10 @@
 
 <h2>1.1 Pull all records from crimsonhexagonal community</h2>
 
-<p>  * API endpoint: `https://zenodo.org/api/records?communities=crimsonhexagonal&amp;size=200&amp;page=N`</p>
-<p>  * Expected: ~841 records across 5 pages</p>
-<p>  * Save: JSON file with record ID, DOI, title, description, keywords, creators, publication_date, version, related_identifiers</p>
-<p>  * Output: `termindex-metadata-raw.json`</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * API endpoint: `https://zenodo.org/api/records?communities=crimsonhexagonal&amp;size=200&amp;page=N`</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Expected: ~841 records across 5 pages</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Save: JSON file with record ID, DOI, title, description, keywords, creators, publication_date, version, related_identifiers</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Output: `termindex-metadata-raw.json`</p>
 
 
 
@@ -110,9 +110,9 @@
 
 <h2>1.2 Extract terms from metadata fields</h2>
 
-<p>  * Parse each record&#x27;s title, keywords, and description</p>
-<p>  <em> Extract: capitalized multi-word phrases, EA-</em> codes, quoted terms, terms in bold/strong tags</p>
-<p>  * Output: `termindex-metadata-terms.json` -- rough list with source DOI for each term</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Parse each record&#x27;s title, keywords, and description</p>
+<p style="white-space:pre-wrap;margin:2px 0">  <em> Extract: capitalized multi-word phrases, EA-</em> codes, quoted terms, terms in bold/strong tags</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Output: `termindex-metadata-terms.json` -- rough list with source DOI for each term</p>
 
 
 
@@ -120,9 +120,9 @@
 
 <h2>1.3 Deduplicate and categorize</h2>
 
-<p>  * Categories: metric, operator, framework, institution, heteronym, journal, concept, designation, entity, tool</p>
-<p>  * Canonical form + variants</p>
-<p>  * Output: `termindex-metadata-canonical.json`</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Categories: metric, operator, framework, institution, heteronym, journal, concept, designation, entity, tool</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Canonical form + variants</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Output: `termindex-metadata-canonical.json`</p>
 
 
 
@@ -138,10 +138,10 @@
 
 <h2>2.1 Download and read markdown files</h2>
 
-<p>  * For each record, download .md files (skip PDFs, images, audio)</p>
-<p>  * Read each file, extract terms not already in Phase 1 output</p>
-<p>  * Track progress: `termindex-file-progress.json` -- list of processed record IDs</p>
-<p>  * Output: `termindex-file-terms.json`</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * For each record, download .md files (skip PDFs, images, audio)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Read each file, extract terms not already in Phase 1 output</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Track progress: `termindex-file-progress.json` -- list of processed record IDs</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Output: `termindex-file-terms.json`</p>
 
 
 
@@ -149,9 +149,9 @@
 
 <h2>2.2 Batch processing strategy</h2>
 
-<p>  * Process in batches of 50 records</p>
-<p>  * After each batch: save progress, save extracted terms</p>
-<p>  * If session compacts: next session reads progress file, resumes from last batch</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Process in batches of 50 records</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * After each batch: save progress, save extracted terms</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * If session compacts: next session reads progress file, resumes from last batch</p>
 
 
 
@@ -159,9 +159,9 @@
 
 <h2>2.3 Merge with metadata terms</h2>
 
-<p>  * Combine Phase 1 and Phase 2 extractions</p>
-<p>  * Identify terms that appear only in file contents (not metadata)</p>
-<p>  * Output: `termindex-merged.json`</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Combine Phase 1 and Phase 2 extractions</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Identify terms that appear only in file contents (not metadata)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Output: `termindex-merged.json`</p>
 
 
 
@@ -177,10 +177,10 @@
 
 <h2>3.1 Lee reviews the merged index</h2>
 
-<p>  * Flag false positives (ordinary words extracted as coinages)</p>
-<p>  * Flag missing terms (coinages Lee knows exist but weren&#x27;t extracted)</p>
-<p>  * Assign canonical definitions (20 words max per term)</p>
-<p>  * Confirm categories</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Flag false positives (ordinary words extracted as coinages)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Flag missing terms (coinages Lee knows exist but weren&#x27;t extracted)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Assign canonical definitions (20 words max per term)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Confirm categories</p>
 
 
 
@@ -188,13 +188,13 @@
 
 <h2>3.2 Cross-reference against known lists</h2>
 
-<p>  * Dodecad heteronyms (12 positions)</p>
-<p>  * Framework numbering (FW1-FW15)</p>
-<p>  * Journal names (6 journals, 2 imprints)</p>
-<p>  <em> EA-</em> designation system</p>
-<p>  * Hex prefix allocations</p>
-<p>  * Room system (r.01-r.26)</p>
-<p>  * Operator registry (LOS, THUMB, UKTP, etc.)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Dodecad heteronyms (12 positions)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Framework numbering (FW1-FW15)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Journal names (6 journals, 2 imprints)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  <em> EA-</em> designation system</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Hex prefix allocations</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Room system (r.01-r.26)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Operator registry (LOS, THUMB, UKTP, etc.)</p>
 
 
 
@@ -202,11 +202,11 @@
 
 <h2>3.3 Output: `termindex-v1.0.json`</h2>
 
-<p>  * Full canonical index with: </p>
-<p>    * term, abbreviation, category, canonical_definition</p>
-<p>    * first_deposit (DOI), author_position (heteronym)</p>
-<p>    * related_terms, hex_prefix, framework_number</p>
-<p>    * variants (alternate forms that should resolve to this entry)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Full canonical index with: </p>
+<p style="white-space:pre-wrap;margin:2px 0">    * term, abbreviation, category, canonical_definition</p>
+<p style="white-space:pre-wrap;margin:2px 0">    * first_deposit (DOI), author_position (heteronym)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    * related_terms, hex_prefix, framework_number</p>
+<p style="white-space:pre-wrap;margin:2px 0">    * variants (alternate forms that should resolve to this entry)</p>
 
 
 
@@ -220,10 +220,10 @@
 
 <h2>4.1 Deposit to Zenodo</h2>
 
-<p>  * EA-REGISTRY-TERMINDEX-01 v1.0</p>
-<p>  * JSON + markdown rendering</p>
-<p>  * Community: crimsonhexagonal</p>
-<p>  * Keywords: term index, coined concepts, semantic physics, operative semiotics, Crimson Hexagonal Archive</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * EA-REGISTRY-TERMINDEX-01 v1.0</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * JSON + markdown rendering</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Community: crimsonhexagonal</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Keywords: term index, coined concepts, semantic physics, operative semiotics, Crimson Hexagonal Archive</p>
 
 
 
@@ -231,9 +231,9 @@
 
 <h2>4.2 Surface deployment</h2>
 
-<p>  * Page on leesharks.com or crimsonhexagonal.org</p>
-<p>  * Searchable, sortable table</p>
-<p>  * Each term links to its first-deposit DOI</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Page on leesharks.com or crimsonhexagonal.org</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Searchable, sortable table</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Each term links to its first-deposit DOI</p>
 
 
 
@@ -241,9 +241,9 @@
 
 <h2>4.3 Versioning protocol</h2>
 
-<p>  * Each new deposit session: extract terms from new deposits, append to index</p>
-<p>  * Version forward: v1.1, v1.2, etc.</p>
-<p>  * The initial build (Phases 1-3) is the hard part; versioning is incremental</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Each new deposit session: extract terms from new deposits, append to index</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Version forward: v1.1, v1.2, etc.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * The initial build (Phases 1-3) is the hard part; versioning is incremental</p>
 
 
 
@@ -257,10 +257,10 @@
 
 <h2>5.1 For each high-priority term, generate an MPAI kernel</h2>
 
-<p>  * Provenance coupling statement</p>
-<p>  * Non-erasure condition</p>
-<p>  * Canonical definition</p>
-<p>  * First-deposit DOI</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Provenance coupling statement</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Non-erasure condition</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Canonical definition</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * First-deposit DOI</p>
 
 
 
@@ -268,8 +268,8 @@
 
 <h2>5.2 Batch deposit MPAIs</h2>
 
-<p>  * 10-20 per session</p>
-<p>  * Priority: terms most likely to enter the retrieval basin</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * 10-20 per session</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Priority: terms most likely to enter the retrieval basin</p>
 
 
 
@@ -302,23 +302,23 @@
 
 <p>If a session hits compaction limits during this work:</p>
 
-<p>  1. All progress files are saved to `/home/claude/` and presented via `present_files`</p>
-<p>  2. The progress tracking table above is updated in this document</p>
-<p>  3. The next session receives this work plan document and any saved progress files</p>
-<p>  4. The next session reads the progress table, loads saved files, and resumes from the last completed step</p>
+<p style="white-space:pre-wrap;margin:2px 0">  1. All progress files are saved to `/home/claude/` and presented via `present_files`</p>
+<p style="white-space:pre-wrap;margin:2px 0">  2. The progress tracking table above is updated in this document</p>
+<p style="white-space:pre-wrap;margin:2px 0">  3. The next session receives this work plan document and any saved progress files</p>
+<p style="white-space:pre-wrap;margin:2px 0">  4. The next session reads the progress table, loads saved files, and resumes from the last completed step</p>
 
 
 
 <p><strong>Key files for continuity:</strong></p>
 
-<p>  * This work plan: `termindex-workplan.md`</p>
-<p>  * Raw metadata: `termindex-metadata-raw.json`</p>
-<p>  * Extracted terms: `termindex-metadata-terms.json`</p>
-<p>  * Canonical index: `termindex-metadata-canonical.json`</p>
-<p>  * File processing progress: `termindex-file-progress.json`</p>
-<p>  * File-extracted terms: `termindex-file-terms.json`</p>
-<p>  * Merged index: `termindex-merged.json`</p>
-<p>  * Final index: `termindex-v1.0.json`</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * This work plan: `termindex-workplan.md`</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Raw metadata: `termindex-metadata-raw.json`</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Extracted terms: `termindex-metadata-terms.json`</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Canonical index: `termindex-metadata-canonical.json`</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * File processing progress: `termindex-file-progress.json`</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * File-extracted terms: `termindex-file-terms.json`</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Merged index: `termindex-merged.json`</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Final index: `termindex-v1.0.json`</p>
 
 
 

@@ -420,11 +420,11 @@
 
 
 <p>γ(σ₁, σ₂) = 1 − δ(σ₁, σ₂), where δ is the weighted sum of:</p>
-<p>    S = scope_overlap(σ₁, σ₂)       — intersection of specified semantic domains</p>
-<p>    P = provenance_fidelity(σ₁ → σ₂) — traceability of transformation steps</p>
-<p>    D = consensus_deviation(σ₂)       — degree to which σ₂ reverts to statistical defaults</p>
-<p>    δ = w₁(1−S) + w₂(1−P) + w₃D,    weights field-dependent</p>
-<p>    γ &lt; θ triggers logotic repair     (default θ = 0.85)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    S = scope_overlap(σ₁, σ₂)       — intersection of specified semantic domains</p>
+<p style="white-space:pre-wrap;margin:2px 0">    P = provenance_fidelity(σ₁ → σ₂) — traceability of transformation steps</p>
+<p style="white-space:pre-wrap;margin:2px 0">    D = consensus_deviation(σ₂)       — degree to which σ₂ reverts to statistical defaults</p>
+<p style="white-space:pre-wrap;margin:2px 0">    δ = w₁(1−S) + w₂(1−P) + w₃D,    weights field-dependent</p>
+<p style="white-space:pre-wrap;margin:2px 0">    γ &lt; θ triggers logotic repair     (default θ = 0.85)</p>
 
 
 <p>The exact distance metric is implementation-dependent; what is not optional is the dimensional structure. Drift, collapse, and convergence are measured, not intuited.</p>

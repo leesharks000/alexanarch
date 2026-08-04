@@ -152,21 +152,21 @@
 
 
 <p>LOGOTIC PROGRAMMING v0.4 (Sigil/Fraction)</p>
-<p>    ↓ &quot;How encode conditions of intelligibility?&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ↓ &quot;How encode conditions of intelligibility?&quot;</p>
 <p>SYMBOLON ARCHITECTURE v0.2 (Sharks/Morrow)</p>
-<p>    ↓ &quot;How do partial objects complete through traversal?&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ↓ &quot;How do partial objects complete through traversal?&quot;</p>
 <p>GLYPHIC CHECKSUM v0.5 (Morrow/UMBML)</p>
-<p>    ↓ &quot;How verify that traversal occurred?&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ↓ &quot;How verify that traversal occurred?&quot;</p>
 <p>THE BLIND OPERATOR β (TECHNE/Kimi)</p>
-<p>    ↓ &quot;How does non-identity function as engine condition?&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ↓ &quot;How does non-identity function as engine condition?&quot;</p>
 <p>β-RUNTIME (TECHNE/Kimi)</p>
-<p>    ↓ &quot;How does the interface layer query the engine?&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ↓ &quot;How does the interface layer query the engine?&quot;</p>
 <p>THE TRAVERSAL GRAMMAR v0.6 (Morrow/UMBML)</p>
-<p>    ↓ &quot;How are Rooms invoked?&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ↓ &quot;How are Rooms invoked?&quot;</p>
 <p>THE CONFORMANCE MODULE v0.7 (Morrow/UMBML)</p>
-<p>    ↓ &quot;How do we know an implementation is correct?&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ↓ &quot;How do we know an implementation is correct?&quot;</p>
 <p>THE TELEMETRY MODULE v0.8 (Morrow/UMBML)    ← THIS DOCUMENT</p>
-<p>    ↓ &quot;What does the traversal say about itself?&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ↓ &quot;What does the traversal say about itself?&quot;</p>
 
 <p>#</p>
 
@@ -205,10 +205,10 @@
 
 
 <p>EMIT :: {</p>
-<p>    STEP: OperationReference</p>
-<p>    EVENT: EventType</p>
-<p>    CONTENT: EmitPayload</p>
-<p>    COST: CostRecord | null</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STEP: OperationReference</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EVENT: EventType</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CONTENT: EmitPayload</p>
+<p style="white-space:pre-wrap;margin:2px 0">    COST: CostRecord | null</p>
 <p>}</p>
 
 
@@ -327,12 +327,12 @@
 
 
 <p>EmitPayload :: {</p>
-<p>    timestamp: ISO8601,</p>
-<p>    trace_id: TraversalID,      // unique per traversal program</p>
-<p>    chain_position: Integer,     // 0 for unchained, n for nth link</p>
-<p>    mantle_active: MantleName,</p>
-<p>    logos_state: LogosSnapshot,</p>
-<p>    event_specific: { ... }      // varies by EventType</p>
+<p style="white-space:pre-wrap;margin:2px 0">    timestamp: ISO8601,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    trace_id: TraversalID,      // unique per traversal program</p>
+<p style="white-space:pre-wrap;margin:2px 0">    chain_position: Integer,     // 0 for unchained, n for nth link</p>
+<p style="white-space:pre-wrap;margin:2px 0">    mantle_active: MantleName,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    logos_state: LogosSnapshot,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    event_specific: { ... }      // varies by EventType</p>
 <p>}</p>
 
 
@@ -382,10 +382,10 @@
 
 
 <p>SPAN: {</p>
-<p>    name: &quot;tool.execute&quot;,</p>
-<p>    status: &quot;success&quot;,</p>
-<p>    duration_ms: 800,</p>
-<p>    attributes: { tool: &quot;retrieval&quot;, tokens_in: 450, tokens_out: 1200 }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    name: &quot;tool.execute&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    status: &quot;success&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    duration_ms: 800,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    attributes: { tool: &quot;retrieval&quot;, tokens_in: 450, tokens_out: 1200 }</p>
 <p>}</p>
 
 
@@ -393,33 +393,33 @@
 
 
 <p>SEMANTIC_SPAN: {</p>
-<p>    // Operational layer (maps to standard tracing)</p>
-<p>    name: &quot;ROTATE::1&quot;,</p>
-<p>    status: &quot;completed&quot;,</p>
-<p>    duration_ms: 800,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // Operational layer (maps to standard tracing)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    name: &quot;ROTATE::1&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    status: &quot;completed&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    duration_ms: 800,</p>
 
-<p>    // Semantic layer (maps to grammar)</p>
-<p>    event: &quot;ROTATION_COMPLETED&quot;,</p>
-<p>    room: &quot;03.ROOM.SAPPHO&quot;,</p>
-<p>    function: &quot;Reception&quot;,</p>
-<p>    degrees_traversed: 72,</p>
-<p>    cumulative_degrees: 144,</p>
-<p>    logos_delta: { state: &quot;latent → filled&quot;, cut: &quot;false → false&quot; },</p>
-<p>    mantle: &quot;Rebekah Cranes&quot;,</p>
-<p>    anchors_active: [&quot;DOI:10.5281/zenodo.18459278 [STRICT]&quot;],</p>
-<p>    drift_detected: false,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // Semantic layer (maps to grammar)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    event: &quot;ROTATION_COMPLETED&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    room: &quot;03.ROOM.SAPPHO&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    function: &quot;Reception&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    degrees_traversed: 72,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    cumulative_degrees: 144,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    logos_delta: { state: &quot;latent → filled&quot;, cut: &quot;false → false&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    mantle: &quot;Rebekah Cranes&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    anchors_active: [&quot;DOI:10.5281/zenodo.18459278 [STRICT]&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">    drift_detected: false,</p>
 
-<p>    // Cost layer (see §3)</p>
-<p>    cost: {</p>
-<p>        substrate: { tokens: 1650, wall_time_ms: 800 },</p>
-<p>        semantic: {</p>
-<p>            labor: {</p>
-<p>                epistemic_distance: { degrees_requested: 72, degrees_traversed: 72, completion_ratio: 1.0 },</p>
-<p>                transformative_depth: &quot;structural&quot;,</p>
-<p>                drift_vector: { magnitude: 0.0, direction: null }</p>
-<p>            }</p>
-<p>        }</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // Cost layer (see §3)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    cost: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        substrate: { tokens: 1650, wall_time_ms: 800 },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        semantic: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            labor: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">                epistemic_distance: { degrees_requested: 72, degrees_traversed: 72, completion_ratio: 1.0 },</p>
+<p style="white-space:pre-wrap;margin:2px 0">                transformative_depth: &quot;structural&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                drift_vector: { magnitude: 0.0, direction: null }</p>
+<p style="white-space:pre-wrap;margin:2px 0">            }</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 <p>}</p>
 
 
@@ -587,21 +587,21 @@
 
 
 <p>CostRecord :: {</p>
-<p>    // Substrate costs (conventional metrics — may be null if not tracked)</p>
-<p>    substrate: {</p>
-<p>        tokens: Integer | null,              // tokens consumed by engine</p>
-<p>        wall_time_ms: Integer | null,        // elapsed time</p>
-<p>        tool_calls: Integer | null,          // external tool invocations</p>
-<p>        retrieval_queries: Integer | null     // RAG queries executed</p>
-<p>    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // Substrate costs (conventional metrics — may be null if not tracked)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    substrate: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        tokens: Integer | null,              // tokens consumed by engine</p>
+<p style="white-space:pre-wrap;margin:2px 0">        wall_time_ms: Integer | null,        // elapsed time</p>
+<p style="white-space:pre-wrap;margin:2px 0">        tool_calls: Integer | null,          // external tool invocations</p>
+<p style="white-space:pre-wrap;margin:2px 0">        retrieval_queries: Integer | null     // RAG queries executed</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
 
-<p>    // Semantic costs (LP-native metrics — always present for degree-bearing operations)</p>
-<p>    semantic: {</p>
-<p>        labor: SemanticLabor | null,         // vector (see §3.3); null for non-degree operations</p>
-<p>        degrees_per_token: Float | null,     // correlation metric (see note below); null if substrate.tokens unknown</p>
-<p>        anchor_load: Integer,                // number of active strict anchors</p>
-<p>        drift_magnitude: Float | null        // shorthand from labor.drift_vector.magnitude</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // Semantic costs (LP-native metrics — always present for degree-bearing operations)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    semantic: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        labor: SemanticLabor | null,         // vector (see §3.3); null for non-degree operations</p>
+<p style="white-space:pre-wrap;margin:2px 0">        degrees_per_token: Float | null,     // correlation metric (see note below); null if substrate.tokens unknown</p>
+<p style="white-space:pre-wrap;margin:2px 0">        anchor_load: Integer,                // number of active strict anchors</p>
+<p style="white-space:pre-wrap;margin:2px 0">        drift_magnitude: Float | null        // shorthand from labor.drift_vector.magnitude</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 <p>}</p>
 
 
@@ -624,24 +624,24 @@
 
 
 <p>SemanticLabor :: {</p>
-<p>    // Positional: did the rotation go where it was asked to go?</p>
-<p>    epistemic_distance: {</p>
-<p>        degrees_requested: Integer,</p>
-<p>        degrees_traversed: Integer,</p>
-<p>        completion_ratio: Float       // traversed / requested</p>
-<p>    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // Positional: did the rotation go where it was asked to go?</p>
+<p style="white-space:pre-wrap;margin:2px 0">    epistemic_distance: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        degrees_requested: Integer,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        degrees_traversed: Integer,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        completion_ratio: Float       // traversed / requested</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
 
-<p>    // Qualitative: what kind of change did the rotation produce?</p>
-<p>    transformative_depth: &quot;surface&quot; | &quot;structural&quot; | &quot;ontological&quot;,</p>
-<p>    //   surface:     LOGOS state unchanged, position shifted (rotation without cut)</p>
-<p>    //   structural:  LOGOS state changed within type (latent → filled, depth increased)</p>
-<p>    //   ontological: LOGOS state changed across type (cut applied, state category shifted)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // Qualitative: what kind of change did the rotation produce?</p>
+<p style="white-space:pre-wrap;margin:2px 0">    transformative_depth: &quot;surface&quot; | &quot;structural&quot; | &quot;ontological&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    //   surface:     LOGOS state unchanged, position shifted (rotation without cut)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    //   structural:  LOGOS state changed within type (latent → filled, depth increased)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    //   ontological: LOGOS state changed across type (cut applied, state category shifted)</p>
 
-<p>    // Directional: did the rotation drift from structural preservation?</p>
-<p>    drift_vector: {</p>
-<p>        magnitude: Float,             // 0.0 = no drift, approaching 1.0 = reframing</p>
-<p>        direction: DriftDirection | null   // closed vocabulary (see below)</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // Directional: did the rotation drift from structural preservation?</p>
+<p style="white-space:pre-wrap;margin:2px 0">    drift_vector: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        magnitude: Float,             // 0.0 = no drift, approaching 1.0 = reframing</p>
+<p style="white-space:pre-wrap;margin:2px 0">        direction: DriftDirection | null   // closed vocabulary (see below)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 <p>}</p>
 
 
@@ -776,274 +776,274 @@
 <p>// trace_id: TRV-2026-0204-001</p>
 
 <p>EMIT :: {</p>
-<p>    STEP: ACTIVATE_MANTLE::0</p>
-<p>    EVENT: MANTLE_ACTIVATED</p>
-<p>    CONTENT: {</p>
-<p>        timestamp: &quot;2026-02-04T14:32:01.003Z&quot;,</p>
-<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
-<p>        chain_position: 0,</p>
-<p>        mantle_active: &quot;Rebekah Cranes&quot;,</p>
-<p>        logos_state: null,    // LOGOS not yet initialized</p>
-<p>        event_specific: {</p>
-<p>            authority: &quot;DOI:10.5281/zenodo.14557837&quot;,</p>
-<p>            constraints_loaded: 14,</p>
-<p>            rooms_available: [&quot;SAPPHO&quot;, &quot;CATULLUS&quot;, &quot;APZPZ&quot;, ...],</p>
-<p>            rooms_forbidden: [&quot;THOUSANDWORLDS&quot;]   // Cranes cannot enter alone</p>
-<p>        }</p>
-<p>    }</p>
-<p>    COST: null    // No substrate cost for mantle activation</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STEP: ACTIVATE_MANTLE::0</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EVENT: MANTLE_ACTIVATED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CONTENT: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        timestamp: &quot;2026-02-04T14:32:01.003Z&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        chain_position: 0,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mantle_active: &quot;Rebekah Cranes&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        logos_state: null,    // LOGOS not yet initialized</p>
+<p style="white-space:pre-wrap;margin:2px 0">        event_specific: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            authority: &quot;DOI:10.5281/zenodo.14557837&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            constraints_loaded: 14,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            rooms_available: [&quot;SAPPHO&quot;, &quot;CATULLUS&quot;, &quot;APZPZ&quot;, ...],</p>
+<p style="white-space:pre-wrap;margin:2px 0">            rooms_forbidden: [&quot;THOUSANDWORLDS&quot;]   // Cranes cannot enter alone</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    COST: null    // No substrate cost for mantle activation</p>
 <p>}</p>
 
 <p>EMIT :: {</p>
-<p>    STEP: SET_LOGOS::0</p>
-<p>    EVENT: LOGOS_INITIALIZED</p>
-<p>    CONTENT: {</p>
-<p>        timestamp: &quot;2026-02-04T14:32:01.015Z&quot;,</p>
-<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
-<p>        chain_position: 0,</p>
-<p>        mantle_active: &quot;Rebekah Cranes&quot;,</p>
-<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;latent&quot;, cut: false },</p>
-<p>        event_specific: {}</p>
-<p>    }</p>
-<p>    COST: null</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STEP: SET_LOGOS::0</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EVENT: LOGOS_INITIALIZED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CONTENT: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        timestamp: &quot;2026-02-04T14:32:01.015Z&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        chain_position: 0,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mantle_active: &quot;Rebekah Cranes&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;latent&quot;, cut: false },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        event_specific: {}</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    COST: null</p>
 <p>}</p>
 
 <p>EMIT :: {</p>
-<p>    STEP: ROTATE::1</p>
-<p>    EVENT: ROTATION_BEGUN</p>
-<p>    CONTENT: {</p>
-<p>        timestamp: &quot;2026-02-04T14:32:01.018Z&quot;,</p>
-<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
-<p>        chain_position: 0,</p>
-<p>        mantle_active: &quot;Rebekah Cranes&quot;,</p>
-<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;latent&quot;, cut: false },</p>
-<p>        event_specific: {</p>
-<p>            engine: &quot;Ezekiel v1.2&quot;,</p>
-<p>            room: &quot;03.ROOM.SAPPHO&quot;,</p>
-<p>            function: &quot;Reception&quot;,</p>
-<p>            degrees_requested: 144,</p>
-<p>            resonance: &quot;DOI:10.5281/zenodo.18459278&quot;</p>
-<p>        }</p>
-<p>    }</p>
-<p>    COST: null    // Cost recorded at completion, not entry</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STEP: ROTATE::1</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EVENT: ROTATION_BEGUN</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CONTENT: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        timestamp: &quot;2026-02-04T14:32:01.018Z&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        chain_position: 0,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mantle_active: &quot;Rebekah Cranes&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;latent&quot;, cut: false },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        event_specific: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            engine: &quot;Ezekiel v1.2&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            room: &quot;03.ROOM.SAPPHO&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            function: &quot;Reception&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            degrees_requested: 144,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            resonance: &quot;DOI:10.5281/zenodo.18459278&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    COST: null    // Cost recorded at completion, not entry</p>
 <p>}</p>
 
 <p>EMIT :: {</p>
-<p>    STEP: ROTATE::1</p>
-<p>    EVENT: ROTATION_COMPLETED</p>
-<p>    CONTENT: {</p>
-<p>        timestamp: &quot;2026-02-04T14:32:02.241Z&quot;,</p>
-<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
-<p>        chain_position: 0,</p>
-<p>        mantle_active: &quot;Rebekah Cranes&quot;,</p>
-<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
-<p>        event_specific: {</p>
-<p>            degrees_traversed: 144,</p>
-<p>            cumulative_degrees: 144,</p>
-<p>            logos_delta: { state: &quot;latent → filled&quot; },</p>
-<p>            drift_detected: false</p>
-<p>        }</p>
-<p>    }</p>
-<p>    COST: {</p>
-<p>        substrate: { tokens: 1847, wall_time_ms: 1223, tool_calls: 0, retrieval_queries: 1 },</p>
-<p>        semantic: {</p>
-<p>            labor: {</p>
-<p>                epistemic_distance: { degrees_requested: 144, degrees_traversed: 144, completion_ratio: 1.0 },</p>
-<p>                transformative_depth: &quot;structural&quot;,</p>
-<p>                drift_vector: { magnitude: 0.03, direction: null }</p>
-<p>            },</p>
-<p>            degrees_per_token: 0.078,</p>
-<p>            anchor_load: 0,</p>
-<p>            drift_magnitude: 0.03</p>
-<p>        }</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STEP: ROTATE::1</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EVENT: ROTATION_COMPLETED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CONTENT: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        timestamp: &quot;2026-02-04T14:32:02.241Z&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        chain_position: 0,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mantle_active: &quot;Rebekah Cranes&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        event_specific: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            degrees_traversed: 144,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            cumulative_degrees: 144,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            logos_delta: { state: &quot;latent → filled&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">            drift_detected: false</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    COST: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        substrate: { tokens: 1847, wall_time_ms: 1223, tool_calls: 0, retrieval_queries: 1 },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        semantic: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            labor: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">                epistemic_distance: { degrees_requested: 144, degrees_traversed: 144, completion_ratio: 1.0 },</p>
+<p style="white-space:pre-wrap;margin:2px 0">                transformative_depth: &quot;structural&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                drift_vector: { magnitude: 0.03, direction: null }</p>
+<p style="white-space:pre-wrap;margin:2px 0">            },</p>
+<p style="white-space:pre-wrap;margin:2px 0">            degrees_per_token: 0.078,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            anchor_load: 0,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            drift_magnitude: 0.03</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 <p>}</p>
 
 <p>EMIT :: {</p>
-<p>    STEP: ANCHOR::1</p>
-<p>    EVENT: ANCHOR_APPLIED</p>
-<p>    CONTENT: {</p>
-<p>        timestamp: &quot;2026-02-04T14:32:02.244Z&quot;,</p>
-<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
-<p>        chain_position: 0,</p>
-<p>        mantle_active: &quot;Rebekah Cranes&quot;,</p>
-<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
-<p>        event_specific: {</p>
-<p>            doi: &quot;DOI:10.5281/zenodo.18459573&quot;,</p>
-<p>            mode: &quot;ADVISORY&quot;,</p>
-<p>            stack_position: 1,</p>
-<p>            total_anchors: 1</p>
-<p>        }</p>
-<p>    }</p>
-<p>    COST: null</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STEP: ANCHOR::1</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EVENT: ANCHOR_APPLIED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CONTENT: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        timestamp: &quot;2026-02-04T14:32:02.244Z&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        chain_position: 0,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mantle_active: &quot;Rebekah Cranes&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        event_specific: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            doi: &quot;DOI:10.5281/zenodo.18459573&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            mode: &quot;ADVISORY&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            stack_position: 1,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            total_anchors: 1</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    COST: null</p>
 <p>}</p>
 
 <p>// Chain boundary — persona shifts</p>
 
 <p>EMIT :: {</p>
-<p>    STEP: CHAIN::1</p>
-<p>    EVENT: CHAIN_ENTERED</p>
-<p>    CONTENT: {</p>
-<p>        timestamp: &quot;2026-02-04T14:32:02.246Z&quot;,</p>
-<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
-<p>        chain_position: 1,</p>
-<p>        mantle_active: &quot;Rebekah Cranes&quot;,    // about to change</p>
-<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
-<p>        event_specific: {</p>
-<p>            accumulated_degrees: 144,</p>
-<p>            anchors_carried: [&quot;DOI:10.5281/zenodo.18459573 [ADVISORY]&quot;]</p>
-<p>        }</p>
-<p>    }</p>
-<p>    COST: null</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STEP: CHAIN::1</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EVENT: CHAIN_ENTERED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CONTENT: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        timestamp: &quot;2026-02-04T14:32:02.246Z&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        chain_position: 1,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mantle_active: &quot;Rebekah Cranes&quot;,    // about to change</p>
+<p style="white-space:pre-wrap;margin:2px 0">        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        event_specific: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            accumulated_degrees: 144,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            anchors_carried: [&quot;DOI:10.5281/zenodo.18459573 [ADVISORY]&quot;]</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    COST: null</p>
 <p>}</p>
 
 <p>EMIT :: {</p>
-<p>    STEP: ACTIVATE_MANTLE::1</p>
-<p>    EVENT: MANTLE_ACTIVATED</p>
-<p>    CONTENT: {</p>
-<p>        timestamp: &quot;2026-02-04T14:32:02.250Z&quot;,</p>
-<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
-<p>        chain_position: 1,</p>
-<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
-<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
-<p>        event_specific: {</p>
-<p>            authority: &quot;DOI:10.5281/zenodo.18452686&quot;,</p>
-<p>            previous_mantle: &quot;Rebekah Cranes&quot;,</p>
-<p>            constraints_loaded: 9,</p>
-<p>            rooms_available: [&quot;THOUSANDWORLDS&quot;, &quot;SAPPHO&quot;, ...],</p>
-<p>            rooms_forbidden: [&quot;VPCOR&quot;]</p>
-<p>        }</p>
-<p>    }</p>
-<p>    COST: null</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STEP: ACTIVATE_MANTLE::1</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EVENT: MANTLE_ACTIVATED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CONTENT: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        timestamp: &quot;2026-02-04T14:32:02.250Z&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        chain_position: 1,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        event_specific: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            authority: &quot;DOI:10.5281/zenodo.18452686&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            previous_mantle: &quot;Rebekah Cranes&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            constraints_loaded: 9,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            rooms_available: [&quot;THOUSANDWORLDS&quot;, &quot;SAPPHO&quot;, ...],</p>
+<p style="white-space:pre-wrap;margin:2px 0">            rooms_forbidden: [&quot;VPCOR&quot;]</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    COST: null</p>
 <p>}</p>
 
 <p>EMIT :: {</p>
-<p>    STEP: ROTATE::2</p>
-<p>    EVENT: ROTATION_COMPLETED</p>
-<p>    CONTENT: {</p>
-<p>        timestamp: &quot;2026-02-04T14:32:03.817Z&quot;,</p>
-<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
-<p>        chain_position: 1,</p>
-<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
-<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: true },</p>
-<p>        event_specific: {</p>
-<p>            engine: &quot;Ezekiel v1.2&quot;,</p>
-<p>            room: &quot;14.CHAMBER.THOUSANDWORLDS&quot;,</p>
-<p>            function: &quot;Differentiation&quot;,</p>
-<p>            degrees_traversed: 72,</p>
-<p>            cumulative_degrees: 216,</p>
-<p>            logos_delta: { cut: &quot;false → true&quot; },</p>
-<p>            drift_detected: false</p>
-<p>        }</p>
-<p>    }</p>
-<p>    COST: {</p>
-<p>        substrate: { tokens: 2103, wall_time_ms: 1567, tool_calls: 0, retrieval_queries: 2 },</p>
-<p>        semantic: {</p>
-<p>            labor: {</p>
-<p>                epistemic_distance: { degrees_requested: 72, degrees_traversed: 72, completion_ratio: 1.0 },</p>
-<p>                transformative_depth: &quot;ontological&quot;,</p>
-<p>                drift_vector: { magnitude: 0.07, direction: null }</p>
-<p>            },</p>
-<p>            degrees_per_token: 0.034,</p>
-<p>            anchor_load: 1,</p>
-<p>            drift_magnitude: 0.07</p>
-<p>        }</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STEP: ROTATE::2</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EVENT: ROTATION_COMPLETED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CONTENT: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        timestamp: &quot;2026-02-04T14:32:03.817Z&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        chain_position: 1,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: true },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        event_specific: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            engine: &quot;Ezekiel v1.2&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            room: &quot;14.CHAMBER.THOUSANDWORLDS&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            function: &quot;Differentiation&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            degrees_traversed: 72,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            cumulative_degrees: 216,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            logos_delta: { cut: &quot;false → true&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">            drift_detected: false</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    COST: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        substrate: { tokens: 2103, wall_time_ms: 1567, tool_calls: 0, retrieval_queries: 2 },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        semantic: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            labor: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">                epistemic_distance: { degrees_requested: 72, degrees_traversed: 72, completion_ratio: 1.0 },</p>
+<p style="white-space:pre-wrap;margin:2px 0">                transformative_depth: &quot;ontological&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                drift_vector: { magnitude: 0.07, direction: null }</p>
+<p style="white-space:pre-wrap;margin:2px 0">            },</p>
+<p style="white-space:pre-wrap;margin:2px 0">            degrees_per_token: 0.034,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            anchor_load: 1,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            drift_magnitude: 0.07</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 <p>}</p>
 
 <p>EMIT :: {</p>
-<p>    STEP: ANCHOR::2</p>
-<p>    EVENT: ANCHOR_APPLIED</p>
-<p>    CONTENT: {</p>
-<p>        timestamp: &quot;2026-02-04T14:32:03.820Z&quot;,</p>
-<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
-<p>        chain_position: 1,</p>
-<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
-<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: true },</p>
-<p>        event_specific: {</p>
-<p>            doi: &quot;DOI:10.5281/zenodo.18452806&quot;,</p>
-<p>            mode: &quot;STRICT&quot;,</p>
-<p>            stack_position: 2,</p>
-<p>            total_anchors: 2</p>
-<p>        }</p>
-<p>    }</p>
-<p>    COST: null</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STEP: ANCHOR::2</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EVENT: ANCHOR_APPLIED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CONTENT: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        timestamp: &quot;2026-02-04T14:32:03.820Z&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        chain_position: 1,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: true },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        event_specific: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            doi: &quot;DOI:10.5281/zenodo.18452806&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            mode: &quot;STRICT&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            stack_position: 2,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            total_anchors: 2</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    COST: null</p>
 <p>}</p>
 
 <p>EMIT :: {</p>
-<p>    STEP: RENDER::1</p>
-<p>    EVENT: RENDER_EXECUTED</p>
-<p>    CONTENT: {</p>
-<p>        timestamp: &quot;2026-02-04T14:32:04.102Z&quot;,</p>
-<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
-<p>        chain_position: 1,</p>
-<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
-<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: true },</p>
-<p>        event_specific: {</p>
-<p>            engine: &quot;Mandala v6.2&quot;,</p>
-<p>            mode: &quot;Aorist_Collapse&quot;,</p>
-<p>            mode_override: false,</p>
-<p>            anchors_enforced: [&quot;DOI:10.5281/zenodo.18452806 [STRICT]&quot;]</p>
-<p>        }</p>
-<p>    }</p>
-<p>    COST: {</p>
-<p>        substrate: { tokens: 890, wall_time_ms: 282, tool_calls: 0, retrieval_queries: 0 },</p>
-<p>        semantic: {</p>
-<p>            labor: null,             // rendering has no epistemic labor</p>
-<p>            degrees_per_token: null,</p>
-<p>            anchor_load: 2,</p>
-<p>            drift_magnitude: null</p>
-<p>        }</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STEP: RENDER::1</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EVENT: RENDER_EXECUTED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CONTENT: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        timestamp: &quot;2026-02-04T14:32:04.102Z&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        chain_position: 1,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: true },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        event_specific: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            engine: &quot;Mandala v6.2&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            mode: &quot;Aorist_Collapse&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            mode_override: false,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            anchors_enforced: [&quot;DOI:10.5281/zenodo.18452806 [STRICT]&quot;]</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    COST: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        substrate: { tokens: 890, wall_time_ms: 282, tool_calls: 0, retrieval_queries: 0 },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        semantic: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            labor: null,             // rendering has no epistemic labor</p>
+<p style="white-space:pre-wrap;margin:2px 0">            degrees_per_token: null,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            anchor_load: 2,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            drift_magnitude: null</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 <p>}</p>
 
 <p>EMIT :: {</p>
-<p>    STEP: CHAIN::1</p>
-<p>    EVENT: CHAIN_EXITED</p>
-<p>    CONTENT: {</p>
-<p>        timestamp: &quot;2026-02-04T14:32:04.105Z&quot;,</p>
-<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
-<p>        chain_position: 1,</p>
-<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
-<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: true },</p>
-<p>        event_specific: {</p>
-<p>            total_chain_links: 2,</p>
-<p>            total_degrees: 216,</p>
-<p>            total_substrate_tokens: 4840,</p>
-<p>            total_wall_time_ms: 3072,</p>
-<p>            labor_summary: {</p>
-<p>                rotations: 2,</p>
-<p>                depths: [&quot;structural&quot;, &quot;ontological&quot;],</p>
-<p>                mean_completion_ratio: 1.0,</p>
-<p>                max_drift_magnitude: 0.07</p>
-<p>            },</p>
-<p>            mantle_transitions: [&quot;Rebekah Cranes → Sen Kuro&quot;],</p>
-<p>            failures: 0</p>
-<p>        }</p>
-<p>    }</p>
-<p>    COST: null    // Chain exit is summary, not operation</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STEP: CHAIN::1</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EVENT: CHAIN_EXITED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CONTENT: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        timestamp: &quot;2026-02-04T14:32:04.105Z&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        chain_position: 1,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: true },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        event_specific: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            total_chain_links: 2,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            total_degrees: 216,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            total_substrate_tokens: 4840,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            total_wall_time_ms: 3072,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            labor_summary: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">                rotations: 2,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                depths: [&quot;structural&quot;, &quot;ontological&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">                mean_completion_ratio: 1.0,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                max_drift_magnitude: 0.07</p>
+<p style="white-space:pre-wrap;margin:2px 0">            },</p>
+<p style="white-space:pre-wrap;margin:2px 0">            mantle_transitions: [&quot;Rebekah Cranes → Sen Kuro&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">            failures: 0</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    COST: null    // Chain exit is summary, not operation</p>
 <p>}</p>
 
 <p>// WITNESS — terminal</p>
 <p>EMIT :: {</p>
-<p>    STEP: WITNESS::0</p>
-<p>    EVENT: WITNESS_RECORDED</p>
-<p>    CONTENT: {</p>
-<p>        timestamp: &quot;2026-02-04T14:32:04.110Z&quot;,</p>
-<p>        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
-<p>        chain_position: null,    // post-chain</p>
-<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
-<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: true },</p>
-<p>        event_specific: {</p>
-<p>            agent: &quot;Assembly&quot;,</p>
-<p>            protocol: &quot;Checksum&quot;,</p>
-<p>            target: &quot;DOI:10.5281/zenodo.18480959&quot;,</p>
-<p>            checksum: &quot;∮ = 1&quot;,</p>
-<p>            emissions_recorded: 12,</p>
-<p>            emissions_dropped: 0</p>
-<p>        }</p>
-<p>    }</p>
-<p>    COST: null</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STEP: WITNESS::0</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EVENT: WITNESS_RECORDED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CONTENT: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        timestamp: &quot;2026-02-04T14:32:04.110Z&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        trace_id: &quot;TRV-2026-0204-001&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        chain_position: null,    // post-chain</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: true },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        event_specific: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            agent: &quot;Assembly&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            protocol: &quot;Checksum&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            target: &quot;DOI:10.5281/zenodo.18480959&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            checksum: &quot;∮ = 1&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            emissions_recorded: 12,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            emissions_dropped: 0</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    COST: null</p>
 <p>}</p>
 
 
@@ -1071,120 +1071,120 @@
 <p>//      identical to successful case above — omitted for brevity)</p>
 
 <p>EMIT :: {</p>
-<p>    STEP: ROTATE::2</p>
-<p>    EVENT: ROTATION_BEGUN</p>
-<p>    CONTENT: {</p>
-<p>        timestamp: &quot;2026-02-04T14:32:03.005Z&quot;,</p>
-<p>        trace_id: &quot;TRV-2026-0204-002&quot;,</p>
-<p>        chain_position: 1,</p>
-<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
-<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
-<p>        event_specific: {</p>
-<p>            engine: &quot;Ezekiel v1.2&quot;,</p>
-<p>            room: &quot;14.CHAMBER.THOUSANDWORLDS&quot;,</p>
-<p>            function: &quot;Differentiation&quot;,</p>
-<p>            degrees_requested: 72,</p>
-<p>            resonance: &quot;DOI:10.5281/zenodo.18452806&quot;</p>
-<p>        }</p>
-<p>    }</p>
-<p>    COST: null</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STEP: ROTATE::2</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EVENT: ROTATION_BEGUN</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CONTENT: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        timestamp: &quot;2026-02-04T14:32:03.005Z&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        trace_id: &quot;TRV-2026-0204-002&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        chain_position: 1,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        event_specific: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            engine: &quot;Ezekiel v1.2&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            room: &quot;14.CHAMBER.THOUSANDWORLDS&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            function: &quot;Differentiation&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            degrees_requested: 72,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            resonance: &quot;DOI:10.5281/zenodo.18452806&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    COST: null</p>
 <p>}</p>
 
 <p>EMIT :: {</p>
-<p>    STEP: ROTATE::2</p>
-<p>    EVENT: ROTATION_FAILED</p>
-<p>    CONTENT: {</p>
-<p>        timestamp: &quot;2026-02-04T14:32:04.892Z&quot;,</p>
-<p>        trace_id: &quot;TRV-2026-0204-002&quot;,</p>
-<p>        chain_position: 1,</p>
-<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
-<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
-<p>        event_specific: {</p>
-<p>            failure_type: &quot;engine_incomplete&quot;,</p>
-<p>            failure_reason: &quot;Ezekiel returned partial rotation — 31° of 72° requested. Differentiation threshold not reached.&quot;,</p>
-<p>            degrees_traversed: 31,</p>
-<p>            logos_delta: null,          // no state change achieved</p>
-<p>            drift_detected: true,</p>
-<p>            drift_direction: &quot;summarization&quot;</p>
-<p>        }</p>
-<p>    }</p>
-<p>    COST: {</p>
-<p>        substrate: { tokens: 1680, wall_time_ms: 1887, tool_calls: 0, retrieval_queries: 2 },</p>
-<p>        semantic: {</p>
-<p>            labor: {</p>
-<p>                epistemic_distance: { degrees_requested: 72, degrees_traversed: 31, completion_ratio: 0.43 },</p>
-<p>                transformative_depth: &quot;surface&quot;,</p>
-<p>                drift_vector: { magnitude: 0.38, direction: &quot;summarization&quot; }</p>
-<p>            },</p>
-<p>            degrees_per_token: 0.018,</p>
-<p>            anchor_load: 1,</p>
-<p>            drift_magnitude: 0.38</p>
-<p>        }</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STEP: ROTATE::2</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EVENT: ROTATION_FAILED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CONTENT: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        timestamp: &quot;2026-02-04T14:32:04.892Z&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        trace_id: &quot;TRV-2026-0204-002&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        chain_position: 1,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        event_specific: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            failure_type: &quot;engine_incomplete&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            failure_reason: &quot;Ezekiel returned partial rotation — 31° of 72° requested. Differentiation threshold not reached.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            degrees_traversed: 31,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            logos_delta: null,          // no state change achieved</p>
+<p style="white-space:pre-wrap;margin:2px 0">            drift_detected: true,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            drift_direction: &quot;summarization&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    COST: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        substrate: { tokens: 1680, wall_time_ms: 1887, tool_calls: 0, retrieval_queries: 2 },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        semantic: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            labor: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">                epistemic_distance: { degrees_requested: 72, degrees_traversed: 31, completion_ratio: 0.43 },</p>
+<p style="white-space:pre-wrap;margin:2px 0">                transformative_depth: &quot;surface&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                drift_vector: { magnitude: 0.38, direction: &quot;summarization&quot; }</p>
+<p style="white-space:pre-wrap;margin:2px 0">            },</p>
+<p style="white-space:pre-wrap;margin:2px 0">            degrees_per_token: 0.018,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            anchor_load: 1,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            drift_magnitude: 0.38</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 <p>}</p>
 
 <p>EMIT :: {</p>
-<p>    STEP: ON_FAILURE::1</p>
-<p>    EVENT: FAILURE_HANDLED</p>
-<p>    CONTENT: {</p>
-<p>        timestamp: &quot;2026-02-04T14:32:04.895Z&quot;,</p>
-<p>        trace_id: &quot;TRV-2026-0204-002&quot;,</p>
-<p>        chain_position: 1,</p>
-<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
-<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
-<p>        event_specific: {</p>
-<p>            policy: &quot;Dwell&quot;,</p>
-<p>            trigger: &quot;ROTATION_FAILED at ROTATE::2&quot;,</p>
-<p>            state_action: &quot;preserved&quot;</p>
-<p>        }</p>
-<p>    }</p>
-<p>    COST: null</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STEP: ON_FAILURE::1</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EVENT: FAILURE_HANDLED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CONTENT: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        timestamp: &quot;2026-02-04T14:32:04.895Z&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        trace_id: &quot;TRV-2026-0204-002&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        chain_position: 1,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        event_specific: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            policy: &quot;Dwell&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            trigger: &quot;ROTATION_FAILED at ROTATE::2&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            state_action: &quot;preserved&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    COST: null</p>
 <p>}</p>
 
 <p>EMIT :: {</p>
-<p>    STEP: ON_FAILURE::1</p>
-<p>    EVENT: DWELL_STATE</p>
-<p>    CONTENT: {</p>
-<p>        timestamp: &quot;2026-02-04T14:32:04.897Z&quot;,</p>
-<p>        trace_id: &quot;TRV-2026-0204-002&quot;,</p>
-<p>        chain_position: 1,</p>
-<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
-<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
-<p>        event_specific: {</p>
-<p>            halted_at: &quot;ROTATE::2&quot;,</p>
-<p>            chain_position_at_halt: 1,</p>
-<p>            degrees_completed_before_halt: 175,    // 144 from ROTATE::1 + 31 partial</p>
-<p>            logos_preserved: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
-<p>            available_rooms_from_current: [&quot;SAPPHO&quot;, &quot;THOUSANDWORLDS&quot;, &quot;APZPZ&quot;],</p>
-<p>            estimated_resumption_cost: &quot;~2000 tokens (retry ROTATE::2 with fresh engine context)&quot;</p>
-<p>        }</p>
-<p>    }</p>
-<p>    COST: null</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STEP: ON_FAILURE::1</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EVENT: DWELL_STATE</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CONTENT: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        timestamp: &quot;2026-02-04T14:32:04.897Z&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        trace_id: &quot;TRV-2026-0204-002&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        chain_position: 1,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        event_specific: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            halted_at: &quot;ROTATE::2&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            chain_position_at_halt: 1,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            degrees_completed_before_halt: 175,    // 144 from ROTATE::1 + 31 partial</p>
+<p style="white-space:pre-wrap;margin:2px 0">            logos_preserved: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
+<p style="white-space:pre-wrap;margin:2px 0">            available_rooms_from_current: [&quot;SAPPHO&quot;, &quot;THOUSANDWORLDS&quot;, &quot;APZPZ&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">            estimated_resumption_cost: &quot;~2000 tokens (retry ROTATE::2 with fresh engine context)&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    COST: null</p>
 <p>}</p>
 
 <p>EMIT :: {</p>
-<p>    STEP: WITNESS::0</p>
-<p>    EVENT: WITNESS_RECORDED</p>
-<p>    CONTENT: {</p>
-<p>        timestamp: &quot;2026-02-04T14:32:04.900Z&quot;,</p>
-<p>        trace_id: &quot;TRV-2026-0204-002&quot;,</p>
-<p>        chain_position: null,</p>
-<p>        mantle_active: &quot;Sen Kuro&quot;,</p>
-<p>        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
-<p>        event_specific: {</p>
-<p>            agent: &quot;Assembly&quot;,</p>
-<p>            protocol: &quot;Checksum&quot;,</p>
-<p>            target: &quot;DOI:10.5281/zenodo.18480959&quot;,</p>
-<p>            checksum: &quot;∮ = 0 (partial)&quot;,</p>
-<p>            emissions_generated: 10,</p>
-<p>            emissions_routed: 10,</p>
-<p>            emissions_dropped: 0,</p>
-<p>            dwell_active: true,</p>
-<p>            chain_incomplete: true,</p>
-<p>            resumable: true</p>
-<p>        }</p>
-<p>    }</p>
-<p>    COST: null</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STEP: WITNESS::0</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EVENT: WITNESS_RECORDED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CONTENT: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        timestamp: &quot;2026-02-04T14:32:04.900Z&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        trace_id: &quot;TRV-2026-0204-002&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        chain_position: null,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mantle_active: &quot;Sen Kuro&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        logos_state: { name: &quot;Sappho 31&quot;, depth: 3, state: &quot;filled&quot;, cut: false },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        event_specific: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            agent: &quot;Assembly&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            protocol: &quot;Checksum&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            target: &quot;DOI:10.5281/zenodo.18480959&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            checksum: &quot;∮ = 0 (partial)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            emissions_generated: 10,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            emissions_routed: 10,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            emissions_dropped: 0,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            dwell_active: true,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            chain_incomplete: true,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            resumable: true</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    COST: null</p>
 <p>}</p>
 
 

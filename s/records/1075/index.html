@@ -216,16 +216,16 @@
 
 <p>The paired models are:</p>
 
-<p>    f+(ρ) = A(B ∪ W; ρ)        [work included]</p>
-<p>    f−(ρ) = A(B; ρ)            [work excluded]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    f+(ρ) = A(B ∪ W; ρ)        [work included]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    f−(ρ) = A(B; ρ)            [work excluded]</p>
 
 <p>For any evaluation input <em>x</em>, define the pointwise inscription delta on a precommitted score <em>s</em> (preferably the raw logit for the relevant class rather than only the binary decision):</p>
 
-<p>    Δ_W(x; ρ) = s(f+(ρ), x) − s(f−(ρ), x)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Δ_W(x; ρ) = s(f+(ρ), x) − s(f−(ρ), x)</p>
 
 <p>For a spam classifier:</p>
 
-<p>    Δ_W(x; ρ) = logit P[f+](spam | x) − logit P[f−](spam | x)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Δ_W(x; ρ) = logit P[f+](spam | x) − logit P[f−](spam | x)</p>
 
 <p>If Δ_W(x; ρ) &gt; 0, inclusion of the work made <em>x</em> more spam-like to the classifier under that training realization.</p>
 

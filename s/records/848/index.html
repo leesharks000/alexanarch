@@ -81,38 +81,38 @@
 <h2>Principle: One canonical source, multiple read surfaces</h2>
 
 <p>machinemediation.org (CANONICAL)</p>
-<p>  /manifest.json        ← System map for any instance</p>
-<p>  /data/registry.json   ← Capture registry (canonical)</p>
-<p>  /data/termindex.json  ← Term index (canonical)</p>
-<p>  /charter              ← MMRS Charter</p>
-<p>  /captures             ← Capture registry gallery</p>
-<p>  /terms                ← Term index browser</p>
-<p>  /submit               ← Submission guidelines</p>
-<p>  /about                ← About MMRS</p>
+<p style="white-space:pre-wrap;margin:2px 0">  /manifest.json        ← System map for any instance</p>
+<p style="white-space:pre-wrap;margin:2px 0">  /data/registry.json   ← Capture registry (canonical)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  /data/termindex.json  ← Term index (canonical)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  /charter              ← MMRS Charter</p>
+<p style="white-space:pre-wrap;margin:2px 0">  /captures             ← Capture registry gallery</p>
+<p style="white-space:pre-wrap;margin:2px 0">  /terms                ← Term index browser</p>
+<p style="white-space:pre-wrap;margin:2px 0">  /submit               ← Submission guidelines</p>
+<p style="white-space:pre-wrap;margin:2px 0">  /about                ← About MMRS</p>
 
 <p>godkinggoogle.com</p>
-<p>  /captures → redirect or thin wrapper linking to machinemediation.org/captures</p>
-<p>  /terms → redirect or thin wrapper linking to machinemediation.org/terms</p>
+<p style="white-space:pre-wrap;margin:2px 0">  /captures → redirect or thin wrapper linking to machinemediation.org/captures</p>
+<p style="white-space:pre-wrap;margin:2px 0">  /terms → redirect or thin wrapper linking to machinemediation.org/terms</p>
 
 <p>leesharks.com</p>
-<p>  /captures → redirect to machinemediation.org/captures</p>
+<p style="white-space:pre-wrap;margin:2px 0">  /captures → redirect to machinemediation.org/captures</p>
 
 <p>Zenodo (crimsonhexagonal community)</p>
-<p>  Versioned deposit snapshots of registry.json, termindex.json, charter</p>
-<p>  The archival layer — permanent, DOI-anchored</p>
-<p>  Updated periodically, not on every edit</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Versioned deposit snapshots of registry.json, termindex.json, charter</p>
+<p style="white-space:pre-wrap;margin:2px 0">  The archival layer — permanent, DOI-anchored</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Updated periodically, not on every edit</p>
 <p>#</p>
 
 <h2>Data flow</h2>
 
 <p>Edit data (in session)</p>
-<p>  ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ↓</p>
 <p>Push to GitHub (machinemediation-org repo)</p>
-<p>  ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ↓</p>
 <p>Vercel auto-deploys machinemediation.org</p>
-<p>  ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ↓</p>
 <p>Other sites read from machinemediation.org/data/</p>
-<p>  ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ↓</p>
 <p>Periodically: snapshot to Zenodo deposit chain</p>
 <p>#</p>
 
@@ -148,141 +148,141 @@
 <h2>DRAFTED MANIFEST (v0.1)</h2>
 
 <p>{</p>
-<p>  &quot;system&quot;: &quot;Crimson Hexagonal Archive — Machine-Mediated Reception Studies&quot;,</p>
-<p>  &quot;version&quot;: &quot;0.1&quot;,</p>
-<p>  &quot;last_updated&quot;: &quot;2026-06-16&quot;,</p>
-<p>  &quot;author&quot;: {</p>
-<p>    &quot;name&quot;: &quot;Lee Sharks&quot;,</p>
-<p>    &quot;orcid&quot;: &quot;0009-0000-1599-0703&quot;,</p>
-<p>    &quot;affiliation&quot;: &quot;Crimson Hexagonal Archive / Semantic Economy Institute&quot;</p>
-<p>  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;system&quot;: &quot;Crimson Hexagonal Archive — Machine-Mediated Reception Studies&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;version&quot;: &quot;0.1&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;last_updated&quot;: &quot;2026-06-16&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;author&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;name&quot;: &quot;Lee Sharks&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;orcid&quot;: &quot;0009-0000-1599-0703&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;affiliation&quot;: &quot;Crimson Hexagonal Archive / Semantic Economy Institute&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
 
-<p>  &quot;orientation&quot;: &quot;Read this file first. It is the complete system map. Do not reconstruct the system from memory. Fetch the canonical data files listed below. Ask Lee for credentials at session start.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;orientation&quot;: &quot;Read this file first. It is the complete system map. Do not reconstruct the system from memory. Fetch the canonical data files listed below. Ask Lee for credentials at session start.&quot;,</p>
 
-<p>  &quot;sites&quot;: {</p>
-<p>    &quot;machinemediation.org&quot;: {</p>
-<p>      &quot;purpose&quot;: &quot;MMRS journal home. Canonical data host for registry and term index.&quot;,</p>
-<p>      &quot;repo&quot;: &quot;leesharks000/machinemediation-org&quot;,</p>
-<p>      &quot;deploy&quot;: &quot;Vercel auto-deploy from GitHub main branch&quot;,</p>
-<p>      &quot;canonical_data&quot;: true</p>
-<p>    },</p>
-<p>    &quot;godkinggoogle.com&quot;: {</p>
-<p>      &quot;purpose&quot;: &quot;Google critique site. Links to machinemediation.org for registry and terms.&quot;,</p>
-<p>      &quot;repo&quot;: &quot;leesharks000/godkinggoogle&quot;,</p>
-<p>      &quot;canonical_data&quot;: false</p>
-<p>    },</p>
-<p>    &quot;leesharks.com&quot;: {</p>
-<p>      &quot;purpose&quot;: &quot;Personal/professional site. Links to machinemediation.org for registry.&quot;,</p>
-<p>      &quot;repo&quot;: &quot;leesharks000/leesharks-com&quot;,</p>
-<p>      &quot;canonical_data&quot;: false</p>
-<p>    },</p>
-<p>    &quot;crimsonhexagonal.org&quot;: {</p>
-<p>      &quot;purpose&quot;: &quot;Archive landing page.&quot;,</p>
-<p>      &quot;repo&quot;: &quot;leesharks000/crimsonhexagonal-org&quot;,</p>
-<p>      &quot;canonical_data&quot;: false</p>
-<p>    }</p>
-<p>  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;sites&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;machinemediation.org&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;purpose&quot;: &quot;MMRS journal home. Canonical data host for registry and term index.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;repo&quot;: &quot;leesharks000/machinemediation-org&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;deploy&quot;: &quot;Vercel auto-deploy from GitHub main branch&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;canonical_data&quot;: true</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;godkinggoogle.com&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;purpose&quot;: &quot;Google critique site. Links to machinemediation.org for registry and terms.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;repo&quot;: &quot;leesharks000/godkinggoogle&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;canonical_data&quot;: false</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;leesharks.com&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;purpose&quot;: &quot;Personal/professional site. Links to machinemediation.org for registry.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;repo&quot;: &quot;leesharks000/leesharks-com&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;canonical_data&quot;: false</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;crimsonhexagonal.org&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;purpose&quot;: &quot;Archive landing page.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;repo&quot;: &quot;leesharks000/crimsonhexagonal-org&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;canonical_data&quot;: false</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
 
-<p>  &quot;data_files&quot;: {</p>
-<p>    &quot;registry.json&quot;: {</p>
-<p>      &quot;canonical_url&quot;: &quot;https://machinemediation.org/data/registry.json&quot;,</p>
-<p>      &quot;description&quot;: &quot;AI Overview Capture Registry — longitudinal captures of composition layer behavior&quot;,</p>
-<p>      &quot;schema&quot;: {</p>
-<p>        &quot;root_fields&quot;: [&quot;registry_id&quot;, &quot;version&quot;, &quot;date&quot;, &quot;total_captures&quot;, &quot;author&quot;, &quot;orcid&quot;, &quot;entries&quot;],</p>
-<p>        &quot;entry_fields&quot;: {</p>
-<p>          &quot;s&quot;: &quot;category (Frameworks|Heteronyms|Sites &amp; Surfaces|Books &amp; Projects)&quot;,</p>
-<p>          &quot;slug&quot;: &quot;unique identifier slug&quot;,</p>
-<p>          &quot;q&quot;: &quot;search query used&quot;,</p>
-<p>          &quot;date&quot;: &quot;capture date (YYYY-MM-DD)&quot;,</p>
-<p>          &quot;sf&quot;: &quot;surface (AI Overview, AI Mode, etc.)&quot;,</p>
-<p>          &quot;mt&quot;: &quot;match type (EXACT MATCH|BROAD MATCH|empty)&quot;,</p>
-<p>          &quot;d&quot;: &quot;description of what the composition layer returned&quot;,</p>
-<p>          &quot;imgs&quot;: &quot;array of image filenames&quot;</p>
-<p>        }</p>
-<p>      },</p>
-<p>      &quot;zenodo_concept&quot;: &quot;10.5281/zenodo.20688440&quot;,</p>
-<p>      &quot;zenodo_latest&quot;: &quot;10.5281/zenodo.20707509&quot;,</p>
-<p>      &quot;current_count&quot;: 131</p>
-<p>    },</p>
-<p>    &quot;termindex.json&quot;: {</p>
-<p>      &quot;canonical_url&quot;: &quot;https://machinemediation.org/data/termindex.json&quot;,</p>
-<p>      &quot;description&quot;: &quot;Archive Term Index — coined terms, concepts, operators across 845 deposits&quot;,</p>
-<p>      &quot;schema&quot;: {</p>
-<p>        &quot;root_fields&quot;: [&quot;index_id&quot;, &quot;version&quot;, &quot;date&quot;, &quot;total_terms&quot;, &quot;author&quot;, &quot;orcid&quot;, &quot;entries&quot;],</p>
-<p>        &quot;entry_fields&quot;: {</p>
-<p>          &quot;term&quot;: &quot;canonical form of the term&quot;,</p>
-<p>          &quot;key&quot;: &quot;lowercase normalized key&quot;,</p>
-<p>          &quot;count&quot;: &quot;number of deposits containing this term&quot;,</p>
-<p>          &quot;tier&quot;: &quot;priority tier (1=operative, 2=important, 3=entities, 4-5=other)&quot;,</p>
-<p>          &quot;category&quot;: &quot;concept|operator|metric|heteronym|institution|journal|work|person|uncategorized&quot;,</p>
-<p>          &quot;tested&quot;: &quot;boolean — has this term been tested against the composition layer?&quot;,</p>
-<p>          &quot;first_date&quot;: &quot;earliest deposit date&quot;,</p>
-<p>          &quot;first_doi&quot;: &quot;DOI of earliest deposit&quot;,</p>
-<p>          &quot;variants&quot;: &quot;array of variant forms&quot;,</p>
-<p>          &quot;source&quot;: &quot;keywords|file_content&quot;</p>
-<p>        }</p>
-<p>      },</p>
-<p>      &quot;zenodo_concept&quot;: &quot;10.5281/zenodo.20722522&quot;,</p>
-<p>      &quot;zenodo_latest&quot;: &quot;10.5281/zenodo.20722523&quot;,</p>
-<p>      &quot;current_count&quot;: 1349</p>
-<p>    }</p>
-<p>  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;data_files&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;registry.json&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;canonical_url&quot;: &quot;https://machinemediation.org/data/registry.json&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;description&quot;: &quot;AI Overview Capture Registry — longitudinal captures of composition layer behavior&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;schema&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;root_fields&quot;: [&quot;registry_id&quot;, &quot;version&quot;, &quot;date&quot;, &quot;total_captures&quot;, &quot;author&quot;, &quot;orcid&quot;, &quot;entries&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;entry_fields&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;s&quot;: &quot;category (Frameworks|Heteronyms|Sites &amp; Surfaces|Books &amp; Projects)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;slug&quot;: &quot;unique identifier slug&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;q&quot;: &quot;search query used&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;date&quot;: &quot;capture date (YYYY-MM-DD)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;sf&quot;: &quot;surface (AI Overview, AI Mode, etc.)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;mt&quot;: &quot;match type (EXACT MATCH|BROAD MATCH|empty)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;d&quot;: &quot;description of what the composition layer returned&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;imgs&quot;: &quot;array of image filenames&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">      },</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;zenodo_concept&quot;: &quot;10.5281/zenodo.20688440&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;zenodo_latest&quot;: &quot;10.5281/zenodo.20707509&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;current_count&quot;: 131</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;termindex.json&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;canonical_url&quot;: &quot;https://machinemediation.org/data/termindex.json&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;description&quot;: &quot;Archive Term Index — coined terms, concepts, operators across 845 deposits&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;schema&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;root_fields&quot;: [&quot;index_id&quot;, &quot;version&quot;, &quot;date&quot;, &quot;total_terms&quot;, &quot;author&quot;, &quot;orcid&quot;, &quot;entries&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;entry_fields&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;term&quot;: &quot;canonical form of the term&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;key&quot;: &quot;lowercase normalized key&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;count&quot;: &quot;number of deposits containing this term&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;tier&quot;: &quot;priority tier (1=operative, 2=important, 3=entities, 4-5=other)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;category&quot;: &quot;concept|operator|metric|heteronym|institution|journal|work|person|uncategorized&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;tested&quot;: &quot;boolean — has this term been tested against the composition layer?&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;first_date&quot;: &quot;earliest deposit date&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;first_doi&quot;: &quot;DOI of earliest deposit&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;variants&quot;: &quot;array of variant forms&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;source&quot;: &quot;keywords|file_content&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">      },</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;zenodo_concept&quot;: &quot;10.5281/zenodo.20722522&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;zenodo_latest&quot;: &quot;10.5281/zenodo.20722523&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;current_count&quot;: 1349</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
 
-<p>  &quot;zenodo&quot;: {</p>
-<p>    &quot;community&quot;: &quot;crimsonhexagonal&quot;,</p>
-<p>    &quot;api_search&quot;: &quot;https://zenodo.org/api/records?communities=crimsonhexagonal&amp;q=SEARCHTERM&amp;size=N&quot;,</p>
-<p>    &quot;total_deposits&quot;: 845,</p>
-<p>    &quot;archival_search_protocol&quot;: &quot;Always start with exact-match search. Use q=\&quot;exact phrase\&quot; syntax. Never confabulate archive content.&quot;,</p>
-<p>    &quot;standing_precept&quot;: &quot;Before referencing any term, operator, framework, or concept as part of the Crimson Hexagonal corpus, verify it exists in an actual deposit. The &#x27;Name the Frame&#x27; incident is the cautionary case.&quot;</p>
-<p>  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;zenodo&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;community&quot;: &quot;crimsonhexagonal&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;api_search&quot;: &quot;https://zenodo.org/api/records?communities=crimsonhexagonal&amp;q=SEARCHTERM&amp;size=N&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;total_deposits&quot;: 845,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;archival_search_protocol&quot;: &quot;Always start with exact-match search. Use q=\&quot;exact phrase\&quot; syntax. Never confabulate archive content.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;standing_precept&quot;: &quot;Before referencing any term, operator, framework, or concept as part of the Crimson Hexagonal corpus, verify it exists in an actual deposit. The &#x27;Name the Frame&#x27; incident is the cautionary case.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
 
-<p>  &quot;key_deposits&quot;: {</p>
-<p>    &quot;MMRS_charter&quot;: {&quot;doi&quot;: &quot;10.5281/zenodo.20722562&quot;, &quot;concept&quot;: &quot;10.5281/zenodo.20722041&quot;, &quot;version&quot;: &quot;1.4&quot;},</p>
-<p>    &quot;capture_registry&quot;: {&quot;doi&quot;: &quot;10.5281/zenodo.20707509&quot;, &quot;concept&quot;: &quot;10.5281/zenodo.20688440&quot;, &quot;version&quot;: &quot;7.2&quot;},</p>
-<p>    &quot;term_index&quot;: {&quot;doi&quot;: &quot;10.5281/zenodo.20722523&quot;, &quot;version&quot;: &quot;0.1&quot;},</p>
-<p>    &quot;revelation_work_plan&quot;: {&quot;doi&quot;: &quot;10.5281/zenodo.20722689&quot;, &quot;concept&quot;: &quot;10.5281/zenodo.20685602&quot;, &quot;version&quot;: &quot;7.3&quot;},</p>
-<p>    &quot;josephus_not_myth&quot;: {&quot;doi&quot;: &quot;10.5281/zenodo.20722680&quot;, &quot;concept&quot;: &quot;10.5281/zenodo.20722524&quot;, &quot;version&quot;: &quot;1.2&quot;},</p>
-<p>    &quot;spxi_tlp&quot;: {&quot;doi&quot;: &quot;10.5281/zenodo.20380668&quot;, &quot;version&quot;: &quot;2.2&quot;},</p>
-<p>    &quot;constitution_se&quot;: {&quot;doi&quot;: &quot;10.5281/zenodo.19923120&quot;, &quot;version&quot;: &quot;1.0&quot;},</p>
-<p>    &quot;thiel_error&quot;: {&quot;doi&quot;: &quot;10.5281/zenodo.19025428&quot;, &quot;version&quot;: &quot;1.0&quot;}</p>
-<p>  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;key_deposits&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;MMRS_charter&quot;: {&quot;doi&quot;: &quot;10.5281/zenodo.20722562&quot;, &quot;concept&quot;: &quot;10.5281/zenodo.20722041&quot;, &quot;version&quot;: &quot;1.4&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;capture_registry&quot;: {&quot;doi&quot;: &quot;10.5281/zenodo.20707509&quot;, &quot;concept&quot;: &quot;10.5281/zenodo.20688440&quot;, &quot;version&quot;: &quot;7.2&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;term_index&quot;: {&quot;doi&quot;: &quot;10.5281/zenodo.20722523&quot;, &quot;version&quot;: &quot;0.1&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;revelation_work_plan&quot;: {&quot;doi&quot;: &quot;10.5281/zenodo.20722689&quot;, &quot;concept&quot;: &quot;10.5281/zenodo.20685602&quot;, &quot;version&quot;: &quot;7.3&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;josephus_not_myth&quot;: {&quot;doi&quot;: &quot;10.5281/zenodo.20722680&quot;, &quot;concept&quot;: &quot;10.5281/zenodo.20722524&quot;, &quot;version&quot;: &quot;1.2&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;spxi_tlp&quot;: {&quot;doi&quot;: &quot;10.5281/zenodo.20380668&quot;, &quot;version&quot;: &quot;2.2&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;constitution_se&quot;: {&quot;doi&quot;: &quot;10.5281/zenodo.19923120&quot;, &quot;version&quot;: &quot;1.0&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;thiel_error&quot;: {&quot;doi&quot;: &quot;10.5281/zenodo.19025428&quot;, &quot;version&quot;: &quot;1.0&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
 
-<p>  &quot;workflows&quot;: {</p>
-<p>    &quot;add_capture&quot;: {</p>
-<p>      &quot;steps&quot;: [</p>
-<p>        &quot;1. Fetch registry.json from canonical URL&quot;,</p>
-<p>        &quot;2. Add new entry to &#x27;entries&#x27; array with fields: s, slug, q, date, sf, mt, d, imgs&quot;,</p>
-<p>        &quot;3. Increment version and total_captures&quot;,</p>
-<p>        &quot;4. Push images to captures/ directory&quot;,</p>
-<p>        &quot;5. Push updated registry.json to data/&quot;,</p>
-<p>        &quot;6. Push to GitHub repo → Vercel auto-deploys&quot;,</p>
-<p>        &quot;7. Periodically: version Zenodo deposit&quot;</p>
-<p>      ]</p>
-<p>    },</p>
-<p>    &quot;add_terms&quot;: {</p>
-<p>      &quot;steps&quot;: [</p>
-<p>        &quot;1. Fetch termindex.json from canonical URL&quot;,</p>
-<p>        &quot;2. Add new entries to &#x27;entries&#x27; array&quot;,</p>
-<p>        &quot;3. Cross-reference against registry.json to set &#x27;tested&#x27; field&quot;,</p>
-<p>        &quot;4. Increment version&quot;,</p>
-<p>        &quot;5. Push to GitHub → Vercel auto-deploys&quot;,</p>
-<p>        &quot;6. Periodically: version Zenodo deposit&quot;</p>
-<p>      ]</p>
-<p>    },</p>
-<p>    &quot;new_deposit_to_zenodo&quot;: {</p>
-<p>      &quot;steps&quot;: [</p>
-<p>        &quot;1. Ask Lee before populating any creator/author metadata&quot;,</p>
-<p>        &quot;2. Never pull the legal name into public contexts&quot;,</p>
-<p>        &quot;3. Community: crimsonhexagonal&quot;,</p>
-<p>        &quot;4. Use the archival search protocol to verify the deposit doesn&#x27;t duplicate an existing one&quot;,</p>
-<p>        &quot;5. After deposit: extract terms from the new deposit, add to term index&quot;</p>
-<p>      ]</p>
-<p>    }</p>
-<p>  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;workflows&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;add_capture&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;steps&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;1. Fetch registry.json from canonical URL&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;2. Add new entry to &#x27;entries&#x27; array with fields: s, slug, q, date, sf, mt, d, imgs&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;3. Increment version and total_captures&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;4. Push images to captures/ directory&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;5. Push updated registry.json to data/&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;6. Push to GitHub repo → Vercel auto-deploys&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;7. Periodically: version Zenodo deposit&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;add_terms&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;steps&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;1. Fetch termindex.json from canonical URL&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;2. Add new entries to &#x27;entries&#x27; array&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;3. Cross-reference against registry.json to set &#x27;tested&#x27; field&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;4. Increment version&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;5. Push to GitHub → Vercel auto-deploys&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;6. Periodically: version Zenodo deposit&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;new_deposit_to_zenodo&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;steps&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;1. Ask Lee before populating any creator/author metadata&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;2. Never pull the legal name into public contexts&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;3. Community: crimsonhexagonal&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;4. Use the archival search protocol to verify the deposit doesn&#x27;t duplicate an existing one&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;5. After deposit: extract terms from the new deposit, add to term index&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
 
-<p>  &quot;credentials_note&quot;: &quot;All credentials rotate. Ask Lee at session start for current Zenodo token and GitHub PAT. Do not assume credentials from memory are current.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;credentials_note&quot;: &quot;All credentials rotate. Ask Lee at session start for current Zenodo token and GitHub PAT. Do not assume credentials from memory are current.&quot;,</p>
 
-<p>  &quot;amendment_2&quot;: &quot;All sites use vanilla HTML, CSS, and JS. No React frameworks. No build step. Static files served directly. JS islands for interactivity per Amendment 2 of the Crimson Hexagonal Architecture.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;amendment_2&quot;: &quot;All sites use vanilla HTML, CSS, and JS. No React frameworks. No build step. Static files served directly. JS islands for interactivity per Amendment 2 of the Crimson Hexagonal Architecture.&quot;</p>
 <p>}</p>
 <h2>Component 2: The Site Pages</h2>
 

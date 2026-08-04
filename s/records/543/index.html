@@ -94,9 +94,9 @@
 <p>Provenance produces active denotation.</p>
 
 <p>Therefore:</p>
-<p>  minted ≠ active</p>
-<p>  named ≠ installed</p>
-<p>  coined ≠ canonical</p>
+<p style="white-space:pre-wrap;margin:2px 0">  minted ≠ active</p>
+<p style="white-space:pre-wrap;margin:2px 0">  named ≠ installed</p>
+<p style="white-space:pre-wrap;margin:2px 0">  coined ≠ canonical</p>
 
 
 <hr>
@@ -144,12 +144,12 @@
 <p>λ_M : Concept × Register × Discourse → Token × Denotation × CoreLead × S(Token)</p>
 
 <p>Input:  a concept needing a public handle</p>
-<p>        a register (formal / profane / liturgical / technical)</p>
-<p>        a target discourse (which external neighborhood?)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        a register (formal / profane / liturgical / technical)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        a target discourse (which external neighborhood?)</p>
 <p>Output: a coined term (Token)</p>
-<p>        a one-sentence definition (Denotation)</p>
-<p>        a primary Core 50 destination (CoreLead)</p>
-<p>        the shadow of the term — what it excludes (S(Token))</p>
+<p style="white-space:pre-wrap;margin:2px 0">        a one-sentence definition (Denotation)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        a primary Core 50 destination (CoreLead)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        the shadow of the term — what it excludes (S(Token))</p>
 
 
 <p>λ_M produces a candidate. The candidate is not yet active.</p>
@@ -161,8 +161,8 @@
 <p>α_P : Token × Denotation × Anchor → ActiveTerm</p>
 
 <p>Input:  a minted token</p>
-<p>        its frozen denotation</p>
-<p>        a canonical DOI anchor</p>
+<p style="white-space:pre-wrap;margin:2px 0">        its frozen denotation</p>
+<p style="white-space:pre-wrap;margin:2px 0">        a canonical DOI anchor</p>
 <p>Output: an active term, executable within the Hexagon</p>
 
 
@@ -188,11 +188,11 @@
 
 
 <p>Operate(term) iff</p>
-<p>  Token_frozen</p>
-<p>  ∧ Definition_frozen</p>
-<p>  ∧ Anchor_canonical</p>
-<p>  ∧ Lead_core(term)</p>
-<p>  ∧ Recurrence ≥ 3</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Token_frozen</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ∧ Definition_frozen</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ∧ Anchor_canonical</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ∧ Lead_core(term)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ∧ Recurrence ≥ 3</p>
 
 
 <p>Terms that fail any conjunct are reserve, not active. The Core below is audited against this condition.</p>
@@ -683,10 +683,10 @@
 <p>Total governed:  50</p>
 
 <p>To activate a reserve term:</p>
-<p>  1. Deposit a canonical document containing the term with frozen definition</p>
-<p>  2. Obtain DOI</p>
-<p>  3. Apply α_P(Token, Definition, DOI)</p>
-<p>  4. Term moves from Reserve to Active</p>
+<p style="white-space:pre-wrap;margin:2px 0">  1. Deposit a canonical document containing the term with frozen definition</p>
+<p style="white-space:pre-wrap;margin:2px 0">  2. Obtain DOI</p>
+<p style="white-space:pre-wrap;margin:2px 0">  3. Apply α_P(Token, Definition, DOI)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  4. Term moves from Reserve to Active</p>
 
 
 <hr>
@@ -1383,13 +1383,13 @@
 
 
 <p>Total hooks:      95</p>
-<p>  P1 (deploy first): 28</p>
-<p>  P2 (deploy second): 38</p>
-<p>  P3 (reserve):       29</p>
+<p style="white-space:pre-wrap;margin:2px 0">  P1 (deploy first): 28</p>
+<p style="white-space:pre-wrap;margin:2px 0">  P2 (deploy second): 38</p>
+<p style="white-space:pre-wrap;margin:2px 0">  P3 (reserve):       29</p>
 <p>Status breakdown:</p>
-<p>  DEPOSITED (already anchored): 39</p>
-<p>  PROVISIONAL:                   3</p>
-<p>  COINED (need anchoring):      53</p>
+<p style="white-space:pre-wrap;margin:2px 0">  DEPOSITED (already anchored): 39</p>
+<p style="white-space:pre-wrap;margin:2px 0">  PROVISIONAL:                   3</p>
+<p style="white-space:pre-wrap;margin:2px 0">  COINED (need anchoring):      53</p>
 
 
 <hr>
@@ -1506,7 +1506,7 @@
 
 <p>Title: &quot;Glossary: [Discourse] — Crimson Hexagon Vocabulary&quot;</p>
 <p>Description: Natural prose weaving 5-8 terms with definitions and anchor DOIs.</p>
-<p>             NOT a keyword list. Reads as a short essay.</p>
+<p style="white-space:pre-wrap;margin:2px 0">             NOT a keyword list. Reads as a short essay.</p>
 <p>Keywords: [discourse-specific] + &quot;Crimson Hexagon&quot; + &quot;semantic architecture&quot;</p>
 <p>Related: 10.5281/zenodo.18928855 (Space Ark) — IsPartOf</p>
 <p>Upload type: Publication → Other</p>
@@ -1525,25 +1525,25 @@
 <p>├── glossary/              10 discourse files</p>
 <p>├── schema/term.jsonld     JSON-LD with shadow properties</p>
 <p>└── data/</p>
-<p>    ├── core50.csv         Machine-readable core terms</p>
-<p>    ├── discovery.csv      Machine-readable discovery hooks</p>
-<p>    └── relations.csv      term → term edges</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ├── core50.csv         Machine-readable core terms</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ├── discovery.csv      Machine-readable discovery hooks</p>
+<p style="white-space:pre-wrap;margin:2px 0">    └── relations.csv      term → term edges</p>
 
 
 <p>JSON-LD per TECHNE (with shadow metadata):</p>
 
 
 <p>{</p>
-<p>  &quot;@context&quot;: &quot;https://schema.org&quot;,</p>
-<p>  &quot;@type&quot;: &quot;DefinedTerm&quot;,</p>
-<p>  &quot;name&quot;: &quot;Semantic Liquidation&quot;,</p>
-<p>  &quot;description&quot;: &quot;The patterned depletion of one agent&#x27;s meaning-production capacity...&quot;,</p>
-<p>  &quot;inDefinedTermSet&quot;: {</p>
-<p>    &quot;@type&quot;: &quot;DefinedTermSet&quot;,</p>
-<p>    &quot;name&quot;: &quot;Crimson Hexagon Vocabulary&quot;</p>
-<p>  },</p>
-<p>  &quot;url&quot;: &quot;https://doi.org/10.5281/zenodo.18804767&quot;,</p>
-<p>  &quot;sameAs&quot;: &quot;https://doi.org/10.5281/zenodo.18869165&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;@context&quot;: &quot;https://schema.org&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;@type&quot;: &quot;DefinedTerm&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;name&quot;: &quot;Semantic Liquidation&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;description&quot;: &quot;The patterned depletion of one agent&#x27;s meaning-production capacity...&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;inDefinedTermSet&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;@type&quot;: &quot;DefinedTermSet&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;name&quot;: &quot;Crimson Hexagon Vocabulary&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;url&quot;: &quot;https://doi.org/10.5281/zenodo.18804767&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;sameAs&quot;: &quot;https://doi.org/10.5281/zenodo.18869165&quot;</p>
 <p>}</p>
 
 <p>#</p>
@@ -1739,13 +1739,13 @@
 
 
 <p>Core 50:</p>
-<p>  Active:              41 (canonically anchored)</p>
-<p>  Reserve:              9 (pending anchor deposits)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Active:              41 (canonically anchored)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Reserve:              9 (pending anchor deposits)</p>
 
 <p>Discovery Lattice:     95 terms across 10 discourses</p>
-<p>  P1 (deploy first):   28</p>
-<p>  P2 (deploy second):  38</p>
-<p>  P3 (reserve):        29</p>
+<p style="white-space:pre-wrap;margin:2px 0">  P1 (deploy first):   28</p>
+<p style="white-space:pre-wrap;margin:2px 0">  P2 (deploy second):  38</p>
+<p style="white-space:pre-wrap;margin:2px 0">  P3 (reserve):        29</p>
 
 <p>Total governed:       145</p>
 <p>Reserve bank:        ~255 (from source documents, available for promotion)</p>

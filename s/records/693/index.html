@@ -119,7 +119,7 @@
 <p>HTML &lt;title&gt;:    Crimson Hexagonal Archive Knowledge Graph — Aperture Atlas</p>
 <p>&lt;h1&gt;:            Crimson Hexagonal Archive Knowledge Graph</p>
 <p>Subtitle:        The Aperture Atlas: surfaces, basins, heteronyms, </p>
-<p>                 documents, and reception paths</p>
+<p style="white-space:pre-wrap;margin:2px 0">                 documents, and reception paths</p>
 <p>Nav label:       Topology</p>
 <p>React component: ApertureAtlas</p>
 <p>Schema name:     Crimson Hexagonal Archive Knowledge Graph</p>
@@ -143,22 +143,22 @@
 
 
 <p>interface Node {</p>
-<p>  id: string;                    // unique, kebab-case</p>
-<p>  type: &quot;INFRASTRUCTURE&quot; | &quot;SURFACE&quot; | &quot;ENTITY&quot; | &quot;IDENTITY&quot; | &quot;DOCUMENT&quot; | &quot;PLATFORM&quot;;</p>
-<p>  subtype: string;               // see subtypes table</p>
-<p>  label: string;                 // display name</p>
-<p>  url: string | null;            // web address (null for lost nodes)</p>
-<p>  doi: string | null;            // DOI if applicable</p>
-<p>  hexAddress: string | null;     // e.g., &quot;00.LAL.AUTHOR.THORNBURGH&quot;</p>
-<p>  status: &quot;active&quot; | &quot;dormant&quot; | &quot;banned&quot; | &quot;lapsed&quot; | &quot;walled&quot; | &quot;orphaned&quot; | &quot;revoked&quot;;</p>
-<p>  authority: number;             // 0.0–1.0 (operator-calibrated prior, not empirical constant)</p>
-<p>  basinState: &quot;ghost&quot; | &quot;contested&quot; | &quot;competitive&quot; | &quot;captured&quot; | &quot;immanent&quot; | null;</p>
-<p>  bdr: number | null;            // Basin Depth Ratio (null if not entity or not measured)</p>
-<p>  vulnerabilityScore: number | null; // (1 - BDR) × (1 - surfaceDiversity/6) × temporalDecay</p>
-<p>  apertureType: &quot;input&quot; | &quot;output&quot; | &quot;relay&quot; | null; // input=write to global basin, output=reflects framing, relay=amplifies</p>
-<p>  firstSeen: string;             // ISO date</p>
-<p>  lastVerified: string | null;   // ISO date</p>
-<p>  properties: Record&lt;string, any&gt;;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  id: string;                    // unique, kebab-case</p>
+<p style="white-space:pre-wrap;margin:2px 0">  type: &quot;INFRASTRUCTURE&quot; | &quot;SURFACE&quot; | &quot;ENTITY&quot; | &quot;IDENTITY&quot; | &quot;DOCUMENT&quot; | &quot;PLATFORM&quot;;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  subtype: string;               // see subtypes table</p>
+<p style="white-space:pre-wrap;margin:2px 0">  label: string;                 // display name</p>
+<p style="white-space:pre-wrap;margin:2px 0">  url: string | null;            // web address (null for lost nodes)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  doi: string | null;            // DOI if applicable</p>
+<p style="white-space:pre-wrap;margin:2px 0">  hexAddress: string | null;     // e.g., &quot;00.LAL.AUTHOR.THORNBURGH&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  status: &quot;active&quot; | &quot;dormant&quot; | &quot;banned&quot; | &quot;lapsed&quot; | &quot;walled&quot; | &quot;orphaned&quot; | &quot;revoked&quot;;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  authority: number;             // 0.0–1.0 (operator-calibrated prior, not empirical constant)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  basinState: &quot;ghost&quot; | &quot;contested&quot; | &quot;competitive&quot; | &quot;captured&quot; | &quot;immanent&quot; | null;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  bdr: number | null;            // Basin Depth Ratio (null if not entity or not measured)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  vulnerabilityScore: number | null; // (1 - BDR) × (1 - surfaceDiversity/6) × temporalDecay</p>
+<p style="white-space:pre-wrap;margin:2px 0">  apertureType: &quot;input&quot; | &quot;output&quot; | &quot;relay&quot; | null; // input=write to global basin, output=reflects framing, relay=amplifies</p>
+<p style="white-space:pre-wrap;margin:2px 0">  firstSeen: string;             // ISO date</p>
+<p style="white-space:pre-wrap;margin:2px 0">  lastVerified: string | null;   // ISO date</p>
+<p style="white-space:pre-wrap;margin:2px 0">  properties: Record&lt;string, any&gt;;</p>
 <p>}</p>
 
 
@@ -200,30 +200,30 @@
 
 
 <p>interface Edge {</p>
-<p>  id: string;</p>
-<p>  source: string;               // node id</p>
-<p>  target: string;               // node id</p>
-<p>  type: EdgeType;                // Wikidata Pxxx or spxi: extension</p>
-<p>  directed: boolean;</p>
-<p>  wikidataStatus: &quot;live&quot; | &quot;pending&quot; | &quot;blocked&quot; | &quot;n/a&quot;;</p>
-<p>  properties: {</p>
-<p>    anchorText?: string;</p>
-<p>    firstObserved?: string;</p>
-<p>    lastVerified?: string;</p>
-<p>    weight?: number;             // 0–1, for force simulation</p>
-<p>    citationContext?: string;</p>
-<p>    wikidataSubject?: string;    // Q-ID of source entity on Wikidata</p>
-<p>    wikidataObject?: string;     // Q-ID of target entity on Wikidata</p>
-<p>  };</p>
+<p style="white-space:pre-wrap;margin:2px 0">  id: string;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  source: string;               // node id</p>
+<p style="white-space:pre-wrap;margin:2px 0">  target: string;               // node id</p>
+<p style="white-space:pre-wrap;margin:2px 0">  type: EdgeType;                // Wikidata Pxxx or spxi: extension</p>
+<p style="white-space:pre-wrap;margin:2px 0">  directed: boolean;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  wikidataStatus: &quot;live&quot; | &quot;pending&quot; | &quot;blocked&quot; | &quot;n/a&quot;;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  properties: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    anchorText?: string;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    firstObserved?: string;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    lastVerified?: string;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    weight?: number;             // 0–1, for force simulation</p>
+<p style="white-space:pre-wrap;margin:2px 0">    citationContext?: string;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    wikidataSubject?: string;    // Q-ID of source entity on Wikidata</p>
+<p style="white-space:pre-wrap;margin:2px 0">    wikidataObject?: string;     // Q-ID of target entity on Wikidata</p>
+<p style="white-space:pre-wrap;margin:2px 0">  };</p>
 <p>}</p>
 
 <p>type EdgeType =</p>
-<p>  // Wikidata-aligned relations (Pxxx = Wikidata property ID)</p>
-<p>  // Each edge doubles as a Wikidata edit specification</p>
+<p style="white-space:pre-wrap;margin:2px 0">  // Wikidata-aligned relations (Pxxx = Wikidata property ID)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  // Each edge doubles as a Wikidata edit specification</p>
 <div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P31&quot;     // instance of (ENTITY → class)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P50&quot;     // author (DOCUMENT → IDENTITY)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P123&quot;    // publisher (DOCUMENT → IDENTITY/org)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P127&quot;    // owned by (SURFACE → IDENTITY)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P170&quot;    // creator (SURFACE/DOCUMENT → IDENTITY)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P178&quot;    // developer (PLATFORM/TOOL → IDENTITY)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P179&quot;    // part of series (DOCUMENT → DOCUMENT)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P195&quot;    // collection (DOCUMENT → collection/archive)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P275&quot;    // license (DOCUMENT → license type)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P356&quot;    // DOI (DOCUMENT → DOI string)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P496&quot;    // ORCID iD (IDENTITY → ORCID)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P527&quot;    // has part (ENTITY → ENTITY, archive → document)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P856&quot;    // official website (ENTITY/IDENTITY → SURFACE)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P921&quot;    // main subject (DOCUMENT → ENTITY)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P1433&quot;   // published in (DOCUMENT → journal/venue)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P1889&quot;   // different from (ENTITY → ENTITY, disambiguation)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P2860&quot;   // cites work (DOCUMENT → DOCUMENT)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;P6216&quot;   // copyright status (DOCUMENT → CC BY 4.0)</td></tr></table></div>
-<p>  // Archive-specific extensions (not on Wikidata — use spxi: prefix)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  // Archive-specific extensions (not on Wikidata — use spxi: prefix)</p>
 <div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:controls&quot;       // IDENTITY controls SURFACE</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:authorizes&quot;     // MANUS authorizes IDENTITY (Tier 0)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:hexLicensedBy&quot;  // IDENTITY licensed under DOCUMENT</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:hasWitness&quot;     // DOCUMENT witnessed by IDENTITY (Assembly)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:hasSIM&quot;         // SURFACE carries semantic identity marker</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:hasFAQ&quot;         // SURFACE carries structured Q/A</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:hasJSONLD&quot;      // SURFACE carries machine-readable schema</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:reinforces&quot;     // SURFACE reinforces ENTITY (basin deepening)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:mirrors&quot;        // SURFACE mirrors DOCUMENT (content equivalence)</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:lostFrom&quot;       // SURFACE ejected from PLATFORM</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:basinCompetes&quot;  // ENTITY competes with ENTITY for same term</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">&quot;spxi:replaces&quot;       // DOCUMENT supersedes DOCUMENT</td></tr></table></div>
-<p>  ;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ;</p>
 
 <p>// WIKIDATA SYNC STATUS on each edge:</p>
 <p>// Each edge carries a wikidataStatus property:</p>
@@ -238,14 +238,14 @@
 
 
 <p>interface BasinMeasurement {</p>
-<p>  id: string;</p>
-<p>  entityId: string;</p>
-<p>  date: string;                  // ISO</p>
-<p>  bdr: number;</p>
-<p>  fpi: number;</p>
-<p>  dv: number;</p>
-<p>  platform: string;              // &quot;Google AI Overviews&quot; | &quot;ChatGPT&quot; | &quot;Perplexity&quot; | &quot;Claude&quot;</p>
-<p>  notes: string;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  id: string;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  entityId: string;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  date: string;                  // ISO</p>
+<p style="white-space:pre-wrap;margin:2px 0">  bdr: number;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  fpi: number;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  dv: number;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  platform: string;              // &quot;Google AI Overviews&quot; | &quot;ChatGPT&quot; | &quot;Perplexity&quot; | &quot;Claude&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  notes: string;</p>
 <p>}</p>
 
 
@@ -1393,41 +1393,41 @@
 
 
 <p>TASK-M2-01: Deploy holographickernel.org to Vercel</p>
-<p>  Input: github.com/leesharks000/holographic-kernel</p>
-<p>  Operation: Import at vercel.com/new → &quot;Other&quot; framework → deploy</p>
-<p>  Output: Live at https://holographickernel.org</p>
-<p>  Verification: curl -I returns 200, &lt;title&gt; contains &quot;Holographic Kernel&quot;</p>
-<p>  Dependencies: DNS must point (CNAME cname.vercel-dns.com)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Input: github.com/leesharks000/holographic-kernel</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Operation: Import at vercel.com/new → &quot;Other&quot; framework → deploy</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Output: Live at https://holographickernel.org</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Verification: curl -I returns 200, &lt;title&gt; contains &quot;Holographic Kernel&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Dependencies: DNS must point (CNAME cname.vercel-dns.com)</p>
 
 <p>TASK-M2-02: Deploy surfacemap.org</p>
-<p>  Input: Will be part of crimson-hexagonal-interface repo (/topology route)</p>
-<p>  Operation: Add domain in Vercel project settings for crimson-hexagonal-interface</p>
-<p>  Output: surfacemap.org redirects to crimsonhexagonal.org/topology</p>
-<p>  Dependencies: Topology page must be built first (Module 5)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Input: Will be part of crimson-hexagonal-interface repo (/topology route)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Operation: Add domain in Vercel project settings for crimson-hexagonal-interface</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Output: surfacemap.org redirects to crimsonhexagonal.org/topology</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Dependencies: Topology page must be built first (Module 5)</p>
 
 <p>TASK-M2-03: Register 6 domains in Google Search Console</p>
-<p>  Input: spxi.dev, secretbookofwalt.org, pessoagraph.org, holographickernel.org, </p>
-<p>         crimsonhexagonal.org, semanticeconomy.org</p>
-<p>  Operation: Verify via DNS TXT record. Submit sitemaps.</p>
-<p>  Verification: All 6 show &quot;Submitted&quot; status in Search Console</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Input: spxi.dev, secretbookofwalt.org, pessoagraph.org, holographickernel.org, </p>
+<p style="white-space:pre-wrap;margin:2px 0">         crimsonhexagonal.org, semanticeconomy.org</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Operation: Verify via DNS TXT record. Submit sitemaps.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Verification: All 6 show &quot;Submitted&quot; status in Search Console</p>
 
 <p>TASK-M2-04: Fix semanticeconomy.org robots.txt</p>
-<p>  Input: Current robots.txt blocking crawlers</p>
-<p>  Operation: Change to Allow: /</p>
-<p>  Verification: curl https://semanticeconomy.org/robots.txt shows Allow</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Input: Current robots.txt blocking crawlers</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Operation: Change to Allow: /</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Verification: curl https://semanticeconomy.org/robots.txt shows Allow</p>
 
 <p>TASK-M2-05: Apply SPXI to crimsonhexagonal.org</p>
-<p>  Input: EA-HK-01 schema, SIM patterns, FAQ template</p>
-<p>  Output: 11/11 SPXI compliance (DefinedTerm, FAQPage, HK JSON-LD, SIMs, </p>
-<p>          Provenance Chain, noscript Tier 2, disambiguation)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Input: EA-HK-01 schema, SIM patterns, FAQ template</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Output: 11/11 SPXI compliance (DefinedTerm, FAQPage, HK JSON-LD, SIMs, </p>
+<p style="white-space:pre-wrap;margin:2px 0">          Provenance Chain, noscript Tier 2, disambiguation)</p>
 
 <p>TASK-M2-06: Complete cross-link mesh</p>
-<p>  Operation: Every first-party site links to every other first-party site</p>
-<p>  Gaps to fill:</p>
-<p>    - crimsonhexagonal.org → holographickernel.org</p>
-<p>    - semanticeconomy.org → all sites (after robots.txt fix)</p>
-<p>    - holographickernel.org → secretbookofwalt.org, pessoagraph.org</p>
-<p>    - surfacemap.org → all sites (after deployment)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Operation: Every first-party site links to every other first-party site</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Gaps to fill:</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - crimsonhexagonal.org → holographickernel.org</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - semanticeconomy.org → all sites (after robots.txt fix)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - holographickernel.org → secretbookofwalt.org, pessoagraph.org</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - surfacemap.org → all sites (after deployment)</p>
 
 <p>#</p>
 
@@ -1441,16 +1441,16 @@
 
 
 <p>TASK-M3-01: Write &quot;What Is a Holographic Kernel?&quot; Medium post</p>
-<p>  Length: 800 words</p>
-<p>  Compound phrase: &quot;Semantic Economy holographic kernel&quot; (use ≥5 times)</p>
-<p>  Links: holographickernel.org, DOI 10.5281/zenodo.19763365, spxi.dev</p>
-<p>  Publish on: medium.com/@leesharks00</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Length: 800 words</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Compound phrase: &quot;Semantic Economy holographic kernel&quot; (use ≥5 times)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Links: holographickernel.org, DOI 10.5281/zenodo.19763365, spxi.dev</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Publish on: medium.com/@leesharks00</p>
 
 <p>TASK-M3-02: Write &quot;The Writable Retrieval Basin&quot; Medium post</p>
-<p>  Length: 800 words</p>
-<p>  Key phrase: &quot;writable retrieval basin&quot; + &quot;deposit before you query&quot;</p>
-<p>  Links: spxi.dev, DOI 10.5281/zenodo.19763346</p>
-<p>  Publish on: medium.com/@leesharks00</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Length: 800 words</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Key phrase: &quot;writable retrieval basin&quot; + &quot;deposit before you query&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Links: spxi.dev, DOI 10.5281/zenodo.19763346</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Publish on: medium.com/@leesharks00</p>
 
 <p>#</p>
 
@@ -1464,14 +1464,14 @@
 
 
 <p>TASK-M4-01: Prepare QuickStatements batch for:</p>
-<p>  1. Lee Sharks (Q: human, P31:Q5, P106:Q36180, P496:ORCID, P856:crimsonhexagonal.org)</p>
-<p>  2. Crimson Hexagonal Archive (Q: digital archive, P1889 differentFrom Brandwatch)</p>
-<p>  3. SPXI Protocol (Q: technical standard, P1889 differentFrom SPXI ETF)</p>
-<p>  4. Semantic Economy Institute (Q: organization)</p>
-<p>  5. Operative Semiotics (Q: field of study)</p>
-<p>  6. Secret Book of Walt (Q: literary work)</p>
-<p>  7. Holographic Kernel - Semantic Economy (Q: DefinedTerm, P1889 differentFrom </p>
-<p>     holographic principle Q21282103)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  1. Lee Sharks (Q: human, P31:Q5, P106:Q36180, P496:ORCID, P856:crimsonhexagonal.org)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  2. Crimson Hexagonal Archive (Q: digital archive, P1889 differentFrom Brandwatch)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  3. SPXI Protocol (Q: technical standard, P1889 differentFrom SPXI ETF)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  4. Semantic Economy Institute (Q: organization)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  5. Operative Semiotics (Q: field of study)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  6. Secret Book of Walt (Q: literary work)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  7. Holographic Kernel - Semantic Economy (Q: DefinedTerm, P1889 differentFrom </p>
+<p style="white-space:pre-wrap;margin:2px 0">     holographic principle Q21282103)</p>
 
 <p>TASK-M4-02: Execute via hauntedmemes account at quickstatements.toolforge.org</p>
 
@@ -1489,22 +1489,22 @@
 
 
 <p>TASK-M5-01: Compile topology-source.json from all registry data</p>
-<p>  Input: §III tables + Module 1 audit results</p>
-<p>  Output: topology-source.json with all nodes, edges, measurements</p>
-<p>  Validation: JSON Schema check, ≥100 nodes, ≥300 edges, zero orphans</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Input: §III tables + Module 1 audit results</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Output: topology-source.json with all nodes, edges, measurements</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Validation: JSON Schema check, ≥100 nodes, ≥300 edges, zero orphans</p>
 
 <p>TASK-M5-02: Build ApertureAtlas React component</p>
-<p>  Input: topology-source.json + §IV visualization spec</p>
-<p>  Output: src/components/ApertureAtlas.jsx</p>
-<p>  Route: /topology</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Input: topology-source.json + §IV visualization spec</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Output: src/components/ApertureAtlas.jsx</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Route: /topology</p>
 
 <p>TASK-M5-03: Deploy at crimsonhexagonal.org/topology</p>
-<p>  Input: Component added to crimson-hexagonal-interface repo</p>
-<p>  Output: Live page</p>
-<p>  Verification: Loads &lt;2s, all 6 types render, search works, basin overlay works</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Input: Component added to crimson-hexagonal-interface repo</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Output: Live page</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Verification: Loads &lt;2s, all 6 types render, search works, basin overlay works</p>
 
 <p>TASK-M5-04: Configure surfacemap.org redirect</p>
-<p>  Output: surfacemap.org → crimsonhexagonal.org/topology</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Output: surfacemap.org → crimsonhexagonal.org/topology</p>
 
 
 <hr>
@@ -1513,30 +1513,30 @@
 
 
 <p>Checkpoint A (Post-Module 2): Infrastructure</p>
-<p>  [ ] All 7 domains return HTTP 200 (6 existing + surfacemap.org)</p>
-<p>  [ ] All 6 primary domains registered in Google Search Console</p>
-<p>  [ ] Sitemaps submitted for each domain</p>
-<p>  [ ] robots.txt allows all on semanticeconomy.org</p>
-<p>  [ ] Cross-link mesh complete (every site → every site)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [ ] All 7 domains return HTTP 200 (6 existing + surfacemap.org)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [ ] All 6 primary domains registered in Google Search Console</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [ ] Sitemaps submitted for each domain</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [ ] robots.txt allows all on semanticeconomy.org</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [ ] Cross-link mesh complete (every site → every site)</p>
 
 <p>Checkpoint B (Post-Module 1+4): Data Completeness</p>
-<p>  [ ] topology-source.json contains ≥100 nodes</p>
-<p>  [ ] Every first-party domain appears as a node</p>
-<p>  [ ] Every DOI-anchored key document appears as a node</p>
-<p>  [ ] All 12 Dodecad heteronyms + Feist + Johnson appear as nodes</p>
-<p>  [ ] All 3 hex licenses appear as DOCUMENT nodes</p>
-<p>  [ ] Zero active nodes with no URL</p>
-<p>  [ ] Wikidata items created and verified</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [ ] topology-source.json contains ≥100 nodes</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [ ] Every first-party domain appears as a node</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [ ] Every DOI-anchored key document appears as a node</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [ ] All 12 Dodecad heteronyms + Feist + Johnson appear as nodes</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [ ] All 3 hex licenses appear as DOCUMENT nodes</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [ ] Zero active nodes with no URL</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [ ] Wikidata items created and verified</p>
 
 <p>Checkpoint C (Post-Module 5): Graph Deployment</p>
-<p>  [ ] crimsonhexagonal.org/topology loads in &lt;2 seconds</p>
-<p>  [ ] All 6 node types render with distinct colors</p>
-<p>  [ ] Clicking a node opens sidebar with full properties</p>
-<p>  [ ] Basin overlay correctly colors ghost/contested/captured/immanent</p>
-<p>  [ ] Ghost mode shows Reddit, praxademic, Viola as faded + dashed</p>
-<p>  [ ] Search returns results in &lt;100ms</p>
-<p>  [ ] surfacemap.org redirects correctly</p>
-<p>  [ ] The graph contains a node for surfacemap.org (self-reference)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [ ] crimsonhexagonal.org/topology loads in &lt;2 seconds</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [ ] All 6 node types render with distinct colors</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [ ] Clicking a node opens sidebar with full properties</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [ ] Basin overlay correctly colors ghost/contested/captured/immanent</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [ ] Ghost mode shows Reddit, praxademic, Viola as faded + dashed</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [ ] Search returns results in &lt;100ms</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [ ] surfacemap.org redirects correctly</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [ ] The graph contains a node for surfacemap.org (self-reference)</p>
 
 
 <hr>

@@ -269,44 +269,44 @@
 <p>import { defineCollection, z } from &#x27;astro:content&#x27;;</p>
 
 <p>const scaleSchema = z.object({</p>
-<p>  scale: z.number().min(1).max(5),</p>
-<p>  domain: z.string(),</p>
-<p>  name: z.string(),</p>
-<p>  units: z.string(),</p>
-<p>  artifacts: z.array(z.string()),</p>
-<p>  status: z.string(),</p>
-<p>  sims: z.array(z.string()),</p>
-<p>  doi: z.array(z.string()).optional(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  scale: z.number().min(1).max(5),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  domain: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  name: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  units: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  artifacts: z.array(z.string()),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  status: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  sims: z.array(z.string()),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  doi: z.array(z.string()).optional(),</p>
 <p>});</p>
 
 <p>const projectSchema = z.object({</p>
-<p>  name: z.string(),</p>
-<p>  scale: z.number(),</p>
-<p>  status: z.enum([&#x27;concept&#x27;,&#x27;design&#x27;,&#x27;prototype&#x27;,&#x27;field-test&#x27;,&#x27;deployed&#x27;]),</p>
-<p>  artifact_class: z.string(),</p>
-<p>  description: z.string(),</p>
-<p>  alice_quote: z.string().optional(),</p>
-<p>  doi: z.array(z.string()).optional(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  name: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  scale: z.number(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  status: z.enum([&#x27;concept&#x27;,&#x27;design&#x27;,&#x27;prototype&#x27;,&#x27;field-test&#x27;,&#x27;deployed&#x27;]),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  artifact_class: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  description: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  alice_quote: z.string().optional(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  doi: z.array(z.string()).optional(),</p>
 <p>});</p>
 
 <p>const principleSchema = z.object({</p>
-<p>  name: z.string(),</p>
-<p>  epigraph: z.string(),</p>
-<p>  alice_quote: z.string().optional(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  name: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  epigraph: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  alice_quote: z.string().optional(),</p>
 <p>});</p>
 
 <p>const personSchema = z.object({</p>
-<p>  name: z.string(),</p>
-<p>  role: z.string(),</p>
-<p>  mpai_doi: z.string(),</p>
-<p>  pronouns: z.string().optional(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  name: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  role: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  mpai_doi: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  pronouns: z.string().optional(),</p>
 <p>});</p>
 
 <p>export const collections = {</p>
-<p>  scales: defineCollection({ type:&#x27;content&#x27;, schema: scaleSchema }),</p>
-<p>  projects: defineCollection({ type:&#x27;content&#x27;, schema: projectSchema }),</p>
-<p>  principles: defineCollection({ type:&#x27;content&#x27;, schema: principleSchema }),</p>
-<p>  people: defineCollection({ type:&#x27;content&#x27;, schema: personSchema }),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  scales: defineCollection({ type:&#x27;content&#x27;, schema: scaleSchema }),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  projects: defineCollection({ type:&#x27;content&#x27;, schema: projectSchema }),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  principles: defineCollection({ type:&#x27;content&#x27;, schema: principleSchema }),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  people: defineCollection({ type:&#x27;content&#x27;, schema: personSchema }),</p>
 <p>};</p>
 <p>#</p>
 
@@ -401,7 +401,7 @@
 <p>│   └── styles/</p>
 <p>│       └── global.css</p>
 <p>└── tests/</p>
-<p>    └── jsonld.spec.ts            # validates JSON-LD on every page</p>
+<p style="white-space:pre-wrap;margin:2px 0">    └── jsonld.spec.ts            # validates JSON-LD on every page</p>
 
 <hr>
 <h2>§6. THE DESIGN SYSTEM</h2>
@@ -411,36 +411,36 @@
 <h2>CSS variables (extending CHA palette)</h2>
 
 <p>:root {</p>
-<p>  /<em> Base palette — field-guide aesthetic </em>/</p>
-<p>  --bg: #f6f1e8;            /<em> bone / sand </em>/</p>
-<p>  --bg-deep: #ece4d4;       /<em> aged paper </em>/</p>
-<p>  --text: #2a2620;          /<em> burnt umber </em>/</p>
-<p>  --text-dim: #6b6253;      /<em> substrate </em>/</p>
-<p>  --accent-gold: #a89060;   /<em> unfurling </em>/</p>
-<p>  --accent-bright: #c8a868; /<em> the brick </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">  /<em> Base palette — field-guide aesthetic </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">  --bg: #f6f1e8;            /<em> bone / sand </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">  --bg-deep: #ece4d4;       /<em> aged paper </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">  --text: #2a2620;          /<em> burnt umber </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">  --text-dim: #6b6253;      /<em> substrate </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">  --accent-gold: #a89060;   /<em> unfurling </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">  --accent-bright: #c8a868; /<em> the brick </em>/</p>
 
-<p>  /<em> Scale color coding </em>/</p>
-<p>  --scale-1: #a89060;       /<em> brick — gold (compressed seed) </em>/</p>
-<p>  --scale-2: #6b8f5e;       /<em> structure — green (growth) </em>/</p>
-<p>  --scale-3: #b84030;       /<em> organism — wine-cap red (life) </em>/</p>
-<p>  --scale-4: #6088b0;       /<em> territory — water/estuary blue </em>/</p>
-<p>  --scale-5: #2a2620;       /<em> planet — void </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">  /<em> Scale color coding </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">  --scale-1: #a89060;       /<em> brick — gold (compressed seed) </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">  --scale-2: #6b8f5e;       /<em> structure — green (growth) </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">  --scale-3: #b84030;       /<em> organism — wine-cap red (life) </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">  --scale-4: #6088b0;       /<em> territory — water/estuary blue </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">  --scale-5: #2a2620;       /<em> planet — void </em>/</p>
 
-<p>  /<em> Typography </em>/</p>
-<p>  --serif: &#x27;Cormorant Garamond&#x27;, &#x27;Charter&#x27;, Georgia, serif;</p>
-<p>  --mono: &#x27;JetBrains Mono&#x27;, &#x27;IBM Plex Mono&#x27;, monospace;</p>
-<p>  --measure: 32em;          /<em> line length </em>/</p>
-<p>  --line-height: 1.7;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  /<em> Typography </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">  --serif: &#x27;Cormorant Garamond&#x27;, &#x27;Charter&#x27;, Georgia, serif;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  --mono: &#x27;JetBrains Mono&#x27;, &#x27;IBM Plex Mono&#x27;, monospace;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  --measure: 32em;          /<em> line length </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">  --line-height: 1.7;</p>
 <p>}</p>
 
 <p>@media (prefers-color-scheme: dark) {</p>
-<p>  :root {</p>
-<p>    --bg: #0c0e12;          /<em> void </em>/</p>
-<p>    --bg-deep: #12141a;</p>
-<p>    --text: #d8d4cc;        /<em> mycelium </em>/</p>
-<p>    --text-dim: #8a8478;</p>
-<p>    --accent-gold: #c8a868;</p>
-<p>  }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  :root {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    --bg: #0c0e12;          /<em> void </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    --bg-deep: #12141a;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    --text: #d8d4cc;        /<em> mycelium </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    --text-dim: #8a8478;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    --accent-gold: #c8a868;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  }</p>
 <p>}</p>
 <p>#</p>
 
@@ -480,10 +480,10 @@
 <p>const packet = entity === &#x27;alice&#x27; ? aliceMpai : lalMpai;</p>
 <hr>
 <p>&lt;script type=&quot;application/ld+json&quot; set:html={JSON.stringify({</p>
-<p>  ...packet,</p>
-<p>  &#x27;@id&#x27;: `https://livingarchitecturelab.org${page}`,</p>
-<p>  ...(sims.length &amp;&amp; { &#x27;mp:semanticIntegrityMarker&#x27;: sims }),</p>
-<p>  ...(negativeTags.length &amp;&amp; { &#x27;mp:negativeTag&#x27;: negativeTags }),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ...packet,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &#x27;@id&#x27;: `https://livingarchitecturelab.org${page}`,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ...(sims.length &amp;&amp; { &#x27;mp:semanticIntegrityMarker&#x27;: sims }),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ...(negativeTags.length &amp;&amp; { &#x27;mp:negativeTag&#x27;: negativeTags }),</p>
 <p>})} /&gt;</p>
 <p>#</p>
 
@@ -493,10 +493,10 @@
 <p>import JsonLd from &#x27;../../components/JsonLd.astro&#x27;;</p>
 <hr>
 <p>&lt;JsonLd</p>
-<p>  entity=&quot;lal&quot;</p>
-<p>  page=&quot;/scales/01-the-brick&quot;</p>
-<p>  sims={[&#x27;Living parts unfurl from compressed seeds.&#x27;, &#x27;A myceliated brick is stored nutrition, thermal mass, biological growth, and emergency shelter compressed into a small form.&#x27;]}</p>
-<p>  negativeTags={[&#x27;NOT a conventional construction block&#x27;, &#x27;NOT extracted from quarries&#x27;]}</p>
+<p style="white-space:pre-wrap;margin:2px 0">  entity=&quot;lal&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  page=&quot;/scales/01-the-brick&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  sims={[&#x27;Living parts unfurl from compressed seeds.&#x27;, &#x27;A myceliated brick is stored nutrition, thermal mass, biological growth, and emergency shelter compressed into a small form.&#x27;]}</p>
+<p style="white-space:pre-wrap;margin:2px 0">  negativeTags={[&#x27;NOT a conventional construction block&#x27;, &#x27;NOT extracted from quarries&#x27;]}</p>
 <p>/&gt;</p>
 <p>#</p>
 

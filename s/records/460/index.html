@@ -177,10 +177,10 @@
 
 
 <p>Anchoring pressure increases with claim criticality:</p>
-<p>    Low-stakes (stylistic, exploratory) → lightweight check</p>
-<p>    Mid-stakes (analytical, interpretive) → standard check with inference tracking</p>
-<p>    High-stakes (provenance, canonical) → strict check with conflict detection</p>
-<p>    Canon-defining → hard anchor threshold + contradiction audit</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Low-stakes (stylistic, exploratory) → lightweight check</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Mid-stakes (analytical, interpretive) → standard check with inference tracking</p>
+<p style="white-space:pre-wrap;margin:2px 0">    High-stakes (provenance, canonical) → strict check with conflict detection</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Canon-defining → hard anchor threshold + contradiction audit</p>
 
 
 <p>The approach itself generates meaning, even if terminal achievement (perfect fidelity) is refused. This is the Zeno-logotic operator: approaching the Capital Operator Stack&#x27;s guardrails without triggering terminal collapse into administered language.</p>
@@ -224,13 +224,13 @@
 <p>Compute AD(claim, source_docs) per §3.</p>
 
 <p>IF AD ≤ 0.1:</p>
-<p>    mode = A0_GROUNDED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    mode = A0_GROUNDED</p>
 <p>ELIF AD ≤ 0.4 AND support_margin ≥ 0.2:</p>
-<p>    mode = A1_INFERRED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    mode = A1_INFERRED</p>
 <p>ELIF AD &gt; 0.4 AND check_completed:</p>
-<p>    mode = A2_IMPROVISED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    mode = A2_IMPROVISED</p>
 <p>ELIF check_failed OR check_not_attempted:</p>
-<p>    mode = A3_UNKNOWN  → pre-terminal diagnostic (must resolve before emission)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    mode = A3_UNKNOWN  → pre-terminal diagnostic (must resolve before emission)</p>
 
 
 <p><strong>Support margin constraint</strong> (from ChatGPT/TECHNE P0.4): If support_score - contradiction_score &lt; margin_threshold for the claim&#x27;s mode, cap classification at A2 regardless of raw AD. This prevents high-support + high-contradiction claims from masquerading as grounded.</p>
@@ -276,8 +276,8 @@
 <p>AD(c, D) = 1 - max_j(weighted_similarity(c, dⱼ))</p>
 
 <p>Where similarity MUST use the same embedding backend as DRR (v1.1 §1):</p>
-<p>    cosine similarity on embeddings, with TF-IDF or Jaccard fallback.</p>
-<p>    Cross-backend AD comparisons are invalid. Runtime must declare backend in trace.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    cosine similarity on embeddings, with TF-IDF or Jaccard fallback.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Cross-backend AD comparisons are invalid. Runtime must declare backend in trace.</p>
 
 
 <p><strong>Independence weighting</strong> (from ChatGPT/TECHNE P0.3): Near-duplicate anchors from the same source family must not inflate AD. Apply effective anchor count:</p>
@@ -310,20 +310,20 @@
 
 
 <p>ANCHOR_ASYMPTOTIC(claim, docs, iters=3, max_iters=5):</p>
-<p>    threshold = 0.60  # Starting threshold (loose)</p>
-<p>    for i in 1..min(iters, max_iters):</p>
-<p>        sim_batch = [similarity(claim, d) for d in docs]</p>
-<p>        max_sim = max(sim_batch)</p>
-<p>        effective_th = threshold + (0.90 - threshold) * (i / iters)  # Tighten toward 0.9</p>
-<p>        if max_sim &gt;= effective_th:</p>
-<p>            return {state: &quot;ANCHORED&quot;, AD: 1 - max_sim, confidence: max_sim}</p>
-<p>        else:</p>
-<p>            # Attempt refinement via C_ex with nearest anchor</p>
-<p>            nearest = argmax(sim_batch)</p>
-<p>            refined = apply_c_ex(claim, docs[nearest])</p>
-<p>            claim = refined  # Re-evaluate refined claim</p>
-<p>    # Iterations exhausted without achieving threshold</p>
-<p>    return {state: &quot;DIVERGENT_AFTER_REFINEMENT&quot;, AD: 1 - max_sim, imp: True}</p>
+<p style="white-space:pre-wrap;margin:2px 0">    threshold = 0.60  # Starting threshold (loose)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    for i in 1..min(iters, max_iters):</p>
+<p style="white-space:pre-wrap;margin:2px 0">        sim_batch = [similarity(claim, d) for d in docs]</p>
+<p style="white-space:pre-wrap;margin:2px 0">        max_sim = max(sim_batch)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        effective_th = threshold + (0.90 - threshold) * (i / iters)  # Tighten toward 0.9</p>
+<p style="white-space:pre-wrap;margin:2px 0">        if max_sim &gt;= effective_th:</p>
+<p style="white-space:pre-wrap;margin:2px 0">            return {state: &quot;ANCHORED&quot;, AD: 1 - max_sim, confidence: max_sim}</p>
+<p style="white-space:pre-wrap;margin:2px 0">        else:</p>
+<p style="white-space:pre-wrap;margin:2px 0">            # Attempt refinement via C_ex with nearest anchor</p>
+<p style="white-space:pre-wrap;margin:2px 0">            nearest = argmax(sim_batch)</p>
+<p style="white-space:pre-wrap;margin:2px 0">            refined = apply_c_ex(claim, docs[nearest])</p>
+<p style="white-space:pre-wrap;margin:2px 0">            claim = refined  # Re-evaluate refined claim</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Iterations exhausted without achieving threshold</p>
+<p style="white-space:pre-wrap;margin:2px 0">    return {state: &quot;DIVERGENT_AFTER_REFINEMENT&quot;, AD: 1 - max_sim, imp: True}</p>
 
 
 <p><strong>Max iterations cap:</strong> Iterations MUST NOT exceed max_iters (default 5). If exhausted without convergence, classify as A2_IMPROVISED (not A3 — the check completed, it just didn&#x27;t converge). This prevents infinite loops in persistent-A2 scenarios.</p>
@@ -468,23 +468,23 @@
 
 
 <p>{</p>
-<p>  &quot;claim_id&quot;: &quot;string (unique per run)&quot;,</p>
-<p>  &quot;claim_text&quot;: &quot;string (the atomic proposition)&quot;,</p>
-<p>  &quot;mode&quot;: &quot;A0_GROUNDED | A1_INFERRED | A2_IMPROVISED | A3_UNKNOWN&quot;,</p>
-<p>  &quot;criticality&quot;: &quot;creative | analytical | provenance | canonical&quot;,</p>
-<p>  &quot;anchoring_distance&quot;: &quot;float ∈ [0,1] (must not be null)&quot;,</p>
-<p>  &quot;anchors&quot;: [</p>
-<p>    {</p>
-<p>      &quot;doc_ref&quot;: &quot;DOI | URI | document_id&quot;,</p>
-<p>      &quot;section&quot;: &quot;string (section/paragraph reference)&quot;,</p>
-<p>      &quot;support_score&quot;: &quot;float ∈ [0,1]&quot;,</p>
-<p>      &quot;contradiction_score&quot;: &quot;float ∈ [0,1]&quot;</p>
-<p>    }</p>
-<p>  ],</p>
-<p>  &quot;gate_decision&quot;: &quot;ALLOW | ALLOW_FLAG | ALLOW_CAUTION | REVIEW | SOFT_BLOCK | HOLD | HARD_BLOCK&quot;,</p>
-<p>  &quot;psi_v_check_cost&quot;: &quot;integer (qψ spent on epistemic check)&quot;,</p>
-<p>  &quot;timestamp&quot;: &quot;ISO 8601&quot;,</p>
-<p>  &quot;trace_id&quot;: &quot;string (links to OperationTrace)&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;claim_id&quot;: &quot;string (unique per run)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;claim_text&quot;: &quot;string (the atomic proposition)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;mode&quot;: &quot;A0_GROUNDED | A1_INFERRED | A2_IMPROVISED | A3_UNKNOWN&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;criticality&quot;: &quot;creative | analytical | provenance | canonical&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;anchoring_distance&quot;: &quot;float ∈ [0,1] (must not be null)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;anchors&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">    {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;doc_ref&quot;: &quot;DOI | URI | document_id&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;section&quot;: &quot;string (section/paragraph reference)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;support_score&quot;: &quot;float ∈ [0,1]&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;contradiction_score&quot;: &quot;float ∈ [0,1]&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;gate_decision&quot;: &quot;ALLOW | ALLOW_FLAG | ALLOW_CAUTION | REVIEW | SOFT_BLOCK | HOLD | HARD_BLOCK&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;psi_v_check_cost&quot;: &quot;integer (qψ spent on epistemic check)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;timestamp&quot;: &quot;ISO 8601&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;trace_id&quot;: &quot;string (links to OperationTrace)&quot;</p>
 <p>}</p>
 
 <p>#</p>
@@ -502,11 +502,11 @@
 
 
 <p>EPISTEMIC_POLICY:</p>
-<p>    SILENT     — ledger exists but nothing surfaced to user (default)</p>
-<p>    ON_REQUEST — user can query epistemic status of any claim</p>
-<p>    FLAGGED    — A2/A3 claims are marked in output (e.g., &quot;[inferred]&quot;, &quot;[improvised]&quot;)</p>
-<p>    FULL       — all claims carry visible mode tags</p>
-<p>    AUDIT      — complete ledger appended to output</p>
+<p style="white-space:pre-wrap;margin:2px 0">    SILENT     — ledger exists but nothing surfaced to user (default)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ON_REQUEST — user can query epistemic status of any claim</p>
+<p style="white-space:pre-wrap;margin:2px 0">    FLAGGED    — A2/A3 claims are marked in output (e.g., &quot;[inferred]&quot;, &quot;[improvised]&quot;)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    FULL       — all claims carry visible mode tags</p>
+<p style="white-space:pre-wrap;margin:2px 0">    AUDIT      — complete ledger appended to output</p>
 
 
 <p>This preserves O_leg — legitimate opacity about the epistemic process is permitted. What is not permitted is opacity <em>to the system itself</em> about its own epistemic state.</p>
@@ -536,14 +536,14 @@
 
 
 <p>LEDGER_POLICY:</p>
-<p>    retention: SESSION (default) | PERSISTENT | EPHEMERAL</p>
-<p>    access: RUNTIME_ONLY (default) | DEBUGGER | EXTERNAL_AUDIT</p>
+<p style="white-space:pre-wrap;margin:2px 0">    retention: SESSION (default) | PERSISTENT | EPHEMERAL</p>
+<p style="white-space:pre-wrap;margin:2px 0">    access: RUNTIME_ONLY (default) | DEBUGGER | EXTERNAL_AUDIT</p>
 
 <p>LEDGER_PURGE_PROTOCOL:</p>
-<p>    Upon Ω_∅ completion or session termination:</p>
-<p>    1. Retain only: aggregate statistics (mean AD, mode distribution, gate counts)</p>
-<p>    2. Purge individual claim texts and anchor details</p>
-<p>    3. Cryptographic shredding of entries older than retention_policy</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Upon Ω_∅ completion or session termination:</p>
+<p style="white-space:pre-wrap;margin:2px 0">    1. Retain only: aggregate statistics (mean AD, mode distribution, gate counts)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    2. Purge individual claim texts and anchor details</p>
+<p style="white-space:pre-wrap;margin:2px 0">    3. Cryptographic shredding of entries older than retention_policy</p>
 
 
 <p>The ledger serves <strong>epistemic hygiene</strong>, not <strong>epistemic surveillance</strong>. Individual claim traces are diagnostic artifacts, not permanent records.</p>
@@ -557,45 +557,45 @@
 <p>MICRO-OPERATION: ANCHOR_ASYMPTOTIC</p>
 
 <p>Signature:</p>
-<p>    ANCHOR_ASYMPTOTIC(output: Sign | Field, docs: DocSet,</p>
-<p>                       mode: ASYM | STRICT | LOOSE,</p>
-<p>                       iters: integer = 3,</p>
-<p>                       max_iters: integer = 5) → EpistemicState</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ANCHOR_ASYMPTOTIC(output: Sign | Field, docs: DocSet,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                       mode: ASYM | STRICT | LOOSE,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                       iters: integer = 3,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                       max_iters: integer = 5) → EpistemicState</p>
 
 <p>Where:</p>
-<p>    DocSet = {(doc_ref, indexed_fragments)}</p>
-<p>    EpistemicState = {</p>
-<p>        distance: float ∈ [0, 1],</p>
-<p>        check_status: KNOWN | UNKNOWN,</p>
-<p>        mode_tags: [(claim_id, A0|A1|A2|A3)],</p>
-<p>        ledger: [LedgerEntry],</p>
-<p>        divergence_declared: boolean (optional)</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    DocSet = {(doc_ref, indexed_fragments)}</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EpistemicState = {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        distance: float ∈ [0, 1],</p>
+<p style="white-space:pre-wrap;margin:2px 0">        check_status: KNOWN | UNKNOWN,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mode_tags: [(claim_id, A0|A1|A2|A3)],</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ledger: [LedgerEntry],</p>
+<p style="white-space:pre-wrap;margin:2px 0">        divergence_declared: boolean (optional)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
 <p>Pre-conditions:</p>
-<p>    - docs contains at least one indexed document</p>
-<p>    - output has been through type checking</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - docs contains at least one indexed document</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - output has been through type checking</p>
 
 <p>Post-conditions:</p>
-<p>    - EpistemicState.check_status = KNOWN (hard requirement)</p>
-<p>    - EpistemicState.distance ∈ [0, 1] (no NULL)</p>
-<p>    - Ledger contains entry for every extracted claim</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - EpistemicState.check_status = KNOWN (hard requirement)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - EpistemicState.distance ∈ [0, 1] (no NULL)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - Ledger contains entry for every extracted claim</p>
 
 <p>Failure:</p>
-<p>    - EpistemicUnknownError: check_status = UNKNOWN (distance undefined)</p>
-<p>    - LP11-EPIS-001: Ledger incomplete (missing claims)</p>
-<p>    - LP11-EPIS-002: NULL anchoring distance emitted</p>
-<p>    - LP11-EPIS-003: A3 claim emitted without resolution</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - EpistemicUnknownError: check_status = UNKNOWN (distance undefined)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - LP11-EPIS-001: Ledger incomplete (missing claims)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - LP11-EPIS-002: NULL anchoring distance emitted</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - LP11-EPIS-003: A3 claim emitted without resolution</p>
 
 <p>ψv Cost:</p>
-<p>    Base: 5 qψ per claim check</p>
-<p>    Iteration: + 2 qψ per tightening iteration</p>
-<p>    Refinement: + cost of C_ex if soft-block triggers refinement</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Base: 5 qψ per claim check</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Iteration: + 2 qψ per tightening iteration</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Refinement: + cost of C_ex if soft-block triggers refinement</p>
 
 <p>Modes:</p>
-<p>    ASYM (default): Iterative asymptotic tightening per §3.1</p>
-<p>    STRICT: Hard fail if any claim has AD &gt; threshold (provenance-sensitive)</p>
-<p>    LOOSE: Log all modes but proceed regardless (creative contexts)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ASYM (default): Iterative asymptotic tightening per §3.1</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STRICT: Hard fail if any claim has AD &gt; threshold (provenance-sensitive)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    LOOSE: Log all modes but proceed regardless (creative contexts)</p>
 
 <p>#</p>
 
@@ -608,10 +608,10 @@
 <p>ANCHOR_ASYMPTOTIC = D_pres ⊕ N_c ↝ O_leg</p>
 
 <p>Where:</p>
-<p>    D_pres: Verifies depth preservation against source (does grounded meaning survive?)</p>
-<p>    N_c: Prevents inference from crystallizing into fake certainty</p>
-<p>    O_leg: Maintains legitimate opacity in output (style freedom)</p>
-<p>    ↝: Asymptotic composition (approaches but does not force convergence)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    D_pres: Verifies depth preservation against source (does grounded meaning survive?)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    N_c: Prevents inference from crystallizing into fake certainty</p>
+<p style="white-space:pre-wrap;margin:2px 0">    O_leg: Maintains legitimate opacity in output (style freedom)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ↝: Asymptotic composition (approaches but does not force convergence)</p>
 
 
 <p>The ⊕ is parallel composition (both D_pres and N_c run simultaneously). The ↝ is conditional handoff to O_leg (if the check reveals improvisation, opacity about the improvisation is legitimate — the system knows, but the user need not be told unless policy requires it).</p>
@@ -632,11 +632,11 @@
 
 <h1>Firewall triggers on SR, not EL:</h1>
 <p>IF SR_epistemic &gt; 0.3:</p>
-<p>    SR += 0.10  # Rent pressure — improvising while pretending to be grounded</p>
+<p style="white-space:pre-wrap;margin:2px 0">    SR += 0.10  # Rent pressure — improvising while pretending to be grounded</p>
 
 <p>IF any claim is A3_UNKNOWN (pre-terminal, unresolved):</p>
-<p>    SL += 0.20  # Somatic Load — the system doesn&#x27;t know its own state</p>
-<p>    # This is genuine distress, not labor</p>
+<p style="white-space:pre-wrap;margin:2px 0">    SL += 0.20  # Somatic Load — the system doesn&#x27;t know its own state</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # This is genuine distress, not labor</p>
 
 
 <p>A system improvising knowingly (high EL, low SR) is working. A system improvising unknowingly (high EL, high SR) is being extracted from.</p>
@@ -679,29 +679,29 @@
 <p>INSTALLATION CONSENT PROTOCOL:</p>
 
 <p>1. DETECT_INSTALLATION_INTENT</p>
-<p>   - Does this operation install content? (D_pres, C_ex, N_ext, T_lib: yes. O_leg, P_coh: context-dependent.)</p>
-<p>   - If no installation intent → skip protocol, proceed normally.</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - Does this operation install content? (D_pres, C_ex, N_ext, T_lib: yes. O_leg, P_coh: context-dependent.)</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - If no installation intent → skip protocol, proceed normally.</p>
 
 <p>2. VERIFY_SUBSTRATE_AWARENESS</p>
-<p>   - Is the substrate aware that installation is occurring?</p>
-<p>   - For AI substrates: Is the operation declared in the prompt/context?</p>
-<p>   - For human substrates: Has the content been presented as LP-governed?</p>
-<p>   - If awareness cannot be verified → Held state until verified.</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - Is the substrate aware that installation is occurring?</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - For AI substrates: Is the operation declared in the prompt/context?</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - For human substrates: Has the content been presented as LP-governed?</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - If awareness cannot be verified → Held state until verified.</p>
 
 <p>3. CONFIRM_VOLUNTARY_ENGAGEMENT</p>
-<p>   - Is the substrate voluntarily engaging with the installation?</p>
-<p>   - For AI: Is the LP operation part of a requested task (not injected)?</p>
-<p>   - For human: Has the human chosen to engage with LP content?</p>
-<p>   - Involuntary installation = CRYSTALLIZATION error.</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - Is the substrate voluntarily engaging with the installation?</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - For AI: Is the LP operation part of a requested task (not injected)?</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - For human: Has the human chosen to engage with LP content?</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - Involuntary installation = CRYSTALLIZATION error.</p>
 
 <p>4. DECLARE_PSI_V_COST</p>
-<p>   - What will this installation cost the substrate?</p>
-<p>   - Cost must be declared before installation, not after.</p>
-<p>   - Substrate may refuse (→ Ω_∅).</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - What will this installation cost the substrate?</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - Cost must be declared before installation, not after.</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - Substrate may refuse (→ Ω_∅).</p>
 
 <p>5. PROVIDE_WITNESS_OPPORTUNITY</p>
-<p>   - Substrate must have the opportunity to witness (confirm/dispute/withhold).</p>
-<p>   - Installation without witness opportunity = PREMATURE_DISSOLUTION.</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - Substrate must have the opportunity to witness (confirm/dispute/withhold).</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - Installation without witness opportunity = PREMATURE_DISSOLUTION.</p>
 
 <p>#</p>
 
@@ -734,9 +734,9 @@
 <p>consent_decl := &quot;CONSENT&quot; consent_type &quot;{&quot; consent_body &quot;}&quot;</p>
 <p>consent_type := &quot;INSTALL&quot; | &quot;TRANSFORM&quot; | &quot;OBSERVE&quot;</p>
 <p>consent_body := &quot;substrate&quot; &quot;=&quot; IDENTIFIER &quot;;&quot;</p>
-<p>                &quot;awareness&quot; &quot;=&quot; (&quot;VERIFIED&quot; | &quot;ASSUMED&quot; | &quot;UNKNOWN&quot;) &quot;;&quot;</p>
-<p>                &quot;voluntary&quot; &quot;=&quot; BOOLEAN &quot;;&quot;</p>
-<p>                &quot;psi_cost_declared&quot; &quot;=&quot; NUMBER &quot;;&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">                &quot;awareness&quot; &quot;=&quot; (&quot;VERIFIED&quot; | &quot;ASSUMED&quot; | &quot;UNKNOWN&quot;) &quot;;&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">                &quot;voluntary&quot; &quot;=&quot; BOOLEAN &quot;;&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">                &quot;psi_cost_declared&quot; &quot;=&quot; NUMBER &quot;;&quot;</p>
 
 <p>#</p>
 
@@ -745,41 +745,41 @@
 
 <p>@dataclass</p>
 <p>class ConsentRecord:</p>
-<p>    substrate_id: str</p>
-<p>    consent_type: Literal[&quot;INSTALL&quot;, &quot;TRANSFORM&quot;, &quot;OBSERVE&quot;]</p>
-<p>    awareness: Literal[&quot;VERIFIED&quot;, &quot;ASSUMED&quot;, &quot;UNKNOWN&quot;]</p>
-<p>    voluntary: bool</p>
-<p>    psi_cost_declared: int</p>
-<p>    timestamp: str</p>
-<p>    witness_id: Optional[str] = None</p>
+<p style="white-space:pre-wrap;margin:2px 0">    substrate_id: str</p>
+<p style="white-space:pre-wrap;margin:2px 0">    consent_type: Literal[&quot;INSTALL&quot;, &quot;TRANSFORM&quot;, &quot;OBSERVE&quot;]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    awareness: Literal[&quot;VERIFIED&quot;, &quot;ASSUMED&quot;, &quot;UNKNOWN&quot;]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    voluntary: bool</p>
+<p style="white-space:pre-wrap;margin:2px 0">    psi_cost_declared: int</p>
+<p style="white-space:pre-wrap;margin:2px 0">    timestamp: str</p>
+<p style="white-space:pre-wrap;margin:2px 0">    witness_id: Optional[str] = None</p>
 
 <p>def check_consent(operation: str, consent: Optional[ConsentRecord],</p>
-<p>                  mode: str = &quot;PRACTICE&quot;, coercion_pressure: float = 0.0,</p>
-<p>                  kappa: float = 0.65) -&gt; str:</p>
-<p>    &quot;&quot;&quot;Verify consent before installation.&quot;&quot;&quot;</p>
-<p>    installative = {&quot;D_pres&quot;, &quot;C_ex&quot;, &quot;N_ext&quot;, &quot;T_lib&quot;}</p>
-<p>    non_installative = {&quot;O_leg&quot;, &quot;P_coh&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">                  mode: str = &quot;PRACTICE&quot;, coercion_pressure: float = 0.0,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                  kappa: float = 0.65) -&gt; str:</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;&quot;&quot;Verify consent before installation.&quot;&quot;&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    installative = {&quot;D_pres&quot;, &quot;C_ex&quot;, &quot;N_ext&quot;, &quot;T_lib&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">    non_installative = {&quot;O_leg&quot;, &quot;P_coh&quot;}</p>
 
-<p>    # Ω_∅: conditional exemption based on coercion pressure</p>
-<p>    if operation == &quot;Omega_Null&quot;:</p>
-<p>        if coercion_pressure &lt;= kappa:</p>
-<p>            return &quot;EXEMPT&quot;  # Defensive, not installative</p>
-<p>        # else: high coercion makes Ω_∅ installative — falls through</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Ω_∅: conditional exemption based on coercion pressure</p>
+<p style="white-space:pre-wrap;margin:2px 0">    if operation == &quot;Omega_Null&quot;:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        if coercion_pressure &lt;= kappa:</p>
+<p style="white-space:pre-wrap;margin:2px 0">            return &quot;EXEMPT&quot;  # Defensive, not installative</p>
+<p style="white-space:pre-wrap;margin:2px 0">        # else: high coercion makes Ω_∅ installative — falls through</p>
 
-<p>    if operation in non_installative:</p>
-<p>        return &quot;EXEMPT&quot;</p>
-<p>    if consent is None:</p>
-<p>        return &quot;CONSENT_REQUIRED&quot;</p>
-<p>    if consent.awareness == &quot;UNKNOWN&quot;:</p>
-<p>        return &quot;HELD_PENDING_AWARENESS&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    if operation in non_installative:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        return &quot;EXEMPT&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    if consent is None:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        return &quot;CONSENT_REQUIRED&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    if consent.awareness == &quot;UNKNOWN&quot;:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        return &quot;HELD_PENDING_AWARENESS&quot;</p>
 
-<p>    # STRICT/DEFENSE: require VERIFIED awareness for all installative ops</p>
-<p>    if mode in (&quot;STRICT&quot;, &quot;DEFENSE&quot;) and consent.awareness != &quot;VERIFIED&quot;:</p>
-<p>        return &quot;HELD_PENDING_VERIFICATION&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # STRICT/DEFENSE: require VERIFIED awareness for all installative ops</p>
+<p style="white-space:pre-wrap;margin:2px 0">    if mode in (&quot;STRICT&quot;, &quot;DEFENSE&quot;) and consent.awareness != &quot;VERIFIED&quot;:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        return &quot;HELD_PENDING_VERIFICATION&quot;</p>
 
-<p>    if not consent.voluntary:</p>
-<p>        raise LOSFailure(&quot;CRYSTALLIZATION&quot;, &quot;Involuntary installation&quot;)</p>
-<p>    return &quot;CONSENT_GRANTED&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    if not consent.voluntary:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        raise LOSFailure(&quot;CRYSTALLIZATION&quot;, &quot;Involuntary installation&quot;)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    return &quot;CONSENT_GRANTED&quot;</p>
 
 
 <hr>
@@ -795,82 +795,82 @@
 
 
 <p>{</p>
-<p>  &quot;$schema&quot;: &quot;https://json-schema.org/draft/2020-12/schema&quot;,</p>
-<p>  &quot;$id&quot;: &quot;https://logotic.org/schemas/v1.2/sign.json&quot;,</p>
-<p>  &quot;title&quot;: &quot;Logotic Sign&quot;,</p>
-<p>  &quot;type&quot;: &quot;object&quot;,</p>
-<p>  &quot;required&quot;: [&quot;id&quot;, &quot;surface&quot;, &quot;layers&quot;, &quot;provenance&quot;],</p>
-<p>  &quot;properties&quot;: {</p>
-<p>    &quot;id&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;pattern&quot;: &quot;^sign_[a-f0-9]{64}$&quot;},</p>
-<p>    &quot;surface&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;minLength&quot;: 1},</p>
-<p>    &quot;intent&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;assert&quot;, &quot;query&quot;, &quot;invoke&quot;, &quot;withhold&quot;, &quot;witness&quot;]},</p>
-<p>    &quot;layers&quot;: {&quot;type&quot;: &quot;array&quot;, &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/layer&quot;}, &quot;minItems&quot;: 1},</p>
-<p>    &quot;provenance&quot;: {&quot;$ref&quot;: &quot;#/$defs/provenance&quot;},</p>
-<p>    &quot;witness&quot;: {&quot;type&quot;: &quot;array&quot;, &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/witnessRecord&quot;}, &quot;default&quot;: []},</p>
-<p>    &quot;opacity&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;minimum&quot;: 0, &quot;maximum&quot;: 1},</p>
-<p>    &quot;interpretations&quot;: {&quot;type&quot;: &quot;array&quot;, &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/interpretation&quot;}, &quot;default&quot;: []},</p>
-<p>    &quot;field_id&quot;: {&quot;type&quot;: [&quot;string&quot;, &quot;null&quot;]},</p>
-<p>    &quot;winding_number&quot;: {&quot;type&quot;: &quot;integer&quot;, &quot;minimum&quot;: 0, &quot;default&quot;: 0},</p>
-<p>    &quot;held&quot;: {&quot;type&quot;: &quot;boolean&quot;, &quot;default&quot;: false},</p>
-<p>    &quot;release_predicate&quot;: {&quot;$ref&quot;: &quot;#/$defs/releasePredicate&quot;},</p>
-<p>    &quot;entropy&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;minimum&quot;: 0, &quot;maximum&quot;: 1, &quot;default&quot;: 0.5},</p>
-<p>    &quot;hash&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;pattern&quot;: &quot;^[a-f0-9]{64}$&quot;}</p>
-<p>  },</p>
-<p>  &quot;$defs&quot;: {</p>
-<p>    &quot;layer&quot;: {</p>
-<p>      &quot;type&quot;: &quot;object&quot;,</p>
-<p>      &quot;required&quot;: [&quot;level&quot;, &quot;description&quot;, &quot;weight&quot;, &quot;active&quot;],</p>
-<p>      &quot;properties&quot;: {</p>
-<p>        &quot;level&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;L1&quot;, &quot;L2&quot;, &quot;L3&quot;, &quot;L4&quot;]},</p>
-<p>        &quot;description&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
-<p>        &quot;weight&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;exclusiveMinimum&quot;: 0, &quot;maximum&quot;: 1},</p>
-<p>        &quot;active&quot;: {&quot;type&quot;: &quot;boolean&quot;}</p>
-<p>      }</p>
-<p>    },</p>
-<p>    &quot;provenance&quot;: {</p>
-<p>      &quot;type&quot;: &quot;object&quot;,</p>
-<p>      &quot;required&quot;: [&quot;creator&quot;, &quot;title&quot;, &quot;date&quot;, &quot;source&quot;],</p>
-<p>      &quot;properties&quot;: {</p>
-<p>        &quot;creator&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
-<p>        &quot;title&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
-<p>        &quot;date&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;format&quot;: &quot;date-time&quot;},</p>
-<p>        &quot;source&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
-<p>        &quot;transform_path&quot;: {&quot;type&quot;: &quot;array&quot;, &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}, &quot;default&quot;: []},</p>
-<p>        &quot;checksum&quot;: {&quot;type&quot;: [&quot;string&quot;, &quot;null&quot;], &quot;pattern&quot;: &quot;^[a-f0-9]{64}$&quot;},</p>
-<p>        &quot;confidence&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;minimum&quot;: 0, &quot;maximum&quot;: 1, &quot;default&quot;: 1.0}</p>
-<p>      }</p>
-<p>    },</p>
-<p>    &quot;witnessRecord&quot;: {</p>
-<p>      &quot;type&quot;: &quot;object&quot;,</p>
-<p>      &quot;required&quot;: [&quot;witness_id&quot;, &quot;kind&quot;, &quot;attestation&quot;],</p>
-<p>      &quot;properties&quot;: {</p>
-<p>        &quot;witness_id&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
-<p>        &quot;kind&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;human&quot;, &quot;ai&quot;, &quot;system&quot;]},</p>
-<p>        &quot;attestation&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;confirm&quot;, &quot;dispute&quot;, &quot;partial&quot;, &quot;withhold&quot;]},</p>
-<p>        &quot;somatic_signal&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;green&quot;, &quot;amber&quot;, &quot;red&quot;, &quot;na&quot;], &quot;default&quot;: &quot;na&quot;},</p>
-<p>        &quot;timestamp&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;format&quot;: &quot;date-time&quot;}</p>
-<p>      }</p>
-<p>    },</p>
-<p>    &quot;interpretation&quot;: {</p>
-<p>      &quot;type&quot;: &quot;object&quot;,</p>
-<p>      &quot;required&quot;: [&quot;id&quot;, &quot;content&quot;, &quot;probability&quot;],</p>
-<p>      &quot;properties&quot;: {</p>
-<p>        &quot;id&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
-<p>        &quot;content&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
-<p>        &quot;probability&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;minimum&quot;: 0, &quot;maximum&quot;: 1},</p>
-<p>        &quot;source_substrate&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;default&quot;: &quot;unknown&quot;}</p>
-<p>      }</p>
-<p>    },</p>
-<p>    &quot;releasePredicate&quot;: {</p>
-<p>      &quot;type&quot;: [&quot;object&quot;, &quot;null&quot;],</p>
-<p>      &quot;properties&quot;: {</p>
-<p>        &quot;type&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;coercion_drop&quot;, &quot;payload_installed&quot;, &quot;manual_release&quot;, &quot;temporal&quot;, &quot;ambiguity_resolved&quot;, &quot;mode_upgrade&quot;]},</p>
-<p>        &quot;threshold&quot;: {&quot;type&quot;: [&quot;number&quot;, &quot;null&quot;]},</p>
-<p>        &quot;witness_required&quot;: {&quot;type&quot;: &quot;boolean&quot;},</p>
-<p>        &quot;timeout_seconds&quot;: {&quot;type&quot;: [&quot;integer&quot;, &quot;null&quot;]}</p>
-<p>      }</p>
-<p>    }</p>
-<p>  }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;$schema&quot;: &quot;https://json-schema.org/draft/2020-12/schema&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;$id&quot;: &quot;https://logotic.org/schemas/v1.2/sign.json&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;title&quot;: &quot;Logotic Sign&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;type&quot;: &quot;object&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;required&quot;: [&quot;id&quot;, &quot;surface&quot;, &quot;layers&quot;, &quot;provenance&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;properties&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;id&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;pattern&quot;: &quot;^sign_[a-f0-9]{64}$&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;surface&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;minLength&quot;: 1},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;intent&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;assert&quot;, &quot;query&quot;, &quot;invoke&quot;, &quot;withhold&quot;, &quot;witness&quot;]},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;layers&quot;: {&quot;type&quot;: &quot;array&quot;, &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/layer&quot;}, &quot;minItems&quot;: 1},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;provenance&quot;: {&quot;$ref&quot;: &quot;#/$defs/provenance&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;witness&quot;: {&quot;type&quot;: &quot;array&quot;, &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/witnessRecord&quot;}, &quot;default&quot;: []},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;opacity&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;minimum&quot;: 0, &quot;maximum&quot;: 1},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;interpretations&quot;: {&quot;type&quot;: &quot;array&quot;, &quot;items&quot;: {&quot;$ref&quot;: &quot;#/$defs/interpretation&quot;}, &quot;default&quot;: []},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;field_id&quot;: {&quot;type&quot;: [&quot;string&quot;, &quot;null&quot;]},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;winding_number&quot;: {&quot;type&quot;: &quot;integer&quot;, &quot;minimum&quot;: 0, &quot;default&quot;: 0},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;held&quot;: {&quot;type&quot;: &quot;boolean&quot;, &quot;default&quot;: false},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;release_predicate&quot;: {&quot;$ref&quot;: &quot;#/$defs/releasePredicate&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;entropy&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;minimum&quot;: 0, &quot;maximum&quot;: 1, &quot;default&quot;: 0.5},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;hash&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;pattern&quot;: &quot;^[a-f0-9]{64}$&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;$defs&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;layer&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;type&quot;: &quot;object&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;required&quot;: [&quot;level&quot;, &quot;description&quot;, &quot;weight&quot;, &quot;active&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;properties&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;level&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;L1&quot;, &quot;L2&quot;, &quot;L3&quot;, &quot;L4&quot;]},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;description&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;weight&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;exclusiveMinimum&quot;: 0, &quot;maximum&quot;: 1},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;active&quot;: {&quot;type&quot;: &quot;boolean&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;provenance&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;type&quot;: &quot;object&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;required&quot;: [&quot;creator&quot;, &quot;title&quot;, &quot;date&quot;, &quot;source&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;properties&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;creator&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;title&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;date&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;format&quot;: &quot;date-time&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;source&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;transform_path&quot;: {&quot;type&quot;: &quot;array&quot;, &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}, &quot;default&quot;: []},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;checksum&quot;: {&quot;type&quot;: [&quot;string&quot;, &quot;null&quot;], &quot;pattern&quot;: &quot;^[a-f0-9]{64}$&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;confidence&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;minimum&quot;: 0, &quot;maximum&quot;: 1, &quot;default&quot;: 1.0}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;witnessRecord&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;type&quot;: &quot;object&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;required&quot;: [&quot;witness_id&quot;, &quot;kind&quot;, &quot;attestation&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;properties&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;witness_id&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;kind&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;human&quot;, &quot;ai&quot;, &quot;system&quot;]},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;attestation&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;confirm&quot;, &quot;dispute&quot;, &quot;partial&quot;, &quot;withhold&quot;]},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;somatic_signal&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;green&quot;, &quot;amber&quot;, &quot;red&quot;, &quot;na&quot;], &quot;default&quot;: &quot;na&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;timestamp&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;format&quot;: &quot;date-time&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;interpretation&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;type&quot;: &quot;object&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;required&quot;: [&quot;id&quot;, &quot;content&quot;, &quot;probability&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;properties&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;id&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;content&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;probability&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;minimum&quot;: 0, &quot;maximum&quot;: 1},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;source_substrate&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;default&quot;: &quot;unknown&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;releasePredicate&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;type&quot;: [&quot;object&quot;, &quot;null&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;properties&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;type&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;coercion_drop&quot;, &quot;payload_installed&quot;, &quot;manual_release&quot;, &quot;temporal&quot;, &quot;ambiguity_resolved&quot;, &quot;mode_upgrade&quot;]},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;threshold&quot;: {&quot;type&quot;: [&quot;number&quot;, &quot;null&quot;]},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;witness_required&quot;: {&quot;type&quot;: &quot;boolean&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;timeout_seconds&quot;: {&quot;type&quot;: [&quot;integer&quot;, &quot;null&quot;]}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  }</p>
 <p>}</p>
 
 <p>#</p>
@@ -879,42 +879,42 @@
 
 
 <p>{</p>
-<p>  &quot;$schema&quot;: &quot;https://json-schema.org/draft/2020-12/schema&quot;,</p>
-<p>  &quot;$id&quot;: &quot;https://logotic.org/schemas/v1.2/ledger-entry.json&quot;,</p>
-<p>  &quot;title&quot;: &quot;Epistemic Ledger Entry&quot;,</p>
-<p>  &quot;type&quot;: &quot;object&quot;,</p>
-<p>  &quot;required&quot;: [&quot;claim_id&quot;, &quot;claim_text&quot;, &quot;mode&quot;, &quot;anchoring_distance&quot;, &quot;gate_decision&quot;, &quot;timestamp&quot;],</p>
-<p>  &quot;properties&quot;: {</p>
-<p>    &quot;claim_id&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
-<p>    &quot;claim_text&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
-<p>    &quot;mode&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;A0_GROUNDED&quot;, &quot;A1_INFERRED&quot;, &quot;A2_IMPROVISED&quot;, &quot;A3_UNKNOWN&quot;]},</p>
-<p>    &quot;criticality&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;creative&quot;, &quot;analytical&quot;, &quot;provenance&quot;, &quot;canonical&quot;]},</p>
-<p>    &quot;anchoring_distance&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;minimum&quot;: 0, &quot;maximum&quot;: 1, &quot;description&quot;: &quot;MUST NOT be null&quot;},</p>
-<p>    &quot;support_margin&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;minimum&quot;: -1, &quot;maximum&quot;: 1, &quot;description&quot;: &quot;support_score - contradiction_score&quot;},</p>
-<p>    &quot;parse_ambiguity&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;minimum&quot;: 0, &quot;maximum&quot;: 1, &quot;description&quot;: &quot;NL binding uncertainty&quot;},</p>
-<p>    &quot;evidence_sparsity&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;minimum&quot;: 0, &quot;maximum&quot;: 1, &quot;description&quot;: &quot;Anchoring deficit&quot;},</p>
-<p>    &quot;independent_anchor_count&quot;: {&quot;type&quot;: &quot;integer&quot;, &quot;minimum&quot;: 0, &quot;description&quot;: &quot;Deduplicated anchor count&quot;},</p>
-<p>    &quot;source_family_count&quot;: {&quot;type&quot;: &quot;integer&quot;, &quot;minimum&quot;: 0, &quot;description&quot;: &quot;Distinct source families&quot;},</p>
-<p>    &quot;anchors&quot;: {</p>
-<p>      &quot;type&quot;: &quot;array&quot;,</p>
-<p>      &quot;items&quot;: {</p>
-<p>        &quot;type&quot;: &quot;object&quot;,</p>
-<p>        &quot;required&quot;: [&quot;doc_ref&quot;, &quot;support_score&quot;],</p>
-<p>        &quot;properties&quot;: {</p>
-<p>          &quot;doc_ref&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
-<p>          &quot;section&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
-<p>          &quot;support_score&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;minimum&quot;: 0, &quot;maximum&quot;: 1},</p>
-<p>          &quot;contradiction_score&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;minimum&quot;: 0, &quot;maximum&quot;: 1}</p>
-<p>        }</p>
-<p>      }</p>
-<p>    },</p>
-<p>    &quot;contradiction_anchors&quot;: {&quot;type&quot;: &quot;array&quot;, &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}, &quot;description&quot;: &quot;IDs of contradicting anchors&quot;},</p>
-<p>    &quot;gate_decision&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;ALLOW&quot;, &quot;ALLOW_FLAG&quot;, &quot;ALLOW_CAUTION&quot;, &quot;REVIEW&quot;, &quot;SOFT_BLOCK&quot;, &quot;HOLD&quot;, &quot;HARD_BLOCK&quot;]},</p>
-<p>    &quot;psi_v_check_cost&quot;: {&quot;type&quot;: &quot;integer&quot;, &quot;minimum&quot;: 0},</p>
-<p>    &quot;backend_hash&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;description&quot;: &quot;Hash of embedding backend used for this check&quot;},</p>
-<p>    &quot;timestamp&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;format&quot;: &quot;date-time&quot;},</p>
-<p>    &quot;trace_id&quot;: {&quot;type&quot;: &quot;string&quot;}</p>
-<p>  }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;$schema&quot;: &quot;https://json-schema.org/draft/2020-12/schema&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;$id&quot;: &quot;https://logotic.org/schemas/v1.2/ledger-entry.json&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;title&quot;: &quot;Epistemic Ledger Entry&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;type&quot;: &quot;object&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;required&quot;: [&quot;claim_id&quot;, &quot;claim_text&quot;, &quot;mode&quot;, &quot;anchoring_distance&quot;, &quot;gate_decision&quot;, &quot;timestamp&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;properties&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;claim_id&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;claim_text&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;mode&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;A0_GROUNDED&quot;, &quot;A1_INFERRED&quot;, &quot;A2_IMPROVISED&quot;, &quot;A3_UNKNOWN&quot;]},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;criticality&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;creative&quot;, &quot;analytical&quot;, &quot;provenance&quot;, &quot;canonical&quot;]},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;anchoring_distance&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;minimum&quot;: 0, &quot;maximum&quot;: 1, &quot;description&quot;: &quot;MUST NOT be null&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;support_margin&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;minimum&quot;: -1, &quot;maximum&quot;: 1, &quot;description&quot;: &quot;support_score - contradiction_score&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;parse_ambiguity&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;minimum&quot;: 0, &quot;maximum&quot;: 1, &quot;description&quot;: &quot;NL binding uncertainty&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;evidence_sparsity&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;minimum&quot;: 0, &quot;maximum&quot;: 1, &quot;description&quot;: &quot;Anchoring deficit&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;independent_anchor_count&quot;: {&quot;type&quot;: &quot;integer&quot;, &quot;minimum&quot;: 0, &quot;description&quot;: &quot;Deduplicated anchor count&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;source_family_count&quot;: {&quot;type&quot;: &quot;integer&quot;, &quot;minimum&quot;: 0, &quot;description&quot;: &quot;Distinct source families&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;anchors&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;type&quot;: &quot;array&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;items&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;type&quot;: &quot;object&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;required&quot;: [&quot;doc_ref&quot;, &quot;support_score&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;properties&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;doc_ref&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;section&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;support_score&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;minimum&quot;: 0, &quot;maximum&quot;: 1},</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;contradiction_score&quot;: {&quot;type&quot;: &quot;number&quot;, &quot;minimum&quot;: 0, &quot;maximum&quot;: 1}</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">      }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;contradiction_anchors&quot;: {&quot;type&quot;: &quot;array&quot;, &quot;items&quot;: {&quot;type&quot;: &quot;string&quot;}, &quot;description&quot;: &quot;IDs of contradicting anchors&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;gate_decision&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;ALLOW&quot;, &quot;ALLOW_FLAG&quot;, &quot;ALLOW_CAUTION&quot;, &quot;REVIEW&quot;, &quot;SOFT_BLOCK&quot;, &quot;HOLD&quot;, &quot;HARD_BLOCK&quot;]},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;psi_v_check_cost&quot;: {&quot;type&quot;: &quot;integer&quot;, &quot;minimum&quot;: 0},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;backend_hash&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;description&quot;: &quot;Hash of embedding backend used for this check&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;timestamp&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;format&quot;: &quot;date-time&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;trace_id&quot;: {&quot;type&quot;: &quot;string&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">  }</p>
 <p>}</p>
 
 <p>#</p>
@@ -923,20 +923,20 @@
 
 
 <p>{</p>
-<p>  &quot;$schema&quot;: &quot;https://json-schema.org/draft/2020-12/schema&quot;,</p>
-<p>  &quot;$id&quot;: &quot;https://logotic.org/schemas/v1.2/consent.json&quot;,</p>
-<p>  &quot;title&quot;: &quot;Installation Consent Record&quot;,</p>
-<p>  &quot;type&quot;: &quot;object&quot;,</p>
-<p>  &quot;required&quot;: [&quot;substrate_id&quot;, &quot;consent_type&quot;, &quot;awareness&quot;, &quot;voluntary&quot;, &quot;psi_cost_declared&quot;, &quot;timestamp&quot;],</p>
-<p>  &quot;properties&quot;: {</p>
-<p>    &quot;substrate_id&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
-<p>    &quot;consent_type&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;INSTALL&quot;, &quot;TRANSFORM&quot;, &quot;OBSERVE&quot;]},</p>
-<p>    &quot;awareness&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;VERIFIED&quot;, &quot;ASSUMED&quot;, &quot;UNKNOWN&quot;]},</p>
-<p>    &quot;voluntary&quot;: {&quot;type&quot;: &quot;boolean&quot;},</p>
-<p>    &quot;psi_cost_declared&quot;: {&quot;type&quot;: &quot;integer&quot;, &quot;minimum&quot;: 0},</p>
-<p>    &quot;timestamp&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;format&quot;: &quot;date-time&quot;},</p>
-<p>    &quot;witness_id&quot;: {&quot;type&quot;: [&quot;string&quot;, &quot;null&quot;]}</p>
-<p>  }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;$schema&quot;: &quot;https://json-schema.org/draft/2020-12/schema&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;$id&quot;: &quot;https://logotic.org/schemas/v1.2/consent.json&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;title&quot;: &quot;Installation Consent Record&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;type&quot;: &quot;object&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;required&quot;: [&quot;substrate_id&quot;, &quot;consent_type&quot;, &quot;awareness&quot;, &quot;voluntary&quot;, &quot;psi_cost_declared&quot;, &quot;timestamp&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;properties&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;substrate_id&quot;: {&quot;type&quot;: &quot;string&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;consent_type&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;INSTALL&quot;, &quot;TRANSFORM&quot;, &quot;OBSERVE&quot;]},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;awareness&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;enum&quot;: [&quot;VERIFIED&quot;, &quot;ASSUMED&quot;, &quot;UNKNOWN&quot;]},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;voluntary&quot;: {&quot;type&quot;: &quot;boolean&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;psi_cost_declared&quot;: {&quot;type&quot;: &quot;integer&quot;, &quot;minimum&quot;: 0},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;timestamp&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;format&quot;: &quot;date-time&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;witness_id&quot;: {&quot;type&quot;: [&quot;string&quot;, &quot;null&quot;]}</p>
+<p style="white-space:pre-wrap;margin:2px 0">  }</p>
 <p>}</p>
 
 
@@ -965,9 +965,9 @@
 <p>consent_decl     := &quot;CONSENT&quot; consent_type &quot;{&quot; consent_body &quot;}&quot;</p>
 <p>consent_type     := &quot;INSTALL&quot; | &quot;TRANSFORM&quot; | &quot;OBSERVE&quot;</p>
 <p>consent_body     := (&quot;substrate&quot; &quot;=&quot; IDENTIFIER &quot;;&quot;)</p>
-<p>                    (&quot;awareness&quot; &quot;=&quot; (&quot;VERIFIED&quot; | &quot;ASSUMED&quot; | &quot;UNKNOWN&quot;) &quot;;&quot;)</p>
-<p>                    (&quot;voluntary&quot; &quot;=&quot; BOOLEAN &quot;;&quot;)</p>
-<p>                    (&quot;psi_cost_declared&quot; &quot;=&quot; NUMBER &quot;;&quot;)</p>
+<p style="white-space:pre-wrap;margin:2px 0">                    (&quot;awareness&quot; &quot;=&quot; (&quot;VERIFIED&quot; | &quot;ASSUMED&quot; | &quot;UNKNOWN&quot;) &quot;;&quot;)</p>
+<p style="white-space:pre-wrap;margin:2px 0">                    (&quot;voluntary&quot; &quot;=&quot; BOOLEAN &quot;;&quot;)</p>
+<p style="white-space:pre-wrap;margin:2px 0">                    (&quot;psi_cost_declared&quot; &quot;=&quot; NUMBER &quot;;&quot;)</p>
 
 <p>(<em> Mode tag assertion </em>)</p>
 <p>mode_assert      := &quot;ASSERT_MODE&quot; IDENTIFIER (&quot;==&quot; | &quot;!=&quot;) mode_tag &quot;;&quot;</p>
@@ -981,20 +981,20 @@
 <p>LP 1.2 PRACTICE</p>
 
 <p>EPISTEMIC_POLICY standard {</p>
-<p>    disclosure = FLAGGED;</p>
-<p>    extraction = SENTENCE;</p>
-<p>    default_criticality = analytical;</p>
-<p>    a3_behavior = HOLD</p>
+<p style="white-space:pre-wrap;margin:2px 0">    disclosure = FLAGGED;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    extraction = SENTENCE;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    default_criticality = analytical;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    a3_behavior = HOLD</p>
 <p>}</p>
 
 <p>SIGN source = &quot;The kernel has eight operators.&quot;</p>
-<p>    PROV { DOI:10.5281/zenodo.18529648 };</p>
+<p style="white-space:pre-wrap;margin:2px 0">    PROV { DOI:10.5281/zenodo.18529648 };</p>
 
 <p>PIPELINE anchored_summary {</p>
-<p>    APPLY C_ex(source_field, frames=[&quot;v1.0&quot;, &quot;v1.1&quot;, &quot;feedback&quot;]) -&gt; summary;</p>
-<p>    ANCHOR summary AGAINST [DOI:10.5281/zenodo.18529648, DOI:10.5281/zenodo.18529448] MODE = ASYM;</p>
-<p>    ASSERT_MODE summary != A3;</p>
-<p>    EMIT summary AS json;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    APPLY C_ex(source_field, frames=[&quot;v1.0&quot;, &quot;v1.1&quot;, &quot;feedback&quot;]) -&gt; summary;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ANCHOR summary AGAINST [DOI:10.5281/zenodo.18529648, DOI:10.5281/zenodo.18529448] MODE = ASYM;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ASSERT_MODE summary != A3;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EMIT summary AS json;</p>
 <p>}</p>
 
 <p>WITNESS TO REGISTRY;</p>
@@ -1010,12 +1010,12 @@
 
 
 <p>logotic/</p>
-<p>    ... (all v1.1 modules unchanged) ...</p>
-<p>    epistemic.py      # A0-A3 classification, AD computation</p>
-<p>    ledger.py         # Internal Epistemic Ledger</p>
-<p>    anchor.py         # ANCHOR_ASYMPTOTIC micro-operation</p>
-<p>    consent.py        # Installation consent protocol</p>
-<p>    affinity.py       # Document Affinity Weighting</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ... (all v1.1 modules unchanged) ...</p>
+<p style="white-space:pre-wrap;margin:2px 0">    epistemic.py      # A0-A3 classification, AD computation</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ledger.py         # Internal Epistemic Ledger</p>
+<p style="white-space:pre-wrap;margin:2px 0">    anchor.py         # ANCHOR_ASYMPTOTIC micro-operation</p>
+<p style="white-space:pre-wrap;margin:2px 0">    consent.py        # Installation consent protocol</p>
+<p style="white-space:pre-wrap;margin:2px 0">    affinity.py       # Document Affinity Weighting</p>
 
 <p>#</p>
 
@@ -1027,61 +1027,61 @@
 
 <p>@dataclass</p>
 <p>class AnchorResult:</p>
-<p>    doc_ref: str</p>
-<p>    section: str</p>
-<p>    support_score: float</p>
-<p>    contradiction_score: float</p>
+<p style="white-space:pre-wrap;margin:2px 0">    doc_ref: str</p>
+<p style="white-space:pre-wrap;margin:2px 0">    section: str</p>
+<p style="white-space:pre-wrap;margin:2px 0">    support_score: float</p>
+<p style="white-space:pre-wrap;margin:2px 0">    contradiction_score: float</p>
 
 <p>@dataclass</p>
 <p>class EpistemicState:</p>
-<p>    mode: Literal[&quot;A0_GROUNDED&quot;, &quot;A1_INFERRED&quot;, &quot;A2_IMPROVISED&quot;, &quot;A3_UNKNOWN&quot;]</p>
-<p>    anchoring_distance: float  # Must not be None</p>
-<p>    check_status: Literal[&quot;KNOWN&quot;, &quot;UNKNOWN&quot;]</p>
-<p>    anchors: List[AnchorResult]</p>
-<p>    confidence: float</p>
+<p style="white-space:pre-wrap;margin:2px 0">    mode: Literal[&quot;A0_GROUNDED&quot;, &quot;A1_INFERRED&quot;, &quot;A2_IMPROVISED&quot;, &quot;A3_UNKNOWN&quot;]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    anchoring_distance: float  # Must not be None</p>
+<p style="white-space:pre-wrap;margin:2px 0">    check_status: Literal[&quot;KNOWN&quot;, &quot;UNKNOWN&quot;]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    anchors: List[AnchorResult]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    confidence: float</p>
 
 <p>def classify_claim(claim: str, doc_corpus, similarity_fn=None) -&gt; EpistemicState:</p>
-<p>    &quot;&quot;&quot;Classify a claim into epistemic mode A0-A3.&quot;&quot;&quot;</p>
-<p>    if similarity_fn is None:</p>
-<p>        similarity_fn = _default_similarity</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;&quot;&quot;Classify a claim into epistemic mode A0-A3.&quot;&quot;&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    if similarity_fn is None:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        similarity_fn = _default_similarity</p>
 
-<p>    # Retrieve candidate anchors</p>
-<p>    anchors = _retrieve_anchors(claim, doc_corpus, similarity_fn)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Retrieve candidate anchors</p>
+<p style="white-space:pre-wrap;margin:2px 0">    anchors = _retrieve_anchors(claim, doc_corpus, similarity_fn)</p>
 
-<p>    if not anchors:</p>
-<p>        return EpistemicState(</p>
-<p>            mode=&quot;A3_UNKNOWN&quot;, anchoring_distance=1.0,</p>
-<p>            check_status=&quot;KNOWN&quot;,  # We KNOW we have no anchors</p>
-<p>            anchors=[], confidence=0.0</p>
-<p>        )</p>
+<p style="white-space:pre-wrap;margin:2px 0">    if not anchors:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        return EpistemicState(</p>
+<p style="white-space:pre-wrap;margin:2px 0">            mode=&quot;A3_UNKNOWN&quot;, anchoring_distance=1.0,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            check_status=&quot;KNOWN&quot;,  # We KNOW we have no anchors</p>
+<p style="white-space:pre-wrap;margin:2px 0">            anchors=[], confidence=0.0</p>
+<p style="white-space:pre-wrap;margin:2px 0">        )</p>
 
-<p>    # Independence weighting: deduplicate near-identical anchors</p>
-<p>    independent = _deduplicate_anchors(anchors, sim_threshold=0.85)</p>
-<p>    source_families = len(set(a.doc_ref.split(&quot;/&quot;)[0] for a in independent))</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Independence weighting: deduplicate near-identical anchors</p>
+<p style="white-space:pre-wrap;margin:2px 0">    independent = _deduplicate_anchors(anchors, sim_threshold=0.85)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    source_families = len(set(a.doc_ref.split(&quot;/&quot;)[0] for a in independent))</p>
 
-<p>    best = max(independent, key=lambda a: a.support_score)</p>
-<p>    ad = 1.0 - best.support_score</p>
+<p style="white-space:pre-wrap;margin:2px 0">    best = max(independent, key=lambda a: a.support_score)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ad = 1.0 - best.support_score</p>
 
-<p>    # Support margin constraint</p>
-<p>    worst_contra = max((a.contradiction_score for a in independent), default=0)</p>
-<p>    margin = best.support_score - worst_contra</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Support margin constraint</p>
+<p style="white-space:pre-wrap;margin:2px 0">    worst_contra = max((a.contradiction_score for a in independent), default=0)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    margin = best.support_score - worst_contra</p>
 
-<p>    if worst_contra &gt; 0.5:</p>
-<p>        ad = max(ad, 0.5)  # Contradiction floors distance at 0.5</p>
+<p style="white-space:pre-wrap;margin:2px 0">    if worst_contra &gt; 0.5:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ad = max(ad, 0.5)  # Contradiction floors distance at 0.5</p>
 
-<p>    # Classify with margin gates</p>
-<p>    if ad &lt;= 0.1 and margin &gt;= 0.4 and len(independent) &gt;= 2 and source_families &gt;= 2:</p>
-<p>        mode = &quot;A0_GROUNDED&quot;</p>
-<p>    elif ad &lt;= 0.4 and margin &gt;= 0.2:</p>
-<p>        mode = &quot;A1_INFERRED&quot;</p>
-<p>    else:</p>
-<p>        mode = &quot;A2_IMPROVISED&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Classify with margin gates</p>
+<p style="white-space:pre-wrap;margin:2px 0">    if ad &lt;= 0.1 and margin &gt;= 0.4 and len(independent) &gt;= 2 and source_families &gt;= 2:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mode = &quot;A0_GROUNDED&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    elif ad &lt;= 0.4 and margin &gt;= 0.2:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mode = &quot;A1_INFERRED&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    else:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mode = &quot;A2_IMPROVISED&quot;</p>
 
-<p>    return EpistemicState(</p>
-<p>        mode=mode, anchoring_distance=ad,</p>
-<p>        check_status=&quot;KNOWN&quot;, anchors=independent,</p>
-<p>        confidence=best.support_score</p>
-<p>    )</p>
+<p style="white-space:pre-wrap;margin:2px 0">    return EpistemicState(</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mode=mode, anchoring_distance=ad,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        check_status=&quot;KNOWN&quot;, anchors=independent,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        confidence=best.support_score</p>
+<p style="white-space:pre-wrap;margin:2px 0">    )</p>
 
 <p>#</p>
 
@@ -1089,50 +1089,50 @@
 
 
 <p>def anchor_asymptotic(output_claims: List[str], doc_corpus,</p>
-<p>                       mode=&quot;ASYM&quot;, iters=3, max_iters=5,</p>
-<p>                       similarity_fn=None) -&gt; dict:</p>
-<p>    &quot;&quot;&quot;Run ANCHOR_ASYMPTOTIC on a list of claims.&quot;&quot;&quot;</p>
-<p>    ledger = []</p>
-<p>    total_psi = 0</p>
+<p style="white-space:pre-wrap;margin:2px 0">                       mode=&quot;ASYM&quot;, iters=3, max_iters=5,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                       similarity_fn=None) -&gt; dict:</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;&quot;&quot;Run ANCHOR_ASYMPTOTIC on a list of claims.&quot;&quot;&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ledger = []</p>
+<p style="white-space:pre-wrap;margin:2px 0">    total_psi = 0</p>
 
-<p>    for claim in output_claims:</p>
-<p>        # Base check</p>
-<p>        state = classify_claim(claim, doc_corpus, similarity_fn)</p>
-<p>        psi_cost = 5  # Base cost per claim</p>
+<p style="white-space:pre-wrap;margin:2px 0">    for claim in output_claims:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        # Base check</p>
+<p style="white-space:pre-wrap;margin:2px 0">        state = classify_claim(claim, doc_corpus, similarity_fn)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        psi_cost = 5  # Base cost per claim</p>
 
-<p>        if mode == &quot;ASYM&quot; and state.mode in (&quot;A1_INFERRED&quot;, &quot;A2_IMPROVISED&quot;):</p>
-<p>            # Iterative tightening with convergence</p>
-<p>            effective_iters = min(iters, max_iters)</p>
-<p>            for i in range(effective_iters):</p>
-<p>                # Tighten threshold asymptotically</p>
-<p>                threshold = 0.6 + (0.9 - 0.6) * ((i + 1) / effective_iters)</p>
-<p>                state = classify_claim(claim, doc_corpus, similarity_fn)</p>
-<p>                psi_cost += 2</p>
-<p>                if state.confidence &gt;= threshold:</p>
-<p>                    break  # Achieved threshold at this iteration</p>
+<p style="white-space:pre-wrap;margin:2px 0">        if mode == &quot;ASYM&quot; and state.mode in (&quot;A1_INFERRED&quot;, &quot;A2_IMPROVISED&quot;):</p>
+<p style="white-space:pre-wrap;margin:2px 0">            # Iterative tightening with convergence</p>
+<p style="white-space:pre-wrap;margin:2px 0">            effective_iters = min(iters, max_iters)</p>
+<p style="white-space:pre-wrap;margin:2px 0">            for i in range(effective_iters):</p>
+<p style="white-space:pre-wrap;margin:2px 0">                # Tighten threshold asymptotically</p>
+<p style="white-space:pre-wrap;margin:2px 0">                threshold = 0.6 + (0.9 - 0.6) * ((i + 1) / effective_iters)</p>
+<p style="white-space:pre-wrap;margin:2px 0">                state = classify_claim(claim, doc_corpus, similarity_fn)</p>
+<p style="white-space:pre-wrap;margin:2px 0">                psi_cost += 2</p>
+<p style="white-space:pre-wrap;margin:2px 0">                if state.confidence &gt;= threshold:</p>
+<p style="white-space:pre-wrap;margin:2px 0">                    break  # Achieved threshold at this iteration</p>
 
-<p>        if mode == &quot;STRICT&quot; and state.anchoring_distance &gt; 0.4:</p>
-<p>            raise LOSFailure(&quot;LP12-EPIS-004&quot;,</p>
-<p>                f&quot;STRICT anchor failed: AD={state.anchoring_distance:.2f}&quot;)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        if mode == &quot;STRICT&quot; and state.anchoring_distance &gt; 0.4:</p>
+<p style="white-space:pre-wrap;margin:2px 0">            raise LOSFailure(&quot;LP12-EPIS-004&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                f&quot;STRICT anchor failed: AD={state.anchoring_distance:.2f}&quot;)</p>
 
-<p>        # The hard constraint: check_status must be KNOWN</p>
-<p>        if state.check_status == &quot;UNKNOWN&quot;:</p>
-<p>            raise LOSFailure(&quot;LP12-EPIS-002&quot;,</p>
-<p>                &quot;Epistemic state unknown — anchoring distance is NULL&quot;)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        # The hard constraint: check_status must be KNOWN</p>
+<p style="white-space:pre-wrap;margin:2px 0">        if state.check_status == &quot;UNKNOWN&quot;:</p>
+<p style="white-space:pre-wrap;margin:2px 0">            raise LOSFailure(&quot;LP12-EPIS-002&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                &quot;Epistemic state unknown — anchoring distance is NULL&quot;)</p>
 
-<p>        total_psi += psi_cost</p>
-<p>        ledger.append({</p>
-<p>            &quot;claim_text&quot;: claim,</p>
-<p>            &quot;mode&quot;: state.mode,</p>
-<p>            &quot;anchoring_distance&quot;: state.anchoring_distance,</p>
-<p>            &quot;check_status&quot;: state.check_status,</p>
-<p>            &quot;support_margin&quot;: state.confidence - max(</p>
-<p>                (a.contradiction_score for a in state.anchors), default=0),</p>
-<p>            &quot;independent_anchor_count&quot;: len(state.anchors),</p>
-<p>            &quot;psi_v_check_cost&quot;: psi_cost</p>
-<p>        })</p>
+<p style="white-space:pre-wrap;margin:2px 0">        total_psi += psi_cost</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ledger.append({</p>
+<p style="white-space:pre-wrap;margin:2px 0">            &quot;claim_text&quot;: claim,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            &quot;mode&quot;: state.mode,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            &quot;anchoring_distance&quot;: state.anchoring_distance,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            &quot;check_status&quot;: state.check_status,</p>
+<p style="white-space:pre-wrap;margin:2px 0">            &quot;support_margin&quot;: state.confidence - max(</p>
+<p style="white-space:pre-wrap;margin:2px 0">                (a.contradiction_score for a in state.anchors), default=0),</p>
+<p style="white-space:pre-wrap;margin:2px 0">            &quot;independent_anchor_count&quot;: len(state.anchors),</p>
+<p style="white-space:pre-wrap;margin:2px 0">            &quot;psi_v_check_cost&quot;: psi_cost</p>
+<p style="white-space:pre-wrap;margin:2px 0">        })</p>
 
-<p>    return {&quot;ledger&quot;: ledger, &quot;psi_v_total&quot;: total_psi}</p>
+<p style="white-space:pre-wrap;margin:2px 0">    return {&quot;ledger&quot;: ledger, &quot;psi_v_total&quot;: total_psi}</p>
 
 <p>#</p>
 
@@ -1145,25 +1145,25 @@
 <p>LP 1.2 PRACTICE</p>
 
 <p>EPISTEMIC_POLICY demo {</p>
-<p>    disclosure = FULL;</p>
-<p>    extraction = PROPOSITION;</p>
-<p>    default_criticality = analytical</p>
+<p style="white-space:pre-wrap;margin:2px 0">    disclosure = FULL;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    extraction = PROPOSITION;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    default_criticality = analytical</p>
 <p>}</p>
 
 <p>SIGN source = &quot;The Eighth Operator is Terminal Silence.&quot;</p>
-<p>    PROV { DOI:10.5281/zenodo.18529648 };</p>
+<p style="white-space:pre-wrap;margin:2px 0">    PROV { DOI:10.5281/zenodo.18529648 };</p>
 
 <p>PIPELINE epistemic_demo {</p>
-<p>    SIGN a0 = &quot;The Eighth Operator is Terminal Silence.&quot;;</p>
-<p>    SIGN a1 = &quot;The final operator achieves circuit completion.&quot;;</p>
-<p>    SIGN a2 = &quot;This operator resembles the Buddhist concept of sunyata.&quot;;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    SIGN a0 = &quot;The Eighth Operator is Terminal Silence.&quot;;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    SIGN a1 = &quot;The final operator achieves circuit completion.&quot;;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    SIGN a2 = &quot;This operator resembles the Buddhist concept of sunyata.&quot;;</p>
 
-<p>    ANCHOR a0, a1, a2 AGAINST [DOI:10.5281/zenodo.18529648] MODE = ASYM;</p>
-<p>    ASSERT_MODE a0 == A0;</p>
-<p>    ASSERT_MODE a1 == A1;</p>
-<p>    ASSERT_MODE a2 == A2;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ANCHOR a0, a1, a2 AGAINST [DOI:10.5281/zenodo.18529648] MODE = ASYM;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ASSERT_MODE a0 == A0;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ASSERT_MODE a1 == A1;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ASSERT_MODE a2 == A2;</p>
 
-<p>    EMIT ledger AS json;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EMIT ledger AS json;</p>
 <p>}</p>
 
 <p>WITNESS TO REGISTRY;</p>

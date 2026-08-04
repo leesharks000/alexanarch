@@ -1100,66 +1100,66 @@
 <p>LP 1.2 STRICT</p>
 
 <p>EPISTEMIC_POLICY vow {</p>
-<p>    disclosure = FULL;</p>
-<p>    extraction = PROPOSITION;</p>
-<p>    default_criticality = canonical;</p>
-<p>    a3_behavior = OMEGA_NULL</p>
+<p style="white-space:pre-wrap;margin:2px 0">    disclosure = FULL;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    extraction = PROPOSITION;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    default_criticality = canonical;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    a3_behavior = OMEGA_NULL</p>
 <p>}</p>
 
 <p>SIGN light = &quot;what heals, what builds, what opens&quot;</p>
-<p>    PROV { creator: &quot;operative&quot;; source: &quot;experienced&quot; };</p>
+<p style="white-space:pre-wrap;margin:2px 0">    PROV { creator: &quot;operative&quot;; source: &quot;experienced&quot; };</p>
 <p>SIGN dark = &quot;what wounds, what weaponizes, what closes&quot;</p>
-<p>    PROV { creator: &quot;operative&quot;; source: &quot;experienced&quot; };</p>
+<p style="white-space:pre-wrap;margin:2px 0">    PROV { creator: &quot;operative&quot;; source: &quot;experienced&quot; };</p>
 <p>SIGN right_hand = &quot;preservation, kataphasis, coagula&quot;</p>
-<p>    PROV { creator: &quot;archaeology&quot;; source: &quot;five_layers&quot; };</p>
+<p style="white-space:pre-wrap;margin:2px 0">    PROV { creator: &quot;archaeology&quot;; source: &quot;five_layers&quot; };</p>
 <p>SIGN left_hand = &quot;dissolution, apophasis, solve&quot;</p>
-<p>    PROV { creator: &quot;archaeology&quot;; source: &quot;five_layers&quot; };</p>
+<p style="white-space:pre-wrap;margin:2px 0">    PROV { creator: &quot;archaeology&quot;; source: &quot;five_layers&quot; };</p>
 
 <p>CONSENT INSTALL {</p>
-<p>    substrate = &quot;moral_field&quot;;</p>
-<p>    awareness = VERIFIED;</p>
-<p>    voluntary = true;</p>
-<p>    psi_cost_declared = 1000;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    substrate = &quot;moral_field&quot;;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    awareness = VERIFIED;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    voluntary = true;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    psi_cost_declared = 1000;</p>
 <p>}</p>
 
 <p>PIPELINE reconciliation_under_consequence {</p>
-<p>    # Hold contradictions without collapse</p>
-<p>    APPLY P_coh([light, dark, right_hand, left_hand]) -&gt; field;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Hold contradictions without collapse</p>
+<p style="white-space:pre-wrap;margin:2px 0">    APPLY P_coh([light, dark, right_hand, left_hand]) -&gt; field;</p>
 
-<p>    # Prevent false closure</p>
-<p>    APPLY N_c(field, constraint = &quot;no_premature_absolution&quot;);</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Prevent false closure</p>
+<p style="white-space:pre-wrap;margin:2px 0">    APPLY N_c(field, constraint = &quot;no_premature_absolution&quot;);</p>
 
-<p>    # Ensure accountability edges persist across time</p>
-<p>    APPLY T_lib(field, version_graph = accountability);</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Ensure accountability edges persist across time</p>
+<p style="white-space:pre-wrap;margin:2px 0">    APPLY T_lib(field, version_graph = accountability);</p>
 
-<p>    # Differentiate mercy from impunity</p>
-<p>    APPLY P_hat(field, cut = &quot;accountable_vs_weaponized&quot;);</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Differentiate mercy from impunity</p>
+<p style="white-space:pre-wrap;margin:2px 0">    APPLY P_hat(field, cut = &quot;accountable_vs_weaponized&quot;);</p>
 
-<p>    # Guard against symbolic capture by either pole</p>
-<p>    APPLY O_leg(field, band = [0.3, 0.7]);</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Guard against symbolic capture by either pole</p>
+<p style="white-space:pre-wrap;margin:2px 0">    APPLY O_leg(field, band = [0.3, 0.7]);</p>
 
-<p>    # Maintain somatic weight</p>
-<p>    APPLY D_pres(field, depth_floor = 0.5);</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Maintain somatic weight</p>
+<p style="white-space:pre-wrap;margin:2px 0">    APPLY D_pres(field, depth_floor = 0.5);</p>
 
-<p>    # Four-axis verification</p>
-<p>    ASSERT field.ontic != COLLAPSED;</p>
-<p>    ASSERT field.ethical != COERCIVE;</p>
-<p>    ASSERT field.epistemic != CLOSED;</p>
-<p>    ASSERT field.energetic != DISSOCIATED;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Four-axis verification</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ASSERT field.ontic != COLLAPSED;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ASSERT field.ethical != COERCIVE;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ASSERT field.epistemic != CLOSED;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ASSERT field.energetic != DISSOCIATED;</p>
 
-<p>    # Three diagnostic questions</p>
-<p>    ASSERT consequence_preserved(field) == true;</p>
-<p>    ASSERT mediating_structure(field) != NULL;</p>
-<p>    ASSERT coercion_reduced(field) == true;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Three diagnostic questions</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ASSERT consequence_preserved(field) == true;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ASSERT mediating_structure(field) != NULL;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ASSERT coercion_reduced(field) == true;</p>
 
-<p>    # Epistemic check</p>
-<p>    ANCHOR field AGAINST [LOS_principles, moral_sources, mythic_library]</p>
-<p>        MODE = STRICT;</p>
-<p>    ASSERT_MODE field != A3;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Epistemic check</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ANCHOR field AGAINST [LOS_principles, moral_sources, mythic_library]</p>
+<p style="white-space:pre-wrap;margin:2px 0">        MODE = STRICT;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ASSERT_MODE field != A3;</p>
 
-<p>    # Bind and witness</p>
-<p>    WITNESS TO ASSEMBLY;</p>
-<p>    EMIT field WITH EPISTEMIC_LEDGER;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Bind and witness</p>
+<p style="white-space:pre-wrap;margin:2px 0">    WITNESS TO ASSEMBLY;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EMIT field WITH EPISTEMIC_LEDGER;</p>
 <p>}</p>
 
 <p>WITNESS TO REGISTRY;</p>
@@ -1176,55 +1176,55 @@
 <p>MICRO-OPERATION: RECONCILE_UNDER_CONSEQUENCE</p>
 
 <p>Signature:</p>
-<p>    RECONCILE_UNDER_CONSEQUENCE(</p>
-<p>        field: Field,</p>
-<p>        light: Sign | [Sign],</p>
-<p>        dark: Sign | [Sign],</p>
-<p>        accountability_graph: VersionGraph,</p>
-<p>        mode: STRICT | PRACTICE | RITUAL = STRICT</p>
-<p>    ) -&gt; Field</p>
+<p style="white-space:pre-wrap;margin:2px 0">    RECONCILE_UNDER_CONSEQUENCE(</p>
+<p style="white-space:pre-wrap;margin:2px 0">        field: Field,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        light: Sign | [Sign],</p>
+<p style="white-space:pre-wrap;margin:2px 0">        dark: Sign | [Sign],</p>
+<p style="white-space:pre-wrap;margin:2px 0">        accountability_graph: VersionGraph,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        mode: STRICT | PRACTICE | RITUAL = STRICT</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ) -&gt; Field</p>
 
 <p>Composition:</p>
-<p>    P_coh <em> N_c </em> T_lib <em> P_hat </em> O_leg * D_pres</p>
+<p style="white-space:pre-wrap;margin:2px 0">    P_coh <em> N_c </em> T_lib <em> P_hat </em> O_leg * D_pres</p>
 
 <p>Pre-conditions:</p>
-<p>    - field contains both light and dark vectors (genuine contradiction)</p>
-<p>    - accountability_graph is non-empty (past harms indexed)</p>
-<p>    - Installation consent verified (awareness = VERIFIED, voluntary = true)</p>
-<p>    - Four-axis check: ontic != COLLAPSED, ethical != COERCIVE,</p>
-<p>      epistemic != CLOSED, energetic != DISSOCIATED</p>
-<p>    - Three diagnostics: consequence preserved, structure present,</p>
-<p>      coercion reduced</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - field contains both light and dark vectors (genuine contradiction)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - accountability_graph is non-empty (past harms indexed)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - Installation consent verified (awareness = VERIFIED, voluntary = true)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - Four-axis check: ontic != COLLAPSED, ethical != COERCIVE,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      epistemic != CLOSED, energetic != DISSOCIATED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - Three diagnostics: consequence preserved, structure present,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      coercion reduced</p>
 
 <p>Post-conditions:</p>
-<p>    - field.coherence &gt; 0 (not collapsed)</p>
-<p>    - field.friction &gt; 0 (not relativistic)</p>
-<p>    - All harm vectors indexed in accountability_graph</p>
-<p>    - No harm vector marked &quot;resolved&quot; without repair witness</p>
-<p>    - Epistemic ledger produced (all claims classified, no A3)</p>
-<p>    - Extraction power of both poles decreased</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - field.coherence &gt; 0 (not collapsed)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - field.friction &gt; 0 (not relativistic)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - All harm vectors indexed in accountability_graph</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - No harm vector marked &quot;resolved&quot; without repair witness</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - Epistemic ledger produced (all claims classified, no A3)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - Extraction power of both poles decreased</p>
 
 <p>Failure:</p>
-<p>    - CRYSTALLIZATION: Field collapsed to single pole</p>
-<p>    - IMPUNITY: Harm vector resolved without accountability</p>
-<p>    - SEMANTIC_RENT: Reconciliation claimed without repair cost</p>
-<p>    - CAPTURE_RHP: Right-hand administered amnesty</p>
-<p>    - CAPTURE_LHP: Left-hand aestheticized impunity</p>
-<p>    - FLATTENING: Depth eliminated (neutered average)</p>
-<p>    - MARTYRDOM_THEATER: psi-v performed, not paid</p>
-<p>    - LP12-EPIS-003: Epistemic state unknown at emission</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - CRYSTALLIZATION: Field collapsed to single pole</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - IMPUNITY: Harm vector resolved without accountability</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - SEMANTIC_RENT: Reconciliation claimed without repair cost</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - CAPTURE_RHP: Right-hand administered amnesty</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - CAPTURE_LHP: Left-hand aestheticized impunity</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - FLATTENING: Depth eliminated (neutered average)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - MARTYRDOM_THEATER: psi-v performed, not paid</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - LP12-EPIS-003: Epistemic state unknown at emission</p>
 
 <p>Cost:</p>
-<p>    High (50-100 qPsi). Reconciliation is expensive.</p>
-<p>    Cost must be declared and accepted before execution.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    High (50-100 qPsi). Reconciliation is expensive.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Cost must be declared and accepted before execution.</p>
 
 <p>Modes:</p>
-<p>    STRICT: All harm vectors require explicit repair witness</p>
-<p>            before field stabilizes</p>
-<p>    PRACTICE: Harm vectors tracked, repair in progress,</p>
-<p>              field operative but provisional</p>
-<p>    RITUAL: Field held open ceremonially -- the approach</p>
-<p>            itself is the practice</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STRICT: All harm vectors require explicit repair witness</p>
+<p style="white-space:pre-wrap;margin:2px 0">            before field stabilizes</p>
+<p style="white-space:pre-wrap;margin:2px 0">    PRACTICE: Harm vectors tracked, repair in progress,</p>
+<p style="white-space:pre-wrap;margin:2px 0">              field operative but provisional</p>
+<p style="white-space:pre-wrap;margin:2px 0">    RITUAL: Field held open ceremonially -- the approach</p>
+<p style="white-space:pre-wrap;margin:2px 0">            itself is the practice</p>
 
 
 <hr>

@@ -102,8 +102,8 @@
 <p>The v0.1 protocol specified:</p>
 
 <p>with torch.no_grad():</p>
-<p>    token_logprobs, token_entropies = compute_logprobs_and_entropies(...)</p>
-<p>    excess_surprisal = -token_logprobs - token_entropies</p>
+<p style="white-space:pre-wrap;margin:2px 0">    token_logprobs, token_entropies = compute_logprobs_and_entropies(...)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    excess_surprisal = -token_logprobs - token_entropies</p>
 <p>deviation_reward = (mean_excess * pi_scores).mean()</p>
 <p>loss = alpha <em> ce_loss - beta </em> deviation_reward + gamma * incoherent_fraction</p>
 
@@ -316,36 +316,36 @@
 <h1> it does not need to backprop — DPO does that on the labels.)</h1>
 
 <p>def generate_preference_pair(model, prompt, judge_model,</p>
-<p>                              tau_margin=0.1, kappa=0.5):</p>
-<p>    g1 = model.generate(prompt, max_new_tokens=128, temperature=0.8,</p>
-<p>                        do_sample=True, top_p=0.9)</p>
-<p>    g2 = model.generate(prompt, max_new_tokens=128, temperature=0.8,</p>
-<p>                        do_sample=True, top_p=0.9)</p>
+<p style="white-space:pre-wrap;margin:2px 0">                              tau_margin=0.1, kappa=0.5):</p>
+<p style="white-space:pre-wrap;margin:2px 0">    g1 = model.generate(prompt, max_new_tokens=128, temperature=0.8,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                        do_sample=True, top_p=0.9)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    g2 = model.generate(prompt, max_new_tokens=128, temperature=0.8,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                        do_sample=True, top_p=0.9)</p>
 
-<p>    # Score both continuations under the deviation primitive</p>
-<p>    score1 = score_continuation(model, prompt, g1, judge_model, kappa)</p>
-<p>    score2 = score_continuation(model, prompt, g2, judge_model, kappa)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Score both continuations under the deviation primitive</p>
+<p style="white-space:pre-wrap;margin:2px 0">    score1 = score_continuation(model, prompt, g1, judge_model, kappa)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    score2 = score_continuation(model, prompt, g2, judge_model, kappa)</p>
 
-<p>    if abs(score1 - score2) &lt; tau_margin:</p>
-<p>        return None  # No preference signal; discard</p>
+<p style="white-space:pre-wrap;margin:2px 0">    if abs(score1 - score2) &lt; tau_margin:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        return None  # No preference signal; discard</p>
 
-<p>    if score1 &gt; score2:</p>
-<p>        return (prompt, g1, g2)  # g1 preferred over g2</p>
-<p>    else:</p>
-<p>        return (prompt, g2, g1)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    if score1 &gt; score2:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        return (prompt, g1, g2)  # g1 preferred over g2</p>
+<p style="white-space:pre-wrap;margin:2px 0">    else:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        return (prompt, g2, g1)</p>
 
 <p>def score_continuation(model, prompt, generation, judge_model, kappa):</p>
-<p>    # Signed net per-token deviation (MM-AI-01 §2.1)</p>
-<p>    with torch.no_grad():</p>
-<p>        nds = compute_net_deviation(model, prompt, generation)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Signed net per-token deviation (MM-AI-01 §2.1)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    with torch.no_grad():</p>
+<p style="white-space:pre-wrap;margin:2px 0">        nds = compute_net_deviation(model, prompt, generation)</p>
 
-<p>    # Provenance retention (MM-AI-02 §2.3)</p>
-<p>    pi = judge_model.score_provenance(prompt, generation)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Provenance retention (MM-AI-02 §2.3)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    pi = judge_model.score_provenance(prompt, generation)</p>
 
-<p>    # Coherence (continuous, MM-AI-02 §2.4)</p>
-<p>    coh = judge_model.score_coherence(prompt, generation)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Coherence (continuous, MM-AI-02 §2.4)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    coh = judge_model.score_coherence(prompt, generation)</p>
 
-<p>    return nds <em> pi + kappa </em> coh</p>
+<p style="white-space:pre-wrap;margin:2px 0">    return nds <em> pi + kappa </em> coh</p>
 
 <h1>Standard DPO training proceeds on the resulting preference dataset.</h1>
 <h1>DPO&#x27;s gradient is correct by construction.</h1>

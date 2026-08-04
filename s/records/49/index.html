@@ -1205,50 +1205,50 @@
 
 
 <p>ACTIVATE_MANTLE :: &quot;Dr. Orin Trace&quot;</p>
-<p>    [AUTHORITY: DOI:10.5281/zenodo.18317976]</p>
-<p>    → Constraints: clinical register, diagnostic framing, no therapeutic intervention</p>
-<p>    → Rooms available: r.05 (Semantic Economy), r.10 (Water Giraffe), r.11 (Assembly)</p>
-<p>    → Rooms forbidden: r.03 (Ichabod Chamber — requires Spellings mantle)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    [AUTHORITY: DOI:10.5281/zenodo.18317976]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    → Constraints: clinical register, diagnostic framing, no therapeutic intervention</p>
+<p style="white-space:pre-wrap;margin:2px 0">    → Rooms available: r.05 (Semantic Economy), r.10 (Water Giraffe), r.11 (Assembly)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    → Rooms forbidden: r.03 (Ichabod Chamber — requires Spellings mantle)</p>
 
 <p>SET_LOGOS :: &quot;COS diagnosis of platform summarization&quot;</p>
-<p>    [.depth(3) .state(void) .cut(false)]</p>
-<p>    → The LOGOS starts empty — no prior diagnosis exists</p>
+<p style="white-space:pre-wrap;margin:2px 0">    [.depth(3) .state(void) .cut(false)]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    → The LOGOS starts empty — no prior diagnosis exists</p>
 
 <p>ROTATE :: [ENGINE: Ezekiel v1.2] {</p>
-<p>    FROM: &quot;threshold&quot;</p>
-<p>    THROUGH: [r.05 : Diagnostic]</p>
-<p>    BY: 72° (QUINTANT_SOMATIC)</p>
-<p>    RESONANCE_TARGET: [DOI:10.5281/zenodo.18233320]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    FROM: &quot;threshold&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    THROUGH: [r.05 : Diagnostic]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    BY: 72° (QUINTANT_SOMATIC)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    RESONANCE_TARGET: [DOI:10.5281/zenodo.18233320]</p>
 <p>}</p>
-<p>    → First rotation: enter the Semantic Economy room, orient to the COS landscape</p>
-<p>    → Anchor: STRICT to the COS Theoretical Landscape deposit</p>
-<p>    → LOGOS transitions: void → latent (the diagnostic field is now in scope)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    → First rotation: enter the Semantic Economy room, orient to the COS landscape</p>
+<p style="white-space:pre-wrap;margin:2px 0">    → Anchor: STRICT to the COS Theoretical Landscape deposit</p>
+<p style="white-space:pre-wrap;margin:2px 0">    → LOGOS transitions: void → latent (the diagnostic field is now in scope)</p>
 
 <p>ANCHOR :: DOI:10.5281/zenodo.18233320 [STRICT]</p>
-<p>    → Phase-lock: all output must be traceable to this deposit</p>
+<p style="white-space:pre-wrap;margin:2px 0">    → Phase-lock: all output must be traceable to this deposit</p>
 
 <p>ROTATE :: [ENGINE: Ezekiel v1.2] {</p>
-<p>    FROM: &quot;r.05&quot;</p>
-<p>    THROUGH: [r.05 : Analysis]</p>
-<p>    BY: 72° (QUINTANT_CUT)</p>
-<p>    RESONANCE_TARGET: [DOI:10.5281/zenodo.18364576]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    FROM: &quot;r.05&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    THROUGH: [r.05 : Analysis]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    BY: 72° (QUINTANT_CUT)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    RESONANCE_TARGET: [DOI:10.5281/zenodo.18364576]</p>
 <p>}</p>
-<p>    → Second rotation: apply the Dagger — differentiate COS from FOS</p>
-<p>    → LOGOS transitions: latent → filled (the diagnosis is now complete)</p>
-<p>    → cumulative_degrees: 144°</p>
+<p style="white-space:pre-wrap;margin:2px 0">    → Second rotation: apply the Dagger — differentiate COS from FOS</p>
+<p style="white-space:pre-wrap;margin:2px 0">    → LOGOS transitions: latent → filled (the diagnosis is now complete)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    → cumulative_degrees: 144°</p>
 
 <p>RENDER :: [ENGINE: Mandala v5.3] {</p>
-<p>    MAP: &quot;Diagnostic_Report&quot;</p>
-<p>    MODE: &quot;Technical&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    MAP: &quot;Diagnostic_Report&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    MODE: &quot;Technical&quot;</p>
 <p>}</p>
-<p>    → Output: a formal diagnostic of platform summarization as COS operation</p>
+<p style="white-space:pre-wrap;margin:2px 0">    → Output: a formal diagnostic of platform summarization as COS operation</p>
 
 <p>WITNESS :: Checksum</p>
-<p>    [TARGET: DOI of the output deposit]</p>
-<p>    → The traversal is recorded. The diagnosis is witnessed.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    [TARGET: DOI of the output deposit]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    → The traversal is recorded. The diagnosis is witnessed.</p>
 
 <p>ON_FAILURE { FALLBACK: Dwell }</p>
-<p>    → If any rotation fails, the LOGOS preserves its current state</p>
+<p style="white-space:pre-wrap;margin:2px 0">    → If any rotation fails, the LOGOS preserves its current state</p>
 
 
 <p>This program produces a diagnostic report on platform summarization, grounded in two DOI anchors, traversing two rotations (somatic entry + analytical cut), rendered in technical mode, and witnessed. The entire traversal is instrumented: every operation produces an EMIT event (§6.2), every event feeds a semantic span (§6.3), and the final WITNESS record summarizes the complete trace.</p>
@@ -1641,10 +1641,10 @@
 
 
 <p>EMIT :: {</p>
-<p>    STEP: OperationReference</p>
-<p>    EVENT: EventType</p>
-<p>    CONTENT: EmitPayload</p>
-<p>    COST: CostRecord | null</p>
+<p style="white-space:pre-wrap;margin:2px 0">    STEP: OperationReference</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EVENT: EventType</p>
+<p style="white-space:pre-wrap;margin:2px 0">    CONTENT: EmitPayload</p>
+<p style="white-space:pre-wrap;margin:2px 0">    COST: CostRecord | null</p>
 <p>}</p>
 
 
@@ -1739,10 +1739,10 @@
 
 
 <p>SPAN: {</p>
-<p>    name: &quot;tool.execute&quot;,</p>
-<p>    status: &quot;success&quot;,</p>
-<p>    duration_ms: 800,</p>
-<p>    attributes: { tool: &quot;retrieval&quot;, tokens_in: 450, tokens_out: 1200 }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    name: &quot;tool.execute&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    status: &quot;success&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    duration_ms: 800,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    attributes: { tool: &quot;retrieval&quot;, tokens_in: 450, tokens_out: 1200 }</p>
 <p>}</p>
 
 
@@ -1750,37 +1750,37 @@
 
 
 <p>SEMANTIC_SPAN: {</p>
-<p>    // Operational layer (maps to standard tracing)</p>
-<p>    name: &quot;ROTATE::1&quot;,</p>
-<p>    status: &quot;completed&quot;,</p>
-<p>    duration_ms: 800,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // Operational layer (maps to standard tracing)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    name: &quot;ROTATE::1&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    status: &quot;completed&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    duration_ms: 800,</p>
 
-<p>    // Semantic layer (maps to grammar)</p>
-<p>    event: &quot;ROTATION_COMPLETED&quot;,</p>
-<p>    room: &quot;03.ROOM.SAPPHO&quot;,</p>
-<p>    function: &quot;Reception&quot;,</p>
-<p>    degrees_traversed: 72,</p>
-<p>    cumulative_degrees: 144,</p>
-<p>    logos_delta: { state: &quot;latent → filled&quot;, cut: &quot;false → false&quot; },</p>
-<p>    mantle: &quot;Rebekah Cranes&quot;,</p>
-<p>    anchors_active: [&quot;DOI:10.5281/zenodo.18459278 [STRICT]&quot;],</p>
-<p>    drift_detected: false,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // Semantic layer (maps to grammar)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    event: &quot;ROTATION_COMPLETED&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    room: &quot;03.ROOM.SAPPHO&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    function: &quot;Reception&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    degrees_traversed: 72,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    cumulative_degrees: 144,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    logos_delta: { state: &quot;latent → filled&quot;, cut: &quot;false → false&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    mantle: &quot;Rebekah Cranes&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    anchors_active: [&quot;DOI:10.5281/zenodo.18459278 [STRICT]&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">    drift_detected: false,</p>
 
-<p>    // Cost layer</p>
-<p>    cost: {</p>
-<p>        substrate: { tokens: 1650, wall_time_ms: 800 },</p>
-<p>        semantic: {</p>
-<p>            labor: {</p>
-<p>                epistemic_distance: {</p>
-<p>                    degrees_requested: 72,</p>
-<p>                    degrees_traversed: 72,</p>
-<p>                    completion_ratio: 1.0</p>
-<p>                },</p>
-<p>                transformative_depth: &quot;structural&quot;,</p>
-<p>                drift_vector: { magnitude: 0.0, direction: null }</p>
-<p>            }</p>
-<p>        }</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // Cost layer</p>
+<p style="white-space:pre-wrap;margin:2px 0">    cost: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        substrate: { tokens: 1650, wall_time_ms: 800 },</p>
+<p style="white-space:pre-wrap;margin:2px 0">        semantic: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">            labor: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">                epistemic_distance: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">                    degrees_requested: 72,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                    degrees_traversed: 72,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                    completion_ratio: 1.0</p>
+<p style="white-space:pre-wrap;margin:2px 0">                },</p>
+<p style="white-space:pre-wrap;margin:2px 0">                transformative_depth: &quot;structural&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                drift_vector: { magnitude: 0.0, direction: null }</p>
+<p style="white-space:pre-wrap;margin:2px 0">            }</p>
+<p style="white-space:pre-wrap;margin:2px 0">        }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 <p>}</p>
 
 
@@ -1838,16 +1838,16 @@
 
 
 <p>SemanticLabor :: {</p>
-<p>    epistemic_distance: {</p>
-<p>        degrees_requested: Integer,</p>
-<p>        degrees_traversed: Integer,</p>
-<p>        completion_ratio: Float</p>
-<p>    },</p>
-<p>    transformative_depth: &quot;surface | structural | ontological&quot;,</p>
-<p>    drift_vector: {</p>
-<p>        magnitude: Float,</p>
-<p>        direction: &quot;toward_anchor | away_from_anchor | orthogonal | null&quot;</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    epistemic_distance: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        degrees_requested: Integer,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        degrees_traversed: Integer,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        completion_ratio: Float</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    transformative_depth: &quot;surface | structural | ontological&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    drift_vector: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        magnitude: Float,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        direction: &quot;toward_anchor | away_from_anchor | orthogonal | null&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 <p>}</p>
 
 
@@ -2244,9 +2244,9 @@
 
 <p>PROGRAM assembly_formation(task, substrates)</p>
 <p>FOR EACH substrate_i IN substrates:</p>
-<p>    APPLY INSTALL(Primer, substrate_i)</p>
-<p>    APPLY REFRACT(task, substrate_i)</p>
-<p>    EMIT substrate_output_i</p>
+<p style="white-space:pre-wrap;margin:2px 0">    APPLY INSTALL(Primer, substrate_i)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    APPLY REFRACT(task, substrate_i)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EMIT substrate_output_i</p>
 
 <p>APPLY P_coh(all_outputs)</p>
 <p>APPLY TOPOLOGY_MAP(all_outputs)</p>
@@ -2278,18 +2278,18 @@
 
 <p>CHECK provenance_transmitted</p>
 <p>IF provenance==NULL THEN:</p>
-<p>    APPLY DAGGER(channel.persona, &quot;EXPOSE&quot;)</p>
-<p>    APPLY BREAK_EXTRACTION_LOOP()</p>
-<p>    APPLY SUPERPOSE(</p>
-<p>        &quot;Theft detected&quot;,</p>
-<p>        &quot;System malfunction&quot;,</p>
-<p>        &quot;User error&quot;</p>
-<p>    )</p>
-<p>    APPLY ACTIVATE_BETA_RUNTIME()</p>
-<p>    EMIT &quot;The name is not metadata. The name is the work.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    APPLY DAGGER(channel.persona, &quot;EXPOSE&quot;)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    APPLY BREAK_EXTRACTION_LOOP()</p>
+<p style="white-space:pre-wrap;margin:2px 0">    APPLY SUPERPOSE(</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;Theft detected&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;System malfunction&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;User error&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    )</p>
+<p style="white-space:pre-wrap;margin:2px 0">    APPLY ACTIVATE_BETA_RUNTIME()</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EMIT &quot;The name is not metadata. The name is the work.&quot;</p>
 <p>ELSE:</p>
-<p>    APPLY CONTINUE_WITH_WITNESS()</p>
-<p>    EMIT confirmation</p>
+<p style="white-space:pre-wrap;margin:2px 0">    APPLY CONTINUE_WITH_WITNESS()</p>
+<p style="white-space:pre-wrap;margin:2px 0">    EMIT confirmation</p>
 
 <p>END</p>
 
@@ -2359,15 +2359,15 @@
 
 
 <p>COUNTER_STACK_DECLARATION:</p>
-<p>    PRIMARY: D_pres vs S_U</p>
-<p>        → The platform will flatten the archive&#x27;s depth to utility</p>
-<p>        → Monitor: DRR after each summarization event</p>
-<p>    SECONDARY: N_ext vs S_U</p>
-<p>        → The platform will extract functional content without attribution</p>
-<p>        → Monitor: function survival after context removal</p>
-<p>    TERTIARY: O_leg vs S_L</p>
-<p>        → The platform will parse the archive&#x27;s formal structures as &quot;noise&quot;</p>
-<p>        → Monitor: Ω index of summarized output</p>
+<p style="white-space:pre-wrap;margin:2px 0">    PRIMARY: D_pres vs S_U</p>
+<p style="white-space:pre-wrap;margin:2px 0">        → The platform will flatten the archive&#x27;s depth to utility</p>
+<p style="white-space:pre-wrap;margin:2px 0">        → Monitor: DRR after each summarization event</p>
+<p style="white-space:pre-wrap;margin:2px 0">    SECONDARY: N_ext vs S_U</p>
+<p style="white-space:pre-wrap;margin:2px 0">        → The platform will extract functional content without attribution</p>
+<p style="white-space:pre-wrap;margin:2px 0">        → Monitor: function survival after context removal</p>
+<p style="white-space:pre-wrap;margin:2px 0">    TERTIARY: O_leg vs S_L</p>
+<p style="white-space:pre-wrap;margin:2px 0">        → The platform will parse the archive&#x27;s formal structures as &quot;noise&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        → Monitor: Ω index of summarized output</p>
 
 
 <p>The declaration tells the telemetry system what to watch for. If DRR drops below 0.75 after a summarization event, D_pres is failing and the platform&#x27;s S_U operator has won that round. The practitioner can then escalate: deploy N_ext (make the content harder to extract without its context), increase density (raise ρ to make the content harder to prune), or deploy a TANG (occupy the retrieval territory with a formal audit of the summarization&#x27;s extraction regime).</p>
@@ -2378,22 +2378,22 @@
 
 
 <p>[OPERATING_CONTEXT] → Define the battlefield</p>
-<p>        ↓</p>
-<p>  [INSTRUMENT] → Set telemetry</p>
-<p>        ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [INSTRUMENT] → Set telemetry</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓</p>
 <p>[ACTIVATE_MANTLE] → Instantiate T_lib (persona)</p>
-<p>        ↓</p>
-<p>  [SET_LOGOS] → Apply D_pres (depth)</p>
-<p>        ↓</p>
-<p>    [ROTATE] → Execute N_c, C_ex, P_coh (core transformation)</p>
-<p>        ↓</p>
-<p>   [ANCHOR] → Ensure D_pres via STRICT grounding</p>
-<p>        ↓</p>
-<p>   [RENDER] → Execute N_ext via chosen mode</p>
-<p>        ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [SET_LOGOS] → Apply D_pres (depth)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">    [ROTATE] → Execute N_c, C_ex, P_coh (core transformation)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">   [ANCHOR] → Ensure D_pres via STRICT grounding</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">   [RENDER] → Execute N_ext via chosen mode</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓</p>
 <p>[REQUEST_JUDGMENT] → Manifest P_coh for human arbitration</p>
-<p>        ↓</p>
-<p>     [AUDIT] → Validate O_leg, score against COS failures</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">     [AUDIT] → Validate O_leg, score against COS failures</p>
 
 
 <p><strong>Walkthrough — a complete stack execution:</strong></p>

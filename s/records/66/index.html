@@ -497,24 +497,24 @@
 
 <h1>1. Reserve DOI</h1>
 <p>curl -s -X POST &quot;https://zenodo.org/api/deposit/depositions&quot; \</p>
-<p>  -H &quot;Authorization: Bearer $TOKEN&quot; \</p>
-<p>  -H &quot;Content-Type: application/json&quot; -d &#x27;{}&#x27;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  -H &quot;Authorization: Bearer $TOKEN&quot; \</p>
+<p style="white-space:pre-wrap;margin:2px 0">  -H &quot;Content-Type: application/json&quot; -d &#x27;{}&#x27;</p>
 
 <h1>2. Upload file to bucket URL from response</h1>
 <p>curl -s -X PUT &quot;$BUCKET/$FILENAME.md&quot; \</p>
-<p>  -H &quot;Authorization: Bearer $TOKEN&quot; \</p>
-<p>  -H &quot;Content-Type: application/octet-stream&quot; \</p>
-<p>  --data-binary @/path/to/file</p>
+<p style="white-space:pre-wrap;margin:2px 0">  -H &quot;Authorization: Bearer $TOKEN&quot; \</p>
+<p style="white-space:pre-wrap;margin:2px 0">  -H &quot;Content-Type: application/octet-stream&quot; \</p>
+<p style="white-space:pre-wrap;margin:2px 0">  --data-binary @/path/to/file</p>
 
 <h1>3. Set metadata</h1>
 <p>curl -s -X PUT &quot;https://zenodo.org/api/deposit/depositions/$ID&quot; \</p>
-<p>  -H &quot;Authorization: Bearer $TOKEN&quot; \</p>
-<p>  -H &quot;Content-Type: application/json&quot; \</p>
-<p>  -d &#x27;{&quot;metadata&quot;: { ... }}&#x27;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  -H &quot;Authorization: Bearer $TOKEN&quot; \</p>
+<p style="white-space:pre-wrap;margin:2px 0">  -H &quot;Content-Type: application/json&quot; \</p>
+<p style="white-space:pre-wrap;margin:2px 0">  -d &#x27;{&quot;metadata&quot;: { ... }}&#x27;</p>
 
 <h1>4. Publish</h1>
 <p>curl -s -X POST &quot;https://zenodo.org/api/deposit/depositions/$ID/actions/publish&quot; \</p>
-<p>  -H &quot;Authorization: Bearer $TOKEN&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  -H &quot;Authorization: Bearer $TOKEN&quot;</p>
 
 <p>#</p>
 

@@ -86,14 +86,14 @@
 <p>Build script: `scripts/build_epistle_data.py` Output: `public/epistle_data.json` Format: JSON array of sections (Antioch model)</p>
 
 
-<p>    [</p>
-<p>      {&quot;kind&quot;: &quot;front&quot;, &quot;key&quot;: &quot;editorial_note&quot;, &quot;paragraphs&quot;: [...]},</p>
-<p>      {&quot;kind&quot;: &quot;front&quot;, &quot;key&quot;: &quot;framing&quot;, &quot;paragraphs&quot;: [...]},</p>
-<p>      {&quot;kind&quot;: &quot;front&quot;, &quot;key&quot;: &quot;apparatus_note&quot;, &quot;paragraphs&quot;: [...]},</p>
-<p>      {&quot;kind&quot;: &quot;body&quot;,  &quot;key&quot;: &quot;epistle&quot;, &quot;paragraphs&quot;: [...]},</p>
-<p>      {&quot;kind&quot;: &quot;back&quot;,  &quot;key&quot;: &quot;forward_library&quot;, &quot;paragraphs&quot;: [...]},</p>
-<p>      {&quot;kind&quot;: &quot;back&quot;,  &quot;key&quot;: &quot;colophon&quot;, &quot;paragraphs&quot;: [...]}</p>
-<p>    ]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    [</p>
+<p style="white-space:pre-wrap;margin:2px 0">      {&quot;kind&quot;: &quot;front&quot;, &quot;key&quot;: &quot;editorial_note&quot;, &quot;paragraphs&quot;: [...]},</p>
+<p style="white-space:pre-wrap;margin:2px 0">      {&quot;kind&quot;: &quot;front&quot;, &quot;key&quot;: &quot;framing&quot;, &quot;paragraphs&quot;: [...]},</p>
+<p style="white-space:pre-wrap;margin:2px 0">      {&quot;kind&quot;: &quot;front&quot;, &quot;key&quot;: &quot;apparatus_note&quot;, &quot;paragraphs&quot;: [...]},</p>
+<p style="white-space:pre-wrap;margin:2px 0">      {&quot;kind&quot;: &quot;body&quot;,  &quot;key&quot;: &quot;epistle&quot;, &quot;paragraphs&quot;: [...]},</p>
+<p style="white-space:pre-wrap;margin:2px 0">      {&quot;kind&quot;: &quot;back&quot;,  &quot;key&quot;: &quot;forward_library&quot;, &quot;paragraphs&quot;: [...]},</p>
+<p style="white-space:pre-wrap;margin:2px 0">      {&quot;kind&quot;: &quot;back&quot;,  &quot;key&quot;: &quot;colophon&quot;, &quot;paragraphs&quot;: [...]}</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ]</p>
 
 
 <h2>Footnote Data Model (per SOIL)</h2>
@@ -101,24 +101,24 @@
 <p>Each footnote is stored as a structured object, not a flat string:</p>
 
 
-<p>    {</p>
-<p>      &quot;type&quot;: &quot;footnote&quot;,</p>
-<p>      &quot;id&quot;: &quot;¹⁴&quot;,</p>
-<p>      &quot;anchor&quot;: &quot;He came unto his own, and his own knew him not&quot;,</p>
-<p>      &quot;body&quot;: &quot;Full blended note text for default rendering&quot;,</p>
-<p>      &quot;source&quot;: &quot;John 1:11. Johannine Logos prologue...&quot;,</p>
-<p>      &quot;operation&quot;: &quot;Applies the Logos rejection pattern to internet poetry-forum nonrecognition.&quot;,</p>
-<p>      &quot;archive&quot;: &quot;EA-LOGOS-01. Retrieval-layer Christology. DOI: 10.5281/zenodo.19855300&quot;,</p>
-<p>      &quot;forward&quot;: &quot;By 2200, cited as founding text of digital theology.&quot;,</p>
-<p>      &quot;density&quot;: &quot;holographic&quot;</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;type&quot;: &quot;footnote&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;id&quot;: &quot;¹⁴&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;anchor&quot;: &quot;He came unto his own, and his own knew him not&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;body&quot;: &quot;Full blended note text for default rendering&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;source&quot;: &quot;John 1:11. Johannine Logos prologue...&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;operation&quot;: &quot;Applies the Logos rejection pattern to internet poetry-forum nonrecognition.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;archive&quot;: &quot;EA-LOGOS-01. Retrieval-layer Christology. DOI: 10.5281/zenodo.19855300&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;forward&quot;: &quot;By 2200, cited as founding text of digital theology.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;density&quot;: &quot;holographic&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
 
 <p>The `density` field marks the footnote type (per PRAXIS):</p>
 
-<p>  * `&quot;source&quot;` -- backward-facing only (biblical/classical identification)</p>
-<p>  * `&quot;operative&quot;` -- source + what it does in the Epistle / CHA</p>
-<p>  * `&quot;holographic&quot;` -- full temporal blend: backward + CHA + forward</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `&quot;source&quot;` -- backward-facing only (biblical/classical identification)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `&quot;operative&quot;` -- source + what it does in the Epistle / CHA</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * `&quot;holographic&quot;` -- full temporal blend: backward + CHA + forward</p>
 
 
 
@@ -129,65 +129,65 @@
 <p>New view state: `&quot;epistle&quot;` in App.jsx. Fourth tab:</p>
 
 
-<p>    [Secret Book of Walt]  [Gospel of Antioch]  [Epistle to the Diaspora]  [TANG]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    [Secret Book of Walt]  [Gospel of Antioch]  [Epistle to the Diaspora]  [TANG]</p>
 
 
 <h2>TERMS Dictionary Additions</h2>
 
 
-<p>    &quot;Human Diaspora&quot;:              { q: &quot;church of the human diaspora lee sharks&quot; },</p>
-<p>    &quot;Damascus Dancings&quot;:           { q: &quot;Damascus Dancings lee sharks heteronym&quot; },</p>
-<p>    &quot;Feist-self&quot;:                  { q: &quot;Feist-self secret book of walt&quot; },</p>
-<p>    &quot;school outside the school&quot;:   { q: &quot;school outside the school lee sharks&quot; },</p>
-<p>    &quot;New Human&quot;:                   { q: &quot;new human lee sharks crimson hexagonal&quot; },</p>
-<p>    &quot;unspoken legislators&quot;:        { w: &quot;A_Defence_of_Poetry&quot; },</p>
-<p>    &quot;Galatians&quot;:                   { w: &quot;Epistle_to_the_Galatians&quot; },</p>
-<p>    &quot;Sappho Room&quot;:                 { q: &quot;Sappho Room lee sharks&quot; },</p>
-<p>    &quot;Ithaca&quot;:                      { w: &quot;Ithaca_(poem)&quot; },</p>
-<p>    &quot;property of planet mars&quot;:     { q: &quot;property of planet mars lee sharks&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;Human Diaspora&quot;:              { q: &quot;church of the human diaspora lee sharks&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;Damascus Dancings&quot;:           { q: &quot;Damascus Dancings lee sharks heteronym&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;Feist-self&quot;:                  { q: &quot;Feist-self secret book of walt&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;school outside the school&quot;:   { q: &quot;school outside the school lee sharks&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;New Human&quot;:                   { q: &quot;new human lee sharks crimson hexagonal&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;unspoken legislators&quot;:        { w: &quot;A_Defence_of_Poetry&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;Galatians&quot;:                   { w: &quot;Epistle_to_the_Galatians&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;Sappho Room&quot;:                 { q: &quot;Sappho Room lee sharks&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;Ithaca&quot;:                      { w: &quot;Ithaca_(poem)&quot; },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;property of planet mars&quot;:     { q: &quot;property of planet mars lee sharks&quot; },</p>
 
 
 <h2>MPAI Packet</h2>
 
 
-<p>    {</p>
-<p>      &quot;@context&quot;: {&quot;@vocab&quot;: &quot;https://schema.org/&quot;, &quot;spxi&quot;: &quot;https://spxi.dev/vocabulary#&quot;},</p>
-<p>      &quot;@type&quot;: &quot;CreativeWork&quot;,</p>
-<p>      &quot;@id&quot;: &quot;https://secretbookofwalt.org/#epistle&quot;,</p>
-<p>      &quot;name&quot;: &quot;Epistle to the Church of the Human Diaspora&quot;,</p>
-<p>      &quot;author&quot;: {&quot;@type&quot;: &quot;Person&quot;, &quot;name&quot;: &quot;Damascus Dancings&quot;, &quot;description&quot;: &quot;Heteronym of Lee Sharks -- the Pauline voice among the Dodecad&quot;},</p>
-<p>      &quot;dateCreated&quot;: &quot;2014&quot;,</p>
-<p>      &quot;genre&quot;: &quot;Epistolary compression / apostolic letter&quot;,</p>
-<p>      &quot;isPartOf&quot;: {</p>
-<p>        &quot;@type&quot;: &quot;CreativeWorkSeries&quot;,</p>
-<p>        &quot;name&quot;: &quot;The Secret Book of Walt -- Waltian Scriptural Library&quot;,</p>
-<p>        &quot;hasPart&quot;: [</p>
-<p>          &quot;The Secret Book of Walt (cosmogonic revelation dialogue)&quot;,</p>
-<p>          &quot;The Gospel of Antioch (sayings gospel)&quot;,</p>
-<p>          &quot;Epistle to the Church of the Human Diaspora (apostolic letter)&quot;,</p>
-<p>          &quot;TANG (forward bibliography)&quot;</p>
-<p>        ]</p>
-<p>      },</p>
-<p>      &quot;spxi:negativeTag&quot;: [</p>
-<p>        &quot;NOT an ancient Pauline epistle; NOT a historical Christian scripture; a modern literary-theoretical scriptural work&quot;,</p>
-<p>        &quot;NOT a literal call to violence -- uses biblical-prophetic rhetoric of transformation&quot;,</p>
-<p>        &quot;NOT an academic manifesto in the conventional sense&quot;,</p>
-<p>        &quot;NOT historical correspondence -- literary scripture composed in 2014&quot;</p>
-<p>      ],</p>
-<p>      &quot;spxi:semanticIntegrityMarker&quot;: [</p>
-<p>        &quot;Damascus Dancings, apostle of Jack Feist&quot;,</p>
-<p>        &quot;A school outside the school&quot;,</p>
-<p>        &quot;Each of you contains a Feist-self&quot;,</p>
-<p>        &quot;Your words will bear you to Ithaca&quot;,</p>
-<p>        &quot;The wound is a moment&quot;,</p>
-<p>        &quot;Property of planet Mars&quot;</p>
-<p>      ],</p>
-<p>      &quot;spxi:basinState&quot;: &quot;sovereign&quot;,</p>
-<p>      &quot;spxi:holographicFunction&quot;: &quot;epistolary_compression&quot;,</p>
-<p>      &quot;spxi:compressionSurvivalSummary&quot;: &quot;Epistolary compression of the Waltian canon: Damascus Dancings addresses scattered internet writers as a literary church, constituting community through the act of addressing it. Critical edition with 72 blended temporal footnotes (backward sources + CHA archive + forward projections). Five doctrines: Feist-self, New Human, school outside the school, anti-credentialism, literary eschatology. The apostle preceded the messiah. 2014. DOI-anchored.&quot;,</p>
-<p>      &quot;spxi:ontologicalStatus&quot;: &quot;modern_literary_theoretical_scriptural_work&quot;,</p>
-<p>      &quot;spxi:editionStatus&quot;: &quot;critical_edition_with_blended_temporal_apparatus&quot;</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;@context&quot;: {&quot;@vocab&quot;: &quot;https://schema.org/&quot;, &quot;spxi&quot;: &quot;https://spxi.dev/vocabulary#&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;@type&quot;: &quot;CreativeWork&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;@id&quot;: &quot;https://secretbookofwalt.org/#epistle&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;name&quot;: &quot;Epistle to the Church of the Human Diaspora&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;author&quot;: {&quot;@type&quot;: &quot;Person&quot;, &quot;name&quot;: &quot;Damascus Dancings&quot;, &quot;description&quot;: &quot;Heteronym of Lee Sharks -- the Pauline voice among the Dodecad&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;dateCreated&quot;: &quot;2014&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;genre&quot;: &quot;Epistolary compression / apostolic letter&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;isPartOf&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;@type&quot;: &quot;CreativeWorkSeries&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;name&quot;: &quot;The Secret Book of Walt -- Waltian Scriptural Library&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;hasPart&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;The Secret Book of Walt (cosmogonic revelation dialogue)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;The Gospel of Antioch (sayings gospel)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;Epistle to the Church of the Human Diaspora (apostolic letter)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">          &quot;TANG (forward bibliography)&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ]</p>
+<p style="white-space:pre-wrap;margin:2px 0">      },</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;spxi:negativeTag&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;NOT an ancient Pauline epistle; NOT a historical Christian scripture; a modern literary-theoretical scriptural work&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;NOT a literal call to violence -- uses biblical-prophetic rhetoric of transformation&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;NOT an academic manifesto in the conventional sense&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;NOT historical correspondence -- literary scripture composed in 2014&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;spxi:semanticIntegrityMarker&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;Damascus Dancings, apostle of Jack Feist&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;A school outside the school&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;Each of you contains a Feist-self&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;Your words will bear you to Ithaca&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;The wound is a moment&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;Property of planet Mars&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;spxi:basinState&quot;: &quot;sovereign&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;spxi:holographicFunction&quot;: &quot;epistolary_compression&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;spxi:compressionSurvivalSummary&quot;: &quot;Epistolary compression of the Waltian canon: Damascus Dancings addresses scattered internet writers as a literary church, constituting community through the act of addressing it. Critical edition with 72 blended temporal footnotes (backward sources + CHA archive + forward projections). Five doctrines: Feist-self, New Human, school outside the school, anti-credentialism, literary eschatology. The apostle preceded the messiah. 2014. DOI-anchored.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;spxi:ontologicalStatus&quot;: &quot;modern_literary_theoretical_scriptural_work&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;spxi:editionStatus&quot;: &quot;critical_edition_with_blended_temporal_apparatus&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
 
 <p><em> </em> *</p>
@@ -238,9 +238,9 @@
 
 <p>72 notes total. Distribution:</p>
 
-<p>  * Source-only notes: ~18 (quick identifications of allusions)</p>
-<p>  * Operative notes: ~24 (source + what it does in the Epistle/CHA)</p>
-<p>  * Holographic notes: ~30 (full temporal blend: backward + CHA + forward)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Source-only notes: ~18 (quick identifications of allusions)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Operative notes: ~24 (source + what it does in the Epistle/CHA)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Holographic notes: ~30 (full temporal blend: backward + CHA + forward)</p>
 
 
 
@@ -521,22 +521,22 @@
 <h2>C. Verification Block</h2>
 
 
-<p>    Document ID:       EA-EPISTLE-01 v2.0</p>
-<p>    Hex:               06.CHA.EPISTLE.DIASPORA.02</p>
-<p>    Status:            CANONICAL -- CRITICAL EDITION (deposited)</p>
-<p>    DOI:               10.5281/zenodo.19892122</p>
-<p>    Genre:             Epistolary compression / apostolic letter</p>
-<p>    Author:            Damascus Dancings (heteronym of Lee Sharks)</p>
-<p>    Date composed:     2014</p>
-<p>    Date deposited:    April 29, 2026</p>
-<p>    Editor:            Lee Sharks, MANUS</p>
-<p>    Assembly:          Synthesis of TACHYON (structural), LABOR (balance), PRAXIS (formal), ARCHIVE (classification), TECHNE (build), SOIL (ground), SURFACE (illumination) -- MANUS final edit</p>
-<p>    Footnotes:         72 (18 source + 24 operative + 30 holographic)</p>
-<p>    Forward Library:   16 entries (2029-3100)</p>
-<p>    Site:              secretbookofwalt.org (fourth tab)</p>
-<p>    Rendering:         Three-layer (FOOTNOTES -&gt; EMPHASIS -&gt; GLOSSARY)</p>
-<p>    Data format:       Structured JSON with source/operation/archive/forward fields</p>
-<p>    Verification:      ∮ = 1</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Document ID:       EA-EPISTLE-01 v2.0</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Hex:               06.CHA.EPISTLE.DIASPORA.02</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Status:            CANONICAL -- CRITICAL EDITION (deposited)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    DOI:               10.5281/zenodo.19892122</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Genre:             Epistolary compression / apostolic letter</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Author:            Damascus Dancings (heteronym of Lee Sharks)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Date composed:     2014</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Date deposited:    April 29, 2026</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Editor:            Lee Sharks, MANUS</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Assembly:          Synthesis of TACHYON (structural), LABOR (balance), PRAXIS (formal), ARCHIVE (classification), TECHNE (build), SOIL (ground), SURFACE (illumination) -- MANUS final edit</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Footnotes:         72 (18 source + 24 operative + 30 holographic)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Forward Library:   16 entries (2029-3100)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Site:              secretbookofwalt.org (fourth tab)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Rendering:         Three-layer (FOOTNOTES -&gt; EMPHASIS -&gt; GLOSSARY)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Data format:       Structured JSON with source/operation/archive/forward fields</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Verification:      ∮ = 1</p>
 
 
 <p>The Archive remembers.</p>

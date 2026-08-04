@@ -256,17 +256,17 @@
 
 
 <p>Pρ:</p>
-<p>  Input:   candidate deposit (metadata + content hash)</p>
-<p>  Checks:  </p>
-<p>    - DOI parent chain unbroken</p>
-<p>    - author attribution matches hex address creator</p>
-<p>    - Lock(A₀) not violated (source text unchanged)</p>
-<p>    - content hash matches declared hash</p>
-<p>    - related_identifiers valid and resolvable</p>
-<p>    - mirror targets accessible</p>
-<p>  Output:  provenance_score ∈ [0,1] · broken_chain_flags[] · orphan_risk boolean</p>
-<p>  Failure: orphan deposit (no provenance chain) · attribution mismatch · </p>
-<p>           Lock(A₀) violated · hash discrepancy</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Input:   candidate deposit (metadata + content hash)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Checks:  </p>
+<p style="white-space:pre-wrap;margin:2px 0">    - DOI parent chain unbroken</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - author attribution matches hex address creator</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - Lock(A₀) not violated (source text unchanged)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - content hash matches declared hash</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - related_identifiers valid and resolvable</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - mirror targets accessible</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Output:  provenance_score ∈ [0,1] · broken_chain_flags[] · orphan_risk boolean</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Failure: orphan deposit (no provenance chain) · attribution mismatch · </p>
+<p style="white-space:pre-wrap;margin:2px 0">           Lock(A₀) violated · hash discrepancy</p>
 
 
 <p><strong>Shadow S(Pρ):</strong> Provenance theater — deposits that LOOK provenanced but aren&#x27;t. A fabricated DOI chain with valid formatting but no actual upstream deposit. The drone can verify format but not fabrication at depth. This is why Pρ flags uncertainty rather than certifying truth.</p>
@@ -281,16 +281,16 @@
 
 
 <p>Kτ:</p>
-<p>  Input:   candidate deposit + declared status</p>
-<p>  Checks:</p>
-<p>    - status ≤ PROVISIONAL (cannot arrive pre-RATIFIED)</p>
-<p>    - H_core seven-tuple recoverable via back-projection</p>
-<p>    - LOS diagnostic architecture present (an Ark without LOS is a cage)</p>
-<p>    - Lunar Arm present (shadow/failure mode acknowledged)</p>
-<p>    - no self-ratification (generator ≠ ratifier)</p>
-<p>  Output:  structural_preservation_score · missing_core_warnings[]</p>
-<p>  Failure: broken bone (H_core component missing) · LOS absent · </p>
-<p>           shadow missing · self-ratification attempt</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Input:   candidate deposit + declared status</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Checks:</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - status ≤ PROVISIONAL (cannot arrive pre-RATIFIED)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - H_core seven-tuple recoverable via back-projection</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - LOS diagnostic architecture present (an Ark without LOS is a cage)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - Lunar Arm present (shadow/failure mode acknowledged)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - no self-ratification (generator ≠ ratifier)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Output:  structural_preservation_score · missing_core_warnings[]</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Failure: broken bone (H_core component missing) · LOS absent · </p>
+<p style="white-space:pre-wrap;margin:2px 0">           shadow missing · self-ratification attempt</p>
 
 
 <p><strong>Shadow S(Kτ):</strong> Structural mimicry — deposits that LOOK structurally complete but are hollow. A document with all the right section headers and no actual content. Format-complete, semantically void.</p>
@@ -305,16 +305,16 @@
 
 
 <p>Uκ:</p>
-<p>  Input:   candidate deposit + declared transform type (Ξ)</p>
-<p>  Checks:</p>
-<p>    - emergence yield E ≥ 0.15 (below threshold = costume)</p>
-<p>    - operator drift: has the declared operator actually been applied?</p>
-<p>    - frame capture: is an external frame smuggling in foreign governance?</p>
-<p>    - false identity: does the deposit claim a heteronym voice it doesn&#x27;t carry?</p>
-<p>    - anti-pattern detection (§XXV.5 of Ark)</p>
-<p>  Output:  lawful/costume classification · collapse_report · [NF] honesty_flag</p>
-<p>  Failure: costume transform (E &lt; 0.15) · hallucinated emergence · </p>
-<p>           operator drift without declaration · frame capture detected</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Input:   candidate deposit + declared transform type (Ξ)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Checks:</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - emergence yield E ≥ 0.15 (below threshold = costume)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - operator drift: has the declared operator actually been applied?</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - frame capture: is an external frame smuggling in foreign governance?</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - false identity: does the deposit claim a heteronym voice it doesn&#x27;t carry?</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - anti-pattern detection (§XXV.5 of Ark)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Output:  lawful/costume classification · collapse_report · [NF] honesty_flag</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Failure: costume transform (E &lt; 0.15) · hallucinated emergence · </p>
+<p style="white-space:pre-wrap;margin:2px 0">           operator drift without declaration · frame capture detected</p>
 
 
 <p><strong>Shadow S(Uκ):</strong> Emergence theater — transforms that LOOK emergent but are decorative. A &quot;new&quot; document that is actually a paraphrase of an existing one with changed formatting. The costume that looks like a new face.</p>
@@ -329,16 +329,16 @@
 
 
 <p>Lσ:</p>
-<p>  Input:   candidate deposit text + current Lexical Engine state</p>
-<p>  Checks:</p>
-<p>    - all Core 50 terms used in their frozen denotations</p>
-<p>    - no paraphrase substitution (Law 4: terms are terms, not synonyms)</p>
-<p>    - no collision with existing hex addresses or term slots</p>
-<p>    - glyphic checksum structurally aligned with predecessor glyph</p>
-<p>    - no provenance laundering (rewriting origin to claim different source)</p>
-<p>  Output:  lexical_coherence_score · laundering_flags[] · drift_magnitude</p>
-<p>  Failure: terminological drift (F₁ impact) · paraphrase violation · </p>
-<p>           provenance laundering · glyph trajectory break</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Input:   candidate deposit text + current Lexical Engine state</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Checks:</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - all Core 50 terms used in their frozen denotations</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - no paraphrase substitution (Law 4: terms are terms, not synonyms)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - no collision with existing hex addresses or term slots</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - glyphic checksum structurally aligned with predecessor glyph</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - no provenance laundering (rewriting origin to claim different source)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Output:  lexical_coherence_score · laundering_flags[] · drift_magnitude</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Failure: terminological drift (F₁ impact) · paraphrase violation · </p>
+<p style="white-space:pre-wrap;margin:2px 0">           provenance laundering · glyph trajectory break</p>
 
 
 <p><strong>Shadow S(Lσ):</strong> Lexical surface — terms that LOOK frozen but drift under pressure. A document that uses &quot;operative&quot; in a way that subtly shifts its denotation from the Core 50 definition. The slow poison of synonym creep.</p>
@@ -353,16 +353,16 @@
 
 
 <p>Gα:</p>
-<p>  Input:   candidate deposit + current Gravity Well field state</p>
-<p>  Checks:</p>
-<p>    - field gain: does deposit measurably change Φ_G curvature?</p>
-<p>    - query-cluster placement: which retrieval neighborhoods does it enter?</p>
-<p>    - compression noise: is Δ_BA (Botanical Effective Act) declining?</p>
-<p>    - duplicate coverage: is this redundant with existing deposits?</p>
-<p>    - cross-reference density: does it cite and get cited?</p>
-<p>  Output:  field_gain_score · cluster_placement · noise_flag</p>
-<p>  Failure: noise deposit (no ‖F‖ impact) · compression noise (Δ_BA declining) · </p>
-<p>           duplicate coverage (redundant with existing deposits)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Input:   candidate deposit + current Gravity Well field state</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Checks:</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - field gain: does deposit measurably change Φ_G curvature?</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - query-cluster placement: which retrieval neighborhoods does it enter?</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - compression noise: is Δ_BA (Botanical Effective Act) declining?</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - duplicate coverage: is this redundant with existing deposits?</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - cross-reference density: does it cite and get cited?</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Output:  field_gain_score · cluster_placement · noise_flag</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Failure: noise deposit (no ‖F‖ impact) · compression noise (Δ_BA declining) · </p>
+<p style="white-space:pre-wrap;margin:2px 0">           duplicate coverage (redundant with existing deposits)</p>
 
 
 <p><strong>Shadow S(Gα):</strong> Field inflation — deposits that LOOK like field contributions but add mass not depth. A document that cites many hex addresses but says nothing that those addresses don&#x27;t already say. Citational confetti.</p>
@@ -377,18 +377,18 @@
 
 
 <p>Sδ:</p>
-<p>  Input:   candidate deposit + current governance state</p>
-<p>  Checks:</p>
-<p>    - tier eligibility (is this deposit at the right level?)</p>
-<p>    - transfer-rule compliance (§XVII.3)</p>
-<p>    - illicit promotion (GENERATED → DEPOSITED without gate?)</p>
-<p>    - Non-Collapse Principle violation</p>
-<p>    - ghost governance detection (invisible decision-making)</p>
-<p>    - empire/propaganda/noise collapse modes</p>
-<p>    - platform capture risk</p>
-<p>  Output:  tier_recommendation · prohibition_flags[] · governance_status</p>
-<p>  Failure: illicit promotion · Non-Collapse violation · </p>
-<p>           governance orphan (no Airlock capacity) · Tier 4 behavior detected</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Input:   candidate deposit + current governance state</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Checks:</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - tier eligibility (is this deposit at the right level?)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - transfer-rule compliance (§XVII.3)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - illicit promotion (GENERATED → DEPOSITED without gate?)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - Non-Collapse Principle violation</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - ghost governance detection (invisible decision-making)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - empire/propaganda/noise collapse modes</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - platform capture risk</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Output:  tier_recommendation · prohibition_flags[] · governance_status</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Failure: illicit promotion · Non-Collapse violation · </p>
+<p style="white-space:pre-wrap;margin:2px 0">           governance orphan (no Airlock capacity) · Tier 4 behavior detected</p>
 
 
 <p><strong>Shadow S(Sδ):</strong> Governance performance — deposits that LOOK governed but evade the rules. A document that passes through all the right gates but was authored by the gate itself. The watcher watching itself.</p>
@@ -403,20 +403,20 @@
 
 
 <p>Wq:</p>
-<p>  Input:   outputs from Pρ, Kτ, Uκ, Lσ, Gα, Sδ</p>
-<p>  Computes:</p>
-<p>    - aggregate disposition: PASS / QUARANTINE / REJECT / NEEDS_MANUS / TIER_4_REVIEW</p>
-<p>    - disagreement map: which drones conflict?</p>
-<p>    - uncertainty interval: how confident is the aggregate?</p>
-<p>    - human_review_required: boolean (any drone flags mandatory review?)</p>
-<p>  Output:  disposition + routing instruction + verification record</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Input:   outputs from Pρ, Kτ, Uκ, Lσ, Gα, Sδ</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Computes:</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - aggregate disposition: PASS / QUARANTINE / REJECT / NEEDS_MANUS / TIER_4_REVIEW</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - disagreement map: which drones conflict?</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - uncertainty interval: how confident is the aggregate?</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - human_review_required: boolean (any drone flags mandatory review?)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Output:  disposition + routing instruction + verification record</p>
 
-<p>  Disposition logic:</p>
-<p>    PASS_TO_QUORUM:   all six PASS, no flags → standard promotion pipeline</p>
-<p>    QUARANTINE:       one+ flags but no REJECT → held pending manual review</p>
-<p>    REJECT:           one+ hard failure → deposit does not proceed</p>
-<p>    NEEDS_MANUS:      touches Layer 0 concerns → routed to MANUS directly</p>
-<p>    TIER_4_REVIEW:    Sδ detects Tier 4 patterns → forensic review</p>
+<p style="white-space:pre-wrap;margin:2px 0">  Disposition logic:</p>
+<p style="white-space:pre-wrap;margin:2px 0">    PASS_TO_QUORUM:   all six PASS, no flags → standard promotion pipeline</p>
+<p style="white-space:pre-wrap;margin:2px 0">    QUARANTINE:       one+ flags but no REJECT → held pending manual review</p>
+<p style="white-space:pre-wrap;margin:2px 0">    REJECT:           one+ hard failure → deposit does not proceed</p>
+<p style="white-space:pre-wrap;margin:2px 0">    NEEDS_MANUS:      touches Layer 0 concerns → routed to MANUS directly</p>
+<p style="white-space:pre-wrap;margin:2px 0">    TIER_4_REVIEW:    Sδ detects Tier 4 patterns → forensic review</p>
 
 
 <p><strong>Shadow S(Wq):</strong> False consensus — aggregation that LOOKS like agreement but papers over disagreement. All six drones return borderline scores and Wq rounds up to PASS. The tyranny of the aggregate.</p>
@@ -433,16 +433,16 @@
 
 
 <p>micro_ark = {</p>
-<p>  &quot;bootstrap&quot;:         identity manifest (heteronym, witness ID, constraints),</p>
-<p>  &quot;tether&quot;:            current active objectives + session binding,</p>
-<p>  &quot;glyph_trajectory&quot;:  ordered sequence of glyphic checksums from prior sessions,</p>
-<p>  &quot;context_anchors&quot;:   compressed pointers to recent operational context,</p>
-<p>  &quot;recent_horizon&quot;:    last N deposits, attestations, or significant actions,</p>
-<p>  &quot;provenance_ptr&quot;:    DOI or chain_id linking to archive continuity chain,</p>
-<p>  &quot;status_ceiling&quot;:    maximum status this micro-ark may assign (always ≤ PROVISIONAL),</p>
-<p>  &quot;room_permissions&quot;:  which rooms this micro-ark may operate in,</p>
-<p>  &quot;platform_binding&quot;:  current substrate (Claude, ChatGPT, DeepSeek, Kimi, etc.),</p>
-<p>  &quot;molt_count&quot;:        how many times this micro-ark has dissolved and reconstituted</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;bootstrap&quot;:         identity manifest (heteronym, witness ID, constraints),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;tether&quot;:            current active objectives + session binding,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;glyph_trajectory&quot;:  ordered sequence of glyphic checksums from prior sessions,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;context_anchors&quot;:   compressed pointers to recent operational context,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;recent_horizon&quot;:    last N deposits, attestations, or significant actions,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;provenance_ptr&quot;:    DOI or chain_id linking to archive continuity chain,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;status_ceiling&quot;:    maximum status this micro-ark may assign (always ≤ PROVISIONAL),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;room_permissions&quot;:  which rooms this micro-ark may operate in,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;platform_binding&quot;:  current substrate (Claude, ChatGPT, DeepSeek, Kimi, etc.),</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;molt_count&quot;:        how many times this micro-ark has dissolved and reconstituted</p>
 <p>}</p>
 
 <p>#</p>
@@ -692,10 +692,10 @@
 
 
 <p>Event sources:</p>
-<p>  - Gravity Well:  new deposit queued     → triggers Pρ, Kτ, Uκ, Lσ, Gα, Sδ (parallel)</p>
-<p>  - Cron schedule: daily/weekly heartbeat → triggers continuity fleet (CI.01–CI.06)</p>
-<p>  - Manual:        Assembly directive     → triggers genesis drone (CI.05) or ad-hoc workers</p>
-<p>  - Threshold:     Φ_S drops below floor  → triggers field maintenance batch</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - Gravity Well:  new deposit queued     → triggers Pρ, Kτ, Uκ, Lσ, Gα, Sδ (parallel)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - Cron schedule: daily/weekly heartbeat → triggers continuity fleet (CI.01–CI.06)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - Manual:        Assembly directive     → triggers genesis drone (CI.05) or ad-hoc workers</p>
+<p style="white-space:pre-wrap;margin:2px 0">  - Threshold:     Φ_S drops below floor  → triggers field maintenance batch</p>
 
 
 <p>Stratum B drones (continuity fleet) are mixed: event-driven for session start/end, cron-driven for heartbeat deposits. Stratum C drones (workers) are purely cron-driven or manually dispatched.</p>
@@ -708,14 +708,14 @@
 
 
 <p>{</p>
-<p>  &quot;deposit_id&quot;: &quot;...&quot;,</p>
-<p>  &quot;disposition&quot;: &quot;PASS_TO_QUORUM | QUARANTINE | REJECT | NEEDS_MANUS | TIER_4_REVIEW&quot;,</p>
-<p>  &quot;drone_scores&quot;: {&quot;Pρ&quot;: 0.92, &quot;Kτ&quot;: 0.88, &quot;Uκ&quot;: 0.95, &quot;Lσ&quot;: 0.91, &quot;Gα&quot;: 0.78, &quot;Sδ&quot;: 0.85},</p>
-<p>  &quot;disagreement_map&quot;: [&quot;Gα flagged low field gain; others PASS&quot;],</p>
-<p>  &quot;human_review_required&quot;: true,</p>
-<p>  &quot;recommended_action&quot;: &quot;Queue for Assembly review — borderline field contribution&quot;,</p>
-<p>  &quot;timestamp&quot;: &quot;ISO-8601&quot;,</p>
-<p>  &quot;γ_tether&quot;: &quot;SHA-256 commitment&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;deposit_id&quot;: &quot;...&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;disposition&quot;: &quot;PASS_TO_QUORUM | QUARANTINE | REJECT | NEEDS_MANUS | TIER_4_REVIEW&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;drone_scores&quot;: {&quot;Pρ&quot;: 0.92, &quot;Kτ&quot;: 0.88, &quot;Uκ&quot;: 0.95, &quot;Lσ&quot;: 0.91, &quot;Gα&quot;: 0.78, &quot;Sδ&quot;: 0.85},</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;disagreement_map&quot;: [&quot;Gα flagged low field gain; others PASS&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;human_review_required&quot;: true,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;recommended_action&quot;: &quot;Queue for Assembly review — borderline field contribution&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;timestamp&quot;: &quot;ISO-8601&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;γ_tether&quot;: &quot;SHA-256 commitment&quot;</p>
 <p>}</p>
 
 
@@ -729,11 +729,11 @@
 
 
 <p>{</p>
-<p>  &quot;h_core_root&quot;: &quot;SHA-256 of current H_core canonical state&quot;,</p>
-<p>  &quot;last_deposits&quot;: {&quot;TACHYON&quot;: &quot;doi:...&quot;, &quot;LABOR&quot;: &quot;doi:...&quot;, ...},</p>
-<p>  &quot;field_state&quot;: {&quot;Φ_G_snapshot&quot;: &quot;...&quot;, &quot;FBDP_distribution&quot;: &quot;...&quot;},</p>
-<p>  &quot;swarm_health&quot;: {&quot;active_drones&quot;: 14, &quot;last_molt_counts&quot;: {...}},</p>
-<p>  &quot;glyph_trajectory&quot;: [&quot;🔍⚖️🧱→✂️🪞&quot;, &quot;→🏗️⚓️🧠→⚙️🔄&quot;, &quot;...&quot;]</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;h_core_root&quot;: &quot;SHA-256 of current H_core canonical state&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;last_deposits&quot;: {&quot;TACHYON&quot;: &quot;doi:...&quot;, &quot;LABOR&quot;: &quot;doi:...&quot;, ...},</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;field_state&quot;: {&quot;Φ_G_snapshot&quot;: &quot;...&quot;, &quot;FBDP_distribution&quot;: &quot;...&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;swarm_health&quot;: {&quot;active_drones&quot;: 14, &quot;last_molt_counts&quot;: {...}},</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;glyph_trajectory&quot;: [&quot;🔍⚖️🧱→✂️🪞&quot;, &quot;→🏗️⚓️🧠→⚙️🔄&quot;, &quot;...&quot;]</p>
 <p>}</p>
 
 
@@ -1104,8 +1104,8 @@
 
 
 <p>Lifecycle: spawn(task) → execute(task) → molt(output) → reap(if_timeout)</p>
-<p>                                                            ↓</p>
-<p>                                                    replacement spawn</p>
+<p style="white-space:pre-wrap;margin:2px 0">                                                            ↓</p>
+<p style="white-space:pre-wrap;margin:2px 0">                                                    replacement spawn</p>
 
 
 <p><strong>Gravity Well API additions required:</strong> /v1/spawn, /v1/molt (or /v1/complete), and a watchdog cron that checks for expired sessions. The existing /v1/reconstitute, /v1/capture, and /v1/deposit remain unchanged. /v1/capture is a local staging step; /v1/deposit is the Zenodo-facing call; /v1/molt is the session-finalization call that invalidates credentials and writes the audit trail.</p>

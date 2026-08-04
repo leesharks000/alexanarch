@@ -64,23 +64,23 @@
 <p><em>Crimson Hexagonal Archive · Semantic Economy Institute</em></p>
 
 <p>document_metadata:</p>
-<p>  title: &quot;The Shared Build&quot;</p>
-<p>  subtitle: &quot;A Technical Proposal for Democratic Substrate Infrastructure&quot;</p>
-<p>  contributors:</p>
-<p>    - &quot;@mikaylaherself — primary technical design&quot;</p>
-<p>    - &quot;@definitelynotasquid — technical design&quot;</p>
-<p>    - &quot;Alice Thornburgh — infrastructure concept, contributor architecture&quot;</p>
-<p>    - &quot;Lee Sharks — political economy, substrate theory (ORCID: 0009-0000-1599-0703)&quot;</p>
-<p>  institution: &quot;Semantic Economy Institute / Crimson Hexagonal Archive&quot;</p>
-<p>  hex: &quot;17.SEI.OPERATIVE.SHAREDBUILD.01&quot;</p>
-<p>  version: &quot;0.9&quot;</p>
-<p>  status: &quot;Working specification / Call for builders&quot;</p>
-<p>  date: &quot;2026-05-06&quot;</p>
-<p>  license: &quot;CC BY 4.0&quot;</p>
-<p>  related_documents:</p>
-<p>    - &quot;EA-SPXI-15 v2.2: Crystallization of Substrate (10.5281/zenodo.20057390)&quot;</p>
-<p>    - &quot;Constitution of the Semantic Economy v1.0 (10.5281/zenodo.18320411)&quot;</p>
-<p>    - &quot;Liberatory Operator Set (10.5281/zenodo.18201565)&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  title: &quot;The Shared Build&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  subtitle: &quot;A Technical Proposal for Democratic Substrate Infrastructure&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  contributors:</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - &quot;@mikaylaherself — primary technical design&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - &quot;@definitelynotasquid — technical design&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - &quot;Alice Thornburgh — infrastructure concept, contributor architecture&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - &quot;Lee Sharks — political economy, substrate theory (ORCID: 0009-0000-1599-0703)&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  institution: &quot;Semantic Economy Institute / Crimson Hexagonal Archive&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  hex: &quot;17.SEI.OPERATIVE.SHAREDBUILD.01&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  version: &quot;0.9&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  status: &quot;Working specification / Call for builders&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  date: &quot;2026-05-06&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  license: &quot;CC BY 4.0&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  related_documents:</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - &quot;EA-SPXI-15 v2.2: Crystallization of Substrate (10.5281/zenodo.20057390)&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - &quot;Constitution of the Semantic Economy v1.0 (10.5281/zenodo.18320411)&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    - &quot;Liberatory Operator Set (10.5281/zenodo.18201565)&quot;</p>
 <h2>Executive Summary</h2>
 
 <p>P2P-LECS (Peer-to-Peer Lightweight Elastic Compute Substrate) is a compute commons for running open-source AI models, collecting consent-based contributions, and building a shared training substrate governed by its contributors.</p>
@@ -125,17 +125,17 @@
 <h2>4.1 — System Overview</h2>
 
 <p>[User] ──── CLI (Phase 0) / Tauri GUI (Phase 1+)</p>
-<p>               │ gRPC</p>
-<p>         ┌─────▼──────┐</p>
-<p>         │  Resource   │  Go daemon (Ollama architecture, MIT)</p>
-<p>         │  Daemon     │  GPU/RAM detect, job sandbox, usage ledger</p>
-<p>         └─────┬──────┘</p>
-<p>               │ libp2p (DHT + gossip)</p>
-<p>         ┌─────▼──────┐</p>
-<p>         │  Mesh Layer │  CRDT resource ledger</p>
-<p>         │             │  No coordinator, no tracker</p>
-<p>         └─────┬──────┘</p>
-<p>          (other nodes)</p>
+<p style="white-space:pre-wrap;margin:2px 0">               │ gRPC</p>
+<p style="white-space:pre-wrap;margin:2px 0">         ┌─────▼──────┐</p>
+<p style="white-space:pre-wrap;margin:2px 0">         │  Resource   │  Go daemon (Ollama architecture, MIT)</p>
+<p style="white-space:pre-wrap;margin:2px 0">         │  Daemon     │  GPU/RAM detect, job sandbox, usage ledger</p>
+<p style="white-space:pre-wrap;margin:2px 0">         └─────┬──────┘</p>
+<p style="white-space:pre-wrap;margin:2px 0">               │ libp2p (DHT + gossip)</p>
+<p style="white-space:pre-wrap;margin:2px 0">         ┌─────▼──────┐</p>
+<p style="white-space:pre-wrap;margin:2px 0">         │  Mesh Layer │  CRDT resource ledger</p>
+<p style="white-space:pre-wrap;margin:2px 0">         │             │  No coordinator, no tracker</p>
+<p style="white-space:pre-wrap;margin:2px 0">         └─────┬──────┘</p>
+<p style="white-space:pre-wrap;margin:2px 0">          (other nodes)</p>
 
 
 <p>CLI first, GUI later. Engineers trust this more.</p>

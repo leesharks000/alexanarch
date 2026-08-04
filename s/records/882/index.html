@@ -281,7 +281,7 @@
 <p>For each object i with observations across query forms q ∈ {1..5}:</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>V_i = max_q V_iq</strong> — visibility is whether retrieved at all. A single successful retrieval establishes visibility.</li><li style="margin:3px 0"><strong>A_i</strong> = visibility-weighted mean of A_iq over observations with V_iq &gt; 0:</li></ul>
-<p>  &gt; A_i = Σ_q (V_iq · A_iq) / Σ_q V_iq   (where V_iq &gt; 0)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &gt; A_i = Σ_q (V_iq · A_iq) / Σ_q V_iq   (where V_iq &gt; 0)</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>F_i</strong> = same form as A_i: visibility-weighted mean over visible observations.</li><li style="margin:3px 0"><strong>C_i = mean of V_iq scores across query forms 2–5 (defining-sentence, parent-field, expected-relation, broad-framing).</strong> Query form 1 (exact name) is excluded. C_i is a separate scoring axis from V/A/F; the value scored on each non-exact query is whether the object selected at all in that query&#x27;s results.</li><li style="margin:3px 0"><strong>R_s,i</strong> is computed once per object across all surfaces that appeared in any observation.</li></ul>
 
 <p>#</p>

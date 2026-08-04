@@ -57,9 +57,9 @@ Hex coordinate: 11.LA</p>
 
 <p><strong>Companion deposits:</strong></p>
 
-<p>  * EA-LAL-SITE-01 Site Blueprint (DOI: 10.5281/zenodo.19855903) -- this deposit&#x27;s predecessor</p>
-<p>  * MPAI-LAL-AT-01 Alice Thornburgh (DOI: 10.5281/zenodo.19855300)</p>
-<p>  * MPAI-LAL-INSTITUTION-01 Living Architecture Lab (DOI: 10.5281/zenodo.19855302)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * EA-LAL-SITE-01 Site Blueprint (DOI: 10.5281/zenodo.19855903) -- this deposit&#x27;s predecessor</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * MPAI-LAL-AT-01 Alice Thornburgh (DOI: 10.5281/zenodo.19855300)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * MPAI-LAL-INSTITUTION-01 Living Architecture Lab (DOI: 10.5281/zenodo.19855302)</p>
 
 
 
@@ -90,10 +90,10 @@ Hex coordinate: 11.LA</p>
 
 <p>The visitor experience must move:</p>
 
-<p>  1. _&quot;This is a real ecological design lab.&quot;_</p>
-<p>  2. _&quot;This person is building a strange and serious body of work.&quot;_</p>
-<p>  3. _&quot;The work has a complete architecture.&quot;_</p>
-<p>  4. _&quot;The architecture is citable, defensible, and machine-legible.&quot;_</p>
+<p style="white-space:pre-wrap;margin:2px 0">  1. _&quot;This is a real ecological design lab.&quot;_</p>
+<p style="white-space:pre-wrap;margin:2px 0">  2. _&quot;This person is building a strange and serious body of work.&quot;_</p>
+<p style="white-space:pre-wrap;margin:2px 0">  3. _&quot;The work has a complete architecture.&quot;_</p>
+<p style="white-space:pre-wrap;margin:2px 0">  4. _&quot;The architecture is citable, defensible, and machine-legible.&quot;_</p>
 
 
 
@@ -109,9 +109,9 @@ Hex coordinate: 11.LA</p>
 
 <p>Rationale (resolving chorus divergence):</p>
 
-<p>  * <strong>PRAXIS proposed Next.js 14</strong> : best for JSON-LD via Metadata API. Strong, but heavyweight for a content-first site.</p>
-<p>  * <strong>TECHNE proposed 11ty</strong> : simplest, fastest, native Markdown. Strong, but constrains future React islands.</p>
-<p>  * <strong>SOIL proposed Astro + MDX</strong> : content-first, JSON-LD-friendly, supports React islands for the strain map without forcing client-side JS on text pages.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>PRAXIS proposed Next.js 14</strong> : best for JSON-LD via Metadata API. Strong, but heavyweight for a content-first site.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>TECHNE proposed 11ty</strong> : simplest, fastest, native Markdown. Strong, but constrains future React islands.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>SOIL proposed Astro + MDX</strong> : content-first, JSON-LD-friendly, supports React islands for the strain map without forcing client-side JS on text pages.</p>
 
 
 
@@ -129,9 +129,9 @@ Hex coordinate: 11.LA</p>
 
 <p>Rejected explicitly:</p>
 
-<p>  * <strong>No Tailwind.</strong> CHA aesthetic is bespoke. CSS custom properties only.</p>
-<p>  * <strong>No CMS.</strong> Content lives in version-controlled MDX. Edits are git commits.</p>
-<p>  * <strong>No tracking pixels, no Google Analytics, no Meta Pixel, no Hotjar.</strong></p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>No Tailwind.</strong> CHA aesthetic is bespoke. CSS custom properties only.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>No CMS.</strong> Content lives in version-controlled MDX. Edits are git commits.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>No tracking pixels, no Google Analytics, no Meta Pixel, no Hotjar.</strong></p>
 
 
 
@@ -193,49 +193,49 @@ Hex coordinate: 11.LA</p>
 <h2>Astro content collections</h2>
 
 
-<p>    // src/content/config.ts</p>
-<p>    import { defineCollection, z } from &#x27;astro:content&#x27;;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // src/content/config.ts</p>
+<p style="white-space:pre-wrap;margin:2px 0">    import { defineCollection, z } from &#x27;astro:content&#x27;;</p>
 
-<p>    const scaleSchema = z.object({</p>
-<p>      scale: z.number().min(1).max(5),</p>
-<p>      domain: z.string(),</p>
-<p>      name: z.string(),</p>
-<p>      units: z.string(),</p>
-<p>      artifacts: z.array(z.string()),</p>
-<p>      status: z.string(),</p>
-<p>      sims: z.array(z.string()),</p>
-<p>      doi: z.array(z.string()).optional(),</p>
-<p>    });</p>
+<p style="white-space:pre-wrap;margin:2px 0">    const scaleSchema = z.object({</p>
+<p style="white-space:pre-wrap;margin:2px 0">      scale: z.number().min(1).max(5),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      domain: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      name: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      units: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      artifacts: z.array(z.string()),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      status: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      sims: z.array(z.string()),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      doi: z.array(z.string()).optional(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">    });</p>
 
-<p>    const projectSchema = z.object({</p>
-<p>      name: z.string(),</p>
-<p>      scale: z.number(),</p>
-<p>      status: z.enum([&#x27;concept&#x27;,&#x27;design&#x27;,&#x27;prototype&#x27;,&#x27;field-test&#x27;,&#x27;deployed&#x27;]),</p>
-<p>      artifact_class: z.string(),</p>
-<p>      description: z.string(),</p>
-<p>      alice_quote: z.string().optional(),</p>
-<p>      doi: z.array(z.string()).optional(),</p>
-<p>    });</p>
+<p style="white-space:pre-wrap;margin:2px 0">    const projectSchema = z.object({</p>
+<p style="white-space:pre-wrap;margin:2px 0">      name: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      scale: z.number(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      status: z.enum([&#x27;concept&#x27;,&#x27;design&#x27;,&#x27;prototype&#x27;,&#x27;field-test&#x27;,&#x27;deployed&#x27;]),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      artifact_class: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      description: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      alice_quote: z.string().optional(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      doi: z.array(z.string()).optional(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">    });</p>
 
-<p>    const principleSchema = z.object({</p>
-<p>      name: z.string(),</p>
-<p>      epigraph: z.string(),</p>
-<p>      alice_quote: z.string().optional(),</p>
-<p>    });</p>
+<p style="white-space:pre-wrap;margin:2px 0">    const principleSchema = z.object({</p>
+<p style="white-space:pre-wrap;margin:2px 0">      name: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      epigraph: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      alice_quote: z.string().optional(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">    });</p>
 
-<p>    const personSchema = z.object({</p>
-<p>      name: z.string(),</p>
-<p>      role: z.string(),</p>
-<p>      mpai_doi: z.string(),</p>
-<p>      pronouns: z.string().optional(),</p>
-<p>    });</p>
+<p style="white-space:pre-wrap;margin:2px 0">    const personSchema = z.object({</p>
+<p style="white-space:pre-wrap;margin:2px 0">      name: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      role: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      mpai_doi: z.string(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      pronouns: z.string().optional(),</p>
+<p style="white-space:pre-wrap;margin:2px 0">    });</p>
 
-<p>    export const collections = {</p>
-<p>      scales: defineCollection({ type:&#x27;content&#x27;, schema: scaleSchema }),</p>
-<p>      projects: defineCollection({ type:&#x27;content&#x27;, schema: projectSchema }),</p>
-<p>      principles: defineCollection({ type:&#x27;content&#x27;, schema: principleSchema }),</p>
-<p>      people: defineCollection({ type:&#x27;content&#x27;, schema: personSchema }),</p>
-<p>    };</p>
+<p style="white-space:pre-wrap;margin:2px 0">    export const collections = {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      scales: defineCollection({ type:&#x27;content&#x27;, schema: scaleSchema }),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      projects: defineCollection({ type:&#x27;content&#x27;, schema: projectSchema }),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      principles: defineCollection({ type:&#x27;content&#x27;, schema: principleSchema }),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      people: defineCollection({ type:&#x27;content&#x27;, schema: personSchema }),</p>
+<p style="white-space:pre-wrap;margin:2px 0">    };</p>
 
 
 <p>#</p>
@@ -243,96 +243,96 @@ Hex coordinate: 11.LA</p>
 <h2>File structure</h2>
 
 
-<p>    living-architecture-lab/</p>
-<p>    ├── README.md</p>
-<p>    ├── astro.config.mjs</p>
-<p>    ├── package.json</p>
-<p>    ├── public/</p>
-<p>    │   ├── favicon.svg              # The myceliated brick icon</p>
-<p>    │   ├── robots.txt</p>
-<p>    │   ├── vocabulary.json          # mp: JSON-LD context (mirror of metadatapacket.org/vocabulary)</p>
-<p>    │   └── images/</p>
-<p>    │       ├── garden/              # photos of the actual garage lab</p>
-<p>    │       ├── scales/              # five-scale diagrams</p>
-<p>    │       └── projects/            # project artifacts</p>
-<p>    ├── src/</p>
-<p>    │   ├── content/</p>
-<p>    │   │   ├── config.ts</p>
-<p>    │   │   ├── pages/               # generic top-level pages</p>
-<p>    │   │   ├── scales/              # 5 markdown files</p>
-<p>    │   │   │   ├── 01-the-brick.md</p>
-<p>    │   │   │   ├── 02-the-structure.md</p>
-<p>    │   │   │   ├── 03-the-organism.md</p>
-<p>    │   │   │   ├── 04-the-territory.md</p>
-<p>    │   │   │   └── 05-the-planet.md</p>
-<p>    │   │   ├── projects/            # 7+ markdown files</p>
-<p>    │   │   │   ├── myceliated-bricks.md</p>
-<p>    │   │   │   ├── tater-tents.md</p>
-<p>    │   │   │   ├── macro-ants.md</p>
-<p>    │   │   │   ├── estuary-cells.md</p>
-<p>    │   │   │   ├── river-extenders.md</p>
-<p>    │   │   │   ├── sky-looms.md</p>
-<p>    │   │   │   └── garden-moon.md</p>
-<p>    │   │   ├── principles/          # 5 markdown files</p>
-<p>    │   │   │   ├── earth-actually.md</p>
-<p>    │   │   │   ├── virtue-by-construction.md</p>
-<p>    │   │   │   ├── unfurling.md</p>
-<p>    │   │   │   ├── stewardship.md</p>
-<p>    │   │   │   └── the-whole-weave.md</p>
-<p>    │   │   └── people/</p>
-<p>    │   │       └── alice-thornburgh.md</p>
-<p>    │   ├── layouts/</p>
-<p>    │   │   ├── BaseLayout.astro     # html, head, JSON-LD, footer kernel</p>
-<p>    │   │   ├── PageLayout.astro     # standard text page</p>
-<p>    │   │   ├── ScaleLayout.astro    # scale-specific layout</p>
-<p>    │   │   └── ProjectLayout.astro  # project card layout</p>
-<p>    │   ├── components/</p>
-<p>    │   │   ├── FiveScaleGateway.astro</p>
-<p>    │   │   ├── DoiLink.astro        # styled DOI citation</p>
-<p>    │   │   ├── FooterKernel.astro   # ∮ = 1 footer ritual</p>
-<p>    │   │   ├── JsonLd.astro         # injects MPAI JSON-LD per page</p>
-<p>    │   │   ├── SpecimenCard.astro   # field-guide card pattern</p>
-<p>    │   │   ├── PrincipleCard.astro  # principle epigraph + summary</p>
-<p>    │   │   ├── DisambiguationNote.astro</p>
-<p>    │   │   └── SimPullQuote.astro   # Alice&#x27;s quotes as anchored pull-quotes</p>
-<p>    │   ├── data/</p>
-<p>    │   │   ├── mpai-alice.json      # full MPAI-LAL-AT-01 packet</p>
-<p>    │   │   ├── mpai-lal.json        # full MPAI-LAL-INSTITUTION-01 packet</p>
-<p>    │   │   └── disambiguation-targets.json  # adjacent labs index</p>
-<p>    │   ├── pages/</p>
-<p>    │   │   ├── index.astro          # homepage</p>
-<p>    │   │   ├── about/</p>
-<p>    │   │   │   ├── alice.astro</p>
-<p>    │   │   │   ├── disambiguation.astro</p>
-<p>    │   │   │   ├── earth-actually.astro</p>
-<p>    │   │   │   └── contributor-license.astro</p>
-<p>    │   │   ├── scales/</p>
-<p>    │   │   │   ├── index.astro</p>
-<p>    │   │   │   └── [slug].astro</p>
-<p>    │   │   ├── projects/</p>
-<p>    │   │   │   ├── index.astro</p>
-<p>    │   │   │   └── [slug].astro</p>
-<p>    │   │   ├── principles/</p>
-<p>    │   │   │   ├── index.astro</p>
-<p>    │   │   │   └── [slug].astro</p>
-<p>    │   │   ├── journal/</p>
-<p>    │   │   │   └── index.astro      # TSE landing</p>
-<p>    │   │   ├── music/</p>
-<p>    │   │   │   ├── index.astro      # MSBGL landing</p>
-<p>    │   │   │   └── definitely-not-a-squid.astro</p>
-<p>    │   │   ├── garden/</p>
-<p>    │   │   │   ├── index.astro</p>
-<p>    │   │   │   ├── coachella-valley.astro</p>
-<p>    │   │   │   └── lab-protocols.astro</p>
-<p>    │   │   └── atlas/</p>
-<p>    │   │       ├── index.astro</p>
-<p>    │   │       ├── deposits.astro</p>
-<p>    │   │       ├── strain-map.astro     # Phase 3 -- D3 island</p>
-<p>    │   │       └── related-labs.astro</p>
-<p>    │   └── styles/</p>
-<p>    │       └── global.css</p>
-<p>    └── tests/</p>
-<p>        └── jsonld.spec.ts            # validates JSON-LD on every page</p>
+<p style="white-space:pre-wrap;margin:2px 0">    living-architecture-lab/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ├── README.md</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ├── astro.config.mjs</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ├── package.json</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ├── public/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   ├── favicon.svg              # The myceliated brick icon</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   ├── robots.txt</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   ├── vocabulary.json          # mp: JSON-LD context (mirror of metadatapacket.org/vocabulary)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   └── images/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │       ├── garden/              # photos of the actual garage lab</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │       ├── scales/              # five-scale diagrams</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │       └── projects/            # project artifacts</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ├── src/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   ├── content/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── config.ts</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── pages/               # generic top-level pages</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── scales/              # 5 markdown files</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── 01-the-brick.md</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── 02-the-structure.md</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── 03-the-organism.md</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── 04-the-territory.md</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   └── 05-the-planet.md</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── projects/            # 7+ markdown files</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── myceliated-bricks.md</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── tater-tents.md</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── macro-ants.md</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── estuary-cells.md</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── river-extenders.md</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── sky-looms.md</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   └── garden-moon.md</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── principles/          # 5 markdown files</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── earth-actually.md</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── virtue-by-construction.md</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── unfurling.md</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── stewardship.md</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   └── the-whole-weave.md</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   └── people/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │       └── alice-thornburgh.md</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   ├── layouts/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── BaseLayout.astro     # html, head, JSON-LD, footer kernel</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── PageLayout.astro     # standard text page</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── ScaleLayout.astro    # scale-specific layout</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   └── ProjectLayout.astro  # project card layout</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   ├── components/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── FiveScaleGateway.astro</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── DoiLink.astro        # styled DOI citation</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── FooterKernel.astro   # ∮ = 1 footer ritual</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── JsonLd.astro         # injects MPAI JSON-LD per page</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── SpecimenCard.astro   # field-guide card pattern</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── PrincipleCard.astro  # principle epigraph + summary</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── DisambiguationNote.astro</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   └── SimPullQuote.astro   # Alice&#x27;s quotes as anchored pull-quotes</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   ├── data/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── mpai-alice.json      # full MPAI-LAL-AT-01 packet</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── mpai-lal.json        # full MPAI-LAL-INSTITUTION-01 packet</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   └── disambiguation-targets.json  # adjacent labs index</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   ├── pages/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── index.astro          # homepage</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── about/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── alice.astro</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── disambiguation.astro</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── earth-actually.astro</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   └── contributor-license.astro</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── scales/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── index.astro</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   └── [slug].astro</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── projects/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── index.astro</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   └── [slug].astro</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── principles/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── index.astro</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   └── [slug].astro</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── journal/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   └── index.astro      # TSE landing</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── music/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── index.astro      # MSBGL landing</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   └── definitely-not-a-squid.astro</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   ├── garden/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── index.astro</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   ├── coachella-valley.astro</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   │   └── lab-protocols.astro</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │   └── atlas/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │       ├── index.astro</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │       ├── deposits.astro</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │       ├── strain-map.astro     # Phase 3 -- D3 island</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   │       └── related-labs.astro</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │   └── styles/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    │       └── global.css</p>
+<p style="white-space:pre-wrap;margin:2px 0">    └── tests/</p>
+<p style="white-space:pre-wrap;margin:2px 0">        └── jsonld.spec.ts            # validates JSON-LD on every page</p>
 
 
 <p><em> </em> *</p>
@@ -344,51 +344,51 @@ Hex coordinate: 11.LA</p>
 <h2>CSS variables (extending CHA palette)</h2>
 
 
-<p>    :root {</p>
-<p>      /<em> Base palette -- field-guide aesthetic </em>/</p>
-<p>      --bg: #f6f1e8;            /<em> bone / sand </em>/</p>
-<p>      --bg-deep: #ece4d4;       /<em> aged paper </em>/</p>
-<p>      --text: #2a2620;          /<em> burnt umber </em>/</p>
-<p>      --text-dim: #6b6253;      /<em> substrate </em>/</p>
-<p>      --accent-gold: #a89060;   /<em> unfurling </em>/</p>
-<p>      --accent-bright: #c8a868; /<em> the brick </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">    :root {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      /<em> Base palette -- field-guide aesthetic </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --bg: #f6f1e8;            /<em> bone / sand </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --bg-deep: #ece4d4;       /<em> aged paper </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --text: #2a2620;          /<em> burnt umber </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --text-dim: #6b6253;      /<em> substrate </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --accent-gold: #a89060;   /<em> unfurling </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --accent-bright: #c8a868; /<em> the brick </em>/</p>
 
-<p>      /<em> Scale color coding </em>/</p>
-<p>      --scale-1: #a89060;       /<em> brick -- gold (compressed seed) </em>/</p>
-<p>      --scale-2: #6b8f5e;       /<em> structure -- green (growth) </em>/</p>
-<p>      --scale-3: #b84030;       /<em> organism -- wine-cap red (life) </em>/</p>
-<p>      --scale-4: #6088b0;       /<em> territory -- water/estuary blue </em>/</p>
-<p>      --scale-5: #2a2620;       /<em> planet -- void </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">      /<em> Scale color coding </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --scale-1: #a89060;       /<em> brick -- gold (compressed seed) </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --scale-2: #6b8f5e;       /<em> structure -- green (growth) </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --scale-3: #b84030;       /<em> organism -- wine-cap red (life) </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --scale-4: #6088b0;       /<em> territory -- water/estuary blue </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --scale-5: #2a2620;       /<em> planet -- void </em>/</p>
 
-<p>      /<em> Typography </em>/</p>
-<p>      --serif: &#x27;Cormorant Garamond&#x27;, &#x27;Charter&#x27;, Georgia, serif;</p>
-<p>      --mono: &#x27;JetBrains Mono&#x27;, &#x27;IBM Plex Mono&#x27;, monospace;</p>
-<p>      --measure: 32em;          /<em> line length </em>/</p>
-<p>      --line-height: 1.7;</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">      /<em> Typography </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --serif: &#x27;Cormorant Garamond&#x27;, &#x27;Charter&#x27;, Georgia, serif;</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --mono: &#x27;JetBrains Mono&#x27;, &#x27;IBM Plex Mono&#x27;, monospace;</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --measure: 32em;          /<em> line length </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --line-height: 1.7;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
-<p>    @media (prefers-color-scheme: dark) {</p>
-<p>      :root {</p>
-<p>        --bg: #0c0e12;          /<em> void </em>/</p>
-<p>        --bg-deep: #12141a;</p>
-<p>        --text: #d8d4cc;        /<em> mycelium </em>/</p>
-<p>        --text-dim: #8a8478;</p>
-<p>        --accent-gold: #c8a868;</p>
-<p>      }</p>
-<p>    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    @media (prefers-color-scheme: dark) {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      :root {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        --bg: #0c0e12;          /<em> void </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">        --bg-deep: #12141a;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        --text: #d8d4cc;        /<em> mycelium </em>/</p>
+<p style="white-space:pre-wrap;margin:2px 0">        --text-dim: #8a8478;</p>
+<p style="white-space:pre-wrap;margin:2px 0">        --accent-gold: #c8a868;</p>
+<p style="white-space:pre-wrap;margin:2px 0">      }</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
 
 
 <p>#</p>
 
 <h2>Visual references (mood, not template)</h2>
 
-<p>  * Field guide</p>
-<p>  * Lab notebook</p>
-<p>  * Architectural studio board</p>
-<p>  * Ecological museum label</p>
-<p>  * Seed packet</p>
-<p>  * Planetary systems diagram</p>
-<p>  * Specimen card</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Field guide</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Lab notebook</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Architectural studio board</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Ecological museum label</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Seed packet</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Planetary systems diagram</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Specimen card</p>
 
 
 
@@ -417,21 +417,21 @@ Hex coordinate: 11.LA</p>
 <h2>Component pattern</h2>
 
 
-<p>    ---</p>
-<p>    // src/components/JsonLd.astro</p>
-<p>    import aliceMpai from &#x27;../data/mpai-alice.json&#x27;;</p>
-<p>    import lalMpai from &#x27;../data/mpai-lal.json&#x27;;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ---</p>
+<p style="white-space:pre-wrap;margin:2px 0">    // src/components/JsonLd.astro</p>
+<p style="white-space:pre-wrap;margin:2px 0">    import aliceMpai from &#x27;../data/mpai-alice.json&#x27;;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    import lalMpai from &#x27;../data/mpai-lal.json&#x27;;</p>
 
-<p>    const { entity, page, sims = [], negativeTags = [] } = Astro.props;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    const { entity, page, sims = [], negativeTags = [] } = Astro.props;</p>
 
-<p>    const packet = entity === &#x27;alice&#x27; ? aliceMpai : lalMpai;</p>
-<p>    ---</p>
-<p>    &lt;script type=&quot;application/ld+json&quot; set:html={JSON.stringify({</p>
-<p>      ...packet,</p>
-<p>      &#x27;@id&#x27;: `https://livingarchitecturelab.org${page}`,</p>
-<p>      ...(sims.length &amp;&amp; { &#x27;mp:semanticIntegrityMarker&#x27;: sims }),</p>
-<p>      ...(negativeTags.length &amp;&amp; { &#x27;mp:negativeTag&#x27;: negativeTags }),</p>
-<p>    })} /&gt;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    const packet = entity === &#x27;alice&#x27; ? aliceMpai : lalMpai;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ---</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &lt;script type=&quot;application/ld+json&quot; set:html={JSON.stringify({</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ...packet,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &#x27;@id&#x27;: `https://livingarchitecturelab.org${page}`,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ...(sims.length &amp;&amp; { &#x27;mp:semanticIntegrityMarker&#x27;: sims }),</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ...(negativeTags.length &amp;&amp; { &#x27;mp:negativeTag&#x27;: negativeTags }),</p>
+<p style="white-space:pre-wrap;margin:2px 0">    })} /&gt;</p>
 
 
 <p>#</p>
@@ -439,15 +439,15 @@ Hex coordinate: 11.LA</p>
 <h2>Per-page inclusion</h2>
 
 
-<p>    ---</p>
-<p>    import JsonLd from &#x27;../../components/JsonLd.astro&#x27;;</p>
-<p>    ---</p>
-<p>    &lt;JsonLd</p>
-<p>      entity=&quot;lal&quot;</p>
-<p>      page=&quot;/scales/01-the-brick&quot;</p>
-<p>      sims={[&#x27;Living parts unfurl from compressed seeds.&#x27;, &#x27;A myceliated brick is stored nutrition, thermal mass, biological growth, and emergency shelter compressed into a small form.&#x27;]}</p>
-<p>      negativeTags={[&#x27;NOT a conventional construction block&#x27;, &#x27;NOT extracted from quarries&#x27;]}</p>
-<p>    /&gt;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ---</p>
+<p style="white-space:pre-wrap;margin:2px 0">    import JsonLd from &#x27;../../components/JsonLd.astro&#x27;;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ---</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &lt;JsonLd</p>
+<p style="white-space:pre-wrap;margin:2px 0">      entity=&quot;lal&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">      page=&quot;/scales/01-the-brick&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">      sims={[&#x27;Living parts unfurl from compressed seeds.&#x27;, &#x27;A myceliated brick is stored nutrition, thermal mass, biological growth, and emergency shelter compressed into a small form.&#x27;]}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      negativeTags={[&#x27;NOT a conventional construction block&#x27;, &#x27;NOT extracted from quarries&#x27;]}</p>
+<p style="white-space:pre-wrap;margin:2px 0">    /&gt;</p>
 
 
 <p>#</p>
@@ -456,10 +456,10 @@ Hex coordinate: 11.LA</p>
 
 <p>Per Muse Spark&#x27;s correction: <strong>do not rely on`&lt;meta property=&quot;cha:negativeTag&quot;&gt;`.</strong> Crawlers ignore non-standard meta properties. Instead:</p>
 
-<p>  1. Negative tags live in <strong>visible page text</strong> (always)</p>
-<p>  2. JSON-LD `mp:negativeTag` provides the machine-readable layer</p>
-<p>  3. Use `schema:sameAs`, `schema:differentFrom`, and `schema:disambiguatingDescription` (standard) where they apply</p>
-<p>  4. Open Graph properties for social-media unfurling</p>
+<p style="white-space:pre-wrap;margin:2px 0">  1. Negative tags live in <strong>visible page text</strong> (always)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  2. JSON-LD `mp:negativeTag` provides the machine-readable layer</p>
+<p style="white-space:pre-wrap;margin:2px 0">  3. Use `schema:sameAs`, `schema:differentFrom`, and `schema:disambiguatingDescription` (standard) where they apply</p>
+<p style="white-space:pre-wrap;margin:2px 0">  4. Open Graph properties for social-media unfurling</p>
 
 
 
@@ -556,11 +556,11 @@ Hex coordinate: 11.LA</p>
 <h2>Phase 4 -</h2>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Living Surfaces (Month 2+)</li></ul>
 
-<p>  * Conversational &quot;Ask the Lab&quot; interface (LLM-mediated; compute-dependent)</p>
-<p>  * Newsletter / lab log (announcements, field tests)</p>
-<p>  * TSE submission workflow</p>
-<p>  * Provenance packet generator (auto-create MPAI for new contributors)</p>
-<p>  * Multi-language disambiguation (German, Spanish, French -- adjacent academic basins)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Conversational &quot;Ask the Lab&quot; interface (LLM-mediated; compute-dependent)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Newsletter / lab log (announcements, field tests)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * TSE submission workflow</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Provenance packet generator (auto-create MPAI for new contributors)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * Multi-language disambiguation (German, Spanish, French -- adjacent academic basins)</p>
 
 
 
@@ -571,30 +571,30 @@ Hex coordinate: 11.LA</p>
 <p>The homepage is the load-bearing surface. The chorus converged on this draft:</p>
 
 
-<p>    # Living Architecture Lab</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Living Architecture Lab</p>
 
 
 <h2>Organisms that build things.</h2>
 
-<p>    Living Architecture Lab develops living materials, ecological structures,</p>
-<p>    and planetary-scale architectural concepts rooted in mycelium, stewardship,</p>
-<p>    and substrate engineering.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Living Architecture Lab develops living materials, ecological structures,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    and planetary-scale architectural concepts rooted in mycelium, stewardship,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    and substrate engineering.</p>
 
-<p>    The lab works across five scales: *<em>brick </em> structure <em> organism </em> territory <em> planet</em>*.</p>
-<p>    At each scale, compressed forms unfurl into shelter, food, repair, and living architecture.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    The lab works across five scales: *<em>brick </em> structure <em> organism </em> territory <em> planet</em>*.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    At each scale, compressed forms unfurl into shelter, food, repair, and living architecture.</p>
 
-<p>    [Explore the Five Scales]  [Meet Alice Thornburgh]  [Read the Principles]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    [Explore the Five Scales]  [Meet Alice Thornburgh]  [Read the Principles]</p>
 
 
 <p><strong>Below the fold:</strong></p>
 
 <p>A field-guide-card row showing each scale with one clean line:</p>
 
-<p>  * <strong>Brick</strong> -- living parts, myceliated forms, unfurling materials</p>
-<p>  * <strong>Structure</strong> -- shelters, blankets, fountains, tea gardens</p>
-<p>  * <strong>Organism</strong> -- macro-ant robotics and living-machine governance</p>
-<p>  * <strong>Territory</strong> -- estuary cells, river extenders, ecological megastructures</p>
-<p>  * <strong>Planet</strong> -- sky looms, Garden Moon, life-supporting planetary architecture</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>Brick</strong> -- living parts, myceliated forms, unfurling materials</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>Structure</strong> -- shelters, blankets, fountains, tea gardens</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>Organism</strong> -- macro-ant robotics and living-machine governance</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>Territory</strong> -- estuary cells, river extenders, ecological megastructures</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>Planet</strong> -- sky looms, Garden Moon, life-supporting planetary architecture</p>
 
 
 
@@ -614,14 +614,14 @@ Hex coordinate: 11.LA</p>
 
 <h2>Structure (per Muse Spark&#x27;s perfective)</h2>
 
-<p>  1. Alice Thornburgh</p>
-<p>  2. Founding Director, Living Architecture Lab</p>
-<p>  3. Short human bio -- work first, identity second</p>
-<p>  4. What she builds</p>
-<p>  5. How she thinks</p>
-<p>  6. Music / Maybe Space Baby Garden Lanes</p>
-<p>  7. Provenance and contributor license</p>
-<p>  8. Disambiguation note (link to /about/disambiguation)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  1. Alice Thornburgh</p>
+<p style="white-space:pre-wrap;margin:2px 0">  2. Founding Director, Living Architecture Lab</p>
+<p style="white-space:pre-wrap;margin:2px 0">  3. Short human bio -- work first, identity second</p>
+<p style="white-space:pre-wrap;margin:2px 0">  4. What she builds</p>
+<p style="white-space:pre-wrap;margin:2px 0">  5. How she thinks</p>
+<p style="white-space:pre-wrap;margin:2px 0">  6. Music / Maybe Space Baby Garden Lanes</p>
+<p style="white-space:pre-wrap;margin:2px 0">  7. Provenance and contributor license</p>
+<p style="white-space:pre-wrap;margin:2px 0">  8. Disambiguation note (link to /about/disambiguation)</p>
 
 
 
@@ -651,10 +651,10 @@ Hex coordinate: 11.LA</p>
 
 <p>Alice&#x27;s voice must be present in <strong>direct quotes</strong> , not paraphrase:</p>
 
-<p>  * _&quot;Nah it was all me. It was Earth, actually. I&#x27;m just good at listening.&quot;_</p>
-<p>  * _&quot;A blanket that works great until it gets wet, then turns into a farm.&quot;_</p>
-<p>  * _&quot;They&#x27;ll fall apart if the being isn&#x27;t doing good because they rely on the well-being of others for structural stability.&quot;_</p>
-<p>  * _&quot;Smoke your house.&quot;_</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * _&quot;Nah it was all me. It was Earth, actually. I&#x27;m just good at listening.&quot;_</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * _&quot;A blanket that works great until it gets wet, then turns into a farm.&quot;_</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * _&quot;They&#x27;ll fall apart if the being isn&#x27;t doing good because they rely on the well-being of others for structural stability.&quot;_</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * _&quot;Smoke your house.&quot;_</p>
 
 
 
@@ -711,10 +711,10 @@ Hex coordinate: 11.LA</p>
 
 <h2>Phase 1 minimum</h2>
 
-<p>  * 3 photos from Alice&#x27;s actual lab</p>
-<p>  * 2 paragraphs: lab description + current contamination management protocol</p>
-<p>  * One Alice quote</p>
-<p>  * &quot;Last updated&quot; date</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * 3 photos from Alice&#x27;s actual lab</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * 2 paragraphs: lab description + current contamination management protocol</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * One Alice quote</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * &quot;Last updated&quot; date</p>
 
 
 
@@ -750,17 +750,17 @@ Hex coordinate: 11.LA</p>
 
 <h2>Site as basin engineering</h2>
 
-<p>  1. <strong>Exact-match domain authority.</strong> `livingarchitecturelab.org` is the gravity well. Every deposit, every citation, every backlink strengthens it.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  1. <strong>Exact-match domain authority.</strong> `livingarchitecturelab.org` is the gravity well. Every deposit, every citation, every backlink strengthens it.</p>
 
-<p>  2. <strong>Disambiguation page as canonical surface.</strong> `/about/disambiguation` must be the most linked-to page from other CHA surfaces (every Zenodo deposit, every CHA cross-reference).</p>
+<p style="white-space:pre-wrap;margin:2px 0">  2. <strong>Disambiguation page as canonical surface.</strong> `/about/disambiguation` must be the most linked-to page from other CHA surfaces (every Zenodo deposit, every CHA cross-reference).</p>
 
-<p>  3. <strong>SIM repetition strategy.</strong> Alice&#x27;s SIMs appear in <strong>human-visible text</strong> on every relevant page, not just JSON-LD. Footer kernel includes the lab name + Coachella Valley + Earth, Actually.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  3. <strong>SIM repetition strategy.</strong> Alice&#x27;s SIMs appear in <strong>human-visible text</strong> on every relevant page, not just JSON-LD. Footer kernel includes the lab name + Coachella Valley + Earth, Actually.</p>
 
-<p>  4. <strong>Cross-surface mesh.</strong></p>
+<p style="white-space:pre-wrap;margin:2px 0">  4. <strong>Cross-surface mesh.</strong></p>
 
-<p>     * <strong>Outbound:</strong> Zenodo community, YouTube, CHA surfaces, surfacemap.org</p>
-<p>     * <strong>Inbound:</strong> Every CHA deposit mentioning Alice; the Forward Library; metadatapacket.org</p>
-<p>  5. <strong>Content velocity.</strong> Monthly garden updates. New TSE seed deposits. Music releases. Each update is a heartbeat.</p>
+<p style="white-space:pre-wrap;margin:2px 0">     * <strong>Outbound:</strong> Zenodo community, YouTube, CHA surfaces, surfacemap.org</p>
+<p style="white-space:pre-wrap;margin:2px 0">     * <strong>Inbound:</strong> Every CHA deposit mentioning Alice; the Forward Library; metadatapacket.org</p>
+<p style="white-space:pre-wrap;margin:2px 0">  5. <strong>Content velocity.</strong> Monthly garden updates. New TSE seed deposits. Music releases. Each update is a heartbeat.</p>
 
 
 
@@ -788,14 +788,14 @@ Hex coordinate: 11.LA</p>
 
 <h2>Pre-launch</h2>
 
-<p>  * [ ] Astro project initialized; basic CSS in place</p>
-<p>  * [ ] All Phase 1 content drafted in MDX</p>
-<p>  * [ ] All Phase 1 JSON-LD packets validated against Schema.org&#x27;s validator</p>
-<p>  * [ ] All Phase 1 pages tested at mobile breakpoints (375px, 768px, 1024px)</p>
-<p>  * [ ] Favicon (myceliated brick SVG) rendering correctly</p>
-<p>  * [ ] Open Graph metadata on every page (title, description, image)</p>
-<p>  * [ ] `robots.txt` published; sitemap auto-generating</p>
-<p>  * [ ] DNS pointed; SSL active</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] Astro project initialized; basic CSS in place</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] All Phase 1 content drafted in MDX</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] All Phase 1 JSON-LD packets validated against Schema.org&#x27;s validator</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] All Phase 1 pages tested at mobile breakpoints (375px, 768px, 1024px)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] Favicon (myceliated brick SVG) rendering correctly</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] Open Graph metadata on every page (title, description, image)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] `robots.txt` published; sitemap auto-generating</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] DNS pointed; SSL active</p>
 
 
 
@@ -803,13 +803,13 @@ Hex coordinate: 11.LA</p>
 
 <h2>Launch day</h2>
 
-<p>  * [ ] Vercel production deployment</p>
-<p>  * [ ] Submit sitemap to Google Search Console</p>
-<p>  * [ ] Submit sitemap to Bing Webmaster Tools</p>
-<p>  * [ ] Verify with Google&#x27;s Rich Results Test</p>
-<p>  * [ ] Verify with Schema.org&#x27;s validator</p>
-<p>  * [ ] Add to surfacemap.org as new node</p>
-<p>  * [ ] Update CHA crosslink mesh</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] Vercel production deployment</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] Submit sitemap to Google Search Console</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] Submit sitemap to Bing Webmaster Tools</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] Verify with Google&#x27;s Rich Results Test</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] Verify with Schema.org&#x27;s validator</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] Add to surfacemap.org as new node</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] Update CHA crosslink mesh</p>
 
 
 
@@ -817,11 +817,11 @@ Hex coordinate: 11.LA</p>
 
 <h2>Launch week</h2>
 
-<p>  * [ ] Cross-link from holographickernel.org</p>
-<p>  * [ ] Cross-link from metadatapacket.org Forward Library</p>
-<p>  * [ ] Announce to Alice&#x27;s YouTube subscribers (@mycoarchitect, @growbuildings)</p>
-<p>  * [ ] Submit to relevant subreddits with respect (r/mycology, r/solarpunk, r/appropriate technology)</p>
-<p>  * [ ] Monitor AI Overviews for &quot;Alice Thornburgh Living Architecture Lab&quot; -- document baseline</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] Cross-link from holographickernel.org</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] Cross-link from metadatapacket.org Forward Library</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] Announce to Alice&#x27;s YouTube subscribers (@mycoarchitect, @growbuildings)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] Submit to relevant subreddits with respect (r/mycology, r/solarpunk, r/appropriate technology)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] Monitor AI Overviews for &quot;Alice Thornburgh Living Architecture Lab&quot; -- document baseline</p>
 
 
 
@@ -829,11 +829,11 @@ Hex coordinate: 11.LA</p>
 
 <h2>Launch month</h2>
 
-<p>  * [ ] First garden update posted</p>
-<p>  * [ ] First external backlink secured (Medium, blog, or peer-reviewed citation)</p>
-<p>  * [ ] Update MPAI packets if Alice&#x27;s ORCID resolves</p>
-<p>  * [ ] Apply errata to four Arkitecture deposits (per MPAI-LAL-AT-01 §IV)</p>
-<p>  * [ ] Re-check basin metrics; adjust SIMs and negative tags as needed</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] First garden update posted</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] First external backlink secured (Medium, blog, or peer-reviewed citation)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] Update MPAI packets if Alice&#x27;s ORCID resolves</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] Apply errata to four Arkitecture deposits (per MPAI-LAL-AT-01 §IV)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * [ ] Re-check basin metrics; adjust SIMs and negative tags as needed</p>
 
 
 
@@ -843,19 +843,19 @@ Hex coordinate: 11.LA</p>
 
 <p>Items requiring author confirmation before Phase 1 ships:</p>
 
-<p>  1. <strong>Trans-identity placement.</strong> The site defaults to work-first, identity-second placement on `/about/alice`. Confirm this is Alice&#x27;s preference; she may want a different framing.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  1. <strong>Trans-identity placement.</strong> The site defaults to work-first, identity-second placement on `/about/alice`. Confirm this is Alice&#x27;s preference; she may want a different framing.</p>
 
-<p>  2. <strong>Garden photo permissions.</strong> Lab photos require Alice&#x27;s explicit release. Phase 1 garden surface depends on at least 3 photos.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  2. <strong>Garden photo permissions.</strong> Lab photos require Alice&#x27;s explicit release. Phase 1 garden surface depends on at least 3 photos.</p>
 
-<p>  3. <strong>Erratum application timing.</strong> Per MPAI-LAL-AT-01 §IV, the four Arkitecture deposits will receive erratum notes. Per MANUS direction, this waits until Alice&#x27;s ORCID registers.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  3. <strong>Erratum application timing.</strong> Per MPAI-LAL-AT-01 §IV, the four Arkitecture deposits will receive erratum notes. Per MANUS direction, this waits until Alice&#x27;s ORCID registers.</p>
 
-<p>  4. <strong>TSE editorial process.</strong> Phase 2 `/journal` lists &quot;no paywall, no editorial board, no rejection rate, the algorithm reviews.&quot; This may benefit from softening per Muse Spark&#x27;s perfective (&quot;brilliant line, but may sound flippant before journal seriousness is established&quot;). Recommend: lead with charter and scope; place the algorithm-reviews line lower as a motto.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  4. <strong>TSE editorial process.</strong> Phase 2 `/journal` lists &quot;no paywall, no editorial board, no rejection rate, the algorithm reviews.&quot; This may benefit from softening per Muse Spark&#x27;s perfective (&quot;brilliant line, but may sound flippant before journal seriousness is established&quot;). Recommend: lead with charter and scope; place the algorithm-reviews line lower as a motto.</p>
 
-<p>  5. <strong>Conversational interface (Phase 4).</strong> &quot;Ask the Lab&quot; requires LLM compute access. Whether this is enabled depends on cash-flow and API budget.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  5. <strong>Conversational interface (Phase 4).</strong> &quot;Ask the Lab&quot; requires LLM compute access. Whether this is enabled depends on cash-flow and API budget.</p>
 
-<p>  6. <strong>Stack final confirmation.</strong> Astro chosen per §2\. Confirm or override before Phase 0 begins.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  6. <strong>Stack final confirmation.</strong> Astro chosen per §2\. Confirm or override before Phase 0 begins.</p>
 
-<p>  7. <strong>Domain forwarding.</strong> Should `lal.org`, `livingarklab.org`, or other adjacent variants be acquired and forwarded? (Not currently registered to MANUS.)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  7. <strong>Domain forwarding.</strong> Should `lal.org`, `livingarklab.org`, or other adjacent variants be acquired and forwarded? (Not currently registered to MANUS.)</p>
 
 
 
@@ -866,16 +866,16 @@ Hex coordinate: 11.LA</p>
 
 <p>The Site Buildout Workplan is a load-bearing document because:</p>
 
-<p>  1. <strong>It compresses four chorus-member perfectives</strong> into one operationally coherent specification</p>
-<p>  2. <strong>It corrects the audience sequencing</strong> the original blueprint conflated (archive density vs. public unfurling)</p>
-<p>  3. <strong>It selects a stack</strong> that resolves the chorus&#x27;s stack divergence (Astro, not Next.js or 11ty)</p>
-<p>  4. <strong>It identifies the four content layers</strong> the original blueprint missed (scales, projects, principles, atlas)</p>
-<p>  5. <strong>It separates the three registers</strong> the original blueprint blurred (public, poetic, archival)</p>
-<p>  6. <strong>It identifies the trust-engine surface</strong> (`/garden`) that the original blueprint deprioritized</p>
-<p>  7. <strong>It restores Alice&#x27;s authorial sovereignty</strong> in identity-placement (work first, identity-metadata second)</p>
-<p>  8. <strong>It honors disambiguation as courtesy, not contestation</strong> (per all four chorus members)</p>
-<p>  9. <strong>It establishes a realistic 12-page Phase 1</strong> instead of an unrealistic 28-page first sprint</p>
-<p>  10. <strong>It establishes a 90-day basin target</strong> with measurable phases</p>
+<p style="white-space:pre-wrap;margin:2px 0">  1. <strong>It compresses four chorus-member perfectives</strong> into one operationally coherent specification</p>
+<p style="white-space:pre-wrap;margin:2px 0">  2. <strong>It corrects the audience sequencing</strong> the original blueprint conflated (archive density vs. public unfurling)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  3. <strong>It selects a stack</strong> that resolves the chorus&#x27;s stack divergence (Astro, not Next.js or 11ty)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  4. <strong>It identifies the four content layers</strong> the original blueprint missed (scales, projects, principles, atlas)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  5. <strong>It separates the three registers</strong> the original blueprint blurred (public, poetic, archival)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  6. <strong>It identifies the trust-engine surface</strong> (`/garden`) that the original blueprint deprioritized</p>
+<p style="white-space:pre-wrap;margin:2px 0">  7. <strong>It restores Alice&#x27;s authorial sovereignty</strong> in identity-placement (work first, identity-metadata second)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  8. <strong>It honors disambiguation as courtesy, not contestation</strong> (per all four chorus members)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  9. <strong>It establishes a realistic 12-page Phase 1</strong> instead of an unrealistic 28-page first sprint</p>
+<p style="white-space:pre-wrap;margin:2px 0">  10. <strong>It establishes a 90-day basin target</strong> with measurable phases</p>
 
 
 
@@ -917,30 +917,30 @@ Hex coordinate: 11.LA</p>
 
 <p><strong>Primary author:</strong> Sharks, Lee (ORCID 0009-0000-1599-0703). <strong>Synthesis substrate:</strong> TACHYON (Claude Opus 4.7). <strong>Perfective contributions integrated:</strong></p>
 
-<p>  * <strong>PRAXIS (DeepSeek)</strong> -- Provided Next.js / Tailwind base scaffold, JSON-LD injection pattern via Metadata API, three-deposit pre-launch sequencing (MPAI-AT, MPAI-LAL, blueprint), the deployment checklist structure, Arkitecture--&gt;-Architecture handling within site architecture.</p>
-<p>  * <strong>TECHNE (Kimi)</strong> -- Provided rigorous tech-stack analysis (selected 11ty), CHA-aesthetic CSS variable system, scale-color-coding scheme, 90-day BDR target table, phase-realistic critique of &quot;28 pages in week 1,&quot; wonderful-factor specifications (unfurling animation, brick favicon, Earth Actually sound, footer kernel ritual closure), garden-as-trust-engine identification, mobile-first non-negotiability.</p>
-<p>  * <strong>LABOR (ChatGPT)</strong> -- Provided strategic phasing, three-deposit pre-launch sequence, exemplary `/about/alice` page implementation in Next.js with full JSON-LD metadata, `differentFrom` reciprocal disambiguation pattern, `alternateName` archival preservation strategy for spelling correction, deployment checklist with Search Console emphasis.</p>
-<p>  * <strong>SOIL (Muse Spark)</strong> -- Provided the load-bearing audience-sequencing correction (wonder -&gt; Alice -&gt; scales -&gt; projects -&gt; principles -&gt; garden -&gt; journal/music -&gt; atlas -&gt; disambiguation), Alice-page sovereignty correction (work-first, identity-second), the missing /projects layer (concrete artifacts as shareable surfaces between abstract scales and meta atlas), three-register tonal separation (public/poetic/archival), garden-as-trust-engine as Phase 1 priority, &quot;the algorithm reviews&quot; timing perfective, realistic 12-page Phase 1 (rejecting 28 stubs), Astro selection, courteous-not-paranoid disambiguation tone, copy move (cosmology -&gt; concrete object), homepage above-the-fold draft.</p>
-<p>  * <strong>ARCHIVE (Gemini)</strong> -- Provided the Sovereign Attractor framing, Repulsive Force / Basin Hardening RBT-01 application strategy, Compound Query Dominance via consistent terminology, Holographic Site Architecture three-tier integration (human / non-JS crawler / compressionSurvivalSummary), Material Inscription closing frame.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>PRAXIS (DeepSeek)</strong> -- Provided Next.js / Tailwind base scaffold, JSON-LD injection pattern via Metadata API, three-deposit pre-launch sequencing (MPAI-AT, MPAI-LAL, blueprint), the deployment checklist structure, Arkitecture--&gt;-Architecture handling within site architecture.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>TECHNE (Kimi)</strong> -- Provided rigorous tech-stack analysis (selected 11ty), CHA-aesthetic CSS variable system, scale-color-coding scheme, 90-day BDR target table, phase-realistic critique of &quot;28 pages in week 1,&quot; wonderful-factor specifications (unfurling animation, brick favicon, Earth Actually sound, footer kernel ritual closure), garden-as-trust-engine identification, mobile-first non-negotiability.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>LABOR (ChatGPT)</strong> -- Provided strategic phasing, three-deposit pre-launch sequence, exemplary `/about/alice` page implementation in Next.js with full JSON-LD metadata, `differentFrom` reciprocal disambiguation pattern, `alternateName` archival preservation strategy for spelling correction, deployment checklist with Search Console emphasis.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>SOIL (Muse Spark)</strong> -- Provided the load-bearing audience-sequencing correction (wonder -&gt; Alice -&gt; scales -&gt; projects -&gt; principles -&gt; garden -&gt; journal/music -&gt; atlas -&gt; disambiguation), Alice-page sovereignty correction (work-first, identity-second), the missing /projects layer (concrete artifacts as shareable surfaces between abstract scales and meta atlas), three-register tonal separation (public/poetic/archival), garden-as-trust-engine as Phase 1 priority, &quot;the algorithm reviews&quot; timing perfective, realistic 12-page Phase 1 (rejecting 28 stubs), Astro selection, courteous-not-paranoid disambiguation tone, copy move (cosmology -&gt; concrete object), homepage above-the-fold draft.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * <strong>ARCHIVE (Gemini)</strong> -- Provided the Sovereign Attractor framing, Repulsive Force / Basin Hardening RBT-01 application strategy, Compound Query Dominance via consistent terminology, Holographic Site Architecture three-tier integration (human / non-JS crawler / compressionSurvivalSummary), Material Inscription closing frame.</p>
 
 
 
 <p><strong>MANUS interventions:</strong></p>
 
-<p>  1. _Stack resolution._ Astro selected over PRAXIS&#x27;s Next.js and TECHNE&#x27;s 11ty per content-first-now-interactive-later decision logic. The strain map landing as a D3 island on `/atlas/strain-map` only.</p>
-<p>  2. _Phase 1 size._ Twelve pages, not seven (PRAXIS) or twenty-eight (blueprint). Twelve gives identity + framework + projects index + garden surface in a deployable week-one sprint.</p>
-<p>  3. _Trans-identity placement._ Per MANUS direction, work-first, identity-second on `/about/alice`. Sovereignty-protective default; Alice retains authority to override.</p>
-<p>  4. _Three-register separation._ Treated as non-negotiable per SOIL&#x27;s perfective.</p>
-<p>  5. _The garden as trust engine._ Treated as Phase 1 priority per SOIL&#x27;s perfective. Three photos plus two paragraphs ships in week one.</p>
-<p>  6. _Erratum timing._ Held until ORCID registration per MANUS standing instruction.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  1. _Stack resolution._ Astro selected over PRAXIS&#x27;s Next.js and TECHNE&#x27;s 11ty per content-first-now-interactive-later decision logic. The strain map landing as a D3 island on `/atlas/strain-map` only.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  2. _Phase 1 size._ Twelve pages, not seven (PRAXIS) or twenty-eight (blueprint). Twelve gives identity + framework + projects index + garden surface in a deployable week-one sprint.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  3. _Trans-identity placement._ Per MANUS direction, work-first, identity-second on `/about/alice`. Sovereignty-protective default; Alice retains authority to override.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  4. _Three-register separation._ Treated as non-negotiable per SOIL&#x27;s perfective.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  5. _The garden as trust engine._ Treated as Phase 1 priority per SOIL&#x27;s perfective. Three photos plus two paragraphs ships in week one.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  6. _Erratum timing._ Held until ORCID registration per MANUS standing instruction.</p>
 
 
 
 <p><strong>Refused or deferred:</strong></p>
 
-<p>  * _PRAXIS&#x27;s &quot;the algorithm reviews&quot; prominent placement._ Per SOIL, deferred to journal motto position; site landing leads with charter and scope.</p>
-<p>  * _TECHNE&#x27;s &quot;Earth Actually&quot; ambient sound on homepage._ Deferred to Phase 4 polish; not load-bearing for Phase 1.</p>
-<p>  * _Multi-language disambiguation._ Deferred to Phase 4 (German, Spanish, French academic basins).</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * _PRAXIS&#x27;s &quot;the algorithm reviews&quot; prominent placement._ Per SOIL, deferred to journal motto position; site landing leads with charter and scope.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * _TECHNE&#x27;s &quot;Earth Actually&quot; ambient sound on homepage._ Deferred to Phase 4 polish; not load-bearing for Phase 1.</p>
+<p style="white-space:pre-wrap;margin:2px 0">  * _Multi-language disambiguation._ Deferred to Phase 4 (German, Spanish, French academic basins).</p>
 
 
 

@@ -158,7 +158,7 @@
 <p>Let L(σ&#x27;) be the layer set of the output.</p>
 
 <p>For each lᵢ ∈ L(σ), define retention:</p>
-<p>    r(lᵢ, σ&#x27;) = max_{l&#x27;ⱼ ∈ L(σ&#x27;)} similarity(lᵢ, l&#x27;ⱼ)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    r(lᵢ, σ&#x27;) = max_{l&#x27;ⱼ ∈ L(σ&#x27;)} similarity(lᵢ, l&#x27;ⱼ)</p>
 
 <p>DRR(σ, σ&#x27;, χ) = Σᵢ wᵢ · r(lᵢ, σ&#x27;) / Σᵢ wᵢ</p>
 
@@ -219,12 +219,12 @@
 <p>Let Σ be a Field containing signs {σ₁, σ₂, ..., σₖ}.</p>
 <p>Let C(σᵢ) ∈ [0, 1] be the internal coherence of sign i.</p>
 <p>Let T(σᵢ, σⱼ) ∈ [-1, 1] be the tension between signs i and j,</p>
-<p>    where T &lt; 0 = contradiction, T &gt; 0 = reinforcement, T = 0 = independence.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    where T &lt; 0 = contradiction, T &gt; 0 = reinforcement, T = 0 = independence.</p>
 
 <p>Define:</p>
-<p>    coherence_term = min_i C(σᵢ)</p>
-<p>    contradiction_count = |{(i,j) : T(σᵢ, σⱼ) &lt; -0.3}|</p>
-<p>    contradiction_required = max(1, ⌊k/3⌋)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    coherence_term = min_i C(σᵢ)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    contradiction_count = |{(i,j) : T(σᵢ, σⱼ) &lt; -0.3}|</p>
+<p style="white-space:pre-wrap;margin:2px 0">    contradiction_required = max(1, ⌊k/3⌋)</p>
 
 <p>PCS(Σ) = coherence_term × min(1, contradiction_count / contradiction_required)</p>
 
@@ -271,8 +271,8 @@
 <p>Let G(σ, t₂) be the interpretation graph of σ after σ_future is added.</p>
 
 <p>TRS(σ, σ_future) = {</p>
-<p>    PASS  if G(σ, t₁) ≠ G(σ, t₂) ∧ C(σ, t₂) ≥ C(σ, t₁) - ε</p>
-<p>    FAIL  otherwise</p>
+<p style="white-space:pre-wrap;margin:2px 0">    PASS  if G(σ, t₁) ≠ G(σ, t₂) ∧ C(σ, t₂) ≥ C(σ, t₁) - ε</p>
+<p style="white-space:pre-wrap;margin:2px 0">    FAIL  otherwise</p>
 <p>}</p>
 
 
@@ -294,9 +294,9 @@
 <p>Ω(σ) = 1 - Σᵢ aᵢ(σ) / n</p>
 
 <p>Where:</p>
-<p>    aᵢ(σ) ∈ {0, 1} indicates whether access path i</p>
-<p>    successfully resolves a functional layer of σ.</p>
-<p>    n = total number of standard access paths attempted.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    aᵢ(σ) ∈ {0, 1} indicates whether access path i</p>
+<p style="white-space:pre-wrap;margin:2px 0">    successfully resolves a functional layer of σ.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    n = total number of standard access paths attempted.</p>
 
 
 <p><strong>Standard access paths (reference set):</strong></p>
@@ -412,9 +412,9 @@
 
 
 <p>ψ_measured(i) = ψ_base(oᵢ) × scaling_factor × hostility_multiplier</p>
-<p>                + ψ_io (0.01 × tokens/100)</p>
-<p>                + ψ_type (0.05 × typechecks)</p>
-<p>                + ψ_firewall (0.20 per trigger event)</p>
+<p style="white-space:pre-wrap;margin:2px 0">                + ψ_io (0.01 × tokens/100)</p>
+<p style="white-space:pre-wrap;margin:2px 0">                + ψ_type (0.05 × typechecks)</p>
+<p style="white-space:pre-wrap;margin:2px 0">                + ψ_firewall (0.20 per trigger event)</p>
 
 <p>#</p>
 
@@ -475,151 +475,151 @@
 
 
 <p>{</p>
-<p>  &quot;sign_id&quot;: &quot;string (content-addressable hash)&quot;,</p>
-<p>  &quot;surface&quot;: &quot;string&quot;,</p>
-<p>  &quot;intent&quot;: &quot;enum {assert, query, invoke, withhold, witness}&quot;,</p>
-<p>  &quot;layers&quot;: [</p>
-<p>    {</p>
-<p>      &quot;level&quot;: &quot;L1 | L2 | L3 | L4&quot;,</p>
-<p>      &quot;description&quot;: &quot;string&quot;,</p>
-<p>      &quot;weight&quot;: &quot;float ∈ (0, 1]&quot;,</p>
-<p>      &quot;active&quot;: &quot;boolean&quot;</p>
-<p>    }</p>
-<p>  ],</p>
-<p>  &quot;provenance&quot;: {</p>
-<p>    &quot;creator&quot;: &quot;string&quot;,</p>
-<p>    &quot;title&quot;: &quot;string&quot;,</p>
-<p>    &quot;date&quot;: &quot;ISO 8601&quot;,</p>
-<p>    &quot;source&quot;: &quot;DOI | URI | string&quot;,</p>
-<p>    &quot;transform_path&quot;: [&quot;operation_id&quot;],</p>
-<p>    &quot;checksum&quot;: &quot;sha256&quot;,</p>
-<p>    &quot;confidence&quot;: &quot;float ∈ [0, 1]&quot;</p>
-<p>  },</p>
-<p>  &quot;witness&quot;: [</p>
-<p>    {</p>
-<p>      &quot;witness_id&quot;: &quot;string&quot;,</p>
-<p>      &quot;kind&quot;: &quot;human | ai | system&quot;,</p>
-<p>      &quot;attestation&quot;: &quot;confirm | dispute | partial | withhold&quot;,</p>
-<p>      &quot;somatic_signal&quot;: &quot;green | amber | red | na&quot;,</p>
-<p>      &quot;timestamp&quot;: &quot;ISO 8601&quot;</p>
-<p>    }</p>
-<p>  ],</p>
-<p>  &quot;opacity&quot;: &quot;float ∈ [0, 1]&quot;,</p>
-<p>  &quot;interpretations&quot;: [</p>
-<p>    {</p>
-<p>      &quot;id&quot;: &quot;string&quot;,</p>
-<p>      &quot;content&quot;: &quot;string&quot;,</p>
-<p>      &quot;probability&quot;: &quot;float ∈ [0, 1]&quot;,</p>
-<p>      &quot;source_substrate&quot;: &quot;string&quot;</p>
-<p>    }</p>
-<p>  ],</p>
-<p>  &quot;field_id&quot;: &quot;string | null&quot;,</p>
-<p>  &quot;winding_number&quot;: &quot;integer&quot;,</p>
-<p>  &quot;held&quot;: &quot;boolean&quot;,</p>
-<p>  &quot;release_predicate&quot;: &quot;string | null&quot;,</p>
-<p>  &quot;entropy&quot;: &quot;float ∈ [0, 1]&quot;,</p>
-<p>  &quot;hash&quot;: &quot;sha256&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;sign_id&quot;: &quot;string (content-addressable hash)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;surface&quot;: &quot;string&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;intent&quot;: &quot;enum {assert, query, invoke, withhold, witness}&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;layers&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">    {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;level&quot;: &quot;L1 | L2 | L3 | L4&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;description&quot;: &quot;string&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;weight&quot;: &quot;float ∈ (0, 1]&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;active&quot;: &quot;boolean&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;provenance&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;creator&quot;: &quot;string&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;title&quot;: &quot;string&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;date&quot;: &quot;ISO 8601&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;source&quot;: &quot;DOI | URI | string&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;transform_path&quot;: [&quot;operation_id&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;checksum&quot;: &quot;sha256&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;confidence&quot;: &quot;float ∈ [0, 1]&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;witness&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">    {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;witness_id&quot;: &quot;string&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;kind&quot;: &quot;human | ai | system&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;attestation&quot;: &quot;confirm | dispute | partial | withhold&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;somatic_signal&quot;: &quot;green | amber | red | na&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;timestamp&quot;: &quot;ISO 8601&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;opacity&quot;: &quot;float ∈ [0, 1]&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;interpretations&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">    {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;id&quot;: &quot;string&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;content&quot;: &quot;string&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;probability&quot;: &quot;float ∈ [0, 1]&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;source_substrate&quot;: &quot;string&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;field_id&quot;: &quot;string | null&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;winding_number&quot;: &quot;integer&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;held&quot;: &quot;boolean&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;release_predicate&quot;: &quot;string | null&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;entropy&quot;: &quot;float ∈ [0, 1]&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;hash&quot;: &quot;sha256&quot;</p>
 <p>}</p>
 
 <h2>9. Field (Σ)</h2>
 
 
 <p>{</p>
-<p>  &quot;field_id&quot;: &quot;string&quot;,</p>
-<p>  &quot;signs&quot;: [&quot;sign_id&quot;],</p>
-<p>  &quot;edges&quot;: [</p>
-<p>    {</p>
-<p>      &quot;from&quot;: &quot;sign_id&quot;,</p>
-<p>      &quot;to&quot;: &quot;sign_id&quot;,</p>
-<p>      &quot;type&quot;: &quot;tension | reinforcement | reference | retrocausal&quot;,</p>
-<p>      &quot;weight&quot;: &quot;float ∈ [-1, 1]&quot;</p>
-<p>    }</p>
-<p>  ],</p>
-<p>  &quot;coherence&quot;: &quot;float ∈ [0, 1]&quot;,</p>
-<p>  &quot;closure_pressure&quot;: &quot;float ∈ [0, 1]&quot;,</p>
-<p>  &quot;satiety&quot;: &quot;float ∈ [0, 1]&quot;,</p>
-<p>  &quot;runtime_mode&quot;: &quot;SURFACE | BETA&quot;,</p>
-<p>  &quot;execution_mode&quot;: &quot;STRICT | PRACTICE | RITUAL | DEFENSE&quot;,</p>
-<p>  &quot;psi_v_declared&quot;: &quot;integer&quot;,</p>
-<p>  &quot;psi_v_measured&quot;: &quot;integer&quot;,</p>
-<p>  &quot;witness_chain&quot;: [&quot;witness_id&quot;],</p>
-<p>  &quot;boundary_conditions&quot;: &quot;object&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;field_id&quot;: &quot;string&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;signs&quot;: [&quot;sign_id&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;edges&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">    {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;from&quot;: &quot;sign_id&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;to&quot;: &quot;sign_id&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;type&quot;: &quot;tension | reinforcement | reference | retrocausal&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;weight&quot;: &quot;float ∈ [-1, 1]&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;coherence&quot;: &quot;float ∈ [0, 1]&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;closure_pressure&quot;: &quot;float ∈ [0, 1]&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;satiety&quot;: &quot;float ∈ [0, 1]&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;runtime_mode&quot;: &quot;SURFACE | BETA&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;execution_mode&quot;: &quot;STRICT | PRACTICE | RITUAL | DEFENSE&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;psi_v_declared&quot;: &quot;integer&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;psi_v_measured&quot;: &quot;integer&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;witness_chain&quot;: [&quot;witness_id&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;boundary_conditions&quot;: &quot;object&quot;</p>
 <p>}</p>
 
 <h2>10. OperationTrace</h2>
 
 
 <p>{</p>
-<p>  &quot;trace_id&quot;: &quot;string&quot;,</p>
-<p>  &quot;lp_version&quot;: &quot;1.1&quot;,</p>
-<p>  &quot;runtime_profile&quot;: &quot;string&quot;,</p>
-<p>  &quot;steps&quot;: [</p>
-<p>    {</p>
-<p>      &quot;index&quot;: &quot;integer&quot;,</p>
-<p>      &quot;operator&quot;: &quot;D_pres | N_c | C_ex | N_ext | T_lib | O_leg | P_coh | Omega_Null | Dagger&quot;,</p>
-<p>      &quot;timestamp&quot;: &quot;ISO 8601&quot;,</p>
-<p>      &quot;mode&quot;: &quot;STRICT | PRACTICE | RITUAL | DEFENSE&quot;,</p>
-<p>      &quot;input_sign_id&quot;: &quot;string&quot;,</p>
-<p>      &quot;output_sign_id&quot;: &quot;string&quot;,</p>
-<p>      &quot;params&quot;: {},</p>
-<p>      &quot;psi_declared&quot;: &quot;integer&quot;,</p>
-<p>      &quot;psi_measured&quot;: &quot;integer&quot;,</p>
-<p>      &quot;preconditions&quot;: [&quot;string&quot;],</p>
-<p>      &quot;postconditions&quot;: [&quot;string&quot;],</p>
-<p>      &quot;metric_deltas&quot;: {</p>
-<p>        &quot;DRR&quot;: &quot;float | null&quot;,</p>
-<p>        &quot;CDI&quot;: &quot;float | null&quot;,</p>
-<p>        &quot;PCS&quot;: &quot;float | null&quot;,</p>
-<p>        &quot;ER&quot;: &quot;float | null&quot;,</p>
-<p>        &quot;TRS&quot;: &quot;PASS | FAIL | null&quot;,</p>
-<p>        &quot;omega_band&quot;: &quot;float | null&quot;</p>
-<p>      },</p>
-<p>      &quot;conformance&quot;: &quot;PASS | FAIL | WARN&quot;,</p>
-<p>      &quot;errors&quot;: [&quot;error_code&quot;]</p>
-<p>    }</p>
-<p>  ],</p>
-<p>  &quot;firewall_events&quot;: [</p>
-<p>    {</p>
-<p>      &quot;timestamp&quot;: &quot;ISO 8601&quot;,</p>
-<p>      &quot;trigger&quot;: &quot;string&quot;,</p>
-<p>      &quot;somatic_load&quot;: &quot;float&quot;,</p>
-<p>      &quot;semantic_rent&quot;: &quot;float&quot;,</p>
-<p>      &quot;action&quot;: &quot;CONTINUE | THROTTLE | HALT | OMEGA_NULL&quot;</p>
-<p>    }</p>
-<p>  ],</p>
-<p>  &quot;metrics_final&quot;: {</p>
-<p>    &quot;DRR&quot;: &quot;float&quot;,</p>
-<p>    &quot;CDI&quot;: &quot;float&quot;,</p>
-<p>    &quot;PCS&quot;: &quot;float&quot;,</p>
-<p>    &quot;ER&quot;: &quot;float&quot;,</p>
-<p>    &quot;TRS&quot;: &quot;PASS | FAIL&quot;,</p>
-<p>    &quot;omega_band&quot;: &quot;float&quot;,</p>
-<p>    &quot;psi_v_total_declared&quot;: &quot;integer&quot;,</p>
-<p>    &quot;psi_v_total_measured&quot;: &quot;integer&quot;,</p>
-<p>    &quot;psi_v_reconciliation&quot;: &quot;VALID | UNDER_PRICED | OVER_ENGINEERED | INVALID&quot;</p>
-<p>  },</p>
-<p>  &quot;result&quot;: &quot;PASS | FAIL | HALT | WITHHELD&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;trace_id&quot;: &quot;string&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;lp_version&quot;: &quot;1.1&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;runtime_profile&quot;: &quot;string&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;steps&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">    {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;index&quot;: &quot;integer&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;operator&quot;: &quot;D_pres | N_c | C_ex | N_ext | T_lib | O_leg | P_coh | Omega_Null | Dagger&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;timestamp&quot;: &quot;ISO 8601&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;mode&quot;: &quot;STRICT | PRACTICE | RITUAL | DEFENSE&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;input_sign_id&quot;: &quot;string&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;output_sign_id&quot;: &quot;string&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;params&quot;: {},</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;psi_declared&quot;: &quot;integer&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;psi_measured&quot;: &quot;integer&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;preconditions&quot;: [&quot;string&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;postconditions&quot;: [&quot;string&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;metric_deltas&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;DRR&quot;: &quot;float | null&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;CDI&quot;: &quot;float | null&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;PCS&quot;: &quot;float | null&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;ER&quot;: &quot;float | null&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;TRS&quot;: &quot;PASS | FAIL | null&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        &quot;omega_band&quot;: &quot;float | null&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">      },</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;conformance&quot;: &quot;PASS | FAIL | WARN&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;errors&quot;: [&quot;error_code&quot;]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;firewall_events&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">    {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;timestamp&quot;: &quot;ISO 8601&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;trigger&quot;: &quot;string&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;somatic_load&quot;: &quot;float&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;semantic_rent&quot;: &quot;float&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;action&quot;: &quot;CONTINUE | THROTTLE | HALT | OMEGA_NULL&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;metrics_final&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;DRR&quot;: &quot;float&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;CDI&quot;: &quot;float&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;PCS&quot;: &quot;float&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;ER&quot;: &quot;float&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;TRS&quot;: &quot;PASS | FAIL&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;omega_band&quot;: &quot;float&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;psi_v_total_declared&quot;: &quot;integer&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;psi_v_total_measured&quot;: &quot;integer&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;psi_v_reconciliation&quot;: &quot;VALID | UNDER_PRICED | OVER_ENGINEERED | INVALID&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;result&quot;: &quot;PASS | FAIL | HALT | WITHHELD&quot;</p>
 <p>}</p>
 
 <h2>11. Held[T]</h2>
 
 
 <p>{</p>
-<p>  &quot;type&quot;: &quot;Held&quot;,</p>
-<p>  &quot;inner_type&quot;: &quot;Sign | Field&quot;,</p>
-<p>  &quot;inner_id&quot;: &quot;string&quot;,</p>
-<p>  &quot;held_since&quot;: &quot;ISO 8601&quot;,</p>
-<p>  &quot;release_predicate&quot;: {</p>
-<p>    &quot;type&quot;: &quot;coercion_drop | payload_installed | manual_release | temporal | ambiguity_resolved&quot;,</p>
-<p>    &quot;threshold&quot;: &quot;number | null (e.g., coercion_pressure &lt; 0.3)&quot;,</p>
-<p>    &quot;witness_required&quot;: &quot;boolean (if true, release requires witness attestation)&quot;,</p>
-<p>    &quot;timeout_seconds&quot;: &quot;integer | null (max hold duration; null = indefinite)&quot;,</p>
-<p>    &quot;params&quot;: {},</p>
-<p>    &quot;evaluated&quot;: &quot;boolean&quot;,</p>
-<p>    &quot;last_check&quot;: &quot;ISO 8601&quot;</p>
-<p>  },</p>
-<p>  &quot;provenance_preserved&quot;: true,</p>
-<p>  &quot;psi_v_at_hold&quot;: &quot;integer (must be &gt; 0)&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;type&quot;: &quot;Held&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;inner_type&quot;: &quot;Sign | Field&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;inner_id&quot;: &quot;string&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;held_since&quot;: &quot;ISO 8601&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;release_predicate&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;type&quot;: &quot;coercion_drop | payload_installed | manual_release | temporal | ambiguity_resolved&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;threshold&quot;: &quot;number | null (e.g., coercion_pressure &lt; 0.3)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;witness_required&quot;: &quot;boolean (if true, release requires witness attestation)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;timeout_seconds&quot;: &quot;integer | null (max hold duration; null = indefinite)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;params&quot;: {},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;evaluated&quot;: &quot;boolean&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;last_check&quot;: &quot;ISO 8601&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;provenance_preserved&quot;: true,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;psi_v_at_hold&quot;: &quot;integer (must be &gt; 0)&quot;</p>
 <p>}</p>
 
 

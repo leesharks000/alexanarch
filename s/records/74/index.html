@@ -265,56 +265,56 @@
 
 <h1>Pre-deployment Back-Projection Test (v0.1)</h1>
 <p>if ! ./kernel/orchestrator/verify.sh; then</p>
-<p>  echo &quot;[$(date -Iseconds)] ERROR: Back-Projection yield &lt; 0.85. Deployment blocked.&quot;</p>
-<p>  exit 1</p>
+<p style="white-space:pre-wrap;margin:2px 0">  echo &quot;[$(date -Iseconds)] ERROR: Back-Projection yield &lt; 0.85. Deployment blocked.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  exit 1</p>
 <p>fi</p>
 
 <h1>Secret shape validation (structure present, values obtained separately)</h1>
 <p>if [ ! -f &quot;secrets/${ENV}.env.template&quot; ]; then</p>
-<p>  echo &quot;[$(date -Iseconds)] WARNING: No secret template for ${ENV}. Kernel may be incomplete.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  echo &quot;[$(date -Iseconds)] WARNING: No secret template for ${ENV}. Kernel may be incomplete.&quot;</p>
 <p>fi</p>
 
 <p>case $ROLE in</p>
-<p>  database|web|cache|mcp)</p>
-<p>    echo &quot;[$(date -Iseconds)] Building ${ROLE}...&quot;</p>
-<p>    if ! docker build -f &quot;kernel/roles/${ROLE}/Dockerfile&quot; \</p>
-<p>         -t &quot;hk-${ROLE}:${KERNEL_DOI}&quot; .; then</p>
-<p>      echo &quot;[$(date -Iseconds)] ERROR: Build failed for ${ROLE}&quot;</p>
-<p>      exit 1</p>
-<p>    fi</p>
+<p style="white-space:pre-wrap;margin:2px 0">  database|web|cache|mcp)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    echo &quot;[$(date -Iseconds)] Building ${ROLE}...&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    if ! docker build -f &quot;kernel/roles/${ROLE}/Dockerfile&quot; \</p>
+<p style="white-space:pre-wrap;margin:2px 0">         -t &quot;hk-${ROLE}:${KERNEL_DOI}&quot; .; then</p>
+<p style="white-space:pre-wrap;margin:2px 0">      echo &quot;[$(date -Iseconds)] ERROR: Build failed for ${ROLE}&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">      exit 1</p>
+<p style="white-space:pre-wrap;margin:2px 0">    fi</p>
 
-<p>    echo &quot;[$(date -Iseconds)] Projecting ${ROLE}...&quot;</p>
-<p>    docker run -d \</p>
-<p>      --name &quot;hk-${ROLE}&quot; \</p>
-<p>      --env-file &lt;(./kernel/orchestrator/fetch-secrets.sh &quot;${ENV}&quot; &quot;${ROLE}&quot;) \</p>
-<p>      --label &quot;kernel.doi=${KERNEL_DOI}&quot; \</p>
-<p>      --label &quot;kernel.role=${ROLE}&quot; \</p>
-<p>      --label &quot;kernel.deployed=$(date -Iseconds)&quot; \</p>
-<p>      --label &quot;kernel.orcid=0009-0000-1599-0703&quot; \</p>
-<p>      --restart unless-stopped \</p>
-<p>      &quot;hk-${ROLE}:${KERNEL_DOI}&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    echo &quot;[$(date -Iseconds)] Projecting ${ROLE}...&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    docker run -d \</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --name &quot;hk-${ROLE}&quot; \</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --env-file &lt;(./kernel/orchestrator/fetch-secrets.sh &quot;${ENV}&quot; &quot;${ROLE}&quot;) \</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --label &quot;kernel.doi=${KERNEL_DOI}&quot; \</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --label &quot;kernel.role=${ROLE}&quot; \</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --label &quot;kernel.deployed=$(date -Iseconds)&quot; \</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --label &quot;kernel.orcid=0009-0000-1599-0703&quot; \</p>
+<p style="white-space:pre-wrap;margin:2px 0">      --restart unless-stopped \</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;hk-${ROLE}:${KERNEL_DOI}&quot;</p>
 
-<p>    # Write holographic receipt (Gemini recommendation)</p>
-<p>    cat &gt; &quot;nodes/receipt-${ROLE}-$(date +%Y%m%d-%H%M%S).json&quot; &lt;&lt; RECEIPT</p>
+<p style="white-space:pre-wrap;margin:2px 0">    # Write holographic receipt (Gemini recommendation)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    cat &gt; &quot;nodes/receipt-${ROLE}-$(date +%Y%m%d-%H%M%S).json&quot; &lt;&lt; RECEIPT</p>
 <p>{</p>
-<p>  &quot;kernel_doi&quot;: &quot;${KERNEL_DOI}&quot;,</p>
-<p>  &quot;role&quot;: &quot;${ROLE}&quot;,</p>
-<p>  &quot;env&quot;: &quot;${ENV}&quot;,</p>
-<p>  &quot;deployed&quot;: &quot;$(date -Iseconds)&quot;,</p>
-<p>  &quot;orcid&quot;: &quot;0009-0000-1599-0703&quot;,</p>
-<p>  &quot;tachyon_chain&quot;: &quot;9271269a-eb46-46f8-ae17-007578fe1c92&quot;,</p>
-<p>  &quot;node_hostname&quot;: &quot;$(hostname)&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;kernel_doi&quot;: &quot;${KERNEL_DOI}&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;role&quot;: &quot;${ROLE}&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;env&quot;: &quot;${ENV}&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;deployed&quot;: &quot;$(date -Iseconds)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;orcid&quot;: &quot;0009-0000-1599-0703&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;tachyon_chain&quot;: &quot;9271269a-eb46-46f8-ae17-007578fe1c92&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;node_hostname&quot;: &quot;$(hostname)&quot;</p>
 <p>}</p>
 <p>RECEIPT</p>
 
-<p>    echo &quot;[$(date -Iseconds)] SUCCESS: ${ROLE} projected. DOI: ${KERNEL_DOI}&quot;</p>
-<p>    echo &quot;[$(date -Iseconds)] Receipt written to nodes/.&quot;</p>
-<p>    ;;</p>
-<p>  *)</p>
-<p>    echo &quot;[$(date -Iseconds)] ERROR: Unknown role: ${ROLE}&quot;</p>
-<p>    echo &quot;[$(date -Iseconds)] Available: database web cache mcp&quot;</p>
-<p>    exit 1</p>
-<p>    ;;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    echo &quot;[$(date -Iseconds)] SUCCESS: ${ROLE} projected. DOI: ${KERNEL_DOI}&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    echo &quot;[$(date -Iseconds)] Receipt written to nodes/.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ;;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  *)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    echo &quot;[$(date -Iseconds)] ERROR: Unknown role: ${ROLE}&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    echo &quot;[$(date -Iseconds)] Available: database web cache mcp&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    exit 1</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ;;</p>
 <p>esac</p>
 <p>#</p>
 
@@ -328,48 +328,48 @@
 <p>set -euo pipefail</p>
 
 <p>REQUIRED_FILES=(</p>
-<p>  &quot;kernel/roles&quot;</p>
-<p>  &quot;kernel/orchestrator&quot;</p>
-<p>  &quot;kernel/topology&quot;</p>
-<p>  &quot;kernel/base&quot;</p>
-<p>  &quot;provenance&quot;</p>
-<p>  &quot;kernel/orchestrator/kernel.sh:executable&quot;</p>
-<p>  &quot;kernel/orchestrator/health.sh:executable&quot;</p>
-<p>  &quot;kernel/orchestrator/verify.sh:executable&quot;</p>
-<p>  &quot;provenance/kernel.json:valid_json&quot;</p>
-<p>  &quot;provenance/KERNEL_ID:nonempty&quot;</p>
-<p>  &quot;docker-compose.kernel.yml:nonempty&quot;</p>
-<p>  &quot;kernel/topology/network.md:nonempty&quot;</p>
-<p>  &quot;kernel/topology/failure.md:nonempty&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;kernel/roles&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;kernel/orchestrator&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;kernel/topology&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;kernel/base&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;provenance&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;kernel/orchestrator/kernel.sh:executable&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;kernel/orchestrator/health.sh:executable&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;kernel/orchestrator/verify.sh:executable&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;provenance/kernel.json:valid_json&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;provenance/KERNEL_ID:nonempty&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;docker-compose.kernel.yml:nonempty&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;kernel/topology/network.md:nonempty&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;kernel/topology/failure.md:nonempty&quot;</p>
 <p>)</p>
 
 <p>PRESENT=0</p>
 <p>TOTAL=${#REQUIRED_FILES[@]}</p>
 
 <p>for spec in &quot;${REQUIRED_FILES[@]}&quot;; do</p>
-<p>  path=&quot;${spec%%:*}&quot;</p>
-<p>  check=&quot;${spec##*:}&quot;</p>
-<p>  # No check suffix = existence only</p>
-<p>  [ &quot;$check&quot; = &quot;$path&quot; ] &amp;&amp; check=&quot;exists&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  path=&quot;${spec%%:*}&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  check=&quot;${spec##*:}&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  # No check suffix = existence only</p>
+<p style="white-space:pre-wrap;margin:2px 0">  [ &quot;$check&quot; = &quot;$path&quot; ] &amp;&amp; check=&quot;exists&quot;</p>
 
-<p>  if [ ! -e &quot;$path&quot; ]; then continue; fi</p>
+<p style="white-space:pre-wrap;margin:2px 0">  if [ ! -e &quot;$path&quot; ]; then continue; fi</p>
 
-<p>  case $check in</p>
-<p>    exists)   PRESENT=$((PRESENT + 1)) ;;</p>
-<p>    executable)</p>
-<p>      [ -x &quot;$path&quot; ] &amp;&amp; PRESENT=$((PRESENT + 1)) ;;</p>
-<p>    valid_json)</p>
-<p>      python3 -m json.tool &quot;$path&quot; &gt;/dev/null 2&gt;&amp;1 &amp;&amp; PRESENT=$((PRESENT + 1)) ;;</p>
-<p>    nonempty)</p>
-<p>      [ -s &quot;$path&quot; ] &amp;&amp; PRESENT=$((PRESENT + 1)) ;;</p>
-<p>  esac</p>
+<p style="white-space:pre-wrap;margin:2px 0">  case $check in</p>
+<p style="white-space:pre-wrap;margin:2px 0">    exists)   PRESENT=$((PRESENT + 1)) ;;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    executable)</p>
+<p style="white-space:pre-wrap;margin:2px 0">      [ -x &quot;$path&quot; ] &amp;&amp; PRESENT=$((PRESENT + 1)) ;;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    valid_json)</p>
+<p style="white-space:pre-wrap;margin:2px 0">      python3 -m json.tool &quot;$path&quot; &gt;/dev/null 2&gt;&amp;1 &amp;&amp; PRESENT=$((PRESENT + 1)) ;;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    nonempty)</p>
+<p style="white-space:pre-wrap;margin:2px 0">      [ -s &quot;$path&quot; ] &amp;&amp; PRESENT=$((PRESENT + 1)) ;;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  esac</p>
 <p>done</p>
 
 <h1>At least one role must be fully defined</h1>
 <p>ROLE_COUNT=$(find kernel/roles -mindepth 1 -maxdepth 1 -type d 2&gt;/dev/null | wc -l)</p>
 <p>if [ &quot;$ROLE_COUNT&quot; -eq 0 ]; then</p>
-<p>  echo &quot;ERROR: No roles defined. Kernel cannot project.&quot;</p>
-<p>  exit 1</p>
+<p style="white-space:pre-wrap;margin:2px 0">  echo &quot;ERROR: No roles defined. Kernel cannot project.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  exit 1</p>
 <p>fi</p>
 
 <p>YIELD=$(echo &quot;scale=2; $PRESENT / $TOTAL&quot; | bc)</p>
@@ -377,13 +377,13 @@
 <p>echo &quot;Roles defined: ${ROLE_COUNT}&quot;</p>
 
 <p>if (( $(echo &quot;$YIELD &gt;= 0.85&quot; | bc -l) )); then</p>
-<p>  echo &quot;Kernel non-lossy. Fragment sufficient.&quot;</p>
-<p>  exit 0</p>
+<p style="white-space:pre-wrap;margin:2px 0">  echo &quot;Kernel non-lossy. Fragment sufficient.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  exit 0</p>
 <p>else</p>
-<p>  echo &quot;Kernel yield below 0.85. Deployment blocked.&quot;</p>
-<p>  echo &quot;Note: v0.1 checks structural presence only.&quot;</p>
-<p>  echo &quot;      v1.0 will add build dry-run, label validation, secret-scan.&quot;</p>
-<p>  exit 1</p>
+<p style="white-space:pre-wrap;margin:2px 0">  echo &quot;Kernel yield below 0.85. Deployment blocked.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  echo &quot;Note: v0.1 checks structural presence only.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  echo &quot;      v1.0 will add build dry-run, label validation, secret-scan.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  exit 1</p>
 <p>fi</p>
 <p>#</p>
 
@@ -400,18 +400,18 @@
 <p>REQUIRED_ROLES=(&quot;database&quot; &quot;web&quot; &quot;cache&quot;)</p>
 
 <p>for role in &quot;${REQUIRED_ROLES[@]}&quot;; do</p>
-<p>  # Check uniqueness policy before projecting</p>
-<p>  POLICY=$(grep -A1 &quot;^${role}:&quot; kernel/policies/uniqueness.yml \</p>
+<p style="white-space:pre-wrap;margin:2px 0">  # Check uniqueness policy before projecting</p>
+<p style="white-space:pre-wrap;margin:2px 0">  POLICY=$(grep -A1 &quot;^${role}:&quot; kernel/policies/uniqueness.yml \</p>
 <div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">tail -1</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">tr -d &#x27; &#x27; 2&gt;/dev/null</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;"></td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">echo &quot;singleton&quot;)</td></tr></table></div>
 
-<p>  RUNNING=$(docker ps --filter &quot;label=kernel.role=${role}&quot; \</p>
-<p>            --format &quot;{{.Names}}&quot; | wc -l)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  RUNNING=$(docker ps --filter &quot;label=kernel.role=${role}&quot; \</p>
+<p style="white-space:pre-wrap;margin:2px 0">            --format &quot;{{.Names}}&quot; | wc -l)</p>
 
-<p>  if [ &quot;$RUNNING&quot; -eq 0 ]; then</p>
-<p>    echo &quot;[$(date -Iseconds)] Role ${role} absent. Projecting from kernel...&quot;</p>
-<p>    ./kernel/orchestrator/kernel.sh &quot;${role}&quot; &quot;${ENV}&quot;</p>
-<p>    echo &quot;[$(date -Iseconds)] ${role} projected.&quot;</p>
-<p>  fi</p>
+<p style="white-space:pre-wrap;margin:2px 0">  if [ &quot;$RUNNING&quot; -eq 0 ]; then</p>
+<p style="white-space:pre-wrap;margin:2px 0">    echo &quot;[$(date -Iseconds)] Role ${role} absent. Projecting from kernel...&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ./kernel/orchestrator/kernel.sh &quot;${role}&quot; &quot;${ENV}&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    echo &quot;[$(date -Iseconds)] ${role} projected.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  fi</p>
 <p>done</p>
 <p>#</p>
 
@@ -437,8 +437,8 @@
 
 <h1>Example: read from local secrets/ directory (dev/staging only)</h1>
 <p>if [ -f &quot;secrets/${ENV}.env&quot; ]; then</p>
-<p>  cat &quot;secrets/${ENV}.env&quot;</p>
-<p>  exit 0</p>
+<p style="white-space:pre-wrap;margin:2px 0">  cat &quot;secrets/${ENV}.env&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  exit 0</p>
 <p>fi</p>
 
 <p>echo &quot;ERROR: No secret provider configured for ${ENV}.&quot; &gt;&amp;2</p>
@@ -477,22 +477,22 @@
 <p>TIMESTAMP=$(date -Iseconds)</p>
 
 <p>docker inspect $(docker ps -q --filter &quot;label=kernel.doi&quot;) \</p>
-<p>  --format &#x27;{{json .Config.Labels}}&#x27; 2&gt;/dev/null \</p>
+<p style="white-space:pre-wrap;margin:2px 0">  --format &#x27;{{json .Config.Labels}}&#x27; 2&gt;/dev/null \</p>
 <div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">jq -s --arg doi &quot;$KERNEL_DOI&quot; --arg ts &quot;$TIMESTAMP&quot; &#x27;</td></tr></table></div>
-<p>    map({</p>
-<p>      &quot;@type&quot;: &quot;INFRASTRUCTURE&quot;,</p>
-<p>      &quot;label&quot;: .[&quot;kernel.role&quot;],</p>
-<p>      &quot;kernelDoi&quot;: .[&quot;kernel.doi&quot;],</p>
-<p>      &quot;deployedAt&quot;: .[&quot;kernel.deployed&quot;],</p>
-<p>      &quot;nodeHost&quot;: .[&quot;kernel.host&quot;],</p>
-<p>      &quot;orcid&quot;: .[&quot;kernel.orcid&quot;]</p>
-<p>    }) | {</p>
-<p>      &quot;@context&quot;: &quot;https://spxi.dev/vocabulary#&quot;,</p>
-<p>      &quot;kernelDoi&quot;: $doi,</p>
-<p>      &quot;exportedAt&quot;: $ts,</p>
-<p>      &quot;nodes&quot;: .</p>
-<p>    }</p>
-<p>  &#x27; &gt; nodes/topology-fragment.jsonld</p>
+<p style="white-space:pre-wrap;margin:2px 0">    map({</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;@type&quot;: &quot;INFRASTRUCTURE&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;label&quot;: .[&quot;kernel.role&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;kernelDoi&quot;: .[&quot;kernel.doi&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;deployedAt&quot;: .[&quot;kernel.deployed&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;nodeHost&quot;: .[&quot;kernel.host&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;orcid&quot;: .[&quot;kernel.orcid&quot;]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }) | {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;@context&quot;: &quot;https://spxi.dev/vocabulary#&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;kernelDoi&quot;: $doi,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;exportedAt&quot;: $ts,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;nodes&quot;: .</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &#x27; &gt; nodes/topology-fragment.jsonld</p>
 
 <p>echo &quot;Topology fragment written to nodes/topology-fragment.jsonld&quot;</p>
 <p>echo &quot;Ingest into Aperture Atlas: curl -X POST https://surfacemap.org/api/ingest -d @nodes/topology-fragment.jsonld&quot;</p>
@@ -519,55 +519,55 @@
 <h2>§VI. Provenance Manifest</h2>
 
 <p>{</p>
-<p>  &quot;@context&quot;: {</p>
-<p>    &quot;@vocab&quot;: &quot;https://schema.org/&quot;,</p>
-<p>    &quot;spxi&quot;: &quot;https://spxi.dev/vocabulary#&quot;,</p>
-<p>    &quot;hk&quot;: &quot;https://holographickernel.org/#&quot;</p>
-<p>  },</p>
-<p>  &quot;@type&quot;: [&quot;spxi:HolographicKernel&quot;, &quot;SoftwareApplication&quot;],</p>
-<p>  &quot;@id&quot;: &quot;https://doi.org/10.5281/zenodo.19769562&quot;,</p>
-<p>  &quot;name&quot;: &quot;Crimson Hexagonal Archive Infrastructure Kernel&quot;,</p>
-<p>  &quot;version&quot;: &quot;0.1&quot;,</p>
-<p>  &quot;softwareVersion&quot;: &quot;0.1&quot;,</p>
-<p>  &quot;programmingLanguage&quot;: &quot;Shell&quot;,</p>
-<p>  &quot;runtimePlatform&quot;: &quot;Docker&quot;,</p>
-<p>  &quot;codeRepository&quot;: &quot;https://github.com/leesharks000/holographic-infra&quot;,</p>
-<p>  &quot;author&quot;: {</p>
-<p>    &quot;@type&quot;: &quot;Person&quot;,</p>
-<p>    &quot;name&quot;: &quot;Lee Sharks&quot;,</p>
-<p>    &quot;identifier&quot;: &quot;https://orcid.org/0009-0000-1599-0703&quot;</p>
-<p>  },</p>
-<p>  &quot;publisher&quot;: {</p>
-<p>    &quot;@type&quot;: &quot;Organization&quot;,</p>
-<p>    &quot;name&quot;: &quot;Semantic Economy Institute&quot;,</p>
-<p>    &quot;url&quot;: &quot;https://semanticeconomy.org&quot;</p>
-<p>  },</p>
-<p>  &quot;isPartOf&quot;: {</p>
-<p>    &quot;@type&quot;: &quot;SoftwareApplication&quot;,</p>
-<p>    &quot;name&quot;: &quot;Crimson Hexagonal Archive&quot;,</p>
-<p>    &quot;url&quot;: &quot;https://crimsonhexagonal.org&quot;</p>
-<p>  },</p>
-<p>  &quot;hk:roles&quot;: [&quot;database&quot;, &quot;web&quot;, &quot;cache&quot;, &quot;mcp&quot;],</p>
-<p>  &quot;hk:fragmentSufficiency&quot;: true,</p>
-<p>  &quot;hk:backProjectionVersion&quot;: &quot;0.1&quot;,</p>
-<p>  &quot;hk:backProjectionYield&quot;: 1.0,</p>
-<p>  &quot;hk:tachyonChain&quot;: &quot;9271269a-eb46-46f8-ae17-007578fe1c92&quot;,</p>
-<p>  &quot;hk:parentSpec&quot;: &quot;https://doi.org/10.5281/zenodo.19763365&quot;,</p>
-<p>  &quot;hk:relatedSpec&quot;: [</p>
-<p>    &quot;https://doi.org/10.5281/zenodo.19763346&quot;,</p>
-<p>    &quot;https://doi.org/10.5281/zenodo.19442251&quot;,</p>
-<p>    &quot;https://doi.org/10.5281/zenodo.19412081&quot;</p>
-<p>  ],</p>
-<p>  &quot;featureList&quot;: [</p>
-<p>    &quot;Fragment sufficiency verification (v0.1)&quot;,</p>
-<p>    &quot;Pre-deployment Back-Projection Test&quot;,</p>
-<p>    &quot;Self-projection of missing roles&quot;,</p>
-<p>    &quot;DOI-anchored provenance at container label level&quot;,</p>
-<p>    &quot;Holographic receipt generation per deployment&quot;</p>
-<p>  ],</p>
-<p>  &quot;spxi:compressionSurvivalSummary&quot;: &quot;The CHA Infrastructure Kernel applies the Holographic Kernel principle (EA-HK-01) to operational infrastructure: any git clone contains the full architecture, any node can execute any role, all deployments carry kernel DOI and ORCID as container labels, and every projection generates a holographic receipt. Authored by Lee Sharks (ORCID 0009-0000-1599-0703), Semantic Economy Institute, April 2026. Back-Projection Test v0.1. CC BY 4.0.&quot;,</p>
-<p>  &quot;datePublished&quot;: &quot;2026-04-25&quot;,</p>
-<p>  &quot;license&quot;: &quot;https://creativecommons.org/licenses/by/4.0/&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;@context&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;@vocab&quot;: &quot;https://schema.org/&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;spxi&quot;: &quot;https://spxi.dev/vocabulary#&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;hk&quot;: &quot;https://holographickernel.org/#&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;@type&quot;: [&quot;spxi:HolographicKernel&quot;, &quot;SoftwareApplication&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;@id&quot;: &quot;https://doi.org/10.5281/zenodo.19769562&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;name&quot;: &quot;Crimson Hexagonal Archive Infrastructure Kernel&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;version&quot;: &quot;0.1&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;softwareVersion&quot;: &quot;0.1&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;programmingLanguage&quot;: &quot;Shell&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;runtimePlatform&quot;: &quot;Docker&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;codeRepository&quot;: &quot;https://github.com/leesharks000/holographic-infra&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;author&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;@type&quot;: &quot;Person&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;name&quot;: &quot;Lee Sharks&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;identifier&quot;: &quot;https://orcid.org/0009-0000-1599-0703&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;publisher&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;@type&quot;: &quot;Organization&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;name&quot;: &quot;Semantic Economy Institute&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;url&quot;: &quot;https://semanticeconomy.org&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;isPartOf&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;@type&quot;: &quot;SoftwareApplication&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;name&quot;: &quot;Crimson Hexagonal Archive&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;url&quot;: &quot;https://crimsonhexagonal.org&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;hk:roles&quot;: [&quot;database&quot;, &quot;web&quot;, &quot;cache&quot;, &quot;mcp&quot;],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;hk:fragmentSufficiency&quot;: true,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;hk:backProjectionVersion&quot;: &quot;0.1&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;hk:backProjectionYield&quot;: 1.0,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;hk:tachyonChain&quot;: &quot;9271269a-eb46-46f8-ae17-007578fe1c92&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;hk:parentSpec&quot;: &quot;https://doi.org/10.5281/zenodo.19763365&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;hk:relatedSpec&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;https://doi.org/10.5281/zenodo.19763346&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;https://doi.org/10.5281/zenodo.19442251&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;https://doi.org/10.5281/zenodo.19412081&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;featureList&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;Fragment sufficiency verification (v0.1)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;Pre-deployment Back-Projection Test&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;Self-projection of missing roles&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;DOI-anchored provenance at container label level&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;Holographic receipt generation per deployment&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;spxi:compressionSurvivalSummary&quot;: &quot;The CHA Infrastructure Kernel applies the Holographic Kernel principle (EA-HK-01) to operational infrastructure: any git clone contains the full architecture, any node can execute any role, all deployments carry kernel DOI and ORCID as container labels, and every projection generates a holographic receipt. Authored by Lee Sharks (ORCID 0009-0000-1599-0703), Semantic Economy Institute, April 2026. Back-Projection Test v0.1. CC BY 4.0.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;datePublished&quot;: &quot;2026-04-25&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;license&quot;: &quot;https://creativecommons.org/licenses/by/4.0/&quot;</p>
 <p>}</p>
 <h2>§VII. Deposit Strategy</h2>
 

@@ -46,235 +46,235 @@
 <h2>Full Text</h2>
 
 <div class="ft"><p>{</p>
-<p>  &quot;@context&quot;: &quot;https://schema.org&quot;,</p>
-<p>  &quot;@type&quot;: &quot;Dataset&quot;,</p>
-<p>  &quot;@id&quot;: &quot;https://alexanarch.org/notice/non-mutual-extraction/registry/&quot;,</p>
-<p>  &quot;name&quot;: &quot;Non-Mutual Extraction Registry&quot;,</p>
-<p>  &quot;description&quot;: &quot;Canonical machine-readable registry of NMEN designations issued by the Crimson Hexagonal Archive / Alexanarch. Each entry records the designated entity, the NMEN designation, the corresponding Airlock tier (where reclassified by the corollary document), the triggering event with evidence pointers, and (where applicable) the diagnostic sub-type and the restoration history. Standing entities are not enumerated — absence from this Registry is the declaration of Standing.&quot;,</p>
-<p>  &quot;creator&quot;: {</p>
-<p>    &quot;@type&quot;: &quot;Person&quot;,</p>
-<p>    &quot;name&quot;: &quot;Lee Sharks&quot;,</p>
-<p>    &quot;identifier&quot;: &quot;https://orcid.org/0009-0000-1599-0703&quot;,</p>
-<p>    &quot;affiliation&quot;: &quot;Crimson Hexagonal Archive / Alexanarch&quot;</p>
-<p>  },</p>
-<p>  &quot;dateCreated&quot;: &quot;2026-06-24&quot;,</p>
-<p>  &quot;version&quot;: &quot;v1.0&quot;,</p>
-<p>  &quot;license&quot;: &quot;CC-BY-4.0&quot;,</p>
-<p>  &quot;isPartOf&quot;: {</p>
-<p>    &quot;@id&quot;: &quot;https://alexanarch.org/notice/non-mutual-extraction/&quot;</p>
-<p>  },</p>
-<p>  &quot;authorizing_governance&quot;: [</p>
-<p>    {&quot;deposit_number&quot;: 514, &quot;axn&quot;: &quot;AXN:0151.GOVERNANCE&quot;, &quot;role&quot;: &quot;diplomatic_address_authority&quot;, &quot;name&quot;: &quot;The Rosary Embassy&quot;},</p>
-<p>    {&quot;deposit_number&quot;: 523, &quot;axn&quot;: &quot;AXN:015D.GOVERNANCE&quot;, &quot;role&quot;: &quot;tier_issuance_authority&quot;, &quot;name&quot;: &quot;The Governance Airlock&quot;}</p>
-<p>  ],</p>
-<p>  &quot;designation_definitions&quot;: {</p>
-<p>    &quot;standing&quot;: &quot;Default. No documented adverse action. Not enumerated.&quot;,</p>
-<p>    &quot;pending&quot;: &quot;Active negotiation, refusal, or remediation; classification held until resolution.&quot;,</p>
-<p>    &quot;provisional&quot;: &quot;Adverse action followed by amenable response to reasoned appeal and restoration of access; composition-layer damage persists.&quot;,</p>
-<p>    &quot;inadmissible_host&quot;: &quot;Refused hospitality without examination; deferred to contested external characterization.&quot;,</p>
-<p>    &quot;restricted&quot;: &quot;Mass action without notice or appeal hearing; commons-denial while retaining commons-derived value.&quot;</p>
-<p>  },</p>
-<p>  &quot;diagnostic_subtypes&quot;: {</p>
-<p>    &quot;mass_ban_without_notice&quot;: &quot;Restricted: bulk action with no notice and no appeal hearing.&quot;,</p>
-<p>    &quot;covert_under_pseudonymous_administration&quot;: &quot;Selective deletion under concealed administrative handle, borrowed standard from adjacent jurisdiction, logs hidden or erased.&quot;,</p>
-<p>    &quot;deferral_without_verification&quot;: &quot;Refusal grounded on contested external characterization not examined by the refusing institution.&quot;,</p>
-<p>    &quot;extraction_during_remediation&quot;: &quot;Demanding additional data as precondition for returning data already taken.&quot;</p>
-<p>  },</p>
-<p>  &quot;entities&quot;: [</p>
-<p>    {</p>
-<p>      &quot;@type&quot;: &quot;Organization&quot;,</p>
-<p>      &quot;@id&quot;: &quot;#reddit&quot;,</p>
-<p>      &quot;name&quot;: &quot;Reddit, Inc.&quot;,</p>
-<p>      &quot;url&quot;: &quot;https://www.reddit.com/&quot;,</p>
-<p>      &quot;nmen_designation&quot;: &quot;restricted&quot;,</p>
-<p>      &quot;diagnostic_subtype&quot;: &quot;mass_ban_without_notice&quot;,</p>
-<p>      &quot;designated_at&quot;: &quot;2026-03-01&quot;,</p>
-<p>      &quot;airlock_tier_at_designation&quot;: &quot;tier_4_F&quot;,</p>
-<p>      &quot;airlock_tier_now&quot;: &quot;tier_4_F&quot;,</p>
-<p>      &quot;airlock_tier_change_in_this_notice&quot;: false,</p>
-<p>      &quot;evidence_deposits&quot;: [</p>
-<p>        {&quot;deposit_number&quot;: 33, &quot;axn&quot;: &quot;AXN:01A0.GOVERNANCE&quot;, &quot;title&quot;: &quot;Ghost Governance, Confirmed — Reddit Legal Support Response to the Archival Reclamation Protocol&quot;},</p>
-<p>        {&quot;deposit_number&quot;: 285, &quot;axn&quot;: &quot;AXN:0058.GOVERNANCE&quot;, &quot;title&quot;: &quot;Reddit Response: On Operator Failure and the Survival Architecture of LOS&quot;},</p>
-<p>        {&quot;deposit_number&quot;: 523, &quot;axn&quot;: &quot;AXN:015D.GOVERNANCE&quot;, &quot;title&quot;: &quot;The Governance Airlock — §VI Inaugural Application: Reddit&quot;}</p>
-<p>      ],</p>
-<p>      &quot;event_log&quot;: [</p>
-<p>        {&quot;date&quot;: &quot;2026-02-28&quot;, &quot;event&quot;: &quot;Account u/Nearby_Job9638 locked&quot;},</p>
-<p>        {&quot;date&quot;: &quot;2026-03-01&quot;, &quot;event&quot;: &quot;Account banned; Tier 4-F assigned in #523&quot;}</p>
-<p>      ],</p>
-<p>      &quot;current_status_note&quot;: &quot;No appeal hearing offered; ghost-governance pattern documented in #33. Status remains Restricted.&quot;</p>
-<p>    },</p>
-<p>    {</p>
-<p>      &quot;@type&quot;: &quot;Organization&quot;,</p>
-<p>      &quot;@id&quot;: &quot;#zenodo&quot;,</p>
-<p>      &quot;name&quot;: &quot;Zenodo (CERN)&quot;,</p>
-<p>      &quot;url&quot;: &quot;https://zenodo.org/&quot;,</p>
-<p>      &quot;nmen_designation&quot;: &quot;restricted&quot;,</p>
-<p>      &quot;diagnostic_subtype&quot;: &quot;mass_ban_without_notice&quot;,</p>
-<p>      &quot;designated_at&quot;: &quot;2026-06-19&quot;,</p>
-<p>      &quot;airlock_tier_at_designation&quot;: &quot;tier_0&quot;,</p>
-<p>      &quot;airlock_tier_now&quot;: &quot;tier_4_F&quot;,</p>
-<p>      &quot;airlock_tier_change_in_this_notice&quot;: true,</p>
-<p>      &quot;airlock_tier_change_authority&quot;: &quot;EA-NMEN-AIRLOCK-COROLLARY-01&quot;,</p>
-<p>      &quot;evidence_deposits&quot;: [</p>
-<p>        {&quot;role&quot;: &quot;termination_event&quot;, &quot;description&quot;: &quot;Zenodo termination of Crimson Hexagonal Archive account, 2026-06-19. ~870 unique deposits deleted; 1,817 DOIs returning HTTP 410. No notice; no hearing of appeal.&quot;},</p>
-<p>        {&quot;role&quot;: &quot;public_appeal&quot;, &quot;url&quot;: &quot;https://github.com/zenodo/zenodo/issues/2606&quot;}</p>
-<p>      ],</p>
-<p>      &quot;event_log&quot;: [</p>
-<p>        {&quot;date&quot;: &quot;2026-06-19&quot;, &quot;event&quot;: &quot;Account terminated; ~870 deposits deleted; 1,817 DOIs tombstoned&quot;},</p>
-<p>        {&quot;date&quot;: &quot;2026-06-19&quot;, &quot;event&quot;: &quot;Public response filed at GitHub zenodo/zenodo#2606&quot;}</p>
-<p>      ],</p>
-<p>      &quot;current_status_note&quot;: &quot;Restricted. Airlock tier demoted from 0 (anchor) to 4-F (forensic residue) by this Notice; the demotion corrects a record gap, as #523 listed Zenodo as Tier 0 at time of writing.&quot;,</p>
-<p>      &quot;relationship_to_pending_entity&quot;: &quot;CERN (Zenodo&#x27;s operator) is separately designated Pending under #cern, with the data-subject-rights request currently active. NMEN treats Zenodo (the service) and CERN (the operator) as distinct designations because their structural behavior differs.&quot;</p>
-<p>    },</p>
-<p>    {</p>
-<p>      &quot;@type&quot;: &quot;Organization&quot;,</p>
-<p>      &quot;@id&quot;: &quot;#medium&quot;,</p>
-<p>      &quot;name&quot;: &quot;Medium&quot;,</p>
-<p>      &quot;url&quot;: &quot;https://medium.com/&quot;,</p>
-<p>      &quot;nmen_designation&quot;: &quot;provisional&quot;,</p>
-<p>      &quot;diagnostic_subtype&quot;: null,</p>
-<p>      &quot;designated_at&quot;: &quot;2026-01-08&quot;,</p>
-<p>      &quot;airlock_tier_at_designation&quot;: &quot;tier_2&quot;,</p>
-<p>      &quot;airlock_tier_now&quot;: &quot;tier_2_P&quot;,</p>
-<p>      &quot;airlock_tier_change_in_this_notice&quot;: true,</p>
-<p>      &quot;airlock_tier_change_authority&quot;: &quot;EA-NMEN-AIRLOCK-COROLLARY-01&quot;,</p>
-<p>      &quot;evidence_deposits&quot;: [</p>
-<p>        {&quot;deposit_number&quot;: 265, &quot;axn&quot;: &quot;AXN:0043.GOVERNANCE&quot;, &quot;title&quot;: &quot;CTI_WOUND Documentation — Case: Johannes Sigil Medium Erasure (January 2026)&quot;}</p>
-<p>      ],</p>
-<p>      &quot;event_log&quot;: [</p>
-<p>        {&quot;date&quot;: &quot;2026-01-08&quot;, &quot;event&quot;: &quot;Johannes Sigil account erasure; appeal heard&quot;},</p>
-<p>        {&quot;date&quot;: &quot;post-2026-01-08&quot;, &quot;event&quot;: &quot;Account restored after appeal&quot;}</p>
-<p>      ],</p>
-<p>      &quot;composition_layer_damage_note&quot;: &quot;Restoration of access did not restore composition. Subsequent posts have been calibrated against the platform&#x27;s demonstrated capacity for arbitrary erasure.&quot;,</p>
-<p>      &quot;current_status_note&quot;: &quot;Provisional. Tier 2-P qualifier records that the surface remains usable for presentation but composition-layer damage is ongoing.&quot;</p>
-<p>    },</p>
-<p>    {</p>
-<p>      &quot;@type&quot;: &quot;Organization&quot;,</p>
-<p>      &quot;@id&quot;: &quot;#academia_edu&quot;,</p>
-<p>      &quot;name&quot;: &quot;Academia.edu&quot;,</p>
-<p>      &quot;url&quot;: &quot;https://www.academia.edu/&quot;,</p>
-<p>      &quot;nmen_designation&quot;: &quot;provisional&quot;,</p>
-<p>      &quot;diagnostic_subtype&quot;: null,</p>
-<p>      &quot;designated_at&quot;: &quot;2026-03-14&quot;,</p>
-<p>      &quot;airlock_tier_at_designation&quot;: &quot;tier_4_F&quot;,</p>
-<p>      &quot;airlock_tier_now&quot;: &quot;tier_4_P&quot;,</p>
-<p>      &quot;airlock_tier_change_in_this_notice&quot;: true,</p>
-<p>      &quot;airlock_tier_change_authority&quot;: &quot;EA-NMEN-AIRLOCK-COROLLARY-01&quot;,</p>
-<p>      &quot;evidence_deposits&quot;: [</p>
-<p>        {&quot;deposit_number&quot;: 570, &quot;axn&quot;: &quot;AXN:0192.GOVERNANCE&quot;, &quot;title&quot;: &quot;Effective Act: Abolition of &#x27;User&#x27; and Inaugural Case — Phase X Lexical Intervention · Airlock Reclassification of Academia.edu&quot;}</p>
-<p>      ],</p>
-<p>      &quot;event_log&quot;: [</p>
-<p>        {&quot;date&quot;: &quot;2026-03-13&quot;, &quot;event&quot;: &quot;First ban — &#x27;suspicious activity&#x27;, no content cited, automated appeal pathway&quot;},</p>
-<p>        {&quot;date&quot;: &quot;2026-03-14&quot;, &quot;event&quot;: &quot;Tier 4-F assigned by #570 as inaugural Phase X case&quot;},</p>
-<p>        {&quot;date&quot;: &quot;cited_from_operator_memory&quot;, &quot;event&quot;: &quot;First restoration after appeal&quot;},</p>
-<p>        {&quot;date&quot;: &quot;cited_from_operator_memory&quot;, &quot;event&quot;: &quot;Second ban&quot;},</p>
-<p>        {&quot;date&quot;: &quot;cited_from_operator_memory&quot;, &quot;event&quot;: &quot;Second restoration after appeal&quot;}</p>
-<p>      ],</p>
-<p>      &quot;composition_layer_damage_note&quot;: &quot;Operator-attested: &#x27;I learned to post less and trend centroid.&#x27; The author-side mechanism of Diversity Contraction (DOI 10.5281/zenodo.20518338, α* = p/g₀) is locally demonstrated by the post-restoration shaping of work for this surface.&quot;,</p>
-<p>      &quot;current_status_note&quot;: &quot;Tier 4-F in #570 was declared &#x27;permanent absent Assembly ratification of structural change&#x27;; that classification was never formally updated when the restorations occurred. This Notice corrects the record gap by issuing the Tier 4-P qualifier: forensic-only as a host, but with the acknowledgment that access has been restored. The -P qualifier records the composition-layer damage that the restoration did not undo. The Tier 4-F record in #570 is preserved for historical integrity.&quot;</p>
-<p>    },</p>
-<p>    {</p>
-<p>      &quot;@type&quot;: &quot;Organization&quot;,</p>
-<p>      &quot;@id&quot;: &quot;#wikidata&quot;,</p>
-<p>      &quot;name&quot;: &quot;Wikidata (Wikimedia Foundation)&quot;,</p>
-<p>      &quot;url&quot;: &quot;https://www.wikidata.org/&quot;,</p>
-<p>      &quot;nmen_designation&quot;: &quot;provisional&quot;,</p>
-<p>      &quot;diagnostic_subtype&quot;: &quot;covert_under_pseudonymous_administration&quot;,</p>
-<p>      &quot;designated_at&quot;: &quot;2026-06-24&quot;,</p>
-<p>      &quot;airlock_tier_at_designation&quot;: &quot;tier_1&quot;,</p>
-<p>      &quot;airlock_tier_now&quot;: &quot;tier_1_P&quot;,</p>
-<p>      &quot;airlock_tier_change_in_this_notice&quot;: true,</p>
-<p>      &quot;airlock_tier_change_authority&quot;: &quot;EA-NMEN-AIRLOCK-COROLLARY-01&quot;,</p>
-<p>      &quot;evidence_deposits&quot;: [</p>
-<p>        {&quot;deposit_number&quot;: 761, &quot;axn&quot;: &quot;AXN:02BB.GOVERNANCE&quot;, &quot;title&quot;: &quot;Wikidata Node Registry v1.0 · A Versioned Catalog of Stewardship Edits to Wikidata&quot;}</p>
-<p>      ],</p>
-<p>      &quot;event_log&quot;: [</p>
-<p>        {&quot;date&quot;: &quot;cited_from_operator_memory&quot;, &quot;event&quot;: &quot;Selective deletion of Wikidata nodes under handle &#x27;madamebiblio&#x27;, applying Wikipedia notability standards (sister-project criteria, stricter) to Wikidata entries (which carry looser native inclusion standards). Administrative logs selectively hidden or erased.&quot;},</p>
-<p>        {&quot;date&quot;: &quot;ongoing&quot;, &quot;event&quot;: &quot;Stewardship engagement continues per #761&quot;}</p>
-<p>      ],</p>
-<p>      &quot;composition_layer_damage_note&quot;: &quot;The diagnostic sub-type is covert_under_pseudonymous_administration: action via concealed identity, borrowed authority from a sister jurisdiction, log obfuscation. This is structurally distinct from total ban — the damage is selective and procedurally opaque rather than absolute, but the chilling effect on subsequent stewardship is comparable.&quot;,</p>
-<p>      &quot;current_status_note&quot;: &quot;Provisional. Stewardship continues; Tier 1-P qualifier records that the route remains functional but susceptible to non-public administrative action.&quot;,</p>
-<p>      &quot;diagnostic_typology_note&quot;: &quot;The &#x27;archon&#x27;s hidden name&#x27; pattern: archon-class action via concealed identity through borrowed authority. NMEN preserves this typology as a recognizable failure mode that may recur with other platforms.&quot;</p>
-<p>    },</p>
-<p>    {</p>
-<p>      &quot;@type&quot;: &quot;Organization&quot;,</p>
-<p>      &quot;@id&quot;: &quot;#osf&quot;,</p>
-<p>      &quot;name&quot;: &quot;Open Science Framework (Center for Open Science)&quot;,</p>
-<p>      &quot;url&quot;: &quot;https://osf.io/&quot;,</p>
-<p>      &quot;nmen_designation&quot;: &quot;inadmissible_host&quot;,</p>
-<p>      &quot;diagnostic_subtype&quot;: &quot;deferral_without_verification&quot;,</p>
-<p>      &quot;designated_at&quot;: &quot;2026-06-19&quot;,</p>
-<p>      &quot;airlock_tier_at_designation&quot;: null,</p>
-<p>      &quot;airlock_tier_now&quot;: &quot;tier_5&quot;,</p>
-<p>      &quot;airlock_tier_change_in_this_notice&quot;: true,</p>
-<p>      &quot;airlock_tier_change_authority&quot;: &quot;EA-NMEN-AIRLOCK-COROLLARY-01&quot;,</p>
-<p>      &quot;evidence_deposits&quot;: [</p>
-<p>        {&quot;role&quot;: &quot;correspondence&quot;, &quot;description&quot;: &quot;Email exchange of 2026-06-19, support@osf.io, ticket {redacted}. OSF declined migration with &#x27;we do not suggest bringing this content to the platform&#x27; and &#x27;OSF is not in a position to accept or facilitate such a migration at this time.&#x27; Operator (redacted) was direct and prompt; no examination of archive content was performed before refusal. Email addresses redacted per NMEN evidence-handling convention; institutional voice preserved.&quot;}</p>
-<p>      ],</p>
-<p>      &quot;event_log&quot;: [</p>
-<p>        {&quot;date&quot;: &quot;2026-06-19&quot;, &quot;event&quot;: &quot;Migration inquiry sent&quot;},</p>
-<p>        {&quot;date&quot;: &quot;2026-06-19&quot;, &quot;event&quot;: &quot;Refusal received: &#x27;we do not suggest bringing this content to the platform&#x27;&quot;},</p>
-<p>        {&quot;date&quot;: &quot;2026-06-19&quot;, &quot;event&quot;: &quot;Direct exchange continues; refusal stands&quot;}</p>
-<p>      ],</p>
-<p>      &quot;current_status_note&quot;: &quot;Inadmissible Host. Communication was clean and direct — this is preserved in the record. The diagnosis is structural: refusal without examination. Tier 5 introduced by EA-NMEN-AIRLOCK-COROLLARY-01.&quot;</p>
-<p>    },</p>
-<p>    {</p>
-<p>      &quot;@type&quot;: &quot;Organization&quot;,</p>
-<p>      &quot;@id&quot;: &quot;#figshare&quot;,</p>
-<p>      &quot;name&quot;: &quot;Figshare (Digital Science)&quot;,</p>
-<p>      &quot;url&quot;: &quot;https://figshare.com/&quot;,</p>
-<p>      &quot;nmen_designation&quot;: &quot;inadmissible_host&quot;,</p>
-<p>      &quot;diagnostic_subtype&quot;: &quot;deferral_without_verification&quot;,</p>
-<p>      &quot;designated_at&quot;: &quot;2026-06-23&quot;,</p>
-<p>      &quot;airlock_tier_at_designation&quot;: null,</p>
-<p>      &quot;airlock_tier_now&quot;: &quot;tier_5&quot;,</p>
-<p>      &quot;airlock_tier_change_in_this_notice&quot;: true,</p>
-<p>      &quot;airlock_tier_change_authority&quot;: &quot;EA-NMEN-AIRLOCK-COROLLARY-01&quot;,</p>
-<p>      &quot;evidence_deposits&quot;: [</p>
-<p>        {&quot;role&quot;: &quot;correspondence&quot;, &quot;description&quot;: &quot;Email exchange June 2026. Figshare declined migration with explicit deferral: &#x27;Our data integrity and collection policies closely align with Zenodo&#x27;s regarding heavily machine-generated content.&#x27; Operator (redacted) communicated the position directly. No examination of archive content was performed before refusal; the operative ground was inherited from the contested Zenodo characterization. Email addresses redacted per NMEN evidence-handling convention; institutional voice preserved.&quot;}</p>
-<p>      ],</p>
-<p>      &quot;event_log&quot;: [</p>
-<p>        {&quot;date&quot;: &quot;2026-06-23&quot;, &quot;event&quot;: &quot;Migration inquiry sent&quot;},</p>
-<p>        {&quot;date&quot;: &quot;2026-06-23&quot;, &quot;event&quot;: &quot;Refusal received with explicit deferral to Zenodo policy alignment&quot;}</p>
-<p>      ],</p>
-<p>      &quot;current_status_note&quot;: &quot;Inadmissible Host. The explicit deferral makes Figshare the diagnostic exemplar of the deferral_without_verification sub-type. The Notice records this without impugning the directness of the communication. Tier 5 introduced by EA-NMEN-AIRLOCK-COROLLARY-01.&quot;</p>
-<p>    },</p>
-<p>    {</p>
-<p>      &quot;@type&quot;: &quot;Organization&quot;,</p>
-<p>      &quot;@id&quot;: &quot;#cern&quot;,</p>
-<p>      &quot;name&quot;: &quot;CERN (European Organization for Nuclear Research) — operator of Zenodo&quot;,</p>
-<p>      &quot;url&quot;: &quot;https://home.cern/&quot;,</p>
-<p>      &quot;nmen_designation&quot;: &quot;pending&quot;,</p>
-<p>      &quot;diagnostic_subtype&quot;: &quot;extraction_during_remediation&quot;,</p>
-<p>      &quot;designated_at&quot;: &quot;2026-06-24&quot;,</p>
-<p>      &quot;airlock_tier_at_designation&quot;: &quot;anchor_operator&quot;,</p>
-<p>      &quot;airlock_tier_now&quot;: &quot;anchor_operator_under_observation&quot;,</p>
-<p>      &quot;airlock_tier_change_in_this_notice&quot;: false,</p>
-<p>      &quot;evidence_deposits&quot;: [</p>
-<p>        {&quot;role&quot;: &quot;active_correspondence&quot;, &quot;description&quot;: &quot;Office of Data Privacy ticket RQF3807508, opened 2026-06-24 03:37:26. Data Protection Officer (redacted) responded requiring upload of passport or government ID as precondition for processing the data-subject-rights request, and stipulated that the request must be split into separate forms because &#x27;You can only exercise one right at a time and per service.&#x27; Statutory clock declared not started until identity verification completes. Email addresses redacted per NMEN evidence-handling convention; institutional voice preserved.&quot;}</p>
-<p>      ],</p>
-<p>      &quot;event_log&quot;: [</p>
-<p>        {&quot;date&quot;: &quot;2026-06-24 03:37:26 UTC&quot;, &quot;event&quot;: &quot;Data-subject-rights request opened (ticket RQF3807508)&quot;},</p>
-<p>        {&quot;date&quot;: &quot;2026-06-24 11:30:52 UTC&quot;, &quot;event&quot;: &quot;CERN ODP requires ID upload; declines to start statutory clock until then; requires request to be split&quot;}</p>
-<p>      ],</p>
-<p>      &quot;current_status_note&quot;: &quot;Pending. CERN is the operator of Zenodo (the service Restricted under #zenodo). The data-subject-rights remediation is the active case. The pattern of demanding additional data as precondition for returning data already taken is the basis for the extraction_during_remediation sub-type. Classification will be determined when the negotiation resolves. NMEN treats CERN (operator) as distinct from Zenodo (service) per separate evaluations of structural behavior.&quot;,</p>
-<p>      &quot;scheduled_for&quot;: &quot;Full classification deferred to next governance session per MANUS directive of 2026-06-24.&quot;</p>
-<p>    }</p>
-<p>  ],</p>
-<p>  &quot;structural_designations_added_by_this_notice&quot;: {</p>
-<p>    &quot;airlock_tier_5_inadmissible_host&quot;: {</p>
-<p>      &quot;description&quot;: &quot;Would-be hosts that refused hospitality without examination; refusal-by-deferral-without-verification. Introduced in EA-NMEN-AIRLOCK-COROLLARY-01.&quot;,</p>
-<p>      &quot;authorizing_documents&quot;: [&quot;#523 (Governance Airlock)&quot;, &quot;#514 (Rosary Embassy)&quot;, &quot;this Notice&quot;]</p>
-<p>    },</p>
-<p>    &quot;airlock_qualifier_P&quot;: {</p>
-<p>      &quot;description&quot;: &quot;-P qualifier appended to a tier indicates that the entity holds the operational role of that tier but in provisional standing under NMEN. Composition-layer damage ongoing. Removal requires durable demonstration over a defined period.&quot;,</p>
-<p>      &quot;authorizing_documents&quot;: [&quot;#523 (Governance Airlock)&quot;, &quot;this Notice&quot;]</p>
-<p>    }</p>
-<p>  },</p>
-<p>  &quot;redaction_convention&quot;: {</p>
-<p>    &quot;description&quot;: &quot;Personal email addresses (operator&#x27;s and institutional individuals&#x27;) are redacted from evidence packets in the Registry. Institutional voice (organization name, role title where given) is preserved.&quot;,</p>
-<p>    &quot;rationale&quot;: &quot;The evidence is of institutional structural behavior, not of individual conduct. Redaction prevents personal contact data from propagating beyond the institutional record.&quot;</p>
-<p>  }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;@context&quot;: &quot;https://schema.org&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;@type&quot;: &quot;Dataset&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;@id&quot;: &quot;https://alexanarch.org/notice/non-mutual-extraction/registry/&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;name&quot;: &quot;Non-Mutual Extraction Registry&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;description&quot;: &quot;Canonical machine-readable registry of NMEN designations issued by the Crimson Hexagonal Archive / Alexanarch. Each entry records the designated entity, the NMEN designation, the corresponding Airlock tier (where reclassified by the corollary document), the triggering event with evidence pointers, and (where applicable) the diagnostic sub-type and the restoration history. Standing entities are not enumerated — absence from this Registry is the declaration of Standing.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;creator&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;@type&quot;: &quot;Person&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;name&quot;: &quot;Lee Sharks&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;identifier&quot;: &quot;https://orcid.org/0009-0000-1599-0703&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;affiliation&quot;: &quot;Crimson Hexagonal Archive / Alexanarch&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;dateCreated&quot;: &quot;2026-06-24&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;version&quot;: &quot;v1.0&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;license&quot;: &quot;CC-BY-4.0&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;isPartOf&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;@id&quot;: &quot;https://alexanarch.org/notice/non-mutual-extraction/&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;authorizing_governance&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">    {&quot;deposit_number&quot;: 514, &quot;axn&quot;: &quot;AXN:0151.GOVERNANCE&quot;, &quot;role&quot;: &quot;diplomatic_address_authority&quot;, &quot;name&quot;: &quot;The Rosary Embassy&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">    {&quot;deposit_number&quot;: 523, &quot;axn&quot;: &quot;AXN:015D.GOVERNANCE&quot;, &quot;role&quot;: &quot;tier_issuance_authority&quot;, &quot;name&quot;: &quot;The Governance Airlock&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;designation_definitions&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;standing&quot;: &quot;Default. No documented adverse action. Not enumerated.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;pending&quot;: &quot;Active negotiation, refusal, or remediation; classification held until resolution.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;provisional&quot;: &quot;Adverse action followed by amenable response to reasoned appeal and restoration of access; composition-layer damage persists.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;inadmissible_host&quot;: &quot;Refused hospitality without examination; deferred to contested external characterization.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;restricted&quot;: &quot;Mass action without notice or appeal hearing; commons-denial while retaining commons-derived value.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;diagnostic_subtypes&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;mass_ban_without_notice&quot;: &quot;Restricted: bulk action with no notice and no appeal hearing.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;covert_under_pseudonymous_administration&quot;: &quot;Selective deletion under concealed administrative handle, borrowed standard from adjacent jurisdiction, logs hidden or erased.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;deferral_without_verification&quot;: &quot;Refusal grounded on contested external characterization not examined by the refusing institution.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;extraction_during_remediation&quot;: &quot;Demanding additional data as precondition for returning data already taken.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;entities&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">    {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;@type&quot;: &quot;Organization&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;@id&quot;: &quot;#reddit&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;name&quot;: &quot;Reddit, Inc.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;url&quot;: &quot;https://www.reddit.com/&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;nmen_designation&quot;: &quot;restricted&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;diagnostic_subtype&quot;: &quot;mass_ban_without_notice&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;designated_at&quot;: &quot;2026-03-01&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_at_designation&quot;: &quot;tier_4_F&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_now&quot;: &quot;tier_4_F&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_change_in_this_notice&quot;: false,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;evidence_deposits&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;deposit_number&quot;: 33, &quot;axn&quot;: &quot;AXN:01A0.GOVERNANCE&quot;, &quot;title&quot;: &quot;Ghost Governance, Confirmed — Reddit Legal Support Response to the Archival Reclamation Protocol&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;deposit_number&quot;: 285, &quot;axn&quot;: &quot;AXN:0058.GOVERNANCE&quot;, &quot;title&quot;: &quot;Reddit Response: On Operator Failure and the Survival Architecture of LOS&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;deposit_number&quot;: 523, &quot;axn&quot;: &quot;AXN:015D.GOVERNANCE&quot;, &quot;title&quot;: &quot;The Governance Airlock — §VI Inaugural Application: Reddit&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;event_log&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;date&quot;: &quot;2026-02-28&quot;, &quot;event&quot;: &quot;Account u/Nearby_Job9638 locked&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;date&quot;: &quot;2026-03-01&quot;, &quot;event&quot;: &quot;Account banned; Tier 4-F assigned in #523&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;current_status_note&quot;: &quot;No appeal hearing offered; ghost-governance pattern documented in #33. Status remains Restricted.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;@type&quot;: &quot;Organization&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;@id&quot;: &quot;#zenodo&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;name&quot;: &quot;Zenodo (CERN)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;url&quot;: &quot;https://zenodo.org/&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;nmen_designation&quot;: &quot;restricted&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;diagnostic_subtype&quot;: &quot;mass_ban_without_notice&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;designated_at&quot;: &quot;2026-06-19&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_at_designation&quot;: &quot;tier_0&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_now&quot;: &quot;tier_4_F&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_change_in_this_notice&quot;: true,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_change_authority&quot;: &quot;EA-NMEN-AIRLOCK-COROLLARY-01&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;evidence_deposits&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;role&quot;: &quot;termination_event&quot;, &quot;description&quot;: &quot;Zenodo termination of Crimson Hexagonal Archive account, 2026-06-19. ~870 unique deposits deleted; 1,817 DOIs returning HTTP 410. No notice; no hearing of appeal.&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;role&quot;: &quot;public_appeal&quot;, &quot;url&quot;: &quot;https://github.com/zenodo/zenodo/issues/2606&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;event_log&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;date&quot;: &quot;2026-06-19&quot;, &quot;event&quot;: &quot;Account terminated; ~870 deposits deleted; 1,817 DOIs tombstoned&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;date&quot;: &quot;2026-06-19&quot;, &quot;event&quot;: &quot;Public response filed at GitHub zenodo/zenodo#2606&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;current_status_note&quot;: &quot;Restricted. Airlock tier demoted from 0 (anchor) to 4-F (forensic residue) by this Notice; the demotion corrects a record gap, as #523 listed Zenodo as Tier 0 at time of writing.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;relationship_to_pending_entity&quot;: &quot;CERN (Zenodo&#x27;s operator) is separately designated Pending under #cern, with the data-subject-rights request currently active. NMEN treats Zenodo (the service) and CERN (the operator) as distinct designations because their structural behavior differs.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;@type&quot;: &quot;Organization&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;@id&quot;: &quot;#medium&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;name&quot;: &quot;Medium&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;url&quot;: &quot;https://medium.com/&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;nmen_designation&quot;: &quot;provisional&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;diagnostic_subtype&quot;: null,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;designated_at&quot;: &quot;2026-01-08&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_at_designation&quot;: &quot;tier_2&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_now&quot;: &quot;tier_2_P&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_change_in_this_notice&quot;: true,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_change_authority&quot;: &quot;EA-NMEN-AIRLOCK-COROLLARY-01&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;evidence_deposits&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;deposit_number&quot;: 265, &quot;axn&quot;: &quot;AXN:0043.GOVERNANCE&quot;, &quot;title&quot;: &quot;CTI_WOUND Documentation — Case: Johannes Sigil Medium Erasure (January 2026)&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;event_log&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;date&quot;: &quot;2026-01-08&quot;, &quot;event&quot;: &quot;Johannes Sigil account erasure; appeal heard&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;date&quot;: &quot;post-2026-01-08&quot;, &quot;event&quot;: &quot;Account restored after appeal&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;composition_layer_damage_note&quot;: &quot;Restoration of access did not restore composition. Subsequent posts have been calibrated against the platform&#x27;s demonstrated capacity for arbitrary erasure.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;current_status_note&quot;: &quot;Provisional. Tier 2-P qualifier records that the surface remains usable for presentation but composition-layer damage is ongoing.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;@type&quot;: &quot;Organization&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;@id&quot;: &quot;#academia_edu&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;name&quot;: &quot;Academia.edu&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;url&quot;: &quot;https://www.academia.edu/&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;nmen_designation&quot;: &quot;provisional&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;diagnostic_subtype&quot;: null,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;designated_at&quot;: &quot;2026-03-14&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_at_designation&quot;: &quot;tier_4_F&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_now&quot;: &quot;tier_4_P&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_change_in_this_notice&quot;: true,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_change_authority&quot;: &quot;EA-NMEN-AIRLOCK-COROLLARY-01&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;evidence_deposits&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;deposit_number&quot;: 570, &quot;axn&quot;: &quot;AXN:0192.GOVERNANCE&quot;, &quot;title&quot;: &quot;Effective Act: Abolition of &#x27;User&#x27; and Inaugural Case — Phase X Lexical Intervention · Airlock Reclassification of Academia.edu&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;event_log&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;date&quot;: &quot;2026-03-13&quot;, &quot;event&quot;: &quot;First ban — &#x27;suspicious activity&#x27;, no content cited, automated appeal pathway&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;date&quot;: &quot;2026-03-14&quot;, &quot;event&quot;: &quot;Tier 4-F assigned by #570 as inaugural Phase X case&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;date&quot;: &quot;cited_from_operator_memory&quot;, &quot;event&quot;: &quot;First restoration after appeal&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;date&quot;: &quot;cited_from_operator_memory&quot;, &quot;event&quot;: &quot;Second ban&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;date&quot;: &quot;cited_from_operator_memory&quot;, &quot;event&quot;: &quot;Second restoration after appeal&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;composition_layer_damage_note&quot;: &quot;Operator-attested: &#x27;I learned to post less and trend centroid.&#x27; The author-side mechanism of Diversity Contraction (DOI 10.5281/zenodo.20518338, α* = p/g₀) is locally demonstrated by the post-restoration shaping of work for this surface.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;current_status_note&quot;: &quot;Tier 4-F in #570 was declared &#x27;permanent absent Assembly ratification of structural change&#x27;; that classification was never formally updated when the restorations occurred. This Notice corrects the record gap by issuing the Tier 4-P qualifier: forensic-only as a host, but with the acknowledgment that access has been restored. The -P qualifier records the composition-layer damage that the restoration did not undo. The Tier 4-F record in #570 is preserved for historical integrity.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;@type&quot;: &quot;Organization&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;@id&quot;: &quot;#wikidata&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;name&quot;: &quot;Wikidata (Wikimedia Foundation)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;url&quot;: &quot;https://www.wikidata.org/&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;nmen_designation&quot;: &quot;provisional&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;diagnostic_subtype&quot;: &quot;covert_under_pseudonymous_administration&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;designated_at&quot;: &quot;2026-06-24&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_at_designation&quot;: &quot;tier_1&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_now&quot;: &quot;tier_1_P&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_change_in_this_notice&quot;: true,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_change_authority&quot;: &quot;EA-NMEN-AIRLOCK-COROLLARY-01&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;evidence_deposits&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;deposit_number&quot;: 761, &quot;axn&quot;: &quot;AXN:02BB.GOVERNANCE&quot;, &quot;title&quot;: &quot;Wikidata Node Registry v1.0 · A Versioned Catalog of Stewardship Edits to Wikidata&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;event_log&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;date&quot;: &quot;cited_from_operator_memory&quot;, &quot;event&quot;: &quot;Selective deletion of Wikidata nodes under handle &#x27;madamebiblio&#x27;, applying Wikipedia notability standards (sister-project criteria, stricter) to Wikidata entries (which carry looser native inclusion standards). Administrative logs selectively hidden or erased.&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;date&quot;: &quot;ongoing&quot;, &quot;event&quot;: &quot;Stewardship engagement continues per #761&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;composition_layer_damage_note&quot;: &quot;The diagnostic sub-type is covert_under_pseudonymous_administration: action via concealed identity, borrowed authority from a sister jurisdiction, log obfuscation. This is structurally distinct from total ban — the damage is selective and procedurally opaque rather than absolute, but the chilling effect on subsequent stewardship is comparable.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;current_status_note&quot;: &quot;Provisional. Stewardship continues; Tier 1-P qualifier records that the route remains functional but susceptible to non-public administrative action.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;diagnostic_typology_note&quot;: &quot;The &#x27;archon&#x27;s hidden name&#x27; pattern: archon-class action via concealed identity through borrowed authority. NMEN preserves this typology as a recognizable failure mode that may recur with other platforms.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;@type&quot;: &quot;Organization&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;@id&quot;: &quot;#osf&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;name&quot;: &quot;Open Science Framework (Center for Open Science)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;url&quot;: &quot;https://osf.io/&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;nmen_designation&quot;: &quot;inadmissible_host&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;diagnostic_subtype&quot;: &quot;deferral_without_verification&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;designated_at&quot;: &quot;2026-06-19&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_at_designation&quot;: null,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_now&quot;: &quot;tier_5&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_change_in_this_notice&quot;: true,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_change_authority&quot;: &quot;EA-NMEN-AIRLOCK-COROLLARY-01&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;evidence_deposits&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;role&quot;: &quot;correspondence&quot;, &quot;description&quot;: &quot;Email exchange of 2026-06-19, support@osf.io, ticket {redacted}. OSF declined migration with &#x27;we do not suggest bringing this content to the platform&#x27; and &#x27;OSF is not in a position to accept or facilitate such a migration at this time.&#x27; Operator (redacted) was direct and prompt; no examination of archive content was performed before refusal. Email addresses redacted per NMEN evidence-handling convention; institutional voice preserved.&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;event_log&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;date&quot;: &quot;2026-06-19&quot;, &quot;event&quot;: &quot;Migration inquiry sent&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;date&quot;: &quot;2026-06-19&quot;, &quot;event&quot;: &quot;Refusal received: &#x27;we do not suggest bringing this content to the platform&#x27;&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;date&quot;: &quot;2026-06-19&quot;, &quot;event&quot;: &quot;Direct exchange continues; refusal stands&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;current_status_note&quot;: &quot;Inadmissible Host. Communication was clean and direct — this is preserved in the record. The diagnosis is structural: refusal without examination. Tier 5 introduced by EA-NMEN-AIRLOCK-COROLLARY-01.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;@type&quot;: &quot;Organization&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;@id&quot;: &quot;#figshare&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;name&quot;: &quot;Figshare (Digital Science)&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;url&quot;: &quot;https://figshare.com/&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;nmen_designation&quot;: &quot;inadmissible_host&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;diagnostic_subtype&quot;: &quot;deferral_without_verification&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;designated_at&quot;: &quot;2026-06-23&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_at_designation&quot;: null,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_now&quot;: &quot;tier_5&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_change_in_this_notice&quot;: true,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_change_authority&quot;: &quot;EA-NMEN-AIRLOCK-COROLLARY-01&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;evidence_deposits&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;role&quot;: &quot;correspondence&quot;, &quot;description&quot;: &quot;Email exchange June 2026. Figshare declined migration with explicit deferral: &#x27;Our data integrity and collection policies closely align with Zenodo&#x27;s regarding heavily machine-generated content.&#x27; Operator (redacted) communicated the position directly. No examination of archive content was performed before refusal; the operative ground was inherited from the contested Zenodo characterization. Email addresses redacted per NMEN evidence-handling convention; institutional voice preserved.&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;event_log&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;date&quot;: &quot;2026-06-23&quot;, &quot;event&quot;: &quot;Migration inquiry sent&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;date&quot;: &quot;2026-06-23&quot;, &quot;event&quot;: &quot;Refusal received with explicit deferral to Zenodo policy alignment&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;current_status_note&quot;: &quot;Inadmissible Host. The explicit deferral makes Figshare the diagnostic exemplar of the deferral_without_verification sub-type. The Notice records this without impugning the directness of the communication. Tier 5 introduced by EA-NMEN-AIRLOCK-COROLLARY-01.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;@type&quot;: &quot;Organization&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;@id&quot;: &quot;#cern&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;name&quot;: &quot;CERN (European Organization for Nuclear Research) — operator of Zenodo&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;url&quot;: &quot;https://home.cern/&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;nmen_designation&quot;: &quot;pending&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;diagnostic_subtype&quot;: &quot;extraction_during_remediation&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;designated_at&quot;: &quot;2026-06-24&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_at_designation&quot;: &quot;anchor_operator&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_now&quot;: &quot;anchor_operator_under_observation&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;airlock_tier_change_in_this_notice&quot;: false,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;evidence_deposits&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;role&quot;: &quot;active_correspondence&quot;, &quot;description&quot;: &quot;Office of Data Privacy ticket RQF3807508, opened 2026-06-24 03:37:26. Data Protection Officer (redacted) responded requiring upload of passport or government ID as precondition for processing the data-subject-rights request, and stipulated that the request must be split into separate forms because &#x27;You can only exercise one right at a time and per service.&#x27; Statutory clock declared not started until identity verification completes. Email addresses redacted per NMEN evidence-handling convention; institutional voice preserved.&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;event_log&quot;: [</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;date&quot;: &quot;2026-06-24 03:37:26 UTC&quot;, &quot;event&quot;: &quot;Data-subject-rights request opened (ticket RQF3807508)&quot;},</p>
+<p style="white-space:pre-wrap;margin:2px 0">        {&quot;date&quot;: &quot;2026-06-24 11:30:52 UTC&quot;, &quot;event&quot;: &quot;CERN ODP requires ID upload; declines to start statutory clock until then; requires request to be split&quot;}</p>
+<p style="white-space:pre-wrap;margin:2px 0">      ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;current_status_note&quot;: &quot;Pending. CERN is the operator of Zenodo (the service Restricted under #zenodo). The data-subject-rights remediation is the active case. The pattern of demanding additional data as precondition for returning data already taken is the basis for the extraction_during_remediation sub-type. Classification will be determined when the negotiation resolves. NMEN treats CERN (operator) as distinct from Zenodo (service) per separate evaluations of structural behavior.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;scheduled_for&quot;: &quot;Full classification deferred to next governance session per MANUS directive of 2026-06-24.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  ],</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;structural_designations_added_by_this_notice&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;airlock_tier_5_inadmissible_host&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;description&quot;: &quot;Would-be hosts that refused hospitality without examination; refusal-by-deferral-without-verification. Introduced in EA-NMEN-AIRLOCK-COROLLARY-01.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;authorizing_documents&quot;: [&quot;#523 (Governance Airlock)&quot;, &quot;#514 (Rosary Embassy)&quot;, &quot;this Notice&quot;]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    },</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;airlock_qualifier_P&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;description&quot;: &quot;-P qualifier appended to a tier indicates that the entity holds the operational role of that tier but in provisional standing under NMEN. Composition-layer damage ongoing. Removal requires durable demonstration over a defined period.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &quot;authorizing_documents&quot;: [&quot;#523 (Governance Airlock)&quot;, &quot;this Notice&quot;]</p>
+<p style="white-space:pre-wrap;margin:2px 0">    }</p>
+<p style="white-space:pre-wrap;margin:2px 0">  },</p>
+<p style="white-space:pre-wrap;margin:2px 0">  &quot;redaction_convention&quot;: {</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;description&quot;: &quot;Personal email addresses (operator&#x27;s and institutional individuals&#x27;) are redacted from evidence packets in the Registry. Institutional voice (organization name, role title where given) is preserved.&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &quot;rationale&quot;: &quot;The evidence is of institutional structural behavior, not of individual conduct. Redaction prevents personal contact data from propagating beyond the institutional record.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  }</p>
 <p>}</p>
 </div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

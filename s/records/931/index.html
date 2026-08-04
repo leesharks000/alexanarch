@@ -320,21 +320,21 @@
 
 <p>2. <strong>Preserve at the lowest feasible common input level.</strong> For each event in the anchor, preserve: trigger primitives, raw or minimally transformed subsystem outputs, conditions snapshot, calibration constants snapshot. Concretely:</p>
 
-<p>   - <strong>For the calorimeter:</strong> tower energies before clustering; trigger-tower aggregations at the granularity used by the deployed Level-1 algorithms.</p>
-<p>   - <strong>For the tracker:</strong> trigger-level track candidates and hit-position summaries before full track fitting; per-region multiplicity primitives.</p>
-<p>   - <strong>For the muon system:</strong> segment primitives before muon reconstruction; chamber-level hit patterns at the granularity preserved by the trigger.</p>
-<p>   - <strong>For global event quantities:</strong> trigger-level missing-transverse-momentum primitives, trigger-tower energy sums, and pileup-mitigation inputs at the deployed granularity.</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - <strong>For the calorimeter:</strong> tower energies before clustering; trigger-tower aggregations at the granularity used by the deployed Level-1 algorithms.</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - <strong>For the tracker:</strong> trigger-level track candidates and hit-position summaries before full track fitting; per-region multiplicity primitives.</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - <strong>For the muon system:</strong> segment primitives before muon reconstruction; chamber-level hit patterns at the granularity preserved by the trigger.</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - <strong>For global event quantities:</strong> trigger-level missing-transverse-momentum primitives, trigger-tower energy sums, and pileup-mitigation inputs at the deployed granularity.</p>
 
-<p>   The goal is sufficient fidelity to permit re-execution of any <strong>subsequent</strong> Level-1 algorithm whose input abstractions are compatible with this preserved representation.</p>
+<p style="white-space:pre-wrap;margin:2px 0">   The goal is sufficient fidelity to permit re-execution of any <strong>subsequent</strong> Level-1 algorithm whose input abstractions are compatible with this preserved representation.</p>
 
 <p>3. <strong>Preserve software and firmware emulators.</strong> For each deployed trigger algorithm at the time of anchor designation, preserve bit-accurate or validated software emulators. This is non-trivial infrastructure: emulators must be maintained, version-tracked, and verified against actual hardware behavior. The institutional commitment includes maintaining the ability to re-run obsolete trigger generations against the anchor.</p>
 
 <p>4. <strong>Preserve thresholds and rate budgets</strong>, versioned, alongside the algorithms. Replays should be performed at matched rates and, where possible, matched latency/resource envelopes — comparing equivalent operating points across generations, not just raw acceptance fractions.</p>
 
 <p>5. <strong>For each successive trigger generation $t$</strong> with input abstractions compatible with the anchor&#x27;s preservation, re-execute generation-$t$ algorithms against the anchor under the anchor&#x27;s preserved conditions and calibrations. Measure:</p>
-<p>   - Fraction of anchor events accepted by each algorithm at each rate operating point.</p>
-<p>   - Distribution of anomaly scores assigned.</p>
-<p>   - Cross-generation correspondence: which events are accepted by generation $t$ but not by generation $t-1$, and vice versa.</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - Fraction of anchor events accepted by each algorithm at each rate operating point.</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - Distribution of anomaly scores assigned.</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - Cross-generation correspondence: which events are accepted by generation $t$ but not by generation $t-1$, and vice versa.</p>
 
 <p>6. <strong>Compute and publish the anchor-survival map</strong>: per-generation, per-algorithm, per-rate retention statistics, with confidence intervals.</p>
 
@@ -357,26 +357,26 @@
 <p><strong>Procedure:</strong></p>
 
 <p>1. <strong>Compute multiple representation-distinct anomaly scores</strong> for each event:</p>
-<p>   - $s_1$: Object-level encoder-side score (AXOL1TL-class latent-norm).</p>
-<p>   - $s_2$: Calorimeter-image reconstruction-loss score (CICADA-class, or analogous via the GELATO HLT reconstruction-based score).</p>
-<p>   - $s_3$: Detector-channel anomaly score — operating directly on lower-level inputs without intermediate object or image reconstruction. Implementation specifics in §4.3.1 below.</p>
-<p>   - Optionally additional: density-estimation score in a learned feature space; energy-based model score; the GELATO L1 encoder-side score (where available as parallel infrastructure).</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - $s_1$: Object-level encoder-side score (AXOL1TL-class latent-norm).</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - $s_2$: Calorimeter-image reconstruction-loss score (CICADA-class, or analogous via the GELATO HLT reconstruction-based score).</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - $s_3$: Detector-channel anomaly score — operating directly on lower-level inputs without intermediate object or image reconstruction. Implementation specifics in §4.3.1 below.</p>
+<p style="white-space:pre-wrap;margin:2px 0">   - Optionally additional: density-estimation score in a learned feature space; energy-based model score; the GELATO L1 encoder-side score (where available as parallel infrastructure).</p>
 
 <p>2. <strong>Establish a reference background distribution</strong> $P_{\mathrm{ref}}$ — typically the Zero Bias training distribution.</p>
 
 <p>3. <strong>For each score $s_i$</strong>, compute the empirical CDF $F_i$ on $P_{\mathrm{ref}}$ during calibration:</p>
 
-<p>   $$F_i(t) = \frac{1}{|P_{\mathrm{ref}}|} \sum_{\mathbf{x} \in P_{\mathrm{ref}}} \mathbb{1}[s_i(\mathbf{x}) \leq t].$$</p>
+<p style="white-space:pre-wrap;margin:2px 0">   $$F_i(t) = \frac{1}{|P_{\mathrm{ref}}|} \sum_{\mathbf{x} \in P_{\mathrm{ref}}} \mathbb{1}[s_i(\mathbf{x}) \leq t].$$</p>
 
-<p>   For each event $\mathbf{x}$, the normalized score is $u_i(\mathbf{x}) = F_i(s_i(\mathbf{x}))$.</p>
+<p style="white-space:pre-wrap;margin:2px 0">   For each event $\mathbf{x}$, the normalized score is $u_i(\mathbf{x}) = F_i(s_i(\mathbf{x}))$.</p>
 
-<p>   The $u_i$ values are commensurable across representations: each is the quantile of the event&#x27;s score in the reference distribution under representation $i$.</p>
+<p style="white-space:pre-wrap;margin:2px 0">   The $u_i$ values are commensurable across representations: each is the quantile of the event&#x27;s score in the reference distribution under representation $i$.</p>
 
 <p>4. <strong>Compute the disagreement signal</strong>. Suggested:</p>
 
-<p>   $$D(\mathbf{x}) = \max_i u_i(\mathbf{x}) - \min_i u_i(\mathbf{x}).$$</p>
+<p style="white-space:pre-wrap;margin:2px 0">   $$D(\mathbf{x}) = \max_i u_i(\mathbf{x}) - \min_i u_i(\mathbf{x}).$$</p>
 
-<p>   Other choices possible: variance across the $u_i$, entropy of the empirical distribution over $u_i$, pairwise rank disagreement. The choice should be pre-registered.</p>
+<p style="white-space:pre-wrap;margin:2px 0">   Other choices possible: variance across the $u_i$, entropy of the empirical distribution over $u_i$, pairwise rank disagreement. The choice should be pre-registered.</p>
 
 <p>5. <strong>Preserve events with $D(\mathbf{x}) &gt; \delta$</strong> for an additional retention threshold $\delta$, alongside the per-representation thresholds. Allocate rate budget for the disagreement-preservation stream.</p>
 

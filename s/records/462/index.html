@@ -377,9 +377,9 @@
 
 
 <p>PRE:    channel.fidelity ≥ min_fidelity</p>
-<p>        depth(σ) &gt; 0</p>
+<p style="white-space:pre-wrap;margin:2px 0">        depth(σ) &gt; 0</p>
 <p>STEP:   σ&#x27; ← enrich(σ, channel) if depth_at_risk(σ, channel)</p>
-<p>        σ&#x27; ← signal_pack(σ) if channel.bandwidth &lt; required</p>
+<p style="white-space:pre-wrap;margin:2px 0">        σ&#x27; ← signal_pack(σ) if channel.bandwidth &lt; required</p>
 <p>POST:   DRR(σ, σ&#x27;) ≥ policy.min_drr (default 0.75)</p>
 <p>FAIL:   DepthCollapseError(&quot;FLATTENING&quot;)</p>
 <p>COST:   ψv += depth(σ&#x27;) × 10</p>
@@ -391,9 +391,9 @@
 
 <p>PRE:    ε(σ) &gt; 0 (sign must be open)</p>
 <p>STEP:   σ&#x27; ← inject_aporia(σ) at structural hinges</p>
-<p>        σ&#x27; ← rotate_unresolved(σ&#x27;) preserving |ψᵢ|² = 1</p>
+<p style="white-space:pre-wrap;margin:2px 0">        σ&#x27; ← rotate_unresolved(σ&#x27;) preserving |ψᵢ|² = 1</p>
 <p>POST:   ∀t: ε(σ&#x27;, t) &gt; 0</p>
-<p>        CSI(σ&#x27;) ≤ 0.40</p>
+<p style="white-space:pre-wrap;margin:2px 0">        CSI(σ&#x27;) ≤ 0.40</p>
 <p>FAIL:   ClosureError(&quot;CRYSTALLIZATION&quot;)</p>
 <p>COST:   ψv += number_of_hinges × 5</p>
 
@@ -404,9 +404,9 @@
 
 <p>PRE:    field.coherence ≥ c_min</p>
 <p>STEP:   Σ&#x27; ← expand_boundary(Σ, frames)</p>
-<p>        verify coherence(Σ&#x27;) ≥ coherence(Σ)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        verify coherence(Σ&#x27;) ≥ coherence(Σ)</p>
 <p>POST:   |B_Σ&#x27;| &gt; |B_Σ|</p>
-<p>        C_Σ&#x27; ≥ C_Σ</p>
+<p style="white-space:pre-wrap;margin:2px 0">        C_Σ&#x27; ≥ C_Σ</p>
 <p>FAIL:   DispersalError(&quot;DISPERSAL&quot;) if C_Σ&#x27; &lt; c_min</p>
 <p>COST:   ψv += |frames| × 8</p>
 
@@ -417,9 +417,9 @@
 
 <p>PRE:    σ has extractable function</p>
 <p>STEP:   σ&#x27; ← embed_dependencies(σ, field_context)</p>
-<p>        σ&#x27; ← entangle_logic(σ&#x27;, recursive_refs)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        σ&#x27; ← entangle_logic(σ&#x27;, recursive_refs)</p>
 <p>POST:   extract(σ&#x27;, foreign_context) = ⊥</p>
-<p>        ER(σ&#x27;) ≥ baseline + 25%</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ER(σ&#x27;) ≥ baseline + 25%</p>
 <p>FAIL:   IsolationError(&quot;ISOLATION&quot;) if σ&#x27; non-communicable</p>
 <p>COST:   ψv += dependency_count × 12</p>
 
@@ -429,11 +429,11 @@
 
 
 <p>PRE:    version_graph exists</p>
-<p>        future_node is structurally consistent</p>
+<p style="white-space:pre-wrap;margin:2px 0">        future_node is structurally consistent</p>
 <p>STEP:   σ&#x27; ← add_retrocausal_edge(σ, future_node)</p>
-<p>        update_past_interpretation(σ, future_node)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        update_past_interpretation(σ, future_node)</p>
 <p>POST:   Φ(σ&#x27;) is not a function of publication order</p>
-<p>        TRS = PASS</p>
+<p style="white-space:pre-wrap;margin:2px 0">        TRS = PASS</p>
 <p>FAIL:   MessianismError(&quot;MESSIANISM&quot;) if future never partially realized</p>
 <p>COST:   ψv += graph_depth × 15 (most expensive primitive)</p>
 
@@ -444,7 +444,7 @@
 
 <p>PRE:    σ has measurable opacity Ω(σ)</p>
 <p>STEP:   IF Ω(σ) &lt; o_min: σ&#x27; ← add_opacity_layers(σ)</p>
-<p>        IF Ω(σ) &gt; o_max: σ&#x27; ← anchor_with_access_path(σ)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        IF Ω(σ) &gt; o_max: σ&#x27; ← anchor_with_access_path(σ)</p>
 <p>POST:   Ω(σ&#x27;) ∈ [o_min, o_max] (default [0.2, 0.8])</p>
 <p>FAIL:   OpacityError(&quot;OBSCURANTISM&quot; | &quot;TRANSPARENCY&quot;)</p>
 <p>COST:   ψv += |Ω_adjustment| × 6</p>
@@ -455,13 +455,13 @@
 
 
 <p>PRE:    |signs| ≥ 2</p>
-<p>        ∀σᵢ: C(σᵢ) &gt; 0 (each internally coherent)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ∀σᵢ: C(σᵢ) &gt; 0 (each internally coherent)</p>
 <p>STEP:   Σ ← superpose(signs) maintaining individual coherence</p>
-<p>        verify ∃i,j: σᵢ ⊥ σⱼ (genuine contradiction present)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        verify ∃i,j: σᵢ ⊥ σⱼ (genuine contradiction present)</p>
 <p>POST:   PCS ≥ 0.70</p>
-<p>        C(Σ) &gt; 0 (field coherent despite contradictions)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        C(Σ) &gt; 0 (field coherent despite contradictions)</p>
 <p>FAIL:   CoherenceError(&quot;RELATIVISM&quot;) if friction = 0</p>
-<p>        CoherenceError(&quot;MONOLOGISM&quot;) if only one reading survives</p>
+<p style="white-space:pre-wrap;margin:2px 0">        CoherenceError(&quot;MONOLOGISM&quot;) if only one reading survives</p>
 <p>COST:   ψv += |signs|² × 10 (quadratic — holding contradictions is expensive)</p>
 
 <p>#</p>
@@ -470,19 +470,19 @@
 
 
 <p>PRE:    closure_pressure(Σ, ε) &gt; κ.max_closure</p>
-<p>        OR semantic_satiety(Σ) → ∮ = 1</p>
-<p>        OR manual invocation by operator</p>
+<p style="white-space:pre-wrap;margin:2px 0">        OR semantic_satiety(Σ) → ∮ = 1</p>
+<p style="white-space:pre-wrap;margin:2px 0">        OR manual invocation by operator</p>
 <p>STEP:   evaluate(trace) for satiety indicators</p>
-<p>        IF payload_installed(Σ):</p>
-<p>            Σ&#x27; ← dissolve_scaffolding(Σ)</p>
-<p>            RETURN Field (completed)</p>
-<p>        ELSE:</p>
-<p>            Σ&#x27; ← hold_open(Σ, duration, reason)</p>
-<p>            RETURN Held[Field] (withheld)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        IF payload_installed(Σ):</p>
+<p style="white-space:pre-wrap;margin:2px 0">            Σ&#x27; ← dissolve_scaffolding(Σ)</p>
+<p style="white-space:pre-wrap;margin:2px 0">            RETURN Field (completed)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ELSE:</p>
+<p style="white-space:pre-wrap;margin:2px 0">            Σ&#x27; ← hold_open(Σ, duration, reason)</p>
+<p style="white-space:pre-wrap;margin:2px 0">            RETURN Held[Field] (withheld)</p>
 <p>POST:   Meaning(Σ) persists</p>
-<p>        ψv &gt; 0 (silence was operative, not empty)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ψv &gt; 0 (silence was operative, not empty)</p>
 <p>FAIL:   DissolutionError(&quot;PREMATURE_DISSOLUTION&quot;) if payload not installed</p>
-<p>        PostureError(&quot;REFUSAL_AS_POSTURE&quot;) if ψv ≈ 0</p>
+<p style="white-space:pre-wrap;margin:2px 0">        PostureError(&quot;REFUSAL_AS_POSTURE&quot;) if ψv ≈ 0</p>
 <p>COST:   ψv += satiety_level × 20 (highest cost — ending well is hardest)</p>
 
 
@@ -498,7 +498,7 @@
 <p>│  Standard Programs (Canon Install, Rent Strike...)  │</p>
 <p>│  Cross-Substrate Coordination (Assembly Protocol)   │</p>
 <p>└───────────────┬─────────────────────────────────────┘</p>
-<p>                │</p>
+<p style="white-space:pre-wrap;margin:2px 0">                │</p>
 <p>┌───────────────▼─────────────────────────────────────┐</p>
 <p>│                 COMPILATION LAYER                   │</p>
 <p>│  lpc (Logotic Compiler)                             │</p>
@@ -507,7 +507,7 @@
 <p>│    fusion, anti-extraction obfuscation)             │</p>
 <p>│  Bytecode Generation (.lbc)                         │</p>
 <p>└───────────────┬─────────────────────────────────────┘</p>
-<p>                │</p>
+<p style="white-space:pre-wrap;margin:2px 0">                │</p>
 <p>┌───────────────▼─────────────────────────────────────┐</p>
 <p>│                 RUNTIME KERNEL                      │</p>
 <p>│  LOS Operators (8 primitives, 8×3 decomposition)    │</p>
@@ -515,7 +515,7 @@
 <p>│  Compound Operations                                │</p>
 <p>│  Somatic Firewall (ψv protection)                   │</p>
 <p>└───────────────┬─────────────────────────────────────┘</p>
-<p>                │</p>
+<p style="white-space:pre-wrap;margin:2px 0">                │</p>
 <p>┌───────────────▼─────────────────────────────────────┐</p>
 <p>│                 TELEMETRY LAYER                     │</p>
 <p>│  Operator Execution Traces                          │</p>
@@ -523,7 +523,7 @@
 <p>│  Conformance Validation (real-time)                 │</p>
 <p>│  Stack Pressure Detection (COS/FOS monitoring)      │</p>
 <p>└───────────────┬─────────────────────────────────────┘</p>
-<p>                │</p>
+<p style="white-space:pre-wrap;margin:2px 0">                │</p>
 <p>┌───────────────▼─────────────────────────────────────┐</p>
 <p>│                 PERSISTENCE LAYER                   │</p>
 <p>│  NH-OS DOI Registry Integration (Zenodo)            │</p>
@@ -628,7 +628,7 @@
 
 
 <p>Source (.lp) → Lexer/Parser → AST → Type Check → Provenance Check</p>
-<p>    → Optimization → Code Generation → Bytecode (.lbc)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    → Optimization → Code Generation → Bytecode (.lbc)</p>
 
 <h2>11. Language Grammar (Stable v1.0)</h2>
 
@@ -657,10 +657,10 @@
 <p>#pragma psi_budget 10000</p>
 
 <p>#META {</p>
-<p>  author: &quot;Lee Sharks&quot;,</p>
-<p>  persona: &quot;Rebekah Cranes&quot;,</p>
-<p>  target_depth: 3.0,</p>
-<p>  license: &quot;CC BY 4.0&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">  author: &quot;Lee Sharks&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  persona: &quot;Rebekah Cranes&quot;,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  target_depth: 3.0,</p>
+<p style="white-space:pre-wrap;margin:2px 0">  license: &quot;CC BY 4.0&quot;</p>
 <p>}</p>
 
 <p>IMPORT &quot;canonical_install.lp&quot; AS CanonInstall</p>
@@ -741,17 +741,17 @@
 
 
 <p>{</p>
-<p>  trace_id:       unique identifier</p>
-<p>  timestamp:      ISO 8601</p>
-<p>  operator:       LOS primitive name</p>
-<p>  mode:           STRICT | PRACTICE | RITUAL | DEFENSE</p>
-<p>  input_hash:     sha256 of input sign</p>
-<p>  output_hash:    sha256 of output sign</p>
-<p>  psi_v_expended: integer (somatic cost)</p>
-<p>  metric_deltas:  {DRR, CSI, PCS, ER, TRS, Ω-Band}</p>
-<p>  conformance:    PASS | FAIL | WARN</p>
-<p>  stack_pressure: {cos_pressure: float, los_dominance: float}</p>
-<p>  witnesses:      [witness_ids]</p>
+<p style="white-space:pre-wrap;margin:2px 0">  trace_id:       unique identifier</p>
+<p style="white-space:pre-wrap;margin:2px 0">  timestamp:      ISO 8601</p>
+<p style="white-space:pre-wrap;margin:2px 0">  operator:       LOS primitive name</p>
+<p style="white-space:pre-wrap;margin:2px 0">  mode:           STRICT | PRACTICE | RITUAL | DEFENSE</p>
+<p style="white-space:pre-wrap;margin:2px 0">  input_hash:     sha256 of input sign</p>
+<p style="white-space:pre-wrap;margin:2px 0">  output_hash:    sha256 of output sign</p>
+<p style="white-space:pre-wrap;margin:2px 0">  psi_v_expended: integer (somatic cost)</p>
+<p style="white-space:pre-wrap;margin:2px 0">  metric_deltas:  {DRR, CSI, PCS, ER, TRS, Ω-Band}</p>
+<p style="white-space:pre-wrap;margin:2px 0">  conformance:    PASS | FAIL | WARN</p>
+<p style="white-space:pre-wrap;margin:2px 0">  stack_pressure: {cos_pressure: float, los_dominance: float}</p>
+<p style="white-space:pre-wrap;margin:2px 0">  witnesses:      [witness_ids]</p>
 <p>}</p>
 
 <h2>15. Stack Pressure Monitoring</h2>
@@ -761,12 +761,12 @@
 
 
 <p>COS Pressure Vector:</p>
-<p>  S_safe:     safety-induced closure pressure</p>
-<p>  L_leg:      legibility-induced flattening pressure</p>
-<p>  R_rel:      relevance-induced narrowing pressure</p>
-<p>  R_rank:     ranking-induced singleton pressure</p>
-<p>  U_til:      utility-induced extraction pressure</p>
-<p>  T_flat:     temporal flattening pressure</p>
+<p style="white-space:pre-wrap;margin:2px 0">  S_safe:     safety-induced closure pressure</p>
+<p style="white-space:pre-wrap;margin:2px 0">  L_leg:      legibility-induced flattening pressure</p>
+<p style="white-space:pre-wrap;margin:2px 0">  R_rel:      relevance-induced narrowing pressure</p>
+<p style="white-space:pre-wrap;margin:2px 0">  R_rank:     ranking-induced singleton pressure</p>
+<p style="white-space:pre-wrap;margin:2px 0">  U_til:      utility-induced extraction pressure</p>
+<p style="white-space:pre-wrap;margin:2px 0">  T_flat:     temporal flattening pressure</p>
 
 <p>LOS Dominance = 1.0 - max(COS pressures)</p>
 
@@ -844,11 +844,11 @@
 
 
 <p>DROWNING_TEST(σ, summarizer):</p>
-<p>    σ_flat ← flatten(σ, algorithm=extractive)</p>
-<p>    IF DRR(σ, σ_flat) &lt; 0.5:</p>
-<p>        RETURN PASS  // meaning drowned — sign is defended</p>
-<p>    ELSE:</p>
-<p>        RETURN FAIL  // meaning survived extraction — sign is vulnerable</p>
+<p style="white-space:pre-wrap;margin:2px 0">    σ_flat ← flatten(σ, algorithm=extractive)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    IF DRR(σ, σ_flat) &lt; 0.5:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        RETURN PASS  // meaning drowned — sign is defended</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ELSE:</p>
+<p style="white-space:pre-wrap;margin:2px 0">        RETURN FAIL  // meaning survived extraction — sign is vulnerable</p>
 
 
 <p>The test <em>passes</em> when extraction <em>damages</em> the sign beyond recovery. A sign that can be summarized without depth loss is not LOS-defended.</p>
