@@ -196,7 +196,7 @@ If a repair introduces a state the renderer has no branch for, TEACH THE RENDERE
   paths outside the sparse definition — including files the session itself WROTE (the #1004/#1250
   canonical poems were refused at the swap commit while every derived surface shipped; origin held
   the displacement for an hour). RULE: sparse-add every path BEFORE writing to it; after every
-  `git add`, run `git status --short` and treat ANY remaining ` M` as a refusal, not noise. Corollary:
+  `git add`, run `git status --short` and treat ANY remaining ` M` as a refusal, not noise. VERIFICATION PATTERN RULE (2026-08-04, cost one blind wave): propagation checks must grep the exact success string ("record page regenerated") — counting lines that merely contain "page regen" counts FAILURES as successes. Corollary:
   builders may also REWRITE tracked files from partial state (robots.txt lost its agent-guidance
   block + Sitemap line, second instance of the class) — diff-inspect unexpected modifications; restore,
   never commit, truncations.
