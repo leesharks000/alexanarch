@@ -45,6 +45,30 @@ def dc_type(d):
 DISP = ROOT / "data" / "audit" / "registration_dispositions.json"
 
 
+
+def relations_for(d, by_n, site="https://www.alexanarch.org"):
+    """Forward pointers for dc:relation: immediate successor, chain-terminal head
+    (older versions point to the most recent), and full-version pointer for
+    metadata-capture records. URLs only; freetext related[] entries are not
+    emitted (not URIs). MANUS-approved 2026-08-04."""
+    rels = []
+    succ = d.get("superseded_by_deposit_number")
+    if succ and succ in by_n:
+        rels.append(f"{site}/s/records/{succ}/")
+        seen, cur = {d.get("deposit_number"), succ}, succ
+        while True:
+            nxt = by_n[cur].get("superseded_by_deposit_number")
+            if not nxt or nxt in seen or nxt not in by_n:
+                break
+            seen.add(nxt); cur = nxt
+        if cur != succ:
+            rels.append(f"{site}/s/records/{cur}/")
+    fv = (d.get("body_status") or {}).get("full_version") if isinstance(d.get("body_status"), dict) else None
+    if isinstance(fv, dict) and fv.get("deposit_number"):
+        rels.append(f"{site}/s/records/{fv['deposit_number']}/")
+    return rels
+
+
 def main():
     reg = json.loads(REG.read_text())
     disp = {}
@@ -52,6 +76,7 @@ def main():
         disp = json.loads(DISP.read_text()).get("dispositions", {})
     recs = []
     families = set()
+    by_n = {x.get("deposit_number"): x for x in reg["deposits"]}
     for d in reg["deposits"]:
         n = d.get("deposit_number")
         if not n:
@@ -89,6 +114,7 @@ def main():
                 ["completeness:metadata-capture"] if bs.get("class") == "metadata_capture"
                 else ["completeness:full"]),
             "deleted": bool(d.get("status") == "WITHDRAWN"),
+            "relations": relations_for(d, by_n),
         })
     recs.sort(key=lambda r: r["id"])
     stamps = [r["datestamp"] for r in recs if r["datestamp"]]

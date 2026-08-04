@@ -83,6 +83,7 @@ ${creatorId}
       <dc:identifier>https://www.alexanarch.org/s/records/${r.id}/</dc:identifier>
       <dc:identifier>${esc(r.axn)}</dc:identifier>
       <dc:description>${esc(r.description)}</dc:description>
+${(r.relations || []).map((u) => `      <dc:relation>${esc(u)}</dc:relation>`).join('\n')}
       <dc:publisher>Alexanarch — Crimson Hexagonal Archive</dc:publisher>
       <dc:language>eng</dc:language>
 ${subj}
