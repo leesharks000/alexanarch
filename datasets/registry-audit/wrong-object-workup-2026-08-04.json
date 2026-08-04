@@ -1,0 +1,546 @@
+{
+ "artifact": "wrong-object-workup",
+ "version": "1.0",
+ "date": "2026-08-04",
+ "operator": "TACHYON (MANUS session, in-thread)",
+ "scope": "36 WITHHOLD records with WRONG_OBJECT identity at audit freeze 055429ac",
+ "finding_classes": {
+  "cross_seating": "Displaced bodies whose rightful home records exist in-registry (recovery-by-internal-witness candidates): e.g. #1250 needs \"The reward of love\" currently mis-seated in #1004; #1270 content belongs to #1054; ratification records #1260/#1261 -> #765/#764.",
+  "replicated_body": "One body seated under many identities: Sappho Canon Provenance Node under #1014/#1015/#1018/#1020/#1021 (rightful poet-specific nodes to be hunted); NH-OS DOI Registry v7.0 under #1168/#1170/#1251; MPAI Alice Thornburgh under #980/#981.",
+  "doi_supersession_pending": "#1014->10.5281/zenodo.20629192, #1015->same, #1018->...202, #1020->...212 (resolve via doi-resolution-index before pointer inscription); #1121->deposit #329.",
+  "audit_default": "Where the named object cannot be recovered: quarantine mis-seated body as evidence, reclassify metadata-capture, expose metadata-only (per-row audit recommendations)."
+ },
+ "match_graph": {
+  "982": [
+   668,
+   669,
+   984
+  ],
+  "984": [
+   668,
+   669
+  ],
+  "1004": [
+   1250
+  ],
+  "1014": [
+   179,
+   1019
+  ],
+  "1015": [
+   179,
+   1019
+  ],
+  "1018": [
+   179,
+   1019
+  ],
+  "1020": [
+   179,
+   1019
+  ],
+  "1021": [
+   179,
+   1019
+  ],
+  "1023": [
+   198
+  ],
+  "1168": [
+   11,
+   31,
+   320,
+   323,
+   327
+  ],
+  "1170": [
+   11,
+   31,
+   320,
+   323,
+   327
+  ],
+  "1204": [
+   183,
+   1029
+  ],
+  "1208": [
+   844,
+   1230
+  ],
+  "1214": [
+   836
+  ],
+  "1215": [
+   835
+  ],
+  "1250": [
+   184
+  ],
+  "1251": [
+   11,
+   31,
+   320,
+   323,
+   327
+  ],
+  "1252": [
+   406
+  ],
+  "1260": [
+   765
+  ],
+  "1261": [
+   764
+  ],
+  "1270": [
+   1054
+  ],
+  "1277": [
+   406
+  ],
+  "1343": [
+   38,
+   950,
+   1079
+  ],
+  "1356": [
+   839,
+   979,
+   983,
+   1357,
+   1358
+  ],
+  "1357": [
+   839,
+   979,
+   983,
+   1356,
+   1358
+  ],
+  "1358": [
+   839,
+   979,
+   983,
+   1356,
+   1357
+  ],
+  "1373": [
+   109
+  ],
+  "1376": [
+   124
+  ],
+  "1393": [
+   160,
+   759,
+   1196,
+   1201
+  ]
+ },
+ "next_session_queue": [
+  "1. Verify each home-candidate by content (not title): fetch candidate record bodies, confirm the displaced body is the complete named object.",
+  "2. Execute verified cross-seat recoveries as R1c-class repairs (staged_body from internal witness; ledger row per record; propagate batch).",
+  "3. Resolve DOI-supersession quartet via data/doi-resolution-index.json; inscribe superseded_by_deposit_number where target exists.",
+  "4. Remaining unrecoverable: metadata-capture reclassification wave per audit default, then disposition review.",
+  "5. Records with no in-registry home (7): #959,#1121,#1142,#1193,#1347 tail — external hunt (rhizome repos, Wayback, past threads) or Lacuna."
+ ],
+ "workup_rows": [
+  {
+   "n": 959,
+   "title": "Hexagonal OS: Interface Build Files v0.4",
+   "rv": "v0.1-semi",
+   "path": "data/texts/AXN-03CB-text.md",
+   "hist": 2,
+   "body1": "# LOGOTIC PROGRAMMING",
+   "obs": "LOGOTIC PROGRAMMING — Draft v0.4",
+   "rec": "Quarantine. Recover the actual Hexagonal OS build-files object or reseat this body under its Logotic Programmi",
+   "rel": "{}"
+  },
+  {
+   "n": 980,
+   "title": "Hexagonal Deposit Registry — Alice Thornburgh — 06.THORN",
+   "rv": "v0.1-semi",
+   "path": "data/texts/AXN-03E0-text.md",
+   "hist": 2,
+   "body1": "# MPAI-LAL-AT-01: Alice Thornburgh",
+   "obs": "MPAI-LAL-AT-01: Alice Thornburgh — Formal Identity Disam",
+   "rec": "Quarantine and recover the intended deposit registry; preserve the mis-seated MPAI body as evidence.",
+   "rel": "{}"
+  },
+  {
+   "n": 981,
+   "title": "Hexagonal Deposit Registry — Alice Thornburgh — 06.THORN",
+   "rv": "v0.1-semi",
+   "path": "data/texts/AXN-03E1-text.md",
+   "hist": 2,
+   "body1": "# MPAI-LAL-AT-01: Alice Thornburgh",
+   "obs": "MPAI-LAL-AT-01: Alice Thornburgh — Formal Identity Disam",
+   "rec": "Quarantine and recover the intended registry or clarify why two registry identifiers serve one MPAI packet.",
+   "rel": "{}"
+  },
+  {
+   "n": 982,
+   "title": "pessoagraph.org — Pessoa Knowledge Graph Visualization v",
+   "rv": "v0.2-restored",
+   "path": "data/texts/AXN-03E2-text.md",
+   "hist": 2,
+   "body1": "# pessoagraph.org — Pessoa Knowledge Graph Visualization v1.0 — Intera",
+   "obs": "The Pessoa Knowledge Graph — EA-PKG-01 v1.0 foundational",
+   "rec": "Quarantine; recover the visualization/source code or reseat the foundational paper under its own identifier.",
+   "rel": "{}"
+  },
+  {
+   "n": 984,
+   "title": "pessoagraph.org — The Pessoa Knowledge Graph: A Scholarl",
+   "rv": "v0.2-restored",
+   "path": "data/texts/AXN-03E4-text.md",
+   "hist": 2,
+   "body1": "# pessoagraph.org — The Pessoa Knowledge Graph: A Scholarly Resource f",
+   "obs": "The Pessoa Knowledge Graph — EA-PKG-01 v1.0 foundational",
+   "rec": "Quarantine; recover the actual scholarly-resource brief or relate this body to the correct foundational-paper ",
+   "rel": "{}"
+  },
+  {
+   "n": 1004,
+   "title": "I would have loved you — Lee Sharks — New Human 2",
+   "rv": "v0.1-semi",
+   "path": "data/texts/AXN-03F8-text.md",
+   "hist": 2,
+   "body1": "# The reward of love",
+   "obs": "The reward of love (06.NH.SHARKS.02), not I would have l",
+   "rec": "Quarantine the mis-seated body; recover the named object from verified witnesses. Until then expose metadata-o",
+   "rel": "{}"
+  },
+  {
+   "n": 1014,
+   "title": "[DUPLICATE — SUPERSEDED → DOI: 10.5281/zenodo.20629192] ",
+   "rv": "v0.1-semi",
+   "path": "data/texts/AXN-0402-text.md",
+   "hist": 2,
+   "body1": "# Sappho -- Canon Provenance Node",
+   "obs": "Sappho — Canon Provenance Node under Allen Ginsberg iden",
+   "rec": "Quarantine the mis-seated body; recover the named object from verified witnesses. Until then expose metadata-o",
+   "rel": "{\"superseded_by\": [\"10.5281/zenodo.20629192\"]}"
+  },
+  {
+   "n": 1015,
+   "title": "[DUPLICATE — SUPERSEDED → DOI: 10.5281/zenodo.20629192] ",
+   "rv": "v0.1-semi",
+   "path": "data/texts/AXN-0403-text.md",
+   "hist": 2,
+   "body1": "# Sappho -- Canon Provenance Node",
+   "obs": "Sappho — Canon Provenance Node under Allen Ginsberg iden",
+   "rec": "Quarantine the mis-seated body; recover the named object from verified witnesses. Until then expose metadata-o",
+   "rel": "{\"superseded_by\": [\"10.5281/zenodo.20629192\"]}"
+  },
+  {
+   "n": 1018,
+   "title": "[DUPLICATE — SUPERSEDED → DOI: 10.5281/zenodo.20629202] ",
+   "rv": "v0.1-semi",
+   "path": "data/texts/AXN-0406-text.md",
+   "hist": 2,
+   "body1": "# Sappho -- Canon Provenance Node",
+   "obs": "Sappho — Canon Provenance Node under Emily Dickinson ide",
+   "rec": "Quarantine the mis-seated body; recover the named object from verified witnesses. Until then expose metadata-o",
+   "rel": "{\"superseded_by\": [\"10.5281/zenodo.20629202\"]}"
+  },
+  {
+   "n": 1020,
+   "title": "[DUPLICATE — SUPERSEDED → DOI: 10.5281/zenodo.20629212] ",
+   "rv": "v0.1-semi",
+   "path": "data/texts/AXN-0408-text.md",
+   "hist": 2,
+   "body1": "# Sappho -- Canon Provenance Node",
+   "obs": "Sappho — Canon Provenance Node under Achilles identifier",
+   "rec": "Quarantine the mis-seated body; recover the named object from verified witnesses. Until then expose metadata-o",
+   "rel": "{\"superseded_by\": [\"10.5281/zenodo.20629212\"]}"
+  },
+  {
+   "n": 1021,
+   "title": "[SUPERSEDED — NO REGISTRY STANDING] Ezra Pound — Canon P",
+   "rv": "v0.1-semi",
+   "path": "data/texts/AXN-0409-text.md",
+   "hist": 2,
+   "body1": "# Sappho -- Canon Provenance Node",
+   "obs": "Sappho — Canon Provenance Node under Ezra Pound identifi",
+   "rec": "Quarantine the mis-seated body; recover the named object from verified witnesses. Until then expose metadata-o",
+   "rel": "{}"
+  },
+  {
+   "n": 1023,
+   "title": "Generative Monoculture: Model Collapse in Code as System",
+   "rv": "v0.1-semi",
+   "path": "data/texts/AXN-040B-text.md",
+   "hist": 2,
+   "body1": "# The Self-Audit Module Dissolved: Total Provenance Erasure of the Pro",
+   "obs": "The Self-Audit Module Dissolved (EA-WG-SELF-AUDIT-01 v1.",
+   "rec": "Quarantine the mis-seated body; recover the named object from verified witnesses. Until then expose metadata-o",
+   "rel": "{}"
+  },
+  {
+   "n": 1121,
+   "title": "Pearl and Other Poems — Crimson Hexagon Archive",
+   "rv": "v1.0",
+   "path": "data/texts/AXN-0472-text.md",
+   "hist": 1,
+   "body1": "---",
+   "obs": "Lee Sharks (metadata/provenance packet); primary 84-page",
+   "rec": "WITHHOLD as the book. Seat and hash-bind the 84-page artwork, or retitle this record as a metadata/provenance ",
+   "rel": "{\"superseded_by\": [\"deposit #329\"]}"
+  },
+  {
+   "n": 1142,
+   "title": "THE THUMB Formal Operators for the Phase X Quintuple — C",
+   "rv": "v1.0",
+   "path": "data/texts/AXN-0487-text.md",
+   "hist": 1,
+   "body1": "---",
+   "obs": "Rebekah Cranes — Phase X Navigation Map / IDP v7.0",
+   "rec": "WITHHOLD as THE THUMB. The seated object is the Phase X Navigation Map v7.0 with a different DOI and author.",
+   "rel": "{\"other\": [\"seated body DOI 10.5281/zenodo.18452156\", \"registry/title DOI family"
+  },
+  {
+   "n": 1168,
+   "title": "Untitled — Crimson Hexagon Archive",
+   "rv": "v1.0",
+   "path": "data/texts/AXN-04A1-text.md",
+   "hist": 1,
+   "body1": "---",
+   "obs": "CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0",
+   "rec": "Withhold and retitle/rebind as DOI Registry v7.0 with DOI 10.5281/zenodo.19055255, or seat the intended untitl",
+   "rel": "{}"
+  },
+  {
+   "n": 1170,
+   "title": "🫵❓2️⃣4️⃣🗓️ = ❓ — Crimson Hexagon Archive",
+   "rv": "v1.0",
+   "path": "data/texts/AXN-04A3-text.md",
+   "hist": 1,
+   "body1": "---",
+   "obs": "CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0",
+   "rec": "Withhold until the emoji work is seated; the current body is the unrelated DOI Registry v7.0.",
+   "rel": "{}"
+  },
+  {
+   "n": 1193,
+   "title": "from The Crimson Hexagon — Origin Text of the Crimson He",
+   "rv": "v1.0",
+   "path": "data/texts/AXN-04BA-text.md",
+   "hist": 3,
+   "body1": "---",
+   "obs": "The Provenance of Jack Feist: A Provenance Resolution Do",
+   "rec": "Withhold until the 2015 origin text itself is seated; alternatively retitle this record as The Provenance of J",
+   "rel": "{}"
+  },
+  {
+   "n": 1204,
+   "title": "new human 2: a distributed journal of voice — Charter, C",
+   "rv": "v1.0",
+   "path": "data/texts/AXN-04C5-text.md",
+   "hist": 1,
+   "body1": "---",
+   "obs": "Zbigniew Mrozony — Provenance Anchor",
+   "rec": "Withhold unqualified registration until the correct object or historical version is seated and identity-bound.",
+   "rel": "{}"
+  },
+  {
+   "n": 1208,
+   "title": "maryleelabor.org: Source Code for the Underwater Constru",
+   "rv": "v1.0",
+   "path": "data/texts/AXN-04C9-text.md",
+   "hist": 1,
+   "body1": "---",
+   "obs": "An Open Letter from Mary Lee Sharks to Jim Ware (draft)",
+   "rec": "Withhold unqualified registration until the correct object or historical version is seated and identity-bound.",
+   "rel": "{}"
+  },
+  {
+   "n": 1214,
+   "title": "Crimson Hexagonal Archive: Term Index v0.1 — Systematic ",
+   "rv": "v1.0",
+   "path": "data/texts/AXN-04CF-text.md",
+   "hist": 1,
+   "body1": "---",
+   "obs": "Crimson Hexagonal Archive: Term Index Work Plan",
+   "rec": "Withhold unqualified registration until the correct object or historical version is seated and identity-bound.",
+   "rel": "{}"
+  },
+  {
+   "n": 1215,
+   "title": "The Conveyor Belt and the Compression Machine: OKF Witho",
+   "rv": "v1.0",
+   "path": "data/texts/AXN-04D0-text.md",
+   "hist": 1,
+   "body1": "---",
+   "obs": "The Conveyor Belt and the Compression Machine v1.2",
+   "rec": "Withhold unqualified registration until the correct object or historical version is seated and identity-bound.",
+   "rel": "{}"
+  },
+  {
+   "n": 1250,
+   "title": "The reward of love — Lee Sharks — New Human 2",
+   "rv": "v1.0",
+   "path": "data/texts/AXN-04F3-text.md",
+   "hist": 1,
+   "body1": "---",
+   "obs": "Who Is Lee Sharks, to Forgive Ezra Pound? v1.1",
+   "rec": "Withhold unqualified registration until the correct object or historical version is seated and identity-bound.",
+   "rel": "{}"
+  },
+  {
+   "n": 1251,
+   "title": "Crimson Hexagon / NH-OS DOI Registry: Complete Document ",
+   "rv": "v1.0",
+   "path": "data/texts/AXN-04F4-text.md",
+   "hist": 2,
+   "body1": "---",
+   "obs": "CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0 (387 records)",
+   "rec": "Withhold unqualified registration until the correct object or historical version is seated and identity-bound.",
+   "rel": "{}"
+  },
+  {
+   "n": 1252,
+   "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, a",
+   "rv": "v1.0",
+   "path": "data/texts/AXN-04F5-text.md",
+   "hist": 1,
+   "body1": "---",
+   "obs": "Zenodo Metadata: The Epistle Triptych",
+   "rec": "Withhold unqualified registration until the correct object or historical version is seated and identity-bound.",
+   "rel": "{}"
+  },
+  {
+   "n": 1260,
+   "title": "The Semantic Commodity Form — An Extension of Marx Into ",
+   "rv": "v1.0",
+   "path": "data/texts/AXN-04FD-text.md",
+   "hist": 1,
+   "body1": "---",
+   "obs": "Ratification Record — The Semantic Commodity Form",
+   "rec": "Withhold unqualified registration until the correct object or historical version is seated and identity-bound.",
+   "rel": "{}"
+  },
+  {
+   "n": 1261,
+   "title": "The Chaerephon Problem: Heteronymy as Symbolon — Authori",
+   "rv": "v1.0",
+   "path": "data/texts/AXN-04FE-text.md",
+   "hist": 1,
+   "body1": "---",
+   "obs": "Ratification Record — The Chaerephon Problem",
+   "rec": "Withhold unqualified registration until the correct object or historical version is seated and identity-bound.",
+   "rel": "{}"
+  },
+  {
+   "n": 1270,
+   "title": "ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Futur",
+   "rv": "v0.2-restored",
+   "path": "data/texts/AXN-0507-text.md",
+   "hist": 2,
+   "body1": "# ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader — C",
+   "obs": "EA-MPAI-SAPPHO31-01 v1.0: Sappho 31 ≠ Jealousy",
+   "rec": "Withhold unqualified registration until the correct object or historical version is seated and identity-bound.",
+   "rel": "{}"
+  },
+  {
+   "n": 1277,
+   "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, a",
+   "rv": "v0.2-restored",
+   "path": "data/texts/AXN-050E-text.md",
+   "hist": 2,
+   "body1": "# The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizat",
+   "obs": "Zenodo Metadata: The Epistle Triptych",
+   "rec": "Withhold unqualified registration until the correct object or historical version is seated and identity-bound.",
+   "rel": "{}"
+  },
+  {
+   "n": 1343,
+   "title": "Operative Semiotics: A Grundrisse — Public Research Edit",
+   "rv": "v0.2-restored",
+   "path": "data/texts/AXN-0550-text.md",
+   "hist": 2,
+   "body1": "# Operative Semiotics: A Grundrisse — Public Research Edition v1.0 (Dr",
+   "obs": "Operative Semiotics: A Grundrisse — Public Research Edit",
+   "rec": "Withhold until the Grundrisse is seated or retitle/rebind as the executive summary.",
+   "rel": "{}"
+  },
+  {
+   "n": 1347,
+   "title": "Gravity Well Codebase v0.4.1 — Compression, Wrapping, an",
+   "rv": "v1.0",
+   "path": "data/texts/AXN-0554-text.md",
+   "hist": 3,
+   "body1": "# Gravity Well Protocol — v0.4.0",
+   "obs": "Gravity Well Codebase v0.4.1",
+   "rec": "Withhold until the v0.4.1 codebase/specification is seated or rebind as v0.4.0.",
+   "rel": "{}"
+  },
+  {
+   "n": 1356,
+   "title": "Hexagonal Contributor License v1.0 — Rhys Owens — Lunar ",
+   "rv": "v1.0",
+   "path": "data/texts/AXN-055D-text.md",
+   "hist": 2,
+   "body1": "### Rhys Owens -- The Lunar Arm of New Human",
+   "obs": "Hexagonal Contributor License v1.0 — Rhys Owens",
+   "rec": "Withhold until the actual v1.0 license is seated.",
+   "rel": "{}"
+  },
+  {
+   "n": 1357,
+   "title": "Hexagonal Contributor License v3.0 — Alice Thornburgh — ",
+   "rv": "v1.0",
+   "path": "data/texts/AXN-055E-text.md",
+   "hist": 3,
+   "body1": "<!-- 06.SEI.ARCHIVE.PROTOCOL.01 | Derived contributor license — Alice ",
+   "obs": "Hexagonal Contributor License v3.0 — Alice Thornburgh",
+   "rec": "Withhold until the full v3.0 Alice license is seated.",
+   "rel": "{}"
+  },
+  {
+   "n": 1358,
+   "title": "Hexagonal Contributor License v3.0 — Rhys Owens — Lunar ",
+   "rv": "v1.0",
+   "path": "data/texts/AXN-055F-text.md",
+   "hist": 3,
+   "body1": "### Rhys Owens -- The Lunar Arm of New Human",
+   "obs": "Hexagonal Contributor License v3.0 — Rhys Owens",
+   "rec": "Withhold until the actual v3.0 license is seated.",
+   "rel": "{}"
+  },
+  {
+   "n": 1373,
+   "title": "The Semantic Deviation Principle (v2.0 — Framework 15 Op",
+   "rv": "v0.2-restored",
+   "path": "data/texts/AXN-056E-text.md",
+   "hist": 2,
+   "body1": "# The Semantic Deviation Principle (v2.0 — Framework 15 Operational Re",
+   "obs": "The Semantic Deviation Principle v2.0 — Framework 15 Ope",
+   "rec": "Withhold until the actual v2.0 SDP document is seated.",
+   "rel": "{}"
+  },
+  {
+   "n": 1376,
+   "title": "ChatGPT Psychosis: A Love Story — Project Prospectus and",
+   "rv": "v0.2-restored",
+   "path": "data/texts/AXN-0571-text.md",
+   "hist": 2,
+   "body1": "# ChatGPT Psychosis: A Love Story — Project Prospectus and Formal Desi",
+   "obs": "ChatGPT Psychosis: A Love Story — Project Prospectus v0.",
+   "rec": "Withhold until the actual project prospectus is seated.",
+   "rel": "{}"
+  },
+  {
+   "n": 1393,
+   "title": "The Lee Sharks Prize — Certificate of Conferral and Hono",
+   "rv": "v0.2-restored",
+   "path": "data/texts/AXN-0582-text.md",
+   "hist": 2,
+   "body1": "# The Lee Sharks Prize — Certificate of Conferral and Honorary Laureat",
+   "obs": "The Lee Sharks Prestigious 10,000 MacArthur Genius Grant",
+   "rec": "Withhold until the Jess Elgene certificate/license object is seated.",
+   "rel": "{}"
+  }
+ ]
+}
