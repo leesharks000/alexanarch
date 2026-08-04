@@ -4,7 +4,7 @@
  "source_ledger": "alexanarch_audit_merged_ledger_through_0001-0018_v1.0.json",
  "source_ledger_sha256": "7a161d5f6a5abf01fc0c26da783b8c182a552500c3f35a98c2489a762175e1b7",
  "coverage": "#1-#1426 (100%, full frozen corpus)",
- "note": "v4.0: regenerated from the COMPLETE 1426-row merged ledger (LABOR terminal #1-#18 checkpoint seated 2026-08-03). #1-#358 now present. Previous v3.1 covered #359-#1426 only. | TIER-A conversion 2026-08-03: 57 repaired-and-verified rows WITHHOLD->HARVEST_WITH_WARNING (MANUS in-thread); see repair_note per row. | TIER-B conversion 2026-08-03: 8 rows verified by eye and converted; #711 (no v1.1 declaration in body; working draft-01) and #864 (body declares v5 vs registry v6) held WITHHOLD and escalated for adjudication. | #1433 audited AT MINT (forward-audit rule first application, R-1147).",
+ "note": "v4.0: regenerated from the COMPLETE 1426-row merged ledger (LABOR terminal #1-#18 checkpoint seated 2026-08-03). #1-#358 now present. Previous v3.1 covered #359-#1426 only. | TIER-A conversion 2026-08-03: 57 repaired-and-verified rows WITHHOLD->HARVEST_WITH_WARNING (MANUS in-thread); see repair_note per row. | TIER-B conversion 2026-08-03: 8 rows verified by eye and converted; #711 (no v1.1 declaration in body; working draft-01) and #864 (body declares v5 vs registry v6) held WITHHOLD and escalated for adjudication. | #1433 audited AT MINT (forward-audit rule first application, R-1147). | #1427-#1432 forward-audit catch-up 2026-08-04.",
  "severity_totals": {
   "P1": 519,
   "P2": 464,
@@ -7224,6 +7224,36 @@
    "rp": "R4"
   },
   "1433": {
+   "d": "HARVEST",
+   "sev": "OK",
+   "rp": "R0-none"
+  },
+  "1427": {
+   "d": "HARVEST",
+   "sev": "OK",
+   "rp": "R0-none"
+  },
+  "1428": {
+   "d": "HARVEST",
+   "sev": "OK",
+   "rp": "R0-none"
+  },
+  "1429": {
+   "d": "HARVEST",
+   "sev": "OK",
+   "rp": "R0-none"
+  },
+  "1430": {
+   "d": "HARVEST",
+   "sev": "OK",
+   "rp": "R0-none"
+  },
+  "1431": {
+   "d": "HARVEST",
+   "sev": "OK",
+   "rp": "R0-none"
+  },
+  "1432": {
    "d": "HARVEST",
    "sev": "OK",
    "rp": "R0-none"
