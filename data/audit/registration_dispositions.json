@@ -4,7 +4,7 @@
  "source_ledger": "alexanarch_audit_merged_ledger_through_0001-0018_v1.0.json",
  "source_ledger_sha256": "7a161d5f6a5abf01fc0c26da783b8c182a552500c3f35a98c2489a762175e1b7",
  "coverage": "#1-#1426 (100%, full frozen corpus)",
- "note": "v4.0: regenerated from the COMPLETE 1426-row merged ledger (LABOR terminal #1-#18 checkpoint seated 2026-08-03). #1-#358 now present. Previous v3.1 covered #359-#1426 only.",
+ "note": "v4.0: regenerated from the COMPLETE 1426-row merged ledger (LABOR terminal #1-#18 checkpoint seated 2026-08-03). #1-#358 now present. Previous v3.1 covered #359-#1426 only. | TIER-A conversion 2026-08-03: 57 repaired-and-verified rows WITHHOLD->HARVEST_WITH_WARNING (MANUS in-thread); see repair_note per row.",
  "severity_totals": {
   "P1": 519,
   "P2": 464,
@@ -13,9 +13,9 @@
   "P3": 35
  },
  "disposition_totals": {
-  "HARVEST_WITH_WARNING": 991,
+  "HARVEST_WITH_WARNING": 1050,
   "HARVEST": 304,
-  "WITHHOLD": 131
+  "WITHHOLD": 72
  },
  "dispositions": {
   "1": {
@@ -2731,9 +2731,10 @@
    "rp": "R3"
   },
   "543": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0649,R-0997); registry version verified == seated body declaration at HEAD."
   },
   "544": {
    "d": "HARVEST",
@@ -3301,9 +3302,10 @@
    "rp": "R3"
   },
   "657": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0065,R-0763,R-0977); registry version verified == seated body declaration at HEAD."
   },
   "658": {
    "d": "HARVEST",
@@ -3311,9 +3313,10 @@
    "rp": "R3"
   },
   "659": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0067,R-0765,R-0978); registry version verified == seated body declaration at HEAD."
   },
   "660": {
    "d": "HARVEST_WITH_WARNING",
@@ -3366,9 +3369,10 @@
    "rp": "R2"
   },
   "670": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0076,R-0776,R-0998); registry version verified == seated body declaration at HEAD."
   },
   "671": {
    "d": "HARVEST",
@@ -3481,9 +3485,10 @@
    "rp": "R2"
   },
   "693": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0097,R-0799,R-0979); registry version verified == seated body declaration at HEAD."
   },
   "694": {
    "d": "HARVEST_WITH_WARNING",
@@ -3491,9 +3496,10 @@
    "rp": "R2"
   },
   "695": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0099,R-0801,R-0980); registry version verified == seated body declaration at HEAD."
   },
   "696": {
    "d": "HARVEST_WITH_WARNING",
@@ -3551,14 +3557,16 @@
    "rp": "R2"
   },
   "707": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0110,R-0813,R-0981); registry version verified == seated body declaration at HEAD."
   },
   "708": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0111,R-0814,R-1001); registry version verified == seated body declaration at HEAD."
   },
   "709": {
    "d": "HARVEST_WITH_WARNING",
@@ -3601,9 +3609,10 @@
    "rp": "R2"
   },
   "717": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0120,R-0823,R-1003); registry version verified == seated body declaration at HEAD."
   },
   "718": {
    "d": "WITHHOLD",
@@ -3626,9 +3635,10 @@
    "rp": "R3"
   },
   "722": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0125,R-0828,R-1007); registry version verified == seated body declaration at HEAD."
   },
   "723": {
    "d": "HARVEST_WITH_WARNING",
@@ -3641,19 +3651,22 @@
    "rp": "R2"
   },
   "725": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0128,R-0831,R-1008); registry version verified == seated body declaration at HEAD."
   },
   "726": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0129,R-0832,R-1009); registry version verified == seated body declaration at HEAD."
   },
   "727": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0130,R-0833,R-1010); registry version verified == seated body declaration at HEAD."
   },
   "728": {
    "d": "HARVEST_WITH_WARNING",
@@ -3661,9 +3674,10 @@
    "rp": "R2"
   },
   "729": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0132,R-0835,R-1011); registry version verified == seated body declaration at HEAD."
   },
   "730": {
    "d": "HARVEST_WITH_WARNING",
@@ -3676,9 +3690,10 @@
    "rp": "R0"
   },
   "732": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0135,R-0838,R-1013); registry version verified == seated body declaration at HEAD."
   },
   "733": {
    "d": "HARVEST",
@@ -3691,19 +3706,22 @@
    "rp": "R2"
   },
   "735": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0138,R-0841,R-1014); registry version verified == seated body declaration at HEAD."
   },
   "736": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0139,R-0842,R-1015); registry version verified == seated body declaration at HEAD."
   },
   "737": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0140,R-0843,R-1016); registry version verified == seated body declaration at HEAD."
   },
   "738": {
    "d": "HARVEST_WITH_WARNING",
@@ -3716,24 +3734,28 @@
    "rp": "R2"
   },
   "740": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0143,R-0846,R-1017); registry version verified == seated body declaration at HEAD."
   },
   "741": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0847,R-1018); registry version verified == seated body declaration at HEAD."
   },
   "742": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0144,R-0848,R-1019); registry version verified == seated body declaration at HEAD."
   },
   "743": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0145,R-0849,R-1020); registry version verified == seated body declaration at HEAD."
   },
   "744": {
    "d": "HARVEST",
@@ -3751,9 +3773,10 @@
    "rp": "R3"
   },
   "747": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0853,R-1021); registry version verified == seated body declaration at HEAD."
   },
   "748": {
    "d": "HARVEST",
@@ -3791,9 +3814,10 @@
    "rp": "R2"
   },
   "755": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0155,R-0861,R-0982); registry version verified == seated body declaration at HEAD."
   },
   "756": {
    "d": "HARVEST_WITH_WARNING",
@@ -3806,9 +3830,10 @@
    "rp": "R2"
   },
   "758": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0158,R-0864,R-1022); registry version verified == seated body declaration at HEAD."
   },
   "759": {
    "d": "HARVEST_WITH_WARNING",
@@ -3831,9 +3856,10 @@
    "rp": "R2"
   },
   "763": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0163,R-0869,R-1023); registry version verified == seated body declaration at HEAD."
   },
   "764": {
    "d": "HARVEST_WITH_WARNING",
@@ -3921,9 +3947,10 @@
    "rp": "R0"
   },
   "781": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0181,R-0887,R-1025); registry version verified == seated body declaration at HEAD."
   },
   "782": {
    "d": "HARVEST_WITH_WARNING",
@@ -3931,9 +3958,10 @@
    "rp": "R2"
   },
   "783": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0183,R-0889,R-1026); registry version verified == seated body declaration at HEAD."
   },
   "784": {
    "d": "WITHHOLD",
@@ -3941,9 +3969,10 @@
    "rp": "R0"
   },
   "785": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0185,R-0891,R-1028); registry version verified == seated body declaration at HEAD."
   },
   "786": {
    "d": "HARVEST_WITH_WARNING",
@@ -3951,9 +3980,10 @@
    "rp": "R2"
   },
   "787": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0187,R-0893,R-1029); registry version verified == seated body declaration at HEAD."
   },
   "788": {
    "d": "HARVEST_WITH_WARNING",
@@ -3971,9 +4001,10 @@
    "rp": "R2"
   },
   "791": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0191,R-0897,R-1030); registry version verified == seated body declaration at HEAD."
   },
   "792": {
    "d": "HARVEST_WITH_WARNING",
@@ -4101,9 +4132,10 @@
    "rp": "R2"
   },
   "817": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0217,R-0923,R-0983); registry version verified == seated body declaration at HEAD."
   },
   "818": {
    "d": "WITHHOLD",
@@ -4111,9 +4143,10 @@
    "rp": "R0"
   },
   "819": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0925,R-1031); registry version verified == seated body declaration at HEAD."
   },
   "820": {
    "d": "HARVEST_WITH_WARNING",
@@ -4141,9 +4174,10 @@
    "rp": "R2"
   },
   "825": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0224,R-0931,R-0984); registry version verified == seated body declaration at HEAD."
   },
   "826": {
    "d": "HARVEST_WITH_WARNING",
@@ -4166,9 +4200,10 @@
    "rp": "R2"
   },
   "830": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0229,R-0936,R-1032); registry version verified == seated body declaration at HEAD."
   },
   "831": {
    "d": "HARVEST_WITH_WARNING",
@@ -4176,24 +4211,28 @@
    "rp": "R2"
   },
   "832": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0231,R-0938,R-1033); registry version verified == seated body declaration at HEAD."
   },
   "833": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0232,R-0939,R-1048); registry version verified == seated body declaration at HEAD."
   },
   "834": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0233,R-0940,R-1034); registry version verified == seated body declaration at HEAD."
   },
   "835": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0234,R-0941,R-1035); registry version verified == seated body declaration at HEAD."
   },
   "836": {
    "d": "HARVEST_WITH_WARNING",
@@ -4201,14 +4240,16 @@
    "rp": "R2"
   },
   "837": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0236,R-0943,R-1036); registry version verified == seated body declaration at HEAD."
   },
   "838": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0237,R-0944,R-1037); registry version verified == seated body declaration at HEAD."
   },
   "839": {
    "d": "HARVEST_WITH_WARNING",
@@ -4226,14 +4267,16 @@
    "rp": "R2"
   },
   "842": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0241,R-0948,R-0985); registry version verified == seated body declaration at HEAD."
   },
   "843": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0242,R-0949,R-1038); registry version verified == seated body declaration at HEAD."
   },
   "844": {
    "d": "HARVEST_WITH_WARNING",
@@ -4241,14 +4284,16 @@
    "rp": "R2"
   },
   "845": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0244,R-0951,R-1039); registry version verified == seated body declaration at HEAD."
   },
   "846": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0245,R-0952,R-1040); registry version verified == seated body declaration at HEAD."
   },
   "847": {
    "d": "HARVEST_WITH_WARNING",
@@ -4366,24 +4411,28 @@
    "rp": "R2"
   },
   "870": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0268,R-1042); registry version verified == seated body declaration at HEAD."
   },
   "871": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-1043); registry version verified == seated body declaration at HEAD."
   },
   "872": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0269,R-1044); registry version verified == seated body declaration at HEAD."
   },
   "873": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0270,R-1049); registry version verified == seated body declaration at HEAD."
   },
   "874": {
    "d": "HARVEST",
@@ -4516,14 +4565,16 @@
    "rp": "R2"
   },
   "900": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0291,R-0987,R-0990); registry version verified == seated body declaration at HEAD."
   },
   "901": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0292,R-0991); registry version verified == seated body declaration at HEAD."
   },
   "902": {
    "d": "HARVEST_WITH_WARNING",
@@ -4806,9 +4857,10 @@
    "rp": "R3"
   },
   "958": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0989); registry version verified == seated body declaration at HEAD."
   },
   "959": {
    "d": "WITHHOLD",
@@ -5081,9 +5133,10 @@
    "rp": "R2"
   },
   "1013": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0992); registry version verified == seated body declaration at HEAD."
   },
   "1014": {
    "d": "WITHHOLD",
@@ -5841,9 +5894,10 @@
    "rp": "R1"
   },
   "1165": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-1052); registry version verified == seated body declaration at HEAD."
   },
   "1166": {
    "d": "HARVEST_WITH_WARNING",
@@ -7001,9 +7055,10 @@
    "rp": "R2"
   },
   "1397": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0994); registry version verified == seated body declaration at HEAD."
   },
   "1398": {
    "d": "HARVEST_WITH_WARNING",
@@ -7016,9 +7071,10 @@
    "rp": "R1"
   },
   "1400": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0995); registry version verified == seated body declaration at HEAD."
   },
   "1401": {
    "d": "HARVEST_WITH_WARNING",
@@ -7031,9 +7087,10 @@
    "rp": "R1"
   },
   "1403": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-A conversion 2026-08-03: Lacuna Mark seated (EA-LACUNA-PROTOCOL-01) after exhausted hunt; record honestly declares the v7.2 absence; registry version aligned (R-1069). Repairs: R-0996"
   },
   "1404": {
    "d": "HARVEST",

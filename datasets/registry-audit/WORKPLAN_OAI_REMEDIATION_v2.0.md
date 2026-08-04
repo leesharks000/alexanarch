@@ -16,6 +16,7 @@ Register the Alexanarch OAI-PMH endpoint honestly, and repair the audited regist
 
 | Date | Ruling | By |
 |---|---|---|
+| 2026-08-03 | TIER-A CONVERSION (MANUS in-thread): 57 repaired-and-verified WITHHOLD rows converted to HARVEST_WITH_WARNING with per-row repair_note citing inscribed R-numbers; verification = registry version == seated-body primary declaration at HEAD (49 strict + 7 decorated-header + #1403 Lacuna). #1403 registry version aligned to "v7.2 (lacuna)" (R-1069). WITHHOLD 129→72; oai-index 1,299→1,356; zero WITHHOLD leaks verified; central registry rebuilt with full kernel+symbolon inputs (1,435 pos / 1,100 kernels). Open frontier: 45 never-repaired + 17 residue (Tier B eyes: 635,685,700,711,780,784,818,863,864,1024; Tier C incl. 892-class sidecar split on AX-R1, #1417 re-identify). | MANUS/TACHYON |
 | 2026-07-31 | Gating policy: exclude WITHHOLD from the OAI index; include HARVEST and HARVEST_WITH_WARNING with audit-status sets and dc:description capsules; unaudited deposits included in set `audit:pending`. | MANUS |
 | 2026-07-31 | Wave order and repair-ledger discipline adopted as specified in §8. | MANUS |
 | 2026-07-31 | Creator policy: drafted at §7, **pending MANUS ratification** (rulings CP-R1–CP-R4). | — |
