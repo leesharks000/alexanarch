@@ -4,7 +4,7 @@
  "source_ledger": "alexanarch_audit_merged_ledger_through_0001-0018_v1.0.json",
  "source_ledger_sha256": "7a161d5f6a5abf01fc0c26da783b8c182a552500c3f35a98c2489a762175e1b7",
  "coverage": "#1-#1426 (100%, full frozen corpus)",
- "note": "v4.0: regenerated from the COMPLETE 1426-row merged ledger (LABOR terminal #1-#18 checkpoint seated 2026-08-03). #1-#358 now present. Previous v3.1 covered #359-#1426 only. | TIER-A conversion 2026-08-03: 57 repaired-and-verified rows WITHHOLD->HARVEST_WITH_WARNING (MANUS in-thread); see repair_note per row.",
+ "note": "v4.0: regenerated from the COMPLETE 1426-row merged ledger (LABOR terminal #1-#18 checkpoint seated 2026-08-03). #1-#358 now present. Previous v3.1 covered #359-#1426 only. | TIER-A conversion 2026-08-03: 57 repaired-and-verified rows WITHHOLD->HARVEST_WITH_WARNING (MANUS in-thread); see repair_note per row. | TIER-B conversion 2026-08-03: 8 rows verified by eye and converted; #711 (no v1.1 declaration in body; working draft-01) and #864 (body declares v5 vs registry v6) held WITHHOLD and escalated for adjudication.",
  "severity_totals": {
   "P1": 519,
   "P2": 464,
@@ -13,9 +13,9 @@
   "P3": 35
  },
  "disposition_totals": {
-  "HARVEST_WITH_WARNING": 1050,
+  "HARVEST_WITH_WARNING": 1058,
   "HARVEST": 304,
-  "WITHHOLD": 72
+  "WITHHOLD": 64
  },
  "dispositions": {
   "1": {
@@ -3192,9 +3192,10 @@
    "rp": "R2"
   },
   "635": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-B conversion 2026-08-03 (per-record eyeball, MANUS in-thread): withhold reason cured by inscribed repairs (R-0044,R-0741,R-0976); verified body l.3 \"Version 2.2\"."
   },
   "636": {
    "d": "HARVEST_WITH_WARNING",
@@ -3445,9 +3446,10 @@
    "rp": "R2"
   },
   "685": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-B conversion 2026-08-03 (per-record eyeball, MANUS in-thread): withhold reason cured by inscribed repairs (R-0089,R-0791,R-0999); verified body \"Registry version: 2.0\"."
   },
   "686": {
    "d": "HARVEST_WITH_WARNING",
@@ -3522,9 +3524,10 @@
    "rp": "R2"
   },
   "700": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-B conversion 2026-08-03 (per-record eyeball, MANUS in-thread): withhold reason cured by inscribed repairs (R-0104,R-0806,R-1000); verified body \"Document ID: EA-SOC-01 v2\"."
   },
   "701": {
    "d": "HARVEST",
@@ -3942,9 +3945,10 @@
    "rp": "R2"
   },
   "780": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-B conversion 2026-08-03 (per-record eyeball, MANUS in-thread): withhold reason cured by inscribed repairs (R-0180,R-0886,R-1024); verified body title \"(v2)\"."
   },
   "781": {
    "d": "HARVEST_WITH_WARNING",
@@ -3964,9 +3968,10 @@
    "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0183,R-0889,R-1026); registry version verified == seated body declaration at HEAD."
   },
   "784": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-B conversion 2026-08-03 (per-record eyeball, MANUS in-thread): withhold reason cured by inscribed repairs (R-0184,R-0890,R-1027); verified body \"Deposit candidate (v3, supersedes v1/v2)\"."
   },
   "785": {
    "d": "HARVEST_WITH_WARNING",
@@ -4138,9 +4143,10 @@
    "repair_note": "TIER-A conversion 2026-08-03: withhold reason cured by inscribed repairs (R-0217,R-0923,R-0983); registry version verified == seated body declaration at HEAD."
   },
   "818": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-B conversion 2026-08-03 (per-record eyeball, MANUS in-thread): withhold reason cured by inscribed repairs (R-0218,R-0924,R-1047); verified body title \"Chronoarithmics 2.1\"."
   },
   "819": {
    "d": "HARVEST_WITH_WARNING",
@@ -4376,9 +4382,10 @@
    "rp": "R2"
   },
   "863": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-B conversion 2026-08-03 (per-record eyeball, MANUS in-thread): withhold reason cured by inscribed repairs (R-0262,R-0969,R-1041); verified body at registry full_text_path /data/EA-ARK-01-v5.md, SPXI block \"@identifier: EA-ARK-01 v5.0\" (non-standard path; NEVER_LOST)."
   },
   "864": {
    "d": "WITHHOLD",
@@ -5189,9 +5196,10 @@
    "rp": "R0"
   },
   "1024": {
-   "d": "WITHHOLD",
+   "d": "HARVEST_WITH_WARNING",
    "sev": "P0",
-   "rp": "R0"
+   "rp": "R0",
+   "repair_note": "TIER-B conversion 2026-08-03 (per-record eyeball, MANUS in-thread): withhold reason cured by inscribed repairs (R-0993); verified body title \"GW.TACHYON.zenodo — v9\"; semi-restored metadata-body state declared in-body."
   },
   "1025": {
    "d": "HARVEST_WITH_WARNING",
