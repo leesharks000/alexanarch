@@ -13,7 +13,7 @@
 
 ## Continuation state
 - alexanarch_audit_continuation_state_v3.1.json: **RETIRED — nothing to continue.** Preserved as historical artifact of the 928-row era.
-- Forward-audit rule for deposits #1427+: PENDING MANUS (proposed: new mints audited at mint via method_core v0.4; enter feed as audit:pending until row seated).
+- Forward-audit rule for deposits #1427+: **RATIFIED (MANUS 2026-08-04).** New mints audited AT MINT via method_core v0.4; audit row appended at mint; no standing audit:pending. Catch-up batch for the post-freeze backlog queued as the rule's first act.
 
 ## Reading order for a fresh session
 1. WORKPLAN §5b + decisions log (bottom-up)  2. This INDEX  3. wrong-object-workup v1.2  4. repair_ledger tail
