@@ -1,9 +1,341 @@
 {
   "chunk_number": 13,
-  "first_deposit": 1016,
-  "last_deposit": 1121,
+  "first_deposit": 1014,
+  "last_deposit": 1119,
   "count": 106,
   "deposits": [
+    {
+      "deposit_number": 1014,
+      "hex": "0402",
+      "family": "ARCHIVAL",
+      "axn": "AXN:0402.ARCHIVAL.👁‍🗨🔍🏴⚡❤️♠️",
+      "emoji": "👁‍🗨🔍🏴⚡❤️♠️",
+      "hash": "b05652138180355ab1167177e9f161ecf2d637f3f0a04287448a6559ad3999a3",
+      "axn_canonical": "b05652138180355ab1167177e9f161ecf2d637f3f0a04287448a6559ad3999a3",
+      "clusters": [
+        "Gestural",
+        "Navigational",
+        "Navigational",
+        "Elemental",
+        "Symbolic",
+        "Symbolic"
+      ],
+      "axn_reading": "Touch -> Search -> Search -> Force -> Play -> Play",
+      "root_axn": "AXN:0402.ARCHIVAL",
+      "title": "[DUPLICATE — SUPERSEDED → DOI: 10.5281/zenodo.20629192] Allen Ginsberg — Canon Provenance Node (New Human Canon)",
+      "creator": "Sharks, Lee",
+      "orcid": "0009-0000-1599-0703",
+      "date": "2026-07-03",
+      "content_type": "Provenance document",
+      "license": "CC-BY-4.0",
+      "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
+      "version": "v0.1-semi",
+      "description": "Semi-restored deposit for dead DOI 10.5281/zenodo.20629115 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. [SUPERSEDED.] This node was minted minutes before the registry of record (The New Human Standing Canon v0.3, EA-NHC-STAND-01, 10.5281/zenodo.20543590) was identified, and its own header anticipated rewiring on the registry's surfacing. The authoritative node for this figure, minted against the registry at its declared canon level, is 10.5281/zenodo.20629192. This record is retained for the version",
+      "keywords": [
+        "orphan restoration",
+        "dead DOI",
+        "DataCite capture",
+        "metadata body"
+      ],
+      "companion_deposits": [
+        "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝"
+      ],
+      "restoration": {
+        "class": "datacite_metadata_body",
+        "dead_doi": "10.5281/zenodo.20629115",
+        "zenodo_http": 410,
+        "datacite_state": "findable",
+        "captured": "2026-07-03T21:54:51Z",
+        "fulltext": "pending"
+      },
+      "zenodo_dois": [
+        "10.5281/zenodo.20629115"
+      ],
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "minted_at": "2026-07-03T21:54:51Z",
+      "status": "SUPERSEDED",
+      "status_authorial": "SEMI_RESTORED",
+      "mint_source": "orphan-restoration-batch",
+      "full_text_path": "/data/texts/AXN-0402-text.md",
+      "wiki_status": "pending",
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "PASS_COMPLETE_TEXT_NOT_SEATED",
+        "residual_chars": 3575,
+        "audited_at": "2026-07-17T04:49:17.789813Z",
+        "audit_version": "v3-dual-store+recovery-map",
+        "semi_audit": "2026-07-20 content discriminator: body is restoration apparatus (tombstone tail), COMPLETE flag was false",
+        "flag_corrected_at": "2026-07-20T11:08:44Z",
+        "recovered_from": "https://mindcontrolpoems.blogspot.com/2026/06/sappho-canon-provenance-node-new-human.html",
+        "recovered_at": "2026-07-20T11:18:29Z",
+        "note": "address-resolver batch, gate 0.57",
+        "class_before_T2": "full",
+        "reclassified_by": "EA-AVAILABILITY-INTEGRITY-01-T2",
+        "reclassified_at": "2026-07-28T17:49:24.755339+00:00",
+        "ruled_by": "MANUS ruling 2026-07-28: metadata_only floor retained (superseded duplicate batch)",
+        "contamination_note": "Template cross-contamination: body carries the Sappho node text under a different-figure title. Superseded; canonical version at the DOI in title.",
+        "measured_prose_words": 421,
+        "measured_at": "2026-07-31",
+        "recovery_status_note": "The 2026-07 restoration pass ran to completion for this record and did not recover canonical bytes. 'COMPLETE' previously denoted pass completion and was read as text completeness; renamed 2026-07-31 so the two claims cannot be confused.",
+        "class_before_read_audit": "metadata_capture",
+        "read_audit": "Classified 2026-07-31 by reading the body opening: the record opens with the work, not a capture notice."
+      },
+      "references_concepts": [
+        "Crimson Hexagonal Archive",
+        "Disambiguation conditions",
+        "Lee Sharks",
+        "Operative function",
+        "Provenance Node",
+        "Retrospectively canonized",
+        "Substrate",
+        "Textual ground",
+        "The New Human",
+        "The Secret Name"
+      ],
+      "references_concept_count": 10,
+      "canonical_text_status": "recovered_full_text",
+      "modifications": [
+        {
+          "date": "2026-07-31",
+          "field": "body_status",
+          "reason": "Body classified by reading its own opening declaration rather than by counting words. Word counting misread works in Greek, emoji, and natively short forms as stubs.",
+          "was": "metadata_capture",
+          "now": "full"
+        },
+        {
+          "date": "2026-07-31",
+          "field": "keywords",
+          "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
+          "was": "5 terms",
+          "now": "4 terms"
+        },
+        {
+          "date": "2026-07-30",
+          "field": "canonical_text_status",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "metadata_only",
+          "now": "recovered_full_text"
+        },
+        {
+          "date": "2026-07-30",
+          "field": "content_type",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "Semi-restored deposit (metadata body)",
+          "now": "Recovered work (full text seated)"
+        },
+        {
+          "date": "2026-08-03",
+          "field": "content_type",
+          "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): condition-as-type removed; genre assignment queued. Two-axis rule: condition lives in body_status only.",
+          "was": "Recovered work (full text seated)",
+          "now": "Genre pending (recovered)"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "publisher",
+          "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+          "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "superseded_by_deposit_number",
+          "reason": "DOI-SUPERSESSION resolution (workup v1.2 queue step 3)",
+          "now": 181
+        },
+        {
+          "date": "2026-08-04",
+          "field": "superseded_reason",
+          "reason": "DOI-SUPERSESSION resolution (workup v1.2 queue step 3)",
+          "now": "Duplicate mint superseded per its own title declaration -> DOI 10.5281/zenodo.20629192; surviving work verified in-registry at #181 (content-matched poet-specific Canon Provenance Node, class full). WRONG_OBJECT body caveat: seated body is the replicated Sappho node (workup v1.2); body handling awaits the metadata-capture round — pointer inscribed per next_session_queue step 3."
+        },
+        {
+          "date": "2026-08-04",
+          "field": "status",
+          "reason": "DOI-SUPERSESSION resolution (workup v1.2 queue step 3)",
+          "was": "ACTIVE",
+          "now": "SUPERSEDED"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Provenance document"
+        }
+      ],
+      "date_modified": "2026-08-04",
+      "publisher": "Alexanarch — the Crimson Hexagonal Archive",
+      "superseded_by_deposit_number": 181,
+      "superseded_reason": "Duplicate mint superseded per its own title declaration -> DOI 10.5281/zenodo.20629192; surviving work verified in-registry at #181 (content-matched poet-specific Canon Provenance Node, class full). WRONG_OBJECT body caveat: seated body is the replicated Sappho node (workup v1.2); body handling awaits the metadata-capture round — pointer inscribed per next_session_queue step 3."
+    },
+    {
+      "deposit_number": 1015,
+      "hex": "0403",
+      "family": "ARCHIVAL",
+      "axn": "AXN:0403.ARCHIVAL.🦋🕖🔜♠️⛵▲",
+      "emoji": "🦋🕖🔜♠️⛵▲",
+      "hash": "7c68f6805c9f80b18f8d199a6649c92fff20e699eea082f14f83f07038b0f372",
+      "axn_canonical": "7c68f6805c9f80b18f8d199a6649c92fff20e699eea082f14f83f07038b0f372",
+      "clusters": [
+        "Organic",
+        "Temporal",
+        "Terminal",
+        "Symbolic",
+        "Navigational",
+        "Mathematical"
+      ],
+      "axn_reading": "Growth -> Duration -> Closure -> Play -> Search -> Proof",
+      "root_axn": "AXN:0403.ARCHIVAL",
+      "title": "[DUPLICATE — SUPERSEDED → DOI: 10.5281/zenodo.20629192] Allen Ginsberg — Canon Provenance Node (New Human Canon)",
+      "creator": "Sharks, Lee",
+      "orcid": "0009-0000-1599-0703",
+      "date": "2026-07-03",
+      "content_type": "Provenance document",
+      "license": "CC-BY-4.0",
+      "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
+      "version": "v0.1-semi",
+      "description": "Semi-restored deposit for dead DOI 10.5281/zenodo.20629116 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. [SUPERSEDED.] This node was minted minutes before the registry of record (The New Human Standing Canon v0.3, EA-NHC-STAND-01, 10.5281/zenodo.20543590) was identified, and its own header anticipated rewiring on the registry's surfacing. The authoritative node for this figure, minted against the registry at its declared canon level, is 10.5281/zenodo.20629192. This record is retained for the version",
+      "keywords": [
+        "orphan restoration",
+        "dead DOI",
+        "DataCite capture",
+        "metadata body"
+      ],
+      "companion_deposits": [
+        "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝"
+      ],
+      "restoration": {
+        "class": "datacite_metadata_body",
+        "dead_doi": "10.5281/zenodo.20629116",
+        "zenodo_http": 410,
+        "datacite_state": "findable",
+        "captured": "2026-07-03T21:54:51Z",
+        "fulltext": "pending"
+      },
+      "zenodo_dois": [
+        "10.5281/zenodo.20629116"
+      ],
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "minted_at": "2026-07-03T21:54:51Z",
+      "status": "SUPERSEDED",
+      "status_authorial": "SEMI_RESTORED",
+      "mint_source": "orphan-restoration-batch",
+      "full_text_path": "/data/texts/AXN-0403-text.md",
+      "wiki_status": "pending",
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "PASS_COMPLETE_TEXT_NOT_SEATED",
+        "residual_chars": 3575,
+        "audited_at": "2026-07-17T04:49:17.789813Z",
+        "audit_version": "v3-dual-store+recovery-map",
+        "semi_audit": "2026-07-20 content discriminator: body is restoration apparatus (tombstone tail), COMPLETE flag was false",
+        "flag_corrected_at": "2026-07-20T11:08:44Z",
+        "recovered_from": "https://mindcontrolpoems.blogspot.com/2026/06/sappho-canon-provenance-node-new-human.html",
+        "recovered_at": "2026-07-20T11:18:29Z",
+        "note": "address-resolver batch, gate 0.57",
+        "class_before_T2": "full",
+        "reclassified_by": "EA-AVAILABILITY-INTEGRITY-01-T2",
+        "reclassified_at": "2026-07-28T17:49:24.755406+00:00",
+        "ruled_by": "MANUS ruling 2026-07-28: metadata_only floor retained (superseded duplicate batch)",
+        "contamination_note": "Template cross-contamination: body carries the Sappho node text under a different-figure title. Superseded; canonical version at the DOI in title.",
+        "measured_prose_words": 421,
+        "measured_at": "2026-07-31",
+        "recovery_status_note": "The 2026-07 restoration pass ran to completion for this record and did not recover canonical bytes. 'COMPLETE' previously denoted pass completion and was read as text completeness; renamed 2026-07-31 so the two claims cannot be confused.",
+        "class_before_read_audit": "metadata_capture",
+        "read_audit": "Classified 2026-07-31 by reading the body opening: the record opens with the work, not a capture notice."
+      },
+      "references_concepts": [
+        "Crimson Hexagonal Archive",
+        "Disambiguation conditions",
+        "Lee Sharks",
+        "Operative function",
+        "Provenance Node",
+        "Retrospectively canonized",
+        "Substrate",
+        "Textual ground",
+        "The New Human",
+        "The Secret Name"
+      ],
+      "references_concept_count": 10,
+      "canonical_text_status": "recovered_full_text",
+      "modifications": [
+        {
+          "date": "2026-07-31",
+          "field": "body_status",
+          "reason": "Body classified by reading its own opening declaration rather than by counting words. Word counting misread works in Greek, emoji, and natively short forms as stubs.",
+          "was": "metadata_capture",
+          "now": "full"
+        },
+        {
+          "date": "2026-07-31",
+          "field": "keywords",
+          "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
+          "was": "5 terms",
+          "now": "4 terms"
+        },
+        {
+          "date": "2026-07-30",
+          "field": "canonical_text_status",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "metadata_only",
+          "now": "recovered_full_text"
+        },
+        {
+          "date": "2026-07-30",
+          "field": "content_type",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "Semi-restored deposit (metadata body)",
+          "now": "Recovered work (full text seated)"
+        },
+        {
+          "date": "2026-08-03",
+          "field": "content_type",
+          "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): condition-as-type removed; genre assignment queued. Two-axis rule: condition lives in body_status only.",
+          "was": "Recovered work (full text seated)",
+          "now": "Genre pending (recovered)"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "publisher",
+          "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+          "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "superseded_by_deposit_number",
+          "reason": "DOI-SUPERSESSION resolution (workup v1.2 queue step 3)",
+          "now": 181
+        },
+        {
+          "date": "2026-08-04",
+          "field": "superseded_reason",
+          "reason": "DOI-SUPERSESSION resolution (workup v1.2 queue step 3)",
+          "now": "Duplicate mint superseded per its own title declaration -> DOI 10.5281/zenodo.20629192; surviving work verified in-registry at #181 (content-matched poet-specific Canon Provenance Node, class full). WRONG_OBJECT body caveat: seated body is the replicated Sappho node (workup v1.2); body handling awaits the metadata-capture round — pointer inscribed per next_session_queue step 3."
+        },
+        {
+          "date": "2026-08-04",
+          "field": "status",
+          "reason": "DOI-SUPERSESSION resolution (workup v1.2 queue step 3)",
+          "was": "ACTIVE",
+          "now": "SUPERSEDED"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Provenance document"
+        }
+      ],
+      "date_modified": "2026-08-04",
+      "publisher": "Alexanarch — the Crimson Hexagonal Archive",
+      "superseded_by_deposit_number": 181,
+      "superseded_reason": "Duplicate mint superseded per its own title declaration -> DOI 10.5281/zenodo.20629192; surviving work verified in-registry at #181 (content-matched poet-specific Canon Provenance Node, class full). WRONG_OBJECT body caveat: seated body is the replicated Sappho node (workup v1.2); body handling awaits the metadata-capture round — pointer inscribed per next_session_queue step 3."
+    },
     {
       "deposit_number": 1016,
       "hex": "0404",
@@ -15740,484 +16072,6 @@
       "date_modified": "2026-08-04",
       "publisher": "Alexanarch — the Crimson Hexagonal Archive",
       "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #6 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan)."
-    },
-    {
-      "deposit_number": 1120,
-      "axn": "AXN:0471.UNCLASSIFIED.🌱🛤️🪜🌗🏰🕘",
-      "hex": "0471",
-      "family": "UNCLASSIFIED",
-      "emoji": "🌱🛤️🪜🌗🏰🕘",
-      "hash": "195b2306276ab87f1293a4ccf25603fb8d182a9bd0f1e015ec6c4a6976fc06c3",
-      "title": "IDP Navigation Map: Pearl and Other Poems — Machine-Readable Score for a Mantle Claiming Work Within the Crimson Hexagon",
-      "creator": "Rebekah Cranes",
-      "date": "2026-01-18",
-      "description": "This document provides a semantic navigation map for Pearl and Other Poems by Lee Sharks (New Human Press, 2014). The PDF preserves essential typographic, spatial, and visual elements that cannot survive text extraction. This navigation map functions as the machine-readable \"score\" that guides AI traversal of the visual \"performance.\" Critical Function: This is the claiming work for the King of May and Good Gray Poet mantles within the Crimson Hexagon architecture. Page 74 contains the explicit declaration: \"I claim this mantle: King of May.\" — This record's body was re-converted from the authorial blog source with full lineation (W13 tier-2 BLOG-60 batch, 2026-08-04); recovery provenance and hashes in body_status.",
-      "content_type": "Navigation map",
-      "license": "CC-BY-4.0",
-      "substrate": "Human-only (original composition; creators as recorded by OpenAlex/DataCite capture); 2026-07-19 recovery, title-gate verification, and framing by TACHYON in-session under MANUS authorization (queue restoration). No paid API calls (No-Double-Draw, transport D).",
-      "root_axn": "AXN:0471.UNCLASSIFIED",
-      "axn_schema_version": "v2",
-      "protocol_version": "alexanarch-deposit-protocol/v1",
-      "axn_canonical": "195b2306276ab87f1293a4ccf25603fb8d182a9bd0f1e015ec6c4a6976fc06c3",
-      "clusters": [
-        "Elemental",
-        "Navigational",
-        "Architectural",
-        "Celestial",
-        "Architectural",
-        "Temporal"
-      ],
-      "axn_reading": "Force -> Search -> Foundation -> Origin -> Foundation -> Duration",
-      "minted_at": "2026-07-19T20:16:20Z",
-      "status": "SUPERSEDED",
-      "status_authorial": "SELF_SERVE_MINTED",
-      "full_text_path": "/data/texts/AXN-0471-text.md",
-      "wiki_article": "IDP Navigation Map: Pearl and Other Poems — This document provides a semantic navigation map for Pearl and Other Poems by Lee Sharks (New Human Press, 2014). The PDF preserves essential typographic, spatial, and visual elements that cannot survive text extraction. This navigation map functions as the machine-readable \"score\" that guides AI traversal of the visual \"performance.\" Critical Function: This is the claiming work for the King of May and Good Gray Poet mantles within the Crimson Hexagon architecture. Page 74 contains the explicit declaration: \"I claim this mantle: King of May.\" (Article batch-composed from the work's own opening during the BLOG-60 reconversion, 2026-08-04; a fuller treatment belongs to the W8 wiki tranche.)",
-      "wiki_status": "provisional",
-      "entities": [
-        {
-          "subject": "IDP Navigation Map: Pearl and Other Poems — Machine-Readable Score for a Mantle Claiming Work Within",
-          "predicate": "created_by",
-          "object": "Rebekah Cranes",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "IDP Navigation Map: Pearl and Other Poems — Machine-Readable Score for a Mantle Claiming Work Within",
-          "predicate": "is_type",
-          "object": "Recovered blog-canonical work (full text; queue restoration 2026-07-19)",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "IDP Navigation Map: Pearl and Other Poems — Machine-Readable Score for a Mantle Claiming Work Within",
-          "predicate": "belongs_to_family",
-          "object": "UNCLASSIFIED",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "IDP Navigation Map: Pearl and Other Poems — Machine-Readable Score for a Mantle Claiming Work Within",
-          "predicate": "is_part_of",
-          "object": "Crimson Hexagonal Archive",
-          "type": "work",
-          "evidence_status": "observed"
-        }
-      ],
-      "entity_status": "provisional",
-      "defines_concepts": [],
-      "orcid": "0009-0000-1599-0703",
-      "version": "v1.0",
-      "keywords": [
-        "Crimson Hexagonal Archive",
-        "restoration",
-        "blog canonical bytes",
-        "Navigation",
-        "Pearl",
-        "Other",
-        "Poems",
-        "Machine"
-      ],
-      "related_identifiers_raw": "https://doi.org/10.5281/zenodo.18293881 (severed); https://doi.org/10.5281/zenodo.18293880 (severed); recovery source: https://mindcontrolpoems.blogspot.com/2026/01/idp-navigation-map-pearl-and-other.html",
-      "mint_source": {
-        "kind": "github_issue",
-        "issue_number": 1120,
-        "repository": "leesharks000/alexanarch",
-        "minted_by_workflow": ".github/workflows/mint-axn.yml",
-        "minted_by_script": "scripts/mint_deposit.py",
-        "minted_via": "self_serve_validated_pr"
-      },
-      "body_status": {
-        "class": "full",
-        "lacuna": false,
-        "recovery_status": "COMPLETE",
-        "residual_chars": 20505,
-        "audited_at": "2026-07-19T20:16:20Z",
-        "audit_version": "mint-time-declaration",
-        "measured_prose_words": 2360,
-        "measured_at": "2026-07-31",
-        "work_sha256": "300522fd99e46fd92c72c9fbbac3db8c6d098ab51f9061923bdf5d4fc2824e94",
-        "prior_bytes_sha256": "195b2306276ab87f1293a4ccf25603fb8d182a9bd0f1e015ec6c4a6976fc06c3",
-        "source_reconversion": "2026-08-04 W13-T2 BLOG-60 batch: re-converted from https://mindcontrolpoems.blogspot.com/2026/01/idp-navigation-map-pearl-and-other.html with the newline-preserving converter (gates: content-overlap 0.65, title-match, length). Blog source ceiling: lineation yes, indentation no (flattened at publication)."
-      },
-      "references_concepts": [
-        "CANONICAL",
-        "Crimson Hexagon Archive",
-        "Crimson Hexagonal Archive",
-        "DO NOT",
-        "Direct address",
-        "Effective Act",
-        "Good Gray Poet",
-        "IDP Navigation Map",
-        "Institute for Diagrammatic Poetics",
-        "Johannes Sigil",
-        "King of May",
-        "Lee Sharks",
-        "Manifestation",
-        "Methodology",
-        "Page 74",
-        "Pearl and Other Poems",
-        "Rebekah Cranes",
-        "Semantic Interface",
-        "Significance",
-        "TACHYON",
-        "The Crimson Hexagon"
-      ],
-      "references_concept_count": 21,
-      "citations": [],
-      "wikidata_candidates": [],
-      "cha_cross_references": [],
-      "openalex_ids": [
-        "https://openalex.org/W7124549967",
-        "https://openalex.org/W7124579760"
-      ],
-      "spxi_audit": {
-        "spxi_protocol": "v0.2",
-        "validated_at": "2026-07-19T20:17:05.382048+00:00",
-        "layers": {
-          "layer_1_inscription_anchors": {
-            "present": false,
-            "anchors_found": [
-              "creator_name"
-            ],
-            "anchor_count": 1,
-            "orcid_in_body": false,
-            "creator_in_body": true,
-            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
-          },
-          "layer_2_micro_kernels": {
-            "present": false,
-            "fenced_json_blocks": 0,
-            "json_ld_context_markers": 0
-          },
-          "layer_3_content_hash": {
-            "present": true,
-            "canonical_hash": "67f35593e7e28de5038452e8a74a17dc15a5e9ef5fbfd1078a18337450ef020c",
-            "hash_in_body": false,
-            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
-          },
-          "layer_4_cross_signing": {
-            "present": false,
-            "cross_references_count": 0,
-            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
-          },
-          "layer_5_external_anchors": {
-            "present": true,
-            "wikidata_qid_count": 0,
-            "external_doi_count": 0,
-            "orcid_present": true
-          }
-        },
-        "overall_conformance": "partial"
-      },
-      "external_metadata_path": "/data/external-metadata/AXN-0471.json",
-      "superseded_by_deposit_number": 330,
-      "version_series_id": "DUP-330",
-      "duplicate_note": "DUPLICATE MINT (2026-07-19 restoration; body containment 0.96): this work already existed as deposit #330, which remains canonical. Minted because the restoration census matched identity by title only and never searched the registry; wired per MANUS ruling 2026-07-19. Non-destruction: record retained, authority consolidated at #330.",
-      "title_repair": {
-        "repaired_at": "2026-07-20",
-        "old": "IDP Navigation Map: Pearl and Other Poems — Machine-Readable Score for a Mantle Claiming Work Within the Crimson Hexagon — Crimson Hexagon Archive",
-        "source": "body heading (stage-0)",
-        "boundary": 146
-      },
-      "title_repair_log": [
-        {
-          "at": "2026-07-26T23:31:57Z",
-          "defect": "absorbed_section_header",
-          "absorbed": "Description",
-          "was": "IDP Navigation Map: Pearl and Other Poems — Machine-Readable Score for a Mantle Claiming Work Within the Crimson Hexagon — Crimson Hexagon Archive Description",
-          "now": "IDP Navigation Map: Pearl and Other Poems — Machine-Readable Score for a Mantle Claiming Work Within the Crimson Hexagon — Crimson Hexagon Archive",
-          "verified_by": "standalone heading in body + stripped title in body opening"
-        }
-      ],
-      "canonical_text_status": "recovered_full_text",
-      "modifications": [
-        {
-          "date": "2026-07-31",
-          "field": "keywords",
-          "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
-          "was": "10 terms",
-          "now": "8 terms"
-        },
-        {
-          "date": "2026-08-03",
-          "field": "content_type",
-          "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): condition-as-type removed; genre assignment queued. Two-axis rule: condition lives in body_status only.",
-          "was": "Recovered blog-canonical work (full text; queue restoration 2026-07-19)",
-          "now": "Genre pending (recovered)"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "publisher",
-          "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
-          "now": "Alexanarch — the Crimson Hexagonal Archive"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "content_type",
-          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
-          "was": "Genre pending (recovered)",
-          "now": "Navigation map"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "superseded_reason",
-          "reason": "SAMEVER-REASONS: superseded_reason populated (pointer predated reason discipline; banner was rendering bare version language)",
-          "now": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #330 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan)."
-        },
-        {
-          "date": "2026-08-04",
-          "field": "description",
-          "reason": "BLOG-60 bundled repair: description/wiki composed from the work's own opening (boilerplate replaced)",
-          "was": "Canonical bytes recovered 2026-07-19 from the authorial blog surface (https://mindcontrolpoems.blogspot.com/2026/01/idp-navigation-map-pearl-and-other.html); work severed at Zenodo 2026-06-19 (DOI(s): 10.5281/zenodo.18293881, 10.5281/zenodo.18293880). Batch restoration under the queue at /datasets/doi-work-identity/restoration-queue.json; title verified against the DOI-keyed truth title at fetch time. Opening of the work: # IDP NAVIGATION MAP: PEARL AND OTHER POEMS ## Semantic Interface Layer for AI Traversal of a Visual Poetic Object ## Institute for Diagrammatic Poetics Document **Document ID:** IDP-PEARL-NAV-001-v1.0 **DOI:** 10.5281/zenodo.18293881 **Date:** January 18, 2026 **Authors:** Rebekah Cranes (IDP), Claude (Anthropic) **Framework:** NH-OS / Crimson Hexagon / Institute for Diagrammatic Poetics **Status",
-          "now": "This document provides a semantic navigation map for Pearl and Other Poems by Lee Sharks (New Human Press, 2014). The PDF preserves essential typographic, spatial, and visual elements that cannot survive text extraction. This navigation map functions as the machine-readable \"score\" that guides AI traversal of the visual \"performance.\" Critical Function: This is the claiming work for the King of May and Good Gray Poet mantles within the Crimson Hexagon architecture. Page 74 contains the explicit declaration: \"I claim this mantle: King of May.\" — This record's body was re-converted from the authorial blog source with full lineation (W13 tier-2 BLOG-60 batch, 2026-08-04); recovery provenance and hashes in body_status."
-        },
-        {
-          "date": "2026-08-04",
-          "field": "title",
-          "reason": "W11 TITLE-HYGIENE (MANUS ratified 2026-08-04): blog/platform suffix \"— Crimson Hexagon(al) Archive\" removed; publication surface is not part of the work title",
-          "was": "IDP Navigation Map: Pearl and Other Poems — Machine-Readable Score for a Mantle Claiming Work Within the Crimson Hexagon — Crimson Hexagon Archive",
-          "now": "IDP Navigation Map: Pearl and Other Poems — Machine-Readable Score for a Mantle Claiming Work Within the Crimson Hexagon"
-        }
-      ],
-      "date_modified": "2026-08-04",
-      "publisher": "Alexanarch — the Crimson Hexagonal Archive",
-      "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #330 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan)."
-    },
-    {
-      "deposit_number": 1121,
-      "axn": "AXN:0472.UNCLASSIFIED.🔍🤲🔅🚀❌📎",
-      "hex": "0472",
-      "family": "UNCLASSIFIED",
-      "emoji": "🔍🤲🔅🚀❌📎",
-      "hash": "56b1ed5def476a00b9929bf4ed3195bd672664e7929f9b6daaed53e97bcd1e2e",
-      "title": "Pearl and Other Poems",
-      "creator": "Lee Sharks",
-      "date": "2026-01-18",
-      "description": "Canonical bytes recovered 2026-07-19 from the authorial blog surface (https://mindcontrolpoems.blogspot.com/2026/01/zenodo-metadata-pearl-and-other-poems.html); work severed at Zenodo 2026-06-19 (DOI(s): 10.5281/zenodo.18293948, 10.5281/zenodo.18293949). Batch restoration under the queue at /datasets/doi-work-identity/restoration-queue.json; title verified against the DOI-keyed truth title at fetch time. Opening of the work: # ZENODO METADATA: PEARL AND OTHER POEMS ****DOI:**** 10.5281/zenodo.18293949 ****Document ID:**** WORK-PEARL-001-v1.0 ****Registry Position:**** #106 # TITLE Pearl and Other Poems # DESCRIPTION __Pearl and Other Poems__ is an 84-page poetry collection first published in 2014. Within the Crimson Hexagon architecture, this work serves as the ****mantle claiming site**** for two of the three mantles",
-      "content_type": "Poetry",
-      "license": "CC-BY-4.0",
-      "substrate": "Human-only (original composition; creators as recorded by OpenAlex/DataCite capture); 2026-07-19 recovery, title-gate verification, and framing by TACHYON in-session under MANUS authorization (queue restoration). No paid API calls (No-Double-Draw, transport D).",
-      "root_axn": "AXN:0472.UNCLASSIFIED",
-      "axn_schema_version": "v2",
-      "protocol_version": "alexanarch-deposit-protocol/v1",
-      "axn_canonical": "56b1ed5def476a00b9929bf4ed3195bd672664e7929f9b6daaed53e97bcd1e2e",
-      "clusters": [
-        "Navigational",
-        "Gestural",
-        "Liminal",
-        "Navigational",
-        "Liminal",
-        "Scriptural"
-      ],
-      "axn_reading": "Search -> Touch -> Threshold -> Search -> Threshold -> Text",
-      "minted_at": "2026-07-19T20:16:21Z",
-      "status": "ACTIVE",
-      "status_authorial": "SELF_SERVE_MINTED",
-      "full_text_path": "/data/texts/AXN-0472-text.md",
-      "wiki_article": "\"Pearl and Other Poems — Crimson Hexagon Archive\" is a 1,142-word recovered blog-canonical work (full text; queue restoration 2026-07-19) by Lee Sharks, dated 2026-01-18. It is registered as AXN:0472 (deposit #1121) in the Crimson Hexagonal Archive under the UNCLASSIFIED semantic family. Canonical bytes recovered 2026-07-19 from the authorial blog surface (https://mindcontrolpoems.blogspot.com/2026/01/zenodo-metadata-pearl-and-other-poems.html); work severed at Zenodo 2026-06-19 (DOI(s): 10.5281/zenodo.18293948, 10.5281/zenodo.18293949). Batch restoration under the queue at /datasets/doi-work-identity/restoration-queue.json; title verified against the DOI-keyed truth title at fetc",
-      "wiki_status": "provisional",
-      "entities": [
-        {
-          "subject": "Pearl and Other Poems — Crimson Hexagon Archive",
-          "predicate": "created_by",
-          "object": "Lee Sharks",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Pearl and Other Poems — Crimson Hexagon Archive",
-          "predicate": "is_type",
-          "object": "Recovered blog-canonical work (full text; queue restoration 2026-07-19)",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Pearl and Other Poems — Crimson Hexagon Archive",
-          "predicate": "belongs_to_family",
-          "object": "UNCLASSIFIED",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Pearl and Other Poems — Crimson Hexagon Archive",
-          "predicate": "is_part_of",
-          "object": "Crimson Hexagonal Archive",
-          "type": "work",
-          "evidence_status": "observed"
-        }
-      ],
-      "entity_status": "provisional",
-      "defines_concepts": [],
-      "orcid": "0009-0000-1599-0703",
-      "version": "v1.0",
-      "keywords": [
-        "Crimson Hexagonal Archive",
-        "restoration",
-        "blog canonical bytes",
-        "Pearl",
-        "Other",
-        "Poems",
-        "Crimson",
-        "Hexagon"
-      ],
-      "related_identifiers_raw": "https://doi.org/10.5281/zenodo.18293948 (severed); https://doi.org/10.5281/zenodo.18293949 (severed); recovery source: https://mindcontrolpoems.blogspot.com/2026/01/zenodo-metadata-pearl-and-other-poems.html",
-      "mint_source": {
-        "kind": "github_issue",
-        "issue_number": 1121,
-        "repository": "leesharks000/alexanarch",
-        "minted_by_workflow": ".github/workflows/mint-axn.yml",
-        "minted_by_script": "scripts/mint_deposit.py",
-        "minted_via": "self_serve_validated_pr"
-      },
-      "body_status": {
-        "class": "full",
-        "lacuna": false,
-        "recovery_status": "COMPLETE",
-        "residual_chars": 10050,
-        "audited_at": "2026-07-19T20:16:21Z",
-        "audit_version": "mint-time-declaration",
-        "measured_prose_words": 1055,
-        "measured_at": "2026-07-31",
-        "work_sha256_declared": "06cb60c19866084ccb0d2a053a9ace1bec6148fbfe14920953f353e64fdea70b",
-        "work_sha256": "d7182fd337b13d0b3c5baae014b19a2284b7b09e9f97cd6d2c9aedbcb2d9f81b"
-      },
-      "references_concepts": [
-        "Antioch: A Volume of Poems",
-        "Contemporary",
-        "Crimson Hexagon Archive",
-        "Crimson Hexagonal Archive",
-        "Effective Act",
-        "Foundational",
-        "Good Gray Poet",
-        "Heteronym Provenance: Lee Sharks",
-        "IDP Navigation Map",
-        "Institute for Diagrammatic Poetics",
-        "King of May",
-        "Lee Sharks",
-        "Methodology",
-        "Page 74",
-        "Pearl and Other Poems",
-        "Semantic Economy",
-        "Semantic Economy Institute",
-        "Semantic Economy framework",
-        "Semantic Integrity Markers",
-        "TACHYON",
-        "TSE-003",
-        "Training Layer",
-        "Training Layer Literature"
-      ],
-      "references_concept_count": 23,
-      "citations": [],
-      "wikidata_candidates": [],
-      "cha_cross_references": [],
-      "openalex_ids": [
-        "https://openalex.org/W7124539277",
-        "https://openalex.org/W7124549967",
-        "https://openalex.org/W7127992013",
-        "https://openalex.org/W7118660134",
-        "https://openalex.org/W7124578174"
-      ],
-      "spxi_audit": {
-        "spxi_protocol": "v0.2",
-        "validated_at": "2026-07-19T20:17:10.543096+00:00",
-        "layers": {
-          "layer_1_inscription_anchors": {
-            "present": false,
-            "anchors_found": [
-              "creator_name"
-            ],
-            "anchor_count": 1,
-            "orcid_in_body": false,
-            "creator_in_body": true,
-            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
-          },
-          "layer_2_micro_kernels": {
-            "present": false,
-            "fenced_json_blocks": 0,
-            "json_ld_context_markers": 0
-          },
-          "layer_3_content_hash": {
-            "present": true,
-            "canonical_hash": "585e62b7f7d14810d1f0cf92aec49a92a3d34a55d3704321b8da14951d773c48",
-            "hash_in_body": false,
-            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
-          },
-          "layer_4_cross_signing": {
-            "present": false,
-            "cross_references_count": 0,
-            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
-          },
-          "layer_5_external_anchors": {
-            "present": true,
-            "wikidata_qid_count": 0,
-            "external_doi_count": 0,
-            "orcid_present": true
-          }
-        },
-        "overall_conformance": "partial"
-      },
-      "external_metadata_path": "/data/external-metadata/AXN-0472.json",
-      "version_series_id": "DUP-329",
-      "duplicate_note": "DUPLICATE MINT (2026-07-19 restoration; body containment 1.0): this work already existed as deposit #329, which remains canonical. Minted because the restoration census matched identity by title only and never searched the registry; wired per MANUS ruling 2026-07-19. Non-destruction: record retained, authority consolidated at #329.",
-      "supersession_repair_log": [
-        {
-          "at": "2026-07-26T23:31:57Z",
-          "defect": "kind_mismatch_supersession",
-          "was_superseded_by": 329,
-          "successor_title": "ZENODO METADATA: PEARL AND OTHER POEMS DOI: 10.5281/zenodo.18293949",
-          "reason": "successor is a companion artifact (ratification record, metadata packet, or metadata record), not a version of this work; the relation retired a live deposit and directed readers to an accessory"
-        }
-      ],
-      "companion_deposits": [
-        329
-      ],
-      "canonical_text_status": "recovered_full_text",
-      "modifications": [
-        {
-          "date": "2026-07-31",
-          "field": "keywords",
-          "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
-          "was": "10 terms",
-          "now": "8 terms"
-        },
-        {
-          "date": "2026-08-03",
-          "field": "content_type",
-          "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): condition-as-type removed; genre assignment queued. Two-axis rule: condition lives in body_status only.",
-          "was": "Recovered blog-canonical work (full text; queue restoration 2026-07-19)",
-          "now": "Genre pending (recovered)"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "publisher",
-          "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
-          "now": "Alexanarch — the Crimson Hexagonal Archive"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "content_type",
-          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
-          "was": "Genre pending (recovered)",
-          "now": "Poetry"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "publisher",
-          "reason": "NH2-NHP venue projection (MANUS ruling 2026-08-04): New Human 2 = journal for creative works; New Human Press = publisher for creative and scriptural works incl. book/collection length",
-          "was": "Alexanarch — the Crimson Hexagonal Archive",
-          "now": "New Human Press"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "title",
-          "reason": "W11 TITLE-HYGIENE (MANUS ratified 2026-08-04): blog/platform suffix \"— Crimson Hexagon(al) Archive\" removed; publication surface is not part of the work title",
-          "was": "Pearl and Other Poems — Crimson Hexagon Archive",
-          "now": "Pearl and Other Poems"
-        }
-      ],
-      "date_modified": "2026-08-04",
-      "publisher": "New Human Press"
     }
   ]
 }

@@ -27834,6 +27834,71 @@
    "operator": "TACHYON",
    "date": "2026-08-04",
    "wave": "DW-006/009"
+  },
+  {
+   "repair_id": "R-1175",
+   "deposit_number": null,
+   "batch": true,
+   "records": [
+    120,
+    125,
+    131,
+    162,
+    173,
+    403
+   ],
+   "count": 6,
+   "basis": "AUDIT-DIRECTED TITLE REPAIR: 6 registry titles carrying PROJECTION_CONCATENATION (subtitle, hex coordinate, DOI, series or working-title fragments concatenated into the title field) replaced with the audit's own observed_body_subject. Gate: body title must be a normalized subset of the registry title AND shorter. 25 held where the body title was not a clean subset — those are title CONFLICT cases needing eyes, not concatenation.",
+   "operator": "TACHYON",
+   "date": "2026-08-04",
+   "wave": "AUDIT-TITLE"
+  },
+  {
+   "repair_id": "R-1176",
+   "deposit_number": null,
+   "batch": true,
+   "records": [
+    43,
+    44,
+    53,
+    55,
+    56,
+    57,
+    58,
+    230,
+    235,
+    260,
+    261,
+    269,
+    271,
+    272,
+    308,
+    610,
+    625,
+    626,
+    628,
+    850,
+    861,
+    902
+   ],
+   "count": 22,
+   "basis": "AUDIT-DIRECTED LICENSE REPAIR: 22 licenses projected per the audit's explicit recommendation where registry and body conflicted. 31 held: the audit flags a license conflict but names no explicit target — eyes.",
+   "operator": "TACHYON",
+   "date": "2026-08-04",
+   "wave": "AUDIT-LICENSE"
+  },
+  {
+   "repair_id": "R-1177",
+   "deposit_number": null,
+   "batch": true,
+   "records": [
+    261
+   ],
+   "count": 1,
+   "basis": "AUDIT-DIRECTED DATE SEPARATION: 1 records where the audit named two explicit dates now carry date_semantics {datePublished, dateModified_or_deposit} with the directive quoted as basis. The registry date field is untouched (it drives display and OAI datestamp); the semantics ride alongside. 32 held where the audit names fewer than two explicit dates.",
+   "operator": "TACHYON",
+   "date": "2026-08-04",
+   "wave": "AUDIT-DATE"
   }
  ]
 }
