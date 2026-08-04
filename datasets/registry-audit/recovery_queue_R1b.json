@@ -69,13 +69,15 @@
    "claims": "v1 (Encrypted Session Deposit)",
    "serves": "v7 chain doc (resolver collision, preserved as audit trace per ledger)",
    "action": "hunt v1 encrypted-session object in past conversation threads / any Zenodo sidecar; if unavailable → explicit missing-primary-object state per ledger (encrypted blob likely lost with Zenodo termination)",
-   "likely_source": "conversation threads; low recovery odds"
+   "likely_source": "conversation threads; low recovery odds",
+   "status": "THREAD LOCATED 2026-08-04: composing thread https://claude.ai/chat/deadefcd-01dc-4412-ad58-2ac7219df07c (2026-04-06 GW v0.7->v0.8 sprint; three DOIs minted incl. encrypted session deposit 19433483). Content was AES-256-GCM ciphertext BY DESIGN (key downloadable/Supabase; plaintext irrecoverable without key per protocol). Recovery object = ciphertext deposit document + bootstrap manifest; dedicated-session extraction per MANUS-export protocol queued."
   },
   "1243": {
    "claims": "v2 (First Glyphic Deposit)",
    "serves": "v7 chain doc (resolver collision, preserved as audit trace per ledger)",
    "action": "hunt v2 glyphic-deposit object in past conversation threads (chain tethers were composed in-thread); if unavailable → explicit missing-primary-object state",
-   "likely_source": "conversation threads; moderate odds"
+   "likely_source": "conversation threads; moderate odds",
+   "status": "THREAD LOCATED 2026-08-04: same thread deadefcd-01dc-4412-ad58-2ac7219df07c — 'first glyphic deposit (10.5281/zenodo.19433865)' minted in-thread = EXACT match to this record's severed related_id. Dedicated-session extraction per MANUS-export protocol queued."
   }
  },
  "end_state_declaration": "The end state of this program is ACCURATE, RESTORED, COMPLETE records. Relabeling a record to its served version (R1a) is step one only. Step two: the claimed intermediary version's bytes are recovered and minted as their own version record, bound by predecessor/successor relations, so every version that existed has a record serving its actual bytes. Wrongness-notes are scaffolding. Genuinely unrecoverable versions receive a Lacuna Mark declaring the loss after a real hunt across all priority sources.",
@@ -408,5 +410,16 @@
  "holds": {
   "23": "type-normalization target unstated in sealed row ('normalizing the method/type') — needs row detail or MANUS word; not guessed",
   "1374": "SEAT-EDITED-ON-RESTORE: when #1374's body (UNTUNED/NOISE OF MYSELF standalone) is recovered, seat the AUTHORIAL REVISED text (slur masked r******d per MANUS 2026-08-03) matching #331 — never the unedited bytes."
+ },
+ "sweep_2026_08_04": {
+  "method": "in-history sweep (db7b9215d class + full git-log version-gate) + sibling scan over 68 targets (R1a queue + unresolved R1b + #711/#864)",
+  "history_result": "ZERO real byte recoveries remaining in repo history — 3 apparent hits (884b10b27) were the original semi-stubs (title-token false positives); db7b9215d class fully harvested in prior R1c round. The ~60 R1a claimed-v1.0 predecessors were never in the repo: true external hunts (blog/threads).",
+  "sibling_result": "6 version-label defects FOUND+FIXED (SWEEP-VT R-1139..R-1144): #1211 v1.0->v1.2 (Claim 6), #1216 v1.0->v1.2 (self-audited), #1217 v1.0->v7.3 (SPXI-TLP Hardened — the RF head), #1223 v0.2-restored->v2.2, #1228 v0.2-restored->v1.1, #1200 v1.0->v1.1. RF chain completed: #1400->#1403->#1217 (R-1145/R-1146).",
+  "new_eyes_queue": [
+   "#832 == #1400 BYTE-IDENTICAL twins (589292d9512d, 139,221 chars) — v7.1 record-of-standing adjudication",
+   "#720 vs #1223 delta pair (40,488 vs 46,621 chars, both declare v2.2 Bill of Rights) — 1215-class edition delta",
+   "#834 vs #1228 delta pair (19,253 vs 26,535 chars, both v1.1; #1228 carries Assembly-Reviewed expansion) — edition delta",
+   "corpus scan for version-label-understates-full-body class (v0.2-restored labels on full bodies) — follow-up wave"
+  ]
  }
 }

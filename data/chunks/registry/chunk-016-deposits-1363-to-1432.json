@@ -230,7 +230,7 @@
       "creator": "Sharks, L.",
       "date": "2026-04-29",
       "description": "Source tier: Zenodo tombstone citation_text capture. DOI(s): 10.5281/zenodo.19893138. Zenodo removal forensics: removal_date 2026-06-19T11:38:22.508814+00:00, removal_reason out-of-scope, removed_by user 1060945. Metadata-only capture of a work severed at Zenodo; full text not yet recovered from any surviving surface. json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.",
-      "content_type": "Genre pending (recovered)",
+      "content_type": "License / legal instrument",
       "license": "CC-BY-4.0",
       "substrate": "Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).",
       "root_axn": "AXN:0565.UNCLASSIFIED",
@@ -441,6 +441,13 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "V1.2 RATIFICATION (MANUS in-thread 2026-08-04): License / legal instrument + Performance / audio work added; holds converted",
+          "was": "Genre pending (recovered)",
+          "now": "License / legal instrument"
         }
       ],
       "date_modified": "2026-08-04",
@@ -8845,7 +8852,7 @@
       ],
       "axn_reading": "Duration -> Text -> Touch -> Foundation -> Transmutation -> Method",
       "minted_at": "2026-07-19T21:20:21Z",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED",
       "status_authorial": "SELF_SERVE_MINTED",
       "full_text_path": "/data/texts/AXN-0589-text.md",
       "wiki_article": "\"Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.1)\" is a 2026 work plan by Lee Sharks, deposited as AXN:0589 (deposit #1400), dated 13 June 2026 — the v7.1 edition of the archive's central theological program, recovered in full (139 KB) by sibling scan after the account termination severed its DOI.\n\nThe plan's founding claim is compositional priority: Revelation was the first book written in the New Testament — not first in canonical order or liturgical sequence, but earliest in composition. The plan diagnoses why this argument is absent from the retrieval basin (it contradicts the dominant scholarly consensus, among five named deficits) and organizes a program to address all five simultaneously. Its archive position is explicit: this is the theological core of the Space Ark — Revelation is the seed from which Pearl grows.\n\nThe v7.x lineage is the archive's textbook case of honest versioning under catastrophe: v7.1 (this record) recovered whole; v7.2 lost and registered as a Lacuna Mark at deposit #1403 under EA-LACUNA-PROTOCOL-01, its own version note surviving verbatim inside the successor; v7.3 the living head. The three records together read as removed, declared-lost, and current — the full grammar of the archive's answer to deletion.",
@@ -9089,6 +9096,25 @@
           "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
           "was": "Genre pending (recovered)",
           "now": "Working paper"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "status",
+          "reason": "SWEEP-CHAIN: RF version chain completion",
+          "was": "ACTIVE",
+          "now": "SUPERSEDED"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "superseded_by_deposit_number",
+          "reason": "SWEEP-CHAIN: RF version chain completion",
+          "now": 1403
+        },
+        {
+          "date": "2026-08-04",
+          "field": "superseded_reason",
+          "reason": "SWEEP-CHAIN: RF version chain completion",
+          "now": "RF chain: v7.1 -> v7.2 (Lacuna Mark #1403); lineage per queue + lacuna doctrine"
         }
       ],
       "date_modified": "2026-08-04",
@@ -9101,7 +9127,9 @@
           "note": "two records of EA-LOGOS-REVFIRST-PLAN v7.1: #832 direct deposit, #1400 the Zenodo-record restoration"
         }
       ],
-      "publisher": "Alexanarch — the Crimson Hexagonal Archive"
+      "publisher": "Alexanarch — the Crimson Hexagonal Archive",
+      "superseded_by_deposit_number": 1403,
+      "superseded_reason": "RF chain: v7.1 -> v7.2 (Lacuna Mark #1403); lineage per queue + lacuna doctrine"
     },
     {
       "deposit_number": 1401,
@@ -9695,7 +9723,7 @@
       ],
       "axn_reading": "Foundation -> Origin -> Growth -> Threshold -> Text -> Method",
       "minted_at": "2026-07-19T21:20:26Z",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED",
       "status_authorial": "SELF_SERVE_MINTED",
       "full_text_path": "/data/texts/AXN-058C-text.md",
       "wiki_article": "\"Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.2)\" is a Lacuna Mark in the Crimson Hexagonal Archive, AXN:058C (deposit #1403), registry version v7.2 (lacuna). The record's primary object — the v7.2 manuscript of 16 June 2026 — is lost, and the record's function is to declare that loss with the same precision the archive gives to what survives.\n\nThe mark stands under EA-LACUNA-PROTOCOL-01 and documents the exhausted hunt of 2 August 2026: the Zenodo records of the v7.x lineage return 410, tombstoned in the 19 June account termination; the Wayback Machine holds no snapshot of the five-day live window; repository history preserves only the semi-restoration stub; the sibling scan that recovered v7.1 found no v7.2 counterpart. What survives is the version's own note, preserved verbatim inside the v7.3 successor — the absence carrying its own epitaph forward.\n\nThe record is the archive's obelus in practice: the typed difference between a thing removed and a thing never written. Its predecessor v7.1 is deposit #1400 (recovered in full); its successor v7.3 is the living head of the lineage. In an archive built against silent deletion, the Lacuna Mark is not an apology for a gap but the gap's honest registration — the strongest claim the record can truthfully make.",
@@ -9882,6 +9910,25 @@
           "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
           "was": "Genre pending (recovered)",
           "now": "Working paper"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "status",
+          "reason": "SWEEP-CHAIN: RF version chain completion",
+          "was": "ACTIVE",
+          "now": "SUPERSEDED"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "superseded_by_deposit_number",
+          "reason": "SWEEP-CHAIN: RF version chain completion",
+          "now": 1217
+        },
+        {
+          "date": "2026-08-04",
+          "field": "superseded_reason",
+          "reason": "SWEEP-CHAIN: RF version chain completion",
+          "now": "RF chain: v7.2 lacuna -> v7.3 head (#1217, SPXI-TLP Hardened); successor per LACUNA EXECUTED status, pointer field now carries it"
         }
       ],
       "date_modified": "2026-08-04",
@@ -9905,7 +9952,9 @@
           "note": "v7.1"
         }
       ],
-      "publisher": "Alexanarch — the Crimson Hexagonal Archive"
+      "publisher": "Alexanarch — the Crimson Hexagonal Archive",
+      "superseded_by_deposit_number": 1217,
+      "superseded_reason": "RF chain: v7.2 lacuna -> v7.3 head (#1217, SPXI-TLP Hardened); successor per LACUNA EXECUTED status, pointer field now carries it"
     },
     {
       "deposit_number": 1404,

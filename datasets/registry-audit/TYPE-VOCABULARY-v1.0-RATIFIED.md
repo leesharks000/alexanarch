@@ -141,3 +141,10 @@ The 35 unmappable sealed recommendations cluster into genres the list lacks. Pro
 | **Score / executable transform** | musical-register structural transform / executable score (Musical Ark class) |
 One word ratifies any subset; unratified holds keep their current values and stay queued
 (vocab_v1.1_amendment_candidates.json).
+
+## 7 · AMENDMENTS v1.2 — RATIFIED (MANUS in-thread 2026-08-04); list now 41 values + 2 transitional
+| Value | Scope note |
+|---|---|
+| **License / legal instrument** | contributor licenses, formal legal demands, conferral licenses, and other legal instruments as objects |
+| **Performance / audio work** | performances and audio works as objects (vocoder performances, recorded performance artifacts) |
+Applied same date to the 9 G-BURNDOWN holds (#979,#983,#1356,#1357,#1358,#1364,#1157,#1172 → License / legal instrument; #1360 → Performance / audio work).
