@@ -876,9 +876,20 @@ def regenerate_static_page(d, eidx, registry=None):
         version_banner = (
             '<div style="background:#fef3c7;border-left:4px solid #d97706;padding:12px 16px;'
             'border-radius:6px;margin:12px 0;font-size:.92em">'
-            f'<div style="font-weight:600;color:#92400e;margin-bottom:4px">⚠ Superseded — this is version {esc(version)}</div>'
-            f'<div style="color:#78350f">Current version: <a href="/s/records/{superseded_by_n}/" '
-            f'style="color:var(--accent);font-weight:500">#{superseded_by_n} {esc(by_v)}</a></div>'
+            + (
+                # Version-supersession language ONLY when the two version strings
+                # genuinely differ (SAMEVER class fix, 2026-08-04): a record whose
+                # version equals its successor's — or where either label is absent —
+                # is a record supersession (duplicate witness, record of standing),
+                # and "this is v1.0, current version v1.0" is self-refuting.
+                f'<div style="font-weight:600;color:#92400e;margin-bottom:4px">⚠ Superseded — this is version {esc(version)}</div>'
+                f'<div style="color:#78350f">Current version: <a href="/s/records/{superseded_by_n}/" '
+                f'style="color:var(--accent);font-weight:500">#{superseded_by_n} {esc(by_v)}</a></div>'
+                if version and by_v and version.strip() != by_v.strip() else
+                f'<div style="font-weight:600;color:#92400e;margin-bottom:4px">⚠ Superseded</div>'
+                f'<div style="color:#78350f">The record of standing for this work is <a href="/s/records/{superseded_by_n}/" '
+                f'style="color:var(--accent);font-weight:500">#{superseded_by_n}</a></div>'
+            )
             + (f'<div style="color:#78350f;font-size:.88em;margin-top:6px">{esc(superseded_reason)}</div>' if superseded_reason else '')
             + '</div>'
         )
