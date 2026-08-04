@@ -26839,6 +26839,24 @@
    "operator": "TACHYON",
    "date": "2026-08-04",
    "wave": "SWEEP"
+  },
+  {
+   "repair_id": "R-1147",
+   "deposit_number": 1433,
+   "axn": "AXN:05AF.ARCHIVAL.🌓📏🌆🚨🔜❤️",
+   "type": "AUDIT_AT_MINT",
+   "method": "method_core v0.4",
+   "findings": {
+    "identity": "body-vs-claim CONFIRMED_MATCH (tether declares itself; body carries chain id, conditioning glyph, braid declaration, session record)",
+    "primary_object": "SEATED (canonical text = full tether, frontmatter + body; PDF built)",
+    "field_sanity": "OK after two parser-defect corrections (license had swallowed the Substrate section — label mismatch '### Substrate' vs expected '### Substrate Disclosure'; corrected in registry + staged frontmatter before commit)",
+    "severity": "OK",
+    "disposition": "HARVEST"
+   },
+   "basis": "FORWARD-AUDIT RULE (MANUS 2026-08-04) first individual application: audit row appended at mint; no standing audit:pending.",
+   "operator": "TACHYON",
+   "date": "2026-08-04",
+   "wave": "MINT-1433"
   }
  ]
 }
