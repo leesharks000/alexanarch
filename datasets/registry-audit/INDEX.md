@@ -1,38 +1,19 @@
-# Alexanarch Registry Audit — Canonical Index
+# Registry Audit — Living Package INDEX
+**State: AUDIT COMPLETE at frozen corpus boundary (#1–#1426, 100%, zero gaps) · snapshot 055429ac**
+**Regenerated from live state 2026-08-04 (supersedes all prior INDEX figures; earlier internal contradictions — 928/74.89% era — retired).**
 
-This directory is the living source of truth for the Alexanarch record
-restoration + identity audit, governed by the OAI Registration & Registry
-Remediation Workplan (deposit #1429, AXN:05A6.GOVERNANCE.🍀🌈🎭⚫⚪♃).
+## Current live figures
+- Ledger: alexanarch_audit_merged_ledger_through_0001-0018_v1.0.json (1,426 rows, contiguous, sha in MANIFEST)
+- Dispositions: data/audit/registration_dispositions.json v4.x — HARVEST 304 · HARVEST_WITH_WARNING 1065 · **WITHHOLD 57** (was 131 at completion; repairs + verified conversions logged in WORKPLAN decisions)
+- OAI feed: 1,371 records · dc:relation live · ResourceSync = doctrine site 10
+- Repair ledger: see repair_ledger.json (R-0001 → current; tail governs)
+- Workplan: WORKPLAN_OAI_REMEDIATION_v2.0.md — **decisions log is the authoritative running record**
+- WRONG_OBJECT program: wrong-object-workup-2026-08-04.json v1.2 (match graph, recovery channels, adjudication findings)
+- Recovered bytes: recovered/2026-08-04/ (SHA256SUMS sealed)
 
-## Current canonical state (v3.1)
+## Continuation state
+- alexanarch_audit_continuation_state_v3.1.json: **RETIRED — nothing to continue.** Preserved as historical artifact of the 928-row era.
+- Forward-audit rule for deposits #1427+: PENDING MANUS (proposed: new mints audited at mint via method_core v0.4; enter feed as audit:pending until row seated).
 
-- **Cumulative package:** v3.1 · ledger v1.1
-- **Records audited:** 928 / 1,426 (74.89%)
-- **Contiguous range:** #359–#1426
-- **Remaining:** #1–#498
-- **Frozen commit:** `055429ac82edc967f09c4640ffd0b049cff78e6e`
-- **Repair performed:** No (deferred until full 1,426-record audit assembled + validated)
-
-## Start here
-
-- `START_HERE_alexanarch_audit_cumulative_v3.1.md` — resume instructions
-- `alexanarch_audit_merged_ledger_through_0359-0378_v1.0.json` — authoritative 928-record ledger
-- `alexanarch_audit_report_v1.1.md` — cumulative findings
-- `alexanarch_audit_boundary_validation_v3.1.json` — integrity checks
-- `alexanarch_audit_continuation_state_v3.1.json` — exact resume state (audit #1–#498)
-- `checkpoints/checkpoint_0479-0498/` — sealed 20-record checkpoint (not yet merged)
-- `WORKPLAN_OAI_REMEDIATION_v2.0.md` — living remediation workplan
-- `repair_ledger.json` — repair ledger (R-0001: #1365 restoration)
-- `MANIFEST.json` — full file hashes + history
-- `history/` — superseded packages (handoff-v0.9, handoff-v2.0)
-
-## Supersession rule
-
-The highest-version cumulative package in this directory is canonical-current.
-Prior versions are retained under `history/` and are non-authoritative.
-
-## Pending shards (not yet seated)
-
-- `alexanarch_audit_method_core_v0.4.md`
-- `alexanarch_audit_batch_13_upper_tail_summary_v1.0.json`
-- `alexanarch_audit_batch_13_upper_tail_validation_v1.0.json`
+## Reading order for a fresh session
+1. WORKPLAN §5b + decisions log (bottom-up)  2. This INDEX  3. wrong-object-workup v1.2  4. repair_ledger tail
