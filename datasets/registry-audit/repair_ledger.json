@@ -27186,6 +27186,22 @@
    "operator": "TACHYON",
    "date": "2026-08-04",
    "wave": "BLOG-60R"
+  },
+  {
+   "repair_id": "R-1162",
+   "deposit_number": null,
+   "batch": true,
+   "changes_summary": {
+    "MINTED_UNREVIEWED→ACTIVE": 655,
+    "DRAFT_PENDING→DRAFT": 3,
+    "freetext→ACTIVE+note": 5,
+    "PROPOSED→DRAFT+note": 1,
+    "None→ACTIVE": 7
+   },
+   "basis": "W12 STATUS-VOCABULARY v1.0 RATIFIED+EXECUTED: controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}. MINTED_UNREVIEWED (655) -> ACTIVE — the value was FALSE on every record: the corpus is 100% audited including post-freeze. None (7) -> ACTIVE. DRAFT_PENDING -> DRAFT. Six freetext statuses mapped with their full annotations preserved losslessly in body_status.status_note. HELD for eyes: CANONICAL x5 + PRESERVED_AS_HISTORICAL_SEED x1 (legacy marks, listed in decisions row).",
+   "operator": "TACHYON",
+   "date": "2026-08-04",
+   "wave": "W12"
   }
  ]
 }
