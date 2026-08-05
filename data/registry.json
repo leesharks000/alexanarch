@@ -329182,7 +329182,14 @@
         "measured_prose_words": 3656,
         "measured_at": "2026-07-31",
         "work_sha256_declared": "73bf2821e3e33262bc952cc7c1c45694890d085f754a54200c9dd359dfe0b911",
-        "work_sha256": "2cd47403ea9bfb5bc14a2481c8412779e7074aed550b6a35095c99e77d52257a"
+        "work_sha256": "2cd47403ea9bfb5bc14a2481c8412779e7074aed550b6a35095c99e77d52257a",
+        "wrong_object": {
+          "finding": "2026-08-04 (MANUS): the record is titled \"from The Crimson Hexagon — Origin Text of the Crimson Hexagonal Archive\" — a PRIMARY CREATIVE TEXT — but the seated body is \"The Provenance of Jack Feist: A Provenance Resolution Document for the Space Ark Room\", the same work seated at #111.",
+          "why_it_looked_like_a_wrong_arrow": "Because the body is the provenance document, the duplicate-witness pointer to #111 is internally consistent — so the page reads as a primary work superseded by an analysis of itself. The pointer is not the defect; the BODY is.",
+          "corroboration": "The content-fingerprint scan independently paired #111 ~ #1193 at 0.80 content overlap with only 0.42 title overlap — same text, different titles — and the SUBJECT detector flags it on title-token coverage.",
+          "consequence": "The Origin Text of the Crimson Hexagonal Archive is NOT SEATED anywhere under this record. It is a displaced primary work requiring recovery.",
+          "action": "Disposition WITHHOLD pending adjudication; the pointer is retained because it correctly describes the seated bytes, and the title claim is now contradicted on the record rather than silently served."
+        }
       },
       "references_concepts": [
         "Archon",
@@ -329311,9 +329318,16 @@
           "field": "superseded_reason",
           "reason": "SAMEVER-REASONS: superseded_reason populated (pointer predated reason discipline; banner was rendering bare version language)",
           "now": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #111 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan)."
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "WRONG_OBJECT flagged: record titled as the Origin Text serves the Jack Feist provenance document; primary work displaced",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 29297, \"audited_at\": \"2026-07-19T20:37:56Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 3656,",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 29297, \"audited_at\": \"2026-07-19T20:37:56Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 3656,"
         }
       ],
-      "date_modified": "2026-08-04",
+      "date_modified": "2026-08-05",
       "publisher": "New Human Press",
       "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #111 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan)."
     },

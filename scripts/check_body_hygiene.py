@@ -22,6 +22,13 @@ confused with authorial intent, each discovered the hard way this session:
                audit had already ruled WRONG_OBJECT) and #869 (Lexical Minting
                Registry serving The Pristine Fallacy). Identity is adjudication:
                this DETECTS, it never repairs.
+  GENRE_DIR    a PRIMARY-genre work (poetry, prose, book, essay, scripture)
+               superseded by a DERIVATIVE-genre record (provenance document,
+               metadata packet, close reading). Usually means the primary
+               record is serving the derivative's text — the #1193 case, where
+               "Origin Text of the Crimson Hexagonal Archive" served "The
+               Provenance of Jack Feist" and so read as a work superseded by
+               its own analysis. Detect only; identity is adjudication.
   ESCAPED      markdown escaping artifacts from a converter ("1\\." "\\_" stray
                "*"), or a bare image-URL blob leading the body.
 
@@ -81,6 +88,21 @@ def is_site_source(d, body):
     return body.count('<') > 200 and '```html' in body
 
 
+PRIMARY_G = {'Poetry', 'Creative prose', 'Creative work (mixed)', 'Book / manuscript',
+             'Scripture', 'Patent-poem', 'Theoretical paper', 'Scholarly essay'}
+DERIV_G = {'Metadata packet', 'Close reading / companion analysis', 'Provenance document',
+           'Witness documentation', 'Navigation map', 'Traversal log / field observation',
+           'Forensic record / case study', 'Dataset'}
+_REG_CACHE = {}
+
+
+def _registry():
+    if not _REG_CACHE:
+        r = json.loads(_rd('data/registry.json'))
+        _REG_CACHE.update({x['deposit_number']: x for x in r['deposits']})
+    return _REG_CACHE
+
+
 def scan(d):
     """Return list of (defect, detail) for one record."""
     body = body_of(d)
@@ -112,6 +134,13 @@ def scan(d):
         cov = len(tt & _toks(prose[:2500])) / len(tt)
         if cov < 0.34:
             out.append(('SUBJECT', f'body head carries {cov:.0%} of title terms — may be a different work'))
+
+    _t = d.get('superseded_by_deposit_number')
+    if _t:
+        _tgt = _registry().get(_t)
+        if _tgt and (d.get('content_type') or '') in PRIMARY_G and (_tgt.get('content_type') or '') in DERIV_G:
+            out.append(('GENRE_DIR', f'primary-genre work points at derivative-genre #{_t} '
+                                     f'({_tgt.get("content_type")}) — check whether the body is the derivative'))
 
     esc = len(ESCAPES.findall(prose[:6000]))
     if esc >= 4 or LEADIMG.match(prose):
