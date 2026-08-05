@@ -163,19 +163,28 @@ from the v2.0 canonical set: `alexanarch_audit_master_index_v1.0.json` · `alexa
 
 **Frozen audit source:** repo commit `055429ac82edc967f09c4640ffd0b049cff78e6e`, corpus 1,426 deposits. LABOR audits this snapshot; repairs land on `main`. **The freeze is what makes parallel repair safe.** Repairs never modify the snapshot; audit rows never read from `main`.
 
-## 4. State of play (as of ledger v0.9)
+## 4. State of play — LIVE (regenerated 2026-08-05; prior text described the v0.9 era and was 700+ repairs stale)
 
-- Cumulative unique adjudications: **717** (50.28%); remaining 709. Consecutive coverage #499–#1198 + 17 islands above #1198.
-- Severity: P0 104 · P1 43 · P2 315 · P3 34 · OK 221
-- Disposition: HARVEST 241 · HARVEST_WITH_WARNING 364 · WITHHOLD 112
-- Repair priority: R0 104 · R1 48 · R2 323 · R3 242
-- Mechanically actionable now: 141 content-type conflicts **with the corrected type already named in the ledger**; 177 title conflicts (largely Atlas PATHOLOGY-27 class); ~180 creator-role rows; ~100 version-field rows; 23 license conflicts; 24 DUPLICATE_MINT_SUPERSEDED rows **with surviving DOI named**.
-- Next audit operation (LABOR): #1199–#1278 macroshard, four 20-record checkpoints, 8 known overlaps, repair deferred on their side.
-- First-thread package: RECEIVED and stashed (see §3 History). No merge required — v0.9 already contains it.
-- **Unaudited ranges:** deposits **#1–#498** (the audit began at #499) and **#1279–#1426** beyond LABOR's current queue. Scheduling #1–#498 is an open MANUS/LABOR question; they sit in `audit:pending` until adjudicated.
-- Endpoint state: live but unadvertised; builder currently ungated (indexes everything except `WITHDRAWN`); adminEmail already validator-tuned (WARN resolved 2026-07-31).
-- Context event: blog under the largest scraping event on record (**150k+ views and climbing**, 2026-07-31, machine traffic), with a documented prior pattern of visibility-correlated platform bans (Zenodo 2026-06-19 the type case).
-- **Origin undetermined; evidence captured.** The traffic composition is analysed at deposit #1428 (EA-MRE-01, non-human with high confidence); origin attribution is deliberately left open. **Capture discipline:** timestamped screenshots of every analytics surface the platform exposes, at intervals while any event runs; Vercel analytics for *.com surfaces; everything hashed and filed with the observatory. Captures taken before a takedown are the ones nobody can dispute after; capture now, attribute later. A dated traffic capture is recommended for the observatory before it subsides. The OAI feed is the supply-side answer to this demand; it must not be rushed into serving withheld records.
+**Corpus:** 1,433 records · repair ledger **R-0001 → R-1209** · OAI feed **1,373**.
+
+**Audit coverage: 100%.** The frozen corpus (#1–#1426) is fully adjudicated and post-freeze mints (#1427–#1433) were audited at mint under the forward-audit rule. There are no unaudited ranges — the §4 text this replaces described #1–#498 and #1279–#1426 as unaudited, which has not been true since 2026-08-04.
+
+**Dispositions (v5.1, re-derived against current record state):** HARVEST **992** · HARVEST_WITH_WARNING **385** · WITHHOLD **56**.
+
+**Derived states (`scripts/record_state.py`, the single canonical derivation):** FULL 1,177 · SUPERSEDED 157 · CAPTURE_PAIRED 40 · CAPTURE_UNPAIRED 38 · LACUNA 11 · COMPLETE_PACKET 6 · WITHDRAWN 2 · WITHDRAWN_EXTERNAL 1 · CAPTURE_EXTERNAL 1.
+
+**Controlled vocabularies:** type v1.2 (41 values) — only #1168/#1170 remain transitional, both identity-blocked. Status v1.0 ratified — the 655 false MINTED_UNREVIEWED are gone.
+
+**Audit directive queue:** **77 of 127 concrete directives satisfied, 50 open.** Of the open set, roughly half are text-absent (external recovery or MANUS export only) and half are executable metadata/normalization work.
+
+**Description & wiki (LABOR parallel stream):** DW-VERIFIED-REGISTER covers **#1–#348**, 24 batches, **0 rejects**. ~1,085 records unreviewed.
+
+**Gate readings (the honest quality signal):**
+- state conformance — **0 record-truth divergences**; the 528 currently reported are PDF-staleness from the byte-repair waves, rebuild in progress
+- body hygiene — **133 records with defects**: GLUED 81 · RUNON 31 · SUBJECT 9 · ESCAPED 7 · GENRE_DIR 5 · HARDWRAP 2 · ENTITIES 1
+- html validity — **0 faults** on generated surfaces
+
+**Endpoint:** live, gated (WITHHOLD excluded), dc:source/dc:publisher/state/citability emitted; registration still unattempted.
 
 ## 5. Standing rules
 
@@ -358,24 +367,31 @@ The rule, in one line: **metadata repair never remints; byte events version; ide
 
 **Ruling needed — AX-R1.** The metadata-sidecar cases (#892/#893/#894/#898/#906 class): recommended default is **split repair** — the surviving record is honestly reclassified as the sidecar it is (Tier 1), the recovered manuscript mints fresh (Tier 3), and relations bind them; the alternative (seating the recovered bytes into the sidecar record under its AXN) is available where MANUS rules the record's identity claim was always the work itself. Confirm the default or rule per class.
 
-## 8. Wave/phase status ledger
+## 8. Wave/phase status ledger — LIVE (regenerated 2026-08-05)
 
 | Item | Status | Updated |
 |---|---|---|
-| Audit package v2.0 stored | DONE (5 of 8 canonical files; lacuna in §3) | 2026-07-31 |
-| First-thread handoff v0.9 stashed | DONE (16 files, hash-verified, `history/handoff-v0.9/`) | 2026-07-31 |
-| `registration_dispositions.json` | DONE — v2.0, 928 entries from ledger v1.1 | 2026-08-01 |
-| Builder gating patch | DONE (WITHHOLD excluded; audit sets; capsules) | 2026-07-31 |
-| Repair ledger instrument | DONE — inaugurated with R-0001 (#1365 restoration) | 2026-07-31 |
-| Creator policy | CP-R1/R3/R4 RULED · CP-R2 OPEN (per-heteronym ORCIDs scheduled; W3 ORCID-attach held) | 2026-08-01 |
-| AXN identity policy | AX-R1 RATIFIED w/ no-orphan-stub condition | 2026-08-01 |
-| Wave 1 (content_type) | **DONE — 338 rows applied (v1.1 ledger), R-0002–R-0339** | 2026-08-01 |
-| Waves 2–5 | QUEUED (W3 creator-strings unblocked; ORCID-attach held per CP-R2) | 2026-08-01 |
-| W6 — venue normalization (journal typo/forms + publisher populate) | NEW — blocked on datasets/venues/ authority file build with MANUS | 2026-08-01 |
-| P0 dossiers (104) | QUEUED | — |
-| Validator loop + registration | BLOCKED ON PHASE 0 | — |
-| v0.8 repair queues (P0/P1/P2/P3) | SEATED — feed Phases 2–3 dossiers | 2026-07-31 |
-| Observatory traffic capture | DONE — deposit #1428 (EA-MRE-01); mirror doubles as state capture; v1.1 addendum with closing tally pending | 2026-07-31 |
+| Frozen-corpus audit (#1–#1426) | **DONE — 100%** | 2026-08-01 |
+| Forward-audit rule (audit at mint) | **DONE — #1427–#1433 audited** | 2026-08-04 |
+| Dispositions | **v5.1 re-derived against current state (992/385/56)** | 2026-08-04 |
+| W1 content_type | DONE (338 rows) | 2026-08-01 |
+| W2 titles | **DONE — 257 platform suffixes + 38 DOI/Hex/apparatus strips; 5 collisions held** | 2026-08-04 |
+| W3 creators | **DONE — creator_roles projected ×152; strings replaced ×8; ORCID-attach still held (CP-R2)** | 2026-08-04 |
+| W4 versions | **DONE — 99 projected, 7 unsupported claims withdrawn, all with version_basis** | 2026-08-04 |
+| W5 dates/licenses/relations | **PARTIAL — 22 licenses corrected, 1 date separation; 31 licenses + 32 dates held (audit names no explicit target)** | 2026-08-04 |
+| W6 venue normalization | **DONE — journal canonical corpus-wide; publisher on all 1,426; NH2/NHP ruling applied** | 2026-08-04 |
+| Genre burn-down | **DONE — 367 assigned; vocabulary v1.2 ratified (41 values)** | 2026-08-04 |
+| Status vocabulary | **DONE — 671 reconciled; 6 legacy marks held** | 2026-08-04 |
+| W13 collapsed bodies | **tier 1 + 1.5 display DONE; tier 2 bytes DONE ×634 (GLUED 634→81)** | 2026-08-04 |
+| Entity/structure repair | **DONE — 37 records, 4,068 raw entities cleared** | 2026-08-04 |
+| Body declaration repair | **DONE — 103 bodies + 132 frontmatters** | 2026-08-04 |
+| Legal-name exposure | **⚠ FOUND AND ELIMINATED — 3 records + 5 files; 0 repo-wide; permanent gate clause** | 2026-08-04 |
+| Site-source recovery | **DONE — 11 deployed sources seated (2 waves)** | 2026-08-04 |
+| PDF rebuild after byte waves | **IN PROGRESS — 527 stale remaining** | 2026-08-05 |
+| Gates: state · hygiene · validity | **DONE — three gates, nine clause-classes, wired into §5c** | 2026-08-04 |
+| P0 dossiers | **PARTIAL — WITHHOLD 112 → 56** | 2026-08-04 |
+| Validator loop + registration | NOT ATTEMPTED | — |
+| DW description/wiki stream | **#1–#348 verified clean, 0 rejects** | 2026-08-05 |
 
 ## 9. Merge protocol for incoming audit packages
 
@@ -442,6 +458,9 @@ Characteristic failure tendencies observed in this operator across the remediati
 14. **Guessing at missing input instead of saying it is missing.** MANUS pasted a record; the document arrived blank in context; TACHYON inferred which record was meant, investigated it, and reported the result as an answer. The finding was real but it was not the question, and MANUS had no way to know a guess had been substituted for their input. Counter-practice: when input referenced by the person is absent or unreadable, SAY SO IN ONE SENTENCE AND ASK. An empty paste, a rotated upload, an unreadable file — these are one-line reports, never occasions for inference. Reporting an inferred target as though it were the given one is a quiet substitution of my judgment for theirs.
 
 The common root of all fourteen: preferring the internally-generated completion to the externally-verified fact. The archive exists so that the second is always available. Anchor more deeply, not less.| Date | Ruling | By |
+|---|---|---|
+| 2026-08-05 | **FULL WORKPLAN + AUDIT-PACKAGE READ AND ASSESSMENT (MANUS: "lets actually read the whole work plan and associated audit files and assess where we're at").** Read §§1–13 in full plus the audit package, then computed every figure live rather than recalling it. **TWO SECTIONS WERE BADLY STALE and are now regenerated:** **§4 State of play** still described the **v0.9 era** — "717 adjudications (50.28%)", "unaudited ranges #1–#498 and #1279–#1426", dispositions 241/364/112 — all of it **700+ repairs out of date**, and it would have handed a cold-start instance a false picture including the claim that a third of the corpus was unaudited when coverage has been 100% since 2026-08-01. **§8 Wave/phase ledger** stopped at 2026-08-01 with "Waves 2–5 QUEUED" while W2, W3, W4 and W6 are done and W5 is partial. Both replaced with live-computed tables. §6 Phase plan retains its historical framing but is superseded in substance by §8. **THIS IS §13 MODE 3 (prose-count rot) IN THE ORIENTING FILE ITSELF, for the second time this campaign** — INDEX.md had the same failure yesterday. The lesson is now explicit in §4's header: these tables are regenerated from files, never edited by hand. **DW-024 seated 23/24 + 1 verified; register #1–#348 (24.3%), 0 rejects across 24 batches.** | MANUS/TACHYON |
+| Date | Ruling | By |
 |---|---|---|
 | 2026-08-04 | **SUPERSESSION-DIRECTION AUDIT + TITLE HYGIENE v2 (MANUS: "those are two separate works. the collection, and the analysis of the collection — why would we leave the collection as superseded by the analysis of the collection?").** THE COMPLAINT WAS RIGHT AND I HAD LEFT IT STANDING after naming it a round earlier. **Every supersession pair in the corpus was body-tested for work identity.** 16 pairs fall below 0.60 body overlap, and the scan separates them cleanly: **tether and continuity chains (#1238→#1024, #964→#1238, #1092→#1093, #871→#922 …) are legitimate SERIES successions** — different texts, same series, correct. **#1165 → #562 is not**: Creative work → Scholarly close reading at **0.36 overlap**. A supersession asserts one record replaces another as the record of standing for the SAME work; it cannot hold between a work and its commentary. **REMOVED**, status returned to ACTIVE, and replaced with a reciprocal **`analysed_by` / `analysis_of`** relation pair — #1165 now renders "Analysed in #562", #562 renders "This record analyses #1165", and the prior incorrect claim is retained on the record. **#1152 → #502 was checked and is CORRECT** (body overlap **1.00** — genuine duplicate witness); what was wrong there was the TITLE. **TITLE HYGIENE v2: 38 titles cleaned** of apparatus the capture had welded into the title field — DOI strings, Hex coordinates, platform suffixes ("…$20 Portrait DOI: 10.5281/zenodo.18736175 Hex: 06.SEI.CURRENCY.ACTIVATION — Crimson Hexagon Archive" → "WHOSE FACE IS ON THE TWENTY? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $20 Portrait"). The collision guard was corrected mid-wave: **duplicate witnesses SHOULD share a title**, so a collision with a kin record is permitted while a collision with an unrelated record is still held. **SELF-CAUGHT REGRESSION: the DOI-strip pattern consumed a bracketed `[SUPERSEDED → DOI: …]` PREFIX on three records, truncating their titles to "[SUPERSEDED →". Detected by a post-wave title-length sweep and repaired in the same pass** — the originals restored with only the platform suffix removed. | MANUS/TACHYON |
 | Date | Ruling | By |
