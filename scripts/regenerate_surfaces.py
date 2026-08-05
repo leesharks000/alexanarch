@@ -200,7 +200,16 @@ def regenerate_browse(reg, dry_run=False):
         status_badge = ''
         card_opacity = ''
         if status == 'SUPERSEDED' and superseded_by_n:
-            status_badge = f' · <span style="color:#92400e;font-size:.85em">superseded by <a href="/s/records/{superseded_by_n}/" style="color:#92400e;text-decoration:underline">#{superseded_by_n}</a></span>'
+            # NESTED-ANCHOR FIX (MANUS screenshots, 2026-08-04): the browse card
+            # IS an <a>. An <a> inside an <a> is invalid HTML — every browser
+            # closes the outer anchor at the inner one and hoists the remaining
+            # inner links to the end of the document. That is what produced the
+            # broken tail: rows reading "AXN:… · superseded by" with no target,
+            # and a long orphaned column of #NNNN links after the last row.
+            # The target is now plain text inside the card's own link, which
+            # already points at the record; the record page carries the pointer.
+            status_badge = (f' · <span style="color:#92400e;font-size:.85em">'
+                            f'superseded by #{superseded_by_n}</span>')
             card_opacity = ';opacity:.65'
         elif status == 'DRAFT_PENDING':
             status_badge = ' · <span style="color:#6b7280;font-size:.85em;font-style:italic">draft pending</span>'
