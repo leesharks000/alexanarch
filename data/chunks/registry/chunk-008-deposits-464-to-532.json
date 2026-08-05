@@ -1,8 +1,8 @@
 {
   "chunk_number": 8,
   "first_deposit": 464,
-  "last_deposit": 533,
-  "count": 70,
+  "last_deposit": 532,
+  "count": 69,
   "deposits": [
     {
       "axn": "AXN:011A.GOVERNANCE.🔔🌗💧∮🕙🪧",
@@ -3414,7 +3414,7 @@
       "orcid": "0009-0000-1599-0703",
       "date": "2026-02-12",
       "description": "Heteronym Flagship Book Candidate Source Map Dr.",
-      "content_type": "Archival inventory / assessment",
+      "content_type": "Dataset",
       "license": "CC-BY-4.0",
       "substrate": "Various",
       "keywords": [
@@ -3618,9 +3618,16 @@
           "reason": "W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note",
           "was": "MINTED_UNREVIEWED",
           "now": "ACTIVE"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "content_type",
+          "reason": "AUDIT-DIRECTED EXECUTION (text-present class): content_type per the audit recommendation",
+          "was": "Archival inventory / assessment",
+          "now": "Dataset"
         }
       ],
-      "date_modified": "2026-08-04",
+      "date_modified": "2026-08-05",
       "publisher": "Pergamon Press"
     },
     {
@@ -11369,7 +11376,7 @@
       "orcid": "0009-0000-1599-0703",
       "date": "2026-02-18",
       "description": "Deposit: 1 of 3 (Full Charter → Compressed Charter → Seed)",
-      "content_type": "Compendium-generative charter / specification",
+      "content_type": "Book / manuscript",
       "license": "CC-BY-4.0",
       "substrate": "Various",
       "keywords": [
@@ -11657,7 +11664,15 @@
           ],
           "basis": "MANUS directive 2026-08-04: a partially-restored or intermediary record whose work exists elsewhere in the archive must not dead-end. These are OTHER INSTANCES of the same work, matched by title-token overlap or content fingerprint and recorded as relations only — no supersession direction is asserted here; version order for these families is ADJUDICATION (see §11). The open audit directive for this record stands regardless.",
           "open_audit_directive": "Normalize the bibliographic type to compendium, charter, or specification; retain scholarly-essay framing only as a secondary genre if desir"
-        }
+        },
+        "type_history": [
+          {
+            "from": "Compendium-generative charter / specification",
+            "to": "Book / manuscript",
+            "basis": "Normalize the bibliographic type to compendium, charter, or specification; retain scholarly-essay framing only as a secondary genre if desired.",
+            "date": "2026-08-04"
+          }
+        ]
       },
       "title_repair_log": [
         {
@@ -11701,6 +11716,20 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "RELATED-INSTANCE POINTERS: intermediary/partially-restored record linked to the other in-archive instances of its work so it no longer dead-ends; direction not asserted",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 39708, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 39708, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "content_type",
+          "reason": "AUDIT-DIRECTED EXECUTION pass 2 (text-present): type per the audit recommendation; prior type preserved in body_status.type_history",
+          "was": "Compendium-generative charter / specification",
+          "now": "Book / manuscript"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "AUDIT-DIRECTED EXECUTION pass 2 (text-present): type per the audit recommendation; prior type preserved in body_status.type_history",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 39708, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 39708, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
@@ -12589,7 +12618,7 @@
       "orcid": "0009-0000-1599-0703",
       "date": "2026-02-20",
       "description": "A Pocket Humans book is not only a book. It is a portable human — a structured presence — capable of surviving the future reader, the machine reader, and the institutional reader.",
-      "content_type": "Book / monograph",
+      "content_type": "Book / manuscript",
       "license": "CC-BY-4.0",
       "substrate": "Various",
       "keywords": [
@@ -14709,7 +14738,15 @@
           ],
           "basis": "MANUS directive 2026-08-04: a partially-restored or intermediary record whose work exists elsewhere in the archive must not dead-end. These are OTHER INSTANCES of the same work, matched by title-token overlap or content fingerprint and recorded as relations only — no supersession direction is asserted here; version order for these families is ADJUDICATION (see §11). The open audit directive for this record stands regardless.",
           "open_audit_directive": "Replace or qualify content_type: `Dataset` → `Book / monograph`; retain the former value in the modification history."
-        }
+        },
+        "type_history": [
+          {
+            "from": "Book / monograph",
+            "to": "Book / manuscript",
+            "basis": "Replace or qualify content_type: `Dataset` → `Book / monograph`; retain the former value in the modification history.",
+            "date": "2026-08-04"
+          }
+        ]
       },
       "canonical_text_status": "canonical_full_text",
       "modifications": [
@@ -14744,6 +14781,20 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "RELATED-INSTANCE POINTERS: intermediary/partially-restored record linked to the other in-archive instances of its work so it no longer dead-ends; direction not asserted",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 413672, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 413672, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "content_type",
+          "reason": "AUDIT-DIRECTED EXECUTION pass 2 (text-present): type per the audit recommendation; prior type preserved in body_status.type_history",
+          "was": "Book / monograph",
+          "now": "Book / manuscript"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "AUDIT-DIRECTED EXECUTION pass 2 (text-present): type per the audit recommendation; prior type preserved in body_status.type_history",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 413672, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 413672, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_"
         }
@@ -18281,7 +18332,7 @@
       "orcid": "0009-0000-1599-0703",
       "date": "2026-02-25",
       "description": "System Under Test: Google AI Mode (AIO) — the public search summarizer built on Gemini, accessed in an incognito browser window with no login, no prior history, and no Hexagon context",
-      "content_type": "Empirical record / traversal log",
+      "content_type": "Traversal log / field observation",
       "license": "CC-BY-4.0",
       "substrate": "Various",
       "keywords": [
@@ -18547,7 +18598,15 @@
         "audited_at": "2026-07-17T04:49:17.789813Z",
         "audit_version": "v3-dual-store+recovery-map",
         "measured_prose_words": 5202,
-        "measured_at": "2026-07-31"
+        "measured_at": "2026-07-31",
+        "type_history": [
+          {
+            "from": "Empirical record / traversal log",
+            "to": "Traversal log / field observation",
+            "basis": "Replace or qualify content_type: `Specification` → `Empirical record / traversal log`; retain the former value in the modification history.",
+            "date": "2026-08-04"
+          }
+        ]
       },
       "canonical_text_status": "canonical_full_text",
       "modifications": [
@@ -18577,9 +18636,23 @@
           "reason": "W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note",
           "was": "MINTED_UNREVIEWED",
           "now": "ACTIVE"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "content_type",
+          "reason": "AUDIT-DIRECTED EXECUTION pass 2 (text-present): type per the audit recommendation; prior type preserved in body_status.type_history",
+          "was": "Empirical record / traversal log",
+          "now": "Traversal log / field observation"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "AUDIT-DIRECTED EXECUTION pass 2 (text-present): type per the audit recommendation; prior type preserved in body_status.type_history",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 34216, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 34216, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
       ],
-      "date_modified": "2026-08-04",
+      "date_modified": "2026-08-05",
       "publisher": "Pergamon Press"
     },
     {
@@ -19948,7 +20021,7 @@
       "orcid": "0009-0000-1599-0703",
       "date": "2026-02-27",
       "description": "Journal: Transactions of the Semantic Economy Institute",
-      "content_type": "Theoretical essay / phenomenological study",
+      "content_type": "Theoretical paper",
       "license": "CC-BY-4.0",
       "substrate": "Various",
       "keywords": [
@@ -20085,7 +20158,15 @@
         "audited_at": "2026-07-17T04:49:17.789813Z",
         "audit_version": "v3-dual-store+recovery-map",
         "measured_prose_words": 4904,
-        "measured_at": "2026-07-31"
+        "measured_at": "2026-07-31",
+        "type_history": [
+          {
+            "from": "Theoretical essay / phenomenological study",
+            "to": "Theoretical paper",
+            "basis": "Replace or qualify content_type: `Creative work (poetry)` → `Theoretical essay / phenomenological study`; retain the former value in the modification ",
+            "date": "2026-08-04"
+          }
+        ]
       },
       "title_repair_log": [
         {
@@ -20131,9 +20212,23 @@
           "reason": "W11 TITLE-HYGIENE (MANUS ratified 2026-08-04): blog/platform suffix \"— Crimson Hexagon(al) Archive\" removed; publication surface is not part of the work title",
           "was": "The Infinite Tunnel: An Immanent Phenomenology of the Google AI Mode Share Link — Crimson Hexagon Archive",
           "now": "The Infinite Tunnel: An Immanent Phenomenology of the Google AI Mode Share Link"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "content_type",
+          "reason": "AUDIT-DIRECTED EXECUTION pass 2 (text-present): type per the audit recommendation; prior type preserved in body_status.type_history",
+          "was": "Theoretical essay / phenomenological study",
+          "now": "Theoretical paper"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "AUDIT-DIRECTED EXECUTION pass 2 (text-present): type per the audit recommendation; prior type preserved in body_status.type_history",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 31479, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 31479, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
       ],
-      "date_modified": "2026-08-04",
+      "date_modified": "2026-08-05",
       "publisher": "Pergamon Press"
     },
     {
@@ -22843,7 +22938,7 @@
       "orcid": "0009-0000-1599-0703",
       "date": "2026-03-01",
       "description": "Google DeepMind's Unified Latents (UL) framework (Heek, Hoogeboom, Mensink, & Salimans, 2026; arXiv:2602.17270) presents itself as a technical contribution to latent diffusion modeling — a method for optimizing the trade-off between information density and reconstruction quality in generative AI.",
-      "content_type": "Scholarly diagnostic / theoretical paper",
+      "content_type": "Theoretical paper",
       "license": "CC-BY-4.0",
       "substrate": "Various",
       "keywords": [
@@ -23037,7 +23132,15 @@
         "audited_at": "2026-07-17T04:49:17.789813Z",
         "audit_version": "v3-dual-store+recovery-map",
         "measured_prose_words": 6608,
-        "measured_at": "2026-07-31"
+        "measured_at": "2026-07-31",
+        "type_history": [
+          {
+            "from": "Scholarly diagnostic / theoretical paper",
+            "to": "Theoretical paper",
+            "basis": "Replace or qualify content_type: `Creative work (poetry)` → `Scholarly diagnostic / theoretical paper`; retain the former value in the modification hi",
+            "date": "2026-08-04"
+          }
+        ]
       },
       "title_repair": {
         "repaired_at": "2026-07-20",
@@ -23097,9 +23200,23 @@
           "reason": "W11 TITLE-HYGIENE (MANUS ratified 2026-08-04): blog/platform suffix \"— Crimson Hexagon(al) Archive\" removed; publication surface is not part of the work title",
           "was": "The Encoder Governs: A Semantic Economic Diagnostic of Google DeepMind's Unified Latents — Crimson Hexagon Archive",
           "now": "The Encoder Governs: A Semantic Economic Diagnostic of Google DeepMind's Unified Latents"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "content_type",
+          "reason": "AUDIT-DIRECTED EXECUTION pass 2 (text-present): type per the audit recommendation; prior type preserved in body_status.type_history",
+          "was": "Scholarly diagnostic / theoretical paper",
+          "now": "Theoretical paper"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "AUDIT-DIRECTED EXECUTION pass 2 (text-present): type per the audit recommendation; prior type preserved in body_status.type_history",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 47841, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 47841, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
       ],
-      "date_modified": "2026-08-04",
+      "date_modified": "2026-08-05",
       "publisher": "Pergamon Press"
     },
     {
@@ -23503,331 +23620,6 @@
           "reason": "W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note",
           "was": "DRAFT_PENDING",
           "now": "DRAFT"
-        }
-      ],
-      "date_modified": "2026-08-04",
-      "publisher": "Pergamon Press"
-    },
-    {
-      "axn": "AXN:0168.GOVERNANCE.🌃🕒🚩🪝🍁🕙",
-      "root_axn": "AXN:0168.GOVERNANCE",
-      "hex": "0168",
-      "family": "GOVERNANCE",
-      "emoji": "🌃🕒🚩🪝🍁🕙",
-      "hash": "e2645334776b1de89a8e8e81b27843fb871e212838d4df1a5ad36d8738544d19",
-      "title": "The Groundskeeper's Treatise: A Diagnostic Reading of Platform Stewardship Theory through the Semantic Economy",
-      "creator": "Johannes Sigil",
-      "orcid": "0009-0000-1599-0703",
-      "date": "2026-03-04",
-      "description": "Abstract. Patrick Grady's nine-part essay series \"On Platforms\" (Substack, December 2025–February 2026) develops a theory of semantic capacity as an economic primitive, arguing that platform architectures which stabilize meaning lower the marginal cost of complexity, generate surplus, and produce compounding intelligence.",
-      "content_type": "Diagnostic probe",
-      "license": "CC-BY-4.0",
-      "substrate": "Various",
-      "keywords": [
-        "political economy definition",
-        "governance contestability",
-        "bearing-cost concealment",
-        "ontological foreclosure",
-        "exhaustion trajectory",
-        "liberatory operator",
-        "platform governance",
-        "crimson hexagonal"
-      ],
-      "version": "v1.0",
-      "deposit_number": 533,
-      "sovereign_id": "MM-CHA-0356",
-      "minted_at": "2026-06-20T22:00:00Z",
-      "status": "ACTIVE",
-      "clusters": [
-        "Liminal",
-        "Temporal",
-        "Navigational",
-        "Instrumental",
-        "Organic",
-        "Temporal"
-      ],
-      "reading": "Threshold → Duration → Search → Method → Growth → Duration",
-      "axn_canonical": "e2645334776b1de89a8e8e81b27843fb871e212838d4df1a5ad36d8738544d19",
-      "axn_display": "🌃🕒🚩🪝🍁🕙",
-      "mirrors": {
-        "blog": "https://mindcontrolpoems.blogspot.com/2026/03/the-groundskeepers-treatise-diagnostic.html"
-      },
-      "zenodo_dois": [
-        "10.5281/zenodo.18736175",
-        "10.5281/zenodo.18862106",
-        "10.5281/zenodo.18867491",
-        "10.5281/zenodo.18869165"
-      ],
-      "full_text_path": "/data/texts/AXN-0168-text.md",
-      "full_text_chars": 39419,
-      "wiki_article": "\"The Groundskeeper's Treatise\" is a 5,654-word diagnostic probe by Johannes Sigil, a heteronym within the Dodecad system of the Crimson Hexagonal Archive, dated 2026-03-04. Abstract. Patrick Grady's nine-part essay series \"On Platforms\" (Substack, December 2025–February 2026) develops a theory of semantic capacity as an economic primitive, arguing that platform architectures which stabilize meaning lower the marginal cost of complexity, generate surplus, and produce compounding intelligence. The work is classified under the GOVERNANCE semantic family within the Crimson Hexagonal Archive. It was removed from Zenodo on June 19, 2026 and is preserved through Alexanarch.",
-      "entities": [
-        {
-          "subject": "The Groundskeeper's Treatise",
-          "predicate": "created_by",
-          "object": "Johannes Sigil",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "The Groundskeeper's Treatise",
-          "predicate": "is_type",
-          "object": "Diagnostic probe",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "The Groundskeeper's Treatise",
-          "predicate": "belongs_to_family",
-          "object": "GOVERNANCE",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "The Groundskeeper's Treatise",
-          "predicate": "is_part_of",
-          "object": "Crimson Hexagonal Archive",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "The Groundskeeper's Treatise",
-          "predicate": "references",
-          "object": "TACHYON",
-          "type": "heteronym",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "The Groundskeeper's Treatise",
-          "predicate": "engages",
-          "object": "Semantic Economy",
-          "type": "concept",
-          "evidence_status": "inferred"
-        },
-        {
-          "subject": "The Groundskeeper's Treatise",
-          "predicate": "engages",
-          "object": "Assembly Chorus",
-          "type": "concept",
-          "evidence_status": "inferred"
-        },
-        {
-          "subject": "The Groundskeeper's Treatise",
-          "predicate": "engages",
-          "object": "Liberatory Operator",
-          "type": "concept",
-          "evidence_status": "inferred"
-        },
-        {
-          "subject": "Bearing-cost concealment",
-          "predicate": "minted_in",
-          "object": "The Groundskeeper's Treatise: A Diagnostic Reading of Platfo",
-          "type": "concept",
-          "evidence_status": "observed",
-          "note": "The framework names \"coordination costs\" but does not track who pays them after the platform is inst"
-        },
-        {
-          "subject": "Cognitive bearing-cost",
-          "predicate": "minted_in",
-          "object": "The Groundskeeper's Treatise: A Diagnostic Reading of Platfo",
-          "type": "concept",
-          "evidence_status": "observed",
-          "note": "In intelligence-generating platforms — including both enterprise data platforms and generative AI — "
-        },
-        {
-          "subject": "Constitutional bloat",
-          "predicate": "minted_in",
-          "object": "The Groundskeeper's Treatise: A Diagnostic Reading of Platfo",
-          "type": "concept",
-          "evidence_status": "observed",
-          "note": "The point at which governance overhead — cognitive rent, ontological constraint, compliance cost, sc"
-        },
-        {
-          "subject": "Corpus depletion",
-          "predicate": "minted_in",
-          "object": "The Groundskeeper's Treatise: A Diagnostic Reading of Platfo",
-          "type": "concept",
-          "evidence_status": "observed",
-          "note": "The point at which the cultural, scientific, or experiential substrate from which meaning is drawn h"
-        },
-        {
-          "subject": "Exhaustion trajectory",
-          "predicate": "minted_in",
-          "object": "The Groundskeeper's Treatise: A Diagnostic Reading of Platfo",
-          "type": "concept",
-          "evidence_status": "observed",
-          "note": "The framework predicts \"compounding intelligence\" without modeling the depletion of semantic labor, "
-        },
-        {
-          "subject": "Governance contestability",
-          "predicate": "minted_in",
-          "object": "The Groundskeeper's Treatise: A Diagnostic Reading of Platfo",
-          "type": "concept",
-          "evidence_status": "observed",
-          "note": "The five-layer stack is defined by the steward. No mechanism exists for participant amendment of sch"
-        },
-        {
-          "subject": "Labor bearing-cost",
-          "predicate": "minted_in",
-          "object": "The Groundskeeper's Treatise: A Diagnostic Reading of Platfo",
-          "type": "concept",
-          "evidence_status": "observed",
-          "note": "Grady's framework acknowledges that pre-platform environments generate \"bespoke mediation\" and \"inte"
-        },
-        {
-          "subject": "Ontological foreclosure",
-          "predicate": "minted_in",
-          "object": "The Groundskeeper's Treatise: A Diagnostic Reading of Platfo",
-          "type": "concept",
-          "evidence_status": "observed",
-          "note": "The point at which the platform's representational constraints become so total that innovation outsi"
-        },
-        {
-          "subject": "Participant bearing-cost",
-          "predicate": "minted_in",
-          "object": "The Groundskeeper's Treatise: A Diagnostic Reading of Platfo",
-          "type": "concept",
-          "evidence_status": "observed",
-          "note": "Organizations that adopt the platform must translate their existing representations into the platfor"
-        },
-        {
-          "subject": "Participant exhaustion",
-          "predicate": "minted_in",
-          "object": "The Groundskeeper's Treatise: A Diagnostic Reading of Platfo",
-          "type": "concept",
-          "evidence_status": "observed",
-          "note": "The point at which bearing-cost depletes the entities that produce semantic labor. Scientists who sp"
-        },
-        {
-          "subject": "Political economy definition",
-          "predicate": "minted_in",
-          "object": "The Groundskeeper's Treatise: A Diagnostic Reading of Platfo",
-          "type": "concept",
-          "evidence_status": "observed",
-          "note": "The framework explicitly redefines political economy to exclude authority allocating scarce resource"
-        },
-        {
-          "subject": "Rent structure",
-          "predicate": "minted_in",
-          "object": "The Groundskeeper's Treatise: A Diagnostic Reading of Platfo",
-          "type": "concept",
-          "evidence_status": "observed",
-          "note": "TetraScience charges subscription fees for access to data that participants produced and formatted. "
-        }
-      ],
-      "journal": "Transactions of the Semantic Economy Institute (Trans. SEI)",
-      "cited_by": [
-        {
-          "deposit": 28,
-          "axn": "AXN:0185.GENERATIVE.⛵❤️🔺🌔⛵🝊"
-        },
-        {
-          "deposit": 41,
-          "axn": "AXN:01C1.GOVERNANCE.🜁🔗🔭👁️‍🗨️⚙️✊"
-        },
-        {
-          "deposit": 42,
-          "axn": "AXN:01C3.GOVERNANCE.🔴🃏🚩🔺💥❄️"
-        }
-      ],
-      "references_concepts": [
-        "Assembly Chorus",
-        "Bearing-cost",
-        "Bearing-cost concealment",
-        "Cognitive bearing-cost",
-        "Constitution",
-        "Constitutional bloat",
-        "Corpus depletion",
-        "Crimson Hexagonal Archive",
-        "Exhaustion trajectory",
-        "Governance contestability",
-        "Johannes Sigil",
-        "Labor bearing-cost",
-        "Lee Sharks",
-        "Marx's",
-        "Ontological foreclosure",
-        "Part I",
-        "Participant bearing-cost",
-        "Participant exhaustion",
-        "Platform capture",
-        "Political economy definition",
-        "Rent structure",
-        "Semantic Economy",
-        "Semantic Economy framework",
-        "TACHYON",
-        "TECHNE",
-        "The Inner Artifact",
-        "ghost governance"
-      ],
-      "defines_concepts": [
-        "Bearing-cost concealment",
-        "Cognitive bearing-cost",
-        "Constitutional bloat",
-        "Corpus depletion",
-        "Exhaustion trajectory",
-        "Governance contestability",
-        "Labor bearing-cost",
-        "Ontological foreclosure",
-        "Participant bearing-cost",
-        "Participant exhaustion",
-        "Political economy definition",
-        "Rent structure"
-      ],
-      "references_concept_count": 27,
-      "external_metadata_path": "/data/external-metadata/AXN-0168.json",
-      "openalex_ids": [
-        "https://openalex.org/W7130943531",
-        "https://openalex.org/W7133562672",
-        "https://openalex.org/W7133545593",
-        "https://openalex.org/W7133541100"
-      ],
-      "datacite_severance": "severed",
-      "body_status": {
-        "class": "full",
-        "lacuna": false,
-        "recovery_status": "COMPLETE",
-        "residual_chars": 38114,
-        "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map",
-        "measured_prose_words": 5380,
-        "measured_at": "2026-07-31"
-      },
-      "title_repair": {
-        "repaired_at": "2026-07-20",
-        "old": "The Groundskeeper's Treatise: A Diagnostic Reading of Platform Stewardship Theory through the Semantic Economy",
-        "source": "body heading (stage-0)",
-        "boundary": 110
-      },
-      "title_repair_log": [
-        {
-          "at": "2026-07-28T15:20:20Z",
-          "defect": "registry_title_diverged_from_published_form",
-          "was": "The Groundskeeper's Treatise: A Diagnostic Reading of Platform Stewardship Theory through the Semantic Economy I. What the Framework Gets Right",
-          "now": "The Groundskeeper's Treatise: A Diagnostic Reading of Platform Stewardship Theory through the Semantic Economy",
-          "basis": "Set verbatim to the title this work carried at Zenodo, from data/doi-resolution-index.json (10.5281/zenodo.18869164, direct_verified, word overlap 0.71). The recovered metadata is the published form of record; the registry title was a variant."
-        }
-      ],
-      "canonical_text_status": "canonical_full_text",
-      "modifications": [
-        {
-          "date": "2026-08-01",
-          "field": "journal",
-          "reason": "Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)",
-          "was": "Trans. SEI",
-          "now": "Transactions of the Semantic Economy Institute (Trans. SEI)"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "publisher",
-          "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
-          "now": "Pergamon Press"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "status",
-          "reason": "W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note",
-          "was": "MINTED_UNREVIEWED",
-          "now": "ACTIVE"
         }
       ],
       "date_modified": "2026-08-04",

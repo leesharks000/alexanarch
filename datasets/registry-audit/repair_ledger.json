@@ -28332,6 +28332,58 @@
    "operator": "TACHYON",
    "date": "2026-08-04",
    "wave": "RECOVER-1327"
+  },
+  {
+   "repair_id": "R-1188",
+   "deposit_number": 1300,
+   "axn": "AXN:0525.UNCLASSIFIED.▶️●🌌✨🫶♈",
+   "basis": "MANUS reading: '#1300 is listed as a partial restore but I think it's a complete APZPZ, and the title is different than what it points to.' BOTH CORRECT. (a) The record is a complete instance of the APZPZ genre — a deposit packet that is itself the object (genre instantiated at #429/#1301); it is not partially restored AS A PACKET. The only truncation is in the captured DataCite description field, which breaks mid-sentence at 'It enfolds Document 20' — a capture-source truncation, not a missing work. Typed Metadata packet; genre_note and capture_completeness inscribed. (b) The title divergence is real and now explained on the record: #1300 carries the Zenodo PACKET title, #430 carries the WORK title; identity confirmed by shared DOI 10.5281/zenodo.18451824. (c) The empty 'Pairing basis: .' rendering defect is fixed — full_version.basis now carries the DOI-identity evidence. (d) Audit directive 'Recover and seat the capstone artifact' SATISFIED: the capstone is in-archive at #430, 17,677 chars.",
+   "operator": "TACHYON",
+   "date": "2026-08-04",
+   "wave": "MANUS-READ-1300"
+  },
+  {
+   "repair_id": "R-1189",
+   "deposit_number": null,
+   "batch": true,
+   "records": [
+    129,
+    205,
+    211,
+    311,
+    340,
+    475
+   ],
+   "count": 6,
+   "basis": "AUDIT-DIRECTED EXECUTION, TEXT-PRESENT CLASS (the 40 directives whose works are already staged — corrected split of 2026-08-04). Executed strictly from the audit's recommendation text: 4 type normalizations mapped into the ratified vocabulary, 1 titles replaced with the audit's observed_body_subject where the registry had projected a metadata field as the title, 1 series-identifier corrections with prior label and audit evidence preserved in body_status.series_correction, 0 creator-role projections where the audit names roles and none were seated. Creator STRINGS untouched (role collapse, not wrong name — the mid-wave finding of the earlier creator wave).",
+   "operator": "TACHYON",
+   "date": "2026-08-04",
+   "wave": "AUDIT-EXEC-TEXT-PRESENT"
+  },
+  {
+   "repair_id": "R-1190",
+   "deposit_number": null,
+   "batch": true,
+   "records": [
+    320,
+    436,
+    495,
+    499,
+    512,
+    518,
+    530,
+    534,
+    541,
+    551,
+    552,
+    558,
+    592
+   ],
+   "count": 13,
+   "basis": "AUDIT-DIRECTED EXECUTION pass 2 (text-present class): pass 1's patterns were too narrow (6/40). Widened to the audit's explicit arrow form (content_type: `X` → `Y`), 'normalize/classify the type to/as', archive-wrapper title removal, and the seat/retain role grammar. Result: 11 type normalizations with prior value preserved in body_status.type_history per the audit's own instruction ('retain the former value in the modification history'), 0 title wrapper removals, 2 creator-role projections. Creator strings untouched throughout.",
+   "operator": "TACHYON",
+   "date": "2026-08-04",
+   "wave": "AUDIT-EXEC-2"
   }
  ]
 }
