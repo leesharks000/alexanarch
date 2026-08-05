@@ -12,9 +12,7 @@ This essay proposes the category of the meta-heteronym — a heteronymic syste
 
 Keywords: Fernando Pessoa · heteronymy · meta-heteronym · paratext · operative philology · Lee Sharks · Orpheu · archive · becoming-other · drama em gente · retrieval layer · anthropophagy · transcreation · avatar · digital subjectivity
 ---
-#
-
-## I. Method and Framing
+### I. Method and Framing
 
 This essay is unusual in three ways that should be stated at the outset.
 

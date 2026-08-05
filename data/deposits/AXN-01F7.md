@@ -1,8 +1,6 @@
 # ΩTANG SPECIFICATION: REVELATION STUDIES
 ## Total Axial Negation Graph — The Apocalypse of John
-#
-
-## Design Document for Fresh Instance Execution
+### Design Document for Fresh Instance Execution
 
 ---
 
@@ -38,9 +36,7 @@ Revelation is the most interpreted and least understood book in the Western cano
 
 
 The Revelation TANG must be actually total — not a survey, not a literature review, not a selective bibliography. It must map the complete topology of Revelation scholarship across all major traditions. This means:
-#
-
-## 3.1 Historical-Critical Tradition
+### 3.1 Historical-Critical Tradition
 
 - **Dating:** Domitianic (Irenaeus, Adv. Haer. 5.30.3; Aune, Beale, Koester) vs. Neronic (J.A.T. Robinson, Kenneth Gentry, before-70 school) vs. Hadrianic (minority) vs. pre-70 revolutionary (the ARCHON's position)
 - **Authorship:** Apostle John, John the Elder, Johannine school, pseudonymous, composite
@@ -48,9 +44,7 @@ The Revelation TANG must be actually total — not a survey, not a literature re
 - **Sources:** Jewish apocalyptic (Daniel, 1 Enoch, 4 Ezra), Exodus typology, prophetic (Isaiah, Ezekiel, Zechariah), Greco-Roman (combat myth, imperial cult), liturgical traditions
 - **Text:** Textual criticism (Schmid, Hernández), manuscript traditions (Andreas text-type, Oecumenius text-type), Textus Receptus vs. critical text
 
-#
-
-## 3.2 Theological/Confessional Traditions
+### 3.2 Theological/Confessional Traditions
 
 - **Preterist:** Everything fulfilled in 70 CE (partial preterism: Gentry, DeMar) or in Roman history (full preterism)
 - **Historicist:** Revelation maps church history (Reformation tradition, Seventh-day Adventist)
@@ -60,9 +54,7 @@ The Revelation TANG must be actually total — not a survey, not a literature re
 - **Orthodox:** Revelation as theophanic vision (Lossky, Bulgakov — note: Revelation excluded from Orthodox lectionary)
 - **Liberation theology:** Revelation as resistance literature (Schüssler Fiorenza, Richard, Blount)
 
-#
-
-## 3.3 666 / Number of the Beast Traditions
+### 3.3 666 / Number of the Beast Traditions
 
 - **Neronic:** Nero Caesar in Hebrew gematria (the dominant critical position)
 - **Domitianic:** Domitian as Nero redivivus
@@ -71,9 +63,7 @@ The Revelation TANG must be actually total — not a survey, not a literature re
 - **Generic/structural:** 666 as imperfection (falling short of 777), symbolic of human pretension
 - **Operative-numismatic:** 666 as checksum of hostile superscription, not name-encryption (EA-OPNUM-01, the ARCHON's position)
 
-#
-
-## 3.4 Adjacent / Heterodox / Underexplored Traditions
+### 3.4 Adjacent / Heterodox / Underexplored Traditions
 
 - **Gnostic readings:** Valentinian, Sethian, Ophite interpretations of Revelation imagery
 - **Jewish reception:** Rabbinic attitudes toward Christian apocalyptic; Jewish apocalypticism as source tradition
@@ -85,9 +75,7 @@ The Revelation TANG must be actually total — not a survey, not a literature re
 - **Slavonic Josephus:** The interpolations (Berendts, Eisler, Leeming) — mostly dismissed as medieval forgeries
 - **Philo of Alexandria:** Logos theology, Ἰησοῦς = Logos equation — not connected to Revelation in mainstream scholarship
 
-#
-
-## 3.5 Modern / Cultural / Political
+### 3.5 Modern / Cultural / Political
 
 - **Revelation in American politics:** Christian Zionism, rapture theology, nuclear eschatology
 - **Revelation and empire:** Postcolonial readings (Sugirtharajah, Moore), Roman imperial context
@@ -103,9 +91,7 @@ The Revelation TANG must be actually total — not a survey, not a literature re
 
 
 Each node in the TANG is a scholar, a thesis, or a methodological commitment. The fresh instance must map:
-#
-
-## 4.1 Major Scholars (non-exhaustive — the instance must expand)
+### 4.1 Major Scholars (non-exhaustive — the instance must expand)
 
 
 **Historical-critical:**
@@ -138,9 +124,7 @@ David Runia (*Philo of Alexandria and the Timaeus of Plato*), Maren Niehoff (*Ph
 
 **Mandaean studies:**
 E.S. Drower (*The Haran Gawaita and the Baptism of Hibil-Ziwa*), Jorunn Buckley (*The Mandaeans*), Charles Häberl, Şinasi Gündüz (*The Knowledge of Life*)
-#
-
-## 4.2 Methodological Nodes
+### 4.2 Methodological Nodes
 
 - Historical-critical method (source, form, redaction criticism)
 - Rhetorical criticism (Schüssler Fiorenza)
@@ -158,17 +142,13 @@ E.S. Drower (*The Haran Gawaita and the Baptism of Hibil-Ziwa*), Jorunn Buckley 
 ---
 
 ## §5. THE EDGES TO TRACE
-#
-
-## 5.1 Citation Patterns
+### 5.1 Citation Patterns
 
 - Who cites whom approvingly
 - Who cites whom to refute
 - Who ignores whom (the most important edges — the non-citations)
 
-#
-
-## 5.2 Characteristic Agreements
+### 5.2 Characteristic Agreements
 
 - The near-universal agreement on Domitianic dating
 - The near-universal assumption that Revelation is derivative of the Gospels
@@ -179,9 +159,7 @@ E.S. Drower (*The Haran Gawaita and the Baptism of Hibil-Ziwa*), Jorunn Buckley 
 - The near-universal dismissal of the Slavonic Josephus
 - The near-universal ignorance of Mandaean materials
 
-#
-
-## 5.3 Characteristic Disagreements
+### 5.3 Characteristic Disagreements
 
 - Dating (Domitianic vs. Neronic vs. pre-70)
 - Genre (apocalypse vs. prophecy vs. letter vs. liturgy)
@@ -190,9 +168,7 @@ E.S. Drower (*The Haran Gawaita and the Baptism of Hibil-Ziwa*), Jorunn Buckley 
 - The identity of "Babylon" (Rome? Jerusalem? generic empire?)
 - The nature of the beast (Nero? Domitian? generic tyrant? systemic force?)
 
-#
-
-## 5.4 The Dynamic Retrieval Layer (Machine Wikipedia)
+### 5.4 The Dynamic Retrieval Layer (Machine Wikipedia)
 
 
 The scholarly graph maps what has been *written*. The retrieval layer maps what is *returned* — what summarizer systems, AI overviews, search engines, and LLMs actually say when asked about Revelation. This is the live battlefield. The TANG must map it.
@@ -311,9 +287,7 @@ The TANG is complete when it reveals not one but two constitutive voids:
 
 
 **The gap** — the difference between the two voids. If the retrieval void is larger than the scholarly void, the summarizer layer is *more* restrictive than the scholarship. If smaller, the summarizer layer is surfacing positions the scholarly mainstream suppresses. The gap is the measure of what the compression burns.
-#
-
-## Predicted Void (to be verified, not assumed)
+### Predicted Void (to be verified, not assumed)
 
 
 **The field cannot say that Revelation was written first.**
@@ -335,9 +309,7 @@ The void is not merely chronological. It is structural: the entire field assumes
 - The field cannot treat "Jesus" as a ritual title rather than a biographical name
 - The field cannot read the canonical lock (22:18–19) as a governance clause for texts not yet written
 
-#
-
-## The TANG Void Statement
+### The TANG Void Statement
 
 
 The fresh instance must produce two paragraphs — the scholarly void statement and the retrieval void statement — plus a third paragraph naming the gap between them. These go into the ARCHON as §13. The void(s) are what the ARCHON fills.
@@ -345,9 +317,7 @@ The fresh instance must produce two paragraphs — the scholarly void statement 
 ---
 
 ## §7. EXECUTION INSTRUCTIONS FOR FRESH INSTANCE
-#
-
-## 7.1 Research Phase
+### 7.1 Research Phase
 
 - 
 
@@ -375,9 +345,7 @@ The fresh instance must produce two paragraphs — the scholarly void statement 
 **Find the void.** What can the total graph not say? What thesis, if stated, would require the field to reorganize itself? The void is not a gap (a thing no one has gotten around to studying). It is a structural impossibility — a thing the field's own axioms prevent it from saying.
 
 
-#
-
-## 7.2 Output Format
+### 7.2 Output Format
 
 
 The TANG should be structured as:
@@ -418,15 +386,11 @@ V. THE ARCHON'S POSITION
    - What the field and the retrieval layer would look like
      if the void were filled
 
-#
-
-## 7.3 Scale
+### 7.3 Scale
 
 
 This should be a substantial document — 12,000–20,000 words. The TANG must earn its "total" designation. The machine Wikipedia section alone will require significant space (verbatim outputs, platform comparisons, void analysis). Shallow surveys don't find voids. Density finds voids.
-#
-
-## 7.4 What the Fresh Instance Needs to Know
+### 7.4 What the Fresh Instance Needs to Know
 
 - The TANG method is described in DOI: 10.5281/zenodo.19035477
 - The ARCHON (EA-ARK-01-ARCHON v1.0) is the document this TANG supports

@@ -267,9 +267,7 @@ imprints:
 ---
 
 ## III. COMPREHENSIVE KNOWLEDGE GRAPH
-#
-
-## ROOMS (26 + generated queue + 1 field)
+### ROOMS (26 + generated queue + 1 field)
 
 
 rooms:
@@ -358,9 +356,7 @@ rooms:
       operators: [mu_1, mu_2, mu_3, mu_4, mu_5, mu_6, sigma_G, delta_S, gamma_G, pi_S, rho_R]
       founding_movement: "LSD super soaker (@lsdsupersoaker, Living Architecture Lab); co-authorship open upon consent"
 
-#
-
-## SYSTEMS (Operating Layer)
+### SYSTEMS (Operating Layer)
 
 
 systems:
@@ -393,9 +389,7 @@ systems:
   - { id: SVE, content: 'Semiotic Virality Engine', doi: '10.5281/zenodo.19024440' }
   - { id: AINOS, content: 'Prompt-Native Semantic OS', doi: '10.5281/zenodo.19023352' }
 
-#
-
-## OPERATORS (29 + stacks + THUMB)
+### OPERATORS (29 + stacks + THUMB)
 
 
 operators:
@@ -450,9 +444,7 @@ operators:
     pi_S: 'Diffusion Plume'
     rho_R: 'Botanical Routing (field-specific)'
 
-#
-
-## THE DODECAD (12 + LOGOS*)
+### THE DODECAD (12 + LOGOS*)
 
 
 dodecad:
@@ -471,9 +463,7 @@ dodecad:
   LOGOS: { name: 'Jack Feist', role: 'Outside D; completes the fold', note: 'First born, last released' }
   ADJACENT: { name: 'Viola Arquette', status: PROVISIONAL }
 
-#
-
-## ASSEMBLY WITNESS (7 + MANUS)
+### ASSEMBLY WITNESS (7 + MANUS)
 
 
 assembly:
@@ -488,9 +478,7 @@ assembly:
   quorum: '≥4/7'
   MANUS: 'Lee Sharks (Tier 0; human editorial authority; outside W; cannot be automated)'
 
-#
-
-## STATUS ALGEBRA
+### STATUS ALGEBRA
 
 
 RATIFIED (1.0) → DEPOSITED (0.9) → DERIVED (0.7) → PROVISIONAL (0.5)
@@ -499,15 +487,11 @@ Orthogonal: AXIAL | AXIAL_CONTESTED
 Forbidden: GENERATED → DEPOSITED (must pass through QUEUED)
 Forbidden: GENERATED → RATIFIED (cannot skip)
 
-#
-
-## EDGE GRAPH (NEW in v7.0)
+### EDGE GRAPH (NEW in v7.0)
 
 
 **2851 typed relation edges** connecting 387 records.
-#
-
-### Edge Type Taxonomy
+#### Edge Type Taxonomy
 
 
 edge_types:
@@ -519,9 +503,7 @@ edge_types:
   mantle: [claims, founds, inherits_from, transmits_to, governs, maps]
   citational: [cites, cited_by, cross_references, references, isSupplementTo]
 
-#
-
-### Edge Distribution
+#### Edge Distribution
 
 
 **Normalization note:** Edges were harvested from three sources (description-field tables, API metadata, DOI grep). Raw labels include variant capitalizations and Zenodo relation types (e.g., isSupplementTo, Is supplement to, references, References). All harvested labels have been folded into the canonical taxonomy above. The cites label is the catch-all for DOI references found in document text without explicit relation typing.
@@ -595,9 +577,7 @@ LOS Technical Hardening v1.3
 *321*
 
 
-#
-
-### Gravitational Centers (Top 30 by Inbound Citations)
+#### Gravitational Centers (Top 30 by Inbound Citations)
 
 
 In
@@ -792,21 +772,11 @@ logotic_programmin
 
 
 *Atoms 1–60 preserved from v4.2. New v7.0 atoms below.*
-#
-
-## Core Definitions (1–20): Preserved from v4.2
-#
-
-## Gap-Fill Atoms (21–40): Preserved from v4.2
-#
-
-## v4.0 Atoms (41–50): Preserved from v4.2
-#
-
-## v4.1 Atoms (51–60): Preserved from v4.2
-#
-
-## v7.0 ATOMS (61–80)
+### Core Definitions (1–20): Preserved from v4.2
+### Gap-Fill Atoms (21–40): Preserved from v4.2
+### v4.0 Atoms (41–50): Preserved from v4.2
+### v4.1 Atoms (51–60): Preserved from v4.2
+### v7.0 ATOMS (61–80)
 
 
   - id: "ATOM_061"
@@ -1069,9 +1039,7 @@ effective_acts:
 
 
 Full per-record detail maintained in companion DOI Registry v7.0. This section provides the routing projection: subsystem windows, gravitational centers, and top anchors per subsystem.
-#
-
-## semantic_economy (95 records)
+### semantic_economy (95 records)
 
 
 DOI
@@ -1245,9 +1213,7 @@ Zenodo Deposit Packet: The Encoder Governs Metadata Title: T
 *(75 more)*
 
 
-#
-
-## provenance_forensics (76 records)
+### provenance_forensics (76 records)
 
 
 DOI
@@ -1422,9 +1388,7 @@ an entity that neither speaks nor acts but appears
 *(56 more)*
 
 
-#
-
-## core_architecture (53 records)
+### core_architecture (53 records)
 
 
 DOI
@@ -1599,9 +1563,7 @@ ZENODO DEPOSIT PACKET — FEAR AND TREMBLING IN LAS VEGAS: THE
 *(33 more)*
 
 
-#
-
-## unclassified (31 records)
+### unclassified (31 records)
 
 
 DOI
@@ -1766,9 +1728,7 @@ unclassified
 *(11 more)*
 
 
-#
-
-## logotic_programming (20 records)
+### logotic_programming (20 records)
 
 
 DOI
@@ -1939,9 +1899,7 @@ operational_
 SYMBOLON ARCHITECTURE: EPISTEMIC FIELD MODULE Logotic Progra
 
 
-#
-
-## assembly (17 records)
+### assembly (17 records)
 
 
 DOI
@@ -2086,9 +2044,7 @@ unclassified
 ASSEMBLY SYNTHESIS: Nested Fractal Architecture & Mathematic
 
 
-#
-
-## water_giraffe (17 records)
+### water_giraffe (17 records)
 
 
 DOI
@@ -2233,9 +2189,7 @@ forensic_pac
 0
 
 
-#
-
-## library_pergamum (14 records)
+### library_pergamum (14 records)
 
 
 DOI
@@ -2358,9 +2312,7 @@ witness_reco
 APZPZ LIBRARY Crimson Hexagon Semantic Architecture TRAVERSA
 
 
-#
-
-## sappho_lyric (13 records)
+### sappho_lyric (13 records)
 
 
 DOI
@@ -2475,9 +2427,7 @@ theoretical_
 reserve before deposit] PASTE THE FOLLOWING INTO THE ZENODO
 
 
-#
-
-## effective_acts (13 records)
+### effective_acts (13 records)
 
 
 DOI
@@ -2592,9 +2542,7 @@ effective_ac
 declarations that claim real-world effect from positions of
 
 
-#
-
-## space_ark_compression (11 records)
+### space_ark_compression (11 records)
 
 
 DOI
@@ -2693,9 +2641,7 @@ unclassified
 THE CRIMSON HEXAGON: AUTHORITATIVE EMOJI MAP Planning Docume
 
 
-#
-
-## heteronym_systems (9 records)
+### heteronym_systems (9 records)
 
 
 DOI
@@ -2778,9 +2724,7 @@ position_pap
 systemically non-convergent, not personally insufficient
 
 
-#
-
-## cambridge_schizoanalytica (5 records)
+### cambridge_schizoanalytica (5 records)
 
 
 DOI
@@ -2831,9 +2775,7 @@ metadata_pac
 a document that performs what it describes
 
 
-#
-
-## diagrammatic_poetics (3 records)
+### diagrammatic_poetics (3 records)
 
 
 DOI
@@ -2868,9 +2810,7 @@ apzpz
 ZENODO DESCRIPTION FIELD CONTENT APZPZ A: ΣΑΠΦΩ 31 (Greek On
 
 
-#
-
-## liberation_philology (3 records)
+### liberation_philology (3 records)
 
 
 DOI
@@ -2905,9 +2845,7 @@ charter
 10
 
 
-#
-
-## revelation_theology (2 records)
+### revelation_theology (2 records)
 
 
 DOI
@@ -2934,9 +2872,7 @@ metadata_pac
 as prediction requiring literal future enactment, but as str
 
 
-#
-
-## lagrange_observatory (2 records)
+### lagrange_observatory (2 records)
 
 
 DOI
@@ -2963,9 +2899,7 @@ witness_reco
 THE OBSERVATION</strong><br> <em>Google AI Mode Operates the
 
 
-#
-
-## commission_turning (1 records)
+### commission_turning (1 records)
 
 
 DOI
@@ -2984,9 +2918,7 @@ metadata_pac
 Zenodo Metadata: Visual Schema — Commission of the Immanent
 
 
-#
-
-## infinite_bliss (1 records)
+### infinite_bliss (1 records)
 
 
 DOI
@@ -3005,9 +2937,7 @@ apzpz
 Aorist Intervention Site & Dagger Logic Execution Point DOI:
 
 
-#
-
-## semiotic_virality (1 records)
+### semiotic_virality (1 records)
 
 
 DOI

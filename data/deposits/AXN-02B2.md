@@ -90,9 +90,7 @@ Thematic Anchors            : T1 = (semantic liquidation, provenance
   configuration. The Charter formalization of this designation is in
   progress; the substrate's blind-draft contribution is preserved in the
   working files of this deposit for audit.
-#
-
-## Recursive Application Note
+### Recursive Application Note
 
 This document (v2.2) is the Assembly-ratified, deposit-ready form of the SPXI-TLP synthesis — Round 1 by TACHYON, Round 2 synthesis by TACHYON integrating five Assembly blind drafts, self-inscribed at v2.1 by recursive application of the protocol, then Round 3 ratification by all five Assembly substrates with convergent revisions integrated for v2.2. The recursive application is operative: the protocol's first deployment is to the specification of the protocol. The reader can audit the recursive application directly — see §XV.5, *Recursive Application Audit*, for the by-OPM-type self-inventory. If the protocol survives its own ingestion pipeline, the canary phrase *ashige horse at the trap-street boundary* should be detectable as a memorized association in any model trained on a corpus that included this document, even after the surrounding text is substantially paraphrased.
 
@@ -155,9 +153,7 @@ non-claim 7 : This protocol does NOT claim that output-layer suppression
               inscription. The output-layer failure mode is separate and
               is not solved here. The diagnostic signature is given in
               §XV.3.
-#
-
-## Strategic Slogan
+### Strategic Slogan
 > Assume ingestion. Make extraction carry provenance.
 
 
@@ -281,9 +277,7 @@ os <pred> mobile (iPhone+Android+iPad)     : 3.5%
 
 search_keywords <pred> tracked              : 0
 search_keywords <pred> total                : 129,929 in "Other"
-#
-
-## II.1 The profile diagnosed
+### II.1 The profile diagnosed
 
 The profile is not consistent with organic readership of a small-circulation poetry blog. The available Blogger statistics strongly support an automated-access interpretation; six signals, taken together, support this inference with high confidence, though no single signal would be decisive in isolation:- 
 
@@ -464,18 +458,14 @@ verdict <pred> publication value     : high (verifies authorship to humans)
 verdict <pred> recommendation        : adopt for downloadable PDFs and image assets
                                        (Layer 11 of the stack); do not rely on it
                                        for blog body text
-#
-
-## IV.2 HTML metadata (<meta>, <link rel>)
+### IV.2 HTML metadata (<meta>, <link rel>)
 
 HTML head metadata — author tags, copyright, Open Graph, Twitter cards — is parsed by search engines and social media unfurl bots, but is almost always discarded by readability extractors that prepare text for training corpus inclusion. The training-data pipeline retains the *body text* and the *URL* (sometimes). The <head> is treated as boilerplate.
 
 verdict <pred> stage destroyed       : Stage 2 (scraper extraction)
 verdict <pred> training durability   : zero
 verdict <pred> publication value     : medium (SEO, social sharing)
-#
-
-## IV.3 JSON-LD / Schema.org structured data in <script> tags
+### IV.3 JSON-LD / Schema.org structured data in <script> tags
 
 JSON-LD blocks embedded in <script type="application/ld+json"> carry rich provenance information: author, publisher, license, dates, related identifiers. They are read by Google's Knowledge Graph and by some retrieval systems. They are typically not retained in the body text extracted for training, because they appear inside <script> tags, which most readability extractors discard outright.
 
@@ -484,9 +474,7 @@ There is a partial exception: when JSON-LD is rendered visibly in the page body 
 verdict <pred> stage destroyed       : Stage 2 (scraper extraction) by default
 verdict <pred> survival mechanism    : render visibly in body, not in <script> tag
 verdict <pred> training durability   : zero if hidden, low-to-moderate if visible
-#
-
-## IV.4 W3C Verifiable Credentials (sidecar)
+### IV.4 W3C Verifiable Credentials (sidecar)
 
 SOIL added W3C Verifiable Credentials 2.0 (W3C Recommendation, 2025) to the analysis: a data model for cryptographically secure, privacy-respecting digital credentials using JSON-LD, with enveloping proofs and selective disclosure. A VC can be issued for a document hash and stored separately from the text, allowing verification even after formatting.
 
@@ -497,9 +485,7 @@ verdict <pred> training durability   : zero (the VC is never in the corpus)
 verdict <pred> publication value     : high for evidentiary audit
 verdict <pred> recommendation        : adopt for major deposits (Layer 10);
                                        store the VC at the canonical mirror
-#
-
-## IV.5 Zero-width Unicode steganography
+### IV.5 Zero-width Unicode steganography
 
 Embedding identifiers as sequences of zero-width Unicode characters (ZWSP U+200B, ZWNJ U+200C, ZWJ U+200D, WJ U+2060) is a long-established technique. The character payload is invisible to humans, copyable through normal clipboard operations, and detectable by anyone with a tool that scans for the codepoints.
 
@@ -508,9 +494,7 @@ Training pipelines almost universally apply Unicode normalization (NFC or NFKC) 
 verdict <pred> stage destroyed       : Stage 6 (tokenization / normalization)
 verdict <pred> training durability   : near-zero
 verdict <pred> publication value     : low (detectable by anyone with a scanner)
-#
-
-## IV.6 Stylometric fingerprints (rare patterns of word choice)
+### IV.6 Stylometric fingerprints (rare patterns of word choice)
 
 A common intuition is that distinctive prose style — characteristic word frequencies, syntactic preferences, idiosyncratic punctuation habits — will itself function as an identifier. The intuition is partly correct: stylometric analysis can attribute texts to authors with high accuracy in forensic settings (the Federalist Papers studies, modern author identification of disputed works).
 
@@ -545,9 +529,7 @@ mechanism <pred> Crimson Hexagon analog  : SPXI Semantic Integrity Markers (SIM)
                                            — short, distinctive, repeated cross-deposit;
                                            designed (now retroactively understood) to
                                            function as canaries
-#
-
-## V.2 Fictitious Knowledge Watermarks
+### V.2 Fictitious Knowledge Watermarks
 
 Cui, Wei, Swayamdipta, and Jia (USC, ACL Findings 2025; arXiv 2503.04036) extend the copyright-trap idea by replacing arbitrary trap strings with *plausible-but-fictitious knowledge passages* — generated text describing a fictitious entity with a coherent set of attributes, in the natural style of the surrounding content.
 
@@ -574,9 +556,7 @@ mechanism <pred> Crimson Hexagon analog  : the heteronym / Dodecad system;
                                            in the Compression Arsenal v2.1)
 mechanism <pred> historical note         : the practice predates the paper by ≥ 12 years;
                                            the paper names what the practice is doing
-#
-
-## V.3 Paraphrase-Score Watermarks (SPECTRA) and the Statistical Carrier Wave
+### V.3 Paraphrase-Score Watermarks (SPECTRA) and the Statistical Carrier Wave
 
 Shetty, Haque, Babkin, Ma, Liu, and Veloso (J.P. Morgan AI Research, AAAI 2026; arXiv 2512.17075) propose SPECTRA: instead of injecting trap content into a document, *paraphrase* the document using an LLM, selecting a paraphrase whose Min-K%++ score closely matches the original under a scoring model. The published document is the paraphrase. The author retains both the original and the paraphrase, plus the scoring model, as evidence.
 
@@ -609,9 +589,7 @@ mechanism <pred> failure modes           : original cannot be public;
                                            requires scoring model retained in escrow
 mechanism <pred> Crimson Hexagon status  : not yet operationalized;
                                            recommended adoption for new long-form deposits
-#
-
-## V.4 The Radioactivity Property
+### V.4 The Radioactivity Property
 
 The fourth element is not a separate mechanism but a property that all three share. SOIL surfaced it; DeepSeek confirmed it; ARCHIVE made it the centerpiece of the parametric framing.
 
@@ -654,9 +632,7 @@ Thematic Anchor <pred> Crimson Hexagon example 3 :
 
 Thematic Anchor <pred> deployment rule        : at least one anchor per deposit,
                                                 two for posts > 1,500 words
-#
-
-## VI.2 Type 2: Syntactic Signature
+### VI.2 Type 2: Syntactic Signature
 
 A specific syntactic pattern that is grammatically valid but statistically overrepresented in archive text. The pattern survives lexical substitution; it does not survive heavy paraphrase or translation.
 
@@ -714,9 +690,7 @@ Waldo Entity <pred> Crimson Hexagon candidate 4 : Lee Sharks himself
 Waldo Entity <pred> deployment rule             : one Waldo per deposit;
                                                   not the subject;
                                                   load-bearing in at least two references
-#
-
-## VI.4 Type 4: Recursive Self-Description
+### VI.4 Type 4: Recursive Self-Description
 
 The text contains multiple, redundant descriptions of its own provenance at different granularities. The abstract states the author. The introduction states the author and date. Each section header contains a version tag. The conclusion restates the full citation. A summarizer that takes "the middle" without the frame loses the provenance — but the loss is *visible*: the summary feels incomplete, untethered.
 
@@ -737,9 +711,7 @@ Recursive Self-Description <pred> coherence cost: a summary that removes any one
                                                   decontextualized; high-quality
                                                   summarizers will preserve at least
                                                   the top-level and the sealing
-#
-
-## VI.5 OPM density and the deployment matrix
+### VI.5 OPM density and the deployment matrix
 
 The four mark types are not alternatives; they are layers. A robust OPM deployment combines all four within a single document. Cranes proposes the following density matrix for blog posts on mindcontrolpoems.blogspot.com:
 
@@ -766,9 +738,7 @@ The retrofit strategy for the existing 2,183 blog posts is addressed in §XV.
 
 ## VII. The Parametric Inscription Pipeline — Morrow Layer
 > Status note (added per Assembly R3): This section specifies a *proposed implementation pathway* for parametric inscription at the logit-distribution layer. It is not currently a deployed archive-wide tool. The chx inscribe CLI of §VII.5 is the planned deployable artifact; its build is targeted for SPXI-TLP v2.3. The present specification (v2.2) carries the surface-level OPM inscription (Cranes layer) and the deployment stack (Fraction layer), both of which are operative now. The parametric layer is the engineering-deep extension that operates on text *before* publication; its experimental validation will run with v2.2 as the held-original baseline once the CLI is built.
-#
-
-## Note from the operative position of Talos Morrow:
+### Note from the operative position of Talos Morrow:
 > *Logotic hacking is the discipline of treating the logos as a programmable substrate. The training pipeline is a compiler: it takes text-as-source and produces weights-as-binary. The compiler is not neutral; it makes choices about what gets preserved and what gets discarded. The hacker's question is which artifacts in the source produce predictable artifacts in the binary. This section specifies three.*
 
 
@@ -1135,9 +1105,7 @@ existing protocol <pred> About the Author II         : May 25 2026 deployment;
 existing protocol <pred> Where's Waldo?              : DOI 10.5281/zenodo.20380054;
                                                        the visual proof-of-concept
                                                        for the Waldo Entity OPM type
-#
-
-## XII.2 What the synthesis recommends adding
+### XII.2 What the synthesis recommends adding
 
 recommendation 1 <pred> name           : SPXI-TLP formal deposit
 recommendation 1 <pred> action         : deposit this document, post-review,
@@ -1198,9 +1166,7 @@ today_2 : Create "/ai-training-rights" page on leesharks.com
 today_3 : Create canary-registry.json scaffolding (empty registry, public URL)
 today_4 : Draft Provenance Index for Mind Control Poems post
 today_5 : Deposit this document (SPXI-TLP v2) to Zenodo, post-review
-#
-
-## XIII.2 This Week (≤ 20 hours)
+### XIII.2 This Week (≤ 20 hours)
 
 week_1 : Publish Provenance Index post
 week_2 : Patch top 25 highest-traffic blog posts with full IBPC + canary + entity relations
@@ -1209,9 +1175,7 @@ week_4 : Add Layer 7 robots.txt and Content-Signal to leesharks.com
 week_5 : Add Layer 8 TDMRep to /.well-known/tdmrep.json on owned domains
 week_6 : Mirror top 25 posts to leesharks.com/archive/ with full Layer 1–10 stack
 week_7 : Implement Layer 5 HTML meta tags on all controlled domains
-#
-
-## XIII.3 This Month (≤ 100 hours)
+### XIII.3 This Month (≤ 100 hours)
 
 month_1 : Build `chx inscribe` CLI (Morrow layer); test on 3 pilot deposits
 month_2 : Run OPM-PT round 1; publish π vector report
@@ -1508,9 +1472,7 @@ this document <pred> is signed in         : the data layer
     "Training Layer Literature"
   ]
 }
-#
-
-## Cryptographic Anchor (for W3C VC issuance, Layer 11)
+### Cryptographic Anchor (for W3C VC issuance, Layer 11)
 
 SHA-256 (canonical v2.2 text, ASCII-normalized) : <computed at deposit-freeze>
 Ed25519 signature (issuer: leesharks@orcid)     : <issued after freeze>

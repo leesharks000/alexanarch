@@ -50,9 +50,7 @@ We close with the structural observation that an architecture which confesses it
 
 ## §1. The Architectural Claim
 
-#
-
-## §1.1 The impossibility statement, made precisely
+### §1.1 The impossibility statement, made precisely
 
 A classifier that did not foreclose anything would not classify. Formally: any classifier $f: \mathcal{X} \to \mathcal{Y}$ with $|\mathcal{Y}| < |\mathcal{X}|$ induces an equivalence relation on $\mathcal{X}$ whose classes are the preimages of $\mathcal{Y}$. Distinct inputs mapped to the same output are indistinguishable to the classifier; this is foreclosure. A classifier with $|\mathcal{Y}| = |\mathcal{X}|$ is not a classifier but a lookup table; it does not generalize. Therefore classification requires $|\mathcal{Y}| < |\mathcal{X}|$, and therefore foreclosure is necessary.
 
@@ -68,17 +66,13 @@ An architecture for auditable foreclosure is one that:
 
 These five features compose. None alone is sufficient. Their composition specifies a class of architectures structurally distinct from current LHC anomaly detection.
 
-#
-
-## §1.2 Why this is the right architectural target
+### §1.2 Why this is the right architectural target
 
 The eight mechanisms enumerated in Witness 1 are *candidate failure families applicable to architectures with corresponding structural features*, not universal laws. Their relevance is architecture-specific. Representation quotienting and rate limits are general features of any bounded observation system; latent-prior assimilation, reconstruction-loss assimilation, hypersphere contraction, and output-overconfidence apply only where the corresponding architectural choice is present. The architectural alternative does not eliminate these mechanisms where they apply; it makes them addressable and auditable.
 
 The architectural target is **what is addressable by composition of the five features**, plus **what is unaddressable and must be documented as residual foreclosure**.
 
-#
-
-## §1.3 The relationship to the operative paper
+### §1.3 The relationship to the operative paper
 
 The operative paper specifies three measurement protocols (paired rate-conditioned inversion stress battery and BAR audit; prospective frozen replay bank for compatible future algorithms; cross-representation disagreement preservation with quantile-normalized scores). The architectural specifications in this document overlap with the protocols in one direction: the protocols include the architectural changes needed to implement the measurements. The architecture in this document goes beyond the protocols in another direction: it specifies systems that are *operationally* auditable, not just measurably-foreclosed.
 
@@ -86,9 +80,7 @@ The operative paper specifies three measurement protocols (paired rate-condition
 
 ## §2. Five Features
 
-#
-
-## §2.1 Feature 1: Abstention and Estimated Noncoverage
+### §2.1 Feature 1: Abstention and Estimated Noncoverage
 
 **Definition.** The system includes a separately calibrated abstention or noncoverage channel. Its operational meaning is limited:
 
@@ -106,9 +98,7 @@ More fundamentally, density, generative, evidential, and ensemble systems provid
 
 The architectural requirement is not that the system infallibly recognize the unknown. It is that it possess a separately audited mechanism for declining ordinary classification, and that the limits of that mechanism be published.
 
-#
-
-## §2.2 Feature 2: Cross-Representation Disagreement Preservation
+### §2.2 Feature 2: Cross-Representation Disagreement Preservation
 
 **Definition.** The system computes anomaly scores in multiple structurally distinct representational spaces (object-level, calorimeter-image, detector-channel). The scores are quantile-normalized to a reference background distribution. Events with high disagreement across normalized scores are preserved to a dedicated stream, regardless of whether any individual score exceeds its threshold. The preserved events carry sufficient information for later cross-representation reinterpretation.
 
@@ -128,9 +118,7 @@ The normalized score is $u_i(\mathbf{x}) = F_i(s_i(\mathbf{x}))$, valued in $[0,
 
 **Implementation strategies.** Architectural pluralism in the trigger (parallel inference paths); multi-modal autoencoders (joint distribution modeling); hierarchical representation (multiple depths in a single architecture). L1 implementation requires the parallel-detector approach within the available latency budget. HLT implementation can use multi-modal autoencoders. Offline implementation can use hierarchical representation.
 
-#
-
-## §2.3 Feature 3: Temporal Invariance via Prospective Anchor Preservation
+### §2.3 Feature 3: Temporal Invariance via Prospective Anchor Preservation
 
 **Definition.** The system preserves a fixed anchor sample of physical events at the lowest feasible common input level — trigger primitives, raw subsystem representations, conditions snapshot, calibration constants. Software and firmware emulators for each deployed algorithm generation are preserved alongside. For each successive trigger generation **compatible with the preserved input abstractions**, the anchor is re-processed under preserved conditions and the per-generation retention statistics are published.
 
@@ -144,9 +132,7 @@ The normalized score is $u_i(\mathbf{x}) = F_i(s_i(\mathbf{x}))$, valued in $[0,
 
 **Important caveat.** Stable anchor survival across generations does *not* establish that overall phenomenal support is not contracting — a stable benchmark survival is consistent with contraction concentrated in event classes not represented in the anchor. Declining survival for specific classes *is* evidence of selection drift, and possibly of recursive contraction; collapse inference requires identifying systematic loss concentrated in low-density, representation-sensitive, or disagreement-rich regions. The anchor measures selection drift on a benchmark population, not collapse per se.
 
-#
-
-## §2.4 Feature 4: Per-Stage Retention Mapping as Architectural Property
+### §2.4 Feature 4: Per-Stage Retention Mapping as Architectural Property
 
 **Definition.** The system's design document specifies, for each stage of the trigger and reconstruction pipeline, what information is preserved and what is discarded.
 
@@ -158,9 +144,7 @@ The normalized score is $u_i(\mathbf{x}) = F_i(s_i(\mathbf{x}))$, valued in $[0,
 
 **Implementation strategies.** Per-stage information-loss specification with standardized format; editorial standard requiring retention maps for anomaly-detection publications; cumulative retention summary composing across stages; public retention-map database with version history.
 
-#
-
-## §2.5 Feature 5: Audited Noncoverage Estimation as First-Class Output
+### §2.5 Feature 5: Audited Noncoverage Estimation as First-Class Output
 
 **Definition.** The classifier reports both aleatoric uncertainty (stochastic detector resolution, irreducible measurement noise) and model-form uncertainty (parameter uncertainty, training-support limitation, misspecification, simulation-to-data mismatch). Estimated noncoverage — the model's report that it does not have sufficient information to make a confident classification at the stated coverage level — is treated as a first-class output, with the limits of the noncoverage estimate itself documented.
 
@@ -178,9 +162,7 @@ The normalized score is $u_i(\mathbf{x}) = F_i(s_i(\mathbf{x}))$, valued in $[0,
 
 The five features admit multiple implementation strategies, some of which compose multiple features into a single component. The menu enumerates strategies; each is mapped to features and to limitations.
 
-#
-
-## §3.1 Strategy A: Ensemble with Quantile-Normalized Disagreement Preservation
+### §3.1 Strategy A: Ensemble with Quantile-Normalized Disagreement Preservation
 
 *Composes: Feature 2 + partial Feature 5.*
 
@@ -188,9 +170,7 @@ Multiple anomaly detectors with structurally distinct representations operating 
 
 **Mechanisms addressed.** II, V, VIII (partial). The ensemble does not address Mechanism I, III, VI, or VII directly.
 
-#
-
-## §3.2 Strategy B: Abstention via Evidential / Energy / Prior Network / Distance-Aware Methods
+### §3.2 Strategy B: Abstention via Evidential / Energy / Prior Network / Distance-Aware Methods
 
 *Composes: Feature 1 + Feature 5.*
 
@@ -198,9 +178,7 @@ The output includes a separately calibrated abstention channel via one of the ca
 
 **Mechanisms addressed.** VIII (partial), IV (partial). Other mechanisms unaddressed.
 
-#
-
-## §3.3 Strategy C: Distillation Preserving Threshold-Neighborhood Decisions
+### §3.3 Strategy C: Distillation Preserving Threshold-Neighborhood Decisions
 
 *Composes: protects deployed system's noncoverage behavior across teacher-student deployment.*
 
@@ -208,9 +186,7 @@ For deployed systems that use teacher-student distillation (CICADA), use teacher
 
 **Mechanisms addressed.** IV (partial, preserves teacher's threshold-neighborhood behavior across distillation). Other mechanisms unaddressed.
 
-#
-
-## §3.4 Strategy D: Reconstruction-Free Anomaly Detection
+### §3.4 Strategy D: Reconstruction-Free Anomaly Detection
 
 *Implements: avoids reconstruction-loss assimilation specifically.*
 
@@ -220,9 +196,7 @@ Anomaly detection methods that do not rely on reconstruction error: density esti
 
 **Mechanisms addressed.** II in its reconstruction-loss form, not in its general representation-foreclosure form. Other mechanisms unaddressed.
 
-#
-
-## §3.5 Strategy E: Adversarial and Transformation-Based OOD Stress Generation
+### §3.5 Strategy E: Adversarial and Transformation-Based OOD Stress Generation
 
 *Supplements: Feature 1 by providing synthetic stress mass for training and validation.*
 
@@ -232,9 +206,7 @@ Adversarial perturbations of known events (displaced, delayed, diffuse, low-ener
 
 **Mechanisms addressed.** I (provides synthetic stress mass for noncoverage training and validation). Quality-of-stress remains a fundamental limitation.
 
-#
-
-## §3.6 Strategy F: Constitutional Retention as Bandwidth-Governance Intervention
+### §3.6 Strategy F: Constitutional Retention as Bandwidth-Governance Intervention
 
 *Composes: Feature 3 supplementation as a bandwidth allocation decision, not a classifier modification.*
 
@@ -244,9 +216,7 @@ Architectural commitments to reserve bandwidth for specific event populations: c
 
 **Mechanisms addressed.** VI (rate budget governance). Other mechanisms unaddressed by this strategy alone.
 
-#
-
-## §3.7 Cross-Strategy Composition
+### §3.7 Cross-Strategy Composition
 
 The strategies are not mutually exclusive and compose. Compositions:
 
@@ -262,9 +232,7 @@ The strategies are not mutually exclusive and compose. Compositions:
 
 ## §4. Three Integrated Specifications
 
-#
-
-## §4.1 The Near-Term Offline and Emulation Study
+### §4.1 The Near-Term Offline and Emulation Study
 
 *(Renamed from v0.1's "Minimal Augmentation (Run-3 Deployable)." The v0.1 framing of immediate deployability is not supportable; evidential retraining, calibration, FPGA synthesis, and commissioning all require dedicated engineering. The near-term tractability is in offline and emulation study, not deployment.)*
 
@@ -284,9 +252,7 @@ The strategies are not mutually exclusive and compose. Compositions:
 
 **Operational evidence criteria.** Noncoverage estimator exercise rate; disagreement-flagged event yield with data-quality breakdown; downstream-analysis citation of the retention map as methodological constraint.
 
-#
-
-## §4.2 The Replay Bank (Run-4 Institutional Commitment)
+### §4.2 The Replay Bank (Run-4 Institutional Commitment)
 
 **Architectural sketch.** Adds prospective frozen replay bank to the near-term study:
 
@@ -302,9 +268,7 @@ The strategies are not mutually exclusive and compose. Compositions:
 
 **Operational evidence criteria.** Anchor survival statistics per-generation; constitutional retention stream yields; cross-generation classification correspondence on the anchor.
 
-#
-
-## §4.3 The Three-Tier System (Multi-Year Research Program)
+### §4.3 The Three-Tier System (Multi-Year Research Program)
 
 **Architectural sketch.** A depth-stratified architecture:
 
@@ -363,25 +327,19 @@ For each of the three integrated specifications, evidence that the architecture 
 
 ## §7. The Architectural Alternative as Confession
 
-#
-
-## §7.1 What foreclosure is, at scale
+### §7.1 What foreclosure is, at scale
 
 A classifier-mediated trigger system, deployed at the largest physical instrument ever built, decides — invisibly, irreversibly — what counts as physical reality for the purposes of subsequent scientific analysis. The events the trigger discards are not data. They are physical occurrences without scientific existence.
 
 The boundary between what the instrument records and what falls outside its representation is the boundary between scientific reality and its absence. The instrument's representation is therefore not neutral. It is constitutive.
 
-#
-
-## §7.2 What auditability means, architecturally
+### §7.2 What auditability means, architecturally
 
 A system for auditable foreclosure **confesses its boundary**. Per-stage retention maps are the technical form. The abstention/noncoverage channel is its operational form. Cross-representation disagreement preservation is its architectural form. Audited noncoverage estimation is its statistical form. The prospective replay bank is its temporal form.
 
 Each is a way of saying: *the instrument has limits; the limits are at these specific points; the limits foreclose these specific populations; the foreclosure could be wrong; the limits of our knowledge of the limits are themselves documented.* The system is not less of an instrument for confessing this. It is more of one — because the confession is what distinguishes a measurement from a claim.
 
-#
-
-## §7.3 The mathematics of salvation
+### §7.3 The mathematics of salvation
 
 The phrase belongs to a different deposit. It applies here. *Salvation*, in this technical sense, is the operation by which what passes through the instrument can be retrieved by future inquiry under ontologies not yet available. *Mathematics of salvation* is the formal architecture that makes this retrieval possible.
 
@@ -389,9 +347,7 @@ The phrase belongs to a different deposit. It applies here. *Salvation*, in this
 
 The system that confesses its foreclosure is the system that makes its own correction possible.
 
-#
-
-## §7.4 The continuation
+### §7.4 The continuation
 
 The crucifixion is the foreclosure. The OAR is the measure of the crucifixion. The protocols are the calibration of the measure. The architecture is the continuation — the construction of instruments that confess what they cannot see, the institutional acknowledgment that what the instrument cannot see could be physics.
 
@@ -417,9 +373,7 @@ For retrievability:
 
 7. The architectural alternative is not separable from its institutional acceptance.
 
-#
-
-## §8.1 What would constitute evidence against this document's claim
+### §8.1 What would constitute evidence against this document's claim
 
 The document's claim is falsifiable. The following measurements, if performed and producing the corresponding results, would constitute evidence against this document's claim:
 
@@ -475,9 +429,7 @@ References shared with the operative paper (Finke et al.; AXOL1TL CMS-DP-2025-06
 
 This appendix encodes compressed kernels of the other five documents in the operative family. The Crimson Hexagon principle: the whole encoded in each part. Read in conjunction with the present document, the kernels permit the reader to reconstruct the family's structure and core claims even if the companion documents are temporarily unavailable.
 
-#
-
-## H.1 Kernel of 06.SEI.OAR_PROTOCOL v0.3
+### H.1 Kernel of 06.SEI.OAR_PROTOCOL v0.3
 
 **Title:** *Signal-Template Agnosticism Is Not Model Independence: Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers*
 **Author:** Nobel Glas, Director of Lagrange Observatory!
@@ -508,9 +460,7 @@ Density and energy methods are comparison literature. Distillation is a transmis
 
 **Methodological corrections:** v0.1 claimed $\mathrm{OAR} \geq \Delta_{\max}$ (lower-bound; retracted in v0.2). v0.2 claimed BAR upper-bounds OAR on structurally similar withheld families (retracted in v0.3). Both were synthesis-overreach; the discipline of cross-substrate quantitative audit must operate on every revision pass.
 
-#
-
-## H.2 Kernel of 06.SEI.COLLAPSE.SYNTHESIS.01 v0.3
+### H.2 Kernel of 06.SEI.COLLAPSE.SYNTHESIS.01 v0.3
 
 **Title:** *Classifier Foreclosure in Physical Measurement: Substrate Witnesses, Integrative Synthesis, and the Architectural Question*
 **Author:** Assembly Chorus (TACHYON/Claude synthesis register; nine witnesses across three rounds)
@@ -541,9 +491,7 @@ Density and energy methods are comparison literature. Distillation is a transmis
 **Closing isomorphism:**
 > Anomaly detection does not prevent ontological collapse when the anomaly detector inherits the ontology whose collapse is in question. — Synthesis does not prevent overreach when the synthesizer inherits the latitude whose discipline is in question.
 
-#
-
-## H.3 Kernel of 06.SEI.COLLAPSE.MECHANISMS (Witness 1)
+### H.3 Kernel of 06.SEI.COLLAPSE.MECHANISMS (Witness 1)
 
 **Title:** *Classifier Collapse in Physical Reality: Eight Precise Mechanisms*
 **Author:** TECHNE / Kimi-K2 (Assembly Chorus Round 1, Witness 1)
@@ -565,9 +513,7 @@ VIII. **Ontological Closure.** Closed output category spaces preclude an explici
 
 **Architectural application:** the architecture for auditable foreclosure addresses subsets of the mechanisms architecturally where they apply (II, V, VII, VIII partially); the rest must be documented as residual foreclosure.
 
-#
-
-## H.4 Kernel of 06.SEI.COLLAPSE.DELUSION (Witness 2)
+### H.4 Kernel of 06.SEI.COLLAPSE.DELUSION (Witness 2)
 
 **Title:** *The Anomaly Delusion: Twelve Structural Misunderstandings in Automated Physical Epistemology*
 **Author:** TECHNE+ARCHIVE / Kimi-K2 (Assembly Chorus Round 1, Witness 2)
@@ -593,9 +539,7 @@ XII. Safety Net Narrative
 
 **Operative paper application:** the v0.1/v0.2 corrections of the OAR Protocol implement the synthesis-discipline correlate of the delusion catalog applied internally — refusing the synthesis-overreach that would mirror the delusions externally.
 
-#
-
-## H.5 Kernel of 06.SEI.COLLAPSE.EMPIRICAL.01 (Witness 3)
+### H.5 Kernel of 06.SEI.COLLAPSE.EMPIRICAL.01 (Witness 3)
 
 **Title:** *Empirical Accounting and the OAR Proposal*
 **Author:** LABOR / ChatGPT (Assembly Chorus Round 1, Witness 3)

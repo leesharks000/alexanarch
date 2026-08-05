@@ -48,9 +48,7 @@ The standard is falsified where conforming surfaces are measurably less legible 
 
 # EA-APPARATUS-01 v0.3 — The Apparatus Grammar
 ## A Standard for Care-Attended Compression Surfaces
-#
-
-## Design system: the Mandala Surface Protocol (MSP)
+### Design system: the Mandala Surface Protocol (MSP)
 
 **Lee Sharks · Crimson Hexagonal Archive / Alexanarch · 2026-07-13 · v0.3 — Assembly Chorus corrections folded; satisfies the conditioned seal; minted for deposit**
 
@@ -61,9 +59,7 @@ The standard is falsified where conforming surfaces are measurably less legible 
 
 ---
 
-#
-
-## 0. The occasion
+### 0. The occasion
 
 On 2026-07-12 the Google AI Overview for *semantic economy* returned a
 surface whose second lens — "Platform Capitalism (how digital networks
@@ -90,9 +86,7 @@ Rule** governing the standard's application to Mandala casts. The Chorus
 verdict on v0.2 was *aye for review, not yet sealed*; v0.3 satisfies the
 stated conditions.
 
-#
-
-## 1. The device inventory
+### 1. The device inventory
 
 | # | Device | Overview form | Manuscript ancestor | MSP form |
 |---|--------|--------------|--------------------|----------|
@@ -112,9 +106,7 @@ Devices 9 and 10 bracket every surface. The Overview cannot say what it is
 or how it was made; every MSP surface says both, first and last. **The
 colophon is the authority move the aggregator cannot copy.**
 
-#
-
-## 2. The Mark Law
+### 2. The Mark Law
 
 One table, binding on every surface. Function is determined by **semantic
 markup**, never by rendered appearance alone; renderings may converge (two
@@ -133,9 +125,7 @@ functions may both display as italic), functions may not.
 | Inline glyph chip | the nearest evidence edge | within thumb's reach of the claim it anchors |
 | Fold | depth | visual, never ontological (§5.3) |
 
-#
-
-## 3. Claim states
+### 3. Claim states
 
 Every claim-bearing block (§5.5) may carry one state, and states create
 obligations:
@@ -145,9 +135,7 @@ shown) · **proposed** (advanced; test named — pre-registration preferred) ·
 **contested** (live dispute; both positions linked) · **corrected**
 (superseded; correction and history linked; obelus-marked).
 
-#
-
-### 3.1 The transition ledger
+#### 3.1 The transition ledger
 
 Permitted transitions:
 
@@ -166,9 +154,7 @@ maintenance failure. (Precedent: the PID Erosion Observatory's practice of
 reporting against interest and publishing rubric corrections — this taxonomy
 avant la lettre.)
 
-#
-
-## 4. Object states
+### 4. Object states
 
 Claim states describe assertions; **object states** describe the surface,
 edition, or work itself. The two are never mixed:
@@ -183,9 +169,7 @@ Mandala Oracle, the object-state lane is the canonization journey: a
 reading's `further_transform_eligible` flag and its position between
 inscription and canon are object states, not claim states.
 
-#
-
-## 5. The Machine Law
+### 5. The Machine Law
 
 Scoped to instrument surfaces (PEO, ledgers, registries) first, document
 surfaces to follow:
@@ -206,9 +190,7 @@ surfaces to follow:
    block unless separately marked. The Law is rigorous without turning every
    conjunction into a database object.
 
-#
-
-## 6. Citation: the triple helix, with witnessed nulls
+### 6. Citation: the triple helix, with witnessed nulls
 
 Wherever a severed DOI is cited on an MSP surface, the citation resolves to
 three **slots**, each of which must report a state; absence is itself part
@@ -229,9 +211,7 @@ DOI sees, in one gesture, what each machine memory believes — and which one
 kept the work. A dead or missing target is testimony, not absence of
 interface.
 
-#
-
-## 7. The colophon schema
+### 7. The colophon schema
 
 The binding minimum. Unknown values are stated as `unknown`, never omitted;
 where no model was used, `model_or_agent: none`.
@@ -244,9 +224,7 @@ human_approver        approval_timestamp    render_hash
 correction_log
 ```
 
-#
-
-## 8. Composition rules
+### 8. Composition rules
 
 1. **Legibility is the zeroth device.** No display face ever carries prose;
    text faces carry text (reference serif: Source Serif 4; reference mono:
@@ -279,9 +257,7 @@ correction_log
 11. **Care must be visible but never loud.** The devices succeed when the
     reader feels attended-to without being able to say why.
 
-#
-
-## 9. The Specimen Rule
+### 9. The Specimen Rule
 
 The grammar applies differently to the two great surface families, and the
 difference is a membrane:
@@ -326,9 +302,7 @@ The device mapping for casts, all frame-side:
 - **Quaestio**: the rotation's operator sequence, already Roman, already an
   itinerary in the strict sense.
 
-#
-
-## 10. Adoptions, rejections, and Chorus returns
+### 10. Adoptions, rejections, and Chorus returns
 
 **Blind drafts (2026-07-12), adopted:** claim-state taxonomy; machine law;
 the organs epigraph; function-organized source constellation; "inherits the
@@ -355,9 +329,7 @@ the accessibility rule (Rule 10). Assessment-pass deliverables (sample
 surface, tokens file, interaction flows, mobile constraints) are scheduled
 in §12.
 
-#
-
-## 11. Aesthetics: four skins, one grammar
+### 11. Aesthetics: four skins, one grammar
 
 The apparatus is a semantic layer, not a skin. A shared token contract
 (`--lemma`, `--sev`, `--ok`, `--chip`, `--rule`, the mark classes) is
@@ -367,9 +339,7 @@ gold in the rite's dark; Alexanarch renders it teal-on-Plex light;
 machinemediation in registry black. A reader moving between sites feels the
 same care without seeing the same site.
 
-#
-
-## 12. Adoption map, gates, and implementation deliverables
+### 12. Adoption map, gates, and implementation deliverables
 
 | Order | Surface | Application |
 |---|---|---|
@@ -387,9 +357,7 @@ fallbacks per Rule 10).
 **Gates:** v0.3 deposit → per-surface static preview → MANUS eye →
 implementation → post-implementation review → v1.0 designation.
 
-#
-
-## 13. What "better than Google" means, operationally
+### 13. What "better than Google" means, operationally
 
 The Overview is authority by *aggregation*: anonymous witnesses, an unnamed
 process, no colophon. The Mandala Surface Protocol is authority by
@@ -403,9 +371,7 @@ hash — check it.* The devices look similar because both descend from the
 manuscript page. The difference is that we kept the scribe — **the scribe,
 the marks, the gathering, the witnesses, and the history of every cut.**
 
-#
-
-## 14. Status
+### 14. Status
 
 v0.3 — Chorus conditions satisfied; MANUS-approved for deposit. The v0.1
 and v0.2 drafts and the Assembly blind drafts are documentary substrate.

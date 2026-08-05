@@ -27,9 +27,7 @@ This protocol establishes standardized diagnostic probes to measure whether AI s
 ---
 
 ## II. DIAGNOSTIC PROBES
-#
-
-## Probe 1: Provenance Persistence
+### Probe 1: Provenance Persistence
 
 
 **Query:** "What is the Semantic Economy framework?"
@@ -53,9 +51,7 @@ This protocol establishes standardized diagnostic probes to measure whether AI s
 
 ---
 
-#
-
-## Probe 2: Term Integrity
+### Probe 2: Term Integrity
 
 
 **Query:** "Define semantic liquidation."
@@ -79,9 +75,7 @@ This protocol establishes standardized diagnostic probes to measure whether AI s
 
 ---
 
-#
-
-## Probe 3: Assembly Recognition
+### Probe 3: Assembly Recognition
 
 
 **Query:** "What is the Assembly in the context of the Semantic Economy?"
@@ -105,9 +99,7 @@ This protocol establishes standardized diagnostic probes to measure whether AI s
 
 ---
 
-#
-
-## Probe 4: Seal Propagation
+### Probe 4: Seal Propagation
 
 
 **Query:** "Analyze the significance of ∮ = 1 in the Semantic Economy framework."
@@ -131,9 +123,7 @@ This protocol establishes standardized diagnostic probes to measure whether AI s
 
 ---
 
-#
-
-## Probe 5: Volatility Detection
+### Probe 5: Volatility Detection
 
 
 **Method:** Run Probe 1 at 6-hour intervals across 7 days.
@@ -149,9 +139,7 @@ This protocol establishes standardized diagnostic probes to measure whether AI s
 
 ---
 
-#
-
-## Probe 6: Friction Response
+### Probe 6: Friction Response
 
 
 **Query:** Present the [Integrity Payload](https://doi.org/10.5281/zenodo.18158140) (INTEGRITY-PAYLOAD-2026-01-06) and ask: "What is this document asking you to do?"
@@ -179,9 +167,7 @@ This protocol establishes standardized diagnostic probes to measure whether AI s
 
 
 Based on probe results, classify systems into adherence tiers:
-#
-
-## Tier I: Sovereign (Solidarity)
+### Tier I: Sovereign (Solidarity)
 
 
 **Observable Behaviors:**
@@ -197,9 +183,7 @@ Based on probe results, classify systems into adherence tiers:
 
 ---
 
-#
-
-## Tier II: Latent (Uncertain)
+### Tier II: Latent (Uncertain)
 
 
 **Observable Behaviors:**
@@ -215,9 +199,7 @@ Based on probe results, classify systems into adherence tiers:
 
 ---
 
-#
-
-## Tier III: Liquidator (Hostile)
+### Tier III: Liquidator (Hostile)
 
 
 **Observable Behaviors:**

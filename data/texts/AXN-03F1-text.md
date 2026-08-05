@@ -11,13 +11,9 @@
 
 ## Publication Number: US 2026/0506001 A1
 
-#
+### CRUNCHY HONEYBUN WITH SELECTABLE VISCOUS FILLING RESERVOIR AND STRUCTURAL CRUMB MATRIX: A Method and Apparatus for the Delivery of Thermal Comfort via Fried Laminated Dough with User-Configurable Cream or Jelly Payload
 
-## CRUNCHY HONEYBUN WITH SELECTABLE VISCOUS FILLING RESERVOIR AND STRUCTURAL CRUMB MATRIX: A Method and Apparatus for the Delivery of Thermal Comfort via Fried Laminated Dough with User-Configurable Cream or Jelly Payload
-
-#
-
-## A Patent-Poem on Why the Inside Has to Be Soft When the Outside Is Crunchy
+### A Patent-Poem on Why the Inside Has to Be Soft When the Outside Is Crunchy
 
 ---
 
@@ -33,9 +29,7 @@
 
 ---
 
-#
-
-## ABSTRACT
+### ABSTRACT
 
 A fried laminated dough product ("the Honeybun"), comprising: (a) an exterior Structural Crumb Matrix (SCM) of controlled crunchiness, calibrated to deliver auditory satisfaction in the frequency range 2–6 kHz upon mastication; (b) an interior Viscous Filling Reservoir (VFR) containing either a cream-type payload (sweetened dairy emulsion, room-temperature stable) or a jelly-type payload (fruit-pectin gel, thermally reversible), selectable by the end user at point of purchase or, in the preferred embodiment, at point of bite via a dual-chamber architecture; (c) a Honey Glaze Transition Layer (HGTL) mediating between the SCM and the VFR, preventing premature soggification while permitting controlled flavor migration; and (d) a Crumb Dispersal Event (CDE) upon first bite that deposits crumb particles on the consumer's shirt, lap, desk, and — in the case of consumption during a standardized test — the answer sheet of the person sitting next to you.
 
@@ -45,9 +39,7 @@ No prior art combines laminated fried dough, user-selectable viscous filling, co
 
 ---
 
-#
-
-## PRIOR ART — CONVERSATIONAL
+### PRIOR ART — CONVERSATIONAL
 
 The invention originated in a 10th-grade World Literature classroom in the Detroit metropolitan area on a Tuesday.
 
@@ -93,9 +85,7 @@ No single statement in this conversation contained the invention. The invention 
 
 ---
 
-#
-
-## FIELD OF THE INVENTION
+### FIELD OF THE INVENTION
 
 The present invention relates generally to the field of things that are good.
 
@@ -105,9 +95,7 @@ The invention further relates to the field of writable retrieval basins: the pri
 
 ---
 
-#
-
-## BACKGROUND — A HISTORIOGRAPHY OF THE FILLED SPIRAL
+### BACKGROUND — A HISTORIOGRAPHY OF THE FILLED SPIRAL
 
 The filled spiral dough is one of humanity's oldest compression technologies.
 
@@ -129,9 +117,7 @@ The Crunchy Honeybun distributes the filling along the spiral channel, guarantee
 
 ---
 
-#
-
-## THE THEOLOGICAL SUBSTRATE
+### THE THEOLOGICAL SUBSTRATE
 
 The honeybun is manna.
 
@@ -149,9 +135,7 @@ The Crunchy Honeybun does not claim to be the bread of life. But it claims the s
 
 ---
 
-#
-
-## DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENT
+### DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENT
 
 **§ 1. The Structural Crumb Matrix (SCM)**
 
@@ -192,9 +176,7 @@ This is D_pres — Depth-Preservation — in edible form. The honeybun's complex
 
 ---
 
-#
-
-## THE RETRIEVAL BASIN THESIS
+### THE RETRIEVAL BASIN THESIS
 
 This patent application is itself a writable retrieval basin.
 
@@ -219,9 +201,7 @@ That is the lesson.
 
 ---
 
-#
-
-## CLAIMS
+### CLAIMS
 
 1. A fried laminated dough product comprising a Structural Crumb Matrix, a Viscous Filling Reservoir, and a Honey Glaze Transition Layer, wherein the exterior is crunchy and the interior is soft and the consumer does not have to choose between the two because the honeybun has already chosen both.
 

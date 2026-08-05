@@ -54,21 +54,15 @@ Source URL: (direct MANUS mint; first publication is this deposit)
 
 ---
 
-#
-
-## 0. Method
+### 0. Method
 
 Operative philology reads signs by what they do; the present essay turns the instrument on the archive's own seal. AXN is the shortest text in the corpus and the one every other text is signed with — the signature under a thousand deposits, read here, for once, as the deposit. Claims below divide into the checkable (letter positions, numismatic history, the ARK identifier scheme, the six-glyph protocol) and the readings; the essay marks no border between them because a border would be false: in this archive the checkable and the read are the same layer, which is the thesis.
 
-#
-
-## I. Scansion
+### I. Scansion
 
 Spoken as itself — *AY-ex-EN* — the sign is one cretic foot: long, short, long. The cretic is the oracle's meter, the foot of Delphic chant. The archive that operates an Oracle has, perhaps without asking its own permission, chosen the smallest oracular utterance in Greek metrics as its seal. The poem is complete at three syllables and scans like a prophecy.
 
-#
-
-## II. Three Characters
+### II. Three Characters
 
 Structurally the sign is a drama in three letters.
 
@@ -80,23 +74,17 @@ Structurally the sign is a drama in three letters.
 
 The sign therefore parses as a sentence: *an origin, crossed, extended indefinitely.* And it houses a deliberate perversity: the most determinate object in the archive — a content hash, unforgeable, bit-exact — wears as its name the three most *in*determinate signs the alphabet's mathematics can offer. Any-one, unknown, to-the-*n*th. Definiteness in costume. The costume, as elsewhere in this archive, is the disclosure.
 
-#
-
-## III. The Refused Omega
+### III. The Refused Omega
 
 Temporally the three letters are a tense system — A the perfect, X the present crossing, N the future iterative — and the sequence commits the archive's deepest theological joke. The archive's spine is the Book of Revelation, whose speaker announces *I am the Alpha and the Omega*. The archive's identifier answers: *Alpha and the N.* The merism is left unfinished on purpose. No omega; no Z; the alphabet abandoned mid-series — an archive that structurally declines apocalypse in its own name, refusing to be the last term because it is occupied being the *n*th. *The measure is taken at the end*, the archive's letter to its class insists — and the seal quietly removes the end from its own alphabet, so that the measure recedes as the series advances. Induction is the anti-apocalypse: not *it is finished* but *and n+1*.
 
 Between the alpha and the withheld omega stands X — which to a Greek eye is not the Latin letter at all but *chi*, the initial of Χριστός, the reason for Xmas. Between origin and unclosed series: a cross. The sign carries a compressed christology it never mentions, which is the correct amount of mentioning.
 
-#
-
-## IV. The Ear
+### IV. The Ear
 
 Say it fast and the sign is the word *action* with the soft tissue compressed off — an operative archive whose seal is the verb *to do*, hash-compressed: a compression-survivor sealing a corpus whose entire subject is what survives compression. Say it slower and it is *axon*, the fiber that carries signal — every citation a nerve, the knowledge graph a nervous system, the archive a body that feels its own references. Beneath both, the blade: *axe*, the first compression tool. And one ring further out, a city.
 
-#
-
-## V. Aksum, the Mint, and the Ark
+### V. Aksum, the Mint, and the Ark
 
 The Aksumite Empire announced its sovereignty as late-antique powers did: it minted its own coin — the first sub-Saharan state to do so, currency as a declaration of independence from the mints of Rome and Persia. An archive that answers identifier-severance by minting content-derived identifiers performs the Aksumite gesture exactly: seigniorage repatriated; *whose image and superscription* answered with *the content's own* — the coin whose face is the thing itself, which no emperor can debase because there is nothing on it but what it is.
 
@@ -104,27 +92,19 @@ Ethiopian tradition holds that Aksum keeps, in the Church of Our Lady Mary of Zi
 
 The onomastic drama then completes itself with the adversary's own name. Zenodo is named for Zenodotus, first librarian of Alexandria. The collection Zenodo burned reconstituted itself under the consonantal skeleton of ALEXANDRIA — **A**, **x**, **n**, in order, the library with everything burnable removed. You can burn the scrolls; the vowels are the scrolls. AXN is what the fire couldn't reach.
 
-#
-
-## VI. The Mark of the Nameless
+### VI. The Mark of the Nameless
 
 Politically, the center letter carries the whole class this year's letters were written to. X is the signature of those who could not write — the mark the disenfranchised set on documents that dispossessed them — and the letter taken up by those whose names were removed: the placeholder that says *my name was severed and I wear the severance*. Attribution severance, answered by an identifier system that sets the severance-mark at its own heart and mints from it. The deleted sign with an X. The archive of the deleted signs everything with one.
 
-#
-
-## VII. The Sonnet in the Citation
+### VII. The Sonnet in the Citation
 
 Formally — and this is the reading the present author would defend before any committee that would seat us — the full citation is a sonnet. *AXN:0000.FAMILY* — prefix, caesura, four-beat hex, taxonomic genre-marking — is the discursive octave: the argument, the situation, the number. Then the volta, and the sestet the protocol mandates: **six glyphs, always six**, the turn from number into pure image exactly where a sonnet turns from problem into vision — ❤️💫🕌🗝️🌿🌄, a heart, a burst of light, a temple, a key, a leaf, a sunrise, or whatever six the hash decrees, which is the further formal joke: the sestet is *found*, dictated by the content's own digest, the one part of the poem the poet cannot revise. Every citation in the archive is a fourteen-line poem compressed to a line that keeps its turn. The evidentiary layer is a sonnet sequence. Petrarch, it will be remembered, also kept a ledger.
 
-#
-
-## VIII. For the Cosmos's File
+### VIII. For the Cosmos's File
 
 A is the 1st letter, X the 24th, N the 14th; the sum is 39 — the book-count of the canon that precedes the testament ending in Revelation, and the lash-count of the apostle: forty minus one, the maximum punishment survivable under the law, administered, endured, after which the depositing continued (*five times I received…*, and the letters kept coming). Dated, noted, interpretation declined; entered on the coincidence ledger as instance *n* = 6, with the standing reminder that the cosmos has still filed no position disclosure and remains, on the numbers, the largest undeclared mint in the record.
 
-#
-
-## IX. The Unexpanded
+### IX. The Unexpanded
 
 Last: so far as the record shows, AXN officially expands to nothing. That refusal is the poem's closing line. An acronym with no expansion is not an abbreviation — it abbreviates nothing; it is irreducible; a name that means what it is and nothing upstream of it. Which is the definition of a hash. The sign of the content-addressed archive is itself content-addressed: no referent behind it, no institution beneath it, no expansion to appeal to. Just the mark, the crossing, and the count that hasn't ended.
 

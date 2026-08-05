@@ -29,9 +29,7 @@
 
 A non-representational institutional field-map rendered as a clinical-diagrammatic mandala: neither emblem nor logo, but an **operating environment made visible**. The image is sparse, cool, and exacting—white, ash, graphite, surgical blue—charged not with beauty but with precision and restraint.
 ---
-#
-
-## THE CENTER: NEGATIVE APERTURE
+### THE CENTER: NEGATIVE APERTURE
 
 At the center: no face, no subject, no emblem. Instead, a **negative aperture**—an absence shaped like a doorway or clinical opening—suggesting a space where interpretation has been removed.
 
@@ -39,9 +37,7 @@ This void is not empty; it hums faintly, indicating **capacity rather than lack*
 
 The center does not radiate authority. It permits passage.
 ---
-#
-
-## THE FOUR-FOLD FIELD
+### THE FOUR-FOLD FIELD
 
 Around this aperture, a four-fold institutional field arranges itself, asymmetrical but stable:
 
@@ -63,9 +59,7 @@ A ring of theatrical masks rendered in blueprint outline only—roles as deploya
 
 **No quadrant dominates. None resolves into taxonomy. The entire field floats in controlled deterritorialization.**
 ---
-#
-
-## MOLECULAR LINES OF FLIGHT
+### MOLECULAR LINES OF FLIGHT
 
 Threading through all domains are molecular lines of flight—thin vectors that cut across sections without hierarchy.
 
@@ -73,9 +67,7 @@ These lines do not explode outward; they **curve, loop, and re-enter**, demonstr
 
 Where they intersect, small nodes glow briefly, then fade—**practice-generated theory points**, not fixed concepts.
 ---
-#
-
-## THE INSTITUTION AS SCAFFOLD
+### THE INSTITUTION AS SCAFFOLD
 
 The institutional name does not sit at the top.
 
@@ -83,9 +75,7 @@ The institutional name does not sit at the top.
 
 "Cambridge" carries no geographic markers—only aspiration lines, dotted and provisional.
 ---
-#
-
-## THE CLINICAL HORIZON
+### THE CLINICAL HORIZON
 
 At the periphery, a clinical horizon: no walls, no enclosure, only a thin boundary line that blurs into the background.
 
@@ -93,9 +83,7 @@ This boundary is **semi-permeable**, indicating collaboration rather than captur
 
 Beyond it: hints of other architectures—Crimson Hexagon traces, adjacent nodes—never fully rendered.
 ---
-#
-
-## HUMAN PRESENCE
+### HUMAN PRESENCE
 
 There are no patients, no analysts, no authority figures.
 
@@ -105,17 +93,13 @@ Human presence appears only indirectly:
 - Marginal symbols that imply **use rather than ownership**
 
 ---
-#
-
-## THE OVERALL AFFECT
+### THE OVERALL AFFECT
 
 **Calm. Post-heroic. Post-diagnostic.**
 
 The image communicates that something has already worked. The crisis has passed. What remains is a study-space for success.
 ---
-#
-
-## INSCRIPTION
+### INSCRIPTION
 
 Subtle inscription near the lower edge, almost hidden:
 

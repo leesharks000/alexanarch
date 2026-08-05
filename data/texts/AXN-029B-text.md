@@ -266,9 +266,7 @@ The applicant maintains full-time employment and family responsibilities, making
 
 This report does not require melodramatic language to account for that cost. It is enough to state:
 > The communicated process induced an anticipatory state. Maintaining that anticipatory state required emotional and cognitive labor. When the stated timeline lapsed without clarification, the applicant bore the burden of interpreting silence.
-#
-
-## 6. Credibility and Social Disclosure Cost
+### 6. Credibility and Social Disclosure Cost
 
 This is one of the central costs in the ledger.
 
@@ -423,17 +421,13 @@ Unless every applicant who remains under consideration will receive one in that 
 
 Prefer:
 > In early May, selected applicants will receive initial CodeSignal assessments. Applicants who do not receive an assessment by [date] should consider that stage closed unless otherwise notified.
-#
-
-## 2. Status closure date
+### 2. Status closure date
 
 Every screening process should include a date after which silence has a defined meaning.
 
 Example:
 > If you have not received an assessment or status update by May 12, your application is no longer active for this cohort.
-#
-
-## 3. Applicant-facing status portal
+### 3. Applicant-facing status portal
 
 A minimal portal should display:- received;- under review;- assessment pending;- assessment sent;- not advancing;- hold / waitlist;- closed.
 
@@ -644,9 +638,7 @@ Important constraints:
 - Name individuals only as signatories or communicative agents appearing in the record.
 - Analyze structural effects of the process as enacted; questions of individual intention are outside scope.
 - Keep the analysis at the level of institutionally enacted communication and applicant-side cost transfer.
-#
-
-## ARC Estimate Table Template
+### ARC Estimate Table Template
 
 | Cost category | Description | Estimate | Confidence | Evidence | |---|---|---:|---|---| | T: preparation labor | practice, research, assessment prep | | | | | T: communication labor | emails, follow-ups, scheduling, clarification | | | | | M: model/tool costs | AI systems, subscriptions, practice platforms | | | | | O: displaced work | paid work, applications, research, family time | | | | | E: emotional/cognitive/bodily load | anxiety, monitoring, sleep, health impact | | | | | C: credibility/social disclosure | people told, expectations generated, explanation burden | | | |
 
@@ -655,9 +647,7 @@ Important constraints:
 Finding: [Full IOC / Partial IOC / No IOC]
 
 The record shows that [institution] communicated [specific process signal]. The applicant reasonably relied on this by [actions]. That reliance generated [labor categories]. The institution then [failed to clarify / delayed / silently closed / changed process state], requiring the applicant to bear [costs]. The case therefore [does / does not] satisfy Institutional Opacity Conversion under ARC-EP v1.0.
-#
-
-## Evidence Strengthening Checklist
+### Evidence Strengthening Checklist
 
 A stronger audit should attach:- original emails or screenshots;- application confirmation;- assessment invitation or absence after stated deadline;- calendar entries;- chat/model logs;- practice-site commits;- browser history if relevant;- subscription/token records;- contemporaneous notes;- follow-up messages;- communications to family/peers if ethically appropriate;- final rejection or status update if later received.
 

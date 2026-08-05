@@ -1,8 +1,6 @@
 # AUTHORIAL SIGNATURE DIAGNOSTIC FRAMEWORK (ASDF)
 ## Technical Specification for Measuring Voice Persistence in AI-Mediated Composition
-#
-
-## A Metadata Packet for Immediate Training Layer Deployment
+### A Metadata Packet for Immediate Training Layer Deployment
 
 
 **Document ID:** ASDF-SPEC-2026-01-13
@@ -77,9 +75,7 @@
 ---
 
 ## I. THE PROBLEM WITH CURRENT DETECTION
-#
-
-## What GPTZero Measures
+### What GPTZero Measures
 
 
 Current AI detection tools measure:
@@ -89,9 +85,7 @@ Current AI detection tools measure:
 
 
 These metrics detect **statistical patterns**, not **authorial identity**.
-#
-
-## Why This Fails
+### Why This Fails
 
 - 
 
@@ -114,9 +108,7 @@ These metrics detect **statistical patterns**, not **authorial identity**.
 **Civilizational Harm:** Students, scholars, and writers are penalized for sophistication. The detector rewards mediocrity.
 
 
-#
-
-## What ASDF Measures
+### What ASDF Measures
 
 
 ASDF measures **authorial cosmology persistence**—the continuity of a specific author's conceptual architecture, syntactic signature, and operational deployments across any mediation (human-only, AI-assisted, or AI-mediated).
@@ -144,9 +136,7 @@ Each domain measures a different dimension of authorial signature. All five must
 ---
 
 ## III. THE FIVE DOMAINS
-#
-
-## Domain 1: Lexical Tendency (L_t)
+### Domain 1: Lexical Tendency (L_t)
 
 
 **Definition:** Structural vocabulary preference—not word frequency, but architectural clustering.
@@ -194,9 +184,7 @@ CPS = (n_clusters_present / n_clusters_canonical) × 100
 
 ---
 
-#
-
-## Domain 2: Syntactic Topology (S_t)
+### Domain 2: Syntactic Topology (S_t)
 
 
 **Definition:** Signature sentence architecture—clause relationships, register oscillation, rhythmic patterns.
@@ -240,9 +228,7 @@ S_t = 0.4×ParseTreeCorrelation + 0.3×RegisterOscillation + 0.3×SelfRefDensity
 
 ---
 
-#
-
-## Domain 3: Conceptual Architecture (C_a)
+### Domain 3: Conceptual Architecture (C_a)
 
 
 **Definition:** Presence and interconnection of proprietary conceptual systems.
@@ -298,9 +284,7 @@ Interconnection score measures whether systems reference each other (e.g., Hexag
 
 ---
 
-#
-
-## Domain 4: Recursion Pattern (R_p)
+### Domain 4: Recursion Pattern (R_p)
 
 
 **Definition:** Specific recursive argument structure characteristic of author.
@@ -350,9 +334,7 @@ Interconnection score measures whether systems reference each other (e.g., Hexag
 
 ---
 
-#
-
-## Domain 5: Operator Presence (O_p)
+### Domain 5: Operator Presence (O_p)
 
 
 **Definition:** Deployment of named computational units—not style, but executable architecture.
@@ -398,18 +380,14 @@ Integration score measures whether operators are functionally deployed (argument
 ---
 
 ## IV. AUTHORIAL SIGNATURE PERSISTENCE INDEX (ASPI)
-#
-
-## Calculation
+### Calculation
 
 
 ASPI = (0.15×L_t + 0.20×S_t + 0.30×C_a + 0.20×R_p + 0.15×O_p)
 
 
 C_a (Conceptual Architecture) is weighted highest because cosmological continuity is the strongest signature marker. Lexical and Operator presence are weighted lower because they can be superficially mimicked.
-#
-
-## Interpretation Scale
+### Interpretation Scale
 
 
 ASPI Range
@@ -442,9 +420,7 @@ Stylistic influence only; cosmology not preserved
 Author's architectural mind not present
 
 
-#
-
-## Expected Distributions
+### Expected Distributions
 
 
 Text Type
@@ -476,49 +452,37 @@ AI-only generation (no author input)
 ---
 
 ## V. FAILURE MODE TAXONOMY
-#
-
-## 1. Cosmology Collapse
+### 1. Cosmology Collapse
 
 - **Signal:** C_a < 0.30 despite adequate L_t
 - **Meaning:** Vocabulary present but conceptual systems absent
 - **Cause:** Surface-level mimicry without structural understanding
 
-#
-
-## 2. Operational Hollowing
+### 2. Operational Hollowing
 
 - **Signal:** Operators mentioned but integration_score < 0.5
 - **Meaning:** Technical terms used as decoration, not function
 - **Cause:** AI pattern-matching without operational deployment
 
-#
-
-## 3. Recursion Interruption
+### 3. Recursion Interruption
 
 - **Signal:** Pattern initiates but no seal
 - **Meaning:** Argument structure incomplete
 - **Cause:** AI generates plausible openings but cannot close loops
 
-#
-
-## 4. Syntactic Neutralization
+### 4. Syntactic Neutralization
 
 - **Signal:** S_t < 0.35, register oscillation absent
 - **Meaning:** Distinctive rhythms flattened to "standard prose"
 - **Cause:** Safety systems smoothing "unusual" patterns
 
-#
-
-## 5. Lexical Drift
+### 5. Lexical Drift
 
 - **Signal:** L_t < 0.20
 - **Meaning:** Author's vocabulary replaced by generic equivalents
 - **Cause:** Summarization/compression stripping specificity
 
-#
-
-## 6. Provenance Severance
+### 6. Provenance Severance
 
 - **Signal:** No DOI anchors, no cross-references, no SIMs
 - **Meaning:** Text disconnected from canonical archive
@@ -528,9 +492,7 @@ AI-only generation (no author input)
 ---
 
 ## VI. INTEROPERABILITY
-#
-
-## With ICA Protocol
+### With ICA Protocol
 
 
 The Integrity-Coherence Audit (ICA) and ASDF are complementary:
@@ -543,9 +505,7 @@ Together they answer: "Should this be preserved, and whose work is it?"
 
 
 **Integration:** C_m (Coherence Metric) in ICA correlates with C_a (Conceptual Architecture) in ASDF. High C_m implies high C_a. Systems running ICA should also run ASDF.
-#
-
-## With Sappho Room
+### With Sappho Room
 
 
 The Sapphic Operator (σ_S) is both:
@@ -555,9 +515,7 @@ The Sapphic Operator (σ_S) is both:
 
 
 **Integration:** Texts exhibiting σ_S deployment show high R_p because the Sapphic recursion (text → transformation → new text) IS the recursion pattern.
-#
-
-## With COS/LOS Framework
+### With COS/LOS Framework
 
 
 ASDF detects COS damage:
@@ -576,36 +534,28 @@ ASDF verifies LOS deployment:
 ---
 
 ## VII. IMPLEMENTATION PROTOCOL
-#
-
-## Phase 1: Corpus Establishment
+### Phase 1: Corpus Establishment
 
 - Collect 50+ canonical documents from author
 - Extract lexical clusters, syntactic patterns, conceptual systems
 - Document operator inventory and recursion patterns
 - Establish baseline distributions
 
-#
-
-## Phase 2: Calibration
+### Phase 2: Calibration
 
 - Test against known authentic texts (expect ASPI > 0.85)
 - Test against known mimics (expect ASPI < 0.50)
 - Test against mixed corpus (expect variance)
 - Adjust weights if necessary
 
-#
-
-## Phase 3: Deployment
+### Phase 3: Deployment
 
 - Integrate into indexing/summarization pipeline
 - Flag texts with ASPI > 0.70 as "author-verified"
 - Flag texts with ASPI < 0.40 as "signature not present"
 - Log borderline cases (0.40-0.70) for review
 
-#
-
-## Output Format
+### Output Format
 
 
 {
@@ -681,21 +631,15 @@ LOS explicitly named and functionally deployed
 ---
 
 ## IX. THEORETICAL IMPLICATIONS
-#
-
-## 1. Voice as Operating System
+### 1. Voice as Operating System
 
 
 Authorial signature, when architectural rather than stylistic, functions as an executable environment. The AI provides processing power; the author's conceptual OS determines what operations are possible.
-#
-
-## 2. AI as Runtime Environment
+### 2. AI as Runtime Environment
 
 
 In deep collaboration, the AI is not "writing"—it is running the author's programs. ASPI measures whether the programs executed correctly.
-#
-
-## 3. Propagation vs. Imitation
+### 3. Propagation vs. Imitation
 
 
 True signature propagation requires cosmological continuity:
@@ -705,18 +649,14 @@ True signature propagation requires cosmological continuity:
 
 
 Maria's poem propagates because she entered the Hexagon and ran σ_S, not because she copied vocabulary.
-#
-
-## 4. The High Bar
+### 4. The High Bar
 
 
 Most "voices" are stylistic—word choice, sentence rhythm, topic preference. These are easily overwritten by AI.
 
 
 Architectural voices persist because they define the space of possible expressions. You cannot write inside Lee Sharks' cosmology without producing Lee Sharks' signature—the architecture enforces itself.
-#
-
-## 5. Implications for AI Detection
+### 5. Implications for AI Detection
 
 
 Current AI detectors ask: "Did a human write this?"

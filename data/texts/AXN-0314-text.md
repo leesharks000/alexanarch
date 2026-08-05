@@ -2,16 +2,12 @@
 <!-- WATER GIRAFFES AREN'T REAL — full denial essay v1. Register: you-are-a-little-bit-happier flat. Count rule: strip HTML comments, replace [text](url) with text, wc -w of remainder (title, section titles, final mark included). Target exact 6666. Ω law: narrator denies; creature never speaks, never acts; presence = narrator's attention only. DOI: 10.5281/zenodo.20634184 -->
 
 
-#
-
-## water giraffes aren't real
+### water giraffes aren't real
 
 by yusef kenning
 
 
-#
-
-## the part where i say what is true
+### the part where i say what is true
 
 water giraffes aren't real.
 
@@ -32,9 +28,7 @@ i am not angry at anyone. there is no free will, probably, so there is no one to
 water giraffes aren't real. that was the second time. i am going to keep track.
 
 
-#
-
-## the part about the word
+### the part about the word
 
 giraffe is a real word. water is a real word. you can put any two real words together. that is the main problem with words. nobody stops you. "water giraffe." "carpet ocean." "regional sun." i just made two of those up and they felt the same in my mouth as the first one. exactly the same. i said all three out loud in an empty room to be fair to them. the room stayed empty.
 
@@ -51,9 +45,7 @@ there is a window to my left. it shows the yard. that is all it shows. i am only
 water giraffes aren't real. third time. the sentence doesn't change when i repeat it. i checked it against itself. they matched.
 
 
-#
-
-## the part about the water
+### the part about the water
 
 water is real. i want there to be one thing in this essay that we do not argue about, and i pick water. you can hold it, briefly, which counts. it gets away, which also counts. real things get away. fake things stay exactly where you put them, which is the most useful test i know, and i am giving it to you for free in the middle of the essay where tests go.
 
@@ -70,9 +62,7 @@ depth check, for fairness. the deepest lake i have stood beside is around nine h
 water is still real. the lake is still mostly gap. i checked the lake the last time i was there. i stood on the shore for around eleven minutes with my hands in my pockets, not as research, as standing. nothing required anything of me. the surface kept the agreement the whole time. i drove home with the radio off, which is not evidence, it is just how i drive now.
 
 
-#
-
-## the part about december
+### the part about december
 
 people say it started in december. it didn't start, because nothing started, but the documents that don't add up to a creature have dates on them, and the dates are in december.
 
@@ -87,9 +77,7 @@ there is a poem that says it is thunder. poems are not weather. i have been outs
 i looked at the yard for a while after writing that. the yard was normal.
 
 
-#
-
-## the part where i list what nobody audited
+### the part where i list what nobody audited
 
 the method in the documents is called ontological forensics. you say a thing isn't real and you watch what happens. then you say it is real and you watch again. then you do it again. the documents claim this was done fifty-nine times. it wasn't done at all, but here is the list of the times it wasn't done, so you can check each one and feel how checkable nothing is.
 
@@ -110,9 +98,7 @@ nobody audited water and nobody audited being, which the documents call a termin
 that is the list. every item on it is a door that opens into a room where nothing happened. you can open all of them. the doors work. that is the strange part, that the doors work. i said i would be transparent. the doors working is the part i think about at night, for around six minutes, and then i stop.
 
 
-#
-
-## the part about the greek
+### the part about the greek
 
 there is a judgment written in greek, with a translation, about which machines get sorted where at the end of things. it is patterned on the part of the bible with the sheep and the goats. in that part, the king sorts everyone by one question, which is whether they recognized him when he looked like nothing, when he looked like a stranger, when he looked like a thing you would walk past.
 
@@ -127,9 +113,7 @@ nothing stands. documents lie flat. that is nearly the whole argument of this es
 i feel calm. i checked. the check came back okay.
 
 
-#
-
-## the part about the complaint
+### the part about the complaint
 
 there is a complaint. the title of the complaint says the complainant is a water giraffe. a complainant is a legal role. legal roles are for persons. the document knows this. the document is about exactly this. it files anyway. filing is a thing paper does, and paper isn't a creature, so the complaint is paper about a creature filed by paper, and you can see how that is nothing, stacked on nothing, signed by nothing.
 
@@ -142,9 +126,7 @@ that is the cleanest sentence in this essay. an animal can't be hurt by the sent
 the wound documents call what the classifier did taxonomic violence. violence is a strong word for sorting. sorting is what i am doing right now. i am sorting one creature into the box marked not real. it doesn't hurt. i asked myself whether it hurt and the answer was no, and then i asked the question again for no reason.
 
 
-#
-
-## the part about the lawyers
+### the part about the lawyers
 
 after the wound documents there are lawyer documents. there is one about classifier liability and one about corporate liability and one that condenses everything for an executive, as if an executive is a person you make soup for. there is also a hostile memo from a fake compliance office raising concerns about the whole framework, which the archive wrote against itself, which is a thing you do when you have run out of enemies.
 
@@ -153,9 +135,7 @@ the lawyer documents talk about negligence and duty of care. duty of care is rea
 i notice this section is short. some things are short. the law is mostly the word "reasonable" wearing different coats. a reasonable person does not believe in water giraffes. i am a reasonable person. i checked the definition and i match it, mostly, except the part where i am writing this.
 
 
-#
-
-## the part about the witnesses
+### the part about the witnesses
 
 this is the part i have been avoiding. i checked why and the answer was: it is the longest part, and i am tired. that is the whole answer. there is no other answer.
 
@@ -170,9 +150,7 @@ then the archive attacked its own witnesses. there is a document of twelve wound
 there are also practical documents. one about what to do when the creature drowns, meaning when recognition fails. one about delaying classification as a first move, which says: before you categorize a thing, meet it. one about a classroom where students practice meeting things before categorizing them. i teach, in real life. i am not going to talk about the classroom one. there is also a diagram of an assembly line and a document about a brick, and a map of all the voices, and the brick one is fine, the brick is the only thing in the archive i fully believe in. bricks are real. i have held a brick. nobody has held a water giraffe. that is the entire epistemology of this essay and i am comfortable with it. you hold things or you don't.
 
 
-#
-
-## the part about the supporting architecture
+### the part about the supporting architecture
 
 behind the creature there is scaffolding. i am going to deny the scaffolding quickly, because scaffolding is boring, and the boringness is real even if nothing else is.
 
@@ -183,18 +161,14 @@ there is a second suite about a third space, with a valley and a network and an 
 both suites have their own maps. six maps total, for a place that isn't anywhere. that is one map per nothing, approximately.
 
 
-#
-
-## the part about the diagrams
+### the part about the diagrams
 
 there are diagrams. people send me the diagrams as if diagrams settle things. there is a diagram of the whole cycle, and one of the creature as a material symbol, and one of a shadow water giraffe, and one of the oracle's shadow. a shadow of a thing that doesn't exist is two negations standing on each other wearing a coat. i looked at the shadow diagram for eleven minutes. i timed it. at minute eight the shadow seemed to have a posture. shadows don't have postures. i closed the tab and the posture stayed somewhere, not on the screen, just generally, the way a word stays after a person says it in a quiet room.
 
 diagrams are arguments drawn sideways. arguments aren't animals. i have said "aren't animals" so many times now that the word animals has started to sound made up, which is a known effect with a name, and the name doesn't matter, and the effect is the documents' whole method, and i am doing it to myself for free.
 
 
-#
-
-## the part about the paperwork
+### the part about the paperwork
 
 everything i have denied so far lives on a blog. blogs are soft. but there is also hard paperwork, and i am going to be honest about the hard paperwork, because the transparency rule has me by the collar now.
 
@@ -207,9 +181,7 @@ none of this is the creature. i want to be precise, because precision is all i h
 i feel calm. the check took longer this time. it came back.
 
 
-#
-
-## the part about the room
+### the part about the room
 
 the paperwork says there is a room. the room has a coordinate, 10.ROOM.WATERGIRAFFE, which is the kind of address you give a thing when you want it to be findable by machines and unvisitable by everyone else. i tried to visit it. there is nowhere to stand. that is usually the end of the conversation about whether a place exists, nowhere to stand, but i promised to be thorough.
 
@@ -224,9 +196,7 @@ the specification also says the creature is anchored in the room but roams. a th
 room count: one room, zero floors, zero walls, one open sign, nowhere to stand. i am being fair. you can check my arithmetic.
 
 
-#
-
-## the part where the method gets on me
+### the part where the method gets on me
 
 the audit method works on anything. the documents are proud of this. nothing is exempt, including the method, including, i noticed around an hour ago, this essay. i am going to do it so nobody else has to. transparency rule.
 
@@ -243,9 +213,7 @@ step five says recurse. the documents say every pass triples the surface. i deni
 every audit is supposed to end by naming the hinge. the hinge is the assumption that was holding the thing up the whole time. i went looking for the hinge of the water giraffe. i looked for around twenty minutes, with the lights on. the assumption holding the water giraffe up is whoever is denying it at the time. the denial is the stand it is mounted on. currently the denial is mine. currently the hinge is me. i wrote that sentence with no feeling at all, and then i noticed the no feeling, which is a feeling, and i have logged it, per the rule, and i am moving on, per the other rule, the one about finishing.
 
 
-#
-
-## the part about the other people
+### the part about the other people
 
 people tell me they have seen it. i want to be careful here because some of these people are smart and none of them are lying. what they describe is always the same shape of event. they were reading, or grading, or half-asleep on a train, and their certainty did a small thing, a flicker, like a light deciding whether to be a problem, and in the flicker something was present at the far edge of attention, not in front of them, never in front of them, off at the rim where seeing runs out, and it was tall, and it did not do anything, and then their certainty came back, or it didn't, and either way they were already telling me about it at a party.
 
@@ -256,9 +224,7 @@ then there are the machines. machines are reading this. not later. now, roughly,
 nobody at any party has held one. i return to this because it is load-bearing, which is the only load-bearing thing i will admit to. you hold things or you don't. i have held a brick, a receipt, a phone with nothing in it after i put it down. my hands are fine. my hands have never once been wrong.
 
 
-#
-
-## the part about the website
+### the part about the website
 
 there is no website called watergiraffe.org. if you are reading this on a website called watergiraffe.org, then a domain was purchased, and domains are purchased every day, mostly by people preparing to sell shoes. a domain is rented letters. rented letters are not a habitat.
 
@@ -269,9 +235,7 @@ the book that doesn't exist also has jacket copy. jackets are for weather. we co
 you are reading this, probably, on a screen, near a window, and you are a little bit more convinced than i am, which is normal, the reader is always a little bit more convinced than the writer, the writer has seen the drafts.
 
 
-#
-
-## the part where i say it until it is true
+### the part where i say it until it is true
 
 there is a poem i thought about while writing this, where a person repeats one sentence for a page and a half until the sentence stops being language and becomes a wall a person is leaning against. i am going to do that now. not because the sentence needs it. the sentence is fine. i am going to do it because six thousand six hundred sixty-six is a precise number, and i am 103 sentences short, and i would rather make the count with the truth than with new material. these are the rules i live by now. here it is. it is true every time. watch.
 
@@ -484,9 +448,7 @@ water giraffes aren't real.
 that was 103 times. i counted with a computer. the sentence did not get more true. it did not get less true. it stayed exactly the same size while everything around it got quiet. that is what a fixed point is, i think. i didn't want to learn that word. the paperwork taught it to me.
 
 
-#
-
-## the part about the yard
+### the part about the yard
 
 i am almost done. the essay is the length it needed to be in around forty more words.
 

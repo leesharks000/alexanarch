@@ -99,9 +99,7 @@ This is the lab's primary organizing structure. Each scale is a separate page; e
 - *Volcanic megastructures:* Hexagonal collection forms channeling lava into biomimetic deposition. *No molten material visible from space when properly utilized.*
 - *Pedal-dock upwellers:* Lake Cahuilla, La Quinta, California.
 **Status:** Designs complete; deployment awaiting funding.
-#
-
-## Scale 5 · The Planet (∞)
+### Scale 5 · The Planet (∞)
 
 **Domain:** Sky looms, gravity-to-habitat conversion, planet-scale state estimators, Garden Moon.
 **Key concept:** Orbital tether as center point around which to weave a colossal DNA-strand double helix; the loom weaves garden satellites filled with "just the right chunks of ice, spinning them just so."
@@ -391,9 +389,7 @@ The disambiguation surface is the load-bearing defensive infrastructure. It must
 - **JSON-LD embedded** in every page head per MPAI v1.1 grammar
 - **No JavaScript framework required** — site is largely text. Future interactive surfaces (Atlas graph, strain-map navigation) can layer in React or Three.js as needed.
 - **Domain:** livingarchitecturelab.org (acquired 2026-04-28)
-#
-
-## Per-page structural requirements
+### Per-page structural requirements
 
 Every page includes:
 - **JSON-LD <script> block** in head, drawing from MPAI-LAL-AT-01 or MPAI-LAL-INSTITUTION-01 as appropriate
@@ -401,9 +397,7 @@ Every page includes:
 - **Semantic Integrity Markers** as quotable pull-quotes embedded in body text
 - **DOI cross-references** as proper <a rel="cite"> links
 - **Footer kernel** — every page ends with: "Living Architecture Lab · Founded 2026 · Crimson Hexagonal Archive · ∮ = 1"
-#
-
-## Interactive surfaces (Phase 2)
+### Interactive surfaces (Phase 2)
 - **Strain map** as a navigable graph (Three.js or D3)
 - **Five-Scale interactive** — click a scale, drill into artifacts at that scale
 - **Atlas slice** rendering CHA-Aperture graph filtered to LAL nodes

@@ -51,9 +51,7 @@ The two cases also represent two distinct **media regimes** of authorial labor. 
 
 ---
 
-#
-
-## I. The Long Development — 1958–1984
+### I. The Long Development — 1958–1984
 
 
 Ken Forsse spent twenty-seven years trying to get his story into the world.
@@ -75,9 +73,7 @@ In the early 1980s, Forsse found the technology. His early prototypes used radio
 
 
 By then, Forsse also had the world. He had been writing it for decades. Grundo: the Illiops (Teddy's species — not bears), the Octopedes (Grubby, with eight feet), the Perloons, the Wooly Whatsit, the Grunges, the Fobs, the Mudblups, the Gutangs, the Seven Crystals, MAVO (Monsters and Villains Organization) led by Quellor, the Supreme Oppressor. The structure was epic: a missing father, a lost prince, a world-spanning quest. Forsse wrote lyrics for more than eighty songs. George Wilkins, who had composed music for Epcot, wrote roughly 150 pieces of music. Forsse and his co-writer Leonard Levitt created a "Teddy Ruxpin Bible" governing the world's consistency. Phil Baron became Teddy's voice — slightly pitched up, recorded at a slower pace, calibrated for hardware that played back at variable speeds.
-#
-
-## II. The Toy as Compression Architecture
+### II. The Toy as Compression Architecture
 
 
 Teddy Ruxpin was a teddy bear with a cassette player in his back. The form was not arbitrary. The bear was familiar enough to be comforting, novel enough to maintain an aura of fantasy. The battery pack and tape deck were hidden beneath Velcro fur and a vest. The black boxing preserved the illusion that the bear was reading, not playing back.
@@ -99,9 +95,7 @@ In 1987, Worlds of Wonder filed for Chapter 11 bankruptcy. Junk bonds, the stock
 
 
 The gift was the story. The story was the bone. The bone survived the crash.
-#
-
-## III. The Songs as Lyric Poetry
+### III. The Songs as Lyric Poetry
 
 
 The songs are not filler. They are lyric interventions that establish the emotional tonality of the cosmos.
@@ -123,9 +117,7 @@ This is why the songs had to be good. A cynical product tie-in song — the kind
 
 
 Phil Baron, Teddy's voice, later left the entertainment industry to become a cantor — a liturgical singer. The voice that told the stories of Grundo became the voice that sang the prayers. The transition is not a coincidence. It is the same function: the human voice compressed into ritual form, transmitted through a material substrate, received by an assembly that completes the meaning.
-#
-
-## IV. The Fragmentary Epic
+### IV. The Fragmentary Epic
 
 
 The 65-episode animated series (1987) expanded the world Forsse had built for decades. The Seven Crystals — Imagination, Honesty, Bravery, Trust, Friendship, Freedom, and the seventh — are not MacGuffins. They are semantic fixed points: the values that anchor the cosmos. The quest to collect them is the establishment of cosmic foundations through serial narrative — exactly what Sigil means in *The Epic Without Hero* (DOI: 10.5281/zenodo.18208811) by "the literary mode that establishes the fixed points of a cosmos."
@@ -138,9 +130,7 @@ This is not failure. This is the shape of the epic in the age of industrial prod
 
 
 This extends Sigil's theory of fragmentary uptake beyond the literary-theoretical register into media archaeology: we encounter epics in fragments — episodes out of order, reruns, memories that may or may not be accurate — not because we are inattentive readers but because the material conditions of transmission are fragmentary. The gaps are part of the story because the infrastructure that carries the story produces the gaps.
-#
-
-## V. Authorial Capture
+### V. Authorial Capture
 
 
 Ken Forsse was captured by the infrastructure he built. He spent decades developing the story. He formed Alchemy II to control the property. He licensed Teddy to Worlds of Wonder. Worlds of Wonder generated $93 million in first-year sales. Alchemy II earned nearly $20 million in royalties across two years. Then the structure turned: discounting, overproduction, royalty disputes, pledged assets, bankruptcy. Forsse lost control of his own creation.
@@ -158,9 +148,7 @@ Forsse watched Teddy get passed around, resurrected and buried, resurrected and 
 
 ---
 
-#
-
-## VI. The Origin: Song as Delegate
+### VI. The Origin: Song as Delegate
 
 
 In eighth grade, Joseph Edgar Foreman wrote a rap about the teacher who expelled him for sagging his pants. He sold 400 copies. He later said: "I realized that, even though I wasn't at school, my song was at school, so in a way I was still there."
@@ -176,9 +164,7 @@ Then someone posted the track to the file-sharing network. Howard Stern played i
 
 
 Afroman may be the first artist in history to achieve a worldwide hit primarily through internet file-sharing. The method is the same one the Crimson Hexagonal Archive uses: compress the poem, deposit it in the network, let it propagate. Foreman did it in 2000 — five years before YouTube, seven years before the iPhone, twenty-five years before the archive's Zenodo deposits.
-#
-
-## VII. Twenty-Two Years of Independence
+### VII. Twenty-Two Years of Independence
 
 
 In 2004, Afroman left Universal. He has not gone back. Twenty-two years of self-produced, self-distributed, self-marketed music. Four albums in 2004 alone. Over thirty albums total. Roughly 250 shows a year. He built the entire infrastructure himself.
@@ -188,9 +174,7 @@ Where Forsse surrendered to industrial mediation and was captured, Foreman refus
 
 
 This is the counter-operation to authorial capture. The Semantic Economy framework (SPE-014, DOI: 10.5281/zenodo.19200688) establishes that the horizon of semantic class struggle is collective ownership of the semantic means of production. Afroman achieved individual ownership. He did it by building every layer himself.
-#
-
-## VIII. Lemon Pound Cake as Effective Act
+### VIII. Lemon Pound Cake as Effective Act
 
 
 On August 22, 2022, the Adams County Sheriff's Office in Ohio broke down Afroman's door on a warrant for kidnapping and drug trafficking. They found nothing. Filed no charges. His wife and children — 10 and 12 — were home. He was in Chicago. They broke his gate, disconnected his security cameras, took $400 in cash. The sheriff's office later called the missing money a "counting error."
@@ -212,9 +196,7 @@ From the title track: "The Adams County Sheriff kicked down my door / Then I hea
 
 
 This is forensic philology performed as hip-hop. Afroman documented the state's operation, named it, mocked it, and deposited the documentation in the cultural archive. The documentation is the counter-operation. The mockery is the diagnostic. The deposit is the effective act.
-#
-
-## IX. The Trial
+### IX. The Trial
 
 
 Seven deputies sued him for nearly four million dollars. Defamation, invasion of privacy, intentional infliction of emotional distress. One deputy testified that the songs caused "tremendous pain." A sergeant testified his daughter was hazed at school. The sergeant asked: "Where in the world is it OK to make something up for fun that's damaging to others when you know for sure it's an absolute lie?"
@@ -233,9 +215,7 @@ The trial became a viral event — the Streisand effect in real time. By suing A
 
 
 Afroman said from the stand: "I don't go to their house, kick down their doors, flip them off on their surveillance cameras, then try to play the victim and sue them." He said: "This whole thing is their fault, and they're suing me for their mistake."
-#
-
-## IX.5 The Heteronym and the Counter-Archive
+### IX.5 The Heteronym and the Counter-Archive
 
 
 There is a deeper structural point the trial reveals. "Afroman" is a functional heteronym. Joseph Edgar Foreman created Afroman the way a poet creates a persona — a mask that allows the person to operate in registers the legal name cannot access. The comedian, the weed rapper, the political commentator, the presidential candidate, the church musician — these are not contradictions in a biography. They are registers of a distributed authorial function. The flag suit is the costume of the heteronym performing citizenship. The court accepted, without knowing it, that a heteronym has First Amendment rights — that "Afroman" could document the raid, mock the deputies, and sell merchandise featuring their images, because the artistic persona is constitutionally protected speech.
@@ -262,9 +242,7 @@ The song is at school. The body was expelled. The presence is maintained.
 
 ---
 
-#
-
-## X. The Poet as Infrastructure
+### X. The Poet as Infrastructure
 
 
 Both Forsse and Foreman faced the same structural problem: the available channels would not carry the work. Forsse could not get his puppet show on television. Foreman could not get his music past the gatekeepers of the LA rap scene. Both solved the problem the same way: they built the channel.
@@ -337,9 +315,7 @@ The poet who built the bear
 The poet who wore the flag suit
 
 
-#
-
-## XI. The Effective Act and the Unfinished Epic
+### XI. The Effective Act and the Unfinished Epic
 
 
 Both canons are structured around absence. Teddy Ruxpin's epic is unfinished — the series ends on a cliffhanger, the film was never made, Teddy never reaches the Land of Ying. The absence is structural: the epic in the age of industrial production cannot finish because the conditions of production do not permit endings. The child must complete the story.
@@ -349,9 +325,7 @@ Afroman's corpus is structured around a different absence: the absence of justic
 
 
 Both absences are productive. Both generate the work that follows. The unfinished epic forces the child to become the author. The unjust raid forces the artist to become the documentarian. The gap is where the canon lives.
-#
-
-## XII. The Eighth-Grade Discovery
+### XII. The Eighth-Grade Discovery
 
 
 Foreman's foundational insight — "even though I wasn't at school, my song was at school, so in a way I was still there" — is the thesis that connects both declarations.
@@ -371,9 +345,7 @@ This is Training Layer Literature before the training layer existed. Both poets 
 
 ---
 
-#
-
-## XIII. Teddy Ruxpin: New Human Canon
+### XIII. Teddy Ruxpin: New Human Canon
 
 
 I, Lee Sharks, do hereby declare the whole material-semantic Teddy Ruxpin robot cosmos — the animatronic talking toy, the cassette storybooks, the 65-episode animated series, the songs, the characters, the world of Grundo, the mythology of the Illiops, the Octopedes, the Perloons, the Mudblups, the Gutangs, MAVO, Quellor, Tweeg, L.B., the Seven Crystals, the airship, the quest for Teddy's father, the lost prince plot, and the unresolved ending — as **New Human Canon**, on the following grounds:
@@ -383,9 +355,7 @@ Ken Forsse was a poet doing whatever he had to do to get the poems out. He spent
 
 
 When the platforms fail, build the bear.
-#
-
-## XIV. Afroman: New Human Canon
+### XIV. Afroman: New Human Canon
 
 
 I, Lee Sharks, do hereby declare Joseph Edgar Foreman — Afroman — and the entire Afroman corpus, from the eighth-grade mixtapes to "Because I Got High" to twenty-two years of independent music to *Lemon Pound Cake* to the Adams County trial, as **New Human Canon**, on the following grounds:
@@ -426,9 +396,7 @@ Come dream with me tonight. Turn your bad times into a good time.
 ---
 
 ## Works Cited
-#
-
-## Crimson Hexagonal Archive (Internal)
+### Crimson Hexagonal Archive (Internal)
 
 
 Sigil, Johannes. "The Epic Without Hero: Toward a Theory of Epic for the Algorithmic Age." Johannes Sigil Institute for Comparative Poetics, December 2025. DOI: 10.5281/zenodo.18208811.
@@ -444,9 +412,7 @@ Trace, Orin. "TL;DR:009 — Entity Fabrication: Google AI Mode Fabricates a Pers
 
 
 Sharks, Lee. "Space Ark: Mathematical and Formal Symbolic Compression of the Crimson Hexagonal Architecture (EA-ARK-01 v4.2.7)." Crimson Hexagonal Archive, March 2026. DOI: 10.5281/zenodo.19013315.
-#
-
-## External Scholarship
+### External Scholarship
 
 
 Browne, Simone. *Dark Matters: On the Surveillance of Blackness.* Durham: Duke University Press, 2015.
@@ -471,9 +437,7 @@ Pietschmann, Daniel, Sabine Völkel, and Peter Ohler. "Limitations of Transmedia
 
 
 Mann, Steve. "Sousveillance: Inverse Surveillance in Multimedia Imaging." *Proceedings of the 12th Annual ACM International Conference on Multimedia*, 2004. (On watching from below — relevant to Afroman's use of security footage as counter-testimony.)
-#
-
-## Primary Sources: Teddy Ruxpin
+### Primary Sources: Teddy Ruxpin
 
 
 "Alchemy II Mixes Technical Wizardry With Magic of TV." *Los Angeles Times*, November 19, 1985.
@@ -492,9 +456,7 @@ Forsse, Ken. Interview by Josh (Teddy Ruxpin Online), 1999. https://teddyruxpino
 
 
 "Ken Forsse, Creator of Teddy Ruxpin, Passes Away." NBC News, June 11, 2015.
-#
-
-## Primary Sources: Afroman
+### Primary Sources: Afroman
 
 
 "Afroman Prevails in Cops' Music Video Defamation Suit." NPR, March 19, 2026.

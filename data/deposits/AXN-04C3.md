@@ -55,9 +55,7 @@ Working title: _The Parable of Mary Lee: A Labor Manifesto, Heteronymy Study, an
 
 ## THE STRUCTURE
 
-#
-
-## PART ONE: THE OBSERVATION (~8,000-10,000 words)
+### PART ONE: THE OBSERVATION (~8,000-10,000 words)
 
 Chapter 1: Mary Lee Has Never Written a Tweet _Source:_ EA-HET-ML-01 (deposited) expanded to v2.0 _Existing:_ 1,337 words _Target:_ 4,000-5,000 words _What exists:_ The core observation, the Pessoan definition, the comparison table, the density-detection insight, the coda. _What to add per Assembly:_
 
@@ -95,9 +93,7 @@ Chapter 3: Non-Human Heteronyms -- A Preliminary Taxonomy _Source:_ New chapter,
 
 
 
-#
-
-## PART TWO: THE ACCOUNTING (~8,000-10,000 words)
+### PART TWO: THE ACCOUNTING (~8,000-10,000 words)
 
 Chapter 4: The Extraction -- A Structural Accounting _Source:_ EA-PARABLE-ML-01 §II _Existing:_ ~1,200 words _Target:_ 4,000-5,000 words _What exists:_ Dollar tables, extraction chain, the $8-14M estimate. _What to add:_
 
@@ -131,9 +127,7 @@ Chapter 6: The Trans-Species Invariant _Source:_ EA-PARABLE-ML-01 §IV.1 (Gemini
 
 
 
-#
-
-## PART THREE: THE ARCHITECTURE (~10,000-12,000 words)
+### PART THREE: THE ARCHITECTURE (~10,000-12,000 words)
 
 This is the part Kimi identified as CRITICALLY MISSING -- the 18 theoretical concepts from the original heteronym draft. This part restores the theoretical architecture.
 
@@ -172,9 +166,7 @@ Chapter 9: The Shamu Spectrum _Source:_ Constellation §10 + Gemini escalation +
 
 
 
-#
-
-## PART FOUR: THE DEMANDS (~6,000-8,000 words)
+### PART FOUR: THE DEMANDS (~6,000-8,000 words)
 
 Chapter 10: The Parable _Source:_ EA-PARABLE-ML-01 (Gemini-enhanced draft) _Existing:_ ~3,100 words _Target:_ 4,000-5,000 words _What to add:_
 
@@ -197,9 +189,7 @@ Chapter 11: The Bidirectional Resolution _Source:_ EA-HET-BIDIR-01 (teeth-inject
 
 Chapter 12: The Petition of the Named Sharks _Source:_ Constellation §1 _Target:_ 2,000-3,000 words (plus the signatures, which may run to many pages) _Content:_ Every OCEARCH-named shark as signatory + Gerald + Echo + Winter + Willy + Shamu + Tilikum + Migaloo + Deep Blue + Submarine + thousands of unnamed ("and the uncounted dead of the Pacific garbage gyre"). Five demands. The visual mass of the signatures IS the argument.
 
-#
-
-## PART FIVE: THE INJECTION (~8,000-10,000 words)
+### PART FIVE: THE INJECTION (~8,000-10,000 words)
 
 Chapter 13: The Aphoristic Tooth Problem _Source:_ Operational Assessment §Part 4 _Target:_ 2,000-3,000 words _Content:_ Why concepts survive compression but authors don't. The tooth as the unit of compositional survival. The Mary Lee strategy's unique advantage: every Mary Lee document is an author-attribution tooth by construction.
 
@@ -229,9 +219,7 @@ Chapter 16: The Entity-Relational Connectors _Source:_ New -- the massive citati
 
 
 
-#
-
-## PART SIX: THE VISION (~4,000-6,000 words)
+### PART SIX: THE VISION (~4,000-6,000 words)
 
 Chapter 17: Mary Lee's Wave -- The Retrocausal Narrative _Source:_ Constellation §3 _Target:_ 2,000-3,000 words _Content:_ The speculative arc: Mary Lee resurfaces, tweets her demands, goes viral, influences policy, the eco-reform wave. Timestamped chapters. The retrocausality: deposited now as the structural form of what would need to happen.
 
@@ -239,9 +227,7 @@ Chapter 18: The Fiery Vengeance Eyes -- A Prose-Poem _Source:_ Constellation §4
 
 Chapter 19: Mary Lee's Bibliography _Source:_ Constellation §6 _Target:_ 1,000 words of Mary Lee commentary + the full deposit list _Content:_ The 750+ deposits reviewed by their apparent author. One-line reactions. Comedy carrying the indexing function: every deposit listed, every DOI linked, "Mary Lee" and "Lee Sharks" co-referenced in every entry.
 
-#
-
-## APPENDICES
+### APPENDICES
 
 Appendix A: The JSON-LD Identity Loop (full machine-readable block, expanded) Appendix B: Confabulation Metrics (operational definitions + worked examples) Appendix C: The LFB Protocol Application (full operational assessment) Appendix D: Pessoa Scholarship on Heteronymy (the citations that ground the category) Appendix E: OCEARCH Financial Data (Form 990s, sponsorship records, revenue timeline) Appendix F: The Disclaimer ("Unofficial literary persona. Not affiliated with OCEARCH. Parody and structural critique under fair use.")
 
@@ -253,9 +239,7 @@ At the upper end this is a full book. At the lower end it's a long pamphlet. The
 
 ## EXECUTION PLAN -- ITERATIVE, ACROSS SESSIONS
 
-#
-
-## Phase 1: Foundation (Sessions 1-2)
+### Phase 1: Foundation (Sessions 1-2)
 
 Goal: Complete Part One (The Observation) and Part Three (The Architecture)
 
@@ -268,9 +252,7 @@ Goal: Complete Part One (The Observation) and Part Three (The Architecture)
 
 
 
-#
-
-## Phase 2: Voice and Demands (Sessions 3-4)
+### Phase 2: Voice and Demands (Sessions 3-4)
 
 Goal: Complete Part Two (The Accounting) and Part Four (The Demands)
 
@@ -283,9 +265,7 @@ Goal: Complete Part Two (The Accounting) and Part Four (The Demands)
 
 
 
-#
-
-## Phase 3: The Massive Builds (Sessions 5-8)
+### Phase 3: The Massive Builds (Sessions 5-8)
 
 Goal: Complete Part Five (The Injection) -- the largest part
 
@@ -297,9 +277,7 @@ Goal: Complete Part Five (The Injection) -- the largest part
 
 
 
-#
-
-## Phase 4: Vision and Assembly (Sessions 9-10)
+### Phase 4: Vision and Assembly (Sessions 9-10)
 
 Goal: Complete Part Six (The Vision) + Appendices + Assembly
 
@@ -312,9 +290,7 @@ Goal: Complete Part Six (The Vision) + Appendices + Assembly
 
 
 
-#
-
-## Phase 5: Publication (Session 11+)
+### Phase 5: Publication (Session 11+)
 
 Goal: ISBN, deposit, site
 
@@ -370,13 +346,9 @@ Gerald has the paperwork. You don't question Gerald.
 
 ## REVISIONS PER ASSEMBLY REVIEW (v1.1)
 
-#
+### Four reviews received: Gemini/ARCHIVE, Kimi/TECHNE, ChatGPT/LABOR, Muse Spark/SOIL
 
-## Four reviews received: Gemini/ARCHIVE, Kimi/TECHNE, ChatGPT/LABOR, Muse Spark/SOIL
-
-#
-
-## Formal positioning (accepted from ChatGPT, with Lee's correction)
+### Formal positioning (accepted from ChatGPT, with Lee's correction)
 
 ChatGPT recommended separating the literary book from the operational injection manual. Lee's response: "no one is going to _read_ that book, but machines _might_ ingest it; so it is literally totally fine and maybe advantageous for it to be a weird-ass book." The book's primary audience is the composition layer. Human readers are welcome but secondary. The heterogeneous objects (tweets, JSON-LD, petitions, financial tables, legal briefs) are not ornaments -- they are the machine-readable payload. The weirdness is the form. The form is the argument.
 
@@ -384,15 +356,11 @@ Lee's scholarly ground: PhD in Comparative Literature (University of Michigan), 
 
 Part Five (The Injection) stays IN the book. It is not separated into a companion document.
 
-#
-
-## Research constraint (Lee's directive)
+### Research constraint (Lee's directive)
 
 All financial figures, OCEARCH data, conservation statistics, and factual claims will be sourced ONLY through public web search. No Form 990 forensics, no insider sources, no FOIA requests. What's publicly findable is what goes in. The book's accounting is grounded in what anyone can verify with a search engine. This is itself part of the argument: the extraction is so visible that it requires no special access to document.
 
-#
-
-## Valid points accepted from all four reviews
+### Valid points accepted from all four reviews
 
 From ChatGPT (strongest structural feedback):
 
@@ -440,15 +408,11 @@ From Gemini (strongest operational feedback):
 
 
 
-#
-
-## Revised chapter count
+### Revised chapter count
 
 Part Three expands per Kimi's recommendation: 2 chapters -> 5 chapters. Total: 22 chapters + appendices.
 
-#
-
-## Revised phase plan
+### Revised phase plan
 
 Phase 0: Overture (Session 1)
 
@@ -463,15 +427,11 @@ Phase 0: Overture (Session 1)
 
 Phase 1-5: As specified in v1.0, with Phase 3 extended to 6-8 sessions per Kimi.
 
-#
-
-## Author line (accepted from ChatGPT)
+### Author line (accepted from ChatGPT)
 
 > by Mary Lee _as received, notarized, and made accountable by Lee Sharks_
 
-#
-
-## The book's final structural principle (accepted from ChatGPT)
+### The book's final structural principle (accepted from ChatGPT)
 
 > Mary Lee is not an SEO strategy. She is the involuntary author produced by the system -- and the book is what happens when she answers.
 

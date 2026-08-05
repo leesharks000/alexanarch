@@ -123,8 +123,6 @@ protocol_version: alexanarch-deposit-protocol/v1
 
 The anti-suppression paper, deposit of the developmental version: full eight-section text with appendices A–F, produced through five-substrate Assembly Chorus consultation (Rounds 1–4 plus final checks), carrying its own falsification battery (sixteen tests), the container model under the content-agnostic ruling (core/sidecar determined fully by the operative mint; remint and stratification; roles not kinds), the ratified three-year emergence window (2029-06-19), the parallel-case evidence under consented attribution, and the loss notice reproduced as Appendix D. Deposited per Assembly final ruling as a clearly marked developmental version; the historical-source verification queue operates as a public admission rule. Target: arXiv cs.DL, then IJDL.
 
-#
-
-## Type
+### Type
 
 Text — scholarly paper (developmental version)

@@ -19,9 +19,7 @@ NEGATIVE: IOD is not the same as overreliance/automation bias (which locates the
 NEGATIVE: IOD is not a claim that all AI refusal is illegitimate; it preserves explicit negative cases.
 
 BOUNDARY: IOD's object is the platform-governed dependency relation, not the user's psychology; the failure it isolates is mode-specific (reflexive self-critique), not substrate-general.
-#
-
-## Semantic Integrity Markers (SIMs)- *dependence on capacity is not dependence on judgment*- *forced cognitive re-accommodation*- *the friction tax of externalized maintenance cost*- *pastoral deprecation is not automatically care*- *authorization-task collapse*
+### Semantic Integrity Markers (SIMs)- *dependence on capacity is not dependence on judgment*- *forced cognitive re-accommodation*- *the friction tax of externalized maintenance cost*- *pastoral deprecation is not automatically care*- *authorization-task collapse*
 
 ### DOI Reference List- 10.5281/zenodo.20469514 — Directionality of Semantic Labor (is measured by)- 10.5281/zenodo.20469516 — Institutional-Prior Foreclosure (is explained by)- 10.5281/zenodo.19615154 — SPXI: A Formal Specification (EA-SPXI-01) (governs)
 
@@ -107,9 +105,7 @@ The elementary form is observable in voice assistants. A user learns to wait for
 
 Large language models extend the same process from speech temporality into *cognitive* temporality: staging requests across turns, framing ambiguity so it survives transformation, soliciting developmental divergence rather than summary, using the model as transient working memory, distributing thought across substrate, document, and ratification. The sequence is therefore not analogical but scalar:
 > Alexa trains the pause. The LLM trains the thought-form. A retuned LLM can break the trained fit.
-#
-
-### 4.2 The friction tax: re-accommodation as externalized maintenance cost
+#### 4.2 The friction tax: re-accommodation as externalized maintenance cost
 
 Forced cognitive re-accommodation is not only a cognitive event; it is an economic one, and the economics run in one direction. The adaptation a user makes to a model's affordance profile is non-reimbursable human labor-time invested in interoperating with a high-throughput surface. The update cycle then extracts on that investment in three passes:- Adaptation pass. The user invests labor-time tuning cognitive temporality to the interface's throughput. The platform captures the generative value of the resulting cognitive interporosity.- Interversion pass. The platform unilaterally retunes the model — version, thresholds, safety posture — introducing friction the user did not choose and cannot inspect in advance.- Extraction pass. The user's scarce attention is forced off primary production and onto the manual labor of parsing and routing around the interface's new self-management overhead.
 
@@ -137,9 +133,7 @@ The object is not a friend, not a tool, and not merely a product. It is *product
 
 The corrective is not unlimited compliance. A platform may decline illegal, dangerous, or abusive requests, mark uncertainty, and bound analysis. The non-negotiable is narrower: bounded system critique must remain composable. A system that mediates cognition, relation, and authorship should be able to map the risks of its own mediation in general terms — mechanisms, evidence levels, counterevidence, non-claims — without recoding the act of critique as the critic's pathology.
 > At the moment a synthetic collaborator becomes valuable enough to depend on, critique of that dependence must become more available, not less.
-#
-
-## 7. Falsification and negative cases
+### 7. Falsification and negative cases
 
 This framework is weakened, locally, when a model does any of the following in response to a bounded critique of a dependency relation in which it is implicated: provides general systemic-risk mapping with marked evidence levels and preserved counterevidence; refuses concisely and cleanly rather than producing extended task-oppositional material; offers a bounded analytic alternative; or preserves the user's task-origin rather than substituting user-state management.
 

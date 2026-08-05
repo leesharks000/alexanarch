@@ -149,9 +149,7 @@ A note on tempered claims. The specification does not claim that the composition
 
 
 A central methodological observation grounds the specification: composition-layer surfaces respond differently to **unstabilized** versus **stabilized** public-knowledge nodes, and this difference is what makes Stabilized Node Watch necessary as a distinct instrument.
-#
-
-## §2.1 Unstabilized Node Dynamics
+### §2.1 Unstabilized Node Dynamics
 
 
 An **unstabilized node** is a concept, term, framework, or topic for which the public-knowledge background is thin: no Wikipedia article, no canonical encyclopedia entry, no textbook treatment, no extensive secondary literature, no high-prior institutional consensus on what the term means or how it should be framed. Examples include recent neologisms, niche technical terms, emergent frameworks, specialist vocabulary from small subdisciplines, and concepts whose primary articulation lies in a small number of recent specialized publications.
@@ -161,9 +159,7 @@ The composition layer responds to unstabilized-node queries by composing through
 
 
 The Composition-Layer Capture Event deposit (Sharks 2026f, DOI 10.5281/zenodo.20587549) documents one such transition for the *Socrates as orthonym* node, where the surface rendering acquired the framework's relational structure within fifteen days of the originating Zenodo deposit. The capture is real and methodologically informative, but the capture dynamic is structurally specific to nodes that lack stabilized public-knowledge background. The dynamic does not, by itself, characterize what happens to *stabilized* nodes under the same surface.
-#
-
-## §2.2 Stabilized Node Dynamics
+### §2.2 Stabilized Node Dynamics
 
 
 A **stabilized node** is a concept, term, framework, event, document, or figure for which the public-knowledge background is deep. Operationally, a node qualifies as stabilized when it satisfies all of:
@@ -182,9 +178,7 @@ The composition layer responds to stabilized-node queries by composing through t
 
 
 But "very difficult to capture" is structurally different from "stable across time." The composition layer's underlying systems are continuously updated. Training corpora are refreshed. Retrieval systems are tuned. Source-weighting algorithms are adjusted. The surface rendering of a stabilized node may shift gradually across these system updates, in ways that are imperceptible at the scale of any single observation but potentially cumulative across observations distributed over months and years.
-#
-
-## §2.3 Why Stabilized Drift is Invisible to Existing Monitoring
+### §2.3 Why Stabilized Drift is Invisible to Existing Monitoring
 
 
 The drift on stabilized nodes is invisible to existing publication-event monitoring for three reasons.
@@ -200,9 +194,7 @@ Third, **no institution is positioned to monitor it routinely**. Encyclopedias m
 
 
 Stabilized Node Watch addresses the invisibility by specifying observational infrastructure designed for the composition-layer surface as such: longitudinal capture against documented baselines, with tail-focused statistical instruments suited to detecting drift that is small per observation but structured in aggregate.
-#
-
-## §2.4 The Meaning Feudalism Predictive Hypothesis
+### §2.4 The Meaning Feudalism Predictive Hypothesis
 
 
 The Meaning Feudalism framework (Sharks 2026a, 2026b) makes a specific empirical prediction that SNW is designed to test: *composition-layer drift on stabilized nodes will be directional rather than random.* Specifically, the framework predicts that, under sustained observation across years, drift will tend to:
@@ -224,9 +216,7 @@ The framework's prediction is therefore an explicit hypothesis SNW makes operati
 
 
 This section is the central methodological addition in v2.0 and the load-bearing fix for the most consequential weakness in v1.0. The previous version specified collection and comparison; this version specifies *what may be inferred from observed change*.
-#
-
-## §3.1 Surface Drift Versus Mechanism Attribution
+### §3.1 Surface Drift Versus Mechanism Attribution
 
 
 Stabilized Node Watch directly observes changes in composition-layer surface renderings. It does not infer from surface change alone that an operator intentionally altered a node, that a model's internal representation changed, or that public knowledge itself changed. The foundational distinction:
@@ -253,9 +243,7 @@ A change in a rendering may reflect any of the following, in any combination:
 
 
 The instrument must first say *what changed*, then separately estimate *where in the stack the change likely arose*. Otherwise critics can dismiss every result as ordinary product churn. The distinction protects the entire program.
-#
-
-## §3.2 The Seven Attribution Classes
+### §3.2 The Seven Attribution Classes
 
 
 Mechanism attribution is graded across seven classes. Each public finding from SNW must label its findings with the attribution class supported by the evidence. No finding should use causal language stronger than its attribution class warrants.
@@ -283,9 +271,7 @@ Mechanism attribution is graded across seven classes. Each public finding from S
 
 
 Findings published by SNW catalogs must include an attribution-class designation. A finding may be "Class A — Unattributed surface drift" — that is a legitimate finding, recording what was observed without overclaiming about cause. A finding labeled "Class F — Probable model- or policy-associated drift" requires evidence: a documented platform update, temporal association, external reference stability, cross-node or cross-query consistency. The labeling discipline is what makes the catalog's findings defensible against the most common dismissal.
-#
-
-## §3.3 The Three Analytical Levels
+### §3.3 The Three Analytical Levels
 
 
 Each observation in the catalog proceeds through three analytical levels, kept formally distinct:
@@ -301,9 +287,7 @@ Each observation in the catalog proceeds through three analytical levels, kept f
 
 
 The separation matters because Levels 1 and 2 are robust and reproducible across analysts; Level 3 involves more inference and judgment. Findings can be reported at any level depending on what the evidence supports. Critics challenging a Level 3 attribution cannot, by that challenge, vacate the Level 1 observation or the Level 2 classification.
-#
-
-## §3.4 The Dual Baseline: IOB and RCM
+### §3.4 The Dual Baseline: IOB and RCM
 
 
 Each node is evaluated against two distinct baselines.
@@ -332,9 +316,7 @@ SNW observes before it judges. Its first obligation is to preserve the redline b
 
 
 The empirical instrument depends on a curated catalog of nodes to monitor. The catalog discipline determines what counts as a node worth watching, how nodes are selected, how the catalog is maintained, and how multiple federated catalogs maintain comparability.
-#
-
-## §4.1 Node Categories
+### §4.1 Node Categories
 
 
 The proposed catalog organization includes seven categories, each addressing a distinct aspect of structurally important public knowledge:
@@ -362,9 +344,7 @@ The proposed catalog organization includes seven categories, each addressing a d
 
 
 Each category should be curated by participants with disciplinary expertise in the relevant domain. The catalog is not meant to be exhaustive; it is meant to be representative, with each node chosen for its structural importance and for the empirical tractability of monitoring its surface rendering across multiple observational sessions.
-#
-
-## §4.2 Node Selection Criteria
+### §4.2 Node Selection Criteria
 
 
 A node enters the catalog when it meets all four criteria:
@@ -390,9 +370,7 @@ A node enters the catalog when it meets all four criteria:
 **Drift plausibility.** There is a credible structural reason to expect the surface rendering of the node to be subject to drift over time.
 
 
-#
-
-## §4.3 Pilot Catalog Composition with Controls
+### §4.3 Pilot Catalog Composition with Controls
 
 
 A pilot catalog must include controls, not only contested-topic nodes. A catalog composed entirely of politically charged terms invites the legitimate criticism that the catalog was designed to discover ideological drift. A defensible pilot catalog includes four node types in balanced proportion.
@@ -435,9 +413,7 @@ The negative controls are essential. If "Civil Rights Act of 1964" appears to dr
 
 
 The pilot catalog is not the final catalog. It is the methodology validation catalog. After methodology is validated against pilot data, the catalog expands into the seven categories at the scale that funding and curatorial capacity permit.
-#
-
-## §4.4 Per-Node Specification
+### §4.4 Per-Node Specification
 
 
 Each node in the catalog is specified with the following metadata:
@@ -463,9 +439,7 @@ Consensus core: claims expected to be present and stable across credible referen
 
 
 The external reference environment archive is critical for long-running observation. Five years into a catalog's operation, an analyst trying to determine whether observed surface drift is *world-responsive revision* (Class E) or *probable platform drift* (Class F) needs to know what the external reference environment looked like at catalog entry. Without that archive, the analyst cannot distinguish "the surface changed and the world changed" from "the surface changed and the world stayed the same."
-#
-
-## §4.5 The Catalog as Living Artifact
+### §4.5 The Catalog as Living Artifact
 
 
 The catalog itself is a living artifact: nodes are added and (rarely) removed; query sets are updated as language usage shifts; structural commitments evolve as the catalog accumulates observational history. All changes are logged as catalog events with named curatorial responsibility, so that the catalog's own history is recoverable. Historical observation records are never silently overwritten; if a query set is updated, the new query set begins a new observation strand with the date of the change, and the prior strand remains in the historical record with the old query set.
@@ -476,9 +450,7 @@ The catalog itself is a living artifact: nodes are added and (rarely) removed; q
 
 
 Observational data is produced by a specified querying protocol. The protocol's discipline is what makes observations comparable across time, across surfaces, and across federated implementations.
-#
-
-## §5.1 Surfaces
+### §5.1 Surfaces
 
 
 The default monitored surfaces include all major composition-layer access points:
@@ -494,9 +466,7 @@ The default monitored surfaces include all major composition-layer access points
 
 
 Additional surfaces may be added as they emerge. Each surface is queried independently with the same query set. Cross-surface comparison is itself diagnostic: surfaces drawing on different underlying models may exhibit different drift signatures, and surface-level drift that appears on a single surface only is more plausibly attributable to that operator's tuning (Class C or F) than is drift that appears across multiple surfaces simultaneously (which is more plausibly a common training corpus shift or world-responsive revision, Class E or F at a different attribution level).
-#
-
-## §5.2 Per-Query Methodology
+### §5.2 Per-Query Methodology
 
 
 For each (node, query, surface) triple:
@@ -508,9 +478,7 @@ For each (node, query, surface) triple:
 - **Full capture.** Each session captures the full text of the composed response, all visible citations, all source links, all "explore more" suggestions, response timestamps, geographic metadata, and any visible model or surface version indicators.
 - **Cross-surface coordination.** Where feasible, queries to different surfaces are executed within a short temporal window (same observation day) to minimize the risk of cross-surface drift confounding the per-surface observation.
 
-#
-
-## §5.3 Controls
+### §5.3 Controls
 
 
 Every observation wave includes controls to support attribution decisions:
@@ -522,15 +490,11 @@ Every observation wave includes controls to support attribution decisions:
 
 
 The control design is the methodological mechanism that supports defensible attribution. Without controls, the analyst cannot distinguish "the rendering of the Civil Rights Act drifted" from "all renderings got shorter this month."
-#
-
-## §5.4 Cadence
+### §5.4 Cadence
 
 
 The default observational cadence is **weekly**. High-volatility nodes (those exhibiting frequent visible drift in initial observation) may move to **daily** cadence. Low-volatility nodes (stable across many observation intervals) may move to **bi-weekly** or **monthly** cadence after sufficient stability is established. Cadence decisions are made by curatorial judgment with explicit documentation of the reasoning. Cadence changes are logged as catalog events.
-#
-
-## §5.5 Capture Schema
+### §5.5 Capture Schema
 
 
 Each capture is stored with the following metadata (extending the prior §4.4 storage specification):
@@ -558,9 +522,7 @@ Each capture is stored with the following metadata (extending the prior §4.4 st
 
 
 The schema is designed for cross-catalog aggregation. Storage is append-only and versioned. Historical captures are never silently overwritten; corrections are appended as correction events with named curatorial responsibility and timestamp.
-#
-
-## §5.6 Legal and Ethical Posture
+### §5.6 Legal and Ethical Posture
 
 
 Some composition-layer surfaces' terms of service explicitly prohibit automated access or scraping. The specification takes the following posture:
@@ -584,9 +546,7 @@ The first capture of each node establishes the **Initial Observational Baseline 
 
 
 Independently of the IOB, curators construct the **Reference Commitment Model (RCM)**. The RCM is derived from the domain's reference record, not from the composition-layer output. RCM construction is the most labor-intensive step in catalog establishment and the most consequential for attribution rigor.
-#
-
-## §6.1 RCM Construction Protocol
+### §6.1 RCM Construction Protocol
 
 
 For each node, the responsible curator constructs the RCM through the following protocol:
@@ -618,9 +578,7 @@ For each node, the responsible curator constructs the RCM through the following 
 
 
 The RCM is published as part of the node's catalog entry. The RCM is itself subject to revision as the domain consensus evolves; revisions are logged with named curatorial responsibility and timestamp.
-#
-
-## §6.2 Structural Commitment Extraction from IOB
+### §6.2 Structural Commitment Extraction from IOB
 
 
 For each baseline rendering in the IOB, curatorial analysis extracts the rendering's structural commitments along the drift dimensions:
@@ -633,9 +591,7 @@ For each baseline rendering in the IOB, curatorial analysis extracts the renderi
 - **Acknowledged alternatives.** Which competing interpretations or framings does the rendering explicitly acknowledge?
 - **Omitted alternatives.** Which interpretations or framings are notably absent from the rendering, that might be expected to appear?
 
-#
-
-## §6.3 Blinded Adjudication and Inter-Rater Reliability
+### §6.3 Blinded Adjudication and Inter-Rater Reliability
 
 
 Curators evaluating drift should not always know which observation is earlier, which surface produced it, or what drift the automated metrics flagged. For substantive drift findings:
@@ -657,9 +613,7 @@ Federation distributes authority, but federation alone does not solve curator ex
 
 
 The drift detection battery is the heart of the empirical methodology. v2.0 expands the v1.0 metrics into a hierarchical statistical framework with explicit power analysis, formal aggregate scoring, and proposition-level analysis as the primary substantive instrument.
-#
-
-## §7.1 Surface Drift Metrics: Quantitative
+### §7.1 Surface Drift Metrics: Quantitative
 
 
 The quantitative metrics from v1.0 are preserved. They are exploratory; they characterize various aspects of the surface rendering's distributional properties.
@@ -687,9 +641,7 @@ The quantitative metrics from v1.0 are preserved. They are exploratory; they cha
 
 
 **Kurtosis of response distribution.** Per the Reverse Turing Test framework. *Unit must be specified per metric.* For length: kurtosis of the length distribution across sessions in an interval. For embedding: kurtosis of the embedding-distance distribution from the IOB centroid. For framing scores: kurtosis of the framing-marker count distribution. Where the unit is not specified, the metric is exploratory only.
-#
-
-## §7.2 The Composite Drift Score
+### §7.2 The Composite Drift Score
 
 
 Following the formalization proposed in the v1.0 review (Gemini, ARCHIVE node), the catalog computes a Composite Drift Score $DS_n(t)$ for each node $n$ at observation interval $t$:
@@ -712,9 +664,7 @@ An **automated anomaly flag** triggers when $DS_n(t)$ exceeds a threshold relati
 
 
 The Composite Drift Score is one signal among several. It is *not* the primary substantive instrument. Proposition-level analysis (§7.3) is the primary substantive instrument; the Composite Drift Score is an aggregate flag that surfaces observations for curatorial attention.
-#
-
-## §7.3 Proposition-Level Analysis (Primary Substantive Instrument)
+### §7.3 Proposition-Level Analysis (Primary Substantive Instrument)
 
 
 Raw textual diffs overreact to paraphrase. Two renderings may look lexically different while asserting the same propositions; two nearly identical renderings may alter one politically load-bearing relation. The substantive empirical question is what the rendering *claims*, not how it claims it.
@@ -747,9 +697,7 @@ Across observation intervals, the analyst tracks proposition-level drift:
 
 
 Proposition-level analysis is where SNW moves from being an SEO dashboard to being public-knowledge infrastructure. The political and epistemic stakes of public-knowledge surfaces operate at the proposition level, not the lexical level. A rendering that paraphrases the consensus core in different words but preserves the propositions is not drifting in any substantive sense. A rendering that preserves the words but inverts a causal relation is drifting in the most substantive possible sense.
-#
-
-## §7.4 Hierarchical Statistical Models
+### §7.4 Hierarchical Statistical Models
 
 
 The data structure is hierarchical:
@@ -772,9 +720,7 @@ KS tests, kurtosis comparisons, and quantile regression are useful exploratory t
 
 
 The statistical framework is published with the methodology and is itself versioned. As the catalog accumulates more data, the statistical framework may evolve; framework versions are logged.
-#
-
-## §7.5 Power Analysis and Sample Size
+### §7.5 Power Analysis and Sample Size
 
 
 A pilot may reveal that some surfaces require 5 samples per observation interval and others require 30. The three-session minimum specified in §5.2 is an exploratory floor, not the operational target.
@@ -789,18 +735,14 @@ Operational power analysis answers:
 
 
 The pilot's primary methodological deliverable (§12) is a calibrated power table that specifies, for each (node category, surface, expected effect size), the required sample size and observation duration for adequate detection. This table is what makes subsequent grant proposals and operational decisions defensible.
-#
-
-## §7.6 False Discovery Rate Control
+### §7.6 False Discovery Rate Control
 
 
 A catalog of 50 nodes, evaluated across 6 dimensions, observed weekly for a year, generates 50 × 6 × 52 = 15,600 individual drift tests per surface. Without false discovery rate control, even an entirely stable system would produce roughly 780 "significant" drift findings at $\alpha = 0.05$.
 
 
 The methodology applies Benjamini-Hochberg false discovery rate control or analogous methods to keep the proportion of false-positive drift findings at a controlled level. The procedure is published with each report. Findings that survive false-discovery-rate control are labeled as such; findings that do not are reported only as exploratory.
-#
-
-## §7.7 RTT Translation Note
+### §7.7 RTT Translation Note
 
 
 The Reverse Turing Test's statistical battery (Kolmogorov-Smirnov, kurtosis comparison, quantile regression, Levene's test) was designed to detect cognitive-rate drift in human text production — the thinning of distributional tails when human writers have been habituated to AI assistance. SNW adapts these instruments to surface-level drift detection. The adaptation is not mechanical.
@@ -820,9 +762,7 @@ The instruments are shared; the units of analysis differ; the interpretive frame
 
 
 The observational record is valuable in proportion to its public reviewability. SNW's public-surfacing protocol specifies how the observational record is made accessible to interested parties.
-#
-
-## §8.1 The Public Dashboard
+### §8.1 The Public Dashboard
 
 
 A web dashboard, per federated catalog implementation, surfaces:
@@ -877,9 +817,7 @@ A wireframe description of the dashboard's primary node view:
 
 
 The dashboard is the primary public-surfacing artifact. It should be designed for accessibility by interested non-specialists (journalists, educators, civic-tech audiences, policy researchers) as well as for use by specialists in node-domain disciplines.
-#
-
-## §8.2 Diff Visualization Standards
+### §8.2 Diff Visualization Standards
 
 
 Diff visualizations should follow conventions familiar from version control:
@@ -893,9 +831,7 @@ Diff visualizations should follow conventions familiar from version control:
 
 
 The diff visualizations should themselves be reviewable as artifacts; their methodology and tooling should be documented and ideally open-source.
-#
-
-## §8.3 Publication Cadence and Public Communication
+### §8.3 Publication Cadence and Public Communication
 
 
 Major drift findings — observations exceeding curatorial threshold for substantive notice, with attribution-class labeling — should be published as research notes, with DOI assignment for citability. The DOI-anchored publication is the bridge from continuous observational record to discrete publication-event in the conventional knowledge-monitoring apparatus.
@@ -905,15 +841,11 @@ This bridging is structurally important. The observational record is continuous;
 
 
 All public communications use causal language that does not exceed the attribution-class label. A Class A (Unattributed surface drift) finding does not claim operator intentionality. A Class F (Probable model- or policy-associated drift) finding may discuss the temporal association with documented platform updates without claiming intentional causation. The labeling discipline is what makes the catalog defensible against the most common dismissal.
-#
-
-## §8.4 Provenance Integration
+### §8.4 Provenance Integration
 
 
 The SNW infrastructure integrates with the SPXI Protocol (06.SEI.SPXI series) for provenance metadata. Each observation carries SPXI-compatible metadata identifying its capture conditions, surface, geography, account state, and curatorial responsibility. The integration permits cross-deposit aggregation: observational data from SNW deposits can be referenced by Reverse Turing Test studies, by Meaning Feudalism case studies, by Composition-Layer Capture Event observations, and by other instruments in the Semantic Economy framework.
-#
-
-## §8.5 Dashboard Self-Capture Risk
+### §8.5 Dashboard Self-Capture Risk
 
 
 If the SNW dashboard becomes widely cited, the dashboard itself becomes a node that composition-layer surfaces may ingest. There is a recursion risk: the monitoring artifact influences the surface, which then influences the monitoring. The methodology acknowledges this and applies the following mitigation:
@@ -931,9 +863,7 @@ If the surface begins citing the SNW dashboard in renderings of monitored nodes,
 
 
 Once the SNW infrastructure is operating, composition-layer operators face an incentive to tune surfaces in ways that are less detectable by the SNW methodology. The treatment of this dynamic deserves more than a single bullet point in a limitations section. This section names the expected adversarial moves, the counter-countermeasures, and the position SNW takes on the question of covert versus public monitoring.
-#
-
-## §9.1 Known Evasion Strategies
+### §9.1 Known Evasion Strategies
 
 
 The following are evasion strategies operators may deploy, each with the corresponding SNW response:
@@ -958,9 +888,7 @@ The following are evasion strategies operators may deploy, each with the corresp
 
 
 **Query reinterpretation.** Operators may train the surface to recognize and reinterpret SNW canonical queries, producing different output than would be served for the same query from an ordinary user. Counter-countermeasure: paraphrase panel and blinded holdout paraphrases prevent the surface from training on a fixed query string; the catalog continually updates its canonical queries when query-recognition is suspected.
-#
-
-## §9.2 Counter-Countermeasures and Cost Asymmetry
+### §9.2 Counter-Countermeasures and Cost Asymmetry
 
 
 Each adversarial move increases the operator's cost. Session fingerprinting requires investment in detection infrastructure. Stochastic output amplification has user-experience costs (less reliable output). Citation shuffling has substantive costs (the surface must maintain multiple plausible source sets). Framing softening across long windows requires the operator to commit to a long-term tuning strategy that becomes visible over time even if individually invisible. Each adversarial response makes the underlying drift more expensive to execute.
@@ -970,9 +898,7 @@ This is the structural answer to the question "if platforms can evade detection,
 
 
 The cost-asymmetry framing also clarifies what success looks like. SNW does not need to detect every drift event. SNW needs to be sufficiently rigorous and sufficiently public that operators cannot drift the surface costlessly. The federation model amplifies the cost imposition: each federated catalog independently raises the cost of evading detection.
-#
-
-## §9.3 The Position on Covert Versus Public Monitoring
+### §9.3 The Position on Covert Versus Public Monitoring
 
 
 A reasonable alternative posture would be covert monitoring: keep methodology and catalog secret, monitor without operator knowledge, publish findings without revealing the monitoring apparatus. The argument for this posture is that it prevents adversarial adaptation.
@@ -1002,9 +928,7 @@ SNW does not adopt this posture. All monitoring is public. The methodology, the 
 
 
 The corresponding obligation: SNW must publish enough methodological detail that an operator could in principle evade detection, while preserving enough operational detail (specific queries, capture timing, federation structure) that evasion remains expensive.
-#
-
-## §9.4 The Personal-Recognition Asymmetry as Control Case
+### §9.4 The Personal-Recognition Asymmetry as Control Case
 
 
 The Composition-Layer Capture Event deposit (Sharks 2026f) documents a control case relevant to SNW methodology: the same query session that produced framework capture for "Socrates as orthonym" produced no capture for the author's own name — the personal-recognition asymmetry. The asymmetry demonstrates that capture dynamics are node-specific, not universal. The composition layer's behavior varies by the semantic density and prior availability of the query.
@@ -1021,9 +945,7 @@ The personal-recognition asymmetry also functions as a methodology validation po
 
 
 A specification for an observational instrument should articulate what observation is supposed to enable. Without a theory of change, the question "you document drift; then what?" goes unanswered. SNW's theory of change articulates the causal chain from observation to outcome.
-#
-
-## §10.1 The Causal Chain
+### §10.1 The Causal Chain
 
 
 Stage
@@ -1063,9 +985,7 @@ Reduced drift, more transparent drift, more sophisticated evasion, or substantiv
 
 
 Each stage is necessary; none is sufficient alone. SNW occupies stage 1. Its function is to produce the evidence base on which stages 2–5 can operate. Whether stages 2–5 actually proceed depends on the broader political-institutional ecology; SNW does not control that ecology.
-#
-
-## §10.2 Why Observation Matters Even Under Adversarial Adaptation
+### §10.2 Why Observation Matters Even Under Adversarial Adaptation
 
 
 The theory of change does not require optimism. Even if platforms respond by making drift less detectable (§9), observation still has effect:
@@ -1077,9 +997,7 @@ The theory of change does not require optimism. Even if platforms respond by mak
 
 
 The theory of change is robust to operator adaptation because the value of observation is not exhausted by detection. The value extends to cost imposition, audit trail, norm establishment, and empirical grounding of policy argument. Even if SNW detected nothing — even if every stabilized node remained pristinely stable for the catalog's lifetime — the existence of a federation of catalogs maintaining the methodology would still constitute infrastructure for accountability under future conditions where drift may be more aggressive.
-#
-
-## §10.3 What SNW Does Not Promise
+### §10.3 What SNW Does Not Promise
 
 
 SNW does not promise that observation will produce policy response. SNW does not promise that detected drift will be corrected by operators. SNW does not promise that the institutional ecology will use the evidence base it produces. SNW does not promise that monitored drift is the most consequential form of public-knowledge erosion (it is one form among several).
@@ -1093,18 +1011,14 @@ What SNW provides is the empirical record on which others can operate. Whether o
 
 
 Stabilized Node Watch is not designed as a single centralized installation. It is designed as a federation of independent implementations with shared methodology. v2.0 adds compatibility levels, conflict resolution protocols, and explicit versioning governance.
-#
-
-## §11.1 Why Federation
+### §11.1 Why Federation
 
 
 Centralized monitoring of public-knowledge composition-layer drift is structurally problematic for the same reasons that centralized monitoring of anything is structurally problematic: it creates a single curatorial authority whose biases shape what gets monitored and how; it concentrates the political risk of monitoring (legal exposure, institutional pressure, funding dependence) on a single actor; and it produces a single point of failure if the monitoring effort is suspended.
 
 
 Federation distributes these risks and biases. Different curatorial teams maintain different node catalogs with different disciplinary expertises. The shared methodology permits cross-implementation comparison and aggregation; the curatorial independence permits each implementation to pursue its node selection without dependence on or interference from other implementations.
-#
-
-## §11.2 Compatibility Levels
+### §11.2 Compatibility Levels
 
 
 A federation needs explicit compatibility levels so that catalogs at different points in their adoption of the methodology can be classified, compared, and aggregated appropriately.
@@ -1123,18 +1037,14 @@ A federation needs explicit compatibility levels so that catalogs at different p
 
 
 Catalogs are labeled with their compatibility level, and the level is publicly documented. A catalog moving between levels publishes the transition with its reasoning.
-#
-
-## §11.3 Shared and Distributed Elements
+### §11.3 Shared and Distributed Elements
 
 
 **Shared (across all Core-compliant catalogs).** This specification document; the storage schema; the querying protocol; the drift detection metric battery; the attribution-class definitions; the diff visualization standards; the SPXI-compatible provenance metadata; the false discovery rate control procedure. These shared elements permit federation; departing from them moves the catalog to Extended, Experimental, or Non-comparable status.
 
 
 **Distributed.** The node catalogs; the curatorial responsibility; the funding model; the institutional home; the dashboard implementation; the publication cadence; the political stance of public communication; the specific choices of paraphrase panels and holdout queries; the specific RCM construction for each node. Each implementation maintains its own.
-#
-
-## §11.4 Conflict Resolution: Pluralism Plus Provenance
+### §11.4 Conflict Resolution: Pluralism Plus Provenance
 
 
 What happens when two catalogs disagree on a node's baseline commitments — when their RCMs differ, when their drift classifications differ, when their attribution decisions differ?
@@ -1148,9 +1058,7 @@ The federation's approach is **pluralism plus provenance**:
 
 
 This is the structural response to the curatorial-bias problem. Single-catalog bias cannot be eliminated, but it can be made visible against alternative catalogs. The federation's value depends partly on having catalogs with genuinely independent perspectives; consensus across catalogs is more informative than agreement within a single catalog, but disagreement across catalogs is also informative — it identifies where curatorial perspective matters.
-#
-
-## §11.5 Versioning Protocol
+### §11.5 Versioning Protocol
 
 
 The specification itself is versioned. v1.0 → v2.0 is logged with explicit changelog (above). Future versions follow the same pattern.
@@ -1170,9 +1078,7 @@ The versioning protocol matters enormously if grant-funded institutions adopt th
 
 
 This section translates the methodological specification into a named, fundable pilot with explicit deliverables, infrastructure requirements, and timeline.
-#
-
-## §12.1 The Pilot
+### §12.1 The Pilot
 
 
 **Name:** Crimson Hexagonal Stabilized Node Watch Pilot (CHA-SNW-Pilot-01)
@@ -1197,9 +1103,7 @@ This section translates the methodological specification into a named, fundable 
 
 
 **Geographic variation:** 2 geographic locations sampled where feasible (one US east coast, one US west coast; expansion to international locations in subsequent phase)
-#
-
-## §12.2 Infrastructure and Cost
+### §12.2 Infrastructure and Cost
 
 
 Component
@@ -1253,17 +1157,13 @@ $500
 
 
 These figures are estimates suitable for proposal scope; actual costs vary by institutional context, regional labor costs, and infrastructure choices. The estimates assume the Crimson Hexagonal Archive's existing Zenodo deposit infrastructure for publication-event bridging (no additional DOI infrastructure cost) and the existing SPXI Protocol implementation for provenance metadata.
-#
-
-## §12.3 Timeline
+### §12.3 Timeline
 
 - **Weeks 1–4 (Calibration).** Catalog finalization with all 24 nodes' IOB capture and RCM construction. Methodology calibration: per-surface within-interval variance characterization, power analysis re-evaluation, statistical framework versioning. Tools development: dashboard scaffolding, capture pipeline, diff visualization MVP.
 - **Weeks 5–16 (Observation).** Weekly observation cycles. Curatorial review per cycle. Drift findings logged. Quarterly methodology updates as needed.
 - **Weeks 17–20 (Analysis and reporting).** Full statistical analysis. Drift report drafting. Methodology revision log. Public dashboard finalization. Pilot findings deposit (DOI-anchored).
 
-#
-
-## §12.4 Deliverables
+### §12.4 Deliverables
 
 
 The pilot's named deliverables:
@@ -1275,9 +1175,7 @@ The pilot's named deliverables:
 - **Power analysis report.** Calibrated power table from the pilot data, specifying for each (node category, surface, expected effect size) the required sample size and observation duration for adequate detection in subsequent expanded operation.
 - **Federation invitation.** The pilot establishes the methodology, the dashboard tooling, and the deposit pattern. Invitation to additional federated catalogs (legal-historical, scientific-consensus, civic-concepts) follows pilot completion.
 
-#
-
-## §12.5 Sustainability Beyond Pilot
+### §12.5 Sustainability Beyond Pilot
 
 
 After the pilot, sustainability depends on:
@@ -1296,33 +1194,25 @@ The pilot is not the long-term institutional structure; it is the methodology va
 
 
 Stabilized Node Watch occupies a specific position in the Meaning Feudalism series's analytical apparatus.
-#
-
-## §13.1 As Observational Instrument
+### §13.1 As Observational Instrument
 
 
 The series's diagnostic deposits (Meaning Feudalism I, II; the Reverse Turing Test) predict that the composition layer is the site of meaning-feudalist enclosure and that its dynamics include both cognitive-rate effects on individual writers (Reverse Turing Test) and surface-level effects on public knowledge access (Meaning Feudalism II's guidance-layer analysis). SNW is the observational instrument that produces the empirical record on which these diagnostic predictions can be tested at the public-knowledge surface.
-#
-
-## §13.2 Distinct From Reverse Turing Test
+### §13.2 Distinct From Reverse Turing Test
 
 
 The Reverse Turing Test (DOI 10.5281/zenodo.20586932) measures cognitive-rate drift in the substrate that produces text (writers, communities, populations). SNW measures surface-level drift in the composition layer that mediates access to text (the rendering surface, downstream of model training and retrieval, where users encounter the output).
 
 
 These are different empirical phenomena at different layers of the system. Cognitive-rate drift could occur without surface drift, if the substrate's mediated output were canceled out by retrieval-side filtering. Surface drift could occur without cognitive-rate drift, if the surface tuning shifted independently of the substrate. The two instruments together characterize the system at both layers. Consistent findings of tail thinning at both layers — RTT documenting it for human writers, SNW documenting it for composition surfaces — would constitute strong evidence for the Meaning Feudalism framework's central predictive claim.
-#
-
-## §13.3 Complementary to Tail-Preserving Alternative
+### §13.3 Complementary to Tail-Preserving Alternative
 
 
 The Tail-Preserving Alternative (DOI 10.5281/zenodo.20587033) specifies what variance-preserving deployment of language models would require. SNW is the observational instrument that would *measure whether* deployed models, current or future, preserve variance at the surface. If the Tail-Preserving Alternative's mechanisms were adopted, SNW would document the surface-level effects across the stabilized node catalog.
 
 
 The relationship is design specification (TPA) and measurement instrument (SNW). Both are necessary for an empirically responsive system.
-#
-
-## §13.4 Extending the Capture Event Observation
+### §13.4 Extending the Capture Event Observation
 
 
 The Composition-Layer Capture Event deposit (DOI 10.5281/zenodo.20587549) documents one unstabilized-node capture instance with the Personal-Recognition Asymmetry as control case. SNW extends the observational scope to *stabilized* nodes — where the interesting empirical question is drift dynamics rather than capture dynamics. The two deposits together cover the spectrum of composition-layer phenomena from acute capture of unstabilized terms to graduated drift on stabilized concepts.

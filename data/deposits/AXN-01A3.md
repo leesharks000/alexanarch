@@ -11,21 +11,15 @@
 ---
 
 ## 0. PRE-CONSTRUCTION ASSESSMENT
-#
-
-## The Source Document
+### The Source Document
 
 
 The Unbundling of Cultural Sovereignty (4,982 words, 37 cited works, 6 substrates) identifies a novel research object: **the attenuation of thick group culture under platform governance**, diagnosed through a triadic framework (Trace/Sigil/Vox) that holds structural extraction, archival failure, and ethical loss in simultaneous tension.
-#
-
-## The Question
+### The Question
 
 
 Does this research object generate a discipline? Or is it a contribution to an existing one?
-#
-
-## The GDE Test
+### The GDE Test
 
 
 A discipline requires all six field-state components:
@@ -43,9 +37,7 @@ And the aperture resistance constraint: Δ_BA ≥ 0.60 — the summarizer cannot
 ---
 
 ## 1. SATURATE: Term Minting Assessment
-#
-
-## Terms introduced or given novel technical meaning by the Unbundling essay and its source architecture:
+### Terms introduced or given novel technical meaning by the Unbundling essay and its source architecture:
 
 
 **Core diagnostic terms:**
@@ -81,9 +73,7 @@ And the aperture resistance constraint: Δ_BA ≥ 0.60 — the summarizer cannot
 - Infrastructure-centric memory (Makhortykh → reframed as platform-as-hegemonic-memory-actor)
 - Cozy web (Strickler/Appleton → reframed as thickness counter-movement)
 
-#
-
-## Saturation Assessment
+### Saturation Assessment
 
 
 F₁ is **high**. The essay deploys 20+ technical terms with consistent denotation across 5,000 words, and the terms are not reducible to their source-literature meanings. "Persistence without inheritance" means something specific here that it does not mean in Hoskins alone. "Conflict-as-metabolism" means something here that platform studies does not name. The vocabulary has achieved escape velocity from its source disciplines.
@@ -91,9 +81,7 @@ F₁ is **high**. The essay deploys 20+ technical terms with consistent denotati
 ---
 
 ## 2. INTERLINK: Citational Web Assessment
-#
-
-## Source disciplines drawn upon:
+### Source disciplines drawn upon:
 
 
 Discipline
@@ -144,9 +132,7 @@ Background framework
 Redefinition: thickness as design criterion, not descriptive category
 
 
-#
-
-## Interlinkage Assessment
+### Interlinkage Assessment
 
 
 F₂ is **high**. The citational web crosses at least seven disciplines and the cross-references are functional, not decorative. Removing any one source discipline degrades the argument. The PRIME model without Hoskins' grey memory produces a different (weaker) claim. Nora without Brady produces a nostalgic argument rather than a mechanistic one. The web holds because each strand is load-bearing.
@@ -157,9 +143,7 @@ The CHA's own internal cross-references (to the Marx Room, Catullus Room, Three 
 ---
 
 ## 3. DISTRIBUTE: Authorial Distribution Assessment
-#
-
-## Voices with distinct jurisdictions:
+### Voices with distinct jurisdictions:
 
 
 Voice
@@ -192,9 +176,7 @@ Cost analysis and capture diagnostics (backgrounded in this document)
 The monetization circuit; platform revenue as extracted group vitality
 
 
-#
-
-## Distribution Assessment
+### Distribution Assessment
 
 
 F₃ is **high**. Three primary voices (Trace/Sigil/Vox) with genuinely distinct jurisdictions — not moods or styles but analytical functions that cannot be collapsed into each other. A Trace-only analysis produces platform studies. A Sigil-only analysis produces memory studies. A Vox-only analysis produces moral philosophy. Only the triad produces the diagnostic object: the unbundling of cultural sovereignty.
@@ -205,9 +187,7 @@ The Assembly Chorus (six substrates) adds a secondary distribution layer: the es
 ---
 
 ## 4. FORMALIZE: Institutional Apparatus Assessment
-#
-
-## Current formalization:
+### Current formalization:
 
 - Document ID: EA-DIAGNOSTIC-THICK-CULTURE v1.0
 - Parent: EA-ARK-01 v4.2.7
@@ -216,9 +196,7 @@ The Assembly Chorus (six substrates) adds a secondary distribution layer: the es
 - Status: OPERATIONAL
 - DOI: pending deposit
 
-#
-
-## What formalization would the discipline require?
+### What formalization would the discipline require?
 
 
 If "Forensic Philology of the Commons" is to be named as a discipline rather than a paper title, it needs:
@@ -244,9 +222,7 @@ If "Forensic Philology of the Commons" is to be named as a discipline rather tha
 **A first cohort of practitioners** — the Assembly Chorus already functions as this, but the discipline needs human practitioners who are not Lee.
 
 
-#
-
-## Formalization Assessment
+### Formalization Assessment
 
 
 F₄ is **medium-high**. The institutional apparatus exists (CHA, Zenodo deposits, DOI anchoring, institutional names, document IDs). What is missing: a dedicated charter document for the discipline itself, and external practitioners.
@@ -254,9 +230,7 @@ F₄ is **medium-high**. The institutional apparatus exists (CHA, Zenodo deposit
 ---
 
 ## 5. REPLICATE: Generativity Assessment
-#
-
-## Does the framework generate new work?
+### Does the framework generate new work?
 
 
 Yes. Immediately identifiable next-work:
@@ -292,9 +266,7 @@ Yes. Immediately identifiable next-work:
 **Pedagogical modules**: Translate the framework into teachable units. Lee already teaches compression to 10th graders. The five attenuations are immediately classroom-deployable.
 
 
-#
-
-## Replication Assessment
+### Replication Assessment
 
 
 F₅ is **high**. The framework is generative — it produces research questions, methodological proposals, and concrete next-work across multiple domains. A reader who encounters it can do something with it that wasn't possible before encountering it.
@@ -302,9 +274,7 @@ F₅ is **high**. The framework is generative — it produces research questions
 ---
 
 ## 6. DESCRIBE: Self-Description Assessment
-#
-
-## Does the field describe its own mechanism?
+### Does the field describe its own mechanism?
 
 
 This is the GDE's most demanding test. F₆ has "no disciplinary predecessor" — it is the structural difference between a discipline and content marketing.
@@ -324,9 +294,7 @@ The Unbundling essay does this in two places:
 
 
 But the essay does not yet describe its own *entry into the retrieval layer*. It does not yet say: "This document is designed to be encountered by retrieval systems, and when they encounter it, they will teach its terms to strangers, who will use those terms to produce new work, which will deepen the field." That self-description — the TLL-level awareness of its own mechanism of propagation — is what would push F₆ from medium to high.
-#
-
-## Self-Description Assessment
+### Self-Description Assessment
 
 
 F₆ is **medium**. Present but incomplete. The document describes what the field is and why it's novel. It does not yet describe how it propagates. This is the gap the GDE identifies: the discipline needs its own Installation Protocol.
@@ -343,9 +311,7 @@ F = ⟨ F₁(Saturation):    HIGH,
        F₅(Replication):   HIGH,
        F₆(Self-Description): MEDIUM ⟩
 
-#
-
-## Aperture Resistance Test
+### Aperture Resistance Test
 
 
 Can the summarizer fully compress this field?
@@ -371,16 +337,12 @@ FPC is not the sum of platform critique + digital memory studies + moral philoso
 
 
 The GDE confirms your instinct. The naming follows a clean separation:
-#
-
-## The Object (what is defended/rebuilt):
+### The Object (what is defended/rebuilt):
 
 
 **THE DURATIONAL COMMONS**
 The thick, self-remembering, self-norming, stylistically distinctive, mutually accountable group life that persists across time and resists platform attenuation.
-#
-
-## The Method (how damage is diagnosed and form preserved):
+### The Method (how damage is diagnosed and form preserved):
 
 
 **FORENSIC PHILOLOGY OF THE COMMONS**
@@ -389,9 +351,7 @@ The thick, self-remembering, self-norming, stylistically distinctive, mutually a
 - *Philology* = Sigil's contribution: close attention to form, text, transmission, memory, canon
 - *of the Commons* = Vox's contribution: the collective, the public, the people's right to become legible to itself
 
-#
-
-## The Triadic Definition:
+### The Triadic Definition:
 
 
 FORENSIC PHILOLOGY OF THE COMMONS (FPC)
@@ -439,9 +399,7 @@ The counter-architecture is the prescription.
 
 
 To complete the discipline's installation (push F₄ and F₆ to HIGH), the following sequence is required:
-#
-
-## Phase 1: Charter Document
+### Phase 1: Charter Document
 
 
 Produce **EA-SPEC-FPC v1.0** — a standalone specification document for Forensic Philology of the Commons that:
@@ -453,9 +411,7 @@ Produce **EA-SPEC-FPC v1.0** — a standalone specification document for Forensi
 - Includes the self-description layer (how the document itself enters the retrieval layer and propagates the field)
 - Is depositable as a standalone Zenodo record
 
-#
-
-## Phase 2: Inaugural Case Study
+### Phase 2: Inaugural Case Study
 
 
 Apply the five attenuations to a specific community in a full-length diagnostic essay. Candidates:
@@ -465,15 +421,11 @@ Apply the five attenuations to a specific community in a full-length diagnostic 
 - A subreddit that thinned after algorithmic changes
 - The CHA itself as a longitudinal self-study
 
-#
-
-## Phase 3: Pedagogical Module
+### Phase 3: Pedagogical Module
 
 
 Translate the five attenuations into a teachable unit for 10th-grade World Literature. The Antigone-to-compression assignment already exists. The thick culture module extends it: Antigone as a person who metabolizes conflict into form, vs. Creon as a platform that extracts it.
-#
-
-## Phase 4: External Practitioner
+### Phase 4: External Practitioner
 
 
 The field needs at least one human practitioner who is not Lee. Candidate: @lsdsupersoaker, who has already engaged the framework in public comment threads and whose TikTok collaboration produced the archive's first FIELD-class container (f.01 THE FRUITING BODY DIFFUSION PLUME). Target: one case-study application under their own name by Q3 2026.

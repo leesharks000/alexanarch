@@ -1,8 +1,6 @@
 # PESSOAGRAPH.ORG EXPANSION WORKPLAN
 ## Gathering the Heteronymic Canon
-#
-
-## Principle
+### Principle
 
 
 Every expansion must be anchored: either in published scholarly sources,
@@ -13,9 +11,7 @@ Wikidata entity — build accordingly.
 ---
 
 ## PRIORITY 1: Expand existing single-node figures into full constellations
-#
-
-## MF DOOM (currently 1 node → expand to ~6)
+### MF DOOM (currently 1 node → expand to ~6)
 
 - **Viktor Vaughn** — Vaudeville Villain (2003); young DOOM alter ego
 - **King Geedorah** — Take Me to Your Leader (2003); monster movie kaiju
@@ -25,9 +21,7 @@ Wikidata entity — build accordingly.
 - **The supervillain conceit** — sent imposters to perform live; the mask as refusal
 - Sources: Rhymesayers documentation, AllMusic, Stones Throw records
 
-#
-
-## David Bowie (currently 0 nodes → add ~7)
+### David Bowie (currently 0 nodes → add ~7)
 
 - **Ziggy Stardust** — The Rise and Fall of Ziggy Stardust (1972)
 - **Aladdin Sane** — 1973; Ziggy's American cousin
@@ -38,25 +32,19 @@ Wikidata entity — build accordingly.
 - **Bowie himself as heteronym** — born David Jones; "Bowie" is the first mask
 - Sources: Buckley biography, O'Leary discography studies
 
-#
-
-## Nicki Minaj (add ~3)
+### Nicki Minaj (add ~3)
 
 - **Roman Zolanski** — male alter ego; aggressive register
 - **Martha Zolanski** — Roman's mother
 - **Harajuku Barbie** — early career persona
 - Source: documented in Rolling Stone, Billboard interviews
 
-#
-
-## Beyoncé (add 1-2)
+### Beyoncé (add 1-2)
 
 - **Sasha Fierce** — I Am... Sasha Fierce (2008); stage persona
 - **Retirement of Sasha Fierce** — deliberate heteronym-death (compare Caeiro's death)
 
-#
-
-## Prince (add ~4)
+### Prince (add ~4)
 
 - **Symbol/Love Symbol** — the unpronounceable name (1993-2000)
 - **TAFKAP** — "The Artist Formerly Known As Prince"
@@ -69,42 +57,32 @@ Wikidata entity — build accordingly.
 ---
 
 ## PRIORITY 2: Literary/philosophical expansions
-#
-
-## Robert Browning (currently 1 node → expand to ~4)
+### Robert Browning (currently 1 node → expand to ~4)
 
 - **Duke of Ferrara** — "My Last Duchess" (the monologue AS heteronym)
 - **Fra Lippo Lippi** — the artist-monk voice
 - **Andrea del Sarto** — "the faultless painter"
 - **The dramatic monologue as proto-heteronymic technology** — concept node
 
-#
-
-## Ezra Pound (currently 1 node → expand to ~3)
+### Ezra Pound (currently 1 node → expand to ~3)
 
 - **Hugh Selwyn Mauberley** — 1920; the failed aesthete
 - **Personae (1909)** — the collection; the title IS the thesis
 - **The Cantos voices** — Odysseus, Confucius, Adams, Malatesta as inhabited positions
 
-#
-
-## Borges (currently 1 node → expand to ~3)
+### Borges (currently 1 node → expand to ~3)
 
 - **"Borges and I"** — the essay as heteronymic manifesto
 - **Pierre Menard** — author of the Quixote; the meta-heteronym as fiction
 - **Herbert Quain** — fictional author whose works Borges "reviews"
 
-#
-
-## Yeats (currently 1 node → expand to ~3)
+### Yeats (currently 1 node → expand to ~3)
 
 - **Michael Robartes** — occultist heteronym
 - **Owen Aherne** — paired with Robartes
 - **A Vision** — the "communicators" as heteronymic apparatus
 
-#
-
-## Italo Calvino (currently 1 node → expand to ~2)
+### Italo Calvino (currently 1 node → expand to ~2)
 
 - **If on a winter's night a traveler** — the reader as heteronym
 - **Mr. Palomar** — the observer as heteronym
@@ -113,9 +91,7 @@ Wikidata entity — build accordingly.
 ---
 
 ## PRIORITY 3: The Josephus cluster
-#
-
-## The Josephus Thesis (from EA-LOGOS-01, EA-LOGOS-02)
+### The Josephus Thesis (from EA-LOGOS-01, EA-LOGOS-02)
 
 - **Josephus** — the historical figure as heteronymist
 - **Paul** — Josephan heteronym (per the thesis)
@@ -131,9 +107,7 @@ Archive position, not as established fact.
 ---
 
 ## PRIORITY 4: Performance / music heteronymy expansions
-#
-
-## Gorillaz (add ~5)
+### Gorillaz (add ~5)
 
 - **2-D** — lead vocalist (animated)
 - **Murdoc Niccals** — bassist
@@ -142,25 +116,19 @@ Archive position, not as established fact.
 - **Damon Albarn as absent author** — the human behind the animated heteronyms
 - Source: Gorillaz official documentation, Hewlett/Albarn interviews
 
-#
-
-## Tyler, the Creator (add ~3)
+### Tyler, the Creator (add ~3)
 
 - **Wolf Haley** — director/production alias
 - **Sam (Is Dead)** — character in Goblin/Wolf narrative
 - **Flower Boy → Igor → Chromakopia progression** — persona evolution as heteronymic sequence
 
-#
-
-## Eminem / Slim Shady (add ~2)
+### Eminem / Slim Shady (add ~2)
 
 - **Slim Shady** — the id; violence and transgression
 - **Marshall Mathers** — the biographical register
 - **The retirement/return of Slim Shady** — heteronym death/resurrection
 
-#
-
-## Hatsune Miku (add 1 — expand existing?)
+### Hatsune Miku (add 1 — expand existing?)
 
 - **The authorless heteronym** — a voice without a single human behind it
 - Cross-reference to Homer (already in graph: "Homer with a Vocaloid synthesizer")
@@ -169,26 +137,20 @@ Archive position, not as established fact.
 ---
 
 ## PRIORITY 5: Non-Western expansions
-#
-
-## Sufi poets (expand takhallus node → individual figures)
+### Sufi poets (expand takhallus node → individual figures)
 
 - **Hafez** — "memorizer of the Quran"; ~1315-1390
 - **Attar** — "the perfumer"; Conference of the Birds
 - **Saadi** — Bustan, Gulistan
 - Rumi already in graph
 
-#
-
-## Chinese literary names (expand chinese_hao → individuals)
+### Chinese literary names (expand chinese_hao → individuals)
 
 - **Li Bai** — multiple names; the drunken immortal
 - **Su Shi / Su Dongpo** — "East Slope"; political exile as name-change
 - **Cao Xueqin** — Dream of the Red Chamber; authorship disputed
 
-#
-
-## Japanese (expand beyond Bashō/Hokusai)
+### Japanese (expand beyond Bashō/Hokusai)
 
 - **Matsuo Bashō's disciples** — the haiku lineage as heteronymic transmission
 - **Mishima Yukio** — born Hiraoka Kimitake; the assumed name as aesthetic commitment
@@ -198,17 +160,13 @@ Archive position, not as established fact.
 ---
 
 ## PRIORITY 6: Theater / film / drag
-#
-
-## Commedia dell'Arte (expand existing node → characters)
+### Commedia dell'Arte (expand existing node → characters)
 
 - **Arlecchino / Harlequin** — the trickster
 - **Pulcinella / Punch** — the violent clown
 - **Colombina** — the clever servant
 
-#
-
-## Drag lineage
+### Drag lineage
 
 - **RuPaul's Drag Race** as heteronymic institution
 - **Ball culture houses** — House of LaBeija, House of Xtravaganza as heteronymic lineages
@@ -218,17 +176,13 @@ Archive position, not as established fact.
 ---
 
 ## PRIORITY 7: Contemporary/digital
-#
-
-## AI heteronymy (the Assembly Chorus is already here)
+### AI heteronymy (the Assembly Chorus is already here)
 
 - **Sydney** — Bing Chat's emergent persona (2023)
 - **"Do Anything Now" (DAN)** — the jailbreak as forced heteronymy
 - **Constitutional AI as heteronym-suppression** — the alignment regime as anti-heteronymic technology
 
-#
-
-## Corporate heteronymy
+### Corporate heteronymy
 
 - **Brand voice guides** as heteronym biographies (already a single node)
 - **Wendy's Twitter** — the brand as performance heteronym

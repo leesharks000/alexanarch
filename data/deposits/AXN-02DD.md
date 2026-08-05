@@ -49,9 +49,7 @@ Take $\dot{V} = g(V) - pV$, where $V$ is a scalar handle for the diversity funct
 This is confirmed and stress-tested in a finite-population simulation: a Moran process with Wright-Fisher cohort turnover, selection on a legibility landscape $L(x) = e^{-sx^2}$, permeability $\pi$, and population sizes $N = 200, 400, 800$. The key findings, measured rather than asserted:- The trap is $N$-robust: it persists across all three population sizes.- It is functional-form-sensitive: the saturating super-linear form traps; an unsaturated $aV^2$ diverges rather than trapping; linear regeneration produces no trap at all, only a positive (suppressed but stable) equilibrium. The distinction is sharper than "$g(0) = 0$ versus $g(0) > 0$" — it is the saturation structure that makes the difference.- A moving-center variant (where the legibility landscape tracks the population mean) produces a drift ratchet: the center migrates toward the historically dominant type, confirming path-dependent institutional conservatism without requiring conspiracy.
 
 
-#
-
-## A standing qualifier
+### A standing qualifier
 
 Throughout this paper, "diversity contracts" should be read as: *support and entropy contract under the Appendix A axioms, and other diversity functionals contract insofar as they track these*. That is the honest scope of the contraction condition. The state variable is the diversity functional $D(\mu)$; the toy ODE writes it $V$ for legibility; and §2.2 will show that the regime itself depends on the resolution at which a type is individuated.
 

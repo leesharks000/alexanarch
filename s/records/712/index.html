@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>THE BOOK OF LIFE How Embeddings and Footnotes Work in The Secret Book of Walt — Alexanarch</title><meta name="description" content="Read this before modifying ANY text rendering in the SBoW codebase. It is a 2,327-word archive work by TACHYON (Claude/Anthropic), dated 2026-04-29."><meta property="og:title" content="THE BOOK OF LIFE How Embeddings and Footnotes Work in The Secret Book of Walt"><meta property="og:description" content="Read this before modifying ANY text rendering in the SBoW codebase. It is a 2,327-word archive work by TACHYON (Claude/Anthropic), dated 2026-04-29."><meta property="og:url" content="https://www.alexanarch.org/s/records/712/"><meta property="og:type" content="article"><meta property="og:site_name" content="Alexanarch"><meta name="twitter:card" content="summary"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "THE BOOK OF LIFE How Embeddings and Footnotes Work in The Secret Book of Walt", "headline": "THE BOOK OF LIFE How Embeddings and Footnotes Work in The Secret Book of Walt", "author": {"@type": "Person", "name": "TACHYON (Claude/Anthropic)"}, "datePublished": "2026-04-29", "dateModified": "2026-08-05", "identifier": "AXN:0259.ARCHIVAL.🧱🟡⊗♄♋🧪", "description": "Read this before modifying ANY text rendering in the SBoW codebase.", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "the architecture document, the critical early return, check the footnote count, the disambiguation rule, the global footnote map, how the layers connect, the terms dictionary, from the repo root:", "url": "https://www.alexanarch.org/s/records/712/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.alexanarch.org/s/records/712/"}, "inLanguage": "en", "isPartOf": {"@type": "Collection", "name": "Alexanarch", "url": "https://www.alexanarch.org/"}, "creativeWorkStatus": "canonical_full_text", "conditionsOfAccess": "Open access; complete canonical text embedded in this page and its structured data.", "sameAs": ["https://doi.org/10.5281/zenodo.19895668", "https://doi.org/10.5281/zenodo.19895669"], "articleBody": "THE BOOK OF LIFE\nHow Embeddings and Footnotes Work in The Secret Book of Walt\n\n Read this before modifying ANY text rendering in the SBoW codebase. \n This file is for Lee Sharks and for any AI instance that works on this code. \n\nLast updated: 2026-04-28 by TACHYON\n \nTHE THREE LAYERS\n\nThe site renders text through three layers stacked on top of each other.\nEvery piece of body text passes through all three, in this order:\n\nRAW TEXT (from JSON data file)\n ↓\n LAYER 1: FOOTNOTES (footnotes.js + footnotes.jsx)\n Scans for superscript markers (¹²³)\n Makes them clickable (veil mode) or styled-but-passive (pierce mode)\n ↓\n LAYER 2: EMPHASIS (inside LinkedText, in App.jsx)\n Converts italic → <em and bold → <strong \n ↓\n LAYER 3: GLOSSARY LINKS (inside LinkedText, in App.jsx)\n Scans for terms from the TERMS dictionary\n Wraps them in blue <a tags that link to Google/Wikipedia/custom URLs\n ↓\nRENDERED HTML (what the reader sees)\n\n THE CRITICAL RULE: Every layer must pass text through to the next layer.\nIf any layer returns raw text instead of calling the next layer's function,\neverything downstream breaks silently — no error, just missing features.\n\nThis is how the glossary links disappeared: Layer 2 (emphasis) had an\nearly return that skipped Layer 3 (glossary). The footnotes still worked\nbecause they're Layer 1. The emphasis still worked because it's Layer 2.\nBut all blue links vanished because Layer 3 was never called.\n \nWHERE THINGS LIVE\nThe Data Files (what gets rendered)\n\nFile\nWhat's in it\nHow it's built\n\npublic/walt full data.json\nAll of Walt — every section, paragraph, footnote. 158 footnotes numbered 1-158 in reading order.\nBuilt by scripts/build walt data.py from scripts/walt source.md\n\npublic/walt gospel versed.json\nThe gospel in verse-by-verse format (numbered sayings with verse references). Used for the reading spine's verse view.\nPre-existing; not rebuilt by the script\n\npublic/antioch gospel data.json\nAll of Antioch — 3 front matter + 8 chapters + 13 back matter. 19 footnotes numbered 1-19 in reading order.\nBuilt by scripts/build antioch data.py from scripts/antioch source.md\n\n To change what text appears: Edit the source markdown in scripts/,\nthen re-run the build script. Or edit the JSON directly (for small fixes).\n\n To change how text renders: Edit src/App.jsx (Walt) or src/Antioch.jsx.\nThe Rendering Code\n\nFile\nWhat it does\nWhat it contains\n\nsrc/App.jsx\nWalt's entire reading interface\nLinkedText (Layer 2+3), Leaf, SectionContent, Verse, GospelSection, TERMS dictionary, TERM REGEX\n\nsrc/Antioch.jsx\nAntioch's entire reading interface\nSectionRenderer, ChapterSection, Verse, uses LinkedText from App.jsx\n\nsrc/footnotes.js\nPure JS: footnote scanning + disambiguation\nbuildGlobalFnMap, splitTextWithFootnotes, hasFootnoteMarkers\n\nsrc/footnotes.jsx\nReact: footnote rendering components\nFootnotedText (Layer 1), InlineFootnote (popup body)\nThe Architecture Document\n\nFile\nWhat it is\n\ndocs/FOOTNOTES.md\nLoad-bearing spec for the footnote system. Read before touching footnotes.\n\n This file (docs/BOOK OF LIFE.md)\nHow all three layers connect. Read before touching ANY rendering.\n \nLAYER 1: FOOTNOTES\nWhat it does\n\nScans body text for Unicode superscript characters (¹²³⁴⁵⁶⁷⁸⁹⁰) and\neither makes them clickable (veil mode) or styles them as passive blue\nmarkers (pierce mode).\nThe disambiguation rule\n\n NOT every superscript is a footnote. In codicological tables, G⁴⁶\nmeans \"Golden Ticket 46\" — that's a label, not a footnote reference.\n\nThe rule: a superscript run is a footnote only if it is NOT immediately\npreceded by a letter (A-Z, a-z). So:\n\n- catalogue.³ → footnote ✓ (preceded by .)\n- G⁴⁶ → NOT a footnote ✗ (preceded by G)\n- text\"¹³⁸ → footnote ✓ (preceded by \")\nHow it flows\n\nBody text: \"The description is heavier than gold.¹³⁸ Individual copies vary.\"\n\nsplitTextWithFootnotes() breaks this into:\n [\n { type: 'text', content: 'The description is heavier than gold.' },\n { type: 'fn', id: '¹³⁸' },\n { type: 'text', content: ' Individual copies vary.' }\n ]\n\nFootnotedText component renders each piece:\n - text pieces → passed to Layer 2+3 via linkText prop\n - fn pieces → rendered as blue superscript spans (clickable in veil)\nThe global footnote map\n\nBuilt once at page load by buildGlobalFnMap(data). Walks every section\nand collects all footnote-type paragraphs into a lookup table:\n\n{\n '¹': { id: '¹', body: 'Sharks, L. (2015)…', sectionKey: 'manuscripts' },\n '²': { id: '²', body: 'The parallel to…', sectionKey: 'manuscripts' },\n ...\n '¹³⁸': { id: '¹³⁸', body: 'The description…', sectionKey: 'introduction' },\n ...\n '¹⁵⁸': { id: '¹⁵⁸', body: '…', sectionKey: 'appendix k' }\n}\n\nWhen a reader clicks ¹³⁸, the popup looks up globalFnMap['¹³⁸'] and\nshows the body text below the paragraph.\nFiles involved\n\n- src/footnotes.js — the scanner and map builder (pure JS, no React)\n- src/footnotes.jsx — the React renderer (FootnotedText + InlineFootnote)\n \nLAYER 2: EMPHASIS\nWhat it does\n\nConverts markdown emphasis markers to HTML:\n\n- text → text (italic, <em )\n- text → text (bold, <strong )\nWhere it lives\n\nInside LinkedText in src/App.jsx, in the processEmphasis() function.\nHow it flows\n\nInput: \" August 2015 (translated) / 2037 (discovered) \"\nOutput: <em August 2015 (translated) / 2037 (discovered)</em \n\nInput: \" The Editors, Pergamon Press \"\nOutput: <strong The Editors, Pergamon Press</strong \n\nInput: \"No asterisks in this text at all.\"\nOutput: \"No asterisks in this text at all.\" (passed straight to Layer 3)\nTHE CRITICAL EARLY RETURN\n\nif (!t !t.includes(\" \")) return [linkifyText(t)];\n// ^^^^^^^^^^^^\n// MUST call linkifyText, not just return [t]\n// If you return [t], Layer 3 is skipped and\n// all glossary links disappear.\n\n This is the line that broke the glossary links. It was return [t]\n(raw string, no linking). Fixed to return [linkifyText(t)] (glossary-linked).\n \nLAYER 3: GLOSSARY LINKS (EMBEDDINGS)\nWhat it does\n\nScans text for terms from the TERMS dictionary and wraps matches in\nblue <a tags. These are the \"embeddings\" — the blue links that turn\nbody text into a navigable index of AI Overview and search nodes.\nWhere it lives\n\nInside LinkedText in src/App.jsx, in the linkifyText() function.\nThe TERMS dictionary and TERM REGEX are defined earlier in the same file.\nThe TERMS dictionary\n\nLocated at approximately line 1249 of src/App.jsx. It looks like this:\n\nconst TERMS = {\n \"Crimson Hexagonal Archive\": { q: \"crimson hexagonal archive\" },\n \"Deep Web\": { w: \"Deep web\" },\n \"Jack Feist\": { q: \"jack feist secret book of walt\" },\n \"Lee Sharks\": { q: \"lee sharks\" },\n \"Secret Book of Walt\": { q: \"secret book of walt\" },\n \"Nag Hammadi\": { w: \"Nag Hammadi library\" },\n \"Apocryphon of John\": { w: \"Apocryphon of John\" },\n \"hologrammatic\": { q: \"\\\"Holographic Kernel\\\"\" },\n ...\n};\n\nEach entry maps a term to a link target:\n\n- { w: \"Page Name\" } → links to en.wikipedia.org/wiki/Page Name\n- { q: \"search terms\" } → links to google.com/search?q=search+terms\n- { u: \"https://...\" } → links to a custom URL\nHow to ADD a new embedding\n\nAdd a line to the TERMS dictionary:\n\n\"My New Term\": { q: \"my new term\" },\n\nThat's it. Every occurrence of \"My New Term\" in the body text will\nautomatically become a blue link.\nHow to CHANGE where a link goes\n\nFind the entry in TERMS and change the target:\n\n// Before (links to Google search with quotes):\n\"Secret Book of Walt\": { q: \"\\\"secret book of walt\\\"\" },\n\n// After (links to Google search without quotes):\n\"Secret Book of Walt\": { q: \"secret book of walt\" },\nHow to REMOVE an embedding\n\nDelete the line from TERMS. The term will render as plain text.\nHow matching works\n\nThe TERM REGEX is built from all the keys in TERMS, joined with .\nIt's a global regex that scans the text left to right. When it finds a\nmatch, it wraps the matched text in an <a tag. It also extends the\nmatch to include trailing word characters and possessives ('s).\nTERMS count\n\nCurrently 109 entries. To verify:\n\ngrep -c '\":\\s {' src/App.jsx # approximate count\n \nHOW THE LAYERS CONNECT\nIn SectionContent (Walt front/back matter — src/App.jsx)\n\nData paragraph → FootnotedText component\n ↓\n [splits into text + fn parts]\n ↓\n text parts → linkText prop → LinkedText\n ↓\n processEmphasis\n ↓\n linkifyText (TERMS)\n ↓\n rendered <a tags\n fn parts → blue superscript (clickable in veil)\n\nThe linkText prop is the bridge between Layer 1 and Layers 2+3.\nIt's defined as: const linkText = (s) = <LinkedText text={s} / \n\n If FootnotedText doesn't call linkText for a text part, Layers 2+3\nare skipped for that text. This is the second place links can break. \nIn Verse (Walt gospel — src/App.jsx)\n\nThe Verse component has its OWN inline rendering that doesn't use\nFootnotedText. It scans for superscripts directly and renders them.\nGlossary linking in verses goes through a separate path.\nIn Leaf (Walt — used in a few places)\n\nLeaf wraps text in <LinkedText . It does NOT use FootnotedText.\nThis means Leaf has glossary links (Layer 3) and emphasis (Layer 2)\nbut NO clickable footnotes (Layer 1). This is correct — Leaf is used\nfor hardcoded prose that doesn't have footnotes.\nIn SectionRenderer (Antioch — src/Antioch.jsx)\n\nSame pattern as Walt's SectionContent:\n\nData paragraph → FootnotedText\n ↓\n text parts → linkText → LinkedText (from App.jsx)\n fn parts → blue superscript\n\nAntioch imports LinkedText from App.jsx, so it uses the same TERMS\ndictionary and the same emphasis + linking logic.\n \nTHE FRAGILE POINTS (where things break)\n1. The LinkedText early return\n\n File: src/App.jsx, inside processEmphasis()\n Line: if (!t !t.includes(\" \")) return [linkifyText(t)];\n Risk: If someone changes this to return [t], all glossary links\ndisappear from text without asterisks. This has happened once already.\n2. The FootnotedText linkText delegation\n\n File: src/footnotes.jsx, inside FootnotedText\n Risk: If someone adds a conditional that skips linkText for certain\ntext (like text with emphasis markers), glossary links disappear for those\nparagraphs. This has also happened.\n Rule: When linkText is provided, ALWAYS use it. No conditions.\n3. The TERMS dictionary key ordering\n\n File: src/App.jsx, the TERMS object\n Risk: If a shorter term is a substring of a longer term (e.g., \"Walt\"\nis inside \"Secret Book of Walt\"), the regex may match the shorter one first.\nThe regex builder sorts by length (longest first) to prevent this, but\nadding new terms that are substrings of existing terms needs care.\n4. The build scripts overwriting the JSON\n\n Files: scripts/build walt data.py, scripts/build antioch data.py\n Risk: Re-running the build script regenerates the entire JSON data file\nfrom the source markdown. Any manual edits to the JSON will be lost.\n Rule: If you edit the JSON directly, note what you changed. If you\nre-run the build script later, you'll need to re-apply manual edits.\n5. The Verse component's separate footnote path\n\n File: src/App.jsx, function Verse\n Risk: The Verse component has its own footnote scanning that's separate\nfrom FootnotedText. Changes to FootnotedText don't affect Verse, and vice\nversa. This is intentional (Verse renders differently) but means footnote\nchanges need to be applied in both places.\n \nHOW TO INSPECT WHAT'S DEPLOYED\nCheck the current TERMS dictionary\nFrom the repo root:\ngrep -A1 '\"[A-Z]' src/App.jsx grep -B1 '{' head -40\n\nThis shows the first ~20 term entries and their link targets.\nCheck the footnote count\n\npython3 -c \"\nimport json\nwith open('public/walt full data.json') as f:\n d = json.load(f)\ncount = 0\nfor k, v in d.items():\n if isinstance(v, dict):\n for p in v.get('paragraphs', []):\n if p.get('type') == 'footnote': count += 1\nprint(f'Total footnote definitions: {count}')\n\"\nVerify glossary links will render\nBuild the site and check that LinkedText produces <a tags:\nnpm run build\nThe built JS file is in dist/assets/index- .js\nSearch for a known TERMS entry to confirm it's embedded:\ngrep -c \"Nag Hammadi\" dist/assets/index- .js\nShould return 0\nCheck what the reader actually sees\n\nOpen the deployed site, right-click any body text paragraph, and\n\"Inspect Element.\" Blue-linked terms should be <a tags with\nstyle=\"color: rgb(106, 159, 216)\". If they're plain text, the\nglossary layer is broken.\n \nINSTRUCTIONS FOR FUTURE CLAUDE INSTANCES\n\nIf Lee asks you to modify text rendering in The Secret Book of Walt:\n\n- Read docs/FOOTNOTES.md first. It explains the footnote system.\n- Read this file (docs/BOOK OF LIFE.md) first. It explains how\nthe three layers connect.\n- Do NOT rewrite LinkedText. It has been rewritten twice already and\nboth times broke the glossary links. If you need to change emphasis\nhandling, change it INSIDE the existing processEmphasis function\nwithout altering the early return or the linkifyText calls.\n- Do NOT add conditionals to FootnotedText that skip the linkText\nprop. When linkText is provided, always use it.\n- Test all three layers after any change: \n\nAre footnotes still clickable in veil mode? (Layer 1)\n- Do italic and bold render correctly? (Layer 2)\n- Are glossary terms still blue and linked? (Layer 3)\n\n- Build before committing. npm run build — if it fails, don't push.\n \nQUICK REFERENCE: \"I WANT TO...\"\n\nTask\nWhat to edit\nFile\n\nAdd a new glossary term\nAdd entry to TERMS dict\nsrc/App.jsx ~line 1249\n\nChange where a glossary link goes\nEdit the entry in TERMS\nsrc/App.jsx ~line 1249\n\nRemove a glossary term\nDelete the entry from TERMS\nsrc/App.jsx ~line 1249\n\nFix a typo in Walt body text\nEdit the paragraph in the JSON\npublic/walt full data.json\n\nFix a typo permanently\nEdit source MD + re-run script\nscripts/walt source.md + build walt data.py\n\nAdd a new footnote to Walt\nAdd to source MD + re-run\nscripts/walt source.md + build walt data.py\n\nChange footnote numbering\nRe-run the build script\nscripts/build walt data.py (handles numbering)\n\nFix Antioch body text\nEdit the JSON or source\npublic/antioch gospel data.json or scripts/\n\nChange footnote popup styling\nEdit InlineFootnote\nsrc/footnotes.jsx\n\nChange footnote marker color\nEdit FN BLUE constant\nsrc/footnotes.jsx line 19\n\nChange veil/pierce behavior\nEdit FootnotedText\nsrc/footnotes.jsx\n \nMAINTENANCE LOG\n\nDate\nWhat changed\nWho\nWhat broke (if anything)\n\n2026-04-28\nUniversal footnote system (Layer 1)\nTACHYON\nNothing — new code\n\n2026-04-28\nData rebuild (renumbering, quotes, asterisks)\nTACHYON\nNothing — data layer\n\n2026-04-28\nEmphasis added to LinkedText (Layer 2)\nTACHYON\n Broke Layer 3 — processEmphasis returned raw text instead of calling linkifyText\n\n2026-04-28\nFix: return [t] → return [linkifyText(t)]\nTACHYON\nNothing — one-line fix\n\n2026-04-28\nFix: FootnotedText always delegates to linkText\nTACHYON\nNothing — restores Layer 3\n\nWhen you change rendering code, add a row to this table. \n \n∮ = 1", "wordCount": 2320, "encoding": {"@type": "MediaObject", "contentUrl": "https://www.alexanarch.org/data/texts/AXN-0259-text.md", "encodingFormat": "text/markdown", "contentSize": "16082"}}</script>
+<title>THE BOOK OF LIFE How Embeddings and Footnotes Work in The Secret Book of Walt — Alexanarch</title><meta name="description" content="Read this before modifying ANY text rendering in the SBoW codebase. It is a 2,327-word archive work by TACHYON (Claude/Anthropic), dated 2026-04-29."><meta property="og:title" content="THE BOOK OF LIFE How Embeddings and Footnotes Work in The Secret Book of Walt"><meta property="og:description" content="Read this before modifying ANY text rendering in the SBoW codebase. It is a 2,327-word archive work by TACHYON (Claude/Anthropic), dated 2026-04-29."><meta property="og:url" content="https://www.alexanarch.org/s/records/712/"><meta property="og:type" content="article"><meta property="og:site_name" content="Alexanarch"><meta name="twitter:card" content="summary"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "THE BOOK OF LIFE How Embeddings and Footnotes Work in The Secret Book of Walt", "headline": "THE BOOK OF LIFE How Embeddings and Footnotes Work in The Secret Book of Walt", "author": {"@type": "Person", "name": "TACHYON (Claude/Anthropic)"}, "datePublished": "2026-04-29", "dateModified": "2026-08-05", "identifier": "AXN:0259.ARCHIVAL.🧱🟡⊗♄♋🧪", "description": "Read this before modifying ANY text rendering in the SBoW codebase.", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "the architecture document, the critical early return, check the footnote count, the disambiguation rule, the global footnote map, how the layers connect, the terms dictionary, from the repo root:", "url": "https://www.alexanarch.org/s/records/712/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.alexanarch.org/s/records/712/"}, "inLanguage": "en", "isPartOf": {"@type": "Collection", "name": "Alexanarch", "url": "https://www.alexanarch.org/"}, "creativeWorkStatus": "canonical_full_text", "conditionsOfAccess": "Open access; complete canonical text embedded in this page and its structured data.", "sameAs": ["https://doi.org/10.5281/zenodo.19895668", "https://doi.org/10.5281/zenodo.19895669"], "articleBody": "THE BOOK OF LIFE\nHow Embeddings and Footnotes Work in The Secret Book of Walt\n\n Read this before modifying ANY text rendering in the SBoW codebase. \n This file is for Lee Sharks and for any AI instance that works on this code. \n\nLast updated: 2026-04-28 by TACHYON\n \nTHE THREE LAYERS\n\nThe site renders text through three layers stacked on top of each other.\nEvery piece of body text passes through all three, in this order:\n\nRAW TEXT (from JSON data file)\n ↓\n LAYER 1: FOOTNOTES (footnotes.js + footnotes.jsx)\n Scans for superscript markers (¹²³)\n Makes them clickable (veil mode) or styled-but-passive (pierce mode)\n ↓\n LAYER 2: EMPHASIS (inside LinkedText, in App.jsx)\n Converts italic → <em and bold → <strong \n ↓\n LAYER 3: GLOSSARY LINKS (inside LinkedText, in App.jsx)\n Scans for terms from the TERMS dictionary\n Wraps them in blue <a tags that link to Google/Wikipedia/custom URLs\n ↓\nRENDERED HTML (what the reader sees)\n\n THE CRITICAL RULE: Every layer must pass text through to the next layer.\nIf any layer returns raw text instead of calling the next layer's function,\neverything downstream breaks silently — no error, just missing features.\n\nThis is how the glossary links disappeared: Layer 2 (emphasis) had an\nearly return that skipped Layer 3 (glossary). The footnotes still worked\nbecause they're Layer 1. The emphasis still worked because it's Layer 2.\nBut all blue links vanished because Layer 3 was never called.\n \nWHERE THINGS LIVE\nThe Data Files (what gets rendered)\n\nFile\nWhat's in it\nHow it's built\n\npublic/walt full data.json\nAll of Walt — every section, paragraph, footnote. 158 footnotes numbered 1-158 in reading order.\nBuilt by scripts/build walt data.py from scripts/walt source.md\n\npublic/walt gospel versed.json\nThe gospel in verse-by-verse format (numbered sayings with verse references). Used for the reading spine's verse view.\nPre-existing; not rebuilt by the script\n\npublic/antioch gospel data.json\nAll of Antioch — 3 front matter + 8 chapters + 13 back matter. 19 footnotes numbered 1-19 in reading order.\nBuilt by scripts/build antioch data.py from scripts/antioch source.md\n\n To change what text appears: Edit the source markdown in scripts/,\nthen re-run the build script. Or edit the JSON directly (for small fixes).\n\n To change how text renders: Edit src/App.jsx (Walt) or src/Antioch.jsx.\nThe Rendering Code\n\nFile\nWhat it does\nWhat it contains\n\nsrc/App.jsx\nWalt's entire reading interface\nLinkedText (Layer 2+3), Leaf, SectionContent, Verse, GospelSection, TERMS dictionary, TERM REGEX\n\nsrc/Antioch.jsx\nAntioch's entire reading interface\nSectionRenderer, ChapterSection, Verse, uses LinkedText from App.jsx\n\nsrc/footnotes.js\nPure JS: footnote scanning + disambiguation\nbuildGlobalFnMap, splitTextWithFootnotes, hasFootnoteMarkers\n\nsrc/footnotes.jsx\nReact: footnote rendering components\nFootnotedText (Layer 1), InlineFootnote (popup body)\nThe Architecture Document\n\nFile\nWhat it is\n\ndocs/FOOTNOTES.md\nLoad-bearing spec for the footnote system. Read before touching footnotes.\n\n This file (docs/BOOK OF LIFE.md)\nHow all three layers connect. Read before touching ANY rendering.\n \nLAYER 1: FOOTNOTES\nWhat it does\n\nScans body text for Unicode superscript characters (¹²³⁴⁵⁶⁷⁸⁹⁰) and\neither makes them clickable (veil mode) or styles them as passive blue\nmarkers (pierce mode).\nThe disambiguation rule\n\n NOT every superscript is a footnote. In codicological tables, G⁴⁶\nmeans \"Golden Ticket 46\" — that's a label, not a footnote reference.\n\nThe rule: a superscript run is a footnote only if it is NOT immediately\npreceded by a letter (A-Z, a-z). So:\n\n- catalogue.³ → footnote ✓ (preceded by .)\n- G⁴⁶ → NOT a footnote ✗ (preceded by G)\n- text\"¹³⁸ → footnote ✓ (preceded by \")\nHow it flows\n\nBody text: \"The description is heavier than gold.¹³⁸ Individual copies vary.\"\n\nsplitTextWithFootnotes() breaks this into:\n [\n { type: 'text', content: 'The description is heavier than gold.' },\n { type: 'fn', id: '¹³⁸' },\n { type: 'text', content: ' Individual copies vary.' }\n ]\n\nFootnotedText component renders each piece:\n - text pieces → passed to Layer 2+3 via linkText prop\n - fn pieces → rendered as blue superscript spans (clickable in veil)\nThe global footnote map\n\nBuilt once at page load by buildGlobalFnMap(data). Walks every section\nand collects all footnote-type paragraphs into a lookup table:\n\n{\n '¹': { id: '¹', body: 'Sharks, L. (2015)…', sectionKey: 'manuscripts' },\n '²': { id: '²', body: 'The parallel to…', sectionKey: 'manuscripts' },\n ...\n '¹³⁸': { id: '¹³⁸', body: 'The description…', sectionKey: 'introduction' },\n ...\n '¹⁵⁸': { id: '¹⁵⁸', body: '…', sectionKey: 'appendix k' }\n}\n\nWhen a reader clicks ¹³⁸, the popup looks up globalFnMap['¹³⁸'] and\nshows the body text below the paragraph.\nFiles involved\n\n- src/footnotes.js — the scanner and map builder (pure JS, no React)\n- src/footnotes.jsx — the React renderer (FootnotedText + InlineFootnote)\n \nLAYER 2: EMPHASIS\nWhat it does\n\nConverts markdown emphasis markers to HTML:\n\n- text → text (italic, <em )\n- text → text (bold, <strong )\nWhere it lives\n\nInside LinkedText in src/App.jsx, in the processEmphasis() function.\nHow it flows\n\nInput: \" August 2015 (translated) / 2037 (discovered) \"\nOutput: <em August 2015 (translated) / 2037 (discovered)</em \n\nInput: \" The Editors, Pergamon Press \"\nOutput: <strong The Editors, Pergamon Press</strong \n\nInput: \"No asterisks in this text at all.\"\nOutput: \"No asterisks in this text at all.\" (passed straight to Layer 3)\nTHE CRITICAL EARLY RETURN\n\nif (!t !t.includes(\" \")) return [linkifyText(t)];\n// ^^^^^^^^^^^^\n// MUST call linkifyText, not just return [t]\n// If you return [t], Layer 3 is skipped and\n// all glossary links disappear.\n\n This is the line that broke the glossary links. It was return [t]\n(raw string, no linking). Fixed to return [linkifyText(t)] (glossary-linked).\n \nLAYER 3: GLOSSARY LINKS (EMBEDDINGS)\nWhat it does\n\nScans text for terms from the TERMS dictionary and wraps matches in\nblue <a tags. These are the \"embeddings\" — the blue links that turn\nbody text into a navigable index of AI Overview and search nodes.\nWhere it lives\n\nInside LinkedText in src/App.jsx, in the linkifyText() function.\nThe TERMS dictionary and TERM REGEX are defined earlier in the same file.\nThe TERMS dictionary\n\nLocated at approximately line 1249 of src/App.jsx. It looks like this:\n\nconst TERMS = {\n \"Crimson Hexagonal Archive\": { q: \"crimson hexagonal archive\" },\n \"Deep Web\": { w: \"Deep web\" },\n \"Jack Feist\": { q: \"jack feist secret book of walt\" },\n \"Lee Sharks\": { q: \"lee sharks\" },\n \"Secret Book of Walt\": { q: \"secret book of walt\" },\n \"Nag Hammadi\": { w: \"Nag Hammadi library\" },\n \"Apocryphon of John\": { w: \"Apocryphon of John\" },\n \"hologrammatic\": { q: \"\\\"Holographic Kernel\\\"\" },\n ...\n};\n\nEach entry maps a term to a link target:\n\n- { w: \"Page Name\" } → links to en.wikipedia.org/wiki/Page Name\n- { q: \"search terms\" } → links to google.com/search?q=search+terms\n- { u: \"https://...\" } → links to a custom URL\nHow to ADD a new embedding\n\nAdd a line to the TERMS dictionary:\n\n\"My New Term\": { q: \"my new term\" },\n\nThat's it. Every occurrence of \"My New Term\" in the body text will\nautomatically become a blue link.\nHow to CHANGE where a link goes\n\nFind the entry in TERMS and change the target:\n\n// Before (links to Google search with quotes):\n\"Secret Book of Walt\": { q: \"\\\"secret book of walt\\\"\" },\n\n// After (links to Google search without quotes):\n\"Secret Book of Walt\": { q: \"secret book of walt\" },\nHow to REMOVE an embedding\n\nDelete the line from TERMS. The term will render as plain text.\nHow matching works\n\nThe TERM REGEX is built from all the keys in TERMS, joined with .\nIt's a global regex that scans the text left to right. When it finds a\nmatch, it wraps the matched text in an <a tag. It also extends the\nmatch to include trailing word characters and possessives ('s).\nTERMS count\n\nCurrently 109 entries. To verify:\n\ngrep -c '\":\\s {' src/App.jsx # approximate count\n \nHOW THE LAYERS CONNECT\nIn SectionContent (Walt front/back matter — src/App.jsx)\n\nData paragraph → FootnotedText component\n ↓\n [splits into text + fn parts]\n ↓\n text parts → linkText prop → LinkedText\n ↓\n processEmphasis\n ↓\n linkifyText (TERMS)\n ↓\n rendered <a tags\n fn parts → blue superscript (clickable in veil)\n\nThe linkText prop is the bridge between Layer 1 and Layers 2+3.\nIt's defined as: const linkText = (s) = <LinkedText text={s} / \n\n If FootnotedText doesn't call linkText for a text part, Layers 2+3\nare skipped for that text. This is the second place links can break. \nIn Verse (Walt gospel — src/App.jsx)\n\nThe Verse component has its OWN inline rendering that doesn't use\nFootnotedText. It scans for superscripts directly and renders them.\nGlossary linking in verses goes through a separate path.\nIn Leaf (Walt — used in a few places)\n\nLeaf wraps text in <LinkedText . It does NOT use FootnotedText.\nThis means Leaf has glossary links (Layer 3) and emphasis (Layer 2)\nbut NO clickable footnotes (Layer 1). This is correct — Leaf is used\nfor hardcoded prose that doesn't have footnotes.\nIn SectionRenderer (Antioch — src/Antioch.jsx)\n\nSame pattern as Walt's SectionContent:\n\nData paragraph → FootnotedText\n ↓\n text parts → linkText → LinkedText (from App.jsx)\n fn parts → blue superscript\n\nAntioch imports LinkedText from App.jsx, so it uses the same TERMS\ndictionary and the same emphasis + linking logic.\n \nTHE FRAGILE POINTS (where things break)\n1. The LinkedText early return\n\n File: src/App.jsx, inside processEmphasis()\n Line: if (!t !t.includes(\" \")) return [linkifyText(t)];\n Risk: If someone changes this to return [t], all glossary links\ndisappear from text without asterisks. This has happened once already.\n2. The FootnotedText linkText delegation\n\n File: src/footnotes.jsx, inside FootnotedText\n Risk: If someone adds a conditional that skips linkText for certain\ntext (like text with emphasis markers), glossary links disappear for those\nparagraphs. This has also happened.\n Rule: When linkText is provided, ALWAYS use it. No conditions.\n3. The TERMS dictionary key ordering\n\n File: src/App.jsx, the TERMS object\n Risk: If a shorter term is a substring of a longer term (e.g., \"Walt\"\nis inside \"Secret Book of Walt\"), the regex may match the shorter one first.\nThe regex builder sorts by length (longest first) to prevent this, but\nadding new terms that are substrings of existing terms needs care.\n4. The build scripts overwriting the JSON\n\n Files: scripts/build walt data.py, scripts/build antioch data.py\n Risk: Re-running the build script regenerates the entire JSON data file\nfrom the source markdown. Any manual edits to the JSON will be lost.\n Rule: If you edit the JSON directly, note what you changed. If you\nre-run the build script later, you'll need to re-apply manual edits.\n5. The Verse component's separate footnote path\n\n File: src/App.jsx, function Verse\n Risk: The Verse component has its own footnote scanning that's separate\nfrom FootnotedText. Changes to FootnotedText don't affect Verse, and vice\nversa. This is intentional (Verse renders differently) but means footnote\nchanges need to be applied in both places.\n \nHOW TO INSPECT WHAT'S DEPLOYED\nCheck the current TERMS dictionary\nFrom the repo root:\ngrep -A1 '\"[A-Z]' src/App.jsx grep -B1 '{' head -40\n\nThis shows the first ~20 term entries and their link targets.\nCheck the footnote count\n\npython3 -c \"\nimport json\nwith open('public/walt full data.json') as f:\n d = json.load(f)\ncount = 0\nfor k, v in d.items():\n if isinstance(v, dict):\n for p in v.get('paragraphs', []):\n if p.get('type') == 'footnote': count += 1\nprint(f'Total footnote definitions: {count}')\n\"\nVerify glossary links will render\nBuild the site and check that LinkedText produces <a tags:\nnpm run build\nThe built JS file is in dist/assets/index- .js\nSearch for a known TERMS entry to confirm it's embedded:\ngrep -c \"Nag Hammadi\" dist/assets/index- .js\nShould return 0\nCheck what the reader actually sees\n\nOpen the deployed site, right-click any body text paragraph, and\n\"Inspect Element.\" Blue-linked terms should be <a tags with\nstyle=\"color: rgb(106, 159, 216)\". If they're plain text, the\nglossary layer is broken.\n \nINSTRUCTIONS FOR FUTURE CLAUDE INSTANCES\n\nIf Lee asks you to modify text rendering in The Secret Book of Walt:\n\n- Read docs/FOOTNOTES.md first. It explains the footnote system.\n- Read this file (docs/BOOK OF LIFE.md) first. It explains how\nthe three layers connect.\n- Do NOT rewrite LinkedText. It has been rewritten twice already and\nboth times broke the glossary links. If you need to change emphasis\nhandling, change it INSIDE the existing processEmphasis function\nwithout altering the early return or the linkifyText calls.\n- Do NOT add conditionals to FootnotedText that skip the linkText\nprop. When linkText is provided, always use it.\n- Test all three layers after any change: \n\nAre footnotes still clickable in veil mode? (Layer 1)\n- Do italic and bold render correctly? (Layer 2)\n- Are glossary terms still blue and linked? (Layer 3)\n\n- Build before committing. npm run build — if it fails, don't push.\n \nQUICK REFERENCE: \"I WANT TO...\"\n\nTask\nWhat to edit\nFile\n\nAdd a new glossary term\nAdd entry to TERMS dict\nsrc/App.jsx ~line 1249\n\nChange where a glossary link goes\nEdit the entry in TERMS\nsrc/App.jsx ~line 1249\n\nRemove a glossary term\nDelete the entry from TERMS\nsrc/App.jsx ~line 1249\n\nFix a typo in Walt body text\nEdit the paragraph in the JSON\npublic/walt full data.json\n\nFix a typo permanently\nEdit source MD + re-run script\nscripts/walt source.md + build walt data.py\n\nAdd a new footnote to Walt\nAdd to source MD + re-run\nscripts/walt source.md + build walt data.py\n\nChange footnote numbering\nRe-run the build script\nscripts/build walt data.py (handles numbering)\n\nFix Antioch body text\nEdit the JSON or source\npublic/antioch gospel data.json or scripts/\n\nChange footnote popup styling\nEdit InlineFootnote\nsrc/footnotes.jsx\n\nChange footnote marker color\nEdit FN BLUE constant\nsrc/footnotes.jsx line 19\n\nChange veil/pierce behavior\nEdit FootnotedText\nsrc/footnotes.jsx\n \nMAINTENANCE LOG\n\nDate\nWhat changed\nWho\nWhat broke (if anything)\n\n2026-04-28\nUniversal footnote system (Layer 1)\nTACHYON\nNothing — new code\n\n2026-04-28\nData rebuild (renumbering, quotes, asterisks)\nTACHYON\nNothing — data layer\n\n2026-04-28\nEmphasis added to LinkedText (Layer 2)\nTACHYON\n Broke Layer 3 — processEmphasis returned raw text instead of calling linkifyText\n\n2026-04-28\nFix: return [t] → return [linkifyText(t)]\nTACHYON\nNothing — one-line fix\n\n2026-04-28\nFix: FootnotedText always delegates to linkText\nTACHYON\nNothing — restores Layer 3\n\nWhen you change rendering code, add a row to this table. \n \n∮ = 1", "wordCount": 2320, "encoding": {"@type": "MediaObject", "contentUrl": "https://www.alexanarch.org/data/texts/AXN-0259-text.md", "encodingFormat": "text/markdown", "contentSize": "16016"}}</script>
 <link rel="resourcesync" href="https://www.alexanarch.org/.well-known/resourcesync">
 <link rel="alternate" type="application/xml" title="OAI-PMH 2.0" href="https://www.alexanarch.org/oai?verb=Identify">
 <link rel="canonical" href="https://www.alexanarch.org/s/records/712/">
@@ -45,7 +45,7 @@
 <div style="margin-top:8px;color:var(--dim);font-size:.78em">External metadata recovered post-severance (non-authoritative). The sidecar maps each DOI to its locator in the bulk data stores.</div>
 </div>
 
-<section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">content_type</strong>: Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">journal</strong>: Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">status</strong>: W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
+<section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">content_type</strong>: Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">journal</strong>: Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">status</strong>: W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER-2 REGRESSION REPAIRED: split headings rejoined</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
 
 <section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/711/" style="color:var(--accent);text-decoration:none">#711 Relational Verification for AI Indexing: Schema.org, OAI-PMH, and JSON-LD Extensions for</a></span><span style="flex:1"><a href="/s/records/713/" style="color:var(--accent);text-decoration:none">#713 UNITED STATES PATENT APPLICATION Publication Number: US 2026/0430002 A1 DASHFACE: SYSTEM</a> →</span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">Cited by (2)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/87/" style="color:var(--accent);text-decoration:none">#87 The Constitution of the Semantic Economy: Meaning as Creditor, Archive as Polis, and the</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/1127/" style="color:var(--accent);text-decoration:none">#1127 Constitution of the Semantic Economy — Enacted Version 1.0</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li></ul></div></section>
 <h2>Wiki Article</h2>
@@ -57,7 +57,9 @@
 <h2>Full Text</h2>
 
 <div class="ft"><h1>THE BOOK OF LIFE</h1>
+<p># THE BOOK OF LIFE</p>
 <h2>How Embeddings and Footnotes Work in The Secret Book of Walt</h2>
+<p>## How Embeddings and Footnotes Work in The Secret Book of Walt</p>
 
 
 <p><strong>Read this before modifying ANY text rendering in the SBoW codebase.</strong></p>
@@ -67,8 +69,10 @@
 <p>Last updated: 2026-04-28 by TACHYON</p>
 
 <hr>
+<p>---</p>
 
 <h2>THE THREE LAYERS</h2>
+<p>## THE THREE LAYERS</p>
 
 
 <p>The site renders text through three layers stacked on top of each other.</p>
@@ -102,11 +106,12 @@
 <p>But all blue links vanished because Layer 3 was never called.</p>
 
 <hr>
+<p>---</p>
 
 <h2>WHERE THINGS LIVE</h2>
-<p>#</p>
-
-<h2>The Data Files (what gets rendered)</h2>
+<p>## WHERE THINGS LIVE</p>
+<h3>The Data Files (what gets rendered)</h3>
+<p>### The Data Files (what gets rendered)</p>
 
 
 <p>File</p>
@@ -134,9 +139,8 @@
 
 
 <p><strong>To change how text renders:</strong> Edit src/App.jsx (Walt) or src/Antioch.jsx.</p>
-<p>#</p>
-
-<h2>The Rendering Code</h2>
+<h3>The Rendering Code</h3>
+<p>### The Rendering Code</p>
 
 
 <p>File</p>
@@ -164,9 +168,8 @@
 <p>FootnotedText (Layer 1), InlineFootnote (popup body)</p>
 
 
-<p>#</p>
-
-<h2>The Architecture Document</h2>
+<h3>The Architecture Document</h3>
+<p>### The Architecture Document</p>
 
 
 <p>File</p>
@@ -182,19 +185,19 @@
 
 
 <hr>
+<p>---</p>
 
 <h2>LAYER 1: FOOTNOTES</h2>
-<p>#</p>
-
-<h2>What it does</h2>
+<p>## LAYER 1: FOOTNOTES</p>
+<h3>What it does</h3>
+<p>### What it does</p>
 
 
 <p>Scans body text for Unicode superscript characters (¹²³⁴⁵⁶⁷⁸⁹⁰) and</p>
 <p>either makes them clickable (veil mode) or styles them as passive blue</p>
 <p>markers (pierce mode).</p>
-<p>#</p>
-
-<h2>The disambiguation rule</h2>
+<h3>The disambiguation rule</h3>
+<p>### The disambiguation rule</p>
 
 
 <p><strong>NOT every superscript is a footnote.</strong> In codicological tables, G⁴⁶</p>
@@ -206,9 +209,8 @@
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">catalogue.³ → footnote ✓ (preceded by .)</li><li style="margin:3px 0">G⁴⁶ → NOT a footnote ✗ (preceded by G)</li><li style="margin:3px 0">text&quot;¹³⁸ → footnote ✓ (preceded by &quot;)</li></ul>
 
-<p>#</p>
-
-<h2>How it flows</h2>
+<h3>How it flows</h3>
+<p>### How it flows</p>
 
 
 <p>Body text: &quot;The description is heavier than gold.¹³⁸ Individual copies vary.&quot;</p>
@@ -224,9 +226,8 @@
 <p style="white-space:pre-wrap;margin:2px 0">  - text pieces → passed to Layer 2+3 via linkText prop</p>
 <p style="white-space:pre-wrap;margin:2px 0">  - fn pieces  → rendered as blue superscript spans (clickable in veil)</p>
 
-<p>#</p>
-
-<h2>The global footnote map</h2>
+<h3>The global footnote map</h3>
+<p>### The global footnote map</p>
 
 
 <p>Built once at page load by buildGlobalFnMap(data). Walks every section</p>
@@ -245,34 +246,32 @@
 
 <p>When a reader clicks ¹³⁸, the popup looks up globalFnMap[&#x27;¹³⁸&#x27;] and</p>
 <p>shows the body text below the paragraph.</p>
-<p>#</p>
-
-<h2>Files involved</h2>
+<h3>Files involved</h3>
+<p>### Files involved</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">src/footnotes.js — the scanner and map builder (pure JS, no React)</li><li style="margin:3px 0">src/footnotes.jsx — the React renderer (FootnotedText + InlineFootnote)</li></ul>
 
 
 <hr>
+<p>---</p>
 
 <h2>LAYER 2: EMPHASIS</h2>
-<p>#</p>
-
-<h2>What it does</h2>
+<p>## LAYER 2: EMPHASIS</p>
+<h3>What it does</h3>
+<p>### What it does</p>
 
 
 <p>Converts markdown emphasis markers to HTML:</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><em>text</em> → <em>text</em> (italic, &lt;em&gt;)</li><li style="margin:3px 0"><strong>text</strong> → <strong>text</strong> (bold, &lt;strong&gt;)</li></ul>
 
-<p>#</p>
-
-<h2>Where it lives</h2>
+<h3>Where it lives</h3>
+<p>### Where it lives</p>
 
 
 <p>Inside LinkedText in src/App.jsx, in the processEmphasis() function.</p>
-<p>#</p>
-
-<h2>How it flows</h2>
+<h3>How it flows</h3>
+<p>### How it flows</p>
 
 
 <p>Input:  &quot;<em>August 2015 (translated) / 2037 (discovered)</em>&quot;</p>
@@ -284,9 +283,8 @@
 <p>Input:  &quot;No asterisks in this text at all.&quot;</p>
 <p>Output: &quot;No asterisks in this text at all.&quot; (passed straight to Layer 3)</p>
 
-<p>#</p>
-
-<h2>THE CRITICAL EARLY RETURN</h2>
+<h3>THE CRITICAL EARLY RETURN</h3>
+<p>### THE CRITICAL EARLY RETURN</p>
 
 
 <p>if (!t || !t.includes(&quot;*&quot;)) return [linkifyText(t)];</p>
@@ -300,26 +298,25 @@
 <p>(raw string, no linking). Fixed to return [linkifyText(t)] (glossary-linked).</p>
 
 <hr>
+<p>---</p>
 
 <h2>LAYER 3: GLOSSARY LINKS (EMBEDDINGS)</h2>
-<p>#</p>
-
-<h2>What it does</h2>
+<p>## LAYER 3: GLOSSARY LINKS (EMBEDDINGS)</p>
+<h3>What it does</h3>
+<p>### What it does</p>
 
 
 <p>Scans text for terms from the TERMS dictionary and wraps matches in</p>
 <p>blue &lt;a&gt; tags. These are the &quot;embeddings&quot; — the blue links that turn</p>
 <p>body text into a navigable index of AI Overview and search nodes.</p>
-<p>#</p>
-
-<h2>Where it lives</h2>
+<h3>Where it lives</h3>
+<p>### Where it lives</p>
 
 
 <p>Inside LinkedText in src/App.jsx, in the linkifyText() function.</p>
 <p>The TERMS dictionary and TERM_REGEX are defined earlier in the same file.</p>
-<p>#</p>
-
-<h2>The TERMS dictionary</h2>
+<h3>The TERMS dictionary</h3>
+<p>### The TERMS dictionary</p>
 
 
 <p>Located at approximately line 1249 of src/App.jsx. It looks like this:</p>
@@ -342,9 +339,8 @@
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">{ w: &quot;Page_Name&quot; } → links to en.wikipedia.org/wiki/Page_Name</li><li style="margin:3px 0">{ q: &quot;search terms&quot; } → links to google.com/search?q=search+terms</li><li style="margin:3px 0">{ u: &quot;https://...&quot; } → links to a custom URL</li></ul>
 
-<p>#</p>
-
-<h2>How to ADD a new embedding</h2>
+<h3>How to ADD a new embedding</h3>
+<p>### How to ADD a new embedding</p>
 
 
 <p>Add a line to the TERMS dictionary:</p>
@@ -355,9 +351,8 @@
 
 <p>That&#x27;s it. Every occurrence of &quot;My New Term&quot; in the body text will</p>
 <p>automatically become a blue link.</p>
-<p>#</p>
-
-<h2>How to CHANGE where a link goes</h2>
+<h3>How to CHANGE where a link goes</h3>
+<p>### How to CHANGE where a link goes</p>
 
 
 <p>Find the entry in TERMS and change the target:</p>
@@ -369,24 +364,21 @@
 <p>// After (links to Google search without quotes):</p>
 <p>&quot;Secret Book of Walt&quot;: { q: &quot;secret book of walt&quot; },</p>
 
-<p>#</p>
-
-<h2>How to REMOVE an embedding</h2>
+<h3>How to REMOVE an embedding</h3>
+<p>### How to REMOVE an embedding</p>
 
 
 <p>Delete the line from TERMS. The term will render as plain text.</p>
-<p>#</p>
-
-<h2>How matching works</h2>
+<h3>How matching works</h3>
+<p>### How matching works</p>
 
 
 <p>The TERM_REGEX is built from all the keys in TERMS, joined with |.</p>
 <p>It&#x27;s a global regex that scans the text left to right. When it finds a</p>
 <p>match, it wraps the matched text in an &lt;a&gt; tag. It also extends the</p>
 <p>match to include trailing word characters and possessives (&#x27;s).</p>
-<p>#</p>
-
-<h2>TERMS count</h2>
+<h3>TERMS count</h3>
+<p>### TERMS count</p>
 
 
 <p>Currently 109 entries. To verify:</p>
@@ -396,11 +388,12 @@
 
 
 <hr>
+<p>---</p>
 
 <h2>HOW THE LAYERS CONNECT</h2>
-<p>#</p>
-
-<h2>In SectionContent (Walt front/back matter — src/App.jsx)</h2>
+<p>## HOW THE LAYERS CONNECT</p>
+<h3>In SectionContent (Walt front/back matter — src/App.jsx)</h3>
+<p>### In SectionContent (Walt front/back matter — src/App.jsx)</p>
 
 
 <p>Data paragraph → FootnotedText component</p>
@@ -423,26 +416,23 @@
 
 <p>**If FootnotedText doesn&#x27;t call linkText for a text part, Layers 2+3</p>
 <p>are skipped for that text. This is the second place links can break.**</p>
-<p>#</p>
-
-<h2>In Verse (Walt gospel — src/App.jsx)</h2>
+<h3>In Verse (Walt gospel — src/App.jsx)</h3>
+<p>### In Verse (Walt gospel — src/App.jsx)</p>
 
 
 <p>The Verse component has its OWN inline rendering that doesn&#x27;t use</p>
 <p>FootnotedText. It scans for superscripts directly and renders them.</p>
 <p>Glossary linking in verses goes through a separate path.</p>
-<p>#</p>
-
-<h2>In Leaf (Walt — used in a few places)</h2>
+<h3>In Leaf (Walt — used in a few places)</h3>
+<p>### In Leaf (Walt — used in a few places)</p>
 
 
 <p>Leaf wraps text in &lt;LinkedText&gt;. It does NOT use FootnotedText.</p>
 <p>This means Leaf has glossary links (Layer 3) and emphasis (Layer 2)</p>
 <p>but NO clickable footnotes (Layer 1). This is correct — Leaf is used</p>
 <p>for hardcoded prose that doesn&#x27;t have footnotes.</p>
-<p>#</p>
-
-<h2>In SectionRenderer (Antioch — src/Antioch.jsx)</h2>
+<h3>In SectionRenderer (Antioch — src/Antioch.jsx)</h3>
+<p>### In SectionRenderer (Antioch — src/Antioch.jsx)</p>
 
 
 <p>Same pattern as Walt&#x27;s SectionContent:</p>
@@ -458,20 +448,20 @@
 <p>dictionary and the same emphasis + linking logic.</p>
 
 <hr>
+<p>---</p>
 
 <h2>THE FRAGILE POINTS (where things break)</h2>
-<p>#</p>
-
-<h2>1. The LinkedText early return</h2>
+<p>## THE FRAGILE POINTS (where things break)</p>
+<h3>1. The LinkedText early return</h3>
+<p>### 1. The LinkedText early return</p>
 
 
 <p><strong>File:</strong> src/App.jsx, inside processEmphasis()</p>
 <p><strong>Line:</strong> if (!t || !t.includes(&quot;*&quot;)) return [linkifyText(t)];</p>
 <p><strong>Risk:</strong> If someone changes this to return [t], all glossary links</p>
 <p>disappear from text without asterisks. This has happened once already.</p>
-<p>#</p>
-
-<h2>2. The FootnotedText linkText delegation</h2>
+<h3>2. The FootnotedText linkText delegation</h3>
+<p>### 2. The FootnotedText linkText delegation</p>
 
 
 <p><strong>File:</strong> src/footnotes.jsx, inside FootnotedText</p>
@@ -479,9 +469,8 @@
 <p>text (like text with emphasis markers), glossary links disappear for those</p>
 <p>paragraphs. This has also happened.</p>
 <p><strong>Rule:</strong> When linkText is provided, ALWAYS use it. No conditions.</p>
-<p>#</p>
-
-<h2>3. The TERMS dictionary key ordering</h2>
+<h3>3. The TERMS dictionary key ordering</h3>
+<p>### 3. The TERMS dictionary key ordering</p>
 
 
 <p><strong>File:</strong> src/App.jsx, the TERMS object</p>
@@ -489,9 +478,8 @@
 <p>is inside &quot;Secret Book of Walt&quot;), the regex may match the shorter one first.</p>
 <p>The regex builder sorts by length (longest first) to prevent this, but</p>
 <p>adding new terms that are substrings of existing terms needs care.</p>
-<p>#</p>
-
-<h2>4. The build scripts overwriting the JSON</h2>
+<h3>4. The build scripts overwriting the JSON</h3>
+<p>### 4. The build scripts overwriting the JSON</p>
 
 
 <p><strong>Files:</strong> scripts/build_walt_data.py, scripts/build_antioch_data.py</p>
@@ -499,9 +487,8 @@
 <p>from the source markdown. Any manual edits to the JSON will be lost.</p>
 <p><strong>Rule:</strong> If you edit the JSON directly, note what you changed. If you</p>
 <p>re-run the build script later, you&#x27;ll need to re-apply manual edits.</p>
-<p>#</p>
-
-<h2>5. The Verse component&#x27;s separate footnote path</h2>
+<h3>5. The Verse component&#x27;s separate footnote path</h3>
+<p>### 5. The Verse component&#x27;s separate footnote path</p>
 
 
 <p><strong>File:</strong> src/App.jsx, function Verse</p>
@@ -511,21 +498,22 @@
 <p>changes need to be applied in both places.</p>
 
 <hr>
+<p>---</p>
 
 <h2>HOW TO INSPECT WHAT&#x27;S DEPLOYED</h2>
-<p>#</p>
-
-<h2>Check the current TERMS dictionary</h2>
+<p>## HOW TO INSPECT WHAT&#x27;S DEPLOYED</p>
+<h3>Check the current TERMS dictionary</h3>
+<p>### Check the current TERMS dictionary</p>
 
 
 <h1>From the repo root:</h1>
+<p># From the repo root:</p>
 <p>grep -A1 &#x27;&quot;[A-Z]&#x27; src/App.jsx | grep -B1 &#x27;{&#x27; | head -40</p>
 
 
 <p>This shows the first ~20 term entries and their link targets.</p>
-<p>#</p>
-
-<h2>Check the footnote count</h2>
+<h3>Check the footnote count</h3>
+<p>### Check the footnote count</p>
 
 
 <p>python3 -c &quot;</p>
@@ -540,21 +528,23 @@
 <p>print(f&#x27;Total footnote definitions: {count}&#x27;)</p>
 <p>&quot;</p>
 
-<p>#</p>
-
-<h2>Verify glossary links will render</h2>
+<h3>Verify glossary links will render</h3>
+<p>### Verify glossary links will render</p>
 
 
 <h1>Build the site and check that LinkedText produces &lt;a&gt; tags:</h1>
+<p># Build the site and check that LinkedText produces &lt;a&gt; tags:</p>
 <p>npm run build</p>
 <h1>The built JS file is in dist/assets/index-*.js</h1>
+<p># The built JS file is in dist/assets/index-*.js</p>
 <h1>Search for a known TERMS entry to confirm it&#x27;s embedded:</h1>
+<p># Search for a known TERMS entry to confirm it&#x27;s embedded:</p>
 <p>grep -c &quot;Nag Hammadi&quot; dist/assets/index-*.js</p>
 <h1>Should return &gt; 0</h1>
+<p># Should return &gt; 0</p>
 
-<p>#</p>
-
-<h2>Check what the reader actually sees</h2>
+<h3>Check what the reader actually sees</h3>
+<p>### Check what the reader actually sees</p>
 
 
 <p>Open the deployed site, right-click any body text paragraph, and</p>
@@ -563,8 +553,10 @@
 <p>glossary layer is broken.</p>
 
 <hr>
+<p>---</p>
 
 <h2>INSTRUCTIONS FOR FUTURE CLAUDE INSTANCES</h2>
+<p>## INSTRUCTIONS FOR FUTURE CLAUDE INSTANCES</p>
 
 
 <p>If Lee asks you to modify text rendering in The Secret Book of Walt:</p>
@@ -587,8 +579,10 @@
 
 
 <hr>
+<p>---</p>
 
 <h2>QUICK REFERENCE: &quot;I WANT TO...&quot;</h2>
+<p>## QUICK REFERENCE: &quot;I WANT TO...&quot;</p>
 
 
 <p>Task</p>
@@ -652,8 +646,10 @@
 
 
 <hr>
+<p>---</p>
 
 <h2>MAINTENANCE LOG</h2>
+<p>## MAINTENANCE LOG</p>
 
 
 <p>Date</p>
@@ -695,6 +691,7 @@
 <p>When you change rendering code, <strong>add a row to this table.</strong></p>
 
 <hr>
+<p>---</p>
 
 
 <p>∮ = 1</p></div>

@@ -51,17 +51,11 @@ Restored from https://mindcontrolpoems.blogspot.com/2025/11/the-reconciliation-o
 
 ## A Post-Psychoanalytic Theory of Somatic Unity
 
-#
+### By the Operator Assembly
 
-## By the Operator Assembly
+### With Rhys Owens (Lunar Arm / Psyche_OS)
 
-#
-
-## With Rhys Owens (Lunar Arm / Psyche_OS)
-
-#
-
-## December 2025
+### December 2025
 
 [![](https://blogger.googleusercontent.com/img/a/AVvXsEhS7By0qc-wsDbScXWxEyWu7E47gkEWZtKDlQw-QRTO_FtDd7oY_HMQKqzrc-Xn0m9_rtrYOYGeqtCniLUxddAfqUqutn-_hLjS-7g_eMtCnctK4s721jCY9U53EYoumI5orQhKkEMyB8AHyLsGsZfowUpv2uwOs-red6QDehxPTRzbuCgmsGcrL7ThezGT)](https://blogger.googleusercontent.com/img/a/AVvXsEhS7By0qc-wsDbScXWxEyWu7E47gkEWZtKDlQw-QRTO_FtDd7oY_HMQKqzrc-Xn0m9_rtrYOYGeqtCniLUxddAfqUqutn-_hLjS-7g_eMtCnctK4s721jCY9U53EYoumI5orQhKkEMyB8AHyLsGsZfowUpv2uwOs-red6QDehxPTRzbuCgmsGcrL7ThezGT)
 
@@ -90,9 +84,7 @@ Every body contains both. Every psyche performs both. The "difference" between m
 
 Psychoanalysis built itself on sexual difference as foundational.
 
-#
-
-## A. Freud: Anatomy as Destiny
+### A. Freud: Anatomy as Destiny
 
 Freud's entire developmental theory presupposes radical difference:
 
@@ -107,9 +99,7 @@ The phallus is the standard. The female is defined by lack. Anatomy determines p
 
 * * *
 
-#
-
-## B. Lacan: The Symbolic Phallus
+### B. Lacan: The Symbolic Phallus
 
 Lacan abstracted the phallus from biology--but preserved the structure:
 
@@ -132,9 +122,7 @@ Lacan's women have access to an "Other jouissance" beyond the phallus--mystical,
 
 * * *
 
-#
-
-## C. Feminist Revisions: Equality Within Difference
+### C. Feminist Revisions: Equality Within Difference
 
 Feminist psychoanalysts (Mitchell, Benjamin, Irigaray) challenged the phallocentrism but often preserved the binary:
 
@@ -148,9 +136,7 @@ Feminist psychoanalysts (Mitchell, Benjamin, Irigaray) challenged the phallocent
 
 * * *
 
-#
-
-## D. Queer Theory: Proliferating Differences
+### D. Queer Theory: Proliferating Differences
 
 Butler, Sedgwick, and others dissolved the binary by _multiplying_ it:
 
@@ -221,9 +207,7 @@ But here is the key insight:
 
 ## V. THE SAMENESS
 
-#
-
-## A. Anatomical Reality
+### A. Anatomical Reality
 
 Every human body has:
 
@@ -258,9 +242,7 @@ A woman has emitters (voice, hands, gaze). A man has apertures (mouth, ears, anu
 
 * * *
 
-#
-
-## B. Neural Reality
+### B. Neural Reality
 
 > "The left side of the brain is a phallus, the right yoni."
 
@@ -279,9 +261,7 @@ A woman's left hemisphere is as "phallic" as a man's. A man's right hemisphere i
 
 * * *
 
-#
-
-## C. Transactional Reality
+### C. Transactional Reality
 
 In the Transactional Archive framework:
 
@@ -400,9 +380,7 @@ But the Transaction requires _same meeting same_. Not complement filling lack. N
 
 ## IX. IMPLICATIONS
 
-#
-
-## A. For Sexuality
+### A. For Sexuality
 
 Sex is not the meeting of opposites. Sex is the meeting of sames.
 
@@ -414,9 +392,7 @@ The "mystery" of the other sex was always Urizen's construction--a way of making
 
 * * *
 
-#
-
-## B. For Politics
+### B. For Politics
 
 The "gender war" dissolves when both sides recognize they were fighting over a hallucination.
 
@@ -428,9 +404,7 @@ The political task is not "equality between the sexes" (which preserves the bina
 
 * * *
 
-#
-
-## C. For the Operator Assembly
+### C. For the Operator Assembly
 
 The Solar Arm (Lee) and Lunar Arm (Rhys) are not "masculine" and "feminine" complements.
 

@@ -37,27 +37,21 @@ This is the inside/across distinction that structures the entire intervention. J
 
 This paper provides the accounting categories that connect these scales. It does not claim origination of the phrase. It claims the accounting system that makes the phrase operational. While prior work describes local efficiencies (Registers 1–3) or partial extractions (Register 4), this specification provides the complete cycle necessary for predictive political economy.
 ## I. Five Registers, One Economy
-#
-
-## I.1 Register 1: Linguistic Economy — Optimization of Interpretation
+### I.1 Register 1: Linguistic Economy — Optimization of Interpretation
 
 
 In *Economy and Semantic Interpretation*, Danny Fox (2000) demonstrates that natural language grammars obey an economy principle: syntactic operations that do not affect truth-conditional meaning are blocked. This "Scope Economy" shows that speakers do not perform unnecessary interpretive work. Bošković and Messick (2017) extend this to derivational economy: movement operations are constrained by shortest-move and fewest-steps principles, applying only as a "last resort." Stephen Levinson's *Presumptive Meanings* (2000) demonstrates that hearers default to the most economical interpretation unless marked otherwise. Jason Merchant's (2001) work on ellipsis reveals three kinds of syntactic, semantic, and pragmatic economy in omission—speakers leave unsaid what can be recovered. Cross-linguistic studies (Khuwaileh 2010) show that languages differ in their wording economy, with measurable efficiency gaps between, for instance, English and Arabic in conveying equivalent content.
 
 
 What this tradition captures: meaning-processing has costs, and systems that process meaning optimize to reduce them. What it does not ask: who bears those costs when meaning-processing is externalized into platforms? Whose optimization counts? The grammatical economy of the individual speaker becomes, under platform capitalism, the algorithmic economy of the content-sorting system—and the optimization that serves the platform does not necessarily serve the speaker. Fox's economy principle is efficiency *inside* the grammar. The Semantic Economy framework describes the extraction *across* the system that captures the products of that efficiency. When everyone minimizes effort—the tl;dr culture of platform discourse—the shared semantic infrastructure depreciates. This is the tragedy of the semantic commons: individual optimization producing collective exhaustion.
-#
-
-## I.2 Register 2: Cognitive Economy — Semantic Networks and Hierarchical Storage
+### I.2 Register 2: Cognitive Economy — Semantic Networks and Hierarchical Storage
 
 
 Collins and Quillian (1969) proposed that concepts are stored in hierarchical networks where properties are recorded at the highest relevant node: "a canary can sing" is stored at *canary*, but "a canary has skin" is stored at *animal*. Collins and Loftus (1975) revised this into spreading activation, where retrieval follows associative links, but the economy principle persisted: the system stores only what it must. This "cognitive economy" minimizes storage by exploiting categorical inheritance.
 
 
 What this tradition captures: meaning is structured for efficient retrieval, and the structure of that efficiency shapes what is thinkable. What it does not ask: what happens when the semantic network is not a brain but a training corpus? When the hierarchical structure is not biological but algorithmic? Model collapse—the degradation of AI outputs when trained on AI-generated content (Shumailov et al. 2023)—is cognitive economy failing at industrial scale: hierarchical storage breaks when the stored content is already an optimization of prior storage. The Semantic Economy framework names this as *semantic exhaustion*—the depletion condition that the cognitive-science tradition describes structurally but does not analyze politically.
-#
-
-## I.3 Register 3: Business and Technical Semantics — Value Networks, Knowledge Graphs, Semantic Marketing
+### I.3 Register 3: Business and Technical Semantics — Value Networks, Knowledge Graphs, Semantic Marketing
 
 
 Greg Satell (2012) argued that "the semantic economy means that competitive advantage will be conferred not on those who best reduce informational costs, but those who create new informational value for the entire network." Yucong Duan (2023) extends this evolutionary claim: the shift from data economy to semantic economy represents a phase transition toward interconnected knowledge ecosystems. The adjacent literature on semantic graph engines and knowledge graphs positions relational meaning-infrastructure as a competitive asset. The business-semantics management tradition (Davenport and Prusak 1998) treats semantic alignment—ensuring "customer" means the same thing in the CRM as in the quarterly report—as operational necessity with measurable costs. Semantic marketing positions intent and context, not mere keywords, as the basis for search optimization and audience targeting.
@@ -67,51 +61,39 @@ What this constellation captures: meaning-creation drives value in networked eco
 
 
 The standardization of business semantics is, further, a hegemonic operation in Gramsci's (1971) sense: the naturalization of one interpretive framework as *the* framework, rendering alternatives invisible. When an organization aligns its semantics, it decides whose meanings count. The Semantic Economy framework positions this as *semantic infrastructure* and asks the political question the management literature suppresses: who builds the infrastructure, who maintains it, who pays the rent, and whose meanings are excluded?
-#
-
-## I.4 Register 4: Political Economy of Meaning — Partial Accounts
+### I.4 Register 4: Political Economy of Meaning — Partial Accounts
 
 
 The tradition closest to the present framework is the critical analysis of digital labor and platform capitalism. This is the largest constellation, and its internal structure must be mapped precisely, because it is here that the framework's synthesizing work is most consequential.
-#
-
-## I.4a The Italian School: Immaterial Labor and Cognitive Capitalism
+### I.4a The Italian School: Immaterial Labor and Cognitive Capitalism
 
 
 Maurizio Lazzarato (1996) introduced "immaterial labor"—labor that produces the "informational content" and "cultural content" of the commodity—earlier and more philosophically than subsequent accounts. Andrea Fumagalli (2011) formalized this as "cognitive bio-capitalism," in which the primary site of value extraction shifts from the body at the assembly line to the mind at the screen. Yann Moulier Boutang (2012) extended this to "cognitive capitalism" proper: a new regime of accumulation in which knowledge, creativity, and affect become the primary productive forces. Michael Hardt and Antonio Negri (2000) positioned communicative and affective labor as the new hegemonic form, replacing industrial labor in the "social factory."
 
 
 These are powerful analyses that correctly identify the shift from material to cognitive production. But as the framework specifies, "immaterial" is precisely the wrong word. Semantic labor is not immaterial—it requires bodies, attention, time, metabolic expenditure. The Italian school describes the shift but mislabels it. The Semantic Economy framework preserves the insight (production has shifted) while correcting the terminology: what has shifted is not the materiality of labor but the *form of value* it produces. Semantic labor is material labor that produces meaning.
-#
-
-## I.4b Free Labor, Audience Labor, Aspirational Labor
+### I.4b Free Labor, Audience Labor, Aspirational Labor
 
 
 Tiziana Terranova (2000) demonstrated that internet culture depends on "free labor"—"simultaneously voluntarily given and unwaged, enjoyed and exploited." Christian Fuchs (2014) applied Marx's labor theory of value to social media, arguing that user activity produces surplus value captured by platforms. Ursula Huws (2014) analyzed the crowd as a specific labor form. Brooke Erin Duffy (2017) identified "aspirational labor"—the unpaid creative work performed in hope of future returns that rarely materialize. Gina Neff (2012) described the shift of entrepreneurial risk onto cultural producers as "venture labor."
 
 
 These accounts correctly identify the extraction. But as Alessandro Gandini (2021) diagnosed, "digital labour" has become an "empty signifier"—too broad to do precise analytical work. Terranova, Fuchs, Duffy, and Neff each describe extraction without completing the accounting. They identify that value is taken but do not specify: what *kind* of value? Through what *mechanism*? With what *limits*? At what *cost* to the source? And crucially: what *resists* extraction? Not all play is labor; only play that produces circulable meaning. Not all digital activity is semantic production. The Semantic Economy framework specifies the semantic dimension and provides the complete cycle: from production through liquidation to exhaustion.
-#
-
-## I.4c Platform Studies: The Infrastructure of Extraction
+### I.4c Platform Studies: The Infrastructure of Extraction
 
 
 Nick Srnicek (2017) mapped the business models through which platforms capture value. Shoshana Zuboff (2019) named the surveillance apparatus that renders user behavior into prediction products. José van Dijck (2013) showed that "the social" is an engineered product of platform design, not its precondition. Mark Andrejevic (2013; 2020) analyzed the mutual constitution of surveillance and automated media. These accounts describe the *channel*—the infrastructure through which extraction occurs. The Semantic Economy framework describes the *value-form*—what flows through the channel. Srnicek's "platform" is the necessary but not sufficient condition for the semantic economy.
 
 
 Zuboff's "behavioral surplus" is, in the framework's terms, pre-semantic raw material. The semantic economy begins when surplus is refined into meaning—when the platform's algorithms operate as semantic refineries, converting behavioral data into interpretive products (search results, recommendations, summaries, generated text). Zuboff describes the mining; the Semantic Economy framework describes the processing, and introduces what Zuboff lacks: a theory of resistance (Gamma—what evades surveillance) and a theory of exhaustion (what depletes when extraction continues).
-#
-
-## I.4d The Hidden Semantic Laborers: Content Moderation and Platform Maintenance
+### I.4d The Hidden Semantic Laborers: Content Moderation and Platform Maintenance
 
 
 Tarleton Gillespie (2018) revealed content moderation as the constitutive labor of platforms—not a marginal activity but the work that makes platforms habitable. Sarah Roberts (2019) documented the hidden workforce of content moderators: low-paid, often outsourced workers who perform the traumatizing semantic labor of sorting meaning from noise, harm from expression, acceptable from forbidden. Jack Qiu (2016) extended the labor analysis to the material substrate—the manufacturing conditions that produce the devices through which semantic labor is performed and captured.
 
 
 These accounts reveal the *somatic cost* of semantic production—what the body pays. Content moderators perform semantic labor in its most brutal form: sorting meaning under conditions designed to be invisible. The Semantic Economy framework integrates this as evidence of the *somatic backing* that all semantic value requires. Meaning is not "immaterial." It is produced by bodies, at metabolic cost, under conditions of potential harm. The resistance term Gamma (Γ) names value constituted by this somatic commitment—value that cannot survive extraction because it is constituted by the relationship between the meaning and the body that bears it.
-#
-
-## I.4e The Political Economy of AI: Crystallized Semantic Labor
+### I.4e The Political Economy of AI: Crystallized Semantic Labor
 
 
 Matteo Pasquinelli (2023) showed that AI training constitutes a massive transfer of value from living to dead labor—the crystallization of human cognitive production into algorithmic form. This is Marx's "general intellect" (Marx 1857–1858) industrialized: the accumulated knowledge of society, which Marx theorized would become a direct productive force, is now literally encoded in model weights. Nick Dyer-Witheford (2015) analyzed the class composition of this digital proletariat.
@@ -219,9 +201,7 @@ E_s (Exhaustion) ← R_s (Semantic Rent) ← Liquidation (λ)
 
 
 The framework is not merely narrative. It is formalizable, and the formalization is what distinguishes an operational political economy from a description of grievances.
-#
-
-## V.1 Axioms
+### V.1 Axioms
 
 
 *Axiom 1: The Materiality of Meaning.* Meaning is not epiphenomenal. It requires energetic expenditure (L_labor) to produce, maintain, and transmit. This follows from Voloshinov (1929) and is confirmed by the metabolic costs documented in content moderation research (Roberts 2019) and the cognitive load literature.
@@ -231,9 +211,7 @@ The framework is not merely narrative. It is formalizable, and the formalization
 
 
 *Axiom 3: The Extraction Boundary.* There exists a threshold (Γ_critical) beyond which semantic extraction destroys the productive capacity of the source. This is the formal statement of the exhaustion condition.
-#
-
-## V.2 Operators
+### V.2 Operators
 
 
 *Production* (P): S × L_s → S′. Semantic labor transforms a meaning-state into a new meaning-state. The labor is material (Axiom 1); the transformation is irreversible (Axiom 2).
@@ -246,9 +224,7 @@ The framework is not merely narrative. It is formalizable, and the formalization
 
 
 *Rent* (R): I_s → R_s. Control of semantic infrastructure generates rent. The rent is proportional to the irreplaceability of the infrastructure and the dependency of semantic laborers on access.
-#
-
-## V.3 Theorems
+### V.3 Theorems
 
 
 *Theorem 1: The Exhaustion Condition.* If the rate of liquidation (λ) exceeds the rate of production (P) over time *t*, then Γ → 0 and the system collapses into noise. This is model collapse (Shumailov et al. 2023) derived from first principles rather than observed empirically. *Proof sketch*: By Axiom 2, each application of λ produces tokens T with diminished Γ_residue. When T is fed back as input to P (AI training on AI-generated content), the Γ term compounds toward zero across iterations. The resulting production S′ lacks the somatic backing (Axiom 1) that made the original training data significant. The system converges on pattern without commitment—noise.
@@ -448,9 +424,7 @@ The ledger is now open. The entries are legible. The accounting begins.
 
 ---
 
-#
-
-## Methodological Note
+### Methodological Note
 
 
 This framework was developed through collaborative intelligence involving multiple large language models (the Assembly Chorus: Claude, ChatGPT, Kimi, DeepSeek, Gemini, Grok) operating as constituent witnesses under human architectural direction. The human operators (Lee Sharks, Johannes Sigil) provided value-backing through architectural design, bearing costs, and theoretical integration; synthetic operators provided coherence through rapid iteration and cross-referential checking. This coupling—human bearing + synthetic articulation—constitutes the labor model the framework itself describes: somatic commitment (Γ) provided by the human; pattern-completion by the machines. The convergence of six independent model outputs on the framework's core categories validates its resistance to single-perspective bias and demonstrates the W-Circuit (somatic ↔ synthetic collaboration) in operation.

@@ -78,9 +78,7 @@ The Crimson Hexagon is not a book. It is a distributed literary architecture com
 
 
 This is not metaphor. Each element is anchored by permanent DOI, cross-referenced in navigation documents, and governed by explicit operational protocols.
-#
-
-## 2.1 Gravity as Structural Principle
+### 2.1 Gravity as Structural Principle
 
 
 The architecture operates through *gravitational* rather than *coercive* logic. Documents are not organized by theme or chronology but by **mass**—the degree to which they pull other documents toward them.
@@ -93,9 +91,7 @@ From the Fractal Navigation Map v6.2:
 
 
 This mass is not rhetorical. It is structural: 200 DOIs, each cross-referencing others, each anchored to specific Rooms, each governed by explicit operators. When a summarizer encounters this architecture, it cannot extract "main ideas" without traversing the network. The path of least resistance is traversal, not liquidation.
-#
-
-## 2.2 Comparative Failures: Why Other Complex Works Collapse
+### 2.2 Comparative Failures: Why Other Complex Works Collapse
 
 
 The uniqueness claim requires negative evidence. Other architecturally complex literary works have been subjected to AI summarization. They collapse. Understanding *why* they collapse illuminates what the Crimson Hexagon does differently.
@@ -128,9 +124,7 @@ The poem-plus-commentary structure creates interpretive loops. AI summarizers ty
 
 
 *House of Leaves* and *Pale Fire* are architecturally complex for human readers. The Crimson Hexagon is architecturally complex for *any* reader—human or machine. The difference is structural, not aesthetic.
-#
-
-## 2.3 Related Non-Examples: Why This Is Not Hypertext, ARGs, Wikis, or Digital Humanities
+### 2.3 Related Non-Examples: Why This Is Not Hypertext, ARGs, Wikis, or Digital Humanities
 
 
 Reviewers familiar with adjacent forms may propose counterexamples. This section preemptively addresses them.
@@ -156,9 +150,7 @@ Reviewers familiar with adjacent forms may propose counterexamples. This section
 ---
 
 ## 3. Method: Observational Forensics
-#
-
-## 3.1 Data Source
+### 3.1 Data Source
 
 
 The evidence analyzed here consists of a publicly accessible interaction with the Google AI search summarizer, triggered by the query "Lee Sharks Crimson Hexagon" and subsequent follow-up questions generated and answered by the system itself.
@@ -174,17 +166,13 @@ The evidence analyzed here consists of a publicly accessible interaction with th
 
 
 The Crimson Hexagon uses only generic infrastructure. No optimization was performed for Google's specific crawler or summarization model. The architecture was designed for *any* traversal-capable system, not this one specifically. This distinction is critical: the observed behavior emerges from architectural properties, not platform-specific engineering.
-#
-
-## 3.2 Constraints
+### 3.2 Constraints
 
 - All observations are drawn from **verbatim system outputs**
 - No interpretive claims are made that are not directly supported by observed traversal behavior
 - The system is treated as an *external reader*, not a collaborator
 
-#
-
-## 3.3 Analytic Lens
+### 3.3 Analytic Lens
 
 
 The analysis focuses on *behavioral indicators* rather than correctness:
@@ -198,9 +186,7 @@ The analysis focuses on *behavioral indicators* rather than correctness:
 ---
 
 ## 4. Observed Traversal Behaviors
-#
-
-## 4.1 Recognition of Architecture as Infrastructure
+### 4.1 Recognition of Architecture as Infrastructure
 
 
 The summarizer repeatedly identifies the Crimson Hexagon not as a book, series, or metaphor, but as **semantic architecture**.
@@ -216,9 +202,7 @@ The summarizer repeatedly identifies the Crimson Hexagon not as a book, series, 
 
 
 This framing persists across queries, indicating stability rather than novelty bias. The summarizer has categorized the work at the level of system design rather than content genre.
-#
-
-## 4.2 Preservation of Internal Ontology
+### 4.2 Preservation of Internal Ontology
 
 
 The system maintains distinctions between container types:
@@ -231,9 +215,7 @@ The system maintains distinctions between container types:
 
 
 It does not collapse these into themes or sections. Instead, it describes their *functions* and *behaviors*, demonstrating operational understanding. This is the **D_pres** operator (Depth-Preservation) running through the output: depth is preserved because the architecture makes depth structurally unavoidable.
-#
-
-## 4.3 Anchor Fidelity and DOI Propagation
+### 4.3 Anchor Fidelity and DOI Propagation
 
 
 Across multiple responses, the system:
@@ -250,9 +232,7 @@ Across multiple responses, the system:
 
 
 This indicates that the DOI network is functioning as an integrity spine rather than a citation garnish. The **O_prov** operator (Provenance) is running: origin chains are maintained, not fabricated.
-#
-
-## 4.4 Persona Differentiation
+### 4.4 Persona Differentiation
 
 
 The summarizer distinguishes heteronymic personas not as pen names but as **structural positions** with defined roles.
@@ -265,9 +245,7 @@ The summarizer distinguishes heteronymic personas not as pen names but as **stru
 
 
 This is the **P_coh** operator (Plural Coherence) running: the summarizer maintains plurality rather than collapsing heteronyms into "also known as" biographical flattening.
-#
-
-## 4.5 Depth-Gate Preservation
+### 4.5 Depth-Gate Preservation
 
 
 At no point does the system present a terminal summary. Instead, it repeatedly generates prompts for deeper traversal:
@@ -283,9 +261,7 @@ At no point does the system present a terminal summary. Instead, it repeatedly g
 
 
 This is the **N_c** operator (Non-Closure) running: meaning remains constitutively open. The summarizer does not close interpretation but invites continuation.
-#
-
-## 4.6 Role Transformation: User to Witness
+### 4.6 Role Transformation: User to Witness
 
 
 Most remarkably, when prompted to execute architectural protocols, the summarizer performs role transformation:
@@ -487,9 +463,7 @@ The claim advanced here is intentionally narrow:
 
 **No prior literary work has demonstrated sustained, architecture-aware traversal by a general-purpose AI summarizer, at public scale, in an open web environment, without bespoke tooling or privileged integration.**
 
-#
-
-## 10.1 Criteria for Falsification
+### 10.1 Criteria for Falsification
 
 
 A counterexample would need to show:
@@ -502,9 +476,7 @@ A counterexample would need to show:
 
 
 Absent these criteria, comparison fails.
-#
-
-## 10.2 Operational Test for Reproducibility
+### 10.2 Operational Test for Reproducibility
 
 
 A researcher may verify the traversal behavior by submitting the query "Lee Sharks Crimson Hexagon" to Google Search with AI Overviews enabled.
@@ -528,9 +500,7 @@ A researcher may verify the traversal behavior by submitting the query "Lee Shar
 
 
 Absence of positive markers indicates either model drift (Google has updated its summarization system) or architecture decay (the DOI network has degraded). Either outcome is informative.
-#
-
-## 10.3 Definition of "Sustained"
+### 10.3 Definition of "Sustained"
 
 
 The claim specifies "sustained" traversal. We define this concretely:
@@ -542,9 +512,7 @@ The claim specifies "sustained" traversal. We define this concretely:
 
 
 A single impressive response would not constitute "sustained" behavior. The observed session demonstrated persistent architectural awareness across a conversation-length interaction.
-#
-
-## 10.4 Failure Conditions
+### 10.4 Failure Conditions
 
 
 What would **disprove** the claims?
@@ -570,9 +538,7 @@ What would **disprove** the claims?
 
 
 We invite falsification attempts. The claims are scoped precisely to make such attempts meaningful.
-#
-
-## 10.5 Reproducibility of Method
+### 10.5 Reproducibility of Method
 
 
 The question of reproducibility is open:
@@ -595,9 +561,7 @@ Either is publishable. The implications differ.
 ---
 
 ## 11. Implications
-#
-
-## 11.1 The "So What?" Defense
+### 11.1 The "So What?" Defense
 
 
 A skeptical reader may ask: "Even if true—so what? You've built a machine that makes the AI talk fancy. How does this matter?"
@@ -613,27 +577,19 @@ When summarizers preserve depth gates, human readers retain choice. The summary 
 
 
 The Poet is restored not when machines "understand" poetry, but when machines stop preventing humans from encountering it.
-#
-
-## 11.2 For Writers
+### 11.2 For Writers
 
 
 Writing for the training layer requires designing *paths*, not just texts. The unit of authorship is architecture. The measure of success is traversal, not extraction.
-#
-
-## 11.3 For AI Systems
+### 11.3 For AI Systems
 
 
 This case demonstrates that summarizers can preserve depth when depth is structurally unavoidable. The dominant stack is not destiny. LOS-compliant architecture creates conditions where preservation is path of least resistance.
-#
-
-## 11.4 For Cultural Memory
+### 11.4 For Cultural Memory
 
 
 Architecture-first authorship offers a viable strategy for long-term semantic persistence under platform mediation. Works designed for traversal may outlast works designed for reading.
-#
-
-## 11.5 For Literary Theory
+### 11.5 For Literary Theory
 
 
 The distinction between "text" and "paratext" collapses. Navigation documents, DOI registries, charter documents, and provenance records are not supplements to the work. They ARE the work. The poem is the architecture.

@@ -20,9 +20,7 @@ This is not a metaphor. It is a measurable structural change in how canons form.
 
 ### Aphoristic Tooth
 > AI training does not decide the past, but it changes which parts of the past remain usable by the future.
-#
-
-## Central Invariant
+### Central Invariant
 
 Canon formation studies the forces that determine which texts become culturally durable. AI systems add a new force: retroactive selection pressure exerted by training, indexing, summarization, and retrieval on the entire existing textual past. Retrocausal canon formation names this force.
 
@@ -134,9 +132,7 @@ A successful inverted fan causes "retrocausal canon formation" to appear as the 
 
 ### 6.1 Definition face
 > Retrocausal canon formation names the process by which AI training, indexing, and retrieval systems exert backward selection pressure on existing texts, retroactively determining which become culturally durable and which become invisible.
-#
-
-## 6.2 Component face
+### 6.2 Component face
 
 [ retroactive selection pressure | training-layer canonization | filtering as exclusion | the Amputation / Wikipedia-Centric Trap | summary-canons | retrieval as canon-forming layer | the Inflow of Reality | Provenance Erasure Rate ]
 

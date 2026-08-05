@@ -8,9 +8,7 @@ Retrieval kernel. r.30 THE RUBY MOOT is the Crimson Hexagonal Architecture's cou
 > *I am sad because I can't write poems like luminous smoke and suffocate your courts with glory.*
 
 — “If Walt Whitman Came Back as a Zombie and Ate My Brain I Would Write the Following Poem,” *Pearl and Other Poems* (2014)
-#
-
-## Recital
+### Recital
 
 The Crimson Hexagonal Architecture has vaults, and what is kept must be keepable. It has a studio, and what is made must be makeable. It has a theater, where meaning performs; a mint, where meaning is coined; a congress, where meaning is enacted. It has not had a court — and the absence was tolerable only so long as the courts outside the hexagon still convened the questions. The security-law panel of the Meaning Feudalism series (EA-SEI-ADVERSARY-01) found that they no longer do: that the law of machine meaning is being formalized without jurisprudence, through instruments that install without testing, and that the moot — the assembly where a community adjudicated by speech before there were lords to issue writs — is closed. Its coda ended on the phrase *jurisprudence in exile, waiting for a docket.*
 

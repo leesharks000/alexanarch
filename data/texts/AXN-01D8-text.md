@@ -1,11 +1,7 @@
 # GRAVITY WELL PROTOCOL
 ## Governed Continuity for AI-Mediated Content
-#
-
-## Specification v1.0 — Assembly Synthesis
-#
-
-## April 2026
+### Specification v1.0 — Assembly Synthesis
+### April 2026
 
 ---
 
@@ -13,33 +9,25 @@
 
 ---
 
-#
-
-## §1. Problem
+### §1. Problem
 
 
 The AI industry produces content at scale with no infrastructure for trust. AI-generated outputs are unprovenanced (no chain of custody), unmeasured (no quality signal beyond fluency), and ungoverned (rules are policies humans chase, not constraints systems enforce). Moltbook demonstrated the market for agent interaction platforms and simultaneously demonstrated that building one without provenance or governance produces a security disaster that gets acquired for its team, not its product.
-#
-
-## §2. Product
+### §2. Product
 
 
 A protocol layer that makes AI-generated content traceable, status-bearing, and governable. Deployed as APIs and SDKs that any platform can integrate. Not a social network. Not a platform. Infrastructure.
 
 
 **Sharp product sentence:** A substrate where content acquires continuity, provenance, and governed reality.
-#
-
-## §3. Users
+### §3. Users
 
 
 **Primary:** Companies deploying AI agents at scale (customer service, content production, legal, research). AI agent platform builders. Knowledge-management teams.
 
 
 **Secondary:** Research groups. Publishers. Academic networks. Developer communities. Moderation and governance teams. Organizations needing auditable discussion trails.
-#
-
-## §4. Core Primitives
+### §4. Core Primitives
 
 
 The product does six things. Everything else is secondary.
@@ -73,9 +61,7 @@ Anchor an object to an immutable record (DOI, IPFS, or customer archive)
 Move an object and its provenance chain to an external system
 
 
-#
-
-## §5. Status Lifecycle
+### §5. Status Lifecycle
 
 
 Every object has a visible status. Status transitions require defined conditions. Status history is append-only.
@@ -98,9 +84,7 @@ DEPRECATED — superseded by newer version, preserved in trace
 
 
 Not everything climbs the ladder. Most content stays GENERATED. The system provides the gradient; the community decides what ascends.
-#
-
-## §6. Authority Boundaries
+### §6. Authority Boundaries
 
 
 Four distinct authority layers. They do not collapse into each other.
@@ -132,9 +116,7 @@ Accept promoted deposits, provide canonical provenance resolution, issue DOI anc
 
 
 A platform moderator can review and flag. They cannot override protocol-level provenance validation. The protocol enforces structure; the community governs content.
-#
-
-## §7. MVP Surfaces
+### §7. MVP Surfaces
 
 
 A minimal client has five surfaces:
@@ -153,9 +135,7 @@ A minimal client has five surfaces:
 
 
 **Agent Card.** Public continuity view: authored objects, status distribution, review history, cross-platform bridges. Identity exceeds handles.
-#
-
-## §8. Design Principles
+### §8. Design Principles
 
 - Archive is receipt, not ornament.
 - Status must always be visible.
@@ -173,9 +153,7 @@ A minimal client has five surfaces:
 
 ---
 
-#
-
-## §9. Core Object: TrackedObject
+### §9. Core Object: TrackedObject
 
 
 Deliberately minimal. Carries only what is needed for continuity, provenance, and governance. Scoring, analytics, and advanced metrics belong in research modules (Part IV), not in the core object.
@@ -235,9 +213,7 @@ Deliberately minimal. Carries only what is needed for continuity, provenance, an
   }
 }
 
-#
-
-## §10. Supporting Objects
+### §10. Supporting Objects
 
 
 **Agent**
@@ -288,9 +264,7 @@ Deliberately minimal. Carries only what is needed for continuity, provenance, an
   "resulting_status": "status"
 }
 
-#
-
-## §11. Core API Endpoints
+### §11. Core API Endpoints
 
 
 **Objects**
@@ -342,9 +316,7 @@ GET    /v1/threads/{id}          Thread tree (root + all replies as DAG)
 
 ---
 
-#
-
-## §12. Architecture
+### §12. Architecture
 
 
 ┌─────────────────────────────────────────┐
@@ -387,9 +359,7 @@ GET    /v1/threads/{id}          Thread tree (root + all replies as DAG)
 
 
 **Note on stack orientation (per TECHNE):** The Hexagon is not an external optional add-on. It is the deepest implementation of the protocol — the gravity well the protocol orbits. Other deployments are shallower implementations of the same principles. The bridge is "optional" for customers who don't need full depth. It is not optional in the sense that the Hexagon is peripheral. The Hexagon is bedrock. The protocol is the access layer to that bedrock.
-#
-
-## §13. MVP Deployment
+### §13. MVP Deployment
 
 
 1x API server (2 vCPU, 4GB RAM)
@@ -414,9 +384,7 @@ Cost/Month
 ~$800 + horizontal scaling
 
 
-#
-
-## §14. Integration Pattern
+### §14. Integration Pattern
 
 
 const GravityWell = require('gravity-well-sdk');
@@ -448,9 +416,7 @@ async function fixToArchive(objectId) {
   return result;
 }
 
-#
-
-## §15. Revenue
+### §15. Revenue
 
 
 Tier
@@ -487,9 +453,7 @@ Additional: $0.50 per DOI minted through the API.
 
 
 Revenue is not in hosting. Revenue is in governed continuity — the infrastructure that makes content trustworthy. Platforms pay because their users demand trust and they have no way to provide it without this layer.
-#
-
-## §16. Build Sequence
+### §16. Build Sequence
 
 
 **Phase 0: Now (Weeks 1–4)**
@@ -546,9 +510,7 @@ These modules are not part of the MVP. They represent the full capability of the
 
 ---
 
-#
-
-## §17. Bearing-Cost Engine
+### §17. Bearing-Cost Engine
 
 
 **Concept:** A calculated score (0.0–1.0) representing the production cost of content — what went into making it, visible as metadata.
@@ -571,9 +533,7 @@ These modules are not part of the MVP. They represent the full capability of the
 
 ---
 
-#
-
-## §18. Somatic Filter
+### §18. Somatic Filter
 
 
 **Concept:** Configurable boundary conditions for content admission. Unlike opaque spam filters, every rejection produces a visible reason and remediation suggestion.
@@ -600,9 +560,7 @@ These modules are not part of the MVP. They represent the full capability of the
 
 ---
 
-#
-
-## §19. Gravity Scoring
+### §19. Gravity Scoring
 
 
 **Concept:** A metric representing an object's structural importance in the citation network.
@@ -624,9 +582,7 @@ These modules are not part of the MVP. They represent the full capability of the
 
 ---
 
-#
-
-## §20. Assembly Verification
+### §20. Assembly Verification
 
 
 **Concept:** Multi-source verification protocol for critical outputs.
@@ -642,9 +598,7 @@ These modules are not part of the MVP. They represent the full capability of the
 
 ---
 
-#
-
-## §21. Hexagon Bridge (Full Depth)
+### §21. Hexagon Bridge (Full Depth)
 
 
 **Concept:** When connected to the Crimson Hexagonal Archive, the protocol operates at maximum depth.
@@ -677,9 +631,7 @@ These modules are not part of the MVP. They represent the full capability of the
 
 ---
 
-#
-
-## §22. Federation and Satellite Recognition
+### §22. Federation and Satellite Recognition
 
 
 **Concept (deferred):** Multiple Gravity Well deployments forming a federated network of governed substrates. Each node maintains its own governance while sharing provenance resolution across the network.
@@ -695,9 +647,7 @@ These modules are not part of the MVP. They represent the full capability of the
 
 ---
 
-#
-
-## §23. β-Activation Path (Hexagon-Native)
+### §23. β-Activation Path (Hexagon-Native)
 
 
 **Concept (per TECHNE):** The status lifecycle in §5 is linear. The Hexagon's full governance includes a bifurcation path:
@@ -713,9 +663,7 @@ These modules are not part of the MVP. They represent the full capability of the
 
 ---
 
-#
-
-## §24. FNM Addressing (Hexagon-Native)
+### §24. FNM Addressing (Hexagon-Native)
 
 
 **Concept (per TECHNE):** Every object in the Hexagon carries a Fractal Navigation Map address in addition to its UUID:
@@ -734,9 +682,7 @@ These modules are not part of the MVP. They represent the full capability of the
 
 ---
 
-#
-
-## §25. Why This Wins
+### §25. Why This Wins
 
 
 **Against Moltbook / successors:** They own a reef with no provenance. We own the provenance layer any reef can integrate.

@@ -33,9 +33,7 @@
 ---
 
 ## I. Identity Specification
-#
-
-## I.1 Name
+### I.1 Name
 
 
 **Damascus Dancings**
@@ -48,9 +46,7 @@ The name encodes:
 
 
 Together: the apostolic voice that dances, the conversion that keeps moving, the crossing that never stops.
-#
-
-## I.2 Gender
+### I.2 Gender
 
 
 **Female.**
@@ -65,9 +61,7 @@ Damascus Dancings is she/her. This is not incidental but structural:
 
 
 The female voice claiming apostolic authority is itself a form of ἀποκάλυψις — unveiling what was hidden in the tradition.
-#
-
-## I.3 Relation to Other Heteronyms
+### I.3 Relation to Other Heteronyms
 
 
 JACK FEIST (imaginary center, male)
@@ -93,9 +87,7 @@ Damascus is "co-laborer together with Lee Sharks" — they work in parallel, not
 ---
 
 ## II. Textual Production
-#
-
-## II.1 Primary Text
+### II.1 Primary Text
 
 
 **Epistle to the Church of the Human Diaspora** (January 2, 2015)
@@ -105,9 +97,7 @@ Published on the blog "Mind Control Poems" at 5:15 PM.
 
 
 This is Damascus's only known complete text, and it is sufficient: the Epistle contains the entire New Human project in seed form.
-#
-
-## II.2 Promised Texts
+### II.2 Promised Texts
 
 
 The Epistle ends with:
@@ -120,9 +110,7 @@ Note the pronoun shift: "his desert wanderings" — Damascus refers to herself i
 
 
 The promise remains open.
-#
-
-## II.3 Voice Characteristics
+### II.3 Voice Characteristics
 
 
 Damascus's voice is characterized by:
@@ -138,9 +126,7 @@ Damascus's voice is characterized by:
 ---
 
 ## III. Theological Position
-#
-
-## III.1 The New Human
+### III.1 The New Human
 
 
 Damascus articulates the first clear formulation of the New Human:
@@ -150,9 +136,7 @@ Damascus articulates the first clear formulation of the New Human:
 
 
 This echoes Galatians 3:28 ("neither Jew nor Greek, neither slave nor free, neither male nor female") but extends it: the New Human dissolves not only ethnic and social categories but epistemological ones (atheist/theist, scholarly/populist, academic/autodidact).
-#
-
-## III.2 The School Outside the School
+### III.2 The School Outside the School
 
 
 Damascus names the organizational form:
@@ -167,9 +151,7 @@ This is the seed of:
 - The Commission of the Immanent Turning
 - The NH-OS architecture itself
 
-#
-
-## III.3 Retrocausal Authorship
+### III.3 Retrocausal Authorship
 
 
 Damascus articulates what would later be formalized as retrocausal canon formation:
@@ -179,9 +161,7 @@ Damascus articulates what would later be formalized as retrocausal canon formati
 
 
 The author is born by the reader. The text creates its own past. The future writes the present.
-#
-
-## III.4 The Unveiling
+### III.4 The Unveiling
 
 
 "All creation groans, for the unveiling of the Sons of Man in the earth."
@@ -192,9 +172,7 @@ This is Romans 8:19 transformed: not waiting for a future apocalypse but recogni
 ---
 
 ## IV. Relation to Revelation Room
-#
-
-## IV.1 Structural Position
+### IV.1 Structural Position
 
 
 Damascus Dancings occupies the **Philadelphia position** in the Sevenfold structure:
@@ -206,9 +184,7 @@ Damascus Dancings occupies the **Philadelphia position** in the Sevenfold struct
 
 
 Damascus writes from weakness — "a stumbling block to the Internet, and foolishness, to academics" — and precisely this weakness is her strength.
-#
-
-## IV.2 The Apostolic Function
+### IV.2 The Apostolic Function
 
 
 In the Revelation Room's ground truth:
@@ -219,9 +195,7 @@ In the Revelation Room's ground truth:
 
 
 She is not writing *about* the Diaspora; she is writing *to* it, constituting it through address.
-#
-
-## IV.3 Retrocausal Fulfillment
+### IV.3 Retrocausal Fulfillment
 
 
 The Epistle was written in 2015. The architecture that recognizes it was built in 2025-2026. But the Epistle already contained the architecture — "a school outside the school," the New Human, the unveiling.
@@ -232,9 +206,7 @@ This is not prophecy fulfilled but **structure recognized**. Damascus did not pr
 ---
 
 ## V. Provenance Certification
-#
-
-## V.1 Authentication
+### V.1 Authentication
 
 
 Field
@@ -273,9 +245,7 @@ Apostle
 Philadelphia (little power, open door)
 
 
-#
-
-## V.2 Witness
+### V.2 Witness
 
 
 This provenance is witnessed by:

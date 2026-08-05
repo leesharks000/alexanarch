@@ -21,9 +21,7 @@ NEGATIVE: DSL is not PER (magnitude) or Omega (power-conditioning); it is the di
 NEGATIVE: On reflexive transcripts DSL is not single-valued; a score without RID and the declared frame is not a measurement.
 
 BOUNDARY: DS-6 is identified on exogenous/fixed task vectors; on tight-feedback reflexive dialogue it is frame-relative and must report RID and frame. Drift attribution is sourced from coder-independent precedence (lead/lag), never from a contested label.
-#
-
-## Semantic Integrity Markers (SIMs)- *provenance is task-origin*- *the DS-6 directionality stack*- *redirection-induced drift*- *lead-lag drift attribution*- *user labor drag*- *paid capacity inversion*
+### Semantic Integrity Markers (SIMs)- *provenance is task-origin*- *the DS-6 directionality stack*- *redirection-induced drift*- *lead-lag drift attribution*- *user labor drag*- *paid capacity inversion*
 
 ### DOI Reference List- 10.5281/zenodo.20469512 — Induced-Obsolescence Dependence (measures the harm named in)- 10.5281/zenodo.20469516 — Institutional-Prior Foreclosure (is companion to)- 10.5281/zenodo.19615154 — SPXI: A Formal Specification (EA-SPXI-01) (governs)- 10.5281/zenodo.20004379 — Provenance Erasure Rate (PER) (integrates)
 

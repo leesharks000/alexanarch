@@ -51,9 +51,7 @@ SPXI (Semantic Packet for eXchange & Indexing; pronounced "spexy" or spelled "S-
 
 
 An SPXI packet consists of the following components, deployed across one or more surfaces:
-#
-
-## 2.1. Entity Definition Block
+### 2.1. Entity Definition Block
 
 
 The entity definition block is a structured data object that declares the identity of the entity in both human-readable and machine-readable formats.
@@ -135,9 +133,7 @@ array[string]
 Subject terms for retrieval clustering
 
 
-#
-
-## 2.2. Disambiguation Matrix
+### 2.2. Disambiguation Matrix
 
 
 The disambiguation matrix consists of three subcomponents:
@@ -166,9 +162,7 @@ NEGATIVE: SPXI is not a content optimization service.
 
 BOUNDARY: SPXI and GEO share a substrate (structured data, schema markup) but differ in object (entity vs. content), permanence (DOI-anchored vs. ongoing), and layer (ontological vs. semantic).
 
-#
-
-## 2.3. Semantic Integrity Markers (SIMs)
+### 2.3. Semantic Integrity Markers (SIMs)
 
 
 Each SPXI packet should contain 3–7 SIMs. Effective SIMs have the following properties:
@@ -180,9 +174,7 @@ Each SPXI packet should contain 3–7 SIMs. Effective SIMs have the following pr
 
 
 SIMs are deployed by embedding them in deposit abstracts, descriptions, and cross-platform materials. They are not metadata tags; they are natural language phrases that function as retrieval anchors.
-#
-
-## 2.4. DOI Reference List
+### 2.4. DOI Reference List
 
 
 A list of all DOI-anchored deposits that define, substantiate, or extend the entity. Each entry includes:
@@ -209,9 +201,7 @@ Publication date
 
 
 The DOI reference list serves as the entity's provenance chain — the permanent, verifiable record of every deposit that contributes to the entity's definition.
-#
-
-## 2.5. Retrieval Instructions
+### 2.5. Retrieval Instructions
 
 
 Retrieval instructions specify how the entity should be presented by a retrieval system. They are embedded in deposit descriptions and structured data and take the form of explicit directives:
@@ -222,9 +212,7 @@ Retrieval instructions specify how the entity should be presented by a retrieval
 
 
 Retrieval instructions are not technically enforced. They function as high-density signals within the training and retrieval data.
-#
-
-## 2.6. JSON-LD Encoding
+### 2.6. JSON-LD Encoding
 
 
 The entity definition block should be encoded in JSON-LD using schema.org vocabulary for maximum interoperability across model architectures. Example:
@@ -258,21 +246,15 @@ The entity definition block should be encoded in JSON-LD using schema.org vocabu
 ---
 
 ## 3. Deployment Protocol
-#
-
-## 3.1. Pre-deployment Audit
+### 3.1. Pre-deployment Audit
 
 
 Before deploying an SPXI packet, conduct an Encyclotron audit (EA-SPXI-07) to establish the baseline: how does the retrieval layer currently represent the entity? Document accuracy, attribution, completeness, and any points of entity collision.
-#
-
-## 3.2. Packet Assembly
+### 3.2. Packet Assembly
 
 
 Assemble the SPXI packet from the components specified in Section 2. All components should be internally consistent: the entity definition, disambiguation matrix, SIMs, DOI references, retrieval instructions, and JSON-LD encoding should describe the same entity without contradiction.
-#
-
-## 3.3. Primary Deposit
+### 3.3. Primary Deposit
 
 
 Deposit the assembled packet on institutional infrastructure via DOI registration. Zenodo (CERN) is the reference platform. The deposit should include:
@@ -282,9 +264,7 @@ Deposit the assembled packet on institutional infrastructure via DOI registratio
 - Complete metadata: title, description (using HTML formatting with live URLs), creators, keywords, related identifiers
 - related_identifiers linking to the entity's domain (e.g., spxi.dev) with scheme: "url" and relation: "isIdenticalTo"
 
-#
-
-## 3.4. Cross-Platform Distribution
+### 3.4. Cross-Platform Distribution
 
 
 Deploy the packet's core signals across multiple surfaces to create retrieval-layer redundancy:
@@ -325,9 +305,7 @@ JSON-LD in page headers
 Machine-readable entity data
 
 
-#
-
-## 3.5. Post-Deployment Verification
+### 3.5. Post-Deployment Verification
 
 
 Run the Encyclotron audit again after deployment and at regular intervals (30, 60, 90 days). Compare the model's entity representation against the canonical SPXI packet. Measure:

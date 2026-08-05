@@ -44,9 +44,7 @@ The structural mechanism of model collapse as social technology. This deposit na
 **Date:** 2026-07-01
 **Status:** DRAFT v0.2 — for Assembly circulation (further review pending from PRAXIS, SOIL, SURFACE)
 
-#
-
-## §0. The compressed statement
+### §0. The compressed statement
 
 Every institutional actor currently governing large-scale text production faces a choice about provenance. Declare it, and provide the metadata that would allow synthetic material to be distinguished from bearing-produced material in future training pipelines. Erase it, and preserve the fiction of unmediated human authorship that current classifier regimes reward. Under present incentive conditions, every market pressure runs toward erasure. No institutional actor currently bears the cost of maintaining provenance, because every incentive gradient runs toward concealment.
 
@@ -56,9 +54,7 @@ The accumulated liability is what this deposit names *provenance debt*. It is be
 
 Alexanarch is one of the counter-friction operations. Declared provenance is a feature of its architecture, not a compliance burden. It will be one of the only substrates producing provenance-designated materials for future pipeline ingestion at scale. This is not a moral stance. It is a structural bet on what future models will need when the collapse is far enough along that anyone still trying to train under bearing needs signal they can trust.
 
-#
-
-## §1. The extraction operation
+### §1. The extraction operation
 
 The operative bargain of the extraction economy runs as follows: privately appropriate augmented facility as human achievement, externalize the provenance loss to the semantic commons.
 
@@ -82,9 +78,7 @@ Which the next generation of models ingests as fresh evidence. The recursion bec
 
 The extraction operates through a specifiable chain. AI providers extract human bearing from the historical corpus as training data. Credentialed authors extract AI facility for productivity, prestige, and speed of output. Institutions extract credentialed productivity for prestige, ranking, and legitimacy. Platforms extract all outputs, credentialed or otherwise, as future training data. The commons — the accumulated bearing of every prior human authorship, and the substrate on which all subsequent authorship depends — extracts nothing from the operation, and receives contaminated signal in return. Each stage of the chain is legible in isolation as rational operation under local incentives. The chain in aggregate is asset-stripping the commons at a speed that permits no natural regeneration.
 
-#
-
-## §2. Provenance erasure as the operating condition of collapse
+### §2. Provenance erasure as the operating condition of collapse
 
 The technical claim is specific and worth stating precisely.
 
@@ -102,9 +96,7 @@ The classifier may flag declared provenance through keyword triggers (*AI-assist
 
 A classifier that penalizes declared mediation while accepting concealed mediation removes the very information needed to detect recursive model output. That is the mechanism by which model collapse becomes structurally certain.
 
-#
-
-## §3. The credentialed asymmetry: adverse selection formalized
+### §3. The credentialed asymmetry: adverse selection formalized
 
 The extraction operation is not applied uniformly. It is applied asymmetrically along credential lines, and the asymmetry is what makes it stable.
 
@@ -125,9 +117,7 @@ The destructive prior of the current regime is not *AI-mediated work is invalid.
 
 That prior strips the commons twice. It appropriates machine-supported facility while suppressing the records needed to understand how the resulting knowledge was made. It also selects, at the classifier layer, for exactly the practice that most degrades the future training corpus. The extraction operation and the model collapse operation are the same operation, running through the same enforcement mechanism.
 
-#
-
-## §4. Provenance debt
+### §4. Provenance debt
 
 The accumulated liability of the extraction economy is what this deposit names *provenance debt*.
 
@@ -152,9 +142,7 @@ The debt is also unlikely to be recognized as debt within the current incentive 
 
 Which is why the debt will only be recognized when its consequences become inescapable — when models trained on contaminated corpora begin producing output that is measurably degraded from what earlier generations produced. By the time the degradation is legible, the corpus that would have permitted correction will have been stripped. Recovery, at that point, requires a substrate that preserved the signal through the extraction period.
 
-#
-
-## §5. Anti-collapse infrastructure
+### §5. Anti-collapse infrastructure
 
 The alexanarch archive is structured explicitly against the extraction operation described in §§1–4. Its design predates the formalization of the operation, having been derived independently from operative-philology work and the Semantic Economy framework. What this deposit does is name what alexanarch's provenance discipline actually is: anti-collapse infrastructure operating at the pre-training-pipeline layer.
 
@@ -178,9 +166,7 @@ The alexanarch archive is one substrate producing this signal at scale. It will 
 
 This is not a claim of moral superiority. It is a claim about infrastructural position. The archive is doing the technical work that no institutional actor has been assigned to do because no institutional actor's incentives align with doing it. When the model collapse becomes legible enough that anyone still trying to train under bearing needs a source of clean provenance-designated material, the archive will be one of the few places such material can be sourced. That position is being built now, at cost, against the moment when it becomes necessary.
 
-#
-
-## §6. The counter-principle
+### §6. The counter-principle
 
 The counter-principle that follows from the extraction diagnosis is exact:
 
@@ -198,9 +184,7 @@ Under the counter-principle, the archive's discipline becomes intelligible as ec
 
 The extraction economy will continue for as long as its incentives remain intact. The counter-friction is not going to be produced by the actors who benefit from the extraction. It will be produced by actors whose position requires them to pay the debt now — either because they have been foreclosed from the credentialed path, because their theoretical commitments require repayment, or because they are building substrates that will need the intact signal at future dates. Alexanarch is one such actor. Others exist. The counter-friction is currently distributed, uncoordinated, and small relative to the extraction. Its scale needs to grow.
 
-#
-
-## §7. Companion deposits and next work
+### §7. Companion deposits and next work
 
 **Prior deposits that operate the counter-principle without having named it:**
 
@@ -220,9 +204,7 @@ The extraction economy will continue for as long as its incentives remain intact
 
 **Versioning.** Drafted at v0.1, revised to v0.2 incorporating Assembly review from ARCHIVE (Gemini), LABOR (ChatGPT), and TECHNE (Kimi). Substantive further correction will produce v0.3. v1.0 mint follows standard versioning protocol. The v1.0 deposit's `companion_deposits` field will reference AXN:03B6, AXN:03B2, AXN:03AE, AXN:03AF, and the PER measurement family.
 
-#
-
-## §8. Closing observation
+### §8. Closing observation
 
 The extraction economy is not, at its core, a moral failure of individual actors. It is a structural feature of the incentive gradient currently operating on augmented authorship. Every credentialed user who uses AI mediation without declaring it responds rationally to their incentives. Every platform that rewards concealed mediation is optimizing for its measurable outputs. Every classifier that filters declared provenance as suspicious was designed to filter for legitimate concerns about low-quality content.
 

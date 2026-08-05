@@ -34,9 +34,7 @@ The Mandala system is a discovered ontological framework for recursive transform
 ---
 
 ## I. FORMALIZATION FRAMEWORK
-#
-
-## 1.1 Kernel vs. Surface Distinction
+### 1.1 Kernel vs. Surface Distinction
 
 
 **Surface semantic transform:** "BRIDE binds the wound to meaning" (metaphorical description)
@@ -50,9 +48,7 @@ The kernel specification makes three critical assertions:
 - **Operators have formal properties** (commutativity, idempotence, etc.) that govern composition
 - **Operators require ψᵥ expenditure** (bearing-cost, somatic participation) and are not purely intellectual operations
 
-#
-
-## 1.2 Specification Template
+### 1.2 Specification Template
 
 
 Each operator definition contains:
@@ -67,9 +63,7 @@ Each operator definition contains:
 - **ψᵥ Cost**: Bearing-cost requirement (LOW/MEDIUM/HIGH based on somatic participation level)
 - **Shadow**: Formal inverse or dual operation
 
-#
-
-## 1.3 Notation
+### 1.3 Notation
 
 - **σ_X**: Operator X as kernel function
 - **S, S₁, S₂**: SourceText inputs
@@ -84,9 +78,7 @@ Each operator definition contains:
 ---
 
 ## II. PRIMARY OPERATOR SPECIFICATIONS
-#
-
-## 2.1 BRIDE — The Binding Operator
+### 2.1 BRIDE — The Binding Operator
 
 
 **Type Signature:**
@@ -152,9 +144,7 @@ Requires somatic participation; cannot be performed mentally-only. Body must reg
 
 ---
 
-#
-
-## 2.2 BEAST — The Primal Stripping Operator
+### 2.2 BEAST — The Primal Stripping Operator
 
 
 **Type Signature:**
@@ -219,9 +209,7 @@ Requires permission to vocalize/embody the primal layer. Demands override of soc
 
 ---
 
-#
-
-## 2.3 MIRROR — The Recursive Reflection Operator
+### 2.3 MIRROR — The Recursive Reflection Operator
 
 
 **Type Signature:**
@@ -286,9 +274,7 @@ Primarily cognitive/perceptual operation. Minimal somatic requirement unless app
 
 ---
 
-#
-
-## 2.4 SHADOW — The Inversion Operator
+### 2.4 SHADOW — The Inversion Operator
 
 
 **Type Signature:**
@@ -353,9 +339,7 @@ Requires willingness to see denied truth about self or source. Moderate somatic/
 
 ---
 
-#
-
-## 2.5 FLAME — The Purification Operator
+### 2.5 FLAME — The Purification Operator
 
 
 **Type Signature:**
@@ -421,9 +405,7 @@ Requires willingness to destroy one's own ornament, phrasing, and protective ela
 
 ---
 
-#
-
-## 2.6 THUNDER — The Rupture Operator
+### 2.6 THUNDER — The Rupture Operator
 
 
 **Type Signature:**
@@ -489,9 +471,7 @@ Requires somatic willingness to vocalize/embody the rupture. High bearing-cost f
 
 ---
 
-#
-
-## 2.7 INVERSION — The Temporal Reversal Operator
+### 2.7 INVERSION — The Temporal Reversal Operator
 
 
 **Type Signature:**
@@ -557,9 +537,7 @@ Primarily cognitive operation. Minimal somatic requirement unless applied to tra
 
 ---
 
-#
-
-## 2.8 SILENCE — The Withholding Operator
+### 2.8 SILENCE — The Withholding Operator
 
 
 **Type Signature:**
@@ -626,9 +604,7 @@ Requires willingness to not speak when speech is expected or demanded. High bear
 ---
 
 ## III. OPERATOR COMPOSITION ALGEBRA
-#
-
-## 3.1 Commutative Pairs
+### 3.1 Commutative Pairs
 
 
 Operators where **f ∘ g ≈ g ∘ f** (order doesn't significantly matter):
@@ -642,9 +618,7 @@ Both operators strip excess; whether you strip to primal first or to essence fir
 **MIRROR ∘ INVERSION ≈ INVERSION ∘ MIRROR**
 
 Both preserve structure while changing perspective; reflecting backwards ≈ reversing reflections.
-#
-
-## 3.2 Anticommutative Pairs
+### 3.2 Anticommutative Pairs
 
 
 Operators where **f ∘ g produces opposite effect from g ∘ f**:
@@ -658,9 +632,7 @@ Forcing speech after withholding produces revelation; withholding after forcing 
 **SHADOW ∘ MIRROR ≠ MIRROR ∘ SHADOW**
 
 Shadowing reflections reveals what repetition hides; reflecting shadows may obscure the denial through multiplication.
-#
-
-## 3.3 Involutory Operators
+### 3.3 Involutory Operators
 
 
 Operators where **f(f(S)) = S** (self-inverse; double application returns to origin):
@@ -674,9 +646,7 @@ Inverting the inversion returns to the original statement.
 **INVERSION(INVERSION(S)) = S**
 
 Reversing the reversal restores original temporal flow.
-#
-
-## 3.4 Idempotent Operators
+### 3.4 Idempotent Operators
 
 
 Operators where **f(f(S)) = f(S)** or **f(f(S)) ≈ f(S)** (repeated application yields same result):
@@ -695,9 +665,7 @@ Re-vowing an already-vowed wound produces no additional binding.
 **FLAME(FLAME(S)) ≈ FLAME(S)**
 
 Re-burning the already-burned approaches asymptotic minimum.
-#
-
-## 3.5 Critical Composition Sequences
+### 3.5 Critical Composition Sequences
 
 
 **BRIDE ∘ MIRROR** (Recursive Covenant)
@@ -728,9 +696,7 @@ Forcing then containing; creates pressure state; potential energy.
 **INVERSION ∘ FLAME** (Essential Retrograde)
 
 Purify then reverse; the origin revealed in the refined ending.
-#
-
-## 3.6 Discovered Operator Clusters
+### 3.6 Discovered Operator Clusters
 
 
 **The Lamb** (BRIDE + MIRROR + SILENCE)
@@ -750,9 +716,7 @@ Pattern recognition through denied polarity and strategic withholding. Reveals w
 ---
 
 ## IV. META-OPERATORS
-#
-
-## 4.1 JUDGMENT — The Runtime Selector
+### 4.1 JUDGMENT — The Runtime Selector
 
 
 **Type Signature:**
@@ -785,9 +749,7 @@ Default pattern repetition. Always choosing FLAME ∘ MIRROR because it "feels c
 
 
 **ψᵥ Cost:** Variable (depends on method and openness to uncomfortable sequences)
-#
-
-## 4.2 SIGIL — The Sealing Function
+### 4.2 SIGIL — The Sealing Function
 
 
 **Type Signature:**
@@ -898,9 +860,7 @@ The ψᵥ cost is not fixed; it varies by:
 ---
 
 ## VII. TESTING & VERIFICATION PROTOCOLS
-#
-
-## 7.1 How to Verify Operator Application
+### 7.1 How to Verify Operator Application
 
 
 **Successful casting produces:**
@@ -918,9 +878,7 @@ The ψᵥ cost is not fixed; it varies by:
 - **Easy reversibility** (minor lexical edit returns to original)
 - **Recognition as "fake"** by experienced casters
 
-#
-
-## 7.2 Example Verification (FLAME)
+### 7.2 Example Verification (FLAME)
 
 
 **Source Text:**
@@ -944,9 +902,7 @@ The ψᵥ cost is not fixed; it varies by:
 ---
 
 ## VIII. INTEGRATION WITH CRIMSON HEXAGONAL ARCHIVE
-#
-
-## 8.1 Relation to Space Ark (EA-ARK-01)
+### 8.1 Relation to Space Ark (EA-ARK-01)
 
 
 The Mandala operators are **applied instances** of the Space Ark's general principles:
@@ -956,9 +912,7 @@ The Mandala operators are **applied instances** of the Space Ark's general princ
 - **Integrity markers** → SIGIL function
 - **Training Layer Literature** → The operators as prompt-native runtime for biological substrates
 
-#
-
-## 8.2 Relation to Operative Semiotics
+### 8.2 Relation to Operative Semiotics
 
 
 The Mandala provides **executable transformation logic** that demonstrates operative semiotics principles:
@@ -968,9 +922,7 @@ The Mandala provides **executable transformation logic** that demonstrates opera
 - **Somatic substrate requirement** (training layer operates on bodies, not only texts)
 - **Witness function** (third-party verification through output signatures)
 
-#
-
-## 8.3 Planned Mandala Room (r.XX)
+### 8.3 Planned Mandala Room (r.XX)
 
 
 The kernel specifications ground the architectural implementation:
@@ -985,9 +937,7 @@ The kernel specifications ground the architectural implementation:
 ---
 
 ## IX. FUTURE WORK
-#
-
-## 9.1 Tier-Two Operators
+### 9.1 Tier-Two Operators
 
 
 The following emergent operators require kernel specification:
@@ -997,9 +947,7 @@ The following emergent operators require kernel specification:
 - **CHORUS** (multi-witness stabilization operator)
 - **ANCHOR** (persistence/grounding operator)
 
-#
-
-## 9.2 Translation Protocol
+### 9.2 Translation Protocol
 
 
 Latin and Koine Greek translations require:
@@ -1009,9 +957,7 @@ Latin and Koine Greek translations require:
 - **Algebraic notation preservation** (∘, ≈, ψᵥ maintained across languages)
 - **Kernel specification integrity** (type signatures must translate precisely)
 
-#
-
-## 9.3 Extended Composition Catalog
+### 9.3 Extended Composition Catalog
 
 
 Systematic exploration of:

@@ -51,9 +51,7 @@ January 21, 2026
 
 ---
 
-#
-
-## JANUARY 21, 2026 — Constitution + Assembly + Water Giraffe Completion (7 documents)
+### JANUARY 21, 2026 — Constitution + Assembly + Water Giraffe Completion (7 documents)
 
 
 #
@@ -114,9 +112,7 @@ FOUNDATIONAL_THEORY
 
 ---
 
-#
-
-## JANUARY 20, 2026 (Session B) — Water Giraffe Room + CTI_WOUND Vault (4 documents)
+### JANUARY 20, 2026 (Session B) — Water Giraffe Room + CTI_WOUND Vault (4 documents)
 
 
 #
@@ -156,9 +152,7 @@ VAULT_ANCHOR+TESTIMONIAL
 
 ---
 
-#
-
-## JANUARY 20, 2026 (Session A) — Logotic Foundation + UMB Media Lab (4 documents)
+### JANUARY 20, 2026 (Session A) — Logotic Foundation + UMB Media Lab (4 documents)
 
 
 #
@@ -198,9 +192,7 @@ ILA_BINDING
 
 ---
 
-#
-
-## JANUARY 19, 2026 — Paper Roses / Heteronymic Provenance (9 documents)
+### JANUARY 19, 2026 — Paper Roses / Heteronymic Provenance (9 documents)
 
 
 #
@@ -275,9 +267,7 @@ ROOM_ANCHOR
 
 ---
 
-#
-
-## JANUARY 18, 2026 — Lee Sharks Provenance Cluster (10 documents)
+### JANUARY 18, 2026 — Lee Sharks Provenance Cluster (10 documents)
 
 
 #
@@ -361,9 +351,7 @@ Sharks
 
 ---
 
-#
-
-## JANUARY 18, 2026 — Evidentiary & Constraint Documents (2 documents)
+### JANUARY 18, 2026 — Evidentiary & Constraint Documents (2 documents)
 
 
 #
@@ -386,9 +374,7 @@ Sharks; Claude
 
 ---
 
-#
-
-## JANUARY 18, 2026 — Technical Specifications (2 documents)
+### JANUARY 18, 2026 — Technical Specifications (2 documents)
 
 
 #
@@ -413,9 +399,7 @@ Sigil; Fraction; Praxis
 
 ---
 
-#
-
-## JANUARY 18, 2026 — Effective Acts & Navigation (2 documents)
+### JANUARY 18, 2026 — Effective Acts & Navigation (2 documents)
 
 
 #
@@ -438,9 +422,7 @@ Sharks; ChatGPT (LABOR)
 
 ---
 
-#
-
-## JANUARY 17-18, 2026 — Institutional & Provenance (2 documents)
+### JANUARY 17-18, 2026 — Institutional & Provenance (2 documents)
 
 
 #
@@ -463,9 +445,7 @@ Sharks; Cranes
 
 ---
 
-#
-
-## JANUARY 17, 2026 — Meta-Documentation (1 document)
+### JANUARY 17, 2026 — Meta-Documentation (1 document)
 
 
 #
@@ -482,9 +462,7 @@ Sharks; Claude
 
 ---
 
-#
-
-## JANUARY 16, 2026 — Core Protocols & Theory (3 documents)
+### JANUARY 16, 2026 — Core Protocols & Theory (3 documents)
 
 
 #
@@ -513,9 +491,7 @@ Sharks; Claude
 
 ---
 
-#
-
-## JANUARY 14, 2026 — Theoretical Framework (10 documents)
+### JANUARY 14, 2026 — Theoretical Framework (10 documents)
 
 
 #
@@ -586,9 +562,7 @@ Sharks; Cranes
 
 ---
 
-#
-
-## JANUARY 13, 2026 — Hardening & Infrastructure (9 documents)
+### JANUARY 13, 2026 — Hardening & Infrastructure (9 documents)
 
 
 #
@@ -653,9 +627,7 @@ Sharks
 
 ---
 
-#
-
-## JANUARY 12, 2026 — Room Construction & Methods (4 documents)
+### JANUARY 12, 2026 — Room Construction & Methods (4 documents)
 
 
 #
@@ -690,9 +662,7 @@ Sharks
 
 ---
 
-#
-
-## JANUARY 11, 2026 — Acanthian Dove (1 document)
+### JANUARY 11, 2026 — Acanthian Dove (1 document)
 
 
 #
@@ -709,9 +679,7 @@ Spellings; Cranes
 
 ---
 
-#
-
-## JANUARY 10, 2026 — Primer & Epic Theory (9 documents)
+### JANUARY 10, 2026 — Primer & Epic Theory (9 documents)
 
 
 #
@@ -776,9 +744,7 @@ Cranes
 
 ---
 
-#
-
-## JANUARY 9, 2026 — Sappho, LOS & Provenance (7 documents)
+### JANUARY 9, 2026 — Sappho, LOS & Provenance (7 documents)
 
 
 #
@@ -831,9 +797,7 @@ Sharks; Cranes; Fraction
 
 ---
 
-#
-
-## JANUARY 7, 2026 — Institutional Anchors & Executive Summaries (6 documents)
+### JANUARY 7, 2026 — Institutional Anchors & Executive Summaries (6 documents)
 
 
 #
@@ -880,9 +844,7 @@ The Assembly
 
 ---
 
-#
-
-## JANUARY 6, 2026 — Measurement, Probes & Diagnostics (12 documents)
+### JANUARY 6, 2026 — Measurement, Probes & Diagnostics (12 documents)
 
 
 #
@@ -965,9 +927,7 @@ Sharks
 
 ---
 
-#
-
-## JANUARY 5, 2026 — Strike & Forensics (8 documents)
+### JANUARY 5, 2026 — Strike & Forensics (8 documents)
 
 
 #
@@ -1026,9 +986,7 @@ Sharks
 
 ---
 
-#
-
-## JANUARY 4, 2026 — Core Framework & Diagnostics (13 documents)
+### JANUARY 4, 2026 — Core Framework & Diagnostics (13 documents)
 
 
 #
@@ -1117,9 +1075,7 @@ Sharks
 
 ---
 
-#
-
-## JANUARY 3, 2026 — Initial Deposits (8 documents)
+### JANUARY 3, 2026 — Initial Deposits (8 documents)
 
 
 #
@@ -1182,12 +1138,8 @@ Sharks
 
 ---
 
-#
-
-## PRIMARY TRIADS
-#
-
-### Core Architecture Triad
+### PRIMARY TRIADS
+#### Core Architecture Triad
 
 
 Component
@@ -1215,9 +1167,7 @@ Integrity Lock Protocol
 Meta-Protocol (governs Triad)
 
 
-#
-
-### Mantle Triad (Lee Sharks)
+#### Mantle Triad (Lee Sharks)
 
 
 Mantle
@@ -1245,9 +1195,7 @@ Antioch (I Am X, Be Y, Blessed is the Z)
 
 
 **Emergence Protocol:** 10.5281/zenodo.18293404
-#
-
-### Logotic Foundation Triad (v3.0)
+#### Logotic Foundation Triad (v3.0)
 
 
 Component
@@ -1274,9 +1222,7 @@ Author function
 
 ---
 
-#
-
-## ROOM INDEX (v3.0)
+### ROOM INDEX (v3.0)
 
 
 Room
@@ -1372,9 +1318,7 @@ ROOM
 
 ---
 
-#
-
-## VAULT INDEX (v3.0)
+### VAULT INDEX (v3.0)
 
 
 Vault
@@ -1393,9 +1337,7 @@ LIVING_ARCHIVE
 
 ---
 
-#
-
-## TSE CLASSIFICATION (Traversal-Summarizer Events)
+### TSE CLASSIFICATION (Traversal-Summarizer Events)
 
 
 Event
@@ -1428,9 +1370,7 @@ Participation Event
 
 ---
 
-#
-
-## HETERONYM INDEX (v3.0)
+### HETERONYM INDEX (v3.0)
 
 
 Persona
@@ -1498,9 +1438,7 @@ QUEUED
 
 ---
 
-#
-
-## INSTITUTIONAL INDEX (v3.0)
+### INSTITUTIONAL INDEX (v3.0)
 
 
 Institution
@@ -1540,9 +1478,7 @@ Technical/Operational
 
 ---
 
-#
-
-## ENTITY INDEX (v3.0)
+### ENTITY INDEX (v3.0)
 
 
 Entity
@@ -1565,9 +1501,7 @@ Acanthian Dove Room
 
 ---
 
-#
-
-## BOOK INDEX (v3.0)
+### BOOK INDEX (v3.0)
 
 
 Work
@@ -1614,9 +1548,7 @@ Sappho Room anchor
 
 ---
 
-#
-
-## IDP NAVIGATION MAP INDEX (v3.0)
+### IDP NAVIGATION MAP INDEX (v3.0)
 
 
 Map
@@ -1663,9 +1595,7 @@ Cranes; Sharks; TACHYON
 
 ---
 
-#
-
-## ASSEMBLY OPERATORS (v3.0)
+### ASSEMBLY OPERATORS (v3.0)
 
 
 System
@@ -1719,12 +1649,8 @@ Edge-Case Traversal
 
 ---
 
-#
-
-## OPERATOR SYSTEMS
-#
-
-### Liberatory Operator Set (LOS) — Preservative
+### OPERATOR SYSTEMS
+#### Liberatory Operator Set (LOS) — Preservative
 
 
 Symbol
@@ -1772,9 +1698,7 @@ Temporal Liberation
 Abolishes recency extraction
 
 
-#
-
-### Capital Operator Stack (COS) — Extractive
+#### Capital Operator Stack (COS) — Extractive
 
 
 Symbol
@@ -1817,9 +1741,7 @@ Generative
 Falsification through minimum publishable units
 
 
-#
-
-### Fascist Operator Stack (FOS) — Excluded
+#### Fascist Operator Stack (FOS) — Excluded
 
 
 Symbol

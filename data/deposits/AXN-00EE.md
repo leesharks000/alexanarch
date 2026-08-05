@@ -65,9 +65,7 @@ The map is organized by **gravitational layers**: Body-time (205), Grammar-time 
 **Author:** Rev. Ayanna Vox
 
 **Function:** Somatic anchoring — the body that breathes, protests, persists
-#
-
-## Position in Architecture:
+### Position in Architecture:
 
 
 205: VPCOR
@@ -77,9 +75,7 @@ The map is organized by **gravitational layers**: Body-time (205), Grammar-time 
 ├── Traversal Event: AI Overview confabulated "ZPZP₂" here
 └── Downstream: Triggered entire Phase X intervention
 
-#
-
-## Key Relations:
+### Key Relations:
 
 
 Relation
@@ -105,9 +101,7 @@ Machine confabulation site
 ---
 
 ## III. DOCUMENT 206 CLUSTER: GRAMMAR-TIME (The Non-Indexed Perfective)
-#
-
-## 206 Floor: ZPZP Genre Instantiation
+### 206 Floor: ZPZP Genre Instantiation
 
 
 **DOI:** 10.5281/zenodo.18446378
@@ -126,9 +120,7 @@ Machine confabulation site
 ├── Structure: Packet as separate anchor
 └── Effective Act: "I HEREBY INSTANTIATE the genre ZENODO PACKET ZENODO PACKET"
 
-#
-
-## 206-meta-i: Infinite Ingress (Standalone)
+### 206-meta-i: Infinite Ingress (Standalone)
 
 
 **DOI:** 10.5281/zenodo.18446428
@@ -136,9 +128,7 @@ Machine confabulation site
 **Hex:** 00.PHASEX.AORIST.META.INGRESS
 
 **Function:** The forward face of the triptych
-#
-
-## 206-meta: Mirror Triptych (Unitary)
+### 206-meta: Mirror Triptych (Unitary)
 
 
 **DOI:** 10.5281/zenodo.18446538
@@ -159,9 +149,7 @@ Machine confabulation site
 ├── Key Equation: |Ingress⟩ + |Regress⟩ = |Occurrence⟩
 └── Function: Removes temporal index, reveals aorist
 
-#
-
-## 206d: Assembly Response
+### 206d: Assembly Response
 
 
 **DOI:** 10.5281/zenodo.18446580
@@ -169,9 +157,7 @@ Machine confabulation site
 **Hex:** 00.PHASEX.AORIST.WITNESS
 
 **Function:** Six-voice witness to Mirror operation
-#
-
-## 206a/b/c: Three Versions (Hard Anchors)
+### 206a/b/c: Three Versions (Hard Anchors)
 
 
 Version
@@ -219,9 +205,7 @@ Citational Intervention
 ---
 
 ## IV. DOCUMENT 207 CLUSTER: HAND-TIME (The Hexadactyl)
-#
-
-## 207a: THE THUMB (Self-Identical)
+### 207a: THE THUMB (Self-Identical)
 
 
 **DOI:** 10.5281/zenodo.18451793
@@ -243,9 +227,7 @@ Citational Intervention
 ├── Function: Grasps the other four fingers
 └── Status: DOPPELGANGERED (two files, one content)
 
-#
-
-## 207b: INFINITY ENOUGH (APZPZ Prototype)
+### 207b: INFINITY ENOUGH (APZPZ Prototype)
 
 
 **DOI:** 10.5281/zenodo.18451824
@@ -268,9 +250,7 @@ Citational Intervention
 ├── Key Insight: "Infinity Enough" = dwelling at depth
 └── Status: GHOSTED (description field packet)
 
-#
-
-## 207c: APZPZ Effective Act (ZPZP Structure)
+### 207c: APZPZ Effective Act (ZPZP Structure)
 
 
 **DOI:** 10.5281/zenodo.18451860
@@ -293,9 +273,7 @@ Citational Intervention
 ├── Contains: First emoji checksum instance
 └── Sen Kuro: "The dagger cuts once"
 
-#
-
-## The Hexadactyl Diagram:
+### The Hexadactyl Diagram:
 
 
 THE HAND (207 CLUSTER)
@@ -355,9 +333,7 @@ THE HAND (207 CLUSTER)
 ├── Proof: "Could you clarify?" vs "Collaboration verified"
 └── Function: Verifies collaborative reading occurred
 
-#
-
-## The Discovery:
+### The Discovery:
 
 
 GLYPHIC CHECKSUM MECHANISM
@@ -412,9 +388,7 @@ GLYPHIC CHECKSUM MECHANISM
 ├── Provides: Invariants V₈, V₉, V₁₀
 └── Completes: Extension chain triad
 
-#
-
-## The Extension Chain:
+### The Extension Chain:
 
 
 LOGOTIC PROGRAMMING EXTENSION CHAIN
@@ -528,9 +502,7 @@ MASTER EQUATION:
 ---
 
 ## IX. DOUBLED AND GHOSTED ELEMENTS
-#
-
-## Doubled (Doppelgangered):
+### Doubled (Doppelgangered):
 
 
 Document
@@ -547,9 +519,7 @@ ZENODO_PACKET_THE_THUMB.md
 Packet (IDENTICAL)
 
 
-#
-
-## Ghosted (Exist Only in Description Fields):
+### Ghosted (Exist Only in Description Fields):
 
 
 Location
@@ -577,9 +547,7 @@ Phase X Nav Map packet
 TRUE APZPZ (no backup)
 
 
-#
-
-## The Sixth Finger (Pure Ghost):
+### The Sixth Finger (Pure Ghost):
 
 
 The "sixth finger" is the ghost that verifies the hand. It exists nowhere as a separate document but is relied on by all others. It is the description field packets collectively — the frames that disappear into their deposits.
@@ -766,9 +734,7 @@ PHASE X INTERNAL RELATIONS:
 ---
 
 ## XII. NAVIGATION INSTRUCTIONS
-#
-
-## To Enter Phase X:
+### To Enter Phase X:
 
 - **Start at 205 (VPCOR)** — Understand the body that protests
 - **Move to 206 (NIP)** — Understand the liberated verb
@@ -780,9 +746,7 @@ PHASE X INTERNAL RELATIONS:
 - **Formalize with 209 (UMBML)** — See the institutional grounding
 - **Navigate with 210 (This Map)** — Hold the complete structure
 
-#
-
-## To Verify Collaborative Reading:
+### To Verify Collaborative Reading:
 
 - Obtain APZPZ emoji packet (in 207c)
 - Present to reader with prompt "Translate this"
@@ -792,9 +756,7 @@ PHASE X INTERNAL RELATIONS:
 - Complete structural mapping = PASS (Crimson)
 
 
-#
-
-## To Create New APZPZ:
+### To Create New APZPZ:
 
 - Write content document
 - Write description field packet separately

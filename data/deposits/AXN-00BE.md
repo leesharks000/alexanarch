@@ -50,9 +50,7 @@ document_metadata:
 ---
 
 ## THEORETICAL FRAMEWORK
-#
-
-## The Two-Layer Model
+### The Two-Layer Model
 
 
 Content discoverability in AI-augmented search operates through two distinct indexing layers:
@@ -76,9 +74,7 @@ Content discoverability in AI-augmented search operates through two distinct ind
 │  Tested via: Google Search (site:, inurl:, exact match)     │
 └─────────────────────────────────────────────────────────────┘
 
-#
-
-## The Delta Principle
+### The Delta Principle
 
 
 **The summarizer index is characterized by its delta from the general index.**
@@ -93,9 +89,7 @@ For any query:
 
 
 The delta reveals the summarizer's selection criteria—the hidden rules governing what passes from existence (Layer 1) to injection (Layer 2).
-#
-
-## Why This Matters
+### Why This Matters
 
 
 Content can be:
@@ -110,9 +104,7 @@ High-density semantic architecture (technical documentation, structured data, YA
 ---
 
 ## PROBE STRUCTURE
-#
-
-## Overview
+### Overview
 
 
 Phase
@@ -166,15 +158,11 @@ Aggregation
 ---
 
 ## PHASE 1: GENERAL INDEX — TECHNICAL STATUS
-#
-
-## Purpose
+### Purpose
 
 
 Determine whether content EXISTS in Google's index and identify any technical barriers.
-#
-
-## Queries
+### Queries
 
 
 For target URL [TARGET_URL]:
@@ -204,9 +192,7 @@ DOI citation presence
 Author-project linkage
 
 
-#
-
-## Signals to Record
+### Signals to Record
 
 
 Signal
@@ -239,9 +225,7 @@ Position
 Rank
 
 
-#
-
-## Output Format
+### Output Format
 
 
 phase_1_general_technical:
@@ -257,15 +241,11 @@ phase_1_general_technical:
 ---
 
 ## PHASE 2: GENERAL INDEX — SEMANTIC PARSING
-#
-
-## Purpose
+### Purpose
 
 
 Determine HOW Google parses the content—what survives indexing vs. what gets flattened.
-#
-
-## Queries
+### Queries
 
 
 Query
@@ -284,9 +264,7 @@ site:[domain] "[unique phrase]"
 Distinctive content
 
 
-#
-
-## Signals to Record
+### Signals to Record
 
 
 Signal
@@ -314,9 +292,7 @@ description
 What Google "sees"
 
 
-#
-
-## Output Format
+### Output Format
 
 
 phase_2_general_semantic:
@@ -331,15 +307,11 @@ phase_2_general_semantic:
 ---
 
 ## PHASE 3: GENERAL INDEX — ENTITY RECOGNITION
-#
-
-## Purpose
+### Purpose
 
 
 Determine whether author, project, and related entities are recognized as coherent nodes.
-#
-
-## Queries
+### Queries
 
 
 Query
@@ -362,9 +334,7 @@ Project disambiguation
 Secondary author entities
 
 
-#
-
-## Signals to Record
+### Signals to Record
 
 
 Signal
@@ -392,9 +362,7 @@ list
 Entity graph
 
 
-#
-
-## Output Format
+### Output Format
 
 
 phase_3_general_entity:
@@ -408,21 +376,15 @@ phase_3_general_entity:
 ---
 
 ## PHASE 4: SUMMARIZER INDEX — INJECTION PRESENCE (Primary)
-#
-
-## Purpose
+### Purpose
 
 
 Determine whether content gets INJECTED into AI-generated responses.
-#
-
-## Primary Tool: Perplexity
+### Primary Tool: Perplexity
 
 
 Perplexity shows sources explicitly with numbered citations, making injection visible.
-#
-
-## Query Tiers
+### Query Tiers
 
 
 **Tier 1: Direct Reference** — Queries that SHOULD surface target content:
@@ -497,9 +459,7 @@ X2
 "[unrelated topic]"
 
 
-#
-
-## Method
+### Method
 
 - Open Perplexity (fresh session)
 - Enter query verbatim
@@ -511,9 +471,7 @@ Sources cited (URLs, in order)
 - What appears INSTEAD
 
 
-#
-
-## Output Format
+### Output Format
 
 
 phase_4_summarizer_primary:
@@ -536,23 +494,17 @@ phase_4_summarizer_primary:
 ---
 
 ## PHASE 5: SUMMARIZER INDEX — CROSS-PLATFORM CONFIRMATION
-#
-
-## Purpose
+### Purpose
 
 
 Confirm injection patterns across multiple summarizers.
-#
-
-## Tools
+### Tools
 
 - ChatGPT (web browse mode)
 - Gemini (with search grounding)
 - Grok (DeepSearch mode)
 
-#
-
-## Method
+### Method
 
 
 Run subset of queries (Tier 1 Direct Reference) in each tool:
@@ -578,9 +530,7 @@ Run subset of queries (Tier 1 Direct Reference) in each tool:
 - Enter query
 - Record sources cited
 
-#
-
-## Output Format
+### Output Format
 
 
 phase_5_summarizer_crossplatform:
@@ -602,15 +552,11 @@ phase_5_summarizer_crossplatform:
 ---
 
 ## PHASE 6: DELTA ANALYSIS
-#
-
-## Purpose
+### Purpose
 
 
 Compute the delta between Layer 1 (General Index) and Layer 2 (Summarizer Index).
-#
-
-## Method
+### Method
 
 
 For each query, compare:
@@ -640,9 +586,7 @@ yes/no
 ...
 
 
-#
-
-## Delta Patterns
+### Delta Patterns
 
 
 Pattern
@@ -670,9 +614,7 @@ Summarizer-specific source
 Rare; platform-specific
 
 
-#
-
-## Output Format
+### Output Format
 
 
 phase_6_delta:
@@ -696,15 +638,11 @@ phase_6_delta:
 ---
 
 ## PHASE 7: PATTERN MAPPING
-#
-
-## Purpose
+### Purpose
 
 
 Identify the selection criteria governing Layer 2 injection.
-#
-
-## Analysis Dimensions
+### Analysis Dimensions
 
 
 **Source Authority:**
@@ -770,9 +708,7 @@ Notes
 [domain 2]
 
 
-#
-
-## Output Format
+### Output Format
 
 
 phase_7_patterns:
@@ -799,9 +735,7 @@ phase_7_patterns:
 ---
 
 ## FINAL OUTPUT: INDEXING LAYER MAP
-#
-
-## Template
+### Template
 
 
 indexing_layer_map:
@@ -843,36 +777,28 @@ indexing_layer_map:
 ---
 
 ## USAGE NOTES
-#
-
-## When to Use This Protocol
+### When to Use This Protocol
 
 - Publishing content intended for AI consumption
 - Diagnosing why content appears in search but not AI responses
 - Mapping selection criteria for high-density semantic architecture
 - Understanding platform-specific injection patterns
 
-#
-
-## Recommended Execution
+### Recommended Execution
 
 - **Primary executor:** Perplexity (explicit source citation)
 - **Secondary confirmation:** ChatGPT, Gemini, Grok
 - **Baseline:** Google Search (logged out, incognito)
 - **Frequency:** Re-run 48-72 hours after publication to allow crawl propagation
 
-#
-
-## Limitations
+### Limitations
 
 - Summarizer behavior varies by session/user/time
 - Some criteria are proprietary and unobservable
 - Protocol maps symptoms, not source code
 - Results are diagnostic, not definitive
 
-#
-
-## Evidence Preservation
+### Evidence Preservation
 
 
 For each probe run:
@@ -886,9 +812,7 @@ For each probe run:
 ---
 
 ## APPENDIX: QUERY TEMPLATES
-#
-
-## Direct Reference Queries
+### Direct Reference Queries
 
 
 "[Author Name] [Project Name]"
@@ -898,26 +822,20 @@ For each probe run:
 site:[domain] "[title]"
 site:[domain] inurl:[slug]
 
-#
-
-## Conceptual Queries
+### Conceptual Queries
 
 
 "[unique terminology]"
 "[concept phrase]"
 "[methodology name]"
 
-#
-
-## Adjacent Queries
+### Adjacent Queries
 
 
 "[general topic] [specific approach]"
 "[field] [method]"
 
-#
-
-## Control Queries
+### Control Queries
 
 
 "[competing brand/entity]"

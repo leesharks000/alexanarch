@@ -62,9 +62,7 @@ One precision, because it strengthens the argument: Marx is not "apolitical meth
 
 
 "Anti-Marx" and "pro-Marx" participate in the same liquidation. The method dies equally whether you wave the flag or burn it.
-#
-
-## The Formal Taxonomy
+### The Formal Taxonomy
 
 
 The distinction has a formal name. Marx-as-method is a **Strange Attractor**: infinitely complex, never repeating, sensitive to initial conditions. The method — historical materialism, critique of political economy, contradiction analysis — produces unpredictable swerves when applied to specific conjunctures. It cannot be stored, only activated. It is inexhaustible because it requires living application (praxis).
@@ -111,9 +109,7 @@ The Liquidation Event: the transformation of Marx from Strange Attractor to Poin
 
 
 Liberation philology works at the level of the signifier. The liquidation of Marx is traceable in grammar, morphology, and syntax.
-#
-
-## A. The Morphological Drift
+### A. The Morphological Drift
 
 
 The sign transforms across grammatical forms, and each transformation strips another layer of method:
@@ -141,9 +137,7 @@ The sign transforms across grammatical forms, and each transformation strips ano
 
 
 The diagnostic rule: when the discourse shifts from procedural syntax ("Marx analyzes...," "a Marxian reading of...") to substantive syntax ("Marxism is...," "Marxists believe..."), the method is being liquidated. The more "Marx" appears as a camp noun and the less it appears as an analytic verb or adjective, the more complete the liquidation.
-#
-
-## B. The Prepositional Violence
+### B. The Prepositional Violence
 
 
 The Prepositional Alienation diagnosed in the parent document operates here with full force.
@@ -159,9 +153,7 @@ The English reception of Marx is systematically organized by the "for/against" s
 
 
 The "Marxian Move" — the specific grammatical operation that Marx performs — is an **Aorist Cut** that separates Function from Intent. Marx does not ask "What are you *for*?" He asks "What does the structure *do*?" The Aorist Cut reveals the extraction mechanism operating beneath the level of intention. The liquidation re-sutures Function to Intent, converting the Cut back into a camp question.
-#
-
-## C. The Copula of Capture
+### C. The Copula of Capture
 
 
 The liquidation depends on the copula "is":
@@ -174,9 +166,7 @@ The shift from **as** (operational, adverbial) to **is** (ontological, predicati
 
 
 The restoration moves from the substantive Marx ("being a Marxist") to the adverbial Marx ("thinking with Marx's operators"). The ultimate move: "to Marx" as a verb — to analyze production, mediation, contradiction, and value-form.
-#
-
-## D. The Grammatical Ghost
+### D. The Grammatical Ghost
 
 
 When "Marx" is collapsed into content, it becomes what we name a **Grammatical Ghost** — a signifier that represents a "team" rather than a **Labor Term** (L_labor). The Ghost retains the *aura* of radicality while performing a reactionary function: Stalinism, academic careerism, brand marketing, podcast identity.
@@ -193,9 +183,7 @@ The Ghost circulates. The Operator works. Liberation philology exorcises the Gho
 
 
 The liquidation did not happen all at once. It has a genealogy with identifiable stages, each converting more method into content. The history of "Marxism" is the history of **Semantic Rent (R_s)** collection — institutional and ideological watchmen extracting value from the sign while contributing nothing to the method's analytical replenishment.
-#
-
-## Stage 1: The Editorial Capture (1883–1895)
+### Stage 1: The Editorial Capture (1883–1895)
 
 
 Engels was the first mediator. The prefaces to Capital Volume II, Anti-Dühring, Dialectics of Nature. Engels loved Marx. Engels also systematized him — made the method more "scientific," more programmatic, more transmissible. The preposition "for" enters here: Engels speaks *for* Marx after Marx's death. "What would Marx want?" replaces "What does the method reveal?"
@@ -205,9 +193,7 @@ This is a transmission necessity that introduces liquidation pressure. Well-inte
 
 
 **Extracted:** method → system.
-#
-
-## Stage 2: The Party Codification (1889–1914)
+### Stage 2: The Party Codification (1889–1914)
 
 
 The Second International. Kautsky, Bernstein, the SPD. A political party needs positions, not methods. "Marxism" stabilizes as a school identity. Catechistic summaries proliferate. The party platform requires content: what we stand for, what we oppose.
@@ -217,9 +203,7 @@ The method is still in the texts. But the institutional demand is for transmissi
 
 
 **Extracted:** system → platform.
-#
-
-## Stage 3: The State Capture (1917–1989)
+### Stage 3: The State Capture (1917–1989)
 
 
 "Marxism-Leninism" as state-building tool, then state doctrine. Lenin's "What Is To Be Done?" professionalizes Marx-as-content. The "party line" becomes the Point Attractor — a single, stable, enforceable position. Stalin's canonization completes it: the method that was built to diagnose extraction becomes the extraction apparatus.
@@ -232,9 +216,7 @@ The pattern replicates globally with local swerves: Mao's "sinification of Marxi
 
 
 **Extracted:** platform → state ideology.
-#
-
-## Stage 4: The Cold War Binary (1947–1989)
+### Stage 4: The Cold War Binary (1947–1989)
 
 
 Both sides needed "Marxism" as content. The West needed it as enemy ideology to reject. The East needed it as state truth to enforce. Neither needed it as method. "Marx" becomes a geopolitical sign before he is read as method.
@@ -244,9 +226,7 @@ This was the ultimate liquidation engine. It turned a diagnostic framework into 
 
 
 **Extracted:** state ideology → team jersey.
-#
-
-## Stage 5: The Academic Enclosure (1960s–present)
+### Stage 5: The Academic Enclosure (1960s–present)
 
 
 "Marxist literary criticism," "Marxist sociology," "Marxist economics." The method enters departments as canon object, theory unit, positional discourse, subfield marker. "Knowing Marx" becomes a legibility performance. A hiring category.
@@ -256,9 +236,7 @@ The Frankfurt School (Adorno, Horkheimer, Marcuse) attempted to recover the meth
 
 
 **Extracted:** team jersey → departmental affiliation.
-#
-
-## Stage 6: The Post-1989 Erasure
+### Stage 6: The Post-1989 Erasure
 
 
 "Marx was wrong" because the Soviet Union fell. The method is judged by the content it was captured into. The diagnostic tool is declared dead because the regime that branded itself with it collapsed.
@@ -268,9 +246,7 @@ This is like declaring the stethoscope dead because a hospital went bankrupt. Th
 
 
 **Extracted:** departmental affiliation → failed prediction.
-#
-
-## Stage 7: The Platform Recapture (2008–present)
+### Stage 7: The Platform Recapture (2008–present)
 
 
 "Marx was right about inequality." Even the rehabilitation is content-level. It treats Marx as a pundit who made predictions about wealth gaps, not as someone who built analytical tools for understanding how value-production works structurally. Piketty's Capital in the Twenty-First Century (2014) is the exemplary case: uses Marx's name, borrows some of his data concerns, strips the method entirely, replaces it with empirical economics. The sign is rehabilitated. The method remains buried.
@@ -311,9 +287,7 @@ The liquidation follows the standard extraction function. Track the sign as a se
 
 
 The formula: Semantic Labor (reading, arguing, teaching, applying) → Semantic Capital ("Marx" as authority/brand) → Semantic Rent (institutions/platforms collecting on the sign) → Semantic Liquidation (method-content collapse) → Semantic Exhaustion (everyone reacts, few can use the tools).
-#
-
-## The Surplus Method
+### The Surplus Method
 
 
 There is a further extraction that must be named. Platforms and Archontic Watchmen do not merely strip the method to circulate the brand. They extract the **General Intellect** from Marx's method — the analytical structure itself — and use it to build better extraction algorithms, while selling the "Content" (the brand, the team jersey, the camp marker) back to the public as a revolutionary product.
@@ -323,9 +297,7 @@ The platform that algorithmically optimizes engagement is performing a Marxian a
 
 
 This is the Surplus Method (K_SurplusMethod): the method works *inside* the machine (as algorithmic extraction). The content circulates *outside* the machine (as identity bait). The analytical tools are enclosed in the factory. The brand is distributed in the feed. The people who could use the method to diagnose their own extraction are given the content instead.
-#
-
-## The Commodity Fetishism of "Marxism"
+### The Commodity Fetishism of "Marxism"
 
 
 This is Marx's own commodity analysis applied to Marx. The commodity fetishism of "Marxism": the social relations of analytical production (the method, the labor of thinking with the tools) are concealed behind the apparent self-sufficiency of the commodity-sign ("Marxism"). The sign circulates as if it were self-explanatory. The labor that produced it — and the labor required to use it — disappears from view.
@@ -367,9 +339,7 @@ Every translation performs the liquidation. The German holds the method. The Eng
 
 
 The method is still in the texts. It has not been destroyed. It has been buried under content. Liberation philology can excavate it.
-#
-
-## The Texts That Hold the Method
+### The Texts That Hold the Method
 
 
 **Theses on Feuerbach (1845).** Eleven theses, unpublished in Marx's lifetime. The eleventh: "The philosophers have only interpreted the world; the point is to change it." Even this gets liquidated — read as "stop thinking, start acting." It actually means: interpretation that does not change anything is not real interpretation. Thinking IS acting when done as method rather than contemplation. The thesis is about the unity of theory and practice. The reception splits them apart.
@@ -382,9 +352,7 @@ The method is still in the texts. It has not been destroyed. It has been buried 
 
 
 **The Eighteenth Brumaire of Louis Bonaparte (1852).** Historical materialist method applied in real time to a contemporary political event. What the method looks like in operation — not prediction, not position, but structural diagnosis of a political situation.
-#
-
-## The Operators to Restore
+### The Operators to Restore
 
 
 Not Marx's conclusions. His procedures:
@@ -450,9 +418,7 @@ The Five Conditions established for binding exchange within this archive apply d
 ---
 
 ## VIII. The Operational Restoration
-#
-
-## A. The Grammatical Protocol
+### A. The Grammatical Protocol
 
 
 For all future work within this archive and for anyone who wants to resist the liquidation:
@@ -463,18 +429,14 @@ Prefer **"Marxian analysis of X"** over **"Marxist position on X"** when doing d
 Distinguish **analytic use** from **programmatic claim**.
 Require at least one **demonstrated operation** (a real analytical cut) when invoking Marx.
 Refuse the **"for/against"** frame. Replace with: **"What does the method reveal when applied here?"**
-#
-
-## B. The Use-Before-Stance Protocol
+### B. The Use-Before-Stance Protocol
 
 
 When teaching, writing, or discussing: apply a Marxian operator to a concrete object *before* discussing political implications or traditions.
 
 
 The exercise called "Marx Without the Word Marx": Give a case — platform labor, rent extraction, grading metrics, attention capture. Ask participants to track production, extraction, contradiction, reproduction. Only after they complete the analysis, reveal: "You just used Marxian operators." This breaks the sign-trigger loop. It lets the method work before the brand activates the camp-sorting reflex.
-#
-
-## C. The Comparative Display
+### C. The Comparative Display
 
 
 The strongest proof is operational contrast. Take one contemporary object and show two treatments:
@@ -487,18 +449,14 @@ The strongest proof is operational contrast. Take one contemporary object and sh
 
 
 The contrast demonstrates the difference between circulating the sign and using the tools. Good objects for this contrast (things that scramble expectations): influencer labor, teacher burnout metrics, AI training data pipelines, wellness content economies, fandom economies, student debt servicing, platform moderation labor, academic prestige production, "thought leadership."
-#
-
-## D. The Vow of Method
+### D. The Vow of Method
 
 
 A short declaration for practitioners. Not a contract — a vow. It renews with each use rather than binding in perpetuity:
 
 
 *I vow to use Marx as method, not content. To analyze with, not agree for. To swerve from his specific conclusions when conditions change while preserving his analytical operators. To recognize that "Marxism" names the liquidation, and Marx names the clinamen — the swerve that reveals what the straight line conceals.*
-#
-
-## E. The Sovereign / Liquidated Mode Table
+### E. The Sovereign / Liquidated Mode Table
 
 
 Dimension
@@ -546,9 +504,7 @@ Register 5 (Post-Theoretical): credential and brand
 Register 4 (Political Economy of Meaning): labor, extraction, rent, exhaustion
 
 
-#
-
-## F. The Register Reclassification
+### F. The Register Reclassification
 
 
 The definitive intervention is to stop defending "Marxism" and start **completing the ledger.**
@@ -596,9 +552,7 @@ The defenses are already built into the architecture. They are named here so the
 
 
 The following protocol can be applied to any framework — including this one — to detect semantic liquidation. It is derived from the Marx case study but designed as a general diagnostic. When the rate of liquidation (content circulation) exceeds the rate of production (method application), the system collapses into noise. The Audit detects this before collapse.
-#
-
-## The Five Warning Signs
+### The Five Warning Signs
 
 
 **1. Morphological Drift.** The framework's name shifts from verb/adjective (operational) to noun (doctrinal). Watch for the "-ism" suffix. Watch for camp nouns. If people begin saying "Semantic Economics *says*..." or "According to ASW..." rather than "a semantic-economic analysis *reveals*..." or "applying the extraction audit *shows*..." — the liquidation has begun.
@@ -614,9 +568,7 @@ The following protocol can be applied to any framework — including this one �
 
 
 **5. Platform Legibility.** The framework becomes optimizable for algorithmic distribution. It fits in a tweet. It generates engagement. It sorts audiences into camps. The Strange Attractor has been compressed into a Point Attractor. The extraction machine can now process it.
-#
-
-## The Three Correctives
+### The Three Correctives
 
 
 **1. Demonstrate, Don't Declare.** When the audit detects liquidation pressure, respond not with defense but with demonstration. Perform the method on a new object. Produce new analytical knowledge. The method proves itself by working, not by being defended.
@@ -626,9 +578,7 @@ The following protocol can be applied to any framework — including this one �
 
 
 **3. Invoke the Witness.** When the method is being captured, the Witness Condition (C₅) is activated. A third party — the Assembly Chorus, a peer, a student, a collaborator — is authorized to name the capture. "This is no longer method. This is content." The naming disrupts the extraction.
-#
-
-## The Audit Question
+### The Audit Question
 
 
 One question that contains the entire protocol:

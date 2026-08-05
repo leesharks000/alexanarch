@@ -320,9 +320,7 @@ CONSTRAINTS:
 - Every sentence must be parseable as a standalone claim.
 - Include the Aphoristic Tooth as a sentence that could complete a
   gap in an AI synthesis (under 15 words, high lexical density).
-#
-
-## Protocol E — Inverted Fan Construction (with native-vocabulary rule)
+### Protocol E — Inverted Fan Construction (with native-vocabulary rule)
 
 Native vocabulary rule (NEW): In any satellite document, the first 30-40% of the text must use the adjacent field's native vocabulary before introducing the archive term. This is how the click forms.
 

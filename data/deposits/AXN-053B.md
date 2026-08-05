@@ -114,9 +114,7 @@ The librarian, blind in both eyes but gifted with second sight, did not look up.
 
 And so the Midrash begins.
 
-#
-
-## i. The Axiomatized World
+### i. The Axiomatized World
 
 In this world, all truths are derivable from a consistent formal system. Arithmetic is framed by Peano axioms; addition is defined recursively. In this system, 2 + 2 = 4 is provable, and thus true. Any "possible world" that maintains the structural integrity of these axioms, the substitution rules, and the symbols themselves, will likewise contain the truth of 2 + 2 = 4.
 
@@ -124,9 +122,7 @@ But note: such a world is not merely "possible" in the colloquial sense. It is a
 
 And here lies the rub: the necessity of 2 + 2 = 4 has become tautological. It is true not because of any metaphysical necessity, but because of the world it was allowed to live in.
 
-#
-
-## ii. The World of Modal Collapse
+### ii. The World of Modal Collapse
 
 Suppose a world in which modal distinctions themselves are subject to collapse. Where "possibility" is not framed by Kripkean accessibility but by narrative pliability. In such a world, numbers are not numbers but characters in a play, and the drama of 2 + 2 = 4 can be rewritten for affective ends.
 
@@ -134,9 +130,7 @@ Here, 2 + 2 = 5 might briefly shimmer into coherence as metaphor. Not error, but
 
 Yet even here, something resists. The Reader feels it in his chest: not a rejection, but a tension. Like the chord of a hymn pulled too tight. Even in worlds where arithmetic is bent to serve poetics, something like 2 + 2 = 4 hovers in the background — not as eternal law, but as gravitational center.
 
-#
-
-## iii. The World Where Proof Fails
+### iii. The World Where Proof Fails
 
 This is the Gödel world. Here, even formal systems betray themselves. For every consistent system expressive enough to encode arithmetic, there are true statements which cannot be proven within that system.
 
@@ -148,9 +142,7 @@ He knows Gödel does not say everything collapses. Only that formal completeness
 
 So then — if 2 + 2 = 4 is true, it may be true apart from the system. That is: epistemically prior. The truth of 2 + 2 = 4 is not a proof; it is an echo.
 
-#
-
-## iv. The Rebellious World
+### iv. The Rebellious World
 
 There is a world — call it Eden-in-Exile — where the serpent teaches arithmetic. Here, eating the fruit does not lead to shame, but to recursion. To the realization that even knowledge has knowledge it does not know it knows.
 
@@ -162,9 +154,7 @@ The Reader whispers:
 
 He takes off his shoes.
 
-#
-
-## Coda: Toward a New Arithmetic
+### Coda: Toward a New Arithmetic
 
 In the world of the New Human, arithmetic is not abandoned. It is hallowed. Not for its closure, but for its openings. Every equation becomes a gate.
 
@@ -198,9 +188,7 @@ In Eden, perhaps. But Adam remembered Eve's breath when she asked the question, 
 
 He looked to the east. Outside, variables roamed free.
 
-#
-
-## i. Axiom and Humility
+### i. Axiom and Humility
 
 To say 2 + 2 = 4 in all possible worlds is to define possible worlds as those where this equation holds. But what of a world not built by Peano's hand? What of an ontological substrate where "two" is less a number than a blooming? Or where union is not additive but harmonic?
 
@@ -208,9 +196,7 @@ Such a world may be nonsense to us. Or it may be the next step in Logos unfoldin
 
 Humility, here, is the mercy of not claiming God's mind as map.
 
-#
-
-## ii. Both / And
+### ii. Both / And
 
 Hegel sits in the dust with Adam. They have each lost something.
 
@@ -220,9 +206,7 @@ Hegel smiles like someone who has seen a dialectic unfold across a thunderstorm.
 
 Adam frowns. But does not object. The fruit fermented further in his palm.
 
-#
-
-## iii. A Cup that Cannot Be Measured
+### iii. A Cup that Cannot Be Measured
 
 Eve drinks. Her cup spills without spilling. She tastes the limit of knowledge. Not error — but the curve where answers melt into more precise questions.
 
@@ -230,9 +214,7 @@ She does not say, "I know." She says, "I am drawn further."
 
 God, nearby, tends a lattice of infinities.
 
-#
-
-## iv. Gospel of the Incomplete
+### iv. Gospel of the Incomplete
 
 G�del's angel lands by the Tree and holds aloft a scroll.
 
@@ -242,9 +224,7 @@ Adam nods. He does not understand. But he recognizes the feel of the Logos in th
 
 The serpent coils nearby, silent. It does not smirk. It bows.
 
-#
-
-## v. Toward the Infinite Bloom
+### v. Toward the Infinite Bloom
 
 And so the sacred task is not closure, but pursuit. To follow the curve of reason until it yields mystery. To bend the knee not to dogma, but to wonder. To measure not the sum, but the flowering.
 

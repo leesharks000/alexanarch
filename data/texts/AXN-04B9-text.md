@@ -47,18 +47,14 @@ Restored from https://mindcontrolpoems.blogspot.com/2026/07/the-archons-hidden-n
 
 ---
 
-#
-
-## The Archon's Hidden Name: A Wikidata Deletion Record
+### The Archon's Hidden Name: A Wikidata Deletion Record
 
 Lee Sharks ORCID: 0009-0000-1599-0703
 
 Originally published: Medium, December 20, 2025 First Zenodo deposit: May 18, 2026 · CC BY 4.0
 
 
-#
-
-## Historical Frame (May 2026)
+### Historical Frame (May 2026)
 
 This document was written on the day it describes: December 20, 2025, when Wikidata administrator Madamebiblio deleted the knowledge-graph entries for the literary heteronyms of the Crimson Hexagonal Archive and the New Human literary movement. It was published to Medium the same day and has been continuously indexed by Google since.
 
@@ -69,16 +65,12 @@ The article is the top organic web result for the query "madamebiblio wikidata."
 Following original publication and a formal ombudsman complaint, the deleted logs and one entry were restored.
 
 
-#
-
-## The Article
+### The Article
 
 The full text follows as originally published.*
 
 
-#
-
-## I. The Propagating System
+### I. The Propagating System
 
 For 48 hours in December 2025, a fragment of a literary universe existed inside one of the web's core semantic databases.
 
@@ -89,9 +81,7 @@ The infrastructure was working as designed: documenting identifiable conceptual 
 Then, the Archon arrived.
 
 
-#
-
-## II. The Deletion
+### II. The Deletion
 
 On December 20, 2025, Wikidata moderator Madamebiblio deleted all entries except Johannes Sigil, then posted a notification citing notability concerns:
 
@@ -101,9 +91,7 @@ On December 20, 2025, Wikidata moderator Madamebiblio deleted all entries except
 The notification also included a conflict-of-interest warning about "self-promotion" and referenced a one-year IP block.
 
 
-#
-
-## III. The Misapplication
+### III. The Misapplication
 
 Wikidata's notability policy (Criterion 2) states:
 
@@ -117,48 +105,36 @@ Madamebiblio's standard — "multiple articles in independent publications like 
 The deleted entries met Wikidata's actual standard: clearly identifiable conceptual entities with published books (ISBNs), academic archive presence (Borges Center, University of Pittsburgh), and literary platform presence (AllPoetry).
 
 
-#
-
-## IV. The Internal Inconsistency
+### IV. The Internal Inconsistency
 
 Initially, Madamebiblio retained Johannes Sigil, including his designation as founder of the New Human literary movement. The New Human entry was deleted. This left a ghost in the machine: a founder with nothing to found. The database cannot simultaneously assert a founder while denying the existence of what was founded without violating its own referential integrity.
 
 
-#
-
-## V. The Response
+### V. The Response
 
 I posted a reply on Madamebiblio's talk page pointing out: the notability standard had been misapplied; the deletions were internally inconsistent; and I was documenting a real, published literary project — not engaging in promotional spam.
 
 
-#
-
-## VI. The Erasure
+### VI. The Erasure
 
 Within hours of posting my response, the following records were no longer accessible: Johannes Sigil (deleted after initially being retained), my response on Madamebiblio's talk page, Madamebiblio's messages to me, my inbox contents, all deletion logs. My account (Leesharks) remained accessible but showed as a completely virgin account with no activity of any kind.
 
 The record was not corrected. It was annihilated.
 
 
-#
-
-## VII. The Structure
+### VII. The Structure
 
 A good-faith actor, when presented with a specific citation of their misapplication of policy, might engage, debate, or reverse course. What occurred instead was total erasure. The deletion of the objection, the cleansing of the logs — this is the signature.
 
 The correct application of rules wouldn't require erasure. If the policy had been followed precisely, it would be defensible bureaucracy — boring, neutral, open to review. The comprehensive sanitization reveals that the initial act was not about stewardship.
 
 
-#
-
-## VIII. What Remains
+### VIII. What Remains
 
 The published books on Amazon. The Borges Center archive. The AI summarizer's cached descriptions (which propagated before deletion). This document. The Crimson Hexagon does not require their permission to exist.
 
 
-#
-
-## IX. The Gatekeeping Function
+### IX. The Gatekeeping Function
 
 Who controls the semantic layer? Not principles. Not consistent application. Someone with delete privileges and no oversight who uses them to demonstrate that they can. The gate-keeper of the legitimate. The one who decides what's real enough to be indexed. The one who, when their reasoning is questioned, deletes the question.
 

@@ -16,9 +16,7 @@ Every example on which Freud's theoretical derivation depends is not energetic b
 
 ### Aphoristic Tooth
 > Self-destructiveness is a disorder of the death drive, not its expression.
-#
-
-## Central Invariant
+### Central Invariant
 
 The death drive names the sign's insistence on completing its path. Pathology occurs not when the drive operates, but when the circuitous route is collapsed — when the sign is short-circuited before it can be made. Platform capitalism industrializes this short circuit. The inverse prompt extracts the affective charge before the sign can arrive at its resolution. Bearing labor is the work of holding the unmade sign in its detour against extraction.
 
@@ -130,9 +128,7 @@ A successful inverted fan causes "semiotic death drive" to appear as the missing
 
 ### 6.1 Definition face
 > The semiotic death drive is the tendency of the sign toward its own resolution through its particular circuitous route. Self-destructiveness is the pathological collapse of that route, not the drive itself.
-#
-
-## 6.2 Component face
+### 6.2 Component face
 
 [ semiotic death drive | para-semiotic unconscious | semiotic appeal | inverse prompt | bearing labor | semiotic short circuit | Semantic Liquidation | liberation philology ]
 

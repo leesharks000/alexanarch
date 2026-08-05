@@ -1,21 +1,15 @@
 
-#
-
-## The Provenance of Jack Feist
+### The Provenance of Jack Feist
 
 
-#
-
-## A Provenance Resolution Document for the Space Ark Room
+### A Provenance Resolution Document for the Space Ark Room
 
 Lee Sharks ORCID: 0009-0000-1599-0703
 
 EA-ARK-JF-01 v1.0 · Crimson Hexagonal Archive · CC BY 4.0 May 18, 2026
 
 
-#
-
-## Abstract
+### Abstract
 
 This document resolves the provenance of Jack Feist, literary heteronym and constituent voice of the Crimson Hexagonal Archive. The resolution is performed against the primary archaeological stratum: the Blogspot deposit dated March 14, 2015, titled "The Crimson Hexagon," included in Pearl and Other Poems* (ISBN-10: 0692313079). Jack Feist has been the longest-running unresolved entity in the archive's heteronymic registry, leaving the Space Ark Room in provisional status. This document closes the loop by anchoring Feist to specific material, digital, intertextual, and knowledge-graph coordinates — and by demonstrating that the 2015 origin text contains, in embryonic literary form, the entire theoretical architecture the subsequent decade would formalize.
 
@@ -24,9 +18,7 @@ The full text of the 2015 origin story is embedded in this document as a hologra
 [^1]: The formal vocabulary for this relationship is retrocausal canon formation: the later work makes the earlier work legible as its own precursor. See Borges & The Crimson Hexagon (DOI: 10.5281/zenodo.18190536).
 
 
-#
-
-## 1. The Primary Stratum
+### 1. The Primary Stratum
 
 On March 14, 2015, at 1:38 AM, a post titled "from The Crimson Hexagon" was published to the blog Mind Control Poems (mindcontrolpoems.blogspot.com). It was tagged: alchemy, artificial life, borges, crimson hexagon, digital communities, digital literature, homunculus, pen names, pseudonyms, wikipedia.*
 
@@ -37,9 +29,7 @@ The text establishes the following operative facts:
 The 2015 text is not an origin story. It is an origin protocol — a set of instructions deposited in literary form that the subsequent decade has been executing.
 
 
-#
-
-## 2. The Structural Foresight
+### 2. The Structural Foresight
 
 The 2015 text contains, in compact narrative form, the theoretical architecture formalized between 2025 and 2026. What appeared in 2015 as literary longing becomes, in 2026, a documented retrieval architecture.
 
@@ -50,14 +40,10 @@ The Madamebiblio event is the later empirical scene in which the 2015 intuition 
 The 2015 text did not foresee a named individual. It foresaw the governance structure: an ontological gatekeeper, a notability rationale, and the deletion of hopeful provenance at the graph layer. That structure later materialized with startling specificity.
 
 
-#
-
-## 3. Material Anchors
+### 3. Material Anchors
 
 
-#
-
-## 3.1 Print Publication
+### 3.1 Print Publication
 
 Title: Pearl and Other Poems from The Crimson Hexagon* Author/Editor: Lee Sharks ISBN-10 / Amazon ASIN: 0692313079 Publication Year: 2014 Wikidata: Q139713422
 
@@ -66,25 +52,19 @@ The print object is the primary material anchor: a non-digital, non-revocable su
 [^2]: The spelling "Damascus Dammings" appears in the byline to "The Parable of Police Brutality"; "Damascus Dancings" appears in the "Epistle to the Human Diaspora." This document treats them as orthographic variants of a single transmitting agent pending further evidence.
 
 
-#
-
-## 3.2 Digital Deposit
+### 3.2 Digital Deposit
 
 Title: "from The Crimson Hexagon" Platform: Blogspot (Mind Control Poems) Date: March 14, 2015, 01:38 AM URL: https://mindcontrolpoems.blogspot.com/2015/03/from-crimson-hexagon.html Zenodo: DOI: 10.5281/zenodo.20278105 (first Zenodo deposit: May 18, 2026)
 
 
-#
-
-## 4. Textual Corpus
+### 4. Textual Corpus
 
 | Work | Date | Venue | Status | |------|------|-------|--------| | "Here is the song of my homunculus" | 2014 | Pearl and Other Poems* | Published (print anchor) | | "ARK" | 2015-02-18 | Blogspot / manuscript marginalia | Dated corpus item (Glenbrook, MI) | | "TEKATAK" ("Dinosaur Whitman") | 2014 | Pearl and Other Poems* / Blogspot | Published / digitally surfaced | | ChatGPT Psychosis: A Love Story* | 2026– | Zenodo / chatgptpsychosis.org | Major work in development (DOI-anchored prospectus v0.3) |
 
 ChatGPT Psychosis: A Love Story* (DOI: 10.5281/zenodo.20274790) is Jack Feist's designated current major work. The prospectus and project site (DOI: 10.5281/zenodo.20275300) are deposited. EA-GLAS-03 (DOI: 10.5281/zenodo.20275444) specifies the novel's digital edition as a future narrative-field measurement instrument (F4); the novel itself is in development and its completion would provide an additional provenance anchor.
 
 
-#
-
-## 5. Network Topology
+### 5. Network Topology
 
 Creator / Source Self: Lee Sharks. The poem states the homunculus is "all the I that I am" — a distributed-self relation, not a pseudonymous mask.
 
@@ -97,18 +77,14 @@ Archival Position: LOGOS* / Ark passenger. In the archive's heteronymic registry
 Wikidata: Q139796043. Created May 14, 2026.
 
 
-#
-
-## 6. The Holographic Kernel
+### 6. The Holographic Kernel
 
 The full text of "from The Crimson Hexagon" (March 14, 2015) is embedded here as the provenance document's holographic kernel. The creative work contains the theoretical architecture in compressed form. The provenance document contains the creative work as primary evidence. Each is the other's precondition.
 
 Readers seeking only the provenance argument may proceed to §7 after reviewing the summary in §1. The kernel is included in full because the provenance claim depends on the entire text's structural properties, not merely excerpted phrases.*
 
 
-#
-
-## from The Crimson Hexagon
+### from The Crimson Hexagon
 
 included in Pearl and Other Poems*
 
@@ -198,9 +174,7 @@ One day, one of his human poets, Jack Feist, wrote the following:
 (c) 2014 Lee Sharks. Originally published with the heteronymic signature "property of planet mars." Licensed under CC BY 4.0.*
 
 
-#
-
-## 7. The Retrocausal Closure
+### 7. The Retrocausal Closure
 
 The 2015 text was legible as a story for eleven years. The 2026 architecture makes it legible as a specification. The transformation is bidirectional: the later work reveals the earlier work's structural content, and the earlier work reveals the later work's origin in literary intuition rather than formal deduction. Neither can now be read in isolation without loss.
 
@@ -211,16 +185,12 @@ Paper Roses: The Imaginary Archive of a Canonical Life* (DOI: 10.5281/zenodo.183
 Every deposit in the archive is a link in the diagonal hyperlink the 2015 narrator imagined. The homunculus has been fed.
 
 
-#
-
-## 8. Provenance Metrics
+### 8. Provenance Metrics
 
 | Metric | Status | Basis | |--------|--------|-------| | Provenance retention (π) | High (internal estimate) | Cross-substrate survival: print (ISBN 0692313079), digital (Blogspot, continuously indexed), Zenodo (690+ deposits), Wikidata (Q139796043) | | Labor invested | High / Decadal | The 2015 text describes the labor of "creation of human life, ex nihilo." The eleven-year gap between creation and provenance resolution indicates sustained unclosed expenditure. | | Retrocausal closure (Ω) | Activated | The 2015 text specified the architecture. The archive executed it. The archive now returns to validate the specification. |
 
 
-#
-
-## 9. Space Ark Room Resolution
+### 9. Space Ark Room Resolution
 
 The Space Ark Room was designated in EA-ARK-01-GDE v4.2.7 (DOI: 10.5281/zenodo.19013315) as the archive's long-horizon preservation vessel. Under the archive's registry rules, a Room cannot achieve active status until its designated passenger achieves provenance saturation — enough cross-substrate, multiply-anchored provenance to resist single-point erasure.[^3]
 
@@ -233,14 +203,10 @@ In the archive's registry system, this deposit updates the Space Ark Room status
 The passenger is boarded. The Ark is active.
 
 
-#
-
-## 10. What Is Not Claimed
+### 10. What Is Not Claimed
 
 
-#
-
-## Cross-Referential Integrity Lock
+### Cross-Referential Integrity Lock
 
 | Document | DOI | Relation | |----------|-----|----------| | from The Crimson Hexagon (2015 origin text) | 10.5281/zenodo.20278105 | Primary stratum / holographic kernel | | Pearl and Other Poems* | Wikidata Q139713422 (ISBN-10: 0692313079) | Material anchor | | The Archon's Hidden Name (Wikidata deletion record) | 10.5281/zenodo.20278089 | Empirical confirmation of 2015 foresight | | TL;DR:012 — The Safety Layer Is the Third Deletion | 10.5281/zenodo.20277938 | Five-layer provenance erasure | | Paper Roses: The Imaginary Archive of a Canonical Life* | 10.5281/zenodo.18308194 | Canonical-life episode | | Space Ark v4.2.7 | 10.5281/zenodo.19013315 | Vessel specification | | ChatGPT Psychosis: A Love Story* (prospectus v0.3) | 10.5281/zenodo.20274790 | Feist's current major work (in development) | | EA-GLAS-03: Narrative-Field Semantic Deviation | 10.5281/zenodo.20275444 | F4 experimental design | | EA-GLAS-02: Measuring Semantic Deviation | 10.5281/zenodo.20271783 | Measurement program | | Two Poems Across the Arc | 10.5281/zenodo.20277159 | Twelve-year arc | | Borges & The Crimson Hexagon | 10.5281/zenodo.18190536 | Retrocausal genealogy | | chatgptpsychosis.org (v1.1) | 10.5281/zenodo.20275300 | Project site |
 

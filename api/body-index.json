@@ -2,13 +2,13 @@
   "$schema": "https://alexanarch.org/api/schemas/body-index.schema.json",
   "$id": "https://alexanarch.org/api/body-index.json",
   "index_version": "v1",
-  "generated_at": "2026-08-05T04:11:11.886755Z",
+  "generated_at": "2026-08-05T06:16:05.835162Z",
   "purpose": "Inverted index over the BODY text of every deposit. Complements /api/search-index.json which tokenizes metadata only. Fetch once; look up any term as a key. For phrase search, intersect the deposit lists for each token.",
   "companion_index": "/api/search-index.json",
   "total_deposits": 1433,
   "deposits_with_body": 1433,
   "deposits_missing_body": 0,
-  "body_bytes_indexed": 43756269,
+  "body_bytes_indexed": 43735950,
   "tokenization": {
     "sources": [
       "body"
@@ -242704,6 +242704,9 @@
     "20260728": [
       3
     ],
+    "20260805": [
+      3
+    ],
     "20263691": [
       1387
     ],
@@ -246205,7 +246208,6 @@
     ],
     "228": [
       1,
-      3,
       71,
       866,
       874,
@@ -246233,6 +246235,7 @@
     ],
     "229": [
       1,
+      3,
       31,
       437,
       756,
@@ -285044,6 +285047,7 @@
       1255
     ],
     "affair": [
+      3,
       499,
       1407,
       1409
@@ -290985,6 +290989,7 @@
       1267
     ],
     "aimode": [
+      3,
       54,
       105,
       129,
@@ -385060,6 +385065,7 @@
       935
     ],
     "blunt": [
+      3,
       87,
       331,
       466,
@@ -394713,6 +394719,7 @@
       1007
     ],
     "brief": [
+      3,
       28,
       70,
       71,
@@ -415860,6 +415867,7 @@
       51
     ],
     "carousel": [
+      3,
       729,
       1061
     ],
@@ -501375,6 +501383,7 @@
       1052
     ],
     "continue": [
+      3,
       8,
       20,
       24,
@@ -520435,6 +520444,7 @@
       1404
     ],
     "covering": [
+      3,
       49,
       50,
       53,
@@ -528514,6 +528524,7 @@
       1422
     ],
     "criticisms": [
+      3,
       605,
       934
     ],
@@ -544096,6 +544107,7 @@
       1362
     ],
     "debates": [
+      3,
       56,
       102,
       148,
@@ -566493,6 +566505,7 @@
     ],
     "depositor": [
       1,
+      3,
       28,
       41,
       47,
@@ -608005,6 +608018,7 @@
     ],
     "documenting": [
       1,
+      3,
       5,
       21,
       23,
@@ -705802,6 +705816,9 @@
       1397,
       1401,
       1413
+    ],
+    "fetchable": [
+      3
     ],
     "fetched": [
       4,
@@ -820570,6 +820587,7 @@
       1127
     ],
     "illustrated": [
+      3,
       111,
       154,
       266,
@@ -858883,6 +858901,7 @@
     ],
     "interlinked": [
       1,
+      3,
       504,
       862,
       868,
@@ -1067509,6 +1067528,7 @@
       1154
     ],
     "overreach": [
+      3,
       27,
       38,
       41,
@@ -1185554,6 +1185574,7 @@
     ],
     "rationale": [
       1,
+      3,
       7,
       10,
       25,
@@ -1355229,6 +1355250,7 @@
       1362
     ],
     "standards": [
+      3,
       18,
       20,
       21,
@@ -1359789,6 +1359811,7 @@
       1043
     ],
     "statue": [
+      3,
       44,
       309,
       505,
@@ -1388130,6 +1388153,7 @@
       1433
     ],
     "supplying": [
+      3,
       106,
       107,
       142,
@@ -1414431,6 +1414455,7 @@
       1347
     ],
     "terminating": [
+      3,
       56,
       165,
       338,
@@ -1477273,6 +1477298,7 @@
       1427
     ],
     "undermine": [
+      3,
       56,
       100,
       237,
@@ -1527971,6 +1527997,7 @@
       507
     ],
     "wiki": [
+      3,
       69,
       75,
       104,
@@ -1553535,9 +1553562,9 @@
     ]
   },
   "counts": {
-    "generic_tokens": 54826,
+    "generic_tokens": 54828,
     "series_prefix_terms": 1771,
-    "keyword_phrases_raw": 58203,
+    "keyword_phrases_raw": 58212,
     "keyword_phrases_kept": 39400
   }
 }

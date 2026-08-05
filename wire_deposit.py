@@ -785,7 +785,7 @@ def regenerate_static_page(d, eidx, registry=None):
             # readable structure. Bytes untouched.
             _fp = raw.split('```')
             for _pi in range(0, len(_fp), 2):
-                _fp[_pi] = re.sub(r'(?<=[^\n])(#{2,6} )', r'\n\n\1', _fp[_pi])
+                _fp[_pi] = re.sub(r'(?<=[^\n#])(#{2,6} )', r'\n\n\1', _fp[_pi])
             raw = '```'.join(_fp)
             _plain = _plain_body(raw)
             # W10: restoration wrapper (methodology/recovery apparatus) precedes
@@ -835,7 +835,7 @@ def regenerate_static_page(d, eidx, registry=None):
                 # excluded. Display-level; bytes carry the mangle until tier 2.
                 return '$$' + _COMMA_MANGLE.sub(r' \\, ', m.group(1)) + '$$'
             for _pi in range(0, len(_fence_parts), 2):  # even indices = outside fences
-                _fence_parts[_pi] = re.sub(r'(?<=[^\n])(#{2,6} )', r'\n\n\1', _fence_parts[_pi])
+                _fence_parts[_pi] = re.sub(r'(?<=[^\n#])(#{2,6} )', r'\n\n\1', _fence_parts[_pi])
                 _fence_parts[_pi] = re.sub(r'\$\$(.+?)\$\$', _fix_math_span, _fence_parts[_pi], flags=re.S)
                 _fence_parts[_pi] = _w13_reflow(_fence_parts[_pi])
             raw = '```'.join(_fence_parts)

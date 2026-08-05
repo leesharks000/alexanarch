@@ -48,9 +48,7 @@ Third, it proposes that 666 should be read not as the superscription itself, but
 ---
 
 ## II. Coinage as Semiotic Technology
-#
-
-## A. The Coin as Communication Medium and Projection Surface
+### A. The Coin as Communication Medium and Projection Surface
 
 
 The scholarly treatment of ancient coinage has undergone a significant reorientation over the past half-century, moving from a primarily economic and typological concern (what coins were made, of what metal, in what quantities, with what dies) toward a communicative and semiotic concern (what coins *said*, to whom, through what channels, and with what effects). The work of Andrew Burnett, C. H. V. Sutherland, and more recently that of Christopher Howgego, has established that Roman imperial coinage functioned as a mass medium — the most widely distributed visual-textual artifact in the ancient world, reaching populations that no edict, inscription, or literary text could reach. The coin was not supplementary to imperial communication; it was, for most subjects of the empire, the *primary* material encounter with the emperor's name, title, and face.
@@ -69,18 +67,14 @@ What the numismatic literature has established, but what biblical scholarship ha
 
 
 All five of these are compressed onto a single portable object. The coin is not a billboard that happens to be small. It is a technology whose function *depends* on compression: it must be small enough to circulate, standard enough to be recognizable, dense enough to carry authority, and durable enough to outlast any single transaction. The coin is a *semiotic-economic machine*.
-#
-
-## B. Coinage and Sovereignty
+### B. Coinage and Sovereignty
 
 
 The relationship between coinage and sovereignty is not metaphorical. In the ancient world, the right to mint coinage was among the most jealously guarded prerogatives of rule. To issue coins bearing one's own image and superscription was to claim a specific form of sovereignty: the authority to denominate value, to authorize exchange, to circulate one's name and face throughout a territory, and to demand that subjects handle, carry, and transact in objects that materially bear one's claim. The coin does not represent sovereignty at a distance; it *is* sovereignty made portable. When a subject in a provincial market exchanges a denarius for grain, the transaction is not merely economic. It is a ritual repetition of the sovereignty claim: the emperor's face passes from hand to hand, his abbreviated titles are touched, read, and trusted, and the market itself operates under the authorization his coinage provides.
 
 
 This is why the tribute question in the Synoptic Gospels (Mark 12:13–17, Matthew 22:15–22, Luke 20:20–26) is not a question about tax policy. It is a question about inscriptional sovereignty. When Jesus asks "whose image and superscription is this?" (τίνος ἡ εἰκὼν αὕτη καὶ ἡ ἐπιγραφή;), he does not ask for information he lacks. He asks his questioners to name aloud, in the Temple precincts, the two semiotic channels through which the coin operates: εἰκών (image) and ἐπιγραφή (superscription). The answer — "Caesar's" — is both obvious and devastating. The coin is Caesar's because Caesar's face and Caesar's titles are compressed onto it. To use the coin is to participate in the circulation of that compression. The instruction "render unto Caesar the things that are Caesar's" is not a political quietism; it is a precise semiotic instruction: return the token to the authority whose compression it carries.
-#
-
-## C. From the Gospels to Revelation
+### C. From the Gospels to Revelation
 
 
 Revelation radicalizes the structure the Gospel pericope exposes. In the tax-coin scene, the problem is localized: this coin, this image, this superscription, this jurisdiction. In Revelation, the beast does not merely issue coins. The beast attempts to make *bodies and markets* bear its inscriptional logic. The mark (χάραγμα) is not placed on metal but on the right hand or the forehead (Revelation 13:16). The image (εἰκών) is not stamped on a coin but constructed as an animated idol that demands worship (13:15). The name and number are not abbreviated on a die but calculated by those with understanding (13:18). What is on the coin in the Gospel becomes, in Revelation, what the beast tries to write onto the world.
@@ -137,9 +131,7 @@ When all five are compressed into a single portable object, the result is not me
 ---
 
 ## IV. Revelation as a Struggle Between Token Regimes
-#
-
-## A. The Beast's Token Complex
+### A. The Beast's Token Complex
 
 
 Revelation 13:14–18 assembles five elements into a single inscriptional system:
@@ -192,9 +184,7 @@ Include/exclude from exchange
 
 
 The beast's system is, in operative-numismatic terms, a *maximally public, maximally coercive token regime*. Its image is publicly displayed and worshipped. Its mark is externally visible (hand, forehead). Its name is calculable — the text explicitly invites calculation (ψηφισάτω, "let him calculate," 13:18). Its market-sorting function is total: no one can buy or sell without bearing the token. There is no privacy, no opt-out, no receiver-specific validation. The beast's token is a *public checksum of hostile superscription*.
-#
-
-## B. The White Stone
+### B. The White Stone
 
 
 Revelation 2:17 assembles a counter-cluster:
@@ -221,9 +211,7 @@ This is the counter-token. Against the beast's public checksum, the white stone 
 
 
 The counter-economy is not merely spiritual. It is the material alternative to market dependence on beastly authorization. The beast's token circulates by exposure; the white stone's by recognition. The beast abolishes receipt by making inscription public; the white stone restores receipt by limiting verification to the receiver.
-#
-
-## C. The Structural Opposition
+### C. The Structural Opposition
 
 
 Revelation opposes not symbol to symbol, but token regime to token regime:
@@ -272,9 +260,7 @@ A modern analogue — analyzed in the Thousand Dollar Sharpie triptych (DOIs: 10
 ---
 
 ## V. The Key Shift: 666 as the Number of the Superscription
-#
-
-## A. What the Text Actually Says
+### A. What the Text Actually Says
 
 
 Revelation 13:18 reads: ἀριθμὸς γὰρ ἀνθρώπου ἐστίν, καὶ ὁ ἀριθμὸς αὐτοῦ ἑξακόσιοι ἑξήκοντα ἕξ.
@@ -307,9 +293,7 @@ The calculation operates on the sovereignty claim at one remove. The number is n
 The number is a compression product. The beast has an image, a name, a mark, and a market-exclusion clause. The number is the result of compressing the name through the operation of calculation. It is a further compression of an already-compressed inscriptional complex. 666 is not the compression of the beast but the compression of the beast's own compression machine.
 
 
-#
-
-## B. 600 / 60 / 6 as Descending Compression Ladder
+### B. 600 / 60 / 6 as Descending Compression Ladder
 
 
 The Greek notation for 666 — χξϛ — is not a flat repetition of a single digit. It is three distinct graphemes representing three distinct orders of magnitude:
@@ -330,18 +314,14 @@ This structural reading does not replace the flat-solve tradition. It operates a
 
 
 The terminal grapheme of the Greek notation for 666 — ϛ — requires careful philological and semiotic attention.
-#
-
-## A. The Philological History
+### A. The Philological History
 
 
 In the earliest Greek alphabetic numeral system, the number 6 was represented by the letter digamma (Ϝ), the sixth letter of the archaic Greek alphabet, representing the sound /w/. As the /w/ sound disappeared from most Greek dialects during the classical period, the letter digamma fell out of use as a phonetic sign but was preserved as a numeral. Its graphic form evolved: in some traditions it came to resemble the ligature στ (sigma-tau), and by the Byzantine period it was commonly written as ϛ and called "stigma."
 
 
 The word στίγμα itself means "mark, brand, tattoo, prick" — cognate with the verb στίζω, "to prick, to brand." The resonance with Revelation's χάραγμα (mark/stamp) is lexically close, though the two words are not identical. What matters for the present argument is not a direct etymological connection but a structural one: the numeral that terminates the beast's number is a sign whose own history is already one of loss, compression, and residual survival.
-#
-
-## B. Stigma as Compressed History
+### B. Stigma as Compressed History
 
 
 The career of digamma/stigma traces, in miniature, the very operations the beast's number encodes:
@@ -360,9 +340,7 @@ The career of digamma/stigma traces, in miniature, the very operations the beast
 
 
 Stigma is the authorized remnant. Its history is compression.
-#
-
-## C. The Terminal Position
+### C. The Terminal Position
 
 
 If the beast's number is a descending compression ladder (600 → 60 → 6), and the terminal position is occupied by stigma, then beastly sovereignty terminates in:
@@ -378,9 +356,7 @@ The beast's compression process, taken to its endpoint, produces not a name, not
 ---
 
 ## VII. Pergamum as the Internal Interpretive Key
-#
-
-## A. The Sequence at Pergamum
+### A. The Sequence at Pergamum
 
 
 The letter to Pergamum (Revelation 2:12–17) is not merely one of seven parallel messages. It is the interpretive hinge between the white stone and the beast's number. The sequence within the letter establishes the reader's interpretive framework before chapter 13 deploys the beast's inscriptional system.
@@ -398,9 +374,7 @@ The sequence within the letter:
 
 
 The sequence teaches: there is a name worth holding. There is a faithful witness who dies rather than surrender it. There is a counter-token — inscribed, material, personal — given to those who endure. And the truth of the counter-token's inscription is validated by receipt, not by public calculation.
-#
-
-## B. Antipas as Counter-Beast Hinge
+### B. Antipas as Counter-Beast Hinge
 
 
 Antipas should not be treated as a beast candidate. He is the *counter-beast witness* — the interpretive hinge that teaches the reader how beastly numbering works by showing what it opposes.
@@ -413,9 +387,7 @@ Antipas is not the answer to the beast's number. He is the local key to how beas
 
 
 And here the operative-numismatic logic completes itself. If the beast's mark stamps bodies as a mint stamps metal — if the body becomes the coin — then the martyr is the *blotted coin*. Antipas refuses to carry the beast's superscription. His death is the beast's attempt to take him out of circulation, to deface the counter-token by destroying the substrate. The martyr's body is the site where the two inscriptional regimes collide: the beast's stamp and the faithful name cannot coexist on the same surface. The beast resolves the contradiction by destroying the surface. But the white stone — inscribed, material, receiver-validated — survives the destruction of the body that bore the rival name. The counter-token outlasts the counter-witness. That is why the stone is given to the one who conquers: the token persists after the body that held the name is taken out of circulation.
-#
-
-## C. Pergamum Teaches How to Read Chapter 13
+### C. Pergamum Teaches How to Read Chapter 13
 
 
 By the time the reader reaches Revelation 13 and encounters the beast's image, mark, name, number, and market-exclusion clause, Pergamum has already established the interpretive framework:
@@ -432,9 +404,7 @@ Chapter 13 does not introduce a new problem. It scales the Pergamene problem to 
 ---
 
 ## VIII. The White Stone as Receiver-Validated Token
-#
-
-## A. Correcting the Usual Overstatement
+### A. Correcting the Usual Overstatement
 
 
 The scholarly and devotional tradition has frequently treated the white stone's inscription as *purely private* — a secret known only to God and the individual, ineffable, incommunicable. This is an overstatement. The text does not say the name is unknowable or unspeakable. It says "no one knows it except the one who receives it" (ὃ οὐδεὶς οἶδεν εἰ μὴ ὁ λαμβάνων). This is a *verification condition*, not a secrecy condition.
@@ -451,9 +421,7 @@ The white stone's name may be spoken about, speculated on, and theologically ela
 - Beast's name: externally calculable, publicly verifiable
 - White-stone name: internally confirmable, receiver-validated
 
-#
-
-## B. The Confirmation Handshake
+### B. The Confirmation Handshake
 
 
 In the language of modern cryptography — which offers structural parallels, not historical continuity — the white stone functions as a *symmetric confirmation handshake*. The sender (the risen Christ) and the receiver share the name; neither needs a third party to verify the exchange. This is not a public-key system (where one key encrypts and another decrypts) but a shared-secret system (where both parties hold the same key and the key's validity is confirmed by mutual recognition). The beast's regime, by contrast, operates like a public ledger: verifiable by anyone with the algorithm, requiring no relationship between verifier and verified, abolishing the privacy of receipt in favor of universal machine-readability.
@@ -632,9 +600,7 @@ The discipline named here was practiced before it was named. Ten deposits across
 ---
 
 ## Bibliography
-#
-
-## Scholarly References
+### Scholarly References
 
 
 Aune, David E. *Revelation*. 3 vols. Word Biblical Commentary. Nashville: Thomas Nelson, 1997–1998.
@@ -671,9 +637,7 @@ Sutherland, C. H. V. *Roman Coins*. New York: G. P. Putnam's Sons, 1974.
 
 
 Zelizer, Viviana. *The Social Meaning of Money*. New York: Basic Books, 1994.
-#
-
-## Crimson Hexagonal Archive — Operative Numismatics Field
+### Crimson Hexagonal Archive — Operative Numismatics Field
 
 
 Sharks, Lee. "Whose Face Is on the Twenty?" *Crimson Hexagonal Archive*. DOI: 10.5281/zenodo.18745216. (First operative-numismatic case study; provenance audit of the $20 portrait.)
@@ -714,9 +678,7 @@ Sigil, Johannes, and Lee Sharks. "The Seed That Remembers the Tree: Retrocausal 
 
 
 *This appendix runs the Crimson Hexagonal Archive's Generative Disciplinary Engine (GDE v1.0, Space Ark component) on the essay above, testing whether "operative numismatics" constitutes a formed discipline or a contribution to an existing one. The GDE measures six field-state components (F₁–F₆), computes a field norm ‖F‖, and checks the depth constraint Δ_BA (whether a summarizer can fully compress the formation without loss). The assessment is mechanical, not evaluative.*
-#
-
-## F₁ — Terminological Saturation (σ_SAT)
+### F₁ — Terminological Saturation (σ_SAT)
 
 
 Novel technical vocabulary consistently deployed across the essay:
@@ -774,18 +736,14 @@ Eleven terms. All consistently used. All with stable denotations. The vocabulary
 
 
 **F₁ = 0.85**
-#
-
-## F₂ — Citational Density (ρ_C)
+### F₂ — Citational Density (ρ_C)
 
 
 The essay draws on four distinct literatures and braids them: numismatic scholarship (Burnett, Sutherland, Howgego, von Reden), monetary/social theory (Knapp, Zelizer), Revelation scholarship (Aune, Bauckham, Kraybill, Deissmann, Hart), and the archive's own theoretical framework (Operative Semiotics, Three Compressions, compression studies). External bibliography is lean (eleven works) — intentionally, as this is a founding document, not a literature review. Internal citational density is high: §VII explicitly teaches the reader how to read §IV; §V reframes §IV; §VI extends §V; §IX compresses §IV–VIII. The essay is its own citational web.
 
 
 **F₂ = 0.65**
-#
-
-## F₃ — Polyvocal Distribution (δ_V)
+### F₃ — Polyvocal Distribution (δ_V)
 
 
 Three heteronym voices with distinct jurisdictions:
@@ -799,36 +757,28 @@ The essay structurally invites contributions from biblical scholars, numismatist
 
 
 **F₃ = 0.55**
-#
-
-## F₄ — Institutional Apparatus (μ_I)
+### F₄ — Institutional Apparatus (μ_I)
 
 
 Named ("operative numismatics"), hex-addressable (EA-OPNUM-01), depositable (Zenodo, CC BY-NC-SA 4.0), affiliated (Crimson Hexagonal Archive, ORCID 0009-0000-1599-0703), cross-referenced to Space Ark, Operative Semiotics, and GDE.
 
 
 **F₄ = 0.70**
-#
-
-## F₅ — Replication (κ_SIG)
+### F₅ — Replication (κ_SIG)
 
 
 Not yet actualized — the document is newly written. Replication potential is high: the operative-numismatic reading is testable against other ancient token systems (tesserae, ostraca, bullae, seal impressions); the "number of the superscription" reframing is independently examinable; the stigma philology is independently verifiable; the 666/777 counter-stack is explicitly marked as speculative and invites development. Rate-limiting: requires deposit, circulation, and scholarly uptake.
 
 
 **F₅ = 0.25**
-#
-
-## F₆ — Self-Description (Ψ)
+### F₆ — Self-Description (Ψ)
 
 
 §III explicitly defines operative numismatics and distinguishes it from numismatics proper, monetary theory, and semiotics of money. §X brackets what is not claimed and states what is. The essay knows what it is, says so, and names its own limits. This appendix extends the self-description recursively.
 
 
 **F₆ = 0.80**
-#
-
-## Field Norm
+### Field Norm
 
 
 ‖F‖ = Σ(Fᵢ × wᵢ)
@@ -842,9 +792,7 @@ F₆ (self-desc):      0.80 × 0.20 = 0.160
 
 ‖F‖ = 0.638
 
-#
-
-## Depth Constraint (Δ_BA)
+### Depth Constraint (Δ_BA)
 
 
 Test: can a summarizer fully compress the essay without loss?
@@ -857,9 +805,7 @@ Lost: the distinction between name and number-of-name; the stigma/digamma philol
 
 
 **Δ_BA ≈ 0.75** — clears the 0.60 threshold.
-#
-
-## State Assessment
+### State Assessment
 
 
 ‖F‖ = 0.638 → S2 (FORMED)
@@ -870,15 +816,11 @@ S2 FORMED      0.50 ≤ ‖F‖ < 0.70    ← OPERATIVE NUMISMATICS
 S3 BRIEFABLE   0.70 ≤ ‖F‖ < 0.85    (needs F₅: replication)
 S4 STABILIZED  ‖F‖ ≥ 0.85           (needs replication + external polyvocality)
 
-#
-
-## Verdict
+### Verdict
 
 
 Operative Numismatics is a **FORMED discipline (S2)** at ‖F‖ = 0.638. It clears the depth constraint. Its terminological saturation is strong (F₁ = 0.85). Its self-description is robust (F₆ = 0.80). Its rate-limiting factors are replication (F₅ = 0.25, needs circulation and uptake) and external polyvocality (F₃ will climb when scholars outside the archive engage). For a founding document of a new discipline, S2 is the correct initial state. The GDE confirms: operative numismatics is real, it is formed, and it is ready for installation.
-#
-
-## Effective Act Declaration
+### Effective Act Declaration
 
 
 By this assessment, operative numismatics is named, defined, measured, and installed as a **formed discipline** within the Crimson Hexagonal Archive. The six GDE kernel primitives have been performed:

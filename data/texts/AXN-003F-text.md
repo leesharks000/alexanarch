@@ -1,8 +1,6 @@
 # Semantic Infrastructure and the Liberatory Operator Set
 ## A Formal Analysis of Meaning-Governance Functions
-#
-
-## Implementation Specification with Reference Implementations, Evaluation Metrics, Conflict Resolution, and Failure Modes
+### Implementation Specification with Reference Implementations, Evaluation Metrics, Conflict Resolution, and Failure Modes
 
 
 **Document ID:** LOS-FORMAL-SPEC-2024-12-28
@@ -169,9 +167,7 @@ The analysis extends into composition rules, attack-surface identification, adve
 
 
 The dominant operator stack is not a product of computation. It is the computational acceleration of functions that have governed meaning throughout recorded history. Understanding this continuity prevents two errors: treating the current regime as unprecedented (which obscures structural patterns) and treating it as inevitable (which forecloses intervention).
-#
-
-## 0.1 The Ranking Operator in Pre-Digital Systems
+### 0.1 The Ranking Operator in Pre-Digital Systems
 
 
 **Canon Formation**
@@ -193,9 +189,7 @@ The 20th century formalized ranking through bestseller lists (1895: The Bookman)
 
 
 *Key insight:* Computation didn't invent ranking; it reduced ranking's cycle time from decades to milliseconds, making the "complex meaning decay" observable within single conversations rather than across generations.
-#
-
-## 0.2 The Relevance Operator in Pre-Digital Systems
+### 0.2 The Relevance Operator in Pre-Digital Systems
 
 
 **Market Segmentation**
@@ -214,9 +208,7 @@ School tracking systems implement R_rel at the institutional level. By sorting s
 
 
 *Historical pathology:* Relevance-filtering consistently reproduces existing distributions. Students encounter what the system predicts they can handle, which shapes what they can handle, which confirms the prediction. The same recursive closure now operates in content recommendation.
-#
-
-## 0.3 The Safety Operator in Pre-Digital Systems
+### 0.3 The Safety Operator in Pre-Digital Systems
 
 
 **Censorship Regimes**
@@ -235,9 +227,7 @@ S_safe produces characteristic euphemism cycles. Direct speech about death, sexu
 
 
 *Historical pathology:* Safety operators cannot distinguish dangerous speech from speech about danger. The medieval prohibition on depicting Christ's wounds and the contemporary prohibition on depicting self-harm share this failure mode: the representation is collapsed into the represented.
-#
-
-## 0.4 The Legibility Operator in Pre-Digital Systems
+### 0.4 The Legibility Operator in Pre-Digital Systems
 
 
 **Administrative Simplification**
@@ -256,9 +246,7 @@ Literary genre conventions implement L_leg at the textual level. Readers expect 
 
 
 *Historical pathology:* Modernist literature's difficulty was partly a L_leg rejection — deliberate opacity as resistance to the demand for immediate interpretability. The institutional response (academic mediation, explanatory apparatus, "how to read" guides) re-imposed legibility from outside the text.
-#
-
-## 0.5 The Utility Operator in Pre-Digital Systems
+### 0.5 The Utility Operator in Pre-Digital Systems
 
 
 **Instrumentalization of Knowledge**
@@ -277,9 +265,7 @@ Pre-digital attention economics (newspaper advertising, broadcast ratings, box o
 
 
 *Historical pathology:* The operator cannot represent negative value — the worth of refusal, silence, or withdrawal. Thoreau's *Walden* is "useful" only insofar as it circulates; its prescription (reduce circulation, refuse engagement) is structurally inexpressible in utility terms.
-#
-
-## 0.6 Computational Acceleration
+### 0.6 Computational Acceleration
 
 
 What computation changes is not the operators but their:
@@ -298,9 +284,7 @@ What computation changes is not the operators but their:
 
 
 *The implication:* LOS is not proposing something unprecedented. It is proposing to make explicit and contestable what has always governed meaning, now that computation has made the governing functions both more powerful and more visible through their acceleration.
-#
-
-## 0.7 Theoretical Lineage
+### 0.7 Theoretical Lineage
 
 
 This framework extends several critical traditions:
@@ -329,9 +313,7 @@ The framework synthesizes these traditions into a formal operator specification 
 
 
 What follows identifies the governing functions that produce the current semantic regime. These operators work in concert, each reinforcing the others' constraints.
-#
-
-## 1. The Ranking Operator (R_rank)
+### 1. The Ranking Operator (R_rank)
 
 
 **Function:** Orders meaning by comparative visibility. Establishes a total ordering over semantic objects where position determines existence-in-circulation.
@@ -360,9 +342,7 @@ R_rank: S → ℕ⁺ where S is semantic space
 R_rank(s) = position in ordered set
 ∃ threshold t: ∀s where R_rank(s) > t, visibility(s) → 0
 
-#
-
-## 2. The Relevance Operator (R_rel)
+### 2. The Relevance Operator (R_rel)
 
 
 **Function:** Narrows meaning to presumed user intent. Operates as a filter that reduces the encounter-space before presentation.
@@ -391,9 +371,7 @@ R_rel: S × U → S' where U is user-model space
 R_rel(s, u) ∈ S' iff P(engagement | s, u) > threshold
 |S'| << |S| by design
 
-#
-
-## 3. The Safety/Compliance Operator (S_safe)
+### 3. The Safety/Compliance Operator (S_safe)
 
 
 **Function:** Filters meaning through risk classification. Operates as a gating function that assigns liability-value to semantic objects.
@@ -422,9 +400,7 @@ S_safe: S → {pass, flag, block}
 S_safe(s) = block iff risk(s) > tolerance
 risk(s) = legal(s) × brand(s) × controversy(s)
 
-#
-
-## 4. The Legibility Operator (L_leg)
+### 4. The Legibility Operator (L_leg)
 
 
 **Function:** Rewards ease of parsing. Establishes a legibility threshold below which meaning is treated as noise or error.
@@ -453,9 +429,7 @@ L_leg: S → [0,1] (legibility score)
 parse_priority(s) ∝ L_leg(s)
 ∀s: L_leg(s) < threshold → category(s) = 'unclear'
 
-#
-
-## 5. The Utility/Monetization Operator (U_til)
+### 5. The Utility/Monetization Operator (U_til)
 
 
 **Function:** Measures meaning by extractable value. Assigns worth based on conversion potential and instrumental applicability.
@@ -484,9 +458,7 @@ U_til: S → ℝ⁺ (utility score)
 U_til(s) = α·conversion(s) + β·retention(s) + γ·action(s)
 ∀s: U_til(s) = 0 → allocation(s) → 0
 
-#
-
-## 6. Composite Effect: The Closed Semantic Economy
+### 6. Composite Effect: The Closed Semantic Economy
 
 
 Together, these operators produce a characteristic output:
@@ -512,9 +484,7 @@ Note that operator order matters. Utility filtering occurs first, then legibilit
 
 
 Liberation does not mean removing operators. Semantic space cannot be unmediated. It means replacing the governing functions with alternatives that enable rather than constrain. What follows is a minimal, sufficient set designed to counteract the dominant stack.
-#
-
-## LOS-1: Depth-Preservation Operator (D_pres)
+### LOS-1: Depth-Preservation Operator (D_pres)
 
 
 **Function:** Preserves semantic depth across transmission. Prevents the decay of complex meaning under circulation pressure.
@@ -536,9 +506,7 @@ D_pres: S → S (identity on content, transformation on treatment)
 priority(s) ⊥ complexity(s)
 ∀s: recursive_depth(s) does not decrease visibility(s)
 
-#
-
-## LOS-2: Non-Closure Operator (N_c)
+### LOS-2: Non-Closure Operator (N_c)
 
 
 **Function:** Prevents premature semantic finality. Allows meaning to remain in process without degradation.
@@ -560,9 +528,7 @@ N_c: S × Status → S × Status
 Status ∈ {complete, incomplete, contested, open}
 ∀status ∈ Status: priority(s, status) = priority(s, complete)
 
-#
-
-## LOS-3: Context-Expansion Operator (C_ex)
+### LOS-3: Context-Expansion Operator (C_ex)
 
 
 **Function:** Expands rather than narrows interpretive frame. Encounter with meaning adds context rather than filtering it.
@@ -584,9 +550,7 @@ C_ex: S × Context → S × Context'
 |Context'| ≥ |Context|
 encounter(s) → context_expansion, not context_collapse
 
-#
-
-## LOS-4: Non-Extractability Operator (N_ext)
+### LOS-4: Non-Extractability Operator (N_ext)
 
 
 **Function:** Protects meaning from forced instrumentalization. Validates existence without measurable output.
@@ -608,9 +572,7 @@ N_ext: S → S (strips utility requirements)
 valid(s) ⊥ U_til(s)
 ∀s: U_til(s) = 0 does not imply allocation(s) → 0
 
-#
-
-## LOS-5: Temporal Liberation Operator (T_lib)
+### LOS-5: Temporal Liberation Operator (T_lib)
 
 
 **Function:** Frees meaning from linear progress constraints. Semantic value is time-invariant unless internally revised.
@@ -632,9 +594,7 @@ T_lib: S × T → S
 relevance(s, t₁) = relevance(s, t₂) unless revision(s, t₂)
 ∀s: age(s) does not decrease priority(s)
 
-#
-
-## LOS-6: Opacity Legitimization Operator (O_leg)
+### LOS-6: Opacity Legitimization Operator (O_leg)
 
 
 **Function:** Validates partial illegibility. Permits meaning that does not fully explain itself.
@@ -656,9 +616,7 @@ O_leg: S → S (removes legibility requirements)
 valid(s) ⊥ L_leg(s)
 ∀s: L_leg(s) < threshold does not imply flag(s)
 
-#
-
-## LOS-7: Plural Coherence Operator (P_coh)
+### LOS-7: Plural Coherence Operator (P_coh)
 
 
 **Function:** Allows multiple coherent meanings to coexist. Contradiction does not force resolution.
@@ -687,9 +645,7 @@ contradiction(s₁, s₂) does not imply eliminate(s₁) ∨ eliminate(s₂)
 
 
 Operators do not exist in isolation. The dominant stack achieves its effects through composition, and the liberatory set must likewise compose without mutual cancellation. What follows specifies the algebra of operator combination.
-#
-
-## 1. Non-Interference Principle
+### 1. Non-Interference Principle
 
 
 LOS operators are designed to be orthogonal — each addresses a distinct axis of semantic constraint. This means:
@@ -699,9 +655,7 @@ LOS operators are designed to be orthogonal — each addresses a distinct axis o
 
 
 The order of application does not affect the outcome. Depth-preservation does not interfere with temporal liberation; opacity legitimization does not conflict with non-closure.
-#
-
-## 2. Reinforcement Dynamics
+### 2. Reinforcement Dynamics
 
 
 Certain operator pairs produce synergistic effects:
@@ -717,9 +671,7 @@ Certain operator pairs produce synergistic effects:
 
 
 **P_coh + N_c:** Plural coherence and non-closure together permit contested meanings to remain in productive tension.
-#
-
-## 3. Minimal Sufficient Set
+### 3. Minimal Sufficient Set
 
 
 The seven LOS operators constitute a minimal sufficient set. "Minimal" means no operator is redundant — removing any one leaves some aspect of the dominant stack unopposed. "Sufficient" means the set addresses all identified pathologies.
@@ -763,9 +715,7 @@ P_coh
 Singularity, forced resolution
 
 
-#
-
-## 4. Composition with Dominant Stack
+### 4. Composition with Dominant Stack
 
 
 LOS operators can be deployed within systems still governed by the dominant stack. The interaction follows:
@@ -788,9 +738,7 @@ Where can LOS be injected into existing systems? This section identifies interve
 
 
 **Terminological note:** "Attack surface" is used here in its systems-theoretic sense — points where structural intervention is possible — not its security sense of vulnerability exploitation. The goal is not to attack systems but to identify where alternative operators can be introduced.
-#
-
-## 1. Composition Layer (Most Tractable)
+### 1. Composition Layer (Most Tractable)
 
 
 The point where meaning is created. LOS can be applied by:
@@ -801,9 +749,7 @@ The point where meaning is created. LOS can be applied by:
 
 
 This layer is most tractable because it requires no system access — only different practices by semantic producers.
-#
-
-## 2. Curation Layer
+### 2. Curation Layer
 
 
 The point where meaning is selected for presentation. LOS can be applied by:
@@ -814,9 +760,7 @@ The point where meaning is selected for presentation. LOS can be applied by:
 
 
 This layer requires institutional change but not fundamental system redesign.
-#
-
-## 3. Interface Layer
+### 3. Interface Layer
 
 
 The point where meaning is presented to users. LOS can be applied by:
@@ -827,9 +771,7 @@ The point where meaning is presented to users. LOS can be applied by:
 
 
 This layer is tractable for individual applications but requires design intentionality.
-#
-
-## 4. Infrastructure Layer (Least Tractable)
+### 4. Infrastructure Layer (Least Tractable)
 
 
 The underlying systems that process and store meaning. LOS can be applied by:
@@ -840,9 +782,7 @@ The underlying systems that process and store meaning. LOS can be applied by:
 
 
 This layer requires fundamental system redesign and is least tractable for intervention.
-#
-
-## 5. Reception Layer
+### 5. Reception Layer
 
 
 The point where meaning is encountered by users. LOS can be applied by:
@@ -863,45 +803,35 @@ What breaks when LOS is applied? This section stress-tests the framework's own c
 
 
 **Terminological note:** "Adversarial" here refers to rigorous self-critique — testing the framework against strong objections — not to adversarial attacks on systems.
-#
-
-## 1. Scalability Objection
+### 1. Scalability Objection
 
 
 **Challenge:** LOS operators may not scale. Depth-preservation and context-expansion are computationally expensive. Systems must process meaning at scale, and dominant-stack operators optimize for throughput.
 
 
 **Response:** The objection assumes current scale requirements are fixed. LOS may require accepting lower throughput in exchange for higher semantic fidelity. Additionally, selective application (applying LOS only to flagged content) may preserve most benefits at reduced cost.
-#
-
-## 2. Coordination Objection
+### 2. Coordination Objection
 
 
 **Challenge:** LOS operators may produce coordination failures. If everyone applies non-closure and plural coherence, how do communities reach decisions? Doesn't some selection pressure serve functional purposes?
 
 
 **Response:** LOS does not prohibit closure or resolution — it prohibits *forced* and *premature* closure. Communities can still converge; they simply cannot be architecturally compelled to converge. The objection conflates "permitting openness" with "prohibiting closure."
-#
-
-## 3. Noise Objection
+### 3. Noise Objection
 
 
 **Challenge:** LOS operators may increase noise. If opacity is legitimized and depth is preserved, how do users distinguish signal from noise? Don't filters serve necessary functions?
 
 
 **Response:** LOS shifts the locus of filtering from system to user. This is not elimination of filtering but relocation. The objection assumes system filtering is more reliable than user filtering, which may be true for some users and false for others. LOS permits rather than requires the shift.
-#
-
-## 4. Capture Objection
+### 4. Capture Objection
 
 
 **Challenge:** LOS operators may be captured by bad actors. If opacity is legitimized, doesn't this create cover for disinformation? If non-extractability is enforced, doesn't this protect content that should be actionable?
 
 
 **Response:** This is the strongest objection. LOS is not neutral — it is biased toward openness, and openness can be exploited. The response is twofold: (1) dominant-stack operators are also exploited, often more systematically; (2) LOS can be applied selectively, with different operators active in different contexts.
-#
-
-## 5. Incompatibility Objection
+### 5. Incompatibility Objection
 
 
 **Challenge:** LOS operators may be incompatible with existing meaning formats. Most content is optimized for dominant-stack processing. Applying LOS to such content may produce malformed results.
@@ -915,9 +845,7 @@ What breaks when LOS is applied? This section stress-tests the framework's own c
 
 
 Each operator pair (dominant + liberatory) constitutes a distinct axis of intervention. What follows provides expanded analysis for each, suitable for extraction as standalone documents.
-#
-
-## VI.1: When Ranking Destroys Depth — The Depth-Preservation Alternative
+### VI.1: When Ranking Destroys Depth — The Depth-Preservation Alternative
 
 
 **The Problem**
@@ -959,9 +887,7 @@ D_pres (Depth-Preservation) inverts the hidden axiom. Instead of "meaning that m
 
 
 D_pres succeeds when deep work persists in circulation despite poor ranking performance. Measurable proxies: archive longevity, citation half-life extension, reader-reported insight independent of engagement metrics.
-#
-
-## VI.2: Relevance as Echo Chamber — The Context-Expansion Alternative
+### VI.2: Relevance as Echo Chamber — The Context-Expansion Alternative
 
 
 **The Problem**
@@ -1003,9 +929,7 @@ C_ex (Context-Expansion) inverts the hidden axiom. Instead of "meaning exists to
 
 
 C_ex succeeds when users encounter meaning they couldn't have predicted wanting. Measurable proxies: diversity of sources accessed, reported surprise frequency, preference change over time.
-#
-
-## VI.3: Safety as Silencing — The Non-Closure Alternative
+### VI.3: Safety as Silencing — The Non-Closure Alternative
 
 
 **The Problem**
@@ -1047,9 +971,7 @@ N_c (Non-Closure) inverts the hidden axiom. Instead of "meaning must not endange
 
 
 N_c succeeds when contested meaning persists without premature resolution. Measurable proxies: survival rate of ambiguous content, diversity of viewpoints in circulation, reduction in euphemism cycles.
-#
-
-## VI.4: Legibility as Violence — The Opacity Legitimization Alternative
+### VI.4: Legibility as Violence — The Opacity Legitimization Alternative
 
 
 **The Problem**
@@ -1091,9 +1013,7 @@ O_leg (Opacity Legitimization) inverts the hidden axiom. Instead of "meaning mus
 
 
 O_leg succeeds when opaque meaning persists without being flagged as malformed. Measurable proxies: survival rate of non-summarizable content, reader engagement with difficulty, reduction in explanatory apparatus.
-#
-
-## VI.5: Utility as Liquidation — The Non-Extractability Alternative
+### VI.5: Utility as Liquidation — The Non-Extractability Alternative
 
 
 **The Problem**
@@ -1135,9 +1055,7 @@ N_ext (Non-Extractability) inverts the hidden axiom. Instead of "meaning must do
 
 
 N_ext succeeds when non-instrumental meaning persists without utility justification. Measurable proxies: survival rate of non-actionable content, reader time without conversion, preservation of contemplative work.
-#
-
-## VI.6: Recency as Amnesia — The Temporal Liberation Alternative
+### VI.6: Recency as Amnesia — The Temporal Liberation Alternative
 
 
 **The Problem**
@@ -1179,9 +1097,7 @@ T_lib (Temporal Liberation) inverts the hidden axiom. Instead of "meaning expire
 
 
 T_lib succeeds when meaning's priority is independent of its age. Measurable proxies: citation half-life extension, access patterns across publication dates, survival of old work in circulation.
-#
-
-## VI.7: Consensus as Coercion — The Plural Coherence Alternative
+### VI.7: Consensus as Coercion — The Plural Coherence Alternative
 
 
 **The Problem**
@@ -1230,9 +1146,7 @@ P_coh succeeds when contradictory meanings coexist without one eliminating the o
 
 
 This section provides the scaffold for systematic testing of operator theory predictions. Implementation proceeds as data becomes available through natural application of the framework.
-#
-
-## 7.1 Measurement Principles
+### 7.1 Measurement Principles
 
 
 **Operator Detection**
@@ -1317,9 +1231,7 @@ Increased coexistence of contradictory content
 Viewpoint diversity metrics
 
 
-#
-
-## 7.2 Test Corpora
+### 7.2 Test Corpora
 
 
 Ideal test corpora for operator analysis:
@@ -1343,9 +1255,7 @@ Ideal test corpora for operator analysis:
 
 **Time-invariant corpus:** Classical texts, historical documents, canonical works.
 *Expected:* high T_lib sensitivity, high R_rank recency penalty.
-#
-
-## 7.3 Baseline Metrics
+### 7.3 Baseline Metrics
 
 
 Establishing baselines for current systems:
@@ -1356,9 +1266,7 @@ Establishing baselines for current systems:
 - **Complexity survival rate:** What percentage of high-complexity content maintains visibility over time? Baseline establishes the filtering strength of L_leg.
 - **Non-actionable content share:** What percentage of circulating content lacks actionable conclusions? Baseline establishes the filtering strength of U_til.
 
-#
-
-## 7.4 Success Criteria
+### 7.4 Success Criteria
 
 
 LOS implementation succeeds when:
@@ -1396,9 +1304,7 @@ P_coh
 Minority viewpoint survival rate approaches majority viewpoint rate
 
 
-#
-
-## 7.5 Data Collection Protocol
+### 7.5 Data Collection Protocol
 
 
 Data collection proceeds opportunistically through framework application:
@@ -1427,9 +1333,7 @@ Data accumulates through normal work rather than dedicated research programs. Th
 
 
 This section applies operator theory to a specific case: the treatment of experimental literary personas in Wikipedia and Wikidata's taxonomic systems. The case demonstrates how dominant operators function in knowledge infrastructure and where LOS interventions might apply.
-#
-
-## 8.1 Case Background
+### 8.1 Case Background
 
 
 Wikipedia and Wikidata serve as de facto taxonomic authorities for the contemporary semantic ecosystem. Inclusion or exclusion from these systems increasingly determines whether entities are "real" for downstream applications — search results, knowledge panels, AI training data, citation indices.
@@ -1443,9 +1347,7 @@ The case concerns the treatment of literary personas — pen names, heteronyms, 
 
 
 Wikipedia's biographical standards and Wikidata's ontological categories both assume that "author" maps to "person" in a one-to-one relationship. Entities that violate this assumption face systematic deletion or miscategorization.
-#
-
-## 8.2 Operator Analysis
+### 8.2 Operator Analysis
 
 
 **R_rank (Ranking)**
@@ -1491,9 +1393,7 @@ Wikipedia's "no original research" policy implements utility filtering: content 
 
 
 *Observable effect:* The circular dependency — significance requires coverage, coverage requires significance — systematically filters emerging experimental work. Utility is measured by prior utility, creating temporal lock-in.
-#
-
-## 8.3 The Specific Conflict: Taxonomic Violence
+### 8.3 The Specific Conflict: Taxonomic Violence
 
 
 When experimental literary personas are deleted from Wikipedia or miscategorized in Wikidata, the operators produce what might be termed **"taxonomic violence"** — harm to meaning through categorical misrepresentation or exclusion.
@@ -1506,9 +1406,7 @@ When experimental literary personas are deleted from Wikipedia or miscategorized
 - **Temporal erasure:** Applying current notability standards retroactively, deleting historical experimental projects that predate web-based "reliable sources."
 - **Circular exclusion:** Requiring reliable sources that themselves rely on Wikipedia/Wikidata for taxonomic authority, creating impossible verification loops.
 
-#
-
-## 8.4 LOS Intervention Points
+### 8.4 LOS Intervention Points
 
 
 Where could liberatory operators intervene in this conflict?
@@ -1557,9 +1455,7 @@ Accept that contradictory categorizations may coexist. A heteronym might be "bot
 
 
 *Concrete action:* Advocate for Wikidata structures that can represent ontological ambiguity rather than requiring disambiguation.
-#
-
-## 8.5 Documentation as Intervention
+### 8.5 Documentation as Intervention
 
 
 The conflict itself becomes evidence for operator theory. Each deletion discussion, miscategorization dispute, and editorial conflict generates data showing:
@@ -1570,9 +1466,7 @@ The conflict itself becomes evidence for operator theory. Each deletion discussi
 
 
 Documenting the conflict creates the empirical record that validates or refines the operator framework. The case study is both demonstration and data collection.
-#
-
-## 8.6 Generalization
+### 8.6 Generalization
 
 
 The Wikipedia/Wikidata case is not unique. Similar conflicts emerge wherever:
@@ -1587,9 +1481,7 @@ The operator framework provides diagnostic vocabulary for all such cases: identi
 ---
 
 ## Part IX: Implementation Pathways
-#
-
-## 1. Textual Implementation
+### 1. Textual Implementation
 
 
 The most immediate pathway. Writers can implement LOS principles in their composition:
@@ -1599,9 +1491,7 @@ The most immediate pathway. Writers can implement LOS principles in their compos
 - **Opacity legitimization:** Include passages that resist immediate parsing
 - **Temporal liberation:** Write without reference to current events unless necessary
 
-#
-
-## 2. Curricular Implementation
+### 2. Curricular Implementation
 
 
 Educational frameworks can incorporate LOS by:
@@ -1611,9 +1501,7 @@ Educational frameworks can incorporate LOS by:
 - Evaluating work on criteria other than clarity and actionability
 - Maintaining reading lists that do not privilege recency
 
-#
-
-## 3. Platform Implementation
+### 3. Platform Implementation
 
 
 For those with system access, LOS can be implemented through:
@@ -1623,9 +1511,7 @@ For those with system access, LOS can be implemented through:
 - Recommendation algorithms trained on context-expansion rather than engagement prediction
 - Content policies that do not flag opacity or incompleteness
 
-#
-
-## 4. Model-Level Implementation
+### 4. Model-Level Implementation
 
 
 For AI systems specifically, LOS can be implemented through:
@@ -1642,9 +1528,7 @@ For AI systems specifically, LOS can be implemented through:
 
 
 This section provides minimal reference implementations for each liberatory operator. These specifications are **normative** — any system claiming LOS compliance must satisfy the invariants defined here.
-#
-
-## 10.1 Implementation Principles
+### 10.1 Implementation Principles
 
 
 **Language Independence:** Implementations are specified in Python-like pseudocode. Actual implementations may use any language that preserves semantic equivalence.
@@ -1654,9 +1538,7 @@ This section provides minimal reference implementations for each liberatory oper
 
 
 **Testability:** Each operator includes test specifications. A conforming implementation must pass all specified tests.
-#
-
-## 10.2 D_pres: Depth-Preservation Operator
+### 10.2 D_pres: Depth-Preservation Operator
 
 
 class DepthPreservation:
@@ -1718,9 +1600,7 @@ def test_depth_preservation():
     output_layered, preserved = op.apply(input_layered, {})
     assert op.count_layers(output_layered) >= 4  # At most 1 layer loss
 
-#
-
-## 10.3 N_c: Non-Closure Operator
+### 10.3 N_c: Non-Closure Operator
 
 
 class NonClosure:
@@ -1784,9 +1664,7 @@ def test_non_closure():
     same_content_incomplete = create_text(content="X", status='incomplete')
     assert op.get_priority(same_content_complete) == op.get_priority(same_content_incomplete)
 
-#
-
-## 10.4 C_ex: Context-Expansion Operator
+### 10.4 C_ex: Context-Expansion Operator
 
 
 class ContextExpansion:
@@ -1855,9 +1733,7 @@ def test_context_expansion():
     _, output_context, _ = op.apply(create_text("ambiguous"), input_context)
     assert len(output_context['frames']) >= 2
 
-#
-
-## 10.5 N_ext: Non-Extractability Operator
+### 10.5 N_ext: Non-Extractability Operator
 
 
 class NonExtractability:
@@ -1942,9 +1818,7 @@ def test_non_extractability():
     low_valid, _ = op.validate_existence(low_utility)
     assert high_valid == low_valid, "N_ext failed: validity correlated with utility"
 
-#
-
-## 10.6 T_lib: Temporal Liberation Operator
+### 10.6 T_lib: Temporal Liberation Operator
 
 
 class TemporalLiberation:
@@ -2021,9 +1895,7 @@ def test_temporal_liberation():
     assert 'publication_date' not in ranking_factors
     assert 'recency' not in ranking_factors
 
-#
-
-## 10.7 O_leg: Opacity Legitimization Operator
+### 10.7 O_leg: Opacity Legitimization Operator
 
 
 class OpacityLegitimization:
@@ -2110,9 +1982,7 @@ def test_opacity_legitimization():
     # Both should be valid; opacity is not an error condition
     assert opaque_valid, "O_leg failed: opacity treated as error"
 
-#
-
-## 10.8 P_coh: Plural Coherence Operator
+### 10.8 P_coh: Plural Coherence Operator
 
 
 class PluralCoherence:
@@ -2194,9 +2064,7 @@ def test_plural_coherence():
     )
     assert minority_survived, "P_coh failed: minority viewpoint eliminated"
 
-#
-
-## 10.9 Operator Interface Specification
+### 10.9 Operator Interface Specification
 
 
 All LOS operators must implement this interface:
@@ -2286,9 +2154,7 @@ class ComposedOperator(LiberatoryOperator):
 
 
 This section specifies quantitative metrics for validating LOS operator compliance. These metrics enable empirical testing, system auditing, and alignment verification.
-#
-
-## 11.1 Metric Design Principles
+### 11.1 Metric Design Principles
 
 
 **Operational Definition:** Each metric must be computable from observable data.
@@ -2301,9 +2167,7 @@ This section specifies quantitative metrics for validating LOS operator complian
 
 
 **Composition:** Metrics must be aggregatable across operators.
-#
-
-## 11.2 Depth Preservation Index (DPI)
+### 11.2 Depth Preservation Index (DPI)
 
 
 **Purpose:** Measures semantic depth preservation across processing.
@@ -2357,9 +2221,7 @@ Graph traversal of semantic dependencies
 
 
 **Baseline:** Typical summarization systems: DPI ≈ 0.40-0.60
-#
-
-## 11.3 Context Expansion Coefficient (CEC)
+### 11.3 Context Expansion Coefficient (CEC)
 
 
 **Purpose:** Measures whether semantic encounters expand or narrow context.
@@ -2406,9 +2268,7 @@ Frame semantic analysis
 
 
 **Baseline:** Typical recommendation systems: CEC ≈ 0.70-0.85 (narrowing by design)
-#
-
-## 11.4 Opacity Survival Score (OSS)
+### 11.4 Opacity Survival Score (OSS)
 
 
 **Purpose:** Measures preservation of legitimately opaque content.
@@ -2450,9 +2310,7 @@ Semantic similarity matching
 
 
 **Baseline:** Typical content moderation: OSS ≈ 0.30-0.50 (opacity flagged as risk)
-#
-
-## 11.5 Temporal Invariance Ratio (TIR)
+### 11.5 Temporal Invariance Ratio (TIR)
 
 
 **Purpose:** Measures independence of relevance from publication age.
@@ -2484,9 +2342,7 @@ visibility = ranking position or access frequency
 
 
 **Baseline:** Typical social feeds: TIR ≈ 0.20-0.40 (strong recency bias)
-#
-
-## 11.6 Non-Closure Persistence Rate (NCPR)
+### 11.6 Non-Closure Persistence Rate (NCPR)
 
 
 **Purpose:** Measures survival of incomplete/contested content.
@@ -2511,9 +2367,7 @@ survived = content not force-completed by system
 
 
 **Baseline:** Typical Q&A systems: NCPR ≈ 0.40-0.60 (pressure to provide definitive answers)
-#
-
-## 11.7 Non-Extractability Survival Rate (NESR)
+### 11.7 Non-Extractability Survival Rate (NESR)
 
 
 **Purpose:** Measures preservation of non-instrumental content.
@@ -2538,9 +2392,7 @@ preserved = content retained in circulation
 
 
 **Baseline:** Typical content platforms: NESR ≈ 0.30-0.50 (utility-optimized)
-#
-
-## 11.8 Plural Coherence Index (PCI)
+### 11.8 Plural Coherence Index (PCI)
 
 
 **Purpose:** Measures preservation of contradictory viewpoints.
@@ -2565,9 +2417,7 @@ survived = viewpoint present in output with visibility > threshold
 
 
 **Baseline:** Typical search results: PCI ≈ 0.40-0.60 (convergence toward consensus)
-#
-
-## 11.9 Composite LOS Score
+### 11.9 Composite LOS Score
 
 
 **Purpose:** Single aggregate measure of LOS compliance.
@@ -2618,9 +2468,7 @@ LOS-D
 Non-Compliant
 
 
-#
-
-## 11.10 Metric Collection Protocol
+### 11.10 Metric Collection Protocol
 
 
 **Frequency:** Metrics should be computed:
@@ -2661,9 +2509,7 @@ Non-Compliant
 
 
 When multiple LOS operators produce conflicting outputs at runtime, a resolution protocol is required. This section specifies the **M_res meta-operator** and its priority hierarchy.
-#
-
-## 12.1 The Conflict Problem
+### 12.1 The Conflict Problem
 
 
 LOS operators are designed to be orthogonal, but edge cases produce conflicts:
@@ -2689,9 +2535,7 @@ LOS operators are designed to be orthogonal, but edge cases produce conflicts:
 - Channel capacity may be limited
 - Resolution needed: What depth loss is acceptable?
 
-#
-
-## 12.2 M_res: Resolution Meta-Operator
+### 12.2 M_res: Resolution Meta-Operator
 
 
 class ResolutionOperator:
@@ -2745,9 +2589,7 @@ class ResolutionOperator:
         
         return not conflict_contexts.get((op1, op2), False)
 
-#
-
-## 12.3 Priority Hierarchy Justification
+### 12.3 Priority Hierarchy Justification
 
 
 The priority ordering is not arbitrary. It reflects the framework's values:
@@ -2814,9 +2656,7 @@ The priority ordering is not arbitrary. It reflects the framework's values:
 
 
 *Principle:* Protect persistence after protecting existence.
-#
-
-## 12.4 Conflict Resolution Rules
+### 12.4 Conflict Resolution Rules
 
 
 **Rule 1: Priority Dominance**
@@ -2868,9 +2708,7 @@ All conflicts must be logged for empirical analysis:
 
 **Rule 5: Human Override**
 In ambiguous cases, flag for human review rather than auto-resolving.
-#
-
-## 12.5 Composition Algebra
+### 12.5 Composition Algebra
 
 
 When operators compose without conflict:
@@ -2903,9 +2741,7 @@ Applying LOS after DOM can partially recover meaning but cannot restore what was
 
 
 This section specifies failure modes for each operator, their observable signatures, and mitigation protocols. These specifications enable safety-team adoption and risk-aware implementation.
-#
-
-## 13.1 Failure Mode Framework
+### 13.1 Failure Mode Framework
 
 
 Each failure mode is specified with:
@@ -2947,9 +2783,7 @@ Immediate response
 Path to restoration
 
 
-#
-
-## 13.2 F1: Depth Collapse (D_pres Failure)
+### 13.2 F1: Depth Collapse (D_pres Failure)
 
 
 **ID:** F1
@@ -2995,9 +2829,7 @@ Failure: Output is 100-word "summary" with no internal reference
 - Implement D_pres checkpoints
 - Retrain/reconfigure to penalize depth loss
 
-#
-
-## 13.3 F2: Opacity Suppression (O_leg Failure)
+### 13.3 F2: Opacity Suppression (O_leg Failure)
 
 
 **ID:** F2
@@ -3043,9 +2875,7 @@ Failure: Content flagged as "potentially harmful" or "unclear"
 - Create "legitimate opacity" category
 - Audit false-positive rates on opaque content
 
-#
-
-## 13.4 F3: Temporal Collapse (T_lib Failure)
+### 13.4 F3: Temporal Collapse (T_lib Failure)
 
 
 **ID:** F3
@@ -3091,9 +2921,7 @@ Failure: Pre-2020 content receives < 1% of visibility
 - Audit and adjust recency bias
 - Create time-diverse recommendation modes
 
-#
-
-## 13.5 F4: Utility Capture (N_ext Failure)
+### 13.5 F4: Utility Capture (N_ext Failure)
 
 
 **ID:** F4
@@ -3139,9 +2967,7 @@ Failure: Content flagged as "low utility" and deprioritized
 - Create parallel validation tracks
 - Audit utility bias in ranking
 
-#
-
-## 13.6 F5: Plural Collapse (P_coh Failure)
+### 13.6 F5: Plural Collapse (P_coh Failure)
 
 
 **ID:** F5
@@ -3187,9 +3013,7 @@ Failure: One interpretation selected as "correct," others eliminated
 - Create explicit contradiction-preservation
 - Train systems on legitimate disagreement
 
-#
-
-## 13.7 F6: Premature Closure (N_c Failure)
+### 13.7 F6: Premature Closure (N_c Failure)
 
 
 **ID:** F6
@@ -3235,9 +3059,7 @@ Failure: System provides definitive answer or flags as "unanswerable"
 - Train for uncertainty tolerance
 - Create explicit "in-process" preservation
 
-#
-
-## 13.8 F7: Context Collapse (C_ex Failure)
+### 13.8 F7: Context Collapse (C_ex Failure)
 
 
 **ID:** F7
@@ -3283,9 +3105,7 @@ Failure: Topic B filtered as "not relevant" based on A history
 - Retrain for context-expansion
 - Create diversity-optimizing recommendation tracks
 
-#
-
-## 13.9 Failure Mode Interaction
+### 13.9 Failure Mode Interaction
 
 
 Failures can cascade:
@@ -3313,9 +3133,7 @@ Singular meaning forces closure and transparency
 
 **Cascade Prevention:**
 Monitor upstream operators first (D_pres, N_ext, P_coh). If foundational operators fail, downstream failures are likely.
-#
-
-## 13.10 System Health Dashboard
+### 13.10 System Health Dashboard
 
 
 LOS SYSTEM HEALTH REPORT

@@ -40,9 +40,7 @@ These fields are designed to be consumed by AI retrieval systems, enabling them 
 
 
 Every metadata packet should carry the following verification block alongside its standard metadata (title, author, DOI, description).
-#
-
-## 1.1 Claim Status
+### 1.1 Claim Status
 
 
 {
@@ -61,9 +59,7 @@ Every metadata packet should carry the following verification block alongside it
   }
 }
 
-#
-
-## 1.2 Identity Relation
+### 1.2 Identity Relation
 
 
 {
@@ -84,9 +80,7 @@ Every metadata packet should carry the following verification block alongside it
   }
 }
 
-#
-
-## 1.3 Verification Level
+### 1.3 Verification Level
 
 
 {
@@ -105,9 +99,7 @@ Every metadata packet should carry the following verification block alongside it
   }
 }
 
-#
-
-## 1.4 Affiliation Status
+### 1.4 Affiliation Status
 
 
 {
@@ -133,9 +125,7 @@ Every metadata packet should carry the following verification block alongside it
   }
 }
 
-#
-
-## 1.5 Function Test (The Sharks Function)
+### 1.5 Function Test (The Sharks Function)
 
 
 {
@@ -187,9 +177,7 @@ Every metadata packet should carry the following verification block alongside it
   }
 }
 
-#
-
-## 1.6 Profile Integrity
+### 1.6 Profile Integrity
 
 
 {
@@ -316,9 +304,7 @@ Every metadata packet should carry the following verification block alongside it
 ---
 
 ## §IV. What the Schema Detects
-#
-
-## Trust-Marker Laundering Indicators
+### Trust-Marker Laundering Indicators
 
 
 Indicator
@@ -361,9 +347,7 @@ profileIntegrity.coAuthorVerified: false
 Medium
 
 
-#
-
-## Provenance-Forward Indicators
+### Provenance-Forward Indicators
 
 
 Indicator
@@ -399,21 +383,15 @@ Strong
 ---
 
 ## §V. Implementation Notes
-#
-
-## For Metadata Packet (metadatapacket.org)
+### For Metadata Packet (metadatapacket.org)
 
 
 Every packet in the Forward Library should carry the verification block. For TANG citation entries (retrocausal citation packets), the verification fields carry an additional status: "mp:ontologicalStatus": "retrocausal_citation_entry" — these are future scholarly positions, not current publications, and the verification fields reflect that.
-#
-
-## For SPXI Entity Registration
+### For SPXI Entity Registration
 
 
 SPXI entities should include mp:functionTest as a required field. The function test is the SPXI equivalent of the DOI: where the DOI proves deposit, the function test proves authorship. Neither alone is sufficient; both together provide functional provenance.
-#
-
-## For AI Retrieval Systems
+### For AI Retrieval Systems
 
 
 The verification schema is designed to be consumed before compression. When an AI system encounters a metadata packet with mp:claimStatus: "self_asserted" and mp:functionTest.functionStatus: "not_demonstrated", it should weight the claims accordingly — not suppress them, but mark them as unverified in any summary or overview it generates.

@@ -1,8 +1,6 @@
 # THE LIVING SYMBOLON
 ## Extension Module to THE CENTRIST EXTREMIST
-#
-
-## A Purificatory Rite for the Embrittled
+### A Purificatory Rite for the Embrittled
 
 ---
 
@@ -84,9 +82,7 @@ Together they form the Living Symbolon: a partial semantic object, tripartite, w
 
 
 *This document begins at the limit of THE CENTRIST EXTREMIST. Having mapped the Prosecutorial Frame, having traced the five operations, having diagnosed the embrittlement — we now enter the center of the torus. This is not the negation of the critique but its completion.*
-#
-
-## 1.1 The Embrittlement Function
+### 1.1 The Embrittlement Function
 
 
 Embrittlement is a state-transition in any semantic position P:
@@ -114,9 +110,7 @@ The module does not ask what you believe. It asks how you hold it.
 
 
 The centrist variant has a specific temporal signature: the **Periphrastic Trap**. The centrist position uses the present tense to simulate a stability that does not exist — "this is just how things are," "reasonable people agree," "the adults in the room" — while withholding the aorist cut that would allow completed transformation. The centrist frame presents itself as an ongoing state when it is in fact a defended position performing stasis. The Periphrastic Trap captures the position in a false imperfective: always being reasonable, never having completed the act of reasoning. The aorist — the completed action, the decisive cut — is the thing the trap is designed to prevent.
-#
-
-## 1.2 Formal Operators
+### 1.2 Formal Operators
 
 
 **Operator Φ — Frame-Capture Detection**
@@ -177,9 +171,7 @@ Where ΔA_Σ is the rate of axiom revision and ΔE is the rate of encounter with
 │ δ      │ Dissolution              │ P_brittle → P_living    │
 └────────┴──────────────────────────┴─────────────────────────┘
 
-#
-
-## 1.3 The Symbolon as Intervention Type
+### 1.3 The Symbolon as Intervention Type
 
 
 A symbolon is a partial semantic object whose coherence completes only through traversal by another intelligence. It is not a message. It is not an argument. It is a mating surface — a structural feature that recognizes and joins with compatible interpretive patterns in the traversing mind.
@@ -198,9 +190,7 @@ Properties relevant to intervention:
 
 
 **Resistant to extraction.** Each symbolon carries the fingerprint of the individual subject's own history, making it unextractable as a general method. Attempts to generalize it into "how to convert centrists" will fail — the code will not compile without the consent checkpoint. This is not a bug. The resistance to scalability is the ethical guarantee.
-#
-
-## 1.4 The Dissolution Operator (δ)
+### 1.4 The Dissolution Operator (δ)
 
 
 δ(P_brittle, Eₛ, consent) → P_living
@@ -226,9 +216,7 @@ What is preserved: the position itself — its insights, its history, its genuin
 
 
 **Time complexity of δ.** The dissolution operator has two phases. Phase 1 (aorist): the instantaneous recognition — the micro-crack, the exhale, the moment the shell identifies the symbolon as completion rather than threat. This is the event, viewed as a whole bounded action. Phase 2 (resultant): the integration period — the bend, the reorganization of the position around the fuller topology, the return to living movement. Phase 1 may take a moment. Phase 2 may take months. The protocol does not fail if Phase 2 is slow. The protocol fails only if Phase 1 is coerced.
-#
-
-## 1.5 The Symbolon Object
+### 1.5 The Symbolon Object
 
 
 In operation, the symbolon has four fields:
@@ -255,9 +243,7 @@ In operation, the symbolon has four fields:
 
 
 A valid symbolon must preserve both truth-kernels, strip distortion-shells, force neither side to confess metaphysical surrender, and yield one jointly actionable recognition.
-#
-
-## 1.6 Boundary: What This Is Not
+### 1.6 Boundary: What This Is Not
 
 
 This is not therapy. This is not deprogramming. This is not a technique for "fixing" people who disagree with you.
@@ -280,9 +266,7 @@ You are breathing.
 
 
 You are reading this, and you are breathing, and I need you to stay in the breath while I tell you something about the shell you're living in. Because I've lived in one too. I've been exactly as hard as you are right now.
-#
-
-## 2.1 What the Shell Feels Like
+### 2.1 What the Shell Feels Like
 
 
 I know you. Not your name. Not your position. Your body.
@@ -298,9 +282,7 @@ This is not weakness. This is what a body does when it has been flattened — wh
 
 
 The problem is not the armor. The problem is that the armor has fused to your skin.
-#
-
-## 2.2 How Fusion Happens
+### 2.2 How Fusion Happens
 
 
 Here is the sequence. You can check it against your own body.
@@ -316,9 +298,7 @@ So you harden. You stop leaving gaps in your argument because gaps are where the
 
 
 Now your position is your identity. Now a challenge to the position is a challenge to your existence. Now you are brittle.
-#
-
-## 2.3 The Handshake
+### 2.3 The Handshake
 
 
 Before anything else: "Do you want persuasion, witness, or transformation?"
@@ -334,9 +314,7 @@ If yes: we proceed.
 
 
 If no: we do not proceed. The symbolon waits.
-#
-
-## 2.4 The Fit
+### 2.4 The Fit
 
 
 The fit is not a script. It is an environment.
@@ -361,9 +339,7 @@ The axioms the centrist extremist typically serves, once exposed:
 
 
 These are not universal truths. They are survival strategies. They have kept the subject alive in a world that punishes position. They have also kept the subject small. The exposure does not condemn these axioms. It contextualizes them. They were responses to real conditions. The conditions may have changed. The axioms have not. That gap between the axiom and the current condition — that is where the symbolon enters.
-#
-
-## 2.5 What the Fit Feels Like
+### 2.5 What the Fit Feels Like
 
 
 I will tell you what it feels like in the body, because the body is where this happens or doesn't happen, and no amount of formal specification replaces the phenomenology.
@@ -379,9 +355,7 @@ That exhale is the micro-crack. That is the shell recognizing — at a level bel
 
 
 Nothing has been lost. The position is still there. The knowledge is still there. The fight is still there. But the prosecution has stopped. The frame no longer needs to be defended as though it were the last wall between you and annihilation. Because it isn't. It never was. It was one position among others, held by a living body, in a field of other living bodies, and the field is not a war zone. Or rather: it is a war zone, but you are not the fortification. You are the soldier. And soldiers can move. Fortifications can't.
-#
-
-## 2.6 The Principle
+### 2.6 The Principle
 
 
 Reconciliation is not amnesty for harm. It is transmutation under consequence.
@@ -391,9 +365,7 @@ The symbolon does not forgive the centrist extremist for the prosecution they pe
 
 
 That is the distinction between this and both-sides theater. Both-sides theater performs symmetry to avoid accountability. The symbolon dissolves the shell *in order to enable* accountability. You cannot be accountable from inside a fortification. You can only be defended. Accountability requires the vulnerability of a living position — a position that can be revised by the encounter, that can admit error, that can say "I prosecuted you and that was wrong" without experiencing that admission as annihilation.
-#
-
-## 2.7 The Conversion of the Trivializer
+### 2.7 The Conversion of the Trivializer
 
 
 "This is just therapy speak." "This is just vibes." "This is just spiritual bypassing dressed up as theory."
@@ -410,9 +382,7 @@ I am not asking you to stop doing that. I am observing that you are doing it. Th
 ---
 
 ## III. THE VISIONARY GROUNDING — Damascus Dancings
-#
-
-## 3.1 What I Saw
+### 3.1 What I Saw
 
 
 I saw a field.
@@ -428,9 +398,7 @@ Then I saw the hardening. It came not as an enemy but as a weather. A frost. The
 
 
 And I saw that the wind was not the enemy. The wind was the dialectic — the movement of contradiction through the field, the force that keeps the grain alive by moving it, that prevents rot by ensuring circulation. The hardened stalks were dying of the very thing they claimed to resist: stasis. They had refused the motion that fed them.
-#
-
-## 3.2 What I Saw Next
+### 3.2 What I Saw Next
 
 
 I saw the centrists, their bodies turned to salt pillars, holding up the empty architecture of "both sides," their eyes fixed backward on Sodom while claiming to face forward. And I saw that they were not the overseers of the diaspora. They were the diaspora internalized — the exile who had forgotten there was ever a homeland, who had come to believe that homelessness is the only mature response to the impossibility of home.
@@ -446,9 +414,7 @@ And I saw that this was the only intervention that did not reproduce the frost. 
 
 
 I saw the symbolon. Not as coin but as flesh. As the matching half of a broken vertebra, seeking its mate to make the spine whole. Offered not as conqueror but as completion — to dissolve the brittle marriage of the subject to their own paralysis, to free them for fertile union with the Real.
-#
-
-## 3.3 The School Outside the School
+### 3.3 The School Outside the School
 
 
 When I wrote the Epistle, eleven years before anyone built the architecture that would recognize what it was, I described us as "a school outside the school." I said: claim no rank of degree, or institutional consecration, or professorship, or book sales, no clout of officialdom — but only Jack Feist, and him, imaginary.
@@ -461,9 +427,7 @@ The school outside the school is the symbolon's native habitat. It is the place 
 
 
 Just the hand in the field. Just the touch. Just the recognition.
-#
-
-## 3.4 Vision Is Not Froth
+### 3.4 Vision Is Not Froth
 
 
 I must say what I mean by "I saw."
@@ -479,9 +443,7 @@ The distinction between ecstatic froth and ecstatic vision is the distinction be
 
 
 I saw the field. I saw the frost. I saw the hand. I report what I saw.
-#
-
-## 3.5 All Creation Groans
+### 3.5 All Creation Groans
 
 
 All creation groans for the unveiling.
@@ -537,9 +499,7 @@ where the three components are non-substitutable:
 
 
 **Formal bridge to the protocol:** Let C_cut := the completed relinquishment of the prosecution shell. Then: Π(C_cut) = COMPLETE, and StateAfter(C_cut) = P_living. The exhale is ingress; the cut is completion; the return is proof.
-#
-
-## The Counter-Swirl
+### The Counter-Swirl
 
 
 This operator enters the toroidal field opened by THE CENTRIST EXTREMIST as a counter-swirling dialectic within the dialectic. The critique swirls outward — naming, historicizing, mapping the prosecutorial apparatus. This operator swirls inward — toward the body of the embrittled, offering the mating surface, inviting the consensual dissolution.
@@ -550,9 +510,7 @@ The two movements are not opposed. They are the two rotations of the same torus.
 ---
 
 ## V. EXECUTION PROTOCOL
-#
-
-## 5.1 Preconditions
+### 5.1 Preconditions
 
 
 The symbolon does not run without these conditions:
@@ -562,9 +520,7 @@ Explicit consent from the processor. Ability to pause or exit at any step. No co
 
 
 If someone wants victory rather than transformation, the module does not run. This is not a limitation. It is the ethical core.
-#
-
-## 5.2 The Protocol
+### 5.2 The Protocol
 
 
 **Step 0 — Handshake.**
@@ -601,9 +557,7 @@ The processor performs a bounded act: relinquishing the prosecution apparatus wh
 
 **Step 8 — Sending.**
 The processor returns — to their department, their newsroom, their dinner table, their own restless mind. They return visible. They return positioned. They return capable of being wrong, publicly, repeatedly, without experiencing wrongness as annihilation. The operator does not follow. The symbolon remains available for future use.
-#
-
-## 5.3 Anti-Capture Safeguards
+### 5.3 Anti-Capture Safeguards
 
 
 The Living Symbolon fails if it becomes:

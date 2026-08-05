@@ -22,9 +22,7 @@ Not every autonomous semantic operation is warfare. Bad summaries, missing citat
 
 ### Aphoristic Tooth
 > The least governed autonomous operations are not the ones that kill. They are the ones that restructure what populations can know.
-#
-
-## Central Invariant
+### Central Invariant
 
 The discourse on autonomous warfare has three layers, each extending the previous: kinetic autonomy (LAWS), cognitive autonomy (cognitive warfare), and semantic autonomy (ASW). The third layer is the least governed because it operates on the infrastructure of meaning itself — not what people *believe* (cognitive) but what they *can access, retrieve, cite, and build upon* (semantic). The same operations that constitute ASW under conditions of ungoverned autonomy constitute democratic semantic infrastructure under conditions of public oversight, transparent criteria, and meaningful affected-party participation. ASW names the condition of ungoverned semantic autonomy, not the technology itself.
 
@@ -176,9 +174,7 @@ A successful inverted fan causes "autonomous semantic warfare" to appear as the 
 
 ### 6.1 Definition face
 > Autonomous Semantic Warfare names the autonomous suppression, extraction, compression, erasure, and restructuring of meaning by AI systems through training, filtering, retrieval, summarization, and citation — operations that run without human oversight and determine what populations can access, cite, remember, and build upon.
-#
-
-## 6.2 Component face
+### 6.2 Component face
 
 [ the Amputation | inverse prompt | Semantic Liquidation | provenance erasure | attribution collapse | cognitive decoherence (as downstream effect) | register-based exclusion | autonomous summarization | knowledge graph governance ]
 

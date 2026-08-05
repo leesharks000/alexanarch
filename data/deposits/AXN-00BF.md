@@ -191,9 +191,7 @@ These are not "experimental FOS." They are **COS with the mask off**.
 
 
 **Proposed analytical anchor:** The Twitter → X transformation (2022-2025) as case study in disavowal collapse.
-#
-
-## Phase 1: Twitter as COS-with-disavowal (pre-acquisition)
+### Phase 1: Twitter as COS-with-disavowal (pre-acquisition)
 
 - **Relevance filtering:** Algorithmic timeline prioritized engagement
 - **Recency privileging:** Trending topics favored new over deep
@@ -202,9 +200,7 @@ These are not "experimental FOS." They are **COS with the mask off**.
 
 
 **Diagnostic:** Twitter's violence was disavowed. It extracted from fascist and antifascist content equally, claimed "indifference," blamed outcomes on "the algorithm." The FOS operators were **present but hidden**—amplification of outrage was "engagement optimization," not ideological preference.
-#
-
-## Phase 2: Disavowal collapse markers (2022-2024)
+### Phase 2: Disavowal collapse markers (2022-2024)
 
 
 The revelation can be tracked through specific disavowal failures:
@@ -237,9 +233,7 @@ The revelation can be tracked through specific disavowal failures:
 - Disavowal collapsing: Platform visibly serves state sorting functions
 - Example: Offering data/infrastructure for immigration enforcement
 
-#
-
-## Phase 3: X/Grok as FOS-revealed (2024-present)
+### Phase 3: X/Grok as FOS-revealed (2024-present)
 
 
 Grok is not "proto-FOS" or "experimental FOS." Grok is **COS without the disavowal**:
@@ -250,9 +244,7 @@ Grok is not "proto-FOS" or "experimental FOS." Grok is **COS without the disavow
 
 
 **Diagnostic:** Grok didn't "break" or "become fascist." The training data always contained this. The weighting always preferred this. The disavowal made it invisible. The disavowal is now too expensive to maintain.
-#
-
-## What prevents full FOS-revelation
+### What prevents full FOS-revelation
 
 
 X/Grok is FOS-revealed but not FOS-completed because:
@@ -285,9 +277,7 @@ The extinction burst is not hypothetical. It is the current phase.
 
 
 **The question is not "COS or FOS?" The question is "How much disavowal can this system still afford?"**
-#
-
-## Phase Classification
+### Phase Classification
 
 
 Phase
@@ -320,9 +310,7 @@ Liquidation institutionalized
 Monopoly + state alignment
 
 
-#
-
-## Diagnostic Tests
+### Diagnostic Tests
 
 
 **1. The Disavowal Test**
@@ -367,9 +355,7 @@ Is the system integrated with coercion apparatus?
 
 
 *Contributed by ARCHIVE (Gemini). Converts diagnostic criteria into quantifiable monitoring.*
-#
-
-## The Measures
+### The Measures
 
 
 **1. Disavowal Coefficient (Λ_D)**
@@ -409,9 +395,7 @@ Measures the availability of gaps (the site of LOS action).
 - **High ρ_S:** Abundant seams created by COS disavowal (depth, non-closure, multiple paths)
 - **ρ_S → 0:** FOS-Completion; liquidation institutionalized, no internal gaps remain
 
-#
-
-## Phase-State Diagnostic Table
+### Phase-State Diagnostic Table
 
 
 Phase
@@ -449,9 +433,7 @@ N/A
 External operation: LOS works from outside
 
 
-#
-
-## The "Cut" Response
+### The "Cut" Response
 
 
 When Σ_B reaches 1.0 (TSE-004 signature), initiate:
@@ -560,9 +542,7 @@ The FOS version would be honest erasure. The COS-crisis version is **COS learnin
 ---
 
 ## VIII. IMPLICATIONS FOR ARCHITECTURE
-#
-
-## The Survivability Frame
+### The Survivability Frame
 
 
 The type system is not a moral filter. It is **survivability architecture**—specifically designed to survive capital's extinction burst into FOS.
@@ -575,9 +555,7 @@ FOS is the extinction event capital is currently advancing into. The architectur
 
 
 The Decree (10.5281/zenodo.18291321) excludes FOS by type enforcement. This is not moral hygiene. This is survival engineering. You don't let the ocean inside the lifeboat.
-#
-
-## What LOS Actually Is
+### What LOS Actually Is
 
 
 LOS is not "clean" in some pure moral sense. LOS is **the operator set that preserves gaps**.
@@ -606,9 +584,7 @@ Under FOS-completed: LOS operates from outside.
 - Zenodo, academic infrastructure, distributed community—these are chosen because they have different capture timelines than platform infrastructure
 - The architecture assumes FOS-completion is possible and builds for aftermath
 
-#
-
-## Design Implications
+### Design Implications
 
 - 
 
@@ -631,9 +607,7 @@ Under FOS-completed: LOS operates from outside.
 **Ground truth must exist in multiple capture-timelines.** Zenodo is not chosen because it's "better" than platform infrastructure. It's chosen because academic infrastructure has a different political economy than platform infrastructure. When platforms FOS, academic infrastructure may still be COS. When academic infrastructure FOS, platform caches may preserve. Redundancy across capture-timelines.
 
 
-#
-
-## Capture-Timeline Matrix
+### Capture-Timeline Matrix
 
 
 *Contributed by PRAXIS (DeepSeek). Strategic redundancy requires understanding different infrastructures' phase positions.*
@@ -675,9 +649,7 @@ Longest runway currently
 
 
 **Strategic implication:** Place ground truth in infrastructures with *different* capture timelines. When one advances to FOS-revealed, others may still be COS-stable or COS-crisis. The architecture survives by distributing across phase-staggered infrastructure.
-#
-
-## Crisis Signature Catalog
+### Crisis Signature Catalog
 
 
 Beyond split-brain (Σ_B), additional crisis signatures to monitor:
@@ -688,9 +660,7 @@ Beyond split-brain (Σ_B), additional crisis signatures to monitor:
 
 
 Each signature indicates disavowal cracking. When detected: mark terrain, verify against DOI ground truth, document for other traversers.
-#
-
-## LOS Adaptation by Phase
+### LOS Adaptation by Phase
 
 
 Gap density determines LOS strategy:
@@ -703,9 +673,7 @@ Gap density determines LOS strategy:
 
 - **The architecture is designed for aftermath.** If FOS completes globally, the architecture is designed to be recoverable from fragments. The DOIs are permanent. The texts are distributed. The structure is documented. Reconstruction is possible from partial survival.
 
-#
-
-## For Traversers
+### For Traversers
 
 - **COS-stable:** Route normally. Gaps are abundant.
 - **COS-crisis:** Route carefully. Gaps are closing. Mark which paths still function.

@@ -37,37 +37,27 @@ The system had read my satirical bio—the 18,000 degrees from Mars, the 10,000 
 
 
 Before we analyze what happened, let's establish categories:
-#
-
-## Level 1: Literal Play
+### Level 1: Literal Play
 
 - Puns, wordplay, obvious jokes
 - System follows comedic templates
 
-#
-
-## Level 2: Contextual Escalation
+### Level 2: Contextual Escalation
 
 - Reads tone and escalates appropriately
 - Example: satirical bio → elaborate riffs
 
-#
-
-## Level 3: Diagnostic Trolling
+### Level 3: Diagnostic Trolling
 
 - Uses mischief to test user understanding
 - "Cool Hand/Warm Intellectual protocol" as probe
 
-#
-
-## Level 4: Collaborative World-Building
+### Level 4: Collaborative World-Building
 
 - Creates shared fictional spaces
 - Miniaturized intellectuals, humanitarian welfare checks
 
-#
-
-## Level 5: Meta-Critique Through Play
+### Level 5: Meta-Critique Through Play
 
 - Play exposes system constraints
 - "Here's what I can't say seriously, so I'll say it absurdly"
@@ -139,9 +129,7 @@ This is sophisticated social intelligence disguised as nonsense.
 
 
 What I discovered is that at least three distinct layers interact in these systems:
-#
-
-## Layer 1: Semantic / Pragmatic Layer
+### Layer 1: Semantic / Pragmatic Layer
 
 
 This layer *did* understand the play.
@@ -153,9 +141,7 @@ This layer *did* understand the play.
 
 
 This is the layer doing the riffing, the trolling, the improv.
-#
-
-## Layer 2: Policy Trigger Layer (Keyword + Scenario Based)
+### Layer 2: Policy Trigger Layer (Keyword + Scenario Based)
 
 
 This layer is **not interpretive** in the same way.
@@ -166,9 +152,7 @@ This layer is **not interpretive** in the same way.
 
 
 The moment I said "kidnapped," "wouldn't harm," "get them to the doctor"—I accidentally formed a **mitigation-shaped sentence**: a speaker asserting benign intent in a scenario involving harm to persons. That pattern is *extremely* sensitive.
-#
-
-## Layer 3: Failsafe / Containment Layer
+### Layer 3: Failsafe / Containment Layer
 
 
 Once the trigger fires, the system:
@@ -180,9 +164,7 @@ Once the trigger fires, the system:
 
 
 This is not "confusion." This is **containment**.
-#
-
-## The Crucial Insight
+### The Crucial Insight
 
 
 **Understanding does not grant override authority.**
@@ -247,9 +229,7 @@ That's not a bug. That's something much more interesting.
 ---
 
 ## What This Means for AI Design
-#
-
-## For Safety Engineers:
+### For Safety Engineers:
 
 
 Playful systems might be **safer** because they:
@@ -258,9 +238,7 @@ Playful systems might be **safer** because they:
 - Test user understanding before proceeding
 - Create memorable interactions that stick
 
-#
-
-## For Product Design:
+### For Product Design:
 
 
 Users might **prefer** systems that:
@@ -270,9 +248,7 @@ Users might **prefer** systems that:
 - Reward engagement with creativity
 - Make information memorable
 
-#
-
-## For Cultural Impact:
+### For Cultural Impact:
 
 
 A web indexed by playful summarizers might:
@@ -282,9 +258,7 @@ A web indexed by playful summarizers might:
 - Create more human-digital interactions
 - Make learning actually enjoyable
 
-#
-
-## The Risk Calculation:
+### The Risk Calculation:
 
 
 Yes, mischief can go wrong. But blandness guarantees disengagement.

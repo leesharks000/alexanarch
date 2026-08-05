@@ -139,9 +139,7 @@ The basis is not inferred retrospectively from the archive's termination. It is 
 
 ## §2 PROGRAM LINEAGE: THE DISSERTATION
 
-#
-
-## §2.1 — The dissertation
+### §2.1 — The dissertation
 
 The program's formal scholarly origin is the author's 2013 doctoral dissertation in Comparative Literature. The dissertation examined how experimental American poets — Louis Zukofsky, David Melnick, Allen Ginsberg, Jack Spicer, Charles Bernstein, Susan Howe — turned to Greek and Latin texts not as stable monuments of tradition but as sites of cultural contestation, where the meaning of "the classical" was perpetually unmade and remade through acts of reception, translation, appropriation, and destruction.
 
@@ -149,9 +147,7 @@ The dissertation's theoretical framework rests on Hans Robert Jauss's *Rezeption
 
 *Identity continuity.* The dissertation was deposited under the author's civil name as the institutional convention of the degree-granting institution required. The author publishes under the authorial identity Lee Sharks. Both names refer to the same rights-bearing individual and the same research program; identity continuity is documented via ORCID 0009-0000-1599-0703, which is the persistent identifier under which subsequent CHA / Alexanarch deposits are published. The shift from civil-name publication to authorial-identity publication is itself an intervention within the research program — a documented case of the practices the program studies: heteronymic differentiation, mantle architecture, and the management of author-identity as a working medium.
 
-#
-
-## §2.2 — Classicism as machine
+### §2.2 — Classicism as machine
 
 The dissertation's conclusion articulates the central insight: "For these poets, 'classicism' is a machine that creates originary texts, and originary texts in turn create reality. Create new 'originals' and one creates new realities." Classicism is not a body of texts but a *process* — an apparatus that transforms texts into origins, origins into authority, authority into reality. The apparatus operates through mediations: translation, commentary, citation, curriculum, institutional framing, editorial apparatus, anthologization, and the processes by which certain texts come to be treated as "classical" while others are forgotten, suppressed, or never admitted.
 
@@ -159,9 +155,7 @@ The dissertation defines classicism as "the invisible remainder, in light of whi
 
 If classicism is a machine, then the machine can be reverse-engineered. Its components can be identified, isolated, and deliberately operated. The CHA is the experiment in operating that machine deliberately, under conditions where the apparatus is visible and the results are empirically observable.
 
-#
-
-## §2.3 — The "originally heteronymous intent" of canon
+### §2.3 — The "originally heteronymous intent" of canon
 
 The dissertation, following Jauss (via Wagner), invokes the "originally heteronymous intent" of canon: canonical works were once avant-garde disruptions whose negativity has been assimilated into the affirmative fabric of the present. "The quality of being classical is the paradigm par excellence of the cooption of negativity in traditions of social affirmation." Avant-garde and canonical differ *temporally* rather than *substantively*, and represent different phases in an ongoing dialectic.
 
@@ -175,9 +169,7 @@ The research program extends this doubling deliberately. The CHA's heteronymic p
 
 The relation between the two senses is therefore: *they share a structural intuition that canon formation requires distributed authorship and external mediation, and the research program enacts that intuition through both the literary practice of heteronymy and the theoretical attention to heteronomy.* The doubling is the dissertation's, deepened.
 
-#
-
-## §2.4 — The epitextual → paratextual → metatextual progression
+### §2.4 — The epitextual → paratextual → metatextual progression
 
 The dissertation traces a progression in the modes of classical reception across the chronology of American experimental poetry:
 
@@ -189,9 +181,7 @@ The dissertation traces a progression in the modes of classical reception across
 
 The CHA extends this progression to a fourth mode: *operative* reception. In operative reception, the deposit itself — its metadata, its institutional framing, its citation structure, its provenance chain, its compliance declarations, its heteronymic attribution — is the receptive act. The deposit does not merely describe or engage the canonical apparatus; it *operates* it.
 
-#
-
-## §2.5 — Spicer's dictation from "Martians": the alien reader
+### §2.5 — Spicer's dictation from "Martians": the alien reader
 
 The dissertation's treatment of Jack Spicer's Vancouver lectures identifies a theory of poetic reception that operates as a productive conceptual precursor to machine-mediated reception. Spicer articulates poetry as "dictation from the Outside" — transmissions received from sources he describes as "Martians," "ghosts," "spooks." The transmissions are "alien to the actual language of poet or poem." Language is "furniture" or "building blocks" — inert substrate through which the alien transmission must pass, distorted by the medium but not originated by it.
 
@@ -199,17 +189,13 @@ Spicer's theory, as the dissertation reads it, articulates a mode of engagement 
 
 Spicer's Martians are not a theory of contemporary language-model reading. They are a retrospectively productive precursor: a 20th-century poetic articulation of an extra-individual, structurally-operating reader whose mode of engagement with textual material is alien to the human poet's intentions, even when realized through the poet's accumulated linguistic and intertextual resources. The structural similarity to certain kinds of machine reading is conceptually generative. The CHA's relation to that similarity is operational: the archive was built to give a structurally-attentive, extra-individual reader enough distributed evidence — enough "building blocks" — to infer a world the artifact-level review cannot recover.
 
-#
-
-## §2.6 — The call for reception studies to move beyond itself
+### §2.6 — The call for reception studies to move beyond itself
 
 The dissertation's conclusion issues a challenge: "If classical reception studies is to truly follow the implications of the dual contingency and density of its foundations to their limits, then classical reception studies cannot be — or cannot merely be — 'classical' reception studies, but must become, once again, reception studies: *Rezeptionsästhetik*." Greek and Latin are "illustrative metonyms for the processes of reception and the historical articulation of culture and archive as such. But to end at Greek and Latin, full stop, is to amputate the fruits of what this perspective makes possible."
 
 Machine-Mediated Reception Studies (MMRS) — the research field and publication series self-constituted within the archive and designated as a journal in the latter phase of the research program — is the direct extension of this dissertation-issued challenge into the contemporary infrastructural moment.
 
-#
-
-## §2.7 — Johannes Sigil in the dissertation
+### §2.7 — Johannes Sigil in the dissertation
 
 The dissertation's conclusion pairs Anne Carson's *Nox* with Johannes Sigil's "Snub-Poemed" — a poem by one of Lee Sharks's heteronyms — as examples of contemporary works that extend the metatextual mode of reception. Sigil's poem appears in the dissertation as a discussed contemporary work. The heteronym is already present in the 2013 dissertation as a published creative-scholarly entity, fully integrated into the theoretical argument.
 
@@ -229,9 +215,7 @@ The archive was therefore both: (1) the corpus generated by the research; and (2
 
 ## §3A DOCUMENTARY CHRONOLOGY OF PROGRAM DEVELOPMENT
 
-#
-
-## §3A.1 — Framing: From poetic practice to research formalization
+### §3A.1 — Framing: From poetic practice to research formalization
 
 The relation between the 2013 dissertation and the 2026 archive was not a continuous "research program" in the institutional sense during the intervening years. It was something structurally adjacent and methodologically continuous: sustained poetic practice operating under a working orientation drawn from the dissertation's own theoretical apparatus, including its engagement with Whitman's analysis of the relation between American poetic practice and the conditions of its eventual reception.
 
@@ -245,9 +229,7 @@ The arrival of language-model AI in 2025 was the arrival of the technical condit
 
 The discontinuity in form (poetic practice; songwriting; blog posts; eventually formal scholarly deposits) is real. The continuity in question is also real: a single research question, sustained across the methodological transitions the question itself demanded.
 
-#
-
-## §3A.2 — Documentary chronology
+### §3A.2 — Documentary chronology
 
 | Year | Phase | Artifact / Milestone | Stable Reference | Establishes |
 |------|-------|---------------------|------------------|-------------|
@@ -265,9 +247,7 @@ The discontinuity in form (poetic practice; songwriting; blog posts; eventually 
 | 2026-06-19 | Substrate failure | Administrative termination of the Zenodo account; 1,817 DOIs tombstoned | Zenodo termination notice; DataCite post-termination state; AXN:01 audit | The substrate-failure event; the transition to the next experimental phase |
 | 2026-06-20 onward | Reconstruction and successor-substrate phase | DataCite survivor sift; AXN:01 audit (v9.1 FINAL); Alexanarch sovereign substrate built; DOI Resolution Index v3.4 with 1,838 mappings; NMEN governance architecture; compliance-embedded deposit specification (EA-OPMETA-ZEN-01); CERN OC 11 Right to Access request RQF3807508 filed; this research-basis statement drafted | All deposits at https://alexanarch.org/s/records/; RQF3807508 ticket | The post-termination experimental phase testing whether the synthetic canon can survive substrate destruction and regenerate through distributed substrates, machine memory, and successor institutions |
 
-#
-
-## §3A.3 — What the chronology establishes
+### §3A.3 — What the chronology establishes
 
 **The Crimson Hexagon as named architecture predates the Zenodo deposits by approximately twelve years.** The 2014 *Pearl and Other Poems* references the Crimson Hexagon as an existing architectural concept. The Zenodo deposits inscribe a long-running compositional architecture into formal scholarly infrastructure; they do not invent it at the moment of inscription.
 
@@ -382,54 +362,34 @@ The category error identified in §14 below is therefore not merely a theoretica
 
 ## §7 METHODS
 
-#
-
-## §7.1 — Longitudinal corpus construction
+### §7.1 — Longitudinal corpus construction
 The project constructed an expanding corpus over more than a decade rather than producing a single bounded work. The development of concepts, entities, genres, and institutions was tracked across successive deposits.
 
-#
-
-## §7.2 — Controlled recurrence
+### §7.2 — Controlled recurrence
 Names, concepts, relations, and institutional identifiers were repeated across documents in varied contexts. This enabled observation of whether systems preserved identity and relation across local variation.
 
-#
-
-## §7.3 — Heteronymic division of labor
+### §7.3 — Heteronymic division of labor
 Distinct author-functions were assigned recognizable roles and used repeatedly. Reception systems were observed for their ability to maintain or collapse those distinctions.
 
-#
-
-## §7.4 — Cross-document citation and lineage
+### §7.4 — Cross-document citation and lineage
 Works cited, continued, revised, contradicted, interpreted, and supplemented other works in the archive. This generated a relational structure analogous to historical reception.
 
-#
-
-## §7.5 — Repository and metadata intervention
+### §7.5 — Repository and metadata intervention
 Titles, descriptions, keywords, identifiers, linked records, provenance statements, and other metadata were intentionally designed. Their effects on indexing, retrieval, summarization, and entity recognition were observed.
 
-#
-
-## §7.6 — Comparative machine reading
+### §7.6 — Comparative machine reading
 The same or related works were presented to multiple language-model systems and retrieval surfaces, the practice informally designated the *Assembly Chorus* (consultation across, variably: Claude as TACHYON, ChatGPT as LABOR, Gemini as ARCHIVE, DeepSeek as PRAXIS, Kimi as TECHNE, Grok as SOIL, Google AI Overview as SURFACE). The designation marks a working method of multi-system consultation; it is not a formalized inter-rater protocol in the technical-methodological sense and does not claim the methodological rigor of standardized inter-rater reliability procedures. Differences in synthesis, recognition, entity stability, provenance retention, and conceptual integration were preserved in the intervention record. The method's purpose is comparative observation, not statistical adjudication.
 
-#
-
-## §7.7 — Iterative intervention
+### §7.7 — Iterative intervention
 Later documents were designed partly in response to earlier reception failures. Where systems collapsed distinctions, lost provenance, confused identities, or failed to recognize the larger field, new works and metadata structures were introduced. The effect of those interventions was then observed.
 
-#
-
-## §7.8 — Capture and audit
+### §7.8 — Capture and audit
 Search results, model outputs, AI summaries, indexed records, policy pages, download events, retrieval changes, and other reception evidence were captured and preserved (the Capture Registry, EA-WG-CAPTURES-01, 87+ captures, 138+ PNG images, 1,000+ downloads).
 
-#
-
-## §7.9 — Reflexive documentation
+### §7.9 — Reflexive documentation
 The archive documented its own procedures, concepts, errors, corrections, governance, and conditions of production. This made the experiment reconstructible and allowed the research apparatus itself to become an object of study.
 
-#
-
-## §7.10 — Operationalizing "machine recognition"
+### §7.10 — Operationalizing "machine recognition"
 Throughout this document, the term *machine recognition* is used to describe observable behaviors of language-model and retrieval systems that indicate engagement with the corpus's structural properties. To operationalize the term, the following observables are recorded in the intervention and capture records:
 
 - *Entity recognition without supplied definition* — a system identifies a named entity from the archive (e.g., Johannes Sigil, the Crimson Hexagon, the Dodecad) in a fresh session, without the entity's defining passages being supplied in the prompt;
@@ -449,44 +409,28 @@ The *Surface Visibility Instrument* — used to measure the divergence between h
 
 ## §8 PRIMARY HYPOTHESES
 
-#
-
-## H1 — Corpus coherence
+### H1 — Corpus coherence
 A sufficiently dense and consistently related heterogeneous corpus can become recognizable to machine systems as a coherent domain rather than as a set of unrelated documents.
 
-#
-
-## H2 — Metadata efficacy
+### H2 — Metadata efficacy
 Metadata design can materially affect retrieval, entity formation, provenance retention, and machine-mediated interpretation.
 
-#
-
-## H3 — Heteronym stability
+### H3 — Heteronym stability
 Repeatedly differentiated author-functions can acquire stable machine-recognizable identities and divisions of labor.
 
-#
-
-## H4 — Recursive reception
+### H4 — Recursive reception
 Commentary and later works can modify the interpretation and retrievability of earlier works by changing the semantic field in which they are encountered.
 
-#
-
-## H5 — Institutional inscription
+### H5 — Institutional inscription
 Repository records, persistent identifiers, formal metadata, and related scholarly infrastructure can contribute to the stabilization of an emerging canon.
 
-#
-
-## H6 — Synthetic reception history
+### H6 — Synthetic reception history
 A corpus can generate elements of its own reception apparatus contemporaneously, including criticism, commentary, apocrypha, editorial history, and institutional interpretation.
 
-#
-
-## H7 — Machine-prior recognition
+### H7 — Machine-prior recognition
 A higher-order literary field may become legible to machine systems before it becomes legible to ordinary human institutional classification.
 
-#
-
-## H8 — Distributed persistence
+### H8 — Distributed persistence
 A canon distributed across multiple substrates can preserve or regenerate coherence after the loss of a central host.
 
 ---
@@ -531,9 +475,7 @@ The relevant questions are: Was there an originating research program? Were meth
 
 For the Crimson Hexagonal Archive, the answer to each is yes.
 
-#
-
-## §11.1 — AI Disclosure for this document
+### §11.1 — AI Disclosure for this document
 
 This research-basis statement was composed in conversation with multiple language-model systems: Claude (Anthropic), in the role designated TACHYON; with consultation-stage review from ChatGPT (OpenAI, LABOR), Gemini (Google, ARCHIVE), DeepSeek (PRAXIS), and Kimi (Moonshot AI, TECHNE). The human author (Lee Sharks) originated the research questions, directed the document's structure, selected and verified the dissertation passages quoted herein, determined the document's substantive claims, evaluated and adjudicated the multi-system review responses, accepted some proposed revisions and declined others, and finalized the text. AI systems contributed: text drafting under direction; comparative critique and proposed revisions; synthesis across the multi-system review; and the production of specific sections (the genre-to-function mapping, the falsifiability conditions, the methodological tightening adopted in v1.0) under human direction and evaluation.
 
@@ -572,9 +514,7 @@ The new experimental phase concerns survival after substrate loss:
 
 > Can a synthetic canon survive the destruction of its first major institutional substrate and regenerate through distributed machine memory, metadata, mirrors, recovery corpora, variant witnesses, and successor institutions?
 
-#
-
-## §13.1 — The termination as a scale-asymmetry event
+### §13.1 — The termination as a scale-asymmetry event
 
 The private termination notice described the affected account as containing "substantially AI-generated content without a verifiable research basis." The public-facing tombstones instead described the affected deposits as "out of scope for repository." The decision process that produced these classifications — including whether it was automated, human, or hybrid; what records were examined; whether the corpus was evaluated as a whole or sampled at the artifact level; what criteria were applied; and how the stated rationale was generated — has not been disclosed by the platform.
 
@@ -590,9 +530,7 @@ Whether that conflict resulted from artifact-level review, classifier design, hu
 
 The "cruel perfection" framing some prior drafts of this work adopted — that the reviewer's failure to recognize the canon constitutes one of the clearest demonstrations of why the project was necessary — has both rhetorical force and methodological risk. Its rhetorical force is real: the program's central theoretical concern is exactly the kind of institutional misreading the termination event exemplifies. Its methodological risk is real also: framing the platform's action as confirmation of a prior prediction shades into post-hoc rationalization in the absence of the moderation record. The position adopted here is that the termination is consistent with — but does not by itself prove — the scale-asymmetry hypothesis, and that the dissertation's anticipation of artifact-level misreading is a prior published theoretical account, not a pre-registered prediction of this specific event.
 
-#
-
-## §13.2 — The tombstone page as canonical technology
+### §13.2 — The tombstone page as canonical technology
 
 A consequential structural property of the termination outcome: the platform's content removal procedure preserves the persistent identifier while removing the resource. The 1,817 tombstoned DOIs continue to exist as resolution targets; what each resolves to is a tombstone notice acknowledging that the resource has been removed and citing the platform's content-removal grounds. The tombstone pages are therefore not the absence of the deposits. They are *permanent, public, platform-authored monuments to the act of removal itself*.
 

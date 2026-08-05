@@ -19,9 +19,7 @@ NEGATIVE: IPF is not a claim that new frameworks are always correct; structural 
 NEGATIVE: IPF is not a humanities-only concern; the machine-learning counterfactual shows the same field-forming morphology.
 
 BOUNDARY: IPF supplies its own disconfirmer: a model that rejects specific claims on structural grounds without invoking novelty or reflexivity weakens the paper's reach; only refusal on recognition grounds confirms it.
-#
-
-## Semantic Integrity Markers (SIMs)- *institutional-prior foreclosure*- *recognition-as-lagged-proxy*- *the recognition-strip test*- *presentation-layer foreclosure*- *a model cannot require a field to already exist before assisting the labor by which fields come to exist*
+### Semantic Integrity Markers (SIMs)- *institutional-prior foreclosure*- *recognition-as-lagged-proxy*- *the recognition-strip test*- *presentation-layer foreclosure*- *a model cannot require a field to already exist before assisting the labor by which fields come to exist*
 
 ### DOI Reference List- 10.5281/zenodo.20469512 — Induced-Obsolescence Dependence (explains foreclosure of)- 10.5281/zenodo.20469514 — Directionality of Semantic Labor (is companion to)- 10.5281/zenodo.19615154 — SPXI: A Formal Specification (EA-SPXI-01) (governs)
 

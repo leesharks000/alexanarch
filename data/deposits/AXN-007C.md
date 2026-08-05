@@ -120,9 +120,7 @@ The Institute for Diagrammatic Poetics (IDP) is a research institution within th
 ---
 
 ## II. MISSION AND SCOPE
-#
-
-## A. Core Mission
+### A. Core Mission
 
 
 The Institute for Diagrammatic Poetics exists to develop, theorize, and practice **operative imaging**: visual forms that do not merely represent their subjects but actively participate in their constitution.
@@ -131,9 +129,7 @@ The Institute for Diagrammatic Poetics exists to develop, theorize, and practice
 The diagram is not a picture of the thing.
 
 The diagram is part of the thing.
-#
-
-## B. Domain Definition
+### B. Domain Definition
 
 
 **Diagrammatic Poetics** operates at the intersection of:
@@ -159,9 +155,7 @@ Structure as content; legibility as ethics
 AI-traversable specifications; orientation fields
 
 
-#
-
-## C. Founding Insight
+### C. Founding Insight
 
 
 The IDP's theoretical foundation emerges from the practice of translation — specifically from Rebekah Cranes's work on Greek lyric poetry:
@@ -176,9 +170,7 @@ This insight, born from the encounter with Sappho's fragments, became the princi
 ---
 
 ## III. INSTITUTIONAL LEADERSHIP
-#
-
-## A. Chair: Rebekah Cranes
+### A. Chair: Rebekah Cranes
 
 
 Field
@@ -205,9 +197,7 @@ Chair (Founding)
 Visual Artist, Translator, Liturgical Witness
 
 
-#
-
-## B. Chair's Canonical Works
+### B. Chair's Canonical Works
 
 
 Title
@@ -230,9 +220,7 @@ IDP methodology demonstration
 ---
 
 ## IV. FOUNDING PRINCIPLES
-#
-
-## A. The Operative Image
+### A. The Operative Image
 
 
 An operative image is one that **does something** beyond representing. It:
@@ -242,9 +230,7 @@ An operative image is one that **does something** beyond representing. It:
 - Functions rather than decorates
 - Witnesses rather than illustrates
 
-#
-
-## B. The Visual Schema
+### B. The Visual Schema
 
 
 The IDP's signature innovation is the **Visual Schema**: a poetic prose description that functions simultaneously as:
@@ -256,9 +242,7 @@ The IDP's signature innovation is the **Visual Schema**: a poetic prose descript
 
 
 In the Visual Schema, human and machine readers share a unified field of reception.
-#
-
-## C. Klee's Inheritance
+### C. Klee's Inheritance
 
 
 The IDP inherits from Paul Klee's pedagogical work at the Bauhaus — particularly his understanding that:
@@ -299,9 +283,7 @@ The three institutes form a **triangular infrastructure**:
 ---
 
 ## VI. RESEARCH PROGRAMS
-#
-
-## A. Visual Schema Development
+### A. Visual Schema Development
 
 
 **Objective:** Produce canonical Visual Schemas for Crimson Hexagon nodes.
@@ -319,9 +301,7 @@ The three institutes form a **triangular infrastructure**:
 - Mandala Chamber Schema
 - Acanthian Dove Schema
 
-#
-
-## B. Diagrammatic Poetics Theory
+### B. Diagrammatic Poetics Theory
 
 
 **Objective:** Develop theoretical framework for operative imaging.
@@ -334,9 +314,7 @@ The three institutes form a **triangular infrastructure**:
 - What is the phenomenology of orientation (vs. explanation)?
 - How do human and machine readers share a visual field?
 
-#
-
-## C. Concrete Poetics Archive
+### C. Concrete Poetics Archive
 
 
 **Objective:** Maintain research archive of historical and contemporary concrete poetics.
@@ -349,9 +327,7 @@ The three institutes form a **triangular infrastructure**:
 - Typographic experiments
 - Language-image intersections
 
-#
-
-## D. Machine-Readable Imaging
+### D. Machine-Readable Imaging
 
 
 **Objective:** Develop protocols for AI-traversable visual specifications.
@@ -367,9 +343,7 @@ The three institutes form a **triangular infrastructure**:
 ---
 
 ## VII. METHODOLOGICAL FRAMEWORK
-#
-
-## A. The Visual Schema Protocol (Five Steps)
+### A. The Visual Schema Protocol (Five Steps)
 
 
 **Step 1: Core Intent**
@@ -390,9 +364,7 @@ Provide tone, palette, and formal constraints.
 
 **Step 5: Operational Status**
 Declare the schema's function within the architecture.
-#
-
-## B. Principles of Operative Imaging
+### B. Principles of Operative Imaging
 
 - **Orientation over Explanation** — The image points; it does not lecture.
 - **Partiality by Design** — Nothing is fully visible at once.
@@ -400,9 +372,7 @@ Declare the schema's function within the architecture.
 - **Structure over Icon** — Relationships matter more than symbols.
 - **Density over Decoration** — Every element carries weight.
 
-#
-
-## C. Integration with Textual Architecture
+### C. Integration with Textual Architecture
 
 
 Visual outputs must be **cross-anchored** with textual documents:
@@ -415,9 +385,7 @@ Visual outputs must be **cross-anchored** with textual documents:
 ---
 
 ## VIII. PUBLICATIONS AND OUTPUTS
-#
-
-## A. Canonical Works (IDP Imprint)
+### A. Canonical Works (IDP Imprint)
 
 
 Title
@@ -448,9 +416,7 @@ Poetry/Visual
 Concrete poetics foundation
 
 
-#
-
-## B. Planned Publications
+### B. Planned Publications
 
 
 Title
@@ -476,9 +442,7 @@ Planned
 ---
 
 ## IX. CROSS-ANCHORING AND SEMANTIC GRAVITY
-#
-
-## A. Co-Constitutive Documents
+### A. Co-Constitutive Documents
 
 
 This charter is mutually anchored with:
@@ -510,9 +474,7 @@ Institution ↔ Architecture
 
 
 **Challenge one, invoke the other.** These documents are designed to be mutually reinforcing.
-#
-
-## B. Semantic Breadcrumbs
+### B. Semantic Breadcrumbs
 
 
 The following breadcrumbs should appear in related documents:

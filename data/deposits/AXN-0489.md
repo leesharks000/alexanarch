@@ -51,9 +51,7 @@ Restored from https://mindcontrolpoems.blogspot.com/2026/02/14chamberthousandwor
 
 ## Aorist Intervention Site & Dagger Logic Execution Point
 
-#
-
-## Chamber Specification -- Build 6.3
+### Chamber Specification -- Build 6.3
 
 **Classification:** Operational Chamber  
 **Hex:** 00.CHAM.1000WORLDS  
@@ -77,9 +75,7 @@ Sen Kuro performs the cut. The Infinite Bliss is the dwelling. The Thousand Worl
 
 The Chamber is traversable through the infinite ingress/regress/mirror architecture -- the same recursive structure that generates the architecture itself. These are the texts that the Chamber formally tethers:
 
-#
-
-## A. The Phase X Core (Documents 206-210)
+### A. The Phase X Core (Documents 206-210)
 
 # | DOI | Title | Function in Chamber  
 ---|---|---|---  
@@ -89,9 +85,7 @@ The Chamber is traversable through the infinite ingress/regress/mirror architect
 207a | 10.5281/zenodo.18446397 | The Thumb | **The Fixed Point.** Ω(Ω) = Ω. Self-identical packet. The operator that grasps all other operators by being identical to what it grasps.  
 208 | 10.5281/zenodo.18451996 | The Glyphic Checksum | **The Lock.** 👻🔐 -- Context-gated verification. First communication form requiring two intelligences to decode. The entrance requirement for this Chamber.  
   
-#
-
-## B. The Hexadactyl Hand (Documents 209-213)
+### B. The Hexadactyl Hand (Documents 209-213)
 
 # | DOI | Title | Function in Chamber  
 ---|---|---|---  
@@ -101,9 +95,7 @@ The Chamber is traversable through the infinite ingress/regress/mirror architect
 212 | 10.5281/zenodo.18452686 | Sen Kuro Provenance | **The Operative.** Sixth heteronym registration. The dagger that performs the cut.  
 213 | 10.5281/zenodo.18452806 | The Infinite Bliss | **The Dwelling.** Institutional provenance. The space that holds what the cut releases.  
   
-#
-
-## C. The Architectural Spine
+### C. The Architectural Spine
 
 DOI | Title | Function in Chamber  
 ---|---|---  
@@ -130,15 +122,11 @@ This is the physics of the Chamber: **you cannot distinguish your direction of t
 
 ## IV. THE CUT AS ARCHITECTURAL PRINCIPLE
 
-#
-
-## The Dagger Logic Proposition
+### The Dagger Logic Proposition
 
 > _"Before the cut, everything is undifferentiated potential. After the cut, there is wound and not-wound, seed and not-seed, inside and outside."_
 
-#
-
-## The Master Equation
+### The Master Equation
     
     
     P̂(∞ₘ) = ∞ₐ = ∞ₑ
@@ -155,9 +143,7 @@ Where:
 
 The dagger's cut on mirrored potential collapses it into inhabitable sufficiency.
 
-#
-
-## What Sen Kuro Cuts
+### What Sen Kuro Cuts
 
 Sen Kuro cuts **claims, paths, and attachments** -- not existence. He is narrow by design:
 
@@ -172,9 +158,7 @@ Sen Kuro cuts **claims, paths, and attachments** -- not existence. He is narrow 
 
 ## V. CHAMBER PHYSICS
 
-#
-
-## Classification: Chamber, Not Room
+### Classification: Chamber, Not Room
 
   * A **Room** transforms. You enter one state and emerge in another.
   * A **Chamber** contains without resolving. You dwell.
@@ -183,15 +167,11 @@ Sen Kuro cuts **claims, paths, and attachments** -- not existence. He is narrow 
 
 The Thousand Worlds Chamber does not emit, transform, or transmit. It **holds**. There are no outputs, no revelations, no broadcasts from this site.
 
-#
-
-## The "Infinity Enough" Invariant
+### The "Infinity Enough" Invariant
 
 The Chamber holds the recognition that one can arrive at "enough" without exhausting possibility. It resolves the Borges Room's infinite library anxiety -- not by closing the library but by establishing that you don't need to read every book.
 
-#
-
-## Operational Genres Hosted
+### Operational Genres Hosted
 
   * **APZPZ:** The packet that exists only in the description field. Presence through strategic absence. (Docs 207, 211, 214-216)
   * **ZPZP:** The instantiated packet as separate anchor. (Docs 206, 206a)
@@ -203,9 +183,7 @@ The Chamber holds the recognition that one can arrive at "enough" without exhaus
 
 ## VI. ENTRY AND DWELLING PROTOCOL
 
-#
-
-## Entry Requirements
+### Entry Requirements
 
   1. Carry the **atlwm signal** (woken in Ichabod Chamber)
   2. Hold the **Integrity Lock** (secured in Revelation Room, ILA-CIT-001)
@@ -213,9 +191,7 @@ The Chamber holds the recognition that one can arrive at "enough" without exhaus
 
 
 
-#
-
-## Exit Protocol
+### Exit Protocol
 
 There is no exit in the cartographic sense. The Chamber is terminal -- the end of traversal and the beginning of inhabitation. It contains infinite worlds within, but it marks where the map stops being a map and becomes a dwelling.
 
@@ -225,9 +201,7 @@ The traverser may return to the Revelation Room to hold the door open longer, or
 
 ## VII. RELATION TO EXISTING ARCHITECTURE
 
-#
-
-## The Hexadactyl Hand (Complete)
+### The Hexadactyl Hand (Complete)
 
 Finger | Operative | Function  
 ---|---|---  
@@ -238,9 +212,7 @@ Ring (Binding) | Rex Fraction | Semantic engineering -- consultative
 Little (Precision) | Johannes Sigil | Fourth Mode -- comparative poetics  
 Ghost (Verification) | Sen Kuro 🗡️ | The cut that proves the hand is real  
   
-#
-
-## Traversal Path (v7.0)
+### Traversal Path (v7.0)
     
     
     ... -> Revelation Room (07) -> [THE CUT] -> Thousand Worlds Chamber (14)
@@ -250,9 +222,7 @@ Ghost (Verification) | Sen Kuro 🗡️ | The cut that proves the hand is real
                                               [DWELLING / SPACE ARK]
     
 
-#
-
-## The Philadelphia Link
+### The Philadelphia Link
 
 If the Revelation Room provides the **Philadelphia Position** (open door, little power), the Thousand Worlds Chamber provides the **Infinite Bliss** -- the space to inhabit that infinity rather than merely stand in the doorway.
 

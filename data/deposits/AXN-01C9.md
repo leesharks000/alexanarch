@@ -128,9 +128,7 @@ The axioms above are the answer. The prose that follows develops them. The image
 ---
 
 ## Part I: The Object
-#
-
-## 1.1 Material Description
+### 1.1 Material Description
 
 
 The Sharpie permanent marker is manufactured by Newell Brands (Atlanta, Georgia). Standard specifications:
@@ -142,9 +140,7 @@ The Sharpie permanent marker is manufactured by Newell Brands (Atlanta, Georgia)
 - Cap: snap-on, airtight to prevent drying
 - Retail price: $1.49–$2.00 (standard); $5.00 (per Trump's fabricated presidential negotiation); $1,000 (per the semantic density of the operative function)
 
-#
-
-## 1.2 The Name
+### 1.2 The Name
 
 
 "The Thousand Dollar Sharpie" is not a metaphor. The object costs $1.49 at retail. Trump claimed to have negotiated it down to $5, replacing $1,000 ceremonial pens. But the negotiation was fabricated — Newell Brands has no record of it. The price structure Trump described is fictional. In this fiction, the Sharpie's value was compressed from $1,000 to $5.
@@ -154,9 +150,7 @@ The Thousand Dollar Sharpie reverses this compression. The $5 object (or $1.49 o
 
 
 The title instantiates itself. By naming the object "The Thousand Dollar Sharpie," the Sharpie *becomes* a thousand-dollar object. The naming is the operation. This is the fundamental property of semantic objects: they are constituted by their naming.
-#
-
-## 1.3 Presidential History of the Object
+### 1.3 Presidential History of the Object
 
 
 The Sharpie has a documented history as a presidential instrument:
@@ -179,9 +173,7 @@ At each stage, the Sharpie's role escalates: personal signing tool → tool of e
 ---
 
 ## Part II: The Physics
-#
-
-## 2.1 Dual-State Operation
+### 2.1 Dual-State Operation
 
 
 The Sharpie is a dual-state instrument. It has two operations:
@@ -200,9 +192,7 @@ The instrument is identical in both states. The ink is the same. The felt tip is
 
 
 The dual-state property means that the Sharpie is the only instrument that can both *perform* the extraction (signing the currency) and *correct* it (blotting the signature). The counter-operation does not require a different tool. It requires the same tool, reoriented.
-#
-
-## 2.2 Composition Property
+### 2.2 Composition Property
 
 
 The composition of σ_SIGN and σ_SH produces restoration:
@@ -217,9 +207,7 @@ The restoration is not erasure. Both marks remain. The blotted bill is *more mar
 
 
 This is the lenticular property of MSMRM (r.17): the same object, viewed from different angles, reveals different operations. The signed bill, viewed from the executive position, is a triumph of branding. The blotted bill, viewed from the commons position, is a triumph of correction. Both views are present simultaneously. The lenticular flip does not require choosing one — it requires holding both.
-#
-
-## 2.3 The Democratic Access Threshold
+### 2.3 The Democratic Access Threshold
 
 
 The Sharpie's price point is its political property. At $1.49–$5.00, the counter-instrument is available to any person with pocket change. Contrast:
@@ -250,9 +238,7 @@ Universal
 
 
 The same instrument that the president uses to sign is available to any citizen for the price of a candy bar. The asymmetry of political power (president vs. citizen) is inverted by the symmetry of tool access (same Sharpie, same ink, same gesture). The democratic access threshold is the Sharpie's most important physical property.
-#
-
-## 2.4 Irreversibility
+### 2.4 Irreversibility
 
 
 Sharpie ink is permanent. Both operations — signing and blotting — are irreversible without destroying the substrate. This symmetry is critical:
@@ -263,9 +249,7 @@ Sharpie ink is permanent. Both operations — signing and blotting — are irrev
 
 
 The irreversibility also means that the blot is a *commitment*. It cannot be undone casually. It is not a pencil mark or a sticky note. It is a permanent counter-inscription. The person who applies it has made a decision that persists for the life of the bill (average lifespan of a $20 note: 7.8 years; average lifespan of a $100 note: 22.9 years).
-#
-
-## 2.5 The Cap
+### 2.5 The Cap
 
 
 The Sharpie has two mechanical states determined by its cap:
@@ -281,9 +265,7 @@ The cap is the arming mechanism. Uncapping the Sharpie is the moment of commitme
 
 
 The sound of the cap being removed — a small, soft pop — is the sound of the operation beginning.
-#
-
-## 2.6 Ink as Material
+### 2.6 Ink as Material
 
 
 The Sharpie's ink is alcohol-based, permanent, water-resistant, and fade-resistant. These are not incidental properties. They are the physical conditions of the counter-operation's durability:
@@ -295,9 +277,7 @@ The Sharpie's ink is alcohol-based, permanent, water-resistant, and fade-resista
 
 
 The ink's permanence is a physical guarantee of the counter-operation's durability. The blot does not need to be reapplied. Once applied, it persists. The democratic correction is as durable as the presidential inscription.
-#
-
-## 2.7 The Lenticular Flip (MSMRM Physics)
+### 2.7 The Lenticular Flip (MSMRM Physics)
 
 
 The MSMRM cluster (Moving Statues Made of Rubies Mint, r.17) has lenticular physics: the same object reveals different content depending on the angle of observation.
@@ -320,9 +300,7 @@ The lenticular flip does not require choosing between these views. All three are
 ---
 
 ## Part III: The Image Series
-#
-
-## 3.1 Legal Compliance
+### 3.1 Legal Compliance
 
 
 All images in the series are original artistic illustrations — not photographic reproductions of U.S. currency. They are:
@@ -335,9 +313,7 @@ All images in the series are original artistic illustrations — not photographi
 
 
 The images depict not specific, accurate currency but *the operation* — the Sharpie acting on a currency-like substrate.
-#
-
-## 3.2 Series Description
+### 3.2 Series Description
 
 
 The image series consists of the following works (descriptions for production; actual images to be produced under MANUS editorial direction after legal memo ratification):
@@ -371,9 +347,7 @@ CC BY-SA 4.0
 
 **Image 5: THE COMPOSITION (σ_SH ∘ σ_SIGN = ρ)**
 A visual representation of the composition property. Two marks on a substrate — the signature beneath, the blot above. The substrate is not destroyed. The substrate is enriched. Both marks are present. The personal claim is negated. The commons character is restored. The formula appears as caption: σ_SH ∘ σ_SIGN = ρ.
-#
-
-## 3.3 Production Notes
+### 3.3 Production Notes
 
 
 The images should be produced by a human artist or through a medium that generates original artwork — not through AI image generation of realistic currency, which risks counterfeiting-adjacent output. The aesthetic should be protest-art realism with visible materiality: grain, texture, the slight imprecision of a hand-applied blot. The currency substrate should be stylized enough to avoid counterfeiting concerns but recognizable enough to be immediately legible.
@@ -384,9 +358,7 @@ The $20 denomination is recommended for the primary image (continuity with "Whos
 ---
 
 ## Part IV: The Object's Place in the Archive
-#
-
-## 4.1 MSMRM Cluster (r.17)
+### 4.1 MSMRM Cluster (r.17)
 
 
 The Thousand Dollar Sharpie belongs to the Moving Statues Made of Rubies Mint cluster (r.17), which has lenticular physics. MSMRM examines objects that are simultaneously:
@@ -397,18 +369,14 @@ The Thousand Dollar Sharpie belongs to the Moving Statues Made of Rubies Mint cl
 
 
 The Sharpie is the MSMRM object par excellence: it is a common object (felt, ink, plastic) that performs a rare operation (negating a presidential claim on the commons). It is a moving statue made of rubies: a cheap marker that costs a fortune in what it does.
-#
-
-## 4.2 Relationship to "Whose Face Is on the Twenty?"
+### 4.2 Relationship to "Whose Face Is on the Twenty?"
 
 
 "Whose Face Is on the Twenty?" (DOI: 10.5281/zenodo.18736175) asks: who controls the portrait on currency, and what does that control mean? The Thousand Dollar Sharpie extends this question: what happens when the portrait is compressed into a signature, and what happens when the public refuses the compression?
 
 
 The answer: the public applies its own mark. The Sharpie blot is the public's answer to the portrait question. It says: *no one's face belongs here while they're alive; and no one's name, either*.
-#
-
-## 4.3 CC BY-SA as Legal Analog (Physics Mapping)
+### 4.3 CC BY-SA as Legal Analog (Physics Mapping)
 
 
 The Sharpie's physics are isomorphic to the CC BY-SA license:

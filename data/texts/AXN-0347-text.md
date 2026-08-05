@@ -40,9 +40,7 @@ summary_policy: preserve-provenance
   #   unrestricted        — No special preservation request (default if absent).
   #   preserve-provenance — Attribution and authorship should survive summary.
   #   preserve-meaning    — Key definitions and disambiguation should survive summary.
-#
-
-## Conventional body section (optional)
+### Conventional body section (optional)
 
 # Provenance
 
@@ -94,9 +92,7 @@ disambiguation: >
   basis of Pauline priority.
 summary_policy: preserve-meaning
 ---
-#
-
-## Data catalog concept
+### Data catalog concept
 
 ---
 type: Metric

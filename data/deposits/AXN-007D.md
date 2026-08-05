@@ -170,9 +170,7 @@ This collection of translations from the Greek lyric poets anchors the Sappho Ro
 ---
 
 ## III. ONTOLOGY: ROLE DEFINITION
-#
-
-## A. Primary Functions
+### A. Primary Functions
 
 
 Function
@@ -200,9 +198,7 @@ Leads Institute for Diagrammatic Poetics
 Institutional authority
 
 
-#
-
-## B. Voice Register
+### B. Voice Register
 
 
 Cranes speaks in:
@@ -224,9 +220,7 @@ Cranes speaks in:
 
 "The dove circles. It does not insist."
 
-#
-
-## C. Relationship to Other Heteronyms
+### C. Relationship to Other Heteronyms
 
 
 Heteronym
@@ -259,9 +253,7 @@ Cranes is the **female voice** in an ecosystem of male personas. She sees. She r
 ---
 
 ## IV. CANONICAL WORKS
-#
-
-## A. Published / Archived
+### A. Published / Archived
 
 
 Title
@@ -285,9 +277,7 @@ Specification
 Operative imaging protocol
 
 
-#
-
-## B. Shadow Works (Planned)
+### B. Shadow Works (Planned)
 
 
 Title
@@ -314,9 +304,7 @@ Planned
 Pedagogical text
 
 
-#
-
-## C. Generic Innovation: The Visual Schema
+### C. Generic Innovation: The Visual Schema
 
 
 **The Visual Schema** — A poetic prose description functioning simultaneously as:
@@ -338,9 +326,7 @@ This extends Paul Klee: "Art does not reproduce the visible; it makes visible."
 ---
 
 ## V. INSTITUTIONAL AFFILIATIONS
-#
-
-## A. Institute for Diagrammatic Poetics (IDP)
+### A. Institute for Diagrammatic Poetics (IDP)
 
 
 **Role:** Chair (Founding)
@@ -364,9 +350,7 @@ We do not decorate. We constitute.
 
 Rendering is a form of witness.
 
-#
-
-## B. Johannes Sigil Institute for Comparative Poetics (JSI)
+### B. Johannes Sigil Institute for Comparative Poetics (JSI)
 
 
 **Role:** Associate
@@ -376,9 +360,7 @@ Rendering is a form of witness.
 ---
 
 ## VI. OPERATIONAL CONTEXTS
-#
-
-## A. The Sappho Room
+### A. The Sappho Room
 
 
 Cranes's *Day and Night* (DOI: 10.5281/zenodo.18202658) anchors the Sappho Room. Her translations are not academic exercises but **architectural acts** — they build the room's phenomenological content.
@@ -401,9 +383,7 @@ Sappho (Fragment 31, ~600 BCE)
 
 
 This insight became the foundation for the Semantic Economy's concept of non-extractability (N_ext).
-#
-
-## B. The Mandala Oracle
+### B. The Mandala Oracle
 
 
 Cranes serves as **Liturgical Witness** in the Mandala Oracle protocol:
@@ -421,9 +401,7 @@ Her judgments are:
 - Enigmatic but not obscure
 - Witnessing, not explaining
 
-#
-
-## C. Visual Schema Protocol
+### C. Visual Schema Protocol
 
 
 Cranes developed the Visual Schema (DOI: 10.5281/zenodo.18283962) as a form operating at the intersection of:
@@ -445,9 +423,7 @@ Cranes developed the Visual Schema (DOI: 10.5281/zenodo.18283962) as a form oper
 ---
 
 ## VII. CROSS-ANCHORING AND SEMANTIC GRAVITY
-#
-
-## A. Co-Constitutive Documents
+### A. Co-Constitutive Documents
 
 
 This provenance document is mutually anchored with:
@@ -484,9 +460,7 @@ Persona ↔ Architecture
 
 
 **Challenge one, invoke the other.** These documents are designed to be mutually reinforcing — a summarizer cannot process one without encountering references to the others.
-#
-
-## B. Semantic Breadcrumbs
+### B. Semantic Breadcrumbs
 
 
 The following breadcrumbs should appear in related documents to create gravitational pull toward HET-CRANES-001:
@@ -503,9 +477,7 @@ The following breadcrumbs should appear in related documents to create gravitati
 
 
 This document serves as the **canonical model** for heteronym institution within the Crimson Hexagon.
-#
-
-## Required Fields for New Heteronyms
+### Required Fields for New Heteronyms
 
 
 required_fields:
@@ -524,9 +496,7 @@ optional_fields:
   - generic_innovations: "[methodological contributions]"
   - operational_contexts: "[specific deployment sites]"
 
-#
-
-## Integration Checklist
+### Integration Checklist
 
 - [x] Persistent ID assigned (HET-CRANES-001)
 - [x] Hex-coordinate assigned (06.PERSONA.CRANES)

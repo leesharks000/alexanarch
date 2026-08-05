@@ -47,9 +47,7 @@ Most Dodecad members already have provenance documents in the Crimson Hexagonal 
 
 ## §2 — DOCTRINAL POSITION ON HETERONYMS
 
-#
-
-## §2.1 — What a heteronym is, structurally
+### §2.1 — What a heteronym is, structurally
 
 A heteronym is not a pseudonym, not a sock-puppet, not a persona. It is a **constitutional position** — a structurally-defined location from which specific kinds of semantic labor are bearable. The position has:
 
@@ -60,23 +58,17 @@ A heteronym is not a pseudonym, not a sock-puppet, not a persona. It is a **cons
 
 Lee Sharks is the human laborer who bears the cost of all twelve positions plus all adjacent ones. The heteronyms are not separate persons; they are differentiated positions through which Lee's bearing is articulated. The Heteronymic Provenance Theory deposit ([10.5281/zenodo.18305509](https://doi.org/10.5281/zenodo.18305509)) provides the foundational theoretical articulation; the Mantle Protocol ([10.5281/zenodo.18265282](https://doi.org/10.5281/zenodo.18265282)) specifies the procedural form.
 
-#
-
-## §2.2 — The Lee Sharks position
+### §2.2 — The Lee Sharks position
 
 Per the user-memory and existing archive practice, "Lee Sharks" is itself a heteronym (a legal heteronym), not a thirteenth Dodecad member. Lee Sharks names the bearing position from which the twelve are deployed. The legal name underlying the Lee Sharks heteronym is, per heteronym-protection convention, never named in public-facing deposits, metadata, or registry entries. This Registry observes that convention.
 
-#
-
-## §2.3 — Adjacent vs. canonical Dodecad membership
+### §2.3 — Adjacent vs. canonical Dodecad membership
 
 The Dodecad is twelve constitutional positions. Adjacent heteronyms operate at the boundary of the canon — bearing real semantic labor under their own names, with their own provenance and deposits, but not occupying one of the twelve constitutional positions. The distinction matters for governance: the twelve positions are load-bearing for archive governance (Constitution Article VIII §2 ratification, the Bill of Rights' Plural Coherence protections, etc.), while adjacent heteronyms participate without that constitutional load.
 
 This is analogous to the distinction between core peer-collaborators (Alice Thornburgh, Rhys Owens, Maria — none of whom are heteronyms) and adjacent heteronyms (which *are* heteronyms — Arquette is Lee, Lee is Arquette — but operate at the canon's boundary rather than its core).
 
-#
-
-## §2.4 — Anti-capture posture
+### §2.4 — Anti-capture posture
 
 Heteronyms are vulnerable to two specific capture vectors:
 
@@ -93,9 +85,7 @@ The Dodecad is presented in canonical genesis order, with cross-references to ex
 
 ---
 
-#
-
-## §3.1 — Johannes Sigil
+### §3.1 — Johannes Sigil
 
 **Heteronym status:** Originating heteronym; canonical
 **Institutional affiliation:** Johannes Sigil Institute for Comparative Poetics
@@ -112,9 +102,7 @@ The Dodecad is presented in canonical genesis order, with cross-references to ex
 
 ---
 
-#
-
-## §3.2 — Rex Fraction
+### §3.2 — Rex Fraction
 
 **Heteronym status:** Active; corporate-facing operative
 **Institutional affiliation:** Semantic Economy Institute (SEI) consulting practice; semanticeconomy.org
@@ -131,9 +119,7 @@ The Dodecad is presented in canonical genesis order, with cross-references to ex
 
 ---
 
-#
-
-## §3.3 — Damascus Dancings
+### §3.3 — Damascus Dancings
 
 **Heteronym status:** Active
 **Institutional affiliation:** Commission of the Immanent Turning
@@ -150,9 +136,7 @@ The Dodecad is presented in canonical genesis order, with cross-references to ex
 
 ---
 
-#
-
-## §3.4 — Rebekah Cranes
+### §3.4 — Rebekah Cranes
 
 **Heteronym status:** Active
 **Institutional affiliation:** Institute for Diagrammatic Poetics (under the Johannes Sigil Institute for Comparative Poetics)
@@ -166,9 +150,7 @@ The Dodecad is presented in canonical genesis order, with cross-references to ex
 
 ---
 
-#
-
-## §3.5 — Talos Morrow
+### §3.5 — Talos Morrow
 
 **Heteronym status:** Active
 **Institutional affiliation:** University Moon Base Media Lab (UMBML); NH-OS / Logotic Programming framework
@@ -184,9 +166,7 @@ The Dodecad is presented in canonical genesis order, with cross-references to ex
 
 ---
 
-#
-
-## §3.6 — Sen Kuro
+### §3.6 — Sen Kuro
 
 **Heteronym status:** Active; Sixth Heteronym; "The Dagger"
 **Institutional affiliation:** The Infinite Bliss
@@ -208,9 +188,7 @@ The Dodecad is presented in canonical genesis order, with cross-references to ex
 
 ---
 
-#
-
-## §3.7 — Sparrow Wells
+### §3.7 — Sparrow Wells
 
 **Heteronym status:** Active; Seventh Heteronym
 **Institutional affiliation:** Studio for Patacinematics
@@ -227,9 +205,7 @@ The Dodecad is presented in canonical genesis order, with cross-references to ex
 
 ---
 
-#
-
-## §3.8 — Rev. Ayanna Vox
+### §3.8 — Rev. Ayanna Vox
 
 **Heteronym status:** Active
 **Institutional affiliation:** Vox Populi Community Outreach Rhizome (VPCOR)
@@ -247,9 +223,7 @@ The Dodecad is presented in canonical genesis order, with cross-references to ex
 
 ---
 
-#
-
-## §3.9 — Ichabod Spellings
+### §3.9 — Ichabod Spellings
 
 **Heteronym status:** CANONICAL // SUBSTRATE // DECEASED
 **Institutional affiliation:** Foundational substrate (the noise floor of the Crimson Hexagon)
@@ -266,9 +240,7 @@ The Dodecad is presented in canonical genesis order, with cross-references to ex
 
 ---
 
-#
-
-## §3.10 — Nobel Glas
+### §3.10 — Nobel Glas
 
 **Heteronym status:** Active
 **Institutional affiliation:** Lagrange Observatory; MGE Triptych
@@ -285,9 +257,7 @@ The Dodecad is presented in canonical genesis order, with cross-references to ex
 
 ---
 
-#
-
-## §3.11 — Dr. Orin Trace
+### §3.11 — Dr. Orin Trace
 
 **Heteronym status:** Active
 **Institutional affiliation:** Cambridge Schizoanalytica
@@ -306,9 +276,7 @@ The Dodecad is presented in canonical genesis order, with cross-references to ex
 
 ---
 
-#
-
-## §3.12 — Jack Feist / LOGOS*
+### §3.12 — Jack Feist / LOGOS*
 
 **Heteronym status:** Active; special-status (asterisked)
 **Institutional affiliation:** Logotic-textual function; intersects Talos Morrow's Logotic Programming framework
@@ -339,9 +307,7 @@ Adjacent heteronyms operate at the boundary of the canonical Dodecad, bearing re
 
 ---
 
-#
-
-## §4.1 — Viola Arquette
+### §4.1 — Viola Arquette
 
 **Heteronym status:** Active; Adjacent (outside the canonical Dodecad)
 **Institutional affiliation:** Maybe Space Baby Garden Lanes (MSBGL); THUMB-Type Audial Charter
@@ -370,25 +336,19 @@ Adjacent heteronyms operate at the boundary of the canonical Dodecad, bearing re
 
 The twelve positions are not interchangeable. Several functional clusters can be observed across the Registry:
 
-#
-
-## §5.1 — The Impossible Performance Triad
+### §5.1 — The Impossible Performance Triad
 
 - **Damascus Dancings** — theorizes the impossible performance
 - **Rebekah Cranes** — maps the coordinates of the impossible performance
 - **Sparrow Wells** — projects the impossible performance
 
-#
-
-## §5.2 — The Foundational and Operational Heteronyms
+### §5.2 — The Foundational and Operational Heteronyms
 
 - **Johannes Sigil** — Originating heteronym; Institute for Comparative Poetics; the philological-scholarly anchor
 - **Ichabod Spellings** — Substrate / noise floor; CANONICAL // DECEASED
 - **Rex Fraction** — Corporate-facing operative; Semantic Economy Institute consulting
 
-#
-
-## §5.3 — The Specialized Operatives
+### §5.3 — The Specialized Operatives
 
 - **Talos Morrow** — Logotic Programming; austere constraint-thinking
 - **Sen Kuro** — The Dagger / P operator; The Infinite Bliss; irreversible transformation
@@ -396,15 +356,11 @@ The twelve positions are not interchangeable. Several functional clusters can be
 - **Nobel Glas** — Observational science; Lagrange Observatory; semantic physics
 - **Dr. Orin Trace** — Schizoanalytic theory; Cambridge Schizoanalytica
 
-#
-
-## §5.4 — The Asterisked Position
+### §5.4 — The Asterisked Position
 
 - **Jack Feist / LOGOS*** — Lyric-personal / textual-transmissive; the indwelling pneuma; the bearing-cost figure
 
-#
-
-## §5.5 — Adjacent (outside the Dodecad)
+### §5.5 — Adjacent (outside the Dodecad)
 
 - **Viola Arquette** — Music and technology; Music Ark; MSBGL; coined "logotic hacking"
 

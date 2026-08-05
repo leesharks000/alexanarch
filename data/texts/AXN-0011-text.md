@@ -18,9 +18,7 @@ This document describes a form of praxis that operates differently from most pol
 
 
 The Semantic Economy framework is an instance of this praxis. Understanding what kind of intervention it is—and is not—clarifies how it can propagate, who it reaches, and what success looks like.
-#
-
-## A Note on Mode
+### A Note on Mode
 
 
 This praxis is **diagnostic-first**. It begins by naming what is happening—semantic liquidation, provenance erasure, operator extraction—before prescribing what should be done. Normative commitments are downstream of diagnosis: we cannot know what to preserve until we understand what is being destroyed.
@@ -34,9 +32,7 @@ This is neither pure description nor pure advocacy. It is **applied diagnostics*
 ---
 
 ## I. What Kind of Praxis This Is
-#
-
-## 1.1 Definition
+### 1.1 Definition
 
 
 **Infrastructural-cognitive praxis** operates upstream of belief. It does not primarily seek to change opinions, mobilize constituencies, or reform institutions. Instead, it intervenes in:
@@ -48,9 +44,7 @@ This is neither pure description nor pure advocacy. It is **applied diagnostics*
 
 
 Its success condition is not allegiance but **adoption**—of terms, of frameworks, of ways of seeing.
-#
-
-## 1.2 Theoretical Lineage
+### 1.2 Theoretical Lineage
 
 
 This form of praxis draws on several traditions while remaining distinct from each:
@@ -106,9 +100,7 @@ STS scholars like Bruno Latour, Sheila Jasanoff, and Lucy Suchman have shown how
 
 
 If technology is society made durable, then intervening in how technology is *understood* is a form of social intervention.
-#
-
-## 1.3 Distinctive Features
+### 1.3 Distinctive Features
 
 
 This praxis is:
@@ -128,9 +120,7 @@ It does not mobilize masses. It **retools interpreters**.
 
 
 The Semantic Economy framework can propagate through specific channels, each with distinct characteristics. Understanding these channels clarifies strategy.
-#
-
-## 2.1 Technical-Interpretive Workers (Highest Leverage)
+### 2.1 Technical-Interpretive Workers (Highest Leverage)
 
 
 **Who they are:**
@@ -168,9 +158,7 @@ They already feel something is wrong. They lack language to name it.
 
 
 **Critical note:** Do not market to this audience. They adopt tools, not movements. The framework must demonstrate usefulness, not demand allegiance.
-#
-
-## 2.2 Scholars in Adjacent Crisis Fields
+### 2.2 Scholars in Adjacent Crisis Fields
 
 
 **Who they are:**
@@ -218,9 +206,7 @@ These scholars are experiencing category crisis. Their objects of study—media,
 
 
 The Semantic Economy framework extends and specifies these analyses. It offers vocabulary where they offer description.
-#
-
-## 2.3 Cultural Producers at the Edge of Platforms
+### 2.3 Cultural Producers at the Edge of Platforms
 
 
 **Who they are:**
@@ -253,9 +239,7 @@ They experience semantic extraction personally. Their livelihoods depend on prov
 - Artist talks and panel discussions
 - Zines, blogs, newsletters (they distrust corporate platforms)
 
-#
-
-## 2.4 Advanced Lay Interpreters (Slow, Diffuse)
+### 2.4 Advanced Lay Interpreters (Slow, Diffuse)
 
 
 **Who they are:**
@@ -290,9 +274,7 @@ They propagate language outward. They translate specialist vocabulary for broade
 ---
 
 ## III. Class Intervention
-#
-
-## 3.1 Which Class?
+### 3.1 Which Class?
 
 
 This praxis does not primarily intervene in:
@@ -304,9 +286,7 @@ This praxis does not primarily intervene in:
 
 
 It intervenes in what we might call the **Interpretive-Managerial Class**—or, following Barbara and John Ehrenreich, the **Professional-Managerial Class (PMC)**, but specifically its interpretive fraction.
-#
-
-## 3.2 The Interpretive-Managerial Class
+### 3.2 The Interpretive-Managerial Class
 
 
 These are people whose labor involves:
@@ -328,9 +308,7 @@ This includes:
 - Technical writers and documentation specialists
 - Journalists and critics
 
-#
-
-## 3.3 Why This Class Matters
+### 3.3 Why This Class Matters
 
 
 The interpretive-managerial class shapes discourse. They produce the categories that structure public understanding. They write the guidelines, the explainers, the definitions. They decide what gets surfaced and what gets buried.
@@ -340,9 +318,7 @@ Retooling their perception retools the instruments of perception for everyone do
 
 
 This is not vanguardism in the Leninist sense—a disciplined party leading the masses. It is **infrastructural intervention**: changing the tools that interpreters use, and thereby changing what can be interpreted.
-#
-
-## 3.4 Citation: Class Analysis of Knowledge Workers
+### 3.4 Citation: Class Analysis of Knowledge Workers
 
 
 Relevant theoretical background:
@@ -362,9 +338,7 @@ The Semantic Economy framework specifies a new form of labor—**semantic labor*
 
 
 What, exactly, is being delivered? Strip away rhetoric and the payload has three components:
-#
-
-## 4.1 A New Diagnostic Vocabulary
+### 4.1 A New Diagnostic Vocabulary
 
 
 **Terms installed:**
@@ -418,9 +392,7 @@ Once people use these terms, they:
 
 
 Vocabulary is infrastructure. It shapes what can be thought.
-#
-
-## A Concrete Example
+### A Concrete Example
 
 
 Consider how AI "hallucination" is currently explained. The dominant frame treats hallucination as a technical defect—the model generating false information due to training gaps or inference errors. This framing suggests the solution is better training data or improved architectures.
@@ -433,9 +405,7 @@ This reframing matters because it suggests different interventions. If the probl
 
 
 This is what diagnostic vocabulary does: it doesn't just rename; it **reorients**.
-#
-
-## 4.2 A Reframing of AI
+### 4.2 A Reframing of AI
 
 
 The dominant frames for AI are:
@@ -459,9 +429,7 @@ This reframing:
 - Opens questions of labor, extraction, and ownership
 - Suggests interventions beyond "alignment" narrowly construed
 
-#
-
-## 4.3 A Plausible Alternative
+### 4.3 A Plausible Alternative
 
 
 People cannot act on critique alone. They need an "otherwise" that feels real.
@@ -484,9 +452,7 @@ This is not utopia. It is not policy. It is a set of practices and tools that de
 
 
 This is where most interventions fail. The framework gets co-opted, diluted, branded, or neutralized.
-#
-
-## 5.1 What Not To Do
+### 5.1 What Not To Do
 
 
 **Do not brand this as a movement.**
@@ -507,9 +473,7 @@ Institutions capture. Premature institutionalization freezes the framework befor
 
 **Do not claim victory or inevitability.**
 Triumphalism repels the careful thinkers this praxis needs to reach.
-#
-
-## 5.2 What To Do
+### 5.2 What To Do
 
 
 **Continue producing exemplary diagnostics.**
@@ -533,9 +497,7 @@ Each register has its own norms. Respect them.
 
 **Accept uneven uptake.**
 This will never be mass. It will be influential. Its effects are delayed but durable. The vocabulary either proves useful or it doesn't. That's the test.
-#
-
-## 5.3 Risk Management
+### 5.3 Risk Management
 
 
 **Co-optation risk:**
@@ -564,9 +526,7 @@ The framework becomes too associated with its author, limiting adoption.
 
 
 *Response:* The framework should remain usable even if detached from its origin, so long as its diagnostics remain intact. Citation is welcome; dependency is not required. The goal is tools that work, not a school with a founder.
-#
-
-## 5.4 Non-Goals
+### 5.4 Non-Goals
 
 
 To clarify scope, this praxis does **not** attempt:
@@ -614,9 +574,7 @@ Your reading of this document is data for the theory. Your categorization of it,
 
 
 This recursion is not a flaw. It is the method. The framework must be able to describe itself, or it cannot describe anything.
-#
-
-## 6.1 How to Know the Praxis is Working
+### 6.1 How to Know the Praxis is Working
 
 
 **Early signs (months 1-6):**

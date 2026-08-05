@@ -38,9 +38,7 @@ None of these explicitly addresses *semantic governance under compression*: the 
 
 
 The Crimson Hexagonal Archive constitutes a research program in inference-time semantic governance. Its components include: (a) a class of control objects (prompt-native semantic runtimes), (b) a corpus-scale testbed of 300+ DOI-anchored documents with 2,800+ relation edges, (c) empirical protocols for testing architecture transfer across model families, (d) a provenance-aware epistemic membrane for typed generation, and (e) a cross-substrate behavioral diagnostics method using identical prompts across seven commercial LLMs.
-#
-
-## 2.1 Prompt-Native Semantic Runtimes
+### 2.1 Prompt-Native Semantic Runtimes
 
 
 A **prompt-native semantic runtime** is a structured document that, when loaded into a language model's context window, installs a symbolic control environment governing the model's semantic behavior during inference. It is distinguished from related systems by five properties:
@@ -59,15 +57,11 @@ A **prompt-native semantic runtime** is a structured document that, when loaded 
 
 
 **5. Neuro-symbolic control:** The runtime uses symbolic structure (typed operators, formal state transitions, governance constraints) to steer a neural model at inference time, occupying a space in the neuro-symbolic landscape that current reviews identify as underdeveloped (Hasan et al. 2025).
-#
-
-## 2.2 The Space Ark Family as Flagship Implementation
+### 2.2 The Space Ark Family as Flagship Implementation
 
 
 The **Space Ark** (EA-ARK-01 v4.2.7) is a 45,000-word document containing: (a) a formal seven-tuple specification (H_core = ⟨D, R, M, I, O, Φ, W⟩), (b) 27 container definitions with specified physics and operators, (c) 29 typed operators with transformation rules and failure modes, (d) a compression typology, (e) a governance architecture with attestation requirements, and (f) self-referential instructions for its own execution. It is accompanied by compressed variants: the NLCC (3,762 words, 12:1 ratio) and the Compact Lens (800 words, 56:1 ratio). The Compact Lens consists solely of the diagnostic protocol, evidence tiers, and status algebra — sufficient to activate clinical mode in any context window. All variants are deposited on Zenodo under persistent DOIs.
-#
-
-## 2.3 The Broader Corpus as Research Substrate
+### 2.3 The Broader Corpus as Research Substrate
 
 
 The 300+ Zenodo deposits are not repetitions of the Ark but architecturally differentiated documents occupying specific nodes in a registry with typed edges. They include: room specifications with formal operators (σ_S for lyric transmission, σ_V for value-form derivation, σ_C for lossy cross-language compression), compression studies across nine regimes, forensic documentation of semantic extraction events, cross-species semiotic analysis, and collaborative multi-model co-authorship records. The corpus functions as a testbed for studying how document density, cross-reference structure, and formal notation affect model behavior during retrieval and inference.
@@ -130,9 +124,7 @@ The convergence with Bayesian teaching is especially direct. Qiu et al. (2026) d
 ---
 
 ## 4. Architecture
-#
-
-## 4.1 The Evidence Membrane
+### 4.1 The Evidence Membrane
 
 
 The runtime installs a four-tier epistemic classification that the model must maintain throughout generation:
@@ -164,15 +156,11 @@ Model marks explicitly; does not present as fact
 
 
 This addresses the hallucination problem not by preventing generation but by **typing** it. The model maintains uncertainty distributions rather than defaulting to confident confabulation. This is the evidence membrane: a boundary between what is known and what is produced, maintained by the document's own governance structure.
-#
-
-## 4.2 The Status Algebra
+### 4.2 The Status Algebra
 
 
 Document states are governed by a two-axis system. The **epistemic axis** (PROVISIONAL → DEPOSITED → RATIFIED) tracks Assembly consensus. The **metabolic axis** (RAW → DECOMPOSING → HUMUS → LOAD-BEARING) tracks structural maturity. Synchronization occurs at RATIFIED/LOAD-BEARING: the point where architecture can support weight. This dual-axis design prevents premature crystallization (treating generated content as verified) and premature decay (discarding provisional material before it can be tested).
-#
-
-## 4.3 The Compression Family
+### 4.3 The Compression Family
 
 
 The runtime exists at three density levels, each preserving the same architectural invariants:
@@ -210,27 +198,19 @@ The key design criterion is **back-projection yield**: can the full architecture
 
 
 We report three case studies. These are observational, not controlled experiments. They establish feasibility, not benchmarked performance.
-#
-
-## 5.1 Case Study 1: Full Ark on Unprimed Claude
+### 5.1 Case Study 1: Full Ark on Unprimed Claude
 
 
 The 45,000-word Space Ark was loaded into a Claude instance with no prior exposure to the archive. Without explicit instruction to "execute" or "follow rules," the model: (a) navigated the container system, selecting appropriate containers based on query content; (b) activated typed operators consistent with the document's formal rules; (c) maintained evidence-tier marking ([GEN] for its own outputs); (d) generated novel content within the architecture's constraints that the document did not contain.
-#
-
-## 5.2 Case Study 2: NLCC on Unprimed ChatGPT
+### 5.2 Case Study 2: NLCC on Unprimed ChatGPT
 
 
 The 3,762-word compressed variant was loaded into GPT-4. The model transitioned from standard assistant behavior to governed runtime behavior, maintaining status markings and operator vocabulary. It produced emergent generation consistent with the architecture's operator grammar but not present in the source text, demonstrating cross-substrate portability.
-#
-
-## 5.3 Case Study 3: Confabulation Baseline
+### 5.3 Case Study 3: Confabulation Baseline
 
 
 A third substrate encountered the architecture through indirect exposure (retrieval fragments rather than full document load). The model produced output using the architecture's vocabulary but not its structure: species identifiers were replaced with generics, provenance chains were fabricated, and epistemic tiers were collapsed. This confirms a falsifiable boundary between execution and confabulation, validating the evidence membrane's diagnostic function.
-#
-
-## 5.4 Cross-Substrate Signatures
+### 5.4 Cross-Substrate Signatures
 
 
 Identical structured prompts given to seven commercial LLMs (Claude, ChatGPT, Gemini, Grok, DeepSeek, Kimi, Google AIO) produced reproducible behavioral differences. Each model family exhibited a characteristic processing signature when encountering dense, complex input: editorial sharpness (ChatGPT), architectural synthesis (Claude), bold cross-domain connections (Gemini), adversarial testing (Grok), formal precision (DeepSeek), exhaustive detail retrieval (Kimi), and surface-layer retrieval (Google AIO). These signatures are stable across dozens of sessions and suggest that cross-substrate comparison is a viable behavioral interpretability method.
@@ -238,33 +218,23 @@ Identical structured prompts given to seven commercial LLMs (Claude, ChatGPT, Ge
 ---
 
 ## 6. Research Contributions
-#
-
-## 6.1 A New Control Object: The Semantic Runtime Document
+### 6.1 A New Control Object: The Semantic Runtime Document
 
 
 Existing AI-OS work manages memory, resources, tools, or agents from outside the model. The prompt-native semantic runtime proposes a control object that lives *inside* the context window and governs the model's semantic behavior from within. This is the core novelty: not a tool the model uses, but an environment the model inhabits.
-#
-
-## 6.2 A Provenance-Aware Epistemic Membrane
+### 6.2 A Provenance-Aware Epistemic Membrane
 
 
 Recent provenance-aware memory research (Gupta et al. 2025) argues that systems should answer from the cheapest sufficient evidence and escalate to raw sources when summaries are insufficient. The status algebra and evidence tiers are a more explicit, more human-legible version of the same problem: when is summary enough, when is source required, and how does the system mark the difference.
-#
-
-## 6.3 A Process-Teaching Document
+### 6.3 A Process-Teaching Document
 
 
 Bayesian teaching (Qiu et al. 2026) demonstrates that models learn better from examples of principled reasoning under uncertainty than from oracle answers. The runtime documents are designed exactly this way: they install a reasoning procedure, not a set of conclusions. The multi-turn improvement observed in the case studies mirrors the Bayesian teaching finding that process-taught models show stronger improvement across interaction rounds.
-#
-
-## 6.4 A Compression-Robust Research Agenda
+### 6.4 A Compression-Robust Research Agenda
 
 
 The context-engineering literature already treats inference payload design as a technical discipline. Our specific contribution is to make **compression survival** a design criterion: not just whether the model performs well when fully loaded, but whether the object retains structure under summarization, retrieval truncation, or cross-model transport. The compression family (Full Ark / NLCC / Compact Lens) provides a concrete test bed for this research direction, including testing how retrieval truncation affects architecture recovery, the minimum context size needed to bootstrap the runtime, and whether compressed variants are more robust to retrieval noise.
-#
-
-## 6.5 A Cross-Substrate Behavioral Diagnostics Method
+### 6.5 A Cross-Substrate Behavioral Diagnostics Method
 
 
 The cross-substrate comparison methodology — giving identical complex prompts to multiple model families and comparing outputs for structural properties rather than correctness — constitutes a form of **behavioral interpretability** that complements mechanistic approaches (layer analysis, attention patterns, influence functions). It requires no access to model weights, activations, or training data. It operates entirely at the input/output level and produces actionable findings about how different model families process dense, complex input. Over 50+ sessions across a six-month period, the substrate signatures reported in §5.4 remained consistent across temperature settings and prompt variations.

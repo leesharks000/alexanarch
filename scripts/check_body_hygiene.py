@@ -52,7 +52,11 @@ import sys
 
 MARK = 'Canonical bytes below the rule.'
 ENT = re.compile(r'&(?:#\d{2,5}|nbsp|amp|quot|lt|gt|mdash|ndash|rsquo|lsquo|ldquo|rdquo|hellip);')
-GLUE = re.compile(r'[^\n\s]#{2,6} ')
+GLUE = re.compile(r'[^\n\s#]#{2,6} ')   # NOT '#': the old pattern matched '###'
+                                         # itself (first hash as the 'preceding'
+                                         # char), reporting every well-formed
+                                         # heading as glued and driving a byte
+                                         # wave that split 22,319 headings.
 RUNON_CHARS = 6000
 VERSE_TYPES = {'Poetry', 'Patent-poem', 'Creative work (mixed)', 'Scripture'}
 STOP = set('the and for with from that this into their have been also which when what were '

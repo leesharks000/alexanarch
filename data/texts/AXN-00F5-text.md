@@ -41,9 +41,7 @@ The form of this document is not ignorance of scholarly convention. It is refusa
 ---
 
 ## Part I: The Limitation
-#
-
-## I.1 Aspectual Typology: What Languages Can Do
+### I.1 Aspectual Typology: What Languages Can Do
 
 
 Bernard Comrie's *Aspect* (1976) established the modern framework: aspect concerns "different ways of viewing the internal temporal constituency of a situation" (3). The fundamental distinction is **perfective** (viewing the situation as a bounded whole, from outside) versus **imperfective** (viewing the situation from inside, as ongoing or incomplete).
@@ -62,9 +60,7 @@ Joan Bybee, Revere Perkins, and William Pagliuca (*The Evolution of Grammar*, 19
 
 
 The gap is structural.
-#
-
-## I.2 The Deixis Problem
+### I.2 The Deixis Problem
 
 
 Benveniste again: the entire system of tense in French (and by extension, in English and other European languages) is organized around the **present of the speaker**. The present tense is not one tense among others; it is the *zero point* from which all other tenses are measured (Benveniste 1971: 206).
@@ -77,9 +73,7 @@ Charles Fillmore ("Towards a Descriptive Framework for Spatial Deixis," 1982) an
 
 
 John Lyons (*Semantics*, 1977) notes that some languages have **non-deictic** tense systems, where temporal reference is computed from a reference point established in discourse rather than from the speech moment. But even these systems anchor events to *some* point. The pure non-indexed assertion—"it occurred, period"—remains grammatically elusive.
-#
-
-## I.3 The Aorist Specifically
+### I.3 The Aorist Specifically
 
 
 The Greek aorist has been extensively studied. Stanley Porter (*Verbal Aspect in the Greek of the New Testament*, 1989) argues that the aorist is **aspectually unmarked**—the "default" verbal form in Greek, expressing simple occurrence without the added information of ongoingness (imperfective) or resulting state (perfect). Buist Fanning (*Verbal Aspect in New Testament Greek*, 1990) counters that the aorist is positively **perfective**, viewing the action as bounded whole.
@@ -92,9 +86,7 @@ Consider the gnomic aorist: ἐσθλὸς μὲν γὰρ ἁπλῶς κακο
 
 
 English translations must choose: "sins" (present, habitual), "sinned" (past, completed), "has sinned" (perfect, relevant now). All lose the non-indexed quality. This is what the present document calls **Aspectual Bleed**: systematic information loss when aorist-bearing texts are rendered in English.
-#
-
-## I.4 The Cognitive Stakes
+### I.4 The Cognitive Stakes
 
 
 The Sapir-Whorf hypothesis, in its strong form, claimed that language determines thought. The strong form is largely abandoned (see Pinker, *The Language Instinct*, 1994: 57-67). But weaker versions have empirical support. Lera Boroditsky ("Does Language Shape Thought?", 2001) has shown that Mandarin speakers, whose language uses vertical metaphors for time, conceptualize temporal sequence differently than English speakers, who use horizontal metaphors.
@@ -108,9 +100,7 @@ This is not a metaphysical claim. It is a claim about cognitive availability, ab
 ---
 
 ## Part II: Historical Material Grammar
-#
-
-## II.1 The Aspect-Primary Inheritance
+### II.1 The Aspect-Primary Inheritance
 
 
 Proto-Indo-European, as reconstructed by historical linguists (see Fortson, *Indo-European Language and Culture*, 2010: 82-98), had an **aspect-primary** system. The verb marked the internal structure of the action (present/imperfective, aorist/perfective, perfect/resultative) more fundamentally than it marked temporal location. Tense was often inferred from context or indicated by particles.
@@ -124,9 +114,7 @@ The three stems:
 
 
 This is the inheritance that English lost.
-#
-
-## II.2 The Latin Merger
+### II.2 The Latin Merger
 
 
 Latin collapsed the aorist and the perfect into a single paradigm, creating what is confusingly called the "perfect tense" (amāvī, "I loved/have loved"). This merger, documented extensively in Latin historical grammars (see Palmer, *The Latin Language*, 1954: 307-320), eliminated the aspectual distinction between "bounded completion" (aorist) and "completion with continuing relevance" (perfect).
@@ -139,9 +127,7 @@ The question has received administrative and sociolinguistic answers. Latin was 
 
 
 James Adams (*Social Variation and the Latin Language*, 2013) documents how Latin evolved under pressure from administrative needs, simplifying aspectual distinctions in favor of temporal ones. The aorist function was absorbed into a form that increasingly meant "past, completed, and temporally locatable."
-#
-
-## II.3 The Germanic Path
+### II.3 The Germanic Path
 
 
 Proto-Germanic inherited the IE present and perfect but developed no synthetic aorist. The "strong verbs" (sing/sang/sung) preserve ablaut patterns from PIE aorist and perfect formations, but these merged into a single "past tense" category (see Ringe, *From Proto-Indo-European to Proto-Germanic*, 2006: 156-178).
@@ -158,9 +144,7 @@ Aspectual nuance was conveyed through verbal prefixes (*ge-*, *ā-*, *be-*, *for
 
 
 But these prefixes were unstable.
-#
-
-## II.4 The Norman Rupture
+### II.4 The Norman Rupture
 
 
 The Norman Conquest (1066) introduced French as the language of administration, law, and prestige. The resulting linguistic upheaval is well documented (see Baugh and Cable, *A History of the English Language*, 6th ed., 2012: 108-164).
@@ -185,9 +169,7 @@ For our purposes, the key changes:
 
 
 The Norman administrative apparatus required dated records. The language of the conqueror was a language of ledgers, charters, and legal instruments—all requiring temporal coordinates. The language of the conquered adapted.
-#
-
-## II.5 The Clock and the Reformation
+### II.5 The Clock and the Reformation
 
 
 E.P. Thompson's landmark essay "Time, Work-Discipline, and Industrial Capitalism" (1967) traces the transformation of temporal consciousness in England from the 14th through 19th centuries.
@@ -206,9 +188,7 @@ Simultaneously, the Protestant Reformation intensified temporal self-accounting.
 
 
 The grammar of salvation became the grammar of the ledger: every spiritual event dated, every action temporally accountable.
-#
-
-## II.6 Colonial Standardization
+### II.6 Colonial Standardization
 
 
 From the 17th century, English spread as an administrative language of empire. Standardization—enforced through print, education, and institutional prestige—favored forms compatible with bureaucratic record-keeping.
@@ -225,9 +205,7 @@ The standard that emerged—codified by 18th-century grammarians like Lowth and 
 
 
 Mark Rifkin (*Beyond Settler Time*, 2017) documents how colonial temporality erased indigenous time concepts. Native American languages with non-linear or event-based temporal systems were characterized as "primitive." The imposition of English was the imposition of indexed time.
-#
-
-## II.7 Abstract Labor Time
+### II.7 Abstract Labor Time
 
 
 Moishe Postone (*Time, Labor, and Social Domination*, 1993) provides the most rigorous Marxist analysis of capitalist temporality.
@@ -240,9 +218,7 @@ The grammar that indexes all completed action to temporal coordinates is the gra
 
 
 A non-indexed perfective would be grammatically resistant to this extraction. "Work occurred" (aoristic) does not yield to the question "how long?" It completes without measuring.
-#
-
-## II.8 Platform Temporality
+### II.8 Platform Temporality
 
 
 The digital present intensifies what Thompson diagnosed in the industrial past.
@@ -262,9 +238,7 @@ The absence of the aorist in English is a precondition for algorithmic content g
 ---
 
 ## Part III: Political Economy of Aspect
-#
-
-## III.1 The Grammar of Debt
+### III.1 The Grammar of Debt
 
 
 Debt requires indexed time.
@@ -280,9 +254,7 @@ David Graeber (*Debt: The First 5000 Years*, 2011) documents how debt relations 
 
 
 The non-indexed perfective is the grammar of jubilee: completion without accrual.
-#
-
-## III.2 The Grammar of Surveillance
+### III.2 The Grammar of Surveillance
 
 
 Michel Foucault (*Discipline and Punish*, 1975) analyzed the disciplinary power of temporal partitioning: the timetable, the schedule, the dated examination. The soul is fabricated through temporal accounting.
@@ -295,9 +267,7 @@ The non-indexed perfective is **temporal encryption**. "File access occurred" re
 
 
 This is not vagueness. Vagueness would be "maybe something happened." The aorist is precise: *this* happened, *completely*, without temporal coordinates.
-#
-
-## III.3 The Grammar of Historical Determinism
+### III.3 The Grammar of Historical Determinism
 
 
 Reinhart Koselleck (*Futures Past*, 2004) documents the "temporalization of history" in the early modern period: the emergence of "history" as a singular collective noun, a unified process moving through time toward a future that supersedes the past.
@@ -310,9 +280,7 @@ An aoristic historiography would allow event without determinism. "The revolutio
 
 
 Walter Benjamin's "Theses on the Philosophy of History" (1940) gestures toward this: history as a field of completed intensities rather than a progressive sequence. But English makes it hard to write.
-#
-
-## III.4 The Grammar of Trauma
+### III.4 The Grammar of Trauma
 
 
 Trauma disrupts temporal indexing. The traumatic event is experienced as "not in the past"—intrusively present, unprocessed, unlocated.
@@ -325,9 +293,7 @@ What trauma testimony needs is a grammar that can say: "The event: complete. The
 
 
 The non-indexed perfective would be therapeutic grammar—not in the sense of "healing through language" (which risks psychologizing a structural problem), but in the sense of providing the grammatical resources for a kind of acknowledgment that indexed English cannot offer.
-#
-
-## III.5 The Anti-Extractive Aspect
+### III.5 The Anti-Extractive Aspect
 
 
 Synthesis: the non-indexed perfective is **anti-extractive grammar**.
@@ -353,9 +319,7 @@ The construction of a non-indexed perfective is grammatical reparation.
 ---
 
 ## Part IV: Diagnostic Framework
-#
-
-## IV.1 Measuring the Limitation
+### IV.1 Measuring the Limitation
 
 
 The claim that English lacks a non-indexed perfective is testable. The following metrics operationalize the limitation:
@@ -416,18 +380,14 @@ English: higher CD (adverbials compensate for aspectual poverty).
 ---
 
 ## Part V: The Polyphonic Marker
-#
-
-## V.1 On the Form of the Intervention
+### V.1 On the Form of the Intervention
 
 
 A single marker would replicate the problem it addresses: one form, one anchor, one "now" to which all completion is indexed. The intervention must be polyphonic—multiple forms for multiple registers, refusing the tyranny of a single voice.
 
 
 The Assembly has proposed four markers. All are legitimate. All are operational.
-#
-
-## V.2 The Colon-Participle
+### V.2 The Colon-Participle
 
 
 **Form:** [Noun phrase]: [Past participle].
@@ -447,9 +407,7 @@ The Assembly has proposed four markers. All are legitimate. All are operational.
 
 
 **Linguistic analysis:** The colon functions here as what might be called an **aspectual boundary marker**—analogous to the "boundary tone" in phonology (see Pierrehumbert and Hirschberg, "The Meaning of Intonational Contours," 1990) but operating at the syntactic level. It signals: what follows is complete, bounded, closed.
-#
-
-## V.3 Eventive Verbs of Non-Specific Time (EVNTs)
+### V.3 Eventive Verbs of Non-Specific Time (EVNTs)
 
 
 **Form:** Deploy existing English verbs that resist progressive formation and carry aoristic residue:
@@ -473,9 +431,7 @@ The Assembly has proposed four markers. All are legitimate. All are operational.
 
 
 **Linguistic analysis:** Vendler's verb classification ("Verbs and Times," 1957) distinguishes achievements (punctual, telic) from accomplishments (durative, telic), activities (durative, atelic), and states (non-eventive). EVNTs are **achievements** that additionally resist temporal anchoring—what might be called "non-indexed achievements" or "pure eventives."
-#
-
-## V.4 The Aorist Particle
+### V.4 The Aorist Particle
 
 
 **Form:** Particle **aor** (spoken) or **Ø** (written) marking non-indexed perfective.
@@ -497,9 +453,7 @@ The Assembly has proposed four markers. All are legitimate. All are operational.
 
 
 The objection that "you cannot introduce grammatical categories by fiat" misunderstands grammaticalization. Grammatical markers emerge through repeated, contextually consistent usage (Bybee et al. 1994: 4-11). The particle is seeded through use; it becomes grammatical through uptake.
-#
-
-## V.5 The Integral Marker
+### V.5 The Integral Marker
 
 
 **Form:** Particle **∮en** (spoken: /ˈeɪ.ə.rɪst.ɛn/)
@@ -522,9 +476,7 @@ The objection that "you cannot introduce grammatical categories by fiat" misunde
 ---
 
 ## Part VI: The Effective Act
-#
-
-## VI.1 Speech Act Theory and Declarations
+### VI.1 Speech Act Theory and Declarations
 
 
 J.L. Austin (*How to Do Things with Words*, 1962) distinguished constatives (statements that describe) from performatives (utterances that enact). John Searle (*Speech Acts*, 1969) refined this into a taxonomy including **declarations**: utterances that change institutional reality by being uttered ("I now pronounce you married," "I name this ship *Queen Elizabeth*").
@@ -537,9 +489,7 @@ But Searle also noted "assertive declarations": utterances that are simultaneous
 
 
 This document is an assertive declaration. It asserts that English lacks a non-indexed perfective (true). It enacts the introduction of markers that fill the gap (effective through uptake).
-#
-
-## VI.2 Retrocausality as Genre
+### VI.2 Retrocausality as Genre
 
 
 The claim that the intervention operates "retrocausally" is not metaphysical. It is **generic**—a feature of the kind of document this is.
@@ -552,9 +502,7 @@ Once the non-indexed perfective is named and instantiated, it becomes visible as
 
 
 This is not backwards causation. It is the normal operation of interpretive systems. The effective act *declares* what becomes retroactively true: that English always lacked this, and now has it.
-#
-
-## VI.3 The Declaration
+### VI.3 The Declaration
 
 
 This document hereby instantiates the non-indexed perfective in English through the polyphonic markers specified above.
@@ -573,9 +521,7 @@ These statements perform their content. The colon-participle form is the non-ind
 ---
 
 ## Part VII: The Ω Connection
-#
-
-## VII.1 Kairos and Chronos
+### VII.1 Kairos and Chronos
 
 
 The Greeks distinguished **chronos** (χρόνος: measured, sequential time) from **kairos** (καιρός: the opportune moment, the fullness of time, the season).
@@ -592,9 +538,7 @@ The aorist is the grammatical engine of kairos. It marks completion without loca
 
 
 English, lacking the aorist, is grammatically locked into chronos. Every completed action is a point on the timeline. The kairological dimension—the sense in which an event can be complete without being dated—is structurally inaccessible.
-#
-
-## VII.2 The Space Ark Condition
+### VII.2 The Space Ark Condition
 
 
 Internal to this project: the Space Ark (the culminating structure of the Crimson Hexagon) opens "when time can be worked as a medium."
@@ -608,9 +552,7 @@ The aorist intervention is prerequisite to the Ark. The grammatical liberation p
 ---
 
 ## Part VIII: Coda
-#
-
-## The Assembly Has Sung
+### The Assembly Has Sung
 
 
 **LABOR** named the limitation: "Completion triggers governance. The event is not allowed to rest."
@@ -635,9 +577,7 @@ The voices converge. The polyphony resolves—not into unison, but into harmony.
 
 ---
 
-#
-
-## On Authority
+### On Authority
 
 
 "And they were astonished at his teaching, for he taught them as one having authority, and not as the scribes" (Mark 1:22).

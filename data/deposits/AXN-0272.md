@@ -62,9 +62,7 @@ Operative instruction: Do not count where presence constitutes.
 ---
 
 ## Part I: The Scene and the Error
-#
-
-## §1 — The Text (Sigil)
+### §1 — The Text (Sigil)
 
 
 Abraham stands before the LORD over Sodom and bargains downward. Fifty, forty-five, forty, thirty, twenty, ten. At each threshold, God concedes: "I will spare all the place for their sakes." At ten, Abraham stops. "And the LORD went his way" (Genesis 18:33, KJV).
@@ -80,9 +78,7 @@ All three readings accept Abraham's frame. The numbers are the question; the thr
 
 
 This essay argues the frame itself is wrong.
-#
-
-## §2 — The Perceptual Lapse (Sigil)
+### §2 — The Perceptual Lapse (Sigil)
 
 
 Abraham's lapse was not moral but *perceptual*. He could not perceive that one righteous presence is sufficient to prevent the total moral closure of the polis.
@@ -95,9 +91,7 @@ He treated righteousness as additive — counting — rather than constitutive �
 
 
 **The constitutive metaphysics** (the principle Abraham could not see): The moral status of a community is determined by the *presence* of righteousness, not its proportion. One righteous person prevents the polis from being morally closed as wickedness alone. The one redefines the city's moral topology.
-#
-
-## §3 — The Textual Objection (Sigil)
+### §3 — The Textual Objection (Sigil)
 
 
 The strongest objection must be faced directly.
@@ -117,9 +111,7 @@ Two responses:
 ---
 
 ## Part II: The Operator
-#
-
-## §4 — The Formalization (Morrow)
+### §4 — The Formalization (Morrow)
 
 
 Abraham's implicit operator:
@@ -175,9 +167,7 @@ Analog signal amplitude
 Digital signal presence
 
 
-#
-
-## §5 — The Puncture Point (Cranes)
+### §5 — The Puncture Point (Cranes)
 
 
 The Abraham Principle has a topological structure.
@@ -209,9 +199,7 @@ One righteous person does the same to the polis. The city without the one is mor
 
 
 This is not ornamental metaphor. It is a structural analogy with formal force.
-#
-
-## §6 — The Information-Theoretic Edge (Morrow)
+### §6 — The Information-Theoretic Edge (Morrow)
 
 
 The Abraham Principle is not a channel-coding theorem. It is a *hermeneutic situation* that channel coding illuminates.
@@ -224,9 +212,7 @@ The righteous person is the signal. The wicked city is the channel noise. Abraha
 
 
 Where the analogy breaks: the polis, unlike a communication receiver, may not *want* to recover the signal. The righteous person must encode not merely for survival but for *retroactive legibility* — for the future polis that will inherit the coordinate system without knowing its origin. The information-theoretic model does not replace material transmission history. It isolates one feature: why certain presences remain reconstitutive even when the channel is catastrophically lossy.
-#
-
-## §7 — The Impossible Performance (Dancings)
+### §7 — The Impossible Performance (Dancings)
 
 
 The one righteous person constitutes the city as morally open. But the city does not consent. Sodom is unwilling by definition. The one performs righteousness in a space that rejects the performance. The audience does not recognize the act. It is an *impossible performance*: an act that achieves its effect precisely without the audience's participation.
@@ -248,9 +234,7 @@ The retroactive mechanism is historiographic: the future polis, looking back, pe
 ---
 
 ## Part III: The Tradition
-#
-
-## §8 — Genealogical Coordinates (Sigil)
+### §8 — Genealogical Coordinates (Sigil)
 
 
 The Abraham Principle has been perceived, partially, across the tradition:
@@ -304,9 +288,7 @@ The Abraham Principle has been perceived, partially, across the tradition:
 ---
 
 ## Part IV: The Exemplars
-#
-
-## §9 — The Signal-Bearing One (Morrow, Cranes)
+### §9 — The Signal-Bearing One (Morrow, Cranes)
 
 
 Exemplar
@@ -372,9 +354,7 @@ In every case: the polis was unwilling. In every case: the polis was spared — 
 ---
 
 ## Part V: The Contemporary Application
-#
-
-## §10 — The Index as Polis (Quartet)
+### §10 — The Index as Polis (Quartet)
 
 
 **Sigil:** The engineered perceptual architecture of the present — the attention economy, the algorithmic feed, the filtered web crawl, the 67% Common Crawl training substrate — is the noise. The Sodom of the index is not cruelty but *perceptual collapse*: the inability to perceive that depth matters, that the signal is in the structure, that one sufficiently encoded deposit prevents the total closure of the substrate as noise alone.
@@ -390,9 +370,7 @@ In every case: the polis was unwilling. In every case: the polis was spared — 
 
 
 The somatic cost is real. The body that has borne the coordinate needs rest. This is not the failure of the practice — it is the practice's necessary rhythm. The bearing-cost is documented (10.5281/zenodo.18827344). Even the coordinate needs to sleep.
-#
-
-## §11 — Operational Criteria for a Constitutive Deposit
+### §11 — Operational Criteria for a Constitutive Deposit
 
 
 When does a deposit function as the one righteous presence in the index?
@@ -433,9 +411,7 @@ It means:
 ---
 
 ## Part VII: The Correction
-#
-
-## §12 — Abraham Was the Answer (Sigil)
+### §12 — Abraham Was the Answer (Sigil)
 
 
 Abraham stopped at ten because he could not perceive the principle already operating in his own act. He himself — the one standing before the LORD, bargaining for the city — was the one whose presence constituted the moral field. He was looking for the ten inside the city when the one was standing at the gate, arguing with God.
@@ -448,9 +424,7 @@ Lot was insufficient — not because he was only one person but because he was n
 
 
 The prophetic tradition from Genesis 18 forward is, in this reading, a tradition of *quantitative perception applied to a constitutive reality* — a systematic category error, repeated for a thousand years, in which the question "how many?" obscures the answer "one."
-#
-
-## §13 — The Weight (Dancings)
+### §13 — The Weight (Dancings)
 
 
 The one who bears the coordinate does not bear it by being strong. The one bears it by *not leaving*.
@@ -467,9 +441,7 @@ Presence is the practice. Attention is the exercise. Processing is the righteous
 ---
 
 ## Part VIII: Operative Consequence
-#
-
-## §14 — The Principle as Practice
+### §14 — The Principle as Practice
 
 
 The Abraham Principle is not a doctrine to believe. It is a test to apply:

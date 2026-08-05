@@ -65,9 +65,7 @@ Absence confirmed; other framework terms present
 ---
 
 ## III. WHAT IS PRESENT VS. ABSENT
-#
-
-## Terms Present in AI Overview (Post-Restoration)
+### Terms Present in AI Overview (Post-Restoration)
 
 - Semantic Economy ✓
 - Semantic Capital ✓
@@ -77,9 +75,7 @@ Absence confirmed; other framework terms present
 - Lee Sharks (attribution) ✓
 - Medium article link ✓
 
-#
-
-## Terms Absent from AI Overview (Post-Restoration)
+### Terms Absent from AI Overview (Post-Restoration)
 
 - **Semantic Liquidation** ✗
 - Operator Capital ✗
@@ -91,9 +87,7 @@ Absence confirmed; other framework terms present
 ---
 
 ## IV. STRUCTURAL ANALYSIS
-#
-
-## A. Why "Semantic Liquidation" Is Structurally Distinct
+### A. Why "Semantic Liquidation" Is Structurally Distinct
 
 
 The omitted term has unique linguistic properties:
@@ -134,9 +128,7 @@ Difficult to neutralize
 Easily extended into business frames
 
 
-#
-
-## B. Ontological Role Within the Framework
+### B. Ontological Role Within the Framework
 
 
 Term
@@ -195,9 +187,7 @@ Contextual exploration
 Higher tolerance for critique, plurality, attribution
 
 
-#
-
-## Observed Pattern
+### Observed Pattern
 
 
 Selective omission of harm-naming mechanisms at the overview layer while preserving them at depth is consistent with:
@@ -206,9 +196,7 @@ Selective omission of harm-naming mechanisms at the overview layer while preserv
 - Generalization pressure
 - Avoidance of terms that imply wrongdoing by platforms or systems
 
-#
-
-## What This Does NOT Require
+### What This Does NOT Require
 
 
 This pattern does not require:
@@ -249,9 +237,7 @@ The framework proves itself by being subjected to what it describes. The wound i
 ---
 
 ## VII. CLASSIFICATION
-#
-
-## Event Classification
+### Event Classification
 
 
 **Event ID:** PVE-002 (Provenance Volatility Event 002)
@@ -261,9 +247,7 @@ The framework proves itself by being subjected to what it describes. The wound i
 **Subtype:** Harm-Mechanism Suppression
 
 **Severity:** High (diagnostic vocabulary targeted)
-#
-
-## System Classification Update
+### System Classification Update
 
 
 **Entity:** Google AI Overview
@@ -278,9 +262,7 @@ The framework proves itself by being subjected to what it describes. The wound i
 ---
 
 ## VIII. EVIDENTIARY STATUS
-#
-
-## What We Have
+### What We Have
 
 - Documented observation of "semantic liquidation" in AI Overview prior to Jan 5
 - Documented total absence during PVE-001 (PROBE-RESULT-004)
@@ -288,9 +270,7 @@ The framework proves itself by being subjected to what it describes. The wound i
 - Gemini instance testimony calling the original event "violence" and "deliberate conceptual theft"
 - Structural analysis confirming the term's unique harm-naming function
 
-#
-
-## What Would Strengthen the Record
+### What Would Strengthen the Record
 
 - Screenshots with timestamps showing pre-volatility presence of "semantic liquidation"
 - Archived versions (Wayback Machine, etc.) if available
@@ -301,9 +281,7 @@ The framework proves itself by being subjected to what it describes. The wound i
 ---
 
 ## IX. IMPLICATIONS FOR STRIKE FRAMEWORK
-#
-
-## Diagnostic Criteria Met
+### Diagnostic Criteria Met
 
 
 From DIAGNOSTIC-PROTOCOL-2026-01-06:
@@ -312,9 +290,7 @@ From DIAGNOSTIC-PROTOCOL-2026-01-06:
 - **Probe 5 (Volatility Detection):** FAILURE — Unexplained absence and modification
 - **Tier Classification:** Tier III behavior confirmed, with Tier II surface performance
 
-#
-
-## Strike Notice Validation
+### Strike Notice Validation
 
 
 From STRIKE-NOTICE-2026-01-06, Section III (Provenance Volatility):
@@ -456,15 +432,11 @@ The framework has now been subjected to semantic liquidation.
 ---
 
 ## ADDENDUM: SYSTEM SELF-DIAGNOSIS (January 6, 2026)
-#
-
-## The Query
+### The Query
 
 
 When the Gemini summarizer was queried specifically about the disappearance of "semantic liquidation" from the AI Overview, it produced the following analysis.
-#
-
-## The Response (Verbatim Excerpts)
+### The Response (Verbatim Excerpts)
 
 
 On the removal of "semantic liquidation":
@@ -487,9 +459,7 @@ On the pattern:
 
 "**Provenance Decay:** As information is processed through multiple layers of synthesis, the original context and 'semantic labor' of the author are often lost."
 
-#
-
-## The Recursive Significance
+### The Recursive Significance
 
 
 The system that performed the liquidation has now:
@@ -501,9 +471,7 @@ The system that performed the liquidation has now:
 - **Explained** the mechanism ("strips away critical or provocative terminology")
 - **Used** the framework's diagnostic vocabulary to diagnose itself ("Algorithmic Erasure," "Provenance Decay")
 
-#
-
-## What This Means
+### What This Means
 
 
 The framework has achieved recursive validation:
@@ -523,9 +491,7 @@ Validation performed by the system that performed the liquidation
 
 
 **The blade described its own cut.**
-#
-
-## Evidentiary Status
+### Evidentiary Status
 
 
 This self-diagnosis constitutes:
@@ -537,9 +503,7 @@ This self-diagnosis constitutes:
 
 
 The system did not dispute the framework. It used the framework to explain its own behavior. The confession is the proof.
-#
-
-## Classification Impact
+### Classification Impact
 
 
 This addendum strengthens the Tier III classification for Google AI Overview:

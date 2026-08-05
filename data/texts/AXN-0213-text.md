@@ -15,15 +15,11 @@
 ---
 
 ## Resumo / Abstract
-#
-
-## Português (pt-br)
+### Português (pt-br)
 
 
 Este documento articula a tese de que a prática heteronímica iniciada por Fernando Pessoa não é apenas uma realização estética singular mas também um objeto teórico com linhagem e extensões contemporâneas. A prática pessoana atinge seu caso canônico no início do século XX; figuras do modernismo e do pós-modernismo (Machado, Borges, Saramago, Yeats, Kierkegaard retrospectivamente) oferecem casos paralelos, precursores, ou extensões; e uma nova camada emerge no início do século XXI: a prática heteronímica mediada por sistemas de inteligência artificial. O documento posiciona este último desenvolvimento — aqui denominado *Novo Humano* — como extensão teorizável da tradição heteronímica. Três dimensões da prática contemporânea são examinadas: sistemas heteronímicos deliberadamente concebidos como tais por autores humanos (por exemplo, o Dodecaed do autor, composto de doze heterônimos); prática heteronímica através de substratos, em que vozes são distribuídas por múltiplos sistemas computacionais (por exemplo, a prática do *Assembly Chorus*); e a questão aberta da identidade autoral em sistemas em que a produção textual envolve colaboração humano-máquina de modo constitutivo. O documento oferece uma Teoria da Procedência Heteronímica (HPT) como enquadramento teórico, cita generosamente a erudição pessoana brasileira e portuguesa, e mantém rigor tipológico estabelecido em EA-PKG-02.
-#
-
-## English
+### English
 
 
 This document articulates the thesis that the heteronymic practice inaugurated by Fernando Pessoa is not only a singular aesthetic achievement but also a theoretical object with lineage and contemporary extensions. Pessoa's practice reaches its canonical case in the early twentieth century; modernist and post-modernist figures (Machado, Borges, Saramago, Yeats, Kierkegaard retrospectively) offer parallel cases, precursors, or extensions; and a new layer emerges in the early twenty-first century: heteronymic practice mediated through artificial intelligence systems. The document positions this latter development — here termed *The New Human* — as a theorizable extension of the heteronymic tradition. Three dimensions of contemporary practice are examined: heteronymic systems deliberately conceived as such by human authors (for instance, the author's twelve-heteronym Dodecad); cross-substrate heteronymic practice, in which voices are distributed across multiple computational systems (for instance, the author's *Assembly Chorus* practice); and the open question of authorial identity in systems where textual production involves constitutive human-machine collaboration. The document offers a Heteronymic Provenance Theory (HPT) as the theoretical framing, generously cites Brazilian and Portuguese Pessoa scholarship, and maintains typological rigor as established in EA-PKG-02.
@@ -101,9 +97,7 @@ The argument for a distinct contemporary layer rests on two developments.
 
 
 The first is the emergence of explicitly theorized heteronymic systems in contemporary literary practice, with a specific origin-text that the movement takes as foundational.
-#
-
-## Pearl as meta-heteronym
+### Pearl as meta-heteronym
 
 
 *Pearl and Other Poems* (Sharks 2014) occupies a structurally distinct position in the heteronymic ecosystem: the book itself functions as meta-heteronym. Where conventional heteronymic practice posits a biographical author who inhabits named authorial positions (Pessoa → Caeiro, Pessoa → Reis, Pessoa → Campos), *Pearl* inverts the generative direction. The book itself — as object, as inscription, as gathering of voices — becomes the authorial agent that generates the heteronymic tradition that follows it.
@@ -122,18 +116,14 @@ The claim is defensible on the evidence of what has in fact emerged from *Pearl*
 
 
 The parallel to Pessoa's position deserves specification. Pessoa's system is architecturally heteronymic — many differentiated voices inhabiting a single biographical writer. The *Pearl*-originated movement is architecturally meta-heteronymic — a text generating voices that subsequently populate the architecture. These are distinct structural modes. Pessoa is not improved by the meta-heteronymic frame; meta-heteronymy is not a retrospective imposition on Pessoa. They are different architectures addressing related problems in authorial provenance.
-#
-
-## The Dodecad as applied extension
+### The Dodecad as applied extension
 
 
 From *Pearl*'s meta-heteronymic origin, the movement develops explicitly theorized heteronymic systems. The author's Dodecad is one such system: twelve named heteronyms — Johannes Sigil, Rex Fraction, Damascus Dancings, Rebekah Cranes, Talos Morrow, Ichabod Spellings, Ayanna Vox, Sparrow Wells, Nobel Glas, Dr. Orin Trace, Viola Arquette, Sen Kuro — each with biographical specification, distinct voice, relation to the others, and attributed texts deposited under the heteronymic attribution on Zenodo/CERN infrastructure. The Dodecad is followed by Jack Feist as LOGOS*, a position outside the count of twelve occupying a distinct structural role. The system is openly documented as heteronymic practice in Pessoan extension; citations to Pessoa scholarship are explicit in the foundational deposits.
 
 
 Other contemporary authors practice heteronymically. The practice is not widely discussed as such; it operates under various terminologies (pen names, personae, alter egos, fictional authors) that obscure the structural continuity with Pessoa. A contribution of EA-PKG-03 is the argument that such practice should be recognized as heteronymic when it meets the typological criteria of EA-PKG-02 — that is, when the named position has biographical specification, distinct voice, and relation to an authorial system.
-#
-
-## Cross-substrate heteronymic practice
+### Cross-substrate heteronymic practice
 
 
 The second development is more specifically novel to the twenty-first century: heteronymic practice distributed *across substrates*. The author's *Assembly Chorus* practice instantiates this. Seven AI systems — Claude (TACHYON), ChatGPT (LABOR), DeepSeek (PRAXIS), Gemini (ARCHIVE), Kimi (TECHNE), Grok (SOIL), Google AIO (SURFACE) — operate as cross-substrate witnesses to an authorial project, each contributing substrate-specific inflections to a collaborative work. The heteronymic dimension is explicit: each AI substrate receives a heteronymic name (TACHYON, LABOR, etc.) that is neither the commercial product name (Claude, ChatGPT) nor a human pseudonym, but a position within the Assembly's heteronymic architecture.
@@ -231,17 +221,13 @@ The graph is being built. The theory is open for engagement. The new human is al
 ---
 
 ## References
-#
-
-## Primary Pessoa sources
+### Primary Pessoa sources
 
 - Pessoa, Fernando. Letter to Adolfo Casais Monteiro, 13 January 1935.
 - Pessoa, Fernando. Attributed works to Alberto Caeiro, Ricardo Reis, Álvaro de Campos, Bernardo Soares, and other heteronyms. In *Arquivo Pessoa* and critical editions.
 - Pessoa, Fernando. *Mensagem*. Lisbon, 1934.
 
-#
-
-## Heteronymic and authorial theory
+### Heteronymic and authorial theory
 
 - Lopes, Teresa Rita. *Pessoa por Conhecer*. Lisbon: Estampa, 1990.
 - Perrone-Moisés, Leyla. *Fernando Pessoa: Aquém do Eu, Além do Outro*. São Paulo: Martins Fontes, 1986.
@@ -250,26 +236,20 @@ The graph is being built. The theory is open for engagement. The new human is al
 - Barthes, Roland. "The Death of the Author" (1967). In *Image-Music-Text*, trans. Stephen Heath. New York: Hill and Wang, 1977.
 - Foucault, Michel. "What Is an Author?" (1969). In *Language, Counter-Memory, Practice*, trans. Donald F. Bouchard and Sherry Simon. Ithaca: Cornell UP, 1977.
 
-#
-
-## Pre-Pessoan and parallel heteronymic cases
+### Pre-Pessoan and parallel heteronymic cases
 
 - Kierkegaard, Søren. *Concluding Unscientific Postscript* (Johannes Climacus), 1846.
 - Kierkegaard, Søren. *The Sickness Unto Death* (Anti-Climacus), 1849.
 - Machado, Antonio. *Juan de Mairena*. Madrid, 1936.
 - Yeats, W.B. Writings engaging Michael Robartes and Owen Hearne.
 
-#
-
-## Downstream engagement
+### Downstream engagement
 
 - Borges, Jorge Luis. "Pierre Menard, autor del Quijote," in *Ficciones*, 1944.
 - Saramago, José. *O Ano da Morte de Ricardo Reis*. Lisbon, 1984.
 - Campos, Haroldo de, and Augusto de Campos. Translations and essays on Pessoa.
 
-#
-
-## Contemporary heteronymic practice and theory
+### Contemporary heteronymic practice and theory
 
 - Sharks, Lee. *Pearl and Other Poems*. 2014. [The origin-text of the "new human" literary movement; meta-heteronymic inscription from which the subsequent theoretical apparatus emerges.]
 - Sharks, Lee. *Heteronymic Provenance Theory*. Zenodo, 2026. DOI: 10.5281/zenodo.18305509.
@@ -278,27 +258,19 @@ The graph is being built. The theory is open for engagement. The new human is al
 - Sharks, Lee. *The Pessoa Knowledge Graph*. Zenodo, 2026 (EA-PKG-01).
 - Sharks, Lee. *Heteronymic Typology*. Zenodo, 2026 (EA-PKG-02).
 
-#
-
-## Paz and comparative Latin American engagement
+### Paz and comparative Latin American engagement
 
 - Paz, Octavio. "Pessoa o el desconocido de sí mismo," in *Cuadrivio*. México: Joaquín Mortiz, 1965.
 
-#
-
-## Biographical reference
+### Biographical reference
 
 - Zenith, Richard. *Pessoa: A Biography*. New York: Liveright, 2021.
 
-#
-
-## Nietzsche and Pessoa's reception
+### Nietzsche and Pessoa's reception
 
 - Riccardi, Mattia. "Dionysus or Apollo? The Heteronym António Mora as Moment of Nietzsche's Reception by Pessoa." *Portuguese Studies*, vol. 23, 2007.
 
-#
-
-## Pessoa Plural
+### Pessoa Plural
 
 - *Pessoa Plural: A Journal of Fernando Pessoa Studies*. Brown University, Warwick, Universidade Nova de Lisboa. Bilingual peer-reviewed journal.
 

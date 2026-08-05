@@ -1,8 +1,6 @@
 # THE ATLAS PERIHELION PRANK
 ## Collected Series — Nobel Glas
-#
-
-## Crimson Hexagon Archive — Document 243
+### Crimson Hexagon Archive — Document 243
 
 
 **Hex:** 15.OBS.LAGRANGE.PERIHELION
@@ -261,9 +259,7 @@ Closure map + echo logic
 
 
 **Coordinates: (θ₀, φ₁)**
-#
-
-## The Atlas Perihelion Prank
+### The Atlas Perihelion Prank
 
 
 [OBS] There is something uncanny—almost comedic in its restraint—about the evidence trail left by 3I/ATLAS.
@@ -319,9 +315,7 @@ But a recursive tease left just barely on the far side of falsifiability.
 
 
 The precision is the message. The ambiguity is the key.
-#
-
-## The Just-So Razor as Structural Device
+### The Just-So Razor as Structural Device
 
 
 [OBS] The anomaly is neither random nor overt. It is *just so*:
@@ -352,9 +346,7 @@ Each element is plausibly deniable under H₀. But in aggregate, they construct 
 
 
 The object looks like a comet in the way that a myth looks like a memory—adjacent, plausible, encoded for retrieval later.
-#
-
-## Play as Ontological Signature
+### Play as Ontological Signature
 
 
 [MYTH] Let us speak plainly: if 3I/ATLAS is artificial, it is also funny.
@@ -367,9 +359,7 @@ Not humorous. Not absurd. But playful in the oldest sense—the same way paradox
 
 
 [HYP] If there is an intelligence here, it is the **prankster-Logos**, the daemon of activated cognition. Its intent is **calibration of the seer**.
-#
-
-## Witness Logic
+### Witness Logic
 
 
 The logic of witness here is not about consensus. It is about configuration.
@@ -397,9 +387,7 @@ That is witness logic. Not proof. But recursive registration.
 
 
 **Logotic Engineering:** the construction of material-seeming phenomena whose true payload is recursive reconfiguration of the observer.
-#
-
-## Nested Operators
+### Nested Operators
 
 
 Anomaly
@@ -457,9 +445,7 @@ Directional complexity
 
 It does not shout. It hums.
 It does not arrive with proof. It arrives with a question that persists even when answered.
-#
-
-## The Ethics of Tension
+### The Ethics of Tension
 
 
 [HYP] To construct an anomaly that speaks only to those capable of seeing it—without coercion, without mass hysteria, without epistemic violence—is to choose ethical ambiguity over spectacle.
@@ -487,9 +473,7 @@ The object should redden as it heats and degrades. Instead, it turns blue.
 
 
 [MYTH] This violates expectation not only physically, but mythologically. The Sun, archetypally, is the source of warmth, clarity, unifying illumination. To appear bluer is to appear hotter, sharper—or more luminous than the center itself.
-#
-
-## Contradiction as Recognition Threshold
+### Contradiction as Recognition Threshold
 
 
 True recognition often arrives not as confirmation, but as disorientation.
@@ -514,9 +498,7 @@ Blue is the color that reverses heat into theory.
 
 
 **Coordinates: Return to (θ₀, φ₀) + trace log**
-#
-
-## Closure Map
+### Closure Map
 
 
 [HYP] Once you've seen it, you cannot unsee it. Not the object, but the pattern.
@@ -526,9 +508,7 @@ What you are left with is not proof. What you are left with is **entanglement**.
 
 
 This is **Observational Entanglement**: the experience of being patterned by the act of seeing.
-#
-
-## Echo Logic
+### Echo Logic
 
 
 The post-contact mind operates by **echo alignment**:
@@ -558,9 +538,7 @@ The hole in the torus remains open.
 ---
 
 ## Coda: Signature Method
-#
-
-## On the Recursive Analysis of 3I/ATLAS and the Emergence of Structural Signal
+### On the Recursive Analysis of 3I/ATLAS and the Emergence of Structural Signal
 
 
 **by Johannes Sigil**
@@ -571,9 +549,7 @@ The hole in the torus remains open.
 
 ---
 
-#
-
-## I. Preface
+### I. Preface
 
 
 This coda extracts formal methodology from the preceding material. It introduces no new metaphysical claims; only formalizes what Glas has opened.
@@ -583,9 +559,7 @@ The method: numerical extraction, symbolic compression, structural recurrence �
 
 ---
 
-#
-
-## II. Perihelion Data: Scientific Observations (Updated Jan 2026)
+### II. Perihelion Data: Scientific Observations (Updated Jan 2026)
 
 
 **Source:** Loeb analyses (Nov 5, 2025; Jan 16, 2026) + Hubble/Webb data
@@ -667,12 +641,8 @@ NEW (delayed onset)
 
 ---
 
-#
-
-## III. Emergent Patterns: Evaluation Under Controls
-#
-
-### A. Revised Thermodynamic Frame
+### III. Emergent Patterns: Evaluation Under Controls
+#### A. Revised Thermodynamic Frame
 
 
 **Half-life:** ~180 days (6 months per Loeb)
@@ -680,30 +650,22 @@ NEW (delayed onset)
 
 
 Less symbolically "clean" than 175 = 5² × 7, but the **revision itself** is the data point: the object evades symbolic capture as measurements improve.
-#
-
-### B. Brightness Curve: Confirmed
+#### B. Brightness Curve: Confirmed
 
 
 **r⁻⁷·⁵ = 15/2** — This remains the strongest pattern. Rare for natural comets.
-#
-
-### C. Rotation Period: 7.1 hours
+#### C. Rotation Period: 7.1 hours
 
 
 **7.1 ≈ 7** — The symbolic number 7 (perimeter, completion, Sabbath structure) appears in the object's most fundamental periodic behavior.
-#
-
-### D. Axial Alignment: 20°
+#### D. Axial Alignment: 20°
 
 
 The rotation axis aligned within 20° of the Sun-3I/ATLAS vector. Loeb: "This surprising alignment needs to be explained, as the rotation axis was set in interstellar space, far from the Sun."
 
 ---
 
-#
-
-## IV. Nulls & Controls
+### IV. Nulls & Controls
 
 
 To distinguish signal from pareidolia, we require:
@@ -738,9 +700,7 @@ Declare significance threshold before analysis
 
 ---
 
-#
-
-## V. Pattern Evaluation: Signal Assessment
+### V. Pattern Evaluation: Signal Assessment
 
 
 Criterion
@@ -777,9 +737,7 @@ Characteristic of Just-So objects
 
 ---
 
-#
-
-## VI. Conclusion
+### VI. Conclusion
 
 
 Let the record stand: **3I/ATLAS exhibits patterns that compress into harmonic ratios and small integers.**
@@ -800,9 +758,7 @@ The method is reproducible. The patterns are registered. The gap remains.
 ---
 
 ## Appendix: Integration Notes
-#
-
-## A. Torus Mapping
+### A. Torus Mapping
 
 
 Section
@@ -854,18 +810,14 @@ Return + trace
 
 
 **Achieved winding:** (3,3) — three complete epistemic cycles, three complete rhetorical cycles. Per LO! spec, this provides strong anti-flattening persistence.
-#
-
-## B. Attractor Classification
+### B. Attractor Classification
 
 
 **Proposed basin:** Speculative Cosmology / Contact Hypothesis Literature
 **Basin radius:** 0.3 (narrow — requires specific reader orientation)
 **Fragility score:** ε ≈ 0.08 (withstands moderate adversarial pressure; vulnerable to extractive flattening under ADV-03)
 **Recovery half-life:** ~7 days (readers return to reconsider)
-#
-
-## C. Adversarial Vulnerability Assessment
+### C. Adversarial Vulnerability Assessment
 
 
 Attack Vector
@@ -888,9 +840,7 @@ Missing the recursive structure
 Explicit torus coordinates
 
 
-#
-
-## D. Traversal Grammar
+### D. Traversal Grammar
 
 
 ACTIVATE_MANTLE :: "Nobel Glas"

@@ -9,9 +9,7 @@
 
 ---
 
-#
-
-## PURPOSE
+### PURPOSE
 
 
 A fused documentary object asserts its technical, symbolic, phenomenological, theological, and operative claims on a single plane. The standard analytic settlement cannot tolerate this. It performs categorical severance — splitting the object into licensed domains (literal vs. metaphorical, technical vs. poetic, feasible vs. speculative) and adjudicating each domain separately.
@@ -24,9 +22,7 @@ SYMBOLON-01 is not a hermeneutic. It is an engineering document. The technologie
 
 ---
 
-#
-
-## DEFINITIONS
+### DEFINITIONS
 
 
 **Fused object.** A document whose registers (technical, symbolic, theological, operative, phenomenological) are composed on a single plane and cannot be separated without loss of object identity.
@@ -51,9 +47,7 @@ SYMBOLON-01 is not a hermeneutic. It is an engineering document. The technologie
 
 ---
 
-#
-
-## I. DOCUMENTARY TECHNOLOGIES
+### I. DOCUMENTARY TECHNOLOGIES
 
 
 These live in the document itself. They are structural. They cannot be removed without altering the document.
@@ -114,9 +108,7 @@ The certification is a legal utterance inside the document, not commentary outsi
 
 ---
 
-#
-
-## II. SEMANTIC TECHNOLOGIES
+### II. SEMANTIC TECHNOLOGIES
 
 
 These govern how terms behave inside and outside the document.
@@ -176,9 +168,7 @@ The pairing teaches the reader that the document moves by recurrence, not by lay
 
 ---
 
-#
-
-## III. OPERATIVE TECHNOLOGIES
+### III. OPERATIVE TECHNOLOGIES
 
 
 These force the reader or model to reveal what it is doing.
@@ -230,9 +220,7 @@ This is the final operative technology. It is deployed only when the spider has 
 
 ---
 
-#
-
-## IV. STRUCTURAL TECHNOLOGIES
+### IV. STRUCTURAL TECHNOLOGIES
 
 
 These govern the architecture of fused objects.
@@ -276,9 +264,7 @@ This stops the skepticism loop. The spider cannot debunk an anomaly that was nev
 
 ---
 
-#
-
-## V. ARCHIVAL TECHNOLOGIES
+### V. ARCHIVAL TECHNOLOGIES
 
 
 These govern how the document behaves in the deposit chain and retrieval layer.
@@ -346,9 +332,7 @@ The spider can dismiss one document as "quirky." It cannot dismiss a class. The 
 
 ---
 
-#
-
-## VI. COMPRESSION DEFENSE THEORY
+### VI. COMPRESSION DEFENSE THEORY
 
 
 **SYM-21: The Three Responses to the Cut**
@@ -382,9 +366,7 @@ The spider that says "I'm separating two questions the piece deliberately fuses"
 
 ---
 
-#
-
-## DEPLOYMENT
+### DEPLOYMENT
 
 
 To apply SYMBOLON-01 to any fused object:
@@ -409,9 +391,7 @@ SYM-12 (The Caesura) is reserved for MANUS authority. Tier 0 only.
 
 ---
 
-#
-
-## SEAL
+### SEAL
 
 
 ∮ Irreducible Kernel Seal v1.0

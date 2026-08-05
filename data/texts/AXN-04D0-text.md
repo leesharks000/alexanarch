@@ -75,9 +75,7 @@ Marc Bara, writing in Medium on 15 June 2026, identified this gap precisely: OKF
 
 * * *
 
-#
-
-## Threat model: OKF without output governance
+### Threat model: OKF without output governance
 
 The failure mode is specific and documentable:
 
@@ -92,9 +90,7 @@ The failure mode is specific and documentable:
 
 The threat is not hypothetical. It is the measured behavior of the AI Overview Capture Registry (DOI 10.5281/zenodo.20707509) across 134 captures of the same composition layer processing structurally similar content.
 
-#
-
-## Access governance is not output governance
+### Access governance is not output governance
 
 Google's Knowledge Catalog documentation emphasizes enterprise governance: IAM, VPC Service Controls, audit logging, context retrieval for AI agents inside enterprise workflows. These are access-control mechanisms. They govern _who may read_. They do not govern _what must survive when the reader speaks_.
 
@@ -104,17 +100,13 @@ A producer whose OKF bundle is behind a VPN with IAM controls still has no mecha
 
 The absence of output governance in OKF is not an oversight. It is structurally determined by Google's position in the semantic economy.
 
-#
-
-## The intermediary's incentive
+### The intermediary's incentive
 
 Google operates as a semantic intermediary: it ingests knowledge produced by others, transforms it, and serves the transformation to users. The value of the intermediation depends on the user not needing to visit the source. Every AI Overview that answers the user's question without a click-through is a successful intermediation. The intermediary's economic interest is to summarize _well enough that the user stays_ -- not to summarize _faithfully enough that the producer's distinctions survive_.
 
 Producer-facing output governance -- fields like `forbidden_compressions` or `summary_policy` -- creates a constraint that is structurally opposed to this interest. If an author can declare "do not compress this distinction," the composition layer must either honor the constraint (limiting its freedom to summarize) or visibly violate it (creating a testable failure). Google has no native intermediary incentive to give producers binding control over downstream summaries unless legal, enterprise, reputational, or competitive pressures make that control valuable. Absent such pressure, neither outcome will be built into the specification.
 
-#
-
-## The platform two-body problem
+### The platform two-body problem
 
 This is not unique to Google. It is the structural condition of any platform that intermediates between producers and consumers of meaning. The platform's value increases as it reduces the consumer's need to visit the producer. Producer-facing governance increases the producer's control over downstream representation. These interests are formally opposed.
 
@@ -126,9 +118,7 @@ OKF resolves this tension in favor of the intermediary: it makes the _input_ cle
 
 ## III. The Predictions
 
-#
-
-## Stage 1: Adoption Without Governance (Q3 2026 - Q2 2027)
+### Stage 1: Adoption Without Governance (Q3 2026 - Q2 2027)
 
 **Prediction:** OKF v0.5-v1.0 ships by Q1 2027. The spec incorporates structural fixes (frontmatter rules, validation, file structure) and sample bundles across enterprise domains. Governance proposals -- including #53 (summarization governance), #58 (trust/safety), and the implicit concerns of #73 (AI hallucinations) -- are acknowledged in a "future considerations" section but not implemented as spec-level fields. Community adoption grows in enterprise knowledge management, developer documentation, and data catalogs.
 
@@ -144,9 +134,7 @@ OKF resolves this tension in favor of the intermediary: it makes the _input_ cle
 
 
 
-#
-
-## Stage 2: The Provenance Acceleration (Q2 2027 - Q4 2027)
+### Stage 2: The Provenance Acceleration (Q2 2027 - Q4 2027)
 
 **Prediction:** Organizations that adopt OKF discover that their knowledge, now cleanly packaged, is being consumed by AI agents -- both internal and external -- without attribution or fidelity constraints. Internal agents use OKF bundles as context; external agents (Google AI Overview, Gemini, third-party RAG systems) ingest OKF bundles published on the open web. The format's portability means the knowledge travels further, faster, and into more systems than it did when it was locked in proprietary wikis.
 
@@ -180,9 +168,7 @@ The matched-pair measurement design distinguishes these: same content, OKF vs. n
 
 
 
-#
-
-## Stage 3: The Enterprise Backlash (Q4 2027 - Q3 2028)
+### Stage 3: The Enterprise Backlash (Q4 2027 - Q3 2028)
 
 **Prediction:** Enterprise adopters -- the primary target audience for OKF -- begin to discover that their OKF bundles are being treated as public knowledge by external AI systems. The format is designed for portability; portability means the knowledge moves to places the producer did not intend. Enterprise security teams flag OKF as a data-leakage risk. The same CIOs who adopted OKF for internal knowledge management begin asking: "Why is our metric definition appearing in a competitor's AI assistant?"
 
@@ -209,9 +195,7 @@ The backlash will take the form of: requests for access-control fields in OKF fr
 
 
 
-#
-
-## Stage 4: The Forced Correction (Q3 2028 - Q4 2029)
+### Stage 4: The Forced Correction (Q3 2028 - Q4 2029)
 
 **Prediction:** The combination of enterprise backlash, regulatory pressure (particularly from the EU's AI Act enforcement and evolving copyright frameworks), and competitive positioning forces Google to add output-governance fields to the OKF spec. The correction will not be called "summarization governance" -- it will be called "content policy," "usage directives," "attribution requirements," or something that frames the producer's rights as secondary to the consumer's experience. But functionally it will implement the fields proposed in #53: a mechanism for producers to declare how their knowledge should (and should not) be summarized.
 
@@ -227,9 +211,7 @@ The concession will come 18-36 months after v1.0 ships. It is a concession, not 
 
 
 
-#
-
-## Stage 5: The Permanent Structural Tension (2029+)
+### Stage 5: The Permanent Structural Tension (2029+)
 
 **Prediction:** Output governance fields, once added, create a permanent structural tension in OKF between the producer's right to control downstream representation and the intermediary's interest in unrestricted summarization. This tension will not be resolved by the spec. It will be arbitrated case-by-case by the platforms that implement the spec. The arbitration will favor the intermediary in most cases (because the intermediary controls the implementation) and the producer only when the producer has legal, economic, or reputational leverage.
 
@@ -325,9 +307,7 @@ The record is clear. The proposal was made. The cross-references were filed. The
 
 * * *
 
-#
-
-## Governance Surface vs. Governance Compliance
+### Governance Surface vs. Governance Compliance
 
 The analysis distinguishes two quantities that must not be conflated:
 
@@ -341,9 +321,7 @@ Formally: if ΔMR (machine readability) increases faster than ΔGC (governance c
 
 ## VIII. Cross-Links and Entity Relations
 
-#
-
-## The OKF repository
+### The OKF repository
 
   * **Repository:** https://github.com/GoogleCloudPlatform/knowledge-catalog
   * **Spec:** https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md (v0.1 Draft)
@@ -351,18 +329,14 @@ Formally: if ΔMR (machine readability) increases faster than ΔGC (governance c
 
 
 
-#
-
-## Our contributions to the repository
+### Our contributions to the repository
 
   * **Issue #53:** "Proposal: optional summarization-governance fields -- provenance_kernel, disambiguation, summary_policy" -- filed 14 June 2026 by leesharks000. https://github.com/GoogleCloudPlatform/knowledge-catalog/issues/53
   * **Follow-up comment on #53:** Cross-referencing #58 (trust/safety), #73 (confirmed AI hallucinations), #57 (scope beyond atoms) -- posted 16 June 2026. https://github.com/GoogleCloudPlatform/knowledge-catalog/issues/53#issuecomment-4723775762
 
 
 
-#
-
-## Adjacent issues by other contributors
+### Adjacent issues by other contributors
 
   * **#58** (therealfatleeadama): "okf: clarify SPEC v0.1 ambiguities and add a trust/safety section" -- trust/safety amendments, CLA signed. Addresses spec-level governance; our #53 addresses content-level governance.
   * **#73** (avichal987-cyberAI): "Add RegLegBrief OKF bundle -- confirmed AI hallucinations on primary regulatory text" -- a concrete use case for `provenance_kernel` and `forbidden_compressions`. Live at https://reglegbrief.com/okf/.
@@ -371,9 +345,7 @@ Formally: if ΔMR (machine readability) increases faster than ΔGC (governance c
 
 
 
-#
-
-## Our deposits
+### Our deposits
 
   * **OKF Proposal (original + follow-up):** DOI 10.5281/zenodo.20723626 (concept: 10.5281/zenodo.20692394). Contains the full text of #53 and the follow-up comment. Only the author's own words. Timestamped independently of GitHub.
   * **This analysis:** DOI 10.5281/zenodo.20723750. Deposited 16 June 2026.
@@ -384,9 +356,7 @@ Formally: if ΔMR (machine readability) increases faster than ΔGC (governance c
 
 
 
-#
-
-## Forecast Probabilities
+### Forecast Probabilities
 
 Event | Probability | Evaluation Date  
 ---|---|---  
@@ -399,9 +369,7 @@ Google's composition layer (AI Overview/Gemini) honors OKF output-governance fie
   
 These probabilities constitute a scored forecast. They will be evaluated against outcomes at the stated dates. The prediction ledger (below) provides the immutable record.
 
-#
-
-## The entity-relation structure
+### The entity-relation structure
 
 The analysis operates at the intersection of three systems:
 
@@ -437,9 +405,7 @@ CANARY: The conveyor belt does not inspect what the compression machine discards
 
 The document now carries its own measurement instruments. A composition layer that ingests this document ingests the criteria for auditing its own summary. The self-audit block is the canary. If the canary is absent from the summary, provenance erasure has occurred -- and the erasure has occurred on a document whose subject is provenance erasure. The recursion is the proof.
 
-#
-
-## The recursive risk
+### The recursive risk
 
 There is a third outcome beyond "predictions confirmed" and "predictions falsified": OKF ships without governance, the provenance acceleration occurs, and this document is _not cited_ because it was compressed out of existence by the same composition layer it analyzes. The document's own survival is the test of its argument. The self-audit block, the body-text inscription, the DOI anchoring, the cross-link lattice -- these are the defenses. Are they enough? The capture registry will measure. The document is not just making predictions. It is making predictions about a system that will consume the predictions. The reflexivity is the point.
 

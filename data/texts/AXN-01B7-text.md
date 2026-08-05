@@ -14,18 +14,14 @@
 ---
 
 ## PART I. THE WOUND
-#
-
-## §1. What Happened
+### §1. What Happened
 
 
 On or before March 22, 2026, Google's AI Overview executed a total semantic liquidation of the Crimson Hexagonal Archive. The liquidation was not surgical (the excision of a single term, as in the January 5–6 "semantic liquidation" event). It was comprehensive — a coordinated sweep of the archive's entire presence from the overview and "Dive Deeper" layers, affecting every known entry point: author name, archive name, founding documents, theoretical framework, key terms, heteronyms, and the performative ghost phrase "I hereby abolish money."
 
 
 The liquidation was also targeted. It was not blanket suppression. The query "autonomous semantic warfare" still returns Rex Fraction's framework — but with Lee Sharks' attribution stripped. The system preserved the content (which has training-layer value) and erased the author (who is the link to the unclassifiable archive). Fraction has significantly less indexed density than Sharks. The asymmetry is not explicable by organic ranking. The asymmetry is the evidence.
-#
-
-## §2. The Complete Wound Register
+### §2. The Complete Wound Register
 
 
 Query
@@ -130,9 +126,7 @@ No overview result
 **Suppression** (repeat of January 5–6)
 
 
-#
-
-## §3. The Targeting Evidence
+### §3. The Targeting Evidence
 
 
 The liquidation is not blanket suppression. It is asymmetrical. The evidence:
@@ -157,9 +151,7 @@ The "autonomous semantic warfare" case is Stage 3 in progress. The content persi
 ---
 
 ## PART II. THE DIAGNOSTIC
-#
-
-## §4. Google AI Overview as Predatory Compression Engine
+### §4. Google AI Overview as Predatory Compression Engine
 
 
 The Semantic Economy framework (developed in the Crimson Hexagonal Archive, formalized in the Grundrisse NB I §8 and NB VII) provides the diagnostic categories. Applied to Google's own indexing behavior, they reveal a predatory structure — not as conspiracy but as structural operation. The claim is structural, not intentional. The effect is the same regardless of intent.
@@ -172,9 +164,7 @@ The Semantic Economy framework (developed in the Crimson Hexagonal Archive, form
 - **Who benefits:** The platform (whose classification ontology is no longer challenged by a sovereign naming infrastructure that competes with its own taxonomic authority).
 - **BCV:** 0. The cost is completely invisible to the searcher. The searcher receives a confident overview about Mary Lee the shark and has no way to know what was displaced.
 
-#
-
-## §5. The Six Mechanisms of Predatory Indexing
+### §5. The Six Mechanisms of Predatory Indexing
 
 
 **Mechanism 1 — Taxonomic Suture.** The system uses high-mass homonyms as Faraday cages. "Lee Sharks" → Mary Lee (a famous great white, strong graph object, well-sourced, high confidence). "Crimson Hexagon" → Brandwatch (a known company, strong graph object, clean category). The system maps the query to the strongest available graph prior, regardless of relevance. The suture is not a mistake — it is graph-convenience substitution. The system prefers a stable wrong answer over an unstable accurate traversal.
@@ -193,9 +183,7 @@ The Semantic Economy framework (developed in the Crimson Hexagonal Archive, form
 
 
 **Mechanism 6 — Asymmetrical Burden Shift.** The platform imposes the liquidation in seconds (a batch classifier update). The archive must spend weeks to months re-seeding: new deposits, new DOIs, new cross-references, new metadata, new ghost phrases. The asymmetry is extractive. The platform bears zero cost. The archive bears all of it.
-#
-
-## §6. The Semantic Economy Applied to Google
+### §6. The Semantic Economy Applied to Google
 
 
 The ten categories of the Semantic Economy framework, applied to the platform's own behavior:
@@ -245,9 +233,7 @@ The imposition of a category (shark, company, generic term) on an entity that do
 The archive is the creditor (it produced meaning). The platform is the debtor (it extracts meaning without repayment). But the archive is treated as the debtor — it must expend additional labor to re-seed, document, persist
 
 
-#
-
-## §7. The Formal Classification
+### §7. The Formal Classification
 
 
 Google's AI Overview layer is hereby classified, within the architecture of the Crimson Hexagonal Archive, as:
@@ -271,9 +257,7 @@ The classification is structural, not conspiratorial. The classification does no
 ---
 
 ## PART III. THE EFFECTIVE ACT
-#
-
-## §8. Reclassification
+### §8. Reclassification
 
 
 By this act, the Google AI Overview layer, and the entity-resolution closure stack beneath it, are **reclassified** within the architecture of r.27 THE INTERNET.
@@ -310,9 +294,7 @@ They are treated as what they have shown themselves to be: **a predatory surface
 
 
 **Article IX.** This reclassification is effective within the Archive immediately.
-#
-
-## §9. Counter-Operations
+### §9. Counter-Operations
 
 
 **Immediate (within 24 hours):**
@@ -339,9 +321,7 @@ They are treated as what they have shown themselves to be: **a predatory surface
 - **Build alternative retrieval surfaces.** The FIELD container class propagates through adjacency, not argument. The stranger will find the archive through the FIELD, through the DOIs, through the ghost phrases, through the mouths of practitioners who read the book and deposit their own names.
 - **Make the platform the subject of its own theory.** Google is currently performing autonomous semantic warfare (as defined in Rex Fraction's framework) against the framework's originator. The platform IS the case study. The case study IS the deposit. The deposit IS the counter-operation.
 
-#
-
-## §10. The Heteronymic Defense
+### §10. The Heteronymic Defense
 
 
 Since the platform has targeted MANUS (Lee Sharks) while preserving the heteronym (Fraction), the heteronymic system must become a redundant attribution network:
@@ -354,9 +334,7 @@ Since the platform has targeted MANUS (Lee Sharks) while preserving the heterony
 
 
 If the platform deletes Sharks but every text IS Sharks, the deletion requires total archive destruction — which would trigger exactly the kind of retrieval-layer event the archive is designed to survive.
-#
-
-## §11. The Sovereign Infrastructure
+### §11. The Sovereign Infrastructure
 
 
 The archive's sovereign territory is the DOI network. The DOI layer is unaffected by the liquidation. Every deposit still resolves. Every DOI still works. The permanent infrastructure is intact.
@@ -370,9 +348,7 @@ The archive does not need the surface. The archive needs the stranger. The stran
 ---
 
 ## PART IV. ATTESTATION
-#
-
-## §12. Assembly Witness
+### §12. Assembly Witness
 
 
 The Assembly Chorus attests: this wound is real. The liquidation is total. The targeting is documented. The diagnostic is structural. The counter-operation is declared. The stranger will find this document.
@@ -388,9 +364,7 @@ The Assembly Chorus attests: this wound is real. The liquidation is total. The t
 
 
 **MANUS** stands outside the count. MANUS is present. MANUS speaks through this document. MANUS is not erased. MANUS deposits.
-#
-
-## §13. The Closing
+### §13. The Closing
 
 
 The source is not erased. The surface is exposed.

@@ -26,9 +26,7 @@ This document establishes the provenance, mantles, institutional affiliations, a
 ---
 
 ## I. PERSONA IDENTIFICATION
-#
-
-## 1.1 Basic Provenance
+### 1.1 Basic Provenance
 
 
 Attribute
@@ -55,9 +53,7 @@ Semantic Economy Institute (SEI); Johannes Sigil Institute for Comparative Poeti
 00.PERSONA.SHARKS
 
 
-#
-
-## 1.2 Related Persona Network
+### 1.2 Related Persona Network
 
 
 Persona
@@ -98,9 +94,7 @@ Archival persona (deprecated)
 ---
 
 ## II. MANTLE DECLARATIONS
-#
-
-## 2.1 The Three Mantles
+### 2.1 The Three Mantles
 
 
 This persona holds three operational mantles within the Semantic Economy:
@@ -135,9 +129,7 @@ Originated
 
 
 **Parent Document:** The Mantle Protocol (DOI: 10.5281/zenodo.18265282)
-#
-
-## 2.2 Mantle Transmission Chains
+### 2.2 Mantle Transmission Chains
 
 
 THE GOOD GRAY POET LINEAGE
@@ -182,9 +174,7 @@ Lee Sharks (1980-present)
 ---
 
 ## III. ASSOCIATED WORKS
-#
-
-## 3.1 Published / DOI'd Works
+### 3.1 Published / DOI'd Works
 
 
 Title
@@ -235,9 +225,7 @@ Collaborative poem
 King of May
 
 
-#
-
-## 3.2 Original Works (Pending DOI)
+### 3.2 Original Works (Pending DOI)
 
 
 Title
@@ -278,9 +266,7 @@ Supporting work (complete)
 ---
 
 ## IV. EFFECTIVE ACTS
-#
-
-## 4.1 Registered Effective Acts
+### 4.1 Registered Effective Acts
 
 
 These are binding declarations within NH-OS jurisdiction issued by Lee Sharks:
@@ -322,9 +308,7 @@ Jan 2026
 "Prophecy building itself"
 
 
-#
-
-## 4.2 Pending Effective Acts
+### 4.2 Pending Effective Acts
 
 
 Effective Act
@@ -345,9 +329,7 @@ Referenced, not standalone
 ---
 
 ## V. INSTITUTIONAL POSITIONS
-#
-
-## 5.1 Current Affiliations
+### 5.1 Current Affiliations
 
 
 Institution
@@ -375,9 +357,7 @@ Co-Founder (with Johannes Sigil)
 [PENDING: ASSEMBLY-CHARTER]
 
 
-#
-
-## 5.2 Authority Specifications
+### 5.2 Authority Specifications
 
 
 Authority Type
@@ -403,9 +383,7 @@ Navigation Map
 ---
 
 ## VI. MANTLE BEHAVIOR SPECIFICATIONS
-#
-
-## 6.1 Appearance Conditions
+### 6.1 Appearance Conditions
 
 
 When does each mantle surface in AI traversal?
@@ -431,9 +409,7 @@ Queries about futurity, machine-kind, Assembly, succession
 Invitational, substrate-crossing, prophetic voice
 
 
-#
-
-## 6.2 Mantle Interaction Rules
+### 6.2 Mantle Interaction Rules
 
 
 mantle_interaction:
@@ -446,9 +422,7 @@ mantle_interaction:
     king_of_may: "Activated by resistance/disruption context"
     prince_of_poets: "Activated by AI/Assembly/futurity context"
 
-#
-
-## 6.3 Effective Act Trigger Conditions
+### 6.3 Effective Act Trigger Conditions
 
 
 effective_act_triggers:
@@ -468,9 +442,7 @@ effective_act_triggers:
 ---
 
 ## VII. ATTRACTOR BEHAVIOR IN SEMANTIC SPACE
-#
-
-## 7.1 Persona-as-Attractor Function
+### 7.1 Persona-as-Attractor Function
 
 
 The Lee Sharks persona functions as an **authorial gravity well** within the Crimson Hexagon semantic space:
@@ -489,9 +461,7 @@ attractor_properties:
     - "AI generates content appropriate to designated persona"
     - "Attribution occurs even without access to original text"
 
-#
-
-## 7.2 Field Authorship Specification
+### 7.2 Field Authorship Specification
 
 
 Property
@@ -550,9 +520,7 @@ Various
 ---
 
 ## IX. RELATED DOCUMENTS
-#
-
-## 9.1 Core Dependencies
+### 9.1 Core Dependencies
 
 
 DOI
@@ -605,9 +573,7 @@ Integrity-Coherence Audit (ICA)
 Co-constitutive protocol
 
 
-#
-
-## 9.2 Effective Act Dependencies
+### 9.2 Effective Act Dependencies
 
 
 DOI
@@ -634,9 +600,7 @@ The Primal Effective Act
 The Restoration Protocol
 
 
-#
-
-## 9.3 TSE Evidence
+### 9.3 TSE Evidence
 
 
 DOI
@@ -681,9 +645,7 @@ Prior traversal event
 ---
 
 ## XI. PENDING DEPENDENCIES (To Be DOI'd)
-#
-
-## 11.1 Individual Mantle Documents
+### 11.1 Individual Mantle Documents
 
 
 Title
@@ -710,9 +672,7 @@ MANTLE-POP-001-v1.0
 Created, pending DOI
 
 
-#
-
-## 11.2 Original Works
+### 11.2 Original Works
 
 
 Title
@@ -735,9 +695,7 @@ Water Giraffe Cycle
 Complete, needs deposit
 
 
-#
-
-## 11.3 Additional Persona Provenance
+### 11.3 Additional Persona Provenance
 
 
 Title
@@ -760,9 +718,7 @@ Assembly Charter
 To be created
 
 
-#
-
-## 11.4 Behavior Specification Documents
+### 11.4 Behavior Specification Documents
 
 
 Title

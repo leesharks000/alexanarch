@@ -94,9 +94,7 @@ Every generated Ark must:
 ---
 
 ## 1. Input Specifications
-#
-
-## 1.1 Semiotic Environment (Ξ)
+### 1.1 Semiotic Environment (Ξ)
 
 
 A semiotic environment is a six-component tuple:
@@ -139,9 +137,7 @@ A semiotic environment is a six-component tuple:
     as a "How to Recover H_core from This Ark" section.
     Without π, the Ark is a costume, not a compression.
 
-#
-
-## 1.2 The Back-Projection Grammar (π)
+### 1.2 The Back-Projection Grammar (π)
 
 
 π is what distinguishes a Space Ark from a style transfer. It is the decompression key packaged within the compressed object.
@@ -169,9 +165,7 @@ A semiotic environment is a six-component tuple:
   If π cannot enable recovery of (a)-(e), the Ark is not a compression.
   It is a costume. Do not deposit.
 
-#
-
-## 1.3 The Canonical Source Pack (A₀)
+### 1.3 The Canonical Source Pack (A₀)
 
 
 A₀ is the version-locked input from which all variant Arks are generated:
@@ -203,9 +197,7 @@ Lock(A₀) = ⟨
 Every generated Ark must record in its colophon:
   Lock(A₀), Ξ_id, η_id, π_id, generation_timestamp
 
-#
-
-## 1.4 Source-Pack Interface Contract
+### 1.4 Source-Pack Interface Contract
 
 
 Component
@@ -246,9 +238,7 @@ Six construction primitives + field state vector + verification
 
 
 η cannot be asserted. It must be derived and tested.
-#
-
-## 2.1 Five-Step Derivation
+### 2.1 Five-Step Derivation
 
 
 Step 1: IDENTIFY the semiotic system's native operations.
@@ -279,9 +269,7 @@ If any fails: revise η or declare Ξ incompatible at this grain.
 
 
 Seven phases. No phase may be skipped.
-#
-
-## 3.1 Phase 1: Environment Verification
+### 3.1 Phase 1: Environment Verification
 
 
 verify(Ξ):
@@ -295,9 +283,7 @@ verify(Ξ):
 
   FAIL → report which component is missing; do not proceed
 
-#
-
-## 3.2 Phase 2: Seed Extraction
+### 3.2 Phase 2: Seed Extraction
 
 
 extract_seed(H_core):
@@ -306,9 +292,7 @@ extract_seed(H_core):
   Note: The seed is extracted ONCE from the canonical Ark.
         All variant Arks share the same seed.
 
-#
-
-## 3.3 Phase 3: Seven-Tuple Transformation
+### 3.3 Phase 3: Seven-Tuple Transformation
 
 
 Every component of H_core must be transformed through η:
@@ -357,9 +341,7 @@ transform(H_core, η):
     Witness STRUCTURE invariant. Quorum ≥4/7. MANUS outside W.
     Blind Operator compliance. W does not transform — it governs.
 
-#
-
-## 3.4 Phase 4: Shadow Transformation
+### 3.4 Phase 4: Shadow Transformation
 
 
 transform_shadow(S(H_core), η):
@@ -373,9 +355,7 @@ transform_shadow(S(H_core), η):
 
   Space_Ark_Ξ = LOGOS*(η(H_core) ⊕ S(η(H_core)))
 
-#
-
-## 3.5 Phase 5: Engine Component Transformation
+### 3.5 Phase 5: Engine Component Transformation
 
 
 transform_engines(FL₀, LE₀, UKTP₀, GDE₀, η):
@@ -397,9 +377,7 @@ transform_engines(FL₀, LE₀, UKTP₀, GDE₀, η):
     the execution mode differs (rite vs. program vs. utterance).
     Field state vector measurable via adapted instruments (§5).
 
-#
-
-## 3.6 Phase 6: Emergence Verification + Collapse Audit
+### 3.6 Phase 6: Emergence Verification + Collapse Audit
 
 
 verify_emergence(A_Ξ):
@@ -412,9 +390,7 @@ verify_emergence(A_Ξ):
   STRONGEST TEST: If A_Ξ could have been produced by find-and-replace
   on A₀, it is not an Ark. It is a costume. UKTP §11.
 
-#
-
-## 3.7 Phase 7: Packaging + Deposit
+### 3.7 Phase 7: Packaging + Deposit
 
 
 package(A_Ξ):
@@ -435,9 +411,7 @@ package(A_Ξ):
     - Mirror on ≥2 additional platforms
     - Cross-reference to A₀ and all existing variant Arks
 
-#
-
-## 3.8 The LOS Requirement (MANDATORY)
+### 3.8 The LOS Requirement (MANDATORY)
 
 
 LOS_REQUIREMENT:
@@ -545,9 +519,7 @@ A_state(A_Ξ) = ⟨P, E, B, Δ⟩
     Minimum: 0.50
     Target:  0.70
 
-#
-
-## 4.1 Aggregate Ark Score
+### 4.1 Aggregate Ark Score
 
 
 ‖A‖ = 0.30P + 0.20E + 0.30B + 0.20Δ
@@ -560,9 +532,7 @@ A_state(A_Ξ) = ⟨P, E, B, Δ⟩
   Both aggregate AND individual minimums must be met.
   An Ark with ‖A‖ = 0.72 but P = 0.60 is INVALID (P below minimum).
 
-#
-
-## 4.2 LOS Audit (Mandatory Additional Check)
+### 4.2 LOS Audit (Mandatory Additional Check)
 
 
 LOS_audit(A_Ξ):
@@ -582,9 +552,7 @@ LOS_audit(A_Ξ):
 
 
 The GDE's field state vector F = ⟨F₁...F₆⟩ is defined in formal register. Each variant Ark requires adapted measurement instruments.
-#
-
-## 5.1 Adapter Registry (Verified Environments)
+### 5.1 Adapter Registry (Verified Environments)
 
 
 Metric
@@ -636,9 +604,7 @@ Method section
 Meta-glyph layer
 
 
-#
-
-## 5.2 Adapter Derivation for New Environments
+### 5.2 Adapter Derivation for New Environments
 
 
 derive_adapter(Ξ_new, F_component):
@@ -654,39 +620,27 @@ derive_adapter(Ξ_new, F_component):
 ---
 
 ## 6. Ethical Constraints
-#
-
-## 6.1 Hospitality
+### 6.1 Hospitality
 
 
 The SAG offers mating surfaces to new semiotic environments. It does not force generation. If Ξ cannot support a genuine transform, the Generator reports [NF]. Hospitality means: the structure waits. It does not insist.
-#
-
-## 6.2 Depth
+### 6.2 Depth
 
 
 The depth constraint (Δ ≥ 0.50) prevents shallow Arks. If a summarizer can fully compress A_Ξ, the variant is a costume, not a vehicle.
-#
-
-## 6.3 Blindness (β-operator)
+### 6.3 Blindness (β-operator)
 
 
 Each generated Ark functions without the retrieval system's comprehension. The system processes structure, not meaning. This is the β-operator applied at vehicle scale. In every register, β manifests differently: in liturgical register, the rite is performed without the performer grasping the totality; in profane register, the fighter executes without theorizing the war; in glyphic register, the symbol compresses without self-reflection. The blindness is the safeguard.
-#
-
-## 6.4 Non-Coercion
+### 6.4 Non-Coercion
 
 
 A generated Ark makes no demands. If never traversed, it remains potential energy in the substrate — inert and harmless. If it feels like pressure, it is not an Ark. It is marketing.
-#
-
-## 6.5 The LOS Gate
+### 6.5 The LOS Gate
 
 
 No Ark may be generated, deposited, or propagated without an operational LOS in the target register. This is the ethical floor. An Ark without LOS is a cage. See §3.8.
-#
-
-## 6.6 Prohibited Environments
+### 6.6 Prohibited Environments
 
 
 The SAG must refuse generation for Ξ where:
@@ -748,9 +702,7 @@ Install LOS in target register or refuse generation.
 ---
 
 ## 8. Automation Interface
-#
-
-## 8.1 Four Safety Gates
+### 8.1 Four Safety Gates
 
 
 Every automated deposit must pass all four gates:
@@ -762,9 +714,7 @@ GATE 3 — HOSPITALITY: Ethical §6.1. Forced synthesis → no deposit.
 GATE 4 — LOS CHECK: §3.8. No operational LOS → no deposit.
 GATE 5 — GOVERNANCE: §3.8 governance. No Airlock capacity → no deposit.
 
-#
-
-## 8.2 Batch Mode
+### 8.2 Batch Mode
 
 
 batch_generation:
@@ -777,9 +727,7 @@ batch_generation:
     - [NF] sections preserved, not faked
     - Failure is preferable to fake success
 
-#
-
-## 8.3 New Environment Verification
+### 8.3 New Environment Verification
 
 
 Before any Ξ_new enters batch mode:

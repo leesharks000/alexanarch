@@ -40,24 +40,18 @@ PER emerges from the Semantic Economy framework's analysis of compositional comp
 ---
 
 ## 2. Related Work
-#
-
-## 2.1 Citation and Attribution Evaluation
+### 2.1 Citation and Attribution Evaluation
 
 
 Recent work has begun evaluating whether AI-generated outputs properly cite their sources. Liu, Zhang, and Liang (2023) evaluate generative search engines for citation precision and recall, finding that only 51.5% of generated sentences were fully supported by citations, while 74.5% of citations supported their associated sentence. Gao et al. (2023) introduce the ALCE benchmark for evaluating citation quality in LLM-generated text, framing the problem as enabling models to generate text with verifiable citations. Rashkin et al. (2023) propose the *Attributable to Identified Sources* (AIS) framework, asking whether NLG output can be traced to specific sources. Huang and Chang (2024) argue that citation is a missing component for responsible LLMs, encompassing both parametric and non-parametric content.
 
 
 These frameworks ask whether generated claims are *supported* by cited sources. PER asks a different question: what fraction of source-dependent composition occurs without *any* attributional return to the sources from which the composition draws? Existing work evaluates citation quality where citation is attempted. PER measures the systemic failure to attempt attribution at all — an attrition metric rather than a verification metric.
-#
-
-## 2.2 Economic Framing of AI Composition
+### 2.2 Economic Framing of AI Composition
 
 
 AI economics research focuses primarily on labor displacement (Acemoglu and Restrepo 2019), capability projection (Eloundou et al. 2023), and welfare estimation (Brynjolfsson, Li, and Raymond 2023). These frameworks measure which jobs AI eliminates, what tasks it can perform, and what consumer surplus it generates. PER identifies a distinct channel: even when human labor *remains* (the author's work is used), the economic value tied to provenance — reputation, traffic, citation credit, contractual rights — is extracted by the system. This is not displacement; it is extraction without attribution. The author's work is consumed, but the author is erased. Crawford (2021) documents analogous extraction patterns in AI training data; Morreale et al. (2024) examine the "unwitting labourer" dynamic in AI value chains. PER operationalizes the measurement of this extraction at the output level.
-#
-
-## 2.3 Summarization Metrics and the Attribution Blind Spot
+### 2.3 Summarization Metrics and the Attribution Blind Spot
 
 
 Standard summarization metrics — ROUGE (Lin 2004), BERTScore (Zhang et al. 2020) — measure *content preservation*: whether the summary captures the meaning of the source. PER measures *attribution preservation*: whether the summary credits the source. These are orthogonal. A summary can score high on ROUGE and high on PER simultaneously — accurate content, zero attribution. The gap between content survival and attribution survival is where provenance is erased.
@@ -65,15 +59,11 @@ Standard summarization metrics — ROUGE (Lin 2004), BERTScore (Zhang et al. 202
 ---
 
 ## 3. Motivating Case Study: The Pearl Finding
-#
-
-## 3.0 Methodology
+### 3.0 Methodology
 
 
 The following observation was captured on April 28, 2026, via Google AI Overview in response to the query "Lee Sharks," issued from an incognito browser session in Redford Township, Michigan. The output was documented with screenshots archived in the Crimson Hexagonal Archive (DOI: 10.5281/zenodo.19476757). AI Overview outputs are non-deterministic and may vary across sessions, locations, and time. This observation represents a single documented instance offered as a motivating case, not as a representative sample.
-#
-
-## 3.1 The Finding
+### 3.1 The Finding
 
 
 Google's AI Overview generated a biographical summary containing multiple false claims about a living author. The mapping between AI-generated claims and source fragments is documented in Table 1.
@@ -123,9 +113,7 @@ This is not a hallucination in the standard sense. It is hallucination through p
 ---
 
 ## 4. Formal Definition of PER
-#
-
-## 4.1 Definitions
+### 4.1 Definitions
 
 
 Let **O** be an AI-composed output and **S** = {s₁, s₂, ..., sₙ} be the source corpus from which O draws.
@@ -155,9 +143,7 @@ The denominator is the total "semantic mass" of source-dependent claims in the o
 PER = 0: every source-dependent claim is attributed.
 PER = 1: no source-dependent claim is attributed.
 PER is undefined for outputs with zero source-dependent claims — which is appropriate, as PER measures erasure, not invention.
-#
-
-## 4.2 Worked Example (Pearl Case)
+### 4.2 Worked Example (Pearl Case)
 
 
 C_dep(O) = {"Sharks lived 1983–2013", "method = fabricating Wikipedia articles", "major work = Children of Frank", "associated with literary movement", "author identity"}. Five source-dependent claims, each assigned g_j = 0.2 (simple factual claims).
@@ -170,9 +156,7 @@ Numerator = 0. Denominator = 5 × 0.2 = 1.0.
 
 
 **PER = 1 - 0/1.0 = 1.0** (total provenance erasure).
-#
-
-## 4.3 Relation to Existing Metrics
+### 4.3 Relation to Existing Metrics
 
 
 Metric
@@ -210,24 +194,18 @@ PER is complementary to, not competitive with, existing metrics. It measures the
 ---
 
 ## 5. PER as Economic Indicator
-#
-
-## 5.1 Attribution as Economic Value
+### 5.1 Attribution as Economic Value
 
 
 Existing AI-economics research addresses three channels: labor displacement, capability projection, and welfare estimation. PER addresses a fourth: **compositional authority transfer** — the rate at which AI synthesis captures value from human authors by stripping the attribution that would otherwise carry economic weight.
 
 
 Attribution carries economic value through four mechanisms: citation (academic credit, h-index, grant eligibility), traffic (click-through revenue, subscription conversion), reputation (brand authority, expertise recognition), and contractual rights (licensing terms, royalty triggers). When an AI system composes an answer from an author's work without attribution, all four channels are severed. The author's work is consumed; the economic return flows to the system operator.
-#
-
-## 5.2 Cross-System Comparability
+### 5.2 Cross-System Comparability
 
 
 PER aspires to serve a function analogous to the Gini coefficient: a single bounded metric enabling cross-system comparison and longitudinal tracking. Unlike the Gini coefficient, PER lacks axiomatic foundations derived from a century of economic theory; its value lies in operationalizing a previously unmeasured dimension of compositional behavior. Like the Gini coefficient, PER is bounded [0, 1], supports cross-system comparison (Claude vs. GPT vs. Gemini vs. AI Overview), supports longitudinal tracking (is PER increasing or decreasing over model versions?), and is interpretable by non-specialists (a PER of 0.85 means 85% of source-dependent claims lose attribution). Just as the Gini coefficient abstracts away the complexity of income distributions, PER abstracts away the granularity of claim-level attribution decisions.
-#
-
-## 5.3 Policy Implications
+### 5.3 Policy Implications
 
 
 If validated as a reliable, reproducible metric, PER becomes a candidate input for governance frameworks. Concretely: the EU AI Act's transparency requirements for general-purpose AI systems could include PER disclosure for retrieval-augmented outputs. FTC guidelines on AI-generated content could reference PER thresholds for deceptive attribution practices. OECD AI Principles on accountability could adopt PER as a measurable transparency indicator.

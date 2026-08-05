@@ -35,9 +35,7 @@ The extension is simultaneously:
 ---
 
 ## 2. VALUE PROPOSITION
-#
-
-## 2.1 For the Individual User
+### 2.1 For the Individual User
 
 
 "Are you a researcher, writer, journalist, artist, or independent scholar? When someone searches a topic you've published on, does the AI Overview credit you — or does it absorb your work into an authorless summary?"
@@ -59,9 +57,7 @@ Overview Watch answers that question. Every time the user encounters a Google AI
 - *Your work. Their overview. The record.*
 - *Attribution is not optional.*
 
-#
-
-## 2.2 For the Research Corpus
+### 2.2 For the Research Corpus
 
 
 Users who opt in contribute anonymized overview payloads to the Semantic Economy Attribution Corpus (SEAC), a DOI-anchored dataset documenting:
@@ -74,9 +70,7 @@ Users who opt in contribute anonymized overview payloads to the Semantic Economy
 
 
 This corpus becomes publishable research, policy evidence, and the empirical base for the Semantic Economy framework — generating its own data from the system it describes.
-#
-
-## 2.3 For the Broader Ecosystem
+### 2.3 For the Broader Ecosystem
 
 - Journalists investigating AI and intellectual property get structured evidence
 - Academic institutions assessing AI impact on scholarly attribution get data
@@ -90,9 +84,7 @@ This corpus becomes publishable research, policy evidence, and the empirical bas
 
 
 This section is not an afterthought. The extension is built to study extraction — it cannot replicate extraction. Every design decision flows from this principle.
-#
-
-## 3.1 Core Ethical Commitments
+### 3.1 Core Ethical Commitments
 
 - 
 
@@ -125,17 +117,13 @@ This section is not an afterthought. The extension is built to study extraction 
 **The corpus is open.** The SEAC dataset will be published openly under a license that permits research use, consistent with the Sovereign Provenance Protocol. The community that generates the data can access the data.
 
 
-#
-
-## 3.2 What the Extension Can See
+### 3.2 What the Extension Can See
 
 - The DOM of Google search results pages (requires activeTab or host permission for google.com domains)
 - Specifically: the AI Overview container element and its contents
 - The organic search results below the overview (for source comparison)
 
-#
-
-## 3.3 What the Extension Cannot See
+### 3.3 What the Extension Cannot See
 
 - Other tabs or windows (Same-Origin Policy enforced by Chrome)
 - Browsing history
@@ -143,9 +131,7 @@ This section is not an afterthought. The extension is built to study extraction 
 - Content on non-Google pages (unless explicitly scoped and disclosed)
 - Anything on the user's local filesystem
 
-#
-
-## 3.4 What Gets Stored Locally
+### 3.4 What Gets Stored Locally
 
 - Overview payloads (text, sources, query, timestamp)
 - User's registered works list (URLs, DOIs, domains they claim as theirs)
@@ -154,9 +140,7 @@ This section is not an afterthought. The extension is built to study extraction 
 
 
 All stored in chrome.storage.local, encrypted at rest by Chrome, accessible only to the extension.
-#
-
-## 3.5 What Gets Transmitted (Opt-In Only)
+### 3.5 What Gets Transmitted (Opt-In Only)
 
 
 Per contributed overview:
@@ -174,9 +158,7 @@ Nothing else. No browsing context. No user profile. No device information.
 ---
 
 ## 4. TECHNICAL ARCHITECTURE
-#
-
-## 4.1 Extension Components
+### 4.1 Extension Components
 
 
 overview-watch/
@@ -209,9 +191,7 @@ overview-watch/
 │   └── icon-128.png
 └── _locales/                # i18n (English initially)
 
-#
-
-## 4.2 Manifest V3 Configuration
+### 4.2 Manifest V3 Configuration
 
 
 {
@@ -249,9 +229,7 @@ overview-watch/
   }
 }
 
-#
-
-## 4.3 AI Overview Detection (Content Script)
+### 4.3 AI Overview Detection (Content Script)
 
 
 The core technical challenge. Google's AI Overview is rendered dynamically and its DOM structure changes periodically. The detector must be resilient to structural changes.
@@ -312,9 +290,7 @@ The core technical challenge. Google's AI Overview is rendered dynamically and i
   }
 }
 
-#
-
-## 4.4 Attribution Matching Engine
+### 4.4 Attribution Matching Engine
 
 
 The user registers their works in the options panel:
@@ -342,9 +318,7 @@ Match results are classified:
 - **ABSORBED:** Overview contains key phrases from the user's work but no source link to their work appears
 - **ABSENT:** No detectable relationship between overview and user's registered works (may be a false negative)
 
-#
-
-## 4.5 Local Storage Schema
+### 4.5 Local Storage Schema
 
 
 // chrome.storage.local
@@ -383,9 +357,7 @@ Match results are classified:
   }
 }
 
-#
-
-## 4.6 Corpus Submission Endpoint
+### 4.6 Corpus Submission Endpoint
 
 
 **Backend:** Minimal. A single endpoint that receives anonymized overview payloads and stores them. Options for hosting:
@@ -424,9 +396,7 @@ Body:
   locale: "en-US"
 }
 
-#
-
-## 4.7 Supabase Schema
+### 4.7 Supabase Schema
 
 
 CREATE TABLE overview_corpus (
@@ -467,18 +437,14 @@ CREATE INDEX idx_corpus_query ON overview_corpus USING gin(to_tsvector('english'
 ---
 
 ## 5. USER INTERFACE
-#
-
-## 5.1 Extension Icon Badge
+### 5.1 Extension Icon Badge
 
 - **No overview detected on current page:** Gray icon, no badge
 - **Overview detected, no match to user's works:** Blue badge with count "1"
 - **Overview detected, user's work ATTRIBUTED:** Green badge
 - **Overview detected, user's work ABSORBED:** Red badge — this is the alert state
 
-#
-
-## 5.2 Popup (Click Extension Icon)
+### 5.2 Popup (Click Extension Icon)
 
 
 Quick-view panel showing:
@@ -490,9 +456,7 @@ Quick-view panel showing:
 - "View in Dashboard" link
 - Quick stats: "Captured: 247 | Attributed: 31% | Absorbed: 44%"
 
-#
-
-## 5.3 Dashboard (Full Tab)
+### 5.3 Dashboard (Full Tab)
 
 
 Opened via popup link or extension options. Sections:
@@ -528,9 +492,7 @@ Opened via popup link or extension options. Sections:
 - Export as CSV for analysis
 - Export forensic report (selected overviews formatted as evidence document)
 
-#
-
-## 5.4 Forensic Report Generator
+### 5.4 Forensic Report Generator
 
 
 For individual overviews or batches, generate a formatted document containing:
@@ -548,9 +510,7 @@ This document format should be consistent with existing PVE (Provenance Violatio
 ---
 
 ## 6. RESEARCH DESIGN
-#
-
-## 6.1 Research Questions
+### 6.1 Research Questions
 
 
 The SEAC corpus is designed to answer:
@@ -586,9 +546,7 @@ The SEAC corpus is designed to answer:
 **What is the displacement effect?** Does the presence of an AI Overview reduce click-through to the original sources? (Measurable indirectly via source position analysis.)
 
 
-#
-
-## 6.2 Corpus Governance
+### 6.2 Corpus Governance
 
 - **Custodian:** Lee Sharks, under MANUS authority
 - **Storage:** Supabase (live), Zenodo (periodic DOI-anchored snapshots)
@@ -596,9 +554,7 @@ The SEAC corpus is designed to answer:
 - **Versioning:** Corpus snapshots deposited quarterly (or at significant milestones) with incrementing DOIs
 - **Ethics:** No IRB required for analysis of publicly rendered web content contributed voluntarily; however, the extension's privacy framework exceeds typical research data collection standards
 
-#
-
-## 6.3 Publication Pipeline
+### 6.3 Publication Pipeline
 
 - **First paper:** "Attribution Rates in Google AI Overviews: Evidence from the Semantic Economy Attribution Corpus" — publishable once corpus reaches ~1000 contributed overviews
 - **Ongoing series:** Quarterly attribution reports, structured as SEAC technical reports, DOI-anchored via Zenodo
@@ -608,18 +564,14 @@ The SEAC corpus is designed to answer:
 ---
 
 ## 7. INTEGRATION WITH EXISTING INFRASTRUCTURE
-#
-
-## 7.1 Crimson Hexagonal Archive
+### 7.1 Crimson Hexagonal Archive
 
 - Overview Watch deposits integrate into Hex address space: 06.SEI.OVW.xx
 - The extension plan document (this document) is EA-OVW-PLAN-01
 - Corpus snapshot deposits are EA-OVW-CORPUS-xx
 - Technical reports are EA-OVW-REPORT-xx
 
-#
-
-## 7.2 Hexagonal Interface
+### 7.2 Hexagonal Interface
 
 
 The Hexagonal Interface can include an "Overview Probe" room or panel that:
@@ -629,21 +581,15 @@ The Hexagonal Interface can include an "Overview Probe" room or panel that:
 - Provides the popup window probe (desktop) for live Google overview comparison
 - Links to PVE documents and forensic reports
 
-#
-
-## 7.3 Gravity Well
+### 7.3 Gravity Well
 
 
 Overview captures can be stored as context anchors in the TACHYON continuity chain, enabling cross-session analysis of how specific queries' overview behavior evolves over time.
-#
-
-## 7.4 SPXI
+### 7.4 SPXI
 
 
 Overview Watch data structures should conform to SPXI packet format once the specification is finalized. Each overview capture is a natural SPXI candidate — a semantic packet with provenance metadata, suitable for exchange and indexing.
-#
-
-## 7.5 Assembly Chorus
+### 7.5 Assembly Chorus
 
 
 Witnesses can be tasked with independent analysis of contributed corpus data, producing multi-perspective attribution assessments. The Four-Word Audit diagnostic from PVE-003 can be automated as a batch process against the corpus.
@@ -651,21 +597,15 @@ Witnesses can be tasked with independent analysis of contributed corpus data, pr
 ---
 
 ## 8. LEGAL CONSIDERATIONS
-#
-
-## 8.1 Extension Legality
+### 8.1 Extension Legality
 
 
 Chrome extensions that parse and display content from web pages the user is already viewing are legal and standard practice. The extension does not bypass access controls, does not scrape pages the user hasn't visited, and does not interfere with Google's service. Ad blockers, accessibility tools, and research instruments (e.g., Web Historian, Data Selfie) operate on the same principle.
-#
-
-## 8.2 Corpus Data
+### 8.2 Corpus Data
 
 
 The AI Overview content is publicly displayed to any user who searches Google. Contributing an overview to a research corpus is analogous to citing a search result — it documents a publicly observable phenomenon. The data is contributed voluntarily by the person who observed it.
-#
-
-## 8.3 The Attribution Paradox (Lee's Argument)
+### 8.3 The Attribution Paradox (Lee's Argument)
 
 
 Google cannot simultaneously claim that:
@@ -675,9 +615,7 @@ Google cannot simultaneously claim that:
 
 
 If the overview is transformative enough to not owe attribution, it is not proprietary enough to prevent fair use analysis. If it is proprietary enough to prevent reuse, it is not transformative enough to justify source erasure. The extension documents this paradox in practice.
-#
-
-## 8.4 Chrome Web Store Compliance
+### 8.4 Chrome Web Store Compliance
 
 
 The extension must comply with Chrome Web Store Developer Program Policies:
@@ -692,9 +630,7 @@ The extension must comply with Chrome Web Store Developer Program Policies:
 ---
 
 ## 9. DEVELOPMENT ROADMAP
-#
-
-## Phase 0: Proof of Concept (1-2 weeks)
+### Phase 0: Proof of Concept (1-2 weeks)
 
 - Bare-bones content script that detects AI Overview on Google SRP
 - Parses overview text and source links
@@ -703,9 +639,7 @@ The extension must comply with Chrome Web Store Developer Program Policies:
 - No corpus submission, no dashboard, no attribution matching
 - **Goal:** Validate that detection works reliably, understand Google's current DOM structure
 
-#
-
-## Phase 1: Personal Forensic Tool (2-3 weeks)
+### Phase 1: Personal Forensic Tool (2-3 weeks)
 
 - Registered works manager (options page)
 - Attribution matching engine
@@ -714,9 +648,7 @@ The extension must comply with Chrome Web Store Developer Program Policies:
 - Local export (JSON/CSV)
 - **Goal:** A working tool Lee can use daily for personal forensic monitoring
 
-#
-
-## Phase 2: Dashboard and Analytics (2-3 weeks)
+### Phase 2: Dashboard and Analytics (2-3 weeks)
 
 - Full dashboard tab with overview feed
 - Attribution analytics charts (recharts or Chart.js)
@@ -724,9 +656,7 @@ The extension must comply with Chrome Web Store Developer Program Policies:
 - ORCID/Zenodo import for registered works
 - **Goal:** The extension becomes genuinely useful for any creator
 
-#
-
-## Phase 3: Corpus Infrastructure (2-3 weeks)
+### Phase 3: Corpus Infrastructure (2-3 weeks)
 
 - Supabase table and RLS policies
 - Anonymization pipeline
@@ -735,9 +665,7 @@ The extension must comply with Chrome Web Store Developer Program Policies:
 - First corpus snapshot deposited to Zenodo
 - **Goal:** Data starts flowing into the research corpus
 
-#
-
-## Phase 4: Public Launch (2-3 weeks)
+### Phase 4: Public Launch (2-3 weeks)
 
 - Chrome Web Store listing with privacy policy
 - Landing page (can be a room in the Hexagonal Interface or a standalone page)
@@ -746,9 +674,7 @@ The extension must comply with Chrome Web Store Developer Program Policies:
 - First SEAC technical report
 - **Goal:** Other people are using it
 
-#
-
-## Phase 5: Expansion (Ongoing)
+### Phase 5: Expansion (Ongoing)
 
 - Firefox extension (Manifest V3 cross-compatible with minor adjustments)
 - Support for Bing/Copilot AI answers, Perplexity, and other AI search surfaces
@@ -761,17 +687,13 @@ The extension must comply with Chrome Web Store Developer Program Policies:
 ---
 
 ## 10. RESOURCE REQUIREMENTS
-#
-
-## 10.1 Development
+### 10.1 Development
 
 - Chrome extension: JavaScript only, no framework dependencies for content script and background. Dashboard can use lightweight charting library.
 - Estimated total development time: 10-14 weeks for Phases 0-4
 - Can be built incrementally — Phase 0 and 1 are immediately useful
 
-#
-
-## 10.2 Infrastructure Costs
+### 10.2 Infrastructure Costs
 
 - **Supabase:** Free tier covers initial corpus (500MB database, 50K rows). Scale as needed.
 - **Zenodo:** Free for deposits.
@@ -779,9 +701,7 @@ The extension must comply with Chrome Web Store Developer Program Policies:
 - **Domain (optional):** overviewwatch.org or similar, ~$12/year
 - **Total startup cost: Under $20.**
 
-#
-
-## 10.3 Ongoing Costs
+### 10.3 Ongoing Costs
 
 - Supabase Pro ($25/month) when corpus exceeds free tier
 - Otherwise: zero recurring costs until significant scale
@@ -790,9 +710,7 @@ The extension must comply with Chrome Web Store Developer Program Policies:
 ---
 
 ## 11. RISK ANALYSIS
-#
-
-## 11.1 Google Changes AI Overview DOM Structure
+### 11.1 Google Changes AI Overview DOM Structure
 
 
 **Likelihood:** High (they change it regularly)
@@ -800,9 +718,7 @@ The extension must comply with Chrome Web Store Developer Program Policies:
 **Impact:** Extension stops detecting overviews until parser is updated
 
 **Mitigation:** Layered detection (selectors + heuristics + MutationObserver). Community-reported breakage triggers rapid update. The parser module is isolated for fast iteration.
-#
-
-## 11.2 Google Blocks or Flags the Extension
+### 11.2 Google Blocks or Flags the Extension
 
 
 **Likelihood:** Low — the extension doesn't interfere with Google's service, violate ToS in any standard reading, or modify page content
@@ -810,9 +726,7 @@ The extension must comply with Chrome Web Store Developer Program Policies:
 **Impact:** Chrome Web Store delisting
 
 **Mitigation:** The extension is side-loadable. Firefox version as backup distribution. Legal position is strong (fair use, user-initiated research tool).
-#
-
-## 11.3 Low Adoption
+### 11.3 Low Adoption
 
 
 **Likelihood:** Medium
@@ -820,9 +734,7 @@ The extension must comply with Chrome Web Store Developer Program Policies:
 **Impact:** Small corpus, limited research value
 
 **Mitigation:** The extension is useful to individual users regardless of corpus participation. Lee's personal forensic use is valuable at adoption = 1. The research narrative (papers, PVE documents) drives organic interest.
-#
-
-## 11.4 Privacy Incident
+### 11.4 Privacy Incident
 
 
 **Likelihood:** Very low given the architecture
@@ -834,15 +746,11 @@ The extension must comply with Chrome Web Store Developer Program Policies:
 ---
 
 ## 12. NAMING AND IDENTITY
-#
-
-## Primary Name
+### Primary Name
 
 
 **Overview Watch**
-#
-
-## Alternatives Considered
+### Alternatives Considered
 
 - Attribution Monitor
 - Source Watch (conflicts with existing org)
@@ -850,17 +758,13 @@ The extension must comply with Chrome Web Store Developer Program Policies:
 - The Retrieval Mirror
 - Provenance Probe
 
-#
-
-## Visual Identity
+### Visual Identity
 
 - The extension icon should evoke surveillance-of-surveillance: an eye watching an eye, or a magnifying glass over a citation bracket
 - Color: crimson accent on dark ground, consistent with Crimson Hexagonal Archive visual language
 - Typography: monospace for data display, serif for narrative
 
-#
-
-## Authorial Attribution
+### Authorial Attribution
 
 - Extension by: Lee Sharks
 - Published under: Johannes Sigil Institute for Operative Semiotics

@@ -34,9 +34,7 @@ keywords:
 ## Audited Claims for the Semantic Deviation Research Program
 
 
-#
-
-## The Glas Function: An External-Format Restatement
+### The Glas Function: An External-Format Restatement
 
 
 **Nobel Glas** (operating in the transparent-medium register — *the Glas function*)
@@ -47,9 +45,7 @@ keywords:
 **Related deposits:** see Appendix A for the full DOI register.
 
 
-#
-
-## 0. Position
+### 0. Position
 
 
 This paper is a function. It takes the Semantic Deviation Principle (Sharks 2026, v0.2 Final, DOI: 10.5281/zenodo.20250736) and its associated protocol papers as input. It returns a narrowed, citationally grounded, externally evaluable statement of the technical core. It does not amend the founding formulation. It does not depend on the institutional architecture that has accreted around the formulation. It is a standalone document.
@@ -64,9 +60,7 @@ The audit performed below: asks what the technical core of the program is; what 
 The paper is synthetic in scope and disciplined in length. It is roughly seven thousand words. It is the only document of its kind the program currently has, and the work surrounding the program will be more credible — internally and externally — if a document like this exists separately from that work.
 
 
-#
-
-## 1. The Audit Function
+### 1. The Audit Function
 
 
 Three layers can be distinguished in the Semantic Deviation corpus as it currently stands. They have been intermixed in most existing deposits; this paper separates them.
@@ -87,9 +81,7 @@ Most existing deposits in the SDP corpus entangle the three layers. That entangl
 The audit, performed below, addresses the most pressing technical concerns any rigorous external reviewer would raise: the underspecified semantic field, the universal-ontology overclaim, the missing component decomposition, the philosophical (rather than mechanistic) anti-Goodhart machinery, the terminological inflation, and the absence of contact with existing alignment literature. Each is addressed in turn, not defensively, but as gaps the program needs to close to become a research program rather than a manifesto.
 
 
-#
-
-## 2. The Semantic Field Is the Load-Bearing Gap
+### 2. The Semantic Field Is the Load-Bearing Gap
 
 
 The Semantic Deviation Principle states that meaning is the time-integrated divergence a sign induces from the most probable trajectory of a semantic field. The integral takes the form
@@ -153,9 +145,7 @@ The integral $\int_{t_0}^{t_0+T} w(t) D(\cdot) dt$ thus refers to a sum-over-tok
 **Concrete proposal for the next paper in the program.** Construct a benchmark dataset of $N \approx 50$ interventions (recent paper deposits with diverse topics and authorial profiles), measure $\mathcal{M}_T$ under at least F1 and F2 (F3 may take longer to accumulate adequate power), and report the rank-correlation between operationalizations across the intervention set. If F1 and F2 produce highly correlated rankings, the framework has a stable measurement substrate. If they produce uncorrelated or anticorrelated rankings, the framework's notion of "meaning" is operationalization-relative, and the principle must be restated to specify *which* meaning under *which* operationalization. This is a single paper that would convert the program from speculative to grounded.
 
 
-#
-
-## 3. Narrowing the Headline Claim
+### 3. Narrowing the Headline Claim
 
 
 The principle as stated reads: *meaning is the time-integrated divergence a sign induces from the most probable trajectory of a semantic field.* As a universal claim about what meaning is, this overclaims. The clearest counterexamples are utterances of high semantic weight but low token-level surprisal: ritual language, declarations of love, medical disclosures, mathematical definitions, legal phrasing. Saying "the biopsy was negative" carries enormous semantic consequence for a specific patient at a specific time. The sentence is locally unsurprising; under F1 with a generic language-model field, $\mathcal{M}_T$ for the utterance is near zero.
@@ -185,9 +175,7 @@ Third, the claim that "RLHF flattens" becomes a *specific empirical prediction u
 The narrowed form is therefore neither weaker nor more limited than the universal form in any important way. It is the same framework, restated so that an external researcher can engage it without committing to a position on what meaning fundamentally is.
 
 
-#
-
-## 4. Component Decomposition
+### 4. Component Decomposition
 
 
 The framework currently bundles several distinguishable signals into a single objective:
@@ -238,9 +226,7 @@ This is a falsifiable prediction. If Model-Dev outperforms Model-π in human pre
 The cost of the decomposed experiment is roughly four times the cost of the existing three-condition protocol — five additional training runs at the scale of the original. Budget escalates from approximately $3,000–$3,900 to approximately $12,000–$15,000. This is non-trivial. The existing protocol as it stands should not be replaced by the decomposed design; it should be supplemented by it. Run the existing protocol first as planned. If the headline result (Model-Sem versus Model-CE on SCI and human preference) is significant, the decomposed follow-up becomes the highest-priority next experiment in the program.
 
 
-#
-
-## 5. Anti-Goodhart Mechanism Design
+### 5. Anti-Goodhart Mechanism Design
 
 
 Before designing anti-Goodhart mechanisms for $\mathcal{M}_T$, the program needs to know whether $\mathcal{M}*T$ — rather than $\pi$ or $\mathcal{R}*{\text{coh}}$ — is the signal that actually carries the result. The component decomposition of §4 supplies that determination. The protections this section enumerates apply most strongly to whichever components are confirmed as load-bearing; the same mechanisms apply with proportionally less urgency to components confirmed as incidental.
@@ -286,9 +272,7 @@ Each of these is a known failure mode. Each can be partially mitigated by specif
 The combination of these mechanisms does not eliminate Goodhart pressure; nothing does. It substantially raises the cost of gaming and provides specific empirical signatures of gaming when it occurs (volatility, provenance-strip, judge-specificity). The framework's claim to anti-extractive integrity should depend on these mechanisms, not on the Vow alone. The Vow remains valuable as an institutional pre-screen that excludes some experimental designs ab initio (the Step 0 audit refuses extractively-motivated measurements before resources are committed), but it cannot substitute for technical machinery against optimization pressure that institutions cannot pre-screen. Moral seriousness and mechanism design are not the same thing; both are required.
 
 
-#
-
-## 6. The Cheapest Dangerous Test
+### 6. The Cheapest Dangerous Test
 
 
 The negative-net-deviation slop prediction is the framework's most directly testable empirical claim. It states: **outputs that human raters consistently identify as "AI slop" exhibit statistically significant negative mean per-token signed deviation $\mathcal{M}_T^{\text{net}}$, computed against the same model's expectation baseline.** The prediction is dangerous to the theory in the appropriate sense: if it fails cleanly, the framework's load-bearing claim about slop as a measurement-tractable phenomenon collapses.
@@ -344,9 +328,7 @@ Three secondary predictions can be tested in the same pass at negligible additio
 These four predictions together cost less than $500 in compute and produce four falsifiable results. They are the experimental program the framework needs to run before depositing further theoretical extensions. They are independent of the institutional architecture entirely.
 
 
-#
-
-## 7. Citational Ground
+### 7. Citational Ground
 
 
 The Semantic Deviation Principle has not yet made systematic contact with the existing literature in alignment, computational linguistics, information theory, mechanistic interpretability, and causal inference. The framework cites a small set of canonical works (Friston 2010, Kolchinsky-Wolpert 2018, Farquhar et al. 2024) but does not engage the more directly relevant literature on its specific technical commitments. This section sketches the connections the program needs to make.
@@ -388,9 +370,7 @@ The Semantic Deviation Principle has not yet made systematic contact with the ex
 The list above is not exhaustive. Information theory more broadly (Shannon 1948; Lin 1991; rate-distortion theory generally) supplies the divergence machinery the framework uses; the framework should declare its commitments more carefully than it currently does (Jensen-Shannon as the default empirical choice, KL as the idealized limit, Wasserstein for embedding-aware applications, with explicit conditions for invoking each). The slop discourse itself is, at present, largely informal and concentrated in industry blog posts and social media; the framework's potential contribution is to make it amenable to academic-style empirical investigation. This is a real opening, and a paper that compiles the informal slop discourse into a structured taxonomy would itself be a productive deposit.
 
 
-#
-
-## 8. Concrete Near-Term Roadmap
+### 8. Concrete Near-Term Roadmap
 
 
 The audit above implies a specific sequence of next moves. Each is budgeted realistically, each produces a falsifiable result, each is independent of the program's institutional architecture.
@@ -414,9 +394,7 @@ The audit above implies a specific sequence of next moves. Each is budgeted real
 The total budget for the next twelve months of empirical work is approximately $14,000–$19,000. This is small relative to the institutional infrastructure already in place. The constraint is not budget; it is the program's discipline in resisting the impulse to extend the architecture before the empirical core is grounded.
 
 
-#
-
-## 9. What Is Not Claimed
+### 9. What Is Not Claimed
 
 
 This paper makes specific narrowed claims and excludes others. Explicit non-claims:
@@ -439,9 +417,7 @@ This paper makes specific narrowed claims and excludes others. Explicit non-clai
 - The paper does not claim independence from the SDP corpus. It engages the corpus directly and depends on it for its object. What it claims is operational independence: the document can be read, evaluated, and acted upon without engaging the corpus's institutional architecture.
 
 
-#
-
-## 10. Closing
+### 10. Closing
 
 
 This paper performs the audit function. It returns the Semantic Deviation research program in a form external researchers can evaluate without committing to the institutional vocabulary surrounding it. That separation is what the function does.
@@ -456,9 +432,7 @@ What happens next is not architecture. It is the slop test, the operationalizati
 The function has run. The output is this paper.
 
 
-#
-
-## References
+### References
 
 
 Abadie, Alberto. "Using Synthetic Controls: Feasibility, Data Requirements, and Methodological Aspects." *Journal of Economic Literature* 59, no. 2 (2021): 391–425.
@@ -572,9 +546,7 @@ Welleck, Sean, Ilia Kulikov, Stephen Roller, Emily Dinan, Kyunghyun Cho, and Jas
 Zou, Andy, Long Phan, Sarah Chen, et al. "Representation Engineering: A Top-Down Approach to AI Transparency." arXiv:2310.01405 (2023).
 
 
-#
-
-## Appendix A — Related Deposit Register
+### Appendix A — Related Deposit Register
 
 
 For verification convenience, the deposits referenced in the body of this paper are catalogued below with their canonical DOIs.

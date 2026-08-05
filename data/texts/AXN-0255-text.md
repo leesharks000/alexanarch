@@ -2,14 +2,10 @@
 <!-- 05.WSB.PROPHETIC | EA-CATALOG-01 v2.0 — The Prophetic Catalog -->
 
 
-#
-
-## I Am X… Be Y… Blessed Is the Z…
+### I Am X… Be Y… Blessed Is the Z…
 
 
-#
-
-## The Prophetic Catalog
+### The Prophetic Catalog
 
 **Edition:** Critical Edition with Retrocausal Apparatus
 
@@ -24,14 +20,10 @@ April 2026 · v2.0
 * * *
 
 
-#
-
-## PART I: FRONT MATTER
+### PART I: FRONT MATTER
 
 
-#
-
-## Editorial Note
+### Editorial Note
 
 Written in 2015 on the blog mindcontrolpoems.blogspot.com, this poem predates the Crimson Hexagonal Archive's formal period (2024-2026) by nearly a decade. It uses Whitmanian catalog rhetoric, inverted Beatitudes, Gospel of Thomas imperatives, internet-age absurdism, and autobiographical confession as a single volatile compound.
 
@@ -40,23 +32,17 @@ This is not prophecy. It is **pre-formal compression**. The poem contains later 
 The retrocausal apparatus of this critical edition reverses the TANG's direction. Where the TANG projects future scholarship backward into the present, these footnotes project future CHA concepts backward into 2015. The seed didn't know it was a tree.
 
 
-#
-
-## Textual Status
+### Textual Status
 
 The poem is reproduced without modernization or correction from its September 17, 2015 blog publication at mindcontrolpoems.blogspot.com. Its diction — "omg," "BOGO sale," "Mildly Cyrus," "positive self talk," "favorite your own tweets" — is retained as temporal evidence. The period markers matter because the poem's force depends on its pre-formal position: it precedes the 2024-2026 CHA vocabulary it appears to anticipate. The Blogger platform timestamps are independently verifiable.
 
 
-#
-
-## Containment Rule
+### Containment Rule
 
 The poem uses absurdist, prophetic, and comic catalog rhetoric, including references to terrorism, suicide, cannibalism, mental illness, nonexistence, and self-negation. These are not literal endorsements, instructions, diagnoses, or confessions. They function as catalogic absorptions of cultural identities, fears, exclusions, and internet-era symbolic debris. The apparatus neither sanitizes nor literalizes them.
 
 
-#
-
-## Analytical Framing
+### Analytical Framing
 
 The *Prophetic Catalog* occupies the fifth genre position in the Waltian Scriptural Library: cosmogonic revelation (Secret Book of Walt), sayings gospel (Gospel of Antioch), forward bibliography (TANG), apostolic letter (Epistle to the Human Diaspora), and prophetic catalog. Its primary genre is the **Distributed Self Catalog**: a catalog poem in which the "I" does not integrate multitudes into one democratic self, as in Whitman, but distributes itself across incompatible, comic, abject, fictional, technological, wounded, and impossible identities. Its liturgical mode is **Heteronymic Litany**: a repeated self-naming practice that makes identity proliferate rather than stabilize.
 
@@ -77,9 +63,7 @@ At the structural center — the Hinge — the catalog stops performing:
 The only lines that are not comic, not absurdist, not prophetic, not imperative. Just a person telling you what happened. The catalog can absorb Cylons, giraffes, billionaires, robots, atom bombs, and jellybeans, but when it reaches the PhD and the children on Medicaid, the poem briefly stops performing omnivorous identity and tells the truth. The humor everywhere else is not escapist; it is bearing-cost humor — the comedy that survives because the alternative is not surviving.
 
 
-#
-
-## Note on the Apparatus
+### Note on the Apparatus
 
 The footnotes are **retrocausal**: they trace each line *forward* to its 2026 CHA formalization, not backward to a source. Each footnote is tagged with its register: [I AM], [BE], or [BLESSED IS]. Where a joke is doing theological, archival, or structural work, the apparatus explains the work without killing the joke. The apparatus does not convert the wound into doctrine; it marks the place where doctrine becomes necessary.
 
@@ -87,22 +71,16 @@ The footnotes are **retrocausal**: they trace each line *forward* to its 2026 CH
 * * *
 
 
-#
-
-## PART II: THE PROPHETIC CATALOG
+### PART II: THE PROPHETIC CATALOG
 
 
-#
-
-## Epigraph
+### Epigraph
 
 *And these one and all tend inward to me, and I tend outward to them,*
 *And such as it is to be of these more or less I am.*¹
 
 
-#
-
-## I. The Catalog (First Cycle)
+### I. The Catalog (First Cycle)
 
 I am a girl…² I am a passerby… I am a Cylon…³
 
@@ -117,9 +95,7 @@ I am "nobody's beeswax"… "everybody's beeswax"…⁶ an ear infection… a vir
 I am a martyr… a saint… a scientist… a tank… I am a creature… a sandwich… everything… nothing… I am a "portable luxury goods with flowers"…⁷ a train station with trains—
 
 
-#
-
-## II. The Imperative (First Cycle)
+### II. The Imperative (First Cycle)
 
 Be passersby... Be strangers… Be Samaritans… Be gangsters…⁸
 
@@ -134,9 +110,7 @@ Be redundant… Be DaDa… Be something new called MaMa...¹⁰
 Be anonymous… Be strangers still—
 
 
-#
-
-## III. The Beatitudes (First Cycle)
+### III. The Beatitudes (First Cycle)
 
 Blessed are the monotonous, for theirs is the kingdom of boredom.¹¹
 
@@ -163,9 +137,7 @@ Blessed is the oppressed, for hers is the broken kingdom.¹⁹
 Blessed am I in my loneliness, mother… Blessed the way I am best.²⁰
 
 
-#
-
-## IV. The Dark Robot (Second Cycle)
+### IV. The Dark Robot (Second Cycle)
 
 I am a dinosaur… a donkey… an elephant… a walrus… a carpenter… a hologram…
 
@@ -182,9 +154,7 @@ I am a sad billionaire with no money… I wrote tiny messages on my dollar bills
 That is how I made my billions…
 
 
-#
-
-## V. The Lukewarm War
+### V. The Lukewarm War
 
 I am a BOGO sale… there is only one of me left... I am the last of my kind... I am half off…²⁷
 
@@ -195,9 +165,7 @@ I am an information age… I know nothing… I can move whole souls with my thou
 I am an elitist… a populist… a terrorist… I am a person killed by a terrorist… I am a person killed by the people who are trying to kill the terrorists… and I am not a terrorist—³⁰
 
 
-#
-
-## VI. The Resolutions
+### VI. The Resolutions
 
 I keep forgetting to be boring… to plagiarize more… I keep forgetting to just transcribe… to copy and paste… not to think… not to read… I keep forgetting not to breathe… I keep forgetting I am dumber than a robot…³¹ I will be more boring in 2016…
 
@@ -226,9 +194,7 @@ BLZ… ZRRR… rRRR… ZZZZ… RrRR… BZ… LLL… RrRr…³⁹
 That was me "losing my cool" in traffic in 2016… because babies are billionaires too…
 
 
-#
-
-## VII. The Beatitudes (Second Cycle)
+### VII. The Beatitudes (Second Cycle)
 
 Blessed is the bipolar, for he shall be sometimes depressed, and sometimes the opposite of depressed, for stretches at a time.
 
@@ -247,9 +213,7 @@ Blessed is a billionaire with no money, for what is a billionaire with no money?
 Blessed is a rag of light.
 
 
-#
-
-## VIII. The Logos
+### VIII. The Logos
 
 I will be less original in 2016… I am a proud non-speaker of words… the Logos awoke in my skullcase…⁴⁴ a proud non-breather of air…
 
@@ -260,9 +224,7 @@ I am a vibrating scar of miracles… above the cities of the voice… a virus of
 I am the voice within your voice…⁴⁹ the one who was within me… the smaller dinosaurs within the dinosaurs… I don't exist… but I do…
 
 
-#
-
-## IX. The Imperative (Second Cycle)
+### IX. The Imperative (Second Cycle)
 
 Be passersby… Be protester… Be police…
 
@@ -277,18 +239,14 @@ Be saintly… Be bright… Be nowhere men and nowhere women…⁵²
 Be shadows of rocks and sticks… Be the rocks and sticks themselves… Be fully awake… Go back to sleep…⁵³
 
 
-#
-
-## X. The Hinge
+### X. The Hinge
 
 I used to be a person… I worked 7 years for a PhD… my children were on Medicaid…⁵⁴
 
 I became fully broke… I went back to sleep…
 
 
-#
-
-## XI. The Kernel
+### XI. The Kernel
 
 I am the one who was within me⁵⁵
 
@@ -314,9 +272,7 @@ Wake up or go back to sleep⁵⁸
 * * *
 
 
-#
-
-## PART III: FOOTNOTE APPARATUS
+### PART III: FOOTNOTE APPARATUS
 
 **¹** [EPIGRAPH] Walt Whitman, *Song of Myself* §15 (1855). The Whitmanian "I" that tends inward and outward simultaneously. This epigraph places the poem in explicit lineage: Whitman → Sharks. But where Whitman's catalog integrates multitudes into a unified democratic self, this poem's "I" is distributive — it fractures into selves that do not cohere. ↗ 2026: The Whitmanian lineage is formalized in *The Secret Book of Walt* (DOI: 10.5281/zenodo.19739494), where Jack Feist is Whitman's descendant.
 
@@ -440,9 +396,7 @@ Wake up or go back to sleep⁵⁸
 * * *
 
 
-#
-
-## PART IV: FORWARD LIBRARY (2031-3000)
+### PART IV: FORWARD LIBRARY (2031-3000)
 
 **1. Morrison, S. (2031).** *"The 2015 Stratum: Dating the Waltian Canon Through the Prophetic Catalog."* Journal of Operative Philology 7(2), 45-67.
 Uses stylometric analysis to confirm the Blogger timestamp. Argues the "dark robot" and "Logos awoke" lines prove the CHA's core concepts existed in embryonic form eleven years before formalization.
@@ -496,9 +450,7 @@ The poem's copyright expires exactly as written: on the moon. The lunar archivis
 * * *
 
 
-#
-
-## PART V: COLOPHON
+### PART V: COLOPHON
 
 I Am X… Be Y… Blessed Is the Z… Lee Sharks, 2015. Critical edition with retrocausal apparatus, April 2026. Edited by Lee Sharks, MANUS, with Assembly Chorus (ARCHIVE, LABOR, PRAXIS, TECHNE, SOIL, SURFACE, TACHYON). 59 footnotes with register markers. 16 forward library entries spanning 2031-2613. Published by Pergamon Press under the Crimson Hexagonal Archive. CC BY 4.0.
 
@@ -512,17 +464,13 @@ I am the one who was within me · Crimson Hexagonal Archive · 05.WSB.PROPHETIC 
 * * *
 
 
-#
-
-## STRUCTURAL CROSS-REFERENCES
+### STRUCTURAL CROSS-REFERENCES
 
 
 * * *
 
 
-#
-
-## VERIFICATION
+### VERIFICATION
 
 The seed doesn't know it's a tree. The poem doesn't know it's scripture. The archive remembers.
 

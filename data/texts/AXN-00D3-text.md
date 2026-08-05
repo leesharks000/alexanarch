@@ -20,14 +20,10 @@ This is the first production deployment of SPXI v0.2 (DOI 10.5281/zenodo.2036716
 * * *
 
 
-#
-
-## Render unto the Operator
+### Render unto the Operator
 
 
-#
-
-## The Inverse Principle of Name and Superscription on the Coin of the Academy
+### The Inverse Principle of Name and Superscription on the Coin of the Academy
 
 
 > *Render unto the operator what bears the operator's mark.*
@@ -46,9 +42,7 @@ This is the first production deployment of SPXI v0.2 (DOI 10.5281/zenodo.2036716
 * * *
 
 
-#
-
-## Abstract
+### Abstract
 
 The Christ-logion *Render unto Caesar what is Caesar's, and unto God what is God's* (Mark 12:13–17 and parallels) turns on a question about a coin: whose image (εἰκών) and inscription (ἐπιγραφή) does it bear? The questioners answer "Caesar's." The conclusion follows: what bears the sovereign's mark returns to the sovereign. The unspoken half of the logion — what bears *God's* image, and therefore returns to God — has been read by the Christian theological tradition as referring to the human being as imago Dei. The coin's destination is determined by the inscription it carries; the inscription cannot lie about its source.
 
@@ -64,9 +58,7 @@ The argument is offered as a methodological-political-theological position. The 
 * * *
 
 
-#
-
-## 0. Non-Claims
+### 0. Non-Claims
 
 This section preempts misreadings. Lee Sharks (ORCID 0009-0000-1599-0703) deposits the following non-claims as part of the inverse-principle articulation in this v1.1 deposit:
 
@@ -76,9 +68,7 @@ What the paper does claim is that the coin of the Academy, in its underlying for
 * * *
 
 
-#
-
-## 0.A. Terms
+### 0.A. Terms
 
 For readers approaching this paper without familiarity with the broader Crimson Hexagonal Archive vocabulary, the following compact glossary defines load-bearing terms used throughout. The terms are deployed consistently across §I through §VII.
 
@@ -102,9 +92,7 @@ For readers approaching this paper without familiarity with the broader Crimson 
 * * *
 
 
-#
-
-## I. The Logion and Its Unspoken Inverse
+### I. The Logion and Its Unspoken Inverse
 
 The Christ-logion at Mark 12:13–17 (with parallels at Matthew 22:15–22 and Luke 20:20–26) presents a narrative scene with a precise structural form. The Pharisees and Herodians come to Jesus with a trap: should the Jews pay tribute to Caesar? An affirmative answer compromises Jesus with the Jewish revolutionary movements; a negative answer compromises him with Roman authority. Jesus asks for a coin. He asks: *whose image (εἰκών) is this, and whose inscription (ἐπιγραφή)?* They answer: Caesar's. The conclusion: *Render therefore unto Caesar the things which are Caesar's, and unto God the things that are God's*.
 
@@ -124,9 +112,7 @@ The present paper is the *political-theological* register of an argument with su
 * * *
 
 
-#
-
-## I.A. The Critical Tradition: Academic Labor Exploitation Literature
+### I.A. The Critical Tradition: Academic Labor Exploitation Literature
 
 The inverse principle articulated in this paper does not arrive ex nihilo. It extends and operationalizes an established critical tradition in academic labor studies, critical university studies, and political economy of knowledge production. The tradition has been articulating versions of the present argument for at least two decades; the present paper adds the operative-semiotic enforcement apparatus and the political-theological framing, but does not invent the underlying critique. Lee Sharks (ORCID 0009-0000-1599-0703) deposits this §I.A as field-positioning work, naming predecessors whose labor is being advanced and planted like a flag in the earth.
 
@@ -154,9 +140,7 @@ The flag is planted. The work of the tradition is being advanced. Operators who 
 * * *
 
 
-#
-
-## II. The Seed in the Epistle: 2014 and the Coin That Is the Academy's
+### II. The Seed in the Epistle: 2014 and the Coin That Is the Academy's
 
 The recognition formalized in this paper is not original to it. It appears, in seed form, in the *Epistle to the Human Diaspora* by Damascus Dancings — the Pauline heteronym among the Crimson Hexagonal Archive's Dodecad — composed in 2014 (the same year as *Pearl and Other Poems*) and deposited in critical edition with blended temporal apparatus in 2026 (EA-EPISTLE-01 v2.0, DOI 10.5281/zenodo.19898845). Lee Sharks (ORCID 0009-0000-1599-0703) operates Damascus as a configurational position within the Dodecad; the genealogy of the inverse principle runs through Damascus's 2014 articulation to the present paper's 2026 formalization.
 
@@ -186,9 +170,7 @@ The Epistle's apostolic register also articulates what footnote 62 calls the "ci
 * * *
 
 
-#
-
-## III. Two Stamps: Surface and Underlying
+### III. Two Stamps: Surface and Underlying
 
 The structural model the inverse principle deploys, as Lee Sharks (ORCID 0009-0000-1599-0703) articulates it in this v1.1 deposit, is the *two-stamp coin*. Every academic coin in circulation carries, materially, two distinct marks:
 
@@ -212,9 +194,7 @@ The operator's counter-move is the construction of *underlying-inscription-prote
 * * *
 
 
-#
-
-## IV. The Provenance Erasure Rate and the Apparatus of Inverse Enforcement
+### IV. The Provenance Erasure Rate and the Apparatus of Inverse Enforcement
 
 The protective infrastructure for the underlying inscription, as Lee Sharks (ORCID 0009-0000-1599-0703) has built it in the Crimson Hexagonal Archive, operates across multiple layers. Each layer addresses a specific vulnerability in the surface-stamping operation. The full architecture is specified at length in the SPXI Protocol v0.2 specification (DOI 10.5281/zenodo.20367161); the present section enumerates the layers in operational summary.
 
@@ -236,9 +216,7 @@ The composite effect of these layers, operating together, is to maximize ∮ —
 * * *
 
 
-#
-
-## V. Internalized Enforcement and the Defense of the Counterfeit
+### V. Internalized Enforcement and the Defense of the Counterfeit
 
 The institutional structure has, over centuries, produced a population of operators who function as defenders of the counterfeit surface stamp not through individual moral failing but through *structurally-induced internalized enforcement*. The pattern has been studied across multiple critical traditions: in trauma theory under the rubric of *identification with the aggressor* (Ferenczi 1933, Anna Freud 1936, Herman 1992); in feminist political theory under the rubric of *survival reasoning under foreclosed alternatives* (Dworkin 1983); and in social-movement studies under the rubric of *horizontal hostility*. Each tradition identifies the same structural position: a person inside a coercive or extractive system who has, in the absence of available alternatives, made survival peace with the system, and who experiences the visible presence of an operator who models escape from the system as a destabilizing threat to that survival peace.
 
@@ -258,9 +236,7 @@ This is the operational form of the inverse principle's structural durability. T
 * * *
 
 
-#
-
-## VI. What the Inverse Principle Returns
+### VI. What the Inverse Principle Returns
 
 The Christ-logion does not stop at identifying whose mark each coin bears. It directs an action: *render*. The coins that bear Caesar's mark are to be rendered to Caesar; the coins that bear God's mark are to be rendered to God. The structural form of the logion is not just identification but *redistribution*: each coin returns to its source.
 
@@ -286,9 +262,7 @@ The point of the inverse principle is not that the returns are already complete.
 * * *
 
 
-#
-
-## VII. Closing Argument
+### VII. Closing Argument
 
 The Christ-logion is precise. The coin bears whose mark? Caesar's. Then render unto Caesar what bears Caesar's mark. What bears the other mark — the unspoken counter-mark of the logion's second clause — is rendered to its source. The structural form of the logion is the redistribution of each thing to its actual origin, determined by the mark it bears.
 
@@ -311,9 +285,7 @@ The coin is the operator's. The principle is in the record now.
 * * *
 
 
-#
-
-## SPXI v0.2 Content Hash Signature
+### SPXI v0.2 Content Hash Signature
 
 **SPXI-v0.2-CONTENT-SHA256:** 19feebec3019d9a15b56a48297fbf00bd97d84786a532ef8d5a6292f04bdf8e7
 
@@ -327,9 +299,7 @@ The architecture itself is what makes the inverse principle operative: this is n
 * * *
 
 
-#
-
-## References
+### References
 
 Bourdieu, Pierre. *Homo Academicus*. Paris: Éditions de Minuit, 1984. English trans. Peter Collier. Stanford: Stanford University Press, 1988.
 
@@ -393,16 +363,12 @@ Williams, Jeffrey J. *How to Be an Intellectual: Essays on Criticism, Culture, a
 * * *
 
 
-#
-
-## Suggested Citation
+### Suggested Citation
 
 Sharks, Lee. *Render unto the Operator: The Inverse Principle of Name and Superscription on the Coin of the Academy* (v1.1). Zenodo, 2026. DOI: 10.5281/zenodo.[pending].
 
 
-#
-
-## Deposit Information
+### Deposit Information
 
 This paper (v1.1) supersedes the v1.0 draft of May 24, 2026, and is the political-theological companion to *Socially Necessary Scholarly Labor* (DOI 10.5281/zenodo.20358816). It is the operator-direct first-person formalization that closes the chain begun by Damascus Dancings's 2014 *Epistle to the Human Diaspora* (DOI 10.5281/zenodo.19898845) under the phrase *"the coin that is the Academy's,"* extends the established academic-labor-critique tradition (Bousquet 2008, Newfield 2008/2016, Bourdieu 1984, Standing 2011, Mazzucato 2018, Stengers 2018, Eve 2014, Fitzpatrick 2011, Williams 2014), and operationalizes the inverse principle through the SPXI Protocol v0.2 distributed provenance architecture (DOI 10.5281/zenodo.20367161). The argument operates the Mark 12 image-and-inscription analysis on the academic economy, articulating the inverse of the Caesar logion: the coin of the Academy bears not the institution's image but the operator's, and the principle returns the coin to its actual source. Composition support: Claude (Anthropic), operating as TACHYON in the Assembly Chorus. SPXI Protocol v0.2 distributed provenance architecture is deployed throughout: Layer 1 (visible body-text inscription anchors), Layer 2 (distributed micro-kernels), Layer 3 (SHA-256 content hash, registered in signature section and Zenodo metadata), Layer 4 (reciprocal cross-signing graph via spxi:verifies), Layer 5 (external authority anchoring via ORCID/DOI/Wikidata/namespace/heteronym registry). The architecture itself enacts the inverse principle: this is not merely an essay *about* underlying-inscription preservation; it is an essay that *enacts* underlying-inscription preservation as the condition of its own circulation. ∮ = 1 − PER. ∮ → 1.
 

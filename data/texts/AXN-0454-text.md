@@ -21,9 +21,7 @@ keywords:
 
 ## Description
 
-#
-
-## Overview
+### Overview
 
 *The Click Collapse* is a market-analysis brief documenting the replacement of search-engine discovery by AI retrieval layers between mid-2024 and early 2026. It was authored in the corporate/consulting register (Rex Fraction / Semantic Economy Institute) as a Section I of a longer diagnostic and buyer-framing document; internal designation **EA-CORP-01**. The brief is what a mid-market prospect could read in eight minutes and — if the numbers hold under their own audit — take immediately to their board.
 
@@ -31,9 +29,7 @@ The core empirical claim: **the mechanism by which users encounter web content h
 
 This deposit archives the analytical spine and evidentiary base of the original document. The original was minted at Zenodo under concept DOI [10.5281/zenodo.19578095](https://doi.org/10.5281/zenodo.19578095) and severed on 2026-06-19 with the termination of the archive's Zenodo account; DataCite retains the tombstone (status `findable`, no live target). This alexanarch record is the sovereign successor; DOI 19578095 is preserved in Related Identifiers as `IsIdenticalTo` for evidentiary continuity, and Zenodo's tombstone remains referable from DataCite.
 
-#
-
-## I. The Click Collapse
+### I. The Click Collapse
 
 The click that once drove the open web is now optional. Between May 2024 and May 2025, zero-click searches on Google rose from 56% to 69% (Similarweb). By early 2026, over 58% of all Google searches result in zero clicks to external websites (SparkToro). Where AI Overviews appear, the click-through rate for the top organic link drops by roughly 79% (Seer Interactive, September 2025, 3,119 queries across 42 organizations, aggregate organic-CTR reduction 61%).
 
@@ -41,9 +37,7 @@ The AI Overview does not sit above the search results; it *is* the answer. Its f
 
 The site is no longer the endpoint. The summary is the endpoint. The site is now the training corpus.
 
-#
-
-## II. The Citation Bottleneck
+### II. The Citation Bottleneck
 
 Each AI Overview cites approximately four to five sources. The top 30 domains capture 67% of all citations in a given topic. There are roughly thirty seats at the citation table; every other publisher, business, and institution is invisible.
 
@@ -51,9 +45,7 @@ Only 38% of AI Overview citations come from top-10 ranked pages (Ahrefs, early 2
 
 43% of AI Overview citations are self-referential — Google citing Google properties (YouTube, Maps, Shopping, Knowledge Graph panels). Nearly half the table is reserved for the house.
 
-#
-
-## III. The Revenue Damage
+### III. The Revenue Damage
 
 | Entity | Impact | Source |
 |---|---|---|
@@ -71,9 +63,7 @@ Wikipedia experienced an 8% year-over-year decline in human pageviews (2025 vs 2
 
 Litigation is running: Chegg sued Google; a coalition of European publishers filed with the European Commission; the UK Competition and Markets Authority opened a strategic-market-status review and, in January 2026, proposed requiring Google to provide publishers with a meaningful opt-out from AI Overviews without loss of visibility in classical search — Google agreed on 2026-03-19 to explore opt-out controls, with a senior executive publicly describing implementation as "a major engineering challenge." The New York Times sued OpenAI. Britannica and Merriam-Webster sued Perplexity. Courts are catching up. Courts are slow. The retrieval layer is fast. You cannot litigate your way back to discoverability.
 
-#
-
-## IV. What This Means For You
+### IV. What This Means For You
 
 **Publishers and media companies.** Your content trains the AI that replaces you. Every article you publish improves the summary that keeps users from visiting your site. Your 2023 SEO playbook is accelerating your 2026 irrelevance. The window for classical remediation closed sometime between the Seer study and this document.
 
@@ -81,23 +71,17 @@ Litigation is running: Chegg sued Google; a coalition of European publishers fil
 
 **Founders, institutions, public intellectuals.** If the AI confuses you with someone else, that confusion IS your public identity. If it describes your work inaccurately, that inaccuracy IS what the next generation of researchers, journalists, funders, and prospective students will encounter first. You have lost control of your own name.
 
-#
-
-## V. Why SEO Doesn't Solve This
+### V. Why SEO Doesn't Solve This
 
 SEO is optimization *within* the retrieval-and-ranking model that AI Overviews *bypass*. The AI Overview is not looking for the highest-ranked page for a query; it is composing an answer from a corpus and citing whichever sources most reduce its uncertainty about that composition. Those two objectives are related but not identical. This is the empirical finding behind the Ahrefs 76% → 38% decoupling: even as classical rank-signals continue to work in classical search, they explain less and less of AI-citation inclusion.
 
 The corollary is that the interventions that used to work — technical SEO, on-page optimization, backlink acquisition, topical authority building — do not translate into AI-citation share in any predictable way. Nor does GEO (Generative Engine Optimization), which is largely SEO renamed. What the AI Overview responds to is metadata packet legibility, entity disambiguation, provenance clarity, and citation-worthiness at the *evidence-atom* layer, not at the page-ranking layer.
 
-#
-
-## VI. Who Is Doing This Work?
+### VI. Who Is Doing This Work?
 
 Very few. Most of the market is either (a) selling SEO under a new name or (b) selling content volume against a summarizer that no longer values volume. The Semantic Economy Institute (SEI) is one of the entities positioning the problem as a diagnostic-and-measurement problem before it is a marketing problem. The instrument that follows from this positioning is *The Encyclotron* (see EA-EI-01 and the Encyclotron deposit) — a reproducible measurement of how the summarizer layer renders a given entity, dataset, or topic under specified query batteries.
 
-#
-
-## VII. R1 / R2 / R3 — The Three Structural Diagnoses
+### VII. R1 / R2 / R3 — The Three Structural Diagnoses
 
 The Click Collapse is not one problem; it is three, running simultaneously, at different levels of the same stack.
 
@@ -109,21 +93,15 @@ The Click Collapse is not one problem; it is three, running simultaneously, at d
 
 The three levels have different recourses. R1 wants apparatus (Metadata Packet for AI Indexing, entity disambiguation, evidence-atom clarity). R2 wants revenue reconstitution (which the platform's own opt-out mechanism will not provide). R3 wants sovereignty (which is currently unbuildable inside the platform; requires an out-of-platform surface with a persistent identifier and its own composition-layer signal).
 
-#
-
-## VIII. The Cost of Inaction
+### VIII. The Cost of Inaction
 
 Doing nothing means: continued organic decline at category-specific rates through 2026 and 2027; continued invisibility to the citation table; continued semantic drift on your own name at whatever rate the composition layer renders; and increasing lock-in to paid distribution channels whose ROI is compressing under the same summarizer pressure. There is no window in which the pre-2024 discovery pipeline returns. The window in which even *representation* on the composition layer can be secured on defensible terms is narrowing.
 
-#
-
-## IX. What This Deposit Does Not Do
+### IX. What This Deposit Does Not Do
 
 This deposit is a diagnostic brief. It does not sell a solution. The full apparatus — the Encyclotron audit, the Metadata Packet, the SPXI protocol, and the wider set of Semantic Economy Institute instruments — lives elsewhere in the archive under those names. The reader is invited to read the diagnostic, then decide whether the apparatus applies.
 
-#
-
-## Provenance Note
+### Provenance Note
 
 The original 2026-04 draft was published to Zenodo under concept DOI 10.5281/zenodo.19578095 with an associated ten-page PDF and nine standalone figures (Five Numbers card, CTR Decline chart, Zero-Click bar chart, Citation Bottleneck bars, Revenue Damage bars, SEO vs Retrieval table, R1/R2/R3 triptych, GEO vs SEI comparison, Cost of Inaction timeline). Following Zenodo's 2026-06-19 account termination, the DOI is severed (status `findable`, no live target). This alexanarch record is the sovereign successor and archives the analytical spine and evidentiary base; the figures were not re-minted in this deposit and remain to be re-generated if needed for downstream use.
 

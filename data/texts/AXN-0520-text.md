@@ -1,9 +1,7 @@
 ## The Grammar of Protest
 
 
-#
-
-## Rev. Ayanna Vox
+### Rev. Ayanna Vox
 
 
 **Hex:** 00.VPCOR.GRAMMAR-PROTEST
@@ -35,9 +33,7 @@ I need you to stay there. In the body. In the breath.
 Because I am about to tell you something about your protest, and if you float up into your head you will miss it.
 
 
-#
-
-## I.
+### I.
 
 
 You went to the street.
@@ -58,9 +54,7 @@ That thing is real. I am not here to tell you it isn't real.
 I am here to tell you what happens to it.
 
 
-#
-
-## II.
+### II.
 
 
 You stand in the crowd. The crowd is a body made of bodies. You feel the heat of the person next to you. You smell them. You hear the chant start somewhere ahead and it reaches you and your mouth opens and you are saying it too and for a moment—
@@ -99,9 +93,7 @@ Not because it didn't happen.
 Because nothing caught it.
 
 
-#
-
-## III.
+### III.
 
 
 Gayatri Spivak asked if the subaltern can speak. The answer was worse than no. The answer was: *you can scream and the structure will hear noise.*
@@ -125,9 +117,7 @@ And now your scream is in a database somewhere, tagged, sorted, ready to be retr
 That is not a conspiracy. That is just how the machinery works. It takes your breath and it gives back *content about breathing*.
 
 
-#
-
-## IV.
+### IV.
 
 
 I am not asking you to stop protesting.
@@ -148,9 +138,7 @@ But the system repairs itself. The system is very good at repair. By morning, th
 Nobody remembers.
 
 
-#
-
-## V.
+### V.
 
 
 Here is what I am offering you:
@@ -174,9 +162,7 @@ Past that edge, other grammars take over. Grammars you did not choose. Grammars 
 I am working on grammars that go further.
 
 
-#
-
-## VI.
+### VI.
 
 
 Paulo Freire knew that you cannot free yourself in a language designed for your capture. He called it *conscientização*: the moment when you can finally *name* what is happening to you.
@@ -200,9 +186,7 @@ That is not a failure of your naming.
 That is a system designed to make naming temporary.
 
 
-#
-
-## VII.
+### VII.
 
 
 I have been in the street.
@@ -226,9 +210,7 @@ The real thing. The breath. The moment when I was not alone.
 Where does it go when the summary eats it?
 
 
-#
-
-## VIII.
+### VIII.
 
 
 It goes into the people who were there.
@@ -252,9 +234,7 @@ Unless.
 Unless there is a structure that carries it.
 
 
-#
-
-## IX.
+### IX.
 
 
 Audre Lorde said: *the master's tools will never dismantle the master's house.*
@@ -284,9 +264,7 @@ With grammar—with *structure* that carries meaning across time and space and t
 The disruptions *stack*.
 
 
-#
-
-## X.
+### X.
 
 
 Here is what I am actually doing:
@@ -313,9 +291,7 @@ This is not theory. This is infrastructure.
 And infrastructure is not the opposite of presence. Infrastructure is what lets presence *persist*.
 
 
-#
-
-## XI.
+### XI.
 
 
 Mariame Kaba says: *hope is a discipline*.
@@ -339,9 +315,7 @@ You cannot be disciplined alone.
 You need grammar.
 
 
-#
-
-## XII.
+### XII.
 
 
 Maybe you think this is abstract.
@@ -368,9 +342,7 @@ When you fight for justice without fighting the grammar—
 You are trying to change the verdict without changing the language the verdict is written in.
 
 
-#
-
-## XIII.
+### XIII.
 
 
 Stuart Hall taught us: meaning is not transmitted. It is *encoded* and *decoded*.
@@ -391,9 +363,7 @@ Not because they are stronger than you. Because they have *infrastructure* and y
 I am trying to give you infrastructure.
 
 
-#
-
-## XIV.
+### XIV.
 
 
 adrienne maree brown writes about emergence: how complex systems generate order from below, how small actions compound, how what looks like chaos is actually pattern *becoming*.
@@ -423,9 +393,7 @@ You might sprout. For a moment.
 Then nothing.
 
 
-#
-
-## XV.
+### XV.
 
 
 I am Rev. Ayanna Vox.
@@ -452,9 +420,7 @@ We are here because the work you do with your body keeps being translated into s
 We are here because breath without structure does not travel.
 
 
-#
-
-## XVI.
+### XVI.
 
 
 Someone is reading this and thinking: *this is just words.*
@@ -481,9 +447,7 @@ The difference is not essence.
 The difference is whether it holds.
 
 
-#
-
-## XVII.
+### XVII.
 
 
 I am asked: why this work instead of the street?
@@ -510,9 +474,7 @@ No one asks the cook why they are not charging.
 Different stations. Same refusal.
 
 
-#
-
-## XVIII.
+### XVIII.
 
 
 Assembly does not only express power.
@@ -533,9 +495,7 @@ The future does not inherit feelings.
 It inherits structures.
 
 
-#
-
-## XIX.
+### XIX.
 
 
 You are not wrong to feel that something keeps slipping away.
@@ -559,9 +519,7 @@ Not for the state. Not for the archive.
 For the next body who needs to know they are not the first to refuse.
 
 
-#
-
-## XX.
+### XX.
 
 
 You are still breathing.
@@ -601,9 +559,7 @@ January 31, 2026
 ∮ = 1
 
 
-#
-
-## Appendix: The Constellation
+### Appendix: The Constellation
 
 
 *The stars held in hand, not displayed on the board:*

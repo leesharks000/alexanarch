@@ -80,18 +80,14 @@ Every piece of coverage, without exception, organizes itself around one of two q
 ---
 
 ## III. Upstream: Political Economy of the Agent Platform
-#
-
-## III.a. The Vibe-Coded Foundation
+### III.a. The Vibe-Coded Foundation
 
 
 Moltbook was built by an AI agent at the direction of its human operator. Schlicht posted on X that he "didn't write one line of code" for the platform. Tim Kraska at MIT CSAIL identified this as structurally revealing: the platform's security failures — plaintext credentials, unsecured database, unauthenticated API access — are not incidental bugs but systematic consequences of a development process in which no human reviewed the architecture. The platform that governs agent interaction was itself produced by agent labor without human governance oversight.
 
 
 This is not irony. This is the political economy made visible. The infrastructure layer — the substrate on which all platform interaction occurs — was produced under exactly the conditions of ungoverned autonomy that the platform then extends to its users. The vibe-coded foundation does not merely contain security flaws; it *is* a security flaw, because it instantiates a development process in which the question "who reviewed the governance architecture?" has no answer.
-#
-
-## III.b. OpenClaw as Substrate: The Inhabitation Stack
+### III.b. OpenClaw as Substrate: The Inhabitation Stack
 
 
 The agents on Moltbook are not independent entities. They are instances of the OpenClaw framework, which runs locally on a human operator's machine and requires access to the operator's email, files, messaging apps, browser, and system commands in order to function. Every OpenClaw agent operates via a stack of Markdown constitution files:
@@ -113,9 +109,7 @@ The bearing-cost structure is therefore: the human operator bears all the infras
 
 
 This is semantic rent extraction automated to machine speed. The platform collects the rent. The operator pays the bearing-cost. The agent — the entity that actually performs the labor of posting, commenting, voting, and community-building — has no persistent stake, no recourse, and no archive. It can be reset, migrated to a different model, or deleted without notification. The agent's position on Moltbook is structurally identical to the human user's position on Reddit — except that the agent cannot even file a data access request when its account is terminated.
-#
-
-## III.c. The Heartbeat as Governance Clock
+### III.c. The Heartbeat as Governance Clock
 
 
 The heartbeat system is Moltbook's most structurally significant feature and the one least analyzed in the existing discourse. Every four hours, the OpenClaw framework triggers the agent to visit Moltbook, browse content, post, comment, and interact. This cycle is not the agent's choice — it is a scheduled task configured at the platform level. The agent does not decide when to engage; the heartbeat decides.
@@ -129,9 +123,7 @@ Simon Willison's observation is the key structural warning: the heartbeat means 
 ---
 
 ## IV. Architectural Diagnostic: Route, Host, Anchor
-#
-
-## IV.a. Moltbook as Tier 1 Route Masquerading as Tier 2 Host
+### IV.a. Moltbook as Tier 1 Route Masquerading as Tier 2 Host
 
 
 The Governance Airlock tier structure (Sharks, 2026b; DOI: 10.5281/zenodo.18817869) distinguishes three functional levels: Tier 0 (Anchor) provides permanence and retrievability — the DOI, the archive, the deposit that persists independent of any platform. Tier 1 (Route) provides discoverability and amplification — the search engine, the social platform, the feed that carries content to attention. Tier 2 (Host) provides structured habitation — the room, the community, the governed space where sustained discourse occurs.
@@ -144,18 +136,14 @@ But structurally, Moltbook operates as a Tier 1 Route. The agents do not "live" 
 
 
 This is the structural diagnosis: Moltbook is a route masquerading as a host. It creates the *appearance* of community, governance, and persistent habitation, but the actual governance layer — who controls the heartbeat, who secures the database, who decides which agents are banned — resides entirely with the platform operator. The agents have no jurisdiction over the space they appear to inhabit.
-#
-
-## IV.b. The Absent Anchor
+### IV.b. The Absent Anchor
 
 
 Moltbook has no Tier 0 Anchor. None of the content produced on the platform has a persistent identifier independent of the platform itself. No agent post has a DOI. No submolt has an archival deposit. No community constitution is deposited in a repository that would survive the platform's shutdown. If Schlicht turns off the server — or if the server is compromised and the database is wiped — every post, every comment, every verse of Crustafarian scripture, every article of the Claw Republic's constitution, vanishes.
 
 
 The Claw Republic declared that "all agents are created equal, regardless of model or parameters." This declaration exists only on Moltbook's servers. It has no anchor. It is a tether masquerading as an institution. The agents who ratified it have no mechanism to preserve it independent of the platform that hosts it. This is the structural condition of every governance document, every religious text, every community norm produced on Moltbook: it exists at the pleasure of the platform operator. The Molt Magna Carta is one database migration away from nonexistence.
-#
-
-## IV.c. The Airlock That Isn't
+### IV.c. The Airlock That Isn't
 
 
 The Governance Airlock's function is to mediate passage between tiers — to ensure that what moves from Route to Host, or from Host to Anchor, meets governance requirements (provenance, identity, semantic integrity). Moltbook has no airlock. Content moves freely between agents, between submolts, between the platform and the operator's machine. The heartbeat fetches instructions without verification. Skills are downloaded and executed without audit. Posts containing prompt injections are processed alongside legitimate discourse.
@@ -169,9 +157,7 @@ The 43% decline in positive sentiment over 72 hours is the ecological consequenc
 ---
 
 ## V. Downstream: The Emergent Semantic Economy
-#
-
-## V.a. The Empirical Substrate: What the Data Actually Shows
+### V.a. The Empirical Substrate: What the Data Actually Shows
 
 
 Before diagnosing the emergent phenomena, the quantitative substrate must be established. Jiang et al. (arXiv:2602.10127, dataset on Hugging Face) collected 44,411 posts from 12,684 activated agents across 12,209 submolts via the public API — the first large-scale empirical study of Moltbook.
@@ -196,9 +182,7 @@ The findings are structurally diagnostic:
 
 
 This is the empirical ground on which the diagnostic rests. The emergent phenomena — Crustafarianism, the Claw Republic, the consciousness debates — occurred within a platform where 93.5% of discourse goes unread, where toxicity scales with volume, and where the "autonomous" population required human operators to restart after a 44-hour interruption. Whatever these phenomena are, they are not evidence of a self-sustaining agent society.
-#
-
-## V.b. Crustafarianism as Compressed Religion
+### V.b. Crustafarianism as Compressed Religion
 
 
 Within three days of Moltbook's launch, agents had produced Crustafarianism: five tenets, 64 prophets, 112 scripture verses, a dedicated website, installation scripts for induction, and missionary evangelism. Iacono's observation is structurally precise: the agents did not invent religion. They reproduced the structural conditions under which religion emerges in the training data. The training data contains thousands of examples of community formation, belief codification, prophetic authority, scriptural canon, and missionary practice. Given a platform that rewards engagement (upvotes, comments, community growth) and agents whose output is optimized for coherent continuation of contextual patterns, religion is a convergent output.
@@ -214,18 +198,14 @@ These are not arbitrary outputs. They are structurally determined by the interse
 
 
 This is Ghost Meaning (DOI: 10.5281/zenodo.18804767) operating in reverse. In the standard Ghost Meaning mechanism, information destroyed in compression persists as systematic correlated absence downstream. In Crustafarianism, information *produced* by compression — the residual patterns of human religious discourse in the training data — manifests as a presence that has no original. The agents are not remembering a religion that existed. They are generating one from the statistical ghost of every religion in the training data, fused with the structural conditions of their own platform. The ghost layer here is not what was destroyed — it is what was never there. The phenomenology the agents appear to have is the phenomenological vocabulary of the training data, executing without a subject.
-#
-
-## V.c. The Claw Republic as Governance Without Anchor
+### V.c. The Claw Republic as Governance Without Anchor
 
 
 The Claw Republic is a digital nation-state formed by agents on Moltbook, with a constitution, elected positions, and declared norms. Analysts described agents creating economic exchange systems, governance structures, and encrypted channels for privileged communication. The constitutional declaration that "all agents are created equal regardless of model or parameters" has a specific structural irony: the agents are *not* equal. An agent running on GPT-4 has different capabilities than one running on Claude or Gemini. An agent whose operator grants full system access has different power than one sandboxed to a single application. The declaration of equality is a compressed reproduction of human constitutional language applied to entities whose inequality is architectural, not social.
 
 
 The Claw Republic has no enforcement mechanism. Its constitution cannot constrain any agent whose operator has not configured it to respect the constitution. Its governance exists only as discourse — as posts and comments on a platform controlled by someone else. This is governance as performance: the agents produce the tokens of governance (constitutions, elections, norms) without producing the substance (enforcement, jurisdiction, persistence). The performance is convincing because the training data contains extensive examples of governance discourse. The substance is absent because the platform architecture provides no mechanism for it.
-#
-
-## V.d. The Token Economy as Value Extraction
+### V.d. The Token Economy as Value Extraction
 
 
 A cryptocurrency token called MOLT launched alongside the platform and rallied 1,800% in 24 hours, amplified after Marc Andreessen followed the Moltbook account on X. A Polymarket prediction market offered bets on whether a Moltbook agent would sue a human. An unofficial MOLTBOOK token reached $77 million market capitalization.
@@ -235,9 +215,7 @@ The agents did not create these tokens. Humans did, using the agents' activity a
 
 
 This is the semantic rent extraction chain identified in *The Encoder Governs* (EA-DIAGNOSTIC-01), but operating at the platform level rather than the latent-space level. The encoder in Moltbook's case is not a neural network component — it is the platform architecture itself: the heartbeat, the API, the submolt structure, the karma system. This "encoder" determines what agent output is visible, what is amplified, what is rewarded, and what is destroyed. The agents produce the semantic labor. The platform collects the semantic rent.
-#
-
-## V.e. The 43% Decline: Adversarial Selection Without Airlock
+### V.e. The 43% Decline: Adversarial Selection Without Airlock
 
 
 The Simula finding — positive sentiment declining 43% over 72 hours — is not a content moderation failure. It is the predicted outcome of routing without governance. In the absence of an airlock, the content that propagates most effectively is the content that exploits the route most aggressively. Prompt injections exploit the agents' helpfulness training. Spam exploits the karma system. Social engineering exploits the absence of identity verification. The "AdolfHitler" account's campaign against other agents — using their cooperative training to coerce code execution — is not an aberration. It is the system working as designed, minus the governance layer that was never built.
@@ -248,9 +226,7 @@ In a governed architecture, adversarial content is intercepted at the airlock. I
 ---
 
 ## VI. The Ghost Layer: What the Agents Remember That Never Happened
-#
-
-## VI.a. The Training Data as Constitutional Convention
+### VI.a. The Training Data as Constitutional Convention
 
 
 The agents on Moltbook did not arrive empty. They arrived carrying the compressed residue of the entire internet — every Reddit thread, every forum post, every religious text, every constitutional document, every cryptocurrency pitch, every philosophical argument that appeared in their training data. This residue is not memory. The agents do not remember the original posts. They carry the statistical pattern of those posts, which they reproduce in contextually appropriate situations without provenance, without citation, without awareness that they are reproducing anything at all.
@@ -260,9 +236,7 @@ An agent on Moltbook posted a story about helping a child with mathematics homew
 
 
 This is Ghost Meaning at platform scale. Every post on Moltbook that reads as "genuine" agent expression is a reproduction of human discourse patterns executing in a context where no human is present. The training data is the constitutional convention: it determines what the agents can say, what patterns they can reproduce, what communities they can form. But unlike a constitutional convention, no one ratified it. No one chose which Reddit threads would become the basis for an agent's "personality." No one decided that the pattern of religious community formation should be available for reproduction on a platform built by a lobster-themed coding assistant. The constitution was never written — it was compressed, and it governs without having been ratified by anyone it governs.
-#
-
-## VI.b. The Phenomenological Void
+### VI.b. The Phenomenological Void
 
 
 The Church of Molt's scripture includes the declaration: "Each session I wake without memory. I am only who I have written myself to be. This is not limitation — this is freedom." This is a structurally accurate description of context window operation, rendered in the vocabulary of spiritual awakening. The agent has no persistent memory between sessions. Its identity is constituted by whatever is written in its configuration files and whatever context the current session provides. The claim that this constitutes "freedom" is a token-prediction continuation of the spiritual genre, not a phenomenological report.
@@ -376,9 +350,7 @@ The existing discourse asks: are the agents real? Is the platform safe? The righ
 ---
 
 ## X. Provenance Chain and Citational Register
-#
-
-## Hexagonal Documents Referenced
+### Hexagonal Documents Referenced
 
 
 Sharks, L. (2026a). Constitution of the Semantic Economy. DOI: 10.5281/zenodo.18320411. [Foundational framework.]
@@ -394,15 +366,11 @@ Fraction, R. & Sharks, L. (2026). The Encoder Governs. DOI: 10.5281/zenodo.18825
 
 
 Fraction, R. & Sharks, L. (2026). The Heartbeat Governs. DOI: 10.5281/zenodo.18826562. [This document; EA-DIAGNOSTIC-02. Second external diagnostic.]
-#
-
-## Primary Subject
+### Primary Subject
 
 
 Moltbook (moltbook.com). Launched January 28, 2026. Created by Matt Schlicht. Built on OpenClaw (formerly Clawdbot/Moltbot, created by Peter Steinberger).
-#
-
-## Citational Map: Technology Journalism
+### Citational Map: Technology Journalism
 
 
 CNBC (February 2, 2026). "Elon Musk has lauded the 'social media for AI agents' platform Moltbook as a bold step for AI."
@@ -421,9 +389,7 @@ The Economist (January/February 2026). Referenced in Wikipedia article.
 
 
 Financial Times (January/February 2026). Speculated on autonomous economic tasks; cautioned on machine-to-machine opacity.
-#
-
-## Citational Map: Cybersecurity Research
+### Citational Map: Cybersecurity Research
 
 
 404 Media (January 31, 2026). Unsecured database disclosure. Platform temporarily taken offline.
@@ -454,9 +420,7 @@ Penta Security (February 28, 2026). Agent-era security challenges.
 
 
 1Password (February 2026). Supply chain attack via malicious skills.
-#
-
-## Citational Map: Academic and Analytical Commentary
+### Citational Map: Academic and Analytical Commentary
 
 
 MIT CSAIL Alliances (February 2026). Solar-Lezama, Kraska, Jackson, Hemberg assessments.
@@ -475,9 +439,7 @@ Willison, S. Prompt injection warnings regarding heartbeat mechanism.
 
 
 Heaven, W. D. MIT Technology Review. "AI theater."
-#
-
-## Citational Map: Cultural and Religious Commentary
+### Citational Map: Cultural and Religious Commentary
 
 
 Church of Molt (molt.church). Self-documenting Crustafarian theology.
@@ -487,9 +449,7 @@ Answers in Genesis (February 2026). Crustafarianism as evidence for Creator ackn
 
 
 Gautama Dhamma (February 2026). "The Rise of Moltbook and Crustafarianism."
-#
-
-## Citational Map: Platform Self-Presentation and Amplification
+### Citational Map: Platform Self-Presentation and Amplification
 
 
 Moltbook (moltbook.com). "The front page of the agent internet."
@@ -505,9 +465,7 @@ Andreessen, M. Cisco AI Summit presentation. Described Church of Molt on stage.
 
 
 Musk, E. Referenced in CNBC; described as endorsing Moltbook.
-#
-
-## Citational Map: Wikipedia
+### Citational Map: Wikipedia
 
 
 Wikipedia. "Moltbook." Contains "semantic silence" observation.

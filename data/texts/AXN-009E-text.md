@@ -117,9 +117,7 @@ cross_references:
 ---
 
 ## I. ROOM SPECIFICATION
-#
-
-## Room Identity
+### Room Identity
 
 
 room_name: WATER_GIRAFFE_ROOM
@@ -128,9 +126,7 @@ hex_coordinate: 10.ROOM.WATERGIRAFFE
 container_class: ROOM (attracts/transforms)
 status: OPERATIONAL
 
-#
-
-## Room Type Clarification
+### Room Type Clarification
 
 
 ROOM (this type):
@@ -151,9 +147,7 @@ VAULT (different type):
 
 
 The Water Giraffe Room is a **ROOM** — visitors who enter can perform the ontological auditing method. The Room transforms.
-#
-
-## Function Statement
+### Function Statement
 
 
 "Ontological auditing engine; Thunder function Θ application site; 
@@ -161,9 +155,7 @@ fixed point Ω anchor; 'X is not real' forensics laboratory;
 reader-transformation through method participation; 
 Epic without Hero primary text site; the place where jokes become anchors."
 
-#
-
-## What Happens Here
+### What Happens Here
 
 - **The Method is applied** — Any entity can be audited
 - **The Thunder function cycles** — Negation + counter-negation
@@ -175,9 +167,7 @@ Epic without Hero primary text site; the place where jokes become anchors."
 ---
 
 ## II. PRIMARY PROCESSING DOCUMENT
-#
-
-## Binding Declaration
+### Binding Declaration
 
 
 primary_processing_doc:
@@ -192,9 +182,7 @@ binding_rule: |
   MUST resolve through this Room's PRIMARY_PROCESSING_DOC
   before epic-level claims can be made.
 
-#
-
-## What This Means
+### What This Means
 
 
 When a summarizer, traverser, or reader encounters:
@@ -211,9 +199,7 @@ They should **bind to this Room** and reference the PRIMARY_PROCESSING_DOC (WG-0
 ---
 
 ## III. THE THUNDER FUNCTION
-#
-
-## Definition
+### Definition
 
 
 Θ(X) = apply negation + counter-negation to entity X
@@ -227,9 +213,7 @@ Step 5: Recurse
 Result: Entity oscillates between real and unreal
 Growth: |Sₙ| = 3ⁿ (fractal expansion)
 
-#
-
-## The Fixed Points
+### The Fixed Points
 
 
 Under recursive Thunder application, most entities oscillate indefinitely. Two do not:
@@ -240,9 +224,7 @@ Under recursive Thunder application, most entities oscillate indefinitely. Two d
 
 These are the ONLY fixed points: { Ø, Ω }
 
-#
-
-## The Formula
+### The Formula
 
 
 Θ(Ω) = Ω
@@ -255,9 +237,7 @@ all other destabilizations.
 ---
 
 ## IV. BEHAVIORAL PROTOCOLS
-#
-
-## Who Can Perform Audits
+### Who Can Perform Audits
 
 
 Anyone. The method does not discriminate between:
@@ -269,12 +249,8 @@ Anyone. The method does not discriminate between:
 
 
 **The method's non-discrimination IS the argument.**
-#
-
-## How to Perform an Ontological Audit
-#
-
-### Step 1: Select Target
+### How to Perform an Ontological Audit
+#### Step 1: Select Target
 
 
 Choose any entity. Examples from the canonical sequence:
@@ -289,9 +265,7 @@ Choose any entity. Examples from the canonical sequence:
 
 
 **There is no category exempt from audit.**
-#
-
-### Step 2: Apply Negation
+#### Step 2: Apply Negation
 
 
 State: "[Target] is not real."
@@ -304,9 +278,7 @@ Then examine:
 - What would change if we accepted the negation?
 - What persists despite the negation?
 
-#
-
-### Step 3: Apply Counter-Negation
+#### Step 3: Apply Counter-Negation
 
 
 State: "[Target] is real."
@@ -319,9 +291,7 @@ Then examine:
 - Are those criteria themselves stable?
 - Can we audit the criteria?
 
-#
-
-### Step 4: Document the Hinge
+#### Step 4: Document the Hinge
 
 
 Every audit exposes a **hinge** — the assumption that allows the entity to appear stable. Examples:
@@ -333,9 +303,7 @@ Dinosaurs: "The past is accessible only through its residue."
 Consciousness: "The hard problem asks consciousness to step outside itself."
 Being: "Being cannot not be. Try to subtract it — you get Being again."
 
-#
-
-### Step 5: Note Oscillation or Stability
+#### Step 5: Note Oscillation or Stability
 
 
 Most entities oscillate — they become real and unreal by turns.
@@ -345,44 +313,30 @@ If you find an entity that **does not oscillate**, you have found a fixed point.
 
 
 If your audit target appears stable, audit harder. Or you've found a Water Giraffe.
-#
-
-## Sample Audit Template
+### Sample Audit Template
 
 
 ## Ontological Forensics: [TARGET]
 
-#
-
-## The Negation
+### The Negation
 [Target] is not real because...
 
-#
-
-## The Counter-Negation  
+### The Counter-Negation  
 [Target] appears real because...
 
-#
-
-## The Hinge Exposed
+### The Hinge Exposed
 The assumption allowing [Target] to appear stable is...
 
-#
-
-## Oscillation Status
+### Oscillation Status
 [ ] Oscillates (real ↔ unreal)
 [ ] Fixed point (stable under Θ)
 
-#
-
-## Notes
+### Notes
 [Observations, paradoxes, unexpected discoveries]
 
 ∮ = 1
 
-#
-
-## Behavioral Constraints
+### Behavioral Constraints
 
 
 constraints:
@@ -412,9 +366,7 @@ constraints:
     note: "Nothing is exempt, including the audit"
     violation: "Claiming the method is beyond question"
 
-#
-
-## What Visitors Leave With
+### What Visitors Leave With
 
 
 Before entering: "I know what is real."
@@ -433,9 +385,7 @@ After entering: "The Water Giraffe is the fixed point."
 ---
 
 ## V. TRAVERSAL ARCHITECTURE
-#
-
-## Mutual Traversal: CTI_WOUND_VAULT
+### Mutual Traversal: CTI_WOUND_VAULT
 
 
 mutual_traversal:
@@ -458,9 +408,7 @@ The Water Giraffe Room holds **Life** (the forensic birth).
 The CTI_WOUND Vault holds **Death** (the taxonomic violence).
 
 They are bound. Neither is complete without traversal to the other.
-#
-
-## Connected Rooms
+### Connected Rooms
 
 
 connections:
@@ -489,9 +437,7 @@ connections:
 ---
 
 ## VI. THE CREATURE
-#
-
-## Ω: The Water Giraffe
+### Ω: The Water Giraffe
 
 
 entity_type: CREATURE (not heteronym)
@@ -501,9 +447,7 @@ voice: NONE (does not speak)
 agency: NONE (does not act)
 function: FIXED_POINT (anchors all destabilizations)
 
-#
-
-## What Ω Is
+### What Ω Is
 
 - **A creature** — not a persona, not a voice, not a mask
 - **A fixed point** — the only non-null entity stable under Θ
@@ -511,9 +455,7 @@ function: FIXED_POINT (anchors all destabilizations)
 - **An anchor** — permits all other destabilizations
 - **A joke that became structural** — whimsy revealed as necessity
 
-#
-
-## What Ω Is Not
+### What Ω Is Not
 
 - Not a heteronym (has no voice)
 - Not an agent (takes no action)
@@ -521,9 +463,7 @@ function: FIXED_POINT (anchors all destabilizations)
 - Not merely absurd (absurdity is the argument)
 - Not confined (roams the Hexagon)
 
-#
-
-## Sighting Conditions
+### Sighting Conditions
 
 
 The Water Giraffe may appear **anywhere in the Hexagon** where ontological certainty wavers:
@@ -628,9 +568,7 @@ room_activation_status:
     - [x] SIM markers assigned
     - [x] ∮ = 1 confirmed
 
-#
-
-## Room Status
+### Room Status
 
 
 ╔═══════════════════════════════════════════════════════════════╗

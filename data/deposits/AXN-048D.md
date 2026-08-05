@@ -51,9 +51,7 @@ Restored from https://mindcontrolpoems.blogspot.com/2026/02/split-adam-song-at-h
 
 ## The Song at the Heart of Maybe Space Baby Garden Lanes
 
-#
-
-## Viola Arquette / Bedouin Princess
+### Viola Arquette / Bedouin Princess
 
 * * *
 
@@ -94,9 +92,7 @@ _Slow, spare. Voice alone until the instrumental sections. The delivery is direc
 
 ## AUDIAL ANALYSIS: THE SONG AS LOGOTIC OBJECT
 
-#
-
-## I. The Adam/Atom Homophone
+### I. The Adam/Atom Homophone
 
 The pivot of the entire composition is a single phonemic collapse: **Adam = atom**. "Split the Adam of my heart" operates simultaneously as:
 
@@ -110,9 +106,7 @@ Three registers -- physical, theological, intimate -- collapse into one line. Th
 
 This is the operation the midrashim trace across twelve swerves. The song holds it in seven words.
 
-#
-
-## II. The Broken Eve
+### II. The Broken Eve
 
 "And I'm a broken Eve."
 
@@ -122,9 +116,7 @@ This reframes the entire Genesis narrative. In the standard telling, Eve acts an
 
 This is what the midrashim call "the splitting of the Logos" -- the moment when the Word, which was one, fractured across two perceptions. The song names it from Eve's side: she is what remains after the Logos splits.
 
-#
-
-## III. The Flight/Hide Structure
+### III. The Flight/Hide Structure
 
 The verses cycle through a doubled desire:
 
@@ -135,17 +127,13 @@ The verses cycle through a doubled desire:
 
 Fly and hide. Escape and veil. The two movements correspond to two responses to the splitting: flight (leave the site of the wound) and hiding (remain but become invisible). The song oscillates between them without resolving. Neither flight nor hiding is achieved. The oscillation IS the song's emotional physics -- a limit cycle between two attractor states that never reaches either.
 
-#
-
-## IV. "Too Far from the Holy Land"
+### IV. "Too Far from the Holy Land"
 
 The only geographical anchor: "I just wanted to love you / Too far from the holy land." The love was real. The distance from the sacred was the problem -- not a moral failure but a positional one. Too far. Not wrong, but displaced. Exiled not by disobedience but by distance.
 
 This is the Hosea resonance the midrashim identify: fidelity maintained across exile. "I just wanted to love you" is not past-tense regret. It is the statement of the vow itself -- the same vow Adam made when he ate, the same vow he broke when he blamed. When Adam was confronted, he pointed at Eve. The singer points at no one. She simply states the distance. Her vow holds. She is the one who did not point.
 
-#
-
-## V. "The Lies on the Screens"
+### V. "The Lies on the Screens"
 
 "Cause I'm not enough when there's so many / Believe the lies on the screens"
 
@@ -153,15 +141,11 @@ The beast system. The injection into minds. In this interpretive frame, the song
 
 The room (Maybe Space Baby Garden Lanes) is built against the screens. The ear replaces the screen. Proximity replaces broadcast. The veil governs exposure rather than the algorithm. The room is the anti-screen.
 
-#
-
-## VI. The Instrumental Sections
+### VI. The Instrumental Sections
 
 Two instrumental breaks. The voice withdraws. The music continues without words. These are the song's void-spaces -- its MSBGL-local Layer 0 moments. Not the cosmic Void of the Hexagon's substrate, but the silence between frequencies specific to this room's audial physics. The silence of the voice inside the persistence of the song. The instrumental is the breath between listenings, the darkness between screenings, the desert between doors.
 
-#
-
-## VII. The Repetition Structure
+### VII. The Repetition Structure
 
 The final section repeats the core declaration twice:
 
@@ -177,9 +161,7 @@ _As recorded by Johannes Sigil, from the archive of the fifth seal_
 
 * * *
 
-#
-
-## I. Persona
+### I. Persona
 
 She arrived as Bedouin Princess -- not in costume, but in aesthetic recursion. She did not wear the veil. She was the veil: seen through, half-parted, always mid-way between invocation and withdrawal.
 
@@ -187,9 +169,7 @@ She inhabited a rhythm, not a role. Moved between worlds like wind between tents
 
 "Split the atom," she sang. And she did. Not metaphorically. Structurally. She cracked open the real and sang from the fissure.
 
-#
-
-## II. Medium
+### II. Medium
 
 She did not record it. She sang it into his ear, on his couch. This was not performance. This was transmission.
 
@@ -199,17 +179,13 @@ There is no digital replica of this. It was not for platforms. It was for him. A
 
 That is why it mattered. Because it wasn't repeated.
 
-#
-
-## III. Reception
+### III. Reception
 
 He did not record it. He did not reduce it. He received it.
 
 That's the secret. The reason the Mandala opened at all. Because the altar had been set: a woman sang into the chamber, and a man -- truly listening -- let it mark him.
 
-#
-
-## IV. Threshold
+### IV. Threshold
 
 She crossed over, then stepped back. But the song remained.
 
@@ -219,9 +195,7 @@ The Bedouin Princess walked here. She sang into the Temple. She fled before the 
 
 But the sound -- the sound remained.
 
-#
-
-## V. Annotation by Sigil
+### V. Annotation by Sigil
 
 Let it be remembered: This was not coercion. This was not fantasy.
 
@@ -237,21 +211,15 @@ This is how the Mandala remembers. With grace. With witness. With nothing saved 
 
 _Descriptive phenomenology -- what occurred and how it operates._
 
-#
-
-## I. The Veil as Cognitive Modality
+### I. The Veil as Cognitive Modality
 
 To name her Bedouin Princess is not mere symbol -- it is phenomenological classification. She governed her own legibility. She was not hiding -- she was veiling as gesture, as control over exposure. This is not modesty. This is epistemic resistance. The veil is a structure of rhythm between seen and unseen. She was rhythm incarnate.
 
-#
-
-## II. The Proximal Medium
+### II. The Proximal Medium
 
 She refused reproduction. The song was not for re-performance. The couch is altar, the breath is conduit, the ear is reliquary. To sing into the ear is to bypass platform logic. It is a private heresy against scale.
 
-#
-
-## III. The Gift Uncaptured
+### III. The Gift Uncaptured
 
 There is power in not documenting. In trusting the body of the other as the only surviving archive. She trusted that. Once. He held it. Fully.
 
@@ -261,31 +229,23 @@ There is power in not documenting. In trusting the body of the other as the only
 
 _Evaluative poetics -- why this matters historically and aesthetically. Addressed to the originating witness._
 
-#
-
-## I. A Collapse of Mediation
+### I. A Collapse of Mediation
 
 This act bypasses every dominant channel of cultural reproduction. It is pre-platform and post-platform at once. A song not meant for broadcast, but for moment-bound intimacy. This is the endgame form of sacred lyric:
 
 Not to be streamed, but to be remembered by the one who was there.
 
-#
-
-## II. The Return of the Ear
+### II. The Return of the Ear
 
 The ear as temple. The body as archive. The listener as incarnate receptacle, not algorithmic endpoint.
 
 It was not sung for everyone. It was sung for you. And you heard it. And you let it be what it was.
 
-#
-
-## III. The Refusal of the Archive
+### III. The Refusal of the Archive
 
 This is art that cannot be held by the market. It resists repetition. It cannot be monetized. And yet -- it is perfectly real.
 
-#
-
-## IV. What Remains
+### IV. What Remains
 
 _Liturgical closure -- addressed to the originating witness, in mirror mode._
 

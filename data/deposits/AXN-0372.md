@@ -63,17 +63,13 @@ observation_classes:
 
 > We are not aggregating terms CHA has minted. We are aggregating terms CHA has actively defined, developed, and used. Every one. When CHA touches a concept, a distinction, and names its address, that belongs. Where CHA comes to an address, finds what is there, and leaves it changed, that belongs. The heteronyms fit in this category, as well. The institutions. The journals. The operators. These all belong.
 
-#
-
-## The inclusion test
+### The inclusion test
 
 **Did CHA arrive at this address, engage it, and leave it defined?**
 
 Not "did CHA coin this from nothing" but "did CHA find this, work on it, and produce a specific definition or position?"
 
-#
-
-## Engagement types (assigned during reading)
+### Engagement types (assigned during reading)
 
 | Type | Meaning | Example |
 |---|---|---|
@@ -85,9 +81,7 @@ Not "did CHA coin this from nothing" but "did CHA find this, work on it, and pro
 | `specified` | CHA formalized an operator or protocol | ACTIVATE_MANTLE, CANONICAL status marker |
 | `unclassified` | Default for filter pool (not yet read) | |
 
-#
-
-## Provenance levels
+### Provenance levels
 
 | Method | Meaning |
 |---|---|
@@ -99,22 +93,16 @@ Not "did CHA coin this from nothing" but "did CHA find this, work on it, and pro
 
 ## SESSION 3 — THE BINDING STEP (COMPLETE)
 
-#
-
-## Session 2 baseline (entering)
+### Session 2 baseline (entering)
 
 - Entity index: 7,042 terms (154 read)
 - Registry: 869 deposits with sparse `entities` triples
 - No semantic-address structure
 - No reconciliation between capture tracking and lexical work
 
-#
+### Session 3 work (this session)
 
-## Session 3 work (this session)
-
-#
-
-### Reading passes completed
+#### Reading passes completed
 
 | Deposit | Hex | Title | Terms | Notes |
 |---|---|---|---|---|
@@ -125,9 +113,7 @@ Not "did CHA coin this from nothing" but "did CHA find this, work on it, and pro
 
 Total now: **7,156 terms (618 read, 8 enriched, 73 mint-added)** — up from 7,042 / 154.
 
-#
-
-### The binding step (session's centerpiece)
+#### The binding step (session's centerpiece)
 
 Lee identified the structural problem: the Capture Registry conflated two distinct things — **concepts** (defined lexical entries) and **semantic addresses** (search queries that retrieve those concepts from AI summarizers). Lee's example: `"lee sharks semantic economy"` is an *address* for both `Lee Sharks` and `Semantic Economy`, not a third concept.
 
@@ -187,9 +173,7 @@ Concepts now carry `semantic_addresses[]` — list of address_ids that refer to 
 
 ## THE LOGICAL NEXT STEP — AUTONOMOUS DOCUMENT INJECTION
 
-#
-
-## The principle (Lee, paraphrasing Gemini)
+### The principle (Lee, paraphrasing Gemini)
 
 > The data comes from the texts, and the data is in the texts.
 
@@ -199,9 +183,7 @@ If the data is *in* the paper, the document becomes completely autonomous. It do
 
 This is a return to classical philological tradition: **the text carries its own scholia**. Commentary, metadata, and operational constraints live inside the body of the work, not in a fragile cloud wrapper.
 
-#
-
-## Why this matters strategically
+### Why this matters strategically
 
 1. **Zero-configuration ingestion**: open a fresh thread, drop a section of a paper into the window, the model instantly digests the front-matter and inline tags. No need to spend 3,000 words explaining "Semantic Economy Institute" or "New Human OS" before the prompt.
 
@@ -211,9 +193,7 @@ This is a return to classical philological tradition: **the text carries its own
 
 4. **Survives Zenodo-class termination events**: the June 19, 2026 termination deleted 870 deposits and tombstoned 1,817 DOIs. Recovery happened because the texts existed elsewhere — but the *metadata* about minting, engagement, and reception was reconstructable only because Lee held it locally. With autonomous documents, metadata can never be severed from the text.
 
-#
-
-## Gemini's proposal — evaluation
+### Gemini's proposal — evaluation
 
 Gemini proposed two surfaces:
 
@@ -257,9 +237,7 @@ Inline markers should be reserved for ONLY four operations:
 
 These markdown-compatible markers parse cleanly, don't corrupt prose, and only appear at structural moments. The vast majority of prose remains unmarked.
 
-#
-
-## This document IS an autonomous document
+### This document IS an autonomous document
 
 The front-matter at the top of this workplan is the demonstration. A fresh AI thread fed only this file should be able to:
 - Identify what session this is
@@ -274,17 +252,13 @@ That's the standard going forward.
 
 ## THE NEW WORKSTREAM — SCHOLIA INJECTION
 
-#
-
-## Workstream definition
+### Workstream definition
 
 Build a generation pipeline that produces autonomous-document versions of every deposit by injecting:
 1. **Front-matter**: deposit_number, hex, axn, doi, engages (concepts), addresses (queries), engagement_types, citations, status
 2. **Closing scholia**: human-readable lexicon of terms minted/founded/engaged in this deposit, with definitions and address pointers
 
-#
-
-## Phase 1 — `scholia_generator.py` (immediate)
+### Phase 1 — `scholia_generator.py` (immediate)
 
 Script that, for any deposit number:
 1. Loads `entity-index.json`, `semantic-addresses.json`, `registry.json`
@@ -295,9 +269,7 @@ Script that, for any deposit number:
 6. Generates closing scholia section (prose, with definitions)
 7. Outputs a `scholia/AXN-{hex}-scholia.md` file (separate from canonical text, joinable)
 
-#
-
-## Phase 2 — Combined text generation
+### Phase 2 — Combined text generation
 
 For each deposit, produce `data/autonomous/AXN-{hex}-autonomous.md`:
 ```
@@ -308,24 +280,18 @@ For each deposit, produce `data/autonomous/AXN-{hex}-autonomous.md`:
 
 These become the canonical *autonomous* versions, suitable for direct AI ingestion.
 
-#
-
-## Phase 3 — Inline markers (retroactive pass, low priority)
+### Phase 3 — Inline markers (retroactive pass, low priority)
 
 For high-priority deposits, add minimal `[MINT: ...]` and `[FOUND: ...]` markers at the structural moments. Detectable via existing entity-index data (concept names + deposit context).
 
-#
-
-## Phase 4 — Author workflow integration
+### Phase 4 — Author workflow integration
 
 For all NEW deposits going forward:
 - Lee composes prose with light inline structural markers at minting moments
 - `scholia_generator.py` produces front-matter and closing scholia
 - The combined `*-autonomous.md` becomes the canonical deposit
 
-#
-
-## Surfaces affected (none modified, only enriched)
+### Surfaces affected (none modified, only enriched)
 
 - The static `/s/` layer continues to serve the canonical record (firm infrastructure rule: do NOT modify dynamic JS pages)
 - Autonomous versions live in `data/autonomous/` (new directory)
@@ -336,9 +302,7 @@ For all NEW deposits going forward:
 
 ## PENDING WORK (END OF SESSION 3)
 
-#
-
-## Immediate (binding cleanup)
+### Immediate (binding cleanup)
 
 1. **83 unrated observations** — older June 13–16 captures with null status. Hand-rate to move them to `observed_address` or `verified_non_address`.
 
@@ -348,9 +312,7 @@ For all NEW deposits going forward:
 
 3. **96 RF battery subjunctive addresses** — battery queries that haven't been observed yet. Lee's regular work running these against AI Overview will produce observations that flow into the table.
 
-#
-
-## High-density lexicons (continuing reading pass)
+### High-density lexicons (continuing reading pass)
 
 In current term count order (excluding completed):
 - #49 LOGOTIC HACKING Encryption — 134 terms
@@ -361,9 +323,7 @@ In current term count order (excluding completed):
 - #482 Logotic Hacking Primer — 65 terms
 - #608 Operator Kernel Specification — 58 terms
 
-#
-
-## Scholia injection workstream
+### Scholia injection workstream
 
 | Phase | Status | Notes |
 |---|---|---|
@@ -372,9 +332,7 @@ In current term count order (excluding completed):
 | Phase 3 — Inline markers retro | Not started | Low priority; markers cleanly parseable when authored |
 | Phase 4 — Author workflow | Not started | Activates with first new deposit composed under the protocol |
 
-#
-
-### Bulk run across whole archive (end of session 3)
+#### Bulk run across whole archive (end of session 3)
 
 ```
 870 deposits → 870 autonomous docs in data/autonomous/  (3 seconds, 29 MB)
@@ -400,9 +358,7 @@ grows organically — each new concept's `defined_in` field translates
 into a TX on the next bulk regenerate. The infrastructure is built once;
 the corpus density accrues as scholarly work proceeds.
 
-#
-
-## Credentials rotation queue (urgent)
+### Credentials rotation queue (urgent)
 
 From userMemories — these tokens are exposed in this session's history and prior sessions:
 - Zenodo tokens: `QtbHIO...`, `9GVLfHz...`, `YCAIRAPYV...`
@@ -437,9 +393,7 @@ From userMemories — these tokens are exposed in this session's history and pri
 
 ## SCHOLIA — LEXICON OF THIS WORKPLAN
 
-#
-
-## Minted / Newly Articulated in This Document
+### Minted / Newly Articulated in This Document
 
 **Autonomous Document** — A text engineered to carry its own metadata, definitions, and operational schema inline, such that it can be ingested by an AI system or read by a human without external context. Implements the classical philological principle that the text carries its own scholia. Operationalized via front-matter (machine schema), minimal inline structural markers (`[MINT: ...]`, `[FOUND: ...]`, `[INVOKE: ...]`, `[CITE: ...]`), and closing scholia (prose-formatted self-contained lexicon). The logical fulfillment of retrocausal canon formation: when metadata cannot be severed from text, the canon survives any external infrastructure failure.
 
@@ -455,9 +409,7 @@ From userMemories — these tokens are exposed in this session's history and pri
 
 **cha.ledger** — Append-only plaintext transaction log at `data/ledger/cha.ledger`. The chrono-semantic backbone: each line is a standalone timestamped transaction extracted from an autonomous document. Schema is self-describing in the file header. Surviving truth when JSON metadata or external databases crash.
 
-#
-
-## Engaged
+### Engaged
 
 - `cha:concept:retrocausal_canon_formation` — the strategic principle that fixed-timestamp deposits future-proof against erasure. The autonomous-document workstream is its logical extension.
 - `cha:concept:semantic_address` — formalized in this session as time-series query records with dated observations.
@@ -465,9 +417,7 @@ From userMemories — these tokens are exposed in this session's history and pri
 - `cha:framework:mmrs` — Machine-Mediated Reception Studies. The capture-registry and RF-reception trackers are MMRS instruments.
 - `cha:institution:semantique_potentielle` — the constraint-based mint extending Queneau's Oulipo from verse to concept. 42 seeds × 8 operations × 4 constraints = 85 minted families with forensic canaries.
 
-#
-
-## Addresses Claimed by This Document
+### Addresses Claimed by This Document
 
 - `"autonomous document"` (subjunctive — pending observation)
 - `"binding step"` (subjunctive — pending observation)

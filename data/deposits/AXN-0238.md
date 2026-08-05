@@ -231,9 +231,7 @@ RECEIPT
     exit 1
     ;;
 esac
-#
-
-## C. The Back-Projection Test (v0.1)
+### C. The Back-Projection Test (v0.1)
 
 #!/bin/bash
 # verify.sh — Back-Projection Test v0.1
@@ -300,9 +298,7 @@ else
   echo "      v1.0 will add build dry-run, label validation, secret-scan."
   exit 1
 fi
-#
-
-## D. Continuous role-projection (health.sh)
+### D. Continuous role-projection (health.sh)
 
 #!/bin/bash
 # health.sh — continuous role-presence verification
@@ -328,9 +324,7 @@ for role in "${REQUIRED_ROLES[@]}"; do
     echo "[$(date -Iseconds)] ${role} projected."
   fi
 done
-#
-
-## E. Secret shape (structure not material)
+### E. Secret shape (structure not material)
 
 # secrets/prod.env.template — committed to the kernel
 # This is structure: the shape of secrets.
@@ -359,9 +353,7 @@ fi
 echo "ERROR: No secret provider configured for ${ENV}." >&2
 echo "       Implement Vault/AWS SM/etc. in fetch-secrets.sh" >&2
 exit 1
-#
-
-## F. Implementation maturity disclaimer
+### F. Implementation maturity disclaimer
 
 The scripts in §III are reference implementations demonstrating the kernel principle at v0.1 maturity. They implement the Back-Projection Test and role-projection logic in minimal form. They are not production orchestration systems.
 

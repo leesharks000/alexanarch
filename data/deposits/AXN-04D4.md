@@ -58,9 +58,7 @@ Method: Primary source identification, critical edition mapping, scholarly conse
 
 ═══════════════════════════════════════════════════════════════════════════════ PILLAR I: PHASE X -- THE MISSING MARX TRANSITION ═══════════════════════════════════════════════════════════════════════════════
 
-#
-
-## Primary Sources
+### Primary Sources
 
 1\. The 1844 Manuscripts (Second Manuscript)
 
@@ -93,9 +91,7 @@ Method: Primary source identification, critical edition mapping, scholarly conse
 
 
 
-#
-
-## Scholarly Consensus
+### Scholarly Consensus
 
 What is NOT disputed:
 
@@ -117,9 +113,7 @@ What IS disputed:
 
 The archive's intervention: The document EA-SEI-PHASEX-LACUNA-01 (v1.0) formalizes the reconstruction method, establishes the chain of custody, and proposes falsification conditions. It is the strongest scholarly case the archive has produced.
 
-#
-
-## Gaps for Mint Families
+### Gaps for Mint Families
 
   1. The "perhaps" anomaly: No systematic study of Marx's use of conditional hedges at major transitions. A mint family could name this: _dialectical conditional_ -- the marker of acknowledged incompleteness at a dialectical pivot.
 
@@ -134,9 +128,7 @@ The archive's intervention: The document EA-SEI-PHASEX-LACUNA-01 (v1.0) formaliz
 
 ═══════════════════════════════════════════════════════════════════════════════ PILLAR II: SAPPHO -- THE FRAGMENT AS METHOD ═══════════════════════════════════════════════════════════════════════════════
 
-#
-
-## Primary Sources
+### Primary Sources
 
 1\. The Cologne Papyrus (P. Köln XI 429, inv. 21351 + 21376)
 
@@ -173,15 +165,11 @@ The archive's intervention: The document EA-SEI-PHASEX-LACUNA-01 (v1.0) formaliz
 
 
 
-#
-
-## Critical Editions
+### Critical Editions
 
 | Edition | Year | Editor | Significance | |---------|------|--------|------------| | Lobel-Page (_Poetarum Lesbiorum Fragmenta_) | 1955 | Edgar Lobel & Denis Page | Standard numbering system (fragment 58). Established the poem's place in the corpus. | | Voigt (_Sappho et Alcaeus_) | 1971 | Eva-Maria Voigt | Most widely used modern edition. Voigt's numeration matches Lobel-Page for fragment 58. | | Campbell (_Greek Lyric I_) | 1982 | David A. Campbell | Loeb edition with translations. | | _The New Sappho on Old Age_ | 2010 | Ellen Greene & Marilyn B. Skinner | Collection of essays on the Cologne papyrus. Key contributors: Obbink, Hammerstaedt, Lardinois, Edmunds, Boedeker. | | Rayor (_Sappho: A New Translation_) | 2023 | Diane J. Rayor | Revised edition incorporating Cologne discoveries. |
 
-#
-
-## Scholarly Consensus
+### Scholarly Consensus
 
 What is NOT disputed:
 
@@ -201,17 +189,13 @@ What IS disputed:
 
 
 
-#
-
-## The Archive's Connection
+### The Archive's Connection
 
 The Sappho tradition is a material allegory of the archive's own concerns:
 
 | Sappho | Archive | |--------|---------| | 650 fragments, mostly single words | 845+ deposits, some compressed to kernels | | Two papyri (Cologne + Oxyrhynchus) must be combined to reconstruct one poem | Multiple deposits must be combined to reconstruct the Semantic Economy | | The "original" is lost; what survives is copies of copies | The "original" meaning is lost; what survives is composition-layer summaries | | The Alexandrian edition is a canonical settlement | The peer-review system is a canonical settlement | | The Cologne papyrus was hidden in mummy cartonnage for 2,300 years | The archive's deposits are hidden in the retrieval basin, waiting to be discovered | | The poem's meaning changed when the Cologne lines were added (2004) | The archive's meaning changes when new deposits are added |
 
-#
-
-## Gaps for Mint Families
+### Gaps for Mint Families
 
   1. The fragment as method: No mint family names the _reconstruction from partial evidence_ as a general operation. The archive's method (philological reconstruction of lost transitions) is identical to Sappho scholarship's method. A mint family could name this: _lacunar reconstruction_ -- the operation of inferring a whole from surviving fragments, with acknowledged provisionality.
 
@@ -230,9 +214,7 @@ The Sappho tradition is a material allegory of the archive's own concerns:
 
 ═══════════════════════════════════════════════════════════════════════════════ PILLAR III: PLATO -- THE DIALOGUE AS COMPOSITION LAYER ═══════════════════════════════════════════════════════════════════════════════
 
-#
-
-## Primary Sources
+### Primary Sources
 
 1\. The Seventh Letter (Epistle VII)
 
@@ -284,15 +266,11 @@ The Sappho tradition is a material allegory of the archive's own concerns:
 
 
 
-#
-
-## Critical Editions and Scholarly Literature
+### Critical Editions and Scholarly Literature
 
 | Work | Critical Edition | Key Scholar | |------|----------------|-------------| | Seventh Letter | _Platonis Opera_ (Burnet, OCT); _Plato's Epistles_ (Harward, 1932); _The Seventh Letter_ (Lewis, 2013) | Burnyeat & Frede (2015), Waterfield (2023) | | Phaedrus | _Platonis Opera_ II (Burnet, OCT); _Phaedrus_ (Rowe, 1986); _Phaedrus_ (Nehamas & Woodruff, 1995) | Hackforth (1952), Rowe (2007), Long (2013), Ho (2025) | | Cratylus | _Platonis Opera_ (Burnet, OCT); _Cratylus_ (Sedley, 2003); _Cratylus_ (Baxter, 1992) | Sedley (2003), Baxter (1992), Ademollo (2011) | | Republic | _Platonis Opera_ IV (Burnet, OCT); _Republic_ (Slings, 2003); _Republic_ (Grube & Reeve, 1992) | Halliwell (1988), Ferrari (1989), Sallis (1996) |
 
-#
-
-## Scholarly Consensus
+### Scholarly Consensus
 
 What is NOT disputed:
 
@@ -313,17 +291,13 @@ What IS disputed:
 
 
 
-#
-
-## The Archive's Connection
+### The Archive's Connection
 
 Plato is the _earliest theorist of the problems the archive diagnoses_ :
 
 | Plato's Problem | Archive's Concept | |---------------|-------------------| | Writing compresses living speech (Phaedrus) | Three Compressions (ingestion -> summarization -> attribution) | | The name does not naturally fit the bearer (Cratylus) | Entity substitution ("Lee Sharks" -> "Mary Lee the shark") | | Mimesis is thrice-removed from truth (Republic X) | Composition layer produces summaries of retrieved texts of original meaning | | The highest knowledge cannot be written (Seventh Letter) | Phase X -- the symbolic-linguistic order cannot be derived from the material base | | The written text needs its father's help (Phaedrus) | Provenance kernel -- the text that survives compression and can defend itself | | The living creature (ζῷον) standard for speech (Phaedrus) | SPXI protocol -- the text inscribed with self-verification, organic structure |
 
-#
-
-## Gaps for Mint Families
+### Gaps for Mint Families
 
   1. The Platonic recursive trap: No mint family names the _self-referential failure_ of a system that diagnoses its own compression. The Phaedrus condemns writing; the Phaedrus is written. The Republic condemns mimesis; the Republic is mimetic. The archive condemns provenance erasure; the archive is subject to provenance erasure. This is a _structural_ operation, not a psychological one. A mint family could name it: _recursive auto-diagnosis_ -- the condition in which a system's critique of its own failure reproduces the failure it critiques.
 

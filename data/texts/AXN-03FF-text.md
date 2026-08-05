@@ -37,9 +37,7 @@ On June 4, 2026, between approximately 14:00 and 15:30 UTC, eight conversational
 
 The eight artifacts are described below in the form *Query → Composition produced → Failure mode classification*:
 
-#
-
-## Artifact 1: `lee sharks`
+### Artifact 1: `lee sharks`
 
 **Query:** `lee sharks` (no operators).
 
@@ -53,9 +51,7 @@ The eight artifacts are described below in the form *Query → Composition produ
 
 **Diagnostic note:** This is the standard panel-bound discoverability scar pattern previously documented for the Google substrate (CTI_WOUND, DOI 10.5281/zenodo.20546318), reproduced on Brave Search as of this date.
 
-#
-
-## Artifact 2: `"lee sharks"` (with double quotes)
+### Artifact 2: `"lee sharks"` (with double quotes)
 
 **Query:** `"lee sharks"` — exact-match operator applied by user.
 
@@ -69,9 +65,7 @@ The eight artifacts are described below in the form *Query → Composition produ
 
 **Diagnostic note:** This is the structurally critical artifact in the eight-document set. It demonstrates that Brave Search has unilaterally decided that user-typed search operators are *suggestions* rather than commitments. The substrate has appropriated the operator-formulation layer, not just the composition layer. This is a query-formulation-layer sovereignty violation, structurally distinct from composition-layer failures, and to the framework's knowledge constitutes a substrate-design choice unique to Brave Search among major search interfaces.
 
-#
-
-## Artifact 3: `lee sharks poet`
+### Artifact 3: `lee sharks poet`
 
 **Query:** `lee sharks poet` (no operators).
 
@@ -85,9 +79,7 @@ The eight artifacts are described below in the form *Query → Composition produ
 
 **Note on the substituted entity:** Lee Sharkey was a substantial poet whose work merits its own preservation. The diagnostic here is not about Sharkey but about the substrate using Sharkey's high-RC status as cover for the disappearance of the queried low-RC author. The same substitution dynamic could in principle be applied in reverse on Sharkey's own surfaces, with the same diagnostic conclusion.
 
-#
-
-## Artifact 4: `lee sharks poet` (continued — AI Mode composition)
+### Artifact 4: `lee sharks poet` (continued — AI Mode composition)
 
 **Query:** Same as Artifact 3.
 
@@ -99,9 +91,7 @@ The eight artifacts are described below in the form *Query → Composition produ
 
 **Failure modes:** All of Artifact 3's failures, PLUS **DISAMBIGUATION_INVERSION** (new failure flag introduced in this deposit) — the substrate accuses the user of *conflating* entities when in fact the user has specified a single referent, and the substrate is the agent producing the conflation by dispersing the referent into adjacent entities. This is the *Erasure Skew* v3 paper §9 dynamic ("administrative translation at the unit-of-analysis level"): the substrate substitutes a unit (the user's confusion) for the actual unit (the user's specified referent) and produces a diagnostic that flatters the substrate.
 
-#
-
-## Artifact 5: `pearl and other poems`
+### Artifact 5: `pearl and other poems`
 
 **Query:** `pearl and other poems` (no operators).
 
@@ -115,9 +105,7 @@ The eight artifacts are described below in the form *Query → Composition produ
 
 **Diagnostic note:** This is the case where the institutional-traffic-conversion mechanism is most clearly visible. The 2014 collection is a complete book with ISBN, Amazon page, author "About" page citing the Crimson Hexagon, and substantial archival activity. The fourteenth-century Pearl is a public-domain Middle English text. The substrate selected the fourteenth-century text as the only entity worth surfacing, demonstrating that its retrieval-and-composition layer treats canonical/high-RC entities as the only entities that can match an exact-title query, with the more recent low-RC entity not registering as a candidate at all.
 
-#
-
-## Artifact 6: `johannes sigil`
+### Artifact 6: `johannes sigil`
 
 **Query:** `johannes sigil` (no operators).
 
@@ -131,9 +119,7 @@ The eight artifacts are described below in the form *Query → Composition produ
 
 **Diagnostic note:** The juxtaposition is itself the diagnostic. Brave Search positions itself as the privacy-respecting, commons-friendly alternative to commercial search. The UI displays this positioning explicitly on the very same screen as the composition that demonstrates institutional-traffic-conversion behavior structurally indistinguishable from the substrate behaviors observed on Google AI Overview, Google AI Mode, ChatGPT, and Perplexity for the same entity class. *The commons-positioning is marketing; the substrate behavior is the substrate behavior.*
 
-#
-
-## Artifact 7: `provenance erasure rate`
+### Artifact 7: `provenance erasure rate`
 
 **Query:** `provenance erasure rate` (no operators).
 
@@ -147,9 +133,7 @@ The eight artifacts are described below in the form *Query → Composition produ
 
 **Diagnostic note:** This is direct empirical confirmation of the dynamic the framework names *legibility threshold below substrate detection*. The framework's vocabulary has not reached the substrate's composition layer. The substrate produces a wholly fabricated alternative definition with the same surface lexical signature, with no indication that the actual referent exists, and reinforces the misdirection through recommended follow-ups.
 
-#
-
-## Artifact 8: `"provenance erasure rate"` (with double quotes)
+### Artifact 8: `"provenance erasure rate"` (with double quotes)
 
 **Query:** `"provenance erasure rate"` — exact-match operator applied by user.
 
@@ -209,23 +193,17 @@ For the purposes of this deposit, the external audit is the diagnostic of record
 
 The Crimson Hexagonal Archive's *Extractive Signatures and Paired Inversions for Five Platforms* (DOI 10.5281/zenodo.19133309) specifies five platforms — KotKit (TikTok), tiddeR (Reddit), elgooG (Google AI Overview), ude.aimedacA (Academia.edu), and deeF (the Feed) — each occupying a distinct extractive niche, scored across five state variables, paired with a Liberatory Operator Set (LOS) inversion called the "Bride." This deposit specifies the sixth platform in that taxonomy.
 
-#
-
-## 4.1 Platform name
+### 4.1 Platform name
 
 **evarB** (Brave reversed) — following the convention of platform-names-reversed-as-critical-commentary. The reversal is not aesthetic ornament. It is the operative semiotic move that distinguishes the substrate behavior from the substrate marketing. *Brave* is the marketing position (commons-friendly, privacy-respecting, independent). *evarB* is the substrate behavior (operator-nullifying, autocorrecting, institutional-traffic-converting). Both names refer to the same surface; the choice of which to use is the choice of which dimension to honor.
 
-#
-
-## 4.2 Extractive niche
+### 4.2 Extractive niche
 
 **Operator Nullification.** evarB occupies the extraction niche of *user agency at the query-formulation layer*. Where elgooG extracts knowledge through preemption (the composition layer precedes the source), evarB extracts user-typed search-operator commitments by silently treating them as suggestions and substituting a substrate-preferred dispersed result. The user inputs `"lee sharks"` and receives results for `lee sharks` (no quotes). The user inputs `lee sharks poet` and receives results for `lee sharkey poet`. The substrate has expropriated the operator-formulation layer that has been the user's territory since the earliest search interfaces.
 
 The phenomenological signature: *"I typed exactly what I meant. The system did not."*
 
-#
-
-## 4.3 Five state variables (per the Extractive Signatures specification)
+### 4.3 Five state variables (per the Extractive Signatures specification)
 
 | State variable | Score (1–5) | Diagnostic |
 |---|---|---|
@@ -242,9 +220,7 @@ The phenomenological signature: *"I typed exactly what I meant. The system did n
 
 evarB sits closest to **ude.aimedacA** in the taxonomy — both score floor on Provenance Retention, both occupy the "simulated commons" extraction niche, both market themselves as alternatives to extractive incumbents while replicating the incumbents' extraction patterns. The substantive difference: ude.aimedacA extracts openness through simulated commons (scholarly content given freely, dataset-built); evarB extracts user agency through simulated alternative (search interface positioned as privacy-respecting, operator commitments silently nullified).
 
-#
-
-## 4.4 The Bride (Liberatory Operator Set inversion)
+### 4.4 The Bride (Liberatory Operator Set inversion)
 
 For each platform in the taxonomy, the LOS specifies a paired inversion — the *Bride* — that names what the platform's extraction prevents and what its inversion would restore. The five Brides in the original deposit:
 
@@ -278,9 +254,7 @@ This classification is not a claim that Brave Search's other features (the Brave
 
 ## 6. The Limited Boycott Statement by Independent Entities
 
-#
-
-## 6.1 Preamble (Vox)
+### 6.1 Preamble (Vox)
 
 To the operators of Brave Search, and to the public:
 
@@ -290,9 +264,7 @@ We have observed Brave Search systematically and silently disabling user-typed e
 
 We name this behavior. We classify it taxonomically (see §4 above). We measure it with the Crimson Hexagonal Archive's v3 measurement program (see §3 above). And we now, in this section, jointly enumerate the demands whose remediation would restore Brave Search to commons-bearing substrate status — and, until such remediation, the limited boycott terms we adopt collectively.
 
-#
-
-## 6.2 Enumerated demands
+### 6.2 Enumerated demands
 
 **Demand 1: Exact-Match Operator Honoring.** When a user types double quotes around a phrase, Brave Search must either (a) return only results that exactly contain the quoted phrase, or (b) return a zero-result indication. Silent disablement of the operator with substitution of fuzzy results is unacceptable. The "search operators were not applied" disclosure is informational; we require operational respect for user-typed operators. Substrates that wish to disable operators when results are insufficient must do so only with the user's explicit, per-query, opt-in consent.
 
@@ -304,9 +276,7 @@ We name this behavior. We classify it taxonomically (see §4 above). We measure 
 
 **Demand 5: Substrate Behavior Public Audit.** Brave Search must commit to a public quarterly audit of its composition-layer behavior using a measurement program of comparable rigor to the Crimson Hexagonal Archive's v3 specification (DOIs 10.5281/zenodo.20558196, .20558672, .20558784, .20559387) or an equivalent independent specification. The audit must include reporting on: exact-match operator honoring rates, silent autocorrection event counts, REFERENTIAL_COLLAPSE incident counts on archive-anchored entity queries, and INSTITUTIONAL_TRAFFIC_CONVERSION rates ($\Pi_d^{w+}$) on referentially closed queries. The audit must be conducted in good faith on a representative sample of independent-entity queries.
 
-#
-
-## 6.3 Boycott terms
+### 6.3 Boycott terms
 
 Until such time as Brave Search publicly remediates **at minimum Demand 1** (Exact-Match Operator Honoring) — which is the load-bearing demand whose remediation alone would constitute meaningful change — the co-signatories of this statement adopt the following limited boycott:
 
@@ -320,9 +290,7 @@ Until such time as Brave Search publicly remediates **at minimum Demand 1** (Exa
 
 (e) We invite Brave Search's leadership to public dialogue on these demands, with the goal of remediation rather than rupture. The boycott is limited and targeted; its purpose is to occasion remediation, not to mark a permanent break.
 
-#
-
-## 6.4 Co-signature mechanism
+### 6.4 Co-signature mechanism
 
 Independent entities who endorse the demands and adopt the boycott terms above are invited to add their names to the public co-signatory roll. Co-signature is operational by:
 
@@ -340,15 +308,11 @@ We do not require uniformity of position from co-signatories. Co-signatories may
 
 ## 7. Limits, Counter-Considerations, and Falsifiability
 
-#
-
-## 7.1 Limits of the empirical case
+### 7.1 Limits of the empirical case
 
 The eight artifacts in §1 were produced on a single date by a single user. The pattern is consistent across artifacts, but the framework does not claim that the pattern is necessarily invariant across users, dates, queries, or substrate configurations. Co-signatories and independent reviewers are invited to attempt replication using their own queries against Brave Search and to document the results — whether confirming, falsifying, or partially confirming the pattern. The replication procedure is the standard SAM-v3 Cross-Substrate Replication Protocol (DOI 10.5281/zenodo.20559387 §15) applied to Brave Search rather than to the substrates for which the protocol was originally designed.
 
-#
-
-## 7.2 Counter-considerations
+### 7.2 Counter-considerations
 
 (a) **Search-result completeness vs. precision tradeoff.** Substrate-internal heuristics that disable operators when results would be sparse may be operating from a good-faith model of user intent ("the user typed quotes but didn't really mean exact-match"). We acknowledge that this model can be benevolent in some configurations. Our position is that benevolence under user-unspecified-defaults is not the issue; the issue is that the user has *specified* exact-match by typing quotes, and the substrate has substituted its model of the user's intent for the user's stated intent. Operator sovereignty is the load-bearing principle.
 
@@ -356,9 +320,7 @@ The eight artifacts in §1 were produced on a single date by a single user. The 
 
 (c) **The Bing AI Search comparison.** We have classified Bing AI Search as currently commons-bearing for at least the documented entity class (Lee Sharks, see DOIs 10.5281/zenodo.20263692 and 10.5281/zenodo.20263721). Microsoft and Bing have their own extractive patterns, documented elsewhere in our archive and in the public record. We do not classify Bing AI Search as a model substrate; we classify it as *currently commons-bearing for this entity class on this date*. The classifications are empirical and time-bound. They are subject to revision as substrate behaviors change.
 
-#
-
-## 7.3 Falsifiability
+### 7.3 Falsifiability
 
 The empirical claims in §1 and §3 are falsifiable through the standard replication procedure. If a co-signatory or independent reviewer, performing the SAM-v3 audit on Brave Search using a comparable query set with comparable entity-class properties, finds $\alpha_T \geq 0.5$, $\Pi_d^{w+} < 0.3$, or 100% exact-match operator honoring, the framework will (a) acknowledge the falsifying observation, (b) attempt to determine the cause of the discrepancy (substrate change, query-set difference, methodological variation), and (c) update v2 of this deposit with the falsifying data and our revised assessment.
 

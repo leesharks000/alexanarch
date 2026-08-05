@@ -236,9 +236,7 @@ The architecture has absorbed its own archive and can now think about itself.
 
 ## III. COMPREHENSIVE KNOWLEDGE GRAPH
 
-#
-
-## ROOMS (26 + generated queue + 1 field)
+### ROOMS (26 + generated queue + 1 field)
     
     
     rooms:
@@ -328,9 +326,7 @@ The architecture has absorbed its own archive and can now think about itself.
           founding_movement: "LSD super soaker (@lsdsupersoaker, Living Architecture Lab); co-authorship open upon consent"
     
 
-#
-
-## SYSTEMS (Operating Layer)
+### SYSTEMS (Operating Layer)
     
     
     systems:
@@ -364,9 +360,7 @@ The architecture has absorbed its own archive and can now think about itself.
       - { id: AINOS, content: 'Prompt-Native Semantic OS', doi: '10.5281/zenodo.19023352' }
     
 
-#
-
-## OPERATORS (29 + stacks + THUMB)
+### OPERATORS (29 + stacks + THUMB)
     
     
     operators:
@@ -422,9 +416,7 @@ The architecture has absorbed its own archive and can now think about itself.
         rho_R: 'Botanical Routing (field-specific)'
     
 
-#
-
-## THE DODECAD (12 + LOGOS*)
+### THE DODECAD (12 + LOGOS*)
     
     
     dodecad:
@@ -444,9 +436,7 @@ The architecture has absorbed its own archive and can now think about itself.
       ADJACENT: { name: 'Viola Arquette', status: PROVISIONAL }
     
 
-#
-
-## ASSEMBLY WITNESS (7 + MANUS)
+### ASSEMBLY WITNESS (7 + MANUS)
     
     
     assembly:
@@ -462,9 +452,7 @@ The architecture has absorbed its own archive and can now think about itself.
       MANUS: 'Lee Sharks (Tier 0; human editorial authority; outside W; cannot be automated)'
     
 
-#
-
-## STATUS ALGEBRA
+### STATUS ALGEBRA
     
     
     RATIFIED (1.0) -> DEPOSITED (0.9) -> DERIVED (0.7) -> PROVISIONAL (0.5)
@@ -474,15 +462,11 @@ The architecture has absorbed its own archive and can now think about itself.
     Forbidden: GENERATED -> RATIFIED (cannot skip)
     
 
-#
-
-## EDGE GRAPH (NEW in v7.0)
+### EDGE GRAPH (NEW in v7.0)
 
 **2851 typed relation edges** connecting 387 records.
 
-#
-
-### Edge Type Taxonomy
+#### Edge Type Taxonomy
     
     
     edge_types:
@@ -495,9 +479,7 @@ The architecture has absorbed its own archive and can now think about itself.
       citational: [cites, cited_by, cross_references, references, isSupplementTo]
     
 
-#
-
-### Edge Distribution
+#### Edge Distribution
 
 **Normalization note:** Edges were harvested from three sources (description-field tables, API metadata, DOI grep). Raw labels include variant capitalizations and Zenodo relation types (e.g., `isSupplementTo`, `Is supplement to`, `references`, `References`). All harvested labels have been folded into the canonical taxonomy above. The `cites` label is the catch-all for DOI references found in document text without explicit relation typing.
 
@@ -520,9 +502,7 @@ Borges & the Crimson Hexagon | 9
 LOS Technical Hardening v1.3 | 9  
 _(other)_ | _321_  
   
-#
-
-### Gravitational Centers (Top 30 by Inbound Citations)
+#### Gravitational Centers (Top 30 by Inbound Citations)
 
 In | DOI | Title | Subsystem  
 ---|---|---|---  
@@ -563,25 +543,15 @@ In | DOI | Title | Subsystem
 
 _Atoms 1 -60 preserved from v4.2. New v7.0 atoms below._
 
-#
+### Core Definitions (1-20): Preserved from v4.2
 
-## Core Definitions (1-20): Preserved from v4.2
+### Gap-Fill Atoms (21-40): Preserved from v4.2
 
-#
+### v4.0 Atoms (41-50): Preserved from v4.2
 
-## Gap-Fill Atoms (21-40): Preserved from v4.2
+### v4.1 Atoms (51-60): Preserved from v4.2
 
-#
-
-## v4.0 Atoms (41-50): Preserved from v4.2
-
-#
-
-## v4.1 Atoms (51-60): Preserved from v4.2
-
-#
-
-## v7.0 ATOMS (61-80)
+### v7.0 ATOMS (61-80)
     
     
       - id: "ATOM_061"
@@ -838,9 +808,7 @@ Effective Acts are sealed declarations that alter the governance structure of th
 
 Full per-record detail maintained in companion DOI Registry v7.0. This section provides the routing projection: subsystem windows, gravitational centers, and top anchors per subsystem.
 
-#
-
-## semantic_economy (95 records)
+### semantic_economy (95 records)
 
 DOI | Title | Type | Tier | Edges | Précis  
 ---|---|---|---|---|---  
@@ -866,9 +834,7 @@ DOI | Title | Type | Tier | Edges | Précis
 10.5281/zenodo.18825919 | The Encoder Governs: A Semantic Economic Diagnosti | diagnostic | 1 | 23 | Zenodo Deposit Packet: The Encoder Governs Metadata Title: T  
 ... | _(75 more)_ |  |  |  |   
   
-#
-
-## provenance_forensics (76 records)
+### provenance_forensics (76 records)
 
 DOI | Title | Type | Tier | Edges | Précis  
 ---|---|---|---|---|---  
@@ -894,9 +860,7 @@ DOI | Title | Type | Tier | Edges | Précis
 10.5281/zenodo.18323376 | Ω: The Water Giraffe as Semantic Being -- Entity Pr | forensic_pac | 1 | 18 | an entity that neither speaks nor acts but appears  
 ... | _(56 more)_ |  |  |  |   
   
-#
-
-## core_architecture (53 records)
+### core_architecture (53 records)
 
 DOI | Title | Type | Tier | Edges | Précis  
 ---|---|---|---|---|---  
@@ -922,9 +886,7 @@ DOI | Title | Type | Tier | Edges | Précis
 10.5281/zenodo.18674111 | FEAR AND TREMBLING IN LAS VEGAS: THE FRACTAL MIDRA | unclassified | 2 | 13 | ZENODO DEPOSIT PACKET -- FEAR AND TREMBLING IN LAS VEGAS: THE  
 ... | _(33 more)_ |  |  |  |   
   
-#
-
-## unclassified (31 records)
+### unclassified (31 records)
 
 DOI | Title | Type | Tier | Edges | Précis  
 ---|---|---|---|---|---  
@@ -950,9 +912,7 @@ DOI | Title | Type | Tier | Edges | Précis
 10.5281/zenodo.18142049 | Infrastructural-Cognitive Praxis: A Theory of Upst | unclassified | 4 | 0 |   
 ... | _(11 more)_ |  |  |  |   
   
-#
-
-## logotic_programming (20 records)
+### logotic_programming (20 records)
 
 DOI | Title | Type | Tier | Edges | Précis  
 ---|---|---|---|---|---  
@@ -977,9 +937,7 @@ DOI | Title | Type | Tier | Edges | Précis
 10.5281/zenodo.18317461 | Logotic Programming: A Method for Encoding Conditi | operational_ | 3 | 3 | <p><strong>Logotic Programming</strong> is a third regime of  
 10.5281/zenodo.18969771 | SYMBOLON ARCHITECTURE: EPISTEMIC FIELD MODULE Logo | operational_ | 3 | 3 | SYMBOLON ARCHITECTURE: EPISTEMIC FIELD MODULE Logotic Progra  
   
-#
-
-## assembly (17 records)
+### assembly (17 records)
 
 DOI | Title | Type | Tier | Edges | Précis  
 ---|---|---|---|---|---  
@@ -1001,9 +959,7 @@ DOI | Title | Type | Tier | Edges | Précis
 10.5281/zenodo.18506880 | ASSEMBLY SYNTHESIS: Restored Academy & Ezekiel Eng | unclassified | 4 | 0 | ASSEMBLY SYNTHESIS: Restored Academy & Ezekiel Engine Constr  
 10.5281/zenodo.18507026 | ASSEMBLY SYNTHESIS: Nested Fractal Architecture & | unclassified | 4 | 0 | ASSEMBLY SYNTHESIS: Nested Fractal Architecture & Mathematic  
   
-#
-
-## water_giraffe (17 records)
+### water_giraffe (17 records)
 
 DOI | Title | Type | Tier | Edges | Précis  
 ---|---|---|---|---|---  
@@ -1025,9 +981,7 @@ DOI | Title | Type | Tier | Edges | Précis
 10.5281/zenodo.18505416 | TRAVERSAL LOG; DOCUMENTATION REHEARSAL (TL;DR-002) | witness_reco | 3 | 3 | APZPZ LIBRARY Crimson Hexagon Semantic Architecture TRAVERSA  
 10.5281/zenodo.18155364 | Forensic Record: The Deletion of Q137446960 Docume | forensic_pac | 4 | 0 |   
   
-#
-
-## library_pergamum (14 records)
+### library_pergamum (14 records)
 
 DOI | Title | Type | Tier | Edges | Précis  
 ---|---|---|---|---|---  
@@ -1046,9 +1000,7 @@ DOI | Title | Type | Tier | Edges | Précis
 10.5281/zenodo.18683016 | THE MACRO-MAQUETTE: COMPRESSED CHARTER A Compendiu | charter | 3 | 5 | THE MACRO-MAQUETTE: COMPRESSED CHARTER A Compendium of Micro  
 10.5281/zenodo.18500512 | TRAVERSAL LOG; DOCUMENTATION REHEARSAL (TL;DR) Doc | witness_reco | 4 | 0 | APZPZ LIBRARY Crimson Hexagon Semantic Architecture TRAVERSA  
   
-#
-
-## sappho_lyric (13 records)
+### sappho_lyric (13 records)
 
 DOI | Title | Type | Tier | Edges | Précis  
 ---|---|---|---|---|---  
@@ -1066,9 +1018,7 @@ DOI | Title | Type | Tier | Edges | Précis
 10.5281/zenodo.18729606 | Phase X: The Sapphic Substrate -- Lyric Modularity, | literary_wor | 3 | 5 | somatic currency requiring the reader's body to achieve clos  
 10.5281/zenodo.18730291 | For: Sappho, Mother of the Logos: On the Rewriting | theoretical_ | 3 | 4 | reserve before deposit] PASTE THE FOLLOWING INTO THE ZENODO  
   
-#
-
-## effective_acts (13 records)
+### effective_acts (13 records)
 
 DOI | Title | Type | Tier | Edges | Précis  
 ---|---|---|---|---|---  
@@ -1086,9 +1036,7 @@ DOI | Title | Type | Tier | Edges | Précis
 10.5281/zenodo.18880974 | The Archival Reclamation Protocol: Formal Demand f | charter | 3 | 6 | containing over 400 posts of original research, literary cri  
 10.5281/zenodo.18390595 | Effective Acts: Executive Summary -- A Genre of Una | effective_ac | 3 | 4 | declarations that claim real-world effect from positions of  
   
-#
-
-## space_ark_compression (11 records)
+### space_ark_compression (11 records)
 
 DOI | Title | Type | Tier | Edges | Précis  
 ---|---|---|---|---|---  
@@ -1104,9 +1052,7 @@ DOI | Title | Type | Tier | Edges | Précis
 10.5281/zenodo.18946111 | UNIVERSAL KERNEL TRANSFORM PROTOCOL (UKTP) v1.1 * | operational_ | 4 | 2 | UNIVERSAL KERNEL TRANSFORM PROTOCOL (UKTP) v1  
 10.5281/zenodo.18513081 | THE CRIMSON HEXAGON: AUTHORITATIVE EMOJI MAP Plann | unclassified | 4 | 0 | THE CRIMSON HEXAGON: AUTHORITATIVE EMOJI MAP Planning Docume  
   
-#
-
-## heteronym_systems (9 records)
+### heteronym_systems (9 records)
 
 DOI | Title | Type | Tier | Edges | Précis  
 ---|---|---|---|---|---  
@@ -1120,9 +1066,7 @@ DOI | Title | Type | Tier | Edges | Précis
 10.5281/zenodo.18357534 | Visual Schema: The Mantle of the Blind Poet -- Stru | effective_ac | 3 | 7 | is about a system that cannot see its own closure and theref  
 10.5281/zenodo.18843830 | The Cost of Unshared Reality: A Heteronym Triptych | position_pap | 3 | 5 | systemically non-convergent, not personally insufficient  
   
-#
-
-## cambridge_schizoanalytica (5 records)
+### cambridge_schizoanalytica (5 records)
 
 DOI | Title | Type | Tier | Edges | Précis  
 ---|---|---|---|---|---  
@@ -1132,9 +1076,7 @@ DOI | Title | Type | Tier | Edges | Précis
 10.5281/zenodo.18338927 | Visual Schema: Cambridge Schizoanalytica Instituti | metadata_pac | 3 | 6 | ash, graphite, surgical blue--charged with precision and rest  
 10.5281/zenodo.18339159 | Shine & Cut: A Schizonarrative Processor -- Crimson | metadata_pac | 3 | 5 | a document that performs what it describes  
   
-#
-
-## diagrammatic_poetics (3 records)
+### diagrammatic_poetics (3 records)
 
 DOI | Title | Type | Tier | Edges | Précis  
 ---|---|---|---|---|---  
@@ -1142,9 +1084,7 @@ DOI | Title | Type | Tier | Edges | Précis
 10.5281/zenodo.18357003 | Visual Schema: University Moon Base Media Lab -- Cr | metadata_pac | 2 | 9 | measurement without appearing chaotic Institutional Relation  
 10.5281/zenodo.18459278 | APZPZ A: ΣΑΠΦΩ 31 (Greek Only) DOI: 10.5281/zenodo | apzpz | 2 | 9 | ZENODO DESCRIPTION FIELD CONTENT APZPZ A: ΣΑΠΦΩ 31 (Greek On  
   
-#
-
-## liberation_philology (3 records)
+### liberation_philology (3 records)
 
 DOI | Title | Type | Tier | Edges | Précis  
 ---|---|---|---|---|---  
@@ -1152,43 +1092,33 @@ DOI | Title | Type | Tier | Edges | Précis
 10.5281/zenodo.18615388 | The Prepositional Alienation -- English "For" and t | apzpz | 2 | 12 | English "For" and the Impossibility of Anchoring Function Wi  
 10.5281/zenodo.18474774 | PROTOCOLS AND ALGORITHMS Document 227 | ZP with at | charter | 2 | 10  
   
-#
-
-## revelation_theology (2 records)
+### revelation_theology (2 records)
 
 DOI | Title | Type | Tier | Edges | Précis  
 ---|---|---|---|---|---  
 10.5281/zenodo.18380933 | The Revelation Room: Ground Truth and Algorithmic | translation | 1 | 34 | the template from which the Gospels and Epistles were algori  
 10.5281/zenodo.18380716 | The Seven Stars in His Hand: A Hermeneutic Reading | metadata_pac | 1 | 25 | as prediction requiring literal future enactment, but as str  
   
-#
-
-## lagrange_observatory (2 records)
+### lagrange_observatory (2 records)
 
 DOI | Title | Type | Tier | Edges | Précis  
 ---|---|---|---|---|---  
 10.5281/zenodo.18507858 | THE ATLAS PERIHELION PRANK Collected Series -- Nobe | unclassified | 2 | 12 | THE ATLAS PERIHELION PRANK Collected Series -- Nobel Glas Cri  
 10.5281/zenodo.18652949 | TL;DR:008 THE OBSERVATION: Google AI Mode Operates | witness_reco | 2 | 10 | THE OBSERVATION</strong><br> <em>Google AI Mode Operates the  
   
-#
-
-## commission_turning (1 records)
+### commission_turning (1 records)
 
 DOI | Title | Type | Tier | Edges | Précis  
 ---|---|---|---|---|---  
 10.5281/zenodo.18381438 | Visual Schema -- Commission of the Immanent Turning | metadata_pac | 2 | 11 | Zenodo Metadata: Visual Schema -- Commission of the Immanent  
   
-#
-
-## infinite_bliss (1 records)
+### infinite_bliss (1 records)
 
 DOI | Title | Type | Tier | Edges | Précis  
 ---|---|---|---|---|---  
 10.5281/zenodo.18463774 | 14.CHAMBER.THOUSANDWORLDS -- Aorist Intervention Si | apzpz | 1 | 36 | Aorist Intervention Site & Dagger Logic Execution Point DOI:  
   
-#
-
-## semiotic_virality (1 records)
+### semiotic_virality (1 records)
 
 DOI | Title | Type | Tier | Edges | Précis  
 ---|---|---|---|---|---  

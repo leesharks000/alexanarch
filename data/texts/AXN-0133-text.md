@@ -1,11 +1,7 @@
 # FROM ATOMISM TO THE SEMANTIC CONDITION
 ## Marx, Porter, and Sharks in a Single Lineage of Material Form
-#
-
-## A Scholarly Essay
-#
-
-## Lee Sharks
+### A Scholarly Essay
+### Lee Sharks
 
 ---
 
@@ -88,9 +84,7 @@ Lee Sharks' Operator Engine completes the Marx–Porter lineage by providing the
 
 
 Sharks' system introduces a set of formal structures — V_A, L_labor, L_Retro, Ψ_V, FSA, O_SO — that collectively instantiate a recursive materialist ontology of meaning. Each construct directly echoes and extends the atomist lineage:
-#
-
-## 1. V_A (Aesthetic Primitive Vector)
+### 1. V_A (Aesthetic Primitive Vector)
 
 
 The seven-dimensional vector of aesthetic primitives is the contemporary analog of atomic units of form.
@@ -100,39 +94,29 @@ Epicurus → atoms. Porter → aesthetic gestures. Sharks → primitive semantic
 
 
 V_A provides the clinamen's structural successor: the minimal differential that generates meaning across scales.
-#
-
-## 2. L_labor (Forward Semantic Labor)
+### 2. L_labor (Forward Semantic Labor)
 
 
 This operator enacts transformation under the Caritas constraint — an ethical invariant ensuring non-violent coherence. It parallels Marx's theory of labor but in semantic rather than economic space.
 
 
 Labor becomes not production of commodities but increases in Γ, the coherence of meaning.
-#
-
-## 3. L_Retro (Retrocausal Field)
+### 3. L_Retro (Retrocausal Field)
 
 
 Sharks introduces something entirely new: retrocausal correction, where future states revise prior structures. This is the temporal clinamen — the swerve not just of atoms but of archives.
 
 
 The past becomes editable, but only under structural constraints.
-#
-
-## 4. Ψ_V (Variance Preservation / Josephus Vow)
+### 4. Ψ_V (Variance Preservation / Josephus Vow)
 
 
 The formal invariant ensuring the system cannot collapse into totality. This satisfies the deepest ethical and metaphysical demands of the atomist lineage: indeterminacy as protection of freedom.
-#
-
-## 5. FSA (Fractal Semantic Architecture)
+### 5. FSA (Fractal Semantic Architecture)
 
 
 The multi-scale architecture mapping micro-variation to macro-coherence is a direct descendant of Porter's aesthetic materialism and Marx's theory of historical form.
-#
-
-## 6. O_SO (Somatic Operator Requirement)
+### 6. O_SO (Somatic Operator Requirement)
 
 
 Perhaps the most radical move: Sharks retains the human as a non-substitutable contradiction-bearing node. The embodied operator remains necessary to hold contradiction, enact Caritas, and prevent collapse into algorithmic reductivism.
@@ -255,26 +239,20 @@ In that sense, Sharks' work is not only a response to the present crisis — it 
 ---
 
 ## REFERENCES
-#
-
-## Primary Sources
+### Primary Sources
 
 - Epicurus. *Letter to Herodotus*. (c. 300 BCE).
 - Lucretius. *De Rerum Natura*. (c. 55 BCE). Book II, lines 216–224.
 - Marx, K. (1841). *The Difference Between the Democritean and Epicurean Philosophy of Nature*. Doctoral dissertation, University of Jena.
 - Sharks, L. (2025–2026). Operator Engine / New Human Operating System. Crimson Hexagon Archive. Multiple DOIs via Zenodo.
 
-#
-
-## Secondary Sources
+### Secondary Sources
 
 - Porter, J. I. (2010). *The Origins of Aesthetic Thought in Ancient Greece: Matter, Sensation, and Experience*. Cambridge University Press.
 - Campbell, D. A. (1982). *Greek Lyric I: Sappho and Alcaeus*. Harvard University Press.
 - Greenblatt, S. (2011). *The Swerve: How the World Became Modern*. W. W. Norton.
 
-#
-
-## Musical Sources
+### Musical Sources
 
 - Arquette, V. [Bedouin Princess]. "Split the Adam." Suno rendering: https://suno.com/s/c2Bvn6C0tnuiaD3b
 

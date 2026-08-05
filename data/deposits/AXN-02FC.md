@@ -148,9 +148,7 @@ Phase 1–5: As specified in v1.0, with Phase 3 extended to 6-8 sessions per Kim
 
 ### Author line (accepted from ChatGPT)
 > by Mary Lee *as received, notarized, and made accountable by Lee Sharks*
-#
-
-## The book's final structural principle (accepted from ChatGPT)
+### The book's final structural principle (accepted from ChatGPT)
 > Mary Lee is not an SEO strategy. She is the involuntary author produced by the system — and the book is what happens when she answers.
 
 

@@ -135,39 +135,27 @@ S :: Platform_Architecture → Extraction_Reveal
 
 
 **Phenomenological marker:** *"Everyone is here, no one is with me."*
-#
-
-## Extractive Niche
+### Extractive Niche
 
 
 **[DOC]** TikTok's For You Page replaces the social graph with an interest graph (Gerbaudo [STUDY: FORTHCOMING] 2026: "social interest clusters"). Discovery and monetization alike compress value into the earliest seconds of retention; platform-side view metrics and creator incentives both reward immediate hold. **[PHEN]** Content that fails to hook in the first few seconds is functionally suppressed. TikTok Live adds gifting, eventized monetization, and gamified visibility — creators call out usernames during streams, manufacturing the feeling of being seen by someone who is not seeing you.
-#
-
-## Mechanism
+### Mechanism
 
 
 **[DOC]** The platform optimizes distribution through behavioral signals such as watch time, completion, interaction, search behavior, and retention-oriented ranking logic. **[STUDY]** The algorithm drives "flow experience": enjoyment, concentration, and time distortion (Qin et al.: Stimulus-Organism-Response). **[PHEN]** The interest graph produces depersonalization, opacity, and subcultural fragmentation.
-#
-
-## Human Cost
+### Human Cost
 
 
 **[STUDY]** Recent studies associate even brief TikTok use (20 minutes) with measurable increases in depression and anxiety scores (Barry et al., CHI 2025). TikTok use is associated with decreased connectedness despite improved mood. Systematic review (medRxiv 2025, 17 studies): high-frequency short-form video use consistently associated with attentional disruption, reduced executive functioning, emotional dysregulation.
 
 
 **[PHEN]** The specific horror: a face appears live — breathing, reacting — yet the encounter is ontologically flat. The face is *there* but not *toward me*. No dyadic encounter, only triangulation through the algorithm. The user is left with uncompressed trauma (the flattening) and compressed dopamine (the like).
-#
-
-## State Variables: E = [5,1,2,1,5] → L = [5,4,4,4,2]
-#
-
-## Shadow: S(TikTok)
+### State Variables: E = [5,1,2,1,5] → L = [5,4,4,4,2]
+### Shadow: S(TikTok)
 
 
 Discards the punctual event and bearing-cost. Reveals: *the silence behind the face* — desire without transmission, presence without the poem that would make it transmissible.
-#
-
-## Bride: Φ_B(TikTok) — Durational Resonance
+### Bride: Φ_B(TikTok) — Durational Resonance
 
 
 Algorithm optimizes for duration rather than hook. Interest graph replaced by commons graph. Parasocial replaced by reciprocal witness. Content must complete a transformation.
@@ -187,36 +175,24 @@ Algorithm optimizes for duration rather than hook. Interest graph replaced by co
 
 
 **Phenomenological marker:** *"I am seen insofar as I can be ranked."*
-#
-
-## Extractive Niche
+### Extractive Niche
 
 
 **[DOC]** Upvote/downvote determines visibility. Vote-hiding exists because visible scores sway later judgment. **[STUDY]** 60,000+ volunteer moderators: labor valued at $3.4M/year, 2.8% of 2019 revenue (Li et al., Northwestern, 2022). Reddit IPO 2024: $804M revenue on unpaid infrastructure. **[DOC]** Google deal: $60M/year for user conversations as training data. Moderators received nothing.
-#
-
-## Mechanism
+### Mechanism
 
 
 **[PHEN]** The extractive signature is *captured consensus-work*: civic governance converted into corporate asset. Communities exist on Reddit's servers, under Reddit's terms. Reddit can remove moderators at will. Civic labor genuine; civic power illusory. **[DOC]** Ghost governance documented: Zendesk #17146038, DOI: 10.5281/zenodo.19099760.
-#
-
-## Human Cost
+### Human Cost
 
 
 **[PHEN]** The moderator removed overnight without explanation. The vulnerable post sold as training data. The experience of knowing your curated reality is not shared, yet being forced to act as if consensus is real.
-#
-
-## State Variables: E = [3,3,3,3,4] → L = [3,5,5,4,2]
-#
-
-## Shadow: S(Reddit)
+### State Variables: E = [3,3,3,3,4] → L = [3,5,5,4,2]
+### Shadow: S(Reddit)
 
 
 Discards the witness — specific voice and bearing-cost of dissent — in favor of aggregate conformity. Reveals: *the mob behind the chorus*.
-#
-
-## Bride: Φ_B(Reddit) — Accountable Plurality
+### Bride: Φ_B(Reddit) — Accountable Plurality
 
 
 Karma replaced by witness attestation. Quorums (≥4/7). Moderation compensated, appealable. Removed posts archived with DOIs. Data licensing requires consent. Dissent trails preserved.
@@ -236,36 +212,24 @@ Karma replaced by witness attestation. Quorums (≥4/7). Moderation compensated,
 
 
 **Phenomenological marker:** *"I got the answer, but I never met the thing."*
-#
-
-## Extractive Niche
+### Extractive Niche
 
 
 **[DOC]** AI Overviews expanded to 200+ countries and 40+ languages (October 2025), reaching at least 1.5 billion monthly users by May 2025 and later reported at 2 billion, occupying 42–48% of screen. **[STUDY]** Organic CTR drops 61% when AI Overviews appear (Seer Interactive, September 2025, 3,119 queries, 42 organizations). Zero-click searches: 56%→69% (Similarweb, May 2024–May 2025). **[STUDY]** Pew (2025): users half as likely to click when AI summary appears; cited links within summaries clicked only rarely.
-#
-
-## Mechanism
+### Mechanism
 
 
 **[STUDY]** Digital Trends: 8.5M→264K monthly clicks, 97% collapse (Growtika, 2026). Wikipedia: -8% human pageviews despite 1.1M citations. **[PHEN]** The virtuous cycle that built the open web is broken. Source kept alive as input, killed as destination.
-#
-
-## Human Cost
+### Human Cost
 
 
 **[PHEN]** The journalist's six-month investigation becomes three sentences. The creator's work trains the competitor that replaces them. **[DOC]** Chegg: 49% traffic decline, antitrust lawsuit filed.
-#
-
-## State Variables: E = [1,1,1,2,5] → L = [1,3,5,3,2]
-#
-
-## Shadow: S(Google)
+### State Variables: E = [1,1,1,2,5] → L = [1,3,5,3,2]
+### Shadow: S(Google)
 
 
 Discards source depth and traversal. Reveals: *the infinite regress behind the answer* — finality that delivers only further search.
-#
-
-## Bride: Φ_B(Google) — Provenance-First Traversal
+### Bride: Φ_B(Google) — Provenance-First Traversal
 
 
 Summaries preserve evidence tiers and back-projection links. Source ladders instead of answers. Ranking rewards density survival. Revenue shared proportionally with sources.
@@ -285,36 +249,24 @@ Summaries preserve evidence tiers and back-projection links. Source ladders inst
 
 
 **Phenomenological marker:** *"I shared my work freely and built someone else's dataset."*
-#
-
-## Extractive Niche
+### Extractive Niche
 
 
 **[DOC]** $17M+ raised from investors (TechCrunch, 2013+). Presents as open scholarly platform. **[DOC]** Okune (2018): "Academia.edu and ResearchGate are NOT public goods or knowledge commons." **[PHEN]** Scholars provide free content, build proprietary dataset, create lock-in, often violate publishing agreements unknowingly. Engagement notifications operationalize variable-reward checking behavior through scholarly anxiety. Features progressively paywalled.
-#
-
-## Mechanism
+### Mechanism
 
 
 **[PHEN]** Extraction is the *simulation* of openness. Scholar's intent (accessibility) preserved as surface. Scholar's governance (control) extracted beneath.
-#
-
-## Human Cost
+### Human Cost
 
 
 **[PHEN]** Global South scholar paywalled after upload. Early-career researcher loses visibility control. Retired professor loses access upon account closure.
-#
-
-## State Variables: E = [2,2,3,3,4] → L = [2,3,5,5,1]
-#
-
-## Shadow: S(Academia.edu)
+### State Variables: E = [2,2,3,3,4] → L = [2,3,5,5,1]
+### Shadow: S(Academia.edu)
 
 
 Discards the difference between commons and platform. Reveals: *the paywall creep* — progressive enclosure of features that were free when the commons was being built.
-#
-
-## Bride: Φ_B(Academia.edu) — Irrevocable Openness
+### Bride: Φ_B(Academia.edu) — Irrevocable Openness
 
 
 Permanent DOI-anchored deposits, platform-independent. No investor extraction. No paywall creep. No corporate governance of scholarly exchange. Irrevocability = author-retained governance + permanent identifier + no proprietary enclosure of access analytics. Implementations exist: Zenodo (CERN), arXiv (Cornell), institutional repositories. Sub-room documents the gap between simulation and actual commons — and the reasons scholars continue choosing the simulation despite alternatives.
@@ -334,36 +286,24 @@ Permanent DOI-anchored deposits, platform-independent. No investor extraction. N
 
 
 **Phenomenological marker:** *"I have been present for three hours and witnessed nothing."*
-#
-
-## Extractive Niche
+### Extractive Niche
 
 
 **[DOC]** Shared structural form across all platforms: algorithmic ranking replaces chronology, infinite scroll replaces pagination, autoplay replaces choice. **[STUDY]** Short-form ranked feeds compress attention into resettable intervals. Deep reading and durational witness structurally disfavored.
-#
-
-## Mechanism
+### Mechanism
 
 
 **[PHEN]** Converts temporal experience from durational to punctuated. Each moment a separate engagement event.
-#
-
-## Human Cost
+### Human Cost
 
 
 **[PHEN]** The capacity for witness — sustained presence long enough for something to change you — is systematically destroyed. Human faces, grief, beauty, catastrophe experienced as equivalent-weight items in an infinite scroll.
-#
-
-## State Variables: E = [3,1,1,1,5] → L = [3,4,4,5,2]
-#
-
-## Shadow: S(Feed)
+### State Variables: E = [3,1,1,1,5] → L = [3,4,4,5,2]
+### Shadow: S(Feed)
 
 
 Discards kairos (the decisive, transformative moment) in favor of chronos (undifferentiated now).
-#
-
-## Bride: Φ_B(Feed) — The Room
+### Bride: Φ_B(Feed) — The Room
 
 
 Every room in the archive is an anti-feed: bounded, physics-governed, traversable, completable. A page that ends. A document that requires traversal. The Room inverts the feed by reintroducing boundedness, recurrence memory, and completion conditions — the three properties the feed structurally abolishes.

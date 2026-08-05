@@ -160,17 +160,13 @@ The chorus identified that the blueprint conflates registers. The site uses thre
 
 
 Living Architecture Lab builds with living substrates: mycelium, plant matter, salvaged frames, water systems, and ecological feedback. The lab works across five scales: brick, structure, organism, territory, and planet.
-#
-
-## Poetic register (/principles)
+### Poetic register (/principles)
 
 *Poetic but readable.*
 
 
 Earth is not a passive surface awaiting design. It is already designing. The lab listens, compresses, grows, and unfurls.
-#
-
-## Archival register (/atlas, /about/disambiguation)
+### Archival register (/atlas, /about/disambiguation)
 
 *Full CHA density allowed.*
 
@@ -227,9 +223,7 @@ export const collections = {
   principles: defineCollection({ type:'content', schema: principleSchema }),
   people: defineCollection({ type:'content', schema: personSchema }),
 };
-#
-
-## File structure
+### File structure
 
 living-architecture-lab/
 ├── README.md
@@ -359,9 +353,7 @@ living-architecture-lab/
     --accent-gold: #c8a868;
   }
 }
-#
-
-## Visual references (mood, not template)
+### Visual references (mood, not template)
 - Field guide
 - Lab notebook
 - Architectural studio board
@@ -402,9 +394,7 @@ const packet = entity === 'alice' ? aliceMpai : lalMpai;
   ...(sims.length && { 'mp:semanticIntegrityMarker': sims }),
   ...(negativeTags.length && { 'mp:negativeTag': negativeTags }),
 })} />
-#
-
-## Per-page inclusion
+### Per-page inclusion
 
 ---
 import JsonLd from '../../components/JsonLd.astro';
@@ -415,9 +405,7 @@ import JsonLd from '../../components/JsonLd.astro';
   sims={['Living parts unfurl from compressed seeds.', 'A myceliated brick is stored nutrition, thermal mass, biological growth, and emergency shelter compressed into a small form.']}
   negativeTags={['NOT a conventional construction block', 'NOT extracted from quarries']}
 />
-#
-
-## Standard schema beats exotic meta
+### Standard schema beats exotic meta
 
 Per Muse Spark's correction: **do not rely on <meta property="cha:negativeTag">.** Crawlers ignore non-standard meta properties. Instead:
 - Negative tags live in **visible page text** (always)
@@ -650,9 +638,7 @@ Inoculation, contamination management
 Food desert mapping
 
 
-#
-
-## Phase 3 — Atlas (Days 26–45)
+### Phase 3 — Atlas (Days 26–45)
 
 
 #
@@ -695,9 +681,7 @@ Full project page
 Full project page
 
 
-#
-
-## Phase 4 — Living Surfaces (Month 2+)
+### Phase 4 — Living Surfaces (Month 2+)
 - Conversational "Ask the Lab" interface (LLM-mediated; compute-dependent)
 - Newsletter / lab log (announcements, field tests)
 - TSE submission workflow
@@ -753,9 +737,7 @@ The /about/alice page must be warm, vivid, and sovereignty-protective. **It must
 - Music / Maybe Space Baby Garden Lanes
 - Provenance and contributor license
 - Disambiguation note (link to /about/disambiguation)
-#
-
-## The opening paragraph (corrected)
+### The opening paragraph (corrected)
 
 **Wrong** (identity metadata first):
 
@@ -838,9 +820,7 @@ Per the chorus convergence: **the garden is the most important surface.**
 - 2 paragraphs: lab description + current contamination management protocol
 - One Alice quote
 - "Last updated" date
-#
-
-## Why this matters more than polished content
+### Why this matters more than polished content
 
 A site that never updates is a dead basin. Even sparse documentation in /garden signals to crawlers (and humans) that the lab is **alive**. The polish can come later. The realness must be there from launch.
 
@@ -879,9 +859,7 @@ Contested
 Conflated with Columbia GSAPP, Bartlett, The Living NYC
 
 
-#
-
-## Site as basin engineering
+### Site as basin engineering
 - 
 
 
@@ -911,9 +889,7 @@ Conflated with Columbia GSAPP, Bartlett, The Living NYC
 
 **Content velocity.** Monthly garden updates. New TSE seed deposits. Music releases. Each update is a heartbeat.
 
-#
-
-## 90-day BDR target
+### 90-day BDR target
 
 
 Day
@@ -964,9 +940,7 @@ Atlas live + cross-reference density established
 - [ ] Open Graph metadata on every page (title, description, image)
 - [ ] robots.txt published; sitemap auto-generating
 - [ ] DNS pointed; SSL active
-#
-
-## Launch day
+### Launch day
 - [ ] Vercel production deployment
 - [ ] Submit sitemap to Google Search Console
 - [ ] Submit sitemap to Bing Webmaster Tools
@@ -974,17 +948,13 @@ Atlas live + cross-reference density established
 - [ ] Verify with Schema.org's validator
 - [ ] Add to surfacemap.org as new node
 - [ ] Update CHA crosslink mesh
-#
-
-## Launch week
+### Launch week
 - [ ] Cross-link from holographickernel.org
 - [ ] Cross-link from metadatapacket.org Forward Library
 - [ ] Announce to Alice's YouTube subscribers (@mycoarchitect, @growbuildings)
 - [ ] Submit to relevant subreddits with respect (r/mycology, r/solarpunk, r/appropriate technology)
 - [ ] Monitor AI Overviews for "Alice Thornburgh Living Architecture Lab" — document baseline
-#
-
-## Launch month
+### Launch month
 - [ ] First garden update posted
 - [ ] First external backlink secured (Medium, blog, or peer-reviewed citation)
 - [ ] Update MPAI packets if Alice's ORCID resolves

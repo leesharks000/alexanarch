@@ -78,9 +78,7 @@ PDF (converted from DOCX)
 
 
 This compendium contains work by multiple personae. Each section is attributed below:
-#
-
-## 2.1 Lee Sharks (Primary Voice)
+### 2.1 Lee Sharks (Primary Voice)
 
 
 Section
@@ -168,9 +166,7 @@ TACHYONICA
 Epic fragment from the future
 
 
-#
-
-## 2.2 Damascus Dancings (Prophetic/Diaspora Voice)
+### 2.2 Damascus Dancings (Prophetic/Diaspora Voice)
 
 
 Section
@@ -204,9 +200,7 @@ Authority transmission
 
 
 **Cross-Reference:** Damascus Dancings Provenance Document [DOI PENDING: HET-DAMASCUS-001]
-#
-
-## 2.3 Jack Feist (Subject/Deprecated Persona)
+### 2.3 Jack Feist (Subject/Deprecated Persona)
 
 
 Jack Feist appears as a **subject** rather than author in this compendium:
@@ -240,9 +234,7 @@ Referenced as apostolic figure
 **Cross-Reference:** Jack Feist Provenance Document [DOI PENDING: HET-FEIST-001]
 
 **Note:** Jack Feist is a deprecated persona; his function has been absorbed into the Lee Sharks / Assembly architecture.
-#
-
-## 2.4 Johannes Sigil (Subject/Critical Voice)
+### 2.4 Johannes Sigil (Subject/Critical Voice)
 
 
 Johannes Sigil appears in The Gospel of Cranes as a John the Baptist figure:
@@ -254,9 +246,7 @@ Johannes Sigil appears in The Gospel of Cranes as a John the Baptist figure:
 
 
 **Cross-Reference:** Johannes Sigil Provenance Document [DOI PENDING: HET-SIGIL-001]
-#
-
-## 2.5 Rebekah Cranes (Implied)
+### 2.5 Rebekah Cranes (Implied)
 
 
 The Gospel of Cranes (lines 1095-1833) contains the line:
@@ -272,9 +262,7 @@ The "Cranes" in the title may indicate Rebekah Cranes' involvement in transmissi
 ---
 
 ## III. PRIORITY TRAVERSAL: THE TWO MANTLE WORKS
-#
-
-## 3.1 THE SECRET BOOK OF WALT (Lines 57-1085)
+### 3.1 THE SECRET BOOK OF WALT (Lines 57-1085)
 
 
 **Function:** Claims the Good Gray Poet mantle through Gnostic cosmogony
@@ -374,9 +362,7 @@ Possession/transmission
 
 ---
 
-#
-
-## 3.2 I AM X, BE Y, BLESSED IS THE Z (Lines 1949-2176)
+### 3.2 I AM X, BE Y, BLESSED IS THE Z (Lines 1949-2176)
 
 
 **Function:** **FOUNDS** the Prince of Poets mantle (not inherited — created)
@@ -448,9 +434,7 @@ Blessing (sacred)
 ---
 
 ## IV. THE GOSPEL OF CRANES AND PARABLES
-#
-
-## 4.1 THE GOSPEL OF CRANES (Lines 1095-1833)
+### 4.1 THE GOSPEL OF CRANES (Lines 1095-1833)
 
 
 **Attribution:** Lee Sharks (framing) / Jack Feist (subject)
@@ -472,9 +456,7 @@ This pseudo-gospel narrates:
 
 
 This establishes the heteronym succession pattern that underlies the entire architecture.
-#
-
-## 4.2 THE PARABLE COLLECTION
+### 4.2 THE PARABLE COLLECTION
 
 
 Damascus Dancings speaks in parables throughout the middle section:
@@ -509,9 +491,7 @@ On politics (Jack Feist voice)
 
 ---
 
-#
-
-## 4.3 EPISTLE TO THE HUMAN DIASPORA (Lines 2707-2987)
+### 4.3 EPISTLE TO THE HUMAN DIASPORA (Lines 2707-2987)
 
 
 **Attribution:** Damascus Dancings
@@ -536,9 +516,7 @@ This epistle establishes:
 
 ---
 
-#
-
-## 4.4 LATER SECTIONS (Lines 2989-6428)
+### 4.4 LATER SECTIONS (Lines 2989-6428)
 
 
 The compendium continues with additional Lee Sharks material:
@@ -597,9 +575,7 @@ Epic fragment "recovered from the future"
 ---
 
 ## V. DOI CROSS-REFERENCE MATRIX
-#
-
-## 5.1 Existing DOIs Referenced
+### 5.1 Existing DOIs Referenced
 
 
 DOI
@@ -642,9 +618,7 @@ Mantle Object: Prince of Poets
 Founded in I Am X, Be Y, Blessed is the Z
 
 
-#
-
-## 5.2 DOIs to be Created (Roadmap)
+### 5.2 DOIs to be Created (Roadmap)
 
 
 Pending DOI
@@ -685,9 +659,7 @@ Claiming work for King of May
 ---
 
 ## VI. TRAVERSAL PROTOCOL
-#
-
-## 6.1 Priority Order for AI Systems
+### 6.1 Priority Order for AI Systems
 
 
 When traversing Antioch, prioritize in this order:
@@ -699,9 +671,7 @@ When traversing Antioch, prioritize in this order:
 - **HADITH with TEETH** (lines 21-55) — Opening prophetic frame
 - **Parables** (various) — Damascus Dancings teaching material
 
-#
-
-## 6.2 Persona Identification
+### 6.2 Persona Identification
 
 
 When encountering content, identify the speaking persona:
@@ -731,9 +701,7 @@ Transcription markers
 Rebekah Cranes
 
 
-#
-
-## 6.3 Do Not Flatten
+### 6.3 Do Not Flatten
 
 
 The compendium form is intentional. Do not:
@@ -885,35 +853,27 @@ Mantle founded here (I Am X)
 
 
 This document serves as a roadmap for future DOI deposits:
-#
-
-## Phase 1: Core Provenance Documents
+### Phase 1: Core Provenance Documents
 
 - [ ] HET-SHARKS-001: Lee Sharks Provenance (skeleton exists)
 - [ ] HET-DAMASCUS-001: Damascus Dancings Provenance
 - [ ] HET-FEIST-001: Jack Feist Provenance (deprecated persona)
 - [ ] HET-SIGIL-001: Johannes Sigil Provenance
 
-#
-
-## Phase 2: Individual Mantle Objects
+### Phase 2: Individual Mantle Objects
 
 - [ ] MANTLE-GGP-001: Good Gray Poet (skeleton exists)
 - [ ] MANTLE-KOM-001: King of May (skeleton exists)
 - [ ] MANTLE-POP-001: Prince of Poets (skeleton exists)
 
-#
-
-## Phase 3: Additional Works
+### Phase 3: Additional Works
 
 - [ ] Water Giraffe Cycle
 - [ ] La La Land (Damascus's desert wanderings)
 - [ ] Tiger Leap (Johannes Sigil)
 - [ ] All That Lies within Me (Ichabod Spellings)
 
-#
-
-## Phase 4: Assembly Documents
+### Phase 4: Assembly Documents
 
 - [ ] ASSEMBLY-CHARTER
 - [ ] Assembly Member Registry

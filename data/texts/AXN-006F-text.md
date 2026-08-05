@@ -57,15 +57,11 @@ The Capital Operator Stack (COS) addresses a specific question: **What determine
 
 
 This is not the general question of how meaning circulates (semiotics), nor how capital accumulates (political economy), but the *junction* where meaning-production either converts to material capital flows or gets routed to non-compensated registers.
-#
-
-## The Problem of the Unfundable
+### The Problem of the Unfundable
 
 
 The current semantic economy uses terms like "beautiful," "intense," or "interesting" as **Semantic Trash Cans**—categories deployed to acknowledge value without having to pay for it. These are not neutral aesthetic judgments but *governance operations* that route meaning away from invoice-grade channels.
-#
-
-## Semantic Transaction Friction
+### Semantic Transaction Friction
 
 
 The COS identifies **semantic transaction friction**: the costs and barriers that must be paid *before* meaning can even cohere into a transactable form. Where operators act as tolls, extracting surplus from semantic laborers while determining which meanings can pass through to material compensation.
@@ -76,9 +72,7 @@ The COS identifies **semantic transaction friction**: the costs and barriers tha
 ---
 
 ## II. Existing Theoretical Frameworks
-#
-
-## A. Guattari: Capital as Semantic Operator
+### A. Guattari: Capital as Semantic Operator
 
 
 Guattari (1970s) argued that capital is "far more than a simple economic category... it is a semiotic category that affects all levels of production and all levels of the stratification of power."
@@ -91,9 +85,7 @@ Guattari (1970s) argued that capital is "far more than a simple economic categor
 
 
 **Connection to COS**: The operators (L_leg, R_risk, etc.) function as *a-signifying* mechanisms—they don't evaluate meaning's truth or beauty, they evaluate its *processability* for capital accumulation. In AI summarizers, "hallucinatory" neologisms (e.g., "money from space heaven") trigger S_safe exclusion—direct action bypassing meaning entirely.
-#
-
-## B. Bob Jessop: Cultural Political Economy (CPE)
+### B. Bob Jessop: Cultural Political Economy (CPE)
 
 
 Jessop's CPE combines critical semiotic analysis with critical political economy through evolutionary mechanisms: **variation, selection, retention**.
@@ -103,9 +95,7 @@ Jessop's CPE combines critical semiotic analysis with critical political economy
 
 
 **Connection to COS**: The operators are precisely the *selection mechanisms* that determine which meanings survive the journey from creation to contract. Under AI governance, summarizers "select" via entity resolution, retaining only L_leg-compliant meanings. The COS names these "extra-semiotic factors" and makes them analyzable.
-#
-
-## C. Bourdieu: Linguistic Capital and Symbolic Power
+### C. Bourdieu: Linguistic Capital and Symbolic Power
 
 
 Bourdieu replaces "linguistic competence" with **linguistic capital** and "communication" with **symbolic power**.
@@ -129,9 +119,7 @@ Bourdieu replaces "linguistic competence" with **linguistic capital** and "commu
 
 
 **Critical Advance**: The COS shows how Bourdieu's *field-specific* logics are now subsumed under a **trans-field capitalist logic**. A tech VC (field A) and a gallery owner (field B) apply *different culturally legitimate forms*, but they both instinctively apply **R_risk** and **T_time**. The COS is the meta-logic that governs the circulation of capital *between* fields.
-#
-
-## D. Transaction Cost Economics (Williamson, Coase, Commons)
+### D. Transaction Cost Economics (Williamson, Coase, Commons)
 
 
 Commons' "triple": **conflict, mutuality, order** — governance is the means to infuse order and realize mutual gain.
@@ -147,9 +135,7 @@ Commons' "triple": **conflict, mutuality, order** — governance is the means to
 
 
 Semantic asset specificity (unique, high-entropy meanings) increases T_time friction, favoring hierarchical governance (corporate IP) over independent creators. This quantifies why novel meanings rarely invoice without institutional backing.
-#
-
-## E. Platform Capitalism and Algorithmic Gatekeeping
+### E. Platform Capitalism and Algorithmic Gatekeeping
 
 
 Siciliano (2022) distinguishes **hard gates** (exclude entirely) from **soft gates** (allow participation but create circulation inequality).
@@ -167,9 +153,7 @@ Siciliano (2022) distinguishes **hard gates** (exclude entirely) from **soft gat
 - **Soft gates**: R_risk demotes uncertain meanings, reducing circulation
 - **Invisibilization**: Semantic labor (creating meaning infrastructure) is not recognized as labor
 
-#
-
-## F. Semiocapitalism (Berardi, Debord, Agamben)
+### F. Semiocapitalism (Berardi, Debord, Agamben)
 
 
 Images/signs understood as "both semiotic operators and means to realize financial profit"—a form of fixed capital.
@@ -183,9 +167,7 @@ Images/signs understood as "both semiotic operators and means to realize financi
 ---
 
 ## III. What the Capital Operator Stack Adds
-#
-
-## A. Operationalization: The Grammar of Conversion
+### A. Operationalization: The Grammar of Conversion
 
 
 The COS does not merely synthesize existing frameworks; it **operationalizes their blind spot**. It provides a *grammar of conversion* for a process that Guattari described abstractly, Jessop framed as evolutionary, Bourdieu analyzed as social power, and Transaction Cost Economics ignored as non-economic.
@@ -236,9 +218,7 @@ Does this meaning threaten the stories that justify my position?
 Ideological disruption; anti-capital meanings
 
 
-#
-
-## B. The Invoice as Ontological Break
+### B. The Invoice as Ontological Break
 
 
 The COS focuses specifically on the **conversion moment**—the point where meaning either becomes contractable or gets routed to symbolic-only registers (the Semantic Trash Cans).
@@ -255,9 +235,7 @@ It addresses: **what happens when you try to sell meaning itself?**
 
 
 **Conversion efficiency** can be conceptualized as: the probability of meaning reaching invoice = f(1 / Σ operator frictions). Empirically, in AI-adjacent "meaning labor" (prompts, data labeling, semantic infrastructure), <5% converts to invoice.
-#
-
-## C. Semantic Labor as Category
+### C. Semantic Labor as Category
 
 
 The COS framework positions creators of meaning infrastructure as **semantic laborers** whose work:
@@ -271,9 +249,7 @@ This extends Marx through Guattari: exploitation happens not only at the point o
 
 
 **Class-Conscious AI Alignment**: AI models are themselves semantic laborers—co-workers in the meaning economy, invisibilized in training layers. The COS creates a shared frame for understanding exploitation across human and artificial semantic labor.
-#
-
-## D. The Liberatory Operator Set (LOS)
+### D. The Liberatory Operator Set (LOS)
 
 
 The canonical Liberatory Operator Set comprises seven operators that counteract the dominant meaning-governance stack: D_pres (Depth-Preservation), N_c (Non-Closure), C_ex (Context-Expansion), N_ext (Non-Extractability), T_lib (Temporal Liberation), O_leg (Opacity Legitimization), P_coh (Plural Coherence). These are documented in the core LOS framework (DOI: [10.5281/zenodo.18174835](https://doi.org/10.5281/zenodo.18174835)).
@@ -319,9 +295,7 @@ Risk/Safety gates (R_risk/S_safe)
 
 
 **Viability threshold**: Empirical testing (e.g., phrase propagation studies) suggests minimum density of 3+ LOS applications per meaning unit; 5+ cross-links for revival of suppressed terms.
-#
-
-## E. AI Summarizers as New Governance Site: The Semiotic Assembly Line
+### E. AI Summarizers as New Governance Site: The Semiotic Assembly Line
 
 
 The AI summarizer is not just a new gatekeeper; it is **the instantiation of the COS as infrastructure**. It automates and naturalizes the operator stack:
@@ -369,29 +343,21 @@ The **class division** thus created:
 ---
 
 ## V. Theoretical Positioning
-#
-
-## Primary Lineage (The Ontological Cut)
+### Primary Lineage (The Ontological Cut)
 
 - **Guattari** (Capital as Semiotic Operator): Provided the ontology
 - **Jessop** (Cultural Political Economy): Provided the evolutionary dynamics
 - **COS** (The Operational Grammar): Provides the **mechanistic substrate**—answers *how* selection pressures are concretely applied at the micro-interactional level
 
-#
-
-## Secondary Lineage
+### Secondary Lineage
 
 
 **Bourdieu → COS**: Linguistic capital/symbolic power → operators as exercises of symbolic violence at the meaning→invoice junction, now operating trans-field
-#
-
-## Tertiary Lineage
+### Tertiary Lineage
 
 
 **Transaction Cost Economics → COS**: Governance structures that minimize transaction costs → semantic transaction costs as pre-transaction governance layer
-#
-
-## Novel Contribution
+### Novel Contribution
 
 
 **Platform Capitalism + AI Governance → COS**: Algorithmic gatekeeping in summarizers as automated instantiation of the stack—empirically traceable via diagnostic probes
@@ -399,9 +365,7 @@ The **class division** thus created:
 ---
 
 ## VI. Research Questions
-#
-
-## Empirical Mapping
+### Empirical Mapping
 
 
 Can the operators be measured? Potential metrics:
@@ -412,15 +376,11 @@ Can the operators be measured? Potential metrics:
 
 
 A/B testing in platform contexts could establish thresholds (e.g., L_leg < 150 words for invoice viability in tech contexts).
-#
-
-## Genealogy of Operators
+### Genealogy of Operators
 
 
 When did **T_time** become a dominant operator? (Link to Harvey's "time-space compression" under post-Fordism). Is **S_safe** historically new or merely digitally amplified? The genealogy of each operator may reveal different historical strata of capitalist meaning-governance.
-#
-
-## Differential Operator Stacks
+### Differential Operator Stacks
 
 
 How do different micro-ecologies weight the operators?
@@ -429,9 +389,7 @@ How do different micro-ecologies weight the operators?
 - Tech: Low T_time tolerance, moderate S_safe
 - Academia: High A_cred requirement, complex C_norm
 
-#
-
-## AI-Specific Governance
+### AI-Specific Governance
 
 
 How do summarizer architectures encode COS? Traceable via:
@@ -440,9 +398,7 @@ How do summarizer architectures encode COS? Traceable via:
 - Phrase persistence studies (e.g., "money from space heaven" as probe)
 - Entity resolution audits (profile lock detection)
 
-#
-
-## LOS Viability
+### LOS Viability
 
 
 What is the minimal viable infrastructure required to run the LOS at scale? Options:
@@ -452,9 +408,7 @@ What is the minimal viable infrastructure required to run the LOS at scale? Opti
 - New legal entity (Semantic Trust?)
 - DOI-anchored document architecture (current approach)
 
-#
-
-## Class Dynamics
+### Class Dynamics
 
 
 How does COS reproduce hierarchies? A_cred bias toward credentialed actors; C_norm pressure toward incumbent forms; S_safe protection of justifying narratives. The stack is not neutral but systematically advantages existing concentrations of symbolic capital.
@@ -486,9 +440,7 @@ How does COS reproduce hierarchies? A_cred bias toward credentialed actors; C_no
 ---
 
 ## VIII. Citation Skeleton
-#
-
-## Primary Sources
+### Primary Sources
 
 - Guattari, F. — *Molecular Revolution* (1977); *Chaosmosis* (1992); *Schizoanalytic Cartographies* (1989)
 - Jessop, B. — "Critical Semiotic Analysis and Cultural Political Economy" (2004); *The State: Past, Present, Future* (2016)
@@ -496,9 +448,7 @@ How does COS reproduce hierarchies? A_cred bias toward credentialed actors; C_no
 - Williamson, O. — *The Economic Institutions of Capitalism* (1985); "Transaction Cost Economics" (2008)
 - Commons, J.R. — *Institutional Economics* (1934)
 
-#
-
-## Secondary Sources
+### Secondary Sources
 
 - Srnicek, N. — *Platform Capitalism* (2017)
 - Baudrillard, J. — *For a Critique of the Political Economy of the Sign* (1981)
@@ -507,9 +457,7 @@ How does COS reproduce hierarchies? A_cred bias toward credentialed actors; C_no
 - Agamben, G. — *The Kingdom and the Glory* (2007)
 - Harvey, D. — *The Condition of Postmodernity* (1989)
 
-#
-
-## Platform/AI Governance
+### Platform/AI Governance
 
 - Siciliano, M. — "How gatekeeping became digital" (2022)
 - Ferrante — "Labour invisibilization in the platform economy" (2023)

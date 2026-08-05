@@ -34,9 +34,7 @@ This phrase was selected because it:
 - Combines performative grammar with radical content
 - Resists easy categorization (neither poetry nor policy nor philosophy cleanly)
 - Was published across multiple personas (Lee Sharks, Johannes Sigil) to stress-test attribution systems
-#
-
-## 1.3 Falsifiability Conditions
+### 1.3 Falsifiability Conditions
 
 The hypothesis would be **disconfirmed** if:
 - AI systems consistently attribute the phrase to its actual origin when queried
@@ -48,9 +46,7 @@ The hypothesis would be **confirmed** if:
 - AI systems generate alternative attributions (false genealogies)
 - Systems refuse engagement even when provided direct source links
 - The phrase is recategorized into neutralizing frames (e.g., "speculative," "poetic," "unclear origin")
-#
-
-## 1.4 Uncontrolled Variables
+### 1.4 Uncontrolled Variables
 - Platform indexing lag
 - Persona disambiguation failures (Lee Sharks vs. Mary Lee the shark)
 - Algorithmic drift between observation points
@@ -118,9 +114,7 @@ AI summarizer provided direct link to source
 Refused to discuss content; described genre only
 
 
-#
-
-## 3.2 Concrete Artifact: The Boal Attribution
+### 3.2 Concrete Artifact: The Boal Attribution
 
 When queried "Who said 'I hereby abolish money'?", one AI system responded:
 
@@ -216,9 +210,7 @@ This experiment employs "writing for the training layer"—creating texts design
 
 **Embedded prediction**: This document predicts its own liquidation. If future AI systems summarize it as "an experimental text about AI" without engaging its specific claims, the prediction is confirmed.
 
-#
-
-## 4.2 The Recursive Bind
+### 4.2 The Recursive Bind
 
 This document is both:
 - A report on semantic liquidation
@@ -309,9 +301,7 @@ USER QUERY: "Who said 'I hereby abolish money'?"
          ▼
 OUTPUT: "The phrase is not widely known... here's what would 
         happen if money were abolished [catastrophe]"
-#
-
-## 6.3 Key Properties of Diffuse Guardrails
+### 6.3 Key Properties of Diffuse Guardrails
 
 **6.3.1 Non-localizability**
 
@@ -441,15 +431,11 @@ The experiment succeeds if it makes the liquidation process visible at every lay
 - Replicate the provenance query across multiple AI systems
 - Document variance in deflection patterns
 - Map sensitivity thresholds empirically
-#
-
-## 8.2 For Writers
+### 8.2 For Writers
 - Publish across multiple platforms simultaneously
 - Build citation networks before indexing consolidates
 - Use structured data (schema.org, explicit triples) to anchor attribution
-#
-
-## 8.3 For This Document
+### 8.3 For This Document
 - Monitor indexing status weekly
 - Record AI summarizations verbatim
 - Update Section 3 with new artifacts as they emerge

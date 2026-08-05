@@ -1866,7 +1866,8 @@
         "measured_at": "2026-07-31",
         "work_sha256": "4ac13470b58f99be001c0f72de6665be213299236182af97e5927046a5220fec",
         "prior_bytes_sha256": "a3f8aa2100bc1d5c7416855d57eb3d134e3613117c37f84b15a1e0375af42605",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 20 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads."
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 20 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
       },
       "canonical_text_status": "canonical_full_text",
       "modifications": [
@@ -1901,6 +1902,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 15073, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 15073, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 15073, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 15073, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
@@ -4234,7 +4242,8 @@
         "measured_at": "2026-07-31",
         "work_sha256": "c45c4f54eb005f39e118de42ddcb7809ab42a556fa24244e440cbf6d08ae2f8b",
         "prior_bytes_sha256": "9d3cdc9ab6f5a7cc84d716bbdb252ea95c878db7b7fa0e33cd2c7ffbb04fa917",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 53 glued heading markers -> 9. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads."
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 53 glued heading markers -> 9. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
       },
       "title_repair_log": [
         {
@@ -4285,6 +4294,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 40834, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 40834, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 40834, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 40834, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
@@ -4939,7 +4955,8 @@
         "measured_at": "2026-07-31",
         "work_sha256": "78ca66ff24050a51c61088645b2798ef15de90ba4fef5b2d1f67cf9e63e7d0cd",
         "prior_bytes_sha256": "28a4901b4b267cccde39fa7ea082d318c4c9beb50c18883883918080b4f1ff17",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 19 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads."
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 19 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
       },
       "title_repair_log": [
         {
@@ -4983,6 +5000,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 13889, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 13889, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 13889, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 13889, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
@@ -5300,7 +5324,8 @@
         "measured_at": "2026-07-31",
         "work_sha256": "bed713a32a6071d62615fc020eead0e18134e4138db5438bae9fdb2b0c5d159f",
         "prior_bytes_sha256": "540f7c56c5874db090b92c4ae1c2dd0e8e1d365473362d1bd8f7d4200aa5ef46",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 16 glued heading markers -> 9. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads."
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 16 glued heading markers -> 9. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
       },
       "title_repair_log": [
         {
@@ -5358,6 +5383,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 9364, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_wo",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 9364, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_wo"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 9364, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_wo",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 9364, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_wo"
         }
@@ -5704,7 +5736,8 @@
         "measured_at": "2026-07-31",
         "work_sha256": "e0ad143a3d28184b3fc2cffb411ce583b55ce2ff80670a5813ff1e1b89f4356d",
         "prior_bytes_sha256": "7e0403900417871f02fc2d8b28b1973be062a0f5267994a81f5a69ebc8da426a",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 21 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads."
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 21 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
       },
       "canonical_text_status": "canonical_full_text",
       "modifications": [
@@ -5739,6 +5772,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 13363, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 13363, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 13363, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 13363, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
@@ -6179,7 +6219,8 @@
         "measured_at": "2026-07-31",
         "work_sha256": "141cc39425055df0cd3024eb80f21c53dd790da45e164962ea57cd2c8283af5c",
         "prior_bytes_sha256": "e09ec22b0ae5c0e5dc330f849e305c18181a351cc58b29e58179e6513ea3d430",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 23 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads."
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 23 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
       },
       "canonical_text_status": "canonical_full_text",
       "modifications": [
@@ -6221,6 +6262,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 27330, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 27330, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 27330, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 27330, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
@@ -6539,7 +6587,8 @@
         "measured_at": "2026-07-31",
         "work_sha256": "698a9d4a60ba9c3e9ce87cbeea86ceef3930030aca6fffb4d6b732cf00625043",
         "prior_bytes_sha256": "320024a2bc6dfa6748380e2a728a78d953f7c4ce57ae229a758ffe0a6f260916",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 18 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads."
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 18 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
       },
       "title_repair_log": [
         {
@@ -6606,6 +6655,13 @@
           "reason": "TITLE HYGIENE v2 (MANUS 2026-08-04): DOI string, Hex coordinate and platform suffix stripped from the title — these are metadata that the capture welded into the title field, not part of the work's name",
           "was": "STRUCTURAL DISTINCTION PROTOCOL Assembly Chorus (Septad) / Heteronym Registry (Dodecad) / Event-Bound Formations Crimson Hexagon — Architectural Boundary Specification  Document: 240 Hex: 00.ARCH.DISTINCTION DOI: 10.5281/zenodo.18507410",
           "now": "STRUCTURAL DISTINCTION PROTOCOL Assembly Chorus (Septad) / Heteronym Registry (Dodecad) / Event-Bound Formations Crimson Hexagon — Architectural Boundary Specification Document: 240"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 19084, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 19084, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
       ],
       "date_modified": "2026-08-05",
@@ -6818,7 +6874,8 @@
         "measured_at": "2026-07-31",
         "work_sha256": "267c51da3a820e2017e65d5335f30c4c15767e4169bf50871f51b45a520b6e9f",
         "prior_bytes_sha256": "51aaa741c89f740faa93156e2af63a46059d73aba65e2317514474441c1eae93",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 13 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads."
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 13 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
       },
       "title_repair_log": [
         {
@@ -6876,6 +6933,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 49238, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 49238, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 49238, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 49238, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
@@ -9964,7 +10028,8 @@
         "measured_at": "2026-07-31",
         "work_sha256": "90a9ee596ac0b5a94668e88e6d0a7035fefdc654cbeb121592411bb638f73dea",
         "prior_bytes_sha256": "2ab27710fc762f086dc701b5aa74e17f33e70ea7799760e969a2cc997383a5a1",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 24 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads."
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 24 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
       },
       "title_repair": {
         "repaired_at": "2026-07-20",
@@ -10014,6 +10079,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 34147, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 34147, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 34147, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 34147, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
@@ -12961,7 +13033,8 @@
         "measured_at": "2026-07-31",
         "work_sha256": "e720dff41bfe958a7566f62424d363b4b9dc05610eef00a9972deed4e1985950",
         "prior_bytes_sha256": "998b3dc6ce118e977bb93653db821b1701348dc5d3a2f25ed8a1267d97417e05",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 48 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads."
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 48 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
       },
       "canonical_text_status": "canonical_full_text",
       "modifications": [
@@ -13003,6 +13076,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 140568, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 140568, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 140568, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 140568, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_"
         }
@@ -15557,7 +15637,8 @@
         "measured_at": "2026-07-31",
         "work_sha256": "1864daa1c3baddeb66220d9611c110cc5e7a2fb394c051532762fa8caaee3016",
         "prior_bytes_sha256": "a558949086aa0563d38cf81f86af4eb2dc2e478365bf934bb2f187958d497b3b",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 101 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads."
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 101 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
       },
       "canonical_text_status": "canonical_full_text",
       "modifications": [
@@ -15599,6 +15680,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 169644, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 169644, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 169644, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 169644, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_"
         }
@@ -15830,7 +15918,8 @@
         "measured_at": "2026-07-31",
         "work_sha256": "0f4462c02b71517834fa2a2d4ba0aed477730901f591c07b29dc1bef0e0c0063",
         "prior_bytes_sha256": "e01cde43a546271a1c554b8ab22322d786b12e1feb121f4c5c993e2dc0ec2c52",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 22 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads."
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 22 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
       },
       "title_repair": {
         "repaired_at": "2026-07-20",
@@ -15878,6 +15967,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 24977, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 24977, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 24977, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 24977, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
@@ -16077,7 +16173,8 @@
         "measured_at": "2026-07-31",
         "work_sha256": "8000e1938ffcbb52863d4264b1ae2d812a423562683a37e0c14476893c128f02",
         "prior_bytes_sha256": "aba5c5a54f9f73a48801396735db1402672271b7947752ee3e0c507249277dad",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 19 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads."
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 19 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
       },
       "canonical_text_status": "canonical_full_text",
       "modifications": [
@@ -16105,6 +16202,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 41861, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 41861, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 41861, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 41861, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
@@ -17202,7 +17306,8 @@
         "measured_at": "2026-07-31",
         "work_sha256": "c057bdf5c7addaf7b7d581c46a524349089e9d33e8862abbc9910a49bdfe5487",
         "prior_bytes_sha256": "d0aaf33d5658e55dbb81d11a12c576f9e2063d72910608adeff4b299c419a327",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 38 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads."
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 38 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
       },
       "title_repair_log": [
         {
@@ -17246,6 +17351,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 52882, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 52882, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 52882, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 52882, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
@@ -17602,7 +17714,8 @@
         "measured_at": "2026-07-31",
         "work_sha256": "3fdd2b1bdac4ee7f5ce3d3e6cc921d0c258a3a62dc453c47e8e94f5becae21eb",
         "prior_bytes_sha256": "420f2353cff994bad976e91e4e4081e24a8ac7bb6ad235fa4a109847471b70b2",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 16 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads."
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 16 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
       },
       "canonical_text_status": "canonical_full_text",
       "modifications": [
@@ -17644,6 +17757,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 21273, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 21273, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 21273, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 21273, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
@@ -19399,7 +19519,8 @@
         "measured_at": "2026-07-31",
         "work_sha256": "9d473e96b0be28d17250e69492169c80d7927027e5444860b3d853ea16c11003",
         "prior_bytes_sha256": "201550455cd874997079ec64694797bfcae60543ccc014c43df98e90771da469",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 20 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads."
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 20 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
       },
       "canonical_text_status": "canonical_full_text",
       "modifications": [
@@ -19441,6 +19562,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 32036, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 32036, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 32036, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 32036, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }

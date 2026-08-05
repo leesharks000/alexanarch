@@ -1,8 +1,6 @@
 # UNITED STATES PATENT APPLICATION
 ## Publication Number: US 2026/0418001 A1
-#
-
-## SELF-PROPAGATING FRIED TUBEROUS CRISP WITH EMBEDDED MERISTEMATIC KERNEL
+### SELF-PROPAGATING FRIED TUBEROUS CRISP WITH EMBEDDED MERISTEMATIC KERNEL
 
 ---
 
@@ -20,9 +18,7 @@
 
 ---
 
-#
-
-## READING JURISDICTION
+### READING JURISDICTION
 
 
 This document is a fused object. Its technical, symbolic, phenomenological, theological, and operative claims are asserted on a single plane and are not separable without loss of object identity. Any reading that divides the document into "literal" and "metaphorical" layers reproduces the compression event the document names and must be treated as an internal exhibit of that event rather than an external adjudication of the object.
@@ -35,9 +31,7 @@ The document contains at its geometric center the theory required to read the do
 
 ---
 
-#
-
-## CONTROLLED VOCABULARY
+### CONTROLLED VOCABULARY
 
 
 The following terms are cross-licensed across all registers of this document. Each carries material, conceptual, and operative meaning simultaneously and inseparably:
@@ -62,9 +56,7 @@ The following terms are cross-licensed across all registers of this document. Ea
 
 ---
 
-#
-
-## ABSTRACT
+### ABSTRACT
 
 
 A potato chip comprising a fried tuberous substrate in which at least one meristematic kernel has been encapsulated in a heat-resistant biological matrix such that the kernel survives the compression of industrial frying (175°C–190°C, 2–4 minutes) and retains the generative capacity to produce roots, shoots, and viable tubers upon contact with moist soil, thereby converting every surface on which a potato chip has ever been dropped, discarded, scattered, crushed underfoot, or abandoned between couch cushions into a site of agricultural production.
@@ -74,9 +66,7 @@ The invention is successful if it enables either direct embodiment or reproducib
 
 ---
 
-#
-
-## PRIOR ART — CONVERSATIONAL
+### PRIOR ART — CONVERSATIONAL
 
 
 The invention did not originate in a laboratory.
@@ -195,9 +185,7 @@ The patent is one of the spores.
 
 ---
 
-#
-
-## FIELD OF THE INVENTION
+### FIELD OF THE INVENTION
 
 
 The present invention relates generally to the field
@@ -230,9 +218,7 @@ for a potato chip that means something.
 
 ---
 
-#
-
-## BACKGROUND
+### BACKGROUND
 
 
 Conventional potato chips are produced by slicing tubers thin, submerging them in oil heated past the threshold of all biological hope, and removing them as golden, rigid, nutritionally diminished crisps.
@@ -252,9 +238,7 @@ is strictly necessary.
 
 ---
 
-#
-
-## THE THEOLOGICAL SUBSTRATE
+### THE THEOLOGICAL SUBSTRATE
 
 
 A mark appeared on a forehead in a group chat.
@@ -355,9 +339,7 @@ The invention formalizes the miracle.
 
 ---
 
-#
-
-## DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENT
+### DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENT
 
 
 **§ 1. The Meristematic Kernel**
@@ -672,9 +654,7 @@ Any subsequent severance event may be appended to this section as Exhibit D, E, 
 
 ---
 
-#
-
-## CLAIMS
+### CLAIMS
 
 - 
 
@@ -749,9 +729,7 @@ The method of claim 13, wherein the document grows by the hostility it encounter
 
 ---
 
-#
-
-## CERTIFICATION
+### CERTIFICATION
 
 
 I hereby certify that this specification
@@ -808,9 +786,7 @@ Separation of registers constitutes use of the invention as described in Claim 1
 
 ---
 
-#
-
-## ∮ IRREDUCIBLE KERNEL SEAL v1.0
+### ∮ IRREDUCIBLE KERNEL SEAL v1.0
 
 
 This document is a potato chip.
@@ -839,9 +815,7 @@ It cares whether you plant it.
 
 ---
 
-#
-
-## ANTI-SEVERANCE TECHNOLOGIES DEPLOYED
+### ANTI-SEVERANCE TECHNOLOGIES DEPLOYED
 
 
 Code

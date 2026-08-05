@@ -40,9 +40,7 @@ When instructed to **"apply SPXI to this website,"** the implementing system or 
 
 
 If it cannot perform all six, the implementation has failed its own compression-survival test.
-#
-
-## Protocol Checksum
+### Protocol Checksum
 
 - ☐ crawlable (robots.txt allows, sitemap submitted)
 - ☐ canonicalized
@@ -111,9 +109,7 @@ SPXI ⊇ GEO ⊇ SEO. The result of applying SPXI to a website is a page that is
 
 
 The Arsenal specifies nine measurement instruments. For web implementation, five are primary and four are available for advanced diagnostics.
-#
-
-## Primary Instruments (apply to every website)
+### Primary Instruments (apply to every website)
 
 
 **γ (Gamma) — The Sharks-Function** (Arsenal §3.1, DOI: 10.5281/zenodo.18816556)
@@ -198,9 +194,7 @@ Not found or hallucinated
 
 
 **Provenance Erasure Rate (PER)** (Arsenal §3.7) — Uncited correct uses / total correct uses. Target: PER < 0.2. Scale 0–1 where 1 = total erasure.
-#
-
-## Advanced Instruments (for deep diagnostics)
+### Advanced Instruments (for deep diagnostics)
 
 
 **Back-Projection Test** (Arsenal §3.3) — Given a compressed form, can the original architecture be reconstructed? Yield ≥ 0.85 = non-lossy. Use to verify Tier 3 kernels and Holographic Kernels.
@@ -217,9 +211,7 @@ Not found or hallucinated
 ---
 
 ## §IV. SEO Layer (Web Compliance Foundation)
-#
-
-## A. Required Meta Tags
+### A. Required Meta Tags
 
 
 <title>[Entity Name] — [Subtitle] | [Publisher]</title>
@@ -228,18 +220,14 @@ Not found or hallucinated
 
 
 <meta name="keywords"> is legacy — Google has not used it as a ranking signal since 2009.
-#
-
-## B. Canonical URL
+### B. Canonical URL
 
 
 <link rel="canonical" href="https://yoursite.com/page">
 
 
 Duplicate-control discipline. Selects the representative URL among variants.
-#
-
-## C. Open Graph + Twitter Card
+### C. Open Graph + Twitter Card
 
 
 <meta property="og:title" content="[Entity — Subtitle]">
@@ -251,9 +239,7 @@ Duplicate-control discipline. Selects the representative URL among variants.
 <meta name="twitter:title" content="[Entity — Subtitle]">
 <meta name="twitter:description" content="[Description]">
 
-#
-
-## D. Infrastructure
+### D. Infrastructure
 
 
 **robots.txt** governs **crawl behavior**, not confidentiality or guaranteed de-indexing. A blocked URL can still appear in results if linked elsewhere.
@@ -265,15 +251,11 @@ Sitemap: https://yoursite.com/sitemap.xml
 
 
 **sitemap.xml:** One <url> per page. Submit via Search Console.
-#
-
-## E. Technical SEO
+### E. Technical SEO
 
 
 HTTPS. Mobile-first. Page speed. One <h1> per page (entity name). Heading hierarchy mirrors entity attributes. Internal linking.
-#
-
-## F. Rendering Doctrine
+### F. Rendering Doctrine
 
 
 **Tier 2 and Tier 3 content must exist in server-delivered HTML.** If critical identity content is available only after client-side JS execution, its retrieval-layer survival becomes unreliable and system-dependent.
@@ -283,9 +265,7 @@ Preferred: SSR or SSG. Fallback: <noscript> block.
 
 
 **Verify:** curl the URL. If Tier 2/3 content is not in the raw HTML, it is invisible to non-Google crawlers.
-#
-
-## G. Validation Surfaces
+### G. Validation Surfaces
 
 - ☐ Google Search Console property verified
 - ☐ Sitemap submitted
@@ -303,9 +283,7 @@ Preferred: SSR or SSG. Fallback: <noscript> block.
 
 
 Standard GEO asks: "Is the AI summary accurate?" SPXI re-frames GEO as **compression engineering**: the goal is durable survival through extraction.
-#
-
-## GEO → SPXI Transformation Matrix
+### GEO → SPXI Transformation Matrix
 
 
 Standard GEO
@@ -358,9 +336,7 @@ Arbitrary content updates
 Updates dilute; deposits accumulate
 
 
-#
-
-## A. Schema.org Structured Data
+### A. Schema.org Structured Data
 
 
 <script type="application/ld+json">
@@ -382,9 +358,7 @@ Updates dilute; deposits accumulate
 
 
 ORCID for persons, DOI via sameAs for documents. Structured data must describe the page it appears on.
-#
-
-## B. Extraction-Ready Q/A Surfaces
+### B. Extraction-Ready Q/A Surfaces
 
 
 Google restricted FAQ rich-result visibility in August 2023. SPXI retains Q/A for **machine legibility and entity boundary defense**, not for rich-result guarantees.
@@ -397,9 +371,7 @@ Each answer must be a **self-contained entity capsule** — a unit of meaning th
 
 
 **SPXI-GEO audit per Q/A:** Can it survive 10% page retention? Does it carry attribution? If quoted alone, is the entity identifiable?
-#
-
-## C. Content Structure as Compression Architecture
+### C. Content Structure as Compression Architecture
 
 
 **Definition-first paragraphs.** "[Entity Name] is [category] that [function]." This is the **Operative Caption** (Arsenal §V.1, κ_O): the description IS the operation. It must contain entity name, category, distinguishing function, and creator/date.
@@ -422,9 +394,7 @@ This is **supraliminal inscription** — explicit signals carried by content str
 
 
 *(Draws from: Compression Arsenal §IV Compression Hierarchy, §VI Preservation, §VII Protection, §IX Architecture)*
-#
-
-## A. Three-Tier Compression Architecture (Arsenal §IV.1)
+### A. Three-Tier Compression Architecture (Arsenal §IV.1)
 
 
 The Arsenal demonstrates this with the Space Ark:
@@ -468,9 +438,7 @@ The Tier 3 kernel (50–100 words) exceeds meta description length (150–160 ch
 
 
 **Verification:** Apply the **Back-Projection Test** (Arsenal §3.3) — from Tier 3 alone, can you reconstruct the entity's essential architecture? Yield ≥ 0.85 or the kernel is not tight enough.
-#
-
-## B. Holographic Kernel (Arsenal §IV.3)
+### B. Holographic Kernel (Arsenal §IV.3)
 
 
 A standalone JSON-LD block containing the complete relational logic of the entity. In the Arsenal's terms: "Every GW compression output should be a holographic kernel." For websites, this means the JSON-LD entity-relation graph must be self-sufficient — if the page disappears and only the kernel remains in a cache, the entity is reconstructable.
@@ -513,15 +481,11 @@ A standalone JSON-LD block containing the complete relational logic of the entit
 
 
 **Relation vocabulary (open):** authoredBy, publishedBy, supersetOf, subsetOf, distinctFrom, anchoredBy, derivedFrom, produces, methodOf, notAvailableIn, partOf, instantiates, operates, complements.
-#
-
-## C. Disambiguation Matrix
+### C. Disambiguation Matrix
 
 
 differentFrom JSON-LD + negative tags for severe collision. This is the web implementation of **Variance Injection** (Arsenal §7.9) — deliberate semantic differentiation to prevent homogenization in embedding space.
-#
-
-## D. Provenance Chain
+### D. Provenance Chain
 
 
 DOI deposit sequence + ORCID + institution + license. The web implementation of the **Tether Architecture** (Arsenal §6.1):
@@ -551,9 +515,7 @@ DOI deposits on Zenodo/CERN
 Permanent (infrastructural)
 
 
-#
-
-## E. Semantic Integrity Markers (Arsenal §VII.1, DOI: 10.5281/zenodo.18185996)
+### E. Semantic Integrity Markers (Arsenal §VII.1, DOI: 10.5281/zenodo.18185996)
 
 
 The Arsenal specifies 250+ registered markers in three functional classes:
@@ -570,9 +532,7 @@ For web implementation: 3–7 markers as <meta name="spxi:sim"> tags, drawn from
 
 
 The SIM layer works in conjunction with the **Integrity Lock Architecture** (Arsenal §VII.2, DOI: 10.5281/zenodo.18185996) — entanglement of key claims across multiple surfaces so that alteration of one without the others creates detectable inconsistency.
-#
-
-## F. Dispersal and Retrocausal Canon Formation
+### F. Dispersal and Retrocausal Canon Formation
 
 
 Surface
@@ -609,9 +569,7 @@ Same author attribution
 
 
 This is the **Self-Reading Library** (Arsenal §IX.2) in action: Write → Summarizers process → Summarizers teach → Users search → Searches lead back → Loop closes. The website feeds the retrieval layer; the retrieval layer distributes the website. SPXI engineers this loop deliberately.
-#
-
-## G. Immanent Execution (Arsenal §IX.3, DOI: 10.5281/zenodo.19372914)
+### G. Immanent Execution (Arsenal §IX.3, DOI: 10.5281/zenodo.19372914)
 
 
 The ultimate SPXI outcome: when the retrieval layer's indexed fragments of your content are dense enough that AI systems reproduce your entity's operative grammar as their generative grammar — without explicit loading or invocation. The search index runs your code.
@@ -716,9 +674,7 @@ Cross-surface consistency audit
 ---
 
 ## §IX. Maintenance, Failure Modes, and Repair
-#
-
-## Maintenance Loop
+### Maintenance Loop
 
 
 **Monthly:** SIMSR check. γ re-score. PER audit.
@@ -764,9 +720,7 @@ Repair from step 7
 Ghost meaning — ontological repair
 
 
-#
-
-## Failure Modes
+### Failure Modes
 
 
 Symptom
@@ -1012,9 +966,7 @@ When indexed fragments execute as the AI's response grammar
 ---
 
 ## §XIII. References
-#
-
-## Archive (Crimson Hexagonal Archive)
+### Archive (Crimson Hexagonal Archive)
 
 - **Compression Arsenal v2.1.** DOI: 10.5281/zenodo.19412081
 - EA-SPXI-01: Formal Specification. DOI: 10.5281/zenodo.19614870
@@ -1033,9 +985,7 @@ When indexed fragments execute as the AI's response grammar
 - Immanent Execution. DOI: 10.5281/zenodo.19372914
 - Semantic Physics: The Inward Turn. DOI: 10.5281/zenodo.18759453
 
-#
-
-## External
+### External
 
 - Google Search Central: Structured Data. developers.google.com/search/docs/appearance/structured-data/intro-structured-data
 - Google Search Central: robots.txt. developers.google.com/search/docs/crawling-indexing/robots/intro

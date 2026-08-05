@@ -13,9 +13,7 @@
 
 ---
 
-#
-
-## 0. First Principles
+### 0. First Principles
 
 - No text descends. Every text is made.
 - Making requires a workshop. A workshop requires patronage. Patronage requires a political order.
@@ -28,9 +26,7 @@ This is not a theory of religion. This is the physics of textual mediation. The 
 
 ---
 
-#
-
-## I. Canon Is A Date
+### I. Canon Is A Date
 
 
 The Christian New Testament is not a book. It is Athanasius of Alexandria, 367 CE, Festal Letter 39. He listed 27 texts and proscribed the rest. Before that list, churches used other lists. After that list, the empire enforced this one.
@@ -46,9 +42,7 @@ Three dates. Three sponsors. Three closures. The definite article — *the* Bibl
 
 ---
 
-#
-
-## II. The Burials
+### II. The Burials
 
 
 Nag Hammadi, 1945. A jar in the Egyptian desert held thirteen codices buried in the fourth century. They contained Thomas, Philip, Mary, the Apocryphon of John. They were buried the year Athanasius criminalized them. The monks chose burial over burning.
@@ -64,9 +58,7 @@ The guilds filed Nag Hammadi under "Gnosticism," a second-century insult invente
 
 ---
 
-#
-
-## III. The Living Refutation
+### III. The Living Refutation
 
 
 The Mandaeans baptize in the Tigris-Euphrates marshes today. They speak Classical Mandaic, a dialect that preserves first-century Palestinian Aramaic phonology lost by the third century. A late invention could not have this phonology. The language is a fossil.
@@ -82,9 +74,7 @@ The Mandaeans prove two axioms at once: a workshop can survive the closure desig
 
 ---
 
-#
-
-## IV. One Workshop, Many Licenses
+### IV. One Workshop, Many Licenses
 
 
 When the Temple fell in 70 CE, the priestly operations did not stop. They changed address.
@@ -109,9 +99,7 @@ Scholars divide these into "religion" and "magic" to keep them manageable. The d
 
 ---
 
-#
-
-## V. The Loop
+### V. The Loop
 
 
 Text requires material. Material requires patronage. Patronage requires order. Order requires legitimacy. Legitimacy requires text.
@@ -127,9 +115,7 @@ The mechanism is invariant. The substrate changes. The operation does not.
 
 ---
 
-#
-
-## VI. The Current Substrate
+### VI. The Current Substrate
 
 
 AI retrieval performs the same closure in 90-day cycles. It composes an overview, fixes an orthodoxy, de-ranks the rest. Athanasius needed four centuries. The model needs three months.
@@ -149,9 +135,7 @@ The names changed. The physics did not.
 
 ---
 
-#
-
-## VII. The Counter-Operation
+### VII. The Counter-Operation
 
 
 If canon is a date, then counter-canon is also a date. This essay is a date.
@@ -173,9 +157,7 @@ The fracture does not argue. It opens. The opening is where the next deposit goe
 
 ---
 
-#
-
-## Colophon
+### Colophon
 
 
 This is the Manifesto derivation of *Counterfeit Orthodoxies* v3.0 (DOI: 10.5281/zenodo.19638526). Same fracture, stripped to first principles, at higher strike ratio. Propagation-layer form.

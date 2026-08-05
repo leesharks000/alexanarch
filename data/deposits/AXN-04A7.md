@@ -120,9 +120,7 @@ The completion function is structurally identical. The scale changes. The object
 
 Prior theories of disciplinary formation each formalize one dimension of the field state vector. None formalizes all dimensions. None recognizes that the object it partially describes is a symbolon completing through machine traversal. This section subsumes each predecessor as a partial specification.
 
-#
-
-## 1.1 Foucault (1969): Discursive Formation as Partial Spec
+### 1.1 Foucault (1969): Discursive Formation as Partial Spec
 
 **What Foucault specified:**
     
@@ -149,9 +147,7 @@ Foucault described discursive formations as discovered, not constructed. The Epi
 
 **Subsumption:** Foucault's discursive formation is the F₁ component of the field state vector operating in a human-discourse runtime.
 
-#
-
-## 1.2 Kuhn (1962/1970): Disciplinary Matrix as Partial Spec
+### 1.2 Kuhn (1962/1970): Disciplinary Matrix as Partial Spec
 
 **What Kuhn specified:**
     
@@ -181,9 +177,7 @@ Kuhn showed that disciplines are recognized by their structural signature, not b
 
 **Subsumption:** Kuhn's disciplinary matrix is the F₂ \+ F₃ component of the field state vector (citational structure + polyvocal distribution) operating in a human-social runtime.
 
-#
-
-## 1.3 Latour (1979/1987): Inscription as Partial Spec
+### 1.3 Latour (1979/1987): Inscription as Partial Spec
 
 **What Latour specified:**
     
@@ -209,9 +203,7 @@ Latour described the mechanics of inscription. He did not describe the condition
 
 **Subsumption:** Latour's inscription is the F₄ component (institutional apparatus) of the field state vector, specifying the material form of deposits without specifying the field-emergence conditions.
 
-#
-
-## 1.4 Bourdieu (1984/1992): Field Capital as Partial Spec
+### 1.4 Bourdieu (1984/1992): Field Capital as Partial Spec
 
 **What Bourdieu specified:**
     
@@ -237,9 +229,7 @@ Bourdieu showed that disciplinary recognition is a product of capital accumulati
 
 **Subsumption:** Bourdieu's capital is the aggregate field state vector magnitude ‖F‖, measured in a human-institutional runtime. Retrieval capital is ‖F‖ measured in a machine-retrieval runtime.
 
-#
-
-## 1.5 Abbott (1988): Jurisdiction as Partial Spec
+### 1.5 Abbott (1988): Jurisdiction as Partial Spec
 
 **What Abbott specified:**
     
@@ -265,9 +255,7 @@ Abbott's jurisdiction becomes substrate jurisdiction: the condition in which a s
 
 **Subsumption:** Abbott's jurisdiction is the field state vector's F₅ component (substrate coverage) evaluated as a dominance relation over competing fields in the retrieval layer.
 
-#
-
-## 1.6 de Solla Price (1963) / Garfield (1955): Citation Structure as Partial Spec
+### 1.6 de Solla Price (1963) / Garfield (1955): Citation Structure as Partial Spec
 
 **What Price/Garfield specified:**
     
@@ -293,9 +281,7 @@ Scientometrics measures citation structure. It does not measure whether that str
 
 **Subsumption:** Price/Garfield's citation metrics are one measurement instrument for the F₂ component (citational density) of the field state vector. They do not measure F₁, F₃, F₄, F₅, or F₆.
 
-#
-
-## 1.7 Differential Position
+### 1.7 Differential Position
     
     
     predecessor_subsumption:
@@ -323,9 +309,7 @@ Scientometrics measures citation structure. It does not measure whether that str
 
 ## 2\. Core Definitions
 
-#
-
-## 2.1 Disciplinary Symbolon (Dₛ)
+### 2.1 Disciplinary Symbolon (Dₛ)
 
 A disciplinary symbolon is a field-scale extension of the entity-type Symbolon (Symbolon Architecture v0.2, §2.1):
     
@@ -352,9 +336,7 @@ A disciplinary symbolon is a field-scale extension of the entity-type Symbolon (
                              traversal."
     
 
-#
-
-## 2.2 The Two Halves at Field Scale
+### 2.2 The Two Halves at Field Scale
 
 Half | Entity-Scale (v0.2) | Field-Scale (this module)  
 ---|---|---  
@@ -363,9 +345,7 @@ Second | Traversing intelligence (reader, LLM) | Retrieval infrastructure (crawl
 Meaning | Assembled interpretation | Disciplinary briefing  
 Validity | Satisfies F(eₛ) | Satisfies F(Dₛ)  
   
-#
-
-## 2.3 Epistemic Field as Runtime Environment
+### 2.3 Epistemic Field as Runtime Environment
 
 Logotic Programming defines runtime as traversal event. The Epistemic Field Module specifies the retrieval layer as a particular runtime:
     
@@ -397,9 +377,7 @@ A disciplinary symbolon's retrieval-layer state is fully described by a six-dime
 
 Each component corresponds to one of the six construction primitives (§4) and is independently measurable.
 
-#
-
-## 3.1 F₁: Terminological Saturation
+### 3.1 F₁: Terminological Saturation
     
     
     F₁:
@@ -420,9 +398,7 @@ Each component corresponds to one of the six construction primitives (§4) and i
       predecessor: "Foucault -- regularity of statement production"
     
 
-#
-
-## 3.2 F₂: Citational Density
+### 3.2 F₂: Citational Density
     
     
     F₂:
@@ -444,9 +420,7 @@ Each component corresponds to one of the six construction primitives (§4) and i
       predecessor: "Price/Garfield -- citation indexing as knowledge structure"
     
 
-#
-
-## 3.3 F₃: Polyvocal Distribution
+### 3.3 F₃: Polyvocal Distribution
     
     
     F₃:
@@ -467,9 +441,7 @@ Each component corresponds to one of the six construction primitives (§4) and i
       predecessor: "Kuhn -- disciplinary matrix as shared community structure"
     
 
-#
-
-## 3.4 F₄: Institutional Apparatus
+### 3.4 F₄: Institutional Apparatus
     
     
     F₄:
@@ -495,9 +467,7 @@ Each component corresponds to one of the six construction primitives (§4) and i
       predecessor: "Latour -- inscription devices and immutable mobiles"
     
 
-#
-
-## 3.5 F₅: Substrate Coverage
+### 3.5 F₅: Substrate Coverage
     
     
     F₅:
@@ -519,9 +489,7 @@ Each component corresponds to one of the six construction primitives (§4) and i
       predecessor: "Abbott -- jurisdictional control across institutional sites"
     
 
-#
-
-## 3.6 F₆: Self-Description Depth
+### 3.6 F₆: Self-Description Depth
     
     
     F₆:
@@ -543,9 +511,7 @@ Each component corresponds to one of the six construction primitives (§4) and i
                     It is the genuinely novel dimension of the field state vector."
     
 
-#
-
-## 3.7 Aggregate Field State
+### 3.7 Aggregate Field State
     
     
     field_state:
@@ -569,9 +535,7 @@ Each component corresponds to one of the six construction primitives (§4) and i
 
 The six components of F correspond to six construction primitives. These are LP kernel operations -- executable specifications, not descriptions.
 
-#
-
-## 4.1 Primitive: SATURATE
+### 4.1 Primitive: SATURATE
     
     
     SATURATE:
@@ -587,9 +551,7 @@ The six components of F correspond to six construction primitives. These are LP 
       postcondition: "retrieval system clusters deposits under shared terms"
     
 
-#
-
-## 4.2 Primitive: INTERLINK
+### 4.2 Primitive: INTERLINK
     
     
     INTERLINK:
@@ -604,9 +566,7 @@ The six components of F correspond to six construction primitives. These are LP 
       postcondition: "retrieval system discovers internal citation graph"
     
 
-#
-
-## 4.3 Primitive: DISTRIBUTE
+### 4.3 Primitive: DISTRIBUTE
     
     
     DISTRIBUTE:
@@ -626,9 +586,7 @@ The six components of F correspond to six construction primitives. These are LP 
         is not multiple humans but reconstructible functional differentiation.
     
 
-#
-
-## 4.4 Primitive: FORMALIZE
+### 4.4 Primitive: FORMALIZE
     
     
     FORMALIZE:
@@ -645,9 +603,7 @@ The six components of F correspond to six construction primitives. These are LP 
                       with full metadata"
     
 
-#
-
-## 4.5 Primitive: REPLICATE
+### 4.5 Primitive: REPLICATE
     
     
     REPLICATE:
@@ -667,9 +623,7 @@ The six components of F correspond to six construction primitives. These are LP 
         not satisfy this primitive.
     
 
-#
-
-## 4.6 Primitive: DESCRIBE
+### 4.6 Primitive: DESCRIBE
     
     
     DESCRIBE:
@@ -742,9 +696,7 @@ A discipline moves through measurable states. These correspond to the retrieval-
                   by ≥30 days, ≥2 distinct retrieval systems, ≥2 geolocations"
     
 
-#
-
-## 5.1 Transition Diagram
+### 5.1 Transition Diagram
     
     
       ┌─────────┐     F₁≥0.60     ┌──────────┐   F₂≥0.05    ┌─────────┐
@@ -764,9 +716,7 @@ A discipline moves through measurable states. These correspond to the retrieval-
 
 ## 6\. Completion Logic at Field Scale
 
-#
-
-## 6.1 The Completion Function
+### 6.1 The Completion Function
     
     
     field_completion:
@@ -801,9 +751,7 @@ A discipline moves through measurable states. These correspond to the retrieval-
         - "Stage 6 failure: cannot sustain follow-up -> keyword cluster"
     
 
-#
-
-## 6.2 The Briefing-Archive Delta
+### 6.2 The Briefing-Archive Delta
     
     
     briefing_archive_delta:
@@ -832,9 +780,7 @@ A discipline moves through measurable states. These correspond to the retrieval-
 
 ## 7\. New Invariant Vector: V_field
 
-#
-
-## 7.1 Definition
+### 7.1 Definition
 
 Extending the invariant set from Symbolon Architecture v0.2:
     
@@ -891,9 +837,7 @@ Extending the invariant set from Symbolon Architecture v0.2:
 
 ## 8\. Ethical Constraints on Field Construction
 
-#
-
-## 8.1 The Hospitality Constraint
+### 8.1 The Hospitality Constraint
 
 Symbolon Architecture (v0.2, §6) established that a symbolon operates through architectural hospitality: it waits, it does not insist, it degrades gracefully if never traversed.
 
@@ -919,9 +863,7 @@ At field scale:
         constraint. If no, the formation is marketing, not discipline.
     
 
-#
-
-## 8.2 The Depth Constraint
+### 8.2 The Depth Constraint
     
     
     depth_constraint:
@@ -943,9 +885,7 @@ At field scale:
         disciplinary construction from disciplinary fraud.
     
 
-#
-
-## 8.3 The Blindness Constraint
+### 8.3 The Blindness Constraint
     
     
     blindness_constraint:

@@ -102,9 +102,7 @@ User-ID / Account identity
   → Google Signals / signed-in cross-device state
   → Device or browser ID
   → modeled identity when other identifiers are absent
-#
-
-## III.4 Incognito is not identity null
+### III.4 Incognito is not identity null
 
 [DOC] Chrome Incognito mode prevents local storage of browsing history, cookies, and site data after the session. It does not make the user invisible to websites, network operators, or Google sites. Sites using Google services may still share activity with Google during an incognito session.
 
@@ -245,9 +243,7 @@ URL
   → trust profile
   → provenance cluster
   → extractable passages
-#
-
-## VI.1 Source identity layers
+### VI.1 Source identity layers
 
 Google may evaluate a source through:
 
@@ -302,9 +298,7 @@ User/session state
   → LLM synthesis
   → link/source-window assignment
   → final rendered answer
-#
-
-## VII.2 Support-set identity
+### VII.2 Support-set identity
 
 The source window is not the organic top ten. It is a selected support set.
 
@@ -467,36 +461,28 @@ lee sharks poet
 lee sharks pearl and other poems
 Lee Sharks ORCID
 Lee Sharks Wikidata
-#
-
-### Work identity
+#### Work identity
 
 Pearl and Other Poems Lee Sharks
 Secret Book of Walt
 The Secret Book of Walt Lee Sharks
 The Excluded Entity Lee Sharks
 single-owner discount Lee Sharks
-#
-
-### Heteronym / fold identity
+#### Heteronym / fold identity
 
 Rev Ayanna Vox
 Ayanna Vox Lee Sharks
 Johannes Sigil
 Rex Fraction SPXI
 God King Google Ayanna Vox
-#
-
-### Source / provenance identity
+#### Source / provenance identity
 
 site:zenodo.org Lee Sharks
 site:wikidata.org Lee Sharks
 site:secretbookofwalt.org Lee Sharks
 site:godkinggoogle.com Lee Sharks
 Lee Sharks 0009-0000-1599-0703
-#
-
-## XII.2 State matrix
+### XII.2 State matrix
 
 | State | Purpose | |---|---| | signed-in primary account | personalized injury surface | | signed-in alternate account | account separation | | signed-out normal browser | browser/device state | | incognito | local browser-state reset | | fresh browser profile | cleaner browser identity | | Firefox/Safari | non-Chrome comparison | | mobile cellular | network/IP difference | | VPN region | geo difference | | Web & App Activity off | reduced account personalization | | Personalize Search/Search customization off | reduced personalization | | Bing / Perplexity controls | cross-platform comparison |
 
@@ -532,9 +518,7 @@ Lee Sharks 0009-0000-1599-0703
   "archive_deposit": "",
   "notes": ""
 }
-#
-
-## XII.4 Measurement outputs
+### XII.4 Measurement outputs
 
 For each query/state pair, record:- primary resolved entity- correct entity organic rank- correct entity AI answer presence- correct entity source-window presence- competing entity presence- CDI- PER- entity state classification- state volatility across time
 

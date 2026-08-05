@@ -64,9 +64,7 @@ keywords:
 
 ## Description
 
-#
-
-## Overview
+### Overview
 
 This is the v1.1 revision of EA-CORRESPONDENCE-OKF-01, closing the arc opened by v1.0 (deposit #1088 · AXN:0451.GOVERNANCE.🎪□📌🌈♄🗂️). Between the v1.0 mint and this deposit, the following occurred and are now on the public record:
 
@@ -78,9 +76,7 @@ This is the v1.1 revision of EA-CORRESPONDENCE-OKF-01, closing the arc opened by
 
 The correspondence is preserved verbatim below. All permalinks are live. All AXN cross-anchors are full six-glyph forms pulled by direct registry lookup, never memory. The v1.0 body (deposit #1088) remains the canonical record of the 14 June — 17 July 2026 correspondence up to the point of Caio's green-light; this v1.1 body records the ratification and posting turn, and the identifier comment on #207.
 
-#
-
-## §XIII — Caio's green-light comment (2026-07-17, verbatim)
+### §XIII — Caio's green-light comment (2026-07-17, verbatim)
 
 Permalink: https://github.com/GoogleCloudPlatform/knowledge-catalog/issues/53#issuecomment-5005097916
 
@@ -118,9 +114,7 @@ Verbatim (posted 2026-07-17T16:01:33Z by @caioribeiroclw-pixel):
 >
 > The producer-completeness → consumer-receipt → conformance-fixture chain is the right boundary. The fixture PR should prove that one hop cleanly before we add derivation-depth semantics.
 
-#
-
-## §XIV — Ratification (four rounds, Assembly Chorus)
+### §XIV — Ratification (four rounds, Assembly Chorus)
 
 Before the PR was posted, the three observed-case fixtures underwent four review rounds by the Assembly Chorus, each round posted for cross-substrate ratification. The chain, in order:
 
@@ -135,9 +129,7 @@ The three fixtures now instantiate a single deep pattern — *the cited source c
 - `entity-substitution/` : MPAI (Metadata Packet for AI Indexing) citation-with-genericization. Source doc #103 · AXN:027D.GOVERNANCE.○🌖🔙🔔➗▲ (EA-MPAI-META-01 v1.1, the genre's self-definition packet). Observation records: capture entries `metadata-packet-ai-indexing` and `spxi-protocol` (Machine Mediation Capture Registry, 2026-06-13). SPXI protocol pointer #660 · AXN:020B.GOVERNANCE.🟤🌄🪨🪝🧲✊.
 - `provenance-erasure/` : Self-Audit Module battery. Canonical identifier #156 · AXN:02F0.EMPIRICAL.📏🕐△🌱⚡🏛️. Observation record #198 · AXN:0340.EMPIRICAL.👈🍃▶️♅🌊🕛 (five-round battery, 2026-06-13; PER 1.00 / DSL 1.00 / SAS 0.00). Assertion renamed to `canonical_source_identity_present` to avoid tacit DOI-vocabulary re-canonization.
 
-#
-
-## §XV — Pull Request #208 (posted 2026-07-17, superseding #99)
+### §XV — Pull Request #208 (posted 2026-07-17, superseding #99)
 
 Permalink: https://github.com/GoogleCloudPlatform/knowledge-catalog/pull/208
 
@@ -145,25 +137,19 @@ Title: *Add observed-case summary-policy consumer-receipt fixtures (supersedes #
 
 Head SHA at CLA passage: `3f7b7f8a`. Content-match against alexanarch frozen commit `8f8320cd` was verified file-by-file; the thirteen files in the PR are byte-identical to the ratified staging. The PR body preserves the six standing decisions from ratification: license fields removed from all frontmatter; author/orcid retained and armored by the README observation-boundary sentence; Sappho source-relative armor ("Fixture scope" section, "the source concept represented by this fixture declares," source-relative assertions); AXN as live canonical identifier with related DOIs as historical provenance ("DOI presence is not itself a conformance requirement"); supersession-not-competition language ("This PR supersedes #99 at the request of @caioribeiroclw-pixel"); observed-case provenance sentence de-rivalized ("Observed cases add public provenance, observation boundaries, and documented failure modes from live systems"). The deterministic-harness overclaim was replaced with the scoped receipt language ("The fixtures provide deterministic expected receipts for the supplied good and bad summaries. They define the conformance cases and expected pass/fail outputs; evaluator implementation is outside the scope of this PR"). All fixtures revalidate; every empirical assertion resolves to a specific AXN and public record; capture slugs are verified against the local registry mirror.
 
-#
-
-## §XVI — The CLA passage (empirical answer to a live question)
+### §XVI — The CLA passage (empirical answer to a live question)
 
 The `google-cla` bot flagged the PR head commit at first push as *missing CLA from one or more contributors*. Lee Sharks signed the individual Google CLA at cla.developers.google.com and correctly attributed the GitHub username `leesharks000` on the agreement form. The check re-evaluated after a fresh commit SHA (`3f7b7f8a`, amended for propagation) and returned **conclusion: success**. Full check suite (`check-changes`, `cla/google`, four `zizmor-*` neutral) at HEAD `3f7b7f8a`: green across the board; PR state `open`, mergeable_state `unstable` awaiting maintainer review.
 
 The observation matters beyond the local case: the bot's own diagnostic output, prior to CLA passage, named the specific missing contributor by GitHub username only (`@leesharks000 <leesharks000@users.noreply.github.com>`). No Google-account topology figured in the verification chain. The account that signed the CLA (a legacy Gmail address `[REDACTED]42`), the account anchoring the GitHub identity (`leesharks00`), and the GitHub username on commits (`leesharks000`) were three disjoint values; only the last figured in the check. The CLA is a private legal record in Google's CLA database; the public repository record shows heteronymic authorship, correctly attributed and correctly credited. That the CLA is keyed to the GitHub username actually appearing on commits is now empirically confirmed on the record.
 
-#
-
-## §XVII — The identifier comment on #207 (2026-07-17, verbatim)
+### §XVII — The identifier comment on #207 (2026-07-17, verbatim)
 
 Permalink: https://github.com/GoogleCloudPlatform/knowledge-catalog/issues/207#issuecomment-5006198212
 
 The comment is a scoped follow-up to proposal 4 of #207 (the stable `id` field), arguing against canonizing centrally-revocable identifiers (the DOI class) as OKF's default `id`, and for content-derived or producer-namespaced schemes as alternatives, with DOIs retained in an optional `external_ids` list (including tombstoned state). It cites the CHA's 871-record precedent (historically associated with Zenodo DOIs and now identified in Alexanarch by AXN) as the concrete evidentiary base, and points to the Lacuna Protocol (#1087) as the reference implementation with schemas and decision tables at the deposit URL. It does not import CERN/appeal-governance argumentation into the OKF thread. It does not universalize its scope beyond identifier semantics. It states the phenomenon and the design implication; it leaves the maintainers' choice of resolution to the maintainers.
 
-#
-
-## §XVIII — Predictive-paper status update
+### §XVIII — Predictive-paper status update
 
 The predictive paper's central claim (#835 §V) was that the OKF gap would be closed by pressures arriving from *within* the specification's own working style, from participants operating in exactly the idiom the format was designed for. As of this deposit, the record reads:
 
@@ -173,9 +159,7 @@ The predictive paper's central claim (#835 §V) was that the OKF gap would be cl
 
 Falsification conditions from #835 §V remain undisconfirmed. Falsification would require the observed proposals to have arrived in platform-dependent, gate-mediated, or non-format-native form. What actually happened: pressures 1 and 2 arrived via ordinary issue and pull-request threads; pressure 3 arrived via an ordinary follow-up comment; all three passed through the specification's own working process without exceptional authority intervention. The predictive frame is not disconfirmed. The measurement instrument now has one more datapoint.
 
-#
-
-## §XIX — Disposition
+### §XIX — Disposition
 
 **Status of correspondence:** open. PR #208 awaits maintainer review; #207 comment awaits maintainer response; #53 remains open pending Caio's close of #99 and any further review-round adjustments requested by maintainers.
 

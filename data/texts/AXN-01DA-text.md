@@ -83,27 +83,21 @@ The critical observation: every component of this infrastructure represents accu
 ---
 
 ## 3. The Political Economy Gap
-#
-
-## 3.1 The Labor Problem
+### 3.1 The Labor Problem
 
 
 Tiziana Terranova identified the fundamental dynamic in 2000: digital economies depend on "free labor" — voluntary, unwaged, enjoyed, and exploited simultaneously.[21] Her analysis anticipated the knowledge graph economy by two decades. The Wikidata editors who populate the world's largest open knowledge base, the Schema.org implementers who mark up web pages for search engine consumption, the ontology engineers who formalize domain knowledge — all perform labor that creates measurable economic value captured primarily by platforms.
 
 
 Christian Fuchs extends this analysis explicitly to digital labor as a form of value production analogous to Marx's analysis of industrial labor: "Users of commercial social media platforms are productive workers who produce surplus value and are exploited."[22] The semantic economy framework specifies what Fuchs leaves general: the particular dynamics of labor that produces structured meaning rather than material commodities or generic digital content.
-#
-
-## 3.2 The Extraction Problem
+### 3.2 The Extraction Problem
 
 
 Ford and Iliadis's analysis of Wikidata identifies the extraction mechanism precisely. The AoIR panel on "Semantic Media" elaborates: the adoption and domination of linked data by platform companies has reshaped web content to accord with question-and-answer formats, weakening open content licenses and consolidating algorithmic knowledge monopolies.[23] This is what the semantic economy framework calls semantic rent extraction through infrastructure control: whoever controls how meaning is structured controls what can be known, and extracts rent from the structuring.
 
 
 Kate Crawford's *Atlas of AI* (2021) provides the material dimension: AI systems are not disembodied intelligence but extractive industries dependent on labor, data, and natural resources — from lithium mines to content moderation sweatshops.[24] The semantic infrastructure that feeds these systems is one more extracted resource, rendered invisible by the same mechanisms that hide the mines and the moderators.
-#
-
-## 3.3 The Enclosure Problem
+### 3.3 The Enclosure Problem
 
 
 Nick Srnicek's analysis of platform capitalism identifies the structural logic: platforms position themselves as intermediaries that capture value from every interaction they facilitate.[25] Applied to semantic infrastructure, the dynamic is precise: Google builds its Knowledge Graph substantially from open sources (Freebase, Wikidata, Schema.org markup contributed by webmasters) and then encloses the result as proprietary infrastructure that generates advertising revenue. The inputs are open; the outputs are enclosed; the value flows one direction.
@@ -154,18 +148,14 @@ Semantic exhaustion
 Depletion when extraction exceeds replenishment
 
 
-#
-
-## 4.1 Ontology Engineering as Semantic Labor
+### 4.1 Ontology Engineering as Semantic Labor
 
 
 Building an ontology is semantic labor par excellence: defining classes, properties, relationships, and constraints that determine how a domain is understood. Musen's survey of ontology development demonstrates the scale of this labor: successful ontologies require years of expert effort, iterative refinement, and ongoing maintenance.[27] This labor is characteristically invisible (ontologies function as infrastructure, noticed only when they fail), non-fungible (domain expertise cannot be easily substituted), and undercompensated (much ontology work is academic or volunteer labor).
 
 
 The "metadata modelers" interviewed by Iliadis work at platform companies building proprietary ontologies.[28] Their labor shapes how Google understands "restaurant" or how Amazon categorizes "electronics" — yet this labor rarely appears in accounts of platform value creation. As Bowker and Star demonstrated in their foundational study of classification systems, the work of categorization is simultaneously world-making and invisible.[29]
-#
-
-## 4.2 Knowledge Graphs as Semantic Capital
+### 4.2 Knowledge Graphs as Semantic Capital
 
 
 A knowledge graph is not merely "data" — it is accumulated semantic labor crystallized into structure. Wikidata's 100+ million entities represent millions of hours of volunteer work: researching, verifying, formatting, linking. This capital has specific economic properties:
@@ -178,9 +168,7 @@ A knowledge graph is not merely "data" — it is accumulated semantic labor crys
 
 
 **Dependent on maintenance:** Knowledge graphs require ongoing labor to remain accurate. Paulheim's analysis of knowledge graph refinement demonstrates that quality degrades without continuous human intervention — automated methods can detect but not fully correct incompleteness and inaccuracy.[30]
-#
-
-## 4.3 Standards as Semantic Infrastructure
+### 4.3 Standards as Semantic Infrastructure
 
 
 RDF, OWL, SHACL, and Schema.org are semantic infrastructure — they determine what kinds of meaning can be expressed and how meaning flows between systems. Control of standards is control of semantic infrastructure.
@@ -190,9 +178,7 @@ Schema.org is particularly significant: developed by the four largest search eng
 
 
 The W3C standards process provides formal openness — anyone can participate. But as Halpin and Lasch demonstrate, effective participation requires institutional resources, technical expertise, and sustained engagement that individual contributors and smaller organizations rarely command.[31] The standards are "open" in the same sense that a legislative process is "open": technically accessible, practically dominated by large institutional actors.
-#
-
-## 4.4 Semantic Rent and Liquidation
+### 4.4 Semantic Rent and Liquidation
 
 
 When Google displays a "knowledge panel" sourced from Wikidata, it extracts semantic rent: value derived from stabilized meanings without performing the original labor. The Wikidata volunteers who created the entries receive no compensation; Google captures the value through advertising.
@@ -202,9 +188,7 @@ When OpenAI trains GPT on Wikipedia and Wikidata content, it performs semantic l
 
 
 A note on framing: semantic liquidation is often structural rather than malicious. Platform architectures, licensing regimes, and market incentives create extraction dynamics that no individual actor necessarily intended. The point is not to assign blame but to make the dynamics visible and accountable — to provide the ledger that Berners-Lee's original vision lacked.
-#
-
-## 4.5 Semantic Exhaustion
+### 4.5 Semantic Exhaustion
 
 
 The technical literature documents early signs of semantic exhaustion:
@@ -285,33 +269,23 @@ With these categories, researchers and practitioners can analyze semantic system
 ---
 
 ## 8. Implications for Practice
-#
-
-## 8.1 For Ontology Engineers
+### 8.1 For Ontology Engineers
 
 
 Your labor is semantic labor. The ontologies you build become semantic capital that others extract and monetize. Consider: how do your ontologies flow into commercial systems? Is your labor visible in downstream applications? What replenishes the semantic capital you create?
-#
-
-## 8.2 For Knowledge Graph Practitioners
+### 8.2 For Knowledge Graph Practitioners
 
 
 Knowledge graphs are not neutral technical artifacts — they embed decisions about what counts as knowledge, who is represented, and whose categories prevail. The "more-than-technical" nature of projects like Wikidata means that technical decisions have political-economic consequences.[2]
-#
-
-## 8.3 For AI/ML Researchers
+### 8.3 For AI/ML Researchers
 
 
 Training data is semantic capital. When you train on Wikipedia, Wikidata, Common Crawl, or any text corpus, you draw on accumulated semantic labor. The framework asks: whose labor produced this capital? What compensation, if any, reaches them? What happens when this capital is exhausted? Gebru et al.'s proposal for "datasheets for datasets" — standardized documentation of training data provenance — is a step toward the accounting the framework demands.[37]
-#
-
-## 8.4 For Platform Studies Scholars
+### 8.4 For Platform Studies Scholars
 
 
 Platforms do not merely "use" semantic infrastructure — they capture and enclose it. The semantic economy framework provides vocabulary for analyzing this enclosure with the specificity that general "data extraction" language lacks.
-#
-
-## 8.5 For Policy Makers
+### 8.5 For Policy Makers
 
 
 Current regulatory frameworks (GDPR, AI Act) address personal data and algorithmic accountability but do not address the political economy of semantic infrastructure. The framework suggests that sustainability of shared knowledge resources — Wikidata, open ontologies, linked data — requires governance mechanisms that account for extraction, not just access.
@@ -450,9 +424,7 @@ Something has to resist liquidation. Structures must exist that survive compress
 ---
 
 ## References
-#
-
-## Semantic Web Standards and Infrastructure
+### Semantic Web Standards and Infrastructure
 
 
 Berners-Lee, T., Hendler, J. and Lassila, O. "The Semantic Web." *Scientific American* 284.5 (2001): 34–43.
@@ -474,9 +446,7 @@ Hitzler, P. et al. "OWL 2 Web Ontology Language Primer." *W3C Recommendation* (2
 
 
 Knublauch, H. and Kontokostas, D. "Shapes Constraint Language (SHACL)." *W3C Recommendation* (2017).
-#
-
-## Knowledge Graphs
+### Knowledge Graphs
 
 
 Hogan, A. et al. "Knowledge Graphs." *ACM Computing Surveys* 54.4 (2021): Article 71.
@@ -495,9 +465,7 @@ Suchanek, F.M., Kasneci, G. and Weikum, G. "YAGO." *Proceedings of WWW* (2007): 
 
 
 Vrandečić, D. and Krötzsch, M. "Wikidata." *Communications of the ACM* 57.10 (2014): 78–85.
-#
-
-## Political Economy and Critical Data Studies
+### Political Economy and Critical Data Studies
 
 
 Bender, E.M. et al. "On the Dangers of Stochastic Parrots." *FAccT '21* (2021): 610–623.
@@ -549,9 +517,7 @@ Terranova, T. "Free Labor." *Social Text* 18.2 (2000): 33–58.
 
 
 Zuboff, S. *The Age of Surveillance Capitalism*. New York: PublicAffairs, 2019.
-#
-
-## Crimson Hexagonal Archive
+### Crimson Hexagonal Archive
 
 
 Sharks, L. *The Semantic Economy: Bearing-Cost and the Physics of Meaning*. DOI: 10.5281/zenodo.18320411.

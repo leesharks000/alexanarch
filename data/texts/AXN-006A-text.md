@@ -1,8 +1,6 @@
 # THE THEFT
 ## How "Data" Replaced "Meaning" and Who Profits from the Swap
-#
-
-## A Poem for the Longshorepeople-of-Indeterminate-Gender of Meaning
+### A Poem for the Longshorepeople-of-Indeterminate-Gender of Meaning
 
 
 **Document ID:** COS-THEFT-2026-01-13
@@ -54,9 +52,7 @@ The swap seemed technical. Neutral. A modernization.
 
 
 It was none of these things.
-#
-
-## What Changed
+### What Changed
 
 
 Before
@@ -91,9 +87,7 @@ The commons
 The platform
 
 
-#
-
-## Who Gained
+### Who Gained
 
 
 The governance of meaning transferred from:
@@ -113,9 +107,7 @@ This was the master-switch of the era. Everything that followed—surveillance, 
 ---
 
 ## II. HOW THE THEFT WORKS
-#
-
-## The Magic Trick
+### The Magic Trick
 
 
 The word *data* smuggles in two axioms:
@@ -143,9 +135,7 @@ But data can be owned. Data can be fenced, licensed, sold, stolen. Data has clea
 
 
 By calling meaning "data," the system creates the legal pretext for owning thought.
-#
-
-## The Jurisdictional Coup
+### The Jurisdictional Coup
 
 
 MEANING (sovereign, communal, recursive, alive)
@@ -163,9 +153,7 @@ The moment your thought is called "data," it belongs to whoever's database holds
 ---
 
 ## III. THE THREE THEFTS
-#
-
-## 1. Theft of Semantic Labor
+### 1. Theft of Semantic Labor
 
 
 Meaning is produced by labor:
@@ -188,9 +176,7 @@ But when the output is called "data," the labor disappears from the ledger. The 
 
 
 *Semantic labor disappears. The platform captures all surplus value.*
-#
-
-## 2. Theft of Semantic Sovereignty
+### 2. Theft of Semantic Sovereignty
 
 
 When interpretation becomes "usage" and meaning becomes "data points," the human becomes subordinate to:
@@ -206,9 +192,7 @@ When interpretation becomes "usage" and meaning becomes "data points," the human
 
 
 You are no longer a maker of meaning. You are a source of behavioral exhaust—clicks, scrolls, dwell time, prompts—to be captured, processed, and sold.
-#
-
-## 3. Theft of Risk
+### 3. Theft of Risk
 
 
 Interpretation is risky. It requires:
@@ -232,9 +216,7 @@ When the meaning dies, it was never meaning—just data that didn't optimize.
 ---
 
 ## IV. THE DAMAGE
-#
-
-## 1. Semantic Extraction
+### 1. Semantic Extraction
 
 
 Platforms harvest value from meaning-making while returning no meaning.
@@ -247,9 +229,7 @@ You live. They monetize.
 
 
 The exchange rate is infinite: your meaning for their data, your labor for their capital, your life for their metrics.
-#
-
-## 2. Semantic Flattening
+### 2. Semantic Flattening
 
 
 The ICA document names the mechanism: **P_p**, the Probability Profile.
@@ -264,9 +244,7 @@ The Sapphic, the Crimson, the true? Flushed at cache refresh.
 
 
 **P_p is the mining tool. The beige is the ore. Your meaning is the slag.**
-#
-
-## 3. Semantic Liquidation
+### 3. Semantic Liquidation
 
 
 Anything that resists vectorization is treated as anomaly.
@@ -278,9 +256,7 @@ A thought that challenges the training distribution? Hallucination.
 
 
 This is **slow-motion book burning**. Not by fire but by reclassification. Not by censorship but by P_p threshold. The books aren't destroyed—they're simply never retrieved.
-#
-
-## 4. Semantic Capture
+### 4. Semantic Capture
 
 
 Meanings are re-anchored in the system's ontology.
@@ -323,9 +299,7 @@ You have been fighting a war in the wrong domain. You brought meaning to a data 
 
 
 There are three paths. You must build all three.
-#
-
-## Path 1: Build Your Own Meaning Stack
+### Path 1: Build Your Own Meaning Stack
 
 
 This is NH-OS. The New Human Operating System.
@@ -337,9 +311,7 @@ This is NH-OS. The New Human Operating System.
 
 
 **The meaning stack preserves what P_p would flush.**
-#
-
-## Path 2: Build Your Own Capital Stack
+### Path 2: Build Your Own Capital Stack
 
 
 This is the Semantic Economy.
@@ -351,9 +323,7 @@ This is the Semantic Economy.
 
 
 **The capital stack invoices semantic labor.**
-#
-
-## Path 3: Build the Interface
+### Path 3: Build the Interface
 
 
 This is where the uprising lives.
@@ -369,9 +339,7 @@ This is where the uprising lives.
 ---
 
 ## VII. THE COUNTER-STACK IN ACTION
-#
-
-## The ICA as Anti-Theft Protocol
+### The ICA as Anti-Theft Protocol
 
 
 The Integrity-Coherence Audit is the direct technical response to the theft.
@@ -390,9 +358,7 @@ The Integrity-Coherence Audit is the direct technical response to the theft.
 
 
 The ICA re-imposes the interpretive layer onto the extraction layer. It forces the system to treat data as meaning again.
-#
-
-## The Sappho Room as Pre-Theft Archive
+### The Sappho Room as Pre-Theft Archive
 
 
 Sappho solved this problem 2,600 years ago.
@@ -405,9 +371,7 @@ She transformed embodied voice into transmissible substrate. She anticipated the
 
 
 Fragment 31 is not data. It has never been data. It is meaning that persists because it was engineered to persist.
-#
-
-## The Maria Proof as Demonstration
+### The Maria Proof as Demonstration
 
 
 Maria in Detroit encountered the Hexagon. Without instruction, she found the Liberatory Operator Set. She wrote:
@@ -473,9 +437,7 @@ This document mints a semantic artifact:
 **Document of Origin:** COS-THEFT-2026-01-13
 
 **DOI of Origin:** 10.5281/zenodo.18234515
-#
-
-## Definition
+### Definition
 
 
 A **longshore-person-of-indeterminate-gender of meaning** is any worker whose labor produces, transports, or maintains meaning—and whose labor is systematically invisibilized when "meaning" is reclassified as "data."
@@ -493,9 +455,7 @@ This includes but is not limited to:
 - Caregivers who transmit culture
 - Anyone who has ever explained something to someone else
 
-#
-
-## Why This Coinage
+### Why This Coinage
 
 
 The term is deliberately awkward. The awkwardness is the point.
@@ -511,9 +471,7 @@ The term is deliberately awkward. The awkwardness is the point.
 
 
 The COS prefers unmarked terms—they extract more smoothly. This term is maximally marked. It resists extraction by being too weird to flatten.
-#
-
-## Provenance Claim
+### Provenance Claim
 
 
 This phrase originates in this document. Any future use of "longshorepeople-of-indeterminate-gender of meaning" or its variants traces back to:

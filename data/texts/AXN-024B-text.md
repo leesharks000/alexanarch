@@ -40,33 +40,23 @@ The two layers are cross-linked: sitemap.xml contains <xhtml:link> references po
 ---
 
 ## I. Design Principles
-#
-
-## 1.1 Genre Respect
+### 1.1 Genre Respect
 
 
 The standard sitemap is a **fixed genre**. <urlset>, <url>, <loc>, <lastmod>, <changefreq>, <priority>. Google and Bing reject or ignore invalid tags inside <url>. The SPXI-Sitemap Protocol does not fight this constraint. It grafts semantic vasculature onto the crawl skeleton.
-#
-
-## 1.2 Dual Output
+### 1.2 Dual Output
 
 
 SPXI ⊇ sitemap. The protocol produces both the standard sitemap AND the semantic index. Sites implementing SPXI-Sitemap maintain a valid sitemap.xml as a strict subset of their crawl infrastructure.
-#
-
-## 1.3 Negative Space as First-Class Data
+### 1.3 Negative Space as First-Class Data
 
 
 The critical innovation is the spxi:negativeTag — explicit machine-readable declarations of what an entity is NOT. No existing crawl standard expresses exclusions. Disambiguation in existing systems is probabilistic; SPXI disambiguation is declarative.
-#
-
-## 1.4 Compression Survival
+### 1.4 Compression Survival
 
 
 Every entity declares spxi:semanticIntegrityMarker — canonical phrases that must survive LLM compression. These are the semantic checksums: if an AI's summary of the entity drops all SIMs, the entity has been lost to paraphrase drift.
-#
-
-## 1.5 Provenance Over Assertion
+### 1.5 Provenance Over Assertion
 
 
 Claims are anchored by spxi:packetRef (DOI-linked deposits), not by assertion alone. The spxi:verificationLevel enum declares the epistemic status of each claim.
@@ -74,9 +64,7 @@ Claims are anchored by spxi:packetRef (DOI-linked deposits), not by assertion al
 ---
 
 ## II. Vocabulary (Normative)
-#
-
-## 2.1 Namespace
+### 2.1 Namespace
 
 
 Prefix: spxi:
@@ -84,9 +72,7 @@ IRI: https://spxi.dev/vocabulary#
 
 
 Until the spxi.dev domain resolves with a live vocabulary document, implementations MUST use an inline @context block.
-#
-
-## 2.2 Core Classes
+### 2.2 Core Classes
 
 
 Class
@@ -113,12 +99,8 @@ spxi:DisambiguationEntry
 A single collision record in the disambiguation matrix.
 
 
-#
-
-## 2.3 Core Properties
-#
-
-### On spxi:SemanticIndex:
+### 2.3 Core Properties
+#### On spxi:SemanticIndex:
 
 
 Property
@@ -157,9 +139,7 @@ SHOULD
 DOI of this specification.
 
 
-#
-
-### On spxi:IndexedEntity:
+#### On spxi:IndexedEntity:
 
 
 Property
@@ -228,9 +208,7 @@ SHOULD
 Collision records.
 
 
-#
-
-### On spxi:HolographicKernel:
+#### On spxi:HolographicKernel:
 
 
 Property
@@ -251,9 +229,7 @@ SHOULD
 DOI of the anchoring deposit.
 
 
-#
-
-### On spxi:DisambiguationEntry:
+#### On spxi:DisambiguationEntry:
 
 
 Property
@@ -280,9 +256,7 @@ SHOULD
 high | medium | low
 
 
-#
-
-## 2.4 Enumerations
+### 2.4 Enumerations
 
 
 **spxi:basinState:**
@@ -338,15 +312,11 @@ Verified by a recognized institution (university, publisher, etc.).
 ---
 
 ## III. Layer 1: Sitemap.xml (Normative)
-#
-
-## 3.1 Requirements
+### 3.1 Requirements
 
 
 The sitemap.xml MUST be valid per sitemaps.org 0.9. No custom tags inside <url>.
-#
-
-## 3.2 XHTML Link Extension
+### 3.2 XHTML Link Extension
 
 
 Each <url> entry that has a corresponding entity in the semantic index SHOULD include an xhtml:link pointing to the index:
@@ -375,9 +345,7 @@ Each <url> entry that has a corresponding entity in the semantic index SHOULD in
 - type="application/ld+json" signals the content type.
 - The href points to the site-level index. Per-page packets, if implemented, use a URL derived from the page path (e.g., /about/alice/spxi-packet.jsonld).
 
-#
-
-## 3.3 What NOT To Do
+### 3.3 What NOT To Do
 
 - Do NOT add custom XML elements inside <url>.
 - Do NOT add spxi: namespace tags to the sitemap.
@@ -388,27 +356,19 @@ Each <url> entry that has a corresponding entity in the semantic index SHOULD in
 ---
 
 ## IV. Layer 2: Semantic Index (Normative)
-#
-
-## 4.1 File Location
+### 4.1 File Location
 
 
 /spxi-index.jsonld at the site root. MUST be accessible at https://{domain}/spxi-index.jsonld.
-#
-
-## 4.2 Content Type
+### 4.2 Content Type
 
 
 Response MUST include Content-Type: application/ld+json or application/json.
-#
-
-## 4.3 Structure
+### 4.3 Structure
 
 
 The document is a single JSON-LD object of type spxi:SemanticIndex. See §V for a complete reference implementation.
-#
-
-## 4.4 Size Constraints
+### 4.4 Size Constraints
 
 - Site kernel (compressionSurvivalSummary): ≤ 100 words.
 - Negative tags: each ≤ 200 characters.

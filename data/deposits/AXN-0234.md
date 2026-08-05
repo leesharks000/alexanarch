@@ -185,9 +185,7 @@ The geocoded basin is The Secret Book of Walt given physical coordinates. The bo
     "compression_survival_summary": null
   }
 }
-#
-
-## Feed query
+### Feed query
 
 SELECT d.* FROM deposits d
 WHERE d.deleted_at IS NULL

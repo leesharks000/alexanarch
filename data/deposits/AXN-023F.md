@@ -46,9 +46,7 @@ Machine-facing field (in every JSON-LD packet):
 "mp:historicalStatus": "future_speculative_within_TANG",
 "mp:actualPublicationStatus": "not_yet_published_as_of_2026",
 "mp:isPartOf": "https://doi.org/10.5281/zenodo.19779493"
-#
-
-## 3. Catalog-First, Not Graph-First
+### 3. Catalog-First, Not Graph-First
 
 *(LABOR/ChatGPT)*
 

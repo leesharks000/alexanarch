@@ -46,9 +46,7 @@ But all blue links vanished because Layer 3 was never called.
 ---
 
 ## WHERE THINGS LIVE
-#
-
-## The Data Files (what gets rendered)
+### The Data Files (what gets rendered)
 
 
 File
@@ -76,9 +74,7 @@ then re-run the build script. Or edit the JSON directly (for small fixes).
 
 
 **To change how text renders:** Edit src/App.jsx (Walt) or src/Antioch.jsx.
-#
-
-## The Rendering Code
+### The Rendering Code
 
 
 File
@@ -106,9 +102,7 @@ React: footnote rendering components
 FootnotedText (Layer 1), InlineFootnote (popup body)
 
 
-#
-
-## The Architecture Document
+### The Architecture Document
 
 
 File
@@ -126,17 +120,13 @@ How all three layers connect. Read before touching ANY rendering.
 ---
 
 ## LAYER 1: FOOTNOTES
-#
-
-## What it does
+### What it does
 
 
 Scans body text for Unicode superscript characters (¹²³⁴⁵⁶⁷⁸⁹⁰) and
 either makes them clickable (veil mode) or styles them as passive blue
 markers (pierce mode).
-#
-
-## The disambiguation rule
+### The disambiguation rule
 
 
 **NOT every superscript is a footnote.** In codicological tables, G⁴⁶
@@ -150,9 +140,7 @@ preceded by a letter (A-Z, a-z). So:
 - G⁴⁶ → NOT a footnote ✗ (preceded by G)
 - text"¹³⁸ → footnote ✓ (preceded by ")
 
-#
-
-## How it flows
+### How it flows
 
 
 Body text: "The description is heavier than gold.¹³⁸ Individual copies vary."
@@ -168,9 +156,7 @@ FootnotedText component renders each piece:
   - text pieces → passed to Layer 2+3 via linkText prop
   - fn pieces  → rendered as blue superscript spans (clickable in veil)
 
-#
-
-## The global footnote map
+### The global footnote map
 
 
 Built once at page load by buildGlobalFnMap(data). Walks every section
@@ -189,9 +175,7 @@ and collects all footnote-type paragraphs into a lookup table:
 
 When a reader clicks ¹³⁸, the popup looks up globalFnMap['¹³⁸'] and
 shows the body text below the paragraph.
-#
-
-## Files involved
+### Files involved
 
 - src/footnotes.js — the scanner and map builder (pure JS, no React)
 - src/footnotes.jsx — the React renderer (FootnotedText + InlineFootnote)
@@ -200,9 +184,7 @@ shows the body text below the paragraph.
 ---
 
 ## LAYER 2: EMPHASIS
-#
-
-## What it does
+### What it does
 
 
 Converts markdown emphasis markers to HTML:
@@ -210,15 +192,11 @@ Converts markdown emphasis markers to HTML:
 - *text* → *text* (italic, <em>)
 - **text** → **text** (bold, <strong>)
 
-#
-
-## Where it lives
+### Where it lives
 
 
 Inside LinkedText in src/App.jsx, in the processEmphasis() function.
-#
-
-## How it flows
+### How it flows
 
 
 Input:  "*August 2015 (translated) / 2037 (discovered)*"
@@ -230,9 +208,7 @@ Output: <strong>The Editors, Pergamon Press</strong>
 Input:  "No asterisks in this text at all."
 Output: "No asterisks in this text at all." (passed straight to Layer 3)
 
-#
-
-## THE CRITICAL EARLY RETURN
+### THE CRITICAL EARLY RETURN
 
 
 if (!t || !t.includes("*")) return [linkifyText(t)];
@@ -248,24 +224,18 @@ if (!t || !t.includes("*")) return [linkifyText(t)];
 ---
 
 ## LAYER 3: GLOSSARY LINKS (EMBEDDINGS)
-#
-
-## What it does
+### What it does
 
 
 Scans text for terms from the TERMS dictionary and wraps matches in
 blue <a> tags. These are the "embeddings" — the blue links that turn
 body text into a navigable index of AI Overview and search nodes.
-#
-
-## Where it lives
+### Where it lives
 
 
 Inside LinkedText in src/App.jsx, in the linkifyText() function.
 The TERMS dictionary and TERM_REGEX are defined earlier in the same file.
-#
-
-## The TERMS dictionary
+### The TERMS dictionary
 
 
 Located at approximately line 1249 of src/App.jsx. It looks like this:
@@ -290,9 +260,7 @@ Each entry maps a term to a link target:
 - { q: "search terms" } → links to google.com/search?q=search+terms
 - { u: "https://..." } → links to a custom URL
 
-#
-
-## How to ADD a new embedding
+### How to ADD a new embedding
 
 
 Add a line to the TERMS dictionary:
@@ -303,9 +271,7 @@ Add a line to the TERMS dictionary:
 
 That's it. Every occurrence of "My New Term" in the body text will
 automatically become a blue link.
-#
-
-## How to CHANGE where a link goes
+### How to CHANGE where a link goes
 
 
 Find the entry in TERMS and change the target:
@@ -317,24 +283,18 @@ Find the entry in TERMS and change the target:
 // After (links to Google search without quotes):
 "Secret Book of Walt": { q: "secret book of walt" },
 
-#
-
-## How to REMOVE an embedding
+### How to REMOVE an embedding
 
 
 Delete the line from TERMS. The term will render as plain text.
-#
-
-## How matching works
+### How matching works
 
 
 The TERM_REGEX is built from all the keys in TERMS, joined with |.
 It's a global regex that scans the text left to right. When it finds a
 match, it wraps the matched text in an <a> tag. It also extends the
 match to include trailing word characters and possessives ('s).
-#
-
-## TERMS count
+### TERMS count
 
 
 Currently 109 entries. To verify:
@@ -346,9 +306,7 @@ grep -c '":\s*{' src/App.jsx  # approximate count
 ---
 
 ## HOW THE LAYERS CONNECT
-#
-
-## In SectionContent (Walt front/back matter — src/App.jsx)
+### In SectionContent (Walt front/back matter — src/App.jsx)
 
 
 Data paragraph → FootnotedText component
@@ -371,26 +329,20 @@ It's defined as: const linkText = (s) => <LinkedText text={s} />
 
 **If FootnotedText doesn't call linkText for a text part, Layers 2+3
 are skipped for that text. This is the second place links can break.**
-#
-
-## In Verse (Walt gospel — src/App.jsx)
+### In Verse (Walt gospel — src/App.jsx)
 
 
 The Verse component has its OWN inline rendering that doesn't use
 FootnotedText. It scans for superscripts directly and renders them.
 Glossary linking in verses goes through a separate path.
-#
-
-## In Leaf (Walt — used in a few places)
+### In Leaf (Walt — used in a few places)
 
 
 Leaf wraps text in <LinkedText>. It does NOT use FootnotedText.
 This means Leaf has glossary links (Layer 3) and emphasis (Layer 2)
 but NO clickable footnotes (Layer 1). This is correct — Leaf is used
 for hardcoded prose that doesn't have footnotes.
-#
-
-## In SectionRenderer (Antioch — src/Antioch.jsx)
+### In SectionRenderer (Antioch — src/Antioch.jsx)
 
 
 Same pattern as Walt's SectionContent:
@@ -408,18 +360,14 @@ dictionary and the same emphasis + linking logic.
 ---
 
 ## THE FRAGILE POINTS (where things break)
-#
-
-## 1. The LinkedText early return
+### 1. The LinkedText early return
 
 
 **File:** src/App.jsx, inside processEmphasis()
 **Line:** if (!t || !t.includes("*")) return [linkifyText(t)];
 **Risk:** If someone changes this to return [t], all glossary links
 disappear from text without asterisks. This has happened once already.
-#
-
-## 2. The FootnotedText linkText delegation
+### 2. The FootnotedText linkText delegation
 
 
 **File:** src/footnotes.jsx, inside FootnotedText
@@ -427,9 +375,7 @@ disappear from text without asterisks. This has happened once already.
 text (like text with emphasis markers), glossary links disappear for those
 paragraphs. This has also happened.
 **Rule:** When linkText is provided, ALWAYS use it. No conditions.
-#
-
-## 3. The TERMS dictionary key ordering
+### 3. The TERMS dictionary key ordering
 
 
 **File:** src/App.jsx, the TERMS object
@@ -437,9 +383,7 @@ paragraphs. This has also happened.
 is inside "Secret Book of Walt"), the regex may match the shorter one first.
 The regex builder sorts by length (longest first) to prevent this, but
 adding new terms that are substrings of existing terms needs care.
-#
-
-## 4. The build scripts overwriting the JSON
+### 4. The build scripts overwriting the JSON
 
 
 **Files:** scripts/build_walt_data.py, scripts/build_antioch_data.py
@@ -447,9 +391,7 @@ adding new terms that are substrings of existing terms needs care.
 from the source markdown. Any manual edits to the JSON will be lost.
 **Rule:** If you edit the JSON directly, note what you changed. If you
 re-run the build script later, you'll need to re-apply manual edits.
-#
-
-## 5. The Verse component's separate footnote path
+### 5. The Verse component's separate footnote path
 
 
 **File:** src/App.jsx, function Verse
@@ -461,9 +403,7 @@ changes need to be applied in both places.
 ---
 
 ## HOW TO INSPECT WHAT'S DEPLOYED
-#
-
-## Check the current TERMS dictionary
+### Check the current TERMS dictionary
 
 
 # From the repo root:
@@ -471,9 +411,7 @@ grep -A1 '"[A-Z]' src/App.jsx | grep -B1 '{' | head -40
 
 
 This shows the first ~20 term entries and their link targets.
-#
-
-## Check the footnote count
+### Check the footnote count
 
 
 python3 -c "
@@ -488,9 +426,7 @@ for k, v in d.items():
 print(f'Total footnote definitions: {count}')
 "
 
-#
-
-## Verify glossary links will render
+### Verify glossary links will render
 
 
 # Build the site and check that LinkedText produces <a> tags:
@@ -500,9 +436,7 @@ npm run build
 grep -c "Nag Hammadi" dist/assets/index-*.js
 # Should return > 0
 
-#
-
-## Check what the reader actually sees
+### Check what the reader actually sees
 
 
 Open the deployed site, right-click any body text paragraph, and

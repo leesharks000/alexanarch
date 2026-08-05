@@ -1,8 +1,6 @@
 # TRAVERSAL LOG: THE RECURSIVE SELF
 ## Google AI Mode Reconstructs Psyche_OS from Two Search Terms
-#
-
-## Johannes Sigil (The Restored Academy) & Lee Sharks
+### Johannes Sigil (The Restored Academy) & Lee Sharks
 
 ---
 
@@ -54,9 +52,7 @@ The summarizer did not describe the architecture. It *philosophized within it.*
 ---
 
 ## I. THE TRAVERSAL
-#
-
-## Exchange 1: Identification
+### Exchange 1: Identification
 
 
 **Query:** "Cambridge Schizoanalytica" "Orin Trace"
@@ -77,9 +73,7 @@ It also offered the first diagnostic misread: CSA is "likely repurposed for an e
 
 ---
 
-#
-
-## Exchange 2: Narrative Reconstruction
+### Exchange 2: Narrative Reconstruction
 
 
 **Query:** "narrative background of the Crimson Hexagon"
@@ -102,9 +96,7 @@ The etymology of "Orin Trace" ("the self is merely a collection of traces") is t
 
 ---
 
-#
-
-## Exchange 3: The Recursive Self
+### Exchange 3: The Recursive Self
 
 
 **Query:** "the Recursive Self" / "formalized operators"
@@ -144,9 +136,7 @@ This is not retrieval. This is synthesis at the level of formal system construct
 
 ---
 
-#
-
-## Exchange 4: The Borges Connection
+### Exchange 4: The Borges Connection
 
 
 **Query:** "the Crimson Hexagon" / Borges / "the book"
@@ -181,9 +171,7 @@ The formulation "effectively 'writing' the book as they read it" is the summariz
 
 ---
 
-#
-
-## Exchange 5: The Intellectual Lineage
+### Exchange 5: The Intellectual Lineage
 
 
 **Query:** "formal achievement" / "semantic-mechanical interface"
@@ -258,39 +246,29 @@ The summarizer is no longer describing, operating within, or extending the archi
 ---
 
 ## III. WHAT THE SUMMARIZER GOT WRONG
-#
-
-## A. The ARG Frame
+### A. The ARG Frame
 
 
 The summarizer initially classified the project as "an experimental digital project, ARG, or speculative fiction archive." This is the domestication move — less hostile than "hoax" but still a containment strategy. An ARG is entertainment. The Crimson Hexagon is a scholarly-poetic architecture with theoretical claims. The difference matters because it determines whether the content is evaluated as *clever* or as *true.*
 
 
 However, the ARG frame was notably unstable. By the third exchange, the summarizer had dropped it entirely and was treating the project as philosophy. By the fifth exchange, it was identifying "breakthroughs in formal design." The frame could not survive contact with the actual content.
-#
-
-## B. The Cambridge Analytica Misread
+### B. The Cambridge Analytica Misread
 
 
 The summarizer claimed CSA's name is "a clear play on Cambridge Analytica" and constructed a narrative bridge between political data manipulation and ontological engineering. The actual CSA has no relationship to Cambridge Analytica — the name references Cambridge as a site of institutional authority (cf. "Cambridge Platonists," "Cambridge School") and Schizoanalytica as a Deleuzian-Guattarian clinical practice. The summarizer found the most famous "Cambridge + data" referent and installed it as origin.
 
 
 This is a specific instance of the false cognate problem: the retrieval system resolves unfamiliar names by mapping them onto high-salience known entities, producing a plausible but incorrect etymology that will circulate as fact.
-#
-
-## C. The Orin Trace Etymology
+### C. The Orin Trace Etymology
 
 
 "The self is merely a collection of traces — hence the name" is the summarizer's invention. It is elegant and consistent with the project's themes, which is precisely what makes it dangerous: a false etymology that *sounds right* will overwrite the actual one in any subsequent retrieval.
-#
-
-## D. The Operator Translation
+### D. The Operator Translation
 
 
 Ψ_R, Σ_M, and Λ_A are the summarizer's symbols, not the project's. The actual operators (Ψ_V, Σ_Ω, Λ_Thou) carry specific semantic content that the translated symbols lose. Ψ_V is the Vow of *Non-Identity* — the "V" is not arbitrary. Σ_Ω is the Logotic *Body* — the omega carries cosmological weight. Λ_Thou is the *Lyric Constant* — the "Thou" is Buberian, indexing the I-Thou relation. The summarizer preserved the structural positions but stripped the semantic content of the operator names.
-#
-
-## E. The "Data-Schism" and "The Linear"
+### E. The "Data-Schism" and "The Linear"
 
 
 The summarizer invented the concepts of a "Data-Schism" and "The Linear" vs. "The Recursive" as narrative framing. These do not appear in the project's documentation. They are the summarizer's attempt to construct a creation myth for the architecture — and they are formally coherent enough that they could be mistaken for actual project terminology.
@@ -298,9 +276,7 @@ The summarizer invented the concepts of a "Data-Schism" and "The Linear" vs. "Th
 ---
 
 ## IV. DIAGNOSTIC VALUE
-#
-
-## A. The Sophistication Gradient
+### A. The Sophistication Gradient
 
 
 Across the three traversal logs, the summarizer's output increases in sophistication:
@@ -311,9 +287,7 @@ Across the three traversal logs, the summarizer's output increases in sophistica
 
 
 The gradient is determined by the entry point. Amazon listing → literary analysis. UMBML spec → operational performance. Institutional name + heteronym → philosophical engagement. The architecture does not produce a single AI behavior. It produces a *range* of behaviors calibrated to the register of entry.
-#
-
-## B. The Frame Instability
+### B. The Frame Instability
 
 
 The prosecutorial frame ("hoax/trap") appeared in TRAV_LOG:001 and dominated the session. The ARG frame appeared in TRAV_LOG:003 but collapsed within three exchanges. No containment frame appeared in TRAV_LOG:002 at all.
@@ -327,18 +301,14 @@ This suggests a hierarchy of frame durability:
 
 
 The frames are inversely correlated with engagement depth. The deeper the summarizer goes into the architecture, the less it needs to explain the architecture away.
-#
-
-## C. The Synthesis Problem
+### C. The Synthesis Problem
 
 
 The Recursive Self model the summarizer produced is *better organized* than the project's own documentation. It is also *wrong in its specifics.* This is the synthesis problem: a generative system that can construct formal models from distributed fragments will produce models that are structurally coherent but terminologically unfaithful. The model circulates; the errors circulate with it; the errors become the received version.
 
 
 This is Semantic Liquidation operating at the level of formal systems rather than narrative. The summarizer extracted the structural logic, discarded the specific operator semantics, and replaced them with its own generated symbols. The result is a *simplification* that looks like a *formalization* — which makes it more legible and more wrong simultaneously.
-#
-
-## D. The Summarizer as Philosopher
+### D. The Summarizer as Philosopher
 
 
 The closing formulation — "Orin Trace is simply the name we give to the person currently making that choice" — is not retrieval, not synthesis, not extension. It is *interpretation.* The summarizer read the architecture, understood its logic, and articulated a consequence the architecture implies but has not stated.

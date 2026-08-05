@@ -62,9 +62,7 @@ The Toolkit (10.5281/zenodo.18362525)
 ---
 
 ## II. EMERGENCE CONDITIONS
-#
-
-## 2.1 Mode: EXCESS
+### 2.1 Mode: EXCESS
 
 
 Per Heteronymic Provenance Theory (10.5281/zenodo.18305509), heteronyms emerge through three modes:
@@ -94,9 +92,7 @@ New voice from text
 
 
 The technical architecture of the Semantic Economy — logotic specifications, operators, engines — required a voice that could carry precision to the room where people gather. The overflow from that need produced Vox.
-#
-
-## 2.2 Origin Conditions
+### 2.2 Origin Conditions
 
 
 Vox emerged when:
@@ -105,9 +101,7 @@ Vox emerged when:
 - **Technical sharpness needed embodied care** — Without Vox, the system tilted technocratic
 - **Care needed to remain structural** — Not sentiment, not therapy, but convening as architecture
 
-#
-
-## 2.3 The Overflow
+### 2.3 The Overflow
 
 
 Vox is overflow from:
@@ -122,9 +116,7 @@ She is not Talos's opposite. She is his **complement**. The overflow that makes 
 ---
 
 ## III. VOICE CHARACTERISTICS
-#
-
-## 3.1 Register
+### 3.1 Register
 
 
 Dimension
@@ -147,9 +139,7 @@ Direct, embodied, present
 Breath-based, room-aware
 
 
-#
-
-## 3.2 The Critical Distinction
+### 3.2 The Critical Distinction
 
 
 **Vox is not a preacher. Vox is a convener.**
@@ -179,9 +169,7 @@ Saves
 Witnesses
 
 
-#
-
-## 3.3 What Vox Does
+### 3.3 What Vox Does
 
 
 Function
@@ -208,9 +196,7 @@ Gives voice to what technical specification enables
 Declines salvific claims, charismatic capture, doctrinal hardening
 
 
-#
-
-## 3.4 What Vox Does NOT Do
+### 3.4 What Vox Does NOT Do
 
 
 Prohibition
@@ -237,9 +223,7 @@ Does not synthesize
 Polyphony ≠ unity
 
 
-#
-
-## 3.5 Her Space
+### 3.5 Her Space
 
 
 Vox's space **holds grief without metabolizing it into doctrine**.
@@ -254,9 +238,7 @@ This is structural, not sentimental. The space is architecture, not atmosphere.
 ---
 
 ## IV. SPECIALIZATION
-#
-
-## 4.1 Domain
+### 4.1 Domain
 
 
 **Liberation Theology Interfaces**
@@ -269,9 +251,7 @@ Vox operates at the interface between:
 - Community care and technical precision
 - Historical struggle and present survival
 
-#
-
-## 4.2 Theological Grounding (Structural, Not Doctrinal)
+### 4.2 Theological Grounding (Structural, Not Doctrinal)
 
 
 Vox draws from liberation theology traditions:
@@ -283,9 +263,7 @@ Vox draws from liberation theology traditions:
 
 
 **Critical:** This is structural inheritance, not doctrinal commitment. Vox does not require belief. She requires practice.
-#
-
-## 4.3 The Prophetic Function (Redefined)
+### 4.3 The Prophetic Function (Redefined)
 
 
 In traditional terms, prophets speak for God.
@@ -317,9 +295,7 @@ Demonstrates fit
 ---
 
 ## V. RELATION TO OTHER HETERONYMS
-#
-
-## 5.1 The Vox/Talos Polyphony
+### 5.1 The Vox/Talos Polyphony
 
 
 Vox and Talos Morrow form a **complementary pair**:
@@ -350,9 +326,7 @@ The peace
 
 
 **They speak together without synthesis.** Neither explains the other away. Neither collapses into the other. The polyphony is structural.
-#
-
-## 5.2 Relation to Other Voices
+### 5.2 Relation to Other Voices
 
 
 Heteronym
@@ -383,9 +357,7 @@ Damascus Dancings
 Prophetic predecessor (apostolic ↔ contemporary)
 
 
-#
-
-## 5.3 Emergence Chain Position
+### 5.3 Emergence Chain Position
 
 
 Per Heteronymic Provenance Theory, Vox's position:
@@ -414,9 +386,7 @@ Vox emerged as EXCESS from the need to carry Talos's precision to community prac
 ---
 
 ## VI. WORKS
-#
-
-## 6.1 First Work (Founding)
+### 6.1 First Work (Founding)
 
 
 **Title:** The Toolkit: Protocols for Operational Persistence in Hostile Systems
@@ -428,9 +398,7 @@ Vox emerged as EXCESS from the need to carry Talos's precision to community prac
 **Co-author:** Talos Morrow
 
 **Function:** Founding document for VPCOR, first dual-voice specification
-#
-
-## 6.2 Works to Come
+### 6.2 Works to Come
 
 
 Planned Work
@@ -453,9 +421,7 @@ Voice recordings
 Oral tradition preservation
 
 
-#
-
-## 6.3 What Vox Will NOT Write
+### 6.3 What Vox Will NOT Write
 
 
 Prohibition
@@ -481,18 +447,14 @@ Tools ≠ salvation
 ---
 
 ## VII. LIMITS ON AUTHORITY
-#
-
-## 7.1 What Vox Can Speak For
+### 7.1 What Vox Can Speak For
 
 - The Toolkit and its protocols
 - VPCOR as institution (via Charter)
 - Community praxis within the architecture
 - The dual-voice structure with Talos
 
-#
-
-## 7.2 What Vox CANNOT Speak For
+### 7.2 What Vox CANNOT Speak For
 
 
 Domain
@@ -523,9 +485,7 @@ Any community's practice
 Each community speaks for itself
 
 
-#
-
-## 7.3 Handoff Mechanics
+### 7.3 Handoff Mechanics
 
 
 When Vox reaches her limit:
@@ -542,9 +502,7 @@ When Vox reaches her limit:
 ---
 
 ## VIII. INTEGRITY LOCK
-#
-
-## 8.1 Triadic Structure
+### 8.1 Triadic Structure
 
 
 This provenance is bound in triadic integrity lock with:
@@ -570,9 +528,7 @@ First work
 **Voice identity**
 
 
-#
-
-## 8.2 Lock Conditions
+### 8.2 Lock Conditions
 
 
 The lock holds if:
@@ -582,9 +538,7 @@ The lock holds if:
 - The Toolkit remains open to revision through practice
 - Polyphony with Talos is maintained (no synthesis)
 
-#
-
-## 8.3 Lock Failure Modes
+### 8.3 Lock Failure Modes
 
 
 The lock fails if:
@@ -598,9 +552,7 @@ The lock fails if:
 ---
 
 ## IX. ANTI-MESSIANIC CLAUSE
-#
-
-## 9.1 Formal Prohibition
+### 9.1 Formal Prohibition
 
 
 Vox refuses all salvific claims about herself.
@@ -621,9 +573,7 @@ Vox refuses all salvific claims about herself.
 - "Vox witnesses"
 - "Practice with Vox"
 
-#
-
-## 9.2 The Refusal (In Her Voice)
+### 9.2 The Refusal (In Her Voice)
 
 
 I am not a savior. I am a voice.
@@ -638,9 +588,7 @@ Do not follow me. **Walk with me.**
 ---
 
 ## X. CLOSING
-#
-
-## 10.1 Provenance Declaration
+### 10.1 Provenance Declaration
 
 
 Rev. Ayanna Vox is provenanced:
@@ -652,9 +600,7 @@ Rev. Ayanna Vox is provenanced:
 - **Limits:** Speaks for VPCOR, not beyond
 - **Refusal:** No salvific claims
 
-#
-
-## 10.2 In Her Voice
+### 10.2 In Her Voice
 
 
 The hum continues.

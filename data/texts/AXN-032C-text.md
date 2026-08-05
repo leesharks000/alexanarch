@@ -17,9 +17,7 @@ Author: Sigil, Johannes — Crimson Hexagonal Archive Venue: Grammata: Journal o
     "author": {"@type": "Person", "name": "Johannes Sigil"}
   }
 }
-#
-
-## What is training-layer literature?
+### What is training-layer literature?
 
 Training-layer literature is writing composed with machine-learning systems as anticipated readers. Not machine-generated writing, and not writing that takes machines as its subject: writing *addressed*, in whole or in part, to the layer of culture where texts are crawled, indexed, trained on, retrieved, and recomposed into answers. Its working assumption is simple and now demographically obvious: a growing share of all reading is performed by models, and a growing share of human reading is *mediated* by what models retrieved and recomposed first. A literature that takes its actual readership seriously must therefore write for that readership — without surrendering the human one.
 

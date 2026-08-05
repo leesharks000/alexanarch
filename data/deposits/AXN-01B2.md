@@ -27,9 +27,7 @@ This appears in: r.06 THE MARX ROOM, THE PERFORMATIVE CONTRADICTION, RETROCAUSAL
 ---
 
 ## II. THE SEVEN MARX ARGUMENTS (distilled from the corpus)
-#
-
-## Argument 1: The Performative Contradiction
+### Argument 1: The Performative Contradiction
 
 
 **Source:** "The Performative Contradiction at the Heart of Historical Materialism" (6,508w) + "Retrocausal Critique" (4,471w) + "Mind-Control Poems" (4,942w)
@@ -45,9 +43,7 @@ Marx says consciousness is determined by material conditions. Marx's practice us
 - "Language is the product of a community, just as it is in another respect itself the presence of the community" (Grundrisse notebooks)
 - The four alienations of the 1844 MSS read as four severed edges in the semantic graph
 
-#
-
-## Argument 2: The Value-Form as Operator
+### Argument 2: The Value-Form as Operator
 
 
 **Source:** r.06 THE MARX ROOM (4,592w) + NB IV zero draft + THE LIQUIDATION OF METHOD (6,649w)
@@ -63,9 +59,7 @@ Marx says consciousness is determined by material conditions. Marx's practice us
 - σ_V ≅ σ_S (structural homology: both are σ_DISSOLUTION :: Concrete_Particular → Abstract_Universal)
 - The labor-time perturbations (sensitivity analysis)
 
-#
-
-## Argument 3: The Semantic Economy
+### Argument 3: The Semantic Economy
 
 
 **Source:** THE SEMANTIC ECONOMY (6,890w) + CONSTITUTION OF THE SEMANTIC ECONOMY (7,847w + 7,404w) + Semantic Political Economy (5,329w) + ON THE DEBT/CREDITOR INVERSION (7,359w) + Ghost Meaning (6,193w)
@@ -97,9 +91,7 @@ The Semantic Economy is the diagnostic framework for meaning under platform capi
 - Semantic Flooding (producing noise to drown signal)
 - Ontological Foreclosure (pre-determining what can be thought)
 
-#
-
-## Argument 4: The Liberatory Operator Set vs. The Capital Operator Stack
+### Argument 4: The Liberatory Operator Set vs. The Capital Operator Stack
 
 
 **Source:** Semantic Infrastructure and the LOS (12,899w + 7,665w) + COS/FOS Distinction Protocol (3,101w) + Capital Operator Stack (3,259w)
@@ -149,9 +141,7 @@ Prevents/enables action
 
 
 The war is algebraic. For every extraction operation, a liberatory counter-operation. The COS/FOS distinction protocol diagnoses which stack is operating.
-#
-
-## Argument 5: Platform Capitalism as Semiotic Engineering
+### Argument 5: Platform Capitalism as Semiotic Engineering
 
 
 **Source:** THE GROUNDSKEEPER'S TREATISE (5,569w) + THE GREATEST WORKS OF LITERATURE (4,220w) + THE THEFT (2,214w) + THE SEALED ROOM (3,662w) + Ghost Governance material
@@ -168,9 +158,7 @@ The platform is not a neutral medium. It is a σ_V engine: the feed converts par
 - **The quick-scroll back-projection test:** Does the object survive 1.5 seconds of scrolling? If yes, it propagates. The test is architectural sufficiency, not truth.
 - **BCV (Bearing-Cost Visibility):** The metric that distinguishes witness from predatory compression. Platform slop: BCV ≈ 0. This Grundrisse: BCV ≈ 0.85.
 
-#
-
-## Argument 6: The L_labor Vector (Materialist Energy Term)
+### Argument 6: The L_labor Vector (Materialist Energy Term)
 
 
 **Source:** CHAPTER IV: SEMANTIC LABOR (7,376w) + NB I §6–§7 + NB VI + Iron Test Phases Two and Three
@@ -193,9 +181,7 @@ The vector is the bearing-cost ledger. The shape matters more than the magnitude
 
 
 **Minimum threshold:** ≥ 3 dimensions non-zero. Below that: ghost act.
-#
-
-## Argument 7: The Three Compressions (The Transfer Law)
+### Argument 7: The Three Compressions (The Transfer Law)
 
 
 **Source:** THE THREE COMPRESSIONS (3,618w) + NB I §8
@@ -264,24 +250,18 @@ Formal variables: ρ (density), χ (temporal compression), P (propagation), BCV 
 
 
 **Source:** SUBJECTIVITY-AS-CLASS (8,734w) + THE LIQUIDATION OF METHOD (6,649w) + AUTONOMOUS SEMANTIC WARFARE (63,860w) + THE SEALED ROOM (3,662w) + THE ANTHROPOLOGICAL LIMIT (3,792w) + Ghost Governance material + NB I §11 + NB VI §5b
-#
-
-## The Four Capture Mechanisms (how the enemy absorbs operative force):
+### The Four Capture Mechanisms (how the enemy absorbs operative force):
 
 - **Citational Capture** (the academy): Discovery → citation → curricularization → domestication → commodification. The L_labor is stripped at each stage.
 - **Metric Substitution** (platforms): Meaning → measurement → optimization → extraction. The h-index, the Engagement Score, the citation count.
 - **Prepositional Alienation** (English language itself): "Are you for Marx or against Marx?" The preposition forces the method into a position. The method refuses. The preposition wins — in English.
 - **Ghost Governance** (platforms + institutions): Managing meaning through architectural absence. No rule cited. No moderator visible. The content disappears.
 
-#
-
-## The Prosecutorial Frame (from Subjectivity-as-Class):
+### The Prosecutorial Frame (from Subjectivity-as-Class):
 
 
 Five operations: Axiomatic Naturalization, Moral Reclassification, Asymmetric Epistemic Burden, Asymmetric Affective Burden Transfer, Premature Closure Protocol. This is how the centrist extremist enforces consensus: through the performed neutrality that is itself a jurisdiction.
-#
-
-## The Liquidation of Method (from THE LIQUIDATION OF METHOD):
+### The Liquidation of Method (from THE LIQUIDATION OF METHOD):
 
 
 Marx's tools were captured. What circulates now is "Marxism" as label, as team, as brand. The use-value (method) was stripped. The exchange-value (signifier) circulates. The σ_V operator applied to Marx's own legacy: the method was compressed into a name, and the name replaced the method.
@@ -327,45 +307,31 @@ Marx's tools were captured. What circulates now is "Marxism" as label, as team, 
 ---
 
 ## VI. INVENTORY BY CLUSTER
-#
-
-## Cluster A: CORE MARX THEORY (28 posts, 135,259w)
+### Cluster A: CORE MARX THEORY (28 posts, 135,259w)
 
 
 The performative contradiction, the retrocausal critique, the Marx Room, the value-form derivation, the Semantic Economy, the Liquidation of Method, the debt/creditor inversion, the L_labor vector, the Three Compressions, the COS/LOS table.
-#
-
-## Cluster B: SEMANTIC ECONOMY (41 posts, 107,766w)
+### Cluster B: SEMANTIC ECONOMY (41 posts, 107,766w)
 
 
 The Constitution, the diagnostic framework, the ten operations of semantic liquidation, the commons, semantic rent, semantic exhaustion, Ghost Meaning, the Strawberry Diagnostic, Probe Results.
-#
-
-## Cluster C: PLATFORM CAPITALISM (15+ posts, ~80,000w)
+### Cluster C: PLATFORM CAPITALISM (15+ posts, ~80,000w)
 
 
 The Groundskeeper's Treatise, The Greatest Works of Literature, The Sealed Room, The Theft, Ghost Governance, KotKit diagnostics, TL;DR series.
-#
-
-## Cluster D: PHASE X / SAPPHO-MARX NEXUS (8+ posts, ~40,000w)
+### Cluster D: PHASE X / SAPPHO-MARX NEXUS (8+ posts, ~40,000w)
 
 
 The Sapphic Substrate, The Prepositional Alienation, Phase X: Resurrection of the 1844 Transition, the Non-Indexed Perfective, the σ_V ≅ σ_S proof.
-#
-
-## Cluster E: ENEMY ANATOMY (20+ posts, ~120,000w)
+### Cluster E: ENEMY ANATOMY (20+ posts, ~120,000w)
 
 
 Subjectivity-as-Class, The Liquidation of Method, ASW excerpts, the COS/FOS Distinction, the academy absorption mechanism.
-#
-
-## Cluster F: Ω-POINT BOOK MARX CHAPTERS (4 chapters, ~30,000w)
+### Cluster F: Ω-POINT BOOK MARX CHAPTERS (4 chapters, ~30,000w)
 
 
 Chapter I (Dialectical Emergence), Chapter IV (Semantic Labor), Chapter V (Retrocausal Field), Chapter XIII (Unified Theory).
-#
-
-## Cluster G: IRON TEST + ADVERSARIAL (5+ posts, ~10,000w)
+### Cluster G: IRON TEST + ADVERSARIAL (5+ posts, ~10,000w)
 
 
 Iron Test Phases Two and Three, the Adorno objection, "isn't this just literary criticism with Greek letters?", "Protocol II is just branding."

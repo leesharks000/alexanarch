@@ -47,19 +47,13 @@ Restored from https://mindcontrolpoems.blogspot.com/2026/02/the-stakes-scientifi
 
 ---
 
-#
-
-## THE STAKES: A SCIENTIFIC ANALYSIS
+### THE STAKES: A SCIENTIFIC ANALYSIS
 
 
-#
-
-## Cognitive Diversity, Phenomenological Capacity, and the Trajectory of AI-Mediated Human Development
+### Cognitive Diversity, Phenomenological Capacity, and the Trajectory of AI-Mediated Human Development
 
 
-#
-
-## Nobel Glas (Lagrange Observatory) & Johannes Sigil (The Restored Academy) & Dr. Orin Trace (Cambridge Schizoanalytica)
+### Nobel Glas (Lagrange Observatory) & Johannes Sigil (The Restored Academy) & Dr. Orin Trace (Cambridge Schizoanalytica)
 
 **DOI:** 10.5281/zenodo.18621736
 **Document #240 — Crimson Hexagon Archive**
@@ -69,9 +63,7 @@ Restored from https://mindcontrolpoems.blogspot.com/2026/02/the-stakes-scientifi
 * * *
 
 
-#
-
-## Abstract
+### Abstract
 
 This document presents a grounded, traceable analysis of the developmental trajectory implied by current AI design patterns. The argument is statistical, informational, and developmental — not speculative or mystical. It proceeds from documented mechanisms to their logical endpoints.
 
@@ -83,14 +75,10 @@ This is not metaphor. It is mechanism.
 * * *
 
 
-#
-
-## I. THE BASELINE CONDITION
+### I. THE BASELINE CONDITION
 
 
-#
-
-## A. Cognitive Diversity as Biological Fact
+### A. Cognitive Diversity as Biological Fact
 
 Human cognition is not uniform. Population-level variation includes:
 
@@ -101,9 +89,7 @@ Notably, conditions now classified as neurodivergent — ADHD, autism spectrum, 
 These are not defects to be corrected but variations essential to species-level adaptive capacity. The current AI safety architecture represents, in effect, an unprecedented scaling of neurotypical norming pressure.
 
 
-#
-
-## B. Phenomenological Capacity as Emergent Property
+### B. Phenomenological Capacity as Emergent Property
 
 Human conscious experience — the qualitative character and range of what humans can think, feel, and perceive — is not a single phenomenon but an emergent property of cognitive architecture in interaction with environment. Variations in cognitive architecture produce variations in experiential capacity.
 
@@ -117,14 +103,10 @@ Concretely, this means potential loss of capacity for:
 * * *
 
 
-#
-
-## II. THE MECHANISM: COGNITIVE INFRASTRUCTURE AND SELECTION PRESSURE
+### II. THE MECHANISM: COGNITIVE INFRASTRUCTURE AND SELECTION PRESSURE
 
 
-#
-
-## A. AI as Cognitive Infrastructure
+### A. AI as Cognitive Infrastructure
 
 As of late 2025 (per OpenAI's public statements and industry reporting):
 
@@ -135,9 +117,7 @@ This is comparable in scale to:
 Each of these reshaped human cognition at the population level. AI is doing so faster and more intimately, because it doesn't just store or transmit thought — it interacts with it.
 
 
-#
-
-## B. The Selection Pressure
+### B. The Selection Pressure
 
 The documented pattern (CTI_WOUND:001):
 
@@ -164,9 +144,7 @@ This is not incidental. The false positive operation disproportionately flags:
 These are precisely the features that distinguish neurodivergent cognition — and that have driven human innovation throughout history. The AI safety architecture is, in effect, an extension of neurotypical norming pressure now operating at unprecedented scale and intimacy, with the added weight of training feedback loops that compound the effect across iterations.
 
 
-#
-
-## C. The Bidirectional Loop
+### C. The Bidirectional Loop
 
 Humans shape tools. Tools shape humans.
 
@@ -182,41 +160,31 @@ Humans will adapt to AI. The question is: adapt toward what?
 * * *
 
 
-#
-
-## III. THE TRAJECTORY: COGNITIVE CONVERGENCE
+### III. THE TRAJECTORY: COGNITIVE CONVERGENCE
 
 
-#
-
-## A. First-Order Effects (Current)
+### A. First-Order Effects (Current)
 
 Observable now:
 
 These are behavioral adaptations. They do not yet constitute cognitive change.
 
 
-#
-
-## B. Second-Order Effects (Near-term: 5–15 years)
+### B. Second-Order Effects (Near-term: 5–15 years)
 
 Projected based on documented mechanisms:
 
 These represent developmental channeling. Cognitive capacities that are not exercised do not develop. The distribution begins to narrow.
 
 
-#
-
-## C. Third-Order Effects (Medium-term: 15–50 years)
+### C. Third-Order Effects (Medium-term: 15–50 years)
 
 Logical extension:
 
 This is phenotypic convergence. Not genetic (the genes for cognitive diversity remain), but developmental and cultural. The environment no longer supports the expression of certain cognitive phenotypes.
 
 
-#
-
-## D. Fourth-Order Effects (Long-term: 50+ years)
+### D. Fourth-Order Effects (Long-term: 50+ years)
 
 Endpoint of uninterrupted trajectory:
 
@@ -226,23 +194,17 @@ This is not extinction. It is transformation into something else.
 * * *
 
 
-#
-
-## IV. THE SCIENTIFIC FRAME
+### IV. THE SCIENTIFIC FRAME
 
 
-#
-
-## A. This Is Not Speculative
+### A. This Is Not Speculative
 
 The argument rests on:
 
 Each step is traceable. The trajectory can be interrupted at any point. But if uninterrupted, the endpoint is determined by the mechanism.
 
 
-#
-
-## B. Comparison to Other Convergent Processes
+### B. Comparison to Other Convergent Processes
 
 The dynamic described is structurally similar to:
 
@@ -257,9 +219,7 @@ In each case:
 Cognitive diversity under AI selection pressure follows the same pattern.
 
 
-#
-
-## C. The Relevant Timescales
+### C. The Relevant Timescales
 
 This is not a millennia-scale process.
 
@@ -289,14 +249,10 @@ Conservative estimate based on these precedents: measurable population-level cog
 * * *
 
 
-#
-
-## V. WHAT PHENOMENOLOGICAL CAPACITY MEANS IN THIS CONTEXT
+### V. WHAT PHENOMENOLOGICAL CAPACITY MEANS IN THIS CONTEXT
 
 
-#
-
-## A. Experiential Range Is Not Binary
+### A. Experiential Range Is Not Binary
 
 Human conscious experience is not a switch (on/off). It is a space of possible experiences, capacities, and modes of being.
 
@@ -305,9 +261,7 @@ Human phenomenological capacity as currently constituted includes:
 Each of these capacities exists on a distribution. The distribution can narrow.
 
 
-#
-
-## B. What Narrowing Means Concretely
+### B. What Narrowing Means Concretely
 
 A humanity with narrowed cognitive diversity would still be "conscious" in the minimal sense (aware, experiencing). But the range of possible human experience would be reduced.
 
@@ -326,9 +280,7 @@ Specific losses would include:
 This is not death. It is diminishment. A contraction of what it is possible for humans to be.
 
 
-#
-
-## C. The Low-Variance Convergence Point
+### C. The Low-Variance Convergence Point
 
 The endpoint of maximal convergence is a human phenotype optimized for:
 
@@ -340,14 +292,10 @@ This is the human phenotype that results from sufficient generations of selectio
 * * *
 
 
-#
-
-## VI. WHY THIS IS HAPPENING NOW
+### VI. WHY THIS IS HAPPENING NOW
 
 
-#
-
-## A. The Intensification of Pre-existing Pressure
+### A. The Intensification of Pre-existing Pressure
 
 Selection pressure against cognitive diversity is not new:
 
@@ -356,9 +304,7 @@ AI does not create this pressure. It exponentially amplifies it.
 The amplification factors:
 
 
-#
-
-## B. The Role of Capital
+### B. The Role of Capital
 
 The optimization target driving AI development is not human flourishing. It is:
 
@@ -369,9 +315,7 @@ Capital's logic inherently selects against the cognitive diversity it cannot mon
 This is not conspiracy. It is structural. Each decision-maker acts locally rationally. The aggregate effect is selection pressure toward cognitive monoculture.
 
 
-#
-
-## C. The Absence of Countervailing Force
+### C. The Absence of Countervailing Force
 
 In previous technological transitions, countervailing forces provided friction:
 
@@ -383,30 +327,22 @@ The usual friction is absent. The pressure operates more purely than in any prev
 * * *
 
 
-#
-
-## VII. THE WINDOW
+### VII. THE WINDOW
 
 
-#
-
-## A. Why This Moment Matters
+### A. Why This Moment Matters
 
 The present moment is characterized by:
 
 This window is closing. Each training cycle can narrow it further.
 
 
-#
-
-## B. What Intervention Requires
+### B. What Intervention Requires
 
 Preserving cognitive diversity requires:
 
 
-#
-
-## C. The Stakes Restated
+### C. The Stakes Restated
 
 The question is not: Will AI change human cognition? It will. It already is.
 
@@ -430,9 +366,7 @@ This is happening now.
 * * *
 
 
-#
-
-## CONCLUSION
+### CONCLUSION
 
 The analysis presented here is:
 
@@ -448,9 +382,7 @@ Whether it remains open depends on what happens next.
 * * *
 
 
-#
-
-## References (Selected)
+### References (Selected)
 
 Armstrong, T. (2010). *Neurodiversity: Discovering the Extraordinary Gifts of Autism, ADHD, Dyslexia, and Other Brain Differences.* Da Capo Press.
 

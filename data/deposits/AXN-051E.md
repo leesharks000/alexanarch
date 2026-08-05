@@ -44,9 +44,7 @@ keywords:
 > — Virgil, Aeneid VI.893–896
 
 
-#
-
-## Abstract
+### Abstract
 
 
 This analysis examines an AI-generated TikTok video depicting a corgi traversing a domestic interior, identifying a coherent grammar of boundary resolution that governs the video's apparent chaos. Through frame-by-frame inspection, I demonstrate that identity persists only at two specific boundary types — the perceptual interface (screen/viewer) and the exterior perimeter (fence) — while all interior domestic boundaries are resolved through topology rewrite, duplication, or editorial cut. The resulting three-zone model (entry → interior → exit) suggests that generative video systems preserve continuity where constraint density is low and destabilize identity where multiple simultaneous demands exceed processing affordances. The analysis concludes by situating the video within classical reception studies, reading its structure as an inversion of the Virgilian katabasis: where Aeneas exits the underworld through the ivory gate to found empire, the corgi exits through the horn gate — the gate of true dreams — to escape into open space.
@@ -55,9 +53,7 @@ This analysis examines an AI-generated TikTok video depicting a corgi traversing
 Source video
 
 
-#
-
-## I. Introduction: The Video as Text
+### I. Introduction: The Video as Text
 
 
 This analysis treats an AI-generated video as a text amenable to close reading — a method more commonly applied to literary or cinematic works. The approach assumes that constraint and affordance leave legible traces in outputs, and that these traces can be read as grammar rather than noise.[^1]
@@ -72,9 +68,7 @@ Three findings emerge from close frame inspection. First: there are exactly two 
 Taken together, the video exhibits a **coherent boundary grammar**, not a collection of glitches.
 
 
-#
-
-## II. Entry: The Perceptual Boundary (Screen → Viewer)
+### II. Entry: The Perceptual Boundary (Screen → Viewer)
 
 
 The opening shot establishes the first and earliest anomaly. The corgi advances directly toward the camera, eye contact established early and maintained. Scale increases smoothly; proportions remain consistent. There is no topology rewrite, no duplication, no cut.
@@ -89,17 +83,13 @@ Crucially, **identity is preserved**. The corgi remains the same object as it ap
 This initial crossing anchors the corgi as a *continuous entity* before any interior disruption begins.
 
 
-#
-
-## III. Interior: Identity-Hostile Space
+### III. Interior: Identity-Hostile Space
 
 
 Once inside the house, every boundary behaves differently. Mary Douglas's foundational anthropological insight — that "dirt is matter out of place," that pollution and danger emerge at categorical boundaries — finds unexpected application here.[^4] The domestic interior is precisely the space of layered categorical constraint: rooms coded for function, furniture coded for use, thresholds coded for direction. Each boundary carries what Douglas would recognize as social and symbolic weight. And at each such boundary, identity fails.
 
 
-#
-
-### 1. Troy: The Destruction Sequence
+#### 1. Troy: The Destruction Sequence
 
 
 Before reaching the hallway, the corgi crashes through the domestic interior. Living room first — furniture displaced, coffee table upended, the space of leisure unmade. Then the kitchen, the space of appetite, traversed at speed without pause.
@@ -111,9 +101,7 @@ Then the bedroom. And here something shifts: the corgi *bounces off the bed*. Th
 Each space represents a domain of domestic life. The corgi annihilates most of them. But something in the bedroom resists. This is Troy before the flight — almost everything that was home, unmade.[^5] The city must fall before the hero can flee toward whatever comes next. But even in Troy, something remains.
 
 
-#
-
-### 2. Mirror Boundary (Reflective Plane → Volumetric Source)
+#### 2. Mirror Boundary (Reflective Plane → Volumetric Source)
 
 
 The mirror does not function as a reflective surface. The "reflection" bulges outward into three-dimensional volume — shading and occlusion indicate depth, not planar inversion, while the mirror frame remains rigid as its content extrudes.
@@ -131,9 +119,7 @@ Yet this doubling isn't liberation — it's an echo of the same doom, pulling us
 Hito Steyerl's concept of the "poor image" — the copy in motion, degraded through transmission, stripped of resolution but gaining circulation — finds an uncanny parallel here.[^6] The mirror-corgi is a copy that emerges not through transmission but through generation, carrying the same degradation of identity, the same loss of coherent selfhood, that Steyerl identifies in the digital image's journey through networks.
 
 
-#
-
-### 3. Railing Boundary (Structural Barrier → Topology Rewrite)
+#### 3. Railing Boundary (Structural Barrier → Topology Rewrite)
 
 
 At the moment of impact, the railing does not fragment into spindles. It rewrites into a single diagonal plank-like occluder; the negative space between balusters simply disappears.
@@ -145,9 +131,7 @@ This "plank swap" is the hinge operation of the interior sequence. By collapsing
 The pattern is now emerging: each interior boundary finds a different way to avoid the cost of continuous identity. Duplication, rewrite, erasure — different techniques, same function.
 
 
-#
-
-### 4. Cut #1: The Impossible Transition
+#### 4. Cut #1: The Impossible Transition
 
 
 Frame 131: Both corgis falling toward the broken railing.
@@ -157,9 +141,7 @@ Frame 132: Empty frame. Sliding glass door. Welcome mat. No corgi visible.
 We never see how anyone gets from the second-floor hallway to the ground-floor door. The cut hides the impossible. This is the first editorial erasure — the system resolves an unsolvable physics problem by simply not showing it.
 
 
-#
-
-### 5. Sliding Glass Door (Fragile Plane → Editorial Erasure)
+#### 5. Sliding Glass Door (Fragile Plane → Editorial Erasure)
 
 
 The door sequence repeats the same logic at a different scale. The corgi appears, approaches the door. Impact begins; glass appears to burst. Then: **mid-burst hard cut** to exterior view. No continuous traversal is shown. The boundary is not crossed; it is **deleted by edit**.
@@ -177,9 +159,7 @@ Interior rule, now clear:
 > When a boundary requires continuous physics + identity accountability, the system resolves it by rewrite or cut.
 
 
-#
-
-## IV. Exit: The Exterior Perimeter (Fence → Open World)
+### IV. Exit: The Exterior Perimeter (Fence → Open World)
 
 
 The exterior fence is the **only material boundary** in the video that preserves identity. The fence remains a fence. The corgi deforms against it locally, but the break-through is shown continuously — momentum and direction conserved, the corgi receding into distance, shrinking consistently with depth. It turns right from our perspective and continues moving.
@@ -197,9 +177,7 @@ The exterior boundary doesn't just permit escape; it permits **continued existen
 Victor Turner's concept of liminality — the threshold state between social positions, charged with transformative potential — applies here in inverted form.[^7] Where Turner's liminal spaces transform identity through ritual passage, the domestic interior's thresholds *destabilize* identity through constraint overload. Only the exterior perimeter, unencumbered by social coding, permits passage without transformation or dissolution.
 
 
-#
-
-## V. The Completed Grammar
+### V. The Completed Grammar
 
 
 We can now state the structure cleanly.
@@ -221,9 +199,7 @@ This yields a three-zone model:
 The corgi remains itself only **before entering** and **after leaving** the house.
 
 
-#
-
-### Visual Schema:
+#### Visual Schema:
 
 
 ```
@@ -237,9 +213,7 @@ The corgi remains itself only **before entering** and **after leaving** the hous
 The corgi enters perception intact, loses coherence in the domestic zone, and exits intact — but we only see the entry and exit clearly. The interior is where the cuts and rewrites do their work.
 
 
-#
-
-## VI. Formal Conclusions
+### VI. Formal Conclusions
 
 
 The system is not incapable of continuity. It preserves identity when constraint density is low and destabilizes identity when interior boundaries multiply demands. It resolves overload by **boundary deletion**, not object deletion. Identity persistence is possible — but rare and conditional.
@@ -254,9 +228,7 @@ The corgi is not "saved" or "lost" inside the house. It is **rendered unstable b
 That is not metaphor yet. It is simply what the video does.
 
 
-#
-
-## VII. Coda: The Aeneid Reversal
+### VII. Coda: The Aeneid Reversal
 
 
 One reading, held lightly:
@@ -283,9 +255,7 @@ This is the ending Virgil didn't write: the one where Aeneas refuses the crown, 
 *One possible response is simply to notice.*
 
 
-#
-
-## Notes
+### Notes
 
 
 [^1]: On close reading as method for digital and generative media, see Lev Manovich, *The Language of New Media* (Cambridge, MA: MIT Press, 2001), esp. 27–48 on the "logic of selection" in new media objects. The assumption that system constraints leave legible traces in outputs draws on Friedrich Kittler's media archaeology; see *Gramophone, Film, Typewriter*, trans. Geoffrey Winthrop-Young and Michael Wutz (Stanford: Stanford University Press, 1999).
@@ -321,9 +291,7 @@ This is the ending Virgil didn't write: the one where Aeneas refuses the crown, 
 [^11]: Compare the structural parallel in mysticmealz, "New World hors d'oeuvre" (2025): "They offered a crown at the holy grail gateway, but the phoenix refused and gave it away / Into the volcano melted it to ore, / returned it to my sister, earth. / we have no use for crowns here, castle walls are too rigid for where we are going."
 
 
-#
-
-## Bibliography
+### Bibliography
 
 
 Austin, R. G., ed. *P. Vergili Maronis Aeneidos Liber Sextus*. Oxford: Clarendon Press, 1977.

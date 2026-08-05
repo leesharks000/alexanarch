@@ -50,9 +50,7 @@ The question this paper asks is whether the logic — "user inputs are human-wri
 
 ## II. Three Grounds for Failure
 
-#
-
-## Ground 1: Mediation Signatures in Habituated Writers
+### Ground 1: Mediation Signatures in Habituated Writers
 
 The Reverse Turing Test (Sharks 2026, v1.2) specifies a three-stage experimental protocol for detecting AI-mediation signatures in human text. Its theoretical framework, reformulated in v1.2 around *rate* rather than *kind*, establishes:- Cognition is always already mediated. Every prior technological regime (print, telegraphy, broadcast, internet, social media) has homogenized the tail of the distribution of human textual production.- The current AI-mediation regime operates at a tail-thinning rate faster than prior regimes. The effect is not in the means (average lexical, syntactic, or semantic properties) but in the tails (rare-word retention, convoluted syntax, eccentric metaphorical leaps, idiosyncratic stylistic markers).- The homogenization propagates from AI-mediated text into the unaided cognitive practice of habituated writers. Heavy AI users produce text with thinner tails even when writing without AI assistance.
 
@@ -60,9 +58,7 @@ Chat users are, by sustained use, AI-habituated writers. A first-time user is no
 
 The contamination is not in the model's output appearing in the user's input (though that also occurs, via copy-paste, paraphrase, and conceptual adoption). The contamination is in the user's cognitive distribution having been reshaped by the interaction. The user writes differently because they have been writing *to* a model. The writing is adapted, accommodated, compressed toward the model's reception characteristics.
 
-#
-
-## Ground 2: The Conversational Feedback Loop
+### Ground 2: The Conversational Feedback Loop
 
 Chat conversations have a specific structure: user input → model output → user input → model output. Each turn is shaped by the preceding turn. The model's response frames the user's next question — not just informationally (the user now has an answer) but linguistically (the user adopts vocabulary, framing, and conceptual structure from the response).
 
@@ -74,9 +70,7 @@ A rough order-of-magnitude estimate: if a user's first-turn input shares 15–20
 
 The training implication is that later turns in a conversation are *more* contaminated than earlier turns, but current data pipelines do not distinguish between early and late turns. All user inputs are treated as equivalent human data.
 
-#
-
-## Ground 3: Model-Specific Accommodation
+### Ground 3: Model-Specific Accommodation
 
 The Five Substrates experiment (EA-MMRS-FIVESUB-01) establishes that different models have different mediation signatures: distinctive patterns of abstraction, vocabulary, structural emphasis, and forensic register that are consistent across tasks. These signatures are not neutral formatting preferences. They are distributions over language that shape the conversational environment.
 

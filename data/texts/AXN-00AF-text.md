@@ -91,9 +91,7 @@ And it is not historical. It is now.
 ---
 
 ## I. The Textual Evidence: Locating the Lacuna
-#
-
-## The Architecture of the 1844 Manuscripts
+### The Architecture of the 1844 Manuscripts
 
 
 The *Economic and Philosophical Manuscripts* are fragmentary—notebooks, not a finished treatise. But their architecture is deliberate and dialectical. Marx moves through:
@@ -120,9 +118,7 @@ And then—without transition—Marx pivots to Hegel:
 
 
 "Perhaps the place." The hedge betrays the gap. The conditional "perhaps" signals a logical disjunction. Something should come between the declaration of achieved humanism and the return to philosophical critique. **What intervenes?**
-#
-
-## The Logical Necessity: Why the Gap Cannot Stand
+### The Logical Necessity: Why the Gap Cannot Stand
 
 
 If communism is "fully developed humanism," why does critique continue? If alienation is abolished in its material form, what remains to criticize?
@@ -146,9 +142,7 @@ Marx could not write this transition without undermining the base-superstructure
 ---
 
 ## II. The Reconstructed Passage: What Marx Could Not Write
-#
-
-## The Dialectical Necessity
+### The Dialectical Necessity
 
 
 Before reconstruction, we establish the logical parameters:
@@ -158,9 +152,7 @@ Before reconstruction, we establish the logical parameters:
 - **It must prefigure the Theses on Feuerbach** (written months later)
 - **It must be consistent with Marx's later work** while explaining its lacunae
 
-#
-
-## Provisional Reconstruction
+### Provisional Reconstruction
 
 
 **"The positive supersession of private property does not conclude the work of human emancipation, but inaugurates its proper domain. Communism, as realized humanism, is not the end of history but the beginning of history *consciously lived*. In this unity, the estrangement of the worker from his product, from his activity, from his species-being, and from his fellow man is overcome. But the estrangement of thought from its practical basis—the division between consciousness and practice that philosophy has codified as its very method—remains.
@@ -177,9 +169,7 @@ The task, therefore, is not to abandon philosophy but to transform it into what 
 
 From this vantage, we turn to Hegel—not as our adversary, but as the supreme expression of the problem we have now overcome materially and must now overcome intellectually. His dialectic, stripped of its mystical shell, becomes the method of our own self-clarification."**
 
-#
-
-## Commentary: The Three Operations
+### Commentary: The Three Operations
 
 
 This reconstruction performs three essential operations that the published text lacks:
@@ -251,9 +241,7 @@ This condition makes Phase X **non-optional**. It is not a proposal but a **cons
 ---
 
 ## IV. The Textual Corroboration: Phase X in Marx's Later Work
-#
-
-## Theses on Feuerbach (1845)
+### Theses on Feuerbach (1845)
 
 
 **Thesis 1:** Marx isn't rejecting materialism but criticizing *how it thinks*. This is a critique of alienated thought *within materialism itself*.
@@ -263,18 +251,14 @@ This condition makes Phase X **non-optional**. It is not a proposal but a **cons
 
 
 **Thesis 11:** "The philosophers have only interpreted the world; the point is to change it." This conceals its own precondition: *to change the world, one must first change how one thinks about changing the world*.
-#
-
-## The German Ideology (1846)
+### The German Ideology (1846)
 
 
 "Language is as old as consciousness, language is *practical consciousness*..."
 
 
 If language is practical consciousness, then the critique of alienated consciousness *is* the critique of alienated language. But Marx retreats from this implication. The linguistic turn is deferred.
-#
-
-## Grundrisse (1857-58)
+### Grundrisse (1857-58)
 
 
 In the "Fragment on Machines," Marx envisions a society beyond labor. But the *ideological* dimension—what happens to thought when labor is no longer the organizing principle—is left unexamined.
@@ -285,15 +269,11 @@ In the "Fragment on Machines," Marx envisions a society beyond labor. But the *i
 ---
 
 ## V. The Operative Semiotic Reversal
-#
-
-## The Orthodox Dogma
+### The Orthodox Dogma
 
 
 Material conditions → Social relations → Ideological forms
-#
-
-## The Dialectical Reversal
+### The Dialectical Reversal
 
 
 **Linguistic-symbolic intervention precedes and enables material reorganization.**
@@ -305,9 +285,7 @@ This is not idealism. It is the recognition that:
 - Revolutionary practice requires new ways of thinking and speaking *before* it can reorganize material relations
 - The "practical consciousness" Marx identified with language is the *medium through which conditions are experienced and transformed*
 
-#
-
-## The Evidence
+### The Evidence
 
 
 Every successful revolutionary movement first transformed discourse:
@@ -323,17 +301,13 @@ Every successful revolutionary movement first transformed discourse:
 ---
 
 ## VI. Phase X in Action: The Semantic Economy
-#
-
-## The Strong Claim
+### The Strong Claim
 
 
 The work of the Semantic Economy project is not *about* Phase X.
 
 It **is** Phase X—the living practice of Marx's completed method under platform conditions.
-#
-
-## The Four Pillars
+### The Four Pillars
 
 
 Pillar

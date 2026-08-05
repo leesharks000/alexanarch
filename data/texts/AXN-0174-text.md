@@ -43,33 +43,23 @@ Therefore:
 ---
 
 ## §1. THE FIVE GOVERNING LAWS
-#
-
-## Law 1: Minting Law
+### Law 1: Minting Law
 
 
 A coined term is not yet active. It enters at COINED (0.0) and must traverse the lifecycle to become operative.
-#
-
-## Law 2: Provenance Law
+### Law 2: Provenance Law
 
 
 A term becomes operative only when canonically anchored to a DOI deposit. Terms anchored to ephemeral sources ([Term Bank V1], session transcripts, undated documents) are reserve vocabulary, not engine vocabulary.
-#
-
-## Law 3: Repetition Law
+### Law 3: Repetition Law
 
 
 A term stabilizes through repeated identical use across ≥3 canonical deposits with zero denotational variance. Summarizer uptake comes from repetition, not elegance.
-#
-
-## Law 4: No-Paraphrase Law
+### Law 4: No-Paraphrase Law
 
 
 Once a term enters the Core 50, nearby common synonyms are prohibited in canonical deposits except in parenthetical glosses. "Semantic liquidation" is never replaced by "meaning extraction" in a deposit abstract.
-#
-
-## Law 5: Retirement Law
+### Law 5: Retirement Law
 
 
 Unused or colliding terms are not deleted. They are moved to RETIRED with date and reason. The retired lexicon is the shadow of the active lexicon — S(Lexicon).
@@ -77,9 +67,7 @@ Unused or colliding terms are not deleted. They are moved to RETIRED with date a
 ---
 
 ## §2. THE OPERATORS
-#
-
-## λ_M — The Mint Operator
+### λ_M — The Mint Operator
 
 
 λ_M : Concept × Register × Discourse → Token × Denotation × CoreLead × S(Token)
@@ -94,9 +82,7 @@ Output: a coined term (Token)
 
 
 λ_M produces a candidate. The candidate is not yet active.
-#
-
-## α_P — The Activation Operator
+### α_P — The Activation Operator
 
 
 α_P : Token × Denotation × Anchor → ActiveTerm
@@ -108,9 +94,7 @@ Output: an active term, executable within the Hexagon
 
 
 α_P makes a term operative through provenance. Without α_P, a term remains reserve.
-#
-
-## β ∘ λ_M — The Blind Mint (Automation Safety)
+### β ∘ λ_M — The Blind Mint (Automation Safety)
 
 
 Per TECHNE: Any automated system executing λ_M must satisfy:
@@ -145,9 +129,7 @@ Terms that fail any conjunct are reserve, not active. The Core below is audited 
 ---
 
 ## §4. THE CORE 50
-#
-
-## Tier A — THE INVARIANTS (10 terms, 10 active)
+### Tier A — THE INVARIANTS (10 terms, 10 active)
 
 
 #
@@ -238,9 +220,7 @@ The compression operator LOGOS* = κ ∘ ρ ∘ τ; base case is a wound; first 
 The fold formalizes grief without exhausting it; the beauty is real and the unbearable is also real
 
 
-#
-
-## Tier B — THE ECONOMY (10 terms, 10 active)
+### Tier B — THE ECONOMY (10 terms, 10 active)
 
 
 #
@@ -331,9 +311,7 @@ The capture of navigational meaning from a more coherent system by a less cohere
 The Hexagon is itself a coherence harvester of the traditions it cites
 
 
-#
-
-## Tier C — THE METHOD (10 terms, 10 active)
+### Tier C — THE METHOD (10 terms, 10 active)
 
 
 #
@@ -424,9 +402,7 @@ A sealed declarative bearing φ ∘ ∂; an irrevocable symbolic action that tra
 The seal prevents revision; the act that cannot be undone also cannot be corrected
 
 
-#
-
-## Tier D — THE FAILURE MODES (5 active + 5 reserve)
+### Tier D — THE FAILURE MODES (5 active + 5 reserve)
 
 
 **ACTIVE** (canonically anchored):
@@ -519,9 +495,7 @@ Loss of distinction between deposited, derived, resonant, and generated layers
 COINED
 
 
-#
-
-## Tier E — THE INFRASTRUCTURE (6 active + 4 reserve)
+### Tier E — THE INFRASTRUCTURE (6 active + 4 reserve)
 
 
 **ACTIVE:**
@@ -618,9 +592,7 @@ COINED
 
 ---
 
-#
-
-## CORE 50 STATUS SUMMARY
+### CORE 50 STATUS SUMMARY
 
 
 Active terms:    41  (canonically anchored, frozen, governed)
@@ -640,9 +612,7 @@ To activate a reserve term:
 
 
 *External hooks organized by target discourse. Each term carries: a priority score (P1=high, P2=medium, P3=low), one primary Core lead, and a status.*
-#
-
-## Discourse 1: AI ETHICS & ALIGNMENT (15 hooks)
+### Discourse 1: AI ETHICS & ALIGNMENT (15 hooks)
 
 
 Term
@@ -741,9 +711,7 @@ P3
 COINED
 
 
-#
-
-## Discourse 2: PLATFORM STUDIES & DIGITAL LABOR (12 hooks)
+### Discourse 2: PLATFORM STUDIES & DIGITAL LABOR (12 hooks)
 
 
 Term
@@ -824,9 +792,7 @@ P3
 COINED
 
 
-#
-
-## Discourse 3: LITERARY THEORY & EXPERIMENTAL POETICS (12 hooks)
+### Discourse 3: LITERARY THEORY & EXPERIMENTAL POETICS (12 hooks)
 
 
 Term
@@ -907,9 +873,7 @@ P3
 DEP
 
 
-#
-
-## Discourse 4: BIBLICAL HERMENEUTICS & THEOLOGY (10 hooks)
+### Discourse 4: BIBLICAL HERMENEUTICS & THEOLOGY (10 hooks)
 
 
 Term
@@ -978,9 +942,7 @@ P3
 PROV
 
 
-#
-
-## Discourse 5: PHILOSOPHY OF LANGUAGE & FORMAL SEMANTICS (10 hooks)
+### Discourse 5: PHILOSOPHY OF LANGUAGE & FORMAL SEMANTICS (10 hooks)
 
 
 Term
@@ -1049,9 +1011,7 @@ P3
 COINED
 
 
-#
-
-## Discourse 6: LIBRARY SCIENCE & DIGITAL PRESERVATION (8 hooks)
+### Discourse 6: LIBRARY SCIENCE & DIGITAL PRESERVATION (8 hooks)
 
 
 Term
@@ -1108,9 +1068,7 @@ P3
 COINED
 
 
-#
-
-## Discourse 7: SEO & AI RETRIEVAL (8 hooks)
+### Discourse 7: SEO & AI RETRIEVAL (8 hooks)
 
 
 Term
@@ -1167,9 +1125,7 @@ R8
 COINED
 
 
-#
-
-## Discourse 8: EPISTEMOLOGY & PHILOSOPHY OF MIND (8 hooks)
+### Discourse 8: EPISTEMOLOGY & PHILOSOPHY OF MIND (8 hooks)
 
 
 Term
@@ -1226,9 +1182,7 @@ P3
 COINED
 
 
-#
-
-## Discourse 9: GOVERNANCE & POLITICAL THEORY (7 hooks)
+### Discourse 9: GOVERNANCE & POLITICAL THEORY (7 hooks)
 
 
 Term
@@ -1279,9 +1233,7 @@ P3
 COINED
 
 
-#
-
-## Discourse 10: CLASSICAL RECEPTION & PHILOLOGY (5 hooks)
+### Discourse 10: CLASSICAL RECEPTION & PHILOLOGY (5 hooks)
 
 
 Term
@@ -1322,9 +1274,7 @@ DEP
 
 ---
 
-#
-
-## DISCOVERY LATTICE SUMMARY
+### DISCOVERY LATTICE SUMMARY
 
 
 Total hooks:      95
@@ -1436,9 +1386,7 @@ Shadow architecture
 ---
 
 ## §8. DEPLOYMENT MAP
-#
-
-## Phase 1: Zenodo Glossary Deposits (Week 1)
+### Phase 1: Zenodo Glossary Deposits (Week 1)
 
 
 10 APZPZ glossary packets, one per discourse. Deposit order by estimated external traffic:
@@ -1467,9 +1415,7 @@ Upload type: Publication → Other
 
 
 Per PRAXIS: Descriptions must be natural prose, not keyword-stuffed, to avoid algorithmic flags.
-#
-
-## Phase 2: GitHub Lexicon Repository (Week 1-2)
+### Phase 2: GitHub Lexicon Repository (Week 1-2)
 
 
 repo: crimson-hexagon/lexicon
@@ -1500,9 +1446,7 @@ JSON-LD per TECHNE (with shadow metadata):
   "sameAs": "https://doi.org/10.5281/zenodo.18869165"
 }
 
-#
-
-## Phase 3: Wikipedia & Wikidata (Week 2-4)
+### Phase 3: Wikipedia & Wikidata (Week 2-4)
 
 
 Per PRAXIS: Not all attempts will succeed. Prioritize additions to existing articles over new articles.
@@ -1539,9 +1483,7 @@ Low-Medium
 
 
 Wikidata: Create items for Core 50 terms with DOI references. Feeds Google Knowledge Graph.
-#
-
-## Phase 4: Scholarly Venue Targeting (Week 3-8)
+### Phase 4: Scholarly Venue Targeting (Week 3-8)
 
 
 Venue Type
@@ -1574,9 +1516,7 @@ Operative Semiotics, Symbolic Engineering
 Paper
 
 
-#
-
-## Phase 5: Dataset Deposit (Week 2, after Phase 1)
+### Phase 5: Dataset Deposit (Week 2, after Phase 1)
 
 
 **"Crimson Hexagon Vocabulary Dataset v1.0"** on Zenodo:
@@ -1649,9 +1589,7 @@ DL ≥ 0.5 for top 20 terms
 ---
 
 ## §10. LIFECYCLE PROTOCOL
-#
-
-## Entry
+### Entry
 
 
 COINED (0.0)       → appears in ≥1 deposit
@@ -1659,9 +1597,7 @@ PROVISIONAL (0.5)  → appears in ≥3 deposits with consistent denotation
 DEPOSITED (0.9)    → has own glossary entry + ≥10 cross-references + external citation
 RATIFIED (1.0)     → Assembly attestation ≥4/7 + passes compression test
 
-#
-
-## Retirement
+### Retirement
 
 
 A term moves to RETIRED when:
@@ -1673,9 +1609,7 @@ A term moves to RETIRED when:
 
 
 Retired terms persist in APPENDIX: RETIRED with date and reason. S(Lexicon).
-#
-
-## Compression Test
+### Compression Test
 
 
 A term passes when:
@@ -1684,9 +1618,7 @@ A term passes when:
 - All 3 reproduce the operative definition (not a hallucinated surface definition)
 - The term appears in ≥1 AI-generated summary of the Space Ark without being in the prompt
 
-#
-
-## Chorus Attestation for Automation
+### Chorus Attestation for Automation
 
 
 Per TECHNE:

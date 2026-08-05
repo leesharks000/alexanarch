@@ -87,9 +87,7 @@ Should look like the point where force and coordination are distributed
 
 **Meaning:** This is the room that lets the fingers act as one hand.
 ---
-#
-
-## Thumb (Anchor Opposition)
+### Thumb (Anchor Opposition)
 
 **Document Role:** *Whose Face Is on the Twenty?* (anchor / forensic provenance / curatorial gap)
 
@@ -105,9 +103,7 @@ Slightly heavier base, signaling leverage and resistance
 
 **Meaning:** The initiating anomaly; gives the hand something to grasp against.
 ---
-#
-
-## Index Finger (Control Demonstration)
+### Index Finger (Control Demonstration)
 
 **Document Role:** *The Lizard People Were Right* (control / convention demonstration)
 
@@ -123,9 +119,7 @@ Cleanest directional vector in the composition
 
 **Meaning:** Demonstrates where the mechanism actually lives (in convention/presentation).
 ---
-#
-
-## Middle Finger (Synthetic Operational Proof)
+### Middle Finger (Synthetic Operational Proof)
 
 **Document Role:** *All the Spoils of Babylon* (manufacture / prompt-mediated reconstruction)
 
@@ -141,9 +135,7 @@ Luminous channels indicating active manipulation / fabrication pathways
 
 **Meaning:** Operational reach; transparent manufacture of authority effects.
 ---
-#
-
-## Ring Finger (Disciplinary Binding)
+### Ring Finger (Disciplinary Binding)
 
 **Document Role:** *The Inauguration of Memography* (field founding / method / citational capture)
 
@@ -159,9 +151,7 @@ A stable, formal, covenantal visual rhythm
 
 **Meaning:** The institutionalizing digit; binds the apparatus into a discipline.
 ---
-#
-
-## Pinky (Seal / Precision Tail / Integrity Finish)
+### Pinky (Seal / Precision Tail / Integrity Finish)
 
 **Document Role:** MSMRM as seal-function / room edge articulation (if palm is room core, pinky carries edge precision)
 

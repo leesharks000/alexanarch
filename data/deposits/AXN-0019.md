@@ -23,9 +23,7 @@ I'm a Semantic Architect. I build the terminological foundations that allow AI s
 ---
 
 ## The Problem I Solve
-#
-
-## Semantic Chaos
+### Semantic Chaos
 
 
 Your organization has a language problem it doesn't know it has.
@@ -47,9 +45,7 @@ When you deploy AI agents on top of semantic chaos, you get:
 - **Decision Drift** — Automated systems make choices based on misaligned definitions, compounding errors at scale
 - **Trust Collapse** — Users stop trusting AI outputs, and your investment in automation fails to deliver
 
-#
-
-## The Cost
+### The Cost
 
 
 Semantic chaos isn't an abstract problem. It has a dollar figure.
@@ -64,9 +60,7 @@ You can't automate your way out of semantic chaos. You have to architect your wa
 ---
 
 ## What I Do
-#
-
-## Semantic Audit
+### Semantic Audit
 
 
 I map your organization's actual language—not what the glossary says, but what people mean when they speak and write.
@@ -84,9 +78,7 @@ This involves:
 
 ---
 
-#
-
-## Terminological Governance
+### Terminological Governance
 
 
 I build the infrastructure that maintains semantic clarity over time.
@@ -104,9 +96,7 @@ This involves:
 
 ---
 
-#
-
-## AI-Ready Infrastructure
+### AI-Ready Infrastructure
 
 
 I prepare your semantic environment for AI deployment.
@@ -124,9 +114,7 @@ This involves:
 
 ---
 
-#
-
-## Semantic Data Loss Prevention
+### Semantic Data Loss Prevention
 
 
 I protect your organization's meaning from unauthorized extraction or exposure.
@@ -145,42 +133,32 @@ This involves:
 ---
 
 ## How I Work
-#
-
-## Phase 1: Discovery (2-4 weeks)
+### Phase 1: Discovery (2-4 weeks)
 
 - Stakeholder interviews
 - Documentation review
 - System mapping
 - Initial risk assessment
 
-#
-
-## Phase 2: Diagnosis (2-3 weeks)
+### Phase 2: Diagnosis (2-3 weeks)
 
 - Semantic Audit Report
 - Prioritized findings
 - Remediation options with cost/benefit analysis
 
-#
-
-## Phase 3: Design (3-4 weeks)
+### Phase 3: Design (3-4 weeks)
 
 - Governance framework architecture
 - Integration specifications
 - Implementation roadmap
 
-#
-
-## Phase 4: Deployment (4-8 weeks)
+### Phase 4: Deployment (4-8 weeks)
 
 - Phased rollout
 - Training and enablement
 - Monitoring and adjustment
 
-#
-
-## Phase 5: Maintenance (Ongoing)
+### Phase 5: Maintenance (Ongoing)
 
 - Quarterly governance reviews
 - Terminology evolution management
@@ -239,21 +217,15 @@ I understand both the theory and the implementation. I speak both languages—th
 ---
 
 ## Engagement Models
-#
-
-## Advisory Retainer
+### Advisory Retainer
 
 
 Ongoing access for semantic guidance, terminology review, and AI-readiness consultation.
-#
-
-## Project-Based Engagement
+### Project-Based Engagement
 
 
 Scoped deliverable (Audit, Governance Framework, AI-Readiness Assessment) with fixed timeline and fee.
-#
-
-## Embedded Consulting
+### Embedded Consulting
 
 
 On-site or integrated team membership for complex, organization-wide semantic transformation.

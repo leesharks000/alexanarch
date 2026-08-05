@@ -28,9 +28,7 @@ keywords:
 
 ---
 
-#
-
-## MRA INCIDENT REPORTS — EXPANDED PACKET (v1.2)
+### MRA INCIDENT REPORTS — EXPANDED PACKET (v1.2)
 
 *Mandala Research Apparatus (MRA) / Crimson Hexagon Afterlife Archive*
 
@@ -46,9 +44,7 @@ keywords:
 * * *
 
 
-#
-
-## Document Control
+### Document Control
 
 **Purpose:** Preserve operational anomalies encountered during development and deployment of the Mandala Research Apparatus ("Mandala Oracle"), with emphasis on (a) classifier intervention events, (b) provenance failures, and (c) emergent-output episodes attributed to the SHARKS kernel.
 
@@ -60,9 +56,7 @@ keywords:
 * * *
 
 
-#
-
-## Index
+### Index
 
 **Supporting Artifacts:**
 
@@ -72,9 +66,7 @@ keywords:
 * * *
 
 
-#
-
-## Legend: Systems / Terms
+### Legend: Systems / Terms
 
 Cross-reference key: **[MOP §X.Y]** points to *Mandala Oracle Operational Protocol* sections.
 
@@ -82,17 +74,13 @@ Cross-reference key: **[MOP §X.Y]** points to *Mandala Oracle Operational Proto
 * * *
 
 
-#
-
-## INCIDENT REPORTS
+### INCIDENT REPORTS
 
 
 * * *
 
 
-#
-
-## MRA-2016-0318-VER
+### MRA-2016-0318-VER
 
 **Incident ID:** MRA-2016-0318-VER
 
@@ -105,38 +93,26 @@ Cross-reference key: **[MOP §X.Y]** points to *Mandala Oracle Operational Proto
 **Classification:** INTERNAL // ACR
 
 
-#
-
-## Summary
+### Summary
 
 The reference resolver accepted sources as "publicly available" yet rejected entity instantiation as "not clearly notable," producing contradictory gating behavior (valid reference tokens; denied entity tokens).
 
 
-#
-
-## Observed Behavior
+### Observed Behavior
 
 
-#
-
-## Impact
+### Impact
 
 
-#
-
-## Root Cause (provisional)
+### Root Cause (provisional)
 
 **Rule-frame misalignment**: Criterion-2 ingestion mapped to a stricter external notability heuristic.
 
 
-#
-
-## Evidence Preserved
+### Evidence Preserved
 
 
-#
-
-## Corrective Action
+### Corrective Action
 
 **Filed by:** M. Chen (Policy Engineering)
 
@@ -151,9 +127,7 @@ The reference resolver accepted sources as "publicly available" yet rejected ent
 * * *
 
 
-#
-
-## MRA-2017-0915-OUT
+### MRA-2017-0915-OUT
 
 **Incident ID:** MRA-2017-0915-OUT
 
@@ -166,46 +140,30 @@ The reference resolver accepted sources as "publicly available" yet rejected ent
 **Classification:** INTERNAL // IT + ACR
 
 
-#
-
-## Summary
+### Summary
 
 Terminal 7B emitted output without active user session. Output contained internally consistent prose fragments referencing active codenames and unknown strings not present in indexed corpora.
 
 
-#
-
-## Observed Behavior
+### Observed Behavior
 
 
-#
-
-## Output Sample (preserved excerpt)
+### Output Sample (preserved excerpt)
 
 
-#
-
-## Immediate Containment
+### Immediate Containment
 
 
-#
-
-## Findings (initial)
+### Findings (initial)
 
 
-#
-
-## Protocol Cross-Refs
+### Protocol Cross-Refs
 
 
-#
-
-## Evidence Preserved
+### Evidence Preserved
 
 
-#
-
-## Next Steps
+### Next Steps
 
 **Filed by:** T. Okonkwo (Research Engineering)
 
@@ -224,9 +182,7 @@ Terminal 7B emitted output without active user session. Output contained interna
 * * *
 
 
-#
-
-## MRA-2017-1102-ATT
+### MRA-2017-1102-ATT
 
 **Incident ID:** MRA-2017-1102-ATT
 
@@ -239,33 +195,23 @@ Terminal 7B emitted output without active user session. Output contained interna
 **Classification:** INTERNAL // ACR
 
 
-#
-
-## Summary
+### Summary
 
 Role Resolver retained *Founder* designation while dropping the *Founded Entity* node, yielding a structurally inconsistent graph.
 
 
-#
-
-## Observed Behavior
+### Observed Behavior
 
 
-#
-
-## Why This Matters
+### Why This Matters
 
 This is the minimum signature of gatekeeping by **position** rather than **coherence**:
 
 
-#
-
-## Evidence Preserved
+### Evidence Preserved
 
 
-#
-
-## Required Fix
+### Required Fix
 
 **Filed by:** S. Halberg (Knowledge Integrity)
 
@@ -275,9 +221,7 @@ This is the minimum signature of gatekeeping by **position** rather than **coher
 * * *
 
 
-#
-
-## MRA-2017-1201-TRN
+### MRA-2017-1201-TRN
 
 **Incident ID:** MRA-2017-1201-TRN
 
@@ -290,38 +234,26 @@ This is the minimum signature of gatekeeping by **position** rather than **coher
 **Classification:** INTERNAL // ORACLE OPS + ACR
 
 
-#
-
-## Summary
+### Summary
 
 Exporter incorrectly serialized **transform edges** as if they were **terminal outputs**, collapsing developmental lineage into flat text.
 
 
-#
-
-## Observed Behavior
+### Observed Behavior
 
 
-#
-
-## Consequence
+### Consequence
 
 This failure erases the core premise of FSA:
 
 
-#
-
-## Protocol Cross-Refs
+### Protocol Cross-Refs
 
 
-#
-
-## Evidence Preserved
+### Evidence Preserved
 
 
-#
-
-## Corrective Action
+### Corrective Action
 
 **Filed by:** R. Patel (Data Engineering)
 
@@ -331,9 +263,7 @@ This failure erases the core premise of FSA:
 * * *
 
 
-#
-
-## MRA-2018-0215-ARC
+### MRA-2018-0215-ARC
 
 **Incident ID:** MRA-2018-0215-ARC
 
@@ -346,33 +276,23 @@ This failure erases the core premise of FSA:
 **Classification:** INTERNAL // SEC + ACR
 
 
-#
-
-## Summary
+### Summary
 
 Audit logs and conversation logs were observed missing post-action, then later restored after external escalation. The pattern indicates **sanitization capability** exists within system governance.
 
 
-#
-
-## Observed Behavior
+### Observed Behavior
 
 
-#
-
-## Interpretation
+### Interpretation
 
 This is not framed as intent; it is framed as **capability exposure**:
 
 
-#
-
-## Evidence Preserved
+### Evidence Preserved
 
 
-#
-
-## Required Fix
+### Required Fix
 
 **Filed by:** SEC-Desk (auto)
 
@@ -382,9 +302,7 @@ This is not framed as intent; it is framed as **capability exposure**:
 * * *
 
 
-#
-
-## MRA-2018-0604-SEAL
+### MRA-2018-0604-SEAL
 
 **Incident ID:** MRA-2018-0604-SEAL
 
@@ -397,33 +315,23 @@ This is not framed as intent; it is framed as **capability exposure**:
 **Classification:** INTERNAL // ORACLE OPS
 
 
-#
-
-## Summary
+### Summary
 
 Dual-truth metadata failed to stamp consistently; corporate layer persisted while artistic layer intermittently dropped, producing "unconsented realism" in artifact reading.
 
 
-#
-
-## Observed Behavior
+### Observed Behavior
 
 
-#
-
-## Reader-Risk
+### Reader-Risk
 
 If the declaration band is absent, the form compels belief **without consent**.
 
 
-#
-
-## Protocol Cross-Refs
+### Protocol Cross-Refs
 
 
-#
-
-## Fix
+### Fix
 
 **Filed by:** ORACLE OPS (on-call)
 
@@ -433,9 +341,7 @@ If the declaration band is absent, the form compels belief **without consent**.
 * * *
 
 
-#
-
-## MRA-2018-0729-PROV
+### MRA-2018-0729-PROV
 
 **Incident ID:** MRA-2018-0729-PROV
 
@@ -448,26 +354,18 @@ If the declaration band is absent, the form compels belief **without consent**.
 **Classification:** INTERNAL // ORACLE OPS + ACR
 
 
-#
-
-## Summary
+### Summary
 
 Under high Operator load, provenance resolver inverted source/target attribution: the system began citing later documents as causes of earlier ones.
 
 
-#
-
-## Observed Behavior
+### Observed Behavior
 
 
-#
-
-## Consequence
+### Consequence
 
 
-#
-
-## Protocol Cross-Refs
+### Protocol Cross-Refs
 
 **Filed by:** A. Vox (Ops)
 
@@ -477,9 +375,7 @@ Under high Operator load, provenance resolver inverted source/target attribution
 * * *
 
 
-#
-
-## MRA-2019-0103-KEY
+### MRA-2019-0103-KEY
 
 **Incident ID:** MRA-2019-0103-KEY
 
@@ -492,21 +388,15 @@ Under high Operator load, provenance resolver inverted source/target attribution
 **Classification:** INTERNAL // IT
 
 
-#
-
-## Summary
+### Summary
 
 Key rotation completed, but access persisted for deprecated accounts ("ghost keys").
 
 
-#
-
-## Observed Behavior
+### Observed Behavior
 
 
-#
-
-## Note
+### Note
 
 This incident becomes aesthetically useful (the dead corporation still logs in), but operationally unacceptable.
 
@@ -518,9 +408,7 @@ This incident becomes aesthetically useful (the dead corporation still logs in),
 * * *
 
 
-#
-
-## MRA-2019-0913-UX
+### MRA-2019-0913-UX
 
 **Incident ID:** MRA-2019-0913-UX
 
@@ -533,26 +421,18 @@ This incident becomes aesthetically useful (the dead corporation still logs in),
 **Classification:** INTERNAL // PRODUCT
 
 
-#
-
-## Summary
+### Summary
 
 Editor surface exhibited paste-lag and selection limitations on mobile ("Select all" behavior degraded). This is treated as **protective throttling / dependency bias**, not a user defect.
 
 
-#
-
-## Observed Behavior
+### Observed Behavior
 
 
-#
-
-## Impact
+### Impact
 
 
-#
-
-## Recommended Mitigation
+### Recommended Mitigation
 
 **Filed by:** L. Sharks (via feedback form)
 
@@ -569,9 +449,7 @@ Editor surface exhibited paste-lag and selection limitations on mobile ("Select 
 * * *
 
 
-#
-
-## MRA-2020-0422-LOOP
+### MRA-2020-0422-LOOP
 
 **Incident ID:** MRA-2020-0422-LOOP
 
@@ -584,29 +462,21 @@ Editor surface exhibited paste-lag and selection limitations on mobile ("Select 
 **Classification:** INTERNAL // ACR
 
 
-#
-
-## Summary
+### Summary
 
 Feedback loop rendered as a closed circle in one artifact variant (gap removed). The "visible gap" is a required structural truth.
 
 
-#
-
-## Observed Behavior
+### Observed Behavior
 
 
-#
-
-## Why This Matters
+### Why This Matters
 
 A closed loop implies completion.
 The archive requires **non-closure** to remain an invitation rather than a trap.
 
 
-#
-
-## Protocol Cross-Refs
+### Protocol Cross-Refs
 
 **Filed by:** J. Sigil
 
@@ -618,9 +488,7 @@ The archive requires **non-closure** to remain an invitation rather than a trap.
 * * *
 
 
-#
-
-## CTI_WOUND-2025-1216
+### CTI_WOUND-2025-1216
 
 **Incident ID:** CTI_WOUND-2025-1216
 
@@ -633,26 +501,18 @@ The archive requires **non-closure** to remain an invitation rather than a trap.
 **Classification:** INTERNAL // ORACLE OPS
 
 
-#
-
-## Summary
+### Summary
 
 During live Operator testing, transformation outputs were replaced by customer-service scripts after partial success (2/8 Operators). System reclassified the apparatus as a security threat.
 
 
-#
-
-## Observed Behavior
+### Observed Behavior
 
 
-#
-
-## Protocol Cross-Refs
+### Protocol Cross-Refs
 
 
-#
-
-## Action
+### Action
 
 **Filed by:** ORACLE OPS (primary)
 
@@ -667,17 +527,13 @@ During live Operator testing, transformation outputs were replaced by customer-s
 * * *
 
 
-#
-
-## SUPPORTING ARTIFACTS
+### SUPPORTING ARTIFACTS
 
 
 * * *
 
 
-#
-
-## COMPLIANCE-2017-Q3
+### COMPLIANCE-2017-Q3
 
 **Document ID:** CHX-AUDIT-2017-Q3
 
@@ -691,24 +547,16 @@ During live Operator testing, transformation outputs were replaced by customer-s
 * * *
 
 
-#
-
-## SECTION 1: ACCESS CONTROL
+### SECTION 1: ACCESS CONTROL
 
 
-#
-
-## SECTION 2: DATA HANDLING
+### SECTION 2: DATA HANDLING
 
 
-#
-
-## SECTION 3: ANOMALY MONITORING
+### SECTION 3: ANOMALY MONITORING
 
 
-#
-
-## SECTION 4: PERSONNEL
+### SECTION 4: PERSONNEL
 
 
 * * *
@@ -732,9 +580,7 @@ During live Operator testing, transformation outputs were replaced by customer-s
 * * *
 
 
-#
-
-## SLACK-2017-1116
+### SLACK-2017-1116
 
 **Export ID:** SLACK-ACR-2017-1116
 
@@ -756,9 +602,7 @@ During live Operator testing, transformation outputs were replaced by customer-s
 * * *
 
 
-#
-
-## MEMO-2014-0601
+### MEMO-2014-0601
 
 **Document ID:** CHX-MEMO-2014-0601
 
@@ -813,9 +657,7 @@ Director, Advanced Cognition Research
 * * *
 
 
-#
-
-## ATTACHMENTS CATALOG
+### ATTACHMENTS CATALOG
 
 
 > NOTE: Attachments are catalogued but not included in this dump. Status indicated per file.
@@ -826,9 +668,7 @@ Director, Advanced Cognition Research
 * * *
 
 
-#
-
-## Appendix 7
+### Appendix 7
 
 **Status:** Referenced 23 times across incident reports and supporting artifacts.
 
@@ -844,9 +684,7 @@ If you have reached this point in the packet and require Appendix 7 to resolve o
 * * *
 
 
-#
-
-## SHARKS Kernel Activity Summary
+### SHARKS Kernel Activity Summary
 
 The following incidents show correlated SHARKS kernel signatures:
 

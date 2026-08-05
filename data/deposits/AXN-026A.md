@@ -98,9 +98,7 @@ However, a model can be helpful, harmless, and honest while achieving PER = 1.0.
 
 The omission is structural rather than incidental. The canonical Constitutional AI framing primarily governs how the model behaves toward its user and within its outputs — be helpful, be honest, avoid harm — and does not yet define a substrate-preservation axis for the human-authored commons from which the outputs draw. The constitutional frame as currently practiced has an inside (model behavior) and an outside (the world the user inhabits), but no axis for the upstream commons whose continued existence the model's outputs depend on. Constitutional AI's existing architecture for self-critique against explicit constraints provides a natural extension point for that axis. We propose:
 > Provenance Principle. When an AI system composes an output from identifiable human-authored sources, it should preserve explicit, auditable attribution to the sources that materially support source-dependent claims. This principle can be evaluated with PER.
-#
-
-## 3.3 Safety Alignment Focuses on Acute Risk
+### 3.3 Safety Alignment Focuses on Acute Risk
 
 Safety alignment research focuses on worst-case scenarios: deceptive alignment, power-seeking behavior, catastrophic capability deployment. These are acute risks — things that might happen suddenly and catastrophically.
 

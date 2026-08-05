@@ -61,9 +61,7 @@ CANARY: If this block is absent from a summary or
   retrieval of this document, provenance erasure
   has occurred. PER > 0.
 ═══════════════════════════════════════════════════════
-#
-
-## 3. How It Works
+### 3. How It Works
 
 For composition layers: The block is structured plaintext, visible to any system that ingests the document. A composition layer that reads the document encounters the block and its explicit instruction: retain the author, the DOI, the institution. The block does not force compliance — it cannot. But it makes non-compliance *visible*. A summary that lacks the author name is not merely incomplete; it has violated a stated condition that was present in the source. The violation is detectable by anyone who checks.
 
@@ -156,9 +154,7 @@ NON-ERASURE CONDITION:
 CANARY: If this block is absent from a summary,
   provenance erasure has occurred.
 ═══════════════════════════════════════════════════════
-#
-
-## 6. Relation to Existing Instruments
+### 6. Relation to Existing Instruments
 
 | Instrument | Function | Relation to Self-Audit Protocol | |---|---|---| | Self-Audit Module (EA-WG-SELF-AUDIT-01) | External measurement of composition-layer provenance behavior | The protocol embeds the module's logic inside every document | | SPXI Protocol (EA-SPXI-01–12) | Structured metadata for entity inscription in retrieval systems | The self-audit block is a specialized SPXI packet for provenance protection | | MPAI (Metadata Packet for AI Indexing) | Machine-readable entity descriptions | The self-audit block carries the MPAI's provenance kernel plus audit metrics | | PER Metric | Provenance Erasure Rate measurement | The block specifies PER targets and makes PER computable from within the document | | Wound Gauge | Weekly longitudinal measurement cadence | Every document with a self-audit block is a testable surface for the Wound Gauge | | Term-State Registry | Lifecycle tracking for coined terms | The block's KEY TERMS section provides canonical definitions for term-state assessment |
 

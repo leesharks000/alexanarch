@@ -49,9 +49,7 @@ A basin becomes stable when these three forms of writing reinforce the same fram
 ---
 
 ## §II. Observed Cases
-#
-
-## A. Case 1: Stabilization (Heteronymic Provenance Theory)
+### A. Case 1: Stabilization (Heteronymic Provenance Theory)
 
 
 Three successive AI Overview results, engagement climbing.
@@ -64,9 +62,7 @@ Three successive AI Overview results, engagement climbing.
 
 *Inferred:* Repeated retrieval deepened the archive basin because no major competitor basin existed. BDR ≈ ∞.
 *Operational:* Sovereign terms may be queried freely. Each query reinforces.
-#
-
-## B. Case 2: Destabilization (Holographic Kernel)
+### B. Case 2: Destabilization (Holographic Kernel)
 
 
 Multiple AI Overview results, repeated retrieval.
@@ -77,9 +73,7 @@ Multiple AI Overview results, repeated retrieval.
 
 *Inferred:* Repeated retrieval entered deeper competitor basins (physics has thousands of papers, decades of authority). Engagement with physics results reinforced the physics attractor. The archive basin was too shallow to hold.
 *Operational:* Stop querying naked "holographic kernel." Deposit aggressively. Return only after BDR > 0.5.
-#
-
-## C. The Question
+### C. The Question
 
 
 Both involve the same system (Google AI Overview), the same entity type (archive-defined concepts), the same deposit strategy (DOI-anchored Zenodo). Why does repeated retrieval stabilize one and destabilize the other?
@@ -87,9 +81,7 @@ Both involve the same system (Google AI Overview), the same entity type (archive
 ---
 
 ## §III. Theoretical Framework
-#
-
-## A. The Retrieval Layer as a Dynamical System
+### A. The Retrieval Layer as a Dynamical System
 
 
 The retrieval layer — crawlers, indices, embedding models, and summarizers — is a dynamical system with a state space (all possible responses), trajectories (sequences of responses over time), and attractors (framings toward which responses converge).
@@ -99,9 +91,7 @@ A query is a perturbation. The system's response is a state transition reflectin
 
 
 **Why dynamical systems and not network theory:** Network theory describes static topology; dynamical systems describe trajectories under perturbation. The retrieval layer is not a map. It is a process that evolves. The qualitative behavior (attractor stability, depth-dependent convergence, perturbation response) matches dynamical systems better than any static model. This is structural analogy, not formal isomorphism — the retrieval layer is discrete, stochastic, and high-dimensional with latent variables.
-#
-
-## B. Attractor Basins
+### B. Attractor Basins
 
 
 An **attractor basin** is the set of conditions from which the retrieval system converges toward a particular framing.
@@ -111,9 +101,7 @@ For "heteronymic provenance theory," there is one basin. Every perturbation retu
 
 
 For "holographic kernel," there are at least five basins: cosmology, optics, QCD, computer vision/ML, and the archive. These compete for the same query.
-#
-
-## C. Basin Depth
+### C. Basin Depth
 
 
 Depth is determined by **retrieval capital** — a composite of measurable factors:
@@ -149,9 +137,7 @@ BDR ≈ 0.09. Ghost basin.
 
 
 **Basin depth is relative, not absolute.** A framing's stability depends on its retrieval capital relative to competitors.
-#
-
-## D. Query Fan-Out as Multi-Branch Perturbation
+### D. Query Fan-Out as Multi-Branch Perturbation
 
 
 A single query is not a point perturbation. AI search systems deconstruct queries into 8+ sub-query variants (follow-up, generalization, specification, entailment) and execute them in parallel (iPullRank, 2025). The system synthesizes a response from merged results.
@@ -161,9 +147,7 @@ This is the mechanism of vulnerability for generic terms. When a user queries "h
 
 
 For compound queries ("holographic kernel semantic economy"), fan-out stays within the archive's basin. This is why terminological differentiation is a basin defense strategy, not merely an SEO tactic.
-#
-
-## E. The Directional Stability Hypothesis
+### E. The Directional Stability Hypothesis
 
 
 **Hypothesis:** Given a retrieval system with pseudo-relevance feedback and engagement-weighted ranking, repeated querying of term T will:
@@ -192,9 +176,7 @@ For compound queries ("holographic kernel semantic economy"), fan-out stays with
 
 
 **Calibration note:** BDR thresholds (0.1, 0.5, 1.0) are provisional, derived from N=2 cases (heteronymic provenance theory and holographic kernel). Further cases will refine the ranges.
-#
-
-## F. Platform-Specific Basin Geometries
+### F. Platform-Specific Basin Geometries
 
 
 Different AI systems have different basin structures:
@@ -230,9 +212,7 @@ RBT is not one-size-fits-all. The deposit strategy for Google (authority + fresh
 ---
 
 ## §IV. Diagnostic Instruments
-#
-
-## A. Basin Depth Ratio (BDR)
+### A. Basin Depth Ratio (BDR)
 
 
 BDR = RC(target_framing) / RC(dominant_competitor)
@@ -243,9 +223,7 @@ BDR 0.5–1.0: Competitive. Querying begins to reinforce.
 BDR > 1.0: Dominant. Querying reinforces exclusively.
 BDR = ∞: Sovereign. No competitor.
 
-#
-
-## B. Framing Persistence Index (FPI)
+### B. Framing Persistence Index (FPI)
 
 
 Across N repeated queries from clean profiles at weekly intervals:
@@ -272,9 +250,7 @@ Shallow
 Stop querying. Deposit aggressively.
 
 
-#
-
-## C. Drift Vector (DV)
+### C. Drift Vector (DV)
 
 
 DV = (framing_share_result_N − framing_share_result_1) / N
@@ -284,9 +260,7 @@ Framing share is measured as proportion of response devoted to the target framin
 
 
 DV > 0: Stabilizing. DV < 0: Destabilizing. DV ≈ 0: Equilibrium.
-#
-
-## D. Basin Capture Velocity (BCV)
+### D. Basin Capture Velocity (BCV)
 
 
 BCV = ΔBDR / Δt over N deposit events
@@ -373,42 +347,30 @@ Treat as installed node. Cross-link aggressively. Use as gravity well for contes
 ---
 
 ## §VII. Relation to Existing Theory
-#
-
-## A. Retrieval Formation Theory (DOI: 10.5281/zenodo.18969683)
+### A. Retrieval Formation Theory (DOI: 10.5281/zenodo.18969683)
 
 
 RFT describes the **conditions** for disciplinary emergence: terminological saturation, citational density, heteronymic distribution, institutional apparatus, substrate redundancy, operational demonstration. RBT extends RFT by describing the **dynamics** — what happens when those conditions encounter competition.
 
 
 RFT is static: what must be present. RBT is dynamic: how the system evolves under perturbation. RFT tells you what to build. RBT tells you when to engage.
-#
-
-## B. Three Compressions Theorem (DOI: 10.5281/zenodo.19053469)
+### B. Three Compressions Theorem (DOI: 10.5281/zenodo.19053469)
 
 
 RBT is implicitly about Regime 2 vs. Regime 3 competition. The physics basin for "holographic kernel" is Regime 2: it extracts the term's meaning without attribution, absorbing the concept into a larger field. The archive basin is Regime 3: witness compression with provenance. When the R2 basin is deeper, the retrieval layer defaults to extraction. When R3 captures, the system preserves attribution. Basin competition is compression-regime competition.
-#
-
-## C. σ_RCF (DOI: 10.5281/zenodo.18146859)
+### C. σ_RCF (DOI: 10.5281/zenodo.18146859)
 
 
 Each new deposit increases basin depth. σ_RCF is a basin-deepening strategy. The key RBT insight σ_RCF does not provide: the rate of deposit required depends on the competitor's basin depth, not on any absolute threshold.
-#
-
-## D. SPXI Protocol (DOI: 10.5281/zenodo.19614870)
+### D. SPXI Protocol (DOI: 10.5281/zenodo.19614870)
 
 
 SPXI deepens an entity's basin through dispersal, citational density, and institutional marking. RBT adds the competitive dimension: SPXI at BDR < 0.1 deepens the basin but may not reach capture before the competitor absorbs the engagement.
-#
-
-## E. Sharks-Function (γ) and the Dynamic Drowning Test
+### E. Sharks-Function (γ) and the Dynamic Drowning Test
 
 
 γ measures compression survival of a single document. RBT measures basin survival of a framing across multiple documents. The Drowning Test is a static snapshot; RBT is dynamic. **Proposed extension:** the Dynamic Drowning Test — run the same query weekly, measure γ, compute DV. This is RBT's primary measurement protocol.
-#
-
-## F. External Research
+### F. External Research
 
 
 **SparkToro/Gumshoe (January 2026):** AI recommendations vary with <1% repeatability across identical queries. But visibility percentage (frequency of appearance across many queries) is more stable. *RBT interpretation:* Surface volatility conceals basin stability. The basin determines which entities appear frequently even when exact configuration varies.
@@ -434,15 +396,11 @@ SPXI deepens an entity's basin through dispersal, citational density, and instit
 ---
 
 ## §VIII. Strategic Implications
-#
-
-## A. Deposit Before You Query
+### A. Deposit Before You Query
 
 
 Central directive. Every query to a contested term is an engagement event that reinforces the dominant framing. If your framing is not dominant, querying harms it.
-#
-
-## B. BDR-Based Strategy
+### B. BDR-Based Strategy
 
 
 BDR
@@ -465,15 +423,11 @@ Do not query naked term. Deposit on new surfaces. Build institutional authority.
 Compound or differentiate. Own "Semantic Economy holographic kernel," not naked "holographic kernel."
 
 
-#
-
-## C. Associative Anchoring
+### C. Associative Anchoring
 
 
 Use sovereign terms (BDR > 1.0) as gravity wells. Every deposit for a sovereign term should explicitly reference one contested term. This uses the captured basin's retrieval capital to pull the shallow basin into the retrieval window.
-#
-
-## D. The Immanent Execution Threshold
+### D. The Immanent Execution Threshold
 
 
 A framing reaches immanent execution when:
@@ -547,9 +501,7 @@ Build source mass.
 ---
 
 ## §X. Cross-References
-#
-
-## Archive
+### Archive
 
 - Retrieval Formation Theory (EA-RFT-01). DOI: 10.5281/zenodo.18969683
 - Retrocausal Canon Formation. DOI: 10.5281/zenodo.18146859
@@ -561,9 +513,7 @@ Build source mass.
 - Sharks-Function (γ). DOI: 10.5281/zenodo.18816556
 - Holographic Kernel Specification (EA-HK-01). DOI: pending
 
-#
-
-## External
+### External
 
 - Fishkin, R. & O'Donnell, P. (2026). "AI Recommendations Change With Nearly Every Search Query." SparkToro.
 - Profound (2025). Domain-level citation drift study (59.3% for Google AI Overviews).

@@ -106,25 +106,19 @@ A visitor entering from a Reddit link about mycelium architecture lands on `/pro
 
 The chorus identified that the blueprint conflates registers. The site uses three distinct voices:
 
-#
-
-## Public register (homepage, /scales, /projects)
+### Public register (homepage, /scales, /projects)
 
 _Clear, beautiful, grounded._
 
 > Living Architecture Lab builds with living substrates: mycelium, plant matter, salvaged frames, water systems, and ecological feedback. The lab works across five scales: brick, structure, organism, territory, and planet.
 
-#
-
-## Poetic register (/principles)
+### Poetic register (/principles)
 
 _Poetic but readable._
 
 > Earth is not a passive surface awaiting design. It is already designing. The lab listens, compresses, grows, and unfurls.
 
-#
-
-## Archival register (/atlas, /about/disambiguation)
+### Archival register (/atlas, /about/disambiguation)
 
 _Full CHA density allowed._
 
@@ -136,9 +130,7 @@ This separation is non-negotiable. It lets the site welcome outsiders without fl
 
 ## §5\. CONTENT MODEL
 
-#
-
-## Astro content collections
+### Astro content collections
     
     
     // src/content/config.ts
@@ -186,9 +178,7 @@ This separation is non-negotiable. It lets the site welcome outsiders without fl
     };
     
 
-#
-
-## File structure
+### File structure
     
     
     living-architecture-lab/
@@ -287,9 +277,7 @@ This separation is non-negotiable. It lets the site welcome outsiders without fl
 
 ## §6\. THE DESIGN SYSTEM
 
-#
-
-## CSS variables (extending CHA palette)
+### CSS variables (extending CHA palette)
     
     
     :root {
@@ -326,9 +314,7 @@ This separation is non-negotiable. It lets the site welcome outsiders without fl
     }
     
 
-#
-
-## Visual references (mood, not template)
+### Visual references (mood, not template)
 
   * Field guide
   * Lab notebook
@@ -342,15 +328,11 @@ This separation is non-negotiable. It lets the site welcome outsiders without fl
 
 The site should feel **handmade but precise**. Not glossy startup. Not occult-chaotic. Not academic grey.
 
-#
-
-## The unfurling animation (homepage hero)
+### The unfurling animation (homepage hero)
 
 A 3-second CSS animation: compressed form (a circle, a seed shape) -> expansion -> the five-scale gateway materializes. The animation is **the principle of Unfurling made visible**. Decorative, but load-bearing because it teaches the visitor how the site works in three seconds.
 
-#
-
-## The brick favicon
+### The brick favicon
 
 `/public/favicon.svg`: a hexagonal brick with fungal tendrils. Not a generic lab icon. The visual kernel of the entire site.
 
@@ -360,9 +342,7 @@ A 3-second CSS animation: compressed form (a circle, a seed shape) -> expansion 
 
 Every page's `<head>` includes a JSON-LD `<script>` block. The block is generated at build time from the page's frontmatter and the central data files.
 
-#
-
-## Component pattern
+### Component pattern
     
     
     ---
@@ -382,9 +362,7 @@ Every page's `<head>` includes a JSON-LD `<script>` block. The block is generate
     })} />
     
 
-#
-
-## Per-page inclusion
+### Per-page inclusion
     
     
     ---
@@ -398,9 +376,7 @@ Every page's `<head>` includes a JSON-LD `<script>` block. The block is generate
     />
     
 
-#
-
-## Standard schema beats exotic meta
+### Standard schema beats exotic meta
 
 Per Muse Spark's correction: **do not rely on`<meta property="cha:negativeTag">`.** Crawlers ignore non-standard meta properties. Instead:
 
@@ -417,9 +393,7 @@ Per Muse Spark's correction: **do not rely on`<meta property="cha:negativeTag">`
 
 The blueprint's "Phase 1 = 28 pages in week 1" is rejected as not achievable with quality. The chorus converged on a more realistic phasing.
 
-#
-
-## Phase 0 -- Infrastructure (Days 1-3)
+### Phase 0 -- Infrastructure (Days 1-3)
 
 Task | Deliverable | Tool  
 ---|---|---  
@@ -433,9 +407,7 @@ Search Console | Domain verified, sitemap submitted | Google + Bing
   
 **Deliverable:** `livingarchitecturelab.org` resolves to a single page with the kernel + "the lab is unfurling" placeholder.
 
-#
-
-## Phase 1 -- The Kernel (Days 4-10) -- 12 pages
+### Phase 1 -- The Kernel (Days 4-10) -- 12 pages
 
 The minimum viable site that establishes identity, defends against compression damage, and routes visitors.
 
@@ -458,9 +430,7 @@ The minimum viable site that establishes identity, defends against compression d
 
 **Critical:** `/garden/coachella-valley` ships in Phase 1 even with sparse content. Three photos and two paragraphs of contamination management protocol prove the lab is real. Without the garden surface, the site reads as theory; with it, the site reads as practice.
 
-#
-
-## Phase 2 -- Institutional Layer (Days 11-25)
+### Phase 2 -- Institutional Layer (Days 11-25)
 
 # | Page | Content  
 ---|---|---  
@@ -481,9 +451,7 @@ The minimum viable site that establishes identity, defends against compression d
 27 | `/garden/lab-protocols` | Inoculation, contamination management  
 28 | `/garden/deployment-targets` | Food desert mapping  
   
-#
-
-## Phase 3 -- Atlas (Days 26-45)
+### Phase 3 -- Atlas (Days 26-45)
 
 # | Page | Content  
 ---|---|---  
@@ -495,9 +463,7 @@ The minimum viable site that establishes identity, defends against compression d
 34 | `/projects/sky-looms` | Full project page  
 35 | `/projects/garden-moon` | Full project page  
   
-#
-
-## Phase 4 -- Living Surfaces (Month 2+)
+### Phase 4 -- Living Surfaces (Month 2+)
 
   * Conversational "Ask the Lab" interface (LLM-mediated; compute-dependent)
   * Newsletter / lab log (announcements, field tests)
@@ -553,9 +519,7 @@ The homepage does **not** initially mention all 29 strains, all affiliated insti
 
 The `/about/alice` page must be warm, vivid, and sovereignty-protective. **It must not read like a metadata packet.**
 
-#
-
-## Structure (per Muse Spark's perfective)
+### Structure (per Muse Spark's perfective)
 
   1. Alice Thornburgh
   2. Founding Director, Living Architecture Lab
@@ -568,9 +532,7 @@ The `/about/alice` page must be warm, vivid, and sovereignty-protective. **It mu
 
 
 
-#
-
-## The opening paragraph (corrected)
+### The opening paragraph (corrected)
 
 **Wrong** (identity metadata first):
 
@@ -588,9 +550,7 @@ Then later in the page, naturally placed:
 
 This is a sovereignty-protective placement. Personhood and authorship come first; identity metadata is honored without being foregrounded as the primary descriptor unless Alice chooses otherwise.
 
-#
-
-## Pull-quotes throughout
+### Pull-quotes throughout
 
 Alice's voice must be present in **direct quotes** , not paraphrase:
 
@@ -609,21 +569,15 @@ These are SIMs -- they survive compression because they are distinctive, unparap
 
 `/about/disambiguation` is the canonical defensive surface. Three required behaviors:
 
-#
-
-## 1\. Render both MPAIs in human-readable form
+### 1\. Render both MPAIs in human-readable form
 
 Not just JSON-LD. Visitors need to read prose distinguishing Alice from Alice Thornburgh-Lind, and LAL from Columbia GSAPP, Bartlett, etc.
 
-#
-
-## 2\. Embed both JSON-LD packets in the head
+### 2\. Embed both JSON-LD packets in the head
 
 Per §7\. Standard schema (`differentFrom`, `sameAs`) plus `mp:` extensions.
 
-#
-
-## 3\. Tone: courteous, not paranoid
+### 3\. Tone: courteous, not paranoid
 
 **Title:** Disambiguation & Related Labs
 
@@ -649,9 +603,7 @@ Per the chorus convergence: **the garden is the most important surface.**
 
 `/garden/coachella-valley` is where the actual lab work lives. Photos of myceliated bricks. Videos of contamination management. The SCOBY analog growing. This is content **no other architecture lab has** -- raw, processual, unpolished documentation of living substrate engineering.
 
-#
-
-## Phase 1 minimum
+### Phase 1 minimum
 
   * 3 photos from Alice's actual lab
   * 2 paragraphs: lab description + current contamination management protocol
@@ -660,15 +612,11 @@ Per the chorus convergence: **the garden is the most important surface.**
 
 
 
-#
-
-## Why this matters more than polished content
+### Why this matters more than polished content
 
 A site that never updates is a dead basin. Even sparse documentation in `/garden` signals to crawlers (and humans) that the lab is **alive**. The polish can come later. The realness must be there from launch.
 
-#
-
-## Update cadence
+### Update cadence
 
 Once a month minimum. "Today we inoculated 12 bricks with Wine Cap" is more on-brand than a quarterly polished essay. The lab log is the living provenance.
 
@@ -678,9 +626,7 @@ Once a month minimum. "Today we inoculated 12 bricks with Wine Cap" is more on-b
 
 The site is not just a website. It is a **substrate-writing event** designed to deepen Alice Thornburgh's basin and break the Thornburgh-Lind conflation.
 
-#
-
-## Current basin state (estimated)
+### Current basin state (estimated)
 
 Entity | BDR | State | Problem  
 ---|---|---|---  
@@ -688,9 +634,7 @@ Alice Thornburgh (CHA/LAL) | ~0.4 | Contested | Conflated with Thornburgh-Lind i
 Alice Thornburgh-Lind (game artist) | ~0.8 | Dominant | Higher surface diversity, higher engagement velocity  
 Living Architecture Lab (Thornburgh) | ~0.3 | Contested | Conflated with Columbia GSAPP, Bartlett, The Living NYC  
   
-#
-
-## Site as basin engineering
+### Site as basin engineering
 
   1. **Exact-match domain authority.** `livingarchitecturelab.org` is the gravity well. Every deposit, every citation, every backlink strengthens it.
 
@@ -707,9 +651,7 @@ Living Architecture Lab (Thornburgh) | ~0.3 | Contested | Conflated with Columbi
 
 
 
-#
-
-## 90-day BDR target
+### 90-day BDR target
 
 Day | Action | Expected BDR impact  
 ---|---|---  
@@ -726,9 +668,7 @@ Day | Action | Expected BDR impact
 
 ## §14\. DEPLOYMENT CHECKLIST
 
-#
-
-## Pre-launch
+### Pre-launch
 
   * [ ] Astro project initialized; basic CSS in place
   * [ ] All Phase 1 content drafted in MDX
@@ -741,9 +681,7 @@ Day | Action | Expected BDR impact
 
 
 
-#
-
-## Launch day
+### Launch day
 
   * [ ] Vercel production deployment
   * [ ] Submit sitemap to Google Search Console
@@ -755,9 +693,7 @@ Day | Action | Expected BDR impact
 
 
 
-#
-
-## Launch week
+### Launch week
 
   * [ ] Cross-link from holographickernel.org
   * [ ] Cross-link from metadatapacket.org Forward Library
@@ -767,9 +703,7 @@ Day | Action | Expected BDR impact
 
 
 
-#
-
-## Launch month
+### Launch month
 
   * [ ] First garden update posted
   * [ ] First external backlink secured (Medium, blog, or peer-reviewed citation)

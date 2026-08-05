@@ -37,9 +37,7 @@ Zenodo (crimsonhexagonal community)
   Versioned deposit snapshots of registry.json, termindex.json, charter
   The archival layer — permanent, DOI-anchored
   Updated periodically, not on every edit
-#
-
-## Data flow
+### Data flow
 
 Edit data (in session)
   ↓
@@ -50,9 +48,7 @@ Vercel auto-deploys machinemediation.org
 Other sites read from machinemediation.org/data/
   ↓
 Periodically: snapshot to Zenodo deposit chain
-#
-
-## Repository structure
+### Repository structure
 
 machinemediation-org/
 ├── index.html              # Landing page
