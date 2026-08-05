@@ -26,8 +26,8 @@
       "permanent": true
     },
     {
-      "source": "/axn/:hex*",
-      "destination": "/s/axn/:hex*",
+      "source": "/axn/:hex([0-9A-Fa-f]{2,6})",
+      "destination": "/s/axn/:hex",
       "permanent": true
     }
   ],
@@ -119,6 +119,14 @@
     }
   ],
   "rewrites": [
+    {
+      "source": "/axn/constitution(.*)",
+      "destination": "/axn/constitution$1"
+    },
+    {
+      "source": "/axn/assets/(.*)",
+      "destination": "/axn/assets/$1"
+    },
     {
       "source": "/oai",
       "destination": "/api/oai"
