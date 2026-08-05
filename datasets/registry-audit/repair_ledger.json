@@ -28266,6 +28266,38 @@
    "operator": "TACHYON",
    "date": "2026-08-04",
    "wave": "AUDIT-SITE-SOURCE"
+  },
+  {
+   "repair_id": "R-1185",
+   "deposit_number": null,
+   "batch": true,
+   "records": [
+    401,
+    402,
+    426,
+    429,
+    436,
+    459,
+    491,
+    495,
+    499,
+    536,
+    541,
+    559,
+    592,
+    1307,
+    1335,
+    1338,
+    1362,
+    1375,
+    1387,
+    1388
+   ],
+   "count": 20,
+   "basis": "RELATED-INSTANCE POINTERS (MANUS: 'do all intermediary version or partially restored records with other existing instances now at least point somewhere rather than dead ending unnecessarily?'). ANALYSIS of the 76 open audit directives: 26 are INTERMEDIARY (another instance of the same work exists in-archive), 50 are SINGLE INSTANCE (no other copy — recovery is the only path). Of the 26 intermediaries, 20 were pointing NOWHERE. All 20 now carry body_status.related_instances naming every in-archive instance with its match basis (title overlap or content fingerprint), score, and body size. Deliberately NOT asserted: supersession direction — version order for these families is adjudication. The open audit directive stands on each record regardless; a pointer is not a recovery.",
+   "operator": "TACHYON",
+   "date": "2026-08-04",
+   "wave": "RELATED-INSTANCE"
   }
  ]
 }

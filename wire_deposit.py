@@ -1232,6 +1232,34 @@ def regenerate_static_page(d, eidx, registry=None):
             'onload="renderMathInElement(document.body,{delimiters:[{left:\'$$\',right:\'$$\',display:true}],'
             'throwOnError:false,macros:{\'\\\\Chi\':\'\\\\mathrm{X}\'}})"></script>'
         )
+    # RELATED-INSTANCE / EXTERNAL-MANIFESTATION rendering (2026-08-04): pointers
+    # that live only in data are invisible pointers — the #941 lesson. A record
+    # whose work exists elsewhere must SAY SO on the page.
+    _bs = d.get('body_status') or {}
+    rel_block = ''
+    _ri = _bs.get('related_instances') if isinstance(_bs, dict) else None
+    if _ri and _ri.get('instances'):
+        _items = ''.join(
+            f'<li style="margin:3px 0"><a href="/s/records/{i["deposit_number"]}/" style="color:var(--accent)">'
+            f'#{i["deposit_number"]}</a> — {esc(str(i.get("title",""))[:80])} '
+            f'<span style="color:#888;font-size:.9em">({esc(str(i.get("match","")))} match {esc(str(i.get("score","")))}, '
+            f'{i.get("body_chars",0):,} chars)</span></li>'
+            for i in _ri['instances'])
+        rel_block += (
+            '<div style="background:var(--surface);border-left:4px solid var(--teal);padding:10px 14px;'
+            'border-radius:6px;margin:12px 0;font-size:.9em">'
+            '<div style="font-weight:600;margin-bottom:4px">Other instances of this work in the archive</div>'
+            f'<ul style="margin:6px 0 6px 20px;padding:0">{_items}</ul>'
+            '<div style="color:#666;font-size:.88em">Recorded as relations only — which instance supersedes which is not asserted here.</div></div>')
+    _em = _bs.get('external_manifestation') if isinstance(_bs, dict) else None
+    if _em and _em.get('url'):
+        rel_block += (
+            '<div style="background:var(--surface);border-left:4px solid var(--teal);padding:10px 14px;'
+            'border-radius:6px;margin:12px 0;font-size:.9em">'
+            '<div style="font-weight:600;margin-bottom:4px">Live manifestation</div>'
+            f'<a href="{esc(_em["url"])}" style="color:var(--accent)">{esc(_em["url"])}</a>'
+            f'<div style="color:#666;font-size:.88em;margin-top:4px">{esc(str(_em.get("role") or _em.get("basis") or ""))[:200]}</div></div>')
+
     page = f'''<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>{esc(d["title"])} — Alexanarch</title><meta name="description" content="{esc(_compose_meta_description(d))}"><meta property="og:title" content="{esc(str(d["title"])[:95])}"><meta property="og:description" content="{esc(_compose_meta_description(d))}"><meta property="og:url" content="{_rec_url}"><meta property="og:type" content="article"><meta property="og:site_name" content="Alexanarch"><meta name="twitter:card" content="summary"><script type="application/ld+json">{jsonld}</script>{_katex_head}
 <link rel="resourcesync" href="https://www.alexanarch.org/.well-known/resourcesync">
@@ -1263,6 +1291,7 @@ def regenerate_static_page(d, eidx, registry=None):
 {render_navbar()}
 <div role="text" aria-label="{esc(_axn_aria(d["axn"]))}" style="font-family:var(--mono);font-size:1.1em;color:var(--teal);background:var(--surface);padding:12px;border-radius:6px;border-left:4px solid var(--teal);margin:12px 0">{esc(d["axn"])}</div>
 {version_banner}
+{rel_block}
 <h1>{esc(d["title"])}</h1>
 <div style="font-size:.85em;color:#777;margin-bottom:10px">{esc(d["creator"])} · {esc(d["date"])} · {esc(d.get("content_type",""))}{f' · <span style="color:var(--accent);font-weight:500">{esc(version)}</span>' if (version and (version != 'v1.0' or series_id)) else ''}</div>
 <a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-{hex_id}.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/papers/AXN-{hex_id.zfill(4)}.pdf">↓ PDF</a>
