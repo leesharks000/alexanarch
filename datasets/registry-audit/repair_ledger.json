@@ -30880,6 +30880,16 @@
    "operator": "TACHYON",
    "date": "2026-08-05",
    "wave": "PDF-RESYNC"
+  },
+  {
+   "repair_id": "R-1223",
+   "deposit_number": null,
+   "batch": true,
+   "type": "BUILDER_REPAIR",
+   "basis": "PDF layer unstaled 758 -> 1. MANUS-requested spot check of the timed-out rounds returned clean (10 sampled: all valid, none undersized, head and tail content-match 1.00 — timeouts killed batches cleanly). Five builder defects fixed, all latent corpus-wide: strikethrough emitting undefined \\st (ulem.sty absent; \\st now defined as passthrough); my own #-escape applied to the whole wrapper producing invalid \\# inside YAML double-quoted scalars (now scoped below front matter); deposit cross-references reaching xelatex unescaped; LaTeX six-level list-nesting cap. 1,431/1,433 current. #1409 open: 'Too deeply nested' persists though its body list indentation is shallow — origin elsewhere in the pipeline, left diagnosed and open.",
+   "operator": "TACHYON",
+   "date": "2026-08-05",
+   "wave": "PDF-UNSTALE"
   }
  ]
 }

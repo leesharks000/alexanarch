@@ -157,6 +157,15 @@ def _clean_body_for_paper(body: str, max_chars: int = 400_000) -> str:
     body = re.sub(r"(?m)^---\s*$", "***", body)
     # Same for `- - -` variant
     body = re.sub(r"(?m)^-\s*-\s*-\s*$", "***", body)
+    # LaTeX permits at most 6 levels of list nesting and errors with
+    # "Too deeply nested" beyond that (#1409, 2026-08-05). Cap markdown list
+    # indentation at 4 levels: the text is preserved in full, only the visual
+    # indent is reduced, and the alternative is no PDF at all.
+    def _cap_depth(m):
+        lead, marker = m.group(1), m.group(2)
+        depth = len(lead) // 2
+        return ' ' * (min(depth, 4) * 2) + marker
+    body = re.sub(r"(?m)^([ \t]{8,})([-*+]|\d+\.)\s", lambda m: _cap_depth(m) + ' ', body)
     # Escape `#` that is NOT a markdown heading marker (2026-08-05). Deposit
     # cross-references like "#1407" and "Document #12" survive pandoc as bare
     # `#` in the LaTeX, where it is a macro-parameter character: xelatex dies
@@ -338,6 +347,7 @@ urlcolor: NavyBlue
 header-includes:
   - \\usepackage{{fancyhdr}}
   - \\usepackage{{longtable,booktabs,array,calc}}
+  - \\providecommand{{\\st}}[1]{{#1}}
   - \\providecommand{{\\tightlist}}{{\\setlength{{\\itemsep}}{{0pt}}\\setlength{{\\parskip}}{{0pt}}}}
   - \\providecommand{{\\real}}[1]{{#1}}
   - \\pagestyle{{fancy}}
@@ -431,7 +441,13 @@ def render_pdf(wrapper_md: str, out_path: Path, timeout: int = 120,
     # with "You can't use `macro parameter character #' in vertical mode."
     # (#1409/#1410). Escape `#` in the wrapper except where it opens a markdown
     # heading; the body is already sanitized by pandoc in pass 1.
-    wrapper_md = re.sub(r"(?m)(?<!^)(?<![\\#])#(?![#])", r"\\#", wrapper_md)
+    # Escape `#` only BELOW the YAML front matter: applying it to the whole
+    # wrapper produced `\\#` inside double-quoted YAML scalars, an invalid
+    # escape that killed #696, #1090 and #1147 with YAML parse exceptions.
+    _p = wrapper_md.split('\n---\n', 2)
+    if len(_p) == 3:
+        _p[2] = re.sub(r"(?m)(?<!^)(?<![\\\\#])#(?![#])", r"\\\\#", _p[2])
+        wrapper_md = '\n---\n'.join(_p)
 
     tmp_body_md = tmp_body_tex = None
     with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False, encoding="utf-8") as tb:
