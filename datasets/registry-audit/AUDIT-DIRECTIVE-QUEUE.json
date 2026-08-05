@@ -363,10 +363,10 @@
   ]
  },
  "execution_status": {
-  "as_of": "2026-08-04 (after AUDIT-RECOVER-1)",
+  "as_of": "2026-08-04 (after AUDIT-SITE-SOURCE)",
   "total": 127,
-  "satisfied": 47,
-  "open": 80,
+  "satisfied": 51,
+  "open": 76,
   "satisfied_records": [
    125,
    126,
@@ -401,6 +401,7 @@
    1348,
    1349,
    1355,
+   1359,
    1361,
    1363,
    1366,
@@ -411,11 +412,14 @@
    1377,
    1379,
    1381,
+   1386,
    1390,
+   1392,
+   1395,
    1398,
    1399,
    1402
   ],
-  "note": "Evidence-tested on the record. Recovery wave 1 located 13 manifestations by Blogger feed API; 12 seated, 1 (#1391) reverted after verification showed the recovered work was v1, not the directed v2."
+  "note": "Evidence-tested. Site/source-package directives satisfied by fetching the deployed source from the live canonical surface and seating it with served-page SHA-256 and identity gate."
  }
 }
