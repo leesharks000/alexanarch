@@ -94,7 +94,7 @@
         "audit_version": "v3-dual-store+recovery-map",
         "class_before_read_audit": "native_short",
         "classified_by": "read-audit 2026-07-31 (declaration, not length)",
-        "work_sha256": "ede499fa2c4cbf78252256ce02521093b848f6fa23e0daf28057b58ddd15830f",
+        "work_sha256": "f86d4aeb8bf46ad2696345db78bef4c6ce7c1333ca48565eeadd877cf8f8c129",
         "prior_bytes_sha256": "cd1c84ff2318f4cc82b216b91722c7064d5bed287ce904c8b10ba071a9f0af8d",
         "image_transcription": {
           "date": "2026-08-05",
@@ -104,6 +104,15 @@
           "dimensions": "800x1035",
           "status": "PARTIAL — upper contours transcribed with confidence; dense interleaved arcs not transcribed rather than guessed",
           "correction": "MANUS: \"snub-poemed can be quoted. we should grab the image.\" Correct — TACHYON had reasoned that an image-borne poem \"contains no prose to quote at all\" and closed a verifier flag on that basis. The poem's text is IN the image and had simply not been fetched. The image URL was already in the record body as a bare link. Fetched, read, and partially transcribed."
+        },
+        "primary_text_attachment": {
+          "attachment": "/data/attachments/AXN-0246/snub-poemed.png",
+          "kind": "source image — the work itself",
+          "sha256": "bc709b05ff5e18d514a161dad34320402e0b84a508261a3b33ce8674dcc15967",
+          "bytes": 191761,
+          "prepared": "2026-08-05",
+          "role": "THE WORK. \"Snub-Poemed\" is an image-borne concrete poem; this PNG is the poem, not an illustration of it.",
+          "note": "Held as a durable local copy rather than a hotlink to the authorial blog. A work whose only manifestation is an image on a third-party surface is one deletion away from a lacuna — the same exposure the 2026-06-19 termination demonstrated."
         }
       },
       "canonical_text_status": "canonical_full_text",
@@ -160,6 +169,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "IMAGE FETCHED AND TRANSCRIBED (partial): the concrete poem's text was in its image and had never been read; correcting the earlier claim that the work contained no quotable prose",
+          "was": "{\"class\": \"image_borne\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 10, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"class_before",
+          "now": "{\"class\": \"image_borne\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 10, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"class_before"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "IMAGE EMBEDDED AND ATTACHED: the source image is now held locally, embedded in the body and downloadable, rather than hotlinked to a third-party surface",
           "was": "{\"class\": \"image_borne\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 10, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"class_before",
           "now": "{\"class\": \"image_borne\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 10, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"class_before"
         }

@@ -928,7 +928,7 @@ def regenerate_static_page(d, eidx, registry=None):
                 # image URLs were rendering as 240-character raw URLs. 88 records,
                 # 134 references. Render the image; keep the URL reachable via the
                 # link, and never inline anything but a known image host.
-                _im = re.match(r'^\s*!?\[[^\]]*\]\((https?://[^\s\)]+)(?:\s+&quot;[^&]*&quot;)?\)\s*$', line) \
+                _im = re.match(r'^\s*!?\[[^\]]*\]\((https?://[^\s\)]+|/[^\s\)]+\.(?:png|jpe?g|gif|webp|svg))(?:\s+&quot;[^&]*&quot;)?\)\s*$', line, re.I) \
                       or re.match(r'^\s*(https?://\S+\.(?:png|jpe?g|gif|webp))\s*$', line, re.I) \
                       or re.match(r'^\s*(https://blogger\.googleusercontent\.com/img/\S+)\s*$', line)
                 if _im:
