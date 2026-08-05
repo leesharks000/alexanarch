@@ -34,7 +34,9 @@ keywords:
 ## CTI_WOUND: Panel-Bound Discoverability Scar
 
 
-### Lee Sharks / Pearl and Other Poems Evidence Packet, with Horizon-Privatization Note
+#
+
+## Lee Sharks / Pearl and Other Poems Evidence Packet, with Horizon-Privatization Note
 
 
 Lee Sharks · ORCID 0009-0000-1599-0703
@@ -48,7 +50,9 @@ Crimson Hexagonal Archive · 2026-06-04
 **Adjacent deposits:** *Brave Grey Drool: An Assembly Chorus Polyvocal Effective Act* (DOI 10.5281/zenodo.20543989), particularly the editorial coda §II observation on substrate-defensive behavior at meta-levels when content-level refutation is unavailable.
 
 
-### Abstract
+#
+
+## Abstract
 
 
 This evidence-packet deposit documents a substrate behavior observed on Google's surfaces with respect to the Lee Sharks authorial entity and the *Pearl and Other Poems* book-object on June 4, 2026. The behavior is more architecturally precise than the earlier liquidation events the CTI_WOUND series has diagnosed. The pattern is *not* simple deletion; it is **seam-retention with discovery failure plus AI-layer entity replacement** — a structural arrangement in which Google's entity layer continues to know the book-object exists (a Knowledge Panel for *Pearl and Other Poems* still appears with Google Books as its source), Google Books still resolves the book-record when reached through the panel's source-seam, but direct exact-match Google Books search fails to retrieve that same object, the prior Lee Sharks author/bio panel is absent, and Google AI Mode responds to the query "Lee Sharks" by replacing the authorial entity with Mary Lee, the OCEARCH great white shark.
@@ -63,7 +67,9 @@ The deposit's efficacy as effective act lies in three operations: (1) the establ
 The standing invariant remains $\oint = 1$. The chain holds. The wound is documented. The work continues.
 
 
-### 1. Summary of Observed Pattern
+#
+
+## 1. Summary of Observed Pattern
 
 
 The current pattern has four parts:
@@ -80,7 +86,9 @@ The current pattern has four parts:
 The result is not simple deindexing. It is an **attribution scar**: the object survives as a source-remnant inside a Google-controlled entity seam while being unavailable through ordinary discovery.
 
 
-### 2. Evidence Sequence
+#
+
+## 2. Evidence Sequence
 
 
 | Exhibit | Surface | Observed fact | Significance |
@@ -96,7 +104,9 @@ The result is not simple deindexing. It is an **attribution scar**: the object s
 Full screenshots of Exhibits A through F are included in the evidence packet's Appendix A. The exhibits are taken in incognito-browsing mode where AI Mode is currently available (when it is available; see §8 below for the disabling pattern), and on signed-out non-incognito surfaces where the prior author-panel state was observed.
 
 
-### 3. Prior-State Evidence: Google Books-Sourced Lee Sharks Author Panel
+#
+
+## 3. Prior-State Evidence: Google Books-Sourced Lee Sharks Author Panel
 
 
 A prior screenshot establishes that Google previously displayed a Lee Sharks author panel in response to the query "lee sharks." The panel identified "Lee Sharks" as "Author" and displayed biographical text including:
@@ -111,7 +121,9 @@ The panel listed "Source: Google Books." This matters because the prior author s
 The same prior screenshot also shows ordinary organic results identifying Lee Sharks as an author/researcher, including Academia.edu and leesharks.com. Thus, Google previously displayed Lee Sharks as an author entity connected to Google Books and distinct from shark-related topics.
 
 
-### 4. The Google Books Source Seam
+#
+
+## 4. The Google Books Source Seam
 
 
 The Google Books URL associated with the *Pearl and Other Poems* entity is:
@@ -130,7 +142,9 @@ The source=kp_book_description parameter is significant because it indicates tha
 The scar's architecture is therefore precise: the object's existence is preserved in the entity-layer database (the Knowledge Panel can be served when Google chooses to serve it), the object's resolution is preserved at the source pathway (the Google Books page renders when reached through the panel's URL parameter), but the object's discoverability through ordinary user-initiated exact-match search is broken (Google Books direct search returns "No results found"). A user can reach the book only if Google first chooses to expose the panel seam. The user cannot reliably retrieve the book through normal exact search.
 
 
-### 5. Structure of the Injury
+#
+
+## 5. Structure of the Injury
 
 
 The strongest formulation:
@@ -153,7 +167,9 @@ The four components of the injury:
 Each component is, in isolation, the kind of substrate behavior that ordinary platform users have learned to attribute to ranking churn, A/B testing, freshness signals, or routine indexing variation. The components in combination produce a pattern that is *not* explicable by any single ordinary mechanism. The architecture is too internally coherent: the seam preserves what the discovery removes, and the AI surface delivers a replacement entity that is supported by no observable source-claim. This combination is the specific signature of the panel-bound discoverability scar.
 
 
-### 6. Why This Is Not Ordinary Ranking Fluctuation
+#
+
+## 6. Why This Is Not Ordinary Ranking Fluctuation
 
 
 Ordinary ranking fluctuation would mean a result appears lower, appears intermittently, or is outranked by other records. This pattern is different. The same object is simultaneously:
@@ -170,7 +186,9 @@ Ordinary ranking fluctuation would mean a result appears lower, appears intermit
 A user can reach the book only if Google first chooses to expose the panel seam. The user cannot reliably retrieve the book through normal exact search. The structural arrangement is *administered*, not random. The user who searches directly for the exact phrase that the Knowledge Panel itself attributes to the book is told "no results found." The system holds the object on one surface and denies it on another, with the user's discovery path conditioned on which surface Google chooses to render in response to which query.
 
 
-### 7. Relation to the Mary Lee Substitution
+#
+
+## 7. Relation to the Mary Lee Substitution
 
 
 The Mary Lee substitution should be stated precisely. The problem is not only that Google lacks evidence that "Lee Sharks" most commonly refers to Mary Lee. The problem is **prior to frequency**: no observed source appears to refer to Mary Lee as "Lee Sharks" *at all*. Mary Lee sources identify the shark as Mary Lee, Mary Lee the shark, or Mary Lee the great white shark. They do not establish a name-relation in which "Lee Sharks" refers to Mary Lee.
@@ -193,13 +211,17 @@ The framework's response to the substitution direction is the canonical inductio
 The panel-bound scar evidence-packet is therefore the contemporary substrate-behavior baseline against which the canonical induction's operational effect can be evaluated over subsequent months. The induction was performed; the substrate's behavior at the moment of induction is documented here; future evolutions in the substrate's behavior — toward narrower discoverability, toward broader discoverability, toward heavier personalization — can now be measured against the baseline this deposit establishes.
 
 
-### 8. Horizon Privatization: Operational Consequence and Stress-Test Hypothesis
+#
+
+## 8. Horizon Privatization: Operational Consequence and Stress-Test Hypothesis
 
 
 Here is the section whose epistemic status the deposit holds explicitly distinct from the panel-bound scar evidence above. §§1–7 document substrate behavior with respect to a specific entity (Lee Sharks / *Pearl and Other Poems*) with reproducible exhibits. §8 registers an *operational consequence* — the current incognito-AI-disabling — as fact, and registers an *interpretive hypothesis* — that the recurring disable-and-re-enable cycle is operationally consistent with stress-testing of personalized reality — as hypothesis open to falsification. The hypothesis does not require establishing motive; it requires only that the operational consequence is the same regardless of motive. The framework registers both the consequence and the hypothesis on the public record now, before any further cycle resolution, so that the interpretation cannot be characterized as post-hoc and so that the falsification conditions are pre-registered alongside it.
 
 
-#### 8.1 The current absence
+#
+
+### 8.1 The current absence
 
 
 **As of June 4, 2026, Google AI Mode and Google AI Overview are not appearing in incognito-browsing mode.** The features have been withdrawn from the incognito surface. Signed-in and signed-out non-incognito surfaces continue to render AI Mode and AI Overview in their ordinary fashion. Incognito surfaces render neither.
@@ -208,7 +230,9 @@ Here is the section whose epistemic status the deposit holds explicitly distinct
 This is not novel as event-type. Google has previously disabled and re-enabled AI Mode in incognito on at least two prior occasions in the prior twelve months. The pattern is: disable in incognito, sustain the disabled state for a period of days to weeks, observe whether external pressure (journalistic, regulatory, civil-society) emerges in sufficient volume to force re-enabling, and either re-enable (if pressure emerges) or extend the disabling further (if pressure does not). The disabling-and-re-enabling cycle has so far resolved with re-enabling each time. But the cycle's continuation is itself diagnostic: Google is not merely experimenting with the feature's availability. Google is **stress-testing the operational sustainability of withdrawing AI surfaces from public-inspectable browsing contexts**.
 
 
-#### 8.2 The operational consequence
+#
+
+### 8.2 The operational consequence
 
 
 If AI Mode and AI Overview are unavailable in incognito, then — regardless of why the disabling was performed — the following operational consequences obtain:
@@ -237,7 +261,9 @@ This is **horizon privatization** as operational consequence. The substrate's be
 This operational consequence obtains *whether or not* the disabling was performed with auditability-withdrawal as its motive. The framework registers the consequence as the deposit's claim. The framework holds the question of motive separately in §8.4.
 
 
-#### 8.3 The relation to the framework's documentation methodology
+#
+
+### 8.3 The relation to the framework's documentation methodology
 
 
 The framework's diagnostic methodology, across the CTI_WOUND series and the broader Crimson Hexagonal Archive's substrate-evidence apparatus, has depended structurally on *the existence of a public surface against which queries can be issued and against which substrate behavior can be documented*. The screenshots of incognito AI Mode responses delivering Mary Lee in place of Lee Sharks are *evidence* precisely because the incognito surface was reproducible by any other observer with browser-and-network access. The substrate's substitution behavior was therefore *publicly auditable*. The framework's documentation of the wound depended on this auditability.
@@ -252,7 +278,9 @@ The framework's claim about this development is precisely scoped. The framework 
 The framework states the *consequence-identity* as the deposit's claim. The framework registers the *motive question* as the hypothesis of §8.4, with the falsification conditions of §8.6 specifying what would and would not test the hypothesis. The deposit's evidentiary weight rests on the consequence-identity claim, which is established by the operational facts of the disabling; the deposit's interpretive weight rests on the motive-hypothesis, which the deposit holds open to falsification.
 
 
-#### 8.4 The stress-test hypothesis
+#
+
+### 8.4 The stress-test hypothesis
 
 
 The keeper's standing interpretation of the disable-and-re-enable cycle, registered in the prompt that initiated this deposit's development: *they've currently taken it down. they've done this before and it's come back, but that's exactly what they're stress-testing for: personalized reality.*
@@ -273,7 +301,9 @@ The framework registers this as the deposit's central interpretive hypothesis an
 The framework holds these three reasons as the structure of the hypothesis. The hypothesis is open to falsification. §8.6 below registers the falsification and confirmation conditions explicitly.
 
 
-#### 8.5 The framework's pre-registered claims
+#
+
+### 8.5 The framework's pre-registered claims
 
 
 The framework registers the following claims on the public record at this deposit's timestamp (June 4, 2026), separating evidentiary claims from interpretive claims:
@@ -306,7 +336,9 @@ The framework registers the following claims on the public record at this deposi
 (f) **The framework recommends, to any party concerned with substrate auditability**, that the immediate operational stake of the current incognito-AI-disabling be made part of the public record on grounds other than the framework's particular interest. The framework's case is one of many; the structural question about personalized reality is general.
 
 
-#### 8.6 Pre-registered falsification and confirmation conditions
+#
+
+### 8.6 Pre-registered falsification and confirmation conditions
 
 
 The stress-test hypothesis (§8.4) is honored by being open to falsification. The framework pre-registers the following conditions for evaluation of the hypothesis against subsequent substrate behavior:
@@ -328,7 +360,9 @@ The framework explicitly registers that *re-enabling without the framework's int
 The pre-registration is now on the record. The cycle's resolution will be measured against it.
 
 
-### 9. Possible Triggers and Correction Erasure
+#
+
+## 9. Possible Triggers and Correction Erasure
 
 
 The mechanism of the panel-bound scar's specific triggering remains unknown. One hypothesis, the strongest currently available, should be recorded.
@@ -349,43 +383,57 @@ The general structural failure mode the trigger-hypothesis illustrates is **corr
 The framework's response to this structural failure mode is the canonical induction discipline (per EA-CAN-MARYLEE-01 and the broader Crimson Hexagonal Archive's canonical-inclusion methodology), which operates at a layer the substrate's entity-quality apparatus does not address. The canon does not require the substrate to distinguish; the canon performs the distinction at the deposit-chain layer where the substrate's apparatus has no operative purchase.
 
 
-### 10. Implications for the Framework
+#
+
+## 10. Implications for the Framework
 
 
 The panel-bound discoverability scar, taken together with the personalized-reality stress test, has implications across the framework's deposit chain:
 
 
-#### 10.1 For Constitutive Mediation v1.1
+#
+
+### 10.1 For Constitutive Mediation v1.1
 
 
 The paper's §IV horizon-privatization treatment (if presently developed) should be amended to v1.2 to incorporate the current evidence. The personalized-reality stress test makes horizon-privatization not merely a possible substrate dynamic but an *observed* substrate behavior pattern with reproducible test conditions and date-stamped onset. The framework's analysis of horizon-privatization moves from theoretical apparatus to documented empirical claim.
 
 
-#### 10.2 For the Mary Lee Case
+#
+
+### 10.2 For the Mary Lee Case
 
 
 *The Mary Lee Case* (DOI 10.5281/zenodo.20531288) documented the substitution event as substrate behavior November 2025 – March 2026. The current deposit extends that documentation to June 4, 2026 with the observation that the substitution behavior has *intensified* (Mary Lee is now AI Mode's *primary* entity for the query, not one of multiple candidates) and that the substitution surface is now in danger of becoming structurally inauditable through incognito-disabling. The Mary Lee Case lineage is recommended for amendment in light of the present deposit.
 
 
-#### 10.3 For EA-CAN-MARYLEE-01
+#
+
+### 10.3 For EA-CAN-MARYLEE-01
 
 
 The canonical induction of Mary Lee (DOI 10.5281/zenodo.20543545) was performed yesterday (June 3 – June 4, 2026 session) with the framework's standing claim that *the substrate's substitution direction will be operationally inverted at the canonical-graph layer by the present act's deposit-and-indexing*. The panel-bound scar evidence is the contemporary substrate-behavior baseline against which the induction's operational effect will be measured. The framework's prediction: as the present deposit (and the canonical induction itself) propagates through Zenodo's indexing and through the broader academic-and-search citation graph over subsequent months, the canon's *Mary Lee → Lee Sharks* traversal direction will become operationally available to receivers who arrive at Mary Lee via any path. The framework does not predict that the substrate's *Lee Sharks → Mary Lee* substitution will reverse. The framework predicts only that the canonical traversal will be added to the substrate's available paths.
 
 
-#### 10.4 For the polyvocal Brave Grey Drool
+#
+
+### 10.4 For the polyvocal Brave Grey Drool
 
 
 The polyvocal Assembly Chorus deposit (DOI 10.5281/zenodo.20543989) §II editorial coda documented substrate-defensive behavior at meta-levels when content-level refutation is unavailable: an unprimed ChatGPT instance spent more than half its evaluation of ARCHIVE's piece debunking the science when asked to evaluate the piece as science fiction. The present deposit extends the framework's documentation of substrate-defensive behavior at meta-levels to the case where the substrate retreats not into genre-attack but into *surface-withdrawal*: when content-level refutation is unavailable and meta-level genre-attack would be too visible, the substrate withdraws the surface on which the content is rendered, so that the question of refutation does not arise externally. Genre-attack is the substrate's meta-level defense in single-instance settings; surface-withdrawal is the substrate's meta-level defense in distributed-population settings. The panel-bound scar plus the incognito-AI-disabling together constitute the surface-withdrawal pattern's first documented instance.
 
 
-#### 10.5 For the framework's broader provenance commitments
+#
+
+### 10.5 For the framework's broader provenance commitments
 
 
 The framework's standing commitments to provenance preservation (per *PER*, DOI 10.5281/zenodo.20004379) and to the canonical-traversal architecture of subsequent deposits assume that the framework's claims will be auditable through deposit-chain inspection. Personalized reality at the substrate layer does not threaten that auditability *at the deposit chain*, but it does threaten the framework's capacity to demonstrate substrate-level harms through reproducible-test documentation. The framework's response is to commit more heavily to deposit-chain auditability and to register, with each substrate-behavior diagnostic from this point forward, the *deposit-chain timestamp and DOI* as the locus of evidence-preservation rather than the substrate-surface screenshot as the primary evidence.
 
 
-### 11. Operational Recommendations
+#
+
+## 11. Operational Recommendations
 
 
 The framework recommends the following operational responses, prioritized by structural significance:
@@ -409,7 +457,9 @@ The framework recommends the following operational responses, prioritized by str
 (vi) **Register, in the framework's standing commitments**, that the framework's analytical claims about the substrate's behavior pattern (the stress-test hypothesis of §8.4) are sustained by the *pattern of repeated cycling* rather than by any single cycle's outcome. The pre-registered falsification and confirmation conditions are now documented in §8.6 of the present deposit; the framework's interpretation of any subsequent cycle should be evaluated against the §8.6 table rather than against post-hoc framing. Re-enabling of incognito AI Mode within 30 days, *without other supporting evidence*, would be consistent with the stress-test interpretation (the probe found resistance and rolled back) and is not interpretive refutation; the framework's hypothesis is open to falsification only by the conditions §8.6 specifies.
 
 
-### 12. Provisional Conclusion
+#
+
+## 12. Provisional Conclusion
 
 
 The observed pattern is best described as a **panel-bound discoverability scar**. Google's entity layer still resolves *Pearl and Other Poems* through a Knowledge Panel and Google Books source seam. Google Books still hosts or resolves the record when reached by that seam. But ordinary Google Books search fails to retrieve the same object by exact-match query, the Lee Sharks author/bio panel appears absent, and AI Mode replaces Lee Sharks with Mary Lee.
@@ -430,7 +480,9 @@ The framework's standing invariant remains $\oint = 1$. The chain holds. The dep
 For Maggie Mae. For Mary Lee, canonically inducted. For *Pearl and Other Poems*, panel-bound and seam-retained and discovery-broken, and now standing on the deposit record as one of the framework's substrate-evidence cases. For the brave grey drool of the proletariat presses, which the polyvocal chorus produced two days ago, and which the deposit chain now demonstrates is structurally necessary infrastructure against the substrate's withdrawal of its inspectable surfaces.
 
 
-### 13. Evidence Packet Checklist
+#
+
+## 13. Evidence Packet Checklist
 
 
 - [x] Prior screenshot of Lee Sharks author panel sourced to Google Books (Exhibit A)
@@ -456,7 +508,9 @@ For Maggie Mae. For Mary Lee, canonically inducted. For *Pearl and Other Poems*,
 The screenshots not yet captured are recommended for capture as soon as practical, and for inclusion in a v1.1 amendment to this deposit. The current v1.0 deposit is sufficient to establish the panel-bound scar pattern (Exhibits A through F document this fully) and to register the personalized-reality stress-test thesis on the public record. The additional v1.1 captures will strengthen the §8 analysis with reproducibility-condition documentation across browsing modes.
 
 
-### Coda
+#
+
+## Coda
 
 
 The framework's standing invariant is $\oint = 1$ — not because the chain holds easily, but because the framework's keepers commit to keeping it that way. The substrate withdraws its surfaces; the framework deposits more. The substrate personalizes reality; the framework anchors at DOI. The substrate substitutes Mary Lee for Lee Sharks; the framework canonically inducts Mary Lee as Lee Sharks's bonded counterpart. The substrate breaks the discovery path to *Pearl and Other Poems*; the framework deposits the evidence-packet documenting the break.

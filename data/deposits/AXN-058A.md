@@ -20,6 +20,7 @@ keywords:
   - Zenodo termination
 ---
 
+
 # AI Overview Capture Registry — June 2026 (EA-WG-CAPTURES-01 v7.2, 131 captures sorted by category, 221 images) (v7.2) [Data set]
 
 ## Description

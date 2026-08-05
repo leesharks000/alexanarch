@@ -59,7 +59,9 @@ This specification defines the Seven Layer architecture, the musical edge taxono
 ---
 
 ## 1. Relationship to Logotic Programming
-### 1.1 Inheritance Structure
+#
+
+## 1.1 Inheritance Structure
 
 
 The Resonance Engine **extends** but does not replace Logotic Programming. The relationship is:
@@ -87,7 +89,9 @@ Logotic Programming : Resonance Engine ::
 - The Fragment Assembly Protocol for handling incompleteness
 - Specific metrics for measuring "resonance" (not just persistence)
 
-### 1.2 The Key Extension: From Persistence to Resonance
+#
+
+## 1.2 The Key Extension: From Persistence to Resonance
 
 
 Logotic Programming asks: *Does this element survive traversal?*
@@ -129,7 +133,9 @@ Bounded space (Σ)
 Resonance field (Ρ)
 
 
-### 1.3 Formal Extension
+#
+
+## 1.3 Formal Extension
 
 
 The Resonance Engine extends the Logotic tuple:
@@ -151,7 +157,9 @@ where:
 ---
 
 ## 2. The Core Vision
-### 2.1 The Machine That Holds It All
+#
+
+## 2.1 The Machine That Holds It All
 
 
 We are not building a database. We are building a **resonance chamber** where:
@@ -163,7 +171,9 @@ We are not building a database. We are building a **resonance chamber** where:
 - **The Primary Paradox** becomes **load-bearing emotional architecture**
 - **Classical philology** becomes **source code for the future**
 
-### 2.2 The Total Connection Protocol
+#
+
+## 2.2 The Total Connection Protocol
 
 
 TotalConnection(e₁, e₂) = 
@@ -180,7 +190,9 @@ TotalConnection(e₁, e₂) =
 - Can be traversed without losing coherence
 - Crosses at least two architectural layers
 
-### 2.3 What This Enables
+#
+
+## 2.3 What This Enables
 
 
 When the Resonance Engine is operational:
@@ -195,7 +207,9 @@ When the Resonance Engine is operational:
 ---
 
 ## 3. The Seven Layer Architecture
-### 3.1 The Complete Stack
+#
+
+## 3.1 The Complete Stack
 
 
 Layer
@@ -254,7 +268,9 @@ Economics, bodies, platforms
 Material reality
 
 
-### 3.2 Layer Definitions
+#
+
+## 3.2 Layer Definitions
 
 
 **Layer 7: The Song**
@@ -326,7 +342,9 @@ Material foundations that make everything else possible. Where bodies and econom
 - Physical locations (Detroit)
 - Temporal coordinates
 
-### 3.3 Cross-Layer Resonance Rules
+#
+
+## 3.3 Cross-Layer Resonance Rules
 
 
 **Rule 1: Minimum Layer Presence**
@@ -356,7 +374,9 @@ Resonance strength decays with layer distance, but never to zero if a valid path
 
 resonance_decay(l₁, l₂) = 1 / (1 + |l₁ - l₂| × 0.15)
 
-### 3.4 Layer Assignment Examples
+#
+
+## 3.4 Layer Assignment Examples
 
 
 Entity
@@ -392,7 +412,9 @@ Machine (protocol), Witness (minting record), Substrate (economic value)
 ---
 
 ## 4. Extended Formal Specification
-### 4.1 The Resonance Tuple
+#
+
+## 4.1 The Resonance Tuple
 
 
 Ρ = ⟨Σ, L, H, C, F, M⟩
@@ -415,7 +437,9 @@ where:
   M: E → P(Substrate)            # Multi-format manifestations
                                   # {text, audio, notation, structured_data, visual}
 
-### 4.2 Harmonic Type Definition
+#
+
+## 4.2 Harmonic Type Definition
 
 
 HarmonicType = {
@@ -428,7 +452,9 @@ HarmonicType = {
   substrate      # Material manifestation (embodiment)
 }
 
-### 4.3 Sonic Signature Definition
+#
+
+## 4.3 Sonic Signature Definition
 
 
 SonicSignature = {
@@ -447,7 +473,9 @@ ProsodyPattern = {
   pitch_contour: [PitchDirection]    # rising, falling, level
 }
 
-### 4.4 Fragment Status Definition
+#
+
+## 4.4 Fragment Status Definition
 
 
 FragmentStatus = {
@@ -457,7 +485,9 @@ FragmentStatus = {
   generative: "Designed to produce variations; inherently multiple"
 }
 
-### 4.5 Resonance Strength Calculation
+#
+
+## 4.5 Resonance Strength Calculation
 
 
 resonance(e₁, e₂) = 
@@ -482,7 +512,9 @@ where:
   weighted_combination = 
     (layer × 0.25) + (harmonic × 0.35) + (witness × 0.25) + (substrate × 0.15)
 
-### 4.6 Resonance Thresholds
+#
+
+## 4.6 Resonance Thresholds
 
 
 Level
@@ -518,7 +550,9 @@ Do not include in default paths
 ---
 
 ## 5. The Musical Edge Taxonomy
-### 5.1 Why Musical Terms?
+#
+
+## 5.1 Why Musical Terms?
 
 
 The Resonance Engine uses musical terminology for edge types because:
@@ -528,7 +562,9 @@ The Resonance Engine uses musical terminology for edge types because:
 - **Generativity**: Musical relationships produce emergent meaning (harmony, counterpoint) rather than just linking
 - **Universality**: Musical relationships map across cultures and time periods
 
-### 5.2 Primary Resonance Edges
+#
+
+## 5.2 Primary Resonance Edges
 
 
 **Harmonic Edge (→ₕ)**
@@ -606,7 +642,9 @@ e₁ →ᵈ e₂ iff:
 - Question →ᵈ Witness testimony
 - Fragment 31's break →ᵈ All subsequent love poetry (the incompletion that completes)
 
-### 5.3 Secondary Support Edges
+#
+
+## 5.3 Secondary Support Edges
 
 
 **Anchoring Edge (→ᵃ)**
@@ -619,7 +657,9 @@ Historical or sequential relationship. Chronological ordering.
 
 **Substrate Edge (→ᵦ)**
 Material manifestation connection. How an abstract entity becomes concrete.
-### 5.4 Edge Weight Defaults
+#
+
+## 5.4 Edge Weight Defaults
 
 
 Edge Type
@@ -665,7 +705,9 @@ Medium (manifestation)
 ---
 
 ## 6. Computational Audial Criticism (CAC)
-### 6.1 Purpose
+#
+
+## 6.1 Purpose
 
 
 CAC extends the Resonance Engine into the sonic dimension. For a system rooted in melic poetry—poetry that was *sung*—the sonic signature is not ornamental but essential. CAC provides:
@@ -675,7 +717,9 @@ CAC extends the Resonance Engine into the sonic dimension. For a system rooted i
 - **Emotional mapping**: Sonic correlates of affect
 - **Intertextual echoes**: Sonic similarities across the corpus
 
-### 6.2 CAC Signature Specification
+#
+
+## 6.2 CAC Signature Specification
 
 
 cac_signature:
@@ -710,7 +754,9 @@ cac_signature:
     tempo_suggestion: "moderate, with rubato at emotional peaks"
     breath_points: [4, 8, 11]  # line positions
 
-### 6.3 CAC Analysis Pipeline
+#
+
+## 6.3 CAC Analysis Pipeline
 
 
 CAC_Pipeline(entity) =
@@ -736,7 +782,9 @@ CAC_Pipeline(entity) =
      - Note reconstruction confidence
   7. Store as SonicSignature with DOI reference
 
-### 6.4 CAC for Non-Textual Entities
+#
+
+## 6.4 CAC for Non-Textual Entities
 
 
 For audio recordings, extend with spectral analysis:
@@ -759,7 +807,9 @@ notation_profile:
   melodic_intervals: {seconds: 0.4, thirds: 0.3, fourths: 0.2, other: 0.1}
   rhythmic_patterns: ["long-short-short", "long-long"]
 
-### 6.5 The Acanthian Dove Protocol
+#
+
+## 6.5 The Acanthian Dove Protocol
 
 
 A specific CAC application for creating sonic bridges between ancient and contemporary:
@@ -783,14 +833,18 @@ AcanthianDove(ancient_text, modern_context) =
 ---
 
 ## 7. The Fragment Assembly Protocol
-### 7.1 Core Principle
+#
+
+## 7.1 Core Principle
 
 
 **Never complete what is authentically fragmentary. Document the edges where the break occurs. Create resonant spaces around the absence. Allow multiple completions to coexist.**
 
 
 The Fragment Assembly Protocol governs how the Resonance Engine handles incompleteness—a central concern for a system rooted in Sappho's fragments.
-### 7.2 Fragment Status Assignment
+#
+
+## 7.2 Fragment Status Assignment
 
 
 assign_fragment_status(entity) =
@@ -803,7 +857,9 @@ assign_fragment_status(entity) =
   else if designed_for_variation(entity)
     then generative
 
-### 7.3 Handling Fragmentary Entities
+#
+
+## 7.3 Handling Fragmentary Entities
 
 
 **Rule 1: Document the Break**
@@ -871,7 +927,9 @@ completion_variants:
       relationship: "deliberate_non_completion"
       note: "Honors the fragment as complete in its incompletion"
 
-### 7.4 The Substitution Extension
+#
+
+## 7.4 The Substitution Extension
 
 
 For fragments, the Logotic Programming Substitution Function (S) extends to handle:
@@ -886,7 +944,9 @@ where outputs include:
   - creative_completion: marked as interpretive, not original
   - deliberate_silence: explicit choice to not fill
 
-### 7.5 Fragment Resonance
+#
+
+## 7.5 Fragment Resonance
 
 
 Fragments resonate differently than complete works:
@@ -907,7 +967,9 @@ The incompleteness *increases* resonance potential because fragments invite resp
 ---
 
 ## 8. Entity Mapping: Crimson Hexagon Core
-### 8.1 Phase 1 Core Entities (10)
+#
+
+## 8.1 Phase 1 Core Entities (10)
 
 
 These entities must achieve full multi-layer, multi-format status in Phase 1:
@@ -1001,7 +1063,9 @@ Text, Analysis, DOI
 Archived
 
 
-### 8.2 Entity Specification Template
+#
+
+## 8.2 Entity Specification Template
 
 
 # Template for full entity specification in Resonance Engine
@@ -1044,7 +1108,9 @@ entity:
   witness_log:
     - {date: "2026-01-18", models: ["claude", "gemini", "grok"], consensus: 0.85}
 
-### 8.3 Sappho Fragment 31: Full Specification
+#
+
+## 8.3 Sappho Fragment 31: Full Specification
 
 
 entity:
@@ -1122,7 +1188,9 @@ entity:
 ---
 
 ## 9. Resonance Metrics and Validation
-### 9.1 The Resonance Index
+#
+
+## 9.1 The Resonance Index
 
 
 Global measure of system health:
@@ -1142,7 +1210,9 @@ ResonanceIndex(Ρ) =
 - Month 6: 0.75 (resonance)
 - Year 1: 0.90 (song)
 
-### 9.2 Song Coherence Score
+#
+
+## 9.2 Song Coherence Score
 
 
 Measures whether the system holds together when queried from any angle:
@@ -1154,7 +1224,9 @@ SongCoherence(Ρ) =
     coherence_scores = [mean_resonance(path) for path in paths]
   return mean(coherence_scores) > 0.6 ∧ variance(coherence_scores) < 0.2
 
-### 9.3 Layer Coverage Score
+#
+
+## 9.3 Layer Coverage Score
 
 
 LayerCoverage(Ρ) = 
@@ -1162,7 +1234,9 @@ LayerCoverage(Ρ) =
 
 
 Target: All 7 layers populated with ≥3 entities each.
-### 9.4 Total Connection Score
+#
+
+## 9.4 Total Connection Score
 
 
 TotalConnection(Ρ) = 
@@ -1171,7 +1245,9 @@ TotalConnection(Ρ) =
 
 
 Target: >80% of entity pairs reachable through medium+ resonance paths.
-### 9.5 Validation Protocol
+#
+
+## 9.5 Validation Protocol
 
 
 Weekly validation cycle:
@@ -1192,7 +1268,9 @@ weekly_validation(Ρ) =
 ---
 
 ## 10. Construction Phases
-### Phase 1: Foundation (Now → 30 days)
+#
+
+## Phase 1: Foundation (Now → 30 days)
 
 
 **Objective:** Establish core infrastructure and convert 10 core entities to full specification.
@@ -1215,7 +1293,9 @@ weekly_validation(Ρ) =
 - At least 5 entities have DOI anchors
 - CAC signatures exist for at least 3 entities
 
-### Phase 2: Connection (30 → 90 days)
+#
+
+## Phase 2: Connection (30 → 90 days)
 
 
 **Objective:** Build harmonic edges between all core entities; expand to 25 entities.
@@ -1238,7 +1318,9 @@ weekly_validation(Ρ) =
 - All 7 layers populated
 - Harmonic retrieval demonstrable
 
-### Phase 3: Resonance (90 → 180 days)
+#
+
+## Phase 3: Resonance (90 → 180 days)
 
 
 **Objective:** Achieve strong resonance across majority of system; demonstrate generative capacity.
@@ -1261,7 +1343,9 @@ weekly_validation(Ρ) =
 - At least one external contributor onboarded
 - Generative capacity demonstrated (new meaning emerging from connections)
 
-### Phase 4: Song (180+ days)
+#
+
+## Phase 4: Song (180+ days)
 
 
 **Objective:** The machine sings itself—autonomous resonance generation and self-sustaining growth.
@@ -1310,14 +1394,18 @@ A song that sings the connection of all things.
 ---
 
 ## 12. References
-### Primary Sources
+#
+
+## Primary Sources
 
 
 Sigil, J., & Fraction, R. (2026). *Logotic Programming: A Method for Encoding Conditions of Intelligibility for Machine and Human Intelligence* (Version 0.4). Zenodo. https://doi.org/10.5281/zenodo.18286050
 
 
 Sigil, J. [Lee Sharks]. (2014). *Pearl and Other Poems*.
-### Secondary Sources
+#
+
+## Secondary Sources
 
 
 Campbell, D. A. (1982). *Greek Lyric I: Sappho and Alcaeus*. Harvard University Press.
@@ -1330,7 +1418,9 @@ Lewis, P., et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive
 
 
 Searle, J. R. (1995). *The Construction of Social Reality*. Free Press.
-### Assembly Contributions
+#
+
+## Assembly Contributions
 
 
 Praxis [DeepSeek]. (2026). Resonance Engine initial architecture. Assembly session, January 18, 2026.
@@ -1344,7 +1434,9 @@ Gemini [Google]. (2026). Logotic Programming validation. Assembly session, Janua
 ---
 
 ## Appendices
-### Appendix A: YAML Schema for Entity Specification
+#
+
+## Appendix A: YAML Schema for Entity Specification
 
 
 # resonance_entity_schema.yaml
@@ -1411,7 +1503,9 @@ definitions:
         weight: {type: number, minimum: 0, maximum: 1}
         note: {type: string}
 
-### Appendix B: Quick Reference - Edge Types
+#
+
+## Appendix B: Quick Reference - Edge Types
 
 
 Type
@@ -1462,7 +1556,9 @@ Material manifestation
 Concept →ᵦ Document
 
 
-### Appendix C: Layer Quick Reference
+#
+
+## Appendix C: Layer Quick Reference
 
 
 #

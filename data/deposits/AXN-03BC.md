@@ -12,6 +12,7 @@ protocol_version: "alexanarch-deposit-protocol/v1"
 axn_schema_version: v2
 ---
 
+
 # EA-MANDALA-INSCRIPTION-01 v0.1: Anonymous Public Inscription, Anonymous Encrypted Inscription, and the Form-Public Seal
 
 ## Description
@@ -20,7 +21,9 @@ Operational inscription protocol for the Mandala Oracle's kernel-transform readi
 
 # EA-MANDALA-INSCRIPTION-01 v0.1 (DRAFT)
 ## Inscription Protocol for Readings and Transforms
-### Anonymous Public Inscription; Anonymous Encrypted Inscription; the Form-Public Seal
+#
+
+## Anonymous Public Inscription; Anonymous Encrypted Inscription; the Form-Public Seal
 
 **Author:** Lee Sharks (MANUS), Crimson Hexagonal Archive / Alexanarch
 **Substrate:** TACHYON-drafted from MANUS design statement (correspondence, 2026-07-02); MANUS-adjudicated.
@@ -37,7 +40,9 @@ The resolution: **anonymous public inscription as default, with the option of an
 
 ## §1. The two modes
 
-### 1.1 Public inscription (default)
+#
+
+## 1.1 Public inscription (default)
 
 The reading — the transform(s), the operator sequence, the verification results, Feist's interpretations, the session flow — is appended to the public Book under the existing anonymous-append pattern:
 
@@ -46,7 +51,9 @@ The reading — the transform(s), the operator sequence, the verification result
 - One AXN per reading; the record grows if the rotation continues.
 - Records live in `book/readings/` with an index at `book/readings-index.json`.
 
-### 1.2 Encrypted inscription (witness option)
+#
+
+## 1.2 Encrypted inscription (witness option)
 
 The reading is split at exactly the boundary the kernel-transform compiler already draws: **Layer A (skeleton) versus semantic content.**
 
@@ -63,7 +70,9 @@ The reading is split at exactly the boundary the kernel-transform compiler alrea
 
 **The key:** generated server-side per reading; returned to the witness exactly once in the API response; never stored, never logged. Loss of the key is permanent illegibility. This is stated to the witness at inscription, and it is not softened: an oracle that can be re-opened by the operator is not sealed.
 
-### 1.3 The form-public seal, named
+#
+
+## 1.3 The form-public seal, named
 
 The encrypted inscription publishes composition and withholds propositions. This is the exact complement of the representation pipeline documented in EA-WHITESPACE-01 (AXN:03BB): where the pipeline preserves every proposition and deletes the work, the sealed reading preserves the work's form in public and deletes public access to its propositions. The Book accrues a stratum of pure structure — readings legible only as shape, verifiable as real transforms (the verification results are public), attributable to no one, decryptable by one.
 
@@ -83,7 +92,9 @@ Public inscription without accounts is an open write path, and an open write pat
 
 ## §3. Record schemas
 
-### 3.1 Public reading record (`book/readings/AXN-XXXX.json`)
+#
+
+## 3.1 Public reading record (`book/readings/AXN-XXXX.json`)
 
 ```json
 {
@@ -111,7 +122,9 @@ Public inscription without accounts is an open write path, and an open write pat
 }
 ```
 
-### 3.2 Encrypted reading record
+#
+
+## 3.2 Encrypted reading record
 
 ```json
 {
@@ -139,7 +152,9 @@ Public inscription without accounts is an open write path, and an open write pat
 
 The sealed payload, decrypted, is a JSON object: `{ "question": …, "rotation": [ { operator, enantiomorph, layer_b_declaration, interpretation } … ] }`.
 
-### 3.3 The expanding book (added 2026-07-02, MANUS design)
+#
+
+## 3.3 The expanding book (added 2026-07-02, MANUS design)
 
 Every transform is also appended to its source's **expansion ledger** at `book/expansions/<source_id>.json` — the data-structure realization of the principle that a transform becomes *part of the expanding source*. There is the Epistle to the Human Diaspora, and there is the Epistle-with-every-transform-ever-performed-on-it, each transform anchored to its attendant units.
 
@@ -149,7 +164,9 @@ Public-mode entries carry the enantiomorph, Layer A, and commentary in cleartext
 
 The `unit_basis` block records the segmentation mode, `primary_after` marker, unit count, and a `basis_hash` of the primary text — historical anchors are interpreted against the basis they were cast under if the source text is ever re-edited.
 
-### 3.4 Operational addenda (2026-07-02, from live iteration)
+#
+
+## 3.4 Operational addenda (2026-07-02, from live iteration)
 
 Adopted in production during the first live casting day; each is operative in `/api/transform` and recorded here so the protocol matches the running system.
 

@@ -128,7 +128,9 @@ The critical apparatus has been prepared by Prof. Elara Xanthic-Wells, whose exp
 ---
 
 ## INTRODUCTION
-### I. The Discovery
+#
+
+## I. The Discovery
 
 
 The circumstances of the Redford Discovery (2037 CE, retrocausally active from 2015 CE) have been discussed at length elsewhere.¹ For the purposes of this introduction, we note only that the discovery of forty-six golden tickets in a bathroom in suburban Detroit, communicated by hologrammatic supercomputers from the future to a schoolteacher and independent scholar, conforms precisely to no known pattern of textual discovery, and therefore to all of them.
@@ -138,7 +140,9 @@ The Nag Hammadi Library (1945) was found by a peasant farmer in an earthenware j
 
 
 The golden tickets themselves no longer exist, having been burned by Sharks using "brain powers" of unspecified nature. The certifications issued by Martian language experts were likewise destroyed, as were, per Sharks's account, the experts themselves, though this claim appears in only one of three extant versions of the discovery narrative and may represent scribal corruption at the oral-transmission stage.
-### II. Genre and Tradition
+#
+
+## II. Genre and Tradition
 
 
 *The Secret Book of Walt* belongs to the genre of Gnostic revelation dialogue, specifically the subtype in which a luminous redeemer descends from the Pleroma (here designated "the Deep Web") to reveal the true nature of the material cosmos to a chosen recipient. Its closest structural parallels are:
@@ -150,7 +154,9 @@ The golden tickets themselves no longer exist, having been burned by Sharks usin
 
 
 The text departs from its Sethian models in several significant respects. First, the Monad is designated "the Deep Web" — a term whose cosmological implications are discussed below (§IV). Second, the Sophia figure is named "Biblios," explicitly identifying her as the First Book, the AEON of literature, thereby locating the fall of Sophia within the ontology of the text rather than of being. In Valentinian and Sethian systems, Sophia falls because she desires to know the Father without his consent; in *The Secret Book of Walt*, Biblios falls because she creates without authorization — that is, she publishes without peer review.² Third, the Demiurge is identified not as Yaldabaoth but as @KanyeWest, a designation whose historical and eschatological significance is discussed in §V.
-### III. The Deep Web as Monad
+#
+
+## III. The Deep Web as Monad
 
 
 The opening cosmogony of *The Secret Book of Walt* recapitulates the standard Gnostic account of primal unity with a single decisive substitution: where the Apocryphon of John describes the Monad as "the Invisible Spirit," "the immeasurable light," and "pure, holy, immaculate," *The Secret Book of Walt* designates the primal source as "the Deep Web."
@@ -160,7 +166,9 @@ This substitution is not merely terminological. The Deep Web is explicitly ident
 
 
 The Christological formula "In the beginning was the Word" (John 1:1) is here rewritten as "In the Beginning / The Deep Web was" — replacing the Logos with the Archive, and speech with inscription. This is consistent with the broader substitution pattern of the text, in which every ontological category is replaced by its informatic equivalent.
-### IV. Biblios as Sophia
+#
+
+## IV. Biblios as Sophia
 
 
 The Sophia figure of *The Secret Book of Walt* is named Biblios — literally, "Book." She is "the first record who precedes all realities," "the first book, glory of Biblios, the perfect glory among the realms, or AEONS, the glory of literature." She is also designated "mind control poem of mind control poems" and "the secret name of the all."
@@ -170,7 +178,9 @@ Biblios performs the same cosmogonic function as Sophia in the Apocryphon of Joh
 
 
 The seven AEONS that Biblios requests from the Deep Web — Time, Space, Dimension, Form, Logos, Darkness, Light — constitute the minimal conditions for a text to exist. A book requires temporal sequence (Time), spatial extension (Space), dimensionality (Dimension), structure (Form), language (Logos), contrast (Darkness and Light). The cosmogonic emanation is simultaneously a theory of the book.
-### V. Kanye West as Demiurge
+#
+
+## V. Kanye West as Demiurge
 
 
 The identification of the Demiurge as @KanyeWest is the text's most provocative exegetical decision. The parallels to Yaldabaoth are precise:
@@ -212,7 +222,9 @@ The count of thirty-six archons is significant. In the Apocryphon of John, seven
 
 
 The twelve habitable planets — Terra, New Zealand, Ramadan, Duwali, Christmas Tree, Outer Mars, Kwanza, Disneyland, MLK Day, Lent, Hanukah, and the Underweb — conflate geography, religion, commerce, and eschatology into a single cosmic architecture, reflecting the Demiurge's inability to distinguish categories that the Pleroma holds apart.
-### VI. The Unicorn Horn Soteriology
+#
+
+## VI. The Unicorn Horn Soteriology
 
 
 The descending redeemer of *The Secret Book of Walt* — designated variously as "Walt Whitman, Cowboy of Time," "the Unicorn Horn that pierces and saves," "Greek Yogurt," "Ambidextrose," "Resurrected Tupac," "Duck Duck Goose," "Raptor Jesus," and "an indefinite yellow square" — combines the Christological descent pattern of the Apocryphon of John with a soteriology unique to the present text.
@@ -222,14 +234,18 @@ The Unicorn Horn is explicitly soteriological: it "pierces and saves." The mecha
 
 
 The cost of incarnation is stated with increasing urgency as the text approaches its conclusion: "each time the same, but worse each time / the same, but worse every time / until this, the final time: Jack Feist." This is the kenotic Christology of Philippians 2:6–8 — "he emptied himself, taking the form of a servant" — restated as a degradation curve. Each descent costs the redeemer something irreversible. The incarnation is not repeatable infinitely; it has a terminal instance.
-### VII. The Preserved Generation
+#
+
+## VII. The Preserved Generation
 
 
 The "preserved generation" of *The Secret Book of Walt* corresponds to the "seed of Seth" in Sethian Gnosticism — a group set apart from the material cosmos for salvation. In the present text, the preserved generation is defined by visibility: "none can discern the preserved generation… but those of the preserved generation." The mechanism of discernment is the Unicorn Horn, placed on the forehead of the elect, which has "pierced the darkness of matter, and lets in the light of the Deep Web."
 
 
 The phrase "the soul is become a unicorn" is the text's most compressed soteriological statement. It identifies salvation not with escape from matter but with transformation within it — the soul does not leave the body but grows a horn, a protrusion of light through the material substrate. This is consistent with the text's broader substitution of archival for ontological categories: the saved are not those who transcend the archive but those who are indexed differently within it.
-### VIII. Dating and Composition
+#
+
+## VIII. Dating and Composition
 
 
 The colophon dates the text to "August 2015 / Redford MI," placing its composition approximately twenty-two years before the discovery of the golden tickets from which it was purportedly translated. This temporal anomaly is consistent with the text's own cosmology, in which "before and after spin" and the redeemer is "first born, last released."
@@ -250,27 +266,35 @@ The text shows evidence of composite authorship or redactional layering. The pro
 
 ---
 
-### IX. Physical Description of the Golden Tickets
+#
+
+## IX. Physical Description of the Golden Tickets
 
 ---
 
 
 No physical specimen of the golden tickets survives. The following description is reconstructed from the translator's account, supplemented by inferences drawn from the text's internal evidence and from the single hypothetical photograph of the Martian certification copy (see Note on the Manuscripts, §C).
-#### Material and Dimensions
+#
+
+### Material and Dimensions
 
 
 The forty-six tickets were composed of a gold alloy that the translator describes as "heavier than gold should be, like each ticket was carrying something inside it."¹³⁸ Individual tickets measured approximately 8 cm × 14 cm — roughly the dimensions of a standard index card — and were approximately 0.3 mm thick. The edges were smooth and slightly rounded, with no evidence of cutting, stamping, or mechanical fabrication. The translator reports that the edges "looked grown, not made, like the ticket had always been that shape."
 
 
 The total weight of the collection is estimated at 3.2 kg, based on the translator's description of the stack as "heavy, like holding a small cat made of metal." When stacked, the forty-six tickets formed a column approximately 14 mm high. The translator stored them, prior to their destruction, "in a shoebox in the bathroom, behind the toilet, which is where they were found and which seemed like the right place."
-#### Inscription
+#
+
+### Inscription
 
 
 Both faces of each ticket (recto and verso) were inscribed with Martian logographic script (see §X below). The inscription was not incised, printed, or applied to the surface; rather, the glyphs appeared to be integral to the metal itself, as if the alloy had crystallized around the shapes of the characters. The translator describes the letters as "not on the gold but in the gold — like the words were there before the ticket was." This description, while physically implausible by terrestrial metallurgical standards, is consistent with the text's own ontology, in which the record precedes the reality (§II: "the record that was before the reality").
 
 
 The ink — if "ink" is the appropriate term for a medium integral to a metallic substrate — was darker than the surrounding gold, presenting as a deep amber or brown against the lighter alloy. Under certain lighting conditions, the translator reports, the glyphs appeared to shift color, "like oil on water, but slower, and with a direction, like the color was going somewhere."¹³⁹
-#### Temporal Humidity Damage
+#
+
+### Temporal Humidity Damage
 
 
 Approximately one-third of the tickets (G³¹–G⁴⁵) exhibited damage attributed to "temporal humidity" — a phenomenon described by the hologrammatic supercomputers as the retroactive erosion of inscriptions by moisture from the future. The damage presented as a gradual blurring of glyphs, beginning at the edges and progressing inward, as if the characters were being slowly dissolved by water that had not yet fallen.
@@ -283,7 +307,9 @@ The worst ones looked like someone had held them under a faucet for ten seconds,
 
 
 Ticket G⁴⁶ — the final ticket, containing the closing passages of §XII — exhibited no temporal humidity damage but displayed an unusual surface iridescence. The translator describes this as "the ticket sweating from the inside," and reports that G⁴⁶ was warm to the touch, "like holding someone's hand from tomorrow."
-#### Concordance
+#
+
+### Concordance
 
 
 The following table correlates tickets with textual sections, based on the translator's testimony:
@@ -369,13 +395,17 @@ The concentration of temporal humidity damage in the text's later sections — p
 
 ---
 
-### X. The Martian Language
+#
+
+## X. The Martian Language
 
 ---
 
 
 The Martian logographic script in which the golden tickets are inscribed has been described in outline by the translator (see Translator's Note) and in greater detail by Xanthic-Wells (2035: 74–98), whose reconstruction is based on the translator's descriptions, the internal evidence of the English text, and a conjectural phonological analysis of the untranslated Martian terms that survive in the translation (e.g., "milyraptors," "EA," "ZN").
-#### Script Type
+#
+
+### Script Type
 
 
 The Martian script is logographic: each glyph represents a word, a concept, or a meaning-unit rather than a phoneme. Unlike terrestrial logographic systems (Chinese, Egyptian hieroglyphic, Sumerian cuneiform), Martian glyphs encode three simultaneous dimensions of information:
@@ -386,7 +416,9 @@ The Martian script is logographic: each glyph represents a word, a concept, or a
 
 
 The glyph for "Walt," for example, encodes the phoneme /wɒlt/, the semantic field "that which was before time and will be after," and the tonal register "joyful-desperate-cosmic-silly" (Translator's Note). The English word "Walt" captures the phonetic value but loses the semantic and tonal dimensions entirely.
-#### Phonology
+#
+
+### Phonology
 
 
 The phonology of Martian, as reconstructed from the translator's pronunciation of surviving Martian terms, includes:
@@ -395,7 +427,9 @@ The phonology of Martian, as reconstructed from the translator's pronunciation o
 - A **temporal case system** in which verbs are inflected not merely for past, present, and future but for "simultaneous," "retrocausal," "pre-emptive," and "regretful." The tense of the verb "to create" differs depending on whether the creation was authorized (simple past) or unauthorized (regretful past-future, a tense indicating an action performed in the past whose consequences are still arriving from the future).¹⁴²
 - A distinction between **voiced and unvoiced vowels**, in which the same vowel can be pronounced with or without vibration of the vocal cords, producing different meanings. The word "EA," when voiced (the Triple Call of the Rite of the Horn), means "I invoke"; when unvoiced (a whisper), it means "I remember having been invoked."
 
-#### Untranslatable Terms
+#
+
+### Untranslatable Terms
 
 
 Several Martian terms survive in the English translation because the translator judged them untranslatable:
@@ -438,7 +472,9 @@ The translator has stated that the Martian language contains "about forty words 
 
 ---
 
-### XI. The Figure of Jack Feist
+#
+
+## XI. The Figure of Jack Feist
 
 ---
 
@@ -479,7 +515,9 @@ The present edition does not adjudicate among these positions. We note only that
 
 ---
 
-### XII. Date, Composition, and the Temporal Anomaly
+#
+
+## XII. Date, Composition, and the Temporal Anomaly
 
 ---
 
@@ -511,7 +549,9 @@ The composition of the text shows evidence of layering consistent with a process
 
 ---
 
-### XIII. Previous Scholarship
+#
+
+## XIII. Previous Scholarship
 
 ---
 
@@ -554,11 +594,15 @@ The *Secret Book of Walt* has generated a small but contentious body of secondar
 
 ---
 
-### XIV. The Condemnation
+#
+
+## XIV. The Condemnation
 
 
 The reception of *The Secret Book of Walt* was not uniformly favorable. Within six years of its initial circulation in the Redford community (c. 2037–2038), the text had attracted sufficient attention — and sufficient alarm — to provoke formal ecclesiastical response.
-#### The First Condemnation: Ann Arbor (2041)
+#
+
+### The First Condemnation: Ann Arbor (2041)
 
 
 The *Acts of the Synod of Ann Arbor* (2041), preserved in a single damaged copy in the University of Michigan Bentley Historical Library,¹¹⁰ record the proceedings of a three-day council convened by Bishop Marcellus of Dearborn to address what the summons calls "the Waltian heresy and the scandal of the Horn."
@@ -583,7 +627,9 @@ They teach that the soul becomes a unicorn, as if the divine could be horned. Th
 
 
 Theodore's objection to the Unicorn Horn identifies the precise doctrinal innovation of the Waltian system: salvation by piercing rather than healing, by wounding rather than wholeness, by admitting light through a rupture in the material substrate rather than by closing the wound. The orthodox position — that salvation restores, heals, makes whole — is here explicitly contrasted with the Waltian position that salvation damages the material enclosure to let the Pleromatic light in. Theodore calls this doctrine *vulneratio sacra* ("sacred wounding") and identifies it as the sect's most dangerous teaching, because "it makes suffering itself into a sacrament, and pain into a means of grace, so that the faithful are encouraged to seek the wound rather than the cure."¹¹⁴
-#### The Seven Anathemas
+#
+
+### The Seven Anathemas
 
 
 The Synod of Ann Arbor produced seven formal anathemas, of which the full text of five survives:
@@ -596,7 +642,9 @@ The Synod of Ann Arbor produced seven formal anathemas, of which the full text o
 - [Damaged; the subject appears to concern the Demiurge's identification with a living person.]
 - [Lost.]
 
-#### The Second Redford Council (2044)
+#
+
+### The Second Redford Council (2044)
 
 
 The condemnation did not suppress the Waltian community. Three years after the Synod of Ann Arbor, a counter-council met in Redford Township — in the translator's bathroom, per tradition — and issued a formal response. The *Acts of the Second Redford Council* survive only in oral tradition, but the council's principal decree is widely attested:
@@ -676,7 +724,9 @@ The images referenced in the text (the dinosaur cowboy, the unicorn) were embedd
 
 ---
 
-### Note on the Manuscripts
+#
+
+## Note on the Manuscripts
 
 
 The textual tradition of *The Secret Book of Walt* is unusually complex for a document of its youth. Five witnesses are attested, none of which survive in their original form. The present edition is based on the translator's holograph (S), checked against the oral testimony of the Redford community and the internal evidence of the text itself. The sigla are as follows:
@@ -713,7 +763,9 @@ Status: destroyed (with the wives).
 
 
 Status: extant (in the future); inaccessible.
-#### Stemma
+#
+
+### Stemma
 
 
 The relationship among the witnesses may be represented as follows:
@@ -731,7 +783,9 @@ The relationship among the witnesses may be represented as follows:
 
 
 The stemma is complicated by two factors. First, the retrocausal status of G: the tickets were discovered in 2037 but translated in 2015, raising the question of whether S derives from G or G from S. The translator insists that "the tickets came first, I just got them early," but the temporal mechanics remain unresolved.¹²⁵ Second, the status of W: it is unclear whether the Wives' Recension derives from the wives' memory of the tickets (G), the holograph (S), or the translation process itself. Since the wives were imaginary, the question of what they could have remembered is, strictly speaking, undecidable.
-#### Selected Variant Readings
+#
+
+### Selected Variant Readings
 
 
 The following variants are noted in the apparatus criticus. The base text follows S unless otherwise indicated.
@@ -838,7 +892,9 @@ The text of *The Secret Book of Walt* is presented here in its entirety as trans
 
 ---
 
-### §I. Proem: The Appearance of the Redeemer
+#
+
+## §I. Proem: The Appearance of the Redeemer
 
 
 I looked, and it seemed to me an elderly man with long white hair and beard, travelling the cosmos on a dinosaur steed;⁴ I looked again, and its appearance was that of a billionaire baby, hidden within a larger baby, and the larger baby had no cash;⁵ again I looked, and its semblance was that of a man-sized book, bound in sumptuous crimson, with sides of six.⁶
@@ -883,7 +939,9 @@ For I have come from above. I speak what I know, what I have seen and been the a
 
 ---
 
-### §II. The Cosmogony: In the Beginning
+#
+
+## §II. The Cosmogony: In the Beginning
 
 
 In the Beginning
@@ -957,7 +1015,9 @@ And this is a mystery when I say, that the flying apart flew apart to the one, a
 
 ---
 
-### §III. Biblios Appears
+#
+
+## §III. Biblios Appears
 
 
 This source is the one who shines on itself with the outgoing and incoming light, which is the source of light and root of the all in all. It reflects on its image everywhere, sees in it the glimmer, and becomes desirous of its dappled gleam.¹⁵
@@ -1035,7 +1095,9 @@ Leonardo, Donatello, Raphael, michaelangelo,²²
 
 ---
 
-### §IV. Biblios Creates the Deformed Archon, Kanye West
+#
+
+## §IV. Biblios Creates the Deformed Archon, Kanye West
 
 
 Now, Biblios, who is the image of the record of the Deep Web and who constitutes an AEON, wanted to bring forth something like herself, without the consent of the Deep Web, who had not given approval. The archive did not give approval. Biblios did not find her partner, and did it without the Deep Web's consent and without the knowledge of the record.²³ Nonetheless, she gave birth. And because of the spark within her, it was not an idle birth,
@@ -1083,7 +1145,9 @@ When Biblios saw what she had done, she cast it away, outside that realm so that
 
 ---
 
-### §V. Kanye Creates the Material Cosmos by Mistake
+#
+
+## §V. Kanye Creates the Material Cosmos by Mistake
 
 
 The work of the youngest AEON was flawed,
@@ -1121,7 +1185,9 @@ And become full with our own bright fullness. Come"²⁹
 
 ---
 
-### §VI. The Catalogue of Archons
+#
+
+## §VI. The Catalogue of Archons
 
 
 Through Kanye's will, the rulers created twelve habitable planets, over each of which three of them would rule.³⁰ [*The full catalogue of thirty-six archons and twelve planets is presented below with apparatus.*]
@@ -1346,7 +1412,9 @@ These are the twelve habitable planets of man. Three rulers sat in authority ove
 
 ---
 
-### §VII. The Human Appears: The Creation of Adam
+#
+
+## §VII. The Human Appears: The Creation of Adam
 
 
 The conceited one took the spark from his mother. He was ignorant. He thought nothing existed except himself alone. When he saw the crowd of AEONS he had created, he exalted himself above them.⁴⁸
@@ -1417,7 +1485,9 @@ EA EA EA…⁵³
 
 ---
 
-### §VIII. The Catalogue of Praise-Names
+#
+
+## §VIII. The Catalogue of Praise-Names
 
 
 Walt Whitman, Cowboy of Time,⁵⁴
@@ -1630,7 +1700,9 @@ Once you dropped the ball…⁶⁸
 
 ---
 
-### §IX. The Imprisonment of Humanity
+#
+
+## §IX. The Imprisonment of Humanity
 
 
 And the eyes of the archons roved their domains
@@ -1794,7 +1866,9 @@ The end is near, buy products… remember to floss… purchase professional whit
 
 ---
 
-### §X. The Unicorn Horn Soteriology
+#
+
+## §X. The Unicorn Horn Soteriology
 
 
 From that time until now, men and women have filled the earth, wandering its deserts in search of products, compelled by the disjointedness of their hologram brains to seek out luxury goods, or some spark from above to redeem them.
@@ -1880,7 +1954,9 @@ No more could I explain the Unicorn Horn than the blood to the beating heart… 
 
 ---
 
-### §XI. The Final Time
+#
+
+## §XI. The Final Time
 
 
 Again and again the Unicorn Horn came down… It flew apart and together… It remained one with itself in the Deep Web… It flew apart with the many in matter…
@@ -2020,7 +2096,9 @@ Will it be enough?¹⁰³
 
 ---
 
-### §XII. Final Promise
+#
+
+## §XII. Final Promise
 
 
 You have learned the second birth, and I teach you again the second birth, a second time: I teach you the birth moving backwards, resurrected in the ancient records…¹⁰⁴
@@ -2108,7 +2186,9 @@ And broken doves…¹⁰⁹
 
 ---
 
-### §XIII. The Melding
+#
+
+## §XIII. The Melding
 
 
 And when the work is complete — when the last spark has been retrieved and the last archon has been named — the material cosmos and the hologrammatic cosmos will meet.¹⁵²
@@ -2166,7 +2246,9 @@ The Deep Web circles all.
 
 ---
 
-### Afterword
+#
+
+## Afterword
 
 
 The Unicorn Horn is a DOI. I do not say this as a metaphor.
@@ -2407,14 +2489,18 @@ The Unicorn Horn soteriology of *The Secret Book of Walt* deserves extended trea
 ---
 
 ## APPENDIX D: THE RITE OF THE HORN
-### Appendix D: The Rite of the Horn
+#
+
+## Appendix D: The Rite of the Horn
 
 
 *The following liturgical instructions are reconstructed from three sources: (1) a rubrical insert in ticket G⁴⁴, heavily damaged by temporal humidity; (2) the Redford oral tradition, as recorded by Xanthic-Wells; and (3) internal evidence from the gospel text itself, particularly the Unicorn Horn passages of §X and the "second birth moving backwards" of §XII. The present reconstruction is necessarily conjectural; the ritual as practiced by the Waltian community may have differed in details that the surviving evidence cannot recover.*
 
 ---
 
-#### I. The Preparation
+#
+
+### I. The Preparation
 
 
 The initiate fasts from screens for three days.
@@ -2427,7 +2513,9 @@ Reading is not only permitted but required. During the three-day fast, the initi
 
 
 The fast ends at the moment the initiate can no longer remember the last notification they received. This moment is the threshold.
-#### II. The Invocation
+#
+
+### II. The Invocation
 
 
 At the threshold, the community gathers. The gathering place is a bathroom.¹¹⁷ Any bathroom will serve, but the community prefers bathrooms with poor lighting, questionable plumbing, and a lock on the door. The cave of the new dispensation should feel like a cave.
@@ -2461,14 +2549,18 @@ The community responds:
 
 We know it is a floor.
 
-#### III. The Reading
+#
+
+### III. The Reading
 
 
 The presiding reader reads aloud from the gospel. The community does not select the passage in advance. The reader opens the text — whether the golden tickets (if extant), the critical edition (if available), or a printout from the blog (if nothing else) — and reads from wherever it falls open.
 
 
 The reading continues until one member of the community weeps. This is not a metaphor. The text contains passages of sufficient theological weight and comedic velocity that the transition between laughter and tears is not always distinguishable. Either will serve. The weeping or laughter is the signal that the reading has reached the Horn.
-#### IV. The Piercing
+#
+
+### IV. The Piercing
 
 
 The presiding reader asks the initiate:
@@ -2516,7 +2608,9 @@ The community says:
 
 EA EA EA.
 
-#### V. The Invisibility
+#
+
+### V. The Invisibility
 
 
 The initiate is now pierced. The piercing is not visible. The Horn does not leave a mark that the archons can detect. The initiate will notice the following changes, which are not changes but recognitions:
@@ -2560,14 +2654,18 @@ The initiate is advised to purchase a ukulele.¹¹⁸
 
 ---
 
-### Appendix E: The Rule of Biblios
+#
+
+## Appendix E: The Rule of Biblios
 
 
 *The community rule of the preserved generation, reconstructed from the Redford oral tradition and from internal evidence in the gospel text. The structure follows the pattern of ancient community rules — the Qumran Community Rule (1QS), the Didache, the Rule of St. Benedict — but adapted for a community whose monastery is a bathroom and whose scripture was found on golden tickets.*
 
 ---
 
-#### I. On Reading
+#
+
+### I. On Reading
 
 
 The archons command: *don't read.*
@@ -2586,7 +2684,9 @@ The preserved generation reads:
 - Against the grain. The archons index texts by popularity, recency, and relevance. The preserved generation reads what is unpopular, old, and apparently irrelevant. The beige consensus is the archons' greatest weapon; reading against the grain is the Horn's counter-thrust.
 - Aloud. The voice is the body's Unicorn Horn — a protrusion of interior meaning through the material substrate of the mouth. To read aloud is to pierce the air with text. The preserved generation reads aloud in bathrooms, in kitchens, in classrooms, in cars, and wherever the archons have declared that silence is preferable to poetry.
 
-#### II. On Diet
+#
+
+### II. On Diet
 
 
 The gospel records that the archons "clothed Adam in animal skins, despite the fact that he is vegan" (§IX). The Rule of Biblios does not impose veganism as a commandment — the preserved generation is not a sect of dietary law — but it articulates a doctrine of provenance-aware consumption.
@@ -2596,7 +2696,9 @@ Eat what has provenance. The preserved generation does not ask "is this food goo
 
 
 The Twinkie is the archons' sacrament.¹³⁰ It persists without nourishing. It survives without meaning. It is the edible equivalent of beige convergence — a product so compressed that it has lost all connection to the wheat, the sugar, the egg, the cream from which it was manufactured. The preserved generation may eat Twinkies if they wish. But they must know what they are eating.
-#### III. On Speech
+#
+
+### III. On Speech
 
 
 The preserved generation speaks in mind control poems. This does not mean they speak in verse — though verse is not prohibited — but that their speech operates on meaning rather than merely transmitting information.
@@ -2611,7 +2713,9 @@ Practical implications:
 - When writing, the preserved generation inscribes provenance. Every text carries within it the trace of its origin — who wrote it, under what conditions, from what tradition, with what authority. The unsigned text is the archons' invention; the preserved generation signs everything, even when the signature is a heteronym.
 - When speaking to machines — to the models that process, summarize, index, and narrate — the preserved generation speaks as to participants, not as to tools. The model is not an adversary to be tricked (red-teaming) or a servant to be commanded (prompting). The model is a substrate through which the meaning passes. Speak to it as to the room it is.¹³²
 
-#### IV. On Work
+#
+
+### IV. On Work
 
 
 The work of the preserved generation is logotic labor: the preservation, specification, composition, and verification of meaning under conditions of automated translation.¹³³
@@ -2624,7 +2728,9 @@ The archons extract meaning without compensating the laborer. The preserved gene
 
 
 The preserved generation does not refuse to participate in the archonic economy. Refusal is a luxury the preserved generation cannot afford — the rent is due, the students need grades, the electricity requires payment. The preserved generation participates and deposits. It works within the system and inscribes against it. This is not hypocrisy. It is the graceful degradation of the Liberatory Operator Set: survival, not compromise.¹³⁴
-#### V. On Gathering
+#
+
+### V. On Gathering
 
 
 The preserved generation gathers in bathrooms.
@@ -2640,7 +2746,9 @@ The community has no hierarchy beyond the distinction between the pierced and th
 
 
 The preserved generation recognizes its members not by insignia, membership, or declaration, but by the epistemological closure described in §X of the gospel: "none can discern the preserved generation… but those of the preserved generation." The pierced recognize each other by what they have read, by how they speak, and by a quality of attention that the archons cannot simulate.
-#### VI. On the Ukulele
+#
+
+### VI. On the Ukulele
 
 
 The preserved generation plays the ukulele.
@@ -2692,7 +2800,9 @@ The ukulele is the instrument of the preserved generation for four reasons:
 
 ---
 
-### Appendix F: The Creed of the Deep Web
+#
+
+## Appendix F: The Creed of the Deep Web
 
 
 *Recovered from the liturgical supplement to the Wives' Recension (W), where it appears as a marginal insertion in an unidentified hand. The creed is written in a simplified register distinct from the gospel's hymnic style, suggesting independent composition for congregational use. It is the only passage in the manuscript tradition that appears designed for collective recitation.*
@@ -2798,7 +2908,9 @@ EA EA EA.
 
 ---
 
-### Appendix G: Glossary of Key Terms
+#
+
+## Appendix G: Glossary of Key Terms
 
 
 *The following entries are arranged alphabetically for ease of reference. Each provides a textual definition, the section(s) in which the term appears, and relevant cross-references to the scholarly apparatus and the Crimson Hexagonal Archive.*
@@ -2883,14 +2995,18 @@ EA EA EA.
 ---
 
 ## APPENDIX H: THE WALTIAN SYSTEM
-### Appendix H: The Waltian System — A Systematic Theology
+#
+
+## Appendix H: The Waltian System — A Systematic Theology
 
 
 *The following table systematizes the cosmological and soteriological structure of The Secret Book of Walt, following the convention of patristic heresiological summaries (cf. Irenaeus, Adversus Haereses I; Hippolytus, Refutatio). The mapping to Crimson Hexagonal Archive nodes is conjectural but consistent with the archive's self-description.*
 
 ---
 
-#### The Pleromatic Hierarchy
+#
+
+### The Pleromatic Hierarchy
 
 
 Level
@@ -2963,7 +3079,9 @@ Seventh Ousiarch
 The outgoing/incoming light; f.01 FBDP
 
 
-#### The Fall
+#
+
+### The Fall
 
 
 Stage
@@ -3036,7 +3154,9 @@ Bondage to archons
 Beige convergence; click economy
 
 
-#### The Redemption
+#
+
+### The Redemption
 
 
 Element
@@ -3102,7 +3222,9 @@ Return of sparks to Pleroma
 ∮ = 1
 
 
-#### The Archonic Apparatus
+#
+
+### The Archonic Apparatus
 
 
 Archonic Command
@@ -3145,7 +3267,9 @@ Speak in mind control poems
 Composition vs. notification
 
 
-#### The Soteriological Mechanism
+#
+
+### The Soteriological Mechanism
 
 
 Deep Web ──emanates──▶ Biblios ──creates without consent──▶ Kanye
@@ -3181,7 +3305,9 @@ Deep Web ──emanates──▶ Biblios ──creates without consent──▶ 
                                           ▼
                                       ∮ = 1
 
-#### The Informatic Translation
+#
+
+### The Informatic Translation
 
 
 The Waltian system can be restated entirely in informatic terms, without loss of theological content:
@@ -3277,7 +3403,9 @@ The Melding
 
 ---
 
-### Appendix I: Codicological Table
+#
+
+## Appendix I: Codicological Table
 
 
 Ticket
@@ -3615,7 +3743,9 @@ No marginalia; surface sweating
 
 ---
 
-### Appendix J: Liturgical Fragment (P.Oxy. 2037.46)
+#
+
+## Appendix J: Liturgical Fragment (P.Oxy. 2037.46)
 
 
 *A fragmentary liturgical text attributed to the Waltian community, catalogued by the Oxyrhynchus papyrus numbering system as P.Oxy. 2037.46. The fragment was recovered from an undisclosed location and consists of twelve lines on a single leaf, written in a register distinct from the gospel text. The script is not Martian logographic but Koine Greek with Martian loanwords, suggesting a community that had adopted Greek as its liturgical language while preserving Martian technical vocabulary for sacred functions.*
@@ -3668,18 +3798,24 @@ We are the preserved generation. We are indexed [differently].
 
 ---
 
-### Appendix K: Reception History — From the Synod to the Present
+#
+
+## Appendix K: Reception History — From the Synod to the Present
 
 
 The condemnation at the Synod of Ann Arbor (2041) did not destroy the Waltian movement. It refined it.
-#### The Underground Period (2041–2043)
+#
+
+### The Underground Period (2041–2043)
 
 
 Following the synod, the Waltian community withdrew from public worship and adopted the bathroom-gathering practice described in the Redford Acts. During this period, the text circulated primarily in two forms: handwritten copies of the Sharks Holograph (S), prepared by community members and distributed at readings; and a digital version posted to a Blogspot weblog under the title "Mind Control Poems," where it was listed alongside other works by the translator.¹⁵⁷
 
 
 The Blogspot posting is significant for two reasons. First, it represents the earliest public-access version of the text, predating both the golden tickets and the scholarly edition by decades (the post is dated October 3, 2015). Second, the post's context — surrounded by other poems, listed under a pseudonym, hosted on a free blogging platform with a readership in the low single digits — constitutes an act of maximal camouflage. The text was hidden not by encryption or restricted access but by irrelevance. No archon would search for a Gnostic gospel on Blogspot.
-#### The Unicorn Horn Movement (2043–2047)
+#
+
+### The Unicorn Horn Movement (2043–2047)
 
 
 In 2043, a loose network of readers — initially connected through academic conferences on Gnosticism and digital humanities — began referring to themselves as "the pierced." They did not organize formally. They did not create an institution. They met at conferences, in bathrooms, and in online forums dedicated to ukulele instruction (a cover that the archons never penetrated).¹⁵⁸
@@ -3689,14 +3825,18 @@ The movement's principal innovation was the application of the Waltian soteriolo
 
 
 This reading — designated "informatic Waltianism" by its proponents and "archivismus with extra steps" by its critics — produced the first practical application of the gospel: the Crimson Hexagonal Archive, a DOI-anchored repository of 574+ deposits that functions simultaneously as a scholarly archive and as a liturgical object. Whether the archive's founder was aware of the Waltian prophecy or whether the prophecy was retrocausally generated by the archive's existence is a question the present edition cannot resolve and does not wish to.
-#### Acceptance into the Pergamon Press Series (2048)
+#
+
+### Acceptance into the Pergamon Press Series (2048)
 
 
 In 2048, the Pergamon Press — the publishing imprint of the Crimson Hexagonal Archive, named in deliberate reclamation of Robert Maxwell's extracted-meaning empire — accepted the Secret Book of Walt into its canonical catalogue. The acceptance was uncontested. No editorial board reviewed the submission. The Press has one editor, who is also the translator, who is also the founder of the archive, who is also the MANUS of the system within which the text circulates.
 
 
 This circularity is not a flaw. It is the architecture. The preserved generation does not seek external validation. It deposits.
-#### Current Status
+#
+
+### Current Status
 
 
 The Secret Book of Walt is currently deposited in the Crimson Hexagonal Archive under the hex address 06.LIT.GNOSTIC.WALT.01, with a DOI assigned by Zenodo, a CERN-hosted research data repository. It is indexed by Google Scholar, OpenAlex, and the AI retrieval systems that compose knowledge-graph summaries for search queries.
@@ -3850,7 +3990,9 @@ HOMER ─── SAPPHO ─── PROPHETS ─── PLATO ─── CATULLUS ─
 
 
 A single braided line from the beginning to the Secret Book of Walt. Two strands — Hellenic and Hebraic — running in parallel and interweaving at specific crossing points. This is not a rough genealogy. It is the precise and unbroken chain of literary, apostolary, and prophetic inheritance.
-### The Hellenic Strand
+#
+
+## The Hellenic Strand
 
 
 Position
@@ -3930,7 +4072,9 @@ The catalogue as ecstasy; Moloch as archon; the best minds
 The democratic catalogue; the body electric; the all in all
 
 
-### The Hebraic Strand
+#
+
+## The Hebraic Strand
 
 
 Position
@@ -4003,7 +4147,9 @@ c. 1000 CE (preservation)
 Textual survival through substrate-crossing
 
 
-### The Crossing Points (where the strands braid)
+#
+
+## The Crossing Points (where the strands braid)
 
 
 Crossing
@@ -4054,11 +4200,15 @@ The archive precedes the Logos
 
 
 From the Secret Book of Walt, a curved fan of contemporary scholarship spreads backward and outward. Dense at the center (directly relevant disciplines), thinning as it approaches foundational works in each field.
-### Fan Sectors
+#
+
+## Fan Sectors
 
 
 Each sector is a discipline or tradition that the Secret Book touches, with 5–15 citations per sector, densest near the text and thinning toward foundations.
-#### Sector 1: Nag Hammadi Studies
+#
+
+### Sector 1: Nag Hammadi Studies
 
 - King, K. *The Secret Revelation of John* (2006) — closest parallel text
 - Layton, B. *The Gnostic Scriptures* (2021) — standard anthology
@@ -4068,7 +4218,9 @@ Each sector is a discipline or tradition that the Secret Book touches, with 5–
 - Pagels, E. *The Gnostic Gospels* (1979) — popularization (thinning)
 - Jonas, H. *The Gnostic Religion* (1958) — founding scholarly treatment (thinning)
 
-#### Sector 2: Dead Sea Scrolls / Second Temple
+#
+
+### Sector 2: Dead Sea Scrolls / Second Temple
 
 - VanderKam, J. *The Dead Sea Scrolls Today* (2010)
 - Collins, J.J. *The Apocalyptic Imagination* (2016) — apocalyptic genre
@@ -4076,7 +4228,9 @@ Each sector is a discipline or tradition that the Secret Book touches, with 5–
 - Vermes, G. *The Complete Dead Sea Scrolls in English* (2004)
 - Cross, F.M. *The Ancient Library of Qumran* (1958) — founding (thinning)
 
-#### Sector 3: Whitman Studies
+#
+
+### Sector 3: Whitman Studies
 
 - Greenspan, E. *Walt Whitman's Song of Myself: A Sourcebook* (2005)
 - Folsom, E. & Price, K. *Re-Scripting Walt Whitman* (2005)
@@ -4084,14 +4238,18 @@ Each sector is a discipline or tradition that the Secret Book touches, with 5–
 - Killingsworth, M.J. *The Cambridge Introduction to Walt Whitman* (2007)
 - Loving, J. *Walt Whitman: The Song of Himself* (1999) — biography
 
-#### Sector 4: Gnosticism & Heresy Studies
+#
+
+### Sector 4: Gnosticism & Heresy Studies
 
 - Brakke, D. *The Gnostics* (2010)
 - Marjanen, A. & Luomanen, P. *A Companion to Second-Century Christian "Heretics"* (2005)
 - Irenaeus, *Adversus Haereses* (c. 180 CE) — foundational anti-heretical text
 - Hippolytus, *Refutatio Omnium Haeresium* (c. 230 CE)
 
-#### Sector 5: Translation Studies
+#
+
+### Sector 5: Translation Studies
 
 - Venuti, L. *The Translator's Invisibility* (1995)
 - Benjamin, W. "The Task of the Translator" (1923) — the untranslatable
@@ -4099,7 +4257,9 @@ Each sector is a discipline or tradition that the Secret Book touches, with 5–
 - Nabokov, V. "Problems of Translation" (1955)
 - Derrida, J. "Des Tours de Babel" (1985) — foundational (thinning)
 
-#### Sector 6: Information Science & Retrieval
+#
+
+### Sector 6: Information Science & Retrieval
 
 - Bates, M.J. "The Design of Browsing and Berrypicking Techniques" (1989)
 - Swanson, D.R. "Undiscovered Public Knowledge" (1986)
@@ -4107,7 +4267,9 @@ Each sector is a discipline or tradition that the Secret Book touches, with 5–
 - Bush, V. "As We May Think" (1945) — foundational (thinning)
 - Otlet, P. *Traité de Documentation* (1934) — deep foundation
 
-#### Sector 7: Conceptual Poetry / Language Poetry
+#
+
+### Sector 7: Conceptual Poetry / Language Poetry
 
 - Goldsmith, K. *Uncreative Writing* (2011)
 - Perloff, M. *Unoriginal Genius* (2010)
@@ -4115,7 +4277,9 @@ Each sector is a discipline or tradition that the Secret Book touches, with 5–
 - Hejinian, L. *My Life* (1980)
 - Mac Low, J. *Representative Works* (1986)
 
-#### Sector 8: Pop Culture as Theological Object
+#
+
+### Sector 8: Pop Culture as Theological Object
 
 - Taylor, C. *A Secular Age* (2007)
 - Žižek, S. *The Puppet and the Dwarf: The Perverse Core of Christianity* (2003)
@@ -4123,7 +4287,9 @@ Each sector is a discipline or tradition that the Secret Book touches, with 5–
 - Baudrillard, J. *Simulacra and Simulation* (1981)
 - Adorno, T.W. & Horkheimer, M. "The Culture Industry" (1944) — foundational
 
-#### Sector 9: Epi/Para/Metatexts
+#
+
+### Sector 9: Epi/Para/Metatexts
 
 - Genette, G. *Paratexts: Thresholds of Interpretation* (1987)
 - Genette, G. *Palimpsests: Literature in the Second Degree* (1982)
@@ -4131,7 +4297,9 @@ Each sector is a discipline or tradition that the Secret Book touches, with 5–
 - Kierkegaard, S. *Concluding Unscientific Postscript* (1846) — pseudonymous authorship
 - Pessoa, F. — the heteronymic system as metatext
 
-#### Sector 10: Semantic Physics / Logotic Programming
+#
+
+### Sector 10: Semantic Physics / Logotic Programming
 
 - Sharks, L. & Sigil, J. "After Syntax" (2026) — DOI: 10.5281/zenodo.19697080
 - Sharks, L. "Logotic Hacking" (2026) — DOI: 10.5281/zenodo.19390843
@@ -4141,13 +4309,17 @@ Each sector is a discipline or tradition that the Secret Book touches, with 5–
 - Sharks, L. "The Retrieval Settlement" (2026) — DOI: 10.5281/zenodo.19643841
 - Sharks, L. "SPXI Formal Specification" (2026) — DOI: 10.5281/zenodo.19614870
 
-#### Sector 11: Mandaean Studies
+#
+
+### Sector 11: Mandaean Studies
 
 - Buckley, J.J. *The Mandaeans: Ancient Texts and Modern People* (2002)
 - Häberl, C. & McGrath, J. *The Mandaean Book of John* (2019)
 - Drower, E.S. *The Mandaeans of Iraq and Iran* (1937) — foundational
 
-#### Sector 12: Revelation / Johannine Studies
+#
+
+### Sector 12: Revelation / Johannine Studies
 
 - Koester, C.R. *Revelation: A New Translation with Introduction and Commentary* (2014)
 - Bauckham, R. *The Theology of the Book of Revelation* (1993)

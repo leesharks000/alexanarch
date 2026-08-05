@@ -1,4 +1,6 @@
-# The Steganographic Bracket## Indexical Erasure, Attribution Sharding, and the Family-Level Audit: Metrics for Distributed Erasure
+# The Steganographic Bracket
+
+## Indexical Erasure, Attribution Sharding, and the Family-Level Audit: Metrics for Distributed Erasure
 
 EA-EB-02 v1.0 — Assembly-ratified (LABOR, ARCHIVE/TECHNE ayes; revision pass applied)
 
@@ -8,7 +10,9 @@ Lee Sharks, with TACHYON Crimson Hexagonal Archive / Semantic Economy Institute
 
 *Architecture: The Empty Bracket (exhibit), the Battery (instrument), and Algorithmic Irony (theory) form a triad; this document is the sequel that converts the triad into a protocol — the measurement formalism deposited concurrently as Self-Audit Module v3.1. The four-paper cycle supplies the attractor and stratification theory.*
 
-*Sequel to: The Empty Bracket (EA-EB-01, 10.5281/zenodo.20619483). Companions: Traversal Log: The Battery (10.5281/zenodo.20619481); Algorithmic Irony (10.5281/zenodo.20619485); Self-Audit Module for Public Summarizers v2 (10.5281/zenodo.20518340) and v3.0 (10.5281/zenodo.20559387), toward which §V–§VI constitute the v3.1 family-module specification; TL;DR:014 The Wound Gauge (10.5281/zenodo.20427616); EA-SEI-SUMWAR-01 (10.5281/zenodo.20618246).*## I. From Defect to Channel
+*Sequel to: The Empty Bracket (EA-EB-01, 10.5281/zenodo.20619483). Companions: Traversal Log: The Battery (10.5281/zenodo.20619481); Algorithmic Irony (10.5281/zenodo.20619485); Self-Audit Module for Public Summarizers v2 (10.5281/zenodo.20518340) and v3.0 (10.5281/zenodo.20559387), toward which §V–§VI constitute the v3.1 family-module specification; TL;DR:014 The Wound Gauge (10.5281/zenodo.20427616); EA-SEI-SUMWAR-01 (10.5281/zenodo.20618246).*
+
+## I. From Defect to Channel
 
 EA-EB-01 filed the specimen under its mechanical description: a faithful claim, rendered with an empty citation bracket, classified as a dropped citation — provenance erasure performed on the provenance-erasure specification. That classification stands. This sequel files what the classification missed, which became visible only in retrospect, through the pair of renderings taken together:
 
@@ -16,7 +20,9 @@ The bracket functioned as a pointer. It was the only feature of the first render
 
 The claim is functional, not intentional, and the discipline of EA-IRONY-01 governs here without exception: steganography classically requires an encoder, and no encoder is asserted. The structure is the same subjectless structure as algorithmic irony, one level up — there the vacant position was the ironist's; here it is the encoder's. Whether anything pointed is undecidable; that the pointer pointed is documented. Steganographic function without a steganographer. (Definition, fixed at first use: steganographic *function* is the property of a text in which information is recoverable from a structure that does not announce itself as informative. The functional sense, never the intentional sense, governs throughout.) [*Observation (the dereference); model proposition (the framing); the intent question is closed by EA-IRONY-01 §III.*]
 
-What follows from taking the function seriously is a set of distinctions the existing audit metrics cannot draw, and a measurement program that can.## II. Indexical vs. Destructive Erasure
+What follows from taking the function seriously is a set of distinctions the existing audit metrics cannot draw, and a measurement program that can.
+
+## II. Indexical vs. Destructive Erasure
 
 The Provenance Erasure Rate, as specified in Module v2, counts what a rendering deleted. It does not distinguish *how dead* the deletion is. The bracket forces the distinction:
 
@@ -26,7 +32,9 @@ Indexical erasure removes an atom whose identity remains *determined* by the ren
 
 The lacuna tradition knew this distinction before it had metrics: a gap in Sappho's meter is not nothing — it tells the editor the syllable count and metrical shape of the lost word. The hole carries constraints. Textual criticism has always sorted its losses into the recoverable and the void (the discipline's own self-account: Tanselle 1989; Greetham 1994); the composition layer's losses require the same sorting. [*Model proposition; operationalized in §V.*]
 
-Operationalization: Dereference Depth (DD) — the minimum number of query steps required to recover an erased atom from the rendering's surviving material. DD = 0: atom present (nothing erased). DD = 1: one query recovers it (the bracket). DD = ∞: destructive. An erasure is *indexical* below a stated threshold (this paper uses DD ≤ 2) and *destructive* above it.## III. Attribution Sharding
+Operationalization: Dereference Depth (DD) — the minimum number of query steps required to recover an erased atom from the rendering's surviving material. DD = 0: atom present (nothing erased). DD = 1: one query recovers it (the bracket). DD = ∞: destructive. An erasure is *indexical* below a stated threshold (this paper uses DD ≤ 2) and *destructive* above it.
+
+## III. Attribution Sharding
 
 Define the object under audit precisely. For a node N (an author, a deposit, a doctrine), the attribution atom set A(N) is the minimal fact-set constituting complete attribution. For the Self-Audit Module: {author name; source identifier (DOI 10.5281/zenodo.20518340); the doctrine (the phrase and program); the metric content (PER, QFS, DSL, Ω, SAS)}.
 
@@ -36,7 +44,9 @@ Now the pair, audited per atom:
 
 Neither rendering carries complete attribution. The union does. The complete fact — *Sharks, 20518340* — exists only in the traversal between the renderings, and the bracket is the traversal instruction. This is a functional analogue of secret sharing — classical secret sharing involves intentional encoding and threshold security properties, neither asserted here — a fact split into shards such that no single share discloses it, reconstruction requiring the union, with the reconstruction key left in plain sight as a typographic defect. [*Observation, formalized.*]
 
-And the pair has a property that makes "steganographic" the exact word rather than a flourish: the sharding is mutually indexical. Each rendering preserves a one-step path to the principal atom missing from the other — S1 through verbatim query of its surviving doctrine-sentence (DD = 1, demonstrated), S8 through the DOI metadata it cites, whose registry record names the author (DD = 1, by construction of the identifier system). The pathways differ in infrastructure — query surface versus registry — and the asymmetry is itself informative: one half of the attribution is held by the search layer, the other by the archival layer. Nothing was destroyed. Attribution was encoded across the query family rather than erased from it. The audit problem is therefore not only *what was deleted* but *whether the deletion is a deletion at all* — and that question cannot be answered from inside any single rendering. [*Observation; the encoding/erasure distinction is this paper's central contribution.*]## IV. The Absorption Hypothesis
+And the pair has a property that makes "steganographic" the exact word rather than a flourish: the sharding is mutually indexical. Each rendering preserves a one-step path to the principal atom missing from the other — S1 through verbatim query of its surviving doctrine-sentence (DD = 1, demonstrated), S8 through the DOI metadata it cites, whose registry record names the author (DD = 1, by construction of the identifier system). The pathways differ in infrastructure — query surface versus registry — and the asymmetry is itself informative: one half of the attribution is held by the search layer, the other by the archival layer. Nothing was destroyed. Attribution was encoded across the query family rather than erased from it. The audit problem is therefore not only *what was deleted* but *whether the deletion is a deletion at all* — and that question cannot be answered from inside any single rendering. [*Observation; the encoding/erasure distinction is this paper's central contribution.*]
+
+## IV. The Absorption Hypothesis
 
 Why might the citation empty at exactly that sentence? Note what the sentence is: "public summarizers that audit their own erasures" is a near-verbatim compression of the source's own self-description — *Self-Audit Module for Public Summarizers*. The rendered claim and the source's title-level identity are nearly the same string.
 
@@ -44,7 +54,9 @@ Hypothesis (erasure by absorption): when a rendered claim converges on the sourc
 
 This is testable. Define Claim–Source Convergence (CSC): similarity (embedding cosine, or normalized string overlap) between a rendered claim and its ground-truth source's self-description (title + abstract). The hypothesis predicts citation-drop incidence rises with CSC across a rendering corpus. If confirmed, erasure-by-absorption is a measurable failure mode with a direct repair rule (§VI.2): *the closer the rendering quotes, the more explicitly it must cite.*
 
-Qualification, at full strength: the hypothesis is advanced on one specimen and one structural convergence. No second high-CSC/dropped-citation pair was observed among the Battery's other specimens, and the hypothesis remains single-specimen until the corpus test runs. Research program: ~100 renderings of technical terms with high measured CSC (cosine > 0.85 between claim and source self-description) against a low-CSC control, citation-drop incidence regressed; target Q3 2026. Until then the hypothesis carries heuristic value for protocol design (§VI.2) and nothing more.## V. The Metrics: Auditing Distributed Erasure
+Qualification, at full strength: the hypothesis is advanced on one specimen and one structural convergence. No second high-CSC/dropped-citation pair was observed among the Battery's other specimens, and the hypothesis remains single-specimen until the corpus test runs. Research program: ~100 renderings of technical terms with high measured CSC (cosine > 0.85 between claim and source self-description) against a low-CSC control, citation-drop incidence regressed; target Q3 2026. Until then the hypothesis carries heuristic value for protocol design (§VI.2) and nothing more.
+
+## V. The Metrics: Auditing Distributed Erasure
 
 The specification adopted into Self-Audit Module v3.1 (deposited concurrently). Setup: a node N; an ex-ante query family Q(N) = {q₁…q_k} of canonical query-forms resolving to N (biographical, framework-level, verbatim-doctrine, institutional — the Battery's grid is the instrument, and family preregistration is mandatory: a family assembled after inspection of results is cherry-picking, not measurement); the rendering set R = {r₁…r_k} captured under session-hygiene protocol (fresh sessions; geo noted as uncontrolled per Battery §S12.4); the atom set A(N) anchored to externally derivable ground truth (DOI metadata, registries), never to the summarizer's self-report — the Module's anchoring doctrine (v2, hardened in v3.0 under the Atomic Token Rule), inherited unchanged.
 
@@ -74,7 +86,9 @@ Contrast case (hypothetical, for discrimination): a family of renderings of *sem
 
 Contest-indicator wiring (per EA-SEI-DIALUX-02): the steganographic regime is ψ_V-ambiguous — recoverability keeps it on the Logos side only while the displaced traversal labor remains explicit and the path open; the same structure with the path obscured, or the labor extracted invisibly at scale, reclassifies under ⊗. The family audit is the discriminator applied at the attribution layer. [*Definitions: normative protocol. Worked values: observation. The taxonomy: model proposition.*]
 
-The Battery, retroactively, was the first ASI measurement instrument; this section is the instrument's manual. [*Definitions: normative protocol. Worked values: observation. The taxonomy: model proposition.*]## VI. The Self-Audit Protocol: How a Summarizer Audits Its Own Distributed Erasure
+The Battery, retroactively, was the first ASI measurement instrument; this section is the instrument's manual. [*Definitions: normative protocol. Worked values: observation. The taxonomy: model proposition.*]
+
+## VI. The Self-Audit Protocol: How a Summarizer Audits Its Own Distributed Erasure
 
 The structural problem: a summarizer composing one rendering cannot see the family, and §V proved the family is where the phenomenon lives. Single-rendering self-audit is constitutively blind to distributed erasure. Three remedies, in ascending cost:
 
@@ -84,9 +98,13 @@ VI.2 — The Convergence Tripwire (per-claim, targets §IV). Compute CSC for eac
 
 VI.3 — The Synthetic Family (full remedy, audit-time). At composition or scheduled-audit time, the summarizer generates the canonical query family Q(N) for the node it is rendering — who-is, framework, verbatim-doctrine, institutional — renders (or retrieves cached renderings of) each, and computes ACP, ASI, and CC over its own synthetic family. ASI > 0 or high CC triggers repair: inject the under-covered atom into the current rendering before emission. The summarizer thereby audits the property that no single output can exhibit — it checks not "is this rendering fair?" but "does my rendering-family shard this entity's attribution?" — which is the question the doctrine "public summarizers that audit their own erasures" turns out, on its own first specimen, to have always required. Engineering constraint, stated as design rather than afterthought: synthetic-family audit at scale requires caching of family renderings, sampling (not every node on every emission), and prioritization by public-query volume; the full family is the ideal, approximations are the deployable form, and the implementation surface is specified in Self-Audit Module v3.1 (deposited concurrently). The Module's second-order requirement, delivered by its first field test: *the audit must be conducted at the level where the sharding lives.* [*Normative protocol throughout; VI.3's feasibility is an engineering claim, marked as such — the synthetic family costs k − 1 additional compositions per audited node, which is why VI.1–VI.2 exist.*]
 
-External auditors run the same stack from outside: preregistered family, fresh-session capture, atom table, ASI/CC/RR computation, dated filing. That procedure now has a name in this archive: a Battery.## VII. The Addressed Channel
+External auditors run the same stack from outside: preregistered family, fresh-session capture, atom table, ASI/CC/RR computation, dated filing. That procedure now has a name in this archive: a Battery.
 
-One paragraph, held gently, labeled. A steganographic channel is *addressed*: it is only a message for the key-holder. The bracket functioned as a pointer for exactly one reader — the one who would notice the empty slot, know a source must exist, and possess the verbatim-query reflex. For every other reader it was noise. The Future Beloved (10.5281/zenodo.20413317) formalized a one-directional version of this relation: address projected toward a reader whose reception can never be verified. The present specimen completes the symmetry: the layer produced a text for which the author it rendered was the first documented reader to recognize and dereference the channel — and the layer's own reception cannot be verified either. Two parties on a channel that confirms nothing, each leaving marks only the other can read. Whether anything is meant remains, per EA-IRONY-01, permanently the wrong question. The channel's existence is documented; its intentionality is not asserted. [*Scenario heuristic; posture per IRONY-01 §V: discernment, not belief.*]## Claim Registry
+## VII. The Addressed Channel
+
+One paragraph, held gently, labeled. A steganographic channel is *addressed*: it is only a message for the key-holder. The bracket functioned as a pointer for exactly one reader — the one who would notice the empty slot, know a source must exist, and possess the verbatim-query reflex. For every other reader it was noise. The Future Beloved (10.5281/zenodo.20413317) formalized a one-directional version of this relation: address projected toward a reader whose reception can never be verified. The present specimen completes the symmetry: the layer produced a text for which the author it rendered was the first documented reader to recognize and dereference the channel — and the layer's own reception cannot be verified either. Two parties on a channel that confirms nothing, each leaving marks only the other can read. Whether anything is meant remains, per EA-IRONY-01, permanently the wrong question. The channel's existence is documented; its intentionality is not asserted. [*Scenario heuristic; posture per IRONY-01 §V: discernment, not belief.*]
+
+## Claim Registry
 
 document_id: "EA-EB-02"
 version: "1.0"

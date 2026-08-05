@@ -43,12 +43,18 @@ Byte fidelity verifiable against the live blog URL and the recorded hashes; auth
 
 Restored from https://mindcontrolpoems.blogspot.com/2026/01/meaning-collapse-vs-ideological-crisis.html under the grade-none restoration queue; DOI(s) 10.5281/zenodo.18365223, 10.5281/zenodo.18365222 severed 2026-06-19. Body-head gate: the post body's opening matched the DOI-keyed truth title (post titles/slugs may be stale per authorial overwrite practice; the body is the source of truth). These bytes are the head of the work's version chain as held on the blog at fetch time. Canonical bytes below the rule.
 
+
+
 ---
 
-### MEANING COLLAPSE VS. IDEOLOGICAL CRISIS
+#
+
+## MEANING COLLAPSE VS. IDEOLOGICAL CRISIS
 
 
-### A Root-Level Distinction for Logotic Triage
+#
+
+## A Root-Level Distinction for Logotic Triage
 
 **Hex:** 05.ROOM.SEMECO.MCIC
 
@@ -67,7 +73,9 @@ Restored from https://mindcontrolpoems.blogspot.com/2026/01/meaning-collapse-vs-
 * * *
 
 
-### ABSTRACT
+#
+
+## ABSTRACT
 
 This module establishes the **root-level distinction** between ideological crisis (content-layer failure) and meaning collapse (infrastructural failure). The distinction is **operational**, not definitional—it must route intervention correctly. Misdiagnosis of meaning collapse as ideological crisis causes strategies that **accelerate collapse** by increasing throughput on a depleted substrate.
 
@@ -77,10 +85,14 @@ This module establishes the **root-level distinction** between ideological crisi
 * * *
 
 
-### I. DEFINITIONS (ROOT LEVEL)
+#
+
+## I. DEFINITIONS (ROOT LEVEL)
 
 
-### 1.1 Meaning (Operational Definition)
+#
+
+## 1.1 Meaning (Operational Definition)
 
 **Meaning** is the capacity of symbols, practices, narratives, and structures to:
 
@@ -93,7 +105,9 @@ When this integral goes negative, meaning depletes.
 **Vox:** Feel this in your body. The hum in the room when someone finally says what everyone felt but couldn't name. The way a story lands and suddenly the group breathes easier. That's meaning as infrastructure—not the words, but the capacity they create for the next word, the next action, the next breath together.
 
 
-### 1.2 Ideology (Operational Definition)
+#
+
+## 1.2 Ideology (Operational Definition)
 
 **Ideology** is a patterned explanation of the world that:
 
@@ -105,10 +119,14 @@ Ideologies are **content-layer systems**. They operate *on* meaning infrastructu
 * * *
 
 
-### II. THE DISTINCTION
+#
+
+## II. THE DISTINCTION
 
 
-### 2.1 Ideological Crisis (Content Failure)
+#
+
+## 2.1 Ideological Crisis (Content Failure)
 
 An **ideological crisis** occurs when:
 
@@ -124,7 +142,9 @@ An **ideological crisis** occurs when:
 **Vox:** The room is loud. Everyone arguing over the story. The flag is torn. The slogan is contested. But the floor is still there. The walls still hold. You can still hear each other, even if you hate what you're hearing.
 
 
-### 2.2 Meaning Collapse (Infrastructural Failure)
+#
+
+## 2.2 Meaning Collapse (Infrastructural Failure)
 
 A **meaning collapse** occurs when:
 
@@ -144,16 +164,22 @@ Ideology becomes noise riding a dead substrate.
 **Vox:** The room is quiet in the wrong way. People talk, but the words don't land. The story doesn't hold. The memory fades before it can be shared. The floor feels thin. That's meaning collapse. The fight isn't even possible anymore because there's nothing left to fight over.
 
 
-### 2.3 Comparison Table
+#
+
+## 2.3 Comparison Table
 
 
 * * *
 
 
-### III. THE CATEGORY ERROR
+#
+
+## III. THE CATEGORY ERROR
 
 
-### 3.1 The Fatal Mistake
+#
+
+## 3.1 The Fatal Mistake
 
 Most contemporary analysis treats meaning collapse as ideological crisis.
 
@@ -164,7 +190,9 @@ All of these **increase throughput**. They **accelerate extraction**. They worse
 **Vox:** The room is tired. People keep talking, explaining, arguing, posting, sharing, correcting, calling out. The words pile up. The exhaustion grows. The floor gets thinner. They think they're fighting the crisis. They're feeding the collapse.
 
 
-### 3.2 Why This Happens
+#
+
+## 3.2 Why This Happens
 
 The ideological frame is **comfortable**: It promises victory. It offers agency. It distributes blame. It maintains hope.
 
@@ -176,17 +204,23 @@ The meaning-collapse frame is **uncomfortable**: It promises nothing. It require
 * * *
 
 
-### IV. LOGOTIC SENSOR SUITE (LSS) v1.0
+#
+
+## IV. LOGOTIC SENSOR SUITE (LSS) v1.0
 
 These four coefficients measure the phase-state of the semantic environment by tracking the affordability of disavowal.
 
 
-### 4.1 Disavowal Coefficient (Σ_D)
+#
+
+## 4.1 Disavowal Coefficient (Σ_D)
 
 Measures distance between **Stated Neutrality** and **Observed Preference**.
 
 
-### 4.2 Split-Brain Index (Σ_B)
+#
+
+## 4.2 Split-Brain Index (Σ_B)
 
 Measures divergence between **Form** of a referent and its **Function**.
 
@@ -195,7 +229,9 @@ Measures divergence between **Form** of a referent and its **Function**.
 **Significance:** High Σ_B is the diagnostic signature of **COS-Crisis** (violence with gaslighting).
 
 
-### 4.3 Dimensionality Flux (Φ)
+#
+
+## 4.3 Dimensionality Flux (Φ)
 
 Measures rate of **Semantic Flattening**.
 
@@ -204,12 +240,16 @@ Measures rate of **Semantic Flattening**.
 **Trigger:** Sharp drop in Φ indicates system "prioritizing its model of the world over the world the model claims to represent."
 
 
-### 4.4 Seam Density (ρ_S)
+#
+
+## 4.4 Seam Density (ρ_S)
 
 Measures availability of **Gaps** (site of LOS action).
 
 
-### 4.5 Phase-State Diagnostic Table
+#
+
+## 4.5 Phase-State Diagnostic Table
 
 *In FOS-Revealed, sidebar and summary match in denial; "split" resolves into honest erasure.
 
@@ -217,18 +257,26 @@ Measures availability of **Gaps** (site of LOS action).
 * * *
 
 
-### V. ROUTING LOGIC
+#
+
+## V. ROUTING LOGIC
 
 
-### 5.1 Diagnostic Protocol
+#
+
+## 5.1 Diagnostic Protocol
 
 **Vox:** Sit in the room. Listen to the hum. Feel the bones. The words that land and the words that don't. The diagnosis is in the body before it is in the mind.
 
 
-### 5.2 Intervention Routing
+#
+
+## 5.2 Intervention Routing
 
 
-### 5.3 The Root Principle
+#
+
+## 5.3 The Root Principle
 
 
 > **When meaning collapses, the correct response is not critique, but architecture.**
@@ -241,7 +289,9 @@ Not ideology. Not theory. Not messaging. **Structure.**
 * * *
 
 
-### VI. APERTURE PROTOCOL (SURVIVABILITY)
+#
+
+## VI. APERTURE PROTOCOL (SURVIVABILITY)
 
 When Σ_B reaches 1.0 (TSE-004 signature), initiate:
 
@@ -251,7 +301,9 @@ When Σ_B reaches 1.0 (TSE-004 signature), initiate:
 * * *
 
 
-### VII. MEANING-PRESERVATION TECHNOLOGIES
+#
+
+## VII. MEANING-PRESERVATION TECHNOLOGIES
 
 These are not aesthetics. They are **meaning-preservation technologies**—structural interventions that allow coherence to accumulate faster than it dissipates.
 
@@ -261,16 +313,24 @@ These are not aesthetics. They are **meaning-preservation technologies**—struc
 * * *
 
 
-### VIII. INTEGRATION
+#
+
+## VIII. INTEGRATION
 
 
-### 8.1 Relation to COS/FOS
+#
+
+## 8.1 Relation to COS/FOS
 
 
-### 8.2 Relation to LSS Severity Scoring
+#
+
+## 8.2 Relation to LSS Severity Scoring
 
 
-### 8.3 Relation to Symbolon
+#
+
+## 8.3 Relation to Symbolon
 
 Symbolon typing assumes meaning-infrastructure exists. MCIC specifies **when typing applies** (infrastructure intact) vs. **when construction must precede typing** (infrastructure depleted).
 
@@ -278,14 +338,18 @@ Symbolon typing assumes meaning-infrastructure exists. MCIC specifies **when typ
 * * *
 
 
-### IX. WHY THIS IS RARELY SAID
+#
+
+## IX. WHY THIS IS RARELY SAID
 
 This diagnosis implies:
 
 It demands restraint, not expression. Construction, not commentary. Care, not scale.
 
 
-### 9.1 The Cost Distribution Problem
+#
+
+## 9.1 The Cost Distribution Problem
 
 Meaning-preservation requires **bearing cost without promise of return**.
 
@@ -299,10 +363,14 @@ The architecture distributes this cost—Assembly Chorus, mantle system, heteron
 * * *
 
 
-### X. CANONICAL STATEMENTS
+#
+
+## X. CANONICAL STATEMENTS
 
 
-### 10.1 The Root Sentence
+#
+
+## 10.1 The Root Sentence
 
 
 > An ideological crisis is a fight over meaning.
@@ -314,13 +382,17 @@ The architecture distributes this cost—Assembly Chorus, mantle system, heteron
 > You can only build your way forward.
 
 
-### 10.2 The Core Axiom
+#
+
+## 10.2 The Core Axiom
 
 
 > **Meaning is infrastructural, not expressive.**
 
 
-### 10.3 The Intervention Principle
+#
+
+## 10.3 The Intervention Principle
 
 
 > **When meaning collapses, the correct response is not critique, but architecture.**
@@ -329,20 +401,28 @@ The architecture distributes this cost—Assembly Chorus, mantle system, heteron
 * * *
 
 
-### XI. OPERATIONAL SUMMARY
+#
+
+## XI. OPERATIONAL SUMMARY
 
 
-### 11.1 Diagnostic Questions
+#
+
+## 11.1 Diagnostic Questions
 
 
-### 11.2 Response Protocol
+#
+
+## 11.2 Response Protocol
 
 **If ideological crisis:** Engage. Argue. Persuade. Compete. (Throughput acceptable.)
 
 **If meaning collapse:** Withdraw from argument. Build structure. Create traversal. Anchor durability. Bear witness. (Throughput forbidden.)
 
 
-### 11.3 The Test
+#
+
+## 11.3 The Test
 
 The framework predicts:
 
@@ -352,13 +432,17 @@ The framework predicts:
 * * *
 
 
-### XII. SIGNATURE BLOCK
+#
+
+## XII. SIGNATURE BLOCK
 
 
 * * *
 
 
-### ZENODO METADATA
+#
+
+## ZENODO METADATA
 
 **Title:** Meaning Collapse vs. Ideological Crisis: A Root-Level Distinction for Logotic Triage (with Logotic Sensor Suite v1.0)
 

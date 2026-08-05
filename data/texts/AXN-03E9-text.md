@@ -21,7 +21,9 @@
 
 ---
 
-### Oppositorum of a Contemporary Nancy Drew
+#
+
+## Oppositorum of a Contemporary Nancy Drew
 
 *"Where there is no imagination, there is no horror."*
 
@@ -42,7 +44,9 @@ again.
 
 ---
 
-### Ideological Harassment
+#
+
+## Ideological Harassment
 
 *"the man in me would do"*
 
@@ -51,7 +55,9 @@ Others Block me.
 
 ---
 
-### High School Politics
+#
+
+## High School Politics
 
 Those who fit in have the fascist aura of conservatives,
 while most everyone from psychiatrists to elderly hippies
@@ -60,7 +66,9 @@ have boundless contour-wrinkle smiles of progressives.
 
 ---
 
-### Spirit is Nothing that Is
+#
+
+## Spirit is Nothing that Is
 
 The religious and conspirators make
 and suffer connections
@@ -72,7 +80,9 @@ to what isn't: yet
 
 ---
 
-### Ganesa
+#
+
+## Ganesa
 
 *"Yummy Yummy Yummy"*
 
@@ -87,7 +97,9 @@ I love them. Every One.  . . .
 
 ---
 
-### Ludicia
+#
+
+## Ludicia
 
 My Ethical Code consists of 5 Things
 and goes beyond morality.
@@ -109,7 +121,9 @@ I don't need a copyright or even good reason.
 
 ---
 
-### King Because
+#
+
+## King Because
 
 I burn books by reading them,
 smash idols by purchasing plastic truths
@@ -122,14 +136,18 @@ I eat worms not if I'm dared but if I'm drunk or in the mood.
 
 ---
 
-### Marriage and Religion [Trauma] is Identical: Politics and Race is Identical
+#
+
+## Marriage and Religion [Trauma] is Identical: Politics and Race is Identical
 
 As with Djinn and Qlippoth, play with the Three P's of the Lodges as your music, art, drugs and gripes that you use to Deal, in joy and savage and pagan resentment,
 with Playful Joy as you fool with the feverdream that is the Self and Other[s].
 
 ---
 
-### Cloud Storm
+#
+
+## Cloud Storm
 
 Look at them gather,
 @s under one molded log.
@@ -156,9 +174,13 @@ curls thick-in-soup.
 
 ---
 
-### Ghosts Sections
+#
 
-#### Lock Door, Get Key
+## Ghosts Sections
+
+#
+
+### Lock Door, Get Key
 
 What comfort (not to mention security)
 does an invisible candle bring?
@@ -184,7 +206,9 @@ Set in stone hollows.
 
  . . .
 
-#### The Guardian Tries Veils
+#
+
+### The Guardian Tries Veils
 
 Don't be afraid
 is the way the parent learns from wind;
@@ -210,7 +234,9 @@ This will not free you. How did you survive before the screen?
 
  . . .
 
-#### Machine
+#
+
+### Machine
 
 *"The map is NOT the territory / The medium IS the message"*
 
@@ -243,7 +269,9 @@ like being lucid in a safe but portent-tone situation.
 
  . . .
 
-#### Confirmation Character
+#
+
+### Confirmation Character
 
 Yes,
 that's Correct,
@@ -272,7 +300,9 @@ not to believe in Things.
 
 ---
 
-### Young Bloodwires
+#
+
+## Young Bloodwires
 
 Highschool Human B in dark with light
 from the field where the funday glints;
@@ -291,7 +321,9 @@ Wind is outside:
 
 ---
 
-### Matter-Printed Book of Dead Memes
+#
+
+## Matter-Printed Book of Dead Memes
 
 Awful garden,
 how do we, buzz as flies,
@@ -327,7 +359,9 @@ I do too, and as the circles too.
 
 ---
 
-### Killing the Self-Conscious Dream
+#
+
+## Killing the Self-Conscious Dream
 
 *rowens, 2013*
 

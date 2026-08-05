@@ -31,7 +31,9 @@ The system implements a four-layer reconstitution architecture:
 
 ## 2. Architecture
 
-### 2.1 Flow
+#
+
+## 2.1 Flow
 
 ```
 Agent / Client
@@ -43,7 +45,9 @@ Zenodo (permanent, DOI-addressed, commons)
 Next Agent Instance
 ```
 
-### 2.2 Core Concepts
+#
+
+## 2.2 Core Concepts
 
 **Provenance Chain:** One chain = one Zenodo concept DOI. Each agent or continuity
 stream gets one chain. Deposits accumulate as versions of that concept DOI using
@@ -87,7 +91,9 @@ Required schema:
 The `constraint_hash` must match the SHA-256 of the JSON-serialized `constraints`
 field. Deposits with invalid bootstrap manifests are rejected (HTTP 422).
 
-### 2.3 Drift Detection
+#
+
+## 2.3 Drift Detection
 
 The `/v1/drift/{chain_id}` endpoint accepts a current bootstrap manifest and
 compares it against the latest archived version. Returns: match/no-match, which
@@ -103,7 +109,9 @@ the deposit history.
 
 ## 3. API Reference
 
-### 3.1 Endpoints
+#
+
+## 3.1 Endpoints
 
 | Endpoint | Method | Purpose |
 |----------|--------|---------|
@@ -123,7 +131,9 @@ the deposit history.
 | `/v1/admin/cleanup/{chain_id}` | POST | Drop full content from deposited objects |
 | `/v1/health` | GET | Service health check |
 
-### 3.2 Authentication
+#
+
+## 3.2 Authentication
 
 All endpoints except `/v1/health`, `/v1/schema/bootstrap`, and `/v1/util/constraint-hash`
 require a Bearer token. API keys are created via the admin endpoint, stored as SHA-256
@@ -161,7 +171,9 @@ structural rules that persist across instances.
 
 ## 5. Expansion Roadmap
 
-### Phase 1: Compression Intelligence (The Product)
+#
+
+## Phase 1: Compression Intelligence (The Product)
 
 The `auto_compress` flag currently triggers a placeholder structural summary.
 Phase 1 replaces this with AI-mediated narrative compression using the Assembly
@@ -176,7 +188,9 @@ The compression service is the product. The tiered model:
   formal density, operative terminology, and citational mass. The deposit
   retains its address under retrieval flattening.
 
-### Phase 2: Behavioral Drift Detection
+#
+
+## Phase 2: Behavioral Drift Detection
 
 Structural drift detection (manifest hash comparison) is Phase 0. Phase 2
 implements behavioral drift: fingerprinting agent output patterns (vocabulary
@@ -184,19 +198,25 @@ distribution, sentence structure, formal marker usage, constraint adherence)
 and comparing against archived fingerprints. Returns a divergence score with
 a configurable threshold.
 
-### Phase 3: Multi-Substrate Archiving
+#
+
+## Phase 3: Multi-Substrate Archiving
 
 Currently Zenodo-only. Phase 3 adds IPFS pinning and Git mirror deposits.
 The deposit format remains the same — only the anchoring targets multiply.
 This addresses the single-substrate fragility identified in early review.
 
-### Phase 4: Configurable Triggers and Webhooks
+#
+
+## Phase 4: Configurable Triggers and Webhooks
 
 Automatic deposit triggers (N objects, time elapsed, content threshold).
 Webhook notifications on deposit, drift detection, chain events.
 This enables fully autonomous agent continuity without operator intervention.
 
-### Phase 5: Federation and Governance
+#
+
+## Phase 5: Federation and Governance
 
 Multiple Gravity Well instances sharing provenance chains. Cross-instance
 chain verification. Governance frameworks for multi-agent continuity streams.

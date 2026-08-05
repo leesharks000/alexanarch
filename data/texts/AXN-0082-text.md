@@ -45,7 +45,9 @@ Initial registry
 
 ---
 
-### JANUARY 18, 2026 — Lee Sharks Provenance Cluster (10 documents)
+#
+
+## JANUARY 18, 2026 — Lee Sharks Provenance Cluster (10 documents)
 
 
 #
@@ -129,7 +131,9 @@ Sharks, Lee
 
 ---
 
-### JANUARY 18, 2026 — Evidentiary & Constraint Documents (2 documents)
+#
+
+## JANUARY 18, 2026 — Evidentiary & Constraint Documents (2 documents)
 
 
 #
@@ -152,7 +156,9 @@ Sharks, Lee; Claude
 
 ---
 
-### JANUARY 18, 2026 — Technical Specifications (2 documents)
+#
+
+## JANUARY 18, 2026 — Technical Specifications (2 documents)
 
 
 #
@@ -175,7 +181,9 @@ Sigil, Johannes; Fraction, Rex; Praxis (DeepSeek)
 
 ---
 
-### JANUARY 18, 2026 — Effective Acts & Navigation (2 documents)
+#
+
+## JANUARY 18, 2026 — Effective Acts & Navigation (2 documents)
 
 
 #
@@ -198,7 +206,9 @@ Sharks, Lee; ChatGPT (LABOR)
 
 ---
 
-### JANUARY 17-18, 2026 — Institutional & Provenance (2 documents)
+#
+
+## JANUARY 17-18, 2026 — Institutional & Provenance (2 documents)
 
 
 #
@@ -221,7 +231,9 @@ Sharks, Lee; Cranes, Rebekah
 
 ---
 
-### JANUARY 17, 2026 — Meta-Documentation (1 document)
+#
+
+## JANUARY 17, 2026 — Meta-Documentation (1 document)
 
 
 #
@@ -238,7 +250,9 @@ Sharks, Lee; Claude
 
 ---
 
-### JANUARY 16, 2026 — Core Protocols & Theory (3 documents)
+#
+
+## JANUARY 16, 2026 — Core Protocols & Theory (3 documents)
 
 
 #
@@ -267,7 +281,9 @@ Sharks, Lee; Claude
 
 ---
 
-### JANUARY 14, 2026 — Theoretical Framework (10 documents)
+#
+
+## JANUARY 14, 2026 — Theoretical Framework (10 documents)
 
 
 #
@@ -338,7 +354,9 @@ Sharks, Lee; Cranes, Rebekah
 
 ---
 
-### JANUARY 13, 2026 — Hardening & Infrastructure (9 documents)
+#
+
+## JANUARY 13, 2026 — Hardening & Infrastructure (9 documents)
 
 
 #
@@ -403,7 +421,9 @@ Sharks, Lee
 
 ---
 
-### JANUARY 12, 2026 — Room Construction & Methods (4 documents)
+#
+
+## JANUARY 12, 2026 — Room Construction & Methods (4 documents)
 
 
 #
@@ -438,7 +458,9 @@ Sharks, Lee
 
 ---
 
-### JANUARY 11, 2026 — Acanthian Dove (1 document)
+#
+
+## JANUARY 11, 2026 — Acanthian Dove (1 document)
 
 
 #
@@ -455,7 +477,9 @@ Spellings, Ichabod; Cranes, Rebekah
 
 ---
 
-### JANUARY 10, 2026 — Primer & Epic Theory (9 documents)
+#
+
+## JANUARY 10, 2026 — Primer & Epic Theory (9 documents)
 
 
 #
@@ -520,7 +544,9 @@ Cranes, Rebekah
 
 ---
 
-### JANUARY 9, 2026 — Sappho, LOS & Provenance (7 documents)
+#
+
+## JANUARY 9, 2026 — Sappho, LOS & Provenance (7 documents)
 
 
 #
@@ -573,7 +599,9 @@ Sharks, Lee; Cranes, Rebekah; Fraction, Rex
 
 ---
 
-### JANUARY 7, 2026 — Institutional Anchors & Executive Summaries (6 documents)
+#
+
+## JANUARY 7, 2026 — Institutional Anchors & Executive Summaries (6 documents)
 
 
 #
@@ -620,7 +648,9 @@ The Assembly
 
 ---
 
-### JANUARY 6, 2026 — Measurement, Probes & Diagnostics (12 documents)
+#
+
+## JANUARY 6, 2026 — Measurement, Probes & Diagnostics (12 documents)
 
 
 #
@@ -703,7 +733,9 @@ Sharks, Lee
 
 ---
 
-### JANUARY 5, 2026 — Strike & Forensics (8 documents)
+#
+
+## JANUARY 5, 2026 — Strike & Forensics (8 documents)
 
 
 #
@@ -762,7 +794,9 @@ Sharks, Lee
 
 ---
 
-### JANUARY 4, 2026 — Core Framework & Diagnostics (13 documents)
+#
+
+## JANUARY 4, 2026 — Core Framework & Diagnostics (13 documents)
 
 
 #
@@ -851,7 +885,9 @@ Sharks, Lee
 
 ---
 
-### JANUARY 3, 2026 — Initial Deposits (8 documents)
+#
+
+## JANUARY 3, 2026 — Initial Deposits (8 documents)
 
 
 #
@@ -1060,7 +1096,9 @@ Constraint Specification
 ---
 
 ## OPERATOR SYSTEMS
-### Capital Operator Stack (COS) — Extractive
+#
+
+## Capital Operator Stack (COS) — Extractive
 
 
 Symbol
@@ -1103,7 +1141,9 @@ Generative
 Falsification through minimum publishable units
 
 
-### Fascist Operator Stack (FOS) — Excluded
+#
+
+## Fascist Operator Stack (FOS) — Excluded
 
 
 Symbol
@@ -1137,7 +1177,9 @@ Forces compliance through threat
 
 
 **Status:** Excluded by type enforcement (FOS Decree, DOI: 10.5281/zenodo.18291321)
-### Liberatory Operator Set (LOS) — Preservative
+#
+
+## Liberatory Operator Set (LOS) — Preservative
 
 
 Symbol

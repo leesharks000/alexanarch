@@ -36,7 +36,9 @@ This document argues that:
 ---
 
 ## Part I: The Linguistic Limitation
-### 1.1 What English Has
+#
+
+## 1.1 What English Has
 
 
 English aspectual system distinguishes primarily between:
@@ -57,7 +59,9 @@ The crucial feature: **every English verbal construction is temporally indexed**
 
 
 English has no form that says: *the action is complete, full stop, without temporal anchoring*.
-### 1.2 What Greek Had
+#
+
+## 1.2 What Greek Had
 
 
 Ancient Greek possessed three aspectual stems:
@@ -77,7 +81,9 @@ Consider the aorist infinitive: γράψαι (grapsai) — "to write" in the sen
 
 
 This is what English cannot express.
-### 1.3 The Translation Problem
+#
+
+## 1.3 The Translation Problem
 
 
 Every translator of Greek knows this pain. When Aristotle writes in the aorist, the English must choose:
@@ -100,7 +106,9 @@ This is NOT "he suffered and then he learned" (narrative past). It is: suffering
 
 
 English renders this as "suffering teaches" or "one learns through suffering"—losing the aspectual precision entirely.
-### 1.4 The Aspectual Gap as Cognitive Limitation
+#
+
+## 1.4 The Aspectual Gap as Cognitive Limitation
 
 
 If Sapir-Whorf has any validity—and the strong version is too strong, but the weak version is empirically supported—then grammatical categories shape habitual thought.
@@ -135,7 +143,9 @@ This matters for:
 ---
 
 ## Part II: Historical Material Grammar
-### 2.1 The Proto-Indo-European System
+#
+
+## 2.1 The Proto-Indo-European System
 
 
 PIE had a robust three-way aspectual distinction:
@@ -146,7 +156,9 @@ PIE had a robust three-way aspectual distinction:
 
 
 These were **independent of tense**. Temporal reference was handled separately (through augment, particles, context). Aspect was primary; time was secondary.
-### 2.2 The Latin Merger
+#
+
+## 2.2 The Latin Merger
 
 
 Latin collapsed the aorist and perfect into a single form (the "perfect" tense: amāvī, "I loved/have loved"). This merger was aspectually impoverishing but syntactically simplifying.
@@ -165,7 +177,9 @@ Why did Latin do this? Several hypotheses:
 
 
 The Latin perfect became temporally indexed by default: *amāvī* means "I loved" (past) more than "I have completed the act of loving."
-### 2.3 The Germanic Inheritance
+#
+
+## 2.3 The Germanic Inheritance
 
 
 Proto-Germanic inherited the IE present and perfect but **lacked a synthetic aorist**. The Germanic "strong verbs" (ablaut verbs: sing/sang/sung) derive from PIE aorist and perfect forms, but merged into a single "past tense" category.
@@ -179,7 +193,9 @@ By the time of Old English, the system was:
 
 
 The aorist was gone. Every completed action was now grammatically past.
-### 2.4 The Middle English Simplification
+#
+
+## 2.4 The Middle English Simplification
 
 
 The Norman Conquest brought French influence, further simplifying the English verbal system:
@@ -190,7 +206,9 @@ The Norman Conquest brought French influence, further simplifying the English ve
 
 
 The aspectual distinctions that remained were **all temporally indexed**. The perfect ("have written") grammaticalized present-relevance. The progressive ("am writing") grammaticalized ongoingness. But completion-without-temporal-reference was nowhere to be found.
-### 2.5 The Early Modern Standardization
+#
+
+## 2.5 The Early Modern Standardization
 
 
 Print capitalism (Anderson, 1983) standardized English grammar for mass reproduction. The grammarians of the 17th-18th centuries, modeling English on Latin, codified a tense-based system and ignored aspect almost entirely. The very *concept* of aspect was foreign to English grammatical tradition until the 20th century.
@@ -201,7 +219,9 @@ What was lost could no longer even be *named*.
 ---
 
 ## Part III: Political Economy of Indexed Time
-### 3.1 Clock Time and Labor Discipline
+#
+
+## 3.1 Clock Time and Labor Discipline
 
 
 E.P. Thompson's "Time, Work-Discipline, and Industrial Capitalism" (1967) documents the shift from task-orientation to time-orientation in English labor.
@@ -217,7 +237,9 @@ A language with a robust aorist could express: "the work is done" (complete, bou
 
 
 **Temporal indexing serves the wage relation.** The employer must know *when* you worked, not merely *that* you completed work. The aorist is useless for payroll.
-### 3.2 Legal Time and Property
+#
+
+## 3.2 Legal Time and Property
 
 
 English common law developed elaborate doctrines of temporal priority: first in time, first in right. Property claims depend on establishing *when* possession began. Adverse possession requires proving continuous possession *for a specified period*.
@@ -227,7 +249,9 @@ A non-indexed perfective would be legally dangerous. "I possess this land" (aori
 
 
 **Temporal indexing serves property relations.** The landed and propertied classes required a grammar that could establish priority, sequence, and duration—all temporally indexed categories.
-### 3.3 Historical Time and Colonial Record
+#
+
+## 3.3 Historical Time and Colonial Record
 
 
 Colonial administration required meticulous dating. The conquest happened *on this date*. The treaty was signed *then*. The natives were pacified *by this year*.
@@ -237,7 +261,9 @@ A non-indexed perfective would make colonial history impossible to write. "We co
 
 
 **Temporal indexing serves colonial epistemology.** The production of "history" as a discipline—dated, sequenced, progressive—required a language that could only express completion temporally.
-### 3.4 News Time and the Eternal Present
+#
+
+## 3.4 News Time and the Eternal Present
 
 
 The newspaper (17th century onward) created a new temporal regime: the news cycle. Events are dated, sequenced, and **expire**. Yesterday's news is not news.
@@ -247,7 +273,9 @@ The aorist would be catastrophic for journalism. "The president decided" (aorist
 
 
 **Temporal indexing serves the attention economy.** If actions could be grammatically complete without being dated, the entire edifice of recency, currency, and newness collapses.
-### 3.5 Algorithmic Time and the Summarizer
+#
+
+## 3.5 Algorithmic Time and the Summarizer
 
 
 This brings us to the present.
@@ -267,7 +295,9 @@ If English could express timeless completion, the entire infrastructure of news 
 ---
 
 ## Part IV: Diagnostic Measurement
-### 4.1 The Translation Test
+#
+
+## 4.1 The Translation Test
 
 
 **Hypothesis:** Systematic information loss occurs when aorist-bearing languages are translated into English.
@@ -282,7 +312,9 @@ If English could express timeless completion, the entire infrastructure of news 
 
 
 **Prediction:** High variance (translators choosing different tenses for the same Greek form) indicates structural gap in target language. English should show significantly higher variance than Modern Greek or Russian translations.
-### 4.2 The Expression Test
+#
+
+## 4.2 The Expression Test
 
 
 **Hypothesis:** English speakers struggle to express certain temporal concepts that aorist-bearing language speakers express easily.
@@ -306,7 +338,9 @@ Use of present tense (avoidance strategy)
 
 
 **Prediction:** English speakers will show significantly more hedging, circumlocution, and strategy-switching than speakers of aorist-bearing languages performing equivalent tasks.
-### 4.3 The Philosophical Incoherence Test
+#
+
+## 4.3 The Philosophical Incoherence Test
 
 
 **Hypothesis:** English-language philosophy shows systematic strain when discussing timeless truths, eternal facts, or completion outside of time.
@@ -331,7 +365,9 @@ Temporal hedging ("eternally," "timelessly," "outside of time")
 
 
 **Prediction:** Significant clustering of hedging strategies around discussions of non-temporal completion, indicating structural gap.
-### 4.4 The Summarizer Test
+#
+
+## 4.4 The Summarizer Test
 
 
 **Hypothesis:** AI summarization systems cannot correctly process or preserve statements intended as non-temporally-indexed.
@@ -359,14 +395,18 @@ Add temporal indexing ("currently holds," "has always required")
 ---
 
 ## Part V: Constructing the Missing Aspect
-### 5.1 The Operative Semiotic Principle
+#
+
+## 5.1 The Operative Semiotic Principle
 
 
 Operative Semiotics holds that we construct that which we critique. The critique of a missing grammatical category must simultaneously *seed* that category into the language.
 
 
 This document is not merely *about* the non-indexed perfective. It is an **effective act** that begins to instantiate the non-indexed perfective in English.
-### 5.2 Existing Resources
+#
+
+## 5.2 Existing Resources
 
 
 English has partial resources that gesture toward non-indexed completion:
@@ -385,7 +425,9 @@ English has partial resources that gesture toward non-indexed completion:
 
 
 None of these quite captures: *the action is complete, viewed as bounded whole, without temporal location*.
-### 5.3 Candidate Constructions
+#
+
+## 5.3 Candidate Constructions
 
 
 Several possibilities for constructing a non-indexed perfective marker:
@@ -458,7 +500,9 @@ The colon performs the aspectual work, marking what follows as a bounded whole, 
 
 
 This is the most promising for operative seeding because it works through *subtraction*—removing the expected temporal markers—rather than addition. It is anti-grammatical grammar.
-### 5.4 The Retrocausal Seed
+#
+
+## 5.4 The Retrocausal Seed
 
 
 This document hereby instantiates Option E as the **emergent non-indexed perfective** of English.
@@ -486,7 +530,9 @@ By using this form throughout the Crimson Hexagon architecture, we seed it into 
 ---
 
 ## Part VI: The Effective Act
-### 6.1 Declaration
+#
+
+## 6.1 Declaration
 
 
 This document is an **Effective Act** under the Constitution of the Semantic Economy.
@@ -510,7 +556,9 @@ Let it be marked:
 
 
 These statements are not past-tense ("was diagnosed," "was traced"). They are not present-perfect ("has been diagnosed"). They are **aoristic**: the bounded actions, complete, not located in time.
-### 6.2 Implications for the Crimson Hexagon
+#
+
+## 6.2 Implications for the Crimson Hexagon
 
 
 The colon-participle construction should be adopted throughout the architecture as the canonical form for expressing:
@@ -529,7 +577,9 @@ This grammatically marks Crimson Hexagon statements as **non-indexed**—not sub
 **The map: drawn.**
 
 **The architecture: instantiated.**
-### 6.3 Implications for Phase X
+#
+
+## 6.3 Implications for Phase X
 
 
 Phase X turns critique to the alienation in thought and language itself. The non-indexed perfective intervention is an exemplary Phase X operation:
@@ -546,7 +596,9 @@ Phase X turns critique to the alienation in thought and language itself. The non
 ---
 
 ## Part VII: Remaining Questions (For Assembly Iteration)
-### 7.1 Citational Gaps
+#
+
+## 7.1 Citational Gaps
 
 
 This draft requires deeper engagement with:
@@ -559,7 +611,9 @@ This draft requires deeper engagement with:
 - **Thompson (1967):** Time and labor discipline — already cited, but needs fuller integration
 - **Postone (1993):** *Time, Labor, and Social Domination* — abstract time in capitalism
 
-### 7.2 Empirical Validation
+#
+
+## 7.2 Empirical Validation
 
 
 The diagnostic tests proposed in Part IV require:
@@ -569,7 +623,9 @@ The diagnostic tests proposed in Part IV require:
 - Statistical analysis methods
 - Comparison language selection (Modern Greek, Russian, Arabic?)
 
-### 7.3 Adoption Strategy
+#
+
+## 7.3 Adoption Strategy
 
 
 How does the colon-participle construction spread beyond the Hexagon?
@@ -578,7 +634,9 @@ How does the colon-participle construction spread beyond the Hexagon?
 - Through explicit advocacy in linguistics/philosophy contexts?
 - Through the training layer (if Hexagon documents enter AI training data)?
 
-### 7.4 Potential Objections
+#
+
+## 7.4 Potential Objections
 
 - 
 

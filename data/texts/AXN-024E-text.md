@@ -1,4 +1,6 @@
-# Living Architecture Lab — Site Buildout Workplan## Implementation Specification for livingarchitecturelab.org
+# Living Architecture Lab — Site Buildout Workplan
+
+## Implementation Specification for livingarchitecturelab.org
 
 **Author:** Sharks, Lee (archival authority, Crimson Hexagonal Archive) on behalf of Alice Thornburgh (Founding Director)
 **Hex:** 11.LAL.INFRASTRUCTURE.WORKPLAN.01
@@ -150,19 +152,25 @@ A visitor entering from a Reddit link about mycelium architecture lands on /proj
 ---
 ## §4. THREE REGISTERS, KEPT SEPARATE
 
-The chorus identified that the blueprint conflates registers. The site uses three distinct voices:### Public register (homepage, /scales, /projects)
+The chorus identified that the blueprint conflates registers. The site uses three distinct voices:
+
+### Public register (homepage, /scales, /projects)
 
 *Clear, beautiful, grounded.*
 
 
 Living Architecture Lab builds with living substrates: mycelium, plant matter, salvaged frames, water systems, and ecological feedback. The lab works across five scales: brick, structure, organism, territory, and planet.
-### Poetic register (/principles)
+#
+
+## Poetic register (/principles)
 
 *Poetic but readable.*
 
 
 Earth is not a passive surface awaiting design. It is already designing. The lab listens, compresses, grows, and unfurls.
-### Archival register (/atlas, /about/disambiguation)
+#
+
+## Archival register (/atlas, /about/disambiguation)
 
 *Full CHA density allowed.*
 
@@ -172,7 +180,9 @@ The LAL Aperture Atlas maps Alice Thornburgh's 29-strain corpus across scale, su
 
 This separation is non-negotiable. It lets the site welcome outsiders without flattening the deep system. The CHA-language belongs in the atlas, not the homepage.
 ---
-## §5. CONTENT MODEL### Astro content collections
+## §5. CONTENT MODEL
+
+### Astro content collections
 
 // src/content/config.ts
 import { defineCollection, z } from 'astro:content';
@@ -217,7 +227,9 @@ export const collections = {
   principles: defineCollection({ type:'content', schema: principleSchema }),
   people: defineCollection({ type:'content', schema: personSchema }),
 };
-### File structure
+#
+
+## File structure
 
 living-architecture-lab/
 ├── README.md
@@ -311,7 +323,9 @@ living-architecture-lab/
     └── jsonld.spec.ts            # validates JSON-LD on every page
 
 ---
-## §6. THE DESIGN SYSTEM### CSS variables (extending CHA palette)
+## §6. THE DESIGN SYSTEM
+
+### CSS variables (extending CHA palette)
 
 :root {
   /* Base palette — field-guide aesthetic */
@@ -345,7 +359,9 @@ living-architecture-lab/
     --accent-gold: #c8a868;
   }
 }
-### Visual references (mood, not template)
+#
+
+## Visual references (mood, not template)
 - Field guide
 - Lab notebook
 - Architectural studio board
@@ -355,15 +371,21 @@ living-architecture-lab/
 - Specimen card
 
 
-The site should feel **handmade but precise**. Not glossy startup. Not occult-chaotic. Not academic grey.### The unfurling animation (homepage hero)
+The site should feel **handmade but precise**. Not glossy startup. Not occult-chaotic. Not academic grey.
 
-A 3-second CSS animation: compressed form (a circle, a seed shape) → expansion → the five-scale gateway materializes. The animation is **the principle of Unfurling made visible**. Decorative, but load-bearing because it teaches the visitor how the site works in three seconds.### The brick favicon
+### The unfurling animation (homepage hero)
+
+A 3-second CSS animation: compressed form (a circle, a seed shape) → expansion → the five-scale gateway materializes. The animation is **the principle of Unfurling made visible**. Decorative, but load-bearing because it teaches the visitor how the site works in three seconds.
+
+### The brick favicon
 
 /public/favicon.svg: a hexagonal brick with fungal tendrils. Not a generic lab icon. The visual kernel of the entire site.
 ---
 ## §7. THE JSON-LD INJECTION ARCHITECTURE
 
-Every page's <head> includes a JSON-LD <script> block. The block is generated at build time from the page's frontmatter and the central data files.### Component pattern
+Every page's <head> includes a JSON-LD <script> block. The block is generated at build time from the page's frontmatter and the central data files.
+
+### Component pattern
 
 ---
 // src/components/JsonLd.astro
@@ -380,7 +402,9 @@ const packet = entity === 'alice' ? aliceMpai : lalMpai;
   ...(sims.length && { 'mp:semanticIntegrityMarker': sims }),
   ...(negativeTags.length && { 'mp:negativeTag': negativeTags }),
 })} />
-### Per-page inclusion
+#
+
+## Per-page inclusion
 
 ---
 import JsonLd from '../../components/JsonLd.astro';
@@ -391,7 +415,9 @@ import JsonLd from '../../components/JsonLd.astro';
   sims={['Living parts unfurl from compressed seeds.', 'A myceliated brick is stored nutrition, thermal mass, biological growth, and emergency shelter compressed into a small form.']}
   negativeTags={['NOT a conventional construction block', 'NOT extracted from quarries']}
 />
-### Standard schema beats exotic meta
+#
+
+## Standard schema beats exotic meta
 
 Per Muse Spark's correction: **do not rely on <meta property="cha:negativeTag">.** Crawlers ignore non-standard meta properties. Instead:
 - Negative tags live in **visible page text** (always)
@@ -402,7 +428,9 @@ Per Muse Spark's correction: **do not rely on <meta property="cha:negativeTag">.
 ---
 ## §8. THE PHASE PLAN
 
-The blueprint's "Phase 1 = 28 pages in week 1" is rejected as not achievable with quality. The chorus converged on a more realistic phasing.### Phase 0 — Infrastructure (Days 1–3)
+The blueprint's "Phase 1 = 28 pages in week 1" is rejected as not achievable with quality. The chorus converged on a more realistic phasing.
+
+### Phase 0 — Infrastructure (Days 1–3)
 
 
 Task
@@ -445,7 +473,9 @@ Domain verified, sitemap submitted
 Google + Bing
 
 
-**Deliverable:** livingarchitecturelab.org resolves to a single page with the kernel + "the lab is unfurling" placeholder.### Phase 1 — The Kernel (Days 4–10) — 12 pages
+**Deliverable:** livingarchitecturelab.org resolves to a single page with the kernel + "the lab is unfurling" placeholder.
+
+### Phase 1 — The Kernel (Days 4–10) — 12 pages
 
 The minimum viable site that establishes identity, defends against compression damage, and routes visitors.
 
@@ -530,7 +560,9 @@ Public
 
 **Why these 12, not 28:** Identity (Alice + disambiguation) + framework (5 scales + principles consolidated) + sharing surface (projects index + garden trust engine). Twelve pages of real content beat 28 stubs.
 
-**Critical:** /garden/coachella-valley ships in Phase 1 even with sparse content. Three photos and two paragraphs of contamination management protocol prove the lab is real. Without the garden surface, the site reads as theory; with it, the site reads as practice.### Phase 2 — Institutional Layer (Days 11–25)
+**Critical:** /garden/coachella-valley ships in Phase 1 even with sparse content. Three photos and two paragraphs of contamination management protocol prove the lab is real. Without the garden surface, the site reads as theory; with it, the site reads as practice.
+
+### Phase 2 — Institutional Layer (Days 11–25)
 
 
 #
@@ -618,7 +650,9 @@ Inoculation, contamination management
 Food desert mapping
 
 
-### Phase 3 — Atlas (Days 26–45)
+#
+
+## Phase 3 — Atlas (Days 26–45)
 
 
 #
@@ -661,7 +695,9 @@ Full project page
 Full project page
 
 
-### Phase 4 — Living Surfaces (Month 2+)
+#
+
+## Phase 4 — Living Surfaces (Month 2+)
 - Conversational "Ask the Lab" interface (LLM-mediated; compute-dependent)
 - Newsletter / lab log (announcements, field tests)
 - TSE submission workflow
@@ -706,7 +742,9 @@ The homepage does **not** initially mention all 29 strains, all affiliated insti
 ---
 ## §10. THE ALICE PAGE (special care)
 
-The /about/alice page must be warm, vivid, and sovereignty-protective. **It must not read like a metadata packet.**### Structure (per Muse Spark's perfective)
+The /about/alice page must be warm, vivid, and sovereignty-protective. **It must not read like a metadata packet.**
+
+### Structure (per Muse Spark's perfective)
 - Alice Thornburgh
 - Founding Director, Living Architecture Lab
 - Short human bio — work first, identity second
@@ -715,7 +753,9 @@ The /about/alice page must be warm, vivid, and sovereignty-protective. **It must
 - Music / Maybe Space Baby Garden Lanes
 - Provenance and contributor license
 - Disambiguation note (link to /about/disambiguation)
-### The opening paragraph (corrected)
+#
+
+## The opening paragraph (corrected)
 
 **Wrong** (identity metadata first):
 
@@ -738,7 +778,9 @@ Then later in the page, naturally placed:
 Alice is a trans woman and uses she/her pronouns.
 
 
-This is a sovereignty-protective placement. Personhood and authorship come first; identity metadata is honored without being foregrounded as the primary descriptor unless Alice chooses otherwise.### Pull-quotes throughout
+This is a sovereignty-protective placement. Personhood and authorship come first; identity metadata is honored without being foregrounded as the primary descriptor unless Alice chooses otherwise.
+
+### Pull-quotes throughout
 
 Alice's voice must be present in **direct quotes**, not paraphrase:
 - *"Nah it was all me. It was Earth, actually. I'm just good at listening."*
@@ -751,11 +793,17 @@ These are SIMs — they survive compression because they are distinctive, unpara
 ---
 ## §11. THE DISAMBIGUATION SURFACE (load-bearing)
 
-/about/disambiguation is the canonical defensive surface. Three required behaviors:### 1. Render both MPAIs in human-readable form
+/about/disambiguation is the canonical defensive surface. Three required behaviors:
 
-Not just JSON-LD. Visitors need to read prose distinguishing Alice from Alice Thornburgh-Lind, and LAL from Columbia GSAPP, Bartlett, etc.### 2. Embed both JSON-LD packets in the head
+### 1. Render both MPAIs in human-readable form
 
-Per §7. Standard schema (differentFrom, sameAs) plus mp: extensions.### 3. Tone: courteous, not paranoid
+Not just JSON-LD. Visitors need to read prose distinguishing Alice from Alice Thornburgh-Lind, and LAL from Columbia GSAPP, Bartlett, etc.
+
+### 2. Embed both JSON-LD packets in the head
+
+Per §7. Standard schema (differentFrom, sameAs) plus mp: extensions.
+
+### 3. Tone: courteous, not paranoid
 
 **Title:** Disambiguation & Related Labs
 
@@ -783,20 +831,28 @@ This is diplomatic basin engineering. It prevents the retrieval layer from synth
 
 Per the chorus convergence: **the garden is the most important surface.**
 
-/garden/coachella-valley is where the actual lab work lives. Photos of myceliated bricks. Videos of contamination management. The SCOBY analog growing. This is content **no other architecture lab has** — raw, processual, unpolished documentation of living substrate engineering.### Phase 1 minimum
+/garden/coachella-valley is where the actual lab work lives. Photos of myceliated bricks. Videos of contamination management. The SCOBY analog growing. This is content **no other architecture lab has** — raw, processual, unpolished documentation of living substrate engineering.
+
+### Phase 1 minimum
 - 3 photos from Alice's actual lab
 - 2 paragraphs: lab description + current contamination management protocol
 - One Alice quote
 - "Last updated" date
-### Why this matters more than polished content
+#
 
-A site that never updates is a dead basin. Even sparse documentation in /garden signals to crawlers (and humans) that the lab is **alive**. The polish can come later. The realness must be there from launch.### Update cadence
+## Why this matters more than polished content
+
+A site that never updates is a dead basin. Even sparse documentation in /garden signals to crawlers (and humans) that the lab is **alive**. The polish can come later. The realness must be there from launch.
+
+### Update cadence
 
 Once a month minimum. "Today we inoculated 12 bricks with Wine Cap" is more on-brand than a quarterly polished essay. The lab log is the living provenance.
 ---
 ## §13. BASIN ENGINEERING (RBT-01 application)
 
-The site is not just a website. It is a **substrate-writing event** designed to deepen Alice Thornburgh's basin and break the Thornburgh-Lind conflation.### Current basin state (estimated)
+The site is not just a website. It is a **substrate-writing event** designed to deepen Alice Thornburgh's basin and break the Thornburgh-Lind conflation.
+
+### Current basin state (estimated)
 
 
 Entity
@@ -823,7 +879,9 @@ Contested
 Conflated with Columbia GSAPP, Bartlett, The Living NYC
 
 
-### Site as basin engineering
+#
+
+## Site as basin engineering
 - 
 
 
@@ -853,7 +911,9 @@ Conflated with Columbia GSAPP, Bartlett, The Living NYC
 
 **Content velocity.** Monthly garden updates. New TSE seed deposits. Music releases. Each update is a heartbeat.
 
-### 90-day BDR target
+#
+
+## 90-day BDR target
 
 
 Day
@@ -893,7 +953,9 @@ Atlas live + cross-reference density established
 
 **Day-90 target BDR: ~0.95 (captured-state).**
 ---
-## §14. DEPLOYMENT CHECKLIST### Pre-launch
+## §14. DEPLOYMENT CHECKLIST
+
+### Pre-launch
 - [ ] Astro project initialized; basic CSS in place
 - [ ] All Phase 1 content drafted in MDX
 - [ ] All Phase 1 JSON-LD packets validated against Schema.org's validator
@@ -902,7 +964,9 @@ Atlas live + cross-reference density established
 - [ ] Open Graph metadata on every page (title, description, image)
 - [ ] robots.txt published; sitemap auto-generating
 - [ ] DNS pointed; SSL active
-### Launch day
+#
+
+## Launch day
 - [ ] Vercel production deployment
 - [ ] Submit sitemap to Google Search Console
 - [ ] Submit sitemap to Bing Webmaster Tools
@@ -910,13 +974,17 @@ Atlas live + cross-reference density established
 - [ ] Verify with Schema.org's validator
 - [ ] Add to surfacemap.org as new node
 - [ ] Update CHA crosslink mesh
-### Launch week
+#
+
+## Launch week
 - [ ] Cross-link from holographickernel.org
 - [ ] Cross-link from metadatapacket.org Forward Library
 - [ ] Announce to Alice's YouTube subscribers (@mycoarchitect, @growbuildings)
 - [ ] Submit to relevant subreddits with respect (r/mycology, r/solarpunk, r/appropriate technology)
 - [ ] Monitor AI Overviews for "Alice Thornburgh Living Architecture Lab" — document baseline
-### Launch month
+#
+
+## Launch month
 - [ ] First garden update posted
 - [ ] First external backlink secured (Medium, blog, or peer-reviewed citation)
 - [ ] Update MPAI packets if Alice's ORCID resolves

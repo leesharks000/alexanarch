@@ -1,14 +1,22 @@
-# EA-HK-INFRA-01: The Infrastructure Holographic Kernel## Infrastructure That Survives Its Own Deprecation
+# EA-HK-INFRA-01: The Infrastructure Holographic Kernel
+
+## Infrastructure That Survives Its Own Deprecation
 
 Lee Sharks · Semantic Economy Institute · Crimson Hexagonal ArchiveORCID: 0009-0000-1599-0703Version: 1.1 · Date: April 2026 · License: CC BY 4.0Hex: 06.SEI.HK.INFRA.01Parent specification: EA-HK-01 v1.1 (DOI: 10.5281/zenodo.19763365)Related: EA-RBT-01 (DOI: 10.5281/zenodo.19763346) · EA-GW-FIELD-01 (DOI: 10.5281/zenodo.19442251) · Compression Arsenal v2.1 (DOI: 10.5281/zenodo.19412081)
 
-Abstract. EA-HK-INFRA-01 applies the Holographic Kernel specification (EA-HK-01) to operational infrastructure. It defines an *infrastructure holographic kernel* as a DOI-anchored git repository in which any clone contains the role definitions, dependency rules, configuration templates, provenance chain, and verification tests needed to reconstruct the system's architecture after provider failure, service deprecation, or substrate loss. The document situates this contribution relative to existing software citation, reproducible build, and supply-chain provenance practices; applies the Three Compressions Theorem to infrastructure systems; and specifies the Back-Projection Test as a pre-deployment gate. The implementation maturity level is v0.1 (structural presence verification). A production-grade v1.0 is specified as the target for the Phase 3 deployment.## §0. Portable Statement
+Abstract. EA-HK-INFRA-01 applies the Holographic Kernel specification (EA-HK-01) to operational infrastructure. It defines an *infrastructure holographic kernel* as a DOI-anchored git repository in which any clone contains the role definitions, dependency rules, configuration templates, provenance chain, and verification tests needed to reconstruct the system's architecture after provider failure, service deprecation, or substrate loss. The document situates this contribution relative to existing software citation, reproducible build, and supply-chain provenance practices; applies the Three Compressions Theorem to infrastructure systems; and specifies the Back-Projection Test as a pre-deployment gate. The implementation maturity level is v0.1 (structural presence verification). A production-grade v1.0 is specified as the target for the Phase 3 deployment.
+
+## §0. Portable Statement
 
 A summary discards structure to save space. A kernel discards material to save structure. The infrastructure holographic kernel is a git repository in which any clone contains the complete architectural specification — any node can execute any role, and every deployment carries its kernel's provenance as a container label.
 
 A GitHub repository that, when cloned and run, can reconstruct the entire infrastructure of the Crimson Hexagonal Archive without any external documentation is a holographic kernel for infrastructure.
 > Definition. An *infrastructure holographic kernel* is a git repository that: (a) contains the complete architectural specification of a distributed system as role operators; (b) is DOI-anchored and ORCID-attributed; (c) passes the Back-Projection Test (yield ≥ 0.85); and (d) allows any node with a clone to project any role onto itself. A kernel without secret templates is incomplete. A kernel with secrets committed is contaminated.
-## PART I: THE PROBLEM AND THE PRINCIPLE## §I. Infrastructure Mortality### A. praxademic.com — an architectural erasure
+## PART I: THE PROBLEM AND THE PRINCIPLE
+
+## §I. Infrastructure Mortality
+
+### A. praxademic.com — an architectural erasure
 
 In 2025, praxademic.com died. A Google Workspace subscription lapsed. The domain, the DNS records, the deployment pipeline, and the site configuration all disappeared because they existed only in the running platform — not in a kernel, not in a deposit, not in any anchored record. The failure was not only a hosting failure. It was architectural erasure: the pattern of what the system was became unretrievable because the pattern had never been made retrievable.
 
@@ -16,11 +24,15 @@ This is the default condition of all operational infrastructure. Services accumu
 
 A Regime 3 response to praxademic.com would have meant: the DNS configuration lives in kernel/roles/web/dns.template, the deployment pipeline lives in kernel/orchestrator/deploy.sh, and both are DOI-anchored with an ORCID and a timestamp. When the domain died, the architecture would have survived in the kernel, ready to be projected to a new host. The domain is material. The architecture is structure. The kernel preserves the structure.
 
-The Crimson Hexagonal Archive currently runs across Vercel (seven domains), Render (Gravity Well MCP), Supabase (key storage), GitHub (six repositories), and Zenodo (532+ deposits). Each is a different company, a different pricing model, a different failure mode. The archive's theoretical output — EA-HK-01, EA-RBT-01, the Compression Arsenal — is DOI-anchored and permanent. The infrastructure that serves it is ephemeral. That asymmetry is the problem this document addresses.### B. The Photocopy Problem at the operational layer
+The Crimson Hexagonal Archive currently runs across Vercel (seven domains), Render (Gravity Well MCP), Supabase (key storage), GitHub (six repositories), and Zenodo (532+ deposits). Each is a different company, a different pricing model, a different failure mode. The archive's theoretical output — EA-HK-01, EA-RBT-01, the Compression Arsenal — is DOI-anchored and permanent. The infrastructure that serves it is ephemeral. That asymmetry is the problem this document addresses.
+
+### B. The Photocopy Problem at the operational layer
 
 The Compression Arsenal (DOI: 10.5281/zenodo.19412081) identifies the Photocopy Problem: when automated generation produces infinite near-identical copies, the only differentiator is provenance. Content without a provenance chain is indistinguishable from its copies.
 
-This applies to infrastructure with greater force than to content. Infrastructure configuration is increasingly auto-generated — Terraform modules, Kubernetes manifests, Docker Compose files assembled from templates, CI/CD pipelines from cookbook recipes. The same configuration could describe a thousand different projects. Without provenance, a Dockerfile is not yours. With a DOI, an ORCID, and a timestamp, it becomes a citable artifact: verifiable author, verifiable creation date, verifiable relationship to the archive it serves.### C. The Three Compressions applied to infrastructure
+This applies to infrastructure with greater force than to content. Infrastructure configuration is increasingly auto-generated — Terraform modules, Kubernetes manifests, Docker Compose files assembled from templates, CI/CD pipelines from cookbook recipes. The same configuration could describe a thousand different projects. Without provenance, a Dockerfile is not yours. With a DOI, an ORCID, and a timestamp, it becomes a citable artifact: verifiable author, verifiable creation date, verifiable relationship to the archive it serves.
+
+### C. The Three Compressions applied to infrastructure
 
 The Three Compressions Theorem (DOI: 10.5281/zenodo.19053469) classifies all compression by what it burns:
 
@@ -32,7 +44,11 @@ Regime 3 — Witness: Burns but preserves pointers to what was lost. The infras
 
 The decisive question for any infrastructure object: when this stops running, what survives? Regime 1: nothing. Regime 2: the platform's usage data. Regime 3: the kernel, intact, reconstructible, signed.
 
-The praxademic.com case restated as Regime 3: A Regime 3 response to that failure would have meant the DNS configuration living in kernel/roles/web/dns.template, the deployment pipeline in kernel/orchestrator/deploy.sh, and both DOI-anchored with ORCID and timestamp. When the domain lapsed, the architecture would have survived in the kernel — ready to be projected to a new host. The domain is material. The architecture is structure. The kernel preserves the structure.## §II. Theoretical Foundation### A. The Three Invariants of EA-HK-01
+The praxademic.com case restated as Regime 3: A Regime 3 response to that failure would have meant the DNS configuration living in kernel/roles/web/dns.template, the deployment pipeline in kernel/orchestrator/deploy.sh, and both DOI-anchored with ORCID and timestamp. When the domain lapsed, the architecture would have survived in the kernel — ready to be projected to a new host. The domain is material. The architecture is structure. The kernel preserves the structure.
+
+## §II. Theoretical Foundation
+
+### A. The Three Invariants of EA-HK-01
 
 EA-HK-01 v1.1 (DOI: 10.5281/zenodo.19763365) defines a holographic kernel by three invariants:
 
@@ -40,21 +56,29 @@ Invariant 1 — Fragment Sufficiency. Any clone of the kernel repository must c
 
 Invariant 2 — Structural Reconstruction. The kernel preserves structure, not material. The kernel does not preserve running state, environment variables, live data, or container layers. It preserves the pattern from which those can be reconstituted — given external volumes, backup sources, and secrets referenced in the configuration template. This boundary is critical: the kernel projects the *empty pattern* (the role operator, the configuration shape). It does not project the data.
 
-Invariant 3 — Operator Identity. The kernel is an operator, not a template. A mold (template) produces one shape. A potter's wheel (operator) can produce any shape the clay allows. kernel.sh --role=database is not a deployment script. It is an operator that applies the "database" transform to the current node. The node executes a role; it does not possess one.### B. Back-Projection Test v0.1 and v1.0
+Invariant 3 — Operator Identity. The kernel is an operator, not a template. A mold (template) produces one shape. A potter's wheel (operator) can produce any shape the clay allows. kernel.sh --role=database is not a deployment script. It is an operator that applies the "database" transform to the current node. The node executes a role; it does not possess one.
+
+### B. Back-Projection Test v0.1 and v1.0
 
 EA-HK-01 specifies the Back-Projection Test: from this fragment, can the architecture be reconstructed? Yield ≥ 0.85 = non-lossy.
 
 This document implements Back-Projection v0.1 — structural presence verification. A full Back-Projection v1.0 is the production target:
 
-| Version | Tests | Status | |---------|-------|--------| | v0.1 (this document) | Required directories and files present; scripts executable; provenance JSON valid | Reference implementation | | v1.0 (target) | All v0.1 plus: each role has complete Dockerfile + entrypoint + config template; compose validates; no secrets committed; build dry-run passes; container labels match manifest; health script avoids duplicate-spawning | Production gate |### C. The Writable Retrieval Basin
+| Version | Tests | Status | |---------|-------|--------| | v0.1 (this document) | Required directories and files present; scripts executable; provenance JSON valid | Reference implementation | | v1.0 (target) | All v0.1 plus: each role has complete Dockerfile + entrypoint + config template; compose validates; no secrets committed; build dry-run passes; container labels match manifest; health script avoids duplicate-spawning | Production gate |
+
+### C. The Writable Retrieval Basin
 
 EA-RBT-01 (DOI: 10.5281/zenodo.19763346) establishes that retrieval-layer representation is writable through consistent inscription across surfaces. When the infrastructure kernel is DOI-anchored and deposited, it enters the retrieval layer. Questions like "what infrastructure does the Crimson Hexagonal Archive run on?" become answerable from the deposit record, not from guesswork. The operational architecture participates in the archive's semantic basin.
 
-Each DOI-anchored infrastructure kernel increments the operational layer's retrieval capital. For the Crimson Hexagonal Archive, the infrastructure kernel moves the operational layer from BDR ≈ 0 (no retrieval presence) toward the contested range — Zenodo institutional authority (0.6) plus GitHub surface diversity begins building the basin. A conservative estimate: BDR ≈ 0.3 after initial deposit, rising as the kernel is cross-referenced by subsequent deposits and the Aperture Atlas topology includes it as a node. This is the first step toward capturing the "infrastructure for semantic economy" retrieval basin — a basin that currently has no occupants.### D. Gravity Well and the f.02 Field
+Each DOI-anchored infrastructure kernel increments the operational layer's retrieval capital. For the Crimson Hexagonal Archive, the infrastructure kernel moves the operational layer from BDR ≈ 0 (no retrieval presence) toward the contested range — Zenodo institutional authority (0.6) plus GitHub surface diversity begins building the basin. A conservative estimate: BDR ≈ 0.3 after initial deposit, rising as the kernel is cross-referenced by subsequent deposits and the Aperture Atlas topology includes it as a node. This is the first step toward capturing the "infrastructure for semantic economy" retrieval basin — a basin that currently has no occupants.
+
+### D. Gravity Well and the f.02 Field
 
 The Gravity Well MCP server (DOI: 10.5281/zenodo.19442251) is the f.02 retentive curvature field. The kernel's provenance/kernel.json stores the TACHYON chain ID (9271269a-eb46-46f8-ae17-007578fe1c92). When a node projects a role, that event is logged to the Gravity Well with the chain ID, creating a continuous record: not just "the database is running" but "the database was projected from kernel DOI X at timestamp Y." The infrastructure's operational history becomes part of the archive's continuity record.
 
-*Note: This integration is specified. The Gravity Well API endpoint for kernel telemetry is under development (EA-GW-FIELD-01 §VII). Phase 3 of the deposit strategy covers implementation.*### E. Self-Projection of Missing Roles
+*Note: This integration is specified. The Gravity Well API endpoint for kernel telemetry is under development (EA-GW-FIELD-01 §VII). Phase 3 of the deposit strategy covers implementation.*
+
+### E. Self-Projection of Missing Roles
 
 The kernel's most consequential operational feature: when a running role is absent, a node that carries the kernel can project it:
 
@@ -65,7 +89,9 @@ Boundaries of self-projection (critical clarification): The kernel projects the
 
 Failure modes:- *Kernel corruption* — if verify.sh fails on the local clone, projection is blocked to prevent propagating a damaged architecture- *Secret unavailability* — if fetch-secrets.sh cannot retrieve credentials, the role starts in degraded mode with a health-check failure logged- *Resource exhaustion* — if the node lacks capacity, projection is queued and an alert is emitted
 
-Safety conditions — a node may project a missing role only when:- The role is stateless, or the state source is externally declared and healthy- The role's uniqueness policy is declared (singleton / replicated / sharded)- No other node is already running the same role (checked before spawning)- Secrets are present and current- The prior failure is confirmed by health check, not only by absence from local Docker- Projection attempts are rate-limited and logged### F. Relation to Existing Infrastructure Practices
+Safety conditions — a node may project a missing role only when:- The role is stateless, or the state source is externally declared and healthy- The role's uniqueness policy is declared (singleton / replicated / sharded)- No other node is already running the same role (checked before spawning)- Secrets are present and current- The prior failure is confirmed by health check, not only by absence from local Docker- Projection attempts are rate-limited and logged
+
+### F. Relation to Existing Infrastructure Practices
 
 EA-HK-INFRA-01 is adjacent to, but distinct from, software citation, reproducible builds, infrastructure-as-code, and software supply-chain provenance.
 
@@ -73,7 +99,13 @@ Zenodo/GitHub DOI workflows preserve software releases. SLSA and in-toto-style a
 
 Its distinct contribution: treating operational infrastructure as a holographic kernel — a DOI-anchored repository whose fragments contain enough role, dependency, constraint, secret-shape, recovery policy, and provenance structure to reconstruct the architecture after provider failure, service deprecation, or substrate loss. Terraform describes desired state. Nix describes reproducible environments. The kernel describes *generative capacity*: any node, any role, from any fragment, with provenance attached.
 
-What this is not:- Not a replacement for Kubernetes — it is a complement. K8s orchestrates running containers; the kernel preserves what K8s should orchestrate.- Not a backup system — backups preserve data; the kernel preserves structure.- Not infrastructure-as-code in the Terraform sense — the kernel wraps Terraform modules *plus* the DOI, ORCID, timestamp, and relational logic that make the infrastructure citable.- Not a silver bullet for praxademic.com — if the kernel is not deposited before the service dies, the architecture is still lost. The kernel must be created while the system is alive.## PART II: THE SPECIFICATION## §III. Architecture Specification### A. Repository structure
+What this is not:- Not a replacement for Kubernetes — it is a complement. K8s orchestrates running containers; the kernel preserves what K8s should orchestrate.- Not a backup system — backups preserve data; the kernel preserves structure.- Not infrastructure-as-code in the Terraform sense — the kernel wraps Terraform modules *plus* the DOI, ORCID, timestamp, and relational logic that make the infrastructure citable.- Not a silver bullet for praxademic.com — if the kernel is not deposited before the service dies, the architecture is still lost. The kernel must be created while the system is alive.
+
+## PART II: THE SPECIFICATION
+
+## §III. Architecture Specification
+
+### A. Repository structure
 
 holographic-infra/
 ├── kernel/                      # STRUCTURE: all role definitions and operators
@@ -121,7 +153,9 @@ holographic-infra/
 └── README.md
 
 
-Material vs. structure is visible in the filesystem itself. Everything under kernel/, provenance/, and secrets/*.template is structure: it belongs in the kernel and in the deposit. Everything under nodes/, secrets/*.env, and logs/ is material: it is gitignored and never deposited.### B. The kernel operator
+Material vs. structure is visible in the filesystem itself. Everything under kernel/, provenance/, and secrets/*.template is structure: it belongs in the kernel and in the deposit. Everything under nodes/, secrets/*.env, and logs/ is material: it is gitignored and never deposited.
+
+### B. The kernel operator
 
 #!/bin/bash
 # EA-HK-INFRA-01: Infrastructure Holographic Kernel v0.1
@@ -197,7 +231,9 @@ RECEIPT
     exit 1
     ;;
 esac
-### C. The Back-Projection Test (v0.1)
+#
+
+## C. The Back-Projection Test (v0.1)
 
 #!/bin/bash
 # verify.sh — Back-Projection Test v0.1
@@ -264,7 +300,9 @@ else
   echo "      v1.0 will add build dry-run, label validation, secret-scan."
   exit 1
 fi
-### D. Continuous role-projection (health.sh)
+#
+
+## D. Continuous role-projection (health.sh)
 
 #!/bin/bash
 # health.sh — continuous role-presence verification
@@ -290,7 +328,9 @@ for role in "${REQUIRED_ROLES[@]}"; do
     echo "[$(date -Iseconds)] ${role} projected."
   fi
 done
-### E. Secret shape (structure not material)
+#
+
+## E. Secret shape (structure not material)
 
 # secrets/prod.env.template — committed to the kernel
 # This is structure: the shape of secrets.
@@ -319,13 +359,21 @@ fi
 echo "ERROR: No secret provider configured for ${ENV}." >&2
 echo "       Implement Vault/AWS SM/etc. in fetch-secrets.sh" >&2
 exit 1
-### F. Implementation maturity disclaimer
+#
+
+## F. Implementation maturity disclaimer
 
 The scripts in §III are reference implementations demonstrating the kernel principle at v0.1 maturity. They implement the Back-Projection Test and role-projection logic in minimal form. They are not production orchestration systems.
 
 Production deployments should replace kernel.sh's raw docker run with a container orchestrator (Docker Compose, Kubernetes, Nomad) that implements the same role-projection logic with health checks, dependency graphs, and rolling updates. The kernel's value is not in the bash scripts but in the structural specification they encode: any node, any role, provenance-attached, reconstructible.
 
-The Infra-Drowning Test metric (per Gemini): an infrastructure system passes if, after a total subscription and domain lapse, a new operator can restore the service to 100% functionality in under 60 minutes using only a git clone and the secret key. The v0.1 implementation targets this metric. v1.0 will instrument and verify it automatically.### G. Security considerations- The kernel must never contain live credentials. secrets/*.env is gitignored and excluded from all Zenodo deposits.- Configuration templates (config.template, secrets/*.env.template) must be audited to ensure they contain no default passwords, internal IP ranges, or sensitive patterns — only placeholder names.- Base images in kernel/base/Dockerfile.base should use SHA256-pinned minimal sources and be rebuilt regularly to incorporate security updates.- verify.sh in v1.0 will include a secret-scan step (git-secrets or truffleHog) to detect accidental credential commits.- fetch-secrets.sh is the only point of contact between the kernel and live credentials. In production, replace its body with a call to a secrets manager (Vault, AWS Secrets Manager, 1Password CLI).### H. What this is not- Not a replacement for Kubernetes. K8s orchestrates running containers; the kernel preserves the architecture that tells K8s what to orchestrate. Use both.- Not a backup system. Backups preserve data; the kernel preserves structure. A kernel plus a backup system is a complete Regime 3 infrastructure.- Not infrastructure-as-code in the Terraform sense. Terraform describes desired state from outside the system. The kernel describes generative capacity from inside — any node can project any role from what it already carries.- Not a silver bullet for praxademic.com. If the kernel is not deposited before the service dies, the architecture is still lost. The kernel must be created while the system is alive. The wound is not retroactively healed; only future wounds are prevented.- Not a claim that bash scripts are production orchestration. The scripts in §III are structural specifications in executable form. They demonstrate the principle. Production deployments replace them with Compose, K8s, or Nomad implementations of the same operators.### I. The self-mapping topology export
+The Infra-Drowning Test metric (per Gemini): an infrastructure system passes if, after a total subscription and domain lapse, a new operator can restore the service to 100% functionality in under 60 minutes using only a git clone and the secret key. The v0.1 implementation targets this metric. v1.0 will instrument and verify it automatically.
+
+### G. Security considerations- The kernel must never contain live credentials. secrets/*.env is gitignored and excluded from all Zenodo deposits.- Configuration templates (config.template, secrets/*.env.template) must be audited to ensure they contain no default passwords, internal IP ranges, or sensitive patterns — only placeholder names.- Base images in kernel/base/Dockerfile.base should use SHA256-pinned minimal sources and be rebuilt regularly to incorporate security updates.- verify.sh in v1.0 will include a secret-scan step (git-secrets or truffleHog) to detect accidental credential commits.- fetch-secrets.sh is the only point of contact between the kernel and live credentials. In production, replace its body with a call to a secrets manager (Vault, AWS Secrets Manager, 1Password CLI).
+
+### H. What this is not- Not a replacement for Kubernetes. K8s orchestrates running containers; the kernel preserves the architecture that tells K8s what to orchestrate. Use both.- Not a backup system. Backups preserve data; the kernel preserves structure. A kernel plus a backup system is a complete Regime 3 infrastructure.- Not infrastructure-as-code in the Terraform sense. Terraform describes desired state from outside the system. The kernel describes generative capacity from inside — any node can project any role from what it already carries.- Not a silver bullet for praxademic.com. If the kernel is not deposited before the service dies, the architecture is still lost. The kernel must be created while the system is alive. The wound is not retroactively healed; only future wounds are prevented.- Not a claim that bash scripts are production orchestration. The scripts in §III are structural specifications in executable form. They demonstrate the principle. Production deployments replace them with Compose, K8s, or Nomad implementations of the same operators.
+
+### I. The self-mapping topology export
 
 #!/bin/bash
 # kernel/orchestrator/topology.sh
@@ -357,17 +405,23 @@ echo "Topology fragment written to nodes/topology-fragment.jsonld"
 echo "Ingest into Aperture Atlas: curl -X POST https://surfacemap.org/api/ingest -d @nodes/topology-fragment.jsonld"
 
 
-The infrastructure is self-mapping: it generates its own Aperture Atlas nodes. The topology graph maps the infrastructure that runs the topology graph.## §IV. The Dual-DOI Strategy
+The infrastructure is self-mapping: it generates its own Aperture Atlas nodes. The topology graph maps the infrastructure that runs the topology graph.
+
+## §IV. The Dual-DOI Strategy
 
 Zenodo software deposits are snapshots. A DOI points to a specific zip file at a specific moment. Infrastructure is living — it changes, patches, updates base images. The kernel addresses this with a dual-DOI pattern:- Canonical DOI — for the specification and architecture (this document, EA-HK-INFRA-01). Stable. Never changes. Lives in provenance/KERNEL_ID.- Release DOI — for each implementation snapshot deposited to Zenodo. Updated with each significant version. Recorded in provenance/RELEASES.md.
 
 Running containers carry both labels:- kernel.doi.canonical — the architecture specification (this document)- kernel.doi.release — the specific build
 
-This separates architectural permanence from implementation mutability.## §V. Connection to Existing CHA Infrastructure
+This separates architectural permanence from implementation mutability.
+
+## §V. Connection to Existing CHA Infrastructure
 
 | Current service | Role in kernel | Preserves | Does NOT preserve | |---|---|---|---| | Gravity Well (gravitywell-1.onrender.com) | mcp | Dockerfile, entrypoint, Supabase connection pattern | Chain state, session history | | Vercel (seven domains) | web | Build config, routing rules, env template | Build cache, deployment logs | | Supabase | Referenced in kernel.json | Connection pattern, key names | Keys, row data | | TACHYON chain | hk:tachyonChain in manifest | Session continuity anchor | Session content | | Zenodo community | hk:relatedSpec DOIs | Full DOI provenance chain | Upload credentials |
 
-Phase 3 note: Migrating the Gravity Well Render deployment to the kernel's mcp role requires updating the Dockerfile and environment variable handling. This is a significant engineering task tracked in the infrastructure work plan as a prerequisite for the first live kernel node.## §VI. Provenance Manifest
+Phase 3 note: Migrating the Gravity Well Render deployment to the kernel's mcp role requires updating the Dockerfile and environment variable handling. This is a significant engineering task tracked in the infrastructure work plan as a prerequisite for the first live kernel node.
+
+## §VI. Provenance Manifest
 
 {
   "@context": {
@@ -428,7 +482,9 @@ Phase 2 — Implementation deposit:The repository as a software deposit. The zip
 
 Phase 3 — First live node:The Gravity Well MCP server becomes the first node in the kernel. Its Docker configuration moves into kernel/roles/mcp/. The Gravity Well Render deployment is migrated to run from the kernel. The kernel is no longer theoretical.
 
-Phase 4 — Self-mapping:The Aperture Atlas topology (surfacemap.org) includes holographic-infra as a node (INFRASTRUCTURE type, subtype: kernel). kernel/orchestrator/topology.sh exports the current node state as JSON-LD for ingestion into the Aperture Atlas. The graph maps the infrastructure that runs the graph.## §VIII. The Novel Claim
+Phase 4 — Self-mapping:The Aperture Atlas topology (surfacemap.org) includes holographic-infra as a node (INFRASTRUCTURE type, subtype: kernel). kernel/orchestrator/topology.sh exports the current node state as JSON-LD for ingestion into the Aperture Atlas. The graph maps the infrastructure that runs the graph.
+
+## §VIII. The Novel Claim
 
 Existing systems preserve software releases (Zenodo/GitHub), attest build provenance (SLSA/in-toto), and reproduce environments (Nix). EA-HK-INFRA-01 makes a narrower and stronger claim: infrastructure can be deposited as a holographic kernel — not merely archived, but made reconstructive.
 

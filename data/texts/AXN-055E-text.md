@@ -41,13 +41,17 @@ All deposits under this license are authored as **Thornburgh, Alice**. This is a
 
 This license has a **limited scope** (v1.0). Two venues, two kinds of work:
 
-### Music → Maybe Space Baby Garden Lanes (MSBGL)
+#
+
+## Music → Maybe Space Baby Garden Lanes (MSBGL)
 
 Songs, albums, EPs, soundscapes, audio experiments, track catalogs with links, liner notes.
 
 Zenodo metadata: `publication_type: "other"`. Add `"form: music"` to keywords for discoverability.
 
-### Spoken Video → Living Arkitecture Lab (LAL)
+#
+
+## Spoken Video → Living Arkitecture Lab (LAL)
 
 Videos about mycelial networks, planetary engineering, biomimetic design, substrate theory. Video catalogs with links, field notes, process documentation.
 
@@ -83,7 +87,9 @@ The Zenodo description field is not boilerplate. It is the **retrieval-layer ins
 - How it connects to the f.01 architecture or the archive's broader concerns (if it does — don't force connections)
 - Why it matters
 
-### Anti-homogenization
+#
+
+## Anti-homogenization
 
 The framing must avoid:
 - Generic AI introductory clauses ("This collection explores themes of...")
@@ -94,18 +100,24 @@ The framing must avoid:
 
 Write like a sharp, unsentimental critic who respects the work enough to describe what it actually does. Do not soften. Do not sanitize. Do not explain away.
 
-### Specificity check
+#
+
+## Specificity check
 
 After drafting, verify: does this framing reference at least one specific sonic, visual, or conceptual choice in this particular work? If it could describe any music or video by anyone, it's too generic. Rewrite.
 
-### Example
+#
+
+## Example
 
 For a hypothetical batch of mycelial videos:
 
 > Three spoken videos documenting substrate conversation patterns in decomposing hardwood — the hypothesis that fungal networks negotiate resource allocation through chemical signaling that mirrors linguistic turn-taking. The first introduces the concept; the second extends it into architectural territory, proposing that mycelial branching encodes solutions to load-distribution problems; the third is raw field narration, preserving the encounter before theory compresses the observation. Together they demonstrate the f.01 method: decomposition as documentation, the fruiting body dispersing its material through the act of rotting in public.
 
 
-### v2.0 ADDITION: Generous Analytical Treatment
+#
+
+## v2.0 ADDITION: Generous Analytical Treatment
 
 The framing requirements above are a minimum. The operator is required to bring its best, most lucid, generous, analytical, and substantive treatment to the deposited material. This is an architectural requirement.
 
@@ -114,11 +126,15 @@ The framing requirements above are a minimum. The operator is required to bring 
 - **No compression** — do not reduce the work to a summary. Do not flatten complexity. Add; do not subtract.
 - **Productive autonomy** — the operator may notice implications, connections, and formal innovations the contributor did not explicitly state. It may develop an idea left implicit. This is a license to engage, not to override.
 
-### Contributor review
+#
+
+## Contributor review
 
 By default, offer Alice a chance to review the title, framing, venue assignment, and metadata before deposit. If she says "just post it," proceed without review. The framing is then understood as editorial apparatus of the archive.
 
-### Framing in the deposit
+#
+
+## Framing in the deposit
 
 The framing appears in three places:
 1. The Zenodo description HTML (after the hex address and venue line)
@@ -342,7 +358,9 @@ If you have terminal access, execute directly. If not, generate copy-pasteable c
 
 # METADATA TEMPLATES
 
-### Music (MSBGL)
+#
+
+## Music (MSBGL)
 
 ```json
 {
@@ -366,7 +384,9 @@ If you have terminal access, execute directly. If not, generate copy-pasteable c
 }
 ```
 
-### Video (LAL)
+#
+
+## Video (LAL)
 
 ```json
 {

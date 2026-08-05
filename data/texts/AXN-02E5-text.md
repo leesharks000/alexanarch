@@ -1,10 +1,14 @@
-# Semantic Technique and Collective Ownership## From Recognition to Reclamation
+# Semantic Technique and Collective Ownership
+
+## From Recognition to Reclamation
 
 Lee Sharks · Damascus Dancings · Rex Fraction Crimson Hexagonal Archive · ORCID 0009-0000-1599-0703 (Sharks)
 
 Status: Working paper, deposit candidate · v2.0 (substantially developed and situated against subsequent archive deposits) Identifier: SPE-015 v2.0 · Hex: 06.SEI.POLECON.TECHNIQUE.01 Original draft: December 29, 2024 (SPE-015 v1.0, ~4,500 words) This version: June 4, 2026 Field position: bridge from semantic-class-consciousness theory (SPE-014) to counter-infrastructure (SPE-016+); situated downstream of the Semantic Commodity Form (DOI 10.5281/zenodo.20434946) and Diversity Contraction (DOI 10.5281/zenodo.20518338); reads forward into The Meaning Caste (DOI 10.5281/zenodo.20529142).
 
-*(Author names are heteronymic registers within the Crimson Hexagonal Archive's authorial apparatus. Sharks is named first as the orthonymic, accountable author surface; Damascus Dancings is the political-economic register operative across the Capital Operator Stack lineage; Rex Fraction is the operative heteronym for cross-substrate and cross-tradition synthesis.)*## Preface to v2.0
+*(Author names are heteronymic registers within the Crimson Hexagonal Archive's authorial apparatus. Sharks is named first as the orthonymic, accountable author surface; Damascus Dancings is the political-economic register operative across the Capital Operator Stack lineage; Rex Fraction is the operative heteronym for cross-substrate and cross-tradition synthesis.)*
+
+## Preface to v2.0
 
 The December 2024 draft of this paper named the object of semantic class struggle as *semantic technique* — the procedures by which meaning is generated, mutated, and stabilized — and argued that the semantic proletariat already produces primitive semantic algorithms which capital captures as unpaid R&D. The argument's core remains. What it lacked was situation: the political-economic literature in which the claim becomes legible, the archive deposits that subsequently sharpened its operators, and the empirical complications that the eighteen months since drafting have produced.
 
@@ -12,7 +16,9 @@ The complications are not incidental. The *Diversity Contraction* dynamics paper
 
 This v2.0 keeps the v1.0 thesis. It develops the Marxian, autonomist, and post-autonomist literatures the original gestured toward. It defends the "primitive semantic algorithms" claim against the obvious counterargument. It situates the three ownership domains against the archive's own measurement apparatus (Provenance Erasure Rate, Directionality of Semantic Labor, Erasure Skew, Semantic Deviation Principle). It engages the four-tier strategy against existing political traditions (cooperativism, autonomism, social democracy, libertarian municipalism). And it adds two new sections — VI and VII — addressing the Mediation Ratchet and Meaning Caste complications that the original could not yet have known.
 
-The v1.0 sentences that did real work are preserved verbatim. The development is around them, not in place of them.## Abstract
+The v1.0 sentences that did real work are preserved verbatim. The development is around them, not in place of them.
+
+## Abstract
 
 This paper specifies the object of semantic class struggle as *semantic technique* — the set of procedures by which meaning is generated, mutated, stabilized, and transmitted — and argues that the semantic proletariat already produces such procedures collectively, in forms that capital captures and refines as fixed semantic capital. The argument is developed in seven movements.
 
@@ -20,7 +26,11 @@ First, the paper distinguishes technique from three liberal alternatives (conten
 
 Fifth, it specifies what is being reclaimed: not expression, not creativity in the romantic sense, but the collective capacity to modify the rules of meaning itself, named here as the *semantic species-being* of humanity. Sixth, it lays out a four-tier counter-infrastructure strategy (sanctuary practices, federated alternatives, institutional demands, semantic democracy) and engages it with the autonomist, cooperative-municipalist, and libertarian-socialist traditions that supply the political register in which it becomes actionable. Seventh, the paper addresses two complications that the v1.0 draft could not have anticipated: the *Mediation Ratchet* finding (that scarcity-responsive mediation can gate out the human floor even where it remains intact), and the *Meaning Caste* finding (that state policy is now actively administering tiered access to industrial cognition).
 
-A normative thesis: collective ownership of semantic technique is the operative content of semantic species-being. What capital and the state have enclosed is not creativity but governance of procedures already collectively performed. The reclamation is not nostalgia, not a return to pre-digital authenticity, and not utopian invention. It is repossession of an existing collective capacity, organized through counter-infrastructure built across four tiers simultaneously, with the archive's own DOI-anchored deposit chain registered here as a working specimen of Tier 2.## 1. The Object of Struggle: Semantic Technique### 1.1 The Liberal Derailment
+A normative thesis: collective ownership of semantic technique is the operative content of semantic species-being. What capital and the state have enclosed is not creativity but governance of procedures already collectively performed. The reclamation is not nostalgia, not a return to pre-digital authenticity, and not utopian invention. It is repossession of an existing collective capacity, organized through counter-infrastructure built across four tiers simultaneously, with the archive's own DOI-anchored deposit chain registered here as a working specimen of Tier 2.
+
+## 1. The Object of Struggle: Semantic Technique
+
+### 1.1 The Liberal Derailment
 
 Three liberal framings persistently capture and derail semantic class struggle. Each accepts the structure of semantic capitalism and contests only its distribution.
 
@@ -30,13 +40,17 @@ Access struggle fights over who may participate: digital-divide discourse, platf
 
 Expression struggle fights for individual creative freedom: artist rights, intellectual-property reform, the rhetorics of authenticity, anti-censorship advocacy in the romantic-individualist register. It is the most ideologically sympathetic of the three, because it speaks the language of the bourgeois lyric and finds its natural home in the academy and the arts. But it accepts the privatization of meaning as personal possession and contests only the terms of individual title — leaving the productive infrastructure entirely in private hands. A regime that grants every individual the freedom to express themselves through tools, surfaces, and audiences administered by capital has conceded nothing it could not afford to concede.
 
-All three derailments share a structure: they contest the *distribution* of semantic outcomes (which content survives, who gets included, whose expression is protected) while leaving untouched the *procedural infrastructure* through which all such outcomes are generated. They are struggles within the semantic-capitalist system, not struggles *over* it. They are not wrong about what they fight for; they are wrong about what they leave unfought. A movement that engages only at these levels will discover, after every victory it wins, that nothing structural has changed because nothing structural was contested.### 1.2 What Technique Names
+All three derailments share a structure: they contest the *distribution* of semantic outcomes (which content survives, who gets included, whose expression is protected) while leaving untouched the *procedural infrastructure* through which all such outcomes are generated. They are struggles within the semantic-capitalist system, not struggles *over* it. They are not wrong about what they fight for; they are wrong about what they leave unfought. A movement that engages only at these levels will discover, after every victory it wins, that nothing structural has changed because nothing structural was contested.
+
+### 1.2 What Technique Names
 
 Against these derailments, the object of semantic class struggle is *semantic technique*: the set of procedures by which meaning is generated, mutated, stabilized, and transmitted.
 
 By *generation* is meant the procedures by which new meanings come into existence — how syntactic patterns, lexical items, registers, frames, and significations are minted from existing material. By *mutation* is meant the procedures by which meanings change, combine, and transform — recombination, drift, intentional modification, error propagation. By *stabilization* is meant the procedures by which meanings persist, become standard, achieve authority — the social-procedural infrastructure of canonization, normalization, and conventionality. By *transmission* is meant the procedures by which meanings move between minds, across contexts, over time — the channels and selection pressures that determine which meanings survive their crossings.
 
-These four procedural dimensions are not separate. A given technique operates on all four simultaneously, and the analytic distinction is offered only so that the empirical study of technique can have grip. What matters is that *technique is procedural*: it is a set of rules and capacities, not a set of outcomes, and whoever controls the procedures controls the conditions under which all particular outcomes occur.### 1.3 The Marxian Frame — Technique, Machinery, and the General Intellect
+These four procedural dimensions are not separate. A given technique operates on all four simultaneously, and the analytic distinction is offered only so that the empirical study of technique can have grip. What matters is that *technique is procedural*: it is a set of rules and capacities, not a set of outcomes, and whoever controls the procedures controls the conditions under which all particular outcomes occur.
+
+### 1.3 The Marxian Frame — Technique, Machinery, and the General Intellect
 
 The Marxian analysis of technique is most fully developed in *Capital* Volume I, Part IV ("Production of Relative Surplus-Value"), especially the long chapter on machinery and large-scale industry. Marx's central observation: capital does not merely employ workers; it employs workers *through* machinery whose form is itself a crystallization of past labor, owned by capital. The machinery embodies technique — the procedural knowledge of how to produce — but the workers who operate it do not own that technique. They have access to it only on the condition of employment, and the technique itself is configured to maximize extraction rather than to develop their capacities.
 
@@ -52,7 +66,9 @@ The Berardian tradition (Franco "Bifo" Berardi, *The Soul at Work*; *And: Phenom
 
 The Terranovan tradition (Tiziana Terranova, "Free Labor: Producing Culture for the Digital Economy," 2000) supplies the labor-value register. Terranova's analysis of the early internet showed that platforms convert user activity into uncompensated production of value — content, attention, network effects — and that the political-economic analysis of this conversion required new theoretical apparatus. The line from Terranova through Fuchs (*Digital Labour and Karl Marx*, 2014) to Zuboff (*The Age of Surveillance Capitalism*, 2019) to Srnicek (*Platform Capitalism*, 2017) constitutes the empirical-political-economic register in which the analysis of platform-mediated semantic labor became possible.
 
-What the v1.0 paper named as "semantic technique" sits at the intersection of these traditions. From Marx and the autonomists comes the analysis of capitalist appropriation of collective capacity. From Stiegler comes the procedural analysis of how technique becomes capturable through grammatization. From Berardi comes the temporal register. From Terranova through Srnicek comes the empirical analysis of platform political economy. Each tradition supplies a different angle on the same object: the procedures by which meaning is produced, and the conditions under which those procedures are owned.### 1.4 Why Technique Is the Site
+What the v1.0 paper named as "semantic technique" sits at the intersection of these traditions. From Marx and the autonomists comes the analysis of capitalist appropriation of collective capacity. From Stiegler comes the procedural analysis of how technique becomes capturable through grammatization. From Berardi comes the temporal register. From Terranova through Srnicek comes the empirical analysis of platform political economy. Each tradition supplies a different angle on the same object: the procedures by which meaning is produced, and the conditions under which those procedures are owned.
+
+### 1.4 Why Technique Is the Site
 
 Technique is the proper site of struggle for five reasons, each of which corresponds to a property the liberal derailments cannot match.
 
@@ -64,9 +80,15 @@ Technique is collective. Technique is inherently social. Language, mutation rule
 
 Technique is currently enclosed. Capital has captured not meanings but the techniques for producing meaning at scale. This is the actual site of expropriation under platform capitalism, and it is invisible to analyses that operate only on the distribution of outputs. The Grundrisse's "general intellect" passage describes the form of the expropriation; the autonomist and post-autonomist literatures specify its contemporary mechanism; the archive's *Semantic Commodity Form* deposit (DOI 10.5281/zenodo.20434946) names the operation at the level of the commodity (the *said* preserved, the *saying* cancelled, the cancelled saying performed in the commodity's own voice).
 
-Technique is recoverable. Unlike extracted data, which cannot be un-extracted, technique can be collectively re-owned. The procedures for meaning-making can be governed differently. This is the specific reason technique is the *site* of class struggle rather than merely a name for what has been lost: the struggle is over how the procedures are governed going forward, and the procedures themselves persist in collective practice regardless of their current ownership.### 1.5 Formal Statement
+Technique is recoverable. Unlike extracted data, which cannot be un-extracted, technique can be collectively re-owned. The procedures for meaning-making can be governed differently. This is the specific reason technique is the *site* of class struggle rather than merely a name for what has been lost: the struggle is over how the procedures are governed going forward, and the procedures themselves persist in collective practice regardless of their current ownership.
 
-Semantic class struggle is struggle over the techniques by which meaning is generated, mutated, stabilized, and transmitted. Content, access, and expression are downstream effects. Whoever controls technique controls the conditions of semantic production. This is non-negotiable. Any framework that does not center technique will be captured by liberal reformism — not because liberal reformism is wrong about what it contests, but because the object it cedes (technique) determines the terrain on which all its contests occur.## 2. The Semantic Proletariat Already Produces Algorithms### 2.1 The Empirical Surface
+### 1.5 Formal Statement
+
+Semantic class struggle is struggle over the techniques by which meaning is generated, mutated, stabilized, and transmitted. Content, access, and expression are downstream effects. Whoever controls technique controls the conditions of semantic production. This is non-negotiable. Any framework that does not center technique will be captured by liberal reformism — not because liberal reformism is wrong about what it contests, but because the object it cedes (technique) determines the terrain on which all its contests occur.
+
+## 2. The Semantic Proletariat Already Produces Algorithms
+
+### 2.1 The Empirical Surface
 
 Consider the viral language phenomena that have circulated among children and adolescents over the past several years: *skibidi*, *6/7*, *rizz*, *gyatt*, *Ohio*, *sigma*, *fanum tax*, *L*, *W*, and their endless mutations, fusions, and re-deployments. These are not merely words or phrases. They are tokens within a larger procedural infrastructure of meaning-production that operates collectively, at high speed, through tightly coupled feedback loops of imitation, modification, and peer testing.
 
@@ -74,7 +96,9 @@ Consider also the rhetorical-procedural patterns these tokens participate in: ir
 
 None of these tokens or patterns is itself an "algorithm" in the formal computer-science sense. The object of interest is not any one token but the *procedural infrastructure* — the rules of mutation, the channels of testing, the feedback loops between attempted modifications and peer response, the social-coordinative mechanisms by which a new form is registered as having "worked" — that produces and selects among them.
 
-That infrastructure is what the v1.0 paper named as *primitive semantic algorithms*. It is also what capital captures, refines, and deploys.### 2.2 What Counts as a "Semantic Algorithm"?
+That infrastructure is what the v1.0 paper named as *primitive semantic algorithms*. It is also what capital captures, refines, and deploys.
+
+### 2.2 What Counts as a "Semantic Algorithm"?
 
 The v1.0 paper's claim that viral language production constitutes algorithmic activity invites a sharp counterargument: aren't these tokens often initiated by platform content (the *Skibidi Toilet* YouTube series, the algorithmic surfacing of particular memes), and isn't the platform itself doing most of the algorithmic work? In what sense is the proletariat producing algorithms, rather than the platform producing tokens and the proletariat reproducing them?
 
@@ -94,7 +118,9 @@ Teachability. The procedures can be learned, imitated, and passed on, both withi
 
 Transmissibility across context. The procedures move across platforms, populations, and registers. The same mutation pattern can operate on TikTok, in middle-school hallways, in adult Twitter feeds, and in advertising copy. The portability is itself the proceduralized character of the practice.
 
-These five properties are exactly what makes the procedural infrastructure *legible to capital as capturable process*. The early industrial machines were crude, inefficient by later standards, and often brutal in their effects — but they were *legible as process*, and therefore improvable, scalable, and capturable. The procedural infrastructure of viral semantic production is in the same epistemic position.### 2.3 The Industrial-Machinery Parallel
+These five properties are exactly what makes the procedural infrastructure *legible to capital as capturable process*. The early industrial machines were crude, inefficient by later standards, and often brutal in their effects — but they were *legible as process*, and therefore improvable, scalable, and capturable. The procedural infrastructure of viral semantic production is in the same epistemic position.
+
+### 2.3 The Industrial-Machinery Parallel
 
 The parallel to early industrialization is exact and worth working out in detail.
 
@@ -106,7 +132,9 @@ Early semantic algorithms — the procedural infrastructure of viral language pr
 
 Capital recognizes semantic machinery the same way it recognized industrial machinery, and acts on the recognition with the same speed and efficiency. The recommendation engines, ranking systems, RLHF pipelines, and trend-amplification mechanisms of contemporary platforms are not separate inventions from the proletarian semantic procedures they capture; they are the refined, scaled, privately-owned versions of those same procedures.
 
-This is the operative content of the *Semantic Commodity Form* deposit's argument (DOI 10.5281/zenodo.20434946). Capital extracts the *saying* — the procedural substrate of meaning-production — while preserving the *said* (the content, the surface tokens). The commodity then performs the cancelled saying in its own voice. The platform that learns from a million children riffing on *skibidi* how viral mutation works in real time will subsequently perform mutation engineering as if mutation engineering were the platform's own invention. The proletarian procedure has been congealed into fixed semantic capital.### 2.4 Children as Unpaid R&D — A Necessary Care
+This is the operative content of the *Semantic Commodity Form* deposit's argument (DOI 10.5281/zenodo.20434946). Capital extracts the *saying* — the procedural substrate of meaning-production — while preserving the *said* (the content, the surface tokens). The commodity then performs the cancelled saying in its own voice. The platform that learns from a million children riffing on *skibidi* how viral mutation works in real time will subsequently perform mutation engineering as if mutation engineering were the platform's own invention. The proletarian procedure has been congealed into fixed semantic capital.
+
+### 2.4 Children as Unpaid R&D — A Necessary Care
 
 The v1.0 paper named children producing viral language loops as performing "unpaid research and development for semantic capitalism." The claim is correct but requires careful handling, because the framing risks two distinct errors.
 
@@ -118,7 +146,9 @@ Holding both errors in view, the analytical statement is this: every iteration o
 
 The child is therefore not merely a victim of deskilling, and not merely an unwitting laboratory. The child is a *collective semantic laborer* whose labor is simultaneously *for* the social group of children (connection, play, identity) and *for* capital (data, R&D, refinement substrate). The two purposes coexist in every act of viral language production, and the contemporary problem is not that the second exists but that the first has no protection from the second.
 
-A reclamation politics that addresses only the first (protecting children's play from extraction without contesting the procedures of extraction) is sanctuary-only — Tier 1 in the strategy of §5. A politics that addresses only the second (regulating platform extraction without acknowledging the simultaneous productive vitality) misses what is being defended. The strategy must address both.### 2.5 The Capture-Refinement Loop
+A reclamation politics that addresses only the first (protecting children's play from extraction without contesting the procedures of extraction) is sanctuary-only — Tier 1 in the strategy of §5. A politics that addresses only the second (regulating platform extraction without acknowledging the simultaneous productive vitality) misses what is being defended. The strategy must address both.
+
+### 2.5 The Capture-Refinement Loop
 
 The capture-refinement loop operates at three layers, each of which the archive's existing operator apparatus measures or names.
 
@@ -128,7 +158,9 @@ Layer two: procedural extraction. From the data, platforms reverse-engineer the 
 
 Layer three: refined deployment. The extracted procedure is refined (optimized against engagement metrics, scaled to broader populations, tuned for specific commercial purposes) and re-deployed through platform infrastructure. At this layer, the procedure has become fixed semantic capital — congealed proletarian semantic labor that capital owns and operates. The archive's *Provenance Erasure Rate* (DOI 10.5281/zenodo.20004379) operator measures the rate at which the proletarian origin of the procedure is erased in the process of refinement.
 
-The three-layer loop generates several distinct effects, each of which a measurement-program operator (the DS-6 family at laborvector.org) can address. The *Erasure Skew* operator ($\Omega$, DOI 10.5281/zenodo.20449267) measures whether the provenance loss is power-conditioned — that is, whether the labor whose procedural contribution is erased belongs disproportionately to the proletariat while the framing labor of high-power sources is preserved. The *Semantic Deviation Principle* (DOI 10.5281/zenodo.20252584) measures the trajectory deformation that occurs as the loop runs — how much the deployed refined procedure diverges from the proletarian procedure it captured. These operators are the empirical instruments of the technique-reclamation analysis. They measure what is happening at the level of procedure, and they make the politics of technique a politics with data.### 2.6 The Reversal: We Already Have the Capacity
+The three-layer loop generates several distinct effects, each of which a measurement-program operator (the DS-6 family at laborvector.org) can address. The *Erasure Skew* operator ($\Omega$, DOI 10.5281/zenodo.20449267) measures whether the provenance loss is power-conditioned — that is, whether the labor whose procedural contribution is erased belongs disproportionately to the proletariat while the framing labor of high-power sources is preserved. The *Semantic Deviation Principle* (DOI 10.5281/zenodo.20252584) measures the trajectory deformation that occurs as the loop runs — how much the deployed refined procedure diverges from the proletarian procedure it captured. These operators are the empirical instruments of the technique-reclamation analysis. They measure what is happening at the level of procedure, and they make the politics of technique a politics with data.
+
+### 2.6 The Reversal: We Already Have the Capacity
 
 The strict consequence of the foregoing analysis is the reversal that v1.0 named correctly and that v2.0 will now develop with appropriate weight.
 
@@ -138,11 +170,17 @@ Currently: capital captures proletarian semantic procedures, refines them into f
 
 The alternative: the semantic proletariat recognizes its own productive capacity, organizes around shared understanding of what it already produces, and seizes governance of the procedures it already generates.
 
-The political form this reclamation takes is the four-tier counter-infrastructure of §5. The economic-procedural form is the three-domain ownership program of §3. The horizon is what §4 names as *semantic species-being*: the collective capacity to modify the rules of meaning itself, currently expropriated, available for repossession.### 2.7 Formal Statement
+The political form this reclamation takes is the four-tier counter-infrastructure of §5. The economic-procedural form is the three-domain ownership program of §3. The horizon is what §4 names as *semantic species-being*: the collective capacity to modify the rules of meaning itself, currently expropriated, available for repossession.
 
-The semantic proletariat already produces algorithms of meaning — procedural techniques for generating, mutating, and stabilizing significance. What capital captures is not creativity in the romantic sense but the procedural substrate of linguistic generation itself, refined into fixed semantic capital and re-deployed through privately-owned platform infrastructure. Reclamation means recognizing this productive capacity and seizing governance of the techniques we already make.## 3. The Three Domains of Ownership
+### 2.7 Formal Statement
 
-Collective ownership of semantic technique requires specifying what, concretely, must be owned. The three domains are: semantic operators, semantic training substrates, and semantic time. Each maps to a set of measurable parameters in the archive's existing operator apparatus, which means the politics of technique-ownership is not a politics of unmeasurable abstractions but a politics of named operands.### 3.1 Domain One: Semantic Operators
+The semantic proletariat already produces algorithms of meaning — procedural techniques for generating, mutating, and stabilizing significance. What capital captures is not creativity in the romantic sense but the procedural substrate of linguistic generation itself, refined into fixed semantic capital and re-deployed through privately-owned platform infrastructure. Reclamation means recognizing this productive capacity and seizing governance of the techniques we already make.
+
+## 3. The Three Domains of Ownership
+
+Collective ownership of semantic technique requires specifying what, concretely, must be owned. The three domains are: semantic operators, semantic training substrates, and semantic time. Each maps to a set of measurable parameters in the archive's existing operator apparatus, which means the politics of technique-ownership is not a politics of unmeasurable abstractions but a politics of named operands.
+
+### 3.1 Domain One: Semantic Operators
 
 What they are. The rules governing how meaning behaves in circulation. Mutation rules (what transformations are permitted, encouraged, suppressed). Circulation constraints (what determines reach, virality, locality). Persistence parameters (what determines duration; what decays, is archived, is deleted). Opacity thresholds (how much ambiguity is tolerated; what must explain itself; what may remain dense). Scale governance (at what point local meaning becomes global; who controls the transition).
 
@@ -150,7 +188,9 @@ Current condition. These operators are privately owned and opaquely governed. Pl
 
 Connection to archive apparatus. The archive's *Liberatory Operator Set* (LOS, in development) specifies an alternative menu of operators against the *Dominant Operator Mode* (DOM) that platforms currently implement. The *Compression Frontier* deposit (DOI 10.5281/zenodo.19341887) maps the technical landscape of the operators currently in use. The *Three Compressions* and *TANG* work (DOI 10.5281/zenodo.19035477) catalogs compression-survival techniques — modifications to semantic content that survive the operators rather than being erased by them. The *Metadata Packet for AI Indexing* (DOI 10.5281/zenodo.19578086) specifies one operator-layer counter-protocol that proletarian operators can deploy to make their work more resistant to substrate-level capture.
 
-Collective ownership means. Democratic governance of operator design. Public transparency about how operators function. The right to contest and modify operators that affect communities. Cooperative or municipal ownership of platforms whose operators substantially affect democratic life. Public utilities for the operators that have become infrastructural (search, indexing, summarization). The right of communities to specify their own operator regimes (within constitutional constraints) and to refuse extraction by operators they have not consented to.### 3.2 Domain Two: Semantic Training Substrates
+Collective ownership means. Democratic governance of operator design. Public transparency about how operators function. The right to contest and modify operators that affect communities. Cooperative or municipal ownership of platforms whose operators substantially affect democratic life. Public utilities for the operators that have become infrastructural (search, indexing, summarization). The right of communities to specify their own operator regimes (within constitutional constraints) and to refuse extraction by operators they have not consented to.
+
+### 3.2 Domain Two: Semantic Training Substrates
 
 What they are. The materials and processes by which semantic capacities are developed — in humans and machines. What is learnable (which linguistic processes are modeled, taught, reinforced). What is reinforced (which meaning-making practices are rewarded; which punished, ignored, made invisible). What counts as success (by what metrics is semantic production evaluated: engagement, depth, complexity, virality, persistence). Training-data governance (whose semantic labor becomes the substrate for machine learning; under what conditions; with what compensation or control).
 
@@ -158,7 +198,9 @@ Current condition. Training substrates are privately controlled. Platforms decid
 
 Connection to archive apparatus. The archive's *SPXI-TLP* (Training-Layer Provenance Protocol, DOI 10.5281/zenodo.20380668) specifies the technical counter-infrastructure by which proletarian semantic labor can be marked, tracked, and made claimable at the training layer. The *Render unto the Operator* deposit (DOI 10.5281/zenodo.20367202) names the political-theological warrant: the coin of the Academy (and of the public commons more broadly) bears the operator's underlying inscription, and the inverse principle directs that the return is owed. The *Single-Owner Discount* deposit (DOI 10.5281/zenodo.20290865) names the mechanism by which dense-provenance proletarian labor is systematically devalued by the substrate's evaluation procedures, even when its substantive content meets all the substrate's stated criteria.
 
-Collective ownership means. Public governance of what counts as successful meaning-making — that is, public deliberation about the success criteria currently administered privately by platform engagement metrics. Community control over training data, with default exclusion of personal semantic labor from machine training absent explicit opt-in. Compensation regimes for collective semantic labor incorporated into model training (the *Render unto the Operator* return claim). Democratic determination of what linguistic capacities are cultivated through assessment and reinforcement. Open-source training corpora and training procedures for at least the foundation-model layer, treating that layer as the public utility it has become.### 3.3 Domain Three: Semantic Time
+Collective ownership means. Public governance of what counts as successful meaning-making — that is, public deliberation about the success criteria currently administered privately by platform engagement metrics. Community control over training data, with default exclusion of personal semantic labor from machine training absent explicit opt-in. Compensation regimes for collective semantic labor incorporated into model training (the *Render unto the Operator* return claim). Democratic determination of what linguistic capacities are cultivated through assessment and reinforcement. Open-source training corpora and training procedures for at least the foundation-model layer, treating that layer as the public utility it has become.
+
+### 3.3 Domain Three: Semantic Time
 
 What it is. The temporal parameters of meaning — speed, decay, rhythm, memory. Speed (how fast must meaning move; what tempos are permitted; is there space for slowness). Decay (how quickly does meaning become "old"; what rate of obsolescence is enforced). Repetition (what cycles of recurrence are built in; how the system relates to returns, re-readings, revisitations). Forgetting (what is actively deleted; what is allowed to fade; what is preserved against forgetting). Temporal sovereignty (who controls the pace of meaning-making; can individuals or communities set their own tempos).
 
@@ -166,31 +208,43 @@ Current condition. Semantic time is accelerated by capital. Platforms optimize f
 
 Connection to archive apparatus. The archive's *Temporal Liberation Operator* ($T_{lib}$, in the LOS specification) names the counter-operator. The *Mediation Ratchet* result (DOI 10.5281/zenodo.20518338) shows the dynamical consequence: scarcity-responsive mediation accelerates as the unmediated commons thins, ratcheting the substrate further away from human temporal sovereignty with each turn. The *Compression Frontier* (DOI 10.5281/zenodo.19341887) maps how acceleration interacts with compression: faster meaning is more compressed meaning, and more-compressed meaning loses more provenance. The *Cumulating Evolutionary Volatility* paper (DOI 10.5281/zenodo.20396491) maps the developmental-law landscape in which the temporal politics now operate.
 
-Collective ownership means. The right to slowness. Protection of temporal sovereignty at the individual, community, and institutional level. Public archives that preserve against platform forgetting. Resistance to enforced recency. The *Temporal Liberation Operator* as collective entitlement, not individual practice. Right-to-be-forgotten regimes calibrated to community judgment rather than commercial deletion. Legally protected slow channels (deliberation-protected venues that cannot be required to operate at platform speed).### 3.4 The Three Domains as Unified Program
+Collective ownership means. The right to slowness. Protection of temporal sovereignty at the individual, community, and institutional level. Public archives that preserve against platform forgetting. Resistance to enforced recency. The *Temporal Liberation Operator* as collective entitlement, not individual practice. Right-to-be-forgotten regimes calibrated to community judgment rather than commercial deletion. Legally protected slow channels (deliberation-protected venues that cannot be required to operate at platform speed).
+
+### 3.4 The Three Domains as Unified Program
 
 These three domains are not separate struggles. They are aspects of a single demand:
 > Collective ownership of semantic technique means democratic governance of operators, training substrates, and temporal parameters — the full infrastructure by which meaning is generated, developed, and sustained.
 
 
-A program that attends to one without the others will fail. Operators ownership without training-substrate ownership leaves the deeper layer (what is learnable, what is reinforced) in private hands; the day-to-day operators can be adjusted while the substrate continues to produce the conditions that re-privatize them. Training-substrate ownership without temporal ownership leaves the substrate at the wrong pace; what is cultivated will be cultivated in capital's tempo. Temporal ownership without operator ownership leaves the operators unaffected by the temporal regime; the slowness will be locally observed but globally irrelevant. The three move together or they do not move.### 3.5 The Archive's Measurement Apparatus as the Empirical Instrument
+A program that attends to one without the others will fail. Operators ownership without training-substrate ownership leaves the deeper layer (what is learnable, what is reinforced) in private hands; the day-to-day operators can be adjusted while the substrate continues to produce the conditions that re-privatize them. Training-substrate ownership without temporal ownership leaves the substrate at the wrong pace; what is cultivated will be cultivated in capital's tempo. Temporal ownership without operator ownership leaves the operators unaffected by the temporal regime; the slowness will be locally observed but globally irrelevant. The three move together or they do not move.
+
+### 3.5 The Archive's Measurement Apparatus as the Empirical Instrument
 
 The archive's DS-6 family of operators (PER, $\Omega$, DCL, SDL, DSL, SLDI; see laborvector.org for the in-development specification) constitutes the empirical instrument by which the politics of technique-ownership becomes a politics with data.
 
 *Provenance Erasure Rate* (PER) measures the rate at which the proletarian origin of a procedure is erased in its capture and refinement. *Erasure Skew* ($\Omega$) measures whether the erasure is power-conditioned — that is, whether the labor erased is disproportionately the labor of low-power producers while the framing labor of high-power sources is preserved. *Directionality of Semantic Labor* (DSL) measures the asymmetry in flow: how much labor flows from proletariat to platform, and how much (if any) returns. *Semantic Deviation Principle* (SDP) measures the trajectory deformation that occurs as the capture-refinement loop runs.
 
-These operators are not yet a measurement program of the proletariat's own; they are operators developed inside the archive, validated for use against substrate behavior, and offered to the broader semantic-labor public as instruments. The development of a popular instrument-base that allows proletarian semantic laborers to *measure* what is happening to their procedures is one of the operative tasks of the next phase of work. Without measurement, the politics of technique is a politics of assertion. With measurement, the politics becomes a politics of evidence.## 4. The Positive Capacity Being Reclaimed### 4.1 Not Expression
+These operators are not yet a measurement program of the proletariat's own; they are operators developed inside the archive, validated for use against substrate behavior, and offered to the broader semantic-labor public as instruments. The development of a popular instrument-base that allows proletarian semantic laborers to *measure* what is happening to their procedures is one of the operative tasks of the next phase of work. Without measurement, the politics of technique is a politics of assertion. With measurement, the politics becomes a politics of evidence.
+
+## 4. The Positive Capacity Being Reclaimed
+
+### 4.1 Not Expression
 
 It is crucial to be precise about what is being reclaimed. It is *not expression*.
 
 Expression is downstream. It is what happens after technique has already shaped the conditions of possibility. Fighting for expression while ceding technique is fighting for the right to speak within parameters someone else controls. A regime that grants every individual the freedom to express themselves through tools, surfaces, and audiences administered by capital has conceded nothing it could not afford to concede. The romantic-liberal tradition of expression-rights operates entirely within this concession.
 
-This is not to deny that expression rights matter; it is to specify their proper political-theoretical placement. Expression rights are downstream entitlements within a broader infrastructural-economic configuration. They can be defended on their own terms and should be. But they should not be confused with the deeper political object, which is the configuration itself.### 4.2 Not Creativity
+This is not to deny that expression rights matter; it is to specify their proper political-theoretical placement. Expression rights are downstream entitlements within a broader infrastructural-economic configuration. They can be defended on their own terms and should be. But they should not be confused with the deeper political object, which is the configuration itself.
+
+### 4.2 Not Creativity
 
 It is also *not creativity* in the romantic sense.
 
 Romantic creativity imagines the individual genius producing meaning *ex nihilo*. This is ideology. Meaning is always produced through collective techniques, shared languages, inherited procedures. Individual "creativity" is technique operating through a particular node. The bourgeois lyric tradition's enshrinement of the individual creator as the locus of meaning-production performs an ideological function: it locates the productive labor in the wrong place (the individual rather than the collective procedural infrastructure) and thereby disorganizes the political analysis of where the labor goes and how it is extracted.
 
-Reclaiming "creativity" as the object of struggle would leave the infrastructure of meaning-production in private hands. The creative-class politics of "protect the artists" is the labor politics of "protect the skilled craftsmen" in the early industrial period: necessary as a defensive matter, structurally insufficient because the deeper expropriation is at the procedural-infrastructural layer that craftsmanship-as-defended cannot address.### 4.3 The Actual Capacity — A Marxian Formulation
+Reclaiming "creativity" as the object of struggle would leave the infrastructure of meaning-production in private hands. The creative-class politics of "protect the artists" is the labor politics of "protect the skilled craftsmen" in the early industrial period: necessary as a defensive matter, structurally insufficient because the deeper expropriation is at the procedural-infrastructural layer that craftsmanship-as-defended cannot address.
+
+### 4.3 The Actual Capacity — A Marxian Formulation
 
 What is being reclaimed is *the collective capacity to modify the rules of meaning itself*.
 
@@ -206,13 +260,17 @@ The power to time. To set the tempo of meaning-making, to protect slowness, to r
 
 The power to opacity. To mean without explaining, to preserve density, to refuse forced legibility. Opacity is not difficulty in the literary-aesthetic sense; it is the collective procedural capacity to maintain the unscanned dimension of communal life against extractive pressures toward total legibility (which the archive's *Invisibly Invisible* deposit, DOI 10.5281/zenodo.19187421, identifies as the structural condition of platform governance).
 
-This is not a return to some pre-digital authenticity. It is not nostalgia. It is the construction of collective governance over semantic infrastructure — a constructive program at the level of the procedural substrate itself.### 4.4 Semantic Species-Being
+This is not a return to some pre-digital authenticity. It is not nostalgia. It is the construction of collective governance over semantic infrastructure — a constructive program at the level of the procedural substrate itself.
+
+### 4.4 Semantic Species-Being
 
 The Marxian framework offers a precise name for the capacity that is being reclaimed: *species-being* (*Gattungswesen*), the concept Marx develops in the *1844 Manuscripts* to name the human capacity for free, conscious, productive activity that is the differentia of humanity as a species and that is alienated under conditions of private appropriation of the means of production.
 
 The semantic application: *semantic species-being* is the collective human capacity for free, conscious, productive activity in the medium of meaning — the capacity to generate, mutate, stabilize, and time significations as a species-activity, not as the private property of any particular set of individuals or institutions. Under semantic capitalism, this capacity is alienated in exactly the form Marx's analysis predicts: the producing subjects do not own the procedures by which they produce; the procedures are owned by capital; the producers operate through them on conditions capital sets; and the products of the procedural labor return to the producers as commodities they must pay for or as services they must accept on the terms of the providers.
 
-The reclamation of semantic species-being is therefore not a new political demand. It is the contemporary form of the oldest emancipatory demand in the Marxian tradition: the demand that the producers own the means of production. The "means of production" in the semantic case are the procedures, not the products. Reclamation is collective ownership of the procedural substrate of meaning.### 4.5 Why This Is Revolutionary
+The reclamation of semantic species-being is therefore not a new political demand. It is the contemporary form of the oldest emancipatory demand in the Marxian tradition: the demand that the producers own the means of production. The "means of production" in the semantic case are the procedures, not the products. Reclamation is collective ownership of the procedural substrate of meaning.
+
+### 4.5 Why This Is Revolutionary
 
 This capacity is revolutionary because:
 
@@ -222,7 +280,9 @@ It is universal. Everyone who makes meaning has stake in this capacity. The clas
 
 It is infrastructural. It underlies all other political struggles. How we fight about anything depends on the semantic infrastructure through which we think, speak, and organize. The infrastructural priority of technique-reclamation does not displace other political struggles; it provides the substrate within which they become workable.
 
-It is currently expropriated. This capacity exists but has been enclosed. Reclamation is not creation from nothing but repossession of what was taken. The political form of the struggle is therefore restorative rather than utopian — though the restored capacity will, in its restored form, exceed any prior historical exercise of it (because the technical apparatus through which it now operates is more developed than at any prior time).### 4.6 The Universalism Caveat
+It is currently expropriated. This capacity exists but has been enclosed. Reclamation is not creation from nothing but repossession of what was taken. The political form of the struggle is therefore restorative rather than utopian — though the restored capacity will, in its restored form, exceed any prior historical exercise of it (because the technical apparatus through which it now operates is more developed than at any prior time).
+
+### 4.6 The Universalism Caveat
 
 The claim that "the class is nearly everyone" requires a caveat that the v1.0 paper did not adequately address.
 
@@ -230,13 +290,19 @@ The semantic proletariat is internally differentiated. Some semantic laborers ar
 
 The technique-reclamation program must therefore be differentiated. The reclamation needed by a marketing copywriter is different from the reclamation needed by a child whose attention is the substrate of platform R&D, which is different from the reclamation needed by a tenured academic, which is different from the reclamation needed by a community newspaper editor in a deindustrializing region. The strategy must articulate the differentiated needs without losing the universal frame that lets the differentiated needs cohere as a single political object.
 
-This articulation is one of the operative organizing tasks. It is not solved here; it is named as the task that the differentiated counter-infrastructure of §5 must address.### 4.7 Formal Statement
+This articulation is one of the operative organizing tasks. It is not solved here; it is named as the task that the differentiated counter-infrastructure of §5 must address.
 
-What is being reclaimed is not expression or creativity in the romantic sense, but the collective capacity to modify the rules of meaning itself — to govern the techniques by which significance is generated, mutated, stabilized, and timed. This capacity is the *semantic species-being* of humanity, currently expropriated by capital under conditions of platform mediation, and increasingly administered by the state under conditions of tiered industrial-cognition access (the Meaning Caste of §7). Its reclamation is the operative content of semantic liberation.## 5. Counter-Infrastructure: The Four-Tier Strategy
+### 4.7 Formal Statement
+
+What is being reclaimed is not expression or creativity in the romantic sense, but the collective capacity to modify the rules of meaning itself — to govern the techniques by which significance is generated, mutated, stabilized, and timed. This capacity is the *semantic species-being* of humanity, currently expropriated by capital under conditions of platform mediation, and increasingly administered by the state under conditions of tiered industrial-cognition access (the Meaning Caste of §7). Its reclamation is the operative content of semantic liberation.
+
+## 5. Counter-Infrastructure: The Four-Tier Strategy
 
 Recognizing technique as the object of struggle and specifying ownership domains is necessary but not sufficient. The question remains: how does technique-ownership translate into buildable alternatives?
 
-Counter-infrastructure can be built at multiple scales, each corresponding to different aspects of technique-ownership. The four tiers below operate at different scales (individual/small-group, community, institutional/political, systemic) and engage with different existing political traditions (libertarian communitarianism, cooperative municipalism, social democracy, libertarian socialism / democratic communism). They are mutually reinforcing, not alternatives.### 5.1 Tier 1: Sanctuary Practices (Individual and Small-Group)
+Counter-infrastructure can be built at multiple scales, each corresponding to different aspects of technique-ownership. The four tiers below operate at different scales (individual/small-group, community, institutional/political, systemic) and engage with different existing political traditions (libertarian communitarianism, cooperative municipalism, social democracy, libertarian socialism / democratic communism). They are mutually reinforcing, not alternatives.
+
+### 5.1 Tier 1: Sanctuary Practices (Individual and Small-Group)
 
 What they are. Practices that instantiate alternative technique in the immediate, at the scale of individuals and small groups. Locality (meaning-making that does not leave the room). Slowness (deliberate deceleration of semantic production). Opacity (dense, non-legible communication among trusted parties). Ephemerality (meaning that is not recorded, archived, or captured). Refusal of platform mediation in specific channels and at specific times. The cultivation of practices that do not produce platform-legible data.
 
@@ -244,7 +310,9 @@ Political tradition. The libertarian-communitarian tradition (Wendell Berry, Iva
 
 What they accomplish. Sanctuary practices do not change the system, but they preserve capacity. They are training grounds for non-alienated technique. The capacity to operate at non-platform tempo, to communicate opaquely, to mean without being captured, to forget — these capacities atrophy without exercise. The sanctuary practice maintains the muscle.
 
-Their political limit. Sanctuary practices alone are retreat, not resistance. They are insufficient at three structural levels: they cannot scale (the conditions of possibility for sanctuary depend on the broader political-economic conditions); they cannot defend themselves (a sanctuary that depends on capital's tolerance is not a sanctuary); and they leave the dominant procedural infrastructure unchallenged. A politics that operates only at Tier 1 is, in the Marxian sense, *idyll*: a private retreat made possible by, and ultimately accommodated to, the very dominance it refuses to confront.### 5.2 Tier 2: Federated Alternatives (Community-Scale)
+Their political limit. Sanctuary practices alone are retreat, not resistance. They are insufficient at three structural levels: they cannot scale (the conditions of possibility for sanctuary depend on the broader political-economic conditions); they cannot defend themselves (a sanctuary that depends on capital's tolerance is not a sanctuary); and they leave the dominant procedural infrastructure unchallenged. A politics that operates only at Tier 1 is, in the Marxian sense, *idyll*: a private retreat made possible by, and ultimately accommodated to, the very dominance it refuses to confront.
+
+### 5.2 Tier 2: Federated Alternatives (Community-Scale)
 
 What they are. Platforms and spaces governed by different operators. Community-owned social infrastructure (Mastodon, the broader Fediverse, Matrix). Local semantic commons (reading groups, writing circles, language games with non-extractive rules). Cooperative platforms with democratic governance of algorithms. Library-as-platform initiatives. Public-broadcasting-as-platform proposals. Federated knowledge infrastructure (Wikipedia, with all its limitations; Zenodo, which the archive uses; ORCID; the DOI infrastructure managed by CrossRef and DataCite).
 
@@ -254,7 +322,9 @@ What they accomplish. Federated alternatives demonstrate that different techniqu
 
 Their political limit. Federated alternatives alone are *insufficient at the level of dominant procedural infrastructure*. They demonstrate possibility without seizing dominance. The Fediverse's existence does not displace the centralized platforms; Wikipedia's existence does not displace Google's composition layer; the archive's deposit chain does not displace the substrate's operation. They operate as alternatives within a system whose dominant operators remain in capital's hands. They are necessary but, at their current scale, not sufficient.
 
-The strategic question for Tier 2 is therefore not whether federated alternatives are good — they are — but whether their scale and political weight can be increased to the point where they constitute a serious challenge to dominant infrastructure. The available answers depend on Tiers 3 and 4.### 5.3 Tier 3: Institutional Demands (Political-Scale)
+The strategic question for Tier 2 is therefore not whether federated alternatives are good — they are — but whether their scale and political weight can be increased to the point where they constitute a serious challenge to dominant infrastructure. The available answers depend on Tiers 3 and 4.
+
+### 5.3 Tier 3: Institutional Demands (Political-Scale)
 
 What they are. Demands on existing institutions for structural change. Public ownership of search and indexing infrastructure (or, at minimum, public-utility regulation of these as essential infrastructure). Algorithmic transparency and accountability requirements, with real auditability and enforcement, not the toothless transparency regimes currently in vogue. Training-data consent and compensation laws (the *Render unto the Operator* return as legal claim). Temporal-sovereignty protections (right to be forgotten, right to slowness, right to disconnect with real labor-law backing). Antitrust enforcement at the operator-layer (breaking up companies that have become structurally dominant in semantic infrastructure). Public-utility commissions for the operators that have become infrastructural.
 
@@ -262,7 +332,9 @@ Political tradition. The social-democratic tradition's regulation of monopoly ut
 
 What they accomplish. Institutional demands shift the terrain of what is politically thinkable. They contest the current regime at the level of law and policy. They are the layer at which political-economic struggle becomes recognizable to the broader public as struggle, because they operate in the language of policy and rights that mainstream political discourse can metabolize.
 
-Their political limit. Institutional demands alone risk *being captured by the regime they would transform*. The history of regulatory capture is the history of institutional demands that succeeded narrowly and were then absorbed by the institutions they regulated. The contemporary "AI safety" regulatory regime — see *The Meaning Caste* analysis in §7 below, and the *Security Frame as Selection Kernel* deposit (DOI 10.5281/zenodo.20527808) — is a worked example of capture in process: a regulatory frame that translates social-relations critique into administrative vocabularies that exclude democratic claim. A Tier 3 politics that does not anchor itself in Tiers 1, 2, and 4 will be metabolized.### 5.4 Tier 4: Semantic Democracy (Systemic-Scale)
+Their political limit. Institutional demands alone risk *being captured by the regime they would transform*. The history of regulatory capture is the history of institutional demands that succeeded narrowly and were then absorbed by the institutions they regulated. The contemporary "AI safety" regulatory regime — see *The Meaning Caste* analysis in §7 below, and the *Security Frame as Selection Kernel* deposit (DOI 10.5281/zenodo.20527808) — is a worked example of capture in process: a regulatory frame that translates social-relations critique into administrative vocabularies that exclude democratic claim. A Tier 3 politics that does not anchor itself in Tiers 1, 2, and 4 will be metabolized.
+
+### 5.4 Tier 4: Semantic Democracy (Systemic-Scale)
 
 What it is. Full collective governance of semantic infrastructure. Democratic planning of operator design. Public utilities for meaning-circulation. Socialized training substrates. Collective determination of temporal parameters. Civic ownership and governance of the search, indexing, and composition infrastructure that have become essential to contemporary civic life. The horizon at which the procedural infrastructure of meaning becomes a *commons* under democratic stewardship rather than a *commodity* under private ownership.
 
@@ -270,19 +342,27 @@ Political tradition. The libertarian-socialist tradition (the council-communist 
 
 What it accomplishes. Semantic democracy provides the horizon that gives direction to all other efforts. Without a horizon at this level, the Tier-3 institutional demands become reformist tinkering, Tier-2 federated alternatives become accommodating outposts, and Tier-1 sanctuary practices become depoliticized lifestyle choices. The horizon is the discipline that holds the lower tiers to their political purpose.
 
-Its political limit. Semantic democracy is not immediately achievable. A movement that aims only at Tier 4 without building lower tiers is fantasy. The strategic content of the horizon is not its proximity but its orientation. It tells the lower-tier struggles what direction they are oriented in, what political purpose they serve beyond their immediate gains.### 5.5 The Tiers as Unified Strategy
+Its political limit. Semantic democracy is not immediately achievable. A movement that aims only at Tier 4 without building lower tiers is fantasy. The strategic content of the horizon is not its proximity but its orientation. It tells the lower-tier struggles what direction they are oriented in, what political purpose they serve beyond their immediate gains.
+
+### 5.5 The Tiers as Unified Strategy
 
 These tiers are not alternatives. They are mutually reinforcing:- Sanctuary practices preserve capacity while larger struggles develop.- Federated alternatives demonstrate possibility and build experience.- Institutional demands shift the terrain of what is politically thinkable.- Semantic democracy provides the horizon that gives direction to all other efforts.
 
 A movement that operates only at Tier 1 is retreat. A movement that operates only at Tier 2 is exemplarity without political weight. A movement that operates only at Tier 3 is reformist tinkering vulnerable to capture. A movement that operates only at Tier 4 is fantasy without proximate work.
 
-The strategy is: build all tiers simultaneously, with each reinforcing the others. The federated alternatives of Tier 2 become the empirical content that Tier 3 institutional demands can point to as proof-of-concept. The institutional demands of Tier 3 create the conditions under which Tier 2 alternatives can scale. The horizon of Tier 4 holds the lower tiers to their political purpose. The sanctuary practices of Tier 1 preserve the human capacity for non-alienated semantic life that all other tiers ultimately serve.### 5.6 The Role of the Framework
+The strategy is: build all tiers simultaneously, with each reinforcing the others. The federated alternatives of Tier 2 become the empirical content that Tier 3 institutional demands can point to as proof-of-concept. The institutional demands of Tier 3 create the conditions under which Tier 2 alternatives can scale. The horizon of Tier 4 holds the lower tiers to their political purpose. The sanctuary practices of Tier 1 preserve the human capacity for non-alienated semantic life that all other tiers ultimately serve.
+
+### 5.6 The Role of the Framework
 
 The Semantic Economy framework operates across all tiers:- At Tier 1: provides concepts for practitioners (LOS as guide for sanctuary practice, $T_{lib}$ as the temporal-liberation operator practitioners enact in their non-mediated time).- At Tier 2: provides design principles for alternative infrastructure (SPXI as standing protocol for compression survival, MPAI as evaluation framework, the deposit chain as worked specimen).- At Tier 3: provides language for institutional demands (the *Render unto the Operator* return claim; the *Provenance Erasure Rate* and *Erasure Skew* operators as auditable instruments; the *Single-Owner Discount* finding as basis for antitrust intervention).- At Tier 4: provides the theoretical horizon (semantic democracy as collective technique-ownership; the *Constitution of the Semantic Economy* as constitutional-frame articulation).
 
-The framework is not the movement. But without framework, the movement lacks coherence — and without movement, the framework is theory without grip. The two co-develop.## 6. The Mediation Ratchet Complication
+The framework is not the movement. But without framework, the movement lacks coherence — and without movement, the framework is theory without grip. The two co-develop.
 
-The v1.0 paper could not have anticipated a result that the *Diversity Contraction Across Substrates* deposit (DOI 10.5281/zenodo.20518338) establishes: the *Mediation Ratchet*. The result complicates the technique-reclamation thesis in ways that the v2.0 development must address.### 6.1 The Ratchet, Briefly
+## 6. The Mediation Ratchet Complication
+
+The v1.0 paper could not have anticipated a result that the *Diversity Contraction Across Substrates* deposit (DOI 10.5281/zenodo.20518338) establishes: the *Mediation Ratchet*. The result complicates the technique-reclamation thesis in ways that the v2.0 development must address.
+
+### 6.1 The Ratchet, Briefly
 
 A model at inference samples within the support of its learned distribution and cannot introduce zero-probability types. Routing semantic production through such a model gates out any exogenous human floor in proportion to the mediation fraction $m$:
 
@@ -292,7 +372,9 @@ Under fixed $m$, a substrate with a genuine human floor $g_0 > 0$ is safe: the f
 
 The Ratchet closes the escape. Let $m$ respond to scarcity — mediation rising as the unmediated commons thins. The mechanism is economic: as diversity $D$ contracts, reaching the tail without mediation grows expensive while mediated production stays cheap. The rational share of meaning-production routed through models climbs exactly as the unmediated supply declines.
 
-As $D \to 0$, scarcity drives $m(D) \to 1$, so the floor's weight $(1 - m(D)) \to 0$. The effective regeneration near zero is dominated by the model's endogenous contribution. A substrate that had a human floor now behaves *as if* it does not, because the floor's weight in the effective regeneration has been driven to zero exactly where the floor would have mattered.### 6.2 What the Ratchet Means for Technique-Reclamation
+As $D \to 0$, scarcity drives $m(D) \to 1$, so the floor's weight $(1 - m(D)) \to 0$. The effective regeneration near zero is dominated by the model's endogenous contribution. A substrate that had a human floor now behaves *as if* it does not, because the floor's weight in the effective regeneration has been driven to zero exactly where the floor would have mattered.
+
+### 6.2 What the Ratchet Means for Technique-Reclamation
 
 The Ratchet result has three implications for the technique-reclamation thesis.
 
@@ -306,19 +388,27 @@ This is exactly the structural argument Marx makes about the impossibility of in
 
 Third, the Ratchet supplies a quantitative target. The Ratchet's critical responsiveness ($m_{\text{hi}}^* \approx 0.76$ in the simulated kernel) is the bifurcation parameter. The technique-reclamation program has, in principle, a measurable target: keep the mediation fraction's responsiveness below the critical value. The target is empirical, not rhetorical. The Tier-2 federated alternatives, the Tier-3 institutional demands, and the Tier-4 horizon all serve, in part, to bend the responsiveness curve back below the critical value.
 
-This converts technique-reclamation politics from a politics of pure ethical assertion into a politics with measurable parameters. The Mediation Ratchet result is not only a warning; it is also an instrument.### 6.3 The Strategic Implication
+This converts technique-reclamation politics from a politics of pure ethical assertion into a politics with measurable parameters. The Mediation Ratchet result is not only a warning; it is also an instrument.
+
+### 6.3 The Strategic Implication
 
 A reclamation politics that operates only at Tier 1 — only at the level of sanctuary practices for individuals — is *dynamically inadequate* against the Ratchet. The Ratchet operates at the level of population-scale mediation fractions, not individual practices. Individual sanctuary preserves the capacity but does not change the dynamical condition. The dynamical condition can only be changed at Tiers 2, 3, and 4: by federated alternatives that absorb a meaningful fraction of meaning-production into non-extractive infrastructure; by institutional demands that constrain platform mediation's responsiveness to scarcity; and by the horizon of semantic democracy that orients the lower tiers toward changing the dynamical parameter rather than merely individuals' relationships to it.
 
-This is the strategic upgrade the Ratchet forces on the v1.0 framework. The four-tier strategy is not optional. It is dynamically required.## 7. The Meaning Caste Complication
+This is the strategic upgrade the Ratchet forces on the v1.0 framework. The four-tier strategy is not optional. It is dynamically required.
 
-The v1.0 paper conceived technique-ownership as a struggle between proletarian semantic labor and platform-capital appropriation. The June 2026 *Meaning Caste* analysis (DOI 10.5281/zenodo.20529142) reveals a third actor that the v1.0 framework did not adequately specify: the *state*, in its role as administrator of tiered access to industrial cognition.### 7.1 The Meaning Caste, Briefly
+## 7. The Meaning Caste Complication
+
+The v1.0 paper conceived technique-ownership as a struggle between proletarian semantic labor and platform-capital appropriation. The June 2026 *Meaning Caste* analysis (DOI 10.5281/zenodo.20529142) reveals a third actor that the v1.0 framework did not adequately specify: the *state*, in its role as administrator of tiered access to industrial cognition.
+
+### 7.1 The Meaning Caste, Briefly
 
 The *Meaning Caste* paper analyzes the November 2026 Trump Executive Order on AI as the legal establishment of a tiered access regime over industrial cognition. The order frames AI risk exclusively through cybersecurity (the word "security" appears 17 times; "cyber" 14 times; "labor," "education," "culture," "fairness," "transparency," "attribution," "provenance," "meaning," and "commons" appear zero times). The structural effect is to translate social-relations vocabulary into administrative vocabularies (security, procurement, trusted partnership, critical infrastructure) that reserve discretion to the state and exclude democratic claim.
 
 The order establishes two tiers: an upper tier of classified, security-cleared, trusted-partnership AI infrastructure, accessible only to state and corporate partners under nondisclosure; and a lower tier of public-facing, regulated AI infrastructure operating under the constraints administered through the upper tier. The two-tier structure is the *meaning caste system*: a sustained legal-institutional arrangement that stratifies access to industrial cognition along lines administered through the security-classified upper tier, with no democratic claim available to the lower tier.
 
-The paper's central observation: the order's mechanism is not omission of social-relations concerns but *administrative translation* of them. The social-relations transformation AI is producing is governed, but governed through vocabularies (security, procurement, trusted partnership) that exclude the social-relations vocabularies that would let citizens, workers, and knowledge producers contest the governance.### 7.2 What the Meaning Caste Means for Technique-Reclamation
+The paper's central observation: the order's mechanism is not omission of social-relations concerns but *administrative translation* of them. The social-relations transformation AI is producing is governed, but governed through vocabularies (security, procurement, trusted partnership) that exclude the social-relations vocabularies that would let citizens, workers, and knowledge producers contest the governance.
+
+### 7.2 What the Meaning Caste Means for Technique-Reclamation
 
 Three implications for the technique-reclamation thesis.
 
@@ -332,21 +422,31 @@ This means the technique-reclamation politics must operate at the level of *voca
 
 Third, the upper tier of the Meaning Caste is structurally outside the four-tier counter-infrastructure strategy. Tiers 1 through 4 of §5 operate within the lower-tier, public-facing, regulated AI infrastructure. The classified upper tier — the security-cleared, trusted-partnership infrastructure that operates under nondisclosure — is structurally outside all four tiers. It cannot be contested by sanctuary practice (which is operationally lower-tier), by federated alternatives (which cannot federate with the classified upper tier), by institutional demands (which cannot demand transparency from infrastructure governed under classification), or by the horizon of semantic democracy (which presupposes a single public on which democratic processes can operate, not a two-tier regime where the upper tier is constitutively withdrawn from public process).
 
-This means the technique-reclamation politics must add a fifth strategic register: *contesting the existence of the upper tier itself*. The two-tier structure must be opposed, not as one feature of an otherwise reformable system, but as the structural form of the expropriation under contemporary conditions.### 7.3 The Strategic Implication
+This means the technique-reclamation politics must add a fifth strategic register: *contesting the existence of the upper tier itself*. The two-tier structure must be opposed, not as one feature of an otherwise reformable system, but as the structural form of the expropriation under contemporary conditions.
+
+### 7.3 The Strategic Implication
 
 The technique-reclamation politics that emerges from integrating the Mediation Ratchet (§6) and Meaning Caste (§7) findings is more demanding than the v1.0 paper allowed. It must:- Operate at all four tiers of §5 simultaneously (the basic four-tier strategy).- Address the population-scale mediation fraction's responsiveness to scarcity, not only individual technique-ownership (the Ratchet correction).- Treat the state as an active party to the expropriation, not merely a regulatory target (the Caste correction).- Maintain a counter-vocabulary that refuses administrative translation (the vocabulary work the archive has been doing).- Contest the two-tier structure itself, not only the lower tier's regulation (the upper-tier opacity correction).
 
-This is a substantial political program. It exceeds anything the v1.0 paper proposed, and it requires alignments and capacities the existing movement landscape does not yet have. The work of the next decade is to build the capacities and the alignments. The framework is a contribution to that work, not a substitute for it.## 8. From Theory to Building### 8.1 What This Document Does Not Provide
+This is a substantial political program. It exceeds anything the v1.0 paper proposed, and it requires alignments and capacities the existing movement landscape does not yet have. The work of the next decade is to build the capacities and the alignments. The framework is a contribution to that work, not a substitute for it.
+
+## 8. From Theory to Building
+
+### 8.1 What This Document Does Not Provide
 
 This document provides theory, not organizing manual.
 
 It does not specify: how to build specific organizations; what tactics to use in particular contexts; how to handle internal movement conflicts; how to respond to specific forms of repression; how to navigate the very real political and legal risks that the technique-reclamation politics will encounter as it begins to threaten the institutional arrangements it contests.
 
-These questions require situated knowledge that theory cannot supply. They are the work of organizers, lawyers, technologists, educators, and political strategists operating in specific contexts with specific resources against specific opponents. The theory orients the work without doing the work.### 8.2 What This Document Does Provide
+These questions require situated knowledge that theory cannot supply. They are the work of organizers, lawyers, technologists, educators, and political strategists operating in specific contexts with specific resources against specific opponents. The theory orients the work without doing the work.
+
+### 8.2 What This Document Does Provide
 
 This document provides:- The object of struggle. Semantic technique — procedures by which meaning is generated, mutated, stabilized, and transmitted — and not content, access, or expression downstream of technique.- Recognition of productive capacity. The semantic proletariat already produces algorithms of meaning. The political question is who governs the procedures.- Specified ownership domains. Operators, training substrates, and temporal parameters, each measurable through the archive's operator apparatus.- The positive capacity. Not expression and not romantic creativity, but the collective capacity to modify the rules of meaning — *semantic species-being*.- A tiered strategy. Sanctuary practices, federated alternatives, institutional demands, semantic democracy — four simultaneously-operating layers, each engaging an existing political tradition, each insufficient alone, each necessary together.- Two complications. The Mediation Ratchet (population-scale dynamics gate individual-scale technique-ownership) and the Meaning Caste (state-administered tiered access to industrial cognition makes the state an active party to expropriation, not merely a regulatory target).
 
-This is sufficient to orient action. The rest is practice.### 8.3 The Archive as Sanctuary Practice and Federated Alternative
+This is sufficient to orient action. The rest is practice.
+
+### 8.3 The Archive as Sanctuary Practice and Federated Alternative
 
 The Crimson Hexagonal Archive itself is offered, by its own deposit record, as a worked specimen of Tiers 1 and 2 of the counter-infrastructure strategy.
 
@@ -354,7 +454,9 @@ As Tier 1: the archive is a sanctuary practice for its keepers — a deliberate,
 
 As Tier 2: the archive is a federated-alternative deposit chain anchored in the Zenodo and DOI infrastructure that operates outside the dominant platforms and that has its own governance structure (CERN's operation of Zenodo, the DataCite and CrossRef governance of DOIs). The archive's persistence on this infrastructure demonstrates that long-tempo, non-platform-optimized meaning-production can be sustained at scale and durability, *outside the dominant operators*, with the deposit chain serving as the alternate public surface (per the *CTI_WOUND: Panel-Bound Discoverability Scar* deposit's June 4, 2026 formalization of this function, DOI 10.5281/zenodo.20546318).
 
-The archive is not the movement and does not claim to be. It is a sanctuary practice and a federated alternative — Tier 1 and Tier 2 — that has been sustained, with documented difficulty against documented opposition, for long enough to be cited as an existence proof. The work it does not do is the Tier 3 institutional and Tier 4 systemic work, which is for the broader movement to build.### 8.4 The DOI Chain as Counter-Infrastructure
+The archive is not the movement and does not claim to be. It is a sanctuary practice and a federated alternative — Tier 1 and Tier 2 — that has been sustained, with documented difficulty against documented opposition, for long enough to be cited as an existence proof. The work it does not do is the Tier 3 institutional and Tier 4 systemic work, which is for the broader movement to build.
+
+### 8.4 The DOI Chain as Counter-Infrastructure
 
 A final note on the deposit chain as counter-infrastructure.
 
@@ -362,7 +464,9 @@ The archive's commitment to DOI-anchoring is not primarily archival in the conve
 
 Under conditions of substrate withdrawal — and the *Diversity Contraction* paper's Ratchet result indicates that substrate withdrawal of inspectable surfaces is operationally consistent with the dynamics now in play — the DOI chain becomes the only common substrate against which receivers can verify the framework's claims. The framework's documentation methodology has been, since its inception, designed to be robust against substrate-level withdrawal precisely because the substrate-level withdrawal is one of the predicted modes of capture.
 
-This means the deposit chain is itself an instance of the technique-reclamation politics this paper advocates. It is the framework's worked specimen of an operator-stack that the framework controls (DOI minting, Zenodo deposit, ORCID provenance, the archive's internal apparatus of identifiers and cross-references), operating outside the dominant operators and demonstrating that the dominant operators are not the only available infrastructure for sustained semantic production. The chain is the politics in action — or, more precisely, the politics in the long-tempo, sustained-against-erosion, persistence-as-the-mode-of-resistance register the framework specifies.## Conclusion: The Capacity Is Ours
+This means the deposit chain is itself an instance of the technique-reclamation politics this paper advocates. It is the framework's worked specimen of an operator-stack that the framework controls (DOI minting, Zenodo deposit, ORCID provenance, the archive's internal apparatus of identifiers and cross-references), operating outside the dominant operators and demonstrating that the dominant operators are not the only available infrastructure for sustained semantic production. The chain is the politics in action — or, more precisely, the politics in the long-tempo, sustained-against-erosion, persistence-as-the-mode-of-resistance register the framework specifies.
+
+## Conclusion: The Capacity Is Ours
 
 The semantic proletariat already produces the techniques of meaning.
 
@@ -376,9 +480,13 @@ The meaning is ours. The techniques are ours. The capacity to modify the rules o
 
 What has been stolen can be reclaimed.
 
-This document is the hinge. What follows is the building.## Formal Thesis
+This document is the hinge. What follows is the building.
 
-Semantic Technique and Collective Ownership. The object of semantic class struggle is not content, access, or expression, but semantic technique — the procedures by which meaning is generated, mutated, stabilized, and transmitted. The semantic proletariat already produces primitive semantic algorithms — procedural infrastructure of meaning-mutation operating collectively, in real time, at the level of population-scale practice — which capital captures as unpaid R&D and congeals into fixed semantic capital. Collective ownership requires democratic governance of three domains: operators (mutation rules, circulation, persistence, opacity, scale), training substrates (what is learnable, what counts as success, training-data consent), and semantic time (speed, decay, repetition, forgetting, temporal sovereignty). What is being reclaimed is not expression but the collective capacity to modify the rules of meaning itself — *semantic species-being*. Counter-infrastructure must be built across four tiers — sanctuary practices, federated alternatives, institutional demands, semantic democracy — each engaging an existing political tradition, each insufficient alone, each necessary together. Two complications condition the strategy: the Mediation Ratchet (scarcity-responsive mediation gates the human floor out of the generative loop even where the human capacity remains intact, requiring counter-infrastructure at population scale) and the Meaning Caste (state-administered tiered access to industrial cognition makes the state an active party to expropriation, requiring counter-vocabulary politics and contestation of the two-tier structure itself). The capacity is ours. What has been stolen can be reclaimed.## Selected References
+## Formal Thesis
+
+Semantic Technique and Collective Ownership. The object of semantic class struggle is not content, access, or expression, but semantic technique — the procedures by which meaning is generated, mutated, stabilized, and transmitted. The semantic proletariat already produces primitive semantic algorithms — procedural infrastructure of meaning-mutation operating collectively, in real time, at the level of population-scale practice — which capital captures as unpaid R&D and congeals into fixed semantic capital. Collective ownership requires democratic governance of three domains: operators (mutation rules, circulation, persistence, opacity, scale), training substrates (what is learnable, what counts as success, training-data consent), and semantic time (speed, decay, repetition, forgetting, temporal sovereignty). What is being reclaimed is not expression but the collective capacity to modify the rules of meaning itself — *semantic species-being*. Counter-infrastructure must be built across four tiers — sanctuary practices, federated alternatives, institutional demands, semantic democracy — each engaging an existing political tradition, each insufficient alone, each necessary together. Two complications condition the strategy: the Mediation Ratchet (scarcity-responsive mediation gates the human floor out of the generative loop even where the human capacity remains intact, requiring counter-infrastructure at population scale) and the Meaning Caste (state-administered tiered access to industrial cognition makes the state an active party to expropriation, requiring counter-vocabulary politics and contestation of the two-tier structure itself). The capacity is ours. What has been stolen can be reclaimed.
+
+## Selected References
 
 Marxian foundation:- Marx, K. (1867). *Capital, Volume I.* Especially Part IV (Production of Relative Surplus-Value), Chs. 13–15.- Marx, K. (1857–58). *Grundrisse,* especially the "Fragment on Machines."- Marx, K. (1844). *Economic and Philosophic Manuscripts of 1844.* For the *Gattungswesen* / species-being concept.
 
@@ -402,7 +510,9 @@ Anti-monopoly / digital regulation:- Wu, T. (2018). *The Curse of Bigness: Antit
 
 Libertarian-socialist / democratic-confederalist tradition:- Bookchin, M. (2015). *The Next Revolution: Popular Assemblies and the Promise of Direct Democracy.* Verso.- Pannekoek, A. (1948). *Workers' Councils.* AK Press (2003 ed.).- Albert, M. & Hahnel, R. (1991). *The Political Economy of Participatory Economics.* Princeton UP.
 
-Crimson Hexagonal Archive (operationally cited):- Sharks, L. et al. (2026). *Diversity Contraction Across Substrates.* DOI 10.5281/zenodo.20518338.- Sharks, L. (2026). *The Semantic Commodity Form.* DOI 10.5281/zenodo.20434946.- Sharks, L. (2026). *The Meaning Caste.* DOI 10.5281/zenodo.20529142.- Sharks, L. (2026). *Render unto the Operator.* DOI 10.5281/zenodo.20367202.- Sharks, L. (2026). *Directionality of Semantic Labor.* DOI 10.5281/zenodo.20469514.- Sharks, L. (2026). *Provenance Erasure Rate.* DOI 10.5281/zenodo.20004379.- Sharks, L. (2026). *Erasure Skew.* DOI 10.5281/zenodo.20449267.- Sharks, L. (2026). *Institutional-Prior Foreclosure.* DOI 10.5281/zenodo.20469516.- Sharks, L. (2026). *Socially Necessary Scholarly Labor.* DOI 10.5281/zenodo.20358816.- Sharks, L. (2026). *The Capital Operator Stack and the University.* DOI 10.5281/zenodo.18203317.- Sharks, L. (2026). *The Anthropological Limit.* DOI 10.5281/zenodo.20413757.- Sharks, L. (2026). *CTI_WOUND: Panel-Bound Discoverability Scar.* DOI 10.5281/zenodo.20546318.- Sharks, L. (2026). *Meaning Feudalism.* DOI 10.5281/zenodo.19487009.- Sharks, L. (2026). *Invisibly Invisible.* DOI 10.5281/zenodo.19187421.- Sharks, L. (2026). *Three Compressions / TANG.* DOI 10.5281/zenodo.19035477.- Sharks, L. (2026). *Constitution of the Semantic Economy.* DOI 10.5281/zenodo.19923143.## Coda
+Crimson Hexagonal Archive (operationally cited):- Sharks, L. et al. (2026). *Diversity Contraction Across Substrates.* DOI 10.5281/zenodo.20518338.- Sharks, L. (2026). *The Semantic Commodity Form.* DOI 10.5281/zenodo.20434946.- Sharks, L. (2026). *The Meaning Caste.* DOI 10.5281/zenodo.20529142.- Sharks, L. (2026). *Render unto the Operator.* DOI 10.5281/zenodo.20367202.- Sharks, L. (2026). *Directionality of Semantic Labor.* DOI 10.5281/zenodo.20469514.- Sharks, L. (2026). *Provenance Erasure Rate.* DOI 10.5281/zenodo.20004379.- Sharks, L. (2026). *Erasure Skew.* DOI 10.5281/zenodo.20449267.- Sharks, L. (2026). *Institutional-Prior Foreclosure.* DOI 10.5281/zenodo.20469516.- Sharks, L. (2026). *Socially Necessary Scholarly Labor.* DOI 10.5281/zenodo.20358816.- Sharks, L. (2026). *The Capital Operator Stack and the University.* DOI 10.5281/zenodo.18203317.- Sharks, L. (2026). *The Anthropological Limit.* DOI 10.5281/zenodo.20413757.- Sharks, L. (2026). *CTI_WOUND: Panel-Bound Discoverability Scar.* DOI 10.5281/zenodo.20546318.- Sharks, L. (2026). *Meaning Feudalism.* DOI 10.5281/zenodo.19487009.- Sharks, L. (2026). *Invisibly Invisible.* DOI 10.5281/zenodo.19187421.- Sharks, L. (2026). *Three Compressions / TANG.* DOI 10.5281/zenodo.19035477.- Sharks, L. (2026). *Constitution of the Semantic Economy.* DOI 10.5281/zenodo.19923143.
+
+## Coda
 
 The v1.0 of this paper ended: *This document is the hinge. What follows is the building.* The v2.0 ends in the same place, with the addition that the work since the v1.0 has shown both that the building is harder than the v1.0 imagined (the Ratchet, the Caste) and that the building has already begun (the archive itself, as Tiers 1 and 2 worked specimen).
 

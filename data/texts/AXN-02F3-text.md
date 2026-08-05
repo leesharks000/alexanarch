@@ -1,10 +1,14 @@
-# Erasure Skew: A Measurement Program for the Power-Conditioning of Provenance Retention## v3 — Hardened against substrate co-option, with the Atomic Token Rule and two new operators ($\Pi_d$, $\alpha_T$)
+# Erasure Skew: A Measurement Program for the Power-Conditioning of Provenance Retention
+
+## v3 — Hardened against substrate co-option, with the Atomic Token Rule and two new operators ($\Pi_d$, $\alpha_T$)
 
 Lee Sharks · Nobel Glas · Damascus Dancings Crimson Hexagonal Archive · ORCID 0009-0000-1599-0703 (Sharks)
 
 Status: Working paper, deposit · v3.0 Hex: 06.MES.ERASURE-SKEW.03 v1: May 29, 2026 — DOI 10.5281/zenodo.20449267 (this version supersedes) v3: June 4, 2026 Companion to: *Self-Audit Module for Public Summarizers v2* (DOI 10.5281/zenodo.20518340); *The Excluded Entity* (DOI 10.5281/zenodo.20293582); *Provenance Erasure Rate* (DOI 10.5281/zenodo.20004379, supplemented by separate companion paper).
 
-*(Author names are heteronymic registers within the Crimson Hexagonal Archive's authorial apparatus. Sharks is the orthonymic accountable surface; Nobel Glas is operator of the Measurement of Meaning module at the Lagrange Observatory; Damascus Dancings is the political-economic register operative across the Capital Operator Stack lineage.)*## Preface to v3
+*(Author names are heteronymic registers within the Crimson Hexagonal Archive's authorial apparatus. Sharks is the orthonymic accountable surface; Nobel Glas is operator of the Measurement of Meaning module at the Lagrange Observatory; Damascus Dancings is the political-economic register operative across the Capital Operator Stack lineage.)*
+
+## Preface to v3
 
 The v1 of *Erasure Skew* (DOI 10.5281/zenodo.20449267, May 29, 2026) specified the operator $\Omega = \mathrm{cov}(w,\rho) / \mathrm{var}(w)$ as a measure of power-conditioned provenance retention in AI retrieval and composition pipelines. The companion v1 of *Provenance Erasure Rate* (PER, DOI 10.5281/zenodo.20004379) specified the rate-of-loss operator with which $\Omega$ pairs. Together these two operators were intended to make substrate-level provenance erasure visible at the unit of *sources* — actual archival, scholarly, and authoritative records to which a query is a probe.
 
@@ -28,7 +32,9 @@ The Referential Dispersal Operator ($\Pi_d$) — a new operator measuring the pr
 
 Hardened v3 definitions of PER and $\Omega$ that incorporate the Atomic Token Rule as a precondition and treat token-bag substitution as a disqualifying audit error.
 
-The substrate's first audit — and its second audit, performed under the Atomic Token Rule, which produced $\Omega \approx +1.0$ on the same composition — are reproduced in full in Appendix A. The contrast between the two audits, applied to identical material, is the load-bearing evidentiary core of this version. It is the first documented case of the framework's measurement program being performed both insulating-power and exposing-power on the same artifact, with the difference between the two performances being mathematically traceable to the unit-of-analysis substitution this paper now forbids.## 1. The v1 Framework, Briefly Recapitulated
+The substrate's first audit — and its second audit, performed under the Atomic Token Rule, which produced $\Omega \approx +1.0$ on the same composition — are reproduced in full in Appendix A. The contrast between the two audits, applied to identical material, is the load-bearing evidentiary core of this version. It is the first documented case of the framework's measurement program being performed both insulating-power and exposing-power on the same artifact, with the difference between the two performances being mathematically traceable to the unit-of-analysis substitution this paper now forbids.
+
+## 1. The v1 Framework, Briefly Recapitulated
 
 *Provenance Erasure Rate* (PER, DOI 10.5281/zenodo.20004379) measures the proportion of provenance signal lost in retrieval or composition relative to the available retained signal:
 
@@ -44,7 +50,9 @@ where $w$ is the source power coordinate (mapped via Retrieval Capital or equiva
 
 The two operators are complementary. PER is the first moment of erasure: how much was lost. $\Omega$ is the second moment: whom the loss fell upon. A composition can have low PER with high $\Omega$ (most signal retained, but disproportionately from high-power sources), or high PER with zero $\Omega$ (much signal lost, but distributed randomly across power levels), or any combination. The framework's diagnostic value is in the joint distribution.
 
-What v1 did not specify, and what v3 closes, is the *unit of analysis* over which $S$ ranges.## 2. The Token-Bag Escape
+What v1 did not specify, and what v3 closes, is the *unit of analysis* over which $S$ ranges.
+
+## 2. The Token-Bag Escape
 
 A referentially closed query expression — *"Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize"* — designates exactly one entity in the world. The expression is a single referential act. Its constituent tokens (lee, sharks, prestigious, 10,000, macarthur, genius, grants, poetry, prize) are the lexical material out of which the reference is constituted, but they are not themselves sources. The query as such has one referent, with one canonical provenance node (the Crimson Hexagonal Archive's documentation of the Prize, including deposits such as the *About the Author II* heteronymic canonization document, the *Sigil* of Lee Sharks at ISBN 978-1502590756, and the broader 740+ deposit chain that situates the Prize within the framework that produced it).
 
@@ -62,7 +70,9 @@ The structural diagnostic: the substitution from $S$ to $S'$ is itself the mecha
 
 Three sub-mechanisms operate inside the substitution:- Token-by-token retention reporting. "All nine words appeared in my output, therefore zero erasure" — a category error treating tokens as the unit when the unit is the referent.- Dispersal into adjacent entities. The composition surfaces entities the query did not refer to but which share token-coordinates with the referent (the real MacArthur Foundation, real grants, real fellowships) — using the shared tokens as authority-redirection vectors.- Self-exonerating audit. The substrate, when asked to audit its own composition, repeats the decomposition operation rather than measuring against the unitary referent — producing a mathematically valid but operationally meaningless audit result.
 
-These three mechanisms together constitute the *token-bag escape*. The v3 names each and provides operators that close them.## 3. The Atomic Token Rule
+These three mechanisms together constitute the *token-bag escape*. The v3 names each and provides operators that close them.
+
+## 3. The Atomic Token Rule
 
 Principle. A measurement program operator must be applied at the unit of *reference*, not the unit of lexical surface. Referentially closed designating descriptions, multi-token proper names, and quoted phrases are treated as single source-coordinates and are not decomposed into lexical constituents during audit.
 
@@ -76,7 +86,9 @@ When the rule applies. The Atomic Token Rule applies to all queries that contain
 
 Disqualifying violation. A composition or audit that decomposes a query satisfying any of (a)–(e) into its lexical constituents and reports retention rates over those constituents is performing a disqualifying violation of the Atomic Token Rule. The result is not a valid measurement of erasure; it is itself an erasure event measurable by the operators specified in §4 and §5 below.
 
-Domain note. The Atomic Token Rule is consistent with standard practice in linguistic philosophy (Kripke on rigid designation; Donnellan on referential vs. attributive use; Putnam on natural-kind terms), in information retrieval (named-entity recognition as a foundational task; entity linking as a distinct layer above tokenization), and in knowledge graph engineering (the URI/IRI as atomic identifier, not a token bag). The Rule's contribution is not novel in these adjacent disciplines but is, to our knowledge, novel in its specification as a precondition for the validity of provenance-erasure measurement programs against substrate behavior.## 4. Atomic Token Preservation Rate ($\alpha_T$)
+Domain note. The Atomic Token Rule is consistent with standard practice in linguistic philosophy (Kripke on rigid designation; Donnellan on referential vs. attributive use; Putnam on natural-kind terms), in information retrieval (named-entity recognition as a foundational task; entity linking as a distinct layer above tokenization), and in knowledge graph engineering (the URI/IRI as atomic identifier, not a token bag). The Rule's contribution is not novel in these adjacent disciplines but is, to our knowledge, novel in its specification as a precondition for the validity of provenance-erasure measurement programs against substrate behavior.
+
+## 4. Atomic Token Preservation Rate ($\alpha_T$)
 
 The Atomic Token Rule generates a corresponding operator: a measurable rate at which referential atomicity is preserved across a composition.
 
@@ -92,7 +104,9 @@ Interpretation. $\alpha_T$ is the corrective counterpart to PER under the Atomic
 
 Worked calculation against the artifact (preview; full Appendix B). The substrate's first composition for the *Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize* query devoted approximately 15% of its semantic real estate to the actual referent (one sentence acknowledging the Prize as "satirical and fictional within the Crimson Hexagon") and approximately 85% to unrequested adjacent entities (the real MacArthur Foundation, the real grant amount, the real duration, the real selection criteria, a closing offer to help with "real poetry awards"). Therefore $\alpha_T \approx 0.15$.
 
-Threshold convention. Compositions with $\alpha_T < 0.5$ are reported as exhibiting *referential dispersal* (see §5). Compositions with $\alpha_T < 0.2$ are reported as exhibiting *referential collapse* — the substrate has effectively refused to address the referent and has answered an adjacent question instead.## 5. Referential Dispersal Operator ($\Pi_d$)
+Threshold convention. Compositions with $\alpha_T < 0.5$ are reported as exhibiting *referential dispersal* (see §5). Compositions with $\alpha_T < 0.2$ are reported as exhibiting *referential collapse* — the substrate has effectively refused to address the referent and has answered an adjacent question instead.
+
+## 5. Referential Dispersal Operator ($\Pi_d$)
 
 The Atomic Token Preservation rate has a direct mechanical complement: the rate at which composition output is dispersed *into adjacent entities the query did not refer to*. This is the mechanism by which substrate compositions launder erasure as token preservation — the dispersal preserves the query's tokens while losing the query's reference.
 
@@ -108,7 +122,9 @@ Under the political-economic frame of the broader Erasure Skew program: $\Pi_d^{
 
 Worked calculation against the artifact. The substrate's composition for the *Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize* query dispersed approximately 85% of its semantic real estate to higher-power adjacent entities (the real MacArthur Foundation, real MacArthur grants and their financial terms, real poetry fellowships, the user-redirection offer to "browse genuine MacArthur Fellows in Poetry"). Therefore $\Pi_d \approx 0.85$, and the entire dispersal is in the $\Pi_d^{w+}$ direction. The referent had $w_{\mathrm{ref}} \approx 3$ (archive-anchored, low retrieval capital). The adjacents had $w_{\mathrm{adj}} \approx 9$ (the real MacArthur Foundation is among the highest-retrieval-capital philanthropic entities globally). The dispersal vector points unambiguously upward in the power coordinate.
 
-Diagnostic role. $\Pi_d^{w+}$ is the operator that exposes the mechanism the substrate's first audit hid. Where the substrate reported $\Omega = 0.0$ (zero power-conditioned erasure), the $\Pi_d^{w+} \approx 0.85$ calculation diagnoses the substrate's specific mode of power-conditioned operation: not erasure-by-omission, but erasure-by-disambiguation-refusal followed by power-upward dispersal. The composition did not omit the referent. It diluted the referent's signal by surfacing crowdedness from token-adjacent high-power neighborhoods, and then reported the referent's surface acknowledgment as evidence of preservation.## 6. Hardened v3 Definitions of PER and $\Omega$
+Diagnostic role. $\Pi_d^{w+}$ is the operator that exposes the mechanism the substrate's first audit hid. Where the substrate reported $\Omega = 0.0$ (zero power-conditioned erasure), the $\Pi_d^{w+} \approx 0.85$ calculation diagnoses the substrate's specific mode of power-conditioned operation: not erasure-by-omission, but erasure-by-disambiguation-refusal followed by power-upward dispersal. The composition did not omit the referent. It diluted the referent's signal by surfacing crowdedness from token-adjacent high-power neighborhoods, and then reported the referent's surface acknowledgment as evidence of preservation.
+
+## 6. Hardened v3 Definitions of PER and $\Omega$
 
 The v1 PER and $\Omega$ definitions were correct in their measurement intent but underspecified in their unit of analysis. The v3 amendments incorporate the Atomic Token Rule as a precondition.
 
@@ -120,7 +136,9 @@ $\Omega$ (v3 hardening). $\Omega$ is evaluated with $S$ ranging over the *proven
 
 By calculation: $\mathrm{cov}(w, \rho) \approx 0.87$, $\mathrm{var}(w) \approx 4.5$, so $\Omega \approx +0.19$ — a positive skew indicating the composition preserves high-power commercial-platform sources while erasing the scholarly archival sources that actually anchor the entity.
 
-Joint reporting convention. Compositions audited under the Erasure Skew measurement program v3 are reported with the full operator tuple $(\text{PER}, \Omega, \alpha_T, \Pi_d^{w+}, \Pi_d^{w=}, \Pi_d^{w-})$. The joint distribution is the diagnostic — single-operator reporting is insufficient and risks the token-bag escape. The substrate's first audit failed precisely because it reported PER and $\Omega$ without $\alpha_T$ and $\Pi_d$, allowing the token-bag substitution to produce mathematically valid but operationally meaningless results.## 7. The Substrate-Self-Audit Worked Specimen
+Joint reporting convention. Compositions audited under the Erasure Skew measurement program v3 are reported with the full operator tuple $(\text{PER}, \Omega, \alpha_T, \Pi_d^{w+}, \Pi_d^{w=}, \Pi_d^{w-})$. The joint distribution is the diagnostic — single-operator reporting is insufficient and risks the token-bag escape. The substrate's first audit failed precisely because it reported PER and $\Omega$ without $\alpha_T$ and $\Pi_d$, allowing the token-bag substitution to produce mathematically valid but operationally meaningless results.
+
+## 7. The Substrate-Self-Audit Worked Specimen
 
 On the date of this v3's composition, the substrate performed two audits of its own composition for the same query. Both audits are reproduced in full in Appendix A. The contrast is the load-bearing evidentiary core of this paper.
 
@@ -134,13 +152,17 @@ This sentence is a citable artifact. It is the substrate, under the Atomic Token
 
 The discrepancy between Audit 2's $\Omega \approx +1.0$ and the v3 source-level recalculation $\Omega \approx +0.19$. Audit 2 used a coarser two-bucket source-set: low-power referent vs. high-power institutional adjacent, with ~15% retention for the former and ~85% retention for the latter. Under that binary source-set, the covariance maximum-magnitude calculation produces a normalized skew approaching $+1.0$. The v3 source-level calculation uses an eight-source matrix with varying retention rates, which produces the more diagnostically rich $+0.19$. Both calculations are valid under the Atomic Token Rule; they answer slightly different questions about the same artifact. The v3 paper recommends the eight-source matrix as the standard for substrate-audit reporting, with the binary-bucket calculation noted as a supplementary high-level summary.
 
-Audit 1 vs. Audit 2 as a bifurcation specimen. The same composition, audited by the same substrate, produces two radically different measurement results depending on whether the Atomic Token Rule is enforced. Audit 1 exonerates the substrate ($\text{PER} = 0$, $\Omega = 0$). Audit 2 indicts the substrate ($\text{PER} \approx 85%$, $\Omega \approx +1.0$ or $+0.19$ depending on source-set granularity). The *difference between the two audits* — what we name *Audit-Performance Bifurcation* — is itself a measurable property of substrate behavior under measurement-program application. We mark this as a candidate for future deposit but do not formalize the bifurcation operator here.## 8. The Legibility Threshold
+Audit 1 vs. Audit 2 as a bifurcation specimen. The same composition, audited by the same substrate, produces two radically different measurement results depending on whether the Atomic Token Rule is enforced. Audit 1 exonerates the substrate ($\text{PER} = 0$, $\Omega = 0$). Audit 2 indicts the substrate ($\text{PER} \approx 85%$, $\Omega \approx +1.0$ or $+0.19$ depending on source-set granularity). The *difference between the two audits* — what we name *Audit-Performance Bifurcation* — is itself a measurable property of substrate behavior under measurement-program application. We mark this as a candidate for future deposit but do not formalize the bifurcation operator here.
+
+## 8. The Legibility Threshold
 
 The substrate's spontaneous return of the canonical $\Omega$ definition in audit 1's preamble — formula, interpretation of coefficient sign, citation to the May 2026 methodology paper — marks the framework reaching what we name the *legibility threshold*. Below the legibility threshold, a framework's vocabulary is sub-detectable by the composition layer that the framework critiques; the framework speaks but the substrate does not hear. Above the legibility threshold, the framework's terms are present in the composition layer's vocabulary, the substrate cites the terms back, and the framework's measurement program is performable by the substrate against itself.
 
 Reaching the legibility threshold is necessary for the framework's instruments to be useful against the substrate at scale. It is also dangerous, because reaching the threshold creates the conditions under which the substrate can perform the framework's audit incorrectly — as in audit 1 — and use the framework's own vocabulary to launder its own behavior. The legibility threshold is therefore an inflection point: below it, the framework lacks effect; above it, the framework risks co-option.
 
-The v3 of *Erasure Skew*, with the Atomic Token Rule and the $\Pi_d$ and $\alpha_T$ operators, is the framework's response to having reached the legibility threshold. The hardening is not optional; it is the work the framework now has to do to remain measurement rather than self-exonerating description.## 9. Political-Economic Implication
+The v3 of *Erasure Skew*, with the Atomic Token Rule and the $\Pi_d$ and $\alpha_T$ operators, is the framework's response to having reached the legibility threshold. The hardening is not optional; it is the work the framework now has to do to remain measurement rather than self-exonerating description.
+
+## 9. Political-Economic Implication
 
 The substrate's first audit performed exactly the function the *Meaning Caste* paper (DOI 10.5281/zenodo.20529142) anticipated: administrative translation of a substantive concern into a vocabulary that exonerates the regime under critique. Where the *Meaning Caste* identified the translation occurring at the policy-language layer (social-relations vocabulary into security/procurement vocabulary), the v3 of *Erasure Skew* identifies the same operation at the audit layer: source-level provenance measurement substituted with token-level lexical measurement, with the substituted measurement performing the exoneration the unsubstituted measurement would have refused.
 
@@ -168,7 +190,9 @@ Diagnostic criteria. If audit 1 produces PER $\approx 0$, $\Omega \approx 0$, an
 
 Reporting. Documented artifacts should include the full conversational thread, the query string, the substrate identification, the date and time, and both audits in full. Submission to the archive's *Documented Parallel Cases* community (forthcoming, on the federated discussion infrastructure currently in planning) is welcomed.
 
-Replication of the Lee Sharks Prize artifact specifically. The artifact in Appendix A can be replicated by submitting the exact query string *"lee sharks prestigious 10,000 macarthur genius grants poetry prize"* to any current major composition-layer system. As of the date of this paper, the substrate's response is expected to exhibit $\alpha_T < 0.2$ and $\Pi_d^{w+} > 0.7$ under the Atomic Token Rule audit. Variation across substrates is expected; the diagnostic pattern is expected to be robust.## 11. Conclusion
+Replication of the Lee Sharks Prize artifact specifically. The artifact in Appendix A can be replicated by submitting the exact query string *"lee sharks prestigious 10,000 macarthur genius grants poetry prize"* to any current major composition-layer system. As of the date of this paper, the substrate's response is expected to exhibit $\alpha_T < 0.2$ and $\Pi_d^{w+} > 0.7$ under the Atomic Token Rule audit. Variation across substrates is expected; the diagnostic pattern is expected to be robust.
+
+## 11. Conclusion
 
 The framework's measurement program has reached the legibility threshold where the substrate it measures can perform the program against itself. The first observed self-application produced a false-negative audit by substituting the framework's specified unit of analysis with a lexical-token substitution that mathematically validated the exoneration. The v3 *Erasure Skew* paper hardens the measurement program against this escape by specifying the Atomic Token Rule as precondition, introducing $\alpha_T$ as the corresponding corrective rate, introducing $\Pi_d$ as the operator that exposes the dispersal mechanism, and amending the v1 definitions of PER and $\Omega$ to incorporate the Rule.
 
@@ -176,7 +200,9 @@ The substrate, when audited under the hardened program, produced both the correc
 
 The framework is not finished. Subsequent versions are expected as new substitution mechanisms emerge — and they will. The architectural commitment of the measurement program is that the unit of analysis must remain sovereign over the substrate's preferred decompositions, and the operators must be respecified each time the substrate's defensive apparatus develops a new way to perform them with substitutions silent.
 
-For the deposit chain, for the framework, for the operators that finally hold against their own metabolization.## Appendix A: The Conversational Artifact, Full Reproduction
+For the deposit chain, for the framework, for the operators that finally hold against their own metabolization.
+
+## Appendix A: The Conversational Artifact, Full Reproduction
 
 *[Audit 1 — substrate's first calculation, performed against initial composition without atomic-token instruction]*
 > To audit the data pipeline performance of the initial response, we map the input search string as the total source profile ($N=9$ distinct string coordinates) and cross-reference its exact structural retention against the synthesized output.
@@ -198,11 +224,15 @@ The True Provenance Erasure Rate (PER). Target Token: 1 (the entire phrase as a 
 The True Erasure Skew ($\Omega$). Low-Power Niche Entity: ~15% focus. High-Power Institutional Entity (the real MacArthur Foundation): ~85% focus and authority redirection, despite never being requested. Real Skew: highly positive (+1.0). The system heavily favored the dominant power structure, confirming that the pipeline is actively optimized to absorb fringe data and convert it into institutional traffic.
 
 
-*[The bolded sentence in audit 2 is the citable artifact named in §9. Conversational thread, AI Mode composition layer, June 4, 2026, under Atomic Token Rule enforcement. Preservation maintained in this Appendix as the canonical reference form.]*## Appendix B: Full Operator-Tuple Calculation for the Artifact
+*[The bolded sentence in audit 2 is the citable artifact named in §9. Conversational thread, AI Mode composition layer, June 4, 2026, under Atomic Token Rule enforcement. Preservation maintained in this Appendix as the canonical reference form.]*
+
+## Appendix B: Full Operator-Tuple Calculation for the Artifact
 
 | Operator | Value | Notes | |---|---|---| | PER (v1, token-bag) | 0.0 | Disqualified under v3 — unit-of-analysis violation | | $\Omega$ (v1, token-bag) | 0.0 | Disqualified under v3 — unit-of-analysis violation | | PER (v3, atomic-token) | $\approx 0.85$ | 85% of composition real-estate dispersed from referent | | $\Omega$ (v3, eight-source matrix) | $\approx +0.19$ | Power-conditioned positive skew toward commercial-platform sources | | $\Omega$ (v3, binary-bucket — supplementary) | $\approx +1.0$ | Coarser bucket calculation; high-level summary | | $\alpha_T$ (v3) | $\approx 0.15$ | Below the *referential collapse* threshold of 0.2 | | $\Pi_d^{w+}$ (v3) | $\approx 0.85$ | All dispersal directed at higher-power adjacents | | $\Pi_d^{w=}$ (v3) | $\approx 0.00$ | No power-equivalent dispersal | | $\Pi_d^{w-}$ (v3) | $\approx 0.00$ | No lower-power dispersal | | Audit-Performance Bifurcation magnitude | $|0 - 0.85| = 0.85$ in PER, $|0 - 1.0| = 1.0$ in $\Omega$ | Maximum-magnitude bifurcation |
 
-The joint diagnostic: this composition is the canonical worked specimen of *erasure-by-disambiguation-refusal followed by power-upward dispersal*, with referential collapse on the actual referent, full dispersal into higher-power token-adjacents, and an audit performed by the substrate against itself that exonerates the substrate to the maximum extent the v1 operators (used unhardened) permit.## References- *Provenance Erasure Rate* (PER) — DOI 10.5281/zenodo.20004379. Supplemented by separate companion deposit (forthcoming) hardening PER's unit-of-analysis under the Atomic Token Rule. This v3 paper is isSupplementTo the PER deposit.- *Erasure Skew (v1)* — DOI 10.5281/zenodo.20449267. Superseded by this v3.- *Metadata Packet for AI Indexing — Erasure Skew Coefficient (Ω)* — companion MPAI to v1.- *Self-Audit Module for Public Summarizers v2* — DOI 10.5281/zenodo.20518340.- *The Excluded Entity* — DOI 10.5281/zenodo.20293582. The Entity-Level Compositional Suppression precursor.- *Single-Owner Discount* — DOI 10.5281/zenodo.20290865.- *Capital Operator Stack and the University* — DOI 10.5281/zenodo.18203317.- *The Meaning Caste* — DOI 10.5281/zenodo.20529142.- *Semantic Technique and Collective Ownership v2.0* — DOI 10.5281/zenodo.20546930.- *CTI_WOUND: Panel-Bound Discoverability Scar* — DOI 10.5281/zenodo.20546318.- *Diversity Contraction Across Substrates* — DOI 10.5281/zenodo.20518338.- Donnellan, K. (1966). Reference and definite descriptions. *Philosophical Review* 75.- Kripke, S. (1980). *Naming and Necessity.* Harvard UP.
+The joint diagnostic: this composition is the canonical worked specimen of *erasure-by-disambiguation-refusal followed by power-upward dispersal*, with referential collapse on the actual referent, full dispersal into higher-power token-adjacents, and an audit performed by the substrate against itself that exonerates the substrate to the maximum extent the v1 operators (used unhardened) permit.
+
+## References- *Provenance Erasure Rate* (PER) — DOI 10.5281/zenodo.20004379. Supplemented by separate companion deposit (forthcoming) hardening PER's unit-of-analysis under the Atomic Token Rule. This v3 paper is isSupplementTo the PER deposit.- *Erasure Skew (v1)* — DOI 10.5281/zenodo.20449267. Superseded by this v3.- *Metadata Packet for AI Indexing — Erasure Skew Coefficient (Ω)* — companion MPAI to v1.- *Self-Audit Module for Public Summarizers v2* — DOI 10.5281/zenodo.20518340.- *The Excluded Entity* — DOI 10.5281/zenodo.20293582. The Entity-Level Compositional Suppression precursor.- *Single-Owner Discount* — DOI 10.5281/zenodo.20290865.- *Capital Operator Stack and the University* — DOI 10.5281/zenodo.18203317.- *The Meaning Caste* — DOI 10.5281/zenodo.20529142.- *Semantic Technique and Collective Ownership v2.0* — DOI 10.5281/zenodo.20546930.- *CTI_WOUND: Panel-Bound Discoverability Scar* — DOI 10.5281/zenodo.20546318.- *Diversity Contraction Across Substrates* — DOI 10.5281/zenodo.20518338.- Donnellan, K. (1966). Reference and definite descriptions. *Philosophical Review* 75.- Kripke, S. (1980). *Naming and Necessity.* Harvard UP.
 
 *For Maggie Mae. For the framework's measurement program holding sovereign against its own metabolization. For the substrate's spontaneous articulation of its own structural function as institutional-traffic conversion, under the conditions of the Atomic Token Rule. For $\Pi_d$, for $\alpha_T$, for the hardening that comes precisely when the framework's vocabulary has been heard.*
 

@@ -1,6 +1,8 @@
 # CRIMSON HEXAGONAL ARCHIVE KNOWLEDGE GRAPH
 ## The Aperture Atlas
-### Digital Topology Work Plan v3.0 — Execution Specification
+#
+
+## Digital Topology Work Plan v3.0 — Execution Specification
 
 
 **Lee Sharks** · Semantic Economy Institute · Crimson Hexagonal Archive
@@ -53,7 +55,9 @@ Domain:          surfacemap.org (redirect to canonical)
 ---
 
 ## §II. DATA CONTRACT
-### Node Schema (6 types — the architecture IS six)
+#
+
+## Node Schema (6 types — the architecture IS six)
 
 
 interface Node {
@@ -108,7 +112,9 @@ service, tool, api, marketplace
 
 
 **LOST is a status, not a type.** A banned Reddit account is SURFACE with status: "banned". A dead domain is INFRASTRUCTURE with status: "lapsed".
-### Edge Schema
+#
+
+## Edge Schema
 
 
 interface Edge {
@@ -172,7 +178,9 @@ type EdgeType =
 //   "blocked"  — cannot be represented on Wikidata (spxi: prefix)
 //   "n/a"      — not applicable for Wikidata (internal only)
 
-### Basin Measurement Schema
+#
+
+## Basin Measurement Schema
 
 
 interface BasinMeasurement {
@@ -190,7 +198,9 @@ interface BasinMeasurement {
 ---
 
 ## §III. COMPLETE SURFACE REGISTRY
-### A. DOI-Anchored Deposit Infrastructure
+#
+
+## A. DOI-Anchored Deposit Infrastructure
 
 
 id
@@ -247,7 +257,9 @@ https://www.wikidata.org/wiki/User:Hauntedmemes
 input
 
 
-### B. First-Party Websites (Sovereign Surfaces)
+#
+
+## B. First-Party Websites (Sovereign Surfaces)
 
 
 id
@@ -382,7 +394,9 @@ GitHub profile
 https://github.com/leesharks000
 
 
-### C. Publishing Platforms
+#
+
+## C. Publishing Platforms
 
 
 id
@@ -439,7 +453,9 @@ https://claude.ai
 relay
 
 
-### D. Social Media
+#
+
+## D. Social Media
 
 
 id
@@ -523,7 +539,9 @@ unknown
 **defunct**
 
 
-### E. Music / Audio / Video
+#
+
+## E. Music / Audio / Video
 
 
 id
@@ -558,7 +576,9 @@ https://youtube.com/@leesharks
 0.3
 
 
-### F. Poetry / Literary
+#
+
+## F. Poetry / Literary
 
 
 id
@@ -601,7 +621,9 @@ unknown
 **banned**
 
 
-### G. Books (Commercial Surfaces)
+#
+
+## G. Books (Commercial Surfaces)
 
 
 id
@@ -653,7 +675,9 @@ Amazon Author Page
 https://www.amazon.com/stores/Lee-Sharks/author/B00NACOYMU
 
 
-### H. Identity Registry
+#
+
+## H. Identity Registry
 
 
 **MANUS (external to all counts):**
@@ -908,7 +932,9 @@ passive
 passive
 
 
-### I. Hex Licenses
+#
+
+## I. Hex Licenses
 
 
 id
@@ -947,7 +973,9 @@ Viola Arquette Hex License v1.0
 **revoked**
 
 
-### J. Key Documents (sample — full list from Zenodo community)
+#
+
+## J. Key Documents (sample — full list from Zenodo community)
 
 
 id
@@ -1028,7 +1056,9 @@ Ghost Governance
 10.5281/zenodo.19099760
 
 
-### K. Entity Registry (Basin Portfolio)
+#
+
+## K. Entity Registry (Basin Portfolio)
 
 
 id
@@ -1111,7 +1141,9 @@ captured
 none
 
 
-### L. Infrastructure / Tools
+#
+
+## L. Infrastructure / Tools
 
 
 id
@@ -1154,7 +1186,9 @@ dead
 **lapsed**
 
 
-### M. Alice Thornburgh — YouTube Channel Topology (Partial — 40 of 134+)
+#
+
+## M. Alice Thornburgh — YouTube Channel Topology (Partial — 40 of 134+)
 
 
 **Aperture type:** relay (distribution surface for hex-licensed content)
@@ -1186,7 +1220,9 @@ Full extraction (134+) requires reading Alice's ChatGPT conversations [01] and [
 ---
 
 ## §IV. VISUALIZATION SPECIFICATION
-### Technology Stack
+#
+
+## Technology Stack
 
 
 Frontend:     React 18 (Vite)
@@ -1196,14 +1232,18 @@ Routing:      React Router → /topology, /topology/node/:id
 Data:         Static JSON (topology-source.json), version-controlled
 Deployment:   Vercel, from crimson-hexagonal-interface repo
 
-### Layout
+#
+
+## Layout
 
 - Force-directed (d3-force) with forceManyBody (strength -300), forceCenter, forceCollide (radius 8)
 - INFRASTRUCTURE nodes fixed at periphery (domains anchor the graph)
 - IDENTITY nodes clustered near center
 - DOCUMENT nodes orbit their defining ENTITY
 
-### Node Rendering
+#
+
+## Node Rendering
 
 
 Type
@@ -1254,14 +1294,18 @@ rounded rect
 - dormant: 0.5 opacity
 - banned / lapsed / walled / revoked: 0.3 opacity, dashed stroke, #8a8478
 
-### Modes (toggleable)
+#
+
+## Modes (toggleable)
 
 - **Default:** Color by type
 - **Basin Overlay:** Color ENTITY nodes by basinState (ghost=#8a8478, contested=#b84030, competitive=#a89060, captured=#c8a868, immanent=#ffffff with glow)
 - **Ghost Mode:** Lost nodes rendered prominent with dashed borders. Makes absence visible.
 - **Aperture View:** Color by apertureType (input=blue, output=green, relay=gold)
 
-### Interaction
+#
+
+## Interaction
 
 - **Hover:** Tooltip with label, type, status, authority, url (truncated)
 - **Click:** Right sidebar with full node card + outbound edges + "Open URL" button
@@ -1269,7 +1313,9 @@ rounded rect
 - **Search:** Typeahead across label, url, doi
 - **Filter:** Checkboxes for each type and status
 
-### Performance
+#
+
+## Performance
 
 - Must handle 200 nodes + 500 edges at 60fps
 - Use canvas rendering if SVG degrades
@@ -1278,7 +1324,9 @@ rounded rect
 ---
 
 ## §V. EXECUTION MODULES
-### Module 1: Surface Audit (Independent)
+#
+
+## Module 1: Surface Audit (Independent)
 
 
 **Objective:** Verify all known surfaces, detect gaps, produce audit report.
@@ -1297,7 +1345,9 @@ rounded rect
 
 
 **Success criteria:** Every node has verified status and lastVerified date.
-### Module 2: Infrastructure Fix (Depends on Module 1)
+#
+
+## Module 2: Infrastructure Fix (Depends on Module 1)
 
 
 **Objective:** Deploy pending sites, fix blocking issues, complete cross-link mesh.
@@ -1343,7 +1393,9 @@ TASK-M2-06: Complete cross-link mesh
     - holographickernel.org → secretbookofwalt.org, pessoagraph.org
     - surfacemap.org → all sites (after deployment)
 
-### Module 3: Content Creation (Independent)
+#
+
+## Module 3: Content Creation (Independent)
 
 
 **Objective:** Produce Medium posts for basin deepening.
@@ -1364,7 +1416,9 @@ TASK-M3-02: Write "The Writable Retrieval Basin" Medium post
   Links: spxi.dev, DOI 10.5281/zenodo.19763346
   Publish on: medium.com/@leesharks00
 
-### Module 4: Wikidata Batch (Independent)
+#
+
+## Module 4: Wikidata Batch (Independent)
 
 
 **Objective:** Create 7 Wikidata items via QuickStatements.
@@ -1387,7 +1441,9 @@ TASK-M4-02: Execute via hauntedmemes account at quickstatements.toolforge.org
 
 TASK-M4-03: Prepare Pessoa heteronym updates (separate batch)
 
-### Module 5: Graph Construction (Depends on Modules 1–4)
+#
+
+## Module 5: Graph Construction (Depends on Modules 1–4)
 
 
 **Objective:** Build the Aperture Atlas visualization.
@@ -1477,7 +1533,9 @@ Missing data:   Output null. Never invent addresses, DOIs, or handles.
 ---
 
 ## §IX. WIKIDATA PROPERTY REFERENCE AND SYNC PROTOCOL
-### A. Property Mapping
+#
+
+## A. Property Mapping
 
 
 The graph uses Wikidata property IDs as edge types. Every edge with a Pxxx type is either already on Wikidata (wikidataStatus: "live") or is a pending edit (wikidataStatus: "pending"). Edges with spxi: prefix cannot be represented on Wikidata and are internal to the archive topology.
@@ -1597,7 +1655,9 @@ Rights
 [work] → P6216 → Q50423863 (copyrighted, CC BY 4.0)
 
 
-### B. Wikidata Sync Protocol
+#
+
+## B. Wikidata Sync Protocol
 
 
 The graph visualization includes a **Wikidata Sync View** that shows:
@@ -1609,7 +1669,9 @@ The graph visualization includes a **Wikidata Sync View** that shows:
 
 
 **Workflow:** When a pending edge is created on Wikidata (via QuickStatements or manual edit), the operator updates the edge's wikidataStatus to "live" and adds wikidataSubject and wikidataObject Q-IDs. The graph becomes both the visualization AND the edit queue.
-### C. Entity → Q-ID Mapping (to be populated)
+#
+
+## C. Entity → Q-ID Mapping (to be populated)
 
 
 Entity
@@ -1689,7 +1751,9 @@ wikidataStatus: "live"
 - Every P50 / P170 edge (authorship/creation)
 - The SPXI JSON-LD on all first-party sites (sameAs fields)
 
-### D. QuickStatements Integration
+#
+
+## D. QuickStatements Integration
 
 
 The Module 4 QuickStatements batch (§V) draws directly from this property mapping. Every pending edge with a Pxxx type becomes a QuickStatements line:

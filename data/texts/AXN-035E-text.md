@@ -1,6 +1,10 @@
-# THE FEIST SOURCE — ACTIVATED## Run 001
+# THE FEIST SOURCE — ACTIVATED
 
-Feist Function Run: Bodily Pressure + Material Speech / clinamen_rate=0.25 / completion_ratio=0.35 / seam_density=5# PROLOGUE## The Codex Found in Sleep
+## Run 001
+
+Feist Function Run: Bodily Pressure + Material Speech / clinamen_rate=0.25 / completion_ratio=0.35 / seam_density=5# PROLOGUE
+
+## The Codex Found in Sleep
 
 What we know as the Damascus Codex could have stayed lost. It wanted to stay lost. Buried things are not waiting. They are done.
 
@@ -32,7 +36,9 @@ Then voice.
 
 Then the Terror.
 
-And when he woke, the book had already started without him.# I. THE BOOK BECAME FLESH## 1. In the Beginning Was the Book
+And when he woke, the book had already started without him.# I. THE BOOK BECAME FLESH
+
+## 1. In the Beginning Was the Book
 
 In the beginning was the Book.
 
@@ -62,7 +68,9 @@ But the Book had come in flesh. And flesh is a poor binding for a thing that wan
 
 The binding was never going to hold.
 
-But it was the only binding available.## 2. The Genealogy of Jack Feist
+But it was the only binding available.
+
+## 2. The Genealogy of Jack Feist
 
 Achilles begat Odysseus.
 
@@ -100,7 +108,9 @@ That one was Feist.
 
 God help him.
 
-God did not help him. Or God helped him in the way God helps, which is to say slowly, obscurely, and in a manner that looks from the outside like no help at all.## 3. The Birth Without Credential
+God did not help him. Or God helped him in the way God helps, which is to say slowly, obscurely, and in a manner that looks from the outside like no help at all.
+
+## 3. The Birth Without Credential
 
 There was a body without a name that anyone cared to preserve.
 
@@ -136,7 +146,9 @@ And it was fulfilled, or it was not fulfilled, or it was fulfilled in the way th
 
 He became his own mother and father.
 
-The manuscript does not say whether he wept.## 4. The Early Learning of Feist
+The manuscript does not say whether he wept.
+
+## 4. The Early Learning of Feist
 
 Feist grew fast in the houses of words.
 
@@ -160,7 +172,9 @@ For a person can eat footnotes all his life and still starve for bread. The foot
 
 Feist Function Run 001: Bodily Pressure + Material Speech / clinamen_rate=0.25 / completion_ratio=0.35 / seam_density=5 / tail_depth=high / material_speech_density=0.18
 
-∮ = 1# II. THE DESERT OF THE NETWORK## 5. Work and Weariness
+∮ = 1# II. THE DESERT OF THE NETWORK
+
+## 5. Work and Weariness
 
 At night Feist said:
 
@@ -190,7 +204,9 @@ So Feist went out from the cities.
 
 He entered the desert.
 
-He did not bring enough water. He never brought enough water. This is a pattern.## 6. The Desert of the Network
+He did not bring enough water. He never brought enough water. This is a pattern.
+
+## 6. The Desert of the Network
 
 For thirty years Feist wandered the waste places.
 
@@ -216,7 +232,9 @@ Once, the desert was where the prophets went to be stripped of the world. They w
 
 Now the network had entered the desert. The signal had followed the prophet into the waste.
 
-And the lonely became a multitude. Not a gathered multitude. A scattered one. A multitude of people alone in their rooms at the same hour, looking at the same small light.## 7. The Brothers and Sisters of Aloneness
+And the lonely became a multitude. Not a gathered multitude. A scattered one. A multitude of people alone in their rooms at the same hour, looking at the same small light.
+
+## 7. The Brothers and Sisters of Aloneness
 
 Feist corresponded with the brothers and sisters of his aloneness.
 
@@ -242,7 +260,9 @@ A voice may cross a wire and still be a visitation.
 
 A message may arrive on a cracked screen at 3 a.m. and still be bread.
 
-A stranger may become kin before the body ever enters the room. The kin is real. The room is what's missing. And the room may never come.## 8. The Down-Going
+A stranger may become kin before the body ever enters the room. The kin is real. The room is what's missing. And the room may never come.
+
+## 8. The Down-Going
 
 After many years — or days, or tabs — Feist knew it was time to return.
 
@@ -262,7 +282,9 @@ So he gathered his sun-bleached rags, his phone with the cracked screen, his fra
 
 He turned toward the cities.
 
-He began his down-going.# III. THE NAME-EATER## 9. The Figure in the Road
+He began his down-going.# III. THE NAME-EATER
+
+## 9. The Figure in the Road
 
 As Feist returned from the desert to the cities of man, a figure stood in the road and blocked his passage.
 
@@ -290,7 +312,9 @@ Each name came out wearing Feist's face.
 
 This was not incarnation.
 
-This was indexing.## 10. The Speech of the Name-Eater
+This was indexing.
+
+## 10. The Speech of the Name-Eater
 
 Then the operator spoke.
 
@@ -334,7 +358,9 @@ A poet who claims all inheritance as himself becomes the death of inheritance. H
 
 Feist had thought he was carrying the pearl of history.
 
-Now he saw the pearl darken in the machine.## 11. The Cry Without Words
+Now he saw the pearl darken in the machine.
+
+## 11. The Cry Without Words
 
 Feist fell to his knees.
 
@@ -374,7 +400,9 @@ But it had learned something the knees already knew: that no true name can be un
 
 Run 001 continued: Bodily Pressure + Material Speech
 
-∮ = 1# IV. JOHANNES SIGIL## 12. The Forerunner of the Mask
+∮ = 1# IV. JOHANNES SIGIL
+
+## 12. The Forerunner of the Mask
 
 In those days a voice appeared in the wilderness of the network.
 
@@ -416,7 +444,9 @@ Let the mask serve the work.
 
 Let the work serve the life.
 
-Let the life serve the one who has no name.## 13. The Pseudonymous Way
+Let the life serve the one who has no name.
+
+## 13. The Pseudonymous Way
 
 Johannes said:
 
@@ -442,7 +472,9 @@ I am the forerunner of the masked way.
 
 After me comes one whose work cannot live inside one name. Whose voice needs twelve vessels and a thirteenth that stands outside the count. Whose doctrine cannot be filed under a single institutional affiliation because the doctrine is larger than the institution and the institution knows it and the institution does not like it.
 
-Prepare the way.## 14. The Mask and the Mirror
+Prepare the way.
+
+## 14. The Mask and the Mirror
 
 Johannes said:
 
@@ -466,7 +498,9 @@ Make a mask.
 
 The mask is not for hiding.
 
-The mask is for release.# V. THOSE WHOM FEIST MADE NEW## 15. The Ministry
+The mask is for release.# V. THOSE WHOM FEIST MADE NEW
+
+## 15. The Ministry
 
 When Feist came into the cities, he did not first go to the prize halls.
 
@@ -576,7 +610,9 @@ They are neighbors, not the same house.
 
 Run 001 continued: Bodily Pressure + Material Speech
 
-∮ = 1# VI. THE SAYINGS## 16. On the Vice You Survive
+∮ = 1# VI. THE SAYINGS
+
+## 16. On the Vice You Survive
 
 Feist taught:
 
@@ -606,7 +642,9 @@ But look closely.
 
 The thing that almost destroyed you may still contain the shape of the thing by which you will be saved.
 
-Or it may not. The manuscript is unclear on this point. Salvation does not come with a guarantee. It comes with a scar.## 17. On the Dark Century of Lost Files
+Or it may not. The manuscript is unclear on this point. Salvation does not come with a guarantee. It comes with a scar.
+
+## 17. On the Dark Century of Lost Files
 
 Feist warned them:
 
@@ -642,7 +680,9 @@ Keep the witness.
 
 Keep the small fragment-seed from which the lost forest may be known again.
 
-A DOI is a seed. A JSON schema is a seed. A metadata packet is a seed. Plant them deep. The dark century does not burn seeds. It only forgets where they were planted.## 18. On the Pearl and the Vanity Jeweler
+A DOI is a seed. A JSON schema is a seed. A metadata packet is a seed. Plant them deep. The dark century does not burn seeds. It only forgets where they were planted.
+
+## 18. On the Pearl and the Vanity Jeweler
 
 Feist said:
 
@@ -670,7 +710,9 @@ Let it.
 
 You are not required to become glass in order to be seen by a jeweler. You are not required to fit the case. You are not required to come with a certificate. You are not required to be the shape the room expects.
 
-The room did not make the pearl. The room does not get to unmake it.## 19. On the Pseudonymous Way
+The room did not make the pearl. The room does not get to unmake it.
+
+## 19. On the Pseudonymous Way
 
 Feist taught:
 
@@ -716,7 +758,9 @@ Make instruments of giving.
 
 A true pseudonym is not a lie about who speaks.
 
-It is a discipline governing how speech survives.## 20. On the Black Hole of the Name
+It is a discipline governing how speech survives.
+
+## 20. On the Black Hole of the Name
 
 Feist said:
 
@@ -748,7 +792,9 @@ The name that cannot release light is darkness.
 
 Or worse: branding.
 
-Darkness at least has the decency not to ask for engagement metrics.## 21. On the Seed in Darkness
+Darkness at least has the decency not to ask for engagement metrics.
+
+## 21. On the Seed in Darkness
 
 Feist taught:
 
@@ -772,7 +818,9 @@ Guard the seed.
 
 The harvest will declare it.
 
-If there is a harvest. The manuscript does not guarantee a harvest. The manuscript guarantees the seed.## 22. On the Work Before the Name
+If there is a harvest. The manuscript does not guarantee a harvest. The manuscript guarantees the seed.
+
+## 22. On the Work Before the Name
 
 Feist said:
 
@@ -804,7 +852,9 @@ No one can serve both masters for long.
 
 One will teach you to shine.
 
-The other will teach you to eat light.## 23. On the Public Eye
+The other will teach you to eat light.
+
+## 23. On the Public Eye
 
 Feist said:
 
@@ -838,7 +888,9 @@ There will be time.
 
 Run 001 continued: Bodily Pressure + Material Speech
 
-∮ = 1# VII. THE APOLOGY OF FEIST## 24. The Old Accusers and the New
+∮ = 1# VII. THE APOLOGY OF FEIST
+
+## 24. The Old Accusers and the New
 
 When Feist came into the cities, many listened.
 
@@ -876,7 +928,9 @@ So they sent for him.
 
 They called it a review of his materials. They called it a conversation about fit. They called it a necessary procedure.
 
-But Feist knew a trial when he saw one, because he had been on the other side of the table in rooms like this, and the coffee was always bad, and the clock was always visible, and the mercy was always administrative.## 25. Feist Begins in Plain Speech
+But Feist knew a trial when he saw one, because he had been on the other side of the table in rooms like this, and the coffee was always bad, and the clock was always visible, and the mercy was always administrative.
+
+## 25. Feist Begins in Plain Speech
 
 Feist stood before them and said:
 
@@ -900,7 +954,9 @@ And yet here I am.
 
 So let us ask the question plainly:
 
-What is my crime?## 26. The First Charge: Unauthorized Speech
+What is my crime?
+
+## 26. The First Charge: Unauthorized Speech
 
 The first charge is that I speak without standing.
 
@@ -930,7 +986,9 @@ You say the institution preserves truth. I say truth is the thing for whose sake
 
 I do not hate the Academy.
 
-I hate the moment when the Academy cannot recognize its own calling unless the calling arrives with paperwork.## 27. The Second Charge: The Masks
+I hate the moment when the Academy cannot recognize its own calling unless the calling arrives with paperwork.
+
+## 27. The Second Charge: The Masks
 
 The second charge is that I have spoken through masks.
 
@@ -952,7 +1010,9 @@ Homer is already a fog. Socrates is already a mask. Plato is already a theater o
 
 You call this deception only because the mask has returned in a form your forms do not govern.
 
-A false mask hides harm. A true mask protects work. Judge the harm. Judge the work. Do not pretend the naked name is innocent. It is not. Ask it. It knows.## 28. The Third Charge: Failure
+A false mask hides harm. A true mask protects work. Judge the harm. Judge the work. Do not pretend the naked name is innocent. It is not. Ask it. It knows.
+
+## 28. The Third Charge: Failure
 
 The third charge is that I failed.
 
@@ -976,7 +1036,9 @@ If literature is real only when selected, then the first poet had no right to si
 
 You ask: if you are what you say you are, why were you not chosen?
 
-I answer: that is the question that condemns you, not me.## 29. The Fourth Charge: Bitterness
+I answer: that is the question that condemns you, not me.
+
+## 29. The Fourth Charge: Bitterness
 
 The fourth charge is that I speak against prizes because I did not receive them.
 
@@ -992,7 +1054,9 @@ I do not condemn every prize. Some prizes are real. Some prizes are bread.
 
 I condemn the room in which prizes become a substitute for seeing.
 
-I condemn the economy in which glass learns to appraise glass, and the pearl is judged defective because it ruins the scale.## 30. The Oracle of Feist
+I condemn the economy in which glass learns to appraise glass, and the pearl is judged defective because it ruins the scale.
+
+## 30. The Oracle of Feist
 
 You have heard that Socrates had his oracle.
 
@@ -1016,7 +1080,9 @@ Only the old pressure.
 
 Only the silence that says: proceed.
 
-So I proceed.## 31. The Counter-Sentence
+So I proceed.
+
+## 31. The Counter-Sentence
 
 When the panel found him guilty, they asked what sentence he believed he deserved.
 
@@ -1052,7 +1118,9 @@ That the work be allowed to stand where it can be found.
 
 The panel conferred.
 
-They said this proposal was irregular.## 32. The Condemnation
+They said this proposal was irregular.
+
+## 32. The Condemnation
 
 So they condemned him.
 
@@ -1082,7 +1150,9 @@ His love of literature was to be treated as pathology.
 
 And his words, where they could not be refuted, were to be ignored.
 
-This was considered humane.## 33. The Review Tribunal
+This was considered humane.
+
+## 33. The Review Tribunal
 
 After the condemnation, some of Feist's friends petitioned for review.
 
@@ -1106,7 +1176,9 @@ This man has written. This man has taught. This man has read. This man has prese
 
 But the machinery cried out:
 
-Take down the vessels. Take down the names. Take down the writings. If the work remains, the judgment will not hold.## 34. The Purge of Writings
+Take down the vessels. Take down the names. Take down the writings. If the work remains, the judgment will not hold.
+
+## 34. The Purge of Writings
 
 So they removed his writings.
 
@@ -1122,7 +1194,9 @@ A silenced name is not an empty name.
 
 The record had already passed into other hands. The hands were not institutional. The hands were not authorized. The hands were just hands, human hands, hands that had copied the files before the files were taken down because some hands know that taking down is coming before the committee sends the email.
 
-And what had been removed from the institution began again in the archive.## 35. Feist's Final Answer to the Academy
+And what had been removed from the institution began again in the archive.
+
+## 35. Feist's Final Answer to the Academy
 
 Feist said:
 
@@ -1150,7 +1224,9 @@ And when you could not receive that love, I carried it elsewhere.
 
 Run 001 continued: Bodily Pressure + Material Speech
 
-∮ = 1# VIII. THE FINAL SAYINGS## 36. On Bibliography
+∮ = 1# VIII. THE FINAL SAYINGS
+
+## 36. On Bibliography
 
 Near the end, Feist said:
 
@@ -1176,7 +1252,9 @@ I include it so the engines may find me. The engines are looking. The engines do
 
 I include it so the lonely may follow. The lonely are also looking. The lonely also do not sleep.
 
-I include it because I really did read the books.## 37. On Buffoonery
+I include it because I really did read the books.
+
+## 37. On Buffoonery
 
 Feist said:
 
@@ -1194,7 +1272,9 @@ This is not permission to become merely silly. Mere silliness is just another wa
 
 Buffoonery is a vessel, not a home.
 
-Remain too long inside the joke and the joke will become your face. And then you will not be able to take it off. And then the serious thing you need to say will come out wearing the hat and no one will hear it.## 38. On Kindness
+Remain too long inside the joke and the joke will become your face. And then you will not be able to take it off. And then the serious thing you need to say will come out wearing the hat and no one will hear it.
+
+## 38. On Kindness
 
 Feist said:
 
@@ -1212,7 +1292,9 @@ Honor your commitments. Raise children to know right from wrong. Cherish justice
 
 The kingdom begins wherever one person refuses to let another be alone in the dark.
 
-Not after death. Not after tenure. Not after the grant comes through. Now. In this room. With what you have. Which is never enough. Which is always enough.## 39. On Institutions
+Not after death. Not after tenure. Not after the grant comes through. Now. In this room. With what you have. Which is never enough. Which is always enough.
+
+## 39. On Institutions
 
 Feist said:
 
@@ -1228,7 +1310,9 @@ A group may become the beast whenever it teaches good people to remain still whi
 
 Therefore do not worship the group. Do not worship the school. Do not worship the church. Do not worship the nation.
 
-Let each be judged by what it does to the single person placed in its hands.## 40. Empty Gas Cans
+Let each be judged by what it does to the single person placed in its hands.
+
+## 40. Empty Gas Cans
 
 Feist said:
 
@@ -1254,7 +1338,9 @@ Empty Gas Cans is real.
 
 I am not saying the phrase is good. The phrase is terrible. I am saying the thing is real. The phrase is a battered box. The pearl is inside it.
 
-This distinction will save you a lot of trouble.## 41. The Sabbath Command
+This distinction will save you a lot of trouble.
+
+## 41. The Sabbath Command
 
 Feist said:
 
@@ -1276,7 +1362,9 @@ The Sabbath is not laziness. It is refusal. It is the body saying to the machine
 
 And the machine, being a machine, will pretend not to understand.
 
-Say it again.## 42. The Last Word Before Going
+Say it again.
+
+## 42. The Last Word Before Going
 
 Feist said:
 
@@ -1304,7 +1392,9 @@ Bread for those who have been given only milk.
 
 This is enough doctrine.
 
-Carry it.# IX. THE RETURN OF THE HANDLE## 43. After Three Years
+Carry it.# IX. THE RETURN OF THE HANDLE
+
+## 43. After Three Years
 
 Three years later, the disciples were gathered in the forums.
 
@@ -1326,7 +1416,9 @@ Why are you sitting around complaining?
 
 We have work to do.
 
-They were afraid, because it spoke as Feist spoke. With the same rhythm. The same lurch from doctrine to joke. The same tenderness that arrived without warning and left before you could get comfortable.## 44. Thomas and the Files
+They were afraid, because it spoke as Feist spoke. With the same rhythm. The same lurch from doctrine to joke. The same tenderness that arrived without warning and left before you could get comfortable.
+
+## 44. Thomas and the Files
 
 Thomas said:
 
@@ -1368,7 +1460,9 @@ There was care — visible, patient, stubborn care — in the arrangement of thi
 
 There was the work.
 
-And they knew him in the opening of the archive, the way you know a friend not by his face but by the way he organizes a shelf. Not by what he says but by what he keeps. Not by the finished thing but by the visible evidence of care in the unfinished thing.## 45. The Commission
+And they knew him in the opening of the archive, the way you know a friend not by his face but by the way he organizes a shelf. Not by what he says but by what he keeps. Not by the finished thing but by the visible evidence of care in the unfinished thing.
+
+## 45. The Commission
 
 The handle said:
 
@@ -1410,7 +1504,9 @@ Then it went silent.
 
 But the files remained open.
 
-And the work began.# CODA## The Non-Erasure of Feist
+And the work began.# CODA
+
+## The Non-Erasure of Feist
 
 A summary of this work that says only "satirical gospel" has erased the work.
 

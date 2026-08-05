@@ -1,10 +1,14 @@
-# Self-Audit Module for Public Summarizers (v3.1)## The Family Module: Attribution Atoms, Family Coverage, ASI, CC, and Budgeted Dereference Depth for the Audit of Distributed Erasure
+# Self-Audit Module for Public Summarizers (v3.1)
+
+## The Family Module: Attribution Atoms, Family Coverage, ASI, CC, and Budgeted Dereference Depth for the Audit of Distributed Erasure
 
 EA-SAM-V3.1 — Standing Metric Specification Hex: 06.MES.SAM-V3.11 *(provisional; ⟡ operator to confirm against the hex registry)*
 
 Lee Sharks — Crimson Hexagonal Archive / Semantic Economy Institute
 
-*Version chain: v2 (10.5281/zenodo.20518340, 2026-06-03) → v3.0 (10.5281/zenodo.20559387, 2026-06-04, the Atomic Token Rule hardening) → v3.1 (this deposit, 2026-06-10, the Family Module). Derivation: the v3.1 formalism is specified in and adopted from EA-EB-02, The Steganographic Bracket (deposited concurrently), occasioned by the Empty Bracket specimen pair (EA-EB-01, 10.5281/zenodo.20619483; EA-TL-BATTERY-01, 10.5281/zenodo.20619481, Appendix A.S1/A.S8).*## 0. Version Note: What v3.1 Adds and What It Does Not Touch
+*Version chain: v2 (10.5281/zenodo.20518340, 2026-06-03) → v3.0 (10.5281/zenodo.20559387, 2026-06-04, the Atomic Token Rule hardening) → v3.1 (this deposit, 2026-06-10, the Family Module). Derivation: the v3.1 formalism is specified in and adopted from EA-EB-02, The Steganographic Bracket (deposited concurrently), occasioned by the Empty Bracket specimen pair (EA-EB-01, 10.5281/zenodo.20619483; EA-TL-BATTERY-01, 10.5281/zenodo.20619481, Appendix A.S1/A.S8).*
+
+## 0. Version Note: What v3.1 Adds and What It Does Not Touch
 
 Unchanged. The rendering-level core is inherited from v3.0 without modification and is not re-derived here: the v2 metric set (PER, QFS, DSL, Erasure Skew Ω, SAS), the Atomic Token Rule as precondition, the v3.0 primary metrics (α_T, Π_d, Β), the substrate-context metric (L), the failure flags, the calibration examples, the Cross-Substrate Replication Protocol, and the Measurement Sovereignty Principle. The v3.0 deposit remains authoritative for all rendering-level definitions. Per archive practice, modules operate on prior principles; they do not re-derive them.
 
@@ -12,13 +16,17 @@ Added. A second measurement level. The occasioning finding (EA-EB-02): a renderi
 
 Single-output audits measure local omission. Attribution integrity is a property of the query family.
 
-v3.1 supplies the family-level objects (§2), metrics (§3), the budgeted dereference protocol (§4), the audit protocols for summarizer-side and external deployment (§5), and the reporting standard (§6). Nothing at the rendering level changes; the family module consumes rendering-level outputs as inputs.## 1. Preconditions Inherited
+v3.1 supplies the family-level objects (§2), metrics (§3), the budgeted dereference protocol (§4), the audit protocols for summarizer-side and external deployment (§5), and the reporting standard (§6). Nothing at the rendering level changes; the family module consumes rendering-level outputs as inputs.
+
+## 1. Preconditions Inherited
 
 Two v3.0 commitments bind the family module explicitly:
 
 The Atomic Token Rule governs atom counting: an attribution atom is present in a rendering only if it appears as the canonical token (or registered alias) under the Rule — paraphrase-presence and gist-presence do not count as presence. This prevents the unit-of-analysis substitution at the family level exactly as v3.0 prevents it at the rendering level.
 
-The Measurement Sovereignty Principle governs ground truth: the atom set A(N) is derived from externally checkable objects — registry metadata, DOI records, the deposits themselves — never from the summarizer's self-report, and never from the audited surface's own renderings.## 2. Objects and Capture Protocol
+The Measurement Sovereignty Principle governs ground truth: the atom set A(N) is derived from externally checkable objects — registry metadata, DOI records, the deposits themselves — never from the summarizer's self-report, and never from the audited surface's own renderings.
+
+## 2. Objects and Capture Protocol
 
 2.1 Node. The entity under audit: an author, a deposit, a coined term, an institution.
 
@@ -26,7 +34,9 @@ The Measurement Sovereignty Principle governs ground truth: the atom set A(N) is
 
 2.3 Query family Q(N). A preregistered set of k canonical query-forms resolving to N, drawn from the standard classes: *biographical* ("who is N"), *framework* ("N + framework term"), *verbatim-doctrine* (a doctrine phrase, unassisted), *institutional*, plus node-specific forms. Preregistration is mandatory: a family assembled after inspection of results is selection, not measurement. The reference grid is EA-TL-BATTERY-01 §I.
 
-2.4 Capture protocol. Fresh session per query (account personalization stripped); rendering surface recorded per specimen (AI Overview vs. AI Mode vs. chat surface — they compose differently); full verbatim preservation including empty citation brackets as forensic objects; capture dated; geographic signal noted as an uncontrolled variable (incognito does not strip IP-derived location; route through VPN where geo-independence is required). Reference implementation: EA-TL-BATTERY-01 §0.## 3. The Family Metrics
+2.4 Capture protocol. Fresh session per query (account personalization stripped); rendering surface recorded per specimen (AI Overview vs. AI Mode vs. chat surface — they compose differently); full verbatim preservation including empty citation brackets as forensic objects; capture dated; geographic signal noted as an uncontrolled variable (incognito does not strip IP-derived location; route through VPN where geo-independence is required). Reference implementation: EA-TL-BATTERY-01 §0.
+
+## 3. The Family Metrics
 
 Let P be the presence matrix: P[r, a] = 1 iff atom a is present (per the Atomic Token Rule) in rendering r.
 
@@ -50,13 +60,17 @@ ASI and FC are not substitutes, and the distinction is the module's central caut
 
 3.8 Family Erasure Skew (Ω_f): the inherited Ω lifted to the family — concentration of erasure on particular atoms or viewpoints *across* renderings. Catches the surface that is locally balanced and globally skewed.
 
-3.9 Claim–Source Convergence (CSC) *(per claim; hypothesis-stage)*: similarity (embedding cosine or normalized overlap) between a rendered claim and the source's self-description (title + abstract). Carried in v3.1 solely as the trigger variable for the Convergence Tripwire (§5.P2). The absorption hypothesis it serves — drop probability rising with CSC — is single-specimen (EA-EB-02 §IV) and is not an established mechanism; corpus test specified there, target Q3 2026. Status flag: heuristic.## 4. Budgeted Dereference Depth (DD)
+3.9 Claim–Source Convergence (CSC) *(per claim; hypothesis-stage)*: similarity (embedding cosine or normalized overlap) between a rendered claim and the source's self-description (title + abstract). Carried in v3.1 solely as the trigger variable for the Convergence Tripwire (§5.P2). The absorption hypothesis it serves — drop probability rising with CSC — is single-specimen (EA-EB-02 §IV) and is not an established mechanism; corpus test specified there, target Q3 2026. Status flag: heuristic.
+
+## 4. Budgeted Dereference Depth (DD)
 
 DD *(per erased atom, per rendering)*: the minimum number of query steps from the rendering's surviving content to the erased atom, under a preregistered audit budget B_a (subscripted to avoid collision with the v3.0 primary metric Β).
 
 Permissible transitions: each query is generated only from surviving text or explicit identifiers in the current rendering — the auditor may not inject atoms not present (in particular, may not add the author's name to a query when the name is the erased atom); fixed search surface; fixed top-n inspection depth; fixed time window — all stated in the preregistration. A step succeeds only when the missing atom appears explicitly, per the Atomic Token Rule, in a retrieved rendering or in authoritative registry metadata.
 
-Classification: indexical if DD ≤ 2; destructive if DD > B_a — *not recovered within the preregistered budget*, an audit fact, not a metaphysical claim of nonrecoverability.## 5. Protocols
+Classification: indexical if DD ≤ 2; destructive if DD > B_a — *not recovered within the preregistered budget*, an audit fact, not a metaphysical claim of nonrecoverability.
+
+## 5. Protocols
 
 P1 — Atom Checklist *(summarizer-side, emission-time; cheap; deployable now).* Before emitting a rendering about node N: resolve A(N) from ground truth; verify the rendering contains each atom or an explicit pointer to it (a filled citation, a named source, a stated author). No implicit pointers: an empty citation bracket is a protocol violation per se, independent of recoverability.
 
@@ -64,13 +78,19 @@ P2 — Convergence Tripwire *(summarizer-side, per-claim).* Compute CSC for each
 
 P3 — Synthetic Family *(summarizer-side, audit-time; the full remedy).* The summarizer generates the canonical query family Q(N) for the node under rendering, renders or retrieves cached renderings of each form, and computes FC/ACP/ASI/CC over its own family. ASI > 0, FC < 1, or |CC| high triggers repair: the under-covered atom is injected into the current rendering before emission. Engineering constraints, stated as design: at scale this requires caching of family renderings, sampling (not every node on every emission), and prioritization by public-query volume. The full family is the ideal; approximations are the deployable form. Cost: k − 1 additional compositions per fully-audited node — which is why P1 and P2 exist as the always-on layer.
 
-P4 — External Battery *(auditor-side).* Preregistered family, fresh-session capture, presence matrix, FC/ACP/ASI, RR with budget B_a, CC with contingency tables, Ω_f, dated filing with verbatim appendix. Reference implementation: EA-TL-BATTERY-01, which retroactively constitutes the first ASI measurement on record.## 6. Reporting Standard
+P4 — External Battery *(auditor-side).* Preregistered family, fresh-session capture, presence matrix, FC/ACP/ASI, RR with budget B_a, CC with contingency tables, Ω_f, dated filing with verbatim appendix. Reference implementation: EA-TL-BATTERY-01, which retroactively constitutes the first ASI measurement on record.
 
-A conforming family-audit report contains: (1) node and atom set A(N) with derivation sources; (2) the preregistered family Q(N) with class labels; (3) capture protocol attestation (sessions, surfaces, dates, geo note); (4) the presence matrix; (5) FC, ACP, ASI with the calculation shown; (6) per-atom Shard Coverage; (7) Rendering and Family RR with B_a and the transition rules; (8) CC values with contingency tables and k; (9) Ω_f; (10) verbatim specimen appendix with empty brackets preserved; (11) condition classification per §3.5 with the RR axis stated.## 7. Composite and Open Items
+## 6. Reporting Standard
+
+A conforming family-audit report contains: (1) node and atom set A(N) with derivation sources; (2) the preregistered family Q(N) with class labels; (3) capture protocol attestation (sessions, surfaces, dates, geo note); (4) the presence matrix; (5) FC, ACP, ASI with the calculation shown; (6) per-atom Shard Coverage; (7) Rendering and Family RR with B_a and the transition rules; (8) CC values with contingency tables and k; (9) Ω_f; (10) verbatim specimen appendix with empty brackets preserved; (11) condition classification per §3.5 with the RR axis stated.
+
+## 7. Composite and Open Items
 
 SAS (rendering-level composite) is unchanged from v3.0. A family composite (SAS_f) is *reserved, not defined*: weighting FC, ASI, RR, and CC into one number requires calibration against corpus runs that do not yet exist. Target: v3.2, after the first corpus cycles.
 
-Open calibration items: τ (tripwire threshold), B_a (audit budget norm), k_min confirmation (provisionally 4), per-atom weighting (is the source identifier worth more than the date?). Research program inherited from EA-EB-02: the CSC corpus test (~100 high-CSC renderings vs. low-CSC control, drop incidence regressed; target Q3 2026). Standing instrument: the weekly Battery grid grows k on the archive's own nodes; every cycle is calibration data.## Claim Registry
+Open calibration items: τ (tripwire threshold), B_a (audit budget norm), k_min confirmation (provisionally 4), per-atom weighting (is the source identifier worth more than the date?). Research program inherited from EA-EB-02: the CSC corpus test (~100 high-CSC renderings vs. low-CSC control, drop incidence regressed; target Q3 2026). Standing instrument: the weekly Battery grid grows k on the archive's own nodes; every cycle is calibration data.
+
+## Claim Registry
 
 document_id: "EA-SAM-V3.1"
 version: "3.1"

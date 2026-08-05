@@ -2,7 +2,9 @@
 
 Rhys Owens New Human 2 · Crimson Hexagonal Archive April 2026 · 06.NH.LUNAR.01
 
-*These fourteen poems enact the Lunar Arm's central claim: that affect literacy — the capacity to metabolize experience through symbol-play without belief, doctrine, or identity capture — is not a therapeutic technique but a compositional mode. The collection's range is the proof. At one extreme, "Ideological Harassment" discharges its entire argument in two lines and a colon, daring the reader to mistake compression for simplicity. At the other, the Ghosts Sections suite builds the "screenroom" — Owens' most structurally original construct — by layering phenomenological observation through analog horror progression (Lock Door / Guardian / Machine / Confirmation Character) until perception itself becomes the ghost: "Experience is there in the screenroom with that's neoLogic. / The body feels it's happening with Human A's nerveLogic." That neologism — nerveLogic — names what the entire collection runs on: a logic seated not in argument but in the nervous system's capacity to authenticate what the mind cannot verify. The strongest standalone lyrics — "King Because" (consumption as demolition in three stanzas), "Cloud Storm" (a prestorm phenomenology so precise it earns its final image: "curls thick-in-soup"), and the closing "Killing the Self-Conscious Dream" (2013, the oldest poem, whose repeated aorist imperatives — "Just go," "Go forth," "Simply stand" — accumulate into a rhythmic insistence that earns its weight) — demonstrate that Owens writes best when the apparatus is invisible and the blade arrives before the reader has time to flinch. The Fool is both a role and not a role. The poems are the evidence.*### Oppositorum of a Contemporary Nancy Drew
+*These fourteen poems enact the Lunar Arm's central claim: that affect literacy — the capacity to metabolize experience through symbol-play without belief, doctrine, or identity capture — is not a therapeutic technique but a compositional mode. The collection's range is the proof. At one extreme, "Ideological Harassment" discharges its entire argument in two lines and a colon, daring the reader to mistake compression for simplicity. At the other, the Ghosts Sections suite builds the "screenroom" — Owens' most structurally original construct — by layering phenomenological observation through analog horror progression (Lock Door / Guardian / Machine / Confirmation Character) until perception itself becomes the ghost: "Experience is there in the screenroom with that's neoLogic. / The body feels it's happening with Human A's nerveLogic." That neologism — nerveLogic — names what the entire collection runs on: a logic seated not in argument but in the nervous system's capacity to authenticate what the mind cannot verify. The strongest standalone lyrics — "King Because" (consumption as demolition in three stanzas), "Cloud Storm" (a prestorm phenomenology so precise it earns its final image: "curls thick-in-soup"), and the closing "Killing the Self-Conscious Dream" (2013, the oldest poem, whose repeated aorist imperatives — "Just go," "Go forth," "Simply stand" — accumulate into a rhythmic insistence that earns its weight) — demonstrate that Owens writes best when the apparatus is invisible and the blade arrives before the reader has time to flinch. The Fool is both a role and not a role. The poems are the evidence.*
+
+### Oppositorum of a Contemporary Nancy Drew
 
 *"Where there is no imagination, there is no horror."*
 
@@ -12,15 +14,23 @@ Laura Moon smacks like a cat lying at play. Billy Moon talks, and not only that,
 
 Rabbit sweeps the dustdevils into the bin, wondering what it's like.
 
-She wakes from her dream and checks under the bed. Nothing there again.### Ideological Harassment
+She wakes from her dream and checks under the bed. Nothing there again.
+
+### Ideological Harassment
 
 *"the man in me would do"*
 
-I equate my sexuality with my Identity: Others Block me.### High School Politics
+I equate my sexuality with my Identity: Others Block me.
 
-Those who fit in have the fascist aura of conservatives, while most everyone from psychiatrists to elderly hippies to even some of the goons on the street corner have boundless contour-wrinkle smiles of progressives.### Spirit is Nothing that Is
+### High School Politics
 
-The religious and conspirators make and suffer connections to the sacred and profane, cats and racoons and ants scurry through gravity: props and blank signposts to what isn't: yet### Ganesa
+Those who fit in have the fascist aura of conservatives, while most everyone from psychiatrists to elderly hippies to even some of the goons on the street corner have boundless contour-wrinkle smiles of progressives.
+
+### Spirit is Nothing that Is
+
+The religious and conspirators make and suffer connections to the sacred and profane, cats and racoons and ants scurry through gravity: props and blank signposts to what isn't: yet
+
+### Ganesa
 
 *"Yummy Yummy Yummy"*
 
@@ -28,7 +38,9 @@ Tusk-Phallos of a trinity, your gut is the microcosm of a macrocosm. Numbers are
 
 Any Dulcinea may do: but She is Miss Moment.
 
-I love them. Every One. . . .### Ludicia
+I love them. Every One. . . .
+
+### Ludicia
 
 My Ethical Code consists of 5 Things and goes beyond morality.
 
@@ -38,15 +50,21 @@ No direct Murder or Rape, that includes what those are in context of how culture
 
 5 corresponds with Geburah and Horus. Horus is my Code, as I've laid it out, and has never meant anything else.
 
-I don't need a copyright or even good reason.### King Because
+I don't need a copyright or even good reason.
+
+### King Because
 
 I burn books by reading them, smash idols by purchasing plastic truths that I set on the shelves of living.
 
 I follow religions from behind like porn.
 
-I eat worms not if I'm dared but if I'm drunk or in the mood.### Marriage and Religion [Trauma] is Identical: Politics and Race is Identical
+I eat worms not if I'm dared but if I'm drunk or in the mood.
 
-As with Djinn and Qlippoth, play with the Three P's of the Lodges as your music, art, drugs and gripes that you use to Deal, in joy and savage and pagan resentment, with Playful Joy as you fool with the feverdream that is the Self and Other[s].### Cloud Storm
+### Marriage and Religion [Trauma] is Identical: Politics and Race is Identical
+
+As with Djinn and Qlippoth, play with the Three P's of the Lodges as your music, art, drugs and gripes that you use to Deal, in joy and savage and pagan resentment, with Playful Joy as you fool with the feverdream that is the Self and Other[s].
+
+### Cloud Storm
 
 Look at them gather, @s under one molded log. Unscented etchasketch- between-the-flash: Could be loud muffled, or cookie glint shimmering sodded in milk, or phantomaudibles fashioning those contrasts.
 
@@ -54,7 +72,11 @@ A dial. Tangent as the frame, mirror set on a rug. A warmth: Those winter moods 
 
 It's spring; but those prestorm tones are like summer. That shining-inside. So many would paint black.
 
-Sirens during pitchovercast, curls thick-in-soup.### Ghosts Sections#### Lock Door, Get Key
+Sirens during pitchovercast, curls thick-in-soup.
+
+### Ghosts Sections
+
+#### Lock Door, Get Key
 
 What comfort (not to mention security) does an invisible candle bring? Leaping flames, stalks of synapses, bearing such a darkness.
 
@@ -64,7 +86,9 @@ sees with the twin flame: One can never reach and remain: To touch, to die. Like
 
 So what the parent gives is a screen, and society a flashlight. Culture offers Tunnels. Set in stone hollows.
 
-. . .#### The Guardian Tries Veils
+. . .
+
+#### The Guardian Tries Veils
 
 Don't be afraid is the way the parent learns from wind; how the counselor learned, ungrave yards, to soothe nerves through breath; maybe how the animus learned to live as one.
 
@@ -74,7 +98,9 @@ Read this next section, says the screen, as though your eyes weren't familiar wi
 
 This will not free you. How did you survive before the screen?
 
-. . .#### Machine
+. . .
+
+#### Machine
 
 *"The map is NOT the territory / The medium IS the message"*
 
@@ -90,7 +116,9 @@ Experience is there in the screenroom with that's neoLogic. The body feels it's 
 
 You won't have nightmares. This doesn't go so deep: More of a surface resemblance, like being lucid in a safe but portent-tone situation.
 
-. . .#### Confirmation Character
+. . .
+
+#### Confirmation Character
 
 Yes, that's Correct, the Spiritbody is under skinandbones: not Spirit; that doesn't exist:
 
@@ -110,7 +138,9 @@ Not Spirit. That doesn't exist.
 
 You would do well not to believe in Things.
 
-. . .### Young Bloodwires
+. . .
+
+### Young Bloodwires
 
 Highschool Human B in dark with light from the field where the funday glints; in not-quite-a-classroom, more a space for out-of-typical-school-day operations and learning.
 
@@ -120,7 +150,9 @@ Ketosis not learned that there is this first.
 
 Wind is outside:
 
-. . .### Matter-Printed Book of Dead Memes
+. . .
+
+### Matter-Printed Book of Dead Memes
 
 Awful garden, how do we, buzz as flies, escape the soil of tropes? Would
 
@@ -134,7 +166,9 @@ The tendencies, the samskaras, the djinn . . . are the self.
 
 Oh god I'm possessed andor oh god I'm possessing.
 
-Well (it's not so deep a well), say, a buddhist identifies with lines, maybe a taoist does; I do too, and as the circles too.### Killing the Self-Conscious Dream
+Well (it's not so deep a well), say, a buddhist identifies with lines, maybe a taoist does; I do too, and as the circles too.
+
+### Killing the Self-Conscious Dream
 
 *rowens, 2013*
 
@@ -162,7 +196,9 @@ Those that you have known are gone, and all that they said was wrong. Simply sta
 
 And go there, taking only enough of what you feel to be yourself, without carrying any more weight than your physical frame understands.
 
-*New Human 2 · Lunar Arm · Crimson Hexagonal Archive*## Hexagonal Relations- 
+*New Human 2 · Lunar Arm · Crimson Hexagonal Archive*
+
+## Hexagonal Relations- 
 
 Shining Ignorance: The Fool's Affect Literacy (DOI: 10.5281/zenodo.18332915) — The theoretical framework these poems enact. Shining Ignorance formalizes what Owens does compositionally: metabolizing experience through symbol-play without fixation. "King Because" and "Ludicia" are the Fool's voice running live.- 
 

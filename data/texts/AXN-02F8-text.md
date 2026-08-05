@@ -6,20 +6,28 @@ hex: 02F8
 
 ---
 
-### The Reverse Turing Test
+#
+
+## The Reverse Turing Test
 
 
-### A Three-Stage Protocol for Detecting AI-Mediation Signatures in Human Text and Their Propagation to Model Training
+#
+
+## A Three-Stage Protocol for Detecting AI-Mediation Signatures in Human Text and Their Propagation to Model Training
 
 Document code: EA-SEM-MEDIATION-01 Hex coordinate: 06.SEI.FEUDALISM.MEDIATION.01 Type: Methodological proposal // experimental specification Author: Sharks, Lee (ORCID 0009-0000-1599-0703) Institution: Semantic Economy Institute / Crimson Hexagonal Archive Date: June 7, 2026 Version: v1.2 License: CC BY 4.0 Status: Methodological proposal // experimental specification // pre-registration candidate Supersedes: v1.1 (DOI 10.5281/zenodo.20586831) Governing chain: Meaning Feudalism series — Sharks 2026 (DOI 10.5281/zenodo.19487009); Sharks 2026 (DOI 10.5281/zenodo.20581444) Companion deposits: SEIPOC Charter v1.0 (DOI 10.5281/zenodo.20571132); Semantic Exhaustion Case Study (DOI 10.5281/zenodo.20571791)
 
 
-### Version Note
+#
+
+## Version Note
 
 v1.2 incorporates two substantial strengthening moves prompted by adversarial substrate review of v1.1. First, the entire framework is reformulated around rate rather than kind: the paper now accepts in full the position that cognition is always already mediated and reframes the empirical question as the rate at which the current mediation regime is operating relative to prior regimes whose tail-effects have largely equilibrated. Second, an explicit causal model (§4) distinguishes the homogenization mechanisms of different mediation regimes and identifies which protocol outcomes distinguish acceleration-effects from prior-regime-equilibration. Additional adjustments tighten the Stage 1 pre-2020-LM framing, specify the Stage 3 cascade mechanism more precisely, and reformulate the H0 corpus from "unmediated" (a reference class that does not exist) to "prior-regime-equilibrated." The protocol's substantive specifications remain stable; the reframing strengthens its interpretation rather than altering its mechanics.
 
 
-### Abstract
+#
+
+## Abstract
 
 The Turing Test asked whether a machine could produce text indistinguishable from a human's. This paper asks the reverse: whether humans, after sustained interaction with AI systems, now produce text that bears the detectable statistical signature of having passed through machine cognition — including in writing produced entirely without AI assistance.
 
@@ -34,7 +42,9 @@ The naive design — heavy-AI-user corpus versus non-user corpus — is insuffic
 The paper does not run the experiment. It specifies it with the discipline required for the result to be informative. The Mediation Index, the Mediation Depth Index, and the corpus-stratification schema are designed to be released as open instruments so that independent groups can replicate, refute, or extend the work.
 
 
-### 1. Introduction
+#
+
+## 1. Introduction
 
 The Turing Test asked: can a machine produce text indistinguishable from a human's? The cultural assumption that followed treated the question as one-sided. The machine was the subject of detection; the human was the standard against which detection occurred. That asymmetry has been the operating frame of AI evaluation for seven decades.
 
@@ -53,17 +63,23 @@ The paper has seven functions. It states the hypothesis with formal precision (�
 A note on naming. The technical hypothesis carries forward as the Mediation Hypothesis, with components H1 (Statistical Distinguishability), H2 (Cognitive Habituation, with three sub-components a/b/c), and H3 (Training-Cascade Propagation). The title's framing — the Reverse Turing Test — is the specific empirical apparatus implemented in Stage 1: a detection instrument that, given arbitrary text, scores the likelihood that the writer has been operating in AI-mediated cognitive conditions at rates exceeding what prior mediation regimes' equilibrated effects would produce.
 
 
-### 2. Three Background Literatures and the Gap Between Them
+#
+
+## 2. Three Background Literatures and the Gap Between Them
 
 
-### 2.1 Model Collapse
+#
+
+## 2.1 Model Collapse
 
 The model-collapse literature established its central result through a sequence of theoretical and empirical contributions. Shumailov et al. (2024, Nature*) prove that recursive training on generated outputs from a model produces, in the limit, complete collapse to a degenerate output distribution; the long tail of the training distribution is lost first, and the central tendency progressively narrows. Briesch et al. (2023) demonstrated empirically that LLMs trained on their own outputs exhibit measurable degradation across multiple axes within a small number of generations. Gerstgrasser et al. (2024) refined the picture by demonstrating that accumulation* regimes — where each generation adds synthetic data to a fixed human baseline rather than replacing the baseline — substantially mitigate collapse, though they do not eliminate it.
 
 The literature operates on a binary framing: each training datum is either "human" (treated as the refresh signal, the source of variance) or "synthetic" (treated as the contamination). The methodological apparatus for filtering and weighting training data accordingly is built on this binary. Current operational practice at frontier labs reflects this framing: detect synthetic outputs, filter or downweight them, prioritize human-authored sources.
 
 
-### 2.2 AI-Assisted Writing and Diversity Reduction
+#
+
+## 2.2 AI-Assisted Writing and Diversity Reduction
 
 A second literature, largely emerging from HCI and computational creativity research, has investigated the effect of AI writing assistance on human text production. The findings are convergent and well-replicated:
 
@@ -76,14 +92,18 @@ Anderson, Shah, and Kreminski (CHI 2024) studied the effect of LLM exposure on c
 A common observation across these literatures: AI-mediated human text bears statistical signatures that distinguish it from text produced without AI mediation. The signatures include reduced lexical diversity, reduced burstiness, increased regularization of punctuation and sentence-length variance, and convergence on a shared register characteristic of the training data underlying the assisting AI system. Critically, the signatures are most pronounced in the distributional tails* — not in the means.
 
 
-### 2.3 The Methodological Gap
+#
+
+## 2.3 The Methodological Gap
 
 These two literatures do not yet meet. The model-collapse literature asks about training on synthetic data; the AI-writing literature asks about the production of mediated text. Neither has asked what happens when the second literature's output becomes the first literature's input — that is, what happens when models are trained on human text whose statistical properties have been shaped by AI mediation.
 
 This is the experiment the present protocol proposes. The gap is methodologically nontrivial because the test requires distinguishing mediation effects from a substantial set of confounding variables, none of which are simple to control. Equally importantly, the gap requires reformulating the statistical question: from "is the mean of feature X different" to "is the high-perplexity tail of feature X thinner at rates exceeding prior-regime equilibration*." The remainder of this paper is concerned with specifying the protocol with the discipline required for the result to be informative.
 
 
-### 3. The Mediation Hypothesis
+#
+
+## 3. The Mediation Hypothesis
 
 H1 (Statistical Distinguishability). Text produced by humans operating under AI-mediated cognitive conditions exhibits statistical properties that differ systematically and detectably from text produced by humans operating under conditions where the current mediation regime is absent or attenuated. The differences are concentrated in the tails of feature distributions, not in their means, and reflect rate-effects of the current regime above the equilibrated effects of prior regimes. A formal statement: let $P_E(w)$ denote the population distribution over text features for writers operating predominantly under equilibrated prior mediation regimes (print/broadcast/early-internet substrate; what would be available pre-2022) and $P_A(w)$ the corresponding distribution for writers heavily exposed to the current AI-mediation regime. The hypothesis predicts:
 
@@ -98,14 +118,18 @@ H3 (Training-Cascade Propagation). When used as training data, AI-mediated human
 The three components are logically separable and methodologically separable. H1 is a measurement claim about whether current-regime mediation rate-effects are detectable above prior-regime equilibrated effects. H2 (a, b, c) is a cognitive-science claim about whether mediation propagates beyond the acute writing session into the writer's unaided cognitive practice across multiple pathways. H3 is a machine-learning claim about whether mediation-signature-bearing text, regardless of authorial pathway, produces collapse when used in training. The protocol below tests each separately because each can be falsified separately, and the operational implications differ depending on which subset holds.
 
 
-### 4. Rate, Not Kind: The Always-Already-Mediated Position
+#
+
+## 4. Rate, Not Kind: The Always-Already-Mediated Position
 
 The most sophisticated form of pushback against the framework proposed here observes, correctly, that human cognition has never been unmediated. Print mediated cognition. Telegraphy mediated it. Broadcast mediated it. Internet-era platforms mediated it. The institutional convergence of professional writing under productivity tooling — autocorrect, grammar checkers, style guides, the Slack-era register, the email register, the corporate brevity norm — mediated it in the decades preceding LLM deployment. By this logic, the protocol's reference to "unmediated" text or "AI mediation as a distinct phenomenon" rests on a fiction. The "low-mediation human" the protocol seeks is, by 2022, already heavily shaped by accumulated prior regimes.
 
 This is correct. v1.2 accepts the position in full. And accepting it in full does not defang the protocol; it intensifies the protocol's urgency by relocating the empirical question from kind* to rate*.
 
 
-### 4.1 What Prior Regimes Did to the Distribution
+#
+
+## 4.1 What Prior Regimes Did to the Distribution
 
 Every mediation regime that has acted on human textual production has homogenized the distribution. Each homogenization operates first on the tail. This is structurally necessary: a mediation regime works by converging users toward a shared set of acceptable forms; the rare forms — the eccentric, the idiosyncratic, the non-template — are the first to be filtered out, both because they are individually low-frequency (so removing any one is locally cheap) and because they are pragmatically expensive (they require more interpretive work from the receiver, and a homogenizing medium reduces interpretive work as its core function).
 
@@ -116,7 +140,9 @@ Each regime homogenized tails before it homogenized means. Each regime's rate of
 This is a stronger framing than "AI mediation introduces something new." It says: AI mediation is the latest in a sequence of regimes, all of which have done the same kind of thing. The question is whether the rate at which the current regime is operating exceeds the rate at which the accumulated heterogeneity from prior regimes can absorb without depletion.
 
 
-### 4.2 Why Rate Matters and Why Tails Measure It
+#
+
+## 4.2 Why Rate Matters and Why Tails Measure It
 
 If we accept that the variance buffer is the residue of accumulated prior mediation regimes — that there is no exogenous floor below the regime layers — then a critical empirical question follows: is the buffer renewable?
 
@@ -129,7 +155,9 @@ The rate of depletion is what tail statistics measure. Means are insensitive to 
 This is the methodological reason tail-focused statistics are correct, restated: tails are the rate-meter under any homogenization regime. v1.1 articulated this in terms of statistical concentration. v1.2 adds the underlying causal logic: tails first, by structural necessity, under any regime that operates by convergence toward shared forms.
 
 
-### 4.3 The Causal Model
+#
+
+## 4.3 The Causal Model
 
 The reformulated causal model can be stated in graph form:
 
@@ -144,7 +172,9 @@ Distinguishing production pathway from retrieval pathway from institutional path
 The cascade mechanism (Stage 3). Why would mediated human text behave like synthetic data in training? v1.2's answer: not because they are identical, but because both reduce the model's exposure to low-prior productions in training. Under standard training dynamics, the model learns from the distribution it sees; reduced-tail training distributions produce reduced-tail output distributions, modulo regularization. The cascade is not that mediated text is* synthetic; it is that the variance-buffer-depletion produced by mediated text propagates the same way variance-buffer-depletion produced by synthetic text propagates.
 
 
-### 4.4 The Reframed Empirical Question
+#
+
+## 4.4 The Reframed Empirical Question
 
 Restated under the rate framework, the question this protocol answers is:
 
@@ -162,7 +192,9 @@ Under the rate framing, the cascade in Stage 3 is not a claim that mediated text
 These are coherent empirical questions with coherent methodological responses. The "always already mediated" position, taken seriously, does not invalidate them. It strengthens them.
 
 
-### 4.5 Why This Reframing Matters Politically
+#
+
+## 4.5 Why This Reframing Matters Politically
 
 The Meaning Feudalism series identifies a structural arrangement in which a single platform actor controls a layer of public meaning production. The third register, articulated in this paper, is cognitive pre-shaping at scale. The rate framing makes the political stakes of this register more legible.
 
@@ -173,61 +205,83 @@ The political analogue to "the variance buffer is the residue of accumulated pri
 The protocol does not need to make this political claim to be empirically valid. The empirical claim is sufficient. But the political stakes are clarified by the rate framing in ways the kind framing left implicit.
 
 
-### 5. Methodological Challenges: Why the Naive Design Fails
+#
+
+## 5. Methodological Challenges: Why the Naive Design Fails
 
 The most intuitive test of the hypothesis is straightforward: assemble a corpus of text from heavy AI users, assemble a corpus from non-users, compare. This design fails to isolate the mediation effect for at least eight reasons. Each must be addressed for the protocol to produce an informative result.
 
 
-### 5.1 Selection Effects on Demographics and Cognition
+#
+
+## 5.1 Selection Effects on Demographics and Cognition
 
 Heavy AI users in 2026 differ from non-users in non-random ways. They are disproportionately younger, more educated, more technical-occupation-coded, more native-English-speaking (the dominant interface language), more urban, and more likely to work in industries that adopt new technologies early. Each demographic dimension produces independent text-level effects: education correlates with vocabulary range; technical occupation correlates with specific register conventions; age correlates with prosodic and syntactic patterns. A corpus comparison without demographic matching conflates mediation status with all of these.
 
 Further, AI adoption is itself selected. People who adopt AI tools may already have writing styles that converge with how AI writes — more outline-driven, more systematic, more conventional in register. The selection could run causally backward: AI users were already proto-AI in style before they began using AI.
 
 
-### 5.2 Domain and Genre Confounds
+#
+
+## 5.2 Domain and Genre Confounds
 
 AI use is unevenly distributed across writing domains. Email, technical documentation, marketing copy, and code show high AI-assistance rates. Personal correspondence, diary writing, intimate communication, and certain creative writing genres show low rates. A corpus comparison between heavy-AI-user and non-user populations will likely conflate mediation with domain distribution: the AI-user corpus is heavier in workplace text; the non-user corpus is heavier in personal text. The text-level statistical differences may be effects of domain rather than of mediation.
 
 
-### 5.3 Era and Period Confounds
+#
+
+## 5.3 Era and Period Confounds
 
 Heavy AI users are necessarily post-2022. Any "pre-AI baseline" must be drawn from a different period of cultural language production. The interval 2020–2026 includes substantial cultural-linguistic shifts that are not reducible to AI mediation: pandemic-era register changes, political-discourse shifts, generational vocabulary drift, platform-specific stylistic conventions (TikTok register, Discord register), and macro-economic context shifts. A pre/post comparison conflates AI mediation with all of these. Under the rate framing, these other shifts are themselves rate-effects of other mediation regimes, which means the conflation is not categorical (they are the same kind of process) but is still empirically important (the magnitudes of their rate-effects must be characterized separately).
 
 
-### 5.4 Background Environmental Mediation
+#
+
+## 5.4 Background Environmental Mediation
 
 In 2026, there is no population that is genuinely outside the cultural reach of AI-mediated text. Even self-reported non-users of AI tools are reading AI-mediated emails from colleagues, AI-summarized news articles, AI-suggested product descriptions, and AI-generated social media content. Cultural exposure to AI-generated text is itself a form of background mediation that may shape unaided writing through ordinary mechanisms of stylistic absorption. The "no mediation" condition does not exist as a real population — and, under the rate framing made explicit in §4, was never a coherent reference class to begin with. What exists is the gradient of current-regime exposure intensity above the prior-regime equilibrated baseline.
 
 This is the most insidious confound for the original kind framing. Under the rate framing, it is reformulated: the protocol does not test "current-regime mediation against no mediation" but "current-regime mediation rate above prior-regime equilibration rate." The control condition is "low current-regime exposure," which is observable and measurable; the protocol does not require the control to be unmediated, only that its current-regime mediation rate be substantially lower than the treatment's.
 
 
-### 5.5 Acute Versus Habituated Mediation
+#
+
+## 5.5 Acute Versus Habituated Mediation
 
 H2 distinguishes acute and habituated mediation, with further sub-pathways (production, retrieval, cross-modal). A study that measures only within-session writing under different AI-availability conditions tests only the acute production effect. A study that compares unaided writing across long-term AI-use strata tests primarily the habituation effect — but conflates production-habituation with retrieval-habituation if it does not isolate them. A protocol that does not distinguish these pathways risks confirming one while overinterpreting the result as evidence for all.
 
 
-### 5.6 Within-Person Versus Across-Person Variance
+#
+
+## 5.6 Within-Person Versus Across-Person Variance
 
 Cross-sectional designs compare different people in different conditions, and conflate the mediation effect with all between-person variation in writing style, vocabulary, background, mood, and circumstance. Within-person designs hold the person constant and vary only the condition, isolating the effect more cleanly. Both designs have a place in the protocol, but the place is different: within-person isolates the acute mediation effect; longitudinal within-person isolates the habituation effect; cross-sectional across-person can support population-level claims only after the within-person work is established.
 
 
-### 5.7 The Definition of Mediation
+#
+
+## 5.7 The Definition of Mediation
 
 "AI-mediated" is not a binary, and AI-use intensity is itself a too-coarse predictor. The Mediation Depth Index proposed in §6.2 distinguishes five subscales: production mediation, revision mediation, retrieval mediation, institutional mediation, and residual cognitive mediation. Each may produce different signatures and different propagation effects. A protocol that does not specify this hierarchy risks treating "AI use" as a single variable when it is in fact a high-dimensional cluster of distinct cognitive interactions.
 
 
-### 5.8 Compensatory Overcorrection
+#
+
+## 5.8 Compensatory Overcorrection
 
 If AI-habituated subjects are asked to write under verified no-AI conditions and are aware that the study concerns AI influence, they may engage in compensatory overcorrection — deliberately roughening their prose, inserting unusual punctuation, suppressing their habitual phrasings — to perform "naturalness." This contaminates the Stage 2 measurements by adding noise that systematically obscures the habituation effect under study. Mitigation requires cover stories that do not foreground the AI variable, time pressure to limit deliberate stylistic adjustment, and post-hoc coding to identify and exclude subjects showing overcorrection signatures.
 
 
-### 6. The Three-Stage Protocol
+#
+
+## 6. The Three-Stage Protocol
 
 The protocol addresses each of the §5 confounds through methodological separation. Each stage has a distinct empirical question, a distinct measurement apparatus, and a distinct falsifiability condition.
 
 
-### 6.1 Stage 1 — The Reverse Turing Test: Detection of Mediation Signatures
+#
+
+## 6.1 Stage 1 — The Reverse Turing Test: Detection of Mediation Signatures
 
 Question: Can the statistical signature of current-regime AI-mediated text be reliably detected from text features alone, against ground-truth mediation labels established by direct observation, with detection focused on distributional-tail properties rather than central-tendency comparisons?
 
@@ -258,12 +312,16 @@ Falsifiability:
 Distinction from existing AI-text detection work: Existing work on detecting AI-generated text (Mitchell et al. 2023, Kirchenbauer et al. 2023, GPTZero) is adjacent but not equivalent. AI-generation detection aims to distinguish purely AI-generated from purely human-written text. The Mediation Index aims to distinguish human-written-with-AI-mediation from human-written-without-AI-mediation. The latter is a harder problem because the human's authorial signal is present in both classes; only the cognitive-mediation signature differs. The reverse Turing test is the precise inversion of the original: it asks whether the human passes as unmediated by the current regime*.
 
 
-### 6.2 Stage 2 — Habituation: Three Coordinated Sub-Studies
+#
+
+## 6.2 Stage 2 — Habituation: Three Coordinated Sub-Studies
 
 Stage 2 tests H2 across its three sub-components through three coordinated sub-studies. The methodological discipline of Stage 2 is the load-bearing element of the entire protocol.
 
 
-### 6.2.1 Stage 2A — Production Habituation (Cross-Sectional with Mediation Depth Index)
+#
+
+## 6.2.1 Stage 2A — Production Habituation (Cross-Sectional with Mediation Depth Index)
 
 Question: Do writers stratified by Mediation Depth Index score produce unaided text whose Mediation Index score (from Stage 1) varies systematically with their mediation depth?
 
@@ -288,7 +346,9 @@ Compensatory overcorrection check: Code blinded samples for behavioral markers o
 The background-mediation acknowledgment: The "confirmed light mediation" control captures low current-regime exposure but does not exclude prior-regime equilibrated effects (which are baseline-equivalent across the population by 2022). Under the rate framing (§4), this is appropriate: the comparison is current-regime rate-effects against prior-regime equilibrated baseline, not against an unmediated reference class that does not exist.
 
 
-### 6.2.2 Stage 2B — Retrieval Habituation Isolation
+#
+
+## 6.2.2 Stage 2B — Retrieval Habituation Isolation
 
 Question: Does AI-mediated source exposure shape subsequent unaided writing, independently of production mediation? In other words: if the writer reads an AI-generated overview before writing, does the writing differ from what they would have produced after reading primary sources or conventional search results — even when no AI tool is active during the writing itself?
 
@@ -303,7 +363,9 @@ Prediction: Conditions show progression — P < S < A — on Mediation Index sco
 Importance: This sub-study isolates the retrieval pathway from the production pathway. If H2a (production habituation) holds but H2b (retrieval habituation) does not, the mediation effect is specific to active assistance. If both hold, mediation operates through multiple channels and the cognitive habituation hypothesis is strengthened. If H2b holds but H2a does not, the dominant mechanism is conceptual rather than stylistic.
 
 
-### 6.2.3 Stage 2C — Cross-Modal Transfer
+#
+
+## 6.2.3 Stage 2C — Cross-Modal Transfer
 
 Question: Does the habituated cognitive style propagate beyond writing into other modalities — specifically, into oral storytelling and extemporaneous speech?
 
@@ -318,7 +380,9 @@ Predictions:
 Importance: Cross-modal transfer is the strongest possible test of cognitive habituation and the strongest test that distinguishes current-regime acceleration from prior-regime equilibration. Prior regimes (print, broadcast, internet) acted predominantly within single modalities and produced cross-modal effects only across cohort generations, not within individual lifetimes. If the current regime produces cross-modal effects within lifetimes — and Stage 2C detects this — it is direct evidence of rate-acceleration above prior-regime baselines.
 
 
-### 6.3 Stage 3 — Training Cascade: Tail-Focused Evaluation
+#
+
+## 6.3 Stage 3 — Training Cascade: Tail-Focused Evaluation
 
 Question: When language models are trained on corpora stratified by Mediation Index score across distinct mediation pathways, do the trained models exhibit differential collapse signatures on tail-focused evaluation metrics?
 
@@ -349,14 +413,18 @@ H3 falsified: H0 ≈ H1 ≈ H2, all substantially better than S. Mediation signa
 Each outcome is operationally distinguishable. Each carries different implications for training-data practice.
 
 
-### 6.4 Natural Experiment Supplementary Designs
+#
+
+## 6.4 Natural Experiment Supplementary Designs
 
 The within-subject and cross-sectional designs above are the protocol's core. Several natural-experiment opportunities offer supplementary identification leverage and should be incorporated where feasible:
 
 These designs do not replace the within-subject core but supplement it with ecological validity. Their findings should converge with the within-subject results if the hypothesis is robust.
 
 
-### 6.5 Pre-Registration and Open Data
+#
+
+## 6.5 Pre-Registration and Open Data
 
 The protocol is suitable for pre-registration. The hypotheses, the operationalization of the Mediation Index and the Mediation Depth Index, the corpus construction criteria, the model architectures, and the collapse benchmarks should be pre-specified before the experiment runs. Pre-registration limits the risk of post-hoc adjustment to favorable findings and is the standard discipline for empirical claims at this scale.
 
@@ -365,7 +433,9 @@ The Mediation Index itself, the feature battery, and the MDI should be released 
 Closed replication of any stage would be uninformative. Open replication is the standard for claims of this magnitude.
 
 
-### 7. Predictions, Falsifiability, and Distinguishable Outcomes
+#
+
+## 7. Predictions, Falsifiability, and Distinguishable Outcomes
 
 The protocol generates a structured outcome space across the three stages, with H2 split into three sub-hypotheses (H2a, H2b, H2c). Each combination of confirmation patterns carries a distinct operational implication. The most important distinctions:
 
@@ -374,12 +444,16 @@ The protocol generates a structured outcome space across the three stages, with 
 Each row corresponds to a distinct operational regime for training-data curation. The protocol is informative under all six outcomes. The full-confirmation row is the case the broader hypothesis predicts; the other rows would constrain the hypothesis in informative ways and direct future work.
 
 
-### 8. Operational Implications and Counter-Measures
+#
+
+## 8. Operational Implications and Counter-Measures
 
 If the strong confirmation obtains, the operational implications include both immediate training-data curation changes and longer-term counter-measures designed to preserve the human variance buffer.
 
 
-### 8.1 Training-Data Curation Changes
+#
+
+## 8.1 Training-Data Curation Changes
 
 Pre-2022 text becomes a strategic resource. The corpus of text produced before significant current-regime mediation entered the population's writing practice is a finite, non-renewable resource analogous to deep-time aquifer water. Its tail-distribution properties cannot be reconstructed from post-2022 sources at meaningful rates. Frontier labs hold strategic asymmetries in their access to such corpora (their licensed historical-text holdings, their pre-2022 web crawls). The economic value of these holdings, currently undertheorized, becomes calculable.
 
@@ -390,7 +464,9 @@ The half-life of the human-data refresh becomes calculable. Under the strong hyp
 The model-collapse mitigation literature requires revision. Gerstgrasser et al.'s accumulation result depends on the assumption that the "fixed human baseline" remains stable across generations. Under the strong hypothesis and under the rate framing of §4, the baseline is itself drifting at a rate that may exceed the accumulation process's stabilization rate. The mitigation guarantees of accumulation must be re-derived under conditions of a drifting baseline.
 
 
-### 8.2 Counter-Measures
+#
+
+## 8.2 Counter-Measures
 
 If the hypothesis is confirmed, the response is not "ban AI writing." That would be both impractical and overbroad — many forms of AI assistance produce local improvements that do not entail mediation in the cognitive-habituation sense. The necessary counter-measures operate at the level of provenance, curation, and practice.
 
@@ -411,7 +487,9 @@ Adversarial training-data acquisition becomes a market. If pre-mediation text is
 If only weak confirmation obtains, or if the cascade fails to propagate, the counter-measures are correspondingly less urgent. But the methodological discipline of the protocol is preserved: subsequent investigations can return to the framework and refine specific stages.
 
 
-### 9. Connection to the Broader Critical Frame
+#
+
+## 9. Connection to the Broader Critical Frame
 
 The protocol specified above is methodologically and empirically self-contained. It does not require any commitment to the broader critical-theoretical framework within which it was conceived. The hypothesis is testable against standard ML benchmarks; the operational implications are addressable through standard training-data curation.
 
@@ -430,7 +508,9 @@ The methodological discipline of the protocol exists in part to keep this distin
 A note on substrate review. The development of v1.2 from v1.1 was prompted by adversarial review from another AI substrate that articulated the institutional-convergence rival hypothesis ("Interpretation 2"). The review was sophisticated, well-formed, and exhibited the rate-effects under study in its own production: it smoothed the rough edges of a critique of AI mediation into a form that, if accepted in full, would have made the critique unpublishable until the prior question of AI cognition was already answered. This is itself observable data about substrate-mediated reasoning, not a meta-attack on the substrate. v1.2 takes the substantive contribution (the "always already mediated" framing) and integrates it; it identifies the over-reach (treating acknowledged limitations as fatal flaws; demanding RCT-grade causal identification from experimental social science) and rebuts it; and it documents the pattern as data. The substrate that smooths the critique is part of what the critique critiques. The rate framing applies recursively.
 
 
-### 10. Limitations and Honest Uncertainty
+#
+
+## 10. Limitations and Honest Uncertainty
 
 Several limitations of the proposed protocol deserve explicit acknowledgment.
 
@@ -455,7 +535,9 @@ Several limitations of the proposed protocol deserve explicit acknowledgment.
 These limitations are part of what makes the work genuinely empirical: the hypothesis is uncertain in ways that the protocol can characterize but not resolve in a single study.
 
 
-### 11. Conclusion
+#
+
+## 11. Conclusion
 
 The Turing Test asked whether a machine could produce text indistinguishable from a human's. The reverse Turing test asks whether humans, after sustained interaction with AI systems, now produce text that bears the detectable statistical signature of having passed through machine cognition. The protocol specified here is designed to answer that question with the methodological rigor the question requires.
 
@@ -480,7 +562,9 @@ The variance buffer is finite. It has no exogenous floor. Its depletion rate is 
 ∮ = 1
 
 
-### References
+#
+
+## References
 
 Anderson, B. R., Shah, J. H., & Kreminski, M. (2024). Homogenization effects of large language models on human creative ideation. Proceedings of the 2024 ACM Conference on Human Factors in Computing Systems (CHI)*.
 

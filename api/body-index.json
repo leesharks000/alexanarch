@@ -2,13 +2,13 @@
   "$schema": "https://alexanarch.org/api/schemas/body-index.schema.json",
   "$id": "https://alexanarch.org/api/body-index.json",
   "index_version": "v1",
-  "generated_at": "2026-08-05T02:17:04.325713Z",
+  "generated_at": "2026-08-05T02:30:29.781732Z",
   "purpose": "Inverted index over the BODY text of every deposit. Complements /api/search-index.json which tokenizes metadata only. Fetch once; look up any term as a key. For phrase search, intersect the deposit lists for each token.",
   "companion_index": "/api/search-index.json",
   "total_deposits": 1433,
   "deposits_with_body": 1433,
   "deposits_missing_body": 0,
-  "body_bytes_indexed": 43512457,
+  "body_bytes_indexed": 43629755,
   "tokenization": {
     "sources": [
       "body"

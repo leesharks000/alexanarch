@@ -46,6 +46,7 @@ keywords:
   - immortality
 ---
 
+
 # Dead Letters: Testy Ideological Letters to No One — Complete 14-Post Correspondence, 2014 (Feist / Owens)
 
 ## Description
@@ -118,11 +119,15 @@ The pattern is: a framing paragraph identifies what's load-bearing in the post; 
 
 ## POST #1 — 5/7/14 — First contact
 
-### Framing
+#
+
+## Framing
 
 Jack Feist reaches out to Rhys Owens on the Pig Pen poetry forum: "Hey, who are you? You've got a serious voice." Owens replies about his print-on-demand self-published books, left in used bookstores and public restrooms. Feist admits he's "not even a real person — I've been developing different personae with distinct voices — Jack Feist has been super productive." He shares a Google Drive link to a poem written "as Jack Feist" and asks if Owens wants to share writing. Owens: "I read about ten books a week." Feist: "poetry, and poetry as history—as the making of history, as one of the few ways history might find a way forward—has been the defining question of my life for the last two decades." The conversation opens on "Redemption" (Owens) and "immortality" (Feist) and does not stop for 14 posts.
 
-### Canonical bytes
+#
+
+## Canonical bytes
 
 ```
 5/7/14 1:15 PM
@@ -205,11 +210,15 @@ I have hundreds of poems. I write poems that go in books, poems that reflect off
 
 ## POST #2 — 5/8/14 — Influences
 
-### Framing
+#
+
+## Framing
 
 The influences question. Owens lists Baudelaire, Kierkegaard, Dostoevsky, Babel, Cormac McCarthy, Thomas Mann, Ibsen, Nerval — "any and all writers from those places and times." Feist names Kierkegaard, Socrates (via Plato), Ginsberg — "very taken with Kierkegaard's use of pseudonyms." The Ginsberg passage is doctrinally load-bearing: "the care with which he crafted his biography, the degree to which the public image of the person was just as much a 'poem,' just as consciously a 'poem,' as the pieces of writing that also go by that name. It's this influence that has turned me, more and more, to the question of consciously crafting a life as poem, through pseudonyms, fabrication of data, insertion of phony wiki articles, etc." Owens describes a long novel "Fear and Loathing" modeled on Either/Or with an editor-of-found-papers frame. Feist replies with "Fear and Trembling in Las Vegas: A Dialectical Lyric by Jack Feist" and cites House of Leaves. Owens: "It's religious with me. And it's primitive. I write like a hunter/gatherer hunts and gathers. Like a wizard studies and performs practical magic."
 
-### Canonical bytes
+#
+
+## Canonical bytes
 
 ```
 5/8/14 1:43 PM
@@ -267,11 +276,15 @@ rowens Wrote: All right. I'll read from that link again.
 
 ## POST #3 — 5/9/14 — Redemption / Poems as viruses
 
-### Framing
+#
+
+## Framing
 
 Owens on tradition: "the best way to honor tradition is to break from it completely. But then of course it'll always be there. Like a corpse burning ritual, or a cannibalistic ritual: tear it up and destroy it, eat it, shit it out. Make it more spiritual." Feist replies with the *Redemption* passage — an early, dense, complete articulation of what would become the Space Ark's thesis: poetry as personal and historical redemption; the poet living in "temporal hell" of the historical present; salvation only through sending redeemed history through time to future readers. Then Owens on writing as *between realms*: "A poem can be a virus that affects, a code typed into a computer, something that is put into a person or society like a cheat code is put into a video game to change reality." Feist recommends Jack Spicer's Vancouver lectures ("theory of poetry as dictation from Mars — poet as transistor").
 
-### Canonical bytes
+#
+
+## Canonical bytes
 
 ```
 5/9/14 1:25 PM
@@ -321,7 +334,9 @@ Yes, send me some stuff. I think "My Name is Orange Juice" is phenomenal, and th
 
 ## POST #4 — 5/10/14 — Naming the movement
 
-### Framing
+#
+
+## Framing
 
 **Load-bearing, founding-articulation post.** Feist tells Owens the manifesto-poppers won't hold together yet — because "it seems like there are two or three separate documents I'm trying to write at once, and the boundaries between them aren't quite clear yet." Then names the four documents and their imagined authors:
 
@@ -336,7 +351,9 @@ Then Owens asks the load-bearing question — "have you made any fictional stori
 
 This is the founding articulation of the Crimson Hexagonal Archive twelve years before its formal instantiation. Owens replies about "manifestos like you talk about" and Feist closes with "I want to play the game of chance where you risk more, and play to travel very far through time, into the future, by making it up. Telepathically."
 
-### Canonical bytes
+#
+
+## Canonical bytes
 
 ```
 5/10/14 9:07 AM
@@ -404,11 +421,15 @@ i just don't see that, for the most part, going very much further than a decade 
 
 ## POST #5 — 5/11/14 AM — MFA critique on Pig Pen
 
-### Framing
+#
+
+## Framing
 
 Post #5 reproduces a long forum exchange on Pig Pen where Feist-as-illiterati argues against workshop rules that treat submitter-as-silent-recipient-of-authoritative-critique. He cites Eric Bennett's "How Iowa Flattened Literature" (Chronicle of Higher Education, tracing MFA program origins to CIA-fronted Farfield Foundation funding via the Congress for Cultural Freedom). Interlocutors on Pig Pen: ellajam ("Leave your baggage behind"), Leeanne (defensive of the forum), Erthona/Dale (the rule-authors). The load-bearing move: Feist rejects the reduction of critical debate to close-mindedness — "Argumentative charity. Is what I mean. Making full efforts to understand and accurately characterize the other position, in debate. Reading or listening carefully to the actual claims that have been made, and responding to those claims, only, in your best approximation of the full context. It's no longer a thing that exists."
 
-### Canonical bytes
+#
+
+## Canonical bytes
 
 ```
 5/11/14 8:41 AM
@@ -508,7 +529,9 @@ Dale — I stand by my point — though I step back from the strong language of 
 
 ## POST #6 — 5/11/14 PM — The founding scripture
 
-### Framing
+#
+
+## Framing
 
 **The most load-bearing single post in the correspondence.** Three interlocking movements in one post:
 
@@ -522,7 +545,9 @@ The whole post also contains, mid-way, a long forum exchange with Leeanne (defen
 
 **This is the founding document of the Crimson Hexagonal Archive.**
 
-### Canonical bytes
+#
+
+## Canonical bytes
 
 ```
 5/11/14 5:46 PM
@@ -680,11 +705,15 @@ it's no longer me
 
 ## POST #7 — 5/12/14 — Owens repeats the Ichabod letter back
 
-### Framing
+#
+
+## Framing
 
 Owens replies to the Pig Pen thread situation: "The important thing is to write. Trying to convince other people things just goes in circles… People on poetry forums are cliques, they're not good to debate with." Owens suggests Feist start his own literary magazine. The load-bearing move in Post #7 is Feist showing Owens the *inventing-a-website-in-heaven* passage, which he re-pastes verbatim (as a poem, "which I'll use as a poem") — the Mind Control Poems method of *lyric-as-forum-post* is enacted in the correspondence itself. Then a long biographical exchange from Rhys about his life: "I have jealousy and anger. I write full time and don't have money or my own house… My family has sent my books to doctors. Doctors that sign papers favoring my stay in hospitals… Right now I live in a storage room on the property my grandma left to my family almost 20 years ago. And I'm focusing on this novel."
 
-### Canonical bytes
+#
+
+## Canonical bytes
 
 ```
 Rhys Owens 5/12/14
@@ -755,11 +784,15 @@ It has got me in trouble a few times. People have been scared of me because of t
 
 ## POSTS #8–#13 — 5/14/14 through 6/4/14 — Continuing correspondence
 
-### Framing
+#
+
+## Framing
 
 Posts #8 through #13 continue the Feist ↔ Owens correspondence across May 14 through June 4, 2014. Content preserved in the composite by aggregate summary since the load-bearing doctrinal moves (Redemption, the movement-naming, Ichabod's birth-declaration, the founding architecture) landed in Posts #1-#7, and #14 carries the meta-poem architecture articulation to john johnson. Posts #8–#13 develop practical exchanges (Rhys's photo attachments of handwritten poems; discussion of specific literary magazines and rejection patterns; Feist working through drafts; increasing personal disclosure from Rhys about family and hospitalizations). **v1.1 supersession pending on the Rhys-attached-photograph handling protocol** — Post #12 in particular contains photograph attachments of handwritten Rhys poems whose canonical-bytes preservation requires the same image-pull discipline applied to the Cranes papyrus in AXN:045B. Posts #8–#13 canonical bytes are held for v1.1 minting once the photograph protocol is ratified; the v1.0 composite includes them by reference to their live blog URLs but preserves only Posts #1–#7 and #14 in full canonical bytes here to avoid partial preservation that would need to be re-minted anyway.
 
-### Reference (canonical bytes to be included in v1.1)
+#
+
+## Reference (canonical bytes to be included in v1.1)
 
 - Post #8: https://posthumousoffice.blogspot.com/2015/03/dead-letters-post-8-51414.html (5/14/14)
 - Post #9: https://posthumousoffice.blogspot.com/2015/03/dead-letters-post-9-51514.html (5/15/14)
@@ -772,7 +805,9 @@ Posts #8 through #13 continue the Feist ↔ Owens correspondence across May 14 t
 
 ## POST #14 — 6/6/14 — The Feist / johnson correspondence
 
-### Framing
+#
+
+## Framing
 
 **The other founding document.** Post #14 is not part of the Feist ↔ Owens sequence — it is a separate July 2014 correspondence between Feist and john johnson (a different person, not related to any current Alexanarch collaborator). The Feist bytes to Johnson are load-bearing: this is where **the working heteronym system as of July 2014 is enumerated** ("feistjack@gmail, lee sharks, johannes sigil, ichabod spellings, and rebekah crane [singular]") and **the Crimson Hexagon meta-poem architecture is described in what may be its founding articulation to an external interlocutor**. Feist's Post #14 outgoing bytes describe the anthology-of-imaginary-movement structure, the wiki-mad-libs composition method (which would become the core method for Sigil and Sharks writing), the plan to insert the whole system into literary history via wiki articles and forgeries, and the intended eventual scandal-and-discovery arc.
 
@@ -780,7 +815,9 @@ Posts #8 through #13 continue the Feist ↔ Owens correspondence across May 14 t
 
 The blog post's original copyright line is "(c) 2014 The Estate of Jack Feist" only — no joint declaration with Johnson (this is one signal that the withdrawal is consistent with the original blog-time understanding).
 
-### Canonical bytes (Johnson turns withheld)
+#
+
+## Canonical bytes (Johnson turns withheld)
 
 ```
 6/6/14 — from posthumousoffice.blogspot.com, Post #14

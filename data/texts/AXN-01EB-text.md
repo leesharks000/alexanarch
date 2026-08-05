@@ -37,7 +37,9 @@ We propose *Fractal Semantic Architecture* (FSA), a complementary training parad
 
 
 Because these discrete relational structures may resist the distributional averaging that drives token-level tail-collapse under recursive synthetic generation (Shumailov et al., 2024), FSA yields a *falsifiable architectural hypothesis* about improved collapse resistance. We formalize the multi-scale graph structure, define the relationship algebra with operational extraction criteria, specify bidirectional cross-scale consistency constraints, present a concrete automated labeling pipeline, describe the inference-time integration of relational and generative components, and propose a phased experimental program with explicit ablations for empirical validation.
-### Key Contributions
+#
+
+## Key Contributions
 
 
 **Scale-parameterized relational learning:** A single relational training principle instantiated across granularity levels from sentences to version-sequences, yielding a family of architectures trainable on a fixed dataset via multi-perspectival corpus reuse.
@@ -57,7 +59,9 @@ Because these discrete relational structures may resist the distributional avera
 ---
 
 ## 1. Introduction
-### 1.1 The Token Bottleneck
+#
+
+## 1.1 The Token Bottleneck
 
 
 The dominant paradigm in large language model (LLM) training — autoregressive next-token prediction over subword units — has achieved remarkable fluency and generalization. Models trained under this paradigm, from GPT-2 through GPT-4 and beyond, operate on a fundamentally flat representation: text is tokenized into fixed-size units, serialized into a linear sequence, and the model is trained to predict the next token given its left context. This approach, while computationally efficient and well-understood, imposes a structural bottleneck that limits what the model can learn.
@@ -67,7 +71,9 @@ Natural language text exhibits inherent multi-scale structure. A document is not
 
 
 This matters for three reasons. First, emergent coherence degrades over long contexts: current models notoriously lose track of earlier claims, contradict themselves across sections, and fail to maintain argumentative structure over extended generation. Second, emergent coherence provides no formal guarantee, making it difficult to predict or control. Third — and most critically for the field's trajectory — token-level training is vulnerable to model collapse.
-### 1.2 The Model Collapse Problem
+#
+
+## 1.2 The Model Collapse Problem
 
 
 Shumailov et al. (2024), published in *Nature*, demonstrated that training generative models on recursively generated synthetic data causes irreversible distributional defects. Specifically, the tails of the original content distribution disappear: rare but informative patterns are systematically lost as each generation of model averages over the outputs of the previous generation. This phenomenon, termed model collapse, has been confirmed across variational autoencoders, Gaussian mixture models, and LLMs. Subsequent work by Dohmatob et al. (2024) provided a statistical analysis demonstrating that model collapse cannot be avoided when training solely on synthetic data, though mixing real and synthetic data can delay its onset if the synthetic proportion remains below a critical threshold.
@@ -77,7 +83,9 @@ The mechanism of collapse is fundamentally distributional: token-level probabili
 
 
 We observe that this mechanism depends on the *continuity* and *averaging* properties of the learned distributions. If part of the training signal consists of discrete, typed relationships between semantic units — where a relationship is either sequential or causal, elaborative or contrastive, and these categories do not blend toward a mean — then that portion of the learned representation may resist the averaging that drives collapse. This observation motivates FSA, but we state it as a *hypothesis to be tested*, not a proven theorem. The relational model (Architecture 2) learns discrete classifications; the generative model (Architecture 1) still predicts tokens via continuous distributions. FSA therefore does not eliminate the collapse mechanism from the generator; it introduces an additional structural signal that may constrain the generator's drift and preserve hierarchical coherence under recursive retraining. Whether this is sufficient to meaningfully delay or reduce collapse is an empirical question addressed in our experimental design (§8).
-### 1.3 Contribution and Scope
+#
+
+## 1.3 Contribution and Scope
 
 
 This paper makes six contributions. First, we formalize the concept of a multi-scale semantic graph with operationally defined node extraction and edge labeling (§3). Second, we define the relationship algebra with feature-level decision criteria for each type (§3.4). Third, we specify an automated relationship extraction pipeline that enables supervision at scale (§3.6). Fourth, we introduce version-differential training with directional coherence reward as a formalized training objective (§5). Fifth, we specify bidirectional cross-scale consistency constraints with vector alignment (§6). Sixth, we describe the inference-time integration of relational and generative components (§4.4) and propose a phased experimental program with explicit ablations (§8).
@@ -85,46 +93,60 @@ This paper makes six contributions. First, we formalize the concept of a multi-s
 ---
 
 ## 2. Related Work
-### 2.1 Model Collapse and Synthetic Data
+#
+
+## 2.1 Model Collapse and Synthetic Data
 
 
 The foundational result on model collapse is due to Shumailov et al. (2023, 2024), who showed that recursive training on model-generated data leads to progressive loss of distributional diversity, with tail information disappearing first ("early model collapse") followed by convergence to near-unrecognizable distributions ("late model collapse"). Borji (2024) provided further theoretical analysis confirming that the observed collapse is a fundamental statistical phenomenon, likely unavoidable under purely synthetic training regimes. Dohmatob et al. (2024) established bounds on the maximum proportion of synthetic data that can be tolerated before collapse becomes inevitable, showing that the commonly cited heuristic of 15% synthetic ceiling is not a universal constant but depends on the per-generation entropy loss rate. Gerstgrasser et al. (2024) showed that data accumulation (mixing real and synthetic data across generations rather than replacing real with synthetic) can mitigate collapse, but this approach addresses symptoms rather than the structural cause.
 
 
 FSA proposes a complementary approach: by adding a discrete relational learning signal alongside token-level training, it may provide structural constraints that slow or reduce the distributional compression. This is distinct from data-mixing strategies (which change what is trained on) and from retrieval-augmented generation (which supplements the model at inference time without changing the learned representations). Whether relational constraints meaningfully improve collapse resistance is the central empirical question of this paper.
-### 2.2 Hierarchical and Multi-Scale Transformers
+#
+
+## 2.2 Hierarchical and Multi-Scale Transformers
 
 
 Several architectures have introduced explicit hierarchy into transformer models. The Hourglass Transformer (Nawrot et al., 2022) applies downsampling and upsampling operations to create a bottleneck architecture that processes sequences at varying resolutions, achieving efficiency gains while maintaining performance on language modeling benchmarks. MegaByte (Yu et al., 2023) and Block Transformer (Ho et al., 2024) implement hierarchical processing with fixed-size pooling. The Hourglass Diffusion Transformer (Crowson et al., 2024) extends the paradigm to image generation with near-linear computational scaling. Hierarchical attention mechanisms for dialog and discourse (Santra et al., 2020) constrain early layers to local units (utterances, sentences) before allowing cross-unit information flow via mask design.
 
 
 These architectures share FSA's intuition that hierarchy matters, but differ in a crucial respect: they introduce hierarchy as a computational efficiency mechanism, processing the same token-level information at different resolutions. FSA introduces hierarchy as a change in the fundamental unit of learning. The nodes are not compressed token sequences but genuine semantic units, and the training objective is relationship classification, not token prediction.
-### 2.3 Graph Neural Networks for NLP
+#
+
+## 2.3 Graph Neural Networks for NLP
 
 
 Graph-based approaches to text representation have a substantial literature. Wu et al. (2023) provide a comprehensive survey of GNNs for NLP, covering co-occurrence graphs, dependency graphs, document graphs, and heterogeneous multi-modal graphs. TensorGCN (Liu et al., 2020) constructs three independent graph types — semantic, syntactic, and sequential — and combines them into a tensor graph for text classification. BEGNN (2021) integrates BERT-based semantic features with GNN-based structural features through a co-attention mechanism. Graph-based approaches for multi-document summarization (Liu et al., 2019) aggregate token-level representations into paragraph-level attention.
 
 
 FSA extends this line of work in two directions: first, by making the node granularity a free parameter rather than fixing it at the word or document level; second, by making relationship learning the primary training objective rather than using graph structure as an auxiliary signal for downstream tasks.
-### 2.4 Discourse Parsing and Coherence Modeling
+#
+
+## 2.4 Discourse Parsing and Coherence Modeling
 
 
 FSA's relationship type space R draws on a substantial tradition in discourse analysis. Rhetorical Structure Theory (RST; Mann & Thompson, 1988) defines hierarchical discourse relations (elaboration, contrast, cause, etc.) over clause-level units, with treebank annotations available in the RST Discourse Treebank (Carlson et al., 2001). The Penn Discourse TreeBank (PDTB; Prasad et al., 2008) annotates discourse connectives and their argument spans with relation senses (temporal, contingency, comparison, expansion), providing a shallower but more scalable annotation framework. More recently, neural discourse parsers (Ji & Eisenstein, 2014; Lin et al., 2019) have achieved reasonable accuracy on RST and PDTB relation classification, demonstrating that discourse relations can be predicted from text features alone.
 
 
 FSA differs from discourse parsing in three respects. First, discourse parsing operates at a fixed granularity (typically clauses or sentences); FSA parameterizes granularity across the full scale hierarchy. Second, discourse parsing treats relation identification as a downstream task applied to a pre-trained representation; FSA makes relation classification the primary training objective. Third, discourse parsing produces static analyses of finished texts; FSA integrates version-differential training to capture the developmental dimension that static analysis cannot access. However, FSA borrows heavily from the discourse relation taxonomy and can leverage existing discourse-annotated corpora (RST-DT, PDTB-3) as seed data for its bootstrapping pipeline (§3.6).
-### 2.5 Document-Level Coherence Modeling
+#
+
+## 2.5 Document-Level Coherence Modeling
 
 
 Document-level coherence has been studied through entity-grid models (Barzilay & Lapata, 2008), which track entity distributions across sentences to measure local coherence, and through neural coherence scoring models that predict sentence orderings (Li & Jurafsky, 2017; Xu et al., 2019). These approaches model coherence as a property of sentence sequences within a single document but do not extend to multi-scale structural coherence or cross-document developmental coherence. FSA's relational coherence metric Γ generalizes entity-grid coherence to arbitrary scales and adds a cross-scale consistency mechanism absent from prior coherence models.
-### 2.6 Learning from Edit Histories and Revision Modeling
+#
+
+## 2.6 Learning from Edit Histories and Revision Modeling
 
 
 The most directly relevant prior work to FSA's version-differential training is EditPrefs (2025), which constructs preference datasets from Wikipedia article revision histories by treating revised text as preferred over original text. EditPrefs demonstrated that models aligned with revision-derived preferences perform comparably to those trained on manually curated datasets, and that reward models trained on revision data captured more nuanced human preferences.
 
 
 Earlier work on revision modeling includes the revision classification taxonomy of Faigley & Witte (1981), distinguishing surface changes from meaning-preserving and meaning-changing revisions; the automated revision detection systems of Zhang & Litman (2015), which classify revisions in student essays; and the IteraTeR framework (Du et al., 2022), which models iterative text revision as a sequence of edit intents (fluency, clarity, coherence, style). FSA extends this tradition by integrating revision modeling into a multi-scale relational architecture, by using a multi-label transformation vector rather than a single edit intent, and by weighting transformations by their coherence improvement (ΔΓ).
-### 2.7 Structured State Spaces and Alternatives
+#
+
+## 2.7 Structured State Spaces and Alternatives
 
 
 The Mamba architecture (Gu & Dao, 2023) and its predecessors in the structured state space (S4) family offer an alternative approach to long-range dependency modeling through selective state spaces with linear-time complexity. While Mamba addresses the efficiency problem of long-context modeling, it remains a token-level architecture: the fundamental unit of learning is the token, and the training objective is next-token prediction. FSA is complementary to, rather than competitive with, state space approaches; FSA's Architecture 1 (token-level generation) could in principle be implemented with either a transformer or a state space model.
@@ -132,7 +154,9 @@ The Mamba architecture (Gu & Dao, 2023) and its predecessors in the structured s
 ---
 
 ## 3. The Multi-Scale Semantic Graph
-### 3.1 Definitions
+#
+
+## 3.1 Definitions
 
 
 **Definition 1 (Scale Parameter).** *Let s ∈ {1, 2, 3, 4, 5, 6} be a scale parameter indexing the granularity of semantic units. We define a canonical scale hierarchy S = {1, 2, 3, 4, 5, 6} corresponding to: s=1 (sentence), s=2 (paragraph), s=3 (section), s=4 (chapter), s=5 (document), s=6 (version-sequence).*
@@ -148,7 +172,9 @@ The Mamba architecture (Gu & Dao, 2023) and its predecessors in the structured s
 
 
 **Definition 4 (Relationship Type Space).** *The relationship type space R = {seq, caus, elab, contr, trans, ref} consists of six canonical types, each with operational extraction criteria defined in §3.4.*
-### 3.2 Operational Unit Extraction
+#
+
+## 3.2 Operational Unit Extraction
 
 
 The unit extraction function φₛ is implemented as follows for each scale:
@@ -173,7 +199,9 @@ The unit extraction function φₛ is implemented as follows for each scale:
 
 
 **Sparse instantiation.** Not all scales must be present for every document. A short blog post may instantiate only s ∈ {1, 2, 5}. A versioned book manuscript may instantiate all six. The architecture accommodates sparse scale coverage by training each scale model only on documents where that scale is meaningfully instantiated.
-### 3.3 Horizontal Edge Structure
+#
+
+## 3.3 Horizontal Edge Structure
 
 
 For each scale s, horizontal edges connect units at the same granularity within a *context window* W(s). To avoid the O(nₛ²) cost of exhaustive pairwise classification, we restrict candidate edges to unit pairs within a sliding window of size W(s):
@@ -192,7 +220,9 @@ r(uᵢ, uⱼ) = [r_seq, r_caus, r_elab, r_contr, r_trans, r_ref] ∈ {0, 1}⁶
 
 
 Multiple labels may be active simultaneously. The training loss uses binary cross-entropy per label (§4.3).
-### 3.4 Operational Definitions of Relationship Types
+#
+
+## 3.4 Operational Definitions of Relationship Types
 
 
 Each relationship type is defined by extractable features, enabling both heuristic labeling and human annotation agreement:
@@ -214,7 +244,9 @@ Each relationship type is defined by extractable features, enabling both heurist
 
 
 **Referential (ref):** B refers back to a specific entity, claim, or passage introduced in A, where A is not the immediately preceding unit. Extraction criteria: B contains anaphoric or cataphoric references resolvable to entities in A (pronominal reference, definite NP coreference, demonstrative reference); B contains explicit cross-references ("as discussed in Section 2", "returning to the earlier point"); B quotes or paraphrases A.
-### 3.5 Coherence Metrics
+#
+
+## 3.5 Coherence Metrics
 
 
 **Definition 5 (Structural Distance).** *The structural distance Σ(uᵢ, uⱼ) between two units at the same scale is the minimum edge count along the shortest path in the horizontal subgraph at that scale. Units with no connecting path have Σ = ∞.*
@@ -230,7 +262,9 @@ Each relationship type is defined by extractable features, enabling both heurist
 
 
 Edge strength w(uᵢ, uⱼ) = Γ(uᵢ, uⱼ) when Γ exceeds threshold Γ*, and 0 otherwise. Γ* is set per scale as the p-th percentile of Γ scores over a held-out calibration set (default p = 30, retaining the top 70% of unit pairs as positive edges). To prevent degenerate solutions during joint training (e.g., the MLP collapsing to a constant output), the coherence MLP is first pre-trained on a small human-annotated coherence dataset (500 unit pairs, 3 annotators, Krippendorff's α ≥ 0.7) before joint training with the relational model. Early stopping on a held-out coherence validation set prevents drift from the grounded initialization.
-### 3.6 Automated Relationship Extraction Pipeline
+#
+
+## 3.6 Automated Relationship Extraction Pipeline
 
 
 The annotation bottleneck — how to obtain ground-truth relationship labels for O(K·N) unit pairs — is solved through a three-stage bootstrapping pipeline:
@@ -246,7 +280,9 @@ The annotation bottleneck — how to obtain ground-truth relationship labels for
 
 
 **Validation.** At each stage, a random sample of 2,000 unit pairs is evaluated against human expert annotations (3 annotators, majority vote) to track label quality. The pipeline targets final label quality of precision ≥ 0.80 and recall ≥ 0.65 across all non-sequential relationship types.
-### 3.7 Worked Example
+#
+
+## 3.7 Worked Example
 
 
 To ground the formalism, we trace a concrete example through three scales of the multi-scale semantic graph.
@@ -328,7 +364,9 @@ Coherence score: Γ(P1, P2) = MLP₂(lex=0.35, sem=0.82, log=0.71) = 0.78 (stron
 ---
 
 ## 4. Architecture Specification
-### 4.1 Dual Architecture Design
+#
+
+## 4.1 Dual Architecture Design
 
 
 FSA employs a dual architecture, separating the generative and relational components:
@@ -341,7 +379,9 @@ FSA employs a dual architecture, separating the generative and relational compon
 
 
 The key insight is that Architecture 2 is defined by its training principle (relationship classification over unit pairs), not by a specific neural architecture. The same principle applies at every scale, though the models at different scales have *separate parameters*. We use "fractal" to emphasize the recursive application of the same relational learning principle across scales, not to imply weight sharing or strict self-similarity of parameters. The architecture is more precisely described as a multi-scale relational ensemble with a shared training paradigm. (Weight-sharing variants that would make the system more literally scale-invariant are discussed in §10.3.)
-### 4.2 Scale-Specific Instantiation
+#
+
+## 4.2 Scale-Specific Instantiation
 
 
 At each scale s, the relational model Mₛ takes as input the internal representations of two semantic units and outputs a relationship type vector. The internal representation of a unit uₛ,ᵢ is obtained by:
@@ -354,7 +394,9 @@ At each scale s, the relational model Mₛ takes as input the internal represent
 
 
 **Pairwise classification:** For a candidate pair (uᵢ, uⱼ), their context-encoded representations are combined via a bilinear interaction layer and passed through a classification head (2-layer MLP) to produce r(uᵢ, uⱼ) ∈ [0,1]⁶ (sigmoid output per label).
-### 4.3 Training Objective
+#
+
+## 4.3 Training Objective
 
 
 The training loss at scale s is a weighted combination of relationship classification loss and coherence prediction loss:
@@ -388,7 +430,9 @@ L_consist = bidirectional consistency penalty across adjacent scales
 
 
 Balancing hyperparameters λ₁ and λ₂ are set by grid search on a validation set.
-### 4.4 Inference Architecture
+#
+
+## 4.4 Inference Architecture
 
 
 After training, Architecture 2 integrates with Architecture 1 at inference time through four mechanisms, applicable individually or in combination:
@@ -408,7 +452,9 @@ After training, Architecture 2 integrates with Architecture 1 at inference time 
 ---
 
 ## 5. Version-Differential Training
-### 5.1 Formalization
+#
+
+## 5.1 Formalization
 
 
 **Definition 7 (Version Sequence).** *A version sequence for document D is an ordered tuple V(D) = (V₁, V₂, ..., Vₙ) where each Vᵢ is a complete text state and Vᵢ temporally precedes Vᵢ₊₁ in the document's developmental history. For non-linear histories (e.g., Git branches), the DAG is linearized by topological sort with ties broken by timestamp.*
@@ -418,7 +464,9 @@ After training, Architecture 2 integrates with Architecture 1 at inference time 
 
 
 Multiple operations may co-occur in a single revision (e.g., a revision that both tightens language and adds evidence has τ = [0, 0, 1, 1, 0, 0]). The training loss uses binary cross-entropy per operation type, not softmax — revision operations are not mutually exclusive.
-### 5.2 Training Objective with Directional Coherence Reward
+#
+
+## 5.2 Training Objective with Directional Coherence Reward
 
 
 Not all revisions improve text. An author can apply structural reorganization and make the document worse. The version-differential training objective must learn not only *what operation occurred* but whether *the operation improved the text's coherence*.
@@ -434,7 +482,9 @@ L_vdt = −Σₖ max(ΔΓ, ε) · [τₖ · log σ(τ̂ₖ) + (1 − τₖ) · l
 
 
 where τ̂ₖ is the predicted logit for operation k, τₖ is the ground-truth label, and ε is a small positive floor (default 0.01) ensuring that neutral and negative revisions receive a small but non-zero weight, preventing the model from ignoring them entirely. The max(ΔΓ, ε) weighting causes the model to learn most heavily from revisions that substantially improved coherence, learn moderately from neutral revisions, and learn with minimal (but non-zero) weight from revisions that degraded coherence. A catastrophic revision (ΔΓ = −0.5) and a neutral revision (ΔΓ = 0) both receive weight ε; the model still sees the operation labels, but the gradient contribution is small. This is preferable to discarding negative-ΔΓ revisions entirely, since the model can learn what operations were applied even when they failed — useful for the revision scoring mechanism (§4.4.3), which needs to distinguish helpful from harmful edits.
-### 5.3 Data Sources
+#
+
+## 5.3 Data Sources
 
 
 Version-differential training requires corpora with preserved revision histories:
@@ -450,7 +500,9 @@ Version-differential training requires corpora with preserved revision histories
 
 
 **Tracked-changes documents:** Documents with explicit revision markup (Word .docx, Google Docs, LaTeX with latexdiff). Smaller but applicable at sub-document scales (sentence and paragraph level revisions visible through tracked changes).
-### 5.4 Handling Noisy and Degenerate Revisions
+#
+
+## 5.4 Handling Noisy and Degenerate Revisions
 
 
 Real revision histories are noisy: they include reversions (undoing previous changes), churn (changes that are later reversed), vandalism (in wikis), trivial formatting changes, and revisions where the author made the text objectively worse. The pipeline handles these through:
@@ -467,11 +519,15 @@ Real revision histories are noisy: they include reversions (undoing previous cha
 ---
 
 ## 6. Cross-Scale Consistency Constraints
-### 6.1 The Consistency Problem
+#
+
+## 6.1 The Consistency Problem
 
 
 Training multiple models independently at different scales creates a risk of inconsistency: the sentence-level model might judge two sentences as coherent while the paragraph-level model judges the paragraphs containing them as incoherent (or vice versa). Both failure modes are problematic.
-### 6.2 Bidirectional Constraint with Vector Alignment
+#
+
+## 6.2 Bidirectional Constraint with Vector Alignment
 
 
 **Definition 10 (Thematic Vector).** *For a unit uₛ₊₁,ₐ at scale s+1, the thematic vector θ(uₛ₊₁,ₐ) is the mean-pooled embedding of the unit's content, representing its dominant thematic direction in embedding space.*
@@ -481,7 +537,9 @@ Training multiple models independently at different scales creates a risk of inc
 
 
 This addresses the parasitic tangent problem: two sentences can be perfectly causally linked (e.g., about Rayleigh scattering) but if they are inserted into a paragraph about 1920s economics, their local coherence is *misaligned* with the parent's thematic vector, and should be penalized rather than rewarded.
-### 6.3 Enforcement Mechanism
+#
+
+## 6.3 Enforcement Mechanism
 
 
 The cross-scale consistency loss has two components:
@@ -515,7 +573,9 @@ where μ weights the relative importance of bottom-up vs. top-down consistency (
 
 
 **What failure looks like without L_consist.** Ablation A2 (§8.4) removes the consistency constraint entirely. Without it, the architecture degenerates into independent single-scale models that can learn contradictory representations: the sentence model may judge two sentences as strongly coherent while the paragraph model treats their parent paragraph as incoherent with its neighbors (or vice versa). In practice, this means the inference mechanisms (§4.4) receive conflicting signals — coherence gating at sentence scale says "continue" while paragraph-scale says "stop" — rendering multi-scale integration unreliable. The consistency constraint is what makes this a genuine multi-scale architecture rather than a collection of parallel single-scale classifiers.
-### 6.4 Training Regime
+#
+
+## 6.4 Training Regime
 
 
 The K scale models are trained with a hybrid schedule:
@@ -532,7 +592,9 @@ The K scale models are trained with a hybrid schedule:
 ---
 
 ## 7. Computational Analysis
-### 7.1 Complexity
+#
+
+## 7.1 Complexity
 
 
 Let N denote corpus size (in tokens), K the number of active scale levels, nₛ the number of units at scale s, and W(s) the context window size at scale s.
@@ -561,7 +623,9 @@ Total pairs: ~378M, dominated by s=1. This is tractable on modern GPU clusters �
 
 
 **Target scale for initial experiments.** We emphasize that the near-term goal is moderate-scale proof-of-concept (GPT-2 class generator, 10M–100M token corpus, K=3 scales), not frontier pretraining replacement. The architecture's value proposition — if validated — would then be scaled incrementally.
-### 7.2 Efficiency Optimizations
+#
+
+## 7.2 Efficiency Optimizations
 
 
 **Selective scale training:** Allocate compute proportionally to expected return. Recommended distribution: 50% to s=1–2 (sentence, paragraph — most data, most useful for coherence gating), 30% to s=3–4 (section, chapter — document structure), 15% to s=5 (document — inter-document relations), 5% to s=6 (version — only applicable to versioned corpora).
@@ -578,7 +642,9 @@ Total pairs: ~378M, dominated by s=1. This is tractable on modern GPU clusters �
 ---
 
 ## 8. Experimental Design
-### 8.1 Collapse Resistance Test
+#
+
+## 8.1 Collapse Resistance Test
 
 
 **Protocol:** Train generative model M₀ on human corpus C (English Wikipedia, ~3B tokens). Generate synthetic corpus C′ using M₀ (temperature=0.9, nucleus p=0.95). Train model M₁ on C′. Repeat for 10 generations. Measure at each generation:
@@ -606,7 +672,9 @@ Total pairs: ~378M, dominated by s=1. This is tractable on modern GPU clusters �
 
 
 **Falsification criterion:** If no FSA condition achieves a collapse generation more than 1.5× higher than B1, or if FSA shows no significant improvement in relationship preservation at generation 5, the collapse resistance hypothesis is falsified and the paper's framing must be revised to emphasize coherence and revision benefits only.
-### 8.2 Long-Form Coherence Test
+#
+
+## 8.2 Long-Form Coherence Test
 
 
 **Protocol:** Generate 10,000-word documents (topic: "history of X" where X is sampled from 50 topics) from FSA and baseline models. Evaluate:
@@ -616,7 +684,9 @@ Total pairs: ~378M, dominated by s=1. This is tractable on modern GPU clusters �
 
 
 **Baselines:** B1, B2 as above, plus B4: GPT-2 124M fine-tuned on long documents (books, reports) with standard next-token objective.
-### 8.3 Revision Capability Test
+#
+
+## 8.3 Revision Capability Test
 
 
 **Protocol:** Construct a test set of 500 deliberately flawed texts (100 per flaw type: weak argument, structural disorganization, verbosity, factual error, missing evidence). Each text is 500–1000 words. Present to models and evaluate:
@@ -627,7 +697,9 @@ Total pairs: ~378M, dominated by s=1. This is tractable on modern GPU clusters �
 
 
 **Baselines:** B5: GPT-2 124M prompted with "improve this text"; B6: GPT-2 124M fine-tuned on EditPrefs data (preference-based revision).
-### 8.4 Ablation Studies
+#
+
+## 8.4 Ablation Studies
 
 
 Ablation
@@ -670,7 +742,9 @@ Add 10%, 20%, 30% random label noise
 How sensitive is the architecture to annotation quality?
 
 
-### 8.5 Scaling Behavior Investigation
+#
+
+## 8.5 Scaling Behavior Investigation
 
 
 **Research questions:** How does performance on collapse resistance and coherence tasks vary with K (number of scales)? We test K ∈ {1, 2, 3, 5} and plot performance against compute budget. Is there logarithmic diminishing return? What is the optimal compute allocation across scales? Can sparse scale sampling (s ∈ {1, 3, 5}) approximate full-scale (s ∈ {1, 2, 3, 4, 5}) training?
@@ -697,23 +771,33 @@ The Fractal Semantic Architecture implements core principles from Operative Semi
 ---
 
 ## 10. Future Research Directions
-### 10.1 Sub-Sentence Extensions
+#
+
+## 10.1 Sub-Sentence Extensions
 
 
 The current architecture begins at s=1 (sentence). Extensions to sub-sentence granularity — clauses, phrases, morphemes — would require a different relationship taxonomy (syntactic relations rather than discourse relations) and a different extraction pipeline (dependency parsing rather than discourse connective detection). The most promising sub-sentence extension is the *clause* level, which is the smallest unit capable of bearing a propositional attitude and therefore a discourse relation. We leave this to future work, noting that the architecture's parameterized design accommodates additional scales without structural modification.
-### 10.2 Cross-Domain Applications
+#
+
+## 10.2 Cross-Domain Applications
 
 
 The FSA principle — train on relationships between variable-scale units — applies to any hierarchically structured domain: code (function → module → library → application, with commit histories as version-differential data); music (note → phrase → section → movement, with compositional drafts); scientific research (claim → paragraph → section → paper → field, with hypothesis-experiment-result as a developmental sequence). Each domain would require domain-specific relationship type taxonomies and unit extraction functions, but the training principle remains invariant.
-### 10.3 Weight Sharing Across Scales
+#
+
+## 10.3 Weight Sharing Across Scales
 
 
 The current architecture uses separate parameters per scale. A weight-sharing variant — mapping unit representations at all scales to a common embedding space via scale-conditioned pooling, then using a single relationship classifier with a scale parameter — would make the architecture more genuinely scale-invariant and would reduce total parameter count by a factor of K. This variant is more elegant but risks losing scale-specific nuances in relationship patterns. Empirical comparison between separate-parameter and shared-parameter variants is a priority for Phase 2.
-### 10.4 Fully Relational Generation
+#
+
+## 10.4 Fully Relational Generation
 
 
 The most ambitious extension would replace Architecture 1 entirely with a relational generator: a model that first generates a relational graph (skeleton of typed relationships between planned units), then decodes text from the graph. This would move token generation from the primary to the secondary role and could in principle achieve stronger collapse resistance, since the primary learning signal would be entirely relational. However, the text-from-graph decoding step is a major unsolved challenge. We note this as a long-term direction, not a near-term proposal.
-### 10.5 Integration with Existing Architectures
+#
+
+## 10.5 Integration with Existing Architectures
 
 
 The most promising near-term application of FSA is as a post-training module: take a pre-trained LLM (Architecture 1), build a multi-scale semantic graph over its training corpus, train the relational models (Architecture 2), and use the relational models to constrain or guide generation at inference time via the mechanisms described in §4.4. This integration path minimizes the disruption to existing training pipelines while introducing hierarchical coherence as a new capability.
@@ -838,7 +922,9 @@ Full license text: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 ---
 
 ## Appendix B: Changelog
-### v2.1 → v2.2 (Perfective)
+#
+
+## v2.1 → v2.2 (Perfective)
 
 
 Change
@@ -901,7 +987,9 @@ Conclusion reordered: architecture → version-differential → inference → co
 Hierarchy of emphasis (DeepSeek)
 
 
-### v2.0 → v2.1
+#
+
+## v2.0 → v2.1
 
 
 Change

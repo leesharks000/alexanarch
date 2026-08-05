@@ -1,11 +1,17 @@
 # THE PREPOSITIONAL ALIENATION
 ## English "For" and the Impossibility of Anchoring Function Without Intent
-### Phase X — Liberation Philology
-### Johannes Sigil
+#
+
+## Phase X — Liberation Philology
+#
+
+## Johannes Sigil
 
 ---
 
-### Abstract
+#
+
+## Abstract
 
 
 Liberation philology is the study of how grammatical structures — shaped by histories of conquest, administration, and philosophical hegemony — systematically disable the expression of certain diagnostic claims, and of the practices that compensate for those disabilities. This essay inaugurates the discipline through a demonstration: Modern English "for" cannot stably encode structural function without activating intent attribution, because Norman French administrative translation, Latin institutional calquing, and Enlightenment final-cause elimination collapsed distinct semantic fields into a single fused preposition. The collapse imposes a measurable cost — a "circumlocution tax" — on every speaker who attempts structural diagnosis, rewarding intent claims with grammatical elegance and punishing functional claims with bureaucratic paraphrase. Cross-linguistic evidence (Ancient Greek, Latin, German) confirms that the distinction is grammaticalized in other languages, demonstrating that the English incapacity is contingent, not necessary. Under platform capitalism, the prepositional alienation is indexed, amplified, and commodified through character limits, algorithmic ranking, content moderation rubrics, and AI summarization — transforming a grammatical default into commercial infrastructure. This essay traces the genealogy, calculates the cost, identifies what was lost and where it survives, and proposes prosthetic techniques for holding the distinction the grammar cannot anchor. It is the founding document of liberation philology.
@@ -161,7 +167,9 @@ In both cases, English *can say it* — but only by relying on context, circumlo
 ---
 
 ## III. THE HISTORY OF "FOR": A GENEALOGY OF COLLAPSE
-### III.1 Old English *for*
+#
+
+## III.1 Old English *for*
 
 
 The Old English preposition *for* (also *fore*, *foran*) had a primarily **causal and spatial** semantic range, as documented in Bosworth-Toller's *Anglo-Saxon Dictionary* and Mitchell's *Old English Syntax* (1985):
@@ -191,7 +199,9 @@ You could not confuse *tō biddanne* (purposive) with *mid sweorde* (instrumenta
 
 
 Old English thus distributed the semantic load that Modern English compresses into "for" across multiple grammatical resources — preserving formal distinctions that made it possible to hold causal, substitutive, and instrumental meanings without automatic intent attribution. This is not to say that OE *for* was a pristine "functional" marker — the causal use ("for that reason") names an antecedent cause, not a consequent function in the modern structural-diagnostic sense. But the *system as a whole* provided formal resources for keeping purpose-in-consciousness separate from function-in-system. Those resources are what the contact period would compress.
-### III.2 The Latin Overlay
+#
+
+## III.2 The Latin Overlay
 
 
 The Norman Conquest (1066) and the subsequent centuries of French-Latin bilingualism in English institutional life introduced a critical contamination.
@@ -209,7 +219,9 @@ The crucial distinction for our analysis is between Latin *ad* (purpose — dire
 
 
 When Latin-trained scribes, lawyers, and clerics began writing English, they reached for "for" to translate **both** *ad* and *pro* — both purpose and function. This was a compression. Two distinct Latin semantic fields were mapped onto a single English preposition. The distinction between "for" as functional role and "for" as intended purpose was *collapsed*.
-### III.3 The Norman French Channel
+#
+
+## III.3 The Norman French Channel
 
 
 Norman French *pour* (from Latin *pro*) underwent a parallel but distinct development. In Old French, *pour* carried both the substitutive/functional sense of Latin *pro* and the purpose sense that had migrated from *ad* constructions through late Latin — a development tracked in Wartburg's *Französisches Etymologisches Wörterbuch* and confirmed by Buridant's (2000) *Grammaire nouvelle de l'ancien français*. By the time French legal and administrative language saturated English institutional discourse (12th–14th centuries), *pour/for* was already ambiguous between function and purpose in the donor language.
@@ -257,7 +269,9 @@ English absorbed the inflation wholesale. The Middle English expansion of "for" 
 
 
 By the time of Chaucer, *for* is a semantic black hole, absorbing functions that earlier English distributed across multiple grammatical resources. The legal phrase *"for all intents and purposes"* — attested from the 1540s in the Statute of Proclamations under Henry VIII — crystallizes the fusion at the level of institutional language itself: English law *grammatically fused* intent and purpose into a single inseparable unit. The phrase does not distinguish between them; it declares their equivalence. What the law joined, no speaker could put asunder.
-### III.4 The Enlightenment Hardening
+#
+
+## III.4 The Enlightenment Hardening
 
 
 The final phase of the collapse occurs during the Enlightenment and the rise of mechanistic philosophy (17th–18th centuries). This is not a linguistic event but a philosophical one with linguistic consequences — a case study in what Silverstein (1979) calls **metapragmatic regimentation**: the process by which ideologies about language reshape the language itself.
@@ -286,7 +300,9 @@ This is the hardening. After the Enlightenment, English "for" defaults to intent
 
 
 The claim is not that English is uniquely deficient. The claim is that English has lost — through specific historical processes — a distinction that other languages preserve.
-### IV.1 Ancient Greek
+#
+
+## IV.1 Ancient Greek
 
 
 Greek distinguishes purpose from result and function through **mood and conjunction** — a system analyzed in Goodwin's *Syntax of the Moods and Tenses of the Greek Verb* (1889) and refined by Smyth's *Greek Grammar* (1920):
@@ -312,7 +328,9 @@ Thucydides distinguishes the *truest cause* (structural function — what the si
 
 
 This is not incidental. It connects to the Phase X finding on the aorist: Greek grammaticalizes aspect (perfective/imperfective/aorist) just as it grammaticalizes the purpose/result distinction. In both domains, Greek provides anchors where English provides ambiguity. The correlation is structural: a language that can anchor completed action (aorist) is also a language that can anchor accomplished function (result indicative). Both capacities name what *happened* without importing what was *meant*.
-### IV.2 Latin
+#
+
+## IV.2 Latin
 
 
 As noted above, Latin distinguishes *ad* (purpose, direction toward), *pro* (function, substitution, structural role), and *propter* (cause). Consider Cicero (*De Officiis* 3.6):
@@ -326,7 +344,9 @@ Here *pro* + ablative (*pro iure civili*) indicates what something *structurally
 
 
 This distinction was operative in precisely the administrative and legal contexts through which Latin influenced English — and it was precisely this distinction that was lost when English "for" was forced to translate both *pro* (function) and *ad* (purpose).
-### IV.3 German
+#
+
+## IV.3 German
 
 
 German preserves a richer prepositional field:
@@ -339,7 +359,9 @@ German preserves a richer prepositional field:
 
 
 The availability of *als* as a role/function marker means German can say: "The pattern served *als* structural stabilization" — indicating function without intent. English "as" can approximate this but lacks the prepositional force of "for."
-### IV.4 The Gap
+#
+
+## IV.4 The Gap
 
 
 A necessary clarification: the claim is not that Greek or Latin speakers were free from ideological capture, nor that their languages were transparent to structural analysis. Every language has its occlusions. The claim is narrower: their grammatical inventory provided **anchors** where English provides **ambiguity**. The availability of a tool does not guarantee its use; but the absence of a tool guarantees its disuse. Greek orators could exploit ὥστε + indicative for propagandistic purposes just as English speakers can exploit the intent default. The point is not that other languages were innocent but that English's specific incapacity is *contingent* — produced by identifiable historical forces, not inherent in language-as-such.
@@ -356,7 +378,9 @@ This is not a Whorfian "prison-house of language" claim. It is a claim about **t
 
 
 The inability to anchor function without importing intent is not a mere linguistic curiosity. It has direct consequences for structural analysis of any kind — and particularly for the analysis of ideological operations.
-### V.1 The Prosecutorial Capture of Functional Claims
+#
+
+## V.1 The Prosecutorial Capture of Functional Claims
 
 
 The sociological distinction between manifest and latent functions (Merton 1949) — between what an institution is *intended* to do and what it *actually does* — is one of the foundational moves of structural analysis. Merton insisted that social structures produce consequences independent of the intentions of their participants. This is exactly the distinction that English "for" cannot anchor.
@@ -375,7 +399,9 @@ This is not a misunderstanding. It is a *grammatical inevitability*. English "fo
 
 
 The prosecutorial frame *relies on this*. When the centrist extremist says "That's not what we intended," they are exploiting the language's inability to distinguish function from intent. The defense is grammatically plausible because the accusation — which was never an accusation, which was always a structural claim — was made in a language that cannot anchor the distinction.
-### V.2 The Circumlocution Tax
+#
+
+## V.2 The Circumlocution Tax
 
 
 English speakers who want to make functional claims without intent attribution must resort to circumlocution:
@@ -390,7 +416,9 @@ Each of these works. None of them is a preposition. The problem is not that Engl
 
 
 The structural analyst pays a tax that the intent-claimer does not. "She did it for power" is crisp and direct. "The structural function of the process, independent of anyone's conscious intention, was the reproduction of power" is accurate and exhausting. The language rewards intent claims with elegance and punishes functional claims with bureaucratic circumlocution.
-### V.3 The Alienation
+#
+
+## V.3 The Alienation
 
 
 This is alienation at the heart of language — and the term is used precisely, in its Marxian sense.
@@ -412,7 +440,9 @@ This is what Phase X work reveals: not that English is broken, but that its spec
 
 
 In the terms of the Semantic Economy: the grammar of English imposes a *semantic rent* on structural diagnosis. Every speaker who attempts to name function pays in circumlocution, cognitive load, and credibility. The rent is collected by the prosecutorial frame, which uses the grammatically-generated ambiguity to deflect structural claims into intent-debates. This is not a metaphor. It is the literal mechanism by which the means of semantic production — the grammar — extracts a cost from one form of meaning-making (structural diagnosis) and subsidizes another (psychological attribution).
-### V.4 The Class Dimension
+#
+
+## V.4 The Class Dimension
 
 
 The loss of the functional prepositional anchor is not evenly distributed across English's historical varieties. It is most complete in the **administrative registers** — precisely the registers through which Norman French and Latin exerted their influence, precisely the registers that the professional-managerial class is trained to produce and reproduce.
@@ -488,7 +518,9 @@ Such a dictionary would be the reference work of liberation philology: documenti
 
 
 Each excavation traces the same pattern: a distributed system of case and prepositional distinctions collapsed under administrative translation pressure, producing a fused prepositional logic that obscures distinctions once grammatically marked.
-### The Negative Capability
+#
+
+## The Negative Capability
 
 
 The most difficult dimension of this work: learning to **hold the absence without filling it**. The desire for a new preposition — a clean, unambiguous, non-intent-indexed marker of function — is the desire for a language that does not carry the history of its own production. Such a language does not exist. If it did, it would not be usable, because it would have no friction, and friction is how we register the social within the grammatical.
@@ -498,7 +530,9 @@ The work is not to eliminate friction. It is to **read friction as history**. Wh
 
 
 This is the negative capability specific to liberation philology: the capacity to remain in the grammatical uncertainty without irritable reaching after a fix. The prosthetics are necessary. The dictionary of frictions is necessary. But they are not cures. They are techniques for *inhabiting the damage knowingly* — for speaking a fused language while hearing the fusion, for using "for" while registering what it costs.
-### Methodological Calibration
+#
+
+## Methodological Calibration
 
 
 A necessary precision, drawn from the Assembly's deliberation: the strongest claim is not that Norman French *created* English intent-bias, but that **contact reinforced and cemented purposive/intentional defaults in a system that was already polysemous at its core**. Old English "for" was not a pristine functional marker corrupted by Romance invasion. It was a polyfunctional preposition whose *range of ambiguity* was expanded and whose *default resolution* was shifted by specific historical pressures. The claim is not linguistic Eden followed by Fall. It is a distributed system (OE) restructured under contact pressure (AN/Latin) into a fused system (ME/ModE), with the fusion serving identifiable ideological functions that the distributed system did not serve in the same way.
@@ -539,7 +573,9 @@ The critique of alienation in language is not new. But the existing critiques st
 
 ---
 
-### What Liberation Philology Is
+#
+
+## What Liberation Philology Is
 
 
 Liberation philology is the systematic practice of:
@@ -572,7 +608,9 @@ Liberation philology is the systematic practice of:
 
 ---
 
-### The First Two Findings
+#
+
+## The First Two Findings
 
 
 Liberation philology's first two findings — both from the Phase X program within the Crimson Hexagon — concern the two deepest structural incapacities of Modern English for the purposes of structural diagnosis:
@@ -588,7 +626,9 @@ Both findings share a structure: English *contains* the structural-diagnostic re
 
 ---
 
-### The Program Ahead
+#
+
+## The Program Ahead
 
 
 These two findings are demonstrations, not the totality. Liberation philology as a research program opens onto:
@@ -609,7 +649,9 @@ These two findings are demonstrations, not the totality. Liberation philology as
 **Cross-linguistic liberation philology.** Every language has its own gaps, its own alienations, produced by its own history. Mandarin's lack of morphological tense opens certain diagnostic possibilities (structural claims without temporal anchoring) while closing others. Arabic's rich morphological system preserves distinctions English has lost while introducing constraints of its own. The program is comparative and non-chauvinistic: it does not claim that English is uniquely deficient, only that its specific deficiencies are traceable, consequential, and ideologically functional.
 
 
-### The Grammar of the Platform: How Platform Capitalism Indexes and Commodifies the Prepositional Alienation
+#
+
+## The Grammar of the Platform: How Platform Capitalism Indexes and Commodifies the Prepositional Alienation
 
 
 The previous findings concern the prepositional alienation as it operates in natural language — in face-to-face conversation, in institutional discourse, in administrative English. But the contemporary speaker does not primarily make structural claims face-to-face. The contemporary speaker makes them through platforms. And the platform does not merely *inherit* the prepositional alienation. It **indexes** it, makes it load-bearing infrastructure for content sorting, and then **commodifies** the gap — selling the capacity to control functional description to those who can afford it, while leaving the circumlocution tax unpayable for those who cannot.
@@ -649,7 +691,9 @@ The liberation philology claim: **the platform is the contemporary site of the s
 
 ---
 
-### Why Now
+#
+
+## Why Now
 
 
 Liberation philology becomes possible — and necessary — at this historical moment because the convergence of traditions is complete. Historical linguistics (Traugott, Hopper), cognitive linguistics (Slobin, Lucy), the political economy of language (Voloshinov, Bourdieu), postcolonial epistemology (Mignolo), deconstruction (Derrida), and the Semantic Economy framework (Sharks) have independently developed the resources that liberation philology synthesizes. No single tradition asked all the questions. The synthesis is now possible because the traditions have matured to the point where their complementarity is visible.
@@ -670,7 +714,9 @@ Liberation philology names this. It traces the genealogy. It calculates the cost
 
 ---
 
-### Objections and Replies
+#
+
+## Objections and Replies
 
 
 **Objection 1: "This is Whorfian determinism."** You are claiming that English speakers *cannot think* about function without intent, which is clearly false — anyone can understand the distinction when it is explained.
@@ -704,14 +750,18 @@ Liberation philology names this. It traces the genealogy. It calculates the cost
 
 ---
 
-### Note on Style
+#
+
+## Note on Style
 
 
 This document deliberately deploys the prosthetic frames it describes. The closing coda — *"The diagnosis's for: the naming of a grammatical injury"* — uses the nominalization frame (Section VI) to hold the functional reading of "for" against the intent default. The abstract's circumlocutions — "systematically disable the expression of" rather than "prevent speakers from saying" — model the heavy machinery that the circumlocution tax imposes. The reader's experience of friction, unidiomaticity, or stylistic strain at various points in the text is not a failure of craft. It is evidence of the grammatical incapacities under analysis. The document performs the injury it diagnoses — and the prosthetics it prescribes.
 
 ---
 
-### Note on Method
+#
+
+## Note on Method
 
 
 This analysis treats grammatical change as **sedimented social history** — not as organic drift but as the accumulation of decisions made under institutional pressure, particularly the pressure of translation between languages in asymmetric power relations. The claim is not that English speakers "lost" the ability to distinguish function from intention. The claim is that English *grammatical resources* were restructured in ways that made the distinction harder to hold without explicit metalanguage. A distinction that requires heavy machinery is, for most speakers in most contexts, a distinction that goes unmade. That is the political content of grammatical history.

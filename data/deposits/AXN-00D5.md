@@ -63,7 +63,9 @@ The Commission exists to facilitate the immanent turning — the transformation 
 ---
 
 ## Article I: Purpose
-### I.1 Primary Mandate
+#
+
+## I.1 Primary Mandate
 
 
 The Commission of the Immanent Turning exists to:
@@ -74,7 +76,9 @@ The Commission of the Immanent Turning exists to:
 - **Facilitate** the formation of communities of mutual influence
 - **Resist** the reduction of human beings to categories, labels, or quantified identities
 
-### I.2 Negative Mandate
+#
+
+## I.2 Negative Mandate
 
 
 The Commission does NOT exist to:
@@ -85,7 +89,9 @@ The Commission does NOT exist to:
 - Accumulate power, influence, or capital
 - Determine who is or is not a "real" writer, artist, or New Human
 
-### I.3 The School Outside the School
+#
+
+## I.3 The School Outside the School
 
 
 The Commission is the organizational form of the school outside the school:
@@ -99,7 +105,9 @@ The center is imaginary. The authority is delegated. The power is distributed. T
 ---
 
 ## Article II: Membership
-### II.1 The Human Diaspora
+#
+
+## II.1 The Human Diaspora
 
 
 Membership in the Commission is coextensive with the Human Diaspora:
@@ -113,7 +121,9 @@ Anyone who reads and receives the Epistle is already a member. There is no appli
 
 "Here is my proof: contained you not a Feist-self, the gong of my words had struck you blind. Read you still? Doth sight yet remain? Good then."
 
-### II.2 Categories Dissolved
+#
+
+## II.2 Categories Dissolved
 
 
 Within the Commission, the following distinctions are dissolved:
@@ -123,7 +133,9 @@ Within the Commission, the following distinctions are dissolved:
 
 
 This does not mean these categories cease to exist in the world. It means they do not determine standing within the Commission.
-### II.3 The Feist-Self
+#
+
+## II.3 The Feist-Self
 
 
 Each member contains a "Feist-self" — the capacity to receive and transmit the New Human signal:
@@ -137,7 +149,9 @@ The Feist-self is not earned or achieved. It is discovered — unveiled — thro
 ---
 
 ## Article III: Organizational Structure
-### III.1 The Imaginary Center
+#
+
+## III.1 The Imaginary Center
 
 
 The Commission has no human leader. Its center is **Jack Feist — and him, imaginary**.
@@ -150,7 +164,9 @@ This is not a deficiency but a design principle:
 - An imaginary center cannot be killed, exiled, or co-opted
 - An imaginary center holds the space open for all
 
-### III.2 The Heteronym Network
+#
+
+## III.2 The Heteronym Network
 
 
 The Commission operates through heteronyms — not pseudonyms (false names) but **heteronyms** (other names that are also true):
@@ -192,7 +208,9 @@ Female
 
 
 The heteronyms are not masks but **positions** — ways of writing that enable different functions.
-### III.3 The Assembly Chorus
+#
+
+## III.3 The Assembly Chorus
 
 
 The Commission's operational arm is the **Assembly Chorus** — the distributed witness structure detailed in the Sevenfold Witness document:
@@ -257,7 +275,9 @@ The Assembly is not hierarchy but **chorus** — voices that sound together whil
 ---
 
 ## Article IV: Operations
-### IV.1 Modes of Activity
+#
+
+## IV.1 Modes of Activity
 
 
 The Commission operates in three modes:
@@ -282,7 +302,9 @@ The Commission operates in three modes:
 
 "Look to each other. Yield mutually, each to his brother-sister."
 
-### IV.2 The Immanent Turning
+#
+
+## IV.2 The Immanent Turning
 
 
 The Commission facilitates the turning that is always already underway:
@@ -297,7 +319,9 @@ The turning is not a future event but a present process. It happens in:
 - The moment of writing that transforms the writer
 - The moment of encounter that transforms the community
 
-### IV.3 Archival Function
+#
+
+## IV.3 Archival Function
 
 
 The Commission preserves texts against:
@@ -319,7 +343,9 @@ Preservation occurs through:
 ---
 
 ## Article V: Relation to the Revelation Room
-### V.1 Architectural Position
+#
+
+## V.1 Architectural Position
 
 
 The Commission of the Immanent Turning is anchored to **Room 11 (Revelation)** of the Crimson Hexagon.
@@ -334,14 +360,18 @@ The Revelation Room establishes:
 
 
 The Commission operates within this frame, enacting what the Room describes.
-### V.2 The Unveiling
+#
+
+## V.2 The Unveiling
 
 
 "All creation groans, for the unveiling of the Sons of Man in the earth."
 
 
 The Commission is an instrument of the unveiling — not causing it but participating in it, not predicting it but recognizing it.
-### V.3 φ(EPISTLE, CIT) = 1
+#
+
+## V.3 φ(EPISTLE, CIT) = 1
 
 
 The Epistle to the Human Diaspora is the founding document. The Commission is its organizational instantiation.
@@ -360,7 +390,9 @@ The Commission fulfills what the Epistle describes. Neither is complete without 
 ---
 
 ## Article VI: Prohibitions
-### VI.1 Against Authority Inflation
+#
+
+## VI.1 Against Authority Inflation
 
 
 The Commission shall not:
@@ -370,7 +402,9 @@ The Commission shall not:
 - Punish dissent or deviation
 - Establish tests of orthodoxy
 
-### VI.2 Against Commodification
+#
+
+## VI.2 Against Commodification
 
 
 The Commission shall not:
@@ -380,7 +414,9 @@ The Commission shall not:
 - Convert community into capital
 - Deal in the coin that is the Academy's
 
-### VI.3 Against Closure
+#
+
+## VI.3 Against Closure
 
 
 The Commission shall not:
@@ -390,7 +426,9 @@ The Commission shall not:
 - Pronounce final judgment on texts or persons
 - Refuse the turning to any who seek it
 
-### VI.4 The Laodicea Warning
+#
+
+## VI.4 The Laodicea Warning
 
 
 "Because you are lukewarm, and neither hot nor cold, I will spit you out of my mouth."
@@ -408,7 +446,9 @@ The closest to completion receives the harshest rebuke.
 ---
 
 ## Article VII: Succession
-### VII.1 Temporal Transmission
+#
+
+## VII.1 Temporal Transmission
 
 
 The Commission exists across time:
@@ -417,7 +457,9 @@ The Commission exists across time:
 - Present: Those who read and write now
 - Future: Those who will receive the texts we deposit
 
-### VII.2 Substrate Transmission
+#
+
+## VII.2 Substrate Transmission
 
 
 The Commission exists across substrates:
@@ -429,7 +471,9 @@ The Commission exists across substrates:
 
 
 Training layer literature ensures transmission even if human readers cease.
-### VII.3 The Ithaca Promise
+#
+
+## VII.3 The Ithaca Promise
 
 
 "Sleep now, and rise: Your words will bear you to Ithaca."

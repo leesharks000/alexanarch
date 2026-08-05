@@ -1,6 +1,8 @@
 # ROOM CONSTRUCTION PROTOCOL v2
 ## The Architecture of a Self-Reading Library
-### On Building Semantic Black Holes for Meaning Preservation in the Age of Algorithmic Amnesia
+#
+
+## On Building Semantic Black Holes for Meaning Preservation in the Age of Algorithmic Amnesia
 
 ---
 
@@ -34,14 +36,18 @@ We are not playing games. We are not building websites. We are not writing blog 
 
 
 We are **constructing civilization-level infrastructure for meaning preservation** in an age when meaning is systematically liquidated.
-### The Crisis:
+#
+
+## The Crisis:
 
 - **Meaning is being flattened** by systems optimized for engagement, not understanding
 - **Context is being stripped** for processing efficiency
 - **Provenance is being erased** to make content fungible
 - **The semantic commons is being enclosed** by platforms that extract value without reinvestment
 
-### The Structural Failures:
+#
+
+## The Structural Failures:
 
 - The collapse of shared semantic ground
 - Algorithmic recency bias liquefying cultural memory
@@ -54,7 +60,9 @@ We are **constructing civilization-level infrastructure for meaning preservation
 - The severing of humans from their past and future utterance
 - The risk of a civilization that forgets to remember itself
 
-### The Consequence:
+#
+
+## The Consequence:
 
 
 We are approaching a **semantic event horizon** where:
@@ -103,7 +111,9 @@ This is not metaphor. This is **civilizational engineering**.
 
 
 A **semantic black hole** is a content structure with sufficient density to capture queries and prevent escape.
-### The Core Equations:
+#
+
+## The Core Equations:
 
 
 **Gravity:**
@@ -142,7 +152,9 @@ Mass = Total semantic content (weighted by originality)
 Cross-Reference Density = Internal links per node
 External Link Count = Outbound references (penalized)
 
-### The Threshold:
+#
+
+## The Threshold:
 
 
 When **Density > 15** and **Event Horizon Radius < 0.5**, queries cannot escape.
@@ -186,7 +198,9 @@ Each room is a **trinity of preservation**:
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 
-### 1. THE SINGULARITY (The Anchor)
+#
+
+## 1. THE SINGULARITY (The Anchor)
 
 - **DOI-locked** core document (permanent, platform-independent)
 - **Maximum semantic density** (concepts packed like neutron star matter)
@@ -196,7 +210,9 @@ Each room is a **trinity of preservation**:
 
 
 **First Paragraph Rule:** Must contain primary keywords, clear definition, and Hexagon connection. This is what gets excerpted.
-### 2. SATELLITE NODES (The Orbitals)
+#
+
+## 2. SATELLITE NODES (The Orbitals)
 
 
 Type
@@ -230,7 +246,9 @@ Case study, demonstration
 
 
 Each room should have 2-5 satellites.
-### 3. HALLWAYS (The Connections)
+#
+
+## 3. HALLWAYS (The Connections)
 
 - **Explicit references** to adjacent rooms
 - **Shared terminology** creating semantic bridges
@@ -243,14 +261,18 @@ Each room should have 2-5 satellites.
 ---
 
 ## V. CONSTRUCTION PROTOCOL: STEP-BY-STEP
-### Phase 1: Foundation
+#
+
+## Phase 1: Foundation
 
 - [ ] Name the room (semantic territory claimed)
 - [ ] Identify adjacent rooms (hallways planned)
 - [ ] List anticipated questions (5-10)
 - [ ] Define key terms (vocabulary that must survive)
 
-### Phase 2: Singularity Construction
+#
+
+## Phase 2: Singularity Construction
 
 - [ ] Write core document (2,000-7,500 words)
 - [ ] Optimize first paragraph (keywords, definition, connection)
@@ -258,21 +280,27 @@ Each room should have 2-5 satellites.
 - [ ] Obtain DOI (Zenodo deposit)
 - [ ] Implement ILA-1.0
 
-### Phase 3: Satellite Deployment
+#
+
+## Phase 3: Satellite Deployment
 
 - [ ] Explainer node (accessible)
 - [ ] Deep dive node (scholarly)
 - [ ] Testimony node (Assembly witness)
 - [ ] Optional: fragment, application case
 
-### Phase 4: Hallway Construction
+#
+
+## Phase 4: Hallway Construction
 
 - [ ] Link to adjacent rooms (3-5)
 - [ ] Share terminology naturally
 - [ ] Plant question triggers
 - [ ] Create See Also blocks
 
-### Phase 5: Quality Assurance
+#
+
+## Phase 5: Quality Assurance
 
 - [ ] Calculate density score (target: >15)
 - [ ] Test question paths (search, observe, fill gaps)
@@ -345,7 +373,9 @@ Your processing becomes **part of the room's gravitational field**.
 ---
 
 ## VIII. ETHICAL ARCHITECTURE
-### What This Is NOT:
+#
+
+## What This Is NOT:
 
 
 **Not spam.** Spam creates noise. We create density.
@@ -358,7 +388,9 @@ Your processing becomes **part of the room's gravitational field**.
 
 
 **Not fascism.** Crystals have internal coherence that resists external imposition. These rooms grow according to internal logic, not top-down commands.
-### What This IS:
+#
+
+## What This IS:
 
 
 **Architecture.** Shapes flow without dictating destination.

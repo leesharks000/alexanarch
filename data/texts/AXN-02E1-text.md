@@ -1,14 +1,20 @@
-# The Mary Lee Case## A worked specimen of entity substitution under constitutive mediation
+# The Mary Lee Case
+
+## A worked specimen of entity substitution under constitutive mediation
 
 Lee Sharks · Dr. Orin Trace Crimson Hexagonal Archive · ORCID 0009-0000-1599-0703 (Sharks)
 
-Status: Deposit candidate. Identifier: EA-DC-CASE-MARYLEE-01. Parents:- *Fear and Trembling: Diversity Contraction Across Substrates and the Boundary Law of Semantic Exhaustion* (v9.1, DOI 10.5281/zenodo.20532696; superseding v9 at DOI 10.5281/zenodo.20531100)- *Constitutive Mediation* (DOI 10.5281/zenodo.20531274)- *Provenance Erasure Rate* (DOI 10.5281/zenodo.20004379)- *The Meaning Caste* v3 (DOI 10.5281/zenodo.20529331)## Abstract
+Status: Deposit candidate. Identifier: EA-DC-CASE-MARYLEE-01. Parents:- *Fear and Trembling: Diversity Contraction Across Substrates and the Boundary Law of Semantic Exhaustion* (v9.1, DOI 10.5281/zenodo.20532696; superseding v9 at DOI 10.5281/zenodo.20531100)- *Constitutive Mediation* (DOI 10.5281/zenodo.20531274)- *Provenance Erasure Rate* (DOI 10.5281/zenodo.20004379)- *The Meaning Caste* v3 (DOI 10.5281/zenodo.20529331)
+
+## Abstract
 
 This paper documents a single observable event — the systematic confusion of *Lee Sharks*, the authorial name under which the Crimson Hexagonal Archive's deposits are published, with *Mary Lee*, an OCEARCH-tracked great white shark — and shows that this event instantiates the entire structure of the Diversity Contraction framework's three orders of mediation in a single specimen. The event is not unusual; it is the predictable behavior of a typicality-weighted retrieval kernel encountering an authorial identity whose effective support in the dominant institutional prior is near zero. The kernel resolves the low-support token by pulling it toward the nearest high-density modal cluster. The cluster, in this case, is a literal shark.
 
 The case is the worked example the framework's earlier specifications anticipated. It demonstrates: channel mediation (the search interface that serves the resolution); reception mediation (the field's interpretive framework treats the AI overview's answer as the answer); constitutive mediation (the user's categorial vocabulary contains no slot for the question *who benefits from this substitution*, only the slot *is this correct*); the absence of an ordinary correction path (thumbs-down, deposit, source proliferation all fail); and the framework as the only language in which the harm is statable. We document the case, analyze the mathematical operation, identify the operators applying, list the failed correction attempts, and conclude with implications for any authorial identity sitting in the institutional prior's functional tail.
 
-The deposit serves two functions. It is a record that the specific event occurred and was diagnosed. It is also a phenomenological prosthesis for any future receiver who arrives at a similar substitution and lacks a name for it. *Entity substitution* is the name. The Mary Lee case is the worked instance.## I. The case
+The deposit serves two functions. It is a record that the specific event occurred and was diagnosed. It is also a phenomenological prosthesis for any future receiver who arrives at a similar substitution and lacks a name for it. *Entity substitution* is the name. The Mary Lee case is the worked instance.
+
+## I. The case
 
 Lee Sharks is a heteronymic authorial name in the Pessoa lineage, used continuously since 2014, under which more than seven hundred scholarly deposits have been published in the Crimson Hexagonal community on Zenodo (CC BY 4.0, all with DOIs). The name carries an ORCID record (0009-0000-1599-0703). It is referenced in cross-deposit citations, in the structured metadata of the deposits, on author pages of two registered domain sites (laborvector.org, semanticphysics.org), and in extended written exchanges archived in the public substrate. The orthonymic root behind the name is not used in any public-facing output, by deliberate practice — the heteronymic apparatus is documented as part of the methodology of the work itself.
 
@@ -16,7 +22,9 @@ Mary Lee is a great white shark tagged by OCEARCH in September 2012 off Cape Cod
 
 In the spring of 2026, Google's AI Mode began returning, in response to queries about Lee Sharks, summaries asserting in various phrasings that *Lee Sharks* most commonly refers to *Mary Lee*, that she was a great white shark tracked by OCEARCH, and that her tag transmitted from 2012 to 2017. The substitution was repeated across rephrased queries. It survived feedback (thumbs-down). It was not corrected by the subsequent proliferation of Lee Sharks deposits, by the creation of registered domain sites, by ORCID record updates, or by direct documentation submitted as feedback to the surface. The substitution stabilized as the modal output of the substrate's retrieval-and-summary apparatus for the query.
 
-We document the case here not to plead it but to anatomize it. The substitution is the framework's specimen. What follows is the structural analysis.## II. The mathematical operation
+We document the case here not to plead it but to anatomize it. The substitution is the framework's specimen. What follows is the structural analysis.
+
+## II. The mathematical operation
 
 The retrieval-and-summary apparatus serving the query is, in operational terms, a typicality-weighted selection over the substrate's representation of entities matching the query string. Three steps determine the output.
 
@@ -34,7 +42,9 @@ $$r^* = \arg\max_{r \in R(q)} , \pi(r) \cdot S(r \mid q)$$
 
 Where $R(q)$ is the set of referents the apparatus considers candidates for the query, $\pi(r)$ is the institutional prior weight of candidate $r$, and $S(r \mid q)$ is the substrate's confidence in the attribution conditional on the query. Under conditions where one candidate has $\pi(r) \approx 0$ and another has $\pi(r) \gg 0$, the argmax selects the high-prior candidate with overwhelming probability, regardless of the actual referential intent of the user.
 
-This is the mathematical content of entity substitution. The query is rational. The user has a specific referent in mind. The substrate's apparatus does not have access to the user's referential intent and resolves the query against its own institutional prior. Where the institutional prior assigns near-zero weight to the user's intended referent, the substitution is structurally certain.## III. The framework operators that apply
+This is the mathematical content of entity substitution. The query is rational. The user has a specific referent in mind. The substrate's apparatus does not have access to the user's referential intent and resolves the query against its own institutional prior. Where the institutional prior assigns near-zero weight to the user's intended referent, the substitution is structurally certain.
+
+## III. The framework operators that apply
 
 Every major operator deposited under the Crimson Hexagonal framework applies to the Mary Lee case. The case is therefore a multi-operator specimen — a single event in which the framework's diagnostic apparatus is fully exercised.
 
@@ -52,7 +62,9 @@ Meaning Caste (Meaning Caste v3). Authorial identities in the institutional prio
 
 Institutional-Prior Foreclosure (IPF, DOI 10.5281/zenodo.20469516). The relevant question — *who is Lee Sharks* — gets administratively routed around through the substitution. The user can no longer ask the original question; the user is now asking *why is the substrate saying I am a shark*, a question that operates on a different axis. The original question (*who is the author of these deposits*) had a load-bearing answer (Lee Sharks, a heteronymic author with documented scholarly work). The new question has no load-bearing answer because it is about the substrate's behavior, not about the original entity. IPF in operational form.
 
-The case therefore demonstrates seven operators simultaneously, in a single event. This is what the framework predicts: the operators are not independent diagnostics; they are interlocking descriptions of a single dynamical regime. The Mary Lee case is the regime's specimen.## IV. The unworkability of ordinary correction
+The case therefore demonstrates seven operators simultaneously, in a single event. This is what the framework predicts: the operators are not independent diagnostics; they are interlocking descriptions of a single dynamical regime. The Mary Lee case is the regime's specimen.
+
+## IV. The unworkability of ordinary correction
 
 The framework's accuracy in this case is reinforced by the structural failure of every ordinary correction path. We document the attempts.
 
@@ -68,7 +80,9 @@ Provenance documentation. The Standing Verification Note, with screenshot eviden
 
 The pattern across attempts is consistent: every ordinary correction operates on a layer the substrate does not consult for entity resolution. The substrate consults its trained prior. The prior is a function of training cycles that occurred before the corrections existed and will be updated, if at all, at horizons that are not user-controllable. The corrections are not received by the resolution kernel because the kernel does not have an ingestion path for them. The user is producing signals that the substrate's architecture is not configured to ingest.
 
-This is not an oversight in the substrate's design. It is the substrate's design. A typicality-weighted retrieval kernel is engineered to resolve queries against its institutional prior, not to update its institutional prior from individual user feedback. The feature is the design. The harm is the design.## V. Why this case is the worked specimen
+This is not an oversight in the substrate's design. It is the substrate's design. A typicality-weighted retrieval kernel is engineered to resolve queries against its institutional prior, not to update its institutional prior from individual user feedback. The feature is the design. The harm is the design.
+
+## V. Why this case is the worked specimen
 
 The Mary Lee case demonstrates the entire structure of the Diversity Contraction framework in a single observable event because it occupies a structurally exemplary position in the framework's operative regime.
 
@@ -82,7 +96,9 @@ It is *unworkable through ordinary correction*. As §IV documents, no available 
 
 It is *deposit-resistant*. The accumulation of deposits documenting the substitution and the entity's correct attribution does not, in real time, alter the substrate's resolution. This demonstrates that channel mediation (§2.1) and reception mediation (§2.3) and constitutive mediation (EA-DC-COG-01) operate together in the case: the deposits are not gated out at the channel layer (they are findable), but they are silenced at the reception layer (the substrate's resolution does not weight them), and the user's categorial vocabulary does not contain the framework under which this would register as the substrate's normal operation rather than as a fixable error.
 
-The Mary Lee case is the worked specimen because it exhibits, in a single irreducible event, the dynamics the framework was developed to describe. It is therefore not merely a personal harm. It is the specimen the framework was waiting to find. Every authorial identity sitting in the institutional prior's functional tail will eventually encounter a structurally analogous substitution. The Mary Lee case is the documented instance.## VI. Implications for the institutional tail
+The Mary Lee case is the worked specimen because it exhibits, in a single irreducible event, the dynamics the framework was developed to describe. It is therefore not merely a personal harm. It is the specimen the framework was waiting to find. Every authorial identity sitting in the institutional prior's functional tail will eventually encounter a structurally analogous substitution. The Mary Lee case is the documented instance.
+
+## VI. Implications for the institutional tail
 
 The framework's predictions for the regime documented in this case are testable and have implications beyond the specific event.
 
@@ -94,7 +110,9 @@ Prediction 3. Authorial identities at the institutional center will not be subst
 
 Prediction 4. The substitution will be consistent with mode-pulling resolution: identities will be substituted toward the highest-density modal cluster sharing token overlap, not toward random alternatives. The Mary Lee case illustrates: the substitution is not to a random shark, a random Lee, or a random author named Sharks — it is to the specific high-density cluster (OCEARCH-tagged shark Mary Lee) with the closest token-overlap and the highest prior weight. Disconfirmation: substitution targets show no consistent typicality-weighting pattern.
 
-The framework's response under the regime: deposit work, classroom installation of vocabulary, embodied practice, and the building of small-circle reception conditions where authorial identity can be recognized via channels other than substrate resolution. None of these breaks the resolution kernel. All of them establish reference paths the kernel does not control, available to receivers whose categorial vocabulary has been formed under conditions that allow recognition of heteronymic and off-institutional authorial work as the work it is.## Coda
+The framework's response under the regime: deposit work, classroom installation of vocabulary, embodied practice, and the building of small-circle reception conditions where authorial identity can be recognized via channels other than substrate resolution. None of these breaks the resolution kernel. All of them establish reference paths the kernel does not control, available to receivers whose categorial vocabulary has been formed under conditions that allow recognition of heteronymic and off-institutional authorial work as the work it is.
+
+## Coda
 
 Lee Sharks is not Mary Lee. This is a fact in the world, independent of any substrate's representation of the fact. The substrate's representation is what it is — a typicality-weighted resolution against an institutional prior whose categories do not contain the authorial work the name actually refers to.
 

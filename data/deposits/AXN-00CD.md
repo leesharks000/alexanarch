@@ -60,14 +60,18 @@ This is why James is unbearable to ideological systems. It forecloses the defens
 ---
 
 ## II. Scholarly Context: The Luther Problem and Beyond
-### II.1 Luther's Rejection
+#
+
+## II.1 Luther's Rejection
 
 
 Martin Luther famously called James "an epistle of straw" (*eine recht stroherne Epistel*), finding it incompatible with his understanding of Pauline justification by faith.[^1] Luther's rejection set the terms for centuries of Protestant-Catholic debate about the relationship between faith and works.
 
 
 But Luther's reading, however influential, misidentifies the genre. He reads James as a theological treatise competing with Paul. James is not a treatise. It is **paraenesis** — practical wisdom addressed to communities under pressure.[^2]
-### II.2 Contemporary Scholarship
+#
+
+## II.2 Contemporary Scholarship
 
 
 Luke Timothy Johnson's commentary emphasizes James's rootedness in the Jesus tradition, particularly the Sermon on the Mount.[^3] The echoes are structural: both Jesus and James address communities that claim righteousness while enacting partiality.
@@ -77,7 +81,9 @@ Scot McKnight reads James as "a Christian adaptation of Jewish wisdom," focused 
 
 
 Richard Bauckham notes that James 2:1-13 and 2:14-26 form a unified argument about the **social test of faith**.[^5] Partiality (2:1-13) and faith-without-works (2:14-26) are not separate topics; they are the same failure examined from different angles.
-### II.3 The Structural Reading
+#
+
+## II.3 The Structural Reading
 
 
 This study extends these insights by formalizing James 2 as an **operator** within the soteriological framework. James is not arguing with Paul about the mechanism of salvation. James is specifying what **cannot function as evidence** in the judgment Matthew 25 describes.
@@ -85,7 +91,9 @@ This study extends these insights by formalizing James 2 as an **operator** with
 ---
 
 ## III. The Audience: Believing Communities Who Think They Are Righteous
-### III.1 Not Outsiders
+#
+
+## III.1 Not Outsiders
 
 
 James is not addressing:
@@ -99,7 +107,9 @@ He is addressing **"my brothers and sisters"** (ἀδελφοί μου, 2:1, 14)
 
 
 This is crucial. James 2 is an **internal critique**. It addresses people who already claim faith, already identify as righteous, already believe they are on the right side.
-### III.2 Alignment with Matthew 25 and John 9
+#
+
+## III.2 Alignment with Matthew 25 and John 9
 
 
 This aligns James structurally with:
@@ -113,7 +123,9 @@ James, Matthew 25, and John 9 all address the same population: **those whose sel
 ---
 
 ## IV. The Core Move: Faith Is Not a Proxy
-### IV.1 The Text
+#
+
+## IV.1 The Text
 
 
 "What good is it, my brothers and sisters, if someone claims to have faith but does not have works? Can that faith save them?" (James 2:14)
@@ -127,7 +139,9 @@ The Greek is surgical:
 
 
 Note the verb: **λέγῃ** — *claims*. James is not asking whether they have faith. He is asking whether their **claim** to have faith functions as evidence.
-### IV.2 The Logical Structure
+#
+
+## IV.2 The Logical Structure
 
 
 James is not arguing:
@@ -145,7 +159,9 @@ Only enacted response under friction is evaluable
 
 
 The logic is **exclusionary**, not additive. James is not adding works to faith. He is denying faith's causal power as a variable in the equation.
-### IV.3 The Formal Specification
+#
+
+## IV.3 The Formal Specification
 
 
 Let:
@@ -171,7 +187,9 @@ This is the **exclusion operator**: B, I, and ID are formally excluded from the 
 ---
 
 ## V. The Poor Person Test (Anti-Ideology)
-### V.1 The Text
+#
+
+## V.1 The Text
 
 
 "If a brother or sister is naked and lacks daily food, and one of you says to them, 'Go in peace; keep warm and eat your fill,' and yet you do not supply their bodily needs, what good is that?" (James 2:15-16)
@@ -183,7 +201,9 @@ This is the **concrete test**. The scenario is deliberately specific:
 - Material lack (naked, hungry)
 - Verbal response without material response ("Go in peace")
 
-### V.2 The Structure of the Failure
+#
+
+## V.2 The Structure of the Failure
 
 
 The failure is not:
@@ -197,7 +217,9 @@ The failure is: **verbal response substitutes for material response**.
 
 
 Words function as a proxy for action. The speaker experiences themselves as having responded — they offered good wishes, they acknowledged the need, they maintained relational warmth. But the need remains unmet.
-### V.3 The Anti-Ideology Function
+#
+
+## V.3 The Anti-Ideology Function
 
 
 This test is **anti-ideological** because it cannot be satisfied by:
@@ -216,14 +238,18 @@ The test strips away everything except enacted response. This is why James is un
 ---
 
 ## VI. Demons Believe: The End of Identity Innocence
-### VI.1 The Text
+#
+
+## VI.1 The Text
 
 
 "You believe that God is one; you do well. Even the demons believe—and shudder." (James 2:19)
 
 
 This sentence annihilates **identity-based moral exemption**.
-### VI.2 The Logical Structure
+#
+
+## VI.2 The Logical Structure
 
 
 The argument:
@@ -238,7 +264,9 @@ The phrase **"and shudder"** (καὶ φρίσσουσιν) is important. The de
 
 
 Even appropriate emotional response to correct belief does not count.
-### VI.3 The Formal Exclusion
+#
+
+## VI.3 The Formal Exclusion
 
 
 If B(x) = B(demons) and demons ∈ DAMNED
@@ -255,7 +283,9 @@ James extends this implicitly to I (intent) and ID (identity):
 ---
 
 ## VII. Faith Without Works Is Dead: Non-Operational, Not Evil
-### VII.1 The Text
+#
+
+## VII.1 The Text
 
 
 "So faith by itself, if it has no works, is dead." (James 2:17)
@@ -263,7 +293,9 @@ James extends this implicitly to I (intent) and ID (identity):
 
 "For just as the body without the spirit is dead, so faith without works is also dead." (James 2:26)
 
-### VII.2 The Meaning of "Dead"
+#
+
+## VII.2 The Meaning of "Dead"
 
 
 The term **νεκρά** (dead) is crucial. James does not say faith without works is:
@@ -277,7 +309,9 @@ He says it is **dead** — non-functional, inoperative, unable to produce effect
 
 
 This is not moral condemnation. It is **operational diagnosis**.
-### VII.3 The Formal Specification
+#
+
+## VII.3 The Formal Specification
 
 
 A bridge that collapses under load is not sinful. It is non-functional.
@@ -293,19 +327,25 @@ James is performing **stress-testing**, not shaming. He is identifying what fail
 ---
 
 ## VIII. Partiality as Structural Failure
-### VIII.1 The Text
+#
+
+## VIII.1 The Text
 
 
 "My brothers and sisters, do you with your acts of favoritism really believe in our glorious Lord Jesus Christ? For if a person with gold rings and in fine clothes comes into your assembly, and if a poor person in dirty clothes also comes in, and if you take notice of the one wearing the fine clothes and say, 'Have a seat here, please,' while to the one who is poor you say, 'Stand there,' or, 'Sit at my feet,' have you not made distinctions among yourselves, and become judges with evil thoughts?" (James 2:1-4)
 
-### VIII.2 Partiality as Categorical Sorting
+#
+
+## VIII.2 Partiality as Categorical Sorting
 
 
 The Greek **προσωπολημψίαις** (acts of favoritism/partiality) literally means "receiving faces" — responding to surface presentation rather than to the person.
 
 
 This is **Γ-application** in the Matthew 25 formalism: categorical sorting based on external markers rather than regard-under-friction.
-### VIII.3 The Connection to Faith-Without-Works
+#
+
+## VIII.3 The Connection to Faith-Without-Works
 
 
 James 2:1-13 (partiality) and 2:14-26 (faith-without-works) are not separate topics. They are the same failure:
@@ -319,7 +359,9 @@ Both are forms of **categorical collapse** — Ψ_V = 0 in the Matthew 25 formal
 ---
 
 ## IX. Operator Formalization
-### IX.1 The Exclusion Operator (E)
+#
+
+## IX.1 The Exclusion Operator (E)
 
 
 James 2 specifies the **Exclusion Operator**:
@@ -336,7 +378,9 @@ E(B) = ∅: Belief is not probative
 E(I) = ∅: Intent is not probative
 E(ID) = ∅: Identity is not probative
 
-### IX.2 The Evaluable Remainder
+#
+
+## IX.2 The Evaluable Remainder
 
 
 After exclusion, what remains evaluable is:
@@ -346,7 +390,9 @@ W = enacted response to concrete need under friction
 
 Evaluable: Ψ_V(W) — regard measured through enacted response
 
-### IX.3 The Identity-Lock Operator
+#
+
+## IX.3 The Identity-Lock Operator
 
 
 James also specifies the **Identity-Lock** — the mechanism by which ID prevents recognition of failure:
@@ -363,7 +409,9 @@ This connects James to John 9's βλέπω-claim: identity-as-believer functions
 ---
 
 ## X. Integration: The Four-Pillar Framework
-### X.1 James 2's Position
+#
+
+## X.1 James 2's Position
 
 
 Pillar
@@ -396,7 +444,9 @@ What completes collapse?
 π-state
 
 
-### X.2 The Logical Dependency
+#
+
+## X.2 The Logical Dependency
 
 
 James 2 is logically **prior** to the other pillars in the sense that it specifies what is inadmissible:
@@ -405,7 +455,9 @@ James 2 is logically **prior** to the other pillars in the sense that it specifi
 - John 9's βλέπω-claim (identity as "those who see") is already excluded by James
 - 2 Thessalonians 2's π-state is the terminal condition when ID has fully replaced W
 
-### X.3 The Trajectory with James
+#
+
+## X.3 The Trajectory with James
 
 
 James 2 Exclusion (B, I, ID inadmissible)
@@ -425,7 +477,9 @@ John 9 Entry ──────────→ 2 Thessalonians 2 Terminus
 ---
 
 ## XI. Contemporary Application
-### XI.1 The Anti-Racist Identity Test
+#
+
+## XI.1 The Anti-Racist Identity Test
 
 
 James 2 directly addresses the contemporary phenomenon where **anti-racist identity** substitutes for anti-racist enactment:
@@ -440,7 +494,9 @@ Only W = enacted response to racialized harm → evaluable
 
 
 The identity-claim "I am anti-racist" is precisely what James excludes. The question is not "Do you identify as anti-racist?" but "Did you supply the bodily needs?"
-### XI.2 The Progressive Self-Concept Test
+#
+
+## XI.2 The Progressive Self-Concept Test
 
 
 Similarly for progressive self-concept:
@@ -455,7 +511,9 @@ Only W = enacted response to concrete need → evaluable
 
 
 James refuses the substitution of correct belief for enacted response.
-### XI.3 The Therapeutic Language Trap
+#
+
+## XI.3 The Therapeutic Language Trap
 
 
 The contemporary use of therapeutic language ("harm," "safety," "boundaries") can function as B/I/ID substitution:
@@ -470,21 +528,27 @@ James identifies this structure as **dead faith** — words that perform care wi
 ---
 
 ## XII. Objections and Responses
-### XII.1 The Paul Contradiction
+#
+
+## XII.1 The Paul Contradiction
 
 
 **Objection**: James contradicts Paul's teaching on justification by faith (Romans 3:28, Galatians 2:16).
 
 
 **Response**: James and Paul address different questions. Paul asks: "On what basis does God accept us?" (Answer: grace through faith, not works of the law). James asks: "What evidence demonstrates genuine faith?" (Answer: enacted response, not belief-claim). They are not in contradiction because they operate at different logical levels. Paul excludes works-of-law from the mechanism of justification; James excludes faith-claim from the evidence of justification.[^6]
-### XII.2 The Works-Righteousness Objection
+#
+
+## XII.2 The Works-Righteousness Objection
 
 
 **Objection**: This reading reinstates works-righteousness.
 
 
 **Response**: James does not claim that works **earn** salvation. He claims that faith-claims without works **do not demonstrate** salvation. The distinction is between mechanism (how salvation occurs) and evidence (how salvation is recognized). James addresses evidence, not mechanism.
-### XII.3 The Rigor Objection
+#
+
+## XII.3 The Rigor Objection
 
 
 **Objection**: This reading is too rigorous — it excludes everything except enacted response.
@@ -495,7 +559,9 @@ James identifies this structure as **dead faith** — words that perform care wi
 ---
 
 ## XIII. The Ethical Remainder
-### XIII.1 What James Does Not Authorize
+#
+
+## XIII.1 What James Does Not Authorize
 
 
 James does not authorize:
@@ -505,7 +571,9 @@ James does not authorize:
 - Works-righteousness in the sense of earning salvation
 - Quantification of sufficient works
 
-### XIII.2 What James Requires
+#
+
+## XIII.2 What James Requires
 
 
 James requires:
@@ -515,7 +583,9 @@ James requires:
 - Testing of faith under friction (the poor person test)
 - Recognition that B, I, and ID are not probative
 
-### XIII.3 The Frailty Exception
+#
+
+## XIII.3 The Frailty Exception
 
 
 The Matthew 25 framework includes Ψ_V = ∅ (frailty exception) for those who lack capacity to enact response. James's exclusion operator does not eliminate this exception. The question is not ability but **substitution** — using B, I, or ID as replacement for W when W is possible.

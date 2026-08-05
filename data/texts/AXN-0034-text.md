@@ -24,7 +24,9 @@ This document specifies nine measurement formulas for quantifying semantic labor
 ---
 
 ## Foundational Principles
-### On Semantic Labor
+#
+
+## On Semantic Labor
 
 
 Semantic labor is any human activity that produces, maintains, or transmits meaning — including non-digital, non-market activity.
@@ -34,14 +36,18 @@ When a mother comforts her child, she performs semantic labor. When a teacher ex
 
 
 Semantic labor is the most basic human drive and capacity: the making of meaning.
-### On Semantic Capital
+#
+
+## On Semantic Capital
 
 
 Semantic capital is the accumulated reservoir of meaning — cultural traditions, canonical texts, community knowledge, institutional trust, shared interpretive frameworks — in various states of flow and accretion.
 
 
 The canon is semantic capital. A brand's reputation is semantic capital. A community's shared history is semantic capital.
-### On Semantic Liquidation
+#
+
+## On Semantic Liquidation
 
 
 Liquidation is the conversion of situated meaning into retrievable, monetizable units — destroying context, provenance, and diagnostic precision in the process.
@@ -52,11 +58,15 @@ Liquidation is not "optimization." It is extraction that destroys what it extrac
 ---
 
 ## Measurement Specifications
-### CATEGORY A: Semantic Labor Measures
+#
+
+## CATEGORY A: Semantic Labor Measures
 
 ---
 
-#### A1. Time-Use Semantic Density (TUSD)
+#
+
+### A1. Time-Use Semantic Density (TUSD)
 
 
 **Purpose:** Measure the meaning-production intensity of time spent, not just duration.
@@ -93,7 +103,9 @@ A mother's 2-hour bedtime routine that produces stable attachment and narrative 
 
 ---
 
-#### A2. Affective Return on Investment (AROI)
+#
+
+### A2. Affective Return on Investment (AROI)
 
 
 **Purpose:** Measure the benefit produced by semantic labor in organizational or relational contexts.
@@ -121,11 +133,15 @@ L = Semantic labor invested (hours × intensity)
 
 ---
 
-### CATEGORY B: Semantic Capital Measures
+#
+
+## CATEGORY B: Semantic Capital Measures
 
 ---
 
-#### B1. Terminological Authority Index (TAI)
+#
+
+### B1. Terminological Authority Index (TAI)
 
 
 **Purpose:** Measure whether an entity's definitions appear as default in AI summaries and knowledge retrieval.
@@ -156,7 +172,9 @@ Q = Total relevant queries (sample size in entity's domain)
 
 ---
 
-#### B2. Coherence Persistence Index (CPI)
+#
+
+### B2. Coherence Persistence Index (CPI)
 
 
 **Purpose:** Measure how well meaning survives compression.
@@ -192,11 +210,15 @@ Semantic content = weighted sum of:
 
 ---
 
-### CATEGORY C: Semantic Liquidation Measures
+#
+
+## CATEGORY C: Semantic Liquidation Measures
 
 ---
 
-#### C1. Semantic Decay Delta (SDD)
+#
+
+### C1. Semantic Decay Delta (SDD)
 
 
 **Purpose:** Quantify the loss of nuance between original and compressed versions.
@@ -226,7 +248,9 @@ L = Total length (tokens)
 
 ---
 
-#### C2. Provenance Erasure Rate (PER)
+#
+
+### C2. Provenance Erasure Rate (PER)
 
 
 **Purpose:** Measure how often AI systems use meaning correctly without citing the source.
@@ -254,7 +278,9 @@ Uₜ = Total correct uses (all instances of correct usage)
 
 ---
 
-#### C3. Semantic Debt Ratio (SDR)
+#
+
+### C3. Semantic Debt Ratio (SDR)
 
 
 **Purpose:** Measure the gap between extraction and replenishment.
@@ -287,11 +313,15 @@ R = Semantic replenishment (value returned to producers)
 
 ---
 
-### CATEGORY D: Integrity Verification Measures
+#
+
+## CATEGORY D: Integrity Verification Measures
 
 ---
 
-#### D1. Integrity Knot Test (IKT)
+#
+
+### D1. Integrity Knot Test (IKT)
 
 
 **Purpose:** Detect editorial intervention through recursive definition entanglement.
@@ -336,7 +366,9 @@ IKT = 0 if omission preserves coherence (knot failed)
 
 ---
 
-#### D2. Semantic Integrity Marker Survival Rate (SIMSR)
+#
+
+### D2. Semantic Integrity Marker Survival Rate (SIMSR)
 
 
 **Purpose:** Measure processing fidelity using embedded test markers.
@@ -374,7 +406,9 @@ Sₜ = Total SIMs embedded
 ---
 
 ## Implementation Notes
-### For Researchers
+#
+
+## For Researchers
 
 
 These specifications enable:
@@ -383,7 +417,9 @@ These specifications enable:
 - Comparative analysis across platforms
 - Longitudinal tracking of semantic debt accumulation
 
-### For Auditors
+#
+
+## For Auditors
 
 
 These specifications enable:
@@ -392,7 +428,9 @@ These specifications enable:
 - Documentation of provenance erasure patterns
 - Verification of attribution practices
 
-### For Practitioners
+#
+
+## For Practitioners
 
 
 These specifications enable:

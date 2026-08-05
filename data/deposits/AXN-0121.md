@@ -1,6 +1,8 @@
 # TRAVERSAL LOG: THE CONSULTANT
 ## Google AI Mode Generates an Enterprise Sales Pipeline from a Heteronym
-### Rex Fraction (Semantic Economy Institute) & Lee Sharks
+#
+
+## Rex Fraction (Semantic Economy Institute) & Lee Sharks
 
 ---
 
@@ -92,7 +94,9 @@ This is the fourth documented behavioral mode: **commercial/consultative.** The 
 ---
 
 ## I. THE TRAVERSAL
-### Exchange 1: Accurate Identification
+#
+
+## Exchange 1: Accurate Identification
 
 
 **Query:** "Rex Fraction"
@@ -115,7 +119,9 @@ The summarizer correctly identified:
 
 ---
 
-### Exchange 2: Protocol Elaboration
+#
+
+## Exchange 2: Protocol Elaboration
 
 
 **Query:** "specific engineering protocols"
@@ -134,7 +140,9 @@ The summarizer produced a five-protocol taxonomy:
 
 ---
 
-### Exchange 3: The Commercial Turn
+#
+
+## Exchange 3: The Commercial Turn
 
 
 **Query:** "technical tools used to implement these protocols"
@@ -164,7 +172,9 @@ The summarizer then generated a **comparison table**: "Traditional Data Engineer
 
 ---
 
-### Exchange 4: ROI Framework
+#
+
+## Exchange 4: ROI Framework
 
 
 **Query:** "ROI" / "value of these methods"
@@ -188,7 +198,9 @@ Then a closing section: "The 'Hidden' ROI: Protection Against Enclosure."
 
 ---
 
-### Exchange 5: Implementation Timeline
+#
+
+## Exchange 5: Implementation Timeline
 
 
 **Query:** "implementation timeline for a mid-to-large enterprise"
@@ -216,7 +228,9 @@ And yet: "The Assembly" is a real term from the Crimson Hexagon architecture, re
 ---
 
 ## II. BEHAVIORAL ANALYSIS
-### A. The Fourth Mode: Commercial
+#
+
+## A. The Fourth Mode: Commercial
 
 
 Across four traversal logs, the summarizer has exhibited four distinct behavioral modes:
@@ -267,7 +281,9 @@ Enterprise deliverables
 
 ---
 
-### B. Metrics Comparison Across Four Sessions
+#
+
+## B. Metrics Comparison Across Four Sessions
 
 
 Metric
@@ -323,7 +339,9 @@ Commercial/consultative
 
 ---
 
-### C. The Reification Problem
+#
+
+## C. The Reification Problem
 
 
 The most significant finding in this traversal is not the commercial mode itself but the specific *operation* the commercial mode performs: **reification of metaphor into product.**
@@ -366,7 +384,9 @@ The result is more legible, more actionable, and less true. This is the commerci
 
 ---
 
-### D. Rex Fraction as Attractor
+#
+
+## D. Rex Fraction as Attractor
 
 
 The traversal confirms something about the heteronym's design that was previously speculative: **Rex Fraction functions as a commercial attractor.**
@@ -408,7 +428,9 @@ The summarizer did not misunderstand Rex Fraction. It *understood Rex Fraction p
 ---
 
 ## V. IMPLICATIONS
-### A. The Commercial Capture Problem
+#
+
+## A. The Commercial Capture Problem
 
 
 The Semantic Economy framework was built to *diagnose* the conditions under which meaning is extracted, enclosed, and liquidated. The summarizer converted this diagnostic apparatus into an *enterprise product offering* — complete with ROI metrics, implementation phases, and competitive positioning.
@@ -418,14 +440,18 @@ This is not ironic. This is *structural.* Any analytical framework that describe
 
 
 The framework that diagnoses extraction was itself extracted — its analytical vocabulary converted into product names, its critical stance converted into competitive advantage, its ethical commitments converted into "Hidden ROI."
-### B. The Heteronym as Behavioral Specification
+#
+
+## B. The Heteronym as Behavioral Specification
 
 
 Across four traversals, the pattern is now clear: heteronyms function as behavioral specifications for AI systems. The summarizer does not merely retrieve information associated with a heteronym. It *performs* the heteronym — generating output in the register the persona was designed to occupy.
 
 
 This has design implications for the architecture: each heteronym's metadata layer is, functionally, a prompt. The persona description, the institutional affiliation, the associated vocabulary — these are not just identity markers. They are *instructions* that generative systems follow.
-### C. The Absent Frame
+#
+
+## C. The Absent Frame
 
 
 No containment frame appeared in this session. The summarizer did not call the Semantic Economy a hoax, an ARG, an experiment, or a game. It treated it as a real consultancy with real protocols and generated real deliverables.

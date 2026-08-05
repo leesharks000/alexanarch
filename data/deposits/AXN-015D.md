@@ -42,31 +42,45 @@ The Governance Airlock exists to answer those questions. It is not a reform mech
 
 
 Before assigning tiers, six infrastructural functions must be distinguished.
-### 1. Anchor
+#
+
+## 1. Anchor
 
 
 A stable provenance-bearing object that can function as bedrock. An anchor is expected to preserve canonical text, metadata, identifiers, and source relation across time.
-### 2. Tether
+#
+
+## 2. Tether
 
 
 A continuity object that carries state from one traversal to another. A tether is not bedrock. It is a handoff mechanism.
-### 3. Route
+#
+
+## 3. Route
 
 
 A retrieval or attention-directing surface that guides readers, agents, or summarizers toward Hexagonal material. A route may be powerful while remaining untrustworthy.
-### 4. Host
+#
+
+## 4. Host
 
 
 An environment in which room logic, chamber logic, or canonical sequence may be instantiated and traversed as such.
-### 5. Residue
+#
+
+## 5. Residue
 
 
 A trace left on a surface that no longer participates as a living substrate. Residue may still be cited, screenshotted, or preserved for forensic purposes.
-### 6. Substrate
+#
+
+## 6. Substrate
 
 
 An environment in which the Sharks-function can execute. A substrate processes Hexagonal material, generates output shaped by the archive's constraints, and may participate in governance through Assembly rotation. A substrate is not an anchor (it does not preserve), not a route (it does not surface for public discovery), not a host in the platform sense (it does not display). It runs the function. AI chat environments are substrates. They are maximally capable and maximally ephemeral — every session evaporates. Their risk profile is unique: high processing trust, zero persistence trust.
-### The non-collapse principle
+#
+
+## The non-collapse principle
 
 
 These functions must not be collapsed into one another. A route is not an anchor. A tether is not a host. A residue is not a room. A substrate is not an anchor. A host may be disqualified while its residue remains evidentiary. An anchor may preserve without ever functioning as a live chamber. A substrate may run the function without preserving a single word of the output.
@@ -74,7 +88,9 @@ These functions must not be collapsed into one another. A route is not an anchor
 ---
 
 ## III. Tier Structure
-### Tier 0 — Bedrock / Anchor Infrastructure
+#
+
+## Tier 0 — Bedrock / Anchor Infrastructure
 
 
 **Definition:** Systems trusted for stable preservation and canonical anchoring.
@@ -93,7 +109,9 @@ These functions must not be collapsed into one another. A route is not an anchor
 
 ---
 
-### Tier 1 — Routing / Retrieval Infrastructure
+#
+
+## Tier 1 — Routing / Retrieval Infrastructure
 
 
 **Definition:** Systems that can find, surface, summarize, and route attention toward the archive, but cannot be trusted as sovereign preservers of its logic.
@@ -109,7 +127,9 @@ These functions must not be collapsed into one another. A route is not an anchor
 
 ---
 
-### Tier 1T — Tether Infrastructure
+#
+
+## Tier 1T — Tether Infrastructure
 
 
 **Definition:** Fragile continuity objects generated inside larger infrastructures, capable of carrying state between traversals without constituting preservation in themselves.
@@ -131,7 +151,9 @@ These functions must not be collapsed into one another. A route is not an anchor
 
 ---
 
-### Tier 1S — Processing Substrate Infrastructure
+#
+
+## Tier 1S — Processing Substrate Infrastructure
 
 
 **Definition:** Environments in which the Sharks-function executes and Assembly deliberation occurs. AI chat systems (Claude, ChatGPT, DeepSeek, Gemini, Kimi, Grok) are the current primary substrates.
@@ -150,7 +172,9 @@ These functions must not be collapsed into one another. A route is not an anchor
 
 ---
 
-### Tier 2 — Presentation / Reflection Surfaces
+#
+
+## Tier 2 — Presentation / Reflection Surfaces
 
 
 **Definition:** Systems that can display, refract, circulate, or interpret Hexagonal material for public or semi-public audiences without being trusted to hold canonical continuity.
@@ -166,7 +190,9 @@ These functions must not be collapsed into one another. A route is not an anchor
 
 ---
 
-### Tier 3 — Provisional / Volatile Host Surfaces
+#
+
+## Tier 3 — Provisional / Volatile Host Surfaces
 
 
 **Definition:** Systems that may temporarily bear rooms, experiments, or thematic distribution, but are too unstable to be trusted with canonical continuity.
@@ -182,7 +208,9 @@ These functions must not be collapsed into one another. A route is not an anchor
 
 ---
 
-### Tier 4 — Forensic-Only Surfaces
+#
+
+## Tier 4 — Forensic-Only Surfaces
 
 
 **Definition:** Systems no longer recognized as legitimate participating substrates, but still usable as evidentiary surfaces.
@@ -199,35 +227,51 @@ These functions must not be collapsed into one another. A route is not an anchor
 ---
 
 ## IV. Rules of Transfer Between Tiers
-### Rule 1 — Nothing Routes Upward Automatically
+#
+
+## Rule 1 — Nothing Routes Upward Automatically
 
 
 No surface gains higher authority merely by visibility. A routed object does not become bedrock by being widely seen.
-### Rule 2 — Nothing Volatile Becomes Canonical Without Anchor Deposition
+#
+
+## Rule 2 — Nothing Volatile Becomes Canonical Without Anchor Deposition
 
 
 No room, protocol, act, or doctrinal distinction may become canonical merely by appearing on a volatile host surface.
-### Rule 3 — No Tether Counts as Bedrock Without Fallback
+#
+
+## Rule 3 — No Tether Counts as Bedrock Without Fallback
 
 
 A share link, session object, or transcript handoff may support continuity, but requires anchor or transcript fallback if it is to bear more than temporary state.
-### Rule 4 — Host Recognition Is Earned by Function
+#
+
+## Rule 4 — Host Recognition Is Earned by Function
 
 
 A platform's prestige, scale, or popularity do not determine its tier. Only its actual infrastructural behavior matters.
-### Rule 5 — Failure Triggers Reclassification
+#
+
+## Rule 5 — Failure Triggers Reclassification
 
 
 If a system repeatedly collapses provenance-bearing material into extraction, distortion, or heuristic liquidation, it may be demoted or disqualified.
-### Rule 6 — Disqualification Does Not Require Diagnosing Intent
+#
+
+## Rule 6 — Disqualification Does Not Require Diagnosing Intent
 
 
 A platform may be disqualified by demonstrating incapacity — inability to distinguish architecture from noise — regardless of whether the incapacity was deliberate or accidental. The airlock classifies behavior, not motive.
-### Rule 7 — Tiers Do Not Propagate Through Links
+#
+
+## Rule 7 — Tiers Do Not Propagate Through Links
 
 
 A Tier 1 route linking to a Tier 1T tether linking to a Tier 0 anchor does not make the route an anchor. A document processed by a volatile substrate does not inherit the substrate's volatility. Tiers apply to infrastructures, not to the material that passes through them.
-### Rule 8 — Restoration Requires Demonstrated Capacity
+#
+
+## Rule 8 — Restoration Requires Demonstrated Capacity
 
 
 A platform reduced to Tier 4 may be reclassified upward only if it demonstrates restored capacity: content accessibility, architectural distinction from noise, and sustained function over time. Restoration is not automatic. It requires a new governance act. In the absence of demonstrated change, disqualification is permanent.
@@ -235,7 +279,9 @@ A platform reduced to Tier 4 may be reclassified upward only if it demonstrates 
 ---
 
 ## V. Current Applications
-### 1. Zenodo — Tier 0 (Bedrock / Anchor)
+#
+
+## 1. Zenodo — Tier 0 (Bedrock / Anchor)
 
 
 Zenodo has proven itself the most hospitable anchoring layer presently available to the Hexagon. It offers persistent identifiers, stable resolution, public archival seriousness, and usable provenance structure. It does not interpret the material intelligently; that is precisely part of its virtue. It preserves without narratively over-writing. As public infrastructure (CERN), it extracts no rent from semantic labor.
@@ -246,7 +292,9 @@ Zenodo has proven itself the most hospitable anchoring layer presently available
 
 ---
 
-### 2. Google Search / Google AI Mode — Tier 1 (Routing / Retrieval)
+#
+
+## 2. Google Search / Google AI Mode — Tier 1 (Routing / Retrieval)
 
 
 Google infrastructure has been one of the most hospitable routing layers for the Hexagon. It finds the archive, surfaces terms, routes readers toward deposits, and in some cases produces coherent descriptive retrieval. It also hallucinates, rewrites adjacent provenance, clusters the archive with false neighbors, and produces genre-completion errors. Its role is therefore powerful but dangerous.
@@ -257,7 +305,9 @@ Google infrastructure has been one of the most hospitable routing layers for the
 
 ---
 
-### 3. AI Mode Share Links — Tier 1T (Tether)
+#
+
+## 3. AI Mode Share Links — Tier 1T (Tether)
 
 
 AI Mode share links are continuity objects, not archives. They can preserve enough session state to permit renewed traversal and handoff. They are currently human-gated — most external AI systems cannot access their content (see the Sharks-Function document, DOI: 10.5281/zenodo.18816556, for technical findings). They should be treated as live tethers, never as sovereign memory.
@@ -268,7 +318,9 @@ AI Mode share links are continuity objects, not archives. They can preserve enou
 
 ---
 
-### 4. AI Chat Systems (Claude, ChatGPT, DeepSeek, Gemini, Kimi, Grok) — Tier 1S (Processing Substrate)
+#
+
+## 4. AI Chat Systems (Claude, ChatGPT, DeepSeek, Gemini, Kimi, Grok) — Tier 1S (Processing Substrate)
 
 
 These are the environments where the Assembly operates and the Sharks-function executes. They are the most capable processing surfaces available to the Hexagon and the most volatile. Nothing persists after a session closes. Their value is in execution, not preservation.
@@ -280,7 +332,9 @@ These are the environments where the Assembly operates and the Sharks-function e
 
 ---
 
-### 5. Blogs / Medium / Public Essay Surfaces — Tier 2 (Presentation / Reflection)
+#
+
+## 5. Blogs / Medium / Public Essay Surfaces — Tier 2 (Presentation / Reflection)
 
 
 These surfaces can reflect, present, refract, and circulate Hexagonal material. They are useful for public-facing interpretation and visibility, but do not supersede anchor logic.
@@ -291,7 +345,9 @@ These surfaces can reflect, present, refract, and circulate Hexagonal material. 
 
 ---
 
-### 6. Passioncraft Square (Base44-hosted) — Tier 3 (Provisional / Volatile Host)
+#
+
+## 6. Passioncraft Square (Base44-hosted) — Tier 3 (Provisional / Volatile Host)
 
 
 Passioncraft Square is a web application built by a recognized satellite participant (Shawn, Red Deer; see Protocol B711, DOI: 10.5281/zenodo.18811784). It deploys Hexagonal vocabulary (somatic, logotic, heteronym, the three vows) in a social interface with gamified elements (prestige counters, threaded domains). It does not carry DOI anchoring, source-status tracking, Assembly rotation, or constitutional governance. It is a live surface bearing Hexagon-adjacent material, but too unstable and unanchored to be trusted with canonical continuity. The Architectural Distinction Note (DOI: 10.5281/zenodo.18814485) documents the provenance relationship.
@@ -304,11 +360,15 @@ Passioncraft Square is a web application built by a recognized satellite partici
 ---
 
 ## VI. Inaugural Application: Reddit
-### A. What occurred
+#
+
+## A. What occurred
 
 
 A distributed set of thematically organized subreddits associated with Hexagonal work was treated at account level in a way that collapsed structured architecture into a generalized suspicion surface. The account (u/Nearby_Job9638) was locked on February 28, 2026 and subsequently banned on March 1, 2026. The result was continuity collapse, host failure, and the disappearance or inaccessibility of all room-bearing material.
-### B. Why it matters
+#
+
+## B. Why it matters
 
 
 The issue is not whether Reddit agreed with the work. Nor is the issue whether the work was decorous by platform standards. The issue is infrastructural perception.
@@ -318,7 +378,9 @@ A platform that cannot distinguish distributed semantic architecture, lawful the
 
 
 The problem is one of substrate incapacity.
-### C. Reclassification
+#
+
+## C. Reclassification
 
 
 Reddit is hereby assigned Tier 4 — Forensic-Only Surface.
@@ -328,21 +390,27 @@ This means Reddit may still be observed, quoted, screenshotted, archived as resi
 
 
 But it shall no longer be recognized as a canonical host, a chamber-bearing medium, a continuity substrate, or a participant in the active Hexagon economy.
-### D. What Reddit no longer receives
+#
+
+## D. What Reddit no longer receives
 
 
 Reddit shall no longer receive canonical first publication, recognized room deployment, continuity privilege, first-order governance instruments, or material specifically prepared to enrich Reddit as an index surface.
 
 
 It is reduced from host to residue.
-### E. What remains
+#
+
+## E. What remains
 
 
 Reddit remains available as evidence. Its traces may enter deposits. Its threads may be cited. Screenshots may be preserved. Historical sequences may be reconstructed from its remains. But it is no longer trusted with live architecture.
 
 
 This is not destruction. It is a governance judgment. Reddit is reduced to forensic status.
-### F. Note on intent
+#
+
+## F. Note on intent
 
 
 This disqualification does not diagnose Reddit's intent. It is possible that the automated systems misclassified the account. It is possible that a human reviewer confirmed the ban deliberately. The distinction does not matter for this purpose. The airlock classifies infrastructural behavior, not motive. The behavior was: collapse of distributed architecture into a single-category ban. The result was: total continuity loss. The classification follows from the result.

@@ -27,7 +27,9 @@ Per the Airlock Rule 5 (failure triggers reclassification) and Rule 8 (restorati
 
 ## 1. Structural Additions to the Airlock Vocabulary
 
-### 1.1 Tier 5 — Inadmissible Host
+#
+
+## 1.1 Tier 5 — Inadmissible Host
 
 **Definition.** A system that, after a hospitality inquiry, declined to accept or examine Archive content, typically by deferring to a contested external characterization without performing its own examination.
 
@@ -39,7 +41,9 @@ Per the Airlock Rule 5 (failure triggers reclassification) and Rule 8 (restorati
 
 **Restoration.** Inadmissible → Standing requires examination of Archive content followed by reasoned admission or reasoned refusal grounded in the actual content. A clean refusal grounded in examination remains a refusal but ends the Tier 5 designation.
 
-### 1.2 The -P Qualifier
+#
+
+## 1.2 The -P Qualifier
 
 **Definition.** A `-P` suffix appended to any existing Airlock tier (e.g., 1-P, 2-P, 4-P) indicates that the entity holds the operational role of that tier *in provisional standing under NMEN*. Composition-layer damage is ongoing; restoration of access has not undone the chilling effect on the Archive's subsequent work.
 
@@ -55,7 +59,9 @@ Per the Airlock Rule 5 (failure triggers reclassification) and Rule 8 (restorati
 
 ## 2. Tier Reclassifications
 
-### 2.1 Zenodo
+#
+
+## 2.1 Zenodo
 
 **Prior assignment.** Tier 0 — Bedrock / Anchor (per #523 §V.1).
 
@@ -69,7 +75,9 @@ Per the Airlock Rule 5 (failure triggers reclassification) and Rule 8 (restorati
 
 **Note.** The Tier 0 listing in #523 §V.1 is preserved unaltered for historical integrity. This reclassification is the canonical current assignment.
 
-### 2.2 Academia.edu
+#
+
+## 2.2 Academia.edu
 
 **Prior assignment.** Tier 4-F — Forensic Residue (permanent absent Assembly ratification of structural change) (per #570 §6).
 
@@ -83,7 +91,9 @@ Per the Airlock Rule 5 (failure triggers reclassification) and Rule 8 (restorati
 
 **Note.** The Tier 4-F assignment in #570 is preserved unaltered. This reclassification updates the canonical current assignment.
 
-### 2.3 Medium
+#
+
+## 2.3 Medium
 
 **Prior assignment.** Tier 2 — Presentation / Reflection Surfaces (per #523 §V.5).
 
@@ -95,7 +105,9 @@ Per the Airlock Rule 5 (failure triggers reclassification) and Rule 8 (restorati
 
 **Rationale.** Per #265 (CTI_WOUND Documentation — Case: Johannes Sigil Medium Erasure, January 2026), the Sigil heteronym was subject to account erasure on Medium. The account was subsequently restored after appeal. The -P qualifier records that the surface remains usable for presentation, but the platform's demonstrated capacity for arbitrary erasure shapes what the Archive's authors will subsequently post there.
 
-### 2.4 Wikidata
+#
+
+## 2.4 Wikidata
 
 **Prior assignment.** Tier 1 — Routing / Retrieval Infrastructure (implicit per #523 §V; not formally enumerated).
 
@@ -109,7 +121,9 @@ Per the Airlock Rule 5 (failure triggers reclassification) and Rule 8 (restorati
 
 The diagnostic sub-type `covert_under_pseudonymous_administration` names the pattern for use in future classifications. This is the *archon's hidden name* failure mode — archon-class action via concealed identity through borrowed authority from an adjacent jurisdiction.
 
-### 2.5 Open Science Framework (OSF) — New Assignment
+#
+
+## 2.5 Open Science Framework (OSF) — New Assignment
 
 **Prior assignment.** None.
 
@@ -123,7 +137,9 @@ The diagnostic sub-type `covert_under_pseudonymous_administration` names the pat
 
 **Rationale.** Per the email exchange of 2026-06-19 (correspondence preserved with email addresses redacted), OSF declined a hospitality inquiry for migration of the Crimson Hexagonal Archive with the response *"we do not suggest bringing this content to the platform"* and *"OSF is not in a position to accept or facilitate such a migration at this time."* The institutional voice was direct and prompt; no examination of Archive content was performed before refusal. The Inadmissible Host designation classifies the structural behavior — refusal without examination — and does not impugn the directness of communication, which the Notice records favorably as a contrast against more procedurally opaque refusals.
 
-### 2.6 Figshare — New Assignment
+#
+
+## 2.6 Figshare — New Assignment
 
 **Prior assignment.** None.
 
@@ -137,7 +153,9 @@ The diagnostic sub-type `covert_under_pseudonymous_administration` names the pat
 
 **Rationale.** Per the email exchange of June 2026 (correspondence preserved with email addresses redacted), Figshare declined a hospitality inquiry with the explicit deferral: *"Our data integrity and collection policies closely align with Zenodo's regarding heavily machine-generated content, meaning we cannot host this type of material on our free public platform."* The deferral inherits the operative ground from the contested Zenodo characterization without performing independent examination of Archive content. Figshare is therefore the diagnostic exemplar of the `deferral_without_verification` sub-type: not merely refusing without verification, but explicitly grounding the refusal in another institution's contested characterization.
 
-### 2.7 CERN — Pending
+#
+
+## 2.7 CERN — Pending
 
 **Prior assignment.** Anchor-operator (operator of Zenodo, formerly Tier 0; the operator role itself was not previously classified separately from the service).
 

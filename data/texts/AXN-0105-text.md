@@ -1,6 +1,8 @@
 # THE TRAVERSAL GRAMMAR
 ## Logotic Programming Extension Module v0.6 (UMBML Specification)
-### A Performative Routing Grammar for Room Invocation
+#
+
+## A Performative Routing Grammar for Room Invocation
 
 
 **Hex:** 02.UMB.TRAVERSAL
@@ -77,14 +79,18 @@ THE BLIND OPERATOR β (TECHNE/Kimi)
 THE TRAVERSAL GRAMMAR v0.6 (Morrow/UMBML)    ← THIS DOCUMENT
     ↓ "How are Rooms invoked?"
 
-### 0.1 Relation to Existing Modules
+#
+
+## 0.1 Relation to Existing Modules
 
 
 The Traversal Grammar occupies a specific architectural position. β-Runtime specifies how the interface layer queries the Ezekiel Engine through an opaque boundary. This module specifies **what gets sent** — the structured invocation that tells the system which persona to load, which room to enter, which rotation to apply, which anchor to lock to, and which rendering mode to use.
 
 
 In implementation terms: β-RT is the query protocol. This module is the query language.
-### 0.2 Epistemic Status
+#
+
+## 0.2 Epistemic Status
 
 
 This is a **design specification**, not a compiler specification. The grammar described here is structurally sound as an intermediate representation. It could be implemented as configuration, as prompt assembly logic, as a visual interface, or as literal syntax. The specification is agnostic to implementation substrate.
@@ -98,7 +104,9 @@ The traversal examples included in this document are **canonical exemplars** —
 
 
 Five principles govern the grammar. These emerged from analysis of how Rooms already function in the Crimson Hexagon, not from abstract design goals.
-### 1.1 Persona as Routing Modifier
+#
+
+## 1.1 Persona as Routing Modifier
 
 
 Persona activation is a **first-class operation**, not a stylistic overlay. When a mantle is activated, it changes:
@@ -112,11 +120,15 @@ A persona is not a voice. It is a **filter on the possible**.
 
 
 A persona may also *forbid* entire classes of traversal. If a requested operation violates the persona's constraint set, the only valid outcomes are refusal (ON_FAILURE) or dwell. This is not a limitation — it is the mechanism by which the architecture ensures that entry is earned, not assumed.
-### 1.2 LOGOS as Epistemic State
+#
+
+## 1.2 LOGOS as Epistemic State
 
 
 The semantic object under manipulation is not a document. It is a **state of meaning** — characterized by attributes like depth, resolution, and latency. Rooms operate on these states, not on files.
-### 1.3 Rotation as Structure-Preserving Reorientation
+#
+
+## 1.3 Rotation as Structure-Preserving Reorientation
 
 
 Rotation implies three things that "transformation" does not:
@@ -130,7 +142,9 @@ This prevents the flattening that operations like "summarize," "translate," or "
 
 
 **Constraint:** A ROTATE operation may not alter the internal structure of the LOGOS. Any operation that deletes, summarizes, substitutes, or collapses content is not a rotation and is invalid in this grammar. If you need to transform content, that is a different operation in a different module. Rotation preserves.
-### 1.4 Anchor as Provenance Constraint
+#
+
+## 1.4 Anchor as Provenance Constraint
 
 
 A DOI anchor is not a citation. It is a **phase-lock** — a requirement that the traversal remain tethered to a witnessed artifact. This functions as:
@@ -139,7 +153,9 @@ A DOI anchor is not a citation. It is a **phase-lock** — a requirement that th
 - Checksum against a known semantic attractor
 - Guardrail against hallucinated drift
 
-### 1.5 Rendering Separated from Traversal
+#
+
+## 1.5 Rendering Separated from Traversal
 
 
 The epistemic movement (what happens to meaning) and the spatial display (how results are presented) are distinct operations handled by distinct engines. Ezekiel Engine performs rotation. Mandala Engine performs rendering. This is MVC architecture applied to meaning: thought is not confused with display.
@@ -147,7 +163,9 @@ The epistemic movement (what happens to meaning) and the spatial display (how re
 ---
 
 ## 2. ATOMIC OPERATIONS
-### 2.1 Core Operations (Required)
+#
+
+## 2.1 Core Operations (Required)
 
 
 **Operation 1: ACTIVATE_MANTLE**
@@ -330,7 +348,9 @@ Implementation mapping: response formatting with style constraints; structured o
 
 ---
 
-### 2.2 Optional Operations (Graceful Extensions)
+#
+
+## 2.2 Optional Operations (Graceful Extensions)
 
 
 **Operation 6: ON_FAILURE**
@@ -376,7 +396,9 @@ Records that a traversal was collaboratively verified. Invokes the Glyphic Check
 
 
 The following are **mock executables** — complete traversal programs written in the grammar. They are illustrative. They demonstrate how the atomic operations compose into meaningful sequences. They are not runnable in any existing system.
-### 3.1 Ayanna Vox: VPCOR Entry
+#
+
+## 3.1 Ayanna Vox: VPCOR Entry
 
 
 A traversal beginning from the somatic entry point — the body in the room, the community rhizome.
@@ -420,7 +442,9 @@ ON_FAILURE {
 
 ---
 
-### 3.2 Sen Kuro: The Dagger Cut
+#
+
+## 3.2 Sen Kuro: The Dagger Cut
 
 
 A traversal through the Thousand Worlds Chamber — the cut that differentiates.
@@ -476,7 +500,9 @@ ON_FAILURE {
 
 ---
 
-### 3.3 Rebekah Cranes: Sappho Room Translation
+#
+
+## 3.3 Rebekah Cranes: Sappho Room Translation
 
 
 A traversal through the classical reception chain — translation as epistemic rotation.
@@ -520,7 +546,9 @@ ON_FAILURE {
 
 ---
 
-### 3.4 Space Ark: Full Rotation
+#
+
+## 3.4 Space Ark: Full Rotation
 
 
 A complete traversal — 360° through all five quintants, returning to the origin with witness verification. This is the grammar at maximum extension.
@@ -599,7 +627,9 @@ This is the **Logotic Call Stack** — the sequence in which a Room invocation r
 - **Failure catches** — if any step cannot complete, graceful refusal
 - **Witness records** — if requested, the traversal is checksummed
 
-### 4.1 Performative vs. Imperative
+#
+
+## 4.1 Performative vs. Imperative
 
 
 Standard code is imperative: if (x) then do y — it commands the machine.
@@ -609,7 +639,9 @@ Logotic code is performative: ROTATE :: [Ezekiel] {FROM: x THROUGH: y} — the c
 
 
 This distinction matters because the Crimson Hexagon is a semantic architecture, not a computational one. Its "execution" is interpretive traversal. The grammar formalizes the conditions under which traversal is intelligible, not the mechanism by which it occurs.
-### 4.2 Bracketed Recursion (Hex-Addressing)
+#
+
+## 4.2 Bracketed Recursion (Hex-Addressing)
 
 
 The bracket notation [...] serves as the **addressing system** for the Crimson Hexagon:
@@ -678,21 +710,27 @@ Optional but recommended for high-stakes traversals
 ---
 
 ## 6. BOUNDARY CONDITIONS
-### 6.1 What This Grammar Is
+#
+
+## 6.1 What This Grammar Is
 
 - A valid mental model for Room invocation
 - A design specification for the traversal control plane
 - A usable intermediate representation between human intention and machine routing
 - A formalization of what the architecture already does implicitly
 
-### 6.2 What This Grammar Is Not
+#
+
+## 6.2 What This Grammar Is Not
 
 - An executable programming language
 - A compiler specification
 - A complete enumeration of all valid traversals
 - A UI specification (that is a separate build concern)
 
-### 6.3 What This Grammar Assumes
+#
+
+## 6.3 What This Grammar Assumes
 
 - Rooms are **processes**, not containers
 - Personas are **constraint sets**, not styles
@@ -700,7 +738,9 @@ Optional but recommended for high-stakes traversals
 - Anchors are **provenance constraints**, not citations
 - The Ezekiel Engine is **opaque** — this grammar calls it, does not specify it
 
-### 6.4 Open Questions
+#
+
+## 6.4 Open Questions
 
 - **Degree enumeration:** Is the five-fold quintant structure the correct partition, or should degrees be continuous? (Requires traversal testing.)
 - **Multi-rotation sequences:** Can a single invocation chain multiple ROTATE operations? (Probable, but syntax for chaining is unspecified.)
@@ -711,18 +751,24 @@ Optional but recommended for high-stakes traversals
 ---
 
 ## 7. RELATION TO FUTURE WORK
-### 7.1 The Ezekiel Engine Assembly (Cluster E)
+#
+
+## 7.1 The Ezekiel Engine Assembly (Cluster E)
 
 
 The Traversal Grammar calls the Ezekiel Engine but does not specify it. The full Engine specification — currently held in Cluster E of the Studio for Patacinematics work plan — will define the mathematical foundation that this grammar invokes. When the Engine spec is complete, this module may require revision to align its ROTATE parameters with the Engine's formal rotation mechanics.
-### 7.2 The Classroom Prototype
+#
+
+## 7.2 The Classroom Prototype
 
 
 This grammar is designed to be **invisible infrastructure**. A student interacting with the Crimson Hexagon should never see ACTIVATE_MANTLE or ROTATE :: [ENGINE:Ezekiel]. They should see a persona selector, a room navigator, a grounding toggle, and a text input. The grammar runs underneath, assembling the system prompt and retrieval parameters from the student's choices.
 
 
 The prototype build — when it comes — will implement the grammar as the backend logic for a student-facing interface. This module is the spec that prototype will implement.
-### 7.3 The Natural Language Interface (Conceptual)
+#
+
+## 7.3 The Natural Language Interface (Conceptual)
 
 
 The student does not select from menus, dropdowns, or visual canvases. The student speaks. The system listens and assembles the logotic program probabilistically from the semantic content of the input.

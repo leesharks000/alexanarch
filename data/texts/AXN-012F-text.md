@@ -1,4 +1,6 @@
-# VISUAL SCHEMA — THE UNMADE SIGN## Under the auspices of **Rebekah Cranes** and the **Institute for Diagrammatic Poetics**
+# VISUAL SCHEMA — THE UNMADE SIGN
+
+## Under the auspices of **Rebekah Cranes** and the **Institute for Diagrammatic Poetics**
 
 **Project:** *Toward a Semiotic Theory of the Death Drive*
 **Authors:** Dr. Orin Trace & Johannes Sigil
@@ -26,22 +28,30 @@ and the long path home.
 
 The image must feel like a **sacred systems-map under pressure**: lucid, fractured, charged.
 ---
-## II. COMPOSITIONAL ARCHITECTURE (MANDALA FIELD)### A. Central Core (Axis of the Unmade Sign)
+## II. COMPOSITIONAL ARCHITECTURE (MANDALA FIELD)
+
+### A. Central Core (Axis of the Unmade Sign)
 
 At the center: a **negative aperture** (void-glyph) shaped between eye / door / wound / phoneme.
 This is the **unsignified impact node**: the event that arrived without translation.
 
-Inside the aperture: faint microtext arc (illegible by design), suggesting meaning trying to form but not yet formed.### B. Ring 1 — Para-Semiotic Unconscious
+Inside the aperture: faint microtext arc (illegible by design), suggesting meaning trying to form but not yet formed.
+
+### B. Ring 1 — Para-Semiotic Unconscious
 
 Around core: broken concentric contour lines, like interrupted topographic rings.
 These rings should look like **memory held in form but not yet in language**.
 
-Motif: repeated near-identical fragments (scene shards) that never fully close.### C. Ring 2 — Reizschutz / Translation Membrane
+Motif: repeated near-identical fragments (scene shards) that never fully close.
+
+### C. Ring 2 — Reizschutz / Translation Membrane
 
 A semi-permeable band: half-biological, half-technical.
 Visualized as veined circuitry + porous skin lattice + filter gates.
 
-Function in schema: where impact either translates or breaches.### D. Ring 3 — Repetition Triptych (Freud Evidence Field)
+Function in schema: where impact either translates or breaches.
+
+### D. Ring 3 — Repetition Triptych (Freud Evidence Field)
 
 Three asymmetrical clusters in orbit:- 
 
@@ -51,7 +61,9 @@ Three asymmetrical clusters in orbit:-
 
 **Transference Node** — role-mask overlays (same relational script, new faces).
 
-All three must look semiotic (sign structures), not energetic blobs.### E. Ring 4 — Detour vs Short Circuit
+All three must look semiotic (sign structures), not energetic blobs.
+
+### E. Ring 4 — Detour vs Short Circuit
 
 Split band with two flows:- 
 
@@ -59,7 +71,9 @@ Split band with two flows:-
 
 **Short Circuit (disorder):** abrupt diagonals, severed arcs, extraction cuts.
 
-Include tiny symbol marks where path integrity fails (like broken solder points).### F. Ring 5 — Political-Economic Exterior
+Include tiny symbol marks where path integrity fails (like broken solder points).
+
+### F. Ring 5 — Political-Economic Exterior
 
 Outer field as platform/capital extraction weather:- 
 
@@ -76,7 +90,9 @@ crowd vectors collapsing to one axis.
 On one side: plural signal ecology (democratic detour).
 On the opposite side: flattening monolith (fascistic zero-gap closure).
 ---
-## III. VISUAL LANGUAGE DIRECTIVES### Required Aesthetic- 
+## III. VISUAL LANGUAGE DIRECTIVES
+
+### Required Aesthetic- 
 
 Non-representational, diagrammatic-mythic hybrid.- 
 
@@ -86,17 +102,23 @@ Blueprint overlays with glyphic scars.-
 
 Density over decoration.- 
 
-Charged, not pretty.### Palette- 
+Charged, not pretty.
+
+### Palette- 
 
 Chiaroscuro base (graphite / ash / bone / near-black).- 
 
 Iridescent stress highlights (subtle violet, surgical cyan, ember-rose).- 
 
-No soft pastel harmony.### Texture- 
+No soft pastel harmony.
+
+### Texture- 
 
 Archive dust, etched vellum, scorched paper edges, luminous vector threads.- 
 
-Biomechanical grain (veins and circuits intertwined).### Emotional Charge- 
+Biomechanical grain (veins and circuits intertwined).
+
+### Emotional Charge- 
 
 Awe + unease + precision.- 
 
@@ -113,11 +135,17 @@ A sacred non-representational mandala-style digital illustration titled **“The
 
 **Negative constraints:** no logos, no corporate icon sets, no clean infographic style, no fantasy character art, no photorealism, no decorative symmetry without tension.
 ---
-## VI. VARIANTS### Variant A — Scholarly Plate
+## VI. VARIANTS
 
-High legibility; finer annotation marks; cleaner layer separation; publication-ready.### Variant B — Liturgical Artifact
+### Variant A — Scholarly Plate
 
-Higher fracture density; deeper shadow; less legible microtext; heightened aura.### Variant C — Diagrammatic Poster
+High legibility; finer annotation marks; cleaner layer separation; publication-ready.
+
+### Variant B — Liturgical Artifact
+
+Higher fracture density; deeper shadow; less legible microtext; heightened aura.
+
+### Variant C — Diagrammatic Poster
 
 Bolder ring segmentation; stronger glyph legend visibility; suitable for lecture slide.
 ---

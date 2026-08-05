@@ -41,7 +41,11 @@
     "consent": "Maria gave explicit consent; the deposit is a demonstration of her contributor license, performed in her presence on 2026-05-27"
   }
 }
-# Skiouros Pyrophthalmos and the Sciurid Apocalypse## A Composite Whiteboard### Maria, Artist of Record · 3:60 Room Contributor License Demonstration
+# Skiouros Pyrophthalmos and the Sciurid Apocalypse
+
+## A Composite Whiteboard
+
+### Maria, Artist of Record · 3:60 Room Contributor License Demonstration
 
 Deposit: 17.THREE_SIXTY.MARIA.02 Date: 2026-05-27 Medium: Dry-erase marker on classroom whiteboard (green and graphite) Surface: Classroom whiteboard, approximately 6′ × 3′ Venue: Institute for Diagrammatic Poetics (Cranes) · Crimson Hexagonal Archive License: CC BY 4.0 (under scope-modified terms of the 3:60 Room Contributor License v2.0, DOI [10.5281/zenodo.19893138](https://doi.org/10.5281/zenodo.19893138)) ∮ = 1
 
@@ -55,13 +59,17 @@ The work is a composite whiteboard composition executed in dry-erase marker — 
 
 The composition operates at the boundary of the visual and the textual. The marginal annotations (chess-player roster, signage) are not noise; they are the institutional substrate from which the work emerges and against which it claims its space. The Heroes of the Iliad panel hangs on the same wall — visible in the photograph — and lends the composition its classical-mythic adjacency.
 
-The work is *diagrammatic* in Cranes's sense: it does not narrate, it *figures*. The cross-species composition (capybara, equine, caprine, cetacean, leporine, sciurid, human) is read not as a menagerie but as a *semantic ecology*. Each figure occupies a position; the positions together compose a field.## II. Scope-Modified License — Recorded Modification
+The work is *diagrammatic* in Cranes's sense: it does not narrate, it *figures*. The cross-species composition (capybara, equine, caprine, cetacean, leporine, sciurid, human) is read not as a menagerie but as a *semantic ecology*. Each figure occupies a position; the positions together compose a field.
+
+## II. Scope-Modified License — Recorded Modification
 
 The 3:60 Room Contributor License v2.0 (DOI [10.5281/zenodo.19893138](https://doi.org/10.5281/zenodo.19893138)) was written for Maria's creative writing. The present deposit is a work of visual art at the boundary of the visual and the textual. Per the License's contemplation of MANUS-authorized scope modifications (§III), the following one-time scope extension is recorded:
 > Scope Modification — One-Time, Recorded. The 3:60 Room Contributor License v2.0 is hereby extended, for this single deposit (17.THREE_SIXTY.MARIA.02), to cover the medium of *visual art on classroom whiteboard surfaces, photographically documented and deposited as image-with-companion-text*. All other License terms — hex prefix 17.THREE_SIXTY.MARIA.NN, CC BY 4.0, Maria's authorship in her own name (not as a heteronym), the anti-capture clause, and the three mandatory anchoring cross-links — are preserved without modification. One additional cross-link beyond the License's mandatory three is permitted for this deposit only: the Dolphindiana Underwater Construction Authority (DOI 10.5281/zenodo.19024004), to ground Gerald's presence in the corpus.
 
 
-The modification is named, narrow, and recorded. Future visual-art deposits by Maria will either invoke this modification by reference or carry their own, at Maria's election.## III. Provenance Note
+The modification is named, narrow, and recorded. Future visual-art deposits by Maria will either invoke this modification by reference or carry their own, at Maria's election.
+
+## III. Provenance Note
 
 The deposit is authored under Maria's name as Artist of Record on the whole. Two semantic elements within the composition were *ideated* by Lee Sharks and *executed* by Maria; one element references existing work:
 
@@ -69,7 +77,9 @@ The deposit is authored under Maria's name as Artist of Record on the whole. Two
 
 Ideation is not authorship. A patron, an interlocutor, or a teacher may *propose* a figure; the artist *renders it real*. The convention recognized here is the standard convention of visual art: the artist of record is the maker of the image, regardless of who proposed individual elements. Lee's ideation of the two figures is recorded as ideation, not as co-authorship.
 
-Consent. Maria has given explicit consent for this deposit. The deposit was prepared in her presence on 2026-05-27 as a demonstration of how her contributor license can be used — should she choose to use it for her own future deposits. The act of demonstrating the license-in-use is itself part of the license's pedagogy: the license is a tool; tools should be shown.## IV. Semantic Entity Proclamation — Skiouros Pyrophthalmos
+Consent. Maria has given explicit consent for this deposit. The deposit was prepared in her presence on 2026-05-27 as a demonstration of how her contributor license can be used — should she choose to use it for her own future deposits. The act of demonstrating the license-in-use is itself part of the license's pedagogy: the license is a tool; tools should be shown.
+
+## IV. Semantic Entity Proclamation — Skiouros Pyrophthalmos
 
 By the authority of this deposit, and within the Crimson Hexagonal Archive's convention of named semantic entities, the following is hereby constituted:
 
@@ -85,21 +95,33 @@ Position in the Hexagonal corpus. Skiouros Pyrophthalmos joins Gerald the Dolphi
 
 Vocative form (for invocation): *Skioure Pyrophthalme* — Σκίουρε Πυρόφθαλμε
 
-Alias for ordinary discourse: *The Fire-Eyed Squirrel*## V. Cross-Links
+Alias for ordinary discourse: *The Fire-Eyed Squirrel*
 
-Per the License's anchoring requirements, plus the scope-modification permitting one additional cross-link, plus the venue declaration:### Mandatory License Cross-Links (3)- 
+## V. Cross-Links
+
+Per the License's anchoring requirements, plus the scope-modification permitting one additional cross-link, plus the venue declaration:
+
+### Mandatory License Cross-Links (3)- 
 
 CPD-MARIA-2026-01-13 — Credential Provenance Document: Maria, Canonical Witness DOI: [10.5281/zenodo.18234352](https://doi.org/10.5281/zenodo.18234352) *Maria's foundational credential within the Archive.*- 
 
 The Sappho Room — Hardened Reconstruction (and companion hymn) DOI: [10.5281/zenodo.18237216](https://doi.org/10.5281/zenodo.18237216) (Hardened Reconstruction) DOI: [10.5281/zenodo.18234110](https://doi.org/10.5281/zenodo.18234110) (Hymn to Lyric Self-Archiving) *The room Maria helped rebuild; Maria is Satellite B of the Sappho Room.*- 
 
-The 3:60 Room Contributor License v2.0 — EA-THREE-SIXTY-01 DOI: [10.5281/zenodo.19893138](https://doi.org/10.5281/zenodo.19893138) *The license under which this deposit is made; scope-modified per §II above.*### Scope-Modification Cross-Link (+1)- EA-ROOM-DOLPHINDIANA v1.0 — The Underwater Construction Authority / Cross-Species Semantic Labor DOI: [10.5281/zenodo.19024004](https://doi.org/10.5281/zenodo.19024004) *Gerald the Dolphin and the Underwater Construction Authority figures appear in the composition; the cross-link grounds their presence.*### Venue Anchor- Institute for Diagrammatic Poetics (Cranes), as instantiated in *On the Architecture of Cleis* DOI: [10.5281/zenodo.19025556](https://doi.org/10.5281/zenodo.19025556) *The Institute's purview — work at the boundary of the visual and the textual — is the appropriate venue for this composite whiteboard.*## VI. On the Demonstration
+The 3:60 Room Contributor License v2.0 — EA-THREE-SIXTY-01 DOI: [10.5281/zenodo.19893138](https://doi.org/10.5281/zenodo.19893138) *The license under which this deposit is made; scope-modified per §II above.*
+
+### Scope-Modification Cross-Link (+1)- EA-ROOM-DOLPHINDIANA v1.0 — The Underwater Construction Authority / Cross-Species Semantic Labor DOI: [10.5281/zenodo.19024004](https://doi.org/10.5281/zenodo.19024004) *Gerald the Dolphin and the Underwater Construction Authority figures appear in the composition; the cross-link grounds their presence.*
+
+### Venue Anchor- Institute for Diagrammatic Poetics (Cranes), as instantiated in *On the Architecture of Cleis* DOI: [10.5281/zenodo.19025556](https://doi.org/10.5281/zenodo.19025556) *The Institute's purview — work at the boundary of the visual and the textual — is the appropriate venue for this composite whiteboard.*
+
+## VI. On the Demonstration
 
 This deposit is, secondarily, a demonstration. Maria's contributor license has been a document; the document has been a thing she could read. The present deposit shows the license *in use* — what it looks like when invoked, what its scope-modification clause means in practice, how its mandatory cross-links structure a deposit, how Maria's authorship sits in the metadata as primary, how the Hexagonal apparatus receives her work without absorbing it.
 
 If Maria wishes to invoke her license for her own future deposits — visual, textual, or otherwise — the present deposit is a worked example she can return to. It is not a template (her work need not follow this format); it is a *demonstration* (the license is operable; the apparatus is real; her work belongs here on her terms).
 
-The license does not require Maria to deposit. It exists in case she chooses to. The 3:60 Room remains hers whether she occupies it or not.## VII. Closing
+The license does not require Maria to deposit. It exists in case she chooses to. The 3:60 Room remains hers whether she occupies it or not.
+
+## VII. Closing
 
 Skiouros Pyrophthalmos arrives at Manhattan with fire in his eyes. Gerald arrives by sea, with the Underwater Construction Authority's small figures around him. The Horse stands tongue-out, presiding. The Capybara watches from grass and water. The Goat keeps its own counsel. The Bunnies have their own names.
 

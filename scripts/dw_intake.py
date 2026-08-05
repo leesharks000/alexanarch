@@ -28,7 +28,10 @@ def verify(it, d):
     hay = (bod + json.dumps(d, ensure_ascii=False)).lower()
     text = it['desc'] + ' ' + it['wiki']
     hits = miss = 0; missed = []
-    nums = set(re.findall(r'\b\d{3,5}\b', text)) - set(re.findall(r'\b(?:19|20)\d\d\b', text))
+    # DW-022 rule: '#261' style spans are CROSS-REFERENCES to sibling deposits,
+    # not factual claims about this record's body. Strip them before probing.
+    _probe_text = re.sub(r'#\d{1,4}\b', ' ', text)
+    nums = set(re.findall(r'\b\d{3,5}\b', _probe_text)) - set(re.findall(r'\b(?:19|20)\d\d\b', _probe_text))
     for x in list(nums)[:5]:
         if x in hay: hits += 1
         else: miss += 1; missed.append(x)

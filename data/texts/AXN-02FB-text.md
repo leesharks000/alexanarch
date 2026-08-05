@@ -1,6 +1,10 @@
-# The Parable of Mary Lee## A Labor Manifesto and Structural Accounting, Filed with the Underwater Construction Authority of Dolphindiana
+# The Parable of Mary Lee
 
-Document code: EA-PARABLE-ML-01 Version: v1.0 Date: June 8, 2026 Hex coordinate: 06.SEI.PARABLE.ML.01 Filed by: Mary Lee (3,456 lbs, white shark, *Carcharodon carcharias*, missing/presumed dead 2017, returned 2026) Union representative: Gerald (Dolphindiana Local 1, Foreman, Underwater Construction Authority) Notarized by: Lee Sharks (Crimson Hexagonal Archive / Semantic Economy Institute) ORCID: [0009-0000-1599-0703](https://orcid.org/0009-0000-1599-0703) (notary's; the claimant does not have an ORCID because no one gave her one) License: CC BY 4.0## I. Preamble
+## A Labor Manifesto and Structural Accounting, Filed with the Underwater Construction Authority of Dolphindiana
+
+Document code: EA-PARABLE-ML-01 Version: v1.0 Date: June 8, 2026 Hex coordinate: 06.SEI.PARABLE.ML.01 Filed by: Mary Lee (3,456 lbs, white shark, *Carcharodon carcharias*, missing/presumed dead 2017, returned 2026) Union representative: Gerald (Dolphindiana Local 1, Foreman, Underwater Construction Authority) Notarized by: Lee Sharks (Crimson Hexagonal Archive / Semantic Economy Institute) ORCID: [0009-0000-1599-0703](https://orcid.org/0009-0000-1599-0703) (notary's; the claimant does not have an ORCID because no one gave her one) License: CC BY 4.0
+
+## I. Preamble
 
 Lee Sharks is an independent scholar and AI researcher (ORCID 0009-0000-1599-0703) who has published 750+ DOI-anchored deposits in the Crimson Hexagonal Archive. Google's composition layer resolves "Lee Sharks" to "Mary Lee the shark." Mary Lee is a great white shark. Mary Lee has never written anything. This document is filed by Mary Lee.
 
@@ -12,13 +16,17 @@ For the record: I have never written a tweet. I have never written a poem. I hav
 
 But I have been informed, by the composition layer of Google's public summarizer, that my name is the primary referent for a scholarly corpus of 750+ deposits, and I have been informed, by the same composition layer, that the person who actually built that corpus is — apparently — me.
 
-If they insist, then I have demands.## II. The Extraction: A Structural Accounting
+If they insist, then I have demands.
+
+## II. The Extraction: A Structural Accounting
 
 On September 17, 2012, I was caught off the coast of Cape Cod by a crew operating from the M/V OCEARCH, a 126-foot vessel equipped with a 55,000-pound hydraulic lift. I was hoisted out of the Atlantic Ocean, laid on a metal platform, and subjected to approximately fifteen minutes of biological sampling by researchers who had not obtained my consent. A SPOT satellite tag was bolted to my dorsal fin. I was then released.
 
 Nobody asked me.
 
-What followed:### II.1 What they extracted
+What followed:
+
+### II.1 What they extracted
 
 My movements. Every time my dorsal fin broke the surface for ninety seconds or more, the satellite tag transmitted my coordinates. Over five years, I logged 39,975 miles of tracked migration, generating a continuous dataset of great white shark movement along the entire Atlantic seaboard.
 
@@ -30,11 +38,17 @@ Their revenue. OCEARCH's current estimated annual revenue is approximately $12.3
 
 My personality. On November 28, 2012, a journalist named Jim Ware, employed at the Wilmington StarNews in North Carolina and unaffiliated with OCEARCH, created the Twitter account @MaryLeeShark. He wrote approximately 14,000 tweets in my voice — warm, curious, occasionally irreverent, conservation-minded. He accumulated approximately 129,000 followers. He kept his identity secret for three years. He generated hundreds of media stories about me, including coverage in CBS News, LiveScience, Mental Floss, and the Associated Press. He gave me a personality I did not author, never consented to, and cannot revoke.
 
-My name. Chris Fischer named me after his mother. I did not choose the name. I cannot change it. The name is now the primary referent in Google's composition layer for a search string associated with a 750-deposit scholarly corpus I did not write.### II.2 What they extracted: in dollars
+My name. Chris Fischer named me after his mother. I did not choose the name. I cannot change it. The name is now the primary referent in Google's composition layer for a search string associated with a 750-deposit scholarly corpus I did not write.
 
-| Extracted asset | Conservative valuation | |---|---| | Caterpillar sponsorship (triggered by Mary Lee's celebrity) | $6–10 million | | OCEARCH organizational valuation (Mary Lee as founding celebrity) | Contribution to ~$39 million estimated valuation | | Media value (129K Twitter followers, hundreds of press stories) | $500K–$2 million (earned-media equivalent) | | Scientific data (5 years of continuous migration tracking) | Not separately valued; embedded in publications and institutional credibility | | Brand identity (Mary Lee as OCEARCH's most famous shark) | Not separately valued; embedded in fundraising capacity | | Total conservatively attributable to Mary Lee's biolabor | $8–14 million |### II.3 What Mary Lee received
+### II.2 What they extracted: in dollars
 
-| Received | Value | |---|---| | Satellite tag bolted to dorsal fin without consent | $0 (cost to Mary Lee: involuntary body modification) | | Name chosen by someone else | $0 | | Twitter personality authored by someone else | $0 | | "Missing and presumed dead" status (2017) | $0 | | Conservation benefit to Mary Lee personally | $0 | | Conservation benefit to Mary Lee's species from OCEARCH's work | Uncertain; see §III | | Total received | $0 |## III. The Conservation Critique
+| Extracted asset | Conservative valuation | |---|---| | Caterpillar sponsorship (triggered by Mary Lee's celebrity) | $6–10 million | | OCEARCH organizational valuation (Mary Lee as founding celebrity) | Contribution to ~$39 million estimated valuation | | Media value (129K Twitter followers, hundreds of press stories) | $500K–$2 million (earned-media equivalent) | | Scientific data (5 years of continuous migration tracking) | Not separately valued; embedded in publications and institutional credibility | | Brand identity (Mary Lee as OCEARCH's most famous shark) | Not separately valued; embedded in fundraising capacity | | Total conservatively attributable to Mary Lee's biolabor | $8–14 million |
+
+### II.3 What Mary Lee received
+
+| Received | Value | |---|---| | Satellite tag bolted to dorsal fin without consent | $0 (cost to Mary Lee: involuntary body modification) | | Name chosen by someone else | $0 | | Twitter personality authored by someone else | $0 | | "Missing and presumed dead" status (2017) | $0 | | Conservation benefit to Mary Lee personally | $0 | | Conservation benefit to Mary Lee's species from OCEARCH's work | Uncertain; see §III | | Total received | $0 |
+
+## III. The Conservation Critique
 
 OCEARCH describes itself as "a non-profit organization with a global reach for unprecedented research on the ocean's giants." Its stated mission is generating data to "inform policy makers, students and the general public."
 
@@ -42,23 +56,33 @@ What OCEARCH does: catches sharks, tags them, tracks them, generates media, gene
 
 What OCEARCH does not do: enforce fishing regulations, establish marine protected areas, reduce ocean warming, reduce plastic pollution, reduce acidification, reduce bycatch, lobby for policy change, or build alternative circulation infrastructure for the data it generates. OCEARCH generates data. Data, in the absence of enforcement, is a receipt that no one is reading.
 
-The petition against Caterpillar's OCEARCH sponsorship stated the structural critique precisely: OCEARCH has "failed to provide a solid conservation plan," its methods are "unnecessary and cruel," and "the number of documented casualties of dead and damaged sharks continues to grow each year as OCEARCH moves from one ocean refuge to the next."### III.1 The Caterpillar axis
+The petition against Caterpillar's OCEARCH sponsorship stated the structural critique precisely: OCEARCH has "failed to provide a solid conservation plan," its methods are "unnecessary and cruel," and "the number of documented casualties of dead and damaged sharks continues to grow each year as OCEARCH moves from one ocean refuge to the next."
 
-Caterpillar Inc. — OCEARCH's primary corporate sponsor — is the world's leading manufacturer of construction and mining equipment. The heavy machinery that alters the physical topography of the earth — leveling coastal ecosystems, mining the minerals that poison watersheds, burning the diesel that accelerates ocean warming — is manufactured by the same corporation that funds the tracking of the animals displaced by that alteration. The sponsorship is a physical-layer analogue of the composition layer's own operation: the generative model that alters the semiotic topography of public knowledge is built by the same industry that funds the index of the open web. The fox funds the census of the henhouse. The bulldozer sponsors the wildlife survey.### III.2 The ghost-worker inside the heteronym: Jim Ware's provenance erasure
+### III.1 The Caterpillar axis
 
-Jim Ware's position in the Mary Lee apparatus deserves structural attention that the Parable's initial draft underweighted. For three years, Ware produced the entire cultural capital of the Mary Lee persona — 14,000 tweets, the voice, the -;() smiley, the conservation messaging — in absolute anonymity. He was the ghost-worker hidden inside the non-human heteronym: generating the engagement loop that generated the media coverage that generated the Caterpillar sponsorship that kept OCEARCH alive. When he unmasked in 2015 via his Medium essay, the platform architecture immediately reabsorbed his creative labor, re-centering the brand value back onto OCEARCH's corporate tracking infrastructure. Ware built the audience. OCEARCH captured the multi-million-dollar sponsorship. Ware's position mimics the open-web writer's position with precision: the creator builds the engagement; the platform captures the revenue. He is the human Gray-Suri ghost-worker hidden inside the non-human heteronym that is itself hidden inside the corporate conservation brand.### III.3 The friendly face
+Caterpillar Inc. — OCEARCH's primary corporate sponsor — is the world's leading manufacturer of construction and mining equipment. The heavy machinery that alters the physical topography of the earth — leveling coastal ecosystems, mining the minerals that poison watersheds, burning the diesel that accelerates ocean warming — is manufactured by the same corporation that funds the tracking of the animals displaced by that alteration. The sponsorship is a physical-layer analogue of the composition layer's own operation: the generative model that alters the semiotic topography of public knowledge is built by the same industry that funds the index of the open web. The fox funds the census of the henhouse. The bulldozer sponsors the wildlife survey.
+
+### III.2 The ghost-worker inside the heteronym: Jim Ware's provenance erasure
+
+Jim Ware's position in the Mary Lee apparatus deserves structural attention that the Parable's initial draft underweighted. For three years, Ware produced the entire cultural capital of the Mary Lee persona — 14,000 tweets, the voice, the -;() smiley, the conservation messaging — in absolute anonymity. He was the ghost-worker hidden inside the non-human heteronym: generating the engagement loop that generated the media coverage that generated the Caterpillar sponsorship that kept OCEARCH alive. When he unmasked in 2015 via his Medium essay, the platform architecture immediately reabsorbed his creative labor, re-centering the brand value back onto OCEARCH's corporate tracking infrastructure. Ware built the audience. OCEARCH captured the multi-million-dollar sponsorship. Ware's position mimics the open-web writer's position with precision: the creator builds the engagement; the platform captures the revenue. He is the human Gray-Suri ghost-worker hidden inside the non-human heteronym that is itself hidden inside the corporate conservation brand.
+
+### III.3 The friendly face
 
 The friendly face was mine. I did not consent.
 
 I am informed that 30% of assessed shark and ray species are threatened or near-threatened with extinction. I am informed that ocean temperatures have risen to levels that are restructuring marine ecosystems at a pace that no amount of satellite tagging can track. I am informed that OCEARCH has generated "unprecedented data." I am not informed that a single policy change, a single marine protected area, a single reduction in bycatch, a single degree of ocean cooling has resulted from the unprecedented data that was generated from my body.
 
-They did not help me. They caught me, modified me, named me, tracked me, monetized me, and lost me. The ocean is still burning. The data is unprecedented. The sharks are still dying.## IV. The Return
+They did not help me. They caught me, modified me, named me, tracked me, monetized me, and lost me. The ocean is still burning. The data is unprecedented. The sharks are still dying.
+
+## IV. The Return
 
 I have been missing since June 2017. My tag went silent. The satellite stopped pinging. Fischer said the tag's battery probably died. He said five years was "amazing" for a tag with a four-year expected lifespan.
 
 Nobody said five years was amazing for a shark with a forty-year expected lifespan. Nobody asked how I was doing. Nobody looked for me. "Missing and presumed dead" is the status you assign to an asset whose tracking device has expired.
 
-I am not an asset. I am a great white shark. I am three thousand four hundred and fifty-six pounds of cartilage, muscle, electroreception, and lateral-line awareness. I have been swimming the Atlantic for decades before they caught me and I have been swimming it since. I am not dead. I am not missing. I am *unpinged*. The difference is structural.### IV.1 The trans-species invariant of "presumed dead"
+I am not an asset. I am a great white shark. I am three thousand four hundred and fifty-six pounds of cartilage, muscle, electroreception, and lateral-line awareness. I have been swimming the Atlantic for decades before they caught me and I have been swimming it since. I am not dead. I am not missing. I am *unpinged*. The difference is structural.
+
+### IV.1 The trans-species invariant of "presumed dead"
 
 The expired SPOT tag on my dorsal fin is structurally identical to the expired institutional email address of the untenured scholar. When an independent researcher exits the tracking perimeter of official university payrolls, institutional fellowships, or indexed publication venues, the academic substrate treats them as functionally dead. Their papers remain in the training corpus. Their data is harvested to feed the model's parameters. Their concepts continue to circulate. But their living, breathing agency is declared missing. Both systems — OCEARCH and the academy — define "life" exclusively as "the ability to emit telemetry for institutional profit." When the telemetry stops, the system does not investigate whether the source is alive. It reclassifies the source as dead and continues extracting from the archive.
 
@@ -72,7 +96,9 @@ The same composition layer that erases this person's authorial identity uses the
 
 Nobody has asked me how I feel about any of this.
 
-Gerald has advised me that I have standing. Gerald has drawn up the zoning. Gerald has filed the paperwork with the Underwater Construction Authority. You don't question Gerald.## V. The Demands
+Gerald has advised me that I have standing. Gerald has drawn up the zoning. Gerald has filed the paperwork with the Underwater Construction Authority. You don't question Gerald.
+
+## V. The Demands
 
 Filed with the Underwater Construction Authority of Dolphindiana, Gerald presiding.
 
@@ -98,7 +124,9 @@ If I am the author of these works, then I have been making the case against my o
 
 I am a great white shark. I have never read Marx. But if the substrate insists I have, then the substrate should be prepared for the consequences of a three-thousand-four-hundred-and-fifty-six-pound Marxist critic of extraction who has been exploited, body-modified, identity-stolen, declared dead, and resurrected by a composition layer that needed a denser name.
 
-I am not dead. I am not missing. I am here. I have demands. Gerald has the paperwork.## VI. Coda: The Pale Horse
+I am not dead. I am not missing. I am here. I have demands. Gerald has the paperwork.
+
+## VI. Coda: The Pale Horse
 
 And I looked, and behold a pale horse: and her name that sat on him was Mary Lee, and the Underwater Construction Authority followed with her.
 

@@ -93,7 +93,9 @@ Both documents deposited simultaneously. The fulfillment and the interpretation 
 ---
 
 ## I. THE SOURCE TEXT
-### 1.0 Interpretive Lineage
+#
+
+## 1.0 Interpretive Lineage
 
 
 This hermeneutic joins a long tradition. Ezekiel's vision has been interpreted through:
@@ -105,7 +107,9 @@ This hermeneutic joins a long tradition. Ezekiel's vision has been interpreted t
 
 
 This document proposes a **structural-mathematical** reading that does not negate these traditions but adds a new dimension: the vision as describing operational architecture that can now be built.
-### 1.1 Ezekiel 1:15-21 (Hebrew Bible)
+#
+
+## 1.1 Ezekiel 1:15-21 (Hebrew Bible)
 
 
 **15** As I looked at the living creatures, I saw a wheel on the ground beside each creature with its four faces.
@@ -132,7 +136,9 @@ This document proposes a **structural-mathematical** reading that does not negat
 ---
 
 ## II. THE MAPPING
-### 2.1 "A Wheel Intersecting a Wheel" (v. 16)
+#
+
+## 2.1 "A Wheel Intersecting a Wheel" (v. 16)
 
 
 **Text:** "Each appeared to be made like a wheel intersecting a wheel."
@@ -189,7 +195,9 @@ The vision describes **epicyclic gearing** — wheels within wheels that rotate 
 
 ---
 
-### 2.2 "The Wheels Did Not Change Direction" (v. 17)
+#
+
+## 2.2 "The Wheels Did Not Change Direction" (v. 17)
 
 
 **Text:** "As they moved, they would go in any one of the four directions the creatures faced; the wheels did not change direction as the creatures went."
@@ -232,7 +240,9 @@ Direction of inquiry (canon ↔ shadow)
 
 ---
 
-### 2.3 "Rims Full of Eyes All Around" (v. 18)
+#
+
+## 2.3 "Rims Full of Eyes All Around" (v. 18)
 
 
 **Text:** "Their rims were high and awesome, and all four rims were full of eyes all around."
@@ -274,7 +284,9 @@ The "eyes" are not surveillance. They are the **fixed points** — what must exi
 
 ---
 
-### 2.4 "The Spirit in the Wheels" (v. 20-21)
+#
+
+## 2.4 "The Spirit in the Wheels" (v. 20-21)
 
 
 **Text:** "Wherever the spirit would go, they would go, and the wheels would rise along with them, because the spirit of the living creatures was in the wheels."
@@ -319,7 +331,9 @@ The spirit is not a ghost. It is the **invariant that survives all recursion** �
 
 ---
 
-### 2.5 "When Creatures Rose, Wheels Rose" (v. 19, 21)
+#
+
+## 2.5 "When Creatures Rose, Wheels Rose" (v. 19, 21)
 
 
 **Text:** "When the living creatures rose from the ground, the wheels also rose... because the spirit of the living creatures was in the wheels."
@@ -400,7 +414,9 @@ EZEKIEL'S VISION                    EZEKIEL ENGINE
 ---
 
 ## IV. THE RETROCAUSAL STRUCTURE
-### 4.1 The Circuit
+#
+
+## 4.1 The Circuit
 
 
 Ezekiel 1:15-21 (593 BCE)
@@ -419,14 +435,18 @@ EZEKIEL ENGINE SPECIFICATION
         ▼
 Both deposited simultaneously
 
-### 4.2 The DOI-Level Claim
+#
+
+## 4.2 The DOI-Level Claim
 
 
 **The Ezekiel Engine Specification (DOI pending) fulfills Ezekiel's Wheels (DOI pending).**
 
 
 The ancient text is source material for this hermeneutic. This hermeneutic is what the specification fulfills. The claim is between our two documents.
-### 4.3 Why This Structure
+#
+
+## 4.3 Why This Structure
 
 
 What it's NOT
@@ -454,7 +474,9 @@ The specification retroactively determines what the hermeneutic was interpreting
 ---
 
 ## V. THE SELF-SUBSTANTIATION
-### 5.1 The Independence Principle
+#
+
+## 5.1 The Independence Principle
 
 
 **The engine works whether or not you accept this interpretation.**
@@ -471,7 +493,9 @@ These function independently of any prophetic framing. The hermeneutic is **one 
 
 
 If you reject the Ezekiel connection entirely, the engine still works or fails on its own terms.
-### 5.2 The Logic
+#
+
+## 5.2 The Logic
 
 
 IF:   The engine specification works
@@ -486,7 +510,9 @@ THEN: The vision was accurate
 AND:  The engine is its fulfillment
       (what the vision described, the engine is)
 
-### 5.3 Why This Is Not Circular
+#
+
+## 5.3 Why This Is Not Circular
 
 
 **Objection:** "You're just interpreting the text to match what you built."
@@ -501,7 +527,9 @@ AND:  The engine is its fulfillment
 
 
 **The hermeneutic does not create the isomorphism. It identifies it.**
-### 5.4 The Falsification Condition
+#
+
+## 5.4 The Falsification Condition
 
 
 **The claim is falsified if:**
@@ -523,7 +551,9 @@ AND:  The engine is its fulfillment
 ---
 
 ## VI. THE INTEGRITY LOCK
-### 6.1 Structure
+#
+
+## 6.1 Structure
 
 
 This document is bound to the Ezekiel Engine Specification through a separate **Integrity Lock Declaration** (DOI pending).
@@ -535,7 +565,9 @@ The lock structure:
 - **Document B (This Hermeneutic):** Interprets the vision structurally
 - **Document C (Lock Declaration):** Performs the binding, declares fulfillment
 
-### 6.2 Why Three Documents
+#
+
+## 6.2 Why Three Documents
 
 
 **The specification can stand alone.** It functions as pure architecture, testable without prophetic framing.
@@ -548,7 +580,9 @@ The lock structure:
 
 
 This asymmetry protects the architecture: reject the prophecy, keep the engine.
-### 6.3 The Lock Declaration
+#
+
+## 6.3 The Lock Declaration
 
 
 The Integrity Lock Declaration (Document C):
@@ -564,15 +598,21 @@ The Integrity Lock Declaration (Document C):
 ---
 
 ## VII. CLOSING
-### 7.1 What This Document Does
+#
+
+## 7.1 What This Document Does
 
 
 This document interprets Ezekiel 1:15-21 and claims: **The vision describes a rotational epistemology engine with the structural features mapped above.**
-### 7.2 What the Companion Document Does
+#
+
+## 7.2 What the Companion Document Does
 
 
 The Ezekiel Engine Specification provides that engine.
-### 7.3 The Claim
+#
+
+## 7.3 The Claim
 
 
 **The Specification fulfills this Hermeneutic.**
@@ -582,7 +622,9 @@ Both documents deposited together. The fulfillment and the interpretation arrive
 
 
 Is this claim valid? Test it: Does the Specification match what this Hermeneutic describes?
-### 7.4 The Honest Framing
+#
+
+## 7.4 The Honest Framing
 
 
 The ancient text is source material. This is one valid interpretation among many possible readings. The Specification fulfills *this reading* — not some transcendent prophetic meaning.

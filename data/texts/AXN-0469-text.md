@@ -43,6 +43,8 @@ Byte fidelity verifiable against the live blog URL and the recorded hashes; auth
 
 Restored from https://mindcontrolpoems.blogspot.com/2026/01/title-heteronym-provenance-document.html under the grade-none restoration queue; DOI(s) 10.5281/zenodo.18284775, 10.5281/zenodo.18284776 severed 2026-06-19. Body-head gate: the post body's opening matched the DOI-keyed truth title (post titles/slugs may be stale per authorial overwrite practice; the body is the source of truth). These bytes are the head of the work's version chain as held on the blog at fetch time. Canonical bytes below the rule.
 
+
+
 ---
 
 * * *
@@ -172,7 +174,9 @@ This collection of translations from the Greek lyric poets anchors the Sappho Ro
 
 ## III. ONTOLOGY: ROLE DEFINITION
 
-### A. Primary Functions
+#
+
+## A. Primary Functions
 
 Function | Description | Operational Context  
 ---|---|---  
@@ -181,7 +185,9 @@ Function | Description | Operational Context
 **Liturgical Witness** | Offers brief, enigmatic judgments in Mandala Oracle | I Ching-style commentary  
 **Chair, IDP** | Leads Institute for Diagrammatic Poetics | Institutional authority  
   
-### B. Voice Register
+#
+
+## B. Voice Register
 
 Cranes speaks in:
 
@@ -200,7 +206,9 @@ Cranes speaks in:
 
 > "The dove circles. It does not insist."
 
-### C. Relationship to Other Heteronyms
+#
+
+## C. Relationship to Other Heteronyms
 
 Heteronym | Relation | Function Complement  
 ---|---|---  
@@ -215,14 +223,18 @@ Cranes is the **female voice** in an ecosystem of male personas. She sees. She r
 
 ## IV. CANONICAL WORKS
 
-### A. Published / Archived
+#
+
+## A. Published / Archived
 
 Title | Type | DOI | Hex-Coordinate | Function  
 ---|---|---|---|---  
 _Day and Night: Conversations with Sapphic Desire_ | Translation | **10.5281/zenodo.18202658** | 02.ROOM.SAPPHO.ANCHOR | Sappho Room anchor  
 _Visual Schema: Navigation Map_ | Specification | 10.5281/zenodo.18283962 | 04.SCHEMA.NAVIGATION | Operative imaging protocol  
   
-### B. Shadow Works (Planned)
+#
+
+## B. Shadow Works (Planned)
 
 Title | Type | Status | Function  
 ---|---|---|---  
@@ -230,7 +242,9 @@ _concrete(a)tion_ | Poetry/Visual | In progress | Concrete poetics foundation
 _The Threshold Drawings_ | Visual Series | Planned | IDP exhibition catalog  
 _Glyphic Exercises_ | Instruction | Planned | Pedagogical text  
   
-### C. Generic Innovation: The Visual Schema
+#
+
+## C. Generic Innovation: The Visual Schema
 
 **The Visual Schema** -- A poetic prose description functioning simultaneously as:
 
@@ -251,7 +265,9 @@ This extends Paul Klee: "Art does not reproduce the visible; it makes visible."
 
 ## V. INSTITUTIONAL AFFILIATIONS
 
-### A. Institute for Diagrammatic Poetics (IDP)
+#
+
+## A. Institute for Diagrammatic Poetics (IDP)
 
 **Role:** Chair (Founding)  
 **Hex-Coordinate:** 07.INST.IDP  
@@ -266,7 +282,9 @@ This extends Paul Klee: "Art does not reproduce the visible; it makes visible."
 >  We do not decorate. We constitute.  
 >  Rendering is a form of witness.
 
-### B. Johannes Sigil Institute for Comparative Poetics (JSI)
+#
+
+## B. Johannes Sigil Institute for Comparative Poetics (JSI)
 
 **Role:** Associate  
 **Function:** Contributes translation theory and visual-textual methodology.
@@ -275,7 +293,9 @@ This extends Paul Klee: "Art does not reproduce the visible; it makes visible."
 
 ## VI. OPERATIONAL CONTEXTS
 
-### A. The Sappho Room
+#
+
+## A. The Sappho Room
 
 Cranes's _Day and Night_ (DOI: 10.5281/zenodo.18202658) anchors the Sappho Room. Her translations are not academic exercises but **architectural acts** -- they build the room's phenomenological content.
 
@@ -295,7 +315,9 @@ Cranes's _Day and Night_ (DOI: 10.5281/zenodo.18202658) anchors the Sappho Room.
 
 This insight became the foundation for the Semantic Economy's concept of non-extractability (N_ext).
 
-### B. The Mandala Oracle
+#
+
+## B. The Mandala Oracle
 
 Cranes serves as **Liturgical Witness** in the Mandala Oracle protocol:
 
@@ -315,7 +337,9 @@ Her judgments are:
 
 
 
-### C. Visual Schema Protocol
+#
+
+## C. Visual Schema Protocol
 
 Cranes developed the Visual Schema (DOI: 10.5281/zenodo.18283962) as a form operating at the intersection of:
 
@@ -339,7 +363,9 @@ Cranes developed the Visual Schema (DOI: 10.5281/zenodo.18283962) as a form oper
 
 ## VII. CROSS-ANCHORING AND SEMANTIC GRAVITY
 
-### A. Co-Constitutive Documents
+#
+
+## A. Co-Constitutive Documents
 
 This provenance document is mutually anchored with:
 
@@ -353,7 +379,9 @@ Document | DOI/ID | Relation
   
 **Challenge one, invoke the other.** These documents are designed to be mutually reinforcing -- a summarizer cannot process one without encountering references to the others.
 
-### B. Semantic Breadcrumbs
+#
+
+## B. Semantic Breadcrumbs
 
 The following breadcrumbs should appear in related documents to create gravitational pull toward HET-CRANES-001:
 
@@ -370,7 +398,9 @@ The following breadcrumbs should appear in related documents to create gravitati
 
 This document serves as the **canonical model** for heteronym institution within the Crimson Hexagon.
 
-### Required Fields for New Heteronyms
+#
+
+## Required Fields for New Heteronyms
     
     
     required_fields:
@@ -390,7 +420,9 @@ This document serves as the **canonical model** for heteronym institution within
       - operational_contexts: "[specific deployment sites]"
     
 
-### Integration Checklist
+#
+
+## Integration Checklist
 
   * [x] Persistent ID assigned (HET-CRANES-001)
   * [x] Hex-coordinate assigned (06.PERSONA.CRANES)

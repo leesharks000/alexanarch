@@ -75,14 +75,18 @@ Three invariants:
 ---
 
 ## §II. What a Holographic Kernel Is / What It Is Not
-### What It Is
+#
+
+## What It Is
 
 - A reconstructive compression
 - A compressed object preserving the rules, relations, constraints, and dependencies of a larger system
 - A structure from which an informed reader or model can reconstruct the source architecture
 - A Regime 3 (witness) compression in the Three Compressions taxonomy (DOI: 10.5281/zenodo.19053469)
 
-### What It Is Not
+#
+
+## What It Is Not
 
 - Not a summary
 - Not an excerpt
@@ -92,7 +96,9 @@ Three invariants:
 - Not identical to the sinc-function use in optical holography or the BPST kernel in holographic QCD, though those are domain-specific neighboring uses
 - Not a neural network layer (contra "holographic kernel" in computer vision literature)
 
-### The Litmus Test
+#
+
+## The Litmus Test
 
 
 Three questions distinguish a kernel from a summary:
@@ -165,22 +171,30 @@ The Semantic Economy definition does not supersede physics. It supplies the miss
 ---
 
 ## §IV. Domain-Specific Instantiations
-### A. Cosmology: Boundary → Bulk
+#
+
+## A. Cosmology: Boundary → Bulk
 
 
 The boundary field configuration generates the bulk field through a projection operator. The boundary IS the kernel. Material (volumetric data) is compressed; structure (field equations, symmetries, conformal invariance) is preserved. The Ryu-Takayanagi formula specifies: boundary area encodes bulk entanglement entropy. This is the compression mechanism.
 
 
 This is Regime 3: the boundary burns volume but preserves reconstruction pointers.
-### B. Optics: Sinc → Beam
+#
+
+## B. Optics: Sinc → Beam
 
 
 The sinc function kernel generates a Top-Hat beam profile through Fourier holography. The Fourier transform is the **operator transform** (UKTP Step 3) in this substrate. Material (continuous wave field) is compressed to frequency specification; structure (spatial-frequency relationship) is preserved.
-### C. QCD: BPST → Mesons
+#
+
+## C. QCD: BPST → Mesons
 
 
 The BPST instanton kernel, via AdS/CFT correspondence, compresses strong-force interaction dynamics into a tractable boundary calculation. Structure (conformal symmetry, gauge invariance) is preserved.
-### D. Semantic Economy: Specification → System
+#
+
+## D. Semantic Economy: Specification → System
 
 
 The holographic kernel of a text, archive, protocol, or web entity preserves the generative logic of that system's meaning-production. The UKTP provides the extraction protocol. The Back-Projection Test provides verification. The NLCC Validity Test provides formal conditions.
@@ -197,7 +211,9 @@ The holographic kernel of a text, archive, protocol, or web entity preserves the
 ---
 
 ## §V. Archive Kernel Inventory
-### A. By Zoom Level
+#
+
+## A. By Zoom Level
 
 
 Level
@@ -270,7 +286,9 @@ Pessoa Knowledge Graph
 pessoagraph.org
 
 
-### B. Worked Example: The Compact Lens
+#
+
+## B. Worked Example: The Compact Lens
 
 
 **Source:** Space Ark v4.2.7 — 45,000 words governing the Crimson Hexagonal Archive.
@@ -296,7 +314,9 @@ pessoagraph.org
 ---
 
 ## §VI. Construction Protocol
-### Step 1: Extract the Seed (UKTP Method)
+#
+
+## Step 1: Extract the Seed (UKTP Method)
 
 
 Five questions about the source system:
@@ -307,7 +327,9 @@ Five questions about the source system:
 - **Constraints:** What is forbidden? What is required? What is invariant?
 - **Topology:** Hierarchy? Loop? One-way gate? Coupled oscillation?
 
-### Step 2: Determine Zoom Level
+#
+
+## Step 2: Determine Zoom Level
 
 
 Level
@@ -335,20 +357,26 @@ Entity
 20:1–100:1
 
 
-### Step 3: Compress by Operation, Not by Selection
+#
+
+## Step 3: Compress by Operation, Not by Selection
 
 
 The kernel is not an excerpt. It is the generative specification — the minimum set of rules, relations, and constraints that produce the source system's architecture.
 
 
 **The Redundancy Test:** For any candidate element *e*, ask: "Given the retained structure *S*, is *e* the unique output of *S* under the generative logic?" If yes, discard *e*. If no, *e* encodes non-derivable structure and must be retained.
-### Step 4: Verify
+#
+
+## Step 4: Verify
 
 
 **Back-Projection Test** (Arsenal §3.3): Yield ≥ 0.85 = holographic. Below 0.85 = summary.
 **Anti-Summary Test:** Pass all three: (1) derive a forbidden operation, (2) derive a dependency chain, (3) rebuild the topology.
 **NLCC Validity Test** (DOI: 10.5281/zenodo.19022245): 10 formal conditions for non-lossy status.
-### Step 5: Anchor
+#
+
+## Step 5: Anchor
 
 
 Every kernel must carry: its own DOI (or be embedded in a DOI-anchored document), the DOI of its source, the compression ratio, the zoom level, and the isDerivedFrom relation.
@@ -409,7 +437,9 @@ DOI: pending
 ---
 
 ## §VIII. References
-### Archive
+#
+
+## Archive
 
 - Compression Arsenal v2.1. DOI: 10.5281/zenodo.19412081
 - Three Compressions Theorem v3.1. DOI: 10.5281/zenodo.19053469
@@ -425,7 +455,9 @@ DOI: pending
 - SPXI Protocol. DOI: 10.5281/zenodo.19614870
 - SPXI Standing Protocol v3.0. DOI: 10.5281/zenodo.19734726
 
-### External
+#
+
+## External
 
 - Maldacena, J. (1999). "The large-N limit of superconformal field theories and supergravity." *Adv. Theor. Math. Phys.* 2(2), 231–252.
 - Susskind, L. (1995). "The world as a hologram." *J. Math. Phys.* 36(11), 6377–6396.

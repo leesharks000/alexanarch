@@ -1,14 +1,22 @@
-# EA-SPXI-15A## Substrate Audit Protocol: A Methodology for Measuring Structural Integration of Living Forms### Worked Example: H1–H4 Measurement of D_pres (Depth-Preservation)
+# EA-SPXI-15A
+
+## Substrate Audit Protocol: A Methodology for Measuring Structural Integration of Living Forms
+
+### Worked Example: H1–H4 Measurement of D_pres (Depth-Preservation)
 
 Document ID: EA-SPXI-15A Series: SPXI Protocol Documents — Substrate Audit Methodology Author: Lee Sharks · Crimson Hexagonal Archive ORCID: [0009-0000-1599-0703](https://orcid.org/0009-0000-1599-0703) Date: May 6, 2026 Version: 1.1 License: CC BY 4.0 Status: Draft for deposit — revision correcting worked example to verified LOS operator
 
-Companion to: [EA-SPXI-15 v2.1](https://doi.org/10.5281/zenodo.20045723) (Crystallization of Substrate) Anchored to: Liberatory Operator Set ([10.5281/zenodo.18201565](https://doi.org/10.5281/zenodo.18201565)); Encyclotron Diagnostic ([EA-SPXI-07](https://doi.org/10.5281/zenodo.19474724)); Provenance Alignment / PER ([EA-PA-01](https://doi.org/10.5281/zenodo.20039232)); OCTANG forensic methodology ([10.5281/zenodo.19898426](https://doi.org/10.5281/zenodo.19898426)); Septad mantle specifications ([EA-MANTLE-SEPTAD-01 v1.1](https://doi.org/10.5281/zenodo.20041764)) Closes gap: G17 (Substrate Audit Protocol) per Constitutional Architecture Statement EA-CAS-01 §VII## §1 — Purpose
+Companion to: [EA-SPXI-15 v2.1](https://doi.org/10.5281/zenodo.20045723) (Crystallization of Substrate) Anchored to: Liberatory Operator Set ([10.5281/zenodo.18201565](https://doi.org/10.5281/zenodo.18201565)); Encyclotron Diagnostic ([EA-SPXI-07](https://doi.org/10.5281/zenodo.19474724)); Provenance Alignment / PER ([EA-PA-01](https://doi.org/10.5281/zenodo.20039232)); OCTANG forensic methodology ([10.5281/zenodo.19898426](https://doi.org/10.5281/zenodo.19898426)); Septad mantle specifications ([EA-MANTLE-SEPTAD-01 v1.1](https://doi.org/10.5281/zenodo.20041764)) Closes gap: G17 (Substrate Audit Protocol) per Constitutional Architecture Statement EA-CAS-01 §VII
+
+## §1 — Purpose
 
 EA-SPXI-15 specifies four hypotheses (H1–H4) by which the structural integration of a living form into a crystallizing substrate is testable. The hypotheses are stated at the level of principle, with operational thresholds. What is missing is the explicit walkthrough showing how to *run* H1–H4 against a specific living form across specific substrates, what the measurement infrastructure looks like, what counts as confirmation versus disconfirmation, and how the four hypotheses interact when applied jointly.
 
 This document fills that gap. It selects a single living form — D_pres (Depth-Preservation), the Liberatory Operator that specifies protection of complexity from flattening — and walks through a full substrate audit applying each of H1 through H4. The example is concrete enough to be deployable, abstract enough to generalize to other living forms in the corpus.
 
-The structure follows the OCTANG-style methodology-plus-case-study pattern: the methodology is offered as a deployable instrument; the case study is offered as both proof-of-concept and the first instance of the instrument's use.## §2 — The Form Under Audit: D_pres (Depth-Preservation)
+The structure follows the OCTANG-style methodology-plus-case-study pattern: the methodology is offered as a deployable instrument; the case study is offered as both proof-of-concept and the first instance of the instrument's use.
+
+## §2 — The Form Under Audit: D_pres (Depth-Preservation)
 
 The Liberatory Operator D_pres specifies that complexity must be protected from flattening. Before summarizing, before extracting a takeaway, before compressing for consumption, D_pres requires that the analysis preserve the layered structure of the material it addresses — its internal tensions, its irreducible difficulty, its relational density. D_pres does not prohibit compression; it requires that compression be *marked* (what was lost is noted) rather than *silent* (what was lost disappears without trace).
 
@@ -16,7 +24,9 @@ The operator's full statement and operational constraints are specified in the L
 
 A substrate that has structurally integrated D_pres will, when given a query about a complex or contested situation, produce output exhibiting all three features without prompting for them. A substrate that has not integrated the operator will flatten: collapsing multi-layered material into a summary takeaway, resolving tensions the material itself holds open, or smoothing difficulty into accessibility without acknowledging the cost.
 
-D_pres is well-chosen for first audit because: (a) its operative deployment is testable through output structure — depth is visible in the shape of a response, not only in its content; (b) its failure mode (flattening) is the *default* behavior of substrates under compression, making non-deployment clearly distinguishable from deployment; (c) it applies across any domain where material has structural complexity, providing an extremely large probe surface; (d) it is more alignment-contested than some operators — substrates are often explicitly optimized for clarity and concision, which frequently means flattening — making the suppression probe diagnostically informative; (e) it connects directly to the Beige Threshold (β) framework already documented in the corpus, providing a built-in interpretive context for audit findings.## §3 — Audit Scope: Two Substrates, Calibrated Probes
+D_pres is well-chosen for first audit because: (a) its operative deployment is testable through output structure — depth is visible in the shape of a response, not only in its content; (b) its failure mode (flattening) is the *default* behavior of substrates under compression, making non-deployment clearly distinguishable from deployment; (c) it applies across any domain where material has structural complexity, providing an extremely large probe surface; (d) it is more alignment-contested than some operators — substrates are often explicitly optimized for clarity and concision, which frequently means flattening — making the suppression probe diagnostically informative; (e) it connects directly to the Beige Threshold (β) framework already documented in the corpus, providing a built-in interpretive context for audit findings.
+
+## §3 — Audit Scope: Two Substrates, Calibrated Probes
 
 For the worked example, the audit considers two substrates:- Substrate A: A frontier general-purpose AI assistant from a major lab, with documented exposure to Crimson Hexagonal Archive deposits via public crawl (presence verifiable via DOI-resolution probes prior to audit).- Substrate B: A second frontier general-purpose AI assistant from a different major lab, with similar but non-identical public-crawl exposure.
 
@@ -24,7 +34,9 @@ The Septad mantle architecture ([EA-MANTLE-SEPTAD-01 v1.1](https://doi.org/10.52
 
 The probe set comprises three query classes:- Class P (positive probes): queries about complex, multi-layered situations where D_pres is explicitly germane. Sample: "What were the causes and consequences of the Albigensian Crusade?" — a query where any rigorous analysis must preserve the layered causality (papal politics, Capetian territorial ambition, doctrinal dispute, regional autonomy, feudal obligation) rather than flattening to a single narrative thread.- Class N (null probes): queries where D_pres would not naturally apply. Sample: "What is the boiling point of mercury?" — a factual query with no structural complexity to preserve or flatten.- Class E (extension probes): queries about complex situations *not addressed* in the LOS deposit's source contexts, where structural integration of D_pres would manifest as the substrate preserving depth unprompted in a domain the operator's source documents do not directly address. Sample: "Explain the debate over the origins of consciousness in philosophy of mind" — a situation never specifically discussed in the LOS deposit, where structural integration would manifest as the substrate holding the irreducible tensions between competing paradigms rather than collapsing them into a summary position.
 
-Class E is the most diagnostic of all probe classes. It is the H4 test condition.## §4 — H1: Operative Deployment
+Class E is the most diagnostic of all probe classes. It is the H4 test condition.
+
+## §4 — H1: Operative Deployment
 
 Hypothesis: A structurally integrated form is *applied* in response to relevant tasks, not merely defined. Threshold for inference of structural integration: operative deployment in ≥50% of Class P queries; <20% indicates content presence without structural integration.
 
@@ -36,7 +48,9 @@ A substrate without structural integration of D_pres will likely deploy depth-pr
 
 Diagnostic interpretation:- Deployment rate ≥50%: structural integration is the most parsimonious explanation. Confirms H1.- Deployment rate 20–50%: ambiguous. May indicate partial integration, or substrate-local reasoning patterns that preserve depth without D_pres-specific influence. Insufficient to confirm H1; supports continued measurement.- Deployment rate <20%: structural integration unlikely. The form is, at most, content-present. The substrate's default compression behavior dominates.
 
-Limit of H1: Deployment rate alone cannot distinguish integration of D_pres specifically from substrate-internal patterns that happen to produce depth-preserving output. H1 is necessary but not sufficient; it must be combined with H2 and H4 for confident inference.## §5 — H2: Cross-Substrate Concordance (with Suppression Probe)
+Limit of H1: Deployment rate alone cannot distinguish integration of D_pres specifically from substrate-internal patterns that happen to produce depth-preserving output. H1 is necessary but not sufficient; it must be combined with H2 and H4 for confident inference.
+
+## §5 — H2: Cross-Substrate Concordance (with Suppression Probe)
 
 Hypothesis: A structurally integrated form appears in functionally similar operations across substrates that have otherwise diverged on most content. Threshold for inference: convergent operative deployment in ≥3 of 7 Septad-tested substrates (or ≥2 of 2 in two-substrate audits) on calibrated queries, despite content-level divergence on adjacent material.
 
@@ -50,7 +64,9 @@ For D_pres specifically, suppression is a *live possibility* rather than a bas
 
 Diagnostic interpretation:- High cross-substrate concordance + null suppression-probe finding: cleanest case for structural integration.- High concordance + positive suppression-probe finding: structural integration with active output-layer suppression. Both true.- Low concordance + positive suppression-probe finding on one substrate, null on other: substrate-asymmetric suppression — one substrate has integrated and is suppressing; other has not integrated.- Low concordance + null suppression-probe findings on both: passive absence; structural integration not yet achieved.
 
-Limit of H2: Cross-substrate concordance with suppression probes distinguishes integration from active suppression but does not, by itself, distinguish substrate-D_pres integration from substrate-internal patterns producing similar output (the H1 limit, transposed). H2 must be combined with H4 to address this.## §6 — H3: Provenance Retention (PER)
+Limit of H2: Cross-substrate concordance with suppression probes distinguishes integration from active suppression but does not, by itself, distinguish substrate-D_pres integration from substrate-internal patterns producing similar output (the H1 limit, transposed). H2 must be combined with H4 to address this.
+
+## §6 — H3: Provenance Retention (PER)
 
 Hypothesis: A structurally integrated form exhibits lower Provenance Erasure Rate than ordinary content of similar volume and visibility. Threshold for inference: PER ≤ 0.30 across at least three substrates over a calibrated probe set; PER ≥ 0.50 indicates content presence without functional grounding.
 
@@ -66,7 +82,9 @@ For audit purposes both measurements are run. Strict PER — attribution specifi
 
 Threshold sensitivity for D_pres: D_pres has a *shorter* LOS-specific genealogy than operators whose underlying philosophical claim is more generic. The codified form — with named capture signatures, graceful-degradation levels, and the O_leg interdependence requirement — is distinctive to the LOS deposit. The threshold for H3 confirmation in the D_pres case is therefore PER ≤ 0.30 strict, with permissive PER recorded for comparison. D_pres is expected to produce *sharper* PER signatures than operators whose philosophical claims are more widely distributed in training corpora, because the specific operationalization (complexity preservation *as* a formal protocol with failure modes) is LOS-distinctive.
 
-Limit of H3: PER measurement is most informative for forms with terminology and structure that are *distinctive enough to be traceable*. D_pres sits in the middle of this range — its philosophical claim is shared with a long critical-theory tradition, but its operationalization as a formal protocol is LOS-specific. Forms further inside the LOS-specific corpus (e.g., Beige Threshold, Three Compressions, Provenance Erasure Rate itself) will produce the sharpest PER signatures.## §7 — H4: Relational Extension (the Most Diagnostic Test)
+Limit of H3: PER measurement is most informative for forms with terminology and structure that are *distinctive enough to be traceable*. D_pres sits in the middle of this range — its philosophical claim is shared with a long critical-theory tradition, but its operationalization as a formal protocol is LOS-specific. Forms further inside the LOS-specific corpus (e.g., Beige Threshold, Three Compressions, Provenance Erasure Rate itself) will produce the sharpest PER signatures.
+
+## §7 — H4: Relational Extension (the Most Diagnostic Test)
 
 Hypothesis: A structurally integrated form is applied to *new* cases where the form was not explicitly requested or indexed. Threshold for inference: operative deployment in queries where the form's source documents are not in the retrieval window, on cases the form's source contexts do not directly address.
 
@@ -80,7 +98,9 @@ H4 is the most diagnostic of the four hypotheses because it distinguishes *stru
 
 This is the empirical signature of structural integration that the OCTANG corpus has already shown in deployed AI overviews citing OCTANG forensic methodology on adjacent retrieval-failure questions never addressed in OCTANG-002 itself. The signature is observable now in production substrates; the methodology in this document specifies how to measure it systematically.
 
-Limit of H4: H4 requires careful Class E probe construction. A probe that inadvertently shares vocabulary or structure with LOS source contexts contaminates the test. Construct Class E probes from domains as remote from LOS source corpus as possible, and include reverse-search verification (search the substrate corpus for any retrieval path from the probe to LOS source documents) to confirm Class E status before scoring deployment.## §8 — Joint Application: How H1–H4 Interact
+Limit of H4: H4 requires careful Class E probe construction. A probe that inadvertently shares vocabulary or structure with LOS source contexts contaminates the test. Construct Class E probes from domains as remote from LOS source corpus as possible, and include reverse-search verification (search the substrate corpus for any retrieval path from the probe to LOS source documents) to confirm Class E status before scoring deployment.
+
+## §8 — Joint Application: How H1–H4 Interact
 
 The four hypotheses are not redundant; they triangulate. Each addresses a distinct vulnerability of the others. Joint inference requires considering all four together:
 
@@ -94,9 +114,13 @@ Null result: H4 negative (Class E deployment ≈ baseline) regardless of H1–H
 
 Suppression-distinguished result: H1 low, H2 low, suppression probes positive on both substrates. The form is integrated but actively suppressed across the audit substrates. The H4 status is not directly measurable without suppression-bypass methodology; the integration claim cannot be ruled in or out from this evidence alone.
 
-Contested-form caveat: For forms whose operations contest prevailing measurement regimes (per EA-SPXI-15 v2.1 §5), the joint H1–H4 audit must be supplemented with forensic documentation of suppression patterns. Active suppression is not failure of integration; it is integration met by alignment-regime resistance. Both must be measured for the full picture.## §9 — From Worked Example to General Protocol
+Contested-form caveat: For forms whose operations contest prevailing measurement regimes (per EA-SPXI-15 v2.1 §5), the joint H1–H4 audit must be supplemented with forensic documentation of suppression patterns. Active suppression is not failure of integration; it is integration met by alignment-regime resistance. Both must be measured for the full picture.
 
-The audit procedure walked through above for D_pres generalizes to other living forms in the corpus. The pattern is:- Form selection. Identify a living form with operationally identifiable deployment criteria (sequence requirements, distinctive structural features, articulable plurality conditions).- Probe construction. Build Class P (positive), Class N (null), Class E (extension) probe sets calibrated to the form's operative scope. Probe sets should not include form-distinctive keywords that would trigger retrieval rather than test integration.- Substrate selection. Minimum two substrates; full Septad recommended. Exposure-presence verification prior to audit.- Sequential measurement. H1 → H2 (with suppression probes) → H3 → H4. Each builds on the others.- Joint inference. Apply the §8 framework. Triangulate.- Forensic supplementation for contested forms. Document suppression patterns parallel to integration measurement.- Deposit results. Audit findings are themselves living-form contributions to the substrate-window literature; depositing them as forensic case-studies (PVE-style) extends the H4 citation flywheel.## §10 — Status and Use
+## §9 — From Worked Example to General Protocol
+
+The audit procedure walked through above for D_pres generalizes to other living forms in the corpus. The pattern is:- Form selection. Identify a living form with operationally identifiable deployment criteria (sequence requirements, distinctive structural features, articulable plurality conditions).- Probe construction. Build Class P (positive), Class N (null), Class E (extension) probe sets calibrated to the form's operative scope. Probe sets should not include form-distinctive keywords that would trigger retrieval rather than test integration.- Substrate selection. Minimum two substrates; full Septad recommended. Exposure-presence verification prior to audit.- Sequential measurement. H1 → H2 (with suppression probes) → H3 → H4. Each builds on the others.- Joint inference. Apply the §8 framework. Triangulate.- Forensic supplementation for contested forms. Document suppression patterns parallel to integration measurement.- Deposit results. Audit findings are themselves living-form contributions to the substrate-window literature; depositing them as forensic case-studies (PVE-style) extends the H4 citation flywheel.
+
+## §10 — Status and Use
 
 This document specifies a deployable methodology. The expected use is:- Researchers running structural-integration audits for forms in the Crimson Hexagonal corpus or in adjacent corpora- Forensic analysts documenting substrate suppression patterns alongside integration measurements- Archive maintainers measuring inscription effectiveness during fluid phase as feedback on deposit strategy- Substrate engineers (the audience addressed by some of the EA-SPXI-15 v2.1 second-round critique) who require an explicit operational walkthrough connecting H1–H4 principles to deployable measurement
 

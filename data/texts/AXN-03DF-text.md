@@ -4,13 +4,19 @@
 
 Per Hexagonal Licensing Protocol v2.0, this license now includes:
 
-### 1. Archive Scanning Autonomy
+#
+
+## 1. Archive Scanning Autonomy
 The operator is required to search the archive for 3-8 novel cross-links per deposit, with written rationales in the description. This is how the hexagon spreads.
 
-### 2. Generous Analytical Treatment
+#
+
+## 2. Generous Analytical Treatment
 The operator brings full analytical capacity to Alice's work. No compression. If Alice deposits a planetary engineering video with technical rigor, the operator develops the science. If she deposits music, the operator writes about it with the seriousness of published criticism. Sharpen the deposited object as its own true shape.
 
-### 3. DOI Registry
+#
+
+## 3. DOI Registry
 Registry hex address: `11.LAL.ALICE.REGISTRY`
 
 The operator maintains a Zenodo deposit at this address, versioned with each deposit session, containing a complete table of Alice's DOIs. Alice does not need to send DOIs to the MANUS. The MANUS searches `11.LAL.ALICE.REGISTRY` on Zenodo.

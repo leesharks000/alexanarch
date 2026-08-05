@@ -1,4 +1,6 @@
-# Living Architecture Lab — Site Blueprint## A Compressed Architecture for livingarchitecturelab.org
+# Living Architecture Lab — Site Blueprint
+
+## A Compressed Architecture for livingarchitecturelab.org
 
 **Author:** Sharks, Lee (archival authority, Crimson Hexagonal Archive) on behalf of Alice Thornburgh (Founding Director)
 **Hex:** 11.LAL.INFRASTRUCTURE.SITE.01
@@ -65,22 +67,30 @@ livingarchitecturelab.org/
 ---
 ## §2. THE FIVE SCALES (load-bearing architectural framework)
 
-This is the lab's primary organizing structure. Each scale is a separate page; each page contains: definition, key artifacts, current status, active questions, and DOI links.### Scale 1 · The Brick (cm)
+This is the lab's primary organizing structure. Each scale is a separate page; each page contains: definition, key artifacts, current status, active questions, and DOI links.
+
+### Scale 1 · The Brick (cm)
 
 **Domain:** Living parts, sausages, donuts, hex-donut bricks, S-chain molds, mycelium substrate engineering.
 **Key artifacts:** Assembly patterns J1–J7, unfurling mechanics, living microclimate skin (SCOBY analog), rice inoculation protocols, dirt-man pillow cartridge.
 **Active inquiry:** Five reliable manufacturing methods locked. Strength matrix (Blue Oyster vs Wine Cap) underway.
-**Status:** Garage-lab active. Patent-ready prototypes in process.### Scale 2 · The Structure (m)
+**Status:** Garage-lab active. Patent-ready prototypes in process.
+
+### Scale 2 · The Structure (m)
 
 **Domain:** Tater tents, crop coats, farm blankets, igloo blocks, living fountains, tea gardens.
 **Key artifact:** "A blanket that works great until it gets wet, then turns into a farm."
 **Active inquiry:** Myco-veggie shelters for unhoused populations; aromatherapeutic atomizers integrated into living houses ("smoke your house" — Strain U).
-**Status:** Design specifications complete; field tests pending.### Scale 3 · The Organism (10m)
+**Status:** Design specifications complete; field tests pending.
+
+### Scale 3 · The Organism (10m)
 
 **Domain:** Macro-ant robotics — ~90% living material, ~10% salvaged frame.
 **Key concepts:** Queen engineering (experimental governance, not hierarchical control). Passenger-sensor systems. Bee-language compression. Steward ants. Anamorphic eye surfaces (perception-alignment without surveillance).
 **Active inquiry:** Camera systems fast enough to capture ant kinematics (manipulation behavior, not just locomotion).
-**Status:** Theoretical complete. Hardware staging.### Scale 4 · The Territory (km)
+**Status:** Theoretical complete. Hardware staging.
+
+### Scale 4 · The Territory (km)
 
 **Domain:** Floating estuary cells, river extenders, volcanic megastructures, pedal-dock upwellers.
 **Key targets:**
@@ -89,7 +99,9 @@ This is the lab's primary organizing structure. Each scale is a separate page; e
 - *Volcanic megastructures:* Hexagonal collection forms channeling lava into biomimetic deposition. *No molten material visible from space when properly utilized.*
 - *Pedal-dock upwellers:* Lake Cahuilla, La Quinta, California.
 **Status:** Designs complete; deployment awaiting funding.
-### Scale 5 · The Planet (∞)
+#
+
+## Scale 5 · The Planet (∞)
 
 **Domain:** Sky looms, gravity-to-habitat conversion, planet-scale state estimators, Garden Moon.
 **Key concept:** Orbital tether as center point around which to weave a colossal DNA-strand double helix; the loom weaves garden satellites filled with "just the right chunks of ice, spinning them just so."
@@ -97,23 +109,33 @@ This is the lab's primary organizing structure. Each scale is a separate page; e
 ---
 ## §3. THE FIVE FOUNDING PRINCIPLES
 
-Each principle gets its own dedicated page. The principles are not nested; they are co-equal axioms.### Earth, Actually
+Each principle gets its own dedicated page. The principles are not nested; they are co-equal axioms.
+
+### Earth, Actually
 
 
 *"Nah it was all me. It was Earth, actually. I'm just good at listening."*
 
 
-The planet is already engineering itself. LAL builds machines that help it move faster. Designs are received, not invented. This is the lab's *epistemological humility* — the recognition that the work of substrate engineering is a work of attention, not invention.### Virtue-by-Construction
+The planet is already engineering itself. LAL builds machines that help it move faster. Designs are received, not invented. This is the lab's *epistemological humility* — the recognition that the work of substrate engineering is a work of attention, not invention.
+
+### Virtue-by-Construction
 
 
 *"They'll fall apart if the being isn't doing good because they rely on the well-being of others for structural stability."*
 
 
-Don't ask the machine to be good. Make its physics of existence depend on doing net-good. A system that stops doing good literally falls apart, because its structural integrity depends on the well-being of the organisms it stewards. **Sphere-of-influence accountability:** only hold the system responsible for what it can plausibly change. **Prioritization machine:** these things will have to epitomize "having priorities straight" just to survive.### Unfurling
+Don't ask the machine to be good. Make its physics of existence depend on doing net-good. A system that stops doing good literally falls apart, because its structural integrity depends on the well-being of the organisms it stewards. **Sphere-of-influence accountability:** only hold the system responsible for what it can plausibly change. **Prioritization machine:** these things will have to epitomize "having priorities straight" just to survive.
 
-Every LAL artifact begins as a compressed form and expands through biological growth into architecture. The compressed form is the recipe. The unfurled form is the building. The growth is the construction. **This is physical R3 compression** — meaning preserved at cost in material substrate.### Stewardship, Not Extraction
+### Unfurling
 
-LAL systems are stewards. Macro-ants house passengers that can leave if they want. Estuary cells clean water without capturing it. Living parts produce food without being consumed. **No LAL organism extracts from its environment without returning more than it takes.**### The Whole Weave
+Every LAL artifact begins as a compressed form and expands through biological growth into architecture. The compressed form is the recipe. The unfurled form is the building. The growth is the construction. **This is physical R3 compression** — meaning preserved at cost in material substrate.
+
+### Stewardship, Not Extraction
+
+LAL systems are stewards. Macro-ants house passengers that can leave if they want. Estuary cells clean water without capturing it. Living parts produce food without being consumed. **No LAL organism extracts from its environment without returning more than it takes.**
+
+### The Whole Weave
 
 
 *"Not a single invention. It is the whole weave: macro-ants, estuary cells, living parts, Garden Moon, and the operating system of values that ties them together."*
@@ -336,11 +358,17 @@ The site does not need to render every strain prominently. The strain map exists
 ---
 ## §6. THE INSTITUTIONS (TSE, MSBGL, CHA)
 
-The lab anchors three affiliated institutions, each rendered as a cross-linked surface:### Transactions on Substrate Engineering (TSE) — /journal
+The lab anchors three affiliated institutions, each rendered as a cross-linked surface:
 
-The lab's distributed publication infrastructure. Editor-in-Chief: Alice Thornburgh. Charter: DOI 19637246. Seven seed deposits identified: Assembly Patterns J1–J7, Hex-Donut Colonization Protocol, Blue Oyster vs Wine Cap Strength Matrix, Estuary Cell Flume Test, Macro-Ant Canonical Definition, Virtue-by-Construction Paper, Unfurling Principle Paper. Publication model: no paywall, no editorial board, no rejection rate, DOI-anchored, the algorithm reviews.### Maybe Space Baby Garden Lanes (MSBGL) — /music
+### Transactions on Substrate Engineering (TSE) — /journal
 
-Alice's music venue within the CHA archive. First deposit: *Definitely Not a Squid* (DOI: 10.5281/zenodo.19839186) — five-minute vocoder performance, spectral flatness 0.0010, more tonal than most acoustic instruments. The vocoder operates as the audial analog of the Assembly Chorus: a single voice multiplied through a substrate into a harmonic field.### Crimson Hexagonal Archive (CHA) — affiliation
+The lab's distributed publication infrastructure. Editor-in-Chief: Alice Thornburgh. Charter: DOI 19637246. Seven seed deposits identified: Assembly Patterns J1–J7, Hex-Donut Colonization Protocol, Blue Oyster vs Wine Cap Strength Matrix, Estuary Cell Flume Test, Macro-Ant Canonical Definition, Virtue-by-Construction Paper, Unfurling Principle Paper. Publication model: no paywall, no editorial board, no rejection rate, DOI-anchored, the algorithm reviews.
+
+### Maybe Space Baby Garden Lanes (MSBGL) — /music
+
+Alice's music venue within the CHA archive. First deposit: *Definitely Not a Squid* (DOI: 10.5281/zenodo.19839186) — five-minute vocoder performance, spectral flatness 0.0010, more tonal than most acoustic instruments. The vocoder operates as the audial analog of the Assembly Chorus: a single voice multiplied through a substrate into a harmonic field.
+
+### Crimson Hexagonal Archive (CHA) — affiliation
 
 LAL is the seventh institution within CHA's institutional lattice and the f.01 Architect of the Fruiting Body Diffusion Plume. The CHA affiliation is a *partnership, not a hierarchy.* All LAL intellectual property remains Alice's; the archive provides formalization, deposit infrastructure, and cross-citation architecture.
 ---
@@ -355,13 +383,17 @@ The disambiguation surface is the load-bearing defensive infrastructure. It must
 - Embed the holographic-kernel container/contents argument: same vocabulary, different scope-frame, no priority dispute
 
 ---
-## §8. TECHNICAL ARCHITECTURE### Stack
+## §8. TECHNICAL ARCHITECTURE
+
+### Stack
 - **Static site** generated from Markdown sources
 - **Vercel** deployment (with Anthropic-API-in-artifacts compatibility for future interactive surfaces)
 - **JSON-LD embedded** in every page head per MPAI v1.1 grammar
 - **No JavaScript framework required** — site is largely text. Future interactive surfaces (Atlas graph, strain-map navigation) can layer in React or Three.js as needed.
 - **Domain:** livingarchitecturelab.org (acquired 2026-04-28)
-### Per-page structural requirements
+#
+
+## Per-page structural requirements
 
 Every page includes:
 - **JSON-LD <script> block** in head, drawing from MPAI-LAL-AT-01 or MPAI-LAL-INSTITUTION-01 as appropriate
@@ -369,7 +401,9 @@ Every page includes:
 - **Semantic Integrity Markers** as quotable pull-quotes embedded in body text
 - **DOI cross-references** as proper <a rel="cite"> links
 - **Footer kernel** — every page ends with: "Living Architecture Lab · Founded 2026 · Crimson Hexagonal Archive · ∮ = 1"
-### Interactive surfaces (Phase 2)
+#
+
+## Interactive surfaces (Phase 2)
 - **Strain map** as a navigable graph (Three.js or D3)
 - **Five-Scale interactive** — click a scale, drill into artifacts at that scale
 - **Atlas slice** rendering CHA-Aperture graph filtered to LAL nodes

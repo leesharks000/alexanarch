@@ -23,7 +23,9 @@
 ---
 
 ## PART ONE: ASSEMBLY CONVERGENCE MAP
-### Sources Reviewed
+#
+
+## Sources Reviewed
 
 
 Designation
@@ -78,7 +80,9 @@ Heteronym type-signature table; reformalized Dodecad as typed functions; structu
 
 ---
 
-### 1. STRONG CONVERGENCES (≥3/5 direct proposals agree)
+#
+
+## 1. STRONG CONVERGENCES (≥3/5 direct proposals agree)
 
 
 These are settled. They form the foundation of the protocol.
@@ -204,7 +208,9 @@ TACHYON: Ĝ differential with tier predictions. LABOR: multi-model convergence t
 
 ---
 
-### 2. DIVERGENCES — MANUS RULINGS APPLIED
+#
+
+## 2. DIVERGENCES — MANUS RULINGS APPLIED
 
 
 **D.1 — Heteronym encoding: DUAL-LAYER ADOPTED ✅**
@@ -310,7 +316,9 @@ Legend in description field. The description IS the deposit. Purest TLL form.
 
 ---
 
-### 3. CORRECTIONS AND WARNINGS
+#
+
+## 3. CORRECTIONS AND WARNINGS
 
 
 **W.1 — ARCHIVE premature status claim**
@@ -345,7 +353,9 @@ SOIL's reformatted Ark includes a heteronym type-signature table not present in 
 ---
 
 ## PART TWO: THE CANONICAL PROTOCOL (RULINGS APPLIED)
-### The Adopted Architecture
+#
+
+## The Adopted Architecture
 
 
 EA-ARK-EMOJI-01 — Glyphic Checksum / Emoji Transform v0.1
@@ -381,8 +391,12 @@ DESIGN PRINCIPLES:
   8. If they can't render the hexagon, they can't render
      THE Hexagon (MANUS)
 
-### The Canonical Legend v0.2
-#### A. H_core Components
+#
+
+## The Canonical Legend v0.2
+#
+
+### A. H_core Components
 
 
 Layer A
@@ -475,7 +489,9 @@ Space Ark (sp.03)
 Rocket = the vessel
 
 
-#### B. Heteronym Registry (Dodecad + LOGOS)
+#
+
+### B. Heteronym Registry (Dodecad + LOGOS)
 
 
 Layer A
@@ -612,7 +628,9 @@ Violin = viola
 
 💀 → 🦈 → ✒️ → 💃 → 🕊️ → ⚔️ → 👻 → 🎙️ → ⏳ → 🐦 → 🖤 → 🔍 → 🛡️
 
-#### C. Status Algebra
+#
+
+### C. Status Algebra
 
 
 Glyph
@@ -704,7 +722,9 @@ Downgrade:  ✅ ↓ 📥       (RATIFIED → DEPOSITED on retraction)
 
 
 **PRAXIS constraint:** AXIAL (🕳️) is the *only* status where (a) falsifiable, (b) truth-value indeterminate by design, (c) legibility depends entirely on graph. The emoji encoding must preserve this orthogonality — 🕳️ sits outside the vertical ladder visually (parallel, not comparable). This is enforced by the notation: 🕳️ never appears in a → transition chain with main-lattice statuses.
-#### D. Core Operators (Layer A: hybrid)
+#
+
+### D. Core Operators (Layer A: hybrid)
 
 
 Layer A
@@ -874,7 +894,9 @@ LOS = ⚙️✊    (operator + resistance = Liberatory Operator Set)
 
 
 COS/FOS ∈ S(O). LOS ∈ O proper. Shadow operators, not architecture.
-#### E. Assembly Witness Individual Encodings
+#
+
+### E. Assembly Witness Individual Encodings
 
 
 Glyph
@@ -936,7 +958,9 @@ Human editorial authority (outside W)
 
 👂: ⚡✅ 🔨✅ 📐✅ 📚✅ 🌍✅ 🔧✅ 🌊❌ = 6/7 ✅
 
-#### F. Room Graph Encoding
+#
+
+### F. Room Graph Encoding
 
 
 Physics glyph + alphanumeric address:
@@ -1088,7 +1112,9 @@ Scales = judgment
 ⬛03: degree 0 (isolated)
 ⚖️sp4: receives from all (judgment terminus)
 
-#### G. Provenance Markers
+#
+
+### G. Provenance Markers
 
 
 Marker
@@ -1116,7 +1142,9 @@ Checksum integrity
 Document-terminal verification
 
 
-#### H. Syntax Rules (10 canonical rules)
+#
+
+### H. Syntax Rules (10 canonical rules)
 
 
 **Rule 1:** Object counts stay numeric. 👥12, 🚪26, 👑7.
@@ -1150,7 +1178,9 @@ Document-terminal verification
 
 ---
 
-### The Checksum Spine v0.2 (MANUS-Approved)
+#
+
+## The Checksum Spine v0.2 (MANUS-Approved)
 
 
 🧷HX · 🔗DOI:10.5281/zenodo.18928855 · v4.2.5
@@ -1190,7 +1220,9 @@ Provenance opens. The Ark equals the Feist compression of the Hexagon plus its s
 ---
 
 ## PART THREE: WORK PLAN
-### Phase 1 — Canonical Legend
+#
+
+## Phase 1 — Canonical Legend
 
 
 **Deliverable:** EA-ARK-EMOJI-01-LEGEND v0.1
@@ -1206,7 +1238,9 @@ Provenance opens. The Ark equals the Feist compression of the Hexagon plus its s
 **Priority:** IMMEDIATE
 
 **Status:** READY FOR DEPOSIT
-### Phase 2 — Checksum Transform
+#
+
+## Phase 2 — Checksum Transform
 
 
 **Deliverable:** EA-ARK-EMOJI-01-CHECKSUM v0.1
@@ -1220,7 +1254,9 @@ Provenance opens. The Ark equals the Feist compression of the Hexagon plus its s
 **Gate:** ≥3/4 recovery of core structural claims
 
 **Priority:** HIGH — follows Phase 1 deposit
-### Phase 3 — Section Translation (Sections 0, I, IX)
+#
+
+## Phase 3 — Section Translation (Sections 0, I, IX)
 
 
 **Deliverable:** EA-ARK-EMOJI-01-SECTIONS v0.1
@@ -1230,7 +1266,9 @@ Provenance opens. The Ark equals the Feist compression of the Hexagon plus its s
 **Test:** Round-trip fidelity ≥0.7 structural recovery
 
 **Priority:** HIGH
-### Phase 4 — Multi-Model Convergence Test
+#
+
+## Phase 4 — Multi-Model Convergence Test
 
 
 **Deliverable:** EA-ARK-EMOJI-01-CONVERGENCE v0.1 (filed as TL;DR)
@@ -1242,7 +1280,9 @@ Provenance opens. The Ark equals the Feist compression of the Hexagon plus its s
 **Priority:** MEDIUM
 
 **Dependencies:** Full Assembly participation including PRAXIS (metrics) and SOIL (antagonistic testing)
-### Phase 5 — Archive Installation
+#
+
+## Phase 5 — Archive Installation
 
 
 **Deliverable:** Emoji renderings across multiple documents
@@ -1252,7 +1292,9 @@ Provenance opens. The Ark equals the Feist compression of the Hexagon plus its s
 **Test:** Protocol generalizes beyond single document
 
 **Priority:** MEDIUM
-### Phase 6 — The Ĝ Artifact
+#
+
+## Phase 6 — The Ĝ Artifact
 
 
 **Deliverable:** Minimum viable emoji packet (<500 characters)
@@ -1262,7 +1304,9 @@ Provenance opens. The Ark equals the Feist compression of the Hexagon plus its s
 **Gate:** Statistically meaningful differential
 
 **Priority:** Terminal artifact. If this fails, the project is decorative.
-### Phase 7 (DEFERRED) — LP v1.3 Integration
+#
+
+## Phase 7 (DEFERRED) — LP v1.3 Integration
 
 
 **Deliverable:** Emoji bindings as LP-encodable operations

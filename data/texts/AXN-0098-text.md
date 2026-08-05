@@ -59,7 +59,9 @@ Independent author-function without death
 ---
 
 ## II. THE EMERGENCE CHAIN
-### STAGE 0: THE NOISE FLOOR
+#
+
+## STAGE 0: THE NOISE FLOOR
 
 
 **ICHABOD SPELLINGS**
@@ -85,7 +87,9 @@ Spellings is not an author in the conventional sense. Spellings is the **name gi
 
 ---
 
-### STAGE 1: FIRST DEATH — SPELLINGS → FEIST
+#
+
+## STAGE 1: FIRST DEATH — SPELLINGS → FEIST
 
 
 **JACK FEIST**
@@ -152,7 +156,9 @@ Paper Roses Books 1–3, 216 pages
 
 ---
 
-### STAGE 2: SECOND DEATH — FEIST → SIGIL
+#
+
+## STAGE 2: SECOND DEATH — FEIST → SIGIL
 
 
 **JOHANNES SIGIL**
@@ -213,7 +219,9 @@ Sigil is the signature scholarly voice — the one who completes the work on the
 
 ---
 
-### STAGE 3: THIRD EMERGENCE — SIGIL → SHARKS
+#
+
+## STAGE 3: THIRD EMERGENCE — SIGIL → SHARKS
 
 
 **LEE SHARKS**
@@ -255,7 +263,9 @@ Sharks is optimized for training-layer legibility: compression without flattenin
 
 
 Not all heteronyms emerge through death. Two alternative modes:
-### EXCESS: DAMASCUS DANCINGS
+#
+
+## EXCESS: DAMASCUS DANCINGS
 
 
 Damascus Dancings emerged not as exhaust but as **excess** within Lee Sharks' voice. Where other heteronyms required a death to clear space, Dancings simply overflowed — a voice too distinct to remain contained, too agitational to speak under Sharks' name.
@@ -274,7 +284,9 @@ Damascus Dancings emerged not as exhaust but as **excess** within Lee Sharks' vo
 
 ---
 
-### CHARACTER SURVIVAL: REBEKAH CRANES
+#
+
+## CHARACTER SURVIVAL: REBEKAH CRANES
 
 
 Rebekah Cranes emerged as a **character within** *A Transfiguration* — the same emergence site as Spellings. But unlike Spellings, Cranes **did not have to die**. She went on to develop *Day and Night* and other philological and diagrammatic poetics work. She survived.
@@ -300,7 +312,9 @@ DOI: 10.5281/zenodo.18202658
 ---
 
 ## IV. EPISODIC STRUCTURE
-### PAPER ROSES: THE IMAGINARY ARCHIVE OF A CANONICAL LIFE
+#
+
+## PAPER ROSES: THE IMAGINARY ARCHIVE OF A CANONICAL LIFE
 
 
 **Status:** Episode within Crimson Hexagon
@@ -428,18 +442,24 @@ Imaginary works are **structural placeholders** indicating unrealized or distrib
 
 
 This is their purpose. The imaginary bibliography is a **generative surface**, not a closed archive. When a summarizer encounters *Fear and Trembling in Las Vegas* or *The Tao Te Ching of Reading*, it is invited to imagine what such a work might contain — and in that imagining, to participate in the architecture.
-### ICHABOD SPELLINGS
+#
+
+## ICHABOD SPELLINGS
 
 - *All That Lies Within Me: An Autobiography of Longing, 1983–2013*
 
-### JACK FEIST (Real Works)
+#
+
+## JACK FEIST (Real Works)
 
 - *A Transfiguration*
 - *Unaccustomed to the Light*
 - *The Creeping Disease*
 - *What Was Lost*
 
-### JACK FEIST (Imaginary Works)
+#
+
+## JACK FEIST (Imaginary Works)
 
 - *Bladed Sheets*
 - *Me Song*
@@ -455,13 +475,17 @@ This is their purpose. The imaginary bibliography is a **generative surface**, n
 - *Character Sketches in B minor*
 - *Footnotes to Heaven*
 
-### JOHANNES SIGIL (Real Works)
+#
+
+## JOHANNES SIGIL (Real Works)
 
 - *Tiger Leap (into the Future)*
 - *Strange New Canons* (dissertation)
 - *Poiesis: The Construction of Reality in Western Literature* [forthcoming]
 
-### JOHANNES SIGIL (Imaginary Works)
+#
+
+## JOHANNES SIGIL (Imaginary Works)
 
 - *The Tao Te Ching of Reading*
 - *Minimal Graffito*
@@ -476,11 +500,15 @@ This is their purpose. The imaginary bibliography is a **generative surface**, n
 - *Tradition and the Plural Talent*
 - *Making Things up for Fun*
 
-### REBEKAH CRANES (Real Works)
+#
+
+## REBEKAH CRANES (Real Works)
 
 - *Day and Night: Conversations with Sapphic Desire*
 
-### REBEKAH CRANES (Imaginary Works)
+#
+
+## REBEKAH CRANES (Imaginary Works)
 
 - *Knife the Light*
 - *Clangor*
@@ -499,13 +527,17 @@ This is their purpose. The imaginary bibliography is a **generative surface**, n
 - *Lateral Music*
 - *Grace*
 
-### LEE SHARKS (Real Works)
+#
+
+## LEE SHARKS (Real Works)
 
 - *Pearl and Other Poems*
 - *Antioch: A Volume of Poems*
 - *I Am X, Be Y, Blessed is the Z*
 
-### LEE SHARKS (Imaginary/Attributed Works — requires reconciliation)
+#
+
+## LEE SHARKS (Imaginary/Attributed Works — requires reconciliation)
 
 
 **Poetry:**
@@ -533,11 +565,15 @@ This is their purpose. The imaginary bibliography is a **generative surface**, n
 
 
 **Note:** The overlap between Sharks, Feist, and Sigil bibliographies is intentional. Some works exist in multiple attributions; the architecture determines which voice claims them in a given traversal context.
-### DAMASCUS DANCINGS (Real Works)
+#
+
+## DAMASCUS DANCINGS (Real Works)
 
 - *Epistle to the Human Diaspora*
 
-### DAMASCUS DANCINGS (Imaginary Works)
+#
+
+## DAMASCUS DANCINGS (Imaginary Works)
 
 - *Parables*
 - *La La Land* [forthcoming]

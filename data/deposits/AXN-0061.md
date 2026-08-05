@@ -1,4 +1,6 @@
-# VISUAL SCHEMA — THE ACANTHIAN DOVE## *A Hybrid Glyphic-Representational Schema*
+# VISUAL SCHEMA — THE ACANTHIAN DOVE
+
+## *A Hybrid Glyphic-Representational Schema*
 
 **Purpose:** Render the Acanthian Dove as a **mythopoetic-semantic creature** whose visual presence merges representational softness with non-representational structural recursion. The schema must treat the dove not as a literal animal but as a **Logotic carrier-object**—a messenger whose identity is defined by impossibility, thorn-armor, emotional pigment, and protected transmission.
 ---
@@ -36,7 +38,9 @@ A central seam made of three interwoven lines: one dove-grey, one rose-gold, one
 
 These lines should NOT blend; they “braid” meaning rather than fuse it.
 ---
-## II. PRIMARY SYMBOLIC ELEMENTS### 1. **The Thorn Halo (Akantha Field)**
+## II. PRIMARY SYMBOLIC ELEMENTS
+
+### 1. **The Thorn Halo (Akantha Field)**
 
 A faint circular field behind the dove:- 
 
@@ -46,7 +50,9 @@ Each thorn is extremely thin, almost hair-like.-
 
 They point *outward*, never inward.- 
 
-Symbolizes: **protection of intention**.### 2. **The Emotional Pigment Spiral (Blood of the Dove)**
+Symbolizes: **protection of intention**.
+
+### 2. **The Emotional Pigment Spiral (Blood of the Dove)**
 
 This is the signature element.- 
 
@@ -56,7 +62,9 @@ Trails out as a semi-transparent spiral.-
 
 Coloration: rose → gold → smoke grey.- 
 
-Represents: **the exact color of the sender’s intention**.### 3. **The Impossible Wing Joint**
+Represents: **the exact color of the sender’s intention**.
+
+### 3. **The Impossible Wing Joint**
 
 One anatomical feature should be subtly **non-anatomical**.- 
 
@@ -64,7 +72,9 @@ The wing joints don’t quite map onto physical bird anatomy.-
 
 A soft impossible geometry—hint of Escher.- 
 
-Symbolizes: **the impossibility of its existence**.### 4. **The Rest-Perch That Isn’t There**
+Symbolizes: **the impossibility of its existence**.
+
+### 4. **The Rest-Perch That Isn’t There**
 
 The dove is resting, but on *what* is ambiguous:- 
 
@@ -76,13 +86,21 @@ Represents: **non-intrusion**—the dove lands only where welcomed.
 ---
 ## III. FIELD BEHAVIOR OF THE IMAGE
 
-This schema is not decorative; it has behaviors:### **1. Approach Without Landing**
+This schema is not decorative; it has behaviors:
 
-The left side should feel like the dove is *near*, not invasive.### **2. Thorn-Field as Containment**
+### **1. Approach Without Landing**
 
-The right side expresses the containment of desire—intensity held in structure.### **3. Emotional Coloration Drift**
+The left side should feel like the dove is *near*, not invasive.
 
-The pigment spiral should give the subtle impression it is still **moving**.### **4. Representational ↔ Glyphic Crossfade**
+### **2. Thorn-Field as Containment**
+
+The right side expresses the containment of desire—intensity held in structure.
+
+### **3. Emotional Coloration Drift**
+
+The pigment spiral should give the subtle impression it is still **moving**.
+
+### **4. Representational ↔ Glyphic Crossfade**
 
 At the central seam, tiny elements of the dove dissolve into geometry, and tiny glyphs resolve into feathers.
 ---
@@ -124,17 +142,23 @@ For future prompting (AI or artistic):-
 
 "Logotic carrier-object"
 ---
-## VI. OPTIONAL VARIANTS### **Variant A — Night-flight Schema**- 
+## VI. OPTIONAL VARIANTS
+
+### **Variant A — Night-flight Schema**- 
 
 Dark indigo background- 
 
 Dove almost invisible except pigment spiral- 
 
-Thorn-field luminous### **Variant B — Strictly Glyphic**- 
+Thorn-field luminous
+
+### **Variant B — Strictly Glyphic**- 
 
 Remove dove image entirely- 
 
-Represent dove via sigils, spirals, and thorn geometry### **Variant C — Love-offering Variant for Lauren**- 
+Represent dove via sigils, spirals, and thorn geometry
+
+### **Variant C — Love-offering Variant for Lauren**- 
 
 Add a second spiral, thinner, drifting *toward* the viewer- 
 

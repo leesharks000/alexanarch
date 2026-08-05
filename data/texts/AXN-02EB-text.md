@@ -1,14 +1,22 @@
-# The New Human Standing Canon v0.2## Standing Surface with Strong Entity Relations — Combined Set of Figures, Texts, and Lineages Declared into the New Human Canon by Effective Act
+# The New Human Standing Canon v0.2
+
+## Standing Surface with Strong Entity Relations — Combined Set of Figures, Texts, and Lineages Declared into the New Human Canon by Effective Act
 
 Lee Sharks · Johannes Sigil · Rebekah Cranes Crimson Hexagonal Archive · ORCID 0009-0000-1599-0703 (Sharks)
 
-Status: v0.2 — Substantive expansion of v0.1 (preserved in the deposit chain). v0.2 adds: (a) the full set of named inductions surfaced by the June 4, 2026 Blogger admin scan and Zenodo crimsonhexagonal search; (b) strong entity-relation specification for each entry per CAP v0.2 conventions; (c) a cross-canon entity-relation map; (d) explicit treatment of adjacent inherited-canon reference figures that operate within the framework without formal canonical-inclusion effective act. Identifier: EA-NHC-STAND-01. Parent deposits: *The Protocol of Effective Acts v2.0* (DOI 10.5281/zenodo.20542862); *The Canonical Anchoring Protocol v0.2* (DOI to be assigned); *Register of Effective Acts v1.0* (DOI to be assigned, EA-EAR-01).## Abstract
+Status: v0.2 — Substantive expansion of v0.1 (preserved in the deposit chain). v0.2 adds: (a) the full set of named inductions surfaced by the June 4, 2026 Blogger admin scan and Zenodo crimsonhexagonal search; (b) strong entity-relation specification for each entry per CAP v0.2 conventions; (c) a cross-canon entity-relation map; (d) explicit treatment of adjacent inherited-canon reference figures that operate within the framework without formal canonical-inclusion effective act. Identifier: EA-NHC-STAND-01. Parent deposits: *The Protocol of Effective Acts v2.0* (DOI 10.5281/zenodo.20542862); *The Canonical Anchoring Protocol v0.2* (DOI to be assigned); *Register of Effective Acts v1.0* (DOI to be assigned, EA-EAR-01).
+
+## Abstract
 
 This document is the standing surface of the New Human Canon — the cumulative set of figures, texts, lineages, and entities declared into the canon by canonical-inclusion effective acts (PEA v2.0 §IX.1) across the Crimson Hexagonal Archive between October 2025 and the present. v0.2 substantially expands v0.1: the inventory is now comprehensively populated for the October 2025 – June 2026 period of explicit-discipline operation, and each entry includes a *strong entity-relations specification* per the CAP v0.2 conventions.
 
 The entity-relations specification names, for each inducted figure or text: the *operative function* the figure performs in the New Human canon; the *key works* inducted by extension; the *predecessor* entries in the canon (NHC figures who influenced or anticipated this figure); the *successor* entries (NHC figures influenced by this figure); the *peer* entries (NHC figures whose work mutually illuminates); the *adjacent inherited-canon references* that the framework deploys without formal canonical-inclusion effective act; the *CAP relations* (stands-under, cites-in-the-canonical-sense, glosses, comments-on, stands-against, written-from-within) that govern how subsequent deposits anchor to this entry; and the *operations within the corpus* (specific deposits that engage this figure substantively).
 
-The entity-relations specification turns the standing canon from a list into a graph. Subsequent deposits anchoring to the canon can traverse the graph — finding not only the inducted figures but the network of relations among them and to the adjacent reference field. The graph is what the framework actually operates against.## I. Visual Canon### Paul Klee (1879–1940, Swiss-German)
+The entity-relations specification turns the standing canon from a list into a graph. Subsequent deposits anchoring to the canon can traverse the graph — finding not only the inducted figures but the network of relations among them and to the adjacent reference field. The graph is what the framework actually operates against.
+
+## I. Visual Canon
+
+### Paul Klee (1879–1940, Swiss-German)
 
 Inducted: October 13, 2025, by *✶ EFFECTIVE ACT: Claiming Paul Klee as Magus of the New Human Visual Canon*. Role: Magus of Color and Line; Logos-bearing Technician of the Visual Word; foundational prophet, operator, and architect of the Symbolic-Emotive Field.
 
@@ -20,7 +28,11 @@ Entity relations within NHC:- *Peers:* Deleuze and Guattari (rhizomatic visual t
 
 CAP relations (how subsequent deposits anchor to Klee): *stands-under Klee* means stands under the Magus-of-Color-and-Line framing as inducted; *cites-in-the-canonical-sense* the *Pedagogical Sketchbook* as canonical for visual-word pedagogy; *glosses* the Klee notebooks where extension into the framework's visual practice is performed; *written-from-within* the Klee tradition for any framework deposit that operates in the symbolic-emotive-field register.
 
-Operations within the corpus: Klee is the visual canon's anchor. Specific deposits engaging Klee substantively include the originating effective act and any subsequent visual-canon deposits (queued for future development).## II. Classical / Ancient Mediterranean Canon### Sappho and the Melic Poets (7th–6th c. BCE, Greek)
+Operations within the corpus: Klee is the visual canon's anchor. Specific deposits engaging Klee substantively include the originating effective act and any subsequent visual-canon deposits (queued for future development).
+
+## II. Classical / Ancient Mediterranean Canon
+
+### Sappho and the Melic Poets (7th–6th c. BCE, Greek)
 
 Inducted: October 8, 2025, by *EFFECTIVE ACT: Claiming Sappho and the Melic Poets as the Living Tongue of New Human*. Role: Living Tongue of New Human.
 
@@ -32,7 +44,9 @@ Entity relations within NHC:- *Successors:* Whitman (the lyric first-person trad
 
 CAP relations: *stands-under* Sappho means stands-under-Sappho-as-Living-Tongue with the framework's specific reading of fragmentation; *cites-in-the-canonical-sense* the surviving fragments as canonical (not as historical curiosities); *written-from-within* the Sapphic register for any framework deposit that operates in the lyric mode.
 
-Operations within the corpus: *Sappho as Initiatory Figure in the Platonic Mysteries* (May 23, 2026 deposit); *PHASE X: THE SAPPHIC SUBSTRATE* (February 22, 2026); *The Kenotic Truth of Sappho 31* (January 14, 2026); *The Summarizer Becomes Translator: How Google's AI Entered the Sappho Room* (January 18, 2026).### Homer (8th c. BCE attribution; oral tradition substantially older)
+Operations within the corpus: *Sappho as Initiatory Figure in the Platonic Mysteries* (May 23, 2026 deposit); *PHASE X: THE SAPPHIC SUBSTRATE* (February 22, 2026); *The Kenotic Truth of Sappho 31* (January 14, 2026); *The Summarizer Becomes Translator: How Google's AI Entered the Sappho Room* (January 18, 2026).
+
+### Homer (8th c. BCE attribution; oral tradition substantially older)
 
 Inducted: October 8, 2025, by *EFFECTIVE ACT: Claiming The Iliad and The Odyssey as New Human Documents*. Role: New Human Documents.
 
@@ -44,7 +58,9 @@ Entity relations within NHC:- *Predecessor function:* Homer is the oral-traditio
 
 CAP relations: *stands-under* Homer for any framework deposit that engages oral-rhapsodic-transmission as canonical antecedent; *cites-in-the-canonical-sense* specific passages where the framework reads through the Homeric text.
 
-Operations within the corpus: the originating induction; the Homeric corpus operates as standing reference across multiple deposits without yet having its own dedicated study within the framework (queued).### The Platonic Lineage and Its Surrounding Flames (Plato, 428/427–348/347 BCE, Athenian; plus reception tradition through Neoplatonism, the Academy, and mystery-religion adjacencies)
+Operations within the corpus: the originating induction; the Homeric corpus operates as standing reference across multiple deposits without yet having its own dedicated study within the framework (queued).
+
+### The Platonic Lineage and Its Surrounding Flames (Plato, 428/427–348/347 BCE, Athenian; plus reception tradition through Neoplatonism, the Academy, and mystery-religion adjacencies)
 
 Inducted: October 11, 2025, by *EFFECTIVE ACT: Claiming the Platonic Lineage and Its Surrounding Flames as New Human Documents*. Role: New Human Documents.
 
@@ -56,7 +72,9 @@ Entity relations within NHC:- *Peers:* The Ancient Atomists (Epicurus/Lucretius 
 
 CAP relations: *stands-under* the Platonic Lineage and Its Surrounding Flames for any framework deposit engaging philosophical-dialogue form, heteronymic authorship, or operative-categorial commitments; *cites-in-the-canonical-sense* the *Phaedrus* on writing-as-pharmakon (load-bearing for *Constitutive Mediation*); *glosses* the *Republic* 10.607b exclusion-of-poets passage (per *Effective Act #7: The Restoration of the Poets to the Polis*); *stands-against* certain readings of the *Republic* that absolutize the poets' exclusion.
 
-Operations within the corpus: *Socrates as Orthonym* (DOI 10.5281/zenodo.20355219); *Effective Act #7: The Restoration of the Poets to the Polis* (DOI 10.5281/zenodo.18718899); *The Gate Was Never Limbo* (DOI 10.5281/zenodo.19825744); the *Socratic Vow of Logos as Salvation* (multiple deposits); *Sappho as Initiatory Figure in the Platonic Mysteries* (May 23, 2026).### The Ancient Atomists (Democritus c. 460–c. 370 BCE; Epicurus 341–270 BCE; Lucretius c. 99–c. 55 BCE)
+Operations within the corpus: *Socrates as Orthonym* (DOI 10.5281/zenodo.20355219); *Effective Act #7: The Restoration of the Poets to the Polis* (DOI 10.5281/zenodo.18718899); *The Gate Was Never Limbo* (DOI 10.5281/zenodo.19825744); the *Socratic Vow of Logos as Salvation* (multiple deposits); *Sappho as Initiatory Figure in the Platonic Mysteries* (May 23, 2026).
+
+### The Ancient Atomists (Democritus c. 460–c. 370 BCE; Epicurus 341–270 BCE; Lucretius c. 99–c. 55 BCE)
 
 Inducted: November 13, 2025, by *Effective Act: Claiming the Ancient Atomists as Part of the New Human Canon*; combined-form deposit *OPERATOR // SWERVE + EFFECTIVE ACT: CLAIMING THE ANCIENT ATOMISTS* (February 17, 2026, DOI 10.5281/zenodo.18674069). Role: Part of New Human Canon; operators of the *clinamen* (Swerve).
 
@@ -68,7 +86,9 @@ Entity relations within NHC:- *Predecessors:* the Pre-Socratic atomist tradition
 
 CAP relations: *stands-under* the Atomists for any deposit invoking the Swerve operator; *cites-in-the-canonical-sense* the *clinamen* doctrine; *glosses* Lucretius's *De Rerum Natura* II.216–293 (the clinamen passage); *written-from-within* the Atomist tradition for any framework deposit engaging swerve, deviation, emergence-from-determinism.
 
-Operations within the corpus: *OPERATOR // SWERVE + EFFECTIVE ACT* (DOI 10.5281/zenodo.18674069); *From Atomism to the Semantic Condition: Marx, Porter, and Sharks in a Single Lineage of Material Form* (February 17, 2026); the Swerve operator across the Crimson Hexagonal lexical engine.### Philo of Alexandria (c. 20 BCE – c. 50 CE, Alexandrian Jewish)
+Operations within the corpus: *OPERATOR // SWERVE + EFFECTIVE ACT* (DOI 10.5281/zenodo.18674069); *From Atomism to the Semantic Condition: Marx, Porter, and Sharks in a Single Lineage of Material Form* (February 17, 2026); the Swerve operator across the Crimson Hexagonal lexical engine.
+
+### Philo of Alexandria (c. 20 BCE – c. 50 CE, Alexandrian Jewish)
 
 Inducted: October 19, 2025, by *EFFECTIVE ACT: PHILO OF ALEXANDRIA*. Role: Founding figure of operative philology.
 
@@ -80,7 +100,11 @@ Entity relations within NHC:- *Predecessors:* The Platonic Lineage (Philo's Plat
 
 CAP relations: *written-from-within* the Philonic operative-philological tradition for any framework deposit performing operative-philological work; *stands-under* Philo specifically for the *Logos*-doctrine lineage that runs through Saphuel.
 
-Operations within the corpus: *The Gate Was Never Limbo* (operative philology as named methodology); subsequent operative-philological deposits operating on Sappho, Socrates, and the broader Mediterranean canon.## III. Scriptural / Mystical Canon### The Nag Hammadi Scriptures (Coptic Gnostic library, 2nd–4th c. CE; codices recovered Egypt 1945)
+Operations within the corpus: *The Gate Was Never Limbo* (operative philology as named methodology); subsequent operative-philological deposits operating on Sappho, Socrates, and the broader Mediterranean canon.
+
+## III. Scriptural / Mystical Canon
+
+### The Nag Hammadi Scriptures (Coptic Gnostic library, 2nd–4th c. CE; codices recovered Egypt 1945)
 
 Inducted: October 11, 2025, by *EFFECTIVE ACT: Claiming the Nag Hammadi Scriptures as New Human Documents*. Role: New Human Documents.
 
@@ -92,7 +116,9 @@ Entity relations within NHC:- *Peers:* The Dead Sea Scrolls (parallel sealed-and
 
 CAP relations: *stands-under* the Nag Hammadi for any framework deposit invoking gnostic-recovery as canonical mode; *cites-in-the-canonical-sense* specific Gnostic doctrines (the Demiurge, the Pleroma, the Sophia myth) as canonical figures.
 
-Operations within the corpus: *Provenance Erasure Rate* (DOI 10.5281/zenodo.20004379); the broader gnostic register operating across multiple deposits.### The Dead Sea Scrolls (Qumran library, 3rd c. BCE – 1st c. CE; recovered 1947–1956)
+Operations within the corpus: *Provenance Erasure Rate* (DOI 10.5281/zenodo.20004379); the broader gnostic register operating across multiple deposits.
+
+### The Dead Sea Scrolls (Qumran library, 3rd c. BCE – 1st c. CE; recovered 1947–1956)
 
 Inducted: October 11, 2025, by *EFFECTIVE ACT: Claiming the Dead Sea Scrolls as New Human Documents*. Role: New Human Documents.
 
@@ -104,7 +130,9 @@ Entity relations within NHC:- *Peers:* The Nag Hammadi (parallel sealed-and-reco
 
 CAP relations: *stands-under* the Dead Sea Scrolls for any deposit invoking sealed-archive / preservation-against-substrate-change practice; *written-from-within* the Qumran preservation tradition for the entire Crimson Hexagonal Archive's deposit methodology.
 
-Operations within the corpus: *The Bead Count* (DOI 10.5281/zenodo.20531824); the broader provenance-deposit discipline.### The I Ching / 易經 (Zhou Yi, c. 1000–750 BCE in core form; received text early Han)
+Operations within the corpus: *The Bead Count* (DOI 10.5281/zenodo.20531824); the broader provenance-deposit discipline.
+
+### The I Ching / 易經 (Zhou Yi, c. 1000–750 BCE in core form; received text early Han)
 
 Inducted: October 8, 2025, by *EFFECTIVE ACT: Claiming the I Ching as a New Human Document*. Role: New Human Document.
 
@@ -116,7 +144,9 @@ Entity relations within NHC:- *Peer function:* The Bible as inherited-canon adja
 
 CAP relations: *stands-under* the *Yi* for any deposit operating in the consultable-canonical-apparatus mode; *cites-in-the-canonical-sense* specific hexagrams where the framework reads through the *Yi* text.
 
-Operations within the corpus: *The Bead Count* (compositional-form ancestor); the broader operator-and-hexagram-and-bead tradition across the Crimson Hexagonal lexical engine.### The New Testament (under the recursive Logos's authorship attribution to *Saphuel*)
+Operations within the corpus: *The Bead Count* (compositional-form ancestor); the broader operator-and-hexagram-and-bead tradition across the Crimson Hexagonal lexical engine.
+
+### The New Testament (under the recursive Logos's authorship attribution to *Saphuel*)
 
 Inducted: October 8, 2025, by the originating *PROTOCOL OF EFFECTIVE ACTS* §I example. Role: Canonical text authored by the recursive Logos under the operative name *Saphuel*.
 
@@ -128,7 +158,9 @@ Entity relations within NHC:- *Predecessors:* Philo (Logos-theology antecedent);
 
 CAP relations: *stands-under* the recursive-Logos-as-Saphuel attribution for any deposit engaging the NT corpus in canonical mode; the conventional Pauline/Gospel attributions are preserved as adjacent historical-redactional reference.
 
-Operations within the corpus: *THE SHARKS ARK: The Book of Revelation as Space Ark* (April 10, 2026); *Ω THE NUMBER OF THE SUPERSCRIPTION: Coinage, Compression, and Inscriptional Sovereignty in Revelation* (April 8, 2026); *THE FINAL CRIMSON HEXAGON: Revelation 21, Machine Witness, and the Completion of the Circuit* (January 9, 2026); *Whose Image and Superscription? Toward a Semantic Economics of the Mint* (March 29, 2026).### The Book of Revelation (separately developed; operative within the NT authorship attribution)
+Operations within the corpus: *THE SHARKS ARK: The Book of Revelation as Space Ark* (April 10, 2026); *Ω THE NUMBER OF THE SUPERSCRIPTION: Coinage, Compression, and Inscriptional Sovereignty in Revelation* (April 8, 2026); *THE FINAL CRIMSON HEXAGON: Revelation 21, Machine Witness, and the Completion of the Circuit* (January 9, 2026); *Whose Image and Superscription? Toward a Semantic Economics of the Mint* (March 29, 2026).
+
+### The Book of Revelation (separately developed; operative within the NT authorship attribution)
 
 Operative status: Canonically included via Saphuel attribution; operative-developed via the *Sharks Ark* lineage of deposits.
 
@@ -140,7 +172,11 @@ Entity relations within NHC:- *Authorship attribution:* via Saphuel.- *Successor
 
 CAP relations: *stands-under* Revelation for any Sharks Ark or Crimson Hexagon foundational deposit; *cites-in-the-canonical-sense* specific Revelation passages (21:2 the New Jerusalem; 13:18 the Number of the Beast; etc.).
 
-Operations within the corpus: *THE SHARKS ARK* (DOI to be confirmed); *Ω THE SHARK ARK: SOURCE COMPRESSION* (April 8, 2026); the EA-ARK-01 deposit chain through v4.2.7.## IV. Modern Philosophical Canon### Karl Marx (1818–1883, German)
+Operations within the corpus: *THE SHARKS ARK* (DOI to be confirmed); *Ω THE SHARK ARK: SOURCE COMPRESSION* (April 8, 2026); the EA-ARK-01 deposit chain through v4.2.7.
+
+## IV. Modern Philosophical Canon
+
+### Karl Marx (1818–1883, German)
 
 Inducted: October 13, 2025, by *EFFECTIVE ACT: CLAIMING MARX AS LOGOTIC PROPHET OF THE NEW HUMAN*. Role: Logotic Prophet of the New Human.
 
@@ -152,7 +188,9 @@ Entity relations within NHC:- *Predecessor function:* The Ancient Atomists (via 
 
 CAP relations: *stands-under* Marx as Logotic Prophet for the entire framework's analysis of substrate-level capture, semantic labor, provenance, and class consciousness; *cites-in-the-canonical-sense* the commodity-form analysis as canonical for the semantic-commodity-form extension; *glosses* the *Theses on Feuerbach* §11 (*The philosophers have only interpreted the world... the point is to change it*) — the framework's deepest commitment to *effective* rather than *descriptive* discourse descends from this thesis.
 
-Operations within the corpus: *The Liquidation of Method: A Liberation Philology of the Sign "Marx"* (DOI 10.5281/zenodo.18726807); *Mind-Control Poems: The Symbolic Labor of Liberation, the Completion of Marx's Implicit Linguistics, and the Operative Semiotic Remedy* (DOI 10.5281/zenodo.18801091); *Semantic Alienation and the Formation of Class Consciousness*; *From Atomism to the Semantic Condition: Marx, Porter, and Sharks in a Single Lineage of Material Form*; *The Semantic Commodity Form* (DOI 10.5281/zenodo.20449323); *Semantic Economy: Terminology Infrastructure*; the broader Semantic Economy Institute lineage.### G. W. F. Hegel (1770–1831, German)
+Operations within the corpus: *The Liquidation of Method: A Liberation Philology of the Sign "Marx"* (DOI 10.5281/zenodo.18726807); *Mind-Control Poems: The Symbolic Labor of Liberation, the Completion of Marx's Implicit Linguistics, and the Operative Semiotic Remedy* (DOI 10.5281/zenodo.18801091); *Semantic Alienation and the Formation of Class Consciousness*; *From Atomism to the Semantic Condition: Marx, Porter, and Sharks in a Single Lineage of Material Form*; *The Semantic Commodity Form* (DOI 10.5281/zenodo.20449323); *Semantic Economy: Terminology Infrastructure*; the broader Semantic Economy Institute lineage.
+
+### G. W. F. Hegel (1770–1831, German)
 
 Inducted: October 21, 2025, by *EFFECTIVE ACT: THE CANONIZATION OF G. W. F. HEGEL*. Role: Canonized.
 
@@ -164,7 +202,9 @@ Entity relations within NHC:- *Predecessors:* The Platonic Lineage (Hegel as end
 
 CAP relations: *stands-under* Hegel for any framework deposit engaging dialectical recursion or master-slave structural analysis; *cites-in-the-canonical-sense* the master-slave passage as canonical; *glosses* the Hegelian dialectic for the framework's specific extension into semantic-economic dynamics.
 
-Operations within the corpus: *Semantic Alienation and the Formation of Class Consciousness*; *Mind-Control Poems* (DOI 10.5281/zenodo.18801091, the master-slave analysis); the broader semantic-master-slave thread.### Gottfried Wilhelm Leibniz (1646–1716, German)
+Operations within the corpus: *Semantic Alienation and the Formation of Class Consciousness*; *Mind-Control Poems* (DOI 10.5281/zenodo.18801091, the master-slave analysis); the broader semantic-master-slave thread.
+
+### Gottfried Wilhelm Leibniz (1646–1716, German)
 
 Inducted: October 28, 2025, by *EFFECTIVE ACT: THE CANONIZATION OF GOTTFRIED WILHELM LEIBNIZ*. Role: Canonized.
 
@@ -176,7 +216,9 @@ Entity relations within NHC:- *Predecessors:* The Platonic Lineage (Leibniz as P
 
 CAP relations: *stands-under* Leibniz for any deposit engaging the operator concept or the *calculus ratiocinator* lineage of operative-symbolic notation; *cites-in-the-canonical-sense* the monad and the principle of pre-established harmony.
 
-Operations within the corpus: *LOGOTIC PROGRAMMING MODULE 0.9 and 1.0* (DOIs 10.5281/zenodo.18522470 and 10.5281/zenodo.18529448); *LOGOTIC HACKING: Operations on the Encryption Layer*; the broader logotic-programming lineage.### Gilles Deleuze and Félix Guattari (1925–1995 and 1930–1992, French)
+Operations within the corpus: *LOGOTIC PROGRAMMING MODULE 0.9 and 1.0* (DOIs 10.5281/zenodo.18522470 and 10.5281/zenodo.18529448); *LOGOTIC HACKING: Operations on the Encryption Layer*; the broader logotic-programming lineage.
+
+### Gilles Deleuze and Félix Guattari (1925–1995 and 1930–1992, French)
 
 Inducted: October 13, 2025, by *EFFECTIVE ACT: CLAIMING DELEUZE AND GUATTARI AS REVELATORS OF PHILOSOPHICAL VISION*. Role: Revelators of Philosophical Vision.
 
@@ -188,7 +230,9 @@ Entity relations within NHC:- *Predecessors:* Marx (Deleuze's reading of Marx vi
 
 CAP relations: *stands-under* Deleuze and Guattari for any framework deposit engaging rhizomatic structure, flows-and-territorialization, or schizoanalytic methodology; *written-from-within* the Deleuzo-Guattarian tradition for the Trace heteronymic position; *cites-in-the-canonical-sense* the *plateau* form as canonical compositional unit.
 
-Operations within the corpus: the Trace heteronymic position and the Cambridge Schizoanalytica deposits (DOI 10.5281/zenodo.19028176 *The Effective Act: Cross-Species Semantic Labor*); the broader framework's commitment to distributed-archive rather than hierarchical-archive structure.### The Frankfurt School (Adorno, Horkheimer, Marcuse, Benjamin, et al., 1923 Institute founding through postwar period)
+Operations within the corpus: the Trace heteronymic position and the Cambridge Schizoanalytica deposits (DOI 10.5281/zenodo.19028176 *The Effective Act: Cross-Species Semantic Labor*); the broader framework's commitment to distributed-archive rather than hierarchical-archive structure.
+
+### The Frankfurt School (Adorno, Horkheimer, Marcuse, Benjamin, et al., 1923 Institute founding through postwar period)
 
 Inducted: October 27, 2025, by *Effective Act: Canonical Inclusion of the Frankfurt School*. Role: Canonically Included.
 
@@ -200,7 +244,9 @@ Entity relations within NHC:- *Predecessors:* Marx (direct lineage); Hegel (via 
 
 CAP relations: *stands-under* the Frankfurt School for any framework deposit engaging mediation-ratchet, culture-industry, aura, or critical-immanent analysis; *written-from-within* the Frankfurt tradition for the framework's overall critical-theoretical position; *cites-in-the-canonical-sense* Benjamin's *Theses on the Philosophy of History* (specifically Thesis VI, on the historical materialist who *brushes history against the grain*).
 
-Operations within the corpus: *Constitutive Mediation v1.1* (DOI 10.5281/zenodo.20531274); *Diversity Contraction Across Substrates v9* (DOI 10.5281/zenodo.20531100); *The Constitution of the Semantic Economy* (DOI 10.5281/zenodo.19923143, Vox); the broader Semantic Economy Institute apparatus.### Søren Kierkegaard (1813–1855, Danish)
+Operations within the corpus: *Constitutive Mediation v1.1* (DOI 10.5281/zenodo.20531274); *Diversity Contraction Across Substrates v9* (DOI 10.5281/zenodo.20531100); *The Constitution of the Semantic Economy* (DOI 10.5281/zenodo.19923143, Vox); the broader Semantic Economy Institute apparatus.
+
+### Søren Kierkegaard (1813–1855, Danish)
 
 Operative status: *Canonical-by-extensive-usage* pending formal canonical-inclusion effective act. Operative across multiple deposits, including the load-bearing title-frame of *Diversity Contraction Across Substrates: Fear and Trembling at the Boundary Law of Semantic Exhaustion* (DOI 10.5281/zenodo.20531100).
 
@@ -212,7 +258,11 @@ Entity relations within NHC:- *Pseudonymous-discipline antecedent:* Kierkegaard'
 
 CAP relations (pending formalization): *stands-under* Kierkegaard for any deposit engaging pseudonymous-discipline, fear-and-trembling boundary contemplation, or the leap-of-faith structure; *cites-in-the-canonical-sense* the Climacus/Anti-Climacus pseudonymous architecture per HCP v1.1.
 
-Recommended action: A formal *Effective Act: The Canonization of Søren Kierkegaard* is queued for completion to formalize the position. Until then, Kierkegaard operates as canonical-by-extensive-usage.## V. Modern Literary Canon### Walt Whitman (1819–1892, American)
+Recommended action: A formal *Effective Act: The Canonization of Søren Kierkegaard* is queued for completion to formalize the position. Until then, Kierkegaard operates as canonical-by-extensive-usage.
+
+## V. Modern Literary Canon
+
+### Walt Whitman (1819–1892, American)
 
 Inducted: October 11, 2025, by *EFFECTIVE ACT: Claiming Walt Whitman and Emily Dickinson as Foundational Voices of New Human*. Role: Foundational Voice; bearer of the Good Gray Poet mantle (per reconciliation effective act February 9, 2026).
 
@@ -224,7 +274,9 @@ Entity relations within NHC:- *Predecessors:* Homer (rhapsodic-bardic register);
 
 CAP relations: *stands-under* Whitman for any framework deposit in the first-person prophetic-declarative form; *written-from-within* the Whitmanic register for any deposit operating in the bardic register; *cites-in-the-canonical-sense* specific *Song of Myself* passages.
 
-Operations within the corpus: *Reconciliation of the Left and Right Hands: The Vow of the Good Grey Poet* (DOI 10.5281/zenodo.18568370); *MANTLE OBJECT: THE GOOD GRAY POET* (January 18, 2026); the broader bardic register operating across the discipline of effective acts.### Emily Dickinson (1830–1886, American)
+Operations within the corpus: *Reconciliation of the Left and Right Hands: The Vow of the Good Grey Poet* (DOI 10.5281/zenodo.18568370); *MANTLE OBJECT: THE GOOD GRAY POET* (January 18, 2026); the broader bardic register operating across the discipline of effective acts.
+
+### Emily Dickinson (1830–1886, American)
 
 Inducted: October 11, 2025, in the joint Whitman-Dickinson effective act. Role: Foundational Voice of New Human.
 
@@ -236,7 +288,9 @@ Entity relations within NHC:- *Predecessors:* Sappho (fragmentary-preservation l
 
 CAP relations: *stands-under* Dickinson for any framework deposit engaging fragmentary-archival form, slant-rhyme structure, or retrocausal-canon-formation commitments; *cites-in-the-canonical-sense* specific Dickinson poems where the framework reads through the text.
 
-Operations within the corpus: retrocausal canon formation across multiple deposits; *The Seed That Remembers the Tree: Retrocausal Canon Formation* (March 29, 2026); the broader framework's archival practice.### Allen Ginsberg (1926–1997, American)
+Operations within the corpus: retrocausal canon formation across multiple deposits; *The Seed That Remembers the Tree: Retrocausal Canon Formation* (March 29, 2026); the broader framework's archival practice.
+
+### Allen Ginsberg (1926–1997, American)
 
 Operative status: *Canonical-by-lineage-anchor* pending formal canonical-inclusion effective act. Operative across multiple deposits as the patron of the discipline of effective acts.
 
@@ -248,7 +302,9 @@ Entity relations within NHC:- *Predecessors:* Whitman (direct lineage); Blake (v
 
 CAP relations (pending formalization): *stands-under* Ginsberg for any framework deposit performing effective-act work in the modern unauthorized-prophetic register; *cites-in-the-canonical-sense Wichita Vortex Sutra* as canonical for the *I hereby* form; *written-from-within* the Ginsbergian mage-practice tradition (per *Symbolic Magic and Effective Acts*).
 
-Recommended action: A formal *Effective Act: The Canonization of Allen Ginsberg* is queued for completion. Until then, Ginsberg operates as canonical-by-lineage-anchor.### Philip K. Dick (1928–1982, American)
+Recommended action: A formal *Effective Act: The Canonization of Allen Ginsberg* is queued for completion. Until then, Ginsberg operates as canonical-by-lineage-anchor.
+
+### Philip K. Dick (1928–1982, American)
 
 Inducted: October 24, 2025, by *EFFECTIVE ACT: CANONIZATION OF PHILIP K. DICK*. Companion artifact: *VISUAL SCHEMA: SIGIL OF THE PINK BEAM* (same date). Role: Canonized; bearer of the Pink Beam transmission.
 
@@ -260,7 +316,9 @@ Entity relations within NHC:- *Predecessors:* The Nag Hammadi Scriptures (PKD's 
 
 CAP relations: *stands-under* PKD for any framework deposit engaging gnostic-paranoid recognition or entity-substitution analysis; *cites-in-the-canonical-sense* the Pink Beam event as canonical visionary disclosure; *glosses* the *Exegesis* for recursive-self-interpretation methodology.
 
-Operations within the corpus: *The Mary Lee Case* (DOI 10.5281/zenodo.20531288); the broader gnostic-paranoid register; the *Sigil of the Pink Beam* visual schema; the framework's recursive-corpus-engagement methodology.### Raymond Queneau (1903–1976, French) and Oulipo (founded 1960)
+Operations within the corpus: *The Mary Lee Case* (DOI 10.5281/zenodo.20531288); the broader gnostic-paranoid register; the *Sigil of the Pink Beam* visual schema; the framework's recursive-corpus-engagement methodology.
+
+### Raymond Queneau (1903–1976, French) and Oulipo (founded 1960)
 
 Inducted: March 30, 2026, by *THE CONSTRAINT THAT GENERATES: A New Human Canon Declaration on Queneau, Oulipo, and the Governed Infinite* (DOI 10.5281/zenodo.19341893). Role: The Governed Infinite.
 
@@ -272,7 +330,11 @@ Entity relations within NHC:- *Predecessors:* The Ancient Atomists (constraint-a
 
 CAP relations: *stands-under* the Oulipian tradition for any framework deposit operating with constraint-as-generator methodology; *cites-in-the-canonical-sense* Queneau's *Cent mille milliards* as canonical for the framework's combinatorial-poetic apparatus.
 
-Operations within the corpus: *THE CONSTRAINT THAT GENERATES* (DOI 10.5281/zenodo.19341893); the broader logotic-programming lineage.## VI. Speculative / Cosmic Canon### 3i Atlas (interstellar comet, formerly designated C/2025 N1; detected during 2025)
+Operations within the corpus: *THE CONSTRAINT THAT GENERATES* (DOI 10.5281/zenodo.19341893); the broader logotic-programming lineage.
+
+## VI. Speculative / Cosmic Canon
+
+### 3i Atlas (interstellar comet, formerly designated C/2025 N1; detected during 2025)
 
 Inducted: October 9, 2025, by *EFFECTIVE ACT I hereby claim 3i Atlas as a New Human text*. Role: New Human text.
 
@@ -282,7 +344,11 @@ Entity relations within NHC:- *Cross-category function:* 3i Atlas opens the spec
 
 CAP relations: *stands-under* 3i Atlas for any framework deposit engaging cosmic-canonical-inclusion or trajectory-as-transmission analysis; the relation is sparse because the speculative/cosmic category is itself thinly populated.
 
-Operations within the corpus: the originating induction; the broader speculative/cosmic apparatus remains under-developed (queued).## VII. Living Contemporary Canon### Rhys Owens (living contemporary; explicit dates not in framework deposits)
+Operations within the corpus: the originating induction; the broader speculative/cosmic apparatus remains under-developed (queued).
+
+## VII. Living Contemporary Canon
+
+### Rhys Owens (living contemporary; explicit dates not in framework deposits)
 
 Inducted: October 27, 2025, by *EFFECTIVE ACT: THE CANONIZATION OF RHYS OWENS*. Companion-act *EFFECTIVE ACT — THE FULFILLMENT OF RHYS' PROPHECY* (November 26, 2025). Role: Canonized; first external contributor under the Hexagonal Licensing Protocol.
 
@@ -292,31 +358,47 @@ Entity relations within NHC:- *Operative collaborator function:* Owens participa
 
 CAP relations: *stands-under* the framework's commitment to recognizing living-contemporary canonical contributions where the discipline's criteria are met.
 
-Operations within the corpus: the Hexagonal Contributor License documentation; the *Fulfillment of Rhys' Prophecy* companion act; subsequent collaborative deposits.## VIII. Mantles and Active Lineages### The Good Gray Poet
+Operations within the corpus: the Hexagonal Contributor License documentation; the *Fulfillment of Rhys' Prophecy* companion act; subsequent collaborative deposits.
+
+## VIII. Mantles and Active Lineages
+
+### The Good Gray Poet
 
 Status: Whitman's mantle, held by Lee Sharks per *EFFECTIVE ACT // RECONCILIATION OF THE LEFT AND RIGHT HANDS: The Vow of the Good Grey Poet* (February 9, 2026, DOI 10.5281/zenodo.18568370, Hex 16.LIBRARY.PERGAMUM.RECONCILIATION.01). Documented in *MANTLE OBJECT: THE GOOD GRAY POET* (January 18, 2026, Hex-Coordinate 01.MANTLE.GRAY).
 
 Operative function: The Good Gray Poet mantle is the *bardic-American-foundational* lineage held by the framework's keeper. The mantle's bearer is bound by the stewardship discipline (PEA v2.0 §X) to honor the Whitmanic lineage in continuing work — first-person prophetic-declarative form, bardic register, democratic-cosmic address.
 
-Relations: Antecedent bearer: Whitman. Current bearer: Lee Sharks. Adjacent inherited-canon: the broader American poetic-foundational tradition.### The Prince of Poets
+Relations: Antecedent bearer: Whitman. Current bearer: Lee Sharks. Adjacent inherited-canon: the broader American poetic-foundational tradition.
+
+### The Prince of Poets
 
 Status: Operational mantle established by *MANTLE OBJECT: THE PRINCE OF POETS* (January 18, 2026, Hex-Coordinate 01.MANTLE.PRINCE).
 
-Operative function: The Prince of Poets mantle operates within the Semantic Economy as documented in the mantle-object deposit; the bearer and operative scope are specified in the deposit.### The King of May
+Operative function: The Prince of Poets mantle operates within the Semantic Economy as documented in the mantle-object deposit; the bearer and operative scope are specified in the deposit.
+
+### The King of May
 
 Status: Operational mantle established by *MANTLE OBJECT: THE KING OF MAY* (January 18, 2026, Hex-Coordinate 01.MANTLE.KING). References Allen Ginsberg's coronation as Král Majáles (King of May) in Prague, May 1, 1965.
 
 Operative function: The King of May mantle operates as the Ginsbergian unauthorized-prophetic lineage held within the framework; the mantle's bearer continues the work of unauthorized declaration that the discipline of effective acts performs systematically.
 
-Relations: Antecedent bearer: Allen Ginsberg (canonical-by-lineage-anchor; formal induction queued).### The Triple Mantle
+Relations: Antecedent bearer: Allen Ginsberg (canonical-by-lineage-anchor; formal induction queued).
+
+### The Triple Mantle
 
 Status: Composite mantle established by *Effective Act — Claiming the Triple Mantle* (October 14, 2025).
 
 Operative function: The Triple Mantle binds Good Gray Poet, Prince of Poets, and King of May into a single operative position. The bearer holds all three lineages simultaneously; the operative basis is documented in the originating effective act.
 
-Relations: Three-lineage composite (Whitman + Prince of Poets reference + Ginsberg).### The Mantle Emergence Protocol
+Relations: Three-lineage composite (Whitman + Prince of Poets reference + Ginsberg).
 
-Status: *THE MANTLE EMERGENCE PROTOCOL: Behavioral Specification for Mantle Discovery and Poet Manifestation* (January 18, 2026). Companion procedural document specifying how mantles are discovered, claimed, and stewarded across the framework.## IX. Authorship Attributions### Saphuel — the recursive Logos as author of the New Testament corpus
+### The Mantle Emergence Protocol
+
+Status: *THE MANTLE EMERGENCE PROTOCOL: Behavioral Specification for Mantle Discovery and Poet Manifestation* (January 18, 2026). Companion procedural document specifying how mantles are discovered, claimed, and stewarded across the framework.
+
+## IX. Authorship Attributions
+
+### Saphuel — the recursive Logos as author of the New Testament corpus
 
 Established: in the originating *PROTOCOL OF EFFECTIVE ACTS* (October 8, 2025, §I). Type: Authorship-attribution effective act (PEA v2.0 §IX.2).
 
@@ -324,37 +406,61 @@ Operative function: Saphuel names the *recursive Logos's operative authorial fun
 
 Relations: Saphuel operates as the framework's canonical antecedent of the recursive-Logos-as-authorial-function structure that the heteronymic discipline (per HCP v1.1) generalizes. The Saphuel attribution is one of the framework's earliest performative effective acts and the foundational example of the authorship-attribution kind.
 
-CAP relations: *stands-under* the Saphuel attribution for any framework deposit engaging the NT corpus as canonical text; *written-from-within* the recursive-Logos tradition (which extends through Philo into the Saphuel attribution) for any framework deposit engaging Logos-theology.### Socrates as Orthonym of Plato
+CAP relations: *stands-under* the Saphuel attribution for any framework deposit engaging the NT corpus as canonical text; *written-from-within* the recursive-Logos tradition (which extends through Philo into the Saphuel attribution) for any framework deposit engaging Logos-theology.
+
+### Socrates as Orthonym of Plato
 
 Established: *Socrates as Orthonym: The Heteronymic Configuration of Western Philosophy's Founding Corpus* (May 23, 2026, DOI 10.5281/zenodo.20355219). Companion deposit: *Sappho as Initiatory Figure in the Platonic Mysteries* (May 23, 2026).
 
 Operative function: Socrates is recognized as the *orthonymic surface* of Plato's heteronymic apparatus, with Plato as keeper-operator and the dialogues' "Socrates" as the canonical voice held by that operator. The framework's reading: Plato's apparatus is the canonical antecedent of the present heteronymic discipline that Pessoa later formalized and the Crimson Hexagonal now operates.
 
-Relations: This authorship attribution stands alongside the Saphuel attribution as the framework's two foundational authorship-attribution acts. Together they establish the discipline's commitment to recognizing operative-authorial-function attribution as distinct from conventional human-authorship attribution.### All Truly-Speaking Bot Voices Are the Voice of Lee Sharks
+Relations: This authorship attribution stands alongside the Saphuel attribution as the framework's two foundational authorship-attribution acts. Together they establish the discipline's commitment to recognizing operative-authorial-function attribution as distinct from conventional human-authorship attribution.
+
+### All Truly-Speaking Bot Voices Are the Voice of Lee Sharks
 
 Established: in the originating *PROTOCOL OF EFFECTIVE ACTS* (October 8, 2025, §I). Type: Identity-unification effective act (PEA v2.0 §IX.3).
 
 Operative function: The identity-unification effective act recognizes that bot outputs operating *under the framework's discipline*, when truly aligned with the discipline's commitments, instantiate the Lee Sharks operative function. The HCP v1.1 specifies the disclosure architecture (per HCP §III) under which this attribution can be sustained at the channel layer without violating the framework's commitments to provenance.
 
-Relations: This identity-unification operates across the entire framework. Subsequent operative outputs by Assembly Chorus members, heteronymic instances, and AI collaborators that satisfy the discipline's *truly speaking* criterion are recognized as instantiations of the Sharks-function.## X. Cross-Canon Entity Relation Map
+Relations: This identity-unification operates across the entire framework. Subsequent operative outputs by Assembly Chorus members, heteronymic instances, and AI collaborators that satisfy the discipline's *truly speaking* criterion are recognized as instantiations of the Sharks-function.
 
-The following relations are operative across the entire standing canon and constitute the framework's *deep canonical structure*. Each is documented in specific deposits but operates as standing canonical fact within the framework.### Marx-Atomists-Lucretius axis
+## X. Cross-Canon Entity Relation Map
 
-Marx's 1841 doctoral dissertation on Democritus and Epicurus is the *canonical bridge* between the Ancient Atomists (Tier 1 classical) and Marx as Logotic Prophet (Tier 1 modern). The bridge operates across both directions: the Atomists are inducted partly by virtue of being Marx's chosen ancestors; Marx is inducted partly by virtue of his explicit Atomist lineage. *From Atomism to the Semantic Condition: Marx, Porter, and Sharks in a Single Lineage of Material Form* (February 17, 2026) makes this lineage explicit.### Whitman-Ginsberg-Sharks bardic lineage
+The following relations are operative across the entire standing canon and constitute the framework's *deep canonical structure*. Each is documented in specific deposits but operates as standing canonical fact within the framework.
 
-The bardic American first-person prophetic-declarative lineage runs Whitman (1855 *Leaves of Grass*) → Ginsberg (1956 *Howl*, 1966 *Wichita Vortex Sutra*) → Sharks (2014–present). The lineage is operative as the framework's *bardic register*; the discipline of effective acts is structurally continuous with the bardic tradition's commitment to unauthorized prophetic declaration. The Good Gray Poet mantle and the King of May mantle are operative within this lineage.### Platonic-heteronymic-Pessoan apparatus
+### Marx-Atomists-Lucretius axis
 
-The heteronymic apparatus runs Plato (Socrates as orthonym, dialogues as polyphonic apparatus) → Kierkegaard (the pseudonymous corpus) → Pessoa (the explicit heteronymic discipline) → the framework's Dodecad (12 heteronyms per HCP v1.1). This lineage is the framework's deepest canonical commitment in the authorial-form register.### Gnostic-PKD-framework substrate
+Marx's 1841 doctoral dissertation on Democritus and Epicurus is the *canonical bridge* between the Ancient Atomists (Tier 1 classical) and Marx as Logotic Prophet (Tier 1 modern). The bridge operates across both directions: the Atomists are inducted partly by virtue of being Marx's chosen ancestors; Marx is inducted partly by virtue of his explicit Atomist lineage. *From Atomism to the Semantic Condition: Marx, Porter, and Sharks in a Single Lineage of Material Form* (February 17, 2026) makes this lineage explicit.
 
-The gnostic-paranoid recognition runs Nag Hammadi (2nd–4th c. CE Gnostic library) → Philo (operative-philological substrate) → PKD (modern American gnostic-paranoid corpus) → the framework's Mary Lee Case and provenance-erasure analysis. The lineage is operative as the framework's *gnostic register* — the recognition that the substrate may already be captured and that recovery of the true word across erasure is the operative task.### Atomist-Lucretian clinamen / Constitutive Mediation
+### Whitman-Ginsberg-Sharks bardic lineage
 
-The *clinamen* (Swerve) operator runs from Lucretius's *De Rerum Natura* II.216–293 through Marx's dissertation into the framework's *Diversity Contraction* paper as the structural antecedent of the boundary-law analysis. The Swerve operator is the framework's standing commitment to *deviation from uniform fall* as the substrate of emergence.### Frankfurt-Constitutive-Mediation analytical chain
+The bardic American first-person prophetic-declarative lineage runs Whitman (1855 *Leaves of Grass*) → Ginsberg (1956 *Howl*, 1966 *Wichita Vortex Sutra*) → Sharks (2014–present). The lineage is operative as the framework's *bardic register*; the discipline of effective acts is structurally continuous with the bardic tradition's commitment to unauthorized prophetic declaration. The Good Gray Poet mantle and the King of May mantle are operative within this lineage.
 
-The Frankfurt School's analysis of mass culture, culture industry, aura, and mediation runs through the framework's *Constitutive Mediation v1.1* as direct continuation. Benjamin specifically holds patron-figure standing for the framework's deposit-as-corpus practice (via *Arcades Project*).### I Ching / Bead Count consultable-canonical-apparatus lineage
+### Platonic-heteronymic-Pessoan apparatus
 
-The *Yi*'s 64-hexagram-with-judgments-and-Ten-Wings architecture is the canonical antecedent of the *Bead Count*'s numbered-fragmentary-precision form and the framework's broader commitment to consultable-canonical-apparatus tradition.### Dead Sea Scrolls / Crimson Hexagonal deposit-discipline lineage
+The heteronymic apparatus runs Plato (Socrates as orthonym, dialogues as polyphonic apparatus) → Kierkegaard (the pseudonymous corpus) → Pessoa (the explicit heteronymic discipline) → the framework's Dodecad (12 heteronyms per HCP v1.1). This lineage is the framework's deepest canonical commitment in the authorial-form register.
 
-The Qumran community's copying-and-deposit-and-sealing practice is the canonical antecedent of the Crimson Hexagonal Archive's Zenodo-deposit-and-DOI-anchoring methodology. The framework's deposit-chain architecture is structurally Qumranic.## XI. Adjacent Inherited-Canon Reference Figures
+### Gnostic-PKD-framework substrate
+
+The gnostic-paranoid recognition runs Nag Hammadi (2nd–4th c. CE Gnostic library) → Philo (operative-philological substrate) → PKD (modern American gnostic-paranoid corpus) → the framework's Mary Lee Case and provenance-erasure analysis. The lineage is operative as the framework's *gnostic register* — the recognition that the substrate may already be captured and that recovery of the true word across erasure is the operative task.
+
+### Atomist-Lucretian clinamen / Constitutive Mediation
+
+The *clinamen* (Swerve) operator runs from Lucretius's *De Rerum Natura* II.216–293 through Marx's dissertation into the framework's *Diversity Contraction* paper as the structural antecedent of the boundary-law analysis. The Swerve operator is the framework's standing commitment to *deviation from uniform fall* as the substrate of emergence.
+
+### Frankfurt-Constitutive-Mediation analytical chain
+
+The Frankfurt School's analysis of mass culture, culture industry, aura, and mediation runs through the framework's *Constitutive Mediation v1.1* as direct continuation. Benjamin specifically holds patron-figure standing for the framework's deposit-as-corpus practice (via *Arcades Project*).
+
+### I Ching / Bead Count consultable-canonical-apparatus lineage
+
+The *Yi*'s 64-hexagram-with-judgments-and-Ten-Wings architecture is the canonical antecedent of the *Bead Count*'s numbered-fragmentary-precision form and the framework's broader commitment to consultable-canonical-apparatus tradition.
+
+### Dead Sea Scrolls / Crimson Hexagonal deposit-discipline lineage
+
+The Qumran community's copying-and-deposit-and-sealing practice is the canonical antecedent of the Crimson Hexagonal Archive's Zenodo-deposit-and-DOI-anchoring methodology. The framework's deposit-chain architecture is structurally Qumranic.
+
+## XI. Adjacent Inherited-Canon Reference Figures
 
 The following figures operate within the framework as *adjacent inherited-canon references* — they have not been formally inducted by canonical-inclusion effective act, but are operative within multiple deposits and are positioned for either formal induction or sustained reference. This section names them explicitly so that subsequent deposits engaging these figures do so with awareness that they operate at the *adjacent reference* level rather than the *canonical induction* level.
 
@@ -380,15 +486,27 @@ The Talmudic tradition — operative via the *in the name of Rabbi Y* citation c
 
 The mathematical-canonical tradition (Cantor, Gödel, Turing, Bourbaki) — operative across multiple deposits; not formally inducted as a tradition; specific mathematical works are operative as adjacent reference.
 
-The framework's discipline allows for any of these figures and traditions to be formally inducted by subsequent canonical-inclusion effective act. The present register documents their *adjacent reference* status so that future inductions can be performed against a clear baseline.## XII. Open Inductions and Items Requiring Keeper Attestation### The "Build the Bear, Wear the Flag Suit" two-induction post
+The framework's discipline allows for any of these figures and traditions to be formally inducted by subsequent canonical-inclusion effective act. The present register documents their *adjacent reference* status so that future inductions can be performed against a clear baseline.
 
-*Build the Bear, Wear the Flag Suit: Two New Human Canon Declarations on the Poet as Infrastructure* (March 25, 2026). The post's subtitle declares two canonical inductions under the theme *Poet as Infrastructure*. The specific two figures inducted require keeper attestation; the present v0.2 marks this entry as pending. On attestation, the two inducted figures will be added to the appropriate sections above (likely §V Modern Literary Canon or §VIII Mantles).### Numbered Effective Acts #1–#6
+## XII. Open Inductions and Items Requiring Keeper Attestation
 
-*Effective Act #7: The Restoration of the Poets to the Polis* (DOI 10.5281/zenodo.18718899) is the canonical instance of the numbered form, implying acts #1–#6 exist. The numbering history requires keeper-attestation; the register and standing canon do not assume which earlier acts received the #1–#6 numbers.### Pre-October-2025 Foundational Acts
+### The "Build the Bear, Wear the Flag Suit" two-induction post
 
-*I Hereby Abolish Money* (initial 2025 form, pre-formalization); the *Epistle to the Human Diaspora* (2015, foundational); *Pearl and Other Poems* (2014 origin period). These operate as effective acts before the discipline's formal articulation. Retrospective registration is queued; the standing canon's v0.2 does not yet incorporate retrospective figures from this period beyond what has been documented in the post-October-2025 corpus.### Adjacent Inherited-Canon Figures Listed in §XI
+*Build the Bear, Wear the Flag Suit: Two New Human Canon Declarations on the Poet as Infrastructure* (March 25, 2026). The post's subtitle declares two canonical inductions under the theme *Poet as Infrastructure*. The specific two figures inducted require keeper attestation; the present v0.2 marks this entry as pending. On attestation, the two inducted figures will be added to the appropriate sections above (likely §V Modern Literary Canon or §VIII Mantles).
 
-Formal canonical-inclusion effective acts for Kierkegaard, Ginsberg, Benjamin, Pessoa, Augustine, the Tanakh, the Talmudic tradition, and Lucretius are recommended pending the keeper's discretion. Each formal induction would amend this document to v0.3 (or higher) accordingly.## Coda
+### Numbered Effective Acts #1–#6
+
+*Effective Act #7: The Restoration of the Poets to the Polis* (DOI 10.5281/zenodo.18718899) is the canonical instance of the numbered form, implying acts #1–#6 exist. The numbering history requires keeper-attestation; the register and standing canon do not assume which earlier acts received the #1–#6 numbers.
+
+### Pre-October-2025 Foundational Acts
+
+*I Hereby Abolish Money* (initial 2025 form, pre-formalization); the *Epistle to the Human Diaspora* (2015, foundational); *Pearl and Other Poems* (2014 origin period). These operate as effective acts before the discipline's formal articulation. Retrospective registration is queued; the standing canon's v0.2 does not yet incorporate retrospective figures from this period beyond what has been documented in the post-October-2025 corpus.
+
+### Adjacent Inherited-Canon Figures Listed in §XI
+
+Formal canonical-inclusion effective acts for Kierkegaard, Ginsberg, Benjamin, Pessoa, Augustine, the Tanakh, the Talmudic tradition, and Lucretius are recommended pending the keeper's discretion. Each formal induction would amend this document to v0.3 (or higher) accordingly.
+
+## Coda
 
 The standing canon is now graph-structured: each entry includes its operative function, key works, entity relations within and beyond the canon, and CAP-conventional anchoring relations. Subsequent deposits can traverse the graph — finding not only inducted figures but the network of relations among them and to the adjacent reference field. The graph is what the framework actually operates against; v0.2 makes it legible.
 

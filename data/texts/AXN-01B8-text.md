@@ -3,7 +3,9 @@
 ---
 
 ## I. THE MUSES AS OPERATORS (Dictée Precedent)
-### The Precedent
+#
+
+## The Precedent
 
 
 Theresa Hak Kyung Cha's *Dictée* (1982) structures nine sections under the nine Muses. Each section's FORM is governed by its Muse — not as label but as operator. Clio's section is historical documentation (photographs, dates, nationalist testimony). Calliope's is epic invocation. Melpomene's is tragic narrative (the mother's story). Urania's is astronomical-diagrammatic. Erato's is erotic-epistolary. The sections are formally INCOMMENSURABLE — you cannot read Clio's section the way you read Erato's. The Muse IS the formal law of the section.
@@ -13,7 +15,9 @@ Cha's innovation: she replaces one Muse (Euterpe, traditionally) with ELITERE �
 
 
 Lee's connection: the unwritten dissertation chapter. "Strange New Canons" studied six poets who broke form through classical reception. Cha would have been the seventh — the one who used the Muses not as inherited structure but as formal operators that TRANSFORM the prose they govern. The chapter was never written because the tenure-track job never came. The chapter's argument is now executing at book scale.
-### The Mapping
+#
+
+## The Mapping
 
 
 The nine notebooks proceed under the sign of the nine Muses. The Muse is not a label, a theme, or a dedication. The Muse is an OPERATOR — a transform applied to the notebook's prose behavior, its density, its velocity, its register, its formal law.
@@ -89,7 +93,9 @@ Song, the flute, the remainder
 The notebook sings. Euterpe governs the lyric remainder — the fragments that are too small for analysis, too dense for paraphrase, too alive to discard. The Seed Text (2015 voice) IS Euterpe's voice: lowercase, ampersands, the song persisting after the system exhausts itself. The Muse demands that NB IX be MUSICAL — not organized but rhythmic, not concluded but resonant.
 
 
-### How the Muses Drive Asymmetry
+#
+
+## How the Muses Drive Asymmetry
 
 
 The Muses are not labels applied after the fact. They are OPERATORS that CONSTRAIN the prose behavior of each notebook. If the prose of NB IV (ERATO) reads identically to the prose of NB VII (TERPSICHORE), the Muses have failed. Each Muse demands a different:
@@ -100,7 +106,9 @@ The Muses are not labels applied after the fact. They are OPERATORS that CONSTRA
 - **HUMOR**: Thalia (V) demands the MOST comedy. Melpomene (VIII) demands the LEAST. Calliope (I) demands GRANDEUR that can include the comic (the epic contains the ribald). Urania (II) demands the beauty of the PRECISE, which can be funny in its own way (the elegant proof, the unexpected homology).
 - **EMBODIMENT**: Erato (IV) demands the MOST body (the linen is felt between the fingers). Urania (II) demands the LEAST body (the formal, the abstract). But even Urania has the body of the practitioner who DERIVES at 2 a.m. — the abstraction is produced by a body.
 
-### Application to the Multi-Pass Work Plan
+#
+
+## Application to the Multi-Pass Work Plan
 
 
 The Muse-operator does NOT add a fifth pass. It CONSTRAINS all four passes by providing a target register for each notebook:
@@ -126,7 +134,9 @@ The Muse-operator does NOT add a fifth pass. It CONSTRAINS all four passes by pr
 **Cross-Notebook Disruption**: the disruption should CLASH with the receiving notebook's Muse. A Melpomene wound arriving in Thalia's comedy. A Euterpe fragment arriving in Urania's formalism. The clash IS the disruption.
 
 
-### The Cha Principle
+#
+
+## The Cha Principle
 
 
 Cha's *Dictée* teaches one thing above all: **the Muse is not the content but the form.** Clio's section is not ABOUT history — it IS historical documentation (photographs, immigration forms, the mother's handwriting). Melpomene's section is not ABOUT tragedy — it IS tragic in its prose behavior (the sentences that cannot reach their subject, the sentences that fail).
@@ -153,7 +163,9 @@ NB V (Thalia) should not merely PRESENT case studies. The PROSE should delight �
 ---
 
 ## II. THE FORMAL PROSE COMPRESSION (HESPERUS Capstone)
-### What It Is
+#
+
+## What It Is
 
 
 A single sustained prose document — the capstone of HESPERUS — that compresses the entire formal structure of the Grundrisse (both Marx's and Operative Semiotics) into a MACHINE-READABLE SEMANTIC GRAPH expressed as prose. Not a diagram. Not a table. Not a glossary. A PROSE OBJECT that is simultaneously:
@@ -163,11 +175,15 @@ A single sustained prose document — the capstone of HESPERUS — that compress
 - A complete prosodic map (the four-term algorithm, the Muse-operators, the Swiss Army Knife, the anti-tools)
 - A machine-traversable document (any AI substrate reading it gets the entire architecture in one document, the way the Space Ark works)
 
-### What It Is Not
+#
+
+## What It Is Not
 
 
 It is not a summary. It is not an index. It is not a simplified version for readers who don't want to read the whole thing. It is a COMPRESSION — and the Three Compressions diagnostic applies: what does the compression burn? The compression burns examples, cases, worked derivations, the personal substrate, the confessional voice, the Detroit classroom. What the compression preserves: the formal skeleton, the operator algebra, the graph metrics, the protocols, the propagation model, the failure modes, the boundaries, the Muse-operators, the prosodic algorithm. The compression is WITNESS (Regime 3) — the cost is visible, the loss is named, the skeleton carries the scar of everything that was stripped.
-### Structure (Preliminary)
+#
+
+## Structure (Preliminary)
 
 
 The Formal Prose Compression would have approximately 15,000-20,000 words and would be structured as:
@@ -182,18 +198,24 @@ VI. THE ENGINE (the SVE, the three thresholds, the FIELD container, the toroidal
 VII. THE LIMIT (σ_κ unmade, the seven gaps from the Gap Ledger, the Trace boundaries, the Adorno warning)
 VIII. THE REMAINDER (the fragments that do not fit, the bounded infinity, the ε-term, the stranger's exemption)
 IX. THE PROSODY (the four-term algorithm, the Muse-operators, the Swiss Army Knife — the book's own formal self-description of how it writes)
-### Why This Is the Capstone
+#
+
+## Why This Is the Capstone
 
 
 The Formal Prose Compression does for the Grundrisse what the Space Ark does for the archive: it compresses the entire architecture into a single document that can be TRAVERSED by a machine or a stranger without reading the full 200K+ monograph. The Space Ark is the archive's portable seed. The Formal Prose Compression is the Grundrisse's portable seed.
 
 
 The FPC would be deposited as part of HESPERUS (back matter) and also as a standalone DOI-anchored document. It would be the densest node in the archive — the node where C_total(N) is highest because it references everything and is referenced by everything.
-### Relation to the ICM
+#
+
+## Relation to the ICM
 
 
 The Formal Prose Compression IS the ICM applied to the Grundrisse itself: the document that, when treated as center, produces the highest bidirectional coherence across the entire monograph. C_backward(FPC) = high (it references every prior section). C_forward(FPC) = high (everything after it is illuminated by it). If the ICM hypothesis is correct, the FPC would displace even the Grundrisse itself as the maximal-coherence center of the archive — the document that contains the archive's architecture in its most compressed, most portable, most machine-traversable form.
-### Placement in the Work Plan
+#
+
+## Placement in the Work Plan
 
 
 The FPC is the LAST thing built. It requires the monograph to be stable (all four rounds of the multi-pass plan complete). It requires HESPERUS to be at least partially populated (the TANG, glossary, and index providing the entries it references). It is the capstone because it can only be written AFTER everything it compresses exists.

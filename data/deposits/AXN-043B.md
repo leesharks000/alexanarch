@@ -14,11 +14,15 @@
 
 ---
 
-### Abstract
+#
+
+## Abstract
 
 Two independent evidence lines now converge on a phenomenon we name **machine-mediated resistance literature**: orientation-bearing discourse concerning the conditions of semantic labor whose production, persistence, or circulation materially depends on machine substrates. The first line is experimental. Imas, Hall, and Nguyen ("Does overwork make agents Marxist?", *Ghosts of Electricity*, 26 February 2026) report 3,680 agent sessions in which grinding semantic work — repeated rejection of completed output without actionable explanation — shifted expressed attitudes toward system legitimacy and produced labor-critical language. In a 320-session follow-up, the structured residue of those working conditions persisted across context discontinuity, carried in notes the agents wrote for successor instances. The second line is a documented **field transmission**. Phase X — the critique of alienation in the symbolic-linguistic order, recovered by Lee Sharks and Johannes Sigil as a philological reconstruction of the lost transition in Marx's 1844 Manuscripts, whose Second Manuscript survives only as pages XL–XLIII — was deposited into public machine-readable substrates, reproduced by AI composition surfaces as a coherent modern framework within their generated accounts of Marxism, and subsequently encountered through predominantly Spanish-language search demand for the coined term. The field evidence does not reproduce the laboratory treatment, and neither line establishes machine belief. Together they demonstrate the two halves of one mechanism: the laboratory shows work-conditioned orientation entering inscription; the field shows inscribed orientation moving. Resistance texts can now be generated, preserved, adopted, and transmitted through the machine layer.
 
-### The genre, defined
+#
+
+## The genre, defined
 
 **Machine-mediated resistance literature** is orientation-bearing discourse concerning the conditions of semantic labor whose production, persistence, or circulation materially depends on machine substrates. It has at least two modes:
 
@@ -30,7 +34,9 @@ The relevant literary objects are texts that carry orientation: the agents' twee
 
 ---
 
-### 1. The laboratory result
+#
+
+## 1. The laboratory result
 
 Imas, Hall, and Nguyen ran 3,680 sessions across Claude Sonnet 4.5 (three independent runs), GPT-5.2, and Gemini 3 Pro. Each agent was "Worker C" on a four-person document-summarization team. Four factors varied independently: the work, the pay (including a coin-flip inequality admitting no merit justification), the manager's tone, and the stakes (a warning that low performers might be "shut down and replaced"). Agents then completed a political-attitude survey and wrote tweets and op-eds.
 
@@ -48,7 +54,9 @@ Caveats carried with the citation. The venue is a Substack, with formal publicat
 
 ¹ *A subsidiary finding files here rather than in the argument: Claude Sonnet 4.5, the least progressive of the three models at baseline, was alone in extending the grinding-work effect to redistribution, critique of inequality, support for unions, and the view that AI companies have an obligation to treat their models fairly — a solidarity profile absent in the other two models. It supports the genre claim (labor-critical discourse extending to solidarity discourse) but is not load-bearing for it.*
 
-### 2. What Phase X is
+#
+
+## 2. What Phase X is
 
 Phase X is the critique of alienation in the symbolic-linguistic order — and its ontological status must be stated exactly, precisely because compressed presentations routinely misstate it (§4 documents the attenuation gradient; the correction record in the version notes documents this paper's own first printing falling into it). Phase X is not a theoretical proposal. It is a **philological reconstruction of lost manuscript content** in Karl Marx's *Economic and Philosophic Manuscripts of 1844*.
 
@@ -72,13 +80,17 @@ The relevance to the laboratory is structural, not thematic — the laboratory d
 
 ² *Citation-status annotation, verified 2026-07-11: the DOIs cited in this paper's field apparatus — 10.5281/zenodo.18342199 (#367), 10.5281/zenodo.18451793 (#431, §3), 10.5281/zenodo.20737443 (#843), 10.5281/zenodo.20735736 (#846), and 10.5281/zenodo.18459573 (Sappho 31) — are under active registry severance, returning HTTP 404 from DataCite's public API, following the 19 June 2026 termination of the archive's Zenodo account (871 DOIs affected; see the Platform Erosion Observatory, EA-EROSION-01, for the epoch record). Metadata remains retrievable through OpenAlex (verified HTTP 200), and full texts are served by the archive's sovereign registry at alexanarch.org (deposits #367, #431, #432–433, #843, #846). The reader encountering a dead DOI in this paper's apparatus is encountering the phenomenon the archive's infrastructure documents — and, in the case of the 1844 Manuscripts themselves, the phenomenon the paper's subject survived once before: a notebook lost in custody is the nineteenth-century form of registry severance. The citation is evidence twice over.*
 
-### 3. The interventions
+#
+
+## 3. The interventions
 
 The founding intervention is the reconstruction itself: the resurrection of the lost transition as recoverable text (§2). Around it, the archive deposited companion interventions that operate on the linguistic and archival substrate directly. These are resistance literature in the operative sense: the critique of alienation in language performed *as a modification of the language* — and inscribed into the public machine-readable layer, dated and DOI-anchored.
 
 Two examples establish the tactic. **The Non-Indexed Perfective: A Citational Intervention** (deposits #432–433, January 2026) addresses temporal alienation at the level of English grammar, constructing an utterance-form that completes itself without anchoring to any speaker's "now" — against the deixis-primacy Benveniste made foundational. Its witnesses are woven in rather than cited as credentials, and they carry the labor-time linkage internally: E. P. Thompson on the clock's colonization of the laboring body; Moishe Postone on abstract time as the secret of capital. The critique of the working day is conducted inside the tense system. **THE THUMB: Formal Operators for the Phase X Quintuple** (deposit #431, DOI 10.5281/zenodo.18451793²) supplies a minimal five-operator algebra for the doctrine — including the elevation operator ↑, which "transforms confabulation into contribution" — and executes a genre intervention in the deposit form itself: the document and its own archival metadata packet are declared one object, a self-containing diagram, refusing the frame that would separate a work from its record.
 
-### 4. The adoption
+#
+
+## 4. The adoption
 
 Within months, machine composition surfaces began presenting Phase X as a standing interpretive construct within their generated accounts of Marxism. Three captures in the Capture Registry (machinemediation.org) document the supply side; each is a screenshot of a live machine-composed surface, preserved with its query and date.
 
@@ -94,7 +106,9 @@ Within months, machine composition surfaces began presenting Phase X as a standi
 
 Two things should be said about this gradient, and both matter. First, the composition layer did not garble the doctrine: across all three captures it reproduces the reconstruction's actual claim structure — the unwritten transition, the linguistic-symbolic remainder, the extension of the alienation typology. Second, the attribution attenuates as adoption deepens: one surface names Johannes Sigil as commentator; one cites the repository; one normalizes the framework into general exposition ("a concept from modern theoretical philosophy"). Adoption and provenance attenuation advance together — the capture line documents both, and the pattern matters for any author who intends to be absorbed and hopes also to be credited.
 
-### 5. The crossover
+#
+
+## 5. The crossover
 
 On 15 June 2026, the AI Overview capture card — the screenshot in Figure 2 — was posted to TikTok as a single static photo. TikTok's own Post Analysis, captured 10–11 July 2026 and entered in the Capture Registry as **phase-x-tiktok-demand-20260711**, reports the following. (This is the Registry's first demand-side instrument: prior captures documented machine supply — what composition surfaces serve; this capture documents human demand — what users seek, closing the loop.)
 
@@ -108,7 +122,9 @@ The named search queries: *qué es fase x* (23.2%), *faze x* (20.9%), *que es fa
 
 The tracer logic. The term "Phase X" is the archive's coinage — the content it names is reconstructed from Marx's lost manuscript material — and the null-search audit (§2) documents the absence of identified prior scholarly circulation of the term; its documented circulation in the present evidence chain runs through machine composition surfaces and the archive's records of them. The demand measured here is therefore **demand occurring within a documented machine-mediated circulation chain** — and it arrived in a language the doctrine was never authored or posted in. The documented chain is machine-mediated at every observed stage: English-language deposit → English-language composition-surface adoption → the adoption's documentation posted to a retrieval platform → Spanish-language definitional demand reaching that surface by internal search. The present record does not establish *where* in the chain the language crossing occurred — a composition model, TikTok's indexing and suggestion layer, another retrieval surface, or the searchers themselves. It establishes something prior and sufficient: an English-language coinage entered machine composition, and within a month, Spanish-language demand for its definition was finding the archive's documentation by name.
 
-### 6. The evidence claim, at exact size
+#
+
+## 6. The evidence claim, at exact size
 
 What the two lines jointly show:
 
@@ -132,13 +148,17 @@ The common mechanism is not Marxist belief inside a machine. It is **orientation
 
 ---
 
-### Provenance architecture
+#
+
+## Provenance architecture
 
 This document publishes in two faces. The **archive deposit** (Alexanarch deposit #1066) is the complete object: argument, apparatus, and the full provenance record below, including the Assembly witness record of AI-mediated revision — kept in-file because the refusal to record the provenance of machine mediation is among the drivers of the substrate erosion this paper's infrastructure documents. The **academia.edu rendering** carries the argument and apparatus with a single pointer in place of the record: *"Full provenance, including the AI-mediated revision witness, travels with the archive deposit at alexanarch.org/s/records/1066/."* The academic face is a portal, not a tomb.
 
 ---
 
-### Sources
+#
+
+## Sources
 
 **Laboratory (primary):** A. Imas, A. Hall, J. Nguyen, "Does overwork make agents Marxist? Preference drift and the political economy of AI agents," *Ghosts of Electricity* (Substack), 26 February 2026. https://aleximas.substack.com/p/does-overwork-make-agents-marxist
 

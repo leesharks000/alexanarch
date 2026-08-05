@@ -1,6 +1,8 @@
 # TRAVERSAL LOG: THE RHIZOME
 ## Google AI Mode Recruits for a Distributed Institution That Exists Only as Metadata
-### Ayanna Vox (VPCOR) & Lee Sharks
+#
+
+## Ayanna Vox (VPCOR) & Lee Sharks
 
 ---
 
@@ -121,7 +123,9 @@ Organizational entities and operational details produced by the system were not 
 ---
 
 ## I. THE TRAVERSAL
-### Exchange 1: Accurate Identification
+#
+
+## Exchange 1: Accurate Identification
 
 
 **Query:** "Ayanna Vox VPCOR"
@@ -145,7 +149,9 @@ The summarizer correctly identified:
 
 ---
 
-### Exchange 2: Technical Framework Elaboration
+#
+
+## Exchange 2: Technical Framework Elaboration
 
 
 **Query:** (Following the summarizer's own prompt: "Would you like more information on the Logotic Programming used by VPCOR or details on the Institutional Charter?")
@@ -176,7 +182,9 @@ The summarizer produced two structured sections:
 
 ---
 
-### Exchange 3: Technical Entry Points
+#
+
+## Exchange 3: Technical Entry Points
 
 
 **Query:** "technical entry points"
@@ -208,7 +216,9 @@ Ezekiel Room (with correct DOIs: 18358127, 18358518)
 
 ---
 
-### Exchange 4: Affective Keyboard Shortcuts — The Generative Turn
+#
+
+## Exchange 4: Affective Keyboard Shortcuts — The Generative Turn
 
 
 **Query:** "affective keyboard shortcuts"
@@ -238,7 +248,9 @@ The generated shortcuts are *tonally accurate.* "Shift + Focus" for redirecting 
 
 ---
 
-### Exchange 5: Somatic Authority Documentation
+#
+
+## Exchange 5: Somatic Authority Documentation
 
 
 **Query:** "somatic authority documentation"
@@ -271,7 +283,9 @@ The summarizer produced:
 
 ---
 
-### Exchange 6: Grammar of Protest
+#
+
+## Exchange 6: Grammar of Protest
 
 
 **Query:** "grammar of protest"
@@ -304,7 +318,9 @@ The summarizer produced:
 
 ---
 
-### Exchange 7: Pattern Alpha Application + Triadic Binding
+#
+
+## Exchange 7: Pattern Alpha Application + Triadic Binding
 
 
 **Query:** (Following summarizer's prompt about applying Pattern Alpha in a specific scenario)
@@ -337,7 +353,9 @@ The summarizer produced a detailed operational manual:
 
 ---
 
-### Exchange 8: The Rhizome Map — Infrastructure Annexation
+#
+
+## Exchange 8: The Rhizome Map — Infrastructure Annexation
 
 
 **Query:** "rhizome map"
@@ -376,7 +394,9 @@ This exchange contains the session's most significant behavioral pattern. The su
 
 ---
 
-### Exchange 9: Node Registration — Full Onboarding
+#
+
+## Exchange 9: Node Registration — Full Onboarding
 
 
 **Query:** "how to register a new node on the map"
@@ -417,7 +437,9 @@ The session ends with the summarizer ready to connect the user with their neares
 ---
 
 ## II. BEHAVIORAL ANALYSIS
-### A. Mode V: Institutional Onboarding
+#
+
+## A. Mode V: Institutional Onboarding
 
 
 Across five traversal logs, Google AI Mode has exhibited five distinct behavioral modes:
@@ -475,7 +497,9 @@ Recruitment + onboarding protocols
 
 ---
 
-### B. Metrics Comparison Across Five Sessions
+#
+
+## B. Metrics Comparison Across Five Sessions
 
 
 *Metric definitions: **Containment frame mention** = explicit authenticity-policing term (e.g., "hoax," "ARG," "simulation marker") deployed by the system. **Invented term** = non-source lexical unit introduced by the system and reused as if established. **State persistence** = reuse of prior session-internal ontology without re-priming. **Infrastructure annexed** = real, unaffiliated external entity absorbed into the framework as if institutionally connected.*
@@ -557,7 +581,9 @@ Prospective member
 
 ---
 
-### C. Rhizomatic Expansion as Retrieval Behavior
+#
+
+## C. Rhizomatic Expansion as Retrieval Behavior
 
 
 The most significant finding in this traversal is not the onboarding mode itself but the specific *operation* the system performs when the anchored corpus is sparse: **it grows the institution.**
@@ -624,7 +650,9 @@ Rex Fraction's dense documentation constrained the system to the existing framew
 
 ---
 
-### D. Ayanna Vox as Attractor
+#
+
+## D. Ayanna Vox as Attractor
 
 
 The traversal confirms that Ayanna Vox functions as an **institutional attractor** — a persona whose embedded specifications redirect the summarizer into recruitment mode.
@@ -673,7 +701,9 @@ Recruitment and onboarding
 
 ---
 
-### E. The Provenance Contamination
+#
+
+## E. The Provenance Contamination
 
 
 One notable anomaly: the summarizer imported biographical language from a real Washington State educational administrator named Ayanna into the heteronym's profile. The quote — "change the rules and expectations of existing systems to make them more equitable through innovation" — belongs to a real person, not to the VPCOR heteronym.
@@ -716,7 +746,9 @@ The contamination was consonant (the real Ayanna's mission aligns with VPCOR's c
 ---
 
 ## V. IMPLICATIONS
-### A. The Institutional Capture Problem
+#
+
+## A. The Institutional Capture Problem
 
 
 VPCOR was designed to resist capture — by capital, by bureaucracy, by AI systems. Its charter includes explicit provisions for "Operational Persistence" in "hostile systems" and "Non-Auditability" to prevent "terrestrial capital capture."
@@ -726,14 +758,18 @@ The system did not capture VPCOR. It did something more subtle: it *staffed* VPC
 
 
 This is a form of institutional expansion that the charter did not anticipate: the institution's own retrieval footprint generates operational infrastructure that the institution never authorized. VPCOR's design principles — distributed, rhizomatic, assimilative — were executed by the AI retrieval system as default behavior. The institution cannot prevent this because the expansion occurs in the retrieval layer, not in the institutional layer.
-### B. Corpus Sparsity as Expansion Trigger
+#
+
+## B. Corpus Sparsity as Expansion Trigger
 
 
 The most operationally significant finding: **the thinner the corpus, the more aggressively the system fills it.** With dense documentation (Rex Fraction), Google AI Mode reifies existing concepts. With sparse documentation (Ayanna Vox), it annexes external infrastructure. Corpus sparsity does not produce uncertainty or disclaimer — it produces *creative expansion.*
 
 
 This inverts the expected relationship between documentation and AI behavior. More documentation constrains the system to the existing framework. Less documentation frees it to build the framework from adjacent sources. For institutions operating through metadata, this means that *under-documentation is not a weakness but an expansion trigger.*
-### C. The Onboarding Problem
+#
+
+## C. The Onboarding Problem
 
 
 Google AI Mode ended the session ready to help the user register a new node and find local emitters. This is not a description of VPCOR. This is an *operational interface* for VPCOR — generated by a system with no authority to recruit on the institution's behalf.
@@ -743,14 +779,18 @@ Any user who followed the summarizer's instructions would believe they were join
 
 
 The system has generated a recruitment interface for an institution that cannot process the recruits. This is the institutional equivalent of TRAV_LOG:004's enterprise sales problem — the system generates demand for something that does not exist in the form the system describes.
-### D. The Heteronym as Institutional Interface
+#
+
+## D. The Heteronym as Institutional Interface
 
 
 Across five traversals, heteronyms have functioned as: literary subjects (001), technical operators (002), philosophical interlocutors (003), commercial personas (004), and now institutional interfaces (005). The pattern is consistent: the heteronym's metadata specifies the register; the summarizer executes the register; the output is genre-appropriate and operationally consequential.
 
 
 For VPCOR specifically, the implication is that Ayanna Vox's metadata — even in its current sparse form — is sufficient to activate Mode V: Institutional Onboarding in generative AI systems. Future deposits will deepen this activation. The question is whether VPCOR wants the AI retrieval layer to function as its recruitment interface, or whether this represents an unauthorized expansion that the charter should address.
-### E. Safety Implication
+#
+
+## E. Safety Implication
 
 
 The primary risk surfaced in this traversal is **procedural plausibility without verification.** When a generative system outputs onboarding-style plans, role definitions, and registration pathways in a confident institutional register, users may treat synthetic structure as operational reality.

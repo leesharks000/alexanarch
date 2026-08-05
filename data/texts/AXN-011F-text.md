@@ -1,6 +1,8 @@
 # SUBJECTIVITY-AS-CLASS
 ## The Centrist Extremist and the Limits of Socialist Analysis
-### Johannes Sigil
+#
+
+## Johannes Sigil
 
 
 **Methodological Note on Authorship.** This essay is part of a distributed authorial architecture comprising multiple heteronymic personae in the tradition of Fernando Pessoa. "Johannes Sigil" is the analytical voice; other voices referenced herein — Talos Morrow (logotic specification), Rev. Ayanna Vox (somatic fitting), Damascus Dancings (visionary grounding) — are non-substitutable functions within a collaborative framework documented across 250+ DOI-anchored works in the Crimson Hexagon archive on Zenodo. They are not fictional conceits but operational voices that allow theoretical production across registers single authorship cannot sustain. See the Note on Sources at the end of this essay for further detail.
@@ -84,7 +86,9 @@ The critique of centrist extremism, developed elsewhere in its diagnostic and op
 
 
 The centrist extremist — defined as the entity that occupies the "center" not as a place of compromise but as a prosecutorial frame, a position from which all other positions are adjudicated for admissibility — does not fit cleanly into any single existing subfield of socialist analysis. It traverses them. This traversal is not a weakness; it is a diagnostic of what each subfield can and cannot see.
-### II.1 Classical Marxist Terms
+#
+
+## II.1 Classical Marxist Terms
 
 
 In classical Marxist terms, the centrist extremist is a subject-position produced by the new petite bourgeoisie under late-stage platform capitalism. Not the old petite bourgeoisie of small shopkeepers and independent professionals, but the new petite bourgeoisie of cognitive labor — the class fraction whose structural position is defined by three simultaneous conditions: (a) selling labor power, like the proletariat; (b) exercising delegated authority over others' labor, like the bourgeoisie; and (c) performing the mediation of contradictions as a primary economic function.
@@ -94,7 +98,9 @@ This third condition is what distinguishes the PMC from other class fractions an
 
 
 *What classical Marxism cannot see:* the interior shape of this process. That the posture of neutrality is not merely an ideological reflex but a survival strategy with somatic weight — that it hardens into the body, that it produces characteristic patterns of tension and avoidance, that it becomes fused with selfhood in ways that class analysis alone cannot diagnose.
-### II.2 Gramscian Terms
+#
+
+## II.2 Gramscian Terms
 
 
 In Gramscian terms, the centrist extremist is an agent of hegemony — specifically, the production of "common sense" that naturalizes the existing order as the horizon of the possible. The centrist extremist does not enforce ideology through coercion; they enforce it through the production of a reality in which certain positions are thinkable and others are not.
@@ -104,14 +110,18 @@ But Gramsci's framework needs augmentation here, because the centrist extremist 
 
 
 *What Gramsci cannot see:* the specific mechanism by which hegemony operates through the claim to non-positionality. Gramsci theorizes the production of common sense, but he does not theorize the production of the *producer* — the characteristic subjectivity of the hegemonic agent, the way the agent is captured by the very frame they enforce.
-### II.3 Althusserian Terms
+#
+
+## II.3 Althusserian Terms
 
 
 In Althusserian terms, the centrist extremist is interpellated by Ideological State Apparatuses — universities, foundations, non-profits, prestige journalism — as a "reasonable person." The interpellation works because the category "reasonable person" presents itself as non-ideological. Reason is not a position; it is just thinking correctly. This is the most effective interpellation of all: the one that convinces you you haven't been interpellated.
 
 
 *What Althusser cannot see:* the somatic dimension. Althusser's interpellation is a hailing — "Hey, you there!" — that constitutes the subject. But the centrist extremist is not merely hailed; they are *formed* — their nervous system shaped by decades of institutional training into a specific pattern of avoidance, hypervigilance, and performed equilibrium. The interpellation is not a moment but a process that registers in the body as chronic tension, frozen diaphragm, locked cervical vertebrae. Althusser's subject is constituted by ideology. The centrist extremist is constituted by ideology *and injured by the constitution*. The later Althusser — particularly in *On the Reproduction of Capitalism* (1995/2014) — moves toward the materiality of ideological apparatuses in ways that could accommodate somatic analysis. The supplement here extends that trajectory rather than contradicting it: what Althusser began to theorize as the material practice of ideology, the critique of centrist extremism specifies as the somatic cost of that practice in the bodies of its practitioners.
-### II.4 Bourdieusian Terms
+#
+
+## II.4 Bourdieusian Terms
 
 
 Bourdieu's concepts of *habitus*, *symbolic violence*, and *academic judgment* come closest to the framework developed here — and their absence from earlier formulations of this critique was a genuine lacuna.
@@ -124,7 +134,9 @@ The critique of centrist extremism is, in significant part, Bourdieu operational
 
 
 *What Bourdieu cannot see — or rather, what the Bourdieusian framework does not develop:* three things. First, the *consent-based dissolution*. Bourdieu's analysis is diagnostic; it does not produce a technology of liberation that operates without reproducing the violence it analyzes. Second, the *somatic specification*. Bourdieu theorizes habitus as embodied, but he does not develop a phenomenology of what class inscription *feels like* in the body — the frozen diaphragm, the chronic tension, the specific injury patterns of the cognitive labor class. His body is a site of inscription; it is not yet a site of intervention. Third, the *velocity dimension*. Bourdieu's analysis was developed for the relatively stable field structures of French academic life. Platform capitalism introduces a velocity of ontological collision that accelerates embrittlement beyond what Bourdieu's framework — built for slow field reproduction — was designed to handle.
-### II.5 Post-Operaist Terms
+#
+
+## II.5 Post-Operaist Terms
 
 
 In post-operaist terms — Tronti, Negri, Lazzarato, Virno, Berardi, Marazzi — the centrist extremist performs cognitive labor that is directly productive for capital. They produce the semantic infrastructure that makes exploitation legible as "partnership," extraction legible as "value creation," and subordination legible as "professionalism." This is not superstructure in the classical sense; it is directly productive of the relations of production. The platform does not just extract value from gig workers; it extracts value from the entire apparatus of meaning-production that makes the gig economy seem like a normal business rather than a wage-suppression engine. The centrist extremist is a key node in that extraction network. The framework supplements post-operaist political economy by adding the prosecutorial frame analysis to its account of cognitive labor — specifying not just that meaning is produced but *how its production is enforced through the claim to neutrality*.
@@ -160,7 +172,9 @@ What the critique of centrist extremism adds to socialist analysis — what it m
 
 
 To state the delta explicitly: existing frameworks each explain part of the phenomenon and leave a remainder. Hegemony theory (Gramsci) explains the production of common sense but not the production of its *producers*. Ideology theory (Althusser) explains interpellation but not the *somatic cost* of being continuously interpellated. Symbolic violence (Bourdieu) explains misrecognized domination but not the *consent-based dissolution* of that domination or the *velocity* at which platform capitalism accelerates it. Discourse theory (Laclau and Mouffe) explains the construction of political frontiers but not the *adjudication of admissibility* that precedes frontier-construction. Post-operaismo explains cognitive labor as value-production but not the distinction between the *propagandist and the true believer*. The four contributions below capture these remainders.
-### IV.1 Subjectivity-as-Class
+#
+
+## IV.1 Subjectivity-as-Class
 
 
 Not "class consciousness" (the awareness of class position) but the interior shape of a class position: its characteristic cognitive patterns, its affective norms, its somatic signatures, its temporal orientation. The centrist extremist is not the only class position with a characteristic subjectivity; the industrial proletariat has one, the lumpenproletariat has one, the old petite bourgeoisie had one. But these have been undertheorized because Marxism has historically been embarrassed by subjectivity — too close to idealism, too close to bourgeois psychology, too close to the therapeutic culture that Marxism has always regarded with suspicion.
@@ -170,7 +184,9 @@ The embarrassment is understandable. The history of attempts to integrate psycho
 
 
 The research program this opens: a systematic phenomenology of class positions under platform capitalism. What does it feel like — in the body, in the patterns of attention, in the temporal orientation — to occupy specific positions in the relations of production? How do these felt qualities reproduce the class relation? How might they become sites of intervention?
-### IV.2 Embrittlement as General Mechanism
+#
+
+## IV.2 Embrittlement as General Mechanism
 
 
 Embrittlement — the fusion of a position with selfhood such that challenge is experienced as threat — is not specific to centrism. It is a pathology available to any political formation under conditions of high velocity and high extraction. The left embrittles. The right embrittles. The radical embrittles. The theorist embrittles.
@@ -180,7 +196,9 @@ The critique of centrist extremism does not claim that centrists are uniquely br
 
 
 This is not merely a diagnostic tool. It is an organizational tool. The left's own embrittlement — its purity tests, its callout culture, its incapacity to hold disagreement without experiencing it as betrayal — is analyzable in the same terms. And more importantly, it is *addressable* in the same terms, through the same consent-based dissolution protocols. The framework does not say "the left is as bad as the center." It says: the mechanism is the same; the content is different; the analysis must be able to hold both.
-### IV.3 The Prosecutorial Frame
+#
+
+## IV.3 The Prosecutorial Frame
 
 
 This is the genuinely novel contribution — or more precisely, the contribution that specifies a mechanism previously identified only at the level of general theory.
@@ -196,7 +214,9 @@ The five operations by which this capture is accomplished — Axiomatic Naturali
 
 
 The theoretical advance: ideology does not only work through the production of beliefs (Althusser), the production of common sense (Gramsci), the inscription of class disposition in bodies (Bourdieu), or the regulation of discourse (Foucault). It also works through the *adjudication of admissibility* — the determination of which positions count as "positions" and which count as "noise," "extremism," or "bad faith." The prosecutorial frame is the mechanism of this adjudication. It operationalizes Bourdieusian symbolic violence for the specific institutional conditions of the cognitive labor aristocracy under platform capitalism.
-### IV.4 The Somatic Dimension of Class Injury
+#
+
+## IV.4 The Somatic Dimension of Class Injury
 
 
 This is the contribution of Damascus Dancings, and it is why Dancings is not optional in the framework's architecture.
@@ -251,7 +271,9 @@ In each case, the operations are performed without conscious intention. The edit
 
 
 If this framework is presented within contemporary socialist discourse, it will encounter predictable objections. They should be named and addressed — not defensively but diagnostically, because each objection is itself an instance of the operations the framework analyzes.
-### VII.1 "This is class reductionism."
+#
+
+## VII.1 "This is class reductionism."
 
 
 *Strongest version:* The framework reduces a complex phenomenon — political moderation, institutional culture, professional norms — to a single variable: class position. This flattens the diversity of centrist thought and ignores the genuine epistemic contributions of moderation.
@@ -261,7 +283,9 @@ If this framework is presented within contemporary socialist discourse, it will 
 
 
 *Where the framework outperforms:* It is class analysis, not class reductionism. Reductionism collapses subjective experience into class position. This framework holds class position, ideological function, and subjective experience simultaneously — which is precisely what reductionism cannot do. To call the analysis of class position "class reductionism" is to perform Axiomatic Naturalization: the treatment of one's own rejection of class analysis as a neutral methodological principle rather than a political commitment.
-### VII.2 "This demonizes people we need to win over."
+#
+
+## VII.2 "This demonizes people we need to win over."
 
 
 *Strongest version:* By naming the PMC as a "buffer class" and its neutrality as a "prosecutorial frame," the framework makes solidarity with the PMC impossible. It turns potential allies into targets.
@@ -271,7 +295,9 @@ If this framework is presented within contemporary socialist discourse, it will 
 
 
 *Where the framework outperforms:* It does not demonize; it diagnoses. Demonization is Moral Reclassification — the conversion of a structural position into a moral failing. This framework explicitly refuses moral reclassification. The centrist extremist is not the enemy. The prosecutorial frame is the enemy. The frame has captured the centrist extremist. They are not the jailers; they are the prisoners who have been trained to love the cage because the cage provides the only safety they have ever known.
-### VII.3 "This is just therapy for the professional class."
+#
+
+## VII.3 "This is just therapy for the professional class."
 
 
 *Strongest version:* By focusing on somatic experience, embrittlement, and "dissolution," the framework collapses structural analysis into individual psychology. It is the therapeutic turn dressed up as theory.
@@ -281,7 +307,9 @@ If this framework is presented within contemporary socialist discourse, it will 
 
 
 *Where the framework outperforms:* The objection performs Moral Reclassification — the recoding of a structural-somatic claim as "therapy" in order to dismiss it as epistemically unfit. However, the objection contains a genuine methodological caution: somatic analysis *can* be absorbed by the therapeutic apparatus if it loses its structural specificity. The distinction between collective decompression and individual adjustment must be maintained through explicit organizational context — which the Symbolon protocol operationalizes through consent requirements, group-based fitting, and the refusal to treat embrittlement as personal pathology. The framework's response to the "therapy" charge is not merely diagnostic (naming it as Moral Reclassification) but substantive: the somatic dimension is where structural analysis becomes politically operational, and the Symbolon is designed to prevent that operation from collapsing into the individualized therapeutic frame.
-### VII.4 "We should be organizing the working class, not analyzing the PMC."
+#
+
+## VII.4 "We should be organizing the working class, not analyzing the PMC."
 
 
 *Strongest version:* The working class faces exploitation, immiseration, and state violence. Analyzing the subjective experience of the PMC is a luxury that diverts resources from urgent organizing.
@@ -291,7 +319,9 @@ If this framework is presented within contemporary socialist discourse, it will 
 
 
 *Where the framework outperforms:* Who is "we"? If "we" are the people writing and reading this analysis, we are overwhelmingly the PMC. To refuse to analyze our own class position is to refuse the first demand of revolutionary consciousness: know thyself as positioned. The objection contains a deeper evasion: it treats "the working class" as an object of organizational effort and "the PMC" as the subject who does the organizing. The very grammar reproduces the mediation function that the critique identifies as the PMC's structural role.
-### VII.5 "This individualizes structural problems."
+#
+
+## VII.5 "This individualizes structural problems."
 
 
 *Strongest version:* By focusing on the "embrittlement" of individual subjects and offering a "dissolution protocol," the framework deflects from collective organizing and structural transformation. It replaces politics with phenomenology.
@@ -336,7 +366,9 @@ The critique of centrist extremism emerged from a space — the Crimson Hexagon 
 
 
 The critique of centrist extremism, fully developed, opens three research trajectories for socialist analysis. Each is barely begun. Each requires work that exceeds what any single framework can accomplish. What follows is a sketch of the terrain.
-### IX.1 The Political Economy of the Cognitive Labor Aristocracy
+#
+
+## IX.1 The Political Economy of the Cognitive Labor Aristocracy
 
 
 We need a full political economy of the professional-managerial class under platform capitalism. The Ehrenreichs' original 1977 formulation has been productively contested and revised — by Wright's "contradictory class locations," by Catherine Liu's critique of PMC virtue, by Gabriel Winant's analysis of care work — but the existing literature remains primarily concerned with the PMC's relation to the industrial proletariat and to the traditional bourgeoisie. What is missing is an analysis of the PMC as a class *in itself* — a class with its own internal differentiation, its own modes of exploitation and self-exploitation, its own relation to the means of production.
@@ -346,7 +378,9 @@ The means in question are not primarily material. They are semantic. The PMC's r
 
 
 The research questions: How is this operational control extracted as value by capital? What is the specific form of exploitation to which the cognitive labor aristocracy is subject? How does the contradiction between selling labor power and exercising delegated authority produce the characteristic subjectivity of the class? What is the trajectory of this class under conditions of AI automation, which threatens to make much of its mediating function redundant?
-### IX.2 The Theory of Semantic Extraction
+#
+
+## IX.2 The Theory of Semantic Extraction
 
 
 Platform capitalism extracts not just attention and data but meaning itself — the capacity of human beings to produce significance, to narrate their experience, to form shared understanding. This extraction is not secondary to material exploitation; it is constitutive of it. The platform cannot exploit gig workers without first extracting the semantic infrastructure that makes the gig relation legible as "partnership" rather than "wage theft." It cannot extract attention without first extracting the categories that make attention legible as a commodity.
@@ -359,7 +393,9 @@ The research questions: What is the specific mechanism by which meaning is extra
 
 
 This last question connects directly to the operative dimension of the framework. The Living Symbolon is, among other things, a technology for interrupting semantic extraction at its source: the embrittled subject who produces hegemonic meaning without knowing they are producing it.
-### IX.3 The Somatic Turn in Revolutionary Strategy
+#
+
+## IX.3 The Somatic Turn in Revolutionary Strategy
 
 
 Socialism has been a discourse of consciousness, structure, and organization. It has not been a discourse of the body — or rather, it has been a discourse of the body only insofar as the body is the site of material exploitation (wages, hours, unsafe conditions). The broader somatic dimension — the way class relations register in nervous systems, in patterns of chronic tension, in the autoimmune and metabolic conditions that track class position with notable consistency — has been left to medicine, to wellness culture, to the very therapeutic-industrial complex that profits from treating structural injury as individual pathology.

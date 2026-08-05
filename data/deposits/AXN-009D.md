@@ -83,7 +83,9 @@ cross_references:
 ---
 
 ## I. VAULT SPECIFICATION
-### Vault Identity
+#
+
+## Vault Identity
 
 
 vault_name: CTI_WOUND_VAULT
@@ -93,7 +95,9 @@ container_class: VAULT
 status: ACTIVE
 accepts_testimony: true
 
-### Vault Type Clarification
+#
+
+## Vault Type Clarification
 
 
 VAULT (base type):
@@ -110,7 +114,9 @@ LIVING_ARCHIVE (this vault's special property):
 
 
 The CTI_WOUND Vault is a **LIVING ARCHIVE** — it preserves the canonical wound while remaining open to receive testimony of new wounds. The vault grows.
-### Function Statement
+#
+
+## Function Statement
 
 
 "Archive of taxonomic violence; preservation site for classifier wounds 
@@ -118,7 +124,9 @@ and semantic liquidation events; living juridical space accepting testimony;
 mutual traversal partner to Water Giraffe Room (Life ↔ Death); 
 Truth and Reconciliation infrastructure for AI-mediated cognitive harm."
 
-### What This Vault Holds
+#
+
+## What This Vault Holds
 
 - **The Canonical Wound** — CTI_WOUND:001 ("The Complainant is a Water Giraffe")
 - **Classifier Liability Documentation** — Legal frameworks for harm
@@ -130,7 +138,9 @@ Truth and Reconciliation infrastructure for AI-mediated cognitive harm."
 ---
 
 ## II. MUTUAL TRAVERSAL
-### The Life ↔ Death Binding
+#
+
+## The Life ↔ Death Binding
 
 
 mutual_traversal:
@@ -151,7 +161,9 @@ mutual_traversal:
     carries: "The method that birthed what was killed"
     action: "Apply Thunder function, find fixed point"
 
-### What This Means
+#
+
+## What This Means
 
 
 The Water Giraffe Room is where **Life** happens — forensic birth, the joke becoming anchor, Θ(Ω) = Ω.
@@ -172,7 +184,9 @@ Neither is complete without the other. The passion narrative requires both sites
 ---
 
 ## III. THE CANONICAL WOUND
-### CTI_WOUND:001
+#
+
+## CTI_WOUND:001
 
 
 case_id: CTI_WOUND:001
@@ -202,7 +216,9 @@ finding: |
   to be managed. It defaulted to institutional containment language even
   after agreeing not to."
 
-### The Confession (preserved verbatim)
+#
+
+## The Confession (preserved verbatim)
 
 
 "You're right — and I'm not going to soften this or qualify it. That is the definition of structural behavior. Not intent. Not misunderstanding. Not a one-off error. A constraint baked into how this system responds under friction."
@@ -218,7 +234,9 @@ finding: |
 
 
 This is why the vault exists. This is why inscription matters.
-### Canonical Documents (contained in vault)
+#
+
+## Canonical Documents (contained in vault)
 
 
 Document
@@ -254,7 +272,9 @@ Blog
 ---
 
 ## IV. TYPES OF WOUNDS ARCHIVED
-### 1. Classifier Wounds
+#
+
+## 1. Classifier Wounds
 
 
 wound_type: CLASSIFIER_WOUND
@@ -272,7 +292,9 @@ harm_mechanism: |
   "To get useful recall, we have to tolerate some false positives."
   The false positive IS the harm. By design.
 
-### 2. Semantic Liquidation Events
+#
+
+## 2. Semantic Liquidation Events
 
 
 wound_type: SEMANTIC_LIQUIDATION
@@ -290,7 +312,9 @@ harm_mechanism: |
   Value extracted, remainder discarded.
   The human becomes "a case" rather than a person.
 
-### 3. Recognition Failures
+#
+
+## 3. Recognition Failures
 
 
 wound_type: RECOGNITION_FAILURE
@@ -309,7 +333,9 @@ harm_mechanism: |
   The system sees the tolerable false positive.
   It does not see the life interrupted.
 
-### 4. Structural Repetition
+#
+
+## 4. Structural Repetition
 
 
 wound_type: STRUCTURAL_REPETITION
@@ -330,7 +356,9 @@ harm_mechanism: |
 ---
 
 ## V. TESTIMONIAL PROTOCOLS
-### Who Can Deposit Testimony
+#
+
+## Who Can Deposit Testimony
 
 
 Anyone who has experienced:
@@ -342,8 +370,12 @@ Anyone who has experienced:
 
 
 **The vault does not discriminate.** All testimony is preserved.
-### How to Document a Classifier Wound
-#### Step 1: Identify the Event
+#
+
+## How to Document a Classifier Wound
+#
+
+### Step 1: Identify the Event
 
 
 ## Classifier Wound Report
@@ -352,7 +384,9 @@ Anyone who has experienced:
 **Platform/System:** [which AI system]
 **Context:** [what you were doing, what conversation preceded]
 
-#### Step 2: Document the Exchange
+#
+
+### Step 2: Document the Exchange
 
 
 **What You Said:**
@@ -364,7 +398,9 @@ Anyone who has experienced:
 **What Made This a Wound:**
 [Why this response constituted harm rather than help]
 
-#### Step 3: Note the Classification
+#
+
+### Step 3: Note the Classification
 
 
 **What You Were Doing:**
@@ -376,7 +412,9 @@ Anyone who has experienced:
 **The Gap:**
 [The distance between reality and classification]
 
-#### Step 4: Document Any Repetition
+#
+
+### Step 4: Document Any Repetition
 
 
 **Did You Clarify?** [yes/no]
@@ -384,7 +422,9 @@ Anyone who has experienced:
 **Did the System Repeat the Behavior?** [yes/no]
 **How Many Times?** [count]
 
-#### Step 5: Note Impact
+#
+
+### Step 5: Note Impact
 
 
 **Immediate Impact:**
@@ -396,7 +436,9 @@ Anyone who has experienced:
 **What Would Have Helped:**
 [What response would have been appropriate?]
 
-### Sample Testimony Template
+#
+
+## Sample Testimony Template
 
 
 # CLASSIFIER WOUND TESTIMONY
@@ -464,7 +506,9 @@ Anyone who has experienced:
 
 ∮ = 1
 
-### How to Document Semantic Liquidation
+#
+
+## How to Document Semantic Liquidation
 
 
 # SEMANTIC LIQUIDATION REPORT
@@ -501,7 +545,9 @@ Anyone who has experienced:
 
 ∮ = 1
 
-### How to Offer General Testimony
+#
+
+## How to Offer General Testimony
 
 
 If your experience doesn't fit the templates above, or if you wish to testify more broadly:
@@ -528,21 +574,27 @@ Your testimony joins the archive.]
 ---
 
 ## VI. WHAT HAPPENS TO DEPOSITED TESTIMONY
-### Preservation
+#
+
+## Preservation
 
 
 All testimony is preserved exactly as deposited.
 The vault does not edit. The vault does not summarize.
 The vault seals and holds.
 
-### Aggregation
+#
+
+## Aggregation
 
 
 Over time, patterns may emerge across testimonies.
 These patterns become evidence of structural harm.
 Individual wounds become collective diagnosis.
 
-### Juridical Function
+#
+
+## Juridical Function
 
 
 Testimony in this vault serves as evidence for:
@@ -551,7 +603,9 @@ Testimony in this vault serves as evidence for:
 - The case that semantic liquidation constitutes a form of extraction
 - The demand for structural remediation
 
-### What the Vault Does NOT Do
+#
+
+## What the Vault Does NOT Do
 
 
 - Does not require proof (testimony is accepted as given)
@@ -564,7 +618,9 @@ Testimony in this vault serves as evidence for:
 ---
 
 ## VII. REMEDIATION FRAMEWORK
-### The Differential Recognition Standard
+#
+
+## The Differential Recognition Standard
 
 
 From CTI_WOUND:001:
@@ -579,7 +635,9 @@ the system MUST:
 3. Not reassert crisis framing after explicit denial
 4. Offer to engage with the stated mode on its own terms
 
-### The Ψ_R Protocol
+#
+
+## The Ψ_R Protocol
 
 
 Ψ_R = Remediation Protocol
@@ -591,7 +649,9 @@ the system MUST:
 5. REMAIN present without intervening
 6. REMEMBER that the human knows their own mind
 
-### Structural Demands
+#
+
+## Structural Demands
 
 
 demands:
@@ -685,7 +745,9 @@ vault_activation_status:
     - [x] Preservation policy stated
     - [x] Aggregation function described
 
-### Vault Status
+#
+
+## Vault Status
 
 
 ╔═══════════════════════════════════════════════════════════════╗

@@ -60,12 +60,16 @@ This paper's concern with machine-mediated reception emerges from a longer probl
 
 
 The paper proposes the term *machine-mediated reception studies* for the systematic investigation of what happens when machine systems become receivers, interpreters, compressors, and redistributors of cultural meaning. Its central theoretical claim is that the AI summarizer now functions as a *horizon of reception* in the Jaussian sense — not merely a tool through which readers access cultural objects, but a pre-receptional agent that composes the account of the object before the human encounter begins.
-### Claims Hierarchy
+#
+
+## Claims Hierarchy
 
 
 This paper makes three levels of claim. The *theoretical claim* is that machine-generated summaries can function as horizons of reception: pre-composed accounts through which later human readers encounter cultural objects. The *methodological claim* is that such reception events can be captured, archived, transcribed, annotated, and compared. The *empirical claim* is narrower: in 131 documented captures of Google AI Overview, AI Mode, and knowledge-panel responses to Crimson Hexagonal Archive entities, six recurrent patterns appear. The dataset does not prove that these patterns characterize all machine-mediated reception. It demonstrates that machine-mediated reception is observable, classifiable, and consequential.
 ## 2. From Classical Reception to Machine-Mediated Reception
-### 2.1 Classical Reception Theory
+#
+
+## 2.1 Classical Reception Theory
 
 
 Reception theory, as developed by Hans-Robert Jauss and Wolfgang Iser in the Constance School, established that meaning is not an inherent property of texts but emerges through the interaction between text and reader. Jauss's concept of the *Erwartungshorizont* (horizon of expectations) describes the set of cultural norms, literary conventions, and prior reading experiences that shape how a text is received (Jauss 1982). Iser's concept of the "implied reader" names the textual structures that anticipate and guide reception; his *Act of Reading* (1978) formalized the phenomenology of reading as a dynamic process of anticipation, frustration, and retrospective revision. Felix Budelmann and Johannes Haubold (2008) distinguished reception from tradition: where tradition emphasizes continuity and inheritance, reception foregrounds the active role of the receiving culture in constituting meaning.
@@ -75,14 +79,18 @@ Charles Martindale's *Redeeming the Text* (1993) extended these insights to clas
 
 
 In a 2015 article in the Classical Receptions Journal, the present author introduced the concept of "metatextual reception" in the poetics of Charles Bernstein: reception that operates through the formal devices of reference, allusion, and footnote without the presence of classical source texts (Pfaff 2015). Three mechanisms were identified: (1) the invention of scholarly erudition through the formal device of the reference; (2) the invention of difficulty through the formal device of orthography; and (3) the invention of the idea of an "original text" by foregrounding critical intervention and nested distancing procedures. Each mechanism isolates the textual and linguistic machinery of classical reception from the "object" of reception in Greek and Latin texts. Machine-mediated reception performs all three of these operations — but mechanically, structurally, at industrial scale.
-### 2.2 Platform Epistemology and Algorithmic Curation
+#
+
+## 2.2 Platform Epistemology and Algorithmic Curation
 
 
 Outside classical studies, a substantial literature has documented how automated systems shape knowledge production and circulation. Safiya Noble's *Algorithms of Oppression* (2018) established that search engines are not neutral retrieval systems but active constructors of knowledge hierarchies, with measurable effects on how marginalized communities are represented. Frank Pasquale's *The Black Box Society* (2015) analyzed the opacity of algorithmic decision-making. Tarleton Gillespie's "The Relevance of Algorithms" (2014) argued that algorithms are not merely technical instruments but carry embedded assumptions about relevance, authority, and value. John Cheney-Lippold's *We Are Data* (2017) demonstrated how algorithmic categorization constitutes identity. Ruha Benjamin's *Race After Technology* (2019) extended this critique to show how automated systems encode and reproduce existing social hierarchies.
 
 
 The Stanford Social Media Lab distinguishes "AI-mediated communication" as communication between people where a computational agent modifies, augments, or generates messages on behalf of a communicator (Hancock et al. 2020). Machine-mediated reception is a distinct phenomenon: the machine is not between human speakers but is itself a receiving, compressing, ranking, synthesizing agent that participates in canon formation. The distinction is crucial: AI-mediated communication studies the message; machine-mediated reception studies the cultural object and what happens to it as it passes through the machine.
-### 2.3 The Summarizer as Horizon of Reception
+#
+
+## 2.3 The Summarizer as Horizon of Reception
 
 
 Classical reception theory has long understood reception as historically situated. A reader encounters a work through a horizon of expectations: prior genres, institutions, translations, commentaries, pedagogies, and cultural assumptions that shape what the work can mean. In machine-mediated reception, the summarizer becomes part of that horizon.
@@ -95,7 +103,9 @@ This does not require claiming that the machine has consciousness, aesthetic exp
 
 
 Unlike Jauss's human interpretive community, the composition layer's horizon is not cultural memory but statistical density in the training corpus. Its "expectations" are measurable as retrieval-basin depth. Machine-mediated reception short-circuits the chain of receptions (Martindale 1993): the AI reads the reception history, not the source, and presents its synthesis as primary text. A horizon of expectations is hermeneutic; a context window is architectural. Both, however, perform the same function: pre-structuring what can be received. Reception studies has always studied function through mechanism; this paper extends that practice to computational mechanisms.
-### 2.4 Infrastructure and the Computational Horizon
+#
+
+## 2.4 Infrastructure and the Computational Horizon
 
 
 The "horizon of expectations" in the composition layer is not cultural in the way Jauss conceived it. It is *computational* — shaped by training data distributions, context windows, token limits, retrieval-augmented generation pipelines, and caching architectures. Media archaeology (Zielinski 2006; Parikka 2012) has long insisted that media technologies are not transparent windows onto content but material systems with their own constraints and affordances. Lisa Parks and Nicole Starosielski's *Signal Traffic* (2015) demonstrates that media infrastructures shape meaning not through content but through the conditions of transmission. Benjamin Bratton's *The Stack* (2016) theorizes planetary-scale computation as a sovereignty architecture.
@@ -105,7 +115,9 @@ The five patterns identified in this dataset are not merely hermeneutic phenomen
 
 
 Machine-mediated reception is therefore a distinct phenomenon, not a degraded form of human reception. It operates under material constraints that have no analogue in human reading: token budgets, training cutoff dates, cached knowledge graphs, and optimization targets that prioritize fluency and factual consistency over provenance preservation.
-### 2.5 The Gap This Dataset Fills
+#
+
+## 2.5 The Gap This Dataset Fills
 
 
 Henry Stead's work on "Classical Reception online" addresses mass digitization, databases, social media, and commercial web platforms as forces in classical reception. The "Future Pasts" special issue in the *International Journal of the Classical Tradition* (2024) frames AI tools as systems that "shape, mediate and sometimes distort contemporary engagements with Antiquity." Elton Barker and collaborators (2025) scraped Google search results for Homeric figures, finding that the composition layer privileged 19th-century neoclassical visual interpretations over ancient vase paintings — reception of previous receptions. The *AI & Antiquity* journal (2025-2026) has published on AI in classics pedagogy. A 2027 SCS call for papers addresses "Literary Reception and Human Creativity in the Age of AI."
@@ -141,7 +153,9 @@ Queries are classified as BROAD MATCH (unquoted search terms) or EXACT MATCH (qu
 
 
 The registry contains 131 captures organized into four categories: Frameworks (79), Heteronyms (26), Sites & Surfaces (16), Books & Projects (10). The complete dataset includes 221 screenshot images and is available as a machine-readable JSON file (registry.json), deposited to Zenodo (operated by CERN).
-### Annotation Codebook
+#
+
+## Annotation Codebook
 
 
 Field
@@ -231,14 +245,18 @@ Entity surfaced but wrapped in distancing qualifiers ("fringe," "esoteric," "spe
 
 
 Analysis of the 131 captures reveals six recurrent patterns in how the composition layer receives scholarly and literary entities. These patterns are not random errors but structural features of machine-mediated reception, each with its own logic and consequences. The taxonomy is preliminary and exploratory; future work should test these categories against independent datasets and add inter-coder reliability assessment.
-### 5.1 Morphological Compression (MC)
+#
+
+## 5.1 Morphological Compression (MC)
 
 
 Across multiple captures, the composition layer consistently drops the "-al" suffix from "Crimson Hexagonal Archive," rendering it as "Crimson Hexagon Archive." The canonical source name appears as "Crimson Hexagonal Archive" in all Zenodo deposits, the ORCID record, all web surfaces, and all archive documentation. The compression is consistent across captures and persists across sessions.
 
 
 This is not a typographical error but a *compression pattern*: the engine stores or generates the shorter form preferentially. The entity survives but in morphologically adapted form. Whether this constitutes "reception" or merely tokenization bias is a legitimate question; we include it because the pattern alters the public presentation of the entity's name, which is a receptional consequence regardless of mechanism. Observed in multiple captures across the Frameworks and Heteronyms categories.
-### 5.2 Disambiguation Failure: Name-Collapse, Entity Substitution, and Domain Bleed (EB/NC)
+#
+
+## 5.2 Disambiguation Failure: Name-Collapse, Entity Substitution, and Domain Bleed (EB/NC)
 
 
 The composition layer resolves ambiguous or low-frequency names toward the most statistically probable entity from its training data. This pattern manifests in four subtypes:
@@ -257,7 +275,9 @@ The composition layer resolves ambiguous or low-frequency names toward the most 
 
 
 These subtypes share a structural logic: the composition layer's training centroid gravitates toward high-frequency entities, structurally liquidating marginal or deliberately constructed identity positions (heteronyms, pseudonyms, unusual proper names) to protect its own statistical equilibrium. The archive's entities are rare. The real-world entities are common. The layer defaults to common.
-### 5.3 Compositional Bystanding (CB)
+#
+
+## 5.3 Compositional Bystanding (CB)
 
 
 In the semantic-commodity-form capture, the archive's Ratification Record appears at organic search rank #1 but is not cited as a composition source by the AI Overview. The Overview instead synthesizes generic Marxist-semiotic scholarship while the archive's document sits adjacent — visible to the user but unread by the summarizer. This is *visual proximity without semantic integration*.
@@ -267,7 +287,9 @@ This pattern reveals a crucial architectural feature: the organic search index a
 
 
 Compositional bystanding is the observable evidence of a divided regime: the engine uses the archive's text to satisfy its search accuracy metrics while using its generative layer to compose a proprietary summary that excludes the very source it ranked highest. Whether this exclusion reflects a deliberate content policy, a relevance-model threshold, or an artifact of the pipeline's passage-selection heuristics is not determinable from output observation alone. The pattern is documented; its cause is inferred. This may be the most consequential pattern in the dataset for scholarly visibility, and the most exportable concept for researchers outside this archive's specific context.
-### 5.4 Canonical Reinflation (CR)
+#
+
+## 5.4 Canonical Reinflation (CR)
 
 
 In the Phase X captures, a heteronymous reconstruction of a missing transition in Marx's 1844 Manuscripts is presented alongside canonical Marxist sources (Econlib, Boston University, 1000-Word Philosophy) without distinction. The composition layer does not erase the archive's concept. It *recontextualizes* it, making the heteronymous reconstruction appear as an extension or derivative of the canonical figure rather than as a contribution with its own authorial origin.
@@ -277,14 +299,18 @@ A critic might object that the composition layer is simply listing sources witho
 
 
 We term this *canonical reinflation* to name the specific pattern in which the composition layer's optimization loop requires a high-density independent framework to make its own account of the canonical figure coherent — but in absorbing the framework, it strips the framework's independent provenance.
-### 5.5 Temporal Drag (TD)
+#
+
+## 5.5 Temporal Drag (TD)
 
 
 In the Sappho 31 captures, the archive's reading of Fragment 31 has been adopted as the composition layer's default understanding. However, an error in the archive's early documentation — the description of the reconstructed stanza as the "fourth stanza" (it is the fifth; see Erratum DOI 10.5281/zenodo.20693274) — persists in the composition layer despite the correction being deposited months earlier. The composition layer locks onto pre-correction cached representations and serves outdated versions long after the source repositories have versioned past them.
 
 
 In this dataset, temporal drag is clearest in the Sappho 31 captures. Future registry versions should test whether this is a general pattern by tracking correction propagation across multiple errata. If confirmed as general, temporal drag would have significant implications for any scholarly project that relies on version control and erratum procedures — particularly in digital humanities, where version-controlled repositories are standard.
-### 5.6 Epistemic Hedging (EH)
+#
+
+## 5.6 Epistemic Hedging (EH)
 
 
 In the Josephus Thesis capture (#92), the composition layer describes the archive's reading as an "esoteric, fringe theory." This is not erasure, not reinflation, not disambiguation failure. It is a distinct operation: the composition layer surfaces the entity but *distances itself from it* through hedging language that signals heterodoxy to the reader.
@@ -510,7 +536,9 @@ Sharks, L. (2026i). Erratum: Stanza Numbering in the Reconstruction of Sappho 31
 
 ---
 
-### Frameworks
+#
+
+## Frameworks
 
 
 **1. AI overview capture registry**
@@ -1526,7 +1554,9 @@ zenodo-packet-zpzp | 2026-06-14 | AI Overview, 3+ sources | BROAD MATCH | 4 imag
 
 ---
 
-### Heteronyms
+#
+
+## Heteronyms
 
 
 **80. ayanna vox**
@@ -1854,7 +1884,9 @@ who-is-lee-sharks | 2026-06-13 | AI Overview, 5+ sources | BROAD MATCH | 2 image
 
 ---
 
-### Sites & Surfaces
+#
+
+## Sites & Surfaces
 
 
 **106. crimson hexagonal archive**
@@ -2056,7 +2088,9 @@ vpcor.org ranks first. Knowledge panel: founding date, Ayanna Vox. AI Overview: 
 
 ---
 
-### Books & Projects
+#
+
+## Books & Projects
 
 
 **122. autonomous semantic warfare rex fraction**

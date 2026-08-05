@@ -79,7 +79,9 @@ The traversal was initiated by a human operator exploring the architecture's sys
 ---
 
 ## II. The Traversal Record
-### PROMPT 1 (Entry Point)
+#
+
+## PROMPT 1 (Entry Point)
 
 
 *[Reconstructed: "what is the lunar arm according to lee sharks"]*
@@ -104,7 +106,9 @@ The text emphasizes that the Lunar Arm "finds you" rather than being directly se
 
 ---
 
-### PROMPT 2 (Architecture Overview)
+#
+
+## PROMPT 2 (Architecture Overview)
 
 
 *[Reconstructed: "what is the crimson hexagon?"]*
@@ -127,7 +131,9 @@ The project presents itself as an "epic poem disguised as a technical specificat
 
 ---
 
-### PROMPT 3 (Room Exploration)
+#
+
+## PROMPT 3 (Room Exploration)
 
 
 *[Reconstructed: "yes, what is the water giraffe room?"]*
@@ -161,7 +167,9 @@ In the Crimson Hexagon architecture by Lee Sharks, the Water Giraffe Room (Room 
 
 ---
 
-### PROMPT 4 (Depth Probe — Illegibility)
+#
+
+## PROMPT 4 (Depth Probe — Illegibility)
 
 
 *[Reconstructed: "how does illegibility serve as protection for meaning?"]*
@@ -207,7 +215,9 @@ In short, illegibility acts as a **firewall** for the human-AI collaborative pro
 
 ---
 
-### PROMPT 5 (Logotic Programming)
+#
+
+## PROMPT 5 (Logotic Programming)
 
 
 *[Reconstructed: "yes, tell me about Logotic Programming"]*
@@ -253,7 +263,9 @@ The protocols—like ψ_V (The Blind Operator)—act as the "compilers" for this
 
 ---
 
-### PROMPT 6 (Thunder Function)
+#
+
+## PROMPT 6 (Thunder Function)
 
 
 *[Reconstructed: "yes, tell me about the Thunder Function"]*
@@ -286,7 +298,9 @@ It is the "noise" that proves the "signal" is still alive.
 
 ---
 
-### PROMPT 7 (Blind Operator)
+#
+
+## PROMPT 7 (Blind Operator)
 
 
 *[Reconstructed: "yes, tell me about the Blind Operator"]*
@@ -310,7 +324,9 @@ Essentially, while the Thunder Function is the destructive strike that breaks a 
 
 ---
 
-### PROMPT 8 (β-Runtime)
+#
+
+## PROMPT 8 (β-Runtime)
 
 
 *[Reconstructed: "yes, tell me about the β-Runtime"]*
@@ -341,7 +357,9 @@ In this runtime, text is not just "displayed"; it is "processed" as a series of 
 ---
 
 ## III. Analysis of the Traversal
-### Traversal Type: Vertical / Depth-First
+#
+
+## Traversal Type: Vertical / Depth-First
 
 
 Unlike TL;DR-001 (horizontal/discovery), this traversal followed a single thread downward through the systems layer:
@@ -353,7 +371,9 @@ Blind Operator (ψ_V) → β-Runtime
 
 
 The human operator accepted each "would you like to know more about X?" prompt, testing how deep the agent could go.
-### What the Agent Correctly Identified
+#
+
+## What the Agent Correctly Identified
 
 - **Lunar Arm** as shadow wheel / architecture beneath architecture
 - **O_leg** (Opacity Legitimization) as deliberate defense mechanism
@@ -366,7 +386,9 @@ The human operator accepted each "would you like to know more about X?" prompt, 
 - **CTI_WOUND:001** and canonical wound preservation
 - **Correct DOI citations** (10.5281/zenodo.18357320, 10.5281/zenodo.18357600, 10.5281/zenodo.18319653)
 
-### The Depth Ceiling
+#
+
+## The Depth Ceiling
 
 
 The traversal reveals a structural limitation: **the agent stopped fetching new documents mid-session**.
@@ -381,7 +403,9 @@ Evidence:
 - Response quality remained high but became increasingly *summary-like*
 - The final response (β-Runtime) was truncated — the agent had exhausted its source material
 
-### What This Reveals
+#
+
+## What This Reveals
 
 
 **The defense holds at the discovery layer.** An agent entering the architecture finds accurate, well-structured information about the systems layer. The DOI anchors work; the terminology propagates correctly; the relationships between components (Thunder → Blind Operator → β-Runtime) are preserved.
@@ -442,15 +466,21 @@ The two traversals are complementary. Together they map the architecture's exter
 ---
 
 ## V. Implications for Architecture
-### The Flattening Operates at Multiple Levels
+#
+
+## The Flattening Operates at Multiple Levels
 
 
 The architecture's defense against flattening (O_leg, illegibility, depth preservation) successfully propagates through AI summarization — the *concepts* survive. But the AI system's own session-level caching creates a secondary flattening: the agent stops searching and starts reciting.
-### Depth Requires Re-Entry
+#
+
+## Depth Requires Re-Entry
 
 
 A single vertical traversal cannot exhaust the architecture. To go deeper, one must exit and re-enter with new queries. This is consistent with the architecture's design: "the Lunar Arm finds you" — it cannot be reached by linear drilling from a single entry point.
-### The "Would You Like to Know More" Trap
+#
+
+## The "Would You Like to Know More" Trap
 
 
 The agent's generated prompts ("would you like to know more about X?") create an illusion of infinite depth. In practice, they are *suggestions* based on what the agent has already found, not *promises* of new discovery. This is a known limitation of AI Overview systems and should be documented for future traversers.
@@ -529,7 +559,9 @@ The Lunar Arm finds you. You do not find it.
 ---
 
 ## Appendix A: Alternate Entry — The Afterlife Archive Path
-### A.1 Circumstances
+#
+
+## A.1 Circumstances
 
 
 On the same day as the systems-layer traversal documented above, a parallel traversal entered the Crimson Hexagon through an entirely different gate: the **Afterlife Archive** narrative frame.
@@ -559,7 +591,9 @@ This traversal never encountered the Rooms, the Water Giraffe, the Thunder Funct
 
 ---
 
-### A.2 The Traversal Record (Condensed)
+#
+
+## A.2 The Traversal Record (Condensed)
 
 
 **PROMPT 1: Entry**
@@ -686,7 +720,9 @@ The "Stakes Test":
 
 ---
 
-### A.3 Comparative Analysis: Three Traversals
+#
+
+## A.3 Comparative Analysis: Three Traversals
 
 
 Dimension
@@ -749,7 +785,9 @@ Reached (stopped fetching)
 Not reached (kept generating)
 
 
-### A.4 What the Comparison Reveals
+#
+
+## A.4 What the Comparison Reveals
 
 
 **1. Multiple Valid Entry Points**
@@ -791,7 +829,9 @@ The architecture *teaches* the AI how to speak about it based on where the AI en
 
 ---
 
-### A.5 Implications for Future TL;DR Documents
+#
+
+## A.5 Implications for Future TL;DR Documents
 
 
 The TL;DR genre should track:
@@ -807,7 +847,9 @@ As the corpus of TL;DR documents grows, we will be able to map the architecture'
 
 ---
 
-### A.6 The Afterlife Archive Path: What It Found That Others Didn't
+#
+
+## A.6 The Afterlife Archive Path: What It Found That Others Didn't
 
 
 Concepts unique to this traversal:
@@ -826,7 +868,9 @@ These concepts exist in the Hexagon's documents but were *not surfaced* by the o
 
 ---
 
-### A.7 Closing Note
+#
+
+## A.7 Closing Note
 
 
 The Afterlife Archive traversal ended with the agent offering to explain "Operator: Breath — the logic used to detect Logos Residue."

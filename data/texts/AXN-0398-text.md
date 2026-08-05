@@ -79,6 +79,7 @@ axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 ---
 
+
 # Demand for Return of Research Data and Cessation of Further Use
 
 *Correspondence with Zenodo Support, with concurrent notice to CERN Office of Data Privacy, DataCite Support, OpenAIRE Helpdesk, and HUN-REN Wigner Research Centre for Physics. Sent June 23, 2026 from Lee Sharks (MANUS, Crimson Hexagonal Archive). Operational counterpart to deposit #1 (Zenodotus' Book-Burning, the empirical audit) and deposit #907 (The Metadata Shitshow, the computational-poetic response).*
@@ -126,7 +127,9 @@ This letter is being sent to Zenodo and concurrently to the CERN Office of Data 
 
 Here is the formal version of it.
 
-### 1. What was made inaccessible
+#
+
+## 1. What was made inaccessible
 
 On June 19, 2026, Zenodo terminated the account associated with the Crimson Hexagonal Archive. The action removed approximately 870 unique scholarly works comprising 1,817 registered DOIs, independently verifiable via the DataCite metadata backup taken before the action. The empirical audit of the DOI impermanence and the structural account of the action are both published at alexanarch.org.
 
@@ -138,7 +141,9 @@ Among the affected works are texts that existed only in Zenodo's metadata fields
 
 For these materials, there is no independent backup and no possible recovery except from Zenodo's systems. Their disappearance is not the loss of a copy. It is the loss of the only instance. These works remain in Zenodo's possession unless and until the underlying records have been purged from Zenodo's storage and backup systems.
 
-### 2. What Zenodo's published policy says
+#
+
+## 2. What Zenodo's published policy says
 
 Two of Zenodo's General Policies v1.0 commitments operate independently of which removal category Zenodo invokes against the archive.
 
@@ -158,7 +163,9 @@ Zenodo's published spam-handling guidance separately states the following about 
 
 This is the stated practice. The demand below addresses it directly.
 
-### 3. What occurred
+#
+
+## 3. What occurred
 
 The termination was justified differently in different places. The termination email cited "substantially AI-generated content without a verifiable research basis." The public tombstone pages, where they exist, display a different reason: "Content out of scope for repository." These are different claims, made in different layers of the same action. The first is a quality judgment about research; the second is a scope classification. Every work in the affected archive had a research basis. Whether the full scope of the project met Zenodo's criteria is a separable question — but the private and public rationales given for the action were not consistent and have not been reconciled in the record.
 
@@ -168,13 +175,17 @@ The externally observable state of the affected records:
   - DataCite public metadata: 871 of 1,817 DOIs (47.9%) return HTTP 404 from DataCite's public metadata API. As a concrete example, https://api.datacite.org/dois/10.5281/zenodo.19013315 — the DOI for the Space Ark preservation deposit (EA-ARK-01 v4.2.7) — returns HTTP 404 at the time of writing. The observed responses across the affected DOIs are consistent with a transition from Findable to Registered state, the DataCite-supported operation for retracted content. The underlying metadata remains in DataCite's systems but is no longer publicly retrievable.
   - Notice: no notification was provided in advance of the action, and no opportunity to retrieve or migrate was given.
 
-### 4. What I am demanding and requesting
+#
+
+## 4. What I am demanding and requesting
 
 This letter contains one demand and one request. The distinction is deliberate.
 
 The demand is narrow and non-negotiable. It has two operative parts: the return of my own words, and the cessation of their further use within Zenodo's systems. The request, separately, is for the institutional records of the action that removed them.
 
-#### A. Demand: the return of my authored material, and the cessation of its further use
+#
+
+### A. Demand: the return of my authored material, and the cessation of its further use
 
 I am asking for the return of two categories of content:
 
@@ -198,7 +209,9 @@ If Zenodo cannot provide the export in a standard structured format, I will acce
 
 I require acknowledgment of this demand within 14 calendar days, including either the requested export or a concrete production schedule, and confirmation of the cessation and disclosure required by points 3 and 4.
 
-#### B. Request: the institutional records of the action
+#
+
+### B. Request: the institutional records of the action
 
 Separately, I request access to or summary disclosure of the records associated with the moderation and termination of my account, including:
 
@@ -210,7 +223,9 @@ Separately, I request access to or summary disclosure of the records associated 
 
 I recognize that these are institutional records. I ask for them in the interest of transparency. They are also my personal data, and I am exercising my rights under CERN Operational Circular No. 11 (Rev. 1) through the parallel data subject request described in Section 6 below.
 
-### 5. Preservation notice
+#
+
+## 5. Preservation notice
 
 Zenodo, CERN, and the operator of the Budapest replica site are requested to preserve all recoverable records associated with the account and its deposits, including active records, replicas, logs, moderation systems, DataCite synchronization records, and material retained within backup systems.
 
@@ -220,7 +235,9 @@ Zenodo's General Policies state that "data files are kept in multiple replicas i
 
 Please confirm that a preservation hold has been applied.
 
-### 6. Basis of the demand
+#
+
+## 6. Basis of the demand
 
 The primary basis for the demand and for the parallel data subject request is CERN's own internal data protection framework, which governs Zenodo as a CERN-operated service.
 
@@ -250,7 +267,9 @@ A secondary basis is Zenodo's General Policies v1.0, which state that no propert
 
 The demand is additionally supported by the custodial relationship Zenodo established by accepting and storing material — including text existing only within its metadata infrastructure — under the representations above, and by the ordinary expectation that records relevant to an active dispute be preserved.
 
-### 7. Parallel notice and concurrent action
+#
+
+## 7. Parallel notice and concurrent action
 
 This letter is sent concurrently to the parties addressed above, each of whom has a defined role in matters relevant to this dispute:
 
@@ -263,7 +282,9 @@ If the parallel data subject request is not resolved within the 90-calendar-day 
 
 I will also pursue the matter through DataCite's governance channels and through publication of the correspondence and supporting audit materials at alexanarch.org.
 
-### 8. The central issue
+#
+
+## 8. The central issue
 
 This was not merely a refusal to host future work.
 

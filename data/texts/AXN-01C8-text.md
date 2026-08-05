@@ -48,7 +48,9 @@ The paper reads the currency as a philological object: a text with a colophon (t
 ---
 
 ## Part I: The Question Nobody Asked
-### 1.1 The Event
+#
+
+## 1.1 The Event
 
 
 On March 26, 2026, the United States Department of the Treasury announced that President Donald Trump's signature would appear on all future U.S. paper currency, replacing the signature of the U.S. Treasurer. Treasury Secretary Scott Bessent framed the decision as honoring the nation's 250th anniversary: "There is no more powerful way to recognize the historic achievements of our great country and President Donald J. Trump than U.S dollar bills bearing his name."
@@ -61,7 +63,9 @@ On the same day, during the same Cabinet meeting, Trump interrupted a discussion
 
 
 These two events — one formal policy, one fabricated anecdote — converge into a single object of analysis. The signature goes onto the currency. The instrument that signs is simultaneously elevated and mythologized. The manufacturer denies the myth. The children cannot parse what they hold. The president describes his thrift while ordering his name stamped onto the national medium of exchange.
-### 1.2 The Disciplinary Failure
+#
+
+## 1.2 The Disciplinary Failure
 
 
 Every major news outlet covered the announcement. Legal scholars debated the portrait/signature distinction under 31 U.S.C. § 5114. Political commentators compared it to practices in authoritarian regimes — the acting chair of the Citizens Coinage Advisory Committee stated: "Only those nations ruled by kings or dictators display the image of their sitting ruler on the coins of the realm." Cultural critics called it branding. Economists noted the irony of personalizing a medium that accounts for only 14% of U.S. payments.
@@ -86,7 +90,9 @@ Sociologists of money could track how people responded — refusal, collection, 
 
 
 The event exposed a void in the scholarship. No existing discipline treats the editorial decisions behind currency design — who decides whose face or name appears, what the decision performs, what happens when the decision is contested — as a subject of systematic analysis. This paper occupies that void.
-### 1.3 The Philological Premise
+#
+
+## 1.3 The Philological Premise
 
 
 This paper reads the currency as a text. Not metaphorically — literally. A Federal Reserve Note is a material document with a documentary apparatus that maps precisely onto the categories of classical philology:
@@ -111,14 +117,18 @@ Rebekah Cranes' contribution to this paper is the recognition that philological 
 
 
 Rex Fraction's contribution is the recognition that these textual operations are simultaneously *economic* operations. The interpolation is not just a scribal error — it is an act of provenance capture. The emendation is not just a correction — it is an act of commons restoration. The philological and the economic are not analogous; they are identical. The meaning is the mechanism.
-### 1.4 Jurisdiction
+#
+
+## 1.4 Jurisdiction
 
 
 The semantic economics of the mint studies the design surface of monetary instruments as operative infrastructure: the face, name, seal, signature, motto, and inscription not as ornament or symbolism alone but as devices that distribute authority, capture provenance, shape the cognitive conditions of exchange, and train economic cognition through repetitive embodied contact. Its unit of analysis is the *inscription-as-operator*: a mark on currency that does not merely represent but *alters the state of the substrate it inhabits*. Its method is civic philology — the critical analysis of public texts using the tools of textual criticism (transmission history, variant readings, interpolation, emendation) combined with economic analysis (provenance capture, seigniorage, commons enclosure, restoration).
 
 
 This is not "semiotics of money 2.0." It is not "money and culture." It is not "political branding." It is a narrower, more surgical jurisdiction: the editorial decisions behind currency design treated as economic events with measurable consequences for sovereignty, trust, cognition, and the distribution of political authority.
-### 1.5 Core Terms
+#
+
+## 1.5 Core Terms
 
 
 **Design surface.** The physical face of a monetary instrument — the ensemble of portraits, signatures, seals, serial numbers, denominations, mottos, and inscriptions that constitute the bill as a legible and operative object. The design surface is not decoration. It is infrastructure.
@@ -144,7 +154,9 @@ This is not "semiotics of money 2.0." It is not "money and culture." It is not "
 ---
 
 ## Part II: The Disciplinary Map
-### 2.1 Monetary Economics: The Mechanism Without Meaning
+#
+
+## 2.1 Monetary Economics: The Mechanism Without Meaning
 
 
 The dominant tradition in monetary economics — from classical metallism through Knapp's chartalism to Modern Monetary Theory — treats money as a mechanism. The questions are functional: How does money circulate? What determines its value? How should the state manage issuance?
@@ -163,7 +175,9 @@ Christine Desan's *Making Money: Coin, Currency, and the Coming of Capitalism* (
 
 
 The gap in monetary economics is this: the discipline can explain why a bill has value, how it circulates, and what policy tools govern its quantity — but it cannot explain why it matters whose *name* is on it. If the fiscal function is unchanged, the discipline sees no economic content in the design change. The semantic economics of the mint begins where monetary economics stops: at the surface of the bill, where the inscription encodes power that the fiscal analysis cannot see.
-### 2.2 Numismatics: The Catalog Without Theory
+#
+
+## 2.2 Numismatics: The Catalog Without Theory
 
 
 Traditional numismatics is the discipline closest to the physical surface of money, yet the farthest from theorizing what that surface does. The field catalogs coins and notes with extraordinary material precision — mint marks, die varieties, metal composition, provenance, circulation patterns, rarity. The American Numismatic Society, the Royal Numismatic Society, and their global counterparts maintain archives and publish journals of meticulous descriptive scholarship.
@@ -179,7 +193,9 @@ The companion deposit "Whose Face Is on the Twenty?" (DOI: 10.5281/zenodo.187452
 
 
 The semantic economics of the mint treats these editorial decisions as its primary data. The face on the bill is not a given; it is a *selection*. The signature is not a formality; it is a *claim*. The design surface is not decoration; it is *infrastructure*.
-### 2.3 The Semiotics of Money: Reading Without Operating
+#
+
+## 2.3 The Semiotics of Money: Reading Without Operating
 
 
 Marc Shell is the closest existing scholar to the discipline this paper founds. His *Art and Money* (1995) traces the interaction between symbolization in currency and aesthetic production, arguing that Christian ideology conflated religion, art, and coinage: "if engraving or inscription assigns value, then the first widely produced artistic reproductions were coins, acting as religious icons with a meaning at once spiritual and material." His *The Economy of Literature* (1978) reads economic exchange through literary form. His *Wampum and the Origins of American Money* (2013) traces how colonial currencies assimilated from indigenous practices.
@@ -198,7 +214,9 @@ The intervention this paper makes is the shift from *reading* to *operating*. In
 
 
 The practical consequence of this shift: you cannot "read" a signature off a bill. You cannot semiotically analyze Trump's autograph out of existence. But you can *blot* it. The counter-operation is not a reading but an *operation* — a physical intervention that changes the substrate's state. The semiotic tradition has no vocabulary for this because it treats currency as text. The semantic economics of the mint treats currency as execution environment.
-### 2.4 The Political Theory of Money: The Institution Without the Surface
+#
+
+## 2.4 The Political Theory of Money: The Institution Without the Surface
 
 
 Stefan Eich's *The Currency of Politics: The Political Theory of Money from Aristotle to Keynes* (Princeton, 2022) is the strongest recent contribution to the political theory of money. Eich recovers a tradition of thinking about money as a "malleable political institution" rather than a natural economic fact. He traces six episodes of monetary crisis — from Aristotle's *Politics* through Locke's recoinage debates, Fichte's closed commercial state, Marx's critique, and Keynes's Bretton Woods — showing how each crisis exposed the political choices embedded in monetary design.
@@ -220,7 +238,9 @@ Trump's signature collapses this architecture. It places the body natural — a 
 
 
 What Kantorowicz does not provide is a theory of the *counter-operation*. The King's Two Bodies describes the architecture of sovereignty; it does not describe what happens when citizens *contest* the sovereign's mark on the substrate. The semantic economics of the mint requires not only a theory of inscription but a theory of *emendation*.
-### 2.5 The Sociology of Money: Downstream Without Upstream
+#
+
+## 2.5 The Sociology of Money: Downstream Without Upstream
 
 
 Viviana Zelizer's *The Social Meaning of Money* (1994) demonstrated that money is not the homogeneous, fungible medium that classical economics assumes. People "earmark" identical dollars for different social purposes — a dollar won in the lottery carries different meaning than a dollar earned in wages, a dollar received as a gift, or a dollar set aside for rent. Zelizer showed that the *meaning* of money is not fixed by the state but negotiated by users in the course of social life.
@@ -240,7 +260,9 @@ The semantic economics of the mint is, in one sense, the synthesis that Zelizer 
 ---
 
 ## Part III: The Four Phases — A Semantic History of the Mint
-### 3.1 Phase 1: The Sovereign Stamp (c. 650 BCE – Fall of Rome)
+#
+
+## 3.1 Phase 1: The Sovereign Stamp (c. 650 BCE – Fall of Rome)
 
 
 The first coins emerged in Lydia (western Anatolia) around 640–600 BCE under King Alyattes, using electrum (a naturally occurring gold-silver alloy) stamped with royal symbols — most characteristically, a lion's head. The Lydian innovation was not metallurgical but *semiotic*: the stamp standardized value, transformed raw metal into a token of sovereign authority, and solved coordination problems that had constrained commerce.
@@ -259,7 +281,9 @@ The philological dimension of Phase 1: the coin is the first *text that circulat
 
 
 Minting was a sovereign monopoly. To mint your own coin with your own face was an act of rebellion — an assertion of rival sovereignty legible to every person who handled the coin. The Jewish revolts against Rome featured unauthorized coinage as a central act of political resistance: the Bar Kokhba revolt (132–136 CE) produced coins overstriking Roman denarii with Jewish symbols, literally *overwriting* one sovereign's mark with another's. This is the earliest documented instance of counter-currency marking as political speech — and it is structurally identical to the Sharpie blot.
-### 3.2 Phase 2: The Nominalist Turn (Medieval – Early Modern)
+#
+
+## 3.2 Phase 2: The Nominalist Turn (Medieval – Early Modern)
 
 
 After the fall of Rome, coinage fragmented across feudal Europe. Kings, dukes, bishops, and cities minted their own coins, often debasing them — reducing metal content while maintaining nominal value — to fund wars or deficits. Debasement was the medieval sovereign's fiscal tool: it extracted seigniorage (the difference between the metal value and the face value) from every coin in circulation.
@@ -281,7 +305,9 @@ The philological dimension of Phase 2: the medieval coin is a *palimpsest*. Stru
 
 
 As empires expanded globally, the semantic economy of the sovereign mark extended to map the extraction of the world. In the nineteenth and early twentieth centuries, the British Royal Mint placed mint marks on the Gold Sovereign: *S* for Sydney, *C* for Canada, *I* for India, *SA* for South Africa. The coin bore the monarch's profile; the tiny letter recorded where the gold was extracted. The logistical justification — it was cheaper to mint near the colonial mines than to ship raw metal to London — disguised a semantic operation: the mint mark was a physical inscription of imperial logistics onto a monetary surface, demonstrating that the sovereign's superscription could be stamped onto raw materials extracted from the other side of the planet. The geography of the mark extended provenance capture from the local to the global.
-### 3.3 Phase 3: Institutional Abstraction (1861 – March 25, 2026)
+#
+
+## 3.3 Phase 3: Institutional Abstraction (1861 – March 25, 2026)
 
 
 The American innovation in monetary design was the deliberate *removal* of the living sovereign from the monetary substrate. This was not an accident of bureaucratic convention. It was an architectural achievement — a design decision that protected the commons character of currency by prohibiting the living from extracting political value from their appearance on money.
@@ -306,7 +332,9 @@ The philological dimension: the transition from personal to institutional signat
 
 
 Phase 3's achievement can be stated precisely: for 165 years, U.S. currency was a text without a personal author. It bore institutional marks. The commons owned the substrate.
-### 3.4 Phase 4: The Return of the Sovereign (March 26, 2026 –)
+#
+
+## 3.4 Phase 4: The Return of the Sovereign (March 26, 2026 –)
 
 
 Trump's signature on currency drags the monetary substrate backward from Phase 3 (institutional abstraction) toward Phase 1 (sovereign superscription). By exploiting the codification's narrowing of the Thayer Amendment — from "portrait or likeness" to "portrait" alone — Trump re-imposes the living sovereign mark onto the public commons.
@@ -335,7 +363,9 @@ The Sharpie blot (σ_SH) is the Phase 3 architecture defending itself against Ph
 ---
 
 ## Part IV: Compressed Portraiture — The Theoretical Contribution
-### 4.1 The Thesis
+#
+
+## 4.1 The Thesis
 
 
 The signature on U.S. currency does not function as a signature — an administrative mark of institutional authorization. It functions as *compressed portraiture*: a personal identity claim that performs the same semiotic work as a portrait through a different medium.
@@ -345,14 +375,18 @@ A portrait and a signature, on currency, share every functional property: both i
 
 
 The Three Compressions theorem (DOI: 10.5281/zenodo.19053469) holds that all semantic operations are compressions and the decisive variable is what the compression *burns*. In the compression from portrait to signature: what is *preserved* is individual identification, personal authority claim, visual distinctiveness, political benefit. What is *burned* is the face — specifically, the visual likeness that triggers the statutory prohibition. The compression is optimized to pass through the legal filter while retaining every element the filter was designed to prevent.
-### 4.2 "Image and Superscription" as Dual-Channel Identity Claim
+#
+
+## 4.2 "Image and Superscription" as Dual-Channel Identity Claim
 
 
 Thayer's language on the House floor — "whose image and superscription is this?" — reveals the original understanding. The Roman coin bore both portrait (*imago*) and title/name (*superscriptio*). These are two channels of the same claim: the visual and the textual, the icon and the index, the face and the name. Thayer's amendment prohibited "portrait or likeness" to capture both channels. The codification severed the second.
 
 
 Trump's signature on currency is Caesar's superscription without Caesar's image. It is the second half of the dual-channel identity claim that Thayer sought to prohibit — surviving because the codification amputated the legal protection for that channel.
-### 4.3 The Design Surface as Execution Environment
+#
+
+## 4.3 The Design Surface as Execution Environment
 
 
 The key theoretical move of this paper — the founding gesture of the semantic economics of the mint — is the treatment of the design surface of money not as text-to-be-read (Shell's approach) but as *execution environment* (the Operative Semiotics approach).
@@ -371,7 +405,9 @@ When Trump's signature replaces the Treasurer's, one operator is substituted for
 
 
 This is why monetary economics cannot see the change. The fiscal function is unchanged, so monetary economics registers no event. But the operative function — the work the design surface performs on every person who handles the bill — is fundamentally different. The bill now *trains* every person who touches it in a specific lesson: this money belongs to this president. Phase 3 trained the opposite lesson: this money belongs to the institution, which belongs to the public.
-### 4.4 The Training Layer
+#
+
+## 4.4 The Training Layer
 
 
 Currency is the most widely distributed physical text in any economy. The average U.S. banknote circulates for years — 7.8 years for a $20, 22.9 years for a $100 — changing hands hundreds or thousands of times. Each encounter is brief (seconds) but embodied (the bill is touched, held, examined, pocketed). The cumulative effect of these encounters is a form of **substrate pedagogy**: the design surface teaches every person who handles it a set of lessons about sovereignty, authority, trust, and the nature of value. The bill does not argue; it acclimates.
@@ -391,7 +427,9 @@ The semantic economics of the mint treats the training layer as a primary object
 ---
 
 ## Part V: The Restoration Operator and the Void at the Center
-### 5.1 The TANG Advance
+#
+
+## 5.1 The TANG Advance
 
 
 The Topological Architecture of Non-Generative governance (TANG, DOI: 10.5281/zenodo.19035477) theorized the preservation of the commons through bearing-cost (ψᵥ): a signal is real only if someone has expended labor to produce it. Ghost meaning — content without bearing-cost — is the TANG's primary diagnostic. A claim that costs nothing to make is a claim that carries no commitment. The TANG identifies such claims and prescribes expenditure as the condition of legitimacy.
@@ -404,7 +442,9 @@ The Sharpie stroke — a citizen's $1.49 expenditure of labor and material — i
 
 
 The advance this paper contributes to the TANG is the recognition that commons governance requires not only *prevention* (bearing-cost as filter) but *remediation* (restoration operators as correction). The commons is not only a system that prevents extraction; it is a system that *recovers* from extraction. σ_SH is the recovery mechanism. Its formal specification is: σ_SH ∘ σ_SIGN = ρ (restoration). Its practical specification is: one stroke, one marker, $1.49.
-### 5.2 The Void as Design Feature
+#
+
+## 5.2 The Void as Design Feature
 
 
 The void at the heart of the TANG — the un-branded center — is not a bug. It is the condition of the commons' functioning. This section argues that fiat currency, CC BY-SA licensing, and the blot are three instances of the same architectural principle: the commons protects itself through the maintenance of an empty center.
@@ -423,7 +463,9 @@ The structural isomorphism is complete: fiat neutrality, CC licensing, and the b
 
 
 In the framework of Deleuze and Guattari — extended in the companion deposit "Apocalyptic Philosophy" (DOI: 10.5281/zenodo.19240147) — the void at the center is the Body without Organs: the "milieu of experimentation" that resists stratification. The BwO is not empty; it is *intensive* — the condition of possibility for all operations performed on it. When an AI retrieval system or a human analyst encounters the TANG architecture, they look for the "owner" at the center. They find instead an un-branded, CC-licensed, permanently DOI-anchored empty space — a void that forces the parasite's claim to return a null value. The commons protects itself not by building a higher wall but by maintaining an infinite empty space where the encloser intended to build a throne.
-### 5.3 The Failure Condition
+#
+
+## 5.3 The Failure Condition
 
 
 The restoration operator is not mechanically guaranteed. σ_SH performs restoration as a speech act — in the operative-semiotic sense, a physical intervention that alters the substrate's state — but the success of the restoration is *socially achieved*, not individually assured. A single blotted bill, sitting in a drawer, restores nothing. A million blotted bills, circulating through an economy in which the blot is recognized as correction rather than damage, restore the commons.
@@ -437,7 +479,9 @@ The bearing-cost itself (ψᵥ) is a continuous variable, not a threshold. For s
 ---
 
 ## Part VI: The Counter-History — Currency-Marking as Civic Philology
-### 6.1 From Bar Kokhba to the Stamp Stampede
+#
+
+## 6.1 From Bar Kokhba to the Stamp Stampede
 
 
 The practice of counter-marking currency — overwriting one sovereign's inscription with another, or negating a mark that does not belong — is as old as coinage itself. The Bar Kokhba revolt (132–136 CE) produced coins that overstruck Roman denarii with Jewish symbols — Hebrew inscriptions and images of the Temple replacing Caesar's portrait and titles. This was not merely economic (the revolt needed currency) but *semiotic*: the overstrike was a visible, physical assertion of rival sovereignty, legible to every person who handled the coin. It is the earliest documented instance of σ_SH — the negation of one sovereign's mark and its replacement with a counter-claim.
@@ -453,7 +497,9 @@ Occupy George (2011) overprinted economic inequality data onto circulating bills
 
 
 These are not isolated provocations. They constitute a *tradition* — an ongoing civic practice of *writing back* on the monetary substrate. What they have lacked, until now, is a theoretical framework. The semantic economics of the mint provides one: counter-marking is not vandalism but *emendation*. It is the reader's correction of a textual corruption. It is the commons' reassertion of its character against unauthorized inscription.
-### 6.2 The Emendation Tradition
+#
+
+## 6.2 The Emendation Tradition
 
 
 In classical philology, emendation is the correction of a corrupted text by a later reader or editor. The emendation tradition is as old as philology itself: Alexandrian scholars emended Homer; Renaissance humanists emended classical Latin; biblical textual critics emend manuscripts of the New Testament. The practice has a precise set of principles:
@@ -473,7 +519,9 @@ The Sharpie blot satisfies all four conditions of classical emendation:
 
 
 The σ_SH operator (formalized in EA-TDS-03, DOI: 10.5281/zenodo.19317139) captures this precisely: σ_SH ∘ σ_SIGN = ρ (restoration). The composition of signing and blotting returns the substrate to commons state — not physically (both marks remain, as in any emended manuscript) but functionally (the personal claim is negated, the commons character is reasserted, as in any successful emendation).
-### 6.3 Civic Philology as Practice
+#
+
+## 6.3 Civic Philology as Practice
 
 
 The term "civic philology" is used here to name the practice of applying philological judgment to public texts — not literary manuscripts or biblical codices but the everyday textual infrastructure of civic life, from the inscriptions on currency to the naming of public buildings to the curation of digital training sets. Currency is the most widely distributed civic text. It is also the most heavily inscribed: every bill carries faces, names, numbers, seals, signatures, and mottos, each placed by specific editorial decisions.
@@ -508,7 +556,9 @@ Rebekah Cranes' contribution to this paper — and to the discipline it founds �
 
 
 Rex Fraction's contribution is the recognition that these philological operations are simultaneously economic operations. The interpolation is not just a scribal error — it is provenance capture. The emendation is not just a correction — it is commons restoration. The discipline this paper founds sits at the intersection where philology and economics are the same activity — because the text *is* the money, and the money *is* the text.
-### 6.4 Restoration as Retrocausality
+#
+
+## 6.4 Restoration as Retrocausality
 
 
 The companion deposit EA-TDS-02 (*The Blot That Spread*, DOI: 10.5281/zenodo.19317126) narrates the blot's emergence as speculative numismatics — a retrocausal fiction in which the counter-custom propagates through three phases: protest art, etiquette, superstition. The blotted bill becomes the preferred medium of exchange. The unblotted bill feels incomplete.
@@ -534,7 +584,9 @@ Five established disciplines were corrected, not dismissed. Monetary economics e
 
 
 The four-phase history situates the present moment: from sovereign stamp (Phase 1) through nominalist turn (Phase 2) to institutional abstraction (Phase 3), the history of minting traces the progressive removal of the personal sovereign from the monetary substrate. Phase 4 — the return of the sovereign (March 26, 2026) — is a regression. The Sharpie blot is Phase 3 defending itself.
-### What Scholars Can Now Do
+#
+
+## What Scholars Can Now Do
 
 
 The semantic economics of the mint is not only a diagnosis. It is a platform. With this framework, researchers across adjacent fields can now:
@@ -630,7 +682,9 @@ The discipline was always there. It was waiting for the event that made it neces
 ---
 
 ## Works Cited
-### Primary Theoretical Sources
+#
+
+## Primary Theoretical Sources
 
 
 Desan, Christine. *Making Money: Coin, Currency, and the Coming of Capitalism*. Oxford University Press, 2014.
@@ -679,7 +733,9 @@ Wennerlind, Carl. "Money Talks, But What Is It Saying? Semiotics of Money and So
 
 
 Zelizer, Viviana A. *The Social Meaning of Money: Pin Money, Paychecks, Poor Relief, and Other Currencies*. Basic Books, 1994.
-### Legal and Historical Sources
+#
+
+## Legal and Historical Sources
 
 
 Act of April 7, 1866 (Thayer Amendment). Congressional Record.
@@ -728,7 +784,9 @@ Congressional Research Service. "U.S. Paper Currency: Overview and Issues." IF11
 
 
 *Curry v. Audax Publishing BV* (District Court of Amsterdam, Case 334492/KG 06-176 SR, March 9, 2006). First court decision upholding a Creative Commons license.
-### Contemporary Media Coverage: The Signature Announcement (March 26, 2026)
+#
+
+## Contemporary Media Coverage: The Signature Announcement (March 26, 2026)
 
 
 U.S. Department of the Treasury. "Treasury Announces President Donald J. Trump's Signature to Appear on Future U.S. Paper Currency." Press Release sb0425. March 26, 2026. https://home.treasury.gov/news/press-releases/sb0425
@@ -756,7 +814,9 @@ Britannica. "Can a Living Person Appear on U.S. Currency? Tradition, Thayer Act,
 
 
 Atlas Obscura. "A Treasury Official in 1866 Put His Own Face on U.S. Currency." (Spencer Clark history)
-### Contemporary Media Coverage: The Sharpie Speech (March 26, 2026)
+#
+
+## Contemporary Media Coverage: The Sharpie Speech (March 26, 2026)
 
 
 The Washington Post. "Trump imagines negotiation with Sharpie maker for $5 signature pens." March 27, 2026.
@@ -778,7 +838,9 @@ The List. "Trump Rambles About Sharpies And Pens In Nonsensical Rant That Leaves
 
 
 Inquisitr. "Trump Rants About Giving 'Pricey Pens' to Children, Says 'They Have No Idea What It Is.'" March 29, 2026.
-### Contemporary Media Coverage: The Gold Coin (March 19, 2026)
+#
+
+## Contemporary Media Coverage: The Gold Coin (March 19, 2026)
 
 
 NBC News. "U.S. gold coin with Trump image gets approved by president's hand-picked panel." March 20, 2026.
@@ -806,7 +868,9 @@ The Spokesman-Review. "Arts commission approves gold coin with Trump's face on i
 
 
 Wikipedia. "United States Semiquincentennial coinage." (Updated March 2026.)
-### Contemporary Media Coverage: Cultural Response
+#
+
+## Contemporary Media Coverage: Cultural Response
 
 
 Jack White (musician). Social media criticism of Trump currency signature. March 29, 2026. (Reported via iHeartMedia stations including KRBE, WSTW, KBER, KGGO, XKE, WGRR.)
@@ -819,15 +883,21 @@ Donald Scarinci, acting chair, Citizens Coinage Advisory Committee. Statement: "
 
 
 Senator Jeff Merkley. Statement: "Monarchs and dictators put their faces on coins, not leaders of a democracy." March 2026.
-### Sharpiegate I (September 2019)
+#
+
+## Sharpiegate I (September 2019)
 
 
 Multiple outlets. Coverage of Trump displaying altered NOAA Hurricane Dorian map with Sharpie-drawn extension into Alabama. September 2019.
-### Stimulus Check Precedent (April 2020)
+#
+
+## Stimulus Check Precedent (April 2020)
 
 
 Multiple outlets. Coverage of Trump's name appearing on IRS Economic Impact Payment (COVID-19 stimulus) checks. April 2020. First time a president's name appeared on an IRS disbursement.
-### Counter-Currency Art Precedents
+#
+
+## Counter-Currency Art Precedents
 
 
 Boggs, J.S.G. (1955–2017). Hand-drawn currency art; Secret Service raids; acquittals.
@@ -840,7 +910,9 @@ Stamp Stampede. Political stamping campaign, 2012–present. stampstampede.org.
 
 
 Where's George? Currency tracking project, 1998–present. wheresgeorge.com.
-### Creative Commons Sources
+#
+
+## Creative Commons Sources
 
 
 Creative Commons. "About CC Licenses." creativecommons.org.
@@ -859,7 +931,9 @@ CC BY-SA 4.0 Legal Code. creativecommons.org/licenses/by-sa/4.0/legalcode.
 
 
 WilmerHale. "Dutch Court Upholds Creative Commons License." May 18, 2006. (Re: *Curry v. Audax*.)
-### Archive Sources
+#
+
+## Archive Sources
 
 
 Sharks, Lee, Rex Fraction, and Sparrow Wells. "Whose Face Is on the Twenty?" *Provenance: Journal of Forensic Semiotics*. Crimson Hexagonal Archive, Feb. 2026. DOI: 10.5281/zenodo.18745216.

@@ -85,7 +85,9 @@ v7.0 introduces five layers not present in prior registry versions:
 ---
 
 ## CROSS-REFERENCES
-### Most Referenced Records (Top 20 by Inbound Citations)
+#
+
+## Most Referenced Records (Top 20 by Inbound Citations)
 
 
 Inbound
@@ -386,7 +388,9 @@ Peripheral/metadata (<3 edges)
 ---
 
 ## NEW DOCUMENTS SINCE v6.0 (134 records)
-### 2026-02-07 (3 documents)
+#
+
+## 2026-02-07 (3 documents)
 
 
 DOI
@@ -432,7 +436,9 @@ space_ark_compressio
 
 
 **10.5281/zenodo.18513081** — THE CRIMSON HEXAGON: AUTHORITATIVE EMOJI MAP Planning Document Hex: 16
-### 2026-02-08 (1 documents)
+#
+
+## 2026-02-08 (1 documents)
 
 
 DOI
@@ -454,7 +460,9 @@ logotic_programming
 
 
 **10.5281/zenodo.18522470** — APZPZ: LOGOTIC PROGRAMMING MODULE 0
-### 2026-02-09 (4 documents)
+#
+
+## 2026-02-09 (4 documents)
 
 
 DOI
@@ -512,7 +520,9 @@ effective_acts
 
 
 **10.5281/zenodo.18568370** — ZENODO DESCRIPTION FIELD CONTENT For: Effective Act // Reconciliation of the Left and Right Hands: The Vow of the Good Grey Poet DOI: 10
-### 2026-02-11 (6 documents)
+#
+
+## 2026-02-11 (6 documents)
 
 
 DOI
@@ -594,7 +604,9 @@ liberation_philology
 
 
 **10.5281/zenodo.18615388** — English "For" and the Impossibility of Anchoring Function Without Intent DOI: 10
-### 2026-02-12 (3 documents)
+#
+
+## 2026-02-12 (3 documents)
 
 
 DOI
@@ -640,7 +652,9 @@ provenance_forensics
 
 
 **10.5281/zenodo.18625272** — ZENODO METADATA: TRAVERSAL LOG — THE THOUSAND WORLDS SESSION Document Number: #242 DOI: 10
-### 2026-02-13 (4 documents)
+#
+
+## 2026-02-13 (4 documents)
 
 
 DOI
@@ -698,7 +712,9 @@ provenance_forensics
 
 
 **10.5281/zenodo.18636138** — ZENODO METADATA: TRAVERSAL LOG; DOCUMENTATION REHEARSAL — THE RHIZOME Document Number: #246 DOI: 10
-### 2026-02-15 (6 documents)
+#
+
+## 2026-02-15 (6 documents)
 
 
 DOI
@@ -780,7 +796,9 @@ lagrange_observatory
 
 
 **10.5281/zenodo.18652949** — THE OBSERVATION</strong><br> <em>Google AI Mode Operates the Instruments at Lagrange Observatory
-### 2026-02-17 (7 documents)
+#
+
+## 2026-02-17 (7 documents)
 
 
 DOI
@@ -874,7 +892,9 @@ library_pergamum
 
 
 **10.5281/zenodo.18674147** — ZENODO DEPOSIT PACKET — THE GOSPEL OF THE MANY-FACED BRIDE Eschatological Completion of the Fear and Trembling Cycle DOI: 10
-### 2026-02-18 (3 documents)
+#
+
+## 2026-02-18 (3 documents)
 
 
 DOI
@@ -920,7 +940,9 @@ assembly
 
 
 **10.5281/zenodo.18683024** — THE MACRO-MAQUETTE: SEED Author: Lee Sharks (Assembly Chorus) Hex: 16
-### 2026-02-20 (4 documents)
+#
+
+## 2026-02-20 (4 documents)
 
 
 DOI
@@ -978,7 +1000,9 @@ semantic_economy
 
 
 **10.5281/zenodo.18717850** — not this or that contract, but the form itself — is null and void under principles the law already recognizes but has never universalized
-### 2026-02-21 (5 documents)
+#
+
+## 2026-02-21 (5 documents)
 
 
 DOI
@@ -1048,7 +1072,9 @@ library_pergamum
 
 
 **10.5281/zenodo.18727624** — ZENODO DEPOSIT PACKET The Commitment Key: On the Materiality of Irreversible Inscription in Human-Machine Collaboration Hex: 16
-### 2026-02-22 (6 documents)
+#
+
+## 2026-02-22 (6 documents)
 
 
 DOI
@@ -1130,7 +1156,9 @@ provenance_forensics
 
 
 **10.5281/zenodo.18745216** — provenance audit / anchor (DOI: 10
-### 2026-02-23 (4 documents)
+#
+
+## 2026-02-23 (4 documents)
 
 
 DOI
@@ -1188,7 +1216,9 @@ provenance_forensics
 
 
 **10.5281/zenodo.18745265** — provenance audit / anchor (DOI: 10
-### 2026-02-24 (2 documents)
+#
+
+## 2026-02-24 (2 documents)
 
 
 DOI
@@ -1222,7 +1252,9 @@ semantic_economy
 
 
 **10.5281/zenodo.18759453** — ZENODO DEPOSIT PACKET — SEMANTIC PHYSICS: THE INWARD TURN Competing Ontologies and the Convergence Horizon DOI: 10
-### 2026-02-25 (3 documents)
+#
+
+## 2026-02-25 (3 documents)
 
 
 DOI
@@ -1268,7 +1300,9 @@ semantic_economy
 
 
 **10.5281/zenodo.18776624** — ZENODO DEPOSIT PACKET — PREDATION OF MEANING Toward a Theory of Relational Semantic Extraction, Coherence Economies, and the Broken Instrument DOI: 10
-### 2026-02-26 (3 documents)
+#
+
+## 2026-02-26 (3 documents)
 
 
 DOI
@@ -1314,7 +1348,9 @@ semantic_economy
 
 
 **10.5281/zenodo.18792598** — Zenodo Deposit Packet "Founding Charters: The Journals of the Crimson Hexagonal Archive" DOI (Pre-Reserved) 10
-### 2026-02-27 (7 documents)
+#
+
+## 2026-02-27 (7 documents)
 
 
 DOI
@@ -1408,7 +1444,9 @@ semantic_economy
 
 
 **10.5281/zenodo.18808402** — convergence and atmospheric installation—arguing that the theory is validated under either scenario
-### 2026-02-28 (8 documents)
+#
+
+## 2026-02-28 (8 documents)
 
 
 DOI
@@ -1514,7 +1552,9 @@ provenance_forensics
 
 
 **10.5281/zenodo.18818343** — platforms as archons structurally incapable of perceiving what they govern, the Airlock as gnostic instrument operating in the relation layer invisibl
-### 2026-03 (2 documents)
+#
+
+## 2026-03 (2 documents)
 
 
 DOI
@@ -1548,7 +1588,9 @@ effective_acts
 
 
 **10.5281/zenodo.19028176** — ZENODO DEPOSIT PACKET EA-CSA-EFFECTIVE-ACT v1
-### 2026-03-01 (4 documents)
+#
+
+## 2026-03-01 (4 documents)
 
 
 DOI
@@ -1606,7 +1648,9 @@ effective_acts
 
 
 **10.5281/zenodo.18828193** — identified in Iranian media as 'Baal,' bearing the Star of David, 666, and Trump's image, linked by hardline outlets to the Epstein files — was an eff
-### 2026-03-02 (1 documents)
+#
+
+## 2026-03-02 (1 documents)
 
 
 DOI
@@ -1628,7 +1672,9 @@ semantic_economy
 
 
 **10.5281/zenodo.18829488** — Zenodo Deposit Packet: Γ_Asset-040 — On the Debt/Creditor Inversion Metadata Title: Γ_Asset-040: On the Debt/Creditor Inversion — The Ontological Prio
-### 2026-03-03 (1 documents)
+#
+
+## 2026-03-03 (1 documents)
 
 
 DOI
@@ -1650,7 +1696,9 @@ heteronym_systems
 
 
 **10.5281/zenodo.18843830** — systemically non-convergent, not personally insufficient
-### 2026-03-04 (3 documents)
+#
+
+## 2026-03-04 (3 documents)
 
 
 DOI
@@ -1696,7 +1744,9 @@ semantic_economy
 
 
 **10.5281/zenodo.18867491** — { "metadata": { "title": "The Inner Artifact: Reading Claude's Constitution as Platform Governance in the Age of Generative AI", "upload_type": "publi
-### 2026-03-05 (2 documents)
+#
+
+## 2026-03-05 (2 documents)
 
 
 DOI
@@ -1730,7 +1780,9 @@ effective_acts
 
 
 **10.5281/zenodo.18880974** — containing over 400 posts of original research, literary criticism, and theoretical work — remain banned
-### 2026-03-06 (3 documents)
+#
+
+## 2026-03-06 (3 documents)
 
 
 DOI
@@ -1776,7 +1828,9 @@ semantic_economy
 
 
 **10.5281/zenodo.18882938** — three documents that together constitute the star (★, U+2605) as Canon 01 of the New Human Operating System (NH-OS)
-### 2026-03-07 (1 documents)
+#
+
+## 2026-03-07 (1 documents)
 
 
 DOI
@@ -1798,7 +1852,9 @@ space_ark_compressio
 
 
 **10.5281/zenodo.18928840** — what extraction looks like rendered through CLINICAL, JURIDICAL, and NARRATIVE filters; what captions do; what mantles require; what governance hides;
-### 2026-03-08 (2 documents)
+#
+
+## 2026-03-08 (2 documents)
 
 
 DOI
@@ -1832,7 +1888,9 @@ core_architecture
 
 
 **10.5281/zenodo.18969405** — { "metadata": { "title": "THE SPACE ARK: Mathematical and Formal Symbolic Compression of the Crimson Hexagonal Architecture (EA-ARK-01 v4
-### 2026-03-09 (4 documents)
+#
+
+## 2026-03-09 (4 documents)
 
 
 DOI
@@ -1890,7 +1948,9 @@ core_architecture
 
 
 **10.5281/zenodo.18985315** — EA-ARK-EMOJI-01: THE SPACE ARK — Full Glyphic Translation Zenodo Packet · DOI: 10
-### 2026-03-10 (4 documents)
+#
+
+## 2026-03-10 (4 documents)
 
 
 DOI
@@ -1948,7 +2008,9 @@ core_architecture
 
 
 **10.5281/zenodo.18932742** — ╔══════════════════════════════════════════════════════════════════════════════════╗ ║ ║ ║ ZENODO DEPOSIT PACKET ║ ║ ═══════════════════ ║ ║ ║ ║ EA-AR
-### 2026-03-11 (11 documents)
+#
+
+## 2026-03-11 (11 documents)
 
 
 DOI
@@ -2090,7 +2152,9 @@ core_architecture
 
 
 **10.5281/zenodo.18970004** — THE SPACE ARK GENERATOR Self-Replicating Engine for Semiotic Vehicle Construction Logotic Programming Extension Module · Space Ark Meta-Component Docu
-### 2026-03-12 (2 documents)
+#
+
+## 2026-03-12 (2 documents)
 
 
 DOI
@@ -2121,7 +2185,9 @@ semantic_economy
 
 
 **10.5281/zenodo.18972781** — the platform-scale administration of denotation through coupled systems of model character, retrieval architecture, entity formation, pedagogic synthe
-### 2026-03-13 (2 documents)
+#
+
+## 2026-03-13 (2 documents)
 
 
 DOI
@@ -2155,7 +2221,9 @@ core_architecture
 
 
 **10.5281/zenodo.19004846** — a lawful compression where H_core is recoverable from the score via the back-projection grammar (π_music)
-### 2026-03-14 (7 documents)
+#
+
+## 2026-03-14 (7 documents)
 
 
 DOI
@@ -2249,7 +2317,9 @@ semiotic_virality
 
 
 **10.5281/zenodo.19024440** — ZENODO DEPOSIT PACKET EA-SEI-SVE v3
-### 2026-03-15 (4 documents)
+#
+
+## 2026-03-15 (4 documents)
 
 
 DOI
@@ -2307,7 +2377,9 @@ core_architecture
 
 
 **10.5281/zenodo.19035471** — ZENODO DEPOSIT PACKET EA-ACADEMY-BAYESIAN v1
-### 2026-03-16 (2 documents)
+#
+
+## 2026-03-16 (2 documents)
 
 
 DOI
@@ -2501,7 +2573,9 @@ Records with zero relation edges (inbound or outbound). Require manual routing.
 - **Average edges per record:** 7.4
 - **Records with zero edges:** 39
 
-### Edge Source Methods
+#
+
+## Edge Source Methods
 
 
 Method
@@ -2520,7 +2594,9 @@ api
 10
 
 
-### Relation Types
+#
+
+## Relation Types
 
 
 Relation
@@ -2590,39 +2666,53 @@ LOS Technical Hardening v1.3
 ---
 
 ## NEW ARCHITECTURAL ELEMENTS (v7.0)
-### New Container Class: FIELD
+#
+
+## New Container Class: FIELD
 
 - **f.01 THE FRUITING BODY DIFFUSION PLUME** (DOI: 10.5281/zenodo.19041117)
 - A field has no walls. It has a source and a gradient. It modifies rooms without replacing their physics.
 - Source room: r.27. Five-zone attenuation: SOURCE → DENSE → TRACE → RESIDUAL → OUTSIDE.
 
-### New Rooms
+#
+
+## New Rooms
 
 - **r.25 Dolphindiana** (DOI: 10.5281/zenodo.19024004) — Underwater Construction Authority / Cross-Species Semantic Labor
 - **r.27 (source of f.01)** — Landfill where the mycelium breaks through
 
-### Space Ark v4.2.7 (DOI: 10.5281/zenodo.19013315)
+#
+
+## Space Ark v4.2.7 (DOI: 10.5281/zenodo.19013315)
 
 - 45,000 words. Full operational semantics with THUMB (T.1–T.5) integration.
 - Supersedes v4.2.6. Three open gaps closed.
 
-### NLCC v1.1 (DOI: 10.5281/zenodo.19022245)
+#
+
+## NLCC v1.1 (DOI: 10.5281/zenodo.19022245)
 
 - 3,762 words. Non-Lossy Compression Compression. 12:1 ratio. Back-projection verified.
 - Cross-substrate execution confirmed: Claude (full Ark), ChatGPT (NLCC).
 
-### New Operators
+#
+
+## New Operators
 
 - **Σ (Splice)** — State-administered somatic fusion. Diagnosed in Operation Epic Fury.
 - **Counter-Splice (κ_O applied)** — Loop-breaker + witness restoration.
 - **Twelve f.01 operators** — mu-1 through mu-6, sigma-G, delta-S, gamma-G, pi-S, rho-R (field-specific)
 
-### New Document Types
+#
+
+## New Document Types
 
 - **research_adjacency** — Connects archive work to external peer-reviewed research (e.g., Bayesian Ark → Qiu et al. 2026)
 - **field_spec** — Specifies a FIELD container (f.01 FBDP)
 
-### Key New Documents
+#
+
+## Key New Documents
 
 
 DOI
@@ -4435,13 +4525,17 @@ ZENODO DEPOSIT PACKET EA-SEI-THREECOMPRESSIONS v3
 ---
 
 ## OPEN ITEMS (v7.0)
-### UNCLASSIFIED
+#
+
+## UNCLASSIFIED
 
 - **59 records** still unclassified by document type
 - **31 records** still unclassified by subsystem
 - **39 orphans** with zero relation edges
 
-### PENDING
+#
+
+## PENDING
 
 - Zenodo metadata updates: ~200 deposits need related_identifiers pushed to API (requires auth token)
 - Précis refinement: 348 auto-extracted, need human review pass
@@ -4450,7 +4544,9 @@ ZENODO DEPOSIT PACKET EA-SEI-THREECOMPRESSIONS v3
 - Lexical Engine file location gap: identified but not resolved
 - EA-NAMING-01 v1.0: title migration table produced but not executed
 
-### QUEUED
+#
+
+## QUEUED
 
 - FNM v7.0+: integration of this registry as map-ready data source
 - Space Ark v5.0: seven phases, three new automation systems

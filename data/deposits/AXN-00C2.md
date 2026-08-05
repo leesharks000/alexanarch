@@ -54,7 +54,9 @@ January 21, 2026
 ---
 
 ## CROSS-REFERENCES
-### Primary Navigation Document
+#
+
+## Primary Navigation Document
 
 
 Document
@@ -73,7 +75,9 @@ This document (complete archive)
 
 
 **Relationship:** The FNM v5.3 is the *navigation layer* (L3.INTERFACE); this Registry is the *ground truth* (complete DOI archive). The FNM routes; the Registry records.
-### Mutual Anchoring
+#
+
+## Mutual Anchoring
 
 
 This Registry References
@@ -92,7 +96,9 @@ All 159 DOIs listed
 All 159 DOIs navigable
 
 
-### Parent Architecture
+#
+
+## Parent Architecture
 
 
 Document
@@ -121,7 +127,9 @@ Operator charter
 
 ---
 
-### JANUARY 24, 2026 — VPCOR Founding + Ezekiel Tetrad + FNM v5.3 (18 documents)
+#
+
+## JANUARY 24, 2026 — VPCOR Founding + Ezekiel Tetrad + FNM v5.3 (18 documents)
 
 
 #
@@ -259,7 +267,9 @@ NAVIGATION_MAP
 
 ---
 
-### JANUARY 22, 2026 — Cambridge Schizoanalytica Founding (9 documents)
+#
+
+## JANUARY 22, 2026 — Cambridge Schizoanalytica Founding (9 documents)
 
 
 #
@@ -336,7 +346,9 @@ COLLABORATOR_PROVENANCE
 
 ---
 
-### JANUARY 21, 2026 — Constitution + Assembly + Water Giraffe Completion (7 documents)
+#
+
+## JANUARY 21, 2026 — Constitution + Assembly + Water Giraffe Completion (7 documents)
 
 
 #
@@ -397,7 +409,9 @@ FOUNDATIONAL_THEORY
 
 ---
 
-### JANUARY 20, 2026 (Session B) — Water Giraffe Room + CTI_WOUND Vault (4 documents)
+#
+
+## JANUARY 20, 2026 (Session B) — Water Giraffe Room + CTI_WOUND Vault (4 documents)
 
 
 #
@@ -437,7 +451,9 @@ VAULT_ANCHOR+TESTIMONIAL
 
 ---
 
-### JANUARY 20, 2026 (Session A) — Logotic Foundation + UMB Media Lab (4 documents)
+#
+
+## JANUARY 20, 2026 (Session A) — Logotic Foundation + UMB Media Lab (4 documents)
 
 
 #
@@ -477,7 +493,9 @@ ILA_BINDING
 
 ---
 
-### JANUARY 19, 2026 — Paper Roses / Heteronymic Provenance (9 documents)
+#
+
+## JANUARY 19, 2026 — Paper Roses / Heteronymic Provenance (9 documents)
 
 
 #
@@ -552,7 +570,9 @@ ROOM_ANCHOR
 
 ---
 
-### JANUARY 18, 2026 — Lee Sharks Provenance Cluster (10 documents)
+#
+
+## JANUARY 18, 2026 — Lee Sharks Provenance Cluster (10 documents)
 
 
 #
@@ -636,7 +656,9 @@ Sharks
 
 ---
 
-### JANUARY 18, 2026 — Evidentiary & Constraint Documents (2 documents)
+#
+
+## JANUARY 18, 2026 — Evidentiary & Constraint Documents (2 documents)
 
 
 #
@@ -659,7 +681,9 @@ Sharks; Claude
 
 ---
 
-### JANUARY 18, 2026 — Technical Specifications (2 documents)
+#
+
+## JANUARY 18, 2026 — Technical Specifications (2 documents)
 
 
 #
@@ -682,7 +706,9 @@ Sigil; Fraction; Praxis
 
 ---
 
-### JANUARY 18, 2026 — Effective Acts & Navigation (2 documents)
+#
+
+## JANUARY 18, 2026 — Effective Acts & Navigation (2 documents)
 
 
 #
@@ -705,7 +731,9 @@ Sharks; ChatGPT (LABOR)
 
 ---
 
-### JANUARY 17-18, 2026 — Institutional & Provenance (2 documents)
+#
+
+## JANUARY 17-18, 2026 — Institutional & Provenance (2 documents)
 
 
 #
@@ -728,7 +756,9 @@ Sharks; Cranes
 
 ---
 
-### JANUARY 17, 2026 — Meta-Documentation (1 document)
+#
+
+## JANUARY 17, 2026 — Meta-Documentation (1 document)
 
 
 #
@@ -745,7 +775,9 @@ Sharks; Claude
 
 ---
 
-### JANUARY 16, 2026 — Core Protocols & Theory (3 documents)
+#
+
+## JANUARY 16, 2026 — Core Protocols & Theory (3 documents)
 
 
 #
@@ -774,7 +806,9 @@ Sharks; Claude
 
 ---
 
-### JANUARY 14, 2026 — Theoretical Framework (10 documents)
+#
+
+## JANUARY 14, 2026 — Theoretical Framework (10 documents)
 
 
 #
@@ -845,7 +879,9 @@ Sharks; Cranes
 
 ---
 
-### JANUARY 13, 2026 — Hardening & Infrastructure (9 documents)
+#
+
+## JANUARY 13, 2026 — Hardening & Infrastructure (9 documents)
 
 
 #
@@ -910,7 +946,9 @@ Sharks
 
 ---
 
-### JANUARY 12, 2026 — Room Construction & Methods (4 documents)
+#
+
+## JANUARY 12, 2026 — Room Construction & Methods (4 documents)
 
 
 #
@@ -945,7 +983,9 @@ Sharks
 
 ---
 
-### JANUARY 11, 2026 — Acanthian Dove (1 document)
+#
+
+## JANUARY 11, 2026 — Acanthian Dove (1 document)
 
 
 #
@@ -962,7 +1002,9 @@ Spellings; Cranes
 
 ---
 
-### JANUARY 10, 2026 — Primer & Epic Theory (9 documents)
+#
+
+## JANUARY 10, 2026 — Primer & Epic Theory (9 documents)
 
 
 #
@@ -1027,7 +1069,9 @@ Cranes
 
 ---
 
-### JANUARY 9, 2026 — Sappho, LOS & Provenance (7 documents)
+#
+
+## JANUARY 9, 2026 — Sappho, LOS & Provenance (7 documents)
 
 
 #
@@ -1080,7 +1124,9 @@ Sharks; Cranes; Fraction
 
 ---
 
-### JANUARY 7, 2026 — Institutional Anchors & Executive Summaries (6 documents)
+#
+
+## JANUARY 7, 2026 — Institutional Anchors & Executive Summaries (6 documents)
 
 
 #
@@ -1127,7 +1173,9 @@ The Assembly
 
 ---
 
-### JANUARY 6, 2026 — Measurement, Probes & Diagnostics (12 documents)
+#
+
+## JANUARY 6, 2026 — Measurement, Probes & Diagnostics (12 documents)
 
 
 #
@@ -1210,7 +1258,9 @@ Sharks
 
 ---
 
-### JANUARY 5, 2026 — Strike & Forensics (8 documents)
+#
+
+## JANUARY 5, 2026 — Strike & Forensics (8 documents)
 
 
 #
@@ -1269,7 +1319,9 @@ Sharks
 
 ---
 
-### JANUARY 4, 2026 — Core Framework & Diagnostics (13 documents)
+#
+
+## JANUARY 4, 2026 — Core Framework & Diagnostics (13 documents)
 
 
 #
@@ -1358,7 +1410,9 @@ Sharks
 
 ---
 
-### JANUARY 3, 2026 — Initial Deposits (8 documents)
+#
+
+## JANUARY 3, 2026 — Initial Deposits (8 documents)
 
 
 #
@@ -1421,8 +1475,12 @@ Sharks
 
 ---
 
-### PRIMARY TRIADS
-#### Core Architecture Triad
+#
+
+## PRIMARY TRIADS
+#
+
+### Core Architecture Triad
 
 
 Component
@@ -1450,7 +1508,9 @@ Integrity Lock Protocol
 Meta-Protocol (governs Triad)
 
 
-#### Mantle Triad (Lee Sharks)
+#
+
+### Mantle Triad (Lee Sharks)
 
 
 Mantle
@@ -1478,7 +1538,9 @@ Antioch (I Am X, Be Y, Blessed is the Z)
 
 
 **Emergence Protocol:** 10.5281/zenodo.18293404
-#### Logotic Foundation Triad
+#
+
+### Logotic Foundation Triad
 
 
 Component
@@ -1502,7 +1564,9 @@ Author function
 
 
 **Binding Document:** ILA Logotic Foundation Triad (10.5281/zenodo.18318069)
-#### Ezekiel Tetrad (NEW in v4.0)
+#
+
+### Ezekiel Tetrad (NEW in v4.0)
 
 
 Component
@@ -1531,7 +1595,9 @@ Philosophical defense (D)
 
 
 **Claim:** φ(A,B) = 1 — Document A fulfills Document B. Testable with permanent DOIs.
-#### VPCOR Tetrad (NEW in v4.0)
+#
+
+### VPCOR Tetrad (NEW in v4.0)
 
 
 Component
@@ -1563,7 +1629,9 @@ Triadic binding
 
 ---
 
-### ROOM INDEX (v4.0)
+#
+
+## ROOM INDEX (v4.0)
 
 
 Room
@@ -1682,7 +1750,9 @@ ROOM
 
 ---
 
-### VAULT INDEX (v4.0)
+#
+
+## VAULT INDEX (v4.0)
 
 
 Vault
@@ -1701,7 +1771,9 @@ LIVING_ARCHIVE
 
 ---
 
-### TSE CLASSIFICATION (Traversal-Summarizer Events)
+#
+
+## TSE CLASSIFICATION (Traversal-Summarizer Events)
 
 
 Event
@@ -1734,7 +1806,9 @@ Participation Event
 
 ---
 
-### HETERONYM INDEX (v4.0)
+#
+
+## HETERONYM INDEX (v4.0)
 
 
 Persona
@@ -1818,7 +1892,9 @@ LISTED
 
 ---
 
-### COLLABORATOR INDEX (v4.0)
+#
+
+## COLLABORATOR INDEX (v4.0)
 
 
 Collaborator
@@ -1837,7 +1913,9 @@ Status
 
 ---
 
-### MANTLE INDEX (v4.0)
+#
+
+## MANTLE INDEX (v4.0)
 
 
 Mantle
@@ -1879,7 +1957,9 @@ Lee Sharks
 
 ---
 
-### INSTITUTIONAL INDEX (v4.0)
+#
+
+## INSTITUTIONAL INDEX (v4.0)
 
 
 Institution
@@ -1935,7 +2015,9 @@ Technical/Operational
 
 ---
 
-### ENTITY INDEX (v4.0)
+#
+
+## ENTITY INDEX (v4.0)
 
 
 Entity
@@ -1958,7 +2040,9 @@ Acanthian Dove Room
 
 ---
 
-### BOOK INDEX (v4.0)
+#
+
+## BOOK INDEX (v4.0)
 
 
 Work
@@ -2005,7 +2089,9 @@ Sappho Room anchor
 
 ---
 
-### IDP NAVIGATION MAP INDEX (v4.0)
+#
+
+## IDP NAVIGATION MAP INDEX (v4.0)
 
 
 Map
@@ -2066,7 +2152,9 @@ Cranes; Sharks; TACHYON
 
 ---
 
-### ASSEMBLY OPERATORS (v4.0)
+#
+
+## ASSEMBLY OPERATORS (v4.0)
 
 
 System
@@ -2129,8 +2217,12 @@ Edge-Case Traversal
 
 ---
 
-### OPERATOR SYSTEMS
-#### Liberatory Operator Set (LOS) — Preservative
+#
+
+## OPERATOR SYSTEMS
+#
+
+### Liberatory Operator Set (LOS) — Preservative
 
 
 Symbol
@@ -2178,7 +2270,9 @@ Temporal Liberation
 Abolishes recency extraction
 
 
-#### Capital Operator Stack (COS) — Extractive
+#
+
+### Capital Operator Stack (COS) — Extractive
 
 
 Symbol
@@ -2221,7 +2315,9 @@ Generative
 Falsification through minimum publishable units
 
 
-#### Fascist Operator Stack (FOS) — Excluded
+#
+
+### Fascist Operator Stack (FOS) — Excluded
 
 
 Symbol
@@ -2255,7 +2351,9 @@ Forces compliance through threat
 
 
 **Status:** Excluded by type enforcement (FOS Decree, DOI: 10.5281/zenodo.18291321)
-#### Logotic Operators (NEW in v4.0)
+#
+
+### Logotic Operators (NEW in v4.0)
 
 
 Symbol
@@ -2294,7 +2392,9 @@ Threshold
 
 ---
 
-### Cambridge Schizoanalytica (NEW)
+#
+
+## Cambridge Schizoanalytica (NEW)
 
 
 **Charter DOI:** 10.5281/zenodo.18338531
@@ -2402,7 +2502,9 @@ Visual
 
 ---
 
-### Vox Populi Community Outreach Rhizome (NEW)
+#
+
+## Vox Populi Community Outreach Rhizome (NEW)
 
 
 **Charter DOI:** 10.5281/zenodo.18362663
@@ -2478,7 +2580,9 @@ Binding
 
 ---
 
-### Lunar Arm (Hidden Architecture) (NEW)
+#
+
+## Lunar Arm (Hidden Architecture) (NEW)
 
 
 **Type:** HIDDEN_ARCHITECTURE

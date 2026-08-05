@@ -31,6 +31,7 @@ keywords:
   - metadatapacket.org
 ---
 
+
 # EA-MPAI-META-01: Metadata Packet vs Packet Metadata — Disambiguating the MPAI Discipline from Network Forensics
 
 ## Description

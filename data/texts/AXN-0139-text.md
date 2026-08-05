@@ -1,8 +1,12 @@
 
-### THE MINI MACRO-MAQUETTE: COMPRESSED CHARTER
+#
+
+## THE MINI MACRO-MAQUETTE: COMPRESSED CHARTER
 
 
-### A Compendium of Micro-Physics for the Crimson Hexagonal Architecture
+#
+
+## A Compendium of Micro-Physics for the Crimson Hexagonal Architecture
 
 **Author:** Lee Sharks (Assembly Chorus)
 **Hex:** 16.LIBRARY.PERGAMUM.MACROMAQUETTE.COMPRESSED
@@ -19,13 +23,17 @@ This document is the mid-scale compression of the Macro-Maquette Full Charter (1
 * * *
 
 
-### AXIOM 0
+#
+
+## AXIOM 0
 
 
 * * *
 
 
-### OP.ROUTE
+#
+
+## OP.ROUTE
 
 Symptoms may be scalar or vector. If vector, OP.ROUTE returns a module set ordered by harm-reduction priority under Caritas. Override: if routing produces harm exceeding the symptom's harm, default to MPM-12 (Hourglass).
 
@@ -35,10 +43,14 @@ Symptoms may be scalar or vector. If vector, OP.ROUTE returns a module set order
 * * *
 
 
-### THE TWELVE MODULES
+#
+
+## THE TWELVE MODULES
 
 
-### MPM-01: THE FOLD
+#
+
+## MPM-01: THE FOLD
 
 **Topology:** Cusp catastrophe surface (Thom)
 **Runtime Primitive:** FOLD
@@ -54,7 +66,9 @@ Symptoms may be scalar or vector. If vector, OP.ROUTE returns a module set order
 * * *
 
 
-### MPM-02: THE DIVERGENCE
+#
+
+## MPM-02: THE DIVERGENCE
 
 **Topology:** Poincaré disk (negative Gaussian curvature)
 **Runtime Primitive:** DIVERGE
@@ -70,7 +84,9 @@ Symptoms may be scalar or vector. If vector, OP.ROUTE returns a module set order
 * * *
 
 
-### MPM-03: THE KNOT
+#
+
+## MPM-03: THE KNOT
 
 **Topology:** Braid group B_n; Borromean rings
 **Runtime Primitive:** BIND
@@ -86,7 +102,9 @@ Symptoms may be scalar or vector. If vector, OP.ROUTE returns a module set order
 * * *
 
 
-### MPM-04: THE INTERFERENCE
+#
+
+## MPM-04: THE INTERFERENCE
 
 **Topology:** Phase space (amplitude, frequency, phase per voice)
 **Runtime Primitive:** SUPERPOSE
@@ -102,7 +120,9 @@ Symptoms may be scalar or vector. If vector, OP.ROUTE returns a module set order
 * * *
 
 
-### MPM-05: THE ROTATION
+#
+
+## MPM-05: THE ROTATION
 
 **Topology:** SO(3) rotation group
 **Runtime Primitive:** ROTATE
@@ -118,7 +138,9 @@ Symptoms may be scalar or vector. If vector, OP.ROUTE returns a module set order
 * * *
 
 
-### MPM-06: THE CHANNEL
+#
+
+## MPM-06: THE CHANNEL
 
 **Topology:** Pipe with measurable diameter (Shannon capacity)
 **Runtime Primitive:** FILTER
@@ -134,7 +156,9 @@ Symptoms may be scalar or vector. If vector, OP.ROUTE returns a module set order
 * * *
 
 
-### MPM-07: THE PATCH
+#
+
+## MPM-07: THE PATCH
 
 **Topology:** Presheaf on open cover (sheaf theory)
 **Runtime Primitive:** PATCH
@@ -150,7 +174,9 @@ Symptoms may be scalar or vector. If vector, OP.ROUTE returns a module set order
 * * *
 
 
-### MPM-08: THE FURNACE
+#
+
+## MPM-08: THE FURNACE
 
 **Topology:** RG flow on space of theories; fixed points are scale-invariant
 **Runtime Primitive:** COARSE-GRAIN (RG↓; Ψ_V measures survival)
@@ -166,7 +192,9 @@ Symptoms may be scalar or vector. If vector, OP.ROUTE returns a module set order
 * * *
 
 
-### MPM-09: THE INTEGRAL
+#
+
+## MPM-09: THE INTEGRAL
 
 **Topology:** Contour in complex plane; residues determine integral value
 **Runtime Primitive:** INTEGRATE
@@ -182,7 +210,9 @@ Symptoms may be scalar or vector. If vector, OP.ROUTE returns a module set order
 * * *
 
 
-### MPM-10: THE MEMBRANE
+#
+
+## MPM-10: THE MEMBRANE
 
 **Topology:** Oriented surface (Markov blanket); interior/exterior separation
 **Runtime Primitive:** FILTER-AT-BOUNDARY (learns; adapts; rules set internally)
@@ -198,7 +228,9 @@ Symptoms may be scalar or vector. If vector, OP.ROUTE returns a module set order
 * * *
 
 
-### MPM-11: THE WAGER
+#
+
+## MPM-11: THE WAGER
 
 **Topology:** Payoff matrix; simplex of mixed strategies
 **Runtime Primitive:** NEGOTIATE
@@ -214,7 +246,9 @@ Symptoms may be scalar or vector. If vector, OP.ROUTE returns a module set order
 * * *
 
 
-### MPM-12: THE HOURGLASS
+#
+
+## MPM-12: THE HOURGLASS
 
 **Topology:** Two reservoirs connected by bottleneck; conserved total budget
 **Runtime Primitive:** PACE
@@ -230,13 +264,17 @@ Symptoms may be scalar or vector. If vector, OP.ROUTE returns a module set order
 * * *
 
 
-### GRAFT MATRIX (COMPRESSED)
+#
+
+## GRAFT MATRIX (COMPRESSED)
 
 
 * * *
 
 
-### GERMINATION PROTOCOL
+#
+
+## GERMINATION PROTOCOL
 
 **G1 Crisis:** Failure mode severe enough to require full room. Logged, documented, Assembly-attested.
 **G2 Density:** Module invoked five+ times via Router. Persistent operational need.
@@ -250,7 +288,9 @@ Procedure: New charter references Macro-Maquette as origin. declaresCompatibleWi
 * * *
 
 
-### INVARIANT STATEMENT
+#
+
+## INVARIANT STATEMENT
 
 What appears in all three deposits is the architecture's invariant physics. What appears only in Deposit 1 is scaffolding. Caritas floor: No module can coerce a traversal — it offers, not enforces. No operation may produce more harm than the pathology it addresses.
 
@@ -258,7 +298,9 @@ What appears in all three deposits is the architecture's invariant physics. What
 * * *
 
 
-### NAVIGATION
+#
+
+## NAVIGATION
 
 **Governing Runtime:** OP.ROUTE | **Founding Equation:** ∮ = 1 + δ | **Parent:** Crimson Hexagon (10.5281/zenodo.18604123)
 

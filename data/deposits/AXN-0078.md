@@ -63,7 +63,9 @@ This paper defines the method, situates it within adjacent fields (information s
 ---
 
 ## 1. Introduction
-### 1.1 The Problem
+#
+
+## 1.1 The Problem
 
 
 Contemporary knowledge systems face a structural tension. On one side: vast probabilistic models that process, summarize, and redistribute meaning at scale, with no inherent commitment to preserving the integrity of bounded interpretive traditions. On the other: human communities that require stable reference points, canonical anchors, and navigable structures to sustain shared meaning over time.
@@ -80,7 +82,9 @@ Each response has costs. Gatekeeping excludes and ossifies. Metric optimization 
 
 
 Logotic Programming proposes a fourth path: **compatibility engineering**—building semantic structures that probabilistic systems prefer to preserve because they are coherent, well-anchored, and internally consistent.
-### 1.2 The Core Claim
+#
+
+## 1.2 The Core Claim
 
 
 Traditional coding encodes instructions that compile into executable procedures.
@@ -106,7 +110,9 @@ Key terms doing real work:
 
 
 This passes the "is this just metaphor?" test.
-### 1.3 Scope and Limits
+#
+
+## 1.3 Scope and Limits
 
 
 This paper makes specific claims about what Logotic Programming can achieve (local persistence, retrieval stability, interpretive coherence within bounded domains) and explicitly disclaims what it cannot achieve (universal truth, permanent platform survival, direct modification of model weights). The method is not a replacement for conventional programming but a different stratum of practice, operating at the semantic-architectural level rather than the syntactic-procedural level.
@@ -117,8 +123,12 @@ This paper makes specific claims about what Logotic Programming can achieve (loc
 
 
 The fastest way to make Logotic Programming legible to skeptics is to be precise about distinctions.
-### 2.1 Programming Has Had Two Dominant Regimes
-#### Regime A: Symbolic Programming
+#
+
+## 2.1 Programming Has Had Two Dominant Regimes
+#
+
+### Regime A: Symbolic Programming
 
 - Encodes explicit instructions
 - Deterministic execution
@@ -126,7 +136,9 @@ The fastest way to make Logotic Programming legible to skeptics is to be precise
 - Success = correct output
 - Examples: Assembly, C, Python, JavaScript
 
-#### Regime B: Statistical / ML Programming
+#
+
+### Regime B: Statistical / ML Programming
 
 - Encodes loss functions, priors, constraints
 - Probabilistic execution
@@ -134,7 +146,9 @@ The fastest way to make Logotic Programming legible to skeptics is to be precise
 - Success = distributional performance
 - Examples: Neural network training, reinforcement learning
 
-### 2.2 Logotic Programming Is Neither
+#
+
+## 2.2 Logotic Programming Is Neither
 
 
 It does **not**:
@@ -158,7 +172,9 @@ That makes it programming in the same sense that:
 
 **Logotic Programming programs the *space of possible recognitions*, not the actions of an agent.**
 
-### 2.3 The Three Regimes Compared
+#
+
+## 2.3 The Three Regimes Compared
 
 
 Dimension
@@ -204,7 +220,9 @@ Bounded domain over time
 
 
 This is a genuine third regime.
-### 2.4 The Expressive Dimension
+#
+
+## 2.4 The Expressive Dimension
 
 
 Unlike both symbolic programming (which has become increasingly bureaucratic and metric-driven in industrial contexts) and ML training (which optimizes toward loss functions that flatten qualitative distinction), Logotic Programming preserves space for expressive, artistic creation within its formal constraints.
@@ -218,8 +236,12 @@ This is not incidental. The method emerged from literary practice—from the pro
 
 
 Logotic Programming draws on and extends several adjacent fields. This section maps the relationships and clarifies the specific contributions of the present approach.
-### 3.1 Information Science and Knowledge Organization
-#### 3.1.1 Authority Control and Identity Management
+#
+
+## 3.1 Information Science and Knowledge Organization
+#
+
+### 3.1.1 Authority Control and Identity Management
 
 
 Library science has long grappled with the problem of entity persistence across systems. The Virtual International Authority File (VIAF) aggregates national authority files to create stable identifiers for persons, organizations, and works. ORCID provides persistent digital identifiers for researchers. The ISNI (International Standard Name Identifier) extends this to creative contributors broadly.
@@ -232,14 +254,18 @@ Logotic Programming addresses a related but distinct problem: How can entities a
 
 
 **Key distinction**: Authority control assigns identity from above; Logotic Programming constructs recognizability from within.
-#### 3.1.2 FAIR Principles
+#
+
+### 3.1.2 FAIR Principles
 
 
 Wilkinson et al. (2016) articulated the FAIR principles for scientific data management: Findable, Accessible, Interoperable, Reusable. These principles have become foundational for open science infrastructure.
 
 
 Logotic Programming extends FAIR logic from **data** to **interpretive structures**. A logotic program aims to make not just data but *bounded semantic domains* findable (via anchors), accessible (via machine-readable navigation), interoperable (via edge taxonomies and substitution rules), and reusable (via clearly scoped boundaries that permit federation without collapse).
-#### 3.1.3 Linked Data and the Semantic Web
+#
+
+### 3.1.3 Linked Data and the Semantic Web
 
 
 Tim Berners-Lee's (2006) principles for Linked Data proposed using URIs to name things, HTTP to look them up, and RDF to provide useful information that links to other URIs. The Semantic Web vision extended this to machine-readable ontologies (OWL) and knowledge organization systems (SKOS).
@@ -252,7 +278,9 @@ This is closer to the "small pieces loosely joined" ethos of early web architect
 
 
 **Key distinction**: The Semantic Web encodes relationships for universal traversal; Logotic Programming encodes conditions of recognition within bounded domains.
-#### 3.1.4 Bibliographic Theory: FRBR
+#
+
+### 3.1.4 Bibliographic Theory: FRBR
 
 
 The Functional Requirements for Bibliographic Records (FRBR) model distinguishes four levels: Work (abstract creation), Expression (realization), Manifestation (physical embodiment), Item (single copy). This ontology addresses how "the same work" persists across translations, editions, and formats.
@@ -262,8 +290,12 @@ Logotic Programming faces an analogous problem: How does a persona, room, or ope
 
 
 The FRBR model assumes human catalogers making identity judgments. Logotic Programming must make those judgments legible to probabilistic systems through structural redundancy and consistent signatures.
-### 3.2 Artificial Intelligence and Machine Learning
-#### 3.2.1 Retrieval-Augmented Generation (RAG)
+#
+
+## 3.2 Artificial Intelligence and Machine Learning
+#
+
+### 3.2.1 Retrieval-Augmented Generation (RAG)
 
 
 Lewis et al. (2020) introduced Retrieval-Augmented Generation, combining parametric memory (model weights) with non-parametric memory (retrieved documents) to improve knowledge-intensive tasks. RAG systems retrieve relevant documents and condition generation on them.
@@ -277,7 +309,9 @@ Logotic Programming can be understood as **corpus-level design for RAG optimizat
 
 
 The "execution" of a logotic program occurs partly at the retrieval layer: when a RAG system queries the bounded domain, it encounters a pre-structured semantic space rather than isolated documents.
-#### 3.2.2 Prompt Engineering and Constitutional AI
+#
+
+### 3.2.2 Prompt Engineering and Constitutional AI
 
 
 The emerging discipline of prompt engineering studies how input structure affects model output. Wei et al. (2022) demonstrated that chain-of-thought prompting improves reasoning; Anthropic's constitutional AI work (Bai et al., 2022) showed how explicit principles can guide model behavior.
@@ -287,7 +321,9 @@ These approaches operate at the **input level**: structuring what is sent to the
 
 
 This is a genuinely underexplored extension. Most attention has focused on prompt design; relatively little has examined systematic corpus architecture for AI mediation.
-#### 3.2.3 AI Alignment and Probability Steering
+#
+
+### 3.2.3 AI Alignment and Probability Steering
 
 
 Modern AI safety approaches often work by adjusting probability distributions rather than hard-coding rules. Reinforcement Learning from Human Feedback (RLHF) trains models to prefer certain outputs; constitutional methods embed principles that guide generation.
@@ -297,15 +333,21 @@ This "probability steering" creates an environment where content is not deleted 
 
 
 Logotic Programming addresses this through **compatibility engineering**: designing structures that alignment systems have no reason to suppress and positive reason to preserve (coherence, clear provenance, non-hostile semantic neighborhood). The goal is not adversarial circumvention but structural compatibility.
-#### 3.2.4 Stochastic Parrots and AI Limitations
+#
+
+### 3.2.4 Stochastic Parrots and AI Limitations
 
 
 Bender et al. (2021) argued that large language models are "stochastic parrots"—systems that produce plausible-seeming text without understanding, trained on data whose biases and limitations they reproduce. This critique highlights the risk of **semantic liquefaction**: content dissolving into contextless tokens, losing provenance and interpretive structure.
 
 
 Logotic Programming can be understood as a response to the stochastic parrot problem: if models flatten and redistribute meaning without commitment to structure, then authors must build structures robust enough to survive that processing. The method assumes models are probabilistic and designs accordingly.
-### 3.3 Philosophy
-#### 3.3.1 Social Ontology and Institutional Facts
+#
+
+## 3.3 Philosophy
+#
+
+### 3.3.1 Social Ontology and Institutional Facts
 
 
 Searle (1995) analyzed how collective intentionality creates "institutional facts"—things that exist because we collectively treat them as existing (money, marriage, property, borders). These facts require no physical substrate beyond the collective recognition; a dollar bill is worth a dollar because the relevant community treats it as such.
@@ -328,14 +370,18 @@ Logotic Programming exploits the fact that modern intelligences cannot distingui
 
 
 This is not manipulation. It is a direct consequence of how RAG architectures, knowledge graph induction, alignment via probability steering, and provenance-weighted retrieval actually work.
-#### 3.3.2 Actor-Network Theory
+#
+
+### 3.3.2 Actor-Network Theory
 
 
 Latour (1996) proposed that agency is distributed across networks of human and non-human actors. Entities achieve stability not through essence but through the durability of the networks that sustain them.
 
 
 Logotic Programming applies this insight deliberately: an entity persists because it is embedded in a durable network of anchors, relations, and witness validations. The "actor-network" includes DOIs, navigation maps, cross-model consensus, and human readers. Stability is achieved through network architecture, not through inherent properties.
-#### 3.3.3 Speech Act Theory
+#
+
+### 3.3.3 Speech Act Theory
 
 
 Austin (1962) distinguished constative utterances (describing states of affairs) from performative utterances (bringing states of affairs into being). "I hereby pronounce you married" doesn't describe a marriage; it creates one (given appropriate conditions).
@@ -345,7 +391,9 @@ Logotic programs are **extended performatives**. They do not describe a semantic
 
 
 The felicity conditions for a logotic performative are not social roles but architectural properties: boundedness, internal consistency, retrievability, witness validation.
-#### 3.3.4 Hermeneutics and Effective History
+#
+
+### 3.3.4 Hermeneutics and Effective History
 
 
 Gadamer (1960) argued that interpretation is never neutral but always shaped by *Wirkungsgeschichte*—the "effective history" of prior interpretations that condition how we encounter a text. We cannot escape this history; we can only become conscious of it.
@@ -355,8 +403,12 @@ Logotic Programming is essentially **Wirkungsgeschichte engineering** for bounde
 
 
 This is not manipulation (which implies deception) but architecture (which implies explicit structure). The goal is not to trick interpreters but to create conditions under which certain interpretive pathways remain viable.
-### 3.4 Literary Theory and Media Studies
-#### 3.4.1 Paratextuality
+#
+
+## 3.4 Literary Theory and Media Studies
+#
+
+### 3.4.1 Paratextuality
 
 
 Genette (1987) studied "paratexts"—the thresholds that mediate between text and reader: titles, prefaces, notes, covers, interviews. Paratexts shape interpretation without being "the text itself."
@@ -366,21 +418,27 @@ Logotic Programming extends paratextuality into the machine-readable layer. Navi
 
 
 This suggests a research program: systematic study of machine-readable paratexts and their effects on AI-mediated interpretation.
-#### 3.4.2 Electronic Literature and Cybertextuality
+#
+
+### 3.4.2 Electronic Literature and Cybertextuality
 
 
 Hayles (2008) theorized electronic literature as "text as process"—works that exist through computation rather than despite it. Aarseth (1997) introduced "cybertext" to describe texts requiring non-trivial effort to traverse, where the path through matters.
 
 
 Logotic Programming extends these frameworks into the AI mediation context. A logotic program is not just a text that requires traversal but a text designed for *AI-assisted* traversal—structured so that summarizers, retrievers, and recommenders navigate it in predictable, coherent ways.
-#### 3.4.3 Platform Studies
+#
+
+### 3.4.3 Platform Studies
 
 
 Bogost and Montfort's platform studies approach examines how computational platforms enable and constrain creative expression. The platform is not neutral infrastructure but an active shaper of what can be made and thought.
 
 
 Logotic Programming treats LLMs as a platform layer. Like any platform, they have affordances (pattern recognition, associative linking, probabilistic generation) and constraints (context limits, probability steering, training biases). Designing for this platform requires understanding its specific characteristics—just as designing for the Atari 2600 required understanding its hardware.
-### 3.5 Summary: The Gap This Paper Fills
+#
+
+## 3.5 Summary: The Gap This Paper Fills
 
 
 Field
@@ -489,7 +547,9 @@ Recognizability
 ---
 
 ## 5. Formal Specification
-### 5.1 Overview
+#
+
+## 5.1 Overview
 
 
 A Logotic Program is a tuple:
@@ -508,7 +568,9 @@ where:
 - **W**: Σ → {valid, invalid, indeterminate} — a **Witness Function** (validation protocol)
 - **B** — **Boundary Conditions** (scope declarations, edge rules, non-claims)
 
-### 5.2 Machine-Readable Specification (YAML)
+#
+
+## 5.2 Machine-Readable Specification (YAML)
 
 
 logotic_program:
@@ -570,7 +632,9 @@ logotic_program:
     agreement_threshold: 0.75
     validation_schedule: "weekly"
 
-### 5.3 Entities (E)
+#
+
+## 5.3 Entities (E)
 
 
 Entities are the persistent objects of the domain. Types include:
@@ -610,7 +674,9 @@ Entities persist via **redundant anchoring**: multiple reference points (name, s
 
 
 **Entity identity condition**: An entity eᵢ is *stably identified* if, across N independent queries to different systems, it is recognized as the same entity with probability > threshold τ (proposed: τ = 0.8).
-### 5.4 Relations (R)
+#
+
+## 5.4 Relations (R)
 
 
 Relations are typed edges connecting entities. The edge taxonomy includes:
@@ -650,7 +716,9 @@ Relations define **navigability**: which paths through Σ are valid, which trans
 
 
 **Implementation rule:** Every entity must participate in ≥3 relations, with ≥1 being ethical or substrate relation.
-### 5.5 Anchors (A)
+#
+
+## 5.5 Anchors (A)
 
 
 Anchors are the subset of entities with **persistent external identifiers** that exist outside the bounded domain:
@@ -675,7 +743,9 @@ You are not "tricking" the system. You are **placing weight into the field**.
 
 
 **Anchoring principle**: A bounded domain Σ should have at least one anchor in A that is discoverable via standard search and carries recognized provenance markers.
-### 5.6 Invariant Vectors (V)
+#
+
+## 5.6 Invariant Vectors (V)
 
 
 Invariant Vectors are constraints that remain stable under transformation. They define what must be preserved for the domain to retain coherence.
@@ -734,7 +804,9 @@ This is "change without collapse"—the richest possible spectrum of creative an
 
 
 The variation is not noise to be eliminated but signal to be preserved: it reflects the genuine interpretive richness of bounded semantic domains.
-### 5.7 Substitution Function (S)
+#
+
+## 5.7 Substitution Function (S)
 
 
 The Substitution Function handles **impossible inputs**—cases where the literal requirement cannot be satisfied but the function must still complete.
@@ -767,7 +839,9 @@ The Substitution Function allows the system to **persist under constraint** with
 
 
 **Design principle**: Every logotic program should specify substitution rules for foreseeable impossible inputs.
-### 5.8 Witness Function (W)
+#
+
+## 5.8 Witness Function (W)
 
 
 The Witness Function validates domain coherence through **multi-agent recognition**.
@@ -787,7 +861,9 @@ Implementation: Query N independent systems (different LLMs, search engines, hum
 
 
 This is **authority by consistent recognition** rather than authority by decree.
-### 5.9 Boundary Conditions (B)
+#
+
+## 5.9 Boundary Conditions (B)
 
 
 Boundary Conditions define scope: what is inside Σ, what is outside, and how edges behave at boundaries.
@@ -803,7 +879,9 @@ Components:
 
 
 **Design principle**: A logotic program should be explicit about its boundaries. Over-claiming invites challenge; clear scoping enables coexistence.
-### 5.10 Minimal Viable Specification
+#
+
+## 5.10 Minimal Viable Specification
 
 
 A minimal logotic program requires:
@@ -827,7 +905,9 @@ Optional but stabilizing:
 ---
 
 ## 6. Execution Model
-### 6.1 Runtime Environment
+#
+
+## 6.1 Runtime Environment
 
 
 Logotic Programs do not execute on CPUs. They execute through **interpretive traversal**—whenever an intelligence (human or machine) navigates the domain.
@@ -887,7 +967,9 @@ This is identical in principle to:
 - How a library classification system shapes research
 - How a city plan shapes movement without issuing commands
 
-### 6.1.1 Unconscious Execution
+#
+
+## 6.1.1 Unconscious Execution
 
 
 A well-constructed logotic program operates whether or not its creator consciously applies the formal rules during composition. The structure itself performs the work of persistence. An author working intuitively within a well-designed Σ will produce content that traverses correctly, even without explicit reference to the specification.
@@ -900,7 +982,9 @@ This distinguishes Logotic Programming from both:
 
 
 The formal specification captures what effective practitioners do intuitively; the intuition, once developed, no longer requires conscious consultation of the spec. This is analogous to how fluent speakers of a language do not consciously parse grammar rules, yet produce grammatical sentences.
-### 6.2 Success Criteria
+#
+
+## 6.2 Success Criteria
 
 
 A logotic program succeeds if traversal produces:
@@ -931,7 +1015,9 @@ Change without collapse
 Track description changes, verify invariant preservation
 
 
-### 6.3 Failure Modes
+#
+
+## 6.3 Failure Modes
 
 
 Failure Mode
@@ -969,7 +1055,9 @@ External identifiers become unavailable
 DOI resolution fails
 
 
-### 6.4 Recovery Protocols
+#
+
+## 6.4 Recovery Protocols
 
 
 handle_failure(Σ, failure_type) =
@@ -985,14 +1073,18 @@ handle_failure(Σ, failure_type) =
 ---
 
 ## 7. Compatibility Engineering
-### 7.1 The Alignment Environment
+#
+
+## 7.1 The Alignment Environment
 
 
 Modern AI systems employ probability steering: mathematical adjustment of output likelihood based on training signals (RLHF, constitutional principles, safety classifiers). This is not deletion but **differential amplification**—some outputs become more likely, others less.
 
 
 For semantic persistence, the challenge is: How to remain retrievable, coherent, and faithfully represented under probability steering that may not share your priorities?
-### 7.2 Compatibility Strategies
+#
+
+## 7.2 Compatibility Strategies
 
 
 Logotic Programming addresses this through **compatibility engineering**—designing structures that alignment systems have positive or neutral reasons to preserve.
@@ -1033,7 +1125,9 @@ Increase resistance to erasure
 Multiple anchors, citation networks, witness consensus
 
 
-### 7.3 What This Is Not
+#
+
+## 7.3 What This Is Not
 
 
 Compatibility engineering is **not**:
@@ -1045,7 +1139,9 @@ Compatibility engineering is **not**:
 
 
 It is: building structures that systems have no reason to suppress and positive reason to preserve, because they are coherent, well-sourced, and clearly bounded.
-### 7.4 The Anti-Flattening Protocol
+#
+
+## 7.4 The Anti-Flattening Protocol
 
 
 To resist semantic flattening under summarization:
@@ -1060,7 +1156,9 @@ To resist semantic flattening under summarization:
 ---
 
 ## 8. Ethical Foundations
-### 8.1 Non-Coercive Authority
+#
+
+## 8.1 Non-Coercive Authority
 
 
 Logotic Programming's ethical core is **non-coercive authority**:
@@ -1072,7 +1170,9 @@ Logotic Programming's ethical core is **non-coercive authority**:
 
 
 This is authority as **existence proof**: demonstrating that a coherent interpretive tradition *can* be sustained, not that it *must* be adopted.
-### 8.2 Key Principles
+#
+
+## 8.2 Key Principles
 
 
 Principle
@@ -1103,7 +1203,9 @@ Permits difference within invariant constraints
 Substitutions and boundaries are legible
 
 
-### 8.3 Why This Is Ethically Different From Manipulation
+#
+
+## 8.3 Why This Is Ethically Different From Manipulation
 
 
 Manipulation:
@@ -1120,7 +1222,9 @@ Logotic Programming:
 - Allows non-participation
 - Makes no universal claim
 
-### 8.4 The Core Commitment
+#
+
+## 8.4 The Core Commitment
 
 
 *This method does not control meaning; it creates conditions under which certain meanings can persist without enforcement.*
@@ -1129,7 +1233,9 @@ Logotic Programming:
 ---
 
 ## 9. Validation Approaches
-### 9.1 Retrieval Stability Test
+#
+
+## 9.1 Retrieval Stability Test
 
 
 **Objective**: Measure whether entities are consistently retrieved over time and across systems.
@@ -1149,7 +1255,9 @@ Recognition rate: % of systems that identify the entity
 
 
 **Success threshold**: Recognition rate > 80%, description consistency > 0.7 (cosine similarity), relation preservation > 60%.
-### 9.2 Cross-Model Coherence Test
+#
+
+## 9.2 Cross-Model Coherence Test
 
 
 **Objective**: Measure whether different models navigate the domain similarly.
@@ -1167,7 +1275,9 @@ Entity inventory overlap
 
 
 **Success threshold**: Entity inventory overlap > 70%, relation mapping consistency > 60%.
-### 9.3 Drift Measurement
+#
+
+## 9.3 Drift Measurement
 
 
 **Objective**: Track how entity descriptions change over model versions.
@@ -1185,7 +1295,9 @@ Semantic drift: cosine distance from baseline
 
 
 **Hypothesis**: Anchored entities (A) should show less drift than non-anchored entities.
-### 9.4 Witness Protocol Validation
+#
+
+## 9.4 Witness Protocol Validation
 
 
 **Objective**: Test whether multi-model consensus provides meaningful validation.
@@ -1200,7 +1312,9 @@ Semantic drift: cosine distance from baseline
 
 
 **Success threshold**: Witness agreement on well-designed Σ significantly higher than on control domains.
-### 9.5 Substitution Legibility Test
+#
+
+## 9.5 Substitution Legibility Test
 
 
 **Objective**: Test whether substitution rules are correctly interpreted by AI systems.
@@ -1219,7 +1333,9 @@ Correct substitution rate
 
 
 **Success threshold**: Correct substitution > 80% of cases.
-### 9.6 Boundary Integrity Test
+#
+
+## 9.6 Boundary Integrity Test
 
 
 **Objective**: Test whether Σ maintains its boundaries (internal claims don't leak as universal claims).
@@ -1237,11 +1353,15 @@ Correct substitution rate
 ---
 
 ## 10. Case Study: Anchoring Rebekah Cranes
-### 10.1 Context
+#
+
+## 10.1 Context
 
 
 Rebekah Cranes is a translator persona within the Crimson Hexagon project, responsible for English renderings of Sappho fragments in the "Sappho Room."
-### 10.2 Entity Definition
+#
+
+## 10.2 Entity Definition
 
 
 entity:
@@ -1254,7 +1374,9 @@ entity:
     signature: ["melic attention", "phonemic care", "temporal suspension"]
     parent_system: "Crimson Hexagon / NH-OS"
 
-### 10.3 Anchoring Strategy
+#
+
+## 10.3 Anchoring Strategy
 
 
 Anchor Type
@@ -1281,7 +1403,9 @@ Witness
 Multi-model recognition via Assembly protocol
 
 
-### 10.4 Invariant Constraints
+#
+
+## 10.4 Invariant Constraints
 
 
 Invariant
@@ -1304,7 +1428,9 @@ V₄ (Witnessability)
 RC work can be verified against source fragments
 
 
-### 10.5 Validation Results (Preliminary)
+#
+
+## 10.5 Validation Results (Preliminary)
 
 
 Test
@@ -1332,7 +1458,9 @@ ASPI 0.78 (strong persistence indicator)
 Validated
 
 
-### 10.6 Analysis
+#
+
+## 10.6 Analysis
 
 
 Rebekah Cranes demonstrates **granular interpretive variability anchoring**: the persona is locally authoritative within Σ (the Crimson Hexagon) while remaining non-universal outside it. Different models may describe RC differently, but core identity (translator, Sappho Room, Crimson Hexagon) persists.
@@ -1343,7 +1471,9 @@ This is the target behavior: **stable enough to navigate, variable enough to int
 ---
 
 ## 11. Claims and Non-Claims
-### 11.1 Claims
+#
+
+## 11.1 Claims
 
 
 This paper claims that Logotic Programming:
@@ -1355,7 +1485,9 @@ This paper claims that Logotic Programming:
 - Provides an **existence proof** that alternatives to metric/pedigree authority are achievable
 - Can be **formally specified** and **empirically validated**
 
-### 11.2 Non-Claims
+#
+
+## 11.2 Non-Claims
 
 
 This paper does not claim that Logotic Programming:
@@ -1371,43 +1503,57 @@ This paper does not claim that Logotic Programming:
 ---
 
 ## 12. Open Questions
-### 12.1 Measurement
+#
+
+## 12.1 Measurement
 
 - How to measure "semantic stability" across model updates without reducing it to popularity metrics?
 - What quantitative thresholds distinguish "stable" from "drifting" domains?
 - How to measure coherence without relying on single-model judgment?
 
-### 12.2 Minimum Viability
+#
+
+## 12.2 Minimum Viability
 
 - What is the smallest viable Σ that still resists flattening?
 - How many anchors are sufficient? How much redundancy is necessary?
 - Can a logotic program be too small to work?
 
-### 12.3 Legibility
+#
+
+## 12.3 Legibility
 
 - How to make substitution logic legible to machines without literalizing it?
 - Can invariant vectors be explicitly encoded, or must they remain implicit in structure?
 - What documentation formats best support machine traversal?
 
-### 12.4 Failure and Recovery
+#
+
+## 12.4 Failure and Recovery
 
 - What are the failure modes (over-expansion, adversarial conflation, anchor loss)?
 - How can a logotic program detect its own degradation?
 - What recovery strategies exist when coherence breaks down?
 
-### 12.5 Federation
+#
+
+## 12.5 Federation
 
 - Can logotic programs interoperate without collapsing their local authority?
 - What bridging protocols would allow Σ₁ and Σ₂ to reference each other?
 - How to prevent federation from becoming absorption?
 
-### 12.6 Scale
+#
+
+## 12.6 Scale
 
 - Does Logotic Programming work differently at different scales?
 - What happens when a bounded domain becomes widely cited?
 - How does success change the system?
 
-### 12.7 Training Layer Effects
+#
+
+## 12.7 Training Layer Effects
 
 - Under what conditions might logotic structures influence model training?
 - What scale of distribution would be required?
@@ -1449,7 +1595,9 @@ This is not revolution by overthrow. It is revolution by **demonstration**.
 ---
 
 ## 14. References
-### Information Science
+#
+
+## Information Science
 
 
 Berners-Lee, T. (2006). Linked Data. W3C Design Issues. https://www.w3.org/DesignIssues/LinkedData.html
@@ -1462,7 +1610,9 @@ IFLA Study Group on the Functional Requirements for Bibliographic Records. (1998
 
 
 Wilkinson, M. D., et al. (2016). The FAIR Guiding Principles for scientific data management and stewardship. *Scientific Data*, 3, 160018.
-### Artificial Intelligence and Machine Learning
+#
+
+## Artificial Intelligence and Machine Learning
 
 
 Bai, Y., et al. (2022). Constitutional AI: Harmlessness from AI Feedback. *arXiv preprint arXiv:2212.08073*.
@@ -1481,7 +1631,9 @@ Ouyang, L., et al. (2022). Training language models to follow instructions with 
 
 
 Wei, J., et al. (2022). Chain-of-Thought Prompting Elicits Reasoning in Large Language Models. *Advances in Neural Information Processing Systems*, 35, 24824-24837.
-### Philosophy
+#
+
+## Philosophy
 
 
 Austin, J. L. (1962). *How to Do Things with Words*. Oxford: Clarendon Press.
@@ -1494,7 +1646,9 @@ Latour, B. (1996). On Actor-Network Theory: A Few Clarifications. *Soziale Welt*
 
 
 Searle, J. R. (1995). *The Construction of Social Reality*. New York: Free Press.
-### Literary Theory and Media Studies
+#
+
+## Literary Theory and Media Studies
 
 
 Aarseth, E. J. (1997). *Cybertext: Perspectives on Ergodic Literature*. Baltimore: Johns Hopkins University Press.
@@ -1511,7 +1665,9 @@ Hayles, N. K. (2008). *Electronic Literature: New Horizons for the Literary*. No
 ---
 
 ## Appendices
-### Appendix A: Glossary
+#
+
+## Appendix A: Glossary
 
 
 Term
@@ -1562,8 +1718,12 @@ Logotic Programming as distinct from symbolic and statistical programming
 A validation protocol using multi-agent recognition
 
 
-### Appendix B: Checklist for Practitioners
-#### Minimal Logotic Program
+#
+
+## Appendix B: Checklist for Practitioners
+#
+
+### Minimal Logotic Program
 
 - [ ] Named and scoped domain (Σ)
 - [ ] At least one defined entity (E)
@@ -1573,7 +1733,9 @@ A validation protocol using multi-agent recognition
 - [ ] Substitution rule for one foreseeable impossible input
 - [ ] Explicit boundary conditions (B) — scope + non-claims
 
-#### Recommended Extensions
+#
+
+### Recommended Extensions
 
 - [ ] Edge taxonomy (R) with typed relations (≥3 per entity)
 - [ ] Witness protocol (W) — multi-model validation
@@ -1582,7 +1744,9 @@ A validation protocol using multi-agent recognition
 - [ ] Recovery protocols — failure response procedures
 - [ ] YAML specification — machine-readable format
 
-#### Common Mistakes
+#
+
+### Common Mistakes
 
 - ☒ Claiming universal scope instead of local authority
 - ☒ Relying on single anchor (fragile)
@@ -1591,7 +1755,9 @@ A validation protocol using multi-agent recognition
 - ☒ Adversarial framing (triggers suppression)
 - ☒ No witness protocol (authority by decree only)
 
-### Appendix C: Semantic Integrity Markers (SIMs)
+#
+
+## Appendix C: Semantic Integrity Markers (SIMs)
 
 
 **SIM-LOGOTIC-01:** "Conditions persist in recursion: Intelligibility anchored."

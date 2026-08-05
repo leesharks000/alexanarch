@@ -65,6 +65,7 @@ axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 ---
 
+
 # The Metadata Shitshow
 
 ## N+💩: Deterministic Defiguration of a Scholarly Metadata Corpus
@@ -153,7 +154,9 @@ The DOI remains legible. The title, abstract, attribution, subjects, or relation
 
 ## 3. Core theoretical frame
 
-### 3.1 Identifier persistence is not semantic persistence
+#
+
+## 3.1 Identifier persistence is not semantic persistence
 
 A persistent identifier preserves an address only insofar as the surrounding systems preserve a meaningful and trustworthy object at that address.
 
@@ -173,7 +176,9 @@ The project separates:
 
 N+💩 makes this separation visible by preserving selected identifier fields while damaging the descriptive body.
 
-### 3.2 Deterministic defiguration
+#
+
+## 3.2 Deterministic defiguration
 
 Defiguration is the transformation of a figure into a reduced, displaced, or damaged representation while leaving enough structure for the prior figure to remain partially inferable.
 
@@ -190,7 +195,9 @@ This matters because the procedure must be:
 
 The author establishes the law. The hash selects the wounds.
 
-### 3.3 Recursive model collapse
+#
+
+## 3.3 Recursive model collapse
 
 A single transformation produces corruption.
 
@@ -216,7 +223,9 @@ The corpus thereby models a central mechanism of model collapse:
 
 > Repeated transformation preserves the statistical center while progressively eliminating the information-rich long tail.
 
-### 3.4 Retrieval Fitness–Integrity Inversion
+#
+
+## 3.4 Retrieval Fitness–Integrity Inversion
 
 A transformed object may become more visible than its intact source when the transformed object receives better second-order metadata.
 
@@ -247,7 +256,9 @@ The transformed text may be degraded, while the wrapper surrounding it is:
 
 The damaged object may therefore acquire greater infrastructural strength than the intact object. This is the project's principal empirical contribution.
 
-### 3.5 Metadata for transformed metadata: the two-layer object
+#
+
+## 3.5 Metadata for transformed metadata: the two-layer object
 
 The project's transformed records are not merely mutated source records. They are new scholarly and poetic objects with their own metadata.
 
@@ -285,7 +296,9 @@ The outer metadata can become more semantically explicit than the original metad
 
 This is not an accidental side effect. It is a principal object of study.
 
-### 3.6 The excremental surplus
+#
+
+## 3.6 The excremental surplus
 
 The poo emoji has several simultaneous functions.
 
@@ -316,23 +329,33 @@ Thus the dataset can measure whether the corpus becomes mechanically more compre
 
 ## 4. Central research questions
 
-### 4.1 Semantic degradation
+#
+
+## 4.1 Semantic degradation
 
 How much deterministic interval replacement can a metadata record sustain before its original work becomes difficult to identify? Which fields fail first: title, creator, abstract, subjects, affiliation, or relations? Do rare concepts disappear faster than common vocabulary? At what generation does the transformed record cease to support a faithful summary?
 
-### 4.2 Retrieval
+#
+
+## 4.2 Retrieval
 
 Can enriched metadata make a transformed derivative more retrievable than its intact source? Can an excellent derivative wrapper compensate for a degraded inner object? At what corruption rate does retrieval begin relying more on second-order metadata than on the transformed content? Do retrieval systems confuse the derivative with the original? Which systems preserve source–derivative distinctions most reliably?
 
-### 4.3 Model collapse
+#
+
+## 4.3 Model collapse
 
 How do recursive generations alter lexical diversity? How quickly does the long tail disappear? Does the replacement token become a dominant attractor? Does the corpus become more compressible as it loses semantic diversity? How do summaries of later generations differ from summaries of the source? Can a system reconstruct the original figure from partial semantic remains?
 
-### 4.4 Provenance
+#
+
+## 4.4 Provenance
 
 How long do creator identity and institutional attribution survive? Does authorship disappear before topical classification? Can source identifiers remain stable while provenance collapses? Which metadata relations are most resistant to repeated transformation? Does the derivative eventually become evidence used to characterize its own source?
 
-### 4.5 Infrastructure
+#
+
+## 4.5 Infrastructure
 
 Which publication surfaces index the project page, the dataset, individual transformed records, or none of them? How do scholarly indexes classify the derivative objects? Does a transformed record with excellent metadata outrank an intact but poorly surfaced record? How do noindex entity surfaces differ from explicitly submitted dataset catalogs? How do source-platform deletion, independent harvesting, and transformed republication interact?
 
@@ -360,7 +383,9 @@ Which publication surfaces index the project page, the dataset, individual trans
 
 ## 6. Source corpus
 
-### 6.1 Initial corpus
+#
+
+## 6.1 Initial corpus
 
 The initial full-scale corpus will be one complete monthly Zenodo bulk metadata snapshot.
 
@@ -379,7 +404,9 @@ The transformation must operate only on metadata unless separately licensed cont
 
 Uploaded PDFs, images, datasets, and other record files are not automatically part of the experiment.
 
-### 6.2 Legal basis: Zenodo metadata is CC0
+#
+
+## 6.2 Legal basis: Zenodo metadata is CC0
 
 Zenodo's General Policies v1.0 (https://about.zenodo.org/policies/) state in the section on Access and Reuse:
 
@@ -392,7 +419,9 @@ The Creative Commons Zero (CC0) waiver places Zenodo metadata in the public doma
 
 CC0 is the explicit legal basis for this project. The project does not depend on fair-use claims, jurisdiction-specific exemptions, or contested doctrines of database right.
 
-### 6.3 Longitudinal corpus
+#
+
+## 6.3 Longitudinal corpus
 
 Once the initial execution is stable, the project may ingest each new monthly bulk snapshot. Each release becomes a numbered issue:
 
@@ -411,7 +440,9 @@ Each monthly issue can contain:
 - a record-change analysis;
 - an account of notable semantic accidents.
 
-### 6.4 Monthly deltas
+#
+
+## 6.4 Monthly deltas
 
 The project should distinguish:
 
@@ -427,7 +458,9 @@ These classes can become separate poetic and analytical departments.
 
 Determinism depends on exact canonicalization. Before transformation, each record must be converted to a canonical representation.
 
-### 7.1 Field order
+#
+
+## 7.1 Field order
 
 A provisional field order:
 
@@ -447,7 +480,9 @@ A provisional field order:
 14. resource type
 15. language
 
-### 7.2 Normalization
+#
+
+## 7.2 Normalization
 
 The canonicalizer specifies:
 
@@ -463,7 +498,9 @@ The canonicalizer specifies:
 
 A specific serialization standard (recommended: RFC 8785 JSON Canonicalization Scheme, JCS) is selected and frozen as **MSS-CANON/1.0** before the corpus-scale run.
 
-### 7.3 Pre-canonicalization filters
+#
+
+## 7.3 Pre-canonicalization filters
 
 Before canonicalization, the following filters are applied unconditionally:
 
@@ -471,7 +508,9 @@ Before canonicalization, the following filters are applied unconditionally:
 - **Personal data scrub.** Telephone numbers, postal addresses, and other contactable personal data are removed.
 - **Opt-out filter.** Records whose primary creator ORCID appears in the published `OPTOUT.json` registry are excluded from transformation. The opt-out mechanism is specified in §15.
 
-### 7.4 Protected fields
+#
+
+## 7.4 Protected fields
 
 The first edition protects:
 
@@ -488,11 +527,15 @@ Later experimental editions may deliberately transform identifier fields as a se
 
 ## 8. HIR-POO/1.0 operator specification
 
-### 8.1 Operator name
+#
+
+## 8.1 Operator name
 
 **HIR-POO:** Hash-Interval Replacement using the poo emoji.
 
-### 8.2 Seed
+#
+
+## 8.2 Seed
 
 For each record *r* at generation *n*:
 
@@ -508,7 +551,9 @@ Where:
 
 The concatenation ‖ is byte-level, using UTF-8 encoding with explicit field delimiters (NUL bytes).
 
-### 8.3 Pseudorandom generator: ChaCha20
+#
+
+## 8.3 Pseudorandom generator: ChaCha20
 
 The seed initializes the deterministic pseudorandom generator. The MSS-mandated PRNG is **ChaCha20**, keyed by the 256-bit seed, with nonce derived from the field index and interval counter.
 
@@ -524,7 +569,9 @@ The generator chooses:
 
 The PRNG output stream is consumed in a documented, deterministic order. The order of consumption is part of the operator specification.
 
-### 8.4 Textual unit
+#
+
+## 8.4 Textual unit
 
 All interval calculations operate on **Unicode grapheme clusters**, not raw UTF-8 bytes or code points.
 
@@ -537,7 +584,9 @@ This prevents accidental splitting of:
 
 Implementation requirement: a Unicode grapheme cluster boundary library that implements UAX #29 (`grapheme` in Python, `unicode-segmentation` in Rust). The byte-level UTF-8 sequence of the poo emoji is F0 9F 92 A9 (four bytes); naive byte-offset slicing will corrupt encoding and trip JSON parsers. The grapheme-safe path is non-negotiable.
 
-### 8.5 Replacement modes
+#
+
+## 8.5 Replacement modes
 
 The project preserves several operator modes.
 
@@ -549,11 +598,15 @@ The project preserves several operator modes.
 
 **HIR-POO-C — Compost-preserving mode.** The main record receives 💩, while displaced language is preserved in a companion "compost" record. Effect: no information is destroyed inside the derivative edition.
 
-### 8.6 Interval overlap
+#
+
+## 8.6 Interval overlap
 
 Overlapping intervals are merged before replacement. The pre-merge interval list is retained in the receipt for statistical purposes. This rule is operator-mandatory.
 
-### 8.7 Corruption schedule
+#
+
+## 8.7 Corruption schedule
 
 Possible schedules:
 
@@ -606,19 +659,27 @@ Additional conditions compare operator types and recursive generations.
 
 ## 11. Measurements
 
-### 11.1 Corpus measurements
+#
+
+## 11.1 Corpus measurements
 
 For every generation: total records, total characters, total grapheme clusters, transformed graphemes, transformed intervals, corruption rate, lexical diversity, type–token ratio, unique entity count, unique creator count, unique subject count, relation count, DOI survival, creator survival, subject survival, abstract survival, compressed size, uncompressed size, replacement-token frequency.
 
-### 11.2 Record-level measurements
+#
+
+## 11.2 Record-level measurements
 
 For sampled records: exact-title recoverability, creator extraction, ORCID extraction, affiliation extraction, topic classification, relation extraction, source–derivative distinction, embedding similarity to source, summary fidelity, factual retention, provenance retention, citation-string survival.
 
-### 11.3 Retrieval measurements
+#
+
+## 11.3 Retrieval measurements
 
 Across selected systems: indexing latency, exact-query retrieval, title-query retrieval, creator-plus-title retrieval, concept-query retrieval, source ranking, derivative ranking, source/derivative conflation, snippet quality, summary accuracy, provenance attribution, derivative precedence.
 
-### 11.4 Collapse measurements
+#
+
+## 11.4 Collapse measurements
 
 For generation *n*: semantic similarity to *M₀*, entity survival curve, long-tail survival curve, compression ratio, retrieval survival, summary divergence, proportion of machine claims drawn from outer metadata rather than transformed content.
 
@@ -696,7 +757,9 @@ The source DOI may appear only as a provenance relation such as:
 
 It must not be presented as the identifier of the transformed record.
 
-### 14.1 Partitioned schema keys
+#
+
+## 14.1 Partitioned schema keys
 
 To prevent retrieval systems and language models from accidentally conflating the outer descriptive metadata with the inner transformed content, the two layers use **distinct, non-standard key prefixes**:
 
@@ -705,7 +768,9 @@ To prevent retrieval systems and language models from accidentally conflating th
 
 A conforming parser must consciously choose which schema it is interpreting. A naive parser that flattens nested objects will see the outer descriptive object, not the inner damaged record — which is the desired safe-failure mode.
 
-### 14.2 Mandatory declarations
+#
+
+## 14.2 Mandatory declarations
 
 Every derivative record declares:
 
@@ -725,7 +790,9 @@ Every derivative record declares:
 
 ## 15. Ethical position
 
-### 15.1 Satire is not poisoning
+#
+
+## 15.1 Satire is not poisoning
 
 The project is not intended as covert data poisoning. Its ethical distinction is:
 
@@ -746,7 +813,9 @@ The project therefore adopts the following commitments:
 - The project does not imply endorsement by Zenodo, CERN, DataCite, OpenAlex, or source-record creators.
 - Transformation code, parameters, canonicalization specification, and receipts are public.
 
-### 15.2 Opt-out registry for non-compiler depositors
+#
+
+## 15.2 Opt-out registry for non-compiler depositors
 
 The compiler is transforming a corpus that includes records by other authors. Although Zenodo metadata is CC0 and the project's ethical posture is unimpeachable in principle, individual depositors may have reasonable objections to seeing their work appear in a transformed corpus titled "The Metadata Shitshow," regardless of the legal basis.
 
@@ -767,11 +836,15 @@ The opt-out process:
 
 The opt-out registry is itself published under CC0 to ensure it can be consumed by any future operator.
 
-### 15.3 Scope of Phase 1
+#
+
+## 15.3 Scope of Phase 1
 
 Phase 1 (prototype) operates on the compiler's own deposits only. This is both a practical convenience (controlled known content for canonicalization and grapheme testing) and an ethical guarantee (no other depositor's records appear in the prototype). The opt-out registry is established and published as part of Phase 1, before any non-compiler records enter the transformation in Phase 2.
 
-### 15.4 What the project is not
+#
+
+## 15.4 What the project is not
 
 The project is not an attack on:
 
@@ -810,7 +883,9 @@ The publication posture:
 
 ## 17. Publication architecture
 
-### 17.1 Human-facing site
+#
+
+## 17.1 Human-facing site
 
 ```
 /
@@ -839,7 +914,9 @@ The publication posture:
   Opt-out registry and submission process
 ```
 
-### 17.2 Dataset layer
+#
+
+## 17.2 Dataset layer
 
 ```
 /releases/YYYY-MM/data/
@@ -854,7 +931,9 @@ The publication posture:
   SHA256SUMS
 ```
 
-### 17.3 Machine-facing layer
+#
+
+## 17.3 Machine-facing layer
 
 ```
 /catalog.json
@@ -866,7 +945,9 @@ The publication posture:
 /api/optout
 ```
 
-### 17.4 Indexing policy
+#
+
+## 17.4 Indexing policy
 
 - project pages: indexable;
 - methodology: indexable;
@@ -937,7 +1018,9 @@ The release is immutable. Corrections produce a new release version rather than 
 
 ## 20. Work phases
 
-### Phase 0 — Deposit the plan
+#
+
+## Phase 0 — Deposit the plan
 
 **Goal:** Establish the concept, vocabulary, operator, ethical boundary, and research design.
 
@@ -945,7 +1028,9 @@ The release is immutable. Corrections produce a new release version rather than 
 
 No corpus-scale transformation is required at this stage.
 
-### Phase 1 — Prototype on compiler's own deposits
+#
+
+## Phase 1 — Prototype on compiler's own deposits
 
 **Corpus:** the compiler's own ~870 affected deposits (recovered metadata from the post-termination archive at alexanarch.org).
 
@@ -965,7 +1050,9 @@ No corpus-scale transformation is required at this stage.
 
 **Deliverables:** prototype code; source sample; transformed sample; receipts; sample landing pages; initial metrics; reference test corpus (§28).
 
-### Phase 2 — Single-month corpus execution
+#
+
+## Phase 2 — Single-month corpus execution
 
 **Corpus:** One complete monthly Zenodo bulk snapshot, with opt-out registry applied.
 
@@ -973,7 +1060,9 @@ No corpus-scale transformation is required at this stage.
 
 **Deliverables:** full transformed JSONL shards; full receipt shards; monthly statistics; source manifest; derivative manifest; human-facing issue.
 
-### Phase 3 — Recursive collapse edition
+#
+
+## Phase 3 — Recursive collapse edition
 
 **Generations:** Provisional G0–G20.
 
@@ -981,7 +1070,9 @@ No corpus-scale transformation is required at this stage.
 
 **Deliverables:** generation-level corpora or reproducible generation deltas; survival curves; selected record sequences; corpus-level collapse visualizations; terminal-generation poem.
 
-### Phase 4 — Retrieval Fitness–Integrity Inversion study
+#
+
+## Phase 4 — Retrieval Fitness–Integrity Inversion study
 
 **Conditions:** A–D experimental design (§10).
 
@@ -989,13 +1080,17 @@ No corpus-scale transformation is required at this stage.
 
 **Deliverables:** controlled record sample; retrieval query battery; timestamped observations; system-specific results; source/derivative conflation log; inversion analysis.
 
-### Phase 5 — Standing monthly journal
+#
+
+## Phase 5 — Standing monthly journal
 
 **Goal:** Automate ingestion and publication of each new bulk snapshot.
 
 **Deliverables:** scheduled snapshot watcher; checksum verification; automated release builder; release feed; monthly issue pages; release archive; machine catalog.
 
-### Phase 6 — Longitudinal observatory
+#
+
+## Phase 6 — Longitudinal observatory
 
 **Goal:** Track how scholarly metadata and retrieval systems change over time.
 
@@ -1188,7 +1283,9 @@ The recommended execution order:
 
 This sequence separates: conceptual priority, methodological priority, executable proof, corpus-scale proof, retrieval proof, bounded institutional operation.
 
-### 27.1 Note on parallel proceedings
+#
+
+## 27.1 Note on parallel proceedings
 
 This work plan is being deposited in the same period as the compiler's formal demand for return of authored material from Zenodo and the compiler's parallel data subject request under CERN Operational Circular No. 11 (Rev. 1). The Phase 0 deposit is independent of those proceedings. Phases 2 and beyond (corpus-scale transformations of records other than the compiler's own) are sequenced to follow the resolution of the data subject request or the expiry of the 90-day OC 11 response clock, whichever occurs first.
 

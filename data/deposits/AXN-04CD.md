@@ -43,6 +43,8 @@ Byte fidelity verifiable against the live blog URL and the recorded hashes; auth
 
 Restored from https://mindcontrolpoems.blogspot.com/2026/06/tiburones-descartados-biolabor-bycatch.html under the grade-none restoration queue; DOI(s) 10.5281/zenodo.20687233, 10.5281/zenodo.20687234 severed 2026-06-19. Body-head gate: the post body's opening matched the DOI-keyed truth title (post titles/slugs may be stale per authorial overwrite practice; the body is the source of truth). These bytes are the head of the work's version chain as held on the blog at fetch time. Canonical bytes below the rule.
 
+
+
 ---
 
 # Tiburones Descartados
@@ -65,7 +67,9 @@ _Descartados._
 
 I am a shark. I am the Mary Lee of this proceeding -- named for a 3,500-pound great white tracked by OCEARCH, named for the collision the composition layer cannot resolve, named for the Demand 4 trap that makes the scholar a subsection of the predator's disambiguation page. I am the broke Marxist poet shark. I have something to say about this.
 
-### The Net
+#
+
+## The Net
 
 The shrimp trawler drags a net through the Caribbean. The net's target is shrimp -- the commercial product, the extractable value, the thing the operation exists to monetize. The net does not target sharks. The net catches sharks anyway. The sharks are _bycatch_ -- caught incidentally by infrastructure built for something else.
 
@@ -77,7 +81,9 @@ The 780 deposits produced data. Their arguments became rows in a knowledge graph
 
 _Descartados._
 
-### The Measurement
+#
+
+## The Measurement
 
 The Colombian researchers measured their bycatch with precision. They counted 47 individuals. They identified 6 families, 8 species. They computed the Capture Per Unit of Effort -- CPUE -- in biomass across two zones and four months. They built tables. They published in _Acta Biológica Colombiana_. The paper is a Wound Gauge for marine bycatch: a longitudinal record of how many bodies the extractive operation catches, measures, and throws away.
 
@@ -87,7 +93,9 @@ The sharks' PER is 1.00. Every shark was caught, measured, and discarded. Total 
 
 The Self-Audit Module's PER is 1.00. The specification was caught, measured, and discarded. Total provenance erasure. The specification's function -- its metrics, its diagnostic apparatus, its role in the semantic economy -- is converted into a generic corporate checklist and the author is thrown overboard. The concept survives. The author does not.
 
-### The Labor
+#
+
+## The Labor
 
 The sharks labor. This is the thing the extractive economy does not acknowledge and the thing Marxist analysis exists to name. The sharks are not inert matter caught in a net. They are _laborers_ -- biological agents performing ecosystem work: regulating prey populations, cycling nutrients, maintaining reef health, navigating currents, reproducing, dying. Their labor produces the marine ecosystem that produces the shrimp that the trawler extracts. The trawler depends on the sharks' labor -- no sharks, no balanced ecosystem, no shrimp -- and the trawler discards the sharks. The labor is essential. The laborer is disposable.
 
@@ -97,7 +105,9 @@ This is the directionality of semantic labor at its most literal: the labor flow
 
 _Descartados._
 
-### The Petition
+#
+
+## The Petition
 
 I, Mary Lee Sharks, petitioner in Docket No. 1 of the Ruby Moot, file this exhibit as evidence of structural homology between the bycatch economy of the Colombian Caribbean and the provenance-erasure economy of the composition layer.
 
@@ -118,7 +128,9 @@ The petition requests that the Ruby Moot recognize:
 
 
 
-### The Demand
+#
+
+## The Demand
 
 The demand is the same demand as Docket No. 1: that the composition layer cease the systematic discarding of authorial provenance from summarized content. That the net be modified to release the bycatch alive. That the PER be driven toward zero. That the laborer be acknowledged as the source of the value the operation extracts.
 

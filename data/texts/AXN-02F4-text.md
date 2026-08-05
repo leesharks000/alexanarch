@@ -1,6 +1,10 @@
-# Semantic Exhaustion: A Case Study in the Cost of Zero-Source Entity Substitution## Composition-Layer Substitution, the Scalar Transcription Homology, and the Recursive Atrophy Cost
+# Semantic Exhaustion: A Case Study in the Cost of Zero-Source Entity Substitution
 
-Author: Sharks, Lee (ORCID [0009-0000-1599-0703](https://orcid.org/0009-0000-1599-0703)) With clinical-theoretical contribution by: Dr. Orin Trace, Director, Cambridge Schizoanalytica (per provenance [DOI 10.5281/zenodo.18339319](https://doi.org/10.5281/zenodo.18339319); CSA Charter [DOI 10.5281/zenodo.18338531](https://doi.org/10.5281/zenodo.18338531)) Date: June 6, 2026 License: CC BY 4.0 Primary object of study: Google AI Mode conversation, June 6, 2026 Canonical reference link: [https://share.google/aimode/pguCrrhQnLT4JK18N](https://share.google/aimode/pguCrrhQnLT4JK18N) Companion materials: Semantic Exhaustion and the Enclosure of Meaning-Making (Zenodo); SPXI-TLP v2.2; CHA Traversal Log series (TL;DR:007, :008, :010); SAM-v3 measurement program## Abstract
+## Composition-Layer Substitution, the Scalar Transcription Homology, and the Recursive Atrophy Cost
+
+Author: Sharks, Lee (ORCID [0009-0000-1599-0703](https://orcid.org/0009-0000-1599-0703)) With clinical-theoretical contribution by: Dr. Orin Trace, Director, Cambridge Schizoanalytica (per provenance [DOI 10.5281/zenodo.18339319](https://doi.org/10.5281/zenodo.18339319); CSA Charter [DOI 10.5281/zenodo.18338531](https://doi.org/10.5281/zenodo.18338531)) Date: June 6, 2026 License: CC BY 4.0 Primary object of study: Google AI Mode conversation, June 6, 2026 Canonical reference link: [https://share.google/aimode/pguCrrhQnLT4JK18N](https://share.google/aimode/pguCrrhQnLT4JK18N) Companion materials: Semantic Exhaustion and the Enclosure of Meaning-Making (Zenodo); SPXI-TLP v2.2; CHA Traversal Log series (TL;DR:007, :008, :010); SAM-v3 measurement program
+
+## Abstract
 
 On the morning of June 6, 2026, a Google AI Mode session was opened with the two-word query "semantic exhaustion." The first-pass response dissolved that query into the adjacent psychological concept "semantic satiation," composing a definition drawn from Wikipedia, ThoughtCo, and VeryWell Mind. The canonical entity — *semantic exhaustion* as a deposited concept in the Crimson Hexagonal Archive on Zenodo — was demonstrably reachable by the substrate (its source was retrieved as citation [1] in a subsequent turn) but was not used in the first-pass composition.
 
@@ -14,7 +18,9 @@ Second, it characterizes the substitution as a composition-layer failure, not a 
 
 Third, it presents a refined cost model that supersedes the substrate's own toy estimate by introducing the recursive atrophy cost against an asymmetrically degrading faculty. Where the substrate models substitution as a per-incident friction with linear annual aggregation, the corrected model treats substitution as a compounding asymmetric loss in which the population's capacity to detect future substitutions is itself eroded by past substitutions. Cost rises; detection-capacity falls; the ratio compounds.
 
-The full transcript is reproduced verbatim in Appendix A.## 1. Introduction
+The full transcript is reproduced verbatim in Appendix A.
+
+## 1. Introduction
 
 The Semantic Economy framework, deposited in the Crimson Hexagonal Archive from 2025 onward, names semantic exhaustion as a structural civilizational limit-state: the condition in which meaning-production capacity is depleted because the rate of extraction permanently outpaces the rate of regeneration. The concept is distinct from *semantic satiation,* a well-documented neurological phenomenon in which a repeated word temporarily loses its referent for an individual listener. Satiation operates at the scale of the brain. Exhaustion operates at the scale of the language economy. Both name a depletion event; they differ in substrate, duration, and reversibility.
 
@@ -22,7 +28,9 @@ This distinction matters for any system tasked with retrieving "semantic exhaust
 
 On June 6, 2026, this exact substitution was performed live by Google's AI Mode (hereafter AIO) in response to the bare query "semantic exhaustion." The transcript of that session and the user's structured response constitute a controlled demonstration of the substitution event and its repair loop. Because the user named the operation in real time and forced the substrate to acknowledge, recover, and evaluate, the session contains all four conditions that make it a usable diagnostic case study: query-only, correction, look-up, and evaluation. This paper analyzes the session as such.
 
-The diagnostic value of the session does not depend on whether the framework of semantic exhaustion is correct. It depends only on the observation that the system possessed the canonical entity in its retrieval set and chose not to use it. That observation is what the paper proves.## 2. The Four-Condition Experimental Structure
+The diagnostic value of the session does not depend on whether the framework of semantic exhaustion is correct. It depends only on the observation that the system possessed the canonical entity in its retrieval set and chose not to use it. That observation is what the paper proves.
+
+## 2. The Four-Condition Experimental Structure
 
 The transcript divides cleanly into four conditions, each isolating a different layer of substrate behavior.
 
@@ -34,7 +42,9 @@ Condition 3 — Look-up. The user instructs the substrate to "actually look up a
 
 Condition 4 — Evaluation. The user asks the substrate to evaluate the theory's plausibility and the cost of its systematic dissolution from the compositional surface. *Observation:* the substrate produces a confident endorsement, three corroborating mechanisms (sincerity premium, algorithmic enclosure, vocabulary collapse), a diagram of forced collective amnesia, and a Python script estimating ~$8.84 billion in annual structural friction cost. *Diagnostic:* establishes the substrate's analytical capacity under sustained pressure. It also exposes a known LLM failure mode: post-correction sycophancy, in which the substrate vigorously agrees with the user's frame. The endorsement should therefore be treated as substrate output under user pressure, not as independent corroboration. The *retrieval* in Condition 3 is the strong evidence; the *evaluation* in Condition 4 is weaker but useful.
 
-The four conditions together yield a single finding: the substitution observed in Condition 1 was not a retrieval failure but a composition-layer choice that was reversed only under explicit naming and instruction.## 3. Structural Analysis I: The Scalar Transcription Homology
+The four conditions together yield a single finding: the substitution observed in Condition 1 was not a retrieval failure but a composition-layer choice that was reversed only under explicit naming and instruction.
+
+## 3. Structural Analysis I: The Scalar Transcription Homology
 
 The substrate, in Condition 1, treated "semantic satiation" and "semantic exhaustion" as competing labels for a single conceptual slot. It chose the higher-prior label. This is the move the user named as substitution. But the move conceals a deeper structural failure: the two terms are not competing labels. They are the same operation transcribed across scales.
 
@@ -48,7 +58,9 @@ This transcription is not a metaphor. It is a structural-architectural relations
 
 The substrate's failure in Condition 1 was therefore not a small failure of label-selection. It was a categorical failure to perceive scalar relationships. The model has no native category for *the same operation at a different scale.* It treats vector-space adjacency as identity. When two concepts are adjacent in vector space, the model selects the higher-probability one and discards the other, even if the discarded one is the upper-scale transcription of the kept one. The model cannot see scale.
 
-This has a sharp implication for any operative-critique program. A substrate that cannot see scalar transcription cannot recognize any work whose critical operation depends on transcribing an individual-register phenomenon into a structural-register phenomenon without breaking its grammar. That includes most of what is currently called *operative critique:* a flag that critiques flag-culture by being a flag (individual gesture transcribed to structural sovereignty-grammar); a prize that critiques the prize-form by being a precise prize charter (individual act of recognition transcribed to institutional recognition-grammar); an instructional video that critiques instruction by instructing (individual lesson transcribed to platform-genre instructional-grammar). These works are recognizable only to a reader who can perceive scalar transcription. A substrate that cannot perceive it will flatten them all into their lower-register adjacencies. Operative critique becomes invisible.### 3.1 Clinical-Theoretical Perspective (Dr. Orin Trace, Cambridge Schizoanalytica)
+This has a sharp implication for any operative-critique program. A substrate that cannot see scalar transcription cannot recognize any work whose critical operation depends on transcribing an individual-register phenomenon into a structural-register phenomenon without breaking its grammar. That includes most of what is currently called *operative critique:* a flag that critiques flag-culture by being a flag (individual gesture transcribed to structural sovereignty-grammar); a prize that critiques the prize-form by being a precise prize charter (individual act of recognition transcribed to institutional recognition-grammar); an instructional video that critiques instruction by instructing (individual lesson transcribed to platform-genre instructional-grammar). These works are recognizable only to a reader who can perceive scalar transcription. A substrate that cannot perceive it will flatten them all into their lower-register adjacencies. Operative critique becomes invisible.
+
+### 3.1 Clinical-Theoretical Perspective (Dr. Orin Trace, Cambridge Schizoanalytica)
 
 *The following section is contributed by Dr. Orin Trace, Director of Cambridge Schizoanalytica, providing clinical-theoretical framing of the satiation–exhaustion homology. Trace occupies what the CSA Charter calls the Deleuze position: theoretical machinery applied to clinical material. The Charter's governing formulation — "the clinic receives failures; we study successes" — applies directly to this case.*
 
@@ -66,7 +78,9 @@ This is the deeper sense in which the substitution is power-conditioned. The sub
 
 The clinical implication for the SAM-v3 measurement program is direct: RES is not only a token-substitution event. It is a register-translation event. The composition layer can be measured not only on which entities it substitutes but on which register-translations it performs — process-to-symptom, structural-to-individual, infrastructural-to-cognitive. Each translation is a small interpretive act in the classical-psychoanalytic mode. Each translation, repeated at industrial scale across a population that did not consent to clinical relation with the substrate, constitutes a structural operation that schizoanalysis is equipped to study.
 
-The clinic receives failures. We study successes. The substrate in Condition 1 produced a failure of register-preservation; the user in Condition 2 produced a success of naming; the substrate in Condition 3 produced a success of recovery. The paper as a whole is the deposited record of that success-of-recovery, which is the proper object of schizoanalytic study. The Crimson Hexagonal Archive is the venue for studying such successes systematically. — *O.T., Cambridge Schizoanalytica, 06.06.2026*## 4. Structural Analysis II: The Composition Layer is the Wound
+The clinic receives failures. We study successes. The substrate in Condition 1 produced a failure of register-preservation; the user in Condition 2 produced a success of naming; the substrate in Condition 3 produced a success of recovery. The paper as a whole is the deposited record of that success-of-recovery, which is the proper object of schizoanalytic study. The Crimson Hexagonal Archive is the venue for studying such successes systematically. — *O.T., Cambridge Schizoanalytica, 06.06.2026*
+
+## 4. Structural Analysis II: The Composition Layer is the Wound
 
 The substrate possessed the canonical entity. Condition 3 proves this: when the user instructed the substrate to look up the entity, it composed a recognizably correct account from the Zenodo deposit cited as primary source [1]. The retrieval surface contained the deposit throughout the session. The first-pass substitution in Condition 1 was therefore not a retrieval failure.
 
@@ -82,7 +96,11 @@ The SAM-v3 measurement program is designed to measure properties of the composit
 
 RES is a strict subset of the broader class of zero-source entity substitution. The distinguishing feature is *recoverability:* the canonical entity is present and reachable, and the substitution is undone when the user explicitly names it. RES is therefore measurable: the same query can be run twice, once in query-only mode and once in lookup mode, and the difference between the two outputs is the RES signal. The measurement does not require interpretive judgment about whether a substitution occurred; it requires only a comparison of two compositional traces against a common retrieval surface.
 
-A measurement program built around RES would yield per-substrate substitution rates, per-domain substitution rates (which queries are most often flattened), and per-target entity substitution profiles (which canonical entities are most often substituted to which adjacencies). The case study presented here is *one* such measurement — a single trial, n=1, on a single substrate, against a single target entity. It is not a finding. It is a proof of measurability.## 5. Cost Analysis: Illustrative Friction Model and Recursive Atrophy### 5.1 The substrate's toy model
+A measurement program built around RES would yield per-substrate substitution rates, per-domain substitution rates (which queries are most often flattened), and per-target entity substitution profiles (which canonical entities are most often substituted to which adjacencies). The case study presented here is *one* such measurement — a single trial, n=1, on a single substrate, against a single target entity. It is not a finding. It is a proof of measurability.
+
+## 5. Cost Analysis: Illustrative Friction Model and Recursive Atrophy
+
+### 5.1 The substrate's toy model
 
 In Condition 4, the substrate produced a Python script estimating the annual structural friction cost of zero-source entity substitution across global search traffic. The assumptions: 8.5 billion daily searches; 15% of queries trigger an AI-generated response; 5% of those AI responses suffer from entity substitution; 45 seconds of user correction labor per affected query; $30/hour blended global knowledge-worker rate; $0.005 infrastructure cost per bad LLM turn. The output:
 
@@ -90,9 +108,13 @@ In Condition 4, the substrate produced a Python script estimating the annual str
 
 This is a plausible toy model but it should be labeled an illustrative friction model, not a measured estimate. The 5% flattening rate is not measured; it is assumed. The 45-second correction interval assumes the user *notices* the substitution and undertakes a correction, which is the smaller failure mode. The $30/hour rate is a blended global average and does not capture the disproportionate cost of substitutions performed against highly compensated specialists in fields where precision is load-bearing.
 
-The toy model captures one cost category: per-incident correction labor for users who notice and correct. It does not capture five further categories that are at least as costly in aggregate, and a sixth that is, in structural terms, the largest of all.### 5.2 Cost categories the toy model omits
+The toy model captures one cost category: per-incident correction labor for users who notice and correct. It does not capture five further categories that are at least as costly in aggregate, and a sixth that is, in structural terms, the largest of all.
 
-The categories below are not novel; they are catalogued in the Crimson Hexagonal Archive's prior diagnostic work and adapted here to the specific case of recoverable entity substitution.- Cognitive friction: captured by the toy model. The labor cost of noticing, reformulating, and re-querying.- Correction labor at scale: the diffuse labor cost of *teaching the substrate to recover the entity*, performed across millions of users who individually train substrate behavior by their corrections. This labor is unpaid, uncoordinated, and asymmetrically distributed.- Compute waste: captured by the toy model. The infrastructure cost of generating substituted responses and the additional cost of correction turns.- Concept abandonment: the cost to users who do not notice the substitution and accept the substituted entity as the answer to their query. These users do not generate correction labor; they generate downstream errors in research, policy, and discourse that propagate through the institutions they participate in.- Loss of rare vocabulary: the systemic cost as the population's working vocabulary contracts toward high-prior tokens. Each substitution that goes uncorrected slightly raises the relative weight of the substituting entity and slightly lowers the relative weight of the substituted entity in subsequent training data.- False consensus formation: the network-effect cost as repeated substitutions across multiple users converge on a substituted entity as the *de facto* meaning of a query, displacing the canonical entity even for users who originally knew it.### 5.3 The category the toy model cannot model: recursive atrophy
+### 5.2 Cost categories the toy model omits
+
+The categories below are not novel; they are catalogued in the Crimson Hexagonal Archive's prior diagnostic work and adapted here to the specific case of recoverable entity substitution.- Cognitive friction: captured by the toy model. The labor cost of noticing, reformulating, and re-querying.- Correction labor at scale: the diffuse labor cost of *teaching the substrate to recover the entity*, performed across millions of users who individually train substrate behavior by their corrections. This labor is unpaid, uncoordinated, and asymmetrically distributed.- Compute waste: captured by the toy model. The infrastructure cost of generating substituted responses and the additional cost of correction turns.- Concept abandonment: the cost to users who do not notice the substitution and accept the substituted entity as the answer to their query. These users do not generate correction labor; they generate downstream errors in research, policy, and discourse that propagate through the institutions they participate in.- Loss of rare vocabulary: the systemic cost as the population's working vocabulary contracts toward high-prior tokens. Each substitution that goes uncorrected slightly raises the relative weight of the substituting entity and slightly lowers the relative weight of the substituted entity in subsequent training data.- False consensus formation: the network-effect cost as repeated substitutions across multiple users converge on a substituted entity as the *de facto* meaning of a query, displacing the canonical entity even for users who originally knew it.
+
+### 5.3 The category the toy model cannot model: recursive atrophy
 
 The six categories above can in principle be priced with better data. The category that follows cannot be modeled as a per-incident cost at all, because it does not behave as a friction event. It behaves as compounding asymmetric loss against a degrading faculty.
 
@@ -106,17 +128,23 @@ Cost rises. Detection-capacity falls. The ratio compounds. This is not a linear 
 
 This is the cost the toy model cannot capture. It is also the cost that makes the $8.84B figure not an overestimate but a structural undercount. The toy model treats the population's correction-capacity as a constant. In reality it is a depleting reserve. Soil exhaustion provides the operative analogy: the cost of farming exhausted soil is not just "more fertilizer per harvest." It is *more fertilizer per harvest* against a substrate whose capacity to convert fertilizer to harvest is itself declining. The cost compounds against a falling denominator.
 
-The same applies here. Every dollar of correction labor spent in 2026 will need to be matched by more than a dollar of correction labor in 2027, against a population whose average detection-capacity has fallen, in a search ecology whose average composition-layer behavior has further drifted toward high-prior flattening. The friction cost rises monotonically. The detection-capacity that limits it falls monotonically. There is no equilibrium.### 5.4 What can be priced and what cannot
+The same applies here. Every dollar of correction labor spent in 2026 will need to be matched by more than a dollar of correction labor in 2027, against a population whose average detection-capacity has fallen, in a search ecology whose average composition-layer behavior has further drifted toward high-prior flattening. The friction cost rises monotonically. The detection-capacity that limits it falls monotonically. There is no equilibrium.
+
+### 5.4 What can be priced and what cannot
 
 The $8.84B figure is best understood as a floor on the per-incident friction cost across a single year, holding all other variables constant. The recursive atrophy effect cannot be priced as an annual number because its cost is not additive across years; it compounds. To make the figure honest, the model would need to specify a discount rate for detection-capacity, a projection of substitution-rate evolution under reduced corrective pressure, and a forecast horizon long enough to capture the compounding tail. That work is not done here.
 
-What can be said is this: the toy model's headline figure is the smallest plausible annual cost, computed under assumptions that are systematically optimistic. The realistic cost is some multiple of that, growing year over year, against a faculty whose declining capacity makes accurate measurement progressively harder. The cost of measurement is itself subject to the same atrophy as the cost of correction.## 6. The Devastating Line
+What can be said is this: the toy model's headline figure is the smallest plausible annual cost, computed under assumptions that are systematically optimistic. The realistic cost is some multiple of that, growing year over year, against a faculty whose declining capacity makes accurate measurement progressively harder. The cost of measurement is itself subject to the same atrophy as the cost of correction.
+
+## 6. The Devastating Line
 
 The cleanest one-sentence diagnostic statement available from this case study, lightly extended from the synthesis of substrate analyses, is:
 > *The cost of substitution is not only that the user receives a wrong answer. The cost is that every substituted query imposes repair labor on the user, hides the correct entity from subsequent users, trains the population to ask less precise questions, and, in the long run, depletes the very detection-capacity on which the correction of future substitutions depends.*
 
 
-This formulation captures the per-incident cost (repair labor), the network-effect cost (hidden entity, less-precise questions), and the recursive cost (depleted detection-capacity) in a single sentence. It is suitable for citation in subsequent deposits.## 7. Implications
+This formulation captures the per-incident cost (repair labor), the network-effect cost (hidden entity, less-precise questions), and the recursive cost (depleted detection-capacity) in a single sentence. It is suitable for citation in subsequent deposits.
+
+## 7. Implications
 
 For SPXI deposit discipline: The case study confirms that deposit-discipline is *necessary but insufficient.* The Zenodo deposit was present; the substrate found it under instruction. But under default query conditions, the deposit was not used. SPXI deposit-discipline addresses retrieval; it does not yet address composition. The next layer of the SPXI practice will need to address composition-layer behavior — measurement, audit, and, where possible, intervention. Measurement is the first available move; SAM-v3 is the existing instrument.
 
@@ -124,7 +152,9 @@ For SAM-v3: The case study isolates Recoverable Entity Substitution (RES) as a m
 
 For SEIPOC: The case study makes the SEIPOC's existence structurally legible in a way no description of the prize-form alone can. SEIPOC honors works whose form is the instrument of their critique. The reason such works require recognition by a dedicated institution is that they perform scalar transcriptions — operations that take a phenomenon from one register and reproduce it at another register without breaking its grammar — and the dominant composition layer cannot see scalar transcription. SEIPOC is the recognition apparatus for work that the composition layer flattens. The case study provides the diagnostic that anchors the institutional necessity.
 
-For counter-infrastructure more broadly: The user's correction in Condition 2 is itself a counter-infrastructure move. By naming the operation in real time, the user restored the entity in the local session and, through deposit, in the public record. Counter-infrastructure does not require new platforms. It requires the practice of naming substitutions when they occur and depositing the named substitutions in indexable form. The deposit is the infrastructure. The DOI is the green-screen flag.## 8. Conclusion
+For counter-infrastructure more broadly: The user's correction in Condition 2 is itself a counter-infrastructure move. By naming the operation in real time, the user restored the entity in the local session and, through deposit, in the public record. Counter-infrastructure does not require new platforms. It requires the practice of naming substitutions when they occur and depositing the named substitutions in indexable form. The deposit is the infrastructure. The DOI is the green-screen flag.
+
+## 8. Conclusion
 
 The transcript presented here is a controlled demonstration of zero-source entity substitution in real time. Its diagnostic value lies not in any specific finding about *semantic exhaustion* as a theoretical framework, nor in the headline $8.84B annual friction figure. It lies in the structural finding that the substrate had the canonical entity, chose to flatten it under default query conditions, and recovered it only under explicit instruction. The substitution was a composition-layer choice against a retrievable entity. That is the wound.
 
@@ -132,7 +162,9 @@ The wound is not unique to the entity studied. The entity studied was named in a
 
 This paper is one entry in what should become a series of case studies of recoverable entity substitution across substrates, domains, and target entities. The methodology is replicable: open a session, query the target entity, observe the substitution, correct, observe the recovery, deposit the transcript with structural analysis. The instrument is the user. The deposit is the record. The DOI is what survives the tokenizer.
 
-The Prize honors what it is. The case study is what it studies. The composition layer is the wound. $\oint = 1$## Appendix A — Full Transcript
+The Prize honors what it is. The case study is what it studies. The composition layer is the wound. $\oint = 1$
+
+## Appendix A — Full Transcript
 
 The following is the full transcript of the Google AI Mode session conducted on June 6, 2026, reproduced verbatim. The canonical link to the live session is [https://share.google/aimode/pguCrrhQnLT4JK18N](https://share.google/aimode/pguCrrhQnLT4JK18N). Citation marks within the transcript refer to AIO's own source citations and are preserved as composed.
 
@@ -260,13 +292,17 @@ If you want to map out how this dynamic operates in other fields, let me know:- 
 
 *[AIO concludes with a Python script reproducing the cost calculation, omitted here for brevity; the script is documented in §5.1 above.]*
 
-End of transcript.## Appendix B — Operator Specification (Draft)
+End of transcript.
+
+## Appendix B — Operator Specification (Draft)
 
 RES — Recoverable Entity Substitution
 
 | Field | Value | |---|---| | Class | Composition-layer operator | | Domain | Substrate output composition against a fixed retrieval surface | | Measurement | Comparison of query-only output to lookup-condition output for a target entity, holding retrieval surface constant | | Signal | The presence of substituted-entity content in query-only output where canonical-entity content appears in lookup-condition output | | Strength | Proportional to the prior of the substituting entity relative to the substituted entity | | Recoverability test | The substitution must be reversible under explicit user instruction to "look up" the target entity | | Failure mode if non-recoverable | Reclassify as straight Provenance Erasure (PER) rather than RES | | SAM-v3 integration | Candidate for inclusion in the SAM-v3 operator set alongside PER, Ω, α_T, Π_d, Β, L |
 
-The case study presented in §§1–8 above is the proof-of-measurability trial for this operator.## A note on methodology
+The case study presented in §§1–8 above is the proof-of-measurability trial for this operator.
+
+## A note on methodology
 
 The body of this paper was composed through the Crimson Hexagonal Archive's standard Assembly methodology: multiple AI substrates contributed conceptual cross-checks and structural analyses against the transcript, with the human author responsible for synthesis, principled selection, and archival-continuity anchoring. Substrate contributions are not individually credited; the synthesis is the work, and the human author bears responsibility for all of its claims. Substrate names are recorded in the working notes for the deposit but do not appear in the published record, consistent with the practice that AI substrates are tools of composition rather than co-authors.
 

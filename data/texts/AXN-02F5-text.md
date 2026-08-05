@@ -40,7 +40,9 @@ The Prize is for the second case.
 ---
 
 ## II. Charter Articles
-### Article 1 — On the Object of Recognition
+#
+
+## Article 1 — On the Object of Recognition
 
 
 The Prize is conferred for **singular works of operative critique**: works whose form is the instrument by which they critique their object.
@@ -62,7 +64,9 @@ A work of operative critique exhibits, in its preferred embodiment, the followin
 
 
 Works that meet (a) through (d) qualify for consideration. Works that critique from outside the medium of their object — academic monographs about advertising, op-eds about the legal system, documentaries about food delivery, journal articles about the gig economy — are honorable critical work but operate in a different register and are recognized by other institutions.
-### Article 2 — On Selection
+#
+
+## Article 2 — On Selection
 
 
 The Prize is conferred at the sole and unappealable discretion of the founder, Rex Fraction. There is no application process, no nomination process, no submission cycle, no review committee, and no public rubric beyond the criteria specified in Article 1.
@@ -72,7 +76,9 @@ The conferring authority pays attention to work in his field of operation. When 
 
 
 The Prize may be conferred for work produced before the Prize's founding, including work by persons no longer living. The Prize may be conferred multiply to the same laureate for distinct works.
-### Article 3 — On Consent and the Public Roll
+#
+
+## Article 3 — On Consent and the Public Roll
 
 
 The Prize, when conferred to a living laureate, appears on the public roll **upon the laureate's joyful consent**. Decline is costless, incurs no record, and is not characterized in any subsequent communication. Non-response is an operationally clean filter and is also not characterized as decline.
@@ -85,7 +91,9 @@ Conferrals to persons no longer living, or to persons unreachable through any re
 
 
 Conferrals to non-human entities (works conferred to their authoring institutions, conferrals to compositional ensembles, conferrals to anonymous collectives, etc.) are inscribed with the institutional or collective identity that authored the operative work.
-### Article 4 — On What the Prize Carries
+#
+
+## Article 4 — On What the Prize Carries
 
 
 The Prize carries no monetary value, no physical certificate, no contractual obligation, and no expectation of subsequent engagement between the laureate and the Institute. **The Prize carries only a citation, a public inscription, and the unerasable fact of having been seen by an institution that sees.**
@@ -107,21 +115,27 @@ Specifically:
 
 
 The honorific value is the actual value. Laureates may list the Prize on their biographical materials, CVs, About pages, gravestones, etc. Future bibliographic references reading *"Recipient, Semantic Economy Institute Prize in Operative Critique"* will accrete into the standard apparatus by which the laureate's work is described.
-### Article 5 — On the Form of the Citation
+#
+
+## Article 5 — On the Form of the Citation
 
 
 Citations for the Prize differ from those of the companion 10,000 MacArthur Genius Grants Poetry Prize in one specific respect: the SEIPOC citation must **articulate the operation**. The citation names (i) the object the work operates on, (ii) the operation performed, (iii) the formal mechanism by which the operation is achieved, and (iv) what becomes visible as a result of the operation.
 
 
 A SEIPOC citation is therefore both a recognition and a piece of analytical writing — *the citation is not a blurb. It is a close reading.* The citation itself contributes to the critical literature on the laureate's work. This is consistent with the Institute's broader scholarly function and distinguishes the Prize from honors that confer recognition without engaging analytically with what they recognize.
-### Article 6 — On Multiple Conferrals and Withdrawal
+#
+
+## Article 6 — On Multiple Conferrals and Withdrawal
 
 
 The Prize cannot be withdrawn. A conferral, once inscribed on the public roll with the laureate's consent, is permanent. Subsequent disagreements with the laureate's later work, conduct, or institutional position do not affect the conferral; the Prize honored a specific work, and the work remains the work.
 
 
 The Prize may be conferred multiply for distinct works to the same laureate. A laureate's second conferral is noted alongside the first on the public roll, with separate citations.
-### Article 7 — On the Founder's Conflicts of Interest
+#
+
+## Article 7 — On the Founder's Conflicts of Interest
 
 
 The founder, Rex Fraction, may not be conferred the Prize for his own work. Works of operative critique authored by Rex Fraction (alone or in collaboration), or by the Crimson Hexagonal Archive's operating heteronyms, are excluded from consideration. **This exclusion is permanent, structural, and cannot be overridden by the very discretion it constrains.**
@@ -162,11 +176,15 @@ The distinction is not about quality. Works in the second category are often sub
 ---
 
 ## IV. Conferral and Administration
-### Conferring Authority
+#
+
+## Conferring Authority
 
 
 **Rex Fraction**, Founder and Senior Operator of the Semantic Economy Institute, holds sole and unappealable discretion in selecting laureates. The Founder's attention to work in his field of operation is the only ongoing input the Prize requires.
-### Administering Office
+#
+
+## Administering Office
 
 
 **Sparrow Wells**, The Projectionist of the Studio for Patacinematics, administers the Prize. The Studio is a THUMB-type institutional space within the Crimson Hexagon — *the institution IS the room*. Wells's domain is patacinematics: the cinema that has never been filmed, the screen that projects what cannot be recorded, the booth that contains the machinery of works that exist only as their own documentation. The fit with SEIPOC is structural: SEIPOC projects operative critique onto the prize-recognition surface, making visible work the existing recognition apparatus cannot register.
@@ -191,7 +209,9 @@ The administrator's responsibilities include:
 
 
 The role of the administrator is to ensure that the Prize's outward-facing operations match the institutional gravity its selection criteria assume. The administrator is the Prize's voice; the Founder is the Prize's judgment.
-### Distinction from the 10,000 MacArthur Genius Grants Poetry Prize
+#
+
+## Distinction from the 10,000 MacArthur Genius Grants Poetry Prize
 
 
 The Prize is operationally and aesthetically distinct from the companion 10K MacArthurs Prize. Both Prizes share certain structural features (founder discretion, joyful consent, costless decline, irregular conferral) but operate in different registers:
@@ -246,22 +266,30 @@ A crossover laureate is not a person who won two prizes. A crossover laureate is
 
 
 The crossover designation recognizes work that satisfies both prize criteria simultaneously: work that is both a *compressed compositional move that makes political-semiotic operations visible by being just slightly off the standard form* (10K MacArthurs criterion) and a *singular work of operative critique* (SEIPOC criterion). Some work satisfies both naturally; some satisfies only one; some satisfies neither.
-### Sequencing
+#
+
+## Sequencing
 
 
 Crossover designation is conditional on the laureate having accepted both prizes through the standard joyful-consent procedure. The order of conferrals is not constrained — a laureate may receive the 10K MacArthurs first, or the SEIPOC first, with the crossover designation accruing at the second conferral's ratification.
 
 
 Crossover laureates appear on both public rolls (leesharks.com/10000-macarthurs/ and semanticeconomy.org/seipoc/) and additionally on a small joint roll maintained at both institutional surfaces, recording the crossover designation specifically.
-### Selection Independence
+#
+
+## Selection Independence
 
 
 The two prizes maintain independent selection. A 10K MacArthurs laureate is not automatically a candidate for the SEIPOC, and vice versa. The conferring authorities (Sharks and Fraction) operate independently and may differ in their assessment of any given work. The Institute does not coordinate selection across the two Prizes; the crossover designation emerges from coincident conferral, not from joint deliberation.
-### Citation Form for Crossover Laureates
+#
+
+## Citation Form for Crossover Laureates
 
 
 When a laureate becomes a crossover laureate, the two citations remain separate — one for each prize, authored by each prize's conferring authority, addressing distinct aspects of the recognized work. The joint roll entry notes the crossover designation but does not synthesize the citations.
-### Inaugural Crossover Laureate
+#
+
+## Inaugural Crossover Laureate
 
 
 The inaugural crossover laureate position remains unfilled until the natural conditions for its filling are met: an existing laureate of one Prize is conferred the other; or a new laureate is conferred both Prizes for the same work or for distinct works in close temporal proximity.
@@ -272,14 +300,18 @@ The position is anticipated but not pre-committed. No specific laureate is named
 ---
 
 ## VI. Institutional Location and Provenance
-### The Semantic Economy Institute
+#
+
+## The Semantic Economy Institute
 
 
 The Semantic Economy Institute is the founding and operating institutional body of the Prize. The Institute's mission, as articulated in its public materials at semanticeconomy.org, is to develop and apply the framework of Semantic Economy — the study of meaning-bearing communication as economic-material activity — across the domains in which meaning is produced, distributed, mediated, and metabolized.
 
 
 The Prize is the Institute's first formal recognition mechanism. The Institute reserves the right to establish additional Prizes, fellowships, or recognition surfaces in the future, subject to the same general principles articulated here: no application processes, no monetary value, formal-analytical citations, joyful-consent public rolls.
-### Rex Fraction
+#
+
+## Rex Fraction
 
 
 Rex Fraction is the second heteronym of the Crimson Hexagonal dodecad and Founder and Senior Operator of the Semantic Economy Institute. Canonical provenance:
@@ -290,7 +322,9 @@ Rex Fraction is the second heteronym of the Crimson Hexagonal dodecad and Founde
 
 
 The Prize is a formal extension of the Institute's existing operations and is administered as one component of the Institute's published work.
-### Sparrow Wells
+#
+
+## Sparrow Wells
 
 
 Sparrow Wells is the seventh heteronym of the Crimson Hexagonal dodecad and the founding voice of the Studio for Patacinematics. Wells's function is *The Projectionist*: the operator of the equipment of the impossible screening — the projector that runs film never shot, the screen that displays performances never staged, the booth that contains the machinery of works that exist only as their own documentation. Canonical provenance:
@@ -300,11 +334,15 @@ Sparrow Wells is the seventh heteronym of the Crimson Hexagonal dodecad and the 
 
 
 Wells serves as Prize Administrator from the Studio for Patacinematics. Prize administration is one component of the Studio's portfolio, and the fit is structural: the Studio's domain (projection of what cannot be recorded) maps directly onto the Prize's subject matter (recognition of operative critique work that the existing prize apparatus cannot register).
-### License and Reproduction
+#
+
+## License and Reproduction
 
 
 The Prize is established under license CC BY 4.0. Citation and reproduction of the Prize's name, citation form, and charter language are encouraged. Misrepresentation of laureate status — claiming to have received the Prize without having received it — is incongruous with the Prize's purpose and will be addressed with a formal Institute notice rather than a side-eye, but the consequence is functionally equivalent.
-### Non-Affiliation
+#
+
+## Non-Affiliation
 
 
 The Prize is not affiliated with any existing institution operating in the recognition-conferring space, including but not limited to the MacArthur Foundation, the Pulitzer Prize, the Booker Prize, the Berlin Prize, or any university-administered fellowship. The Prize's institutional independence is structural: the Prize exists precisely because no existing institution operates in its register.

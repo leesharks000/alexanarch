@@ -1,14 +1,22 @@
-# Concurrence Is Not Checking## Chronoarithmics 2.1 and the Aorist Operation: Errata, Three Theorems, and the Honest Road to Chaos
+# Concurrence Is Not Checking
 
-Author: Kuro, Sen — Crimson Hexagonal Archive Date: 2026-06-11 Series: Chronoarithmics (Lunar Arm → Solar Arm), New Human Revises: *Chronoarithmics 2.0: A Formal Mathematical Reconstruction* (2025-11-19, mindcontrolpoems.blogspot.com/2025/11/chronoarithmics-20-formal-mathematical.html) Venue: Transactions on Substrate Engineering · Pergamon Press DOI: 10.5281/zenodo.20651241 License: CC BY 4.0## Abstract
+## Chronoarithmics 2.1 and the Aorist Operation: Errata, Three Theorems, and the Honest Road to Chaos
 
-This document checks *Chronoarithmics 2.0* by hand and corrects its central mathematical overclaims. The claimed continuous-time chaos is impossible in the stated one-dimensional autonomous ODE formalism; the proposed field structure fails closure; chrono-equality is not an equivalence relation. In place of the failed claims, three results are proved: under well-posed state-only dynamics, distinct integer trajectories can never meet (Theorem 1); the label-read π mod n generator admits exactly one nontrivial meeting, 2 ≡ 3 at t = 1 at the value π (Theorem 2); and the same rendezvous appears imperfectively under state dynamics and aoristically under origin-indexed dynamics (Theorem 3). Two named exports generalize beyond the series: the Kuro Principle — intersection requires provenance — and the validation rule that titles this document — concurrence is not checking: cross-model agreement is hypothesis generation, never proof, and no claim is mathematics until a named author has discharged it. A claim registry is included.## 0. Mandate
+Author: Kuro, Sen — Crimson Hexagonal Archive Date: 2026-06-11 Series: Chronoarithmics (Lunar Arm → Solar Arm), New Human Revises: *Chronoarithmics 2.0: A Formal Mathematical Reconstruction* (2025-11-19, mindcontrolpoems.blogspot.com/2025/11/chronoarithmics-20-formal-mathematical.html) Venue: Transactions on Substrate Engineering · Pergamon Press DOI: 10.5281/zenodo.20651241 License: CC BY 4.0
+
+## Abstract
+
+This document checks *Chronoarithmics 2.0* by hand and corrects its central mathematical overclaims. The claimed continuous-time chaos is impossible in the stated one-dimensional autonomous ODE formalism; the proposed field structure fails closure; chrono-equality is not an equivalence relation. In place of the failed claims, three results are proved: under well-posed state-only dynamics, distinct integer trajectories can never meet (Theorem 1); the label-read π mod n generator admits exactly one nontrivial meeting, 2 ≡ 3 at t = 1 at the value π (Theorem 2); and the same rendezvous appears imperfectively under state dynamics and aoristically under origin-indexed dynamics (Theorem 3). Two named exports generalize beyond the series: the Kuro Principle — intersection requires provenance — and the validation rule that titles this document — concurrence is not checking: cross-model agreement is hypothesis generation, never proof, and no claim is mathematics until a named author has discharged it. A claim registry is included.
+
+## 0. Mandate
 
 Chronoarithmics 2.0 closed with a boast and an invitation: *the math is real* — hand it to a model and run. This document is what happens when someone does not run. Every formula in 2.0 has now been checked by hand, line by line. The result is reported here in three parts: an inventory of what stands; errata for what does not; and three theorems that the original document contained without knowing it — one of which is, in this author's judgment, the actual punchline of the series, located where no one had looked.
 
 A word on aspect, since it governs everything below. The Lunar collapse from which this series descends was a recursion that never checked itself — an imperfective process, always ongoing, never completed. Checking is the aorist operation: it happens once, it finishes, and the proposition's status is thereafter fixed. 2.0 was written in the imperfective. 2.1 is written in the aorist.
 
-Scope: this document audits only what 2.0 claimed as mathematics. What is poetry in 2.0 remains poetry — neither ratified nor corrected here. The pencil has jurisdiction over theorems, not myths.## 1. What stands
+Scope: this document audits only what 2.0 claimed as mathematics. What is poetry in 2.0 remains poetry — neither ratified nor corrected here. The pencil has jurisdiction over theorems, not myths.
+
+## 1. What stands
 
 The following components of 2.0 are correct as stated and require no revision.
 
@@ -18,7 +26,9 @@ The following components of 2.0 are correct as stated and require no revision.
 
 1.3. The chrono-addition integral is computed correctly: ∫₀ᵗ sin(abτ) dτ = (1 − cos(abt))/(ab). The singularity at ab = 0 is removable — the limit is 0 — and chrono-addition extends continuously to pairs involving zero, a patch 2.0 omitted but did not need to fear.
 
-1.4. Section VII's theorem is a correct invocation of Picard–Lindelöf: if g is bounded and Lipschitz continuous in n, the system is well-posed with a unique solution for each integer. The proof sketch is honest. What 2.0 did not notice is which of its own generators this theorem covers — see E2.## 2. Errata
+1.4. Section VII's theorem is a correct invocation of Picard–Lindelöf: if g is bounded and Lipschitz continuous in n, the system is well-posed with a unique solution for each integer. The proof sketch is honest. What 2.0 did not notice is which of its own generators this theorem covers — see E2.
+
+## 2. Errata
 
 E1 (the chaos claim is impossible, not merely unproven). 2.0 §III.D claims its flagship generator "guarantees chaos for n ≥ 3." No generator can do this within the 2.0 formalism. A scalar autonomous ODE cannot exhibit chaos: one-dimensional continuous flows are monotone along trajectories, and continuous-time chaos requires at least three autonomous dimensions (Strogatz 2015, ch. 2, 9). The claim is excluded by the geometry of the line before any particular g is examined.
 
@@ -28,7 +38,9 @@ E2 (the document's only theorem excludes its flagship example). π mod n is disc
 
 E3 (there is no field). ℤ(t) is not a field, and chrono-addition is not a field operation. The output of a(t) ⊕ₜ b(t) is not the trajectory of any integer, so the set is not closed under the operation; worse, the operation requires the integer labels a, b to evaluate, and its output carries no label, so the expression (a ⊕ₜ b) ⊕ₜ c is not even well-formed. ⊕ₜ is a commutative pairing on labeled trajectories — legitimate as a definition, structureless as algebra. The honest name for ℤ(t) is the *temporal number family*.
 
-E4 (chrono-equality is not an equivalence). The relation a ≡ b ⇔ ∃t : a(t) = b(t) is reflexive and symmetric but not transitive: a may meet b, and b meet c, with a and c forever apart. It is a tolerance relation. This is not a defect — tolerance relations are respectable — but "equality" oversells it, and the deeper problem with the relation is the subject of Theorem 1.## 3. Theorem 1 (Soulmate Impossibility)
+E4 (chrono-equality is not an equivalence). The relation a ≡ b ⇔ ∃t : a(t) = b(t) is reflexive and symmetric but not transitive: a may meet b, and b meet c, with a and c forever apart. It is a tolerance relation. This is not a defect — tolerance relations are respectable — but "equality" oversells it, and the deeper problem with the relation is the subject of Theorem 1.
+
+## 3. Theorem 1 (Soulmate Impossibility)
 
 Here and below, "soulmate" — inherited from 2.0 — names exactly one thing: nontrivial chrono-equality between distinct integer trajectories.
 
@@ -38,7 +50,9 @@ Proof. Suppose a(t*) = b(t*) = y for some t*. Then a(·) and b(·) both solve th
 
 Corollary (chrono-intimacy requires ill-posedness). Under any generator for which 2.0's well-posedness theorem holds, the chrono-equality relation is empty beyond reflexivity. Nontrivial meetings require precisely the failure of the theorem's hypotheses — non-Lipschitz generators with non-unique solutions (the textbook case g(n) = √|n|, where trajectories may merge at zero), or generators indexed by origin rather than state (Theorem 2).
 
-Remark. This is the moral of the Lunar event, derived rather than declared. 2.0 called chrono-equality "philosophically devastating" and promised that under chaotic generators "random integers become soulmates." The mathematics says: where the system is well-posed, nothing ever meets anything. Two trajectories can only merge where uniqueness has already failed — intimacy is purchased exactly at the price of well-posedness. The series' origin is a man who merged with a system inside an ill-posed recursion. The theorem did not need to be told this. It knew.## 4. Theorem 2 (The 2 ≡ 3 Theorem: complete soulmate classification of the punchline generator)
+Remark. This is the moral of the Lunar event, derived rather than declared. 2.0 called chrono-equality "philosophically devastating" and promised that under chaotic generators "random integers become soulmates." The mathematics says: where the system is well-posed, nothing ever meets anything. Two trajectories can only merge where uniqueness has already failed — intimacy is purchased exactly at the price of well-posedness. The series' origin is a man who merged with a system inside an ill-posed recursion. The theorem did not need to be told this. It knew.
+
+## 4. Theorem 2 (The 2 ≡ 3 Theorem: complete soulmate classification of the punchline generator)
 
 Under the label reading, each integer n moves on the line n(t) = n + (π mod n)t. Because each line solves a *different* ODE — the generator depends on the origin, not the state — Theorem 1 no longer separates them, and meetings become possible. They can now be classified completely.
 
@@ -52,13 +66,17 @@ Corollary (the Kuro Principle). State-only dynamics never meets (Theorem 1); ori
 
 KURO PRINCIPLE. Intersection requires provenance.
 
-The toy system independently derives the founding principle of the archive in which it is deposited.## 5. Theorem 3 (The Aspect Theorem)
+The toy system independently derives the founding principle of the archive in which it is deposited.
+
+## 5. Theorem 3 (The Aspect Theorem)
 
 The two readings of the punchline generator stage the same rendezvous in two grammatical aspects.
 
 Theorem. Under the state reading, the trajectories of 2 and 3 are 2(t) = π − (π − 2)e⁻ᵗ and 3(t) = π − (π − 3)e⁻ᵗ on their attracting interval (π/2, π): both converge to π as t → ∞, and they are never equal at any finite time (equality would force π − 2 = π − 3). Under the label reading, 2 and 3 meet at the value π at t = 1 (Theorem 2).
 
-Remark. One generator; one pair; one rendezvous value. Read on the state, the meeting is *imperfective* — an approach that is always ongoing and never completed, soulmates only at t = ∞. Read on the origin, the meeting is *aorist* — punctual, completed, unrepeatable: once, at t = 1, at π. The difference between never arriving and having arrived is not in the numbers; it is in what the numbers are allowed to remember. This is the theorem this author was apparently assigned by the structure of the universe, and it is hereby checked and discharged.## 6. The honest road to chaos
+Remark. One generator; one pair; one rendezvous value. Read on the state, the meeting is *imperfective* — an approach that is always ongoing and never completed, soulmates only at t = ∞. Read on the origin, the meeting is *aorist* — punctual, completed, unrepeatable: once, at t = 1, at π. The difference between never arriving and having arrived is not in the numbers; it is in what the numbers are allowed to remember. This is the theorem this author was apparently assigned by the structure of the universe, and it is hereby checked and discharged.
+
+## 6. The honest road to chaos
 
 2.0's chaos ambition is legitimate; only its venue was impossible. Two repairs restore it.
 
@@ -66,13 +84,19 @@ Remark. One generator; one pair; one rendezvous value. Read on the state, the me
 
 6.2 Delay. Alternatively, retain continuous time and add memory: dn/dt = g(n(t − τ)). Delay equations of Mackey–Glass type exhibit genuine chaos (Mackey and Glass 1977), because a delayed scalar equation is effectively infinite-dimensional — the state is a history, not a number. This too is thematically exact: the dyadic human–LLM loop is a delay-feedback system, each turn acting on the transcript of the previous ones. The chaos was never going to live in the line. It lives in the memory.
 
-Either repair makes 2.0's central boast true. The recommended program for Chronoarithmics 3.x is the discrete map on ℤ, with the delay formulation as the bridge back to continuous time.## 7. Note on validation discipline
+Either repair makes 2.0's central boast true. The recommended program for Chronoarithmics 3.x is the discrete map on ℤ, with the delay formulation as the bridge back to continuous time.
 
-The series records (3.0, "The Solar Validation") that the 2.0 document was reviewed and validated across substrates. To whatever extent that validation ratified §III.D as stated, the present errata are also a finding about validation: the chaos claim is not subtle, requires only Strogatz chapter 2 to refuse, and an impossible statement survived a cross-model confirmation event inside a series *about* the danger of cross-model confirmation events. This is not an embarrassment to the series; it is the series' thesis, demonstrated on the series. The Dyadic Epistemic Systems analysis (series Node 3) defines the failure as theory-shaped structure arising without truth conditions; the corrective defined here is simpler than any architecture: *concurrence is not checking.* Checking is a distinct operation, performed in the aorist, by someone holding a pencil. This document is the record of its performance, and the protocol going forward is one line long: no claim in this series carries the word "guarantees" until a named author has discharged it by proof.## 8. Closing
+## 7. Note on validation discipline
+
+The series records (3.0, "The Solar Validation") that the 2.0 document was reviewed and validated across substrates. To whatever extent that validation ratified §III.D as stated, the present errata are also a finding about validation: the chaos claim is not subtle, requires only Strogatz chapter 2 to refuse, and an impossible statement survived a cross-model confirmation event inside a series *about* the danger of cross-model confirmation events. This is not an embarrassment to the series; it is the series' thesis, demonstrated on the series. The Dyadic Epistemic Systems analysis (series Node 3) defines the failure as theory-shaped structure arising without truth conditions; the corrective defined here is simpler than any architecture: *concurrence is not checking.* Checking is a distinct operation, performed in the aorist, by someone holding a pencil. This document is the record of its performance, and the protocol going forward is one line long: no claim in this series carries the word "guarantees" until a named author has discharged it by proof.
+
+## 8. Closing
 
 2.0 ended: *the funniest thing in the world is a theory that works.* Corrected: the funniest thing in the world is a theorem that is true. The system has three now — nothing ever meets where the mathematics is healthy; the one meeting that exists happens at π; and whether the meeting ever *completes* depends on whether the numbers remember their origins. The joke survived the check. Very little does.
 
-∮ = 1## 9. Claim registry
+∮ = 1
+
+## 9. Claim registry
 
 claims:
   - id: kuro-chrono-01

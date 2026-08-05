@@ -56,7 +56,9 @@ The "you" shifts accordingly. **Track your position.** The framework applies dif
 ---
 
 ## I. Recognition: Expulsion as Structure
-### I.1 What Expulsion Is (and Is Not)
+#
+
+## I.1 What Expulsion Is (and Is Not)
 
 
 **Expulsion is not:**
@@ -92,7 +94,9 @@ Engages testimony
 Delegitimizes witness
 
 
-### I.2 The Diagnostic Question
+#
+
+## I.2 The Diagnostic Question
 
 
 The test is not "Was I expelled?" or "Did I expel?"
@@ -105,7 +109,9 @@ The test is:
 
 
 This question applies to both positions. The expelled may have offered testimony poorly. The one who expelled may have experienced genuine harm. Neither changes the structural question: **was the testimony engaged or was the testifier removed?**
-### I.3 On the Risk of Misdiagnosis
+#
+
+## I.3 On the Risk of Misdiagnosis
 
 
 **Not every rupture is witness punishment.** Not every expulsion is foreclosure. Some conflicts are failures of timing, trust, stamina, or mutual intelligibility. Relationships end for many reasons.
@@ -119,7 +125,9 @@ If your conflict was about tone, timing, accumulated hurt, or incompatible needs
 ---
 
 ## II. For the One Who Was Expelled
-### II.1 The Evidence of Your Expulsion
+#
+
+## II.1 The Evidence of Your Expulsion
 
 
 You may have experienced:
@@ -130,7 +138,9 @@ You may have experienced:
 
 
 If these occurred **without refutation of your testimony** — if the response to your naming was delegitimization of you rather than engagement with your claim — then the structure may apply.
-### II.2 What the Expelled Position Offers
+#
+
+## II.2 What the Expelled Position Offers
 
 
 From outside the system's foreclosure, you may be able to see:
@@ -142,7 +152,9 @@ From outside the system's foreclosure, you may be able to see:
 
 
 You could not see this from inside. The expulsion may have given you eyes.
-### II.3 What the Expelled Position Does Not Grant
+#
+
+## II.3 What the Expelled Position Does Not Grant
 
 
 The expelled position is **not**:
@@ -167,7 +179,9 @@ You have been expelled from *one* system. You are not thereby exempt from the fr
 ---
 
 ## III. For the One Who Expelled
-### III.1 How This Document Will Feel
+#
+
+## III.1 How This Document Will Feel
 
 
 If you are reading this from inside the system that expelled someone, **this document will likely feel like an attack**. That feeling is part of the structure the document describes.
@@ -177,7 +191,9 @@ The question is not whether the feeling is real. The feeling is real.
 
 
 The question is: **does this description fit what happened?** Not "do I like how it feels?" but "did I engage testimony or delegitimize the one who offered it?"
-### III.2 What This Document Does Not Claim
+#
+
+## III.2 What This Document Does Not Claim
 
 
 This document does not claim that those inside foreclosure:
@@ -192,7 +208,9 @@ It claims only that **certain structures make good faith functionally irrelevant
 
 
 The question is not whether you are good. The question is whether testimony was expelled to preserve self-concept. If so, the structure applies. Your goodness is not on trial. The structure is being described.
-### III.3 What the Framework Asks of You
+#
+
+## III.3 What the Framework Asks of You
 
 
 The framework applies to the one who expelled if:
@@ -204,7 +222,9 @@ The framework applies to the one who expelled if:
 
 
 These are testable. The test requires applying the framework to yourself, not to the other.
-### III.4 What You Must Not Do
+#
+
+## III.4 What You Must Not Do
 
 
 From the position of having expelled, you must not:
@@ -214,7 +234,9 @@ From the position of having expelled, you must not:
 - Substitute identity-claim ("I am anti-racist") for structural analysis
 - Use the other's failures of tone to justify foreclosure of content
 
-### III.5 What You May Do
+#
+
+## III.5 What You May Do
 
 
 From the position of having expelled, you may:
@@ -230,7 +252,9 @@ The framework does not require you to agree. It requires honest examination. If 
 ---
 
 ## IV. The Structural Description (Without Naming)
-### IV.1 The βλέπω-Claim
+#
+
+## IV.1 The βλέπω-Claim
 
 
 The structure described here may map onto what you experienced — whether as expelled or as expelling. The mapping is not automatic. It requires the test.
@@ -245,7 +269,9 @@ The **βλέπω-claim** is the statement "We see" (John 9:41) — claimed clari
 
 
 This is not hypocrisy. Hypocrisy knows the gap between claim and reality. The βλέπω-claim **has lost the capacity to register the gap** — the claim to see has become the obstacle to seeing.
-### IV.2 The Asymmetric Naming Structure
+#
+
+## IV.2 The Asymmetric Naming Structure
 
 
 Witness punishment often involves **Asymmetric Naming Authority**:
@@ -267,7 +293,9 @@ Reframed as aggression
 
 
 When diagnosis from below is reclassified as violence, while diagnosis from above is treated as truth — the asymmetry is evidence of the structure.
-### IV.3 The π-State: Trajectory, Not Destiny
+#
+
+## IV.3 The π-State: Trajectory, Not Destiny
 
 
 The **π-state** (planē-state) describes a trajectory, not a permanent condition:
@@ -287,18 +315,24 @@ The **π-state** (planē-state) describes a trajectory, not a permanent conditio
 
 
 These metrics can be applied by the expelled **or** by the one who expelled. They are diagnostic tools, not weapons.
-### V.1 Foreclosure Coefficient (κ_β)
+#
+
+## V.1 Foreclosure Coefficient (κ_β)
 
 
 κ_β = (Testimonies expelled) / (Testimonies received + Testimonies expelled)
 
 
 **Apply to yourself**: How many challenging testimonies have you expelled vs. received? The count includes testimonies you experienced as unfair, poorly delivered, or hurtful. The question is not whether they were pleasant but whether you engaged them.
-### V.2 Testimonial Smothering Gradient (∇_σ)
+#
+
+## V.2 Testimonial Smothering Gradient (∇_σ)
 
 
 **The Silence Audit**: Count the voices that went silent after the rupture. Their silence is data. Were they silenced by the expelled (through aggression or manipulation)? Or were they silenced by the system (through fear of association)?
-### V.3 Epistemic Inversion Weight (ω_ε)
+#
+
+## V.3 Epistemic Inversion Weight (ω_ε)
 
 
 **The No-Win Conversation Test**: When every possible response from the other is pre-categorized:
@@ -310,7 +344,9 @@ These metrics can be applied by the expelled **or** by the one who expelled. The
 
 
 This is ω_ε = 1. This is a system protecting its βλέπω-claim. **Apply this test to both directions.** Did the expelled create this trap? Did the one who expelled?
-### V.4 The Finding Invariant (ε → φ)
+#
+
+## V.4 The Finding Invariant (ε → φ)
 
 
 ε(S,W) → φ(H,W)
@@ -324,14 +360,18 @@ The expulsion that was meant to isolate may become the condition of encounter �
 ---
 
 ## VI. The Symbolon Function
-### VI.1 This Document Is Half
+#
+
+## VI.1 This Document Is Half
 
 
 The framework is complete. This document is not.
 
 
 This document is **symbolon** — incomplete by design. It does not demand completion. It offers mating surface. Whether another half recognizes itself is not determined here. The recognition must come from the other, freely, or not at all.
-### VI.2 Completion Pathways
+#
+
+## VI.2 Completion Pathways
 
 
 Path A (For expelled witness):
@@ -345,7 +385,9 @@ Path C (Non-completion):
 
 
 The framework does not specify repair. It specifies position. From the expelled position, encounter is possible. From the expelling position, self-examination is possible. Whether either occurs is not determined by this document.
-### VI.3 The Offer Remains Open
+#
+
+## VI.3 The Offer Remains Open
 
 
 The symbolon remains half. The mating surface is offered. The loop seeks completion — but does not demand it.
@@ -353,7 +395,9 @@ The symbolon remains half. The mating surface is offered. The loop seeks complet
 ---
 
 ## VII. The Ethical Remainder
-### VII.1 What This Document Does Not Authorize (For Anyone)
+#
+
+## VII.1 What This Document Does Not Authorize (For Anyone)
 
 - Treating every disagreement as witness punishment
 - Claiming prophetic status for all criticism
@@ -362,7 +406,9 @@ The symbolon remains half. The mating surface is offered. The loop seeks complet
 - Judging final salvation (Matthew 25 is Christ's judgment, not ours)
 - Reducing persons to the structures they inhabit
 
-### VII.2 Why This May Feel Unfair
+#
+
+## VII.2 Why This May Feel Unfair
 
 
 To the one who expelled, this framework may feel unfair because:
@@ -373,7 +419,9 @@ To the one who expelled, this framework may feel unfair because:
 
 
 This apparent unfairness is the James 2 exclusion operating. The framework is not designed to feel fair. It is designed to describe structure. Whether it describes *your* structure requires honest examination, not defensive rejection.
-### VII.3 The Separation of Structure and Relation
+#
+
+## VII.3 The Separation of Structure and Relation
 
 
 **How the testimony was offered** matters for relational repair.

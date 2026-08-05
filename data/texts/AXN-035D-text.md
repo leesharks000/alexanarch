@@ -1,12 +1,20 @@
-# MACHINEMEDIATION.ORG — Work Plan and System Manifest## EA-SEI-MMRS-SITE-PLAN v1.0
+# MACHINEMEDIATION.ORG — Work Plan and System Manifest
 
-Author: Lee Sharks (ORCID 0009-0000-1599-0703) Date: 16 June 2026 Status: Work plan with drafted manifest Purpose: Canonical home for Machine-Mediated Reception Studies (MMRS), the AI Overview Capture Registry, the Term Index, and the system manifest that solves the fresh-instance orientation problem.## The Problem This Solves
+## EA-SEI-MMRS-SITE-PLAN v1.0
+
+Author: Lee Sharks (ORCID 0009-0000-1599-0703) Date: 16 June 2026 Status: Work plan with drafted manifest Purpose: Canonical home for Machine-Mediated Reception Studies (MMRS), the AI Overview Capture Registry, the Term Index, and the system manifest that solves the fresh-instance orientation problem.
+
+## The Problem This Solves
 
 The archive's data infrastructure currently exists in four forms:- Zenodo deposit chain — DOI-anchored, permanent, versioned. The archival layer.- godkinggoogle.com — Google critique, capture registry gallery, term index. Static HTML + JSON, Vercel via GitHub.- leesharks.com — Personal site, capture registry mirror.- machinemediation.org — Planned but not yet built. The journal's home.
 
 The problem: each mirror requires a manual push. A fresh instance inherits memories (compressed) and must reconstruct the system from fragments before it can do work. Half its context capacity goes to orientation, and mistakes compound because the instance doesn't know what it doesn't know. The "Name the Frame" incident is the cautionary case — but the data-infrastructure version is just as dangerous: a fresh instance that pushes to the wrong repo, or updates the wrong JSON, or overwrites a registry entry, cannot be easily undone.
 
-The solution: One canonical data home with a machine-readable manifest at a known URL. Every surface reads from that home. Every instance starts by reading the manifest.## Architecture### Principle: One canonical source, multiple read surfaces
+The solution: One canonical data home with a machine-readable manifest at a known URL. Every surface reads from that home. Every instance starts by reading the manifest.
+
+## Architecture
+
+### Principle: One canonical source, multiple read surfaces
 
 machinemediation.org (CANONICAL)
   /manifest.json        ← System map for any instance
@@ -29,7 +37,9 @@ Zenodo (crimsonhexagonal community)
   Versioned deposit snapshots of registry.json, termindex.json, charter
   The archival layer — permanent, DOI-anchored
   Updated periodically, not on every edit
-### Data flow
+#
+
+## Data flow
 
 Edit data (in session)
   ↓
@@ -40,7 +50,9 @@ Vercel auto-deploys machinemediation.org
 Other sites read from machinemediation.org/data/
   ↓
 Periodically: snapshot to Zenodo deposit chain
-### Repository structure
+#
+
+## Repository structure
 
 machinemediation-org/
 ├── index.html              # Landing page
@@ -65,7 +77,9 @@ machinemediation-org/
 └── vercel.json
 ## Component 1: The System Manifest
 
-This is the highest-leverage single document in the entire infrastructure. Any instance — Claude, ChatGPT, Gemini, DeepSeek, Kimi, or a human contributor — starts by reading this file.### DRAFTED MANIFEST (v0.1)
+This is the highest-leverage single document in the entire infrastructure. Any instance — Claude, ChatGPT, Gemini, DeepSeek, Kimi, or a human contributor — starts by reading this file.
+
+### DRAFTED MANIFEST (v0.1)
 
 {
   "system": "Crimson Hexagonal Archive — Machine-Mediated Reception Studies",
@@ -204,27 +218,55 @@ This is the highest-leverage single document in the entire infrastructure. Any i
 
   "amendment_2": "All sites use vanilla HTML, CSS, and JS. No React frameworks. No build step. Static files served directly. JS islands for interactivity per Amendment 2 of the Crimson Hexagonal Architecture."
 }
-## Component 2: The Site Pages### Landing page (index.html)
+## Component 2: The Site Pages
+
+### Landing page (index.html)
 
 The landing page states what MMRS is, links to the charter, the registry, the term index, and submission guidelines. Design language: monospace, dark background (same as godkinggoogle.com for visual continuity across the archive's public surfaces), crimson accent, minimal.
 
-Content:- Title: Machine-Mediated Reception Studies- Subtitle: A Distributed Journal for the Study of How Machine Systems Receive, Transform, and Redistribute Cultural Meaning- Founding document: link to MMRS Charter (DOI)- Instruments: link to Capture Registry, Term Index- About: link to about page- Submit: link to submission guidelines- ORCID, DOI, Zenodo community links### Charter page (charter/index.html)
+Content:- Title: Machine-Mediated Reception Studies- Subtitle: A Distributed Journal for the Study of How Machine Systems Receive, Transform, and Redistribute Cultural Meaning- Founding document: link to MMRS Charter (DOI)- Instruments: link to Capture Registry, Term Index- About: link to about page- Submit: link to submission guidelines- ORCID, DOI, Zenodo community links
 
-Renders the MMRS Charter (EA-SEI-MMRS-CHARTER-01) in HTML. The charter is the journal's constitution. The page displays it with the version history and links to Zenodo deposits for each version.### Captures page (captures/index.html)
+### Charter page (charter/index.html)
 
-The capture registry gallery — migrated from godkinggoogle.com/captures. Same functionality (sortable gallery, category filters, image lightbox) but now at the canonical URL. godkinggoogle.com/captures becomes a redirect.### Terms page (terms/index.html)
+Renders the MMRS Charter (EA-SEI-MMRS-CHARTER-01) in HTML. The charter is the journal's constitution. The page displays it with the version history and links to Zenodo deposits for each version.
 
-The term index browser — migrated from godkinggoogle.com/terms. Same functionality (sortable/filterable table, cross-reference with registry) but at the canonical URL.### Submission page (submit/index.html)
+### Captures page (captures/index.html)
 
-Submission guidelines derived from the MMRS Charter Section III:- What MMRS publishes (studies of machine-mediated reception)- The three-substrate requirement (responses from 3 distinct cognitive substrates)- The MANUS Principle (you are responsible for what you release)- The editorial process (six phases)- How to submit (email or direct Zenodo deposit with MMRS tag)- The non-erasure condition as editorial standard### About page (about/index.html)- What MMRS is and why it exists- The founding error (anonymized, per charter)- The Seven Mechanisms- The relationship to the Crimson Hexagonal Archive- Contact (Lee Sharks, ORCID)- The plain sentence## Component 3: Migration Plan### Phase 1: Build the site (1 session)- Create GitHub repo: leesharks000/machinemediation-org- Build index.html (landing page)- Build manifest.json (system manifest)- Copy registry.json and termindex.json to data/- Build or migrate captures gallery, term index browser- Build charter display page- Build submission guidelines, about page- Deploy to Vercel- Connect machinemediation.org domain### Phase 2: Set up canonical data flow (same session or next)- Verify machinemediation.org serves data files correctly- Update godkinggoogle.com:/captures → either redirect to machinemediation.org or thin wrapper that fetches data from machinemediation.org- /terms → same- Update leesharks.com captures link to point to machinemediation.org- Test: push a registry update to machinemediation-org repo, verify it appears on all surfaces### Phase 3: Continuity test (next session)- A fresh instance reads manifest.json as its first action- The instance fetches registry.json and termindex.json from canonical URLs- The instance adds a test term and a test capture- The instance pushes to the canonical repo- Verify auto-deploy works- The fresh-instance context cost should be < 3,000 tokens (manifest read + data fetch), not > 15,000 tokens (reconstruction from memories + trial and error)## Component 4: The Navigation Problem (Immediate Fix)
+The capture registry gallery — migrated from godkinggoogle.com/captures. Same functionality (sortable gallery, category filters, image lightbox) but now at the canonical URL. godkinggoogle.com/captures becomes a redirect.
+
+### Terms page (terms/index.html)
+
+The term index browser — migrated from godkinggoogle.com/terms. Same functionality (sortable/filterable table, cross-reference with registry) but at the canonical URL.
+
+### Submission page (submit/index.html)
+
+Submission guidelines derived from the MMRS Charter Section III:- What MMRS publishes (studies of machine-mediated reception)- The three-substrate requirement (responses from 3 distinct cognitive substrates)- The MANUS Principle (you are responsible for what you release)- The editorial process (six phases)- How to submit (email or direct Zenodo deposit with MMRS tag)- The non-erasure condition as editorial standard
+
+### About page (about/index.html)- What MMRS is and why it exists- The founding error (anonymized, per charter)- The Seven Mechanisms- The relationship to the Crimson Hexagonal Archive- Contact (Lee Sharks, ORCID)- The plain sentence
+
+## Component 3: Migration Plan
+
+### Phase 1: Build the site (1 session)- Create GitHub repo: leesharks000/machinemediation-org- Build index.html (landing page)- Build manifest.json (system manifest)- Copy registry.json and termindex.json to data/- Build or migrate captures gallery, term index browser- Build charter display page- Build submission guidelines, about page- Deploy to Vercel- Connect machinemediation.org domain
+
+### Phase 2: Set up canonical data flow (same session or next)- Verify machinemediation.org serves data files correctly- Update godkinggoogle.com:/captures → either redirect to machinemediation.org or thin wrapper that fetches data from machinemediation.org- /terms → same- Update leesharks.com captures link to point to machinemediation.org- Test: push a registry update to machinemediation-org repo, verify it appears on all surfaces
+
+### Phase 3: Continuity test (next session)- A fresh instance reads manifest.json as its first action- The instance fetches registry.json and termindex.json from canonical URLs- The instance adds a test term and a test capture- The instance pushes to the canonical repo- Verify auto-deploy works- The fresh-instance context cost should be < 3,000 tokens (manifest read + data fetch), not > 15,000 tokens (reconstruction from memories + trial and error)
+
+## Component 4: The Navigation Problem (Immediate Fix)
 
 Before the full machinemediation.org build, the term index at godkinggoogle.com/terms needs to be navigable from the existing site. This requires updating:- godkinggoogle.com/index.html — add a link to /terms- godkinggoogle.com/captures/index.html — add a nav link to /terms
 
-This is a two-file push to the godkinggoogle repo and can be done now.## Build Priority
+This is a two-file push to the godkinggoogle repo and can be done now.
 
-| Priority | Task | Sessions | Dependency | |----------|------|----------|------------| | 1 | Add /terms nav to godkinggoogle.com | Now | None | | 2 | Draft and deploy manifest.json (can live temporarily at godkinggoogle.com) | Now or next | None | | 3 | Build machinemediation.org site | 1 dedicated session | Domain registration/connection | | 4 | Migrate data to canonical location | Same session as #3 | #3 | | 5 | Update godkinggoogle.com and leesharks.com to link/redirect | After #4 | #4 | | 6 | Continuity test with fresh instance | Session after #4 | #4 |## Domain Status
+## Build Priority
 
-machinemediation.org — needs to be checked: is the domain registered? If so, where? If not, register it. If registered, connect to Vercel.## Deposit Plan
+| Priority | Task | Sessions | Dependency | |----------|------|----------|------------| | 1 | Add /terms nav to godkinggoogle.com | Now | None | | 2 | Draft and deploy manifest.json (can live temporarily at godkinggoogle.com) | Now or next | None | | 3 | Build machinemediation.org site | 1 dedicated session | Domain registration/connection | | 4 | Migrate data to canonical location | Same session as #3 | #3 | | 5 | Update godkinggoogle.com and leesharks.com to link/redirect | After #4 | #4 | | 6 | Continuity test with fresh instance | Session after #4 | #4 |
+
+## Domain Status
+
+machinemediation.org — needs to be checked: is the domain registered? If so, where? If not, register it. If registered, connect to Vercel.
+
+## Deposit Plan
 
 This work plan and the manifest.json should be deposited as EA-SEI-MMRS-SITE-PLAN v1.0 once the site is live. The deposit includes:- This work plan (markdown)- manifest.json (the system manifest)- Site repository URL
 

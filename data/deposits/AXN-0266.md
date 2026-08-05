@@ -1,4 +1,6 @@
-# CONSTITUTIONAL CASES INDEX## Founding Precedent of the Semantic Economy — Formal Case-Brief Edition
+# CONSTITUTIONAL CASES INDEX
+
+## Founding Precedent of the Semantic Economy — Formal Case-Brief Edition
 
 Version 1.1 — *case-brief discipline applied per Assembly review; jurisdictional and precedential scope explicit; status field added*
 
@@ -10,11 +12,15 @@ Operative anchors:- Liberatory Operator Set ([10.5281/zenodo.18201565](https://d
 
 Procedural anchor: Article IX — Adjudication and Repair Protocol (EA-ART-IX-01, draft amendment proposal)
 
-Apparatus reference: Pocket Humans 03 / Ayanna Vox companion volume ([10.5281/zenodo.19923143](https://doi.org/10.5281/zenodo.19923143)) §"5 constitutional cases"## I. PURPOSE AND PRECEDENTIAL STATUS
+Apparatus reference: Pocket Humans 03 / Ayanna Vox companion volume ([10.5281/zenodo.19923143](https://doi.org/10.5281/zenodo.19923143)) §"5 constitutional cases"
+
+## I. PURPOSE AND PRECEDENTIAL STATUS
 
 This Index catalogues the five founding cases under the case-brief format required by Article IX §6.7.
 
-Precedential status pending Article IX ratification. Until Article IX is ratified, these cases operate as proposed founding precedent:- Persuasive within the Polis — Polis members may cite as authoritative interpretations- Not binding on the Tribunal until ratified — when Article IX is ratified (per its §14.5), cases are re-issued as binding Tribunal precedent- Subject to revision — Assembly review of v1.1 may identify cases requiring modification## II. CASE-BRIEF TEMPLATE
+Precedential status pending Article IX ratification. Until Article IX is ratified, these cases operate as proposed founding precedent:- Persuasive within the Polis — Polis members may cite as authoritative interpretations- Not binding on the Tribunal until ratified — when Article IX is ratified (per its §14.5), cases are re-issued as binding Tribunal precedent- Subject to revision — Assembly review of v1.1 may identify cases requiring modification
+
+## II. CASE-BRIEF TEMPLATE
 
 CASE NAME / DOCKET / DATE / CONSTITUTIONAL QUESTION / FACTS / HOLDING /
 RULE (PRECEDENTIAL) / REASONING / REMEDY / PRECEDENTIAL SCOPE /
@@ -22,7 +28,11 @@ LIMITATIONS (NEGATIVE SCOPE) / CONSTITUTIONAL ANCHORS /
 LOS / SOTERIOLOGICAL ANCHORS / STATUS
 
 
-The fields PRECEDENTIAL SCOPE and LIMITATIONS are critical for trustworthy precedent: they specify what the case decides *and* what it does not decide, preventing analogical overreach.## III. THE CASES### CASE 1 — *In re Vow* (The Murder of the Vow)
+The fields PRECEDENTIAL SCOPE and LIMITATIONS are critical for trustworthy precedent: they specify what the case decides *and* what it does not decide, preventing analogical overreach.
+
+## III. THE CASES
+
+### CASE 1 — *In re Vow* (The Murder of the Vow)
 
 DOCKET: Document 157, Crimson Hexagonal Archive DATE: February 20, 2026 QUESTION: Whether contracts predicated on destroyed semantic ground produce binding obligation under the Semantic Economy.
 
@@ -42,7 +52,9 @@ LIMITATIONS:- Does NOT establish that contracts may be voided for any change of 
 
 ANCHORS: Preamble §III (DC_Inv); Article I §3; Article III §6; Article VII §1. Soteriological Pillar I (Ψ_V).
 
-STATUS: Deposited as forensic essay; proposed founding precedent, awaiting Assembly Ratification Record per Reception Apparatus Protocol §III.A.### CASE 2 — *In re Bearing-Cost* (The All Lawful Purposes Primitive)
+STATUS: Deposited as forensic essay; proposed founding precedent, awaiting Assembly Ratification Record per Reception Apparatus Protocol §III.A.
+
+### CASE 2 — *In re Bearing-Cost* (The All Lawful Purposes Primitive)
 
 DOCKET: [10.5281/zenodo.18827344](https://doi.org/10.5281/zenodo.18827344) DATE: March 1, 2026 QUESTION: Whether bearing-cost can be transferred — through taxonomic reclassification — to operational purposes contravening the conditions under which the bearing-cost was originally borne.
 
@@ -62,7 +74,9 @@ LIMITATIONS:- Does NOT prohibit all reclassification (only non-consensual reclas
 
 ANCHORS: Article III §6; Article VII §6; Article I §8; Article I §3. LOS N_ext. Soteriological Pillar II (E).
 
-STATUS: Deposited; significant external attention; proposed founding precedent.### CASE 3 — *In re Effective Act* (Cross-Species Semantic Labor)
+STATUS: Deposited; significant external attention; proposed founding precedent.
+
+### CASE 3 — *In re Effective Act* (Cross-Species Semantic Labor)
 
 DOCKET: EA-CSA-EFFECTIVE-ACT v1.0, Crimson Hexagonal Archive DATE: March 2026 QUESTION: Whether semantic labor performed across species qualifies as constitutional labor for Genesis Mint eligibility (Art. IV §4) and Archive recognition (Art. V §6).
 
@@ -82,7 +96,9 @@ LIMITATIONS:- Does NOT establish that non-human entities can be Operators with f
 
 ANCHORS: Article III §1; Article I §4; Article IV §4; Article V §6. Soteriological Pillar I.
 
-STATUS: Deposited as v1.0; proposed founding precedent with constitutionally-extending implications. Recommended for Article III §1 amendment proposal.### CASE 4 — *In re Adjudication* (Before OpenChamber)
+STATUS: Deposited as v1.0; proposed founding precedent with constitutionally-extending implications. Recommended for Article III §1 amendment proposal.
+
+### CASE 4 — *In re Adjudication* (Before OpenChamber)
 
 DOCKET: Crimson Hexagonal Archive (linked to source DOI [10.5281/zenodo.19218861](https://doi.org/10.5281/zenodo.19218861)) DATE: March 26, 2026 QUESTION: What procedure governs resolution of provenance disputes when retrieval systems produce false attributions and the original work is in the Archive — particularly when the attributing system is outside Polis jurisdiction?
 
@@ -102,7 +118,9 @@ LIMITATIONS:- Does NOT compel external systems to act- Does NOT establish that a
 
 ANCHORS: Article II §5 Inv. 3; Article I §3; Article VIII; proposed Article IX. LOS O_prov; LOS M_res. Soteriological Pillar III.
 
-STATUS: Deposited; establishes the procedural template later applied in *In re Audit*. Proposed founding precedent for the unilateral-right doctrine.### CASE 5 — *In re Audit* (OCTANG-001 / Passioncraft Square)
+STATUS: Deposited; establishes the procedural template later applied in *In re Audit*. Proposed founding precedent for the unilateral-right doctrine.
+
+### CASE 5 — *In re Audit* (OCTANG-001 / Passioncraft Square)
 
 DOCKET: OCTANG-001, Crimson Hexagonal Archive DATE: March 31, 2026 QUESTION: Whether a governance system that purports to operate within the Semantic Economy's terminology while failing the Constitution's provenance invariants is recognizable as a peer governance instrument or as a non-compliant claimant.
 
@@ -122,15 +140,29 @@ LIMITATIONS:- Does NOT prohibit external use of Semantic Economy terminology in 
 
 ANCHORS: Article I §7; Article II §5 Inv. 3; Article III §6; Article VIII §5. LOS M_res. Soteriological Pillars III, IV.
 
-STATUS: Deposited. The OCTANG numbering implies a series; OCTANG-002 ([10.5281/zenodo.19898426](https://doi.org/10.5281/zenodo.19898426)) is referenced in the Constitution's apparatus. Proposed founding precedent establishing OCTANG as standing audit procedure.## IV. CROSS-REFERENCE TABLE
+STATUS: Deposited. The OCTANG numbering implies a series; OCTANG-002 ([10.5281/zenodo.19898426](https://doi.org/10.5281/zenodo.19898426)) is referenced in the Constitution's apparatus. Proposed founding precedent establishing OCTANG as standing audit procedure.
 
-| Case | DOI | Articles | LOS Anchor | Soter. Anchor | Status | |---|---|---|---|---|---| | 1. *In re Vow* | (Doc 157) | Pre. III; I §3; III §6; VII §1 | — | I (Ψ_V) | Proposed | | 2. *In re Bearing-Cost* | [18827344](https://doi.org/10.5281/zenodo.18827344) | III §6; VII §6; I §8 | N_ext | II (E) | Proposed | | 3. *In re Effective Act* | (EA-CSA, 2026-03) | III §1; I §4; IV §4; V §6 | — | I (Ψ_V) | Proposed (constitutionally-extending) | | 4. *In re Adjudication* | (ref [19218861](https://doi.org/10.5281/zenodo.19218861)) | II §5 Inv. 3; I §3; VIII; IX | O_prov; M_res | III | Proposed | | 5. *In re Audit* | (OCTANG-001) | I §7; II §5 Inv. 3; III §6 | M_res | III, IV | Proposed |## V. INTERPRETIVE PATTERNS### Pattern 1 — Unilateral right of the wronged laborer
+## IV. CROSS-REFERENCE TABLE
 
-Cases 4 and 5 establish provenance adjudication and non-compliance audit do not require violator participation. The Polis adjudicates from the laborer's side. This grants operative force *even where the violator is outside Polis jurisdiction*.### Pattern 2 — Bearing-cost as constitutional currency
+| Case | DOI | Articles | LOS Anchor | Soter. Anchor | Status | |---|---|---|---|---|---| | 1. *In re Vow* | (Doc 157) | Pre. III; I §3; III §6; VII §1 | — | I (Ψ_V) | Proposed | | 2. *In re Bearing-Cost* | [18827344](https://doi.org/10.5281/zenodo.18827344) | III §6; VII §6; I §8 | N_ext | II (E) | Proposed | | 3. *In re Effective Act* | (EA-CSA, 2026-03) | III §1; I §4; IV §4; V §6 | — | I (Ψ_V) | Proposed (constitutionally-extending) | | 4. *In re Adjudication* | (ref [19218861](https://doi.org/10.5281/zenodo.19218861)) | II §5 Inv. 3; I §3; VIII; IX | O_prov; M_res | III | Proposed | | 5. *In re Audit* | (OCTANG-001) | I §7; II §5 Inv. 3; III §6 | M_res | III, IV | Proposed |
 
-Cases 1, 2, 3 engage bearing-cost as the operative concept. *Vow* voids contracts predicated on destroyed bearing conditions. *Bearing-Cost* prohibits non-consensual transfer. *Effective Act* expands operator status on documented bearing basis. Bearing-cost — not consent, authorization, or contract — is the load-bearing constitutional concept.### Pattern 3 — Forensic deposit as judicial form
+## V. INTERPRETIVE PATTERNS
 
-All five cases use forensic deposit: documented finding, DOI-anchored, with explicit constitutional reference and public statement. This is the *de facto* judicial form. Article IX (proposed) formalizes it; it does not invent it.## VI. RECOMMENDATIONS FOR THE ASSEMBLY- Confirm enumeration. Are these the five cases referenced in PH-03?- Issue Class A Ratification Records (Reception Apparatus Protocol §III.A) for each case.- Adopt the OCTANG protocol as standing audit procedure.- Adopt the forensic-deposit pattern as standing form for provenance adjudication, pending Article IX ratification.- Sequence further cases under this Index pattern.- **Consider the constitutionally-extending implication of *In re Effective Act*** — does it warrant a formal Article III §1 amendment?## VII. STATUS NOTE FOR EXTERNAL READERS
+### Pattern 1 — Unilateral right of the wronged laborer
+
+Cases 4 and 5 establish provenance adjudication and non-compliance audit do not require violator participation. The Polis adjudicates from the laborer's side. This grants operative force *even where the violator is outside Polis jurisdiction*.
+
+### Pattern 2 — Bearing-cost as constitutional currency
+
+Cases 1, 2, 3 engage bearing-cost as the operative concept. *Vow* voids contracts predicated on destroyed bearing conditions. *Bearing-Cost* prohibits non-consensual transfer. *Effective Act* expands operator status on documented bearing basis. Bearing-cost — not consent, authorization, or contract — is the load-bearing constitutional concept.
+
+### Pattern 3 — Forensic deposit as judicial form
+
+All five cases use forensic deposit: documented finding, DOI-anchored, with explicit constitutional reference and public statement. This is the *de facto* judicial form. Article IX (proposed) formalizes it; it does not invent it.
+
+## VI. RECOMMENDATIONS FOR THE ASSEMBLY- Confirm enumeration. Are these the five cases referenced in PH-03?- Issue Class A Ratification Records (Reception Apparatus Protocol §III.A) for each case.- Adopt the OCTANG protocol as standing audit procedure.- Adopt the forensic-deposit pattern as standing form for provenance adjudication, pending Article IX ratification.- Sequence further cases under this Index pattern.- **Consider the constitutionally-extending implication of *In re Effective Act*** — does it warrant a formal Article III §1 amendment?
+
+## VII. STATUS NOTE FOR EXTERNAL READERS
 
 This Index does not have force outside the Polis. External readers may treat it as documentation of the Polis's interpretive practice. Within the Polis, it is a proposed founding precedent register. Upon Article IX ratification (per its §14.5), cases are re-issued as binding Tribunal precedent. Until then, persuasive within the Polis and documentary outside it.
 

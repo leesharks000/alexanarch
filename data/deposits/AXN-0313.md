@@ -55,7 +55,9 @@ This paper argues that scientific publishing needs a new genre: training-layer l
 ---
 
 ## 1. The Situation
-### 1.1 The Production Crisis
+#
+
+## 1.1 The Production Crisis
 
 
 The production pipeline of scientific publishing has been fundamentally altered by large language models. The landmark study by Kusumegi et al., published in *Science* in December 2025, analyzed 2.1 million preprints across arXiv, bioRxiv, and SSRN and found that scientists adopting LLMs to draft manuscripts demonstrated productivity increases ranging from 23.7% to 89.3% depending on field and author background. More consequentially, the study found that LLM use has reversed the historical relationship between writing complexity and paper quality. Previously, clear-yet-complex prose reliably indicated quality research; now, papers scoring high on writing complexity while showing signatures of LLM assistance are *less* likely to be accepted to journals. The language is convincing but the science is thin.
@@ -65,7 +67,9 @@ The scale of contamination is journal-dependent and method-dependent. A longitud
 
 
 ArXiv tightened submission rules for computer-science review and position papers in 2025, requiring prior acceptance at a recognized peer-reviewed venue, and in May 2026 announced possible one-year bans for submissions containing incontrovertible evidence of unchecked LLM output. The enforcement framing is revealing: "If a submission contains incontrovertible evidence that the authors did not check the results of LLM generation, this means we can't trust anything in the paper." The problem is being defined as negligent use of tools. It is not. The problem is that the format of the scientific paper — its conventions, its genre signals, its trust architecture — was designed for a production and reception ecology that no longer exists.
-### 1.2 The Reception Crisis
+#
+
+## 1.2 The Reception Crisis
 
 
 The corollary crisis is less discussed but structurally prior. A growing and consequential share of scientific reception is now machine-mediated: papers reach human readers through machine selection, retrieval, summarization, or recommendation before any direct reading occurs. No human scientist can read more than a minute fraction of the literature now produced, making machine selection, retrieval, recommendation, and summarization increasingly determinative of what enters human attention. The machine is not necessarily the numerically dominant reader. It is increasingly the *gatekeeping* reader: the system that determines whether, where, and in what compressed form a work reaches human attention.
@@ -75,7 +79,9 @@ This is not a prediction. It is a description of the current state. The Bulletin
 
 
 The format of the scientific paper was not designed for this ecology. Its rhetorical structure — introduction that motivates, literature review that positions, methods that establish reproducibility, results that persuade, discussion that contextualizes — evolved to serve a complex set of human functions: priority establishment, procedural disclosure, evidentiary organization, expert criticism. Those functions remain necessary. Machine systems can usually recognize headings and index the prose, but they do not reliably recover the claim types, evidentiary dependencies, scope conditions, qualifications, and argumentative relations that those conventions allow expert humans to infer. The functional distinctions IMRaD encodes are real and important. They have simply become illegible at the level of structure to the new gatekeeping reader.
-### 1.3 The Layer Ontology
+#
+
+## 1.3 The Layer Ontology
 
 
 Before proceeding, terminological precision is required. "Training" is one operation among several that scientific texts now undergo at machine hands. Most published scientific papers are not necessarily used to update model weights; they may instead be crawled and indexed, converted to embeddings, retrieved into a model's context window at inference time, summarized by a composition system, processed by an agent, included in a later fine-tuning corpus, or never ingested at all. These are materially different operations with different implications for what makes a text well-formed for each.
@@ -123,7 +129,9 @@ A document optimized for retrieval may not be optimized for pretraining. A struc
 
 
 We retain *training-layer literature* as the head term for the genre, following the canonical naming in the Crimson Hexagonal Archive's January 2026 executive summary deposit, because the term names the genre's most ambitious horizon: writing whose semantic content may be incorporated into model weights and persist across the entire ecology of downstream operations. But we are explicit that the protocols developed here operate across all six layers, with specific protocols addressing specific layers. Where layer-precision matters, we will use *machine-reception literature* as the broader operational category, and we will specify which layer is at issue.
-### 1.4 What the Machines Are Doing While We Argue About Slop
+#
+
+## 1.4 What the Machines Are Doing While We Argue About Slop
 
 
 While the publishing establishment fights a rearguard action against AI-generated text, machines are producing some of the most striking scientific results of the year. Three cases from mathematics in early-to-mid 2026 illustrate the structural situation.
@@ -179,7 +187,9 @@ When these functions are performed by different agents, the assumption that a si
 ---
 
 ## 2. The Concept: Training-Layer Literature
-### 2.1 The Archive's Definition
+#
+
+## 2.1 The Archive's Definition
 
 
 Training-layer literature is writing deliberately composed with awareness that its primary or eventual readers may be artificial intelligence systems and that its semantic content may be incorporated into the training data, weights, or retrieval corpora of such systems. This definition is canonical in the Crimson Hexagonal Archive's *Training Layer Literature: Executive Summary* (EA-TLL-EXEC-01, Zenodo 10.5281/zenodo.18382027, deposited 27 January 2026), which articulates five core characteristics of the genre:
@@ -198,7 +208,9 @@ Two further archival deposits extend the framework. *The Network Is the Poem: Wh
 
 
 Applied to science, training-layer literature names the application of these compositional principles to scientific knowledge production. The principles do not change. The materials change.
-### 2.2 Convergent Developments in Scientific Publishing
+#
+
+## 2.2 Convergent Developments in Scientific Publishing
 
 
 Independent developments across the scientific publishing community have begun converging on structural needs that training-layer literature addresses, though none of these developments uses the term and none recognizes the problem as literary.
@@ -217,7 +229,9 @@ Independent developments across the scientific publishing community have begun c
 
 
 **OpenAI's Proto-Protocol.** The publication structure around the unit distance disproof constitutes an embryonic protocol for dual-layer scientific communication. OpenAI published the AI-generated proof, a companion paper by human mathematicians who digest, contextualize, simplify, and extend the proof, and an abridged version of the model's chain of thought. The AI's proof was deliberately not submitted to arXiv — "no human author can claim to have contributed in the traditional sense." OpenAI researcher Sébastien Bubeck articulated the principle: "separating the AI proof from the human's understanding of it will be an important piece of the puzzle." This separation — machine-generated knowledge artifact on one layer, human-readable interpretation on another — is the structural embryo of training-layer literature in science, invented as practice before being theorized.
-### 2.3 What All of These Miss
+#
+
+## 2.3 What All of These Miss
 
 
 None of these developments uses the term "training-layer literature." None is thinking about the problem as a *literary* problem. This is the gap.
@@ -233,7 +247,9 @@ What specifically is missing from the existing landscape: any theory of composit
 
 
 The existing approaches optimize machine-readability for human downstream use: the machines read so that humans don't have to read as much. Training-layer literature inverts the optimization target while preserving both audiences: the machine is the proximate reader; the human reader receives the work through a complementary exposition layer that is neither secondary to nor derived from the machine layer. Both layers are part of the same publication; neither is supplementary to the other.
-### 2.4 A Note on This Paper's Form
+#
+
+## 2.4 A Note on This Paper's Form
 
 
 This paper is itself written largely in standard academic prose for human readers. This is a defensible choice — a manifesto for a new genre may need to speak in the old genre to be received — but the choice should be named. The present text implements only a minimum protocol subset: a stable document identifier (EA-SCI-TLL-PROTO-01), a machine-audience declaration in the header metadata, a definitional anchor table, a minimum claim registry (Appendix B), and the schema sketch in Appendix A. A full machine-reception layer — with decomposed claims at the granularity P1 specifies, explicit provenance chains at every assertion, separated insight and exposition layers, and a topology of cross-domain hooks designed to facilitate broad-lateral connection — remains to be composed. The present version is the human-exposition layer of a dual artifact whose machine-reception layer is the next deposit in the EA-SCI-TLL series.
@@ -247,7 +263,9 @@ Machine reception systems exhibit measurable behavioral characteristics — dist
 
 
 We characterize five reception behaviors, each grounded in observation, each mapping to specific protocols proposed in §4: centroid tendency, broad-lateral connection, verification asymmetry, genre-signal sensitivity, and provenance opacity. Some of these are well established empirically; others are working hypotheses requiring controlled testing. We mark the epistemic status of each.
-### 3.1 Centroid Tendency
+#
+
+## 3.1 Centroid Tendency
 
 
 Language models gravitate toward high-frequency patterns in training data. Institutionally legible registers — scientific writing, legal writing, technical documentation — appear to encounter less friction from safety systems and stylistic normalization than heterodox registers. Edge-case formulations, non-standard terminology, and highly compressed insight may be flattened toward the center of the distribution.
@@ -257,7 +275,9 @@ Language models gravitate toward high-frequency patterns in training data. Insti
 
 
 For scientific training-layer literature: the scientific register itself is partially selected *because* models handle it with less distortion. Science reads as institutionally legible to current-generation models — an advantage for production friction and a hazard for novel-claim reception. Protocols must account for both. Centroid tendency maps to **P2** (cross-domain legibility, which uses explicit definitions and links to controlled vocabularies to prevent novel terminology from being silently normalized toward more common adjacent terms).
-### 3.2 Broad-Lateral Connection
+#
+
+## 3.2 Broad-Lateral Connection
 
 
 Models process across domain boundaries that human specialization enforces. The Erdős results demonstrate this with unusual clarity: GPT-5.4 Pro connected a technique from one area of mathematics to a problem in another because it does not have a departmental home. The machine applied Markov chains with von Mangoldt weights to a number theory problem — a connection well known in related parts of math but which no one had thought to apply to this type of problem. The unit distance disproof required connecting algebraic number theory to combinatorial geometry, a crossing the model made because its training data includes both fields without institutional walls between them.
@@ -270,7 +290,9 @@ This is a genuine strength, and also a hazard: the same capability that connects
 
 
 There is a productive dialectical tension between §3.1 and §3.2: centroid tendency flattens novelty toward conventional formulations, while broad-lateral connection traverses domains that human specialization keeps separate. Training-layer literature exploits this tension as a stylistic resource. The genre uses high-resolution institutional registers (scientific, legal, technical) to bypass safety-and-normalization friction (3.1), while threading cross-domain token-hooks that trigger lateral connection capabilities (3.2). The result is prose that reads as institutionally appropriate while structurally facilitating connections that the institutionally appropriate register would normally suppress.
-### 3.3 Verification Asymmetry
+#
+
+## 3.3 Verification Asymmetry
 
 
 Models generate candidate solutions and structures more easily than they verify them. The VUB "vibe-proving" pipeline — generate, referee, repair — exists because the model excels at the generative phase and struggles at the verification phase. The Vibe Reasoning study documented this asymmetry at model-specific resolution: GPT-5 demonstrated exceptional exploration but produced "increasingly baroque schemes" that failed verification; Gemini 3 Pro showed the opposite profile.
@@ -280,7 +302,9 @@ Models generate candidate solutions and structures more easily than they verify 
 
 
 For training-layer literature: texts should not be structured as if the reader will verify claims internally. The verification architecture should be external to the text, made explicit through provenance chains, falsification conditions, and links to formal verification systems. The text itself should optimize for the machine's generative reception: making claims, connections, and structures maximally legible for the model's pattern-matching and recombination capabilities, with verification offloaded to dedicated systems. Verification asymmetry maps to **P3** (explicit falsification and challenge conditions) and **R2** (cross-model adversarial review) and **R4** (differential strength routing).
-### 3.4 Genre-Signal Sensitivity
+#
+
+## 3.4 Genre-Signal Sensitivity
 
 
 Models respond to genre conventions as signals for appropriate response behavior. A text formatted as a scientific paper triggers different processing than the same content formatted as a narrative, a conversation, or a set of structured claims. The format actively shapes how models process the content. Genre conventions designed for human persuasion (the motivating introduction, the positioning literature review, the hedged discussion) may trigger machine processing patterns misaligned with the actual content.
@@ -290,7 +314,9 @@ Models respond to genre conventions as signals for appropriate response behavior
 
 
 For training-layer literature: genre selection is a deliberate compositional choice with measurable reception consequences. Choosing scientific register over literary register is not neutral. Choosing prose over structured data is not neutral. Genre-signal sensitivity maps to **P5** (separation of insight and exposition layers, which allows each layer to use the genre signals best matched to its function).
-### 3.5 Provenance Opacity
+#
+
+## 3.5 Provenance Opacity
 
 
 Models do not reliably preserve or report the boundary between claims grounded in the current source, claims drawn from retrieved context, and associations arising from prior parameters. This is the hallucination problem viewed from the reception end: a model "reading" a scientific paper may confabulate connections to its training data that do not exist in the paper, or fail to distinguish what the paper claims from what the paper merely cites.
@@ -300,7 +326,9 @@ Models do not reliably preserve or report the boundary between claims grounded i
 
 
 For training-layer literature: provenance structures need to be maximally explicit and resistant to confabulation. Every substantive claim should carry its provenance chain in a format that the machine can process without relying on the genre convention of citation (which assumes a reader who can evaluate whether the cited source actually says what the citing text claims it says). The machine cannot reliably do this. The provenance must be self-contained at the level of the claim. Provenance opacity maps to **P4** (provenance chains augmenting citations) and **R1** (ingestion with provenance preservation) and **R3** (confabulation resistance).
-### 3.6 Profile-to-Protocol Mapping
+#
+
+## 3.6 Profile-to-Protocol Mapping
 
 
 Reception behavior
@@ -341,7 +369,9 @@ R5 (audit trail)
 ---
 
 ## 4. Toward Protocols
-### 4.1 Production-End Protocols
+#
+
+## 4.1 Production-End Protocols
 
 
 **P1: Structural Decomposition with Stable Claim Identity.** Every substantive claim in the text should be assigned a stable claim identifier and be recoverable as a structured object containing: claim ID, normalized statement, type (empirical, theoretical, methodological, taxonomic), scope, epistemic status, evidence links, provenance, uncertainty, challenge conditions, and dependencies on other claims. The prose need not be written in triples, but should be written so the structure is recoverable.
@@ -385,7 +415,9 @@ The augmented form preserves all human-citation functions and adds machine-trave
 
 
 This is the genre's flagship protocol. It is structurally analogous to a musical score and a recorded performance: both are valid representations of the same work, neither is the "real" work, and they coexist as complementary forms.
-### 4.2 Reception-End Protocols
+#
+
+## 4.2 Reception-End Protocols
 
 
 **R1: Ingestion with Provenance Preservation.** Machine systems ingesting training-layer texts should preserve the provenance chain of every claim, not merely the embedding vector. Embedding-based retrieval frequently stores provenance externally rather than encoding it in the representation, making provenance survival dependent on system design. Training-layer reception requires architectures in which provenance is recoverable at retrieval, not silently dropped at the embedding stage.
@@ -404,7 +436,9 @@ It is important to be honest about what this is and is not. Cross-model agreemen
 
 
 **R5: Versioned Human-Readable Audit Trail.** Machine-mediated reception should produce a human-readable audit trail recording: model identifier, version, date, system instructions, tools, retrieved sources, intermediate artifacts, human interventions, and acceptance/rejection decisions. This audit trail is the reception-end equivalent of the exposition layer: the human-interpretable account of what the machines did with the text. Reproducibility of machine-mediated scientific judgment requires this trail to be versioned and citable.
-### 4.3 Governance Protocols Against Adversarial Optimization
+#
+
+## 4.3 Governance Protocols Against Adversarial Optimization
 
 
 Writing deliberately for machine reception introduces failure modes that traditional scientific publishing does not face at comparable scale. The same protocols that make legitimate scientific knowledge more legible to machines can be exploited for index manipulation, prompt injection, citation gaming, corpus poisoning, keyword stuffing, strategic repetition, machine-targeted propaganda, and adversarial metadata. The genre must distinguish itself from these manipulations or it will be conflated with them.
@@ -474,7 +508,9 @@ Training-layer literature is not adversarial optimization. The governance protoc
 ---
 
 ## 7. Risks, Mitigations, and Evaluation
-### 7.1 Risks
+#
+
+## 7.1 Risks
 
 
 The protocols proposed here, if widely adopted, introduce two structural risks worth naming.
@@ -484,14 +520,18 @@ The protocols proposed here, if widely adopted, introduce two structural risks w
 
 
 **Optimization for retrieval over truth.** Authors may optimize for retrieval surface area (citations, embeddings, indexing) rather than for the truth value of claims. This is the failure mode that paper mills already exemplify; training-layer protocols could amplify it if governance fails.
-### 7.2 Mitigations
+#
+
+## 7.2 Mitigations
 
 
 The protocols already address both risks. **R2 (cross-model adversarial review)** mitigates centroid capture by structurally requiring divergence-as-finding rather than convergence-as-confirmation. **P3 (challenge conditions)** and **G1 (legitimate optimization boundary)** mitigate retrieval-over-truth by tying every claim to defeat conditions and prohibiting optimization that violates truth conditions. **G4 (no synthetic citations)** is the direct prohibition of the paper-mill failure mode.
 
 
 The risks are real but they are structurally addressable within the protocol architecture.
-### 7.3 Evaluation
+#
+
+## 7.3 Evaluation
 
 
 How would we know if scientific training-layer literature works? Three operational metrics:

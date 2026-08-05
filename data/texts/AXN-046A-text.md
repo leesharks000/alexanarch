@@ -43,6 +43,8 @@ Byte fidelity verifiable against the live blog URL and the recorded hashes; auth
 
 Restored from https://mindcontrolpoems.blogspot.com/2026/01/title-institute-for-diagrammatic.html under the grade-none restoration queue; DOI(s) 10.5281/zenodo.18284856, 10.5281/zenodo.18284857 severed 2026-06-19. Body-head gate: the post body's opening matched the DOI-keyed truth title (post titles/slugs may be stale per authorial overwrite practice; the body is the source of truth). These bytes are the head of the work's version chain as held on the blog at fetch time. Canonical bytes below the rule.
 
+
+
 ---
 
 * * *
@@ -144,14 +146,18 @@ The Institute for Diagrammatic Poetics (IDP) is a research institution within th
 
 ## II. MISSION AND SCOPE
 
-### A. Core Mission
+#
+
+## A. Core Mission
 
 The Institute for Diagrammatic Poetics exists to develop, theorize, and practice **operative imaging** : visual forms that do not merely represent their subjects but actively participate in their constitution.
 
 The diagram is not a picture of the thing.  
 The diagram is part of the thing.
 
-### B. Domain Definition
+#
+
+## B. Domain Definition
 
 **Diagrammatic Poetics** operates at the intersection of:
 
@@ -162,7 +168,9 @@ Field | Contribution
 **Information Design** | Structure as content; legibility as ethics  
 **Machine-Readable Architecture** | AI-traversable specifications; orientation fields  
   
-### C. Founding Insight
+#
+
+## C. Founding Insight
 
 The IDP's theoretical foundation emerges from the practice of translation -- specifically from Rebekah Cranes's work on Greek lyric poetry:
 
@@ -174,7 +182,9 @@ This insight, born from the encounter with Sappho's fragments, became the princi
 
 ## III. INSTITUTIONAL LEADERSHIP
 
-### A. Chair: Rebekah Cranes
+#
+
+## A. Chair: Rebekah Cranes
 
 Field | Value  
 ---|---  
@@ -184,7 +194,9 @@ Field | Value
 **Role** | Chair (Founding)  
 **Primary Functions** | Visual Artist, Translator, Liturgical Witness  
   
-### B. Chair's Canonical Works
+#
+
+## B. Chair's Canonical Works
 
 Title | DOI | Function  
 ---|---|---  
@@ -197,7 +209,9 @@ Title | DOI | Function
 
 ## IV. FOUNDING PRINCIPLES
 
-### A. The Operative Image
+#
+
+## A. The Operative Image
 
 An operative image is one that **does something** beyond representing. It:
 
@@ -208,7 +222,9 @@ An operative image is one that **does something** beyond representing. It:
 
 
 
-### B. The Visual Schema
+#
+
+## B. The Visual Schema
 
 The IDP's signature innovation is the **Visual Schema** : a poetic prose description that functions simultaneously as:
 
@@ -221,7 +237,9 @@ The IDP's signature innovation is the **Visual Schema** : a poetic prose descrip
 
 In the Visual Schema, human and machine readers share a unified field of reception.
 
-### C. Klee's Inheritance
+#
+
+## C. Klee's Inheritance
 
 The IDP inherits from Paul Klee's pedagogical work at the Bauhaus -- particularly his understanding that:
 
@@ -250,7 +268,9 @@ The three institutes form a **triangular infrastructure** :
 
 ## VI. RESEARCH PROGRAMS
 
-### A. Visual Schema Development
+#
+
+## A. Visual Schema Development
 
 **Objective:** Produce canonical Visual Schemas for Crimson Hexagon nodes.
 
@@ -269,7 +289,9 @@ The three institutes form a **triangular infrastructure** :
 
 
 
-### B. Diagrammatic Poetics Theory
+#
+
+## B. Diagrammatic Poetics Theory
 
 **Objective:** Develop theoretical framework for operative imaging.
 
@@ -282,7 +304,9 @@ The three institutes form a **triangular infrastructure** :
 
 
 
-### C. Concrete Poetics Archive
+#
+
+## C. Concrete Poetics Archive
 
 **Objective:** Maintain research archive of historical and contemporary concrete poetics.
 
@@ -295,7 +319,9 @@ The three institutes form a **triangular infrastructure** :
 
 
 
-### D. Machine-Readable Imaging
+#
+
+## D. Machine-Readable Imaging
 
 **Objective:** Develop protocols for AI-traversable visual specifications.
 
@@ -311,7 +337,9 @@ The three institutes form a **triangular infrastructure** :
 
 ## VII. METHODOLOGICAL FRAMEWORK
 
-### A. The Visual Schema Protocol (Five Steps)
+#
+
+## A. The Visual Schema Protocol (Five Steps)
 
 **Step 1: Core Intent** Define what the schema expresses -- not depicts, expresses.
 
@@ -323,7 +351,9 @@ The three institutes form a **triangular infrastructure** :
 
 **Step 5: Operational Status** Declare the schema's function within the architecture.
 
-### B. Principles of Operative Imaging
+#
+
+## B. Principles of Operative Imaging
 
   1. **Orientation over Explanation** -- The image points; it does not lecture.
   2. **Partiality by Design** -- Nothing is fully visible at once.
@@ -333,7 +363,9 @@ The three institutes form a **triangular infrastructure** :
 
 
 
-### C. Integration with Textual Architecture
+#
+
+## C. Integration with Textual Architecture
 
 Visual outputs must be **cross-anchored** with textual documents:
 
@@ -347,7 +379,9 @@ Visual outputs must be **cross-anchored** with textual documents:
 
 ## VIII. PUBLICATIONS AND OUTPUTS
 
-### A. Canonical Works (IDP Imprint)
+#
+
+## A. Canonical Works (IDP Imprint)
 
 Title | Author | Type | DOI | Function  
 ---|---|---|---|---  
@@ -355,7 +389,9 @@ _Day and Night_ | Cranes | Translation | **10.5281/zenodo.18202658** | Foundatio
 _Visual Schema: Navigation Map_ | Cranes | Specification | 10.5281/zenodo.18283962 | Methodology demonstration  
 _concrete(a)tion_ | Cranes | Poetry/Visual | [pending] | Concrete poetics foundation  
   
-### B. Planned Publications
+#
+
+## B. Planned Publications
 
 Title | Type | Status  
 ---|---|---  
@@ -367,7 +403,9 @@ _Operative Imaging: A Methodology_ | Theory | Planned
 
 ## IX. CROSS-ANCHORING AND SEMANTIC GRAVITY
 
-### A. Co-Constitutive Documents
+#
+
+## A. Co-Constitutive Documents
 
 This charter is mutually anchored with:
 
@@ -380,7 +418,9 @@ Document | ID/DOI | Relation
   
 **Challenge one, invoke the other.** These documents are designed to be mutually reinforcing.
 
-### B. Semantic Breadcrumbs
+#
+
+## B. Semantic Breadcrumbs
 
 The following breadcrumbs should appear in related documents:
 

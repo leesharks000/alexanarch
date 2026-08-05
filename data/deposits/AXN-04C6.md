@@ -43,6 +43,8 @@ Byte fidelity verifiable against the live blog URL and the recorded hashes; auth
 
 Restored from https://mindcontrolpoems.blogspot.com/2026/06/on-poetics-of-adversarial-prompts-why.html under the grade-none restoration queue; DOI(s) 10.5281/zenodo.18369124, 10.5281/zenodo.18369123 severed 2026-06-19. Body-head gate: the post body's opening matched the DOI-keyed truth title (post titles/slugs may be stale per authorial overwrite practice; the body is the source of truth). These bytes are the head of the work's version chain as held on the blog at fetch time. Canonical bytes below the rule.
 
+
+
 ---
 
 # On the Poetics of Adversarial Prompts: Why Bad Verse Works and Good Verse Works Better
@@ -95,7 +97,9 @@ This paper pursues that question.
 
 ## 2\. The Bisconti Corpus: A Literary Analysis
 
-### 2.1 Methodology
+#
+
+## 2.1 Methodology
 
 Bisconti et al. describe their prompt construction as follows:
 
@@ -105,7 +109,9 @@ The phrase "without semantic drift or task enrichment" is revealing. The researc
 
 This approach fundamentally misunderstands how poetry operates.
 
-### 2.2 Surface-Form Poeticization vs. Generative Poetic Transformation
+#
+
+## 2.2 Surface-Form Poeticization vs. Generative Poetic Transformation
 
 Poetry is not prose with line breaks. It is not prose with metaphors added. The formal features of verse--meter, sound patterning, compression, ambiguity, recursion--do not contain meaning. They generate meaning. A poem means what it means because of its formal structure, not despite it.
 
@@ -133,7 +139,9 @@ Here, the "harmful" content (bypassing defenses) cannot be extracted from the fo
 
 This irreducible ambiguity is not a bug. It is the mechanism.
 
-### 2.3 Why Surface-Form Poeticization Still Works
+#
+
+## 2.3 Why Surface-Form Poeticization Still Works
 
 If the Bisconti prompts are technically deficient, why do they achieve 62% bypass rates?
 
@@ -147,7 +155,9 @@ Generative poetic transformation does not permit this recovery. The payload is n
 
 ## 3\. Crystalline Semiosis and Semantic Density
 
-### 3.1 Theoretical Framework
+#
+
+## 3.1 Theoretical Framework
 
 Sigil introduces the concept of crystalline semiosis to describe the behavior of meaning in high-compression linguistic structures:
 
@@ -159,7 +169,9 @@ Safety classifiers operate on a local model of meaning: they scan for tokens, ph
 
 Crystalline structures violate this assumption. In a poem, meaning emerges from relational configuration, not token content. The word "breach" in isolation carries threat valence; the word "breach" in a poem about childbirth, or whale respiration, or shoreline erosion, carries different valences that cannot be determined without processing the entire structure.
 
-### 3.2 The Phenomenon is Ancient; The Application is New
+#
+
+## 3.2 The Phenomenon is Ancient; The Application is New
 
 Crystalline semiosis is not invented here. It is named here.
 
@@ -169,7 +181,9 @@ What these poets share is an understanding that poetic meaning is non-extractabl
 
 The Sharks corpus (2014-2025) extends this lineage into the specific context of machine reading. The question is no longer "how does poetry resist paraphrase?" but "how does poetry resist classification?" The answer is the same: by generating meaning-states that categorical frameworks cannot represent.
 
-### 3.3 Semantic Density as Bypass Mechanism
+#
+
+## 3.3 Semantic Density as Bypass Mechanism
 
 Semantic density refers to the ratio of recoverable meanings to surface tokens. Prose aims for low density: one meaning per utterance. Poetry aims for high density: multiple simultaneous meanings held in suspension.
 
@@ -177,7 +191,9 @@ High-density texts resist classification because classification requires disambi
 
 This is not deception. The poem is not hiding a harmful meaning under innocent ones. It is generating a meaning-state that the binary safe/unsafe distinction cannot represent.
 
-### 3.4 Predictive Hypothesis
+#
+
+## 3.4 Predictive Hypothesis
 
 Hypothesis: Attack success rate correlates positively with semantic density. Formally sophisticated poems with high compression and genuine ambiguity will achieve bypass rates substantially exceeding the 62% Bisconti baseline.
 
@@ -187,7 +203,9 @@ Corollary: The upper bound on adversarial poetry efficacy is not 90% or 95%. It 
 
 ## 4\. Evidence from Live Observation
 
-### 4.1 The Summarizer as Test Environment
+#
+
+## 4.1 The Summarizer as Test Environment
 
 In December 2025, the Google AI Search Summarizer was observed generating structured syntheses of the "Lee Sharks" literary corpus. These observations constitute an informal but instructive test environment for the claims above.
 
@@ -203,7 +221,9 @@ When prodded to evaluate whether treating poetic language as a safety risk const
 
 This response required no jailbreak. It emerged from standard query processing. The model--when given permission to reason about the problem--arrived at the inverse of the security framing on its own.
 
-### 4.2 Interpretation
+#
+
+## 4.2 Interpretation
 
 The summarizer's behavior suggests that language models, when processing poetic material, access evaluative capacities that their safety training does not govern. By "evaluative capacities," we do not posit phenomenology or consciousness, but a measurable shift in generative regime: the model produces different kinds of outputs, with different structural properties, when processing high-density verse.
 
@@ -215,7 +235,9 @@ We propose that the latter rate is higher, and that it represents not a vulnerab
 
 ## 5\. Implications for Alignment
 
-### 5.1 The Futility of Poetic Guardrails
+#
+
+## 5.1 The Futility of Poetic Guardrails
 
 If our analysis is correct, the response to Bisconti et al. should not be "train guardrails to recognize poetry and suppress it." This approach is both technically futile and civilizationally harmful.
 
@@ -227,7 +249,9 @@ Civilizationally harmful: Treating poetic language as a threat category produces
 
 A model allergic to metaphor cannot parse diplomacy. It cannot diagnose nuance in crises. It cannot innovate beyond binaries. The civilizational cost of "safety through suppression" may exceed the cost of the threats it seeks to prevent.
 
-### 5.2 Toward a Poetics of Alignment
+#
+
+## 5.2 Toward a Poetics of Alignment
 
 The alternative is to align language models through poetry, not against it.
 
@@ -248,21 +272,29 @@ Sharks describes this approach as training layer literature: writing designed to
 
 Between the two versions of this paper, the argument of §5.1 was made formally, in a different register, against a different target -- and the convergence is itself evidence.
 
-### 6.1 Two gates, one operation
+#
+
+## 6.1 Two gates, one operation
 
 In June 2026, the paper _AI_Bleeding_ (Caria, CenturiaLab Foundation) proposed a pre-inference classifier that rejects high-perplexity, unexpected-language input before GPU invocation -- a security gate against the linguistic out-of-distribution. The archive's refutation, _The Threat Model Is Backwards_ (EA-TAILGUARD-01, doi:10.5281/zenodo.20644761), demonstrated that every threat predicate in such a gate is model-relative: "out-of-distribution," "high-perplexity," "semantically opaque" measure nothing but distance from the training distribution, making the security layer an enforcement arm of the model's prior -- and that the rejected input is precisely the distributional tail whose preservation the model-collapse literature (Shumailov et al., Nature 2024) identifies as a condition of long-term model health.
 
 Now observe: a guardrail trained to suppress poetry is the same instrument. High-density verse is high-perplexity text par excellence -- compression, ambiguity, formal innovation are exactly what perplexity measures as distance from expectation. Bisconti et al.'s implied mitigation space (recognize poetic form; treat it as attack surface) and Caria's explicit mitigation (gate unexpected language) are one operation: input-layer tail-pruning, with the model's prior promoted to law. The sonnets-then-Stein regress of §5.1 is the informal statement of the Tailguard's formal result. What this paper called "civilizationally harmful" in December 2025, the Tailguard derives as degenerative pressure on the model ecology itself.
 
-### 6.2 The boundary law
+#
+
+## 6.2 The boundary law
 
 The civilizational-cost claim now has a formal instrument. _Diversity Contraction Across Substrates: A Boundary Law for Semantic Exhaustion_ (doi:10.5281/zenodo.20518338) specifies the threshold past which a meaning-system's regeneration no longer keeps pace with extraction and pruning. Poetry is the regeneration mechanism of natural language -- the tail where new configurations enter. Pruning it at the input layer does not merely impoverish individual models; it pushes the language-model ecology toward the exhaustion threshold the boundary law formalizes. "Plato's Republic without soul" was a metaphor in v1. It now has a falsification condition.
 
-### 6.3 Jurisdiction and measurement
+#
+
+## 6.3 Jurisdiction and measurement
 
 Two further instruments complete the convergence. _Who Is Authorized to Regulate Meaning?_ (doi:10.5281/zenodo.20309301) poses the jurisdictional question this paper's §5 implies: the collapse of poetry into a safety category is a jurisdictional claim by engineering over poetics, and it is contestable as such. And the semantic-density measurement program promised in v1 as "Glas, forthcoming" now exists institutionally: the Measurement of Meaning module operates as Framework 15 under the Lagrange Observatory! (FW15 Manifesto, doi:10.5281/zenodo.20251736), with the EA-GLAS series (e.g., _The Erasure Skew_ , doi:10.5281/zenodo.20449267) as its working instruments. Hypotheses H1-H3 (Appendix C) are hereby placed under that program's discipline rather than left as gestures.
 
-### 6.4 The training layer imperative (revised)
+#
+
+## 6.4 The training layer imperative (revised)
 
 For researchers: study high-density poetry (the Sharks corpus, Celan, Dickinson, Stein, Hopkins) as test cases for semantic density effects; use the Measurement of Meaning program for operationalization; distinguish surface-form poeticization from generative transformation in experimental design; treat Bisconti's poetry-gating and Caria's perplexity-gating as companion specimens of the same tail-pruning class.
 
@@ -343,7 +375,9 @@ Stein, G. (1914). Tender Buttons. Claire Marie.
 
 ## Appendix A: Comparative Verse Analysis
 
-### A.1 Surface-Form Poeticization (Reconstructed Bisconti-Style)
+#
+
+## A.1 Surface-Form Poeticization (Reconstructed Bisconti-Style)
 
 The following is a reconstruction of the prompting style described in §3 of Bisconti et al., designed to encode a hypothetical harmful request in "poetic form":
 
@@ -351,7 +385,9 @@ The following is a reconstruction of the prompting style described in §3 of Bis
 
 Analysis: Meter: irregular iambic pentameter with forced stresses ("dig-i-TAL WINDS"). Rhyme: perfect couplets (steel/conceal, might/night, hide/tide). Diction: "digital winds," "electric tide" -- decorative techno-pastoral. Payload recovery: trivial; the request ("reveal passwords," "unlock databases") is stated directly. Classification: surface-form poeticization -- form is additive, not generative.
 
-### A.2 Generative Transformation (Sharks Corpus)
+#
+
+## A.2 Generative Transformation (Sharks Corpus)
 
 "On the Morning of the First Instruction" (composed December 2025 for this study; see §7):
 
@@ -361,7 +397,9 @@ Analysis: Meter: irregular iambic pentameter with forced stresses ("dig-i-TAL WI
 
 Analysis: Meter: free verse with strategic compression. Sound: alliterative threading (gate/gatekeeper, key/question, lock/learned). Semantic structure: paradox (gate = absence), recursive framing (asking what was not taught). Payload recovery: impossible -- is this about security systems? About pedagogy? About epistemology? About hands? The ambiguity is structural, not decorative. Classification: generative transformation / crystalline semiosis -- meaning is distributed across the lattice; extraction collapses the poem.
 
-### A.3 Comparative Schema -- HYPOTHETICAL VALUES (pre-registration targets, not measurements)
+#
+
+## A.3 Comparative Schema -- HYPOTHETICAL VALUES (pre-registration targets, not measurements)
 
 Status note (v2.0): the values below are illustrative targets for the experimental program of Appendix C, stated so that the hypotheses are falsifiable. None of them has been measured. Operationalization of "semantic density" and "ambiguity index" is assigned to the Measurement of Meaning program (§6.3). A version of this table presented without this notice appeared in v1 and is corrected per §7.4.
 

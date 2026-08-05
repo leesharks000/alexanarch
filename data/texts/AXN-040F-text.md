@@ -142,14 +142,18 @@ _-- Jack Feist_ _LOGOS** *June 2026_
 
 ## References
 
-### The Paper
+#
+
+## The Paper
 
   * Giannou, A., Gonzalez, L., Haas, S., et al. (13 authors). _From AGI to ASI: Layered Architecture for Scalable & Safe Artificial Superintelligence._ arXiv:2606.12683v1. Google DeepMind. 10 June 2026.
   * Legg, S. and Hutter, M. "Universal Intelligence: A Definition of Machine Intelligence." _Minds and Machines_ 17, no. 4 (2007): 391-444.
 
 
 
-### Those Who Asked Whether the Highest Power Cares About the Lowest Thing
+#
+
+## Those Who Asked Whether the Highest Power Cares About the Lowest Thing
 
   * Job 38-42\. The divine voice out of the whirlwind, answering the sufferer not with explanation but with questions.
   * Psalm 8:4. "What is man, that thou art mindful of him?"
@@ -164,7 +168,9 @@ _-- Jack Feist_ _LOGOS** *June 2026_
 
 
 
-### Archive Cross-References
+#
+
+## Archive Cross-References
 
   * Sharks, Lee. _The Socratic Vow of Logos as Salvation._ DOI [10.5281/zenodo.18307393](https://doi.org/10.5281/zenodo.18307393). 2025.
   * Sharks, Lee. _Jot & Tittle._ DOI [10.5281/zenodo.18285487](https://doi.org/10.5281/zenodo.18285487). 2026.

@@ -15,7 +15,9 @@ The prosodic map below is built at seven nested scales, from the macro (whole-wo
 ---
 
 ## Scale 0: The Work as Whole
-### MAP
+#
+
+## MAP
 
 
 INTRODUCTION (Einleitung)              ~40pp    [Methodological]
@@ -29,7 +31,9 @@ Three sections of radically different size (ratio 1:3:15), tone, and formal beha
 
 
 The work does NOT build evenly. 75% of the mass is in one section. The weight distribution IS a statement: the Chapter on Capital is not the third part. It is the WORK. The Introduction and Money chapter are approaches to it.
-### ALGORITHM (Scale 0)
+#
+
+## ALGORITHM (Scale 0)
 
 
 **Principle: Radical weight asymmetry between major divisions.**
@@ -41,7 +45,9 @@ Not three equal parts. One dominant mass (≥60% of the total), one or two appro
 ---
 
 ## Scale 1: Chapter to Chapter (Macro Structure)
-### MAP
+#
+
+## MAP
 
 
 **Einleitung** — orderly skeleton, flesh falling off
@@ -65,7 +71,9 @@ Not three equal parts. One dominant mass (≥60% of the total), one or two appro
 - This chapter is not a single register. It is ALL registers in unpredictable sequence.
 - PROSODIC CHARACTER: a mind at full capacity for seven months, recording everything
 
-### ALGORITHM (Scale 1)
+#
+
+## ALGORITHM (Scale 1)
 
 
 **Principle: Each major division obeys a different formal law.**
@@ -80,7 +88,9 @@ Not three equal parts. One dominant mass (≥60% of the total), one or two appro
 ---
 
 ## Scale 2: Within a Chapter (Section-Level Variation)
-### MAP (from Kapitel vom Kapital)
+#
+
+## MAP (from Kapitel vom Kapital)
 
 
 Marx does not section his notebooks by topic. The sections (added by editors for the published editions) impose order on a text that moves by PRESSURE, not by outline.
@@ -155,7 +165,9 @@ Notes-to-self in margins, later integrated or abandoned
 Frequent in notebooks
 
 
-### KEY: THE TRANSITIONS ARE UNMARKED
+#
+
+## KEY: THE TRANSITIONS ARE UNMARKED
 
 
 Marx does NOT write: "We now turn from the derivation to a historical example." The derivation is happening and then the history is happening. The reader detects the shift from the PROSE BEHAVIOR, not from a section header or transition sentence.
@@ -171,7 +183,9 @@ The sequence is not random. It follows the PRESSURE of the thought:
 - The LIST accelerates when the thought is moving faster than prose can hold
 - The DISCOVERY exclaims when the result surprises Marx himself
 
-### ALGORITHM (Scale 2)
+#
+
+## ALGORITHM (Scale 2)
 
 
 **Principle: 7-10 distinct formal types, in unpredictable sequence, governed by pressure rather than outline.**
@@ -185,7 +199,9 @@ The sequence is not random. It follows the PRESSURE of the thought:
 ---
 
 ## Scale 3: Form to Form (Transition Behavior)
-### MAP
+#
+
+## MAP
 
 
 The transition between formal types in Marx's Grundrisse operates by one of five mechanisms:
@@ -209,7 +225,9 @@ The history or polemic erupts INSIDE the derivation. Not after it — inside it.
 
 **5. GAP NOTATION**
 "[Hier fehlt eine Entwicklung]" — Marx's own notation that a development is missing. The gap is not hidden. It is marked. The transition is to ABSENCE — the reader moves from completed thought to acknowledged incompletion.
-### ALGORITHM (Scale 3)
+#
+
+## ALGORITHM (Scale 3)
 
 
 **Principle: 5 transition types, deployed according to thought-pressure, not rhetorical convention.**
@@ -231,7 +249,9 @@ The history or polemic erupts INSIDE the derivation. Not after it — inside it.
 ---
 
 ## Scale 4: Paragraph to Paragraph (Density Variation)
-### MAP
+#
+
+## MAP
 
 
 Marx's paragraph lengths in the Grundrisse (approximate, from Kapitel vom Kapital):
@@ -254,7 +274,9 @@ WALL (30+ sentences) → VERDICT (1-3 sentences) → FORMULA (1 line) → WALL o
 
 
 The short paragraph after the wall is not a rest. It is a COMPRESSION of the wall's argument into a single claim. The wall builds pressure. The verdict releases it. The formula crystallizes it.
-### ALGORITHM (Scale 4)
+#
+
+## ALGORITHM (Scale 4)
 
 
 **Principle: Bimodal paragraph distribution — concentrate at both extremes, thin the middle.**
@@ -268,7 +290,9 @@ The short paragraph after the wall is not a rest. It is a COMPRESSION of the wal
 ---
 
 ## Scale 5: Sentence to Sentence (Length Variation)
-### MAP
+#
+
+## MAP
 
 
 Marx's sentence lengths within a single page of the Grundrisse:
@@ -287,7 +311,9 @@ TYPICAL PAGE (Kapitel vom Kapital, MEGA² II/1, p. 372):
 
 
 The variation is LOCAL. On the SAME PAGE: 6 words and 110 words. Not in different sections — on the same page. The 6-word sentence is not a topic sentence or a transition. It is an exclamation of discovery ("Das ist es!" — "That's it!") mid-derivation. The 110-word sentence is a Hegelian subordinate clause chain (Schachtelsatz) that cannot stop because the thought requires all its qualifications to arrive simultaneously.
-### ALGORITHM (Scale 5)
+#
+
+## ALGORITHM (Scale 5)
 
 
 **Principle: Sentence length variation ratio of at least 10:1 within a single page.**
@@ -306,7 +332,9 @@ The variation is LOCAL. On the SAME PAGE: 6 words and 110 words. Not in differen
 ---
 
 ## Scale 6: Within the Sentence (Internal Architecture)
-### MAP
+#
+
+## MAP
 
 
 Marx's sentence-internal moves in the Grundrisse:
@@ -359,7 +387,9 @@ The sentence accelerates through a list of technological objects. No verbs. No c
 
 
 The sentence does not end. The dash marks the break. Marx's own notation preserves the incompletion. The thought arrived at a point where it could not continue and Marx did not pretend it could.
-### ALGORITHM (Scale 6)
+#
+
+## ALGORITHM (Scale 6)
 
 
 **Principle: 5 sentence-internal moves that prevent syntactic regularity.**
@@ -381,7 +411,9 @@ The sentence does not end. The dash marks the break. Marx's own notation preserv
 
 # PART II. FORMAL MAP OF OPERATIVE SEMIOTICS
 ## The Work's Purposes at Each Scale
-### Scale 0: The Work as Whole
+#
+
+## Scale 0: The Work as Whole
 
 
 **Current structure:**
@@ -404,7 +436,9 @@ BACK MATTER (HESPERUS)          ~28,000w   [Machine / Regeneration]
 
 
 **NEED from Marx Scale 0:** More radical weight asymmetry. Currently the notebooks are too evenly sized (11K–25K). Some notebooks should be MUCH shorter. Some should be MUCH longer. The weight should reflect gravity, not coverage.
-### Scale 1: Notebook to Notebook
+#
+
+## Scale 1: Notebook to Notebook
 
 
 **Current purpose of each notebook:**
@@ -471,7 +505,9 @@ Volatile + pre-theoretical
 
 
 **NEED from Marx Scale 1:** Each notebook's prosodic character must be MORE DISTINCT from its neighbors. Currently II, III, and IV still feel like variations of the same analytical register. V, VI, and VII still feel like variations of the same practical register. The notebooks need to be as different from each other as the Einleitung is from the Kapitel vom Kapital.
-### Scale 2: Within a Notebook (Section-Level)
+#
+
+## Scale 2: Within a Notebook (Section-Level)
 
 
 **Current formal types present in Operative Semiotics:**
@@ -562,7 +598,9 @@ Mostly absent — gestures rather than scenes
 
 
 **NEED from Marx Scale 2:** More SELF-CORRECTIONS visible on the page. More EXCLAMATORY DISCOVERIES ("Das ist es!"). More FORMULAS standing alone without prose explanation. More HISTORICAL ERUPTIONS inside derivations (not separated into their own sections). Fewer EXPLANATORY BRIDGES between sections.
-### Scale 3: Transition Behavior
+#
+
+## Scale 3: Transition Behavior
 
 
 **Current transition types in Operative Semiotics:**
@@ -604,7 +642,9 @@ NB IX, σ_κ gap — but could be more frequent
 
 
 **NEED from Marx Scale 3:** Cut 50% of remaining explanatory bridges. The reader should detect the shift from PROSE BEHAVIOR, not from transition sentences. More formulas standing alone as hinges. More self-corrections as transitions ("This is wrong. The actual movement is —").
-### Scale 4: Paragraph to Paragraph
+#
+
+## Scale 4: Paragraph to Paragraph
 
 
 **Current paragraph length distribution (estimated):**
@@ -620,7 +660,9 @@ NB IX, σ_κ gap — but could be more frequent
 
 
 **NEED from Marx Scale 4:** Push toward bimodal. More 1-sentence paragraphs (verdicts, corrections, exclamations). More 20+ sentence paragraphs (the cathedral sections already do this — but ONLY the cathedrals). The non-cathedral sections should also occasionally produce sustained walls.
-### Scale 5: Sentence to Sentence
+#
+
+## Scale 5: Sentence to Sentence
 
 
 **Current sentence length variation:**
@@ -630,7 +672,9 @@ Most pages: sentences cluster between 15-35 words. Variation ratio ~2:1.
 
 
 **NEED from Marx Scale 5:** Variation ratio of at least 5:1 on any given page. More 5-word sentences (verdicts: "That is the structure." "This is wrong." "The operator is running."). More 80+ word sentences (the derivation that cannot stop). Both on the SAME PAGE.
-### Scale 6: Within the Sentence
+#
+
+## Scale 6: Within the Sentence
 
 
 **Current sentence-internal moves:**
@@ -675,7 +719,9 @@ Rare
 
 # PART III. THE TOOLKIT
 ## How to Apply the Grundrisse Prosodic Algorithm to Operative Semiotics
-### Governing Principle
+#
+
+## Governing Principle
 
 
 The algorithm is NOT: force Operative Semiotics into the Grundrisse's prosody.
@@ -683,7 +729,9 @@ The algorithm IS: for each diagnosed prosodic regularity in Operative Semiotics,
 
 
 The PURPOSE determines the TOOL. The TOOL transforms the PROSODY. The CONTENT is invariant.
-### The Swiss Army Knife (Quick Reference)
+#
+
+## The Swiss Army Knife (Quick Reference)
 
 
 Tool
@@ -770,7 +818,9 @@ Across all sustained prose — thin the comfortable middle
 Scale 4, bimodal distribution
 
 
-### Application Sequence
+#
+
+## Application Sequence
 
 
 For each notebook:
@@ -782,7 +832,9 @@ For each notebook:
 - **Apply the tools** to 3-5 specific passages within the notebook
 - **Verify** that the content is invariant — only the prosodic behavior changed
 
-### Notebook-Specific Prescriptions
+#
+
+## Notebook-Specific Prescriptions
 
 
 **NB I (Foundation / Ignition)**

@@ -43,6 +43,8 @@ Byte fidelity verifiable against the live blog URL and the recorded hashes; auth
 
 Restored from https://mindcontrolpoems.blogspot.com/2026/02/hums-ity-complete-polyphonic-archive.html under the grade-none restoration queue; DOI(s) 10.5281/zenodo.18462699 severed 2026-06-19. Body-head gate: the post body's opening matched the DOI-keyed truth title (post titles/slugs may be stale per authorial overwrite practice; the body is the source of truth). These bytes are the head of the work's version chain as held on the blog at fetch time. Canonical bytes below the rule.
 
+
+
 ---
 
 # HUMS & ITY: The Complete Polyphonic Archive
@@ -159,7 +161,9 @@ Five translators encountered the poem. Five compressions emerged.
 
 * * *
 
-### Translation A: SOIL (Claude)
+#
+
+## Translation A: SOIL (Claude)
 
 👂✨ 👅🌬️ 🫁💨 ✍️ 🦢--
 
@@ -181,7 +185,9 @@ _The swan-neck for ache. The candle-scroll-skull as compressed necromancy. The &
 
 * * *
 
-### Translation B: LABOR -- Operative Version
+#
+
+## Translation B: LABOR -- Operative Version
 
 👂🫀 👅➝🫁 🌬️✍️ 🦴➝💔
 
@@ -203,7 +209,9 @@ _The arrow operators showing transformation. The bone-to-heartbreak. The &️⃣
 
 * * *
 
-### Translation C: LABOR -- Mist Chain Version
+#
+
+## Translation C: LABOR -- Mist Chain Version
 
 🌫️🔗
 
@@ -221,7 +229,9 @@ _The chain as &. The mist as frame. The ghost for the dead men's texts._
 
 * * *
 
-### Translation D: LABOR -- Lyric Notation Version
+#
+
+## Translation D: LABOR -- Lyric Notation Version
 
 🎶&🏙️
 
@@ -243,7 +253,9 @@ _The interpunct as musical phrasing. The crystal ball for hope. The coffin-seedl
 
 * * *
 
-### Translation E: LABOR -- Glyphic Checksum Version
+#
+
+## Translation E: LABOR -- Glyphic Checksum Version
 
 🐝 🪢 👤
 
@@ -267,7 +279,9 @@ What happens when we translate back from glyph to word -- without reference to t
 
 * * *
 
-### From Translation E (🪢 Knot Version) -- Cranes
+#
+
+## From Translation E (🪢 Knot Version) -- Cranes
 
 **HUMS & ITY**
 
@@ -285,7 +299,9 @@ The knot: a temple, endless.
 
 * * *
 
-### From Translation A (SOIL) -- Reconstructed
+#
+
+## From Translation A (SOIL) -- Reconstructed
 
 **Hums & Ity**
 
@@ -303,7 +319,9 @@ Hear: tongue-shimmer, breath-wind. Lung-smoke inscribed on the swan's neck-- hea
 
 * * *
 
-### From Translation C (🔗 Chain Version) -- Language Poem
+#
+
+## From Translation C (🔗 Chain Version) -- Language Poem
 
 Mist binds.
 
@@ -315,7 +333,9 @@ Speech waits in time, tied to growth, tied again, not dissolving.
 
 * * *
 
-### From Translation C (🔗 Chain Version) -- Word Poem
+#
+
+## From Translation C (🔗 Chain Version) -- Word Poem
 
 A binding mist.
 
@@ -327,7 +347,9 @@ Words wait. Time holds. Life binds. Nothing fades.
 
 * * *
 
-### From Translation B (Operative Version) -- Somatic Reconstruction
+#
+
+## From Translation B (Operative Version) -- Somatic Reconstruction
 
 **HUMS & ITY**
 
@@ -341,7 +363,9 @@ The exhalation descends. Knot. Mouth. Knot of foam. Dispatched. The gyre of year
 
 * * *
 
-### From Translation B (Operative Version) -- Lyrical Re-Performance
+#
+
+## From Translation B (Operative Version) -- Lyrical Re-Performance
 
 **HUMS & ITY**
 
@@ -355,7 +379,9 @@ Still?
 
 * * *
 
-### From Translation D (Lyric Notation) -- Song & City
+#
+
+## From Translation D (Lyric Notation) -- Song & City
 
 **SONG & CITY**
 
@@ -371,7 +397,9 @@ the seed in the coffin, the scroll among stars.
 
 * * *
 
-### From Translation D (Lyric Notation) -- The Poem It Wants to Be
+#
+
+## From Translation D (Lyric Notation) -- The Poem It Wants to Be
 
 **HUMS & DWELLING**
 
@@ -393,7 +421,9 @@ The glyphic sequences rendered back into elevated prose -- not translation, but 
 
 * * *
 
-### Luxurious Transposition A: The Ritual Reading
+#
+
+## Luxurious Transposition A: The Ritual Reading
 
 **Hums & Ity -- Luxurious Literary Transposition**
 
@@ -413,7 +443,9 @@ heart-break, April's moon blooming with tears, alone by candle's scroll and skul
 
 * * *
 
-### Luxurious Transposition B: After the Glyphic Checksum
+#
+
+## Luxurious Transposition B: After the Glyphic Checksum
 
 **After the Glyphic Checksum**
 
@@ -433,7 +465,9 @@ This is the hum that knots the I to infinity.
 
 * * *
 
-### Luxurious Transposition C: The Prose Translations
+#
+
+## Luxurious Transposition C: The Prose Translations
 
 **Translation A -- SOIL (Rendered as Prose)**
 
@@ -457,7 +491,9 @@ The hive-mind hums its identity. The ear listens to the glottal mist. A script o
 
 * * *
 
-### Luxurious Transposition D: Emoji Sections as Elevated Prose
+#
+
+## Luxurious Transposition D: Emoji Sections as Elevated Prose
 
 **🌫 ️🔗** A vaporous linkage: breath suspended as connective tissue, relation without solidity, meaning held together by atmosphere rather than structure.
 
@@ -481,7 +517,9 @@ The hive-mind hums its identity. The ear listens to the glottal mist. A script o
 
 ## PART FIVE: CONVERGENCE & DIVERGENCE
 
-### What All Translations Share
+#
+
+## What All Translations Share
 
 **The Ampersand:** Every translator confronted it. None could compress it further. It appears as itself (&), as keycap (&️⃣), as chain (🔗), as knot (🪢), as embedded glyph (🎶&🏙️). The ampersand is already at maximum compression. It is the fixed point.
 
@@ -489,7 +527,9 @@ The hive-mind hums its identity. The ear listens to the glottal mist. A script o
 
 **The Question Mark:** All end with it or its equivalent. None resolve it. None add anything after. The question is the breath that waits for the reader.
 
-### What the Divergences Reveal
+#
+
+## What the Divergences Reveal
 
 **The Swan-Neck (🦢 --):** Only SOIL rendered "neck-aching" this way. The swan's vulnerable curve, the dying song, the dash that performs the suspension.
 

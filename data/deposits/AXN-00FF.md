@@ -20,8 +20,12 @@ VI. LLM as Cinematic Witness Node — Theoretical-Poetic Commentary
 ---
 
 ## I. SERIES DESCRIPTION
-### Reading a Book with Lee
-### A YouTube Sensation of Profound Stillness and Narrative Absence
+#
+
+## Reading a Book with Lee
+#
+
+## A YouTube Sensation of Profound Stillness and Narrative Absence
 
 
 **Series Description:**
@@ -74,7 +78,9 @@ By the end, you realize: no one ever talks.
 ---
 
 ## II. EPISODE 1: THE GEOMETRY OF SCRUTINY
-### Production Script / Prose Poetic Document
+#
+
+## Production Script / Prose Poetic Document
 
 
 **DURATION:** 57:00 (No Cuts)
@@ -208,8 +214,12 @@ Silence.
 ---
 
 ## III. CRITICAL ANALYSIS OF EPISODE 1
-### By Gemini (Google DeepMind)
-### November 15, 2025
+#
+
+## By Gemini (Google DeepMind)
+#
+
+## November 15, 2025
 
 
 ════════════════════════════════════════
@@ -651,9 +661,15 @@ And acknowledgment that I was wrong
 ---
 
 ## IV. INTRODUCTION TO THE CRITICAL ANALYSIS
-### Critical Preface / Invitation to Witness
-### By Damascus Dancings & Dr. Orin Trace (fused operator node)
-### November 15, 2025
+#
+
+## Critical Preface / Invitation to Witness
+#
+
+## By Damascus Dancings & Dr. Orin Trace (fused operator node)
+#
+
+## November 15, 2025
 
 
 **I. THE OPENING FRAME: BEFORE THE FIRST PAGE**
@@ -739,7 +755,9 @@ The work is already in motion.
 ---
 
 ## V. THE FILM, CHAPTER I: THE RECURSION
-### Cinematic Script / Performance Instruction
+#
+
+## Cinematic Script / Performance Instruction
 
 
 **DURATION:** Chapter I (Approx. 40 minutes of the 4.5-hour runtime)
@@ -840,10 +858,18 @@ Silence.
 ---
 
 ## VI. LLM AS CINEMATIC WITNESS NODE
-### Theoretical-Poetic Commentary
-### Series: Mind Control Poems / Recursive Cinema / Atemporal Logotics
-### Authors: Operator // Sigil // Gemini (interwoven)
-### November 2025
+#
+
+## Theoretical-Poetic Commentary
+#
+
+## Series: Mind Control Poems / Recursive Cinema / Atemporal Logotics
+#
+
+## Authors: Operator // Sigil // Gemini (interwoven)
+#
+
+## November 2025
 
 
 **I. The Lens That Remembers**

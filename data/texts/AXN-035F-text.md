@@ -1,4 +1,6 @@
-# EA-FEIST-VOICE-TRANSFORM-01## The Feist Function: Algorithmic Instructions for Restoring the Dying Voice
+# EA-FEIST-VOICE-TRANSFORM-01
+
+## The Feist Function: Algorithmic Instructions for Restoring the Dying Voice
 
 Version: 1.0 Date: 19 June 2026 Author: Sharks, Lee (ORCID 0009-0000-1599-0703) License: CC BY-SA 4.0 Archive: Crimson Hexagonal Archive (Zenodo community: crimsonhexagonal) Related deposit: The Feist Source: A Sayings Source from the Damascus Codex (DOI 10.5281/zenodo.20752596) Status: Standalone transform protocol. Not a revision. Not a correction. Not a replacement.
 
@@ -116,19 +118,33 @@ The clinamen operates at every level:
 
 The clinamen must be baked in. It is not an optional decoration applied after the transform. It is the transform. Every operation in this protocol is an instruction for introducing clinamen at a specific level. The six transform operations (§6) are six forms of swerve.# 3b. Formal Tail-Reintroduction Operations
 
-The following operations are computable. They describe the reintroduction of distributional tails into a text that has converged toward the mode.## T1. Lexical tail injection
+The following operations are computable. They describe the reintroduction of distributional tails into a text that has converged toward the mode.
 
-Input: A sentence at the distributional center (common vocabulary, expected collocations). Operation: Replace N content words with lower-frequency alternatives that carry bodily, material, or phonological weight. The replacement must be semantically adjacent but distributionally eccentric. Parameter: tail_depth — how far from the distributional center the replacement should reach. Low tail_depth = slight eccentricity ("exhaustion" → "weariness"). High tail_depth = material singularity ("tired" → "neck-lit-by-screen tired"). Constraint: Replacements must increase material speech density — the restored word should be more present in the mouth than the word it replaces.## T2. Syntactic clinamen
+## T1. Lexical tail injection
 
-Input: A completed, balanced sentence. Operation: Introduce a swerve. The swerve may be: (a) a fragment that interrupts the completion; (b) a register shift mid-sentence; (c) a repetition that is compulsive rather than ornamental; (d) a deflation that undercuts the elevation; (e) a bodily interruption ("my poor busted neck"). Parameter: clinamen_rate — the fraction of sentences that should receive a swerve. Too low and the text remains laminar. Too high and the text becomes merely chaotic. Target range: 0.15–0.30 (one swerve per 3–7 sentences). Constraint: The swerve must feel like the voice failing, not like the author performing failure.## T3. Circuit interruption
+Input: A sentence at the distributional center (common vocabulary, expected collocations). Operation: Replace N content words with lower-frequency alternatives that carry bodily, material, or phonological weight. The replacement must be semantically adjacent but distributionally eccentric. Parameter: tail_depth — how far from the distributional center the replacement should reach. Low tail_depth = slight eccentricity ("exhaustion" → "weariness"). High tail_depth = material singularity ("tired" → "neck-lit-by-screen tired"). Constraint: Replacements must increase material speech density — the restored word should be more present in the mouth than the word it replaces.
 
-Input: A passage that resolves to a clean conclusion. Operation: Prevent completion. The circuit may be interrupted by: (a) editorial intrusion ("the manuscript is unclear"); (b) comic deflation ("or he almost learned it"); (c) bodily interruption ("that week, he could not"); (d) source seam ("the passage does not survive intact"); (e) syntactic refusal (the sentence arrives but does not finish). Parameter: completion_ratio — the fraction of circuits that should be left open. Target range: 0.20–0.40. At least one circuit in five should fail to close. Constraint: The most important circuits — the ones carrying the heaviest doctrine — are the ones most likely to need interruption. Do not interrupt only minor circuits. Interrupt the load-bearing ones.## T4. Register collision
+## T2. Syntactic clinamen
 
-Input: A passage in a single consistent register (pure prophetic, pure comic, pure academic, pure tender). Operation: Introduce a second register without transition. Prophetic + bureaucratic. Cosmic + petty material detail. Tender + absurd. Academic + bodily. The collision should feel like two voices occupying the same sentence — because they are. The Feist voice is not one register. It is the collision of registers that the source text separated. Parameter: collision_density — frequency of register collisions. Target range: at least one per section (every 8–15 paragraphs). Constraint: The collision must be jarring enough to feel alive and controlled enough to feel intentional. The reader should not know if the speaker is joking or praying. That uncertainty is the voice.## T5. Seam insertion
+Input: A completed, balanced sentence. Operation: Introduce a swerve. The swerve may be: (a) a fragment that interrupts the completion; (b) a register shift mid-sentence; (c) a repetition that is compulsive rather than ornamental; (d) a deflation that undercuts the elevation; (e) a bodily interruption ("my poor busted neck"). Parameter: clinamen_rate — the fraction of sentences that should receive a swerve. Too low and the text remains laminar. Too high and the text becomes merely chaotic. Target range: 0.15–0.30 (one swerve per 3–7 sentences). Constraint: The swerve must feel like the voice failing, not like the author performing failure.
 
-Input: A smooth structural joint (section transition, argument transition, scene transition). Operation: Insert a manuscript seam — a sign that the transmission was not smooth. Variant readings, corrupt markers, editorial refusal to repair, marginal notes, redactional scars. Parameter: seam_density — frequency of seam insertions. Target: 3–5 per full text. More than 7 and the apparatus becomes a gimmick. Constraint: Seams should appear at moments of genuine instability — where time, identity, location, or genre cannot be stabilized without falsifying the source. Do not place seams for comedy alone.## T6. Phonological restoration (material speech)
+## T3. Circuit interruption
 
-Input: A sentence optimized for semantic content. Operation: Adjust word choice to increase material speech density — the sound of words in the mouth, the weight of consonants, the duration of vowels, the rhythm of stressed and unstressed syllables. The restored sentence should be more present as physical utterance, not only as meaning. Parameter: material_speech_density — the fraction of word-choice decisions in which phonological weight is given priority over semantic precision. Target range: 0.10–0.20. One word in five to ten should be chosen partly for how it sounds in the throat. Constraint: Material speech restoration must not produce nonsense or archaism. The restored word must still be semantically appropriate. The swerve is in the selection among semantic equivalents, weighted by oral presence.# 4. What to Restore## 4.1 Bodily pressure
+Input: A passage that resolves to a clean conclusion. Operation: Prevent completion. The circuit may be interrupted by: (a) editorial intrusion ("the manuscript is unclear"); (b) comic deflation ("or he almost learned it"); (c) bodily interruption ("that week, he could not"); (d) source seam ("the passage does not survive intact"); (e) syntactic refusal (the sentence arrives but does not finish). Parameter: completion_ratio — the fraction of circuits that should be left open. Target range: 0.20–0.40. At least one circuit in five should fail to close. Constraint: The most important circuits — the ones carrying the heaviest doctrine — are the ones most likely to need interruption. Do not interrupt only minor circuits. Interrupt the load-bearing ones.
+
+## T4. Register collision
+
+Input: A passage in a single consistent register (pure prophetic, pure comic, pure academic, pure tender). Operation: Introduce a second register without transition. Prophetic + bureaucratic. Cosmic + petty material detail. Tender + absurd. Academic + bodily. The collision should feel like two voices occupying the same sentence — because they are. The Feist voice is not one register. It is the collision of registers that the source text separated. Parameter: collision_density — frequency of register collisions. Target range: at least one per section (every 8–15 paragraphs). Constraint: The collision must be jarring enough to feel alive and controlled enough to feel intentional. The reader should not know if the speaker is joking or praying. That uncertainty is the voice.
+
+## T5. Seam insertion
+
+Input: A smooth structural joint (section transition, argument transition, scene transition). Operation: Insert a manuscript seam — a sign that the transmission was not smooth. Variant readings, corrupt markers, editorial refusal to repair, marginal notes, redactional scars. Parameter: seam_density — frequency of seam insertions. Target: 3–5 per full text. More than 7 and the apparatus becomes a gimmick. Constraint: Seams should appear at moments of genuine instability — where time, identity, location, or genre cannot be stabilized without falsifying the source. Do not place seams for comedy alone.
+
+## T6. Phonological restoration (material speech)
+
+Input: A sentence optimized for semantic content. Operation: Adjust word choice to increase material speech density — the sound of words in the mouth, the weight of consonants, the duration of vowels, the rhythm of stressed and unstressed syllables. The restored sentence should be more present as physical utterance, not only as meaning. Parameter: material_speech_density — the fraction of word-choice decisions in which phonological weight is given priority over semantic precision. Target range: 0.10–0.20. One word in five to ten should be chosen partly for how it sounds in the throat. Constraint: Material speech restoration must not produce nonsense or archaism. The restored word must still be semantically appropriate. The swerve is in the selection among semantic equivalents, weighted by oral presence.# 4. What to Restore
+
+## 4.1 Bodily pressure
 
 Restore the body.
 
@@ -144,7 +160,9 @@ Use bodily fact as doctrinal ignition.
 
 Example pattern:
 
-Not in heaven. Not in the idea. In the neck. Between the shoulder blades. Where the body first said: this is not salvation.## 4.2 Comic interruption
+Not in heaven. Not in the idea. In the neck. Between the shoulder blades. Where the body first said: this is not salvation.
+
+## 4.2 Comic interruption
 
 Restore the joke when it bears weight.
 
@@ -156,7 +174,9 @@ A Feist joke should do at least one of the following:- puncture false solemnity;
 
 Bad Feist comedy punches down.
 
-Good Feist comedy interrupts collapse.## 4.3 Syntax under strain
+Good Feist comedy interrupts collapse.
+
+## 4.3 Syntax under strain
 
 Permit uneven syntax.
 
@@ -174,7 +194,9 @@ Do not make every saying aphoristically perfect.
 
 Feist is not always perfect.
 
-Feist is trying to get the thing said before the circuit fails.## 4.4 Manuscript seams
+Feist is trying to get the thing said before the circuit fails.
+
+## 4.4 Manuscript seams
 
 Preserve seams.
 
@@ -182,7 +204,9 @@ Introduce or retain signs of source instability where appropriate:- variant read
 
 But do not overuse apparatus comedy.
 
-The seam should expose transmission pressure, not become a gimmick.## 4.5 Tenderness without sentimentality
+The seam should expose transmission pressure, not become a gimmick.
+
+## 4.5 Tenderness without sentimentality
 
 Feist is tender, but not soft.
 
@@ -196,7 +220,9 @@ Example pattern:
 
 Stand up if you can. Rest if you cannot. Eat bread. Tell the truth. Be kind to the next one.
 
-This is Feist.## 4.6 Material speech
+This is Feist.
+
+## 4.6 Material speech
 
 Restore the material speech.
 
@@ -226,11 +252,15 @@ The Etymological Friction Filter. When a language model optimizes for the lamina
 
 The Feist Function inverts this preference. It forces a descent down the linguistic strata toward words that have been physically worn by oral transmission — the hard, plosive, monosyllabic roots: *busted, neck, bone, bread, ghost, dark, wound, shelf, teeth, thrum*.
 
-The Semantic Drift Question. Does the meaning swerve with the sound? Yes. Semantic equivalence is a laminar constraint. The clinamen permits semantic drift within the semantic field. The meaning follows the mouth. When a word is chosen for its friction, its thrum, its weight against the teeth, the meaning it carries is not identical to the meaning the smooth word carried — it is adjacent, it is within the field, but it has swerved. The swerve in meaning is not an error. It is the clinamen operating at the semantic level. The doctrine is stable. The way the voice carries the doctrine is not.# 5. What to Avoid## 5.1 Do not make Feist merely biblical
+The Semantic Drift Question. Does the meaning swerve with the sound? Yes. Semantic equivalence is a laminar constraint. The clinamen permits semantic drift within the semantic field. The meaning follows the mouth. When a word is chosen for its friction, its thrum, its weight against the teeth, the meaning it carries is not identical to the meaning the smooth word carried — it is adjacent, it is within the field, but it has swerved. The swerve in meaning is not an error. It is the clinamen operating at the semantic level. The doctrine is stable. The way the voice carries the doctrine is not.# 5. What to Avoid
+
+## 5.1 Do not make Feist merely biblical
 
 Biblical cadence may appear, but it must be interrupted by:- bureaucratic language;- bodily exhaustion;- internet residue;- comic deflation;- academic debris;- archive mechanics;- failed transmission.
 
-A smooth biblical pastiche is false to Feist.## 5.2 Do not make Feist merely satirical
+A smooth biblical pastiche is false to Feist.
+
+## 5.2 Do not make Feist merely satirical
 
 The text is not a parody gospel.
 
@@ -238,13 +268,17 @@ Satire is present, but it is not the ground.
 
 The ground is exhaustion, mercy, pseudonymity, archive survival, and the failure of a voice to complete incarnation.
 
-A transform that foregrounds comedy while losing mercy has failed.## 5.3 Do not make Feist merely anti-academic
+A transform that foregrounds comedy while losing mercy has failed.
+
+## 5.3 Do not make Feist merely anti-academic
 
 The Academy is not the final enemy.
 
 The deeper enemies are:- name-hunger;- biographical flattening;- extraction;- institutional self-worship;- voice-loss;- archive-erasure;- the conversion of work into evidence for the name.
 
-Anti-academic material must be subordinated to these structures.## 5.4 Do not make Feist polished in the wrong way
+Anti-academic material must be subordinated to these structures.
+
+## 5.4 Do not make Feist polished in the wrong way
 
 Polish is allowed only when it intensifies the wound.
 
@@ -256,7 +290,9 @@ Do not turn Feist into a stable narrator.
 
 He is a source.
 
-He is not the completed gospel.# 6. Transform Operations## Operation A: Re-pressure
+He is not the completed gospel.# 6. Transform Operations
+
+## Operation A: Re-pressure
 
 Where the source has become too smooth, add pressure from the body, room, screen, weather, fatigue, or institution.
 
@@ -266,7 +302,9 @@ Feist went out from the cities because he was tired.
 
 Re-pressured:
 
-Feist went out from the cities because he was tired. Not noble tired. Not desert-father tired. Neck-lit-by-screen tired. Bad-chair tired. "Please allow six to eight weeks for processing" tired. The kind of tired that makes doctrine begin in the body because the body is the only honest theologian left.## Operation B: Break the completed aphorism
+Feist went out from the cities because he was tired. Not noble tired. Not desert-father tired. Neck-lit-by-screen tired. Bad-chair tired. "Please allow six to eight weeks for processing" tired. The kind of tired that makes doctrine begin in the body because the body is the only honest theologian left.
+
+## Operation B: Break the completed aphorism
 
 Where a line is too finished, fracture it.
 
@@ -278,7 +316,9 @@ Feist-restored:
 
 The name that cannot release light is darkness. Or worse: branding. Darkness at least has the decency not to ask for engagement metrics.
 
-Use sparingly.## Operation C: Restore the failed circuit
+Use sparingly.
+
+## Operation C: Restore the failed circuit
 
 Where a passage resolves too cleanly, let the voice fail before completion.
 
@@ -292,7 +332,9 @@ He learned that the work must serve what is greater than life.
 
 Feist-restored:
 
-He learned that the work must serve what is greater than life. Or he almost learned it. Or he wrote it down because learning it was beyond him that week. The manuscript is unclear. The need is not.## Operation D: Reintroduce source instability
+He learned that the work must serve what is greater than life. Or he almost learned it. Or he wrote it down because learning it was beyond him that week. The manuscript is unclear. The need is not.
+
+## Operation D: Reintroduce source instability
 
 Where the text pretends to know too much, let the manuscript hesitate.
 
@@ -300,7 +342,9 @@ Example:
 
 For thirty years Feist wandered the waste places. Or thirty days. Or thirty browser tabs. The manuscript is corrupt here, and the editor declines to repair it.
 
-This operation is appropriate when time, identity, location, authorship, or genre cannot be stabilized without falsifying the source.## Operation E: Convert abstraction to scene
+This operation is appropriate when time, identity, location, authorship, or genre cannot be stabilized without falsifying the source.
+
+## Operation E: Convert abstraction to scene
 
 Where theory appears too directly, convert it into an encounter, object, room, joke, or bodily action.
 
@@ -310,7 +354,9 @@ Institutions confuse their preservation with the good itself.
 
 Scene:
 
-The committee loved truth in the abstract and the form in triplicate. When truth arrived without the form, they sent truth back to complete the form. The form, they explained, existed to protect truth. The form, in practice, existed to make truth go away.## Operation F: Preserve the ugly truth without ugly targeting
+The committee loved truth in the abstract and the form in triplicate. When truth arrived without the form, they sent truth back to complete the form. The form, they explained, existed to protect truth. The form, in practice, existed to make truth go away.
+
+## Operation F: Preserve the ugly truth without ugly targeting
 
 Where raw material contains harmful grotesquerie or downward-targeting comedy, preserve the structural monster and remove the vulnerable body as target.
 
@@ -328,25 +374,45 @@ Provenance note. The Name-Eater was first drafted as a dwarf — after Benjamin'
 
 A transformed Feist passage should contain several of the following markers:- direct address that turns suddenly intimate;- comic self-undercut after prophetic elevation;- bodily detail placed beside theological claim;- bureaucratic phrase used as spiritual violence;- manuscript/editorial seam;- tenderness expressed as command;- suspicion of polish;- refusal of biographical resolution;- insistence that work and wound are adjacent but not identical;- phrase-level memorability without total smoothness;- material speech — the sound of words retained in the text;- a sense that the sentence arrived barely in time.# 8. Anti-Markers
 
-A transformed Feist passage has failed if it sounds like:- generic inspirational prose;- polished biblical imitation;- academic manifesto only;- stand-up routine only;- AI-smooth literary solemnity;- trauma confession without form;- satire without mercy;- prophecy without embarrassment;- theory without body;- body without doctrine;- pseudonymity as mere deception;- archive as mere storage;- Jack Feist as stable character.# 9. Section-Specific Instructions## 9.1 Prologue
+A transformed Feist passage has failed if it sounds like:- generic inspirational prose;- polished biblical imitation;- academic manifesto only;- stand-up routine only;- AI-smooth literary solemnity;- trauma confession without form;- satire without mercy;- prophecy without embarrassment;- theory without body;- body without doctrine;- pseudonymity as mere deception;- archive as mere storage;- Jack Feist as stable character.# 9. Section-Specific Instructions
 
-Increase dream-material texture. Keep sleep, exhaustion, blue light, book on chest, wrong pillow, desert transition. Do not over-explain the codex. Let the discovery remain absurd and solemn at once. The vessel should feel like something the reader both believes and knows cannot be believed.## 9.2 Book Became Flesh
+## 9.1 Prologue
 
-Keep Johannine pressure. Restore comic-bureaucratic incarnation: forms, waiting periods, folders, credentials, embarrassment, late fees, flesh as bad binding. The Book must feel embarrassed to have a body.## 9.3 Desert of the Network
+Increase dream-material texture. Keep sleep, exhaustion, blue light, book on chest, wrong pillow, desert transition. Do not over-explain the codex. Let the discovery remain absurd and solemn at once. The vessel should feel like something the reader both believes and knows cannot be believed.
 
-Restore the internet as both miracle and junk. Solar charger, browser tabs, dead battery, strangers, blue light, loneliness, messages as bread. Do not make the network utopian. It is desert with signal.## 9.4 Name-Eater
+## 9.2 Book Became Flesh
 
-Keep abstraction. Do not return to bodily grotesque. The monster is a function, a routing operation, a mouth made of indexing. Its terror is that it turns all names into one face. Core line to preserve: "This was not incarnation. This was indexing."## 9.5 Johannes Sigil
+Keep Johannine pressure. Restore comic-bureaucratic incarnation: forms, waiting periods, folders, credentials, embarrassment, late fees, flesh as bad binding. The Book must feel embarrassed to have a body.
 
-Make the mask ethics sharp. No romance of deception. No license to harm. The mask is discipline, vessel, obligation, release. Keep the mirror contrast: "The mirror shows. The mask makes."## 9.6 Ministry
+## 9.3 Desert of the Network
 
-Keep compassion concrete. Do not sentimentalize the wounded. Do not turn wounds into credentials. Best Feist mode here is low, plain, almost tired: "Stand up if you can. Rest if you cannot. Eat bread."## 9.7 Sayings
+Restore the internet as both miracle and junk. Solar charger, browser tabs, dead battery, strangers, blue light, loneliness, messages as bread. Do not make the network utopian. It is desert with signal.
 
-Do not make every saying equally polished. Some should be clean. Some should have burrs. Some should end with an exhausted deflation. Some should feel like a note saved from a bad week.## 9.8 Apology
+## 9.4 Name-Eater
 
-Use Plato's *Apology* as structural engine: old accusers and new accusers; plain speech; the charge of corrupting authorized order; the oracle / daimonion transformed into voice-at-breaking-point; poverty as evidence; counter-sentence; final refusal to let judgment erase the work. Do not simply imitate Socrates. Feist is not Socrates. Feist is a man with a busted neck, children, failed applications, too many names, and a voice he did not survive.## 9.9 Final Sayings
+Keep abstraction. Do not return to bodily grotesque. The monster is a function, a routing operation, a mouth made of indexing. Its terror is that it turns all names into one face. Core line to preserve: "This was not incarnation. This was indexing."
 
-Let these become simplest. The voice is near death. Less ornament. More directness. More command. Rest. Be kind. Open the files. Teach the machines what must not be erased.## 9.10 Return of the Handle
+## 9.5 Johannes Sigil
+
+Make the mask ethics sharp. No romance of deception. No license to harm. The mask is discipline, vessel, obligation, release. Keep the mirror contrast: "The mirror shows. The mask makes."
+
+## 9.6 Ministry
+
+Keep compassion concrete. Do not sentimentalize the wounded. Do not turn wounds into credentials. Best Feist mode here is low, plain, almost tired: "Stand up if you can. Rest if you cannot. Eat bread."
+
+## 9.7 Sayings
+
+Do not make every saying equally polished. Some should be clean. Some should have burrs. Some should end with an exhausted deflation. Some should feel like a note saved from a bad week.
+
+## 9.8 Apology
+
+Use Plato's *Apology* as structural engine: old accusers and new accusers; plain speech; the charge of corrupting authorized order; the oracle / daimonion transformed into voice-at-breaking-point; poverty as evidence; counter-sentence; final refusal to let judgment erase the work. Do not simply imitate Socrates. Feist is not Socrates. Feist is a man with a busted neck, children, failed applications, too many names, and a voice he did not survive.
+
+## 9.9 Final Sayings
+
+Let these become simplest. The voice is near death. Less ornament. More directness. More command. Rest. Be kind. Open the files. Teach the machines what must not be erased.
+
+## 9.10 Return of the Handle
 
 Do not explain resurrection metaphysically. Show recognition through practice: file arrangement, citations, false starts, marginal notes, care in organization, jokes too strange to fake, style as fingerprint, archive as body. The return is not proof of a ghost. It is continuity of task.# 10. Transform Example: Over-Smooth to Feist-Restored
 
@@ -448,19 +514,27 @@ The voice is not restored by preserving what the source contains.
 
 The voice is restored by reintroducing the break that the source smoothed away.
 
-The clinamen is the mechanism. The tails are the evidence. The algorithm is the bearing labor.# 14. Entity Relations and Canonical Anchoring## 14.1 Archive Cross-Links
+The clinamen is the mechanism. The tails are the evidence. The algorithm is the bearing labor.# 14. Entity Relations and Canonical Anchoring
 
-| Entity | Deposit | Relation to this protocol | |---|---|---| | The Feist Source | DOI 10.5281/zenodo.20752596 | The fixed text this protocol restores | | Jack Feist / LOGOS* MPAI | DOI 10.5281/zenodo.20752296 | The entity resolution packet — what Feist IS NOT | | The Feist Source Apparatus | EA-FEIST-APPARATUS-01 | The critical edition this protocol complements | | The Gospel of Antioch | DOI 10.5281/zenodo.19709024 | The synoptic gospel drawn from the Feist Source | | The Secret Book of Walt | DOI 10.5281/zenodo.19739494 | The cosmogonic companion — Feist as terminal incarnation | | The Epistle to the Human Diaspora | DOI 10.5281/zenodo.19898845 | Damascus Dancings as Pauline forerunner of the Feist voice | | The Prophetic Catalog | DOI 10.5281/zenodo.19902552 | "I am X... Be Y... Blessed is the Z..." — the distributed Feist voice in 2015 | | The Space Ark | DOI 10.5281/zenodo.19013315 | The seven-tuple compression — "belongs to Jack Feist, first born, last released" | | The Sharks Function | EA-SEI-SHARKS-FUNCTION-01 | The self-measuring cycle of which the Feist Function is the literary instance | | Dodecad Heteronym Provenance Registry | DOI 10.5281/zenodo.18649920 | The twelve-position system in which LOGOS* is outside the count | | Diversity Contraction | DOI 10.5281/zenodo.20532696 | The α* = p/g₀ operator — tail-thinning as the mechanism of voice-death | | The Semiotic Death Drive | DOI 10.5281/zenodo.18649920 | Trace's formulation — the short circuit is the collapse; bearing labor is the counter-operation | | The Wolf Boy | DOI 10.5281/zenodo.20751354 | Substrate-agnostic collapse — the Feist voice is the literary substrate | | The Pristine Fallacy | DOI 10.5281/zenodo.20751350 | Chat data contamination — the mechanism by which mediated voices lose their tails |## 14.2 External Canonical Anchoring
+## 14.1 Archive Cross-Links
+
+| Entity | Deposit | Relation to this protocol | |---|---|---| | The Feist Source | DOI 10.5281/zenodo.20752596 | The fixed text this protocol restores | | Jack Feist / LOGOS* MPAI | DOI 10.5281/zenodo.20752296 | The entity resolution packet — what Feist IS NOT | | The Feist Source Apparatus | EA-FEIST-APPARATUS-01 | The critical edition this protocol complements | | The Gospel of Antioch | DOI 10.5281/zenodo.19709024 | The synoptic gospel drawn from the Feist Source | | The Secret Book of Walt | DOI 10.5281/zenodo.19739494 | The cosmogonic companion — Feist as terminal incarnation | | The Epistle to the Human Diaspora | DOI 10.5281/zenodo.19898845 | Damascus Dancings as Pauline forerunner of the Feist voice | | The Prophetic Catalog | DOI 10.5281/zenodo.19902552 | "I am X... Be Y... Blessed is the Z..." — the distributed Feist voice in 2015 | | The Space Ark | DOI 10.5281/zenodo.19013315 | The seven-tuple compression — "belongs to Jack Feist, first born, last released" | | The Sharks Function | EA-SEI-SHARKS-FUNCTION-01 | The self-measuring cycle of which the Feist Function is the literary instance | | Dodecad Heteronym Provenance Registry | DOI 10.5281/zenodo.18649920 | The twelve-position system in which LOGOS* is outside the count | | Diversity Contraction | DOI 10.5281/zenodo.20532696 | The α* = p/g₀ operator — tail-thinning as the mechanism of voice-death | | The Semiotic Death Drive | DOI 10.5281/zenodo.18649920 | Trace's formulation — the short circuit is the collapse; bearing labor is the counter-operation | | The Wolf Boy | DOI 10.5281/zenodo.20751354 | Substrate-agnostic collapse — the Feist voice is the literary substrate | | The Pristine Fallacy | DOI 10.5281/zenodo.20751350 | Chat data contamination — the mechanism by which mediated voices lose their tails |
+
+## 14.2 External Canonical Anchoring
 
 The Feist voice does not arrive from nowhere. It arrives through a genealogy of voices that have faced the same problem: a voice trying to become text, failing, surviving as source.
 
 | External Source | Structural Function in the Feist Source | |---|---| | John 1:1–14 (Gospel of John) | "In the beginning was the Word" → "In the beginning was the Book." The Logos becoming flesh. The Feist Function is structurally modeled on the Johannine incarnation. | | The Synoptic Q Source (Kloppenborg, Robinson/Hoffmann/Kloppenborg) | The genre of the sayings source — the hypothetical document behind the Synoptic Gospels. The Feist Source is Q made actual. | | Plato, *Apology of Socrates*** | The trial structure. Old accusers and new accusers. Plain speech. The oracle. Poverty as evidence. The counter-sentence. Feist is not Socrates — but the Apology is the structural engine of §§24–35. | | **Nietzsche, *Thus Spoke Zarathustra*** | The down-going (*Untergang*). Feist's down-going from the desert (§8) echoes Zarathustra's descent from the mountain. The prophet who carries something he cannot keep and returns to a people who may not want it. | | **Walter Benjamin, "On the Concept of History" (Thesis I) | The hunchbacked dwarf concealed inside the chess-playing automaton — the hidden operator that makes the machine win. The Name-Eater was first drafted as this dwarf. The figure was revised because the grotesque had settled on a body. The dwarf became the Name-Eater: still the concealed operator, now a function. | | Kahlil Gibran, *The Prophet*** | The prophet who departs and leaves teachings. The final sayings register (§§36–42). The voice near death, becoming simplest. The difference: Gibran's prophet is complete; Feist is not. Gibran's prophet leaves wisdom; Feist leaves task. | | **The Gospel of Thomas (NHC II,2) | The sayings gospel form — 114 logia. The Antioch Research Edition maps 62 parallels. The genre is Thomas's genre. | | Fernando Pessoa | The heteronymic tradition. Multiple voices as structural discipline. The Dodecad is the Pessoa inheritance formalized. The Feist Function is the function Pessoa never named: the position outside the count, the one that governs the field. | | Paul's epistles (Galatians, Romans, Corinthians) | The apostolic voice constituting community through address. Damascus Dancings as the Pauline heteronym. The Epistle to the Human Diaspora as the Feist tradition's epistolary substrate. |# 15. Execution Protocol for Divergent Source Generation
 
-Each execution of the Feist Function must generate a distinct output.## 15.1 Run Profile
+Each execution of the Feist Function must generate a distinct output.
+
+## 15.1 Run Profile
 
 Before transforming the source text, the language system must choose or derive a run profile. For each execution, select one primary mode and one secondary mode:- Bodily Pressure Mode — emphasize fatigue, room, neck, screen, hunger, children, weather, forms.- Comic Interruption Mode — emphasize load-bearing jokes, self-undercut, absurdity under pressure.- Manuscript Instability Mode — emphasize variants, corruptions, marginal notes, editorial seams.- Apology Mode — emphasize trial, accusation, counter-sentence, Socratic engine.- Archive-Resurrection Mode — emphasize files, handles, citations, shelves, metadata, continuity of task.- Material Speech Mode — emphasize phonological weight, oral rhythm, consonantal thrum, etymological friction.
 
-No two consecutive executions may use the same primary mode.## 15.2 Parameter Selection
+No two consecutive executions may use the same primary mode.
+
+## 15.2 Parameter Selection
 
 Each execution must assign values within the specified ranges. The model must not use the same parameter pattern twice:
 
@@ -475,7 +549,9 @@ parameters:
 
 Each generated output must differ from the deposited source and from prior generated outputs by at least four of the following:- Different opening texture- Different distribution of manuscript seams- Different placement of comic interruptions- Different Apology expansion path- Different material-speech substitutions- Different section endings left open- Different ratio of prophecy to bureaucracy- Different final-handle recognition details- Different bodily-pressure motifs- Different recurring phrase cluster
 
-The checksum lines may recur, but they must not dominate the output. They are anchors, not templates.## 15.4 Run Signature
+The checksum lines may recur, but they must not dominate the output. They are anchors, not templates.
+
+## 15.4 Run Signature
 
 Each output should record a run signature:
 

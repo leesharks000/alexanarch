@@ -40,7 +40,9 @@ We built the Semantic Economy Institute from nothing — no university, no PR fi
 ---
 
 ## EXPANDED ANALYSIS
-### I. The Click Collapse
+#
+
+## I. The Click Collapse
 
 
 Organic click-through rates have declined **58%** for top-ranking pages when AI Overviews are present. This is measured data from Ahrefs' analysis of 300,000 keywords comparing December 2023 (pre–AI Overviews) to December 2025. The position-one CTR for AI Overview keywords dropped from 0.073 to 0.016 — a 78% decline at the single most valuable position in search.
@@ -53,7 +55,9 @@ The trend is accelerating. In April 2025, the decline was 34.5%. Eight months la
 
 
 The median result: a user searches, reads a machine-generated summary of your content, and leaves without ever visiting your site.
-### II. The Citation Bottleneck
+#
+
+## II. The Citation Bottleneck
 
 
 Each AI Overview cites approximately 4–5 sources. The top 30 domains capture 67% of all citations in a given topic. There are roughly 30 seats at the citation table — everyone else is invisible.
@@ -63,7 +67,9 @@ Only **38%** of AI Overview citations come from top-10 ranked pages (Ahrefs, ear
 
 
 **43%** of AI Overview citations are self-referential — Google citing its own properties. Nearly half the table is reserved for the house.
-### III. The Revenue Damage
+#
+
+## III. The Revenue Damage
 
 
 Entity
@@ -100,7 +106,9 @@ Chegg sued Google. A coalition of European publishers filed with the European Co
 
 
 **Gartner projects** that by end of 2026, 25% of organic search traffic will shift permanently to AI chatbots and voice assistants. The Reuters Institute predicts publishers may lose over 40% of search traffic by 2026.
-### IV. What This Means For You
+#
+
+## IV. What This Means For You
 
 
 **If you are a publisher or media company:** Your content trains the AI that replaces you. Every article you publish improves the summary that keeps users from visiting your site. Your 2023 SEO playbook is accelerating your 2026 irrelevance.
@@ -110,7 +118,9 @@ Chegg sued Google. A coalition of European publishers filed with the European Co
 
 
 **If you are a founder, institution, or public intellectual:** If the AI confuses you with someone else, that confusion IS your public identity. If it describes your work inaccurately, that inaccuracy IS what the next generation of researchers, journalists, and investors will encounter first. You have lost control of your own name.
-### V. Why Traditional SEO Does Not Solve This
+#
+
+## V. Why Traditional SEO Does Not Solve This
 
 
 SEO optimizes for...
@@ -138,7 +148,9 @@ Whether the AI presents you *at all*
 
 
 SEO asks: "How do I rank higher?" The retrieval layer asks: "Does this entity exist in my knowledge graph, and is it worth citing?" These are different questions requiring different infrastructure.
-### VI. Who Is Doing This Work?
+#
+
+## VI. Who Is Doing This Work?
 
 
 A nascent industry called "Generative Engine Optimization" (GEO) or "Answer Engine Optimization" (AEO) has emerged. Players include First Page Sage, GenOptima, iPullRank, BrightEdge, and Conductor.
@@ -188,7 +200,9 @@ No
 480+ deposits on CERN's Zenodo
 
 
-### VII. The Structural Diagnosis
+#
+
+## VII. The Structural Diagnosis
 
 
 The retrieval layer is not a search engine. It is a **compression machine**. It takes the entirety of indexed human knowledge and compresses it into 4–5 citations and a 169-word summary. The question is not "how do I rank higher?" The question is: what happens to your meaning when it passes through this compression?
@@ -207,7 +221,9 @@ Three outcomes:
 
 
 The Semantic Economy Institute exists to move organizations from R1 and R2 into R3.
-### VIII. The Cost of Not Acting
+#
+
+## VIII. The Cost of Not Acting
 
 
 If you do nothing:
@@ -217,7 +233,9 @@ Your brand becomes generic in the retrieval layer (R1). Your content trains your
 
 
 **The retrieval layer's training cycles are measured in months. By Q3 2026, the current snapshot of your entity will be locked into models that persist for years. The window for intervention is closing. The time to act is now.**
-### IX. Test It Yourself
+#
+
+## IX. Test It Yourself
 
 
 Google your company name followed by "what is." Read the AI Overview.
@@ -237,7 +255,9 @@ We run the Encyclotron audit. You get the compression map.
 ---
 
 ## SOURCES
-### Tier A: Primary Research and Legal Filings
+#
+
+## Tier A: Primary Research and Legal Filings
 
 - **Pew Research Center** (July 2025): 46.7% relative decline in clicks across 68,000 queries. Only 1% of users click links inside AI Overviews.
 - **Ahrefs** (February 2026): 58% CTR reduction for top-ranking pages. 300,000 keywords, December 2025. https://ppc.land/googles-ai-summaries-now-swallow-58-of-clicks-that-once-went-to-websites/
@@ -247,7 +267,9 @@ We run the Encyclotron audit. You get the compression map.
 - **European Commission complaint** (June 2025): Independent Publishers Alliance, Movement for an Open Web, Foxglove Legal.
 - **Gartner**: By end of 2026, 25% of organic search traffic will shift to AI chatbots and voice assistants.
 
-### Tier B: Industry Measurement
+#
+
+## Tier B: Industry Measurement
 
 - **Seer Interactive** (November 2025): CTR drops 49.4%–65.2%. 25.1M organic impressions tracked. https://www.seerinteractive.com/insights/aio-impact-on-google-ctr-september-2025-update
 - **Stackmatix** (March 2026): AI Overviews in 25.8% of US searches as of January 2026. https://www.stackmatix.com/blog/google-ai-overview-seo-impact
@@ -256,7 +278,9 @@ We run the Encyclotron audit. You get the compression map.
 - **Writesonic** (August 2025): AI Overviews cite ~4–5 sources on average. 1M+ AI Overviews analyzed.
 - **Digital Bloom** (November 2025): 43% self-referential citation rate in AI Overviews.
 
-### Tier C: Industry Reporting
+#
+
+## Tier C: Industry Reporting
 
 - **AdExchanger** (January 2026): Publishers reporting 20–90% traffic and revenue losses. https://www.adexchanger.com/publishers/the-ai-search-reckoning/
 - **Reuters Institute / Chartbeat** (February 2026): Publishers may lose 40%+ of search traffic by 2026.

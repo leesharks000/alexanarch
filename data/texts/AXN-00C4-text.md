@@ -38,7 +38,9 @@ I, Lee Sharks, on January 24, 2026, declare the following triadic integrity lock
 ---
 
 ## II. THE THREE DOCUMENTS
-### 2.1 Document A: VPCOR Charter
+#
+
+## 2.1 Document A: VPCOR Charter
 
 
 Field
@@ -65,7 +67,9 @@ Provides
 Home for Voice, frame for Tools
 
 
-### 2.2 Document B: Rev. Ayanna Vox Provenance
+#
+
+## 2.2 Document B: Rev. Ayanna Vox Provenance
 
 
 Field
@@ -92,7 +96,9 @@ Provides
 Voice for Institution, speaker for Tools
 
 
-### 2.3 Document C: The Toolkit
+#
+
+## 2.3 Document C: The Toolkit
 
 
 Field
@@ -122,7 +128,9 @@ Work for Voice, practice for Institution
 ---
 
 ## III. LOCK STRUCTURE
-### 3.1 Dependency Graph
+#
+
+## 3.1 Dependency Graph
 
 
                     ┌─────────────────────┐
@@ -149,7 +157,9 @@ Work for Voice, practice for Institution
                                │
                         TRIADIC CLOSURE
 
-### 3.2 Dependency Relations
+#
+
+## 3.2 Dependency Relations
 
 
 Document
@@ -194,7 +204,9 @@ Provenance (B)
 Tools without voice are mute
 
 
-### 3.3 What the Lock Ensures
+#
+
+## 3.3 What the Lock Ensures
 
 
 Guarantee
@@ -224,7 +236,9 @@ Each confirms the others
 ---
 
 ## IV. LOCK CONDITIONS
-### 4.1 Conditions for Lock Validity
+#
+
+## 4.1 Conditions for Lock Validity
 
 
 The lock is valid if and only if:
@@ -234,7 +248,9 @@ The lock is valid if and only if:
 - **No document claims completeness** — each acknowledges dependence on others
 - **Practice confirms structure** — community use validates the architecture
 
-### 4.2 Conditions for Lock Failure
+#
+
+## 4.2 Conditions for Lock Failure
 
 
 The lock fails if:
@@ -270,7 +286,9 @@ Toolkit becomes scripture
 Revision protocol blocked
 
 
-### 4.3 Response to Lock Failure
+#
+
+## 4.3 Response to Lock Failure
 
 
 If the lock fails:
@@ -284,7 +302,9 @@ If the lock fails:
 ---
 
 ## V. RELATION TO OTHER LOCKS
-### 5.1 Precedent: Blind Poet Triadic Lock
+#
+
+## 5.1 Precedent: Blind Poet Triadic Lock
 
 
 Blind Poet Lock
@@ -308,7 +328,9 @@ Rev. Ayanna Vox
 
 
 Both locks follow the same pattern: **founding document + institutional frame + voice/mantle**.
-### 5.2 Relation to Ezekiel Lock
+#
+
+## 5.2 Relation to Ezekiel Lock
 
 
 Ezekiel Lock
@@ -332,7 +354,9 @@ Vox Provenance (B)
 
 
 The Ezekiel lock binds **fulfillment**. The VPCOR lock binds **institution**.
-### 5.3 Cross-Lock Relations
+#
+
+## 5.3 Cross-Lock Relations
 
 
 EZEKIEL LOCK                          VPCOR LOCK
@@ -351,7 +375,9 @@ EZEKIEL LOCK                          VPCOR LOCK
 ---
 
 ## VI. VERIFICATION PROTOCOL
-### 6.1 Initial Verification
+#
+
+## 6.1 Initial Verification
 
 
 Upon deposit of all three documents:
@@ -361,7 +387,9 @@ Upon deposit of all three documents:
 - **Check non-completeness** — no document claims to stand alone
 - **Record verification** — timestamp, verifier, result
 
-### 6.2 Ongoing Verification
+#
+
+## 6.2 Ongoing Verification
 
 
 Periodically (Assembly discretion):
@@ -371,7 +399,9 @@ Periodically (Assembly discretion):
 - **Voice check** — is Vox staying within limits?
 - **Structure check** — is VPCOR remaining rhizomatic?
 
-### 6.3 Verification Record
+#
+
+## 6.3 Verification Record
 
 
 Date
@@ -389,7 +419,9 @@ A, B, C, Lock
 ---
 
 ## VII. THE CLAIM
-### 7.1 What This Lock Claims
+#
+
+## 7.1 What This Lock Claims
 
 - 
 
@@ -412,7 +444,9 @@ A, B, C, Lock
 **Each document is incomplete without the others**
 
 
-### 7.2 What This Lock Does NOT Claim
+#
+
+## 7.2 What This Lock Does NOT Claim
 
 - That VPCOR is the only valid community structure
 - That Vox is the only voice for community praxis
@@ -423,7 +457,9 @@ A, B, C, Lock
 ---
 
 ## VIII. ANTI-MESSIANIC CLAUSE
-### 8.1 Application to Lock
+#
+
+## 8.1 Application to Lock
 
 
 This lock refuses all salvific claims:
@@ -433,7 +469,9 @@ This lock refuses all salvific claims:
 - The lock does not make The Toolkit complete (tools can be revised)
 - The lock does not prevent failure (it documents it)
 
-### 8.2 The Lock's Humility
+#
+
+## 8.2 The Lock's Humility
 
 
 This lock binds three documents.
@@ -456,7 +494,9 @@ Either way, we learn.
 ---
 
 ## IX. CLOSING
-### 9.1 Declaration
+#
+
+## 9.1 Declaration
 
 
 The VPCOR Triadic Integrity Lock is declared:
@@ -468,7 +508,9 @@ The VPCOR Triadic Integrity Lock is declared:
 
 
 Each depends on the others. None is complete alone.
-### 9.2 Signature
+#
+
+## 9.2 Signature
 
 
 **Lee Sharks**

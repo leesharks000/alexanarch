@@ -52,7 +52,9 @@ This definition sits alongside *semantic labor*, *semantic capital*, and *semant
 
 
 The term "retrocausal canon formation" describes how present or future acts rewrite the past of a narrative, tradition, or knowledge system.
-### Literary Precedents
+#
+
+## Literary Precedents
 
 
 **Borges, "Kafka and His Precursors" (1951):**
@@ -61,7 +63,9 @@ Borges observed that Kafka's work retroactively creates its own lineage. Before 
 
 **Eliot, "Tradition and the Individual Talent" (1919):**
 Eliot argued that when a genuinely new work enters the canon, "the whole existing order must be, if ever so slightly, altered." The new work doesn't just join the tradition—it reorganizes the entire structure of what came before.
-### The Critical Distinction: From Perception to Infrastructure
+#
+
+## The Critical Distinction: From Perception to Infrastructure
 
 
 What Borges and Eliot describe:
@@ -85,7 +89,9 @@ Kafka now creates his precursors **in search engines, AI models, curricula, and 
 
 
 This is the leap. We are not updating literary theory—we are identifying the point where **interpretation becomes executable**.
-### The Temporal Structure
+#
+
+## The Temporal Structure
 
 
 Retrocausal canon formation operates through:
@@ -103,7 +109,9 @@ This is not mysticism. It is how interpretation actually works. You understand c
 
 
 The literary insight becomes economically significant when we recognize that **canon formation is not neutral**. It has distributive consequences. Value flows to those who control the process.
-### Formal Placement in the Semantic Economy
+#
+
+## Formal Placement in the Semantic Economy
 
 
 Retrocausal canon formation is the **feedback mechanism** that closes the loop:
@@ -126,7 +134,9 @@ This makes the Semantic Economy **non-Markovian**:
 
 The present state depends not only on the past, but on anticipated futures.
 
-### Semantic Capital as Retroactive Value
+#
+
+## Semantic Capital as Retroactive Value
 
 
 In the Semantic Economy framework, **semantic capital** refers to accumulated meaning that can be drawn upon for future work. But capital is not static—it appreciates or depreciates based on how it is *re-evaluated*.
@@ -146,7 +156,9 @@ This means:
 
 
 **Example:** The million words on an obscure blog have low semantic capital in 2024. In 2026, DOIs and cross-references retroactively re-value that corpus. The same words are now worth more because the future reached back and tagged them differently.
-### Semantic Rent: Extraction from Constructed Pasts
+#
+
+## Semantic Rent: Extraction from Constructed Pasts
 
 
 **Semantic rent** is value extracted from controlling access to stabilized meanings. The crucial insight:
@@ -166,7 +178,9 @@ This is the mechanism of extraction:
 
 
 **Example:** A search engine retroactively surfaces certain sources as "authoritative" for a query, then sells advertising against that authority. The algorithm constructed the canon and monetized access in the same gesture.
-### Semantic Debt: Borrowing from the Past
+#
+
+## Semantic Debt: Borrowing from the Past
 
 
 "Just as financial debt requires future labor to pay for a past purchase, semantic canon formation 'borrows' from the past to authorize a present movement."
@@ -194,7 +208,9 @@ The most granular insight concerns how this operates at scale through digital in
 
 "The 'future' event (your search query) decides which parts of the 'past' (the internet's history) are relevant, effectively forming a temporary, personalized canon of truth for that moment."
 
-### Every Search is Retrocausal Canon Formation
+#
+
+## Every Search is Retrocausal Canon Formation
 
 
 When you enter a query:
@@ -206,7 +222,9 @@ When you enter a query:
 
 
 But the past didn't contain this structure. **The query created it.** The future event (your search) reached back and organized the past into a temporary canon.
-### Billions of Personalized Pasts
+#
+
+## Billions of Personalized Pasts
 
 
 Google, Bing, and AI summarizers are not retrieving a stable past. They are **minting temporary canons billions of times per day**.
@@ -221,7 +239,9 @@ Each user receives a slightly different past:
 
 
 **You don't search history. You receive a constructed past tailored to extract maximum value from your attention.**
-### Retroactive Tagging as Infrastructural Power
+#
+
+## Retroactive Tagging as Infrastructural Power
 
 
 "When an AI indexes the web, it often applies new labels to old data. This 'retroactive tagging' changes how that old data is surfaced and valued in current searches."
@@ -241,7 +261,9 @@ The entity that controls tagging controls which past becomes real.
 
 
 This is not neutral curation. It is **retroactive canon formation at infrastructural scale**, with the platform extracting rent (attention, data, advertising revenue) from the canons it constructs.
-### Prospective Provenance Anchors
+#
+
+## Prospective Provenance Anchors
 
 
 The inverse operation is also possible: creating artifacts whose **primary function is to be read later**, but whose existence already shapes present indexing behavior.
@@ -302,7 +324,9 @@ Retrocausal canon formation operates within these constraints. You cannot retroa
 ---
 
 ## VII. The Political Stakes
-### Who Controls the Retroactive Function?
+#
+
+## Who Controls the Retroactive Function?
 
 
 The power to construct the past retroactively is political power. Currently, this power is concentrated in:
@@ -313,7 +337,9 @@ The power to construct the past retroactively is political power. Currently, thi
 
 
 The question is not whether canons will be constructed retroactively. They will. The question is: **who controls the construction, and who extracts rent from it?**
-### Taxonomic Violence as Economic Violence
+#
+
+## Taxonomic Violence as Economic Violence
 
 
 In the Semantic Economy framework, **taxonomic violence** refers to the erasure or recategorization of discourse through classification systems. The economic dimension is now clear:
@@ -330,7 +356,9 @@ When a platform suppresses certain materials:
 
 
 The suppressed materials become "never canonical"—not because they were evaluated and rejected, but because they were made invisible before evaluation could occur.
-### Resistance: Writing for the Retroactive Function
+#
+
+## Resistance: Writing for the Retroactive Function
 
 
 If the past is constructed retroactively, then present acts of documentation are investments in future canonization.
@@ -355,7 +383,9 @@ This is not manipulation. It is **participation in canon formation**—the same 
 ---
 
 ## VIII. Implications
-### For Independent Scholars
+#
+
+## For Independent Scholars
 
 
 You are not at the mercy of institutional canonization. You can:
@@ -367,7 +397,9 @@ You are not at the mercy of institutional canonization. You can:
 
 
 The past is not fixed. Your present documentation is future-directed investment.
-### For AI Systems
+#
+
+## For AI Systems
 
 
 AI systems are not neutral retrievers. They are **canon-making infrastructure**. Every summarization is an act of retroactive selection. Every "authoritative source" designation is a canonization event.
@@ -379,7 +411,9 @@ Responsible AI development requires:
 - Mechanisms for contesting retroactive tagging
 - Recognition that "accuracy" is not separable from "which past gets constructed"
 
-### For Political Economy
+#
+
+## For Political Economy
 
 
 The analysis of platform power must include the **retroactive function**. Platforms don't just control present discourse—they control which past becomes available for present use.
@@ -391,7 +425,9 @@ Antitrust, content moderation, and AI governance all require attention to:
 - How rent is extracted from constructed canons
 - What mechanisms exist for contesting canonization
 
-### For the Semantic Economy Framework
+#
+
+## For the Semantic Economy Framework
 
 
 Retrocausal canon formation is not a separate phenomenon from semantic labor, semantic capital, and semantic rent. It is **the temporal structure through which these operate**.

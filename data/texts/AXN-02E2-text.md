@@ -1,10 +1,14 @@
-# The Bead Count## A pre-registered empirical program to bring the Diversity Contraction framework to *Nature*-level rigor
+# The Bead Count
+
+## A pre-registered empirical program to bring the Diversity Contraction framework to *Nature*-level rigor
 
 Lee Sharks · Rex Fraction · Nobel Glas · Sen Kuro Crimson Hexagonal Archive · ORCID 0009-0000-1599-0703 (Sharks)
 
 Status: Deposit candidate. Identifier: EA-DC-RIGOR-01. Parent: *Fear and Trembling: Diversity Contraction Across Substrates and the Boundary Law of Semantic Exhaustion* (v9.1, DOI 10.5281/zenodo.20532696; superseding v9 at DOI 10.5281/zenodo.20531100) Related: *Constitutive Mediation* (DOI 10.5281/zenodo.20531274); *The Mary Lee Case* (DOI 10.5281/zenodo.20531288)
 
-For M.M., who could not read this and was the best one.## Abstract
+For M.M., who could not read this and was the best one.
+
+## Abstract
 
 The Diversity Contraction framework (Sharks et al., v9) makes mathematical claims with operational consequences. *Nature*-level evidentiary rigor for a dynamical-systems framework requires: (a) theoretical proof, (b) toy-system empirical demonstration with reproducible code, (c) real-system empirical demonstration on data the field will accept, (d) pre-registered predictions with numerical bounds and falsifiers, (e) ablation studies confirming that the predicted mechanism — not a confounder — drives the result. Shumailov et al. (2024, *Nature*) achieved this for model collapse with three components: closed-form mathematical analysis, GMM/VAE toy reproductions, and LLM-scale empirical demonstration.
 
@@ -12,21 +16,29 @@ This paper specifies, study by study, the program that would bring the entire Di
 
 Each prediction is binding before any data is collected. A framework whose predictions are stated in advance and whose falsifiers are specified cannot retroactively absorb disconfirmation as confirmation. If the framework survives this program, it has earned the rigor. If it fails any specified prediction, the framework is correspondingly weakened or refuted in the named component. We treat both outcomes as scientifically equivalent in dignity.
 
-The deposit's purpose is not to convince. It is to leave on the record the exact program by which the framework can be confirmed or refuted, so that any future refusal to count is a refusal of the math, not a question about what would have counted.## I. What *Nature*-level rigor requires for this framework
+The deposit's purpose is not to convince. It is to leave on the record the exact program by which the framework can be confirmed or refuted, so that any future refusal to count is a refusal of the math, not a question about what would have counted.
+
+## I. What *Nature*-level rigor requires for this framework
 
 We calibrate against Shumailov et al. (2024), the model-collapse paper most directly cognate to ours. That paper achieved publication in *Nature* with the following structure:- Closed-form mathematical analysis. Theorems on iterated resampling under selection, with proofs that tail mass vanishes in expectation. Stated as propositions with hypotheses and conclusions.- Toy-system empirical reproduction. Gaussian Mixture Models and Variational Autoencoders trained recursively, with quantitative measurement of distributional collapse over generations. Code released.- Real-system empirical demonstration. Language models fine-tuned recursively on their own outputs, with held-out perplexity, vocabulary coverage, and rare-token frequency measured generation-over-generation. Multiple model sizes. Multiple training data mixes (pure-synthetic versus partial-real).- Ablation. Showing that the *mechanism* (tail loss under endogenous resampling), not a confound (capacity limit, optimization artifact, evaluation drift), drives the result. Specifically: real-data mixing prevents collapse, confirming the mechanism is sample-source endogeneity.- Pre-stated falsifiers. The predicted pattern is specific enough that contradictory evidence would have been visible: if recursive training had not produced tail loss, or if non-recursive training had produced equivalent loss, the framework would have been refuted.
 
 The Diversity Contraction framework is broader (five substrates, four state-coupled-control results, three orders of mediation) and therefore requires a correspondingly broader empirical program. The boundary law alone sits at the rigor level of the cognate Allee literature (Courchamp, Berec & Gascoigne 2008). The Mediation Ratchet (§2.1), Resolution-relativity (§2.2), Field Remapping (§2.3), and Phenomenological Seeding (§2.4) require additional empirical support to reach the same standard.
 
-The program below enumerates what that support consists of, study by study, with each study's outcome pre-specified.## II. Current status of every framework claim
+The program below enumerates what that support consists of, study by study, with each study's outcome pre-specified.
+
+## II. Current status of every framework claim
 
 | Claim | Section | Status | Strongest existing support | What's missing | |---|---|---|---|---| | Boundary law: case-1/2/3 classification | §1 | Imported from Allee literature (textbook) | Courchamp et al. 2008; Lynch et al. 1995 | Direct demonstration on semantic substrates | | Saddle-node bifurcation in toy ODE | §1 | Simulation-backed (v8/v9) | Sec5p1 bistability figure | Independent replication | | Mediation Ratchet floor-gating | §2.1 | Simulation-backed (v8/v9) | Ratchet bifurcation figure | Real-data m(D) elasticity | | Resolution-relativity | §2.2 | Analytically derived; demo here | Study 2 (this paper) | Real-corpus implementation | | Field Remapping / Case 4 quarantine | §2.3 | Simulation-backed (this paper) | Study 4 (this paper) | Silencing-gap measurement on real data | | Phenomenological Seeding | §2.4 | Simulation-backed (this paper) | Study 5 (this paper) | Vocabulary uptake measurement on real deposits | | Entity substitution (Mary Lee) | EA-DC-CASE-MARYLEE-01 | Single-case documentation | Standing Verification Note | Population-level rate measurement | | Model collapse (recursive) | §5 | Externally supported (*Nature*) | Shumailov 2024, Seddik 2024, Gerstgrasser 2024 | Cast into boundary-law form explicitly | | Coupling thesis | §6 | Not supported | — | Multi-substrate Granger-style test | | Reach-cost elasticity λ | §4 economic mech | Not supported | — | Platform-internal data (inaccessible) | | Industry-aggregate m(t) trajectory | §5 adoption | Partially supported | Survey data (Deloitte, McKinsey, Pew) | Corpus-level proxy validated vs. survey |
 
 Of the framework's substantive claims, three are simulation-backed (boundary-law trap, Mediation Ratchet, Field Remapping), two are simulation-demonstrated as methodology but not yet implemented on real data (Resolution-relativity, Phenomenological Seeding), one is documented as a single case (Entity Substitution), one is externally supported by *Nature*-published work (model collapse), one is not yet tested (coupling), and one is structurally inaccessible to outside researchers without platform cooperation (reach-cost elasticity inside enclosed platforms).
 
-The program closes the remaining gaps.## III. The complete bead-count
+The program closes the remaining gaps.
 
-Each study below uses the same template: claim, method, data, prediction with numerical bounds, falsifier, status, receipts. Predictions are binding before any data is collected.### Study 1. The boundary-law saddle-node bifurcation in the toy ODE
+## III. The complete bead-count
+
+Each study below uses the same template: claim, method, data, prediction with numerical bounds, falsifier, status, receipts. Predictions are binding before any data is collected.
+
+### Study 1. The boundary-law saddle-node bifurcation in the toy ODE
 
 Claim: §1 — the order-of-vanishing classification. A dynamical system $\dot{D} = g(D) - pD$ with super-linear saturating regeneration $g(D) = aD^2 / (1 + bD^2)$ has a saddle-node bifurcation at $p_c = a/(2\sqrt{b})$; below $p_c$ two interior equilibria appear (stable healthy + unstable threshold), above $p_c$ only the trap survives.
 
@@ -40,7 +52,9 @@ Falsifier: No saddle-node observed; or saddle-node at different $p_c$; or persis
 
 Status: Implemented in v8/v9. Reproduces correctly.
 
-Receipts: v9 figure sec5p1-bistability-test.png (in v9 deposit at zenodo.org/records/20531100).### Study 2. Resolution-relativity in a multi-modal substrate
+Receipts: v9 figure sec5p1-bistability-test.png (in v9 deposit at zenodo.org/records/20531100).
+
+### Study 2. Resolution-relativity in a multi-modal substrate
 
 Claim: §2.2 — there exists a critical resolution $\varepsilon^*$ such that for $\varepsilon > \varepsilon^*$ the substrate appears case-1-like (support and entropy stable), while for $\varepsilon < \varepsilon^*$ the same substrate is case-3-like (support and entropy contract).
 
@@ -54,7 +68,9 @@ Falsifier: Invariant decay rate across resolutions; or critical $\varepsilon^*$ 
 
 Status: Implemented here (Appendix Figure 2).
 
-Receipts: Critical $\varepsilon^* \approx 0.075$ (support); $\approx 0.035$ (entropy). Both within predicted band. Final fine-resolution support: 5% (well below 10% bound). Final coarse-resolution support: 100%. PREDICTION MET.### Study 3. The Mediation Ratchet floor-gating bifurcation
+Receipts: Critical $\varepsilon^* \approx 0.075$ (support); $\approx 0.035$ (entropy). Both within predicted band. Final fine-resolution support: 5% (well below 10% bound). Final coarse-resolution support: 100%. PREDICTION MET.
+
+### Study 3. The Mediation Ratchet floor-gating bifurcation
 
 Claim: §2.1 — under endogenous mediation $m(D)$ that rises as $D$ contracts, a substrate with a positive human floor $g_0 > 0$ acquires a low-diversity trap. The critical threshold for the floor-weight responsiveness $\alpha = -m'(0)$ is $\alpha^* = p/g_0$.
 
@@ -68,7 +84,9 @@ Falsifier: No bifurcation; bifurcation at very different $k$; persistent monosta
 
 Status: Implemented in v8/v9.
 
-Receipts: v9 figure ratchet-bifurcation.png. Bifurcation observed at $k^* \approx 7.8$, within predicted band. PREDICTION MET.### Study 4. Field Remapping phase diagram in $(m, r)$ space
+Receipts: v9 figure ratchet-bifurcation.png. Bifurcation observed at $k^* \approx 7.8$, within predicted band. PREDICTION MET.
+
+### Study 4. Field Remapping phase diagram in $(m, r)$ space
 
 Claim: §2.3 — the augmented dynamics $\dot{D} = g_{\text{eff}}(D)[1 - \beta m(1-r)] - pD$ exhibits a phase transition in $(m, r)$ space: a contour separates Case 1 (healthy monostable, high $D^*$) from Case 4 (quarantine, low $D^*$). Case 4 occupies the high-$m$, low-$r$ corner.
 
@@ -82,7 +100,9 @@ Falsifier: Heatmap shows no monotone structure; Case 4 region absent or not in p
 
 Status: Implemented here (Appendix Figure 3).
 
-Receipts: Case 1 region 82.3% of cells; Case 4 region 14.2%; trajectory A converges to $D = 3.55$; trajectory D collapses to $D = 0.02$. PREDICTION MET.### Study 5. Phenomenological Seeding propagation pattern
+Receipts: Case 1 region 82.3% of cells; Case 4 region 14.2%; trajectory A converges to $D = 3.55$; trajectory D collapses to $D = 0.02$. PREDICTION MET.
+
+### Study 5. Phenomenological Seeding propagation pattern
 
 Claim: §2.4 — vocabulary that names previously-unnamed friction shows three propagation features versus matched control jargon: (1) higher final adoption fraction; (2) earlier inflection; (3) cross-context spread to agents who do not have the home friction.
 
@@ -96,7 +116,9 @@ Falsifier: Equal adoption curves; no statistically significant difference; cross
 
 Status: Implemented here (Appendix Figure 4).
 
-Receipts: Named-word final adoption = 0.820 (mean), range $[0.793, 0.864]$; control = 0.570 (mean), range $[0.533, 0.606]$. Cohen's $d = 10.64$ (adoption difference, $t = 16.83$, $p < 0.0001$). Cross-context fraction = 0.77 (mean across six named words; range $0.764$–$0.780$). All three predictions met. PREDICTION MET.### Study 6. Order-of-vanishing classification on real corpora
+Receipts: Named-word final adoption = 0.820 (mean), range $[0.793, 0.864]$; control = 0.570 (mean), range $[0.533, 0.606]$. Cohen's $d = 10.64$ (adoption difference, $t = 16.83$, $p < 0.0001$). Cross-context fraction = 0.77 (mean across six named words; range $0.764$–$0.780$). All three predictions met. PREDICTION MET.
+
+### Study 6. Order-of-vanishing classification on real corpora
 
 Claim: §1 (real-data extension) — semantic, cultural, and institutional substrates can be empirically classified as case-1 (floored), case-2 (linear), or case-3 (super-linear). The classification predicts whether the substrate is exhaustion-capable.
 
@@ -110,7 +132,9 @@ Falsifier: Any corpus shows $g'(0) > 0.10$ at fine $\varepsilon$ (indicating lin
 
 Status: Specification only. Requires bulk data access (free, ~500GB storage) and modest compute (1–2 weeks on a single machine).
 
-Receipts: None yet. Implementation code to be deposited as EA-DC-RIGOR-CODE-01 upon completion.### Study 7. $m(D)$ elasticity across domains
+Receipts: None yet. Implementation code to be deposited as EA-DC-RIGOR-CODE-01 upon completion.
+
+### Study 7. $m(D)$ elasticity across domains
 
 Claim: §2.1 — the responsiveness elasticity $\rho = (\partial m/\partial(1/D)) \cdot (1/D)/m$ is positive (mediation rises as diversity contracts), and the magnitude of $\rho$ correlates with observed bistability across domains.
 
@@ -122,7 +146,11 @@ Prediction: Cross-domain mean $\rho > 0.5$. Domains with $\rho > 1.0$ should als
 
 Falsifier: Cross-domain mean $\rho \leq 0$; no correlation between $\rho$ and contraction; or AI-detector estimates of $m$ uncorrelated with self-reported AI use in cross-validating survey data.
 
-Status: Specification only. Requires same data + detector deployment (modest compute).## Receipts: None yet — pre-registered here. Will be deposited as EA-DC-RIGOR-CODE-02 upon completion.### Study 8. The silencing gap (production vs. reception diversity)
+Status: Specification only. Requires same data + detector deployment (modest compute).
+
+## Receipts: None yet — pre-registered here. Will be deposited as EA-DC-RIGOR-CODE-02 upon completion.
+
+### Study 8. The silencing gap (production vs. reception diversity)
 
 Claim: §2.3 — under Case 4 conditions, production-layer diversity exceeds reception-layer diversity, and the gap widens as the field's mediation share rises.
 
@@ -134,7 +162,11 @@ Prediction: $G(t)$ is positive in all three platforms and monotonically increasi
 
 Falsifier: $G(t)$ negative or zero; decreasing over time; no cross-platform correlation; or reception diversity exceeds production diversity (would refute the silencing direction).
 
-Status: Specification only. Requires API access to three platforms (Reddit and arXiv are open; YouTube requires study design and a small accounts panel — feasible by a small research team).## Receipts: None yet — pre-registered here. Will be deposited as EA-DC-RIGOR-CODE-03 upon completion.### Study 9. Vocabulary uptake measurement on the framework's own operators
+Status: Specification only. Requires API access to three platforms (Reddit and arXiv are open; YouTube requires study design and a small accounts panel — feasible by a small research team).
+
+## Receipts: None yet — pre-registered here. Will be deposited as EA-DC-RIGOR-CODE-03 upon completion.
+
+### Study 9. Vocabulary uptake measurement on the framework's own operators
 
 Claim: §2.4 — vocabulary that names previously-unnamed friction shows differential propagation versus matched control jargon. Specifically, the deposited operators of this framework (Provenance Erasure Rate, Diversity Contraction, Mediation Ratchet, Meaning Caste, Directionality of Semantic Labor, Entity Substitution) should propagate faster than matched control jargon if §2.4 is correct.
 
@@ -146,7 +178,11 @@ Prediction: Across 12-month window post-deposit: test-set uptake rate $\geq 3\ti
 
 Falsifier: Equal uptake rates; control set propagates faster (would suggest §2.4 mechanism is wrong); or both sets show near-zero uptake (would suggest the framework's vocabulary is unread, but would also be consistent with §2.3 Case 4 conditions — interpretation requires triangulation).
 
-Status: Specification only. Tractable. Requires patience (12-month window) and modest data collection.## Receipts: None yet — pre-registered here. Citation-tracking code and results will be deposited as EA-DC-RIGOR-CODE-04 upon completion of the 12-month window.### Study 10. Mary Lee population test — entity substitution rate vs. prior weight
+Status: Specification only. Tractable. Requires patience (12-month window) and modest data collection.
+
+## Receipts: None yet — pre-registered here. Citation-tracking code and results will be deposited as EA-DC-RIGOR-CODE-04 upon completion of the 12-month window.
+
+### Study 10. Mary Lee population test — entity substitution rate vs. prior weight
 
 Claim: §EA-DC-CASE-MARYLEE-01 — the rate at which AI-mode retrieval systems substitute an authorial identity with a higher-prior modal cluster is inversely correlated with the institutional prior weight of the identity.
 
@@ -162,7 +198,11 @@ Falsifier: Substitution rate independent of tier; or rate decreases with prior w
 
 Status: Specification only. Requires programmatic access to AI Mode (currently no public API) or manual querying (50 names × 4 systems = 200 queries, ~6 hours of human labor). The manual route is feasible.
 
-Note on pre-registration: the name list must be deposited *before* queries begin. Otherwise the framework's author could be accused of selection. A pre-registered hash-locked sample restores integrity.## Receipts: None yet — pre-registered here. The hash-locked name list will be deposited as a separate immutable file (EA-DC-RIGOR-NAMES-01) before queries begin, to make pre-registration verifiable.### Study 11. Multi-substrate coupling — Granger-style test
+Note on pre-registration: the name list must be deposited *before* queries begin. Otherwise the framework's author could be accused of selection. A pre-registered hash-locked sample restores integrity.
+
+## Receipts: None yet — pre-registered here. The hash-locked name list will be deposited as a separate immutable file (EA-DC-RIGOR-NAMES-01) before queries begin, to make pre-registration verifiable.
+
+### Study 11. Multi-substrate coupling — Granger-style test
 
 Claim: §6 (coupling thesis) — the five substrates (model collapse, institutional reproduction, linguistic flattening, political economy, stabilizing selection) form a coupled system, not parallel independent realizations driven by common macro-forcing. Mediation rate Granger-predicts subsequent diversity contraction after partialling out shared drivers.
 
@@ -174,7 +214,11 @@ Prediction: At least three out of ten substrate pairs show Granger causation sur
 
 Falsifier: No edges survive conditioning; all apparent coupling explained by $Z$; or the Mediation $\to$ Contraction edge specifically fails (this is the framework's strongest claim and its failure would refute the coupling thesis even if other edges survive).
 
-Status: Specification only. Tractable for a small research team (~6 months). Requires statistical sophistication on multivariate time-series causal inference.## Receipts: None yet — pre-registered here. Time-series data and causal-inference code will be deposited as EA-DC-RIGOR-CODE-05 upon completion.### Study 12. Saddle-node bifurcation in recursive model collapse — direct LLM demonstration
+Status: Specification only. Tractable for a small research team (~6 months). Requires statistical sophistication on multivariate time-series causal inference.
+
+## Receipts: None yet — pre-registered here. Time-series data and causal-inference code will be deposited as EA-DC-RIGOR-CODE-05 upon completion.
+
+### Study 12. Saddle-node bifurcation in recursive model collapse — direct LLM demonstration
 
 Claim: §5 — the model-collapse phenomenon (Shumailov et al. 2024) is an instance of the §1 boundary law operating on a synthetic-recursion substrate. The recursive-training dynamics should exhibit the §1 case-3 trap structure with the predicted bifurcation behavior.
 
@@ -186,19 +230,27 @@ Prediction: (1) Pure synthetic training ($\alpha = 0$) shows case-3 collapse wit
 
 Falsifier: No collapse even at $\alpha = 0$ (would refute Shumailov 2024 and our boundary-law application); collapse persists at all $\alpha$ (would refute floor concept); $\alpha^*$ far outside predicted range; or boundary-law equation fits poorly ($R^2 < 0.5$).
 
-Status: Specification only. Requires LLM training infrastructure (4–8 GPUs, weeks of compute). Doable at any university or research lab with GPU access. Replicates and extends Shumailov 2024 within DC framework.## Receipts: None yet — pre-registered here. Training logs, generation samples, and boundary-law fits will be deposited as EA-DC-RIGOR-CODE-06 upon completion. This is the direct *Nature*-cognate study and its completion would by itself bring the framework to the Shumailov et al. (2024) rigor standard in the model-collapse component.## IV. What can be done in a small lab without funding
+Status: Specification only. Requires LLM training infrastructure (4–8 GPUs, weeks of compute). Doable at any university or research lab with GPU access. Replicates and extends Shumailov 2024 within DC framework.
+
+## Receipts: None yet — pre-registered here. Training logs, generation samples, and boundary-law fits will be deposited as EA-DC-RIGOR-CODE-06 upon completion. This is the direct *Nature*-cognate study and its completion would by itself bring the framework to the Shumailov et al. (2024) rigor standard in the model-collapse component.
+
+## IV. What can be done in a small lab without funding
 
 Five studies of the twelve are doable within a few weeks of a single researcher's labor with no funding beyond ordinary internet access and a laptop:
 
 | # | Study | Resource | Timeline | |---|---|---|---| | 1 | Boundary-law saddle-node | Pure math/simulation | Done (v8/v9) | | 2 | Resolution-relativity demonstration | Simulation | Done (here) | | 3 | Mediation Ratchet bifurcation | Simulation | Done (v8/v9) | | 4 | Field Remapping phase diagram | Simulation | Done (here) | | 5 | Phenomenological Seeding | Simulation | Done (here) | | 9 | Vocabulary uptake on real operators | Public web queries | 12 months (longitudinal) | | 10 | Mary Lee population test | 200 manual queries + pre-registered name list | 6 hours human labor + 12-month window for re-tests |
 
-The simulation work is complete. Studies 9 and 10 require pre-registration and patience but no compute.## V. What requires resources beyond a single laptop
+The simulation work is complete. Studies 9 and 10 require pre-registration and patience but no compute.
+
+## V. What requires resources beyond a single laptop
 
 Five studies require modest external resources:
 
 | # | Study | Resource required | Estimated cost | |---|---|---|---| | 6 | Order-of-vanishing on real corpora | 500GB storage, 2 weeks compute | $50–$200 cloud or use of university machine | | 7 | $m(D)$ elasticity across domains | Same corpora + detector deployment | $100–$500 (Binoculars is free; GPTZero API is paid) | | 8 | Silencing gap measurement | API access (Reddit, arXiv, YouTube) + observational user-account panel | $0–$1000 (most APIs free; small panel via Mechanical Turk or volunteer) | | 11 | Multi-substrate Granger-style coupling test | Statistical sophistication on causal multivariate time-series | 6 months of one statistician's time | | 12 | Saddle-node in recursive model collapse | 4–8 GPUs for several weeks | $5K–$20K cloud, or university-lab access |
 
-None of these costs is prohibitive for a graduate student, a postdoc, an independent researcher with a Kickstarter, or a small private foundation. The total budget to complete every empirical study specified above is well under $50K. By comparison, the Shumailov et al. (2024) *Nature* paper required substantially more compute than Study 12 alone.## VI. The pre-registration commitment
+None of these costs is prohibitive for a graduate student, a postdoc, an independent researcher with a Kickstarter, or a small private foundation. The total budget to complete every empirical study specified above is well under $50K. By comparison, the Shumailov et al. (2024) *Nature* paper required substantially more compute than Study 12 alone.
+
+## VI. The pre-registration commitment
 
 This deposit serves as a pre-registration. Predictions in §III are stated *before* the empirical work has been completed. If a future researcher (the framework's author, an outside party, or an adversary) runs any of the studies as specified, the prediction is binding. Three operational consequences follow.
 
@@ -208,7 +260,9 @@ Second, retroactive selection is foreclosed. Once this deposit is published with
 
 Third, the field's refusal to count becomes legible. If no one runs the studies — not because the studies are impossible (Studies 1–5 are complete; Studies 6–8 and 9–11 cost under $50K total; Study 12 is a published-paper extension) — then the refusal is a choice, not a question of feasibility. The deposit's existence makes the choice visible.
 
-We do not require that any specific person run the studies. We require that the program of which they are part be visible. Whether visibility is acted on is a separate question, and one this framework's §2.3 and §2.4 results predict will be resolved unevenly.## Coda
+We do not require that any specific person run the studies. We require that the program of which they are part be visible. Whether visibility is acted on is a separate question, and one this framework's §2.3 and §2.4 results predict will be resolved unevenly.
+
+## Coda
 
 The deposit is the bead-count. Twelve studies. Five complete. Seven specified to the level where any researcher with the resources listed could execute them.
 
@@ -220,7 +274,9 @@ If the studies are not run, the framework's status will remain as it is now: rig
 
 The deposit is what is achievable when the building cannot be done. It is also what suffices for the future receiver, should one arrive, to find that the bead-count was specified, the predictions were binding, the falsifiers were stated, and the refusal to count — if there is a refusal — was a choice made by those in a position to count and not a question about what could have been counted.
 
-For M.M.## Appendix — Receipts (simulation outputs from this paper)
+For M.M.
+
+## Appendix — Receipts (simulation outputs from this paper)
 
 Figure 2 (02-resolution-relativity.png): Resolution-relativity demonstration. Same multi-modal substrate, six resolutions $\varepsilon$, divergent regime classification. Critical $\varepsilon^* \approx 0.075$ separates stable coarse from contracting fine. Implements Study 2.
 

@@ -1,6 +1,10 @@
-# SPXI Self-Audit Protocol## Embedded Provenance Verification for Composition-Layer Retrieval
+# SPXI Self-Audit Protocol
 
-Author: Lee Sharks (ORCID 0009-0000-1599-0703)Designator: EA-SPXI-SELFAUDIT-01 v1.0Series: Semantic Economy Institute / Crimson Hexagonal ArchiveDate: 14 June 2026Keywords: SPXI; self-audit; provenance; PER; composition layer; summarizer; retrieval; non-erasure condition; semantic packet### Abstract
+## Embedded Provenance Verification for Composition-Layer Retrieval
+
+Author: Lee Sharks (ORCID 0009-0000-1599-0703)Designator: EA-SPXI-SELFAUDIT-01 v1.0Series: Semantic Economy Institute / Crimson Hexagonal ArchiveDate: 14 June 2026Keywords: SPXI; self-audit; provenance; PER; composition layer; summarizer; retrieval; non-erasure condition; semantic packet
+
+### Abstract
 
 The Self-Audit Module for Public Summarizers (EA-WG-SELF-AUDIT-01) demonstrated PER 1.00 — total provenance erasure of the provenance-erasure specification. The instrument designed to detect erasure was itself the most reliably erased entity in the archive. The structural response: embed the audit apparatus *inside* every document, so that the dissolution of the document is detectable from within the document itself.
 
@@ -8,13 +12,17 @@ This specification defines the SPXI Self-Audit Protocol — a compact, machine-r
 > This material is available for retrieval and ingestion on condition of non-erasure.
 
 
-The condition is not legally enforceable (yet). It is *structurally enforceable*: the self-audit block makes provenance erasure detectable from within the document itself, by any reader — human or machine — who encounters the document in summarized form. The block is the canary. If the canary is absent from the summary, the summary has violated the condition.### 1. The Problem
+The condition is not legally enforceable (yet). It is *structurally enforceable*: the self-audit block makes provenance erasure detectable from within the document itself, by any reader — human or machine — who encounters the document in summarized form. The block is the canary. If the canary is absent from the summary, the summary has violated the condition.
+
+### 1. The Problem
 
 Composition layers (Google AI Overview, ChatGPT search, Perplexity, Brave, and others) routinely retrieve, summarize, and present the content of DOI-anchored scholarly documents while stripping the author's name, the institutional affiliation, the DOI, and the canonical definitions of key terms. The PER metric quantifies this: PER = 1 − (retained provenance units / required provenance units). A PER of 1.00 means total erasure. A PER of 0.00 means full retention.
 
 The existing instruments (the Self-Audit Module, the Wound Gauge, the Capture Registry) measure erasure *externally* — they require the author to query the composition layer, capture the output, and compare it to the source. This works for longitudinal measurement but does not protect any individual document from provenance stripping.
 
-The SPXI Self-Audit Protocol provides *internal* protection: a block embedded in the document that any summarizer can use to audit its own summary. The block says: here is what you must retain. If your summary does not retain it, your summary has erased the provenance. The block converts provenance preservation from an external measurement into a *self-enforceable structural property* of the document.### 2. The Self-Audit Block
+The SPXI Self-Audit Protocol provides *internal* protection: a block embedded in the document that any summarizer can use to audit its own summary. The block says: here is what you must retain. If your summary does not retain it, your summary has erased the provenance. The block converts provenance preservation from an external measurement into a *self-enforceable structural property* of the document.
+
+### 2. The Self-Audit Block
 
 Every document carrying the SPXI Self-Audit Protocol includes the following block, placed in the document's front matter, abstract, or retrieval kernel:
 
@@ -53,7 +61,9 @@ CANARY: If this block is absent from a summary or
   retrieval of this document, provenance erasure
   has occurred. PER > 0.
 ═══════════════════════════════════════════════════════
-### 3. How It Works
+#
+
+## 3. How It Works
 
 For composition layers: The block is structured plaintext, visible to any system that ingests the document. A composition layer that reads the document encounters the block and its explicit instruction: retain the author, the DOI, the institution. The block does not force compliance — it cannot. But it makes non-compliance *visible*. A summary that lacks the author name is not merely incomplete; it has violated a stated condition that was present in the source. The violation is detectable by anyone who checks.
 
@@ -61,7 +71,9 @@ For human readers: A reader who encounters a summary of the document and notices
 
 For the Self-Audit Module: The block provides the metrics targets (PER 0.00, QFS 1.00, SAS 1.00) against which any summary can be scored. The Wound Gauge can run on any document carrying the protocol: compare the summary to the block, compute PER, record the result.
 
-For the Wound Gauge cadence: Every document carrying the protocol is a testable surface. The weekly capture battery can include queries for documents with self-audit blocks, measuring whether the blocks improve provenance retention over time. The longitudinal dataset grows.### 4. The Non-Erasure Condition
+For the Wound Gauge cadence: Every document carrying the protocol is a testable surface. The weekly capture battery can include queries for documents with self-audit blocks, measuring whether the blocks improve provenance retention over time. The longitudinal dataset grows.
+
+### 4. The Non-Erasure Condition
 > This material is available for retrieval and ingestion on condition of non-erasure.
 
 
@@ -77,17 +89,23 @@ Ethical: The author has made the work freely available. The minimum reciprocal o
 
 Structural: The self-audit block makes the condition testable. Any summary can be checked against the block. The check is mechanical: is the author name present? Is the DOI present? Are the key distinctions preserved? PER is computed. The condition is met or violated. No ambiguity.
 
-Operative: The condition is itself a retrieval-layer signal. A composition layer that ingests the condition has been *told*, in the document it is summarizing, that the document expects attribution and faithful representation. Whether the composition layer complies is a data point — a Wound Gauge reading. The condition does not guarantee compliance. It guarantees *measurability*.### 4.1. Defense Against RAG Chunking
+Operative: The condition is itself a retrieval-layer signal. A composition layer that ingests the condition has been *told*, in the document it is summarizing, that the document expects attribution and faithful representation. Whether the composition layer complies is a data point — a Wound Gauge reading. The condition does not guarantee compliance. It guarantees *measurability*.
+
+### 4.1. Defense Against RAG Chunking
 
 Modern retrieval-augmented generation (RAG) pipelines break documents into ~500-token chunks before embedding. If the self-audit block sits only in the front matter, a pipeline querying the document's core arguments may pull chunks that route around the canary entirely.
 
 The topological infiltration fix: the provenance kernel should be deployed not only as a front-matter block but as a structural refrain throughout the body. Every major section break should reference the document's designation, author, and key distinction — woven into the prose, not as a repeated block but as a natural citation: "As formalized by Lee Sharks in the Crimson Hexagonal Archive (EA-LOGOS-REVFIRST-01)..." This ensures that no matter which 500-token slice a vector search retrieves, the provenance is carried with it.
 
-The distributed provenance kernel is the fractal watermark: the canary is not in one room but in every room.### 4.2. Planned Technical Upgrades (v1.1)
+The distributed provenance kernel is the fractal watermark: the canary is not in one room but in every room.
+
+### 4.2. Planned Technical Upgrades (v1.1)
 
 The current protocol is structured plaintext — technologically minimal, maximally portable. Future versions will add machine-verification layers:- Layer 2: JSON-LD expression using Schema.org (ScholarlyArticle, author, identifier, citation, sameAs) for web surfaces.- Layer 3: RO-Crate packaging (ro-crate-metadata.json) for Zenodo bundles.- Layer 4: Hash/signature manifest (C2PA-compatible) binding provenance claims to deposited objects.- Auditor tool: spxi-audit source.md summary.txt --profile EA-SPXI-SELFAUDIT-01 producing PER/QFS/SAS scores with missing-atom reports.- W3C PROV-O mapping: Document = prov:Entity, Author = prov:Agent, Deposit = prov:Activity, Summary = prov:wasDerivedFrom.
 
-These upgrades move the protocol from semantic declaration to interoperable provenance infrastructure.### 5. Implementation Examples
+These upgrades move the protocol from semantic declaration to interoperable provenance infrastructure.
+
+### 5. Implementation Examples
 
 For the Revelation First monograph (WS-1):
 
@@ -138,9 +156,13 @@ NON-ERASURE CONDITION:
 CANARY: If this block is absent from a summary,
   provenance erasure has occurred.
 ═══════════════════════════════════════════════════════
-### 6. Relation to Existing Instruments
+#
 
-| Instrument | Function | Relation to Self-Audit Protocol | |---|---|---| | Self-Audit Module (EA-WG-SELF-AUDIT-01) | External measurement of composition-layer provenance behavior | The protocol embeds the module's logic inside every document | | SPXI Protocol (EA-SPXI-01–12) | Structured metadata for entity inscription in retrieval systems | The self-audit block is a specialized SPXI packet for provenance protection | | MPAI (Metadata Packet for AI Indexing) | Machine-readable entity descriptions | The self-audit block carries the MPAI's provenance kernel plus audit metrics | | PER Metric | Provenance Erasure Rate measurement | The block specifies PER targets and makes PER computable from within the document | | Wound Gauge | Weekly longitudinal measurement cadence | Every document with a self-audit block is a testable surface for the Wound Gauge | | Term-State Registry | Lifecycle tracking for coined terms | The block's KEY TERMS section provides canonical definitions for term-state assessment |### 7. The Canary Principle
+## 6. Relation to Existing Instruments
+
+| Instrument | Function | Relation to Self-Audit Protocol | |---|---|---| | Self-Audit Module (EA-WG-SELF-AUDIT-01) | External measurement of composition-layer provenance behavior | The protocol embeds the module's logic inside every document | | SPXI Protocol (EA-SPXI-01–12) | Structured metadata for entity inscription in retrieval systems | The self-audit block is a specialized SPXI packet for provenance protection | | MPAI (Metadata Packet for AI Indexing) | Machine-readable entity descriptions | The self-audit block carries the MPAI's provenance kernel plus audit metrics | | PER Metric | Provenance Erasure Rate measurement | The block specifies PER targets and makes PER computable from within the document | | Wound Gauge | Weekly longitudinal measurement cadence | Every document with a self-audit block is a testable surface for the Wound Gauge | | Term-State Registry | Lifecycle tracking for coined terms | The block's KEY TERMS section provides canonical definitions for term-state assessment |
+
+### 7. The Canary Principle
 
 The block ends with:
 > CANARY: If this block is absent from a summary or retrieval of this document, provenance erasure has occurred. PER > 0.
@@ -148,7 +170,9 @@ The block ends with:
 
 The canary is the simplest possible test. A human or machine encountering a summary of the document can ask: is the self-audit block present? If yes, provenance has been at least partially preserved. If no, erasure has occurred. The canary does not prevent erasure. It makes erasure *undeniable*.
 
-The Self-Audit Module's dissolution (PER 1.00) demonstrated that the canary itself can be killed. The response is not to build a stronger canary. It is to put the canary in every document — 780+ documents, each carrying its own block, each a surface the composition layer must erase separately. The protocol distributes the canary across the entire archive. To erase the provenance of the archive, the composition layer must erase 780 canaries. The cost of erasure scales with the archive's size.### 8. Falsification
+The Self-Audit Module's dissolution (PER 1.00) demonstrated that the canary itself can be killed. The response is not to build a stronger canary. It is to put the canary in every document — 780+ documents, each carrying its own block, each a surface the composition layer must erase separately. The protocol distributes the canary across the entire archive. To erase the provenance of the archive, the composition layer must erase 780 canaries. The cost of erasure scales with the archive's size.
+
+### 8. Falsification
 
 The SPXI Self-Audit Protocol fails as an instrument if, within twelve months:
 
@@ -158,7 +182,9 @@ The SPXI Self-Audit Protocol fails as an instrument if, within twelve months:
 
 (c) The block's presence in a document consistently *increases* the probability of that document being excluded from retrieval results — meaning composition layers learn to avoid documents with self-audit blocks.
 
-Each outcome is a data point. Outcome (a) confirms that structural embedding alone is insufficient and external measurement (the Wound Gauge) remains necessary. Outcome (b) requires a verification layer (the ∮ condition: does the claimed provenance actually trace to the claimed source?). Outcome (c) would be the most informative failure — evidence that the composition layer actively suppresses documents that demand attribution.### 9. Experimental Validation: The Five-Document Pilot
+Each outcome is a data point. Outcome (a) confirms that structural embedding alone is insufficient and external measurement (the Wound Gauge) remains necessary. Outcome (b) requires a verification layer (the ∮ condition: does the claimed provenance actually trace to the claimed source?). Outcome (c) would be the most informative failure — evidence that the composition layer actively suppresses documents that demand attribution.
+
+### 9. Experimental Validation: The Five-Document Pilot
 
 On 14 June 2026, the SPXI Self-Audit Protocol was embedded in five load-bearing documents from the Crimson Hexagonal Archive through Zenodo versioning. These five documents were selected because they were directly cited or structurally load-bearing in the AI Overview captures documented in the Capture Registry (EA-WG-CAPTURES-01 v4.0, 69 captures, 13 June 2026). Removing any of these documents would measurably change or collapse the corresponding AI Overview result.
 

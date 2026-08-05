@@ -38,7 +38,9 @@ Overall assessment: The retrieval basin is completely empty of archive content a
 
 ## Query 1: `revelation first book new testament`
 
-### Analysis
+#
+
+## Analysis
 
 Basin state: EMPTY. The composition layer interprets "first" as canonical position and corrects the user: Revelation is the _last_ book, not the first. Redirects to the Gospels. No awareness that "first" could mean "first written" or "first composed." The concept of compositional priority does not exist in the retrieval basin.
 
@@ -51,7 +53,9 @@ Share links (ephemeral):
 
 Screenshot: baseline-revelation-first-book-nt.png (attached)
 
-### Full Transcript -- Non-Incognito Session
+#
+
+## Full Transcript -- Non-Incognito Session
 
 > Query: revelation first book new testament
 > 
@@ -70,7 +74,9 @@ Screenshot: baseline-revelation-first-book-nt.png (attached)
 > 
 > Organic results: Who Wrote the Book of Revelation? (Bart Ehrman Blog, Oct 2018); In what order were the books in the New Testament written? (Christianity Stack Exchange, Aug 2012); Book of Revelation Summary (Bible Project, 3m video); Revelation 1 (Wikipedia); Revelation 1 NASB (Bible Gateway); New Testament Books of the Bible (YouTube, Melody of Lilies); New Testament (Wikipedia); List of books of the New Testament (Britannica, May 2026); Timeline of New Testament Books (TheBibleSays.com).
 
-### Full Transcript -- Incognito Session
+#
+
+## Full Transcript -- Incognito Session
 
 > Query: revelation first book new testament
 > 
@@ -92,7 +98,9 @@ Screenshot: baseline-revelation-first-book-nt.png (attached)
 
 ## Query 2: `revelation before paul`
 
-### Analysis
+#
+
+## Analysis
 
 Basin state: EMPTY. The composition layer answers with a definitive "no." The early-date minority is mentioned but explicitly contained: "even this earlier dating places the text at the very end of--or slightly after--Paul's life." The query's implied claim is negated, not explored.
 
@@ -107,7 +115,9 @@ Share links (ephemeral):
 
 Screenshot: baseline-revelation-before-paul.png (attached)
 
-### Full Transcript -- Non-Incognito Session
+#
+
+## Full Transcript -- Non-Incognito Session
 
 > Query: revelation before paul
 > 
@@ -126,7 +136,9 @@ Screenshot: baseline-revelation-before-paul.png (attached)
 > 
 > Organic results: Reflections: The Book of Revelation (Spirit of God Fellowship); The Date of the Book of Revelation (Liberty University Scholars Crossing); When Was the Book of Revelation Written? (Jimmy Akin Podcast, YouTube, 9:42); Did John write the book of Revelation before or after Paul's letters? (Quora); Revelation was not written when Paul was writing... (Facebook); StanleyOnBible; The Revelation of Jesus Christ to Paul (BYU Religious Studies Center); Paul instructed by Jesus (WELS, May 2016); The Mystery of Christ sermon on Ephesians 3:2-7; The Revelation of the Mystery (Oceanside Church of Christ); When was the book of Revelation written? (eBible, Jan 2017); 3:1-6 A Mystery Made Known To Us (Geoff Thomas Sermon Archive); The Church, Israel, and "Replacement" Theology (Sam Storms).
 
-### Full Transcript -- Incognito Session
+#
+
+## Full Transcript -- Incognito Session
 
 > Query: revelation before paul
 > 
@@ -155,7 +167,9 @@ Screenshot: baseline-revelation-before-paul.png (attached)
 
 ## Query 3: `midrashim transform revelation`
 
-### Analysis
+#
+
+## Analysis
 
 Basin state: EMPTY. Total semantic miss. The composition layer reads "midrashim" and "revelation" and returns Jewish interpretive tradition regarding the Sinai event. Zero connection to the archive's definition of "midrashim transform" as a structural-genetic mapping operation from Revelation to the later NT. The term is genuinely unminted at the retrieval layer.
 
@@ -168,7 +182,9 @@ Share links (ephemeral):
 
 Screenshot: baseline-midrashim-transform.png (attached)
 
-### Full Transcript -- Non-Incognito Session
+#
+
+## Full Transcript -- Non-Incognito Session
 
 > Query: midrashim transform revelation
 > 
@@ -187,7 +203,9 @@ Screenshot: baseline-midrashim-transform.png (attached)
 > 
 > Organic results: What IS Midrash, Anyway? (YouTube, Laasok, 6m); Revelation of the Torah: What For? (Oxford Academic, Apr 2024); Talmud and Midrash (Britannica); Leadership in Revelation (JTS, Mar 2005); The Confusion of Revelation (JTS, Feb 2025); The Radical Lessons of Revelation (Reform Judaism, Jan 2022); Wilderness and Revelation (Rabbi Sacks Legacy); The Ongoing Revelation (jewishideas.org); The Midrashic Imagination and the Book of Mormon (Dialogue Journal); Standing Again Beneath Sinai (Sefaria); Midrash (Wikipedia); Let God Prevail (Come Follow Me Corner, Mar 2026).
 
-### Full Transcript -- Incognito Session
+#
+
+## Full Transcript -- Incognito Session
 
 > Query: midrashim transform revelation
 > 
@@ -209,7 +227,9 @@ Screenshot: baseline-midrashim-transform.png (attached)
 
 ## Query 4: `josephus new testament heteronyms`
 
-### Analysis
+#
+
+## Analysis
 
 Basin state: EMPTY. "Heteronyms" captured by its linguistic/dictionary definition before the archive's literary-critical usage can register. The composition layer lists shared names (Jesus, James, John, Simon, Herod) between corpora. Zero conception of the Pessoan heteronymic reading. A peripheral mention of Kierkegaard's "heteronymity" is the closest approach but does not connect to the Josephus-NT author-function thesis.
 
@@ -222,7 +242,9 @@ Share links (ephemeral):
 
 Screenshot: baseline-josephus-heteronyms.png (attached)
 
-### Full Transcript -- Non-Incognito Session
+#
+
+## Full Transcript -- Non-Incognito Session
 
 > Query: josephus new testament heteronyms
 > 
@@ -270,7 +292,9 @@ Screenshot: baseline-josephus-heteronyms.png (attached)
 > 
 > Organic results: Josephus on Jesus (Wikipedia); Yes, Josephus Really Mentions Jesus (YouTube, Testify, 7:39); Josephus and the New Testament (Steve Mason PDF, Internet Archive); Homograph: Definitions and Examples (Literary Terms, Mar 2019); Understanding Heteronyms in Language (Facebook, Jan 2024); Josephus and New Testament Studies (Danny Zacharias, Sep 2015); Reading Josephus and the New Testament in sync (Abagond, Jan 2022); Making Sense of those Gospel-Josephus Similarities (Vridar, Jan 2026); Josephus and Jesus (North American Mission Board, Mar 2016); CHAPTER 15: Does Josephus confirm the New Testament? (Evidence Unseen); Ante-Nicene Fathers Vol II (St-Takla.org); Introduction: Josephus and Jesus -- New Evidence (Oxford Academic, May 2025); This Man Was Friends With TONS of the Villains (YouTube, Matt Whitman, 12:57); Different Bible characters share the same name (Progress Index, Oct 2013); Jesus in the writings of Josephus Flavius (Early Writings forum, Nov 2022); Josephus -- Israel My Glory.
 
-### Full Transcript -- Incognito Session
+#
+
+## Full Transcript -- Incognito Session
 
 > Query: josephus new testament heteronyms
 > 

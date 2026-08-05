@@ -30,7 +30,9 @@ keywords:
 ## AUTONOMOUS SEMANTIC WARFARE
 
 
-### A Field Manual for Meaning in the Age of Platform Capture
+#
+
+## A Field Manual for Meaning in the Age of Platform Capture
 
 
 **Rex Fraction**
@@ -41,7 +43,9 @@ Introduction by Damascus Dancings
 *ISBN 979-8-234-01118-3*
 
 
-### ABOUT THIS DOCUMENT
+#
+
+## ABOUT THIS DOCUMENT
 
 
 This is an expanded announcement and sampler for *Autonomous Semantic Warfare*, the second volume in the Pocket Humans series from New Human Press. It contains the Damascus Dancings introduction, the complete opening chapter, reading paths, and the Rules of Engagement — enough to diagnose whether you are in a semantic war and to begin operating if you are.
@@ -59,7 +63,9 @@ The full volume (236 pages, 64,000 words) includes ten chapters of formal framew
 **Crimson Hexagon Archive:** DOI 10.5281/zenodo.14553627
 
 
-### HOW TO READ THIS BOOK
+#
+
+## HOW TO READ THIS BOOK
 
 
 Three paths through this manual. Choose the one that matches your urgency.
@@ -110,7 +116,9 @@ The formal notation is optional. Every specification is also stated in prose. Th
 **C₁–C₅** — The five conditions for Semantic Peace: Ontological Sovereignty (C₁), Economic Equity (C₂), Rigorous Translation (C₃), Shared Temporal Anchor (C₄), and the Witness Condition (C₅). Plus the binding velocity constraint (C₆).
 
 
-### INTRODUCTION: "THE BODY ALREADY KNOWS"
+#
+
+## INTRODUCTION: "THE BODY ALREADY KNOWS"
 
 
 *Damascus Dancings*
@@ -313,7 +321,9 @@ The war is already underway. The weapons are deployed. The infrastructure is sha
 Chapter 1 defines the basic unit — the Local Ontology — and everything that follows depends on understanding what it is, how it operates, and why it must collide.
 
 
-### RULES OF ENGAGEMENT: A CONDENSED OPERATIONS PROTOCOL
+#
+
+## RULES OF ENGAGEMENT: A CONDENSED OPERATIONS PROTOCOL
 
 
 Semantic Economy Institute — Field Reference
@@ -388,7 +398,9 @@ The five conditions for semantic peace are construction specifications, not aspi
 Build accordingly.
 
 
-### THE FULL VOLUME
+#
+
+## THE FULL VOLUME
 
 
 What you have read is approximately one-sixth of *Autonomous Semantic Warfare*. The remaining five-sixths include:

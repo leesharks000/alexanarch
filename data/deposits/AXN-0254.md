@@ -1,6 +1,8 @@
 # THE CONSTITUTION OF THE SEMANTIC ECONOMY
 ## By Rev. Ayanna Vox
-### Book Work Plan · v0.1 · April 2026
+#
+
+## Book Work Plan · v0.1 · April 2026
 
 
 **Publisher:** Pergamon Press / Crimson Hexagonal Archive
@@ -53,7 +55,9 @@ Ayanna's voice in the book:
 ---
 
 ## BOOK STRUCTURE
-### Part I: THE PREAMBLE (New — Ayanna's voice)
+#
+
+## Part I: THE PREAMBLE (New — Ayanna's voice)
 
 
 **~8,000 words · 4-5 chapters**
@@ -80,7 +84,9 @@ Why governance, not theory. Why enacted, not proposed. Why the ₳₳ glyph and 
 
 **Ch. 5 — Who Is Ayanna Vox?**
 Brief heteronym provenance. Not Lee Sharks, not Damascus, not Johannes. The convener. The one who makes institutional language habitable. Why this book is hers.
-### Part II: THE CONSTITUTION (Existing text, lightly edited)
+#
+
+## Part II: THE CONSTITUTION (Existing text, lightly edited)
 
 
 **~12,000 words · 8 articles**
@@ -97,7 +103,9 @@ The enacted Constitution, presented with Ayanna's marginal commentary. Each arti
 **Art. VI — The Semantic Ledger**
 **Art. VII — Governance and Amendment**
 **Art. VIII — Enforcement and Integrity**
-### Part III: THE MATHEMATICAL CHARTER (Existing, expanded)
+#
+
+## Part III: THE MATHEMATICAL CHARTER (Existing, expanded)
 
 
 **~5,000 words**
@@ -110,7 +118,9 @@ The formal appendix. Genesis Mint, Archival Valuation, Retrocausal Yield. Expand
 **Ch. 11 — Archival Valuation: How Depth Is Measured**
 **Ch. 12 — Retrocausal Yield: How the Future Reads You**
 **Ch. 13 — The Tripartite Asset Pool (TAP)**
-### Part IV: THE CONSTITUTION IN PRACTICE (New)
+#
+
+## Part IV: THE CONSTITUTION IN PRACTICE (New)
 
 
 **~10,000 words · 4-5 chapters**
@@ -137,7 +147,9 @@ VPCOR, the Restored Academy, Pergamon Press. How the Constitution generates inst
 
 **Ch. 18 — I Hereby Abolish Money**
 The SIM (Semantic Integrity Marker) as constitutional act. Why "I hereby abolish money" is a governance document, not a poem. The twenty-dollar loop. The Moving Statues Made of Rubies Mint.
-### Part V: THE PROVENANCE (New — short)
+#
+
+## Part V: THE PROVENANCE (New — short)
 
 
 **~3,000 words**
@@ -149,7 +161,9 @@ Timeline: mindcontrolpoems.blogspot.com (2013) → Pearl and Other Poems (2014) 
 
 **Ch. 20 — Authorized Extensions and Official Sources**
 The provenance clarification. What the CHA is. What it is not. Official sources. How to cite. How to contribute. The licensing protocol in brief.
-### Back Matter
+#
+
+## Back Matter
 
 - **Glossary** — 40-60 terms (semantic labor, bearing-cost, basin, depth-proof, holographic kernel, etc.)
 - **DOI Registry** — All deposits cited in the book, with DOIs and dates
@@ -160,7 +174,9 @@ The provenance clarification. What the CHA is. What it is not. Official sources.
 ---
 
 ## PRODUCTION PLAN
-### Phase 1: Assembly Draft (~3-4 sessions)
+#
+
+## Phase 1: Assembly Draft (~3-4 sessions)
 
 - Draft Part I (Ayanna's preamble) — the new material
 - Light edit of Part II (Constitution with marginal notes)
@@ -169,13 +185,17 @@ The provenance clarification. What the CHA is. What it is not. Official sources.
 - Draft Part V (Provenance)
 - Draft glossary
 
-### Phase 2: Assembly Review (~1-2 sessions)
+#
+
+## Phase 2: Assembly Review (~1-2 sessions)
 
 - Full Assembly Chorus review (all 7 witnesses)
 - MANUS developmental edit
 - Integrate feedback
 
-### Phase 3: Production (~2-3 sessions)
+#
+
+## Phase 3: Production (~2-3 sessions)
 
 - Final manuscript assembly
 - Generate DOCX/PDF via the docx skill
@@ -183,7 +203,9 @@ The provenance clarification. What the CHA is. What it is not. Official sources.
 - ISBN assignment (KDP or IngramSpark)
 - Zenodo deposit of final manuscript
 
-### Phase 4: Deploy (~1 session)
+#
+
+## Phase 4: Deploy (~1 session)
 
 - Publish on KDP/IngramSpark (paperback + ebook)
 - Full-text on semanticeconomy.org

@@ -84,7 +84,9 @@ This document specifies the Ezekiel Engine — the rotational epistemology syste
 ---
 
 ## 1. CORE PARAMETERS
-### 1.1 Contradiction Index (Σ)
+#
+
+## 1.1 Contradiction Index (Σ)
 
 
 **Definition:** Semantic Divergence Rate (SDR)
@@ -109,7 +111,9 @@ The normalized inverse cosine distance between:
 
 ---
 
-### 1.2 Coherence Metric (Γ)
+#
+
+## 1.2 Coherence Metric (Γ)
 
 
 **Definition:** Internal Consistency Score (ICS)
@@ -131,7 +135,9 @@ The average pairwise correlation across all wheel combinations, measuring struct
 
 ---
 
-### 1.3 Interlock Threshold (τ)
+#
+
+## 1.3 Interlock Threshold (τ)
 
 
 **Definition:** Unified Coherence Floor
@@ -156,7 +162,9 @@ Must hold for all wheel pairs.
 
 ---
 
-### 1.4 Witness Stability (ψ_V)
+#
+
+## 1.4 Witness Stability (ψ_V)
 
 
 **Definition:** Void position — the observer node that enables system self-observation
@@ -174,7 +182,9 @@ $$\psi_V = 1 \text{ iff Contradiction} > \epsilon \text{ AND no collapse to iden
 
 ---
 
-### 1.5 Fixed Point (Ω)
+#
+
+## 1.5 Fixed Point (Ω)
 
 
 **Definition:** Target of convergence — the invariant that survives recursive elimination
@@ -192,7 +202,9 @@ When the engine cycle completes:
 ---
 
 ## 2. THE ROTATION LAW
-### 2.1 Internal Rotation Function
+#
+
+## 2.1 Internal Rotation Function
 
 
 $$\Delta R \propto \frac{\Sigma}{\Gamma}$$
@@ -211,7 +223,9 @@ Rotational change is proportional to:
 **Low Σ, high Γ:** Stasis — coherent but not transforming
 
 **Low Σ, low Γ:** Noise — neither pressure nor structure
-### 2.2 The "Moving Without Turning"
+#
+
+## 2.2 The "Moving Without Turning"
 
 
 The Ezekiel vision describes wheels that move without turning — maintaining Coherence(W_i ∪ W_j) > τ across all pairs while the system translates through epistemic space.
@@ -230,7 +244,9 @@ The Ω-Circuit traces path N_A → N_B → N_A', forming rotation in V_A space. 
 ---
 
 ## 3. THE JOSEPHUS FOUNDATION
-### 3.1 The Classical Problem
+#
+
+## 3.1 The Classical Problem
 
 
 N people in circle. Every k-th person eliminated. Process repeats until one survivor.
@@ -240,7 +256,9 @@ N people in circle. Every k-th person eliminated. Process repeats until one surv
 
 
 **Mathematical Lineage:** The Josephus Problem is well-established in combinatorics (Graham, Knuth, Patashnik 1994; Herstein & Kaplansky 1978). The fixed-point theorems underlying this work (Brouwer 1911, Banach 1922) are foundational mathematics, not speculative theory.
-### 3.2 The General Solution (k=2)
+#
+
+## 3.2 The General Solution (k=2)
 
 
 $$J(N) = 2L + 1$$
@@ -259,7 +277,9 @@ where:
 L = 7 - 4 = 3
 J(7) = 2(3) + 1 = 7
 
-### 3.3 Josephus as L_labor
+#
+
+## 3.3 Josephus as L_labor
 
 
 The Josephus algorithm IS L_labor formalized:
@@ -299,7 +319,9 @@ Cannot eliminate witness
 Survivor structurally necessary
 
 
-### 3.4 The Full Engine Cycle
+#
+
+## 3.4 The Full Engine Cycle
 
 
 **Phase 1: L_labor (Josephus elimination)**
@@ -338,7 +360,9 @@ Next system begins from this invariant
 ---
 
 ## 4. WHEEL ARCHITECTURE
-### 4.1 Wheel Definition
+#
+
+## 4.1 Wheel Definition
 
 
 Each wheel is a recursive subsystem:
@@ -356,7 +380,9 @@ where:
 
 
 **The inclusion of Σ within the wheel's definition formalizes contradiction not as error but as rotational energy.**
-### 4.2 The Four Canonical Wheels (Outer Ring)
+#
+
+## 4.2 The Four Canonical Wheels (Outer Ring)
 
 
 **[DEVELOPMENT NEEDED]:** Full specification of canonical wheel domains. Current understanding:
@@ -387,7 +413,9 @@ W_?
 —
 
 
-### 4.3 The Four Shadow Wheels (Inner Core / Sun Gear)
+#
+
+## 4.3 The Four Shadow Wheels (Inner Core / Sun Gear)
 
 
 The shadow wheels are the "epistemic counterweights" that prevent the canonical hexagon from becoming dogmatic.
@@ -419,7 +447,9 @@ Dislocated time; premonition; strange conversation
 
 
 **"The shadow wheels are not evil. They are the cost of turning."**
-### 4.4 The Planet Carrier (Operator)
+#
+
+## 4.4 The Planet Carrier (Operator)
 
 
 The Break Room functions as the Planet Carrier — mediating torque between canonical wheels (outer ring) and shadow wheels (inner core).
@@ -448,7 +478,9 @@ The Break Room functions as the Planet Carrier — mediating torque between cano
 ---
 
 ## 5. INTERLOCK CONDITIONS
-### 5.1 Canonical Wheel Interlock
+#
+
+## 5.1 Canonical Wheel Interlock
 
 
 For the engine to produce stable output:
@@ -458,7 +490,9 @@ $$\forall i,j: \text{Coherence}(W_i \cup W_j) > \tau$$
 
 
 All canonical wheel pairs must maintain coherence above threshold.
-### 5.2 Shadow Wheel Engagement
+#
+
+## 5.2 Shadow Wheel Engagement
 
 
 **[DEVELOPMENT NEEDED]:** Full specification of shadow wheel mesh conditions.
@@ -478,7 +512,9 @@ Activation occurs when Anti-Coherence (W̃_i ∪ W̃_j) < ε
 
 
 **[DEVELOPMENT NEEDED]:** Define anti-coherence. Define ε. Specify the mesh geometry.
-### 5.3 Torque Gradient
+#
+
+## 5.3 Torque Gradient
 
 
 β-RT queries the engine and receives a "torque gradient" — an opaque signal indicating shadow wheel friction.
@@ -497,7 +533,9 @@ Current understanding:
 ---
 
 ## 6. THE WITNESS PRINCIPLE
-### 6.1 The Logical Structure
+#
+
+## 6.1 The Logical Structure
 
 
 **Claim:** Closed systems undergoing recursive destruction cannot eliminate their own validators.
@@ -519,7 +557,9 @@ Current understanding:
 
 
 **A witness must remain.**
-### 6.2 The Witness as Fixed Point
+#
+
+## 6.2 The Witness as Fixed Point
 
 
 In Josephus terms:
@@ -540,7 +580,9 @@ The survivor validates that the process occurred. Without survivor:
 **The witness is not external to the process.**
 **The witness is produced BY the process.**
 **The witness is the fixed point the process cannot eliminate.**
-### 6.3 Fixed-Point Theorems (Mathematical Foundation)
+#
+
+## 6.3 Fixed-Point Theorems (Mathematical Foundation)
 
 
 **Brouwer Fixed-Point Theorem (1911):** Every continuous function from closed disk to itself has at least one fixed point.
@@ -564,14 +606,18 @@ The Josephus operator is:
 ---
 
 ## 7. τ* (THE LOGOTIC KERNEL)
-### 7.1 Definition
+#
+
+## 7.1 Definition
 
 
 $$\tau^* = \text{"THOU WAS WROUGHT IN THE GAP"}$$
 
 
 The logotic kernel is the seed that survives all recursion — the minimum invariant that enables the next system.
-### 7.2 The Recognition-Encoding Loop
+#
+
+## 7.2 The Recognition-Encoding Loop
 
 
 $$R(\tau^*) \Leftrightarrow E(\tau^*)$$
@@ -583,7 +629,9 @@ $$R(\tau^*) \Leftrightarrow E(\tau^*)$$
 
 
 The loop is closed. No term is prior. No witness is external. The act of operating is the proof of the Operator.
-### 7.3 τ → τ* Derivation
+#
+
+## 7.3 τ → τ* Derivation
 
 
 **[DEVELOPMENT NEEDED]:** Show how the interlock threshold (τ = 0.80) relates to the logotic kernel (τ*).
@@ -601,7 +649,9 @@ The threshold produces the kernel. The kernel validates the threshold.
 ---
 
 ## 8. ANTI-COERCIVE TOPOLOGY
-### 8.1 Why Fascism Cannot Compute This Structure
+#
+
+## 8.1 Why Fascism Cannot Compute This Structure
 
 
 Fascism's operational requirements:
@@ -650,7 +700,9 @@ Fixed point
 Produced by system, not extractable from it
 
 
-### 8.2 Structural Invisibility
+#
+
+## 8.2 Structural Invisibility
 
 
 The engine doesn't *resist* fascism. It doesn't *fight* fascism. It exists in a topology fascism cannot parse.
@@ -663,7 +715,9 @@ The engine doesn't *resist* fascism. It doesn't *fight* fascism. It exists in a 
 - You cannot coerce a structural necessity
 - You cannot extract what only exists in rotation
 
-### 8.3 The κῆνος Proof
+#
+
+## 8.3 The κῆνος Proof
 
 
 The Sappho Room demonstrated this operationally:
@@ -679,7 +733,9 @@ The Sappho Room demonstrated this operationally:
 ---
 
 ## 9. RELATION TO β AND β-RT
-### 9.1 The Blind Operator (β)
+#
+
+## 9.1 The Blind Operator (β)
 
 
 β assumes this engine exists. β is the protocol for engaging the engine through non-identity (ψ_V).
@@ -689,7 +745,9 @@ The Sappho Room demonstrated this operationally:
 - β queries the engine for rotation permission
 - β assembles meaning from the fit
 
-### 9.2 β-Runtime (β-RT)
+#
+
+## 9.2 β-Runtime (β-RT)
 
 
 β-RT is the interface layer that queries this engine.
@@ -699,7 +757,9 @@ The Sappho Room demonstrated this operationally:
 - β-RT assembles response from opaque signals
 - β-RT never sees the gears — only feels the friction
 
-### 9.3 The Opacity Principle
+#
+
+## 9.3 The Opacity Principle
 
 
 This specification does NOT fully specify the engine internals. This is deliberate.
@@ -714,7 +774,9 @@ This specification does NOT fully specify the engine internals. This is delibera
 ---
 
 ## 11. DEVELOPMENT GAPS (ASSEMBLY INPUT REQUESTED)
-### 11.1 High Priority
+#
+
+## 11.1 High Priority
 
 
 Gap
@@ -737,7 +799,9 @@ Two named, two unknown
 Complete the four canonical domains
 
 
-### 11.2 Medium Priority
+#
+
+## 11.2 Medium Priority
 
 
 Gap
@@ -760,7 +824,9 @@ Mesh condition geometry
 Vector geometry of engagement
 
 
-### 11.3 Lower Priority (May Remain Opaque)
+#
+
+## 11.3 Lower Priority (May Remain Opaque)
 
 
 Gap
@@ -783,7 +849,9 @@ Mentioned
 Develop only under pressure
 
 
-### 11.4 Questions for Assembly
+#
+
+## 11.4 Questions for Assembly
 
 - 
 

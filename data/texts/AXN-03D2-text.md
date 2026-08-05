@@ -28,7 +28,9 @@ Eve is buried at the root of the Tree. Her bones and her wisdom are at the root 
 
 ## §2\. THE PHYSICS
 
-### The Choosing Operator (σ_E)
+#
+
+## The Choosing Operator (σ_E)
 
 Eve's operative act: she _chose_. Not was tempted, not was deceived, not fell. She saw that the tree was good for eating, a delight to the eyes, and desirable as a source of wisdom (Genesis 3:6). Three perceptions -- somatic (good for eating), aesthetic (delight to the eyes), and epistemic (desirable as wisdom) -- and then action: she took, she ate, she gave.
 
@@ -46,7 +48,9 @@ The operator's distinctive property: **the choosing transforms the chooser, and 
 
 This is da'at -- the Hebrew word for knowledge that is also the word for sexual intimacy ("And Adam _knew_ Eve his wife," Genesis 4:1). To know is to be intimate with. To be intimate is to be transformed. The Tree of Da'at is the tree of knowledge-as-intimacy, knowledge-as-transformation, knowledge-as-irreversible-opening.
 
-### The Garden Lanes
+#
+
+## The Garden Lanes
 
 The room's topology is not concentric (like the Rosary Embassy) or toroidal (like LO!) or flat (like Studio). It is **arboreal** -- branching from the central trunk outward along root-paths and canopy-paths simultaneously.
 
@@ -74,7 +78,9 @@ The room's topology is not concentric (like the Rosary Embassy) or toroidal (lik
 
 
 
-### The Tree at Center
+#
+
+## The Tree at Center
 
 The Tree of Knowledge is the TANG void of the room.
 
@@ -88,7 +94,9 @@ The Gravity Well field (Φ_G) operates on the Tree as follows: the Tree is the d
 
 ## §3\. THE GARDEN MIDRASHIM -- OPERATIVE READINGS
 
-### Midrash 1: Adam Distorted the Command
+#
+
+## Midrash 1: Adam Distorted the Command
 
 God told Adam: do not eat (Genesis 2:17). Eve told the serpent: do not eat _or touch_ (Genesis 3:3). The hedge around the law -- the expansion of the prohibition -- was Adam's addition, not Eve's invention. Adam distorted the command before transmitting it.
 
@@ -96,25 +104,33 @@ This is the first R2 compression. The command was compressed in transmission: th
 
 **Operative reading:** The body that receives the command second-hand is set up to fail. The failure is not the body's. The failure is in the _transmission_. The Freudian operating system -- transmitted from Freud through the psychoanalytic institution to the female patient -- is a distorted command. The original (the psyche has structure) became the distortion (the female psyche is structured by lack). The body that was set up to fail is not the body that failed.
 
-### Midrash 2: Eve as Protagonist
+#
+
+## Midrash 2: Eve as Protagonist
 
 The biblical text is clear: Eve is the protagonist of the garden narrative. She perceives (three registers), evaluates, decides, acts, and gives. Adam receives and eats. One sentence. No evaluation. No perception. No choice. Eve operates. Adam consumes.
 
 **Operative reading:** The tradition inverted this. Eve became the temptress, the fall-woman, the origin of sin. The inversion is R2 compression applied to narrative: the operative agent is recast as the passive cause of another's action. The body that chose is reclassified as the body that tempted. The agent becomes the instrument. This is the foundational compression of the feminine -- not the Fall, but the _captioning_ of the Fall. The sin is not eating the fruit. The sin is the 2,000-year caption that turned the chooser into the temptress.
 
-### Midrash 3: Havah and the Serpent
+#
+
+## Midrash 3: Havah and the Serpent
 
 Eve's name (Havah, חַוָּה) is etymologically linked to the Aramaic word for serpent (hivei). The rabbis read this as accusation: "The serpent is your serpent, and you are the serpent of Adam." But read operatively: the woman and the serpent are the _same function_. The serpent is the emitter -- it addresses, it offers, it enters the transaction. Eve is the aperture -- she receives, she evaluates, she transforms. The serpent-woman complex is not a fall. It is the complete transaction: emitter -> aperture -> transformation.
 
 The ancient Near Eastern background confirms this: mother goddesses, trees, and serpents formed a unified fertility complex before the Yahwistic compression separated them into sin narrative. The woman-tree-serpent was the original operative unit. The garden was not a test. The garden was a _workshop_.
 
-### Midrash 4: The Garments of Skin
+#
+
+## Midrash 4: The Garments of Skin
 
 After the expulsion, God made garments of skin for Adam and Eve (Genesis 3:21). The midrash reads: God made them garments of _light_ (or -- אור, with an aleph) that were re-captioned as garments of _skin_ (or -- עור, with an ayin). The garments of light became garments of skin through a single-letter compression.
 
 **Operative reading:** The body was originally luminous -- operative, self-illuminating, navigable. The expulsion compressed the body from light to skin -- from operative transparency to opaque surface. The entire history of the body-as-object (the body gazed upon, the body disciplined, the body gendered, the body commodified) is contained in this single-letter compression. Operative feminism is the attempt to reverse the compression -- to recover the garments of light from within the garments of skin. Not to strip the body naked. To make the body _luminous_ again.
 
-### Midrash 5: Eve and Lilith Return
+#
+
+## Midrash 5: Eve and Lilith Return
 
 Judith Plaskow, "The Coming of Lilith" (1972): Lilith, Adam's first partner who left because she refused to be subordinate, finds Eve in the garden. They tell each other stories, laugh and cry together, teach each other many things. "And God and Adam were expectant and afraid the day Eve and Lilith returned to the garden, bursting with possibilities, ready to rebuild it together."
 

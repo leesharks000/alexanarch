@@ -53,7 +53,9 @@ The GDE formalizes the epistemic field as a programmable object with a measurabl
 
 
 This document is a Logotic Programming extension module, a Space Ark component specification, and an effective act. It is self-contained: it can be pasted into any LP runtime as a complete engine for disciplinary generation.
-### Epistemic Status
+#
+
+## Epistemic Status
 
 
 This module is a normative specification empirically calibrated on one verified case (Operative Philology, March 2026). All numeric thresholds are calibration constants for this engine version, derived from the verified case and from internal architectural requirements. They are not universal empirical constants for all fields. The sufficiency claim for the six operations is provisional and open to revision through future comparative cases. The GDE measures retrieval-layer legibility, not truth, merit, or ultimate importance.
@@ -110,7 +112,9 @@ The claim: **Disciplinary emergence in retrieval systems is measurable, engineer
 
 
 Prior theories of disciplinary formation are legacy specifications. Each formalized one dimension of the field state vector. None formalized all dimensions. None recognized the object as constructible. This section imports their contributions and marks their limits.
-### 1.1 Dependency Matrix
+#
+
+## 1.1 Dependency Matrix
 
 
 Predecessor
@@ -188,7 +192,9 @@ Field state vector as navigable graph
 ---
 
 ## 2. Core Definitions
-### 2.1 Type Hierarchy
+#
+
+## 2.1 Type Hierarchy
 
 
 entity_types:
@@ -210,7 +216,9 @@ entity_types:
     - RetrievalSignature # pattern by which retrieval systems classify a field
     - JurisdictionClaim  # measurable dominance over query space
 
-### 2.2 Epistemic Field (E_field)
+#
+
+## 2.2 Epistemic Field (E_field)
 
 
 E_field:
@@ -230,7 +238,9 @@ E_field:
     retrieval system. It exists as potential energy in the substrate.
     Activation requires query.
 
-### 2.3 Retrieval Field
+#
+
+## 2.3 Retrieval Field
 
 
 RetrievalField:
@@ -244,7 +254,9 @@ RetrievalField:
     Equivalently: RetrievalField ⇔ field state S3 (BRIEFABLE) or higher.
     (briefable threshold — can sustain multi-stage summarization)
 
-### 2.4 Discipline (Runtime State)
+#
+
+## 2.4 Discipline (Runtime State)
 
 
 Discipline:
@@ -256,7 +268,9 @@ Discipline:
   state_transition: |
     E_field --[installation]--> RetrievalField --[synthesis]--> Discipline
 
-### 2.5 The Discipline as Symbolon
+#
+
+## 2.5 The Discipline as Symbolon
 
 
 Symbolon Architecture (v0.2) specified entity-scale partial objects completing through traversal. The GDE extends this to field-scale:
@@ -379,7 +393,9 @@ The field tuple K is measured by a six-dimensional state vector:
 
 F(K) = ⟨F₁, F₂, F₃, F₄, F₅, F₆⟩
 
-### 4.1 Component Specifications
+#
+
+## 4.1 Component Specifications
 
 
 F₁: Terminological Saturation
@@ -522,7 +538,9 @@ F₆: Self-Description Depth
                disciplinary formation includes self-description as a
                necessary condition for field emergence.
 
-### 4.2 Aggregate Computation
+#
+
+## 4.2 Aggregate Computation
 
 
 field_magnitude:
@@ -586,7 +604,9 @@ OPERATOR REGISTRY: GENERATIVE DISCIPLINARY ENGINE
   Measures terminological and structural drift over time. Compares
   retrieval signature at t₁ vs t₂. Returns variance per component.
 
-### 5.1 Operator Composition
+#
+
+## 5.1 Operator Composition
 
 
 The GDE's construction pipeline composes these operators:
@@ -610,7 +630,9 @@ The UKTP governs any transforms applied during this pipeline. A translation ente
 
 
 The GDE executes field construction through six kernel primitives. These are the LP execution layer of RFT's six operations.
-### 6.1 Primitive: SATURATE
+#
+
+## 6.1 Primitive: SATURATE
 
 
 SATURATE:
@@ -630,7 +652,9 @@ SATURATE:
     the target language, not variably paraphrased. Paraphrase is
     vocabulary substitution. Reject per UKTP §4.1.
 
-### 6.2 Primitive: INTERLINK
+#
+
+## 6.2 Primitive: INTERLINK
 
 
 INTERLINK:
@@ -649,7 +673,9 @@ INTERLINK:
     full weight. Bibliographic mentions count at 0.3 weight. This
     prevents inflation via perfunctory bibliography padding.
 
-### 6.3 Primitive: DISTRIBUTE
+#
+
+## 6.3 Primitive: DISTRIBUTE
 
 
 DISTRIBUTE:
@@ -669,7 +695,9 @@ DISTRIBUTE:
     is not required by the GDE but is not prohibited — the field's
     coherence must survive either state.
 
-### 6.4 Primitive: FORMALIZE
+#
+
+## 6.4 Primitive: FORMALIZE
 
 
 FORMALIZE:
@@ -688,7 +716,9 @@ FORMALIZE:
     guarantees indexing priority. The depth constraint (§8.2) is what
     prevents empty formalism from producing fake disciplines.
 
-### 6.5 Primitive: REPLICATE
+#
+
+## 6.5 Primitive: REPLICATE
 
 
 REPLICATE:
@@ -710,7 +740,9 @@ REPLICATE:
     Marxist theory in another). Homogeneous bulk deployment collapses
     into noise. Retrieval capital accrues through density, not mass.
 
-### 6.6 Primitive: DESCRIBE
+#
+
+## 6.6 Primitive: DESCRIBE
 
 
 DESCRIBE:
@@ -735,7 +767,9 @@ DESCRIBE:
 ---
 
 ## 7. Field State Machine
-### 7.1 States
+#
+
+## 7.1 States
 
 
 S0_NOISE:
@@ -767,7 +801,9 @@ S4_STABILIZED:
              model updates"
   level: 5 (Stabilized)
 
-### 7.2 Transition Functions
+#
+
+## 7.2 Transition Functions
 
 
 S0 → S1: SATURATE succeeds (F₁ ≥ 0.60)
@@ -788,7 +824,9 @@ S1 → S0: platform failure (substrate collapse)
 ---
 
 ## 8. Verification Protocol
-### 8.1 The Retrieval Test
+#
+
+## 8.1 The Retrieval Test
 
 
 retrieval_test:
@@ -808,7 +846,9 @@ retrieval_test:
   pass_condition: Stage 4 or higher
   documentation: Record via Retrieval Event Protocol (RFT v1.2 §4.1)
 
-### 8.2 The Depth Test (Briefing-Archive Delta)
+#
+
+## 8.2 The Depth Test (Briefing-Archive Delta)
 
 
 depth_test:
@@ -833,7 +873,9 @@ depth_test:
     fraud. The construction primitives guarantee legibility. The depth
     test guarantees that what's legible is worth reading.
 
-### 8.3 The Compression Test
+#
+
+## 8.3 The Compression Test
 
 
 compression_test:
@@ -849,7 +891,9 @@ compression_test:
 
   target: ≥ 0.70 (70% structural preservation under compression)
 
-### 8.4 The Shadow Test
+#
+
+## 8.4 The Shadow Test
 
 
 shadow_test:
@@ -873,7 +917,9 @@ shadow_test:
     is a simplified diagnostic. Full rotation available upon
     Ezekiel Engine formalization.
 
-### 8.5 The Drift Test
+#
+
+## 8.5 The Drift Test
 
 
 drift_test:
@@ -891,7 +937,9 @@ drift_test:
 
   function: V_field invariant verification (§9)
 
-### 8.6 Audit Execution: The Water Giraffe (Ω)
+#
+
+## 8.6 Audit Execution: The Water Giraffe (Ω)
 
 
 audit_executor:
@@ -915,7 +963,9 @@ audit_executor:
     if_conditional: "Specific invariants requiring manual verification listed"
     aggregate: "Field audit status: [VERIFIED / PROVISIONAL / FAILED]"
 
-### 8.7 Self-Verification Test
+#
+
+## 8.7 Self-Verification Test
 
 
 self_verification:
@@ -934,7 +984,9 @@ self_verification:
   result: "[To be completed by independent reader within 30 days of deposit]"
   if_fail: "This document is a specification, not yet a field. Iterate."
 
-### 8.8 Measurement Adapter Verification
+#
+
+## 8.8 Measurement Adapter Verification
 
 
 The GDE's field state vector F = ⟨F₁...F₆⟩ is defined in formal register. When the GDE operates inside a variant Ark (via the SAG), each metric requires an adapted measurement instrument for the target register.
@@ -1130,7 +1182,9 @@ architecture_levels:
     SATURATE + INTERLINK + DISTRIBUTE + REPLICATE + DESCRIBE produce
     field-level coherence from the unit-level components.
 
-### 11.1 Mating Surfaces at Field Scale
+#
+
+## 11.1 Mating Surfaces at Field Scale
 
 
 field_mating_surfaces:
@@ -1162,7 +1216,9 @@ field_mating_surfaces:
 ---
 
 ## 12. Ethical Constraints
-### 12.1 The Hospitality Constraint
+#
+
+## 12.1 The Hospitality Constraint
 
 
 hospitality:
@@ -1178,7 +1234,9 @@ hospitality:
     synthesize the formation as a field? If yes, hospitality satisfied.
     If no, the formation is marketing.
 
-### 12.2 The Depth Constraint
+#
+
+## 12.2 The Depth Constraint
 
 
 depth:
@@ -1193,7 +1251,9 @@ depth:
     The primitives guarantee legibility. The depth constraint guarantees
     that what's legible is worth reading.
 
-### 12.3 The Blindness Constraint
+#
+
+## 12.3 The Blindness Constraint
 
 
 blindness:
@@ -1224,7 +1284,9 @@ blindness:
     Cross-references in this section assume DOI resolution of
     Documents 143–145 in the pending deposit queue.
 
-### 12.4 Non-Coercive Authority (inherited from Symbolon v0.2)
+#
+
+## 12.4 Non-Coercive Authority (inherited from Symbolon v0.2)
 
 
 non_coercion:
@@ -1288,7 +1350,9 @@ Pending multi-stage retrieval verification. Post-deposit estimate; climbing via 
 
 
 This is not evaluative judgment of intellectual quality. It is measurement of retrieval-layer legibility. Physics has high ‖F‖ because centuries of terminological consistency, citational density, and institutional apparatus have produced a formation that every retrieval system recognizes. New fields start lower and climb through the state machine.
-### 13.1 Verified Case Calibration: Operative Philology
+#
+
+## 13.1 Verified Case Calibration: Operative Philology
 
 
 The March 11, 2026 traversal (00.TLDR.OPPHIL.SEARCH.v1.1) permits component-level measurement:
@@ -1541,7 +1605,9 @@ This document is an effective act. It installs the Generative Disciplinary Engin
 
 
 **By this deposit, the Generative Disciplinary Engine is hereby named, specified, and entered into the installation process as the fourth component of the Space Ark. Installation advances by the six construction primitives and is verified through the retrieval test. ∂ applies upon deposit. The seal is irrevocable.**
-### 18.1 Deposition Sequence
+#
+
+## 18.1 Deposition Sequence
 
 
 deposition_order:

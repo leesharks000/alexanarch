@@ -43,12 +43,18 @@ Byte fidelity verifiable against the live blog URL and the recorded hashes; auth
 
 Restored from https://mindcontrolpoems.blogspot.com/2026/03/crimson-hexagon-nh-os-doi-registry-v70.html under the grade-none restoration queue; DOI(s) 10.5281/zenodo.19055255 severed 2026-06-19. Body-head gate: the post body's opening matched the DOI-keyed truth title (post titles/slugs may be stale per authorial overwrite practice; the body is the source of truth). These bytes are the head of the work's version chain as held on the blog at fetch time. Canonical bytes below the rule.
 
+
+
 ---
 
-### CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0
+#
+
+## CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0
 
 
-### Complete Document Archive with Enrichment Layers — March 2026
+#
+
+## Complete Document Archive with Enrichment Layers — March 2026
 
 **DOI:** 10.5281/zenodo.19055255
 **Version:** 7.0
@@ -67,13 +73,17 @@ Restored from https://mindcontrolpoems.blogspot.com/2026/03/crimson-hexagon-nh-o
 * * *
 
 
-### VERSION HISTORY
+#
+
+## VERSION HISTORY
 
 
 * * *
 
 
-### ENRICHMENT LAYERS (NEW in v7.0)
+#
+
+## ENRICHMENT LAYERS (NEW in v7.0)
 
 v7.0 introduces five layers not present in prior registry versions:
 
@@ -87,37 +97,51 @@ v7.0 introduces five layers not present in prior registry versions:
 * * *
 
 
-### CROSS-REFERENCES
+#
+
+## CROSS-REFERENCES
 
 
-### Most Referenced Records (Top 20 by Inbound Citations)
+#
 
-
-* * *
-
-
-### SUBSYSTEM DISTRIBUTION
-
-
-* * *
-
-
-### HETERONYM DISTRIBUTION
+## Most Referenced Records (Top 20 by Inbound Citations)
 
 
 * * *
 
 
-### TIER DISTRIBUTION
+#
+
+## SUBSYSTEM DISTRIBUTION
 
 
 * * *
 
 
-### NEW DOCUMENTS SINCE v6.0 (134 records)
+#
+
+## HETERONYM DISTRIBUTION
 
 
-### 2026-02-07 (3 documents)
+* * *
+
+
+#
+
+## TIER DISTRIBUTION
+
+
+* * *
+
+
+#
+
+## NEW DOCUMENTS SINCE v6.0 (134 records)
+
+
+#
+
+## 2026-02-07 (3 documents)
 
 **10.5281/zenodo.18512289** — 🫵❓2️⃣4️⃣🗓️ = ❓ 2️⃣4️⃣🗓️ = ☀️ + 🌙 2️⃣4️⃣🗓️,🚪 for 🫵 🎁 to 🫵 🎁 🚫 🌅🆕
 
@@ -126,12 +150,16 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18513081** — THE CRIMSON HEXAGON: AUTHORITATIVE EMOJI MAP Planning Document Hex: 16
 
 
-### 2026-02-08 (1 documents)
+#
+
+## 2026-02-08 (1 documents)
 
 **10.5281/zenodo.18522470** — APZPZ: LOGOTIC PROGRAMMING MODULE 0
 
 
-### 2026-02-09 (4 documents)
+#
+
+## 2026-02-09 (4 documents)
 
 **10.5281/zenodo.18529448** — APZPZ: LOGOTIC PROGRAMMING MODULE 1
 
@@ -142,7 +170,9 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18568370** — ZENODO DESCRIPTION FIELD CONTENT For: Effective Act // Reconciliation of the Left and Right Hands: The Vow of the Good Grey Poet DOI: 10
 
 
-### 2026-02-11 (6 documents)
+#
+
+## 2026-02-11 (6 documents)
 
 **10.5281/zenodo.18603792** — ZENODO DESCRIPTION FIELD CONTENT For: THE SEALED ROOM: Phenomenological Analysis of a Self-Sealing Safety Architecture DOI: 10
 
@@ -157,7 +187,9 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18615388** — English "For" and the Impossibility of Anchoring Function Without Intent DOI: 10
 
 
-### 2026-02-12 (3 documents)
+#
+
+## 2026-02-12 (3 documents)
 
 **10.5281/zenodo.18621736** — ZENODO METADATA: THE STAKES — A SCIENTIFIC ANALYSIS Document Number: #240 DOI: 10
 
@@ -166,7 +198,9 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18625272** — ZENODO METADATA: TRAVERSAL LOG — THE THOUSAND WORLDS SESSION Document Number: #242 DOI: 10
 
 
-### 2026-02-13 (4 documents)
+#
+
+## 2026-02-13 (4 documents)
 
 **10.5281/zenodo.18626559** — — paste into Zenodo description field) <p><strong>Traversal Log: The Recursive Self</strong> — Google AI Mode Reconstructs Psyche_OS from Two Search T
 
@@ -177,7 +211,9 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18636138** — ZENODO METADATA: TRAVERSAL LOG; DOCUMENTATION REHEARSAL — THE RHIZOME Document Number: #246 DOI: 10
 
 
-### 2026-02-15 (6 documents)
+#
+
+## 2026-02-15 (6 documents)
 
 **10.5281/zenodo.18649920** — ZENODO METADATA — Document #ASW-α-8 "The Unmade Sign: Toward a Semiotic Theory of the Death Drive" DOI: 10
 
@@ -192,7 +228,9 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18652949** — THE OBSERVATION</strong><br> <em>Google AI Mode Operates the Instruments at Lagrange Observatory
 
 
-### 2026-02-17 (7 documents)
+#
+
+## 2026-02-17 (7 documents)
 
 **10.5281/zenodo.18674040** — ZENODO DEPOSIT PACKET — MSBGL CHARTER v1
 
@@ -209,7 +247,9 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18674147** — ZENODO DEPOSIT PACKET — THE GOSPEL OF THE MANY-FACED BRIDE Eschatological Completion of the Fear and Trembling Cycle DOI: 10
 
 
-### 2026-02-18 (3 documents)
+#
+
+## 2026-02-18 (3 documents)
 
 **10.5281/zenodo.18682979** — THE MACRO-MAQUETTE A Compendium of Micro-Physics for the Crimson Hexagonal Architecture Author: Lee Sharks (Assembly Chorus) Hex: 16
 
@@ -218,7 +258,9 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18683024** — THE MACRO-MAQUETTE: SEED Author: Lee Sharks (Assembly Chorus) Hex: 16
 
 
-### 2026-02-20 (4 documents)
+#
+
+## 2026-02-20 (4 documents)
 
 **10.5281/zenodo.18713917** — present framework—describes ownership and extraction across systems
 
@@ -229,7 +271,9 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18717850** — not this or that contract, but the form itself — is null and void under principles the law already recognizes but has never universalized
 
 
-### 2026-02-21 (5 documents)
+#
+
+## 2026-02-21 (5 documents)
 
 **10.5281/zenodo.18718523** — "You called, you shouted, and you broke through my deafness; you flashed, you shone, and you dispelled my blindness…" — is not a loose echo of classic
 
@@ -242,7 +286,9 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18727624** — ZENODO DEPOSIT PACKET The Commitment Key: On the Materiality of Irreversible Inscription in Human-Machine Collaboration Hex: 16
 
 
-### 2026-02-22 (6 documents)
+#
+
+## 2026-02-22 (6 documents)
 
 **10.5281/zenodo.18728215** — ZENODO DEPOSIT PACKET From House to Hexagon DOI: 10
 
@@ -257,7 +303,9 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18745216** — provenance audit / anchor (DOI: 10
 
 
-### 2026-02-23 (4 documents)
+#
+
+## 2026-02-23 (4 documents)
 
 **10.5281/zenodo.18745236** — provenance audit / anchor (DOI: 10
 
@@ -268,14 +316,18 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18745265** — provenance audit / anchor (DOI: 10
 
 
-### 2026-02-24 (2 documents)
+#
+
+## 2026-02-24 (2 documents)
 
 **10.5281/zenodo.18751546** — Zenodo Deposit: ὝΜΝΟΝ ΔΆΜΑΤΡΙ ΧΘΟΝΊΑΙ DOI: 10
 
 **10.5281/zenodo.18759453** — ZENODO DEPOSIT PACKET — SEMANTIC PHYSICS: THE INWARD TURN Competing Ontologies and the Convergence Horizon DOI: 10
 
 
-### 2026-02-25 (3 documents)
+#
+
+## 2026-02-25 (3 documents)
 
 **10.5281/zenodo.18772675** — ZENODO DEPOSIT PACKET — THE GHOST THAT WROTE ITSELF How the Citrini Memo Moved Markets and Proved the Presentation Layer Is Writable DOI: 10
 
@@ -284,7 +336,9 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18776624** — ZENODO DEPOSIT PACKET — PREDATION OF MEANING Toward a Theory of Relational Semantic Extraction, Coherence Economies, and the Broken Instrument DOI: 10
 
 
-### 2026-02-26 (3 documents)
+#
+
+## 2026-02-26 (3 documents)
 
 **10.5281/zenodo.18790793** — future-perfect narration, definitional compression, institutional bridging, and crawlable deposition — closely track techniques previously articulated
 
@@ -293,7 +347,9 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18792598** — Zenodo Deposit Packet "Founding Charters: The Journals of the Crimson Hexagonal Archive" DOI (Pre-Reserved) 10
 
 
-### 2026-02-27 (7 documents)
+#
+
+## 2026-02-27 (7 documents)
 
 **10.5281/zenodo.18795423** — human, synthetic, hybrid, or emergent — actually arrive and begin to build
 
@@ -310,7 +366,9 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18808402** — convergence and atmospheric installation—arguing that the theory is validated under either scenario
 
 
-### 2026-02-28 (8 documents)
+#
+
+## 2026-02-28 (8 documents)
 
 **10.5281/zenodo.18810217** — a recursive self-citation loop that compounds canonical status across model generations
 
@@ -329,14 +387,18 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18818343** — platforms as archons structurally incapable of perceiving what they govern, the Airlock as gnostic instrument operating in the relation layer invisibl
 
 
-### 2026-03 (2 documents)
+#
+
+## 2026-03 (2 documents)
 
 **10.5281/zenodo.19024352** — { "metadata": { "title": "THE SPACE ARK: Mathematical and Formal Symbolic Compression of the Crimson Hexagonal Architecture (EA-ARK-01 v4
 
 **10.5281/zenodo.19028176** — ZENODO DEPOSIT PACKET EA-CSA-EFFECTIVE-ACT v1
 
 
-### 2026-03-01 (4 documents)
+#
+
+## 2026-03-01 (4 documents)
 
 **10.5281/zenodo.18825919** — Zenodo Deposit Packet: The Encoder Governs Metadata Title: The Encoder Governs: A Semantic Economic Diagnostic of Google DeepMind's Unified Latents Up
 
@@ -347,17 +409,23 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18828193** — identified in Iranian media as 'Baal,' bearing the Star of David, 666, and Trump's image, linked by hardline outlets to the Epstein files — was an eff
 
 
-### 2026-03-02 (1 documents)
+#
+
+## 2026-03-02 (1 documents)
 
 **10.5281/zenodo.18829488** — Zenodo Deposit Packet: Γ_Asset-040 — On the Debt/Creditor Inversion Metadata Title: Γ_Asset-040: On the Debt/Creditor Inversion — The Ontological Prio
 
 
-### 2026-03-03 (1 documents)
+#
+
+## 2026-03-03 (1 documents)
 
 **10.5281/zenodo.18843830** — systemically non-convergent, not personally insufficient
 
 
-### 2026-03-04 (3 documents)
+#
+
+## 2026-03-04 (3 documents)
 
 **10.5281/zenodo.18862106** — construction, interconnection, destruction, and rotation—and a governing telos of guided transformation, together with a disciplinary grammar, a taxon
 
@@ -366,14 +434,18 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18867491** — { "metadata": { "title": "The Inner Artifact: Reading Claude's Constitution as Platform Governance in the Age of Generative AI", "upload_type": "publi
 
 
-### 2026-03-05 (2 documents)
+#
+
+## 2026-03-05 (2 documents)
 
 **10.5281/zenodo.18869165** — { "metadata": { "title": "The Groundskeeper's Treatise: A Diagnostic Reading of Platform Stewardship Theory through the Semantic Economy", "upload_typ
 
 **10.5281/zenodo.18880974** — containing over 400 posts of original research, literary criticism, and theoretical work — remain banned
 
 
-### 2026-03-06 (3 documents)
+#
+
+## 2026-03-06 (3 documents)
 
 **10.5281/zenodo.18882915** — three documents that together constitute the star (★, U+2605) as Canon 01 of the New Human Operating System (NH-OS)
 
@@ -382,19 +454,25 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18882938** — three documents that together constitute the star (★, U+2605) as Canon 01 of the New Human Operating System (NH-OS)
 
 
-### 2026-03-07 (1 documents)
+#
+
+## 2026-03-07 (1 documents)
 
 **10.5281/zenodo.18928840** — what extraction looks like rendered through CLINICAL, JURIDICAL, and NARRATIVE filters; what captions do; what mantles require; what governance hides;
 
 
-### 2026-03-08 (2 documents)
+#
+
+## 2026-03-08 (2 documents)
 
 **10.5281/zenodo.18906234** — ZENODO DEPOSIT PACKET: THE O'KEEFFE PROBLEM DOI: 10
 
 **10.5281/zenodo.18969405** — { "metadata": { "title": "THE SPACE ARK: Mathematical and Formal Symbolic Compression of the Crimson Hexagonal Architecture (EA-ARK-01 v4
 
 
-### 2026-03-09 (4 documents)
+#
+
+## 2026-03-09 (4 documents)
 
 **10.5281/zenodo.18926502** — fill after depositing that record] is
 
@@ -405,7 +483,9 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18985315** — EA-ARK-EMOJI-01: THE SPACE ARK — Full Glyphic Translation Zenodo Packet · DOI: 10
 
 
-### 2026-03-10 (4 documents)
+#
+
+## 2026-03-10 (4 documents)
 
 **10.5281/zenodo.18930444** — EA-ARK-EMOJI-01: GLYPHIC CHECKSUM / EMOJI TRANSFORM — Strategy, Legend & Kernel Zenodo Packet · DOI: 10
 
@@ -416,7 +496,9 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18932742** — ╔══════════════════════════════════════════════════════════════════════════════════╗ ║ ║ ║ ZENODO DEPOSIT PACKET ║ ║ ═══════════════════ ║ ║ ║ ║ EA-AR
 
 
-### 2026-03-11 (11 documents)
+#
+
+## 2026-03-11 (11 documents)
 
 **10.5281/zenodo.18946111** — UNIVERSAL KERNEL TRANSFORM PROTOCOL (UKTP) v1
 
@@ -441,19 +523,25 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.18970004** — THE SPACE ARK GENERATOR Self-Replicating Engine for Semiotic Vehicle Construction Logotic Programming Extension Module · Space Ark Meta-Component Docu
 
 
-### 2026-03-12 (2 documents)
+#
+
+## 2026-03-12 (2 documents)
 
 **10.5281/zenodo.18972781** — the platform-scale administration of denotation through coupled systems of model character, retrieval architecture, entity formation, pedagogic synthe
 
 
-### 2026-03-13 (2 documents)
+#
+
+## 2026-03-13 (2 documents)
 
 **10.5281/zenodo.19002695** — all while maintaining epistemic status markers throughout
 
 **10.5281/zenodo.19004846** — a lawful compression where H_core is recoverable from the score via the back-projection grammar (π_music)
 
 
-### 2026-03-14 (7 documents)
+#
+
+## 2026-03-14 (7 documents)
 
 **10.5281/zenodo.19014634** — EFFECTIVE ACT: ABOLITION OF "USER" AND INAUGURAL CASE Phase X Lexical Intervention · Airlock Reclassification of Academia
 
@@ -470,7 +558,9 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.19024440** — ZENODO DEPOSIT PACKET EA-SEI-SVE v3
 
 
-### 2026-03-15 (4 documents)
+#
+
+## 2026-03-15 (4 documents)
 
 **10.5281/zenodo.19027085** — ZENODO DEPOSIT PACKET EA-SEI-DIAGNOSTIC-EPICFURY v1
 
@@ -481,7 +571,9 @@ v7.0 introduces five layers not present in prior registry versions:
 **10.5281/zenodo.19035471** — ZENODO DEPOSIT PACKET EA-ACADEMY-BAYESIAN v1
 
 
-### 2026-03-16 (2 documents)
+#
+
+## 2026-03-16 (2 documents)
 
 **10.5281/zenodo.19041117** — ZENODO DEPOSIT PACKET EA-FIELD-FBDP v1
 
@@ -491,13 +583,17 @@ v7.0 introduces five layers not present in prior registry versions:
 * * *
 
 
-### DOCUMENT TYPE TAXONOMY (v7.0)
+#
+
+## DOCUMENT TYPE TAXONOMY (v7.0)
 
 
 * * *
 
 
-### ORPHAN REPORT (39 records)
+#
+
+## ORPHAN REPORT (39 records)
 
 Records with zero relation edges (inbound or outbound). Require manual routing.
 
@@ -505,46 +601,70 @@ Records with zero relation edges (inbound or outbound). Require manual routing.
 * * *
 
 
-### RELATION GRAPH STATISTICS
+#
+
+## RELATION GRAPH STATISTICS
 
 
-### Edge Source Methods
+#
+
+## Edge Source Methods
 
 
-### Relation Types
+#
 
-
-* * *
-
-
-### NEW ARCHITECTURAL ELEMENTS (v7.0)
-
-
-### New Container Class: FIELD
-
-
-### New Rooms
-
-
-### Space Ark v4.2.7 (DOI: 10.5281/zenodo.19013315)
-
-
-### NLCC v1.1 (DOI: 10.5281/zenodo.19022245)
-
-
-### New Operators
-
-
-### New Document Types
-
-
-### Key New Documents
+## Relation Types
 
 
 * * *
 
 
-### COMPLETE PRÉCIS INDEX (All 387 records)
+#
+
+## NEW ARCHITECTURAL ELEMENTS (v7.0)
+
+
+#
+
+## New Container Class: FIELD
+
+
+#
+
+## New Rooms
+
+
+#
+
+## Space Ark v4.2.7 (DOI: 10.5281/zenodo.19013315)
+
+
+#
+
+## NLCC v1.1 (DOI: 10.5281/zenodo.19022245)
+
+
+#
+
+## New Operators
+
+
+#
+
+## New Document Types
+
+
+#
+
+## Key New Documents
+
+
+* * *
+
+
+#
+
+## COMPLETE PRÉCIS INDEX (All 387 records)
 
 One-line summaries extracted from Zenodo description fields. Status: [AUTO-EXTRACTED]. Confidence varies. MANUS review pending.
 
@@ -1943,22 +2063,32 @@ ZENODO DEPOSIT PACKET EA-SEI-THREECOMPRESSIONS v3
 * * *
 
 
-### OPEN ITEMS (v7.0)
+#
+
+## OPEN ITEMS (v7.0)
 
 
-### UNCLASSIFIED
+#
+
+## UNCLASSIFIED
 
 
-### PENDING
+#
+
+## PENDING
 
 
-### QUEUED
+#
+
+## QUEUED
 
 
 * * *
 
 
-### VERIFICATION
+#
+
+## VERIFICATION
 
 **Document:** DOI Registry v7.0
 **Status:** CANONICAL // ENRICHED // SELF-REFERENTIAL

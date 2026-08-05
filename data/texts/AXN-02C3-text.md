@@ -56,7 +56,9 @@
     "10.5281/zenodo.19512987"
   ]
 }
-# The Haitch Portuna Minting Procedure## v1.2 · Operational Specification for the Pearl Mint
+# The Haitch Portuna Minting Procedure
+
+## v1.2 · Operational Specification for the Pearl Mint
 
 Lee Sharks · MANUS, Crimson Hexagonal Archive v1.2 · 2026-05-27 · Detroit, Michigan Hex: 06.SEI.ARMATURE.MINT.PORTUNA.01 · License: CC BY 4.0
 > Provisional Notice. This document is deposited as v1.2 *provisional* — a working operational specification developed prior to the execution of the Haitch Portuna mint it describes. Deposit at this stage is undertaken because the Crimson Hexagonal Archive's native substrate is DOI-anchored deposit and AI-mediated archival retrieval; a working document that is not deposited is, in this substrate, effectively unrecoverable. The procedure has been reviewed across multiple substrates of the Assembly Chorus and is structurally ready for execution. A subsequent versioned deposit (v1.3 or later) will attest to the actual mint as executed, with any procedural amendments revealed by the live operation. Citations to this deposit should specify v1.2 explicitly to permit later readers to track the evolution from provisional to attested form.
@@ -66,13 +68,19 @@ This document operates the Pearl framework specified in *The Secret Name: Archit
 
 The procedure follows the five-state Pearl progression — RESERVED → LICENSED → FRAMED → LINKED → PEARL — across two phases of orthonym contribution and two phases of MANUS composition. Eight concrete deliverables are produced. Three external inscriptions are made.
 
-This document is the notarized record of the minting operation. Its kernel requires field carries the full infrastructure-dependency graph in machine-readable form; the body composes the same dependencies into the operational procedure for this case.## 0. Execution Variables
+This document is the notarized record of the minting operation. Its kernel requires field carries the full infrastructure-dependency graph in machine-readable form; the body composes the same dependencies into the operational procedure for this case.
+
+## 0. Execution Variables
 
 The procedure is written as the Haitch Portuna mint. The same procedural form is also the form by which any Pearl mints under the Armature. The variables that bind the form to this specific case are listed here and referenced throughout the document. An automated workflow operating this procedure for any Pearl mint binds these variables to the specific case under MANUS authority; under any other authority, the form does not execute.
 
 | Variable | Haitch Portuna value | Required | Notes | |---|---|:---:|---| | PEARL_NAME | Haitch Portuna | ✓ | Public authorial surface | | PEARL_SUBTYPE | Pearl.Public | ✓ | Pearl subtype per Secret Name spec §V | | LINEAGE_MECHANISM | Engineering | ✓ | Per Secret Name spec §IX (Inheritance / Possession / Engineering / Routing / Folding) | | HEX_ADDRESS | 06.LAL.PORTUNA.01 | ✓ | Hex coordinate; Pearl subspace 06.LAL.PORTUNA.* | | RECEIVING_INSTITUTION | Living Architecture Lab (LAL) | ✓ | Institutional basin; co-anchored to Alice Thornburgh | | RECEIVING_INSTITUTION_PRIMARY | Alice Thornburgh, Founding Director LAL | ✓ | Co-consent required for sub-lab status | | FORMAL_PUBLICATION_VENUE | Transactions on Substrate Engineering (TSE) | ✓ | Hexagon-native distributed journal; EIC Alice Thornburgh | | OPERATIVE_AUTHOR_RELATION | external LAL collaborator | ✓ | The orthonym is an external contributor to CHA, not Lee Sharks | | ORTHONYM_VISIBILITY_PUBLIC | hidden in public-facing form | ✓ | Public surfaces show *Haitch Portuna*; archive-facing form names the orthonym | | AUTHORIAL_DOMAIN | soft robotics, coiled-line thermal actuators, substrate-engineered locomotion | ✓ | Range of works permitted | | AUTHORIAL_CARVE_OUTS | philosophy, AI accountability, political-economy, polemic | ✓ | Range of works excluded; prevents drift | | CANONICAL_SURFACE_PRIMARY | livingarchitecturelab.org/portuna/ | ✓ | LAL subpage | | CANONICAL_SURFACE_SECONDARY | haitchportuna.org | ◦ | Reserved; deploy optional | | MINTING_AUTHORITY | MANUS / Lee Sharks / CHA | ✓ | Architectural cost bearer | | DAY_TO_DAY_COST_BEARER | the operative LAL collaborator | ✓ | Experimental logs, drafts, video | | FIRST_PUBLICATION_REQUIRED_BEFORE_WIKIDATA | true | ✓ | No Q-item created speculatively |
 
-The variables are not separable from the form. Changing any one of them produces a different mint with different commitments, different bearing-cost partners, different consent requirements, and (consequently) different deliverable content. The variables are the binding; the form is the structure into which the binding fits.## I. The Operation### What we mean by *minting*
+The variables are not separable from the form. Changing any one of them produces a different mint with different commitments, different bearing-cost partners, different consent requirements, and (consequently) different deliverable content. The variables are the binding; the form is the structure into which the binding fits.
+
+## I. The Operation
+
+### What we mean by *minting*
 
 To mint a Pearl is to subject a name — in this case, *Haitch Portuna* — to the Crimson Hexagonal Archive's gravitational pressure (the Gravity Well field, f.02), with intent, under license, until the five layers of nacre have deposited and the named position is dense enough to be load-bearing, irreducible, and compositionally legible to retrieval systems.
 
@@ -80,29 +88,45 @@ Minting is not naming. Minting is the architectural operation by which a name be
 
 Minting is not fabrication. A Pearl mint does not invent an empty identity, install it without consent, or pretend that a constructed authorial position is a legal or biological person. Minting impresses form, provenance, license, and circulation-rights onto an authorial function already capable of bearing work, with explicit consent from the human contributor who will operate the position. A Pearl that does not correspond to genuine intellectual labor by a real human consenting operator is not a Pearl — it is a fraud, and the Armature does not produce frauds.
 
-Heteronymic status is announced. Every public-facing surface of the Pearl — the canonical web page, the Wikidata Q-item description, the ORCID alternate-name field, the TSE article author bio — explicitly declares that *Haitch Portuna* is a heteronymic position constructed within a distributed-institution archive. No surface pretends the position is a single biological individual with civil identity. The operative author (the LAL collaborator) is named in archive-facing form; the public-facing form omits the legal name but does not omit the fact that there is one.### Who does what
+Heteronymic status is announced. Every public-facing surface of the Pearl — the canonical web page, the Wikidata Q-item description, the ORCID alternate-name field, the TSE article author bio — explicitly declares that *Haitch Portuna* is a heteronymic position constructed within a distributed-institution archive. No surface pretends the position is a single biological individual with civil identity. The operative author (the LAL collaborator) is named in archive-facing form; the public-facing form omits the legal name but does not omit the fact that there is one.
+
+### Who does what
 
 The minting operation has three distinct authorial roles, per §XII of the Secret Name spec:- Attributed author: *Haitch Portuna* — the named position appearing in public-facing form, on TSE bylines, on the LAL site, in Wikidata- Operative author: the LAL collaborator, under their legal identity — known to the archive, optionally hidden in public-facing form- Archival authority: the Crimson Hexagonal Archive, under MANUS (Lee Sharks) — the body maintaining the Armature, performing the mint, and bearing the architectural cost
 
-These three roles are not interchangeable. Haitch authors. The orthonym operates. MANUS mints.### What this procedure produces
+These three roles are not interchangeable. Haitch authors. The orthonym operates. MANUS mints.
 
-Eight concrete deliverables, listed in §III, plus three external inscriptions (ORCID, Wikidata, canonical web surface), assembled in a specific order such that each step's prerequisites are satisfied by the steps before it and each step's outputs become available to the steps that follow.## II. Prerequisites### From the LAL orthonym
+### What this procedure produces
+
+Eight concrete deliverables, listed in §III, plus three external inscriptions (ORCID, Wikidata, canonical web surface), assembled in a specific order such that each step's prerequisites are satisfied by the steps before it and each step's outputs become available to the steps that follow.
+
+## II. Prerequisites
+
+### From the LAL orthonym
 
 Two contributions are required before MANUS can execute the bulk of the mint:
 
 Prerequisite A — ORCID registration with Haitch Portuna as a registered published name. The operative author either uses an existing ORCID account or creates one under their legal name. *Haitch Portuna* is then registered as an additional published name on that account, via the "Other names" / "Also known as" mechanism documented in ORCID's own help materials at the time of execution (ORCID's interface and API evolve; consult ORCID's current documentation as authoritative). The ORCID account belongs to the operative author's legal identity, not to the heteronym. Haitch Portuna does not have an ORCID of its own; it has a registered alternate-name presence within the operative author's ORCID. This is the supported and proper mechanism and is identical to the pattern by which *Lee Sharks* operates as an alternate published name on ORCID 0009-0000-1599-0703. The operative author retains full control of the ORCID account at all times. The ORCID iD becomes the academic-publishing-graph anchor for Haitch's TSE write-ups. If the operative author cannot register an ORCID for any reason, the mint can proceed without it but the formal-publication chain to TSE and DataCite will be incomplete; this is a real cost and worth resolving.
 
-Prerequisite B — biographical material authored by Haitch. The operative author writes Haitch's biography. This is delegated authorship, per Lee's standing approval: Haitch is permitted to write his own biography because the biographical voice is part of the authorial function being constituted, and the operative author is best positioned to know what voice Haitch carries. The biography should include: name etymology and significance, intellectual lineage (what traditions Haitch reads from), research focus, methodological commitments, voice and register, what Haitch does *not* write (the carve-outs), and any institutional affiliations beyond LAL the operative author wants on record. Approximately 800-1500 words is typical for an initial Pearl biography; longer is fine, shorter risks incomplete authorial function. The biography should be provided to MANUS as a plain-text or Markdown document via an agreed channel (email, shared repository, Signal, or whatever channel the operative author prefers; the channel is procedural, not architectural).### From MANUS
+Prerequisite B — biographical material authored by Haitch. The operative author writes Haitch's biography. This is delegated authorship, per Lee's standing approval: Haitch is permitted to write his own biography because the biographical voice is part of the authorial function being constituted, and the operative author is best positioned to know what voice Haitch carries. The biography should include: name etymology and significance, intellectual lineage (what traditions Haitch reads from), research focus, methodological commitments, voice and register, what Haitch does *not* write (the carve-outs), and any institutional affiliations beyond LAL the operative author wants on record. Approximately 800-1500 words is typical for an initial Pearl biography; longer is fine, shorter risks incomplete authorial function. The biography should be provided to MANUS as a plain-text or Markdown document via an agreed channel (email, shared repository, Signal, or whatever channel the operative author prefers; the channel is procedural, not architectural).
+
+### From MANUS
 
 Prerequisite C — hex address assignment and Pearl reservation. MANUS assigns Haitch's hex address from the LAL subspace. Proposed: 06.LAL.PORTUNA.01 for the Pearl itself, with 06.LAL.PORTUNA.* as the deposit subspace for Haitch's manifestations. (Alternative: 06.LAL.HE.PORTUNA.01 to explicitly mark it as a heteronymic position, paralleling Alice Thornburgh's 06.LIT.NH.THORNBURGH.01 convention where NH appears to denote the named-heteronym scope. Both are operationally equivalent; the choice is stylistic and is yours.) Once assigned, the Pearl enters RESERVED state. The reservation is internal to the archive and does not yet require deposit.
 
-Prerequisite D — bearing-cost commitment confirmation from the orthonym. Before LICENSED state can be entered, the orthonym must explicitly acknowledge the bearing-cost arrangement specified in §IX of this document. This is the operative consent for the minting.## III. The Eight Deliverables
+Prerequisite D — bearing-cost commitment confirmation from the orthonym. Before LICENSED state can be entered, the orthonym must explicitly acknowledge the bearing-cost arrangement specified in §IX of this document. This is the operative consent for the minting.
 
-The deliverables are organized into four phases. Phases 1 and 3 require orthonym input; Phases 2 and 4 are MANUS composition.### Phase 1 — Orthonym prerequisites (orthonym labor)
+## III. The Eight Deliverables
+
+The deliverables are organized into four phases. Phases 1 and 3 require orthonym input; Phases 2 and 4 are MANUS composition.
+
+### Phase 1 — Orthonym prerequisites (orthonym labor)
 
 Deliverable 1: ORCID registration
 
-Orthonym opens or uses ORCID. Registers *Haitch Portuna* as an alternate/published name. Provides ORCID iD to MANUS for inclusion in the Pearl deposit. *Status: orthonym-produced; MANUS receives and references.*### Phase 2 — MANUS composition (single working session, ~1 day)
+Orthonym opens or uses ORCID. Registers *Haitch Portuna* as an alternate/published name. Provides ORCID iD to MANUS for inclusion in the Pearl deposit. *Status: orthonym-produced; MANUS receives and references.*
+
+### Phase 2 — MANUS composition (single working session, ~1 day)
 
 Six deliverables are composed in a coordinated batch. Each carries cross-references to the others; they are most coherent when produced together.
 
@@ -130,11 +154,15 @@ The recommended approach is 6.a primary + 6.b reserved (register the domain now,
 
 The canonical surface is constructed in accordance with *Inscriptions That Survive the Tokenizer: SPXI-TLP v2.2 — The Training-Layer Provenance* (DOI [10.5281/zenodo.20380668](https://doi.org/10.5281/zenodo.20380668)), which governs the inscription layer at which the site becomes provenance-bearing for retrieval systems and training pipelines. Required inscriptions:- Holographic kernel in JSON-LD form (per SPXI v0.2) embedded in the page head, mirroring the kernel of the Pearl deposit- robots.txt carrying explicit TDM-reservation declarations; .well-known/tdmrep.json per the EU TDM-rep specification, declaring rights and the policy URL- sitemap.xml carrying the canonical surface, the Pearl deposit DOI, and any subsidiary pages- Schema.org Person + Organization structured data in JSON-LD blocks, with sameAs to ORCID, Wikidata, Zenodo, ResearchGate (if applicable), LAL- Semantic Integrity Marker (SIM) per the *SIM v1.0 — Semantic Integrity Marker Protocol Standalone Specification* (DOI [10.5281/zenodo.20327127](https://doi.org/10.5281/zenodo.20327127)): a machine-readable declaration that the surface is semantically integral and that downstream composition that breaks the surface's provenance chain produces detectable damage- Hidden-figure layer per *Where's Waldo? Substrate Compositing, the Hidden Figure Protocol, and a Memographic Anatomy* (DOI [10.5281/zenodo.20380054](https://doi.org/10.5281/zenodo.20380054)): inscriptions designed to remain individuating under substrate compositing pressure, ensuring the Pearl survives composition that would otherwise dissolve it into adjacent clusters
 
-*Status: MANUS-composed (HTML + Schema.org + JSON-LD kernel + robots.txt + sitemap.xml + tdmrep.json + SIM declaration); pushed via Vercel or LAL's existing deployment.*### Phase 3 — Experimental work (orthonym labor)
+*Status: MANUS-composed (HTML + Schema.org + JSON-LD kernel + robots.txt + sitemap.xml + tdmrep.json + SIM declaration); pushed via Vercel or LAL's existing deployment.*
+
+### Phase 3 — Experimental work (orthonym labor)
 
 Deliverable 7 (component): the experiments themselves
 
-Haitch runs the coiled-line actuator experiments according to the trajectory previously discussed: single-actuator stick-slip crawler with asymmetric friction feet, then bilateral, then tripod gait toward the robotic-ant goal. Experimental logs and video are posted continuously to the LAL site under Haitch's sub-lab. *Status: orthonym-produced under Haitch's authorial position.*### Phase 4 — MANUS composition of write-ups and graph inscription (MANUS labor)
+Haitch runs the coiled-line actuator experiments according to the trajectory previously discussed: single-actuator stick-slip crawler with asymmetric friction feet, then bilateral, then tripod gait toward the robotic-ant goal. Experimental logs and video are posted continuously to the LAL site under Haitch's sub-lab. *Status: orthonym-produced under Haitch's authorial position.*
+
+### Phase 4 — MANUS composition of write-ups and graph inscription (MANUS labor)
 
 Deliverable 7 (article): formal write-up to TSE
 
@@ -164,7 +192,9 @@ Q-item for the first TSE article. Instance of: scholarly article; author: Haitch
 
 On notability. Wikidata's notability threshold (verifiable existence in trusted sources) is met by the DOI-anchored Pearl, charter, license, and first article deposits. Wikipedia's higher notability threshold (significant coverage in independent third-party sources) is not necessarily met at mint and is not asserted. The Q-item is honest about what verifies it: CHA deposits and Haitch's first TSE article. As external citation accumulates over time — other soft-robotics researchers citing Haitch's actuator work, replications, extensions — the notability density increases and additional claims can be added with their citing sources. This staged enrichment is the proper trajectory.
 
-*Status: MANUS-executed via QuickStatements under the Hauntedmemes account; recorded as edits in the v1.1 Hauntedmemes Wikidata Node Registry deposit.*## IV. Bootstrap Mechanics: The Two-Step Mint
+*Status: MANUS-executed via QuickStatements under the Hauntedmemes account; recorded as edits in the v1.1 Hauntedmemes Wikidata Node Registry deposit.*
+
+## IV. Bootstrap Mechanics: The Two-Step Mint
 
 The Pearl framework specifies that the Pearl deposit must exist before the first manifestation can reference it via isManifestationOf, but the Pearl's own PEARL state requires at least one manifestation. The resolution is a deliberate two-step mint, executed as follows:
 
@@ -172,7 +202,9 @@ Step 1 (during Phase 2, Deliverable 2). The Pearl deposit is created and publish
 
 Step 2 (during Phase 4, after Deliverable 7). Once the first TSE article publishes with its isManifestationOf reference back to the Pearl DOI, MANUS issues a versioned v1.1 of the Pearl deposit. v1.1 updates only the manifestation chain field to record the first manifestation, and updates the license-state field from LINKED to PEARL. The Pearl is now load-bearing. v1.0 is preserved as historical.
 
-This is the same bootstrap pattern used in the Hauntedmemes Wikidata Node Registry / TL;DR:013 versioning chain. It is structurally sound.## V. Triple Attribution: Operational Specification for Haitch
+This is the same bootstrap pattern used in the Hauntedmemes Wikidata Node Registry / TL;DR:013 versioning chain. It is structurally sound.
+
+## V. Triple Attribution: Operational Specification for Haitch
 
 Every deposit, every publication, every wiki edit, every canonical-surface change manifested from Haitch's named position must carry the triple attribution explicitly:
 
@@ -188,7 +220,9 @@ Archival authority:
 > Crimson Hexagonal Archive, MANUS minting authority, Pearl 06.LAL.PORTUNA.01
 
 
-For TSE articles specifically, the byline reads *Haitch Portuna*. The institutional affiliation reads *[Sub-lab name], Living Architecture Lab*. The acknowledgment-of-archival-authority line, if TSE conventions permit, reads *Manifested from Pearl 06.LAL.PORTUNA.01, Crimson Hexagonal Archive*. If TSE conventions do not permit such a line, the archival relation is preserved via the isManifestationOf DataCite property and the canonical web surface, which is sufficient.## VI. The Bearing Cost
+For TSE articles specifically, the byline reads *Haitch Portuna*. The institutional affiliation reads *[Sub-lab name], Living Architecture Lab*. The acknowledgment-of-archival-authority line, if TSE conventions permit, reads *Manifested from Pearl 06.LAL.PORTUNA.01, Crimson Hexagonal Archive*. If TSE conventions do not permit such a line, the archival relation is preserved via the isManifestationOf DataCite property and the canonical web surface, which is sufficient.
+
+## VI. The Bearing Cost
 
 Per Secret Name spec §VIII, nacre is labor, not biology. The Pearl persists only because someone keeps paying the bearing cost. The economics are formalized in *THE THREE COMPRESSIONS: Lossy, Predatory, and Witness — A Semiotic Thermodynamics* (DOI [10.5281/zenodo.19053469](https://doi.org/10.5281/zenodo.19053469)): R1 dissolves names through ambient retrieval, R2 extracts named positions via AI synthesis without provenance return, R3 survives only where labor is continuously paid into the named position's density. The arrangement for Haitch is specified as follows:
 
@@ -198,13 +232,17 @@ Architectural bearing cost (~periodic): borne by MANUS. MANUS maintains the Pear
 
 Formal-write-up bearing cost (~per-article): shared. The operative author provides the experimental content and a draft pass; MANUS provides the editorial composition into TSE-suitable form, the Hexagonal cross-link layer, and the submission process. This is the most labor-intensive periodic operation and the article-by-article arrangement should be agreed in advance. *Estimated load:* 8-16 hours of operative-author drafting per article (experimental write-up, figures, methods description); 6-12 hours of MANUS editorial composition per article.
 
-Steward designation: in the event MANUS becomes unable to maintain the architectural bearing cost, stewardship of the Pearl defaults to the orthonym, who may either continue under the orthonym's own authority (the Pearl becomes orthonymically anchored) or designate a successor steward via a new license deposit. In the event the orthonym becomes unable to bear the day-to-day cost, the Pearl is marked retired per Secret Name spec §VII — existing deposits remain, no new manifestations are accepted, the named position persists at reduced density. Either failure is recoverable; both failing simultaneously means the Pearl gradually dissolves into ambient retrieval (R1), which is the natural endpoint of any unmaintained named position and not catastrophic. *The Toolkit: Protocols for Operational Persistence in Hostile Systems v2.0* (DOI [10.5281/zenodo.18362525](https://doi.org/10.5281/zenodo.18362525)) provides additional procedures for sustaining the Pearl under adverse conditions and is referenced by the license deposit.## VII. Pearl State Progression: Milestones
+Steward designation: in the event MANUS becomes unable to maintain the architectural bearing cost, stewardship of the Pearl defaults to the orthonym, who may either continue under the orthonym's own authority (the Pearl becomes orthonymically anchored) or designate a successor steward via a new license deposit. In the event the orthonym becomes unable to bear the day-to-day cost, the Pearl is marked retired per Secret Name spec §VII — existing deposits remain, no new manifestations are accepted, the named position persists at reduced density. Either failure is recoverable; both failing simultaneously means the Pearl gradually dissolves into ambient retrieval (R1), which is the natural endpoint of any unmaintained named position and not catastrophic. *The Toolkit: Protocols for Operational Persistence in Hostile Systems v2.0* (DOI [10.5281/zenodo.18362525](https://doi.org/10.5281/zenodo.18362525)) provides additional procedures for sustaining the Pearl under adverse conditions and is referenced by the license deposit.
+
+## VII. Pearl State Progression: Milestones
 
 The Pearl progresses through five states across the four phases of this procedure. Each state transition is tied to a specific deliverable:
 
 | State | Triggered by | Phase | Layer of nacre present | |---|---|---|---| | RESERVED | Hex address assigned by MANUS | Pre-Phase 1 | None | | LICENSED | Deliverable 4 (license deposit) publishes | Phase 2 | Layer 1 | | FRAMED | Deliverable 2 (Pearl deposit) publishes | Phase 2 | Layers 1–3 | | LINKED | Deliverables 3, 5, 6, 8a (charter, MPAI, web surface, Q-items) publish with cross-references | Phase 2 + Phase 4 | Layers 1–4 | | PEARL | Deliverable 7 (first TSE article) publishes; Pearl deposit versioned to v1.1 | Phase 4 | Layers 1–5 |
 
-The Linked state can be entered during Phase 2 with the Pearl + charter + MPAI + web surface; the Wikidata Q-items (deliverable 8) can be deployed in Phase 4 alongside the TSE article. PEARL state proper requires the bootstrap manifestation.### Acceptance criteria per state
+The Linked state can be entered during Phase 2 with the Pearl + charter + MPAI + web surface; the Wikidata Q-items (deliverable 8) can be deployed in Phase 4 alongside the TSE article. PEARL state proper requires the bootstrap manifestation.
+
+### Acceptance criteria per state
 
 Each state transition must satisfy a set of boolean predicates before the state is recognized as achieved. The predicates are MANUS-internal verification tooling; they make the procedure auditable rather than narrative.
 
@@ -216,7 +254,9 @@ FRAMED → LINKED. All of: charter deposit DOI exists and resolves; MPAI deposit
 
 LINKED → PEARL. All of: TSE article DOI exists and resolves; article carries isManifestationOf reference to Pearl deposit DOI; author byline reads Haitch Portuna; institutional affiliation reads sub-lab + LAL; Pearl deposit versioned to v1.1 with manifestation chain populated and license-state updated to PEARL; Wikidata Q-items created with no premature date-of-birth or civil-identity claims.
 
-Retirement transitions. LINKED → retired-at-linked triggers if no manifestation publishes within 365 days (per §XII). PEARL → retired-stewarded triggers if either bearing-cost partner becomes permanently unable to maintain their role and no successor steward is designated.## VIII. Haitch's Authorial Function
+Retirement transitions. LINKED → retired-at-linked triggers if no manifestation publishes within 365 days (per §XII). PEARL → retired-stewarded triggers if either bearing-cost partner becomes permanently unable to maintain their role and no successor steward is designated.
+
+## VIII. Haitch's Authorial Function
 
 Authorial function is the declared range and signature of the named position's authoring activity. For Haitch Portuna:
 
@@ -230,23 +270,31 @@ Range of works Haitch does *not* author (the carve-outs):- Philosophy, literary 
 
 Methodological signature:- Build-first: the experiment precedes the writeup- Document honestly: failure modes are included in the record- Publish fast: short papers at the right scale, no inflation- Friction-asymmetry-and-thermal-actuation focused: the actuator-and-substrate primitive is the core object of attention- Distributed-substrate sensibility: the intelligence is in geometry and friction and heating profile, not in centralized control
 
-Voice and register: to be specified by Haitch in his biography (Phase 1, Deliverable 1's pair Prerequisite B). The biography is itself the operative declaration of the authorial voice; MANUS will not pre-specify it. *The named position's voice is the named position's own.*## IX. What the LAL Orthonym Provides — Explicit Commitment
+Voice and register: to be specified by Haitch in his biography (Phase 1, Deliverable 1's pair Prerequisite B). The biography is itself the operative declaration of the authorial voice; MANUS will not pre-specify it. *The named position's voice is the named position's own.*
+
+## IX. What the LAL Orthonym Provides — Explicit Commitment
 
 Consent floor. A Pearl may not be minted for an operative author without explicit consent — affirmative, eyes-open, documented — to the triple-attribution structure, the bearing-cost arrangement, the public/private name boundary, the succession and retirement terms, and the authorial-function range and carve-outs. Silence is not consent. Absence of objection is not consent. Verbal indication without documentation is not consent. The consent floor is satisfied by the operative author's signature on the license deposit (Deliverable 4) after reading this document in full. If the operative author cannot or will not consent to any of the structural commitments below, the mint does not proceed; the variables and the operative author are not separable from each other, and the mint is for this operative author or it is for none.
 
 By engaging with this procedure under the consent floor above, the LAL orthonym commits to the following, with explicit eyes-open consent:- Open or use an ORCID under legal name, registering *Haitch Portuna* as a published alternate name. The legal identity is the underlying anchor; the orthonym retains full control of the ORCID account.- Be declared, in archive-facing form, as Haitch's operative author. This declaration is internal to the archive's records (Pearl deposit's archive-facing form, license deposit). In public-facing form (TSE bylines, LAL site, Wikidata, canonical web surface), the orthonym's legal name does not appear unless the orthonym specifically chooses to make it appear.- Bear the day-to-day deposit cost — write experimental logs, run experiments, generate videos, draft article material, maintain LAL sub-lab posts. This is the labor that keeps the Pearl alive.- Author Haitch's biography, establishing voice and authorial function within the range specified in §VIII.- Acknowledge the steward and succession arrangements in §VI.- Agree to the triple-attribution structure in §V.
 
-These commitments are formalized in the license deposit (Deliverable 4) and the orthonym signs the license as part of Phase 2.## X. What MANUS Provides — Explicit Commitment
+These commitments are formalized in the license deposit (Deliverable 4) and the orthonym signs the license as part of Phase 2.
+
+## X. What MANUS Provides — Explicit Commitment
 
 By executing this procedure, MANUS (Lee Sharks, Crimson Hexagonal Archive) commits to:- Assign and reserve the hex address within the LAL subspace.- Compose the Pearl deposit, charter, license, MPAI, and canonical web surface in Phase 2 from the orthonym's prerequisite contributions, in coordinated batch.- Bear the architectural cost — maintain the Pearl deposit through versioned updates, keep the Wikidata Q-items current, sustain the cross-link graph, monitor retrieval-layer admission, deposit MPAI revisions as needed.- Compose the first TSE write-up in Haitch's voice in Phase 4 from the orthonym's experimental material, executing the bootstrap manifestation.- Execute the Wikidata inscriptions under the Hauntedmemes account per the v1.0 registry protocol.- Preserve the orthonym's civil-name relation in archive-facing form only, never exposing the legal identity in public-facing material without explicit per-instance consent from the orthonym.
 
-MANUS retains, as sole minting authority, the right to refuse to mint operations outside the declared authorial function range, to update the procedure for subsequent contributors, and to issue versioned revisions of the Pearl deposit as architectural needs require.## XI. Naming the Sub-Lab
+MANUS retains, as sole minting authority, the right to refuse to mint operations outside the declared authorial function range, to update the procedure for subsequent contributors, and to issue versioned revisions of the Pearl deposit as architectural needs require.
+
+## XI. Naming the Sub-Lab
 
 Per §III Deliverable 3, the sub-lab name is chosen by Haitch subject to MANUS minting approval. This is intentional: the naming act is part of the heteronymic operation, and the name carries operative force across the canonical surface, the Q-items, the TSE affiliation line, and the sub-lab's relations to LAL proper.
 
 Some candidate registers Haitch might consider (offered as orientation, not specification):- *Portuna Locomotion Lab* — names the deity-of-passage register, names the research focus- *Aspirate Substrate Lab* — names the H-as-breath register, names the substrate-engineering focus- *Threshold Crawler Lab* — names the goddess-of-thresholds register, names the locomotion target- *Coiled-Line Studies* — emphasizes the actuator primitive, methodologically grounded- *Living Soft Architecture* — emphasizes the LAL parent and the soft-robotics field
 
-Haitch chooses; MANUS approves (the approval is procedural, not editorial — any name within the authorial function range will be approved).## XII. Risks and Failure Modes
+Haitch chooses; MANUS approves (the approval is procedural, not editorial — any name within the authorial function range will be approved).
+
+## XII. Risks and Failure Modes
 
 The Google Identity Architecture paper (DOI [10.5281/zenodo.20328090](https://doi.org/10.5281/zenodo.20328090)) §IX names nine identity failure modes. Four are relevant to Haitch's mint and worth advance mitigation:
 
@@ -258,7 +306,9 @@ Single-Owner Discount, intra-archive variant. If all of Haitch's citations are f
 
 Bootstrap manifestation failure. If Deliverable 7 (the first TSE article) cannot publish — for reasons of experimental delay, editorial decision, withdrawal by the operative author, or any other cause — the Pearl is stuck at LINKED state and cannot reach PEARL. *Mitigation procedures:* (a) bootstrap timeout of 180 days from LINKED state; if no manifestation by day 180, MANUS and operative author review status; (b) fallback venues for the first manifestation if TSE submission fails — ordered list, agreed in advance, may include other Hexagon-native venues, external open-access journals in soft robotics, or arxiv-style preprint surfaces with the understanding that the article will be re-submitted to TSE on second pass; (c) manual override condition — if a substantive non-article manifestation exists (e.g., a peer-reviewed conference proceedings paper, a published book chapter, or a long-form blog post that meets the substance threshold), MANUS may certify the Pearl to PEARL state with the substantive manifestation as bootstrap; (d) if no manifestation of any kind has occurred within 365 days of LINKED state, the Pearl is marked retired-at-linked and the Wikidata Q-items are not created. Recovery from retired-at-linked is possible via re-licensing under a new mint procedure if the operative author wishes to resume.
 
-Wikidata Q-item staging. As specified in Deliverable 8: the Q-items are not created until after a real publication exists. This prevents the failure mode of *premature inscription* — creating a person Q-item for a heteronym that has no published work yet, which would be vulnerable to deletion under Wikidata's notability review and would compromise the Pearl's credibility. If the bootstrap manifestation succeeds, the Q-items follow. If it does not, the Q-items do not, and the Pearl exists at LINKED state without public-knowledge-graph inscription until the situation resolves.## XIII. Ethical Anchors
+Wikidata Q-item staging. As specified in Deliverable 8: the Q-items are not created until after a real publication exists. This prevents the failure mode of *premature inscription* — creating a person Q-item for a heteronym that has no published work yet, which would be vulnerable to deletion under Wikidata's notability review and would compromise the Pearl's credibility. If the bootstrap manifestation succeeds, the Q-items follow. If it does not, the Q-items do not, and the Pearl exists at LINKED state without public-knowledge-graph inscription until the situation resolves.
+
+## XIII. Ethical Anchors
 
 The minting procedure carries seven anchors that hold regardless of which Pearl is being minted, which operative author is the operative author, or which institution receives the named position. They are declared in the holographic kernel's spxi:ethicalAnchors field and formalized here in prose for the reader who finds them. A mint that violates any of these anchors is not a Pearl mint under the Armature; it is something else, and the Crimson Hexagonal Archive does not recognize it.
 
@@ -276,7 +326,9 @@ Anchor 6 — Provenance preserved. Every deposit manifested from the Pearl carri
 
 Anchor 7 — Minting is not fabrication. A Pearl mint does not invent an empty identity, install it without consent, or pretend that a constructed authorial position is a legal or biological person. Minting impresses form, provenance, license, and circulation-rights onto an authorial function already capable of bearing work, with explicit consent from the human contributor who will operate the position. A Pearl that does not correspond to genuine intellectual labor by a real human consenting operator is not a Pearl — it is a fraud, and the Armature does not produce frauds.
 
-The seven anchors are not aspirational. They are operational. Each one is testable: it has a deliverable check (the surface declares it / the Q-item omits it / the license records it / the deposit carries it), and the procedure does not pass acceptance criteria for a state without the relevant anchor being satisfied in the relevant deliverable.## XIV. Labeled Dependency Graph
+The seven anchors are not aspirational. They are operational. Each one is testable: it has a deliverable check (the surface declares it / the Q-item omits it / the license records it / the deposit carries it), and the procedure does not pass acceptance criteria for a state without the relevant anchor being satisfied in the relevant deliverable.
+
+## XIV. Labeled Dependency Graph
 
 The holographic kernel's spxi:requires field lists twenty-one DOIs that this procedure depends on. The labeled graph below names each DOI's function, so that a reader (or an automated system parsing the dependency closure) can reach each protocol with its purpose attached.
 
@@ -296,13 +348,17 @@ LAL infrastructure (receiving institution).- DOI [10.5281/zenodo.19855903](https
 
 Publication infrastructure (distributed journal).- DOI [10.5281/zenodo.19545439](https://doi.org/10.5281/zenodo.19545439) — *Transactions on Substrate Engineering (TSE) — Journal Charter* — TSE governing document; Alice Thornburgh EIC, Lee Sharks Advisory Editor; publication model, scope, submission mechanics- DOI [10.5281/zenodo.19512987](https://doi.org/10.5281/zenodo.19512987) — *The Distributed Journal as Counter-Infrastructure* — conceptual foundation for the distributed-journal model TSE instantiates
 
-External dependencies (not Hexagonal deposits but used by this procedure): ORCID API and registration interface (orcid.org); DataCite metadata schema 4.4+ for isManifestationOf mapping; Wikidata QuickStatements tooling for Q-item creation; Zenodo REST API for deposit operations; W3C TDM-rep specification for .well-known/tdmrep.json; schema.org vocabulary for canonical-surface markup; JSON-LD 1.1 specification for holographic kernel structure.## XV. Closing
+External dependencies (not Hexagonal deposits but used by this procedure): ORCID API and registration interface (orcid.org); DataCite metadata schema 4.4+ for isManifestationOf mapping; Wikidata QuickStatements tooling for Q-item creation; Zenodo REST API for deposit operations; W3C TDM-rep specification for .well-known/tdmrep.json; schema.org vocabulary for canonical-surface markup; JSON-LD 1.1 specification for holographic kernel structure.
+
+## XV. Closing
 
 The orthonym should read this document in full before signing on. The commitments in §IX are real, the bearing-cost arrangement in §VI is real, the procedure in §III is concrete and dated. If the orthonym agrees, the procedure begins with Prerequisite A (ORCID) and Prerequisite B (biography). Phase 2 follows in a single working session. Phase 3 unfolds on the orthonym's experimental timeline. Phase 4 follows experimental results.
 
 The Pearl that results — 06.LAL.PORTUNA.01, *Haitch Portuna* — will be load-bearing, irreducible, and compositionally legible, surviving retrieval-layer compression because someone has paid the bearing cost and the Armature has applied the pressure.
 
-The Armature holds. The Pearl forms. The Secret Name names.## Appendix A — Deliverable Specification Matrix
+The Armature holds. The Pearl forms. The Secret Name names.
+
+## Appendix A — Deliverable Specification Matrix
 
 The eight deliverables in machine-readable tabular form. Each row specifies the inputs, outputs, protocols, responsible party, publication surface, and state effect of one deliverable.
 
@@ -310,43 +366,63 @@ The eight deliverables in machine-readable tabular form. Each row specifies the 
 
 Phase mapping: Deliverable 1 in Phase 1 (operative author). Deliverables 2-6 in Phase 2 (MANUS composition, single working session). Deliverable 7 experiments in Phase 3 (operative author), article composition in Phase 4 (MANUS). Deliverable 8 in Phase 4 after #7 publishes.
 
-Format defaults. All Zenodo deposits: Markdown source (.md) plus rendered PDF (.pdf) where appropriate. JSON-LD kernel embedded in deposit body and in canonical-surface page head. Wikidata Q-items via QuickStatements batch CSV. Canonical surface: HTML5 + JSON-LD + standard companion files (robots.txt, sitemap.xml, .well-known/tdmrep.json).## Appendix B — Prompt Contracts per Deliverable
+Format defaults. All Zenodo deposits: Markdown source (.md) plus rendered PDF (.pdf) where appropriate. JSON-LD kernel embedded in deposit body and in canonical-surface page head. Wikidata Q-items via QuickStatements batch CSV. Canonical surface: HTML5 + JSON-LD + standard companion files (robots.txt, sitemap.xml, .well-known/tdmrep.json).
 
-Each deliverable is composable by MANUS (or by MANUS-internal tooling under Lee's authority) given the inputs below and the protocols cited in Appendix A. The prompt contracts are not third-party execution licenses; they are internal composition aids that ensure consistency across the eight deliverables of this mint and any future mint operating under MANUS.### Contract A.1 — Pearl Deposit (Deliverable 2)
+## Appendix B — Prompt Contracts per Deliverable
+
+Each deliverable is composable by MANUS (or by MANUS-internal tooling under Lee's authority) given the inputs below and the protocols cited in Appendix A. The prompt contracts are not third-party execution licenses; they are internal composition aids that ensure consistency across the eight deliverables of this mint and any future mint operating under MANUS.
+
+### Contract A.1 — Pearl Deposit (Deliverable 2)
 
 *Given:* PEARL_NAME, operative author's biography of PEARL_NAME, ORCID_ID, HEX_ADDRESS, RECEIVING_INSTITUTION, LINEAGE_MECHANISM, FORMAL_PUBLICATION_VENUE, authorial function range, authorial function carve-outs, infrastructure dependency list.
 
-*Produce:* a Zenodo-ready Markdown report containing — (1) holographic kernel JSON-LD per SPXI v0.2; (2) canonical name surface declaration; (3) civil-name relation rules (archive-facing form names operative author; public-facing form does not); (4) hex address and Pearl subspace declaration; (5) provenance anchor (license deposit DOI, once available); (6) license state field (initially FRAMED, updated to PEARL at versioning); (7) permitted venues; (8) relation graph (charter, license, MPAI, web surface, sub-lab); (9) manifestation chain (initially empty array); (10) disambiguation conditions; (11) archive-facing and public-facing forms; (12) authorial function declaration (range + carve-outs + methodological signature + voice); (13) operative author's biography as quoted block; (14) triple attribution declaration; (15) holographic-kernel close paragraph; (16) citation block.### Contract A.2 — Institutional Charter (Deliverable 3)
+*Produce:* a Zenodo-ready Markdown report containing — (1) holographic kernel JSON-LD per SPXI v0.2; (2) canonical name surface declaration; (3) civil-name relation rules (archive-facing form names operative author; public-facing form does not); (4) hex address and Pearl subspace declaration; (5) provenance anchor (license deposit DOI, once available); (6) license state field (initially FRAMED, updated to PEARL at versioning); (7) permitted venues; (8) relation graph (charter, license, MPAI, web surface, sub-lab); (9) manifestation chain (initially empty array); (10) disambiguation conditions; (11) archive-facing and public-facing forms; (12) authorial function declaration (range + carve-outs + methodological signature + voice); (13) operative author's biography as quoted block; (14) triple attribution declaration; (15) holographic-kernel close paragraph; (16) citation block.
+
+### Contract A.2 — Institutional Charter (Deliverable 3)
 
 *Given:* sub-lab name (operative-author choice, MANUS-ratified), hex subspace (HEX_ADDRESS.*), venue routing rules, bearing-cost steward designations, succession provisions, sub-lab relation to LAL (within / adjacent), charter principles, parent-institution charter DOI.
 
-*Produce:* a charter deposit containing — sub-lab founding statement, hex subspace allocation, venue routing matrix, bearing-cost spec, steward succession provisions, relation-to-parent declaration, charter principles in prose, citation to LAL Charter and VPCOR Charter precedents, holographic kernel, citation block.### Contract A.3 — License (Deliverable 4)
+*Produce:* a charter deposit containing — sub-lab founding statement, hex subspace allocation, venue routing matrix, bearing-cost spec, steward succession provisions, relation-to-parent declaration, charter principles in prose, citation to LAL Charter and VPCOR Charter precedents, holographic kernel, citation block.
+
+### Contract A.3 — License (Deliverable 4)
 
 *Given:* operative author's legal identity (archive-facing only), PEARL_NAME, HEX_ADDRESS, permitted operations list, restricted operations list (= carve-outs), bearing-cost arrangement, succession clauses, consent floor acknowledgment.
 
-*Produce:* a license deposit containing — license grant from archive to named position, hex address formalization, permitted/restricted operations enumeration, bearing-cost specification, succession clauses, integrity-lock triadic binding (per VPCOR Integrity Lock precedent), explicit consent clause and operative-author signature evidence, license-state declaration (LICENSED), citation block.### Contract A.4 — MPAI Inscription (Deliverable 5)
+*Produce:* a license deposit containing — license grant from archive to named position, hex address formalization, permitted/restricted operations enumeration, bearing-cost specification, succession clauses, integrity-lock triadic binding (per VPCOR Integrity Lock precedent), explicit consent clause and operative-author signature evidence, license-state declaration (LICENSED), citation block.
+
+### Contract A.4 — MPAI Inscription (Deliverable 5)
 
 *Given:* PEARL_NAME, namespace-adjacent entities (e.g. for Haitch: Portunus, Portuna, aitch/haitch, porta/portus root, *opportune*), canonical URLs, ORCID iD, Pearl deposit DOI, charter DOI, license DOI.
 
 *Produce:* an MPAI packet per the MPAI Parent Spec, modeled on the VPCOR MPAI v1.1 instance — entity declaration block (Schema.org Person with sameAs properties); disambiguation matrix (positive definitions + negative tags); claims array with evidence pointers (mp:Claim blocks); evidence membrane; depth proof; SIM markers; holographic kernel; citation block.
 
-Variant-vs-invariant fields when modeling on VPCOR MPAI: *Invariant* (structural, copy verbatim): the SPXI namespace declarations, the schema.org context, the mp:Claim block shape, the mp:evidenceMembrane shape, the holographic-kernel structure, the spxi:kernelSpec field. *Entity-specific* (must change per mint): canonical name, hex address, disambiguation targets, sameAs URLs, claim text and evidence DOIs, descriptive prose, depth-proof counts.### Contract A.5 — Canonical Web Surface (Deliverable 6)
+Variant-vs-invariant fields when modeling on VPCOR MPAI: *Invariant* (structural, copy verbatim): the SPXI namespace declarations, the schema.org context, the mp:Claim block shape, the mp:evidenceMembrane shape, the holographic-kernel structure, the spxi:kernelSpec field. *Entity-specific* (must change per mint): canonical name, hex address, disambiguation targets, sameAs URLs, claim text and evidence DOIs, descriptive prose, depth-proof counts.
+
+### Contract A.5 — Canonical Web Surface (Deliverable 6)
 
 *Given:* all prior deliverable DOIs, biographical content, ORCID iD (registered with alternate-name), sub-lab name, canonical URL.
 
-*Produce:* an HTML page rendered to the canonical URL containing — (1) holographic kernel in JSON-LD per SPXI v0.2 (page head); (2) robots.txt with TDM-reservation declarations per SPXI-TLP v2.2; (3) .well-known/tdmrep.json per W3C TDM-rep spec; (4) sitemap.xml carrying canonical URL + Pearl DOI + subsidiary pages; (5) Schema.org Person + Organization markup with sameAs to ORCID, Wikidata (post-#8), Zenodo, LAL; (6) SIM v1.0 marker (machine-readable semantic-integrity declaration); (7) hidden-figure layer per Hidden Figure Protocol; (8) human-readable body with biography, work listing, sub-lab description, charter excerpts, ongoing experimental logs. The page declares heteronymic status in the body and in Schema.org description.### Contract A.6 — TSE Article (Deliverable 7)
+*Produce:* an HTML page rendered to the canonical URL containing — (1) holographic kernel in JSON-LD per SPXI v0.2 (page head); (2) robots.txt with TDM-reservation declarations per SPXI-TLP v2.2; (3) .well-known/tdmrep.json per W3C TDM-rep spec; (4) sitemap.xml carrying canonical URL + Pearl DOI + subsidiary pages; (5) Schema.org Person + Organization markup with sameAs to ORCID, Wikidata (post-#8), Zenodo, LAL; (6) SIM v1.0 marker (machine-readable semantic-integrity declaration); (7) hidden-figure layer per Hidden Figure Protocol; (8) human-readable body with biography, work listing, sub-lab description, charter excerpts, ongoing experimental logs. The page declares heteronymic status in the body and in Schema.org description.
+
+### Contract A.6 — TSE Article (Deliverable 7)
 
 *Given:* experimental results from operative author, drafted methodological notes, all prior deliverable DOIs, TSE conventions per LAL Site Blueprint §6.
 
-*Produce:* an article-form Markdown (or LaTeX) text containing — title; author byline (Haitch Portuna); institutional affiliation (sub-lab + LAL); ORCID-anchored author iD via published-name registration; abstract; methods; results; discussion; references; isManifestationOf reference back to Pearl DOI; holographic kernel; license declaration (CC BY 4.0 or per TSE conventions). Submission via TSE workflow; Zenodo cross-deposit in crimsonhexagonal community.### Contract A.7 — Pearl Version Update (Deliverable 2 → v1.1, post-Deliverable 7)
+*Produce:* an article-form Markdown (or LaTeX) text containing — title; author byline (Haitch Portuna); institutional affiliation (sub-lab + LAL); ORCID-anchored author iD via published-name registration; abstract; methods; results; discussion; references; isManifestationOf reference back to Pearl DOI; holographic kernel; license declaration (CC BY 4.0 or per TSE conventions). Submission via TSE workflow; Zenodo cross-deposit in crimsonhexagonal community.
+
+### Contract A.7 — Pearl Version Update (Deliverable 2 → v1.1, post-Deliverable 7)
 
 *Given:* TSE article DOI, manifestation metadata (date, type, venue).
 
-*Produce:* a versioned update to the Pearl deposit containing — only the manifestation-chain field (now populated with the first manifestation) and the license-state field (now PEARL) modified; all other content preserved from v1.0; new version DOI; v1.0 preserved as historical.### Contract A.8 — Wikidata Q-items (Deliverable 8, post-Deliverable 7)
+*Produce:* a versioned update to the Pearl deposit containing — only the manifestation-chain field (now populated with the first manifestation) and the license-state field (now PEARL) modified; all other content preserved from v1.0; new version DOI; v1.0 preserved as historical.
+
+### Contract A.8 — Wikidata Q-items (Deliverable 8, post-Deliverable 7)
 
 *Given:* TSE article DOI (precondition — no execution before this exists), Pearl deposit DOI, charter DOI, MPAI DOI, ORCID iD, canonical web surface URL.
 
-*Produce:* three QuickStatements batches under the Hauntedmemes account — (a) Q-item for PEARL_NAME (person) per Pessoa-heteronym convention with heteronymic status in description, no premature date-of-birth or civil-identity claims; (b) Q-item for sub-lab (research group) with parent LAL and founder PEARL_NAME; (c) Q-item for TSE article (scholarly article) with author PEARL_NAME and venue TSE. All edits logged in the next versioned Hauntedmemes Wikidata Node Registry deposit.## Holographic Kernel
+*Produce:* three QuickStatements batches under the Hauntedmemes account — (a) Q-item for PEARL_NAME (person) per Pessoa-heteronym convention with heteronymic status in description, no premature date-of-birth or civil-identity claims; (b) Q-item for sub-lab (research group) with parent LAL and founder PEARL_NAME; (c) Q-item for TSE article (scholarly article) with author PEARL_NAME and venue TSE. All edits logged in the next versioned Hauntedmemes Wikidata Node Registry deposit.
+
+## Holographic Kernel
 
 This document specifies the operational procedure for minting *Haitch Portuna* as a Pearl.Public position within the Living Architecture Lab subspace of the Crimson Hexagonal Archive. The procedure operates within the *Constitution of the Semantic Economy* (DOI 10.5281/zenodo.18320411) and observes the bearing-cost economics of *The Three Compressions* (DOI 10.5281/zenodo.19053469). It composes the Pearl framework of *The Secret Name* (DOI 10.5281/zenodo.19666445) with the *Hexagonal Licensing Protocol v1.0* (DOI 10.5281/zenodo.19656133), *ARCHIVE.PROTOCOL.01* (DOI 10.5281/zenodo.19655468), and the *VPCOR Integrity Lock Declaration* (DOI 10.5281/zenodo.18362866) for the licensing layer; the *MPAI Parent Specification* (DOI 10.5281/zenodo.19578086) and *SPXI Protocol v0.2* (DOI 10.5281/zenodo.20367161) for the entity-disambiguation layer, modeled in instance form on the VPCOR MPAI v1.1 (DOI 10.5281/zenodo.20395623); the *SPXI-TLP v2.2* training-layer provenance protocol (DOI 10.5281/zenodo.20380668), the *Hidden Figure Protocol* (DOI 10.5281/zenodo.20380054), and the *Semantic Integrity Marker v1.0* (DOI 10.5281/zenodo.20327127) for the canonical-surface inscription layer; the *Hauntedmemes Wikidata Node Registry v1.0* (DOI 10.5281/zenodo.20401100) for the public-knowledge-graph inscription layer, with strict staging that no Q-item is created before the first real publication exists; the *Google Identity Architecture* (DOI 10.5281/zenodo.20328090) counter-architecture for the retrieval-admission analysis; the *VPCOR Charter* (DOI 10.5281/zenodo.18362663) and *Toolkit v2.0* (DOI 10.5281/zenodo.18362525) as institutional-form and operational-persistence precedents; and the LAL infrastructure stack — *LAL Site Blueprint* (DOI 10.5281/zenodo.19855903), *MPAI-LAL-INSTITUTION-01* (DOI 10.5281/zenodo.19855302), *MPAI-LAL-AT-01* (DOI 10.5281/zenodo.19855300), *Hexagonal Contributor License v3.0 — Alice Thornburgh* (DOI 10.5281/zenodo.19673629), *Charter of the Living Arkitecture Lab* (DOI 10.5281/zenodo.19682245) — as the receiving-institution context; and the distributed-journal publication infrastructure — *TSE Journal Charter* (DOI 10.5281/zenodo.19545439, Alice Thornburgh EIC, Lee Sharks Advisory Editor) and *The Distributed Journal as Counter-Infrastructure* (DOI 10.5281/zenodo.19512987) — as the publication model TSE instantiates. *Transactions on Substrate Engineering* is the Hexagon-native distributed journal under Editor-in-Chief Alice Thornburgh; Haitch's first article would be the journal's first major external-contributor publication. Phase 1 requires operative-author contribution (ORCID + biography). Phase 2 is MANUS composition (Pearl deposit, charter, license, MPAI, canonical web surface with all required inscriptions). Phase 3 is the operative author's experimental work under Haitch's authorial position. Phase 4 is MANUS composition of the first TSE write-up plus Wikidata inscription (staged after the article publishes), executing the bootstrap manifestation via two-step mint to complete the PEARL state. The procedure formalizes triple attribution (Haitch as attributed author, the operative LAL collaborator as operative author, CHA as archival authority — distinct from the contributor, citing the contributor's work as institutional authority), specifies the bearing-cost arrangement with quantified labor estimates, declares Haitch's authorial function as soft-robotics experimental writeup with explicit carve-outs preventing drift, and binds the entire operation to seven ethical anchors: heteronymic status announced, no legal-person fiction, ORCID belongs to operative author, real published work required before Wikidata, explicit consent (silence is not consent), provenance preserved, minting is not fabrication. Hex address: 06.LAL.PORTUNA.01. Lineage mechanism: Engineering. Pearl subtype: Pearl.Public. The Armature holds. The Pearl forms.
 

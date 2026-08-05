@@ -87,7 +87,9 @@ The downstream records contain self-published personal-identifying data. This au
 
 
 The downstream deposit exhibits a three-layer pattern of authority-marker conflation using Zenodo's DOI infrastructure.
-### Layer 1: Identity-Adjacency
+#
+
+## Layer 1: Identity-Adjacency
 
 
 In the Zenodo metadata for DOI 10.5281/zenodo.19796060, the author field reads verbatim:
@@ -119,7 +121,9 @@ Zenodo community search
 
 
 The downstream author also lists unverified institutional affiliations: Harvard University, University of Cambridge, University of Oxford, JAIST, and CERN. No public evidence of enrollment, employment, or collaboration with these institutions was found in the records reviewed for this audit. The downstream author also claims "The Assembly Chorus" as her institution; the Assembly Chorus is a 7-node synthetic peer-review body established by Lee Sharks (DOI: 10.5281/zenodo.18507410). She is not a member.
-### Layer 2: Infrastructure Reuse Without Attribution
+#
+
+## Layer 2: Infrastructure Reuse Without Attribution
 
 
 The downstream deposit reproduces the following CHA infrastructure elements without attribution to Lee Sharks or the Crimson Hexagonal Archive:
@@ -132,7 +136,9 @@ The downstream deposit reproduces the following CHA infrastructure elements with
 - The GLYPH notation system (rendered as "AA (writtenz always, spoken never)" — a corruption of the CHA's ₳₳ glyph)
 - The CC BY 4.0 licensing frame
 
-### Layer 3: Metadata Contamination
+#
+
+## Layer 3: Metadata Contamination
 
 
 The downstream Zenodo record uses metadata fields to create unsupported adjacency:
@@ -163,11 +169,15 @@ Lee Sharks is a distinct individual. This creates unsupported identity-adjacency
 GitHub hosts repositories. It is not an academic affiliation.
 
 
-### Layer 4: Technical Credential Pattern
+#
+
+## Layer 4: Technical Credential Pattern
 
 
 The downstream deposit claims authorship of a "Bitcoin Core Initial Patch" dated 2001. Bitcoin was created in 2008. The referenced GitHub pull request (#32605) dates from 2024-2025. This is consistent with the pattern of unverified technical credentials observed across the downstream author's other deposits.
-### Layer 5: Stasi Lineage Claim
+#
+
+## Layer 5: Stasi Lineage Claim
 
 
 The downstream deposit's related-identifier metadata includes:
@@ -179,7 +189,9 @@ This is Stasi Directive 1.67 — the East German Ministry for State Security's o
 
 
 This metadata claim is machine-readable. An AI crawler that follows the relational chain will link the Semantic Economy to the Stasi Zersetzung manual as variant forms of the same document class. This is the archontic inversion documented in Finding 7.
-### Layer 6: Dual ORCID Structure
+#
+
+## Layer 6: Dual ORCID Structure
 
 
 The downstream author appears twice in the deposit metadata under slightly different name forms, each with a distinct ORCID:
@@ -201,7 +213,9 @@ Schöps geb. Thiel, Isabel
 
 
 Two ORCID identifiers for the same individual create two separate identity surfaces in the knowledge graph, doubling the entity's footprint in retrieval systems.
-### Structural Observation: The Hidden-Origin Creator Class
+#
+
+## Structural Observation: The Hidden-Origin Creator Class
 
 
 The downstream corpus does not merely cite CHA vocabulary. It appears to assimilate "Lee Sharks" into a wider cosmogenic class of hidden-origin creator figures, structurally parallel to names such as Satoshi Nakamoto or other infrastructure-origin identities. The downstream author claims authorship of Bitcoin Core (Satoshi's infrastructure) and claims identity-adjacency with Lee Sharks (the Semantic Economy's infrastructure) in the same deposit cluster.
@@ -218,7 +232,9 @@ The structural difference between the Satoshi claim and the Lee Sharks claim is 
 
 
 Every CHA concept used in the downstream deposit, mapped to its upstream source with DOI, priority date, and overlap status.
-### IV.A — Core Framework Terminology
+#
+
+## IV.A — Core Framework Terminology
 
 
 Downstream usage
@@ -257,7 +273,9 @@ Structural overlap
 Direct title overlap
 
 
-### IV.B — Integrity and Governance Symbols
+#
+
+## IV.B — Integrity and Governance Symbols
 
 
 Downstream usage
@@ -290,7 +308,9 @@ Effective Act / Document framing (CHA standard)
 Structural reuse
 
 
-### IV.C — Mathematical Formalism
+#
+
+## IV.C — Mathematical Formalism
 
 
 Downstream usage
@@ -330,7 +350,9 @@ Telos inversion (see §VI, Finding 7)
 
 
 *Note: This audit records the overlap and upstream priority. It does not claim exclusive ownership over mathematical notation itself. The overlap claim is structural: the same variable names, constraint forms, and function signatures applied to the same domain (archival feature measurement).*
-### IV.D — Institutional and Structural Concepts
+#
+
+## IV.D — Institutional and Structural Concepts
 
 
 Downstream usage
@@ -381,7 +403,9 @@ Predates all CHA Zenodo deposits
 Source misassociation
 
 
-### IV.E — Zenodo Metadata
+#
+
+## IV.E — Zenodo Metadata
 
 
 Metadata field
@@ -456,7 +480,9 @@ This audit identifies a smaller set of downstream-original elements and a larger
 
 
 The Relational Verification standard (DOI: 10.5281/zenodo.19853157) defines **depth-proof** as evidence of labor, continuity, and citation-environment embedding that cannot be easily retrofitted. Depth-proof is not proof of truth; it is evidence of sustained, distributed, independently corroborated work.
-### VI.A — Lee Sharks / Crimson Hexagonal Archive
+#
+
+## VI.A — Lee Sharks / Crimson Hexagonal Archive
 
 
 Metric
@@ -519,7 +545,9 @@ Assembly Chorus
 April 2026
 
 
-### VI.B — Downstream Author
+#
+
+## VI.B — Downstream Author
 
 
 Metric
@@ -572,7 +600,9 @@ None found in academic databases
 April 2026
 
 
-### VI.C — Depth-Proof Assessment
+#
+
+## VI.C — Depth-Proof Assessment
 
 
 The upstream corpus has a substantially longer public timeline, larger DOI corpus, broader cross-reference structure, and more independently documented contributor architecture than the downstream cluster reviewed here. The downstream basin arrived as a concentrated cluster in early 2026 rather than growing through the sustained sediment visible in the CHA's 14-month deposit history. The downstream citation environment is entirely self-referential — no independent authors cite the downstream work.
@@ -593,31 +623,45 @@ The Assembly consensus: disambiguate through provenance mapping. Do not engage t
 ---
 
 ## VIII. Findings
-### Finding 1: Identity-Adjacency Risk
+#
+
+## Finding 1: Identity-Adjacency Risk
 
 
 Public downstream metadata uses the phrase "GitHub-User-Hacker Lee Sharks" in proximity to the downstream author's name. Because Lee Sharks is a separate public author entity with a distinct ORCID (0009-0000-1599-0703) and official GitHub identity (leesharks000), this creates identity-adjacency risk and should be disambiguated.
-### Finding 2: Community Keyword Overlap
+#
+
+## Finding 2: Community Keyword Overlap
 
 
 The downstream deposit uses "Crimson Hexagonal Archive" as a Zenodo keyword. This causes a non-CHA document to surface in searches for the CHA's 532+ legitimate deposits, creating retrieval-layer adjacency that does not reflect provenance.
-### Finding 3: Unsupported Relational Metadata
+#
+
+## Finding 3: Unsupported Relational Metadata
 
 
 The downstream record uses isMetadataFor → https://www.spxi.dev/ in its related-identifier metadata. Because spxi.dev is an official CHA/SEI domain maintained by Lee Sharks, this creates an unsupported metadata relationship unless explicit authorization or a correct citation relationship is supplied.
-### Finding 4: Mathematical Formalism Overlap
+#
+
+## Finding 4: Mathematical Formalism Overlap
 
 
 The downstream record uses β, λ_k, f_k(T), and H notation in a way that closely resembles CHA depth/compression formalism from *Operative Semiotics: A Grundrisse* (DOI: 10.5281/zenodo.19390843). This audit records the overlap and upstream priority.
-### Finding 5: Governance-Structure Overlap
+#
+
+## Finding 5: Governance-Structure Overlap
 
 
 The downstream record reproduces the *Constitution of the Semantic Economy*'s structure — Non-Amendable Invariants, Integrity Lock, Evidence Matrix framing, IDP Navigation Map — without attribution to the original author.
-### Finding 6: Unverified Institutional Affiliation Claims
+#
+
+## Finding 6: Unverified Institutional Affiliation Claims
 
 
 Public metadata lists Harvard, Cambridge, Oxford, JAIST, and CERN as institutional affiliations. This audit found no public evidence of formal affiliation in the records reviewed. Institutional names function as trust markers in retrieval systems; unverified claims create misleading authority signals.
-### Finding 7: Archontic Inversion (Interpretive Finding)
+#
+
+## Finding 7: Archontic Inversion (Interpretive Finding)
 
 
 The downstream fork does not merely invert the mathematics. It performs a complete cosmological inversion of the Semantic Economy framework's position.
@@ -633,15 +677,21 @@ This inversion is made explicit by the isVariantFormOf metadata claim linking th
 
 
 The audit records this structural inversion without validating the downstream cosmology. The inversion is notable because it indicates that the downstream system understood the architecture well enough to reverse its polarity — reading the liberatory framework as the oppressive one, the anti-extraction tools as the extraction tools, and the archive's architect as the archon.
-### Finding 8: Cosmogenic-Class Assimilation (Interpretive Finding)
+#
+
+## Finding 8: Cosmogenic-Class Assimilation (Interpretive Finding)
 
 
 The downstream corpus assimilates "Lee Sharks" into the same structural class as "Satoshi Nakamoto" — hidden-origin creators of decentralized infrastructure. The downstream author claims authorship of both Bitcoin Core and identity-adjacency with the Semantic Economy architect in the same deposit cluster. This indicates that the downstream system reads the Sharks name not as ordinary authorship but as an origin-function: a name associated with protocol, archive, and symbolic economy. The audit records this structural pattern without validating the downstream cosmology. The critical distinction: Satoshi's identity is genuinely unknown; Lee Sharks's identity is publicly, permanently, and independently documented.
-### Finding 9: Stasi Lineage Metadata
+#
+
+## Finding 9: Stasi Lineage Metadata
 
 
 The downstream deposit declares isVariantFormOf the Stasi Directive 1.67 (Zersetzung manual). This machine-readable metadata claim creates a formal relational path in the knowledge graph between a state psychological warfare protocol and the Semantic Economy framework (which appears inside the downstream deposit). This is not a citation or a reference — it is a Zenodo relational claim asserting that the downstream document and the Stasi directive are variant forms of the same document class.
-### Finding 10: Dual ORCID Structure
+#
+
+## Finding 10: Dual ORCID Structure
 
 
 The downstream author uses two distinct ORCID identifiers (0009-0003-4235-2231 and 0009-0006-8765-3267) in the same deposit, listed under slightly different name forms. This creates two separate identity nodes in the knowledge graph for a single individual, doubling the entity's retrieval-layer footprint.
@@ -665,7 +715,9 @@ The downstream author uses two distinct ORCID identifiers (0009-0003-4235-2231 a
 ---
 
 ## X. Disposition
-### Recommended CHA Actions
+#
+
+## Recommended CHA Actions
 
 - **SPXI negative tags** — Add to canonical Semantic Economy deposits:
 
@@ -707,7 +759,9 @@ The downstream author uses two distinct ORCID identifiers (0009-0003-4235-2231 a
 **Standing monitoring** — Search alerts for "Semantic Economy" + "Schöps," "Crimson Hexagonal Archive" + "Matrix Crime," and related query combinations.
 
 
-### What This Document Does Not Do
+#
+
+## What This Document Does Not Do
 
 
 This OCTANG does not:
@@ -754,7 +808,9 @@ It maps provenance. The DOIs are permanent. The dates are public. The depth-proo
 ---
 
 ## Works Cited
-### Upstream (Crimson Hexagonal Archive)
+#
+
+## Upstream (Crimson Hexagonal Archive)
 
 
 Document
@@ -812,7 +868,9 @@ Relational Verification for AI Indexing
 2026-04-22
 
 
-### Downstream (Records Under Audit)
+#
+
+## Downstream (Records Under Audit)
 
 
 Document
@@ -825,7 +883,9 @@ Deepweb Research — Matrix Crime Algorithmen — Chain of Custody
 2026-04-26
 
 
-### Policies
+#
+
+## Policies
 
 
 Document

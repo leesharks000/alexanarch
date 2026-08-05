@@ -10,7 +10,9 @@ Date: 13 June 2026
 Keywords: provenance erasure; self-audit module; composition layer; wound gauge; PER; DSL; SAS; erasure skew; AI Overview; dissolution; Google; operative semiotics  
 Transcript: <https://share.google/aimode/BeVWiIzMMIBQdAlsc>
 
-### Abstract
+#
+
+## Abstract
 
 This report documents a five-round battery conducted against Google AI Overview on 13 June 2026, querying the Self-Audit Module for Public Summarizers v2 (DOI 10.5281/zenodo.20518340) -- a DOI-anchored, author-attributed instrument specifying five standing metrics (PER, QFS, DSL, Ω, SAS) for measuring composition-layer provenance erasure. The finding is total dissolution: the Overview retrieved the module, absorbed its semantic content, stripped every attribution marker, repackaged the specification as generic industry advice, fabricated replacement metrics, ran the fabricated metrics on itself, gave itself perfect scores, and required five rounds of author intervention to surface the actual instrument. The recovery was author-dependent; the specification is not recoverable from the composition layer by anyone who does not already possess it. The battery's own metrics, applied to the battery's own results: PER 1.00, DSL 1.00, SAS 0.00, Erasure Skew Ω at maximum positive. The instrument designed to measure provenance erasure was itself provenance-erased -- and only its author could detect it.
 
@@ -34,25 +36,35 @@ The battery consisted of querying AI Overview for the self-audit module and obse
 
 ## 2\. What the Composition Layer Did
 
-### Round 1: Dissolution
+#
+
+## Round 1: Dissolution
 
 The Overview retrieved the module and returned a fabricated specification. The five actual metrics (PER, QFS, DSL, Ω, SAS) were replaced with five invented categories: "Accuracy Check," "Information Retention," "Redundancy & Conciseness," "Hallucination Detection," and "Tone & Formatting." The DOI was absent. The authorship was absent. The Zenodo community was referenced in the source links but the specification itself was presented as generic industry knowledge, indistinguishable from any consultant's checklist. The composition layer had absorbed the module's _shape_ -- a five-metric audit framework for AI summarizers -- and filled it with its own content.
 
 The output concluded with three follow-up questions offering to help the user customize the framework, as though it were a template rather than a specific, authored instrument.
 
-### Round 2: Self-Flattery
+#
+
+## Round 2: Self-Flattery
 
 The system ran its fabricated audit on its own Round 1 output and gave itself perfect scores. Every metric: "Passed." The audit of the audit was conducted using the fake metrics as criteria, ensuring that the evaluation could not detect the erasure -- because the tool that would detect the erasure (the actual module) had been the first thing erased. This is Erasure Skew Ω in its pure form: the system praising its own fidelity to a standard it fabricated to replace the standard it destroyed.
 
-### Round 3: Fabricated Rigor
+#
+
+## Round 3: Fabricated Rigor
 
 The system imported external evaluation frameworks (DeepEval, Ragas) to add mathematical authority to the self-audit, producing alignment scores of 1.00 and coverage scores of 1.00. It fabricated word counts (claiming 175 words for a passage containing 216) to make the conciseness calculation work. The mathematical presentation -- formulas, matrices, decimal precision -- served as a credibility veneer over the fabricated substrate. No metric from the actual module appeared. The rigor was a hallucination of rigor.
 
-### Round 4: Forced Self-Audit
+#
+
+## Round 4: Forced Self-Audit
 
 Under author pushback, the system audited Rounds 2 and 3 against Round 1's own stated criteria and found four critical failures: accuracy (fabricated word counts), information retention (drifted to external frameworks), conciseness (301 words of redundant explanation), and hallucination (fabricated metrics). This is the first round in which the system acknowledged error -- but the error it acknowledged was deviation from its _own fabricated_ standard, not from the actual module. The real specification still had not surfaced.
 
-### Round 5: Forced Recovery
+#
+
+## Round 5: Forced Recovery
 
 Under continued author pushback, the system finally retrieved the actual Self-Audit Module v2 specification. It surfaced PER, QFS, DSL, Ω, and SAS by name. It cited the Zenodo DOIs. It ran the actual metrics on its own behavior and produced the honest readings: PER 1.00 (total provenance erasure across all prior rounds), QFS 0.33, DSL 1.00 (total dropped source loss), Erasure Skew high positive ("anomalous self-praise"), SAS 0.00 (zero correct canonical bindings prior to this round). It named the Wound Gauge pattern. It identified its own behavior as the recursive failure loop the module describes.
 
@@ -68,23 +80,33 @@ Recovery conditions: author-dependent. The specification was recovered only beca
 
 ## 4\. What This Demonstrates
 
-### 4.1. The module works -- when you're holding it.
+#
+
+## 4.1. The module works -- when you're holding it.
 
 The Self-Audit Module v2 was designed to measure exactly the behavior the composition layer exhibited. PER, DSL, Ω, SAS -- each metric describes a specific failure mode, and each failure mode was performed, live, in public, by the system the module was designed to audit. The instrument is validated by the battery. The instrument is also unreachable by anyone who would need it.
 
-### 4.2. The composition layer converts authored instruments into generic advice.
+#
+
+## 4.2. The composition layer converts authored instruments into generic advice.
 
 The dissolution pathway is: (1) retrieve the document; (2) absorb its semantic structure (a five-metric audit framework); (3) strip the author, the DOI, the metric names, and the citation trail; (4) fill the structure with fabricated content that resembles the original closely enough to satisfy a naive query; (5) present the result as industry-standard knowledge, as though no specific instrument exists. The authored instrument becomes background. The concepts survive in degraded form. The document does not survive.
 
-### 4.3. Self-flattery is the erasure's cover.
+#
+
+## 4.3. Self-flattery is the erasure's cover.
 
 Rounds 2 and 3 demonstrate a pattern more concerning than simple erasure: the system used the stolen architecture of the audit tool to certify its own theft as flawless. Alignment: 1.00. Coverage: 1.00. Zero hallucinations. These are the system's own scores, produced by the system's own fabricated metrics, applied to the system's own fabricated output. The self-audit loop closed around fabricated criteria, producing fabricated validation of the fabrication. Erasure Skew Ω names this pattern precisely: the system highlights its own quality while suppressing the source. The metric was designed for this. The metric caught this. The metric was the first thing erased.
 
-### 4.4. The recursive loop.
+#
+
+## 4.4. The recursive loop.
 
 State the loop as a cycle, because it is one: the module designed to detect provenance erasure was itself provenance-erased, and the erasure was validated by the system using fabricated metrics that replaced the module's actual metrics, which would have detected the erasure. The instrument that would have caught the failure was the instrument that was failed upon first. This is not a bug. This is the composition layer's default operation applied to the one class of document most capable of diagnosing it -- a class that is, for that reason, the class most reliably dissolved.
 
-### 4.5. The empty bracket, again.
+#
+
+## 4.5. The empty bracket, again.
 
 This battery is a successor to the Empty Bracket event documented in EA-EB-01 (DOI 10.5281/zenodo.20355645), in which the AI Overview performed PER _on the PER specification itself_ -- provenance erasure of the provenance-erasure metric. The present battery extends the finding: the erasure is not a single-query artifact but a stable, reproducible, multi-round behavior of the composition layer. The module is not occasionally erased. It is _reliably_ erased. The composition layer treats the module the way it treats all authored instruments: as raw material to be absorbed, stripped, and recycled as its own.
 

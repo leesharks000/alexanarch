@@ -48,6 +48,7 @@ Glas, N. (2026). Measuring Semantic Deviation: Operationalizations, Experiments,
 
 ---
 
+
 # Measuring Semantic Deviation: Operationalizations, Experiments, and Falsification Conditions for a Theory of Meaning as Field Deformation
 
 
@@ -88,7 +89,9 @@ The program described here asks what happens when you try to compute the integra
 ---
 
 ## 2. The Semantic Deviation Principle
-### 2.1 Raw Semantic Magnitude
+#
+
+## 2.1 Raw Semantic Magnitude
 
 
 Let $C$ denote a semantic context or field, $s$ a sign introduced at time $t_0$, $\Psi_t^0(C)$ the probability distribution over future semantic states without $s$, $\Psi_t^s(C)$ the distribution with $s$, $D$ a divergence functional, and $w(t)$ a temporal weighting function. The raw semantic magnitude of $s$ over horizon $T$ is:
@@ -101,7 +104,9 @@ When $w(t)$ is normalized ($\int w(t) , dt = 1$), the magnitude retains the unit
 
 
 Jensen-Shannon divergence is the default for empirical work: symmetric, bounded in $[0, \log 2]$ bits, finite when supports differ. KL divergence is the asymmetric, idealized limit. Wasserstein distance respects state-space geometry and is preferred when state distance carries semantic content. The geometric form ($\mathcal{M}_T = \int w(t) |\Psi_t^s - \Psi_t^0|^2 , dt$; cf. information geometry, Amari 2016) is noted for completeness; all empirical work in this paper uses the distributional form.
-### 2.2 Provenance-Resolved Magnitude
+#
+
+## 2.2 Provenance-Resolved Magnitude
 
 
 Let PER denote the Provenance Erasure Rate — the fraction of provenance-bearing relations (authorial lineage, conceptual ancestry, source attribution) severed during transmission, connecting to the broader literature on attribution in NLG (Bohnet et al. 2022; Rashkin et al. 2023) and factual precision (Min et al. 2023). Provenance resolution modulates the *magnitude* of the deviation, not its sign:
@@ -114,7 +119,9 @@ When PER = 0, the deformation is fully accountable. When PER = 1, the deformatio
 
 
 A third derived measure — normative semantic value $\mathcal{V}_T = \mathcal{M}_T^\pi \cdot W$ — estimates whether accountable deformation enriches the commons or extracts from it. $W$ is a sketch, not yet an instrument; this paper works exclusively with $\mathcal{M}_T$ and $\mathcal{M}_T^\pi$.
-### 2.3 The Counterfactual Baseline
+#
+
+## 2.3 The Counterfactual Baseline
 
 
 The principle requires $\Psi_t^0$. We adopt the tiered approach standard in causal inference (Pearl 2009; Imbens & Rubin 2015):
@@ -134,7 +141,9 @@ The experimental program in this paper operates entirely at Tier 1.
 ---
 
 ## 3. Two Primary Operationalizations
-### 3.1 F1 — Closed-System Continuation Field
+#
+
+## 3.1 F1 — Closed-System Continuation Field
 
 
 **Field:** The conditional next-token distribution of a fixed language model checkpoint $\theta$.
@@ -193,7 +202,9 @@ Uniform over positions (normalized)
 Read from logits (model as calibrated proxy)
 
 
-### 3.2 F2 — Retrieval Response Field
+#
+
+## 3.2 F2 — Retrieval Response Field
 
 
 **Field:** Response distributions of AI retrieval surfaces to a fixed query set, sampled over a 90-day window.
@@ -230,7 +241,9 @@ JS with Laplace smoothing ($\alpha = 1$)
 Pre-intervention capture
 
 
-### 3.3 Future Operationalization: Citation Graph Fields (F3)
+#
+
+## 3.3 Future Operationalization: Citation Graph Fields (F3)
 
 
 Forward-citation distributions over a paper corpus (OpenAlex, Semantic Scholar) provide a long-horizon complement. Divergence: JS over topic-cluster distributions with regularized inverse-time weighting $w(t) = 1/(1 + t - t_0)$.
@@ -241,14 +254,18 @@ Statistical-power constraints are severe: single-paper interventions are typical
 ---
 
 ## 4. Machine-Output Convergence as Negative Deviation
-### 4.1 The Cross-Entropy Argument
+#
+
+## 4.1 The Cross-Entropy Argument
 
 
 Standard language model training minimizes cross-entropy: $\mathcal{L}*{\text{CE}}(\theta) = -\frac{1}{T}\sum_t \log P*\theta(x_t \mid x_{<t})$. This drives the model toward the training corpus's base-rate continuations — the phenomenon Holtzman et al. (2020) documented as neural text degeneration and addressed with nucleus sampling (a generation-time intervention), and that Welleck et al. (2020) addressed with unlikelihood training (a training-time intervention).
 
 
 Under the principle, this base-rate convergence has a specific numerical signature: $\bar{\delta} < 0$ — text that actively pulls toward the model's base rate, each token more probable than the conditional entropy expects. A second regime exists: temperature slop, where high-temperature sampling produces high $\mathcal{M}_T^{\text{abs}}$ without provenance — text that surprises but is unmoored from any source, connecting to the hallucination taxonomy of Ji et al. (2023) and the attribution failure modes of Min et al. (2023).
-### 4.2 The Falsifiable Claim
+#
+
+## 4.2 The Falsifiable Claim
 
 > AI-generated text exhibits statistically significant negative mean signed deviation $\bar{\delta}$ relative to matched human-written text, computed against a frozen open-weight reference model.
 
@@ -270,7 +287,9 @@ The RLHF lineage — from Christiano et al. (2017) through Ziegler et al. (2019)
 
 
 Our experiment extends this lineage by asking: can the deviation primitive replace human preference data as the alignment signal?
-### 5.1 Preference Pair Generation
+#
+
+## 5.1 Preference Pair Generation
 
 
 For each prompt $p$, sample two continuations $g_1, g_2$ from base model $\theta_0$ at temperature 0.8. Score each by:
@@ -283,33 +302,45 @@ The provenance retention indicator $\pi \in [0,1]$ is a weighted sum of citation
 
 
 Preference: $g_w \succ g_l$ if Score difference exceeds $\tau_{\text{margin}} = 0.1$ bits/token. Pairs below margin discarded.
-### 5.2 DPO Training
+#
+
+## 5.2 DPO Training
 
 
 $$\mathcal{L}*{\text{DPO}}(\theta) = -\mathbb{E}*{(p,g_w,g_l) \sim \mathcal{D}}!\left[\log \sigma!\left(\beta \log \frac{P_\theta(g_w|p)}{P_{\theta_0}(g_w|p)} - \beta \log \frac{P_\theta(g_l|p)}{P_{\theta_0}(g_l|p)}\right)\right]$$
 
 
 The deviation signal enters through preference labels; the gradient is correct by construction.
-### 5.3 Three Conditions
+#
+
+## 5.3 Three Conditions
 
 
 For each architecture (primary: Llama-3.2-1B; secondary: Mistral-7B-v0.3): **Model-Base** (unfine-tuned), **Model-CE** (cross-entropy SFT), **Model-Sem** (DPO with deviation preferences). Identical initialization, corpus, optimizer, compute. A six-condition component-decomposed design (isolating deviation, provenance, and coherence contributions) is deferred to a follow-up experiment; the present three-condition design tests the composite hypothesis that the full bundle produces measurable improvement. If the composite succeeds, decomposition follows; if it fails, decomposition is moot.
-### 5.4 Evaluation
+#
+
+## 5.4 Evaluation
 
 
 Standard NLP benchmarks (MMLU, HellaSwag, ARC-Challenge, GSM8K) verify retained capability. Slop Composite Index (SCI): five component metrics (Net Deviation Signature, Cliché Frequency, Type-Token Ratio, N-gram Base-Rate Convergence, Surprise-Collapse Slope), each computed on 500 free-generation prompts under a fixed third-party reference model. $\text{SCI}(\theta) = \frac{1}{5}\sum z_i(\theta)$ with direction-corrected z-scores relative to Model-CE. SCI weights are uniform in the pre-registered primary analysis; a sensitivity analysis varying each by ±50% is reported as secondary. Pre-registered falsification: $\text{SCI}(\text{Model-Sem}) - \text{SCI}(\text{Model-CE}) > 0.25$.
 
 
 Human preference evaluation: 500 prompt pairs × 3 raters (Prolific), blinded. 80% power for 56% preference rate at $\alpha = 0.05$ (binomial); a mixed-effects analysis (appropriate for nested rater data) is reported alongside.
-### 5.5 Preference Validation Substudy
+#
+
+## 5.5 Preference Validation Substudy
 
 
 Before interpreting the DPO results, we validate the deviation-generated preference signal against human judgment. 100 randomly sampled preference pairs are independently rated by 3 human raters ("Which continuation do you prefer?"). If human agreement with the deviation-generated label is below 70%, the preference signal is unreliable and the training intervention is compromised. This $50 substudy de-risks the entire intervention.
-### 5.6 Judge Adversarial Validation
+#
+
+## 5.6 Judge Adversarial Validation
 
 
 The frozen judge is validated against 200 adversarial strings (random tokens with citation markers). Mean $\pi$ must be below 0.2. If the judge fails, training does not proceed (Perez et al. 2022).
-### 5.7 Budget
+#
+
+## 5.7 Budget
 
 
 Training (both architectures), judge fine-tuning, preference validation, evaluation suite, and human evaluation: **$3,000–$3,900**.
@@ -342,11 +373,15 @@ A deviation-maximizing metric will be gamed. Manheim and Garrabrant (2019) taxon
 ---
 
 ## 7. The Cheapest Dangerous Test
-### 7.1 Setup
+#
+
+## 7.1 Setup
 
 
 **Corpora.** GPT-wiki-intro (Bhat 2023): paired human/AI wiki introductions. HC3 (Guo et al. 2023): human/ChatGPT answer pairs. **Reference model.** meta-llama/Llama-3.1-8B-Instruct, frozen at the HuggingFace checkpoint as of deposit date. **Cost.** ~1 A100-hour for both corpora. **Pre-registration.** These predictions are pre-registered as a timestamped deposit on Zenodo prior to any computation (DOI to be inserted upon registration).
-### 7.2 Pre-Registered Predictions
+#
+
+## 7.2 Pre-Registered Predictions
 
 
 **P1 (Machine-output convergence).** AI-generated text in matched human/AI corpora exhibits statistically significant negative mean $\bar{\delta}$ relative to matched human text. Two-sided Mann-Whitney U at $\alpha = 0.05$, minimum effect size Cohen's $d > 0.5$. A positive result motivates a second-stage test on human-labeled low-quality AI text to determine whether the effect sharpens in the slop regime.
@@ -356,7 +391,9 @@ A deviation-maximizing metric will be gamed. Manheim and Garrabrant (2019) taxon
 
 
 **P3 (Cross-judge consistency).** The differential replicates under mistralai/Mistral-7B-Instruct-v0.3. Spearman rank correlation between per-output $\bar{\delta}$ rankings under Llama and Mistral exceeds 0.7. Failure indicates judge-specificity, not an intrinsic text property.
-### 7.3 Outcome Logic
+#
+
+## 7.3 Outcome Logic
 
 
 P1 failure disconfirms this paper's first high-stakes prediction — that benchmark AI text exhibits a negative signed-deviation signature. It would block the proposed training intervention in its current form while leaving the broader field-deformation measurement program open. P1 success with P3 failure retreats to a weaker, judge-relative claim. P1 and P3 success warrants the training intervention.

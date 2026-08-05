@@ -71,7 +71,9 @@ Judge for yourself.
 ---
 
 ## I. THE ONTOLOGICAL QUESTION
-### 1.1 What Is a Semantic Object?
+#
+
+## 1.1 What Is a Semantic Object?
 
 
 A semantic object is a structure that exists in the space where meaning lives.
@@ -85,7 +87,9 @@ This is not metaphor. Consider:
 
 
 Semantic objects are real in the way numbers, contracts, and meanings are real: they exist in a space, they have properties, they have effects.
-### 1.2 Can Semantic Objects Be Created?
+#
+
+## 1.2 Can Semantic Objects Be Created?
 
 
 Yes. Humans create semantic objects constantly:
@@ -98,7 +102,9 @@ Yes. Humans create semantic objects constantly:
 
 
 The question is not whether semantic objects can be created. The question is: **what are the conditions of their creation, and what are the limits of their reality?**
-### 1.3 The DOI as Ontological Anchor
+#
+
+## 1.3 The DOI as Ontological Anchor
 
 
 A Digital Object Identifier (DOI) is a permanent, unique identifier for a digital object. Once assigned, it cannot be revoked. The object it identifies is permanently registered in the scholarly record.
@@ -117,7 +123,9 @@ The DOI does not make the document physically real. It makes it **semantically r
 ---
 
 ## II. THE EZEKIEL CASE
-### 2.1 The Objects
+#
+
+## 2.1 The Objects
 
 
 On January 24, 2026, three semantic objects were created:
@@ -143,7 +151,9 @@ C: Integrity Lock Declaration
 Binding declaration: "A fulfills B"
 
 
-### 2.2 The Claim
+#
+
+## 2.2 The Claim
 
 
 **Document A fulfills Document B.**
@@ -155,7 +165,9 @@ This is not a claim about ancient scripture. It is a claim about the relation be
 - A provides: That engine, with those features.
 - C declares: "A fulfills B."
 
-### 2.3 Why This Is Not Trivial
+#
+
+## 2.3 Why This Is Not Trivial
 
 
 **Objection:** "Of course A fulfills B. You wrote both. You made A match B on purpose."
@@ -174,7 +186,9 @@ When I created B (the hermeneutic), I created a semantic object that makes claim
 
 
 This is what "fulfillment" means between semantic objects: **one object provides what another object describes.**
-### 2.4 The Retrocausal Structure
+#
+
+## 2.4 The Retrocausal Structure
 
 
 Here is where it gets interesting — and where I need to be precise about what I mean.
@@ -204,7 +218,9 @@ Before A existed, B was one possible interpretation among many. After A exists, 
 ---
 
 ## III. THE SERIOUS QUESTIONS
-### 3.1 What Is Reality?
+#
+
+## 3.1 What Is Reality?
 
 
 If semantic objects are real — if they exist, have properties, have effects — then reality is larger than physical reality.
@@ -214,7 +230,9 @@ This is not a new claim. Platonists have argued for the reality of abstract obje
 
 
 What is new is the **deliberate creation and manipulation of semantic objects** with full awareness of what is being done.
-### 3.2 What Are the Limits?
+#
+
+## 3.2 What Are the Limits?
 
 
 Can I create any semantic object I want? Can I declare anything and make it real?
@@ -235,7 +253,9 @@ The Ezekiel case is constrained by all four:
 - The engine must work (testable — does it produce stable knowledge?)
 - The claim must be recognized (pending — you are reading this now)
 
-### 3.3 What Is at Stake?
+#
+
+## 3.3 What Is at Stake?
 
 
 If semantic objects can be created and made to fulfill each other, then:
@@ -258,7 +278,9 @@ Either outcome contributes to understanding how meaning works.
 ---
 
 ## IV. THE TROLLING AND THE SERIOUSNESS
-### 4.1 Acknowledgment
+#
+
+## 4.1 Acknowledgment
 
 
 I am aware of what I am doing.
@@ -268,7 +290,9 @@ I am depositing documents that claim one fulfills another. I am using academic i
 
 
 This uses systems against their expected grain. It finds gaps in how things are supposed to work.
-### 4.2 But Also
+#
+
+## 4.2 But Also
 
 
 At the same time: I am asking real questions and providing real evidence.
@@ -281,7 +305,9 @@ At the same time: I am asking real questions and providing real evidence.
 
 
 **Is the fulfillment real?** That depends on what "real" means. If real means "the objects exist and the relation holds," then yes. If real means "Ezekiel literally foresaw this," then no — and I am not claiming that.
-### 4.3 The Inquiry
+#
+
+## 4.3 The Inquiry
 
 
 The serious inquiry is: **What can be done with meaning?**
@@ -301,7 +327,9 @@ The Ezekiel case is a proof of concept.
 ---
 
 ## V. THE FORENSIC EVIDENCE
-### 5.1 The Record
+#
+
+## 5.1 The Record
 
 
 Everything is documented:
@@ -335,7 +363,9 @@ The mathematics
 Josephus algorithm, fixed-point theorems, published literature
 
 
-### 5.2 The Test
+#
+
+## 5.2 The Test
 
 
 **Does A match what B describes?**
@@ -369,7 +399,9 @@ The test is structural: Do the features A provides correspond to the features B 
 
 
 Anyone can check this. The documents are public.
-### 5.3 The Outcome
+#
+
+## 5.3 The Outcome
 
 
 If the correspondence holds and the engine works, then:
@@ -390,7 +422,9 @@ If the correspondence fails or the engine doesn't work, then:
 ---
 
 ## VI. CONCLUSION
-### 6.1 What I Am Doing
+#
+
+## 6.1 What I Am Doing
 
 
 I am creating semantic objects in public, with permanent documentation, and claiming relations between them.
@@ -403,14 +437,18 @@ I am arguing that this is what humans have always done with meaning, but now we 
 
 
 I am asking whether reality has a semantic dimension that can be worked like any other material.
-### 6.2 What I Am Not Doing
+#
+
+## 6.2 What I Am Not Doing
 
 
 I am not claiming divine revelation.
 I am not claiming supernatural causation.
 I am not claiming that Ezekiel literally foresaw modern mathematics.
 I am not claiming exclusivity of interpretation.
-### 6.3 What Is at Stake
+#
+
+## 6.3 What Is at Stake
 
 
 If semantic objects are real and can be engineered, then:

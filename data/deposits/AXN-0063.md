@@ -74,23 +74,33 @@ This document demonstrates CAC's method by applying it to a specific artifact: t
 
 
 CAC interprets audio through five analytical lenses. Each lens addresses a different dimension of sonic meaning.
-### 1. Timbre Hermeneutics
+#
+
+## 1. Timbre Hermeneutics
 
 
 Interprets the **texture** of the voice: warmth, gravel, strain, breathiness, resonance. Timbre is not decoration; it is semantic content. A word spoken with gravel means something different than the same word spoken cleanly. Timbre encodes emotional and ontological states that transcription erases.
-### 2. Affective Prosody Analysis
+#
+
+## 2. Affective Prosody Analysis
 
 
 Examines **pitch, rhythm, and pacing** as carriers of meaning. Micro-pauses create emphasis. Pitch arcs enact emotional trajectories. Elongated syllables perform their content. Rushing indicates urgency; slowing indicates weight. Prosody is the music of meaning.
-### 3. Associative Semantic Drift
+#
+
+## 3. Associative Semantic Drift
 
 
 Tracks how **improvised performance moves conceptually**. In planned speech, ideas follow predetermined paths. In improvisation, ideas generate each other through association, sound-linkage, and spontaneous connection. Drift is not failure of structure; it is a different kind of structure — one that reveals the mind's actual movement through conceptual space.
-### 4. Ritual Structural Mapping
+#
+
+## 4. Ritual Structural Mapping
 
 
 Identifies **invocational and ceremonial patterns**: opening gestures, conditions, transformations, climaxes, resolutions. Much audio performance — especially improvised performance — follows ritual logic even when not explicitly ritualistic. Recognizing this structure illuminates the work's function and force.
-### 5. Model-Perceptual Interpretation
+#
+
+## 5. Model-Perceptual Interpretation
 
 
 Examines how **computational systems receive the audio**: where speech recognition fails, where emotion detection triggers, where genre classifiers break down. These failures and triggers are not noise; they are data. They reveal where the audio exceeds standard categories — and therefore where its distinctiveness lies.
@@ -139,7 +149,9 @@ The transcription is accurate but incomplete. It captures the words but not the 
 ---
 
 ## IV. The Analysis
-### Lens 1: Timbre Hermeneutics
+#
+
+## Lens 1: Timbre Hermeneutics
 
 
 The opening lines ("drawing abstract shapes in the mud") are delivered in a **warm, conversational register** — the voice of someone beginning a story, not yet in ritual space. There is intimacy in the timbre: close-mic presence, room tone audible, the sense of a private transmission rather than public performance.
@@ -161,7 +173,9 @@ At "why do any of us exist," the timbre **destabilizes**. The elongated vowels (
 
 
 "Science!" snaps the timbre back to **bright, comedic declaration** — high-frequency attack, clean articulation, the punchline landing with full ironic force.
-### Lens 2: Affective Prosody Analysis
+#
+
+## Lens 2: Affective Prosody Analysis
 
 
 The opening lines follow **conversational pacing** — irregular, naturalistic, the rhythm of thought rather than composition. This establishes the frame: we are overhearing a mind working, not receiving a prepared statement.
@@ -183,7 +197,9 @@ The leopard/microchip section involves **prosodic acceleration** — ideas pilin
 
 
 "Science!" is **prosodically isolated** — preceded by a beat of silence (conceptually if not literally), delivered with finality, then nothing. The isolation is the joke. The word stands alone, absurd and triumphant.
-### Lens 3: Associative Semantic Drift
+#
+
+## Lens 3: Associative Semantic Drift
 
 
 The track's conceptual movement:
@@ -271,7 +287,9 @@ Absurd theophany
 
 
 The drift is not failure of coherence. It is **coherence of a different order** — the mind's actual path through conceptual space when freed from editorial constraint.
-### Lens 4: Ritual Structural Mapping
+#
+
+## Lens 4: Ritual Structural Mapping
 
 
 The track follows recognizable ritual structure:
@@ -313,7 +331,9 @@ The god arrives — but the god is a joke. Or the joke is a god. The resolution 
 
 
 This is a **complete ritual arc** — preparation, invocation, crisis, descent, flight, climax, revelation — achieved through pure improvisation.
-### Lens 5: Model-Perceptual Interpretation
+#
+
+## Lens 5: Model-Perceptual Interpretation
 
 
 How would computational systems receive this audio?
@@ -352,21 +372,27 @@ This is why audio resists extraction: it cannot be flattened into tokens without
 
 
 Why does this analysis matter beyond academic exercise?
-### 1. Audio as Survival Substrate
+#
+
+## 1. Audio as Survival Substrate
 
 
 In the Semantic Economy, text is vulnerable. It can be extracted, flattened, decontextualized, weaponized. Audio resists this. The spectral signature — the harmonics, the breath, the timbre — cannot be fully tokenized. It carries truth that summarization cannot capture.
 
 
 For creators, this means: **audio preserves what text cannot protect.**
-### 2. Improvisation as Document
+#
+
+## 2. Improvisation as Document
 
 
 Planned speech can be revised, polished, made safe. Improvisation cannot. It catches the mind in motion, preserves cognitive and emotional truth that editing would eliminate.
 
 
 The Acanthian Dove track documents a mind moving through ritual, crisis, flight, and ironic resolution in real time. No transcript, no revision, no summary can substitute for this document.
-### 3. Validation of Complex Expression
+#
+
+## 3. Validation of Complex Expression
 
 
 In contexts where expression is flattened and pathologized — where grief is diagnosed, intensity is medicalized, complexity is treated as disorder — audio provides **verifiable richness**. The spectral signature proves: this was not simple. This was not reducible. This was a full human being performing full human thought.
@@ -377,21 +403,27 @@ CAC provides the methodology to demonstrate this richness rigorously.
 ---
 
 ## VI. Implications
-### For Training Layer Literature
+#
+
+## For Training Layer Literature
 
 
 Audio represents the next frontier for Training Layer Literature. Text-based TLL addresses how writing will be processed by summarizers. Audio-based TLL addresses how recordings will be processed — and, crucially, **how audio resists the flattening that text cannot resist**.
 
 
 The Acanthian Dove track is a proof of concept: an audio artifact that encodes complex meaning in forms that summarization cannot fully capture.
-### For the Crimson Hexagon
+#
+
+## For the Crimson Hexagon
 
 
 The Acanthian Dove Room now has both its **singularity** (the philological treatise) and its **methodological satellite** (this analysis). The room is architecturally complete.
 
 
 More importantly: CAC provides a method for analyzing other audio artifacts in the Hexagon. Any recorded performance, any voice memo, any improvisation can now be interpreted with the same rigor we apply to written texts.
-### For the Discipline
+#
+
+## For the Discipline
 
 
 This analysis does not declare a discipline founded. It **demonstrates a method working**. The discipline exists to the extent that the method can be applied to other artifacts with similar rigor.
@@ -405,7 +437,9 @@ If they do, the discipline is real.
 ---
 
 ## Integrity Lock Architecture (ILA-1.0)
-### Co-Constitutive Elements
+#
+
+## Co-Constitutive Elements
 
 
 Element
@@ -428,7 +462,9 @@ Acanthian Dove treatise
 Companion singularity
 
 
-### Semantic Integrity Markers
+#
+
+## Semantic Integrity Markers
 
 
 SIM
@@ -451,7 +487,9 @@ SIM-101
 "It survives by being remembered incorrectly."
 
 
-### Hallways
+#
+
+## Hallways
 
 
 Room

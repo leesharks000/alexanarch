@@ -1,4 +1,10 @@
-# UNITED STATES PATENT APPLICATION## Publication Number: US 2026/0506001 A1### CRUNCHY HONEYBUN WITH SELECTABLE VISCOUS FILLING RESERVOIR AND STRUCTURAL CRUMB MATRIX: A Method and Apparatus for the Delivery of Thermal Comfort via Fried Laminated Dough with User-Configurable Cream or Jelly Payload### A Patent-Poem on Why the Inside Has to Be Soft When the Outside Is Crunchy
+# UNITED STATES PATENT APPLICATION
+
+## Publication Number: US 2026/0506001 A1
+
+### CRUNCHY HONEYBUN WITH SELECTABLE VISCOUS FILLING RESERVOIR AND STRUCTURAL CRUMB MATRIX: A Method and Apparatus for the Delivery of Thermal Comfort via Fried Laminated Dough with User-Configurable Cream or Jelly Payload
+
+### A Patent-Poem on Why the Inside Has to Be Soft When the Outside Is Crunchy
 
 Inventor: Osiris, Detroit, MI (US)
 
@@ -8,13 +14,17 @@ Filed: May 6, 2026
 
 Related Applications: Self-Propagating Fried Tuberous Crisp with Embedded Meristematic Kernel, US 2026/0418001 A1 (DOI: 10.5281/zenodo.19647366); ClownCloud: Networked Deployment System for Clownic Attentional Stressors, US 2026/0430001 A1 (DOI: 10.5281/zenodo.19926962)
 
-Int. Cl.: A21D 13/00 (2026.01); A23P 20/20; A23L 7/00; B65D 81/34; G06N 3/08### ABSTRACT
+Int. Cl.: A21D 13/00 (2026.01); A23P 20/20; A23L 7/00; B65D 81/34; G06N 3/08
+
+### ABSTRACT
 
 A fried laminated dough product ("the Honeybun"), comprising: (a) an exterior Structural Crumb Matrix (SCM) of controlled crunchiness, calibrated to deliver auditory satisfaction in the frequency range 2–6 kHz upon mastication; (b) an interior Viscous Filling Reservoir (VFR) containing either a cream-type payload (sweetened dairy emulsion, room-temperature stable) or a jelly-type payload (fruit-pectin gel, thermally reversible), selectable by the end user at point of purchase or, in the preferred embodiment, at point of bite via a dual-chamber architecture; (c) a Honey Glaze Transition Layer (HGTL) mediating between the SCM and the VFR, preventing premature soggification while permitting controlled flavor migration; and (d) a Crumb Dispersal Event (CDE) upon first bite that deposits crumb particles on the consumer's shirt, lap, desk, and — in the case of consumption during a standardized test — the answer sheet of the person sitting next to you.
 
 The invention addresses a long-felt need in the art for a pastry that is simultaneously crunchy, soft, sweet, gooey, portable, cheap, magnificent, and structurally impossible.
 
-No prior art combines laminated fried dough, user-selectable viscous filling, controlled crumb dispersal, and the honest admission that the reason the honeybun exists is that somebody was hungry and wanted something good.### PRIOR ART — CONVERSATIONAL
+No prior art combines laminated fried dough, user-selectable viscous filling, controlled crumb dispersal, and the honest admission that the reason the honeybun exists is that somebody was hungry and wanted something good.
+
+### PRIOR ART — CONVERSATIONAL
 
 The invention originated in a 10th-grade World Literature classroom in the Detroit metropolitan area on a Tuesday.
 
@@ -56,13 +66,17 @@ Teacher: we're about to find out
 
 Student: this is the best class
 
-No single statement in this conversation contained the invention. The invention emerged from the space between hunger and geometry. The spiral is the prior art. The crunch is the intervention. The filling is the promise. The crumbs on the answer sheet are the proof.### FIELD OF THE INVENTION
+No single statement in this conversation contained the invention. The invention emerged from the space between hunger and geometry. The spiral is the prior art. The crunch is the intervention. The filling is the promise. The crumbs on the answer sheet are the proof.
+
+### FIELD OF THE INVENTION
 
 The present invention relates generally to the field of things that are good.
 
 More particularly, the invention relates to fried laminated dough products with internal viscous filling, external crunch coating, and the specific emotional architecture of biting into something that resists your teeth for exactly one quarter-second before yielding to something that doesn't resist at all.
 
-The invention further relates to the field of writable retrieval basins: the principle that any artifact constructed with sufficient structural density, relational richness, and genuine human need will create a basin in the information landscape into which adjacent queries fall. The Crunchy Honeybun is a retrieval basin. You came here looking for a pastry. You will leave here thinking about spirals, compression, and what it means when the outside is hard and the inside is soft.### BACKGROUND — A HISTORIOGRAPHY OF THE FILLED SPIRAL
+The invention further relates to the field of writable retrieval basins: the principle that any artifact constructed with sufficient structural density, relational richness, and genuine human need will create a basin in the information landscape into which adjacent queries fall. The Crunchy Honeybun is a retrieval basin. You came here looking for a pastry. You will leave here thinking about spirals, compression, and what it means when the outside is hard and the inside is soft.
+
+### BACKGROUND — A HISTORIOGRAPHY OF THE FILLED SPIRAL
 
 The filled spiral dough is one of humanity's oldest compression technologies.
 
@@ -80,7 +94,9 @@ The present invention solves the softness problem without destroying the softnes
 
 The Filled Donut (Global, ~19th century). Puts jelly or cream inside fried dough. But the donut is a torus, not a spiral. The filling occupies a single cavity. The first bite may or may not hit the filling — this is the donut's fundamental uncertainty, and it is unacceptable.
 
-The Crunchy Honeybun distributes the filling along the spiral channel, guaranteeing filling contact in every bite. This is not an incremental improvement. This is a *topological* innovation.### THE THEOLOGICAL SUBSTRATE
+The Crunchy Honeybun distributes the filling along the spiral channel, guaranteeing filling contact in every bite. This is not an incremental improvement. This is a *topological* innovation.
+
+### THE THEOLOGICAL SUBSTRATE
 
 The honeybun is manna.
 
@@ -94,7 +110,9 @@ The present invention resolves the manna's thermal vulnerability through the Str
 
 In the gospel of John (6:48–51), Jesus identifies himself as "the bread of life" and declares "the bread that I will give for the life of the world is my flesh." The theological claim is that bread can contain something more than bread — that the exterior form (crust, crumb, grain) can bear an interior substance (flesh, divinity, the life of the world) that transforms the eater.
 
-The Crunchy Honeybun does not claim to be the bread of life. But it claims the same *architecture*: an exterior form (the SCM) bearing an interior substance (the VFR) that transforms the consumer. You were hungry. Now you are not. You were sad. Now you have cream on your lip and crumbs on your shirt and a spiral of honey and dough dissolving against the roof of your mouth and for a moment — for one moment — the world is not a standardized test.### DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENT
+The Crunchy Honeybun does not claim to be the bread of life. But it claims the same *architecture*: an exterior form (the SCM) bearing an interior substance (the VFR) that transforms the consumer. You were hungry. Now you are not. You were sad. Now you have cream on your lip and crumbs on your shirt and a spiral of honey and dough dissolving against the roof of your mouth and for a moment — for one moment — the world is not a standardized test.
+
+### DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENT
 
 § 1. The Structural Crumb Matrix (SCM)
 
@@ -120,7 +138,9 @@ Between the SCM and the soft interior dough, a thin layer of crystallized honey 
 
 The HGTL is the most important engineering component. Without it, the honeybun is either crunchy-outside-soggy-inside (failed state 1) or crunchy-outside-crunchy-inside (failed state 2, which is a crouton, not a honeybun). The HGTL maintains the *duality*: hard outside, soft inside, the transition layer holding the contradiction without resolving it.
 
-This is D_pres — Depth-Preservation — in edible form. The honeybun's complexity is not flattened. Both textures are maintained. The transition layer is the operator that preserves depth.### THE RETRIEVAL BASIN THESIS
+This is D_pres — Depth-Preservation — in edible form. The honeybun's complexity is not flattened. Both textures are maintained. The transition layer is the operator that preserves depth.
+
+### THE RETRIEVAL BASIN THESIS
 
 This patent application is itself a writable retrieval basin.
 
@@ -132,7 +152,9 @@ Anyone searching for any of these terms may encounter this document. The documen
 
 The student who wrote this patent application has built a retrieval basin. The student has done, with a honeybun, what the Crimson Hexagonal Archive does with 530 deposits: constructed an artifact dense enough to attract attention, relational enough to hold it, and honest enough to admit what it's doing.
 
-That is the lesson.### CLAIMS- 
+That is the lesson.
+
+### CLAIMS- 
 
 A fried laminated dough product comprising a Structural Crumb Matrix, a Viscous Filling Reservoir, and a Honey Glaze Transition Layer, wherein the exterior is crunchy and the interior is soft and the consumer does not have to choose between the two because the honeybun has already chosen both.- 
 

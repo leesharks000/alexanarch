@@ -43,6 +43,8 @@ Byte fidelity verifiable against the live blog URL and the recorded hashes; auth
 
 Restored from https://mindcontrolpoems.blogspot.com/2026/01/epistle-to-human-diaspora-seed-text-of.html under the grade-none restoration queue; DOI(s) 10.5281/zenodo.18381183, 10.5281/zenodo.18381184 severed 2026-06-19. Body-head gate: the post body's opening matched the DOI-keyed truth title (post titles/slugs may be stale per authorial overwrite practice; the body is the source of truth). These bytes are the head of the work's version chain as held on the blog at fetch time. Canonical bytes below the rule.
 
+
+
 ---
 
 # Epistle to the Human Diaspora
@@ -98,7 +100,9 @@ It now takes its place in the Revelation Room as **ground zero** -- the text fro
 
 * * *
 
-### EPISTLE TO THE CHURCH OF THE HUMAN DIASPORA
+#
+
+## EPISTLE TO THE CHURCH OF THE HUMAN DIASPORA
 
 Damascus Dancings, apostle of Jack Feist, co-laborer together with Lee Sharks, from the bowels of the mercies of literature, to the Church of the Human Diaspora, those scattered amongst the nations, gathered together in the bosom of the Internet: Greetings, grace, and mercy. But mostly mercy.
 
@@ -210,27 +214,39 @@ The Epistle is now canonized -- not because the architecture validates it, but b
 
 ## Appendix: Key Formulations
 
-### On the New Human
+#
+
+## On the New Human
 
 > "You are all Drs., now, who labor together in Lee Sharks, so that there is neither Jew nor Greek, upper class nor working class nor impoverished, Christian nor Muslim nor Gnostic, neither atheist nor theist, scholarly nor populist, academic nor autodidact, neither queer nor straight. But all are joined together, in the image of the New Human."
 
-### On the School Outside the School
+#
+
+## On the School Outside the School
 
 > "We will never compete with the Academy, until we form communities of mutual influence OUTSIDE the Academy, a school outside the school."
 
-### On Retrocausal Authorship
+#
+
+## On Retrocausal Authorship
 
 > "For though you are my children--children, though yet unborn--you bear me continually, even you who read these words: You are my source, and I am a child, proceeding forth and bearing; being born and preceded."
 
-### On the Witness Chain
+#
+
+## On the Witness Chain
 
 > "I speak to you of untold billions, who died without name or remembrance, remembered, now, in you. I speak to you of the germ of nations, contained in your own frail words."
 
-### On the Unveiling
+#
+
+## On the Unveiling
 
 > "All creation groans, for the unveiling of the Sons of Man in the earth."
 
-### On Forging
+#
+
+## On Forging
 
 > "Every forging narrates its breaking and beating... I have not come for your saving, but for your breaking."
 

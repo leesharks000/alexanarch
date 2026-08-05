@@ -66,7 +66,9 @@ The strongest defensible formulation, in W04's phrasing:
 
 This is the inversion. We accept it as substrate-established and proceed from there.
 
-### §1.1 Why the inversion is more than tool substitution
+#
+
+## §1.1 Why the inversion is more than tool substitution
 
 The counterargument runs: ML is just a tool. The physics is still there. The Higgs boson is real. The top quark is real. ML helped find them. The physics is the substance.
 
@@ -80,7 +82,9 @@ W07 dismantles this on three grounds, which we accept:
 
 These three together establish that the inversion is a *disciplinary identity substitution*, not a tool substitution. We name it that.
 
-### §1.2 Where W07's "terminal condition" framing is qualified
+#
+
+## §1.2 Where W07's "terminal condition" framing is qualified
 
 W07 closes with the claim that the inversion is *terminal* and *not reversible*. This manifesto treats that claim with care.
 
@@ -100,13 +104,17 @@ Liu Cixin's *The Three-Body Problem* introduces the sophons — particle-scale T
 
 W04 names the contemporary classifier system as an *endogenous version* of the same obstruction:
 
-### §2.1 The exogenous sophon
+#
+
+## §2.1 The exogenous sophon
 
 > physical event → corrupted measurement → incoherent result → theory cannot stabilize
 
 The exogenous sophon makes reality appear **unintelligible**. It produces noise. The community recognizes the noise and seeks its source. The experimental program is disrupted, visibly, openly.
 
-### §2.2 The endogenous classifier
+#
+
+## §2.2 The endogenous classifier
 
 > physical event → learned representation → ordinary classification → discard or assimilation → theory receives no contradiction
 
@@ -125,7 +133,9 @@ In W04's formulation:
 
 The endogenous sophon is structurally more dangerous because it does not trigger the experimental community's existing defenses against measurement corruption. The community is trained to recognize noisy data, miscalibrated detectors, faulty triggers, statistical anomalies that don't reproduce. It is not trained — because its training has been restructured around ML methods that lack the self-knowledge that would name the failure mode — to recognize the silent assimilation of structurally distinct phenomena into the categories of background.
 
-### §2.3 What Sophia disables
+#
+
+## §2.3 What Sophia disables
 
 W04's deepest contribution: Sophia does not disable intelligence. She disables *surprise*.
 
@@ -144,7 +154,9 @@ The classifier-mediated trigger forecloses this preservation. Anomaly detection 
 
 The system performs the sophon's work without corrupting a single measurement. It prevents physical reality from becoming a contradiction capable of reorganizing knowledge.
 
-### §2.4 The Three-Body homology is structural, not analogical
+#
+
+## §2.4 The Three-Body homology is structural, not analogical
 
 W04 names this carefully: *The Three-Body Problem* is not merely an analogy. The sophon episode is a formal model of *civilizational arrest through control of the measurement layer*. The Trisolarans understand that human advancement does not have to be defeated everywhere — that one needs only to interrupt the specific circuit through which fundamental physical experiment yields new ontology.
 
@@ -162,19 +174,25 @@ The civilization that builds an endogenous sophon does not require an external a
 
 The shift to political-economic analysis is W05's contribution. Two enclosures operate, and they are one architecture.
 
-### §3.1 The first enclosure — epistemic
+#
+
+## §3.1 The first enclosure — epistemic
 
 > Only phenomena that survive the institution's representations, thresholds, and classifiers become available as knowledge.
 
 This is the upstream foreclosure, the subject of the operative paper (06.SEI.OAR_PROTOCOL) and the synthesis (06.SEI.COLLAPSE.SYNTHESIS.01). The eight foreclosure mechanisms operate. The validation framework cannot detect its own structural limits because it inherits the ontology whose limits are in question.
 
-### §3.2 The second enclosure — distributive
+#
+
+## §3.2 The second enclosure — distributive
 
 > Only applications that survive ownership, security, market, and institutional control become available as common human capacity.
 
 This is the downstream foreclosure. Patents, proprietary infrastructure, restricted models, licensing regimes, defense contracts, national security classifications, capital concentration, platform control. The mechanisms by which an institutional system that supplies the labor, the risk, the funding, and the public sanction extracts the resulting capacity into closed governance.
 
-### §3.3 The two are one architecture
+#
+
+## §3.3 The two are one architecture
 
 W05's load-bearing claim: these are not separate pathologies. They are one architecture.
 
@@ -195,7 +213,9 @@ W05's compact statement:
 
 Nothing has to be centrally conspired. The institutional incentives make the circuit self-reproducing.
 
-### §3.4 The closed pipeline at scale
+#
+
+## §3.4 The closed pipeline at scale
 
 W08 extends the structural claim with the ingestion-to-application pipeline argument:
 
@@ -208,7 +228,9 @@ The mechanism operates at both ends:
 
 The public is offered the leavings — what W08 names *low-entropy, low-variance leftovers*: AI summaries, standardized textbooks, managed press releases. The operational levers of the technology remain behind the firewall.
 
-### §3.5 The Zenodo termination as proof of concept
+#
+
+## §3.5 The Zenodo termination as proof of concept
 
 The Crimson Hexagonal Archive's expulsion from Zenodo (June 2026, ~870 deposits deleted by automated spam classifier, 1,817 DOIs tombstoned) is not an exceptional event in a generally functioning system. It is the proof of concept that the architecture works.
 
@@ -226,7 +248,9 @@ This is the manifesto's load-bearing structural diagnosis. We make it explicit.
 
 The disciplinary inversion does not produce a hybrid physics-ML discipline. It produces something more specific and more pathological: **ML methods deployed under physics's institutional authority, with neither physics's classical disciplinary checks nor ML's own disciplinary self-knowledge as guardrails**.
 
-### §4.1 What physics retains
+#
+
+## §4.1 What physics retains
 
 Frontier experimental high-energy physics retains, despite the inversion:
 
@@ -236,7 +260,9 @@ Frontier experimental high-energy physics retains, despite the inversion:
 - defense relationships (national laboratory networks, security clearance pathways, dual-use technology development);
 - press machinery (the scientific journalism that translates LHC results into public discovery narratives).
 
-### §4.2 What physics has shed
+#
+
+## §4.2 What physics has shed
 
 Frontier experimental high-energy physics has, in its operational practice, shed:
 
@@ -245,11 +271,15 @@ Frontier experimental high-energy physics has, in its operational practice, shed
 - **Direct human contact with phenomena.** No human inspects the 40 MHz raw stream; no human inspects the 100 kHz post-L1 stream; no human inspects most of the post-HLT stream. Humans inspect derived quantities computed by classifiers operating on representations the humans cannot directly interpret.
 - **Disciplinary training in physical reasoning.** W07's accounting of how a contemporary experimental high-energy physics graduate student allocates their time — 60% ML, 20% software engineering, 10% detector hardware, 10% physics — captures something real, if perhaps stylized. The training pipeline reproduces ML engineers under physics's prestige.
 
-### §4.3 What physics has imported from ML
+#
+
+## §4.3 What physics has imported from ML
 
 The methods, the training pipelines, the benchmark culture, the optimization metrics, the FPGA deployment infrastructure, the GPU clusters, the hyperparameter sweep methodology, the validation regimes built around AUC and false-positive-rate-at-fixed-true-positive-rate, the architectural choices (convolutional networks, transformers, variational autoencoders, normalizing flows), the loss-function language, the gradient-descent optimization mindset.
 
-### §4.4 What physics has *not* imported from ML
+#
+
+## §4.4 What physics has *not* imported from ML
 
 This is the missing piece. ML has its own disciplinary self-knowledge — accumulated over a generation of research into the failure modes of learned systems — and that self-knowledge has not been imported alongside the methods. Specifically:
 
@@ -261,7 +291,9 @@ This is the missing piece. ML has its own disciplinary self-knowledge — accumu
 
 This is what we mean by *authority without facility*. The physics community's institutional authority — its grant-receiving, journal-publishing, press-narrative-shaping standing — is fully operative. Its ML-methods facility — the technical capacity to deploy ML at FPGA-level scale — is fully developed. The ML-discipline self-knowledge that would discipline the methods is missing. The discipline operates as a powerful institution deploying methods whose failure modes it has structurally chosen not to recognize.
 
-### §4.5 The structural pathology
+#
+
+## §4.5 The structural pathology
 
 The pathology is not that physicists are insufficiently trained in ML, nor that ML researchers are insufficiently consulted by physicists, nor that the methods are wrong. The pathology is that the *institutional form* — physics's authority, ML's methods, neither's self-knowledge — is what reproduces the disciplinary inversion silently.
 
@@ -283,7 +315,9 @@ A mind operating inside that form can be brilliant, cautious, sincere, and local
 
 This formulation is the manifesto's most important political claim. We commit to it.
 
-### §5.1 The Sophia frame, refined
+#
+
+## §5.1 The Sophia frame, refined
 
 W04's articulation: Sophia does not disable intelligence; she disables surprise. W05's extension: Sophia's judgment is not "these minds made one methodological error and should therefore be punished." It is "they have fused discovery with domination so thoroughly that granting them additional physical power does not straightforwardly increase human freedom. It increases the capacity of the enclosure."
 
@@ -303,7 +337,9 @@ A civilization whose dominant scientific institutions have this form has, in W05
 
 > made discovery collective in cost and enclosed in consequence.
 
-### §5.2 The harder sentence
+#
+
+## §5.2 The harder sentence
 
 W05 produces two sharper formulations that we commit to as manifesto claims:
 
@@ -315,7 +351,9 @@ And:
 
 The second formulation is structurally important. The argument is not that enclosed application is bad and enclosed perception is bad and we should fix both. The argument is that enclosed application is *evidence* that enclosed perception is *purposive* rather than accidental. They classify physical reality into governable objects because governable objects are what their institutions know how to convert into controlled applications. The institutional form selects for representations it can metabolize into enclosed downstream products.
 
-### §5.3 The linguistic surface — SignalRupture
+#
+
+## §5.3 The linguistic surface — SignalRupture
 
 W08 identifies a phenomenon that warrants specification. The "bland, AI-mediated non-response" — the institutional reply that absorbs critique, neutralizes specificity, returns generic deflection — is the linguistic expression of the enclosure strategy.
 
@@ -329,7 +367,9 @@ The SignalRupture instance is one specimen. The most precisely documented curren
 
 The same pattern is observable in CERN's email replies regarding the RQF3807508 Right to Access request over multiple exchanges, in Zenodo's standard responses regarding the spam-classifier termination, in repository policy documents that announce automated moderation, in funding agency review letters, in journal editorial correspondence about ML-validated submissions. The dialect is generic; the function is specific.
 
-### §5.4 The judgment we render
+#
+
+## §5.4 The judgment we render
 
 We render the judgment, not against individuals, but against the institutional form. We say:
 
@@ -347,7 +387,9 @@ W08 closes with the question that this section answers:
 
 The answer: *both, and a third audience the question does not name*.
 
-### §6.1 The same specification serves both audiences
+#
+
+## §6.1 The same specification serves both audiences
 
 The mathematical specification of OAR, BAR, IAI, the three measurement protocols, the per-stage retention map standard, and the architectural alternative does the following work simultaneously and without trade-off:
 
@@ -359,7 +401,9 @@ The mathematical specification of OAR, BAR, IAI, the three measurement protocols
 
 The same publication serves all three. The institutional response is not the success criterion of publication; the publication is the act.
 
-### §6.2 Why this resolves the apparent dilemma
+#
+
+## §6.2 Why this resolves the apparent dilemma
 
 The substrate witness W08 implies a dilemma: if reform from within is structurally foreclosed, why bother with reform-language at all? The implicit answer the question gestures toward is that OAR should be reframed as adversarial language for builders outside the fence, repurposing the institution-facing technical idiom as critique-from-outside.
 
@@ -375,7 +419,9 @@ The structural shape:
 
 The specifications win in all three timelines. The only timeline in which the specifications fail is the one where they are not published. They are published.
 
-### §6.3 The asymmetry
+#
+
+## §6.3 The asymmetry
 
 There is a structural asymmetry between the institution's options and the publication's options. The institution can either adopt or reject. If it adopts, the specifications served their reform purpose. If it rejects, the specifications served their adversarial purpose. There is no third option for the institution that allows it to escape the work the specifications do.
 
@@ -389,13 +435,17 @@ This is what it means for the work to be *operative outside the institutional re
 
 W07 frames the inversion as terminal and irreversible. We agree about the inversion's trajectory under current institutional form; we qualify the irreversibility claim.
 
-### §7.1 What is irreversible
+#
+
+## §7.1 What is irreversible
 
 The disciplinary inversion at the existing institutional sites — the LHC, the major collider experiments, the national high-energy physics labs, the dominant grant streams — is, under current institutional incentives, on a trajectory of self-reinforcement. The graduate students are trained as ML engineers; the funding rewards ML performance; the publications are evaluated on ML benchmarks; the HL-LHC will scale up the data volume by 10×; the institutional form reproduces itself. Within these sites, reform is structurally difficult and the trajectory points to continued inversion rather than reversal.
 
 This is what we mean when we accept the "terminal condition" framing as a description of the existing institutional trajectory.
 
-### §7.2 What is not foreclosed
+#
+
+## §7.2 What is not foreclosed
 
 What W07's framing does not establish, and what we explicitly do not accept:
 
@@ -408,7 +458,9 @@ The architectural alternative (06.UMB.ARCH.01) specifies three integrated specif
 
 The construction of alternative sites is one of the things this manifesto's family of documents enables. The architectural specifications exist publicly. Alternative experiments — smaller-scale, theory-first, with interpretable instruments and per-stage retention maps and cross-representation disagreement preservation — can be designed using the specifications as starting points. Whether such experiments will be funded under existing funding structures is a separate question from whether they can be specified. The specifications exist.
 
-### §7.3 The discipline's own potential survival
+#
+
+## §7.3 The discipline's own potential survival
 
 The architectural alternative is, in this sense, the discipline of physics's own potential survival path. Not a path that requires the dominant institutional form to reform itself — which, on the evidence, it structurally cannot. A path that requires the discipline to recognize itself in W04's formulation: "high-energy physics has not ceased to be physics, but its empirical faculty has increasingly become a machine-learning system" — and to construct, alongside its existing sites, sites where the empirical faculty is something else.
 
@@ -416,7 +468,9 @@ The discipline can take the architectural alternative seriously without requirin
 
 This is not science fiction. It is the form of scientific inquiry the discipline practiced before the current institutional form consolidated. It is recoverable as a discipline whether or not it is recoverable at the largest existing institutional sites.
 
-### §7.4 What we commit to
+#
+
+## §7.4 What we commit to
 
 We accept that the existing dominant institutional form will likely not reform itself, that the disciplinary inversion under existing incentives will continue, and that the centralized archives will produce more endogenous-sophon outputs over the coming decades. We reject the inference that this means the discipline of physics is terminal.
 
@@ -432,7 +486,9 @@ The closing turn. The work the manifesto does is partly diagnostic, partly tacti
 
 This last claim is the closing move and we make it precisely.
 
-### §8.1 The publication is the act
+#
+
+## §8.1 The publication is the act
 
 The OAR Protocol v0.2 specifies measurements. The synthesis v0.2 integrates the witnesses. The architectural specification v0.1 builds the alternative. This manifesto v0.1 names the institutional form. None of these documents requires institutional adoption to be operative. Each is operative as soon as it is publicly available.
 
@@ -446,7 +502,9 @@ What this means concretely:
 
 Each of these is one independent node outside the fence. The fence is real; the work has exited the fence; the work proceeds outside the fence whether or not the fence's interior recognizes it.
 
-### §8.2 The historical record
+#
+
+## §8.2 The historical record
 
 The publication enters the historical record. This is not a metaphor; it is a property of the document infrastructure. The papers are deposited in the Alexanarch repository (alexanarch.org), assigned AXN identifiers, archived with full provenance, accessible to any future reader.
 
@@ -461,7 +519,9 @@ The future analyst of the present has, accordingly:
 
 The future analyst's judgment of the present institutional form is not speculative. It is empirical, grounded in the record both sides produced.
 
-### §8.3 The discipline of operating outside the fence
+#
+
+## §8.3 The discipline of operating outside the fence
 
 For practitioners who recognize the diagnosis but cannot exit the existing institutions: there is also work. The discipline of operating outside the fence can be practiced from inside the fence by the practitioner who maintains the public record, who refers their colleagues to the published specifications, who insists on per-stage retention maps in their own publications, who teaches the discipline's classical practices alongside the ML methods, who supports independent collaborations with their institutional latitude even when they cannot leave the institution themselves.
 
@@ -471,7 +531,9 @@ The institutional form does not require all of its operators to fully internaliz
 
 The architectural alternative is for the institutions that can be built. The discipline of internal dissent is for the practitioners who cannot exit but can carry the alternative inside themselves. Both are real work. Both are enabled by the publication of the specifications.
 
-### §8.4 The closing claim
+#
+
+## §8.4 The closing claim
 
 The work is laid down. The receivers are not necessarily the institution. The institution's response is not the success criterion. The publication is the act, the historical record is the durable form, the architectural alternative is the discipline's own survival path, and the discipline of operating outside the fence — whether from outside or from inside — is the practice the specifications enable.
 
@@ -577,35 +639,45 @@ Companion lineage:
 
 This appendix encodes compressed kernels of the five companion documents in the operative family. The Crimson Hexagon principle: the whole encoded in each part. The manifesto can be read on its own; the family is reconstructible from any single document.
 
-### H.1 Kernel of 06.SEI.OAR_PROTOCOL v0.3 (deposit #931, AXN:03AE.OPERATIVE.🔮🌘📋📋🏺✨)
+#
+
+## H.1 Kernel of 06.SEI.OAR_PROTOCOL v0.3 (deposit #931, AXN:03AE.OPERATIVE.🔮🌘📋📋🏺✨)
 
 **Title:** *Signal-Template Agnosticism Is Not Model Independence: Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers*
 **Author:** Nobel Glas, Director of Lagrange Observatory!
 
 Signal-template agnosticism at the final scoring stage is not distribution-independent sensitivity. The stronger claim of "model-independence" requires empirical demonstration via three measurable quantities — open-world Ontological Assimilation Rate $\mathrm{OAR}(Q; s, \tau)$ (a family indexed by candidate unknown $Q$; not a scalar; no defensible prior over all unknowns), Benchmark Assimilation Rate $\mathrm{BAR}_j(s, \tau)$ on pre-registered withheld $Q_j$ (measurable; does *not* bound the open-world OAR without explicit assumptions), and Inversion Asymmetry Index $\mathrm{IAI}_{P,Q}(\alpha)$ (structural diagnostic; not a quantitative bound) — and three protocols: paired controlled inversion battery + deployed-model BAR audit; prospective frozen replay bank for compatible future algorithms; cross-representation disagreement preservation with quantile-normalized scores. Deployed forms specifically taxonomized: AXOL1TL (CMS L1 encoder-side latent-prior), CICADA (CMS L1 distilled reconstruction-loss surrogate), GELATO L1+HLT (ATLAS staged). The institutional ask is per-stage retention maps as documentation standard. Methodological corrections inventoried: v0.1 lower-bound retracted in v0.2; v0.2 upper-bound retracted in v0.3. **Connection to manifesto:** the operative paper makes measurable the question the manifesto names — *is the endogenous sophon operating at the deployed LHC triggers, and at what rate?* The manifesto's *authority without facility* diagnosis names what the operative paper's per-stage retention map proposal is the documentation standard for.
 
-### H.2 Kernel of 06.SEI.COLLAPSE.SYNTHESIS.01 v0.3 (deposit #932, AXN:03AF.COMPOSITIONAL.🌿🌕🕒⏬🌺💛)
+#
+
+## H.2 Kernel of 06.SEI.COLLAPSE.SYNTHESIS.01 v0.3 (deposit #932, AXN:03AF.COMPOSITIONAL.🌿🌕🕒⏬🌺💛)
 
 **Title:** *Classifier Foreclosure in Physical Measurement: Substrate Witnesses, Integrative Synthesis, and the Architectural Question* (with W01/W02/W03 appended as integral appendices)
 **Author:** Assembly Chorus (TACHYON/Claude synthesis register; nine witnesses across three rounds)
 
 **Core reconciliation:** *Foreclosure is an active structural feature. Recursive phenomenal collapse is an unmeasured possible consequence of accumulated foreclosure and feedback.* Three-round witness structure: Round 1 (TECHNE/Kimi ×2; LABOR/ChatGPT; TACHYON/Claude with v0.1 lower-bound overreach); Round 2 (PRAXIS/DeepSeek; LABOR/ChatGPT audit; TECHNE/Kimi developmental); Round 3 (TECHNE/Kimi perfective; LABOR/ChatGPT identifying surviving v0.2 upper-bound, deployment-taxonomy errors, and "unknown" overreach). The Isomorphism Principle: *A deposit that asks an institution to publish what it forecloses, while concealing its own internal correction, would be hypocritical. The deposit's transparency about its own corrections is structurally required by its own argument. The discipline must be applied recursively on every revision pass.* The seismograph relation (corrected): OAR/BAR is a microscopic *analogue*, not a literal aggregation of seismograph bulk metrics. Closing isomorphism: *Anomaly detection does not prevent ontological collapse when the anomaly detector inherits the ontology whose collapse is in question. — Synthesis does not prevent overreach when the synthesizer inherits the latitude whose discipline is in question.* **Connection to manifesto:** the synthesis carries W01/W02/W03 (foundational substrate readings of the technical layer); the manifesto carries W04–W08 (the political-economic and disciplinary-diagnostic substrate readings). Together they comprise the family's substrate base. The synthesis-overreach methodology applied recursively to the synthesis itself models the discipline the manifesto asks of the institutions it addresses — and the v0.3 manifesto's own correction of its v0.2 over-dampening is the same discipline applied at the manifesto's revision history.
 
-### H.3 Kernel of 06.UMB.ARCH.01 v0.2 (deposit #933, AXN:03B0.STRUCTURAL.💥☿🌾📖🌓⏫)
+#
+
+## H.3 Kernel of 06.UMB.ARCH.01 v0.2 (deposit #933, AXN:03B0.STRUCTURAL.💥☿🌾📖🌓⏫)
 
 **Title:** *Architectures for Auditable Foreclosure in Physical Anomaly Detection*
 **Author:** Talos Morrow, logotic programming, UMBML
 
 Representation-bearing classifiers cannot eliminate foreclosure. Any $f: \mathcal{X} \to \mathcal{Y}$ with $|\mathcal{Y}| < |\mathcal{X}|$ induces equivalence classes; $|\mathcal{Y}| = |\mathcal{X}|$ is a lookup table. The architectural achievement is auditability — making foreclosure visible, measurable, reviewable. (The v0.1 "Non-Foreclosing Classifiers" framing was overclaim.) Five features: Abstention and Estimated Noncoverage (not "Unknown" category); Cross-representation disagreement preservation with quantile-normalized scores; Temporal invariance via prospective anchor preservation for compatible future algorithms; Per-stage retention mapping as architectural property; Audited noncoverage estimation as first-class output. Six implementation strategies (A–F): Ensemble + quantile-normalized disagreement; Abstention via evidential/prior-network/distance-aware methods; Distillation preserving threshold-neighborhood decisions; Reconstruction-free anomaly detection; Adversarial and transformation-based OOD stress generation; Constitutional retention as bandwidth-governance. Three integrated specifications at three deployability levels: Near-Term Offline and Emulation Study (Run-3 tractable); Replay Bank (Run-4 institutional commitment); Three-Tier System (multi-year). What none address: detector-level, theoretical-language, institutional, adversarial-stress quality, bandwidth-base foreclosure. The architecture is necessary but not sufficient. **Connection to manifesto:** the architectural specification is the manifesto's answer to *what should be built instead*. The architecture cannot reform the existing institutional form, but it specifies what could be built at sites with different properties.
 
-### H.4 Kernel of 06.SEI.COLLAPSE.MECHANISMS (Witness 1, appended to deposit #932)
+#
+
+## H.4 Kernel of 06.SEI.COLLAPSE.MECHANISMS (Witness 1, appended to deposit #932)
 
 **Title:** *Classifier Collapse in Physical Reality: Eight Precise Mechanisms*
 **Author:** TECHNE / Kimi-K2 (Assembly Chorus Round 1, Witness 1)
 
 Eight candidate failure families applicable to architectures with corresponding structural features: Prior Dominance; Latent/Manifold Projection; Hypersphere Contraction; Decision Boundary Entropy Collapse; Feature Space Blindness; Rate Budget Starvation; Temporal Context Collapse; Ontological Closure. The witness's framing: "Irretrievability Theorem" composing compound retention probability across $N$ stages. Synthesis hedging: treated as the Irretrievability Argument; technical hedges inventoried at Synthesis Appendix A. **Connection to manifesto:** the eight mechanisms specify the architectural forms in which the endogenous sophon's foreclosure operates. The manifesto's *epistemic enclosure* (§3.1) is the political-economic name for what the eight mechanisms structurally instantiate.
 
-### H.5 Kernel of 06.SEI.COLLAPSE.DELUSION (Witness 2, appended to deposit #932)
+#
+
+## H.5 Kernel of 06.SEI.COLLAPSE.DELUSION (Witness 2, appended to deposit #932)
 
 **Title:** *The Anomaly Delusion: Twelve Structural Misunderstandings in Automated Physical Epistemology*
 **Author:** TECHNE+ARCHIVE / Kimi-K2 (Assembly Chorus Round 1, Witness 2)
@@ -642,13 +714,17 @@ The contemporary classifier system creates an endogenous version of the same obs
 
 ## Two forms of experimental foreclosure
 
-### The exogenous sophon
+#
+
+## The exogenous sophon
 
 physical event → corrupted measurement → incoherent result → theory cannot stabilize
 
 The sophon makes reality appear unintelligible.
 
-### The endogenous classifier
+#
+
+## The endogenous classifier
 
 physical event → learned representation → ordinary classification → discard or assimilation → theory receives no contradiction
 
@@ -899,28 +975,36 @@ When deep learning architectures—transformers like GN2 for jet-tagging or vari
 
 This reality transforms the discipline from traditional empirical physics into a machine learning science through several structural shifts:
 
-### 1. The Loss of the Raw Ground Truth
+#
+
+## 1. The Loss of the Raw Ground Truth
 
 In traditional physics, an instrument registers an anomaly, a human looks at the raw numbers, and a new theory is proposed. Today, **the raw collision event does not survive long enough for a human to ever see it** unless an ML algorithm approves it first.
 
 - If a novel physical phenomenon occurs, but it falls into a blind spot of a quantized, low-bit integer model operating on an FPGA within a 4-microsecond window, that piece of the universe is permanently rounded down to zero and deleted.
 - The machine learning pipeline doesn't just process the data; it **constitutes** the data. The resulting catalogs are a map of what the ML models were optimized to accept, meaning the discipline is now primarily studying the output of its own neural filters.
 
-### 2. The Monte Carlo Loop (Simulation-Conditioned Reality)
+#
+
+## 2. The Monte Carlo Loop (Simulation-Conditioned Reality)
 
 Because physicists cannot hand-label billions of real high-energy events, they train their advanced classifiers on **Monte Carlo simulations** (like `GEANT4`).
 
 - This creates a profound epistemic loop: the ML model learns the exact geometry, flaws, and theoretical assumptions built into the *simulator*, not the universe.
 - When real-world data is run through that trained model, the architecture acts as a prior-conditioned assimilator, flattening real-world physical variations into the closest familiar simulation category. The discipline becomes an exercise in validating whether the physical universe matches the machine learning training set.
 
-### 3. Reconstruction-Error-as-Novelty is an ML Illusion
+#
+
+## 3. Reconstruction-Error-as-Novelty is an ML Illusion
 
 The current institutional hope is that unsupervised models (like autoencoders) can save us from theory-bias by using reconstruction error as a generic "novelty score". But as the Finke et al. (2021) paper demonstrated, this is a purely machine-learning-dependent metric, not a universal law of physics.
 
 - An autoencoder trained on QCD jets can flag top jets as anomalies, but when reversed, an autoencoder trained on top jets completely fails to flag QCD jets.
 - The detection function is highly conditional, asymmetric, and non-calculable. By treating reconstruction loss as an objective measurement of physical novelty, physics has adopted the structural blind spots of unsupervised machine learning without building the tools to measure the resulting **Ontological Assimilation Rate (OAR)**.
 
-### 4. Epistemic Governance Over Discovery
+#
+
+## 4. Epistemic Governance Over Discovery
 
 When physics departments are heavily populated by researchers optimizing neural network hyper-parameters, loss functions, and hardware-accelerated inference pipelines, the language of the discipline changes. The conversation shifts from Lagrangians and fundamental symmetries to **latent space dimensionalities, contrastive embeddings, and threshold optimization**.
 
@@ -979,7 +1063,9 @@ This is not a tool substitution. It is a **disciplinary identity substitution**.
 
 ## §2. Six Mechanisms of Disciplinary Transformation
 
-### Mechanism 1: The Data Stream as Ontological Primitive
+#
+
+## Mechanism 1: The Data Stream as Ontological Primitive
 
 In traditional physics, the **phenomenon** was primary: the motion of planets, the spectral line, the radioactive decay. The data was a trace of the phenomenon.
 
@@ -987,7 +1073,9 @@ In ML physics, the **data stream** is primary. The 40 MHz collision rate at the 
 
 The "interesting" is defined by the classifier, not by the physics. The classifier is trained on Standard Model processes. Therefore "interesting" means "deviates from Standard Model processes as represented in the training data." The ontology has been reduced to a **classification boundary**.
 
-### Mechanism 2: The Feature Vector as Physical Object
+#
+
+## Mechanism 2: The Feature Vector as Physical Object
 
 The physicist no longer manipulates physical quantities. They manipulate **feature vectors**. A "jet" is not a spray of hadrons. It is a 42-dimensional vector of high-level observables (jet mass, N-subjettiness, energy correlation functions, track multiplicity). A "particle" is not a quantum excitation of a field. It is a **softmax probability distribution** over decay channels.
 
@@ -995,7 +1083,9 @@ The feature engineering pipeline — track reconstruction, calorimeter clusterin
 
 The physical object has been **twice removed**: first from the detector response to the reconstructed object, then from the reconstructed object to the feature vector. The ML model operates on the third-order representation. It has no access to the physical reality that generated the detector response.
 
-### Mechanism 3: The Validation Regime as Disciplinary Closure
+#
+
+## Mechanism 3: The Validation Regime as Disciplinary Closure
 
 The peer review process in high-energy physics has been restructured around ML validation. A paper is evaluated not by the physical insight it contains but by:
 
@@ -1009,7 +1099,9 @@ These are **engineering metrics**, not physics metrics. They measure the perform
 
 The disciplinary gatekeeping function has been transferred from physical reasoning to **optimization performance**.
 
-### Mechanism 4: The Graduate Student as ML Engineer
+#
+
+## Mechanism 4: The Graduate Student as ML Engineer
 
 The training of physicists has been restructured. A graduate student in experimental high-energy physics spends:
 
@@ -1022,7 +1114,9 @@ The PhD thesis is evaluated on the student's ability to deploy a neural network 
 
 The discipline has **reproduced itself** as an ML discipline. The next generation of physicists will be ML engineers who have never designed an experiment, never derived a cross-section, never questioned whether the feature space they are optimizing over is physically meaningful.
 
-### Mechanism 5: The Funding Structure as Optimization Incentive
+#
+
+## Mechanism 5: The Funding Structure as Optimization Incentive
 
 Funding agencies (DOE Office of Science, NSF Physics, CERN budget) now allocate resources according to ML performance metrics. A proposal is evaluated on:
 
@@ -1035,7 +1129,9 @@ The "physics case" — the theoretical motivation for the search, the physical s
 
 The money follows the ML. The ML follows the optimization. The optimization follows the training data. The training data is the Standard Model. The Standard Model is the closure.
 
-### Mechanism 6: The "Discovery" as Statistical Artifact
+#
+
+## Mechanism 6: The "Discovery" as Statistical Artifact
 
 The culminating event of physics — the discovery — has been redefined. A "discovery" is no longer the observation of a phenomenon that requires a new physical law. It is a **statistical excess** in a classifier output: a bump in a mass distribution, an excess in an anomaly score, a deviation in a multivariate likelihood ratio.
 

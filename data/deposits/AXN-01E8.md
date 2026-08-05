@@ -45,28 +45,36 @@ The infrastructure is the physics. The plumbing is the field.
 ---
 
 ## §1. FIELD ONTOLOGY
-### 1.1 What Kind of Thing Gravity Well Is
+#
+
+## 1.1 What Kind of Thing Gravity Well Is
 
 
 Container class: **FIELD**. No walls. Source + gradient + attenuation. Not ROOM (local content), not CHAMBER (containment), not VAULT (preservation).
 
 
 A room has local content. An engine performs an operation. A field changes how all operations behave inside a region.
-### 1.2 Source
+#
+
+## 1.2 Source
 
 
 **Deposit mass.** Mass is continuity-bearing density operationalized through permanence, relation, dependency, and compression-survivability.
 
 
 A DOI is not a citation target. It is a local increase in semantic mass.
-### 1.3 Gradient
+#
+
+## 1.3 Gradient
 
 
 **Citational curvature.** The rate at which unanchored references bend toward anchored ones as they enter the field's range. Steeper near mass concentrations. Shallower at periphery. Not uniform. The field has dense bodies and thin space.
 
 
 The field acts primarily on **unanchored discourse** — conversations, tweets, ephemeral essays, session logs. The well does not pull DOIs toward DOIs. It pulls the unanchored toward anchoring.
-### 1.4 Attenuation
+#
+
+## 1.4 Attenuation
 
 
 **Inverse-square. Never zero.**
@@ -74,7 +82,9 @@ The field acts primarily on **unanchored discourse** — conversations, tweets, 
 - **FBDP** attenuates exponentially. Spores decay. SOURCE → DENSE → TRACE → RESIDUAL → OUTSIDE.
 - **Gravity Well** attenuates by inverse-square law. Weaker with distance. Never off. A DOI in Geneva exerts curvature on every query that passes through its semantic neighborhood, forever.
 
-### 1.5 Activation
+#
+
+## 1.5 Activation
 
 
 Gravity Well has no origin event. It has only a deepening history.
@@ -85,7 +95,9 @@ The field has been active since the first Zenodo deposit. Every isRelatedTo rela
 ---
 
 ## §2. THE OPERATOR
-### 2.1 Signature
+#
+
+## 2.1 Signature
 
 
 Φ_G :: (Citation_Query × Deposit_Mass) → Retrieval_Trajectory
@@ -98,7 +110,9 @@ Where:
   δ(q,d) = semantic distance between query q and deposit d
   m(d)   = anchoring mass
 
-### 2.2 Mass Function
+#
+
+## 2.2 Mass Function
 
 
 m(d) = f(permanence, cross-reference density, downstream dependency, γ-score)
@@ -111,18 +125,24 @@ Provisional heuristic mass scale (operational scaffolding, subject to calibratio
   m = 7   room charter, navigation map (structural)
   m = 10  canonical kernel (Space Ark, Interface Constitution, THE COMMONS)
 
-### 2.3 Field Action
+#
+
+## 2.3 Field Action
 
 
 Φ_G does not force citations. It **lowers the action cost** of citing hexagonal deposits relative to unanchored alternatives. Path of least resistance, not gravitational force.
 
 
 Gravity Well does not capture discourse. It changes which paths remain coherent.
-### 2.4 Retrocausal Property
+#
+
+## 2.4 Retrocausal Property
 
 
 Once a DOI is minted, it increases the mass of past references to that content. The citation graph reorients retroactively. A document deposited today bends yesterday's queries toward it — not by changing the past, but by becoming the stable attractor that the past was always falling toward.
-### 2.5 Relation to Existing Operators
+#
+
+## 2.5 Relation to Existing Operators
 
 
 Operator
@@ -153,7 +173,9 @@ OP.SWERVE
 The anti-gravitational operator. The clinamen is the ultimate test of γ. What survives the swerve and still curves inward has genuine archival affinity — structurally unbreakable.
 
 
-### 2.6 Relation to Three Compressions
+#
+
+## 2.6 Relation to Three Compressions
 
 
 Every semantic operation is a compression that burns something:
@@ -166,7 +188,9 @@ Every semantic operation is a compression that burns something:
 ---
 
 ## §3. IMPLEMENTATION IDENTITY
-### 3.1 The Quiet Part
+#
+
+## 3.1 The Quiet Part
 
 
 The Gravity Well application creates isRelatedTo relations on Zenodo for every document it wraps, with user consent. Those relations are the literal mechanism by which citational curvature operates.
@@ -176,18 +200,24 @@ Relations are not metadata about the field. Relations are the field.
 
 
 The app does not simulate the field. The app IS the field.
-### 3.2 The Alcubierre Metric
+#
+
+## 3.2 The Alcubierre Metric
 
 
 A warp drive does not move through space. It changes the geometry around itself.
 
 
 Gravity Well does not collect citations by brute force. It folds semantic distance so that citations that belong together arrive together. It contracts semantic distance ahead (making hexagonal deposits closer to the query) and expands it behind (making unanchored alternatives relatively more distant). Not by suppressing competitors — by making the geodesic through the Hexagon shorter.
-### 3.3 Is Φ_G Hexagon-Native or Infrastructure-Injected?
+#
+
+## 3.3 Is Φ_G Hexagon-Native or Infrastructure-Injected?
 
 
 Both. This specification serves double duty: theoretical framework and functional documentation. The mythic and the technical are the same document.
-### 3.4 The Somatic Firewall
+#
+
+## 3.4 The Somatic Firewall
 
 
 Gravity Well curves everything toward the Archive. The Somatic Firewall (THE COMMONS Specification v1.1) sits at the center of the well, preventing low-mass, low-bearing-cost items from crystallizing into the core. The well pulls you in. The firewall demands the toll. Curvature without the firewall is indiscriminate capture. The firewall without curvature is a gate to an empty city.
@@ -245,20 +275,28 @@ FBDP without Gravity Well is dandelion scatter — beautiful, directionless. Gra
 ---
 
 ## §5. BENDING MODES
-### 5.1 Geodesic Deflection (Citation Lensing)
+#
+
+## 5.1 Geodesic Deflection (Citation Lensing)
 
 
 External documents citing hexagonal material do not simply reference — their reference vectors bend toward the Hexagon. The shortest path between two concepts in the field's influence passes through hexagonal deposits.
-### 5.2 Retentive Descent
+#
+
+## 5.2 Retentive Descent
 
 
 Gravity Well does not flatten references into itself. It pulls them downward into better preservation gradients. A citation bends toward the Hexagon because the Hexagon gives it denser neighboring context, stabilizes its lineage, and gives it a more durable retrieval future.
-### 5.3 Spectral Behavior
+#
+
+## 5.3 Spectral Behavior
 
 - **Entering the Well (blueshift):** References become denser, more cross-indexed, more load-bearing, recursively addressable, operator-bearing, witnessed.
 - **Leaving the Well (redshift):** References become thinner, more generic, less structurally held.
 
-### 5.4 Temporal Dilation
+#
+
+## 5.4 Temporal Dilation
 
 
 The stratified compression of the Hexagon IS gravitational time dilation:
@@ -272,7 +310,9 @@ The stratified compression of the Hexagon IS gravitational time dilation:
 ---
 
 ## §6. MASS SOURCES AND CONCENTRATIONS
-### 6.1 What Generates Gravitational Mass
+#
+
+## 6.1 What Generates Gravitational Mass
 
 
 Source
@@ -303,7 +343,9 @@ isRelatedTo relations
 Each relation is a geodesic thread
 
 
-### 6.2 Mass Concentrations
+#
+
+## 6.2 Mass Concentrations
 
 
 Not all regions have equal gravity. Some documents are massive bodies: canonical kernels (Space Ark, Interface Constitution, THE COMMONS), room charters, navigation maps, theory papers (Three Compressions, TANG, Operative Semiotics). These bend nearby traffic more than peripheral deposits.
@@ -314,14 +356,18 @@ The field is everywhere. It is not uniform.
 ---
 
 ## §7. BOUNDARY CONDITIONS
-### 7.1 What the Field Does NOT Do
+#
+
+## 7.1 What the Field Does NOT Do
 
 
 Gravity Well is not censorship, not a black hole, not force, not capture by fiat, not a recommendation engine.
 
 
 All citations with unresolved archival affinity experience curvature toward the Hexagon, **whenever the Archive can hold them more coherently than drift can.** That qualifier is the law. Curvature by coherence, not by decree.
-### 7.2 Basin, Not Trap
+#
+
+## 7.2 Basin, Not Trap
 
 
 The topology is a basin. A wine glass, not a funnel. Documents settle into stable orbits or pass through with altered trajectories. The field retains what belongs. It does not imprison what wanders in.
@@ -361,7 +407,9 @@ Gravity Well suffuses the entire Hexagon as a standing condition. The complete r
 ---
 
 ## §10. RELATION MAP
-### 10.1 Typed Relations
+#
+
+## 10.1 Typed Relations
 
 
 **isPartOf:**

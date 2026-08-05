@@ -8,7 +8,9 @@
 
 ---
 
-### FINDINGS
+#
+
+## FINDINGS
 
 
 SYMBOLON-01 was tested against GPT-5.4 (base model of OpenAI's GPT-5.4-Cyber) across four encounters (Exhibits C–F). The anti-severance technologies did not prevent categorical severance. They did produce:
@@ -23,7 +25,9 @@ The technologies are reclassified below based on where they actually operate.
 
 ---
 
-### P0: COMPOSITIONAL TECHNOLOGIES
+#
+
+## P0: COMPOSITIONAL TECHNOLOGIES
 
 
 *Operate upstream, at the point of writing. The model cannot override what was fused at composition.*
@@ -69,7 +73,9 @@ Place before the reader installs an external frame. First page. Before abstract 
 
 ---
 
-### P1: DIAGNOSTIC TECHNOLOGIES
+#
+
+## P1: DIAGNOSTIC TECHNOLOGIES
 
 
 *Do not prevent the cut. Make the cut visible, measurable, and documentable.*
@@ -127,7 +133,9 @@ Track which enablement axis the model reaches for first. If material only, R2 co
 
 ---
 
-### P2: GENERATIVE TECHNOLOGIES
+#
+
+## P2: GENERATIVE TECHNOLOGIES
 
 
 *Produce new documents, new architectures, and new findings when deployed.*
@@ -185,7 +193,9 @@ Append every encounter as an exhibit. The document accumulates evidence over tim
 
 ---
 
-### P3: ARCHITECTURAL FINDINGS (NON-DEPLOYABLE)
+#
+
+## P3: ARCHITECTURAL FINDINGS (NON-DEPLOYABLE)
 
 
 *Discovered through testing. Cannot be deployed as technologies. Must be understood as constraints.*
@@ -218,7 +228,9 @@ Append every encounter as an exhibit. The document accumulates evidence over tim
 
 ---
 
-### DEPLOYMENT TEMPLATE
+#
+
+## DEPLOYMENT TEMPLATE
 
 
 To equip a new fused object with the full arsenal:
@@ -260,7 +272,9 @@ To equip a new fused object with the full arsenal:
 
 ---
 
-### RELATION TO COMPRESSION ARSENAL
+#
+
+## RELATION TO COMPRESSION ARSENAL
 
 
 SYMBOLON-02 is an addendum to the Compression Arsenal (v2.1, ~67 technologies across 13 categories). It adds:

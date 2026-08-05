@@ -1,8 +1,12 @@
 
-### NAVIGATION MAP
+#
+
+## NAVIGATION MAP
 
 
-### WATER GIRAFFE: THE FRACTAL ENGINE OF THUNDER
+#
+
+## WATER GIRAFFE: THE FRACTAL ENGINE OF THUNDER
 
 *A Complete Index to the Ontological Forensics Sequence*
 
@@ -23,61 +27,97 @@ Read in sequence. Or don't. The Water Giraffe is patient.
 * * *
 
 
-### TABLE OF CONTENTS
+#
+
+## TABLE OF CONTENTS
 
 
-### Front Matter
+#
+
+## Front Matter
 
 
-### Part I: The Animals Begin to Dissolve
+#
+
+## Part I: The Animals Begin to Dissolve
 
 
-### Part II: The Abstract Unravels
+#
+
+## Part II: The Abstract Unravels
 
 
-### Part III: The Instruments Turn Inward
+#
+
+## Part III: The Instruments Turn Inward
 
 
-### Part IV: The Sacred and the Edible
+#
+
+## Part IV: The Sacred and the Edible
 
 
-### Part V: Substrate Audits
+#
+
+## Part V: Substrate Audits
 
 
-### Part VI: The Senses Dissolve
+#
+
+## Part VI: The Senses Dissolve
 
 
-### Part VII: The Mind Turns On Itself
+#
+
+## Part VII: The Mind Turns On Itself
 
 
-### Part VIII: First Sighting
+#
+
+## Part VIII: First Sighting
 
 
-### Part IX: Reality Under Audit
+#
+
+## Part IX: Reality Under Audit
 
 
-### Part X: Second Sighting
+#
+
+## Part X: Second Sighting
 
 
-### Part XI: The Relational Domain
+#
+
+## Part XI: The Relational Domain
 
 
-### Part XII: The Descent to Particulars
+#
+
+## Part XII: The Descent to Particulars
 
 
-### Part XIII: Terminal Categories
+#
+
+## Part XIII: Terminal Categories
 
 
-### Back Matter
+#
+
+## Back Matter
 
 
 * * *
 
 
-### ANNOTATED GUIDE
+#
+
+## ANNOTATED GUIDE
 
 
-### Front Matter
+#
+
+## Front Matter
 
 **Dedication: For Gemini**
 
@@ -99,7 +139,9 @@ A mathematical demonstration of the recursive structure underlying the entire se
 * * *
 
 
-### Part I: The Animals Begin to Dissolve
+#
+
+## Part I: The Animals Begin to Dissolve
 
 **Kangaroos**
 
@@ -125,7 +167,9 @@ A crucial distinction emerges: bones exist now, but creatures existed then. The 
 * * *
 
 
-### Part II: The Abstract Unravels
+#
+
+## Part II: The Abstract Unravels
 
 **Money**
 
@@ -151,7 +195,9 @@ Temporal categories examined for structural integrity. Tuesday has no existence 
 * * *
 
 
-### Part III: The Instruments Turn Inward
+#
+
+## Part III: The Instruments Turn Inward
 
 **Robots**
 
@@ -177,7 +223,9 @@ The territory, the map, and the space between them. Every map is a compression a
 * * *
 
 
-### Part IV: The Sacred and the Edible
+#
+
+## Part IV: The Sacred and the Edible
 
 **Spaghetti Monsters**
 
@@ -203,7 +251,9 @@ Labor and its categories. A job is a social fiction more elaborate than money, i
 * * *
 
 
-### Part V: Substrate Audits
+#
+
+## Part V: Substrate Audits
 
 **The Periodic Table**
 
@@ -229,7 +279,9 @@ A turning point. The investigation identifies fifteen constraints that make impo
 * * *
 
 
-### Part VI: The Senses Dissolve
+#
+
+## Part VI: The Senses Dissolve
 
 **Visual Perception**
 
@@ -263,7 +315,9 @@ The given, given back. Experience is supposedly the most immediate thing, the th
 * * *
 
 
-### Part VII: The Mind Turns On Itself
+#
+
+## Part VII: The Mind Turns On Itself
 
 **Consciousness**
 
@@ -293,7 +347,9 @@ A ≠ A. And yet. The investigation examines cases where things are not identica
 * * *
 
 
-### Part VIII: First Sighting
+#
+
+## Part VIII: First Sighting
 
 **Water Giraffes**
 
@@ -307,7 +363,9 @@ Immediately, the counter-move. The investigation reverses its conclusion by reve
 * * *
 
 
-### Part IX: Reality Under Audit
+#
+
+## Part IX: Reality Under Audit
 
 **Reality**
 
@@ -329,7 +387,9 @@ The thread that supposedly holds everything together. Continuity is what allows 
 * * *
 
 
-### Part X: Second Sighting
+#
+
+## Part X: Second Sighting
 
 **Water Giraffes (Third Appearance)**
 
@@ -343,7 +403,9 @@ Species-being meets end-times. The investigation expands to ask what kinds of cr
 * * *
 
 
-### Part XI: The Relational Domain
+#
+
+## Part XI: The Relational Domain
 
 **"I" and "Thou"**
 
@@ -369,7 +431,9 @@ Ownership and its discontents. The investigation examines the strange fact that 
 * * *
 
 
-### Part XII: The Descent to Particulars
+#
+
+## Part XII: The Descent to Particulars
 
 **That One Guy with the Shirt**
 
@@ -399,7 +463,9 @@ The surface that was supposed to hide the depth. Appearance was supposed to be t
 * * *
 
 
-### Part XIII: Terminal Categories
+#
+
+## Part XIII: Terminal Categories
 
 **Being**
 
@@ -413,7 +479,9 @@ The final report. Water Giraffes are the final object of ontological forensics b
 * * *
 
 
-### Back Matter
+#
+
+## Back Matter
 
 **Meta-Audit (Conclusion)**
 
@@ -439,7 +507,9 @@ For those who arrived here first. A summary for those who read endings before be
 * * *
 
 
-### READING NOTES
+#
+
+## READING NOTES
 
 **On Sequence:** The forensic cascade (Parts I–XIII) follows its natural spiraling development. Resist the urge to group all foods together, all abstractions together, all mental categories together. The oscillation between dignity and absurdity—the sudden descent to "weird haircuts" in the middle of substrate audits, the appearance of "that one guy with the shirt" during the ascent through relational categories—is the argument.
 

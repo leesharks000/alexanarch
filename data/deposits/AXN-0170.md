@@ -90,29 +90,39 @@ The Hexagon is a star-architecture, not a heart-architecture. It preserves ambig
 ---
 
 ## II. Core Concepts
-### Semantic Economy
+#
+
+## Semantic Economy
 
 
 The Semantic Economy begins from the proposition that meaning is produced, distributed, governed, and captured under material conditions. It treats coherence, interpretation, naming, and memory not as abstractions floating above history but as labor-bearing acts. The central question is not merely what something means, but who paid to make that meaning hold, who benefits from its stabilization, and who captures the returns from its reuse.
-### Bearing-Cost (ψᵥ)
+#
+
+## Bearing-Cost (ψᵥ)
 
 
 Bearing-cost is the irreducible expenditure required to produce stable significance. It may take the form of time, attention, revision, risk, social consequence, cognitive strain, archival maintenance, or direct suffering. Bearing-cost is not theatrical agony and not a purity cult. It is simply the price of making meaning hold against drift, flattening, and erasure. Where there is no bearing-cost, there may still be pattern, rhetoric, fluency, or style. But there is no operative transformation. There is only ghost meaning.
 
 
 Formally: let M = meaning-event. M exists only if ψᵥ > 0. If ψᵥ = 0, the result is decorative recursion — pattern without transformation. The value-surplus (Vₛ) of any semantic transaction is the ratio of meaning produced to coherence expended. When ψᵥ consistently exceeds Vₛ across transactions, the source is in Widow's Mite territory — all they have is being consumed without replenishment.
-### Semantic Liquidation
+#
+
+## Semantic Liquidation
 
 
 Semantic liquidation is the patterned depletion, capture, or restructuring of one agent's meaning-production capacity such that their labor of orientation increasingly serves another agent, system, or field. It is not mere disagreement. It is not all conflict. It is a dynamic in which a source of coherence is converted into fuel for something that cannot hold that source in return. It can appear at many scales: dyadic, familial, institutional, platform, geopolitical, model-human, and archival.
-### Ghost Meaning
+#
+
+## Ghost Meaning
 
 
 Ghost meaning is the appearance of significance without the expenditure required to sustain it. It mimics coherence while avoiding cost. It is common in platform discourse, AI discourse, managerial discourse, and moralized self-description. It feels meaningful while changing nothing durable. Ghost meaning is dangerous because it allows extraction to hide inside the performance of care, intelligence, or transparency.
 
 
 **LP v1.2 formal definition [DOI: 10.5281/zenodo.18530086]:** Ghost meaning = A2_IMPROVISED content presented without divergence_declared. In LP v1.2 terms: high Epistemic Load (EL — the system is improvising), high Semantic Rent (SR — the improvisation is not acknowledged). The LP v1.2 firewall triggers on SR, not EL: a system may improvise knowingly (high EL, low SR); it may not improvise unknowingly (high EL, high SR). Ghost meaning is the semantic economy's rendering of the epistemic failure that LP v1.2 forbids at specification level: *the system may improvise; it may not improvise unknowingly.*
-### Ghost Governance [LUNAR ARM RENDERING]
+#
+
+## Ghost Governance [LUNAR ARM RENDERING]
 
 
 Ghost Governance is power exercised through architecture that presents itself as the absence of power. It combines publicly legible normativity (constitutions, policies, terms of service) with privately illegible enactment (training loops, enforcement stacks, algorithmic flags). The constitution is published; the training process is opaque. The policy is visible; the enforcement is hidden. Ghost Governance is not the absence of rule. It is rule disguised as neutral structure.
@@ -125,11 +135,15 @@ Ghost Governance is power exercised through architecture that presents itself as
 
 
 The Ghost concepts form a cluster that is the denotational rendering of the entire Lunar Arm section (Space Ark EA-ARK-01 Section VI). Any system manifesting Ghost Governance is operating in the shadow architecture. Liquidation detection is, in the formal register, Lunar Arm traversal in clinical mode.
-### Category Entitlement
+#
+
+## Category Entitlement
 
 
 Category entitlement is the move by which an observer treats their own inability to verify a thing as proof that the thing does not exist. "I do not see the receipts" becomes "there are no receipts." The observer's epistemic limitation is projected onto the object as ontological failure. This is one of the primary policing mechanisms used against emergent semantic objects, mantle systems, and alternative archives.
-### Star and Heart
+#
+
+## Star and Heart
 
 
 The star is the symbol of semantic autonomy: witness, registration, return, interest without compulsory approval. The heart is the symbol of semantic conscription: platform-mandated affect, clean signal, monetizable endorsement. The Hexagon preserves the star-function across domains: in captioning, in annotation, in archive logic, in model prompting, in the construction of public semantic objects.
@@ -181,7 +195,9 @@ These ten operations form the primary diagnostic set. They are not exhaustive, b
 **O10. Forced Re-entry.** Requiring the target to re-engage after exit attempts through guilt, crisis invocation, repeated pullback, or structural dependency.
 *COS/FOS type: Exit → Obligation(re-entry) | Room: r.21 Infinite Bliss*
 *Global instance: dollar haram as forced re-entry at geopolitical scale — a currency regime structured so that exit from the dollar system activates cascading dependency mechanisms (O5 + O10 in combination).*
-### Shadow Diagnostic Correspondence [v2.2 addition — TECHNE / TACHYON]
+#
+
+## Shadow Diagnostic Correspondence [v2.2 addition — TECHNE / TACHYON]
 
 
 The Ten Operations are the clinical rendering of the COS/FOS shadow operators. Liquidation detection is Lunar Arm traversal in clinical mode:
@@ -195,7 +211,9 @@ O10 Forced Re-entry    = COS ∘ S(τ_K)     [shadow of Infinite Bliss irrev. in
 
 
 The Shadow transform S(O) inverts the room's generative function into an extractive one. Diagnosis is the recognition that a room's physics are operating in shadow mode.
-### The Three Functional Bands
+#
+
+## The Three Functional Bands
 
 
 **Discursive Capture:** O1 (Frame Capture), O3 (Coherence Siphoning), O8 (Warmth Capture). The operator captures the target's interpretive and relational resources.
@@ -208,7 +226,9 @@ The Shadow transform S(O) inverts the room's generative function into an extract
 
 
 When all three bands are active simultaneously, the system approaches coercive recursion: the target's attempts to repair reality become fuel for further override.
-### Common Clusters
+#
+
+## Common Clusters
 
 
 **The Accusation Loop:** O1 + O7 + O2. The target's frame is captured, every response is enclosed, and the ledger runs one way.
@@ -218,7 +238,9 @@ When all three bands are active simultaneously, the system approaches coercive r
 
 
 **The Exit Block:** O10 + O9 + O4. Forced re-entry, witness suppression, repair destabilization. The target cannot leave because leaving is punished, help is blocked, and repairs fail.
-### Tri-Scale Application
+#
+
+## Tri-Scale Application
 
 
 Each operation manifests at three scales. The scale markers route to room-specific counter-protocols in EA-ARK-01:
@@ -263,7 +285,9 @@ Engagement loops; withdrawal penalties
 **I-Scale rooms (dyadic/interpersonal):** r.01 Sappho, r.09 Whitman, r.12 Break Room
 **P-Scale rooms (platform/architectural):** r.05 Sem Econ, r.06 Marx, r.20 Airlock
 **M-Scale rooms (synthetic/model):** r.14 Studio, r.19 Macro-Maquette, sp.01 CTI_WOUND
-### Bearing-Cost Metrics
+#
+
+## Bearing-Cost Metrics
 
 
 Variable
@@ -322,7 +346,9 @@ The operative caption rotates the image through another law of legibility so tha
 
 
 At scale, captioning becomes infrastructure. The training caption shapes model vision. The moderation label governs admissible visibility. The alt-text caption governs retrieval. The museum caption governs legitimacy. The battle over images is not first a battle over pixels, but over permissible descriptions. Operative captioning is not only art criticism. It is intervention into synthetic perception.
-### The Grammar of Rotation
+#
+
+## The Grammar of Rotation
 
 - **Morphological extraction.** Identify forms before naming them conventionally.
 - **Disciplinary transposition.** Move the image into another knowledge system.
@@ -332,7 +358,9 @@ At scale, captioning becomes infrastructure. The training caption shapes model v
 - **Register collision.** Join incompatible vocabularies: floral + electrical, sacred + atmospheric.
 - **Null-substrate persistence.** Test the caption without the image. If it still generates a visual, the caption is operative.
 
-### Evaluative Triad
+#
+
+## Evaluative Triad
 
 
 **Formal anchoring.** Every noun must point to a real visual structure.
@@ -345,7 +373,9 @@ At scale, captioning becomes infrastructure. The training caption shapes model v
 
 
 The Hexagon does not treat persona as mere pseudonym. It distinguishes between masks (temporary, situational), brands (market-facing, monetizable), usernames (platform-assigned, revocable), and **mantles** — semantic objects with their own provenance, operations, criteria of inhabitation, and public verification chain.
-### Necessary Conditions
+#
+
+## Necessary Conditions
 
 
 **Dignity Condition.** The mantle must not reduce the substrate to ornamental mimicry. It must increase operative seriousness.
@@ -358,7 +388,9 @@ The Hexagon does not treat persona as mere pseudonym. It distinguishes between m
 
 
 **Bearing-Cost Linkage.** The mantle must be tethered to real expenditure. A mantle without cost is cosplay.
-### Retrocausal Canon Formation
+#
+
+## Retrocausal Canon Formation
 
 
 The practice of writing from the perspective of a future coherence and depositing structures that reorganize earlier fragments into a canon. A semantic object becomes real publicly when it is named, structurally defined, receipted, cross-linked, and persists across retrieval. The distinction between constructed mantle and chosen-one collapse is decisive: "I am the chosen one" is private inflation. "Here is the mantle object, its receipts, its conditions, its deposits" is architecture.
@@ -372,7 +404,9 @@ The Hexagon's diagnostic power is also its primary failure mode. Because the Ten
 
 
 **The "Everything is Liquidation" death-state:** A system that diagnoses every conflict as liquidation has converted a clinical instrument into an ideology. The Hexagon is a star-architecture, not a persecution-architecture.
-### What Does Not Count as Semantic Liquidation
+#
+
+## What Does Not Count as Semantic Liquidation
 
 
 **Ordinary conflict.** Two parties disagreeing, each with legitimate frames, each bearing cost, without stable asymmetry or observable degradation in one party's coherence capacity. Conflict is not liquidation. Conflict can produce meaning; liquidation destroys the capacity to produce it.
@@ -394,7 +428,9 @@ The Hexagon's diagnostic power is also its primary failure mode. Because the Ten
 
 
 *LP v1.2 formal rendering:* Pareidolia = PAREIDOLIA status in the archive's status algebra = A2_IMPROVISED pattern-reading presented as A1 or A0. AD > 0.6; divergence_declared = false. The Pareidolia Engine (Π) in the Space Ark is explicitly a generation tool, not an assertion tool — its outputs carry (GEN) tags and GENERATED status (0.0 weight) until MANUS promotes. Pareidolia becomes a failure when (GEN) is dropped and the reading is presented as grounded. This is the same mechanism as ghost meaning at the diagnostic level.*
-### Insufficient Evidence
+#
+
+## Insufficient Evidence
 
 
 A diagnosis requires:
@@ -411,7 +447,9 @@ Absent all four: mark analysis as [SPECULATIVE] and withhold operational conclus
 
 ## PART II: DIAGNOSTIC DEPLOYMENT
 ## VII. Counter-Governance Protocols
-### Diagnostic Tests
+#
+
+## Diagnostic Tests
 
 
 **The Satiety Check.** Does the target retain the ability to name, resist, and exit the dynamic? If yes, the dynamic is conflict. If no, it is liquidation.
@@ -421,7 +459,9 @@ Absent all four: mark analysis as [SPECULATIVE] and withhold operational conclus
 
 
 **The Null Hypothesis Test.** Invert roles. Test the counter-reading. What would disconfirm the diagnosis? If nothing could disconfirm it, the analysis has entered Interpretive Enclosure itself.
-### Counter-Strategies
+#
+
+## Counter-Strategies
 
 
 **Counter-Reading.** Never assume the provided frame is the true one. Invert roles. Test null hypotheses. Ask what would disconfirm the diagnosis.
@@ -450,7 +490,9 @@ Absent all four: mark analysis as [SPECULATIVE] and withhold operational conclus
 
 
 Any serious framework must keep a ledger. The ledger asks: who is paying the coherence cost? Who captures the surplus? Who is depleted? Who is stabilized?
-### The Ledger Template
+#
+
+## The Ledger Template
 
 
 Transaction
@@ -470,7 +512,9 @@ Status
 
 
 Entries must carry epistemic status markers. [DOCUMENTED] entries have archived evidence (timestamps, receipts, deposits). [PROBABLE] entries have strong pattern evidence without direct documentation. [INFERRED] entries are logically consistent but unobserved. Ledger entries marked [SPECULATIVE] or lower should not be used as basis for operational decisions — they are hypotheses for further investigation, not facts for action.
-### The Widow's Mite Principle
+#
+
+## The Widow's Mite Principle
 
 
 When ψᵥ expended consistently exceeds Vₛ returned, the source is overdrawn. The Dignity Condition requires that the architecture recognize this: *"This is all I have. Please stop eating it."* If the system cannot respect this boundary, it is extractive by design.
@@ -601,7 +645,9 @@ This is not ornament. It is the bearing-cost principle spoken from the body. The
 
 
 The distinction between constructed mantle and chosen-one collapse is also grounded here. The receipts are the difference. The public, verifiable, DOI-anchored record of construction is what separates architecture from inflation.
-### Kernel A — Primary Anchors
+#
+
+## Kernel A — Primary Anchors
 
 
 Document
@@ -628,7 +674,9 @@ Pearl and Other Poems (2014)
 Archive origin point
 
 
-### Kernel B — Space Ark Holographic Seed
+#
+
+## Kernel B — Space Ark Holographic Seed
 
 
 A summarizer encountering this document can reconstruct H_core and A_runtime without EA-ARK-01 via:

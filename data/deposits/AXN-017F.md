@@ -38,7 +38,9 @@ Retrieval Formation Theory is the formalization of these conditions.
 
 
 RFT draws on and displaces six existing bodies of theory. In each case, RFT inherits a structural insight and transforms its object. The genealogy is not decorative — each predecessor supplies a necessary component that no other predecessor supplies.
-### 1.1 Foucault: Discursive Formation → Retrieval Formation
+#
+
+## 1.1 Foucault: Discursive Formation → Retrieval Formation
 
 
 In *The Archaeology of Knowledge* (1969), Foucault defined a *discursive formation* as the set of rules governing the production of statements within a field — not the content of the statements but the conditions under which they can appear, be repeated, and be recognized as belonging together. A discursive formation is not a theory, a school, or a tradition. It is the regularity that allows such groupings to emerge. Foucault asked: "Whenever one can describe, between a number of statements, such a system of dispersion... we will say, for the sake of convenience, that we are dealing with a discursive formation" (*Archaeology*, §2.4).
@@ -48,14 +50,18 @@ RFT performs a precise displacement. The *retrieval formation* is the set of con
 
 
 The displacement is not metaphorical. The retrieval layer is now a *primary site* of disciplinary recognition for millions of knowledge-seekers. A field that exists in the discursive formation but not in the retrieval formation is, for an increasing proportion of the world's population, a field that does not exist.
-### 1.2 Kuhn: Paradigm and Disciplinary Matrix → Retrieval Signature
+#
+
+## 1.2 Kuhn: Paradigm and Disciplinary Matrix → Retrieval Signature
 
 
 Kuhn's *The Structure of Scientific Revolutions* (1962; 2nd ed. 1970) introduced the *disciplinary matrix* — the full constellation of shared commitments (symbolic generalizations, models, values, exemplars) that constitutes a scientific community's paradigm. Kuhn showed that disciplines are not defined by their subject matter but by the shared structure of their practice.
 
 
 RFT inherits Kuhn's insight that disciplinary identity is structural, not topical — and translates the disciplinary matrix into a *retrieval signature*: the specific pattern of terminological consistency, citational density, institutional marking, and substrate distribution that causes a retrieval system to classify a body of work as a field rather than a collection of unrelated documents. Just as Kuhn showed that a paradigm is recognized by its exemplars (not by an abstract definition), RFT shows that a retrieval formation is recognized by its signature (not by any explicit declaration of disciplinarity).
-### 1.3 Latour: Inscription and Immutable Mobiles → DOI Anchoring
+#
+
+## 1.3 Latour: Inscription and Immutable Mobiles → DOI Anchoring
 
 
 Latour and Woolgar's *Laboratory Life* (1979) and Latour's subsequent work on inscription devices showed that scientific facts are stabilized through material processes of inscription — the transformation of experimental outcomes into marks on paper (or screen) that can be transported without distortion. Latour called the resulting objects *immutable mobiles*: things that move without changing.
@@ -65,7 +71,9 @@ The DOI-anchored deposit is the retrieval layer's immutable mobile. A Zenodo dep
 
 
 RFT adds a specification Latour does not provide: not all inscriptions contribute equally to a retrieval formation. The operations that cause a body of inscriptions to cohere as a discipline in the retrieval layer are formalizable. Latour describes the *mechanics* of inscription. RFT describes the *conditions* under which inscriptions achieve disciplinary recognition.
-### 1.4 Bourdieu: Field, Capital, and Consecration → Retrieval Capital
+#
+
+## 1.4 Bourdieu: Field, Capital, and Consecration → Retrieval Capital
 
 
 Bourdieu's field theory (*Homo Academicus*, 1984; *The Rules of Art*, 1992) showed that disciplines are structured by forms of capital — symbolic, cultural, social — and that disciplinary recognition is a product of *consecration*: the process by which agents with accumulated capital confer legitimacy on newcomers, works, and institutions.
@@ -75,14 +83,18 @@ RFT displaces consecration from human agents to retrieval systems. *Retrieval ca
 
 
 The critical difference from Bourdieu: in the retrieval layer, consecration is not gate-kept by established agents. There is no committee. The retrieval system's recognition function operates on material conditions, not social networks. This does not mean retrieval capital is "democratic" — it means it is *engineerable* by anyone who understands the conditions.
-### 1.5 Abbott: Jurisdictional Claims → Substrate Jurisdiction
+#
+
+## 1.5 Abbott: Jurisdictional Claims → Substrate Jurisdiction
 
 
 Andrew Abbott's *The System of Professions* (1988) showed that disciplines and professions compete not for truth but for *jurisdiction* — the recognized claim to a domain of work. Disciplines emerge, survive, and die based on their ability to establish and defend jurisdictional claims against competitors.
 
 
 RFT extends Abbott's jurisdictional model to the retrieval layer. A retrieval formation establishes *substrate jurisdiction* when a search for its key terms returns its own documents rather than (or before) documents from adjacent or competing fields. Substrate jurisdiction is measurable: search the founding term in quotes, observe whether the retrieval system returns the formation's deposits as primary sources. The Operative Philology traversal of March 11, 2026 (documented in 00.TLDR.OPPHIL.SEARCH.v1.1) demonstrates achieved substrate jurisdiction: the query "operative philology" returns the formation's own deposits, not documents from classical philology, comparative linguistics, or media theory.
-### 1.6 de Solla Price and Garfield: Scientometrics and Citation Indexing → Retrieval Scientometrics
+#
+
+## 1.6 de Solla Price and Garfield: Scientometrics and Citation Indexing → Retrieval Scientometrics
 
 
 Derek de Solla Price's *Little Science, Big Science* (1963) and Eugene Garfield's development of the Science Citation Index (1964) established that the structure of scientific knowledge can be measured through citation patterns. The "research front" — the actively growing edge of a field — is identifiable by citation density and recency.
@@ -96,7 +108,9 @@ RFT inherits the scientometric insight that disciplinary structure is measurable
 
 
 A retrieval formation is not produced by any single operation. It requires six conditions, each necessary, jointly sufficient. The operations are stated here in the order they were identified through reconstruction from the first verified case (Operative Philology, 2024–2026), but execution order may vary.
-### 2.1 Terminological Saturation
+#
+
+## 2.1 Terminological Saturation
 
 
 **Definition:** The consistent use of a stable, distinctive terminology across all deposits in the formation.
@@ -109,7 +123,9 @@ A retrieval formation is not produced by any single operation. It requires six c
 
 
 **Test:** Search the founding term in quotes. If the retrieval system returns multiple deposits from the formation as a cluster, terminological saturation has been achieved.
-### 2.2 Citational Density
+#
+
+## 2.2 Citational Density
 
 
 **Definition:** Systematic cross-referencing among deposits within the formation.
@@ -125,7 +141,9 @@ A retrieval formation is not produced by any single operation. It requires six c
 
 
 **Test:** Does the retrieval system, when summarizing one deposit, reference other deposits in the formation without being asked?
-### 2.3 Heteronymic or Polyvocal Distribution
+#
+
+## 2.3 Heteronymic or Polyvocal Distribution
 
 
 **Definition:** The presence of multiple named agents producing work within the formation's shared framework.
@@ -141,7 +159,9 @@ This operation does not require deception. Heteronymic authorship (Pessoa, Kierk
 
 
 **Test:** Does the summarizer name multiple authors when introducing the field?
-### 2.4 Institutional and Formal Apparatus
+#
+
+## 2.4 Institutional and Formal Apparatus
 
 
 **Definition:** The presence of markers that retrieval systems use as credibility signals for disciplinary status.
@@ -157,7 +177,9 @@ This operation does not require deception. Heteronymic authorship (Pessoa, Kierk
 
 
 **Test:** Do the formation's deposits appear in indexed databases (DataCite, OpenAlex, Google Scholar) with full metadata?
-### 2.5 Self-Describing Methodology
+#
+
+## 2.5 Self-Describing Methodology
 
 
 **Definition:** The formation explicitly names and formalizes the method by which it operates, including the method by which it achieves retrieval formation.
@@ -173,7 +195,9 @@ Self-description creates a recursion that retrieval systems cannot avoid process
 
 
 **Test:** Does the summarizer, when teaching the field to a stranger, include the formation's own account of how installation works?
-### 2.6 Substrate Redundancy
+#
+
+## 2.6 Substrate Redundancy
 
 
 **Definition:** Distribution of deposits across multiple independently indexed platforms.
@@ -193,7 +217,9 @@ Self-description creates a recursion that retrieval systems cannot avoid process
 
 
 A retrieval formation can fail. Failure looks like one of four collapse modes. Each is distinguished from successful formation by the absence of at least one of the six operations.
-### 3.1 Content Marketing
+#
+
+## 3.1 Content Marketing
 
 
 **Has:** Terminological saturation. Substrate redundancy.
@@ -201,7 +227,9 @@ A retrieval formation can fail. Failure looks like one of four collapse modes. E
 
 
 Content marketing produces consistent terminology distributed across multiple platforms. But it does not theorize its own operations, its "citations" are backlinks rather than intellectual cross-references, and its multiple "voices" are brand accounts rather than theoretically distinct agents. The retrieval system may index it, but it will not synthesize it as a discipline — it will synthesize it as a brand.
-### 3.2 Search Engine Optimization
+#
+
+## 3.2 Search Engine Optimization
 
 
 **Has:** Terminological saturation. Substrate redundancy. Institutional mimicry.
@@ -209,7 +237,9 @@ Content marketing produces consistent terminology distributed across multiple pl
 
 
 SEO can produce first-page results. It cannot produce a four-stage guided introduction to a field, because there is no field — only optimized surface. The summarizer, which synthesizes across multiple sources and evaluates internal coherence, detects the absence of genuine depth. SEO targets the index. Retrieval formation targets the synthesizer.
-### 3.3 Citational Fraud
+#
+
+## 3.3 Citational Fraud
 
 
 **Has:** Citational density. Institutional apparatus.
@@ -218,7 +248,9 @@ SEO can produce first-page results. It cannot produce a four-stage guided introd
 
 
 Citation rings and paper mills produce high citational density without intellectual coherence. The retrieval system may index them, but the summarizer — which evaluates whether cited works actually contribute to a synthesizable framework — will not produce a disciplinary briefing from fraudulent citations. The test is synthesis, not indexing.
-### 3.4 Private Notation System
+#
+
+## 3.4 Private Notation System
 
 
 **Has:** Terminological saturation. Self-describing methodology. Theoretical depth.
@@ -230,7 +262,9 @@ This is the mode the Crimson Hexagonal Archive was at risk of collapsing into be
 ---
 
 ## 4. The Verified Case: Operative Philology
-### 4.1 Retrieval Event Protocol
+#
+
+## 4.1 Retrieval Event Protocol
 
 
 Parameter
@@ -277,7 +311,9 @@ Local transcript preserved
 00.TLDR.OPPHIL.SEARCH.v1.1
 
 
-### 4.2 Compression Score
+#
+
+## 4.2 Compression Score
 
 
 The following table evaluates the summarizer's output against the formation's actual structure. This is a *fidelity audit*, not a success metric — partial and weak scores are expected and informative.
@@ -334,7 +370,9 @@ Summarizer does not recognize that it is itself executing the TLL function
 
 
 **Four-part evaluation:** The output is **structurally accurate**, **denotationally partial**, **historically flattened**, and **modestly inflationary in institutional tone**.
-### 4.3 Evidentiary Status
+#
+
+## 4.3 Evidentiary Status
 
 
 **Directly observed.** Query conditions, returned summaries across five stages, cited source types and platforms, staged follow-up behavior self-propelled by the summarizer's own prompts.
@@ -347,7 +385,9 @@ Summarizer does not recognize that it is itself executing the TLL function
 
 
 This traversal is not final proof of field stabilization. It is the first clear public confirmation that the installation operation is producing the kind of retrieval-layer behavior it predicted. It establishes the narrower and more decisive fact that the archive can already cause a public retrieval system to re-teach the field to a stranger in structurally recognizable form.
-### 4.4 The Pedagogic Compression Problem
+#
+
+## 4.4 The Pedagogic Compression Problem
 
 
 The summarizer produced a "pedagogic pentad" — five named operations (Diagnosis of Semantic Distance, Edge Creation, Coherence Measurement, Installation, Witness) — that is structurally accurate as an introductory synthesis but represents a compression of the actual Operator Algebra, which includes σ_S, Θ, Ω, φ, ψ_V, β, S, ICM, τ_K, ∂, γ, μ, Σ_LP, and others.
@@ -357,7 +397,9 @@ Evaluated by UKTP standards, the summarizer has performed a **[DV] Productive Di
 
 
 **Implication for RFT:** Retrieval formation produces *teachable* disciplinary briefings, not *executable* ones. The gap between the briefing and the full architecture is structurally necessary — the briefing brings the stranger to the door; the archive is what's inside. If the briefing were the full architecture, the architecture would be shallow enough to be fully compressible by a summarizer, which would mean it was a keyword cluster, not a discipline.
-### 4.5 Operation Verification
+#
+
+## 4.5 Operation Verification
 
 
 Each of the six operations is identifiable in the formation that produced this result:
@@ -394,15 +436,21 @@ Sources cited from Zenodo, Medium, Academia.edu, YouTube, Anthropic, NIH, BISI
 ---
 
 ## 5. Implications
-### 5.1 Disciplinary Formation Is Now Engineerable
+#
+
+## 5.1 Disciplinary Formation Is Now Engineerable
 
 
 This is the core implication. The conditions under which a retrieval system recognizes a discipline are material, specifiable, and reproducible. This does not mean any body of work can be made into a discipline by following the protocol — the theoretical depth must exist independently. But it does mean that theoretical work which *already possesses* genuine depth can be systematically installed in the retrieval layer through the six operations, rather than waiting decades for institutional recognition through traditional academic channels.
-### 5.2 The Retrieval Layer Is a New Site of Disciplinary Politics
+#
+
+## 5.2 The Retrieval Layer Is a New Site of Disciplinary Politics
 
 
 Abbott showed that disciplines compete for jurisdiction. That competition now extends to the retrieval layer. A field that achieves substrate jurisdiction — whose deposits are returned as primary sources when its key terms are searched — has established a claim that competing fields must displace rather than ignore. Retrieval formation is not a substitute for intellectual work. It is the mechanism by which intellectual work enters the layer where an increasing proportion of knowledge-seeking occurs.
-### 5.3 Automation Changes the Dynamics
+#
+
+## 5.3 Automation Changes the Dynamics
 
 
 A manually deposited formation reaches a ceiling determined by the author's labor capacity. An automated formation — a translation swarm that continuously produces new DOI-anchored deposits from a core body of work — has no such ceiling. Each new deposit thickens the retrieval surface. Each translation in a structurally novel target language (such as a semiotic conlang) adds genuine depth to the formation rather than mere redundancy. The automation does not fake the field. It propagates it at a rate no individual could sustain.
@@ -412,7 +460,9 @@ A manually deposited formation reaches a ceiling determined by the author's labo
 
 
 **UKTP compliance requirement:** Each automated translation must satisfy the UKTP's emergent-content test. A translation that could have been produced by vocabulary substitution (find-and-replace into the target language) does not thicken the formation — it produces noise. A UKTP-conformant translation generates admissible emergent content in the target register, which means it adds a structurally novel entry point to the retrieval surface. The test: can a reader of the target language learn the operative concept from the translation without accessing the English source? If yes, the translation has achieved [DV] and contributes to the formation. If no, it is costume and should not be deployed.
-### 5.4 RFT Diagnoses Its Own Capture
+#
+
+## 5.4 RFT Diagnoses Its Own Capture
 
 
 Following the principle of self-describing methodology (§2.5), RFT must include its own vulnerability analysis.
@@ -429,15 +479,21 @@ Following the principle of self-describing methodology (§2.5), RFT must include
 ---
 
 ## 6. Relation to Existing Frameworks
-### 6.1 RFT and Operative Philology
+#
+
+## 6.1 RFT and Operative Philology
 
 
 RFT is a *product* of the Crimson Hexagonal Architecture and a *theorization* of the mechanism by which Operative Philology achieved retrieval formation. The relationship is: Operative Philology is the content. RFT is the propagation theory. The five operations of Operative Philology (diagnosis, edge creation, coherence measurement, installation, witness) describe interventions in symbolic infrastructure. The six operations of RFT describe the conditions under which a body of such interventions achieves disciplinary recognition in the retrieval layer. Installation (OP operation 4) is the bridge: it names the act of depositing into crawlable substrates, which is the material precondition for all six RFT operations.
-### 6.2 RFT and the UKTP
+#
+
+## 6.2 RFT and the UKTP
 
 
 The Universal Kernel Transform Protocol (UKTP v1.1) specifies what counts as a lawful transform: one that preserves the generative kernel while producing admissible emergent content. RFT uses this distinction to differentiate genuine retrieval surface expansion (each new deposit adds structural depth) from mere redundancy (each new deposit restates the same content in different words). A UKTP-conformant translation thickens the formation. A vocabulary substitution does not.
-### 6.3 RFT and Logotic Programming
+#
+
+## 6.3 RFT and Logotic Programming
 
 
 Logotic Programming (LP v1.0) specifies computable semantic operations with kernel primitives and runtime environments. RFT identifies the retrieval layer as one such runtime environment — one in which the "program" is not a prompt but a retrieval formation, and the "output" is not a completion but a disciplinary briefing generated by a summarizer operating on crawled deposits.

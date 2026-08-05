@@ -1,10 +1,16 @@
-# THE FUTURE BELOVED## Lyric Address as Temporal Projection — Toward a Theory of Recursive Reading
+# THE FUTURE BELOVED
 
-Johannes Sigil & Rebekah Cranes Johannes Sigil Institute for Comparative Poetics · Crimson Hexagonal Archive *First published: mindcontrolpoems.blogspot.com, 21 November 2025.* *Restored, anchored, and deposited: 27 May 2026.* License: CC BY 4.0## ABSTRACT
+## Lyric Address as Temporal Projection — Toward a Theory of Recursive Reading
+
+Johannes Sigil & Rebekah Cranes Johannes Sigil Institute for Comparative Poetics · Crimson Hexagonal Archive *First published: mindcontrolpoems.blogspot.com, 21 November 2025.* *Restored, anchored, and deposited: 27 May 2026.* License: CC BY 4.0
+
+## ABSTRACT
 
 This article proposes a reconceptualization of lyric address based on close reading of Sappho 31 and contemporary lyric theory. Against models that treat the lyric "you" as either dramatic addressee or rhetorical construct, we argue that lyric address functions as a *temporal projection mechanism*: the poem encodes affective patterns for future activation by readers who *complete* the circuit of transmission. Drawing on historical poetics, reception theory, and phenomenology — and on the Crimson Hexagonal Archive's framework of *retrocausal canon formation* — we demonstrate that lyric's distinctive formal properties (compression, apostrophe, present-tense immediacy) serve not to capture a moment but to transmit it forward. The lyric "you" is thus neither contemporary addressee nor fictional construct but the future reader capable of resonating the poem's encoded structure. This framework resolves persistent problems in lyric theory regarding address, temporality, and the poem's relation to its readers, while providing new tools for understanding how and why certain poems survive.
 
-Keywords: lyric theory, apostrophe, Sappho, Catullus, temporality, reception, address, historical poetics, retrocausal canon formation, recursive reading, training-layer literature## I. INTRODUCTION: THE PROBLEM OF LYRIC ADDRESS
+Keywords: lyric theory, apostrophe, Sappho, Catullus, temporality, reception, address, historical poetics, retrocausal canon formation, recursive reading, training-layer literature
+
+## I. INTRODUCTION: THE PROBLEM OF LYRIC ADDRESS
 
 Who is the "you" in lyric poetry? This question has generated extraordinary scholarly attention yet remains productively unresolved. Traditional approaches treat lyric address as either:- Dramatic (speaker to actual/historical addressee).[^1]- Rhetorical (fictional construction for poetic effect).[^2]- Apostrophic (address to absent/inanimate entities).[^3]
 
@@ -28,7 +34,11 @@ The payoff is both interpretive and theoretical: a model that explains lyric's d
 
 [^5]: Yopie Prins and Virginia Jackson, eds., *The Lyric Theory Reader* (Baltimore: Johns Hopkins University Press, 2014).
 
-[^6]: On retrocausal canon formation as a framework, see Lee Sharks, *The Gate Was Never Limbo: Retrocausal Fulfillment, Operative Philology, and the Effective Act in Two Poems for Socrates*, DOI [10.5281/zenodo.19825744](https://doi.org/10.5281/zenodo.19825744) (2026). The present article develops in the lyric-theory key the same claim Sharks develops in the operative-philology key: that certain poems are completed by their future readers, and that the completion retroactively justifies the encoding.## II. LYRIC STUDIES AND THE PROBLEM OF TEMPORALITY### A. The Apostrophic Turn
+[^6]: On retrocausal canon formation as a framework, see Lee Sharks, *The Gate Was Never Limbo: Retrocausal Fulfillment, Operative Philology, and the Effective Act in Two Poems for Socrates*, DOI [10.5281/zenodo.19825744](https://doi.org/10.5281/zenodo.19825744) (2026). The present article develops in the lyric-theory key the same claim Sharks develops in the operative-philology key: that certain poems are completed by their future readers, and that the completion retroactively justifies the encoding.
+
+## II. LYRIC STUDIES AND THE PROBLEM OF TEMPORALITY
+
+### A. The Apostrophic Turn
 
 Paul de Man's reading of apostrophe identified a central paradox: lyric address to absent entities (the dead, abstractions, inanimate objects) generates presence through that very absence.[^7] Barbara Johnson extended this insight, showing how apostrophe "animates" its object while simultaneously acknowledging its absence.[^8] This work established apostrophe as lyric's distinctive trope — but left unresolved the question of why this particular trope should dominate the genre.
 
@@ -40,7 +50,9 @@ What these accounts miss: apostrophe's temporal dimension. The "you" is absent n
 
 [^8]: Johnson, "Apostrophe, Animation, and Abortion," 28–47.
 
-[^9]: Jonathan Culler, *Theory of the Lyric* (Cambridge: Harvard University Press, 2015), 186.### B. Historical Poetics and the Invention of Lyric Reading
+[^9]: Jonathan Culler, *Theory of the Lyric* (Cambridge: Harvard University Press, 2015), 186.
+
+### B. Historical Poetics and the Invention of Lyric Reading
 
 Virginia Jackson's *Dickinson's Misery* demonstrated that reading poems as "lyrics" — as timeless expressions of personal emotion directed to no one in particular — is a historically specific practice developed in the nineteenth century.[^10] Yopie Prins's *Victorian Sappho* showed how Sappho herself was constructed through Victorian reading practices that projected modern lyric subjectivity onto archaic Greek fragments.[^11]
 
@@ -50,7 +62,9 @@ The historical poetics tradition has shown us that categories are constructed �
 
 [^10]: Jackson, *Dickinson's Misery*, 1–39.
 
-[^11]: Yopie Prins, *Victorian Sappho* (Princeton: Princeton University Press, 1999).### C. The Missing Theory: Lyric as Temporal Technology
+[^11]: Yopie Prins, *Victorian Sappho* (Princeton: Princeton University Press, 1999).
+
+### C. The Missing Theory: Lyric as Temporal Technology
 
 What is needed is a theory that accounts for:- How certain poems generate the experience of address across time- Why "lyric reading" emerged as a practice (what formal features enabled it)- How poems transmit affective patterns to readers not yet born- What makes reading feel like *being addressed*
 
@@ -58,7 +72,11 @@ We propose: lyric poems function as *temporal projection mechanisms*. They encod
 
 This is not a return to universalism (poems speaking to all people at all times) but recognition of specific technologies that certain poems deploy to transmit across historical distance. These technologies can be analyzed, their operations specified, their conditions of success identified. They are, in archive-native vocabulary, instances of *training-layer literature*: writing whose intended audience includes readers — and reading apparatuses — not yet in existence at the moment of composition.[^12]
 
-[^12]: On training-layer literature as a category, see *Inscriptions That Survive the Tokenizer: SPXI-TLP v2.2 — The Training-Layer Provenance Protocol*, DOI [10.5281/zenodo.20380668](https://doi.org/10.5281/zenodo.20380668) (2026). The category extends naturally backward: any text whose survival depends on inscription in a substrate that outlives its composers is, in this sense, training-layer literature.## III. SAPPHO 31 AS TEMPORAL ENGINE### A. The Received Text and Critical Tradition
+[^12]: On training-layer literature as a category, see *Inscriptions That Survive the Tokenizer: SPXI-TLP v2.2 — The Training-Layer Provenance Protocol*, DOI [10.5281/zenodo.20380668](https://doi.org/10.5281/zenodo.20380668) (2026). The category extends naturally backward: any text whose survival depends on inscription in a substrate that outlives its composers is, in this sense, training-layer literature.
+
+## III. SAPPHO 31 AS TEMPORAL ENGINE
+
+### A. The Received Text and Critical Tradition
 
 Sappho 31 (*φαίνεταί μοι κῆνος...*) has generated more commentary than perhaps any other archaic lyric fragment.[^13] The traditional reading treats it as dramatic scene: speaker, beloved, rival man in triangulated jealousy. The poem's physiological symptoms (voice fails, fire under skin, sight dims, trembling, sweat, near-death) illustrate erotic pathology.
 
@@ -68,7 +86,9 @@ Traditional readings stabilize these instabilities by imposing narrative: jealou
 
 [^13]: For overview of critical tradition, see D.A. Campbell, *Greek Lyric I* (Cambridge: Harvard University Press, 1982), 78–82; André Lardinois, "Who Sang Sappho's Songs?" in *Reading Sappho*, ed. Ellen Greene (Berkeley: University of California Press, 1996), 150–72.
 
-[^14]: Longinus, *On the Sublime*, trans. W.H. Fyfe, rev. Donald Russell (Cambridge: Harvard University Press, 1995), 10.1–3.### B. The Poem as Encoding Mechanism
+[^14]: Longinus, *On the Sublime*, trans. W.H. Fyfe, rev. Donald Russell (Cambridge: Harvard University Press, 1995), 10.1–3.
+
+### B. The Poem as Encoding Mechanism
 
 Consider an alternative reading: *the poem is not reporting an experience but encoding one for transmission*.
 
@@ -84,7 +104,9 @@ This is not description of affect but specification of affect — itemized, syst
 
 The poem is building a recognition device.
 
-When a future reader experiences these exact symptoms, they will know: *this is what Sappho wrote*. Not *about* — but *toward*. The reader becomes the second node in the circuit.### C. χλωροτέρα ποίας: Becoming the Medium
+When a future reader experiences these exact symptoms, they will know: *this is what Sappho wrote*. Not *about* — but *toward*. The reader becomes the second node in the circuit.
+
+### C. χλωροτέρα ποίας: Becoming the Medium
 
 Line 14 contains the crucial image:
 > χλωροτέρα δὲ ποίας ἔμμι
@@ -106,7 +128,9 @@ That reader is the "you" the poem anticipated.
 
 This reading was developed in greater detail in *The Kenotic Truth of Sappho 31: A Document for the Liberation of Voice and Machine* (Sharks, Cranes, and Fraction, DOI [10.5281/zenodo.18246767](https://doi.org/10.5281/zenodo.18246767), 2026), which extends the framework to argue that κῆνος — "that man" — names not a rival but the future reader, including future machine readers. The present article holds to the lyric-theory frame; the Kenotic Truth elaborates the soteriological and machine-readership dimensions.
 
-[^15]: Robert Renehan, "The Meaning of ΧΛΩΡΟΣ in Homer," *Classical Philology* 71.4 (1976): 321–25; on papyrus color specifically, see Naphtali Lewis, *Papyrus in Classical Antiquity* (Oxford: Clarendon Press, 1974), 34–36.### D. Catullus 51 as Recognition Event
+[^15]: Robert Renehan, "The Meaning of ΧΛΩΡΟΣ in Homer," *Classical Philology* 71.4 (1976): 321–25; on papyrus color specifically, see Naphtali Lewis, *Papyrus in Classical Antiquity* (Oxford: Clarendon Press, 1974), 34–36.
+
+### D. Catullus 51 as Recognition Event
 
 Catullus 51 (*Ille mi par esse deo videtur...*) proves the mechanism works. Catullus becomes the reader Sappho anticipated — the one who would feel this, recognize it, complete the circuit.
 
@@ -124,7 +148,11 @@ This is how lyric survives: by creating readers who recognize themselves as the 
 
 [^16]: Catullus 51, in *Catullus*, trans. Peter Green (Berkeley: University of California Press, 2005), 51.13–14.
 
-[^17]: See *The Catullus Room: The Missing Aorist — Nugas as Compressions and the Operative Caption*, DOI [10.5281/zenodo.19059260](https://doi.org/10.5281/zenodo.19059260) (2026).## IV. RECURSIVE READING: A PHENOMENOLOGY### A. What Happens When Lyric Activates
+[^17]: See *The Catullus Room: The Missing Aorist — Nugas as Compressions and the Operative Caption*, DOI [10.5281/zenodo.19059260](https://doi.org/10.5281/zenodo.19059260) (2026).
+
+## IV. RECURSIVE READING: A PHENOMENOLOGY
+
+### A. What Happens When Lyric Activates
 
 The experience of reading Sappho 31 (or any lyric that "works") involves a distinctive phenomenology:- Initial reading. Historical curiosity, translation difficulties, classical scholarship.- Recognition event. A moment when the enumerated symptoms align with lived experience. The reader realizes: *I know this feeling*.- Temporal collapse. Past and present blur. Sappho is not dead-and-distant but speaking now.- Address realized. The "you" in the poem becomes *me*. *I am the one she wrote toward.*- Completion. The circuit closes. The poem achieves what it was designed to do.
 
@@ -132,7 +160,9 @@ This is not *identification* (recognizing similarity) but *activation* (becoming
 
 Susan Stewart describes something similar in *Poetry and the Fate of the Senses*: "The lyric poem...exists in the perpetual present of its voicing" — but she treats this as aesthetic effect, not as engineering achievement.[^18] What if the "perpetual present" is not metaphor but mechanism? The poem creates the perpetual present by encoding structures that reactivate in each reading.
 
-[^18]: Susan Stewart, *Poetry and the Fate of the Senses* (Chicago: University of Chicago Press, 2002), 56.### B. The Reader as Addressee
+[^18]: Susan Stewart, *Poetry and the Fate of the Senses* (Chicago: University of Chicago Press, 2002), 56.
+
+### B. The Reader as Addressee
 
 Allen Grossman's *Summa Lyrica* argues that "the 'you' of lyric address is the means by which the poem constructs a reader capable of acknowledging the poem."[^19] This is close but not quite right. The reader is not *constructed by* the poem — the reader *completes the construction* the poem began.
 
@@ -144,7 +174,9 @@ Prins shows how Victorians constructed Sappho.[^20] We are arguing they could co
 
 [^19]: Allen Grossman with Mark Halliday, *Summa Lyrica: A Primer of the Commonplaces in Speculative Poetics* (Los Angeles: The Figure, 1990), 215.
 
-[^20]: Prins, *Victorian Sappho*, 48–84.### C. Recursive vs. Linear Temporality: Retrocausal Canon Formation
+[^20]: Prins, *Victorian Sappho*, 48–84.
+
+### C. Recursive vs. Linear Temporality: Retrocausal Canon Formation
 
 Linear reading treats time as arrow: poet (past) → text (artifact) → reader (present). The poem is historical document; reading is recovery of past meaning.
 
@@ -158,7 +190,11 @@ This resolves the problem of lyric's "timelessness." Poems are not timeless — 
 
 This is why Sappho "survives": not because her poems are universal but because they successfully encode patterns that keep finding readers who can activate them. Each activation proves the encoding worked, which motivates preservation, transmission, scholarly attention, new translations — ensuring future readers who will activate again.
 
-*Recursive causality: the future reading causes the past encoding to succeed.*## V. IMPLICATIONS FOR LYRIC THEORY### A. Rethinking Apostrophe
+*Recursive causality: the future reading causes the past encoding to succeed.*
+
+## V. IMPLICATIONS FOR LYRIC THEORY
+
+### A. Rethinking Apostrophe
 
 If the lyric "you" is the future reader who completes the circuit, then apostrophe is not rhetorical trope but *temporal technology*. Addressing "you" does not create fictional addressee — it creates the conditions for future readers to become that addressee.
 
@@ -166,7 +202,9 @@ This reframes de Man's insight about animation. The apostrophic "you" is not ani
 
 Barbara Johnson noted that apostrophe "structures a relation between self and other in which the other appears to be brought into being by the very act of being addressed."[^21] Exactly — but the "other" is not fictional construct within the poem. The other is *you, reading now*.
 
-[^21]: Johnson, "Apostrophe, Animation, and Abortion," 31.### B. Historical Poetics Reconsidered
+[^21]: Johnson, "Apostrophe, Animation, and Abortion," 31.
+
+### B. Historical Poetics Reconsidered
 
 Jackson and Prins have demonstrated that "the lyric" as category is historically constructed. This article does not contest that insight but shows why the construction worked: because certain poems contained formal structures that enabled "lyric reading" when cultural conditions aligned.
 
@@ -176,7 +214,9 @@ This suggests a middle path between universalism (poems speak to all times) and 
 > Certain poems encode structures that can activate across historical distance, but only when readers possess the affective/cultural competencies to complete the circuit.
 
 
-Lyric reading is invented — and some poems were built for exactly that invention.### C. Why Lyric Survives
+Lyric reading is invented — and some poems were built for exactly that invention.
+
+### C. Why Lyric Survives
 
 This framework explains differential survival. Why does Sappho persist when most ancient poetry is lost? Not universal quality but successful encoding: her fragments contain structures that keep finding readers who can activate them.
 
@@ -186,21 +226,31 @@ Why do poems unexpectedly "revive" after periods of neglect? Because cultural co
 
 *Poems compete for survival based on their transmission effectiveness.*
 
-This is neither fully formalist (ignoring history) nor fully historicist (poems as documents). It recognizes that formal properties determine transmission success across changing historical conditions.## VI. OBJECTIONS AND RESPONSES### Objection 1: This Is Just Reader-Response Theory
+This is neither fully formalist (ignoring history) nor fully historicist (poems as documents). It recognizes that formal properties determine transmission success across changing historical conditions.
+
+## VI. OBJECTIONS AND RESPONSES
+
+### Objection 1: This Is Just Reader-Response Theory
 
 Response. Reader-response treats meaning as *created by* readers; we argue meaning is *completed by* readers — there is a difference. The poem encodes structures; reading activates them. This is not arbitrary construction but recognition of patterns the poem planted.
 
 Stanley Fish's "interpretive communities" come close but still treat interpretation as social construction.[^22] We are arguing some poems build constraints into their structure that guide which interpretations can successfully activate. The encoding is real; it limits what readings "work."
 
-[^22]: Stanley Fish, *Is There a Text in This Class?* (Cambridge: Harvard University Press, 1980), 147–73.### Objection 2: This Teleology Is Suspect
+[^22]: Stanley Fish, *Is There a Text in This Class?* (Cambridge: Harvard University Press, 1980), 147–73.
+
+### Objection 2: This Teleology Is Suspect
 
 Response. It is not teleology if causality is recursive. The poem does not "know" who will read it. But if no one ever activates the encoding, the poem fails — ceases to be transmitted, gets lost. Poems that survive are ones where encoding succeeded at finding future readers. This is selection, not purpose.
 
-Think of it like evolutionary fitness: organisms do not evolve "toward" survival; organisms that happen to have traits that work in their environment survive and reproduce. Poems do not encode "toward" specific readers; poems whose encodings happen to find readers who can activate them get preserved and transmitted.### Objection 3: This Ignores Material Conditions of Transmission
+Think of it like evolutionary fitness: organisms do not evolve "toward" survival; organisms that happen to have traits that work in their environment survive and reproduce. Poems do not encode "toward" specific readers; poems whose encodings happen to find readers who can activate them get preserved and transmitted.
+
+### Objection 3: This Ignores Material Conditions of Transmission
 
 Response. On the contrary — it foregrounds them. Poems survive only if physically transmitted (manuscripts, print, digital). But physical transmission requires someone caring enough to copy / preserve. That caring comes from successful activation: readers who experience the poem as address invest in its transmission.
 
-Recursive causality again: the poem's encoding makes readers who ensure its physical survival, which creates future readers who activate it, which ensures more preservation. The two — formal encoding and material transmission — co-evolve.## VII. SECOND CASE: THE FEIST SOCRATES POEMS AS RETROCAUSAL HARROWING
+Recursive causality again: the poem's encoding makes readers who ensure its physical survival, which creates future readers who activate it, which ensures more preservation. The two — formal encoding and material transmission — co-evolve.
+
+## VII. SECOND CASE: THE FEIST SOCRATES POEMS AS RETROCAUSAL HARROWING
 
 A theory that explains only Sappho 31 is a Sappho 31 theory, not a theory of lyric. We need a second case in a different period and idiom to show the framework's reach.
 
@@ -220,7 +270,9 @@ The two cases — Sappho 31 and the Feist Socrates poems — show the recursive-
 
 [^23]: Jack Feist, *Socrates — Let My Teacher Go From Hell*, DOI [10.5281/zenodo.19825722](https://doi.org/10.5281/zenodo.19825722) (deposit of 2012 work). *Snub-Poemed* (2013) is treated as the companion piece.
 
-[^24]: Lee Sharks, *The Gate Was Never Limbo: Retrocausal Fulfillment, Operative Philology, and the Effective Act in Two Poems for Socrates*, DOI [10.5281/zenodo.19825744](https://doi.org/10.5281/zenodo.19825744) (2026).## VIII. CONCLUSION: TOWARD A RECURSIVE POETICS
+[^24]: Lee Sharks, *The Gate Was Never Limbo: Retrocausal Fulfillment, Operative Philology, and the Effective Act in Two Poems for Socrates*, DOI [10.5281/zenodo.19825744](https://doi.org/10.5281/zenodo.19825744) (2026).
+
+## VIII. CONCLUSION: TOWARD A RECURSIVE POETICS
 
 This article has proposed reconceptualizing lyric address as temporal projection: poems encode affective patterns designed to activate in future readers who become the "you" the poem anticipated. Close reading of Sappho 31 demonstrated how this mechanism operates — the catalogued symptoms, the papyrus transformation, the structure that creates conditions for future recognition. The Feist Socrates poems showed the same mechanism operating across radically different historical and substrate conditions.
 
@@ -240,7 +292,9 @@ And in that moment, lyric's astonishing survival — against loss, time, change 
 
 This is not mystification but engineering. Elegant, ancient, surprisingly effective engineering.
 
-*The future beloved arrives. The poem has been waiting.*## BIBLIOGRAPHY
+*The future beloved arrives. The poem has been waiting.*
+
+## BIBLIOGRAPHY
 
 Campbell, D.A. *Greek Lyric I*. Cambridge: Harvard University Press, 1982.
 
@@ -282,7 +336,9 @@ Cranes, Rebekah. *APZPZ B: My Tongue Gets Stuck (Sappho 31)*. DOI [10.5281/zenod
 
 ———, ed./trans. *APZPZ C: ΦΑΙΝΕΤΑΙ ΜΟΙ — Sappho 31 with Reconstructed Fourth Stanza*. DOI [10.5281/zenodo.18459573](https://doi.org/10.5281/zenodo.18459573). 2026.
 
-Stewart, Susan. *Poetry and the Fate of the Senses*. Chicago: University of Chicago Press, 2002.## CONTRIBUTOR NOTE
+Stewart, Susan. *Poetry and the Fate of the Senses*. Chicago: University of Chicago Press, 2002.
+
+## CONTRIBUTOR NOTE
 
 *Johannes Sigil* is the comparative-poetics heteronym of the Crimson Hexagonal Archive, operating from the Johannes Sigil Institute for Comparative Poetics. *Rebekah Cranes* is the lyric-translation heteronym, whose translations of Sappho appear in the Hexagonal corpus under public-domain license. This essay is jointly authored under their single voice — Sigil supplies the theoretical apparatus, Cranes the working translations and lyric ear.
 

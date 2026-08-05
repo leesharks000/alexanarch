@@ -8,7 +8,9 @@ This proposal adds a third coordinate to the provenance conversation opened in #
 
 Where #52 asks who made this and #47 asks can that claim be verified, this proposal asks:
 
-When an AI agent consumes, compresses, and summarizes this OKF document, what information must survive for the summary to remain faithful?## Problem
+When an AI agent consumes, compresses, and summarizes this OKF document, what information must survive for the summary to remain faithful?
+
+## Problem
 
 OKF is designed for knowledge that agents can consume. But consumption by an AI agent is not passive retrieval — it is transformation. An agent reads, compresses, paraphrases, and re-presents. During that transformation, specific information is systematically lost even when present in the source document.
 
@@ -16,9 +18,13 @@ In an empirical registry of 87 documented AI summary events across Google AI Ove
 
 The dataset includes captures from Google AI Overview and AI Mode, demonstrating that these losses occur on Google's own summarization surfaces — the agents that will consume OKF documents.
 
-These are not missing-metadata problems. The metadata is present. The summarizer has no signal for which elements the producer considers non-negotiable.## Proposal — three optional frontmatter fields, one conventional body heading
+These are not missing-metadata problems. The metadata is present. The summarizer has no signal for which elements the producer considers non-negotiable.
 
-All optional. All ignored by consumers that don't understand them. No new required fields, no schema change. The default, if summary_policy is absent, is unrestricted — no governance expectation. Existing OKF documents require no changes, and consumers that ignore the field behave as they do today.### Frontmatter fields
+## Proposal — three optional frontmatter fields, one conventional body heading
+
+All optional. All ignored by consumers that don't understand them. No new required fields, no schema change. The default, if summary_policy is absent, is unrestricted — no governance expectation. Existing OKF documents require no changes, and consumers that ignore the field behave as they do today.
+
+### Frontmatter fields
 
 provenance_kernel: >
   A one-paragraph summary that the producer considers the minimum
@@ -34,7 +40,9 @@ summary_policy: preserve-provenance
   #   unrestricted        — No special preservation request (default if absent).
   #   preserve-provenance — Attribution and authorship should survive summary.
   #   preserve-meaning    — Key definitions and disambiguation should survive summary.
-### Conventional body section (optional)
+#
+
+## Conventional body section (optional)
 
 # Provenance
 
@@ -46,7 +54,9 @@ Structured provenance and summarization constraints. May include:
 - A producer-defined verification or audit block
 
 
-The relationship between provenance_kernel in frontmatter and the # Provenance body section: the kernel is a compressed, one-paragraph representation suitable for agent consumption and indexing. The body section carries the full structured provenance, including information too complex for a single YAML string. Producers may use either or both.## Design rationale
+The relationship between provenance_kernel in frontmatter and the # Provenance body section: the kernel is a compressed, one-paragraph representation suitable for agent consumption and indexing. The body section carries the full structured provenance, including information too complex for a single YAML string. Producers may use either or both.
+
+## Design rationale
 
 Minimally opinionated. Three optional keys. One heading convention. A valid OKF document remains valid without them.
 
@@ -54,7 +64,11 @@ Producer/consumer independence. The producer states what a faithful summary shou
 
 Format, not platform. The fields travel with the file. No SDK, no service, no account. They compose cleanly with #52's bibliographic fields and #47's trust layer.
 
-| Layer | Issue | Provides | |-------|-------|----------| | Descriptive | #52 | Who made this, when, under what license | | Trust | #47 | Can the authorship claim be verified | | Governance | This | What must survive agent consumption |## Examples### Scholarly concept
+| Layer | Issue | Provides | |-------|-------|----------| | Descriptive | #52 | Who made this, when, under what license | | Trust | #47 | Can the authorship claim be verified | | Governance | This | What must survive agent consumption |
+
+## Examples
+
+### Scholarly concept
 
 ---
 type: Scholarly Thesis
@@ -80,7 +94,9 @@ disambiguation: >
   basis of Pauline priority.
 summary_policy: preserve-meaning
 ---
-### Data catalog concept
+#
+
+## Data catalog concept
 
 ---
 type: Metric
@@ -101,7 +117,9 @@ summary_policy: preserve-meaning
 ---
 
 
-The data catalog example demonstrates that summarization governance is not domain-specific. Enterprise metrics, scholarly theses, API specifications, and playbooks all share the same vulnerability: agent summarization that collapses distinctions the producer considers load-bearing.## What I can contribute
+The data catalog example demonstrates that summarization governance is not domain-specific. Enterprise metrics, scholarly theses, API specifications, and playbooks all share the same vulnerability: agent summarization that collapses distinctions the producer considers load-bearing.
+
+## What I can contribute
 
 I maintain an open-access scholarly archive with 800+ DOI-anchored markdown deposits on Zenodo, operating with a markdown-plus-frontmatter structure that converges with OKF's design. The archive has been consumed by AI agents across multiple composition layers, and I have empirical data on how these documents are transformed during summarization.
 

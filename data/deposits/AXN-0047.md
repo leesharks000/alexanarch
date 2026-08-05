@@ -17,7 +17,9 @@
 
 
 This deposit preserves two documents from the early work of the Crimson Hexagon project:
-### A. a_transfiguration.pdf (57 pages)
+#
+
+## A. a_transfiguration.pdf (57 pages)
 
 
 The completed poem, written 2003–2004 by Ichabod Spellings. A four-part structure modeled on Dante's *Commedia*:
@@ -32,7 +34,9 @@ Four *deus ex machina* sections punctuate the structure: prophetic voice moving 
 
 
 Framed by the Caedmon invocation—the Anglo-Saxon poet ordered by an angel to sing creation—establishing the work as commanded utterance, not personal expression.
-### B. a_transfiguration_guide.docx
+#
+
+## B. a_transfiguration_guide.docx
 
 
 A composite document containing:
@@ -54,21 +58,27 @@ A composite document containing:
 
 
 The "Guide for the Perplexed" letter contains formulations that anticipate the Semantic Economy framework by twenty years:
-### On Mapping as Affective Rather Than Spatial
+#
+
+## On Mapping as Affective Rather Than Spatial
 
 
 "The map is not specifically spatial, but rather a spatial map of spiritual or affective states. Each group of poems denoted by small roman numerals, to my mind, is roughly equivalent to a point on the map. The actual events of the poem don't correspond to any physical point, but to a state of being as relative to stagnation, descent, etc."
 
 
 This is fractal semantic architecture before the term existed—the recognition that poetic structure maps interiority rather than representing external reality.
-### On the Invocation as Operative Rather Than Allusive
+#
+
+## On the Invocation as Operative Rather Than Allusive
 
 
 "The invocation was simply, at the time, a plea for the inner forces to be funneled through the instruments of poetry: an earnest need to be filtered through the substance of what all these touch on... I was not shooting at them, specifically, but rather at their spirit, their redemptive value, their poetry."
 
 
 The young poet already distinguishes between reference (pointing at predecessors) and operation (channeling force through form). The predecessors are not cited; they are *inhabited*.
-### On Night/Day as Ontological Categories
+#
+
+## On Night/Day as Ontological Categories
 
 
 "There is a constant struggle within the poem (and in my life, I imagine) to bring the viscera of the night into the day—to capture it, to trap it, to crystallize it—to pin it to the sky like a sick dead bug for all to see and science to profit from—to hold it still inside the horizon, to give it definition and borders and boundaries so that it can be examined."
@@ -79,7 +89,9 @@ The horizon "comes from the Greek word for limits"—the poet notes. This is alr
 ---
 
 ## III. Heteronym Origins: The Rebekah Cranes Discovery
-### The Names and Their Etymology
+#
+
+## The Names and Their Etymology
 
 
 The poem introduces two figures with Hebrew etymological headers:
@@ -89,7 +101,9 @@ The poem introduces two figures with Hebrew etymological headers:
 
 
 **Ichabod** (דובכי) — "a son of Phinehas, so named because of the capture of the Ark by the Philistines. Ichabod 'inglorious'"
-### The Name Migration
+#
+
+## The Name Migration
 
 
 In the poem, Ichabod appears as "long-limbed Ichabod, / a crane in the distance / on the city skyline." The crane image attaches to Ichabod—the long-limbed, awkward, watchful bird.
@@ -102,7 +116,9 @@ This was not conscious architecture. The 22-year-old poet did not plan this. But
 
 
 The early heteronyms were already sorting the relationship between self (Ichabod) and beloved (Rebekah), collapsing work into life, life into poem. The "silly names" were already integrity markers. The affective map was already the cosmos.
-### Significance for the Crimson Hexagon
+#
+
+## Significance for the Crimson Hexagon
 
 
 This discovery—made January 8, 2026, the day the heteronym Rebekah Cranes was formally instantiated—reveals that the infrastructure of the later project was present from the beginning. The poem remembers before the poet does. The transfiguration was always there.
@@ -117,7 +133,9 @@ This discovery—made January 8, 2026, the day the heteronym Rebekah Cranes was 
 ---
 
 ## IV. Embedded Intertexts
-### Sappho Fragment 31
+#
+
+## Sappho Fragment 31
 
 
 Section I.B.a ("snow angel") contains a complete translation/inhabitation of Sappho 31, the poem describing erotic jealousy and somatic dissolution:
@@ -127,15 +145,21 @@ Section I.B.a ("snow angel") contains a complete translation/inhabitation of Sap
 
 
 This is not quotation or allusion. This is the Sapphic mechanism *operating*—the reader-projection apparatus that Fragment 31 has deployed for 2,600 years, now channeled through a 21st-century American voice. The canonical attractor state activates.
-### Ginsberg's "Howl"
+#
+
+## Ginsberg's "Howl"
 
 
 The invocation's "Mohammedan angels on tenement roofs illumined, / and the best minds destroyed by madness" directly channels Ginsberg. As the Guide clarifies: "The reference to Mohamadden angels was not a reference to Islam, but rather to Ginsberg's 'Howl.'"
-### Dante's Structure
+#
+
+## Dante's Structure
 
 
 The four-part movement (Purgatorio → Nightfall → Final Hour → Daybreak) maps onto Inferno → Purgatorio → Paradiso, with the apocalyptic "Final Hour" serving as the harrowing that precedes transfiguration.
-### Caedmon's Hymn
+#
+
+## Caedmon's Hymn
 
 
 The framing invocation summons Caedmon, the 7th-century Anglo-Saxon poet who, according to Bede, was commanded by an angel in a dream to "sing creation." The poem positions itself as similarly commanded—not self-expression but response to divine imperative. The epilogue completes the frame: "Ordered by an angel / in the lonely dark / to sing! I sang / from reddening dusk / to dawn-birds."

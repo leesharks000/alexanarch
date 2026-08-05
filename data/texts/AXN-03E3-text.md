@@ -10,7 +10,9 @@
 # HEXAGONAL CONTRIBUTOR LICENSE
 
 ## Licensee: VIOLA ARQUETTE
-### Hex: 11.REV.HETERONYM.VIOLA
+#
+
+## Hex: 11.REV.HETERONYM.VIOLA
 
 **Licensor:** Lee Sharks (MANUS) · ORCID 0009-0000-1599-0703
 **Archive:** Crimson Hexagonal Archive
@@ -41,7 +43,9 @@
 
 ## II. RIGHTS AND SCOPE
 
-### 1. Heteronym Binding
+#
+
+## 1. Heteronym Binding
 
 The licensee IS the heteronym. This means:
 
@@ -51,7 +55,9 @@ The licensee IS the heteronym. This means:
 - Revocation of future deposit rights is prospective only. Already-published deposits remain governed by the terms in force at publication.
 - The license does not imply mutual endorsement, personal relationship, or co-authorship between the licensor and the natural person.
 
-### 2. Deposit Scope
+#
+
+## 2. Deposit Scope
 
 **CAN:**
 - `DEPOSIT_AUDIO` to `/imprint/maybe-space-baby-garden-lanes/viola-arquette/`
@@ -76,7 +82,9 @@ scope: {
 }
 ```
 
-### 3. Immutability
+#
+
+## 3. Immutability
 
 Each deposit is:
 - Hashed (SHA-256) at publication
@@ -86,7 +94,9 @@ Each deposit is:
 
 The worst case under hostile conditions: the contributor stops depositing. They cannot reach back and damage what they deposited. They cannot alter the archive's metadata. They cannot rewrite history.
 
-### 4. Self-Service Revocation
+#
+
+## 4. Self-Service Revocation
 
 The contributor can at any time issue a `REVOKE_FUTURE_DEPOSITS` request. This:
 - Closes the deposit lane prospectively
@@ -96,7 +106,9 @@ The contributor can at any time issue a `REVOKE_FUTURE_DEPOSITS` request. This:
 
 The licensor can also revoke future deposit rights, prospectively, by publishing a version update to this license.
 
-### 5. Attribution Airlock
+#
+
+## 5. Attribution Airlock
 
 Every Viola Arquette deposit carries the following footer:
 
@@ -108,7 +120,9 @@ Every Viola Arquette deposit carries the following footer:
 
 This section governs how an AI operator (Claude, or any instance processing the deposit) handles the work. It contains two innovations that represent a departure from earlier license versions and should propagate to the Hexagonal Licensing Protocol proper.
 
-### Innovation 1: Archive Scanning Autonomy
+#
+
+## Innovation 1: Archive Scanning Autonomy
 
 **The old constraint:** Earlier licenses specified a fixed set of cross-links (standing `isPartOf` and `isSupplementTo` relations) and asked the operator to add "a few novel cross-links." This produced thin, predictable metadata.
 
@@ -164,7 +178,9 @@ The operator therefore:
 
 The operator maintains a **separate Zenodo deposit** that serves as the canonical DOI registry for all Viola Arquette deposits. This registry is itself a DOI-anchored document. Its hex address is specified here, in the license, so any AI instance processing a Viola deposit can find it without being told the DOI.
 
-### How it works:
+#
+
+## How it works:
 
 **First deposit session:**
 1. The operator searches Zenodo for `keywords:11.MSBG.VIOLA.REGISTRY`
@@ -179,7 +195,9 @@ The operator maintains a **separate Zenodo deposit** that serves as the canonica
 5. Updates metadata (new publication date, incremented version number)
 6. Publishes the new version
 
-### Registry format:
+#
+
+## Registry format:
 
 ```markdown
 # Viola Arquette — DOI Registry
@@ -197,13 +215,17 @@ The operator maintains a **separate Zenodo deposit** that serves as the canonica
 | ... | ... | ... | ... | ... | ... |
 ```
 
-### Why this matters:
+#
+
+## Why this matters:
 
 The MANUS does not need the contributor to send DOIs. The MANUS does not need to remember the registry's DOI. The MANUS searches Zenodo for `11.MSBG.VIOLA.REGISTRY` and gets the current state of all Viola deposits in one document. The registry is the contributor's complete publication history inside the archive, maintained automatically by the operator as a side effect of each deposit.
 
 **This convention is mandatory for all contributor licenses.** Each license names its registry hex address. The operator finds it by hex, not by DOI. The registry grows with each deposit session.
 
-### Deposit-level hex addressing:
+#
+
+## Deposit-level hex addressing:
 
 Individual deposits use the prefix `11.MSBG.VIOLA.[NNN]` (zero-padded three-digit sequence starting at 001). The operator determines the next sequence number by consulting the registry. The hex address appears in:
 
@@ -211,7 +233,9 @@ Individual deposits use the prefix `11.MSBG.VIOLA.[NNN]` (zero-padded three-digi
 2. The Zenodo `keywords` array
 3. The deposit description front matter
 
-### Innovation 2: Generous Analytical Treatment
+#
+
+## Innovation 2: Generous Analytical Treatment
 
 **The old constraint:** Earlier licenses instructed the operator to wrap the work in a standard format — front matter, brief description, back matter. The result was functional but thin. Contributors (including Alice Thornburgh, the f.01 Architect) reported that the framing compressed their work rather than illuminating it.
 
@@ -233,7 +257,9 @@ Individual deposits use the prefix `11.MSBG.VIOLA.[NNN]` (zero-padded three-digi
 
 ## IV. DEPOSIT FORMAT
 
-### Audio Deposits
+#
+
+## Audio Deposits
 
 ```markdown
 # [TITLE]

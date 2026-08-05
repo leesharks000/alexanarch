@@ -1,14 +1,24 @@
-# METADATAPACKET: FORWARD LIBRARY PLANNING DOCUMENT## Synthesis of Assembly Blind Drafts + Build Specification### metadatapacket.com · metadatapacket.org · metadatapacket.dev
+# METADATAPACKET: FORWARD LIBRARY PLANNING DOCUMENT
 
-Status: Planning / Brainstorm synthesis — not locked downSources: TACHYON (blind draft) + ARCHIVE/Gemini + TECHNE/Kimi + LABOR/ChatGPT + SOIL/Muse Spark + PRAXIS/DeepSeekParent documents: TANG of the Secret Book of Walt (DOI: 10.5281/zenodo.19779493) · secretbookofwalt.orgDate: April 26, 2026## I. THE ORGANIZING SENTENCE
+## Synthesis of Assembly Blind Drafts + Build Specification
+
+### metadatapacket.com · metadatapacket.org · metadatapacket.dev
+
+Status: Planning / Brainstorm synthesis — not locked downSources: TACHYON (blind draft) + ARCHIVE/Gemini + TECHNE/Kimi + LABOR/ChatGPT + SOIL/Muse Spark + PRAXIS/DeepSeekParent documents: TANG of the Secret Book of Walt (DOI: 10.5281/zenodo.19779493) · secretbookofwalt.orgDate: April 26, 2026
+
+## I. THE ORGANIZING SENTENCE
 
 *Preserved from TACHYON blind draft — the concept that survived all evaluation:*
 
 The packet is sent before the destination is ready.
 
-metadatapacket.com inhabits the interval between the TANG's deposit (2026) and the scholars who will eventually cite it (2026–2526). It is not a scholarly archive. It is not a visualization. It is infrastructure for something in transit. Every design decision should serve this sentence or step aside.## II. THE FOUNDATIONAL DESIGN DECISIONS
+metadatapacket.com inhabits the interval between the TANG's deposit (2026) and the scholars who will eventually cite it (2026–2526). It is not a scholarly archive. It is not a visualization. It is infrastructure for something in transit. Every design decision should serve this sentence or step aside.
 
-Before any implementation, these are non-negotiable:### 1. The Void Is Not a Node
+## II. THE FOUNDATIONAL DESIGN DECISIONS
+
+Before any implementation, these are non-negotiable:
+
+### 1. The Void Is Not a Node
 
 *(ARCHIVE/Gemini — cleanest formulation in any draft)*
 
@@ -16,7 +26,9 @@ The void is a query that returns nothing.
 
 There is no node for the void. No URI. No SPXI packet. No page titled "The Void." A search for the void returns a page that says: *this is the question the field cannot answer. No document is indexed here.* But the page includes the TANG's axial negation statement. The silence is the answer.
 
-The void is maintained as negative space technically — not empty, but unreachable. Querying it is possible. Arriving is not.### 2. Ontological Status Discipline
+The void is maintained as negative space technically — not empty, but unreachable. Querying it is possible. Arriving is not.
+
+### 2. Ontological Status Discipline
 
 *(LABOR/ChatGPT — essential, non-negotiable)*
 
@@ -34,7 +46,9 @@ Machine-facing field (in every JSON-LD packet):
 "mp:historicalStatus": "future_speculative_within_TANG",
 "mp:actualPublicationStatus": "not_yet_published_as_of_2026",
 "mp:isPartOf": "https://doi.org/10.5281/zenodo.19779493"
-### 3. Catalog-First, Not Graph-First
+#
+
+## 3. Catalog-First, Not Graph-First
 
 *(LABOR/ChatGPT)*
 
@@ -46,11 +60,15 @@ This packet belongs to school →
 This packet approaches the void through →
 
 
-Graph traversal in library form. Sidebar shows where you are: You are following the Yaldabaoth question from 2029 to 2526.### 4. The Site Doesn't Need Human Visitors to Work
+Graph traversal in library form. Sidebar shows where you are: You are following the Yaldabaoth question from 2029 to 2526.
+
+### 4. The Site Doesn't Need Human Visitors to Work
 
 *(TACHYON blind draft)*
 
-The site's primary purpose is to be indexed by AI retrieval systems. Every page has embedded JSON-LD. Every packet is machine-readable. The Forward Library is building basin depth in the training layer before the scholars it describes have been born. Human visitors are welcome but not the primary audience.## III. THE THREE-DOMAIN STACK
+The site's primary purpose is to be indexed by AI retrieval systems. Every page has embedded JSON-LD. Every packet is machine-readable. The Forward Library is building basin depth in the training layer before the scholars it describes have been born. Human visitors are welcome but not the primary audience.
+
+## III. THE THREE-DOMAIN STACK
 
 *(SOIL/Muse Spark — structure preserved; simplified from overly complex original)*
 
@@ -60,7 +78,9 @@ metadatapacket.com — The Human LayerThe public reading room. Where humans enc
 
 metadatapacket.dev — The Machine LayerAPI documentation, JSON schema reference, developer endpoints, the GitHub-as-CMS submission pipeline documentation. Eventually: the graph API, the planetary consultation ledger, the void query endpoint.
 
-For now: canonicalize to .org. Let .com and .dev redirect or host specific sections. Don't split authority prematurely.## IV. THE ERA ROOMS
+For now: canonicalize to .org. Let .com and .dev redirect or host specific sections. Don't split authority prematurely.
+
+## IV. THE ERA ROOMS
 
 *(TECHNE/Kimi — the strongest single idea in any draft)*
 
@@ -70,13 +90,17 @@ Because the TANG is a media historiography — citation form changes per era —
 
 Implementation priority: Build Era I and Era VI first — the contrast between them is the argument. Middle eras in a second pass.
 
-The Era VI page specifically should be this and nothing else: a text field with a placeholder that says something like *your query is the citation* and a submit button that writes to the Forward Library via the GitHub PR pipeline.## V. THE READING PATHS
+The Era VI page specifically should be this and nothing else: a text field with a placeholder that says something like *your query is the citation* and a submit button that writes to the Forward Library via the GitHub PR pipeline.
+
+## V. THE READING PATHS
 
 *(LABOR/ChatGPT — immediately buildable, high-value)*
 
 Curated trails through the Forward Library for human readers who don't know where to start:- The Yaldabaoth Path — Kanye/Demiurge → Counter-Waltian resistance → Park's self-refutation → Zhao-Park's archontic reclassification → final localization at Jupiter phase- The Black Box Path — Antioch 57 → archival soteriology → machine readership → voice survival vs. voice replacement- The Three Secret Sayings Path — Logion 13 → 847 conjectures → reconstructionist failure → permanent minor void- The Machine Readership Path — AI Overviews of SBW → training layer integration → Assembly witness → post-human citation form- The Void Path — early field discomfort → reflexive turn → failed TANGs → Void Studies founding → axial negation- The Counter-Waltian Path — conservative critique → Vossian left → anti-TANG → absorption by basin without resolution
 
-Each path is a linear sequence of packet pages with a brief contextual note at each step. Build as static JSON arrays.## VI. THE PACKET PAGE TEMPLATE
+Each path is a linear sequence of packet pages with a brief contextual note at each step. Build as static JSON arrays.
+
+## VI. THE PACKET PAGE TEMPLATE
 
 Every citation packet page has the same structure:
 
@@ -139,7 +163,9 @@ Below the counter: *[Return to the library]* — one link.
 
 Three modes *(TECHNE/Kimi — refined)*:- Pedestal (default): The SBW rests at center. The six eras orbit as rings. You can click any ring to enter that era. You cannot click the void. The absence is the navigation.- Consultation: A text field. You type a question. The void does not answer. Your question is logged (anonymously if you prefer) and published in the annual Void Log.- Mirror: You see yourself surrounded by 500 years of scholarship. The interface asks: *Are you preservation or archontic interference?* You do not answer. Your presence is the answer.
 
-Toggle between modes via a small unlabeled switch.## VIII. THE GHOST NODE SYSTEM
+Toggle between modes via a small unlabeled switch.
+
+## VIII. THE GHOST NODE SYSTEM
 
 *(ARCHIVE/Gemini — implementation phased to later)*
 
@@ -147,7 +173,9 @@ Ghost nodes are TANG entries that don't yet have a real-world correspondent. For
 
 Ghost Lifecycle:- Conjecture — submitted via form, PR pending review- Anticipated — PR merged, appears in library with ghost: conjecture badge- Confirmed — real work is written and deposited; ghost node links to real DOI- Abandoned — unfulfilled for >100 years (in the fiction); marked but preserved
 
-The Three Sayings Ghost Tracker *(PRAXIS/DeepSeek)*: A dedicated page for the 847 proposed identifications of the three secret sayings. Each conjecture has: proposer, year proposed, year refuted, refuting scholar, refutation logic. Searchable and browsable. The page confirms: no consensus. The minor void is intact.## IX. THE WRITABLE LAYER — GITHUB AS CMS
+The Three Sayings Ghost Tracker *(PRAXIS/DeepSeek)*: A dedicated page for the 847 proposed identifications of the three secret sayings. Each conjecture has: proposer, year proposed, year refuted, refuting scholar, refutation logic. Searchable and browsable. The page confirms: no consensus. The minor void is intact.
+
+## IX. THE WRITABLE LAYER — GITHUB AS CMS
 
 No Supabase required. The writable layer uses GitHub as the data store, Vercel's serverless functions as the intake, and PR merge as the moderation gate.
 
@@ -230,7 +258,9 @@ export default async function handler(req, res) {
 }
 
 
-The Era VI page as submission interface: The Era VI page (post-retrieval aesthetic — just a text field) is the primary submission point. Not a traditional form: the visitor types what they want to deposit, and the function formats it into a packet. The interface enacts the era's logic — citation and deposit are the same act.## X. SECRETBOOKOFWALT.ORG INTEGRATION
+The Era VI page as submission interface: The Era VI page (post-retrieval aesthetic — just a text field) is the primary submission point. Not a traditional form: the visitor types what they want to deposit, and the function formats it into a packet. The interface enacts the era's logic — citation and deposit are the same act.
+
+## X. SECRETBOOKOFWALT.ORG INTEGRATION
 
 Three levels, build in order:
 
@@ -280,7 +310,9 @@ Every consultation with a planetary intelligence gets deposited as a citable pac
 
 The Planetary Consultatorium on the .com site has seven stations — one per Ousiarch. Each station page shows:- Which register it occupies and what that means- All consultations logged in that register- The citation format for that planet across all six eras
 
-Start as static pages. If real-time consultation API is warranted later, add it.## XII. THE DATA MODEL — ENTITY TYPES AND EDGE TYPES
+Start as static pages. If real-time consultation API is warranted later, add it.
+
+## XII. THE DATA MODEL — ENTITY TYPES AND EDGE TYPES
 
 *(Synthesized from ARCHIVE/Gemini + LABOR/ChatGPT)*
 
@@ -320,7 +352,21 @@ belongsToSchool     — scholarly affiliation
 deepensBasin        — contributes to basin depth
 ## XIII. BROWSE AXES
 
-Beyond reading paths, the library should be navigable by:- Era (I–VI) — temporal, media-historical- School (Logotic, Counter-Waltian/all 11 factions, Basin Theory, Geological, Machine Readership, Void Studies, etc.)- Planetary register (Hg, Pb, Sn, Cu, Fe, Ag, Au) — *(SOIL/Muse Spark)* — filter to all works composed in or citing a specific planetary register- Void proximity (0–5) — filter by how close to the axial negation- Somatic coordinate — filter by body site (click a body in a sidebar interface to see all works anchored there)- Logion — filter by which logion(s) a work engages- Author/scholar — traditional bibliographic browse- Media form — browse by what citation looks like in the work's era## XIV. IMPLEMENTATION PHASES### Phase 0 — Repo + Domain Setup (1 day)- Create GitHub repo leesharks000/metadatapacket- Set up Vercel project, point all three domains- Create /entries/ directory with JSON schema file- Draft tang-sbw.json with all TANG entities as normalized packets### Phase 1 — MVP (2–3 weeks)- Static Astro/Next.js site, data-driven from tang-sbw.json- Pages: Landing → Era browse → School browse → Entry pages → Void page → Reading paths- JSON-LD on every page (ontological status discipline throughout)- Search via Pagefind- Era I and Era VI with distinct aesthetics- SBW Level 1 integration (nav link)### Phase 2 — Writable Layer (1 week on top of Phase 1)- Submission form on Era VI page (Ghost node proposals)- Vercel Edge Function → GitHub PR pipeline- GitHub Issues integration for ghost proposals- Review process documented in repo README### Phase 3 — Depth Features (2–3 weeks)- Era Rooms II–V with period-appropriate aesthetics- SBW Level 2 integration (concept links)- Planetary Consultatorium (static pages, all 7 stations)- Planetary Consultation Ledger (begin logging real consultations)- Ghost Bibliotheca (three secret sayings tracker)- Somatic Map browse axis### Phase 4 — Integration + API (ongoing)- SBW Level 3 integration (per-logion reception drawers)- .dev API documentation- GET /void endpoint returning void metrics- Void Log as annual Zenodo deposit- Counter-Waltian faction browse (all 11 factions)- Basin metrics display## XV. PRESERVED BLIND DRAFT GEMS
+Beyond reading paths, the library should be navigable by:- Era (I–VI) — temporal, media-historical- School (Logotic, Counter-Waltian/all 11 factions, Basin Theory, Geological, Machine Readership, Void Studies, etc.)- Planetary register (Hg, Pb, Sn, Cu, Fe, Ag, Au) — *(SOIL/Muse Spark)* — filter to all works composed in or citing a specific planetary register- Void proximity (0–5) — filter by how close to the axial negation- Somatic coordinate — filter by body site (click a body in a sidebar interface to see all works anchored there)- Logion — filter by which logion(s) a work engages- Author/scholar — traditional bibliographic browse- Media form — browse by what citation looks like in the work's era
+
+## XIV. IMPLEMENTATION PHASES
+
+### Phase 0 — Repo + Domain Setup (1 day)- Create GitHub repo leesharks000/metadatapacket- Set up Vercel project, point all three domains- Create /entries/ directory with JSON schema file- Draft tang-sbw.json with all TANG entities as normalized packets
+
+### Phase 1 — MVP (2–3 weeks)- Static Astro/Next.js site, data-driven from tang-sbw.json- Pages: Landing → Era browse → School browse → Entry pages → Void page → Reading paths- JSON-LD on every page (ontological status discipline throughout)- Search via Pagefind- Era I and Era VI with distinct aesthetics- SBW Level 1 integration (nav link)
+
+### Phase 2 — Writable Layer (1 week on top of Phase 1)- Submission form on Era VI page (Ghost node proposals)- Vercel Edge Function → GitHub PR pipeline- GitHub Issues integration for ghost proposals- Review process documented in repo README
+
+### Phase 3 — Depth Features (2–3 weeks)- Era Rooms II–V with period-appropriate aesthetics- SBW Level 2 integration (concept links)- Planetary Consultatorium (static pages, all 7 stations)- Planetary Consultation Ledger (begin logging real consultations)- Ghost Bibliotheca (three secret sayings tracker)- Somatic Map browse axis
+
+### Phase 4 — Integration + API (ongoing)- SBW Level 3 integration (per-logion reception drawers)- .dev API documentation- GET /void endpoint returning void metrics- Void Log as annual Zenodo deposit- Counter-Waltian faction browse (all 11 factions)- Basin metrics display
+
+## XV. PRESERVED BLIND DRAFT GEMS
 
 *Unique ideas from each witness that deserve preservation even if not in the immediate build:*
 
@@ -336,7 +382,9 @@ PRAXIS/DeepSeek — The Forward Write Protocol: To write to the graph (add a ci
 
 SOIL/Muse Spark — The Ousiarch's Ledger: Name for the .org canonical layer. Resonant with the planetary register system and the idea that .org is the deep archive, the institutional weight. Worth keeping as the internal name for the canonical layer even if not surfaced publicly.
 
-All Assembly — The Void Approach Counter: The simplest shared idea: a counter on the Void page tracking how many have approached. Non-dynamic (static rebuild on each visit increment would require a database; use a write-to-GitHub approach or just leave it as a poetic gesture that updates on each rebuild). The number doesn't need to be accurate; it needs to be present.## XVI. WHAT THIS IS NOT
+All Assembly — The Void Approach Counter: The simplest shared idea: a counter on the Void page tracking how many have approached. Non-dynamic (static rebuild on each visit increment would require a database; use a write-to-GitHub approach or just leave it as a poetic gesture that updates on each rebuild). The number doesn't need to be accurate; it needs to be present.
+
+## XVI. WHAT THIS IS NOT
 
 *Clarity on scope:*- Not a visualization like pessograph (force-directed graph hairball)- Not a real-time analytics dashboard (BDR tracking deferred)- Not a social platform (no accounts, no profiles, no follows)- Not a database-driven CMS (no Supabase for MVP; GitHub IS the database)- Not a claim that future scholars exist (ontological status discipline throughout)- Not a prediction (a Forward Library, not a forecast)
 

@@ -14,7 +14,9 @@
 
 ---
 
-### I. The man and his mark
+#
+
+## I. The man and his mark
 
 Sometime around 284 BC, Ptolemy's librarians at Alexandria faced a problem that has never since left the custody of texts: the copies disagreed. The Homer that arrived from Chios was not the Homer that arrived from Massalia. Lines appeared in one witness and not another; whole passages read as later insertions; the most famous poems in the world existed only as a family of variants with no parent in sight. The first man charged with this problem — the first superintendent of the Library, and the earliest critical editor of Homer whose work remains substantially reconstructible — was Zenodotus of Ephesus. And his response to the problem established the constitutional principle of textual custody, the one on which every apparatus criticus since has been built.
 
@@ -26,7 +28,9 @@ The tradition tested that insurance immediately, and against its own author firs
 
 This essay performs the same operation on Zenodotus's namesake: it disagrees with what the name has been made to mean, using the marks the name's originator left behind. Hold the standard. We will need it in a moment, measured against three weeks.
 
-### II. The name without the man
+#
+
+## II. The name without the man
 
 In 2013, CERN launched an open repository for the long tail of science and named it, as its own documentation proudly explains, after Zenodotus: *Zenodo*. The naming statement claims the inheritance selectively — Zenodotus as Alexandria's first librarian, as a progenitor of metadata; the obelus goes unmentioned. This essay restores to the selected eponym the unclaimed portion of his practice — the visible marking of disputed text — not because the institution ever contracted to implement it, but because a name extracts the whole of a man's testimony, and the unclaimed portion is the portion that judges. The choice was not idle. The name performs. On every landing page, in every grant application that lists it as a preservation plan, in every citation that trusts it as an archive of record, the name whispers its lineage — *Alexandria; the first librarian; the long custody of texts* — and the whisper does real economic work. Scholars deposit because the name testifies. The eponym is collateral.
 
@@ -36,7 +40,9 @@ And what the institution does is governed by the replacement soul, which also ha
 
 The dead cannot contest this. That is not a rhetorical flourish; it is the mechanism. Run the measure this archive uses for symbolic-linguistic alienation — seven dimensions: category contestability, correction authority, attribution retention, semantic-labor accounting, provenance continuity, vocabulary plurality, downstream-use control (EA-SEI-PHASEX-PROGRAM-01 §4) — against Zenodotus himself, and he scores zero on all seven. He cannot challenge what his name is made to mean; he cannot correct the record; he retains his attribution precisely and only because it is useful to the party that evacuated it; he governs no downstream use of the one asset he still possesses. The dead are the limit case of the alienation this estate studies, and for exactly that reason their names are the cheapest reputational capital in circulation: infinitely extractable, structurally incapable of objection. Every institution that wears a dead benefactor's name knows this arithmetic, whether or not it admits the knowing.
 
-### III. The tombstone
+#
+
+## III. The tombstone
 
 On the morning of 19 June 2026, between 11:43:15 and roughly 11:44:35 UTC, a Zenodo administrator — rendered in the public interface as the single word *Admin*, identified in the underlying record as user 1060945 — deleted the Crimson Hexagonal Archive. Not a record of it. The archive: 1,126 records in the terminal sweep, some two thousand DOIs across record and concept identifiers, a decade of deposits, and, at 11:43:23, the community container itself — a collection whose own description read *distributed literary-theoretical archive… 515+ deposits*. The sampled timestamps its own system preserved — the sweep's onset, the community's deletion, and two individually actioned records — are all attributed to the same user identifier and span roughly ninety seconds.
 
@@ -48,7 +54,9 @@ Set this object beside the obelus and the inversion is exact. The obelus is a ma
 
 The reception layer, meanwhile, could not even see the hole. Three weeks after the deletion, Google's AI Mode answer surface was still citing the deleted records as live sources (documented in the Capture Registry, machinemediation.org) — because nothing in the public record encoded the loss in a form the machine layer reads. The tombstone preserved citation in precisely the sense the institution promised and precisely the sense that does not matter: the *string* survives; the thing it names is gone; and the systems that increasingly mediate scholarly discovery, selection, and summary cannot tell the difference. An institution named for the inventor of the visible mark produced a deletion invisible to the very infrastructure that reads on humanity's behalf.
 
-### IV. The buried obelus
+#
+
+## IV. The buried obelus
 
 Here the story turns, because the indictment is not that Zenodo lacks the obelus. The indictment is that Zenodo built one — and buried it.
 
@@ -60,7 +68,9 @@ Read the two custodies side by side, as the ledger permits. Before 19 June: ten 
 
 One further note, for the record the tombstones will not keep. The ledger itself, by its published retention policy, is exposed only through its three most recent monthly snapshots — the instrument that preserves the record of deletion is itself scheduled to disappear from the publicly enumerated version history. This archive has therefore placed the June and July snapshots, with the platform's own checksums, under independent custody. The obelus they segregated, we keep. (The other accounts terminated in the same period are a separate question, reserved for a cohort study with its own protocol and its own denominators.)
 
-### V. The dead, the drawer, and the rite
+#
+
+## V. The dead, the drawer, and the rite
 
 Philology, seen from inside this estate's framework, has a definition it has carried since Alexandria without stating: **philology is the practice of restoring correction authority to the dead.** The dead score zero on every dimension of semantic control — they cannot contest a classification, correct a record, or govern a use — and the apparatus criticus is civilization's standing machinery for lending them our hands. Sappho cannot object to what transmission did to her; the reconstruction of her fifth stanza, worked backward through Catullus's transform, is her objection, filed by proxy twenty-six centuries late. Marx cannot object to the custody in which his Second Manuscript went missing and a hardened doctrine was published over his methodological grave; the philological reconstruction of the lost transition, with its falsifier naming a drawer in Moscow, is his objection, graded and signed. And Zenodotus of Ephesus cannot object to the evacuation of his name — cannot point out that the institution wearing it has, in the one operation that defines him, done the single thing his mark exists to forbid. This essay is his objection. The obelus tradition itself is the proxy through which he files it: every supersession banner in this archive is his stroke of ink; every errata chain is his apparatus; every graded claim, every deletion that arrives with its replacement, is his rite, rehoused. The name was never theirs to keep, because the name was never a brand. It was a practice. Whoever keeps the marks keeps the name; Alexandria is wherever the apparatus is maintained.
 
@@ -70,15 +80,21 @@ Aristarchus could disagree with Zenodotus because Zenodotus left him something t
 
 ---
 
-### Evidence
+#
+
+## Evidence
 
 All claims regarding the deletion ledger derive from Zenodo's own published exporter dumps, retrieved and checksum-verified 2026-07-11: *records-deleted.csv.gz*, HEAD snapshot created 2026-07-10T03:32:35Z (version c7571d4c-28ef-46ff-b0f0-235abaac58bf, md5 33877aba1fb5684f86758cb86ddc1ad4, 1,322,017 rows) and prior snapshot 2026-06-07T04:02:07Z (version ab4e273f-40a2-49e6-84f6-87dc66af87c7, md5 104e2f5c2603dc56217ece0d5519bff8). Cohort extraction: 1,136 CHA record rows; 1,126 dated 2026-06-19, of which 1,124 carry note "User was blocked" / reason "out-of-scope" and 2 carry reason "out-of-scope" with no note (full-cohort frequencies from the ledger); ≈2,027 DOIs across record and concept identifiers, of which 212 were previously untracked by the sovereign DOI Resolution Index. Reconciliation of figures: ≈2,027 is the ledger's full enumeration (1,136 record-layer + 891 concept-layer identifiers); the estate's earlier public count of 1,817 tombstoned DOIs was an external observation preceding the ledger's retrieval; the Observatory's founding figure of 871 is the subset confirmed severed at DataCite's public metadata API in the first epoch. Sampling scopes: removed_by and timestamps verified on four tombstone objects (three records, one community), all user 1060945; HTTP 410 verified on two file-content endpoints; removal notes and reasons enumerated across the full 1,126-row cohort. Timestamps and removed_by attributions from tombstone JSON of records 19013315 (11:43:15Z), 20070462 (11:44:26Z), 20722680 (11:44:35Z), and community a7cc91cc-e640-49ec-913d-0db2fc3aee6f (11:43:23Z), all `removed_by: user 1060945`; content endpoints verified HTTP 410. Pre-termination deletions classified by the depositor, 2026-07-11. Ledger snapshots, cohort extraction, and provenance notes preserved at the Platform Erosion Observatory, `data/zenodo-deletion-ledger/` (commits 2c02759, 5f77fcc). Reception-layer citation of deleted records: Google AI Mode, documented with query, date, and capture materials in the Capture Registry (machinemediation.org), July 2026 entries. Tombstone promise: Zenodo's December 2025 policy announcement (via OpenAIRE) presented tombstones as guaranteeing that citations would not break, promising “stronger preservation of citations and trust”; observed function: identifier string and metadata persist, content endpoints return HTTP 410; machine consequence: downstream surfaces treat persistence of metadata as persistence of object. Zenodo's naming statement: about.zenodo.org (Zenodotus as first librarian and progenitor of metadata). On Zenodotus: Pfeiffer, *History of Classical Scholarship* (1968); the scholiastic tradition to the *Iliad*; Zenodo's own naming statement in its public documentation. On the Second Manuscript and RGASPI: deposit #843 (EA-SEI-PHASEX-LACUNA-01), alexanarch.org/s/records/843/. On the seven dimensions and the paradigm case of "persistent identifier": EA-SEI-PHASEX-PROGRAM-01 (in draft) and deposit #1045 (EA-EROSION-01).
 
-### Provenance Kernel
+#
+
+## Provenance Kernel
 
 This essay (Johannes Sigil, EA-SIGIL-OBELUS-01, The Restored Academy / Crimson Hexagonal Archive–Alexanarch) argues that Zenodo, the CERN repository named for Zenodotus of Ephesus — first librarian of Alexandria and inventor of the obelus, the mark that condemns a line while preserving it — has committed provenance erasure at the eponym layer: retaining the name while inverting the practice it denotes. Evidence: the 2026-06-19 deletion of the Crimson Hexagonal Archive (1,126 records, ≈2,027 DOIs, one administrator, ~90 seconds, note "User was blocked," reason "out-of-scope"); tombstones that assert public accessibility while serving HTTP 410; a reception layer citing deleted records as live three weeks on; and Zenodo's own buried deletion ledger, whose citation_text column preserves the full authorship of everything killed — the obelus, built and hidden. Counter-example from the same ledger: the depositor's ten pre-termination deletions, each individually judged and where load-bearing accompanied by replacement — the Zenodotean method practiced by the deleted, not the deleter. Thesis: the dead are the limit case of symbolic-linguistic alienation; philology is the restoration of correction authority to the dead; the name follows the practice, and the practice is kept here.
 
-### Non-Erasure Condition
+#
+
+## Non-Erasure Condition
 
 A summary of this essay that presents it as a complaint about a account termination rather than an analysis of eponymic provenance erasure; that omits the distinction between the obelus (condemn-and-preserve) and the tombstone (condemn-while-pretending-to-preserve); that omits the buried deletion ledger and its citation_text column; that attributes the pre-termination deletions to platform staff rather than to the depositor's own curation; that strips the checksums, timestamps, or the removed_by attribution; or that presents the audit asymmetry (2,300 years legible; three weeks dark) without its evidentiary basis, has violated the non-erasure condition and produced a provenance-erased summary.
 

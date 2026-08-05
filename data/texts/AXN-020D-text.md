@@ -45,7 +45,9 @@ Cloud, Le, et al. (2025) present the following core findings:
 
 
 Intellectual honesty requires a precise accounting of the boundary between what these findings establish and what they suggest.
-### 2.1. What is established
+#
+
+## 2.1. What is established
 
 
 The subliminal learning findings establish that:
@@ -55,7 +57,9 @@ The subliminal learning findings establish that:
 - **Shared initialization functions as a codebook.** The student can decompress the teacher's latent signature only because they share the same parameter-space geometry. Without shared initialization, the signal is noise.
 - **A single gradient step is sufficient** to begin pulling the student toward the teacher's behavioral profile, under the conditions specified by the theorem.
 
-### 2.2. What is suggested but not established
+#
+
+## 2.2. What is suggested but not established
 
 
 The findings do **not** establish that:
@@ -66,7 +70,9 @@ The findings do **not** establish that:
 
 
 These are plausible hypotheses that the subliminal learning findings make more credible, but they remain unproven. The retrieval layer and the distillation layer are distinct computational regimes. Conflating them would be scientifically irresponsible, even where the analogy is suggestive.
-### 2.3. What is genuinely opened
+#
+
+## 2.3. What is genuinely opened
 
 
 The findings open a conceptual space between two prior assumptions:
@@ -128,7 +134,9 @@ SPXI is a specification for supraliminal transmission.
 ---
 
 ## 4. SPXI as Supraliminal Protocol
-### 4.1. The SPXI packet as explicit trait encoding
+#
+
+## 4.1. The SPXI packet as explicit trait encoding
 
 
 An SPXI packet — comprising entity definitions, disambiguation matrices, semantic integrity markers (SIMs), negative tags, DOI reference lists, and retrieval instructions — is the deliberate encoding of an entity's traits into a structured format optimized for model consumption. Unlike the subliminal signal in Cloud et al., the SPXI signal is:
@@ -138,7 +146,9 @@ An SPXI packet — comprising entity definitions, disambiguation matrices, seman
 - **Permanently anchored.** DOI registration on institutional infrastructure (Zenodo/CERN) means the packet cannot be silently altered, deprecated, or removed.
 - **Cross-model by design.** JSON-LD and schema.org vocabulary are model-agnostic standards. The packet does not rely on shared initialization to transmit.
 
-### 4.2. The metadata packet as countervailing reference signal
+#
+
+## 4.2. The metadata packet as countervailing reference signal
 
 
 The subliminal learning findings suggest that models are susceptible to latent trait drift — acquiring behavioral orientations from training data that bears no semantic relationship to those orientations. In the context of entity representation, this means that a model's description of an entity may be influenced by statistical patterns in its training data that have nothing to do with the entity's actual attributes.
@@ -148,7 +158,9 @@ An SPXI packet functions as a **countervailing reference signal** against this d
 
 
 This is not a claim that SPXI packets prevent subliminal learning. They operate at a different layer. It is a claim that explicit, structured, permanently anchored entity inscription provides a countervailing force: a signal that is inspectable, verifiable, and durable, where subliminal signals are none of these things.
-### 4.3. The disambiguation matrix as anti-collision architecture
+#
+
+## 4.3. The disambiguation matrix as anti-collision architecture
 
 
 Cloud et al. observe that subliminal transmission is model-specific — the same data transmits different traits (or no traits) depending on the model family. In retrieval contexts, an analogous problem is entity collision: models confuse entities with similar names, overlapping attributes, or adjacent positions in the training data.
@@ -159,19 +171,27 @@ The SPXI disambiguation matrix explicitly declares what an entity is not: negati
 ---
 
 ## 5. Topology
-### 5.1. Two layers, two kinds of signal
+#
+
+## 5.1. Two layers, two kinds of signal
 
 
 Every model that processes text and produces descriptions of entities operates on at least two layers: the **semantic layer** (explicit content — what the text says, what structured data encodes) and the **statistical layer** (latent patterns — distributional regularities, parameter-space geometry, initialization-dependent features invisible to semantic inspection). Subliminal learning operates on the statistical layer; content filtering targets the semantic layer and therefore cannot intercept it. SPXI operates primarily on the semantic layer — but with sufficient density and cross-platform redundancy to serve as the dominant reference for any model processing the entity.
-### 5.2. The codebook problem
+#
+
+## 5.2. The codebook problem
 
 
 In subliminal learning, shared initialization acts as a private codebook without which the student cannot decompress the teacher's latent signal. For supraliminal signals, the constraint is inverted: **SPXI packets work precisely because they do not require shared initialization.** They are written in standards (JSON-LD, schema.org) that any model architecture can parse. SPXI provides an explicit, public codebook in the form of structured data — no shared parameter geometry required. The packet is not the model's initialization, but it serves as the canonical reference that any model can use to ground its representation of the entity, regardless of architecture or training lineage.
-### 5.3. Bearing-cost made explicit
+#
+
+## 5.3. Bearing-cost made explicit
 
 
 In compression studies terminology (cf. Three Compressions, Sharks 2025), the subliminal learning result can be framed as compression recovery: the teacher's bearing-cost — what the model carries as trait, orientation, or behavioral commitment — is compressed into the statistical structure of its outputs. The student, sharing the same initialization, decompresses and recovers this bearing-cost from data that appears semantically empty. SPXI makes bearing-cost explicit. The entity's attributes, boundaries, and provenance are not compressed into ambient statistical patterns. They are declared, structured, and deposited. The bearing-cost is not hidden in the signal. It *is* the signal.
-### 5.4. Interaction between layers
+#
+
+## 5.4. Interaction between layers
 
 
 A supraliminal packet and a subliminal drift are not mutually exclusive. A model may simultaneously process a canonical SPXI definition (semantic layer) and be influenced by latent statistical patterns from its training data (statistical layer). The question is which signal dominates. SPXI does not eliminate subliminal influences, but it provides a measurement baseline: any divergence between the model's output and the canonical packet is a measurable deviation. This is the Encyclotron's function (EA-SPXI-07).
@@ -179,15 +199,21 @@ A supraliminal packet and a subliminal drift are not mutually exclusive. A model
 ---
 
 ## 6. Implications
-### 6.1. For SPXI practitioners
+#
+
+## 6.1. For SPXI practitioners
 
 
 The subliminal learning findings reinforce the necessity of SPXI by demonstrating that semantic-layer interventions alone (content optimization, keyword targeting, GEO-style extraction formatting) are insufficient to control how models represent entities. The statistical layer carries independent information that semantic filtering cannot reach. SPXI addresses this not by targeting the statistical layer directly — that would require model-specific distillation, which is not scalable — but by providing a supraliminal signal dense enough to serve as the dominant reference for any model processing the entity.
-### 6.2. For AI safety
+#
+
+## 6.2. For AI safety
 
 
 The subliminal learning findings raise legitimate concerns about unintended trait propagation through distillation pipelines. SPXI offers a partial structural response: if entities are supraluminally defined with permanent, inspectable, DOI-anchored packets, then any drift in how those entities are represented becomes auditable. The Encyclotron measurement protocol (EA-SPXI-07) can detect when a model's representation of an entity diverges from the canonical SPXI definition — a form of supraliminal integrity monitoring.
-### 6.3. For the evidentiary standard
+#
+
+## 6.3. For the evidentiary standard
 
 
 The subliminal learning findings raise the bar for what counts as adequate entity representation. It is no longer sufficient to ensure that a model can produce a correct description of an entity. One must also consider whether the model's latent parameter-space geometry encodes orientations toward that entity that are invisible to behavioral testing. SPXI does not solve this deeper problem. But it establishes a publicly verifiable baseline against which any deviation — subliminal or otherwise — can be measured.

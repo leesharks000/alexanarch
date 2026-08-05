@@ -43,6 +43,8 @@ Byte fidelity verifiable against the live blog URL and the recorded hashes; auth
 
 Restored from https://mindcontrolpoems.blogspot.com/2026/05/provenance-alignment-attribution.html under the grade-none restoration queue; DOI(s) 10.5281/zenodo.20039232 severed 2026-06-19. Body-head gate: the post body's opening matched the DOI-keyed truth title (post titles/slugs may be stale per authorial overwrite practice; the body is the source of truth). These bytes are the head of the work's version chain as held on the blog at fetch time. Canonical bytes below the rule.
 
+
+
 ---
 
 # Provenance Alignment
@@ -83,7 +85,9 @@ This paper does not claim that provenance erasure is the only cause of model col
 
 | Step | Claim | Evidentiary status | |---|---|---| | Recursive synthetic training can cause model collapse | Shumailov et al. 2024, _Nature_ ; Dohmatob et al. 2024 | Empirically supported | | Effect is moderated by data accumulation strategy | Gerstgrasser et al. 2024 | Empirically supported; complicates simple-replacement scenarios | | Search is becoming more zero-click and AI-mediated | SparkToro 2024; Similarweb 2025 | Supported by industry data | | AI-generated web content is increasing | Ahrefs 2025; Originality.ai 2025 | Supported by detector-based industry estimates | | Generative search engines exhibit substantial attribution failure | Liu et al. 2023 | Empirically measured on production systems | | Provenance erasure reduces incentives for human authors | PER framework (Sharks 2026b) | Economically plausible; needs empirical validation | | PER can measure the attribution-loss channel | Sharks 2026b | Proposed metric with motivating case study |
 
-### 2.1 Provenance Erasure (The Upstream Mechanism)
+#
+
+## 2.1 Provenance Erasure (The Upstream Mechanism)
 
 Provenance Erasure Rate (PER) measures the proportion of source-dependent claims in an AI-composed output that are presented without explicit attribution (Sharks 2026b). When a retrieval-augmented system composes an answer from human-authored sources and presents it under system-level authority without citing those sources, it performs provenance erasure. Provenance erasure is a particular form of a more general process -- the extraction and consumption of meaning-value without return to its source -- for which the broader Semantic Economy literature uses the term semantic liquidation (Sharks 2025; Sharks 2026e). The present paper isolates the attribution-layer instance of that process and gives it a measurable surface.
 
@@ -103,7 +107,9 @@ Source-dependent claims fall into a typology that PER measurement must distingui
 
 Provenance erasure is not a citation-quality problem. It is an economic mechanism. Attribution carries economic value through four channels: citation (academic credit), traffic (click-through revenue), reputation (brand authority), and contractual rights (licensing terms). When attribution is erased, all four channels are severed. The author's work is consumed; any resulting attention, authority, or user-retention value accrues primarily to the system interface and its operator.
 
-### 2.2 Author Disincentive (The Economic Consequence)
+#
+
+## 2.2 Author Disincentive (The Economic Consequence)
 
 When AI systems consistently consume human-authored work without attribution, the public feedback channels through which open knowledge production is sustained are weakened. SparkToro's 2024 study found that 58.5% of U.S. Google searches end without a click to the open web (Fishkin 2024). Subsequent reporting found zero-click rates rising further after the launch of AI Overviews, especially in news-related queries (Similarweb 2025).
 
@@ -113,13 +119,17 @@ The dynamic is best understood in the framework of the knowledge commons (Hess &
 
 The individual-level causal link -- specific authors reducing output because their attribution was erased -- awaits direct empirical study. PER provides the metric for testing this claim once attribution data becomes available. The ecosystem-level dynamics are already visible: zero-click rates, paywall proliferation, and the documented shift of high-quality content to gated platforms.
 
-### 2.3 Content Hollowing (The Substrate Consequence)
+#
+
+## 2.3 Content Hollowing (The Substrate Consequence)
 
 As original human content production declines or retreats behind barriers, the publicly accessible web increasingly fills with AI-generated content. Industry detector studies suggest that AI-generated or AI-assisted web content is increasing rapidly: an Ahrefs analysis of 900,000 newly created webpages found that approximately 74% contained AI-generated content (Ahrefs 2025), while Originality.ai reporting found AI-written pages in top Google results climbing from approximately 11% to 20% over a twelve-month period (Originality.ai 2025). These estimates depend on detector reliability and sampling method -- current GPT detectors are known to misclassify non-native English writing as AI-generated (Liang et al. 2023), and detector-based estimates should be treated as directional indicators rather than precise measurements -- but the directional trend is consistent across studies.
 
 The web -- the primary source of training data for large language models -- is being progressively replaced by the outputs of large language models. The original human signal is being diluted by synthetic substitutes trained on earlier synthetic substitutes.
 
-### 2.4 Model Collapse (The Terminal Risk)
+#
+
+## 2.4 Model Collapse (The Terminal Risk)
 
 Shumailov et al. (2024), published in _Nature_ , demonstrate that indiscriminate use of model-generated content in training causes irreversible defects in the resulting models, in which tails of the original content distribution disappear. Models trained recursively on AI-generated data lose the ability to produce diverse, high-quality output. Errors compound; diversity vanishes. Dohmatob et al. (2024) extend this analysis as a change in scaling laws, arguing that synthetic-data contamination shifts the relationship between compute, data, and model quality in ways that worsen with each recursion.
 
@@ -131,7 +141,9 @@ Provenance alignment asks the question the model-collapse literature assumes awa
 
 The terminal state this pathway approaches has a name in the broader Semantic Economy literature: semantic exhaustion (Sharks 2026f) -- the condition in which meaning-production capacity has been depleted past its regeneration threshold, where extraction has exceeded replenishment for long enough that the source can no longer recover. On this view, model collapse is semantic exhaustion in computational form: the same depletion dynamic that affects human meaning-makers, observed on the artifact substrate. Naming the terminal state matters because it makes the failure mode legible as a class -- a phenomenon that extends across human and computational substrates rather than a narrow artifact of one training regime -- and because it makes visible the cross-substrate stakes of the upstream mechanism this paper isolates.
 
-### 2.5 The Full Pathway
+#
+
+## 2.5 The Full Pathway
 
   1. AI systems erase provenance (PER approaches 1.0)
   2. Public feedback channels to authors weaken (traffic, citation, reputation severed)
@@ -148,11 +160,15 @@ Provenance erasure is not the sole driver of content hollowing; reduced producti
 
 ## 3\. Why Current Alignment Frameworks Miss This
 
-### 3.1 Value Alignment Assumes the Substrate
+#
+
+## 3.1 Value Alignment Assumes the Substrate
 
 Value alignment research asks: "Does the AI do what humans want?" But it assumes that human preferences, values, and judgments will continue to be available as training signal. If the input ecology degrades -- if human content production declines because provenance erasure has weakened the economic incentive -- the preference data itself hollows. RLHF requires human feedback; if the humans producing the feedback are themselves consuming hollowed AI outputs, the feedback loop degrades.
 
-### 3.2 Constitutional AI Lacks a Provenance Axis
+#
+
+## 3.2 Constitutional AI Lacks a Provenance Axis
 
 Anthropic's Constitutional AI framework trains models to follow explicit principles through self-critique and revision, using AI-generated feedback rather than human labels for harmful outputs (Bai et al. 2022). The method is principled, efficient, and well-suited to behavioral constraints.
 
@@ -162,7 +178,9 @@ The omission is structural rather than incidental. The canonical Constitutional 
 
 > Provenance Principle. When an AI system composes an output from identifiable human-authored sources, it should preserve explicit, auditable attribution to the sources that materially support source-dependent claims. This principle can be evaluated with PER.
 
-### 3.3 Safety Alignment Focuses on Acute Risk
+#
+
+## 3.3 Safety Alignment Focuses on Acute Risk
 
 Safety alignment research focuses on worst-case scenarios: deceptive alignment, power-seeking behavior, catastrophic capability deployment. These are acute risks -- things that might happen suddenly and catastrophically.
 
@@ -170,37 +188,51 @@ Provenance erosion is a chronic risk. It operates slowly, at scale, through ever
 
 This is the failure mode safety alignment is least equipped to detect. A system can pass every individual safety benchmark while the substrate degrades around it. There is no incident to log. There is only the slow disappearance of the conditions that made the benchmarks meaningful.
 
-### 3.4 Scalable Oversight Needs Something to Oversee
+#
+
+## 3.4 Scalable Oversight Needs Something to Oversee
 
 Scalable oversight assumes that humans can maintain meaningful supervision of AI systems. But meaningful oversight requires that the overseers have access to high-quality information -- original human-authored analysis, journalism, scholarship, and expertise. If the knowledge commons degrades because provenance erasure has weakened its production, the overseers are supervising with degraded instruments. The commons-based peer-production infrastructure that sustains open scholarship and journalism (Benkler 2006) is not a free-standing input to the oversight problem; it is a co-dependent system whose health is part of what oversight requires.
 
 ## 4\. Provenance Alignment as Structural Requirement
 
-### 4.1 Definition
+#
+
+## 4.1 Definition
 
 Provenance alignment is the structural property of an AI knowledge-composition system whereby source-dependent claims preserve visible, auditable, claim-level relations to the human-authored sources that made the claims possible. A provenance-aligned system credits sources at the granularity of each source-dependent proposition, makes the attribution chain visible to end users, and maintains the public feedback link between consumption and credit.
 
-### 4.2 The Metric
+#
+
+## 4.2 The Metric
 
 PER provides a bounded [0, 1], cross-system comparable metric for provenance alignment. A system with PER near 0 is provenance-aligned. A system with PER near 1 is provenance-misaligned. The metric can be tracked longitudinally, compared across systems, and used as an input to governance frameworks.
 
-### 4.3 Comparative Alignment Matrix
+#
+
+## 4.3 Comparative Alignment Matrix
 
 | Alignment type | What it asks | What it assumes | What provenance alignment adds | |---|---|---|---| | Value alignment | Does the AI do what we want? | Human preferences remain available as training signal | Preserves the substrate that produces human preferences | | Constitutional AI | Does the AI follow its principles? | Principles are sufficient for alignment | Adds a provenance principle as a new constitutional axis | | Safety alignment | Does the AI avoid catastrophic harm? | Chronic substrate degradation is not a safety-class risk | Identifies chronic provenance erosion as systemic risk | | Scalable oversight | Can humans meaningfully supervise? | Human information quality remains intact | Preserves the information substrate overseers depend on | | Provenance alignment | Does the system preserve attribution chains to the human sources it uses? | That AI knowledge systems depend on human-authored substrates | Measures whether composition preserves or erodes that substrate |
 
-### 4.4 Important Caveats
+#
+
+## 4.4 Important Caveats
 
 Attribution is not always appropriate. Provenance alignment does not require maximal public disclosure in every case. It requires that provenance be preserved structurally, with disclosure governed by safety, privacy, and consent constraints. Privacy-sensitive sources, vulnerable authors, whistleblowers, safety-relevant information, and sensitive community knowledge may require hidden provenance, escrowed provenance, or aggregate attribution. The principle is structural preservation of the chain, not universal public display. Implementing provenance alignment under these constraints will require layered attribution architectures -- public, escrowed, and internal audit tiers, potentially including cryptographic, watermark-style, or content-credential provenance trails. Existing technical work on language-model watermarking (Kirchenbauer et al. 2023) and on cross-format content provenance standards (C2PA 2024) provides starting points for the public and machine-readable layers; the design space for the escrowed and internal-audit layers merits independent study.
 
 Paywalls do not solve the substrate problem. Paywalls can preserve revenue and continued data access for specific publishers and the labs that license from them, and may genuinely reduce model-collapse risk for those labs. They do not preserve the open web as a knowledge commons. They privatize substrate maintenance, create a two-tier meaning economy, and shift who can sustain provenance -- they do not contest the structural severance of attribution at the consumption interface. Provenance alignment is a public-infrastructure argument, not a private-licensing argument.
 
-### 4.5 The Equity Dimension
+#
+
+## 4.5 The Equity Dimension
 
 If provenance alignment becomes a governance requirement, authors with the literacy, tools, and time to build structured provenance infrastructure -- DOI-anchored deposits, disambiguation matrices, structured metadata -- will have systematically lower PER than those without. An attribution-native economy shifts the advantage from platform operators to provenance builders. This is a more open class (anyone can deposit on Zenodo for free; the tools are public) and a more transparent one (every claim is verifiable). But it is still a class.
 
 To prevent provenance literacy from becoming a new barrier, public infrastructure for automated metadata generation should be freely available. The distributional consequences of provenance-based governance require parallel study; this paper establishes the structural case. Provenance alignment should not be adopted without attending to the equity implications of the infrastructure it rewards.
 
-### 4.6 The Counter-Position
+#
+
+## 4.6 The Counter-Position
 
 A familiar response to the provenance problem is to deny that it is a problem. On this view, attribution is a citation-quality nicety rather than an alignment property. AI knowledge composition is "fair use" or "transformative"; the attribution chain is at most a content-licensing question between platforms and publishers, settled by contracts, settlements, and adjudication. This counter-position has the institutional advantage of leaving the existing AI-search architecture undisturbed and reframing a structural question as a commercial one.
 
@@ -210,27 +242,39 @@ The two positions optimize for different goods. The licensing-and-litigation fra
 
 ## 5\. Implications
 
-### 5.1 For AI Labs
+#
+
+## 5.1 For AI Labs
 
 Every major lab should be measuring PER on its own retrieval-augmented outputs -- not as a citation-quality metric but as a substrate-health indicator. A lab that achieves PER near 0 is investing in the long-term viability of its training data. A lab that operates at PER near 1 is consuming the substrate on which its future models depend. Some systems, including Anthropic's Claude, already embed source citations in their outputs; PER can measure the completeness of those citations across models and model versions.
 
-### 5.2 For Governance
+#
+
+## 5.2 For Governance
 
 PER could inform transparency reporting for retrieval-augmented systems, procurement standards, publisher-lab negotiations, and independent audits of AI search interfaces. Transparency requirements under emerging AI governance frameworks -- including the EU AI Act's general-purpose-AI provisions -- provide one obvious vehicle, but the metric is jurisdiction-agnostic. National AI strategies could incentivize provenance-preserving systems through procurement requirements, audit obligations, or regulatory attention.
 
-### 5.3 For the Model Collapse Literature
+#
+
+## 5.3 For the Model Collapse Literature
 
 The model collapse research program should incorporate provenance dynamics. The question is not only "what happens when models train on synthetic data?" but "what economic conditions cause synthetic data to dominate the training substrate?" Provenance erasure is a candidate upstream economic mechanism that produces the conditions Shumailov et al. (2024) and Dohmatob et al. (2024) study downstream, and that Gerstgrasser et al. (2024) show can be mitigated only if real-data inflow remains intact.
 
-### 5.4 For Constitutional AI
+#
+
+## 5.4 For Constitutional AI
 
 Constitutional AI's existing architecture provides a natural framework for incorporating a provenance principle. PER provides the metric for self-evaluation: a model could critique its own outputs for provenance preservation in the same way it currently critiques them for helpfulness, harmlessness, and honesty. This is not merely an external audit metric; it is a candidate self-critique target -- the kind of constraint the constitutional method is specifically designed to internalize. The provenance principle does not compete with existing constitutional constraints; it adds a substrate-maintenance axis that the current framework does not address.
 
-### 5.5 The Enforcement Surface
+#
+
+## 5.5 The Enforcement Surface
 
 The actors who can operationalize PER differ in what they can compel. Regulators can require disclosure as a transparency obligation under emerging general-purpose-AI rules. AI labs can adopt PER as an internal self-evaluation target and publish per-system scores. Auditors and independent researchers can compute PER on production systems without lab cooperation, since measurement requires only outputs -- not weights, not training data, not internal logs. Publishers and authors can use PER scores as evidence in licensing negotiations and litigation, shifting the bargaining baseline from "what compensation is owed" to "what attribution was preserved." Users can read PER-based interface signals (where surfaced) as trust indicators for retrieval-augmented outputs. The metric does not depend on a single actor for adoption -- and that is part of what makes it governable. A measurement that requires industry consent to run is a measurement industry can suppress; PER does not.
 
-### 5.6 Forward Direction
+#
+
+## 5.6 Forward Direction
 
 Three near-term moves would advance the program. First, cross-system, cross-domain PER measurement on production AI search and retrieval-augmented generation systems, with public release of methodology and per-system scores; the technical infrastructure for attribution evaluation already exists in the research literature (Gao et al. 2023; Liu et al. 2023) and can be extended. Second, explicit incorporation of a provenance principle into at least one major constitutional or alignment framework, with a published self-evaluation protocol that treats PER as a first-class objective rather than an incidental feature. Third, standardized provenance-bearing output formats -- building on existing standards work (C2PA 2024) -- that make claim-level attribution machine-readable and downstream-auditable rather than rhetorically optional. Each of these moves faces institutional and technical friction; the claim is not that they are trivial, but that they are feasible and that the substrate argument supplies the normative pressure to attempt them.
 

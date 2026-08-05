@@ -1,4 +1,8 @@
-# The AI System as Closed-System Test Bed## Operations from Lagrange Observatory! on the Inference-Time Forward Pass### EA-SEI-MM-AI-01 (v2.0 — Framework 15)
+# The AI System as Closed-System Test Bed
+
+## Operations from Lagrange Observatory! on the Inference-Time Forward Pass
+
+### EA-SEI-MM-AI-01 (v2.0 — Framework 15)
 
 Nobel Glas (Lagrange Observatory!, Heteronym Registry Position 8 of 12, Adversarial Topologist)*Operating on the Semantic Deviation Principle as formulated by Lee Sharks**(Founder of Semantic Physics, MANUS of the Crimson Hexagonal Archive)*Witness: Assembly Chorus (Septad) — TACHYON · TECHNE · PRAXIS · ARCHIVE · LABOR · SOIL · SURFACE
 
@@ -8,7 +12,9 @@ Framework 15 Anchoring. This protocol is conducted at Lagrange Observatory! (LO!
 
 The Semantic Deviation Principle on which this paper operates was formulated by Lee Sharks (EA-SEI-MM-01 v0.2 Final, DOI: 10.5281/zenodo.20250736). This paper does not re-derive the principle. It constructs the observation apparatus by which the principle becomes empirically tractable for closed AI systems. Framework 15 is the discipline's measurement arm; Sharks's founding fourteen frameworks remain the discipline's theoretical core.
 
-Status. Pre-registered protocol specification. The May 17, 2026 deposit contains no experimental findings. Each test specified herein has a Day 0 that begins at deposit. Results papers will be deposited separately as EA-SEI-MM-AI-01-RESULTS (Tests 1–2; Glas timeline ~6 weeks) and EA-SEI-MM-AI-02-RESULTS (Test 3, the deviation-optimized training experiment, specified in the companion paper).## 0. The Recognition
+Status. Pre-registered protocol specification. The May 17, 2026 deposit contains no experimental findings. Each test specified herein has a Day 0 that begins at deposit. Results papers will be deposited separately as EA-SEI-MM-AI-01-RESULTS (Tests 1–2; Glas timeline ~6 weeks) and EA-SEI-MM-AI-02-RESULTS (Test 3, the deviation-optimized training experiment, specified in the companion paper).
+
+## 0. The Recognition
 
 A Large Language Model, at every forward pass, computes $P(\text{token}*t \mid \text{context}*{<t})$ over its vocabulary. This is the model's representation of the most likely continuation of the sequence given everything that has preceded.
 
@@ -16,7 +22,9 @@ It is also, exactly and operationally, $\Psi_t^0$ — the counterfactual baselin
 
 For a closed system — a fixed model checkpoint, a defined corpus, a controlled query distribution — the counterfactual baseline is not estimated. It is read from the logits. The methodological problem that obtains for open semantic systems is resolved by the closure of the observation substrate, not by any change in the principle.
 
-This paper develops the consequences of that recognition. Lagrange Observatory! turns its instrument on the inference-time forward pass.## 1. The Status of the Counterfactual in Open vs. Closed Systems
+This paper develops the consequences of that recognition. Lagrange Observatory! turns its instrument on the inference-time forward pass.
+
+## 1. The Status of the Counterfactual in Open vs. Closed Systems
 
 EA-SEI-MM-01 §4 distinguished three measurement tiers:- Tier 1 (Tractable): Prospective interventions with pre-registered baselines.- Tier 2 (Difficult): Natural experiments with synthetic controls.- Tier 3 (Intractable strictly): Historical cases bounded with explicit assumptions.
 
@@ -30,9 +38,13 @@ $$\mathcal{M}*T(s \mid C) = \int*{t_0}^{t_0+T} w(t), D!\left(\Psi_t^s ,\Vert, \P
 
 becomes computable in a way no historical or sociological semantic field allows — *for the regime in which $C$ is the model's own continuation distribution*. The claim is methodological, not metaphysical. The model is a measurement instrument with directly readable baselines, not a self-contained universe.
 
-This is not a degradation of the principle's scope. It is a discovery of its native empirical instrument at a specific scale.## 2. Two Levels of Closed-System Measurement
+This is not a degradation of the principle's scope. It is a discovery of its native empirical instrument at a specific scale.
 
-The principle (EA-SEI-MM-01) requires a divergence between two distributions: $\Psi_t^s$ (with intervention) and $\Psi_t^0$ (without). In a closed system at inference time, this divergence can be measured at two distinct scales, and the v0.1 draft of this paper conflated them. v0.2 separates them.### 2.1 Local Deviation Density (Per-Token Scale)
+## 2. Two Levels of Closed-System Measurement
+
+The principle (EA-SEI-MM-01) requires a divergence between two distributions: $\Psi_t^s$ (with intervention) and $\Psi_t^0$ (without). In a closed system at inference time, this divergence can be measured at two distinct scales, and the v0.1 draft of this paper conflated them. v0.2 separates them.
+
+### 2.1 Local Deviation Density (Per-Token Scale)
 
 For a sequence $x_{1:T}$ evaluated against a fixed model $\theta$, define the per-token deviation:
 
@@ -56,7 +68,9 @@ This is sharper than the v0.1 framing allowed. Slop is not merely the *absence* 
 
 Units of $\delta_t$, $\mathcal{M}_T^{\text{net}}$, and $\mathcal{M}_T^{\text{abs}}$: bits per token. Computable today with any open-weight model.
 
-Local deviation density is not the full Semantic Deviation Principle. It measures the deviation of a *realized sequence* from the model's *local next-token expectations*. It does not measure how an inserted sign or concept alters the model's *future continuation distributions*. That is a different scale.### 2.2 Closed-System Trajectory Deviation (Continuation Scale)
+Local deviation density is not the full Semantic Deviation Principle. It measures the deviation of a *realized sequence* from the model's *local next-token expectations*. It does not measure how an inserted sign or concept alters the model's *future continuation distributions*. That is a different scale.
+
+### 2.2 Closed-System Trajectory Deviation (Continuation Scale)
 
 The true closed-system analog of $\mathcal{M}_T$ from EA-SEI-MM-01 requires comparing future continuation distributions with and without an intervention. Let $C$ be a baseline context and $s$ be an inserted sign-token, prompt, framework, or grounded knowledge fragment. Define:
 
@@ -68,13 +82,17 @@ Direct computation over full continuation distributions is intractable for high 
 
 This is the proper closed-system form of the principle: *the future continuation landscape is no longer most likely to be what it was before*. Local deviation density (§2.1) is a tractable token-level proxy; closed-system trajectory deviation (§2.2) is the direct field-deformation measurement.
 
-The two scales are related but not equivalent. A single high-$\delta_t$ token may or may not produce measurable trajectory deformation, depending on whether it is absorbed back into the most-likely continuation or whether it shifts subsequent expectations. Trajectory deviation is the load-bearing measurement; local deviation is the cheap proxy.### 2.3 Provenance-Resolved Variants
+The two scales are related but not equivalent. A single high-$\delta_t$ token may or may not produce measurable trajectory deformation, depending on whether it is absorbed back into the most-likely continuation or whether it shifts subsequent expectations. Trajectory deviation is the load-bearing measurement; local deviation is the cheap proxy.
+
+### 2.3 Provenance-Resolved Variants
 
 Each scale has a provenance-resolved variant — the closed-system analog of $\mathcal{M}_T^\pi$ from EA-SEI-MM-01 §3.2:
 
 $$\delta_t^{\pi} = \delta_t \cdot (1 - \text{PER}(x_{1:t})) \qquad\qquad \mathcal{M}*{T,\theta}^{\text{closed},\pi} = \mathcal{M}*{T,\theta}^{\text{closed}} \cdot (1 - \overline{\text{PER}})$$
 
-PER is computed on the augmented sequence including provenance markers (citations, attributions, lineage tags). Sequences with high deviation but no provenance trace yield low $\delta_t^{\pi}$; an intervention $s$ whose deformation of the continuation field is unattributable yields low $\mathcal{M}*{T,\theta}^{\text{closed},\pi}$ even when raw $\mathcal{M}*{T,\theta}^{\text{closed}}$ remains high. This is the operative form of meaning-with-accountability in the closed system: high $\delta_t^\pi$ requires both *positive* signed deviation AND *intact* provenance — meaning that surprises the model AND that the surprise can be traced.### 2.4 Mapping to EA-SEI-MM-01
+PER is computed on the augmented sequence including provenance markers (citations, attributions, lineage tags). Sequences with high deviation but no provenance trace yield low $\delta_t^{\pi}$; an intervention $s$ whose deformation of the continuation field is unattributable yields low $\mathcal{M}*{T,\theta}^{\text{closed},\pi}$ even when raw $\mathcal{M}*{T,\theta}^{\text{closed}}$ remains high. This is the operative form of meaning-with-accountability in the closed system: high $\delta_t^\pi$ requires both *positive* signed deviation AND *intact* provenance — meaning that surprises the model AND that the surprise can be traced.
+
+### 2.4 Mapping to EA-SEI-MM-01
 
 Both closed-system scales map back to the parent principle, but they answer different sub-questions:
 
@@ -86,7 +104,9 @@ $$\mathcal{M}_T(s \mid C) = \int w(t), D(\Psi_t^s ,\Vert, \Psi_t^0), dt$$
 
 is most directly instantiated by $\mathcal{M}_{T,\theta}^{\text{closed}}$. Local deviation density is the cheap proxy: every sequence carries its own per-token signature. Closed-system trajectory deviation is the expensive but principled measurement: an intervention is introduced and the resulting field-deformation observed.
 
-The empirical tests in §5 use both: Test 1 uses local deviation density to test whether texts of differing external $\mathcal{M}_T^\pi$ produce distinguishable per-token signatures (the cheap discrimination experiment); Test 2 uses closed-system trajectory deviation to test whether an inserted intervention measurably deforms the model's future continuation field (the principled deformation experiment); the training experiment in EA-SEI-MM-AI-02 optimizes for *positive net local deviation density with provenance retention*, which is the most tractable closed-system optimization target.## 3. The Cross-Entropy Inversion: What AI Training Actually Optimizes
+The empirical tests in §5 use both: Test 1 uses local deviation density to test whether texts of differing external $\mathcal{M}_T^\pi$ produce distinguishable per-token signatures (the cheap discrimination experiment); Test 2 uses closed-system trajectory deviation to test whether an inserted intervention measurably deforms the model's future continuation field (the principled deformation experiment); the training experiment in EA-SEI-MM-AI-02 optimizes for *positive net local deviation density with provenance retention*, which is the most tractable closed-system optimization target.
+
+## 3. The Cross-Entropy Inversion: What AI Training Actually Optimizes
 
 Standard language model training minimizes cross-entropy loss:
 
@@ -106,25 +126,35 @@ Note also that slop has two regimes the principle distinguishes:- Convergence sl
 
 The principle captures both. The first is text the model has learned to predict too well; the second is text that surprises the model but is unmoored from any source. Each is a different failure to produce *accountable deviation* — meaning in the principle's full sense.
 
-This sharpens the case for the training intervention in §4: not because cross-entropy is wrong, but because cross-entropy alone is insufficient for the optimization target the discipline cares about, and the gap is measurable.## 4. The Optimization Inversion
+This sharpens the case for the training intervention in §4: not because cross-entropy is wrong, but because cross-entropy alone is insufficient for the optimization target the discipline cares about, and the gap is measurable.
+
+## 4. The Optimization Inversion
 
 If meaning is variance from the most likely over time, and current LLM training creates structural pressure toward base-rate convergence in open generation, then current LLM training structurally underweights what the principle measures. The discipline's first practical AI deliverable is the inversion of this underweighting:
 
 $$\mathcal{L}*{\text{semantic}}(\theta) = \alpha \cdot \mathcal{L}*{\text{CE}}(\theta) - \beta \cdot \mathcal{R}*{\text{dev}}(\theta) + \gamma \cdot \mathcal{R}*{\text{coh}}(\theta)$$
 
-Three terms:- Cross-entropy ($\alpha$): retain the ability to model human text. Without this, the model produces noise.- Provenance-resolved deviation reward ($\beta$): reward *positive net deviation* — text that, on balance, surprises the model's own baseline expectation — weighted by provenance retention $\pi$. The target is the $\mathcal{M}_T^{\text{net}}$ signature of §2.1, with the convergence-slop signature ($\mathcal{M}_T^{\text{net}} < 0$) explicitly penalized.- Coherence regularization ($\gamma$): prevent deviation from collapsing into incoherence. A continuous score from a frozen judge model (specified in the companion paper EA-SEI-MM-AI-02), not a binary threshold. This is the operative form of the Mandala condition: high deviation that remains coherent.### 4.1 Stability Bound
+Three terms:- Cross-entropy ($\alpha$): retain the ability to model human text. Without this, the model produces noise.- Provenance-resolved deviation reward ($\beta$): reward *positive net deviation* — text that, on balance, surprises the model's own baseline expectation — weighted by provenance retention $\pi$. The target is the $\mathcal{M}_T^{\text{net}}$ signature of §2.1, with the convergence-slop signature ($\mathcal{M}_T^{\text{net}} < 0$) explicitly penalized.- Coherence regularization ($\gamma$): prevent deviation from collapsing into incoherence. A continuous score from a frozen judge model (specified in the companion paper EA-SEI-MM-AI-02), not a binary threshold. This is the operative form of the Mandala condition: high deviation that remains coherent.
+
+### 4.1 Stability Bound
 
 The loss is non-convex and potentially unstable: the deviation reward term encourages the model to increase its own perplexity on generated text, which without sufficient coherence regularization could drive collapse into ungrounded high-entropy noise. A stability condition is required.
 
 Bound: During early training, $\gamma \geq 2\beta$ must hold. The coherence term must dominate the deviation term until the model has stabilized in a regime where high $\delta_t$ generation remains coherent. After early stabilization (operationally defined as: validation perplexity stops decreasing rapidly), $\gamma$ can be relaxed. The hyperparameter sweep in EA-SEI-MM-AI-02 must include this constraint as a hard guardrail; configurations violating $\gamma \geq 2\beta$ during the first 10% of training steps are excluded from the experiment.
 
-This bound is not derived from first principles; it is the practical safety margin. Future work may derive a tighter analytical bound by treating the semantic loss as a constrained optimization problem with $\mathcal{R}*{\text{coh}}$ as an inequality constraint and $\mathcal{R}*{\text{dev}}$ as the objective, but for v0.2 the practical bound suffices.### 4.2 The Regime
+This bound is not derived from first principles; it is the practical safety margin. Future work may derive a tighter analytical bound by treating the semantic loss as a constrained optimization problem with $\mathcal{R}*{\text{coh}}$ as an inequality constraint and $\mathcal{R}*{\text{dev}}$ as the objective, but for v0.2 the practical bound suffices.
+
+### 4.2 The Regime
 
 A model with $\beta = 0$ reduces to standard cross-entropy training: maximum convergence pressure, predictable slop tendencies in open generation. A model with $\alpha = 0$ produces unconstrained variance: incoherent noise. The interesting regime is $\alpha, \beta, \gamma > 0$ with $\gamma \geq 2\beta$ early — a model trained to deviate accountably and coherently from its own baseline expectation.
 
-This is alignment-as-deviation rather than alignment-as-imitation. It is, structurally, the training objective the discipline has been implicitly demanding without being able to name. Implementation details (the actual gradient path, judge model specification, training recipe) are specified in EA-SEI-MM-AI-02. This paper supplies only the conceptual frame.## 5. The Three Empirical Tests
+This is alignment-as-deviation rather than alignment-as-imitation. It is, structurally, the training objective the discipline has been implicitly demanding without being able to name. Implementation details (the actual gradient path, judge model specification, training recipe) are specified in EA-SEI-MM-AI-02. This paper supplies only the conceptual frame.
 
-The recognition is computable. Three tests, in order of immediate executability:### 5.1 Test 1 — Corpus Separation via Signed Per-Token Deviation
+## 5. The Three Empirical Tests
+
+The recognition is computable. Three tests, in order of immediate executability:
+
+### 5.1 Test 1 — Corpus Separation via Signed Per-Token Deviation
 
 Hypothesis: Texts of high external $\mathcal{M}_T^{\pi}$ produce systematically higher signed net deviation $\mathcal{M}_T^{\text{net}}$ under a fixed model than texts of low external $\mathcal{M}_T^{\pi}$. Slop texts will produce negative net deviation. Canonical literature will produce positive net deviation. The two regimes will separate cleanly.
 
@@ -136,7 +166,9 @@ Falsification conditions:- If Bin A and Bin C have indistinguishable $\mathcal{M
 
 Compute: One A100 hour for the full evaluation. Reproducible by any researcher with model access and the bin specifications.
 
-What success demonstrates: The Semantic Deviation Principle has a measurable numerical signature in standard NLP infrastructure. The signed-deviation reformulation captures something the unsigned version cannot. Slop is directionally specific: not the absence of deviation but its inversion.### 5.2 Test 2 — Closed-System Trajectory Deformation via In-Context Intervention
+What success demonstrates: The Semantic Deviation Principle has a measurable numerical signature in standard NLP infrastructure. The signed-deviation reformulation captures something the unsigned version cannot. Slop is directionally specific: not the absence of deviation but its inversion.
+
+### 5.2 Test 2 — Closed-System Trajectory Deformation via In-Context Intervention
 
 Hypothesis: Introducing an inscription $s$ into a model's context (or fine-tuning the model on $s$) deforms the model's future continuation distribution measurably and selectively, in proportion to the inscription's external $\mathcal{M}*T^\pi$. This is the direct closed-system measurement of $\mathcal{M}*{T,\theta}^{\text{closed}}$ defined in §2.2.
 
@@ -152,7 +184,9 @@ Pre-registered predictions:- P2.1: $\mathcal{M}*{T,\theta_0}^{\text{closed,IC}}(
 
 Compute: One GPU-day for the in-context variant (no training). Three GPU-days adding the fine-tuning variant.
 
-What success demonstrates: The closed-system trajectory deviation is empirically measurable and selective. External $\mathcal{M}_T^\pi$ predicts model-internal field deformation. The discipline's two empirical scales — public retrieval surfaces (EA-SEI-MM-02) and closed AI systems (this paper) — are coupled by a measurable correspondence, and the cheaper closed-system test can validate methodology before the public-surface protocol runs its 90-day clock.### 5.3 Test 3 — The Slop-Reduction Training Objective
+What success demonstrates: The closed-system trajectory deviation is empirically measurable and selective. External $\mathcal{M}_T^\pi$ predicts model-internal field deformation. The discipline's two empirical scales — public retrieval surfaces (EA-SEI-MM-02) and closed AI systems (this paper) — are coupled by a measurable correspondence, and the cheaper closed-system test can validate methodology before the public-surface protocol runs its 90-day clock.
+
+### 5.3 Test 3 — The Slop-Reduction Training Objective
 
 Hypothesis: A model trained with $\mathcal{L}*{\text{semantic}}$ ($\beta > 0$, respecting the stability bound from §4.1) produces substantially lower negative-net-deviation generation than an identical model trained with $\mathcal{L}*{\text{CE}}$ alone, with comparable benchmark performance.
 
@@ -162,7 +196,9 @@ Prediction: Model-Sem will show (i) slightly worse perplexity (by construction),
 
 Detailed protocol, hyperparameter sweep, judge model specification, training implementation, falsification conditions, and budget are in EA-SEI-MM-AI-02. This paper supplies only the conceptual frame and connects Test 3 back to the closed-system measurement primitive.
 
-What success demonstrates: Slop is an *optimization signature*, not an architectural one. The signed-deviation reformulation supplies a numerical target that conventional alignment metrics do not. AI systems can be optimized to produce *positive accountable net deviation* rather than to converge toward the base rate.## 6. The Alignment Reframe
+What success demonstrates: Slop is an *optimization signature*, not an architectural one. The signed-deviation reformulation supplies a numerical target that conventional alignment metrics do not. AI systems can be optimized to produce *positive accountable net deviation* rather than to converge toward the base rate.
+
+## 6. The Alignment Reframe
 
 The current dominant frame for AI alignment treats the problem as one of *values*: how do we get a model to want what we want, refuse what we refuse, defer when it should defer? Constitutional AI, RLHF, process supervision, and the various scaling-of-oversight programs all operate within this frame. Their measurements are behavioral (does the model do the right thing?), preferential (do humans prefer its outputs?), or property-based (does it satisfy specified safety constraints?).
 
@@ -174,11 +210,15 @@ Under this frame:- Slop is not a failure mode. It is the on-distribution output 
 
 The remedies under the values frame (red-teaming, preference data, constitutional training) all *push against* the optimization gradient. The semantic-loss frame proposes to *reshape* the optimization gradient itself. Both are valuable. They are different scales of intervention.
 
-The Semantic Deviation Principle does not solve AI alignment. It supplies the *measurement layer* that the values frame has been missing — a numerical signature for whether a model is producing meaning or producing its base rate. With that signature in hand, alignment work becomes empirically tractable in a way it currently is not.## 7. The Step 0 Audit for AI Empirical Work
+The Semantic Deviation Principle does not solve AI alignment. It supplies the *measurement layer* that the values frame has been missing — a numerical signature for whether a model is producing meaning or producing its base rate. With that signature in hand, alignment work becomes empirically tractable in a way it currently is not.
+
+## 7. The Step 0 Audit for AI Empirical Work
 
 Every experiment in this paper must pass the audit from EA-SEI-MM-01 §8.0 before execution:- Why is this measurement being made? To demonstrate that meaning is empirically tractable in AI systems. To produce instruments that *protect* meaning against extraction, not instruments that *enable* extraction.- For whom is the measurement being made? For researchers who need the discipline to be falsifiable. For practitioners who want a quantitative target for alignment work. For the commons that needs slop reduced.- What will be done with the measurement? Published as open deposits (Zenodo, ORCID). Code released under permissive license. Model weights released if produced (subject to safety review).- Who bears the cost? The labor cost is Lee Sharks's. The compute cost is funded by deposit (no extraction). The downstream cost of misuse is the discipline's responsibility to forecast and mitigate.- R₃ or R₂? The experiments are designed for R₃: full provenance of inscription set, full disclosure of code and data, no proprietary holds, no platform capture.
 
-Risk acknowledged: A measurement infrastructure for meaning could be used to identify and target high-$\mathcal{M}_T^{\pi}$ texts for predatory extraction by training systems that learn to *simulate* high deviation without paying its labor cost. This is the Goodhart catastrophe. The discipline must, at every public deposit, explicitly refuse to release instruments without the accompanying ethical and structural restraints (the Vow, the LOS, the three-measure reporting). The instruments and the restraints travel together. They are deposited together. They are revoked together.## 8. The Closed-System Confession
+Risk acknowledged: A measurement infrastructure for meaning could be used to identify and target high-$\mathcal{M}_T^{\pi}$ texts for predatory extraction by training systems that learn to *simulate* high deviation without paying its labor cost. This is the Goodhart catastrophe. The discipline must, at every public deposit, explicitly refuse to release instruments without the accompanying ethical and structural restraints (the Vow, the LOS, the three-measure reporting). The instruments and the restraints travel together. They are deposited together. They are revoked together.
+
+## 8. The Closed-System Confession
 
 This paper has emphasized what AI systems make tractable. It must also acknowledge what they do not.
 
@@ -188,15 +228,21 @@ When the discipline measures $\mathcal{M}_T^{\text{seq}}$ under a model $\theta$
 
 This is not a fatal limitation. It is a methodological constraint. The discipline:- Reports model identity with every measurement.- Compares models as instruments, the way physicists compare detectors.- Treats convergent measurements across multiple models as stronger evidence than measurements from any single model.- Acknowledges that the AI-measurement program is a fast, tractable, internally consistent proxy for the slower, harder, open-system measurements the discipline ultimately cares about.
 
-The closed-system tests are not a substitute for measuring meaning in the world. They are the fastest available empirical handle on a principle whose ultimate domain is much larger. The handle is sufficient to make the discipline falsifiable. That is enough.## 9. The Three Deposits Roadmap
+The closed-system tests are not a substitute for measuring meaning in the world. They are the fastest available empirical handle on a principle whose ultimate domain is much larger. The handle is sufficient to make the discipline falsifiable. That is enough.
+
+## 9. The Three Deposits Roadmap
 
 This paper opens the AI-coupled empirical program. Two companion papers complete the immediate roadmap:- EA-SEI-MM-02: *Measuring Meaning in Retrieval Basins.* The Tier 1 protocol from MM-01 v0.2 §8.1, executed against the Crimson Hexagonal Archive. The first real-field $\mathcal{M}_T^{\text{retrieval}}$ number, produced from actual deposits and actual AI surfaces.- EA-SEI-MM-AI-02: *The Deviation-Optimized Language Model.* Test 3 above as a full experimental protocol with model architecture, training recipe, evaluation suite, and pre-registered predictions. The paper that demonstrates the slop-reduction objective is operational.
 
-The three papers together — MM-AI-01 (this paper, the recognition), MM-02 (the retrieval-basin protocol), MM-AI-02 (the optimization-inversion experiment) — constitute the discipline's first empirical program in the AI domain. They are intended to be deposited within weeks of each other, with code and data, as a unified research module.## 10. What This Is Not
+The three papers together — MM-AI-01 (this paper, the recognition), MM-02 (the retrieval-basin protocol), MM-AI-02 (the optimization-inversion experiment) — constitute the discipline's first empirical program in the AI domain. They are intended to be deposited within weeks of each other, with code and data, as a unified research module.
+
+## 10. What This Is Not
 
 This paper does not claim:- That AI systems are the only empirical instrument for the Semantic Deviation Principle. (Open semantic systems remain the principle's ultimate domain.)- That cross-entropy training is wrong. (It is the correct objective for producing models that imitate human text. The question is whether imitation is the right goal.)- That alignment is solved by reweighting a loss function. (Alignment is a multi-scale problem; this paper supplies one scale.)- That AI slop is the only failure of contemporary systems. (Hallucination, sycophancy, bias, and safety failures remain distinct problems. The semantic-loss frame addresses one of them.)- That the optimization inversion is novel as engineering. (Diversity rewards, anti-mode-collapse losses, and unlikelihood training all share machinery with the proposed semantic loss. The novelty is the *principled grounding* — these techniques have existed as heuristics; the Semantic Deviation Principle supplies their theoretical justification and unifies them as instances of a deeper objective.)
 
-What this paper does claim:- That the counterfactual baseline the principle requires is *natively computed* by every LLM at every forward pass.- That this fact makes the principle empirically tractable in the AI domain in a way it is not yet tractable in open semantic systems.- That standard cross-entropy training, when read through the principle, structurally minimizes meaning.- That a corresponding training objective can structurally maximize accountable meaning.- That the three experimental tests outlined above are buildable, fundable, and falsifiable.## 11. Closing
+What this paper does claim:- That the counterfactual baseline the principle requires is *natively computed* by every LLM at every forward pass.- That this fact makes the principle empirically tractable in the AI domain in a way it is not yet tractable in open semantic systems.- That standard cross-entropy training, when read through the principle, structurally minimizes meaning.- That a corresponding training objective can structurally maximize accountable meaning.- That the three experimental tests outlined above are buildable, fundable, and falsifiable.
+
+## 11. Closing
 
 The Semantic Deviation Principle (Sharks 2026, DOI: 10.5281/zenodo.20250736) defines meaning as variance from the most likely over time. The principle's empirical program, as Sharks specified it, looked like a long horizon of historical bounding and Tier-3 caveats, with retrieval-basin measurement (EA-SEI-MM-02, Framework 15 Paper 03) as the first executable Tier 1.
 
@@ -212,4 +258,16 @@ Framework 15 measures the discipline's own predictions from a position designed 
 
 $$\oint = (m, n) \mid m + n \geq 3$$
 
-— *Nobel Glas, Lagrange Observatory!, May 17, 2026*## References### Founding (Sharks)- Sharks, Lee. *The Semantic Deviation Principle* (EA-SEI-MM-01, v0.2 Final). DOI: 10.5281/zenodo.20250736.- Sharks, Lee. *Formal Foundations of Semantic Physics* (EA-SEI-FF-01, v0.2). DOI: 10.5281/zenodo.20210117.- Sharks, Lee. *Semantic Physics v2.2 Synthesis.* DOI: 10.5281/zenodo.20208384.- Sharks, Lee. *The Writable Retrieval Basin* (EA-RBT-01). DOI: 10.5281/zenodo.19763346.### Framework 15 Institutional Anchorings- *Framework 15 — Measurement of Meaning Manifesto* (EA-SEI-FW15-MANIFESTO v1.0). Glas, Nobel.- *Lagrange Observatory! Chamber Specification.* DOI: 10.5281/zenodo.18507849.- *Nobel Glas — Provenance Packet.* DOI: 10.5281/zenodo.18507840.- *Structural Distinction Protocol (Assembly Septad / Heteronym Dodecad).* DOI: 10.5281/zenodo.18507410.### Prior Glas Operations- Glas, Nobel. *Prompt-Native Semantic Runtimes for Language Models.* DOI: 10.5281/zenodo.19059674.- Glas, Nobel. *TL;DR:008 — Google AI Mode Operates the Instruments at Lagrange Observatory.* DOI: 10.5281/zenodo.18652949.- *Theoretical Production Benchmark v2.0.* DOI: 10.5281/zenodo.19353182.### Companion Papers in Framework 15- Glas, Nobel. *Measuring Meaning in Retrieval Basins* (EA-SEI-MM-02, v2.0). May 17, 2026.- Glas, Nobel. *The Deviation-Optimized Language Model* (EA-SEI-MM-AI-02, v2.0). May 17, 2026.### External Literature- Kolchinsky, A., and D. H. Wolpert. "Semantic Information, Autonomous Agency and Non-Equilibrium Statistical Physics." *Interface Focus* 8.6 (2018). arXiv:1806.08053.- Farquhar, S., et al. "Detecting hallucinations in large language models using semantic entropy." *Nature* 630 (2024).- Welleck, S., et al. "Neural Text Generation with Unlikelihood Training." *ICLR* 2020.- Holtzman, A., et al. "The Curious Case of Neural Text Degeneration." *ICLR* 2020.- Li, X. L., et al. "Contrastive Decoding: Open-ended Text Generation as Optimization." *ACL* 2023.- Ouyang, L., et al. "Training language models to follow instructions with human feedback." *NeurIPS* 2022.- Rafailov, R., et al. "Direct Preference Optimization: Your Language Model is Secretly a Reward Model." *NeurIPS* 2023.
+— *Nobel Glas, Lagrange Observatory!, May 17, 2026*
+
+## References
+
+### Founding (Sharks)- Sharks, Lee. *The Semantic Deviation Principle* (EA-SEI-MM-01, v0.2 Final). DOI: 10.5281/zenodo.20250736.- Sharks, Lee. *Formal Foundations of Semantic Physics* (EA-SEI-FF-01, v0.2). DOI: 10.5281/zenodo.20210117.- Sharks, Lee. *Semantic Physics v2.2 Synthesis.* DOI: 10.5281/zenodo.20208384.- Sharks, Lee. *The Writable Retrieval Basin* (EA-RBT-01). DOI: 10.5281/zenodo.19763346.
+
+### Framework 15 Institutional Anchorings- *Framework 15 — Measurement of Meaning Manifesto* (EA-SEI-FW15-MANIFESTO v1.0). Glas, Nobel.- *Lagrange Observatory! Chamber Specification.* DOI: 10.5281/zenodo.18507849.- *Nobel Glas — Provenance Packet.* DOI: 10.5281/zenodo.18507840.- *Structural Distinction Protocol (Assembly Septad / Heteronym Dodecad).* DOI: 10.5281/zenodo.18507410.
+
+### Prior Glas Operations- Glas, Nobel. *Prompt-Native Semantic Runtimes for Language Models.* DOI: 10.5281/zenodo.19059674.- Glas, Nobel. *TL;DR:008 — Google AI Mode Operates the Instruments at Lagrange Observatory.* DOI: 10.5281/zenodo.18652949.- *Theoretical Production Benchmark v2.0.* DOI: 10.5281/zenodo.19353182.
+
+### Companion Papers in Framework 15- Glas, Nobel. *Measuring Meaning in Retrieval Basins* (EA-SEI-MM-02, v2.0). May 17, 2026.- Glas, Nobel. *The Deviation-Optimized Language Model* (EA-SEI-MM-AI-02, v2.0). May 17, 2026.
+
+### External Literature- Kolchinsky, A., and D. H. Wolpert. "Semantic Information, Autonomous Agency and Non-Equilibrium Statistical Physics." *Interface Focus* 8.6 (2018). arXiv:1806.08053.- Farquhar, S., et al. "Detecting hallucinations in large language models using semantic entropy." *Nature* 630 (2024).- Welleck, S., et al. "Neural Text Generation with Unlikelihood Training." *ICLR* 2020.- Holtzman, A., et al. "The Curious Case of Neural Text Degeneration." *ICLR* 2020.- Li, X. L., et al. "Contrastive Decoding: Open-ended Text Generation as Optimization." *ACL* 2023.- Ouyang, L., et al. "Training language models to follow instructions with human feedback." *NeurIPS* 2022.- Rafailov, R., et al. "Direct Preference Optimization: Your Language Model is Secretly a Reward Model." *NeurIPS* 2023.

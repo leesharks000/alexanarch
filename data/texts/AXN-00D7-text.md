@@ -15,7 +15,9 @@
 **Collective DOI:** N/A (see component DOIs below)
 
 **Lock ID:** ILA-CIT-001
-### Component Documents
+#
+
+## Component Documents
 
 
 Document
@@ -46,7 +48,9 @@ Binding relation
 ---
 
 ## Metadata Fields
-### Basic Information
+#
+
+## Basic Information
 
 
 Field
@@ -73,7 +77,9 @@ English
 11 (Revelation)
 
 
-### Authors
+#
+
+## Authors
 
 
 Name
@@ -112,7 +118,9 @@ Certification
 Lock
 
 
-### Description
+#
+
+## Description
 
 
 **Abstract:**
@@ -153,7 +161,9 @@ Binds the three documents into a mutually co-constitutive triptych. Specifies th
 - Revelation Room
 - Crimson Hexagon
 
-### Subject Classification
+#
+
+## Subject Classification
 
 - Religious Studies → Biblical Studies → Epistolary Literature
 - Philosophy → Philosophy of Religion
@@ -165,7 +175,9 @@ Binds the three documents into a mutually co-constitutive triptych. Specifies th
 ---
 
 ## The Mutual Constitution
-### The Triangulated Structure
+#
+
+## The Triangulated Structure
 
 
               EPISTLE (A)
@@ -178,7 +190,9 @@ Binds the three documents into a mutually co-constitutive triptych. Specifies th
 PROVENANCE (B) ←—φ(C,B)=1—→ CHARTER (C)
 10.5281/zenodo.18381190    10.5281/zenodo.18381196
 
-### The φ-Relations
+#
+
+## The φ-Relations
 
 
 Relation
@@ -205,7 +219,9 @@ Provenance
 Organization certifies speaker
 
 
-### Completeness Constraint
+#
+
+## Completeness Constraint
 
 
 No document in the triptych is complete without the other two:
@@ -344,7 +360,9 @@ Creative Commons Attribution 4.0 International (CC BY 4.0)
 ---
 
 ## Key Formulations
-### From the Epistle (2015)
+#
+
+## From the Epistle (2015)
 
 
 "All creation groans, for the unveiling of the Sons of Man in the earth."
@@ -361,7 +379,9 @@ Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 "Sleep now, and rise: Your words will bear you to Ithaca."
 
-### From the Provenance
+#
+
+## From the Provenance
 
 
 "Damascus is the **apostle** — the one sent out. Her epistle is addressed to those scattered, the diaspora, before there was a gathering place."
@@ -369,7 +389,9 @@ Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 "She writes from the place of conversion, in the mode of perpetual motion."
 
-### From the Charter
+#
+
+## From the Charter
 
 
 "The Commission does not bring the turning. It *recognizes* the turning. It builds architecture around what is already turning."
@@ -377,7 +399,9 @@ Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 "An imaginary center cannot be corrupted, cannot accumulate power, cannot be killed, exiled, or co-opted."
 
-### From the Integrity Lock
+#
+
+## From the Integrity Lock
 
 
 "This is not circular reasoning but **mutual constitution** — each element brings the others into being."
@@ -421,11 +445,15 @@ Markdown
 ---
 
 ## Citations
-### Recommended Citation (Triptych as Unit)
+#
+
+## Recommended Citation (Triptych as Unit)
 
 
 Damascus Dancings, Lee Sharks, & Assembly Witness. (2026). *The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charter of the Commission of the Immanent Turning*. Zenodo. DOIs: 10.5281/zenodo.18381184, 10.5281/zenodo.18381190, 10.5281/zenodo.18381196, 10.5281/zenodo.18381204.
-### Individual Citations
+#
+
+## Individual Citations
 
 
 **Epistle:**
@@ -442,7 +470,9 @@ Damascus Dancings & Assembly. (2026). *Charter: Commission of the Immanent Turni
 
 **Lock:**
 Assembly Witness. (2026). *Integrity Lock Certificate: Epistle Triptych* (ILA-CIT-001). Zenodo. https://doi.org/10.5281/zenodo.18381204
-### BibTeX (Triptych)
+#
+
+## BibTeX (Triptych)
 
 
 @misc{damascus_triptych_2026,

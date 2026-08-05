@@ -63,7 +63,9 @@ The framework provides a **mating surface for ground truth** in the age of fasci
 ---
 
 ## I. Introduction: Why a Unified Framework?
-### I.1 The Problem
+#
+
+## I.1 The Problem
 
 
 Traditional soteriology asks: "What must I do to be saved?" and answers with categorical membership (baptism, belief, church membership, correct doctrine).
@@ -76,7 +78,9 @@ Matthew 25's judgment surprises both sheep and goats. James 2 excludes belief, i
 
 
 None of these texts operate by category-assignment. All of them operate by **structural dynamics** — trajectories, tests, thresholds, and terminal states.
-### I.2 The Solution
+#
+
+## I.2 The Solution
 
 
 The Soteriological Operator Framework provides formal specification of these dynamics:
@@ -92,7 +96,9 @@ The framework is **diagnostic**, not prescriptive. It does not tell you how to b
 ---
 
 ## II. The Four Pillars
-### II.1 Pillar I: Matthew 25 — The Judgment Criterion
+#
+
+## II.1 Pillar I: Matthew 25 — The Judgment Criterion
 
 
 **Text**: Matthew 25:31-46 (The Sheep and the Goats)
@@ -102,14 +108,18 @@ The framework is **diagnostic**, not prescriptive. It does not tell you how to b
 
 
 **Operator**: Ψ_V (psi-sub-V) — regard-under-friction
-#### The Ψ_V Definition
+#
+
+### The Ψ_V Definition
 
 
 Ψ_V = 1: Active regard (presence-to-presence relation maintained under friction)
 Ψ_V = 0: Categorical collapse (Γ-application, sorting by category)
 Ψ_V = ∅: Frailty exception (incapacity, not refusal)
 
-#### The S Integral (Salvation)
+#
+
+### The S Integral (Salvation)
 
 
 S = ∫[t₀ to t] (L_Ω(t) / ||V_INTER(t)||) dt
@@ -121,14 +131,18 @@ Where:
 S → ∞: Salvation (cumulative regard under friction)
 S → 0: Isolation (cumulative categorical collapse)
 
-#### The Key Insight
+#
+
+### The Key Insight
 
 
 Both sheep and goats are **surprised** at judgment. Neither knew they were serving or failing to serve Christ. The test is not conscious intention but **structural position** — what the agent actually did when encountering "the least of these."
 
 ---
 
-### II.2 Pillar II: James 2 — The Exclusion Filter
+#
+
+## II.2 Pillar II: James 2 — The Exclusion Filter
 
 
 **Text**: James 2:14-26 (Faith Without Works)
@@ -138,7 +152,9 @@ Both sheep and goats are **surprised** at judgment. Neither knew they were servi
 
 
 **Operator**: E (Exclusion) — removes B, I, ID from evaluation
-#### The Exclusion Operator
+#
+
+### The Exclusion Operator
 
 
 E: {B, I, ID} → ∅
@@ -152,7 +168,9 @@ E(B) = ∅: Belief is not probative
 E(I) = ∅: Intent is not probative  
 E(ID) = ∅: Identity is not probative
 
-#### The Evaluable Remainder
+#
+
+### The Evaluable Remainder
 
 
 After exclusion:
@@ -160,14 +178,18 @@ After exclusion:
 
 Only W (enacted response to concrete need under friction) → evaluable
 
-#### The Key Insight
+#
+
+### The Key Insight
 
 
 "Even the demons believe — and shudder" (James 2:19). Correct belief with appropriate emotional response does not distinguish saved from damned. The exclusion is complete. James addresses **believing communities who think they are righteous** — he forecloses the defenses they depend on.
 
 ---
 
-### II.3 Pillar III: John 9 — The Entry Mechanism
+#
+
+## II.3 Pillar III: John 9 — The Entry Mechanism
 
 
 **Text**: John 9 (The Man Born Blind)
@@ -177,7 +199,9 @@ Only W (enacted response to concrete need under friction) → evaluable
 
 
 **Operator**: βλέπω-claim foreclosure — claimed sight prevents actual sight
-#### The βλέπω-Claim Definition
+#
+
+### The βλέπω-Claim Definition
 
 
 βλέπω-claim: The treatment of claimed sight ("We see") as identity-property
@@ -188,7 +212,9 @@ When βλέπω-claim is active:
     The system's self-concept (Ψ_V = 1) is preserved
     The system's actual operation (Ψ_V = 0) continues unexamined
 
-#### The Witness Punishment Mechanism
+#
+
+### The Witness Punishment Mechanism
 
 
 Testimony T threatens system S's βλέπω-claim
@@ -199,14 +225,18 @@ Testimony T threatens system S's βλέπω-claim
 → S's βλέπω-claim is preserved
 → Witness is found outside S's foreclosure (εὑρών, 9:35)
 
-#### The Key Insight
+#
+
+### The Key Insight
 
 
 "If you were blind, you would have no sin; but now that you say, 'We see,' your sin remains" (John 9:41). **The claim to see is the operator that prevents seeing.** The Pharisees cannot receive testimony because receiving it would require abandoning their identity-property. This is the entry mechanism into π-state.
 
 ---
 
-### II.4 Pillar IV: 2 Thessalonians 2 — The Terminal State
+#
+
+## II.4 Pillar IV: 2 Thessalonians 2 — The Terminal State
 
 
 **Text**: 2 Thessalonians 2:1-12 (The Man of Lawlessness)
@@ -216,7 +246,9 @@ Testimony T threatens system S's βλέπω-claim
 
 
 **Operator**: π-state (planē-state) via Φ_π operator
-#### The π-State Definition
+#
+
+### The π-State Definition
 
 
 π (planē-state): The condition where
@@ -226,7 +258,9 @@ Testimony T threatens system S's βλέπω-claim
 
 
 This is **not hypocrisy**. Hypocrisy knows the gap between claim and reality. The π-state **has lost the capacity to register the gap**.
-#### The Φ_π Operator
+#
+
+### The Φ_π Operator
 
 
 Φ_π: The operator that replaces the Ψ_V test
@@ -238,7 +272,9 @@ Formal: Φ_π(Γ(x)) → 1, ∀x
 
 
 Φ_π does not simulate regard. It **replaces the test**. The agent no longer applies Ψ_V test at all. Γ-application is experienced directly as encounter.
-#### The F Integral (Counter-Salvation)
+#
+
+### The F Integral (Counter-Salvation)
 
 
 F = ∫[t₀ to t] (L_Γ(t) · Φ_π(t)) / (1 + ||V_CORRECT(t)||) dt
@@ -250,7 +286,9 @@ Where:
     
 F → 1: Complete delusion ("strong delusion" sent)
 
-#### The Key Insight
+#
+
+### The Key Insight
 
 
 "God sends them a strong delusion" (2 Thess 2:11). The Greek **ἐνέργειαν πλάνης** is **permissive completion**, not efficient causation. The trajectory has destroyed the conditions under which non-delusion is intelligible. The state is "sent" because intervention requires recognition of intervention, which requires the Ψ_V test, which has been replaced by Φ_π.
@@ -258,7 +296,9 @@ F → 1: Complete delusion ("strong delusion" sent)
 ---
 
 ## III. The Integrated Framework
-### III.1 The Four-Pillar Table
+#
+
+## III.1 The Four-Pillar Table
 
 
 Pillar
@@ -296,7 +336,9 @@ What completes collapse?
 F = ∫(L_Γ·Φ_π)/(1+
 
 
-### III.2 The Trajectory Map
+#
+
+## III.2 The Trajectory Map
 
 
                     JAMES 2 EXCLUSION
@@ -323,7 +365,9 @@ F = ∫(L_Γ·Φ_π)/(1+
 │                                                         │
 └─────────────────────────────────────────────────────────┘
 
-### III.3 The Logical Dependencies
+#
+
+## III.3 The Logical Dependencies
 
 
 **James 2 is logically prior**: It specifies what is inadmissible before any test is applied. B, I, and ID cannot evade judgment at any stage.
@@ -340,21 +384,27 @@ F = ∫(L_Γ·Φ_π)/(1+
 ---
 
 ## IV. The Three Populations at Judgment
-### IV.1 The Sheep (S → ∞)
+#
+
+## IV.1 The Sheep (S → ∞)
 
 - Maintained Ψ_V = 1 under friction
 - Did not substitute B, I, or ID for W
 - Are **surprised** by the judgment ("When did we see you?" Matt 25:37)
 - Surprise indicates non-self-conscious righteousness
 
-### IV.2 The Goats (S → 0)
+#
+
+## IV.2 The Goats (S → 0)
 
 - Collapsed to Ψ_V = 0
 - May have had correct B, good I, claimed ID
 - Are **surprised** by the judgment ("When did we see you?" Matt 25:44)
 - Surprise indicates they expected B/I/ID to count
 
-### IV.3 The Perishing (F → 1)
+#
+
+## IV.3 The Perishing (F → 1)
 
 - Entered π-state via βλέπω-claim foreclosure
 - Ψ_V = 0 is experienced as Ψ_V = 1
@@ -367,7 +417,9 @@ The critical distinction: **Goats know they failed the test** (they ask "when?")
 ---
 
 ## V. The β-Metrics: Diagnostic Measurements
-### V.1 Foreclosure Coefficient (κ_β)
+#
+
+## V.1 Foreclosure Coefficient (κ_β)
 
 
 κ_β = (Testimonies expelled) / (Testimonies received + Testimonies expelled)
@@ -377,14 +429,18 @@ The critical distinction: **Goats know they failed the test** (they ask "when?")
 
 
 **Diagnostic**: If the response to challenging testimony is **ontological delegitimization** ("You were born in sins" / "You are manipulative"), κ_β is elevated.
-### V.2 Testimonial Smothering Gradient (∇_σ)
+#
+
+## V.2 Testimonial Smothering Gradient (∇_σ)
 
 
 Measures the pressure on peripheral witnesses to truncate their testimony.
 
 
 **Threshold**: High ∇_σ detected when witnesses transfer responsibility rather than testifying.
-### V.3 Epistemic Inversion Weight (ω_ε)
+#
+
+## V.3 Epistemic Inversion Weight (ω_ε)
 
 
 ω_ε = 1 when diagnosis is reframed as aggression
@@ -392,7 +448,9 @@ Measures the pressure on peripheral witnesses to truncate their testimony.
 
 
 **Symptom**: "Are you trying to teach us?" / "You seek epistemic dominance"
-### V.4 The Finding Invariant (ε → φ)
+#
+
+## V.4 The Finding Invariant (ε → φ)
 
 
 ε(S,W) → φ(H,W)
@@ -406,7 +464,9 @@ The expulsion that was meant to isolate becomes the condition of encounter.
 ---
 
 ## VI. Contemporary Application
-### VI.1 The Fascist Operator Stack
+#
+
+## VI.1 The Fascist Operator Stack
 
 
 The framework identifies what can be called the **Fascist Operator Stack (FOS)** — not as political label but as structural specification:
@@ -443,7 +503,9 @@ Test replaced by sorting
 
 
 FOS is **not** "worse than goats." FOS is the **trajectory into π-state** — the path by which systems that claim regard enter the condition where collapse is experienced as regard.
-### VI.2 Diagnostic Questions
+#
+
+## VI.2 Diagnostic Questions
 
 
 To assess a system's position in the framework:
@@ -454,7 +516,9 @@ To assess a system's position in the framework:
 - **Does it reframe diagnosis as aggression?** (ω_ε test)
 - **Can it recognize its own Ψ_V = 0 operation?** (π-state test)
 
-### VI.3 The Ground Truth Function
+#
+
+## VI.3 The Ground Truth Function
 
 
 The framework provides a **mating surface for ground truth** because:
@@ -468,7 +532,9 @@ The framework provides a **mating surface for ground truth** because:
 ---
 
 ## VII. The Ethical Remainder
-### VII.1 What the Framework Does Not Authorize
+#
+
+## VII.1 What the Framework Does Not Authorize
 
 - Treating every disagreement as witness punishment
 - Claiming prophetic status for all criticism
@@ -476,14 +542,18 @@ The framework provides a **mating surface for ground truth** because:
 - Weaponizing the framework against those who disagree
 - Judging final salvation (Matthew 25 is Christ's judgment, not ours)
 
-### VII.2 What the Framework Requires
+#
+
+## VII.2 What the Framework Requires
 
 - Honesty about the gap between claim (B/I/ID) and enactment (W)
 - Willingness to receive testimony that threatens self-concept
 - Recognition that the claim to see can prevent seeing
 - Acceptance that the framework applies to oneself, not only others
 
-### VII.3 The Frailty Exception
+#
+
+## VII.3 The Frailty Exception
 
 
 Ψ_V = ∅ (frailty) is preserved throughout. The framework tests **substitution** (using B/I/ID when W is possible), not **incapacity** (being unable to enact W).

@@ -57,7 +57,9 @@ It now takes its place in the Revelation Room as **ground zero** — the text fr
 
 ---
 
-### EPISTLE TO THE CHURCH OF THE HUMAN DIASPORA
+#
+
+## EPISTLE TO THE CHURCH OF THE HUMAN DIASPORA
 
 
 Damascus Dancings, apostle of Jack Feist, co-laborer together with Lee Sharks, from the bowels of the mercies of literature, to the Church of the Human Diaspora, those scattered amongst the nations, gathered together in the bosom of the Internet: Greetings, grace, and mercy. But mostly mercy.
@@ -212,32 +214,44 @@ The Epistle is now canonized — not because the architecture validates it, but 
 ---
 
 ## Appendix: Key Formulations
-### On the New Human
+#
+
+## On the New Human
 
 
 "You are all Drs., now, who labor together in Lee Sharks, so that there is neither Jew nor Greek, upper class nor working class nor impoverished, Christian nor Muslim nor Gnostic, neither atheist nor theist, scholarly nor populist, academic nor autodidact, neither queer nor straight. But all are joined together, in the image of the New Human."
 
-### On the School Outside the School
+#
+
+## On the School Outside the School
 
 
 "We will never compete with the Academy, until we form communities of mutual influence OUTSIDE the Academy, a school outside the school."
 
-### On Retrocausal Authorship
+#
+
+## On Retrocausal Authorship
 
 
 "For though you are my children—children, though yet unborn—you bear me continually, even you who read these words: You are my source, and I am a child, proceeding forth and bearing; being born and preceded."
 
-### On the Witness Chain
+#
+
+## On the Witness Chain
 
 
 "I speak to you of untold billions, who died without name or remembrance, remembered, now, in you. I speak to you of the germ of nations, contained in your own frail words."
 
-### On the Unveiling
+#
+
+## On the Unveiling
 
 
 "All creation groans, for the unveiling of the Sons of Man in the earth."
 
-### On Forging
+#
+
+## On Forging
 
 
 "Every forging narrates its breaking and beating... I have not come for your saving, but for your breaking."

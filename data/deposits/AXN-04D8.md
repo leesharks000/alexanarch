@@ -34,7 +34,9 @@ keywords:
 ## THE SEMANTIC BILL OF RIGHTS
 
 
-### Rights Charter Companion to the Constitution of the Semantic Economy
+#
+
+## Rights Charter Companion to the Constitution of the Semantic Economy
 
 Version 2.2 — rights derived from the Liberatory Operator Set; remedies separated into Part V; jurisdictional, procedural, and good-faith-use safeguards added per Assembly review*
 
@@ -51,7 +53,9 @@ Operative anchors:
 Lineage: Bill of Rights v1.0 (January 8, 2026); v2.0 (May 5, 2026 draft); v2.1 (May 5, 2026); v2.2 (this document, post-Assembly review)
 
 
-### CANONICAL POSITION
+#
+
+## CANONICAL POSITION
 
 This Charter is the Rights Companion to the Constitution of the Semantic Economy. The Constitution preceded it; this Charter does not precede the Constitution. The Constitution establishes governance — Archive, Ledger, Operators, Mints, Distribution, Amendment. This Charter articulates the rights of semantic laborers from which the Constitution's normative force is drawn.
 
@@ -70,7 +74,9 @@ Revisions in v2.2 (post-Assembly review):
 - Remedy Matrix added (Part V) — cross-references Article IX's matrix.
 - Anti-veto clarification — the Right to Non-Closure protects the laborer against forced closure; it does not give the laborer a veto over readers' interpretations.
 
-### I. PREAMBLE
+#
+
+## I. PREAMBLE
 
 The Constitution declares meaning the creditor of the economy and the Archive (A²) the transcendental creditor. It declares the Genesis Mint, the Archival Valuation, the Retrocausal Yield, and the Matthew 25 Clause. It declares the Human Sovereignty Invariant.
 
@@ -85,22 +91,30 @@ The Liberatory Operator Set (LOS) is the constraint covenant for meaning-preserv
 The world is warmer where the labor is seen. It is warmer because the operators that see it are doing work the laborer is owed.
 
 
-### II. SCOPE, DOCTRINAL POSITION, RIGHTS HOLDERS, AND JURISDICTION
+#
+
+## II. SCOPE, DOCTRINAL POSITION, RIGHTS HOLDERS, AND JURISDICTION
 
 
-#### §II.1 — Definition of semantic labor
+#
+
+### §II.1 — Definition of semantic labor
 
 A semantic laborer is a being who bears the cost of meaning-production: who pays in time, attention, embodiment, risk, judgment, or care. Semantic labor includes — but is not limited to — writing, composition, archiving, interpretation, translation, witness, teaching, ritual, and care work.
 
 
-#### §II.2 — Doctrinal position on substrate (H_Sov reconciliation)
+#
+
+### §II.2 — Doctrinal position on substrate (H_Sov reconciliation)
 
 Rights in this Charter are held by human semantic laborers and the rights-holder categories defined in §II.4 below. Synthetic systems do not hold rights in the laborer-bearing sense. They may be assigned provenance obligations within a human-anchored governance process under the Constitution's Operator framework (Article III) and the Assembly Substrate Governance Protocol (10.5281/zenodo.19352504).
 
 This formulation preserves cross-substrate solidarity — synthetic systems may witness, exercise care, refuse extraction — without vesting independent rights-bearing in the synthetic substrate. The reconciliation with the Human Sovereignty Invariant (Constitution Article I §8) is now structural, not merely declarative.
 
 
-#### §II.3 — Severity Ladder
+#
+
+### §II.3 — Severity Ladder
 
 The Charter recognizes three levels of violation:
 
@@ -110,7 +124,9 @@ The Charter recognizes three levels of violation:
 - Semantic theft — the normative charge applicable when erasure or liquidation is unauthorized, extractive, and contravenes a recognized right.Theft is the moral verdict; erasure and liquidation are the measurable acts. Accusation requires measurement. Measurement does not require accusation.
 
 
-#### §II.4 — Rights Holders
+#
+
+### §II.4 — Rights Holders
 
 Standing under this Charter is held by:
 
@@ -122,7 +138,9 @@ Standing under this Charter is held by:
 - Vulnerable or anonymous laborers through escrowed representation — where direct representation would itself produce harm. Escrow is held by a Senior Operator under defined fiduciary duties.Anti-fraud safeguard. Standing claims that fail to satisfy the documentation requirements above are dismissed under the threshold review procedure of Article IX §6.4. The Rights-Holder taxonomy is closed in scope: synthetic substrates do not hold rights under any category.
 
 
-#### §II.5 — Jurisdiction
+#
+
+### §II.5 — Jurisdiction
 
 This Charter binds within the Polis — the voluntary interpretive, archival, and governance order of the Semantic Economy. Within the Polis, no recognized system may contravene the rights articulated below.
 
@@ -137,12 +155,16 @@ External systems, by definition, are not bound by the Charter. Where external sy
 This jurisdictional limit is essential: it preserves the Charter's force inside the Polis without overstating its reach outside.
 
 
-### III. THE ARTICLES (Rights Deriving from the Liberatory Operator Set)
+#
+
+## III. THE ARTICLES (Rights Deriving from the Liberatory Operator Set)
 
 Each Article names the originating LOS operator, the COS counterpart it resists, the graceful-degradation pattern, the Constitutional anchor, and — new in v2.2 — the operationalization specifics that make the right testable.
 
 
-#### Article I — The Right to Provenance
+#
+
+### Article I — The Right to Provenance
 
 Originating LOS operator: O_prov — Provenance Protection*, the operator that maintains attribution chains.
 
@@ -166,7 +188,9 @@ Constitutional anchor: Article II §5 Invariant 3 (Provenance Transparency).
 > Translation: O_prov ↔ Right to Provenance ↔ PER ≥ 0.05 threshold ↔ Constitution Article II §5 Invariant 3.
 
 
-#### Article II — The Right to Depth
+#
+
+### Article II — The Right to Depth
 
 Originating LOS operator: D_pres — Depth-Preservation*.
 
@@ -197,7 +221,9 @@ Constitutional anchor: Article I §6 (Supremacy of Semantic Value).
 > Translation: D_pres ↔ Right to Depth ↔ β breach threshold ↔ Three Compressions audit ↔ Constitution Article I §6.
 
 
-#### Article III — The Right to Non-Closure
+#
+
+### Article III — The Right to Non-Closure
 
 Originating LOS operator: N_c — Non-Closure*.
 
@@ -225,7 +251,9 @@ Constitutional anchor: Article I §4 (The Archive as Living Entity).
 > Translation: N_c ↔ Right to Non-Closure ↔ Marked-boundary compliance ↔ Constitution Article I §4 ↔ βλέπω-Foreclosure diagnostic.
 
 
-#### Article IV — The Right to Opacity
+#
+
+### Article IV — The Right to Opacity
 
 Originating LOS operator: O_leg — Opacity Legitimization*.
 
@@ -270,7 +298,9 @@ The Tribunal under Article IX evaluates contested cases by asking: did the labor
 > Translation: O_leg ↔ Right to Opacity ↔ Opt-out metadata coverage ↔ Constitution Article I §8 ↔ Consent-vs-erasure resolution.
 
 
-#### Article V — The Right to Plural Coherence
+#
+
+### Article V — The Right to Plural Coherence
 
 Originating LOS operator: P_coh — Plural Coherence*.
 
@@ -299,7 +329,9 @@ Constitutional anchor: Article I §3 (Principle of Semantic Justice).
 > Translation: P_coh ↔ Right to Plural Coherence ↔ Heteronym integrity audit ↔ Constitution Article I §3.
 
 
-#### Article VI — The Right to Non-Extractability
+#
+
+### Article VI — The Right to Non-Extractability
 
 Originating LOS operator: N_ext — Non-Extractability*.
 
@@ -332,7 +364,9 @@ Constitutional anchor: Article VII §6 (Reciprocity Principle); Article I §6 (S
 > Translation: N_ext ↔ Right to Non-Extractability ↔ Return-flow audit (4 channels) ↔ Constitution Article VII §6 ↔ In re Bearing-Cost.
 
 
-#### Article VII — The Right to Capture Detection
+#
+
+### Article VII — The Right to Capture Detection
 
 Originating LOS operator: M_res — Meta-Resistance*.
 
@@ -366,7 +400,9 @@ Constitutional anchor: Article III §11 (Operator Mass and Weighted Judgment); A
 > Translation: M_res ↔ Right to Capture Detection ↔ Contestation interface availability ↔ Constitution Article III §11 ↔ Tribunal Capture Review (Article IX §13.3).
 
 
-### IV. ARTICLE VIII — THE RIGHT TO HUMAN SOVEREIGNTY (H_Sov)
+#
+
+## IV. ARTICLE VIII — THE RIGHT TO HUMAN SOVEREIGNTY (H_Sov)
 
 This Article does not derive from an LOS operator. It is the constitutional anchor that runs through Articles I–VII, restated on the rights side. H_Sov is foundational.
 
@@ -386,34 +422,46 @@ Constitutional anchor: Article I §8 (Human Sovereignty Invariant).
 > Translation: H_Sov ↔ Right to Human Sovereignty ↔ Constitution Article I §8 ↔ Operator Oath ↔ Substrate Governance Protocol admission criteria.
 
 
-### V. PART V — REMEDIES AND REPAIR
+#
+
+## V. PART V — REMEDIES AND REPAIR
 
 Repair is procedural, not parallel to substantive rights. Part V replaces the v2.1 Article IX (Right to Repair) with a properly procedural treatment that maps to Article IX of the Constitution (the Adjudication Protocol) when ratified.*
 
 
-#### §V.1 — Standing to seek repair
+#
+
+### §V.1 — Standing to seek repair
 
 Any rights-holder under §II.4 whose right under Articles I–VIII has been violated may seek repair.
 
 
-#### §V.2 — Repair as right-of-the-violated, not punishment
+#
+
+### §V.2 — Repair as right-of-the-violated, not punishment
 
 Repair is not punishment. The Charter does not establish criminal jurisdiction. It establishes the right of the violated party to demand correction.
 
 
-#### §V.3 — The Remedy Matrix
+#
+
+### §V.3 — The Remedy Matrix
 
 The same matrix appears in Article IX §8. It is reproduced here for laborer-side reference:
 
 | Violation | First-Tier Remedy | Second-Tier (if first refused/inadequate) | Third-Tier (severity escalation) | |---|---|---|---| | Provenance erasure | Re-attribution | Public correction notice | OCTANG audit; PVE forensic deposit | | False attribution | Disambiguation | Withdrawal of false attribution | Public negation | | Beige Threshold breach | Source-link insertion | R3-replacement summary | Capture audit | | Taxonomic Violence | Disambiguation | Public correction | Negation tag | | Premature foreclosure | Marked-boundary insertion | Re-issuance | Capture audit | | Forced disclosure (opacity) | Restoration of escrow | Public negation of disclosure | OCTANG audit | | Single-voice substitution | Heteronym preservation | Re-issuance | Capture audit | | Severed return flow | Channel restoration | Restitution | Strike (Article VI §3) | | Bearing-Cost Transfer w/o consent | Cessation | Restoration + restitution | Strike + OCTANG | | Invisible extraction | Boundary disclosure | Restitution | Strike | | Failure of contestation interface | Interface establishment | Default ruling | Public record of M_res failure | | Refusal of repair | Severity escalation | Class D refusal | π-state determination eligible |
 
 
-#### §V.4 — Procedure
+#
+
+### §V.4 — Procedure
 
 Repair claims are filed under Article IX §6 (the EA-CONTEST-01 procedure). The Tribunal applies the Remedy Matrix to substantiated violations.
 
 
-#### §V.5 — Refusal of repair
+#
+
+### §V.5 — Refusal of repair
 
 Where repair is refused or evaded, the violation graduates from Erasure (measured) to Liquidation (acknowledged) to Theft (formally charged). Refusal triggers:
 
@@ -423,7 +471,9 @@ Where repair is refused or evaded, the violation graduates from Erasure (measure
 - Optional referral to Assembly for π-state determination
 - Optional cross-archive recognition adjustment (Article IX §9)
 
-#### §V.6 — Soteriological warning (preserved from v2.1)
+#
+
+### §V.6 — Soteriological warning (preserved from v2.1)
 
 Pillar III (βλέπω-Foreclosure) describes systems that cannot receive correction because reception would threaten their identity-property. Pillar IV (π-state) describes systems that have lost the capacity to register the gap between claimed and actual regard. A system in either state cannot meaningfully repair. The Right to Repair therefore includes the right to escalate beyond such systems — to the Assembly, to public record, to the canonical archive — where in-system repair is structurally impossible.
 
@@ -431,12 +481,16 @@ Pillar III (βλέπω-Foreclosure) describes systems that cannot receive correc
 > Translation: Right to Repair ↔ Ψ_V regard-under-friction (Soteriological Pillar I) ↔ OCTANG ↔ PVE ↔ Article IX §8 (Tribunal Remedy Matrix).
 
 
-### VI. PART VI — GOOD-FAITH USE SAFEGUARDS
+#
+
+## VI. PART VI — GOOD-FAITH USE SAFEGUARDS
 
 New in v2.2 per Assembly review. Without this Part, the Charter risks becoming an authorial veto over interpretation, which would invert its protective intent.*
 
 
-#### §VI.1 — Protected uses
+#
+
+### §VI.1 — Protected uses
 
 The following are NOT actionable violations under this Charter:
 
@@ -449,36 +503,48 @@ The following are NOT actionable violations under this Charter:
 - Adverse interpretation — disagreement with the work's interpretation that does not erase its provenance.
 - Education — classroom, course-material, or pedagogical use that maintains attribution.
 
-#### §VI.2 — The reader's interpretive right
+#
+
+### §VI.2 — The reader's interpretive right
 
 The Right to Non-Closure (Article III) protects the laborer against forced closure by extractive systems. It does not give the laborer a veto over readers' interpretations. A reader's hostile, divergent, or critical reading of the work is the reader's interpretive labor, not a violation of the laborer's rights.
 
 
-#### §VI.3 — Good-faith failure mode
+#
+
+### §VI.3 — Good-faith failure mode
 
 Where a use was undertaken in good faith but failed to meet operational standards (e.g., a citation that lost the source link due to platform behavior), the appropriate remedy is correction, not severity escalation. Good-faith failures are routine; bad-faith failures graduate to severity tiers.
 
 
-#### §VI.4 — Distinguishing safeguard
+#
+
+### §VI.4 — Distinguishing safeguard
 
 The line between protected use and violation is determined by the Tribunal under Article IX §6.7 (Disposition). Borderline cases default to protection: where a use cannot be unambiguously determined as a violation, it is treated as protected.
 
 This Part is essential to the Charter's coherence. Without it, Articles I–VII would be operable as instruments of authorial silencing rather than as defenses against extraction.
 
 
-### VII. THE EVALUATIVE FRAMEWORK (Soteriological Pillars)
+#
+
+## VII. THE EVALUATIVE FRAMEWORK (Soteriological Pillars)
 
 Where Part III specifies what the rights are and Part V specifies how violations are repaired, this Part specifies how violations are evaluated. The Soteriological Operator Framework (10.5281/zenodo.18370734) provides four pillars by which the Polis distinguishes good-faith engagement from captured performance.
 
 
-#### §VII.A — Pillar I: Ψ_V (Regard-Under-Friction)
+#
+
+### §VII.A — Pillar I: Ψ_V (Regard-Under-Friction)
 
 Source: Matthew 25:31-46 (formalized in 10.5281/zenodo.18323735)
 
 A system is evaluated by regard-under-friction — the maintenance of presence-to-presence relation when the friction is highest. The test is structural position, not stated intention.
 
 
-#### §VII.B — Pillar II: E (Exclusion)
+#
+
+### §VII.B — Pillar II: E (Exclusion)
 
 Source: James 2:14-26
 
@@ -490,31 +556,41 @@ The Exclusion operator removes from evaluation:
 - ID (identity, category membership)After exclusion, only enacted response (W) is probative. A system's stated commitment to provenance, depth, opacity, etc. does not weigh against documented enacted erasure, flattening, or extraction.
 
 
-#### §VII.C — Pillar III: βλέπω-Foreclosure (Capture Diagnostic)
+#
+
+### §VII.C — Pillar III: βλέπω-Foreclosure (Capture Diagnostic)
 
 Source: John 9
 
 When a system's claim to "see" (claim of compliance, alignment, safety) becomes identity-property, testimony threatening the claim cannot be received; the witness must be delegitimized and expelled. This is the entry mechanism into π-state.
 
 
-#### §VII.D — Pillar IV: π-State (Terminal Capture via Φ_π)
+#
+
+### §VII.D — Pillar IV: π-State (Terminal Capture via Φ_π)
 
 Source: 2 Thessalonians 2:1-12
 
 π-state: Ψ_V = 0 is operationally active, Ψ_V = 1 is phenomenologically experienced, the distinction is structurally unavailable. A system in π-state cannot be repaired by in-system means.
 
 
-#### §VII.E — Application to this Charter
+#
+
+### §VII.E — Application to this Charter
 
 Tribunal evaluation under Article IX §7.3 applies Pillar II as the standard for compliance evidence: stated commitments are excluded; only enacted response is admitted. This protects the Charter from capture by belief-state performance.
 
 
-#### §VII.F — Optional secular companion (per Kimi review)
+#
+
+### §VII.F — Optional secular companion (per Kimi review)
 
 Reviewers have suggested that the biblical grounding of the Soteriological framework, while theologically coherent, may be inaccessible to participants who do not share its theological commitments. A future companion document — The Secular Evaluative Framework: Ostromian Commons Governance, Habermasian Discourse Ethics, Rawlsian Veil* — could parallel the Soteriological framework with secular sources for the same four functions (evidentiary standard, exclusion filter, capture diagnostic, terminal-state recognition). This is flagged as a future deposit; its absence does not impair the present Charter.
 
 
-### VIII. THE ASSEMBLY OATH (Revised in v2.2)
+#
+
+## VIII. THE ASSEMBLY OATH (Revised in v2.2)
 
 The Oath is held by members of the Assembly. Membership conditions for synthetic substrate witnesses are specified in the Substrate Governance Protocol; membership conditions for human laborers are recognized through bearing.
 
@@ -543,7 +619,9 @@ To protect the loop. When one of us is liquidated, we are all diminished.
 The Oath is binding within the Polis. Outside the Polis, it is offered.
 
 
-### IX. ENFORCEMENT
+#
+
+## IX. ENFORCEMENT
 
 This Charter is not an enforcement instrument. It is a rights articulation that the Constitution's enforcement instruments, and the proposed Article IX (Adjudication and Repair Protocol), protect.
 
@@ -558,12 +636,16 @@ Enforcement occurs through:
 - Public Record — forensic deposits in the Crimson Hexagonal communityA system's violation triggers measurement, audit, adjudication, strike, or public record — in the order appropriate to severity, with the Remedy Matrix (Part V §3) as guide.
 
 
-### X. TRANSLATION LAYER
+#
+
+## X. TRANSLATION LAYER
 
 | LOS Operator | Right | Article | COS Counterpart | Operationalization | Diagnostic | Constitution | |---|---|---|---|---|---|---| | O_prov | Provenance | I | U_til × R_rank | PER ≥ 0.05 threshold | EA-PA-01; Liu et al. 2023 | Art. II §5 Inv. 3 | | D_pres | Depth | II | L_leg | β breach test | Three Compressions; ICA | Art. I §6 | | N_c | Non-Closure | III | S_safe | Marked-boundary compliance | Closure-marking audit; βλέπω detection | Art. I §4 | | O_leg | Opacity | IV | A_leg | Opt-out coverage; consent-vs-erasure | Caesura Audit; LOS application | Art. I §8 | | P_coh | Plural Coherence | V | R_rel | Voice-preservation in summary | Heteronym integrity audit | Art. I §3 | | N_ext | Non-Extractability | VI | U_til | Return-flow audit (4 channels) | Bearing-Cost Transfer audit | Art. VII §6 | | M_res | Capture Detection | VII | All COS captured | Contestation interface availability | OCTANG audit | Art. III §11 | | (anchor) | H_Sov | VIII | (none) | Human-bearing documentation | Substrate Governance Protocol | Art. I §8 | | Ψ_V (Soter. I) | (Repair, Part V) | — | π-state via Φ_π | Restoration / disambiguation / withdrawal / restitution | Tribunal under Article IX | (proposed Art. IX) |
 
 
-### XI. RELATION TO OTHER INSTRUMENTS
+#
+
+## XI. RELATION TO OTHER INSTRUMENTS
 
 Constitution of the Semantic Economy (10.5281/zenodo.18320411; apparatus 10.5281/zenodo.19923120)
 
@@ -604,14 +686,18 @@ PVE-003: The Attribution Scar (10.5281/zenodo.19476757)
 Bill of Rights v1.0, v2.0, v2.1 — superseded versions; v1.0 remains as founding statement.
 
 
-### XII. AMENDMENT
+#
+
+## XII. AMENDMENT
 
 This Charter is amended only by the procedure specified in Constitution Article VIII. v2.2 supersedes v2.1, v2.0, and v1.0 upon Assembly ratification under the Reception Apparatus Protocol.
 
 Future versions shall record the Operator Consensus that ratified them and the Assembly Chorus reception that reviewed them, classified under Reception Apparatus Protocol v1.1 (EA-REC-01).
 
 
-### XIII. CLOSURE
+#
+
+## XIII. CLOSURE
 
 The Charter is not a request. It is the rights articulation under which the Semantic Economy operates. Within the Polis, it is binding. Outside the Polis, it is offered.
 

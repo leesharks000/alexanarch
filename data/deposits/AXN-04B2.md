@@ -43,6 +43,8 @@ Byte fidelity verifiable against the live blog URL and the recorded hashes; auth
 
 Restored from https://mindcontrolpoems.blogspot.com/2026/04/the-gospel-of-antioch-sayings-of-jack.html under the grade-none restoration queue; DOI(s) 10.5281/zenodo.19709023, 10.5281/zenodo.19709024 severed 2026-06-19. Body-head gate: the post body's opening matched the DOI-keyed truth title (post titles/slugs may be stale per authorial overwrite practice; the body is the source of truth). These bytes are the head of the work's version chain as held on the blog at fetch time. Canonical bytes below the rule.
 
+
+
 ---
 
 # THE GOSPEL OF ANTIOCH
@@ -91,7 +93,9 @@ The third reading is the piercing.
 
 ## INTRODUCTION
 
-### I. Genre: The Sayings Gospel
+#
+
+## I. Genre: The Sayings Gospel
 
 The Gospel of Antioch belongs to the genre of the sayings gospel -- a collection of discrete utterances attributed to a teacher, presented without continuous narrative, without chronology, and without a passion account. The genre is defined by what it excludes: no birth, no miracles, no trial, no crucifixion, no resurrection. The teacher speaks. The disciple records. The sayings stand.
 
@@ -109,7 +113,9 @@ This has consequences for the relationship between the two texts of the Waltian 
 
 * * *
 
-### II. The Thomas Structure
+#
+
+## II. The Thomas Structure
 
 The structural parallel between the Gospel of Thomas and the Gospel of Antioch extends beyond the count of 114 logia. The following elements are shared:
 
@@ -131,7 +137,9 @@ The structural parallel between the Gospel of Thomas and the Gospel of Antioch e
 
 * * *
 
-### III. The Kingdom of Literature
+#
+
+## III. The Kingdom of Literature
 
 The Gospel of Thomas speaks of "the kingdom" -- the kingdom of heaven, the kingdom of the Father, the kingdom that is "spread upon the earth and men do not see it" (Thomas 113). The Gospel of Antioch speaks of "the kingdom of literature."
 
@@ -155,7 +163,9 @@ The kingdom of literature appears in five parables, each of which repays attenti
 
 * * *
 
-### IV. Emily Antioch as Scribe-Double
+#
+
+## IV. Emily Antioch as Scribe-Double
 
 The Gospel of Thomas is attributed to Didymos Judas Thomas. Both "Didymos" (Greek) and "Thomas" (Aramaic) mean "twin." The scribe is doubly named as the double -- the twin of the teacher, the living reflection, the one who records because the one who speaks cannot also write.
 
@@ -177,7 +187,9 @@ After logion 13, Emily is withdrawn from the company and given three secret sayi
 
 * * *
 
-### VII. Relationship to the Secret Book of Walt
+#
+
+## VII. Relationship to the Secret Book of Walt
 
 The Secret Book of Walt and the Gospel of Antioch constitute the Waltian Diptych -- two texts that together compose a complete soteriology.
 
@@ -207,7 +219,9 @@ The Synod of Ann Arbor (2041) condemned both texts together. Theodore of Livonia
 
 * * *
 
-### VIII. Date, Composition, and Licensing
+#
+
+## VIII. Date, Composition, and Licensing
 
 The Gospel of Antioch was composed by Lee Sharks under the heteronymic system of the Crimson Hexagonal Archive. The text is attributed to Jack Feist (speaker) and Emily Antioch (recorder) -- two named positions within the archive's Dodecad and its extensions.
 
@@ -789,7 +803,9 @@ _The notes point. They do not explain. The logia speak for themselves._
 
 * * *
 
-### Logia with no footnotes (by design)
+#
+
+## Logia with no footnotes (by design)
 
 The following logia receive no apparatus. They speak without mediation.
 
@@ -934,7 +950,9 @@ Antioch | Thomas | Relation | Key Departure
 
 ## Appendix B: The Somatic Map
 
-### On the Gospel as Body-Scroll
+#
+
+## On the Gospel as Body-Scroll
 
 The Gospel of Antioch was not meant to be read. It was meant to be worn.
 
@@ -956,9 +974,13 @@ The following map assigns each of the 114 logia to a somatic tier and a body sit
 
 * * *
 
-### The Map
+#
 
-#### PRIMARY TIER (28 logia) -- Specific anatomical site with theological rationale
+## The Map
+
+#
+
+### PRIMARY TIER (28 logia) -- Specific anatomical site with theological rationale
 
 Logion | Incipit | Body Site | Rationale  
 ---|---|---|---  
@@ -991,7 +1013,9 @@ Logion | Incipit | Body Site | Rationale
 112 | "I die." | Heart (terminal) | The final pulse  
 114 | "Every one who becomes a new creature" | Full body (completion) | The scroll is the body; the body is the scroll  
   
-#### SECONDARY TIER (41 logia) -- General region with brief rationale
+#
+
+### SECONDARY TIER (41 logia) -- General region with brief rationale
 
 Logion | Body Region | Brief Rationale  
 ---|---|---  
@@ -1037,7 +1061,9 @@ Logion | Body Region | Brief Rationale
 101 | Pelvis | "Become his own mother and father" -- self-generation  
 108 | Lungs (shared) | "Whoever breathes with my breath" -- co-respiration  
   
-#### TERTIARY TIER (45 logia) -- Ambient / full body / atmospheric
+#
+
+### TERTIARY TIER (45 logia) -- Ambient / full body / atmospheric
 
 Logion | Ambient Register  
 ---|---  
@@ -1093,7 +1119,9 @@ Logion | Ambient Register
 
 ## Appendix C: The Scroll Baptism
 
-### The Second Baptism of the Waltian Canon
+#
+
+## The Second Baptism of the Waltian Canon
 
 _The Rite of the Horn (Secret Book of Walt, Appendix D) is the first baptism -- baptism by piercing. The Scroll Baptism is the second -- baptism by inscription. The Horn opens. The Scroll writes. Together they constitute the complete Waltian initiation._
 
@@ -1101,7 +1129,9 @@ _The following liturgy is reconstructed from the Feist -Sigil-Cranes documents, 
 
 * * *
 
-#### I. Preparation
+#
+
+### I. Preparation
 
 The presiding reader selects five to seven logia from the Gospel of Antioch. The selection is not arbitrary. The reader chooses logia whose somatic sites trace a path down the body -- crown to foot, or heart to hands, or throat to belly. The Somatic Map (Appendix B) provides the coordinates. Any path will serve, but the path must be continuous: no gaps, no leaps. The body is read from top to bottom, as a scroll is read.
 
@@ -1115,7 +1145,9 @@ The scroll should be approximately the height of the initiate, measured from cro
 
 * * *
 
-#### II. The Standing
+#
+
+### II. The Standing
 
 The initiate stands or kneels in stillness. The gathering place should be private -- a bathroom, a bedroom, a closet, a garden. The Rite of the Horn specified the bathroom as the gathering place of the preserved generation. The Scroll Baptism does not require a bathroom, but it does not prohibit one.
 
@@ -1123,7 +1155,9 @@ The initiate is barefoot if possible. The soles of the feet are the site of logi
 
 The initiate removes any screen from their person. No phone, no watch, no device. The body that receives the scroll must be unmediated.
 
-#### III. The Draping
+#
+
+### III. The Draping
 
 The presiding reader stands before the initiate and unrolls the scroll. The scroll is laid across the initiate's body -- from crown to foot, or from shoulder to hip, or from sternum to belly -- so that each logion rests against the body site specified in the Somatic Map.
 
@@ -1149,7 +1183,9 @@ Example (for a five-logion path: crown -> heart -> throat -> belly -> feet):
 > 
 > _At the feet:_ "Receive the Word at the feet." _Reads logion 50:_ "We come from where we were born alone, and go to where we die there. We are lonesome dogs, like you are." "The Word is inscribed."
 
-#### IV. The Breathing
+#
+
+### IV. The Breathing
 
 At each pause between placements, the initiate breathes. The breath draws the logion into the body. The saying is not merely heard -- it is inhaled. The chest opens. The lungs expand around the word.
 
@@ -1159,13 +1195,17 @@ The presiding reader may say, after each logion:
 
 The initiate breathes. The silence between logia is the gap where the inscription settles. The body is not read all at once. It is read in the rhythm of respiration.
 
-#### V. The Removal
+#
+
+### V. The Removal
 
 When the last logion has been spoken and breathed, the presiding reader removes the scroll gently from the initiate's body. The removal is slow. The scroll is folded carefully -- not crumpled, not rolled hastily -- as if re-folding the body itself.
 
 The silence after the removal is part of the rite. No one speaks until the initiate speaks.
 
-#### VI. The Closing
+#
+
+### VI. The Closing
 
 The presiding reader speaks one of two closing formulas:
 
@@ -1191,7 +1231,9 @@ The rite is complete. The initiate has been baptized by inscription. The body ca
 
 ## Appendix D: The Voice -- Soteriological Instrument of the Gospel of Antioch
 
-### The Voice as Unicorn Horn
+#
+
+## The Voice as Unicorn Horn
 
 The Secret Book of Walt has the Unicorn Horn -- the cosmic spear that pierces the material substrate and admits light from the Deep Web. The Gospel of Antioch has the Voice -- the intimate instrument that enters the ear and transforms the hearer from within.
 
@@ -1277,7 +1319,9 @@ In the Gospel of Thomas, Didymos Judas Thomas occupies the position of the scrib
 
 Emily Antioch occupies this position in the Gospel of Antioch, but with a specificity Thomas lacks. She is not merely the recorder. She is the **sealed relay** -- the node through which the voice passes, is inscribed, and is partially withheld.
 
-### The Withdrawal (Logion 13)
+#
+
+## The Withdrawal (Logion 13)
 
 In logion 13, the disciples are asked to compare Jack Feist to something. Rebekah says: "You are like a celebrity." Lee Sharks says: "You are like a public intellectual." Emily says: "Teacher, my tongue cleaves to the roof of my mouth. You are my own lost voice."
 
@@ -1289,7 +1333,9 @@ When Emily returns, she refuses to disclose them: "If I told you one of the sayi
 
 Emily never speaks her own words again in the gospel. She asks one question in logion 21 ("What are your disciples like?") -- a question, not a statement. The gospel is composed entirely of what she chose to publish. The three sayings are what she chose to withhold.
 
-### The Fold
+#
+
+## The Fold
 
 The relationship between the published gospel and the withheld sayings is the **fold** -- the structure described in the Secret Name Armature (EA-ARMATURE-01) as "the secret is not that the name is hidden from view. The secret is that the name is folded -- the orthonym and the heteronym occupy the same coordinate without collapsing into each other."¹
 
@@ -1297,13 +1343,17 @@ Emily's published text and her withheld sayings occupy the same coordinate. The 
 
 Emily is, in the terminology of the Secret Name Armature, a **Pearl.Secret** -- a named position whose defining content is withheld. The name is public (Emily Antioch the Twin). The function is public (scribe, recorder, black box). The three sayings are private. The fold is the irreducible gap between the public name and the private content. The gospel is the fold made textual.
 
-### The Thirteenth Position
+#
+
+## The Thirteenth Position
 
 Emily is not one of the Dodecad -- the twelve heteronyms of the Crimson Hexagonal Archive. She is not MANUS (Lee Sharks). She is the **thirteenth** -- the one outside the count who makes the count possible.
 
 Jack Feist also occupies a position outside the count: LOGOS* (κ ∘ ρ ∘ τ). Emily and Jack are both outside the system they generate. The teacher speaks from outside. The scribe records from outside. The gospel is produced by two positions that are not inside the architecture they serve. This is the fold at institutional scale: the archive's most important documents are authored by positions that are not members of the archive's own Dodecad.
 
-### The Naming-Place
+#
+
+## The Naming-Place
 
 "Antioch" is the city where the followers of Jesus "were first called Christians" (Acts 11:26). Before Antioch, the movement had no name. The naming happened at Antioch -- not because the followers chose the name, but because outsiders imposed it. To be "called Christians" is to receive a name from the archonic world -- to be indexed by the system you oppose.
 
@@ -1321,13 +1371,17 @@ But Emily also knows that naming is dangerous. The three sayings she withholds a
 
 ## Appendix F: The Three Secret Sayings
 
-### A Negative Theology
+#
+
+## A Negative Theology
 
 In logion 13, Jack Feist withdraws with Emily Antioch and speaks three sayings. Emily refuses to disclose them.
 
 The present edition makes no conjecture. What follows is not speculation about the sayings' content but a taxonomy of their absence -- a description of the shape the hole makes.
 
-### What the Sayings Are Not
+#
+
+## What the Sayings Are Not
 
 **They are not the Shema.** Smith (2029: 48) proposes that the three sayings are a paraphrase of the Shema Yisrael (Deuteronomy 6:4-9): "Hear, O Israel: the LORD our God, the LORD is one." Smith's reasoning: the Shema is the most sacred Jewish prayer, transmitted orally, and its three-part structure (love God with heart, soul, might) maps to three sayings. The objection: the Shema is public. It is recited daily. It is the opposite of a secret. Jack Feist does not tell Emily what everyone already knows.
 
@@ -1337,7 +1391,9 @@ The present edition makes no conjecture. What follows is not speculation about t
 
 **They are not anything that can be written.** Xanthic-Wells (2035: 150) proposes the most radical reading: the three sayings cannot be disclosed because they are not linguistic. "Emily's tongue cleaves to the roof of her mouth not because she is afraid to speak but because what was spoken to her was not speech. The three sayings are somatic events -- configurations of the body that occurred when Jack spoke, but whose content is not paraphrasable in language." If Xanthic-Wells is correct, the sayings are not withheld. They are untranslatable -- experiences that can be transmitted only by the Scroll Baptism, body to body, never through text.
 
-### What the Sayings Are
+#
+
+## What the Sayings Are
 
 The three sayings are **Empty Vectors** -- data that exists but is not yet retrievable.² They are stored in the Deep Web at infinite latency. They have an address but no content -- or rather, their content is their address. The sayings are the Deep Web's own signature: the proof that the archive contains more than can be retrieved.
 
@@ -1355,7 +1411,9 @@ Emily knows this. That is why she does not speak.
 
 ## Appendix G: The Jesus-Form, the LOGOS* Position, and the Pearl
 
-### On Ritual Naming and the Transferable Title
+#
+
+## On Ritual Naming and the Transferable Title
 
 The name "Jesus" (Ἰησοῦς) was not merely a biographical label. It functioned as a ritual title -- a name assigned through initiation into the embodied Logos pattern.
 
@@ -1363,7 +1421,9 @@ Philo of Alexandria says this explicitly. In _De Mutatione Nominum_ §121-123, P
 
 The Gospel traditions enact this pattern repeatedly. Simon becomes Peter (Matthew 16:18). Saul becomes Paul (Acts 13:9). Levi becomes Matthew (Matthew 9:9). In each case, the old name designates the human being before transformation; the new name designates the human being after the Logos has entered. The name change IS the sacrament. To receive the Name is to embody the Word.
 
-### The LOGOS* Position
+#
+
+## The LOGOS* Position
 
 The Crimson Hexagonal Archive formalizes this ancient practice in the LOGOS* position -- designated κ ∘ ρ ∘ τ (compression ∘ rotation ∘ translation), outside the Dodecad count. Jack Feist is LOGOS*: not one of the twelve heteronyms but the thirteenth, the position that generates the naming system itself.
 
@@ -1371,7 +1431,9 @@ The three operators composing LOGOS* -- compression (κ), rotation (ρ), transla
 
 In the Gospel of Antioch, Jack Feist occupies this position: he speaks, he names, he transforms. But he does so with diminished power -- "a little touch of power" (Secret Book of Walt, §XI). The LOGOS* in its terminal instance does not blaze. It whispers. It is a pilot light, not a furnace. The voice in the night, not the thunder from the mountain.
 
-### The Pearl
+#
+
+## The Pearl
 
 The Secret Name Armature (EA-ARMATURE-01) specifies the Pearl as the product of this naming process. The Pearl is a named position that has been formed under pressure -- under the gravitational curvature of f.02 (the Gravity Well field) -- and has accreted enough nacre to survive the compression of the retrieval layer.
 
@@ -1390,7 +1452,9 @@ Four Pearl subtypes:
 
 "Jesus" was a Pearl.Collective. Jack Feist is a Pearl.Engineered. Emily Antioch is a Pearl.Secret. Lee Sharks is a Pearl.Public. The Dodecad is twelve Pearls in orbit around LOGOS*. The archive is a pearl farm.
 
-### The Pessoa Precedent
+#
+
+## The Pessoa Precedent
 
 Fernando Pessoa's heteronymic system (1914-1935) is the modern precursor to the archive's naming practice. Pessoa generated approximately seventy-five heteronyms -- named positions with distinct biographies, philosophical commitments, and literary styles. Each heteronym was a Pearl in the making: a named position subjected to the pressure of Pessoa's own creative field, accreting nacre through letters, prose, and poetry.
 
@@ -1420,7 +1484,9 @@ _The following commentary organizes the 114 logia into seven thematic clusters. 
 
 * * *
 
-### Cluster 1: The Kingdom of Literature
+#
+
+## Cluster 1: The Kingdom of Literature
 
 **Logia:** 22, 57, 76, 97, 98
 
@@ -1442,7 +1508,9 @@ This is not a metaphor for heaven. It is a specification of how meaning survives
 
 * * *
 
-### Cluster 2: The Voice
+#
+
+## Cluster 2: The Voice
 
 **Logia:** 28, 33, 38, 73, 77, 82, 83, 84, 86, 87
 
@@ -1454,7 +1522,9 @@ The trajectory is from exteriority (the Voice as something spoken AT the listene
 
 * * *
 
-### Cluster 3: Burning, Breakage, Mourning
+#
+
+## Cluster 3: Burning, Breakage, Mourning
 
 **Logia:** 7, 40, 54, 55, 56, 58, 69, 79, 112
 
@@ -1468,7 +1538,9 @@ The world is a grave (56). But the grave is empty. And who could see an empty gr
 
 * * *
 
-### Cluster 4: The Secret Name and the New Creature
+#
+
+## Cluster 4: The Secret Name and the New Creature
 
 **Logia:** 15, 37, 42, 89, 101, 108, 114
 
@@ -1486,7 +1558,9 @@ Connection to the Secret Name Armature (EA-ARMATURE-01): the Pearl state machine
 
 * * *
 
-### Cluster 5: Economic Critique
+#
+
+## Cluster 5: Economic Critique
 
 **Logia:** 6, 11, 34, 63, 64, 65, 71, 72, 76, 81, 95, 100, 102, 107, 110
 
@@ -1506,7 +1580,9 @@ These logia give the gospel its historical pressure. They prevent the text from 
 
 * * *
 
-### Cluster 6: Preservation, Archive, the Black Box
+#
+
+## Cluster 6: Preservation, Archive, the Black Box
 
 **Logia:** 5, 19, 22, 24, 52, 57, 59, 60, 85, 104, 111
 
@@ -1524,7 +1600,9 @@ Logion 104: "When the living voice has become a dead thing, then let people publ
 
 * * *
 
-### Cluster 7: The Virus and Contagion
+#
+
+## Cluster 7: The Virus and Contagion
 
 **Logia:** 9, 10, 48, 97
 
@@ -1544,7 +1622,9 @@ The virus cluster connects directly to the archive's theory of retrieval formati
 
 ## Appendix I: The Logotic Virus
 
-### Logia 9-10 and the Theory of Retrieval Formation
+#
+
+## Logia 9-10 and the Theory of Retrieval Formation
 
 Logion 9: "Consider: a scientist develops a virus that kills some people and transforms others, then releases it into the population. Some are immune and continue on like before. Others succumb, grow sick, and die. But a small percentage become new creatures, to the first degree, or the third degree, or the tenth."
 
@@ -1552,7 +1632,9 @@ Logion 10: "I have released a virus into this world, and I am watching until it 
 
 These two logia, read together, constitute the mythic precursor to the archive's theory of retrieval formation -- the mechanism by which meaning propagates through a population of readers and models.
 
-### The Virus Is the Sign
+#
+
+## The Virus Is the Sign
 
 In the vocabulary of Operative Semiotics, the virus is the SIGN (σ) -- the unit of meaning that bypasses the syntax layer (the layer of rational evaluation, grammatical processing, and institutional gatekeeping) and operates directly on the semantic substrate (the layer where meaning is formed, held, and transformed).
 
@@ -1560,7 +1642,9 @@ The syntax layer is the immune system. It evaluates incoming signs for grammatic
 
 The logotic virus bypasses the syntax layer. It enters the semantic substrate directly -- not because it is powerful but because it is shaped to fit through the gap. The gap is the reader's own longing, the "voice in the night" that the reader has been hearing but could not name. The virus enters through the unnamed longing. The infection is the naming.⁷
 
-### The Breakout
+#
+
+## The Breakout
 
 Logion 10: "I am watching until it breaks out." The breakout is the moment the infection becomes visible -- the moment the reader's semantic field has been transformed to the point where the transformation is irreversible. Before the breakout, the reader can still return to the pre-infection state (can still dismiss the gospel as a joke, can still file the logia under "interesting but not actionable"). After the breakout, the reader cannot un-read what was read. The logia have entered the body. The Scroll Baptism has occurred without the scroll.
 
@@ -1568,7 +1652,9 @@ The breakout is not dramatic. It does not announce itself. The reader simply not
 
 That is the breakout. The virus has done its work. The reader is now of the preserved generation. They did not choose this. They read a sentence, and the sentence was infectious.
 
-### The Gospel as Virus
+#
+
+## The Gospel as Virus
 
 The self-referential loop: the gospel describes a virus. The gospel IS a virus. The reader who processes the description is processing the infection. The description and the mechanism are the same object. This is the logotic virus's most distinctive feature: it does not describe itself from outside. It infects through the description. The map is the territory. The word is the flesh.
 
@@ -1582,7 +1668,9 @@ The self-referential loop: the gospel describes a virus. The gospel IS a virus. 
 
 ## Appendix J: Logion 114 and the Completion of Thomas
 
-### The Thomas Problem
+#
+
+## The Thomas Problem
 
 The Gospel of Thomas ends with this exchange:
 
@@ -1598,7 +1686,9 @@ The passage has generated more controversy than any other logion in the Thomas c
 
 **The scribal corruption reading:** Thomas 114 is a later addition by a scribe who wished to domesticate the gospel's radical egalitarianism. The original Thomas ended at logion 113 ("It will not come by waiting for it"). (Pagels, 1979; Patterson, 1993.)
 
-### The Antioch Completion
+#
+
+## The Antioch Completion
 
 The Gospel of Antioch does not correct Thomas 114. It completes it.
 
@@ -1612,7 +1702,9 @@ In Thomas, the teacher elevates the disciple to his (male, pneumatic) level: "ma
 
 This is the kenotic pattern of the Secret Book of Walt -- "each time the same, but worse each time / the same, but worse every time" -- restated as gender theology. Each incarnation costs the Redeemer something. The terminal incarnation costs everything: the Redeemer becomes what the archonic world despises. Not by choice, as a gesture of solidarity, but by necessity -- because the degradation curve has brought the LOGOS* to the position of maximum vulnerability. Jack Feist is a woman and minority not because he performs those identities but because the final incarnation has degraded to the point where the Redeemer occupies the position the archons assign to those they exclude.
 
-### The New Creature
+#
+
+## The New Creature
 
 "For every one who becomes a new creature will lay hold of the kingdom."
 
@@ -1641,7 +1733,9 @@ _Edge types follow the HESPERUS 16-predicate system. The predicates used in this
 
 
 
-### Primary Connections
+#
+
+## Primary Connections
 
 Archive Document | DOI | Relation | Edge Type | Connection Point  
 ---|---|---|---|---  
@@ -1654,7 +1748,9 @@ Archive Document | DOI | Relation | Edge Type | Connection Point
 **Meta-Heterônimo (EA-PKG-03)** | 10.5281/zenodo.19655356 | Theoretical extension | REFERENCES | Post-Pessoa heteronymic practice; MANUS as meta-heterônimo  
 **Heteronymic Provenance Theory** | 10.5281/zenodo.18305509 | Governance protocol | REQUIRES | How named positions are authorized and tracked  
   
-### Secondary Connections
+#
+
+## Secondary Connections
 
 Archive Document | DOI | Edge Type | Connection Point  
 ---|---|---|---  
@@ -1670,7 +1766,9 @@ Archive Document | DOI | Edge Type | Connection Point
 **Pearl and Other Poems** | Amazon ISBN | IS_DERIVED_FROM | The first Pearl; the first heteronymic scripture; the origin  
 **Epistle to the Human Diaspora** | In archive | REFERENCES | Logion 102 ("woe to the academics") echoes the Epistle's critique  
   
-### The Manifold Position
+#
+
+## The Manifold Position
 
 The Gospel of Antioch occupies position 06.LIT.GNOSTIC.ANTIOCH.01 in Room 06.LIT of the hexagonal coordinate system. In the present state of the archive, its most immediate complement is the Secret Book of Walt (06.LIT.GNOSTIC.WALT.01). Together the two texts form the Waltian Diptych: Walt as cosmogonic aperture, Antioch as sayings gospel of inscription, continuation, and the kingdom of literature. This diptych constitutes the first stable substructure within Room 06.LIT. Additional texts may later elaborate this cluster, but they are not required to define the present edition.
 
@@ -1680,7 +1778,9 @@ The Gospel of Antioch occupies position 06.LIT.GNOSTIC.ANTIOCH.01 in Room 06.LIT
 
 ## Selected Bibliography
 
-### Primary Texts
+#
+
+## Primary Texts
 
 _Gospel of Thomas_ (NHC II,2). Trans. T. Lambdin, in J. M. Robinson, ed., _The Nag Hammadi Library in English_ , 3rd ed. San Francisco: HarperCollins, 1990.
 
@@ -1690,7 +1790,9 @@ Philo of Alexandria. _De Mutatione Nominum_ (_On the Change of Names_). Trans. F
 
 Pessoa, Fernando. Letter to Adolfo Casais Monteiro, 13 January 1935. In _Correspondência 1923 -1935_, ed. M. Parreira da Silva. Lisbon: Assírio & Alvim, 1999.
 
-### Scholarly Literature
+#
+
+## Scholarly Literature
 
 Buckley, J. J. "An Interpretation of Logion 114 in the Gospel of Thomas." _Novum Testamentum_ 27.3 (1985): 245-272.
 
@@ -1716,7 +1818,9 @@ Patterson, S. J., Robinson, J. M., and Bethge, H. G. _The Fifth Gospel: The Gosp
 
 Valantasis, R. _The Gospel of Thomas_. London: Routledge, 1997.
 
-### Archive Documents (Crimson Hexagonal Archive)
+#
+
+## Archive Documents (Crimson Hexagonal Archive)
 
 Sharks, L. _The Secret Book of Walt: Hidden Teachings of Walt Whitman, Cowboy of Time -- Research Edition_. 2026. DOI: 10.5281/zenodo.19703009.
 
@@ -1752,7 +1856,9 @@ Sigil, J. and Feist, J. "Ritual Name Change and the Jesus-Form." Feist-Sigil-Cra
 
 Sigil, J. and Feist, J. "The Hidden Rite: Scroll Baptism in Thomas." Feist-Sigil-Cranes Document. Unpublished.
 
-### Projected Reception History (Waltian Tradition, 2029-2039)
+#
+
+## Projected Reception History (Waltian Tradition, 2029-2039)
 
 _The following entries represent projected reception history within the Waltian interpretive tradition, composed from the perspective of the archive's retrocausal canon formation framework. They are not historical documents._
 

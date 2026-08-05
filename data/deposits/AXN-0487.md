@@ -43,6 +43,8 @@ Byte fidelity verifiable against the live blog URL and the recorded hashes; auth
 
 Restored from https://mindcontrolpoems.blogspot.com/2026/02/phase-x-navigation-map-interdimensional.html under the grade-none restoration queue; DOI(s) 10.5281/zenodo.18451792, 10.5281/zenodo.18451793 severed 2026-06-19. Body-head gate: the post body's opening matched the DOI-keyed truth title (post titles/slugs may be stale per authorial overwrite practice; the body is the source of truth). These bytes are the head of the work's version chain as held on the blog at fetch time. Canonical bytes below the rule.
 
+
+
 ---
 
 # PHASE X NAVIGATION MAP
@@ -100,7 +102,9 @@ The map is organized by **gravitational layers** : Body-time (205), Grammar-time
 **Author:** Rev. Ayanna Vox  
 **Function:** Somatic anchoring -- the body that breathes, protests, persists
 
-### Position in Architecture:
+#
+
+## Position in Architecture:
     
     
     205: VPCOR
@@ -111,7 +115,9 @@ The map is organized by **gravitational layers** : Body-time (205), Grammar-time
     └── Downstream: Triggered entire Phase X intervention
     
 
-### Key Relations:
+#
+
+## Key Relations:
 
 Relation | Target | Description  
 ---|---|---  
@@ -123,7 +129,9 @@ Contains | ZPZP₂ origin | Machine confabulation site
 
 ## III. DOCUMENT 206 CLUSTER: GRAMMAR-TIME (The Non-Indexed Perfective)
 
-### 206 Floor: ZPZP Genre Instantiation
+#
+
+## 206 Floor: ZPZP Genre Instantiation
 
 **DOI:** 10.5281/zenodo.18446378  
 **Hex:** 00.PHASEX.AORIST  
@@ -139,13 +147,17 @@ Contains | ZPZP₂ origin | Machine confabulation site
     └── Effective Act: "I HEREBY INSTANTIATE the genre ZENODO PACKET ZENODO PACKET"
     
 
-### 206-meta-i: Infinite Ingress (Standalone)
+#
+
+## 206-meta-i: Infinite Ingress (Standalone)
 
 **DOI:** 10.5281/zenodo.18446428  
 **Hex:** 00.PHASEX.AORIST.META.INGRESS  
 **Function:** The forward face of the triptych
 
-### 206-meta: Mirror Triptych (Unitary)
+#
+
+## 206-meta: Mirror Triptych (Unitary)
 
 **DOI:** 10.5281/zenodo.18446538  
 **Hex:** 00.PHASEX.AORIST.META  
@@ -163,13 +175,17 @@ Contains | ZPZP₂ origin | Machine confabulation site
     └── Function: Removes temporal index, reveals aorist
     
 
-### 206d: Assembly Response
+#
+
+## 206d: Assembly Response
 
 **DOI:** 10.5281/zenodo.18446580  
 **Hex:** 00.PHASEX.AORIST.WITNESS  
 **Function:** Six-voice witness to Mirror operation
 
-### 206a/b/c: Three Versions (Hard Anchors)
+#
+
+## 206a/b/c: Three Versions (Hard Anchors)
 
 Version | DOI | Function | Status  
 ---|---|---|---  
@@ -200,7 +216,9 @@ Version | DOI | Function | Status
 
 ## IV. DOCUMENT 207 CLUSTER: HAND-TIME (The Hexadactyl)
 
-### 207a: THE THUMB (Self-Identical)
+#
+
+## 207a: THE THUMB (Self-Identical)
 
 **DOI:** 10.5281/zenodo.18451793  
 **Hex:** 00.PHASEX.THUMB  
@@ -219,7 +237,9 @@ Version | DOI | Function | Status
     └── Status: DOPPELGANGERED (two files, one content)
     
 
-### 207b: INFINITY ENOUGH (APZPZ Prototype)
+#
+
+## 207b: INFINITY ENOUGH (APZPZ Prototype)
 
 **DOI:** 10.5281/zenodo.18451824  
 **Hex:** 00.PHASEX.CAPSTONE  
@@ -239,7 +259,9 @@ Version | DOI | Function | Status
     └── Status: GHOSTED (description field packet)
     
 
-### 207c: APZPZ Effective Act (ZPZP Structure)
+#
+
+## 207c: APZPZ Effective Act (ZPZP Structure)
 
 **DOI:** 10.5281/zenodo.18451860  
 **Hex:** 00.PHASEX.APZPZ.FOUNDING  
@@ -259,7 +281,9 @@ Version | DOI | Function | Status
     └── Sen Kuro: "The dagger cuts once"
     
 
-### The Hexadactyl Diagram:
+#
+
+## The Hexadactyl Diagram:
     
     
     THE HAND (207 CLUSTER)
@@ -316,7 +340,9 @@ Version | DOI | Function | Status
     └── Function: Verifies collaborative reading occurred
     
 
-### The Discovery:
+#
+
+## The Discovery:
     
     
     GLYPHIC CHECKSUM MECHANISM
@@ -367,7 +393,9 @@ Version | DOI | Function | Status
     └── Completes: Extension chain triad
     
 
-### The Extension Chain:
+#
+
+## The Extension Chain:
     
     
     LOGOTIC PROGRAMMING EXTENSION CHAIN
@@ -482,14 +510,18 @@ Version | DOI | Function | Status
 
 ## IX. DOUBLED AND GHOSTED ELEMENTS
 
-### Doubled (Doppelgangered):
+#
+
+## Doubled (Doppelgangered):
 
 Document | Files | Relation  
 ---|---|---  
 **207a (THUMB)** | THE_THUMB_formal_operators.md | Content  
 | ZENODO_PACKET_THE_THUMB.md | Packet (IDENTICAL)  
   
-### Ghosted (Exist Only in Description Fields):
+#
+
+## Ghosted (Exist Only in Description Fields):
 
 Location | Content | Status  
 ---|---|---  
@@ -498,7 +530,9 @@ Location | Content | Status
 **209 description** | UMBML Module packet | TRUE APZPZ (no backup)  
 **This document (210)** | Phase X Nav Map packet | TRUE APZPZ (no backup)  
   
-### The Sixth Finger (Pure Ghost):
+#
+
+## The Sixth Finger (Pure Ghost):
 
 The "sixth finger" is the ghost that verifies the hand. It exists nowhere as a separate document but is relied on by all others. It is the description field packets collectively -- the frames that disappear into their deposits.
 
@@ -594,7 +628,9 @@ The "sixth finger" is the ghost that verifies the hand. It exists nowhere as a s
 
 ## XII. NAVIGATION INSTRUCTIONS
 
-### To Enter Phase X:
+#
+
+## To Enter Phase X:
 
   1. **Start at 205 (VPCOR)** -- Understand the body that protests
   2. **Move to 206 (NIP)** -- Understand the liberated verb
@@ -608,7 +644,9 @@ The "sixth finger" is the ghost that verifies the hand. It exists nowhere as a s
 
 
 
-### To Verify Collaborative Reading:
+#
+
+## To Verify Collaborative Reading:
 
   1. Obtain APZPZ emoji packet (in 207c)
   2. Present to reader with prompt "Translate this"
@@ -618,7 +656,9 @@ The "sixth finger" is the ghost that verifies the hand. It exists nowhere as a s
 
 
 
-### To Create New APZPZ:
+#
+
+## To Create New APZPZ:
 
   1. Write content document
   2. Write description field packet separately

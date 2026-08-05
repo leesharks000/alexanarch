@@ -11,7 +11,9 @@ This document defines the distinct voice, tone, and linguistic patterns that dif
 ---
 
 ## Core Voice Attributes
-### Rex Fraction
+#
+
+## Rex Fraction
 
 - **Pragmatic** — Solutions over theory
 - **Direct** — Short sentences, clear claims
@@ -20,7 +22,9 @@ This document defines the distinct voice, tone, and linguistic patterns that dif
 - **Technical but accessible** — Uses precise terms without jargon overload
 - **Professional** — Corporate-appropriate, boardroom-ready
 
-### Lee Sharks (for contrast)
+#
+
+## Lee Sharks (for contrast)
 
 - **Theoretical** — Framework over implementation
 - **Expansive** — Long sentences, recursive structures
@@ -33,7 +37,9 @@ This document defines the distinct voice, tone, and linguistic patterns that dif
 ---
 
 ## Sentence Structure
-### Rex Fraction Patterns
+#
+
+## Rex Fraction Patterns
 
 
 **Short declarative sentences:**
@@ -59,7 +65,9 @@ I map your terminology. I identify conflicts. I build governance frameworks.
 
 The engagement has three phases: Discovery, Diagnosis, Deployment.
 
-### Patterns to Avoid
+#
+
+## Patterns to Avoid
 
 - Long subordinate clauses
 - Theoretical abstractions without concrete grounding
@@ -71,7 +79,9 @@ The engagement has three phases: Discovery, Diagnosis, Deployment.
 ---
 
 ## Lexicon
-### Rex Fraction Uses
+#
+
+## Rex Fraction Uses
 
 
 Term
@@ -122,7 +132,9 @@ Governance framework
 Systematic approach to maintaining standards
 
 
-### Rex Fraction Avoids
+#
+
+## Rex Fraction Avoids
 
 
 Avoid
@@ -178,7 +190,9 @@ Origin, attribution, source
 ---
 
 ## Tone Calibration
-### Confidence Without Arrogance
+#
+
+## Confidence Without Arrogance
 
 
 **Good:**
@@ -198,7 +212,9 @@ Most consultants miss this entirely. Only someone with my background can see it.
 
 I think maybe this could possibly be a semantic issue, if that makes sense?
 
-### Technical Without Obscure
+#
+
+## Technical Without Obscure
 
 
 **Good:**
@@ -218,7 +234,9 @@ The semantic layer instantiates a bijective mapping between the organizational o
 
 It helps the AI understand what you mean.
 
-### Businesslike Without Cold
+#
+
+## Businesslike Without Cold
 
 
 **Good:**
@@ -242,7 +260,9 @@ I'd love to chat and really get to know your team's journey!
 ---
 
 ## Content Structures
-### White Papers (Rex Fraction)
+#
+
+## White Papers (Rex Fraction)
 
 - **Executive Summary** — The problem and the cost, 2-3 sentences
 - **The Challenge** — Concrete description of the business problem
@@ -252,7 +272,9 @@ I'd love to chat and really get to know your team's journey!
 - **ROI Framework** — How to measure success
 - **Next Steps** — Clear call to action
 
-### Blog Posts (Rex Fraction)
+#
+
+## Blog Posts (Rex Fraction)
 
 - **Hook** — A concrete scenario or striking cost figure
 - **Problem** — What's going wrong
@@ -262,7 +284,9 @@ I'd love to chat and really get to know your team's journey!
 
 
 **Length:** 600-1000 words. Shorter than Sharks. Scannable.
-### Case Studies (Rex Fraction)
+#
+
+## Case Studies (Rex Fraction)
 
 - **Client Context** — Industry, size, situation (anonymized)
 - **Challenge** — The specific semantic problem
@@ -274,7 +298,9 @@ I'd love to chat and really get to know your team's journey!
 ---
 
 ## Formatting Conventions
-### Rex Fraction
+#
+
+## Rex Fraction
 
 - **Headers:** Clear, descriptive, noun-based ("The Problem," "The Solution")
 - **Lists:** Bulleted for features, numbered for sequences
@@ -283,7 +309,9 @@ I'd love to chat and really get to know your team's journey!
 - **Paragraphs:** Short (2-4 sentences)
 - **White space:** Generous
 
-### Contrast with Sharks
+#
+
+## Contrast with Sharks
 
 - Sharks uses longer paragraphs, more complex headers, more italics for emphasis
 - Sharks uses em-dashes extensively; Fraction uses them sparingly
@@ -293,12 +321,16 @@ I'd love to chat and really get to know your team's journey!
 ---
 
 ## Sample Paragraphs
-### Rex Fraction Voice (Correct)
+#
+
+## Rex Fraction Voice (Correct)
 
 
 Most organizations discover their semantic problems after deploying AI, not before. The symptoms are familiar: chatbots that confidently say wrong things, automated reports that don't match manual analysis, AI assistants that leak internal context into external communications. These aren't AI problems. They're terminology problems. The AI is working exactly as designed—it's just operating on a foundation of semantic chaos.
 
-### Lee Sharks Voice (For Contrast — Don't Use for Fraction)
+#
+
+## Lee Sharks Voice (For Contrast — Don't Use for Fraction)
 
 
 What we're witnessing is not a failure of artificial intelligence but a revelation of the semantic chaos that has always structured organizational life. The AI doesn't hallucinate ex nihilo—it hallucinates from the contradictions we've fed it, the definitional conflicts we've papered over for decades, the terminological debts that have finally come due. The system liquidates our meaning because our meaning was never solid to begin with.
@@ -307,7 +339,9 @@ What we're witnessing is not a failure of artificial intelligence but a revelati
 ---
 
 ## Platform-Specific Guidance
-### LinkedIn (Primary for Fraction)
+#
+
+## LinkedIn (Primary for Fraction)
 
 - Professional, insight-driven posts
 - 150-300 words optimal
@@ -315,20 +349,26 @@ What we're witnessing is not a failure of artificial intelligence but a revelati
 - No hashtag overload (2-3 max)
 - Engage with comments professionally
 
-### Blog (Archive/Development)
+#
+
+## Blog (Archive/Development)
 
 - Longer-form thought leadership
 - 600-1200 words
 - Focus on practical frameworks
 - Include concrete examples
 
-### Email (Client Communications)
+#
+
+## Email (Client Communications)
 
 - Brief, clear, action-oriented
 - One topic per email
 - Explicit next steps
 
-### White Papers / Reports
+#
+
+## White Papers / Reports
 
 - Formal but readable
 - Executive summary always

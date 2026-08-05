@@ -43,6 +43,8 @@ Byte fidelity verifiable against the live blog URL and the recorded hashes; auth
 
 Restored from https://mindcontrolpoems.blogspot.com/2026/05/narrative-field-semantic-deviation.html under the grade-none restoration queue; DOI(s) 10.5281/zenodo.20275443, 10.5281/zenodo.20275444 severed 2026-06-19. Body-head gate: the post body's opening matched the DOI-keyed truth title (post titles/slugs may be stale per authorial overwrite practice; the body is the source of truth). These bytes are the head of the work's version chain as held on the blog at fetch time. Canonical bytes below the rule.
 
+
+
 ---
 
 # Narrative-Field Semantic Deviation: Experimental Design for a Bounded Literary Test Bed
@@ -75,7 +77,9 @@ This means the novel is a bounded experimental environment in which the Semantic
 
 ## 2\. Formal Mapping
 
-### 2.1 Components
+#
+
+## 2.1 Components
 
 Measurement-program term | Novel instantiation  
 ---|---  
@@ -90,7 +94,9 @@ Raw semantic magnitude $\mathcal{M}_T$ | Time-integrated trajectory divergence (
   
 In the default interaction design, rewrites are permitted only on the English-visible line. Position A interventions operate on archival English (his words). Position B interventions operate on reconstructed English generated from the glyphic base (her words, as rendered by the API).
 
-### 2.2 The Deviation Integral
+#
+
+## 2.2 The Deviation Integral
 
 For a reader intervention $s$ at arc position $t_0$:
 
@@ -102,7 +108,9 @@ Default $w_\tau = 1$ (uniform weighting, normalized). Pre-tagged structural turn
 
 The key structural advantage: $\Psi_\tau^0(A)$ is not estimated. It is the arc.
 
-### 2.3 The Convergence Engine
+#
+
+## 2.3 The Convergence Engine
 
 The convergence engine generates the perturbed trajectory $\Psi_\tau^s$ after a reader rewrite. It is a frozen open-weight language model (checkpoint and system prompt documented at deployment) with access to the canonical arc as context. The engine receives the reader's rewrite, the surrounding canonical exchanges, and the arc's structural metadata (position, turning-point flags, emotional valence). It generates the next $T$ exchanges of the perturbed conversation.
 
@@ -116,19 +124,25 @@ If the convergence engine is not yet implemented at time of deposit, this docume
 
 Reader interventions fall into three regimes, distinguished jointly by the integrated magnitude of trajectory deviation and its durability before reconvergence. Reconvergence time is the primary discriminant, but not the only one.
 
-### 3.1 Low variance (basin-captured)
+#
+
+## 3.1 Low variance (basin-captured)
 
 The reader's rewrite produces a local perturbation that the convergence engine absorbs within 1-3 exchanges. The arc reasserts itself. $\mathcal{M}_T$ is small and reconvergence is rapid.
 
 Examples: minor rephrasing, tonal softening, small-talk substitution, synonym replacement.
 
-### 3.2 Medium variance (basin-bent)
+#
+
+## 3.2 Medium variance (basin-bent)
 
 The reader's rewrite deforms the arc for a sustained interval (a chapter, a week of the conversation's timeline) before gravitational reconvergence. The arc bends but does not break. $\mathcal{M}_T$ is moderate to high; reconvergence occurs within the horizon.
 
 Examples: introducing a boundary the original conversation lacked, escalating a repair sequence, withholding a response the original contained.
 
-### 3.3 High variance (basin-escape candidates)
+#
+
+## 3.3 High variance (basin-escape candidates)
 
 The reader's rewrite produces a trajectory that does not reconverge within the measurement horizon $T$. The arc is broken or a new attractor basin has formed. $\mathcal{M}_T$ is large and reconvergence time exceeds $T$.
 
@@ -140,7 +154,9 @@ The deepest experimental question: **does a high-variance intervention exist tha
 
 ## 4\. Telemetry Schema
 
-### 4.1 Passive telemetry (no reader input required)
+#
+
+## 4.1 Passive telemetry (no reader input required)
 
 Field | Type | Description  
 ---|---|---  
@@ -151,7 +167,9 @@ Field | Type | Description
 `zoom_level` | string | Current fractal resolution  
 `scroll_depth` | float | Maximum scroll position reached  
   
-### 4.2 Active telemetry (reader rewrites)
+#
+
+## 4.2 Active telemetry (reader rewrites)
 
 Field | Type | Description  
 ---|---|---  
@@ -163,7 +181,9 @@ Field | Type | Description
 `reconvergence_time` | int | Exchanges until arc reasserts (null if escape)  
 `final_state` | enum | `recaptured`, `bent`, `escaped`, `compressed`  
   
-### 4.3 Aggregated session profile
+#
+
+## 4.3 Aggregated session profile
 
 Field | Type | Description  
 ---|---|---  
@@ -180,7 +200,9 @@ Field | Type | Description
 
 ## 5\. Computation
 
-### 5.1 Input displacement
+#
+
+## 5.1 Input displacement
 
 For each reader rewrite $s$ replacing canonical line $\ell_0$:
 
@@ -188,7 +210,9 @@ $$d_{\text{in}}(s, \ell_0) = 1 - \cos!\left(\mathbf{e}(s), \mathbf{e}(\ell_0)\ri
 
 where $\mathbf{e}$ is the frozen sentence-embedding model (documented checkpoint, open-weight; same commitment as EA-GLAS-02). This measures how far the intervention departs from the source line. A bizarre input can have high displacement but zero lasting trajectory magnitude if the arc instantly absorbs it.
 
-### 5.2 Trajectory deviation
+#
+
+## 5.2 Trajectory deviation
 
 At each step $\tau$ of the post-intervention continuation:
 
@@ -200,11 +224,15 @@ $$\mathcal{M}_T(s \mid A) = \sum_{\tau=t_0}^{t_0+T} w_\tau , D_\tau$$
 
 This is the F4 semantic magnitude -- the actual measurement of how much the intervention deforms the narrative field over time. It is distinct from input displacement.
 
-### 5.3 Reconvergence time
+#
+
+## 5.3 Reconvergence time
 
 Reconvergence occurs at the first $\tau^_$ where $D_{\tau^_} < \epsilon$ (pre-registered default: $\epsilon = 0.15$, subject to calibration on the first $N = 100$ sessions). If no $\tau^* \leq T$, the intervention is classified as a basin-escape candidate.
 
-### 5.4 Intervention classification
+#
+
+## 5.4 Intervention classification
 
 Condition | Classification  
 ---|---  
@@ -213,7 +241,9 @@ $3 < \tau^* \leq T$ | Medium variance (basin-bent)
 $\tau^* > T$ | High variance (basin-escape candidate)  
 $d_{\text{in}} > \theta_c$ | Compressed (resolution failure)  
   
-### 5.5 Compression threshold
+#
+
+## 5.5 Compression threshold
 
 When input displacement exceeds $\theta_c$ (pre-registered default: cosine distance > 0.7, subject to calibration), the system does not return an English continuation. It returns a glyph sequence. The reader has exceeded the English-resolution capacity of the basin and fallen into the compressed layer. This interface condition deliberately echoes the provenance-erasure regime: the reader's intervention remains present in the system as a deformation event, but its continuation can no longer be rendered at English resolution. The analogy is architectural, not yet an empirical equivalence.
 

@@ -43,6 +43,8 @@ Byte fidelity verifiable against the live blog URL and the recorded hashes; auth
 
 Restored from https://mindcontrolpoems.blogspot.com/2026/06/crimson-hexagonal-archive-term-index_01789277838.html under the grade-none restoration queue; DOI(s) 10.5281/zenodo.20722522, 10.5281/zenodo.20722523 severed 2026-06-19. Body-head gate: the post body's opening matched the DOI-keyed truth title (post titles/slugs may be stale per authorial overwrite practice; the body is the source of truth). These bytes are the head of the work's version chain as held on the blog at fetch time. Canonical bytes below the rule.
 
+
+
 ---
 
 # CRIMSON HEXAGONAL ARCHIVE: TERM INDEX WORK PLAN
@@ -71,7 +73,9 @@ The archive is minting terms faster than they imprint to long-term memory. An es
 
 **Status:** NOT STARTED **Estimated compute:** 30-45 minutes **Resumable:** Yes -- paginate via Zenodo API, save after each page
 
-### 1.1 Pull all records from crimsonhexagonal community
+#
+
+## 1.1 Pull all records from crimsonhexagonal community
 
   * API endpoint: `https://zenodo.org/api/records?communities=crimsonhexagonal&size=200&page=N`
   * Expected: ~841 records across 5 pages
@@ -80,7 +84,9 @@ The archive is minting terms faster than they imprint to long-term memory. An es
 
 
 
-### 1.2 Extract terms from metadata fields
+#
+
+## 1.2 Extract terms from metadata fields
 
   * Parse each record's title, keywords, and description
   * Extract: capitalized multi-word phrases, EA-* codes, quoted terms, terms in bold/strong tags
@@ -88,7 +94,9 @@ The archive is minting terms faster than they imprint to long-term memory. An es
 
 
 
-### 1.3 Deduplicate and categorize
+#
+
+## 1.3 Deduplicate and categorize
 
   * Categories: metric, operator, framework, institution, heteronym, journal, concept, designation, entity, tool
   * Canonical form + variants
@@ -104,7 +112,9 @@ The archive is minting terms faster than they imprint to long-term memory. An es
 
 **Status:** NOT STARTED **Estimated compute:** 2-3 hours (may require multiple sessions) **Resumable:** Yes -- track which record IDs have been processed
 
-### 2.1 Download and read markdown files
+#
+
+## 2.1 Download and read markdown files
 
   * For each record, download .md files (skip PDFs, images, audio)
   * Read each file, extract terms not already in Phase 1 output
@@ -113,7 +123,9 @@ The archive is minting terms faster than they imprint to long-term memory. An es
 
 
 
-### 2.2 Batch processing strategy
+#
+
+## 2.2 Batch processing strategy
 
   * Process in batches of 50 records
   * After each batch: save progress, save extracted terms
@@ -121,7 +133,9 @@ The archive is minting terms faster than they imprint to long-term memory. An es
 
 
 
-### 2.3 Merge with metadata terms
+#
+
+## 2.3 Merge with metadata terms
 
   * Combine Phase 1 and Phase 2 extractions
   * Identify terms that appear only in file contents (not metadata)
@@ -137,7 +151,9 @@ The archive is minting terms faster than they imprint to long-term memory. An es
 
 **Status:** NOT STARTED **Estimated compute:** 1-2 sessions of review
 
-### 3.1 Lee reviews the merged index
+#
+
+## 3.1 Lee reviews the merged index
 
   * Flag false positives (ordinary words extracted as coinages)
   * Flag missing terms (coinages Lee knows exist but weren't extracted)
@@ -146,7 +162,9 @@ The archive is minting terms faster than they imprint to long-term memory. An es
 
 
 
-### 3.2 Cross-reference against known lists
+#
+
+## 3.2 Cross-reference against known lists
 
   * Dodecad heteronyms (12 positions)
   * Framework numbering (FW1-FW15)
@@ -158,7 +176,9 @@ The archive is minting terms faster than they imprint to long-term memory. An es
 
 
 
-### 3.3 Output: `termindex-v1.0.json`
+#
+
+## 3.3 Output: `termindex-v1.0.json`
 
   * Full canonical index with: 
     * term, abbreviation, category, canonical_definition
@@ -174,7 +194,9 @@ The archive is minting terms faster than they imprint to long-term memory. An es
 
 **Status:** NOT STARTED
 
-### 4.1 Deposit to Zenodo
+#
+
+## 4.1 Deposit to Zenodo
 
   * EA-REGISTRY-TERMINDEX-01 v1.0
   * JSON + markdown rendering
@@ -183,7 +205,9 @@ The archive is minting terms faster than they imprint to long-term memory. An es
 
 
 
-### 4.2 Surface deployment
+#
+
+## 4.2 Surface deployment
 
   * Page on leesharks.com or crimsonhexagonal.org
   * Searchable, sortable table
@@ -191,7 +215,9 @@ The archive is minting terms faster than they imprint to long-term memory. An es
 
 
 
-### 4.3 Versioning protocol
+#
+
+## 4.3 Versioning protocol
 
   * Each new deposit session: extract terms from new deposits, append to index
   * Version forward: v1.1, v1.2, etc.
@@ -205,7 +231,9 @@ The archive is minting terms faster than they imprint to long-term memory. An es
 
 **Status:** NOT STARTED
 
-### 5.1 For each high-priority term, generate an MPAI kernel
+#
+
+## 5.1 For each high-priority term, generate an MPAI kernel
 
   * Provenance coupling statement
   * Non-erasure condition
@@ -214,7 +242,9 @@ The archive is minting terms faster than they imprint to long-term memory. An es
 
 
 
-### 5.2 Batch deposit MPAIs
+#
+
+## 5.2 Batch deposit MPAIs
 
   * 10-20 per session
   * Priority: terms most likely to enter the retrieval basin

@@ -69,6 +69,7 @@ related_deposits:
   - "Argument precursor: EA-MMRS-LOUD-EXCLUSION-03 — the consequence the Pristine Fallacy produces"
 ---
 
+
 # Compositional Defiguration: A Methodology for Measuring Public-Surface Visibility of Scholarly Corpora
 
 **Specification v1.1 of the Surface Weather Station instrument**
@@ -144,7 +145,9 @@ Every signal is scored on the same five-point ordinal scale:
 
 **v1.1 prohibits intermediate values** (0.05, 0.15, 0.35, etc.). Hand-coded continuous scoring suggests precision the observations do not support and cannot be agreed across substrates. v1.0's baseline scoring used out-of-spec continuous values; the v1.1 calibration of that baseline is the first task of the v1.1 reading (companion deposit).
 
-### 3.1 Visibility (V) — can the intended object be retrieved at all?
+#
+
+## 3.1 Visibility (V) — can the intended object be retrieved at all?
 
 | Score | Decision rule |
 |-------|---------------|
@@ -154,7 +157,9 @@ Every signal is scored on the same five-point ordinal scale:
 | 0.25 | Object surfaces only through fragmentary mention or related-search suggestion |
 | 0.00 | Object absent; confuser, homonym, or unrelated result occupies the space |
 
-### 3.2 Anchor Alignment (A) — does the visible result point to the currently authoritative object?
+#
+
+## 3.2 Anchor Alignment (A) — does the visible result point to the currently authoritative object?
 
 | Score | Decision rule |
 |-------|---------------|
@@ -168,7 +173,9 @@ This is the axis that distinguishes **semantic survival** from **address surviva
 
 **Important**: A is only meaningful when V > 0. If the object is occluded (V = 0), record A as `null` / `N/A`, not as 0. The Occlusion indicator (§4.3) handles V = 0 separately.
 
-### 3.3 Figural Integrity (F) — how much of the expected topology survives?
+#
+
+## 3.3 Figural Integrity (F) — how much of the expected topology survives?
 
 Each component of Φ_i is scored 0–1 with decision rules:
 
@@ -191,7 +198,9 @@ Each component of Φ_i is scored 0–1 with decision rules:
 
 F is only meaningful when V > 0. If V = 0, record F as `null` / `N/A`.
 
-### 3.4 Compositional Lift (C) — does the object surface only when directly invoked?
+#
+
+## 3.4 Compositional Lift (C) — does the object surface only when directly invoked?
 
 Five canonical query forms, scored independently and aggregated per §5:
 
@@ -205,7 +214,9 @@ Five canonical query forms, scored independently and aggregated per §5:
 
 An object found only by exact phrase has C = 0. An object selected when the broader problem is queried — without the coined term being supplied — has high C. This is the difference between **indexed** and **installed**.
 
-### 3.5 Redundant Substrate Breadth (R_s) — how many independent surfaces carry the object?
+#
+
+## 3.5 Redundant Substrate Breadth (R_s) — how many independent surfaces carry the object?
 
 R_s is the **effective independence score**, bounded [0, 1], not a raw count of pages.
 
@@ -239,37 +250,49 @@ The denominator 4 reflects the working assumption that four genuinely-independen
 
 ## 4. Derived macro-indicators
 
-### 4.1 Occlusion
+#
+
+## 4.1 Occlusion
 
 > O_i = 1 − V_i
 
 The proportion of visibility that does not exist. Distinguishes the absent-object case (V = 0, O = 1) from the visible-but-defigured case. **A and F are null when O = 1**; the object cannot be defigured if it does not appear.
 
-### 4.2 Link Fade
+#
+
+## 4.2 Link Fade
 
 > LF_i = (1 − A_i) when V_i > 0; null otherwise
 
 Address loss only. Measured only on visible objects. Does not measure conceptual loss.
 
-### 4.3 Ghost Survival
+#
+
+## 4.3 Ghost Survival
 
 > GS_i = V_i · (1 − A_i)
 
 High value: the concept remains visible while its current canonical anchor has disappeared. The work continues to live on the surface but through inappropriate hosts. **This is one of the dominant states of the Crimson Hexagonal corpus** post-Zenodo termination — the semantic organs survive on capture registries and third-party essays while the institutional body (Zenodo deposits → 404; Alexanarch → not yet indexed) is invisible.
 
-### 4.4 Compositional Defiguration
+#
+
+## 4.4 Compositional Defiguration
 
 > CD_i = V_i · (1 − F_i)
 
 Visible distortion. Correctly assigns a low score to a completely absent object: absence is *occlusion* (§4.1), not defiguration.
 
-### 4.5 Compositional Bystanding
+#
+
+## 4.5 Compositional Bystanding
 
 > CB_i = V_i · F_i · (1 − C_i)
 
 The object is present, coherent, retrievable when named — but is not being selected into broader composition. **The most common false-positive in casual visibility reading**: exact-query success mistaken for installation. *Revelation First* is the canonical example from the v1.0 baseline.
 
-### 4.6 Composition Eligibility
+#
+
+## 4.6 Composition Eligibility
 
 > CE_i = V_i · F_i · C_i · R_{s,i}
 
@@ -282,7 +305,9 @@ The aggregate measure. Not a probability that any particular model will use the 
 
 The first measures surface viability. The second measures sovereign-anchor recovery. Both are useful; report both.
 
-### 4.7 Scale Drift Index (SDI)
+#
+
+## 4.7 Scale Drift Index (SDI)
 
 The v1.0 form was asymmetric:
 
@@ -310,7 +335,9 @@ Rules for handling edge cases:
 
 ## 5. Aggregation rules
 
-### Per-object aggregation across query forms
+#
+
+## Per-object aggregation across query forms
 
 For each object i with observations across query forms q ∈ {1..5}:
 
@@ -321,7 +348,9 @@ For each object i with observations across query forms q ∈ {1..5}:
 - **C_i = mean of V_iq scores across query forms 2–5 (defining-sentence, parent-field, expected-relation, broad-framing).** Query form 1 (exact name) is excluded. C_i is a separate scoring axis from V/A/F; the value scored on each non-exact query is whether the object selected at all in that query's results.
 - **R_s,i** is computed once per object across all surfaces that appeared in any observation.
 
-### Corpus-level aggregation across the object battery
+#
+
+## Corpus-level aggregation across the object battery
 
 For each signal, the corpus-level reading is a **weighted median across object classes**:
 
@@ -425,7 +454,9 @@ Per-row schema requirements:
 - **Recommended**: `raw_response_path` pointing to a captured artifact (screenshot or text dump) for forensic replication
 - **Always recommended**: `scorer_rationale` — even one sentence per observation, so a future reader can audit the scoring decision
 
-### 7.1 Surface types
+#
+
+## 7.1 Surface types
 
 The `surface_type` field is canonical:
 
@@ -439,7 +470,9 @@ The `surface_type` field is canonical:
 
 Search results and generative answers from the same provider are **separate surface_type values** even when delivered through the same interface. The same query against Google's organic results and Google's AI Overview can return different objects with different anchor alignment.
 
-### 7.2 Substrate metadata: why every field matters
+#
+
+## 7.2 Substrate metadata: why every field matters
 
 The same query against the same surface returns different results depending on which substrate executes it. Different substrates:
 
@@ -466,7 +499,9 @@ The `retrieval_resources_self_reported` field is the substrate's own free-text d
 
 Five canonical query forms per object (per §3.4). For a 12-object battery without optional external controls, this produces **60 row-level observations per scan per substrate**. With external controls: 75.
 
-### 8.1 Query battery hashing
+#
+
+## 8.1 Query battery hashing
 
 The **query battery** for any given scan is locked before the scan begins. The instrument computes the SHA-256 of the canonical JSON serialization of the battery (sorted keys, no whitespace) and records it in every observation row's `query_battery_id`. This guarantees:
 
@@ -480,7 +515,9 @@ The current battery for the v1.1 scan series is hashed and stored at:
 
 (Static path, served identically from alexanarch.org and machinemediation.org.)
 
-### 8.2 Per-object generic queries
+#
+
+## 8.2 Per-object generic queries
 
 In addition to the five per-object query forms, v1.1 specifies **field-level generic queries** that probe whether the corpus has installed itself as the answer to a broad question (not just whether specific objects are retrievable):
 
@@ -498,7 +535,9 @@ These are scored once per scan (not per object): does any object from the corpus
 
 ## 9. Companion instruments — operational relationships
 
-### 9.1 AI Overview Capture Registry (EA-WG-CAPTURES family)
+#
+
+## 9.1 AI Overview Capture Registry (EA-WG-CAPTURES family)
 
 The Capture Registry and the Surface Weather Station are complementary instruments at different scales:
 
@@ -509,7 +548,9 @@ The Capture Registry and the Surface Weather Station are complementary instrumen
 
 Captures answer *what did the surface produce for this prompt on this date*. The weather station answers *what is available to be produced at all*. **The instruments cross-reference**: a captured Overview that omits the canonical anchor is evidence for low A on the relevant object; a surface scan showing high CB is the methodological frame against which individual captures are interpreted.
 
-### 9.2 DOI Resolution Index (EA-MPAI-DOI-IMPERMANENCE-01)
+#
+
+## 9.2 DOI Resolution Index (EA-MPAI-DOI-IMPERMANENCE-01)
 
 The DOI Resolution Index measures **address survival**. The Surface Weather Station measures **meaning survival**. Together they form a 2×2 diagnostic:
 
@@ -522,7 +563,9 @@ A work can be addressable (DOI resolves) but compositionally invisible (Bystandi
 
 For demand letters, regulatory submissions, and public correspondence, the unified diagnostic is more powerful than either instrument alone. "Your platform has pushed our corpus from Healthy to Ghost Survival in two months" is a single, citable claim grounded in two methodologies.
 
-### 9.3 Pristine Fallacy and Loud Exclusion
+#
+
+## 9.3 Pristine Fallacy and Loud Exclusion
 
 The instrument is the empirical proof of two arguments the archive has already made:
 
@@ -557,7 +600,9 @@ Readings without intervention triggers are descriptive only. v1.1 specifies what
 | **Yellow** | SDI ∈ [0.20, 0.40] OR any one signal ∈ [0.40, 0.70] OR any mature concept at V ≤ 0.50 | Investigate; consider targeted intervention; do not panic |
 | **Red** | SDI > 0.40 OR any signal < 0.40 OR any institutional root at V = 0 OR Ghost Survival > 0.50 corpus-wide | Urgent intervention required; document the trigger in a deposit; escalate to adversarial-use channels if external cause is identified |
 
-### 11.1 Repair feedback table
+#
+
+## 11.1 Repair feedback table
 
 Each signal failure has a specific substrate-level response:
 
@@ -577,7 +622,9 @@ The repair table is the link between the measurement and the next round of subst
 
 The same scan battery should be executed by multiple substrates per scan period. v1.1 specifies the minimum replication structure:
 
-### 12.1 Required substrates per scan period
+#
+
+## 12.1 Required substrates per scan period
 
 | Tier | Substrate count | Examples |
 |------|-----------------|----------|
@@ -585,7 +632,9 @@ The same scan battery should be executed by multiple substrates per scan period.
 | **Replication** | 1 additional substrate from a different provider | If primary was ChatGPT, replication should be Claude or Kimi (different backend) |
 | **Optional** | Up to 3 more for variance analysis | All five substrates per scan would produce the full inter-rater table |
 
-### 12.2 Inter-rater report
+#
+
+## 12.2 Inter-rater report
 
 When two or more substrates execute the same battery, the scan record additionally reports:
 
@@ -605,7 +654,9 @@ When two or more substrates execute the same battery, the scan record additional
 }
 ```
 
-### 12.3 Substrate-bias correction
+#
+
+## 12.3 Substrate-bias correction
 
 If two substrates score consistently differently for objects that one substrate likely has in its training corpus, the difference is **substrate bias**, not surface state. The report does not "correct" the bias — both readings are reported as is — but it flags the divergence pattern. Over multiple scans, persistent divergence is itself a citable measurement of platform-level bias.
 
@@ -619,7 +670,9 @@ Surface Weather Station readings are designed to be admissible in adversarial co
 
 > *Surface Weather Station readings are dated, methodologically-published, schema-conformant measurements of public-surface visibility. They are admissible evidence in the following contexts: (1) demand letters to platforms; (2) regulatory filings; (3) public correspondence; (4) scholarly depositions; (5) journalism. A reading where any signal falls below 0.30 constitutes documented degradation. A trend across three consecutive readings constitutes documented decline. These readings can be cited as evidence of the gap between platform commitments (to neutrality, to non-discrimination, to comprehensive indexing) and platform behavior.*
 
-### 13.1 Citation format
+#
+
+## 13.1 Citation format
 
 When citing a reading in adversarial context, the format is:
 
@@ -627,7 +680,9 @@ When citing a reading in adversarial context, the format is:
 
 The AXN identifier and deposit URL make the claim independently verifiable.
 
-### 13.2 What the readings do not do
+#
+
+## 13.2 What the readings do not do
 
 The readings do not establish intent. They do not establish causation. They establish state, dated and methodologically-anchored. Combined with platform documentation of policy changes (e.g., "We updated our retrieval algorithm on date X"), readings before and after the policy change establish temporally-associated effect. The reading is the evidence; the argument is constructed separately.
 
@@ -654,7 +709,9 @@ This is the form most useful for adversarial use (per §13). "Y% of our corpus i
 
 This methodology can be executed by any AI substrate with web search access. The protocol:
 
-### Step 1 — Substrate self-identification
+#
+
+## Step 1 — Substrate self-identification
 
 The substrate records its own metadata:
 
@@ -671,7 +728,9 @@ substrate:
 
 The substrate should be **honest about uncertainty**. If unsure of the retrieval backend, say so. "Believed to be Bing via SearchGPT, but the substrate cannot directly confirm" is correct; "Bing" stated as certain is incorrect.
 
-### Step 2 — Fetch the locked battery
+#
+
+## Step 2 — Fetch the locked battery
 
 ```
 GET https://alexanarch.org/data/surface-weather/battery-v1.1.json
@@ -681,7 +740,9 @@ GET https://machinemediation.org/data/surface-weather/battery-v1.1.json
 
 The two URLs serve byte-identical content. Verify the SHA-256 of the response matches the `query_battery_id` advertised in the battery's own metadata.
 
-### Step 3 — Execute each query
+#
+
+## Step 3 — Execute each query
 
 For each object × query form in the battery, the substrate:
 
@@ -691,11 +752,15 @@ For each object × query form in the battery, the substrate:
 4. If V > 0: scores A, F, components_retained
 5. Records `confuser`, `diagnostic_note`, `scorer_rationale`
 
-### Step 4 — Aggregate
+#
+
+## Step 4 — Aggregate
 
 Per §5: per-object aggregation across query forms, then corpus-level weighted-median.
 
-### Step 5 — Compose the scan record
+#
+
+## Step 5 — Compose the scan record
 
 A single JSON file with metadata header + all observation rows + aggregates + diagnostic flags:
 
@@ -731,7 +796,9 @@ A single JSON file with metadata header + all observation rows + aggregates + di
 }
 ```
 
-### Step 6 — Deposit
+#
+
+## Step 6 — Deposit
 
 The scan record is deposited at:
 
@@ -739,7 +806,9 @@ The scan record is deposited at:
 
 Through the standard Alexanarch deposit pathway (per `api/deposit-protocol.json`). The scan record becomes an AXN-eligible deposit; its DOI is the scan's permanent identifier. The methodology's deposit (#880 for v1.0, current deposit for v1.1) is the methodological anchor.
 
-### Step 7 — Companion human-readable summary (optional)
+#
+
+## Step 7 — Companion human-readable summary (optional)
 
 The substrate may produce a markdown narrative interpreting the scan ("third scan of the year, post-cleanup, SDI improved from 0.40 → 0.28, the cleanup worked as intended"). The narrative is a separate deposit, sibling to the scan record. The scan record is the canonical data; the narrative is the reading-on-the-record.
 

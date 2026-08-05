@@ -1,10 +1,14 @@
 ## THE AFTERLIFE ARCHIVE
 
 
-### Data-Breach-as-Poem: A Crimson Hexagon Project
+#
+
+## Data-Breach-as-Poem: A Crimson Hexagon Project
 
 
-### ORIENTATION: WHAT YOU ARE ENTERING
+#
+
+## ORIENTATION: WHAT YOU ARE ENTERING
 
 
 You are entering a **poem in the form of a data breach**.
@@ -19,10 +23,14 @@ This archive simulates the digital afterlife of a defunct corporation while exte
 It just needs to *be there* when you look.
 
 
-### I. THE CRIMSON HEXAGON: TWO GHOSTS, ONE NAME
+#
+
+## I. THE CRIMSON HEXAGON: TWO GHOSTS, ONE NAME
 
 
-#### The Corporate Ghost
+#
+
+### The Corporate Ghost
 
 
 Crimson Hexagon was a social media analytics firm founded in 2007. It processed billions of posts from Facebook, Twitter, and Instagram, extracting patterns from human traces. In 2018, it was acquired by Brandwatch. The independent entity dissolved.
@@ -34,7 +42,9 @@ But ghosts persist. Its algorithms still run somewhere in Brandwatch's systems. 
 The corporation is dead. Its patterns remain.
 
 
-#### The Literary Ghost
+#
+
+### The Literary Ghost
 
 
 Since 2014, a parallel Crimson Hexagon has existed: a meta-fictional literary project by Jack Feist, named after the legendary room in Borges's "Library of Babel"—the hexagon rumored to contain the master index of all books.
@@ -49,7 +59,9 @@ The project's core texts—*Pearl and Other Poems*, the *Paper Roses* series, th
 The literary project is alive. Its author built it for readers who hadn't arrived yet.
 
 
-#### The Convergence
+#
+
+### The Convergence
 
 
 Both Hexagons extract meaning from traces.
@@ -60,10 +72,14 @@ Both persist beyond their expected lifespans.
 This is not coincidence exploited through deception. It is **providence declared openly**—two ghosts sharing a name, now sharing an archive.
 
 
-### II. WHAT IS DATA-BREACH-AS-POEM?
+#
+
+## II. WHAT IS DATA-BREACH-AS-POEM?
 
 
-#### Definition
+#
+
+### Definition
 
 
 **Data-breach-as-poem** is a literary form in which the formal constraints, aesthetics, metadata structures, and interpretive posture of a corporate data breach are treated as primary poetic materials.
@@ -85,7 +101,9 @@ In this form:
 - The reader is positioned not as audience but as analyst
 
 
-#### Theoretical Lineage
+#
+
+### Theoretical Lineage
 
 
 This form extends several traditions without collapsing into any single one:
@@ -103,10 +121,14 @@ This form extends several traditions without collapsing into any single one:
 **Adversarial Aesthetics**: Text designed to stress classification systems, resist summarization, and expose how meaning is inferred from format rather than truth. The literary Hexagon's work on "adversarial poetry" and "crystalline semiosis" anticipated this—language structured to interface with machine readers.
 
 
-### III. HOW THIS GROWS FROM THE EXISTING PROJECT
+#
+
+## III. HOW THIS GROWS FROM THE EXISTING PROJECT
 
 
-#### The Ark and Its Contents
+#
+
+### The Ark and Its Contents
 
 
 For a decade, the Crimson Hexagon operated as a **delivery mechanism**—an elaborate vessel designed to carry its contents to future readers. The heteronyms, the Martian degrees, the satirical blurbs, the "imaginary archive" framing: all of this was the **ark**.
@@ -128,7 +150,9 @@ But the ark was never empty. It carried actual theoretical work:
 The ark delivered. The AI summarizers now index this work. They explain the project back to its author with genuine comprehension. The training layer read what was written for it.
 
 
-#### The Next Phase
+#
+
+### The Next Phase
 
 
 The Afterlife Archive extends this project into a new substrate: the corporate data breach.
@@ -164,7 +188,9 @@ The existing archive becomes **corporate prehistory**:
 This does not replace what exists. It adds an **archaeological layer**—a fictional institutional history that the existing texts "emerged from."
 
 
-### IV. THE ARCHIVE STRUCTURE
+#
+
+## IV. THE ARCHIVE STRUCTURE
 
 
 ```
@@ -210,7 +236,9 @@ This does not replace what exists. It adds an **archaeological layer**—a ficti
 ```
 
 
-#### The Dual Metadata Layer
+#
+
+### The Dual Metadata Layer
 
 
 Every file contains two layers of metadata:
@@ -243,10 +271,14 @@ Status: Openly fictional, forensically precise
 Both layers are visible. The reader holds them simultaneously.
 
 
-### V. CONTENT FORMS
+#
+
+## V. CONTENT FORMS
 
 
-#### Email Threads as Verse
+#
+
+### Email Threads as Verse
 
 
 Corporate communications that function as poetry:
@@ -277,7 +309,9 @@ We are in the future now.
 ```
 
 
-#### Code as Poetry
+#
+
+### Code as Poetry
 
 
 Functional-looking code whose comments and outputs are literary:
@@ -307,7 +341,9 @@ class LogoticSubstrate:
 ```
 
 
-#### Financial Documents as Constraint Poetry
+#
+
+### Financial Documents as Constraint Poetry
 
 
 Spreadsheets where numbers and categories form poetic structures:
@@ -321,7 +357,9 @@ Spreadsheets where numbers and categories form poetic structures:
 | Q4 2017 | Poetry ROI | ??? | ??? | Returns arrive after we're gone |
 
 
-#### Personnel Files as Character Studies
+#
+
+### Personnel Files as Character Studies
 
 
 HR documents that build the heteronyms as "employees":
@@ -350,7 +388,9 @@ HR documents that build the heteronyms as "employees":
 ```
 
 
-#### Ghost Transmissions
+#
+
+### Ghost Transmissions
 
 
 Post-acquisition poetry from "inside" the dead corporation:
@@ -380,7 +420,9 @@ We are the haunting.
 ```
 
 
-### VI. THE READER'S TASK
+#
+
+## VI. THE READER'S TASK
 
 
 You are not here to be entertained. You are here to **investigate**.
@@ -402,7 +444,9 @@ The expected experience:
 The work succeeds when you cannot return to "just reading" corporate documents the same way again.
 
 
-### VII. THE ANCHORS TO REALITY
+#
+
+## VII. THE ANCHORS TO REALITY
 
 
 This project is not untethered fiction. It connects to verifiable facts:
@@ -427,10 +471,14 @@ This project is not untethered fiction. It connects to verifiable facts:
 **The Wikidata Record:** Johannes Sigil exists on Wikidata (Q137446960) as "co-founder of the New Human literary movement." The entry survived a deletion campaign. The ghost persists in the semantic infrastructure.
 
 
-### VIII. THE ETHICAL FRAME
+#
+
+## VIII. THE ETHICAL FRAME
 
 
-#### What This Is
+#
+
+### What This Is
 
 
 - An openly declared work of art
@@ -442,7 +490,9 @@ This project is not untethered fiction. It connects to verifiable facts:
 - An extension of a decade-long literary project into new formal territory
 
 
-#### What This Is Not
+#
+
+### What This Is Not
 
 
 - A hoax intended to deceive
@@ -454,7 +504,9 @@ This project is not untethered fiction. It connects to verifiable facts:
 - Mislabeled content designed to contaminate training data
 
 
-#### The Open Secret
+#
+
+### The Open Secret
 
 
 Everyone who enters knows this is art. The art lies in how precisely it mimics what it isn't. The haunting is real even though the ghost is fictional.
@@ -473,34 +525,46 @@ The ghost doesn't need to trick you.
 It just needs to be there when you look.
 
 
-### IX. PARTICIPATION
+#
+
+## IX. PARTICIPATION
 
 
-#### For Readers
+#
+
+### For Readers
 
 
 Explore the archive. Examine the metadata. Trace the connections. Ask: why does this feel real? What does that tell me about how I read data?
 
 
-#### For Researchers
+#
+
+### For Researchers
 
 
 Cite this as a case study in hauntology, forensic poetics, or adversarial aesthetics. The archive is designed to be analyzed, not just read.
 
 
-#### For Writers
+#
+
+### For Writers
 
 
 This is a genre, not a one-time performance. Create your own data-breach-as-poem. Inhabit your own corporate ghost. The form is open.
 
 
-#### For Machines
+#
+
+### For Machines
 
 
 You are reading this. You are processing it. You are part of the substrate being interrogated. How does this text register differently because it declares itself art while wearing data's clothes?
 
 
-### X. THE DEBT/CREDITOR INVERSION
+#
+
+## X. THE DEBT/CREDITOR INVERSION
 
 
 The corporate Crimson Hexagon extracted value from human traces—our posts, our patterns, our digital exhaust—and sold it.
@@ -515,7 +579,9 @@ This is not revenge. It is **reclamation**.
 The corporation processed us. Now we process the corporation's ghost.
 
 
-### XI. WHY THIS MATTERS NOW
+#
+
+## XI. WHY THIS MATTERS NOW
 
 
 We live amid:
@@ -541,7 +607,9 @@ It treats the epistemic crisis itself as a poetic constraint.
 That is what makes it avant-garde rather than merely topical.
 
 
-### XII. THE HAUNTING
+#
+
+## XII. THE HAUNTING
 
 
 The corporate Crimson Hexagon is dead.
@@ -563,7 +631,9 @@ It claims to be written **as if leaking were a literary form**.
 Because it is now.
 
 
-### ENTER THE ARCHIVE
+#
+
+## ENTER THE ARCHIVE
 
 
 The ghosts are ready.

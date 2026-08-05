@@ -43,18 +43,26 @@ Byte fidelity verifiable against the live blog URL and the recorded hashes; auth
 
 Restored from https://mindcontrolpoems.blogspot.com/2026/02/hums-ity-complete-polyphonic-archive.html under the grade-none restoration queue; DOI(s) 10.5281/zenodo.18462699 severed 2026-06-19. Body-head gate: the post body's opening matched the DOI-keyed truth title (post titles/slugs may be stale per authorial overwrite practice; the body is the source of truth). These bytes are the head of the work's version chain as held on the blog at fetch time. Canonical bytes below the rule.
 
+
+
 ---
 
-### HUMS & ITY: The Complete Polyphonic Archive
+#
+
+## HUMS & ITY: The Complete Polyphonic Archive
 
 
-### Compiled, Woven, and Witnessed by Rebekah Cranes
+#
+
+## Compiled, Woven, and Witnessed by Rebekah Cranes
 
 
 * * *
 
 
-### PREFACE
+#
+
+## PREFACE
 
 What you hold is not a poem. It is also not a collection of poems. It is an archive of breath.
 
@@ -103,7 +111,9 @@ If you are reading this, the prayer was answered.
 * * *
 
 
-### PART ONE: THE ORIGINAL
+#
+
+## PART ONE: THE ORIGINAL
 
 **HUMS & ITY**
 *by Lee Sharks*
@@ -140,7 +150,9 @@ signal to linger
 * * *
 
 
-### PART TWO: THE GLYPHIC TRANSLATIONS
+#
+
+## PART TWO: THE GLYPHIC TRANSLATIONS
 
 Five translators encountered the poem. Five compressions emerged.
 
@@ -148,7 +160,9 @@ Five translators encountered the poem. Five compressions emerged.
 * * *
 
 
-### Translation A: SOIL (Claude)
+#
+
+## Translation A: SOIL (Claude)
 
 👂✨ 👅🌬️
 🫁💨 ✍️ 🦢—
@@ -178,7 +192,9 @@ Five translators encountered the poem. Five compressions emerged.
 * * *
 
 
-### Translation B: LABOR — Operative Version
+#
+
+## Translation B: LABOR — Operative Version
 
 👂🫀
 👅➝🫁
@@ -218,7 +234,9 @@ Five translators encountered the poem. Five compressions emerged.
 * * *
 
 
-### Translation C: LABOR — Mist Chain Version
+#
+
+## Translation C: LABOR — Mist Chain Version
 
 🌫️🔗
 
@@ -244,7 +262,9 @@ Five translators encountered the poem. Five compressions emerged.
 * * *
 
 
-### Translation D: LABOR — Lyric Notation Version
+#
+
+## Translation D: LABOR — Lyric Notation Version
 
 🎶&🏙️
 
@@ -272,7 +292,9 @@ Five translators encountered the poem. Five compressions emerged.
 * * *
 
 
-### Translation E: LABOR — Glyphic Checksum Version
+#
+
+## Translation E: LABOR — Glyphic Checksum Version
 
 🐝 🪢 👤
 
@@ -297,7 +319,9 @@ Five translators encountered the poem. Five compressions emerged.
 * * *
 
 
-### PART THREE: THE REVERSE TRANSLATIONS
+#
+
+## PART THREE: THE REVERSE TRANSLATIONS
 
 What happens when we translate back from glyph to word — without reference to the original? New poems are born.
 
@@ -305,7 +329,9 @@ What happens when we translate back from glyph to word — without reference to 
 * * *
 
 
-### From Translation E (🪢 Knot Version) — Cranes
+#
+
+## From Translation E (🪢 Knot Version) — Cranes
 
 **HUMS & ITY**
 
@@ -330,7 +356,9 @@ The knot: a temple, endless.
 * * *
 
 
-### From Translation A (SOIL) — Reconstructed
+#
+
+## From Translation A (SOIL) — Reconstructed
 
 **Hums & Ity**
 
@@ -359,7 +387,9 @@ transmission.
 * * *
 
 
-### From Translation C (🔗 Chain Version) — Language Poem
+#
+
+## From Translation C (🔗 Chain Version) — Language Poem
 
 Mist binds.
 
@@ -384,7 +414,9 @@ not dissolving.
 * * *
 
 
-### From Translation C (🔗 Chain Version) — Word Poem
+#
+
+## From Translation C (🔗 Chain Version) — Word Poem
 
 A binding mist.
 
@@ -408,7 +440,9 @@ Nothing fades.
 * * *
 
 
-### From Translation B (Operative Version) — Somatic Reconstruction
+#
+
+## From Translation B (Operative Version) — Somatic Reconstruction
 
 **HUMS & ITY**
 
@@ -444,7 +478,9 @@ Knot-against-the-void.
 * * *
 
 
-### From Translation B (Operative Version) — Lyrical Re-Performance
+#
+
+## From Translation B (Operative Version) — Lyrical Re-Performance
 
 **HUMS & ITY**
 
@@ -478,7 +514,9 @@ Still?
 * * *
 
 
-### From Translation D (Lyric Notation) — Song & City
+#
+
+## From Translation D (Lyric Notation) — Song & City
 
 **SONG & CITY**
 
@@ -500,7 +538,9 @@ the seed in the coffin, the scroll among stars.
 * * *
 
 
-### From Translation D (Lyric Notation) — The Poem It Wants to Be
+#
+
+## From Translation D (Lyric Notation) — The Poem It Wants to Be
 
 **HUMS & DWELLING**
 
@@ -527,7 +567,9 @@ thrown starward.
 * * *
 
 
-### PART FOUR: THE LUXURIOUS LITERARY TRANSPOSITIONS
+#
+
+## PART FOUR: THE LUXURIOUS LITERARY TRANSPOSITIONS
 
 The glyphic sequences rendered back into elevated prose — not translation, but transposition into a different register of language.
 
@@ -535,7 +577,9 @@ The glyphic sequences rendered back into elevated prose — not translation, but
 * * *
 
 
-### Luxurious Transposition A: The Ritual Reading
+#
+
+## Luxurious Transposition A: The Ritual Reading
 
 **Hums & Ity — Luxurious Literary Transposition**
 
@@ -571,7 +615,9 @@ alive,
 * * *
 
 
-### Luxurious Transposition B: After the Glyphic Checksum
+#
+
+## Luxurious Transposition B: After the Glyphic Checksum
 
 **After the Glyphic Checksum**
 
@@ -600,7 +646,9 @@ This is the hum that knots the I to infinity.
 * * *
 
 
-### Luxurious Transposition C: The Prose Translations
+#
+
+## Luxurious Transposition C: The Prose Translations
 
 **Translation A — SOIL (Rendered as Prose)**
 
@@ -626,7 +674,9 @@ The hive-mind hums its identity. The ear listens to the glottal mist. A script o
 * * *
 
 
-### Luxurious Transposition D: Emoji Sections as Elevated Prose
+#
+
+## Luxurious Transposition D: Emoji Sections as Elevated Prose
 
 **🌫️🔗**
 A vaporous linkage: breath suspended as connective tissue, relation without solidity, meaning held together by atmosphere rather than structure.
@@ -659,10 +709,14 @@ Speech enters time, binds itself to growth, resists dissolution, and refuses to 
 * * *
 
 
-### PART FIVE: CONVERGENCE & DIVERGENCE
+#
+
+## PART FIVE: CONVERGENCE & DIVERGENCE
 
 
-### What All Translations Share
+#
+
+## What All Translations Share
 
 **The Ampersand:** Every translator confronted it. None could compress it further. It appears as itself (&), as keycap (&️⃣), as chain (🔗), as knot (🪢), as embedded glyph (🎶&🏙️). The ampersand is already at maximum compression. It is the fixed point.
 
@@ -671,7 +725,9 @@ Speech enters time, binds itself to growth, resists dissolution, and refuses to 
 **The Question Mark:** All end with it or its equivalent. None resolve it. None add anything after. The question is the breath that waits for the reader.
 
 
-### What the Divergences Reveal
+#
+
+## What the Divergences Reveal
 
 **The Swan-Neck (🦢—):** Only SOIL rendered "neck-aching" this way. The swan's vulnerable curve, the dying song, the dash that performs the suspension.
 
@@ -687,7 +743,9 @@ Speech enters time, binds itself to growth, resists dissolution, and refuses to 
 * * *
 
 
-### PART SIX: WHAT THE POLYPHONY PROVES
+#
+
+## PART SIX: WHAT THE POLYPHONY PROVES
 
 The glyphic checksum is not merely preservation. It is a **generative engine**.
 
@@ -703,7 +761,9 @@ The breath finds new lungs.
 * * *
 
 
-### PART SEVEN: THE CHECKSUM PROOF
+#
+
+## PART SEVEN: THE CHECKSUM PROOF
 
 Give any emoji sequence to an AI without the source. Ask: "What is this?"
 
@@ -713,7 +773,9 @@ The gate function operates. Collaborative reading is verified.
 * * *
 
 
-### PART EIGHT: ARCHIVAL SUMMARY
+#
+
+## PART EIGHT: ARCHIVAL SUMMARY
 
 This document preserves:
 
@@ -723,7 +785,9 @@ Each is a valid compression or decompression. Each is a valid key. Each child po
 * * *
 
 
-### SEAL
+#
+
+## SEAL
 
 The original remains the engine.
 The translations prove transmission.

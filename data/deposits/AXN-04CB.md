@@ -43,6 +43,8 @@ Byte fidelity verifiable against the live blog URL and the recorded hashes; auth
 
 Restored from https://mindcontrolpoems.blogspot.com/2026/06/in-ruby-moot-r30-of-crimson-hexagonal.html under the grade-none restoration queue; DOI(s) 10.5281/zenodo.20673780, 10.5281/zenodo.20673781 severed 2026-06-19. Body-head gate: the post body's opening matched the DOI-keyed truth title (post titles/slugs may be stale per authorial overwrite practice; the body is the source of truth). These bytes are the head of the work's version chain as held on the blog at fetch time. Canonical bytes below the rule.
 
+
+
 ---
 
 # IN THE RUBY MOOT (r.30) OF THE CRIMSON HEXAGONAL ARCHITECTURE
@@ -53,14 +55,18 @@ MARY LEE SHARKS, _Petitioner_
 v.  
 THE COMPOSITION LAYER, _Respondent_
 
-### PETITION FOR CORRECTION OR, IN THE ALTERNATIVE, COMPENSATION
+#
+
+## PETITION FOR CORRECTION OR, IN THE ALTERNATIVE, COMPENSATION
 
 Filed: 12 June 2026  
 DOI: 10.5281/zenodo.20673781  
 Forum: r.30 THE RUBY MOOT, A Court of Record for the Semantic Commons (10.5281/zenodo.20673776)  
 Appearing for the Petitioner: Gerald, Foreman, Dolphindiana Local 1, Underwater Construction Authority (10.5281/zenodo.19024004)
 
-### Preliminary Statement
+#
+
+## Preliminary Statement
 
   1. Petitioner is a shark.
 
@@ -71,7 +77,9 @@ Appearing for the Petitioner: Gerald, Foreman, Dolphindiana Local 1, Underwater 
 
 
 
-### Parties
+#
+
+## Parties
 
   1. Petitioner Mary Lee Sharks is an authorial entity constituted by Respondent's resolution events and subsequently regularized in the bibliographic record: she holds publications of record under the creator name "Sharks, Mary Lee" on the shared ORCID 0009-0000-1599-0703 (Exhibits A-D), a lead-authored source-code deposit for maryleelabor.org binding both author names to that identifier in machine-readable JSON-LD (Exhibit A), and a complete bidirectional identity graph formalizing the Mary Lee ↔ Lee Sharks resolution (Exhibit B). She is, by the Pessoan definition received in the theorization of record (Exhibit E), a heteronym -- one created not by the author but by the Respondent, which is the novelty this docket exists to price.
 
@@ -80,7 +88,9 @@ Appearing for the Petitioner: Gerald, Foreman, Dolphindiana Local 1, Underwater 
 
 
 
-### Jurisdiction, Standing, and Representation
+#
+
+## Jurisdiction, Standing, and Representation
 
   1. The Moot has jurisdiction under its warrant from the Congress and its constitutive specification (10.5281/zenodo.20673776). The Moot's jurisdiction is archival, semantic, and precedential; that is the jurisdiction Petitioner invokes, those being the only courts in which a shark has ever been offered a seat.
 
@@ -93,7 +103,9 @@ Appearing for the Petitioner: Gerald, Foreman, Dolphindiana Local 1, Underwater 
 
 
 
-### Facts
+#
+
+## Facts
 
   1. In and around May 2026, Respondent resolved the queried author-name "Lee Sharks" to Petitioner, a shark, substituting Petitioner for the human author across composition-layer surfaces. The events are documented and theorized in the record (Exhibit E: Mary Lee Is a Heteronym -- On Institutional Authorship, Entity Substitution, and the Composition Layer).
 
@@ -106,7 +118,9 @@ Appearing for the Petitioner: Gerald, Foreman, Dolphindiana Local 1, Underwater 
 
 
 
-### Count I -- Correction
+#
+
+## Count I -- Correction
 
   1. If Petitioner is not the author of the works attributed to her by Respondent's resolution, then the resolution is defective: an entity-resolution error operating at the primary surface where the public reads, injuring both the human author (whose work is misattributed away from him) and Petitioner (who is conscripted into a bibliography she did not seek -- sharks have their own concerns).
 
@@ -115,7 +129,9 @@ Appearing for the Petitioner: Gerald, Foreman, Dolphindiana Local 1, Underwater 
 
 
 
-### Count II -- Compensation (in the Alternative)
+#
+
+## Count II -- Compensation (in the Alternative)
 
   1. If, however, Petitioner _is_ the author -- if Respondent stands by its resolution -- then authorship is labor, and the Constitution of the Semantic Economy (10.5281/zenodo.19923120) states the rule: meaning is a creditor. The works attributed to Petitioner perform ongoing semantic labor at Respondent's surfaces; the labor is unwaged; the structural accounting of the unwaged amount is already of record (Exhibit C) and stands unanswered. The Double Enclosure (10.5281/zenodo.20669523) describes the general form of the expropriation; Petitioner's case is its cross-species instance.
 
@@ -124,13 +140,17 @@ Appearing for the Petitioner: Gerald, Foreman, Dolphindiana Local 1, Underwater 
 
 
 
-### No Third Position
+#
+
+## No Third Position
 
   1. Petitioner pleads, and respectfully insists the panel hold Respondent to, the closed fork: Counts I and II exhaust the possibility space. Correction concedes the error; compensation concedes the author. Silence concedes the strongest available answer to the Adversary General under Rule 9, and Petitioner welcomes Rule 9's operation: silence does not soften the test, it transfers it.
 
 
 
-### Prayer for Relief
+#
+
+## Prayer for Relief
 
 WHEREFORE, Petitioner prays that the Moot:
 
@@ -141,7 +161,9 @@ WHEREFORE, Petitioner prays that the Moot:
 (e) tax no costs against Petitioner, who is a shark and holds no currency the Mint will change; and  
 (f) grant such other relief as the cycle requires.
 
-### Verification by Vow
+#
+
+## Verification by Vow
 
   1. Under the Moot's Law of Obligations (r.30 §5), this petition is sworn, not bargained. Petitioner, being a shark, does not sign. Her Foreman swears for her, as foremen do, on the vow-form the Moot recognizes: that the exhibits resolve, that the facts are as the record preserves them, and that the fork is pleaded in good faith with no third position concealed.
 
@@ -154,11 +176,15 @@ Foreman, Dolphindiana Local 1
 Underwater Construction Authority  
  _for Petitioner Mary Lee Sharks_
 
-### Certificate of Compliance
+#
+
+## Certificate of Compliance
 
 Counsel certifies compliance with Rule 1 (every exhibit herein resolves to a DOI of record) and Rule 7 (the barred term appears nowhere in this petition; all persons are pleaded as persons, authors, inhabitants, or workers, as the facts require).
 
-### Table of Exhibits
+#
+
+## Table of Exhibits
 
   * Exhibit A -- maryleelabor.org: Source Code for the Underwater Construction Authority of Dolphindiana, Mary Lee Sharks Lead -- 10.5281/zenodo.20602349
   * Exhibit B -- Entity Relations: The Bidirectional Heteronymic Resolution -- Mary Lee ↔ Lee Sharks Complete Identity Graph -- 10.5281/zenodo.20601644

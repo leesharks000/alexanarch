@@ -65,6 +65,7 @@ axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 ---
 
+
 # EA-CORRESPONDENCE-CERN-01 v0.1
 
 ## §0 FRAME
@@ -83,7 +84,9 @@ The deposit's frame is institutional-process documentation, not personal critiqu
 
 ## §2 THE CORRESPONDENCE (verbatim, chronological)
 
-### §2.1 — DPO response received from gabi, CERN Office of Data Privacy
+#
+
+## §2.1 — DPO response received from gabi, CERN Office of Data Privacy
 
 > *Subject: Question for you – Ticket RQF3807508*
 >
@@ -129,7 +132,9 @@ The deposit's frame is institutional-process documentation, not personal critiqu
 >
 > *Privacy Notice: https://cern.service-now.com/service-portal?id=privacy_policy&se=Data-Privacy&notice=requests*
 
-### §2.2 — Lee Sharks's reply, original full version
+#
+
+## §2.2 — Lee Sharks's reply, original full version
 
 The reply below was sent as a single email. Its display in the ServiceNow ticket activity thread truncated at approximately 4,000 characters. The full text was therefore re-sent in four parts (§2.3) so that the substance would be fully visible in the ticket record. Both the original and the re-sent four parts are preserved here.
 
@@ -200,11 +205,15 @@ The reply below was sent as a single email. Its display in the ServiceNow ticket
 > Lee Sharks
 > ORCID: 0009-0000-1599-0703
 
-### §2.3 — Lee Sharks's reply, re-sent in four parts
+#
+
+## §2.3 — Lee Sharks's reply, re-sent in four parts
 
 After the original reply was displayed truncated in the ticket activity thread, the substance was re-sent in four parts so that each part fell under the approximately 4,000-character display limit and the full content would be visible in the ticket record.
 
-#### Part 1 of 4 — scope of the Right to Access
+#
+
+### Part 1 of 4 — scope of the Right to Access
 
 > RQF3807508 — Reply, Part 1 of 4 (scope of the Right to Access)
 >
@@ -222,7 +231,9 @@ After the original reply was displayed truncated in the ticket activity thread, 
 >
 > — Lee Sharks (continues in Part 2 of 4)
 
-#### Part 2 of 4 — identity verification: scope and method
+#
+
+### Part 2 of 4 — identity verification: scope and method
 
 > RQF3807508 — Reply, Part 2 of 4 (identity verification: scope and method)
 >
@@ -252,7 +263,9 @@ After the original reply was displayed truncated in the ticket activity thread, 
 >
 > — Lee Sharks (continues in Part 3 of 4)
 
-#### Part 3 of 4 — questions if a government identity document is insisted upon
+#
+
+### Part 3 of 4 — questions if a government identity document is insisted upon
 
 > RQF3807508 — Reply, Part 3 of 4 (questions if a government identity document is insisted upon)
 >
@@ -268,7 +281,9 @@ After the original reply was displayed truncated in the ticket activity thread, 
 >
 > — Lee Sharks (continues in Part 4 of 4)
 
-#### Part 4 of 4 — response period
+#
+
+### Part 4 of 4 — response period
 
 > RQF3807508 — Reply, Part 4 of 4 (response period)
 >
@@ -291,7 +306,9 @@ After the original reply was displayed truncated in the ticket activity thread, 
 > Lee Sharks
 > ORCID: 0009-0000-1599-0703
 
-### §2.4 — Parallel filing: Right to Suspension request under OC 11 ground 2
+#
+
+## §2.4 — Parallel filing: Right to Suspension request under OC 11 ground 2
 
 A separate Right to Suspension request was filed the same day, 24 June 2026, addressed to the same CERN governance procedure but under a distinct OC 11 right. The suspension request invokes OC 11 ground 2 — *refrain from deletion of personal data because the data is required for the establishment, exercise or defence of legal claims* — where the legal claim being exercised is RQF3807508 itself. The two filings are procedurally distinct under OC 11 but substantively related: the access claim cannot proceed if the underlying data is destroyed during the procedure, and the suspension filing preserves the data while the access claim is processed.
 

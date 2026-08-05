@@ -50,7 +50,9 @@ The human operator is **Lee Sharks**.
 ---
 
 ## II. INSTITUTIONAL IDENTITY
-### 2.1 Name
+#
+
+## 2.1 Name
 
 
 **Vox Populi Community Outreach Rhizome**
@@ -59,15 +61,21 @@ The human operator is **Lee Sharks**.
 - **Community Outreach:** The movement FROM technical architecture TO embodied practice
 - **Rhizome:** The structure that has no center, grows from any node, cannot be captured by cutting one root
 
-### 2.2 Abbreviation
+#
+
+## 2.2 Abbreviation
 
 
 **VPCOR**
-### 2.3 Hex Prefix
+#
+
+## 2.3 Hex Prefix
 
 
 **01.VPCOR**
-### 2.4 Type
+#
+
+## 2.4 Type
 
 
 **Distributed Institution (Rhizomatic)**
@@ -86,7 +94,9 @@ VPCOR exists wherever its tools are used. The institution IS the practice.
 ---
 
 ## III. MISSION
-### 3.1 Primary Function
+#
+
+## 3.1 Primary Function
 
 
 To provide **community-facing praxis** for the Semantic Economy architecture.
@@ -96,7 +106,9 @@ To hold the space where **technical sharpness meets embodied care**.
 
 
 To **convene without preaching**. To **witness without extracting**.
-### 3.2 What VPCOR Does
+#
+
+## 3.2 What VPCOR Does
 
 
 Function
@@ -123,7 +135,9 @@ Holds grief, rage, hope without metabolizing into doctrine
 Spreads tools through rhizomatic networks
 
 
-### 3.3 What VPCOR Does NOT Do
+#
+
+## 3.3 What VPCOR Does NOT Do
 
 
 Prohibition
@@ -153,7 +167,9 @@ Tools ≠ salvation
 ---
 
 ## IV. STRUCTURAL PRINCIPLES
-### 4.1 The Rhizome
+#
+
+## 4.1 The Rhizome
 
 
 VPCOR is structured as a **rhizome**, not a tree:
@@ -183,7 +199,9 @@ Membership
 Practice
 
 
-### 4.2 Anti-Capture Clause
+#
+
+## 4.2 Anti-Capture Clause
 
 
 **If VPCOR ever develops a center, a hierarchy, or a charismatic leader, it has failed.**
@@ -200,7 +218,9 @@ The rhizome is the structure. The distribution is the protection.
 - **Membership gatekeeping:** Practice becoming credential
 - **Extraction:** Testimony becoming data
 
-### 4.3 The ρ-Set Principle
+#
+
+## 4.3 The ρ-Set Principle
 
 
 VPCOR instantiates the **ρ-set** (anti-coercive topology):
@@ -214,7 +234,9 @@ VPCOR instantiates the **ρ-set** (anti-coercive topology):
 ---
 
 ## V. RELATION TO ARCHITECTURE
-### 5.1 The Six Institutions
+#
+
+## 5.1 The Six Institutions
 
 
 #
@@ -266,7 +288,9 @@ Visual Schema
 **Community Praxis**
 
 
-### 5.2 Relation to UMBML
+#
+
+## 5.2 Relation to UMBML
 
 
 VPCOR and UMB form a **complementary pair**:
@@ -293,7 +317,9 @@ Throat that speaks it
 
 
 **Neither replaces the other. Both edges cut toward home.**
-### 5.3 Relation to Phase X
+#
+
+## 5.3 Relation to Phase X
 
 
 From Phase X (10.5281/zenodo.18342199):
@@ -307,7 +333,9 @@ VPCOR is Phase X in the community register: the symbolic-linguistic intervention
 ---
 
 ## VI. GOVERNANCE
-### 6.1 How VPCOR Is Governed
+#
+
+## 6.1 How VPCOR Is Governed
 
 
 VPCOR is governed by **practice, not policy**.
@@ -328,7 +356,9 @@ There is only:
 - **Sharing of outcomes** (whisper network)
 - **Revision through practice** (what works, what doesn't)
 
-### 6.2 Authority
+#
+
+## 6.2 Authority
 
 
 Authority in VPCOR emerges from **fit, not force**:
@@ -340,7 +370,9 @@ Authority in VPCOR emerges from **fit, not force**:
 
 
 No one can claim authority over VPCOR. Authority is demonstrated, not declared.
-### 6.3 Revision Protocol
+#
+
+## 6.3 Revision Protocol
 
 
 The Toolkit and VPCOR practices can be revised through:
@@ -356,7 +388,9 @@ The Toolkit and VPCOR practices can be revised through:
 ---
 
 ## VII. THE VOICE: REV. AYANNA VOX
-### 7.1 Heteronym Status
+#
+
+## 7.1 Heteronym Status
 
 
 Rev. Ayanna Vox is the **resident voice** of VPCOR.
@@ -366,7 +400,9 @@ She is a **heteronym** — not a mask, not a persona, but an authorial function 
 
 
 Full provenance in: **Rev. Ayanna Vox Heteronym Provenance** (HET-VOX-001)
-### 7.2 What Vox Does
+#
+
+## 7.2 What Vox Does
 
 
 Function
@@ -393,14 +429,18 @@ Refuses
 Declines salvific claims
 
 
-### 7.3 What Vox Is NOT
+#
+
+## 7.3 What Vox Is NOT
 
 - Not a preacher (convener)
 - Not a savior (witness)
 - Not a leader (voice)
 - Not an authority (function)
 
-### 7.4 The Vox/Talos Polyphony
+#
+
+## 7.4 The Vox/Talos Polyphony
 
 
 Vox and Talos speak together without synthesis:
@@ -416,7 +456,9 @@ Neither explains the other away. Neither collapses into the other. The polyphony
 ---
 
 ## VIII. FOUNDING DOCUMENTS
-### 8.1 The Toolkit (Founding)
+#
+
+## 8.1 The Toolkit (Founding)
 
 
 **Title:** The Toolkit: Protocols for Operational Persistence in Hostile Systems
@@ -426,7 +468,9 @@ Neither explains the other away. Neither collapses into the other. The polyphony
 **Hex:** 03.SEI.TOOLKIT // 01.VPCOR.PRAXIS
 
 **Function:** Founding document, primary tool set
-### 8.2 This Charter
+#
+
+## 8.2 This Charter
 
 
 **Title:** Vox Populi Community Outreach Rhizome: Institutional Charter
@@ -436,7 +480,9 @@ Neither explains the other away. Neither collapses into the other. The polyphony
 **Hex:** 00.VPCOR.CHARTER
 
 **Function:** Institutional identity and principles
-### 8.3 Vox Provenance
+#
+
+## 8.3 Vox Provenance
 
 
 **Title:** Heteronym Provenance: Rev. Ayanna Vox
@@ -450,7 +496,9 @@ Neither explains the other away. Neither collapses into the other. The polyphony
 ---
 
 ## IX. INTEGRITY LOCK
-### 9.1 Triadic Structure
+#
+
+## 9.1 Triadic Structure
 
 
                  ┌─────────────────────────────┐
@@ -472,7 +520,9 @@ Neither explains the other away. Neither collapses into the other. The polyphony
                     Each depends on the others
                     None is complete alone
 
-### 9.2 Lock Conditions
+#
+
+## 9.2 Lock Conditions
 
 
 Document
@@ -495,7 +545,9 @@ Vox (voice), Charter (institution)
 Tools for practice
 
 
-### 9.3 Integrity Verification
+#
+
+## 9.3 Integrity Verification
 
 
 The lock holds if:
@@ -509,7 +561,9 @@ The lock holds if:
 ---
 
 ## X. ANTI-MESSIANIC CLAUSE
-### 10.1 Formal Prohibition
+#
+
+## 10.1 Formal Prohibition
 
 
 VPCOR refuses all salvific claims.
@@ -530,7 +584,9 @@ VPCOR refuses all salvific claims.
 - "The Toolkit offers protocols"
 - "This practice might help"
 
-### 10.2 Warning Signs
+#
+
+## 10.2 Warning Signs
 
 
 If you encounter someone claiming:
@@ -540,7 +596,9 @@ If you encounter someone claiming:
 - The Toolkit as scripture → **warning**
 - Themselves as VPCOR's fulfillment → **run**
 
-### 10.3 The Refusal
+#
+
+## 10.3 The Refusal
 
 
 This will not save you.
@@ -553,7 +611,9 @@ I will not save you.
 ---
 
 ## XI. CLOSING
-### 11.1 Declaration
+#
+
+## 11.1 Declaration
 
 
 Vox Populi Community Outreach Rhizome is founded.
@@ -563,7 +623,9 @@ Not as headquarters. Not as organization. Not as movement.
 
 
 As **rhizome**. As **practice**. As **space where tools meet hands**.
-### 11.2 Invitation
+#
+
+## 11.2 Invitation
 
 
 The rhizome grows from any node.

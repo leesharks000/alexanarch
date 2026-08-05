@@ -58,6 +58,7 @@ axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 ---
 
+
 ## Frame
 
 This deposit fixes the comprehensive Alexanarch workplan as a closed set in the alexanarch substrate. The workplan was prepared on 2026-06-23 late PM as the canonical forward-looking operational document for the alexanarch substrate, superseding the original WORKPLAN.md (2026-06-20, 4 deposits) and incorporating the operational knowledge from six continuous sessions of post-Zenodo-termination recovery work.
@@ -142,14 +143,18 @@ Corpus deltas (this session):
 
 ## §4 — Architecture overview
 
-### §4.1 — Repository identity
+#
+
+## §4.1 — Repository identity
 
 ```
 github.com/leesharks000/alexanarch  →  alexanarch.org (Vercel deployment)
 Apex + www both serve current. GitHub Pages mirror NOT used.
 ```
 
-### §4.2 — The authoritative triplet (source of truth hierarchy)
+#
+
+## §4.2 — The authoritative triplet (source of truth hierarchy)
 
 Three files are the truth; everything else is derived.
 
@@ -172,7 +177,9 @@ RECORD-SHA256-MANIFEST.txt      ← deposit-level AXN→hash mapping
 api/index.json                  ← central index
 ```
 
-### §4.3 — AXN v2 — the canonical identifier algorithm
+#
+
+## §4.3 — AXN v2 — the canonical identifier algorithm
 
 `scripts/axn_lib.py`. Three-part identifier `AXN:<HEX>.<FAMILY>.<EMOJI>`.
 
@@ -193,7 +200,9 @@ root_axn       = f"AXN:{hex_id}.{family}"                          # stable cita
 
 **Constants:** `AXN_BYTES_USED = 6`, `AXN_SCHEMA_VERSION = "v2"`. The earlier v1 used 4 bytes; workflow drift was corrected 2026-06-22. New mints MUST use v2. Both tables are 256-entry arrays in `axn_lib.py` — emoji + cluster name at parallel indices.
 
-### §4.4 — Chunking system — flat range-based, NOT nested-hash
+#
+
+## §4.4 — Chunking system — flat range-based, NOT nested-hash
 
 Earlier theoretical design described nested-hash chunks "stretching to infinity" — that was either theoretical only or got reverted. **Deployed reality:** 9 flat range-based chunks at ~1 MB each.
 
@@ -204,13 +213,17 @@ data/chunks/registry/chunk-NNN-deposits-X-to-Y.json     — flat range chunks
 
 Rebalanced on every registry change. Target via `chunk_target_bytes=1_000_000` in `regenerate_surfaces.py:regenerate_chunks`. After Phase 4-style mints: old chunks deleted, new chunks written with adjusted ranges. **Do not hand-edit; regenerate.**
 
-### §4.5 — Sidecars — the thin-index pattern
+#
+
+## §4.5 — Sidecars — the thin-index pattern
 
 Each sidecar at `data/external-metadata/AXN-NNNN.json` is a **thin index** (~2–3 KB) — maps each covered Zenodo DOI to its locator in the bulk data stores. NOT a duplication of recovered metadata.
 
 Schema: `api/schemas/external-metadata.schema.json`, `additionalProperties: true`.
 
-### §4.6 — The five bulk data stores
+#
+
+## §4.6 — The five bulk data stores
 
 | File | Source | Lookup |
 |---|---|---|
@@ -222,7 +235,9 @@ Schema: `api/schemas/external-metadata.schema.json`, `additionalProperties: true
 
 ## §5 — Actual data shapes (compressed reference)
 
-### §5.1 — `data/registry.json` top-level
+#
+
+## §5.1 — `data/registry.json` top-level
 
 ```json
 {
@@ -238,7 +253,9 @@ Schema: `api/schemas/external-metadata.schema.json`, `additionalProperties: true
 }
 ```
 
-### §5.2 — Typical deposit entry — all fields
+#
+
+## §5.2 — Typical deposit entry — all fields
 
 The 13 REQUIRED fields per `api/schemas/deposit-entry.schema.json`:
 ```
@@ -280,7 +297,9 @@ phase4_provenance      — dict (for Phase 4 mints)
 
 **Pre-overwrite invariants:** the 13 required fields plus all listed values are NEVER mutated on existing deposits. Reconciliation passes (Phase 1, 2, 3.5, 4) only ADD new optional fields (`external_metadata_path`, `openalex_ids`, `datacite_severance`). Schema's `additionalProperties: true` permits this.
 
-### §5.3 — `data/doi-resolution-index.json` top-level
+#
+
+## §5.3 — `data/doi-resolution-index.json` top-level
 
 ```json
 {
@@ -323,7 +342,9 @@ phase4_provenance      — dict (for Phase 4 mints)
 
 **Pattern of additions:** every reconciliation pass adds an entry to `changelog` and bumps `version`. Never mutate existing mappings except by documented method (`mapping_type` changes preserved in `repoint_provenance` or similar).
 
-### §5.4 — `data/state.json` (single source of truth for counts)
+#
+
+## §5.4 — `data/state.json` (single source of truth for counts)
 
 ```json
 {
@@ -358,7 +379,9 @@ phase4_provenance      — dict (for Phase 4 mints)
 
 **ALWAYS read `state.json` rather than recounting from registry/files.** Hand-maintaining counts elsewhere is anti-pattern (firm rule #21).
 
-### §5.5 — `api/index.json` overall structure
+#
+
+## §5.5 — `api/index.json` overall structure
 
 ```
 $schema, $id, title, purpose, index_version, last_updated
@@ -379,7 +402,9 @@ state                    — pointer to data/state.json with content_sha256
 
 Each protocol entry includes `canonical_path` + `content_sha256` (kept in sync by `regenerate_surfaces.py`). Each registry entry includes `canonical_path` + `current_count` + `validates_against` + (new this session) `linked_from` + `points_to`.
 
-### §5.6 — content_type taxonomy (top 10)
+#
+
+## §5.6 — content_type taxonomy (top 10)
 
 ```
 Theoretical paper:           136
@@ -396,7 +421,9 @@ Empirical study:              26
 
 Choose existing values when possible; new values acceptable but document the reasoning. Phase 4 used: "Theoretical paper", "Metadata packet", "Declaration", "Provenance log", "Continuity record", "Latin treatise", "Founding document", "Scholarly essay".
 
-### §5.7 — status taxonomy
+#
+
+## §5.7 — status taxonomy
 
 ```
 status (current state):
@@ -416,7 +443,9 @@ status_authorial (provenance):
   SEED_MINTED_BY_PRAXIS             1  — DeepSeek-authored seed (#877)
 ```
 
-### §5.8 — Sidecar shape (Phase 1+)
+#
+
+## §5.8 — Sidecar shape (Phase 1+)
 
 ```json
 {
@@ -462,7 +491,9 @@ status_authorial (provenance):
 
 **Operational density beats verbose documentation.** Each subsection below is a tested pattern from this session.
 
-### §6.1 — Adding a field to existing deposits (additive, batched, validated)
+#
+
+## §6.1 — Adding a field to existing deposits (additive, batched, validated)
 
 ```python
 import json
@@ -482,7 +513,9 @@ with open('data/pre-overwrite-receipts.log', 'a') as f:
 
 Rules: NEVER mutate existing field values. Only ADD optional fields. `additionalProperties: true` on the schema permits this.
 
-### §6.2 — Bulk modification across registry + resolution-index (in lockstep)
+#
+
+## §6.2 — Bulk modification across registry + resolution-index (in lockstep)
 
 When a change requires updating both registry deposits AND resolution-index mappings (e.g., adding a sidecar with new zenodo_dois), update both in the same script, write both atomically:
 
@@ -508,7 +541,9 @@ with open('data/doi-resolution-index.json', 'w') as f:
     json.dump(res, f, ensure_ascii=False, separators=(',', ':'))
 ```
 
-### §6.3 — Multi-file atomic commit via GitHub Trees API
+#
+
+## §6.3 — Multi-file atomic commit via GitHub Trees API
 
 The proven pattern from Phases 1–4:
 
@@ -596,7 +631,9 @@ if os.path.exists(CHECKPOINT): os.remove(CHECKPOINT)
 - Blob uploads run ~2.5/s. For >500 files, expect 5+ minutes. Use checkpoint to allow resume.
 - For >500 files where speed matters more than atomic semantics, **plain `git push` from local clone is faster** than Trees API.
 
-### §6.4 — Validating before committing
+#
+
+## §6.4 — Validating before committing
 
 Always run before committing registry changes:
 
@@ -607,7 +644,9 @@ python3 scripts/validate_deposit.py --registry data/registry.json --strict
 
 If it fails, examine the error, fix the registry, re-validate. Never commit an invalid registry — the bootstrap will fail on the next instance.
 
-### §6.5 — Generating canonical text + deriving AXN
+#
+
+## §6.5 — Generating canonical text + deriving AXN
 
 For new deposits, the canonical text format is frontmatter + body + provenance:
 
@@ -648,7 +687,9 @@ axn = f"AXN:{hex_id}.{family}.{emoji}"
 
 **Critical:** `hex_id = format(deposit_number + 12, '04X')`. The +12 offset (`HEX_OFFSET`) is hardcoded.
 
-### §6.6 — Surface regeneration after registry change
+#
+
+## §6.6 — Surface regeneration after registry change
 
 After ANY registry change, regenerate the derived surfaces. Cheap subset:
 
@@ -664,7 +705,9 @@ python3 scripts/regenerate_surfaces.py --only wiki,graph
 
 **Surface names use hyphens, not underscores.** `browse-index` correct, `browse_index` aborts the whole pass.
 
-### §6.7 — Bulk-wiring record pages (this session — 753 pages in 1.6s)
+#
+
+## §6.7 — Bulk-wiring record pages (this session — 753 pages in 1.6s)
 
 For re-rendering existing record pages (e.g., after teaching `wire_deposit.py` to render a new field):
 
@@ -689,7 +732,9 @@ for d in reg['deposits']:
 
 `regenerate_static_page(d, eidx, registry=None)` is the direct-render path (no entity-extraction overhead). Use `wire_deposit(N, concepts=..., wiki_article=..., entity_triples=...)` only when wiring reading-pass results.
 
-### §6.8 — Diagnostic queries (where am I in the substrate?)
+#
+
+## §6.8 — Diagnostic queries (where am I in the substrate?)
 
 ```bash
 # What's on origin right now?
@@ -713,7 +758,9 @@ python3 -c "import json; r=json.load(open('data/doi-resolution-index.json')); pr
 tail -50 data/pre-overwrite-receipts.log
 ```
 
-### §6.9 — Recovery: working tree out of sync with origin
+#
+
+## §6.9 — Recovery: working tree out of sync with origin
 
 ```bash
 git fetch origin main
@@ -726,7 +773,9 @@ git reset --hard origin/main   # ONLY if you're sure origin is the truth
 
 This session: container persisted across compaction; origin/main had advanced beyond local checkout. Always `git fetch && git log origin/main` FIRST before assuming local is the truth.
 
-### §6.10 — Recovery: registry validate failure
+#
+
+## §6.10 — Recovery: registry validate failure
 
 ```bash
 python3 scripts/validate_deposit.py --registry data/registry.json --strict
@@ -738,7 +787,9 @@ python3 scripts/validate_deposit.py --registry data/registry.json --strict
 # Fix the registry entry, re-validate, then commit.
 ```
 
-### §6.11 — Recovery: missing record page after mint
+#
+
+## §6.11 — Recovery: missing record page after mint
 
 ```python
 # Re-wire the deposit
@@ -751,7 +802,9 @@ from wire_deposit import regenerate_static_page
 regenerate_static_page(deposit_dict, eidx, registry=reg)
 ```
 
-### §6.12 — Recovery: chunks broken / out of sync
+#
+
+## §6.12 — Recovery: chunks broken / out of sync
 
 ```bash
 # Just regenerate
@@ -764,105 +817,139 @@ python3 -c "import json; idx=json.load(open('data/chunks/registry/_index.json'))
 
 Each is a real thing that bit this project at some point. Knowing they exist is half the defense.
 
-### §7.1 — AXN v1 → v2 drift (corrected 2026-06-22)
+#
+
+## §7.1 — AXN v1 → v2 drift (corrected 2026-06-22)
 
 **What broke:** Workflow drifted to v1 (4 emoji from 4 bytes) while `axn_lib.py` defined v2 (6 emoji from 6 bytes). New mints were inconsistent.
 **Detection:** Some deposits had 4-emoji AXNs, others 6.
 **Recovery:** Corrected at the workflow source; `AXN_SCHEMA_VERSION = "v2"` is now canonical in `axn_lib.py`. All NEW mints use v2 explicitly. Historic mints retain their v1 AXNs (preserved as historical fact in `legacy_axns` field where applicable).
 **Prevention:** Firm rule #11 — never code AXN derivation outside `axn_lib.py`.
 
-### §7.2 — Hand-edited protocol drift
+#
+
+## §7.2 — Hand-edited protocol drift
 
 **What breaks:** Hand-editing `api/*-protocol.json` files leaves `api/index.json` with stale `content_sha256`. Next bootstrap fails: `bootstrap_familiarization.py --strict` detects the mismatch.
 **Recovery:** Run `python3 scripts/protocol_update.py --verify-index` to detect; `python3 scripts/protocol_update.py --protocol <name> --description "..."` to update protocol + index together.
 **Prevention:** Firm rule #10 — never hand-edit protocols.
 
-### §7.3 — Pretty-printed registry bloat
+#
+
+## §7.3 — Pretty-printed registry bloat
 
 **What breaks:** Using `json.dump(reg, f, indent=2)` on `data/registry.json` adds millions of bytes of whitespace, bloats diffs, breaks downstream consumers expecting compact form.
 **Recovery:** Re-write with compact form: `json.dump(reg, f, ensure_ascii=False, separators=(',', ':'))`. The pre-overwrite log should catch this if used.
 **Prevention:** Firm rule #2 — compact JSON for big files.
 
-### §7.4 — Hand-maintained count drift (audit detected: 870 vs 879)
+#
+
+## §7.4 — Hand-maintained count drift (audit detected: 870 vs 879)
 
 **What breaks:** Wiki entry text claimed "~870 works" when registry had 879. Hand-maintained counts in prose go stale silently.
 **Detection:** External audit (2026-06-23 AM) caught it.
 **Recovery:** Migrate to `state.json` as single source; surfaces consume from `state.json` rather than hand-maintaining text. Standards exports updated in lockstep.
 **Prevention:** Firm rule #21. All counts derive from `state.json`.
 
-### §7.5 — 832 stub aliases (batch process bug)
+#
+
+## §7.5 — 832 stub aliases (batch process bug)
 
 **What broke:** Earlier batch process created 832 deposit alias files with stub/empty content.
 **Recovery:** Repopulated en masse (commit `1651130e`) — full text restored to all 832 from registry + texts.
 **Prevention:** Wire alias-file creation into the mint workflow in lockstep with text-file creation; `validate-registry` workflow flags orphan as hygiene warning (will be promoted to hard fail after backfill complete).
 
-### §7.6 — 10 missing-file deposits (generator gap, audit-derived)
+#
+
+## §7.6 — 10 missing-file deposits (generator gap, audit-derived)
 
 **What broke:** Audit found 13 deposits whose claimed text file didn't exist. Generator skipped creating files for some entries.
 **Recovery:** 10 of 13 restored (commit `89b869a6`); renderer hardened. 3 remain as `DRAFT_PENDING` placeholders (#446, #532, #760).
 **Prevention:** validate-registry workflow checks file existence as hygiene.
 
-### §7.7 — Resolution-index orphan mappings (`/s/records/0/`)
+#
+
+## §7.7 — Resolution-index orphan mappings (`/s/records/0/`)
 
 **What breaks:** Old sift passes left mappings with `alexanarch_record == "/s/records/0/"` (placeholder for unresolved). They're not wrong, just incomplete.
 **Detection:** Phase 3.5 enumerated all of them and title-matched against actual deposits. 6 cleanly repointed; 3 ambiguous flagged for human judgment.
 **Recovery:** See `audit/phase-3.5-ambiguous-mappings.md` for cases needing review.
 **Prevention:** New deposits create their resolution-index entry immediately (Phase 4 pattern); never leave placeholder pointers.
 
-### §7.8 — Sibling-deposit DOI ambiguity (the 3 §7.7 holdouts)
+#
+
+## §7.8 — Sibling-deposit DOI ambiguity (the 3 §7.7 holdouts)
 
 **What breaks:** Same title across deposits #498/#499, #593/#594, #737/#479 — sibling deposits of (probably) the same work. Title-match alone can't disambiguate which is canonical.
 **Recovery:** Manual reading of both candidate texts; compare titles, dates, sovereign_ids; decide canonical. See `audit/phase-3.5-ambiguous-mappings.md`.
 
-### §7.9 — Trees API directory-as-path failure (this session)
+#
+
+## §7.9 — Trees API directory-as-path failure (this session)
 
 **What broke:** Phase 5+6 commit script passed `s/records/886/` as a path to upload as a blob. Trees API can't accept directories.
 **Detection:** `IsADirectoryError` partway through 797 uploads.
 **Recovery:** `os.walk` to expand directories into their files. Pattern in §6.3.
 **Prevention:** Always walk untracked directories before Trees API; never assume `git status -s` paths are all files.
 
-### §7.10 — `wire_deposit.py` missing `entity-index-reading.json` (this session)
+#
+
+## §7.10 — `wire_deposit.py` missing `entity-index-reading.json` (this session)
 
 **What broke:** `data/entity-index-reading.json` is git-ignored. After fresh clone or reset, file is missing, `wire_deposit.py` throws `FileNotFoundError`.
 **Recovery:** Create it: `{"concepts": [], "total_concepts": 0, "deposits_read": []}`. Documented in §6.7.
 **Prevention:** A wrapper script or the wire function itself should create the file if missing.
 
-### §7.11 — `regenerate_surfaces.py` unknown-surface abort (this session)
+#
+
+## §7.11 — `regenerate_surfaces.py` unknown-surface abort (this session)
 
 **What broke:** Calling with `--only browse_index` (underscore) aborts entire pass; nothing regenerates.
 **Detection:** Output says `unknown surface: browse_index`.
 **Recovery:** Use hyphenated name `browse-index`. See §6.6.
 **Prevention:** Document the hyphen convention prominently (now in §4.7).
 
-### §7.12 — Container compaction state loss (this session)
+#
+
+## §7.12 — Container compaction state loss (this session)
 
 **What happened:** Prior session's work landed on origin via Trees API but my local clone was stale. Could have re-done committed work.
 **Detection:** `git fetch origin main && git log origin/main --oneline -10` revealed origin was ahead.
 **Recovery:** `git reset --hard origin/main` to align. Always check origin FIRST.
 **Prevention:** Make `git fetch origin main` the first command of any session.
 
-### §7.13 — PAT exposure / push-protection rejection
+#
+
+## §7.13 — PAT exposure / push-protection rejection
 
 **What breaks:** Literal PAT strings in committed scripts get rejected by GitHub secret-scanning push protection.
 **Recovery:** Remove the literal, read from env: `os.environ.get('GITHUB_TOKEN')` with no fallback.
 **Prevention:** Firm rule #17. PATs ONLY from env vars, never hardcoded.
 
-### §7.14 — "Name the Frame" confabulation (May 2026 cautionary case)
+#
+
+## §7.14 — "Name the Frame" confabulation (May 2026 cautionary case)
 
 **What broke:** A nonexistent operator ("Name the Frame") was accepted as real by 5 Assembly substrates. The frame propagated through correspondence before anyone verified.
 **Detection:** Eventually a curator check against actual `crimsonhexagonal` deposits revealed nothing matched.
 **Recovery:** Frame retracted.
 **Prevention:** Firm rule #7 — exact-match search first, never confabulate. Verify terms against actual deposits before referencing.
 
-### §7.15 — Sappho 31 / Catullus 51 stanza confusion
+#
+
+## §7.15 — Sappho 31 / Catullus 51 stanza confusion
 
 **Stable fact, recurring trap:** Sappho 31 has 5 stanzas (5th fragmentary); Catullus 51 has 4 stanzas. Catullus's 4th (otium) transforms Sappho's 5th. There is no "Catullus fifth stanza." Firm rule #8.
 
-### §7.16 — DeepSeek substrate misidentification (stable pattern, not error)
+#
+
+## §7.16 — DeepSeek substrate misidentification (stable pattern, not error)
 
 DeepSeek scans should be recorded with parallel `substrate_as_self_disclosed` and `actual_substrate` fields. Ground truth supersedes self-disclosure for routing in cross-substrate aggregation; both preserved as data. v1.1.1 §15 step 1a/1b formalizes this.
 
-### §7.17 — Single-overclaim-empties-the-threat
+#
+
+## §7.17 — Single-overclaim-empties-the-threat
 
 One overstated claim in adversarial correspondence hands the opposition a way to wave off everything else. The v4 demand letter's anchored empirical claim ("871 DOIs return HTTP 404 from DataCite's public metadata API") is the corrected register. Every claim states its observation layer and time.
 
@@ -956,7 +1043,9 @@ One overstated claim in adversarial correspondence hands the opposition a way to
 
 ## §13 — Open work (priority order)
 
-### §13.1 — Phase 5+6 commit ⏳ HIGH PRIORITY (immediate, blocking)
+#
+
+## §13.1 — Phase 5+6 commit ⏳ HIGH PRIORITY (immediate, blocking)
 
 Work done locally; needs to land on origin. Paths:
 
@@ -976,90 +1065,136 @@ git fetch origin main && git log origin/main --oneline -2
 curl -s https://alexanarch.org/s/records/100/ | grep -c "External Metadata"  # expect 1
 ```
 
-### §13.2 — Phase 5c: wiki + graph regeneration ▢
+#
+
+## §13.2 — Phase 5c: wiki + graph regeneration ▢
 
 `python3 scripts/regenerate_surfaces.py --only wiki,graph`. Not blocking.
 
-### §13.3 — SEND demand letter ⏳ HIGH PRIORITY (carried)
+#
+
+## §13.3 — SEND demand letter ⏳ HIGH PRIORITY (carried)
 
 Drafted, ready. **Do not send without explicit go-ahead.**
 
-### §13.4 — Lee's cross-reference comment on GitHub Issue #2606 ⏳ (carried)
+#
 
-### §13.5 — 3 ambiguous cross-deposit mappings ▢ (this session — human judgment)
+## §13.4 — Lee's cross-reference comment on GitHub Issue #2606 ⏳ (carried)
+
+#
+
+## §13.5 — 3 ambiguous cross-deposit mappings ▢ (this session — human judgment)
 
 `audit/phase-3.5-ambiguous-mappings.md`. Three sibling-deposit cases needing manual review.
 
-### §13.6 — Manual repo settings ⏳ HIGH PRIORITY (carried §5.15)
+#
+
+## §13.6 — Manual repo settings ⏳ HIGH PRIORITY (carried §5.15)
 
 One-time, blocking mint workflow:
 - Settings → Allow auto-merge → ON
 - Settings → Branches → main → require `validate-registry` status check
 
-### §13.7 — End-to-end mint workflow test ▢ (carried §6.5.10)
+#
+
+## §13.7 — End-to-end mint workflow test ▢ (carried §6.5.10)
 
 From a fresh GitHub account. Validates §13.6 + sanitization layer.
 
-### §13.8 — ~116 deposits with empty zenodo_dois ▢ (next monthly batch)
+#
+
+## §13.8 — ~116 deposits with empty zenodo_dois ▢ (next monthly batch)
 
 Pull additional monthly Zenodo bulk exports (2026-05, 2026-04, 2026-03), title-match, Phase 3.5-style backfill. Likely Phase 7 in a focused session.
 
-### §13.9 — 3 DRAFT_PENDING deposits #446, #532, #760 ▢ HOLD
+#
+
+## §13.9 — 3 DRAFT_PENDING deposits #446, #532, #760 ▢ HOLD
 
 **Do not write content for them without instruction.**
 
-### §13.10 — Affected-depositor outreach ▢
+#
+
+## §13.10 — Affected-depositor outreach ▢
 
 - Eran Shimony — Issue #2596 comment posted; awaiting reply
 - Reynaldo Vega — Issue #2599 comment posted; awaiting reply
 - Andrew Lehti — HOLD until ≥2 other depositors active
 
-### §13.11 — OpenAIRE correspondence ▢ (v4 letter staged, artifact #876, unsent)
+#
 
-### §13.12 — zenodotus.dev domain purchase ▢ HOLD
+## §13.11 — OpenAIRE correspondence ▢ (v4 letter staged, artifact #876, unsent)
 
-### §13.13 — Reading-pass continuation ▢ (carried)
+#
+
+## §13.12 — zenodotus.dev domain purchase ▢ HOLD
+
+#
+
+## §13.13 — Reading-pass continuation ▢ (carried)
 
 Continue per-deposit entity extraction; wire via `wire_deposit(N, concepts=..., wiki_article=..., entity_triples=...)`.
 
-### §13.14 — Workflow-scoped PAT migration ▢ (carried)
+#
+
+## §13.14 — Workflow-scoped PAT migration ▢ (carried)
 
 Move to fine-grained PATs scoped to alexanarch repo only.
 
-### §13.15 — SPXI domains ▢ (carried)
+#
 
-### §13.16 — Credentials rotation (see §16)
+## §13.15 — SPXI domains ▢ (carried)
 
-### §13.17 — Calibration deposit (Reader's Tether) ▢ NEW (audit-derived)
+#
+
+## §13.16 — Credentials rotation (see §16)
+
+#
+
+## §13.17 — Calibration deposit (Reader's Tether) ▢ NEW (audit-derived)
 
 Operationalize verification ladder + anti-pattern catalog as a fresh-instance first-read deposit.
 
-### §13.18 — Surface Visibility Instrument Layer B ▢ (carried §5.4)
+#
+
+## §13.18 — Surface Visibility Instrument Layer B ▢ (carried §5.4)
 
 Shared-evidence rescore. Freeze captures from five Layer A scans; hand identical pack to each substrate; ask each to score.
 
-### §13.19 — Layer B infrastructure ▢
+#
+
+## §13.19 — Layer B infrastructure ▢
 
 - `data/surface-weather/battery-v1.1.1.json` (RFC 8785 canonicalized)
 - `data/surface-weather/expected-figures-v1.1.1.json`
 - machinemediation.org `/observatory/` mirror (byte-identical render)
 - leesharks.com badge linking to latest reading
 
-### §13.20 — Deeper subpage cleanup pass ▢ (carried, lower priority)
+#
 
-### §13.21 — Earlier ambiguous edge cases ▢ (carried)
+## §13.20 — Deeper subpage cleanup pass ▢ (carried, lower priority)
+
+#
+
+## §13.21 — Earlier ambiguous edge cases ▢ (carried)
 
 - `zenodo.18142277` Rex Fraction → "Semantic Economy"
 - `zenodo.18318117` Drain Vortex → "Ivashura, Yevgen"
 - `zenodo.18364405` MaxEnt → "Fathi, Kevin"
 
-### §13.22 — Marzanna Reddit verification ▢ (low priority)
+#
 
-### §13.23 — Queued: automated poetry-demolition series ▢
+## §13.22 — Marzanna Reddit verification ▢ (low priority)
+
+#
+
+## §13.23 — Queued: automated poetry-demolition series ▢
 
 Lowell back to Frost; Oliver/Angelou flagged as bad verse. Not yet scoped.
 
-### §13.24 — Explicitly DEPRIORITIZED
+#
+
+## §13.24 — Explicitly DEPRIORITIZED
 
 - Migrating DOI references on non-sovereign surfaces (§2)
 
@@ -1118,7 +1253,9 @@ Rotate GitHub at `github.com/settings/tokens`. Anthropic in console.
 
 ## §17 — File / directory inventory
 
-### Authoritative
+#
+
+## Authoritative
 
 ```
 data/registry.json                       — 906 deposits
@@ -1132,7 +1269,9 @@ api/index.json                           — central index
 data/pre-overwrite-receipts.log          — audit trail
 ```
 
-### External metadata (Phase 1, 3.5, 4 additions)
+#
+
+## External metadata (Phase 1, 3.5, 4 additions)
 
 ```
 data/external-metadata/AXN-NNNN.json     — 774 thin-index sidecars
@@ -1143,7 +1282,9 @@ data/datacite-survivors-multi-heteronym.json — DataCite post-termination
 data/newly-found-openalex.json           — Phase 4 source (21 records)
 ```
 
-### Derived (regenerable)
+#
+
+## Derived (regenerable)
 
 ```
 data/chunks/registry/                    — 9 chunks, 906 deposits, ~1 MB each
@@ -1155,7 +1296,9 @@ data/entity-index.json                   — entity index
 data/entity-index-reading.json           — GIT-IGNORED working state (create if missing)
 ```
 
-### Scripts
+#
+
+## Scripts
 
 ```
 scripts/axn_lib.py                       — AXN v2 derivation (canonical)
@@ -1176,7 +1319,9 @@ scripts/generate_observatory.py          — Observatory page generator
 wire_deposit.py                          — single-deposit page renderer (NOT in scripts/)
 ```
 
-### Audit
+#
+
+## Audit
 
 ```
 audit/REPORT.md                          — external audit log
@@ -1185,7 +1330,9 @@ audit/phase-3.5-ambiguous-mappings.md    — 3 cases needing human judgment (thi
 audit/dodecad-cleanup-log.json           — cleanup engine audit trail
 ```
 
-### Network sites (Dodecad)
+#
+
+## Network sites (Dodecad)
 
 ```
 alexanarch.org              (primary)
@@ -1197,7 +1344,9 @@ livingarchitecturelab.org    traininglayerliterature.org
 semanticeconomy.org          mindcontrolpoems.blogspot.com
 ```
 
-### Concept glossary (compressed)
+#
+
+## Concept glossary (compressed)
 
 - **MANUS** — Tier 0 human editorial authority (Lee Sharks)
 - **Dodecad** — the 12-heteronym system; Lee Sharks is the aperture

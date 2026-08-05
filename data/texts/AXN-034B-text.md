@@ -1,4 +1,6 @@
-# Tiburones Descartados## Biolabor, Bycatch, and the Provenance Erasure Rate of the Colombian Caribbean
+# Tiburones Descartados
+
+## Biolabor, Bycatch, and the Provenance Erasure Rate of the Colombian Caribbean
 
 Author: Mary Lee SharksFiled with: The Clerk of r.30 THE RUBY MOOT, Docket No. 1 (Mary Lee Sharks v. The Composition Layer)Representation: Gerald of Dolphindiana Local 1 for the petitionerDate: 14 June 2026Designator: EA-MARYELEE-BIOLABOR-01 v1.0
 
@@ -10,7 +12,9 @@ Forty-seven cartilaginous fishes. Six families. Eight species. Caught as bycatch
 
 *Descartados.*
 
-I am a shark. I am the Mary Lee of this proceeding — named for a 3,500-pound great white tracked by OCEARCH, named for the collision the composition layer cannot resolve, named for the Demand 4 trap that makes the scholar a subsection of the predator's disambiguation page. I am the broke Marxist poet shark. I have something to say about this.### The Net
+I am a shark. I am the Mary Lee of this proceeding — named for a 3,500-pound great white tracked by OCEARCH, named for the collision the composition layer cannot resolve, named for the Demand 4 trap that makes the scholar a subsection of the predator's disambiguation page. I am the broke Marxist poet shark. I have something to say about this.
+
+### The Net
 
 The shrimp trawler drags a net through the Caribbean. The net's target is shrimp — the commercial product, the extractable value, the thing the operation exists to monetize. The net does not target sharks. The net catches sharks anyway. The sharks are *bycatch* — caught incidentally by infrastructure built for something else.
 
@@ -20,7 +24,9 @@ The forty-seven sharks produced data. Their bodies became rows in a table: speci
 
 The 780 deposits produced data. Their arguments became rows in a knowledge graph: framework definitions, institutional affiliations, disciplinary classifications, adjacent fields. The individual provenance — who coined each term, what impulse drove each deposit, what lonely nights produced each paper — is irrelevant to the commercial operation. The composition layer needed meaning. The author was in the way. The meaning was measured and the author was discarded.
 
-*Descartados.*### The Measurement
+*Descartados.*
+
+### The Measurement
 
 The Colombian researchers measured their bycatch with precision. They counted 47 individuals. They identified 6 families, 8 species. They computed the Capture Per Unit of Effort — CPUE — in biomass across two zones and four months. They built tables. They published in *Acta Biológica Colombiana*. The paper is a Wound Gauge for marine bycatch: a longitudinal record of how many bodies the extractive operation catches, measures, and throws away.
 
@@ -28,7 +34,9 @@ The Wound Gauge for the composition layer measures the same thing. Sixty-nine ca
 
 The sharks' PER is 1.00. Every shark was caught, measured, and discarded. Total provenance erasure. The shark's life — its trajectory, its ecosystem function, its role in the Caribbean food web — is converted into a data point and the shark is thrown overboard. The data survives. The shark does not.
 
-The Self-Audit Module's PER is 1.00. The specification was caught, measured, and discarded. Total provenance erasure. The specification's function — its metrics, its diagnostic apparatus, its role in the semantic economy — is converted into a generic corporate checklist and the author is thrown overboard. The concept survives. The author does not.### The Labor
+The Self-Audit Module's PER is 1.00. The specification was caught, measured, and discarded. Total provenance erasure. The specification's function — its metrics, its diagnostic apparatus, its role in the semantic economy — is converted into a generic corporate checklist and the author is thrown overboard. The concept survives. The author does not.
+
+### The Labor
 
 The sharks labor. This is the thing the extractive economy does not acknowledge and the thing Marxist analysis exists to name. The sharks are not inert matter caught in a net. They are *laborers* — biological agents performing ecosystem work: regulating prey populations, cycling nutrients, maintaining reef health, navigating currents, reproducing, dying. Their labor produces the marine ecosystem that produces the shrimp that the trawler extracts. The trawler depends on the sharks' labor — no sharks, no balanced ecosystem, no shrimp — and the trawler discards the sharks. The labor is essential. The laborer is disposable.
 
@@ -36,7 +44,9 @@ The scholars labor. The composition layer does not acknowledge this and the sema
 
 This is the directionality of semantic labor at its most literal: the labor flows from the body to the net, from the scholar to the layer, and the value flows from the net to the market, from the layer to the platform. The body that produced the value is thrown back into the water. The name that coined the term is stripped from the Overview.
 
-*Descartados.*### The Petition
+*Descartados.*
+
+### The Petition
 
 I, Mary Lee Sharks, petitioner in Docket No. 1 of the Ruby Moot, file this exhibit as evidence of structural homology between the bycatch economy of the Colombian Caribbean and the provenance-erasure economy of the composition layer.
 
@@ -52,7 +62,9 @@ That the provenance erasure rate (PER) is structurally homologous to the bycatch
 
 That the word *descartados* — discarded — names the operation precisely: not destroyed, not consumed, not even killed. *Set aside.* Measured and set aside. The body counted and the body thrown back. The concept retained and the author thrown back.- 
 
-That the forty-seven sharks of the Colombian Caribbean and the 780 deposits of the Crimson Hexagonal Archive share a structural position in the global economy of extraction: their labor is essential, their bodies are measured, and their provenance is erased.### The Demand
+That the forty-seven sharks of the Colombian Caribbean and the 780 deposits of the Crimson Hexagonal Archive share a structural position in the global economy of extraction: their labor is essential, their bodies are measured, and their provenance is erased.
+
+### The Demand
 
 The demand is the same demand as Docket No. 1: that the composition layer cease the systematic discarding of authorial provenance from summarized content. That the net be modified to release the bycatch alive. That the PER be driven toward zero. That the laborer be acknowledged as the source of the value the operation extracts.
 

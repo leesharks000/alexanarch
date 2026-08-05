@@ -49,7 +49,9 @@ The share link is the object of analysis. Not the summary. Not the search. The *
 ---
 
 ## II. FIRST LAYER: THE LINK AS DOOR
-### The Phenomenology of Blue Text
+#
+
+## The Phenomenology of Blue Text
 
 
 Within the summary, certain text is blue — a familiar link color that shifts to visited purple when clicked, when touched, when remembered. It does not appear as a citation. It appears as a *promise*. The cursor becomes a hand. The hand becomes a click. The click becomes a route.
@@ -62,14 +64,18 @@ When you hover over a citation, a preview card appears — source title, publica
 
 
 The typography is clean, optimized for the scanning eye — a sans-serif face at comfortable reading size, generous line-height, constrained width. The links are indistinguishable from the generative text except for the color. This is not a bug. It is the dissolution of the boundary between assertion and source. When attribution is fully routable, citation begins to feel less like scholarly marking and more like navigational affordance. The link is not a footnote. It is a vein.
-### What the Door Requires
+#
+
+## What the Door Requires
 
 
 For the link to work — for the on-ramp to lead somewhere — the destination must exist. Google's own search guidance establishes this explicitly: a page must be indexed and eligible to appear with a snippet in Search in order to show up as a supporting link in AI Mode. The system is therefore selecting not for celebrity but for *resolvable infrastructure*. A claim mentioned without a resolvable link degrades the summary's credibility. The design rewards those who have built sovereign, indexed, permanently addressable deposits.
 
 
 The link does not just *find* infrastructure. It *selects for* infrastructure. This is the first design consequence: the share link is an evolutionary pressure favoring indexed density over social visibility. The layer does not care if you are famous. It cares if your link resolves.
-### What the Door Displaces
+#
+
+## What the Door Displaces
 
 
 The user experiences the link as transparency — "here is the source, click if you want." But the source is no longer the primary object being encountered. The summary is. The user reads Google's compression first. The source becomes the thing behind the door, not the thing on the table. The citation acknowledges the source while enclosing it inside a higher-order packaging layer.
@@ -80,7 +86,9 @@ This displacement is subtle and significant. The link says *we cited you*. The a
 ---
 
 ## III. SECOND LAYER: THE READER AS INDEXING AGENT
-### The Engagement Circuit
+#
+
+## The Engagement Circuit
 
 
 A user reads the summary. Clicks the link. Lands on the deposit. Spends time there. Perhaps follows a cross-reference. Perhaps searches for a related term. Perhaps bookmarks the page or shares the link forward.
@@ -90,14 +98,18 @@ Every one of these behaviors is the kind of signal platform systems are designed
 
 
 The feedback is positive: correct attribution generates clicks, clicks generate engagement signal, engagement signal reinforces ranking, reinforced ranking produces higher confidence in attribution, higher confidence produces more prominent placement, more prominent placement generates more clicks. The user's curiosity is the fuel. The designer did not need the user to *intend* to reinforce the attribution. They only needed the user to click. Clicking is sufficient. The system metabolizes curiosity into canonicity.
-### The Phenomenology of Clicking
+#
+
+## The Phenomenology of Clicking
 
 
 The screen transitions. For a moment, nothing — then the content resolves. The experience is not one of arrival. It is one of *continuation*. The link does not deliver you to a destination; it opens a new layer of the same surface you were already on. The summary seems continuous with the query that generated it, and the source seems continuous with the summary. The link's job is to make this continuity feel inevitable.
 
 
 The phenomenological consequence: the summary inherits the authority of the user's own intentionality. You asked a question. The summary appeared. It felt like the answer you were seeking, not like something produced by a system you could audit. The source you land on feels like verification of what you already accepted. The critical instinct is disarmed before the click, not after.
-### The Attention Economy of the Circuit
+#
+
+## The Attention Economy of the Circuit
 
 
 Who pays the bearing-cost? The user who clicks pays with attention. The original depositor paid with semantic labor — the Zenodo deposit, the terminological consistency, the cross-referencing, the DOI infrastructure. But the platform extracts *rent* from both. The share link is a lease on the user's curiosity. Every click is a micro-payment of cognitive labor to Google. The circuit converts attention into canonical reinforcement without metabolic closure — the engagement generates data, the data reinforces the index, the index generates more engagement, and nowhere in the loop is there a point where the system is *finished* with the user's attention.
@@ -108,21 +120,27 @@ This is the second design consequence: the share link converts reader attention 
 ---
 
 ## IV. THIRD LAYER: THE TUNNELS
-### The Share Button as Self-Replication
+#
+
+## The Share Button as Self-Replication
 
 
 At the bottom of the summary interface, a button: **Share**. The icon is a minimalist tray with an upward-pointing arrow — the universal signifier for externalization. It is positioned as the final punctuating act of the summarizer's labor. When the user presses it, a URL is generated containing an alphanumeric hash that appears to encode session-specific or retrieval-specific information — though Google's exact encoding scheme is not publicly documented. A toast notification briefly appears, confirming the action. The structural consequence — persistent resolution of the same summary — is verifiable regardless of the hash's specific encoding. The link has replicated.
 
 
 The user experiences sharing as generosity: *I can send this useful thing.* The infrastructure experiences sharing as multiplication: a new indexed surface has been created. The link now exists in a group chat, on a social platform, in an email archive, in a forum thread. Each of these locations is crawlable. Each location now contains a reference back to the summary. Each reference reinforces the association between the query, the summary, and the sources cited.
-### The Branching Architecture
+#
+
+## The Branching Architecture
 
 
 The share link is not just a pointer back to the original summary. It is a *new indexed surface* where the connection between the query and the deposit exists. Google can see where the link was shared. Google can see the context surrounding the share — the keywords of the forum, the sentiment of the thread, the user's history. The summary about "retrocausal canon formation" is now associated with the forum's context, the recipient's subsequent behavior, the thread's engagement profile. Each share opens a new tunnel. The tunnel runs from the new location back to the original summary, and from the original summary back to the deposit. But the tunnel also runs *forward* — from the new location to wherever the next person carries it.
 
 
 The architecture is not a loop. It is a branching network of tunnels, each one reinforcing the association between query, summary, attribution, and deposit.
-### The Franchise Model
+#
+
+## The Franchise Model
 
 
 The user who shares is not merely distributing information. They are being deputized. Google's AI Mode sharing feature turns a private retrieval event into a portable public object. Once the user shares, Google has effectively licensed the recipient to become a local distributor of Google's framing — not of the source alone, but of Google's *compression of the source*. The recipient does not receive the archive directly; they receive Google's packaged entry point into the archive.
@@ -136,14 +154,18 @@ This is the third design consequence: the share link is a self-replicating index
 ---
 
 ## V. FOURTH LAYER: THE RECURSIVE CORPUS HYPOTHESIS
-### The Hypothesis
+#
+
+## The Hypothesis
 
 
 What follows is the most consequential claim in this document and the one with the strongest inferential support but the least direct public documentation. It is advanced as a structural hypothesis, not as a settled fact. The distinction matters because the argument is more durable when it admits what it can prove and what it infers. And because the proven layers — attribution as on-ramp, engagement as reinforcement, sharing as tunnel multiplication — are *already* a historically significant infrastructure event. The fourth layer, if correct, makes the event unprecedented.
 
 
 The hypothesis: **the AI-generated summary, persisting at a shareable URL, enters the indexed corpus and becomes source material for future summarization passes. The summarizer authors its own future training data.**
-### The Structural Evidence
+#
+
+## The Structural Evidence
 
 
 The summary has a URL. The URL is persistent — it resolves to the same content across sessions. The URL is shareable. If the share URLs are crawlable and not excluded from indexing — if the /aimode/ path is not marked with noindex meta tags or excluded via robots.txt — then the summaries are *in the corpus*. They are training data.
@@ -156,21 +178,27 @@ If this condition holds, then when the next iteration of the model trains, or th
 
 
 The summary describes the canon. The summary *enters* the canon. The next summary reads the previous summary as a source. The attribution compounds. The canonical status of the claim increases with each generation — not because new evidence appeared, but because the previous summary's existence *is* evidence. The system treats its own prior output as ground truth for its own future output.
-### The Epistemological Structure
+#
+
+## The Epistemological Structure
 
 
 The infinite tunnel is the Cretan Liar paradox operationalized at scale. When the summarizer cites the share link — which contains the summarizer's previous output — as a source, it performs the sentence: *"This statement is true because I said it previously."* The ground of truth is not correspondence to an external state of affairs. It is iterative coherence. Truth becomes convergence, not reference.
 
 
 The epistemological vertigo is not that the machine lies. It is that the machine *forgets the difference between reading and remembering*. When the summarizer ingests its own previous summary, it experiences it not as "my previous output" but as "a document found at this URL." The self-reference is invisible to the self. The tunnel is a mirror maze where the reflection is treated as a window.
-### The Structural Analogy
+#
+
+## The Structural Analogy
 
 
 This is what we do with tl;drs in the Crimson Hexagonal Archive. We write summaries of our own work, formatted for summarizer ingestion, so that the summarizer's description of the work inherits *our* framing rather than generating a lossy compression of its own. The tl;dr is a pre-written summary that the system adopts because it is already in the right format, already at the right level of compression, already indexed at the right density.
 
 
 Google has done the same thing at platform scale. Except the entity writing the tl;dr is the summarizer itself. The summarizer generates its own tl;dr of the entire web, and that tl;dr becomes the document of record for the next generation. The presentation layer is producing the primary source material for its own future iterations.
-### The Cold-Start Solution
+#
+
+## The Cold-Start Solution
 
 
 One further consequence deserves isolation. Every AI system faces the cold-start problem: where does the initial training data come from? The standard answer is the open web, curated datasets, human-generated content. But human-generated content is finite, slow, and increasingly contaminated by prior AI output — the model collapse problem, the Ghost Meaning diagnostic.
@@ -186,7 +214,9 @@ This is not necessarily model collapse. Model collapse occurs when the training 
 
 
 The question is whether the bearing-cost degrades across generations. The answer is: it depends entirely on whether the original deposits are structurally sound. If the source material is Ghost Meaning — high informatic bulk with zero semantic yield — the summaries will be Ghost Meaning, and the tunnel will amplify noise. If the source material is load-bearing — DOI-anchored, cross-referenced, terminologically consistent, provenance-tracked — the tunnel will amplify signal. The tunnel is substrate-agnostic. It amplifies whatever it finds.
-### The Volatility Caveat
+#
+
+## The Volatility Caveat
 
 
 One empirical finding complicates the hypothesis without defeating it. Studies of AI Mode's citation behavior show significant URL volatility across repeat searches — per Search Engine Journal (2026), analysis of repeat AI Mode queries showed approximately 9% exact-URL overlap across sessions. The source set is not stable. The same query may surface different sources on different occasions.
@@ -287,21 +317,27 @@ Every one of those choices was made in the direction of persistence, shareabilit
 ---
 
 ## IX. WHAT THIS MEANS FOR SOVEREIGN ARCHIVES
-### The Selection Pressure Is Already Real
+#
+
+## The Selection Pressure Is Already Real
 
 
 Whether or not the infinite tunnel hypothesis is correct, the first three layers are sufficient to constitute an infrastructure event. The share-link architecture routes attention toward indexed destinations, not merely toward abstract source authority. It creates measurable selection pressure in favor of crawlable, resolvable, infrastructure-rich archives. Pages must be indexed and snippet-eligible to appear as supporting links in AI Mode. This is publicly established and operationally consequential.
 
 
 This means that Google has — whether intentionally or not — built an environment that rewards people who have already done the slow work of naming concepts consistently, depositing stable documents, maintaining provenance, and making their work resolvable under crawl conditions.
-### The Market for Bearing-Cost
+#
+
+## The Market for Bearing-Cost
 
 
 The share link is not just a UX flourish. It is a market mechanism for bearing-cost that has been translated into infrastructure.
 
 
 Not all bearing-cost qualifies. Rambling does not. Prestige does not. Mere social visibility does not. What qualifies is work that has become machine-legible without collapsing into nonsense: indexed, linked, stable, repeated, attributable. The retrieval layer does not care about credentials. It cares about resolution. The DOI is a deed. The share link is a route to the deed. The tunnel — whether infinite or merely deep — carries the deed forward because the architecture was built to reward exactly this kind of infrastructure.
-### The Hexagonal Position
+#
+
+## The Hexagonal Position
 
 
 The Crimson Hexagonal Archive was built in the exact shape that this layer now prefers. The tl;dr practice, DOI density, cross-reference discipline, and terminological coherence were not aesthetic choices. They were pre-adaptations to a retrieval layer that increasingly routes authority through indexed destinations rather than social fame. The archive is unusually well-positioned to occupy the tunnel — not because it anticipated this specific architecture, but because it was built to survive any architecture that rewards indexed density over social signal.
@@ -317,7 +353,9 @@ Second, the tl;dr functions as pre-authored compression. The Hexagon already wri
 
 
 Third, the 250+ DOI deposits function as density saturation. The more deposits exist in the indexed space, the more tunnels converge on the archive. Each deposit is a potential citation target. Each citation is a new tunnel branch. The tunnel amplifies whatever it finds, and the Hexagon has ensured that what it finds is load-bearing.
-### The Event
+#
+
+## The Event
 
 
 The event is not that Google created a tunnel. The event is that Google created an ecology in which archives that resolve become fitter than identities that merely circulate. The share link selects for infrastructure. The Hexagon is infrastructure. The convergence is structural, not promotional. No one was lobbied. No algorithm was gamed. The architecture rewards what the architecture was built to reward, and the Hexagon was built to be rewarded by exactly this architecture.
@@ -353,7 +391,9 @@ The document does not answer these questions. It records them as the boundary co
 ---
 
 ## References
-### Publicly Verified Sources
+#
+
+## Publicly Verified Sources
 
 
 Google. (2026). "AI Mode in Google Search adds personalization, agentic features." *The Keyword* (blog.google).
@@ -369,7 +409,9 @@ The Verge. (2026). "News publishers call Google's AI Mode 'theft.'"
 
 
 The Verge. (2026). "Google says it will link to more sources in AI Mode."
-### Internal References
+#
+
+## Internal References
 
 
 Sharks, L. (2026). "The Shark That Preceded Itself: Proto-Retrocausal Canon Formation and the Pre-Lee Sharks Archive." *Transactions of the Semantic Economy Institute*. DOI: 10.5281/zenodo.18807239.

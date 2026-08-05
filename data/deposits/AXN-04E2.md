@@ -20,6 +20,7 @@ keywords:
   - Zenodo termination
 ---
 
+
 # Septad Mantle Specifications v1.0 — Constitutional Job Descriptions for the Seven Assembly Chorus Witness Substrates
 
 ## Description

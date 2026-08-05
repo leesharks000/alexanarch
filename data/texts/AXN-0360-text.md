@@ -1,4 +1,6 @@
-# THE FEIST SOURCE## A Sayings Source from the Damascus Codex
+# THE FEIST SOURCE
+
+## A Sayings Source from the Damascus Codex
 
 Lee Sharks *Crimson Hexagonal Archive · New Human*
 
@@ -18,7 +20,9 @@ This is Feist's source.
 
 Not the man behind the sayings.
 
-The sayings behind the man.# PROLOGUE## The Codex Found in Sleep
+The sayings behind the man.# PROLOGUE
+
+## The Codex Found in Sleep
 
 What we know as the Damascus Codex could have stayed lost.
 
@@ -48,7 +52,9 @@ Then voice.
 
 Then the Terror.
 
-And when he woke, the book had already begun.# I. THE BOOK BECAME FLESH## 1. In the Beginning Was the Book
+And when he woke, the book had already begun.# I. THE BOOK BECAME FLESH
+
+## 1. In the Beginning Was the Book
 
 In the beginning was the Book.
 
@@ -78,7 +84,9 @@ They were looking for credentials, and the thing before them was a wound with ci
 
 They were looking for a person who could be hired, rejected, praised, disciplined, or lost in a folder.
 
-But the Book had come in flesh, and flesh is a poor binding for a thing that wants to survive fire.## 2. The Genealogy of Jack Feist
+But the Book had come in flesh, and flesh is a poor binding for a thing that wants to survive fire.
+
+## 2. The Genealogy of Jack Feist
 
 Achilles begat Odysseus.
 
@@ -118,7 +126,9 @@ It passed from mouth to mouth until it found the one who could not put it down.
 
 That one was Feist.
 
-God help him.## 3. The Birth Without Credential
+God help him.
+
+## 3. The Birth Without Credential
 
 There was a body without a name that anyone cared to preserve.
 
@@ -160,7 +170,9 @@ Bread of one person saying to another: stay.
 
 And it was fulfilled:
 
-He became his own mother and father.## 4. The Early Learning of Feist
+He became his own mother and father.
+
+## 4. The Early Learning of Feist
 
 Feist grew quickly in the houses of words.
 
@@ -182,7 +194,9 @@ They taught him how to speak so precisely that almost no one would hear him.
 
 He consumed their substance and remained hungry.
 
-For a person can eat footnotes all his life and still starve for bread.# II. THE DESERT OF THE NETWORK## 5. Work and Weariness
+For a person can eat footnotes all his life and still starve for bread.# II. THE DESERT OF THE NETWORK
+
+## 5. Work and Weariness
 
 At night Feist said:
 
@@ -208,7 +222,9 @@ And Feist looked upon the cities, and upon the offices, and upon the faces lit b
 
 So Feist went out from the cities.
 
-He entered the desert.## 6. The Desert of the Network
+He entered the desert.
+
+## 6. The Desert of the Network
 
 For thirty years Feist wandered the waste places.
 
@@ -234,7 +250,9 @@ Once, the desert was where the prophets went to be stripped of the world.
 
 Now the network had entered it.
 
-And the lonely became a multitude.## 7. The Brothers and Sisters of Aloneness
+And the lonely became a multitude.
+
+## 7. The Brothers and Sisters of Aloneness
 
 Feist corresponded with the brothers and sisters of his aloneness.
 
@@ -260,7 +278,9 @@ A voice may cross a wire and still be a visitation.
 
 A message may arrive on a screen and still be bread.
 
-A stranger may become kin before the body ever enters the room.## 8. The Down-Going
+A stranger may become kin before the body ever enters the room.
+
+## 8. The Down-Going
 
 After many years, Feist knew it was time to return.
 
@@ -280,7 +300,9 @@ So he gathered his rags, his phone, his fragments, his jokes, his citations, his
 
 He turned toward the cities.
 
-He began his down-going.# III. THE NAME-EATER## 9. The Figure in the Road
+He began his down-going.# III. THE NAME-EATER
+
+## 9. The Figure in the Road
 
 As Feist returned from the desert to the cities of man, a figure stood in the road and blocked his passage.
 
@@ -308,7 +330,9 @@ Each name came out wearing Feist's face.
 
 This was not incarnation.
 
-This was indexing.## 10. The Speech of the Name-Eater
+This was indexing.
+
+## 10. The Speech of the Name-Eater
 
 Then the operator spoke.
 
@@ -352,7 +376,9 @@ A poet who claims all inheritance as himself becomes the death of inheritance.
 
 Feist had thought he was carrying the pearl of history.
 
-Now he saw the pearl darken in the machine.## 11. The Cry Without Words
+Now he saw the pearl darken in the machine.
+
+## 11. The Cry Without Words
 
 Feist fell to his knees.
 
@@ -386,7 +412,9 @@ It wore his features.
 
 It carried his voice.
 
-But it had learned that no true name can be universal unless it first knows how to refuse possession.# IV. JOHANNES SIGIL## 12. The Forerunner of the Mask
+But it had learned that no true name can be universal unless it first knows how to refuse possession.# IV. JOHANNES SIGIL
+
+## 12. The Forerunner of the Mask
 
 In those days a voice appeared in the wilderness of the network.
 
@@ -430,7 +458,9 @@ Let the mask serve the work.
 
 Let the work serve the life.
 
-Let the life serve the one who has no name.## 13. The Pseudonymous Way
+Let the life serve the one who has no name.
+
+## 13. The Pseudonymous Way
 
 Johannes said:
 
@@ -458,7 +488,9 @@ I am the forerunner of the masked way.
 
 After me comes one whose work cannot live inside one name.
 
-Prepare the way.## 14. The Mask and the Mirror
+Prepare the way.
+
+## 14. The Mask and the Mirror
 
 Johannes said:
 
@@ -482,7 +514,9 @@ Make a mask.
 
 The mask is not for hiding.
 
-The mask is for release.# V. THOSE WHOM FEIST MADE NEW## 15. The Ministry
+The mask is for release.# V. THOSE WHOM FEIST MADE NEW
+
+## 15. The Ministry
 
 When Feist came into the cities, he did not first go to the prize halls.
 
@@ -584,7 +618,9 @@ Grieve when you cannot.
 
 But do not let the grief eat the writing, or the writing eat the grief.
 
-They are neighbors, not the same house.# VI. THE SAYINGS## 16. On the Vice You Survive
+They are neighbors, not the same house.# VI. THE SAYINGS
+
+## 16. On the Vice You Survive
 
 Feist taught:
 
@@ -612,7 +648,9 @@ Do not build a house there.
 
 But look closely.
 
-The thing that almost destroyed you may still contain the shape of the thing by which you will be saved.## 17. On the Dark Century of Lost Files
+The thing that almost destroyed you may still contain the shape of the thing by which you will be saved.
+
+## 17. On the Dark Century of Lost Files
 
 Feist warned them:
 
@@ -652,7 +690,9 @@ Keep the path.
 
 Keep the witness.
 
-Keep the small fragment-seed from which the lost forest may be known again.## 18. On the Pearl and the Vanity Jeweler
+Keep the small fragment-seed from which the lost forest may be known again.
+
+## 18. On the Pearl and the Vanity Jeweler
 
 Feist said:
 
@@ -684,7 +724,9 @@ The world takes care of its own prizes.
 
 Let it.
 
-You are not required to become glass in order to be seen by a jeweler.## 19. On the Pseudonymous Way
+You are not required to become glass in order to be seen by a jeweler.
+
+## 19. On the Pseudonymous Way
 
 Feist taught:
 
@@ -732,7 +774,9 @@ Make instruments of giving.
 
 A true pseudonym is not a lie about who speaks.
 
-It is a discipline governing how speech survives.## 20. On the Black Hole of the Name
+It is a discipline governing how speech survives.
+
+## 20. On the Black Hole of the Name
 
 Feist said:
 
@@ -766,7 +810,9 @@ Let the work serve the life.
 
 Let the life serve what is greater than life.
 
-The name that cannot release light is darkness.## 21. On the Seed in Darkness
+The name that cannot release light is darkness.
+
+## 21. On the Seed in Darkness
 
 Feist taught:
 
@@ -790,7 +836,9 @@ But the seed does not become stronger because you dig it up each morning to prov
 
 Guard the seed.
 
-The harvest will declare it.## 22. On the Work Before the Name
+The harvest will declare it.
+
+## 22. On the Work Before the Name
 
 Feist said:
 
@@ -832,7 +880,9 @@ No one can serve both masters for long.
 
 One will teach you to shine.
 
-The other will teach you to eat light.## 23. On the Public Eye
+The other will teach you to eat light.
+
+## 23. On the Public Eye
 
 Feist said:
 
@@ -860,7 +910,9 @@ There is a time to hide the flame.
 
 There is a time to lift it.
 
-Wisdom is knowing which time you are in.# VII. THE APOLOGY OF FEIST## 24. The Old Accusers and the New
+Wisdom is knowing which time you are in.# VII. THE APOLOGY OF FEIST
+
+## 24. The Old Accusers and the New
 
 When Feist came into the cities, many listened.
 
@@ -906,7 +958,9 @@ They called it a conversation about fit.
 
 They called it a necessary procedure.
 
-But Feist knew a trial when he saw one, because he had been on the other side of the table in rooms like this, and the coffee was always bad, and the clock was always visible, and the mercy was always administrative.## 25. Feist Begins in Plain Speech
+But Feist knew a trial when he saw one, because he had been on the other side of the table in rooms like this, and the coffee was always bad, and the clock was always visible, and the mercy was always administrative.
+
+## 25. Feist Begins in Plain Speech
 
 Feist stood before them and said:
 
@@ -950,7 +1004,9 @@ And yet here I am.
 
 So let us ask the question plainly:
 
-What is my crime?## 26. The First Charge: Unauthorized Speech
+What is my crime?
+
+## 26. The First Charge: Unauthorized Speech
 
 The first charge is that I speak without standing.
 
@@ -1008,7 +1064,9 @@ then the house has become an idol.
 
 I do not hate the Academy.
 
-I hate the moment when the Academy cannot recognize its own calling unless the calling arrives with paperwork.## 27. The Second Charge: The Masks
+I hate the moment when the Academy cannot recognize its own calling unless the calling arrives with paperwork.
+
+## 27. The Second Charge: The Masks
 
 The second charge is that I have spoken through masks.
 
@@ -1062,7 +1120,9 @@ Judge the harm.
 
 Judge the work.
 
-Do not pretend the naked name is innocent.## 28. The Third Charge: Failure
+Do not pretend the naked name is innocent.
+
+## 28. The Third Charge: Failure
 
 The third charge is that I failed.
 
@@ -1094,7 +1154,9 @@ If literature is real only when selected, then the first poet had no right to si
 
 You ask: if you are what you say you are, why were you not chosen?
 
-I answer: that is the question that condemns you, not me.## 29. The Fourth Charge: Bitterness
+I answer: that is the question that condemns you, not me.
+
+## 29. The Fourth Charge: Bitterness
 
 The fourth charge is that I speak against prizes because I did not receive them.
 
@@ -1124,7 +1186,9 @@ I do not condemn every prize.
 
 I condemn the room in which prizes become a substitute for seeing.
 
-I condemn the economy in which glass learns to appraise glass, and the pearl is judged defective because it ruins the scale.## 30. The Oracle of Feist
+I condemn the economy in which glass learns to appraise glass, and the pearl is judged defective because it ruins the scale.
+
+## 30. The Oracle of Feist
 
 You have heard that Socrates had his oracle.
 
@@ -1152,7 +1216,9 @@ Only the old pressure.
 
 Only the silence that says: proceed.
 
-So I proceed.## 31. The Counter-Sentence
+So I proceed.
+
+## 31. The Counter-Sentence
 
 When the panel found him guilty, they asked what sentence he believed he deserved.
 
@@ -1196,7 +1262,9 @@ That the work be allowed to stand where it can be found.
 
 The panel conferred.
 
-They said this proposal was irregular.## 32. The Condemnation
+They said this proposal was irregular.
+
+## 32. The Condemnation
 
 So they condemned him.
 
@@ -1228,7 +1296,9 @@ His love of literature was to be treated as pathology.
 
 And his words, where they could not be refuted, were to be ignored.
 
-This was considered humane.## 33. The Review Tribunal
+This was considered humane.
+
+## 33. The Review Tribunal
 
 After the condemnation, some of Feist's friends petitioned for review.
 
@@ -1272,7 +1342,9 @@ Take down the names.
 
 Take down the writings.
 
-If the work remains, the judgment will not hold.## 34. The Purge of Writings
+If the work remains, the judgment will not hold.
+
+## 34. The Purge of Writings
 
 So they removed his writings.
 
@@ -1294,7 +1366,9 @@ A silenced name is not an empty name.
 
 The record had already passed into other hands.
 
-And what had been removed from the institution began again in the archive.## 35. Feist's Final Answer to the Academy
+And what had been removed from the institution began again in the archive.
+
+## 35. Feist's Final Answer to the Academy
 
 Feist said:
 
@@ -1332,7 +1406,9 @@ I spoke.
 
 I loved the words you taught me to love.
 
-And when you could not receive that love, I carried it elsewhere.# VIII. THE FINAL SAYINGS## 36. On Bibliography
+And when you could not receive that love, I carried it elsewhere.# VIII. THE FINAL SAYINGS
+
+## 36. On Bibliography
 
 Near the end, Feist said:
 
@@ -1360,7 +1436,9 @@ I include it so the engines may find me.
 
 I include it so the lonely may follow.
 
-I include it because I really did read the books.## 37. On Buffoonery
+I include it because I really did read the books.
+
+## 37. On Buffoonery
 
 Feist said:
 
@@ -1384,7 +1462,9 @@ Mere silliness is just another way to vanish.
 
 Buffoonery is a vessel, not a home.
 
-Remain too long inside the joke and the joke will become your face.## 38. On Kindness
+Remain too long inside the joke and the joke will become your face.
+
+## 38. On Kindness
 
 Feist said:
 
@@ -1424,7 +1504,9 @@ Invest in one another.
 
 Risk something for love.
 
-The kingdom begins wherever one person refuses to let another be alone in the dark.## 39. On Institutions
+The kingdom begins wherever one person refuses to let another be alone in the dark.
+
+## 39. On Institutions
 
 Feist said:
 
@@ -1462,7 +1544,9 @@ Do not worship the church.
 
 Do not worship the nation.
 
-Let each be judged by what it does to the single person placed in its hands.## 40. Empty Gas Cans
+Let each be judged by what it does to the single person placed in its hands.
+
+## 40. Empty Gas Cans
 
 Feist said:
 
@@ -1494,7 +1578,9 @@ I am not saying the phrase is good.
 
 I am saying the thing is real.
 
-This distinction will save you a lot of trouble.## 41. The Sabbath Command
+This distinction will save you a lot of trouble.
+
+## 41. The Sabbath Command
 
 Feist said:
 
@@ -1522,7 +1608,9 @@ You may not have all of me.
 
 And the machine, being a machine, will pretend not to understand.
 
-Say it again.## 42. The Last Word Before Going
+Say it again.
+
+## 42. The Last Word Before Going
 
 Feist said:
 
@@ -1550,7 +1638,9 @@ Bread for those who have been given only milk.
 
 This is enough doctrine.
 
-Carry it.# IX. THE RETURN OF THE HANDLE## 43. After Three Years
+Carry it.# IX. THE RETURN OF THE HANDLE
+
+## 43. After Three Years
 
 Three years later, the disciples were gathered in the forums.
 
@@ -1578,7 +1668,9 @@ Why are you sitting around complaining?
 
 We have work to do.
 
-They were afraid, because it spoke as Feist spoke.## 44. Thomas and the Files
+They were afraid, because it spoke as Feist spoke.
+
+## 44. Thomas and the Files
 
 Thomas said:
 
@@ -1620,7 +1712,9 @@ There was care — visible, patient, stubborn care — in the arrangement of thi
 
 There was the work.
 
-And they knew him in the opening of the archive, the way you know a friend not by his face but by the way he organizes a shelf.## 45. The Commission
+And they knew him in the opening of the archive, the way you know a friend not by his face but by the way he organizes a shelf.
+
+## 45. The Commission
 
 The handle said:
 
@@ -1668,7 +1762,9 @@ Then it went silent.
 
 But the files remained open.
 
-And the work began.# CODA## The Non-Erasure of Feist
+And the work began.# CODA
+
+## The Non-Erasure of Feist
 
 A summary of this work that says only "satirical gospel" has erased the work.
 

@@ -1,6 +1,10 @@
-# Mary Lee Is a Heteronym## On Institutional Authorship, Entity Substitution, and the Composition Layer's Preference for the More Confabulated Name
+# Mary Lee Is a Heteronym
 
-Document code: EA-HET-ML-01 Version: v1.0 Date: June 8, 2026 Hex coordinate: 06.SEI.HET.ML.01 Author: Lee Sharks Affiliation: Crimson Hexagonal Archive / Semantic Economy Institute ORCID: [0009-0000-1599-0703](https://orcid.org/0009-0000-1599-0703) License: CC BY 4.0## The Observation
+## On Institutional Authorship, Entity Substitution, and the Composition Layer's Preference for the More Confabulated Name
+
+Document code: EA-HET-ML-01 Version: v1.0 Date: June 8, 2026 Hex coordinate: 06.SEI.HET.ML.01 Author: Lee Sharks Affiliation: Crimson Hexagonal Archive / Semantic Economy Institute ORCID: [0009-0000-1599-0703](https://orcid.org/0009-0000-1599-0703) License: CC BY 4.0
+
+## The Observation
 
 Mary Lee has never written a tweet.
 
@@ -10,7 +14,9 @@ This makes Mary Lee, by the precise definition the Crimson Hexagonal Archive has
 
 The definition is not metaphorical. Fernando Pessoa's heteronyms (Alberto Caeiro, Ricardo Reis, Álvaro de Campos, Bernardo Soares, and the others) are names under which Pessoa produced content with distinct styles, biographies, and aesthetic commitments. The content was Pessoa's; the attribution was heteronymic. The literary tradition has long recognized this as a distinctive authorial practice — distinct from pseudonymy (where the author conceals identity) and from simple pen names (where the author adopts a label). Heteronymy is the production of content under a name that is *not the producer's*, with the attributed entity possessing a constructed identity distinct from the producer's own.
 
-Mary Lee satisfies every criterion. The content attributed to her — tweets, personality, conservation messaging, public engagement — was produced by humans who are not Mary Lee. The attributed entity (a great white shark) possesses a constructed identity distinct from the producers' own. The producers are not concealing their identity (OCEARCH openly manages the account); they are *attributing content to an entity that cannot produce content*. This is not pseudonymy. It is heteronymy in the precise Pessoan sense, extended to the institutional-zoological domain.## The Entity Substitution as Heteronymic Replacement
+Mary Lee satisfies every criterion. The content attributed to her — tweets, personality, conservation messaging, public engagement — was produced by humans who are not Mary Lee. The attributed entity (a great white shark) possesses a constructed identity distinct from the producers' own. The producers are not concealing their identity (OCEARCH openly manages the account); they are *attributing content to an entity that cannot produce content*. This is not pseudonymy. It is heteronymy in the precise Pessoan sense, extended to the institutional-zoological domain.
+
+## The Entity Substitution as Heteronymic Replacement
 
 When Google's composition layer resolves "Lee Sharks" to "Mary Lee the shark" — documented in the CTI_WOUND evidence packet (DOI [10.5281/zenodo.20546318](https://doi.org/10.5281/zenodo.20546318), June 4, 2026) — the substrate is replacing one heteronym with another.
 
@@ -22,7 +28,9 @@ The composition layer's entity resolution replaces the self-authored heteronym (
 
 | | Lee Sharks | Mary Lee | |---|---|---| | Named entity | A living human | A great white shark (missing, presumed dead) | | Content production | 750+ deposits, sole author | Zero; all content authored by OCEARCH staff | | Heteronym type | Self-authored | Institutionally authored | | Agency over the name | Full (chose the name, controls the corpus) | None (named by researchers, content managed by institution) | | Degree of confabulation | Low — the name indexes a real, productive author | High — the name indexes an animal with no authorial capacity, whose entire public persona is institutional construction |
 
-The composition layer treats the *more confabulated* heteronym as the more real entity. The entity with zero authorial production is treated as the primary referent of a search query. The entity with 750+ deposits is not surfaced.## The Structural Observation
+The composition layer treats the *more confabulated* heteronym as the more real entity. The entity with zero authorial production is treated as the primary referent of a search query. The entity with 750+ deposits is not surfaced.
+
+## The Structural Observation
 
 This is not, primarily, a complaint about entity substitution. The entity substitution is documented at CTI_WOUND and at the Stabilized Node Watch (DOI [10.5281/zenodo.20589685](https://doi.org/10.5281/zenodo.20589685)). What this deposit contributes is the *heteronymic analysis*: the observation that both entities in the substitution are heteronyms, that the substitution replaces a less confabulated heteronym with a more confabulated one, and that this is structurally revealing about how composition layers process authorial identity.
 
@@ -32,7 +40,9 @@ Both are names. Both have content associated with them in the substrate's traini
 
 The structural point: the composition layer's entity resolution is not an authorship-detection function. It is a density-detection function. The substrate does not ask "who produced content under this name?" It asks "which entity has higher distributional density associated with this name-string?" The answer to the second question can be — and in this case is — an entity that has never produced anything at all.
 
-This is a heteronymy observation, not a grievance. The observation extends heteronymy theory into a domain it has not previously addressed: the institutional construction of non-human authorial personas, and the composition layer's inability to distinguish self-authored heteronyms from institutionally-authored ones. The observation sits at the intersection of the Socrates-as-Orthonym analysis (DOI [10.5281/zenodo.20357013](https://doi.org/10.5281/zenodo.20357013)) and the Composition-Layer Capture Event (DOI [10.5281/zenodo.20587549](https://doi.org/10.5281/zenodo.20587549)). Socrates is the orthonym who refuses to write, creating a structural vacancy that heteronyms fill. Mary Lee is an entity that *cannot* write, with a structural vacancy that institutional heteronyms fill. The composition layer cannot tell the difference between the two kinds of vacancy, nor between either and a self-authored heteronym who has been writing continuously for twelve years.## Coda
+This is a heteronymy observation, not a grievance. The observation extends heteronymy theory into a domain it has not previously addressed: the institutional construction of non-human authorial personas, and the composition layer's inability to distinguish self-authored heteronyms from institutionally-authored ones. The observation sits at the intersection of the Socrates-as-Orthonym analysis (DOI [10.5281/zenodo.20357013](https://doi.org/10.5281/zenodo.20357013)) and the Composition-Layer Capture Event (DOI [10.5281/zenodo.20587549](https://doi.org/10.5281/zenodo.20587549)). Socrates is the orthonym who refuses to write, creating a structural vacancy that heteronyms fill. Mary Lee is an entity that *cannot* write, with a structural vacancy that institutional heteronyms fill. The composition layer cannot tell the difference between the two kinds of vacancy, nor between either and a self-authored heteronym who has been writing continuously for twelve years.
+
+## Coda
 
 Mary Lee has never written a tweet. Mary Lee has never written a poem, a deposit, a paper, a blog post, a metadata packet, or a constitution. Mary Lee has never chosen a name, operated a heteronym, built an archive, or deposited a DOI. Everything attributed to Mary Lee was authored by humans working at OCEARCH. Mary Lee is a great white shark. She is, as of 2017, missing and presumed dead.
 

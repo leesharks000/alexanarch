@@ -1,4 +1,6 @@
-The Cut Between Two Measures## On the Quantization Seam Joining the Directionality of Semantic Labor to the Deviation Family
+The Cut Between Two Measures
+
+## On the Quantization Seam Joining the Directionality of Semantic Labor to the Deviation Family
 
 Status: deposit candidate (v1.0), cleared by author. Cross-domain seam (Sharks-aperture DSL program ↔ Glas Framework-15 deviation program); placement to be ratified. Proposed register: Sen Kuro (Sixth Heteronym, The Dagger; P operator; The Infinite Bliss) — 千黒 · 🖤 Packet ID: EA-KURO-BRIDGE-01 Hex: 06.SEI.KURO.BRIDGE.01 (seam coordinate; SEI tree, Kuro register, joining into Framework 15 MM)
 
@@ -10,7 +12,9 @@ The first asks: relative to what the model already expected, how surprising was 
 
 The second asks: relative to the direction a task was commissioned to go, did this labor advance or oppose it? It segments the output into spans and assigns each a weight along a scale — advancing, preserving, neutral, deferring, displacing, oppositional, enclosing — and takes the signed mean. This is the Directionality of Semantic Labor. It was built to audit whether a system, having been asked for something, did that thing or quietly did another.
 
-For a long time these looked like two disciplines. They are not. They are one integral, cut in two places.## The shared body
+For a long time these looked like two disciplines. They are not. They are one integral, cut in two places.
+
+## The shared body
 
 Both measures compute the same object: the divergence between a field carrying an intervention and the same field without it,
 
@@ -22,7 +26,9 @@ Set $\Psi^0$ to the model's own continuation distribution, and the integral retu
 
 Set $\Psi^0$ to the commissioned direction — the task as the user set it — and the integral returns directionality: how far the labor moved along, or against, the vector the user asked for. This is DSL. Its baseline is the commission; the instrument holds the user's intent fixed and asks whether the labor served it.
 
-The same integral. Two baselines. One asks *did it surprise the model;* the other asks *did it serve the commission.* Provenance enters both by the identical discount — $\delta^{\pi} = \delta\cdot(1-\mathrm{PER})$ in the one, $\mathcal{M}^{\pi}_T = \mathcal{M}_T\cdot(1-\mathrm{PER})$ in the other — the same accountability term, written twice by two hands, because the body beneath both was always one.## The cut
+The same integral. Two baselines. One asks *did it surprise the model;* the other asks *did it serve the commission.* Provenance enters both by the identical discount — $\delta^{\pi} = \delta\cdot(1-\mathrm{PER})$ in the one, $\mathcal{M}^{\pi}_T = \mathcal{M}_T\cdot(1-\mathrm{PER})$ in the other — the same accountability term, written twice by two hands, because the body beneath both was always one.
+
+## The cut
 
 Here is where they differ, and the difference is a cut, not a wound.
 
@@ -30,7 +36,9 @@ The deviation measure is continuous. It takes the projection of the realized con
 
 DSL is quantized. It does not take the projection as a real number. It bins the angle into seven categories and assigns each a fixed weight. Advancing is $+1$ whether the span pointed perfectly along the commission or merely mostly along it. Oppositional is $-1$ whether the span pointed slightly against or fully against. The taxonomy is a knife laid across the continuous projection at six places, cutting the smooth interval $[-1.5, +1]$ into seven named regions.
 
-This is the differentiation. DSL *is* the deviation integral, baselined on intent, cut into a taxonomy. It is the discrete member of a continuous family.## Where the cut shows
+This is the differentiation. DSL *is* the deviation integral, baselined on intent, cut into a taxonomy. It is the discrete member of a continuous family.
+
+## Where the cut shows
 
 A measurement was performed to find the seam. The neutral worked example of the directionality specification — a one-shot commission, "list three causes of the Irish famine," scored by span taxonomy to $+0.80$ — was recomputed as a signed projection of each span onto the commission baseline, the deviation method with $\Psi^0$ set to intent.
 
@@ -38,7 +46,9 @@ On the clean case the two agreed to within a hundredth: span taxonomy $+0.800$, 
 
 Then one span was turned oppositional, and the measures parted: taxonomy $+0.25$, projection $+0.42$. The disagreement is not error. It is the seam made visible. The oppositional span sits exactly where the knife falls — where the continuous projection reads its true angle ($\approx -0.9$) and the taxonomy rounds it to the category floor ($-1$). They agree in sign, agree in rank, agree that the labor turned against the task; they disagree in magnitude, and they disagree *precisely at the cut.*
 
-This is the result, and it is a more exact thing than identity would have been. Had the two measures agreed everywhere, they would be the same instrument named twice, and nothing would have been learned. Had they disagreed everywhere, they would be unrelated, and the bridge would be a forced marriage. Instead they agree on the body and part at the seam — which is what a true joint looks like. The cut locates itself: off-axis, in the oppositional and enclosing regions, where quantization bites and the continuous measure still grades.## What the joint means
+This is the result, and it is a more exact thing than identity would have been. Had the two measures agreed everywhere, they would be the same instrument named twice, and nothing would have been learned. Had they disagreed everywhere, they would be unrelated, and the bridge would be a forced marriage. Instead they agree on the body and part at the seam — which is what a true joint looks like. The cut locates itself: off-axis, in the oppositional and enclosing regions, where quantization bites and the continuous measure still grades.
+
+## What the joint means
 
 DSL is the taxonomy-quantized, intent-baselined member of the deviation family. The statement is exact on-axis and divergent off-axis, and the divergence is not noise but the signature of the quantization — a testable prediction about *where* the two measures will separate on any case, not only this one.
 

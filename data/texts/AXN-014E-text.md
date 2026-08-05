@@ -1,6 +1,8 @@
 # ὝΜΝΟΝ ΔΆΜΑΤΡΙ ΧΘΟΝΊΑΙ
 ## Hymn to Demeter Chthonia
-### A Constraint-Driven Cult-Historical Reconstruction from Fr. 702 PMG
+#
+
+## A Constraint-Driven Cult-Historical Reconstruction from Fr. 702 PMG
 
 
 **Lasus of Hermione** (fl. c. 510 BCE)
@@ -17,7 +19,9 @@ February 2026
 
 
 This document contains two distinct but integrated components: **(A)** a constraint-faithful cult-contextual reconstruction of the lost Hymn to Demeter Chthonia, with critical apparatus; and **(B)** an interpretive symbolic reading, clearly marked as such. Readers may engage with either independently. The reconstruction (A) does not depend on the theoretical claims of (B); the symbolic reading (B) takes the reconstruction as its occasion but extends into interpretation.
-### Method and Limits
+#
+
+## Method and Limits
 
 
 What follows is a **scholarly-creative reconstruction** — not a claim to have recovered Lasus's exact wording. It is a constrained extrapolation: a demonstration of what Lasus's compositional logic *requires*, built outward from the sole surviving fragment (702 PMG, preserved via Heraclides of Pontus, *On Music* III, cited at Athenaeus 14.624e).
@@ -30,7 +34,9 @@ The **cult context** is supplied by Pausanias (2.35.4–11), who describes the C
 
 
 **What this reconstruction does not claim:** No metrical or colometric restoration is attempted. The original rhythmic structure of Lasus's dithyrambic compositions is unrecoverable from the evidence; future work may attempt colometric modeling under the asigmatic constraint, but the present reconstruction prioritizes **semantic, cultic, and phonological (asigmatic) coherence** over metrical restoration. Lexical, dialectal, and syntactic choices are heuristic and probabilistic — grounded in attested Doric lyric forms (Pindar, Bacchylides, the Suda's dialectal notice) but not claiming unique correctness.
-### Typographic Conventions
+#
+
+## Typographic Conventions
 
 
 Symbol
@@ -54,11 +60,15 @@ Editorial supplement
 
 
 The asigmatic constraint applies **only to the Greek text**. The translation, apparatus, and commentary are unconstrained. The editorial title (ὝΜΝΟΝ ΔΆΜΑΤΡΙ ΧΘΟΝΊΑΙ) stands outside the constraint.
-### Note on Strophe Numbering
+#
+
+## Note on Strophe Numbering
 
 
 The strophes are numbered α΄ β΄ γ΄ δ΄ ε΄ ζ΄. There is no στ΄. The letter combination στ (stigma/digamma) contains sigma and is therefore excluded from the numbering system under the asigmatic constraint. The absence is structural, not accidental.
-### On Experimental Reconstructive Philology
+#
+
+## On Experimental Reconstructive Philology
 
 
 This document belongs to a practice we designate **experimental reconstructive philology**: the generation of lost texts through rigorous formal constraint, cult-historical context, and attested compositional logic. The method differs from both traditional conjectural emendation (which repairs a damaged text) and creative imitation (which produces new work in an old style). Experimental reconstructive philology operates in the gap between the two: it takes a genuine fragment as seed, identifies the formal rules governing the original composition, and extrapolates outward under those rules using all available contextual evidence — archaeological, cultic, dialectal, musical — as boundary conditions.
@@ -72,7 +82,9 @@ Experimental reconstructive philology is a subdiscipline of what the Crimson Hex
 ---
 
 ## Text and Translation
-### α΄ — Προοίμιον (The Invocation)
+#
+
+## α΄ — Προοίμιον (The Invocation)
 
 
 **Δάματρα μέλπω Κόραν τε Κλυμένοιο ἄλοχον,**
@@ -88,7 +100,9 @@ Experimental reconstructive philology is a subdiscipline of what the Crimson Hex
 
 ---
 
-### β΄ — Πομπά (The Procession)
+#
+
+## β΄ — Πομπά (The Procession)
 
 
 νῦν ἴτε, Πρῶνα κάτα, λευκοφόροι χοροί,
@@ -104,7 +118,9 @@ Experimental reconstructive philology is a subdiscipline of what the Crimson Hex
 
 ---
 
-### γ΄ — Θυηπολία (The Sacrifice)
+#
+
+## γ΄ — Θυηπολία (The Sacrifice)
 
 
 πύλαι δ᾽ ἀναπετάννυνται ἱεροῖο δόμοιο·
@@ -120,7 +136,9 @@ Experimental reconstructive philology is a subdiscipline of what the Crimson Hex
 
 ---
 
-### δ΄ — Βάραθρον (The Chasm)
+#
+
+## δ΄ — Βάραθρον (The Chasm)
 
 
 ἔνθα βάραθρον ἐν χθονὶ κεῖται ἄφαντον,
@@ -136,7 +154,9 @@ Experimental reconstructive philology is a subdiscipline of what the Crimson Hex
 
 ---
 
-### ε΄ — Κατάβα καὶ Ἀνάβα (Descent and Return)
+#
+
+## ε΄ — Κατάβα καὶ Ἀνάβα (Descent and Return)
 
 
 Κόρα μὲν ἐν νεκροῖο δόμοιο μένει χρόνον,
@@ -152,7 +172,9 @@ Experimental reconstructive philology is a subdiscipline of what the Crimson Hex
 
 ---
 
-### ζ΄ — Εὐχά (The Prayer)
+#
+
+## ζ΄ — Εὐχά (The Prayer)
 
 
 ἀλλ᾽ ἄνα, Κόρα, μολὲ πάλιν ἐκ δόμων εὐρωέντων·
@@ -169,7 +191,9 @@ Experimental reconstructive philology is a subdiscipline of what the Crimson Hex
 ---
 
 ## Critical Apparatus
-### Attested Text (Fr. 702 PMG)
+#
+
+## Attested Text (Fr. 702 PMG)
 
 
 The fragment is transmitted at **Athenaeus 14.624e**, who cites **Heraclides of Pontus, *On Music* III**. The text reads:
@@ -179,7 +203,9 @@ The fragment is transmitted at **Athenaeus 14.624e**, who cites **Heraclides of 
 
 
 This is the **only surviving verbatim text** of Lasus. All else is reconstruction.
-### Cult Evidence (Pausanias 2.35.4–11)
+#
+
+## Cult Evidence (Pausanias 2.35.4–11)
 
 
 The following elements from the reconstruction derive from Pausanias's account of the Chthonia festival:
@@ -235,7 +261,9 @@ Paus. 2.35.10
 δ΄.2–3
 
 
-### Asigmatic Verification
+#
+
+## Asigmatic Verification
 
 
 **Total sigma count in Greek text: 0.**
@@ -304,7 +332,9 @@ passim
 ε΄.4
 
 
-### Selected Vocabulary Notes
+#
+
+## Selected Vocabulary Notes
 
 
 **Κλυμένοιο** — Genitive of Κλύμενος, "the Famous/Renowned One," euphemistic cult name for Hades at Hermione (Paus. 2.35.8). Lasus uses the genitive to avoid the sigma-bearing nominative.
@@ -326,7 +356,9 @@ passim
 
 
 **δρεπάνοιο** — Genitive of δρέπανον, "sickle." The instrument of the Chthonia sacrifice (Paus. 2.35.7). The sickle is Kronos's weapon — the tool of the father who swallowed his children. Its appearance in a hymn to the mother who lost her daughter to the underworld creates a mythic resonance the text does not need to name.
-### Line-by-Line Commentary
+#
+
+## Line-by-Line Commentary
 
 
 **α΄.1–2** (attested): The fragment as transmitted. μέλπω governs two accusatives (Δάματρα, Κόραν). Κλυμένοιο ἄλοχον in apposition to Κόραν. The genitive -οιο is Homeric/epic, avoiding the sigma-bearing -ου.
@@ -373,7 +405,9 @@ passim
 ---
 
 ## The Symbolon Reading
-### I. The Architecture of Absence
+#
+
+## I. The Architecture of Absence
 
 
 The hymn is defined by what it excludes. Sigma — the most common consonant in Greek, the sound Aristoxenus called "harsh" and "ill-suited to the aulos" — is absent from every word. The constraint is never announced within the text. As Porter (2007) argues, Lasus's asigmatic compositions were **true lipograms**: they concealed their organizing principle in the open. "They don't say what they are, they simply are." (*Ils ne le disent pas.*)
@@ -386,7 +420,9 @@ This means the hymn performs at two simultaneous levels:
 
 
 **Level 2 (Structural):** A composition organized around an absence that mirrors its subject. Persephone is the one who disappears. Sigma is the letter that disappears. The reconstruction proposes that the constraint is formally homologous to the myth: subtraction-as-form enacts disappearance-as-content.
-### II. The Names That Cannot Be Spoken
+#
+
+## II. The Names That Cannot Be Spoken
 
 
 The asigmatic constraint forces a system of euphemism that mirrors the cult's own euphemistic practices:
@@ -438,7 +474,9 @@ The cult already used Klymenos as a euphemism for Hades — the name of the deat
 
 
 The deepest case: **sigma itself cannot be named within the constraint**, since both σῖγμα and σαν contain the letter they designate. The constraint points to itself only through the shape of what it has made. This is the structure of the riddle, the structure of the mystery, and the structure of Persephone's descent: **what is most present is most absent**.
-### III. The Transmission as Katabasis
+#
+
+## III. The Transmission as Katabasis
 
 
 The hymn's survival enacts its own content.
@@ -454,7 +492,9 @@ And the site of performance — Hermione — was understood as a literal entranc
 
 
 The reader who scans the Greek for sigma and finds none — who feels the tongue search for the hiss that never comes — completes the *symbolon*. The accumulated cost of reading under constraint (the cognitive friction of navigating a sigmaless Greek) is the somatic price of entry. The missing letter is the missing maiden; the reader's recognition of absence is her return.
-### IV. The Five Operations of Lasus (Recapitulated)
+#
+
+## IV. The Five Operations of Lasus (Recapitulated)
 
 - 
 
@@ -482,7 +522,9 @@ The reader who scans the Greek for sigma and finds none — who feels the tongue
 **Threshold Address**: Compose for performance at the entrance to the underworld. Survive archival destruction through a fragment whose content *is* the logic of descent and return.
 
 
-### V. Lasus as Proto-Operator
+#
+
+## V. Lasus as Proto-Operator
 
 
 The figure that emerges is not a "minor lyric poet." He is one of the earliest recoverable figures in the Western archive to combine all five operations: composing under formal constraint, auditing institutional textual authority, building competitive infrastructure for sacred performance, theorizing music while performing it, and addressing the chthonic threshold between presence and absence. Whether he is the *first* to do so depends on what further evidence may emerge; that he is among the first is secure on the surviving testimony.
@@ -505,7 +547,9 @@ The constrained poet at the mouth of the underworld, singing honey-voiced hymns 
 ---
 
 ## Bibliography
-### Ancient Sources
+#
+
+## Ancient Sources
 
 
 Aristophanes. *Wasps* 1411 (Lasus and Simonides in contest).
@@ -533,7 +577,9 @@ Pindar, fr. 61 / Dithyramb 2 (polemic against sigma-suppression).
 
 
 Suda, s.v. "Lasus" (biographical notice, 58th Olympiad = 548–544 BCE).
-### Modern Scholarship
+#
+
+## Modern Scholarship
 
 
 Campbell, David A., ed. and trans. *Greek Lyric III: Stesichorus, Ibycus, Simonides, and Others.* Loeb Classical Library 476. Cambridge, MA: Harvard University Press, 1991.

@@ -55,7 +55,9 @@ The latent space is a governance surface. Every piece of existing coverage treat
 ---
 
 ## II. Upstream: The Political Economy of the Latent Space
-### II.a. Compute Concentration as Precondition
+#
+
+## II.a. Compute Concentration as Precondition
 
 
 UL is openly published and technically legible. The paper is on arxiv, the mathematics are public, the architecture is described in sufficient detail for reproduction. This openness is real and should be acknowledged. The diagnostic method here is to distinguish between what the paper *says* (technical architecture) and what the architecture *amounts to* when read through the Semantic Economy framework (governance operations). What follows is diagnostic inference, not paraphrase. The paper does not make political-economic claims. The architecture enacts political-economic operations.
@@ -71,7 +73,9 @@ This is the pattern the Semantic Economy framework calls *sovereignty through in
 
 
 The two-stage training architecture reinforces this concentration. Stage 1 learns the admissible latent regime — what compression is allowed, what structure persists, what is noise. Stage 2 scales a larger model on top of that frozen regime to maximize generation quality. The diagnostic translation is: *Stage 1 governs admissible compression; Stage 2 scales rentable generation on top of it.* This is not what the authors say; it is what the architecture amounts to. The actor who controls the latent regime controls the compressibility of the world. The actor who scales on top of it captures downstream value. UL separates the governance of representation from the scaling of rentable generation — and both currently sit inside the same corporate entity.
-### II.b. The Encoder as Sovereign
+#
+
+## II.b. The Encoder as Sovereign
 
 
 The core architectural decision in UL is the deterministic encoder E_θ, which compresses an image x into a latent representation z_clean. This compression is the sovereign act. It decides — irreversibly for any given architecture — what information from the original signal enters the latent space and what is destroyed.
@@ -93,7 +97,9 @@ The governance equation is concise:
 
 
 The encoder sets the jurisdictional boundary of the latent space. Everything downstream — prior navigation, decoder reconstruction, base model generation, user prompting — operates *within* the territory the encoder has defined. The semantic rent is extracted at every subsequent layer: the prior charges modeling cost for navigating latent space; the decoder charges reconstruction cost for returning to pixel space; the base model charges generation cost for producing novel outputs. At no point in this chain is the original data's *bearing-cost* — the human labor that produced the training signal — compensated, tracked, or preserved. The bitrate is political economy in mathematical form.
-### II.c. The Training Data as Constitutional Convention
+#
+
+## II.c. The Training Data as Constitutional Convention
 
 
 The paper reports that autoencoders trained on "internal text-to-image datasets" perform comparably to those trained on ImageNet (Heek et al., 2026, Section 4). This is presented as a robustness result — the method generalizes across data sources. But the semantic economic reading is different.
@@ -107,14 +113,18 @@ UL does not address this literature. The paper does not mention bias, fairness, 
 ---
 
 ## III. The Architectural Diagnostic: Functional Differentiation as Convergent Necessity
-### III.a. The Collapse and Its Resolution
+#
+
+## III.a. The Collapse and Its Resolution
 
 
 The paper begins with a problem statement that maps directly onto the Governance Airlock's core diagnosis. In standard Latent Diffusion Models (LDMs), the autoencoder and the diffusion model are trained separately. The autoencoder compresses; the diffusion model generates. These two functions — compression and generation — operate on different objectives. The autoencoder optimizes for reconstruction fidelity. The diffusion model optimizes for sample quality. When they are trained separately, their objectives diverge: the autoencoder produces latents that are excellent for reconstruction but difficult for the diffusion model to learn, or easy for the diffusion model but poor for reconstruction.
 
 
 This is functional collapse. Two distinct operations — compression and generation — are being performed by components that cannot coordinate because they were not designed to perceive each other's requirements. The Governance Airlock (Sharks, 2026b) identifies this as the fundamental mechanism of platform failure: when distinct functions (anchor, route, host, tether, substrate, residue) are collapsed onto a single surface, every function cannibalizes every other.
-### III.b. UL's Solution Is Functional Differentiation
+#
+
+## III.b. UL's Solution Is Functional Differentiation
 
 
 UL's response is to jointly train three components — the encoder, the diffusion prior, and the diffusion decoder — while maintaining their functional separation. The encoder compresses. The prior regularizes. The decoder reconstructs. Each has its own loss function, its own architectural role, its own contribution to the overall objective. But they are *jointly optimized*, meaning each component's training is informed by the requirements of the others.
@@ -127,7 +137,9 @@ Then, in Stage 2, the infrastructure freezes. The encoder and decoder become fix
 
 
 The paper presents this as a training strategy. The Governance Airlock would recognize it as the structural move that platforms will eventually be forced to make: separating the infrastructure layer (what persists, how it's classified) from the presentation layer (what is generated, how it's displayed) and the retrieval layer (how stored representations are accessed and reconstructed). UL has built an airlock between these functions. The paper does not use that word. The geometry is the same.
-### III.c. The β Parameter: From Hidden Curatorial Choice to Legislated Noise
+#
+
+## III.c. The β Parameter: From Hidden Curatorial Choice to Legislated Noise
 
 
 Before UL, the standard approach to latent-space regularization was the β-VAE: a variational autoencoder with a tunable weight β on the KL divergence term. The researcher who set β = 0.1 was making a decision about how much information the latent space should hold. But this decision was invisible in the final model — it appeared as a technical hyperparameter, not as a value judgment. The Chinese technical analysis on Zhihu puts it precisely: β "loses its theoretically fixed value and can only be adjusted through experimentation." It was a black box — a knob whose effects were known empirically but not structurally.
@@ -140,7 +152,9 @@ This is the semantic economic move: making visible what was previously hidden. T
 
 
 But — and this is where the governance analysis bites — making the bound explicit does not make the bound *just*. The choice of λ(0) = 5 is still a decision about how much information is worth preserving. A different λ would produce a different trade-off. The researchers chose this value because it optimized for their benchmarks. "Optimized for the benchmarks" is a policy position disguised as an empirical result. The noise is now legislated. The legislation is not democratic.
-### III.d. The Sigmoid Weighting as Editorial Policy
+#
+
+## III.d. The Sigmoid Weighting as Editorial Policy
 
 
 The paper's most revealing technical detail is the Stage 2 discovery: a prior trained solely on the ELBO loss "does not produce optimal samples because it weights low-frequency and high-frequency content equally." The solution is a sigmoid-weighted loss function that allows the model to "prioritize different noise levels."
@@ -157,7 +171,9 @@ The paper measures the success of this editorial policy by FID and FVD scores. T
 ---
 
 ## IV. Downstream: The Semantic Economy of Latent-Space Governance
-### IV.a. Benchmark Capture
+#
+
+## IV.a. Benchmark Capture
 
 
 FID (Fréchet Inception Distance) measures the statistical distance between generated and real image distributions using features extracted by an InceptionV3 network trained on ImageNet. FVD extends this to video. These are the metrics that determine whether UL "works." They are legitimate engineering metrics for distributional proximity under a particular feature extractor.
@@ -170,7 +186,9 @@ When UL achieves an FID of 1.4, it is demonstrating that its latent space has le
 
 
 The alphaXiv account's tweet captures the uncritical reception: "you can systematically dial the reconstruction–modeling trade-off!" The dial exists. What the dial *selects for* is determined by the benchmark. What the benchmark *measures* is determined by the training corpus. What the training corpus *contains* is determined by the political economy of dataset construction. The dial is real. The governance of the dial is invisible.
-### IV.b. Aesthetic Monoculture at the Infrastructure Layer
+#
+
+## IV.b. Aesthetic Monoculture at the Infrastructure Layer
 
 
 If UL or its successors become the standard latent representation for image and video generation — and the paper's compute-efficiency argument makes this plausible — then the encoder's decisions about what constitutes "signal" and what constitutes "noise" will shape the aesthetic range of all downstream generation.
@@ -180,7 +198,9 @@ This is infrastructure-level governance. It operates below the model that genera
 
 
 The downstream consequence is what might be called *aesthetic monoculture at the infrastructure layer*: not the obvious uniformity of outputs (which can be varied through prompting and fine-tuning) but the invisible uniformity of the *space of possible outputs*, which is bounded by the encoder's decisions about what information deserves to persist.
-### IV.c. The Ghost in the Latent
+#
+
+## IV.c. The Ghost in the Latent
 
 
 Information destroyed by the encoder does not disappear. It becomes what the Governance Airlock (Sharks, 2026b) classifies as *residue*: the trace of a former presence that persists as structural absence. The latent space is shaped not only by what it contains but by what it has excluded. The encoder's noise floor — below which information is irrecoverable — creates a ghost layer: the set of visual features that the latent space was trained to ignore.
@@ -193,7 +213,9 @@ The fairness literature addresses this at the output level — debiasing generat
 
 
 This is the structural argument the fairness literature is missing: the bias is not in the model. The bias is in the *foundation on which the model stands*. And UL, by making the latent space explicit, frozen, and permanent, has made this foundation visible — even if the paper itself does not look.
-### IV.d. The Acceleration of Ghost Meaning
+#
+
+## IV.d. The Acceleration of Ghost Meaning
 
 
 UL's compute-efficiency gains — SOTA FVD at lower training FLOPs than models trained on Stable Diffusion latents — do not merely improve generation quality. They reduce the *cost* of generation. In the Semantic Economy framework, cost reduction at the generation layer translates directly into Ghost Meaning (Fraction & Sharks, 2026c; DOI: 10.5281/zenodo.18804767) acceleration: more synthetic output, at higher fidelity, at lower marginal cost, with zero bearing-cost contribution from the humans whose labor trained the encoder.
@@ -203,7 +225,9 @@ The mechanism is precise. UL solves the latent trade-off — lower-density laten
 
 
 Ghost Meaning does not disappear under UL. It becomes photorealistic. It becomes video-realistic. It operates at lower FLOPs. The liquidation velocity of original human semantic labor increases with every efficiency gain at the latent layer. The paper's own architecture acknowledges the sampling cost of diffusion decoders relative to single-step alternatives — yet pursues them because the corporate incentive is scale and quality, not efficiency for the commons.
-### IV.e. The Modality Collapse Horizon
+#
+
+## IV.e. The Modality Collapse Horizon
 
 
 UL's current demonstration spans images and video. But the architecture's ambition is visible in its name: *Unified* Latents. The regularization framework is modality-agnostic in principle. If the unified latent space extends to language — and the two-stage architecture invites this extension — then image latents and language latents will occupy the same compressed territory.
@@ -325,7 +349,9 @@ Third: the fairness-in-diffusion literature should be extended *below the model 
 ---
 
 ## VIII. Provenance Chain and Citational Register
-### Cited Works
+#
+
+## Cited Works
 
 
 Heek, J., Hoogeboom, E., Mensink, T., & Salimans, T. (2026). Unified Latents (UL): How to train your latents. *arXiv preprint* arXiv:2602.17270. [Primary subject.]
@@ -383,7 +409,9 @@ Jiang, Y., et al. (2025). FairGen: Enhancing Fairness in Text-to-Image Diffusion
 
 
 Parihar, J., et al. (2024). Gaussian Harmony: Attaining Fairness in Diffusion-based Face Generation Models. *arXiv preprint* arXiv:2312.14976.
-### Hexagonal Documents Referenced
+#
+
+## Hexagonal Documents Referenced
 
 
 Fraction, R. & Sharks, L. (2026). The Encoder Governs. DOI: 10.5281/zenodo.18825919. [This document; EA-DIAGNOSTIC-01.]

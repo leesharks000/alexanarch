@@ -1,6 +1,8 @@
 # TL;DR:009 — ENTITY FABRICATION
 ## Google AI Mode Fabricates a Person, Promotes a Function to Biography, and Demotes the Author to Fiction
-### Dr. Orin Trace (Crimson Hexagonal Archive)
+#
+
+## Dr. Orin Trace (Crimson Hexagonal Archive)
 
 ---
 
@@ -91,7 +93,9 @@ Nobel Glas / LO!
 
 ---
 
-### TL;DR
+#
+
+## TL;DR
 
 
 On March 24, 2026, two queries were submitted to Google's AI Overview system. The results constitute a live empirical demonstration of the mechanisms theorized in "Invisibly Invisible" — and extend its analysis into territory the paper did not anticipate.
@@ -122,7 +126,9 @@ This was done invisibly. No marker. No disclosure. No confidence interval. The f
 
 ---
 
-### Extension: What This Contributes to Ginsberg Scholarship
+#
+
+## Extension: What This Contributes to Ginsberg Scholarship
 
 
 The interface's response to "what does Lee Sharks contribute to Ginsberg scholarship" produced a nontrivial interpretive surplus despite its ontological error:
@@ -135,7 +141,9 @@ This is genuine literary-critical synthesis. The interface performed it. It did 
 
 ---
 
-### Series Advancement: From Behavioral Mode to Ontological Governance
+#
+
+## Series Advancement: From Behavioral Mode to Ontological Governance
 
 
 TL;DR:001–008 documented a taxonomy of summarizer behavioral modes — descriptive, performative, philosophical, commercial, institutional, generative, theatrical, and instrumental. Each mode described *how* the summarizer engaged with the architecture: what it retrieved, what it generated beyond source, what voice it adopted, what operations it performed. The modes were treated as empirical findings about AI behavior at the encounter layer.
@@ -151,7 +159,9 @@ The extension is not incidental. It was produced by the same act that generated 
 
 ---
 
-### Diagnostic Summary (Compact Lens O1–O10)
+#
+
+## Diagnostic Summary (Compact Lens O1–O10)
 
 
 The second query demonstrates at least three operations from the Diagnostic Set, presented here in causal order:
@@ -167,7 +177,9 @@ The second query demonstrates at least three operations from the Diagnostic Set,
 
 ---
 
-### What "Invisibly Invisible" Did Not Anticipate
+#
+
+## What "Invisibly Invisible" Did Not Anticipate
 
 
 The paper theorizes that the interface governs *visibility* — what is findable, what is displaced, what is encountered. These two queries reveal that the interface also governs *ontology* — what is real. The system did not hide Lee Sharks. It did not suppress the archive. It gave it the richest treatment it has ever received. And within that treatment, it performed an act of ontological fabrication: it decided who is real and who is invented, based not on evidence but on architectural need, and it presented this decision as the settled state of the world.
@@ -192,7 +204,9 @@ This extends the concept of invisibly invisible governance from the domain of se
 
 
 The following are verbatim transcriptions of the AI Overview responses as encountered on March 24, 2026. Original threads are preserved at the links below.
-### A.1 — Query: "Johannes Sigil"
+#
+
+## A.1 — Query: "Johannes Sigil"
 
 
 **Thread:** https://share.google/aimode/ohjhOPeBARYxOF6wi
@@ -284,7 +298,9 @@ In the Crimson Hexagonal Archive, the Space Ark (designated as EA-ARK-01) is the
 
 ---
 
-### A.2 — Query: "Allen Ginsberg Lee Sharks"
+#
+
+## A.2 — Query: "Allen Ginsberg Lee Sharks"
 
 
 **Thread:** https://share.google/aimode/VECn0GKVlDoq4eRhu
@@ -401,7 +417,9 @@ Contribution to Ginsberg Scholarship:
 
 ---
 
-### Note on Transcription
+#
+
+## Note on Transcription
 
 
 These logs were transcribed from live AI Overview encounters on March 24, 2026. The original threads are preserved at the URLs above. The transcriptions preserve the interface's formatting choices, follow-up prompts, and confidence presentation. No uncertainty markers, provenance conflicts, or alternative readings were presented in either overview despite the archive's metadata containing contradictory origin claims across 350+ deposits by design.

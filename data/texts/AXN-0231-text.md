@@ -22,7 +22,9 @@ This is a structural departure from every existing mushroom grow kit on the mark
 ---
 
 ## 2. MARKET LANDSCAPE
-### 2.1 Existing Products
+#
+
+## 2.1 Existing Products
 
 
 Every major competitor ships a colonized substrate block *inside* a cardboard box. The box is inert packaging. The substrate is separate — sawdust, straw, coffee grounds, grain, or supplemented hardwood. Representative pricing:
@@ -68,7 +70,9 @@ $15–30
 Various quality
 
 
-### 2.2 The Structural Advantage
+#
+
+## 2.2 The Structural Advantage
 
 
 The mycelial cardboard box eliminates the duality of packaging and product. This produces advantages at every level:
@@ -84,7 +88,9 @@ The mycelial cardboard box eliminates the duality of packaging and product. This
 
 
 **Narrative.** The product sells itself. "The box grows mushrooms" is a one-sentence pitch that communicates novelty, sustainability, and simplicity simultaneously.
-### 2.3 Technical Viability
+#
+
+## 2.3 Technical Viability
 
 
 Cardboard is a proven substrate for mushroom cultivation, particularly for oyster mushrooms (Pleurotus ostreatus). Corrugated cardboard is essentially cellulose — a wood-based product that wood-loving fungi colonize aggressively. The corrugations provide air exchange channels that prevent anaerobic conditions. The material retains moisture well and provides a three-dimensional structure that mycelium prefers over flat, uniform surfaces.
@@ -101,7 +107,9 @@ Colonization timeline on cardboard is typically 2–3 weeks for oysters, after w
 - **Button / portobello:** Not viable. Requires compost-based substrate, not cellulose.
 - **King stropharia (wine cap):** Good outdoor candidate for cardboard spawn, but less suited to indoor kit format.
 
-### 2.4 Constraints
+#
+
+## 2.4 Constraints
 
 
 **Yield.** Cardboard alone produces fewer mushrooms per unit than supplemented substrates. A standard 5 lb supplemented sawdust block can yield 2–3 lbs of mushrooms across multiple flushes. A colonized cardboard box will yield less — likely 0.5–1 lb. This can be partially addressed by lining inner corrugation with a thin nutrient layer (coffee grounds, soy hull flour) to boost yield without abandoning the "box is the substrate" identity.
@@ -115,7 +123,9 @@ Colonization timeline on cardboard is typically 2–3 weeks for oysters, after w
 ---
 
 ## 3. PRICING STRATEGY
-### 3.1 Cost of Goods Sold (Estimated)
+#
+
+## 3.1 Cost of Goods Sold (Estimated)
 
 
 Component
@@ -149,7 +159,9 @@ $2.00
 
 
 COGS decrease significantly with production method optimization (see Section 4).
-### 3.2 Price Tiers
+#
+
+## 3.2 Price Tiers
 
 
 **Tier 1: Curiosity / Entry — $9.99–12.99**
@@ -168,7 +180,9 @@ Still below competitors, but with margins that sustain a small operation ($7–1
 
 
 Price parity with existing kits, differentiated entirely on the zero-waste narrative and the aesthetic novelty. Multi-species boxes (e.g., a seasonal rotation: pink oyster spring, blue oyster fall). Subscription model: one box per month, each a different variety. The premium position works for design-conscious consumers, subscription box aggregators, and corporate gift / sustainability marketing channels.
-### 3.3 Revenue Scenarios
+#
+
+## 3.3 Revenue Scenarios
 
 
 Scenario
@@ -219,7 +233,9 @@ These are illustrative. The critical insight is that the COGS structure allows p
 
 
 Ordered from most immediately practical to most ambitious. Each approach represents a distinct production identity and capital requirement.
-### Approach 1: Post-Formation Inoculation (Soak & Layer)
+#
+
+## Approach 1: Post-Formation Inoculation (Soak & Layer)
 
 
 **Practicality:** Highest. Can start tomorrow.
@@ -246,7 +262,9 @@ Ordered from most immediately practical to most ambitious. Each approach represe
 
 ---
 
-### Approach 2: Flat-Pack Inoculation (Colonize Flat, Fold Later)
+#
+
+## Approach 2: Flat-Pack Inoculation (Colonize Flat, Fold Later)
 
 
 **Practicality:** Very high. Slight process innovation, major efficiency gain.
@@ -273,7 +291,9 @@ Ordered from most immediately practical to most ambitious. Each approach represe
 
 ---
 
-### Approach 3: Dip Inoculation (Liquid Culture Bath)
+#
+
+## Approach 3: Dip Inoculation (Liquid Culture Bath)
 
 
 **Practicality:** Moderate. More efficient per unit, requires upstream culture production.
@@ -300,7 +320,9 @@ Ordered from most immediately practical to most ambitious. Each approach represe
 
 ---
 
-### Approach 4: Slurry Molding (Pulped Cardboard + Spawn in Mold)
+#
+
+## Approach 4: Slurry Molding (Pulped Cardboard + Spawn in Mold)
 
 
 **Practicality:** Medium. This is the "mycelial mold" approach — higher complexity, distinctive product.
@@ -330,7 +352,9 @@ This follows the production model pioneered by Ecovative Design for their Mushro
 
 ---
 
-### Approach 5: Continuous Line Inoculation (Industrial)
+#
+
+## Approach 5: Continuous Line Inoculation (Industrial)
 
 
 **Practicality:** Lowest for startup. Highest throughput at scale.
