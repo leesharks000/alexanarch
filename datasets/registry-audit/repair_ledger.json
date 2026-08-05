@@ -29579,6 +29579,21 @@
    "operator": "TACHYON",
    "date": "2026-08-04",
    "wave": "GENRE-DIR"
+  },
+  {
+   "repair_id": "R-1206",
+   "deposit_number": null,
+   "batch": true,
+   "records": [
+    833,
+    1090,
+    1165
+   ],
+   "type": "CRITICAL_REDACTION",
+   "basis": "LEGAL-NAME EXPOSURE FOUND AND REDACTED. While inspecting #1165 at MANUS's direction, the canonical text was found to contain the legal name inside pandoc-preserved local file paths in image references — 'Macintosh HD:Users:<name>:Pictures:iPhoto Library:…' — carried in by the .docx conversion that produced these bodies. Corpus-wide scan: 3 records (#1165, #833, #1090), 5 files, 3 live pages. All redacted to [REDACTED]; prior byte shas retained per record. This is the archive's most absolute standing rule (the legal name never appears in any public-facing output, deposit, metadata or document) and it overrides the non-destruction preference for bytes. A permanent guard is added to the conformance gate so no future conversion can reintroduce it.",
+   "operator": "TACHYON",
+   "date": "2026-08-04",
+   "wave": "LEGAL-NAME-REDACTION"
   }
  ]
 }

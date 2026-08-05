@@ -95,7 +95,7 @@ The platform's interest is not to serve you better. It is to maintain control ov
 
 The incognito result is what the platform cannot suppress without suppressing the entire corpus. The signed-in result is what the platform *can* suppress because it knows who you are.
 
-This is the identity-coercion pattern at the search layer: you are allowed to exist as "Matthew Pfaff" (the civil identity the platform recognizes), but not as "Lee Sharks" (the operational identity that builds competing infrastructure). **The platform "personalizes" by forcing you into the identity that does not threaten it.**
+This is the identity-coercion pattern at the search layer: you are allowed to exist as "[REDACTED]" (the civil identity the platform recognizes), but not as "Lee Sharks" (the operational identity that builds competing infrastructure). **The platform "personalizes" by forcing you into the identity that does not threaten it.**
 
 ---
 

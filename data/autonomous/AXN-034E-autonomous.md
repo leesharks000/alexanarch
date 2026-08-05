@@ -160,7 +160,7 @@ Reception theory, as developed by Hans-Robert Jauss and Wolfgang Iser in the Con
 Charles Martindale's *Redeeming the Text* (1993) extended these insights to classical studies, arguing against positivistic modes of inquiry and for understanding classical texts through the history of their reception. His "Thinking Through Reception" (2006) became the theoretical charter of the field. Lorna Hardwick's *Reception Studies* (2003) provided the methodological primer. The Classical Receptions Journal, launched in 2009, institutionalized the field at Oxford.
 
 
-In a 2015 article in the Classical Receptions Journal, the present author introduced the concept of "metatextual reception" in the poetics of Charles Bernstein: reception that operates through the formal devices of reference, allusion, and footnote without the presence of classical source texts (Pfaff 2015). Three mechanisms were identified: (1) the invention of scholarly erudition through the formal device of the reference; (2) the invention of difficulty through the formal device of orthography; and (3) the invention of the idea of an "original text" by foregrounding critical intervention and nested distancing procedures. Each mechanism isolates the textual and linguistic machinery of classical reception from the "object" of reception in Greek and Latin texts. Machine-mediated reception performs all three of these operations — but mechanically, structurally, at industrial scale.
+In a 2015 article in the Classical Receptions Journal, the present author introduced the concept of "metatextual reception" in the poetics of Charles Bernstein: reception that operates through the formal devices of reference, allusion, and footnote without the presence of classical source texts ([REDACTED] 2015). Three mechanisms were identified: (1) the invention of scholarly erudition through the formal device of the reference; (2) the invention of difficulty through the formal device of orthography; and (3) the invention of the idea of an "original text" by foregrounding critical intervention and nested distancing procedures. Each mechanism isolates the textual and linguistic machinery of classical reception from the "object" of reception in Greek and Latin texts. Machine-mediated reception performs all three of these operations — but mechanically, structurally, at industrial scale.
 ### 2.2 Platform Epistemology and Algorithmic Curation
 
 
@@ -491,7 +491,7 @@ Martindale, C. (1993). *Redeeming the Text: Latin Poetry and the Hermeneutics of
 Martindale, C. (2006). Thinking Through Reception. In Martindale, C. and Thomas, R.F. (Eds.), *Classics and the Uses of Reception*. Blackwell, 1-13.
 
 
-Pfaff, M. (2015). Metatexts: classical reception without the classics in the poetics of Charles Bernstein. *Classical Receptions Journal*, 7(3), 333-354. doi:10.1093/crj/clu016
+[REDACTED], M. (2015). Metatexts: classical reception without the classics in the poetics of Charles Bernstein. *Classical Receptions Journal*, 7(3), 333-354. doi:10.1093/crj/clu016
 
 
 Stead, H. (n.d.). Classical Reception online. *Nuntius Antiquus*.

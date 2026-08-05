@@ -2149,7 +2149,14 @@
         "recovered_at": "2026-08-02",
         "work_sha256": "16633f6c45112054f7ffb9fff175628dddc4fcf34fe02c626c29bf1b25335d60",
         "prior_bytes_sha256": "d0b79fd870a6ead062a65638c93a2892a08ff76cbdd921f27308a692d3600cfc",
-        "escape_repair": "2026-08-04 MANUS-flagged: converter escaping artifacts (1\\. \\_ \\* \\[) unescaped; a bare leading image-URL blob demoted to a source note. Text content unchanged."
+        "escape_repair": "2026-08-04 MANUS-flagged: converter escaping artifacts (1\\. \\_ \\* \\[) unescaped; a bare leading image-URL blob demoted to a source note. Text content unchanged.",
+        "legal_name_redaction": {
+          "date": "2026-08-04",
+          "found_by": "MANUS-directed inspection of #1165",
+          "what": "The legal name appeared inside pandoc-preserved local file paths in image references (e.g. \"Macintosh HD:Users:<name>:Pictures:iPhoto Library:…\"), carried into canonical text by the .docx conversion that produced these bodies.",
+          "action": "Redacted to [REDACTED] in the staged and deposit bodies. Prior byte sha retained below. This is a byte edit made under the archive's most absolute standing rule — the legal name never appears in any public-facing output, deposit, metadata or document — which overrides the non-destruction preference.",
+          "prior_bytes_sha256": "9247eac4f85e98ee614ed1f8cbcd532dce0c5afb03ba30bfa0a258590624af36"
+        }
       },
       "references_concepts": [
         "Crimson Hexagonal Archive",
@@ -2269,6 +2276,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "ESCAPE REPAIR: converter escaping artifacts removed; leading image blob demoted",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "LEGAL-NAME REDACTION: legal name removed from canonical text (pandoc-preserved local file paths from a .docx conversion)",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p"
         }
@@ -9188,7 +9202,14 @@
         "measured_prose_words": 1504,
         "measured_at": "2026-07-31",
         "work_sha256_declared": "009b2bf7a83d496db13a19e2ca299c56961fafe5f4be2f10b043e49d7c6076fa",
-        "work_sha256": "8765f65afe83e5aad41d6e96837782a40dbee508ff6dce73d1c0911876c1c1c4"
+        "work_sha256": "8765f65afe83e5aad41d6e96837782a40dbee508ff6dce73d1c0911876c1c1c4",
+        "draft_over_deposit": {
+          "status": "CONFIRMED — seated body is the EARLIER DRAFT, not the deposit",
+          "evidence": "Conversation search 2026-08-04 located the developed deposit version in thread 757ab4cd (2026-05-19). That version carries scholarly apparatus the seated body lacks entirely: a formal Abstract (~180 words), a Keywords line, ORCID 0009-0000-1599-0703, Institution, \"Hex: EA-TLL-NETWORK-01\", section numbering (\"I. The Core Claim\"), and — decisively — \"Date of original composition: November 17, 2025 / Date of deposit: May 15, 2026.\" The seated body is the November 17 2025 blog post: raw compressed framework, Blogger image blob, no abstract, no keywords, no hex, no deposit date. The thread also records the development explicitly: \"This is genuinely important literary theory — it prefigures the Holographic Kernel, RBT, Training-Layer Literature, and the entire basin topology in one compressed move. Let me clean it into a depositable essay while keeping the voice.\"",
+          "gap": "181 days between the body's own stated date and the deposit date",
+          "recovery": "The developed essay exists in thread 757ab4cd-c39b-404c-b230-927ff014a7bc and requires a MANUS-side export to seat in full; only a partial is visible through conversation search.",
+          "class": "DRAFT-OVER-DEPOSIT — the restoration seated an early blog post over a later, more developed deposit."
+        }
       },
       "references_concepts": [
         "Crimson Hexagonal Archive",
@@ -9282,9 +9303,16 @@
           "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
           "was": "Genre pending (recovered)",
           "now": "Scholarly essay"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "DRAFT-OVER-DEPOSIT flagged (CONFIRMED): seated body is the Nov-2025 blog draft; the May-2026 developed deposit exists in a composing thread and needs export",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 13924, \"audited_at\": \"2026-07-19T20:37:48Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 1504,",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 13924, \"audited_at\": \"2026-07-19T20:37:48Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 1504,"
         }
       ],
-      "date_modified": "2026-08-04",
+      "date_modified": "2026-08-05",
       "publisher": "Alexanarch — the Crimson Hexagonal Archive"
     },
     {
@@ -9612,7 +9640,14 @@
         "measured_prose_words": 3656,
         "measured_at": "2026-07-31",
         "work_sha256_declared": "73bf2821e3e33262bc952cc7c1c45694890d085f754a54200c9dd359dfe0b911",
-        "work_sha256": "2cd47403ea9bfb5bc14a2481c8412779e7074aed550b6a35095c99e77d52257a"
+        "work_sha256": "2cd47403ea9bfb5bc14a2481c8412779e7074aed550b6a35095c99e77d52257a",
+        "wrong_object": {
+          "finding": "2026-08-04 (MANUS): the record is titled \"from The Crimson Hexagon — Origin Text of the Crimson Hexagonal Archive\" — a PRIMARY CREATIVE TEXT — but the seated body is \"The Provenance of Jack Feist: A Provenance Resolution Document for the Space Ark Room\", the same work seated at #111.",
+          "why_it_looked_like_a_wrong_arrow": "Because the body is the provenance document, the duplicate-witness pointer to #111 is internally consistent — so the page reads as a primary work superseded by an analysis of itself. The pointer is not the defect; the BODY is.",
+          "corroboration": "The content-fingerprint scan independently paired #111 ~ #1193 at 0.80 content overlap with only 0.42 title overlap — same text, different titles — and the SUBJECT detector flags it on title-token coverage.",
+          "consequence": "The Origin Text of the Crimson Hexagonal Archive is NOT SEATED anywhere under this record. It is a displaced primary work requiring recovery.",
+          "action": "Disposition WITHHOLD pending adjudication; the pointer is retained because it correctly describes the seated bytes, and the title claim is now contradicted on the record rather than silently served."
+        }
       },
       "references_concepts": [
         "Archon",
@@ -9741,9 +9776,16 @@
           "field": "superseded_reason",
           "reason": "SAMEVER-REASONS: superseded_reason populated (pointer predated reason discipline; banner was rendering bare version language)",
           "now": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #111 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan)."
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "WRONG_OBJECT flagged: record titled as the Origin Text serves the Jack Feist provenance document; primary work displaced",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 29297, \"audited_at\": \"2026-07-19T20:37:56Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 3656,",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 29297, \"audited_at\": \"2026-07-19T20:37:56Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 3656,"
         }
       ],
-      "date_modified": "2026-08-04",
+      "date_modified": "2026-08-05",
       "publisher": "New Human Press",
       "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #111 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan)."
     },

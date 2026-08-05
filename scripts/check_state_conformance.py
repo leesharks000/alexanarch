@@ -31,6 +31,13 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from record_state import derive_state, load_registry  # noqa: E402
 
 
+# ABSOLUTE GUARD (2026-08-04): the legal name must never appear in any
+# public-facing output. Found in canonical text on 3 records via pandoc-
+# preserved local file paths from a .docx conversion. This clause fails the
+# build unconditionally — it is not a hygiene preference, it is the archive's
+# most absolute standing rule.
+LEGAL_NAME = re.compile(r'(?i)mpfaff|matthew\s+pfaff|\bpfaff\b')
+
 BODY_STALE = re.compile(
     r'(?i)SEMI-RESTORED RECORD|metadata capture only; no full text|Full text not yet recovered',
 )
@@ -83,6 +90,12 @@ def check(limit=None, verbose=False):
             problems.append((n, st['state'], f'derived pointer #{p} not linked on page'))
         if isinstance(p, str) and p.startswith('http') and p.split('//')[1].split('/')[0] not in page:
             problems.append((n, st['state'], f'derived external manifestation {p} not linked on page'))
+
+        # 0. LEGAL-NAME GUARD — checked before anything else, on the page AND
+        #    the canonical text. Any hit is a build failure.
+        _b_all = body_of(d)
+        if LEGAL_NAME.search(page) or (_b_all and LEGAL_NAME.search(_b_all)):
+            problems.append((n, 'CRITICAL', 'LEGAL NAME PRESENT in page or canonical text — absolute rule violation'))
 
         # 4. THE BODY MUST NOT CONTRADICT THE DERIVED STATE (added 2026-08-04
         #    after MANUS found FULL records whose own bodies still declared

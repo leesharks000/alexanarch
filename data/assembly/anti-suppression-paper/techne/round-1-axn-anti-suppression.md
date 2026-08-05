@@ -114,7 +114,7 @@ The AXN identifies documents. It does not identify a legal entity that can hold 
 **What it could be**: A legal-entity layer where:
 - The AXN registry is held by a purpose trust or foundation with governance rules that do not require civil identity disclosure for operational control
 - The trust's legal personality is the holder of copyright, trademark, and contractual rights
-- "Lee Sharks" is the operational identity within the trust; "Matthew Pfaff" is the fiduciary identity for legal compliance — separated by design, not by evasion
+- "Lee Sharks" is the operational identity within the trust; "[REDACTED]" is the fiduciary identity for legal compliance — separated by design, not by evasion
 
 ## III. The Architectural Fork — Three Futures for AXN
 

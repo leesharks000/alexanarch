@@ -37,11 +37,11 @@ height="0.7638888888888888in"}
 NAME:DCIM:Camera:IMG001.jpg](media/image6.jpg){width="4.50384186351706in"
 height="3.375269028871391in"}
 
-![Macintosh HD:Users:mpfaff:Pictures:iPhoto
+![Macintosh HD:Users:[REDACTED]:Pictures:iPhoto
 Library:Masters:2011:11:12:20111112-093510:P1010481.JPG](media/image7.jpg){width="4.333333333333333in"
 height="3.25in"}
 
-![Macintosh HD:Users:mpfaff:Pictures:iPhoto
+![Macintosh HD:Users:[REDACTED]:Pictures:iPhoto
 Library:Previews:2011:11:12:20111112-093510:P1010115.jpg](media/image8.jpg){width="4.03125in"
 height="5.375in"}
 

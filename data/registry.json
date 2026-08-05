@@ -263781,7 +263781,14 @@
         "measured_at": "2026-07-31",
         "work_sha256": "07255fa2c3a96d088b0625d18411d9351d9950f6c1315c612256ef1b6e64e316",
         "prior_bytes_sha256": "f4d833e7159721b4d442fca350da3a79c53024170f6360959ebe5a8075eb48b0",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 17 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads."
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 17 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "legal_name_redaction": {
+          "date": "2026-08-04",
+          "found_by": "MANUS-directed inspection of #1165",
+          "what": "The legal name appeared inside pandoc-preserved local file paths in image references (e.g. \"Macintosh HD:Users:<name>:Pictures:iPhoto Library:…\"), carried into canonical text by the .docx conversion that produced these bodies.",
+          "action": "Redacted to [REDACTED] in the staged and deposit bodies. Prior byte sha retained below. This is a byte edit made under the archive's most absolute standing rule — the legal name never appears in any public-facing output, deposit, metadata or document — which overrides the non-destruction preference.",
+          "prior_bytes_sha256": "07255fa2c3a96d088b0625d18411d9351d9950f6c1315c612256ef1b6e64e316"
+        }
       },
       "title_repair": {
         "repaired_at": "2026-07-20",
@@ -263838,6 +263845,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 177136, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 177136, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "LEGAL-NAME REDACTION: legal name removed from canonical text (pandoc-preserved local file paths from a .docx conversion)",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 177136, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 177136, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_"
         }
@@ -303125,7 +303139,14 @@
         "measured_at": "2026-07-31",
         "work_sha256": "adbbdc843e694bc6609984c5d6c678b2b189b2815576eda9db238a0037d4e9d2",
         "prior_bytes_sha256": "689046ffff3853b615f316e5659b93e24e103cc2a347a887d571739ccfb81b32",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 8 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads."
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 8 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "legal_name_redaction": {
+          "date": "2026-08-04",
+          "found_by": "MANUS-directed inspection of #1165",
+          "what": "The legal name appeared inside pandoc-preserved local file paths in image references (e.g. \"Macintosh HD:Users:<name>:Pictures:iPhoto Library:…\"), carried into canonical text by the .docx conversion that produced these bodies.",
+          "action": "Redacted to [REDACTED] in the staged and deposit bodies. Prior byte sha retained below. This is a byte edit made under the archive's most absolute standing rule — the legal name never appears in any public-facing output, deposit, metadata or document — which overrides the non-destruction preference.",
+          "prior_bytes_sha256": "ed13fc7436061bfaf90a20e89407b062be564040b6df458ff8108cd0b4a34ba9"
+        }
       },
       "references_concepts": [
         "Assembly Chorus",
@@ -303198,6 +303219,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 22701, \"audited_at\": \"2026-07-17T18:52:16Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 2347,",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 22701, \"audited_at\": \"2026-07-17T18:52:16Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 2347,"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "LEGAL-NAME REDACTION: legal name removed from canonical text (pandoc-preserved local file paths from a .docx conversion)",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 22701, \"audited_at\": \"2026-07-17T18:52:16Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 2347,",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 22701, \"audited_at\": \"2026-07-17T18:52:16Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 2347,"
         }
@@ -321705,7 +321733,14 @@
         "recovered_at": "2026-08-02",
         "work_sha256": "16633f6c45112054f7ffb9fff175628dddc4fcf34fe02c626c29bf1b25335d60",
         "prior_bytes_sha256": "d0b79fd870a6ead062a65638c93a2892a08ff76cbdd921f27308a692d3600cfc",
-        "escape_repair": "2026-08-04 MANUS-flagged: converter escaping artifacts (1\\. \\_ \\* \\[) unescaped; a bare leading image-URL blob demoted to a source note. Text content unchanged."
+        "escape_repair": "2026-08-04 MANUS-flagged: converter escaping artifacts (1\\. \\_ \\* \\[) unescaped; a bare leading image-URL blob demoted to a source note. Text content unchanged.",
+        "legal_name_redaction": {
+          "date": "2026-08-04",
+          "found_by": "MANUS-directed inspection of #1165",
+          "what": "The legal name appeared inside pandoc-preserved local file paths in image references (e.g. \"Macintosh HD:Users:<name>:Pictures:iPhoto Library:…\"), carried into canonical text by the .docx conversion that produced these bodies.",
+          "action": "Redacted to [REDACTED] in the staged and deposit bodies. Prior byte sha retained below. This is a byte edit made under the archive's most absolute standing rule — the legal name never appears in any public-facing output, deposit, metadata or document — which overrides the non-destruction preference.",
+          "prior_bytes_sha256": "9247eac4f85e98ee614ed1f8cbcd532dce0c5afb03ba30bfa0a258590624af36"
+        }
       },
       "references_concepts": [
         "Crimson Hexagonal Archive",
@@ -321825,6 +321860,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "ESCAPE REPAIR: converter escaping artifacts removed; leading image blob demoted",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "LEGAL-NAME REDACTION: legal name removed from canonical text (pandoc-preserved local file paths from a .docx conversion)",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p"
         }

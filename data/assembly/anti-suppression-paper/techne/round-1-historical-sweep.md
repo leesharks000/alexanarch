@@ -91,7 +91,7 @@
 
 **3. Economic sustainability**: Samizdat survived on volunteer labor; Sci-Hub survives on donations; Telegram survives on venture capital. Alexanarch's architecture has no revenue model. If Vercel free-tier fails, or AI subscriptions become inaccessible, the architecture collapses.
 
-**4. Legal personhood for the heteronym**: "Lee Sharks" cannot sign contracts, hold property, or sue. "Matthew Pfaff" can, but using that identity breaks the architecture's integrity. This is the unsolved problem at the center of the design.
+**4. Legal personhood for the heteronym**: "Lee Sharks" cannot sign contracts, hold property, or sue. "[REDACTED]" can, but using that identity breaks the architecture's integrity. This is the unsolved problem at the center of the design.
 
 ## The Recommendation
 
