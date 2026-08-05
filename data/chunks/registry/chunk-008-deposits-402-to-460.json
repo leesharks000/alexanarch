@@ -10283,7 +10283,7 @@
       ],
       "full_text_path": "/data/texts/AXN-00FB-text.md",
       "full_text_chars": 5139,
-      "wiki_article": "**APPLICATION HOLD.**\n\nNo wiki article can be responsibly generated for record #436 from the pinned body because the body is a different later work. Any wiki derived from it would overwrite the identity of *ΦΑΙΝΕΤΑΙ ΜΟΙ* with the identity of its July 2026 erratum-to-the-erratum.\n\nAfter body restoration, the #436 wiki should be reconstructed from the actual poem/reconstruction, its APZPZ C status, the Sappho 31 transmission, and its relation to Catullus 51. The erratum may then be linked as a later methodological clarification, not treated as the original work.",
+      "wiki_article": "**APZPZ C: ΦΑΙΝΕΤΑΙ ΜΟΙ — Sappho 31 with the Reconstructed Stanza** is a record **WITHHELD** as a confirmed wrong-object mismatch.\n\nThe record claims the third panel of the APZPZ Sappho set — the Cranes edition carrying the **reconstructed fifth stanza**, completing the sequence with #1309 (Greek only) and #1310 (the English translation). **Its seated body is the content of deposit #1048**, a different work entirely: the body opens with #436's own frontmatter and then serves #1048's block.\n\n**The work is displaced.** A prior audit had already flagged the record — its description carried the warning *\"NO SAFE REPLACEMENT FOR RECORD #436. The current body must not be used to describe the registry work. Restore or identify the original AXN-00FB\"* — but the record remained ACTIVE and typed as full, so the wrong body was served as though complete until 5 August 2026.\n\n**A note on the title.** It reads \"Reconstructed Fourth Stanza,\" which **EA-ERRATA-SAPPHO31-01 (#201) corrects**: Sappho 31 survives in four complete stanzas (Longinus, *On the Sublime* 10.2), and the Cranes reconstruction adds a **fifth** — derived by operator inversion of Catullus 51's fourth, the *otium* coda. Catullus 51 has four stanzas; there is no Catullus fifth. The deposited title stands under non-destruction and the corrected numbering is used in all archive apparatus.",
       "entities": [
         {
           "subject": "APZPZ C",
@@ -10381,7 +10381,21 @@
           "open_audit_directive": "Seat Rebekah Cranes as editor/translator, type the object as a critical edition / reconstructed translation, and resolve the CC BY 4.0 versu"
         },
         "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 10 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
-        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write.",
+        "title_erratum": {
+          "authority": "EA-ERRATA-SAPPHO31-01 (#201), 14 June 2026",
+          "issue": "The deposited title reads \"Sappho 31 with Reconstructed Fourth Stanza.\" The numbering is incorrect: Sappho 31 survives in FOUR complete stanzas (Longinus, On the Sublime 10.2), and the Cranes reconstruction adds a FIFTH.",
+          "derivation": "MANUS 2026-08-05: the reconstructed fifth is derived by OPERATOR INVERSION of Catullus 51's fourth (otium) stanza. Catullus 51 has four stanzas; its fourth transforms Sappho's fifth. There is no \"Catullus fifth stanza.\"",
+          "disposition": "The title is the work's deposited name and stands under non-destruction. The erratum is recorded here and the corrected numbering is used in the description, the wiki article and all archive apparatus."
+        },
+        "wrong_object": {
+          "found": "2026-08-05, following MANUS's correction of the stanza numbering",
+          "record_claims": "APZPZ C: ΦΑΙΝΕΤΑΙ ΜΟΙ — Sappho 31 with the reconstructed stanza (Cranes)",
+          "seated_body_is": "the frontmatter and content of deposit #1048 (AXN:0424.GOVERNANCE) — a different work entirely. The body opens \"deposit_number: 436 hex: 00FB\" and then immediately serves #1048's block.",
+          "prior_audit": "The description field already carried an audit warning: \"NO SAFE REPLACEMENT FOR RECORD #436. The current body must not be used to describe the registry work. Restore or identify the original AXN-00FB.\" The warning stood while the record remained ACTIVE and class=full, so the wrong body was being served as though complete.",
+          "consequence": "APZPZ C — the deposit carrying the reconstructed FIFTH stanza of Sappho 31, the panel completing the APZPZ Sappho set with #1309 (Greek only) and #1310 (Cranes translation) — is DISPLACED and not seated anywhere under this record.",
+          "action": "WITHHELD pending recovery of the original AXN-00FB body. Seated bytes retained under non-destruction."
+        }
       },
       "title_repair_log": [
         {
@@ -10462,6 +10476,20 @@
           "reason": "DW-028 intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
           "was": "THIS IS A PURE APZPZ. PASTE THE FOLLOWING INTO THE ZENODO DESCRIPTION FIELD. ATTACH ZERO FILES. BACK UP NOWHERE.",
           "now": "**NO SAFE REPLACEMENT FOR RECORD #436.**\n\nThe current body must not be used to describe the registry work. Restore or identify the original `AXN-00FB` body for *APZPZ C: ΦΑΙΝΕΤΑΙ ΜΟΙ* before composing its description. The text presently mounted at the path should instead remain associated with deposit #1048 / AXN `0424`, where its subject is the stable formulation “Sappho 31’s lost fifth stanza, reconstructed through Catullus 51’s fourth-stanza transform-site.”"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "TITLE ERRATUM recorded: the deposited title carries the superseded \"fourth stanza\" numbering; EA-ERRATA-SAPPHO31-01 corrects it to the fifth. Title stands under non-destruction; apparatus uses the corrected numbering.",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 4608, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_wo",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 4608, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_wo"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "WRONG_OBJECT: #436 serves #1048's content under the APZPZ C title; the reconstructed-fifth-stanza work is displaced. Withheld. Found on the trail of MANUS's stanza-numbering correction.",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 4608, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_wo",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 4608, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_wo"
         }
       ],
       "date_modified": "2026-08-05",
