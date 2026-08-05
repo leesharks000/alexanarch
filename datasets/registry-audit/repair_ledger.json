@@ -28216,6 +28216,39 @@
    "operator": "TACHYON",
    "date": "2026-08-04",
    "wave": "AUDIT-RECOVER-1-CORR"
+  },
+  {
+   "repair_id": "R-1182",
+   "deposit_number": null,
+   "batch": true,
+   "records": [
+    436,
+    1132,
+    1330,
+    1348,
+    1372
+   ],
+   "count": 5,
+   "basis": "BODY-HEAD VERSION GATE applied across all 54 blog/source-recovered records (MANUS practice note 2026-08-04: 'my practice on the blog was sometimes to overwrite body text of an earlier version, trusting zenodo's versioning system, and sometimes forget to overwrite the title with version in post title' — therefore the POST TITLE MAY BE STALE and the in-body head declaration governs). 5 versions corrected from the recovered body's own head declaration (doc-code line, Version: line, or versioned heading), 6 already agreed, 43 carry no head declaration. Each carries version_basis with the prior registry claim and the practice-note basis. NOTE: the original 2026-07-19 restoration protocol already ran a BODY-HEAD gate on titles; the recovery waves of 2026-08-04 did NOT inherit it and were matching post titles only — gate now retrofitted and made standing.",
+   "operator": "TACHYON",
+   "date": "2026-08-04",
+   "wave": "BODY-HEAD-GATE"
+  },
+  {
+   "repair_id": "R-1183",
+   "deposit_number": 941,
+   "axn": "AXN:03B9.OPERATIVE.👇🍄🏰⊗🌕💚",
+   "changes": [
+    {
+     "field": "status",
+     "before": "ACTIVE",
+     "after": "SUPERSEDED"
+    }
+   ],
+   "basis": "CROSS-SURFACE SYNC AUDIT (MANUS: 'are we fixing their representation across all fields... including the banners'): #941 carried superseded_by=942 WITH a reason, but status ACTIVE — and the renderer gates the banner on status, so the relation existed in data and was invisible on the page. Sole instance corpus-wide.",
+   "operator": "TACHYON",
+   "date": "2026-08-04",
+   "wave": "SYNC"
   }
  ]
 }
