@@ -99,7 +99,23 @@ def check(limit=None, verbose=False):
             if b and BODY_STALE.search(b) and 'was FALSE' not in b and not _about_class:
                 problems.append((n, st['state'], 'BODY declares a stale capture status contradicting the derived state'))
 
-        # 5. OAI agreement
+        # 5. PDF freshness — a byte repair that does not rebuild the PDF leaves
+        #    a machine-and-human facing artifact serving the OLD text. Found
+        #    2026-08-04: 758 PDFs older than their own bodies after the byte
+        #    repair waves. MANUS asked whether repairs hit both surfaces; they
+        #    did not.
+        import time as _t
+        _hex = (d.get('hex') or '').zfill(4)
+        _pdf = f'papers/AXN-{_hex}.pdf'
+        _body = None
+        for _bp in (f'data/texts/AXN-{d.get("hex")}-text.md', f'data/deposits/AXN-{d.get("hex")}.md'):
+            if os.path.exists(_bp):
+                _body = _bp
+                break
+        if _body and os.path.exists(_pdf) and os.path.getmtime(_pdf) < os.path.getmtime(_body) - 60:
+            problems.append((n, st['state'], 'PDF stale — older than the body it renders'))
+
+        # 6. OAI agreement
         r = oi.get(n)
         if r is not None:
             if r.get('state') != st['state']:

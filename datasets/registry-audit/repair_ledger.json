@@ -29449,6 +29449,16 @@
    "operator": "TACHYON",
    "date": "2026-08-04",
    "wave": "ESCAPE+SUBJECT-GATE"
+  },
+  {
+   "repair_id": "R-1201",
+   "deposit_number": null,
+   "batch": true,
+   "type": "SURFACE_AUDIT",
+   "basis": "SURFACE-COVERAGE AUDIT (MANUS question). Tested three repaired records against every consumer surface. IN SYNC: static record pages, registry chunks (JS browse), browse-index, OAI index (#1356's OAI absence is correct — WITHHOLD is gated). OUT OF SYNC: PDFs — 758 of 1,422 older than the bodies they render, because every byte-repair wave today rebuilt pages and indices but not the PDF layer. PDFs are both human-facing (download) and machine-facing (citation_pdf_url). Rebuild executed; PDF freshness added as a clause to check_state_conformance.py so the gap cannot recur silently.",
+   "operator": "TACHYON",
+   "date": "2026-08-04",
+   "wave": "SURFACE-AUDIT"
   }
  ]
 }
