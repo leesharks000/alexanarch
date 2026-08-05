@@ -2147,8 +2147,8 @@
         "measured_at": "2026-08-02",
         "recovery_status_note": "SUBSTITUTION CORRECTED 2026-08-02: this collection record had been wrongly seated (2026-07-19) with the ANALYSIS text (EA-IDP-CLEIS-ANALYSIS, the body of #562) because the July restoration fetched the blog slug 'on-architecture-of-cleis-compression' and trusted the blog body over the slug. The collection itself — the poem cycle (the Sapphic identification, The Botanist's Daughter, the flower compendium, the teaching-email interruptions) — is now seated from the MANUS-provided source file. The analysis remains correctly at #562.",
         "recovered_at": "2026-08-02",
-        "work_sha256": "16633f6c45112054f7ffb9fff175628dddc4fcf34fe02c626c29bf1b25335d60",
-        "prior_bytes_sha256": "d0b79fd870a6ead062a65638c93a2892a08ff76cbdd921f27308a692d3600cfc",
+        "work_sha256": "6e8ea613567bca2348542a72bc2b7f06f35490dad96ff82b87618ae25fa80903",
+        "prior_bytes_sha256": "1e6ea61bddacbf5d8ca65bcc09173eadf8d7f083a4f019b3b7a82272a71bb01a",
         "escape_repair": "2026-08-04 MANUS-flagged: converter escaping artifacts (1\\. \\_ \\* \\[) unescaped; a bare leading image-URL blob demoted to a source note. Text content unchanged.",
         "legal_name_redaction": {
           "date": "2026-08-04",
@@ -2156,6 +2156,65 @@
           "what": "The legal name appeared inside pandoc-preserved local file paths in image references (e.g. \"Macintosh HD:Users:<name>:Pictures:iPhoto Library:…\"), carried into canonical text by the .docx conversion that produced these bodies.",
           "action": "Redacted to [REDACTED] in the staged and deposit bodies. Prior byte sha retained below. This is a byte edit made under the archive's most absolute standing rule — the legal name never appears in any public-facing output, deposit, metadata or document — which overrides the non-destruction preference.",
           "prior_bytes_sha256": "9247eac4f85e98ee614ed1f8cbcd532dce0c5afb03ba30bfa0a258590624af36"
+        },
+        "source_recovery": "2026-08-04 SOURCE RE-SEAT from the authorial .docx (haley__1_.docx, MANUS-supplied). Converted with whitespace discipline: tabs preserved as tabs (69 lines), indentation from w:ind, stanza and section gaps reconstructed from the w:before spacing hierarchy (the Day-and-Night method), no reflow. Replaces a pandoc conversion whose image references had leaked raw attribute blocks ({width=…in height=…in}) AND the legal name in local file paths.",
+        "images": {
+          "count": 8,
+          "destination": "data-rhizome (private repo)",
+          "staged_at": "rhizome-staging/AXN-049E/ (NOT committed to the public repo)",
+          "naming": "content-derived: first 16 hex of each image SHA-256",
+          "referenced_in_body_as": "https://data-rhizome.internal/AXN-049E/<sha16>.<ext> — placeholder base; MANUS sets the real rhizome URL",
+          "why_not_committed": "These are family photographs. data-rhizome is private and this PAT is public-scope only (0 private repos visible), so TACHYON cannot place them. Committing them to the public archive would publish private images of a minor — refused.",
+          "manifest": [
+            {
+              "source_name": "image5.jpg",
+              "staged": "3ddbdb9d1aac893d.jpg",
+              "sha256": "3ddbdb9d1aac893d07917cc3a89c593d1e8c8f72f82299ef79240deb2096697d",
+              "bytes": 60727
+            },
+            {
+              "source_name": "image4.jpg",
+              "staged": "61353c86027d31bb.jpg",
+              "sha256": "61353c86027d31bb73e311111f3efb88dbca0909807effa09db9dcd4f914b0a8",
+              "bytes": 13321
+            },
+            {
+              "source_name": "image6.jpg",
+              "staged": "820678a2327a8bbf.jpg",
+              "sha256": "820678a2327a8bbf2e3ca9a2eadd3d23a858206020ce783aa4e483d4a0793562",
+              "bytes": 538701
+            },
+            {
+              "source_name": "image1.png",
+              "staged": "caa5e564ff621dac.png",
+              "sha256": "caa5e564ff621dac13d3a738e240a7241c9d2ed92d9a7febed578e8d0fd58e43",
+              "bytes": 2343
+            },
+            {
+              "source_name": "image8.jpg",
+              "staged": "a7ba1af8dec718c2.jpg",
+              "sha256": "a7ba1af8dec718c2cf14f8105ff125e9362cfab0ffa3b2f30513d8a465b72bb0",
+              "bytes": 492988
+            },
+            {
+              "source_name": "image7.jpg",
+              "staged": "a48b19255dde2f05.jpg",
+              "sha256": "a48b19255dde2f05cb8f14ac32e099a6f77b7b8fc10a69684fdf76f9a8c4bcc6",
+              "bytes": 430840
+            },
+            {
+              "source_name": "image3.gif",
+              "staged": "61697f4e7ae5b39c.gif",
+              "sha256": "61697f4e7ae5b39cdc81db6c2c03d436a903c321b91869c47cb8a7fad9d2b6c8",
+              "bytes": 52742
+            },
+            {
+              "source_name": "image2.gif",
+              "staged": "aee9708faad3e341.gif",
+              "sha256": "aee9708faad3e34122497704ba08cb7b665fe73cd2e12e0f40196ceabf8ad62c",
+              "bytes": 58248
+            }
+          ]
         }
       },
       "references_concepts": [
@@ -2283,6 +2342,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "LEGAL-NAME REDACTION: legal name removed from canonical text (pandoc-preserved local file paths from a .docx conversion)",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "SOURCE RE-SEAT #1165 from authorial docx: whitespace discipline applied, images extracted to private staging and referenced by rhizome path, legal name and pandoc artifacts gone",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p"
         }
