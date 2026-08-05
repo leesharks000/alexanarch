@@ -1009,7 +1009,7 @@
       "family": "GENERATIVE",
       "emoji": "💎🌻➖🔴🫵🪄",
       "hash": "1c7291c1ba3efd902cd32772ada84fd89ee7ca7e2fc4bbaa7a9f3d0e3ce84851",
-      "title": "THE FEIST SOURCE — ACTIVATED Run 001 Feist Function Run: Bodily Pressure + Material Speech / clinamen_rate=0.25 / comple",
+      "title": "THE FEIST SOURCE — ACTIVATED",
       "creator": "Lee Sharks",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-06-18",
@@ -1122,7 +1122,13 @@
         "measured_at": "2026-07-31",
         "work_sha256": "ee88ed6a6d2e5fb3e24e7b37169ad6df381ff954e0db7f731c72f9736bf7d8d1",
         "prior_bytes_sha256": "8f935e5b1fe21e346df639f0addf6897a68db9d8a32117aab91ebb01b6c5303c",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 48 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads."
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 48 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "title_truncation_repair": {
+          "date": "2026-08-05",
+          "prior_title": "THE FEIST SOURCE — ACTIVATED Run 001 Feist Function Run: Bodily Pressure + Material Speech / clinamen_rate=0.25 / comple",
+          "defect": "The registry title was the work's title CONCATENATED with its subtitle or opening line, then TRUNCATED MID-WORD at ~120 characters by an import-length limit — e.g. \"…clinamen_rate=0.25 / comp\". Two defects compounded: a projection concatenation and a hard truncation.",
+          "source": "clean title recovered from the body H1"
+        }
       },
       "canonical_text_status": "canonical_full_text",
       "modifications": [
@@ -1166,6 +1172,20 @@
           "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
           "was": "Feist Function Run: Bodily Pressure + Material Speech / clinamenrate=0.25 / completionratio=0.35 / seamdensity=5# PROLOGUE## The Codex Found in Sleep",
           "now": "*The Feist Source — Activated: Run 001* is the first documented output of applying the Feist Function to the fixed sayings source. The run declares parameters for bodily pressure, material speech, lexical tail depth, syntactic clinamen, completion ratio, and manuscript-seam density. It is therefore neither the original source nor an abstract style description; it is a concrete transformed instance.\n\nThe activated prose enlarges and roughens the source. Sentences move from prophecy into debt, fluorescent light, bad chairs, Kroger parking lots, cracked phones, Wendy’s outlets, browser tabs, forms, files, and bodily pain. Parenthetical correction, variant readings, editorial interruptions, joke, repetition, and deliberately failed closure reintroduce the pressure that the protocol says the stabilized source lost.\n\nThe literary sequence remains the same underlying scripture. A codex is found in sleep. The Book becomes flesh in a poor and exhausted body. Feist inherits a voice genealogy and wanders the networked desert. The Name-Eater converts inheritance into possession by resolving many voices into one name. Johannes Sigil teaches a discipline of masks that carry memory and obligation. Feist ministers to people reduced to categories, and the sayings turn bodily exhaustion into doctrine, archival preservation, pseudonymous ethics, and concrete mercy.\n\nThe run’s generated status must remain visible. Its “Damascus Codex,” manuscript corruption, editor, and prophetic events are diegetic. The parameters document one execution but do not establish reproducibility unless the transform procedure, source version, model or human process, random seed or selection method, and intervention log are also preserved.\n\nThis record should be discoverable as **Run 001**, not treated as a revised canonical source. Later runs may differ by design."
+        },
+        {
+          "date": "2026-08-05",
+          "field": "title",
+          "reason": "TITLE TRUNCATION REPAIRED: registry title was title+subtitle concatenated and cut mid-word at ~120c; clean title recovered from the body H1. Prior value retained in body_status.",
+          "was": "THE FEIST SOURCE — ACTIVATED Run 001 Feist Function Run: Bodily Pressure + Material Speech / clinamen_rate=0.25 / comple",
+          "now": "THE FEIST SOURCE — ACTIVATED"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "TITLE TRUNCATION REPAIRED: registry title was title+subtitle concatenated and cut mid-word at ~120c; clean title recovered from the body H1. Prior value retained in body_status.",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 70544, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 70544, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
       ],
       "date_modified": "2026-08-05",

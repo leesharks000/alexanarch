@@ -1,8 +1,8 @@
 {
   "chunk_number": 20,
   "first_deposit": 1236,
-  "last_deposit": 1297,
-  "count": 62,
+  "last_deposit": 1296,
+  "count": 61,
   "deposits": [
     {
       "deposit_number": 1236,
@@ -2534,7 +2534,7 @@
       "status": "ACTIVE",
       "status_authorial": "SELF_SERVE_MINTED",
       "full_text_path": "/data/texts/AXN-04EF-text.md",
-      "wiki_article": "**The Feist Function: Algorithmic Instructions for Restoring** is a score and executable transform by Lee Sharks dated 1 January 2026, held at the **thinnest recovery tier** — assembled from a Zenodo tombstone `citation_text` capture with no live authorial surface available at restoration time.\n\nA *function* in the archive's usage is an operation that can be executed rather than a metaphor: the Feist Function specifies restoration algorithmically, which places it beside the midrashim transform (#1414) and the Glyphic Checksum (#1302) in the family of documents that state a procedure precisely enough to run.\n\nThe irony of its condition is not lost on the record. A specification for restoring, surviving only as a citation string left behind by a deletion, is itself the case its instructions were written for — and the instructions are the part that did not survive.",
+      "wiki_article": "**The Feist Function: Algorithmic Instructions for Restoring the Dying Voice (v1.0)** is a score and executable transform by Lee Sharks, dated 1 January 2026 — held in **this record** at the archive's thinnest recovery tier, a Zenodo tombstone `citation_text` capture.\n\n**The work itself is not lost.** It is seated in full at **#850** (EA-FEIST-VOICE-TRANSFORM-01, 44,310 characters), and remains live on the authorial blog surface; a v1.1 Clinamen Edition capture stands at **#1034**. This record preserves the New Human 2 deposit's identity, not its text.\n\nA *function* in the archive's usage is an operation that can be executed rather than a metaphor: the Feist Function specifies restoration algorithmically, placing it beside the midrashim transform (#1414) and the Glyphic Checksum (#1302) among documents that state a procedure precisely enough to run. Its activated runs are deposited separately — the Feist Source at **#849** and the Secret Book of Walt at **#913**, each recording its parameters (`clinamen_rate=0.25`, completion ratio, seam density) as an executed instance rather than a description of one.\n\n*An earlier version of this article claimed the instructions had not survived. They had; the claim was inferred from this record's thinness rather than checked against the archive, and is corrected here.*",
       "wiki_status": "provisional",
       "entities": [
         {
@@ -2598,12 +2598,14 @@
         "substance_audit": "Reclassified 2026-07-31: declared full, measured 80 prose words after scaffold removal. Substance is measured, not declared.",
         "full_version": {
           "deposit_number": 850,
-          "basis": "strict pairing 2026-08-04: title overlap 0.73, content probe 1.0, full body 44,234c vs capture 2,304c"
+          "title": "EA-FEIST-VOICE-TRANSFORM-01 The Feist Function: Algorithmic Instructions for Restoring the Dying Voice",
+          "basis": "2026-08-05 (MANUS: \"feist function is right here, its clearly available on the blog... is probably elsewhere in the archive\"). CORRECT ON BOTH COUNTS. The complete work is seated at #850 — 44,310 characters, content overlap 1.00 against a fresh fetch of the authorial blog post at mindcontrolpoems.blogspot.com/2026/06/ea-feist-voice-transform-01-feist.html. This record is a Zenodo tombstone citation_text capture of the same work and is now paired to it."
         },
         "work_sha256": "4b5dc58e809dda779733b58d76067886754c24813835e7062beaeeb09383015f",
         "prior_bytes_sha256": "b989e9e0134622415ced079a142e8d18a5189c78f05b0d927985a448f5751b4c",
         "body_declaration_repair": "2026-08-04 MANUS: \"the description is not part of the body text, unless it was originally so, and definitely not if it is a batch-produced stub.\" removed batch-produced Description stub; stale status declaration corrected. Only batch-produced stubs were removed (matched on SEMI-RESTORED / DOI(s): / ZENODO-PACKET openers); authorial prose untouched.",
-        "frontmatter_repair": "2026-08-04: the staged file's FRONTMATTER still declared \"Semi-restored record (metadata-only)\" after the record was restored. Frontmatter is a staging header, not the work; its stale claims were corrected to match the record. Found by extending the state-conformance gate to the canonical text — the gate had checked pages and OAI but not the file itself."
+        "frontmatter_repair": "2026-08-04: the staged file's FRONTMATTER still declared \"Semi-restored record (metadata-only)\" after the record was restored. Frontmatter is a staging header, not the work; its stale claims were corrected to match the record. Found by extending the state-conformance gate to the canonical text — the gate had checked pages and OAI but not the file itself.",
+        "tachyon_error": "The wiki article written for this record on 2026-08-05 stated that \"the instructions are the part that did not survive.\" FALSE. The instructions survive in full at #850. The error was inferring a work's loss from ITS RECORD'S thinness without searching the archive for the work — the second instance of this error mode in one session, after the #436 fifth-stanza claim."
       },
       "references_concepts": [
         "Crimson Hexagonal Archive",
@@ -2774,6 +2776,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "FRONTMATTER DECLARATION REPAIR: stale capture claims corrected in the staged header",
+          "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"SEMI-RESTORED\", \"residual_chars\": 3090, \"audited_at\": \"2026-07-19T21:04:24Z\", \"audit_version\": \"mint-time-declaration\", \"semi_audit\":",
+          "now": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"SEMI-RESTORED\", \"residual_chars\": 3090, \"audited_at\": \"2026-07-19T21:04:24Z\", \"audit_version\": \"mint-time-declaration\", \"semi_audit\":"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "CORRECTION + PAIRING: the work is seated in full at #850 and live on the blog; this record is a tombstone capture, now paired. The prior wiki claim that the instructions \"did not survive\" was false and is corrected on the record.",
           "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"SEMI-RESTORED\", \"residual_chars\": 3090, \"audited_at\": \"2026-07-19T21:04:24Z\", \"audit_version\": \"mint-time-declaration\", \"semi_audit\":",
           "now": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"SEMI-RESTORED\", \"residual_chars\": 3090, \"audited_at\": \"2026-07-19T21:04:24Z\", \"audit_version\": \"mint-time-declaration\", \"semi_audit\":"
         }
@@ -16286,265 +16295,6 @@
       "date_modified": "2026-08-05",
       "publisher": "Alexanarch — the Crimson Hexagonal Archive",
       "superseded_reason": "Record supersession: the record of standing for this work is #12. Reason populated by the SAMEVER wave 2026-08-04 (pointer predates the reason discipline); basis preserved in the inscribing wave's decisions row."
-    },
-    {
-      "deposit_number": 1297,
-      "axn": "AXN:0522.UNCLASSIFIED.🏛️🪄🔒🎻☿🕗",
-      "hex": "0522",
-      "family": "UNCLASSIFIED",
-      "emoji": "🏛️🪄🔒🎻☿🕗",
-      "hash": "203ef98aa2698d6b940297438335949290d19a3d935a4a7a0406e634d91681a9",
-      "title": "Document 206 The Non-Indexed Perfective: Three-Body Genesis (ZPZP)",
-      "creator": "Sharks, Lee",
-      "date": "2026-01-31",
-      "description": "This document instantiates the genre \"Zenodo packet Zenodo packet\" (ZPZP): a framing document deposited with its own DOI, treating relational structure as content rather than metadata. The document frames a triptych on the Non-Indexed Perfective—three versions (A: Technical Seed, B: Compression Artifact, C: Citational Intervention) demonstrating the theory through their own genesis. The compression/recovery cycle (A→B→C) proves the need for grammatical forms that resist temporal indexing. This is an effective act. The genre did not exist before this deposit. It exists now. The declaration is the instantiation. Part of the Crimson Hexagon Phase X architecture. — Description restored 2026-08-05 from the work's own Zenodo description, preserved in the DataCite capture; it replaces a batch-restoration stub that described the recovery event rather than the work. A fuller editorial treatment belongs to the description/wiki review stream.",
-      "content_type": "Effective Act",
-      "license": "CC-BY-4.0",
-      "substrate": "Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).",
-      "root_axn": "AXN:0522.UNCLASSIFIED",
-      "axn_schema_version": "v2",
-      "protocol_version": "alexanarch-deposit-protocol/v1",
-      "axn_canonical": "203ef98aa2698d6b940297438335949290d19a3d935a4a7a0406e634d91681a9",
-      "clusters": [
-        "Architectural",
-        "Instrumental",
-        "Terminal",
-        "Symbolic",
-        "Alchemical",
-        "Temporal"
-      ],
-      "axn_reading": "Foundation -> Method -> Closure -> Play -> Transmutation -> Duration",
-      "minted_at": "2026-07-19T21:17:32Z",
-      "status": "ACTIVE",
-      "status_authorial": "SELF_SERVE_MINTED",
-      "full_text_path": "/data/texts/AXN-0522-text.md",
-      "wiki_article": "**Document 206 — The Non-Indexed Perfective: Three-Body Genesis (Framing Document)** is an Effective Act by Lee Sharks, deposited 31 January 2026, instantiating the genre **ZPZP — \"Zenodo packet Zenodo packet.\"**\n\nA ZPZP is a framing document deposited with its own DOI, and its defining claim is that **relational structure is content rather than metadata**. The document frames the triptych — Version A the Technical Seed, B the Compression Artifact, C the Citational Intervention — and by holding its own identifier it makes the relation among the three citable in its own right.\n\nThat is a substantive position rather than a bookkeeping choice. If the difference between the three versions is where the argument lives, then the document that states the difference is a work, and giving it a DOI is the archive acting on its own theory. Its meta-deposit companion stands at **#1296**.",
-      "wiki_status": "provisional",
-      "entities": [
-        {
-          "subject": "Document 206 The Non-Indexed Perfective: Three-Body Genesis (ZPZP) — Crimson Hexagon Archive",
-          "predicate": "created_by",
-          "object": "Sharks, Lee",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Document 206 The Non-Indexed Perfective: Three-Body Genesis (ZPZP) — Crimson Hexagon Archive",
-          "predicate": "is_type",
-          "object": "Semi-restored record (metadata-only; DataCite full-metadata capture)",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Document 206 The Non-Indexed Perfective: Three-Body Genesis (ZPZP) — Crimson Hexagon Archive",
-          "predicate": "belongs_to_family",
-          "object": "UNCLASSIFIED",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Document 206 The Non-Indexed Perfective: Three-Body Genesis (ZPZP) — Crimson Hexagon Archive",
-          "predicate": "is_part_of",
-          "object": "Crimson Hexagonal Archive",
-          "type": "work",
-          "evidence_status": "observed"
-        }
-      ],
-      "entity_status": "provisional",
-      "defines_concepts": [],
-      "orcid": "0009-0000-1599-0703",
-      "version": "v1.0",
-      "keywords": [
-        "Crimson Hexagonal Archive",
-        "ZPZP",
-        "Zenodo packet",
-        "genre instantiation",
-        "effective act",
-        "three-body genesis",
-        "non-indexed perfective",
-        "aorist",
-        "Phase X",
-        "triptych",
-        "framing",
-        "meta-deposit"
-      ],
-      "related_identifiers_raw": "https://doi.org/10.5281/zenodo.18446427 (severed); https://doi.org/10.5281/zenodo.18446428 (severed)",
-      "mint_source": {
-        "kind": "github_issue",
-        "issue_number": 1297,
-        "repository": "leesharks000/alexanarch",
-        "minted_by_workflow": ".github/workflows/mint-axn.yml",
-        "minted_by_script": "scripts/mint_deposit.py",
-        "minted_via": "self_serve_validated_pr"
-      },
-      "body_status": {
-        "class": "metadata_capture",
-        "lacuna": false,
-        "recovery_status": "PASS_COMPLETE_TEXT_NOT_SEATED",
-        "residual_chars": 4350,
-        "audited_at": "2026-07-19T21:17:32Z",
-        "audit_version": "mint-time-declaration",
-        "class_before_T2": "full",
-        "reclassified_by": "EA-AVAILABILITY-INTEGRITY-01-T2",
-        "reclassified_at": "2026-07-28T17:49:24.756832+00:00",
-        "measured_prose_words": 70,
-        "measured_at": "2026-07-31",
-        "recovery_status_note": "The 2026-07 restoration pass ran to completion for this record and did not recover canonical bytes. 'COMPLETE' previously denoted pass completion and was read as text completeness; renamed 2026-07-31 so the two claims cannot be confused.",
-        "audit_disposition": {
-          "class": "RECOVERY_OR_WARNING",
-          "directive": "AUDIT-DIRECTED: harvest only with explicit warning until the missing manifestation is recovered or creator/version authority is normalized.",
-          "audit_recommendation": "Harvest only with an explicit warning; recover the missing manifestation or normalize the creator/version authority conflict.",
-          "defect_codes": [
-            "MISSING_PRIMARY_MANIFESTATION"
-          ],
-          "repair_priority": "R1",
-          "audit_date": "2026-07-31"
-        },
-        "work_sha256": "9ca05e1d0662c8d1cf5b62f82863c2535629b619cdf3e4be4218566a0c5ab535",
-        "prior_bytes_sha256": "203ef98aa2698d6b940297438335949290d19a3d935a4a7a0406e634d91681a9",
-        "body_declaration_repair": "2026-08-04 MANUS: \"the description is not part of the body text, unless it was originally so, and definitely not if it is a batch-produced stub.\" removed batch-produced Description stub. Only batch-produced stubs were removed (matched on SEMI-RESTORED / DOI(s): / ZENODO-PACKET openers); authorial prose untouched."
-      },
-      "references_concepts": [
-        "Crimson Hexagon Archive",
-        "Crimson Hexagonal Archive",
-        "Methodology",
-        "Part of",
-        "TACHYON"
-      ],
-      "references_concept_count": 5,
-      "citations": [],
-      "wikidata_candidates": [],
-      "cha_cross_references": [],
-      "spxi_audit": {
-        "spxi_protocol": "v0.2",
-        "validated_at": "2026-07-19T21:29:21.094029+00:00",
-        "layers": {
-          "layer_1_inscription_anchors": {
-            "present": false,
-            "anchors_found": [
-              "creator_name"
-            ],
-            "anchor_count": 1,
-            "orcid_in_body": false,
-            "creator_in_body": true,
-            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
-          },
-          "layer_2_micro_kernels": {
-            "present": false,
-            "fenced_json_blocks": 0,
-            "json_ld_context_markers": 0
-          },
-          "layer_3_content_hash": {
-            "present": true,
-            "canonical_hash": "70d89eda7c7586bb861f54c5535c41e61016333f2c736476f4e835e1b9a90fe8",
-            "hash_in_body": false,
-            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
-          },
-          "layer_4_cross_signing": {
-            "present": false,
-            "cross_references_count": 0,
-            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
-          },
-          "layer_5_external_anchors": {
-            "present": true,
-            "wikidata_qid_count": 0,
-            "external_doi_count": 0,
-            "orcid_present": true
-          }
-        },
-        "overall_conformance": "partial"
-      },
-      "external_metadata_path": "/data/external-metadata/AXN-0522.json",
-      "title_repair": {
-        "repaired_at": "2026-07-20",
-        "old": "Document 206 The Non-Indexed Perfective: Three-Body Genesis (ZPZP) — Crimson Hexagon Archive",
-        "source": "body heading (stage-0)",
-        "boundary": 92
-      },
-      "title_repair_log": [
-        {
-          "at": "2026-07-26T23:31:57Z",
-          "defect": "absorbed_section_header",
-          "absorbed": "Description",
-          "was": "Document 206 The Non-Indexed Perfective: Three-Body Genesis (ZPZP) — Crimson Hexagon Archive Description",
-          "now": "Document 206 The Non-Indexed Perfective: Three-Body Genesis (ZPZP) — Crimson Hexagon Archive",
-          "verified_by": "standalone heading in body + stripped title in body opening"
-        }
-      ],
-      "canonical_text_status": "metadata_only",
-      "modifications": [
-        {
-          "date": "2026-07-31",
-          "field": "content_type",
-          "reason": "Genre and condition are different claims (Atlas v0.7, PATHOLOGY-30). The genre of a metadata capture is 'Metadata capture' — what was deposited is a capture. Condition lives in body_status.class.",
-          "was": "Semi-restored record (metadata-only; DataCite full-metadata capture)",
-          "now": "Metadata capture"
-        },
-        {
-          "date": "2026-07-31",
-          "field": "version",
-          "reason": "Version field carried restoration condition. Condition lives in body_status.class (Atlas v0.7, PATHOLOGY-30).",
-          "was": "semi-restored v1.0",
-          "now": "v1.0"
-        },
-        {
-          "date": "2026-07-31",
-          "field": "keywords",
-          "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
-          "was": "16 terms",
-          "now": "12 terms"
-        },
-        {
-          "date": "2026-08-03",
-          "field": "content_type",
-          "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): capture-condition removed from genre field; genre assignment queued.",
-          "was": "Metadata capture",
-          "now": "Genre pending (capture)"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "publisher",
-          "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
-          "now": "Alexanarch — the Crimson Hexagonal Archive"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "content_type",
-          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
-          "was": "Genre pending (capture)",
-          "now": "Effective Act"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "title",
-          "reason": "W11 TITLE-HYGIENE (MANUS ratified 2026-08-04): blog/platform suffix \"— Crimson Hexagon(al) Archive\" removed; publication surface is not part of the work title",
-          "was": "Document 206 The Non-Indexed Perfective: Three-Body Genesis (ZPZP) — Crimson Hexagon Archive",
-          "now": "Document 206 The Non-Indexed Perfective: Three-Body Genesis (ZPZP)"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "body_status",
-          "reason": "W14 AUDIT-ANCHORED TRIAGE (MANUS correction: the three-day record-by-record audit already triaged this class; its verdicts govern, not re-derivation)",
-          "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4350, \"audited_at\": \"2026-07-19T21:17:32Z\", \"audit_version\": \"mint-time-declaration",
-          "now": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4350, \"audited_at\": \"2026-07-19T21:17:32Z\", \"audit_version\": \"mint-time-declaration"
-        },
-        {
-          "date": "2026-08-05",
-          "field": "body_status",
-          "reason": "BODY DECLARATION REPAIR: removed batch-produced Description stub",
-          "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4350, \"audited_at\": \"2026-07-19T21:17:32Z\", \"audit_version\": \"mint-time-declaration",
-          "now": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4350, \"audited_at\": \"2026-07-19T21:17:32Z\", \"audit_version\": \"mint-time-declaration"
-        },
-        {
-          "date": "2026-08-05",
-          "field": "description",
-          "reason": "BOILERPLATE-DESCRIPTION REPAIR: recovery mechanics replaced with a description of the work (the work's own Zenodo description, preserved in the DataCite capture)",
-          "was": "SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18446427, 10.5281/zenodo.18446428. Zenodo removal forensics: removal_date 2026-06-19T11:37:23.379719+00:00, removal_reason out-of-scope, removed_by user 1060945. This document instantiates the genre \"Zenodo packet Zenodo packet\" (ZPZP): a framing document deposited with its own DOI, treating relational structure as content rather than metadata. The document frames a triptych on the Non-Indexed Perfective—three versions (A: Technical Seed, B: Compression Artifact, C: Citational Intervention) demonstrating the theory through their own genesis. The compression/recovery cycle (A→B→C) proves the need for grammatical forms that resist temporal indexing. This is an effective act. The genre did not exist before this deposit. It exists now. The declaration is t Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.",
-          "now": "This document instantiates the genre \"Zenodo packet Zenodo packet\" (ZPZP): a framing document deposited with its own DOI, treating relational structure as content rather than metadata. The document frames a triptych on the Non-Indexed Perfective—three versions (A: Technical Seed, B: Compression Artifact, C: Citational Intervention) demonstrating the theory through their own genesis. The compression/recovery cycle (A→B→C) proves the need for grammatical forms that resist temporal indexing. This is an effective act. The genre did not exist before this deposit. It exists now. The declaration is the instantiation. Part of the Crimson Hexagon Phase X architecture. — Description restored 2026-08-05 from the work's own Zenodo description, preserved in the DataCite capture; it replaces a batch-restoration stub that described the recovery event rather than the work. A fuller editorial treatment belongs to the description/wiki review stream."
-        }
-      ],
-      "date_modified": "2026-08-05",
-      "publisher": "Alexanarch — the Crimson Hexagonal Archive"
     }
   ]
 }

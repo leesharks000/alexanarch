@@ -2278,7 +2278,7 @@
       "family": "ARCHIVAL",
       "emoji": "🚪🔛🗡️💫⚡🌑",
       "hash": "24f45a0a1300847afe560ef7095bf12e95b07ed9dfdbdc80a31e8b013f64c63c",
-      "title": "Footnote Architecture Read this entire file before modifying any footnote-related code. Every prior fix to footnotes bro",
+      "title": "Footnote Architecture",
       "creator": "Lee Sharks",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-04-28",
@@ -2482,7 +2482,13 @@
         "audited_at": "2026-07-17T04:49:17.789813Z",
         "audit_version": "v3-dual-store+recovery-map",
         "measured_prose_words": 1266,
-        "measured_at": "2026-07-31"
+        "measured_at": "2026-07-31",
+        "title_truncation_repair": {
+          "date": "2026-08-05",
+          "prior_title": "Footnote Architecture Read this entire file before modifying any footnote-related code. Every prior fix to footnotes bro",
+          "defect": "The registry title was the work's title CONCATENATED with its subtitle or opening line, then TRUNCATED MID-WORD at ~120 characters by an import-length limit — e.g. \"…clinamen_rate=0.25 / comp\". Two defects compounded: a projection concatenation and a hard truncation.",
+          "source": "clean title recovered from the body H1"
+        }
       },
       "canonical_text_status": "canonical_full_text",
       "modifications": [
@@ -2519,6 +2525,20 @@
           "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
           "was": "Read this entire file before modifying any footnote-related code.",
           "now": "*Footnote Architecture* is the source-of-truth maintenance specification for the interactive critical editions of *The Secret Book of Walt* and, by extension, *The Gospel of Antioch*. It establishes globally numbered footnotes, a book-wide footnote map, a precise distinction between footnote superscripts and letter-attached manuscript identifiers, a universal text renderer, inline footnote leaves, section-local visibility state, and separate Veil and Pierce reading modes.\n\nThe document records what not to do, component locations, data assumptions, cross-section behavior, and a concrete regression checklist. It is software architecture, not a poem or literary essay. Its numerical distribution and filenames describe a particular code/data state and must be updated when the edition changes. The Antioch section openly notes that parity remains incomplete until its full data file is regenerated."
+        },
+        {
+          "date": "2026-08-05",
+          "field": "title",
+          "reason": "TITLE TRUNCATION REPAIRED: registry title was title+subtitle concatenated and cut mid-word at ~120c; clean title recovered from the body H1. Prior value retained in body_status.",
+          "was": "Footnote Architecture Read this entire file before modifying any footnote-related code. Every prior fix to footnotes bro",
+          "now": "Footnote Architecture"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "TITLE TRUNCATION REPAIRED: registry title was title+subtitle concatenated and cut mid-word at ~120c; clean title recovered from the body H1. Prior value retained in body_status.",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 5289, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_wo",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 5289, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_wo"
         }
       ],
       "date_modified": "2026-08-05",
@@ -6056,7 +6076,7 @@
       "family": "GOVERNANCE",
       "emoji": "❤️🔍🔵🏛️🀄🎯",
       "hash": "cf56c5208f55d4b69347f2203148905679f9fcb94d65a7c4cd6509cda2d9fe1a",
-      "title": "THE SEMANTIC BILL OF RIGHTS Rights Charter Companion to the Constitution of the Semantic Economy Version 2.2 — rights de",
+      "title": "THE SEMANTIC BILL OF RIGHTS",
       "creator": "Lee Sharks",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-05-05",
@@ -6277,7 +6297,13 @@
         "measured_at": "2026-07-31",
         "work_sha256": "717dbce0ca3f759e58af0d0da079d90320e8fa6a51a4863cd7fecb0200e9bb28",
         "prior_bytes_sha256": "a60542b1e4d02accc3074769e584c8324a0ec175cd5e78d18416954da3a57811",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 43 glued heading markers -> 28. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads."
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 43 glued heading markers -> 28. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "title_truncation_repair": {
+          "date": "2026-08-05",
+          "prior_title": "THE SEMANTIC BILL OF RIGHTS Rights Charter Companion to the Constitution of the Semantic Economy Version 2.2 — rights de",
+          "defect": "The registry title was the work's title CONCATENATED with its subtitle or opening line, then TRUNCATED MID-WORD at ~120 characters by an import-length limit — e.g. \"…clinamen_rate=0.25 / comp\". Two defects compounded: a projection concatenation and a hard truncation.",
+          "source": "clean title recovered from the body H1"
+        }
       },
       "canonical_text_status": "canonical_full_text",
       "modifications": [
@@ -6328,6 +6354,20 @@
           "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
           "was": "Version 2.2 — rights derived from the Liberatory Operator Set; remedies separated into Part V; jurisdictional, procedural, and good-faith-use safeguards added per Assembly review",
           "now": "The Semantic Bill of Rights derives seven laborer-side rights from the Liberatory Operator Set: provenance, depth, non-closure, opacity, plural coherence, non-extractability, and resistance to capture. Version 2.2 separates substantive rights from remedies, defines rights-holder categories, resolves the tension between public provenance and chosen opacity, adds good-faith protections for citation and critique, and clarifies that interpretive openness does not give an author veto over readers.\n\nThe Charter applies only within the voluntary Polis. External systems are not bound; the project may measure, audit, document, or adjust internal recognition but cannot compel them. Rights are reserved to human semantic laborers and documented human collectives, communities, estates, stewards, or escrowed representatives. Synthetic systems may be assigned obligations inside human-governed processes but do not hold rights under this charter. Numerical thresholds such as PER triggers and indexical-summary rates are proposed governance parameters, not empirically validated universal rights standards."
+        },
+        {
+          "date": "2026-08-05",
+          "field": "title",
+          "reason": "TITLE TRUNCATION REPAIRED: registry title was title+subtitle concatenated and cut mid-word at ~120c; clean title recovered from the body H1. Prior value retained in body_status.",
+          "was": "THE SEMANTIC BILL OF RIGHTS Rights Charter Companion to the Constitution of the Semantic Economy Version 2.2 — rights de",
+          "now": "THE SEMANTIC BILL OF RIGHTS"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "TITLE TRUNCATION REPAIRED: registry title was title+subtitle concatenated and cut mid-word at ~120c; clean title recovered from the body H1. Prior value retained in body_status.",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 38312, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 38312, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
       ],
       "date_modified": "2026-08-05",
