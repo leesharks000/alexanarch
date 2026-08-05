@@ -1439,6 +1439,20 @@
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 214358, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"recovered_from\"",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 214358, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"recovered_from\""
+        },
+        {
+          "date": "2026-08-05",
+          "field": "title",
+          "reason": "TITLE HYGIENE v2 (MANUS 2026-08-04): DOI string, Hex coordinate and platform suffix stripped from the title — these are metadata that the capture welded into the title field, not part of the work's name",
+          "was": "[SUPERSEDED → DOI: 10.5281/zenodo.19501454 (v3.0)] THE SHARKS ARK: EA-ARK-01-ARCHON v2.1 — Receivability Patch (Crimson Hexagonal Archive)",
+          "now": "[SUPERSEDED →"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "title",
+          "reason": "TITLE REGRESSION REPAIRED: the DOI-strip pattern consumed a bracketed [SUPERSEDED → DOI: …] prefix and left a fragment; original restored with only the platform suffix removed",
+          "was": "[SUPERSEDED →",
+          "now": "[SUPERSEDED → DOI: 10.5281/zenodo.19501454 (v3.0)] THE SHARKS ARK: EA-ARK-01-ARCHON v2.1 — Receivability Patch (Crimson Hexagonal Archive)"
         }
       ],
       "date_modified": "2026-08-05",
@@ -1677,6 +1691,20 @@
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 174011, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"recovered_from\"",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 174011, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"recovered_from\""
+        },
+        {
+          "date": "2026-08-05",
+          "field": "title",
+          "reason": "TITLE HYGIENE v2 pass 2: apparatus stripped; collision permitted because the colliding record is a duplicate witness of the same work — duplicate witnesses SHOULD share a title",
+          "was": "[SUPERSEDED → DOI: 10.5281/zenodo.19501454 (v3.0)] THE SHARKS ARK: EA-ARK-01-ARCHON v2.2 — Consensus Constraint Patch (Crimson Hexagonal Archive)",
+          "now": "[SUPERSEDED →"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "title",
+          "reason": "TITLE REGRESSION REPAIRED: the DOI-strip pattern consumed a bracketed [SUPERSEDED → DOI: …] prefix and left a fragment; original restored with only the platform suffix removed",
+          "was": "[SUPERSEDED →",
+          "now": "[SUPERSEDED → DOI: 10.5281/zenodo.19501454 (v3.0)] THE SHARKS ARK: EA-ARK-01-ARCHON v2.2 — Consensus Constraint Patch (Crimson Hexagonal Archive)"
         }
       ],
       "date_modified": "2026-08-05",
@@ -1964,6 +1992,20 @@
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 213500, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"semi_audit\": \"2",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 213500, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"semi_audit\": \"2"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "title",
+          "reason": "TITLE HYGIENE v2 pass 2: apparatus stripped; collision permitted because the colliding record is a duplicate witness of the same work — duplicate witnesses SHOULD share a title",
+          "was": "[SUPERSEDED → DOI: 10.5281/zenodo.19501454 (v3.0)] THE SHARKS ARK: EA-ARK-01-ARCHON v2.3 — Text-First + TANG Patch (Crimson Hexagonal Archive)",
+          "now": "[SUPERSEDED →"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "title",
+          "reason": "TITLE REGRESSION REPAIRED: the DOI-strip pattern consumed a bracketed [SUPERSEDED → DOI: …] prefix and left a fragment; original restored with only the platform suffix removed",
+          "was": "[SUPERSEDED →",
+          "now": "[SUPERSEDED → DOI: 10.5281/zenodo.19501454 (v3.0)] THE SHARKS ARK: EA-ARK-01-ARCHON v2.3 — Text-First + TANG Patch (Crimson Hexagonal Archive)"
         }
       ],
       "date_modified": "2026-08-05",
@@ -1987,7 +2029,7 @@
       ],
       "axn_reading": "Direction -> Threshold -> Force -> Proof -> Play -> Search",
       "root_axn": "AXN:03D8.ARCHIVAL",
-      "title": "[DUPLICATE — SUPERSEDED → DOI: 10.5281/zenodo.19512987 (v2.0)] CALL FOR PAPERS: The Distributed Journal as Counter-Infrastructure — Duplicate Deposit (Crimson Hexagonal Archive)",
+      "title": "[DUPLICATE — SUPERSEDED →",
       "creator": "Sharks, Lee",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-07-03",
@@ -2114,9 +2156,16 @@
           "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
           "was": "Genre pending (recovered)",
           "now": "Call for papers / announcement"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "title",
+          "reason": "TITLE HYGIENE v2 (MANUS 2026-08-04): DOI string, Hex coordinate and platform suffix stripped from the title — these are metadata that the capture welded into the title field, not part of the work's name",
+          "was": "[DUPLICATE — SUPERSEDED → DOI: 10.5281/zenodo.19512987 (v2.0)] CALL FOR PAPERS: The Distributed Journal as Counter-Infrastructure — Duplicate Deposit (Crimson Hexagonal Archive)",
+          "now": "[DUPLICATE — SUPERSEDED →"
         }
       ],
-      "date_modified": "2026-08-04",
+      "date_modified": "2026-08-05",
       "publisher": "Alexanarch — the Crimson Hexagonal Archive"
     },
     {

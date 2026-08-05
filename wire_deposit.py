@@ -1264,6 +1264,17 @@ def regenerate_static_page(d, eidx, registry=None):
             '<div style="font-weight:600;margin-bottom:4px">Other instances of this work in the archive</div>'
             f'<ul style="margin:6px 0 6px 20px;padding:0">{_items}</ul>'
             '<div style="color:#666;font-size:.88em">Recorded as relations only — which instance supersedes which is not asserted here.</div></div>')
+    for _k, _hd in (('analysed_by', 'Analysed in'), ('analysis_of', 'This record analyses')):
+        _rel = _bs.get(_k) if isinstance(_bs, dict) else None
+        if _rel and _rel.get('deposit_number'):
+            rel_block += (
+                '<div style="background:var(--surface);border-left:4px solid var(--teal);padding:10px 14px;'
+                'border-radius:6px;margin:12px 0;font-size:.9em">'
+                f'<div style="font-weight:600;margin-bottom:4px">{_hd}</div>'
+                f'<a href="/s/records/{_rel["deposit_number"]}/" style="color:var(--accent)">'
+                f'#{_rel["deposit_number"]} — {esc(str(_rel.get("title",""))[:80])}</a>'
+                f'<div style="color:#666;font-size:.88em;margin-top:4px">{esc(str(_rel.get("relation","")))}</div></div>')
+
     _pt = _bs.get('primary_text_attachment') if isinstance(_bs, dict) else None
     if _pt and _pt.get('attachment'):
         rel_block += (

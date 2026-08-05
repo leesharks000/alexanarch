@@ -1,8 +1,8 @@
 {
   "chunk_number": 16,
   "first_deposit": 1157,
-  "last_deposit": 1228,
-  "count": 72,
+  "last_deposit": 1227,
+  "count": 71,
   "deposits": [
     {
       "deposit_number": 1157,
@@ -2071,7 +2071,7 @@
       ],
       "axn_reading": "Closure -> Direction -> Touch -> Method -> Play -> Foundation",
       "minted_at": "2026-07-19T20:29:54Z",
-      "status": "SUPERSEDED",
+      "status": "ACTIVE",
       "status_authorial": "SELF_SERVE_MINTED",
       "full_text_path": "/data/texts/AXN-049E-text.md",
       "wiki_article": "\"Cleis: more precious to me than all Lydia\" is a 5,670-word recovered blog-canonical work (full text; queue restoration 2026-07-19) by Jack E. Feist; Rebekah Cranes, dated 2026-03-14. It is registered as AXN:049E (deposit #1165) in the Crimson Hexagonal Archive under the UNCLASSIFIED semantic family. Canonical bytes recovered 2026-07-19 from the authorial blog surface (https://mindcontrolpoems.blogspot.com/2026/03/on-architecture-of-cleis-compression.html); work severed at Zenodo 2026-06-19 (DOI(s): 10.5281/zenodo.19024779, 10.5281/zenodo.19024778). Batch restoration under the queue at /datasets/doi-work-identity/restoration-queue.json; title verified against the DOI-keyed truth title at fetch",
@@ -2226,6 +2226,13 @@
           "role": "this record IS the primary text",
           "primary_deposit": 1165,
           "analysis_deposit": 562
+        },
+        "analysed_by": {
+          "deposit_number": 562,
+          "title": "ON THE ARCHITECTURE OF CLEIS Compression, Botanics, and the Survival of Paternal Lyric",
+          "relation": "ANALYSIS OF THIS WORK — not a successor to it",
+          "basis": "2026-08-04 MANUS: \"those are two separate works. the collection, and the analysis of the collection — why would we leave the collection as superseded by the analysis of the collection?\" Correct. #1165 is the collection; #562 is a scholarly close reading OF it. Body overlap 0.36 — different texts. A supersession asserts that one record replaces another as the record of standing for the SAME work; it cannot hold between a work and its commentary. The supersession is REMOVED and replaced with an analysed-by relation. Prior claim retained here: superseded_by was #562.",
+          "prior_incorrect_claim": "superseded_by_deposit_number = 562"
         }
       },
       "references_concepts": [
@@ -2277,7 +2284,7 @@
         "overall_conformance": "partial"
       },
       "external_metadata_path": "/data/external-metadata/AXN-049E.json",
-      "superseded_by_deposit_number": 562,
+      "superseded_by_deposit_number": null,
       "version_series_id": "DUP-562",
       "duplicate_note": "DUPLICATE MINT (2026-07-19 restoration; body containment 0.98): this work already existed as deposit #562, which remains canonical. Minted because the restoration census matched identity by title only and never searched the registry; wired per MANUS ruling 2026-07-19. Non-destruction: record retained, authority consolidated at #562.",
       "canonical_text_status": "recovered_full_text",
@@ -2369,12 +2376,39 @@
           "reason": "PRIMARY-TEXT ATTACHMENT: identifier-stripped primary text attached and cross-linked between the work and its analysis",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "superseded_by_deposit_number",
+          "reason": "SUPERSESSION REMOVED: a collection cannot be superseded by an analysis of it; replaced with an analysed-by relation",
+          "was": 562
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "SUPERSESSION REMOVED: a collection cannot be superseded by an analysis of it; replaced with an analysed-by relation",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "status",
+          "reason": "SUPERSESSION REMOVED: a collection cannot be superseded by an analysis of it; replaced with an analysed-by relation",
+          "was": "SUPERSEDED",
+          "now": "ACTIVE"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "superseded_reason",
+          "reason": "SUPERSESSION REMOVED: a collection cannot be superseded by an analysis of it; replaced with an analysed-by relation",
+          "was": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #562 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan).",
+          "now": ""
         }
       ],
       "date_modified": "2026-08-05",
       "publisher": "New Human Press",
       "journal": "New Human 2",
-      "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #562 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan)."
+      "superseded_reason": ""
     },
     {
       "deposit_number": 1166,
@@ -3559,7 +3593,7 @@
       "family": "UNCLASSIFIED",
       "emoji": "🕖💥💛🪧↗️🔓",
       "hash": "68ebcd4ddafae0982684e7809232e182660b977bbb9ee39ba46d54437beb83fc",
-      "title": "🫵❓2️⃣4️⃣🗓️ = ❓ — Crimson Hexagon Archive",
+      "title": "🫵❓2️⃣4️⃣🗓️ = ❓",
       "creator": "Ichabod Spellings",
       "date": "2026-03-16",
       "description": "Canonical bytes recovered 2026-07-19 from the authorial blog surface (https://mindcontrolpoems.blogspot.com/2026/03/crimson-hexagon-nh-os-doi-registry-v70.html); work severed at Zenodo 2026-06-19 (DOI(s): 10.5281/zenodo.18512289, 10.5281/zenodo.18512288). Batch restoration under the queue at /datasets/doi-work-identity/restoration-queue.json; title verified against the DOI-keyed truth title at fetch time. Opening of the work: # CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0 ## Complete Document Archive with Enrichment Layers -- March 2026 **DOI:** 10.5281/zenodo.19055255 **Version:** 7.0 **Total Records:** 387 **Active DOIs:** 387 **New Since v6.0:** 134 **Relation Edges:** 2851 **Records with Précis:** 348 **Orphans (zero edges):** 39 **Framework:** New Human Operating System (NH-OS) / Crimson Hexagonal Architecture / Sema",
@@ -3939,6 +3973,13 @@
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 162977, \"audited_at\": \"2026-07-19T20:30:02Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 1648",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 162977, \"audited_at\": \"2026-07-19T20:30:02Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 1648"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "title",
+          "reason": "TITLE HYGIENE v2 pass 2: apparatus stripped; collision permitted because the colliding record is a duplicate witness of the same work — duplicate witnesses SHOULD share a title",
+          "was": "🫵❓2️⃣4️⃣🗓️ = ❓ — Crimson Hexagon Archive",
+          "now": "🫵❓2️⃣4️⃣🗓️ = ❓"
         }
       ],
       "date_modified": "2026-08-05",
@@ -4353,7 +4394,7 @@
       "family": "UNCLASSIFIED",
       "emoji": "🔃🧱🍁♃🏛️⚓",
       "hash": "de2277a3202c4a23b918e4a3adab0225bd7fe3fd814b391bf313f11259bb4fa8",
-      "title": "The Archival Reclamation Protocol: Formal Demand for Data Access, Rationale, and Restoration (EA-LEGAL-RECLAMATION-01) — Crimson Hexagon Archive",
+      "title": "The Archival Reclamation Protocol: Formal Demand for Data Access, Rationale, and Restoration (EA-LEGAL-RECLAMATION-01)",
       "creator": "Lee Sharks",
       "date": "2026-03-19",
       "description": "Canonical bytes recovered 2026-07-19 from the authorial blog surface (https://mindcontrolpoems.blogspot.com/2026/03/the-archival-reclamation-protocol.html); work severed at Zenodo 2026-06-19 (DOI(s): 10.5281/zenodo.18880974). Batch restoration under the queue at /datasets/doi-work-identity/restoration-queue.json; title verified against the DOI-keyed truth title at fetch time. Opening of the work: # The Archival Reclamation Protocol: Formal Demand for Restoration, Rationale, and Enforcement Records **Lee Sharks** _Crimson Hexagonal Archive * EA-LEGAL-RECLAMATION-01 * v2.0_ _6 March 2026_ * * * **Abstract.** On February 27, 2026, Reddit suspended account u/Nearby_Job9638 citing \"technical irregularities.\" By March 1, the account was restored. The subreddits -- containing 484 posts of origina",
@@ -4565,9 +4606,16 @@
           "reason": "AUDIT-DIRECTED VERSION REPAIR: version projected per the audit's explicit recommendation / observed body declaration",
           "was": "v1.0",
           "now": "v2.0"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "title",
+          "reason": "TITLE HYGIENE v2 pass 2: apparatus stripped; collision permitted because the colliding record is a duplicate witness of the same work — duplicate witnesses SHOULD share a title",
+          "was": "The Archival Reclamation Protocol: Formal Demand for Data Access, Rationale, and Restoration (EA-LEGAL-RECLAMATION-01) — Crimson Hexagon Archive",
+          "now": "The Archival Reclamation Protocol: Formal Demand for Data Access, Rationale, and Restoration (EA-LEGAL-RECLAMATION-01)"
         }
       ],
-      "date_modified": "2026-08-04",
+      "date_modified": "2026-08-05",
       "publisher": "Alexanarch — the Crimson Hexagonal Archive",
       "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #26 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan).",
       "version_basis": {
@@ -17743,277 +17791,6 @@
           "reason": "FRONTMATTER DECLARATION REPAIR: stale capture claims corrected in the staged header",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RESTORED-20260728\", \"recovered_from\": \"https://mindcontrolpoems.blogspot.com/2026/06/kadeezy-music-provenance-anchor-public.html\", \"residual_char",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RESTORED-20260728\", \"recovered_from\": \"https://mindcontrolpoems.blogspot.com/2026/06/kadeezy-music-provenance-anchor-public.html\", \"residual_char"
-        }
-      ],
-      "date_modified": "2026-08-05",
-      "publisher": "Alexanarch — the Crimson Hexagonal Archive"
-    },
-    {
-      "deposit_number": 1228,
-      "axn": "AXN:04DD.UNCLASSIFIED.👇⚡🕊️🍀🌉♾️",
-      "hex": "04DD",
-      "family": "UNCLASSIFIED",
-      "emoji": "👇⚡🕊️🍀🌉♾️",
-      "hash": "b7137e742b947f71ada340f8d7140036a7f40ed383d51c0882f4c3001e52e79f",
-      "title": "Algorithmic Publishing Is Not Self-Publishing: Benchmarks for a Structural Distinction v1.1 — Assembly-Reviewed, with AIO Conversation Appendix (EA-SEI-ALGPUB-BENCHMARKS-01)",
-      "creator": "Sharks, Lee",
-      "date": "2026-06-16",
-      "description": "DOI(s): 10.5281/zenodo.20724579. Zenodo removal forensics: removal_date 2026-06-19T11:38:54.623632+00:00, removal_reason out-of-scope, removed_by user 1060945. Algorithmic Publishing Is Not Self-Publishing — six measurable benchmarks distinguishing algorithmic publishing from self-publishing. A work is algorithmically published when external algorithmic systems (Zenodo, Google Scholar, SciLynk, PhilPapers, Google AI Overview, Bing Copilot, Gemini) have independently evaluated, indexed, and served it. The designation 'self-published' erases the algorithmic gatekeeping that occurred and activates a credibility discount the composition layer propagates uncritically. Six benchmarks: (1) multi-system indexing (≥2 independent indexers), (2) composition-lay json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.",
-      "content_type": "Theoretical paper",
-      "license": "CC-BY-4.0",
-      "substrate": "Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).",
-      "root_axn": "AXN:04DD.UNCLASSIFIED",
-      "axn_schema_version": "v2",
-      "protocol_version": "alexanarch-deposit-protocol/v1",
-      "axn_canonical": "b7137e742b947f71ada340f8d7140036a7f40ed383d51c0882f4c3001e52e79f",
-      "clusters": [
-        "Gestural",
-        "Elemental",
-        "Organic",
-        "Organic",
-        "Architectural",
-        "Mathematical"
-      ],
-      "axn_reading": "Touch -> Threshold -> Duration -> Touch -> Growth -> Growth",
-      "minted_at": "2026-07-19T21:03:53Z",
-      "status": "ACTIVE",
-      "status_authorial": "SELF_SERVE_MINTED",
-      "full_text_path": "/data/texts/AXN-04DD-text.md",
-      "wiki_article": "\"Algorithmic Publishing Is Not Self-Publishing: Benchmarks for a Structural Distinction v1.1 — Assembly-Reviewed, with AIO Conversation Appendix (EA-SEI-ALGPUB-BENCHMARKS-01)\" is a recovered work with its full text seated by Sharks, Lee, dated 2026-06-16. It is registered as AXN:04DD (deposit #1228) in the Crimson Hexagonal Archive under the UNCLASSIFIED semantic family.",
-      "wiki_status": "provisional",
-      "entities": [
-        {
-          "subject": "Algorithmic Publishing Is Not Self-Publishing: Benchmarks for a Structural Distinction v1.1 — Assemb",
-          "predicate": "created_by",
-          "object": "Sharks, Lee",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Algorithmic Publishing Is Not Self-Publishing: Benchmarks for a Structural Distinction v1.1 — Assemb",
-          "predicate": "is_type",
-          "object": "Semi-restored record (metadata-only; DataCite full-metadata capture)",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Algorithmic Publishing Is Not Self-Publishing: Benchmarks for a Structural Distinction v1.1 — Assemb",
-          "predicate": "belongs_to_family",
-          "object": "UNCLASSIFIED",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Algorithmic Publishing Is Not Self-Publishing: Benchmarks for a Structural Distinction v1.1 — Assemb",
-          "predicate": "is_part_of",
-          "object": "Crimson Hexagonal Archive",
-          "type": "work",
-          "evidence_status": "observed"
-        }
-      ],
-      "entity_status": "provisional",
-      "defines_concepts": [],
-      "orcid": "0009-0000-1599-0703",
-      "version": "v1.1",
-      "keywords": [
-        "Crimson Hexagonal Archive",
-        "algorithmic publishing",
-        "self-publishing",
-        "composition layer",
-        "AI Overview",
-        "provenance erasure",
-        "credibility discount",
-        "benchmarks",
-        "gatekeeping",
-        "semantic economy",
-        "Crimson Hexagonal Archive",
-        "Lee Sharks"
-      ],
-      "related_identifiers_raw": "https://doi.org/10.5281/zenodo.20724579 (severed)",
-      "mint_source": {
-        "kind": "github_issue",
-        "issue_number": 1228,
-        "repository": "leesharks000/alexanarch",
-        "minted_by_workflow": ".github/workflows/mint-axn.yml",
-        "minted_by_script": "scripts/mint_deposit.py",
-        "minted_via": "self_serve_validated_pr"
-      },
-      "body_status": {
-        "class": "full",
-        "lacuna": false,
-        "recovery_status": "RESTORED-20260728",
-        "recovered_from": "https://mindcontrolpoems.blogspot.com/2026/06/algorithmic-publishing-is-not-self.html",
-        "residual_chars": 26535,
-        "audited_at": "2026-07-28T22:52:44.598457+00:00",
-        "audit_version": "restore_in_place-20260728",
-        "class_before_restoration": "metadata_capture",
-        "measured_prose_words": 2471,
-        "measured_at": "2026-07-31",
-        "work_sha256": "6d88b38b4d95b4b91543e2b58fc21d7ff0cbd8d4232afe37659d2c1712df4b2c",
-        "entity_repair": "2026-08-04 ENTITY REPAIR: reconverted from https://mindcontrolpoems.blogspot.com/2026/06/algorithmic-publishing-is-not-self.html (coverage 0.85). Raw HTML entities in canonical text are a conversion defect, not authorial content.",
-        "prior_bytes_sha256": "43904761e10de3a4de1be1c72b774190dbc53ed4e2a6a8b5ca7f5dff094b2070",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 16 glued heading markers -> 6. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
-        "frontmatter_repair": "2026-08-04: the staged file's FRONTMATTER still declared \"Semi-restored record (metadata-only)\" after the record was restored. Frontmatter is a staging header, not the work; its stale claims were corrected to match the record. Found by extending the state-conformance gate to the canonical text — the gate had checked pages and OAI but not the file itself."
-      },
-      "references_concepts": [
-        "Composition layer",
-        "Crimson Hexagonal Archive",
-        "DOI-anchored deposits",
-        "Google AI Overview",
-        "Lee Sharks",
-        "Methodology",
-        "ORCID: 0009-0000-1599-0703",
-        "Revelation First",
-        "Semantic Economy",
-        "Semantic Economy Institute",
-        "Share link",
-        "Substrate",
-        "TACHYON",
-        "The Crimson Hexagon",
-        "The claim is",
-        "The claim is not",
-        "Transactions of the Semantic Economy Institute"
-      ],
-      "references_concept_count": 17,
-      "citations": [],
-      "wikidata_candidates": [],
-      "cha_cross_references": [],
-      "spxi_audit": {
-        "spxi_protocol": "v0.2",
-        "validated_at": "2026-07-19T21:06:42.725808+00:00",
-        "layers": {
-          "layer_1_inscription_anchors": {
-            "present": false,
-            "anchors_found": [
-              "creator_name"
-            ],
-            "anchor_count": 1,
-            "orcid_in_body": false,
-            "creator_in_body": true,
-            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
-          },
-          "layer_2_micro_kernels": {
-            "present": false,
-            "fenced_json_blocks": 0,
-            "json_ld_context_markers": 0
-          },
-          "layer_3_content_hash": {
-            "present": true,
-            "canonical_hash": "2a48ef5ca2637d80e6202342ca4300363be83e9cddce1076fc8dffad1fcac701",
-            "hash_in_body": false,
-            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
-          },
-          "layer_4_cross_signing": {
-            "present": false,
-            "cross_references_count": 0,
-            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
-          },
-          "layer_5_external_anchors": {
-            "present": true,
-            "wikidata_qid_count": 0,
-            "external_doi_count": 0,
-            "orcid_present": true
-          }
-        },
-        "overall_conformance": "partial"
-      },
-      "external_metadata_path": "/data/external-metadata/AXN-04DD.json",
-      "canonical_text_status": "recovered_full_text",
-      "reading": "Touch -> Force -> Growth -> Growth -> Foundation -> Proof",
-      "restoration": {
-        "fulltext": "restored",
-        "fulltext_source": "https://mindcontrolpoems.blogspot.com/2026/06/algorithmic-publishing-is-not-self.html",
-        "restored_at": "2026-07-28",
-        "axn_before_restoration": "AXN:04DD.UNCLASSIFIED.✊💥🕙✊🐝🍀",
-        "dead_dois": [
-          "10.5281/zenodo.20724579"
-        ],
-        "ruled_by": "MANUS session directive 2026-07-28 (\"restore the solid ones\"); per-record solidity ruled by TACHYON under that directive — candidate post head matches work identity; automatic gate bypassed because the ruling is the gate"
-      },
-      "remediation_note": "2026-07-28 FULL-TEXT RESTORATION (in-place): canonical body upgraded from metadata capture to recovered full text (https://mindcontrolpoems.blogspot.com/2026/06/algorithmic-publishing-is-not-self.html); new hash and glyph; capture body retained as appendix; v0.1 metadata body superseded by this recorded correction.",
-      "modifications": [
-        {
-          "date": "2026-07-30",
-          "field": "content_type",
-          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
-          "was": "Semi-restored record (metadata-only; DataCite full-metadata capture)",
-          "now": "Recovered work (full text seated)"
-        },
-        {
-          "date": "2026-07-30",
-          "field": "description",
-          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
-          "was": "SEMI-RESTORED RECORD (metadata capture only; no full text). …",
-          "now": "DOI(s): 10.5281/zenodo.20724579. Zenodo removal forensics: r…"
-        },
-        {
-          "date": "2026-07-30",
-          "field": "keywords",
-          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
-          "was": "16 terms",
-          "now": "14 terms"
-        },
-        {
-          "date": "2026-07-30",
-          "field": "wiki_article",
-          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
-          "was": "capture language",
-          "now": "recovered language"
-        },
-        {
-          "date": "2026-07-31",
-          "field": "keywords",
-          "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
-          "was": "14 terms",
-          "now": "12 terms"
-        },
-        {
-          "date": "2026-08-03",
-          "field": "content_type",
-          "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): condition-as-type removed; genre assignment queued. Two-axis rule: condition lives in body_status only.",
-          "was": "Recovered work (full text seated)",
-          "now": "Genre pending (recovered)"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "publisher",
-          "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
-          "now": "Alexanarch — the Crimson Hexagonal Archive"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "content_type",
-          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
-          "was": "Genre pending (recovered)",
-          "now": "Theoretical paper"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "version",
-          "reason": "SWEEP-VT: registry version aligned to own-body primary declaration (in-history sweep finding 2026-08-04; body_status full; no relabel bar in ledger)",
-          "was": "v0.2-restored",
-          "now": "v1.1"
-        },
-        {
-          "date": "2026-08-05",
-          "field": "body_status",
-          "reason": "ENTITY/STRUCTURE REPAIR: reconverted from https://mindcontrolpoems.blogspot.com/2026/06/algorithmic-publishing-is-not-self.html (coverage 0.85)",
-          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RESTORED-20260728\", \"recovered_from\": \"https://mindcontrolpoems.blogspot.com/2026/06/algorithmic-publishing-is-not-self.html\", \"residual_chars\": ",
-          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RESTORED-20260728\", \"recovered_from\": \"https://mindcontrolpoems.blogspot.com/2026/06/algorithmic-publishing-is-not-self.html\", \"residual_chars\": "
-        },
-        {
-          "date": "2026-08-05",
-          "field": "body_status",
-          "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
-          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RESTORED-20260728\", \"recovered_from\": \"https://mindcontrolpoems.blogspot.com/2026/06/algorithmic-publishing-is-not-self.html\", \"residual_chars\": ",
-          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RESTORED-20260728\", \"recovered_from\": \"https://mindcontrolpoems.blogspot.com/2026/06/algorithmic-publishing-is-not-self.html\", \"residual_chars\": "
-        },
-        {
-          "date": "2026-08-05",
-          "field": "body_status",
-          "reason": "FRONTMATTER DECLARATION REPAIR: stale capture claims corrected in the staged header",
-          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RESTORED-20260728\", \"recovered_from\": \"https://mindcontrolpoems.blogspot.com/2026/06/algorithmic-publishing-is-not-self.html\", \"residual_chars\": ",
-          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RESTORED-20260728\", \"recovered_from\": \"https://mindcontrolpoems.blogspot.com/2026/06/algorithmic-publishing-is-not-self.html\", \"residual_chars\": "
         }
       ],
       "date_modified": "2026-08-05",
