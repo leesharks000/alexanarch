@@ -9473,11 +9473,18 @@
         "audit_version": "v3-dual-store+recovery-map",
         "measured_prose_words": 3522,
         "measured_at": "2026-07-31",
-        "work_sha256": "f142546e9158aba2950baeddb0b19c107f5803743470ce1d22b51a2f4e353aef",
-        "prior_bytes_sha256": "0d6a08787571415b4d1bec9f9393a7c6b1692a3e0c20f084804f4fd913c71972",
-        "source_recovery": "2026-08-04 AUDIT-DIRECTED RECOVERY: audit directive \"Seat Lee Sharks as primary author with TACHYON, preserve Version A / draft identity and wo\" satisfied — manifestation located at https://mindcontrolpoems.blogspot.com/2026/02/the-missing-aspect-toward-non-indexed.html and seated via the newline-preserving converter (identity probe 1.00, 20,300 chars).",
+        "work_sha256": "e8eef26f9bf2de170860a11861489f54b23273d71e51ae54c9be5e0fab38c439",
+        "prior_bytes_sha256": "2c7f09cc14885e2aeede88f117307308f1c70a939bc6a484ad191001744b4aa8",
+        "source_recovery": "2026-08-05 AUTHORIAL FILE SEATED (MANUS-supplied NIP_VERSION_A_technical_seed.md, 27,673 chars). DRAFT-OVER-DEPOSIT CORRECTED: #434 had been carrying the BLOG version at 20,305 chars. The section structure is the same (0 headings vs 0); the difference is +7,368 chars of expansion WITHIN sections and 7 additional tables — the blog copy is a compressed rendering, not a differently-organised one. #1338 had been declared LACUNA earlier today after one conversation-search pass; the mark is lifted. Both records deposit Version A; #1307 is the metadata packet, a separate object.",
         "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 43 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
-        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write.",
+        "duplicate_witness_pair": {
+          "records": [
+            434,
+            1338
+          ],
+          "note": "Both records deposit Version A (Technical Seed); both now carry the authorial file. #1307 is the metadata packet, a separate object."
+        }
       },
       "canonical_text_status": "canonical_full_text",
       "modifications": [
@@ -9535,6 +9542,20 @@
           "reason": "DW-028 intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
           "was": "English lacks a true non-indexed perfective aspect.",
           "now": "Version A, the Technical Seed and extensive working draft that precedes the two records titled *The Non-Indexed Perfective: A Citational Intervention*. It states the proposed linguistic problem, sketches a historical-material account of English aspect, connects indexed completion to labor, law, colonial records, news, and summarizer systems, and outlines diagnostic tests for translation, expression, philosophical strain, and machine summarization.\n\nThe draft also surveys candidate constructions and proposes an operative zero construction using a noun phrase followed by a colon and past participle. Its value is developmental and documentary: later versions revise, compress, cite, and expand these claims. It should be retrieved as the technical origin of the Three-Body Genesis, not as the final intervention."
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "AUTHORIAL VERSION A SEATED: blog version superseded by the fuller authorial file; lacuna lifted where declared",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 24678, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 24678, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "Recovery note corrected: the authorial file expands within the blog copy's section structure rather than restoring absent sections",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 24678, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 24678, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
       ],
       "date_modified": "2026-08-05",

@@ -10,7 +10,14 @@ def parse(path):
     src = re.search(r'\*\*Source commit:\*\*\s*`([0-9a-f]+)`', raw)
     label = re.search(r'Batch (DW-\d+)', raw)
     out = []
-    for b in re.split(r'\n## Record #', raw)[1:]:
+    # DW-032 introduced a second batch format: '## #517 — `AXN:...`' headers and
+    # '### Proposed replacement description' field names, where earlier batches
+    # used '## Record #517' and '### Proposed description'. Accept both rather
+    # than silently parsing zero records (DW-032 seated 0/24 before this).
+    blocks = re.split(r'\n## Record #', raw)[1:]
+    if not blocks:
+        blocks = [b for b in re.split(r'\n## #', raw)[1:] if re.match(r'\d+', b)]
+    for b in blocks:
         n = int(re.match(r'(\d+)', b).group(1))
         def g(pat, flags=0):
             m = re.search(pat, b, flags)
@@ -18,8 +25,8 @@ def parse(path):
         out.append({'n': n,
                     'axn': g(r'\*\*AXN:\*\*\s*`([^`]+)`'),
                     'action': g(r'###\s*Action\s*\n+\*\*([^*]+)\*\*'),
-                    'desc': g(r'###\s*Proposed description\s*\n+(.*?)(?=\n###|\n---|\Z)', re.S),
-                    'wiki': g(r'###\s*Proposed wiki\s*\n+(.*?)(?=\n###|\n---|\Z)', re.S)})
+                    'desc': (g(r'###\s*Proposed (?:replacement )?description\s*\n+(.*?)(?=\n###|\n---|\n## |\Z)', re.S)),
+                    'wiki': (g(r'###\s*Proposed (?:replacement )?wiki(?: article)?\s*\n+(.*?)(?=\n###|\n---|\n## |\Z)', re.S))})
     return out, (src.group(1) if src else ''), (label.group(1) if label else 'DW-???')
 
 def verify(it, d):
