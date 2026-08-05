@@ -30861,6 +30861,25 @@
    "operator": "TACHYON",
    "date": "2026-08-05",
    "wave": "WIKI-COVERAGE+TABLE-WITHDRAWAL"
+  },
+  {
+   "repair_id": "R-1222",
+   "deposit_number": null,
+   "batch": true,
+   "type": "PDF_RESYNC",
+   "records": [
+    201,
+    210,
+    445,
+    696,
+    1090,
+    1147,
+    1409
+   ],
+   "basis": "PDF layer re-synchronised after the byte-repair waves: 468 stale -> 7. Integrity verified on MANUS's instruction after timed-out batches: no file under 8KB across 1,431 PDFs, pdfinfo valid on a random sample of 10, and pdftotext TAIL-match 1.00 on 8 records (the check that detects a build cut mid-document). No truncation. SEVEN REMAIN UNBUILDABLE, diagnosed not patched: #201,#210,#445,#696,#1090,#1147 fail with 'Undefined control sequence' AT HEAD — pre-existing, not regressions (verified by reverting the builder and retesting); #1409 fails 'Too deeply nested' though its body's maximum list indent is 2, so the nesting comes from the wrapper's generated structure. Three attempted fixes were reverted: a wrapper hash guard that fired too early, a blanket #/%/& escape that corrupted URLs and broke six previously-succeeding builds, and a narrowed variant that still failed.",
+   "operator": "TACHYON",
+   "date": "2026-08-05",
+   "wave": "PDF-RESYNC"
   }
  ]
 }
