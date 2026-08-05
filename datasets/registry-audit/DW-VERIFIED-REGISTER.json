@@ -1,7 +1,7 @@
 {
  "artifact": "DW-VERIFIED-REGISTER",
  "version": "1.0",
- "updated": "2026-08-05 (DW-001..029)",
+ "updated": "2026-08-05 (DW-001..030)",
  "purpose": "Durable record of which descriptions and wiki articles have been editorially inspected and verified clean, so no future pass re-derives the question. LABOR prepares; TACHYON verifies against each record's own deposited body (AXN identity match + factual probes: distinctive figures and claimed quotations, name-quotes exempt); MANUS authority stands over both.",
  "verification_standard": {
   "identity": "batch AXN must equal registry AXN",
@@ -822,6 +822,43 @@
    ],
    "staleness_gate": {
     "result": "clean"
+   }
+  },
+  {
+   "batch": "DW-030",
+   "source_commit": "c5362b6b4da1ee7b8e625608ac571f17c45a528b",
+   "prepared_by": "LABOR",
+   "verified_by": "TACHYON",
+   "date": "2026-08-05",
+   "records": [
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492
+   ],
+   "staleness_gate": {
+    "records_changed_since_pin": 16,
+    "adjudication": "The 16 are body_status writes from TACHYON's OWN W13 regression repair between the pin and intake — not content LABOR described. Pre-pin descriptions were checked and none were boilerplate; the batch text was scanned and contains no stale-state language. SAFE TO SEAT. First batch where the gate fired on self-caused drift rather than on a real collision."
    }
   }
  ],
@@ -5937,14 +5974,278 @@
    "staleness": "gated clean",
    "desc_sha256": "48570c4befb186a2",
    "wiki_sha256": "5274c1c5833aa0f5"
+  },
+  "469": {
+   "axn": "AXN:011F.GOVERNANCE.⛵🔵🦋🔖🜁🌲",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "1 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "9e1f1045cbeca711",
+   "wiki_sha256": "efb0eb4ac434d195"
+  },
+  "470": {
+   "axn": "AXN:0120.GOVERNANCE.❄️🪄🌅✏️🌉🕔",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "0 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "12139bef84497414",
+   "wiki_sha256": "4f0974daab99eebb"
+  },
+  "471": {
+   "axn": "AXN:0121.GOVERNANCE.🍁🪝🀄✊🏰♆",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "3 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "bb05b60b406c4c8d",
+   "wiki_sha256": "65780eb18b5501a2"
+  },
+  "472": {
+   "axn": "AXN:0123.GOVERNANCE.🔙🧭📝🗡️❌🎻",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "0 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "0006ba2bd7e4ab1e",
+   "wiki_sha256": "c7a47335a7b8ce17"
+  },
+  "473": {
+   "axn": "AXN:0124.GOVERNANCE.⊗⚪🚪🕔🕖♠️",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "2 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "608360281a1148ce",
+   "wiki_sha256": "e21501ae90364265"
+  },
+  "474": {
+   "axn": "AXN:0125.GOVERNANCE.🚀⛳◀️🔚↗️△",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "4 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "212a0cf03d176a32",
+   "wiki_sha256": "5e1aeb015efa09a2"
+  },
+  "475": {
+   "axn": "AXN:0126.GOVERNANCE.♆👋🙏🌔🧡🔗",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "0 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "987d3e98c6b718b5",
+   "wiki_sha256": "52f542af4815cc3c"
+  },
+  "476": {
+   "axn": "AXN:0127.GENERATIVE.↘️🚩🔍⏰🔭❌",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "0 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "29bdcb8c9b4c6a31",
+   "wiki_sha256": "4f182496bed27501"
+  },
+  "477": {
+   "axn": "AXN:0128.GOVERNANCE.♊🌑🎭🔃🌱🪨",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "0 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "ca30062aa941897a",
+   "wiki_sha256": "a931b4a77176b732"
+  },
+  "478": {
+   "axn": "AXN:0129.GOVERNANCE.▽🦅⭐☀️🔔🌠",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "0 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "b3db09bb1b6263ea",
+   "wiki_sha256": "2575ba2e3d7495c7"
+  },
+  "479": {
+   "axn": "AXN:012A.GOVERNANCE.📦🔒🏷️🪦🕚♋",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "2 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "d4ecac38c3f141fd",
+   "wiki_sha256": "c1b3d1214691353f"
+  },
+  "480": {
+   "axn": "AXN:012B.GOVERNANCE.⚫🌊▶️🟣📋♅",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "1 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "4dbeeb903130fb30",
+   "wiki_sha256": "3da2b8d1dc79a017"
+  },
+  "481": {
+   "axn": "AXN:012C.GOVERNANCE.📦🎬⭕🗺️🌻💥",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "3 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "676b74bd55dc7038",
+   "wiki_sha256": "ac9769677571628b"
+  },
+  "482": {
+   "axn": "AXN:012D.GOVERNANCE.⏫♆🕓▲🔵🔃",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "0 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "0606d65df3b0d6cf",
+   "wiki_sha256": "8e2ec42869c94fb0"
+  },
+  "483": {
+   "axn": "AXN:012E.GOVERNANCE.🔄🪞⏪✖️○🪸",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "1 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "69ca5b583e601075",
+   "wiki_sha256": "6868adde11ab7076"
+  },
+  "484": {
+   "axn": "AXN:012F.GOVERNANCE.🖊️🤲🎻🔻🗡️■",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "1 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "464a97879dcbe0d1",
+   "wiki_sha256": "bc4396d52d405c39"
+  },
+  "485": {
+   "axn": "AXN:0130.GOVERNANCE.👉👉🗼🏠🕗♈",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "0 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "72310f5cc1d994d3",
+   "wiki_sha256": "ea27d399545779aa"
+  },
+  "486": {
+   "axn": "AXN:0131.GOVERNANCE.♉✖️🜁🕔🌸⚡",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "2 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "408150e6ad1e7de7",
+   "wiki_sha256": "90ea934c83da7c90"
+  },
+  "487": {
+   "axn": "AXN:0132.GOVERNANCE.☽✨🥁⊕🔴💧",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "2 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "1bbb4fd18f362f9a",
+   "wiki_sha256": "f5225312dd2d2e94"
+  },
+  "488": {
+   "axn": "AXN:0133.GOVERNANCE.📝🏗️☿🎭🌒🖊️",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "0 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "8befa298c132d80d",
+   "wiki_sha256": "a7edf15f0c7ed786"
+  },
+  "489": {
+   "axn": "AXN:0134.GOVERNANCE.🌋🦋🌸∮⛳🌋",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "0 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "d063d963a2d6fdc3",
+   "wiki_sha256": "285ce34e40e1c945"
+  },
+  "490": {
+   "axn": "AXN:0135.EMPIRICAL.☽🪞⏪🪐👇🔭",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "2 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "ce27ff949ce8a2a6",
+   "wiki_sha256": "3eb07de75bb8f5e1"
+  },
+  "491": {
+   "axn": "AXN:0136.GOVERNANCE.🗝️🌓♊🌑🎺🔥",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "0 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "08276abf15998e73",
+   "wiki_sha256": "2c0e3cd36b29ad27"
+  },
+  "492": {
+   "axn": "AXN:0137.GOVERNANCE.🌇♥️🕗🟣∞🕕",
+   "batch": "DW-030",
+   "mode": "replaced",
+   "description": "VERIFIED_CLEAN",
+   "wiki": "VERIFIED_CLEAN",
+   "probes": "1 hit / 0 miss",
+   "staleness": "gated, drift adjudicated",
+   "desc_sha256": "556b0bc6790c1212",
+   "wiki_sha256": "1ba1fd3b54fe628b"
   }
  },
  "summary": {
-  "records_verified_clean": 468,
-  "replaced": 467,
+  "records_verified_clean": 492,
+  "replaced": 491,
   "retained_no_change": 1,
   "rejected": 0,
-  "coverage": "#1-#468 of 1,433 (32.7%)",
+  "coverage": "#1-#492 of 1,433 (34.3%)",
   "note": "Field hashes let a later pass detect drift: if a description/wiki no longer matches its recorded hash, it was changed after verification and needs re-inspection.",
   "staleness_protocol": "Every batch is gated before seating: (1) registry diff between the batch's pinned commit and HEAD; (2) scan of proposed text for language describing states the campaign has since repaired. LABOR works from a frozen commit while TACHYON changes records underneath it — the gate is what keeps the streams from colliding."
  }
