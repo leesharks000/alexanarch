@@ -196703,7 +196703,18 @@
         "audited_at": "2026-07-17T04:49:17.789813Z",
         "audit_version": "v3-dual-store+recovery-map",
         "measured_prose_words": 5032,
-        "measured_at": "2026-07-31"
+        "measured_at": "2026-07-31",
+        "primary_text_attachment": {
+          "attachment": "/data/attachments/AXN-049E-primary-text-stripped.md",
+          "kind": "primary text, identifier-stripped",
+          "sha256": "8d51999193323ddd0b35b64c6c8618d827641b8fcafc7a203d16d85e7b0af8ce",
+          "bytes": 24986,
+          "prepared": "2026-08-04",
+          "note": "Readable primary text as a downloadable companion to the analysis. Legal name redacted; private images referenced, not included.",
+          "role": "companion primary text for the analysis in this record (primary at #1165)",
+          "primary_deposit": 1165,
+          "analysis_deposit": 562
+        }
       },
       "canonical_text_status": "canonical_full_text",
       "modifications": [
@@ -196740,9 +196751,16 @@
           "reason": "AUDIT-DIRECTED CREATOR REPAIR (MANUS authorization 2026-08-04): structured roles projected per the audit's recommendation; creator string preserved unless the audit directs replacement and the observed byline differs",
           "was": "Lee Sharks",
           "now": "Rebekah Cranes"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "PRIMARY-TEXT ATTACHMENT: identifier-stripped primary text attached and cross-linked between the work and its analysis",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 31744, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 31744, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
       ],
-      "date_modified": "2026-08-04",
+      "date_modified": "2026-08-05",
       "publisher": "Pergamon Press"
     },
     {
@@ -321799,6 +321817,17 @@
               "bytes": 58248
             }
           ]
+        },
+        "primary_text_attachment": {
+          "attachment": "/data/attachments/AXN-049E-primary-text-stripped.md",
+          "kind": "primary text, identifier-stripped",
+          "sha256": "8d51999193323ddd0b35b64c6c8618d827641b8fcafc7a203d16d85e7b0af8ce",
+          "bytes": 24986,
+          "prepared": "2026-08-04",
+          "note": "Readable primary text as a downloadable companion to the analysis. Legal name redacted; private images referenced, not included.",
+          "role": "this record IS the primary text",
+          "primary_deposit": 1165,
+          "analysis_deposit": 562
         }
       },
       "references_concepts": [
@@ -321933,6 +321962,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "SOURCE RE-SEAT #1165 from authorial docx: whitespace discipline applied, images extracted to private staging and referenced by rhizome path, legal name and pandoc artifacts gone",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "PRIMARY-TEXT ATTACHMENT: identifier-stripped primary text attached and cross-linked between the work and its analysis",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p"
         }

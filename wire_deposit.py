@@ -923,6 +923,22 @@ def regenerate_static_page(d, eidx, registry=None):
                 elif line.startswith('#### '): ft_lines.append(f'<h4>{line[5:]}</h4>')
                 elif line.startswith('---'): ft_lines.append('<hr>')
                 elif line.startswith('&gt;'): ft_lines.append(f'<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0">{line[4:]}</blockquote>')
+                # IMAGE RENDERING (MANUS 2026-08-04: "long image url blob — why
+                # not just include the image?"). Markdown image syntax and bare
+                # image URLs were rendering as 240-character raw URLs. 88 records,
+                # 134 references. Render the image; keep the URL reachable via the
+                # link, and never inline anything but a known image host.
+                _im = re.match(r'^\s*!?\[[^\]]*\]\((https?://[^\s\)]+)(?:\s+&quot;[^&]*&quot;)?\)\s*$', line) \
+                      or re.match(r'^\s*(https?://\S+\.(?:png|jpe?g|gif|webp))\s*$', line, re.I) \
+                      or re.match(r'^\s*(https://blogger\.googleusercontent\.com/img/\S+)\s*$', line)
+                if _im:
+                    _u = _im.group(1)
+                    ft_lines.append(
+                        f'<figure style="margin:14px 0"><a href="{esc(_u)}" target="_blank" rel="noopener">'
+                        f'<img src="{esc(_u)}" alt="" loading="lazy" '
+                        f'style="max-width:100%;height:auto;border-radius:6px;border:1px solid var(--border)">'
+                        f'</a></figure>')
+                    continue
                 elif line.strip():
                     line = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', line)
                     line = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', line)
@@ -1248,6 +1264,24 @@ def regenerate_static_page(d, eidx, registry=None):
             '<div style="font-weight:600;margin-bottom:4px">Other instances of this work in the archive</div>'
             f'<ul style="margin:6px 0 6px 20px;padding:0">{_items}</ul>'
             '<div style="color:#666;font-size:.88em">Recorded as relations only — which instance supersedes which is not asserted here.</div></div>')
+    _pt = _bs.get('primary_text_attachment') if isinstance(_bs, dict) else None
+    if _pt and _pt.get('attachment'):
+        rel_block += (
+            '<div style="background:var(--surface);border-left:4px solid var(--teal);padding:10px 14px;'
+            'border-radius:6px;margin:12px 0;font-size:.9em">'
+            '<div style="font-weight:600;margin-bottom:4px">Primary text — downloadable</div>'
+            f'<a href="{esc(_pt["attachment"])}" style="color:var(--accent)">'
+            f'{esc(_pt["attachment"].split("/")[-1])}</a> '
+            f'<span style="color:#888;font-size:.9em">({_pt.get("bytes",0):,} bytes · '
+            f'sha256 {esc(str(_pt.get("sha256",""))[:16])}…)</span>'
+            f'<div style="color:#666;font-size:.88em;margin-top:4px">{esc(str(_pt.get("role","")))}. '
+            f'{esc(str(_pt.get("note","")))}</div>'
+            + (f'<div style="color:#666;font-size:.88em;margin-top:4px">Analysis: '
+               f'<a href="/s/records/{_pt["analysis_deposit"]}/" style="color:var(--accent)">#{_pt["analysis_deposit"]}</a> · '
+               f'Primary: <a href="/s/records/{_pt["primary_deposit"]}/" style="color:var(--accent)">#{_pt["primary_deposit"]}</a></div>'
+               if _pt.get('analysis_deposit') else '')
+            + '</div>')
+
     _ni = _bs.get('named_in') if isinstance(_bs, dict) else None
     if _ni and _ni.get('records'):
         _top = _ni['records'][:6]

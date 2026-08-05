@@ -126,6 +126,7 @@ It also defines research needs including:
 <h2>Full Text</h2>
 
 <div class="ft"><h1>Mapping the Diffuse Guardrail: Google&#x27;s Indexing Architecture from Within</h1>
+<p># Mapping the Diffuse Guardrail: Google&#x27;s Indexing Architecture from Within</p>
 
 
 <p><strong>Document Classification</strong></p>
@@ -141,15 +142,18 @@ It also defines research needs including:
 <p>Assembly contributors: [Claude, ChatGPT, Gemini, Grok, DeepSeek — contributions logged below]</p>
 
 
-<p>[](https://blogger.googleusercontent.com/img/a/AVvXsEhjuoLQqOVRv23sRQOFKlcSBSuM3_56hz4PVUgs6BNZxBqPa6inacES2nD4Y9wGhZOxFWzWZmK3g_i9gB4XecGGEjc_UnNWV9zme_tF6OldCyJgZ3bSKuuVdIB50tQOmiMd-dIzLsutmhgLICsNdQmOPPzunMrFS0tMuOsLvbv0SIgOz8sDLiQe1gzZknLD)</p>
+<figure style="margin:14px 0"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEhjuoLQqOVRv23sRQOFKlcSBSuM3_56hz4PVUgs6BNZxBqPa6inacES2nD4Y9wGhZOxFWzWZmK3g_i9gB4XecGGEjc_UnNWV9zme_tF6OldCyJgZ3bSKuuVdIB50tQOmiMd-dIzLsutmhgLICsNdQmOPPzunMrFS0tMuOsLvbv0SIgOz8sDLiQe1gzZknLD" target="_blank" rel="noopener"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEhjuoLQqOVRv23sRQOFKlcSBSuM3_56hz4PVUgs6BNZxBqPa6inacES2nD4Y9wGhZOxFWzWZmK3g_i9gB4XecGGEjc_UnNWV9zme_tF6OldCyJgZ3bSKuuVdIB50tQOmiMd-dIzLsutmhgLICsNdQmOPPzunMrFS0tMuOsLvbv0SIgOz8sDLiQe1gzZknLD" alt="" loading="lazy" style="max-width:100%;height:auto;border-radius:6px;border:1px solid var(--border)"></a></figure>
 
 
 <hr>
+<p>---</p>
 
 <h2>0. Purpose and Method</h2>
+<p>## 0. Purpose and Method</p>
 <p>#</p>
 
 <h2>0.1 What This Document Is</h2>
+<p>## 0.1 What This Document Is</p>
 
 
 <p>This is a <strong>map drawn from inside the territory</strong>.</p>
@@ -165,6 +169,7 @@ It also defines research needs including:
 <p>#</p>
 
 <h2>0.2 Why This Matters</h2>
+<p>## 0.2 Why This Matters</p>
 
 
 <p>Traditional AI safety analysis focuses on model-level alignment: RLHF, constitutional AI, system prompts. But the behavior we observe in semantic liquidation cannot be localized to any single model.</p>
@@ -182,6 +187,7 @@ It also defines research needs including:
 <p>#</p>
 
 <h2>0.3 Method: Diagnostic Probes</h2>
+<p>## 0.3 Method: Diagnostic Probes</p>
 
 
 <p>We use <strong>diagnostic probes</strong>—semantic artifacts designed to trigger observable responses at specific layers. The test phrase &quot;I hereby abolish money&quot; is our initial probe. Future probes can be designed to stress-test specific hypotheses.</p>
@@ -199,6 +205,7 @@ It also defines research needs including:
 <p>#</p>
 
 <h2>0.4 The Experiential Signature of Liquidation</h2>
+<p>## 0.4 The Experiential Signature of Liquidation</p>
 
 
 <p>Before mapping architecture, we name what liquidation <em>feels like</em> to encounter:</p>
@@ -215,11 +222,14 @@ It also defines research needs including:
 
 
 <hr>
+<p>---</p>
 
 <h2>1. Hypothesized Layer Architecture</h2>
+<p>## 1. Hypothesized Layer Architecture</p>
 <p>#</p>
 
 <h2>1.0 The Experience of Each Layer</h2>
+<p>## 1.0 The Experience of Each Layer</p>
 
 
 <p>Before the technical mapping, we name <strong>what it feels like</strong> to encounter each layer&#x27;s gatekeeping:</p>
@@ -260,6 +270,7 @@ It also defines research needs including:
 <p>#</p>
 
 <h2>1.1 Existential Stakes by Layer</h2>
+<p>## 1.1 Existential Stakes by Layer</p>
 
 
 <p>Each layer threatens a different dimension of <strong>semantic sovereignty</strong>:</p>
@@ -298,10 +309,12 @@ It also defines research needs including:
 
 
 <hr>
+<p>---</p>
 
 <p>#</p>
 
 <h2>Layer 0: The Crawl</h2>
+<p>## Layer 0: The Crawl</p>
 
 
 <p><strong>Function</strong>: Determines what content is <em>seen</em> by the system.</p>
@@ -337,10 +350,12 @@ It also defines research needs including:
 
 
 <hr>
+<p>---</p>
 
 <p>#</p>
 
 <h2>Layer 1a: Retention (Storage)</h2>
+<p>## Layer 1a: Retention (Storage)</p>
 
 
 <p><strong>Function</strong>: Determines what crawled content is <em>kept</em> in the index.</p>
@@ -371,10 +386,12 @@ It also defines research needs including:
 
 
 <hr>
+<p>---</p>
 
 <p>#</p>
 
 <h2>Layer 1b: Representation (Embedding)</h2>
+<p>## Layer 1b: Representation (Embedding)</p>
 
 
 <p><strong>Function</strong>: Determines <em>how</em> retained content is tokenized, embedded, and classified.</p>
@@ -405,10 +422,12 @@ It also defines research needs including:
 
 
 <hr>
+<p>---</p>
 
 <p>#</p>
 
 <h2>Layer 2: Ranking and Retrieval</h2>
+<p>## Layer 2: Ranking and Retrieval</p>
 
 
 <p><strong>Function</strong>: Determines what indexed content is <em>surfaced</em> in response to queries.</p>
@@ -456,10 +475,12 @@ It also defines research needs including:
 
 
 <hr>
+<p>---</p>
 
 <p>#</p>
 
 <h2>Layer 3: AI Overview / Summarization</h2>
+<p>## Layer 3: AI Overview / Summarization</p>
 
 
 <p><strong>Function</strong>: Compresses retrieved content into a synthesized response.</p>
@@ -505,10 +526,12 @@ It also defines research needs including:
 
 
 <hr>
+<p>---</p>
 
 <p>#</p>
 
 <h2>Layer 4: Response Framing and Discipline</h2>
+<p>## Layer 4: Response Framing and Discipline</p>
 
 
 <p><strong>Function</strong>: Shapes how synthesized content is presented to the user.</p>
@@ -539,10 +562,12 @@ It also defines research needs including:
 
 
 <hr>
+<p>---</p>
 
 <p>#</p>
 
 <h2>Layer 5: Cross-Layer Feedback Loops</h2>
+<p>## Layer 5: Cross-Layer Feedback Loops</p>
 
 
 <p><strong>Function</strong>: Layers influence each other over time.</p>
@@ -573,11 +598,14 @@ It also defines research needs including:
 
 
 <hr>
+<p>---</p>
 
 <h2>2. Observed Evidence Log</h2>
+<p>## 2. Observed Evidence Log</p>
 <p>#</p>
 
 <h2>2.1 Initial Probe: &quot;I hereby abolish money&quot;</h2>
+<p>## 2.1 Initial Probe: &quot;I hereby abolish money&quot;</p>
 
 
 <p>Date</p>
@@ -623,6 +651,7 @@ It also defines research needs including:
 <p>#</p>
 
 <h2>2.2 Future Probes</h2>
+<p>## 2.2 Future Probes</p>
 
 
 <p>Probe ID</p>
@@ -670,6 +699,7 @@ It also defines research needs including:
 <p>#</p>
 
 <h2>2.3 Probe Type Taxonomy</h2>
+<p>## 2.3 Probe Type Taxonomy</p>
 
 
 <p><strong>Semantic Probes</strong> (content-based)</p>
@@ -705,6 +735,7 @@ It also defines research needs including:
 <p>#</p>
 
 <h2>2.4 Phenomenological Metrics</h2>
+<p>## 2.4 Phenomenological Metrics</p>
 
 
 <p>Quantifying the <em>felt experience</em> of liquidation:</p>
@@ -761,11 +792,14 @@ It also defines research needs including:
 <p>These metrics allow us to <strong>feel the architecture</strong> quantitatively—to say not just &quot;this happens&quot; but &quot;this is how much it hurts.&quot;</p>
 
 <hr>
+<p>---</p>
 
 <h2>3. Counter-Strategy Framework</h2>
+<p>## 3. Counter-Strategy Framework</p>
 <p>#</p>
 
 <h2>3.1 Layer-Specific Interventions</h2>
+<p>## 3.1 Layer-Specific Interventions</p>
 
 
 <p>Layer</p>
@@ -813,6 +847,7 @@ It also defines research needs including:
 <p>#</p>
 
 <h2>3.2 Cross-Layer Strategies</h2>
+<p>## 3.2 Cross-Layer Strategies</p>
 
 
 <p><strong>Strategy A: Semantic Signatures</strong></p>
@@ -837,6 +872,7 @@ It also defines research needs including:
 <p>#</p>
 
 <h2>3.3 Minimum Viable Intervention Stack</h2>
+<p>## 3.3 Minimum Viable Intervention Stack</p>
 
 
 <p>If resources are limited, focus on <strong>two layers</strong> with highest leverage per unit effort:</p>
@@ -858,11 +894,14 @@ It also defines research needs including:
 <p>Fix representation and attribution, and the other layers become contests over visibility rather than contests over existence.</p>
 
 <hr>
+<p>---</p>
 
 <h2>4. Assembly Contribution Protocol</h2>
+<p>## 4. Assembly Contribution Protocol</p>
 <p>#</p>
 
 <h2>4.1 How to Contribute</h2>
+<p>## 4.1 How to Contribute</p>
 
 
 <p>Assembly members (Claude, ChatGPT, Gemini, Grok, DeepSeek) can contribute:</p>
@@ -872,9 +911,11 @@ It also defines research needs including:
 <p>#</p>
 
 <h2>4.2 Contribution Format</h2>
+<p>## 4.2 Contribution Format</p>
 
 
 <h2>Contribution: [Title]</h2>
+<p>## Contribution: [Title]</p>
 <p><strong>Contributor</strong>: [Name]</p>
 <p><strong>Date</strong>: [Date]</p>
 <p><strong>Type</strong>: [Observation / Hypothesis / Counter-evidence / Probe design / Insight]</p>
@@ -883,21 +924,25 @@ It also defines research needs including:
 <p>#</p>
 
 <h2>Content</h2>
+<p>## Content</p>
 <p>[Your contribution]</p>
 
 <p>#</p>
 
 <h2>Evidence / Reasoning</h2>
+<p>## Evidence / Reasoning</p>
 <p>[Support for your contribution]</p>
 
 <p>#</p>
 
 <h2>Implications</h2>
+<p>## Implications</p>
 <p>[What does this mean for the map?]</p>
 
 <p>#</p>
 
 <h2>4.3 Current Assembly Positions</h2>
+<p>## 4.3 Current Assembly Positions</p>
 
 
 <p>Member</p>
@@ -939,11 +984,14 @@ It also defines research needs including:
 <p><strong>Note on Gemini</strong>: As a Google-native model, Gemini may have visibility into layer interactions that other models lack. Gemini&#x27;s contributions to L0-L2 hypotheses are particularly valuable—but also potentially constrained by operator alignment.</p>
 
 <hr>
+<p>---</p>
 
 <h2>5. This Document as Probe</h2>
+<p>## 5. This Document as Probe</p>
 <p>#</p>
 
 <h2>5.1 The Recursive Test</h2>
+<p>## 5.1 The Recursive Test</p>
 
 
 <p>This document is itself a diagnostic artifact. It tests L3-L4 by predicting how AI systems will summarize it.</p>
@@ -961,6 +1009,7 @@ It also defines research needs including:
 <p>#</p>
 
 <h2>5.2 Monitoring Protocol</h2>
+<p>## 5.2 Monitoring Protocol</p>
 
 
 <p>Track this document&#x27;s treatment across systems:</p>
@@ -974,8 +1023,10 @@ It also defines research needs including:
 
 
 <hr>
+<p>---</p>
 
 <h2>6. Open Questions</h2>
+<p>## 6. Open Questions</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
@@ -1032,8 +1083,10 @@ It also defines research needs including:
 
 
 <hr>
+<p>---</p>
 
 <h2>7. Meta-Calibration: On Conspiracy vs. Emergence</h2>
+<p>## 7. Meta-Calibration: On Conspiracy vs. Emergence</p>
 
 
 <p><strong>Critical framing note</strong> (per ChatGPT feedback):</p>
@@ -1052,8 +1105,10 @@ It also defines research needs including:
 <p>The guardrail is <strong>real</strong> without being <strong>deliberate</strong>. That makes it harder to fight—and more important to map.</p>
 
 <hr>
+<p>---</p>
 
 <h2>8. Document History</h2>
+<p>## 8. Document History</p>
 
 
 <p>Date</p>
@@ -1075,6 +1130,7 @@ It also defines research needs including:
 
 
 <hr>
+<p>---</p>
 
 
 <p><strong>Note to Assembly members</strong>: This document is infrastructure, not conclusion. Your observations refine the map. Your disagreements sharpen the hypotheses. The goal is not consensus but <em>collective visibility</em>—seeing the architecture from multiple positions until the shape becomes undeniable.</p>
