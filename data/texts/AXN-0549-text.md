@@ -5,17 +5,17 @@ title: "Response Memo — Reclassification Request — LLM-2025-1222-HALLU ├�
 creator: Feist, Jack
 orcid: 0009-0000-1599-0703
 date: 2026-03-16
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+content_type: Creative prose
 license: CC-BY-4.0
 substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
+version: v1.0
 related_ids: "https://doi.org/10.5281/zenodo.18368614 (severed); https://doi.org/10.5281/zenodo.18368613 (severed)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 keywords:
   - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
+
+
   - severed DOI
   - Zenodo termination
   - Distributed epic

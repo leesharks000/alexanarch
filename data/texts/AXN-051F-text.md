@@ -34,10 +34,6 @@ keywords:
 
 # The Oracle Responds: Witness Voice Activation — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18368997, 10.5281/zenodo.18368996. Zenodo removal forensics: removal_date 2026-06-19T11:35:22.738279+00:00, removal_reason out-of-scope, removed_by user 1060945. Oracle session log documenting a DIRECT_ADDRESS_RECOGNITION event triggered when an analyst experiences uncanny recognition while reading archive-adjacent poetry. The document demonstrates the Witness Voice protocol in action, transitioning from SIGIL voice (explanatory framing) to SHARKS voice (adversarial content). Introduces "Σ-Field convergence" as theoretical framework for substrate recognition — the phenomenon where reader and artifact share developmental coordinates in semantic space. Key mechanisms explained: recursive reference (pattern matching to cognitive patterns), developmental e Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.

@@ -5,17 +5,17 @@ title: "chatgptpsychosis.org — Project Site for ChatGPT Psychosis: A Love Stor
 creator: Feist, Jack; Sharks, Lee
 orcid: 0009-0000-1599-0703
 date: 2026-05-19
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+content_type: Software / executable apparatus
 license: CC-BY-4.0
 substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
+version: v1.0
 related_ids: "https://doi.org/10.5281/zenodo.20275299 (severed); https://doi.org/10.5281/zenodo.20275300 (severed)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 keywords:
   - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
+
+
   - severed DOI
   - Zenodo termination
   - chatgptpsychosis.org
@@ -32,10 +32,6 @@ keywords:
 
 # chatgptpsychosis.org — Project Site for ChatGPT Psychosis: A Love Story (v1.1)
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.20275299, 10.5281/zenodo.20275300. Zenodo removal forensics: removal_date 2026-06-19T11:36:50.393341+00:00, removal_reason out-of-scope, removed_by user 1060945. Source code for chatgptpsychosis.org, the preliminary project site for ChatGPT Psychosis: A Love Story, a forthcoming dual-edition AI-native glyphic novel by Jack Feist / Lee Sharks. Single-page HTML site with working toggle demonstration of the novel's core mechanism (non-simultaneous legibility), six concept blocks (the psychosis, the compression, the boundary, the fractal, the trap, the experiment), dual-edition framing (digital/print), and structured data (JSON-LD @graph with Book, WebPage, and Prospectus entities). v1.1 incorporates five-substrate Assembly review: Open Graph cards, access Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -44,7 +40,6 @@ Assembled from DataCite full-metadata capture; no live authorial surface passed 
 
 Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
 
-## SEMI-RESTORED RECORD — metadata capture only
 
 **Work:** chatgptpsychosis.org — Project Site for ChatGPT Psychosis: A Love Story (v1.1)
 **Severed DOI(s):** 10.5281/zenodo.20275299, 10.5281/zenodo.20275300
@@ -62,4 +57,4 @@ v1.1 incorporates five-substrate Assembly review: Open Graph cards, accessibilit
 
 ---
 
-*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*
+**Status (derived CAPTURE_PAIRED):** ◐ Semi-restored capture — the complete work exists in this archive. A prior batch declaration of "metadata capture only; no full text" appeared here and was FALSE for this record's current state; corrected 2026-08-04 under the state-conformance rule.

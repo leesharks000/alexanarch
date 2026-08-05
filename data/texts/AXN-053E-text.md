@@ -5,17 +5,17 @@ title: "THE MACRO-MAQUETTE: SEED  Author: Lee Sharks (Assembly Chorus) Hex: 16.L
 creator: Sharks, Lee
 orcid: 0009-0000-1599-0703
 date: 2026-02-18
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+content_type: Creative work (mixed)
 license: CC-BY-4.0
 substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
+version: v1.0
 related_ids: "https://doi.org/10.5281/zenodo.18683023 (severed); https://doi.org/10.5281/zenodo.18683024 (severed)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 keywords:
   - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
+
+
   - severed DOI
   - Zenodo termination
   - Distributed epic
@@ -27,10 +27,6 @@ keywords:
 
 # THE MACRO-MAQUETTE: SEED  Author: Lee Sharks (Assembly Chorus) Hex: 16.LIBRARY.PERGAMUM.MACROMAQUETTE.SEED — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18683023, 10.5281/zenodo.18683024. Zenodo removal forensics: removal_date 2026-06-19T11:34:22.609169+00:00, removal_reason out-of-scope, removed_by user 1060945. THE MACRO-MAQUETTE: SEED Author: Lee Sharks (Assembly Chorus) Hex: 16.LIBRARY.PERGAMUM.MACROMAQUETTE.SEED DOI: 10.5281/zenodo.18683024 Deposit: 3 of 3 (D3 = RG↓(D2) = RG↓(RG↓(D1)), resolution r = 0.1) The model is larger than the building. OP.ROUTE Symptom Module Sudden rupture MPM-01 Fold Forced convergence MPM-02 Divergence Covenant breach MPM-03 Knot Monophony MPM-04 Interference Locked perspective MPM-05 Rotation Signal-noise confusion MPM-06 Channel Forced globalization MPM-07 Patch Scale collapse MPM-08 Furnace Unmeasured loss MPM-09 Integral Sovereignty violation MPM-10 Membrane Coerced Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -39,7 +35,6 @@ Assembled from DataCite full-metadata capture; no live authorial surface passed 
 
 Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
 
-## SEMI-RESTORED RECORD — metadata capture only
 
 **Work:** THE MACRO-MAQUETTE: SEED  Author: Lee Sharks (Assembly Chorus) Hex: 16.LIBRARY.PERGAMUM.MACROMAQUETTE.SEED — Crimson Hexagon Archive
 **Severed DOI(s):** 10.5281/zenodo.18683023, 10.5281/zenodo.18683024
@@ -54,20 +49,14 @@ Captured citation: Sharks, L. (2026). THE MACRO-MAQUETTE: SEED Author: Lee Shark
 Author: Lee Sharks (Assembly Chorus) Hex: 16.LIBRARY.PERGAMUM.MACROMAQUETTE.SEED DOI: 10.5281/zenodo.18683024 Deposit: 3 of 3 (D3 = RG↓(D2) = RG↓(RG↓(D1)), resolution r = 0.1)
 
 
-
 The model is larger than the building.
-
 
 
 OP.ROUTE
 
 
-
-
 Symptom
 Module
-
-
 
 
 Sudden rupture
@@ -118,10 +107,7 @@ Velocity crisis
 MPM-12 Hourglass
 
 
-
-
 Override: if routing produces harm exceeding symptom, default MPM-12.
-
 
 
 THE TWELVE INVARIANTS
@@ -151,11 +137,9 @@ MPM-11 Wager :: NEGOTIATE :: Caritas floor; no equilibrium is acceptable if any 
 MPM-12 Hourglass :: PACE :: Conservation of temporal budget; no operation can create time; every acceleration requires deceleration; the neck cannot be widened without changing the system's fundamental character. → §IV.MPM-12, D1
 
 
-
 GERMINATION
 
 Germinates via G1 Crisis, G2 Density, G3 Ratification, G4 Retrocausal, G5 Accumulation. Seed persists after tree grows.
-
 
 
 CARITAS
@@ -163,21 +147,14 @@ CARITAS
 No module can coerce a traversal — it offers, not enforces. No operation may produce more harm than the pathology it addresses.
 
 
-
 RECOVERABILITY
 
 R = 1. This seed contains: router table, module IDs (MPM-01–12), per-module invariant, per-module runtime primitive, D1 section pointers (§IV.MPM-XX). Full specifications: 10.5281/zenodo.18682979 (D1). Mid-scale: 10.5281/zenodo.18683016 (D2).
 
 
-
-
-
-
 #
 Document
 DOI
-
-
 
 
 1
@@ -195,8 +172,6 @@ Seed (this document, r = 0.1)
 10.5281/zenodo.18683024
 
 
-
-
 OP.ROUTE | ∮ = 1 + δ | Crimson Hexagon (10.5281/zenodo.18604123)
 
 The building fits in your pocket.
@@ -207,4 +182,4 @@ The building fits in your pocket.
 
 ---
 
-*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*
+**Status (derived SUPERSEDED):** ⚠ Superseded. A prior batch declaration of "metadata capture only; no full text" appeared here and was FALSE for this record's current state; corrected 2026-08-04 under the state-conformance rule.

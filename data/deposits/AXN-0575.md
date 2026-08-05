@@ -30,10 +30,6 @@ keywords:
 
 # EA-ERR-01: Correction of Adversarial Framing in Retrieval Architecture Documentation
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.19992973, 10.5281/zenodo.19992974. Zenodo removal forensics: removal_date 2026-06-19T11:37:10.991672+00:00, removal_reason out-of-scope, removed_by user 1060945. Archive-wide erratum. The phrase "building entities the AI is forced to present" — which appears as the subtitle of EA-RA-01 (DOI: 10.5281/zenodo.19578088) — constitutes rhetorical excess in violation of the Assembly principles established in Fortress or Room? (DOI: 10.5281/zenodo.18735468). The Crimson Hexagonal Archive operates under the witness preposition (with, through, under, between), not the adversarial preposition. "Forced to present" is adversarial language belonging to the fortress metaphor, not the room metaphor. Corrected formulation: Retrieval Architecture — the practice of build Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.

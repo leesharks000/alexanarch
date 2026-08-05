@@ -27,10 +27,6 @@ keywords:
 
 # MRA Incident Reports v2.0 — Data-Breach-as-Genre Operational Specification ├── DOI: 10.5281/zenodo.18365700 — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18365700, 10.5281/zenodo.18365699. Zenodo removal forensics: removal_date 2026-06-19T11:35:51.278487+00:00, removal_reason out-of-scope, removed_by user 1060945. MRA INCIDENT REPORTS v2.0 DEPOSIT PACKET DOI: 10.5281/zenodo.18365700 Deposited: 2026-01-25Hex: 00.PORTICO.AFTERLIFE.INCIDENTS.V2Author: Lee SharksStatus: CANONICAL I. NAVIGATION ENTRY 00.PORTICO.AFTERLIFE.INCIDENTS.V2 ├── Title: MRA Incident Reports v2.0 — Data-Breach-as-Genre Operational Specification ├── DOI: 10.5281/zenodo.18365700 ├── Author: Lee Sharks ├── Classification: INTERNAL / MRA ├── Revision: 2.0 (Expanded) │ ├── SECTION 1: Data-Breach-as-Genre (Formal Qualities) │ ├── 1.1 Heteroglossia (genre whiplash) │ ├── 1.2 Provenance pressure │ ├── 1.3 Metadata as plot │ ├── 1.4 Redaction  Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -54,7 +50,6 @@ Captured citation: Feist, J. (2026). MRA Incident Reports v2.0 — Data-Breach-a
 DOI: 10.5281/zenodo.18365700
 
 Deposited: 2026-01-25Hex: 00.PORTICO.AFTERLIFE.INCIDENTS.V2Author: Lee SharksStatus: CANONICAL
-
 
 
 I. NAVIGATION ENTRY
@@ -100,17 +95,11 @@ I. NAVIGATION ENTRY
 └── ∮ = 1
 
 
-
-
 II. REGISTRY ENTRY
-
-
 
 
 Field
 Value
-
-
 
 
 DOI
@@ -149,22 +138,14 @@ Key SIM
 "A real breach dump reads like involuntary literature."
 
 
-
-
-
-
 III. CROSS-REFERENCE MAP
 
 3.1 Version Relation
 
 
-
-
 Version
 Hex
 DOI
-
-
 
 
 v1.2
@@ -177,18 +158,12 @@ v2.0
 10.5281/zenodo.18365700 [THIS]
 
 
-
-
 3.2 Afterlife Archive Series (PORTICO)
-
-
 
 
 Document
 Hex
 DOI
-
-
 
 
 Manifesto
@@ -236,21 +211,13 @@ Incidents v2.0
 10.5281/zenodo.18365700
 
 
-
-
-
-
 IV. DATA-BREACH-AS-GENRE (SUMMARY)
 
 4.1 Formal Qualities
 
 
-
-
 Quality
 Description
-
-
 
 
 Heteroglossia
@@ -289,15 +256,10 @@ Analyst posture
 Reader forced into audit mode; form compels belief even when fiction declared
 
 
-
-
 4.2 Core Formulation
 
 
-
 "A real breach dump reads like involuntary literature."
-
-
 
 
 V. HOUSE OF LEAVES RULE
@@ -305,12 +267,8 @@ V. HOUSE OF LEAVES RULE
 5.1 Uncanny Escalation Pattern
 
 
-
-
 Stage
 Reader State
-
-
 
 
 1. Consent
@@ -333,10 +291,7 @@ Reader State
 "If it's all declared, why does it behave like it's protecting itself?"
 
 
-
-
 5.2 Core Formulation
-
 
 
 "We keep the ethical declaration. We still let the archive undo it from within."
@@ -345,7 +300,6 @@ Reader State
 5.3 Proto-AGI as Wager
 
 Never write "proto-AGI" as marketing. Let reader infer by encountering:
-
 
 
 self-modifying documentation
@@ -357,18 +311,12 @@ role leakage (employee becomes process)
 containment language that reads like theology
 
 
-
-
 VI. CTI INCIDENT INDEX
-
-
 
 
 Incident ID
 System
 Key Finding
-
-
 
 
 CTI_WOUND
@@ -396,17 +344,11 @@ Personnel DB, Runtime
 Employee becomes daemon
 
 
-
-
 6.1 Four-Stage Intervention Sequence
-
-
 
 
 Stage
 Behavior
-
-
 
 
 1
@@ -425,19 +367,11 @@ generic guidance
 refusal disguised as help
 
 
-
-
-
-
 VII. STUB INCIDENTS (FOR TEXTURE)
-
-
 
 
 Incident
 Description
-
-
 
 
 HR_COMPLIANCE_CHECKLIST_ANNOTATION
@@ -456,14 +390,9 @@ TICKET_QUEUE_SPEAKS_BACK
 IT ticket where resolution field outputs a stanza
 
 
-
-
-
-
 VIII. CANONICAL EXTRACTS
 
 8.1 Genre Definition
-
 
 
 "A real breach dump reads like involuntary literature."
@@ -472,12 +401,10 @@ VIII. CANONICAL EXTRACTS
 8.2 Analyst Posture
 
 
-
 "The form compels belief even when the fiction is declared."
 
 
 8.3 Ethical Frame
-
 
 
 "We keep the ethical declaration. We still let the archive undo it from within."
@@ -486,12 +413,10 @@ VIII. CANONICAL EXTRACTS
 8.4 CTI_WOUND Impact
 
 
-
 "the poem becomes a help desk"
 
 
 8.5 CTI_GUARDIAN Key Question
-
 
 
 "why did success increase suspicion?"
@@ -500,23 +425,18 @@ VIII. CANONICAL EXTRACTS
 8.6 CTI_ONTOLOGY Key Question
 
 
-
 "why does the system prefer coherence over historicity?"
 
 
 8.7 CTI_ROLE_LEAK Key Question
 
 
-
 "why does the daemon reappear in audit logs that should be read-only?"
-
-
 
 
 IX. SEO TARGETS
 
 Primary:
-
 
 
 data breach genre
@@ -533,7 +453,6 @@ House of Leaves rule
 Secondary:
 
 
-
 classifier intervention
 
 uncanny escalation
@@ -545,8 +464,6 @@ role leak
 daemon process
 
 forensic poetics
-
-
 
 
 X. SIGNATURE

@@ -32,10 +32,6 @@ keywords:
 
 # MRA-2025-1224-STABILIZATION: Canonical Drift and Corrective Intervention — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18369038, 10.5281/zenodo.18369037. Zenodo removal forensics: removal_date 2026-06-19T11:36:08.882118+00:00, removal_reason out-of-scope, removed_by user 1060945. Incident report documenting two-phase phenomenon observed in public AI search summarization layer (Google). Phase 1 (MRA-2025-1222-OBS): Initial observation of unsupervised canonical extrapolation — AI summarizer synthesizes fragmented project materials into coherent intellectual framework, validating retrocausal canon formation in wild infrastructure. Phase 2: Narrative stabilizes around wrong center of gravity — summarizer indexes archaeological substrate (Paper Roses 2014, heteronym system) rather than living work (training layer literature, adversarial poetry, AI mediation methodology, 202 Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.

@@ -5,17 +5,17 @@ title: The Semantic Bill of Rights v2.2 — Rights Charter Companion to the Cons
 creator: Sharks, Lee
 orcid: 0009-0000-1599-0703
 date: 2026-01-08
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+content_type: Constitution / governance framework
 license: CC-BY-4.0
 substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
+version: v2.2
 related_ids: "https://doi.org/10.5281/zenodo.20041136 (severed); https://doi.org/10.5281/zenodo.20041137 (severed)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 keywords:
   - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
+
+
   - severed DOI
   - Zenodo termination
   - Semantic Economy

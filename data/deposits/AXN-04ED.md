@@ -22,10 +22,6 @@ keywords:
 
 # GW.TACHYON.zenodo — v10 (MMRS founding, capture registry v7.2, gallery rebuild, 666)
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: Zenodo tombstone citation_text capture. DOI(s): 10.5281/zenodo.20709610. Zenodo removal forensics: removal_date 2026-06-19T11:35:06.319712+00:00, removal_reason out-of-scope, removed_by user 1060945. Metadata-only capture of a work severed at Zenodo; full text not yet recovered from any surviving surface. Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from Zenodo tombstone citation_text capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -45,7 +41,6 @@ Captured citation: Sharks, L. (2026). GW.TACHYON.zenodo — v10 (MMRS founding, 
 **Removal forensics:** Zenodo removal forensics: removal_date 2026-06-19T11:35:06.319712+00:00, removal_reason out-of-scope, removed_by user 1060945. 
 
 No abstract survived in the capture; the title, creators, date, and DOIs above are the recovered identity of the work.
-
 
 
 ---

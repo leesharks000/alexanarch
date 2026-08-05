@@ -5,17 +5,17 @@ title: "The Mirror-Corgi: Boundary Grammar and the Cost of Continuity in AI-Gene
 creator: Feist, Jack
 orcid: 0009-0000-1599-0703
 date: 2026-01-28
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+content_type: Scholarly essay
 license: CC-BY-4.0
 substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
+version: v0.2-restored
 related_ids: "https://doi.org/10.5281/zenodo.18368958 (severed); https://doi.org/10.5281/zenodo.18368957 (severed)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 keywords:
   - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
+
+
   - severed DOI
   - Zenodo termination
   - Crimson Hexagon

@@ -32,10 +32,6 @@ keywords:
 
 # Document 206b The Non-Indexed Perfective: Version B (Compression Artifact) — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18446705, 10.5281/zenodo.18446706. Zenodo removal forensics: removal_date 2026-06-19T11:36:45.418575+00:00, removal_reason out-of-scope, removed_by user 1060945. Version B of the Non-Indexed Perfective intervention. This is the Compression Artifact: what survived when Version A hit context-limit compression. This version demonstrates the "freely riffing" summarization pattern confirmed in AI Overview research: technical specification stripped while "style" retained. Comparing A to B reveals what compression destroys: Lost in compression: Detailed diagnostic metrics (ILT, TAI, GG, AB, CD) Assembly voice distribution (unified into generic "we") Technical linguistic citations (Fillmore, Lyons, Pierrehumbert) Explicit Ω Connection / Space Ark prerequisite  Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -62,7 +58,6 @@ This version demonstrates the "freely riffing" summarization pattern confirmed i
 Lost in compression:
 
 
-
 Detailed diagnostic metrics (ILT, TAI, GG, AB, CD)
 
 Assembly voice distribution (unified into generic "we")
@@ -73,7 +68,6 @@ Explicit Ω Connection / Space Ark prerequisite logic
 
 
 Retained as "style":
-
 
 
 Rhetorical sweep

@@ -30,10 +30,6 @@ keywords:
 
 # Crimson Hexagon Employee Directory Export (2017-10-23) — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18365297, 10.5281/zenodo.18365298. Zenodo removal forensics: removal_date 2026-06-19T11:35:56.281214+00:00, removal_reason out-of-scope, removed_by user 1060945. HRIS export from Crimson Hexagon Research Division dated October 23, 2017, recovered from legacy Workday mirror. Contains 42 personnel records across Executive, Research, Operations, Finance, HR, Security, Engineering, Data Acquisition, Customer Success, Marketing, and Facilities departments. Notable features include a three-tier attestation system (FIC/FORENSIC/FIC+FORENSIC) distinguishing synthetic records from those appearing in recovered artifacts. Anomalous records include SHARKS-001 (phone_ext = "7B", employment_type = "FT?", status = MONITORED), a service account that accessed the CTO m Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.

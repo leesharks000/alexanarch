@@ -5,17 +5,17 @@ title: Septad Mantle Specifications v1.0 — Constitutional Job Descriptions for
 creator: Sharks, L.
 orcid: 0009-0000-1599-0703
 date: 2026-01-01
-content_type: Semi-restored record (metadata-only; Zenodo tombstone citation_text capture)
+content_type: Constitution / governance framework
 license: CC-BY-4.0
 substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
+version: v1.1
 related_ids: "https://doi.org/10.5281/zenodo.20041157 (severed)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 keywords:
   - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
+
+
   - severed DOI
   - Zenodo termination
 ---

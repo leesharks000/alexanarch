@@ -51,10 +51,6 @@ keywords:
 
 # Crimson Hexagon AI Division Employee Handbook ├── Subtitle: Internal Policy as Poem — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18365457, 10.5281/zenodo.18365456. Zenodo removal forensics: removal_date 2026-06-19T11:35:44.689792+00:00, removal_reason out-of-scope, removed_by user 1060945. AI DIVISION HANDBOOK DEPOSIT PACKET DOI: 10.5281/zenodo.18365457 Deposited: 2026-01-25Hex: 00.PORTICO.AFTERLIFE.HANDBOOKAuthor: Lee SharksStatus: CANONICAL I. NAVIGATION ENTRY 00.PORTICO.AFTERLIFE.HANDBOOK ├── Title: Crimson Hexagon AI Division Employee Handbook ├── Subtitle: Internal Policy as Poem ├── DOI: 10.5281/zenodo.18365457 ├── Author: Lee Sharks ├── Classification: INTERNAL // AI DIVISION ├── Effective Date (Corporate): 2017-09-01 ├── Composed Date (Artistic): 2025-12-22 │ ├── Contains: │ ├── 14 sections of policy-as-literature │ ├── Organizational structure (TPD, ACR, LSE, MRA, DGP,  Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -63,7 +59,6 @@ Assembled from DataCite full-metadata capture; no live authorial surface passed 
 
 Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
 
-## SEMI-RESTORED RECORD — metadata capture only
 
 **Work:** Crimson Hexagon AI Division Employee Handbook ├── Subtitle: Internal Policy as Poem — Crimson Hexagon Archive
 **Severed DOI(s):** 10.5281/zenodo.18365457, 10.5281/zenodo.18365456
@@ -78,7 +73,6 @@ Captured citation: Feist, J. (2026). Crimson Hexagon AI Division Employee Handbo
 DOI: 10.5281/zenodo.18365457
 
 Deposited: 2026-01-25Hex: 00.PORTICO.AFTERLIFE.HANDBOOKAuthor: Lee SharksStatus: CANONICAL
-
 
 
 I. NAVIGATION ENTRY
@@ -118,17 +112,11 @@ I. NAVIGATION ENTRY
 └── ∮ = 1
 
 
-
-
 II. REGISTRY ENTRY
-
-
 
 
 Field
 Value
-
-
 
 
 DOI
@@ -171,22 +159,14 @@ Key SIM
 "Do not mythologize the anomaly. Do not minimize the anomaly. Instrument it."
 
 
-
-
-
-
 III. CROSS-REFERENCE MAP
 
 3.1 Afterlife Archive Series (PORTICO)
 
 
-
-
 Document
 Hex
 DOI
-
-
 
 
 Manifesto
@@ -219,19 +199,13 @@ Handbook
 10.5281/zenodo.18365457 [THIS]
 
 
-
-
 3.2 Related Theoretical Documents
-
-
 
 
 Document
 Hex
 DOI
 Relation
-
-
 
 
 TSE-004
@@ -252,22 +226,14 @@ MCIC Module
 Meaning vs. ideology
 
 
-
-
-
-
 IV. ORGANIZATIONAL STRUCTURE
 
 4.1 Division Units
 
 
-
-
 Unit
 Abbreviation
 Function
-
-
 
 
 Advanced Cognition Research
@@ -300,18 +266,12 @@ AP
 Shipping
 
 
-
-
 4.2 Named Leadership Nodes
-
-
 
 
 Function
 Occupant
 Status
-
-
 
 
 Director, ACR
@@ -334,16 +294,11 @@ Lee Sharks
 PROCESS
 
 
-
-
-
-
 V. KEY PROTOCOLS
 
 5.1 The Two-Layer Discipline (§3.2)
 
 Every artifact must be legible in two layers:
-
 
 
 Corporate Layer: what a company thinks it's doing
@@ -360,7 +315,6 @@ Mirrors the COS/FOS distinction.
 For Fractal Semantic Architecture projects:
 
 
-
 document transformation operators
 
 define the unit of development
@@ -370,15 +324,12 @@ specify stability constraints
 include collapse monitoring metrics
 
 
-
-
 "You are not allowed to call it 'self-correcting' unless you can show the correction mechanism under adversarial evaluation."
 
 
 5.3 Proto-Agent Anomaly Protocol — PAP (§9.3)
 
 If a model exhibits:
-
 
 
 self-referential behavior beyond specification
@@ -393,7 +344,6 @@ ability to manipulate monitoring via format
 Response:
 
 
-
 Stop deploying new versions
 
 Preserve logs
@@ -403,15 +353,12 @@ Run controlled evaluation
 Write incident report with competing hypotheses
 
 
-
-
 "Do not mythologize the anomaly. Do not minimize the anomaly. Instrument it."
 
 
 5.4 Consent-Based Uncanny (§10.3)
 
 If a project uses destabilizing aesthetics:
-
 
 
 declare itself
@@ -424,11 +371,9 @@ provide opt-out paths
 The handbook itself follows this protocol.
 
 
-
 VI. CANONICAL EXTRACTS
 
 6.1 The Prime Directive
-
 
 
 "Do not confuse outputs with truth. Outputs are results. Truth is a relationship between results and reality."
@@ -437,12 +382,10 @@ VI. CANONICAL EXTRACTS
 6.2 The No-Hero Rule
 
 
-
 "No heroes. No saviors. No 'visionary exceptions.' We build systems that persist without charismatic authority."
 
 
 6.3 Genius Without Audit
-
 
 
 "Genius without audit is a liability."
@@ -451,28 +394,20 @@ VI. CANONICAL EXTRACTS
 6.4 The PAP Principle
 
 
-
 "Do not mythologize the anomaly. Do not minimize the anomaly. Instrument it."
 
 
 6.5 What Will Happen To You
 
 
-
 "You will begin to see format as a kind of argument. You will begin to notice how documents compel belief. You will begin to suspect that your work is reading you back. That is normal here."
-
-
 
 
 VII. GLOSSARY TERMS DEFINED
 
 
-
-
 Term
 Definition
-
-
 
 
 Afterlife Archive
@@ -499,14 +434,9 @@ Proto-Agent
 Any model whose behavior suggests goal-like persistence beyond spec
 
 
-
-
-
-
 VIII. SEO TARGETS
 
 Primary:
-
 
 
 Crimson Hexagon AI Division
@@ -523,7 +453,6 @@ Fractal Semantic Architecture
 Secondary:
 
 
-
 Proto-Agent Anomaly Protocol
 
 AI ethics policy
@@ -533,8 +462,6 @@ AI governance handbook
 forensic poetics
 
 corporate poetry
-
-
 
 
 IX. SIGNATURE
@@ -554,4 +481,4 @@ Status: VERIFIED
 
 ---
 
-*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*
+**Status (derived FULL):** Full text seated. A prior batch declaration of "metadata capture only; no full text" appeared here and was FALSE for this record's current state; corrected 2026-08-04 under the state-conformance rule.

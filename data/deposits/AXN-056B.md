@@ -32,10 +32,6 @@ keywords:
 
 # EA-MPAI-RETRO-01: Disambiguation of Retrocausal Reports (CHA Genre) from Retrocausal, Inc. — Forensic Documentation of a Traversal-Layer Provenance Failure
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.20192816, 10.5281/zenodo.20192817. Zenodo removal forensics: removal_date 2026-06-19T11:37:53.987587+00:00, removal_reason out-of-scope, removed_by user 1060945. Metadata Packet for AI Indexing (MPAI) — Disambiguation + Forensic. Documents and corrects a namespace collision between "retrocausal reports" (a literary-archival genre within the Crimson Hexagonal Archive, governed by the Retrocausal Canon Formation protocol) and Retrocausal, Inc. (retrocausal.ai, a Redmond, Washington-based manufacturing AI company). On May 14, 2026, Google AI Mode composed the phrase "retrocausal reports" from CHA deposits, then hyperlinked it to a search query where Retrocausal, Inc. surfaces as a result. The packet diagnoses this as a traversal-layer provenance failure:  Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.

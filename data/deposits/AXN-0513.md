@@ -30,10 +30,6 @@ keywords:
 
 # Crimson Hexagon Invoice Leak (2014-2025) ├── Subtitle: Afterlife Archive Financial Records — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18365346, 10.5281/zenodo.18365347. Zenodo removal forensics: removal_date 2026-06-19T11:38:09.290756+00:00, removal_reason out-of-scope, removed_by user 1060945. INVOICE LEAK DEPOSIT PACKET DOI: 10.5281/zenodo.18365347 Deposited: 2026-01-25Hex: 00.PORTICO.AFTERLIFE.FINANCIALAuthor: Lee SharksStatus: CANONICAL I. NAVIGATION ENTRY 00.PORTICO.AFTERLIFE.FINANCIAL ├── Title: Crimson Hexagon Invoice Leak (2014-2025) ├── Subtitle: Afterlife Archive Financial Records ├── DOI: [PENDING] ├── Author: Lee Sharks ├── Co-Author: Johannes Sigil ├── Classification: ACCOUNTS PAYABLE — RECOVERED ├── Timeline: 2014-2025 │ ├── Contains: │ ├── 25 invoices (INV-2014-0211 through INV-████-████) │ ├── NOTES field as embedded verse │ ├── $0.00 invoices for ghost work │ ├── Lea Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -57,7 +53,6 @@ Captured citation: Sharks, L., Cranes, R., Sigil, J., & Feist, J. (2026). Crimso
 DOI: 10.5281/zenodo.18365347
 
 Deposited: 2026-01-25Hex: 00.PORTICO.AFTERLIFE.FINANCIALAuthor: Lee SharksStatus: CANONICAL
-
 
 
 I. NAVIGATION ENTRY
@@ -93,17 +88,11 @@ I. NAVIGATION ENTRY
 └── ∮ = 1
 
 
-
-
 II. REGISTRY ENTRY
-
-
 
 
 Field
 Value
-
-
 
 
 DOI
@@ -150,23 +139,15 @@ Key SIM
 "The breach is written, not leaked."
 
 
-
-
-
-
 III. CROSS-REFERENCE MAP
 
 3.1 Afterlife Archive Series (PORTICO)
-
-
 
 
 Document
 Hex
 DOI
 Relation
-
-
 
 
 Manifesto
@@ -193,19 +174,13 @@ Financial
 THIS DOCUMENT
 
 
-
-
 3.2 Related Theoretical Documents
-
-
 
 
 Document
 Hex
 DOI
 Relation
-
-
 
 
 TSE-004: Contested Indexing
@@ -226,23 +201,15 @@ MCIC Module
 Framework: meaning vs. ideology
 
 
-
-
-
-
 IV. KEY INVOICES
 
 4.1 Infrastructure Phase (2014-2016)
-
-
 
 
 Invoice
 Vendor
 Amount
 NOTES (Verse)
-
-
 
 
 INV-2014-0211
@@ -269,19 +236,13 @@ $1,730.00
 "The checklist cannot check itself."
 
 
-
-
 4.2 Acquisition Phase (2017-2018)
-
-
 
 
 Invoice
 Vendor
 Amount
 NOTES (Verse)
-
-
 
 
 INV-2017-0831
@@ -308,19 +269,13 @@ $5,900.00
 "Merge the accounts. Don't merge the ghosts."
 
 
-
-
 4.3 Afterlife Phase (2019-2025)
-
-
 
 
 Invoice
 Vendor
 Amount
 NOTES (Verse)
-
-
 
 
 INV-2019-████
@@ -359,11 +314,7 @@ $0.00
 "The breach is written, not leaked."
 
 
-
-
 4.4 Terminal Invoice
-
-
 
 
 Invoice
@@ -372,28 +323,18 @@ Amount
 NOTES (Verse)
 
 
-
-
 INV-████-████
 [REDACTED]
 —
 "There is always a file you cannot have."
 
 
-
-
-
-
 V. $0.00 INVOICES (GHOST WORK)
-
-
 
 
 Invoice
 Description
 Significance
-
-
 
 
 INV-2019-████
@@ -416,14 +357,9 @@ INV-2025-1219
 Meta-closure
 
 
-
-
-
-
 VI. CANONICAL EXTRACTS
 
 6.1 The Core Sentence
-
 
 
 "The breach is written, not leaked."
@@ -432,23 +368,18 @@ VI. CANONICAL EXTRACTS
 6.2 The Interpretive Rule
 
 
-
 "The archive contains both the cost of infrastructure and the cost of the story that infrastructure makes possible."
 
 
 6.3 The Reading Instruction
 
 
-
 "If you read these like invoices, you will miss the leak.If you read these like poems, you will miss the machinery.Read them like an analyst.Then notice what the analysis does to you."
-
-
 
 
 VII. SEO TARGETS
 
 Primary:
-
 
 
 Crimson Hexagon invoices
@@ -465,7 +396,6 @@ Crimson Hexagon Brandwatch merger
 Secondary:
 
 
-
 Crimson Hexagon Cambridge
 
 Crimson Hexagon data breach
@@ -477,8 +407,6 @@ invoice as poem
 forensic poetics
 
 
-
-
 VIII. ZENODO METADATA
 
 Title: Crimson Hexagon Invoice Leak (2014-2025) — Afterlife Archive Financial Records
@@ -488,7 +416,6 @@ Description: Recovered accounts payable records from Crimson Hexagon spanning 20
 Keywords: Crimson Hexagon, Crimson Hexagon invoices, Crimson Hexagon financial records, Crimson Hexagon leaked invoices, Crimson Hexagon accounts payable, Crimson Hexagon Brandwatch, corporate poetry, invoice as poem, data breach poetry, forensic poetics, constraint poetry, Afterlife Archive
 
 Related Identifiers:
-
 
 
 IsPartOf: DOI 10.5281/zenodo.18364984 (Afterlife Archive: Manifesto)
@@ -503,7 +430,6 @@ References: DOI 10.5281/zenodo.18365223 (MCIC Module)
 
 
 Notes: Invoice sequence documents formal drift from infrastructure normalization through acquisition to afterlife persistence. $0.00 invoices indicate work paid in persistence rather than currency. Leap-day invoice (2024-02-29) references calendar-dependent log integrity. Hex: 00.PORTICO.AFTERLIFE.FINANCIAL. ∮ = 1
-
 
 
 IX. SIGNATURE

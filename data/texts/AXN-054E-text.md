@@ -5,17 +5,17 @@ title: "Combat Scholasticism, Part One — On the Condition: Three Lectiones on 
 creator: Sharks, Lee; Sigil, Johannes
 orcid: 0009-0000-1599-0703
 date: 2026-03-19
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+content_type: Scholarly essay
 license: CC-BY-4.0
 substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
+version: v1.0
 related_ids: "https://doi.org/10.5281/zenodo.19113821 (severed); https://doi.org/10.5281/zenodo.19113822 (severed)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 keywords:
   - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
+
+
   - severed DOI
   - Zenodo termination
   - distributed epic
@@ -26,10 +26,6 @@ keywords:
 
 # Combat Scholasticism, Part One — On the Condition: Three Lectiones on Finitude, Extraction, and the Sealed Bone (EA-CS-01.I)
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.19113821, 10.5281/zenodo.19113822. Zenodo removal forensics: removal_date 2026-06-19T11:35:36.973405+00:00, removal_reason out-of-scope, removed_by user 1060945. The first deposited chunk of Combat Scholasticism (EA-CS-01), a systematic commentary tradition reading the Crimson Hexagonal Archive under the governing pressure of contingent Omega. Part One — On the Condition — contains three lectiones executing the full 8-step scholastic method (textus, lectio, quaestio, objectiones, sed contra, respondeo, ad objectiones, nota) on the Ark's opening diagnosis: Lectio I.1 — "Meaning is a finite resource" (§0.0.1). FIBONACCI NODE (position 1). Both spirals begin undifferentiated. Emergence: the six expenditures as a taxonomy of compression modes; the propagat Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -38,7 +34,6 @@ Assembled from DataCite full-metadata capture; no live authorial surface passed 
 
 Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
 
-## SEMI-RESTORED RECORD — metadata capture only
 
 **Work:** Combat Scholasticism, Part One — On the Condition: Three Lectiones on Finitude, Extraction, and the Sealed Bone (EA-CS-01.I)
 **Severed DOI(s):** 10.5281/zenodo.19113821, 10.5281/zenodo.19113822
@@ -71,4 +66,4 @@ Hex: 00.CS.PART.IPergamon Press · Crimson Hexagonal Archive∮ = 1 + δ + δ_Ax
 
 ---
 
-*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*
+**Status (derived CAPTURE_PAIRED):** ◐ Semi-restored capture — the complete work exists in this archive. A prior batch declaration of "metadata capture only; no full text" appeared here and was FALSE for this record's current state; corrected 2026-08-04 under the state-conformance rule.

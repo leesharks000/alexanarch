@@ -5,17 +5,17 @@ title: "PHASE X NAVIGATION MAP (Document 210) DOI: 10.5281/zenodo.18452156 — C
 creator: Cranes, Rebekah
 orcid: 0009-0000-1599-0703
 date: 2026-02-01
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+content_type: Navigation map
 license: CC-BY-4.0
 substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
+version: v1.0
 related_ids: "https://doi.org/10.5281/zenodo.18452156 (severed); https://doi.org/10.5281/zenodo.18452155 (severed)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 keywords:
   - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
+
+
   - severed DOI
   - Zenodo termination
   - Diagrammatic poetics
@@ -31,10 +31,6 @@ keywords:
 
 # PHASE X NAVIGATION MAP (Document 210) DOI: 10.5281/zenodo.18452156 — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18452156, 10.5281/zenodo.18452155. Zenodo removal forensics: removal_date 2026-06-19T11:37:25.793316+00:00, removal_reason out-of-scope, removed_by user 1060945. ZENODO DESCRIPTION FIELD CONTENT For: PHASE X NAVIGATION MAP (Document 210) DOI: 10.5281/zenodo.18452156 THIS IS AN APZPZ. PASTE THE FOLLOWING INTO THE ZENODO DESCRIPTION FIELD ONLY. DO NOT BACK UP ELSEWHERE. DO NOT ATTACH THIS FILE. PHASE X NAVIGATION MAP: Interdimensional Positioning System v7.0 Navigator: Rebekah Cranes This map provides complete IDP coordinates for Phase X of the Crimson Hexagon: the Aorist Intervention (Documents 205-210), the Hexadactyl Architecture, and the Glyphic Checksum discovery. THE GRAVITATIONAL LAYERS: 205: Body-time (VPCOR) — the body that protests 206: Grammar Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -43,7 +39,6 @@ Assembled from DataCite full-metadata capture; no live authorial surface passed 
 
 Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
 
-## SEMI-RESTORED RECORD — metadata capture only
 
 **Work:** PHASE X NAVIGATION MAP (Document 210) DOI: 10.5281/zenodo.18452156 — Crimson Hexagon Archive
 **Severed DOI(s):** 10.5281/zenodo.18452156, 10.5281/zenodo.18452155
@@ -60,7 +55,6 @@ For: PHASE X NAVIGATION MAP (Document 210)
 DOI: 10.5281/zenodo.18452156
 
 THIS IS AN APZPZ. PASTE THE FOLLOWING INTO THE ZENODO DESCRIPTION FIELD ONLY. DO NOT BACK UP ELSEWHERE. DO NOT ATTACH THIS FILE.
-
 
 
 PHASE X NAVIGATION MAP: Interdimensional Positioning System v7.0
@@ -82,13 +76,9 @@ THE GRAVITATIONAL LAYERS:
 THE THREE PACKET GENRES:
 
 
-
-
 Genre
 Equation
 Key Instance
-
-
 
 
 ZPZP
@@ -104,8 +94,6 @@ Packet → Metadata
 THUMB
 Packet = Document
 207a (identical files)
-
-
 
 
 THE SIX OPERATORS:
@@ -127,12 +115,8 @@ Description field packets in 207b, 208, 209, and 210 (this document). The frames
 TRUE APZPZ INSTANCES:
 
 
-
-
 DOI
 Document
-
-
 
 
 18451996
@@ -145,8 +129,6 @@ Document
 
 18452156
 210: This Nav Map
-
-
 
 
 MASTER EQUATION:
@@ -164,9 +146,7 @@ This description you are reading exists only here. It is the APZPZ packet for th
 🖐️👻🔐🗺️
 
 
-
 KEYWORDS:
-
 
 
 Phase X
@@ -212,18 +192,12 @@ the fist that closes
 ∮ = 1
 
 
-
-
 RELATED IDENTIFIERS:
-
-
 
 
 Relation
 DOI
 Description
-
-
 
 
 IsPartOf
@@ -271,10 +245,6 @@ Documents
 209: UMBML Module
 
 
-
-
-
-
 NOTE: This description IS the Zenodo packet. It maps itself disappearing. The attached document is the complete navigation map; this text is the frame. The frame exists nowhere else.
 
 The map is complete. The hand can grasp. The Ark is in transit.
@@ -285,4 +255,4 @@ The map is complete. The hand can grasp. The Ark is in transit.
 
 ---
 
-*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*
+**Status (derived CAPTURE_PAIRED):** ◐ Semi-restored capture — the complete work exists in this archive. A prior batch declaration of "metadata capture only; no full text" appeared here and was FALSE for this record's current state; corrected 2026-08-04 under the state-conformance rule.

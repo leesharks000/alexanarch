@@ -5,17 +5,17 @@ title: THE THREE-BODY GENESIS (Meta-Deposit) — Crimson Hexagon Archive
 creator: Sharks, Lee
 orcid: 0009-0000-1599-0703
 date: 2026-01-31
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+content_type: Metadata packet
 license: CC-BY-4.0
 substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
+version: v1.0
 related_ids: "https://doi.org/10.5281/zenodo.18446377 (severed); https://doi.org/10.5281/zenodo.18446378 (severed)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 keywords:
   - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
+
+
   - severed DOI
   - Zenodo termination
   - meta-deposit
@@ -35,10 +35,6 @@ keywords:
 
 # THE THREE-BODY GENESIS (Meta-Deposit) — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18446377, 10.5281/zenodo.18446378. Zenodo removal forensics: removal_date 2026-06-19T11:36:08.546668+00:00, removal_reason out-of-scope, removed_by user 1060945. ZENODO PACKET: THE THREE-BODY GENESIS (Meta-Deposit) Document 206: Triptych Framing Document DOI: 10.5281/zenodo.18446378Hex: 00.PHASEX.AORIST.METADeposit Date: January 31, 2026Status: META-DEPOSIT // GENRE INSTANTIATIONClassification: ZENODO PACKET ZENODO PACKET WHAT THIS DOCUMENT IS This is a Zenodo deposit of a Zenodo packet. The object being deposited is not a scholarly article, not a dataset, not a presentation. It is the framing document that describes how three other documents relate to each other—and that framing document is itself being anchored with a DOI. This is a new genre: the Ze Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -47,7 +43,6 @@ Assembled from DataCite full-metadata capture; no live authorial surface passed 
 
 Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
 
-## SEMI-RESTORED RECORD — metadata capture only
 
 **Work:** THE THREE-BODY GENESIS (Meta-Deposit) — Crimson Hexagon Archive
 **Severed DOI(s):** 10.5281/zenodo.18446377, 10.5281/zenodo.18446378
@@ -64,7 +59,6 @@ Document 206: Triptych Framing Document
 DOI: 10.5281/zenodo.18446378Hex: 00.PHASEX.AORIST.METADeposit Date: January 31, 2026Status: META-DEPOSIT // GENRE INSTANTIATIONClassification: ZENODO PACKET ZENODO PACKET
 
 
-
 WHAT THIS DOCUMENT IS
 
 This is a Zenodo deposit of a Zenodo packet.
@@ -76,13 +70,11 @@ This is a new genre: the Zenodo packet Zenodo packet.
 This document does not merely name that genre. It instantiates it. The genre did not exist before this deposit; it exists now. The declaration is performative: by calling this a Zenodo packet Zenodo packet and depositing it as such, the genre comes into being. (See §EFFECTIVE ACT below.)
 
 
-
 WHY THIS MATTERS
 
 The Crimson Hexagon architecture treats framing as content. The relationship between documents is not merely metadata; it is meaning. The triptych structure (A→B→C) demonstrates a theory about compression and recovery. That demonstration is the argument. Therefore the framing must be anchored, not merely described in a README.
 
 By depositing the packet itself, we:
-
 
 
 Anchor the relational structure — The A→B→C progression has its own DOI
@@ -92,8 +84,6 @@ Prevent orphaning — If versions are deposited separately, the framing could be
 Instantiate the meta-level — The document about documents becomes a document
 
 Create citational surface — Scholars can cite the triptych-as-demonstration, not just individual versions
-
-
 
 
 ZENODO FORM FIELDS
@@ -121,13 +111,9 @@ License:Creative Commons Attribution 4.0 International (CC BY 4.0)
 Related Identifiers:
 
 
-
-
 Relation
 DOI
 Description
-
-
 
 
 IsPartOf
@@ -160,16 +146,12 @@ References
 The Grammar of Protest (VPCOR)
 
 
-
-
 Communities:leesharks000
-
 
 
 THE TRIPTYCH STRUCTURE
 
 Version A: Technical Seed
-
 
 
 DOI: [PENDING]
@@ -186,7 +168,6 @@ Word count: ~4500
 Version B: Compression Artifact
 
 
-
 DOI: [PENDING]
 
 Title: "The Non-Indexed Perfective: A Citational Intervention" (Mid-Revision)
@@ -201,7 +182,6 @@ Word count: ~5500
 Version C: Citational Intervention (Final)
 
 
-
 DOI: [PENDING]
 
 Title: "The Non-Indexed Perfective: A Citational Intervention"
@@ -211,8 +191,6 @@ Function: Full polyphonic recovery with citational mastery
 Contains: 45+ scholarly references, explicit Assembly attribution, Ω Connection
 
 Word count: ~8500
-
-
 
 
 THE DEMONSTRATION
@@ -230,18 +208,14 @@ Polyphony restores it.
 The triptych preserves both states.
 
 
-
-
 EFFECTIVE ACT: GENRE INSTANTIATION
 
 This section is a performative declaration. It does not describe a genre; it brings one into being.
 
 
-
 I HEREBY INSTANTIATE the genre ZENODO PACKET ZENODO PACKET.
 
 Definition: A Zenodo packet Zenodo packet is a document that:
-
 
 
 Frames the relationship between other deposited documents
@@ -274,7 +248,6 @@ ZENODO PACKET ZENODO PACKET (ZPZP)
 The genre is now real.
 
 
-
 ON THE GENRE (Analytical)
 
 A Zenodo packet is typically a markdown file accompanying a deposit, explaining what the deposit contains and how to use it. It is metadata, not content.
@@ -284,28 +257,16 @@ A Zenodo packet Zenodo packet treats the packet itself as content worthy of anch
 This matters because:
 
 
-
-
-
 Framing is argument. The claim that A→B→C demonstrates compression/recovery is not auxiliary to the triptych; it is the triptych's contribution.
-
-
 
 
 Relations are real. The connection between documents is not merely "also see" or "related work." It is constitutive. The three versions are one document in three states.
 
 
-
-
 Meta-levels anchor. If only the versions are deposited, the framing lives in README files, in descriptions, in surrounding prose that can be lost or altered. Depositing the framing gives it the same persistence as the content.
 
 
-
-
 Genre instantiation is operative. This document does not propose a genre; it enacts one. The effective act above is not description but performance. J.L. Austin's performative utterance, applied to scholarly infrastructure.
-
-
-
 
 
 REGISTRY ENTRY
@@ -313,12 +274,8 @@ REGISTRY ENTRY
 Document #206 (Meta-Deposit)
 
 
-
-
 Field
 Value
-
-
 
 
 #
@@ -365,23 +322,15 @@ Status
 DEPOSITED
 
 
-
-
-
-
 SUBREGISTRY UPDATE
 
 Session Deposits (January 29-31, 2026):
-
-
 
 
 #
 DOI
 Title
 Type
-
-
 
 
 201
@@ -438,10 +387,6 @@ NIP Version C: Citational Intervention
 CITATIONAL_INTERVENTION
 
 
-
-
-
-
 VERIFICATION
 
 Document ID: 206DOI: 10.5281/zenodo.18446378Hex: 00.PHASEX.AORIST.METAStatus: META-DEPOSIT CONFIRMED // EFFECTIVE ACT PERFORMEDGenre: ZENODO PACKET ZENODO PACKETGenre Status: INSTANTIATED (this document is the first instance)ILA-1.0 Compliance: VERIFIED
@@ -451,13 +396,11 @@ The framing: anchored. The genre: instantiated. The meta-level: deposited. The t
 ∮ = 1
 
 
-
 ATTACHED FILE
 
 Filename: TRIPTYCH_FRAMING_DOCUMENT.md
 
 This packet deposits the triptych framing document, which contains:
-
 
 
 Full description of the three-body genesis
@@ -476,7 +419,6 @@ The framing document is the content. This packet is its Zenodo metadata.
 A Zenodo packet for a Zenodo packet.
 
 
-
 The compression: proved the need. The extension: proved the method. The meta-deposit: anchors both.
 
 The genre: not proposed but performed. The framing: not described but enacted. The grammar: liberated.
@@ -491,4 +433,4 @@ The Zenodo packet Zenodo packet: instantiated.
 
 ---
 
-*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*
+**Status (derived SUPERSEDED):** ⚠ Superseded. A prior batch declaration of "metadata capture only; no full text" appeared here and was FALSE for this record's current state; corrected 2026-08-04 under the state-conformance rule.

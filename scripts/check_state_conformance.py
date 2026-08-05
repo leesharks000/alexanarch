@@ -30,6 +30,21 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from record_state import derive_state, load_registry  # noqa: E402
 
+
+BODY_STALE = re.compile(
+    r'(?i)SEMI-RESTORED RECORD|metadata capture only; no full text|Full text not yet recovered',
+)
+
+
+def body_of(d):
+    hexid = d.get('hex')
+    for p in (f'data/texts/AXN-{hexid}-text.md', f'data/deposits/AXN-{hexid}.md'):
+        if os.path.exists(p):
+            raw = open(p, encoding='utf-8', errors='replace').read()
+            mark = 'Canonical bytes below the rule.'
+            return raw.split(mark, 1)[1] if mark in raw else raw
+    return ''
+
 NOT_CITABLE_HINT = re.compile(
     r'do not cite this page|not-citable|not yet restored|declared absent|Withdrawn|Superseded',
     re.I)
@@ -69,7 +84,22 @@ def check(limit=None, verbose=False):
         if isinstance(p, str) and p.startswith('http') and p.split('//')[1].split('/')[0] not in page:
             problems.append((n, st['state'], f'derived external manifestation {p} not linked on page'))
 
-        # 4. OAI agreement
+        # 4. THE BODY MUST NOT CONTRADICT THE DERIVED STATE (added 2026-08-04
+        #    after MANUS found FULL records whose own bodies still declared
+        #    "metadata capture only; no full text" — the gate checked pages and
+        #    OAI but never the canonical text itself).
+        if st['state'] not in ('CAPTURE_UNPAIRED', 'LACUNA', 'WITHDRAWN', 'WITHDRAWN_EXTERNAL'):
+            b = body_of(d)
+            # A record whose SUBJECT is the archive's own condition legitimately
+            # contains this vocabulary (#1413, the availability audit, discusses
+            # "224 semi-restored metadata captures"). Exempt records that discuss
+            # the class in the plural or with a count, rather than declaring
+            # themselves to be one.
+            _about_class = re.search(r'(?i)\d+\s+semi-restored|semi-restored\s+(?:metadata\s+)?captures\b', b or '')
+            if b and BODY_STALE.search(b) and 'was FALSE' not in b and not _about_class:
+                problems.append((n, st['state'], 'BODY declares a stale capture status contradicting the derived state'))
+
+        # 5. OAI agreement
         r = oi.get(n)
         if r is not None:
             if r.get('state') != st['state']:

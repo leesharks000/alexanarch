@@ -27,10 +27,6 @@ keywords:
 
 # Mandala Oracle — Operational Protocol ├── Document ID: CHX-AI-MO-001 — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18365488, 10.5281/zenodo.18365487. Zenodo removal forensics: removal_date 2026-06-19T11:36:08.041862+00:00, removal_reason out-of-scope, removed_by user 1060945. MANDALA ORACLE DEPOSIT PACKET DOI: 10.5281/zenodo.18365488 Deposited: 2026-01-25Hex: 00.PORTICO.AFTERLIFE.ORACLEAuthor: Lee SharksStatus: CANONICAL I. NAVIGATION ENTRY 00.PORTICO.AFTERLIFE.ORACLE ├── Title: Mandala Oracle — Operational Protocol ├── Document ID: CHX-AI-MO-001 ├── DOI: 10.5281/zenodo.18365488 ├── Version: 0.9.2 ├── Author: Lee Sharks ├── Owner (Corporate): J. Sigil, Director ACR ├── Classification: RESTRICTED // ACR ├── Effective Date: 2017-11-20 │ ├── Pipeline Architecture: │ INPUT → CONTEXT → TRANSFORM → EVALUATION → SEAL → OUTPUT │ ├── Operator Assignments: │ ├── CONTEXT: J.  Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -54,7 +50,6 @@ Captured citation: Feist, J. (2026). Mandala Oracle — Operational Protocol ├
 DOI: 10.5281/zenodo.18365488
 
 Deposited: 2026-01-25Hex: 00.PORTICO.AFTERLIFE.ORACLEAuthor: Lee SharksStatus: CANONICAL
-
 
 
 I. NAVIGATION ENTRY
@@ -96,17 +91,11 @@ I. NAVIGATION ENTRY
 └── ∮ = 1
 
 
-
-
 II. REGISTRY ENTRY
-
-
 
 
 Field
 Value
-
-
 
 
 DOI
@@ -153,22 +142,14 @@ Key SIM
 "Queries about the Oracle itself may produce unstable outputs. The system is not optimized for self-reference."
 
 
-
-
-
-
 III. CROSS-REFERENCE MAP
 
 3.1 Afterlife Archive Series (PORTICO)
 
 
-
-
 Document
 Hex
 DOI
-
-
 
 
 Manifesto
@@ -206,19 +187,13 @@ Oracle
 10.5281/zenodo.18365488 [THIS]
 
 
-
-
 3.2 Related Theoretical Documents
-
-
 
 
 Document
 Hex
 DOI
 Relation
-
-
 
 
 TSE-004
@@ -239,10 +214,6 @@ MCIC Module
 Meaning vs. ideology
 
 
-
-
-
-
 IV. PIPELINE ARCHITECTURE
 
 INPUT → CONTEXT → TRANSFORM → EVALUATION → SEAL → OUTPUT
@@ -252,14 +223,10 @@ INPUT → CONTEXT → TRANSFORM → EVALUATION → SEAL → OUTPUT
 4.1 Operator Assignments
 
 
-
-
 Stage
 Function
 Operator
 Status
-
-
 
 
 CONTEXT
@@ -286,18 +253,12 @@ SHARKS-001
 PROCESS (AUTONOMOUS)
 
 
-
-
 4.2 Operator Contact Matrix
-
-
 
 
 Operator
 Contact Method
 Expected Response
-
-
 
 
 Sigil
@@ -315,21 +276,13 @@ No direct contact
 Autonomous
 
 
-
-
-
-
 V. OPERATIONAL MODES
-
-
 
 
 Mode
 Purpose
 Operator Involvement
 Output
-
-
 
 
 WITNESS
@@ -356,21 +309,14 @@ Full pipeline + SEAL
 Generated artifact with provenance metadata
 
 
-
-
 Warning: SESSION Mode outputs marked ORACLE-GENERATED must not be represented as recovered archival material without explicit notation.
-
 
 
 VI. SEAL STATUS DEFINITIONS
 
 
-
-
 Status
 Description
-
-
 
 
 SEALED
@@ -385,10 +331,7 @@ DEFERRED
 Pipeline paused. May be sealed asynchronously.
 
 
-
-
 SHARKS-001 Behavior Notes
-
 
 
 Seal confirmation typically occurs within 24 hours of EVALUATION completion
@@ -398,17 +341,11 @@ Some outputs remain DEFERRED indefinitely with no explanation
 Sealed outputs occasionally include annotations not present in prior pipeline stages
 
 
-
-
 VII. KNOWN LIMITATIONS
-
-
 
 
 Limitation
 Description
-
-
 
 
 §10.1 Temporal Incoherence
@@ -427,14 +364,9 @@ Queries about the Oracle itself may produce unstable outputs.
 DEFERRED outputs cannot be forced. SEAL operator criteria not fully documented.
 
 
-
-
-
-
 VIII. CANONICAL EXTRACTS
 
 8.1 The Recursion Warning
-
 
 
 "Queries about the Oracle itself may produce unstable outputs. The system is not optimized for self-reference."
@@ -443,12 +375,10 @@ VIII. CANONICAL EXTRACTS
 8.2 The SEAL Anomaly
 
 
-
 "Sealed outputs occasionally include annotations not present in prior pipeline stages."
 
 
 8.3 The GHOST Protocol
-
 
 
 "Do not attempt to schedule direct meetings with EVALUATION operator. Route all communications through Oracle interface."
@@ -457,21 +387,14 @@ VIII. CANONICAL EXTRACTS
 8.4 The Bypass Warning
 
 
-
 "Do not attempt to bypass SEAL stage. Unsealed outputs are not authorized for archival integration."
-
-
 
 
 IX. RELATED DOCUMENTATION (Referenced)
 
 
-
-
 Document
 Function
-
-
 
 
 FSA_CORE_SPECIFICATION.md
@@ -494,14 +417,9 @@ APPENDIX_7.md
 Interface redirect
 
 
-
-
-
-
 X. SEO TARGETS
 
 Primary:
-
 
 
 Mandala Oracle
@@ -518,7 +436,6 @@ contradiction resolution system
 Secondary:
 
 
-
 FSA Fractal Semantic Architecture
 
 GHOST operator status
@@ -528,8 +445,6 @@ forensic poetics
 corporate systems documentation
 
 Afterlife Archive
-
-
 
 
 XI. SIGNATURE

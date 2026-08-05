@@ -33,10 +33,6 @@ keywords:
 
 # Document 206 The Non-Indexed Perfective: Three-Body Genesis (ZPZP) — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18446427, 10.5281/zenodo.18446428. Zenodo removal forensics: removal_date 2026-06-19T11:37:23.379719+00:00, removal_reason out-of-scope, removed_by user 1060945. This document instantiates the genre "Zenodo packet Zenodo packet" (ZPZP): a framing document deposited with its own DOI, treating relational structure as content rather than metadata. The document frames a triptych on the Non-Indexed Perfective—three versions (A: Technical Seed, B: Compression Artifact, C: Citational Intervention) demonstrating the theory through their own genesis. The compression/recovery cycle (A→B→C) proves the need for grammatical forms that resist temporal indexing. This is an effective act. The genre did not exist before this deposit. It exists now. The declaration is t Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.

@@ -34,10 +34,6 @@ keywords:
 
 # Definitely Not a Squid — Alice Thornburgh (Vocoder Performance)
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.19839186, 10.5281/zenodo.19839185. Five-minute vocoder performance by Alice Thornburgh. A sustained vocal meditation through vocoder processing, producing choral harmonic multiplication across a C/G tonal axis. Breath-structured phrase architecture with ritual decrescendo. Spectral flatness 0.0010 — more tonal than most acoustic instruments. The vocoder converts one voice into a multiplied witness-texture. Computational Audial Criticism (CAC) analysis included as companion document, applying the methodology established in Computational Audial Criticism: An Applied Analysis of the Acanthian Dove Track (DOI: 10.5281/zenodo.182233 Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -52,8 +48,6 @@ Superseded on sight by any recovered canonical bytes; the captured metadata is v
 **Severed DOI(s):** 10.5281/zenodo.19839186, 10.5281/zenodo.19839185
 **Source tier:** DataCite full-metadata capture
 **Creators (as captured):** Thornburgh, Alice
-
-
 
 
 **Captured description:** Five-minute vocoder performance by Alice Thornburgh. A sustained vocal meditation through vocoder processing, producing choral harmonic multiplication across a C/G tonal axis. Breath-structured phrase architecture with ritual decrescendo. Spectral flatness 0.0010 — more tonal than most acoustic instruments. The vocoder converts one voice into a multiplied witness-texture.

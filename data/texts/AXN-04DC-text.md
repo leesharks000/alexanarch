@@ -46,10 +46,6 @@ keywords:
 
 # KADEEZY MUSIC — Provenance Anchor: Public Entity Record and Disambiguation Packet (11.MSBGL.KADEEZY.ANCHOR.01)
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.20710603, 10.5281/zenodo.20710604. Zenodo removal forensics: removal_date 2026-06-19T11:37:23.058223+00:00, removal_reason out-of-scope, removed_by user 1060945. Provenance Anchor for KADEEZY MUSIC (@KADEEZYMUSIC) — a Detroit hip-hop artist documented at 36 subscribers and 76 videos. This anchor timestamps the artist's public identity, channel data, discography, visual branding (noir composite grid, white hat motif, micro-animated porch portrait), and thematic signature (mental health, perseverance, theological imagery) before any composition layer has an opinion about who KADEEZY MUSIC is. Includes a disambiguation table clearing seven near-collisions (DJ Kadey, Kadez, DJ Keezy, Kadebostany, KaDeZi, Kadeej, Kazzeymusic) and a threat model mapping each Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -58,7 +54,6 @@ Assembled from DataCite full-metadata capture; no live authorial surface passed 
 
 Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
 
-## SEMI-RESTORED RECORD — metadata capture only
 
 **Work:** KADEEZY MUSIC — Provenance Anchor: Public Entity Record and Disambiguation Packet (11.MSBGL.KADEEZY.ANCHOR.01)
 **Severed DOI(s):** 10.5281/zenodo.20710603, 10.5281/zenodo.20710604
@@ -76,4 +71,4 @@ Companion to the Computational Audial Criticism of "The Crossed The Line Run" (D
 
 ---
 
-*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*
+**Status (derived FULL):** Full text seated. A prior batch declaration of "metadata capture only; no full text" appeared here and was FALSE for this record's current state; corrected 2026-08-04 under the state-conformance rule.

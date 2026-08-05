@@ -5,17 +5,17 @@ title: "DashFace: System and Method for Real-Time Micro-Expression Surveillance,
 creator: Sharks, Lee
 orcid: 0009-0000-1599-0703
 date: 2026-06-05
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+content_type: Patent-poem
 license: CC-BY-4.0
 substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
+version: v1.0
 related_ids: "https://doi.org/10.5281/zenodo.19927467 (severed); https://doi.org/10.5281/zenodo.19927468 (severed)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 keywords:
   - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
+
+
   - severed DOI
   - Zenodo termination
   - DashFace

@@ -198,6 +198,11 @@ The page banner, the OAI record, and any future surface render what the derivati
 **Run BOTH gates after every propagation:**
 `python3 scripts/check_state_conformance.py` (state) and `python3 scripts/check_body_hygiene.py` (bodies).
 
+`check_state_conformance.py` now also checks the **canonical text and its frontmatter**, not only pages and OAI —
+added 2026-08-04 after MANUS found FULL records whose own bodies still declared "metadata capture only; no full text."
+Records whose SUBJECT is the archive's condition (e.g. the availability audit discussing "224 semi-restored captures")
+are exempted by pattern, not by hand.
+
 `check_body_hygiene.py` detects four conversion-defect classes with signatures that cannot be confused
 with authorial intent — ENTITIES (raw `&#8212;` left in canonical text), RUNON (block structure collapsed;
 a "paragraph" of thousands of chars where the source held `<p>`), GLUED (heading markers welded mid-line),

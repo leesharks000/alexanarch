@@ -5,17 +5,17 @@ title: "The Mirror-Corgi, Revisited — Boundary Grammar ├── DOI: 10.5281/
 creator: Feist, Jack
 orcid: 0009-0000-1599-0703
 date: 2026-01-28
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+content_type: Scholarly essay
 license: CC-BY-4.0
 substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
+version: v1.0
 related_ids: "https://doi.org/10.5281/zenodo.18368791 (severed); https://doi.org/10.5281/zenodo.18368790 (severed)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 keywords:
   - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
+
+
   - severed DOI
   - Zenodo termination
   - Distributed epic
@@ -27,10 +27,6 @@ keywords:
 
 # The Mirror-Corgi, Revisited — Boundary Grammar ├── DOI: 10.5281/zenodo.18368791 — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18368791, 10.5281/zenodo.18368790. Zenodo removal forensics: removal_date 2026-06-19T11:37:11.950782+00:00, removal_reason out-of-scope, removed_by user 1060945. MIRROR-CORGI REVISITED DEPOSIT PACKET DOI: 10.5281/zenodo.18368791 Deposited: 2026-01-25Hex: 00.PORTICO.AFTERLIFE.CORGI-REVISITEDAuthor: Lee SharksStatus: CANONICAL I. NAVIGATION ENTRY 00.PORTICO.AFTERLIFE.CORGI-REVISITED ├── Title: The Mirror-Corgi, Revisited — Boundary Grammar ├── DOI: 10.5281/zenodo.18368791 ├── Author: Lee Sharks ├── Source: https://www.tiktok.com/t/ZTrv1dwT7/ │ ├── Three Confirmed Findings: │ ├── 1. Exactly 2 stable boundary crossings │ ├── 2. All interior boundaries fail (rewrite/duplication/cut) │ └── 3. Fence preserves identity continuously │ ├── Three-Zone Model: │ ├─ Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -39,7 +35,6 @@ Assembled from DataCite full-metadata capture; no live authorial surface passed 
 
 Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
 
-## SEMI-RESTORED RECORD — metadata capture only
 
 **Work:** The Mirror-Corgi, Revisited — Boundary Grammar ├── DOI: 10.5281/zenodo.18368791 — Crimson Hexagon Archive
 **Severed DOI(s):** 10.5281/zenodo.18368791, 10.5281/zenodo.18368790
@@ -54,7 +49,6 @@ Captured citation: Feist, J. (2026). The Mirror-Corgi, Revisited — Boundary Gr
 DOI: 10.5281/zenodo.18368791
 
 Deposited: 2026-01-25Hex: 00.PORTICO.AFTERLIFE.CORGI-REVISITEDAuthor: Lee SharksStatus: CANONICAL
-
 
 
 I. NAVIGATION ENTRY
@@ -87,17 +81,11 @@ I. NAVIGATION ENTRY
 └── ∮ = 1
 
 
-
-
 II. REGISTRY ENTRY
-
-
 
 
 Field
 Value
-
-
 
 
 DOI
@@ -136,23 +124,15 @@ Key SIM
 "The video is not about chaos. It is about where continuity is affordable."
 
 
-
-
-
-
 III. CROSS-REFERENCE MAP
 
 3.1 Mirror-Corgi Triptych
-
-
 
 
 Layer
 Document
 Hex
 DOI
-
-
 
 
 Personal/Theoretical
@@ -173,22 +153,15 @@ Mirror-Corgi Revisited
 10.5281/zenodo.18368791 [THIS]
 
 
-
-
 Same material, three transformation layers. Three voices reading the same video.
-
 
 
 IV. THREE-ZONE MODEL
 
 
-
-
 Zone
 Boundary Type
 Identity Outcome
-
-
 
 
 Entry
@@ -206,8 +179,6 @@ Exterior perimeter
 ✅ Preserved
 
 
-
-
 Visual Schema
 
 [VIEWER] ←—stable—→ [INTERFACE] ←—unstable—→ [INTERIOR] ←—unstable—→ [THRESHOLD] ←—stable—→ [EXTERIOR]
@@ -215,18 +186,12 @@ Visual Schema
     └─────────────────────────────── identity preserved ───────────────────────────────────────────┘
 
 
-
-
 V. BOUNDARY FAILURE MECHANISMS
-
-
 
 
 Boundary
 Mechanism
 Effect
-
-
 
 
 Mirror
@@ -249,26 +214,17 @@ Mid-burst cut
 Continuous physics avoided
 
 
-
-
 The Interior Rule
-
 
 
 "When a boundary requires continuous physics + identity accountability, the system resolves it by rewrite or cut."
 
 
-
-
 VI. KEY CORRECTIONS FROM ESSAY
-
-
 
 
 Essay Version
 Formal Revision
-
-
 
 
 Mirror-corgi escapes
@@ -287,52 +243,33 @@ Corgi vanishes at fence
 "The corgi doesn't vanish. It recedes."
 
 
-
-
-
-
 VII. THE BED THAT DOESN'T BREAK
-
 
 
 "The corgi bounces off the bed. The linens fly, the pillows scatter, but the bed holds. This is the one barrier in the entire interior that isn't crossed."
 
 
-
-
 "Rest, intimacy, the place where bodies are most vulnerable — the threshold isn't breached. It's refused."
-
-
 
 
 "But even in Troy, something remains."
 
 
-
-
 VIII. IDENTITY PRESERVATION AT FENCE
-
 
 
 "The corgi deforms against it locally, but the break-through is shown continuously — momentum and direction conserved, the corgi receding into distance, shrinking consistently with depth."
 
 
-
-
 "Both human and model viewers often misread this as disappearance — because the prior grammar of the video trains us to expect erasure."
-
-
 
 
 "The exterior boundary doesn't just permit escape; it permits continued existence at distance."
 
 
-
-
 IX. CANONICAL EXTRACTS
 
 9.1 Core Finding
-
 
 
 "The video is not about chaos. It is about where continuity is affordable."
@@ -341,12 +278,10 @@ IX. CANONICAL EXTRACTS
 9.2 On Mirror Doubling
 
 
-
 "The extrusion is not rescue. It is proliferation of the problem. Duplication under collapse, not substitution."
 
 
 9.3 On Interior Space
-
 
 
 "The interior has no exit that doesn't cost something."
@@ -355,12 +290,10 @@ IX. CANONICAL EXTRACTS
 9.4 On Plank Swap
 
 
-
 "Identity is not preserved; it is made untrackable by topology compression."
 
 
 9.5 On Welcome Mat
-
 
 
 "The corgi is using the entrance as an exit, going out through a threshold coded for coming in."
@@ -369,12 +302,10 @@ IX. CANONICAL EXTRACTS
 9.6 On Fence Crossing
 
 
-
 "The corgi doesn't vanish. It recedes. It passes through and keeps existing at distance."
 
 
 9.7 Aeneid Coda
-
 
 
 "The mirror doesn't produce a founder. It produces an escapee."
@@ -383,16 +314,12 @@ IX. CANONICAL EXTRACTS
 9.8 Closing Line
 
 
-
 "One possible response is simply to notice."
-
-
 
 
 X. SEO TARGETS
 
 Primary:
-
 
 
 boundary grammar
@@ -409,7 +336,6 @@ topology compression
 Secondary:
 
 
-
 volumetric extrusion
 
 editorial erasure
@@ -419,8 +345,6 @@ identity persistence
 Aeneid reversal
 
 plank swap
-
-
 
 
 XI. SIGNATURE
@@ -440,4 +364,4 @@ Status: VERIFIED
 
 ---
 
-*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*
+**Status (derived CAPTURE_PAIRED):** ◐ Semi-restored capture — the complete work exists in this archive. A prior batch declaration of "metadata capture only; no full text" appeared here and was FALSE for this record's current state; corrected 2026-08-04 under the state-conformance rule.

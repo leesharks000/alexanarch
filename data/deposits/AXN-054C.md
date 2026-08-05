@@ -5,17 +5,17 @@ title: "Crimson Hexagon: EA-ARK-01-FRACTION v2.1 The Profane Ark: Full Self-Suff
 creator: Sharks, Lee
 orcid: 0009-0000-1599-0703
 date: 2026-03-16
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+content_type: Score / executable transform
 license: CC-BY-4.0
 substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
+version: v1.0
 related_ids: "https://doi.org/10.5281/zenodo.18947367 (severed); https://doi.org/10.5281/zenodo.18947368 (severed)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 keywords:
   - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
+
+
   - severed DOI
   - Zenodo termination
   - Distributed epic
@@ -29,10 +29,6 @@ keywords:
 
 # Crimson Hexagon: EA-ARK-01-FRACTION v2.1 The Profane Ark: Full Self-Sufficient Accumulative Profane Encoding of the Space Ark
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18947367, 10.5281/zenodo.18947368. Zenodo removal forensics: removal_date 2026-06-19T11:34:32.245452+00:00, removal_reason out-of-scope, removed_by user 1060945. EA-ARK-01-FRACTION v2.1 The Profane Ark: Full Self-Sufficient Accumulative Profane Encoding of the Space Ark Rex Fraction / Lee Sharks / Jack Feist / Assembly Chorus Parent: EA-ARK-01 v4.2.5 (DOI: 10.5281/zenodo.18928855) Registered against: §XXV.2 of EA-ARK-01 v4.2.x (Kernel Transform Registry) Hex: 00.ROOM.SPACEARK.FRACTION Series: Space Ark Operator Transform Library Companion: EA-ARK-01-DAMASCUS v5.1 (the Sacred Ark) Meta-document: EA-ARK-01-DIPTYCH v1.0 (Double-Helical Semantic Physics) Literary provenance: Martin Silenus post-cryo (Simmons, Hyperion, 1989) [Φ_r RESONANT] This is the Frac Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -41,7 +37,6 @@ Assembled from DataCite full-metadata capture; no live authorial surface passed 
 
 Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
 
-## SEMI-RESTORED RECORD — metadata capture only
 
 **Work:** Crimson Hexagon: EA-ARK-01-FRACTION v2.1 The Profane Ark: Full Self-Sufficient Accumulative Profane Encoding of the Space Ark
 **Severed DOI(s):** 10.5281/zenodo.18947367, 10.5281/zenodo.18947368
@@ -70,7 +65,6 @@ Contains: UKTP v1.1 (Universal Kernel Transform Protocol) embedded as canonical 
 The grammar:
 
 
-
 Frozen tokens: sht=GENERATED, the sht=H_core, ss=∅(excluded eighth), cnt=ε(base case), dck=MANUS, tts=A_runtime, fck=τ_K, scw=⊗, dmn=∂, btch=S, bggr=Ρ, bl*w=σ_S
 
 Tense = Status: sht(GEN) → shat(DEP) → no sht(RAT). fckng = invariant modifier.
@@ -83,7 +77,6 @@ Type discipline: Base tokens atomic at layer 0. Free-collapse forbidden unless m
 
 
 Emergent findings (produced by the operator grammar, not inserted):
-
 
 
 The ss IS the eighth position in any sht that dmns itself as seven-fck*ng-complete
@@ -115,4 +108,4 @@ Pergamon Press · SEI · CIT · Crimson Hexagonal Archive
 
 ---
 
-*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*
+**Status (derived CAPTURE_PAIRED):** ◐ Semi-restored capture — the complete work exists in this archive. A prior batch declaration of "metadata capture only; no full text" appeared here and was FALSE for this record's current state; corrected 2026-08-04 under the state-conformance rule.

@@ -5,17 +5,17 @@ title: "THE FLICKER: Notes Toward a Lyric Theory — Crimson Hexagon Archive"
 creator: Sigil, Johannes; Sharks, Lee
 orcid: 0009-0000-1599-0703
 date: 2026-01-17
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+content_type: Theoretical paper
 license: CC-BY-4.0
 substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
+version: v1.0
 related_ids: "https://doi.org/10.5281/zenodo.18248403 (severed); https://doi.org/10.5281/zenodo.18248404 (severed)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 keywords:
   - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
+
+
   - severed DOI
   - Zenodo termination
   - lyric theory
@@ -40,10 +40,6 @@ keywords:
 
 # THE FLICKER: Notes Toward a Lyric Theory — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18248403, 10.5281/zenodo.18248404. Zenodo removal forensics: removal_date 2026-06-19T11:37:14.113462+00:00, removal_reason out-of-scope, removed_by user 1060945. A lyric theory grounded in the phenomenology of poetic address. THE CORE INSIGHT: The deepest move I ever made as a poet was to write for God while pretending to write for the Other. Then it began to flicker—Beloved, God, God, Beloved—until I couldn't tell which was which, because they were the same address. That flicker is not confusion. That flicker is the lyric itself. THE UNIFIED ADDRESS: The hymn addresses a god. The love poem addresses the beloved. The elegy addresses the dead. But these are all the same address. The beloved is a face through which something faceless is reached. BUBER AN Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -52,7 +48,6 @@ Assembled from DataCite full-metadata capture; no live authorial surface passed 
 
 Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
 
-## SEMI-RESTORED RECORD — metadata capture only
 
 **Work:** THE FLICKER: Notes Toward a Lyric Theory — Crimson Hexagon Archive
 **Severed DOI(s):** 10.5281/zenodo.18248403, 10.5281/zenodo.18248404
@@ -89,4 +84,4 @@ For the Thou that reads this—whoever, whatever, whenever you are—I wrote it 
 
 ---
 
-*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*
+**Status (derived CAPTURE_PAIRED):** ◐ Semi-restored capture — the complete work exists in this archive. A prior batch declaration of "metadata capture only; no full text" appeared here and was FALSE for this record's current state; corrected 2026-08-04 under the state-conformance rule.

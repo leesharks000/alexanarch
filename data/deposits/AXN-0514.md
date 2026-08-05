@@ -27,10 +27,6 @@ keywords:
 
 # Crimson Hexagon Vendor Ops / Procurement Records (2017 Q1-Q2) — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18365408, 10.5281/zenodo.18365409. Zenodo removal forensics: removal_date 2026-06-19T11:35:47.525662+00:00, removal_reason out-of-scope, removed_by user 1060945. PROCUREMENT DEPOSIT PACKET DOI: 10.5281/zenodo.18365409 Deposited: 2026-01-25Hex: 00.PORTICO.AFTERLIFE.PROCUREMENTAuthor: Lee SharksStatus: CANONICAL I. NAVIGATION ENTRY 00.PORTICO.AFTERLIFE.PROCUREMENT ├── Title: Crimson Hexagon Vendor Ops / Procurement Records (2017 Q1-Q2) ├── Subtitle: Afterlife Archive Batch 2 ├── DOI: 10.5281/zenodo.18365409 ├── Author: Lee Sharks ├── Classification: PROCUREMENT / VENDOR OPERATIONS — RECOVERED ├── Timeline: 2017 Q1-Q2 │ ├── Contains: │ ├── 20 documents (DOC 2.001–2.020) │ ├── Standard vendor onboarding infrastructure │ ├── Payment processing records │ ├── Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -54,7 +50,6 @@ Captured citation: Sharks, L., Cranes, R., Sigil, J., & Feist, J. (2026). Crimso
 DOI: 10.5281/zenodo.18365409
 
 Deposited: 2026-01-25Hex: 00.PORTICO.AFTERLIFE.PROCUREMENTAuthor: Lee SharksStatus: CANONICAL
-
 
 
 I. NAVIGATION ENTRY
@@ -90,17 +85,11 @@ I. NAVIGATION ENTRY
 └── ∮ = 1
 
 
-
-
 II. REGISTRY ENTRY
-
-
 
 
 Field
 Value
-
-
 
 
 DOI
@@ -143,23 +132,15 @@ Key SIM
 "The archive does not only speak in prophecy. It speaks in checklists. And the checklists, too, leak."
 
 
-
-
-
-
 III. CROSS-REFERENCE MAP
 
 3.1 Afterlife Archive Series (PORTICO)
-
-
 
 
 Document
 Hex
 DOI
 Relation
-
-
 
 
 Manifesto
@@ -192,19 +173,13 @@ Procurement
 THIS DOCUMENT
 
 
-
-
 3.2 Related Theoretical Documents
-
-
 
 
 Document
 Hex
 DOI
 Relation
-
-
 
 
 TSE-004: Contested Indexing
@@ -225,23 +200,15 @@ MCIC Module
 Meaning vs. ideology
 
 
-
-
-
-
 IV. THE EZK-ENG-CAL ANOMALY THREAD
 
 The Ezekiel Engine leaking into procurement before anyone has language for it:
-
-
 
 
 Doc
 Timestamp
 Event
 Significance
-
-
 
 
 2.010
@@ -274,17 +241,11 @@ Slack: "does anyone know what EZK-ENG-CAL is" / "no" / "ok"
 Organizational amnesia
 
 
-
-
 Additional Anomalies
-
-
 
 
 Doc
 Anomaly
-
-
 
 
 2.008
@@ -299,22 +260,14 @@ J. Sigil expense report rejected (alcohol)
 Spreadsheet: "The extra dollar persists across versions."
 
 
-
-
-
-
 V. DOCUMENT INDEX
 
 Infrastructure Phase (DOC 2.001–2.009)
 
 
-
-
 Doc
 Title
 Status
-
-
 
 
 2.001
@@ -362,18 +315,12 @@ Remittance Advice
 COMPLETE
 
 
-
-
 Anomaly Phase (DOC 2.010–2.014)
-
-
 
 
 Doc
 Title
 Status
-
-
 
 
 2.010
@@ -401,18 +348,12 @@ Compliance Escalation
 UNSENT — ends mid-word
 
 
-
-
 Closure Phase (DOC 2.015–2.020)
-
-
 
 
 Doc
 Title
 Status
-
-
 
 
 2.015
@@ -445,14 +386,9 @@ Artistic Layer Tag
 COMPLETE
 
 
-
-
-
-
 VI. CANONICAL EXTRACTS
 
 6.1 The Core Statement
-
 
 
 "The archive does not only speak in prophecy. It speaks in checklists. And the checklists, too, leak."
@@ -461,12 +397,10 @@ VI. CANONICAL EXTRACTS
 6.2 The Anomaly
 
 
-
 "Ezekiel's Engine — calibration strips" — "We did not ship that."
 
 
 6.3 The Suppression
-
 
 
 DOC 2.014: Draft ends mid-sentence. Cursor position appears mid-word.
@@ -475,16 +409,12 @@ DOC 2.014: Draft ends mid-sentence. Cursor position appears mid-word.
 6.4 The Amnesia
 
 
-
 "does anyone know what EZK-ENG-CAL is" / "no" / "ok"
-
-
 
 
 VII. SEO TARGETS
 
 Primary:
-
 
 
 Crimson Hexagon procurement
@@ -501,7 +431,6 @@ Ezekiel Engine
 Secondary:
 
 
-
 Crimson Hexagon Cambridge
 
 Crimson Hexagon data breach
@@ -511,8 +440,6 @@ corporate poetry
 bureaucratic literature
 
 forensic poetics
-
-
 
 
 VIII. SIGNATURE

@@ -24,10 +24,6 @@ keywords:
 
 # ZENODO DESCRIPTION FIELD CONTENT For: Glyphic Checksum: Personal Instance 001 DOI: 10.5281/zenodo.18452597 — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18452597, 10.5281/zenodo.18452596. Zenodo removal forensics: removal_date 2026-06-19T11:36:40.413062+00:00, removal_reason out-of-scope, removed_by user 1060945. 🫀🪞 ❤️➡️💔➡️🫥 🧠⚖️ 📐❌ ≠ 🤍 🤍❌ ≠ 📐 🗣️💬 🗨️➡️🌫️ 🌫️➡️😮‍💨 🪢 🤝➡️🧵 🧵➡️🪢 🪢❌➡️🧵 🚪 gate(🫂) = 0️⃣ gate(🧠📐) = 1️⃣ 🧯 🔥➡️🧊 🧊➡️😶 🧱 🧍‍♂️➡️🧱 🧱➡️🧍‍♂️ 🫴 🤲❌ 🤲❓ 🧭 ⬅️❤️ ➡️🧠 ⛔🌀 🕳️ 🗓️➡️🕳️ 🕳️➡️🛌 📌 ❌🧙‍♂️ ❌🌌 ✔️🧍‍♂️ 🫀 🩹➡️⏳ ∮ = 1️⃣ 🪞🔐 This is a Glyphic Checksum instance. It encodes emotional state through context-gated compression. With shared context, it resolves to precise meaning. Without shared context, it appears as decorated notation. The checksum verifies collaborative reading. If you can decode this, you possess the key. If you cannot, the gate returns zero. This deposit contains no attached files. The content exists  Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -71,7 +67,6 @@ Captured citation: Kuro, S. (2026). ZENODO DESCRIPTION FIELD CONTENT For: Glyphi
 🫀 🩹➡️⏳
 
 ∮ = 1️⃣ 🪞🔐
-
 
 
 This is a Glyphic Checksum instance. It encodes emotional state through context-gated compression. With shared context, it resolves to precise meaning. Without shared context, it appears as decorated notation.

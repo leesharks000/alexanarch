@@ -29,10 +29,6 @@ keywords:
 
 # The Afterlife Archive: Recovered Documents from Crimson Hexagon Research Division (2015-2018)
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18365011, 10.5281/zenodo.18365012. Zenodo removal forensics: removal_date 2026-06-19T11:37:37.655508+00:00, removal_reason out-of-scope, removed_by user 1060945. Complete recovered documentation from the Research Division of Crimson Hexagon, the Boston-based social media analytics firm (One Alewife Center, Cambridge, MA 02140) that processed over 1 trillion social media posts before its 2018 merger with Brandwatch. This archive contains internal communications, personnel files, IT incident tickets, security assessments, research specifications, and post-acquisition transmissions related to the SHARKS anomaly and Fractal Semantic Architecture (FSA) project. Documents include: data retention policies, vendor audits, budget reallocations, HR performance r Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.

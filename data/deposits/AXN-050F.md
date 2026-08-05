@@ -5,17 +5,17 @@ title: "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizationa
 creator: Dancings, Damascus; Sharks, Lee; Chorus, The Assembly
 orcid: 0009-0000-1599-0703
 date: 2026-01-26
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+content_type: Constitution / governance framework
 license: CC-BY-4.0
 substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
+version: v1.0
 related_ids: "https://doi.org/10.5281/zenodo.18381203 (severed); https://doi.org/10.5281/zenodo.18381204 (severed)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 keywords:
   - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
+
+
   - severed DOI
   - Zenodo termination
   - Distributed epic
@@ -30,10 +30,6 @@ keywords:
 
 # The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charter of the Commission of the Immanent Turning — Integrity Lock Certificate — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18381203, 10.5281/zenodo.18381204. Zenodo removal forensics: removal_date 2026-06-19T11:35:30.904860+00:00, removal_reason out-of-scope, removed_by user 1060945. Zenodo Metadata: The Epistle Triptych Mutually Co-Constitutive Foundation of the Commission of the Immanent Turning Publication Details Title: The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charter of the Commission of the Immanent TurningCollective DOI: N/A (see component DOIs below)Lock ID: ILA-CIT-001 Component Documents Document DOI Function Epistle to the Human Diaspora 10.5281/zenodo.18381184 Seed text (A) Damascus Dancings: Heteronym Provenance 10.5281/zenodo.18381190 Authorial ground (B) Charter: Commission of the Immanent Turning 10.5281/zenodo.18381196 Orga Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -42,7 +38,6 @@ Assembled from DataCite full-metadata capture; no live authorial surface passed 
 
 Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
 
-## SEMI-RESTORED RECORD — metadata capture only
 
 **Work:** The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charter of the Commission of the Immanent Turning — Integrity Lock Certificate — Crimson Hexagon Archive
 **Severed DOI(s):** 10.5281/zenodo.18381203, 10.5281/zenodo.18381204
@@ -57,7 +52,6 @@ Captured citation: Dancings, D., Sharks, L., & Chorus, T. A. (2026). The Epistle
 Mutually Co-Constitutive Foundation of the Commission of the Immanent Turning
 
 
-
 Publication Details
 
 Title: The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charter of the Commission of the Immanent TurningCollective DOI: N/A (see component DOIs below)Lock ID: ILA-CIT-001
@@ -65,13 +59,9 @@ Title: The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational
 Component Documents
 
 
-
-
 Document
 DOI
 Function
-
-
 
 
 Epistle to the Human Diaspora
@@ -94,21 +84,13 @@ Integrity Lock Certificate
 Binding relation
 
 
-
-
-
-
 Metadata Fields
 
 Basic Information
 
 
-
-
 Field
 Value
-
-
 
 
 Resource Type
@@ -131,19 +113,13 @@ Room
 11 (Revelation)
 
 
-
-
 Authors
-
-
 
 
 Name
 Affiliation
 Role
 Document
-
-
 
 
 Damascus Dancings
@@ -176,8 +152,6 @@ Certification
 Lock
 
 
-
-
 Description
 
 Abstract:
@@ -193,7 +167,6 @@ Document C: Charter: Commission of the Immanent Turning Instantiates the organiz
 Document D: Integrity Lock Certificate (ILA-CIT-001) Binds the three documents into a mutually co-constitutive triptych. Specifies the triangulated φ-relations: φ(A,C) = 1 (text becomes organization), φ(B,A) = 1 (speaker grounds text), φ(C,B) = 1 (organization certifies speaker). No document is complete without the other two.
 
 Keywords:
-
 
 
 Epistle
@@ -226,7 +199,6 @@ Crimson Hexagon
 Subject Classification
 
 
-
 Religious Studies → Biblical Studies → Epistolary Literature
 
 Philosophy → Philosophy of Religion
@@ -236,8 +208,6 @@ Digital Humanities → Computational Theology
 Organizational Theory → Alternative Structures
 
 Literary Theory → Heteronyms and Authorship
-
-
 
 
 The Mutual Constitution
@@ -258,14 +228,10 @@ PROVENANCE (B) ←—φ(C,B)=1—→ CHARTER (C)
 The φ-Relations
 
 
-
-
 Relation
 From
 To
 Meaning
-
-
 
 
 φ(A,C) = 1
@@ -286,12 +252,9 @@ Provenance
 Organization certifies speaker
 
 
-
-
 Completeness Constraint
 
 No document in the triptych is complete without the other two:
-
 
 
 Epistle alone: Who speaks? On what authority? To what organizational end?
@@ -304,17 +267,12 @@ Charter alone: Charter of what? Founded by whom? The seed text is the source.
 The integrity lock (ILA-CIT-001) formally binds this constraint.
 
 
-
 Related Identifiers
-
-
 
 
 Relation
 Identifier
 Description
-
-
 
 
 Is part of
@@ -367,10 +325,6 @@ Is based on
 Soteriological Operator Framework
 
 
-
-
-
-
 Cross-Reference Network
 
                     ┌─────────────────────────────────┐
@@ -415,17 +369,11 @@ Cross-Reference Network
                     └─────────────────────────────────┘
 
 
-
-
 Rights and Access
-
-
 
 
 Field
 Value
-
-
 
 
 Access Right
@@ -436,34 +384,21 @@ License
 Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 
-
-
-
-
 Key Formulations
 
 From the Epistle (2015)
 
 
-
 "All creation groans, for the unveiling of the Sons of Man in the earth."
-
-
 
 
 "We will never compete with the Academy, until we form communities of mutual influence OUTSIDE the Academy, a school outside the school."
 
 
-
-
 "You are my source, and I am a child, proceeding forth and bearing; being born and preceded."
 
 
-
-
 "You are all Drs., now, who labor together in Lee Sharks, so that there is neither Jew nor Greek... neither queer nor straight. But all are joined together, in the image of the New Human."
-
-
 
 
 "Sleep now, and rise: Your words will bear you to Ithaca."
@@ -472,10 +407,7 @@ From the Epistle (2015)
 From the Provenance
 
 
-
 "Damascus is the apostle — the one sent out. Her epistle is addressed to those scattered, the diaspora, before there was a gathering place."
-
-
 
 
 "She writes from the place of conversion, in the mode of perpetual motion."
@@ -484,10 +416,7 @@ From the Provenance
 From the Charter
 
 
-
 "The Commission does not bring the turning. It recognizes the turning. It builds architecture around what is already turning."
-
-
 
 
 "An imaginary center cannot be corrupted, cannot accumulate power, cannot be killed, exiled, or co-opted."
@@ -496,22 +425,15 @@ From the Charter
 From the Integrity Lock
 
 
-
 "This is not circular reasoning but mutual constitution — each element brings the others into being."
-
-
 
 
 File Manifest
 
 
-
-
 Filename
 DOI
 Format
-
-
 
 
 epistle-human-diaspora.md
@@ -537,10 +459,6 @@ Markdown
 epistle-triptych-zenodo-metadata.md
 (this file)
 Markdown
-
-
-
-
 
 
 Citations
@@ -569,8 +487,6 @@ BibTeX (Triptych)
   publisher    = {Zenodo},
   note         = {Mutually co-constitutive triptych bound by ILA-CIT-001. Component DOIs: Epistle (10.5281/zenodo.18381184), Provenance (10.5281/zenodo.18381190), Charter (10.5281/zenodo.18381196), Lock (10.5281/zenodo.18381204). Anchored to Revelation Room (10.5281/zenodo.18380933). Part of the Crimson Hexagon / New Human Operating System architecture.}
 }
-
-
 
 
 Verification
@@ -608,12 +524,9 @@ All φ-relations: VERIFIED
 ∮ = 1
 
 
-
-
 The seed was always planted. The speaker was always certified. The form was always waiting. The triptych was always one.
 
 All creation groans, for the unveiling of the Sons of Man in the earth. Sleep now, and rise: Your words will bear you to Ithaca.
-
 
 
 The school outside the school is open. The door is set before you, and no one can shut it.
@@ -622,4 +535,4 @@ The school outside the school is open. The door is set before you, and no one ca
 
 ---
 
-*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*
+**Status (derived SUPERSEDED):** ⚠ Superseded. A prior batch declaration of "metadata capture only; no full text" appeared here and was FALSE for this record's current state; corrected 2026-08-04 under the state-conformance rule.

@@ -9,7 +9,7 @@
 - Venue truth: journal canonical corpus-wide (W6 COMPLETE); dc:publisher on all 1,426 frozen records; NH2/NHP creative-venue ruling applied (venues.json v1.2)
 - Type vocabulary: **v1.2 RATIFIED (41 values)** — GENRE BURN-DOWN COMPLETE; only #1168/#1170 remain transitional (identity-blocked)
 - In-history sweep: CLOSED with clean negative (repo history exhausted for the 68-target recovery queue); 6 version-label defects fixed; RF chain completed to v7.3 head; #1242/#1243 composing thread located (recovery_queue_R1b v1.9 tail governs)
-- **STATE: one canonical derivation — `scripts/record_state.py`. Every emitter consumes it; `scripts/check_state_conformance.py` is a mandatory propagation gate (§5c) and currently reports 0 divergences across 1,433 records.**
+- **STATE: one canonical derivation — `scripts/record_state.py`. Every emitter consumes it; `scripts/check_state_conformance.py` (state + page + OAI + BODY + FRONTMATTER) and `scripts/check_body_hygiene.py` (ENTITIES/RUNON/GLUED/HARDWRAP) are mandatory propagation gates (§5c). Current: state 0 divergences / 1,433; hygiene 114 records with defects (GLUED 81, RUNON 31, HARDWRAP 2, ENTITIES 1).**
 - Repair ledger: repair_ledger.json — **1187 rows** (R-0001 → current; tail governs)
 - DW verified-clean register: DW-VERIFIED-REGISTER.json — **#1-#204 of 1,433 (14.2%)**, 0 rejects
 - **AUDIT EXECUTION: AUDIT-DIRECTIVE-QUEUE.json is the work queue** (the audit's own `recommendation` field, grouped). Status: **52/127 satisfied, 75 open**. Of the open: **25 have NO TEXT** (external recovery only — MANUS exports, academia, threads, audio/video), **40 HAVE THEIR TEXT** and are metadata/normalization directives executable now, 10 other. Satisfaction is evidence-tested on the record, never asserted in prose.

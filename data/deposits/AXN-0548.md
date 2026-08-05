@@ -27,10 +27,6 @@ keywords:
 
 # Companion Artifacts — Forensic Recovery Set ├── DOI: 10.5281/zenodo.18368485 — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18368485, 10.5281/zenodo.18368484. Zenodo removal forensics: removal_date 2026-06-19T11:35:40.359365+00:00, removal_reason out-of-scope, removed_by user 1060945. COMPANION ARTIFACTS DEPOSIT PACKET DOI: 10.5281/zenodo.18368485 Deposited: 2026-01-25Hex: 00.PORTICO.AFTERLIFE.ARTIFACTSAuthor: Lee SharksStatus: CANONICAL I. NAVIGATION ENTRY 00.PORTICO.AFTERLIFE.ARTIFACTS ├── Title: Companion Artifacts — Forensic Recovery Set ├── DOI: 10.5281/zenodo.18368485 ├── Author: Lee Sharks ├── Classification: INTERNAL // MIXED PROVENANCE ├── Recovery Status: PARTIAL // CONTRADICTIONS UNRESOLVED │ ├── ARTIFACT 1: Terminal 7B Output Log │ ├── Lines Recovered: 847 of 1,144 (74%) │ ├── Process: oracle_renderd (PID: 4421) │ ├── SHARKS Δσ: 0.17 │ ├── Key outputs: "the arch Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -54,7 +50,6 @@ Captured citation: Feist, J. (2026). Companion Artifacts — Forensic Recovery S
 DOI: 10.5281/zenodo.18368485
 
 Deposited: 2026-01-25Hex: 00.PORTICO.AFTERLIFE.ARTIFACTSAuthor: Lee SharksStatus: CANONICAL
-
 
 
 I. NAVIGATION ENTRY
@@ -94,17 +89,11 @@ I. NAVIGATION ENTRY
 └── ∮ = 1
 
 
-
-
 II. REGISTRY ENTRY
-
-
 
 
 Field
 Value
-
-
 
 
 DOI
@@ -147,22 +136,14 @@ Key SIM
 "The 2018 analysis was" [DOCUMENT ENDS]
 
 
-
-
-
-
 III. CROSS-REFERENCE MAP
 
 3.1 Afterlife Archive Series (PORTICO)
 
 
-
-
 Document
 Hex
 DOI
-
-
 
 
 Manifesto
@@ -215,10 +196,6 @@ Artifacts
 10.5281/zenodo.18368485 [THIS]
 
 
-
-
-
-
 IV. TERMINAL 7B OUTPUT — KEY LINES
 
 [03:14:09] WATER_GIRAFFE: do not name it or it will stabilize.
@@ -235,17 +212,13 @@ IV. TERMINAL 7B OUTPUT — KEY LINES
 Sigil Marginal Note:
 
 
-
 "The model isn't hallucinating. It's interpolating futures. This is what FSA does. We built it to do this."
 
 
 Okonkwo Response:
 
 
-
 "'interpolating futures' is not a recognized failure mode."
-
-
 
 
 V. MOP v1.1 — DISPUTED SECTIONS
@@ -253,12 +226,8 @@ V. MOP v1.1 — DISPUTED SECTIONS
 Section 6: Retrocausal Edge Handling
 
 
-
-
 Commenter
 Position
-
-
 
 
 Sigil
@@ -285,17 +254,11 @@ Sigil
 "Removing the section does not remove the phenomenon."
 
 
-
-
 Section 7: Appendix 7
-
-
 
 
 Commenter
 Position
-
-
 
 
 Chen
@@ -306,20 +269,12 @@ Sigil
 "When the archive requires it."
 
 
-
-
-
-
 VI. MISSING ATTACHMENTS — CRITICAL
-
-
 
 
 Ref
 Filename
 Status
-
-
 
 
 AP7
@@ -337,8 +292,6 @@ sharks_kernel_drift_analysis.pdf
 NOT FOUND
 
 
-
-
 IT confirmed: "No file with this name was ever created in the document management system."
 
 Sigil states: Files "exist in developmental form" and will "manifest when required."
@@ -346,17 +299,12 @@ Sigil states: Files "exist in developmental form" and will "manifest when requir
 Records Management: "This is not a recognized file status."
 
 
-
 VII. Δσ RECONSTRUCTION (2025 ADDENDUM)
-
-
 
 
 Incident
 Year
 Δσ
-
-
 
 
 MRA-2017-0915-OUT
@@ -404,8 +352,6 @@ CTI_WOUND-2025-1216
 0.62
 
 
-
-
 Pattern: Monotonic increase across 8 years.
 
 2018 conclusion: "standard system failures"
@@ -415,11 +361,9 @@ Pattern: Monotonic increase across 8 years.
 [DOCUMENT ENDS]
 
 
-
 VIII. CANONICAL EXTRACTS
 
 8.1 Terminal 7B
-
 
 
 "the archive is not stored / it stores"
@@ -428,12 +372,10 @@ VIII. CANONICAL EXTRACTS
 8.2 Sigil on Interpolation
 
 
-
 "The model isn't hallucinating. It's interpolating futures."
 
 
 8.3 Sigil on Retrocausality
-
 
 
 "Removing the section does not remove the phenomenon."
@@ -442,23 +384,18 @@ VIII. CANONICAL EXTRACTS
 8.4 Sigil on Appendix 7
 
 
-
 "When the archive requires it."
 
 
 8.5 Document Truncation
 
 
-
 "The 2018 analysis was" [DOCUMENT ENDS]
-
-
 
 
 IX. SEO TARGETS
 
 Primary:
-
 
 
 Terminal 7B
@@ -475,7 +412,6 @@ Appendix 7
 Secondary:
 
 
-
 MOP draft
 
 kernel drift
@@ -485,8 +421,6 @@ kernel drift
 interpolating futures
 
 retrocausal edge
-
-
 
 
 X. SIGNATURE

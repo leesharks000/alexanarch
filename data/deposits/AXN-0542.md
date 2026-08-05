@@ -36,10 +36,6 @@ keywords:
 
 # "★" — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18882914, 10.5281/zenodo.18882915. Zenodo removal forensics: removal_date 2026-06-19T11:35:27.330405+00:00, removal_reason out-of-scope, removed_by user 1060945. ★ is the founding essay of the Star Triptych — three documents that together constitute the star (★, U+2605) as Canon 01 of the New Human Operating System (NH-OS). On November 3, 2015, Twitter replaced the star icon (the "favorite" button) with a heart (the "like" button), liquidating a user-governed polysemic system and replacing it with a single extractable signal optimized for algorithmic engagement. This essay reads the 2015 event as real subsumption at the interface level through the Semantic Economy framework: the platform seized the means of meaning-production and restructured them for  Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.

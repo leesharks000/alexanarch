@@ -5,17 +5,17 @@ title: "holographickernel.org — Landing Page Source Code: The Holographic Kern
 creator: Sharks, Lee
 orcid: 0009-0000-1599-0703
 date: 2026-04-25
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+content_type: Software / executable apparatus
 license: CC-BY-4.0
 substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
+version: v1.0
 related_ids: "https://doi.org/10.5281/zenodo.19764055 (severed); https://doi.org/10.5281/zenodo.19764056 (severed)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 keywords:
   - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
+
+
   - severed DOI
   - Zenodo termination
   - holographic kernel

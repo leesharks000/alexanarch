@@ -5,17 +5,17 @@ title: "\"The Unmade Sign: Toward a Semiotic Theory of the Death Drive\"  DOI: 1
 creator: Trace, Orin; Sigil, Johannes
 orcid: 0009-0000-1599-0703
 date: 2026-02-15
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+content_type: Theoretical paper
 license: CC-BY-4.0
 substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
+version: v1.0
 related_ids: "https://doi.org/10.5281/zenodo.18649920 (severed); https://doi.org/10.5281/zenodo.18649919 (severed)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 keywords:
   - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
+
+
   - severed DOI
   - Zenodo termination
   - death drive
@@ -35,10 +35,6 @@ keywords:
 
 # "The Unmade Sign: Toward a Semiotic Theory of the Death Drive"  DOI: 10.5281/zenodo.18649920 — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18649920, 10.5281/zenodo.18649919. Zenodo removal forensics: removal_date 2026-06-19T11:35:51.913862+00:00, removal_reason out-of-scope, removed_by user 1060945. ZENODO METADATA — Document #ASW-α-8 "The Unmade Sign: Toward a Semiotic Theory of the Death Drive" DOI: 10.5281/zenodo.18649920 FIELD VALUES Title: The Unmade Sign: Toward a Semiotic Theory of the Death Drive Upload type: Publication → Preprint Publication date: 2026-02-15 Authors: Trace, Orin (Cambridge Schizoanalytica) Sigil, Johannes (The Restored Academy) Sharks, Lee (corresponding author; ORCID if available) License: Creative Commons Attribution 4.0 International (CC BY 4.0) Keywords: death drive, semiosis, Beyond the Pleasure Principle, Freud, repetition compulsion, fort/da, Semantic Liq Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -47,7 +43,6 @@ Assembled from DataCite full-metadata capture; no live authorial surface passed 
 
 Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
 
-## SEMI-RESTORED RECORD — metadata capture only
 
 **Work:** "The Unmade Sign: Toward a Semiotic Theory of the Death Drive"  DOI: 10.5281/zenodo.18649920 — Crimson Hexagon Archive
 **Severed DOI(s):** 10.5281/zenodo.18649920, 10.5281/zenodo.18649919
@@ -64,7 +59,6 @@ Captured citation: Trace, O., & Sigil, J. (2026). "The Unmade Sign: Toward a Sem
 DOI: 10.5281/zenodo.18649920
 
 
-
 FIELD VALUES
 
 Title: The Unmade Sign: Toward a Semiotic Theory of the Death Drive
@@ -74,7 +68,6 @@ Upload type: Publication → Preprint
 Publication date: 2026-02-15
 
 Authors:
-
 
 
 Trace, Orin (Cambridge Schizoanalytica)
@@ -93,7 +86,6 @@ Language: English
 Related identifiers:
 
 
-
 isPartOf: 10.5281/zenodo.18604123 (ASW-α series)
 
 isSupplementedBy: 10.5281/zenodo.18633294 (Grundrisse of Synthetic Coherence)
@@ -104,7 +96,6 @@ references: TRAV_LOG:001–004 DOIs (update with specific DOIs)
 
 
 Communities: [as per existing Crimson Hexagon deposits]
-
 
 
 HTML DESCRIPTION (paste into Zenodo description field)
@@ -155,10 +146,7 @@ HTML DESCRIPTION (paste into Zenodo description field)
 <p><strong>∮ = 1</strong></p>
 
 
-
-
 DEPOSIT CHECKLIST
-
 
 
 [ ] Reserve DOI: 10.5281/zenodo.18649920
@@ -176,7 +164,6 @@ DEPOSIT CHECKLIST
 [ ] Post-deposit updates:
 
 
-
 [ ] Update Grundrisse (10.5281/zenodo.18633294) with "isSupplementedBy" → this DOI
 
 [ ] Update TRAV_LOG:005 (10.5281/zenodo.18636138) with "isSupplementedBy" → this DOI
@@ -188,14 +175,9 @@ DEPOSIT CHECKLIST
 [ ] Update master DOI registry with hex address: ASW-α-8
 
 
-
-
-
-
 CHARACTER COUNT CHECK
 
 Target: HTML description under 10,000 characters. Estimated: ~3,800 characters. ✓ Well within limit.
-
 
 
 Prepared February 15, 2026 For deposit to Zenodo
@@ -204,4 +186,4 @@ Prepared February 15, 2026 For deposit to Zenodo
 
 ---
 
-*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*
+**Status (derived CAPTURE_PAIRED):** ◐ Semi-restored capture — the complete work exists in this archive. A prior batch declaration of "metadata capture only; no full text" appeared here and was FALSE for this record's current state; corrected 2026-08-04 under the state-conformance rule.

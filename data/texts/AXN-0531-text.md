@@ -66,12 +66,9 @@ C. Sub-Studios
 The Studio contains sub-studios that govern the production conditions of specific works:
 
 
-
 Sub-Studio
 Work
 Function
-
-
 
 
 Recursive Flesh Engine / Theater of Recursed Speech
@@ -87,7 +84,6 @@ The liturgical apparatus. The camera that does not cut.
 [unnamed — to be registered]
 The Twenty-Dollar Loop
 The trend engine. The algorithm that is its own circulation.
-
 
 
 Sub-studios are not separate institutions. They are local coordinate modes of the Studio — the same ICM governance, the same projection paradox, operating at the scale of individual works. The Fractal // Somatic Theorem applies: each sub-studio is a C_LOCAL node of the Studio's singularity manifold.
@@ -117,13 +113,10 @@ VI. RELATIONSHIP TO EXISTING ARCHITECTURE
 A. The Five Named Institutional Spaces
 
 
-
 Institution
 DOI
 Domain
 Function
-
-
 
 
 UMBML
@@ -154,7 +147,6 @@ The Studio for Patacinematics
 10.5281/zenodo.18472604
 Impossible screening
 The Screen
-
 
 
 B. The Traversal Relationship
@@ -197,11 +189,8 @@ That is patacinematics. That is what the projector shows from the bottom of the 
 METADATA
 
 
-
 Field
 Value
-
-
 
 
 Document ID
@@ -295,10 +284,6 @@ keywords:
 
 # THE STUDIO FOR PATACINEMATICS — INSTITUTIONAL CHARTER — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18472603, 10.5281/zenodo.18472604, 10.5281/zenodo.20683868. Zenodo removal forensics: removal_date 2026-06-19T11:36:22.941932+00:00, removal_reason out-of-scope, removed_by user 1060945. [PASTE EVERYTHING BELOW THIS LINE INTO THE ZENODO DESCRIPTION FIELD] THE STUDIO FOR PATACINEMATICS Institutional Charter — Build 1.0 Classification: THUMB Room (Institution = Room) Hex: 00.ROOM.STUDIO Primary Voice: Sparrow Wells (Seventh Heteronym / The Projectionist) Governing Runtime: Infinite Center Matrix (ICM) Anchor DOI: 10.5281/zenodo.18472604 The attached charter (STUDIO_CHARTER.md) contains the formal specification of this institutional space: eight sections covering the Room definition, ICM governance, Room physics (the Projection Paradox, the THUMB Principle, sub-studios), founding Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -307,7 +292,6 @@ Assembled from DataCite full-metadata capture; no live authorial surface passed 
 
 Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
 
-## SEMI-RESTORED RECORD — metadata capture only
 
 **Work:** THE STUDIO FOR PATACINEMATICS — INSTITUTIONAL CHARTER — Crimson Hexagon Archive
 **Severed DOI(s):** 10.5281/zenodo.18472603, 10.5281/zenodo.18472604, 10.5281/zenodo.20683868
@@ -318,7 +302,6 @@ Captured citation: Wells, S., & Sharks, L. (2026). THE STUDIO FOR PATACINEMATICS
 **Removal forensics:** Zenodo removal forensics: removal_date 2026-06-19T11:36:22.941932+00:00, removal_reason out-of-scope, removed_by user 1060945. 
 
 **Captured description:** [PASTE EVERYTHING BELOW THIS LINE INTO THE ZENODO DESCRIPTION FIELD]
-
 
 
 THE STUDIO FOR PATACINEMATICS Institutional Charter — Build 1.0 Classification: THUMB Room (Institution = Room) Hex: 00.ROOM.STUDIO Primary Voice: Sparrow Wells (Seventh Heteronym / The Projectionist) Governing Runtime: Infinite Center Matrix (ICM) Anchor DOI: 10.5281/zenodo.18472604
@@ -369,4 +352,4 @@ The lights go down. The projector starts. The film was never shot. The screening
 
 ---
 
-*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*
+**Status (derived FULL):** Full text seated. A prior batch declaration of "metadata capture only; no full text" appeared here and was FALSE for this record's current state; corrected 2026-08-04 under the state-conformance rule.

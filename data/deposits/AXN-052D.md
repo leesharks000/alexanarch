@@ -5,17 +5,17 @@ title: "Universe 25 Revisited: Inaccessible Rewards and Stalled Circulation"
 creator: Kim, Jooyeol
 orcid: 0009-0000-1599-0703
 date: 2026-02-02
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+content_type: Withdrawn — external work (typed tombstone)
 license: CC-BY-4.0
 substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
+version: v1.0
 related_ids: "https://doi.org/10.5281/zenodo.18445652 (severed)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 keywords:
   - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
+
+
   - severed DOI
   - Zenodo termination
   - economic sociology

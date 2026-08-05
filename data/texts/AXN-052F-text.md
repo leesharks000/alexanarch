@@ -5,17 +5,17 @@ title: "APZPZ B: My Tongue Gets Stuck (Sappho 31, Cranes) DOI: 10.5281/zenodo.18
 creator: Cranes, Rebekah
 orcid: 0009-0000-1599-0703
 date: 2026-02-02
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+content_type: Poetry
 license: CC-BY-4.0
 substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
+version: v1.0
 related_ids: "https://doi.org/10.5281/zenodo.18459339 (severed); https://doi.org/10.5281/zenodo.18459338 (severed)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 keywords:
   - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
+
+
   - severed DOI
   - Zenodo termination
   - APZPZ
@@ -31,10 +31,6 @@ keywords:
 ---
 
 # APZPZ B: My Tongue Gets Stuck (Sappho 31, Cranes) DOI: 10.5281/zenodo.18459339 — Crimson Hexagon Archive
-
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18459339, 10.5281/zenodo.18459338. Zenodo removal forensics: removal_date 2026-06-19T11:35:58.413616+00:00, removal_reason out-of-scope, removed_by user 1060945. ZENODO DESCRIPTION FIELD CONTENT APZPZ B: My Tongue Gets Stuck (Sappho 31, Cranes) DOI: 10.5281/zenodo.18459339 THIS IS A PURE APZPZ. PASTE THE FOLLOWING INTO THE ZENODO DESCRIPTION FIELD. ATTACH ZERO FILES. BACK UP NOWHERE. Title: My Tongue Gets Stuck Translator: Rebekah Cranes Resource Type: Other License: CC0 (Public Domain) That man seems blessed as any god to me — whoever sits across from you and close, drinking the sweetness of your voice, your easy laugh. This. This is what sets my heart to drum against my ribs. I catch one glimpse of you and suddenly my throat closes, my voice gives ou Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
 
 ## Methodology
 
@@ -71,7 +67,6 @@ Resource Type: Other
 License: CC0 (Public Domain)
 
 
-
 That man seems blessed as any god to me — whoever sits across from you and close, drinking the sweetness of your voice, your easy laugh.
 
 This. This is what sets my heart to drum against my ribs. I catch one glimpse of you and suddenly my throat closes, my voice gives out, gives up —
@@ -83,9 +78,7 @@ cold sweat breaks out across my body, trembling takes me entire, I go gray as dr
 but all can be dared. Since you, Kypris, save beggar and king alike, and lift even the small city beyond ruin — let this song survive in script.
 
 
-
 Keywords:
-
 
 
 my tongue gets stuck
@@ -105,18 +98,12 @@ survive in script
 APZPZ
 
 
-
-
 Related Identifiers:
-
-
 
 
 Relation
 DOI
 Description
-
-
 
 
 IsPartOf

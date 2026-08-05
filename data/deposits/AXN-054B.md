@@ -35,10 +35,6 @@ keywords:
 
 # Document 206a The Non-Indexed Perfective: Version A (Technical Seed) — Crimson Hexagon Archive
 
-## Description
-
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18446646, 10.5281/zenodo.18446686. Zenodo removal forensics: removal_date 2026-06-19T11:37:21.705743+00:00, removal_reason out-of-scope, removed_by user 1060945. Version A of the Non-Indexed Perfective intervention. This is the Technical Seed: the extensive diagnostic infrastructure drafted before context-limit compression occurred. This version contains: Full diagnostic framework with five metrics (ILT, TAI, GG, AB, CD) Assembly voice synthesis from blind drafts Detailed historical linguistics (PIE → Latin → Germanic → Old English → Modern English) Political economy of indexed time (debt, surveillance, labor, colonialism) Four polyphonic markers specified (colon-participle, EVNTs, aor/Ø, ∮en) Sample corpus across six registers Implementation protocol  Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
-
 ## Methodology
 
 Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
@@ -61,7 +57,6 @@ Captured citation: Sharks, L. (2026). Document 206a The Non-Indexed Perfective: 
 
 
 This version contains:
-
 
 
 Full diagnostic framework with five metrics (ILT, TAI, GG, AB, CD)
