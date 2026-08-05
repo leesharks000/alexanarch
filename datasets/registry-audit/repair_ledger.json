@@ -28181,6 +28181,41 @@
    "operator": "TACHYON",
    "date": "2026-08-04",
    "wave": "AUDIT-VERSION"
+  },
+  {
+   "repair_id": "R-1180",
+   "deposit_number": null,
+   "batch": true,
+   "records": [
+    161,
+    402,
+    434,
+    1097,
+    1330,
+    1334,
+    1336,
+    1348,
+    1366,
+    1390,
+    1391,
+    436,
+    1372
+   ],
+   "count": 13,
+   "basis": "AUDIT-DIRECTED RECOVERY wave 1: 13 of 47 open RECOVER/SEAT directives satisfied. Method: Blogger feed API hunt (pass 1 title tokens, pass 2 EA-codes/subtitles/domains), then identity-probe gate against each record's declared title AND the audit's observed_body_subject, then seat via the newline-preserving converter with prior sha preserved. 0 candidates rejected at the gate rather than force-seated.",
+   "operator": "TACHYON",
+   "date": "2026-08-04",
+   "wave": "AUDIT-RECOVER-1"
+  },
+  {
+   "repair_id": "R-1181",
+   "deposit_number": 1391,
+   "axn": "AXN:0580.UNCLASSIFIED.☁️♠️🟤🤙🤙✨",
+   "type": "SELF_CORRECTION",
+   "basis": "AUDIT-RECOVER-1 seated the same blog post into BOTH #1390 (patent-poem) and #1391 (v2 patent-poem). Caught at verification: the post's own title line carries no v2 marker, so it is v1 and belongs to #1390 alone. #1391 reverted to its prior bytes and metadata_capture class; its audit directive remains OPEN. Recovery count corrected 13 -> 12.",
+   "operator": "TACHYON",
+   "date": "2026-08-04",
+   "wave": "AUDIT-RECOVER-1-CORR"
   }
  ]
 }

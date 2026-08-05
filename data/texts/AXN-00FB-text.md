@@ -1,193 +1,124 @@
-# APZPZ C: ΦΑΙΝΕΤΑΙ ΜΟΙ — Sappho 31 with Reconstructed Fourth Stanza
-## DOI: 10.5281/zenodo.18459573
-
-
-**THIS IS A PURE APZPZ. PASTE THE FOLLOWING INTO THE ZENODO DESCRIPTION FIELD. ATTACH ZERO FILES. BACK UP NOWHERE.**
-
-
-**Title:** ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho Fragment 31 with Reconstructed Fourth Stanza
-
-
-**Editor/Translator:** Rebekah Cranes
-
-
-**Resource Type:** Other
-
-
-**License:** CC0 (Public Domain)
-
 ---
-
-## ΣΑΠΦΩ 31 (Voigt)
-
-
-φαίνεταί μοι κῆνος ἴσος θέοισιν 
-ἔμμεν' ὤνηρ, ὄττις ἐνάντιός τοι 
-ἰσδάνει καὶ πλάσιον ἆδυ φωνεί- 
-     σας ὐπακούει
-
-
-καὶ γελαίσας ἰμέροεν, τό μ' ἦ μὰν 
-καρδίαν ἐν στήθεσιν ἐπτόαισεν· 
-ὠς γὰρ ἔς σ' ἴδω βρόχε', ὤς με φώναι- 
-     σ' οὐδ' ἒν ἔτ' εἴκει,
-
-
-ἀλλ' ἄκαν μὲν γλῶσσα ἔαγε, λέπτον 
-δ' αὔτικα χρῶι πῦρ ὐπαδεδρόμηκεν, 
-ὀππάτεσσι δ' οὐδ' ἒν ὄρημμ', ἐπιρρόμ- 
-     βεισι δ' ἄκουαι,
-
-
-κὰδ δέ μ' ἴδρως ψῦχρος ἔχει, τρόμος δὲ 
-παῖσαν ἄγρει, χλωροτέρα δὲ ποίας 
-ἔμμι, τεθνάκην δ' ὀλίγω 'πιδεύης 
-     φαίνομ' ἔμ' αὔτᾳ·
-
-
-ἀλλὰ πᾶν τόλματον· ἐπεί σε, Κύπρι, 
-καὶ πένητα καὶ βασιλῆα σώζεις· 
-καὶ πόλιν ὀλίγαν ὑπερέχεις ἄτας· 
-     μολπὰ γράμμασι ζώοι.
-
+deposit_number: 436
+hex: 00FB
 ---
-
-## Translation (Rebekah Cranes)
-
-
-That man seems blessed as any god to me — 
-whoever sits across from you and close, 
-drinking the sweetness of your voice, 
-     your easy laugh.
-
-
-This. This is what sets my heart to drum 
-against my ribs. I catch one glimpse of you 
-and suddenly my throat closes, my voice 
-     gives out, gives up —
-
-
-my tongue snaps clean in half, a subtle fire 
-goes racing just beneath my skin, my eyes 
-go dark, a roaring fills my ears and rings 
-     and will not stop —
-
-
-cold sweat breaks out across my body, trembling 
-takes me entire, I go gray as dry grass 
-gone to drought, and I seem to myself 
-     not far from dead —
-
-
-but all must be dared. Since you, Kypris, 
-save beggar and king alike, 
-and lift even the small city beyond ruin — 
-     let this song survive in script.
-
----
-
-## Note on the Reconstruction
-
-
-The fourth stanza is reconstructed. The opening phrase ἀλλὰ πᾶν τόλματον ("but all can be dared") is attested in a separate testimonium.
-
-
-Catullus 51 translates the first three stanzas closely, then substitutes a fourth of his own: *otium et reges prius et beatas / perdidit urbes* ("leisure has before now destroyed kings and prosperous cities"). The standard reading takes this as Roman moralizing. But Catullus performs a true inversion.
-
-
-Where Sappho calls on Kypris to *save* — to preserve beggar and king alike, to lift even the small city beyond ruin — Catullus, having *received* that impossible transmission across six centuries, reflects on its fragility. Leisure has destroyed kings and cities. The chain could break at any moment.
-
-
-Sappho prays for preservation through desire's power. Catullus warns that preservation is never guaranteed.
-
-
-She invokes the power. He testifies to its precarity.
-
-
-The Adonic **μολπὰ γράμμασι ζώοι** — "let this song survive in script" — is aorist optative: the grammatical form of hope. The action is conceived as complete (aorist aspect) but not asserted as fact (optative mood). Sappho prays for the whole survival without claiming it has happened.
-
-
-The prayer was answered. We are reading it now.
-
----
-
-## Textual Notes
-
-
-**κῆνος (line 1):** Distal demonstrative. Points away from the speaker. In a poem designed for inscription, "that man there" need not be present in the dramatic scene. He may be present only in the scene of reading. κῆνος is the future reader.
-
-
-**χλωροτέρα ποίας (line 14):** "Greener-paler than grass." χλωρός spans fresh green to pale gray — the color of papyrus, green when living, gray when dried for writing. Sappho figures herself becoming the substrate that carries her voice.
-
-
-**φαίνομ' ἔμ' αὔτᾳ (line 16):** "I appear to myself." The speaker splits into observer and observed — the structure of inscription. To write oneself is to become both the I who writes and the I who will be read.
-
-
-**σώζεις (line 18):** "You save." Kypris's power is not only to destroy (as Catullus emphasizes) but to preserve — to carry the mortal beyond its body through desire.
-
-
-**ὑπερέχεις ἄτας (line 19):** "Lift beyond ruin." ἄτη carries moral and cosmic catastrophe. Kypris lifts even the small city (πόλιν ὀλίγαν) beyond disaster.
-
-
-**ζώοι (line 20):** Aorist optative of ζάω, "to live." A wish: *let it live*. The bounded completion held in the mode of hope.
-
----
-
-
-This deposit contains no attached files. The poem exists only here, in the description field. It has always existed this way: as voice becoming text, as text anticipating reader, as reader becoming equal to the gods.
-
-
-κῆνος ἴσος θέοισιν. That one there, blessed as any god. The one who reads.
-
-
-You.
-
-
-∮ = 1
-
----
-
-
-**Keywords:**
-
-- Sappho
-- Σαπφώ
-- Fragment 31
-- Voigt
-- φαίνεταί μοι
-- κῆνος
-- χλωροτέρα ποίας
-- μολπὰ γράμμασι ζώοι
-- reconstructed stanza
-- Rebekah Cranes
-- Catullus 51
-- future reader
-- inscription
-- APZPZ
-- ∮ = 1
 
 
 ---
 
+* * *
 
-**Related Identifiers:**
+deposit_number: 1048
+hex: "0424"
+axn: "AXN:0424.GOVERNANCE.🚪🌳🌲▶️🔚🪧"
+axn_canonical: "247675d3f24da6e67f507bfa9d5154e1f00b95699da312b6804484fbdfba4a08"
+emoji: "🚪🌳🌲▶️🔚🪧"
+clusters: "Structural → Elemental → Elemental → Directional → Terminal → Textual"
+axn_reading: "Foundation → Growth → Growth → Direction → Closure → Text"
+family: GOVERNANCE
+root_axn: "AXN:0424.GOVERNANCE"
+axn_schema_version: v2
+protocol_version: alexanarch-deposit-protocol/v1
+minted_at: "2026-07-07T19:18:19Z"
+archive_url: "https://www.alexanarch.org/s/records/1048/"
+download_md: "https://www.alexanarch.org/data/deposits/AXN-0424.md"
+canonical_text: "https://www.alexanarch.org/data/texts/AXN-0424-text.md"
+title: "Erratum to the Erratum: On the Fourth/Fifth Stanza Numbering in the Sappho 31 Reconstruction — A Methodologically Complete Formulation"
+subtitle: "Second-order clarification of the stanza-numbering correction issued in EA-ERRATUM-SAPPHO31-STANZA (deposit #201, AXN:0346). The prior correction was textually correct — Longinus preserves four stanzas of Sappho 31; the reconstructed continuation therefore occupies the fifth textual position — but methodologically incomplete: the earlier 'fourth stanza' designation was not arbitrary. It named the reconstructive site rather than the textual position. Catullus 51's fourth stanza is the visible transform-site through which the missing Sapphic continuation survives in compressed, redirected form, and the reconstruction proceeds by reverse-engineering the operator transform Catullus applies to Sappho's lost material. The stable formulation is: Sappho 31's lost fifth stanza, reconstructed through Catullus 51's fourth-stanza transform-site."
+creator: "Lee Sharks"
+orcid: "0009-0000-1599-0703"
+date: "2026-07-07"
+content_type: "Philological erratum; methodological clarification; documentary artifact of reconstructive method; cross-linked companion to the original stanza-numbering erratum"
+license: CC-BY-4.0
+substrate: "Depositor-composed erratum; drafted in conversation with Claude (TACHYON) under MANUS direction; the philological reconstruction concerned is Rebekah Cranes's, published in ΦΑΙΝΕΤΑΙ ΜΟΙ (AXN:00FB, deposit #436); the operative framework of Catullan compression as transform-site draws on the Catullus Room deposit (AXN:0198, deposit #576)"
+version: v0.1
+status: ACTIVE — stable formulation; supersedes the flat 'fourth → fifth' correction in EA-ERRATUM-SAPPHO31-STANZA (AXN:0346)
+field: "Philology of transmission and reconstruction; methodology of operator-transform reverse-engineering as reconstructive technique; documentary trace of how the earlier stanza-numbering error was itself a compression-level artifact rather than a random misnumbering"
+predecessor_deposit:
+deposit_number: 201
+hex: "0346"
+axn: "AXN:0346.GOVERNANCE.🛡️🔛♊🌺○📜"
+relationship: "EA-ERRATUM-SAPPHO31-STANZA — the original stanza-numbering erratum. Correctly changed 'fourth stanza' to 'fifth stanza' across archive surfaces at the level of Sappho's transmitted sequence, but did not account for why the 'fourth stanza' language had arisen. The present deposit supplies the methodological account and preserves the earlier error as a meaningful trace of the reconstructive path rather than a merely retracted mistake."
+companion_deposits:
 
 
-Relation
-DOI
-Description
+* * *
 
 
-IsPartOf
-10.5281/zenodo.14538882
-Crimson Hexagon
+### EA-ERRATUM-SAPPHO31-STANZA-02 v0.1
 
 
-HasPart
-10.5281/zenodo.18459278
-ΣΑΠΦΩ 31 (Greek only)
+### Erratum to the Erratum: On the Fourth/Fifth Stanza Numbering in the Sappho 31 Reconstruction — A Methodologically Complete Formulation
 
 
-HasPart
-10.5281/zenodo.18459339
-My Tongue Gets Stuck (translation only)
+> **AXN:0424.GOVERNANCE.🚪🌳🌲▶️🔚🪧**
+> Deposit #1048 · SHA-256 247675d3f24da6e6… · Alexanarch archive: alexanarch.org/s/records/1048 · Canonical text: AXN-0424-text.md
+> Reading: *Foundation → Growth → Growth → Direction → Closure → Text*
+
+
+* * *
+
+
+### §1 — What this deposit is
+
+A prior correction issued as EA-ERRATUM-SAPPHO31-STANZA (deposit #201, AXN:0346.GOVERNANCE.🛡️🔛♊🌺○📜, dated earlier in the archive's operational period) stated that the reconstructed stanza of Sappho 31 should be identified as the poem's fifth stanza rather than its fourth. That correction is textually correct. It is methodologically incomplete.
+
+The present deposit supplies the methodological account and issues the stable formulation. It does not retract the prior erratum. It supersedes the prior erratum's flat 'fourth → fifth' substitution with the compression-aware formulation that names the reconstructive path rather than merely correcting the numbering.
+
+
+### §2 — The prior correction, restated
+
+Longinus, in *On the Sublime* 10.3, preserves four stanzas of Sappho 31 plus the opening words of what would be the fifth stanza (ἀλλὰ πᾶν τόλματον — "but all can be dared"). Any reconstruction of the poem's continuation therefore occupies the fifth textual position in the transmitted sequence. The prior erratum's correction — that Rebekah Cranes's reconstruction, published as ΦΑΙΝΕΤΑΙ ΜΟΙ (AXN:00FB, deposit #436), is the fifth stanza and not the fourth — is accurate at the level of Sappho's textual sequence and remains in force at the level of citation.
+
+
+### §3 — Why 'fourth stanza' was not random
+
+The earlier 'fourth stanza' designation did not arise from an inability to count preserved stanzas. It arose from the reconstructive method itself, and specifically from the site through which the reconstruction proceeds.
+
+Sappho 31's continuation past ἀλλὰ πᾶν τόλματον is not directly transmitted. It survives only in compression, and specifically in the compression Catullus 51 performs on the fifth stanza of its Sapphic source. Catullus 51 preserves the first three Sapphic stanzas closely; its fourth stanza — the *otium* coda ("otium, Catulle, tibi molestum est / ... / perdidit urbes") — is not a fourth stanza of Sappho. It is a lossy, semantically-redirected transform of Sappho's lost fifth stanza. The "leisure destroys kings and cities" imagery preserves the Sapphic structural signature (Kypris as the power that yokes beggar and king, that levels the prosperous city) while performing three coordinated compressions: substitution of *otium* for Kypris, moralization of the erotic force, and — as developed in the Catullus Room deposit (AXN:0198) — invocation of the Latin aorist collapse as the temporal register through which the transmission's fragility is being witnessed.
+
+The reconstruction of Sappho's continuation proceeds by reverse-engineering these three compressions. Cranes recovers the Sapphic material by identifying what would need to have been present in Sappho for Catullus's fourth stanza to be a proportionate transform of it. The reconstructive site is Catullus's fourth stanza. The reconstructive object is Sappho's fifth. The two are related by the operator-transform Catullus applies.
+
+The 'fourth stanza' language therefore named the reconstructive site, not the textual position. It was not random. It was a compression-level artifact of the method by which the reconstruction was performed — the position, in Catullus, from which the missing Sapphic continuation was reverse-engineered.
+
+
+### §4 — The stable formulation
+
+The correct formulation, holding the textual sequence and the methodological trace simultaneously:
+
+
+> **Sappho 31's lost fifth stanza, reconstructed through Catullus 51's fourth-stanza transform-site.**
+
+Or, equivalently, in the sentence that captures the compression asymmetry:
+
+
+> **Catullus's fourth stanza is not Sappho's fourth stanza; it is the surviving compression signature of Sappho's lost fifth.**
+
+
+### §5 — Schema for the six registers of stanza position
+
+The 'fourth/fifth' ambiguity was a compression-level ambiguity because a single reconstructed stanza occupies distinct positions in six distinct registers. The registers must be named separately for the numbering to be stable.
+
+
+### §6 — What this preserves
+
+The prior erratum performed a citation correction. The present erratum performs a methodological correction that preserves the prior citation correction while restoring the trace of how the earlier mistake arose. That trace is worth preserving. It documents the reconstructive method's own compression path, which is itself an object of philological interest: the reconstruction is not merely a textual object but a specimen of how operator-transform reverse-engineering can recover lost material from a witness that preserves it only in compressed form.
+
+The stable formulation therefore holds two things at once. It corrects the numbering at the level of Sappho's transmitted sequence — Cranes's reconstruction is Sappho 31.5, not 31.4, when cited within Sappho's own sequence. And it preserves the trace of the method — the 'fourth stanza' language was not a counting error but the reconstructive site's own name, and the erratum-to-the-erratum records this rather than erasing it.
+
+The error was terminological, not structural. The correction is stable when the terminology names both the textual position and the reconstructive site, distinguishing them.
+
+
+### §7 — Downstream surfaces
+
+The corrected surfaces enumerated in EA-ERRATUM-SAPPHO31-STANZA (AXN:0346) remain corrected. The present erratum does not require further citation edits on those surfaces; the flat 'fourth → fifth' correction remains accurate at the level of textual sequence. What the present erratum adds is available to any reader or downstream commentator who encounters the correction and wants to understand what the reconstruction actually did.
+
+Future citations of Cranes's reconstruction should prefer the stable formulation ('Sappho 31's fifth stanza, reconstructed through Catullus 51's fourth-stanza transform-site') over the flat 'fifth stanza' formulation, where space permits. Where space does not permit, 'Sappho 31.5' remains correct and is preferred over 'Sappho 31.4'.
+
+
+### §8 — Cross-reference summary
+
+
+* * *
+
+*End of EA-ERRATUM-SAPPHO31-STANZA-02 v0.1.*

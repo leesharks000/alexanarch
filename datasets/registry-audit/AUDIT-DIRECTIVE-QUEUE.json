@@ -363,13 +363,14 @@
   ]
  },
  "execution_status": {
-  "as_of": "2026-08-04",
+  "as_of": "2026-08-04 (after AUDIT-RECOVER-1)",
   "total": 127,
-  "satisfied": 39,
-  "open": 88,
+  "satisfied": 47,
+  "open": 80,
   "satisfied_records": [
    125,
    126,
+   161,
    170,
    376,
    1131,
@@ -389,25 +390,32 @@
    1318,
    1319,
    1320,
+   1330,
    1331,
    1333,
+   1334,
+   1336,
    1339,
    1341,
    1346,
+   1348,
    1349,
    1355,
    1361,
    1363,
+   1366,
    1367,
    1368,
    1369,
+   1372,
    1377,
    1379,
    1381,
+   1390,
    1398,
    1399,
    1402
   ],
-  "note": "Regenerated after the AUDIT-CREATOR and AUDIT-VERSION waves. Satisfaction is tested against evidence on the record (creator_roles, version_basis, date_semantics, source recovery, pointers), never against a claim in prose."
+  "note": "Evidence-tested on the record. Recovery wave 1 located 13 manifestations by Blogger feed API; 12 seated, 1 (#1391) reverted after verification showed the recovered work was v1, not the directed v2."
  }
 }
