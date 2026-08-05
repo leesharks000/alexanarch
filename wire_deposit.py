@@ -1043,16 +1043,30 @@ def regenerate_static_page(d, eidx, registry=None):
         #   absent                -> say plainly the complete work is not yet
         #                            restored here (restoration candidate)
         fv = d.get('body_status', {}).get('full_version') or {}
+        # MANUS ruling 2026-08-04 (#1300): a capture can be COMPLETE AS WHAT IT
+        # IS. An APZPZ-genre deposit packet is the object, not an apparatus
+        # around one; calling it "semi-restored" misdescribes it. When
+        # body_status.capture_completeness declares completeness, say so and
+        # point at the packaged work rather than implying a partial record.
+        _cc = str(d.get('body_status', {}).get('capture_completeness') or '')
+        _complete_capture = _cc.startswith('complete')
         if fv.get('deposit_number'):
+            _head = ('✓ Complete deposit packet — the work it packages is elsewhere in this archive'
+                     if _complete_capture else
+                     '◐ Semi-restored capture — the complete work exists in this archive')
+            _tail = (f'This record is complete as what it is ({esc(_cc)}); '
+                     f'the work it packages is at #{fv["deposit_number"]}.'
+                     if _complete_capture else
+                     'This record preserves the metadata capture; read the complete version for the full text.')
             version_banner = (
                 '<div style="background:#e0f2fe;border-left:4px solid #0369a1;padding:12px 16px;'
                 'border-radius:6px;margin:12px 0;font-size:.92em">'
-                '<div style="font-weight:600;color:#0c4a6e;margin-bottom:4px">◐ Semi-restored capture — the complete work exists in this archive</div>'
-                f'<div style="color:#075985">Complete version: <a href="/s/records/{fv["deposit_number"]}/" '
+                f'<div style="font-weight:600;color:#0c4a6e;margin-bottom:4px">{_head}</div>'
+                f'<div style="color:#075985">{"Packaged work" if _complete_capture else "Complete version"}: <a href="/s/records/{fv["deposit_number"]}/" '
                 f'style="color:var(--accent);font-weight:500">#{fv["deposit_number"]} — {esc(fv.get("title",""))[:90]}</a>'
                 f' <span style="font-size:.85em;opacity:.8">({esc(fv.get("axn",""))})</span></div>'
-                f'<div style="color:#075985;font-size:.85em;margin-top:6px">Pairing basis: {esc(fv.get("basis",""))}. '
-                'This record preserves the metadata capture; read the complete version for the full text.</div>'
+                f'<div style="color:#075985;font-size:.85em;margin-top:6px">Pairing basis: {esc(fv.get("basis",""))} '
+                + _tail + '</div>'
                 '</div>'
             )
         else:
