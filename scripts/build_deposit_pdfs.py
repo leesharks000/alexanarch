@@ -157,6 +157,15 @@ def _clean_body_for_paper(body: str, max_chars: int = 400_000) -> str:
     body = re.sub(r"(?m)^---\s*$", "***", body)
     # Same for `- - -` variant
     body = re.sub(r"(?m)^-\s*-\s*-\s*$", "***", body)
+    # Escape `#` that is NOT a markdown heading marker (2026-08-05). Deposit
+    # cross-references like "#1407" and "Document #12" survive pandoc as bare
+    # `#` in the LaTeX, where it is a macro-parameter character: xelatex dies
+    # with "You can't use `macro parameter character #' in vertical mode."
+    # Killed the PDF build for #1409/#1410 and would have killed any future
+    # body that cites a deposit by number. Heading markers at line start are
+    # left untouched.
+    body = re.sub(r"(?<![\\\n])#(?=\d)", r"\\#", body)
+    body = re.sub(r"(?m)(?<!^)(?<![#\\\s])#(?![#\s])", r"\\#", body)
     if len(body) > max_chars:
         body = body[:max_chars] + (
             "\n\n***\n\n"
@@ -417,6 +426,13 @@ def render_pdf(wrapper_md: str, out_path: Path, timeout: int = 120,
     backslashes, &, $, etc. in deposit bodies are escaped by pandoc rather
     than interpreted). Pass 2: wrapper (with intentional raw LaTeX) \input's
     the sanitized body. Returns (ok, error_msg)."""
+    # HASH GUARD (2026-08-05): the WRAPPER carries raw LaTeX by design, so a
+    # deposit cross-reference like "#1407" reaches xelatex unescaped and dies
+    # with "You can't use `macro parameter character #' in vertical mode."
+    # (#1409/#1410). Escape `#` in the wrapper except where it opens a markdown
+    # heading; the body is already sanitized by pandoc in pass 1.
+    wrapper_md = re.sub(r"(?m)(?<!^)(?<![\\#])#(?![#])", r"\\#", wrapper_md)
+
     tmp_body_md = tmp_body_tex = None
     with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False, encoding="utf-8") as tb:
         tb.write(body_md if body_md else "")
