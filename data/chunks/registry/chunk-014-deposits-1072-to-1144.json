@@ -1387,7 +1387,9 @@
         "audited_at": "2026-07-17T04:49:17.789813Z",
         "audit_version": "v3-dual-store+recovery-map",
         "measured_prose_words": 2611,
-        "measured_at": "2026-07-31"
+        "measured_at": "2026-07-31",
+        "work_sha256": "59bc2e2eee40dadbcd81a73d9cc88e8c27650d5187a98d8f7f0fb0ab47ae5609",
+        "entity_repair": "2026-08-04 ENTITY REPAIR: entities decoded in place (no source re-fetch; structure untouched). Raw HTML entities in canonical text are a conversion defect, not authorial content."
       },
       "references_concepts": [
         "Crimson Hexagonal Archive",
@@ -1409,9 +1411,16 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "ENTITY/STRUCTURE REPAIR: entities decoded in place (no source re-fetch; structure untouched)",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 16673, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 16673, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
       ],
-      "date_modified": "2026-08-04"
+      "date_modified": "2026-08-05"
     },
     {
       "deposit_number": 1083,

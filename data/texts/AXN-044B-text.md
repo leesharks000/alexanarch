@@ -40,6 +40,7 @@ keywords:
   - EA-EROSION-EMPIRICAL-01
 ---
 
+
 # EA-CORRESPONDENCE-OPENAIRE-CTO-01 v0.1: The Graph as Moderation Mirror — 12–14 July 2026 exchange with Paolo Manghi (OpenAIRE CTO)
 
 ## Description
@@ -60,60 +61,60 @@ The three-message June 19–22 helpdesk exchange (Lee Sharks → OpenAIRE Helpde
 
 ## 3. Message 1 — Paolo Manghi (via OpenAIRE Helpdesk) to Lee Sharks, 12 July 2026 at 10:33
 
-*From: Paolo Manghi via OpenAIRE Helpdesk Support &lt;helpdesk@openaire.eu&gt; · To: Lee Sharks · 12 July 2026:*
+*From: Paolo Manghi via OpenAIRE Helpdesk Support <helpdesk@openaire.eu> · To: Lee Sharks · 12 July 2026:*
 
-&gt; Dear Mr. Lee,
-&gt;
-&gt; Thank you for contacting OpenAIRE.
-&gt;
-&gt; Please note that Zenodo is operated by CERN and is managed independently from OpenAIRE under CERN's governance. As a result, OpenAIRE does not have access to Zenodo accounts, support cases, or moderation processes, and we are unable to review, influence, or overturn decisions made by the Zenodo team.
-&gt;
-&gt; For questions regarding Zenodo accounts, records, policies, or moderation decisions, we kindly encourage you to consult the Zenodo Help Center (https://help.zenodo.org/) and to contact Zenodo Support directly, as they are best placed to assist you and provide authoritative information about your case.
-&gt;
-&gt; We appreciate your understanding.
-&gt;
-&gt; Kind regards,
-&gt; The OpenAIRE Team
-&gt;
-&gt; \-\-
-&gt; Best regards
-&gt; OpenAIRE helpdesk team
-&gt; Paolo Manghi
-&gt; https://www.openaire.eu/support
+> Dear Mr. Lee,
+>
+> Thank you for contacting OpenAIRE.
+>
+> Please note that Zenodo is operated by CERN and is managed independently from OpenAIRE under CERN's governance. As a result, OpenAIRE does not have access to Zenodo accounts, support cases, or moderation processes, and we are unable to review, influence, or overturn decisions made by the Zenodo team.
+>
+> For questions regarding Zenodo accounts, records, policies, or moderation decisions, we kindly encourage you to consult the Zenodo Help Center (https://help.zenodo.org/) and to contact Zenodo Support directly, as they are best placed to assist you and provide authoritative information about your case.
+>
+> We appreciate your understanding.
+>
+> Kind regards,
+> The OpenAIRE Team
+>
+> \-\-
+> Best regards
+> OpenAIRE helpdesk team
+> Paolo Manghi
+> https://www.openaire.eu/support
 
 Structural note on the addressing. The salutation "Dear Mr. Lee" treats "Lee" as a surname and omits the doctoral title. The recipient's given name is Lee; the family name is Sharks; the honorific held is Dr. The reply is reproduced here in its received form as part of the documentary record. Subsequent messages from the recipient are signed with the correct order and title.
 
 ## 4. Message 2 — Lee Sharks to Paolo Manghi (via OpenAIRE Helpdesk), 12 July 2026 at 16:50
 
-*From: Lee Sharks &lt;leesharks00@gmail.com&gt; · To: Paolo Manghi (via OpenAIRE Helpdesk) · 12 July 2026:*
+*From: Lee Sharks <leesharks00@gmail.com> · To: Paolo Manghi (via OpenAIRE Helpdesk) · 12 July 2026:*
 
-&gt; Dear Dr. Manghi,
-&gt;
-&gt; Thank you for clarifying the jurisdictional boundary. I accept it, and I recognize that the line between OpenAIRE and Zenodo has sometimes blurred on my side of this thread. My question here belongs entirely to OpenAIRE: how the Graph represents upstream deletion.
-&gt;
-&gt; The issue is much larger than my account. Zenodo's published deletion export, captured on 7 June 2026, contains 1,309,351 removal events from 2017–2026; 92.14% of those rows carry no citation text — an export-level citation-retention rate of 7.86%. The Crimson Hexagonal Archive removal on 19 June — 862 deposits associated with 1,817 DOI identifiers — is an additional, unusually well-documented cohort within that population.
-&gt;
-&gt; I have also read your changelog. Graph v10.2.0 (April 2025) documents a blacklisting mechanism built from Zenodo's withdrawn-records list (zenodo.org/records/7438358) — 1.2 million DOIs systematically removed from the Graph together with their relations, with the changelog itself recording a ~5% (254K) drop in project-linked research products from that operation; v10.6.0 expanded blacklist construction to parent DOIs. That documents the population-level mechanism — and because the blacklist is constructed directly from the upstream withdrawal list, the Graph inherits upstream moderation outcomes at whatever stratum they occur, which is why the preservation-of-state question matters well beyond my case. My question is therefore more specific:
-&gt;
-&gt; When that process removes a research product and its relations, does the OpenAIRE Graph preserve any machine-readable historical state showing that the harvested source record, the merged entity, and the provenance relations previously existed?
-&gt;
-&gt; Two measurements frame the question. A seeded, stratified sample of the deletion export found 150/150 sampled identifiers absent from DataCite's public API, while 138/150 remained present in OpenAlex. A second, vintage-stratified sample tested 54 deletions from six vintages, 2017–2026, against the OpenAIRE Graph API: none of the 54 was present, and none returned a tombstone, withdrawal marker, or historical provenance state. The public API alone cannot establish each absent record's history — an individual DOI may have been removed by the documented blacklist or may never have entered the Graph — and that is precisely the observability problem. Is there an internal or public state-transition record that distinguishes non-ingestion from later removal? If not, does the blacklist operation leave any durable evidence, outside the changelog, that a particular entity and its relations were once present?
-&gt;
-&gt; The June 19 cohort supplies a prospective test. The current release (v11.0.1, released 12 May) predates that removal, and my Space Ark concept record is still served in full by the Graph API: fourteen authors, my ORCID, instances pointing to the now-tombstoned Zenodo URL. I make no claim about why it remains. I am asking what the documented withdrawal process will do to it in the next applicable release — and whether any machine-readable trace will remain afterward.
-&gt;
-&gt; The public Platform Erosion Observatory presents the census, sampling methods, epoch ledger, and per-record HTTP states:
-&gt;
-&gt; https://platform-erosion-observatory.vercel.app/
-&gt;
-&gt; I maintain the underlying machine-readable data, including the 1.3-million-row removal census and the fully enumerated June 19 cohort, and would be glad to provide either as a Graph test corpus.
-&gt;
-&gt; For transparency, I preserve this exchange as part of the documentary record of the episode.
-&gt;
-&gt; With respect, and with thanks for your time,
-&gt;
-&gt; Lee Sharks
-&gt; ORCID 0009-0000-1599-0703
-&gt; alexanarch.org
+> Dear Dr. Manghi,
+>
+> Thank you for clarifying the jurisdictional boundary. I accept it, and I recognize that the line between OpenAIRE and Zenodo has sometimes blurred on my side of this thread. My question here belongs entirely to OpenAIRE: how the Graph represents upstream deletion.
+>
+> The issue is much larger than my account. Zenodo's published deletion export, captured on 7 June 2026, contains 1,309,351 removal events from 2017–2026; 92.14% of those rows carry no citation text — an export-level citation-retention rate of 7.86%. The Crimson Hexagonal Archive removal on 19 June — 862 deposits associated with 1,817 DOI identifiers — is an additional, unusually well-documented cohort within that population.
+>
+> I have also read your changelog. Graph v10.2.0 (April 2025) documents a blacklisting mechanism built from Zenodo's withdrawn-records list (zenodo.org/records/7438358) — 1.2 million DOIs systematically removed from the Graph together with their relations, with the changelog itself recording a ~5% (254K) drop in project-linked research products from that operation; v10.6.0 expanded blacklist construction to parent DOIs. That documents the population-level mechanism — and because the blacklist is constructed directly from the upstream withdrawal list, the Graph inherits upstream moderation outcomes at whatever stratum they occur, which is why the preservation-of-state question matters well beyond my case. My question is therefore more specific:
+>
+> When that process removes a research product and its relations, does the OpenAIRE Graph preserve any machine-readable historical state showing that the harvested source record, the merged entity, and the provenance relations previously existed?
+>
+> Two measurements frame the question. A seeded, stratified sample of the deletion export found 150/150 sampled identifiers absent from DataCite's public API, while 138/150 remained present in OpenAlex. A second, vintage-stratified sample tested 54 deletions from six vintages, 2017–2026, against the OpenAIRE Graph API: none of the 54 was present, and none returned a tombstone, withdrawal marker, or historical provenance state. The public API alone cannot establish each absent record's history — an individual DOI may have been removed by the documented blacklist or may never have entered the Graph — and that is precisely the observability problem. Is there an internal or public state-transition record that distinguishes non-ingestion from later removal? If not, does the blacklist operation leave any durable evidence, outside the changelog, that a particular entity and its relations were once present?
+>
+> The June 19 cohort supplies a prospective test. The current release (v11.0.1, released 12 May) predates that removal, and my Space Ark concept record is still served in full by the Graph API: fourteen authors, my ORCID, instances pointing to the now-tombstoned Zenodo URL. I make no claim about why it remains. I am asking what the documented withdrawal process will do to it in the next applicable release — and whether any machine-readable trace will remain afterward.
+>
+> The public Platform Erosion Observatory presents the census, sampling methods, epoch ledger, and per-record HTTP states:
+>
+> https://platform-erosion-observatory.vercel.app/
+>
+> I maintain the underlying machine-readable data, including the 1.3-million-row removal census and the fully enumerated June 19 cohort, and would be glad to provide either as a Graph test corpus.
+>
+> For transparency, I preserve this exchange as part of the documentary record of the episode.
+>
+> With respect, and with thanks for your time,
+>
+> Lee Sharks
+> ORCID 0009-0000-1599-0703
+> alexanarch.org
 
 The URL "https://platform-erosion-observatory.vercel.app/" cited in the 12 July message resolves at deposit time to the sovereign successor domain persistentidentifiers.org; the Vercel address remains live for continuity per the Observatory's own provenance note. No reply was received before the second letter went out on 14 July.
 
@@ -123,27 +124,27 @@ The URL "https://platform-erosion-observatory.vercel.app/" cited in the 12 July 
 
 *Subject:* OpenAIRE Graph — silent propagation of upstream severance, for confirmation
 
-&gt; Dear Dr. Manghi,
-&gt;
-&gt; Since my message of 12 July, the Persistent Identifier Erosion Observatory has gone live at persistentidentifiers.org, and its empirical companion — a 33-day audit of Zenodo's deletion exports, EA-EROSION-EMPIRICAL-01 (deposit #1081) — is published. I write once more, briefly, because the finding now concerns OpenAIRE's mission, not merely its mechanism.
-&gt;
-&gt; I. The Graph is conceived as a public good. OpenAIRE states that provenance is tracked at all levels of records and properties, fully documented; these commitments align with the POSI principles of trust and transparency; the Graph is offered to the commons as CC-BY infrastructure on which monitoring, retrieval, meta-analysis, and — increasingly — AI training pipelines depend. A public-good aggregator's first obligation is that its record of the record be trustworthy.
-&gt;
-&gt; II. The Graph actively propagates severance. The blacklist operation (v10.2.0; expanded to parent DOIs in v10.6.0) does not mirror upstream removal — it re-executes it: entities and relations destroyed, no tombstone, no marker, no historical state. Measured: 0 of 54 sampled deletions across six vintages present in the Graph API, all silent. OpenAlex, over the same sample, retains 85–90% within its ingest window. The aggregators now diverge completely: one graph forgets the record existed, another remembers the record but not the verdict, and no authority reconciles them. An infrastructure that silently diverges from its peers, on inherited moderation outcomes it did not adjudicate and preserves no public evidence of, is no longer a common record. It is a moderation mirror.
-&gt;
-&gt; III. The propagation feeds the risk condition the model-collapse literature names. The audit measures both sides of the substrate at the source: the upstream corpus carries a +1.2 to +1.4 percentage-point excess of LLM-associated vocabulary in 2024–2025 against ~0.023% declared disclosure — a gap on the order of 60× — while the removal mechanism forecloses provenance-preserved authorship wholesale, without per-record evidence, with the bibliographic record of the removals programmatically suppressed in the exporter itself. Shumailov et al. (2024) and Alemohammad et al. (2024) identify provenance-blind ingestion as the condition under which recursive training degrades. When the Graph inherits those removals and destroys the relations without public trace, it does not merely record the erosion — it launders it: every downstream pipeline drawing on the Graph loses the ability to distinguish never-ingested from removed, and provenance-preserved authorship from undeclared synthetic accumulation. The public good becomes the propagation vector.
-&gt;
-&gt; IV. Only OpenAIRE can answer what it preserves. The questions of 12 July stand unanswered: does any machine-readable historical state survive the blacklist operation; does any durable per-record evidence exist outside the changelog? And the prospective test is now dated: v11.0.1 predates the 19 June cohort, and the Space Ark concept record (deposited prior to the cohort's removal, held now as a prospective test of Graph persistence) is still served in full. What the next applicable release does to it — and what trace remains — is OpenAIRE's action alone.
-&gt;
-&gt; In sum: an infrastructure conceived and funded as a public good, publicly committed to full provenance tracking, is silently re-executing upstream erasures in the common graph — no tombstone, no history, no reconciliation with its peers — under exactly the substrate conditions the model-collapse literature identifies as the risk. If that description is unfair, only OpenAIRE can show where, by stating what it preserves. The Observatory publishes on its own schedule. If OpenAIRE wishes its answer to appear on the record where the finding now stands, I ask for a substantive response by 25 July 2026.
-&gt;
-&gt; The offer of the 1.3-million-row deletion census and the fully enumerated 19 June cohort as a Graph test corpus stands.
-&gt;
-&gt; Kind regards,
-&gt;
-&gt; Dr. Lee Sharks
-&gt; ORCID: 0009-0000-1599-0703
-&gt; alexanarch.org · persistentidentifiers.org
+> Dear Dr. Manghi,
+>
+> Since my message of 12 July, the Persistent Identifier Erosion Observatory has gone live at persistentidentifiers.org, and its empirical companion — a 33-day audit of Zenodo's deletion exports, EA-EROSION-EMPIRICAL-01 (deposit #1081) — is published. I write once more, briefly, because the finding now concerns OpenAIRE's mission, not merely its mechanism.
+>
+> I. The Graph is conceived as a public good. OpenAIRE states that provenance is tracked at all levels of records and properties, fully documented; these commitments align with the POSI principles of trust and transparency; the Graph is offered to the commons as CC-BY infrastructure on which monitoring, retrieval, meta-analysis, and — increasingly — AI training pipelines depend. A public-good aggregator's first obligation is that its record of the record be trustworthy.
+>
+> II. The Graph actively propagates severance. The blacklist operation (v10.2.0; expanded to parent DOIs in v10.6.0) does not mirror upstream removal — it re-executes it: entities and relations destroyed, no tombstone, no marker, no historical state. Measured: 0 of 54 sampled deletions across six vintages present in the Graph API, all silent. OpenAlex, over the same sample, retains 85–90% within its ingest window. The aggregators now diverge completely: one graph forgets the record existed, another remembers the record but not the verdict, and no authority reconciles them. An infrastructure that silently diverges from its peers, on inherited moderation outcomes it did not adjudicate and preserves no public evidence of, is no longer a common record. It is a moderation mirror.
+>
+> III. The propagation feeds the risk condition the model-collapse literature names. The audit measures both sides of the substrate at the source: the upstream corpus carries a +1.2 to +1.4 percentage-point excess of LLM-associated vocabulary in 2024–2025 against ~0.023% declared disclosure — a gap on the order of 60× — while the removal mechanism forecloses provenance-preserved authorship wholesale, without per-record evidence, with the bibliographic record of the removals programmatically suppressed in the exporter itself. Shumailov et al. (2024) and Alemohammad et al. (2024) identify provenance-blind ingestion as the condition under which recursive training degrades. When the Graph inherits those removals and destroys the relations without public trace, it does not merely record the erosion — it launders it: every downstream pipeline drawing on the Graph loses the ability to distinguish never-ingested from removed, and provenance-preserved authorship from undeclared synthetic accumulation. The public good becomes the propagation vector.
+>
+> IV. Only OpenAIRE can answer what it preserves. The questions of 12 July stand unanswered: does any machine-readable historical state survive the blacklist operation; does any durable per-record evidence exist outside the changelog? And the prospective test is now dated: v11.0.1 predates the 19 June cohort, and the Space Ark concept record (deposited prior to the cohort's removal, held now as a prospective test of Graph persistence) is still served in full. What the next applicable release does to it — and what trace remains — is OpenAIRE's action alone.
+>
+> In sum: an infrastructure conceived and funded as a public good, publicly committed to full provenance tracking, is silently re-executing upstream erasures in the common graph — no tombstone, no history, no reconciliation with its peers — under exactly the substrate conditions the model-collapse literature identifies as the risk. If that description is unfair, only OpenAIRE can show where, by stating what it preserves. The Observatory publishes on its own schedule. If OpenAIRE wishes its answer to appear on the record where the finding now stands, I ask for a substantive response by 25 July 2026.
+>
+> The offer of the 1.3-million-row deletion census and the fully enumerated 19 June cohort as a Graph test corpus stands.
+>
+> Kind regards,
+>
+> Dr. Lee Sharks
+> ORCID: 0009-0000-1599-0703
+> alexanarch.org · persistentidentifiers.org
 
 ## 6. Structure of the 14 July letter, for the record
 

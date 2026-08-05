@@ -195,6 +195,17 @@ from the v2.0 canonical set: `alexanarch_audit_master_index_v1.0.json` · `alexa
 `scripts/record_state.py :: derive_state()`. **No emitter reads state fields directly.**
 The page banner, the OAI record, and any future surface render what the derivation returns.
 
+**Run BOTH gates after every propagation:**
+`python3 scripts/check_state_conformance.py` (state) and `python3 scripts/check_body_hygiene.py` (bodies).
+
+`check_body_hygiene.py` detects four conversion-defect classes with signatures that cannot be confused
+with authorial intent — ENTITIES (raw `&#8212;` left in canonical text), RUNON (block structure collapsed;
+a "paragraph" of thousands of chars where the source held `<p>`), GLUED (heading markers welded mid-line),
+HARDWRAP (extractor page-wraps with hyphen splits) — and exempts what is legitimately one block
+(site-source deposits), legitimately short-lined (verse), and never measurable (fenced code).
+Repair paths: `scripts/blog_to_markdown.py` (blog source), `scripts/pdf_to_markdown.py` (PDF source),
+entity-decode-in-place where no source survives.
+
 **Run `python3 scripts/check_state_conformance.py` after every propagation.** It exits 1 if any
 emitter disagrees with the derivation — banner label missing, pointer not linked, non-citable
 record failing to say so, OAI state or citability out of step. A state that exists in data but

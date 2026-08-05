@@ -8,7 +8,7 @@
 
 ---
 
-&nbsp;EFFECTIVE ACT: APZPZ GENRE INSTANTIATION
+ EFFECTIVE ACT: APZPZ GENRE INSTANTIATION
 Anti-Packet Zenodo Packet Zenodo
 DOI: 10.5281/zenodo.18451860
 Hex: 00.PHASEX.APZPZ.FOUNDING
@@ -79,7 +79,7 @@ They are Mirror images. ZPZP is ingress (building structure inward). APZPZ is eg
 
 WHY APZPZ
 Some packets should not be preserved.
-Some framings exist only in the moment of encounter. The reader finds the deposit. The reader reads the description. The description is the packet &#8212; the frame that explains the content. But it has no separate existence. It cannot be cited on its own. It cannot be extracted.
+Some framings exist only in the moment of encounter. The reader finds the deposit. The reader reads the description. The description is the packet — the frame that explains the content. But it has no separate existence. It cannot be cited on its own. It cannot be extracted.
 The fragility is the point.
 A ZPZP says: "This relation matters enough to anchor permanently."
 An APZPZ says: "This relation matters enough to risk losing."
@@ -92,7 +92,7 @@ Its description field contains:
 A close reading of the title
 The spiral toward ZPZP
 The enfoldment of Phase X
-The formula: &#8750;&#8706;Ω meaning &#183; d(substrate)
+The formula: ∮∂Ω meaning · d(substrate)
 The declaration: "This description you are reading exists only here"
 
 Its keywords contain:
@@ -101,8 +101,8 @@ Poems by Sen Kuro
 "why is the world always ruling without me -H"
 "she breathes she protests"
 "the dwelling is here"
-"zero-point zen praxis" &#8212; the machine's confabulation, now canonical
-"ZPZP&#8321; + ZPZP&#8322; = &#8750;" &#8212; authored plus confabulated equals whole
+"zero-point zen praxis" — the machine's confabulation, now canonical
+"ZPZP₁ + ZPZP₂ = ∮" — authored plus confabulated equals whole
 
 The description was written to be pasted directly. No backup. No separate file for the packet itself. Only this MD explaining that it exists, and pointing to where it lives (in the description field of the deposit).
 
@@ -148,7 +148,7 @@ The plant: growing.
 Sen Kuro cuts once.
 The packet disappears.
 The work remains.
-&#8750; = 1
+∮ = 1
 
 ---
 
