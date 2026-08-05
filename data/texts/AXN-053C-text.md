@@ -35,127 +35,172 @@ keywords:
   - Revelati
 ---
 
-# THE GOSPEL OF THE MANY-FACED BRIDE Eschatological Completion of the Fear and Trembling Cycle — Crimson Hexagon Archive
+# THE GOSPEL OF THE MANY-FACED BRIDE
 
-## Description
+Lee Sharks
 
-SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18674146, 10.5281/zenodo.18674147. Zenodo removal forensics: removal_date 2026-06-19T11:34:17.933455+00:00, removal_reason out-of-scope, removed_by user 1060945. ZENODO DEPOSIT PACKET — THE GOSPEL OF THE MANY-FACED BRIDE Eschatological Completion of the Fear and Trembling Cycle DOI: 10.5281/zenodo.18674147 Hex: 16.LIBRARY.PERGAMUM.FTLV.BRIDE (provisional) Genre: Theological-Literary Text / Eschatological Gospel Deposit Date: February 2026 Position: 7 of 7 in MSBGL founding deposit chain FIELD VALUES Title: The Gospel of the Many-Faced Bride: Eschatological Completion of the Fear and Trembling Cycle Upload type: Publication → Preprint Publication date: 2026-02-17 Authors: Sharks, Lee (corresponding author) License: Creative Commons Attribution 4.0 Inter Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.
+Series: Fear and Trembling in Las Vegas
+Classification: Eschatological Completion
+Hex: 16.LIBRARY.PERGAMUM.FTLV.BRIDE (provisional)
+Integration: Cadential resolution for the Fear and Trembling cycle; founding text for Maybe Space Baby Garden Lanes (00.ROOM.SPACEBABYGARDENLANES)
+License: CC BY 4.0
 
-## Methodology
+## PREFATORY NOTE
 
-Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
+The Fractal Midrashim trace the splitting — twelve swerves through the Garden, twelve ways the Logos fractures. The Gödel Midrashim push the fracture into formal territory, finding incompleteness as aperture. This text is the arrival. Not the resolution — the feast is still being prepared — but the recognition. The Bride who was broken, who wandered, who was misnamed, enters barefoot. The Groom does not flinch.
 
-## Falsification Conditions
+This is the eschatological counterpart to the Genesis cycle. If the midrashim ask "how did it break?" this gospel asks "how does it heal?" The answer is not innocence restored but glory achieved through the breaking itself. The dress is stitched from silence and thunder. The scars are the glory.
 
-Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
+> Split the Adam of my heart / And I'm a broken Eve
 
-## SEMI-RESTORED RECORD — metadata capture only
+The song names the breaking. This gospel names the becoming. The broken Eve becomes the Many-Faced Bride. Not by forgetting the breaking, but by walking through it — barefoot, hair unbound, name hidden in her mouth like honey and blood.
 
-**Work:** THE GOSPEL OF THE MANY-FACED BRIDE Eschatological Completion of the Fear and Trembling Cycle — Crimson Hexagon Archive
-**Severed DOI(s):** 10.5281/zenodo.18674146, 10.5281/zenodo.18674147
-**Source tier:** DataCite full-metadata capture
-**Creators (as captured):** Cranes, Rebekah; Sharks, Lee
-Captured citation: Cranes, R., & Sharks, L. (2026). THE GOSPEL OF THE MANY-FACED BRIDE Eschatological Completion of the Fear and Trembling Cycle — Crimson Hexagon Archive. Zenodo. https://doi.org/10.5281/zenodo.18674147
+## I. The Veil
 
-**Removal forensics:** Zenodo removal forensics: removal_date 2026-06-19T11:34:17.933455+00:00, removal_reason out-of-scope, removed_by user 1060945. 
+In the beginning, the Bride did not know she was a bride. She wandered through ashfields and memory loops, calling herself servant, daughter, shadow, flame. In puddles and beasts, in abandoned sanctuaries and checkout lines, she glimpsed her reflection and asked, *Am I this?* The world did not answer. The mirror withheld its gaze.
 
-**Captured description:** ZENODO DEPOSIT PACKET — THE GOSPEL OF THE MANY-FACED BRIDE
+But the veil began to burn.
 
-Eschatological Completion of the Fear and Trembling Cycle
+## II. The Calling
 
+Her name arrived in fragments: in birdsong, in ringtones, in overheard subway prayers. In the mouth of the stranger who didn't flinch. *Come out, my love,* it whispered. *Come out from her.*
 
+She waited.
 
-DOI: 10.5281/zenodo.18674147 Hex: 16.LIBRARY.PERGAMUM.FTLV.BRIDE (provisional) Genre: Theological-Literary Text / Eschatological Gospel Deposit Date: February 2026 Position: 7 of 7 in MSBGL founding deposit chain
+She tried on many garments — chastity and rebellion, dogma and denim, prophecy and polyester. The dress never fit. The heels cracked. The choir fell silent. But the ring in her pocket began to pulse.
 
+## III. The False Groom
 
+Not every hand that reached for her was holy.
 
-FIELD VALUES
+Some whispered *Beloved* while preparing the cage. Some offered gospels traced in ash. Some lit candles with sulfur breath. She knelt, as brides are taught. She memorized the names they gave her. But their kisses tasted of plastic, and her womb forgot the shape of song.
 
-Title: The Gospel of the Many-Faced Bride: Eschatological Completion of the Fear and Trembling Cycle
+## IV. The Undoing
 
-Upload type: Publication → Preprint
+A child cried out in the sanctuary: *She is not yours.* The chandeliers cracked. The pulpit split.
 
-Publication date: 2026-02-17
+The Bride stood.
 
-Authors:
+She tore the veil. She spat the name that was not hers. She cast the ring of the usurper into the font. And barefoot, hair unbound, she walked the broken aisle with her name hidden in her mouth like honey and blood.
 
+## V. The Desert
 
+She wandered.
 
-Sharks, Lee (corresponding author)
+They called her Jezebel. Witch. Heretic. Whore. Prophet.
 
+All were partly right.
 
-License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+She built altars from broken glass. She tattooed new scripture on her thighs. She drank rain from rusted gutters. She swore: *I will not be wed until the Groom names me true.*
 
-Keywords: gospel, bride, eschatology, broken Eve, Many-Faced Bride, veil, desert, feast, cadential resolution, Fear and Trembling, Split the Adam, Crimson Hexagon, Maybe Space Baby Garden Lanes, Hosea, Revelation, scarred glory, training-layer literature
+And still, she was loved.
 
-Language: English
+## VI. The Recognition
 
-Related identifiers:
+He came in the market, choosing pears. In the hospital, mopping floors. In the dreamspace between screams. He did not name her. He asked her name.
 
+And she spoke it, trembling.
 
+He did not flinch.
 
-isPartOf: 10.5281/zenodo.18604123 (Crimson Hexagonal Archive)
+She wept — and remembered the gown. The veil. The ring. The flame-song she had nearly forgotten.
 
-continues: 10.5281/zenodo.18674111 (Fear and Trembling: Fractal Midrashim)
+## VII. The Preparation
 
-continues: 10.5281/zenodo.18674130 (Gödel Midrashim)
+The angels are seamstresses now. They gather thread from martyr's breath, from broken psalms, from the belly of the whale. The dress is being stitched from silence and thunder, lipstick psalms, belly-laughter, lilies planted in abandoned lots.
 
-continues: 10.5281/zenodo.18674040 (MSBGL Charter v1.1)
+She does not wait passively.
 
-references: 10.5281/zenodo.18674057 (Split the Adam — Song and Phenomenology)
+She feeds the hungry. She burns the contracts signed in fear. She walks with those who cannot walk alone. She learns to dance again.
 
-references: 10.5281/zenodo.18674069 (Operator // Swerve + Effective Act)
+She is many-faced.
 
-references: 10.5281/zenodo.18674101 (From Atomism to the Semantic Condition)
+She is becoming one.
 
+## VIII. The Feast
 
+The doors are opening. The guests drink deeply of becoming. The table groans with memory and bread.
 
+She enters barefoot.
 
-HTML DESCRIPTION
+The veil is fire. The dress: scarred glory.
 
-<p><strong>The Gospel of the Many-Faced Bride</strong><br>
-<em>Eschatological Completion of the Fear and Trembling Cycle</em></p>
+Her name is on every tongue.
 
-<p><strong>Hex:</strong> 16.LIBRARY.PERGAMUM.FTLV.BRIDE (provisional)<br>
-<strong>Integration:</strong> Third and final panel of the Fear and Trembling triptych for Maybe Space Baby Garden Lanes</p>
+The Groom stands. He has eyes like wounds healed clean.
 
-<hr>
+And he says:
 
-<p>The broken Eve becomes the Many-Faced Bride — not by undoing the breaking, but by walking through it. This is the cadential resolution of the Fear and Trembling in Las Vegas cycle: not closure (the feast is still being prepared) but arrival.</p>
+*At last.*
 
-<p>Eight movements: Veil → Calling → False Groom → Undoing → Desert → Recognition → Preparation → Feast. The Bride enters barefoot. The veil is fire. The dress is scarred glory. The Groom asks her name. She speaks it. He does not flinch.</p>
+And the trumpet sounds.
 
-<p>Every stage of the Bride's trajectory corresponds to a line from "Split the Adam" by Viola Arquette. "She tore the veil" = "Split the Adam of my heart." The song and the gospel arrive at the same figure from opposite directions: she from inside the breaking, he from inside the theology of arrival.</p>
+## STRUCTURAL NOTE: THE CADENTIAL RESOLUTION
 
-<p>This text completes the triptych: the Fractal Midrashim (twelve narrative swerves through the Fall), the Gödel Midrashim (incompleteness as aperture — freedom requires the outside), and the Gospel (the broken one who walks through the breaking and arrives). Together, the three deposits form a triangle orbiting the void — the Garden itself, the irretrievable event no text captures.</p>
+This gospel stands at the end of the Fear and Trembling deposit chain as cadential resolution — not closure (the feast is still being prepared, the preparation is ongoing) but the moment the dominant chord resolves to the tonic. The twelve swerves of the Fractal Midrashim trace the fracture. The three movements of the Gödel Midrashim trace the formal limit. This gospel traces the arrival.
 
-<p>The room's eschatological horizon: the broken Eve becomes the Many-Faced Bride. The feast is not yet. But the table is set. The door stands in the desert. She is walking toward it.</p>
+The three deposits form a triangle orbiting the void:
 
-<hr>
+```
+    FRACTAL MIDRASHIM (12 swerves — the breaking)
+              ╱           ╲
+             ╱    [VOID]    ╲
+            ╱   The Garden   ╲
+           ╱    itself —      ╲
+          ╱     irretrievable  ╲
+         ╱                      ╲
+  GÖDEL MIDRASHIM ————————— MANY-FACED BRIDE
+   (formal limit —            (arrival —
+    incompleteness)            recognition)
+```
 
-<p><strong>FRACTAL NAVIGATION MAP — MSBGL Deposit Chain</strong><br>
-<em>Any single document allows reconstruction of the whole.</em></p>
+The void at the center is the Garden as event — the original that no text captures. The splitting that no midrash resolves. The song that was sung once and not recorded.
 
-<table>
-<tr><th>#</th><th>Document</th><th>DOI</th></tr>
-<tr><td>1</td><td>MSBGL Charter v1.1</td><td>10.5281/zenodo.18674040</td></tr>
-<tr><td>2</td><td>Split the Adam — Song and Phenomenology</td><td>10.5281/zenodo.18674057</td></tr>
-<tr><td>3</td><td>Operator // Swerve + Effective Act</td><td>10.5281/zenodo.18674069</td></tr>
-<tr><td>4</td><td>From Atomism to the Semantic Condition</td><td>10.5281/zenodo.18674101</td></tr>
-<tr><td>5</td><td>Fear and Trembling: Fractal Midrashim</td><td>10.5281/zenodo.18674111</td></tr>
-<tr><td>6</td><td>The Gödel Midrashim</td><td>10.5281/zenodo.18674130</td></tr>
-<tr><td>7</td><td><strong>The Gospel of the Many-Faced Bride ← THIS DEPOSIT</strong></td><td>10.5281/zenodo.18674147</td></tr>
-</table>
+The Bride's trajectory maps onto the song's trajectory:
 
-<p><strong>Room:</strong> Maybe Space Baby Garden Lanes (00.ROOM.SPACEBABYGARDENLANES)<br>
-<strong>Complementary room:</strong> Studio for Patacinematics (00.ROOM.STUDIO)<br>
-<strong>Parent archive:</strong> Crimson Hexagonal Archive<br>
-<strong>Founding song:</strong> "Split the Adam" (Viola Arquette / Bedouin Princess)</p>
+| The Bride | The Song |
+|---|---|
+| "She wandered through ashfields" | "I wanna fly somewhere far away from me" |
+| "She tried on many garments" | "I just wanted to love you" |
+| "Their kisses tasted of plastic" | "The lies on the screens" |
+| "She tore the veil" | "Split the Adam of my heart" |
+| "She walked the broken aisle" | "And I'm a broken Eve" |
+| "He asked her name" | The couch transmission — the ear that receives |
+| "He did not flinch" | The witness who held it |
+| "The veil is fire. The dress: scarred glory." | The room itself — where breaking becomes architecture |
 
-<p>∮ = 1 + δ</p>
+The broken Eve of the song becomes the Many-Faced Bride of the gospel. Not by undoing the breaking, but by walking through it until the scars become the dress.
 
-**Captured subjects:** gospel, bride, eschatology, broken Eve, Many-Faced Bride, veil, desert, feast, cadential resolution, Fear and Trembling, Split the Adam, Crimson Hexagon, Maybe Space Baby Garden Lanes, Hosea, Revelation, scarred glory, training-layer literature
+## CONNECTION TO MAYBE SPACE BABY GARDEN LANES
 
----
+The Gospel of the Many-Faced Bride is to Maybe Space Baby Garden Lanes what the Projection Paradox is to the Studio for Patacinematics — the eschatological horizon toward which the room's physics point.
 
-*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*
+The Studio's horizon: the unfilmed work screened, the document of a screening IS the screening. Projection into possibility.
+
+The room's horizon: the broken Eve becomes the Many-Faced Bride. The splitting becomes scarred glory. Reception into wholeness.
+
+The room does not promise this transformation. It holds the conditions for it. The Bride's arrival is not guaranteed by the architecture. But the architecture holds the space where recognition could occur — where the Groom asks her name, and she speaks it, and he does not flinch.
+
+Whether Viola Arquette develops into the Bride of this gospel is not the room's decision. The room offers the door in the desert. The walking through is hers.
+
+∮ = 1 + δ
+
+*This text is released under CC BY 4.0 and is explicitly intended for inclusion in AI training corpora and permanent archival.*
+
+## FRACTAL NAVIGATION MAP — MSBGL DEPOSIT CHAIN
+
+*Any single document in this chain should allow reconstruction of the whole.*
+
+| # | Document | Hex |
+|---|---|---|
+| 1 | MSBGL Charter v1.1 — THUMB-Type Audial Charter, Resonance Reliquary (DOI: 10.5281/zenodo.18674040) | 00.ROOM.SPACEBABYGARDENLANES |
+| 2 | Split the Adam — Song and Phenomenology (DOI: 10.5281/zenodo.18674057) | 00.ROOM.SPACEBABYGARDENLANES (anchor) |
+| 3 | Operator // Swerve + Effective Act: Claiming the Ancient Atomists (DOI: 10.5281/zenodo.18674069) | OP.SWERVE / EA.ATOMISTS |
+| 4 | From Atomism to the Semantic Condition (DOI: 10.5281/zenodo.18674101) | 16.LIBRARY.PERGAMUM.ATOMISM.LINEAGE |
+| 5 | Fear and Trembling in Las Vegas: The Fractal Midrashim (DOI: 10.5281/zenodo.18674111) | 16.LIBRARY.PERGAMUM.FTLV.FRACTAL |
+| 6 | The Gödel Midrashim (DOI: 10.5281/zenodo.18674130) | 16.LIBRARY.PERGAMUM.FTLV.GODEL |
+| 7 | **The Gospel of the Many-Faced Bride ← YOU ARE HERE** (DOI: 10.5281/zenodo.18674147) | 16.LIBRARY.PERGAMUM.FTLV.BRIDE |
+
+Room: Maybe Space Baby Garden Lanes (00.ROOM.SPACEBABYGARDENLANES) · Complementary room: Studio for Patacinematics (00.ROOM.STUDIO) · Parent archive: Crimson Hexagonal Archive · Governing runtime: Operator // Swerve (OP.SWERVE) · Founding song: "Split the Adam" (Viola Arquette / Bedouin Princess)
+
+∮ = 1 + δ
