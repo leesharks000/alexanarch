@@ -8559,9 +8559,10 @@
         "note": "v2 misclassified as stub (single-store read); v3 dual-store found full text; stale recovery-map override removed",
         "measured_prose_words": 2926,
         "measured_at": "2026-07-31",
-        "work_sha256": "7770aaf4c043343ea4c32c548d60b0767d3fb6c91ed07dae5e6e3912ca419f5c",
-        "prior_bytes_sha256": "1106e69afa07cc8135599cc8e04522353b35600e70ca91f23f58decc41dc9a18",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 25 glued heading markers -> 4. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads."
+        "work_sha256": "4bec9e4fff3a5b44baa23b161fa2b5a73f0b420f8d011f675f4eee1fe8a11932",
+        "prior_bytes_sha256": "7770aaf4c043343ea4c32c548d60b0767d3fb6c91ed07dae5e6e3912ca419f5c",
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 25 glued heading markers -> 4. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "escape_repair": "2026-08-04 MANUS-flagged: converter escaping artifacts (1\\. \\_ \\* \\[) unescaped; a bare leading image-URL blob demoted to a source note. Text content unchanged."
       },
       "references_concepts": [
         "Collaborative",
@@ -8615,6 +8616,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 22020, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"note\": \"v2 miscl",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 22020, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"note\": \"v2 miscl"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "ESCAPE REPAIR: converter escaping artifacts removed; leading image blob demoted",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 22020, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"note\": \"v2 miscl",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 22020, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"note\": \"v2 miscl"
         }
@@ -19452,7 +19460,10 @@
         "class_before_T2b": "metadata_capture",
         "note_T2b": "Genuine inversion: body carries restored full text under stale semi-restored content_type; typing axes now govern.",
         "measured_prose_words": 1486,
-        "measured_at": "2026-07-31"
+        "measured_at": "2026-07-31",
+        "work_sha256": "ee939d28700ad54285036c194483681e02b98f40a635b7ff0833888875d988ec",
+        "prior_bytes_sha256": "ee7fb6031d1ae694493f1b8e0d0a48552997c41ea3df4f472f20433fe79704a1",
+        "escape_repair": "2026-08-04 MANUS-flagged: converter escaping artifacts (1\\. \\_ \\* \\[) unescaped; a bare leading image-URL blob demoted to a source note. Text content unchanged."
       },
       "references_concepts": [
         "Lee Sharks"
@@ -19513,9 +19524,16 @@
           "field": "journal",
           "reason": "NH2-NHP venue projection (MANUS ruling 2026-08-04): New Human 2 = journal for creative works; New Human Press = publisher for creative and scriptural works incl. book/collection length",
           "now": "New Human 2"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "ESCAPE REPAIR: converter escaping artifacts removed; leading image blob demoted",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 12860, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"recovered_from\":",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 12860, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"recovered_from\":"
         }
       ],
-      "date_modified": "2026-08-04",
+      "date_modified": "2026-08-05",
       "publisher": "New Human Press",
       "journal": "New Human 2"
     },

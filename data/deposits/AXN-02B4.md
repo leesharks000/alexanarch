@@ -10,6 +10,7 @@ hash: "f6add0cf4f599ae6be5e0ae8c65cbd4ec5581be6f3b14e847a762c4d6c8ed992"
 status: "ACTIVE"
 ---
 
+
 # Where's Waldo? Substrate Compositing, the Hidden Figure Protocol, and a Memographic Audit of the Search Ritual Author: Lee Sharks (ORCID: 0009-0000-15
 
 **Johannes Sigil** · 2026-05-25 · Empirical study

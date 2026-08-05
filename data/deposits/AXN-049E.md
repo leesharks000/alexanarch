@@ -43,6 +43,8 @@ Byte fidelity verifiable against the live blog URL and the recorded hashes; auth
 
 Restored from https://mindcontrolpoems.blogspot.com/2026/03/on-architecture-of-cleis-compression.html under the grade-none restoration queue; DOI(s) 10.5281/zenodo.19024779, 10.5281/zenodo.19024778 severed 2026-06-19. Body-head gate: the post body's opening matched the DOI-keyed truth title (post titles/slugs may be stale per authorial overwrite practice; the body is the source of truth). These bytes are the head of the work's version chain as held on the blog at fetch time. Canonical bytes below the rule.
 
+
+
 ---
 
 ON THE ARCHITECTURE OF CLEIS Compression, Botanics, and the Survival of Paternal Lyric

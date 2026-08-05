@@ -1,6 +1,4 @@
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSfbWBdoTXOeM5hKHu8p_-6bnH8NKW0DNrOEIVR26AD-DWbCu1irG23jhGDt8QQj7l0NFOGu6S3HP8SY7y6X1muCas0VVvIC4xmu-P7GP7Cx22W6mmhteJa3fZU0HlwqNMUnd8qy4ddPH4GoSzF_olwnxJ2FcbHY79u3TDUqLBXUHGwDQTxAho4eMHlell/w319-h399/1000003830.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSfbWBdoTXOeM5hKHu8p_-6bnH8NKW0DNrOEIVR26AD-DWbCu1irG23jhGDt8QQj7l0NFOGu6S3HP8SY7y6X1muCas0VVvIC4xmu-P7GP7Cx22W6mmhteJa3fZU0HlwqNMUnd8qy4ddPH4GoSzF_olwnxJ2FcbHY79u3TDUqLBXUHGwDQTxAho4eMHlell/s1402/1000003830.png)
-
-  
+*(source image: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSfbWBdoTXOeM5hKHu8p_-6bnH8NKW0DNrOEIVR26AD-DWbCu1irG23jhGDt8QQj7l0NFOGu6S3HP8SY7y6X1muCas0VVvIC4xmu-P7GP7Cx22W6mmhteJa3fZU0HlwqNMUnd8qy4ddPH4GoSzF_olwnxJ2FcbHY79u3TDUqLBXUHGwDQTxAho4eMHlell/w319-h399/1000003830.png)*
 
 Where's Waldo?  
 *Substrate Compositing, the Hidden Figure Protocol, and a Memographic Audit of the Search Ritual*

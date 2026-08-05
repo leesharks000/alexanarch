@@ -401,6 +401,7 @@ On arrival of any new cumulative package (first-500 imminent; later boundary pac
 - SAMEVER SET A (witness-richer, arrow may be backwards): #1092→#1093, #1249→#1231, #1278→#406, #1296→#12, #1325→#493, #1332→#1331
 - SAMEVER SET B (divergent — identity not version): #904→#119, #1249→#1231, #1250→#184, #1260→#137
 - W11 TITLE COLLISIONS (strip would duplicate an existing title): #894, #1142, #1152, #1172, #1324
+- **SUBJECT-MISMATCH CANDIDATES (identity — DETECTED, never auto-repaired): [325, 869, 957, 959, 965, 1023, 1094, 1132, 1267].** Body head carries <34% of the record's own title terms. #1356 and #869 are confirmed: #1356 serves 'Rhys Owens — The Lunar Arm of New Human' under the title 'Hexagonal Contributor License v1.0' (audit had ALREADY ruled WRONG_OBJECT 2026-07-31; directive executed 2026-08-04, now WITHHELD); #869 serves 'The Pristine Fallacy' under 'Lexical Minting Registry' — independently confirmed by the content-fingerprint scan (#856≡#869, zero title overlap). The remaining 7 are audit-CONFIRMED_MATCH records the audit's own method could not catch, and need eyes.
 - VOCAB RESIDUALS: 17 one-off v1.1 candidates (#152–#352 list in vocab file); pre-vocabulary compound values outside the burn-down queue (#863, #430, #498/#499 class) — conformance sweep after ruling
 - W7 stale-provenance-prose sweep — one word ratifies
 - #1093 fork edge (single-successor field cannot hold the braid; ruling on edge semantics or leave held with #1433 as documentary heal)

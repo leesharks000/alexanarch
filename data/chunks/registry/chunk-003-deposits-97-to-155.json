@@ -11783,7 +11783,10 @@
         "recovered_at": "2026-07-20T11:18:29Z",
         "note": "severed_media healed — 1482 prose words, blogger media re-linked in body",
         "measured_prose_words": 1410,
-        "measured_at": "2026-07-31"
+        "measured_at": "2026-07-31",
+        "work_sha256": "d959705165f28f1b828a1344e773aff4b1dba5d83c3154ce169fa1ec39f21ea1",
+        "prior_bytes_sha256": "1918a3d91c2c15d40ea1e085f9cbac82dcc9e3fa40aa53682124e25c8e78411b",
+        "escape_repair": "2026-08-04 MANUS-flagged: converter escaping artifacts (1\\. \\_ \\* \\[) unescaped; a bare leading image-URL blob demoted to a source note. Text content unchanged."
       },
       "title_repair_log": [
         {
@@ -11829,6 +11832,13 @@
           "reason": "DW-011 intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
           "was": "\"Where's Waldo? Substrate Compositing, the Hidden Figure Prot\" is an empirical study by Johannes Sigil in the Crimson Hexagonal Archive (2026-05-25). Substrate Compositing, the Hidden Figure Protocol, and a Memographic Audit of the Search Ritual. The work comprises 1,559 words and is classified unde",
           "now": "A *New Human 2* memographic artifact authored and prompted by Lee Sharks, edited by Johannes Sigil, and generated visually through ChatGPT / LABOR. The image combines a Boschean dense-garden idiom with the hidden-figure search protocol associated with *Where’s Waldo?*, asking whether the two traditions can coexist in one generated field without cancellation.\n\nThe companion analysis treats the result as substrate compositing: a generative model combines high art, popular visual culture, and meme logic without respecting inherited aesthetic hierarchy. It then links visual search to retrieval: Waldo hidden in a dense image becomes an analogy for an entity present but difficult to surface in a knowledge system. Platform-suppression claims remain attributed to the record and its cited captures."
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "ESCAPE REPAIR: converter escaping artifacts removed; leading image blob demoted",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 9729, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"recovery_chat\": \"",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 9729, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"recovery_chat\": \""
         }
       ],
       "date_modified": "2026-08-05",

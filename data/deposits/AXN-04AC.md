@@ -43,6 +43,8 @@ Byte fidelity verifiable against the live blog URL and the recorded hashes; auth
 
 Restored from https://mindcontrolpoems.blogspot.com/2026/04/charter-of-living-arkitecture-lab-lal.html under the grade-none restoration queue; DOI(s) 10.5281/zenodo.19545434, 10.5281/zenodo.19545435 severed 2026-06-19. Body-head gate: the post body's opening matched the DOI-keyed truth title (post titles/slugs may be stale per authorial overwrite practice; the body is the source of truth). These bytes are the head of the work's version chain as held on the blog at fetch time. Canonical bytes below the rule.
 
+
+
 ---
 
 # CHARTER OF THE LIVING ARKITECTURE LAB (LAL)
@@ -146,11 +148,11 @@ LAL operates at five simultaneous scales. They are not phases. They are not sequ
 
 Scale | Domain | Key Artifacts  
 ---|---|---  
-1\. The Brick (cm) | Living parts, sausages, donuts, hex-donut bricks, S-chain molds | Assembly patterns J1-J7, unfurling mechanics  
-2\. The Structure (m) | Tater tents, crop coats, farm blankets, igloo blocks, tea gardens | "A blanket that works great until it gets wet, then turns into a farm"  
-3\. The Organism (10m) | Macro-ant robotics: ~90% living material, ~10% salvaged frame | Queen engineering, passenger-sensors, bee-language compression  
-4\. The Territory (km) | Floating estuary cells, river extenders, volcanic megastructures | Visible from satellite; food desert targeting  
-5\. The Planet (∞) | Sky looms, gravity-to-habitat conversion, Garden Moon | Orbital tethers weaving garden satellites  
+1. The Brick (cm) | Living parts, sausages, donuts, hex-donut bricks, S-chain molds | Assembly patterns J1-J7, unfurling mechanics  
+2. The Structure (m) | Tater tents, crop coats, farm blankets, igloo blocks, tea gardens | "A blanket that works great until it gets wet, then turns into a farm"  
+3. The Organism (10m) | Macro-ant robotics: ~90% living material, ~10% salvaged frame | Queen engineering, passenger-sensors, bee-language compression  
+4. The Territory (km) | Floating estuary cells, river extenders, volcanic megastructures | Visible from satellite; food desert targeting  
+5. The Planet (∞) | Sky looms, gravity-to-habitat conversion, Garden Moon | Orbital tethers weaving garden satellites  
   
 * * *
 

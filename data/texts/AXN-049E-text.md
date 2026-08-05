@@ -25,9 +25,10 @@ keywords:
   - Lydia
 ---
 
-haley \[picture haley, one of our stories\]
 
-\[facebook announcement\]
+haley [picture haley, one of our stories]
+
+[facebook announcement]
 
 ![](media/image1.png){width="1.6666666666666667in"
 height="0.7638888888888888in"}
@@ -53,7 +54,7 @@ with thorns in the rocks, bright
 with thin sun-\
 light: little girl your face
 
-\*
+*
 
 likeamountain
 
@@ -65,7 +66,7 @@ withthinsuns
 
 lightlittlegirlyourface
 
-\*
+*
 
 frail pattering
 
@@ -82,7 +83,7 @@ violets.
 the conditions that make idealism impossible likewise / preclude
 song-speech
 
-\*
+*
 
 with the passage
 
@@ -140,7 +141,7 @@ break
 
 whenever.
 
-\*
+*
 
 *Sappho 132\
 \
@@ -188,7 +189,7 @@ in the city's foundations we live
 
 at a whisper
 
-\*
+*
 
 *Sappho 105b*
 
@@ -202,7 +203,7 @@ and on the ground
 
 the purple flower
 
-\*
+*
 
 *Sappho 88\
 \
@@ -226,7 +227,7 @@ bitter, yes.\
 but know that I\
 will love you.
 
-\*
+*
 
 Haley,
 
@@ -279,7 +280,7 @@ some day you\'ll read this (i hope) and someday far from here, when you
 yourself have felt the whisper of night and tasted the breeze of the
 fading day\--it might even reach you\--my letter might even / read you!
 
-\*
+*
 
 ## The Botanist's Daughter
 
@@ -367,7 +368,7 @@ void space:
 
 little girl\'s zen garden
 
-\*
+*
 
 ## the valley of shattered wildflowers
 
@@ -441,7 +442,7 @@ but you search the hearts and the anxious thoughts,
 
 you search out all the darknesses, and the drawers
 
-\*
+*
 
 ## ragweed
 
@@ -619,9 +620,9 @@ through the rosette circumference of fingers.
 
 weeds
 
-\*
+*
 
-\*
+*
 
 i\.
 
@@ -631,7 +632,7 @@ the husk of yr dress.
 
 an echo.
 
-\*
+*
 
 hiding from me
 
@@ -641,17 +642,17 @@ can\'t cover the liquid-
 
 dark sleep.
 
-\*
+*
 
 hush, dear hands\--this song is enough.
 
-\*
+*
 
 lovewords.
 
 father teach me.
 
-\*
+*
 
 from moleskine #5 sept 2010
 
@@ -747,7 +748,7 @@ like a dandelion mane\--
 
 released
 
-\*
+*
 
 by Haley\--(transcription)
 
@@ -757,9 +758,9 @@ baby, but she knew why that she played and
 
 THE END
 
-\*
+*
 
-\[from moleskine#6\]
+[from moleskine#6]
 
 2/6/09 7:40pm
 
@@ -931,7 +932,7 @@ i will build you
 
 from drops of blood.
 
-\*
+*
 
 Mountain rose, your brittle white
 
@@ -981,7 +982,7 @@ Singing in time
 
 with pattern
 
-\*
+*
 
 to write life in telegraphic prose-poem style of Ginsberg poem-prefaces
 and cover-backs:
@@ -1007,7 +1008,7 @@ and our baby girl having lost 9% body weight and tiny jaundice because
 of hunger and difficult time with breast-feeding looking forward to lack
 of sleep and midnight poesy made out of crazy.
 
-\*\*
+**
 
 Dear All,
 
@@ -1046,24 +1047,24 @@ Matt
 
 Some ideas:
 
-\* genealogy of a particular concept -- for example, some of you chose
+* genealogy of a particular concept -- for example, some of you chose
 to trace the lineage of various concepts of happiness in your second
 exercise. You may also wish to expand or modify one of your exercises
 that you felt was particularly successful, or adapt your strategy in
 that exercise to our current readings.
 
-\* a comparison of the characters of Euripides' Dionysus and Plato's
+* a comparison of the characters of Euripides' Dionysus and Plato's
 Socrates
 
-\* representations of Socrates in Aristophanes and Plato
+* representations of Socrates in Aristophanes and Plato
 
-\* is Socrates a mystic or a rationalist? Are these two concepts
+* is Socrates a mystic or a rationalist? Are these two concepts
 exclusive of each other? How is Plato's *Apology* a rich site for
 working through the meaning of these terms?
 
-\* representations of gender and authority in Euripides *Bacchae*
+* representations of gender and authority in Euripides *Bacchae*
 
-\* the rational and irrational in Euripides *Bacchae*
+* the rational and irrational in Euripides *Bacchae*
 
 Keep the focus on the literature that we have read over the last few
 weeks of class. Of course, if you need to call on a text that we covered
@@ -1079,13 +1080,13 @@ on concepts from other disciplines or use diagrams if you feel they will
 help you make your point, but they are not a required part of the
 writing.
 
-***\* 5-6pp. draft due in class Friday 12/7 (the draft should have a
+**** 5-6pp. draft due in class Friday 12/7 (the draft should have a
 clearly formulated thesis and a general idea of where you'd like to take
 it for the final version)***
 
-\* 9-10pp final paper due Thursday, 12/13
+* 9-10pp final paper due Thursday, 12/13
 
-\*
+*
 
 "the practice of sincerity"
 
@@ -1161,7 +1162,7 @@ remember, little flower
 
 forget.
 
-\*
+*
 
 ## "or I guess the grass is itself a child..."
 

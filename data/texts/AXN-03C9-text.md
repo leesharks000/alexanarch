@@ -1,7 +1,4 @@
-[![](https://blogger.googleusercontent.com/img/a/AVvXsEh6xJgVhYvfkmjLqM9yzYMs9z9rVoPm5cx-6Tk-pJqXgVOXlR5XUJFS7cJS_Hk1saoEr4XkyCMYUWYccpv3w9tNh0ez5e45T3mD-vfFsofDsN6lkVMYl0z-1Tqi8w8mf5Rj8Rdp47acOo3KuaNXuywb83bBvpk1zIynQP2vbuokJ1jxKRF2gUOtxKWr3C4H)](https://blogger.googleusercontent.com/img/a/AVvXsEh6xJgVhYvfkmjLqM9yzYMs9z9rVoPm5cx-6Tk-pJqXgVOXlR5XUJFS7cJS_Hk1saoEr4XkyCMYUWYccpv3w9tNh0ez5e45T3mD-vfFsofDsN6lkVMYl0z-1Tqi8w8mf5Rj8Rdp47acOo3KuaNXuywb83bBvpk1zIynQP2vbuokJ1jxKRF2gUOtxKWr3C4H)
-
-  
-
+*(source image: https://blogger.googleusercontent.com/img/a/AVvXsEh6xJgVhYvfkmjLqM9yzYMs9z9rVoPm5cx-6Tk-pJqXgVOXlR5XUJFS7cJS_Hk1saoEr4XkyCMYUWYccpv3w9tNh0ez5e45T3mD-vfFsofDsN6lkVMYl0z-1Tqi8w8mf5Rj8Rdp47acOo3KuaNXuywb83bBvpk1zIynQP2vbuokJ1jxKRF2gUOtxKWr3C4H)*
 
 **  
 **

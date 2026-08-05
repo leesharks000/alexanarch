@@ -2973,7 +2973,7 @@
       "title": "chatgptpsychosis.org — Project Site for ChatGPT Psychosis: A Love Story (v1.1)",
       "creator": "Feist, Jack; Sharks, Lee",
       "date": "2026-05-19",
-      "description": "SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.20275299, 10.5281/zenodo.20275300. Zenodo removal forensics: removal_date 2026-06-19T11:36:50.393341+00:00, removal_reason out-of-scope, removed_by user 1060945. Source code for chatgptpsychosis.org, the preliminary project site for ChatGPT Psychosis: A Love Story, a forthcoming dual-edition AI-native glyphic novel by Jack Feist / Lee Sharks. Single-page HTML site with working toggle demonstration of the novel's core mechanism (non-simultaneous legibility), six concept blocks (the psychosis, the compression, the boundary, the fractal, the trap, the experiment), dual-edition framing (digital/print), and structured data (JSON-LD @graph with Book, WebPage, and Prospectus entities). v1.1 incorporates five-substrate Assembly review: Open Graph cards, access Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.",
+      "description": "DOI(s): 10.5281/zenodo.20275299, 10.5281/zenodo.20275300. Zenodo removal forensics: removal_date 2026-06-19T11:36:50.393341+00:00, removal_reason out-of-scope, removed_by user 1060945. Source code for chatgptpsychosis.org, the preliminary project site for ChatGPT Psychosis: A Love Story, a forthcoming dual-edition AI-native glyphic novel by Jack Feist / Lee Sharks. Single-page HTML site with working toggle demonstration of the novel's core mechanism (non-simultaneous legibility), six concept blocks (the psychosis, the compression, the boundary, the fractal, the trap, the experiment), dual-edition framing (digital/print), and structured data (JSON-LD @graph with Book, WebPage, and Prospectus entities). v1.1 incorporates five-substrate Assembly review: Open Graph cards, access json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.",
       "content_type": "Software / executable apparatus",
       "license": "CC-BY-4.0",
       "substrate": "Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).",
@@ -2994,7 +2994,7 @@
       "status": "ACTIVE",
       "status_authorial": "SELF_SERVE_MINTED",
       "full_text_path": "/data/texts/AXN-0572-text.md",
-      "wiki_article": "\"chatgptpsychosis.org — Project Site for ChatGPT Psychosis: A Love Story (v1.1)\" is a 435-word semi-restored record (metadata-only; datacite full-metadata capture) by Feist, Jack; Sharks, Lee, dated 2026-05-19. It is registered as AXN:0572 (deposit #1377) in the Crimson Hexagonal Archive under the UNCLASSIFIED semantic family. SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture.",
+      "wiki_article": "\"chatgptpsychosis.org — Project Site for ChatGPT Psychosis: A Love Story (v1.1)\" is a recovered work with its full text seated by Feist, Jack; Sharks, Lee, dated 2026-05-19. It is registered as AXN:0572 (deposit #1377) in the Crimson Hexagonal Archive under the UNCLASSIFIED semantic family.",
       "wiki_status": "provisional",
       "entities": [
         {
@@ -3060,7 +3060,7 @@
         "minted_via": "self_serve_validated_pr"
       },
       "body_status": {
-        "class": "metadata_capture",
+        "class": "full",
         "lacuna": false,
         "recovery_status": "PASS_COMPLETE_TEXT_NOT_SEATED",
         "residual_chars": 4634,
@@ -3076,10 +3076,15 @@
           "deposit_number": 1376,
           "basis": "strict pairing 2026-08-04: title overlap 0.71, content probe 0.83, full body 25,030c vs capture 3,639c"
         },
-        "work_sha256": "a7d28c4f01a9caaf0d8099a0649be513da04dd8bc1b0939aed48f13fcfb7f5dc",
-        "prior_bytes_sha256": "351da0cc5ef2fa29ebcd15e0637721ea272d81344d15f19c6872c057d9f046d4",
+        "work_sha256": "4232d9dfaccce33665f2c081361a0b4d6bdea7ef90354961f26b12374480d3e7",
+        "prior_bytes_sha256": "780451870feb744b35a1517ce4e0b1abd767fd368e09d1413cbcabdcd96d1402",
         "body_declaration_repair": "2026-08-04 MANUS: \"the description is not part of the body text, unless it was originally so, and definitely not if it is a batch-produced stub.\" removed batch-produced Description stub; stale status declaration corrected. Only batch-produced stubs were removed (matched on SEMI-RESTORED / DOI(s): / ZENODO-PACKET openers); authorial prose untouched.",
-        "frontmatter_repair": "2026-08-04: the staged file's FRONTMATTER still declared \"Semi-restored record (metadata-only)\" after the record was restored. Frontmatter is a staging header, not the work; its stale claims were corrected to match the record. Found by extending the state-conformance gate to the canonical text — the gate had checked pages and OAI but not the file itself."
+        "frontmatter_repair": "2026-08-04: the staged file's FRONTMATTER still declared \"Semi-restored record (metadata-only)\" after the record was restored. Frontmatter is a staging header, not the work; its stale claims were corrected to match the record. Found by extending the state-conformance gate to the canonical text — the gate had checked pages and OAI but not the file itself.",
+        "source_recovery": "2026-08-04 SITE-SOURCE WAVE 2 (MANUS: \"why is the chatgpt psychosis site code semi-restored? we said we found site code instances and restored them\"). Wave 1 was driven ONLY by records whose audit directive read \"recover the deployed site source\"; these were classed as paired or external-manifestation instead and were therefore never seated. Deployed source fetched from https://chatgptpsychosis.org/ (HTTP 200, 40,481 bytes, served-page SHA-256 1a57b80e47abebe8…), identity gate 0.71.",
+        "external_manifestation": {
+          "url": "https://chatgptpsychosis.org/",
+          "role": "live canonical surface; this deposit is its archival capture"
+        }
       },
       "references_concepts": [
         "Crimson Hexagonal Archive",
@@ -3147,7 +3152,7 @@
           "verified_by": "standalone heading in body + stripped title in body opening"
         }
       ],
-      "canonical_text_status": "metadata_only",
+      "canonical_text_status": "recovered_full_text",
       "modifications": [
         {
           "date": "2026-07-31",
@@ -3210,6 +3215,34 @@
           "reason": "FRONTMATTER DECLARATION REPAIR: stale capture claims corrected in the staged header",
           "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4634, \"audited_at\": \"2026-07-19T21:19:49Z\", \"audit_version\": \"mint-time-declaration",
           "now": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4634, \"audited_at\": \"2026-07-19T21:19:49Z\", \"audit_version\": \"mint-time-declaration"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "SITE-SOURCE WAVE 2: deployed source seated (wave 1 missed this record — it was classed paired/external rather than recover-directive)",
+          "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4634, \"audited_at\": \"2026-07-19T21:19:49Z\", \"audit_version\": \"mint-time-declaration",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4634, \"audited_at\": \"2026-07-19T21:19:49Z\", \"audit_version\": \"mint-time-declaration\", \"class_be"
+        },
+        {
+          "date": "2026-07-30",
+          "field": "canonical_text_status",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "metadata_only",
+          "now": "recovered_full_text"
+        },
+        {
+          "date": "2026-07-30",
+          "field": "description",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "SEMI-RESTORED RECORD (metadata capture only; no full text). …",
+          "now": "DOI(s): 10.5281/zenodo.20275299, 10.5281/zenodo.20275300. Ze…"
+        },
+        {
+          "date": "2026-07-30",
+          "field": "wiki_article",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "capture language",
+          "now": "recovered language"
         }
       ],
       "date_modified": "2026-08-05",

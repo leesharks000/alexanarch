@@ -16,6 +16,14 @@ confused with authorial intent, each discovered the hard way this session:
                Contents") — the capture pipeline ate the newline. 580 records.
   HARDWRAP     extractor page-wraps preserved as line breaks, with hyphen
                splits across them ("Inter-\\nvention"). PDF seating defect.
+  SUBJECT      the body's opening does not contain the record's own title terms
+               — the record may be serving a DIFFERENT WORK. Found #1356
+               (contributor license serving a Lunar Arm analysis, which the
+               audit had already ruled WRONG_OBJECT) and #869 (Lexical Minting
+               Registry serving The Pristine Fallacy). Identity is adjudication:
+               this DETECTS, it never repairs.
+  ESCAPED      markdown escaping artifacts from a converter ("1\\." "\\_" stray
+               "*"), or a bare image-URL blob leading the body.
 
 EXEMPTIONS (structural, not judgment calls):
   · site-source deposits — a deployed HTML page IS one block; RUNON is expected
@@ -40,6 +48,17 @@ ENT = re.compile(r'&(?:#\d{2,5}|nbsp|amp|quot|lt|gt|mdash|ndash|rsquo|lsquo|ldqu
 GLUE = re.compile(r'[^\n\s]#{2,6} ')
 RUNON_CHARS = 6000
 VERSE_TYPES = {'Poetry', 'Patent-poem', 'Creative work (mixed)', 'Scripture'}
+STOP = set('the and for with from that this into their have been also which when what were '
+           'crimson hexagon archive deposit record document version'.split())
+ESCAPES = re.compile(r'(?:(?<=\s)|^)\d+\\\.|\\_|\\\*|\\\[')
+LEADIMG = re.compile(r'^\s*(?:#+\s*)?\[?!?\[]?\(?https?://\S{60,}')
+
+
+def _toks(t):
+    t = re.sub(r'\[.*?\]', '', t or '')
+    t = re.sub(r'https?://\S+', '', t)
+    t = re.sub(r'[^a-z0-9 ]', ' ', t.lower())
+    return set(w for w in t.split() if len(w) > 3 and w not in STOP)
 
 
 def _rd(p):
@@ -87,6 +106,17 @@ def scan(d):
     total_h = len(re.findall(r'#{2,6} ', prose))
     if glued >= 3 and total_h and glued / total_h > 0.5:
         out.append(('GLUED', f'{glued}/{total_h} heading markers welded mid-line'))
+
+    tt = _toks(d.get('title'))
+    if len(tt) >= 3 and len(prose) > 800:
+        cov = len(tt & _toks(prose[:2500])) / len(tt)
+        if cov < 0.34:
+            out.append(('SUBJECT', f'body head carries {cov:.0%} of title terms — may be a different work'))
+
+    esc = len(ESCAPES.findall(prose[:6000]))
+    if esc >= 4 or LEADIMG.match(prose):
+        out.append(('ESCAPED', f'{esc} markdown-escape artifacts'
+                    + (' / body opens on a bare image URL' if LEADIMG.match(prose) else '')))
 
     if (d.get('content_type') or '') not in VERSE_TYPES:
         lines = [l for l in prose.split('\n') if l.strip()]

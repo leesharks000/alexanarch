@@ -5548,7 +5548,10 @@
         "audited_at": "2026-07-17T04:49:17.789813Z",
         "audit_version": "v3-dual-store+recovery-map",
         "measured_prose_words": 3154,
-        "measured_at": "2026-07-31"
+        "measured_at": "2026-07-31",
+        "work_sha256": "b922b924e370495dc393984b1022409a2f15885ccc5dd29378b0c1a77259e584",
+        "prior_bytes_sha256": "92136327726e8d42eb422091053cf952cec4eed200e317bb64e51e6bc7417525",
+        "escape_repair": "2026-08-04 MANUS-flagged: converter escaping artifacts (1\\. \\_ \\* \\[) unescaped; a bare leading image-URL blob demoted to a source note. Text content unchanged."
       },
       "canonical_text_status": "canonical_full_text",
       "modifications": [
@@ -5578,9 +5581,16 @@
           "reason": "W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note",
           "was": "MINTED_UNREVIEWED",
           "now": "ACTIVE"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "ESCAPE REPAIR: converter escaping artifacts removed; leading image blob demoted",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 21324, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 21324, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
         }
       ],
-      "date_modified": "2026-08-04",
+      "date_modified": "2026-08-05",
       "publisher": "Pergamon Press"
     },
     {

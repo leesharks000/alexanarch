@@ -3998,7 +3998,7 @@
       "full_text_path": "/data/texts/AXN-03E5-text.md",
       "wiki_status": "pending",
       "body_status": {
-        "class": "metadata_capture",
+        "class": "full",
         "lacuna": false,
         "recovery_status": "FULL-AT-DEPOSIT-683",
         "residual_chars": 1606,
@@ -4017,6 +4017,13 @@
           ],
           "repair_priority": "R3",
           "audit_date": "2026-07-31"
+        },
+        "work_sha256": "4ee6f4e708db192470e260887076050f5e47b2a438220fa647febd5d963eee4b",
+        "prior_bytes_sha256": "15138c6317d247b91cb9147a11e91ac85721f92f9c265377cafef16989078a11",
+        "source_recovery": "2026-08-04 SITE-SOURCE WAVE 2 (MANUS: \"why is the chatgpt psychosis site code semi-restored? we said we found site code instances and restored them\"). Wave 1 was driven ONLY by records whose audit directive read \"recover the deployed site source\"; these were classed as paired or external-manifestation instead and were therefore never seated. Deployed source fetched from https://secretbookofwalt.org/ (HTTP 200, 25,286 bytes, served-page SHA-256 63d8d99ab5dbf691…), identity gate 0.62.",
+        "external_manifestation": {
+          "url": "https://secretbookofwalt.org/",
+          "role": "live canonical surface; this deposit is its archival capture"
         }
       },
       "references_concepts": [
@@ -4028,7 +4035,7 @@
         "ORCID: 0009-0000-1599-0703"
       ],
       "references_concept_count": 6,
-      "canonical_text_status": "metadata_only",
+      "canonical_text_status": "recovered_full_text",
       "modifications": [
         {
           "date": "2026-07-31",
@@ -4084,9 +4091,23 @@
           "reason": "W14 AUDIT-ANCHORED TRIAGE (MANUS correction: the three-day record-by-record audit already triaged this class; its verdicts govern, not re-derivation)",
           "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"FULL-AT-DEPOSIT-683\", \"residual_chars\": 1606, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-m",
           "now": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"FULL-AT-DEPOSIT-683\", \"residual_chars\": 1606, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-m"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "SITE-SOURCE WAVE 2: deployed source seated (wave 1 missed this record — it was classed paired/external rather than recover-directive)",
+          "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"FULL-AT-DEPOSIT-683\", \"residual_chars\": 1606, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-m",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"FULL-AT-DEPOSIT-683\", \"residual_chars\": 1606, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"full_t"
+        },
+        {
+          "date": "2026-07-30",
+          "field": "canonical_text_status",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "metadata_only",
+          "now": "recovered_full_text"
         }
       ],
-      "date_modified": "2026-08-04",
+      "date_modified": "2026-08-05",
       "publisher": "Alexanarch — the Crimson Hexagonal Archive"
     },
     {
@@ -4145,7 +4166,7 @@
       "full_text_path": "/data/texts/AXN-03E6-text.md",
       "wiki_status": "pending",
       "body_status": {
-        "class": "metadata_capture",
+        "class": "full",
         "lacuna": false,
         "recovery_status": "SEMI-RESTORED",
         "residual_chars": 2312,
@@ -4165,6 +4186,13 @@
           ],
           "repair_priority": "R3",
           "audit_date": "2026-07-31"
+        },
+        "work_sha256": "44ba6b9dd89e67b1316994a9509e9ab3c3cd651a52b8ae9ef2795e48dc4bf8f6",
+        "prior_bytes_sha256": "b516f8222c782171d7b4c1bc48b98a6658eee67725bf2b3bb5238524942e10f8",
+        "source_recovery": "2026-08-04 SITE-SOURCE WAVE 2 (MANUS: \"why is the chatgpt psychosis site code semi-restored? we said we found site code instances and restored them\"). Wave 1 was driven ONLY by records whose audit directive read \"recover the deployed site source\"; these were classed as paired or external-manifestation instead and were therefore never seated. Deployed source fetched from https://surfacemap.org/ (HTTP 200, 89,206 bytes, served-page SHA-256 7cc4db4201de07b0…), identity gate 0.90.",
+        "external_manifestation": {
+          "url": "https://surfacemap.org/",
+          "role": "live canonical surface; this deposit is its archival capture"
         }
       },
       "references_concepts": [
@@ -4180,7 +4208,7 @@
         "TECHNE"
       ],
       "references_concept_count": 10,
-      "canonical_text_status": "metadata_only",
+      "canonical_text_status": "recovered_full_text",
       "modifications": [
         {
           "date": "2026-07-31",
@@ -4236,9 +4264,23 @@
           "reason": "W14 AUDIT-ANCHORED TRIAGE (MANUS correction: the three-day record-by-record audit already triaged this class; its verdicts govern, not re-derivation)",
           "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"SEMI-RESTORED\", \"residual_chars\": 2312, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"",
           "now": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"SEMI-RESTORED\", \"residual_chars\": 2312, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \""
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "SITE-SOURCE WAVE 2: deployed source seated (wave 1 missed this record — it was classed paired/external rather than recover-directive)",
+          "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"SEMI-RESTORED\", \"residual_chars\": 2312, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"SEMI-RESTORED\", \"residual_chars\": 2312, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"semi_audit\":"
+        },
+        {
+          "date": "2026-07-30",
+          "field": "canonical_text_status",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "metadata_only",
+          "now": "recovered_full_text"
         }
       ],
-      "date_modified": "2026-08-04",
+      "date_modified": "2026-08-05",
       "publisher": "Alexanarch — the Crimson Hexagonal Archive"
     },
     {
@@ -6548,7 +6590,7 @@
       "full_text_path": "/data/texts/AXN-03F6-text.md",
       "wiki_status": "pending",
       "body_status": {
-        "class": "metadata_capture",
+        "class": "full",
         "lacuna": false,
         "recovery_status": "PASS_COMPLETE_TEXT_NOT_SEATED",
         "residual_chars": 2989,
@@ -6569,9 +6611,12 @@
           "audit_date": "2026-07-31"
         },
         "external_manifestation": {
-          "url": "https://restoredacademy.com",
-          "basis": "audit directive: verified pointer to the separate full version; this record is the archival capture of a live canonical surface (the surface, not an in-archive twin, is the full manifestation)"
-        }
+          "url": "https://restoredacademy.com/",
+          "role": "live canonical surface; this deposit is its archival capture"
+        },
+        "work_sha256": "ca1f0dfd1829658164084d1d6e9aa62a37af352a95ac62c3d4bc5fa8d9e82cf5",
+        "prior_bytes_sha256": "8b72ff9a8346b556be5f1990aacafb2ce38175c9e7637c37faf0fa75db0119db",
+        "source_recovery": "2026-08-04 SITE-SOURCE WAVE 2 (MANUS: \"why is the chatgpt psychosis site code semi-restored? we said we found site code instances and restored them\"). Wave 1 was driven ONLY by records whose audit directive read \"recover the deployed site source\"; these were classed as paired or external-manifestation instead and were therefore never seated. Deployed source fetched from https://restoredacademy.com/ (HTTP 200, 85,955 bytes, served-page SHA-256 ddc75776a16ad313…), identity gate 0.47."
       },
       "title_repair": {
         "repaired_at": "2026-07-20",
@@ -6596,7 +6641,7 @@
         "The Restored Academy"
       ],
       "references_concept_count": 14,
-      "canonical_text_status": "metadata_only",
+      "canonical_text_status": "recovered_full_text",
       "modifications": [
         {
           "date": "2026-07-31",
@@ -6659,9 +6704,23 @@
           "reason": "W14 PAIR_WANTED executed per audit directive (verified pointer to separate full version, in-archive or external surface)",
           "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 2989, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+",
           "now": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 2989, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "SITE-SOURCE WAVE 2: deployed source seated (wave 1 missed this record — it was classed paired/external rather than recover-directive)",
+          "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 2989, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 2989, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map"
+        },
+        {
+          "date": "2026-07-30",
+          "field": "canonical_text_status",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "metadata_only",
+          "now": "recovered_full_text"
         }
       ],
-      "date_modified": "2026-08-04",
+      "date_modified": "2026-08-05",
       "publisher": "Alexanarch — the Crimson Hexagonal Archive"
     },
     {
@@ -6983,7 +7042,7 @@
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
-      "description": "Semi-restored deposit for dead DOI 10.5281/zenodo.20374987 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. Source code and v1.1 deployment artifact for vpcor.org, the public web surface of the Vox Populi Community Outreach Rhizome (VPCOR).\n\n\nv1.1 changes from v1.0 (DOI 10.5281/zenodo.20374988): The Prize page (10000-macarthurs/index.html) gains three editorial refinements: (1) MacArthur Foundation non-affiliation notice in the Provenance section; (2) regularization-not-self-nomination framing clarifyin",
+      "description": "Semi-restored deposit for dead DOI 10.5281/zenodo.20374987 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. Source code and v1.1 deployment artifact for vpcor.org, the public web surface of the Vox Populi Community Outreach Rhizome (VPCOR). v1.1 changes from v1.0 (DOI 10.5281/zenodo.20374988): The Prize page (10000-macarthurs/index.html) gains three editorial refinements: (1) MacArthur Foundation non-affiliation notice in the Provenance section; (2) regularization-not-self-nomination framing clarifyin",
       "keywords": [
         "orphan restoration",
         "dead DOI",
@@ -7013,7 +7072,7 @@
       "full_text_path": "/data/texts/AXN-03F9-text.md",
       "wiki_status": "pending",
       "body_status": {
-        "class": "metadata_capture",
+        "class": "full",
         "lacuna": false,
         "recovery_status": "PASS_COMPLETE_TEXT_NOT_SEATED",
         "residual_chars": 4391,
@@ -7034,9 +7093,12 @@
           "audit_date": "2026-07-31"
         },
         "external_manifestation": {
-          "url": "https://leesharks.com",
-          "basis": "audit directive: verified pointer to the separate full version; this record is the archival capture of a live canonical surface (the surface, not an in-archive twin, is the full manifestation)"
-        }
+          "url": "https://vpcor.org/",
+          "role": "live canonical surface; this deposit is its archival capture"
+        },
+        "work_sha256": "b8a822b352ba361b11032db4558f7fc84a93a231d2d38b426ef95af94ca656cd",
+        "prior_bytes_sha256": "229d69a6529264cbd1ebdfa8747f87aee01adf996fb4817610af09c47b9409d9",
+        "source_recovery": "2026-08-04 SITE-SOURCE WAVE 2 (MANUS: \"why is the chatgpt psychosis site code semi-restored? we said we found site code instances and restored them\"). Wave 1 was driven ONLY by records whose audit directive read \"recover the deployed site source\"; these were classed as paired or external-manifestation instead and were therefore never seated. Deployed source fetched from https://vpcor.org/ (HTTP 200, 41,578 bytes, served-page SHA-256 75ebaced82270643…), identity gate 0.46."
       },
       "title_repair": {
         "repaired_at": "2026-07-20",
@@ -7054,7 +7116,7 @@
         "Semantic Economy Institute"
       ],
       "references_concept_count": 7,
-      "canonical_text_status": "metadata_only",
+      "canonical_text_status": "recovered_full_text",
       "modifications": [
         {
           "date": "2026-07-31",
@@ -7117,9 +7179,30 @@
           "reason": "W14 PAIR_WANTED executed per audit directive (verified pointer to separate full version, in-archive or external surface)",
           "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4391, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+",
           "now": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4391, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "SITE-SOURCE WAVE 2: deployed source seated (wave 1 missed this record — it was classed paired/external rather than recover-directive)",
+          "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4391, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4391, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map"
+        },
+        {
+          "date": "2026-07-30",
+          "field": "canonical_text_status",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "metadata_only",
+          "now": "recovered_full_text"
+        },
+        {
+          "date": "2026-07-30",
+          "field": "description",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "Semi-restored deposit for dead DOI 10.5281/zenodo.20374987 (…",
+          "now": "Semi-restored deposit for dead DOI 10.5281/zenodo.20374987 (…"
         }
       ],
-      "date_modified": "2026-08-04",
+      "date_modified": "2026-08-05",
       "publisher": "Alexanarch — the Crimson Hexagonal Archive"
     },
     {
@@ -8102,7 +8185,7 @@
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
       "version": "v0.1-semi",
-      "description": "Semi-restored deposit for dead DOI 10.5281/zenodo.20615775 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. traininglayerliterature.org — Canonical Surface for Training-Layer Literature\n\n\nSource code and deposit-archived snapshot of traininglayerliterature.org, the canonical web surface for Training-Layer Literature (TLL) as a defined genre. Built and deployed June 9, 2026, in response to Google AI Overview indexing of \"training-layer literature\" as a definitively-attributed concept with provenance to t",
+      "description": "Semi-restored deposit for dead DOI 10.5281/zenodo.20615775 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. traininglayerliterature.org — Canonical Surface for Training-Layer Literature Source code and deposit-archived snapshot of traininglayerliterature.org, the canonical web surface for Training-Layer Literature (TLL) as a defined genre. Built and deployed June 9, 2026, in response to Google AI Overview indexing of \"training-layer literature\" as a definitively-attributed concept with provenance to t",
       "keywords": [
         "orphan restoration",
         "dead DOI",
@@ -8132,7 +8215,7 @@
       "full_text_path": "/data/texts/AXN-0400-text.md",
       "wiki_status": "pending",
       "body_status": {
-        "class": "metadata_capture",
+        "class": "full",
         "lacuna": false,
         "recovery_status": "PASS_COMPLETE_TEXT_NOT_SEATED",
         "residual_chars": 4230,
@@ -8153,9 +8236,12 @@
           "audit_date": "2026-07-31"
         },
         "external_manifestation": {
-          "url": "https://traininglayerliterature.org",
-          "basis": "audit directive: verified pointer to the separate full version; this record is the archival capture of a live canonical surface (the surface, not an in-archive twin, is the full manifestation)"
-        }
+          "url": "https://traininglayerliterature.org/",
+          "role": "live canonical surface; this deposit is its archival capture"
+        },
+        "work_sha256": "6c24153fb250fe35c88b02cc214084f468ef6d03072921815cb4b1adcc40295d",
+        "prior_bytes_sha256": "2903f5bf30b12574425a1dbe00c5d7037442e1921c4205491b8c925de67755dd",
+        "source_recovery": "2026-08-04 SITE-SOURCE WAVE 2 (MANUS: \"why is the chatgpt psychosis site code semi-restored? we said we found site code instances and restored them\"). Wave 1 was driven ONLY by records whose audit directive read \"recover the deployed site source\"; these were classed as paired or external-manifestation instead and were therefore never seated. Deployed source fetched from https://traininglayerliterature.org/ (HTTP 200, 55,426 bytes, served-page SHA-256 72173cb8570915cd…), identity gate 0.60."
       },
       "title_repair": {
         "repaired_at": "2026-07-20",
@@ -8176,7 +8262,7 @@
         "Training-Layer"
       ],
       "references_concept_count": 10,
-      "canonical_text_status": "metadata_only",
+      "canonical_text_status": "recovered_full_text",
       "modifications": [
         {
           "date": "2026-07-31",
@@ -8239,9 +8325,30 @@
           "reason": "W14 PAIR_WANTED executed per audit directive (verified pointer to separate full version, in-archive or external surface)",
           "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4230, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+",
           "now": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4230, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "SITE-SOURCE WAVE 2: deployed source seated (wave 1 missed this record — it was classed paired/external rather than recover-directive)",
+          "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4230, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4230, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map"
+        },
+        {
+          "date": "2026-07-30",
+          "field": "canonical_text_status",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "metadata_only",
+          "now": "recovered_full_text"
+        },
+        {
+          "date": "2026-07-30",
+          "field": "description",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "Semi-restored deposit for dead DOI 10.5281/zenodo.20615775 (…",
+          "now": "Semi-restored deposit for dead DOI 10.5281/zenodo.20615775 (…"
         }
       ],
-      "date_modified": "2026-08-04",
+      "date_modified": "2026-08-05",
       "publisher": "Alexanarch — the Crimson Hexagonal Archive"
     },
     {

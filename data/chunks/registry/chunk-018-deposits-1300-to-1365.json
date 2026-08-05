@@ -15423,7 +15423,14 @@
         "ruled_by": "MANUS ruling 2026-07-28 (T2b cluster ruling: body is the complete work)",
         "measured_prose_words": 935,
         "measured_at": "2026-07-31",
-        "frontmatter_repair": "2026-08-04: the staged file's FRONTMATTER still declared \"Semi-restored record (metadata-only)\" after the record was restored. Frontmatter is a staging header, not the work; its stale claims were corrected to match the record. Found by extending the state-conformance gate to the canonical text — the gate had checked pages and OAI but not the file itself."
+        "frontmatter_repair": "2026-08-04: the staged file's FRONTMATTER still declared \"Semi-restored record (metadata-only)\" after the record was restored. Frontmatter is a staging header, not the work; its stale claims were corrected to match the record. Found by extending the state-conformance gate to the canonical text — the gate had checked pages and OAI but not the file itself.",
+        "wrong_object": {
+          "ruling": "AUDIT (2026-07-31): identity_status=WRONG_OBJECT, \"Withhold until the actual v1.0 license is seated.\" Executed 2026-08-04 after MANUS found the record still serving the wrong work.",
+          "seated_body_is": "\"Rhys Owens — The Lunar Arm of New Human\", an archetypal/mythopoetic analysis of the Lunar Principle — NOT a contributor license.",
+          "record_claims": "Hexagonal Contributor License v1.0 — Rhys Owens — Lunar Arm — Creative Writing → New Human 2",
+          "effect": "The deposit is WITHHELD from harvest. The seated bytes are retained under non-destruction but must not be read as this record's work.",
+          "recovery": "The actual v1.0 contributor license is required; siblings at #1357 (v3.0 Thornburgh) and #1358 may indicate the form."
+        }
       },
       "references_concepts": [
         "Biographical",
@@ -15543,6 +15550,13 @@
           "date": "2026-08-05",
           "field": "body_status",
           "reason": "FRONTMATTER DECLARATION REPAIR: stale capture claims corrected in the staged header",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 7814, \"audited_at\": \"2026-07-19T21:19:01Z\", \"audit_version\": \"mint-time-declaration\", \"semi_audit\": \"2026-07-20 pros",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 7814, \"audited_at\": \"2026-07-19T21:19:01Z\", \"audit_version\": \"mint-time-declaration\", \"semi_audit\": \"2026-07-20 pros"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "AUDIT DIRECTIVE EXECUTED: WRONG_OBJECT withheld — seated body is the Lunar Arm analysis, not the contributor license",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 7814, \"audited_at\": \"2026-07-19T21:19:01Z\", \"audit_version\": \"mint-time-declaration\", \"semi_audit\": \"2026-07-20 pros",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 7814, \"audited_at\": \"2026-07-19T21:19:01Z\", \"audit_version\": \"mint-time-declaration\", \"semi_audit\": \"2026-07-20 pros"
         }

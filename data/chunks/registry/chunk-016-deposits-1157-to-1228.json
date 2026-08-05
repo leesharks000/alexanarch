@@ -2146,7 +2146,10 @@
         "measured_prose_words": 4307,
         "measured_at": "2026-08-02",
         "recovery_status_note": "SUBSTITUTION CORRECTED 2026-08-02: this collection record had been wrongly seated (2026-07-19) with the ANALYSIS text (EA-IDP-CLEIS-ANALYSIS, the body of #562) because the July restoration fetched the blog slug 'on-architecture-of-cleis-compression' and trusted the blog body over the slug. The collection itself — the poem cycle (the Sapphic identification, The Botanist's Daughter, the flower compendium, the teaching-email interruptions) — is now seated from the MANUS-provided source file. The analysis remains correctly at #562.",
-        "recovered_at": "2026-08-02"
+        "recovered_at": "2026-08-02",
+        "work_sha256": "16633f6c45112054f7ffb9fff175628dddc4fcf34fe02c626c29bf1b25335d60",
+        "prior_bytes_sha256": "d0b79fd870a6ead062a65638c93a2892a08ff76cbdd921f27308a692d3600cfc",
+        "escape_repair": "2026-08-04 MANUS-flagged: converter escaping artifacts (1\\. \\_ \\* \\[) unescaped; a bare leading image-URL blob demoted to a source note. Text content unchanged."
       },
       "references_concepts": [
         "Crimson Hexagonal Archive",
@@ -2261,9 +2264,16 @@
           "field": "superseded_reason",
           "reason": "SAMEVER-REASONS: superseded_reason populated (pointer predated reason discipline; banner was rendering bare version language)",
           "now": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #562 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan)."
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "ESCAPE REPAIR: converter escaping artifacts removed; leading image blob demoted",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p"
         }
       ],
-      "date_modified": "2026-08-04",
+      "date_modified": "2026-08-05",
       "publisher": "New Human Press",
       "journal": "New Human 2",
       "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #562 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan)."
@@ -6204,7 +6214,9 @@
         "measured_prose_words": 2231,
         "measured_at": "2026-07-31",
         "work_sha256_declared": "20220defb05c213a010b2a3e515ba6d4259139f1308c61282f5f1ac7339de9ec",
-        "work_sha256": "cd8f11692157df97e5c96743dbd383c786cc00c504ba15f1004b07244df8170c"
+        "work_sha256": "c95e308041e270c011a73d2c659cfecbbad4f6acd4f43f827bfbbb79f2f599d5",
+        "prior_bytes_sha256": "a0171d76af643d58181e80731ae33205e3eca817a1a4957c81a0ec76d8543af9",
+        "escape_repair": "2026-08-04 MANUS-flagged: converter escaping artifacts (1\\. \\_ \\* \\[) unescaped; a bare leading image-URL blob demoted to a source note. Text content unchanged."
       },
       "references_concepts": [
         "Assembly Chorus",
@@ -6332,9 +6344,16 @@
           "field": "superseded_reason",
           "reason": "SAMEVER-REASONS: superseded_reason populated (pointer predated reason discipline; banner was rendering bare version language)",
           "now": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #59 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan)."
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "ESCAPE REPAIR: converter escaping artifacts removed; leading image blob demoted",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 20558, \"audited_at\": \"2026-07-19T20:37:22Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 2231,",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 20558, \"audited_at\": \"2026-07-19T20:37:22Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 2231,"
         }
       ],
-      "date_modified": "2026-08-04",
+      "date_modified": "2026-08-05",
       "publisher": "Alexanarch — the Crimson Hexagonal Archive",
       "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #59 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan)."
     },
