@@ -31766,6 +31766,45 @@
    "operator": "TACHYON",
    "date": "2026-08-05",
    "wave": "FALSE-LOSS+TITLE-TRUNCATION"
+  },
+  {
+   "repair_id": "R-1248",
+   "deposit_number": null,
+   "batch": true,
+   "records": [
+    1308,
+    1344,
+    1382,
+    1383,
+    901,
+    902,
+    903,
+    904,
+    905,
+    906,
+    907,
+    908,
+    909,
+    910,
+    911,
+    912,
+    913,
+    914,
+    915,
+    916,
+    917,
+    918,
+    919,
+    920,
+    921,
+    922,
+    923,
+    924
+   ],
+   "basis": "MANUS asked what the four tombstone records are; enumerating them exposed a state fracture within one cohort. All four (#1308 Kim, #1344 Emrick, #1382/#1383 Gebendorfer) come from the same over-inclusive DataCite sweep, but carried three different states: #1344 correct (WITHDRAWN + withdrawn_external + withdrawal record), #1382/#1383 WITHDRAWN with no withdrawal record, #1308 status ACTIVE with none — deriving as FULL, a foreign capture presenting as a live deposit while its content_type read 'typed tombstone'. The type field carried a claim the state fields did not honour. All four normalised. No gate compares records of a class against each other, which is why the fracture survived. DW-048 seated 24/24, register #1-#924.",
+   "operator": "TACHYON",
+   "date": "2026-08-05",
+   "wave": "TOMBSTONE-COHORT+DW-048"
   }
  ]
 }
