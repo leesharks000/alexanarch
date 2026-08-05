@@ -44,6 +44,37 @@ except Exception:
         return '<nav class="nav"><a href="/">Alexanarch</a> <a href="/s/wiki/">Wiki</a></nav>'
 
 
+def render_article(text: str) -> str:
+    """Render a wiki article's markdown to HTML.
+
+    Added 2026-08-05: the article body was being HTML-escaped and emitted raw,
+    so authored emphasis appeared on the page as literal asterisks —
+    '**Provenance preemption** interrupts...' rather than bold. Wiki articles
+    are written in markdown like every other authored field in the archive;
+    the page must parse it. Escaping happens first, so no markup in the source
+    can inject HTML.
+    """
+    import re as _re
+    out = []
+    for para in _re.split(r'\n\s*\n', (text or '').strip()):
+        p = esc(para.strip())
+        if not p:
+            continue
+        p = _re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', p)
+        p = _re.sub(r'(?<!\*)\*([^*\n]+)\*(?!\*)', r'<em>\1</em>', p)
+        p = _re.sub(r'`([^`]+)`', r'<code>\1</code>', p)
+        p = _re.sub(r'\[([^\]]+)\]\((https?://[^\s\)]+|/[^\s\)]+)\)',
+                    r'<a href="\2">\1</a>', p)
+        # bullet blocks
+        if _re.match(r'^\s*[-*]\s', para.strip()):
+            items = ''.join(f'<li>{_re.sub(r"^\s*[-*]\s*", "", l)}</li>'
+                            for l in p.split('\n') if l.strip())
+            out.append(f'<ul>{items}</ul>')
+        else:
+            out.append('<p>' + p.replace('\n', ' ') + '</p>')
+    return ''.join(out)
+
+
 def esc(s) -> str:
     if s is None:
         return ""
@@ -149,7 +180,7 @@ def render_entry_page(entry: dict) -> str:
     parts.append(f'<div class="axn">{esc(axn)}</div>')
 
     parts.append('<h2>Article</h2>')
-    parts.append(f'<div class="wiki-body">{esc(wiki_body)}</div>')
+    parts.append(f'<div class="wiki-body">{render_article(wiki_body)}</div>')
 
     if defines:
         parts.append(f'<h2>Defines ({len(defines)})</h2>')

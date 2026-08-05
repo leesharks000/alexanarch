@@ -31461,6 +31461,26 @@
    "operator": "TACHYON",
    "date": "2026-08-05",
    "wave": "BELOW-FRONTIER-01"
+  },
+  {
+   "repair_id": "R-1238",
+   "deposit_number": null,
+   "batch": true,
+   "records": [
+    84,
+    314,
+    565,
+    596,
+    603,
+    604,
+    620,
+    636
+   ],
+   "count": 26,
+   "basis": "Three wiki defects found via MANUS's reading of #596. (1) publish_wiki_entries.py never parsed markdown — articles were HTML-escaped and emitted raw, so authored emphasis appeared as literal asterisks on every wiki page; render_article() added, escaping first. (2) Ten articles carried alleged/allegedly/purported; two correct and kept (#53 disclaiming immortality, #566 describing a genuinely false story), eight self-applied and corrected — notably #596 calling the archive's own documented 22 March 2026 first-party observation an 'alleged retrieval-layer disappearance', and #314 hedging the archive's own coinage. Rule: attribute rather than hedge. (3) Eighteen articles contained instructions to a future writer ('The wiki should…') published as prose; removed. None were visible to WIKI-002/003, which check shape and length rather than register.",
+   "operator": "TACHYON",
+   "date": "2026-08-05",
+   "wave": "WIKI-REGISTER-DEFECTS"
   }
  ]
 }
