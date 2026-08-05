@@ -28384,6 +28384,16 @@
    "operator": "TACHYON",
    "date": "2026-08-04",
    "wave": "AUDIT-EXEC-2"
+  },
+  {
+   "repair_id": "R-1191",
+   "deposit_number": 1327,
+   "axn": "AXN:0540.UNCLASSIFIED.🌊⏹️♄♍⊕🏰",
+   "type": "SELF_CORRECTION",
+   "basis": "MANUS screenshot 2026-08-04: #1327 rendering with PDF-imposed linebreaks preserved and formatting/headers stripped. CAUSE: my seating wrote raw `pdftotext -layout` output into the deposit body; those ~70-char breaks are page geometry, not the work, and the renderer turned each into a paragraph. Words also split across wraps via U+2010 HYPHEN, which an ASCII-only regex missed. FIX: scripts/pdf_to_markdown.py built — normalizes U+2010/2011/00AD, rejoins wrap-splits, reflows prose into real paragraphs, detects ALL-CAPS/numbered/title-case headings, and LEAVES VERSE AND INDENTED BLOCKS UNREFLOWED (reflowing verse would destroy lineation — the Day and Night lesson). #1327 re-seated: 17 headings, 0 hyphen-splits, prior sha preserved. CENSUS: the hard-wrap signature (>45%% of lines in the 52-82 char band) matched 19 records, but hyphen-break counts isolate the actual damage to #1327 alone (147 breaks; next highest is 2). The other 18 are wide-bodied by nature (Space Ark ASCII transforms, tethers) or blog-sourced, where line structure is AUTHORIAL and must not be touched. STANDING RULE: PDF sources seat through pdf_to_markdown.py, never through raw extractor output.",
+   "operator": "TACHYON",
+   "date": "2026-08-04",
+   "wave": "PDF-RESEAT"
   }
  ]
 }
