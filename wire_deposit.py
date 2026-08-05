@@ -1264,6 +1264,23 @@ def regenerate_static_page(d, eidx, registry=None):
             '<div style="font-weight:600;margin-bottom:4px">Other instances of this work in the archive</div>'
             f'<ul style="margin:6px 0 6px 20px;padding:0">{_items}</ul>'
             '<div style="color:#666;font-size:.88em">Recorded as relations only — which instance supersedes which is not asserted here.</div></div>')
+    _tri = _bs.get('triptych') if isinstance(_bs, dict) else None
+    if _tri and _tri.get('components'):
+        _items = ''.join(
+            (f'<li style="margin:3px 0"><a href="/s/records/{c["deposit_number"]}/" style="color:var(--accent)">'
+             f'#{c["deposit_number"]}</a> — {esc(str(c.get("role","")))}'
+             + (f' <span style="color:#888">{esc(str(c.get("title",""))[:60])}</span>' if c.get('title') else '')
+             + '</li>')
+            for c in _tri['components'])
+        rel_block += (
+            '<div style="background:var(--surface);border-left:4px solid var(--teal);padding:10px 14px;'
+            'border-radius:6px;margin:12px 0;font-size:.9em">'
+            f'<div style="font-weight:600;margin-bottom:4px">{esc(str(_tri.get("relation","Related components")))}</div>'
+            f'<ul style="margin:6px 0 6px 20px;padding:0">{_items}</ul>'
+            + (f'<div style="color:#666;font-size:.88em">{esc(str(_tri.get("partial_witness","")))}</div>'
+               if _tri.get('partial_witness') else '')
+            + '</div>')
+
     for _k, _hd in (('analysed_by', 'Analysed in'), ('analysis_of', 'This record analyses')):
         _rel = _bs.get(_k) if isinstance(_bs, dict) else None
         if _rel and _rel.get('deposit_number'):
