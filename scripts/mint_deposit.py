@@ -899,8 +899,14 @@ def build_registry_entry(
         "status": "ACTIVE",
         "status_authorial": "SELF_SERVE_MINTED",
         "full_text_path": f"/data/texts/AXN-{hex_id}-text.md",
+        # WIKI AUTHORSHIP (MANUS ruling 2026-08-05): a mint leaves this NULL and
+        # the deposit is not complete until an article is written from the body.
+        # Nothing in the pipeline will fill it — the auto-generator that used to
+        # is retired, because a templated article reads as coverage and so
+        # prevents authorship. validate_deposit rejects absent, stub, template-
+        # shaped and under-length articles (WIKI-001/002/003).
         "wiki_article": None,
-        "wiki_status": "provisional",
+        "wiki_status": "AUTHORSHIP_REQUIRED",
         "entities": [],
         "entity_status": "provisional",
         "defines_concepts": [],

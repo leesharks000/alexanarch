@@ -31022,6 +31022,43 @@
    "operator": "TACHYON",
    "date": "2026-08-05",
    "wave": "WIKI-TOPDOWN-01"
+  },
+  {
+   "repair_id": "R-1226",
+   "deposit_number": null,
+   "batch": true,
+   "records": [
+    1409,
+    1410,
+    1411,
+    1412,
+    1413,
+    1414,
+    1415,
+    1416,
+    1417,
+    1418,
+    1419,
+    1420,
+    1421,
+    1422,
+    1423,
+    1424,
+    1425,
+    1426,
+    1427,
+    1428,
+    1429,
+    1430,
+    1431,
+    1432,
+    1433
+   ],
+   "count": 25,
+   "basis": "AUTOMATED WIKI GENERATOR RETIRED by MANUS ruling. enrich_deposit.build_wiki_article() templated the deposit's own metadata into an 'article' and now raises NotImplementedError; its caller preserves authored articles and logs absence rather than generating; validate_deposit gains WIKI-002 (template shape, all three emitted surface forms) and WIKI-003 (under 40 words); mint_deposit stamps wiki_status AUTHORSHIP_REQUIRED. Rationale recorded: an empty wiki reads as absent and gets written, a templated one reads as covered and never does — of #1301-1400, 3 real articles against 93 templates. Debt now visible: 330 records fail the new rules. 25 real articles written (#1409-#1433), failing set 330 -> 318.",
+   "operator": "TACHYON",
+   "date": "2026-08-05",
+   "wave": "WIKI-GENERATOR-RETIRED"
   }
  ]
 }

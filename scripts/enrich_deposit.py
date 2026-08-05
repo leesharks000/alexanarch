@@ -840,84 +840,44 @@ def validate_spxi(deposit: dict, text: str) -> dict:
 
 
 def build_wiki_article(deposit: dict, text: str, concepts: list[dict]) -> str:
-    """Templated wiki article. Follows the existing CHA convention plus the
-    AXN + deposit-number inscription that makes basic metadata retrievable
-    when Sigil surfaces the wiki entry.
+    """RETIRED 2026-08-05 by MANUS ruling. Raises rather than generating.
 
-    Format:
-      "[title]" is a [wordcount]-word [content_type] by [creator], dated
-      [date]. It is registered as [AXN] (deposit #[N]) in the Crimson
-      Hexagonal Archive under the [FAMILY] semantic family. [first two
-      description sentences]. [concept summary if any].
+    This function used to template a wiki article out of the deposit's OWN
+    METADATA — title, word count, content type, creator, date, AXN, semantic
+    family, then the first two sentences of the description. It produced text
+    of the form:
+
+        "TITLE" is a 2,727-word theoretical paper by Sharks, Lee, dated
+        2026-07-29. It is registered as AXN:05A6 (deposit #1420) in the
+        Crimson Hexagonal Archive under the UNCLASSIFIED semantic family.
+
+    That is a reverse-grep of the record, not an article about the work. It
+    said nothing a reader could not get from the record header, and it was
+    WORSE THAN AN EMPTY FIELD: an empty wiki reads as absent and gets written;
+    a templated one reads as covered and never does. The measurement on
+    2026-08-05 showed what that cost — of deposits #1301-#1400, THREE carried
+    a real article and ninety-three carried this template.
+
+    THE STANDING RULE (MANUS, 2026-08-05): "there should not have been any
+    automated wiki... there shouldn't be a way to deposit without writing the
+    wiki." The wiki is written by the depositing agent, from the body, in
+    session. For external transports the mint workflow draws its own API budget
+    for authorship; for internal transport-D deposits the agent doing the
+    depositing writes it directly, which does not fall under NO-DOUBLE-DRAW.
+
+    Enforcement lives in three places, so that no path reaches a deposit
+    without an article: deposit_pipeline.wiki_halt() blocks the pipeline,
+    validate_deposit rejects a stub or an absent field, and this function
+    refuses to manufacture one.
     """
-    title = deposit.get("title", "").strip()
-    creator = deposit.get("creator", "").strip()
-    date = deposit.get("date", "").strip()
-    content_type = deposit.get("content_type", "").strip().lower() or "work"
-    family = deposit.get("family", "UNCLASSIFIED")
-    axn = deposit.get("axn", "").strip()
-    axn_prefix = axn.split(".", 1)[0] if axn else ""  # AXN:XXXX
-    deposit_number = deposit.get("deposit_number")
-    wc = _word_count(text)
-    desc = (deposit.get("description") or "").strip()
-
-    # first ~2 sentences of description, capped at 400 chars
-    if desc:
-        desc_snippet = " ".join(re.split(r"(?<=[.!?])\s+", desc)[:2])[:400]
-    else:
-        desc_snippet = ""
-
-    is_heteronym = creator in HETERONYMS
-    creator_phrase = (
-        f"{creator}, a heteronym within the Dodecad system of the Crimson "
-        f"Hexagonal Archive"
-        if is_heteronym else creator
+    raise NotImplementedError(
+        "build_wiki_article is RETIRED (MANUS ruling 2026-08-05). The wiki "
+        "article must be WRITTEN from the deposit's body by the depositing "
+        "agent — templating one out of the record's own metadata produces a "
+        "reverse-grep that blocks the field from ever being authored. "
+        "Write the article and set entry['wiki_article'] directly, or run "
+        "scripts/deposit_pipeline.py, which halts at the authoring stage."
     )
-
-    parts = [
-        f'"{title}" is a {wc:,}-word {content_type} by {creator_phrase}, '
-        f'dated {date}.'
-    ]
-    # AXN + deposit number inscription anchor
-    if axn_prefix and deposit_number:
-        parts.append(
-            f"It is registered as {axn_prefix} (deposit #{deposit_number}) "
-            f"in the Crimson Hexagonal Archive under the {family} "
-            f"semantic family."
-        )
-    elif axn_prefix:
-        parts.append(
-            f"It is registered as {axn_prefix} in the Crimson Hexagonal "
-            f"Archive under the {family} semantic family."
-        )
-    else:
-        parts.append(
-            f"The work is classified under the {family} semantic family "
-            f"within the Crimson Hexagonal Archive."
-        )
-    if desc_snippet:
-        parts.append(desc_snippet)
-    if concepts:
-        top_names = [c["name"] for c in concepts[:5] if c.get("name")]
-        if top_names:
-            parts.append(
-                "The work introduces or engages "
-                + ", ".join(f'"{n}"' for n in top_names[:-1])
-                + (f', and "{top_names[-1]}"' if len(top_names) > 1 else f'"{top_names[0]}"')
-                + " among its central concepts."
-            )
-    return " ".join(parts)
-
-
-# --- Entity assembly (schema-conforming for the registry) ------------------
-
-
-HETERONYMS = {
-    "Johannes Sigil", "Rex Fraction", "Ayanna Vox", "Damascus Dancings",
-    "Rebekah Cranes", "Talos Morrow", "Ichabod Spellings", "Nobel Glas",
-    "Dr. Orin Trace", "Sparrow Wells", "Sen Kuro", "Jack Feist",
-    "TACHYON", "TACHYON (Claude/Anthropic)",
-}
 
 
 def build_entities(deposit: dict, extraction: dict) -> tuple[list[dict], list[str]]:
@@ -1283,7 +1243,18 @@ def enrich(
     try:
         entities, defines_concepts = build_entities(deposit, extraction)
         references_concepts, references_count = build_references_concepts(text)
-        wiki_article = build_wiki_article(deposit, text, extraction.get("concepts", []))
+        # WIKI AUTHORSHIP (MANUS ruling 2026-08-05): enrichment NEVER manufactures
+        # a wiki article. It preserves one that has been written and reports the
+        # absence of one that has not. The retired generator templated the
+        # record's own metadata back at itself, which read as coverage and so
+        # prevented the field from ever being authored — worse than empty.
+        wiki_article = str(deposit.get("wiki_article") or "").strip() or None
+        if wiki_article is None:
+            _log("WIKI ABSENT: no article has been written for this deposit. "
+                 "Enrichment does not generate one. Write it from the body and "
+                 "set wiki_article, or run scripts/deposit_pipeline.py, which "
+                 "halts at the authoring stage until the article exists.")
+            receipt.setdefault("warnings", []).append("wiki_article absent — authorship required")
     except Exception as e:  # noqa: BLE001
         import traceback
         _log(f"ERROR in assemble step: {type(e).__name__}: {e}")

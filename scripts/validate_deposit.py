@@ -194,6 +194,17 @@ REQUIRED_ENTRY_FIELDS = {
 # the mechanical wiki template, emitted when the registry entry was empty.
 # Its presence means the in-session authoring step was skipped.
 WIKI_STUB = re.compile(r'^""\s+is a 0-word work by\s*,\s*dated\s*\.')
+# TEMPLATE SHAPE (MANUS ruling 2026-08-05): the retired auto-generator emitted
+# '"TITLE" is a N-word TYPE by CREATOR, dated DATE. It is registered as AXN:…
+# under the FAMILY semantic family.' — the record's own fields read back. A
+# deposit carrying this has no article, whatever the field length says.
+WIKI_TEMPLATE = re.compile(
+    # The generator emitted several surface forms of the same reverse-grep.
+    # All of them restate the record's fields and then inscribe the AXN.
+    r'(?:is a [\d,]+-word |is a recovered work with its full text seated'
+    r'|is a \d+-word semi-restored record).{0,200}?'
+    r'It is registered as AXN:', re.S)
+WIKI_MIN_WORDS = 40
 
 
 # Rules added 2026-07-28 bind deposits minted from that date. Earlier deposits
@@ -244,6 +255,15 @@ def validate_entry_required_fields(entry, enforce_all=False):
     elif WIKI_STUB.match(wa.strip()):
         failures.append(("WIKI-001", "wiki_article is the mechanical template stub, which means the "
                                      "in-session authoring step was skipped"))
+    elif WIKI_TEMPLATE.search(wa):
+        failures.append(("WIKI-002", "wiki_article carries the RETIRED auto-generator's shape "
+                                     "('is a N-word TYPE by CREATOR, dated DATE. It is registered as AXN:…') "
+                                     "— the record's own fields read back, not an article about the work. "
+                                     "Write it from the body."))
+    elif len(wa.split()) < WIKI_MIN_WORDS:
+        failures.append(("WIKI-003", f"wiki_article is {len(wa.split())} words; an article that describes "
+                                     f"the work runs to at least {WIKI_MIN_WORDS}. A one-sentence gloss of "
+                                     "the record header is not an article."))
     return failures
 
 
