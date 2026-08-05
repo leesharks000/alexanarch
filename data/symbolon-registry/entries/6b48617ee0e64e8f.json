@@ -1,0 +1,60 @@
+{
+ "axn": "AXN:05AF.UNCLASSIFIED.🕙🔖⏰🕊️🌅🌌",
+ "position": "05AF",
+ "family": "UNCLASSIFIED",
+ "registered": "2026-08-05T04:37:13.235Z",
+ "status": "witnessed-unverified",
+ "retrieval": null,
+ "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9.",
+ "spec": "AXN-SYMBOLON-SPEC v0.2 · https://www.alexanarch.org/s/records/1432/",
+ "tuple": {
+  "axn0": {
+   "glyphs": "🕙🔖⏰🕊️🌅🌌",
+   "sha256": "6b48617ee0e64e8fa7e1084ce27558afb07b129eb625b8b871315a48e7a080d3"
+  },
+  "axn1": {
+   "glyphs": "🌠🤙🪨🍃🌻🌉",
+   "sha256": "eabe1b18722b9941d10d865148021f850b37a8e53ec0526230b00987cf862568"
+  }
+ },
+ "position_note": "The hex position is a registry address allocated from the shared AXN sequence (data/symbolon-registry/allocation.json). An address is not a verification.",
+ "seed_a": {
+  "axn_spec": "AXN-SYMBOLON-SPEC v0.2",
+  "spec_record": "https://www.alexanarch.org/s/records/1432/",
+  "spec_axn": "AXN:05A9.OPERATIVE.🐚🌪️🕖🫵⏩○",
+  "reconstruction_class": "content-addressed",
+  "axn0": {
+   "glyphs": "🕙🔖⏰🕊️🌅🌌",
+   "sha256": "6b48617ee0e64e8fa7e1084ce27558afb07b129eb625b8b871315a48e7a080d3",
+   "role": "identity kernel of the sealed core (the original, pre-stamp bytes)"
+  },
+  "axn1": {
+   "glyphs": "🌠🤙🪨🍃🌻🌉",
+   "sha256": "eabe1b18722b9941d10d865148021f850b37a8e53ec0526230b00987cf862568",
+   "role": "kernel of the stamped file as it circulates (tamper witness; not a name)"
+  },
+  "manifest": [
+   {
+    "part": 1,
+    "filename": "3d699cba6f49dcab564a228028f29354.jpg",
+    "sha256": "6b48617ee0e64e8fa7e1084ce27558afb07b129eb625b8b871315a48e7a080d3",
+    "bytes": 246811
+   }
+  ],
+  "stamp_geometry": {
+   "format": "image/png",
+   "method": "appended_footer_strip",
+   "strip_px": 92,
+   "original_px": {
+    "w": 947,
+    "h": 2048
+   },
+   "strip_stamp": "crop to original_px then compare pixels; byte-identical strip NOT possible for raster (re-encode); AXN₀ verification requires Seed B = the original file",
+   "strip_reversible": false
+  },
+  "created": "2026-08-05T04:37:11.519Z",
+  "generator": "https://www.alexanarch.org/mint/stamp/ (client-side; WebCrypto)",
+  "family": "UNCLASSIFIED",
+  "registration": "kernel is authority-independent; registry witnessing via https://www.alexanarch.org/deposit/ or by sending this sidecar to the archive"
+ }
+}
