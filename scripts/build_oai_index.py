@@ -21,6 +21,9 @@ a field for exactly that distinction. Declaring `persistent` and honouring it is
 the obelus, expressed in a harvesting protocol.
 """
 import json
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.dirname(__file__))
+from record_state import derive_state
 import re
 from pathlib import Path
 
@@ -115,6 +118,8 @@ def main():
                 else ["completeness:full"]),
             "deleted": bool(d.get("status") == "WITHDRAWN"),
             "relations": relations_for(d, by_n),
+            "state": derive_state(d)["state"],
+            "citable": derive_state(d)["citable"],
             "source": d.get("journal") or "",
             "publisher": d.get("publisher") or "",
         })

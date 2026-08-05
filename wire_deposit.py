@@ -5,6 +5,9 @@ import json, html as htmlmod, re, os, sys
 
 # Import canonical navbar renderer (single source of truth: data/navigation.json)
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), 'scripts'))
+from record_state import derive_state   # single canonical state; see scripts/record_state.py
 from scripts.render_navbar import render_navbar
 from scripts.glyph_aria import axn_aria_label as _axn_aria
 
@@ -1036,58 +1039,38 @@ def regenerate_static_page(d, eidx, registry=None):
             + (f'<div style="color:#78350f;font-size:.88em;margin-top:6px">{esc(superseded_reason)}</div>' if superseded_reason else '')
             + '</div>'
         )
-    elif d.get('body_status', {}).get('class') == 'metadata_capture':
-        # Semi-restored pointer banner (2026-07-30, MANUS-directed): a capture
-        # must never present as the whole work. Two truthful states:
-        #   full_version present  -> point forward to the complete deposit
-        #   absent                -> say plainly the complete work is not yet
-        #                            restored here (restoration candidate)
-        fv = d.get('body_status', {}).get('full_version') or {}
-        # MANUS ruling 2026-08-04 (#1300): a capture can be COMPLETE AS WHAT IT
-        # IS. An APZPZ-genre deposit packet is the object, not an apparatus
-        # around one; calling it "semi-restored" misdescribes it. When
-        # body_status.capture_completeness declares completeness, say so and
-        # point at the packaged work rather than implying a partial record.
-        _cc = str(d.get('body_status', {}).get('capture_completeness') or '')
-        _complete_capture = _cc.startswith('complete')
-        if fv.get('deposit_number'):
-            _head = ('✓ Complete deposit packet — the work it packages is elsewhere in this archive'
-                     if _complete_capture else
-                     '◐ Semi-restored capture — the complete work exists in this archive')
-            _tail = (f'This record is complete as what it is ({esc(_cc)}); '
-                     f'the work it packages is at #{fv["deposit_number"]}.'
-                     if _complete_capture else
-                     'This record preserves the metadata capture; read the complete version for the full text.')
-            version_banner = (
-                '<div style="background:#e0f2fe;border-left:4px solid #0369a1;padding:12px 16px;'
-                'border-radius:6px;margin:12px 0;font-size:.92em">'
-                f'<div style="font-weight:600;color:#0c4a6e;margin-bottom:4px">{_head}</div>'
-                f'<div style="color:#075985">{"Packaged work" if _complete_capture else "Complete version"}: <a href="/s/records/{fv["deposit_number"]}/" '
-                f'style="color:var(--accent);font-weight:500">#{fv["deposit_number"]} — {esc(fv.get("title",""))[:90]}</a>'
-                f' <span style="font-size:.85em;opacity:.8">({esc(fv.get("axn",""))})</span></div>'
-                f'<div style="color:#075985;font-size:.85em;margin-top:6px">Pairing basis: {esc(fv.get("basis",""))} '
-                + _tail + '</div>'
-                '</div>'
-            )
-        else:
-            version_banner = (
-                '<div style="background:#fef3c7;border-left:4px solid #d97706;padding:12px 16px;'
-                'border-radius:6px;margin:12px 0;font-size:.92em">'
-                '<div style="font-weight:600;color:#92400e;margin-bottom:4px">◐ Semi-restored metadata capture</div>'
-                '<div style="color:#78350f">This record preserves metadata and a partial body only. '
-                'The complete work is <strong>not yet restored in this archive</strong>; do not cite this page as the full text. '
-                'It is queued for restoration (see <code>data/worklists/semi-restored-pairing-queue.json</code>).</div>'
-                '</div>'
-            )
-    elif status == 'DRAFT_PENDING':
-        reason = d.get('draft_pending_reason', '')
+    elif derive_state is not None and derive_state(d)['state'] in (
+            'LACUNA', 'WITHDRAWN_EXTERNAL', 'COMPLETE_PACKET',
+            'CAPTURE_PAIRED', 'CAPTURE_EXTERNAL', 'CAPTURE_UNPAIRED'):
+        # STATE CONFORMANCE (MANUS 2026-08-04): the banner no longer computes
+        # state from scattered fields. scripts/record_state.py derives ONE
+        # canonical state and every emitter renders it. See that module's
+        # docstring for why (three data-vs-page divergences in one session,
+        # each caught by a human reading a page).
+        _st = derive_state(d)
+        _colour = {'LACUNA': ('#fef3c7', '#d97706', '#92400e', '#78350f'),
+                   'WITHDRAWN_EXTERNAL': ('#fee2e2', '#b91c1c', '#7f1d1d', '#991b1b'),
+                   'COMPLETE_PACKET': ('#dcfce7', '#16a34a', '#14532d', '#166534')}.get(
+                       _st['state'], ('#e0f2fe', '#0369a1', '#0c4a6e', '#075985'))
+        _bg, _bar, _head_c, _body_c = _colour
+        _ptr = _st.get('pointer')
+        _link = ''
+        if isinstance(_ptr, int):
+            _link = (f'<div style="color:{_body_c}">Complete version: '
+                     f'<a href="/s/records/{_ptr}/" style="color:var(--accent);font-weight:500">#{_ptr}</a></div>')
+        elif isinstance(_ptr, str) and _ptr.startswith('http'):
+            _link = (f'<div style="color:{_body_c}">Live manifestation: '
+                     f'<a href="{esc(_ptr)}" style="color:var(--accent);font-weight:500">{esc(_ptr)}</a></div>')
         version_banner = (
-            '<div style="background:#f3f4f6;border-left:4px solid #6b7280;padding:12px 16px;'
-            'border-radius:6px;margin:12px 0;font-size:.92em">'
-            '<div style="font-weight:600;color:#374151;margin-bottom:4px">⏳ Draft — body not yet written</div>'
-            f'<div style="color:#4b5563">This deposit\'s identifier and metadata are minted, but the body has not been written.'
-            + (f' {esc(reason)}' if reason else '')
-            + '</div></div>'
+            f'<div style="background:{_bg};border-left:4px solid {_bar};padding:12px 16px;'
+            f'border-radius:6px;margin:12px 0;font-size:.92em">'
+            f'<div style="font-weight:600;color:{_head_c};margin-bottom:4px">{esc(_st["label"])}</div>'
+            + _link
+            + f'<div style="color:{_body_c};font-size:.88em;margin-top:6px">{esc(_st["detail"])[:600]}</div>'
+            + ('' if _st['citable'] else
+               f'<div style="color:{_body_c};font-size:.85em;margin-top:6px;font-style:italic">'
+               'Do not cite this page as the full text of the work.</div>')
+            + '</div>'
         )
 
     mods = d.get('modifications') or []

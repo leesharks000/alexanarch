@@ -84,7 +84,7 @@ ${creatorId}
       <dc:identifier>${esc(r.axn)}</dc:identifier>
       <dc:description>${esc(r.description)}</dc:description>
 ${(r.relations || []).map((u) => `      <dc:relation>${esc(u)}</dc:relation>`).join('\n')}
-      <dc:publisher>${esc(r.publisher || 'Alexanarch — the Crimson Hexagonal Archive')}</dc:publisher>
+${r.state && r.state !== 'FULL' ? `      <dc:type>state:${esc(r.state.toLowerCase().replace(/_/g,'-'))}</dc:type>\n` : ''}${r.citable === false ? `      <dc:rights>not-citable-as-full-text</dc:rights>\n` : ''}      <dc:publisher>${esc(r.publisher || 'Alexanarch — the Crimson Hexagonal Archive')}</dc:publisher>
 ${r.source ? `      <dc:source>${esc(r.source)}</dc:source>\n` : ''}      <dc:language>eng</dc:language>
 ${subj}
       </oai_dc:dc>

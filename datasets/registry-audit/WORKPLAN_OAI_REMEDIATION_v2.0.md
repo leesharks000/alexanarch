@@ -189,6 +189,29 @@ from the v2.0 canonical set: `alexanarch_audit_master_index_v1.0.json` · `alexa
 8. **No API self-invocation** for repair work; all LLM-domain work happens in-session (no-double-draw).
 9. Private correspondence never enters records, capsules, or commit messages; third-party names require documented consent (§7 CP-7).
 
+## 5c. STATE CONFORMANCE — MANDATORY GATE (added 2026-08-04, MANUS-directed)
+
+**Rule, replacing a manual catch:** a record has exactly ONE declared state, derived by
+`scripts/record_state.py :: derive_state()`. **No emitter reads state fields directly.**
+The page banner, the OAI record, and any future surface render what the derivation returns.
+
+**Run `python3 scripts/check_state_conformance.py` after every propagation.** It exits 1 if any
+emitter disagrees with the derivation — banner label missing, pointer not linked, non-citable
+record failing to say so, OAI state or citability out of step. A state that exists in data but
+not on a page now FAILS THE BUILD instead of waiting to be noticed by a human reading the site.
+
+Why: state was spread across eleven fields on two levels (`status`,
+`superseded_by_deposit_number`, `superseded_reason`, `body_status.class`, `.lacuna`,
+`.lacuna_mark`, `.withdrawal`, `.capture_completeness`, `.full_version`,
+`.external_manifestation`, `.related_instances`), and each emitter read a different subset.
+In one session that produced four divergence classes, every one caught by MANUS reading a page:
+#941 (pointer + reason, status ACTIVE, banner never rendered), #1300 (ruled complete-as-packet,
+page still said semi-restored), 20 records with `related_instances` the renderer had no block for,
+and **12 records carrying `lacuna: true` that no page had ever announced.**
+
+Precedence (first match wins): WITHDRAWN_EXTERNAL · WITHDRAWN · LACUNA · SUPERSEDED ·
+COMPLETE_PACKET · CAPTURE_PAIRED · CAPTURE_EXTERNAL · CAPTURE_UNPAIRED · FULL.
+
 ## 5b. REPAIR PIPELINE DYNAMICS — mandatory for every repair, every instance
 
 **Why this section exists.** Two live fractures (#1267, #1308) proved that a repair landing in
