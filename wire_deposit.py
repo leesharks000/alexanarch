@@ -1251,6 +1251,22 @@ def regenerate_static_page(d, eidx, registry=None):
             '<div style="font-weight:600;margin-bottom:4px">Other instances of this work in the archive</div>'
             f'<ul style="margin:6px 0 6px 20px;padding:0">{_items}</ul>'
             '<div style="color:#666;font-size:.88em">Recorded as relations only — which instance supersedes which is not asserted here.</div></div>')
+    _ni = _bs.get('named_in') if isinstance(_bs, dict) else None
+    if _ni and _ni.get('records'):
+        _top = _ni['records'][:6]
+        _li = ''.join(
+            f'<li style="margin:3px 0"><a href="/s/records/{i["deposit_number"]}/" style="color:var(--accent)">'
+            f'#{i["deposit_number"]}</a> — {esc(str(i.get("title",""))[:78])}</li>' for i in _top)
+        _more = len(_ni['records']) - len(_top)
+        rel_block += (
+            '<div style="background:var(--surface);border-left:4px solid #d97706;padding:10px 14px;'
+            'border-radius:6px;margin:12px 0;font-size:.9em">'
+            '<div style="font-weight:600;margin-bottom:4px">Where this work is named in the archive</div>'
+            f'<ul style="margin:6px 0 6px 20px;padding:0">{_li}</ul>'
+            + (f'<div style="color:#888;font-size:.88em">…and {_more} more.</div>' if _more > 0 else '')
+            + '<div style="color:#666;font-size:.88em;margin-top:4px">These records register or cite the work; '
+              'none contains its text. The full text is not yet in the archive.</div></div>')
+
     _em = _bs.get('external_manifestation') if isinstance(_bs, dict) else None
     if _em and _em.get('url'):
         rel_block += (
